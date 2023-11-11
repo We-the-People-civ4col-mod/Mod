@@ -4017,7 +4017,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -4029,7 +4029,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
-        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader in [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -4047,7 +4047,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
-        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader in [COLOR_FONT_GOLD]cassava[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -4120,7 +4120,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_FOOD_DONE</Tag>
-        <English>A European Nation succeeded to become the market leader for [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4138,7 +4138,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_FOOD_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader of [COLOR_FONT_GOLD]food[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4168,7 +4168,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_LUMBER_DONE</Tag>
-        <English>A European Nation succeeded to become the market leader for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Holz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4180,7 +4180,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_STONE_DONE</Tag>
-        <English>A European Nation managed to become dominant in African [COLOR_FONT_GOLD]stone[COLOR_REVERT] trade.</English>
+        <English>One nation is now the top trader in African [COLOR_FONT_GOLD]stone[COLOR_REVERT] trade.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4198,7 +4198,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_STONE_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of African [COLOR_FONT_GOLD]stone[COLOR_REVERT].</English>
+        <English>One nation is now the top trader of African [COLOR_FONT_GOLD]stone[COLOR_REVERT].</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4210,7 +4210,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HORSES_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]horses[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]horses[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]лошадей[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4228,7 +4228,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HORSES_DONE</Tag>
-        <English>A European Nation now controls the trade in African [COLOR_FONT_GOLD]horses[COLOR_REVERT].</English>
+        <English>One nation is now the top trader in African [COLOR_FONT_GOLD]horses[COLOR_REVERT].</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]лошадей[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4258,7 +4258,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_ORE_DONE</Tag>
-        <English>A European Nation managed to dominate the trade in [COLOR_FONT_GOLD]ore[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader in [COLOR_FONT_GOLD]ore[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erzen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]руды[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4288,7 +4288,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SILVER_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]silver[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader of [COLOR_FONT_GOLD]silver[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4300,7 +4300,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CATTLE_DONE</Tag>
-        <English>A European Nation succeeded to become the market leader for trade with [COLOR_FONT_GOLD]cattle[COLOR_REVERT] in Africa.</English>
+        <English>One nation is now the top trader with [COLOR_FONT_GOLD]cattle[COLOR_REVERT] in Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindern[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]коров[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4318,7 +4318,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CATTLE_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of African [COLOR_FONT_GOLD]cattle[COLOR_REVERT].</English>
+        <English>One nation is now the top trader of African [COLOR_FONT_GOLD]cattle[COLOR_REVERT].</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindern[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]коров[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4330,7 +4330,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SHEEP_DONE</Tag>
-        <English>A European Nation managed to become dominant in African [COLOR_FONT_GOLD]sheep[COLOR_REVERT] trading.</English>
+        <English>One nation is now the top trader in African [COLOR_FONT_GOLD]sheep[COLOR_REVERT] trading.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schafen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]овец[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4348,7 +4348,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SHEEP_DONE</Tag>
-        <English>A European Nation managed to become dominant in African [COLOR_FONT_GOLD]sheep[COLOR_REVERT] trade.</English>
+        <English>One nation is now the top trader in African [COLOR_FONT_GOLD]sheep[COLOR_REVERT] trade.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schafen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]овец[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4360,7 +4360,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_TOOLS_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]tools[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader of [COLOR_FONT_GOLD]tools[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Werkzeugen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]инструментов[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4378,7 +4378,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_TOOLS_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]tools[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader of [COLOR_FONT_GOLD]tools[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Werkzeugen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]инструментов[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4390,7 +4390,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_GUNS_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schußwaffen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4420,7 +4420,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CLOTH_DONE</Tag>
-        <English>A European Nation managed to become dominant in the African [COLOR_FONT_GOLD]cloth[COLOR_REVERT] trade.</English>
+        <English>One nation is now the top trader in the African [COLOR_FONT_GOLD]cloth[COLOR_REVERT] trade.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]ткани[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4438,7 +4438,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CLOTH_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]cloth[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader of [COLOR_FONT_GOLD]cloth[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]ткани[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4450,7 +4450,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SALT_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader of [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4468,7 +4468,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SALT_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader of [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4480,7 +4480,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SPICES_DONE</Tag>
-        <English>A European Nation managed to become the leader trading in [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader in [COLOR_FONT_GOLD]spices[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gewürzen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4510,7 +4510,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
-        <English>A European Nation managed to become dominant in the African [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] trade.</English>
+        <English>One nation is now dominant in the African [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] trade.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blättern[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4528,7 +4528,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
-        <English>A European Nation managed to dominate the trade in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Africa.</English>
+        <English>One nation now dominates the trade in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blättern[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4540,7 +4540,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE</Tag>
-        <English>A European NAtoon managed to become the leader supplying [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] with Africa.</English>
+        <English>One nation controls the market of [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit afrikanischen [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4570,7 +4570,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COTTON_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now dominant trading [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4588,7 +4588,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COTTON_DONE</Tag>
-        <English>A European Nation is now the leading trader in [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the leading trader in [COLOR_FONT_GOLD]cotton[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4600,7 +4600,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_INDIGO_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]indigo[COLOR_REVERT] with Africa.</English>
+        <English>One nation is the top trader for [COLOR_FONT_GOLD]indigo[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4630,7 +4630,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_DONE</Tag>
-        <English>A European Nation is now the leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4648,7 +4648,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_DONE</Tag>
-        <English>A European Nation is now the leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the leading trader in [COLOR_FONT_GOLD]logwood[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4660,7 +4660,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_DONE</Tag>
-        <English>A European Nation is now the leading trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the leading trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4678,7 +4678,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_DONE</Tag>
-        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the dominant trader in [COLOR_FONT_GOLD]cochineal[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4690,7 +4690,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
-        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4708,7 +4708,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
-        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the dominant trader in [COLOR_FONT_GOLD]coffee berries[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4720,7 +4720,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_PEANUTS_DONE</Tag>
-        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4738,7 +4738,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_PEANUTS_DONE</Tag>
-        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the dominant trader in [COLOR_FONT_GOLD]peanuts[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4750,7 +4750,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4768,7 +4768,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_DONE</Tag>
-        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the dominant trader in [COLOR_FONT_GOLD]red pepper[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4780,7 +4780,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4798,7 +4798,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]green vanilla pods[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4810,7 +4810,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4828,7 +4828,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4840,7 +4840,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4858,7 +4858,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]rubber[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4870,7 +4870,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4888,7 +4888,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]hardwood[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4900,7 +4900,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4918,7 +4918,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4930,7 +4930,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4948,7 +4948,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]blades[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4960,7 +4960,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CANNONS_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Африку!</Russian>
     </TEXT>
@@ -4978,7 +4978,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CANNONS_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]cannons[COLOR_REVERT] with Africa.</English>
         <French>Une nation européenne est devenue le premier vendeur de [COLOR_FONT_GOLD]canons[COLOR_REVERT] en Afrique.</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] in Afrika zu werden.</German>
         <Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Африку!</Russian>
