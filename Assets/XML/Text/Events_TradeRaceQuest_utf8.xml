@@ -3187,7 +3187,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal.</English>
+        <English>A competing European nation now trades the most [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3205,7 +3205,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
+        <English>A competing European nation now trades the most [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -3235,7 +3235,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
+        <English>Another European nation now trades the most [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -3296,7 +3296,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GUNS_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
+        <English>Another European nation now trades the most [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -3356,7 +3356,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
+        <English>Another European nation now trades the most [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]сигар[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -3399,7 +3399,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SILVER_DONE</Tag>
-        <English>Milord, we now are on top of the [COLOR_FONT_GOLD]silver[COLOR_REVERT] trade from Port Royal.</English>
+        <English>Milord, we now are on top of the [COLOR_FONT_GOLD]silver[COLOR_REVERT] trade with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3447,7 +3447,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SALT_DONE</Tag>
-        <English>A European Nation managed to become the leader trading in [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is well pleased.</English>
+        <English>Another European nation now trades the most [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is well pleased.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
