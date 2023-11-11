@@ -130,7 +130,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_LUMBER_DONE</Tag>
-        <English>Another European nation has already become the market leader for [COLOR_FONT_GOLD]lumber[COLOR_REVERT].</English>
+        <English>One nation is now the market leader for [COLOR_FONT_GOLD]lumber[COLOR_REVERT].</English>
         <French>Une nation Européenne est devenue maître du marché du [COLOR_FONT_GOLD]bois de construction[COLOR_REVERT]</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Holz[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT]!</Russian>
@@ -165,7 +165,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_ORE_DONE</Tag>
-        <English>Another European nation has already become the market leader for[COLOR_FONT_GOLD]ore[COLOR_REVERT].</English>
+        <English>One nation is now the market leader for[COLOR_FONT_GOLD]ore[COLOR_REVERT].</English>
         <French>Une nation Européenne est devenue maître du marché du [COLOR_FONT_GOLD]minerai de fer[COLOR_REVERT]</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Eisenerz[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]руды[COLOR_REVERT]!</Russian>
@@ -200,7 +200,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_STONE_DONE</Tag>
-        <English>Another European nation has already become the market leader for[COLOR_FONT_GOLD]stone[COLOR_REVERT].</English>
+        <English>One nation is now the market leader for[COLOR_FONT_GOLD]stone[COLOR_REVERT].</English>
         <French>Une nation Européenne est devenue maître du marché de la [COLOR_FONT_GOLD]pierre[COLOR_REVERT]</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]камня[COLOR_REVERT]!</Russian>
@@ -235,7 +235,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HEMP_DONE</Tag>
-        <English>Another European nation has already become the market leader for [COLOR_FONT_GOLD]hemp[COLOR_REVERT] trading.</English>
+        <English>One nation is now the market leader for [COLOR_FONT_GOLD]hemp[COLOR_REVERT] trading.</English>
         <French>Une nation Européenne est devenue maître du marché du [COLOR_FONT_GOLD]chanvre[COLOR_REVERT]</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hanf[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]конопли[COLOR_REVERT]!</Russian>
@@ -446,7 +446,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FUR_DONE</Tag>
-        <English>Another European nation has already become the market leader for trade in [COLOR_FONT_GOLD]furs[COLOR_REVERT].</English>
+        <English>One nation is now the market leader for trade in [COLOR_FONT_GOLD]furs[COLOR_REVERT].</English>
         <French>Une nation Européenne est devenue maître du marché de la [COLOR_FONT_GOLD]fourrure[COLOR_REVERT].</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Fellen[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]меха[COLOR_REVERT]!</Russian>
@@ -551,7 +551,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COTTON_DONE</Tag>
-        <English>Another European nation has beaten us to be the market leader for[COLOR_FONT_GOLD]cotton[COLOR_REVERT].</English>
+        <English>One nation is now the market leader for[COLOR_FONT_GOLD]cotton[COLOR_REVERT].</English>
         <French>Une nation Européenne est devenue maître du marché du [COLOR_FONT_GOLD]coton[COLOR_REVERT].</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]хлопка[COLOR_REVERT]!</Russian>
@@ -621,7 +621,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HIDES_DONE</Tag>
-        <English>Another European nation has beaten us to become the market leader for the European [COLOR_FONT_GOLD]cowhides[COLOR_REVERT] trade.</English>
+        <English>One nation is now the market leader for the European [COLOR_FONT_GOLD]cowhides[COLOR_REVERT] trade.</English>
         <French>Une nation Européenne est devenue maître du marché des [COLOR_FONT_GOLD]peaux de vaches[COLOR_REVERT].</French>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindshäuten[COLOR_REVERT] zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]коровьих шкур[COLOR_REVERT]!</Russian>
@@ -3187,7 +3187,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>A competing European nation now trades the most [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation now trades the most [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3205,7 +3205,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLADES_DONE</Tag>
-        <English>A competing European nation now trades the most [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
+        <English>One nation now trades the most [COLOR_FONT_GOLD]bladed weapons[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -3217,7 +3217,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the dominant trader for [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3235,7 +3235,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SAILCLOTH_DONE</Tag>
-        <English>Another European nation now trades the most [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
+        <English>One nation now trades the most [COLOR_FONT_GOLD]sailcloth[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -3296,7 +3296,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GUNS_DONE</Tag>
-        <English>Another European nation now trades the most [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
+        <English>One nation now trades the most [COLOR_FONT_GOLD]guns[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Musketen[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -3356,7 +3356,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CIGARS_DONE</Tag>
-        <English>Another European nation now trades the most [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
+        <English>One nation now trades the most [COLOR_FONT_GOLD]cigars[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]сигар[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -3447,7 +3447,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_SALT_DONE</Tag>
-        <English>Another European nation now trades the most [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is well pleased.</English>
+        <English>One nation now trades the most [COLOR_FONT_GOLD]salt[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is well pleased.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -3537,7 +3537,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is very happy.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]gems[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is very happy.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -3549,7 +3549,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation now leads the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3579,7 +3579,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation now dominates the trade of [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3597,7 +3597,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal finds itself energized.</English>
+        <English>One nation is now the dominant trader for [COLOR_FONT_GOLD]coffee[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal finds itself energized.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -3639,7 +3639,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader of [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3657,7 +3657,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
-        <English>A European Nation managed to dominate the trade in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is excited.</English>
+        <English>One nation is now the top trader in [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is excited.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
     </TEXT>
@@ -3669,7 +3669,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Tag>
-        <English>A European Nation  managed to become the leader in the trade of [COLOR_FONT_GOLD]wine[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader of [COLOR_FONT_GOLD]wine[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3747,7 +3747,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Tag>
-        <English>A European Nation managed to dominate the trade in [COLOR_FONT_GOLD]food[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader in [COLOR_FONT_GOLD]food[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3789,7 +3789,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]lumber[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3819,7 +3819,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
-        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader in [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3837,7 +3837,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3867,7 +3867,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
-        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]provisions[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader in [COLOR_FONT_GOLD]provisions[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]хлебобулочных изделий[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3879,7 +3879,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3897,7 +3897,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]beer[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3927,7 +3927,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3939,7 +3939,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3957,7 +3957,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3969,7 +3969,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3987,7 +3987,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
-        <English>A European Nation is now the dominant trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader in [COLOR_FONT_GOLD]gunpowder[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
@@ -3999,7 +3999,7 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Tag>
-        <English>A European Nation managed to become the dominant trader for [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal.</English>
+        <English>One nation is now the top trader for [COLOR_FONT_GOLD]rice[COLOR_REVERT] with Port Royal.</English>
         <German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu werden.</German>
         <Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал!</Russian>
     </TEXT>
