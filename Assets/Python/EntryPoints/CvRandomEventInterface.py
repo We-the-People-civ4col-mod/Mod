@@ -1390,10 +1390,8 @@ def canTriggerAntiPirate(argsList):
 	if iKilledTradeships >= event.getGenericParameter(1):
 		(loopUnit, iter) = player.firstUnit()
 		while(loopUnit):
-			shipType = loopUnit.getUnitType()
-			for i in (EnumValues.UNIT_FRIGATE, EnumValues.UNIT_FLUYT, EnumValues.UNIT_SHIP_OF_THE_LINE, EnumValues.UNIT_COLONIAL_MAN_O_WAR):
-				if shipType == i:
-					return False
+			if loopUnit.getUnitType() in (EnumValues.UNIT_FRIGATE, EnumValues.UNIT_SHIP_OF_THE_LINE, EnumValues.UNIT_COLONIAL_MAN_O_WAR):
+				return False
 			(loopUnit, iter) = player.nextUnit(iter)
 		return True
 	return False
