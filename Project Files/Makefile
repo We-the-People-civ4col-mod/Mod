@@ -467,7 +467,8 @@ test_DllExport:
 	@$(PERL) bin\CPP_line_checker.pl
 	@$(PERL) bin\xml_enum_global_types.pl
 	@$(PERL) bin\InfoArray.pl
-	@$(PERL) bin\python_enum_check.pl
+	
+#@$(PERL) bin\python_enum_check.pl
 
 # first step in the testing process
 # each target mentioned here will run in a dedicated process

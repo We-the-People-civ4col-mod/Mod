@@ -207,7 +207,7 @@ def cityAdvise(pCity, iPlayer):
 							popupInfo.addPopup(iPlayer)
 							g_iAdvisorNags += 1
 
-				iCultureYield = gc.getDefineINT("CULTURE_YIELD")
+				iCultureYield = YieldTypes.YIELD_CULTURE
 				if (pCity.getCultureRate() == 0 and not pCity.isOccupation() and iCultureYield != -1):
 
 					if (gc.getGame().getGameTurn() + 7) % 40 == pCity.getGameTurnFounded() % 40:

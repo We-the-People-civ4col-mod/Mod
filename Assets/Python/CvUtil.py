@@ -178,17 +178,17 @@ def getScoreComponent(iRawScore, iInitial, iMax, iFactor, bExponential, bFinal, 
 		else:
 			iMax = iInitial + fTurnRatio * (iMax - iInitial)
 
-	iFree = (gc.getDefineINT("SCORE_FREE_PERCENT") * iMax) / 100
+	iFree = (GlobalDefines.SCORE_FREE_PERCENT * iMax) / 100
 	if (iFree + iMax) != 0:
 		iScore = (iFactor * (iRawScore + iFree)) / (iFree + iMax)
 	else:
 		iScore = iFactor
 
 	if bVictory:
-		iScore = ((100 + gc.getDefineINT("SCORE_VICTORY_PERCENT")) * iScore) / 100
+		iScore = ((100 + GlobalDefines.SCORE_VICTORY_PERCENT) * iScore) / 100
 
 	if bFinal:
-		iScore = ((100 + gc.getDefineINT("SCORE_HANDICAP_PERCENT_OFFSET") + (gc.getGame().getHandicapType() * gc.getDefineINT("SCORE_HANDICAP_PERCENT_PER"))) * iScore) / 100
+		iScore = ((100 + GlobalDefines.SCORE_HANDICAP_PERCENT_OFFSET + (gc.getGame().getHandicapType() * GlobalDefines.SCORE_HANDICAP_PERCENT_PER)) * iScore) / 100
 
 	return int(iScore)
 

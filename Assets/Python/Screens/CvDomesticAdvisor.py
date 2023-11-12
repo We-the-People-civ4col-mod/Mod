@@ -553,7 +553,7 @@ class CvDomesticAdvisor:
 		
 		## R&R, Robert Surcouf, Domestic Market display START
 		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 2): 
-			iStartYield=gc.getDefineINT("DOMESTIC_MARKET_SCREEN_START_YIELD_ID")
+			iStartYield=1 #gc.getDefineINT("DOMESTIC_MARKET_SCREEN_START_YIELD_ID")
 			for iYield in range(iStartYield, YieldTypes.YIELD_LUXURY_GOODS + 1):
 				#screen.setTableInt("GeneralStatePage3ListBackground", iYield-iStartYield + 2, i, "<font=2>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "/"+ "<color=0,255,0>" +  unicode(pLoopCity.getYieldDemand(iYield)) + "</color>" "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				# CBM 0.8.020 display of quantity available in city - start 

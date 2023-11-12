@@ -109,7 +109,6 @@ sub handleCyEnumInterface
 		}
 		elsif ($state == 4)
 		{
-			return;
 			if (index($line, "python::enum_") != -1)
 			{
 				$type = substr($line, index($line, "\"")+1);
@@ -187,6 +186,8 @@ sub handleDir
 		my $file = "$dir$_";
 		if (-f $file)
 		{
+			next if $_ eq "CvMainInterface_Backup.py";
+			next if $_ eq "CvMainInterface_Backup_Terrain_Backgrounds.py";
 			next unless substr($file, -3) eq ".py";
 			handleFile($file)
 		}
@@ -201,12 +202,21 @@ sub handleFile
 {
 	my $file = shift;
 	
+	my $commentSection = 0;
+	
 	open my $info, $file or die "Could not open $file: $!\n";
 	while( my $line = <$info>)
 	{
 		chomp($line);
 		my $comment = index($line, "#");
 		$line = substr($line, 0, $comment) if $comment != -1;
+		if (index($line, "\"\"\"") != -1)
+		{
+			$commentSection = not $commentSection;
+		}
+		next if $commentSection;
+		
+		lineErrorCheck("$file($.)", $line);
 		for my $enum (sort keys %enums)
 		{
 			handleLine("$file($.)", $line, $enum);
@@ -235,15 +245,43 @@ sub handleLine
 				next;
 			}
 		}
+		if ($enum eq "EventTypes")
+		{
+			if (substr($line, $index-5, 5) eq "Diplo")
+			{
+				# avoid EventTypes triggering on DiploEventTypes
+				$line = substr($line, $index+1);
+				next;
+			}
+		}
+		if ($enum eq "DirectionTypes")
+		{
+			if (substr($line, $index-8, 8) eq "Cardinal")
+			{
+				# avoid DirectionTypes triggering on CardinalDirectionTypes
+				$line = substr($line, $index+1);
+				next;
+			}
+		}
+		
 		$line = substr($line, $index+1);
 		
 		my $key = substr($line, index($line, ".")+1);
-		for my $char (" ", ")", ",", ":")
+		for my $char (" ", ")", ",", ":", "]", "\t")
 		{
 			$index = index($key, $char);
 			$key = substr($key, 0, $index) if ($index != -1);
+			last if exists $enums{$enum}{$key};
 		}
-		
+
 		die "$file $enum.$key doesn't exist\n" unless exists $enums{$enum}{$key};
 	}
+}
+
+sub lineErrorCheck
+{
+	my $file = shift;
+	my $line = shift;
+	
+	die "$file gc.getDefineINT is no longer allowed. See CyEnumsInterface.cpp for details\n" unless index($line, "gc.getDefineINT") == -1;
 }
