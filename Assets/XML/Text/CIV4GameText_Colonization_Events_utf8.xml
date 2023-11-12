@@ -4546,14 +4546,14 @@
         <English>The Captains' Council can surely enforce higher prices!</English>
         <French>Le conseil des capitaines peut surement exiger des prix plus élévés</French>
         <German>Der Kapitänsrat kann sicherlich höhere Verkaufspreise durchsetzten!</German>
-        <Russian>Совет капитанов, безусловно, может настоять на повышении цены!</Russian>
+        <Russian>Мы сильно рискуем! Совет капитанов должен поднять цены!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Tag>
         <English>For the glory and wealth of our colonies! Let the smuggling with Port Royal flourish! However, His Majesty will not be pleased!</English>
         <French>Pour la gloire et la richesse de nos colonies! Que la contrebande vers Port Royal prospère! Sa Majesté n'en sera pas heureuse:</French>
         <German>Für Ruhm und Reichtum unserer Kolonien! Möge der Schmuggel aus Port Royal erblühen! Allerdings wird Seine Majestät darüber nicht sehr erfreut sein!</German>
-        <Russian>Во славу и богатство наших колоний! Пусть контрабанда с Порт Ройалом процветает! Однако Его Величеству это не понравится!</Russian>
+        <Russian>Пусть контрабанда с Порт Ройалом процветает! Однако Его Величеству это может не понравится...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_3</Tag>
@@ -4581,14 +4581,14 @@
         <English>For the glory and wealth of our colonies! The Natives have skillful hands!</English>
         <French>Pour la gloire et la richesse de nos colonies ! Les indigènes sont doués!</French>
         <German>Für Ruhm und Reichtum unserer Kolonien! Die Ureinwohner scheinen geschickte Hände zu haben!</German>
-        <Russian>Во славу и богатство наших колоний! У индейцев умелые руки!</Russian>
+        <Russian>Нам бы пригодились работники, которых к ним привозят из ближайших индейских поселений.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Tag>
         <English>For the glory and wealth of our colonies! Mestizos? They certainly work hard!</English>
         <French>Pour la gloire et la richesse de nos colonies! Les métis ? Ils travaiilent dur, pour sur!</French>
         <German>Für Ruhm und Reichtum unserer Kolonien! Mestizen? Die können bestimmt auch gut zupacken!</German>
-        <Russian>Во славу и богатство наших колоний! Метисы? Конечно, они много работают!</Russian>
+        <Russian>Говорят, метисы будут повыносливее индейцев. Пожалуй, мы бы приняли в дар нескольких из них.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_8</Tag>
