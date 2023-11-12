@@ -4768,7 +4768,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_AFTERDUEL</Tag>
         <English>Thank you for the message. Finally everything is back to normal.</English>
-       <French>Merci pour le message. Tout rentre à la normale</French>
+        <French>Merci pour le message. Tout rentre à la normale.</French>
         <German>Ich danke Euch für die Nachricht. Endlich kehrt wieder Normalität ein.</German>
         <Russian>Благодарю вас. Наконец-то всё вернулось на круги своя.</Russian>
     </TEXT>
@@ -4789,7 +4789,7 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_OFFICERS_WIFE_ASSIGNMENT</Tag>
         <English>I confirm. Hopefully, the officer will then have enough time to take care of his service as well as his wife.</English>
-       <French> Je confirme. J'espère que l'officier trouvera assez de temps pour s'occuper de sa mission et de son épouse.</French>
+        <French>Je confirme. J'espère que l'officier trouvera assez de temps pour s'occuper de sa mission et de son épouse.</French>
         <German>Ja, es lässt sich wohl nicht ändern. Der Offizier hat dann hoffentlich genug Zeit, sich um seinen Dienst und seine Frau zu kümmern.</German>
         <Russian>Согласен. Для всех нас это будет благом.</Russian>
     </TEXT>
@@ -4922,30 +4922,35 @@
    <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_1</Tag>
         <English>Your scout has entered a previously unnoticed native village. The natives look at you expectantly. What do you want to do?</English>
+        <French>Votre écaliareur est entré dans un village indigène ignoré jusqu'à présent. Les habitants vous regardent dans l'expectative. Que faites-vous? </French>
         <German>Euer Scout hat ein bisher unbeachtet gebliebenes Dorf der Ureinwohner betreten. Die Ureinwohner blicken Euch erwartungsvoll an. Was wollt Ihr tun?</German>
         <Russian>Наш разведчик обнаружил деревню индейцев, о которой раньше никто не сообщал. Туземцы не предпринимают никаких действий, заняв выжидательную позицию. Что будем делать?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_2</Tag>
         <English>Your scout has stumbled unawares into a native indian camp. Here you are apparently the intruder. They look at you skeptically, but not hostilely. The village is preparing for a feast, do you want to stay?</English>
+        <French>Votre scout est entré dans un camp des Indiens. Ils vous prennent pour un intrus. Il vous regardent avec méfiance mais sans hostilité. Le village se prépare à une fête, vouslez vous rester? </French>
         <German>Euer Scout ist unversehens in ein Lager der Ureinwohner gestolpert. Hier seid Ihr offenbar der Eindringling. Man blickt Euch skeptisch, aber nicht feindlich an. Das Dorf bereitet sich auf ein Fest vor, wollt ihr bleiben?</German>
         <Russian>Наш разведчик забрел в индейский лагерь, в котором ведётся поготовка к какому-то празднеству. Не смотря на то, что его никто не приглашал, туземцы не выглядят враждебными. Останемся посмотреть на церемонию?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_3</Tag>
         <English>Your scout has discovered a native indian village. However, the natives have been watching you for quite a while and could easily take you down. How do you behave?</English>
+        <French>Votre éclaireur a découvert un village d'Indiens. Ils vous observent depuis un moment et pourraient vous abattre facilement. Comment vous tenez-vous ?</French>
         <German>Euer Scout hat ein Dorf der Ureinwohner entdeckt. Die Ureinwohner beobachten Euch allerdings schon eine ganze Weile und könnten Euch mühelos überwältigen. Wie verhaltet Ihr Euch?</German>
         <Russian>Наш разведчик набрёл на одну деревню индейцев. Однако те уже давно наблюдают за ним и готовы атаковать. Как нам поступить?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_1</Tag>
         <English>We stay here for a while to make friends with the natives and warm ourselves at their campfires.</English>
+        <French>Nous restons là un moment pour nous faire des amis et nous rechauffer auprès du feu.</French>
         <German>Wir bleiben eine Weile hier, um mit den Ureinwohnern Freundschaft zu schließen und uns an deren Lagerfeuern zu wärmen.</German>
         <Russian>Остаемся здесь на некоторое время, чтобы погреться у костра и попробовать подружиться с туземцами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_2</Tag>
         <English>We are not here to make friends. Let us ask for treasures from which we can redeem them.</English>
+        <French>Nous ne sommes pas là pour nous faire des amis. Demandez leur des trésors dont nous pouvons les soulager.</French>
         <German>Wir sind nicht hier um Freundschaft zu schließen. Fragen wir nach Schätzen, von denen wir sie erlösen können.</German>
         <Russian>Мы здесь не для того, чтобы заводить друзей. Попросим их показать свои сокровища. Может быть, удастся выменять их на какую-нибудь безделушку.</Russian>
     </TEXT>
@@ -5132,60 +5137,70 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FAILED_MISSIONARY_1</Tag>
         <English>Milord, a missionary we sent to the indians a long time ago has returned without having achieved anything. He is no longer good as a missionary, but perhaps we can do something else with him?</English>
+        <French>Sire, un missionnaire que nous avons envoyé chez les Indiens il ya longtemps nous est revenu, sans succès notable. Il ne fait plus l'affaire en tant que missionnaire, mais peut-être pourrions-nous l'employer à autre chose ? </French>
          <German>Milord, ein Missionar, den wir vor längerer Zeit zu den Wilden geschickt haben, ist unverrichteter Dinge wieder zurückgekehrt. Als Missionar taugt er nicht mehr, aber vielleicht können wir etwas anderes mit ihm anfangen?</German>
         <Russian>Милорд, миссионер, которого мы давным-давно отправили к индейцам, вернулся, ничего не добившись. Миссионером ему уже не быть, но, может, мы сможем найти ему какое-нибудь занятие?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_1</Tag>
         <English>The church also needs clergymen to take care of the administration. There he can still be useful to us.</English>
+        <French>L'église a aussi besoin de clercs pour son administration. Il peut nous être utile ainsi.</French>
          <German>Auch die Kirche braucht Geistliche, die sich um die Verwaltung kümmern. Da kann er uns noch nützlich sein.</German>
         <Russian>Церкви нужны священнослужители, которые будут заниматься управлением. Он может пригодиться там.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_2</Tag>
         <English>Even if he could not convert the Indians, for the faithful in the colonies his preaching should still be enough. He can work as a church pastor.</English>
+        <French>Même s'il n'a pas sur convertir les Indiens, pour les fidèles ses prêches feront l'affaire. Il peut travailler comme prêtre en église.</French>
         <German>Auch wenn er die Indianer nicht bekehren konnte, für die Gläubigen in den Kolonien sollten seine Predigten noch reichen. Er kann als Gemeindepfarrer arbeiten.</German>
         <Russian>Настоятель нашей церкви как-то говорил, что не отказался бы от помощника. Отправим миссионера к нему.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_3</Tag>
         <English>A pilgrimage to Rome could bring him back on track and renew his faith. We will advance him the money for a trip to Rome.</English>
+        <French>Un pélerinage à rome le remettreait sur le droit chemin et renouvellerait sa foi. Nous avancerons les fonds pour un voyage à Rome.</French>
         <German>Eine Pilgereise nach Rom könnte ihn wieder auf den rechten Weg bringen und seinen Glauben erneuern. Wir werden ihm das Geld für eine Reise nach Rom vorstrecken.</German>
         <Russian>Паломничество в Рим могло бы помочь ему укрепить свою веру и наполнить духовными силами. Мы оплатим эту поездку.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_4</Tag>
         <English>The priest is just back from his pilgrimage and ready to move back into the wilderness.</English>
+        <French>Le pêtre revient de son pélerinage fin prêt pour retourner en nature.</French>
         <German>Der Priester ist gerade von seiner Pilgerreise zurück und bereit wieder in die Wildnis zu ziehen.</German>
         <Russian>[COLOR_SELECTED_TEXT]Священник вернулся из паломничества[COLOR_REVERT] и готов нести Слово Божье дикарям.</Russian>
     </TEXT>
    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_SUPERSTITIOUS_PIRATES</Tag>
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a pirate crew has heard the ghost of their dead captain.</English>
+        <French>Dans [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] l'équipage pirate entend le fantôme de leur capitaine mort.</French>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat eine Piratencrew den Geist ihres toten Kapitäns gehört.</German>
         <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] пираты услышали голос своего мертвого капитана.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SUPERSTITIOUS_PIRATES</Tag>
         <English>Milord, in the port of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] one of our privateers is anchored. The captain recently broke his neck while drunk in the aft cabin. Now the crew hears his ghost shouting incessantly at night "Fetch aft the rum, Darby!" The crew now refuses to enter the cabin as well as to leave the port. What are you going to do?</English>
+        <French>Sire, dans le port de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], est amarré un de nos navires corsaires. Le capitaine s'y est brisé le cou ivre mort dans la caine de poupe. L'équopage entend son fantôme gueuler sans cesse dans la nuit : « Tout le rhum en poupe, Darby!» L'équipage refuse d'entrer dans la cabine et de quitter le port. Qu'allons nous faire ?   </French>
          <German>Milord, im Hafen von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] liegt eines unserer Kaperschiffe vor Anker. Der Kapitän hat sich jüngst in der Achterkajüte im Suff das Genick gebrochen. Nun hört die Crew bei Nacht dessen Geist unablässig rufen "Bring den Rum, Darby!" Die Crew weigert sich, die Kajüte zu betreten oder auszulaufen. Was wollt Ihr unternehmen?</German>
         <Russian>Милорд, в порту [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] на якоре стоит один из наших каперов. Капитан недавно сломал себе шею, напившись в каюте. Теперь команда слышит, как его призрак непрерывно кричит по ночам: "Принеси ром, Дарби!" Экипаж отказывается входить в каюту, а также покидать порт. Что будем делать?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SUPERSTITIOUS_PIRATES_1</Tag>
         <English>Superstitious pirates, where is there such a thing! With all the dead surrounding them, you'd think they'd be more hardened. Let the ship rot on the pier. Nobody has any respect or fear for a crew like that anyway.</English>
+        <French>Des pirates superstitieux, qui a vu une chose pareille ! Avec la mort qui rôde autour d'eux, on pourrait les penser plus endurcis. Laissez leur bateau pourrir à quai. Personne ne respecte ou craint un équipage pareil.</French>
          <German>Abergläubische Piraten, wo gibt es denn sowas! Bei all den Toten, die sie umgeben, sollte man doch meinen, dass sie hartgesottener sind. Soll das Schiff doch an der Pier vermodern. Vor so einer Crew hat sowieso keiner mehr Respekt oder gar Angst.</German>
         <Russian>Суеверные пираты, где же такое видано! Учитывая всех мертвецов, которых им довелось повидать, можно было бы подумать, что они окажутся более закаленными. Пусть корабль гниет у причала. Никто не будет уважать и даже бояться такой команды.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SUPERSTITIOUS_PIRATES_2</Tag>
-        <English>Oh yes, that really is a problem. Let's give the crew the rum the captain demands. After everyone's had some refreshments, the ship should be ready for action again, don't you think?</English>
+        <English>Oh yes, that really is a problem. Let's give the crew the rum the captain demands, and one bottle of rootbeer, just in case. After everyone's had some refreshments, the ship should be ready for action again, don't you think?</English>
+        <French>Oh oui, c'est un vrai problème ça. On va donner à l'équipage le rhum que leur capitaine exige, et une bouteille de bière de racine, au cas où. Après que tout le monde s'est levé la soif, le navire devrait être paré à l'action, non ?</French>
         <German>Oh ja, das ist wirklich ein Problem. Geben wir der Crew den Rum, nach dem der Kapitän verlangt. Nachdem sich alle gestärkt haben, sollte das Schiff wieder einsatzbereit sein, meint Ihr nicht auch?</German>
         <Russian>Хм, разве это проблема? Давайте дадим экипажу ром, который "требует капитан". Думаю, после этого корабль снова будет готов выйти в море, даже с мёртвым капитаном на борту.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SUPERSTITIOUS_PIRATES_3</Tag>
         <English>Get a priest immediately so that he can perform an exorcism and prevent the captain's ghost from haunting the harbor district! To be on the safe side, we should also burn the ship. The crew can stay ashore for the time being until we have found or built a new ship for them.</English>
+        <French>Amenez un prêtre immédiatement, qu'il lance un exorcisme afin qu'il empêche le fantôme du capitaine de hanter le port. Pour être sûr, nous devrions aussi brûler le navire. L'équipage peut rester à quai le temps que nous leur trouvions ou construisions un nouveau navire.</French>
         <German>Holt sofort einen Priester, damit er einen Exorzismus vornehmen kann und der Geist des Kapitäns nicht im Hafenviertel weiterspukt! Sicherheitshalber sollten wir das Schiff aber auch noch verbrennen. Die Crew kann erst einmal an Land bleiben, bis wir ein neues Schiff für sie gefunden oder gebaut haben.</German>
         <Russian>Немедленно найдите священника, который сможет провести обряд и изгонит призрак капитана! А корабль следует сжечь, на всякий случай. Экипаж может остаться на берегу, пока мы не найдем другой корабль или не построим для них новый.</Russian>
     </TEXT>
