@@ -2860,7 +2860,7 @@
         <English>Milord, another colonial nation is the first to have butcheries in five cities.</English>
         <French>Sire, une autre nation a été la première à construire des boucheries dans cinq de ses villes.</French>
         <German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Schlachtereien errichten.</German>
-        <Russian>Милорд, другая колониальная нация первой построила дома мясников в пяти городах.</Russian>
+        <Russian>Колониальная нация построила дома мясников в пяти городах.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS_DONE</Tag>

@@ -773,7 +773,7 @@
         <German>[SPACE](Befördert %s1_Name)</German>
         <Italian>[SPACE](trasporta %s1_Name)</Italian>
         <Spanish>[SPACE](%s1_Name)</Spanish>
-        <Russian>[SPACE](перевозит %s1_Name)</Russian>
+        <Russian>[SPACE](перевозит [COLOR_SELECTED_TEXT]%s1_Name[COLOR_REVERT])</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_CANNOT_ENTER</Tag>
@@ -10044,21 +10044,21 @@
         <English>[ICON_BULLET]Can carry only goods or [COLOR_HIGHLIGHT_TEXT]slaves[COLOR_REVERT]</English>
         <French>[ICON_BULLET]Ne peut transporter que des biens ou des [COLOR_HIGHLIGHT_TEXT]esclaves[COLOR_REVERT]</French>
         <German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Sklaven[COLOR_REVERT] laden</German>
-        <Russian>[ICON_BULLET]Может перевозить только товары и [COLOR_HIGHLIGHT_TEXT]рабов[COLOR_REVERT]</Russian>
+        <Russian>[ICON_BULLET]Перевозит только [COLOR_HIGHLIGHT_TEXT]товары[COLOR_REVERT] и [COLOR_HIGHLIGHT_TEXT]рабов[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_IS_TREASURE_SHIP</Tag>
         <English>[ICON_BULLET]Can carry only goods or [COLOR_HIGHLIGHT_TEXT]treasures[COLOR_REVERT]</English>
         <French>[ICON_BULLET]Ne peut transporter que des biens ou des [COLOR_HIGHLIGHT_TEXT]trésors[COLOR_REVERT]</French>
         <German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Schätze[COLOR_REVERT] laden</German>
-        <Russian>[ICON_BULLET]Может перевозить только товары и [COLOR_HIGHLIGHT_TEXT]сокровища[COLOR_REVERT]</Russian>
+        <Russian>[ICON_BULLET]Перевозит только [COLOR_HIGHLIGHT_TEXT]товары[COLOR_REVERT] и [COLOR_HIGHLIGHT_TEXT]сокровища[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_IS_TROOP_SHIP</Tag>
         <English>[ICON_BULLET]Can carry only goods or [COLOR_HIGHLIGHT_TEXT]troops[COLOR_REVERT]</English>
         <French>[ICON_BULLET]Ne peut transporter que des biens ou des [COLOR_HIGHLIGHT_TEXT]troupes[COLOR_REVERT]</French>
         <German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Truppen[COLOR_REVERT] laden</German>
-        <Russian>[ICON_BULLET]Может перевозить только товары и [COLOR_HIGHLIGHT_TEXT]войска[COLOR_REVERT]</Russian>
+        <Russian>[ICON_BULLET]Перевозит только [COLOR_HIGHLIGHT_TEXT]товары[COLOR_REVERT] и [COLOR_HIGHLIGHT_TEXT]войска[COLOR_REVERT]</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_UNIT_ALWAYS_HOSTILE</Tag>
