@@ -85,8 +85,8 @@
             <Help>TXT_KEY_GAMESPEED_TAC_BUILDUP_MODE_HELP</Help>
             <iGrowthPercent>100</iGrowthPercent>
             <iStoragePercent>300</iStoragePercent>
-            <iTrainPercent>100</iTrainPercent>
-            <iConstructPercent>100</iConstructPercent>
+            <iTrainPercent>200</iTrainPercent>
+            <iConstructPercent>300</iConstructPercent>
             <iFatherPercent>900</iFatherPercent>
             <iGreatGeneralPercent>100</iGreatGeneralPercent>
             <iRevolutionTurns>3600</iRevolutionTurns>
