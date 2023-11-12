@@ -70,14 +70,14 @@ $output_init .= "\n";
 $output_init .= "#ifndef HARDCODE_XML_VALUES\n";
 $output_init .= "if (bFirst) {\n";
 
-setupEnumValuesNoType();
+#setupEnumValuesNoType();
 
 foreach my $file (getEnumFiles())
 {
 	processFile($file);
 }
 
-handleEnumValues();
+#handleEnumValues();
 
 $output_init .= "} else {\n";
 

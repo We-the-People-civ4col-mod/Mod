@@ -1385,12 +1385,12 @@ def canTriggerAntiPirate(argsList):
 	event = gc.getEventInfo(eEvent)
 	if player.isInRevolution():
 		return False
-	for i in (EnumValues.UNIT_CARAVEL, EnumValues.UNIT_FLUYT, EnumValues.UNIT_MERCHANTMAN, EnumValues.UNIT_WHALING_BOAT, EnumValues.UNIT_CARRACK, EnumValues.UNIT_CARAVELA_REDONDA, EnumValues.UNIT_WEST_INDIAMAN, EnumValues.UNIT_BRIGANTINE):
+	for i in (UnitTypes.UNIT_CARAVEL, UnitTypes.UNIT_FLUYT, UnitTypes.UNIT_MERCHANTMAN, UnitTypes.UNIT_WHALING_BOAT, UnitTypes.UNIT_CARRACK, UnitTypes.UNIT_CARAVELA_REDONDA, UnitTypes.UNIT_WEST_INDIAMAN, UnitTypes.UNIT_BRIGANTINE):
 		iKilledTradeships += CyStatistics().getPlayerNumUnitsLost(kTriggeredData.ePlayer, i)
 	if iKilledTradeships >= event.getGenericParameter(1):
 		(loopUnit, iter) = player.firstUnit()
 		while(loopUnit):
-			if loopUnit.getUnitType() in (EnumValues.UNIT_FRIGATE, EnumValues.UNIT_SHIP_OF_THE_LINE, EnumValues.UNIT_COLONIAL_MAN_O_WAR):
+			if loopUnit.getUnitType() in (UnitTypes.UNIT_FRIGATE, UnitTypes.UNIT_SHIP_OF_THE_LINE, UnitTypes.UNIT_COLONIAL_MAN_O_WAR):
 				return False
 			(loopUnit, iter) = player.nextUnit(iter)
 		return True

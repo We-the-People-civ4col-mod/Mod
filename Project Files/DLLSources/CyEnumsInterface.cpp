@@ -1,7 +1,7 @@
 #include "CvGameCoreDLL.h"
-#include"CvEnums.h"
+#include "CvEnums.h"
 #include "CvGameCoreDLLUndefNew.h"
-# include <boost/python/enum.hpp>
+#include <boost/python/enum.hpp>
 #include "CvGameCoreDLLDefNew.h"
 
 namespace python = boost::python;
@@ -10,12 +10,14 @@ namespace python = boost::python;
 //
 
 template<typename T>
-static void addEnumValues(python::enum_<int>& enumTable, T value)
+static void addEnumValues(python::enum_<T>& enumTable)
 {
-	for (T eLoopVar = VARINFO<T>::FIRST; eLoopVar < VARINFO<T>::END; ++eLoopVar)
-	{
-		enumTable.value(getTypeStr(eLoopVar), eLoopVar);
-	}
+}
+
+template<>
+static void addEnumValues(python::enum_<YieldTypes>& enumTable)
+{
+	enumTable.value("NUM_CARGO_YIELD_TYPES", NUM_CARGO_YIELD_TYPES);
 }
 
 static void generateEnumValues()
@@ -24,16 +26,12 @@ static void generateEnumValues()
 	// intended to completely replace gcgetDefineINT and gc.getInfoTypeForString (both much slower than EnumValues)
 	// code in this function has to follow a strict standard because it's used by a script at compile time
 	// this script will then cause a compile error if a python file use EnumValues with a value not exposed in this function
-	python::enum_<int> enumTable = python::enum_<int>("EnumValues");
+	python::enum_<int> enumTable = python::enum_<int>("GlobalDefines");
 
 	// Please sort each of the two following sections alphabetically. That makes it easier to get an overview once they have grown to a significant size.
 
-	// add type from entire xml files. Template must be the NO keyword from the enum in question
-	addEnumValues(enumTable, NO_BUILDING);
-	addEnumValues(enumTable, NO_UNIT);
-
 	// getDefineINT replacement
-	enumTable.value("DEFAULT_POPULATION_UNIT", GLOBAL_DEFINE_DEFAULT_POPULATION_UNIT);
+	enumTable.value("START_YEAR", GC.getDefineINT("START_YEAR"));
 }
 
 
@@ -50,6 +48,7 @@ static void addEnumValues(T value, const char* szName, const char* szNoType, con
 	{
 		enumTable.value(getTypeStr(eLoopVar), eLoopVar);
 	}
+	addEnumValues(enumTable);
 }
 
 void CyEnumsPythonInterface()
@@ -62,10 +61,12 @@ void CyEnumsPythonInterface()
 	// 2: name of enum in python
 	// 3: name of NO_ type. Skipped if it is set to NULL
 	// 4 name of NUM_
-	addEnumValues(NO_BUTTON_POPUP      , "ButtonPopupTypes"   , "NO_BUTTON_POPUP"  , "NUM_BUTTONPOPUP_TYPES");
+	addEnumValues(NO_BUTTON_POPUP      , "ButtonPopupTypes"   , "NO_BUTTON_POPUP"  , "NUM_BUTTONPOPUP_TYPES"    );
 	addEnumValues(NO_CONCEPT           , "ConceptTypes"       , "NO_CONCEPT"       , "NUM_CONCEPT_TYPES"        );
 	addEnumValues(MAX_NUM_SYMBOLS      , "FontSymbols"        , NULL               , "MAX_NUM_SYMBOLS"          );
 	addEnumValues(NO_TERRAIN           , "TerrainTypes"       , "NO_TERRAIN"       , "NUM_TERRAIN_TYPES"        );
+	addEnumValues(NO_UNIT              , "UnitTypes"          , "NO_UNIT"          , "NUM_UNIT_TYPES"           );
+	addEnumValues(NO_UNITCLASS         , "UnitClassTypes"     , "NO_UNITCLASS"     , "NUM_UNITCLASS_TYPES"      );
 	addEnumValues(NO_WORLDSIZE         , "WorldSizeTypes"     , "NO_WORLDSIZE"     , "NUM_WORLDSIZE_TYPES"      );
 	addEnumValues(NO_WIDGET            , "WidgetTypes"        , "NO_WIDGET"        , "NUM_WIDGET_TYPES"         );
 	addEnumValues(NO_YIELD             , "YieldTypes"         , "NO_YIELD"         , "NUM_YIELD_TYPES"          );
@@ -590,12 +591,6 @@ void CyEnumsPythonInterface()
 		.value("DOMAIN_LAND", DOMAIN_LAND)
 		.value("DOMAIN_IMMOBILE", DOMAIN_IMMOBILE)
 		.value("NUM_DOMAIN_TYPES", NUM_DOMAIN_TYPES)
-		;
-	python::enum_<UnitClassTypes>("UnitClassTypes")
-		.value("NO_UNITCLASS", NO_UNITCLASS)
-		;
-	python::enum_<UnitTypes>("UnitTypes")
-		.value("NO_UNIT", NO_UNIT)
 		;
 	python::enum_<ProfessionTypes>("ProfessionTypes")
 		.value("NO_PROFESSION", NO_PROFESSION)

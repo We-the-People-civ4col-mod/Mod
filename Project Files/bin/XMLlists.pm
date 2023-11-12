@@ -15,6 +15,7 @@ our @ISA= qw( Exporter );
 our @EXPORT = qw(
 	getAutoDir
 	getPythonDir
+	getMapDir
 	getSourceDir
 	getFileWithPath
 	getEnumFiles
@@ -77,6 +78,11 @@ sub getAutoDir
 sub getPythonDir
 {
 	return "../Assets/Python/";
+}
+
+sub getMapDir
+{
+	return "../PrivateMaps/";
 }
 
 sub getSourceDir
