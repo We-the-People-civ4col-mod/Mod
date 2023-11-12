@@ -579,15 +579,15 @@ class CvPortRoyalScreen:
 				szBuffer = u"%d%c" % (player.getTradeMessageAmount(i), gc.getYieldInfo(iYield).getChar())
 				szAction = localText.getText("TXT_KEY_EU_TRADE_LOG_SOLD", ())
 				if GlobalDefines.PORT_ROYAL_PORT_TAX > 0:
-					szTax = str(iPrice * GLobalDefines.PORT_ROYAL_PORT_TAX / 100)
+					szTax = str(iPrice * GlobalDefines.PORT_ROYAL_PORT_TAX / 100)
 			elif player.getTradeMessageType(i) == TradeMessageTypes.TRADE_MESSAGE_EUROPE_YIELD_BOUGHT:
 				iPrice *= self.playerEurope.getYieldPortRoyalSellPrice(iYield)
 				szBuffer = u"%d%c" % (player.getTradeMessageAmount(i), gc.getYieldInfo(iYield).getChar())
 				szAction = localText.getText("TXT_KEY_EU_TRADE_LOG_BOUGHT", ())
 			elif player.getTradeMessageType(i) == TradeMessageTypes.TRADE_MESSAGE_TREASURE:
 				szAction = localText.getText("TXT_KEY_UNIT_TREASURE", ())
-				if GLobalDefines.PORT_ROYAL_PORT_TAX > 0:
-					szTax = str(iPrice * GLobalDefines.PORT_ROYAL_PORT_TAX / 100)
+				if GlobalDefines .PORT_ROYAL_PORT_TAX > 0:
+					szTax = str(iPrice * GlobalDefines .PORT_ROYAL_PORT_TAX / 100)
 			
 			if player.getTradeMessageType(i) == TradeMessageTypes.TRADE_MESSAGE_LACK_FUNDS:
 				iLastFailed = i
