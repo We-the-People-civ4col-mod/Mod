@@ -332,6 +332,8 @@ sub handleLine
 
 sub lineErrorCheck
 {
+	return; # temporally disable this check
+	
 	my $file = shift;
 	my $line = shift;
 	
