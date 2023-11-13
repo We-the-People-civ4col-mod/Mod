@@ -1035,30 +1035,35 @@
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_LANDTRANSPORT_ATTACK</Tag>
         <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train was attacked by native hostile warrior. If the settler can defend it?</English>
+        <French>Une rumeur se répand : un chariot [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] s'est fait attquer par un guerrier indigène hostile. Les colons pourront-ils le défendre ? </French>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Wagenzug wurde von einem feindlichen Indianer-Trupp angegriffen. Ob die Siedler ihn verteidigen können?</German>
         <Russian>Ходят слухи, что индейцы напали на обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Смогут ли ли колонисты защитить его?</Russian>
      </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_LANDTRANSPORT_ATTACK_1</Tag>
         <English>Lured by the prospects of rich booty, a hostile Indian troop has attacked one a [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. They are shooting incendiary arrows! Now we have to take cover and save what can be saved.</English>
+        <French>Alléché par le butin potentiel, un groupe d'Indiens a attaqué un [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. Ils décochent des flèches de feu. À couvert, et sauvons ce que nous pouvons !</French>
         <German>Angelockt von den Aussichten auf reiche Beute hat ein feindlicher Indianer-Trupp einen [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] angegriffen. Sie schießen mit Brandpfeilen! Jetzt heißt es in Deckung gehen und retten was zu retten ist.</German>
         <Russian>Соблазнившись перспективой богатой добычи, отряд злобных индейцев напал на [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. Они стреляют зажигательными стрелами! Все в укрытие! Спасайтесь!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_1</Tag>
         <English>We will never go down without a fight!</English>
+        <French>Nous ne nous rendrons pas sans nous battre.</French>
         <German>Wir werden niemals kampflos untergehen!</German>
         <Russian>Мы никогда не сдадимся без боя!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_2</Tag>
         <English>Give them the goods, then maybe let go the wagons!</English>
+        <French>Donnons leur ce qu'ils veulent, ils laisseront les chariots repartir.</French>
         <German>Gebt ihnen die Waren, dann lassen Sie vielleicht die Wagen ziehen!</German>
         <Russian>Отдадим им товары и, может, они нас отпустят...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_HELP</Tag>
         <English>A hostile Indian troop attacks the wagon train. A few brave coachmen and guards defend it.</English>
+        <French>Une troupe d'Indiens hostiles attaque notre chariot. Les cochers et les gardes le défendent.</French>
         <German>Ein feindlicher Indianer-Trupp greift den Wagenzug an. Ein paar mutige Kutscher und Wachen verteidigen ihn.</German>
         <Russian>Отряд индейцев нападает на торговый обоз. Храбрые колонисты пытаюстя обороняться.</Russian>
     </TEXT>
@@ -4922,14 +4927,14 @@
    <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_1</Tag>
         <English>Your scout has entered a previously unnoticed native village. The natives look at you expectantly. What do you want to do?</English>
-        <French>Votre écaliareur est entré dans un village indigène ignoré jusqu'à présent. Les habitants vous regardent dans l'expectative. Que faites-vous? </French>
+        <French>Votre éclaireur est entré dans un village indigène ignoré jusqu'à présent. Les habitants vous regardent dans l'expectative. Que faites-vous? </French>
         <German>Euer Scout hat ein bisher unbeachtet gebliebenes Dorf der Ureinwohner betreten. Die Ureinwohner blicken Euch erwartungsvoll an. Was wollt Ihr tun?</German>
         <Russian>Наш разведчик обнаружил деревню индейцев, о которой раньше никто не сообщал. Туземцы не предпринимают никаких действий, заняв выжидательную позицию. Что будем делать?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_2</Tag>
         <English>Your scout has stumbled unawares into a native indian camp. Here you are apparently the intruder. They look at you skeptically, but not hostilely. The village is preparing for a feast, do you want to stay?</English>
-        <French>Votre scout est entré dans un camp des Indiens. Ils vous prennent pour un intrus. Il vous regardent avec méfiance mais sans hostilité. Le village se prépare à une fête, vouslez vous rester? </French>
+        <French>Votre scout est entré dans un camp des Indiens. Ils vous prennent pour un intrus. Ils vous regardent avec méfiance mais sans hostilité. Le village se prépare à une fête, vouslez vous rester? </French>
         <German>Euer Scout ist unversehens in ein Lager der Ureinwohner gestolpert. Hier seid Ihr offenbar der Eindringling. Man blickt Euch skeptisch, aber nicht feindlich an. Das Dorf bereitet sich auf ein Fest vor, wollt ihr bleiben?</German>
         <Russian>Наш разведчик забрел в индейский лагерь, в котором ведётся поготовка к какому-то празднеству. Не смотря на то, что его никто не приглашал, туземцы не выглядят враждебными. Останемся посмотреть на церемонию?</Russian>
     </TEXT>
@@ -4971,162 +4976,189 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_1</Tag>
         <English>Your seasoned trader has entered a previously unnoticed native village. The natives look at you expectantly. What do you want to do?</English>
+        <French>Votre marchand expérimenté est entré dans un village indigène ignoré jusqu'à présent. Les habitants vous regardent dans l'expectative. Que faites-vous? </French>
         <German>Euer couragierter Händler hat ein bisher unbeachtet gebliebenes Dorf der Ureinwohner betreten. Die Ureinwohner blicken Euch erwartungsvoll an. Was wollt Ihr tun?</German>
         <Russian>Наш отважный торговец нашёл ранее незамеченную индейскую деревню. Её жители с интересом наблюдают за тем, что мы будем делать.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_2</Tag>
         <English>Your seasoned trader has stumbled unawares into a native indian camp. Here you are apparently the intruder. They look at you skeptically, but not hostilely. The natives are obviously interested in your goods. Do you want to stay and to trade?</English>
+        <French>Votre marchand expérimenté est entré dans un camp des Indiens. Ils vous prennent pour un intrus. Ils vous regardent avec méfiance mais sans hostilité. Les indigènes sont intéressés par vos biens, voulez vous rester et faire échange? </French>
         <German>Euer couragierter Ureinwohnerhändler ist unversehens in ein Lager der Ureinwohner gestolpert. Hier seid Ihr offenbar der Eindringling. Man blickt Euch skeptisch, aber nicht feindlich an. Die Einwohner sind offenbar an Euren Waren interessiert. Wollt ihr bleiben und handeln?</German>
         <Russian>Наш отважный торговец неожиданно наткнулся на лагерь индейцев. Они смотрят не враждебно и, кажется, даже готовы вести торговлю. Задержимся здесь ненадолго?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_3</Tag>
         <English>Your seasoned trader has discovered a native indian village. However, the natives have been watching you for quite a while and could easily take you down. How do you behave?</English>
+        <French>Votre marchand expérimenté a découvert un village indien. Mais les indigènes vous observent depuis longtemps et peuvent vous abattre sans coup férir. Comment vous tenez-vous ? </French>
         <German>Euer couragierter Ureinwohnerhändler hat ein Dorf der Ureinwohner entdeckt. Die Ureinwohner beobachten Euch allerdings schon eine ganze Weile und könnten Euch mühelos überwältigen. Wie verhaltet Ihr Euch?</German>
         <Russian>Наш отважный торговец набрёл на одну деревню индейцев. Однако те уже давно наблюдают за ним и готовы атаковать. Как нам поступить?</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_1_News</Tag>
         <English>Our scouts and the natives have a lively party - relations improve.</English>
+        <French>Nos éclaireurs et les indigènes ont fait une fête réussie - les relations s'améliorent.</French>
         <German>Unsere Kundschafter und die Wilden feiern ein rauschendes Fest - die Beziehungen verbessern sich.</German>
         <Russian>Наш разведчик улучшил отношения с племенем, приняв участие в одном из их празднеств.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_2_News</Tag>
         <English>Our scouts receive rich gifts. But not all Indians like it.</English>
+        <French>Nos éclaireurs sont couverts de cadeaux. Tous les Indiens n'aiment pas ça.</French>
         <German>Unsere Kundschafter werden reich beschenkt. Aber nicht allen Indianern gfällt das.</German>
         <Russian>Наш разведчик получил богатые дары от вождей племени. Но не всем индийцам это понравилось.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_3News</Tag>
         <English>Our Scouts do not enter a certain native village.</English>
+        <French>Nos éclaireurs ne rentrent pas dans un certain village indigène.</French>
         <German>Unsere Kundschafter lassen ein Indianer-Dorf links liegen.</German>
         <Russian>Наш разведчик не стал заходить в лагерь туземцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_1</Tag>
         <English>We stay here for a while to make friends with the natives and warm ourselves at their campfires.</English>
+        <French>Nous resterons là quelque temps pour nous faire des amis auprès des indigènes et nous rechauffer auprès de leurs feux de camp.</French>
         <German>Wir bleiben eine Weile hier, um mit den Ureinwohnern Freundschaft zu schließen und uns an deren Lagerfeuern zu wärmen. Eine gute Grundlage für zukünftigen Handel.</German>
         <Russian>Мы остаемся здесь на некоторое время, чтобы подружиться с туземцами и погреться у их костров.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_2</Tag>
         <English>We are not here to make friends. Let us ask for treasures from which we can redeem them.</English>
+        <French>Nous ne sommes pas là pour nous faire des amis. Demandons leur des trésors dont nous pouvons les soulager.</French>
          <German>Wir sind nicht hier um Freundschaft zu schließen. Fragen wir nach Schätzen, von denen wir sie erlösen können. Wir versprechen Ihnen Waren dafür.</German>
         <Russian>Мы здесь не для того, чтобы заводить друзей. Попросим их показать свои товары. Может быть, удастся наладить выгодный обмен.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_3</Tag>
         <English>We should move on.The natives don't look like they could be of any use to us.</English>
+        <French>Nous devrions poursuivre. Ces indigènes n'ont l'air de nous être d'aucune utilité.</French>
         <German>Wir sollten weiterziehen. Die Ureinwohner sehen nicht so aus, als könnten Sie uns von Nutzen sein. </German>
         <Russian>Идём дальше, вид этой деревни не внушает доверия.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_1_News</Tag>
         <English>Our traders and the natives have a lively party - relations improve.</English>
+        <French>Nos marchands et les indiens font la fête - les relations s'améliorent.</French>
         <German>Unsere Händler und die Wilden feiern ein rauschendes Fest - die Beziehungen verbessern sich.</German>
         <Russian>Наш отважный торговец улучшил отношения с племенем, приняв участие в одном из их празднеств.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_2_News</Tag>
         <English>Our traders receive rich gifts. But not all Indians like it.</English>
+        <French>Nos marchands sont couverts de cadeaux. Mais tous les Indiens n'aiment pas ça.</French>
         <German>Unsere Händler werden reich beschenkt. Aber nicht allen Indianern gfällt das.</German>
         <Russian>Наш торговец получил богатые подарки от вождей племени. Но не всем индейцам это понравилось.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_3_News</Tag>
         <English>Our traders prefer to give this native village a wide berth.</English>
+        <French>Nos marchands trouvent que ce village indigène mérite un large détour, pour l'éviter.</French>
         <German>Um dieses Indianer-Dorf machen unsere Händler lieber einen Bogen.</German>
         <Russian>Наши торговцы предпочитают обходить эту деревню индейцев стороной.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADE_WAGON_1</Tag>
         <English>Milord, our neighbors are waiting for us to start trading with us. We should definitely send a wagon train and start trade relations.</English>
+        <French>Sire, nos voisins espèrent que nous commmercerons avec eux. Nous devrions vraiment envoyer un chariot pour commencer les relations commerciales.</French>
         <German>Milord, unsere Nachbarn warten darauf, dass wir den Handel mit Ihnen aufnehmen. Wir sollten unbedingt einen Wagenzug entsenden und Handelsbeziehungen beginnen.</German>
         <Russian>Милорд, наши соседи ждут, когда мы начнем с нами торговать. Нам обязательно надо отправить к ним обоз и завязать торговые отношения.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_NATIVE_TRADE_WAGON_DONE</Tag>
         <English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train sets out into the wilderness to trade.</English>
+        <French>Un chariot [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] traverse les terres sauvages pour affaires.</French>
         <German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug bricht zum Handel in die Wildnis auf.</German>
         <Russian>Караван [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправляется в торговое путешествие.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_HELP</Tag>
         <English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the indian village within %d3 rounds where the trader who initiated the trade is located.</English>
+        <French> Envoyez une unité [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT]) dans le village Indien où le marchand a commencé ses affaires dans les %d3 tours.</French>
         <German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem Indianer-Dorf, wo sich der Händler befindet, der den Handel eingefädelt hat.</German>
         <Russian>В течение %d3 ходов отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в индейскую деревню, где находится торговец, организовавший торговлю.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAIL_NATIVE_TRADE_WAGON</Tag>
         <English>Unfortunately, the trade can no longer take place. You have waited too long. The conditions have changed. You can now use the wagon train in another way.</English>
+        <French>Hélas, l'affaire a fait long feu. Vous avez trop attendu, les conditions ont changé. Vous pouvez utiliser le chariot à d'autres fins.</French>
         <German>Leider kann der Handel nicht mehr stattfinden. Ihr habt zulange gewartet. Die Bedingungen haben sich geändert. Ihr könnt den Wagenzug nun wieder anderweitig verwenden.</German>
         <Russian>К сожалению, торговля больше невозможна. Вы слишком долго ждали. Теперь вы можете использовать ваш транспорт по своему усмотрению.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADE_WAGON_DONE</Tag>
         <English>Milord, our wagon train has reached the Indian village. What deal should we make?</English>
+        <French>Sire, notre chariot a atteint le village indien. Quel marché devons-nous conclure ?</French>
         <German>Milord, unser Wagenzug hat das Indianer-Dorf erreicht. Welchen Handel sollen wir abschließen?</German>
         <Russian>Милорд, наш торговый обоз достиг индейской деревни. Какую сделку нам следует заключить?</Russian>
     </TEXT>
-   <TEXT>
+    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FAILED_TRADER_DAUGHTER</Tag>
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] trapper have returned to a failed native trader his daughter kidnapped by redskins.</English>
+        <French>À [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] des trappeurs ont ramené à un marchand ruiné sa fille ravie par des peaux-rouges.</French>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben Waldläufer einem gescheiterten Ureinwohnerhändler seine von Rothäuten entführte Tochter wieder zurückgebracht.</German>
         <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] зверолов вернул неудачливому торговцу его дочь, похищенную краснокожими.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FAILED_TRADER_DAUGHTER</Tag>
         <English>Milord, some trapper have returned a trader his daughter. She had been kidnapped by redskins while traveling through the wilderness and he returned to the colony alone and in despair. Now, of course, he has recovered and has also recovered mentally.</English>
-         <German>Milord, einige Waldläufer haben einem Händler seine Tochter wiedergebracht. Sie war auf der Reise durch die Wildnis von Rothäuten entführt worden und er kehrte allein und verzweifelt in die Kolonie zurück. Jetzt hat er sich natürlich erholt ist auch geistig wieder genesen.</German>
+        <French>Sire, des trappeurs ont ramené à un marchand ruiné sa fille. Des Peaux-rouges l'ont ravie alors que père et fille faisait route en nature et il est revenu seul et désespéré. Il a récupéré physiquement et moralement depuis.</French>
+        <German>Milord, einige Waldläufer haben einem Händler seine Tochter wiedergebracht. Sie war auf der Reise durch die Wildnis von Rothäuten entführt worden und er kehrte allein und verzweifelt in die Kolonie zurück. Jetzt hat er sich natürlich erholt ist auch geistig wieder genesen.</German>
         <Russian>Милорд, какой-то зверолов вернул торговцу его дочь, похищенную краснокожими во время путешествия по дикой местности. Тогда он вернулся в колонию один, убитый горем и отрешился от всего. Сейчас же лицо светится от счастья.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAILED_TRADER_DAUGHTER_1</Tag>
         <English>He should spend his last years in peace. We will buy him rum for evening gatherings at the inn. Perhaps his tales of the wilderness can be useful to other traders.</English>
+        <French>Il devrait passer ses dernières années en paix. Nous lui paierons des tournées de rhum à l'auberge. Ses aventures inspireront peut-être d'autres marchands.</French>
          <German>Er soll seine letzten Jahre in Frieden verbringen. Wir spendieren ihm den Rum für abendliche Zusammenkünfte im Wirtshaus. Vielleicht können seine Erzählungen über die Wildnis anderen Händlern nützlich sein.</German>
         <Russian>Нужно отпразновать это чудесное событие. Купим ему рома для вечерних посиделок в таверне. Возможно, его рассказы о дикой природе окажутся полезными для других торговцев.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAILED_TRADER_DAUGHTER_2</Tag>
         <English>It's nice that he can put his manpower back into the service for the colony. But we shouldn't send him out there into the wilderness. Let him open a business here instead.</English>
+        <French>C'est bien qu'il puisse à nouveau travailler. Mais nous ne pouvons pas le renvoyer dans la nature. Qu'il ouvre boutique ici.</French>
         <German>Schön, dass er seine Arbeitskraft wieder in den Dienst der Kolonie stellen kann. Aber wir sollten ihn nicht da raus in die Wildnis schicken. Soll er lieber hier ein Geschäft eröffnen.</German>
         <Russian>Отлино, теперь он снова сможет приносить пользу колонии. Но больше не следует посылать его в пустошь. Вместо этого пусть займётся чем-то в поселении.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAILED_TRADER_DAUGHTER_3</Tag>
         <English>As one hears, the daughter should have learned quite a bit about plants and medicinal herbs out there. We should take advantage of that. Hire her. She can work on one of the plantations.</English>
+        <French>À ce qu'il parait, La jeune fille devrait en avoir appris beaucoup sur les plantes et herbes médicinales. Nous devrions en tirer profit. Embauchez-la. Elle pourra travailler dans une plantation.</French>
         <German>Wie man hört, soll die Tochter ja da draußen einiges über Pflanzen und Heilkräuter gelernt haben. Das sollsten wir uns zu nutze machen. Stellt sie ein. Sie kann auf einer der Plantagen arbeiten.</German>
         <Russian>Судя по слухам, его дочь многое узнала о местных растениях. Мы должны этим воспользоваться - найдите ей работу на подходящей плантации.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FAILED_TRADER_REVENGE</Tag>
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a failed native trader spreads rumors about the horrors of the wilderness.</English>
+        <French>À [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] un marchand ruiné répand des rumeurs sur les horreurs sauvages.</French>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] verbreitet ein gescheiterter Ureinwohnerhändler Gerüchte über die Schrecken der Wildnis.</German>
         <Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] неудачливый торговец распространяет слухи об ужасах дикой природы.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_FAILED_TRADER_REVENGE</Tag>
         <English>Milord, a trader who seems to have been mentally disturbed by the horrors he experienced in the wilderness, has remembered them and is now willing to go into battle against the Redskins. His time as a trader is apparently finally over.</English>
-         <German>Milord, ein Händler, der, aufgrund der Schrecken, die er in der Wildnis erlebt zu haben scheint, geistig verwirrt war, hat sich dieser wieder erinnert und ist nun gewillt, gegen die Rothäute ins Feld zu ziehen. Seine Zeit als Händler ist offenbar endgültig vorbei.</German>
+        <French>Sire, un marchand qui avait perdu la raison devant les horreurs qu'il a vécu chez les sauvages, a recouvré la mémoire et veut en découdre avec les Peaux-Rouges. Sa carrière en tant que marchand prend fin.</French>
+        <German>Milord, ein Händler, der, aufgrund der Schrecken, die er in der Wildnis erlebt zu haben scheint, geistig verwirrt war, hat sich dieser wieder erinnert und ist nun gewillt, gegen die Rothäute ins Feld zu ziehen. Seine Zeit als Händler ist offenbar endgültig vorbei.</German>
         <Russian>Милорд, неудачливый торговец, на себе испытавший весь ужас нападения индейцев, воспрял духом и желает посвятить себя борьбе с ними. Кажется, мы потеряли торговца...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAILED_TRADER_REVENGE_1</Tag>
         <English>Nevertheless, he should spend his last years in peace. We will buy him rum for evening gatherings at the inn. Perhaps his tales of the wilderness can be useful to our inexperienced militia.</English>
+        <French>Pourtant, il va passer ses dernières années en paix. Nous lui paierons les tournées de rhum pour ses soirées d'histoires à l'auberge. Ses aventures chez les sauvages peuvent peut-être inspirer nos milices un peu vertes.</French>
          <German>Er sollte dennoch seine letzten Jahre in Frieden verbringen. Wir spendieren ihm den Rum für abendliche Zusammenkünfte im Wirtshaus. Vielleicht können seine Erzählungen über die Wildnis unserer unerfahrenen Miliz nützlich sein.</German>
         <Russian>Этот старик уже не боец. Но вот его рассказы о дикой местности могут быть полезны нашему неопытному ополчению. Купите ему рома, чтобы не пересохло в горле.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAILED_TRADER_REVENGE_2</Tag>
         <English>Excellent, we need settlers who want to get involved - even if their motives seem dubious. But I don't trust him, we shouldn't put weapons in his hands. He can work as a fireworker.</English>
+        <French>Nous avons bien besoins de colons qui en veulent, même si leurs motifs ne sont pas des plus nobles. Mais je ne lui fais pas confiance, nous ne devrions pas l'armer. Il peut travailler comme artificier.</French>
         <German>Hervorragend, wir brauchen Siedler, die anpacken wollen - mögen ihre Motive auch zweifelhaft erscheinen. Aber ich traue ihm nicht, wir sollten ihm keine Waffen in die Hand geben. Er kann als Feuerwerker arbeiten.</German>
         <Russian>Отлично, нам нужны мотивированные поселенцы. Однако, не стоит доверять ему оружие. Но он может работать на производстве пороха.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_FAILED_TRADER_REVENGE_3</Tag>
         <English>Well, if you can trade weapons, you can learn to make them. Let's send him to the magazine. There, at least, he can make the weapons he so desires.</English>
+        <French>Et bien, si vous vendez des armes, vous pouvez apprendre à les fabriquer. Là, au moins, il pourra faire toutes les armes qu'il souhaite.</French>
         <German>Nun gut, wer mit Waffen handeln kann, kann auch lernen sie herzustellen. Schicken wir ihn ins Magazin. Da kann er jedenfalls die Waffen herstellen, die er so sehr begehrt.</German>
         <Russian>Что ж, если раньше он торговал оружием, мы можем обучить и создавать его. Давайте отправим его на военный склад. Там он сможет изготовить то оружие, которое ему хочется.</Russian>
     </TEXT>
