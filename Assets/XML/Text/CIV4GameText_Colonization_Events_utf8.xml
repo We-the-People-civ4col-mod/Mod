@@ -4957,12 +4957,14 @@
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_3</Tag>
         <English>Unfortunately, we are in a hurry. The natives don't look like they could be of any use to us either.</English>
+        <French>Nous sommes hélas pressés. Les indigènes n'ont pas l'air dd pouvoir nous être utiles.</French>
         <German>Wir haben es leider sehr eilig. Die Ureinwohner sehen auch nicht so aus, als könnten Sie uns von Nutzen sein.</German>
         <Russian>Нам некогда разглядывать еще одно стойбище этих дикарей. Поторопимся, впереди еще много более важных дел.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_HELP</Tag>
         <English>[ICON_BULLET]Some natives are angry and do not approve of their chief giving you such a rich gift.</English>
+        <French>[ICON_BULLET]Des indigènes sont en colère et n'apprécient pas que leur chef vous fasse un tel cadeau.</French>
         <German>[ICON_BULLET]Einige Ureinwohner sind wütend und nicht damit einverstanden, dass ihr Häuptling Euch so reich beschenkt.</German>
         <Russian>[ICON_BULLET]Некоторые индейцы разгневаны и не одобряют того, что их вождь преподносит вам богатый подарок.</Russian>
     </TEXT>
@@ -5131,6 +5133,7 @@
    <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_FAILED_MISSIONARY_1</Tag>
         <English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a missionary has arrived who is looking for new tasks.</English>
+        <French>À [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] un missionnaire est arrivé en attente de nouveaux ordres.</French>
         <German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist ein Missionar angekommen, der nach neuen Aufgaben sucht.</German>
         <Russian>В [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] прибыл миссионер, который ищет новые задания.</Russian>
     </TEXT>
