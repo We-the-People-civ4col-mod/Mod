@@ -274,14 +274,14 @@ class CvOptionsScreen:
 
 			bContinue = true
 
-			if (iOptionLoop == PlayerOptionTypes.PLAYEROPTION_MODDER_1):
-				if (gc.getDefineINT("USE_MODDERS_PLAYEROPTION_1") == 0):
+			if iOptionLoop == PlayerOptionTypes.PLAYEROPTION_MODDER_1:
+				if GlobalDefines.USE_MODDERS_PLAYEROPTION_1 == 0:
 					bContinue = false
-			elif (iOptionLoop == PlayerOptionTypes.PLAYEROPTION_MODDER_2):
-				if (gc.getDefineINT("USE_MODDERS_PLAYEROPTION_2") == 0):
+			elif iOptionLoop == PlayerOptionTypes.PLAYEROPTION_MODDER_2:
+				if GlobalDefines.USE_MODDERS_PLAYEROPTION_2 == 0:
 					bContinue = false
-			elif (iOptionLoop == PlayerOptionTypes.PLAYEROPTION_MODDER_3):
-				if (gc.getDefineINT("USE_MODDERS_PLAYEROPTION_3") == 0):
+			elif iOptionLoop == PlayerOptionTypes.PLAYEROPTION_MODDER_3:
+				if GlobalDefines.USE_MODDERS_PLAYEROPTION_3 == 0:
 					bContinue = false
 
 			if (bContinue):

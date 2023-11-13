@@ -157,9 +157,9 @@ class CvGameUtils:
 		bFinal = argsList[1]
 		bVictory = argsList[2]
 
-		iPopulationScore = CvUtil.getScoreComponent(gc.getPlayer(ePlayer).getPopScore(), gc.getGame().getInitPopulation(), gc.getGame().getMaxPopulation(), gc.getDefineINT("SCORE_POPULATION_FACTOR"), True, bFinal, bVictory)
-		iLandScore = CvUtil.getScoreComponent(gc.getPlayer(ePlayer).getLandScore(), gc.getGame().getInitLand(), gc.getGame().getMaxLand(), gc.getDefineINT("SCORE_LAND_FACTOR"), True, bFinal, bVictory)
-		iFatherScore = CvUtil.getScoreComponent(gc.getPlayer(ePlayer).getFatherScore(), gc.getGame().getInitFather(), gc.getGame().getMaxFather(), gc.getDefineINT("SCORE_FATHER_FACTOR"), True, bFinal, bVictory)
+		iPopulationScore = CvUtil.getScoreComponent(gc.getPlayer(ePlayer).getPopScore(), gc.getGame().getInitPopulation(), gc.getGame().getMaxPopulation(), GlobalDefines.SCORE_POPULATION_FACTOR, True, bFinal, bVictory)
+		iLandScore = CvUtil.getScoreComponent(gc.getPlayer(ePlayer).getLandScore(), gc.getGame().getInitLand(), gc.getGame().getMaxLand(), GlobalDefines.SCORE_LAND_FACTOR, True, bFinal, bVictory)
+		iFatherScore = CvUtil.getScoreComponent(gc.getPlayer(ePlayer).getFatherScore(), gc.getGame().getInitFather(), gc.getGame().getMaxFather(), GlobalDefines.SCORE_FATHER_FACTOR, True, bFinal, bVictory)
 		return int(iPopulationScore + iLandScore + iFatherScore)
 
 	def doGold(self,argsList):
@@ -216,14 +216,14 @@ class CvGameUtils:
 
 		iCaptureGold = 0
 
-		iCaptureGold += gc.getDefineINT("BASE_CAPTURE_GOLD")
-		iCaptureGold += (pOldCity.getPopulation() * gc.getDefineINT("CAPTURE_GOLD_PER_POPULATION"))
-		iCaptureGold += CyGame().getSorenRandNum(gc.getDefineINT("CAPTURE_GOLD_RAND1"), "Capture Gold 1")
-		iCaptureGold += CyGame().getSorenRandNum(gc.getDefineINT("CAPTURE_GOLD_RAND2"), "Capture Gold 2")
+		iCaptureGold += GlobalDefines.BASE_CAPTURE_GOLD
+		iCaptureGold += (pOldCity.getPopulation() * GlobalDefines.CAPTURE_GOLD_PER_POPULATION)
+		iCaptureGold += CyGame().getSorenRandNum(GlobalDefines.CAPTURE_GOLD_RAND1, "Capture Gold 1")
+		iCaptureGold += CyGame().getSorenRandNum(GlobalDefines.CAPTURE_GOLD_RAND2, "Capture Gold 2")
 
-		if (gc.getDefineINT("CAPTURE_GOLD_MAX_TURNS") > 0):
-			iCaptureGold *= cyIntRange((CyGame().getGameTurn() - pOldCity.getGameTurnAcquired()), 0, gc.getDefineINT("CAPTURE_GOLD_MAX_TURNS"))
-			iCaptureGold /= gc.getDefineINT("CAPTURE_GOLD_MAX_TURNS")
+		if (GlobalDefines.CAPTURE_GOLD_MAX_TURNS > 0):
+			iCaptureGold *= cyIntRange((CyGame().getGameTurn() - pOldCity.getGameTurnAcquired()), 0, GlobalDefines.CAPTURE_GOLD_MAX_TURNS)
+			iCaptureGold /= GlobalDefines.CAPTURE_GOLD_MAX_TURNS
 
 		return iCaptureGold
 

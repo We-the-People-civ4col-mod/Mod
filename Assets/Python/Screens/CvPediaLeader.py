@@ -161,7 +161,7 @@ class CvPediaLeader:
 		iSelected = 0
 		for iI in range(gc.getNumLeaderHeadInfos()):
 			if (not gc.getLeaderHeadInfo(rowListName[iI][1]).isGraphicalOnly()):
-				if (not gc.getDefineINT("CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY") or not gc.getGame().isFinalInitialized() or gc.getGame().isLeaderEverActive(rowListName[iI][1])):
+				if GlobalDefines.CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY or not gc.getGame().isFinalInitialized() or gc.getGame().isLeaderEverActive(rowListName[iI][1]):
 					if bRedraw:
 						screen.appendListBoxStringNoUpdate(self.top.LIST_ID, rowListName[iI][0], WidgetTypes.WIDGET_PEDIA_JUMP_TO_LEADER, rowListName[iI][1], -1, CvUtil.FONT_LEFT_JUSTIFY)
 					if rowListName[iI][1] == self.iLeader:
