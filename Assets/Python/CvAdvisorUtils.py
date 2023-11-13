@@ -69,7 +69,7 @@ def unitSelectedFeats(pUnit):
 	global g_listUnitNags
 	player = gc.getPlayer(pUnit.getOwner())
 	if (player.shouldDisplayFeatPopup(FeatTypes.FEAT_TREASURE)):
-		if (pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_TREASURE")):
+		if (pUnit.getUnitType() == UnitTypes.UNIT_TREASURE):
 			if pUnit.getID() not in g_listUnitNags:
 				CyMessageControl().sendPlayerAction(pUnit.getOwner(), PlayerActionTypes.PLAYER_ACTION_FEAT, FeatTypes.FEAT_TREASURE, 1, -1);
 				popupInfo = CyPopupInfo()

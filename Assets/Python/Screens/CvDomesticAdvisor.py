@@ -259,12 +259,12 @@ class CvDomesticAdvisor:
 
 		# Building Headers
 		for iSpecial in range(gc.getNumSpecialBuildingInfos()):
-			if (iSpecial != gc.getInfoTypeForString("SPECIALBUILDING_BELLS")):
+			if iSpecial != SpecialBuildingTypes.SPECIALBUILDING_BELLS:
 				iBuildingOnPage = (iSpecial-1) % self.MAX_BUILDINGS_IN_A_PAGE
 				iPage = (iSpecial-1) // self.MAX_BUILDINGS_IN_A_PAGE
 				self.createSubpage(self.BUILDING_STATE, iPage)
 				
-				if (iSpecial == gc.getInfoTypeForString("SPECIALBUILDING_WHALE_OIL")):
+				if iSpecial == SpecialBuildingTypes.SPECIALBUILDING_WHALE_OIL:
 					screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getYieldInfo(YieldTypes.YIELD_WHALE_OIL).getChar()) + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )				
 				else:
 					screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getSpecialBuildingInfo(iSpecial).getChar())         + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )

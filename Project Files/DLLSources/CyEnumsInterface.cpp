@@ -127,9 +127,12 @@ void CyEnumsPythonInterface()
 	// 3: name of NO_ type. Skipped if it is set to NULL
 	// 4 name of NUM_
 	addEnumValues(NO_BUTTON_POPUP      , "ButtonPopupTypes"   , "NO_BUTTON_POPUP"  , "NUM_BUTTONPOPUP_TYPES"    );
+	addEnumValues(NO_COLOR             , "ColorTypes"         , "NO_COLOR"         , "NUM_COLOR_TYPES"          );
 	addEnumValues(NO_CONCEPT           , "ConceptTypes"       , "NO_CONCEPT"       , "NUM_CONCEPT_TYPES"        );
+	addEnumValues(NO_FEATURE           , "FeatureTypes"       , "NO_FEATURE"       , "NUM_FEATURE_TYPES"        );
 	addEnumValues(MAX_NUM_SYMBOLS      , "FontSymbols"        , NULL               , "MAX_NUM_SYMBOLS"          );
-	addEnumValues(NO_HANDICAP          , "HandicapTypes"      , "NO_HANDICAP"      , "NUM_HANDICAP_TYPES");
+	addEnumValues(NO_HANDICAP          , "HandicapTypes"      , "NO_HANDICAP"      , "NUM_HANDICAP_TYPES"       );
+	addEnumValues(NO_SPECIALBUILDING   , "SpecialBuildingTypes","NO_SPECIALBUILDING", "NUM_SPECIALBUILDING_TYPES");
 	addEnumValues(NO_TERRAIN           , "TerrainTypes"       , "NO_TERRAIN"       , "NUM_TERRAIN_TYPES"        );
 	addEnumValues(NO_UNIT              , "UnitTypes"          , "NO_UNIT"          , "NUM_UNIT_TYPES"           );
 	addEnumValues(NO_UNITCLASS         , "UnitClassTypes"     , "NO_UNITCLASS"     , "NUM_UNITCLASS_TYPES"      );
@@ -186,9 +189,6 @@ void CyEnumsPythonInterface()
 		.value("CARDINALDIRECTION_SOUTH", CARDINALDIRECTION_SOUTH)
 		.value("CARDINALDIRECTION_WEST", CARDINALDIRECTION_WEST)
 		.value("NUM_CARDINALDIRECTION_TYPES", NUM_CARDINALDIRECTION_TYPES)
-		;
-	python::enum_<ColorTypes>("ColorTypes")
-		.value("NO_COLOR", NO_COLOR)
 		;
 	python::enum_<PlayerColorTypes>("PlayerColorTypes")
 		.value("NO_PLAYERCOLOR", NO_PLAYERCOLOR)
@@ -436,10 +436,6 @@ void CyEnumsPythonInterface()
 	python::enum_<VictoryTypes>("VictoryTypes")
 		.value("NO_VICTORY", NO_VICTORY)
 		;
-	python::enum_<FeatureTypes>("FeatureTypes")
-		.value("NO_FEATURE", NO_FEATURE)
-		.value("NUM_FEATURE_TYPES", NUM_FEATURE_TYPES)
-		;
 	python::enum_<BonusTypes>("BonusTypes")
 		.value("NO_BONUS", NO_BONUS)
 		;
@@ -591,11 +587,6 @@ void CyEnumsPythonInterface()
 		;
 	python::enum_<BuildingTypes>("BuildingTypes")
 		.value("NO_BUILDING", NO_BUILDING)
-		;
-	python::enum_<SpecialBuildingTypes>("SpecialBuildingTypes")
-		.value("NO_SPECIALBUILDING", NO_SPECIALBUILDING)
-		// next line looks up an "enum" value at runtime where it is based on xml type strings
-		.value("SPECIALBUILDING_EDUCATION", getIndexForType<SpecialBuildingTypes>("SPECIALBUILDING_EDUCATION", "SPECIALBUILDING_EDUCATION must exist in xml"))
 		;
 	python::enum_<InfoBarTypes>("InfoBarTypes")
 		.value("INFOBAR_STORED", INFOBAR_STORED)

@@ -23,11 +23,7 @@ else
 	#$nthreads = $cpu->ht || $cpu->count || 1;
 }
 
-# don't suck up every single CPU core. This will actually make compilation faster
-# the reason is that this script will run in parallel with other makefile activities
-$nthreads -= 1;
-
-print "Testing python files using $nthreads threads (leave a thread for other makefile activities)\n";
+print "Testing python files using $nthreads threads\n";
 
 my $process_q = Thread::Queue -> new();
 my $error_q = Thread::Queue -> new();
@@ -155,7 +151,7 @@ sub handleCyEnumInterface
 			}
 			else
 			{
-				$state = 4 if index($line, "generateEnumValues();") != -1;
+				$state = 4 if index($line, "generateGlobalDefines();") != -1;
 			}
 		}
 		elsif ($state == 4)
@@ -336,6 +332,13 @@ sub lineErrorCheck
 	my $line = shift;
 	
 	$error_q->enqueue("$file gc.getDefineINT is no longer allowed. See CyEnumsInterface.cpp for details\n") unless index($line, "gc.getDefineINT") == -1;
+	return; # disable checks for getInfoTypeForString until all prior existing cases have been converted
+	if (index($line, "gc.getInfoTypeForString") != -1)
+	{
+		# only trigger on gc.getInfoTypeForString + " as there are a few valid use cases for variables rather than hardcoded strings.
+		# an example of a valid use case is passing scenario files where the code looks up whatever string was read from the file.
+		$error_q->enqueue("$file gc.getInfoTypeForString is no longer allowed. See CyEnumsInterface.cpp for details\n") unless index($line, "\"") == -1;
+	}
 }
 
 # subroutine to handle each thread

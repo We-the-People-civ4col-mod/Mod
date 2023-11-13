@@ -291,7 +291,7 @@ class CvOptionsScreen:
 				szCallbackFunction = "handleGameOptionsClicked"
 				szWidgetName = "GameOptionCheckBox_" + str(iOptionLoop)
 				bOptionOn = UserProfile.getPlayerOption(iOptionLoop)#gc.getPlayer(gc.getGame().getActivePlayer()).isOption(iOptionLoop)
-				if ((i+1) <= (PlayerOptionTypes.NUM_PLAYEROPTION_TYPES+1)/2):
+				if ((i+1) <= (PlayerOptionTypes.NUM_PLAYEROPTION_TYPES + 1)/2):
 					vbox = "GameVBox1"
 				else:
 					vbox = "GameVBox2"

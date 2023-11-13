@@ -55,7 +55,7 @@ class CvAchieveAdvisor:
 		screen.showWindowBackground(False)
 
 		TitleText = localText.getText("TXT_KEY_ACHIEVE_ADVISOR_TITLE", ()).upper()
-		TitleText = localText.changeTextColor(TitleText, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+		TitleText = localText.changeTextColor(TitleText, ColorTypes.COLOR_FONT_CREAM)
 
 		screen.setLabel( "Title", "Background", u"<font=4b>" + TitleText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.XResolution / 2, 4, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setText( "AchieveScreenExit", "Background", u"<font=4>" + CyTranslator().getText("TXT_KEY_PEDIA_SCREEN_EXIT", ()).upper() + "</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - 30, self.YResolution - 35, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1 )
@@ -117,7 +117,7 @@ class CvAchieveAdvisor:
 			screen.show("ScrollPlus")
 
 		AchieveCountText = localText.getText("TXT_KEY_ACHIEVES", (CyGameTextMgr().getInterfaceTimeStr(gc.getGame().getActivePlayer()), len(self.MyAchieves)))
-		AchieveCountText = localText.changeTextColor(AchieveCountText, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+		AchieveCountText = localText.changeTextColor(AchieveCountText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel("AchieveCount", "Background", "<font=4>" + AchieveCountText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, self.XResolution / 2, self.YResolution - 35, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		iColumn = 0
@@ -143,7 +143,7 @@ class CvAchieveAdvisor:
 		
 				szAchieveTitle = gc.getAchieveInfo(iAchieve).getDescription() + u" (%d)" %iAchieveYear
 				fontSize = "<font=4>"
-				szAchieveTitle = localText.changeTextColor(szAchieveTitle, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+				szAchieveTitle = localText.changeTextColor(szAchieveTitle, ColorTypes.COLOR_FONT_CREAM)
 
 # TAC 0201: Move text down so that it appears under the frame, not under the picture if a frame exists
 				screen.addMultilineText("AchieveName" + str(iIndex), fontSize + szAchieveTitle + "</font>", iColumnX-10, iRowY + AchievePicHight+iMovedown, AchievePicWidth+10, (AchievePicHight * 18 / 100), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
