@@ -422,14 +422,14 @@
         <English>We are duty bound to answer. The ship is theirs.</English>
         <French>C'est notre devoir que de les aider. Le navire leur appartient.</French>
         <German>Unsere Pflicht gegenüber der Krone gebietet es uns, wie gewünscht ein Schiff zur Verfügung zu stellen.</German>
-        <Russian>Мы обязаны дать ответ. Корабль принадлежит им.</Russian>
+        <Russian>Наш долг перед Короной требует от нас предоставить корабль по этому запросу.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COMMANDEERED_2</Tag>
         <English>Let them build their own ships! We cannot foresake the defense of our shores.</English>
         <French>Qu'ils construisent leurs propres bateaux ! Nous ne pouvons pas mettre en danger nos côtes.</French>
         <German>Die Royal Navy ist groß genug, um selbst ein Schiff abzustellen. Unsere Küsten dürfen nicht ungeschützt bleiben!</German>
-        <Russian>Пусть строят свои собственные корабли! Мы не можем отказаться от защиты наших берегов.</Russian>
+        <Russian>Пусть строят свои собственные корабли! Наши берега тоже требуют защиты.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COMMANDEERED_RETURN</Tag>
@@ -533,7 +533,7 @@
         <English>No, catch him and sell him to the tribe. This will strengthen our relationship with the Natives.</English>
         <French>Non, capturez-le et renvoyez-le vers sa tribu. Ça renforcera nos relations avec elle.</French>
         <German>Nehmt ihn gefangen und verkauft ihn an den Stamm, das wird unsere Beziehungen auf lange Sicht stärken.</German>
-        <Russian>Нет, поймайте его и продайте племени. Это укрепит наши отношения с туземцами.</Russian>
+        <Russian>Нет, закуйте его в кандалы и продайте племени. Это укрепит наши отношения с туземцами.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_COUNTERBLASTE_1</Tag>

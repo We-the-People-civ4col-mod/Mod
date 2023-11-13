@@ -931,7 +931,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; DRUCK &gt;[COLOR_REVERT], um einen Screenshot zu machen und unter "Colonization\Screenshots" zu speichern.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; STAMP &gt;[COLOR_REVERT] per scattare una foto che verrà salvata in Colonization\Screenshots...</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; PRINT SCREEN &gt;[COLOR_REVERT] para hacer una captura de pantalla (se guardará en la carpeta Colonization\Screenshots).</Spanish>
-		<Russian>Нажмите [COLOR:140:255:40:255PRINT SCREEN[COLOR_REVERT], чтобы сделать снимок экрана (он будет сохранен в папке *\Documents\My Games\Civilization IV Colonization\ScreenShots).</Russian>
+		<Russian>Нажмите [COLOR:140:255:40:255]PRINT SCREEN[COLOR_REVERT], чтобы сделать снимок экрана (он будет сохранен в папке *\Documents\My Games\Civilization IV Colonization\ScreenShots).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_14</Tag>
@@ -1147,7 +1147,7 @@ Viel Spass![NEWLINE]
 		<German>Halten Sie [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] gedrückt und bewegen Sie die Maus über eine Position, um Ihre Chancen im Falle eines Angriffs zu betrachten.</German>
 		<Italian>Tieni premuto [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] e punta con il mouse una casella per visualizzare le probabilità di vittoria in caso di attacco.</Italian>
 		<Spanish>Mantener Pulsara la tecla [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] mientras se señala una casilla con el cursor para ver las probabilidades de un ataque.</Spanish>
-		<Russian>Удерживайте кнопку [COLOR:140:255:40:255ALT[COLOR_REVERT] при наведении курсора мыши на клетку с врагом, чтобы просмотреть примерный расчет итогов сражения.</Russian>
+		<Russian>Удерживайте кнопку [COLOR:140:255:40:255]ALT[COLOR_REVERT] при наведении курсора мыши на клетку с врагом, чтобы просмотреть примерный расчет итогов сражения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_39</Tag>
@@ -1264,7 +1264,7 @@ Viel Spass![NEWLINE]
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; G &gt;[COLOR_REVERT], um den "Gehe zu"-Modus zu aktivieren.</German>
 		<Italian>Passa alla modalità "Vai a" premendo [COLOR:140:255:40:255]&lt; G &gt;[COLOR_REVERT].</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; G &gt;[COLOR_REVERT] para entrar en el modo "Ir a".</Spanish>
-		<Russian>Войдите в режим "Идти к", нажав [COLOR:140:255:40:255]G[COLOR_REVERT].</Russian>
+		<Russian>Войдите в режим "Идти к городу", нажав [COLOR:140:255:40:255]G[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_52</Tag>
