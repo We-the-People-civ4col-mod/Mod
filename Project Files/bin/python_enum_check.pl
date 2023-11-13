@@ -3,6 +3,34 @@
 
 use strict;
 use warnings;
+use threads;
+use Thread::Queue;
+
+my $nthreads = 8;
+
+if ($^O eq 'MSWin32')
+{
+	$nthreads = $ENV{"NUMBER_OF_PROCESSORS"};
+}
+else
+{
+	# linux only
+	# TODO: make a fallback, which doesn't cause errors while using Strawberry Perl
+	#use Sys::Info;
+	#use Sys::Info::Constants qw( :device_cpu );
+	#my $info = Sys::Info->new;
+	#my $cpu  = $info->device( CPU => %options );
+	#$nthreads = $cpu->ht || $cpu->count || 1;
+}
+
+# don't suck up every single CPU core. This will actually make compilation faster
+# the reason is that this script will run in parallel with other makefile activities
+$nthreads -= 1;
+
+print "Testing python files using $nthreads threads (leave a thread for other makefile activities)\n";
+
+my $process_q = Thread::Queue -> new();
+my $error_q = Thread::Queue -> new();
 
 use File::Slurp;
 
@@ -20,6 +48,27 @@ readHeader(getAutoDir() . "AutoXmlEnum.h");
 readHeader(getAutoDir() . "AutoGlobalDefineEnum.h");
 
 testPythonFiles();
+
+#start some threads
+for ( 1..$nthreads )
+{
+	threads->create( \&worker );
+}
+
+#Wait for threads to all finish processing.
+foreach my $thr ( threads->list() )
+{
+	$thr->join();
+}
+$error_q->end();
+
+my $errorStr = "";
+while ( my $error = $error_q -> dequeue() )
+{
+	$errorStr .= $error;
+}
+
+die $errorStr unless $errorStr eq "";
 
 exit();
 
@@ -51,6 +100,26 @@ sub handleCyEnumInterface
 			{
 				$state = 1;
 			}
+		}
+		
+		elsif ($state == 1)
+		{
+			if (index($line, "enumTable.value(") != -1)
+			{
+				my $key = substr($line, index($line, "\"")+1);
+				$key = substr($key, 0, index($key, "\""));
+				$enums{GlobalDefines}{$key} = 1;
+				next;
+			}
+			 
+			$state = 2 if index($line, "}") == 0;
+		}
+		elsif ($state == 2)
+		{
+			if (index($line, "CyEnumsPythonInterface()") != -1)
+			{
+				$state = 3;
+			}
 			else
 			{
 				if ($type ne "")
@@ -72,25 +141,7 @@ sub handleCyEnumInterface
 					$type = substr($line, 40);
 					$type = substr($type, 0, index($type, ">"));
 				}
-				
 			}
-		}
-		
-		elsif ($state == 1)
-		{
-			if (index($line, "enumTable.value(") != -1)
-			{
-				my $key = substr($line, index($line, "\"")+1);
-				$key = substr($key, 0, index($key, "\""));
-				$enums{GlobalDefines}{$key} = 1;
-				next;
-			}
-			 
-			$state = 2 if index($line, "}") == 0;
-		}
-		elsif ($state == 2)
-		{
-			$state = 3 if index($line, "CyEnumsPythonInterface()") != -1;
 		}
 		elsif ($state == 3)
 		{
@@ -170,6 +221,7 @@ sub testPythonFiles
 {
 	handleDir(getPythonDir());
 	handleDir(getMapDir());
+	$process_q->end();
 }
 
 sub handleDir
@@ -189,7 +241,7 @@ sub handleDir
 			next if $_ eq "CvMainInterface_Backup.py";
 			next if $_ eq "CvMainInterface_Backup_Terrain_Backgrounds.py";
 			next unless substr($file, -3) eq ".py";
-			handleFile($file)
+			$process_q->enqueue($file);
 		}
 		elsif (-d $file)
 		{
@@ -274,7 +326,7 @@ sub handleLine
 			last if exists $enums{$enum}{$key};
 		}
 
-		die "$file $enum.$key doesn't exist\n" unless exists $enums{$enum}{$key};
+		$error_q->enqueue("$file $enum.$key doesn't exist\n") unless exists $enums{$enum}{$key};
 	}
 }
 
@@ -283,5 +335,17 @@ sub lineErrorCheck
 	my $file = shift;
 	my $line = shift;
 	
-	die "$file gc.getDefineINT is no longer allowed. See CyEnumsInterface.cpp for details\n" unless index($line, "gc.getDefineINT") == -1;
+	$error_q->enqueue("$file gc.getDefineINT is no longer allowed. See CyEnumsInterface.cpp for details\n") unless index($line, "gc.getDefineINT") == -1;
 }
+
+# subroutine to handle each thread
+# goal is to take one file off the queue and handle it
+# kill thread when queue is empty
+sub worker
+{
+	while (my $file = $process_q->dequeue())
+	{
+		handleFile($file);
+	}
+}
+

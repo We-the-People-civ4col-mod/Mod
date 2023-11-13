@@ -538,13 +538,11 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Debug|Win32'">
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Debug
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll  /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Debug
 nmake clean  /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Debug
 nmake clean  /NOLOGO</NMakeCleanCommandLine>
@@ -555,13 +553,11 @@ nmake clean  /NOLOGO</NMakeCleanCommandLine>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Profile|Win32'">
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Profile
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Profile
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Profile
 nmake clean  /NOLOGO</NMakeCleanCommandLine>
@@ -572,13 +568,11 @@ nmake clean  /NOLOGO</NMakeCleanCommandLine>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Release
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Release
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
@@ -589,13 +583,11 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Final Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=FinalRelease
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=FinalRelease
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=FinalRelease
 nmake clean /NOLOGO</NMakeCleanCommandLine>
@@ -605,13 +597,11 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Assert|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Assert
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Assert
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
@@ -622,14 +612,12 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Release
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Release
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Release
@@ -643,16 +631,14 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Release
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Release
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
@@ -667,16 +653,14 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=FinalRelease
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=FinalRelease
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
@@ -689,14 +673,12 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Final Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=FinalRelease
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=FinalRelease
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=FinalRelease
@@ -708,16 +690,14 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=FinalRelease
 set RELEASE_VERSION=READ
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO &amp;&amp; ^
 nmake BuildRelease /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=FinalRelease
 set RELEASE_VERSION=READ
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO &amp;&amp; ^
 nmake BuildRelease /NOLOGO</NMakeReBuildCommandLine>
@@ -729,14 +709,12 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Debug|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Debug
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Debug
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Debug
@@ -749,16 +727,14 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES -DCHECK_GLOBAL_CONSTANTS
 set TEMP_DIR_POSTFIX=_TEST
 set TARGET=Debug
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 bin\jom pre_test /NOLOGO &amp;&amp; ^
 bin\jom test /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES -DCHECK_GLOBAL_CONSTANTS
 set TEMP_DIR_POSTFIX=_TEST
 set TARGET=Debug
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake pre_test /NOLOGO &amp;&amp; ^
 bin\jom test /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES -DCHECK_GLOBAL_CONSTANTS
@@ -773,16 +749,14 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Debug
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Debug
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
@@ -795,14 +769,12 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Profile|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Profile
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Profile
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Profile
@@ -815,16 +787,14 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Profile
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Profile
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
@@ -837,14 +807,12 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Assert|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Assert
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Assert
 nmake clean  /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Assert
@@ -858,16 +826,14 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Assert
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Assert
 nmake clean  /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES

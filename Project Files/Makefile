@@ -269,7 +269,7 @@ LDFLAGS = $(LDFLAGS) $(CONFIG_DLFLAGS)
 #### Targets ####
 #################
 
-.PHONY: all clean build precompile Make_Dir fastdep source_list pre_test test test_DllExport BuildRelease
+.PHONY: all clean build precompile Make_Dir fastdep source_list pre_test test test_DllExport BuildRelease source_list_building header_building test_Python
 
 all: Precompile build
 
@@ -293,7 +293,9 @@ build: $(Target_BIN)
 
 precompile: Make_Dir Target_unfinished $(Target_PCH)
 
-source_list: Make_Dir test_DllExport
+source_list: source_list_building Make_Dir test_DllExport test_Python fastdep
+
+source_list_building: header_building
 	@ECHO Building source list
 	@ECHO SOURCES= \> $(FILE_DEPENDS)
 	@FOR %j in ($(SUBDIRS)) DO @(FOR %i IN ($(SOURCE_DIR)\%j\*.cpp) DO @ECHO %i \>> $(FILE_DEPENDS))
@@ -302,11 +304,14 @@ source_list: Make_Dir test_DllExport
 	@ECHO OBJS= \>> $(FILE_DEPENDS)
     @FOR %j in ($(SUBDIRS)) DO @(FOR /F "delims=." %i IN ('dir /b $(SOURCE_DIR)\%j\*.cpp') DO @ECHO. $(TEMP_TARGET_FILES)\%j\%i.obj \>> $(FILE_DEPENDS))
     @ECHO.>> $(FILE_DEPENDS)
+	
+header_building:
+	@ECHO Building headers
 	@$(PERL) bin\xml_enum_gen.pl
 	@$(PERL) bin\variable_setup.pl
 	@$(PERL) bin\Makefile_setup.pl "$(PROGRAMFILES)"
 
-fastdep:
+fastdep: source_list_building
 	@ECHO Running fastdep
 !IFDEF RELEASE_VERSION
 	@echo $(RELEASE_VERSION)| $(PERL) bin\git_version.pl
@@ -465,10 +470,11 @@ test_DllExport:
 	@$(PERL) bin\DllExport.pl "$(SOURCE_DIR)"
 	@$(PERL) bin\xml_validation.pl
 	@$(PERL) bin\CPP_line_checker.pl
-	@$(PERL) bin\xml_enum_global_types.pl
 	@$(PERL) bin\InfoArray.pl
-	
-#@$(PERL) bin\python_enum_check.pl
+
+test_Python: header_building
+	@$(PERL) bin\xml_enum_global_types.pl
+	@$(PERL) bin\python_enum_check.pl
 
 # first step in the testing process
 # each target mentioned here will run in a dedicated process

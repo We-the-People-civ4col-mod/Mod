@@ -8,8 +8,7 @@ SET PATH=%PATH%;..\..\Compiler\Microsoft Visual C++ Toolkit 2003\bin
 set TARGET=%1
 set TEMP_DIR_POSTFIX=%2
 set CONFIG_CFLAGS= %3
-nmake source_list /NOLOGO && ^
-nmake fastdep /NOLOGO && ^
+bin\jom source_list /NOLOGO && ^
 nmake precompile  /NOLOGO && ^
 bin\jom build
 
