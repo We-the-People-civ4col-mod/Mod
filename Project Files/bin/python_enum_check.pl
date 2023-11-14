@@ -6,6 +6,9 @@ use warnings;
 use threads;
 use Thread::Queue;
 
+use constant STATE_1_INNER => 10;
+use constant STATE_3_INNER => 11;
+
 my $nthreads = 8;
 
 if ($^O eq 'MSWin32')
@@ -83,6 +86,8 @@ sub handleCyEnumInterface
 {
 	my $file = getSourceDir() . "CyEnumsInterface.cpp";
 	
+	my $lineno = 1;
+	
 	open my $info, $file or die "Could not open $file: $!\n";
 
 	my $state = 0;
@@ -90,53 +95,37 @@ sub handleCyEnumInterface
 
 	while( my $line = <$info>)
 	{
-		if ($state == 0)
+		if ($state <= 7 and substr($line, 0, 34) eq "// python_enum_check.pl NEXT STATE")
 		{
-			if (index($line, "python::enum_<int> enumTable = python::enum_<int>(\"GlobalDefines\")") != -1)
-			{
-				$state = 1;
-			}
+			die "$file($.) File contains more python_enum_check.pl NEXT STATE than script expected\n" if $state > 5;
+			$lineno = $.;
+			$state += 1;
+			next;
 		}
 		
-		elsif ($state == 1)
+		if ($state == 1)
 		{
+			if (index($line, "void EnumContainer<") != -1)
+			{
+				$state = STATE_1_INNER;
+				$type = substr($line, index($line, "<")+1);
+				$type = substr($type, 0, index($type, ">"));
+				$type = "GlobalDefines" if $type eq "int";
+			}
+		}
+		elsif ($state == STATE_1_INNER)
+		{
+			if (substr($line, 0, 1) eq "}")
+			{
+				$state = 1;
+				next;
+			}
 			if (index($line, "enumTable.value(") != -1)
 			{
 				my $key = substr($line, index($line, "\"")+1);
 				$key = substr($key, 0, index($key, "\""));
-				$enums{GlobalDefines}{$key} = 1;
+				$enums{$type}{$key} = 1;
 				next;
-			}
-			 
-			$state = 2 if index($line, "}") == 0;
-		}
-		elsif ($state == 2)
-		{
-			if (index($line, "CyEnumsPythonInterface()") != -1)
-			{
-				$state = 3;
-			}
-			else
-			{
-				if ($type ne "")
-				{
-					if (substr($line, 0, 1) eq "}")
-					{
-						$type = "";
-					}
-					else
-					{
-						next if index($line, "enumTable.value") == -1;
-						my $value = substr($line, index($line, "\"")+1);
-						$value = substr($value, 0, index($value, "\""));
-						$enums{$type}{$value} = 1;
-					}
-				}
-				elsif (substr($line, 0, 40) eq "static void addEnumValues(python::enum_<")
-				{
-					$type = substr($line, 40);
-					$type = substr($type, 0, index($type, ">"));
-				}
 			}
 		}
 		elsif ($state == 3)
@@ -149,20 +138,25 @@ sub handleCyEnumInterface
 				$max = substr($max, rindex($max, "\"")+1);
 				$headerCheck{$types} = $max;
 			}
-			else
-			{
-				$state = 4 if index($line, "generateGlobalDefines();") != -1;
-			}
 		}
-		elsif ($state == 4)
+		elsif ($state == 5)
 		{
 			if (index($line, "python::enum_") != -1)
 			{
 				$type = substr($line, index($line, "\"")+1);
 				$type = substr($type, 0, index($type, "\""));
 				$enums{$type} = ();
+				$state = STATE_3_INNER;
 			}
-			elsif (index($line, ".value(") != -1)
+		}
+		elsif ($state == STATE_3_INNER)
+		{
+			if (index($line, ";") != -1)
+			{
+				$state = 5;
+				next;
+			}
+			if (index($line, ".value(") != -1)
 			{
 				my $value = substr($line, index($line, "\"")+1);
 				$value = substr($value, 0, index($value, "\""));
@@ -170,6 +164,8 @@ sub handleCyEnumInterface
 			}
 		}
 	}
+
+	die "$file($lineno) Didn't encounter 6 python_enum_check.pl NEXT STATE\n" unless $state == 6;
 
 	close $info;
 }
