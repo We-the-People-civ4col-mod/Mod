@@ -252,10 +252,10 @@ protected:
 	void makePeaceWithAll();
 
 	virtual void read(FDataStreamBase* pStream);
-	virtual void write(FDataStreamBase* pStream);
+	virtual void write(FDataStreamBase* pStream) const;
 	void resetSavedData(TeamTypes eID);
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 };
 
 #endif

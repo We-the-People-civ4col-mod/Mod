@@ -153,13 +153,13 @@ void CvPopupInfo::write(CvSavegameWriter writer) const
 	writer.Write(PopupInfoSave_END);
 }
 
-	void CvPopupButtonPython::read(CvSavegameReader reader)
-	{
-		reader.Read(szText);
-		reader.Read(szArt);
-	}
-	void CvPopupButtonPython::write(CvSavegameWriter writer)
-	{
-		writer.Write(szText);
-		writer.Write(szArt);
-	}
+void CvPopupButtonPython::read(CvSavegameReader reader)
+{
+	reader.Read(szText);
+	reader.Read(szArt);
+}
+void CvPopupButtonPython::write(CvSavegameWriter writer) const
+{
+	writer.Write(szText);
+	writer.Write(szArt);
+}

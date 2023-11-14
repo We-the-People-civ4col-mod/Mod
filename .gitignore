@@ -27,3 +27,7 @@ Thumbs.db
 /Project Files/Boost-1.32.0
 /Project Files/Python24
 .idea
+.cache
+compile_commands.json
+zig-cache
+zig-out

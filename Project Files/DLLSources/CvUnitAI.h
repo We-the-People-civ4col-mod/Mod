@@ -86,7 +86,7 @@ public:
 	bool AI_allowedToJoin(const CvCity* pCity) const;
 
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 
 	//TAC Whaling, ray
 	bool AI_transportReturnToPort(bool bUnload, CvCity* pCity);

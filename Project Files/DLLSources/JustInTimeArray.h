@@ -113,9 +113,9 @@ public:
 		return static_cast<JITarrayTypes>(m_iType);
 	}
 
-	bool hasContent();
-	int getFirstNoneDefault();
-	inline bool isEmpty()
+	bool hasContent() const;
+	int getFirstNoneDefault() const;
+	inline bool isEmpty() const
 	{
 		return !hasContent();
 	}
@@ -136,10 +136,10 @@ public:
 	void read (FDataStreamBase* pStream, bool bEnable);
 	void write(FDataStreamBase* pStream, bool bEnable);
 	void Read(FDataStreamBase* pStream);
-	void Write(FDataStreamBase* pStream);
+	void Write(FDataStreamBase* pStream) const;
 
 	void Read(CvSavegameReader& reader);
-	void Write(CvSavegameWriter& writer);
+	void Write(CvSavegameWriter& writer) const;
 
 	void ReadWrite(bool bRead, FDataStreamBase* pStream);
 

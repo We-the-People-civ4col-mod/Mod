@@ -333,7 +333,7 @@ private:
 	template <class T>
 	void orderHotkeyInfo(int** ppiSortedIndex, T* pHotkeyInfos, int iLength);
 	void orderHotkeyInfo(int** ppiSortedIndex, int* pHotkeyIndex, int iLength);
-	void logMsg(char* format, ... );
+	__declspec(noinline) void logMsg(char* format, ... );
 
 	/// XML type preloading - start - Nightinggale
 	template <class T>

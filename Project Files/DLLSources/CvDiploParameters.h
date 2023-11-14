@@ -15,9 +15,9 @@ public:
 	DllExport void setWhoTalkingTo(PlayerTypes eWhoTalkingTo);
 	DllExport PlayerTypes getWhoTalkingTo() const;
 	DllExport void setDiploComment(DiploCommentTypes eCommentType);
-	DllExport void addDiploCommentVariable(const wchar *szArg);
-	DllExport void addDiploCommentVariable(int iArg);
-	DllExport void addDiploCommentVariable(const FVariable& var);
+	void addDiploCommentVariable(const wchar *szArg);
+	void addDiploCommentVariable(int iArg);
+	void addDiploCommentVariable(const FVariable& var);
 
 	DllExport DiploCommentTypes getDiploComment() const;
 	DllExport void setOurOfferList(const CLinkList<TradeData>& ourOffer);

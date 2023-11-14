@@ -167,7 +167,7 @@ void CvArea::read(CvSavegameReader reader)
 
 }
 
-void CvArea::write(CvSavegameWriter writer)
+void CvArea::write(CvSavegameWriter writer) const
 {
 	LogIntentHelper helper(writer, "CvArea");
 

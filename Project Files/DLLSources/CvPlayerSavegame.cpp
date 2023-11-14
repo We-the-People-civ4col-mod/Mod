@@ -960,7 +960,7 @@ void CvPlayer::read(CvSavegameReader reader)
 	}
 }
 
-void CvPlayer::write(CvSavegameWriter writer)
+void CvPlayer::write(CvSavegameWriter writer) const
 {
 	LogIntentHelper helper(writer, "CvPlayer");
 
@@ -1145,8 +1145,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 		if(iSize>0){
 			writer.Write(PlayerSave_listPopups);
 			writer.Write(iSize);
-			CvPopupQueue::iterator it;
-			for (it = currentPopups.begin(); it != currentPopups.end(); ++it)
+			for (CvPopupQueue::const_iterator it = currentPopups.begin(); it != currentPopups.end(); ++it)
 			{
 				CvPopupInfo* pInfo = *it;
 				if (NULL != pInfo)
@@ -1154,7 +1153,7 @@ void CvPlayer::write(CvSavegameWriter writer)
 					writer.Write(*pInfo);
 				}
 			}
-			for (it = m_listPopups.begin(); it != m_listPopups.end(); ++it)
+			for (CvPopupQueue::const_iterator it = m_listPopups.begin(); it != m_listPopups.end(); ++it)
 			{
 				CvPopupInfo* pInfo = *it;
 				if (NULL != pInfo)

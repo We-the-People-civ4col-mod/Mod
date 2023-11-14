@@ -513,7 +513,7 @@ public:
 	void postLoadFixes();
 
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 
 	void writeDesyncLog(FILE *f);
 

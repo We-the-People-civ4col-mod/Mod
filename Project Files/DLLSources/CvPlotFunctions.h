@@ -204,7 +204,7 @@ public:
 
 	CvPlot* plot() const;
 	int plotNum() const;
-	inline bool isOnMap() const;
+	bool isOnMap() const;
 	inline bool isInvalidPlotCoord() const;
 
 	static Coordinates invalidCoord();

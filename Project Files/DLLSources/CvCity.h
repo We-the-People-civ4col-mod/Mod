@@ -633,7 +633,7 @@ public:
 	void resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall);
 	void resetSavedData(int iID, PlayerTypes eOwner, Coordinates resetCoord, bool bConstructorCall);
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 
 	virtual void AI_init() = 0;
 	virtual void AI_reset() = 0;

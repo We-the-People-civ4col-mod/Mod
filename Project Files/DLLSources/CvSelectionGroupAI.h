@@ -62,7 +62,7 @@ public:
 	bool AI_tradeRoutes();
 
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 
 	void AI_resetSavedData();
 

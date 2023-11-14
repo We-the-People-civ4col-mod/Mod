@@ -206,33 +206,47 @@ sub testDEF
 	open my $info, $file or die "Could not open $file: $!";
 
 	my $i = 0;
+	my $ifdef_zig = -1;
 
 	while( my $line = <$info>)
 	{
 		$i = $i + 1;
-		if (substr($line, 0, 35) eq "	#pragma comment(linker, \"/EXPORT:?")
+		if (substr($line, 0, 10) eq "#ifdef ZIG")
 		{
-			my $index = index($line, "@");
-			my $func = substr($line, 35, $index-35);
-			my $class = substr($line, $index+1);
-			$class = substr($class, 0, index($class, "@"));
-
-			if (exists $function_names{$class}{$func})
+			die "DLLSources/EXE_interface.cpp(" . $i . "): invalid '#ifdef ZIG' due to unclosed '#ifdef ZIG' on line " . $ifdef_zig unless $ifdef_zig == -1;
+			$ifdef_zig = $i;
+		}
+		elsif (substr($line, 0, 6) eq "#endif")
+		{
+			die "DLLSources/EXE_interface.cpp(" . $i . "): invalid '#endif'" . $ifdef_zig unless $ifdef_zig != -1;
+			$ifdef_zig = -1
+		}
+		elsif ($ifdef_zig == -1)
+		{
+			if (substr($line, 0, 35) eq "	#pragma comment(linker, \"/EXPORT:?")
 			{
-				if ($function_names{$class}{$func} == 1)
+				my $index = index($line, "@");
+				my $func = substr($line, 35, $index-35);
+				my $class = substr($line, $index+1);
+				$class = substr($class, 0, index($class, "@"));
+
+				if (exists $function_names{$class}{$func})
 				{
-					$function_names{$class}{$func} = 2;
+					if ($function_names{$class}{$func} == 1)
+					{
+						$function_names{$class}{$func} = 2;
+					}
+					else
+					{
+					# disabled for now as it will complain for redirects of overloaded functions (if multiple overloads are redirected)
+					# @TODO: improve the check to allow overloads
+					#	die "\nDLLSources/EXE_interface.cpp(" . $i . "): " . $class . "::" . $func . " is redirected more than once\n\n";
+					}
 				}
 				else
 				{
-				# disabled for now as it will complain for redirects of overloaded functions (if multiple overloads are redirected)
-				# @TODO: improve the check to allow overloads
-				#	die "\nDLLSources/EXE_interface.cpp(" . $i . "): " . $class . "::" . $func . " is redirected more than once\n\n";
+					die "\nDLLSources/EXE_interface.cpp(" . $i . "): " . $class . "::" . $func . " redirected, but isn't present in EXE_interface.cpp\n\n";
 				}
-			}
-			else
-			{
-				die "\nDLLSources/EXE_interface.cpp(" . $i . "): " . $class . "::" . $func . " redirected, but isn't present in EXE_interface.cpp\n\n";
 			}
 		}
 	}

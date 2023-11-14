@@ -55,7 +55,7 @@ inline void CvSavegameReader::ReadEnumMap<VARIABLE_TYPE_BOOL>::Read(CvSavegameRe
 
 template<>
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-inline void CvSavegameWriter::WriteEnumMap<VARIABLE_TYPE_BOOL>::Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
+inline void CvSavegameWriter::WriteEnumMap<VARIABLE_TYPE_BOOL>::Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> const& em)
 {
 	const bool bValid = boost::is_same<bool, T>::value;
 	BOOST_STATIC_ASSERT(bValid);
@@ -171,7 +171,7 @@ inline void CvSavegameReader::ReadEnumMap<TYPE2>::Read(CvSavegameReader& reader,
 
 template<int TYPE2>
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-inline void CvSavegameWriter::WriteEnumMap<TYPE2>::Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
+inline void CvSavegameWriter::WriteEnumMap<TYPE2>::Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> const& em)
 {
 	const bool bValid = TYPE == TYPE2 && !boost::is_same<bool, T>::value;
 	BOOST_STATIC_ASSERT(bValid);
@@ -264,7 +264,7 @@ inline void CvSavegameReader::ReadEnumMap<VARIABLE_TYPE_CLASS>::Read(CvSavegameR
 
 template<>
 template<class IndexType, class T, int DEFAULT, class LengthType, VariableStaticTypes STATIC, VariableTypes TYPE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
-inline void CvSavegameWriter::WriteEnumMap<VARIABLE_TYPE_CLASS>::Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING>& em)
+inline void CvSavegameWriter::WriteEnumMap<VARIABLE_TYPE_CLASS>::Write(CvSavegameWriter& kWriter, EnumMapBase<IndexType, T, DEFAULT, LengthType, STATIC, TYPE, LENGTH_KNOWN_WHILE_COMPILING> const& em)
 {
 	SavegameEnumMapTokenWrite<IndexType, LengthType>* Token = NULL;
 	std::list<SavegameEnumMapTokenWrite<IndexType, LengthType>* > tokens;

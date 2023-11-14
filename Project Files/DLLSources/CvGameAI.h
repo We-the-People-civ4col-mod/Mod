@@ -28,10 +28,10 @@ public:
 	int AI_gameCompletePercent();
 
 	virtual void read(FDataStreamBase* pStream);
-	virtual void write(FDataStreamBase* pStream);
+	virtual void write(FDataStreamBase* pStream) const;
 
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 	void AI_resetSavedData();
 
 	void postLoadFixes();

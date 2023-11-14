@@ -6876,7 +6876,7 @@ void CvCityAI::read(FDataStreamBase* pStream)
 	read(reader);
 }
 
-void CvCityAI::write(FDataStreamBase* pStream)
+void CvCityAI::write(FDataStreamBase* pStream) const
 {
 	CvSavegameWriterBase writerbase(pStream);
 	CvSavegameWriter writer(writerbase);

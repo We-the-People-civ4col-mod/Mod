@@ -385,7 +385,7 @@ void CvPlot::read(CvSavegameReader reader)
 	setUnitVisibilityBonusCache();
 }
 
-void CvPlot::write(CvSavegameWriter writer)
+void CvPlot::write(CvSavegameWriter writer) const
 {
 	LogIntentHelper helper(writer, "CvPlot");
 

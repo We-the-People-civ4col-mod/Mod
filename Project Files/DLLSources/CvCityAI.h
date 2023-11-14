@@ -172,10 +172,10 @@ public:
 	bool AI_isMajorCity() const;
 
 	void read(FDataStreamBase* pStream); 
-	void write(FDataStreamBase* pStream); 
+	void write(FDataStreamBase* pStream) const;
 
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 
 	void AI_doSettlerProfessionCheat();
 

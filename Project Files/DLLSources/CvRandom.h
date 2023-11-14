@@ -50,10 +50,10 @@ public:
 
 	// for serialization
 	void read(FDataStreamBase* pStream);
-	void write(FDataStreamBase* pStream);
+	void write(FDataStreamBase* pStream) const;
 
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 
 protected:
 

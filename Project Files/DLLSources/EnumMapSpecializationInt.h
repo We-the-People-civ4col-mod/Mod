@@ -10,7 +10,8 @@
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 class EnumMapVariable
 {
-	BOOST_STATIC_ASSERT(0);
+	// BOOST_STATIC_ASSERT(0);
+	// TODO(zig): Replace with modern C++ equivalent
 };
 
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE>
@@ -31,7 +32,7 @@ protected:
 
 	void assignmentOperator(const EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC, STORAGE, VARIABLE_LENGTH_ALL_KNOWN>& rhs);
 
-	STORAGE m_pArray[COMPILE_NUM_ELEMENTS];
+	STORAGE m_pArray[EnumMapCore<IndexType, LengthType, VARIABLE_LENGTH_ALL_KNOWN>::COMPILE_NUM_ELEMENTS];
 };
 
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -169,7 +170,7 @@ void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_STATIC
 {
 	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 	{
-		m_pArray[i] = DEFAULT;
+		m_pArray[i] = this->DEFAULT;
 	}
 }
 
@@ -202,7 +203,7 @@ void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMI
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::allocate()
 {
-	if (!isAllocated())
+	if (!this->isAllocated())
 	{
 		m_pArray = new STORAGE[NUM_ELEMENTS];
 		setALLDefault < DEFAULT_INT == 0 || sizeof(STORAGE) == 1 ? 1 : 0>();
@@ -228,7 +229,7 @@ void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMI
 	allocate();
 	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 	{
-		m_pArray[i] = DEFAULT;
+		m_pArray[i] = this->DEFAULT;
 	}
 }
 
@@ -256,24 +257,24 @@ void EnumMapVariable<IndexType, T, DEFAULT_INT, LengthType, VARIABLE_TYPE_DYNAMI
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 T EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::get(IndexType eIndex) const
 {
-	FAssert(isInRange(eIndex));
-	return isAllocated() ? (T)m_pArray[eIndex - FIRST] : DEFAULT;
+	FAssert(this->isInRange(eIndex));
+	return this->isAllocated() ? (T)this->m_pArray[eIndex - this->FIRST] : this->DEFAULT;
 }
 
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::set(IndexType eIndex, T eValue)
 {
-	FAssert(isInRange(eIndex));
+	FAssert(this->isInRange(eIndex));
 	allocate();
-	m_pArray[eIndex - FIRST] = eValue;
+	this->m_pArray[eIndex - this->FIRST] = eValue;
 }
 
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::add(IndexType eIndex, T eValue)
 {
-	FAssert(isInRange(eIndex));
+	FAssert(this->isInRange(eIndex));
 	allocate();
-	m_pArray[eIndex - FIRST] += eValue;
+	this->m_pArray[eIndex - this->FIRST] += eValue;
 }
 
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
@@ -297,24 +298,24 @@ void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGT
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 T EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getDefault() const
 {
-	return DEFAULT;
+	return this->DEFAULT;
 }
 
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 bool EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::isDefault(IndexType eIndex) const
 {
-	return get(eIndex) == DEFAULT;
+	return get(eIndex) == this->DEFAULT;
 }
 
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 int EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getTotal() const
 {
-	if (isAllocated())
+	if (this->isAllocated())
 	{
 		int iTotal = 0;
 		for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 		{
-			iTotal += m_pArray[i];
+			iTotal += this->m_pArray[i];
 		}
 		return iTotal;
 	}
@@ -327,9 +328,9 @@ int EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::setAll(T eValue)
 {
-	if (!isAllocated())
+	if (!this->isAllocated())
 	{
-		if (eValue == DEFAULT)
+		if (eValue == this->DEFAULT)
 		{
 			return;
 		}
@@ -337,7 +338,7 @@ void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGT
 	}
 	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 	{
-		m_pArray[i] = eValue;
+		this->m_pArray[i] = eValue;
 	}
 }
 
@@ -351,22 +352,22 @@ void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGT
 	allocate();
 	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 	{
-		m_pArray[i] += eValue;
+		this->m_pArray[i] += eValue;
 	}
 }
 	
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 T EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getMin() const
 {
-	if (!isAllocated())
+	if (!this->isAllocated())
 	{
-		return DEFAULT;
+		return this->DEFAULT;
 	}
 
 	T eMin = get((IndexType)0);
 	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 	{
-		T eLoopValue = m_pArray[i];
+		T eLoopValue = this->m_pArray[i];
 		if (eMin > eLoopValue)
 		{
 			eMin = eLoopValue;
@@ -378,15 +379,15 @@ T EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_K
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 T EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getMax() const
 {
-	if (!isAllocated())
+	if (!this->isAllocated())
 	{
-		return DEFAULT;
+		return this->DEFAULT;
 	}
 
 	T eMax = get((IndexType)0);
 	for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 	{
-		T eLoopValue = m_pArray[i];
+		T eLoopValue = this->m_pArray[i];
 		if (eMax < eLoopValue)
 		{
 			eMax = eLoopValue;
@@ -416,11 +417,11 @@ IndexType EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, 
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 bool EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::hasContent() const
 {
-	if (isAllocated())
+	if (this->isAllocated())
 	{
 		for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 		{
-			if (m_pArray[i] != DEFAULT)
+			if (this->m_pArray[i] != this->DEFAULT)
 			{
 				return true;
 			}
@@ -432,11 +433,11 @@ bool EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGT
 template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableStaticTypes STATIC, class STORAGE, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 bool EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::hasContent()
 {
-	if (isAllocated())
+	if (this->isAllocated())
 	{
 		for (IndexType i = (IndexType)0; i < NUM_ELEMENTS; ++i)
 		{
-			if (m_pArray[i] != DEFAULT)
+			if (this->m_pArray[i] != this->DEFAULT)
 			{
 				return true;
 			}
@@ -450,13 +451,13 @@ template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableSt
 void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::copyToVector(std::vector<T>& thisVector) const
 {
 	thisVector.reserve(NUM_ELEMENTS);
-	thisVector.resize(NUM_ELEMENTS, DEFAULT);
+	thisVector.resize(NUM_ELEMENTS, this->DEFAULT);
 
-	if (isAllocated())
+	if (this->isAllocated())
 	{
-		for (IndexType eIndex = FIRST; eIndex <= LAST; ++eIndex)
+		for (IndexType eIndex = this->FIRST; eIndex <= LAST; ++eIndex)
 		{
-			thisVector[eIndex - FIRST] = get(eIndex);
+			thisVector[eIndex - this->FIRST] = get(eIndex);
 		}
 	}
 }
@@ -466,9 +467,9 @@ void EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGT
 {
 	FAssert((unsigned int)NUM_ELEMENTS == thisVector.size());
 
-	for (IndexType eIndex = FIRST; eIndex <= LAST; ++eIndex)
+	for (IndexType eIndex = this->FIRST; eIndex <= LAST; ++eIndex)
 	{
-		set(eIndex, thisVector[eIndex - FIRST]);
+		set(eIndex, thisVector[eIndex - this->FIRST]);
 	}
 }
 
@@ -476,9 +477,9 @@ template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableSt
 int EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::getNumNonDefaultElements() const
 {
 	int iNum = 0;
-	for (IndexType eLoop = FIRST; eLoop <= LAST; ++eLoop)
+	for (IndexType eLoop = this->FIRST; eLoop <= LAST; ++eLoop)
 	{
-		if (get(eLoop) != DEFAULT)
+		if (get(eLoop) != this->DEFAULT)
 		{
 			++iNum;
 		}
@@ -490,7 +491,7 @@ template<class IndexType, class T, int DEFAULT_INT, class LengthType, VariableSt
 int EnumMapShared<IndexType, T, DEFAULT_INT, LengthType, STATIC, STORAGE, LENGTH_KNOWN_WHILE_COMPILING>::GetNumPositiveElements() const
 {
 	int iNum = 0;
-	for (IndexType eLoop = FIRST; eLoop <= LAST; ++eLoop)
+	for (IndexType eLoop = this->FIRST; eLoop <= LAST; ++eLoop)
 	{
 		if (get(eLoop) > 0)
 		{

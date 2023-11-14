@@ -76,7 +76,7 @@ inline void FVariable::Read(FDataStreamBase *pStream)
 		pStream->Read(8, (byte*)&m_dValue);		// read the maximum size of the union
 }
 
-inline void FVariable::Write(FDataStreamBase *pStream)
+inline void FVariable::Write(FDataStreamBase *pStream) const
 {
 	pStream->Write((int)m_eType);
 	if (m_eType==FVARTYPE_STRING)

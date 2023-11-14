@@ -88,7 +88,7 @@ void CvDeal::read(CvSavegameReader reader)
 	
 }
 
-void CvDeal::write(CvSavegameWriter writer)
+void CvDeal::write(CvSavegameWriter writer) const
 {
 	LogIntentHelper helper(writer, "CvDeal");
 

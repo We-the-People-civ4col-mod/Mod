@@ -366,7 +366,7 @@ void CvRandom::read(FDataStreamBase* pStream)
 }
 
 
-void CvRandom::write(FDataStreamBase* pStream)
+void CvRandom::write(FDataStreamBase* pStream) const
 {
 	pStream->Write(m_ulRandomSeed);
 }
@@ -390,7 +390,7 @@ void CvRandom::read(CvSavegameReader reader)
 }
 
 
-void CvRandom::write(CvSavegameWriter writer)
+void CvRandom::write(CvSavegameWriter writer) const
 {
 	writer.Write(m_ulRandomSeed);
 }

@@ -82,7 +82,7 @@ __forceinline float MaxFloat() { return DWtoF(0x7f7fffff); }
 // Boost Python
 //
 #ifdef MakefileCompilation
-#include <boost/graph/detail/is_same.hpp>
+#include <boost/type_traits/is_same.hpp>
 #include <boost/noncopyable.hpp>
 #include <boost/static_assert.hpp>
 #else

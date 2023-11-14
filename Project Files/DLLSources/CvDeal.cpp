@@ -442,7 +442,7 @@ const CLinkList<TradeData>* CvDeal::getSecondTrades() const
 }
 
 
-void CvDeal::write(FDataStreamBase* pStream)
+void CvDeal::write(FDataStreamBase* pStream) const
 {
 	CvSavegameWriterBase writerbase(pStream);
 	CvSavegameWriter writer(writerbase); 

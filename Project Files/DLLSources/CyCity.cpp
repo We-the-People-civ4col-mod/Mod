@@ -910,10 +910,10 @@ std::wstring CyCity::getNameKey()
 	return m_pCity ? m_pCity->getNameKey() : L"";
 }
 
-void CyCity::setName(std::wstring szNewValue, bool bFound)
+void CyCity::setName(std::basic_string<unsigned short> szNewValue, bool bFound)
 {
 	if (m_pCity)
-		m_pCity->setName(CvWString(szNewValue), bFound);
+		m_pCity->setName(reinterpret_cast<wchar const*>(szNewValue.c_str()), bFound);
 }
 
 int CyCity::getBuildingProduction(int /*BuildingTypes*/ iIndex)

@@ -7,9 +7,9 @@ use lib './bin';
 use XMLlists;
 
 
-my $FILE_INFO = getAutoDir() . "/AutoInfoArray.h";
+my $FILE_INFO = $ARGV[0] // (getAutoDir() . "/AutoInfoArray.h");
 
-my $output_info = "#include \"../CvEnums.h\"\n\n";
+my $output_info = "#include \"CvEnums.h\"\n\n";
 
 
 my @types = ( {}, {}, {}, {});
@@ -32,7 +32,7 @@ my $dir = "DLLSources/";
 	opendir my($dirhandle), $dir;
 	for( readdir $dirhandle ){ # sets $_
 	next if substr($_, 0, 1) eq ".";
-	
+
 	my $ext = substr($_, rindex($_, "."));
 	handleFile($_) if $ext eq ".cpp" or $ext eq ".h";
   }
@@ -53,20 +53,20 @@ writeFile($FILE_INFO, \$output_info);
 sub handleFile
 {
 	my $file = shift;
-	
+
 	my $path = $dir . $file;
-	
+
 	open my $fileHandle, $path or die "Could not open $path: $!";
 
 	while( my $line = <$fileHandle>)
 	{
 		my $index = index($line, "InfoArray<");
 		next if $index == -1;
-		
+
 		my $info = substr($line, $index);
 		$info = substr($info, 0, index($info, ">"));
 		$info = substr($info, index($info, "<")+1);
-		
+
 		my $i = 0;
 		foreach my $token (split(', ', $info))
 		{
@@ -82,10 +82,10 @@ sub handleToken
 {
 	my $token = shift;
 	my $index = shift;
-	
+
 	# remove leading and trailing whitespace
 	$token=~ s/^\s+|\s+$//g;
-	
+
 	$types[$index]{$token} = 1;
 }
 
@@ -95,9 +95,9 @@ sub handleInfoArraySingle
 	my $index = shift;
 	my $id = $index + 1;
 	my $get = "get" . removeType($type);
-	
+
 	$get = "getFontSymbol" if $get eq "getFontSymbols";
-	
+
 	$output_info .= "template<" . addtemplates("typename T", $id, 0) . ">\nclass InfoArray$id<" . addtemplates("typename T", $id, 1) . $type . ">\n\t: ";
 	$output_info .= "public InfoArray$index<" . addtemplates("T", $id, 0) . ">\n" unless $id == 1;
 	$output_info .= "protected InfoArrayBase\n\t, public boost::noncopyable\n" if $id == 1;
@@ -139,9 +139,9 @@ sub handleInfoArraySingle
 sub removeType
 {
 	my $type = shift;
-	
+
 	return "Int" if $type eq "int";
-	
+
 	if (substr($type, -5) eq "Types")
 	{
 		$type = substr($type, 0, -5);
@@ -154,21 +154,21 @@ sub addtemplates
 	my $str = shift;
 	my $id = shift;
 	my $append_comma = shift;
-	
+
 	my $return = "";
-	
+
 	my $i = 1;
-	
+
 	return $return if $i == $id;
 	$return .=  $str . "0";
 	$i = 2;
-	
+
 	while ($i < $id)
 	{
 		$return .=  ", " . $str . ($i - 1);
 		$i += 1;
 	}
-	
+
 	$return .= ", " if $append_comma;
 	return $return;
 }

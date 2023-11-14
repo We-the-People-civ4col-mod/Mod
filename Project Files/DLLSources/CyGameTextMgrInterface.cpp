@@ -1,5 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include "CyGameTextMgr.h"
+#include "CyCity.h"
 #include "CyDeal.h"
 #include "CyUnit.h"
 

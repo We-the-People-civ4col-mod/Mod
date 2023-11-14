@@ -66,7 +66,7 @@ void CvGameAI::read(CvSavegameReader reader)
 
 }
 
-void CvGameAI::write(CvSavegameWriter writer)
+void CvGameAI::write(CvSavegameWriter writer) const
 {
 	writer.AssignClassType(SAVEGAME_CLASS_GAME_AI);
 

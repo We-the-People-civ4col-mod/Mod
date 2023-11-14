@@ -82,7 +82,7 @@ public:
 		m_iFreeListCount = iNewValue;
 	}
 
-	int getCurrentID()
+	int getCurrentID() const
 	{
 		return m_iCurrentID;
 	}
@@ -93,7 +93,7 @@ public:
 		m_iCurrentID = iNewValue;
 	}
 
-	int getNextFreeIndex(int iIndex)
+	int getNextFreeIndex(int iIndex) const
 	{
 		if ((iIndex >= getNumSlots()) || (m_pArray == NULL))
 		{
@@ -113,7 +113,7 @@ public:
 	}
 
 	void Read( FDataStreamBase* pStream );
-	void Write( FDataStreamBase* pStream );
+	void Write( FDataStreamBase* pStream ) const;
 
 protected:
 
@@ -452,7 +452,7 @@ inline void FFreeListTrashArray< T >::Read( FDataStreamBase* pStream )
 }
 
 template < class T >
-inline void FFreeListTrashArray< T >::Write( FDataStreamBase* pStream )
+inline void FFreeListTrashArray< T >::Write( FDataStreamBase* pStream ) const
 {
 	pStream->Write( getNumSlots() );
 	pStream->Write( getLastIndex() );
@@ -554,7 +554,7 @@ inline void ReadStreamableFFreeListTrashArray(FFreeListTrashArray< T >& flist, C
 }
 
 template < class T >
-inline void WriteStreamableFFreeListTrashArray( FFreeListTrashArray< T >& flist, FDataStreamBase* pStream )
+inline void WriteStreamableFFreeListTrashArray( FFreeListTrashArray< T > const& flist, FDataStreamBase* pStream )
 {
 	pStream->Write( flist.getNumSlots() );
 	pStream->Write( flist.getLastIndex() );
@@ -581,7 +581,7 @@ inline void WriteStreamableFFreeListTrashArray( FFreeListTrashArray< T >& flist,
 }
 
 template < class T >
-inline void WriteStreamableFFreeListTrashArray(FFreeListTrashArray< T >& flist, CvSavegameWriter& writer)
+inline void WriteStreamableFFreeListTrashArray(FFreeListTrashArray< T > const& flist, CvSavegameWriter& writer)
 {
 	writer.Write(flist.getNumSlots());
 	writer.Write(flist.getLastIndex());

@@ -100,7 +100,7 @@ void CvUnitAI::read(CvSavegameReader reader)
 
 }
 
-void CvUnitAI::write(CvSavegameWriter writer)
+void CvUnitAI::write(CvSavegameWriter writer) const
 {
 	writer.AssignClassType(SAVEGAME_CLASS_UNIT_AI);
 

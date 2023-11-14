@@ -244,7 +244,7 @@ public:
 	std::wstring getNameNoDesc();
 	std::wstring getNameAndProfession();
 	std::wstring getNameOrProfessionKey();
-	void setName(std::wstring szNewValue);
+	void setName(std::basic_string<unsigned short> szNewValue);
 	std::string getScriptData() const;
 	void setScriptData(std::string szNewValue);
 	bool isTerrainDoubleMove(int /*TerrainTypes*/ eIndex);

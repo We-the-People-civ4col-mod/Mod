@@ -200,7 +200,7 @@ void CvCityAI::read(CvSavegameReader reader)
 
 }
 
-void CvCityAI::write(CvSavegameWriter writer)
+void CvCityAI::write(CvSavegameWriter writer) const
 {
 	writer.AssignClassType(SAVEGAME_CLASS_CITY_AI);
 
