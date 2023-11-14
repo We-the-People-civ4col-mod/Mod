@@ -1034,14 +1034,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_LANDTRANSPORT_ATTACK</Tag>
-        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train was attacked by native hostile warrior. If the settler can defend it?</English>
+        <English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train was attacked by hostile Native warriors. Can the settlers defend it?</English>
         <French>Une rumeur se répand : un chariot [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] s'est fait attquer par un guerrier indigène hostile. Les colons pourront-ils le défendre ? </French>
         <German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Wagenzug wurde von einem feindlichen Indianer-Trupp angegriffen. Ob die Siedler ihn verteidigen können?</German>
         <Russian>Ходят слухи, что индейцы напали на обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Смогут ли ли колонисты защитить его?</Russian>
      </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_LANDTRANSPORT_ATTACK_1</Tag>
-        <English>Lured by the prospects of rich booty, a hostile Indian troop has attacked one a [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. They are shooting incendiary arrows! Now we have to take cover and save what can be saved.</English>
+        <English>Lured by the prospects of rich takings, hostile Natives have attacked a [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. They're shooting flaming arrows! Take cover and save what can be saved!</English>
         <French>Alléché par le butin potentiel, un groupe d'Indiens a attaqué un [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. Ils décochent des flèches de feu. À couvert, et sauvons ce que nous pouvons !</French>
         <German>Angelockt von den Aussichten auf reiche Beute hat ein feindlicher Indianer-Trupp einen [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] angegriffen. Sie schießen mit Brandpfeilen! Jetzt heißt es in Deckung gehen und retten was zu retten ist.</German>
         <Russian>Соблазнившись перспективой богатой добычи, отряд злобных индейцев напал на [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. Они стреляют зажигательными стрелами! Все в укрытие! Спасайтесь!</Russian>
@@ -1055,14 +1055,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_2</Tag>
-        <English>Give them the goods, then maybe let go the wagons!</English>
+        <English>Let them have the goods. Release the wagons. Our lives are more important!</English>
         <French>Donnons leur ce qu'ils veulent, ils laisseront les chariots repartir.</French>
         <German>Gebt ihnen die Waren, dann lassen Sie vielleicht die Wagen ziehen!</German>
         <Russian>Отдадим им товары и, может, они нас отпустят...</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_HELP</Tag>
-        <English>A hostile Indian troop attacks the wagon train. A few brave coachmen and guards defend it.</English>
+        <English>Hostile Native marauders attack the wagon train. A few brave coachmen and guards defend it.</English>
         <French>Une troupe d'Indiens hostiles attaque notre chariot. Les cochers et les gardes le défendent.</French>
         <German>Ein feindlicher Indianer-Trupp greift den Wagenzug an. Ein paar mutige Kutscher und Wachen verteidigen ihn.</German>
         <Russian>Отряд индейцев нападает на торговый обоз. Храбрые колонисты пытаюстя обороняться.</Russian>
@@ -1097,14 +1097,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_HELP</Tag>
-        <English>Criminals will attack the City.</English>
+        <English>Criminals will attack the city.</English>
         <French>Des criminels vont attaquer la ville.</French>
         <German>Kriminelle werden die Stadt angreifen.</German>
         <Russian>Преступники нападут на город.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENTTRIGGER_HERDER_IN_NEED</Tag>
-        <English>There's a rumour that a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pigpen is being attacked by wolves.</English>
+        <English>There's a rumour that a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pigpen is being ravaged by wolves.</English>
         <French>Selon la rumeur, des loups attaquent une porcherie [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</French>
         <German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Schweinestall und sein Besitzer werden von Wölfen angegriffen.</German>
         <Russian>Ходят слухи, что на свинарник [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] напали волки.</Russian>
@@ -1377,14 +1377,14 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_TRIGGER_SILVER_MINE_ROBBERY_1</Tag>
-        <English>Milord, there's a report from the foreman of one of our silver mines that buccaneers bribe workers there to let them steal some of the mined silver.</English>
+        <English>Milord, there's a report from the foreman of one of our silver mines that buccaneers bribe workers there to let them steal some of the silver.</English>
         <French>Sire, le contremaitre d'une de nos mines d'argent nous signales que des boucaniers achètent les mineurs pour que lesdits boucaniers puissent emprocher une partie de l'argent extrait.</French>
         <German>Milord, einer der Vorarbeiter einer unserer Silberminen berichtet, dass Bukaniere regelmäßig die Minenarbeiter bestechen, damit diese sie einen Teil des Silbers stehlen lassen.</German>
         <Russian>Милорд, мастер одного из наших серебряных рудников сообщает, что пираты регулярно подкупают горняков, чтобы они позволили им украсть часть серебра.</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_EVENT_SILVER_MINE_ROBBERY_1</Tag>
-        <English>This must be stopped immediately! Gather some men from the militia and pay them gold to guard the mine.</English>
+        <English>This must be stopped immediately! Gather men from the militia and pay them to guard the mine.</English>
         <French>Il faut mettre halte au plus vite à tout ceci ! Levez quelques hommes pour la milice, et payez-les pour qu'ils montent la garde.</French>
         <German>Das muss sofort aufhören! Versammelt einige Männer aus der Miliz und zahlt ihnen Gold,, um die Mine zu bewachen.</German>
         <Russian>Это нужно немедленно прекратить! Выделите несколько человек из ополчения и заплатите им золотом за охрану шахты.</Russian>
