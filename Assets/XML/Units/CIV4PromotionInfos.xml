@@ -7501,7 +7501,8 @@
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
-            <bGraphicalOnly>1</bGraphicalOnly>
+            <bGraphicalOnly>0</bGraphicalOnly>
+            <bNotEarnedByXP>1</bNotEarnedByXP>
             <iHotKeyPriority>0</iHotKeyPriority>
             <Button>,Art/colonization_promotions_atlas.dds,2,14</Button>
         </PromotionInfo>
@@ -7653,7 +7654,8 @@
             <bAltDown>0</bAltDown>
             <bShiftDown>0</bShiftDown>
             <bCtrlDown>0</bCtrlDown>
-            <bGraphicalOnly>1</bGraphicalOnly>
+            <bGraphicalOnly>0</bGraphicalOnly>
+            <bNotEarnedByXP>1</bNotEarnedByXP>
             <iHotKeyPriority>0</iHotKeyPriority>
             <Button>,Art/colonization_promotions_atlas.dds,2,16</Button>
         </PromotionInfo>
