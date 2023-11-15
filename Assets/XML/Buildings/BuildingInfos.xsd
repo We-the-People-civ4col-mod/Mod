@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="x-schema:CIV4BuildingsSchema.xml" xmlns:c="x-schema:CIV4BuildingsSchema.xml">
+    <xs:element name="Civ4BuildingInfos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c:BuildingInfos"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="BuildingInfos">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="c:BuildingInfo"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="BuildingInfo">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c:Type"/>
+                <xs:element ref="c:BuildingClass"/>
+                <xs:element ref="c:SpecialBuildingType"/>
+                <xs:element ref="c:iSpecialBuildingPriority"/>
+                <xs:element ref="c:Description"/>
+                <xs:element ref="c:Civilopedia"/>
+                <xs:element ref="c:Strategy"/>
+                <xs:element ref="c:ArtDefineTag"/>
+                <xs:element ref="c:MovieDefineTag"/>
+                <xs:element ref="c:VictoryPrereq"/>
+                <xs:element ref="c:FreeStartEra"/>
+                <xs:element ref="c:MaxStartEra"/>
+                <xs:element ref="c:ProductionTraits"/>
+                <xs:element ref="c:FreePromotion"/>
+                <xs:element minOccurs="0" ref="c:RouteTypeCreated"/>
+                <xs:element ref="c:bGraphicalOnly"/>
+                <xs:element ref="c:bWorksWater"/>
+                <xs:element ref="c:bWater"/>
+                <xs:element ref="c:bRiver"/>
+                <xs:element ref="c:bCapital"/>
+                <xs:element ref="c:bNationalWonder"/>
+                <xs:element ref="c:bNeverCapture"/>
+                <xs:element ref="c:bCenterInCity"/>
+                <xs:element ref="c:iAIWeight"/>
+                <xs:element ref="c:YieldCosts"/>
+                <xs:element ref="c:iHurryCostModifier"/>
+                <xs:element ref="c:iAdvancedStartCost"/>
+                <xs:element ref="c:iAdvancedStartCostIncrease"/>
+                <xs:element ref="c:iProfessionOutput"/>
+                <xs:element ref="c:iMaxWorkers"/>
+                <xs:element ref="c:iMinAreaSize"/>
+                <xs:element ref="c:iConquestProb"/>
+                <xs:element ref="c:iCitiesPrereq"/>
+                <xs:element ref="c:iTeamsPrereq"/>
+                <xs:element ref="c:iLevelPrereq"/>
+                <xs:element ref="c:iMinLatitude"/>
+                <xs:element ref="c:iMaxLatitude"/>
+                <xs:element ref="c:iExperience"/>
+                <xs:element ref="c:iFoodKept"/>
+                <xs:element ref="c:iHealRateChange"/>
+                <xs:element ref="c:iMilitaryProductionModifier"/>
+                <xs:element ref="c:iDefense"/>
+                <xs:element ref="c:iBombardDefense"/>
+                <xs:element ref="c:iAsset"/>
+                <xs:element ref="c:iPower"/>
+                <xs:element ref="c:iYieldStorage"/>
+                <xs:choice minOccurs="0">
+                    <xs:element ref="c:iMaxBarracksSpaceProvided"/>
+                    <xs:element ref="c:iMaxHarbourSpaceProvided"/>
+                </xs:choice>
+                <xs:element ref="c:iStorageLossSellPercentage"/>
+                <xs:sequence minOccurs="0">
+                    <xs:element ref="c:bIgnoresBoycott"/>
+                    <xs:element ref="c:bUnlocksStorageLossTradeSettings"/>
+                </xs:sequence>
+                <xs:element ref="c:fVisibilityPriority"/>
+                <xs:element ref="c:LandPlotYieldChanges"/>
+                <xs:element ref="c:SeaPlotYieldChanges"/>
+                <xs:element ref="c:RiverPlotYieldChanges"/>
+                <xs:element ref="c:YieldChanges"/>
+                <xs:element ref="c:YieldModifiers"/>
+                <xs:choice minOccurs="0">
+                    <xs:element ref="c:iDomesticMarketModifier"/>
+                    <xs:element ref="c:iEntertainmentGoldModifier"/>
+                </xs:choice>
+                <xs:element ref="c:ConstructSound"/>
+                <xs:element ref="c:UnitCombatFreeExperiences"/>
+                <xs:element ref="c:DomainFreeExperiences"/>
+                <xs:element ref="c:DomainProductionModifiers"/>
+                <xs:element ref="c:PrereqBuildingClasses"/>
+                <xs:element ref="c:BuildingClassNeededs"/>
+                <xs:element minOccurs="0" ref="c:AIRequiredCatchmentAreaTerrains"/>
+                <xs:choice minOccurs="0">
+                    <xs:element ref="c:AIRequiredCatchmentAreaFeatures"/>
+                    <xs:element ref="c:AIRequiredCatchmentAreaPlotTypes"/>
+                    <xs:element ref="c:RequiredAdjacentTerrains"/>
+                </xs:choice>
+                <xs:element minOccurs="0" ref="c:AIUnitClassWeights"/>
+                <xs:element ref="c:HotKey"/>
+                <xs:element ref="c:bAltDown"/>
+                <xs:element ref="c:bShiftDown"/>
+                <xs:element ref="c:bCtrlDown"/>
+                <xs:element ref="c:iHotKeyPriority"/>
+                <xs:element ref="c:iTeachLevel"/>
+                <xs:element ref="c:iAICitySize"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Type" type="xs:NCName"/>
+    <xs:element name="BuildingClass" type="xs:NCName"/>
+    <xs:element name="SpecialBuildingType" type="xs:NCName"/>
+    <xs:element name="iSpecialBuildingPriority" type="xs:integer"/>
+    <xs:element name="Description" type="xs:NCName"/>
+    <xs:element name="Civilopedia" type="xs:NCName"/>
+    <xs:element name="Strategy" type="xs:NCName"/>
+    <xs:element name="ArtDefineTag" type="xs:NCName"/>
+    <xs:element name="MovieDefineTag" type="xs:NCName"/>
+    <xs:element name="VictoryPrereq" type="xs:NCName"/>
+    <xs:element name="FreeStartEra" type="xs:NCName"/>
+    <xs:element name="MaxStartEra" type="xs:NCName"/>
+    <xs:element name="ProductionTraits">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="FreePromotion" type="xs:NCName"/>
+    <xs:element name="RouteTypeCreated" type="xs:NCName"/>
+    <xs:element name="bGraphicalOnly" type="xs:integer"/>
+    <xs:element name="bWorksWater" type="xs:integer"/>
+    <xs:element name="bWater" type="xs:integer"/>
+    <xs:element name="bRiver" type="xs:integer"/>
+    <xs:element name="bCapital" type="xs:integer"/>
+    <xs:element name="bNationalWonder" type="xs:integer"/>
+    <xs:element name="bNeverCapture" type="xs:integer"/>
+    <xs:element name="bCenterInCity" type="xs:integer"/>
+    <xs:element name="iAIWeight" type="xs:integer"/>
+    <xs:element name="YieldCosts">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="c:YieldCost"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="YieldCost">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c:YieldType"/>
+                <xs:element ref="c:iCost"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="iCost" type="xs:integer"/>
+    <xs:element name="iHurryCostModifier" type="xs:integer"/>
+    <xs:element name="iAdvancedStartCost" type="xs:integer"/>
+    <xs:element name="iAdvancedStartCostIncrease" type="xs:integer"/>
+    <xs:element name="iProfessionOutput" type="xs:integer"/>
+    <xs:element name="iMaxWorkers" type="xs:integer"/>
+    <xs:element name="iMinAreaSize" type="xs:integer"/>
+    <xs:element name="iConquestProb" type="xs:integer"/>
+    <xs:element name="iCitiesPrereq" type="xs:integer"/>
+    <xs:element name="iTeamsPrereq" type="xs:integer"/>
+    <xs:element name="iLevelPrereq" type="xs:integer"/>
+    <xs:element name="iMinLatitude" type="xs:integer"/>
+    <xs:element name="iMaxLatitude" type="xs:integer"/>
+    <xs:element name="iFoodKept" type="xs:integer"/>
+    <xs:element name="iHealRateChange" type="xs:integer"/>
+    <xs:element name="iMilitaryProductionModifier" type="xs:integer"/>
+    <xs:element name="iDefense" type="xs:integer"/>
+    <xs:element name="iBombardDefense" type="xs:integer"/>
+    <xs:element name="iAsset" type="xs:integer"/>
+    <xs:element name="iPower" type="xs:integer"/>
+    <xs:element name="iYieldStorage" type="xs:integer"/>
+    <xs:element name="iMaxBarracksSpaceProvided" type="xs:integer"/>
+    <xs:element name="iMaxHarbourSpaceProvided" type="xs:integer"/>
+    <xs:element name="iStorageLossSellPercentage" type="xs:integer"/>
+    <xs:element name="bIgnoresBoycott" type="xs:integer"/>
+    <xs:element name="bUnlocksStorageLossTradeSettings" type="xs:integer"/>
+    <xs:element name="fVisibilityPriority" type="xs:decimal"/>
+    <xs:element name="LandPlotYieldChanges">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="c:LandPlotYieldChange"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="LandPlotYieldChange">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c:YieldType"/>
+                <xs:element ref="c:iYieldChange"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SeaPlotYieldChanges">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="c:SeaPlotYieldChange"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="SeaPlotYieldChange">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c:YieldType"/>
+                <xs:element ref="c:iYieldChange"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="RiverPlotYieldChanges">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="c:RiverPlotYieldChange"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="RiverPlotYieldChange">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c:YieldType"/>
+                <xs:element ref="c:iYieldChange"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="YieldChanges">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="c:YieldChange"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="YieldChange">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c:YieldType"/>
+                <xs:element ref="c:iYieldChange"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="YieldModifiers">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="c:YieldModifier"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="YieldModifier">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c:YieldType"/>
+                <xs:element ref="c:iModifier"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="iModifier" type="xs:integer"/>
+    <xs:element name="iDomesticMarketModifier" type="xs:integer"/>
+    <xs:element name="iEntertainmentGoldModifier" type="xs:integer"/>
+    <xs:element name="ConstructSound">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="UnitCombatFreeExperiences">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="c:UnitCombatFreeExperience"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="UnitCombatFreeExperience">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c:UnitCombatType"/>
+                <xs:element ref="c:iExperience"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="UnitCombatType" type="xs:NCName"/>
+    <xs:element name="DomainFreeExperiences">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="DomainProductionModifiers">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="BuildingClassNeededs">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="c:BuildingClassNeeded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="BuildingClassNeeded">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c:BuildingClassType"/>
+                <xs:element ref="c:bNeededInCity"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="bNeededInCity" type="xs:integer"/>
+    <xs:element name="AIRequiredCatchmentAreaTerrains">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="c:eRequiredTerrain"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AIRequiredCatchmentAreaFeatures">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="c:eRequiredFeature"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="eRequiredFeature" type="xs:NCName"/>
+    <xs:element name="AIRequiredCatchmentAreaPlotTypes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="c:eRequiredPlotType"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="eRequiredPlotType" type="xs:NCName"/>
+    <xs:element name="RequiredAdjacentTerrains">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="c:eRequiredTerrain"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AIUnitClassWeights">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" maxOccurs="unbounded" ref="c:AIUnitClassWeight"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="AIUnitClassWeight">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c:eUnitClass"/>
+                <xs:element ref="c:iWeight"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="eUnitClass" type="xs:NCName"/>
+    <xs:element name="iWeight" type="xs:integer"/>
+    <xs:element name="HotKey">
+        <xs:complexType/>
+    </xs:element>
+    <xs:element name="bAltDown" type="xs:integer"/>
+    <xs:element name="bShiftDown" type="xs:integer"/>
+    <xs:element name="bCtrlDown" type="xs:integer"/>
+    <xs:element name="iHotKeyPriority" type="xs:integer"/>
+    <xs:element name="iTeachLevel" type="xs:integer"/>
+    <xs:element name="iAICitySize" type="xs:integer"/>
+    <xs:element name="YieldType" type="xs:NCName"/>
+    <xs:element name="iExperience" type="xs:integer"/>
+    <xs:element name="iYieldChange" type="xs:integer"/>
+    <xs:element name="PrereqBuildingClasses">
+        <xs:complexType>
+            <xs:sequence minOccurs="0">
+                <xs:element ref="c:PrereqBuildingClasses"/>
+                <xs:element ref="c:BuildingClassType"/>
+                <xs:element ref="c:iNumBuildingNeeded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="iNumBuildingNeeded" type="xs:integer"/>
+    <xs:element name="BuildingClassType" type="xs:NCName"/>
+    <xs:element name="eRequiredTerrain" type="xs:NCName"/>
+</xs:schema>

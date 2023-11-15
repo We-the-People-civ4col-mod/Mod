@@ -4,7 +4,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Building Infos -->
-<Civ4BuildingInfos xmlns="x-schema:CIV4BuildingsSchema.xml">
+<Civ4BuildingInfos xmlns="x-schema:CIV4BuildingsSchema.xml" xsi:schemaLocation="x-schema:CIV4BuildingsSchema.xml BuildingInfos.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <BuildingInfos>
         <BuildingInfo>
             <Type>BUILDING_BASECAMP</Type>
