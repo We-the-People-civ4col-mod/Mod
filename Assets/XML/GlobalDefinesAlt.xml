@@ -1,10 +1,10 @@
-<?xml version="1.0"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- edited with XMLSPY v2004 rel. 2 U (http://www.xmlspy.com) by Bart Muzzin (Firaxis Games) -->
 <!-- Sid Meier's Civilization 4 -->
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Global Defines -->
-<Civ4Defines xmlns="x-schema:CIV4GlobalDefinesSchema.xml">
+<Civ4Defines xmlns="x-schema:CIV4GlobalDefinesSchema.xml" xsi:schemaLocation="x-schema:CIV4GlobalDefinesSchema.xml GlobalDefinesAlt.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Define>
 		<DefineName>MODS_SHOULD_OVERRIDE_GLOBAL_DEFINES_HERE</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>

@@ -3,7 +3,7 @@
 <!-- Copyright Firaxis Games 2005 -->
 <!-- -->
 <!-- Global Defines -->
-<Civ4Defines xmlns="x-schema:CIV4GlobalDefinesSchema.xml">
+<Civ4Defines xmlns="x-schema:CIV4GlobalDefinesSchema.xml" xsi:schemaLocation="x-schema:CIV4GlobalDefinesSchema.xml GlobalDefinesAlt.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Define>
 		<DefineName>USE_CAN_FOUND_CITIES_ON_WATER_CALLBACK</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>

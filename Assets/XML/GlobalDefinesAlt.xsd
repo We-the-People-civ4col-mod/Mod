@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="x-schema:CIV4GlobalDefinesSchema.xml"
+           xmlns:c="x-schema:CIV4GlobalDefinesSchema.xml" >
+    <xs:element name="Civ4Defines">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded"  ref="c:Define" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="Define">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="c:DefineName"/>
+                <xs:choice>
+                    <xs:element ref="c:fDefineFloatVal"/>
+                    <xs:element ref="c:iDefineIntVal"/>
+                    <xs:element ref="c:DefineTextVal"/>
+                </xs:choice>
+                <xs:element  minOccurs="0" ref="c:bAlwaysHardcoded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="DefineName" type="xs:NCName"/>
+    <xs:element name="fDefineFloatVal" type="xs:decimal"/>
+    <xs:element name="iDefineIntVal" type="xs:integer"/>
+    <xs:element name="DefineTextVal" type="xs:NCName"/>
+    <xs:element name="bAlwaysHardcoded" type="c:bool-int" />
+    <xs:simpleType name="bool-int"  >
+        <xs:restriction base="xs:integer" >
+            <xs:enumeration value="0" />
+            <xs:enumeration value="1" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>
