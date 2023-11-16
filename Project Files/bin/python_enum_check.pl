@@ -9,6 +9,8 @@ use Thread::Queue;
 use constant STATE_1_INNER => 10;
 use constant STATE_3_INNER => 11;
 
+use constant TIMESTAMP_FILE => "temp_files/python.timestamp";
+
 my $nthreads = 8;
 
 if ($^O eq 'MSWin32')
@@ -41,10 +43,69 @@ my %headerCheck;
 my %enums;
 $enums{GlobalDefines} = ();
 
+my %modificationTimes = ();
+my %modificationFiles = ();
+
 handleCyEnumInterface();
 readHeader(getSourceDir() . "CvEnums.h");
 readHeader(getAutoDir() . "AutoXmlEnum.h");
 readHeader(getAutoDir() . "AutoGlobalDefineEnum.h");
+
+#
+my $lastScriptRunDate = 0;
+if (-e TIMESTAMP_FILE)
+{
+	my $lastScriptRunDate = getModificationTime(TIMESTAMP_FILE);
+}
+
+
+my @timestamps;
+my @timeFiles = [ [] ];
+
+my @temp_files;
+
+# Here arrays of enum types are formed
+# timestamps contains the time stamps of each source file in a sorted approach (oldest file first)
+# timeFiles contains the list of enums to test should the py file be newer than the time stamp
+#
+# timeFiles is filled in reverse and contains both the types from the file in question and all previous types
+# This way only a single index will need to be checked, which is the first one where the py file is newer
+for my $timestamp (sort keys %modificationTimes)
+{
+	my $file = $modificationTimes{$timestamp};
+	next unless defined $modificationFiles{$file};
+
+	# do not assume any fles to be older than last time the script ran successfully
+	$timestamp = $lastScriptRunDate if $timestamp < $lastScriptRunDate;
+	if ($#timestamps >= 0 and $timestamp == $timestamps[$#timestamps])
+	{
+		# two files have the same modification date (or more likely both have lastScriptRunDate
+		# merge them as only the first one of a given timestamp can activate
+		shift @timeFiles;
+	}
+	else
+	{
+		push(@timestamps, $timestamp);
+	}
+	
+	foreach my $key (keys %{ $modificationFiles{$file} } )
+	{
+		push @temp_files, $key unless grep( /^$key$/, @temp_files );
+	}
+	# fill timeFiles in reverse order. That way the oldest timestamp will test all enums
+	unshift (@timeFiles, [@temp_files] );
+}
+# last time stamp needs to be newer than the py file
+# to accomplish this, just use the current time
+# files will then get the first value added to timeFiles, which is an empty array (read: no enums to test for)
+push(@timestamps, time());
+
+my $scriptModificationDate = getModificationTime($0);
+if ($scriptModificationDate > $lastScriptRunDate)
+{
+	# For checking all enums if the script itself changed
+	$timestamps[0] = $scriptModificationDate;
+}
 
 testPythonFiles();
 
@@ -69,6 +130,10 @@ while ( my $error = $error_q -> dequeue() )
 
 die $errorStr unless $errorStr eq "";
 
+# passed without errors. Touch the time stamp file
+open HANDLE, ">>" . TIMESTAMP_FILE;
+close HANDLE; 
+
 exit();
 
 for my $enum (sort keys %enums)
@@ -85,6 +150,9 @@ for my $enum (sort keys %enums)
 sub handleCyEnumInterface
 {
 	my $file = getSourceDir() . "CyEnumsInterface.cpp";
+	
+	$modificationTimes{getModificationTime($file)} = $file;
+	$modificationFiles{$file} = ();
 	
 	my $lineno = 1;
 	
@@ -111,6 +179,7 @@ sub handleCyEnumInterface
 				$type = substr($line, index($line, "<")+1);
 				$type = substr($type, 0, index($type, ">"));
 				$type = "GlobalDefines" if $type eq "int";
+				$modificationFiles{$file}{$type} = 1;
 			}
 		}
 		elsif ($state == STATE_1_INNER)
@@ -174,6 +243,8 @@ sub readHeader
 {
 	my $file = shift;
 	
+	$modificationTimes{getModificationTime($file)} = $file;
+	
 	my $enum = "";
 	my $max = "";
 	
@@ -191,6 +262,7 @@ sub readHeader
 				{
 					$enum = $tmp;
 					$max = $headerCheck{$tmp};
+					$modificationFiles{$file}{$enum} = 1;
 				}
 			}
 		}
@@ -246,6 +318,30 @@ sub handleFile
 {
 	my $file = shift;
 	
+	my $timestamp = getModificationTime($file);
+	
+	my $timeCategory = 0;
+	for my $i (0..$#timestamps)
+	{
+		if ($timestamp > $timestamps[$i])
+		{
+			$timeCategory = $i;
+			last;
+		}
+	}
+	
+	my $hasEnums = 0;
+	my @enums;
+	
+	my $aref = $timeFiles[$timeCategory];
+	my $n = @$aref - 1;
+	for my $i ( 0 .. $n )
+	{
+		push @enums, $timeFiles[$timeCategory][$i];
+		$hasEnums = 1;
+	}
+	return if $hasEnums == 0; #skip reading a file because there aren't any enums to test
+	
 	my $commentSection = 0;
 	
 	open my $info, $file or die "Could not open $file: $!\n";
@@ -261,7 +357,7 @@ sub handleFile
 		next if $commentSection;
 		
 		lineErrorCheck("$file($.)", $line);
-		for my $enum (sort keys %enums)
+		for my $enum(@enums)
 		{
 			handleLine("$file($.)", $line, $enum);
 		}
@@ -348,3 +444,8 @@ sub worker
 	}
 }
 
+sub getModificationTime
+{
+	my $file = shift;
+	return (stat ($file))[9];
+}

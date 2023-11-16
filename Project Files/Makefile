@@ -278,7 +278,7 @@ dll: all
 clean:
 	@IF EXIST "$(TEMP_TARGET_FILES)" RMDIR /s /q "$(TEMP_TARGET_FILES)"
 	@FOR %i IN ($(Target_BIN) $(Target_STATICLIB) $(Target_RESOURCE) \
-		$(Target_PCH) $(Target_PDB) $(Target_OTHER) "WeThePeople-*.zip") DO @IF EXIST "%i" DEL "%i"
+		$(Target_PCH) $(Target_PDB) $(Target_OTHER) "WeThePeople-*.zip" $(TEMP_FILE_DIR)"\python.timestamp") DO @IF EXIST "%i" DEL "%i"
 
 build: $(Target_BIN)
 !IFDEF YOURMOD
