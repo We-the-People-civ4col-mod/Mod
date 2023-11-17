@@ -91,7 +91,8 @@ class columnContainer:
 			strClass = child.getInfoClass()
 
 			if strClass == None:
-				panelBG = PanelStyles.PANEL_STYLE_STONE
+				if self.ID != 1 or (not child.isText() and child.getName() != "Type"):
+					panelBG = PanelStyles.PANEL_STYLE_STONE
 
 			screen.attachPanelAt(self.panel, panel, "", "", False, False, panelBG, self.left, y_offset, self.width, self.height, WidgetTypes.WIDGET_GENERAL, self.ID, counter)
 
@@ -277,6 +278,6 @@ class columnContainer:
 		# should be __exit__, but python is one version too old to understand this keyword
 		screen = CyGInterfaceScreen( "xmlEditor", CvScreenEnums.XML_EDITOR )
 
-		while (len(self.widgets) > 0):
-			widget = self.widgets.pop()
+		for widget in self.widgets:
 			screen.deleteWidget(widget)
+		self.wigdets = []

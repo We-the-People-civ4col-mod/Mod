@@ -9,6 +9,34 @@
 
 using namespace tinyxml2;
 
+const int iNumTXTTags = 4;
+
+const TCHAR* TXT_TAGS[iNumTXTTags] = {
+	"Civilopedia",
+	"Description",
+	"Help",
+	"Strategy",
+};
+
+const TCHAR* TXT_TAGS_POSTFIX[iNumTXTTags] = {
+	"_PEDIA",
+	"",
+	"_HELP",
+	"_STRATEGY",
+};
+
+static bool isText(const TCHAR* szTag)
+{
+	for (int i = 0; i < 4; ++i)
+	{
+		if (strcmp(szTag, TXT_TAGS[i]) == 0)
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
 
 CyXMLObject::CyXMLObject()
 	: m_pXML(NULL)
@@ -245,7 +273,6 @@ bool CyXMLObject::isOptional() const
 
 int CyXMLObject::getTextType() const
 {
-	/*
 	const TCHAR *szName = getName();
 	for (int i = 0; i < iNumTXTTags; ++i)
 	{
@@ -254,7 +281,6 @@ int CyXMLObject::getTextType() const
 			return i;
 		}
 	}
-	*/
 	return -1;
 }
 

@@ -54,34 +54,6 @@ static void saveFile(XMLDocument *pDoc, const TCHAR *filename)
 	pDoc->SaveFile(filename);
 }
 
-const int iNumTXTTags = 4;
-
-const TCHAR* TXT_TAGS[iNumTXTTags] = {
-	"Civilopedia",
-	"Description",
-	"Help",
-	"Strategy",
-};
-
-const TCHAR* TXT_TAGS_POSTFIX[iNumTXTTags] = {
-	"_PEDIA",
-	"",
-	"_HELP",
-	"_STRATEGY",
-};
-
-static bool isText(const TCHAR* szTag)
-{
-	for (int i = 0; i < 4; ++i)
-	{
-		if (strcmp(szTag, TXT_TAGS[i]) == 0)
-		{
-			return true;
-		}
-	}
-	return false;
-}
-
 static const TCHAR* sortByChildTag(const XMLElement *pElement)
 {
 	const XMLElement *pChild = pElement->FirstChildElement("Tag");
