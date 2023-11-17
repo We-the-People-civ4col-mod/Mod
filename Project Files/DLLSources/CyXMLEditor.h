@@ -54,6 +54,7 @@ public:
 	const TCHAR* getName() const {return getDesc("Name");}
 	const TCHAR* getRoot() const {return getDesc("Root");}
 	virtual const TCHAR* getTag() const;
+	const TCHAR* getType() const;
 	
 	int getNumTags()                  {return m_szTags.size();};
 	const TCHAR* getTag(int iIndex, bool bSkipPrefix = false);

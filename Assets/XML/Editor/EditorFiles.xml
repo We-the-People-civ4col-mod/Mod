@@ -118,6 +118,34 @@
         <Root>Civ4Defines</Root>
     </File>
     <File>
+        <Dir>Audio</Dir>
+        <Name>Audio2DScripts</Name>
+        <Tag>Script2DSound</Tag>
+        <Root>Script2DSounds</Root>
+        <Type>ScriptID</Type>
+    </File>
+    <File>
+        <Dir>Audio</Dir>
+        <Name>Audio3DScripts</Name>
+        <Tag>Script3DSound</Tag>
+        <Root>Script3DSounds</Root>
+		<Type>ScriptID</Type>
+    </File>
+    <File>
+        <Dir>Audio</Dir>
+        <Name>AudioDefines</Name>
+        <Tag>SoundData</Tag>
+        <Root>AudioDefines</Root>
+		<Type>SoundID</Type>
+    </File>
+    <File>
+        <Dir>Audio</Dir>
+        <Name>AudioSoundscapeScripts</Name>
+        <Tag>ScriptSoundscape</Tag>
+        <Root>ScriptSoundscapes</Root>
+		<Type>ScriptID</Type>
+    </File>
+    <File>
         <Dir>BasicInfos</Dir>
         <Name>CIV4AttitudeInfos</Name>
         <Tag>AttitudeInfo</Tag>

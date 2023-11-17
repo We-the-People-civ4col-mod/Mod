@@ -562,6 +562,30 @@
 
 <ProfessionInfo/>
 
+<Script2DSound>
+    <ScriptID/>
+    <SoundID/>
+    <SoundType/>
+    <iMinVolume/>
+    <iMaxVolume/>
+    <iPitchChangeDown/>
+    <iPitchChangeUp/>
+    <iMinLeftPan/>
+    <iMaxLeftPan/>
+    <iMinRightPan/>
+    <iMaxRightPan/>
+    <bLooping/>
+    <iMinTimeDelay/>
+    <iMaxTimeDelay/>
+    <bTaperForSoundtracks/>
+    <iLengthOfSound/>
+    <fMinDryLevel/>
+    <fMaxDryLevel/>
+    <fMinWetLevel/>
+    <fMaxWetLevel/>
+    <iNotPlayPercent/>
+</Script2DSound>
+
 <TerrainArtInfo class="Dir" child="Button">
     <Type/>
     <Path/>
@@ -593,8 +617,18 @@
     <Civilopedia/>
     <Help/>
     <ArtDefineTag class="Type" type="TerrainArtInfo" none="false"/>
-    <Yields/>
-    <RiverYieldIncreases/>
+    <Yields class="Dir" child="YieldIntegerPair">
+        <YieldIntegerPair class="Dir" child="YieldType">
+            <YieldType class="Type" type="YieldInfo" none="false"/>
+            <iValue/>
+        </YieldIntegerPair>
+    </Yields>
+    <RiverYieldIncreases class="Dir" child="YieldIntegerPair">
+        <YieldIntegerPair class="Dir" child="YieldType">
+            <YieldType class="Type" type="YieldInfo" none="false"/>
+            <iValue/>
+        </YieldIntegerPair>
+    </RiverYieldIncreases>
     <bWater/>
     <bImpassable/>
     <bFound/>
@@ -607,7 +641,7 @@
     <iDefense/>
     <Button class="Button"/>
     <FootstepSounds/>
-    <WorldSoundscapeAudioScript/>
+    <WorldSoundscapeAudioScript class="Type" type="ScriptSoundscape" none="false"/>
     <bGraphicalOnly/>
 </TerrainInfo>
 

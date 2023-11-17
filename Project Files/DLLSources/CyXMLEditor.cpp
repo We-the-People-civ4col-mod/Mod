@@ -258,6 +258,16 @@ const TCHAR* xmlFileContainer::getTag() const
 	return getDesc("Tag");
 }
 
+const TCHAR* xmlFileContainer::getType() const
+{
+	const TCHAR* type = getDesc("Type");
+	if (type == NULL)
+	{
+		type = "Type";
+	}
+	return type;
+}
+
 void xmlFileContainer::getSchema(XMLDocument *pDocument)
 {
 	openFile(pDocument, m_szSchemaName.c_str());
@@ -286,7 +296,7 @@ void xmlFileContainer::setTags(XMLElement *pElement)
 	const TCHAR* szSubType = getDesc("SubType");
 	while (pElement != NULL)
 	{
-		XMLElement *pType = pElement->FirstChildElement("Type");
+		XMLElement *pType = pElement->FirstChildElement(getType());
 		if (pType != NULL)
 		{
 			const char *szName = pType->GetText();
