@@ -100,7 +100,7 @@ protected:
 	EnumMap<ImprovementTypes, int> m_em_iNumImprovements;
 public:
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 };
 
 inline int  CvArea :: getID()                                   const { return m_iID; }

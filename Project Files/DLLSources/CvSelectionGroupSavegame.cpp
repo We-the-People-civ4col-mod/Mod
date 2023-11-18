@@ -108,7 +108,7 @@ void CvSelectionGroup::read(CvSavegameReader reader)
 	
 }
 
-void CvSelectionGroup::write(CvSavegameWriter writer)
+void CvSelectionGroup::write(CvSavegameWriter writer) const
 {
 	LogIntentHelper helper(writer, "CvSelectionGroup");
 
@@ -132,7 +132,7 @@ void CvSelectionGroup::write(CvSavegameWriter writer)
 	{
 		writer.Write(SelectionGroupSave_TradeRoutes);
 		writer.Write(iSize);
-		for(std::set<int>::iterator it = m_aTradeRoutes.begin(); it != m_aTradeRoutes.end(); ++it)
+		for(std::set<int>::const_iterator it = m_aTradeRoutes.begin(); it != m_aTradeRoutes.end(); ++it)
 		{
 			writer.Write(*it);
 		}

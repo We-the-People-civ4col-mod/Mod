@@ -323,7 +323,7 @@ int JustInTimeArray<T>::safeAdd(T value, int iIndex)
 }
 
 template<class T>
-bool JustInTimeArray<T>::hasContent()
+bool JustInTimeArray<T>::hasContent() const
 {
 	if (m_tArray == NULL)
 	{
@@ -337,12 +337,12 @@ bool JustInTimeArray<T>::hasContent()
 		}
 	}
 
-	reset();
+	const_cast<JustInTimeArray<T>&>(*this).reset();
 	return false;
 }
 
 template<class T>
-int JustInTimeArray<T>::getFirstNoneDefault()
+int JustInTimeArray<T>::getFirstNoneDefault() const
 {
 	if (m_tArray == NULL)
 	{
@@ -356,7 +356,7 @@ int JustInTimeArray<T>::getFirstNoneDefault()
 		}
 	}
 
-	reset();
+	const_cast<JustInTimeArray<T>&>(*this).reset();
 	return NO_NONEDEFAULT_ARRAY;
 }
 
@@ -465,7 +465,7 @@ void JustInTimeArray<T>::Read(FDataStreamBase* pStream)
 }
 
 template<class T>
-void JustInTimeArray<T>::Write(FDataStreamBase* pStream)
+void JustInTimeArray<T>::Write(FDataStreamBase* pStream) const
 {
 	unsigned short iLength = this->getNumUsedElements();
 
@@ -506,7 +506,7 @@ void JustInTimeArray<T>::Read(CvSavegameReader& reader)
 
 
 template<class T>
-void JustInTimeArray<T>::Write(CvSavegameWriter& writer)
+void JustInTimeArray<T>::Write(CvSavegameWriter& writer) const
 {
 	unsigned short iStart = this->getFirstNoneDefault();
 	unsigned short iLength = this->getNumUsedElements();

@@ -11,6 +11,7 @@
 //
 // operator global new and delete override for gamecore DLL
 //
+/*
 void *__cdecl operator new(size_t size)
 {
 	if (gDLL)
@@ -81,6 +82,7 @@ unsigned int memSize(void* a)
 {
 	return gDLL->memSize(a);
 }
+ */
 
 BOOL APIENTRY DllMain(HANDLE hModule,
 					  DWORD  ul_reason_for_call,

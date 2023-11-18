@@ -98,7 +98,7 @@ void CvSelectionGroupAI::read(CvSavegameReader reader)
 	
 }
 
-void CvSelectionGroupAI::write(CvSavegameWriter writer)
+void CvSelectionGroupAI::write(CvSavegameWriter writer) const
 {
 	writer.AssignClassType(SAVEGAME_CLASS_SELECTIONGROUP_AI);
 

@@ -45,7 +45,7 @@ public:
 	virtual void removeAll();
 
 	void Read( FDataStreamBase* pStream );
-	void Write( FDataStreamBase* pStream );
+	void Write( FDataStreamBase* pStream ) const;
 
 
 protected:
@@ -409,7 +409,7 @@ inline void FFreeListArray< T >::Read( FDataStreamBase* pStream )
 }
 
 template < class T >
-inline void FFreeListArray< T >::Write( FDataStreamBase* pStream )
+inline void FFreeListArray< T >::Write( FDataStreamBase* pStream ) const
 {
 	int iCount = getCount();
 	pStream->Write( iCount );
@@ -452,7 +452,7 @@ inline void ReadStreamableFFreeListArray( FFreeListArray< T >& flist, FDataStrea
 // use when list contains streamable types
 //
 template < class T >
-inline void WriteStreamableFFreeListArray( FFreeListArray< T >& flist, FDataStreamBase* pStream )
+inline void WriteStreamableFFreeListArray( FFreeListArray< T > const& flist, FDataStreamBase* pStream )
 {
 	int iCount = flist.getCount();
 	pStream->Write( iCount );

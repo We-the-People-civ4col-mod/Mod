@@ -946,10 +946,10 @@ std::wstring CyUnit::getNameOrProfessionKey()
 {
 	return m_pUnit ? m_pUnit->getNameOrProfessionKey() : L"";
 }
-void CyUnit::setName(std::wstring szNewValue)
+void CyUnit::setName(std::basic_string<unsigned short> szNewValue)
 {
 	if (m_pUnit)
-		m_pUnit->setName(szNewValue);
+		m_pUnit->setName(reinterpret_cast<wchar const*>(szNewValue.c_str()));
 }
 std::string CyUnit::getScriptData() const
 {

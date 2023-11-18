@@ -77,7 +77,7 @@ void CvTradeRoute::read(CvSavegameReader reader)
 	
 }
 
-void CvTradeRoute::write(CvSavegameWriter writer)
+void CvTradeRoute::write(CvSavegameWriter writer) const
 {
 	LogIntentHelper helper(writer, "CvTradeRoute");
 

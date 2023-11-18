@@ -23,7 +23,7 @@ public:
 	void setName(const wchar* name);
 	
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 
 	void resetSavedData();
 	

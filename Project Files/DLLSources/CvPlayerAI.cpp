@@ -12095,7 +12095,7 @@ void CvPlayerAI::read(FDataStreamBase* pStream)
 // save object to a stream
 // used during save
 //
-void CvPlayerAI::write(FDataStreamBase* pStream)
+void CvPlayerAI::write(FDataStreamBase* pStream) const
 {
 	CvSavegameWriterBase writerbase(pStream);
 	CvSavegameWriter writer(writerbase);

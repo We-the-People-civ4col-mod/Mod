@@ -158,11 +158,11 @@ public:
 	bool AI_isKing() const;
 
 	virtual void read(FDataStreamBase* pStream);
-	virtual void write(FDataStreamBase* pStream);
+	virtual void write(FDataStreamBase* pStream) const;
 
 	void AI_resetSavedData();
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 
 	int AI_plotDefense(CvPlot const& kPlot, bool bIgnoreBuilding = false,
 		bool bGarrisonStrength = false) const; // advc.500b

@@ -377,7 +377,7 @@ void CvUnit::read(CvSavegameReader reader)
 
 }
 
-void CvUnit::write(CvSavegameWriter writer)
+void CvUnit::write(CvSavegameWriter writer) const
 {
 	LogIntentHelper helper(writer, "CvUnit");
 

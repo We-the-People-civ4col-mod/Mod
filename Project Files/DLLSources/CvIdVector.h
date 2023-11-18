@@ -46,7 +46,7 @@ void CvIdVector<T>::reset()
 {
 	m_iNextId = 0;
 
-	CvIdVector<T>::iterator it;
+	typename CvIdVector<T>::iterator it;
 	for (it = begin(); it != end(); ++it)
 	{
 		SAFE_DELETE(it->second);
@@ -72,7 +72,7 @@ T* CvIdVector<T>::addNew()
 template <class T>
 T* CvIdVector<T>::getById(int iId) const
 {
-	CvIdVector<T>::const_iterator it = find(iId);
+	typename CvIdVector<T>::const_iterator it = find(iId);
 	if (it != end())
 	{
 		return it->second;
@@ -84,7 +84,7 @@ T* CvIdVector<T>::getById(int iId) const
 template <class T>
 bool CvIdVector<T>::removeById(int iId)
 {
-	CvIdVector<T>::iterator it = find(iId);
+	typename CvIdVector<T>::iterator it = find(iId);
 	if (it != end())
 	{
 		SAFE_DELETE(it->second);
@@ -121,7 +121,7 @@ void CvIdVector<T>::Write(FDataStreamBase* pStream) const
 	pStream->Write(m_iNextId);
 	pStream->Write(static_cast<int>(size()));
 
-	CvIdVector<T>::const_iterator it;
+	typename CvIdVector<T>::const_iterator it;
 	for (it = begin(); it != end(); ++it)
 	{
 		it->second->write(pStream);
@@ -154,7 +154,7 @@ void CvIdVector<T>::Write(CvSavegameWriter* pStream) const
 	pStream->Write(m_iNextId);
 	pStream->Write(static_cast<int>(size()));
 
-	CvIdVector<T>::const_iterator it;
+	typename CvIdVector<T>::const_iterator it;
 	for (it = begin(); it != end(); ++it)
 	{
 		pStream->Write(*(it->second));

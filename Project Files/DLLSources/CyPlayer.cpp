@@ -50,7 +50,8 @@ void CyPlayer::killCities()
 }
 std::wstring CyPlayer::getNewCityName()
 {
-	return m_pPlayer ? m_pPlayer->getNewCityName() : std::wstring();
+	if (m_pPlayer == NULL) return L"";
+	return m_pPlayer->getNewCityName();
 }
 CyUnit* CyPlayer::initUnit(int /*UnitTypes*/ iIndex, int iProfession, int iX, int iY, UnitAITypes eUnitAI, DirectionTypes eFacingDirection, int iYieldStored)
 {
@@ -79,43 +80,52 @@ bool CyPlayer::isNative()
 }
 std::wstring CyPlayer::getName()
 {
-	return m_pPlayer ? m_pPlayer->getName() : std::wstring();
+	if (m_pPlayer == NULL) return L"";
+	return m_pPlayer->getName();
 }
 std::wstring CyPlayer::getNameForm(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getName((uint)iForm) : std::wstring();
+	return m_pPlayer->getName(static_cast<uint>(iForm));
 }
 std::wstring CyPlayer::getNameKey()
 {
-	return m_pPlayer ? m_pPlayer->getNameKey() : std::wstring();
+	if (m_pPlayer == NULL) return L"";
+	return m_pPlayer->getNameKey();
 }
 std::wstring CyPlayer::getCivilizationDescription(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationDescription((uint)iForm) : std::wstring();
+	if (m_pPlayer == NULL) return L"";
+	return m_pPlayer->getCivilizationDescription(static_cast<uint>(iForm));
 }
 std::wstring CyPlayer::getCivilizationDescriptionKey()
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationDescriptionKey() : std::wstring();
+	if (m_pPlayer == NULL) return L"";
+	return m_pPlayer->getCivilizationDescriptionKey();
 }
 std::wstring CyPlayer::getCivilizationShortDescription(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationShortDescription((uint)iForm) : std::wstring();
+	if (m_pPlayer == NULL) return L"";
+	return m_pPlayer->getCivilizationShortDescription(static_cast<uint>(iForm));
 }
 std::wstring CyPlayer::getCivilizationShortDescriptionKey()
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationShortDescriptionKey() : std::wstring();
+	if (m_pPlayer == NULL) return L"";
+	return m_pPlayer->getCivilizationShortDescriptionKey();
 }
 std::wstring CyPlayer::getCivilizationAdjective(int iForm)
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationAdjective((uint)iForm) : std::wstring();
+	if (m_pPlayer == NULL) return L"";
+	return m_pPlayer->getCivilizationAdjective(static_cast<uint>(iForm));
 }
 std::wstring CyPlayer::getCivilizationAdjectiveKey( )
 {
-	return m_pPlayer ? m_pPlayer->getCivilizationAdjectiveKey() : std::wstring();
+	if (m_pPlayer == NULL) return L"";
+	return m_pPlayer->getCivilizationAdjectiveKey();
 }
 std::wstring CyPlayer::getWorstEnemyName()
 {
-	return m_pPlayer ? m_pPlayer->getWorstEnemyName() : std::wstring();
+	if (m_pPlayer == NULL) return L"";
+	return m_pPlayer->getWorstEnemyName();
 }
 int /*ArtStyleTypes*/ CyPlayer::getArtStyleType()
 {
@@ -123,7 +133,8 @@ int /*ArtStyleTypes*/ CyPlayer::getArtStyleType()
 }
 std::string CyPlayer::getUnitButton(int eUnit)
 {
-	return m_pPlayer ? m_pPlayer->getUnitButton((UnitTypes)eUnit) : "";
+	if (m_pPlayer == NULL) return "";
+	return m_pPlayer->getUnitButton(static_cast<UnitTypes>(eUnit));
 }
 int CyPlayer::findBestFoundValue( )
 {
@@ -866,7 +877,8 @@ int CyPlayer::getNumCityNames()
 }
 std::wstring CyPlayer::getCityName(int iIndex)
 {
-	return m_pPlayer ? m_pPlayer->getCityName(iIndex) : std::wstring();
+	if (m_pPlayer == NULL) return L"";
+	return m_pPlayer->getCityName(iIndex);
 }
 // returns tuple of (CyCity, iterOut)
 python::tuple CyPlayer::firstCity(bool bRev)
@@ -1173,7 +1185,8 @@ int CyPlayer::getYieldEquipmentAmount(int /*ProfessionTypes*/ eProfession, int /
 
 std::string CyPlayer::getScriptData() const
 {
-	return m_pPlayer ? m_pPlayer->getScriptData() : "";
+	if (m_pPlayer == NULL) return "";
+	return m_pPlayer->getScriptData();
 }
 void CyPlayer::setScriptData(std::string szNewValue)
 {
@@ -1472,7 +1485,8 @@ int CyPlayer::getNumTradeMessages() const
 }
 std::wstring CyPlayer::getTradeMessage(int i) const
 {
-	return m_pPlayer ? m_pPlayer->getTradeMessage(i) : L"";
+	if (m_pPlayer == NULL) return L"";
+	return m_pPlayer->getTradeMessage(i);
 }
 
 // TAC - Trade Messages - koma13 - START

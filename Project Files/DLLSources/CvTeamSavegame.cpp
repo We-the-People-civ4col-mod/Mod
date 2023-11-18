@@ -188,7 +188,7 @@ void CvTeam::read(CvSavegameReader reader)
 	
 }
 
-void CvTeam::write(CvSavegameWriter writer)
+void CvTeam::write(CvSavegameWriter writer) const
 {
 	LogIntentHelper helper(writer, "CvTeam");
 

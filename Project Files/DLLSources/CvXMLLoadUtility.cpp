@@ -23,7 +23,7 @@ static const int kBufSize = 2048;
 //
 // for logging
 //
-void CvXMLLoadUtility::logMsg(char* format, ... )
+__declspec(noinline) void CvXMLLoadUtility::logMsg(char* format, ... )
 {
 	static char buf[kBufSize];
 	_vsnprintf( buf, kBufSize-4, format, (char*)(&format+1) );

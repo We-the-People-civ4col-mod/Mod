@@ -1,0 +1,11 @@
+.{
+    .name = "we_the_people",
+    .version = "4.1.0-zig",
+    .dependencies = .{
+        .compiler = .{
+            .url = "https://github.com/We-the-People-civ4col-mod/Compiler/tarball/zig",
+            .hash = "122044696dbdf9473f674f82afd13c2b4452debb0b7ac7c44c11bcba910f98f4979c",
+        },
+    },
+    .paths = .{""},
+}

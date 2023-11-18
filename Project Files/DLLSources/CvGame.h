@@ -335,11 +335,11 @@ public:
 	ColorTypes getReplayMessageColor(uint i) const;
 
 	virtual void read(FDataStreamBase* pStream);
-	virtual void write(FDataStreamBase* pStream);
+	virtual void write(FDataStreamBase* pStream) const;
 	virtual void writeReplay(FDataStreamBase& stream, PlayerTypes ePlayer);
 
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 	void resetSavedData(HandicapTypes eHandicap, bool bConstructorCall);
 
 	virtual void AI_init() = 0;

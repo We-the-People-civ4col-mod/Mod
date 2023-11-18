@@ -126,7 +126,7 @@ void CvTalkingHeadMessage::read(CvSavegameReader reader)
 	
 }
 
-void CvTalkingHeadMessage::write(CvSavegameWriter writer)
+void CvTalkingHeadMessage::write(CvSavegameWriter writer) const
 {
 	LogIntentHelper helper(writer, "CvTalkingHeadMessage");
 

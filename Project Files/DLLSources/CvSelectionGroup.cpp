@@ -4536,7 +4536,7 @@ void CvSelectionGroup::read(FDataStreamBase* pStream)
 	read(reader);
 }
 
-void CvSelectionGroup::write(FDataStreamBase* pStream)
+void CvSelectionGroup::write(FDataStreamBase* pStream) const
 {
 	CvSavegameWriterBase writerbase(pStream);
 	CvSavegameWriter writer(writerbase);

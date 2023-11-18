@@ -13,7 +13,7 @@ struct CvPopupButtonPython
 	CvString szArt;
 
 	void read(CvSavegameReader reader);
-	void write(CvSavegameWriter writer);
+	void write(CvSavegameWriter writer) const;
 };
 
 class CvPopupInfo

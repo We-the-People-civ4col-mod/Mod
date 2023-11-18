@@ -1,0 +1,129 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "zig build",
+            "type": "shell",
+            "command": "zig",
+            "args": [
+                "build",
+                "-Doptimize=${input:optimize}",
+                "-Dsanitize=${input:sanitize}",
+                "-Dcompdb"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "icon": {
+                "color": "terminal.ansiGreen",
+                "id": "wrench"
+            },
+            "options": {
+                "cwd": "${workspaceFolder}/Project Files/"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true
+            },
+            "runOptions": {
+                "instanceLimit": 1
+            }
+        },
+        {
+            "label": "clear zig-cache",
+            "type": "shell",
+            "command": "rm",
+            "args": [
+                "-rf",
+                "${workspaceFolder}/zig-cache"
+            ],
+            "windows": {
+                "command": "Remove-Item",
+                "args": [
+                    "-Recurse",
+                    "${workspaceFolder}\\zig-cache"
+                ]
+            },
+            "icon": {
+                "color": "terminal.ansiRed",
+                "id": "trash"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true,
+                "close": true
+            },
+            "problemMatcher": [],
+            "dependsOn": [
+                "kill zig"
+            ]
+        },
+        {
+            "label": "kill zig",
+            "type": "shell",
+            "command": "killall",
+            "args": [
+                "zig"
+            ],
+            "windows": {
+                "command": "taskkill",
+                "args": [
+                    "/F",
+                    "/IM",
+                    "zig.exe",
+                    "/T",
+                    ";",
+                    "exit",
+                    "0"
+                ]
+            },
+            "icon": {
+                "color": "terminal.ansiRed",
+                "id": "stop"
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": false,
+                "clear": true,
+                "close": true
+            },
+            "problemMatcher": []
+        }
+    ],
+    "inputs": [
+        {
+            "id": "optimize",
+            "description": "Optimization mode",
+            "default": "Debug",
+            "type": "pickString",
+            "options": [
+                "Debug",
+                "ReleaseFast",
+                "ReleaseSafe"
+            ],
+        },
+        {
+            "id": "sanitize",
+            "description": "UBSan",
+            "default": "true",
+            "type": "pickString",
+            "options": [
+                "true",
+                "false"
+            ],
+        }
+    ]
+}

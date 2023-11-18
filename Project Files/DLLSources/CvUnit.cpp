@@ -1585,7 +1585,7 @@ void CvUnit::updateCombat(bool bQuick)
 				//capturingPrisonerOfWarChance = capturingPrisonerOfWarChance * (100 + iCapturePrisonersOfWarChanceIncrease) / 100;
 
 				if (capturingPrisonerOfWarChance > randomCapturePrisonerOfWarValue)
-				{	
+				{
 					UnitTypes eCapturedPrisonerOfWar = kOwner.getUnitType(UNITCLASS_PRISONER_OF_WAR);
 					CvUnit* PrisonerOfWarUnit = kOwner.initUnit(eCapturedPrisonerOfWar, GC.getUnitInfo(eCapturedPrisonerOfWar).getDefaultProfession(), pDefender->plot()->coord(), NO_UNITAI);
 					// WTP, ray, Prisoners of War should also get some damage and a Negative Promotion
@@ -7918,7 +7918,7 @@ bool CvUnit::canPromote(PromotionTypes ePromotion, int iLeaderUnitId) const
 		const UnitTypes eLieutenantUnit = kPlayer.getUnitType(UNITCLASS_BRAVE_LIEUTENANT);
 		const UnitTypes eCaptainUnit = kPlayer.getUnitType(UNITCLASS_CAPABLE_CAPTAIN);
 
-		if (   isHasPromotion(GC.getUnitInfo(eGeneralUnit)   .getLeaderPromotion()) 
+		if (   isHasPromotion(GC.getUnitInfo(eGeneralUnit)   .getLeaderPromotion())
 			|| isHasPromotion(GC.getUnitInfo(eAdmiralUnit)   .getLeaderPromotion())
 			|| isHasPromotion(GC.getUnitInfo(eLieutenantUnit).getLeaderPromotion())
 			|| isHasPromotion(GC.getUnitInfo(eCaptainUnit)   .getLeaderPromotion())
@@ -13689,7 +13689,10 @@ void CvUnit::resetPromotions()
 {
 	if (getOwnerINLINE() != NO_PLAYER)
 	{
-		plot()->changeAdjacentSight(getTeam(), m_iVisibilityRange, false, this);
+		if (CvPlot* pPlot = plot())
+		{
+			pPlot->changeAdjacentSight(getTeam(), m_iVisibilityRange, false, this);
+		}
 	}
 
 	m_iBlitzCount = 0;
@@ -13742,7 +13745,10 @@ void CvUnit::resetPromotions()
 
 	if (getOwnerINLINE() != NO_PLAYER)
 	{
-		plot()->changeAdjacentSight(getTeam(), m_iVisibilityRange, true, this);
+		if (CvPlot* pPlot = plot())
+		{
+			pPlot->changeAdjacentSight(getTeam(), m_iVisibilityRange, true, this);
+		}
 	}
 }
 
@@ -16662,7 +16668,7 @@ void CvUnit::read(FDataStreamBase* pStream)
 	read(reader);
 }
 
-void CvUnit::write(FDataStreamBase* pStream)
+void CvUnit::write(FDataStreamBase* pStream) const
 {
 	CvSavegameWriterBase writerbase(pStream);
 	CvSavegameWriter writer(writerbase);

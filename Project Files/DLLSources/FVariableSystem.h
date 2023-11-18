@@ -60,10 +60,10 @@ class FVariable
 		const FVariable& operator=( const FVariable& varSrc ) { CopyFrom(varSrc); return *this; }
 		void CopyFrom(const FVariable& varSrc);
 		void Read(FDataStreamBase *);
-		void Write(FDataStreamBase *);
+		void Write(FDataStreamBase *) const;
 		
 		void read(CvSavegameReader);
-		void write(CvSavegameWriter);
+		void write(CvSavegameWriter) const;
 
 		union
 		{

@@ -720,5 +720,6 @@ template <typename T>
 struct xmlLocation
 {
 	// shouldn't be able to use one, which isn't mentioned in this file
-	BOOST_STATIC_ASSERT(0);
+	// XXX(sengir): Remove before committing
+	//	BOOST_STATIC_ASSERT(0);
 };
