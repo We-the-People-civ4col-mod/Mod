@@ -125,7 +125,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_EXPERIENCE_SEA</Tag>
-        <English>INTERFACE_PANE_EXPERIENCE</English>
+        <English>Experience</English>
+        <French>Expérience</French>
+        <German>Erfahrung</German>
+        <Italian>Esperienza</Italian>
+        <Spanish>Experiencia:</Spanish>
+        <Russian>Опыт</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_EXPERIENCE_SEA</Tag>
@@ -166,11 +171,12 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_HIGH_GOLD</Tag>
-        <English>TXT_KEY_TRADE_TITLE_GOLD</English>
+        <English>TXT_KEY_GOODY_LOW_GOLD</English>
+        <!--TXT_KEY_TRADE_TITLE_GOLD-->
     </TEXT>
     <TEXT>
-        <Tag>TXT_KEY_GOODY_LOW_GOLD</Tag>
-        <English>Gold</English>
+        <Tag>TXT_KEY_GOODY_LOW_GOLD</Tag> <!--The tag is not currently playing in the game. I'll try to figure this out later.-->
+        <English>GOLD!!!</English>
         <French>
             <Text>Or</Text>
             <Gender>Male</Gender>
@@ -191,7 +197,7 @@
             <Gender>Male</Gender>
             <Plural>0</Plural>
         </Spanish>
-        <Russian>Золото</Russian>
+        <Russian>ЗОЛОТО!!!</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_GOLD</Tag>
@@ -204,7 +210,8 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_LOW_GOLD_SEA</Tag>
-        <English>TXT_KEY_TRADE_TITLE_GOLD</English>
+        <English>TXT_KEY_GOODY_LOW_GOLD</English>
+        <!--TXT_KEY_TRADE_TITLE_GOLD-->
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_GOLD_SEA</Tag>
@@ -283,7 +290,28 @@
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_MAP_SEA</Tag>
-        <English>TXT_KEY_MAIN_MENU_MAP</English>
+        <English>Map</English>
+        <French>
+            <Text>Carte</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </French>
+        <German>
+            <Text>Karte</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </German>
+        <Italian>
+            <Text>Mappa</Text>
+            <Gender>Female</Gender>
+            <Plural>0</Plural>
+        </Italian>
+        <Spanish>
+            <Text>Mapa</Text>
+            <Gender>Male</Gender>
+            <Plural>0</Plural>
+        </Spanish>
+        <Russian>Карта</Russian>
     </TEXT>
     <TEXT>
         <Tag>TXT_KEY_GOODY_ANNOUNCE_MAP_SEA</Tag>

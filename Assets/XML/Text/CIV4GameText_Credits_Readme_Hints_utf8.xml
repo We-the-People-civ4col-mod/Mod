@@ -676,6 +676,15 @@ Viel Spass![NEWLINE]
 		<Spanish>Si vuestros almacenes llegan a los 200 Alimentos, esa cantidad se transformará de inmediato en un Colono libre.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_HINT_28</Tag>
+		<English>Furs become coats. Sugar becomes rum. Tobacco becomes cigars. Cotton becomes cloth. Ore becomes Tools, which can in turn become Guns.</English>
+		<French>La fourrure sert à produire des manteaux ; le sucre, du rhum ; le tabac, des cigares ; le coton, du tissu ; le fer, des outils qui peuvent ensuite être changés en armes à feu.</French>
+		<German>Aus Pelzen werden Mäntel. Aus Zucker wird Rum. Aus Tabak werden Zigarren. Aus Baumwolle wird Stoff. Aus Eisenerz werden Werkzeuge, die wiederum zu Schusswaffen werden können.</German>
+		<Italian>Le pellicce diventano mantelli. Lo zucchero diventa rum. Il tabacco diventa sigari. Il cotone diventa tessuto. Il minerale diventa attrezzi, che a loro volta possono diventare armi.</Italian>
+		<Spanish>Las Pieles se convierten en Abrigos. El Azúcar se convierte en Ron. El Tabaco se convierte en Puros. El Algodón se convierte en Tejido. El Mineral se convierte en Herramientas, que a su vez se pueden convertir en Armas.</Spanish>
+		<Russian>Меха становятся пальто. Сахар становится ромом. Табак становится сигарами. Хлопок становится тканью. Руда становится Инструментами, которые, в свою очередь, могут стать Оружием. [COLOR_NEGATIVE_TEXT](ТРЕБУЕТСЯ ДОРАБОТАТЬ)[COLOR_REVERT]</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_HINT_29</Tag>
 		<English>I knew that they were a people who could be more easily freed and converted to our holy faith by love than by force, gave to some of them red caps and glass beads to put round their necks and many other things of little value, which gave them great pleasure.[NEWLINE]--- Christopher Columbus, about Arawak Indians (October 14, 1492)</English>
 		<French>Il existe quatre moyens d'obtenir des experts et des maîtres. Vous pouvez en récupérer dans un port d'Europe puis le faire venir dans le Nouveau monde comme immigrant, en recruter depuis l'écran de l'Europe (mais leur prix est élevé), en former au sein de vos écoles, lycées et universités, ou demander aux indigènes d'en former.</French>
@@ -684,12 +693,30 @@ Viel Spass![NEWLINE]
 		<Spanish>Podéis llevar a vuestras colonias expertos y maestros de cuatro maneras: recogiéndolos en los muelles de Europa y trayéndolos como inmigrantes, reclutándolos en la pantalla de Europa (a un coste considerable), formándolos mediante una Escuela, Colegio universitario o Universidad o entrenándolos con los Nativos.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_HINT_30</Tag>
+		<English>The diagonal lines on the edge of the map represent the passage to Europe. By sailing a ship into this area and giving it the "Sail to Europe" order, your ship will leave the game map and appear on the Europe screen several turns later. If you give a ship the "Sail to Europe" order when it is not resting on a Europe tile, that ship will automatically head for the closest Europe tile.</English>
+		<French>Les diagonales situées aux bords des cartes représentent les voies d'accès à l'Europe. En y déplaçant un navire et en lui donnant l'ordre Naviguer vers l'Europe, il quittera la carte du jeu et apparaîtra, après plusieurs tours, sur l'écran de l'Europe. </French>
+		<German>Die diagonalen Linien am Rand der Karte stehen für die Überfahrt nach Europa. Wenn Sie ein Schiff in diesen Bereich manövrieren und ihm die Anweisung "Nach Europa segeln" geben, verlässt Ihr Schiff die Spielkarte und taucht einige Runden später auf dem Europa-Bildschirm auf. Wenn Sie einem Schiff, das nicht auf einem europäischen Geländefeld liegt, die Anweisung "Nach Europa segeln" geben, fährt dieses Schiff automatisch zum nächstgelegenen europäischen Geländefeld.</German>
+		<Italian>Le linee diagonali al limite della mappa rappresentano le rotte per l'Europa. Facendo navigare una nave in questa zona e dandole l'ordine "Fai vela per l'Europa", la tua nave scomparirà dalla mappa di gioco e apparirà nella schermata dell'Europa diversi turni più tardi. Se impartisci a una nave l'ordine "Fai vela per l'Europa" quando non è su una casella delle rotte verso l'Europa, la nave si dirigerà automaticamente alla più vicina.</Italian>
+		<Spanish>Las líneas diagonales del borde del mapa representan el tránsito a Europa. Al enviar un barco a esa zona y darle la orden de "Navegar a Europa", la nave saldrá del mapa de juego y aparecerá en la pantalla de Europa varios turnos más tarde. Si dais a un barco la orden "Navegar a Europa" cuando éste no se encuentre en una casilla europea, el barco se dirigirá automáticamente a la casilla de Europa más cercana.</Spanish>
+		<Russian>Диагональные линии по краям карты обозначают проход в Европу. Направив корабль в эту область и отдав ему приказ «Плыть в Европу», ваш корабль покинет игровую карту и появится на экране Европы через несколько ходов. Если вы дадите кораблю приказ «Плыть в Европу», когда он не находится на тайле Европы, этот корабль автоматически направится к ближайшему тайлу Европы. [COLOR_NEGATIVE_TEXT](ТРЕБУЕТСЯ ДОРАБОТАТЬ)[COLOR_REVERT]</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_HINT_31</Tag>
 		<English>Armbands off, soldiers. Hail to the independence, to freedom and to the separation of Brazil. Independence or death![NEWLINE]--- Dom Pedro, 1822</English>
 		<French>Chaque citoyen de votre colonie a besoin de deux unités de nourriture par tour pour subsister. Si vous ne disposez pas de suffisamment de nourriture, vos citoyens quitteront la colonie, et ce jusqu'à ce qu'il reste assez de nourriture pour la population.</French>
 		<German>Sollten Eure Hoheiten den Befehl erteilen, alle Inselbewohner nach Kastilien zu schaffen oder aber sie auf ihrer eigenen Insel als Sklaven zu halten, so wäre dieser Befehl leicht durchführbar.[NEWLINE]--- Christoph Kolumbus, über die Arawak-Indianer auf den Bahamas</German>
 		<Italian>Ogni cittadino in un insediamento ha bisogno di due unità di cibo a turno. Se non è disponibile cibo a sufficienza, i cittadini usciranno sulla mappa principale di gioco fino a quando non ci sarà abbastanza cibo per la popolazione che rimane.</Italian>
 		<Spanish>Cada ciudadano del asentamiento precisa 2 Alimentos por turno. Si no tenéis bastantes Alimentos disponibles, los ciudadanos saldrán al mapa principal del juego hasta que haya Alimentos suficientes para mantener a la población.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_32</Tag>
+		<English>You can load or unload your transport units from the Settlement Screen. In the "Transport" section of the Settlement Screen, all the transport units currently located in the same tile as your settlement are displayed. From here, you can click and drag any goods your transports are carrying onto the Goods display to add them to the settlement's stores. You can also click and drag any of the goods from the settlement onto the transport.</English>
+		<French>Vous pouvez charger ou décharger vos unités de transport depuis l'écran de colonie. Dans la section "Transport", toutes les unités de transport actuellement présentes dans votre colonie sont affichées. Vous pouvez ensuite faire glisser et déposer n'importe quelle marchandise transportée par vos unités dans la fenêtre des marchandises afin de l'ajouter aux réserves de votre colonie. Vous pouvez également faire glisser et déposer n'importe quelle marchandise depuis votre colonie jusqu'à l'une de vos unités de transport.</French>
+		<German>Auf dem Siedlungsbildschirm können Sie Ihre Transporteinheiten be- oder entladen. Im Transport-Bereich werden alle Transporteinheiten angezeigt, die sich aktuell auf demselben Geländefeld wie Ihre Siedlung befinden. Hier können Sie alle Güter, die sich auf Transportmitteln befinden, per Mausklick in die Güteranzeige ziehen und sie zu den Vorräten Ihrer Siedlung hinzufügen. Sie können auch jedes Gut aus der Siedlung auf das Transportmittel ziehen.</German>
+		<Italian>Puoi caricare e scaricare le unità di trasporto dalla schermata dell'insediamento. Nella sezione "trasporti" della schermata dell'insediamento vengono visualizzate tutte le unità di trasporto attualmente nella stessa casella del tuo insediamento. Da qui puoi cliccare e trascinare i beni sui tuoi trasporti nella finestra dei beni, per aggiungerli alle riserve dell'insediamento. Puoi anche cliccare su qualsiasi bene e trascinarlo dall'insediamento su un trasporto.</Italian>
+		<Spanish>Podéis cargar y descargar las unidades de transporte desde la pantalla del asentamiento. En la sección "Transporte" de la pantalla del asentamiento, se muestran todas las unidades de transporte ubicadas en la misma casilla que vuestro asentamiento. Ahí, podéis hacer clic y arrastrar cualquier mercancía que estén llevando vuestros transportes al visor de mercancías para añadirla a los almacenes del asentamiento. También podéis hacer clic y arrastrar cualquiera de las mercancías del asentamiento al transporte.</Spanish>
+		<Russian>Вы можете загрузить или разгрузить свои транспортные единицы на экране поселений. В разделе «Транспорт» на экране «Поселение» отображаются все транспортные единицы, находящиеся в данный момент на той же плитке, что и ваше поселение. Отсюда вы можете щелкнуть и перетащить любые товары, перевозимые вашим транспортом, на вкладку «Товары», чтобы добавить их в магазины поселения. Также вы можете нажать и перетащить на транспорт любой из товаров из поселения. [COLOR_NEGATIVE_TEXT](ТРЕБУЕТСЯ ДОРАБОТАТЬ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_33</Tag>
@@ -785,6 +812,15 @@ Viel Spass![NEWLINE]
 		<Russian>Галеоны — одни из лучших транспортных кораблей и единственные корабли, способные доставлять сокровища в Европу. Однако они не могут перевозить другие юниты. Как только у вас будет достаточно сокровищ, король может предложить вам специальную цену за галеон для их перевозки, но он подождет, пока у вас не будет достаточно золота.</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_HINT_44</Tag>
+		<English>The Drydock and the Shipyard allow you to build ships in your settlement. The Drydock allows the Caravel, Merchantman, Galleon, and Privateer to be constructed, while the Shipyard allows for the Frigate and Ship of the Line to be built. </English>
+		<French>Les cales sèches et les chantiers navals vous permettent de fabriquer des navires. Les cales sèches donnent accès à la caravelle, au navire marchand, au galion et au navire corsaire, tandis que le chantier naval vous permet d'ordonner la construction de frégates et de galions de guerre.</French>
+		<German>Das Trockendock und die Schiffswerft ermöglichen Ihnen den Bau von Schiffen in Ihrer Siedlung. Das Trockendock ermöglicht den Bau von Karavelle, Kauffahrer, Galeone und Freibeuter, während die Schiffswerft den Bau von Fregatte und Linienschiff ermöglicht.</German>
+		<Italian>Il bacino di carenaggio e il cantiere navale ti permettono di costruire navi nell'insediamento. Con il bacino di carenaggio puoi costruire caravelle, mercantili, galeoni e navi corsare, mentre il cantiere navale permette la costruzione di fregate e navi da prima linea. </Italian>
+		<Spanish>El Dique seco y el Astillero os permiten construir barcos en vuestro asentamiento. El Dique seco permite construir la Carabela, el Mercante, el Galeón y el Corsario; mientras que el Astillero da acceso a la Fragata y a la Corbeta. </Spanish>
+		<Russian>Сухой док и Верфь позволяют вам строить корабли в вашем поселении. Сухой док позволяет построить каравеллу, торговца, галеон и капера, а верфь позволяет построить фрегат и линейный корабль. [COLOR_NEGATIVE_TEXT](ТРЕБУЕТСЯ ДОРАБОТАТЬ)[COLOR_REVERT]</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_HINT_45</Tag>
 		<English>To load goods onto a transport, you must move the transport unit into the same tile as the goods and press the "Load Goods" icon. You can also do it from the "Transport" section of the Settlement Screen. You can unload goods one of two ways - by selecting the good you would like to unload from the unit stack and pressing "Unload" from the orders display or by activating the transport unit and clicking "Unload All." You can only unload goods in settlements (or in Europe).</English>
 		<French>Pour charger des marchandises dans une unité de transport, vous devez déplacer cette dernière sur la même case que les marchandises puis cliquer sur l'icône Charger des marchandises. Vous pouvez également le faire depuis l'espace Transport de l'écran de colonie.</French>
@@ -800,6 +836,15 @@ Viel Spass![NEWLINE]
 		<Italian>Puoi scaricare i beni in due modi: selezionando il bene che vuoi scaricare dal gruppo e scegliendo "Scarica" nella finestra degli ordini, oppure attivando l'unità di trasporto e cliccando su "Scarica tutto". Puoi scaricare i beni solo negli insediamenti (o in Europa).</Italian>
 		<Spanish>Hay dos maneras de descargar mercancías: seleccionando la mercancía que os gustaría descargar y pulsando "Desembarcar" en el visor de órdenes; o activando la unidad de transporte y haciendo clic en "Desembarcar todas". Solo podéis descargar mercancías en los asentamientos (o en Europa).</Spanish>
 		<Russian>Первопроходцам и разведчикам нужны провизия, а также инструменты и лошади. Чтобы снизить затраты, дом пекаря и кузница должны быть среди ваших первых зданий.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HINT_47</Tag>
+		<English>To found a colony, you need a unit with the [COLOR_HIGHLIGHT_TEXT]Settler[COLOR_REVERT] profession. You can assign this profession to almost any unit in the docks of Europe (the equipment will need to be purchased for gold from your treasury) or in one of your settlements in the New World (provided that the required equipment is in the storage).</English>
+		<!--<French>N'importe quel colon peut fonder une nouvelle colonie. Il vous suffit de déplacer une unité à l'endroit de votre choix et de cliquer sur le bouton "Fonder colonie".</French>-->
+		<!--<German>Jede Kolonisteneinheit kann eine neue Siedlung errichten. Sie müssen dazu lediglich eine Einheit an den gewünschten Ort bewegen und auf "Siedlung gründen" klicken.</German>-->
+		<!--<Italian>Qualsiasi colono può costruire un nuovo insediamento. Tutto quello che devi fare è spostarlo nella posizione desiderata e premere il pulsante "Costruisci insediamento".</Italian>-->
+		<!--<Spanish>Cualquier unidad de Colonos puede construir un nuevo asentamiento. Todo lo que tenéis que hacer es trasladar una unidad al lugar deseado y pulsar el botón "Fundar asentamiento".</Spanish>-->
+		<Russian>Для основания колонии вам нужен юнит, владеющий профессией [COLOR_HIGHLIGHT_TEXT]поселенец[COLOR_REVERT]. Назначить эту профессию можно почти любому юниту в доках Европы (нужно при этом оборудование будет куплено за золото из вашей казны) или в одном из ваших поселений в Новом Свете (при условии, что требуемое оборудование есть на складе).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_48</Tag>

@@ -232,6 +232,15 @@
         <Spanish>[COLOR_WARNING_TEXT]Ha de estar dentro de las fronteras de nuestra cultura.[COLOR_REVERT]</Spanish>
         <Russian>[COLOR_WARNING_TEXT]Должен быть в пределах наших культурных границ.[COLOR_REVERT]</Russian>
     </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ACTION_NEEDS_OUT_RIVAL_CULTURE_BORDER</Tag>
+		<English>[COLOR_WARNING_TEXT]Must be outside rival Cultural Borders.[COLOR_REVERT]</English>
+		<French>[COLOR_WARNING_TEXT]Doit être en dehors des frontières culturelles adverses.[COLOR_REVERT]</French>
+		<German>[COLOR_WARNING_TEXT]Muss sich außerhalb der Kulturgrenzen des Gegners befinden.[COLOR_REVERT]</German>
+		<Italian>[COLOR_WARNING_TEXT]Bisogna essere all'esterno dei confini culturali avversari.[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_WARNING_TEXT]Ha de estar fuera de las fronteras de la cultura rival.[COLOR_REVERT]</Spanish>
+		<Russian>[COLOR_WARNING_TEXT]Должно быть за пределами конкурирующих культурных границ.[COLOR_REVERT]</Russian>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_ACTION_CHANGE_PRODUCTION</Tag>
         <English>[ICON_BULLET]%D1_Change %F3 in %s2_CityName</English>
@@ -11255,6 +11264,14 @@
         <Italian>(Difesa da caratteristiche : %D1%%)</Italian>
         <Spanish>(Defender accidente : %D1%%)</Spanish>
     </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMBAT_MESSAGE_TERRAIN_ATTACK</Tag>
+		<English>(Terrain Attack: %D1%%)</English>
+		<French>(Attaque terrain : %D1%%)</French>
+		<German>(Geländeangriff: %D1%%)</German>
+		<Italian>(Attacco da terreno: %D1%%)</Italian>
+		<Spanish>(Ataque a terreno: %D1%%)</Spanish>
+	</TEXT>
     <TEXT>
         <Tag>TXT_KEY_COMBAT_MESSAGE_TERRAIN</Tag>
         <English>(Terrain defense : %d1%%)</English>

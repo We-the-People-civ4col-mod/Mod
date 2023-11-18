@@ -4341,6 +4341,51 @@
         <Spanish>[NUM1:El:La:Los:Las] [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] son una amenaza para todos nosotros. Uníos a nosotros para borrarlos del mapa.</Spanish>
         <Russian>[COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] угрожают спокойствию во всем мире. Мы должны остановить их, пока не случилось что-то плохое. Ты с нами, [CT_NAME]?</Russian>
     </TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_JOIN_WAR_2</Tag>
+		<English>Care to assist us in destroying the evil %s1:2?</English>
+		<French>Acceptez-vous de nous aider à écraser les ignobles %s1 ?</French>
+		<German>Habt Ihr Interesse, uns bei der Vernichtung des %s1:2 Volkes behilflich zu sein?</German>
+		<Italian>Vuoi darci una mano a distruggere i malvagi %s1?</Italian>
+		<Spanish>¿Os importaría ayudarnos a destruir [NUM1:al malvado:a la malvada:a los malvados:a las malvadas] %s1:3?</Spanish>
+		<Russian>Не желаете помочь нам уничтожить злого %s1:2?</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_JOIN_WAR_3</Tag>
+		<English>Greetings, [CT_NAME]. The annoying %s1:2 must be destroyed, don't you agree?</English>
+		<French>Salutations, [CT_NAME]. Ne pensez-vous pas que ces maudits %s1 doivent être exterminés ?</French>
+		<German>Seid gegrüßt, [CT_NAME]. Das lästige %s1:3 Volk muss vernichtet werden, findet Ihr nicht auch?</German>
+		<Italian>Salve, [CT_NAME]. I fastidiosi %s1 devono essere distrutti, non sei d'accordo?</Italian>
+		<Spanish>Saludos, [CT_NAME]. [NUM1:El molesto:La molesta:Los molestos:Las molestas] %s1:3 [NUM1:debe ser destruido:debe ser destruida: deben ser destruidos:deben ser destruidas], ¿no os parece?</Spanish>
+		<Russian>Приветствую, [CT_NAME]. Вам не кажется, что этих проклятых %s1 следует истребить?</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_JOIN_WAR_4</Tag>
+		<English>[CT_NAME]: we urgently request mighty [CT_CIV_SHORT]'s assistance in our crusade against the %s1:2!</English>
+		<French>[CT_NAME], nous demandons d'urgence le soutien des [CT_CIV_SHORT] dans notre croisade contre les %s1 !</French>
+		<German>[CT_NAME]: Wir bitten das mächtige Volk von [CT_CIV_SHORT] dringend um Hilfe bei unserem Kreuzzug gegen das %s1:3 Volk!</German>
+		<Italian>[CT_NAME], chiediamo urgentemente l'aiuto del[CT_CIV_SHORT:2] per la nostra crociata contro i %s1!</Italian>
+		<Spanish>[CT_NAME], solicitamos urgentemente la ayuda de la poderosa nación de [CT_CIV_SHORT] en nuestra cruzada contra [NUM1:el:la:los:las] %s1:3.</Spanish>
+		<Russian>[CT_NAME], мы просим могущественных [CT_CIV_SHORT] помочь в нашем крестовом походе против %s1:2!</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_JOIN_WAR_5</Tag>
+		<English>The treacherous %s1:2 must be punished for their offences against civilization, [CT_NAME]! I assume we can count on your assistance?</English>
+		<French>Les perfides %s1 doivent être punis pour leurs offenses envers la civilisation, [CT_NAME] ! J'imagine que nous pouvons compter sur votre aide ?</French>
+		<German>Das hinterhältige %s1:3 Volk verdient es, für seine Feinseligkeiten gegen andere Zivilisationen bestraft zu werden, [CT_NAME]! Können wir mit Eurer Unterstützung rechnen?</German>
+		<Italian>I traditori %s1 devono essere puniti per le loro offese nei confronti delle altre civiltà, [CT_NAME]! Possiamo contare sul tuo aiuto?</Italian>
+		<Spanish>¡Hemos de castigar [NUM1:al traicionero:a la traicionera:a los traicioneros:a las traicioneras] %s1:3 por sus ofensas contra la civilización, [CT_NAME]! Suponemos que podemos contar con vuestra ayuda, ¿no?</Spanish>
+		<Russian>Коварный %s1:2 должен понести наказание за свои преступления против цивилизации, [CT_NAME]! Я полагаю, мы можем рассчитывать на вашу помощь?</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>AI_DIPLO_JOIN_WAR_6</Tag>
+		<English>The nasty %s1:2 are plotting against us all, [CT_NAME]! Let us destroy them together!</English>
+		<French>Les infâmes %s1 complotent contre nous tous, [CT_NAME] ! Détruisons-les ensemble !</French>
+		<German>Das unverschämte %s1:3 Volk hat sich gegen uns alle verschworen, [CT_NAME]! Lasst es uns gemeinsam vernichten!</German>
+		<Italian>I malvagi %s1 stanno complottando contro noi tutti, [CT_NAME]! Distruggiamoli assieme!</Italian>
+		<Spanish>¡[NUM1:El repugnante:La repugnante:Los repugnantes:Las repugnantes] %s1:3 están conspirando contra todos nosotros, [CT_NAME]! ¡Destruyámoslos juntos!</Spanish>
+		<Russian>Мерзкие %s1:2 замышляют заговор против всех нас, [CT_NAME]! Уничтожим их вместе!</Russian>
+	</TEXT>
     <TEXT>
         <Tag>AI_DIPLO_JOIN_WAR_KING_VS_COLONY</Tag>
         <English>Those disloyal, ungrateful [COLOR_HIGHLIGHT_TEXT]%s1:3[COLOR_REVERT] colonies threaten the God-given order of this world. By declaring their independence they have turned against Us, their rightful Monarch. They insult, beat and rob decent subjects still loyal to the Crown. They attack and murder Royal soldiers sent to protect them. [CT_NAME], will you stand alongside us to suppress this insubordination? Help Us bring peace and stability back to the colonies.</English>

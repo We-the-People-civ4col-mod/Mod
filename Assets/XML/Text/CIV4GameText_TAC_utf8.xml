@@ -846,7 +846,7 @@
         <German>Zufallsgenerierte Karte mit großen zusammenhängenden Klimazonen und Gebirgszügen</German>
         <Russian>Случайная карта, которая имитирует земную тектонику плит, геострофические и муссонные ветры и осадки.</Russian>
     </TEXT>
-    <TEXT>
+    <!--<TEXT>
         <Tag>TXT_KEY_GAMESPEED_MARATHON_Old</Tag>
         <English>Marathon, 2 Phasen</English>
         <French>
@@ -941,7 +941,7 @@
             <Gender>Female</Gender>
             <Plural>0</Plural>
         </Spanish>
-    </TEXT>
+    </TEXT>-->
     <TEXT>
         <Tag>AI_DIPLO_OFFER_CITY_2</Tag>
         <English>We would like to offer you the lands of this settlement as a sign of our respect.</English>

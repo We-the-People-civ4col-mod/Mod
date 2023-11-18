@@ -10094,6 +10094,11 @@
                     <DiplomacyPowers/>
                     <DiplomacyText>
                         <Text>AI_DIPLO_JOIN_WAR_1</Text>
+                        <Text>AI_DIPLO_JOIN_WAR_2</Text>
+                        <Text>AI_DIPLO_JOIN_WAR_3</Text>
+                        <Text>AI_DIPLO_JOIN_WAR_4</Text>
+                        <Text>AI_DIPLO_JOIN_WAR_5</Text>
+                        <Text>AI_DIPLO_JOIN_WAR_6</Text>
                     </DiplomacyText>
                 </Response>
             </Responses>

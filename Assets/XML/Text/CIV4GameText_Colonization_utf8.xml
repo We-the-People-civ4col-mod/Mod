@@ -751,7 +751,15 @@
         <Italian>Acquista</Italian>
         <Spanish>Comprar</Spanish>
     </TEXT>
-    <TEXT>
+	<!--<TEXT> should we use this tag?
+		<Tag>TXT_KEY_CHIEF_GOODY_GOLD</Tag>
+		<English>Please give these beads (worth %d1_value[ICON_GOLD]) to your chief as a token of our friendship.</English>
+		<French>Veuillez donner ces perles (d'une valeur de %d1_value[ICON_GOLD]) à votre chef en gage d'amitié.</French>
+		<German>Bitte gebt Eurem Häuptling als Zeichen unserer Freundschaft diese Perlen (im Wert von %d1_value[ICON_GOLD]).</German>
+		<Italian>Dai queste perline (del valore di %d1_value[ICON_GOLD]) al tuo capo come segno della nostra amicizia.</Italian>
+		<Spanish>Por favor, dad estos abalorios (por valor de %d1_value [ICON_GOLD]) a vuestro jefe como prueba de nuestra amistad.</Spanish>
+	</TEXT>-->
+	<TEXT>
         <Tag>TXT_KEY_CHIEF_GOODY_SOME_GOLD</Tag>
         <English>Take this talisman, it will protect you on your journeys. (Rock crystal worth %d1_value[ICON_GOLD] presented)</English>
         <French>Veuillez donner ces perles (d'une valeur de %d1_value[ICON_GOLD]) à votre chef en gage d'amitié.</French>

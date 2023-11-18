@@ -288,12 +288,21 @@
         <HintInfo>
             <Description>TXT_KEY_HINT_27</Description>
         </HintInfo>
+		<HintInfo>
+			<Description>TXT_KEY_HINT_28</Description>
+		</HintInfo>
         <HintInfo>
             <Description>TXT_KEY_HINT_29</Description>
         </HintInfo>
+		<HintInfo>
+			<Description>TXT_KEY_HINT_30</Description>
+		</HintInfo>
         <HintInfo>
             <Description>TXT_KEY_HINT_31</Description>
         </HintInfo>
+		<HintInfo>
+			<Description>TXT_KEY_HINT_32</Description>
+		</HintInfo>
         <HintInfo>
             <Description>TXT_KEY_HINT_33</Description>
         </HintInfo>
@@ -324,12 +333,18 @@
         <HintInfo>
             <Description>TXT_KEY_HINT_43</Description>
         </HintInfo>
+		<HintInfo>
+			<Description>TXT_KEY_HINT_44</Description>
+		</HintInfo>
         <HintInfo>
             <Description>TXT_KEY_HINT_45</Description>
         </HintInfo>
         <HintInfo>
             <Description>TXT_KEY_HINT_46</Description>
         </HintInfo>
+		<HintInfo>
+			<Description>TXT_KEY_HINT_47</Description>
+		</HintInfo>
         <HintInfo>
             <Description>TXT_KEY_HINT_48</Description>
         </HintInfo>
