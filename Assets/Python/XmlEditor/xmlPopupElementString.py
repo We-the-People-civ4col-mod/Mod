@@ -58,7 +58,7 @@ class xmlPopupElementString:
 			newtext = screen.getEditBoxString("stringInputBox")
 			if ((not self.element.isAllocated() and len(newtext) > 0) or newtext != self.element.getValue()):
 				self.element.setValue(str(newtext))
-				self.editor.redrawColumns()
+				self.editor.redrawColumns(self.element)
 			self.editor.closePopupWindow()
 			return True
 		elif input.isKey(InputTypes.KB_LEFT):

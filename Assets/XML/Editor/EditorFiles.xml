@@ -238,7 +238,7 @@
     <File>
         <Dir>CivEffects</Dir>
         <Name>CIV4CivEffectsInfos</Name>
-        <Tag>Type</Tag>
+        <Tag>CivEffectInfo</Tag>
         <Root>Civ4CivEffectInfos</Root>
     </File>
     <File>
