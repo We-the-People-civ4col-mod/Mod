@@ -23,7 +23,7 @@ gc = CyGlobalContext()
 # don't make this an event - Moose
 def init():
 	# for PythonExtensions Help File
-	PythonHelp = 1		# doesn't work on systems which haven't installed Python
+	PythonHelp = False		# doesn't work on systems which haven't installed Python
 
 	# dump Civ python module directory
 	if PythonHelp:
