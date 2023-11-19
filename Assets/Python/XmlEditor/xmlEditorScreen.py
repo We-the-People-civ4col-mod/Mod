@@ -693,7 +693,7 @@ class xmlEditorScreen:
 		self.selectedElement = element
 		self.currentScreen = self.popupEditor
 		
-		nScreenWidth = 500
+		nScreenWidth = 600
 		nScreenHeight = 500
 		
 		left = (screen.getXResolution()/2) - (nScreenWidth/2)
@@ -727,6 +727,7 @@ class xmlEditorScreen:
 			
 			self.fileSelectorX = left + 220
 			self.fileSelectorY = top + top_offset
+			self.fileSelectorWidth = nScreenHeight - 130
 
 			self.popupDrawFileSelector(typeID)
 			
@@ -811,7 +812,7 @@ class xmlEditorScreen:
 		dir = screen.getPullDownData("xmlEditorTypeDirSelector", screen.getSelectedPullDownID("xmlEditorTypeDirSelector"))
 		dir = self.XML.getXMLDir(dir)
 		
-		screen.addDropDownBoxGFC("xmlEditorTypeSelector", self.fileSelectorX, self.fileSelectorY, 250, WidgetTypes.WIDGET_GENERAL, -1, -1, FontTypes.TITLE_FONT)
+		screen.addDropDownBoxGFC("xmlEditorTypeSelector", self.fileSelectorX, self.fileSelectorY, self.fileSelectorWidth, WidgetTypes.WIDGET_GENERAL, -1, -1, FontTypes.TITLE_FONT)
 		for i in range(self.XML.getNumFiles()):
 			if (self.XML.getNumTypes(i) > 0): # skip files without Type as they will never be used
 				if (self.XML.getFileDir(i) == dir):

@@ -11,7 +11,7 @@ class xmlPopupElementType:
 		self.element = element
 		self.iColumn = iColumn
 		
-		self.nScreenWidth  = 400
+		self.nScreenWidth  = 600
 		self.nScreenHeight = 300
 
 	def draw(self):
@@ -107,10 +107,10 @@ class xmlPopupElementType:
 		prefix = self.editor.XML.getFilePrefix(typeID)
 		iPrefixOffset = 0
 		if prefix != None:
-			iPrefixOffset = 100
-			screen.setTextAt("prefix", "xmlEditorSmallBG", u"<font=3>" + prefix + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, 120,  95, -0.1, FontTypes.MENU_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			iPrefixOffset = 200
+			screen.setTextAt("prefix", "xmlEditorSmallBG", u"<font=3>" + prefix + u"</font>", CvUtil.FONT_RIGHT_JUSTIFY, iPrefixOffset,  95, -0.1, FontTypes.MENU_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
-		screen.addDropDownBoxGFC("xmlEditorTypeSelector", left + 20 + iPrefixOffset, top + 80, 360 - iPrefixOffset, WidgetTypes.WIDGET_GENERAL, -1, -1, FontTypes.TITLE_FONT)
+		screen.addDropDownBoxGFC("xmlEditorTypeSelector", left + iPrefixOffset, top + 80, self.nScreenWidth - iPrefixOffset - 10, WidgetTypes.WIDGET_GENERAL, -1, -1, FontTypes.TITLE_FONT)
 		if self.element.allowsTypeNone():
 			screen.addPullDownString("xmlEditorTypeSelector", "NONE", -1, -1, "NONE" == selectedType)
 
