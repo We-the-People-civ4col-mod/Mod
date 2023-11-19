@@ -215,6 +215,12 @@ class columnContainer:
 						title = "<font=3>" + child.getValue() + "</font>"
 						screen.setTextAt(panel + "value", panel, title, CvUtil.FONT_LEFT_JUSTIFY, iXOffset, 30, -0.1, FontTypes.SMALL_FONT, self.editor.widgetDrag, self.ID, counter)
 					size = 0
+				elif strClass == "Float":
+					title = "<font=3>" + child.getName() + "</font>"
+					screen.setTextAt(panel + "name", panel, title, CvUtil.FONT_LEFT_JUSTIFY, 7 + iBackGroundOffset, 10, -0.1, FontTypes.SMALL_FONT, self.editor.widgetDrag, self.ID, counter)
+					if (child.isAllocated() and child.getValue() != None):
+						title = "<font=3>" + child.getValue() + "</font>"
+						screen.setTextAt(panel + "value", panel, title, CvUtil.FONT_LEFT_JUSTIFY, 7 + iBackGroundOffset, 30, -0.1, FontTypes.SMALL_FONT, self.editor.widgetDrag, self.ID, counter)
 
 			elif child.isText():
 				title = "<font=3>" + child.getName() + "</font>"

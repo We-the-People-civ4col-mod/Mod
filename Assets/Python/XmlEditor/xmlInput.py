@@ -226,11 +226,14 @@ class xmlInput:
 				screen.setEditBoxString(editBoxName, string)
 				return True
 		return False
-		
+
+	def getKeyFromKeyboard(self):
+		return self.editor.XML.getKey(self.inputClass.getData(), self.inputClass.isShiftKeyDown(), self.inputClass.isCtrlKeyDown(), self.inputClass.isAltKeyDown())
+
 	# read keycode and append/remove from a string
 	def readKeyboard(self, string):
 		# read the string associated with the key in question 
-		key = self.editor.XML.getWKey(self.inputClass.getData(), self.inputClass.isShiftKeyDown(), self.inputClass.isCtrlKeyDown(), self.inputClass.isAltKeyDown())
+		key = self.getKeyFromKeyboard()
 
 		if key == None:
 			return string

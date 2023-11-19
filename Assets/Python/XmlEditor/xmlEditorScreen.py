@@ -6,6 +6,7 @@ import CvEventManager
 import xmlColumnContainer
 import xmlInput
 import xmlPopupElementDelete
+import xmlPopupElementFloat
 import xmlPopupElementString
 import xmlPopupElementType
 
@@ -60,9 +61,10 @@ class xmlEditorScreen:
 		self.string_type_remote_button = 7
 		self.string_type_prefix_button = 8
 		self.string_button_button = 9
-		self.int_gamefont_button = 10
-		self.dir_art_button = 11
-		self.file_specific_button = 50
+		self.string_float_button = 10
+		self.int_gamefont_button = 50
+		self.dir_art_button = 51
+		self.file_specific_button = 80
 		self.txt_key_select = 100 # also use the next 3 numbers
 		self.menu_button = -100
 		self.error_button = -101
@@ -376,6 +378,8 @@ class xmlEditorScreen:
 				self.openPopupWindow("ElementType", element, iColumn)
 			elif strClass == "TxtKey":
 				self.popupTxtKeyCreate(element)
+			elif strClass == "Float":
+				self.openPopupWindow("ElementFloat", element, iColumn)
 			else:
 				self.openPopupWindow("ElementString", element)
 		
@@ -757,6 +761,13 @@ class xmlEditorScreen:
 				screen.setState("xmlEditorTypeCheckBox3", True)
 			
 			top_offset += 40
+
+			screen.addCheckBoxGFC("xmlEditorTypeCheckBox4", "", "Art/Interface/Buttons/Button_SELECT.dds", left + 25, top + top_offset, 30, 30, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.string_float_button, ButtonStyles.BUTTON_STYLE_SQUARE)
+			screen.setTextAt("float_text", "xmlEditorSmallBG", u"<font=4u>" + "Float" + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, 70, top_offset + 15, -0.1, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_GENERAL, self.specialColumn, -1)
+			if (strClass != None and strClass == "Float"):
+				screen.setState("xmlEditorTypeCheckBox4", True)
+
+			top_offset += 40
 			
 		if (element.isInt()):
 			screen.addCheckBoxGFC("xmlEditorTypeCheckBox", "", "Art/Interface/Buttons/Button_SELECT.dds", left + 25, top + top_offset, 30, 30, WidgetTypes.WIDGET_GENERAL, self.specialColumn, self.int_gamefont_button, ButtonStyles.BUTTON_STYLE_SQUARE)
@@ -844,15 +855,18 @@ class xmlEditorScreen:
 			
 			if (element.isString()):
 				state = screen.getCheckBoxState("xmlEditorTypeCheckBox")
-				if (state):
+				if state:
 					newClass = "Type"
 					newID = screen.getPullDownData("xmlEditorTypeSelector", screen.getSelectedPullDownID("xmlEditorTypeSelector"))
 					bAllowTypeNone = screen.getCheckBoxState("xmlEditorTypeCheckBoxSub1")
 					bRemoteCreate = screen.getCheckBoxState("xmlEditorTypeCheckBoxSub11")
 					bRemoteCreatePrefix = screen.getCheckBoxState("xmlEditorTypeCheckBoxSub12")	
 				state = screen.getCheckBoxState("xmlEditorTypeCheckBox3")
-				if (state):
+				if state:
 					newClass = "Button"
+				state = screen.getCheckBoxState("xmlEditorTypeCheckBox4")
+				if state:
+					newClass = "Float"
 			
 			if (element.isInt()):
 				state = screen.getCheckBoxState("xmlEditorTypeCheckBox")
@@ -909,11 +923,11 @@ class xmlEditorScreen:
 			line = self.string_type_button
 			screen.setState("xmlEditorTypeCheckBox", True)
 		
-		if (line != self.string_type_button and line != self.int_gamefont_button and line != self.dir_art_button):
+		if line != self.string_type_button and line != self.int_gamefont_button and line != self.dir_art_button:
 			screen.setState("xmlEditorTypeCheckBox", False)
-		if (line != self.string_button_button):
+		if line != self.string_button_button:
 			screen.setState("xmlEditorTypeCheckBox3", False)
-		if (line != 4):
+		if line != self.string_float_button:
 			screen.setState("xmlEditorTypeCheckBox4", False)
 				
 	def popupHelpCreate(self):
@@ -1125,6 +1139,8 @@ class xmlEditorScreen:
 			self.currentPopup = xmlPopupGameFont.xmlPopupGameFont(self)
 		elif window == "ElementDelete":
 			self.currentPopup = xmlPopupElementDelete.xmlPopupElementDelete(self, arg1, arg2)
+		elif window == "ElementFloat":
+			self.currentPopup = xmlPopupElementFloat.xmlPopupElementFloat(self, arg1, arg2)
 		elif window == "ElementString":
 			self.currentPopup = xmlPopupElementString.xmlPopupElementString(self, arg1)
 		elif window == "ElementType":

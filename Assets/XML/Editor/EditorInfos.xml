@@ -1052,14 +1052,14 @@
     <Type/>
     <Button class="Button"/>
     <FullLengthIcon class="Button"/>
-    <fScale/>
-    <fInterfaceScale/>
+    <fScale class="Float"/>
+    <fInterfaceScale class="Float"/>
     <NIF/>
     <KFM/>
     <iDamageStates/>
     <TrailDefinition/>
-    <fBattleDistance/>
-    <fRangedDeathTime/>
+    <fBattleDistance class="Float"/>
+    <fRangedDeathTime class="Float"/>
     <bSmoothMove/>
     <fAngleInterpRate/>
     <fBankRate/>
