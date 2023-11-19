@@ -5,456 +5,456 @@
 <!-- -->
 <!-- Effect Infos -->
 <Civ4EffectInfos xmlns="x-schema:CIV4MiscSchema.xml">
-    <EffectInfos>
-        <EffectInfo>
-            <Type>EFFECT_FOOTSTEP_ON</Type>
-            <Description>EFFECT_FOOTSTEP_ON</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Interface/Effects/FootStep_ON.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_PING</Type>
-            <Description>Ping</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Interface/Effects/EmpBlast.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_MALISPEAR</Type>
-            <Description>Mali Spear</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Units/Native_Nations/Inuit/Inuit_warrior/MaliSkirmisherSpear.nif</Path>
-            <bIsProjectile>1</bIsProjectile>
-            <fSpeed>500.0</fSpeed>
-            <fArcValue>0.0</fArcValue>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_SETTLERSMOKE</Type>
-            <Description>Dust Cloud</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/settler_smoke/SettlerSmoke.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_FOOTPRINT</Type>
-            <Description>Footprint</Description>
-            <fScale>0.85</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Shared/Footstep.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_PAWPRINT</Type>
-            <Description>Wild Animal Paw Print</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Shared/PawPrint.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_HORSEPRINT</Type>
-            <Description>Horse Hoof Print</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Shared/HorsePrint.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_FOOTPRINT_60</Type>
-            <Description>Footprint Medium</Description>
-            <fScale>0.65</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Shared/Footstep.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_FOOTPRINT_80</Type>
-            <Description>Footprint Medium</Description>
-            <fScale>0.75</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Shared/Footstep.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_HORSEARCHERARROW</Type>
-            <Description>Tomahawk Projectile</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/Tomahawk_Thrown/Tomahawk_Thrown.kfm</Path>
-            <bIsProjectile>1</bIsProjectile>
-            <fSpeed>350.0</fSpeed>
-            <fArcValue>0.0</fArcValue>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_TOMAHAWK_THROWN</Type>
-            <Description>Tomahawk Projectile</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/Tomahawk_Thrown/Tomahawk_Thrown.kfm</Path>
-            <bIsProjectile>1</bIsProjectile>
-            <fSpeed>350.0</fSpeed>
-            <fArcValue>4.0</fArcValue>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_MININGSPARK</Type>
-            <Description>Hot Sparks</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/work_mine/MiningSpark.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_DIGDIRT</Type>
-            <Description>Quick Puff of Dirt</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/work_dig/DigDirt.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_THROWDIRT</Type>
-            <Description>Quick Clump of Dirt</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/work_dig/ThrowDirt.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_FLINTSPARK</Type>
-            <Description>Creation Effect</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/weapon_flintspark/fx_weapon_flintspark.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_SHIP_CARAVEL_DEATH</Type>
-            <Description>Large death explosion for Caravel</Description>
-            <fScale>0.15</fScale>
-            <fUpdateRate>1.2</fUpdateRate>
-            <Path>Art/Effects/ShipExplosion/fx_ship_destruction_explosion.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_SHIP_GALLEON_DEATH</Type>
-            <Description>Large death explosion for Galleon</Description>
-            <fScale>0.3</fScale>
-            <fUpdateRate>1.1</fUpdateRate>
-            <Path>Art/Effects/ShipExplosion/fx_ship_destruction_explosion.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_SHIP_FRIGATE_DEATH</Type>
-            <Description>Large death explosion for Frigate</Description>
-            <fScale>0.26</fScale>
-            <fUpdateRate>1.2</fUpdateRate>
-            <Path>Art/Effects/ShipExplosion/fx_ship_destruction_explosion.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_EXPLOSION_DIRT</Type>
-            <Description>Explosion in Dirt</Description>
-            <fScale>0.6</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/explosion_dirt_01/fx_explosion_dirt_01.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_CARAVEL_HIT01</Type>
-            <Description>Small Gunpowdery hit explosion for Caravel Version 1</Description>
-            <fScale>0.5</fScale>
-            <fUpdateRate>1.5</fUpdateRate>
-            <Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_CARAVEL_HIT02</Type>
-            <Description>Small Gunpowdery hit explosion for Caravel Version 2</Description>
-            <fScale>0.55</fScale>
-            <fUpdateRate>1.4</fUpdateRate>
-            <Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_GALLEON_HIT01</Type>
-            <Description>Small Gunpowdery hit explosion for Galleon Version 1</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.4</fUpdateRate>
-            <Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_GALLEON_HIT02</Type>
-            <Description>Small Gunpowdery hit explosion for Galleon Version 2</Description>
-            <fScale>1.1</fScale>
-            <fUpdateRate>1.3</fUpdateRate>
-            <Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_FRIGATE_HIT01</Type>
-            <Description>Small Gunpowdery hit explosion for Frigate Version 1</Description>
-            <fScale>0.85</fScale>
-            <fUpdateRate>1.5</fUpdateRate>
-            <Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_FRIGATE_HIT02</Type>
-            <Description>Small Gunpowdery hit explosion for Frigate Version 2</Description>
-            <fScale>0.98</fScale>
-            <fUpdateRate>1.4</fUpdateRate>
-            <Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_CANNON_HIT_SMALL01</Type>
-            <Description>Small Gunpowdery hit explosion for Cannon Version 1</Description>
-            <fScale>0.35</fScale>
-            <fUpdateRate>1.6</fUpdateRate>
-            <Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_CANNON_HIT_SMALL02</Type>
-            <Description>Small Gunpowdery hit explosion for Cannon Version 2</Description>
-            <fScale>0.3</fScale>
-            <fUpdateRate>1.5</fUpdateRate>
-            <Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_CANNON_DEATH_EXPLOSION</Type>
-            <Description>Large death explosion for Cannon</Description>
-            <fScale>0.05</fScale>
-            <fUpdateRate>1.4</fUpdateRate>
-            <Path>Art/Effects/ShipExplosion/fx_ship_destruction_explosion.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_HORSEHOOFDUST</Type>
-            <Description>Hoof dust for a running horse</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/dust_impact_002/fx_dust_impact_002.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_RIFLEBLAST</Type>
-            <Description>Rifleblast for flintlock rifle</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/weapon_rifleblast_old/fx_rifleblast_old.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_WEAPON_CARAVEL_CANNON_01</Type>
-            <Description>Caravel Cannon Fire Version 1</Description>
-            <fScale>0.2</fScale>
-            <fUpdateRate>2.5</fUpdateRate>
-            <Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_01.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_WEAPON_CARAVEL_CANNON_02</Type>
-            <Description>Caravel Cannon Fire Version 2</Description>
-            <fScale>0.16</fScale>
-            <fUpdateRate>2.5</fUpdateRate>
-            <Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_02.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_WEAPON_GALLEON_CANNON_01</Type>
-            <Description>Galleon Cannon Fire Version 1</Description>
-            <fScale>0.4</fScale>
-            <fUpdateRate>2.5</fUpdateRate>
-            <Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_01.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_WEAPON_GALLEON_CANNON_02</Type>
-            <Description>Galleon Cannon Fire Version 2</Description>
-            <fScale>0.32</fScale>
-            <fUpdateRate>2.5</fUpdateRate>
-            <Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_02.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_WEAPON_GALLEON_CANNON_03</Type>
-            <Description>Caravel Cannon Fire Version 3</Description>
-            <fScale>0.36</fScale>
-            <fUpdateRate>2.5</fUpdateRate>
-            <Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_03.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_WEAPON_FRIGATE_CANNON_01</Type>
-            <Description>Frigate Cannon Fire Version 1</Description>
-            <fScale>0.34</fScale>
-            <fUpdateRate>2.7</fUpdateRate>
-            <Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_01.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_WEAPON_FRIGATE_CANNON_02</Type>
-            <Description>Frigate Cannon Fire Version 2</Description>
-            <fScale>0.27</fScale>
-            <fUpdateRate>2.7</fUpdateRate>
-            <Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_02.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_WEAPON_FRIGATE_CANNON_03</Type>
-            <Description>Frigate Cannon Fire Version 3</Description>
-            <fScale>0.31</fScale>
-            <fUpdateRate>2.7</fUpdateRate>
-            <Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_03.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_WEAPON_CANNON_FIRE</Type>
-            <Description>Cannon Fire</Description>
-            <fScale>0.3</fScale>
-            <fUpdateRate>2.8</fUpdateRate>
-            <Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_01.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_WEAPON_BOMBARD_FIRE</Type>
-            <Description>Bombard Fire</Description>
-            <fScale>0.1</fScale>
-            <fUpdateRate>2.8</fUpdateRate>
-            <Path>Art/Effects/weapon_cannonfire_modern/fx_weapon_cannonfire_modern.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_PROMOTION_UNIT</Type>
-            <Description>Promotion for unit</Description>
-            <fScale>0.6</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/unit_promotion/fx_unit_promotion_01.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_ENEMY_GLOW_UNIT</Type>
-            <Description>Enemy glow for unit</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/Unit_Enemy_Presence/fx_Unit_Enemy_Presence.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_CREATION_BIG_FAST</Type>
-            <Description>Creation Effect Bright Fast</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>6.6</fUpdateRate>
-            <Path>Art/Effects/creation/fx_creation_bright.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_GREATPEOPLE_BIRTH_WARLORD</Type>
-            <Description>Birth of the Warlord</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>2.5</fUpdateRate>
-            <Path>Art/Effects/unit_greatpeople/fx_GreatPeople_Warlord_Birth.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_CARAVEL_SINKING_FROTH</Type>
-            <Description>Caravel Sinking_Froth</Description>
-            <fScale>0.20</fScale>
-            <fUpdateRate>2.2</fUpdateRate>
-            <Path>Art/Effects/water_ship_sinking_froth/fx_water_ship_sinking_froth.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_GALLEON_SINKING_FROTH</Type>
-            <Description>Galleon Sinking_Froth</Description>
-            <fScale>0.40</fScale>
-            <fUpdateRate>2.0</fUpdateRate>
-            <Path>Art/Effects/water_ship_sinking_froth/fx_water_ship_sinking_froth.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_FRIGATE_SINKING_FROTH</Type>
-            <Description>Frigate Sinking_Froth</Description>
-            <fScale>0.35</fScale>
-            <fUpdateRate>2.0</fUpdateRate>
-            <Path>Art/Effects/water_ship_sinking_froth/fx_water_ship_sinking_froth.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_BIRDSCATTER</Type>
-            <Description>Birds flying out and fading.</Description>
-            <fScale>0.4</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/Magpie/Flock.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_IMPROVEMENT_FIRE_FOOMP</Type>
-            <Description>Fire blowing out of top of Mine smelter</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/improvement_fire_foomp/fx_improvement_fire_foomp.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_CITY_BIG_BURNING_SMOKE</Type>
-            <Description>underlit smoke for occupied cities</Description>
-            <fScale>0.4</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/cities_occupied_burning/fx_occupied_burning.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_CITY_FIRE</Type>
-            <Description>Fire for zoomed out unhappy citees</Description>
-            <fScale>3.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/fire_torch/fx_fire_torch.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_BLOOD_THRUST</Type>
-            <Description>Blood splatter effect</Description>
-            <fScale>5.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/fx_sword_hit_thrust.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_BLOOD_SLASH</Type>
-            <Description>Blood spray effect</Description>
-            <fScale>4.5</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/fx_sword_hit_slash.nif</Path>
-            <bIsProjectile>0</bIsProjectile>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_ARCHERARROW</Type>
-            <Description>ArcherArrow</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Effects/ArcherArrow.nif</Path>
-            <bIsProjectile>1</bIsProjectile>
-            <fSpeed>500.0</fSpeed>
-            <fArcValue>0.0</fArcValue>
-        </EffectInfo>
-        <EffectInfo>
-            <Type>EFFECT_EGYPTIANARROW</Type>
-            <Description>EgyptianArcherArrow</Description>
-            <fScale>1.0</fScale>
-            <fUpdateRate>1.0</fUpdateRate>
-            <Path>Art/Units/Native_Nations/navajo/navajo_warrior/Archer_Egyptian_Arrow.nif</Path>
-            <bIsProjectile>1</bIsProjectile>
-            <fSpeed>500.0</fSpeed>
-            <fArcValue>0.0</fArcValue>
-        </EffectInfo>
-    </EffectInfos>
+	<EffectInfos>
+		<EffectInfo>
+			<Type>EFFECT_FOOTSTEP_ON</Type>
+			<Description>EFFECT_FOOTSTEP_ON</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Interface/Effects/FootStep_ON.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_PING</Type>
+			<Description>Ping</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Interface/Effects/EmpBlast.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_MALISPEAR</Type>
+			<Description>Mali Spear</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Native_Nations/Inuit/Inuit_warrior/MaliSkirmisherSpear.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_SETTLERSMOKE</Type>
+			<Description>Dust Cloud</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/settler_smoke/SettlerSmoke.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_FOOTPRINT</Type>
+			<Description>Footprint</Description>
+			<fScale>0.85</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Shared/Footstep.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_PAWPRINT</Type>
+			<Description>Wild Animal Paw Print</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Shared/PawPrint.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_HORSEPRINT</Type>
+			<Description>Horse Hoof Print</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Shared/HorsePrint.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_FOOTPRINT_60</Type>
+			<Description>Footprint Medium</Description>
+			<fScale>0.65</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Shared/Footstep.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_FOOTPRINT_80</Type>
+			<Description>Footprint Medium</Description>
+			<fScale>0.75</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Shared/Footstep.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_HORSEARCHERARROW</Type>
+			<Description>Tomahawk Projectile</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/Tomahawk_Thrown/Tomahawk_Thrown.kfm</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>350.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_TOMAHAWK_THROWN</Type>
+			<Description>Tomahawk Projectile</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/Tomahawk_Thrown/Tomahawk_Thrown.kfm</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>350.0</fSpeed>
+			<fArcValue>4.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_MININGSPARK</Type>
+			<Description>Hot Sparks</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/work_mine/MiningSpark.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_DIGDIRT</Type>
+			<Description>Quick Puff of Dirt</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/work_dig/DigDirt.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_THROWDIRT</Type>
+			<Description>Quick Clump of Dirt</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/work_dig/ThrowDirt.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_FLINTSPARK</Type>
+			<Description>Creation Effect</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/weapon_flintspark/fx_weapon_flintspark.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_SHIP_CARAVEL_DEATH</Type>
+			<Description>Large death explosion for Caravel</Description>
+			<fScale>0.15</fScale>
+			<fUpdateRate>1.2</fUpdateRate>
+			<Path>Art/Effects/ShipExplosion/fx_ship_destruction_explosion.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_SHIP_GALLEON_DEATH</Type>
+			<Description>Large death explosion for Galleon</Description>
+			<fScale>0.3</fScale>
+			<fUpdateRate>1.1</fUpdateRate>
+			<Path>Art/Effects/ShipExplosion/fx_ship_destruction_explosion.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_SHIP_FRIGATE_DEATH</Type>
+			<Description>Large death explosion for Frigate</Description>
+			<fScale>0.26</fScale>
+			<fUpdateRate>1.2</fUpdateRate>
+			<Path>Art/Effects/ShipExplosion/fx_ship_destruction_explosion.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_EXPLOSION_DIRT</Type>
+			<Description>Explosion in Dirt</Description>
+			<fScale>0.6</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/explosion_dirt_01/fx_explosion_dirt_01.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CARAVEL_HIT01</Type>
+			<Description>Small Gunpowdery hit explosion for Caravel Version 1</Description>
+			<fScale>0.5</fScale>
+			<fUpdateRate>1.5</fUpdateRate>
+			<Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CARAVEL_HIT02</Type>
+			<Description>Small Gunpowdery hit explosion for Caravel Version 2</Description>
+			<fScale>0.55</fScale>
+			<fUpdateRate>1.4</fUpdateRate>
+			<Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_GALLEON_HIT01</Type>
+			<Description>Small Gunpowdery hit explosion for Galleon Version 1</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.4</fUpdateRate>
+			<Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_GALLEON_HIT02</Type>
+			<Description>Small Gunpowdery hit explosion for Galleon Version 2</Description>
+			<fScale>1.1</fScale>
+			<fUpdateRate>1.3</fUpdateRate>
+			<Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_FRIGATE_HIT01</Type>
+			<Description>Small Gunpowdery hit explosion for Frigate Version 1</Description>
+			<fScale>0.85</fScale>
+			<fUpdateRate>1.5</fUpdateRate>
+			<Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_FRIGATE_HIT02</Type>
+			<Description>Small Gunpowdery hit explosion for Frigate Version 2</Description>
+			<fScale>0.98</fScale>
+			<fUpdateRate>1.4</fUpdateRate>
+			<Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CANNON_HIT_SMALL01</Type>
+			<Description>Small Gunpowdery hit explosion for Cannon Version 1</Description>
+			<fScale>0.35</fScale>
+			<fUpdateRate>1.6</fUpdateRate>
+			<Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CANNON_HIT_SMALL02</Type>
+			<Description>Small Gunpowdery hit explosion for Cannon Version 2</Description>
+			<fScale>0.3</fScale>
+			<fUpdateRate>1.5</fUpdateRate>
+			<Path>Art/Effects/ShipExplosion_gunpowder_hit/fx_ship_gunpowder_small_explosion.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CANNON_DEATH_EXPLOSION</Type>
+			<Description>Large death explosion for Cannon</Description>
+			<fScale>0.05</fScale>
+			<fUpdateRate>1.4</fUpdateRate>
+			<Path>Art/Effects/ShipExplosion/fx_ship_destruction_explosion.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_HORSEHOOFDUST</Type>
+			<Description>Hoof dust for a running horse</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/dust_impact_002/fx_dust_impact_002.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_RIFLEBLAST</Type>
+			<Description>Rifleblast for flintlock rifle</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/weapon_rifleblast_old/fx_rifleblast_old.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_WEAPON_CARAVEL_CANNON_01</Type>
+			<Description>Caravel Cannon Fire Version 1</Description>
+			<fScale>0.2</fScale>
+			<fUpdateRate>2.5</fUpdateRate>
+			<Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_01.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_WEAPON_CARAVEL_CANNON_02</Type>
+			<Description>Caravel Cannon Fire Version 2</Description>
+			<fScale>0.16</fScale>
+			<fUpdateRate>2.5</fUpdateRate>
+			<Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_02.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_WEAPON_GALLEON_CANNON_01</Type>
+			<Description>Galleon Cannon Fire Version 1</Description>
+			<fScale>0.4</fScale>
+			<fUpdateRate>2.5</fUpdateRate>
+			<Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_01.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_WEAPON_GALLEON_CANNON_02</Type>
+			<Description>Galleon Cannon Fire Version 2</Description>
+			<fScale>0.32</fScale>
+			<fUpdateRate>2.5</fUpdateRate>
+			<Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_02.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_WEAPON_GALLEON_CANNON_03</Type>
+			<Description>Caravel Cannon Fire Version 3</Description>
+			<fScale>0.36</fScale>
+			<fUpdateRate>2.5</fUpdateRate>
+			<Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_03.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_WEAPON_FRIGATE_CANNON_01</Type>
+			<Description>Frigate Cannon Fire Version 1</Description>
+			<fScale>0.34</fScale>
+			<fUpdateRate>2.7</fUpdateRate>
+			<Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_01.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_WEAPON_FRIGATE_CANNON_02</Type>
+			<Description>Frigate Cannon Fire Version 2</Description>
+			<fScale>0.27</fScale>
+			<fUpdateRate>2.7</fUpdateRate>
+			<Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_02.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_WEAPON_FRIGATE_CANNON_03</Type>
+			<Description>Frigate Cannon Fire Version 3</Description>
+			<fScale>0.31</fScale>
+			<fUpdateRate>2.7</fUpdateRate>
+			<Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_03.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_WEAPON_CANNON_FIRE</Type>
+			<Description>Cannon Fire</Description>
+			<fScale>0.3</fScale>
+			<fUpdateRate>2.8</fUpdateRate>
+			<Path>Art/Effects/weapon_cannonfire/fx_weapon_cannonfire_01.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_WEAPON_BOMBARD_FIRE</Type>
+			<Description>Bombard Fire</Description>
+			<fScale>0.1</fScale>
+			<fUpdateRate>2.8</fUpdateRate>
+			<Path>Art/Effects/weapon_cannonfire_modern/fx_weapon_cannonfire_modern.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_PROMOTION_UNIT</Type>
+			<Description>Promotion for unit</Description>
+			<fScale>0.6</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/unit_promotion/fx_unit_promotion_01.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_ENEMY_GLOW_UNIT</Type>
+			<Description>Enemy glow for unit</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/Unit_Enemy_Presence/fx_Unit_Enemy_Presence.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CREATION_BIG_FAST</Type>
+			<Description>Creation Effect Bright Fast</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>6.6</fUpdateRate>
+			<Path>Art/Effects/creation/fx_creation_bright.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_GREATPEOPLE_BIRTH_WARLORD</Type>
+			<Description>Birth of the Warlord</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>2.5</fUpdateRate>
+			<Path>Art/Effects/unit_greatpeople/fx_GreatPeople_Warlord_Birth.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CARAVEL_SINKING_FROTH</Type>
+			<Description>Caravel Sinking_Froth</Description>
+			<fScale>0.20</fScale>
+			<fUpdateRate>2.2</fUpdateRate>
+			<Path>Art/Effects/water_ship_sinking_froth/fx_water_ship_sinking_froth.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_GALLEON_SINKING_FROTH</Type>
+			<Description>Galleon Sinking_Froth</Description>
+			<fScale>0.40</fScale>
+			<fUpdateRate>2.0</fUpdateRate>
+			<Path>Art/Effects/water_ship_sinking_froth/fx_water_ship_sinking_froth.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_FRIGATE_SINKING_FROTH</Type>
+			<Description>Frigate Sinking_Froth</Description>
+			<fScale>0.35</fScale>
+			<fUpdateRate>2.0</fUpdateRate>
+			<Path>Art/Effects/water_ship_sinking_froth/fx_water_ship_sinking_froth.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_BIRDSCATTER</Type>
+			<Description>Birds flying out and fading.</Description>
+			<fScale>0.4</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/Magpie/Flock.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_IMPROVEMENT_FIRE_FOOMP</Type>
+			<Description>Fire blowing out of top of Mine smelter</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/improvement_fire_foomp/fx_improvement_fire_foomp.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CITY_BIG_BURNING_SMOKE</Type>
+			<Description>underlit smoke for occupied cities</Description>
+			<fScale>0.4</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/cities_occupied_burning/fx_occupied_burning.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_CITY_FIRE</Type>
+			<Description>Fire for zoomed out unhappy citees</Description>
+			<fScale>3.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/fire_torch/fx_fire_torch.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_BLOOD_THRUST</Type>
+			<Description>Blood splatter effect</Description>
+			<fScale>5.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/fx_sword_hit_thrust.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_BLOOD_SLASH</Type>
+			<Description>Blood spray effect</Description>
+			<fScale>4.5</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/fx_sword_hit_slash.nif</Path>
+			<bIsProjectile>0</bIsProjectile>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_ARCHERARROW</Type>
+			<Description>ArcherArrow</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Effects/ArcherArrow.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+		<EffectInfo>
+			<Type>EFFECT_EGYPTIANARROW</Type>
+			<Description>EgyptianArcherArrow</Description>
+			<fScale>1.0</fScale>
+			<fUpdateRate>1.0</fUpdateRate>
+			<Path>Art/Units/Native_Nations/navajo/navajo_warrior/Archer_Egyptian_Arrow.nif</Path>
+			<bIsProjectile>1</bIsProjectile>
+			<fSpeed>500.0</fSpeed>
+			<fArcValue>0.0</fArcValue>
+		</EffectInfo>
+	</EffectInfos>
 </Civ4EffectInfos>
