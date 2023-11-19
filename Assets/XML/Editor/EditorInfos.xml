@@ -231,8 +231,8 @@
     <Civilopedia/>
     <DefaultPlayerColor class="Type" type="PlayerColorInfo" none="false"/>
     <ArtDefineTag type="CivilizationArtInfo" none="false" class="Type"/>
-    <ArtStyleType class="Type" type="CivilizationArtInfo" none="false"/>
-    <UnitArtStyleType class="Type" type="UnitArtInfo" none="false"/>
+    <ArtStyleType class="Type" type="ArtStyleType" none="false"/>
+    <UnitArtStyleType class="Type" type="UnitArtStyleTypeInfo" none="false"/>
     <bPlayable/>
     <bAIPlayable class="Bool"/>
     <bWaterStart/>
@@ -1051,7 +1051,7 @@
 <UnitArtInfo class="Dir" child="Button">
     <Type/>
     <Button class="Button"/>
-    <FullLengthIcon/>
+    <FullLengthIcon class="Button"/>
     <fScale/>
     <fInterfaceScale/>
     <NIF/>
@@ -1066,17 +1066,20 @@
     <fExchangeAngle/>
     <bCombatExempt/>
     <bActAsRanged/>
-    <TrainSound/>
-    <AudioRunSounds/>
-    <SelectionSound/>
-    <ActionSound/>
+    <TrainSound class="Type" type="Script2DSound" none="true"/>
+    <AudioRunSounds>
+        <AudioRunTypeLoop/>
+        <AudioRunTypeEnd/>
+    </AudioRunSounds>
+    <SelectionSound class="Type" type="Script3DSound" none="true"/>
+    <ActionSound class="Type" type="Script3DSound" none="true"/>
 </UnitArtInfo>
 
-<UnitArtStyleTypeInfo>
+<UnitArtStyleTypeInfo class="Dir">
     <Type/>
-    <StyleUnits>
-        <StyleUnit class="Dir" child="UnitType">
-            <UnitType class="Type" type="UnitInfo" none="false"/>
+    <StyleUnits class="Dir">
+        <StyleUnit class="Dir" child="UnitMeshGroup">
+            <UnitType class="Type" type="UnitInfo" none="true"/>
             <ProfessionType class="Type" type="ProfessionInfo" none="false"/>
             <UnitMeshGroup class="Dir" child="ArtDefineTag">
                 <ArtDefineTag class="Type" type="UnitArtInfo" none="false"/>

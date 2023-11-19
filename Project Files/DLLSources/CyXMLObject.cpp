@@ -9,13 +9,15 @@
 
 using namespace tinyxml2;
 
-const int iNumTXTTags = 4;
+const int iNumTXTTags = 6;
 
 const TCHAR* TXT_TAGS[iNumTXTTags] = {
 	"Civilopedia",
 	"Description",
 	"Help",
 	"Strategy",
+	"ShortDescription",
+	"Adjective",
 };
 
 const TCHAR* TXT_TAGS_POSTFIX[iNumTXTTags] = {
@@ -23,6 +25,8 @@ const TCHAR* TXT_TAGS_POSTFIX[iNumTXTTags] = {
 	"",
 	"_HELP",
 	"_STRATEGY",
+	"_SHORT_DESC",
+	"_ADJECTIVE",
 };
 
 static bool isText(const TCHAR* szTag)
