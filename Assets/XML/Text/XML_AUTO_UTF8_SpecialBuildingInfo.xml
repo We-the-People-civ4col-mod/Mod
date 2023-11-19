@@ -1,421 +1,421 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_BEER</Tag>
-        <English>Beer production</English>
-        <French>Production de bière</French>
-        <German>Brauereien</German>
-        <Italian>Beerproduction</Italian>
-        <Spanish>Beerproduction</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_BELLS</Tag>
-        <English>Liberty Bell Buildings</English>
-        <French>
-            <Text>Bâtiments dédiés aux Cloches de la liberté</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Freiheitsglockengebäude</German>
-        <Italian>
-            <Text>Edifici per le campane della libertà</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Edificio de Campanas de la libertad:Edificios de Campanas de la libertad</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_CIGARS</Tag>
-        <English>Cigar Buildings</English>
-        <French>
-            <Text>Bâtiments dédiés aux cigares</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Zigarrengebäude</German>
-        <Italian>
-            <Text>Edifici per i sigari</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Edificio de Puros:Edificios de Puros</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_CLOTH</Tag>
-        <English>Cloth Buildings</English>
-        <French>
-            <Text>Bâtiments dédiés aux tissus</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Webereien</German>
-        <Italian>
-            <Text>Edifici per il tessuto</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Edificio de Tejido:Edificios de Tejido</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_COATS</Tag>
-        <English>Coat Buildings</English>
-        <French>
-            <Text>Bâtiments dédiés aux manteaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Mantelgebäude</German>
-        <Italian>
-            <Text>Edifici per i mantelli</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Edificio de Abrigos:Edificios de Abrigos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_COLOURED_CLOTH</Tag>
-        <English>Dyery</English>
-        <French>Teinturerie</French>
-        <German>Färbereien</German>
-        <Italian>Dyery</Italian>
-        <Spanish>Dyery</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_CORN</Tag>
-        <English>Corn Chamber</English>
-        <French>Maïs</French>
-        <German>Getreidekammer</German>
-        <Italian>Corn</Italian>
-        <Spanish>Corn</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_CROSSES</Tag>
-        <English>Religious Buildings</English>
-        <French>
-            <Text>Bâtiments dédiés à la religion</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Kirchen</German>
-        <Italian>
-            <Text>Edifici religiosi</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Edificio religioso:Edificios religiosos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_DEFENSE</Tag>
-        <English>Fortress</English>
-        <French>Forteresses</French>
-        <German>
-            <Text>Festung</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_DOCK</Tag>
-        <English>Docks</English>
-        <French>
-            <Text>Quais</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Hafenanlagen</German>
-        <Italian>
-            <Text>Moli</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Muelle:Muelles</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_EDUCATION</Tag>
-        <English>Education Buildings</English>
-        <French>
-            <Text>Bâtiments dédiés à l'éducation</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Lehranstalten</German>
-        <Italian>
-            <Text>Edifici per l'educazione</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Edificio de Educación:Edificios de Educación</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_FURNITURE</Tag>
-        <English>Furniture Production</English>
-        <French>Fabrication des meubles</French>
-        <German>Möbelherstellung</German>
-        <Italian>Furnitureproduction</Italian>
-        <Spanish>Furnitureproduction</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_HAMMERS</Tag>
-        <English>Carpentry Buildings</English>
-        <French>
-            <Text>Bâtiments dédiés à la charpente</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Zimmereien</German>
-        <Italian>
-            <Text>Edifici per la carpenteria</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Edificio de Carpintería:Edificios de Carpintería</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_HEALTH</Tag>
-        <English>Medical Care</English>
-        <French>Soins médicaux</French>
-        <German>Medizinische Versorgung</German>
-        <Italian>Medical Care</Italian>
-        <Spanish>Medical Care</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_HORSES</Tag>
-        <English>Horse Buildings</English>
-        <French>
-            <Text>Bâtiments dédiés aux chevaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Pferdezuchten</German>
-        <Italian>
-            <Text>Edifici per cavalli</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Edificio de Caballos:Edificios de Caballos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_LEATHER</Tag>
-        <English>Leather Production</English>
-        <French>Fabrique du Cuir</French>
-        <German>Lederproduktion</German>
-        <Italian>Leatherproduction</Italian>
-        <Spanish>Leatherproduction</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_MEAT</Tag>
-        <English>Slaughterhouse</English>
-        <French>Abattage</French>
-        <German>Schlachtereien</German>
-        <Italian>Slaughtery</Italian>
-        <Spanish>Slaughtery</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_MILL</Tag>
-        <English>Mill</English>
-        <French>Moulin</French>
-        <German>Mühle</German>
-        <Italian>Mill</Italian>
-        <Spanish>Mill</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_MUSKETS</Tag>
-        <English>Armoury Buildings</English>
-        <French>
-            <Text>Bâtiments dédiés aux armes</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Waffenkammern</German>
-        <Italian>
-            <Text>Edifici per moschetti</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Edificio de Mosquetes:Edificios de Mosquetes</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_PRINT</Tag>
-        <English>Printing Buildings</English>
-        <French>Bâtiments d'imprimerie</French>
-        <German>Druckereien</German>
-        <Italian>Edifici per la stampa</Italian>
-        <Spanish>Imprentas</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_RUM</Tag>
-        <English>Rum Buildings</English>
-        <French>
-            <Text>Bâtiments des alcools distillés</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Brennereien</German>
-        <Italian>
-            <Text>Edifici per il rum</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Edificio de Ron:Edificios de Ron</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_SPICES</Tag>
-        <English>Spice Trading</English>
-        <French>Commerce des Épices et du Sel</French>
-        <German>Gewürzhandel</German>
-        <Italian>Spicetrading</Italian>
-        <Spanish>Spicetrading</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_TAVERN</Tag>
-        <English>Tavern</English>
-        <French>Taverne</French>
-        <German>Taverne</German>
-        <Italian>Tavern</Italian>
-        <Spanish>Tavern</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_TOOLS</Tag>
-        <English>Tools Buildings</English>
-        <French>
-            <Text>Bâtiments dédiés aux outils</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>Werkzeuggebäude</German>
-        <Italian>
-            <Text>Edifici per gli attrezzi</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Edificio de Herramientas:Edificios de Herramientas</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_TRADE</Tag>
-        <English>Trade</English>
-        <French>Commerce</French>
-        <German>Handel</German>
-        <Italian>Trade</Italian>
-        <Spanish>Trade</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_TRAIN_STATION</Tag>
-        <English>Waystation</English>
-        <French>Relais de poste</French>
-        <German>Postreiter- und Pferdewechselstation</German>
-        <Italian>Waystation</Italian>
-        <Spanish>Waystation</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_WALLS</Tag>
-        <English>Fortifications</English>
-        <French>
-            <Text>Fortifications</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Befestigungen</German>
-        <Italian>
-            <Text>Fortificazioni</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Fortificación:Fortificaciones</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_WAREHOUSE</Tag>
-        <English>Warehouses</English>
-        <French>
-            <Text>Entrepôt:Entrepôts</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Lagerhäuser</German>
-        <Italian>
-            <Text>Magazzini</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Almacén:Almacenes</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_WELL</Tag>
-        <English>Water Well</English>
-        <French>Puits à eau</French>
-        <German>Brunnen</German>
-        <Italian>Water Well</Italian>
-        <Spanish>Water Well</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_WHALE_OIL</Tag>
-        <English>Train Oil Production</English>
-        <French>Production d'huile de baleine</French>
-        <German>Walfettverarbeitung</German>
-        <Italian>Whaleoilproduction</Italian>
-        <Spanish>Whaleoilproduction</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_WINE</Tag>
-        <English>Wine Production</English>
-        <French>Production de vin</French>
-        <German>Kellereien</German>
-        <Italian>Wineproduction</Italian>
-        <Spanish>Wineproduction</Spanish>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_BEER</Tag>
+		<English>Beer production</English>
+		<French>Production de bière</French>
+		<German>Brauereien</German>
+		<Italian>Beerproduction</Italian>
+		<Spanish>Beerproduction</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_BELLS</Tag>
+		<English>Liberty Bell Buildings</English>
+		<French>
+			<Text>Bâtiments dédiés aux Cloches de la liberté</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Freiheitsglockengebäude</German>
+		<Italian>
+			<Text>Edifici per le campane della libertà</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Edificio de Campanas de la libertad:Edificios de Campanas de la libertad</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_CIGARS</Tag>
+		<English>Cigar Buildings</English>
+		<French>
+			<Text>Bâtiments dédiés aux cigares</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Zigarrengebäude</German>
+		<Italian>
+			<Text>Edifici per i sigari</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Edificio de Puros:Edificios de Puros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_CLOTH</Tag>
+		<English>Cloth Buildings</English>
+		<French>
+			<Text>Bâtiments dédiés aux tissus</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Webereien</German>
+		<Italian>
+			<Text>Edifici per il tessuto</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Edificio de Tejido:Edificios de Tejido</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_COATS</Tag>
+		<English>Coat Buildings</English>
+		<French>
+			<Text>Bâtiments dédiés aux manteaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Mantelgebäude</German>
+		<Italian>
+			<Text>Edifici per i mantelli</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Edificio de Abrigos:Edificios de Abrigos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_COLOURED_CLOTH</Tag>
+		<English>Dyery</English>
+		<French>Teinturerie</French>
+		<German>Färbereien</German>
+		<Italian>Dyery</Italian>
+		<Spanish>Dyery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_CORN</Tag>
+		<English>Corn Chamber</English>
+		<French>Maïs</French>
+		<German>Getreidekammer</German>
+		<Italian>Corn</Italian>
+		<Spanish>Corn</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_CROSSES</Tag>
+		<English>Religious Buildings</English>
+		<French>
+			<Text>Bâtiments dédiés à la religion</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Kirchen</German>
+		<Italian>
+			<Text>Edifici religiosi</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Edificio religioso:Edificios religiosos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_DEFENSE</Tag>
+		<English>Fortress</English>
+		<French>Forteresses</French>
+		<German>
+			<Text>Festung</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_DOCK</Tag>
+		<English>Docks</English>
+		<French>
+			<Text>Quais</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Hafenanlagen</German>
+		<Italian>
+			<Text>Moli</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Muelle:Muelles</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_EDUCATION</Tag>
+		<English>Education Buildings</English>
+		<French>
+			<Text>Bâtiments dédiés à l'éducation</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Lehranstalten</German>
+		<Italian>
+			<Text>Edifici per l'educazione</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Edificio de Educación:Edificios de Educación</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_FURNITURE</Tag>
+		<English>Furniture Production</English>
+		<French>Fabrication des meubles</French>
+		<German>Möbelherstellung</German>
+		<Italian>Furnitureproduction</Italian>
+		<Spanish>Furnitureproduction</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_HAMMERS</Tag>
+		<English>Carpentry Buildings</English>
+		<French>
+			<Text>Bâtiments dédiés à la charpente</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Zimmereien</German>
+		<Italian>
+			<Text>Edifici per la carpenteria</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Edificio de Carpintería:Edificios de Carpintería</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_HEALTH</Tag>
+		<English>Medical Care</English>
+		<French>Soins médicaux</French>
+		<German>Medizinische Versorgung</German>
+		<Italian>Medical Care</Italian>
+		<Spanish>Medical Care</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_HORSES</Tag>
+		<English>Horse Buildings</English>
+		<French>
+			<Text>Bâtiments dédiés aux chevaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Pferdezuchten</German>
+		<Italian>
+			<Text>Edifici per cavalli</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Edificio de Caballos:Edificios de Caballos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_LEATHER</Tag>
+		<English>Leather Production</English>
+		<French>Fabrique du Cuir</French>
+		<German>Lederproduktion</German>
+		<Italian>Leatherproduction</Italian>
+		<Spanish>Leatherproduction</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_MEAT</Tag>
+		<English>Slaughterhouse</English>
+		<French>Abattage</French>
+		<German>Schlachtereien</German>
+		<Italian>Slaughtery</Italian>
+		<Spanish>Slaughtery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_MILL</Tag>
+		<English>Mill</English>
+		<French>Moulin</French>
+		<German>Mühle</German>
+		<Italian>Mill</Italian>
+		<Spanish>Mill</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_MUSKETS</Tag>
+		<English>Armoury Buildings</English>
+		<French>
+			<Text>Bâtiments dédiés aux armes</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Waffenkammern</German>
+		<Italian>
+			<Text>Edifici per moschetti</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Edificio de Mosquetes:Edificios de Mosquetes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_PRINT</Tag>
+		<English>Printing Buildings</English>
+		<French>Bâtiments d'imprimerie</French>
+		<German>Druckereien</German>
+		<Italian>Edifici per la stampa</Italian>
+		<Spanish>Imprentas</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_RUM</Tag>
+		<English>Rum Buildings</English>
+		<French>
+			<Text>Bâtiments des alcools distillés</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Brennereien</German>
+		<Italian>
+			<Text>Edifici per il rum</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Edificio de Ron:Edificios de Ron</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_SPICES</Tag>
+		<English>Spice Trading</English>
+		<French>Commerce des Épices et du Sel</French>
+		<German>Gewürzhandel</German>
+		<Italian>Spicetrading</Italian>
+		<Spanish>Spicetrading</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_TAVERN</Tag>
+		<English>Tavern</English>
+		<French>Taverne</French>
+		<German>Taverne</German>
+		<Italian>Tavern</Italian>
+		<Spanish>Tavern</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_TOOLS</Tag>
+		<English>Tools Buildings</English>
+		<French>
+			<Text>Bâtiments dédiés aux outils</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>Werkzeuggebäude</German>
+		<Italian>
+			<Text>Edifici per gli attrezzi</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Edificio de Herramientas:Edificios de Herramientas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_TRADE</Tag>
+		<English>Trade</English>
+		<French>Commerce</French>
+		<German>Handel</German>
+		<Italian>Trade</Italian>
+		<Spanish>Trade</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_TRAIN_STATION</Tag>
+		<English>Waystation</English>
+		<French>Relais de poste</French>
+		<German>Postreiter- und Pferdewechselstation</German>
+		<Italian>Waystation</Italian>
+		<Spanish>Waystation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_WALLS</Tag>
+		<English>Fortifications</English>
+		<French>
+			<Text>Fortifications</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Befestigungen</German>
+		<Italian>
+			<Text>Fortificazioni</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fortificación:Fortificaciones</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_WAREHOUSE</Tag>
+		<English>Warehouses</English>
+		<French>
+			<Text>Entrepôt:Entrepôts</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Lagerhäuser</German>
+		<Italian>
+			<Text>Magazzini</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Almacén:Almacenes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_WELL</Tag>
+		<English>Water Well</English>
+		<French>Puits à eau</French>
+		<German>Brunnen</German>
+		<Italian>Water Well</Italian>
+		<Spanish>Water Well</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_WHALE_OIL</Tag>
+		<English>Train Oil Production</English>
+		<French>Production d'huile de baleine</French>
+		<German>Walfettverarbeitung</German>
+		<Italian>Whaleoilproduction</Italian>
+		<Spanish>Whaleoilproduction</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_WINE</Tag>
+		<English>Wine Production</English>
+		<French>Production de vin</French>
+		<German>Kellereien</German>
+		<Italian>Wineproduction</Italian>
+		<Spanish>Wineproduction</Spanish>
+	</TEXT>
 </Civ4GameText>

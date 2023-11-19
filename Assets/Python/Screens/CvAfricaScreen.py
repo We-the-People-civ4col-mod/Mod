@@ -82,7 +82,7 @@ class CvAfricaScreen:
 		# R&R, vetiarvind, Navigation Sectors - END
 
 		self.bBookIntro, self.bBookOutro = False, False
-
+		self.show_tax_details = -1  # 0 - always hide details, 1 - always show details , -1 show iff No Hidden Variable is set
 	
 	def getScreen(self):
 		return CyGInterfaceScreen("AfricaScreen", CvScreenEnums.AFRICA_SCREEN)
@@ -287,11 +287,11 @@ class CvAfricaScreen:
 		screen.showWindowBackground(False)
 	
 		# Water Animation
-		screen.addUnitGraphicGFC("WaterAnim_Widget", gc.getInfoTypeForString("UNIT_CARAVEL"), -1, 0, 0, self.XResolution, self.XResolution, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, True)
+		screen.addUnitGraphicGFC("WaterAnim_Widget", UnitTypes.UNIT_CARAVEL, -1, 0, 0, self.XResolution, self.XResolution, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, True)
 	
 		# show background
 		if not self.iThisWinter:
-			if self.iVideo > 0 and iCurrentTurn % self.iVideo == 0 and not iCurrentTurn == 0 and not CyUserProfile().getGraphicOption(gc.getInfoTypeForString("GRAPHICOPTION_NO_MOVIES")):
+			if self.iVideo > 0 and iCurrentTurn % self.iVideo == 0 and not iCurrentTurn == 0 and not CyUserProfile().getGraphicOption(GraphicOptionTypes.GRAPHICOPTION_NO_MOVIES):
 				screen.playMovie("Art/Interface/Screens/Europe/intro.bik", 0, 0, self.XResolution, self.YResolution * 23 / 100, 0)
 				screen.addDDSGFC("AfricaScreenBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_AFRICA_BACKGROUND").getPath(), 0, 0, self.XResolution, self.YResolution, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 			else:
@@ -361,7 +361,7 @@ class CvAfricaScreen:
 		screen.setText(self.getNextWidgetName(), "Background", szExit, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - self.STANDARD_MARGIN, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1 )
 
 		szTaxRate = u"<font=4>" + localText.getText(hudColor, ()) + localText.getText("TXT_KEY_MISC_TAX_RATE", (player.getTaxRate(), player.NBMOD_GetMaxTaxRate())).upper() + u"</font>"
-		screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_HELP_TAX_CALCULATION, self.player_id, -1 )
+		screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_HELP_TAX_CALCULATION, self.player_id, self.show_tax_details)
 
 		
 		if (sdToolKit.sdGetVal('komaScreens', player.getID(), 'TradeBox') == False):
@@ -430,12 +430,12 @@ class CvAfricaScreen:
 					iCargoCount += 1
 
 			if (YieldOnBoard):
-				screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", gc.getActionInfo(gc.getInfoTypeForString("COMMAND_YIELD_TRADE")).getButton(), iX + self.INPORT_SHIP_W * 15 / 16 - self.CARGO_ICON_SIZE * 5 / 4, self.INPORT_SHIP_H * 9 / 20, self.CARGO_ICON_SIZE * 5 / 4, self.CARGO_ICON_SIZE * 5 / 4, WidgetTypes.WIDGET_GENERAL, self.SELL_ALL, unit.getID())
+				screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", gc.getActionInfo(CommandTypes.COMMAND_YIELD_TRADE).getButton(), iX + self.INPORT_SHIP_W * 15 / 16 - self.CARGO_ICON_SIZE * 5 / 4, self.INPORT_SHIP_H * 9 / 20, self.CARGO_ICON_SIZE * 5 / 4, self.CARGO_ICON_SIZE * 5 / 4, WidgetTypes.WIDGET_GENERAL, self.SELL_ALL, unit.getID())
 			elif (iCargoCount == 0) and (gc.getUnitInfo(unit.getUnitType()).getEuropeCost() > 0) and (iSeaUnitCount > 1) and (self.iSellShip > 0):
 				screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_PURCHASE_UNIT").getPath(), iX + self.INPORT_SHIP_W * 15 / 16 - self.CARGO_ICON_SIZE * 5 / 4, self.INPORT_SHIP_H * 9 / 20, self.CARGO_ICON_SIZE * 5 / 4, self.CARGO_ICON_SIZE * 5 / 4, WidgetTypes.WIDGET_GENERAL, self.SELL_SHIP, unit.getID())
 
 			if (not unit.isFull() and player.getNumAfricaUnits() > 0 and unit.specialCargo() == SpecialUnitTypes.NO_SPECIALUNIT):
-				screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", gc.getActionInfo(gc.getInfoTypeForString("COMMAND_LOAD")).getButton(), iX + self.INPORT_SHIP_W * 15 / 16 - self.CARGO_ICON_SIZE * 17 / 8, self.INPORT_SHIP_H * 9 / 20, self.CARGO_ICON_SIZE * 5 / 4, self.CARGO_ICON_SIZE * 5 / 4, WidgetTypes.WIDGET_GENERAL, self.LOAD_ALL, unit.getID())
+				screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", gc.getActionInfo(CommandTypes.COMMAND_LOAD).getButton(), iX + self.INPORT_SHIP_W * 15 / 16 - self.CARGO_ICON_SIZE * 17 / 8, self.INPORT_SHIP_H * 9 / 20, self.CARGO_ICON_SIZE * 5 / 4, self.CARGO_ICON_SIZE * 5 / 4, WidgetTypes.WIDGET_GENERAL, self.LOAD_ALL, unit.getID())
 			
 			screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_SAIL").getPath(), iX + self.INPORT_SHIP_W / 8, self.INPORT_SHIP_H * 9 / 20, self.CARGO_ICON_SIZE * 5 / 4, self.CARGO_ICON_SIZE * 5 / 4, WidgetTypes.WIDGET_GENERAL, self.SAIL_TO_NEW_WORLD, unit.getID())
 

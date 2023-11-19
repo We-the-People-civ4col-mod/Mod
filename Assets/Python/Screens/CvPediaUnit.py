@@ -134,7 +134,7 @@ class CvPediaUnit:
 			if (gc.getUnitInfo(self.iUnit).getYieldCost(iYield) > 0):
 				szName = self.top.getNextWidgetName()
 				if self.top.iActivePlayer == -1:
-					szCost = localText.getText("TXT_KEY_PEDIA_COST", ((gc.getUnitInfo(self.iUnit).getYieldCost(iYield) * gc.getDefineINT("UNIT_PRODUCTION_PERCENT"))/100,))
+					szCost = localText.getText("TXT_KEY_PEDIA_COST", ((gc.getUnitInfo(self.iUnit).getYieldCost(iYield) * GlobalDefines.UNIT_PRODUCTION_PERCENT)/100,))
 				else:
 					szCost = localText.getText("TXT_KEY_PEDIA_COST", ( gc.getActivePlayer().getUnitYieldProductionNeeded(self.iUnit, iYield), ) )
 				## R&R, Robert Surcouf,  Pedia - Start
@@ -235,7 +235,7 @@ class CvPediaUnit:
 		iSelected = 0
 		for iI in range(gc.getNumUnitInfos()):
 			if (not gc.getUnitInfo(unitsList[iI][1]).isGraphicalOnly()):
-				if (not gc.getDefineINT("CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY") or not gc.getGame().isFinalInitialized() or gc.getGame().isUnitEverActive(unitsList[iI][1])):
+				if (not GlobalDefines.CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY or not gc.getGame().isFinalInitialized() or gc.getGame().isUnitEverActive(unitsList[iI][1])):
 					if bRedraw:
 						screen.appendListBoxStringNoUpdate( self.top.LIST_ID, unitsList[iI][0], WidgetTypes.WIDGET_PEDIA_JUMP_TO_UNIT, unitsList[iI][1], 0, CvUtil.FONT_LEFT_JUSTIFY )
 					if unitsList[iI][1] == self.iUnit:

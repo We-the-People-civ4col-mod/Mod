@@ -18,6 +18,8 @@ my $FILE_PRELOAD = getAutoDir() . "/AutoXmlPreload.h";
 
 my $files = [];
 my %varToEnum;
+my %EnumValues;
+my %EnumValuesNoTypes;
 
 my $output         = "";
 my $output_test    = "";
@@ -68,10 +70,14 @@ $output_init .= "\n";
 $output_init .= "#ifndef HARDCODE_XML_VALUES\n";
 $output_init .= "if (bFirst) {\n";
 
+#setupEnumValuesNoType();
+
 foreach my $file (getEnumFiles())
 {
 	processFile($file);
 }
+
+#handleEnumValues();
 
 $output_init .= "} else {\n";
 
@@ -145,11 +151,13 @@ sub processFile
 	my $found_type = 0;
 	
 	my $isYield = $enum eq "YieldTypes";
+	my $NO_TYPE = getNoType($TYPE);
+	my $isEnumValues = exists $EnumValuesNoTypes{$NO_TYPE};
 
 	$output .= "enum ";
 	$output .= $enum . "\n{\n";
 	$output .= "\tINVALID_PROFESSION = -2,\n" if $basename eq "Profession";
-	$output .= "\t" . getNoType($TYPE) . " = -1,\n\n";
+	$output .= "\t" . $NO_TYPE . " = -1,\n\n";
 	
 	
 	my @types = getTypesInFile($filename);
@@ -166,6 +174,7 @@ sub processFile
 		
 		foreach my $type (@types)
 		{
+			$EnumValues{$type} = 1 if $isEnumValues;
 			$varToEnum{$type} = $enum;
 			$output .= "\t" . $type . ",\n";
 			$output_test .= "DisplayXMLhardcodingError(strcmp(\"". $type . "\", " . getInfo($basename) . "($type).getType()) == 0, \"$type\", true);\n" if $isHardcoded;
@@ -637,3 +646,98 @@ sub addVanillaValues
 	
 	addVanillaSingleValueEnum(\%valueContainer, "DEFAULT_POPULATION_UNIT", "UNITCLASS_COLONIST", 0);
 }
+
+sub setupEnumValuesNoType
+{
+	my $file = getSourceDir() . "CyEnumsInterface.cpp";
+	
+	open my $info, $file or die "Could not open $file: $!\n";
+
+	my $state = 0;
+
+	while( my $line = <$info>)
+	{
+		if ($state == 0)
+		{
+			$state = 1 if index($line, "python::enum_<int> enumTable = python::enum_<int>(\"EnumValues\")") != -1;
+			next;
+		}
+		
+		if (index($line, "addEnumValues(enumTable") != -1)
+		{
+			my $key = substr($line, index($line, "NO_"));
+			$key = substr($key, 0, index($key, ")"));
+			$EnumValuesNoTypes{$key} = 1;
+			next;
+		}
+		
+		if (index($line, "enumTable.value(") != -1)
+		{
+			my $key = substr($line, index($line, "\"")+1);
+			$key = substr($key, 0, index($key, "\""));
+			$EnumValues{$key} = 1;
+			next;
+		}
+		 
+		last if index($line, "}") == 0;
+	}
+
+	close $info;
+}
+
+sub handleEnumValues
+{
+	handleEnumValuesDir(getPythonDir());
+}
+
+sub handleEnumValuesDir
+{
+	my $dir = shift;
+	
+	opendir DIR,$dir;
+	my @dir = readdir(DIR);
+	close DIR;
+	foreach(@dir)
+	{
+		next if substr($_, 0, 1) eq ".";
+		
+		my $file = "$dir$_";
+		if (-f $file)
+		{
+			handleEnumValuesFile($file)
+		}
+		elsif (-d $file)
+		{
+			handleEnumValuesDir($file . "/");
+		}
+	}
+}
+
+sub handleEnumValuesFile
+{
+	my $file = shift;
+	
+	open my $info, $file or die "Could not open $file: $!\n";
+	while( my $line = <$info>)
+	{
+		chomp($line);
+		my $comment = index($line, "#");
+		$line = substr($line, 0, $comment) if $comment != -1;
+		while ((my $index = index($line, "EnumValues.")) != -1)
+		{
+			$line = substr($line, $index+11);
+			my $key = $line;
+			$index = index($key, " ");
+			$key = substr($key, 0, $index) if ($index != -1);
+			$index = index($key, ")");
+			$key = substr($key, 0, $index) if ($index != -1);
+			$index = index($key, ",");
+			$key = substr($key, 0, $index) if ($index != -1);
+			$index = index($key, ":");
+			$key = substr($key, 0, $index) if ($index != -1);
+			die "$file($.) EnumValues.$key doesn't exist\n" unless exists $EnumValues{$key};
+		}
+	}
+	close $info;
+}
+

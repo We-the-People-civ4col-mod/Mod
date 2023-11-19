@@ -79,6 +79,7 @@ class CvEuropeScreen:
 		self.SectorNames = dict([(0, 'NFrigid'), (1, 'NTemperate'), (2, 'NTropic'), (3, 'STropic'), (4, 'STemperate'), (5, 'SFrigid')])		
 		# R&R, vetiarvind, Navigation Sectors - END
 		self.bBookIntro, self.bBookOutro = False, False
+		self.show_tax_details = -1 # 0 - always hide details, 1 - always show details , -1 show iff No Hidden Variable is set
 	
 	def getScreen(self):
 		return CyGInterfaceScreen("EuropeScreen", CvScreenEnums.EUROPE_SCREEN)
@@ -284,11 +285,11 @@ class CvEuropeScreen:
 		screen.showWindowBackground(False)
 	
 		# Water Animation
-		screen.addUnitGraphicGFC("WaterAnim_Widget", gc.getInfoTypeForString("UNIT_CARAVEL"), -1, 0, 0, self.XResolution, self.XResolution, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, True)
+		screen.addUnitGraphicGFC("WaterAnim_Widget", UnitTypes.UNIT_CARAVEL, -1, 0, 0, self.XResolution, self.XResolution, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, True)
 	
 		# show background
 		if not self.iThisWinter:
-			if self.iVideo > 0 and iCurrentTurn % self.iVideo == 0 and not iCurrentTurn == 0 and not CyUserProfile().getGraphicOption(gc.getInfoTypeForString("GRAPHICOPTION_NO_MOVIES")):
+			if self.iVideo > 0 and iCurrentTurn % self.iVideo == 0 and not iCurrentTurn == 0 and not CyUserProfile().getGraphicOption(GraphicOptionTypes.GRAPHICOPTION_NO_MOVIES):
 				screen.playMovie("Art/Interface/Screens/Europe/intro.bik", 0, 0, self.XResolution, self.YResolution * 23 / 100, 0)
 				screen.addDDSGFC("EuropeScreenBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_BACKGROUND").getPath(), 0, 0, self.XResolution, self.YResolution, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 			else:
@@ -359,7 +360,7 @@ class CvEuropeScreen:
 		screen.setText(self.getNextWidgetName(), "Background", szExit, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - self.STANDARD_MARGIN, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1 )
 
 		szTaxRate = u"<font=4>" + localText.getText(hudColor, ()) + localText.getText("TXT_KEY_MISC_TAX_RATE", (player.getTaxRate(), player.NBMOD_GetMaxTaxRate())).upper() + u"</font>"
-		screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_HELP_TAX_CALCULATION, self.player_id , -1 )
+		screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_HELP_TAX_CALCULATION, self.player_id, self.show_tax_details)
 
 		
 		if (sdToolKit.sdGetVal('komaScreens', player.getID(), 'TradeBox') == False):

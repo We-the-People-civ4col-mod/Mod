@@ -169,8 +169,7 @@ sub createBat
 		print FH "set CONFIG_CFLAGS= -DHARDCODE_XML_VALUES\n";
 	}
 	
-	print FH "nmake source_list /NOLOGO && ^\n";
-	print FH "nmake fastdep /NOLOGO && ^\n";
+	print FH "bin\\jom source_list /NOLOGO && ^\n";
 	print FH "nmake precompile  /NOLOGO && ^\n";
 	print FH "bin\\jom build && ^\n";
 	

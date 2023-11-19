@@ -4654,6 +4654,7 @@ public:
 	const char* getPythonExpireCheck() const;
 	const char* getPythonCanDo() const;
 	const char* getPythonHelp() const;
+	const char* getHelpText() const;
 	const wchar* getUnitNameKey() const;
 	const wchar* getQuestFailTextKey() const;
 	const wchar* getOtherPlayerPopup() const;
@@ -4722,6 +4723,7 @@ private:
 	CvString m_szPythonExpireCheck;
 	CvString m_szPythonCanDo;
 	CvString m_szPythonHelp;
+	CvString m_szHelpText;
 	CvWString m_szUnitName;
 	CvWString m_szOtherPlayerPopup;
 	CvWString m_szQuestFailText;

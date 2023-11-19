@@ -145,7 +145,7 @@ class CvPediaProfession:
 				if Civilization.isValidProfession(iProfession):
 					break
 				
-			iDefaultPopulationUnit = Civilization.getCivilizationUnits(gc.getDefineINT("DEFAULT_POPULATION_UNIT"))
+			iDefaultPopulationUnit = Civilization.getCivilizationUnits(UnitClassTypes.DEFAULT_POPULATION_UNIT)
 			if gc.getUnitInfo(iDefaultPopulationUnit).getDefaultProfession() != ProfessionTypes.NO_PROFESSION:
 				iExpertUnit = iDefaultPopulationUnit
 		# TAC - Profession unit graphic fix - koma13 - END

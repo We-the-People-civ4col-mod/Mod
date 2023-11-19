@@ -8088,6 +8088,10 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 
 	int iNumUnits = 0;
 	CvUnitInfo& kUnitInfo = getUnitInfo();
+	const PromotionTypes kLeaderPromotion = kUnitInfo.getLeaderPromotion();
+
+	if (NO_PROMOTION == kLeaderPromotion) //this unit is not a leader
+		return 0;
 
 	if (-1 == iUnitId)
 	{
@@ -8097,10 +8101,10 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 			CvUnit* pUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 			// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
-			if (pUnit != NULL && pUnit != this &&
-				((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)))
+			if (pUnit != NULL && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() &&
+				((pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)))
 			{
-				if (pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->canPromote(kUnitInfo.getLeaderPromotion(), getID()))
+				if (pUnit->canPromote(kLeaderPromotion, getID()))
 				{
 					++iNumUnits;
 				}
@@ -8115,9 +8119,9 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 
 		// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
 		if (pUnit != NULL && pUnit != this &&
-			((kUnitInfo.getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (kUnitInfo.getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)))
+			((pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)))
 		{
-			if (pUnit->canPromote(kUnitInfo.getLeaderPromotion(), getID()))
+			if (pUnit->canPromote(kLeaderPromotion, getID()))
 			{
 				iNumUnits = 1;
 			}
@@ -10323,10 +10327,13 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 		}
 	}
 
+	// Note: Adding MOVE_MAX_MOVES to prevent the assert for non-ai usage of the group pathfinder since
+	// that shoud be safe here and is easier than adding another pf flag
+
 	CvCity* pSource = ::getCity(pTradeRoute->getSourceCity());
 	// TAC - Trade Routes Advisor - koma13 - START
 	//if (pSource == NULL || !generatePath(pSource->plot(), 0, bReusePath))
-	if (pSource == NULL || !generatePath(pSource->plot(), (isIgnoreDanger() ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), bReusePath))
+	if (pSource == NULL || !generatePath(pSource->plot(), (isIgnoreDanger() ? MOVE_IGNORE_DANGER | MOVE_MAX_MOVES : MOVE_NO_ENEMY_TERRITORY | MOVE_MAX_MOVES), bReusePath))
 	// TAC - Trade Routes Advisor - koma13 - END
 	{
 		return false;
@@ -10335,7 +10342,7 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 	CvCity* pDestination = ::getCity(pTradeRoute->getDestinationCity());
 	// TAC - Trade Routes Advisor - koma13 - START
 	//if (pDestination != NULL && !generatePath(pDestination->plot(), 0, bReusePath))
-	if (pDestination != NULL && !generatePath(pDestination->plot(), (isIgnoreDanger() ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), bReusePath))
+	if (pDestination != NULL && !generatePath(pDestination->plot(), (isIgnoreDanger() ? MOVE_IGNORE_DANGER | MOVE_MAX_MOVES : MOVE_NO_ENEMY_TERRITORY | MOVE_MAX_MOVES), bReusePath))
 	// TAC - Trade Routes Advisor - koma13 - END
 	{
 		return false;
@@ -12690,6 +12697,11 @@ PlayerTypes CvUnit::getVisualOwner(TeamTypes eForTeam) const
 	{
 		if (m_pUnitInfo->isHiddenNationality())
 		{
+			if (getOwnerINLINE() != plot()->getOwnerINLINE())
+			{
+				return UNKNOWN_PLAYER;
+			}
+
 			if (!plot()->isCity(true, getTeam()))
 			{
 				return UNKNOWN_PLAYER;

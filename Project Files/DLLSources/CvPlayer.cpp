@@ -3892,7 +3892,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					UnitTypes Colonial_Intervention_Unit3 = (UnitTypes)GC.getCivilizationInfo(kNativePlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_GREAT_GENERAL"));
 
 					// now let us see how much Gold the Natives have and how many Native Soldiers can be acquired
-					int iGoldCostPerUnit = GC.getCOLONIAL_INTERVENTION_NATIVE_WAR_GOLD_TO_PAY_PER_UNIT();
+					int iGoldCostPerUnit = GC.getCOLONIAL_INTERVENTION_NATIVE_WAR_GOLD_TO_PAY_PER_UNIT() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent() / 100;
 					while (kNativePlayer.getGold() > iGoldCostPerUnit)
 					{
 						kNativePlayer.changeGold(-iGoldCostPerUnit);

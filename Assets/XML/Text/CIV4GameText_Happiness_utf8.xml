@@ -5,374 +5,374 @@
 <!-- -->
 <!-- Game Text Infos -->
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_CITY_HAPPINESS</Tag>
-        <English>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] of City = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] total de la ville = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
-        <Russian>Всего [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в городе = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_CITY_UNHAPPINESS</Tag>
-        <English>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] of City = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] total de la ville = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
-        <Russian>Всего [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в городе = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_CITY_LAW</Tag>
-        <English>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] of City = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] total de la ville = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
-        <Russian>Всего [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в городе = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_CITY_CRIME</Tag>
-        <English>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] of City = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] total de la ville = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
-        <Russian>Всего [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в городе = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_YIELD_HAPPINESS_PRODUCED</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Buildings</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]avec les bâtiments</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gebäude</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от строений</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HAPPINESS_CROSSES</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]from Crosses</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]avec les croix</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kreuze</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Крестов</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HAPPINESS_BELLS</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]from Liberty Bells</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]avec les cloches de la libertés</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Freiheitsglocken</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Колоколов свободы</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HAPPINESS_HEALTH</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]from City Health</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]avec la santé</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gesundheit</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Здоровья</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HAPPINESS_CULTURE</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]from Culture</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]avec la culture</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kultur</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Культуры</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HAPPINESS_LAW</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]from Law</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]avec l'ordre</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gesetz</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Закона</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HAPPINESS_EDUCATION</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]from Education</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]avec l'éducation</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Bildung</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Образования</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HAPPINESS_DOMESTIC_DEMAND</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]from fulfilled Domestic Demand</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]avec les demandes du marché local satisfaites</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Verkauf auf Heimischen Markt</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от наполненности Внутреннего рынка</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HAPPINESS_TREATIES</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Treaties with other Europeans</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]avec les traités conclus avec les autres Européens</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Verträge mit anderen Europäern</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от договоров с другими европейцами</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_YIELD_UNHAPPINESS_PRODUCED</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Buildings</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]avec les bâtiments</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gebäude</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от строений</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNHAPPINESS_POPULATION</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Population size</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]à cause de la population</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Bevölkerungsgröße</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от численности населения</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNHAPPINESS_CRIME</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Crime in City</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]à cause du crime</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kriminalität</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от преступности в городе</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNHAPPINESS_SLAVERY</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Slaves</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]de la part des travailleurs forcés</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Sklavenhaltung</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от присутствия рабов</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNHAPPINESS_WARS</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Wars with other Europeans</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]à cause des guerres contre les autres Européens</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kriege mit anderen Europäern</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от войны с европейцами</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNHAPPINES_MISSING_DEFENSES</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Missing Protection</English>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]à cause des protections manquantes</English>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch fehlenden Schutz</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от отсутствия солдат в гарнизоне</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_UNHAPPINES_TAX_RATE</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by Tax Rate</English>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]dû aux taxes</English>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Besteuerung</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от ставки налога</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_YIELD_RATE_CROSSES_HAPPINESS_UNHAPPINESS</Tag>
-        <English>%d1%F2 per turn[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]from %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]from %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]from %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]from %F10</English>
-        <French>%d1%F2 par tour[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]de %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]de %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]de %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]de %F10</French>
-        <German>%d1%F2 pro Runde[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]durch %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]durch %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]durch %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]durch %F10</German>
-        <Italian>%d1%F2 per turno[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]de %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]de %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]de %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]de %F10</Italian>
-        <Spanish>%d1%F2 por turno[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]de %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]de %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]de %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]de %F10</Spanish>
-        <Russian>%d1%F2 за ход[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]от %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]от %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]от %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]от %F10</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HIGHER_IMMIGRATION_THRESHOLD_DUE_TO_UNITS_ON_DOCK</Tag>
-        <English>[NEWLINE][COLOR_NEGATIVE_TEXT]Immigration threshold increased by %d1%% [NEWLINE]due to many immigrants waiting on dock[COLOR_REVERT]</English>
-        <France>[NEWLINE][COLOR_NEGATIVE_TEXT]Le seuil d'émigration est relevé de %d1%% [NEWLINE]à cause des nombreux émigrants en attente sur le quai[COLOR_REVERT]</France>
-        <German>[NEWLINE][COLOR_NEGATIVE_TEXT]Grenzwert für Auswanderung um %d1%% erhöht [NEWLINE]da viele Auswanderer warten bereits am Dock[COLOR_REVERT]</German>
-        <Russian>[NEWLINE][COLOR_NEGATIVE_TEXT]Порог иммиграции увеличился на %d1%%[NEWLINE]из-за большого количества желающих отправиться в Новый Свет[COLOR_REVERT]</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_LAW_FROM_DEFENDERS</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by guards stationed in the city</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]dû à la garde stationnée dans la ville</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch stationierte Wachen der Stadt</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от солдат в гарнизоне</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_LAW_FROM_CROSSES</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by crosses produced</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]dû aux croix produites </French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch produzierte Kreuze</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от произведенных Крестов</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CRIME_FROM_POPULATION</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]by population size</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]dû à la population</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Stadtgröße</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от численности населения</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CRIME_FROM_UNHAPPINESS</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]caused by unhappiness</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]dû au mécontentement</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Unzurfriedenheit</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]из-за несчастных горожан</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CRIME_FROM_WARS</Tag>
-        <English>[ICON_BULLET]%d2%F3_Icon[TAB]caused by wars</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]dû aux guerres</French>
-        <German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kriege</German>
-        <Russian>[ICON_BULLET]%d2%F3_Icon[TAB]из-за боевых действий</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CRIME_BONUS_MODIFIER_OVERFLOWS</Tag>
-        <English>[ICON_BULLET]+%d2%%%F3_Icon[TAB]modifier due to full storage</English>
-        <French>[ICON_BULLET]%d2%F3_Icon[TAB]dû aux entrepôts qui débordent</French>
-        <German>[ICON_BULLET]+%d2%%%F3_Icon[TAB]Modifikator durch volle Lager</German>
-        <Russian>[ICON_BULLET]+%d2%%%F3_Icon[TAB]из-за заполненности хранилища</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_HAPPINESS_POSITIVE_EFFECTS</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]City Happiness[COLOR_REVERT][NEWLINE]The citizens are [COLOR_POSITIVE_TEXT]happy[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe increases[NEWLINE][ICON_BULLET]The population grows faster[NEWLINE][ICON_BULLET]Learning by Doing is faster[NEWLINE][ICON_BULLET]Slaves and Criminals become free faster[NEWLINE][ICON_BULLET]Slaves and Criminals run away less often[NEWLINE][ICON_BULLET]Slaves and Criminals revolt less often[NEWLINE][ICON_BULLET]Domestic Market profits increase[NEWLINE][ICON_BULLET]Entertainment profits increase[NEWLINE][NEWLINE]High Happiness can cause [COLOR_POSITIVE_TEXT]Festivities[COLOR_REVERT]</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]Bonheur de la ville[COLOR_REVERT][NEWLINE]Les citoyens sont [COLOR_POSITIVE_TEXT]heureux[COLOR_REVERT][NEWLINE][NEWLINE]Les effets :[NEWLINE][ICON_BULLET]L'immigration venant d'Europe augmente[NEWLINE][ICON_BULLET]La population croît plus vite[NEWLINE][ICON_BULLET]L'apprentissage sur le tas est plus rapide[NEWLINE][ICON_BULLET]Les esclaves et les forçats s'émancipent plus vite[NEWLINE][ICON_BULLET]Les esclaves et les forçats s'enfuient moins souvent[NEWLINE][ICON_BULLET]Les esclaves et les forçats se révoltent moins souvent[NEWLINE][ICON_BULLET]Les profits sur le marché local croissent[NEWLINE][ICON_BULLET]Les profits de divertissement croissent[NEWLINE][NEWLINE]Le bonheur élevé peut entrainer des [COLOR_POSITIVE_TEXT]Célébrations[COLOR_REVERT]</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_POSITIVE_TEXT]glücklich[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa erhöht[NEWLINE][ICON_BULLET]Bevölkerung wächst schneller[NEWLINE][ICON_BULLET]Erlernen eines Berufes durch Ausübung beschleunigt[NEWLINE][ICON_BULLET]Sklaven und Kriminelle werden schneller freie Siedler[NEWLINE][ICON_BULLET]Sklaven und Kriminelle flüchten weniger oft[NEWLINE][ICON_BULLET]Sklaven und Kriminelle revoltieren weniger oft[NEWLINE][ICON_BULLET]Höhere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Höhere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Hohe Zufriedenheit kann zu Feierlichkeiten führen</German>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]Городское счастье[COLOR_REVERT][NEWLINE]Горожане [COLOR_POSITIVE_TEXT]счастливы[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]увеличивается иммиграция из Европы[NEWLINE][ICON_BULLET]население увеличивается быстрее[NEWLINE][ICON_BULLET]обучение профессии на практике происходит быстрее[NEWLINE][ICON_BULLET]рабы и преступники могут получить свободу быстрее[NEWLINE][ICON_BULLET]рабы и преступники реже убегают[NEWLINE][ICON_BULLET]рабы и преступники реже бунтуют[NEWLINE][ICON_BULLET]увеличивается прибыль на Внутреннем рынке[NEWLINE][ICON_BULLET]увеличивается прибыль от развлечений[NEWLINE][NEWLINE]высокий уровень счастья способствует проведению [COLOR_POSITIVE_TEXT]празднеств[COLOR_REVERT]</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_HAPPINESS_NEGATIVE_EFFECTS </Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]City Happiness[COLOR_REVERT][NEWLINE]The citizens are [COLOR_NEGATIVE_TEXT]unhappy[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe decreases[NEWLINE][ICON_BULLET]The population grows slower[NEWLINE][ICON_BULLET]Learning by Doing is slower[NEWLINE][ICON_BULLET]Slaves and Criminals become free more slowly[NEWLINE][ICON_BULLET]Slaves and Criminals run away more often[NEWLINE][ICON_BULLET]Slaves and Criminals revolt more often[NEWLINE][ICON_BULLET]Domestic Market profits decrease[NEWLINE][ICON_BULLET]Entertainment profits decrease[NEWLINE][NEWLINE]High Unhappiness can cause [COLOR_NEGATIVE_TEXT]Unrest[COLOR_REVERT]</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]Bonheur de la ville[COLOR_REVERT][NEWLINE]Les citoyens sont [COLOR_NEGATIVE_TEXT]mécontents[COLOR_REVERT][NEWLINE][NEWLINE]Les effets :[NEWLINE][ICON_BULLET]L'immigration venant d'Europe diminue[NEWLINE][ICON_BULLET]La population croît moins vite[NEWLINE][ICON_BULLET]L'apprentissage sur le tas est plus lent[NEWLINE][ICON_BULLET]Les esclaves et les forçats s'émancipent moins vite[NEWLINE][ICON_BULLET]Les esclaves et les forçats s'enfuient plus souvent[NEWLINE][ICON_BULLET]Les esclaves et les forçats se révoltent plus souvent[NEWLINE][ICON_BULLET]Les profits sur le marché local chutent[NEWLINE][ICON_BULLET]Les profits de divertissement chutent[NEWLINE][NEWLINE]Un mécontetement élevé peut provoquer des [COLOR_NEGATIVE_TEXT]émeutes[COLOR_REVERT]</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_NEGATIVE_TEXT]unglücklich[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa sinkt[NEWLINE][ICON_BULLET]Bevölkerung wächst langsamer[NEWLINE][ICON_BULLET]Erlernen eines Berufes durch Ausübung verlangsamt[NEWLINE][ICON_BULLET]Sklaven und Kriminelle werden langsamer freie Siedler[NEWLINE][ICON_BULLET]Sklaven und Kriminelle flüchten öfter[NEWLINE][ICON_BULLET]Sklaven und Kriminelle revoltieren öfter[NEWLINE][ICON_BULLET]Geringere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Geringere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Hohe Unzufriedenheit kann zu Unruhen führen</German>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]Городское счастье[COLOR_REVERT][NEWLINE]Горожане [COLOR_NEGATIVE_TEXT]несчастны[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]уменьшается иммиграция из Европы[NEWLINE][ICON_BULLET]население увеличивается медленнее[NEWLINE][ICON_BULLET]обучение профессии на практике происходит медленнее[NEWLINE][ICON_BULLET]рабы и преступники могут получить свободу не скоро[NEWLINE][ICON_BULLET]рабы и преступники щаче устраивают побеги[NEWLINE][ICON_BULLET]рабы и преступники чаще устраивают бунты[NEWLINE][ICON_BULLET]уменьшается прибыль на Внутреннем рынке[NEWLINE][ICON_BULLET]уменьшается прибыль от развлечений[NEWLINE][NEWLINE]высокий уровень несчастья может вызвать [COLOR_NEGATIVE_TEXT]беспорядки[COLOR_REVERT]</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_HAPPINESS_ZERO_EFFECTS</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]City Happiness[COLOR_REVERT][NEWLINE]The citizens are [COLOR_SELECTED_TEXT]neither happy nor unhappy[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]No current effects</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]City Happiness[COLOR_REVERT][NEWLINE]Les citoyens ne sont [COLOR_SELECTED_TEXT]ni heureux ni mécontents[COLOR_REVERT][NEWLINE][NEWLINE]Effets :[NEWLINE][ICON_BULLET]Aucun effet notable</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_SELECTED_TEXT]weder glücklich noch unglücklich[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]aktuell keine Effekte</German>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]Городское счастье[COLOR_REVERT][NEWLINE]Горожане [COLOR_SELECTED_TEXT]спокойны[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]все спокойно, ничего не происходит</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_LAW_POSITIVE_EFFECTS</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]City Law[COLOR_REVERT][NEWLINE]The citizens are [COLOR_POSITIVE_TEXT]law abiding[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe increases[NEWLINE][ICON_BULLET]Happiness increases[NEWLINE][ICON_BULLET]Founding Father Points generated[NEWLINE][ICON_BULLET]Domestic Market profits increase[NEWLINE][ICON_BULLET]Entertainment profits increase[NEWLINE][ICON_BULLET]Severe effects of crime prevented</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]Ordre dans la ville[COLOR_REVERT][NEWLINE]Les citoyens sont [COLOR_POSITIVE_TEXT]respectueux des lois[COLOR_REVERT][NEWLINE]Effets ;[NEWLINE][ICON_BULLET]L'émigration en Europe est plus importante[NEWLINE][ICON_BULLET]Les gens sont plus heureux[NEWLINE][ICON_BULLET]La ville génère plus de points de Père fondateur[NEWLINE][ICON_BULLET]Les profits sur le marché local croissent[NEWLINE][ICON_BULLET]Les profits de divertissement croissent[NEWLINE][ICON_BULLET]Les pires effets du crime sont évités</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Gesetz[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_POSITIVE_TEXT]gesetzestreu[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa erhöht[NEWLINE][ICON_BULLET]Zufriedenheit steigt[NEWLINE][ICON_BULLET]Gründerväterpunkte generiert[NEWLINE][ICON_BULLET]Höhere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Höhere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Schlimmste Auswirkungen der Kriminalität verhindert</German>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]Соблюдение закона[COLOR_REVERT][NEWLINE]Горожане [COLOR_POSITIVE_TEXT]законопослушны[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]увеличивается иммиграция из Европы[NEWLINE][ICON_BULLET]увеличивается счастье[NEWLINE][ICON_BULLET]генерируются очки Отцов основателей[NEWLINE][ICON_BULLET]увеличивается прибыль на Внутреннем рынке[NEWLINE][ICON_BULLET]увеличивается прибыль от развлечений[NEWLINE][ICON_BULLET]предотвращаются тяжелые последствия преступлений</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_LAW_NEGATIVE_EFFECTS </Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]City Crime[COLOR_REVERT][NEWLINE]The citizens are [COLOR_NEGATIVE_TEXT]criminal[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe decreases[NEWLINE][ICON_BULLET]Happiness decreases[NEWLINE][ICON_BULLET]Domestic Market profits decrease[NEWLINE][ICON_BULLET]Entertainment profits decrease[NEWLINE][ICON_BULLET]High Crime can cause [COLOR_NEGATIVE_TEXT]Unrest[COLOR_REVERT][NEWLINE][ICON_BULLET]Gold is being stolen from cities</English>
-        <French>[COLOR_HIGHLIGHT_TEXT]Crime dans la ville[COLOR_REVERT][NEWLINE]Les citoyens sont [COLOR_NEGATIVE_TEXT]délinquants[COLOR_REVERT][NEWLINE]Effets ;[NEWLINE][ICON_BULLET]L'émigration en Europe est plus basse[NEWLINE][ICON_BULLET]Les gens sont mécontents[ICON_BULLET]Les profits sur le marché local baissent[NEWLINE][ICON_BULLET]Les profits de divertissement baissent[NEWLINE][ICON_BULLET]Un niveau élevé de crime peut provoquer des [COLOR_NEGATIVE_TEXT]émeutes[COLOR_REVERT][NEWLINE][ICON_BULLET]L'argent est volé des coffres de la ville.</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Kriminalität[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_NEGATIVE_TEXT]kriminell[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa sinkt[NEWLINE][ICON_BULLET]Zufriedenheit sinkt[NEWLINE][ICON_BULLET]Geringere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Geringere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Hohe Kriminalität kann zu Unruhen führen[NEWLINE][ICON_BULLET]Gold wird aus den Städten gestohlen</German>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]Преступность в городе[COLOR_REVERT][NEWLINE]Горожане [COLOR_NEGATIVE_TEXT]преступники[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]уменьшается иммиграция из Европы[NEWLINE][ICON_BULLET]уменьшается счастье[NEWLINE][ICON_BULLET]уменьшается прибыль на Внутреннем рынке[NEWLINE][ICON_BULLET]уменьшается прибыль от развлечений[NEWLINE][ICON_BULLET]высокая преступность может вызвать [COLOR_NEGATIVE_TEXT]беспорядки[COLOR_REVERT][NEWLINE][ICON_BULLET]воровство золота из казны</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_LAW_ZERO_EFFECTS</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]City Law[COLOR_REVERT][NEWLINE]The citizens are [COLOR_SELECTED_TEXT]neither law abiding nor criminal[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]No current effects</English>
-        <English>[COLOR_HIGHLIGHT_TEXT]Ordre dans la ville[COLOR_REVERT][NEWLINE]Les citoyens ne sont [COLOR_SELECTED_TEXT]ni respectueux des lois ni délinquants[COLOR_REVERT][NEWLINE][NEWLINE]Effets :[NEWLINE][ICON_BULLET]Aucun effet notable</English>
-        <German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_SELECTED_TEXT]weder gesetzestreu noch kriminell[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]aktuell keine Effekte</German>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]Спокойный город[COLOR_REVERT][NEWLINE]Горожане не являются [COLOR_SELECTED_TEXT]ни законопослушными, ни преступниками[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]все спокойно, ничего не происходит</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_CITY_HAPPINESS_BILLBOARD</Tag>
-        <English>Happiness in the City : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
-        <French>Bonheur de la ville : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</French>
-        <German>Zufriedenheit der Stadt : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
-        <Russian>Счастье в городе : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_CITY_UNHAPPINESS_BILLBOARD</Tag>
-        <English>Unhappiness in the City : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
-        <French>Mécontentement de la ville : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</French>
-        <German>Unzufriedenheit der Stadt : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
-        <Russian>Несчастье в городе : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_CITY_LAW_BILLBOARD</Tag>
-        <English>Law in the City : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
-        <French>Ordre dans la ville : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</French>
-        <German>Gesetz der Stadt : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
-        <Russian>Закон в городе : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TOTAL_CITY_CRIME_BILLBOARD</Tag>
-        <English>Crime in the City : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
-        <French>Crime dans la ville : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</French>
-        <German>Verbrechen der Stadt : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
-        <Russian>Преступность в городе : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_HARBOR_STILL_FREE</Tag>
-        <English>Harbour space available : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
-        <German>Ankerplätze in der Stadt : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
-        <Russian>Доступное место в гавани : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_HARBOR_ALMOST_FULL</Tag>
-        <English>Last chance to dock here : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
-        <German>Ankerplätze in der Stadt : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
-        <Russian>Мест у причала почти не осталось : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_HARBOR_TOTALLY_FULL</Tag>
-        <English>Harbour is now full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
-        <German>Ankerplätze in der Stadt : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
-        <Russian>Гавань больше не может принимать корабли : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_BAR_HARBOUR_FULL</Tag>
-        <English>[COLOR_NEGATIVE_TEXT] Harbour full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
-        <French>[COLOR_NEGATIVE_TEXT] Trop-plein du port : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</French>
-        <German>[COLOR_NEGATIVE_TEXT] Hafen voll : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
-        <Russian>[COLOR_NEGATIVE_TEXT] Гавань заполнена, мест нет : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_BARRACKS_STILL_FREE</Tag>
-        <English>Barracks space available : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
-        <French>Espace disponible en baraquement :  [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon </French>
-        <German>Kasernenplätze in der Stadt : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
-        <Russian>Свободных мест в казармах : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_BARRACKS_ALMOST_FULL</Tag>
-        <English>Barracks almost full : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
-        <French>Les baraquements sont quasi-pleins :  [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon </French>
-        <German>Kasernenplätze fast voll : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
-        <Russian>Казармы почти заполнены : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_BARRACKS_TOTALLY_FULL</Tag>
-        <English>Barracks are now full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
-        <French>Les baraquements sont pleins :  [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon </French>
-        <German>Kasernenplätze jetzt voll : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
-        <Russian>В казармах нет свободных мест : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_BAR_BARRACKS_FULL</Tag>
-        <English>[COLOR_NEGATIVE_TEXT] Barracks full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
-        <French>[COLOR_NEGATIVE_TEXT] Trop-plein des baraquements : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon </French>
-        <German>[COLOR_NEGATIVE_TEXT] Kaserne voll : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
-        <Russian>[COLOR_NEGATIVE_TEXT] Казармы заполнены, мест нет : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_UNREST_BECAUSE_UNHAPPINESS</Tag>
-        <English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high Unhappiness has caused Unrest.</English>
-        <French>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le niveau de mécontentement élevé a entrainé des émeutes.</French>
-        <German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Unzufriedenheit in der Stadt hat zu Unruhen geführt.</German>
-        <Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокий уровень несчастья привел к беспорядкам.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FESTIVITIES_BECAUSE_HAPPINESS</Tag>
-        <English>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high Happiness has led to festivities that generated %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</English>
-        <French>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le niveau de bonheur élevé a été célébré, et nous en avons reçu %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</French>
-        <German>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Zufriedenheit in der Stadt hat zu Feierlichkeiten geführt, die %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT] erzeugt haben.</German>
-        <Russian>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокое счастье привело к празднествам, которые принесли %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_UNREST_BECAUSE_CRIME</Tag>
-        <English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high crime in the city has caused unrest.</English>
-        <French>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le taux de crime élevé a entrainé des émeutes.</French>
-        <German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Kriminalität in der Stadt hat zu Unruhen geführt.</German>
-        <Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокая преступность в городе вызвала беспорядки.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_GOLD_STOLEN_BECAUSE_CRIME</Tag>
-        <English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high crime in the city has led to gold being stolen.</English>
-        <French>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le taux de crime élevé a entrainé le vol d'argent dans vos coffres.</French>
-        <German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Kriminalität in der Stadt hat dazu geführt, dass Gold gestohlen wurde.</German>
-        <Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокий уровень преступности в городе привел к краже золота.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_UNHAPPINESS_SLAVES_MODIFIER</Tag>
-        <English>[ICON_BULLET]%D1%% less %F2_Icon from Slaves in Cities</English>
-        <French>[ICON_BULLET]%D1%% %F2_Icon en moins à cause des esclaves dans les villes.</French>
-        <German>[ICON_BULLET]%D1%% weniger %F2_Icon durch Sklavenhaltung in Städten</German>
-        <Russian>[ICON_BULLET]%D1%% к %F2_Icon от Рабов в городе</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_POSITIVE</Tag>
-        <English>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high happiness has caused increased domestic demand and prices.</English>
-        <French>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le niveau de bonheur élevé a provoqué la hausse des prix et de la demande du marché local.</French>
-        <German>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Zufriedenheit hat zu erhöhten Preisen und starker Nachfrage geführt.</German>
-        <Russian>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокий уровень счастья вызвал увеличение внутреннего спроса и цен.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_NEGATIVE</Tag>
-        <English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high unhappiness has caused decreased domestic demand and prices.</English>
-        <French>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le niveau de mécontentement élevé a provoqué la baisse des prix et de la demande du marché local.</French>
-        <German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Unzufriedenheit hat zu reduzierten Preisen und geringer Nachfrage geführt.</German>
-        <Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Из-за недовольства снизился внутренний спрос и цены.</Russian>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_CITY_HAPPINESS</Tag>
+		<English>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] of City = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] total de la ville = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
+		<Russian>Всего [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в городе = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_CITY_UNHAPPINESS</Tag>
+		<English>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] of City = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] total de la ville = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
+		<Russian>Всего [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в городе = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_CITY_LAW</Tag>
+		<English>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] of City = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] total de la ville = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
+		<Russian>Всего [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в городе = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_CITY_CRIME</Tag>
+		<English>Total [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] of City = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] total de la ville = [COLOR_POSITIVE_TEXT]%d2[COLOR_REVERT]%F3_Icon</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] der Stadt = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</German>
+		<Russian>Всего [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в городе = [COLOR_WARNING_TEXT]%d2[COLOR_REVERT]%F3_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_HAPPINESS_PRODUCED</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Buildings</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]avec les bâtiments</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gebäude</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от строений</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_CROSSES</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from Crosses</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]avec les croix</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kreuze</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Крестов</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_BELLS</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from Liberty Bells</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]avec les cloches de la libertés</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Freiheitsglocken</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Колоколов свободы</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_HEALTH</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from City Health</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]avec la santé</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gesundheit</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Здоровья</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_CULTURE</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from Culture</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]avec la culture</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kultur</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Культуры</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_LAW</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from Law</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]avec l'ordre</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gesetz</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Закона</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_EDUCATION</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from Education</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]avec l'éducation</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Bildung</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от Образования</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_DOMESTIC_DEMAND</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]from fulfilled Domestic Demand</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]avec les demandes du marché local satisfaites</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Verkauf auf Heimischen Markt</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от наполненности Внутреннего рынка</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HAPPINESS_TREATIES</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Treaties with other Europeans</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]avec les traités conclus avec les autres Européens</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Verträge mit anderen Europäern</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от договоров с другими европейцами</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_UNHAPPINESS_PRODUCED</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Buildings</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]avec les bâtiments</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Gebäude</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от строений</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNHAPPINESS_POPULATION</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Population size</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]à cause de la population</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Bevölkerungsgröße</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от численности населения</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNHAPPINESS_CRIME</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Crime in City</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]à cause du crime</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kriminalität</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от преступности в городе</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNHAPPINESS_SLAVERY</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Slaves</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]de la part des travailleurs forcés</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Sklavenhaltung</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от присутствия рабов</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNHAPPINESS_WARS</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Wars with other Europeans</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]à cause des guerres contre les autres Européens</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kriege mit anderen Europäern</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от войны с европейцами</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNHAPPINES_MISSING_DEFENSES</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Missing Protection</English>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]à cause des protections manquantes</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch fehlenden Schutz</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от отсутствия солдат в гарнизоне</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNHAPPINES_TAX_RATE</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by Tax Rate</English>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]dû aux taxes</English>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Besteuerung</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от ставки налога</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_RATE_CROSSES_HAPPINESS_UNHAPPINESS</Tag>
+		<English>%d1%F2 per turn[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]from %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]from %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]from %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]from %F10</English>
+		<French>%d1%F2 par tour[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]de %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]de %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]de %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]de %F10</French>
+		<German>%d1%F2 pro Runde[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]durch %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]durch %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]durch %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]durch %F10</German>
+		<Italian>%d1%F2 per turno[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]de %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]de %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]de %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]de %F10</Italian>
+		<Spanish>%d1%F2 por turno[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]de %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]de %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]de %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]de %F10</Spanish>
+		<Russian>%d1%F2 за ход[NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d3%[COLOR_REVERT][SPACE][TAB][SPACE]от %F4 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d5%[SPACE][TAB][SPACE][COLOR_REVERT]от %F6 [NEWLINE][COLOR_POSITIVE_TEXT][SPACE]+%d7%[COLOR_REVERT][SPACE][TAB][SPACE]от %F8 [NEWLINE][COLOR_NEGATIVE_TEXT][SPACE]-%d9%[SPACE][TAB][SPACE][COLOR_REVERT]от %F10</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HIGHER_IMMIGRATION_THRESHOLD_DUE_TO_UNITS_ON_DOCK</Tag>
+		<English>[NEWLINE][COLOR_NEGATIVE_TEXT]Immigration threshold increased by %d1%% [NEWLINE]due to many immigrants waiting on dock[COLOR_REVERT]</English>
+		<France>[NEWLINE][COLOR_NEGATIVE_TEXT]Le seuil d'émigration est relevé de %d1%% [NEWLINE]à cause des nombreux émigrants en attente sur le quai[COLOR_REVERT]</France>
+		<German>[NEWLINE][COLOR_NEGATIVE_TEXT]Grenzwert für Auswanderung um %d1%% erhöht [NEWLINE]da viele Auswanderer warten bereits am Dock[COLOR_REVERT]</German>
+		<Russian>[NEWLINE][COLOR_NEGATIVE_TEXT]Порог иммиграции увеличился на %d1%%[NEWLINE]из-за большого количества желающих отправиться в Новый Свет[COLOR_REVERT]</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LAW_FROM_DEFENDERS</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by guards stationed in the city</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]dû à la garde stationnée dans la ville</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch stationierte Wachen der Stadt</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от солдат в гарнизоне</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LAW_FROM_CROSSES</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by crosses produced</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]dû aux croix produites </French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch produzierte Kreuze</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от произведенных Крестов</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CRIME_FROM_POPULATION</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]by population size</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]dû à la population</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Stadtgröße</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]от численности населения</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CRIME_FROM_UNHAPPINESS</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]caused by unhappiness</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]dû au mécontentement</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Unzurfriedenheit</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]из-за несчастных горожан</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CRIME_FROM_WARS</Tag>
+		<English>[ICON_BULLET]%d2%F3_Icon[TAB]caused by wars</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]dû aux guerres</French>
+		<German>[ICON_BULLET]%d2%F3_Icon[TAB]durch Kriege</German>
+		<Russian>[ICON_BULLET]%d2%F3_Icon[TAB]из-за боевых действий</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CRIME_BONUS_MODIFIER_OVERFLOWS</Tag>
+		<English>[ICON_BULLET]+%d2%%%F3_Icon[TAB]modifier due to full storage</English>
+		<French>[ICON_BULLET]%d2%F3_Icon[TAB]dû aux entrepôts qui débordent</French>
+		<German>[ICON_BULLET]+%d2%%%F3_Icon[TAB]Modifikator durch volle Lager</German>
+		<Russian>[ICON_BULLET]+%d2%%%F3_Icon[TAB]из-за заполненности хранилища</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_HAPPINESS_POSITIVE_EFFECTS</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]City Happiness[COLOR_REVERT][NEWLINE]The citizens are [COLOR_POSITIVE_TEXT]happy[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe increases[NEWLINE][ICON_BULLET]The population grows faster[NEWLINE][ICON_BULLET]Learning by Doing is faster[NEWLINE][ICON_BULLET]Slaves and Criminals become free faster[NEWLINE][ICON_BULLET]Slaves and Criminals run away less often[NEWLINE][ICON_BULLET]Slaves and Criminals revolt less often[NEWLINE][ICON_BULLET]Domestic Market profits increase[NEWLINE][ICON_BULLET]Entertainment profits increase[NEWLINE][NEWLINE]High Happiness can cause [COLOR_POSITIVE_TEXT]Festivities[COLOR_REVERT]</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Bonheur de la ville[COLOR_REVERT][NEWLINE]Les citoyens sont [COLOR_POSITIVE_TEXT]heureux[COLOR_REVERT][NEWLINE][NEWLINE]Les effets :[NEWLINE][ICON_BULLET]L'immigration venant d'Europe augmente[NEWLINE][ICON_BULLET]La population croît plus vite[NEWLINE][ICON_BULLET]L'apprentissage sur le tas est plus rapide[NEWLINE][ICON_BULLET]Les esclaves et les forçats s'émancipent plus vite[NEWLINE][ICON_BULLET]Les esclaves et les forçats s'enfuient moins souvent[NEWLINE][ICON_BULLET]Les esclaves et les forçats se révoltent moins souvent[NEWLINE][ICON_BULLET]Les profits sur le marché local croissent[NEWLINE][ICON_BULLET]Les profits de divertissement croissent[NEWLINE][NEWLINE]Le bonheur élevé peut entrainer des [COLOR_POSITIVE_TEXT]Célébrations[COLOR_REVERT]</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_POSITIVE_TEXT]glücklich[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa erhöht[NEWLINE][ICON_BULLET]Bevölkerung wächst schneller[NEWLINE][ICON_BULLET]Erlernen eines Berufes durch Ausübung beschleunigt[NEWLINE][ICON_BULLET]Sklaven und Kriminelle werden schneller freie Siedler[NEWLINE][ICON_BULLET]Sklaven und Kriminelle flüchten weniger oft[NEWLINE][ICON_BULLET]Sklaven und Kriminelle revoltieren weniger oft[NEWLINE][ICON_BULLET]Höhere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Höhere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Hohe Zufriedenheit kann zu Feierlichkeiten führen</German>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Городское счастье[COLOR_REVERT][NEWLINE]Горожане [COLOR_POSITIVE_TEXT]счастливы[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]увеличивается иммиграция из Европы[NEWLINE][ICON_BULLET]население увеличивается быстрее[NEWLINE][ICON_BULLET]обучение профессии на практике происходит быстрее[NEWLINE][ICON_BULLET]рабы и преступники могут получить свободу быстрее[NEWLINE][ICON_BULLET]рабы и преступники реже убегают[NEWLINE][ICON_BULLET]рабы и преступники реже бунтуют[NEWLINE][ICON_BULLET]увеличивается прибыль на Внутреннем рынке[NEWLINE][ICON_BULLET]увеличивается прибыль от развлечений[NEWLINE][NEWLINE]высокий уровень счастья способствует проведению [COLOR_POSITIVE_TEXT]празднеств[COLOR_REVERT]</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_HAPPINESS_NEGATIVE_EFFECTS </Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]City Happiness[COLOR_REVERT][NEWLINE]The citizens are [COLOR_NEGATIVE_TEXT]unhappy[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe decreases[NEWLINE][ICON_BULLET]The population grows slower[NEWLINE][ICON_BULLET]Learning by Doing is slower[NEWLINE][ICON_BULLET]Slaves and Criminals become free more slowly[NEWLINE][ICON_BULLET]Slaves and Criminals run away more often[NEWLINE][ICON_BULLET]Slaves and Criminals revolt more often[NEWLINE][ICON_BULLET]Domestic Market profits decrease[NEWLINE][ICON_BULLET]Entertainment profits decrease[NEWLINE][NEWLINE]High Unhappiness can cause [COLOR_NEGATIVE_TEXT]Unrest[COLOR_REVERT]</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Bonheur de la ville[COLOR_REVERT][NEWLINE]Les citoyens sont [COLOR_NEGATIVE_TEXT]mécontents[COLOR_REVERT][NEWLINE][NEWLINE]Les effets :[NEWLINE][ICON_BULLET]L'immigration venant d'Europe diminue[NEWLINE][ICON_BULLET]La population croît moins vite[NEWLINE][ICON_BULLET]L'apprentissage sur le tas est plus lent[NEWLINE][ICON_BULLET]Les esclaves et les forçats s'émancipent moins vite[NEWLINE][ICON_BULLET]Les esclaves et les forçats s'enfuient plus souvent[NEWLINE][ICON_BULLET]Les esclaves et les forçats se révoltent plus souvent[NEWLINE][ICON_BULLET]Les profits sur le marché local chutent[NEWLINE][ICON_BULLET]Les profits de divertissement chutent[NEWLINE][NEWLINE]Un mécontetement élevé peut provoquer des [COLOR_NEGATIVE_TEXT]émeutes[COLOR_REVERT]</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_NEGATIVE_TEXT]unglücklich[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa sinkt[NEWLINE][ICON_BULLET]Bevölkerung wächst langsamer[NEWLINE][ICON_BULLET]Erlernen eines Berufes durch Ausübung verlangsamt[NEWLINE][ICON_BULLET]Sklaven und Kriminelle werden langsamer freie Siedler[NEWLINE][ICON_BULLET]Sklaven und Kriminelle flüchten öfter[NEWLINE][ICON_BULLET]Sklaven und Kriminelle revoltieren öfter[NEWLINE][ICON_BULLET]Geringere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Geringere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Hohe Unzufriedenheit kann zu Unruhen führen</German>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Городское счастье[COLOR_REVERT][NEWLINE]Горожане [COLOR_NEGATIVE_TEXT]несчастны[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]уменьшается иммиграция из Европы[NEWLINE][ICON_BULLET]население увеличивается медленнее[NEWLINE][ICON_BULLET]обучение профессии на практике происходит медленнее[NEWLINE][ICON_BULLET]рабы и преступники могут получить свободу не скоро[NEWLINE][ICON_BULLET]рабы и преступники щаче устраивают побеги[NEWLINE][ICON_BULLET]рабы и преступники чаще устраивают бунты[NEWLINE][ICON_BULLET]уменьшается прибыль на Внутреннем рынке[NEWLINE][ICON_BULLET]уменьшается прибыль от развлечений[NEWLINE][NEWLINE]высокий уровень несчастья может вызвать [COLOR_NEGATIVE_TEXT]беспорядки[COLOR_REVERT]</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_HAPPINESS_ZERO_EFFECTS</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]City Happiness[COLOR_REVERT][NEWLINE]The citizens are [COLOR_SELECTED_TEXT]neither happy nor unhappy[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]No current effects</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]City Happiness[COLOR_REVERT][NEWLINE]Les citoyens ne sont [COLOR_SELECTED_TEXT]ni heureux ni mécontents[COLOR_REVERT][NEWLINE][NEWLINE]Effets :[NEWLINE][ICON_BULLET]Aucun effet notable</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_SELECTED_TEXT]weder glücklich noch unglücklich[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]aktuell keine Effekte</German>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Городское счастье[COLOR_REVERT][NEWLINE]Горожане [COLOR_SELECTED_TEXT]спокойны[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]все спокойно, ничего не происходит</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_LAW_POSITIVE_EFFECTS</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]City Law[COLOR_REVERT][NEWLINE]The citizens are [COLOR_POSITIVE_TEXT]law abiding[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe increases[NEWLINE][ICON_BULLET]Happiness increases[NEWLINE][ICON_BULLET]Founding Father Points generated[NEWLINE][ICON_BULLET]Domestic Market profits increase[NEWLINE][ICON_BULLET]Entertainment profits increase[NEWLINE][ICON_BULLET]Severe effects of crime prevented</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Ordre dans la ville[COLOR_REVERT][NEWLINE]Les citoyens sont [COLOR_POSITIVE_TEXT]respectueux des lois[COLOR_REVERT][NEWLINE]Effets ;[NEWLINE][ICON_BULLET]L'émigration en Europe est plus importante[NEWLINE][ICON_BULLET]Les gens sont plus heureux[NEWLINE][ICON_BULLET]La ville génère plus de points de Père fondateur[NEWLINE][ICON_BULLET]Les profits sur le marché local croissent[NEWLINE][ICON_BULLET]Les profits de divertissement croissent[NEWLINE][ICON_BULLET]Les pires effets du crime sont évités</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Gesetz[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_POSITIVE_TEXT]gesetzestreu[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa erhöht[NEWLINE][ICON_BULLET]Zufriedenheit steigt[NEWLINE][ICON_BULLET]Gründerväterpunkte generiert[NEWLINE][ICON_BULLET]Höhere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Höhere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Schlimmste Auswirkungen der Kriminalität verhindert</German>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Соблюдение закона[COLOR_REVERT][NEWLINE]Горожане [COLOR_POSITIVE_TEXT]законопослушны[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]увеличивается иммиграция из Европы[NEWLINE][ICON_BULLET]увеличивается счастье[NEWLINE][ICON_BULLET]генерируются очки Отцов основателей[NEWLINE][ICON_BULLET]увеличивается прибыль на Внутреннем рынке[NEWLINE][ICON_BULLET]увеличивается прибыль от развлечений[NEWLINE][ICON_BULLET]предотвращаются тяжелые последствия преступлений</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_LAW_NEGATIVE_EFFECTS </Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]City Crime[COLOR_REVERT][NEWLINE]The citizens are [COLOR_NEGATIVE_TEXT]criminal[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]Immigration from Europe decreases[NEWLINE][ICON_BULLET]Happiness decreases[NEWLINE][ICON_BULLET]Domestic Market profits decrease[NEWLINE][ICON_BULLET]Entertainment profits decrease[NEWLINE][ICON_BULLET]High Crime can cause [COLOR_NEGATIVE_TEXT]Unrest[COLOR_REVERT][NEWLINE][ICON_BULLET]Gold is being stolen from cities</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Crime dans la ville[COLOR_REVERT][NEWLINE]Les citoyens sont [COLOR_NEGATIVE_TEXT]délinquants[COLOR_REVERT][NEWLINE]Effets ;[NEWLINE][ICON_BULLET]L'émigration en Europe est plus basse[NEWLINE][ICON_BULLET]Les gens sont mécontents[ICON_BULLET]Les profits sur le marché local baissent[NEWLINE][ICON_BULLET]Les profits de divertissement baissent[NEWLINE][ICON_BULLET]Un niveau élevé de crime peut provoquer des [COLOR_NEGATIVE_TEXT]émeutes[COLOR_REVERT][NEWLINE][ICON_BULLET]L'argent est volé des coffres de la ville.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Kriminalität[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_NEGATIVE_TEXT]kriminell[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]Auswanderung aus Europa sinkt[NEWLINE][ICON_BULLET]Zufriedenheit sinkt[NEWLINE][ICON_BULLET]Geringere Profite durch heimischen Markt[NEWLINE][ICON_BULLET]Geringere Profite durch Unterhaltung[NEWLINE][ICON_BULLET]Hohe Kriminalität kann zu Unruhen führen[NEWLINE][ICON_BULLET]Gold wird aus den Städten gestohlen</German>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Преступность в городе[COLOR_REVERT][NEWLINE]Горожане [COLOR_NEGATIVE_TEXT]преступники[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]уменьшается иммиграция из Европы[NEWLINE][ICON_BULLET]уменьшается счастье[NEWLINE][ICON_BULLET]уменьшается прибыль на Внутреннем рынке[NEWLINE][ICON_BULLET]уменьшается прибыль от развлечений[NEWLINE][ICON_BULLET]высокая преступность может вызвать [COLOR_NEGATIVE_TEXT]беспорядки[COLOR_REVERT][NEWLINE][ICON_BULLET]воровство золота из казны</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_LAW_ZERO_EFFECTS</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]City Law[COLOR_REVERT][NEWLINE]The citizens are [COLOR_SELECTED_TEXT]neither law abiding nor criminal[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]No current effects</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Ordre dans la ville[COLOR_REVERT][NEWLINE]Les citoyens ne sont [COLOR_SELECTED_TEXT]ni respectueux des lois ni délinquants[COLOR_REVERT][NEWLINE][NEWLINE]Effets :[NEWLINE][ICON_BULLET]Aucun effet notable</English>
+		<German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_SELECTED_TEXT]weder gesetzestreu noch kriminell[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]aktuell keine Effekte</German>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Спокойный город[COLOR_REVERT][NEWLINE]Горожане не являются [COLOR_SELECTED_TEXT]ни законопослушными, ни преступниками[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]все спокойно, ничего не происходит</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_CITY_HAPPINESS_BILLBOARD</Tag>
+		<English>Happiness in the City : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
+		<French>Bonheur de la ville : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</French>
+		<German>Zufriedenheit der Stadt : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
+		<Russian>Счастье в городе : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_CITY_UNHAPPINESS_BILLBOARD</Tag>
+		<English>Unhappiness in the City : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
+		<French>Mécontentement de la ville : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</French>
+		<German>Unzufriedenheit der Stadt : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
+		<Russian>Несчастье в городе : [COLOR_NEGATIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_CITY_LAW_BILLBOARD</Tag>
+		<English>Law in the City : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
+		<French>Ordre dans la ville : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</French>
+		<German>Gesetz der Stadt : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
+		<Russian>Закон в городе : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TOTAL_CITY_CRIME_BILLBOARD</Tag>
+		<English>Crime in the City : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</English>
+		<French>Crime dans la ville : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</French>
+		<German>Verbrechen der Stadt : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</German>
+		<Russian>Преступность в городе : [COLOR_POSITIVE_TEXT]%d1[COLOR_REVERT]%F2_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_HARBOR_STILL_FREE</Tag>
+		<English>Harbour space available : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+		<German>Ankerplätze in der Stadt : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+		<Russian>Доступное место в гавани : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_HARBOR_ALMOST_FULL</Tag>
+		<English>Last chance to dock here : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+		<German>Ankerplätze in der Stadt : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+		<Russian>Мест у причала почти не осталось : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_HARBOR_TOTALLY_FULL</Tag>
+		<English>Harbour is now full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+		<German>Ankerplätze in der Stadt : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+		<Russian>Гавань больше не может принимать корабли : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_BAR_HARBOUR_FULL</Tag>
+		<English>[COLOR_NEGATIVE_TEXT] Harbour full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+		<French>[COLOR_NEGATIVE_TEXT] Trop-plein du port : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</French>
+		<German>[COLOR_NEGATIVE_TEXT] Hafen voll : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+		<Russian>[COLOR_NEGATIVE_TEXT] Гавань заполнена, мест нет : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_BARRACKS_STILL_FREE</Tag>
+		<English>Barracks space available : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+		<French>Espace disponible en baraquement :  [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon </French>
+		<German>Kasernenplätze in der Stadt : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+		<Russian>Свободных мест в казармах : [COLOR_POSITIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_BARRACKS_ALMOST_FULL</Tag>
+		<English>Barracks almost full : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+		<French>Les baraquements sont quasi-pleins :  [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon </French>
+		<German>Kasernenplätze fast voll : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+		<Russian>Казармы почти заполнены : [COLOR_HIGHLIGHT_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_BARRACKS_TOTALLY_FULL</Tag>
+		<English>Barracks are now full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+		<French>Les baraquements sont pleins :  [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon </French>
+		<German>Kasernenplätze jetzt voll : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+		<Russian>В казармах нет свободных мест : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_BAR_BARRACKS_FULL</Tag>
+		<English>[COLOR_NEGATIVE_TEXT] Barracks full : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</English>
+		<French>[COLOR_NEGATIVE_TEXT] Trop-plein des baraquements : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon </French>
+		<German>[COLOR_NEGATIVE_TEXT] Kaserne voll : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</German>
+		<Russian>[COLOR_NEGATIVE_TEXT] Казармы заполнены, мест нет : [COLOR_NEGATIVE_TEXT]%d1 / %d2[COLOR_REVERT]%F3_Icon</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_UNREST_BECAUSE_UNHAPPINESS</Tag>
+		<English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high Unhappiness has caused Unrest.</English>
+		<French>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le niveau de mécontentement élevé a entrainé des émeutes.</French>
+		<German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Unzufriedenheit in der Stadt hat zu Unruhen geführt.</German>
+		<Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокий уровень несчастья привел к беспорядкам.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FESTIVITIES_BECAUSE_HAPPINESS</Tag>
+		<English>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high Happiness has led to festivities that generated %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</English>
+		<French>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le niveau de bonheur élevé a été célébré, et nous en avons reçu %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</French>
+		<German>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Zufriedenheit in der Stadt hat zu Feierlichkeiten geführt, die %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT] erzeugt haben.</German>
+		<Russian>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокое счастье привело к празднествам, которые принесли %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_UNREST_BECAUSE_CRIME</Tag>
+		<English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high crime in the city has caused unrest.</English>
+		<French>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le taux de crime élevé a entrainé des émeutes.</French>
+		<German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Kriminalität in der Stadt hat zu Unruhen geführt.</German>
+		<Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокая преступность в городе вызвала беспорядки.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_GOLD_STOLEN_BECAUSE_CRIME</Tag>
+		<English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high crime in the city has led to gold being stolen.</English>
+		<French>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le taux de crime élevé a entrainé le vol d'argent dans vos coffres.</French>
+		<German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Kriminalität in der Stadt hat dazu geführt, dass Gold gestohlen wurde.</German>
+		<Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокий уровень преступности в городе привел к краже золота.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_UNHAPPINESS_SLAVES_MODIFIER</Tag>
+		<English>[ICON_BULLET]%D1%% less %F2_Icon from Slaves in Cities</English>
+		<French>[ICON_BULLET]%D1%% %F2_Icon en moins à cause des esclaves dans les villes.</French>
+		<German>[ICON_BULLET]%D1%% weniger %F2_Icon durch Sklavenhaltung in Städten</German>
+		<Russian>[ICON_BULLET]%D1%% к %F2_Icon от Рабов в городе</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_POSITIVE</Tag>
+		<English>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high happiness has caused increased domestic demand and prices.</English>
+		<French>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le niveau de bonheur élevé a provoqué la hausse des prix et de la demande du marché local.</French>
+		<German>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Zufriedenheit hat zu erhöhten Preisen und starker Nachfrage geführt.</German>
+		<Russian>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокий уровень счастья вызвал увеличение внутреннего спроса и цен.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CITY_DOMESTIC_MARKET_EVENT_NEGATIVE</Tag>
+		<English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high unhappiness has caused decreased domestic demand and prices.</English>
+		<French>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le niveau de mécontentement élevé a provoqué la baisse des prix et de la demande du marché local.</French>
+		<German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Unzufriedenheit hat zu reduzierten Preisen und geringer Nachfrage geführt.</German>
+		<Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Из-за недовольства снизился внутренний спрос и цены.</Russian>
+	</TEXT>
 </Civ4GameText>

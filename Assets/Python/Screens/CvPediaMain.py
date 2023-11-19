@@ -251,7 +251,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		# Create and place a unit pane
 		list = self.getSortedList( gc.getNumUnitInfos(), gc.getUnitInfo )
 
-		if gc.getDefineINT("CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY") and gc.getGame().isFinalInitialized():
+		if GlobalDefines.CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY and gc.getGame().isFinalInitialized():
 			listCopy = list[:]
 			for item in listCopy:
 				if not gc.getGame().isUnitEverActive(item[1]):
@@ -320,7 +320,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		# Create and place a building pane
 		list = self.pediaBuildingScreen.getBuildingSortedList()
 
-		if gc.getDefineINT("CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY") and gc.getGame().isFinalInitialized():
+		if GlobalDefines.CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY and gc.getGame().isFinalInitialized():
 			listCopy = list[:]
 			for item in listCopy:
 				if not gc.getGame().isBuildingEverActive(item[1]):
@@ -442,7 +442,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		# Create and place a civs pane
 		list = self.getSortedList( gc.getNumCivilizationInfos(), gc.getCivilizationInfo )
 
-		if gc.getDefineINT("CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY") and gc.getGame().isFinalInitialized():
+		if GlobalDefines.CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY and gc.getGame().isFinalInitialized():
 			listCopy = list[:]
 			for item in listCopy:
 				if not gc.getGame().isCivEverActive(item[1]):
@@ -481,7 +481,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		list = self.getSortedList( gc.getNumLeaderHeadInfos(), gc.getLeaderHeadInfo )
 		listCopy = list[:]
 		for item in listCopy:
-			if gc.getDefineINT("CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY") and gc.getGame().isFinalInitialized():
+			if GlobalDefines.CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY and gc.getGame().isFinalInitialized():
 				if not gc.getGame().isLeaderEverActive(item[1]):
 					list.remove(item)
 

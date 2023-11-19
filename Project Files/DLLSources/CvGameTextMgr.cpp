@@ -10402,6 +10402,12 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 		szBuffer.append(szHelp);
 	}
 
+	if (!isEmpty(kEvent.getHelpText()))
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText(kEvent.getHelpText()));
+	}
+
 	CvWStringBuffer szTemp;
 	for (int i = 0; i < GC.getNumEventInfos(); ++i)
 	{

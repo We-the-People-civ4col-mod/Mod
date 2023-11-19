@@ -3643,9 +3643,25 @@ int CvSelectionGroup::getPathLength() const
 // TAC - AI Improved Naval AI - koma13 - END
 bool CvSelectionGroup::generatePath(const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, int iMaxPath) const
 {
+	bool inPort = false;
+
+	#ifdef FASSERT_ENABLE
+	// Prevent assert from triggering when a player uses the group pathfinder in a port like Europe since
+	// that particular usage is safe
+	CvUnit* const pNewHeadUnit = getHeadUnit();
+	const UnitTravelStates eTravelState = pNewHeadUnit ? pNewHeadUnit->getUnitTravelState() : NO_UNIT_TRAVEL_STATE;
+
+	if (eTravelState == UNIT_TRAVEL_STATE_IN_EUROPE || eTravelState == UNIT_TRAVEL_STATE_IN_AFRICA ||
+		eTravelState == UNIT_TRAVEL_STATE_IN_PORT_ROYAL)
+	{
+		inPort = true;
+	}
+	#endif
+	
 	// K-Mod - if I can stop the UI from messing with this pathfinder, I might be able to reduce OOS bugs.
 	// (note, the const-cast is just to get around the bad code from the original developers)
-	FAssert(const_cast<CvSelectionGroup*>(this)->AI_isControlled());
+	// advc.128: MAX_MOVES: The AI may use this function to anticipate human moves. * /
+	FAssert(const_cast<CvSelectionGroup*>(this)->AI_isControlled() || (iFlags & MOVE_MAX_MOVES) || inPort);
 	// K-Mod end
 
 	PROFILE("CvSelectionGroup::generatePath()");

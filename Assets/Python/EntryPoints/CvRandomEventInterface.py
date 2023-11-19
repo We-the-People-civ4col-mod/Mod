@@ -413,7 +413,7 @@ def canTriggerFestivity(argsList):
 	if city.getYieldStored(iYield1) < -quantity and city.getYieldStored(iYield2) < -quantity2:
 		return False
 	# If player has reached the maximum for max tax rate, do not start event
-	if player.NBMOD_GetMaxTaxRate() == gc.getDefineINT("MAX_TAX_RATE"):
+	if player.NBMOD_GetMaxTaxRate() == GlobalDefines.MAX_TAX_RATE:
 		return False
 	return True
 
@@ -442,7 +442,7 @@ def getHelpFestivity1(argsList):
 	if (player.getTaxRate() + event.getGenericParameter(1) <= player.NBMOD_GetMaxTaxRate()) and event.getGenericParameter(1) <>0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_TAX_INCREASE", (event.getGenericParameter(1), player.getTaxRate() + event.getGenericParameter(1)))
 	if (player.getTaxRate() + event.getGenericParameter(1) > player.NBMOD_GetMaxTaxRate()) and event.getGenericParameter(1) <>0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAX_INCREASE", (gc.getDefineINT("INCREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()+gc.getDefineINT("INCREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAX_INCREASE", (GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()+GlobalDefines.INCREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(2) <> 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_DECREASE", (event.getGenericParameter(2), king.getCivilizationAdjectiveKey()))
 	return szHelp
@@ -501,9 +501,9 @@ def getHelpFestivity2(argsList):
 	if event.getGenericParameter(2) <> 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_INCREASE", (event.getGenericParameter(2), gc.getYieldInfo(iYield).getChar(), king.getCivilizationShortDescriptionKey()))
 	if event.getGenericParameter(4) > 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-gc.getDefineINT("DECREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("DECREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-GlobalDefines.DECREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.DECREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(4) < 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-gc.getDefineINT("INCREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("INCREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.INCREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(3) > 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
 	if event.getGenericParameter(3) < 0 :
@@ -562,9 +562,9 @@ def getHelpFestivity3(argsList):
 	if event.getGenericParameter(2) <> 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_INCREASE", (event.getGenericParameter(2), gc.getYieldInfo(iYield).getChar(), king.getCivilizationShortDescriptionKey()))
 	if event.getGenericParameter(4) > 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-gc.getDefineINT("DECREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("DECREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-GlobalDefines.DECREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.DECREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(4) < 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-gc.getDefineINT("INCREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("INCREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.INCREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(3) > 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
 	if event.getGenericParameter(3) < 0 :
@@ -631,9 +631,9 @@ def getHelpFestivity4(argsList):
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_INCREASE", (event.getGenericParameter(2), gc.getYieldInfo(iYield1).getChar(), king.getCivilizationShortDescriptionKey()))
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_INCREASE", (event.getGenericParameter(2), gc.getYieldInfo(iYield2).getChar(), king.getCivilizationShortDescriptionKey()))
 	if event.getGenericParameter(4) > 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-gc.getDefineINT("DECREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("DECREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-GlobalDefines.DECREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.DECREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(4) < 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-gc.getDefineINT("INCREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("INCREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.INCREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(3) > 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
 	if event.getGenericParameter(3) < 0 :
@@ -658,9 +658,9 @@ def getHelpCounterblaste1(argsList):
 	if event.getGenericParameter(2) <> 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_INCREASE", (event.getGenericParameter(2), gc.getYieldInfo(iYield).getChar(), king.getCivilizationShortDescriptionKey()))
 	if event.getGenericParameter(4) > 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-gc.getDefineINT("DECREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("DECREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-GlobalDefines.DECREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.DECREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(4) < 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-gc.getDefineINT("INCREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("INCREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.INCREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(3) > 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
 	if event.getGenericParameter(3) < 0 :
@@ -685,9 +685,9 @@ def getHelpCounterblaste2(argsList):
 	if event.getGenericParameter(2) <> 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_INCREASE", (event.getGenericParameter(2), gc.getYieldInfo(iYield).getChar(), king.getCivilizationShortDescriptionKey()))
 	if event.getGenericParameter(4) > 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-gc.getDefineINT("DECREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("DECREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-GlobalDefines.DECREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.DECREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(4) < 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-gc.getDefineINT("INCREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("INCREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.INCREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(3) > 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
 	if event.getGenericParameter(3) < 0 :
@@ -746,9 +746,9 @@ def getHelpWhaling1(argsList):
 	if event.getGenericParameter(2) <> 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PRICE_INCREASE", (event.getGenericParameter(2), gc.getYieldInfo(iYield).getChar(), king.getCivilizationShortDescriptionKey()))
 	if event.getGenericParameter(4) > 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-gc.getDefineINT("DECREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("DECREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-GlobalDefines.DECREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.DECREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(4) < 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-gc.getDefineINT("INCREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("INCREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.INCREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(3) > 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
 	if event.getGenericParameter(3) < 0 :
@@ -980,11 +980,9 @@ def canTriggerPacificDone(argsList):
 		return True
 	return False
 
-getHelpPacific = get_simple_help("TXT_KEY_EVENT_PACIFIC_HELP")
 
 ######## VOLCANO ###########
 
-getHelpVolcano1 = get_simple_help("TXT_KEY_EVENT_VOLCANO_1_HELP")
 
 
 def canApplyVolcano1(argsList):
@@ -1382,23 +1380,19 @@ def canTriggerAntiPirate(argsList):
 	if not player.isPlayable():
 		return False
 	iKilledTradeships = 0
-	iWarships = 0
 	i=0
 	eEvent = gc.getEventTriggerInfo(kTriggeredData.eTrigger).getEvent(0)
 	event = gc.getEventInfo(eEvent)
 	if player.isInRevolution():
 		return False
-	for i in range(gc.getNumUnitInfos()):
-		if gc.getUnitInfo(i).isMatchForLink("UNIT_CARAVEL",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_FLUYT",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_MERCHANTMAN",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_WHALING_BOAT",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_CARRACK",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_CARAVELA_REDONDA",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_WEST_INDIAMAN",1) or gc.getUnitInfo(i).isMatchForLink("UNIT_BRIGANTINE",1):
-			iKilledTradeships += CyStatistics().getPlayerNumUnitsLost(kTriggeredData.ePlayer, i)
+	for i in (UnitTypes.UNIT_CARAVEL, UnitTypes.UNIT_FLUYT, UnitTypes.UNIT_MERCHANTMAN, UnitTypes.UNIT_WHALING_BOAT, UnitTypes.UNIT_CARRACK, UnitTypes.UNIT_CARAVELA_REDONDA, UnitTypes.UNIT_WEST_INDIAMAN, UnitTypes.UNIT_BRIGANTINE):
+		iKilledTradeships += CyStatistics().getPlayerNumUnitsLost(kTriggeredData.ePlayer, i)
 	if iKilledTradeships >= event.getGenericParameter(1):
 		(loopUnit, iter) = player.firstUnit()
 		while(loopUnit):
-			if loopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_FRIGATE") or loopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_SHIP_OF_THE_LINE") or loopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_MAN_O_WAR"):
-				iWarships += 1
+			if loopUnit.getUnitType() in (UnitTypes.UNIT_FRIGATE, UnitTypes.UNIT_SHIP_OF_THE_LINE, UnitTypes.UNIT_COLONIAL_MAN_O_WAR):
+				return False
 			(loopUnit, iter) = player.nextUnit(iter)
-		if iWarships > 0:
-			return False
 		return True
 	return False
 
@@ -1903,7 +1897,7 @@ def SetLandmark(argsList):
 	eEvent = argsList[0]
 	kTriggeredData = argsList[1]
 	event = gc.getEventInfo(eEvent)
-	if gc.getDefineINT("SHOW_LANDMARKS") == 1:
+	if GlobalDefines.SHOW_LANDMARKS == 1:
 		szLandmark = "TXT_KEY_"+event.getType()+"_LANDMARK"
 		plot = gc.getMap().plot(kTriggeredData.iPlotX,  kTriggeredData.iPlotY)
 		CyEngine().addSign(plot, -1, szLandmark)
@@ -1957,7 +1951,7 @@ def hasAllBuildings(argsList):
 			bHasAllBuildings = False
 	return bHasAllBuildings
 
-def has_plot_this_bonus(bonus_string):
+def has_plot_this_bonus(*bonus_strings):
 
 	def bonus_check(argsList):
 		pTriggeredData = argsList[0]
@@ -1965,10 +1959,10 @@ def has_plot_this_bonus(bonus_string):
 		if not player.isPlayable():
 			return False
 		plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-		bonustype = gc.getInfoTypeForString(bonus_string)
-		if (plot.getOwner() != pTriggeredData.ePlayer):
+		bonustypes =[ gc.getInfoTypeForString(bonus_string) for bonus_string in bonus_strings ]
+		if plot.getOwner() != pTriggeredData.ePlayer:
 			return False
-		if (plot.getBonusType() == bonustype):
+		if plot.getBonusType() in bonustypes:
 			return True
 		return False
 
@@ -1978,167 +1972,20 @@ hasSilverBonus = has_plot_this_bonus("BONUS_SILVER")
 hasGoldBonus = has_plot_this_bonus("BONUS_GOLD")
 hasFurBonus = has_plot_this_bonus("BONUS_FUR")
 hasCottonBonus = has_plot_this_bonus("BONUS_COTTON")
+hasSugarBonus = has_plot_this_bonus("BONUS_SUGAR")
+hasTobaccoBonus = has_plot_this_bonus("BONUS_TOBACCO")
+hasIronBonus = has_plot_this_bonus("BONUS_IRON")
+hasCocoaBonus = has_plot_this_bonus("BONUS_COCOA")
+hasMineralBonus = has_plot_this_bonus("BONUS_MINERALS")
+hasTimberBonus = has_plot_this_bonus("BONUS_TIMBER")
+# 2023-11-xx : please put all relevant bonus
+hasFoodBonus = has_plot_this_bonus("BONUS_POTATO","BONUS_BANANA","BONUS_CORN")
+hasSeaFoodBonus = has_plot_this_bonus("BONUS_PEARLS","BONUS_CRAB","BONUS_FISH")
+hasBisonBonus = has_plot_this_bonus("BONUS_BISON")
+hasPumpkinBonus = has_plot_this_bonus("BONUS_PUMPKIN")
+hasTurkeyBonus = has_plot_this_bonus("BONUS_TURKEYS")
+hasGiantTreeBonus = has_plot_this_bonus("BONUS_GIANT_TREE")
 
-
-def hasSugarBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_SUGAR")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasTobaccoBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_TOBACCO")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasIronBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_IRON")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasCocoaBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_COCOA")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasMineralsBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_MINERALS")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasTimberBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_TIMBER")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasFoodBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype1 = gc.getInfoTypeForString("BONUS_POTATO")
-	bonustype2 = gc.getInfoTypeForString("BONUS_BANANA")
-	bonustype3 = gc.getInfoTypeForString("BONUS_CORN")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if plot.getBonusType() in (bonustype1, bonustype2, bonustype3):
-		return True
-	return False
-
-def hasSeaFoodBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype1 = gc.getInfoTypeForString("BONUS_PEARLS")
-	bonustype2 = gc.getInfoTypeForString("BONUS_CRAB")
-	bonustype3 = gc.getInfoTypeForString("BONUS_FISH")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if plot.getBonusType() in (bonustype1, bonustype2, bonustype3):
-		return True
-	return False
-
-def hasBisonBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_BISON")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasPumpkinBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_PUMPKIN")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasTurkeyBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_TURKEYS")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-def hasGiantTreesBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_GIANT_TREE")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
 
 def hasNoBonus(argsList):
 	pTriggeredData = argsList[0]
@@ -2410,9 +2257,9 @@ def getHelpKingPleased(argsList):
 	if event.getGenericParameter(3) < 0 :
 		szHelp = localText.getText("TXT_KEY_EVENT_KING_ANGRY_HELP", ())
 	if event.getGenericParameter(4) > 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-gc.getDefineINT("DECREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("DECREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXDECREASE", (-GlobalDefines.DECREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.DECREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(4) < 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-gc.getDefineINT("INCREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("INCREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.INCREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(3) > 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
 	if event.getGenericParameter(3) < 0 :
@@ -2440,7 +2287,7 @@ def getHelpKingAngry(argsList):
 	king = gc.getPlayer(eking)
 	szHelp = localText.getText("TXT_KEY_EVENT_KING_ANGRY_HELP", ())
 	if event.getGenericParameter(4) <> 0 :
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-gc.getDefineINT("INCREASE_MAX_TAX_RATE"), player.NBMOD_GetMaxTaxRate()-gc.getDefineINT("INCREASE_MAX_TAX_RATE")))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAXINCREASE", (-GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()-GlobalDefines.INCREASE_MAX_TAX_RATE))
 	if event.getGenericParameter(3) <> 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_DECREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
 	return szHelp
@@ -8244,19 +8091,8 @@ getHelpLandTransportAttack = get_simple_help("TXT_KEY_EVENT_LANDTRANSPORT_ATTACK
 
 ######## Milkmaid in Need ###########
 
-def hasCattleBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_CATTLE")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-	
+hasCattleBonus = has_plot_this_bonus("BONUS_CATTLE")
+
 getHelpMilkmaidInNeed = get_simple_help("TXT_KEY_EVENT_MILKMAID_IN_NEED_HELP")
 
 ######## Whale Attack ###########
@@ -8265,20 +8101,7 @@ getHelpWhaleAttack = get_simple_help("TXT_KEY_WHALE_ATTACK_HELP")
 
 ######## Pig Herder in Need ###########
 
-def hasPigBonus(argsList):
-	pTriggeredData = argsList[0]
-	player = gc.getPlayer(pTriggeredData.ePlayer)
-	if not player.isPlayable():
-		return False
-	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
-	bonustype = gc.getInfoTypeForString("BONUS_PIG")
-	if (plot.getOwner() != pTriggeredData.ePlayer):
-		return False
-	if (plot.getBonusType() == bonustype):
-		return True
-	return False
-
-getHelpHerderInNeed = get_simple_help("TXT_KEY_EVENT_HERDER_IN_NEED_HELP")
+hasPigBonus = has_plot_this_bonus("BONUS_PIG")
 
 # adjacent Plot
 def spawnBarbarianUnitAdjacentToPlotAndFriendlyOnSamePlot(argsList):
@@ -8307,13 +8130,6 @@ getHelpSlaveAndPlanationOwnerDaughter1 = get_simple_help("TXT_KEY_EVENT_SLAVE_AN
 ######## Indentured Servant Steals from Employer ###########
 getHelpIndenturedServantStealsFromEmployer = get_simple_help("TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1_HELP")
 
-######## Preacher and Harlot ###########
-getHelpPreacherAndHarlot1 = get_simple_help("TXT_KEY_EVENT_PREACHER_AND_HARLOT_1_HELP")
-
-getHelpPreacherAndHarlot2 = get_simple_help("TXT_KEY_EVENT_PREACHER_AND_HARLOT_2_HELP")
-
-######## Conquistador Ambush ###########
-getHelpConquistadorAmbusch = get_simple_help("TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP")
 
 
 ######## Liet Event Training ###########
@@ -8336,5 +8152,5 @@ def checkCityAbovePopulation(numPop):
 
 	return canTrigger
 
-canTriggerAtCityPopluationOf10 = checkCityAbovePopulation(10)
-canTriggerAtCityPopluationOf20 = checkCityAbovePopulation(20)
+canTriggerAtCityPopulationOf10 = checkCityAbovePopulation(10)
+canTriggerAtCityPopulationOf20 = checkCityAbovePopulation(20)

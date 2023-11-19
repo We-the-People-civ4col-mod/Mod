@@ -2579,6 +2579,7 @@ void CvGame::setupActionCache()
 	gDLL->getInterfaceIFace()->getSelectionList()->setupActionCache();
 }
 
+// WARNING: function is not networked synced
 void CvGame::handleAction(int iAction)
 {
 	CvUnit* pHeadSelectedUnit;
@@ -2833,6 +2834,7 @@ bool CvGame::canDoControl(ControlTypes eControl)
 }
 
 
+// WARNING: function is not networked synced
 void CvGame::doControl(ControlTypes eControl)
 {
 	CvPopupInfo* pInfo;

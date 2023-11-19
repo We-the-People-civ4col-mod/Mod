@@ -123,7 +123,7 @@ class CvPediaBuilding:
 		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
 			if (buildingInfo.getYieldCost(iYield) > 0):
 				if self.top.iActivePlayer == -1:
-					szCost = localText.getText("TXT_KEY_PEDIA_COST", ((buildingInfo.getYieldCost(iYield) * gc.getDefineINT("BUILDING_PRODUCTION_PERCENT"))/100, ))
+					szCost = localText.getText("TXT_KEY_PEDIA_COST", ((buildingInfo.getYieldCost(iYield) * GlobalDefines.BUILDING_PRODUCTION_PERCENT)/100, ))
 				else:
 					szCost = localText.getText("TXT_KEY_PEDIA_COST", (gc.getPlayer(self.top.iActivePlayer).getBuildingYieldProductionNeeded(self.iBuilding, iYield), ))
 				## R&R, Robert Surcouf,  Pedia - Start
@@ -227,7 +227,7 @@ class CvPediaBuilding:
 		i = 0
 		for iI in range(len(listSorted)):
 			if (not gc.getBuildingInfo(listSorted[iI][1]).isGraphicalOnly()):
-				if (not gc.getDefineINT("CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY") or not gc.getGame().isFinalInitialized() or gc.getGame().isBuildingEverActive(listSorted[iI][1])):
+				if (not GlobalDefines.CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY or not gc.getGame().isFinalInitialized() or gc.getGame().isBuildingEverActive(listSorted[iI][1])):
 					if bRedraw:
 						screen.appendListBoxStringNoUpdate(self.top.LIST_ID, listSorted[iI][0], WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, listSorted[iI][1], 0, CvUtil.FONT_LEFT_JUSTIFY)
 					if listSorted[iI][1] == self.iBuilding:

@@ -37227,7 +37227,7 @@
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
 			<PythonCanDo/>
-			<PythonCanDoCity>canTriggerAtCityPopluationOf10</PythonCanDoCity>
+			<PythonCanDoCity>canTriggerAtCityPopulationOf10</PythonCanDoCity>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
 		</EventTriggerInfo>
@@ -37297,7 +37297,7 @@
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
 			<PythonCanDo/>
-			<PythonCanDoCity>canTriggerAtCityPopluationOf20</PythonCanDoCity>
+			<PythonCanDoCity>canTriggerAtCityPopulationOf20</PythonCanDoCity>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
 		</EventTriggerInfo>

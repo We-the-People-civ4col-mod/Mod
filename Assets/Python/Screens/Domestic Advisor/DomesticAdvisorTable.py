@@ -404,8 +404,12 @@ class DomesticAdvisorTable:
 		
 	def __addPanelButton(self, buttonArt, widget = WidgetTypes.WIDGET_GENERAL, iData1 = -1, iData2 = -1):
 		name = self.__applyPanel()
-		szButtonName = self.__currentPageName() + "Button-" + str(self.curRow) + "-" + str(self.curColumn)
-		self.__getScreen().setImageButtonAt(szButtonName, name, buttonArt, 0, 0, self.__getCellWidth(), self.__getCellHeight(), widget, iData1, iData2)
+		# The two following lines do not work because widget commands can only be bound to test elements. D'OH!
+		#szButtonName = self.__currentPageName() + "Button-" + str(self.curRow) + "-" + str(self.curColumn)
+		#self.__getScreen().setImageButtonAt(szButtonName, name, buttonArt, 0, 0, self.__getCellWidth(), self.__getCellHeight(), widget, iData1, iData2)
+
+		# We really really need an empty text for the Exe to handle it properly.
+		self.__getScreen().setTableText(self.__currentPageName(), self.curColumn, self.curRow,"", buttonArt ,widget, iData1,iData2,  CvUtil.FONT_LEFT_JUSTIFY )
 		
 	def __skipCell(self):
 		self.__addText("")

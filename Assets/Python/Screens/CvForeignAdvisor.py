@@ -76,7 +76,7 @@ class CvForeignAdvisor:
 
 		self.EXIT_TEXT = u"<font=4>" + localText.getText("TXT_KEY_PEDIA_SCREEN_EXIT", ()).upper() + u"</font>"
 		self.SCREEN_TITLE = u"<font=4b>" + localText.getText("TXT_KEY_FOREIGN_ADVISOR_TITLE", ()).upper() + u"</font>"
-		self.SCREEN_TITLE = localText.changeTextColor(self.SCREEN_TITLE, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+		self.SCREEN_TITLE = localText.changeTextColor(self.SCREEN_TITLE, ColorTypes.COLOR_FONT_CREAM)
 
 		if (self.iScreen != iScreen):
 			self.killScreen()

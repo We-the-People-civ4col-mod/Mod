@@ -253,6 +253,7 @@
 		<WidgetType>WIDGET_HELP_BARRACKS_SYSTEM</WidgetType> <!-- WTP, ray, Widgets for Harbour System and Barracks System -->
 		<WidgetType>WIDGET_HELP_SHOW_OR_HIDE_YIELDS</WidgetType>
 		<WidgetType>WIDGET_HELP_TAX_CALCULATION</WidgetType>
+		<WidgetType>WIDGET_HELP_DOMESTIC_DEMAND_ADVISOR</WidgetType>
 	</WidgetTypes>
 	<FontSymbols>
 		<FontSymbol>HAPPY_CHAR</FontSymbol>

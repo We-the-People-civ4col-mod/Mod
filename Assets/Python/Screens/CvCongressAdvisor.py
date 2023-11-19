@@ -56,7 +56,7 @@ class CvCongressAdvisor:
 		screen.showWindowBackground(False)
 
 		TitleText = localText.getText("TXT_KEY_CONGRESS_ADVISOR_TITLE", ()).upper()
-		TitleText = localText.changeTextColor(TitleText, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+		TitleText = localText.changeTextColor(TitleText, ColorTypes.COLOR_FONT_CREAM)
 
 		screen.setLabel( "Title", "Background", u"<font=4b>" + TitleText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.XResolution / 2, 4, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setText( "CongressScreenExit", "Background", u"<font=4>" + CyTranslator().getText("TXT_KEY_PEDIA_SCREEN_EXIT", ()).upper() + "</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - 30, self.YResolution - 35, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1 )
@@ -93,7 +93,7 @@ class CvCongressAdvisor:
 				self.MyFathers.append(iFather)
 
 		FatherCountText = localText.getText("TXT_KEY_MEMBERS", (CyGameTextMgr().getInterfaceTimeStr(gc.getGame().getActivePlayer()), len(self.MyFathers)))
-		FatherCountText = localText.changeTextColor(FatherCountText, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+		FatherCountText = localText.changeTextColor(FatherCountText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel("FatherCount", "Background", "<font=4>" + FatherCountText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, self.XResolution / 2, self.YResolution - 35, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 	
 		#Fankman/TAC - Sort the Fathers by the year
@@ -142,7 +142,7 @@ class CvCongressAdvisor:
 						
 					screen.addDDSGFC("BigFatherShadow" + str(1), ArtFileMgr.getInterfaceArtInfo("INTERFACE_CONGRESS_PAPER").getPath(),self.XResolution / 2 -((self.XResolution * 4 / 12) / 2), self.YResolution - (self.YResolution / 30 * 10) , self.XResolution * 4 / 12, self.YResolution / 4, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 					szFatherTitle = u"<font=3b>" + gc.getFatherInfo(iFather).getDescription() + u" (%d)" %iFatherYear
-					szFatherTitle = localText.changeTextColor(szFatherTitle, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+					szFatherTitle = localText.changeTextColor(szFatherTitle, ColorTypes.COLOR_FONT_CREAM)
 						
 					#screen.attachMultilineTextAt("BigFatherShadow" + "1", "BigFatherName" + str(1), szFatherTitle, 70, 40, self.XResolution * 2 / 9, (iRecordWidth * 18 / 100), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
 					screen.attachMultilineTextAt("BigFatherShadow" + "1", "BigFatherName" + str(1), szFatherTitle, 70, 30, self.XResolution * 2 / 9, (iRecordWidth * 21 / 100), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY) # Robert Surcouf Alignment problem
