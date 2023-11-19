@@ -1,219 +1,219 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_ACCEPTED_JOIN_WAR</Tag>
-        <English>"You agreed to come to our aid in wartime."</English>
-        <French>"Vous avez accepté de nous aider en temps de guerre."</French>
-        <German>"Ihr habt zugestimmt, uns in Kriegszeiten zur Seite zu stehen."</German>
-        <Italian>"Hai accettato di aiutarci in tempi di guerra."</Italian>
-        <Spanish>"Accedisteis a venir en nuestra ayuda en tiempos de guerra."</Spanish>
-        <Russian>"Вы согласились прийти нам на помощь в военное время."</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_ACCEPTED_STOP_TRADING</Tag>
-        <English>"You agreed to stop trading with our worst enemy."</English>
-        <French>"Vous avez accepté de cesser tout commerce avec notre pire ennemi."</French>
-        <German>"Ihr habt zugestimmt, Eure Handelsbeziehungen mit unserem Erzfeind einzustellen."</German>
-        <Italian>"Avete accettato di interrompere il commercio con il nostro peggior nemico."</Italian>
-        <Spanish>"Accedisteis a dejar de comerciar con nuestro peor enemigo."</Spanish>
-        <Russian>"Вы согласились прекратить торговать с нашим злейшим врагом."</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_ACCEPT_DEMAND</Tag>
-        <English>"You gave us tribute."</English>
-        <French>"Vous nous avez versé un tribut !"</French>
-        <German>"Ihr habt uns Tribut gezollt."</German>
-        <Italian>"Ci hai donato dei tributi."</Italian>
-        <Spanish>"Nos disteis un tributo."</Spanish>
-        <Russian>"Вы отдали то, что от вас требовали."</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_CANCELLED_OPEN_BORDERS</Tag>
-        <English>"You cancelled our open border agreement!"</English>
-        <French>"Vous avez annulé notre accord de libre passage !"</French>
-        <German>"Ihr habt unsere Grenzöffnungsvereinbarung aufgehoben!"</German>
-        <Italian>"Hai annullato il nostro accordo di diritto di passaggio!"</Italian>
-        <Spanish>"¡Cancelasteis nuestro acuerdo de apertura de fronteras!"</Spanish>
-        <Russian>"Вы отменили наше соглашение об открытых границах!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_DECLARED_WAR</Tag>
-        <English>"You declared war on us!"</English>
-        <French>"Vous nous avez déclaré la guerre !"</French>
-        <German>"Ihr habt uns den Krieg erklärt!"</German>
-        <Italian>"Ci hai dichiarato guerra!"</Italian>
-        <Spanish>"¡Nos declarasteis la guerra!"</Spanish>
-        <Russian>"Вы объявили нам войну!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_DECLARED_WAR_ON_FRIEND</Tag>
-        <English>"You declared war on our friend!"</English>
-        <French>"Vous avez déclaré la guerre à nos alliés !"</French>
-        <German>"Ihr habt unseren Freunden den Krieg erklärt!"</German>
-        <Italian>"Hai dichiarato guerra a un nostro amico!"</Italian>
-        <Spanish>"¡Declarasteis la guerra a nuestros amigos!"</Spanish>
-        <Russian>"Вы объявили войну нашим друзьям!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_DENIED_JOIN_WAR</Tag>
-        <English>"You refused to help us during wartime!"</English>
-        <French>"Vous avez refusé de nous aider en temps de guerre !"</French>
-        <German>"Ihr habt Euch geweigert, uns in Kriegszeiten zur Seite zu stehen!"</German>
-        <Italian>"Vi siete rifiutati di aiutarci durante la guerra."</Italian>
-        <Spanish>"¡Os negasteis a ayudarnos en tiempos de guerra!"</Spanish>
-        <Russian>"Вы отказались помочь нам во время войны!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_DENIED_STOP_TRADING</Tag>
-        <English>"You refused to stop trading with our worst enemy."</English>
-        <French>"Vous avez refusé de cesser tout commerce avec notre pire ennemi."</French>
-        <German>"Ihr habt Euch geweigert, Eure Handelsbeziehungen mit unserem Erzfeind einzustellen!"</German>
-        <Italian>"Vi siete rifiutati di interrompere il commercio con il nostro peggior nemico."</Italian>
-        <Spanish>"Os negasteis a dejar de comerciar con nuestro peor enemigo."</Spanish>
-        <Russian>"Вы отказались прекратить торговлю с нашим злейшим врагом."</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_EVENT_BAD_TO_US</Tag>
-        <English>"Past events have proven your bad nature to us."</English>
-        <French>"Les événements passés prouvent votre méchanceté."</French>
-        <German>"Frühere Geschehnisse haben gezeigt, dass Ihr uns nicht wohl gesonnen seid."</German>
-        <Italian>"Gli eventi passati ci hanno dimostrato la tua buona natura."</Italian>
-        <Spanish>"Los acontecimientos pasados nos han demostrado vuestra maldad."</Spanish>
-        <Russian>"Прошлые события показали нам твою истинную сущность."</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_EVENT_GOOD_TO_US</Tag>
-        <English>"Past events have proven your good nature to us."</English>
-        <French>"Les événements passés prouvent votre bonté."</French>
-        <German>"Frühere Geschehnisse haben gezeigt, dass Ihr uns wohl gesonnen seid."</German>
-        <Italian>"Gli eventi passati ci hanno dimostrato la tua buona natura."</Italian>
-        <Spanish>"Los acontecimientos pasados nos han demostrado vuestra bondad."</Spanish>
-        <Russian>"Прошлые события показали нам ваш добрый характер."</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_GIVE_HELP</Tag>
-        <English>"You gave us help."</English>
-        <French>"Vous nous avez aidés."</French>
-        <German>"Ihr habt uns geholfen."</German>
-        <Italian>"Ci hai aiutati."</Italian>
-        <Spanish>"Nos ayudasteis."</Spanish>
-        <Russian>"Вы помогли нам."</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_HIRED_TRADE_EMBARGO</Tag>
-        <English>"You negotiated a trade embargo against us!"</English>
-        <French>"Vous avez négocié un embargo commercial contre nous !"</French>
-        <German>"Ihr habt ein Handelsembargo gegen uns ausgehandelt!"</German>
-        <Italian>"Hai negoziato un embargo contro di noi!"</Italian>
-        <Spanish>"¡Habéis negociado un embargo comercial contra nosotros!"</Spanish>
-        <Russian>"Вы договорились о торговом эмбарго против нас!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_HIRED_WAR_ALLY</Tag>
-        <English>"You brought in a war ally against us!"</English>
-        <French>"Vous avez soulevé un de nos alliés militaires contre nous !"</French>
-        <German>"Ihr habt einen Kriegsverbündeten gegen uns aufgebracht!"</German>
-        <Italian>"Hai portato in guerra un alleato contro di noi!"</Italian>
-        <Spanish>"¡Habéis traído a un aliado de guerra contra nosotros!"</Spanish>
-        <Russian>"Вы заключили военный союз против нас!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_LIBERATED_CITIES</Tag>
-        <English>"You liberated our settlements!"</English>
-        <French>"Vous avez libéré nos colonies !"</French>
-        <German>"Ihr habt unsere Siedlungen befreit!"</German>
-        <Italian>"Hai liberato i nostri insediamenti"</Italian>
-        <Spanish>"Habéis liberado nuestros asentamientos"</Spanish>
-        <Russian>"Вы освободили наши поселения!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_MADE_DEMAND</Tag>
-        <English>"You made an arrogant demand!"</English>
-        <French>"Vous nous avez fait une demande arrogante !"</French>
-        <German>"Ihr habt eine völlig überzogene Forderung gestellt!"</German>
-        <Italian>"Hai fatto una richiesta arrogante!"</Italian>
-        <Spanish>"¡Nos hicisteis una exigencia arrogante!"</Spanish>
-        <Russian>"Вы выдвинули высокомерное требование!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_MADE_DEMAND_RECENT</Tag>
-        <English>"You recently made an arrogant demand!"</English>
-        <French>"Vous venez de nous soumettre une requête fort arrogante !"</French>
-        <German>"Ihr habt kürzlich eine völlig überzogene Forderung gestellt!"</German>
-        <Italian>"Recentemente hai fatto una richiesta arrogante!"</Italian>
-        <Spanish>"¡Hace poco nos hicisteis una exigencia arrogante!"</Spanish>
-        <Russian>"Недавно вы выдвигали наглые требования!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_MISSIONARY_FAIL</Tag>
-        <English>"Your missionaries have insulted our Spirits!"</English>
-        <French>"Vos missionnaires ont insulté nos Esprits !"</French>
-        <German>"Eure Missionare haben unsere Geister beleidigt!"</German>
-        <Italian>"I tuoi missionari hanno insultato i nostri Spiriti!"</Italian>
-        <Spanish>"¡Tus misioneros han insultado a nuestros antepasados!"</Spanish>
-        <Russian>"Ваши миссионеры оскорбили наших Духов!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_RAZED_CITY</Tag>
-        <English>"You razed one of our settlements!"</English>
-        <French>"Vous avez rasé une de nos colonies!"</French>
-        <German>"Ihr habt eine unserer Siedlungen zerstört!"</German>
-        <Italian>"Hai razziato uno dei nostri insediamenti!"</Italian>
-        <Spanish>"¡Habéis arrasado uno de nuestros asentamientos!"</Spanish>
-        <Russian>"Вы разрушили одно из наших поселений!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_REFUSED_HELP</Tag>
-        <English>"You refused to help us!"</English>
-        <French>"Vous avez refusé de nous aider !"</French>
-        <German>"Ihr habt uns Eure Hilfe verwehrt!"</German>
-        <Italian>"Avete rifiutato di aiutarci!"</Italian>
-        <Spanish>"¡Os negasteis a ayudarnos!"</Spanish>
-        <Russian>"Вы отказались помочь нам!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_REFUSED_TAX</Tag>
-        <English>"You refused to kiss my ring!"</English>
-        <French>"Vous avez refusé d'embrasser ma chevalière !"</French>
-        <German>"Ihr habt Euch geweigert, meinen Ring zu küssen!"</German>
-        <Italian>"Ti sei rifiutato di baciarmi l'anello!"</Italian>
-        <Spanish>"¡Os negasteis a besar mi anillo!"</Spanish>
-        <Russian>"Ты отказался поцеловать мое кольцо!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_REJECTED_DEMAND</Tag>
-        <English>"You refused to give us tribute!"</English>
-        <French>"Vous avez refusé de nous verser un tribut !"</French>
-        <German>"Ihr habt Euch geweigert, uns Tribut zu zollen!"</German>
-        <Italian>"Avete rifiutato di donarci dei tributi!"</Italian>
-        <Spanish>"¡Os negasteis a darnos un tributo!"</Spanish>
-        <Russian>"Вы отказались платить нам дань!"</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_REVENGE_TAKEN</Tag>
-        <English>"We have taken our revenge."</English>
-        <French>"Nous avons pris notre revanche."</French>
-        <German>"Wir haben Rache genommen."</German>
-        <Italian>"Abbiamo avuto la nostra vendetta."</Italian>
-        <Spanish>"Nos hemos vengado."</Spanish>
-        <Russian>"Мы отомстили."</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_STOPPED_TRADING</Tag>
-        <English>"You stopped trading with us."</English>
-        <French>"Vous avez cessé de commercer avec nous."</French>
-        <German>"Ihr habt Eure Handelsbeziehungen mit uns eingestellt."</German>
-        <Italian>"Hai smesso di commerciare con noi."</Italian>
-        <Spanish>"Dejasteis de comerciar con nosotros."</Spanish>
-        <Russian>"Вы перестали торговать с нами."</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_MEMORY_STOPPED_TRADING_RECENT</Tag>
-        <English>"You recently stopped trading with us!"</English>
-        <French>"Vous venez de cesser tout commerce avec nous !"</French>
-        <German>"Ihr habt kürzlich Eure Handelsbeziehungen mit uns eingestellt!"</German>
-        <Italian>"Di recente hai interrotto il commercio con noi!"</Italian>
-        <Spanish>"Hace poco dejasteis de comerciar con nosotros."</Spanish>
-        <Russian>"Недавно вы прекратили торговлю с нами!"</Russian>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_ACCEPTED_JOIN_WAR</Tag>
+		<English>"You agreed to come to our aid in wartime."</English>
+		<French>"Vous avez accepté de nous aider en temps de guerre."</French>
+		<German>"Ihr habt zugestimmt, uns in Kriegszeiten zur Seite zu stehen."</German>
+		<Italian>"Hai accettato di aiutarci in tempi di guerra."</Italian>
+		<Spanish>"Accedisteis a venir en nuestra ayuda en tiempos de guerra."</Spanish>
+		<Russian>"Вы согласились прийти нам на помощь в военное время."</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_ACCEPTED_STOP_TRADING</Tag>
+		<English>"You agreed to stop trading with our worst enemy."</English>
+		<French>"Vous avez accepté de cesser tout commerce avec notre pire ennemi."</French>
+		<German>"Ihr habt zugestimmt, Eure Handelsbeziehungen mit unserem Erzfeind einzustellen."</German>
+		<Italian>"Avete accettato di interrompere il commercio con il nostro peggior nemico."</Italian>
+		<Spanish>"Accedisteis a dejar de comerciar con nuestro peor enemigo."</Spanish>
+		<Russian>"Вы согласились прекратить торговать с нашим злейшим врагом."</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_ACCEPT_DEMAND</Tag>
+		<English>"You gave us tribute."</English>
+		<French>"Vous nous avez versé un tribut !"</French>
+		<German>"Ihr habt uns Tribut gezollt."</German>
+		<Italian>"Ci hai donato dei tributi."</Italian>
+		<Spanish>"Nos disteis un tributo."</Spanish>
+		<Russian>"Вы отдали то, что от вас требовали."</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_CANCELLED_OPEN_BORDERS</Tag>
+		<English>"You cancelled our open border agreement!"</English>
+		<French>"Vous avez annulé notre accord de libre passage !"</French>
+		<German>"Ihr habt unsere Grenzöffnungsvereinbarung aufgehoben!"</German>
+		<Italian>"Hai annullato il nostro accordo di diritto di passaggio!"</Italian>
+		<Spanish>"¡Cancelasteis nuestro acuerdo de apertura de fronteras!"</Spanish>
+		<Russian>"Вы отменили наше соглашение об открытых границах!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_DECLARED_WAR</Tag>
+		<English>"You declared war on us!"</English>
+		<French>"Vous nous avez déclaré la guerre !"</French>
+		<German>"Ihr habt uns den Krieg erklärt!"</German>
+		<Italian>"Ci hai dichiarato guerra!"</Italian>
+		<Spanish>"¡Nos declarasteis la guerra!"</Spanish>
+		<Russian>"Вы объявили нам войну!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_DECLARED_WAR_ON_FRIEND</Tag>
+		<English>"You declared war on our friend!"</English>
+		<French>"Vous avez déclaré la guerre à nos alliés !"</French>
+		<German>"Ihr habt unseren Freunden den Krieg erklärt!"</German>
+		<Italian>"Hai dichiarato guerra a un nostro amico!"</Italian>
+		<Spanish>"¡Declarasteis la guerra a nuestros amigos!"</Spanish>
+		<Russian>"Вы объявили войну нашим друзьям!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_DENIED_JOIN_WAR</Tag>
+		<English>"You refused to help us during wartime!"</English>
+		<French>"Vous avez refusé de nous aider en temps de guerre !"</French>
+		<German>"Ihr habt Euch geweigert, uns in Kriegszeiten zur Seite zu stehen!"</German>
+		<Italian>"Vi siete rifiutati di aiutarci durante la guerra."</Italian>
+		<Spanish>"¡Os negasteis a ayudarnos en tiempos de guerra!"</Spanish>
+		<Russian>"Вы отказались помочь нам во время войны!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_DENIED_STOP_TRADING</Tag>
+		<English>"You refused to stop trading with our worst enemy."</English>
+		<French>"Vous avez refusé de cesser tout commerce avec notre pire ennemi."</French>
+		<German>"Ihr habt Euch geweigert, Eure Handelsbeziehungen mit unserem Erzfeind einzustellen!"</German>
+		<Italian>"Vi siete rifiutati di interrompere il commercio con il nostro peggior nemico."</Italian>
+		<Spanish>"Os negasteis a dejar de comerciar con nuestro peor enemigo."</Spanish>
+		<Russian>"Вы отказались прекратить торговлю с нашим злейшим врагом."</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_EVENT_BAD_TO_US</Tag>
+		<English>"Past events have proven your bad nature to us."</English>
+		<French>"Les événements passés prouvent votre méchanceté."</French>
+		<German>"Frühere Geschehnisse haben gezeigt, dass Ihr uns nicht wohl gesonnen seid."</German>
+		<Italian>"Gli eventi passati ci hanno dimostrato la tua buona natura."</Italian>
+		<Spanish>"Los acontecimientos pasados nos han demostrado vuestra maldad."</Spanish>
+		<Russian>"Прошлые события показали нам твою истинную сущность."</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_EVENT_GOOD_TO_US</Tag>
+		<English>"Past events have proven your good nature to us."</English>
+		<French>"Les événements passés prouvent votre bonté."</French>
+		<German>"Frühere Geschehnisse haben gezeigt, dass Ihr uns wohl gesonnen seid."</German>
+		<Italian>"Gli eventi passati ci hanno dimostrato la tua buona natura."</Italian>
+		<Spanish>"Los acontecimientos pasados nos han demostrado vuestra bondad."</Spanish>
+		<Russian>"Прошлые события показали нам ваш добрый характер."</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_GIVE_HELP</Tag>
+		<English>"You gave us help."</English>
+		<French>"Vous nous avez aidés."</French>
+		<German>"Ihr habt uns geholfen."</German>
+		<Italian>"Ci hai aiutati."</Italian>
+		<Spanish>"Nos ayudasteis."</Spanish>
+		<Russian>"Вы помогли нам."</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_HIRED_TRADE_EMBARGO</Tag>
+		<English>"You negotiated a trade embargo against us!"</English>
+		<French>"Vous avez négocié un embargo commercial contre nous !"</French>
+		<German>"Ihr habt ein Handelsembargo gegen uns ausgehandelt!"</German>
+		<Italian>"Hai negoziato un embargo contro di noi!"</Italian>
+		<Spanish>"¡Habéis negociado un embargo comercial contra nosotros!"</Spanish>
+		<Russian>"Вы договорились о торговом эмбарго против нас!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_HIRED_WAR_ALLY</Tag>
+		<English>"You brought in a war ally against us!"</English>
+		<French>"Vous avez soulevé un de nos alliés militaires contre nous !"</French>
+		<German>"Ihr habt einen Kriegsverbündeten gegen uns aufgebracht!"</German>
+		<Italian>"Hai portato in guerra un alleato contro di noi!"</Italian>
+		<Spanish>"¡Habéis traído a un aliado de guerra contra nosotros!"</Spanish>
+		<Russian>"Вы заключили военный союз против нас!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_LIBERATED_CITIES</Tag>
+		<English>"You liberated our settlements!"</English>
+		<French>"Vous avez libéré nos colonies !"</French>
+		<German>"Ihr habt unsere Siedlungen befreit!"</German>
+		<Italian>"Hai liberato i nostri insediamenti"</Italian>
+		<Spanish>"Habéis liberado nuestros asentamientos"</Spanish>
+		<Russian>"Вы освободили наши поселения!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_MADE_DEMAND</Tag>
+		<English>"You made an arrogant demand!"</English>
+		<French>"Vous nous avez fait une demande arrogante !"</French>
+		<German>"Ihr habt eine völlig überzogene Forderung gestellt!"</German>
+		<Italian>"Hai fatto una richiesta arrogante!"</Italian>
+		<Spanish>"¡Nos hicisteis una exigencia arrogante!"</Spanish>
+		<Russian>"Вы выдвинули высокомерное требование!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_MADE_DEMAND_RECENT</Tag>
+		<English>"You recently made an arrogant demand!"</English>
+		<French>"Vous venez de nous soumettre une requête fort arrogante !"</French>
+		<German>"Ihr habt kürzlich eine völlig überzogene Forderung gestellt!"</German>
+		<Italian>"Recentemente hai fatto una richiesta arrogante!"</Italian>
+		<Spanish>"¡Hace poco nos hicisteis una exigencia arrogante!"</Spanish>
+		<Russian>"Недавно вы выдвигали наглые требования!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_MISSIONARY_FAIL</Tag>
+		<English>"Your missionaries have insulted our Spirits!"</English>
+		<French>"Vos missionnaires ont insulté nos Esprits !"</French>
+		<German>"Eure Missionare haben unsere Geister beleidigt!"</German>
+		<Italian>"I tuoi missionari hanno insultato i nostri Spiriti!"</Italian>
+		<Spanish>"¡Tus misioneros han insultado a nuestros antepasados!"</Spanish>
+		<Russian>"Ваши миссионеры оскорбили наших Духов!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_RAZED_CITY</Tag>
+		<English>"You razed one of our settlements!"</English>
+		<French>"Vous avez rasé une de nos colonies!"</French>
+		<German>"Ihr habt eine unserer Siedlungen zerstört!"</German>
+		<Italian>"Hai razziato uno dei nostri insediamenti!"</Italian>
+		<Spanish>"¡Habéis arrasado uno de nuestros asentamientos!"</Spanish>
+		<Russian>"Вы разрушили одно из наших поселений!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_REFUSED_HELP</Tag>
+		<English>"You refused to help us!"</English>
+		<French>"Vous avez refusé de nous aider !"</French>
+		<German>"Ihr habt uns Eure Hilfe verwehrt!"</German>
+		<Italian>"Avete rifiutato di aiutarci!"</Italian>
+		<Spanish>"¡Os negasteis a ayudarnos!"</Spanish>
+		<Russian>"Вы отказались помочь нам!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_REFUSED_TAX</Tag>
+		<English>"You refused to kiss my ring!"</English>
+		<French>"Vous avez refusé d'embrasser ma chevalière !"</French>
+		<German>"Ihr habt Euch geweigert, meinen Ring zu küssen!"</German>
+		<Italian>"Ti sei rifiutato di baciarmi l'anello!"</Italian>
+		<Spanish>"¡Os negasteis a besar mi anillo!"</Spanish>
+		<Russian>"Ты отказался поцеловать мое кольцо!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_REJECTED_DEMAND</Tag>
+		<English>"You refused to give us tribute!"</English>
+		<French>"Vous avez refusé de nous verser un tribut !"</French>
+		<German>"Ihr habt Euch geweigert, uns Tribut zu zollen!"</German>
+		<Italian>"Avete rifiutato di donarci dei tributi!"</Italian>
+		<Spanish>"¡Os negasteis a darnos un tributo!"</Spanish>
+		<Russian>"Вы отказались платить нам дань!"</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_REVENGE_TAKEN</Tag>
+		<English>"We have taken our revenge."</English>
+		<French>"Nous avons pris notre revanche."</French>
+		<German>"Wir haben Rache genommen."</German>
+		<Italian>"Abbiamo avuto la nostra vendetta."</Italian>
+		<Spanish>"Nos hemos vengado."</Spanish>
+		<Russian>"Мы отомстили."</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_STOPPED_TRADING</Tag>
+		<English>"You stopped trading with us."</English>
+		<French>"Vous avez cessé de commercer avec nous."</French>
+		<German>"Ihr habt Eure Handelsbeziehungen mit uns eingestellt."</German>
+		<Italian>"Hai smesso di commerciare con noi."</Italian>
+		<Spanish>"Dejasteis de comerciar con nosotros."</Spanish>
+		<Russian>"Вы перестали торговать с нами."</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MEMORY_STOPPED_TRADING_RECENT</Tag>
+		<English>"You recently stopped trading with us!"</English>
+		<French>"Vous venez de cesser tout commerce avec nous !"</French>
+		<German>"Ihr habt kürzlich Eure Handelsbeziehungen mit uns eingestellt!"</German>
+		<Italian>"Di recente hai interrotto il commercio con noi!"</Italian>
+		<Spanish>"Hace poco dejasteis de comerciar con nosotros."</Spanish>
+		<Russian>"Недавно вы прекратили торговлю с нами!"</Russian>
+	</TEXT>
 </Civ4GameText>

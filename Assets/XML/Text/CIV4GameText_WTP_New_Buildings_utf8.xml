@@ -5,1092 +5,1092 @@
 <!-- -->
 <!-- Game Text Infos -->
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <!-- STANDPOST -->
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_STATUE</Tag>
-        <English>Statue</English>
-        <German>
-            <Text>Statue</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-    <!-- GRAVEYARD -->
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_GRAVEYARD</Tag>
-        <English>Graveyard</English>
-        <French>Cimetière</French>
-        <German>
-            <Text>Friedhof</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Кладбище</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_GRAVEYARD</Tag>
-        <English>Graveyard</English>
-        <French>Cimetière</French>
-        <German>
-            <Text>Friedhof</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Кладбище</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_GRAVEYARD</Tag>
-        <English>Graveyard</English>
-        <French>Cimetière</French>
-        <German>
-            <Text>Friedhof</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Кладбище</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_GRAVEYARD_PEDIA</Tag>
-        <English>In a strange land where religious immigrants look back fondly to medieval times, the graveyard often is a place of fear and superstition. On the other hand it's a place to visit lost loved ones for quiet contemplation. Emotional conflicts arise.[NEWLINE]The two certainties in life are death and taxes. The graveyard handles one. The King takes care of the other.</English>
-        <German>In einem fremden Land, in dem religiöse Einwanderer mit Vorliebe auf das Mittelalter zurückblicken, ist der Friedhof oft ein Ort der Angst und des Aberglaubens. Andererseits ist er ein Ort, an dem man verlorene Angehörige besucht, um in Ruhe darüber nachzudenken. Emotionale Konflikte entstehen.[NEWLINE]Die zwei Gewissheiten im Leben sind der Tod und die Steuern. Um das eine kümmert sich der Friedhof. Der König kümmert sich um das andere.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_GRAVEYARD_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]graveyard[COLOR_REVERT] contributes to [LINK=YIELD_HEALTH]health[\LINK] and crosses.</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Friedhof[COLOR_REVERT] erhöht die [LINK=YIELD_HEALTH]Gesundheit[\LINK].</German>
-    </TEXT>
-    <!-- CONFECTIONER -->
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_CONFECTIONER</Tag>
-        <English>Confectioner</English>
-        <French>Confiseur</French>
-        <German>
-            <Text>Konditor</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_HOUSE</Tag>
-        <English>Confectioner's House</English>
-        <French>Maison du confiseur</French>
-        <German>
-            <Text>Haus des Konditors</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дом кондитера</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_SHOP</Tag>
-        <English>Confectioner's Shop</English>
-        <French>Atelier du confiseur</French>
-        <German>
-            <Text>Konditorladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Кондитерская</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_FACTORY</Tag>
-        <English>Confectionery</English>
-        <French>Confiserie</French>
-        <German>
-            <Text>Konditorei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Фабрика сладостей</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE</Tag>
-        <English>Confectioner's House</English>
-        <French>Maison du confiseur</French>
-        <German>
-            <Text>Haus des Konditors</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дом кондитера</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP</Tag>
-        <English>Confectioner's Shop</English>
-        <French>Atelier du confiseur</French>
-        <German>
-            <Text>Konditorladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Кондитерская</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY</Tag>
-        <English>Confectionery</English>
-        <French>Confiserie</French>
-        <German>
-            <Text>Konditorei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Фабрика сладостей</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_PEDIA</Tag>
-        <English>At first settlers import candy from the home country but before long an enterprising confectioner realizes that sugar is growing right next door, and all that's needed is a way to flavour it - maybe chocolate or vanilla. There's one other trick; grinding the sugar so fine that the candy has a smooth consistency.[NEWLINE]Having a candy store means that the settlers and their children don't need to wait for the ship to come in from Europe to satisfy their sweet tooth. The local confectioner makes everybody happy, the dentist in particular.</English>
-        <German>Zunächst importieren die Siedler Süßigkeiten aus der Heimat, doch schon bald stellt ein geschäftstüchtiger Zuckerbäcker fest, dass der Zucker gleich nebenan wächst und man ihn nur noch aromatisieren muss - vielleicht mit Schokolade oder Vanille. Es gibt noch einen weiteren Trick: Man muss den Zucker so fein mahlen, dass die Bonbons eine glatte Konsistenz bekommen.[NEWLINE]Ein Süßwarenladen bedeutet, dass die Siedler und ihre Kinder nicht auf das Schiff aus Europa warten müssen, um ihren süßen Hunger zu stillen. Der örtliche Süßwarenhändler macht alle glücklich, vor allem den Zahnarzt.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]confectioner's house[COLOR_REVERT] is where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioner[\LINK] are particularly effective here.</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Konditors[COLOR_REVERT] ist die niedrigste Ausbaustufe der Konditoreikette, in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_PEDIA</Tag>
-        <English>The confectioner's shop adds extra variety, candy for every taste, along with traditional sweets that remind people of home. The bigger market helps to keep prices down.[NEWLINE]Extra production creates trading opportunities. Some confectioners even set up tables where tea is served to accompany the treats. A very few offer coffee, at first considered scandalous, because the drink is so stimulating.</English>
-        <German>Die Konditorei sorgt für zusätzliche Abwechslung, Süßigkeiten für jeden Geschmack und traditionelle Süßigkeiten, die die Menschen an ihre Heimat erinnern. Der größere Markt trägt dazu bei, die Preise niedrig zu halten.[NEWLINE]Die zusätzliche Produktion schafft Handelsmöglichkeiten. Einige Zuckerbäcker stellen sogar Tische auf, an denen Tee zu den Leckereien gereicht wird. Einige wenige bieten Kaffee an, was zunächst als skandalös galt, weil das Getränk so anregend ist.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]confectioners' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioner[\LINK] are particularly effective here.</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Konditorladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_PEDIA</Tag>
-        <English>The candy factory can serve an entire region. For one group it offers cheap sweets thanks to economies of scale. For the well-to-do it delivers an unparalleled variety of exotic confections to impress guests on special occasions.[NEWLINE]A big confectionery makes an important contribution to the region it serves, increasing both trading income and the community's happiness.</English>
-        <German>Die Süßwarenfabrik kann dank Skalierungseffekten eine ganze Region mit billigen Süßigkeiten versorgen. Für die Wohlhabenden liefert sie eine unvergleichliche Vielfalt an exotischen Süßigkeiten, um Gäste bei besonderen Anlässen zu beeindrucken.[NEWLINE]Eine große Konditorei leistet einen wichtigen Beitrag für die Region, in der sie tätig ist, und steigert sowohl das Handelseinkommen als auch die Zufriedenheit der Bevölkerung.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]confectioners' factory[COLOR_REVERT] is the top upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioner[\LINK] are particularly effective here.</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Konditorei[COLOR_REVERT] ist die höchste Stufe des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
-	</TEXT>
-    <!-- LEATHER_PADDER -->
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_LEATHER_PADDER</Tag>
-        <English>Leatherworker</English>
-        <French>Maroquinier</French>
-        <German>
-            <Text>Lederpolsterei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_HOUSE</Tag>
-        <English>Leatherworker's House</English>
-        <French>Maison du maroquinier</French>
-        <German>
-            <Text>Haus des Lederschneiders</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дом кожевника</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_SHOP</Tag>
-        <English>Leatherworker's Shop</English>
-        <French>Atelier du maroquinier</French>
-        <German>
-            <Text>Lederwarenladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Мастерская кожевника</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_FACTORY</Tag>
-        <English>Leather Coat Factory</English>
-        <French>Usine de maroquinerie</French>
-        <German>
-            <Text>Lederwarenfabrik</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Кожевенная фабрика</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE</Tag>
-        <English>Leatherworker's House</English>
-        <French>Maison du maroquinier</French>
-        <German>
-            <Text>Haus des Lederschneiders</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дом кожевника</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP</Tag>
-        <English>Leatherworker's Shop</English>
-        <French>Atelier du Maroquinier</French>
-        <German>
-            <Text>Lederwarenladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Мастерская кожевника</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY</Tag>
-        <English>Leather Coat Factory</English>
-        <French>Usine de maroquinerie</French>
-        <German>
-            <Text>Lederwarenfabrik</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Кожевенная фабрика</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_PEDIA</Tag>
-        <English>Leather is good at keeping out the wind but when the temperature drops it still feels cold. Putting padding into leather coats keeps people warm when the snow flies.[NEWLINE]Sewing padding into leather doesn't just make the clothes more comfortable. By adding insulation the leather clothier improves health for those working outside, which can even save their lives.</English>
-        <German>Leder hält zwar gut den Wind ab, aber wenn die Temperatur sinkt, fühlt es sich trotzdem kalt an. Eine Polsterung in den Mänteln hält hingegen die Menschen warm, selbst wenn der Schnee kommt.[NEWLINE]Das Einnähen von Polstern und Futter in Leder macht das Kleidungsstück nicht nur bequemer. Durch die zusätzliche Isolierung wird auch die Gesundheit derjenigen verbessert, die im Freien arbeiten, und kann sogar ihr Leben retten.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]leatherworker's house[COLOR_REVERT] is the lowest level of expansion of leather processing, where settlers work as [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker (lined)[\LINK] make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]sheep wool[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Master leatherworker[\LINK] are particularly effective at this.</English>
-        <French>Coudre un rembourrage et une doublure dans le cuir ne rend pas seulement le vêtement plus confortable. En ajoutant de l'isolation, il améliore également la santé des personnes travaillant à l'extérieur, et peut même leur sauver la vie.</French>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Lederschneiders[COLOR_REVERT] ist die niedrigste Ausbaustufe der Lederverarbeitung, in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_LEATHER_TAYLOR]Meister-Lederschneider[\LINK] sind hierbei besonders effektiv.</German>
-        <Italian>Cucire un'imbottitura e una fodera nella pelle non rende solo l'indumento più confortevole. L'aggiunta di isolamento migliora anche la salute di chi lavora all'aperto e può addirittura salvargli la vita.</Italian>
-        <Spanish>Coser acolchado y forro a la piel no sólo hace que la prenda sea más cómoda. Al añadir aislamiento, también mejora la salud de quienes trabajan al aire libre, e incluso puede salvarles la vida.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_PEDIA</Tag>
-        <English>A bigger business can produce a little more for export, not just to Europe but also to the surrounding First Nations and outdoor workers who appreciate warm clothing. A fashionable leather clothier relies on word of mouth to increase business.[NEWLINE]Practical people see the advantage of insulated clothing in a cold climate. Devout settlers are obsessed with religious prohibitions, so women of easy virtue can earn extra money wearing leather in private to dominate the pious.</English>
-        <German>Ein größeres Unternehmen kann etwas mehr für den Export produzieren, nicht nur nach Europa, sondern auch für die umliegenden Ureinwohner und Outdoor-Arbeiter, die warme Kleidung schätzen. Ein modischer Lederwarenhersteller verlässt sich auf Mundpropaganda, um sein Geschäft zu steigern.[NEWLINE]Praktische Menschen sehen den Vorteil isolierender Kleidung bei kalter Witterung. Fromme Siedler sind von religiösen Verboten beeinflusst, so dass Frauen mit wenig Tugendhaftigkeit zusätzliches Geld verdienen können, indem sie sich in Leder kleiden, um die Frommen zu beherrschen.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]leatherworkers' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK] where settlers work as [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker (lined)[\LINK] make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]sheep wool[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Master leatherworker[\LINK] are particularly effective at this.</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Lederwerkstatt[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_LEATHER_TAYLOR]Meister-Lederschneider[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_PEDIA</Tag>
-        <English>A big business has efficiencies and economies of scale. A solitary leather clothier might spend days fitting a coat to a single customer but a factory can have enough sizes in stock for everyone to buy off the rack.[NEWLINE]Sturdy outdoor leather clothing that stands up to hard wear means more work gets done, people don't get cold, and health and happiness are the result.</English>
-        <German>Ein großes Unternehmen verfügt über Effizienz- und Größenvorteile. Ein einzelner Lederbekleidungshersteller verbringt vielleicht Tage damit, einen Mantel für einen einzigen Kunden anzupassen, aber eine Fabrik kann genügend Größen auf Lager haben, die jeder von der Stange kaufen kann.[NEWLINE]Dank robuster Outdoor-Lederkleidung, die harter Beanspruchung standhält, müssen die Menschen nicht frieren, was ihrer Gesundheit und Zufriedenheit zugutekommt, wodurch mehr Arbeit erledigt werden kann.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]leather coat factory[COLOR_REVERT] is the final upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK], where settlers work as [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker (lined)[\LINK] make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]sheep wool[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Master leatherworker[\LINK] are particularly effective at this.</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Lederwarenfabrik[COLOR_REVERT] ist die letzte Erweiterung des [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_LEATHER_TAYLOR]Meister-Lederschneider[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-<!-- OIL_TRADER -->
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_OIL_TRADER</Tag>
-        <English>Cooking Oil Trader</English>
-        <French>Marchand d'huile</French>
-        <German>
-            <Text>Speiseölhändler</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_HOUSE</Tag>
-        <English>Cooking Oil Trader's House</English>
-        <French>Maison du marchand d'huile</French>
-        <German>
-            <Text>Haus des Ölhändlers</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дом изготовителя масла</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_SHOP</Tag>
-        <English>Cooking Oil Trader's Shop</English>
-        <French>Atelier du marchand d'huile</French>
-        <German>
-            <Text>Speiseölladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Мастерская по изготовлению масла</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_FACTORY</Tag>
-        <English>Cooking Oil Trader Factory</English>
-        <French>Pressoir à huile industriel</French>
-        <German>
-            <Text>Speiseölfabrik</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Фабрика по изготовлению масла</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE</Tag>
-        <English>Cooking Oil Trader's House</English>
-        <French>Maison du marchand d'huile</French>
-        <German>
-            <Text>Haus des Ölhändlers</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дом изготовителя масла</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP</Tag>
-        <English>Cooking Oil Trader's Shop</English>
-        <French>Atelier du marchand d'huile</French>
-        <German>
-            <Text>Speiseölladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Мастерская по изготовлению масла</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY</Tag>
-        <English>Cooking Oil Factory</English>
-        <French>Pressoir à huile industriel</French>
-        <German>
-            <Text>Speiseölfabrik</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Фабрика по изготовлению масла</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_PEDIA</Tag>
-        <English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Oolichan oil from candlefish made up so much of Native commerce that the trade routes were called "grease trails".[NEWLINE]Settlers eating wild game soon realize that it has much less fat than they're used to from domestic animals. In a cold climate fat keeps workers warm outdoors. In the wilderness plant oils are a good path to a balanced diet.</English>
-        <French>Le pressage de l'huile est un artisanat ancien en Europe, notamment dans les cultures méditerranéennes. Les équipements qui écrasent les olives pour en extraire l'huile peuvent être adaptés au colza. Avant le contact avec les Européens, l'huile de cuisson était essentielle pour les nations autochtones du nord-ouest du Pacifique. L'huile d'oolichan provenant de la chandelle constituait une si grande partie du commerce amérindien que les routes commerciales étaient appelées "pistes de graisse".</French>
-        <German>Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den Mittelmeerkulturen. Die Geräte, mit denen Oliven zur Gewinnung von Öl gepresst werden, können auch für die Verarbeitung von Raps verwendet werden.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Oolichan-Öl aus Kerzenfisch machte einen so großen Teil des Handels der Ureinwohner aus, dass die Handelsrouten als "Fettstraßen" bezeichnet wurden.[NEWLINE]Siedler, die Wild essen, stellen bald fest, dass das Fleisch viel weniger Fettanteil hat, als sie es von ihren Nutztieren gewohnt sind. In einem kalten Klima trägt Fett jedoch erheblich dazu bei, die Arbeiter im Freien lange warmzuhalten. In der Wildnis sind Pflanzenöle entsprechend ein guter Weg zu einer ausgewogenen Ernährung.</German>
-        <Italian>La spremitura dell'olio è un'attività antica in Europa, in particolare nelle culture mediterranee. Le attrezzature che schiacciano le olive per ricavarne l'olio possono essere adattate alla colza.[NEWLINE]Prima del contatto europeo, l'olio da cucina era essenziale per i nativi del Pacifico nordoccidentale. L'olio di oolichan ricavato dal pesce candela costituiva una parte così importante del commercio dei nativi che le rotte commerciali venivano chiamate "vie del grasso".</Italian>
-        <Spanish>El prensado del aceite es un antiguo oficio en Europa, sobre todo en las culturas mediterráneas. Antes del contacto europeo, el aceite de cocina era esencial para las naciones indígenas del noroeste del Pacífico. El aceite de oolichan procedente del pez vela constituía una parte tan importante del comercio nativo que las rutas comerciales se llamaban "rutas de la grasa".</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]oil trader's house[COLOR_REVERT] or one of its upgrades is where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]rapeseed oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]rapeseed oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil traders[\LINK] are particularly effective at this.</English>
-        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Ölhändlers[COLOR_REVERT] oder einer seiner Ausbaustufen stellen [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Ölivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] her.[PARAGRAPH:1][LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_PEDIA</Tag>
-        <English>As the oil pressers refine their trade the quality of the oil attracts new customers. Oil traders can now separate their pressings into varying grades to be sold at different prices. As customers discuss which is better for different situations, sales increase.</English>
-        <German>In dem Maße, wie die Ölpresser ihr Handwerk verfeinern, zieht die Qualität des Öls neue Kunden an.[NEWLINE]Ölpresser können nun ihre Presslinge in verschiedene Qualitäten unterteilen, die zu unterschiedlichen Preisen verkauft werden. Wenn die Kunden darüber diskutieren, welche Qualität für die verschiedenen Situationen besser ist, steigt der Umsatz.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]cooking oil shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]rapeseed oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]rapeseed oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil traders[\LINK] are particularly effective at this.</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Speiseölladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_OIL_TRADER_HOUSE]Haus des Ölhändlers[\LINK], wo der [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Olivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder der [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] herstellt.[PARAGRAPH:1][LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_PEDIA</Tag>
-        <English>If there's a good supply of olives and rapeseed, the oil presses can be mechanized to generate exportable quantities. If surplus quantities of oil and rapeseed can be grown close to the factory, an ambitious manager might prove himself by exporting the very best olive oil to Italy.</English>
-        <German>Wenn es ein gutes Angebot an Oliven und Raps gibt, können die Ölpressen mechanisiert werden, um exportfähige Mengen zu erzeugen.[NEWLINE]Wenn in der Nähe der Fabrik überschüssige Öl- und Rapsmengen angebaut werden können, könnte sich ein ehrgeiziger Manager durch den Export von bestem Olivenöl nach Italien beweisen.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]cooking oil factory[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK], where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]rapeseed oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]rapeseed oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil traders[\LINK] are particularly effective at this.</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Speiseölfabrik[COLOR_REVERT] ist das höchste Ausbaustufe des [LINK=BUILDING_OIL_TRADER_HOUSE]Haus des Ölhändlers[\LINK], wo der [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Olivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder der [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] herstellt.[PARAGRAPH:1][LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <!-- ROASTER -->
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_ROASTER</Tag>
-        <English>Roastery</English>
-        <German>
-            <Text>Erdnussrösterei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_HOUSE</Tag>
-        <English>Roaster's House</English>
-        <French>Maison de torréfaction</French>
-        <German>
-            <Text>Haus des Rösters</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дом обжарщика</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_SHOP</Tag>
-        <English>Roaster's Shop</English>
-        <French>Maison du rôtisseur de graines</French>
-        <German>
-            <Text>Röstwarenladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Мастерская обжарки</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_ROASTER_FACTORY</Tag>
-        <English>Roastery</English>
-        <French>Rôtisserie de graines</French>
-        <German>
-            <Text>Rösterei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Фабрика обжарки</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE</Tag>
-        <English>Roaster's House</English>
-        <French>Maison du rôtisseur de graines</French>
-        <German>
-            <Text>Haus des Rösters</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дом обжарщика</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_ROASTER_SHOP</Tag>
-        <English>Roaster's Shop</English>
-        <French>Atelier du rôtisseur de graines</French>
-        <German>
-            <Text>Röstwarenladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Мастерская обжарки</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY</Tag>
-        <English>Roastery</English>
-        <French>Rôtisserie de graines industrielle </French>
-        <German>
-            <Text>Rösterei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Фабрика обжарки</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_PEDIA</Tag>
-        <English>Peanuts are widely grown in the tropics and subtropics. Botanically they're a member of the bean family but in cooking they're used like a nut. Unlike most legumes peanut pods mature underground.[NEWLINE]Peanuts are an excellent source of protein and vitamins. They complement traditional European grains, contributing to workers' health and stamina.</English>
-        <French>Les cacahuètes sont largement cultivées dans les régions tropicales et subtropicales. Sur le plan botanique, elles font partie de la famille des haricots, mais en cuisine, elles sont utilisées comme des noix. Contrairement à la plupart des légumineuses, les gousses d'arachide mûrissent sous terre.</French>
-        <German>Erdnüsse werden in den Tropen und Subtropen weit verbreitet angebaut. Botanisch gesehen gehören sie zur Familie der Bohnengewächse, aber in der Küche werden sie wie eine Nuss verwendet. Im Gegensatz zu den meisten Hülsenfrüchten reifen Erdnussschoten unterirdisch.[NEWLINE]Erdnüsse sind eine hervorragende Quelle für Proteine und Vitamine. Sie ergänzen die traditionellen europäischen Getreidesorten und tragen zur Gesundheit und Ausdauer der Arbeitnehmer bei.</German>
-        <Italian>Le arachidi sono ampiamente coltivate nei tropici e nelle regioni subtropicali. Dal punto di vista botanico fanno parte della famiglia dei fagioli, ma in cucina vengono utilizzate come una noce. A differenza della maggior parte dei legumi, i baccelli delle arachidi maturano sottoterra.</Italian>
-        <Spanish>Los cacahuetes se cultivan ampliamente en las zonas tropicales y subtropicales. Botánicamente pertenecen a la familia de las judías, pero en la cocina se utilizan como frutos secos. A diferencia de la mayoría de las legumbres, las vainas de los cacahuetes maduran bajo tierra.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]roaster's house[COLOR_REVERT] is where various foods are roasted:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Peanut roasters[\LINK] roast [LINK=YIELD_PEANUTS]peanuts[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]cocoa roasters[\LINK] roast [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Coffee roasters[\LINK] roast [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COFFEE]coffee[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Master roasters[\LINK] are particularly effective in this regard.</English>
-        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Rösters[COLOR_REVERT] oder einer seiner Ausbaustufen können verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.[PARAGRAPH:1][LINK=UNIT_ROASTER]Röstmeister[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_ROASTER_SHOP_PEDIA</Tag>
-        <English>Though they can be boiled, fresh harvested raw peanuts are usually roasted before being eaten. Enterprising roasters soon learn to add salt or grind the peanuts into peanut butter. Other nut butters soon follow.[NEWLINE]Once dried, peanuts last for a long time in a scout's saddlebags or in the barrels on a wagon. Peanut oil is also valuable for cooking.</English>
-        <German>Obwohl sie gekocht werden können, werden frisch geerntete, rohe Erdnüsse in der Regel geröstet, bevor sie verzehrt werden. Unternehmungslustige Röster lernten bald, Salz hinzuzufügen oder die Erdnüsse zu Erdnussbutter zu mahlen. Andere Nussbuttersorten folgten bald.[NEWLINE]Einmal getrocknet, halten sich Erdnüsse lange in den Satteltaschen der Pfadfinder oder in den Fässern auf dem Wagen. Erdnussöl ist auch zum Kochen wertvoll.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_ROASTER_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]roaster shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK] where various foods are roasted:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Peanut roasters[\LINK] roast [LINK=YIELD_PEANUTS]peanuts[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]cocoa roasters[\LINK] roast [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Coffee roasters[\LINK] roast [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COFFEE]coffee[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Master roasters[\LINK] are particularly effective in this regard.</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Röstwarenladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_ROASTER_HOUSE]Haus des Rösters[\LINK], wo verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.[PARAGRAPH:1][LINK=UNIT_ROASTER]Röstmeister[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_PEDIA</Tag>
-        <English>As peanut growers start to deliver large crops, roasters extend the market beyond their own cities, promoting the peanut as an exotic delicacy in temperate regions where it won't grow, Europe for example.[NEWLINE]A region with a big peanut roasting factory helps keep workers healthy. Peanuts are especially important where slave populations need added protein. Their owners can afford to eat meat, increasing their risk of heart disease.</English>
-        <German>In dem Maße, in dem die Erdnussbauern beginnen, große Ernten zu liefern, dehnen die Röster den Markt über ihre eigenen Städte hinaus aus und werben für die Erdnuss als exotische Delikatesse in  Regionen, wie zum Beispiel Europa, in denen sie nicht wächst.[NEWLINE]Eine Region mit einer großen Erdnussrösterei trägt zur Gesunderhaltung der Arbeiter bei. Erdnüsse sind besonders wichtig, wenn Sklaven zusätzliche Proteine benötigen. Ihre Besitzer können es sich leisten, Fleisch zu essen, was ihr Risiko für Herzkrankheiten erhöht.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]roastery[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK] where various foods are roasted:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Peanut roasters[\LINK] roast [LINK=YIELD_PEANUTS]peanuts[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]cocoa roasters[\LINK] roast [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Coffee roasters[\LINK] roast [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COFFEE]coffee[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Master roasters[\LINK] are particularly effective in this regard.</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Rösterei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_ROASTER_HOUSE]Haus des Rösters[\LINK], wo verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.[PARAGRAPH:1][LINK=UNIT_ROASTER]Röstmeister[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <!-- POTTERY -->
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_POTTERY</Tag>
-        <English>Potter's House</English>
-        <French>Maison du potier</French>
-        <German>
-            <Text>Töpferei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_HOUSE</Tag>
-        <English>Potter's House</English>
-        <French>Maison du potier</French>
-        <German>
-            <Text>Haus des Töpfers</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дом гончара</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_SHOP</Tag>
-        <English>Potter's Shop</English>
-        <French>Atelier du potier</French>
-        <German>
-            <Text>Töpferladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Гончарная мастерская</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_POTTERY_FACTORY</Tag>
-        <English>Pottery Factory</English>
-        <French>Usine de poterie</French>
-        <German>
-            <Text>Töpferei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Фабрика гончарных изделий</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE</Tag>
-        <English>Potter's House</English>
-        <French>Maison du potier</French>
-        <German>
-            <Text>Haus des Töpfers</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дом гончара</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_POTTERY_SHOP</Tag>
-        <English>Potter's Shop</English>
-        <French>Atelier du potier</French>
-        <German>
-            <Text>Töpferladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Гончарная мастерская</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY</Tag>
-        <English>Pottery Factory</English>
-        <French>Usine de poterie</French>
-        <German>
-            <Text>Töpferei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Фабрика гончарных изделий</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_PEDIA</Tag>
-        <English>Pottery is an ancient way to store grain. In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until they can finally plant their new crops in spring. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements.</English>
-        <French>La poterie est un moyen ancien de stocker le grain. Dans le Nouveau Monde pluvieux et infesté d'insectes, les pots contiennent suffisamment de céréales pour permettre aux colons de survivre pendant l'hiver jusqu'à ce qu'ils puissent enfin planter leurs nouvelles cultures au printemps.</French>
-        <German>Töpferwaren sind eine uralte Methode zur Lagerung von Getreide. In der regnerischen, von Insekten heimgesuchten Neuen Welt enthielten die Töpfe genug Getreide, um die Siedler über den Winter am Leben zu erhalten, bis sie im Frühjahr endlich ihre neue Ernte einpflanzen konnten.[NEWLINE]Töpferwaren ermöglichen es den Dörfern, ihr überschüssiges Getreide zu lagern, um den Winter zu überstehen. Das Beladen von Wagen mit robusten Töpfen ist eine praktische Methode, um Getreide zu transportieren und neue Siedlungen mit Lebensmitteln zu versorgen.</German>
-        <Italian>La ceramica è un modo antico di conservare il grano. Nel Nuovo Mondo, caratterizzato da piogge e insetti, i vasi contengono abbastanza grano per mantenere i coloni in vita durante l'inverno, fino a quando non possono piantare le nuove colture in primavera.</Italian>
-        <Spanish>La cerámica es una forma antigua de almacenar grano. En el lluvioso Nuevo Mundo, plagado de insectos, las vasijas contienen grano suficiente para mantener vivos a los colonos durante el invierno, hasta que por fin pueden plantar sus nuevas cosechas en primavera.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]potter's house[COLOR_REVERT] is where a colonist with the [LINK=PROFESSION_POTTER]potter[\LINK] profession uses [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are artists at this, and more productive as well.</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Töpfers[COLOR_REVERT] ist der Ort, an dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK], mit Hilfe von [LINK=YIELD_PEAT]Torf[\LINK], zu [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verarbeitet.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_PEDIA</Tag>
-        <English>As the pottery business grows employees specialize. Most of the money comes in for sturdy practical pots holding everything from rice to rum, but a few creative types form imaginative vessels with decorative patterns, some merely for display. The Puritans strongly object.[NEWLINE]With food and drink stored securely in pottery, life is now less precarious. Businesses feel safer taking risks and so the communities grow.</English>
-        <German>Während das Töpfergeschäft wächst, spezialisieren sich die Mitarbeiter. Das meiste Geld wird für robuste, praktische Töpfe ausgegeben, in denen alles von Reis bis Rum aufbewahrt wird, aber ein paar kreative Typen formen phantasievolle Gefäße mit dekorativen Mustern, einige davon nur zur Schau. Die Puritaner sind strikt dagegen.[NEWLINE]Durch die sichere Aufbewahrung von Lebensmitteln und Getränken in Töpferwaren ist das Leben nun weniger prekär. Die Unternehmen fühlen sich sicherer und somit risikobereiter, wodurch sich das Wachstum erhöht.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_POTTERY_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]pottery shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession use [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Töpferladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK], mit Hilfe von [LINK=YIELD_PEAT]Torf[\LINK], zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_PEDIA</Tag>
-        <English>Pottery factories can be built near the best sources of clay, thus delivering high quality at a cheap price. With every type of pot in demand, the pottery factory owners are squirrelling away pots of money.</English>
-        <German>Töpferfabriken können in der Nähe der besten Tonvorkommen errichtet werden, so dass sie eine hohe Qualität zu einem günstigen Preis liefern.[NEWLINE]Da alle Arten von Töpfen gefragt sind, legen die Besitzer der Töpferfabriken einen Haufen Geld beiseite.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]pottery factory[COLOR_REVERT] is the final upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession use [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Töpferei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK], mit Hilfe von [LINK=YIELD_PEAT]Torf[\LINK], zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <!-- TAILOR -->
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_TAILOR</Tag>
-        <English>Tailor</English>
-        <German>
-            <Text>Schneiderei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TAILOR_HOUSE</Tag>
-        <English>Tailor's House</English>
-        <German>
-            <Text>Haus des Schneiders</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дом портного</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TAILOR_SHOP</Tag>
-        <English>Tailor's Shop</English>
-        <German>
-            <Text>Schneiderladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Мастерская портного</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TAILOR_FACTORY</Tag>
-        <English>Clothing Factory</English>
-        <German>
-            <Text>Schneiderei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Фабрика одежды</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE</Tag>
-        <English>Tailor's House</English>
-        <French>Maison du tailleur de vêtements</French>
-        <German>
-            <Text>Haus des Schneiders</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дом портного</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_TAILOR_SHOP</Tag>
-        <English>Tailor's Shop</English>
-        <French>Atelier du tailleur de vêtements</French>
-        <German>
-            <Text>Schneiderladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Мастерская портного</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY</Tag>
-        <English>Clothing Factory</English>
-        <French>Usine de vêtements</French>
-        <German>
-            <Text>Schneiderei</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Фабрика одежды</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_PEDIA</Tag>
-        <English>At first women prided themselves on sewing all their families' clothes, getting their cloth from the weaver. The tailor needs to show his garments are better, or hope that people assume they're better simply because he's a man.[NEWLINE]With time and talent the tailor is finally able to create the well-dressed man, stylish and ready to succeed at diplomacy, business or romance.</English>
-        <German>Anfangs waren die Frauen stolz darauf, die gesamte Kleidung ihrer Familien zu nähen und den Stoff von der Weberin zu beziehen. Der Schneider muss zeigen, dass seine Kleidung besser ist, oder darauf hoffen, dass die Leute annehmen, dass sie besser ist, nur weil er ein Mann ist.[NEWLINE]Der Schneider erschafft den gut gekleideten Mann, stilvoll und bereit, in der Diplomatie, im Geschäftsleben oder in der Liebe erfolgreich zu sein.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]tailor's house[COLOR_REVERT] is where the coloured fabrics from the [LINK=BUILDING_DYERS_HOUSE]dyer's house[\LINK], or one of its upgrades, are made into clothing.[NEWLINE]A settler with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession uses [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; or the [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailor[\LINK] uses [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK].  [LINK=UNIT_CLOTH_TAYLOR]Master tailors[\LINK] are particularly effective at this.</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Schneiders[COLOR_REVERT] ist der Ort, an dem die gefärbten Stoffe aus dem [LINK=BUILDING_DYERS_HOUSE]Färberhaus[\LINK], oder einer seiner Erweiterungen, zu Kleidung verarbeitet werden.[NEWLINE]Ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf des [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneiders (Alltagskleider)[\LINK] stellt aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] schlichte [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder der [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] stellt aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK] dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] her.[PARAGRAPH:1][LINK=UNIT_CLOTH_TAYLOR]Schneidermeister[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_PEDIA</Tag>
-        <English>The tailor's shop grows to include a variety of sub-trades. The cutter seldom sews the garment. A different specialist chooses the perfect fabric for every style.[NEWLINE]Having a tailor's shop is a sign of success for a growing town. If the shop has a tailor who's fashionable, everyone from the elder statesman to the firebrand preacher will buy there so they can look their best.</English>
-        <German>Die Schneiderei wächst und umfasst eine Vielzahl von Unterberufen. Selten näht der Schneider das Kleidungsstück. Für jeden Stil wählt ein anderer Spezialist den perfekten Stoff aus.[NEWLINE]Das Vorhandensein einer Schneiderei ist ein Zeichen für den Erfolg einer wachsenden Stadt. Wenn das Geschäft einen Schneider hat, der modisch ist, kauft jeder - vom älteren Staatsmann bis zum Brandprediger - dort ein, damit er gut aussieht.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_TAILOR_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]tailors' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK] where colonists with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession use [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; and where [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailors[\LINK] use [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK]. [LINK=UNIT_CLOTH_TAYLOR]Master tailors[\LINK] are particularly effective at this.</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Schneiderladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_TAILOR_HOUSE]Schneiderhauses[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneider (Alltagskleider)[\LINK] aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] einfache [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK], dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_CLOTH_TAYLOR]Schneidermeister[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_PEDIA</Tag>
-        <English>A tailors' factory offers less prestige than an exclusive shop but it makes up for that in output. Young workers with an eye on advancement can buy off the rack at a fraction of the cost of a personal fitting.[NEWLINE]The tailors' factory demonstrates that menswear and women's fashion are widely available. It's proof that a city has arrived socially.</English>
-        <German>Eine Schneiderei bietet weniger Prestige als ein exklusives Geschäft, macht dies aber durch die Produktion wieder wett. Junge, aufstiegsorientierte Arbeitnehmer können zu einem Bruchteil der Kosten einer persönlichen Anprobe von der Stange kaufen.[NEWLINE]Die Schneiderei zeigt, dass Herrenmode weithin verfügbar ist. Sie ist der Beweis dafür, dass eine Stadt gesellschaftlich angekommen ist.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]tailors' factory[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK] where colonists with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession use [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; and where [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailors[\LINK] use [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK]. [LINK=UNIT_CLOTH_TAYLOR]Master tailors[\LINK] are particularly effective at this.</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Schneiderei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_TAILOR_HOUSE]Haus des Schneiders[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneider (Alltagskleider)[\LINK] aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] einfache [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK], dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_CLOTH_TAYLOR]Schneidermeister[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <!-- FIREWORKER -->
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_BLACK_POWDER</Tag>
-        <English>Powder Shed</English>
-        <German>
-            <Text>Pulvermühle</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_HOUSE</Tag>
-        <English>Powder Maker's House</English>
-        <French>Maison du fabricant de poudre</French>
-        <German>Haus des Pulvermachers</German>
-        <Italian>Casa del polveriere</Italian>
-        <Spanish>Casa del polvorero</Spanish>
-        <Russian>Дом пороховщика</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_SHOP</Tag>
-        <English>Powder Makers' Shop</English>
-        <French>Atelier du fabricant de poudre</French>
-        <German>
-            <Text>Pulverladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Мастерская по изготовлению пороха</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_FACTORY</Tag>
-        <English>Powder Magazine</English>
-        <French>Usine poudrière</French>
-        <German>
-            <Text>Pulverfabrik</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Фабрика взрывчатки</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE</Tag>
-        <English>Powder Maker's House</English>
-        <French>Maison du fabricant de poudre</French>
-        <German>Haus des Pulvermachers</German>
-        <Italian>Casa del polveriere</Italian>
-        <Spanish>Casa del polvorero</Spanish>
-        <Russian>Дом пороховщика</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP</Tag>
-        <English>Powder Makers' Shop</English>
-        <French>Atelier du fabricant de poudre</French>
-        <German>
-            <Text>Pulverladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Мастерская по изготовлению пороха</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY</Tag>
-        <English>Powder Magazine</English>
-        <French>Usine poudrière</French>
-        <German>
-            <Text>Pulverfabrik</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Фабрика взрывчатки</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_PEDIA</Tag>
-        <English>Well away from other buildings the powder maker mixes gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. In colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.[NEWLINE]The powder maker needs to produce enough black powder so that soldiers are well-supplied to defend their settlements. Even more is needed for miners and the pioneers building roads.</English>
-        <French>A l'écart des autres bâtiments, le poudrier mélange la poudre à canon à partir de soufre, de charbon de bois et de salpêtre : des munitions pour les fusils des soldats. À l'époque coloniale, c'est le seul explosif disponible (la dynamite sera inventée en 1867). Elle est donc également utilisée pour l'artillerie, l'exploitation minière et la construction de routes.</French>
-        <German>Weit entfernt von anderen Gebäuden mischt der Pulvermacher Schießpulver aus Schwefel, Holzkohle und Salpeter für die Gewehre der Soldaten. In der Kolonialzeit ist es der einzige verfügbare Sprengstoff (Dynamit wird erst 1867 erfunden) und wird auch für die Artillerie, den Bergbau und den Straßenbau verwendet.[NEWLINE]Der Pulvermacher muss genügend Schwarzpulver herstellen, damit die Soldaten gut ausgerüstet sind, um ihre Siedlungen zu verteidigen. Noch mehr wird für die Bergleute und die Pioniere zum Straßenbau benötigt.</German>
-        <Italian>Ben lontano da altri edifici, il polveriere mescola la polvere da sparo con zolfo, carbone e salnitro: munizioni per i cannoni dei soldati. In epoca coloniale è l'unico esplosivo disponibile (la dinamite sarà inventata nel 1867), quindi viene utilizzato anche per l'artiglieria, le miniere e la costruzione di strade.</Italian>
-        <Spanish>Alejado de otros edificios, el polvorero mezcla pólvora a partir de azufre, carbón vegetal y salitre: munición para las armas de los soldados. En la época colonial es el único explosivo disponible (la dinamita se inventará en 1867), por lo que también se utiliza para la artillería, la minería y la construcción de carreteras.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]powder maker's house[COLOR_REVERT] is where, first, [LINK=YIELD_CHAR_COAL]charcoal[\LINK] is made from [LINK=YIELD_LUMBER]lumber[\LINK] by a settler with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession; and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by another colonist with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]line infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]light artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
-        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Pulvermachers[COLOR_REVERT] wird zunächst von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] hergestellt und dann daraus von einem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Pulvermacher[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_PEDIA</Tag>
-        <English>As the business gets bigger, the black powder is stored in kegs which represent a massive increase in explosive power, so much that "powder keg" becomes a metaphor for high risk. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.</English>
-        <German>Mit zunehmender Größe des Unternehmens wird das Schwarzpulver in Fässern gelagert, die eine so große Sprengkraft haben, dass "Pulverfass" zu einer Metapher für ein hohes Risiko wird.[NEWLINE]Schwarzpulver mag gefährlich sein, aber es ist nicht so gefährlich wie eine schwache Armee ohne genügend Munition.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]powder makers' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] where charcoal is made from [LINK=YIELD_LUMBER]lumber[\LINK] by settlers with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession, and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by other colonists with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]line infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]light artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Pulverladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_FIREWORKERS_HOUSE]Haus des Pulvermachers[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] herstellt, und dann von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Pulvermacher[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet wird.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_PEDIA</Tag>
-        <English>The powder maker supplies propellant for guns and artillery, and explosives for mining and road building. For a big army so much has to be kept in kegs that an unlucky event in this building can blow up the entire town.[NEWLINE]Centralizing production of propellant for guns and artillery, and explosives for mining and road building, is efficient but it means powder trains of vulnerable wagons are now on the roads, open to attack.</English>
-        <German>Der Pulvermacher liefert Treibladungen für Geschütze und Artillerie sowie Sprengstoff für den Berg- und Straßenbau. Für eine große Armee muss so viel in Fässern gelagert werden, dass ein einziges Missgeschick in diesem Gebäude die ganze Stadt in die Luft jagen kann.[NEWLINE]Die Zentralisierung der Produktion von Treibstoff für Geschütze und Artillerie sowie von Sprengstoff für den Berg- und Straßenbau ist effizient, bedeutet aber auch, dass Pulverzüge mit anfälligen Wagen auf den Straßen unterwegs sind und angegriffen werden können.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]powder magazine[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] where charcoal is made from [LINK=YIELD_LUMBER]lumber[\LINK] by settlers with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession, and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by other colonists with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]line infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]light artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Pulverfabrik[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_FIREWORKERS_HOUSE]Haus des Pulvermachers[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] herstellt, und dann von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Pulvermacher[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet wird.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
-    </TEXT>
-    <!-- BAKER -->
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_BAKER</Tag>
-        <English>Baker</English>
-        <French>Boulanger</French>
-        <German>Bäcker</German>
-        <Italian>Fornaio</Italian>
-        <Spanish>Panadero</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BAKER_HOUSE</Tag>
-        <English>Baker's House</English>
-        <French>Maison du boulanger</French>
-        <German>Haus des Bäckers</German>
-        <Italian>Casa del fornaio</Italian>
-        <Spanish>Casa del panadero</Spanish>
-        <Russian>Дом пекаря</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BAKER_SHOP</Tag>
-        <English>Baker's Shop</English>
-        <German>
-            <Text>Bäckerladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Пекарня</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BAKERY</Tag>
-        <English>Bakery</English>
-        <French>Boulangerie</French>
-        <German>Bäckerei</German>
-        <Italian>Panificio</Italian>
-        <Spanish>Panadería</Spanish>
-        <Russian>Фабрика выпечки</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BAKER_HOUSE</Tag>
-        <English>Baker's House</English>
-        <French>Maison du boulanger</French>
-        <German>Haus des Bäckers</German>
-        <Italian>Casa del fornaio</Italian>
-        <Spanish>Casa del panadero</Spanish>
-        <Russian>Дом пекаря</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BAKER_SHOP</Tag>
-        <English>Baker's Shop</English>
-        <French>Atelier du boulanger</French>
-        <German>
-            <Text>Bäckerladen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Пекарня</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BAKERY</Tag>
-        <English>Bakery</English>
-        <French>Boulangerie</French>
-        <German>Bäckerei</German>
-        <Italian>Panificio</Italian>
-        <Spanish>Panadería</Spanish>
-        <Russian>Фабрика выпечки</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_PEDIA</Tag>
-        <English>At first every household bakes its own bread but soon the baker's house centralizes food production. The baker starts work well before dawn so that households can have their daily bread. Settlers who remember the early starvation days continue to grow squash, beans and corn but new arrivals prefer familiar food from the old country.[NEWLINE]Having a bakery means each household doesn't need to bake its own bread. That allows other colonists to spend time on what they do best. Specialization helps the economy to grow, a concept soon popularized in books by economists Adam Smith and David Ricardo.</English>
-        <French>Au début, chaque foyer cuit son propre pain, mais bientôt la maison du boulanger centralise la production alimentaire. Le boulanger commence à travailler bien avant l'aube pour que les ménages puissent avoir leur pain quotidien. Les colons qui se souviennent des premiers jours de famine continuent de cultiver des courges, des haricots et du maïs, mais les nouveaux arrivants préfèrent les aliments familiers du vieux pays.[NEWLINE]Le fait d'avoir une boulangerie signifie que chaque foyer n'a pas besoin de cuire son propre pain. Cela permet aux autres colons de consacrer du temps à ce qu'ils font le mieux. La spécialisation favorise la croissance de l'économie, un concept bientôt popularisé dans les livres des économistes Adam Smith et David Ricardo.</French>
-        <German>Zunächst bäckt jeder Haushalt sein eigenes Brot, doch schon bald wird die Lebensmittelproduktion durch die Bäckereien zentralisiert. Der Bäcker beginnt seine Arbeit lange vor dem Morgengrauen, damit die Haushalte ihr tägliches Brot bekommen. Siedler, die sich an die frühen Hungertage erinnern, bauen weiterhin Kürbisse, Bohnen und Mais an, aber Neuankömmlinge bevorzugen die vertrauten Lebensmittel aus dem alten Land.[NEWLINE]Mit einer Bäckerei muss nicht jeder Haushalt sein eigenes Brot backen. So können die anderen Kolonisten ihre Zeit mit dem verbringen, was sie am besten können. Spezialisierung hilft der Wirtschaft zu wachsen, ein Konzept, das schon bald in den Büchern der Ökonomen Adam Smith und David Ricardo popularisiert wurde.</German>
-        <Italian>All'inizio ogni famiglia prepara il proprio pane, ma presto la casa del fornaio centralizza la produzione di cibo. Il fornaio inizia a lavorare molto prima dell'alba, in modo che le famiglie possano avere il pane quotidiano. I coloni che ricordano i primi tempi di fame continuano a coltivare zucche, fagioli e mais, ma i nuovi arrivati preferiscono il cibo familiare del vecchio Paese.[NEWLINE]Avere un panificio significa che ogni famiglia non ha bisogno di cuocere il proprio pane. Questo permette agli altri coloni di dedicare il loro tempo a ciò che sanno fare meglio. La specializzazione aiuta l'economia a crescere, un concetto presto reso popolare nei libri degli economisti Adam Smith e David Ricardo.</Italian>
-        <Spanish>Al principio, cada hogar hornea su propio pan, pero pronto la casa del panadero centraliza la producción de alimentos. El panadero empieza a trabajar mucho antes del amanecer para que los hogares puedan tener su pan diario. Los colonos que recuerdan los primeros días de hambruna siguen cultivando calabaza, judías y maíz, pero los recién llegados prefieren la comida familiar del viejo país.[NEWLINE]Tener una panadería significa que cada hogar no necesita hornear su propio pan. Eso permite a los demás colonos dedicar su tiempo a lo que mejor saben hacer. La especialización contribuye al crecimiento de la economía, un concepto que pronto se popularizó en los libros de los economistas Adam Smith y David Ricardo.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BAKER_HOUSE_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]baker's house[COLOR_REVERT] is where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
-        <German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Bäckers[COLOR_REVERT] stellen [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] her. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BAKER_SHOP_PEDIA</Tag>
-        <English>As the bakery gets more workers it might add a pastry chef who creates sweet treats that bring in business. The business also provides a variety of loaves so that new arrivals can buy the kind of bread that reminds them of home. The bakery also has cured meats for sandwiches, soon offering all the variety a hungry traveller might want.[NEWLINE]As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats. A few serve coffee which is considered scandalous because of the stimulating effect.</English>
-        <German>Wenn die Bäckerei mehr Mitarbeiter hat, kann sie einen Konditor einstellen, der süße Leckereien herstellt, die das Geschäft ankurbeln. Das Unternehmen bietet auch eine Vielzahl von Brotsorten an, damit Gäste das Brot kaufen können, das sie an ihre Heimat erinnert.[NEWLINE]Wenn die Bäckerei wächst und Kekse und Gebäck anbietet, wird sie zu einem sozialen Zentrum. Einige Bäcker stellen sogar Tische auf, an denen Tee zu den Leckereien serviert wird. Einige wenige servieren Kaffee, der wegen seiner anregenden Wirkung als skandalös gilt.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BAKER_SHOP_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]bakeshop[COLOR_REVERT] is the upgrade of the[LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Bäckerladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BAKERY_PEDIA</Tag>
-        <English>A large bakery serves a region. On the one hand it offers cheap food thanks to economies of sale. On the other it delivers an unparalleled variety of pastries, pies and cakes for special occasions.[NEWLINE]A big bakery makes an important contribution to the region it serves, increasing both the food supply and the community's happiness.</English>
-        <German>Eine Großbäckerei bedient eine Region. Einerseits bietet sie dank des günstigen Verkaufs günstige Lebensmittel an. Darüber hinaus liefert sie eine unvergleichliche Vielfalt an Backwaren, Torten und Kuchen für besondere Anlässe.[NEWLINE]Eine große Bäckerei leistet einen wichtigen Beitrag für die Region, in der sie tätig ist, indem sie sowohl die Lebensmittelversorgung als auch das Wohlbefinden der Bevölkerung verbessert.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_BAKERY_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]bakery[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Bäckerei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
-    </TEXT>
-    <!-- Courthouse -->
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_LAW</Tag>
-        <English>Courthouse</English>
-        <German>
-            <Text>Gerichtsgebäude</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_VILLAGE_COURT</Tag>
-        <English>Village Courthouse</English>
-        <French>Maison du juge</French>
-        <German>
-            <Text>Dorfgerichtshaus</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Здание суда</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TOWN_COURT</Tag>
-        <English>Town Courthouse</English>
-        <French>Tribunal de la ville</French>
-        <German>
-            <Text>Stadtgerichtshaus</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Городской суд</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CITY_COURT</Tag>
-        <English>City Courthouse</English>
-        <French>Tribunal d'arrondissement</French>
-        <German>
-            <Text>Distriktsgerichthaus</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Окружной суд</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_SUPREME_COURT</Tag>
-        <English>Supreme Court</English>
-        <French>Cour suprême</French>
-        <German>
-            <Text>Oberstes Gericht</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Верховный суд</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_VILLAGE_COURT</Tag>
-        <English>Village Courthouse</English>
-        <French>Maison du juge de paix</French>
-        <German>
-            <Text>Dorfgerichtshaus</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Здание суда</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_TOWN_COURT</Tag>
-        <English>Town Courthouse</English>
-        <French>Tribunal de la ville</French>
-        <German>
-            <Text>Stadtgerichtshaus</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Городской суд</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_CITY_COURT</Tag>
-        <English>City Courthouse</English>
-        <French>Tribunal d'arrondissement</French>
-        <German>
-            <Text>Distriktsgerichthaus</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Окружной суд</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_SUPREME_COURT</Tag>
-        <English>Supreme Court</English>
-        <French>Cour suprême</French>
-        <German>
-            <Text>Oberstes Gericht</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Верховный суд</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_VILLAGE_COURT_PEDIA</Tag>
-        <English>Village courthouses handle small property disputes and local misbehaviour. Some use common law, where the judge recalls what was decided the last time that the cow broke through the fence and grazed in the neighbour's field. Others rely on written rules from the governor or the overseas monarch.</English>
-        <German>Die Dorfgerichte kümmern sich um kleine Eigentumsstreitigkeiten und lokales Fehlverhalten. Einige wenden das Gewohnheitsrecht an, wobei sich der Richter daran erinnert, was das letzte Mal entschieden wurde, als die Kuh den Zaun durchbrach und auf dem Feld des Nachbarn graste. Andere stützen sich auf schriftliche Vorschriften des Gouverneurs oder des Monarchen in Übersee.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_VILLAGE_COURT_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]village court[COLOR_REVERT] is the smallest justice building. A colonist assigned as a [LINK=PROFESSION_JUDGE]judge[\LINK] in the [COLOR_HIGHLIGHT_TEXT]village court[COLOR_REVERT] generates [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] are particularly effective at this.</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Dorfgericht[COLOR_REVERT] ist das kleinste Justizgebäude. Ein im [COLOR_HIGHLIGHT_TEXT]Dorfgericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_TOWN_COURT_PEDIA</Tag>
-        <English>The town courthouse expands its purview to contracts and business law. It still hears criminal cases but they're a distraction from the decisions that really matter. There's a long list of hanging offences.</English>
-        <German>Das Stadtgericht weitet seinen Zuständigkeitsbereich auf Verträge und Wirtschaftsrecht aus. Es werden zwar immer noch Gewalttaten verhandelt, aber die lenken von den wirklich wichtigen Entscheidungen ab. Es gibt eine lange Liste von Hinrichtungsdelikten.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_TOWN_COURT_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]town courthouse[COLOR_REVERT] is the first expansion stage of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed in the [COLOR_HIGHLIGHT_TEXT]town courthouse[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] are particularly effective at this.</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Stadtgericht[COLOR_REVERT] ist die erste Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Stadtgericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_CITY_COURT_PEDIA</Tag>
-        <English>The city courthouse still has to control violence and money, but dangerous ideas are increasingly subject to regulation. The jails have political prisoners alongside drunks and con artists. Sometimes all three are the same person.</English>
-        <German>Das Distriktsgericht muss nach wie vor Gewalt und Geld kontrollieren, aber gefährliche Ideen werden zunehmend einer Regulierung unterworfen. In den Gefängnissen sitzen politische Gefangene neben Säufern und Betrügern. Manchmal sind alle drei ein und dieselbe Person.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_CITY_COURT_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]city courthouse[COLOR_REVERT] is the highest normal expansion level of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed to the [COLOR_HIGHLIGHT_TEXT]city courthouse[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] are particularly effective at this.</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Distriktsgerichthaus[COLOR_REVERT] ist die höchste normale Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Distriktsgerichthaus[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_SUPREME_COURT_PEDIA</Tag>
-        <English>The Supreme Court exists as a counterbalance to government. Rules are made consistent. Many laws have a strong religious component. Precedent remains important, so the Supreme Court is a force for social continuity.</English>
-        <German>Der Oberste Gerichtshof ist ein Gegengewicht zur Regierung. Regeln werden konsequent umgesetzt. Viele Gesetze haben eine starke religiöse Komponente. Präzedenzfälle bleiben wichtig, so dass der Oberste Gerichtshof eine Kraft für soziale Kontinuität ist.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]supreme court[COLOR_REVERT] can only be built once and is the very highest expansion level of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed in the [COLOR_HIGHLIGHT_TEXT]supreme court[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates a great deal of [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] are particularly effective at this.</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Oberste Gericht[COLOR_REVERT] kann nur einmal errichtet werden und ist die allerhöchste Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Obersten Gericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt sehr viel [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
-    </TEXT>
-    <!-- JAIL -->
-    <TEXT>
-        <Tag>TXT_KEY_SPECIALBUILDING_JAIL</Tag>
-        <English>Jail</English>
-        <French>Prison</French>
-        <German>
-            <Text>Gefängnis</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_JAIL</Tag>
-        <English>Jail</English>
-        <French>Prison</French>
-        <German>
-            <Text>Gefängnis</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Тюрьма</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_JAIL</Tag>
-        <English>Jail</English>
-        <French>Prison</French>
-        <German>
-            <Text>Gefängnis</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Тюрьма</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDING_JAIL_PEDIA</Tag>
-        <English>Jail is how the settlement handles drunks, domestic disputes, witches and thieves. Murderers don't stay in jail for long because they're hanged. Thieves are hanged later.</English>
-        <German>Das Gefängnis ist der Ort, an dem Betrunkene, häusliche Gewalttäter, Hexen und Dieben landen. Mörder bleiben nicht lange im Gefängnis, weil sie gehängt werden. Diebe werden später aufgehängt.</German>
-    </TEXT>
+	<!-- STANDPOST -->
 	<TEXT>
-        <Tag>TXT_KEY_BUILDING_JAIL_STRATEGY</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]jail[COLOR_REVERT] increases the [LINK=YIELD_LAW]law[\LINK] without additional use of [LINK=PROFESSION_JUDGE]judges[\LINK] in the city.</English>
-        <German>Das [COLOR_HIGHLIGHT_TEXT]Gefängnis[COLOR_REVERT] erhöht die [LINK=YIELD_LAW]Justiz[\LINK] ohne zusätzlichen Einsatz von [LINK=PROFESSION_JUDGE]Richtern[\LINK] in der Stadt.</German>
-    </TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_STATUE</Tag>
+		<English>Statue</English>
+		<German>
+			<Text>Statue</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
+	<!-- GRAVEYARD -->
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_GRAVEYARD</Tag>
+		<English>Graveyard</English>
+		<French>Cimetière</French>
+		<German>
+			<Text>Friedhof</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Кладбище</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_GRAVEYARD</Tag>
+		<English>Graveyard</English>
+		<French>Cimetière</French>
+		<German>
+			<Text>Friedhof</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Кладбище</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GRAVEYARD</Tag>
+		<English>Graveyard</English>
+		<French>Cimetière</French>
+		<German>
+			<Text>Friedhof</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Кладбище</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GRAVEYARD_PEDIA</Tag>
+		<English>In a strange land where religious immigrants look back fondly to medieval times, the graveyard often is a place of fear and superstition. On the other hand it's a place to visit lost loved ones for quiet contemplation. Emotional conflicts arise.[NEWLINE]The two certainties in life are death and taxes. The graveyard handles one. The King takes care of the other.</English>
+		<German>In einem fremden Land, in dem religiöse Einwanderer mit Vorliebe auf das Mittelalter zurückblicken, ist der Friedhof oft ein Ort der Angst und des Aberglaubens. Andererseits ist er ein Ort, an dem man verlorene Angehörige besucht, um in Ruhe darüber nachzudenken. Emotionale Konflikte entstehen.[NEWLINE]Die zwei Gewissheiten im Leben sind der Tod und die Steuern. Um das eine kümmert sich der Friedhof. Der König kümmert sich um das andere.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_GRAVEYARD_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]graveyard[COLOR_REVERT] contributes to [LINK=YIELD_HEALTH]health[\LINK] and crosses.</English>
+		<German>Der [COLOR_HIGHLIGHT_TEXT]Friedhof[COLOR_REVERT] erhöht die [LINK=YIELD_HEALTH]Gesundheit[\LINK].</German>
+	</TEXT>
+	<!-- CONFECTIONER -->
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_CONFECTIONER</Tag>
+		<English>Confectioner</English>
+		<French>Confiseur</French>
+		<German>
+			<Text>Konditor</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_HOUSE</Tag>
+		<English>Confectioner's House</English>
+		<French>Maison du confiseur</French>
+		<German>
+			<Text>Haus des Konditors</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дом кондитера</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_SHOP</Tag>
+		<English>Confectioner's Shop</English>
+		<French>Atelier du confiseur</French>
+		<German>
+			<Text>Konditorladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Кондитерская</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_FACTORY</Tag>
+		<English>Confectionery</English>
+		<French>Confiserie</French>
+		<German>
+			<Text>Konditorei</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Фабрика сладостей</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE</Tag>
+		<English>Confectioner's House</English>
+		<French>Maison du confiseur</French>
+		<German>
+			<Text>Haus des Konditors</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дом кондитера</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP</Tag>
+		<English>Confectioner's Shop</English>
+		<French>Atelier du confiseur</French>
+		<German>
+			<Text>Konditorladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Кондитерская</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY</Tag>
+		<English>Confectionery</English>
+		<French>Confiserie</French>
+		<German>
+			<Text>Konditorei</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Фабрика сладостей</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_PEDIA</Tag>
+		<English>At first settlers import candy from the home country but before long an enterprising confectioner realizes that sugar is growing right next door, and all that's needed is a way to flavour it - maybe chocolate or vanilla. There's one other trick; grinding the sugar so fine that the candy has a smooth consistency.[NEWLINE]Having a candy store means that the settlers and their children don't need to wait for the ship to come in from Europe to satisfy their sweet tooth. The local confectioner makes everybody happy, the dentist in particular.</English>
+		<German>Zunächst importieren die Siedler Süßigkeiten aus der Heimat, doch schon bald stellt ein geschäftstüchtiger Zuckerbäcker fest, dass der Zucker gleich nebenan wächst und man ihn nur noch aromatisieren muss - vielleicht mit Schokolade oder Vanille. Es gibt noch einen weiteren Trick: Man muss den Zucker so fein mahlen, dass die Bonbons eine glatte Konsistenz bekommen.[NEWLINE]Ein Süßwarenladen bedeutet, dass die Siedler und ihre Kinder nicht auf das Schiff aus Europa warten müssen, um ihren süßen Hunger zu stillen. Der örtliche Süßwarenhändler macht alle glücklich, vor allem den Zahnarzt.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]confectioner's house[COLOR_REVERT] is where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioner[\LINK] are particularly effective here.</English>
+		<German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Konditors[COLOR_REVERT] ist die niedrigste Ausbaustufe der Konditoreikette, in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_PEDIA</Tag>
+		<English>The confectioner's shop adds extra variety, candy for every taste, along with traditional sweets that remind people of home. The bigger market helps to keep prices down.[NEWLINE]Extra production creates trading opportunities. Some confectioners even set up tables where tea is served to accompany the treats. A very few offer coffee, at first considered scandalous, because the drink is so stimulating.</English>
+		<German>Die Konditorei sorgt für zusätzliche Abwechslung, Süßigkeiten für jeden Geschmack und traditionelle Süßigkeiten, die die Menschen an ihre Heimat erinnern. Der größere Markt trägt dazu bei, die Preise niedrig zu halten.[NEWLINE]Die zusätzliche Produktion schafft Handelsmöglichkeiten. Einige Zuckerbäcker stellen sogar Tische auf, an denen Tee zu den Leckereien gereicht wird. Einige wenige bieten Kaffee an, was zunächst als skandalös galt, weil das Getränk so anregend ist.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]confectioners' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioner[\LINK] are particularly effective here.</English>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Konditorladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_PEDIA</Tag>
+		<English>The candy factory can serve an entire region. For one group it offers cheap sweets thanks to economies of scale. For the well-to-do it delivers an unparalleled variety of exotic confections to impress guests on special occasions.[NEWLINE]A big confectionery makes an important contribution to the region it serves, increasing both trading income and the community's happiness.</English>
+		<German>Die Süßwarenfabrik kann dank Skalierungseffekten eine ganze Region mit billigen Süßigkeiten versorgen. Für die Wohlhabenden liefert sie eine unvergleichliche Vielfalt an exotischen Süßigkeiten, um Gäste bei besonderen Anlässen zu beeindrucken.[NEWLINE]Eine große Konditorei leistet einen wichtigen Beitrag für die Region, in der sie tätig ist, und steigert sowohl das Handelseinkommen als auch die Zufriedenheit der Bevölkerung.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]confectioners' factory[COLOR_REVERT] is the top upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioner[\LINK] are particularly effective here.</English>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Konditorei[COLOR_REVERT] ist die höchste Stufe des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
+	</TEXT>
+	<!-- LEATHER_PADDER -->
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_LEATHER_PADDER</Tag>
+		<English>Leatherworker</English>
+		<French>Maroquinier</French>
+		<German>
+			<Text>Lederpolsterei</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_HOUSE</Tag>
+		<English>Leatherworker's House</English>
+		<French>Maison du maroquinier</French>
+		<German>
+			<Text>Haus des Lederschneiders</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дом кожевника</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_SHOP</Tag>
+		<English>Leatherworker's Shop</English>
+		<French>Atelier du maroquinier</French>
+		<German>
+			<Text>Lederwarenladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Мастерская кожевника</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_FACTORY</Tag>
+		<English>Leather Coat Factory</English>
+		<French>Usine de maroquinerie</French>
+		<German>
+			<Text>Lederwarenfabrik</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Кожевенная фабрика</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE</Tag>
+		<English>Leatherworker's House</English>
+		<French>Maison du maroquinier</French>
+		<German>
+			<Text>Haus des Lederschneiders</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дом кожевника</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP</Tag>
+		<English>Leatherworker's Shop</English>
+		<French>Atelier du Maroquinier</French>
+		<German>
+			<Text>Lederwarenladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Мастерская кожевника</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY</Tag>
+		<English>Leather Coat Factory</English>
+		<French>Usine de maroquinerie</French>
+		<German>
+			<Text>Lederwarenfabrik</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Кожевенная фабрика</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_PEDIA</Tag>
+		<English>Leather is good at keeping out the wind but when the temperature drops it still feels cold. Putting padding into leather coats keeps people warm when the snow flies.[NEWLINE]Sewing padding into leather doesn't just make the clothes more comfortable. By adding insulation the leather clothier improves health for those working outside, which can even save their lives.</English>
+		<German>Leder hält zwar gut den Wind ab, aber wenn die Temperatur sinkt, fühlt es sich trotzdem kalt an. Eine Polsterung in den Mänteln hält hingegen die Menschen warm, selbst wenn der Schnee kommt.[NEWLINE]Das Einnähen von Polstern und Futter in Leder macht das Kleidungsstück nicht nur bequemer. Durch die zusätzliche Isolierung wird auch die Gesundheit derjenigen verbessert, die im Freien arbeiten, und kann sogar ihr Leben retten.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]leatherworker's house[COLOR_REVERT] is the lowest level of expansion of leather processing, where settlers work as [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker (lined)[\LINK] make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]sheep wool[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Master leatherworker[\LINK] are particularly effective at this.</English>
+		<French>Coudre un rembourrage et une doublure dans le cuir ne rend pas seulement le vêtement plus confortable. En ajoutant de l'isolation, il améliore également la santé des personnes travaillant à l'extérieur, et peut même leur sauver la vie.</French>
+		<German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Lederschneiders[COLOR_REVERT] ist die niedrigste Ausbaustufe der Lederverarbeitung, in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_LEATHER_TAYLOR]Meister-Lederschneider[\LINK] sind hierbei besonders effektiv.</German>
+		<Italian>Cucire un'imbottitura e una fodera nella pelle non rende solo l'indumento più confortevole. L'aggiunta di isolamento migliora anche la salute di chi lavora all'aperto e può addirittura salvargli la vita.</Italian>
+		<Spanish>Coser acolchado y forro a la piel no sólo hace que la prenda sea más cómoda. Al añadir aislamiento, también mejora la salud de quienes trabajan al aire libre, e incluso puede salvarles la vida.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_PEDIA</Tag>
+		<English>A bigger business can produce a little more for export, not just to Europe but also to the surrounding First Nations and outdoor workers who appreciate warm clothing. A fashionable leather clothier relies on word of mouth to increase business.[NEWLINE]Practical people see the advantage of insulated clothing in a cold climate. Devout settlers are obsessed with religious prohibitions, so women of easy virtue can earn extra money wearing leather in private to dominate the pious.</English>
+		<German>Ein größeres Unternehmen kann etwas mehr für den Export produzieren, nicht nur nach Europa, sondern auch für die umliegenden Ureinwohner und Outdoor-Arbeiter, die warme Kleidung schätzen. Ein modischer Lederwarenhersteller verlässt sich auf Mundpropaganda, um sein Geschäft zu steigern.[NEWLINE]Praktische Menschen sehen den Vorteil isolierender Kleidung bei kalter Witterung. Fromme Siedler sind von religiösen Verboten beeinflusst, so dass Frauen mit wenig Tugendhaftigkeit zusätzliches Geld verdienen können, indem sie sich in Leder kleiden, um die Frommen zu beherrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]leatherworkers' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK] where settlers work as [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker (lined)[\LINK] make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]sheep wool[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Master leatherworker[\LINK] are particularly effective at this.</English>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Lederwerkstatt[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_LEATHER_TAYLOR]Meister-Lederschneider[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_PEDIA</Tag>
+		<English>A big business has efficiencies and economies of scale. A solitary leather clothier might spend days fitting a coat to a single customer but a factory can have enough sizes in stock for everyone to buy off the rack.[NEWLINE]Sturdy outdoor leather clothing that stands up to hard wear means more work gets done, people don't get cold, and health and happiness are the result.</English>
+		<German>Ein großes Unternehmen verfügt über Effizienz- und Größenvorteile. Ein einzelner Lederbekleidungshersteller verbringt vielleicht Tage damit, einen Mantel für einen einzigen Kunden anzupassen, aber eine Fabrik kann genügend Größen auf Lager haben, die jeder von der Stange kaufen kann.[NEWLINE]Dank robuster Outdoor-Lederkleidung, die harter Beanspruchung standhält, müssen die Menschen nicht frieren, was ihrer Gesundheit und Zufriedenheit zugutekommt, wodurch mehr Arbeit erledigt werden kann.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]leather coat factory[COLOR_REVERT] is the final upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK], where settlers work as [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker (lined)[\LINK] make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]sheep wool[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Master leatherworker[\LINK] are particularly effective at this.</English>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Lederwarenfabrik[COLOR_REVERT] ist die letzte Erweiterung des [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_LEATHER_TAYLOR]Meister-Lederschneider[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+<!-- OIL_TRADER -->
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_OIL_TRADER</Tag>
+		<English>Cooking Oil Trader</English>
+		<French>Marchand d'huile</French>
+		<German>
+			<Text>Speiseölhändler</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_HOUSE</Tag>
+		<English>Cooking Oil Trader's House</English>
+		<French>Maison du marchand d'huile</French>
+		<German>
+			<Text>Haus des Ölhändlers</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дом изготовителя масла</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_SHOP</Tag>
+		<English>Cooking Oil Trader's Shop</English>
+		<French>Atelier du marchand d'huile</French>
+		<German>
+			<Text>Speiseölladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Мастерская по изготовлению масла</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_FACTORY</Tag>
+		<English>Cooking Oil Trader Factory</English>
+		<French>Pressoir à huile industriel</French>
+		<German>
+			<Text>Speiseölfabrik</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Фабрика по изготовлению масла</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE</Tag>
+		<English>Cooking Oil Trader's House</English>
+		<French>Maison du marchand d'huile</French>
+		<German>
+			<Text>Haus des Ölhändlers</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дом изготовителя масла</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP</Tag>
+		<English>Cooking Oil Trader's Shop</English>
+		<French>Atelier du marchand d'huile</French>
+		<German>
+			<Text>Speiseölladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Мастерская по изготовлению масла</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY</Tag>
+		<English>Cooking Oil Factory</English>
+		<French>Pressoir à huile industriel</French>
+		<German>
+			<Text>Speiseölfabrik</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Фабрика по изготовлению масла</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_PEDIA</Tag>
+		<English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Oolichan oil from candlefish made up so much of Native commerce that the trade routes were called "grease trails".[NEWLINE]Settlers eating wild game soon realize that it has much less fat than they're used to from domestic animals. In a cold climate fat keeps workers warm outdoors. In the wilderness plant oils are a good path to a balanced diet.</English>
+		<French>Le pressage de l'huile est un artisanat ancien en Europe, notamment dans les cultures méditerranéennes. Les équipements qui écrasent les olives pour en extraire l'huile peuvent être adaptés au colza. Avant le contact avec les Européens, l'huile de cuisson était essentielle pour les nations autochtones du nord-ouest du Pacifique. L'huile d'oolichan provenant de la chandelle constituait une si grande partie du commerce amérindien que les routes commerciales étaient appelées "pistes de graisse".</French>
+		<German>Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den Mittelmeerkulturen. Die Geräte, mit denen Oliven zur Gewinnung von Öl gepresst werden, können auch für die Verarbeitung von Raps verwendet werden.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Oolichan-Öl aus Kerzenfisch machte einen so großen Teil des Handels der Ureinwohner aus, dass die Handelsrouten als "Fettstraßen" bezeichnet wurden.[NEWLINE]Siedler, die Wild essen, stellen bald fest, dass das Fleisch viel weniger Fettanteil hat, als sie es von ihren Nutztieren gewohnt sind. In einem kalten Klima trägt Fett jedoch erheblich dazu bei, die Arbeiter im Freien lange warmzuhalten. In der Wildnis sind Pflanzenöle entsprechend ein guter Weg zu einer ausgewogenen Ernährung.</German>
+		<Italian>La spremitura dell'olio è un'attività antica in Europa, in particolare nelle culture mediterranee. Le attrezzature che schiacciano le olive per ricavarne l'olio possono essere adattate alla colza.[NEWLINE]Prima del contatto europeo, l'olio da cucina era essenziale per i nativi del Pacifico nordoccidentale. L'olio di oolichan ricavato dal pesce candela costituiva una parte così importante del commercio dei nativi che le rotte commerciali venivano chiamate "vie del grasso".</Italian>
+		<Spanish>El prensado del aceite es un antiguo oficio en Europa, sobre todo en las culturas mediterráneas. Antes del contacto europeo, el aceite de cocina era esencial para las naciones indígenas del noroeste del Pacífico. El aceite de oolichan procedente del pez vela constituía una parte tan importante del comercio nativo que las rutas comerciales se llamaban "rutas de la grasa".</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]oil trader's house[COLOR_REVERT] or one of its upgrades is where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]rapeseed oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]rapeseed oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil traders[\LINK] are particularly effective at this.</English>
+		<German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Ölhändlers[COLOR_REVERT] oder einer seiner Ausbaustufen stellen [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Ölivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] her.[PARAGRAPH:1][LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_PEDIA</Tag>
+		<English>As the oil pressers refine their trade the quality of the oil attracts new customers. Oil traders can now separate their pressings into varying grades to be sold at different prices. As customers discuss which is better for different situations, sales increase.</English>
+		<German>In dem Maße, wie die Ölpresser ihr Handwerk verfeinern, zieht die Qualität des Öls neue Kunden an.[NEWLINE]Ölpresser können nun ihre Presslinge in verschiedene Qualitäten unterteilen, die zu unterschiedlichen Preisen verkauft werden. Wenn die Kunden darüber diskutieren, welche Qualität für die verschiedenen Situationen besser ist, steigt der Umsatz.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]cooking oil shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]rapeseed oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]rapeseed oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil traders[\LINK] are particularly effective at this.</English>
+		<German>Der [COLOR_HIGHLIGHT_TEXT]Speiseölladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_OIL_TRADER_HOUSE]Haus des Ölhändlers[\LINK], wo der [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Olivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder der [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] herstellt.[PARAGRAPH:1][LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_PEDIA</Tag>
+		<English>If there's a good supply of olives and rapeseed, the oil presses can be mechanized to generate exportable quantities. If surplus quantities of oil and rapeseed can be grown close to the factory, an ambitious manager might prove himself by exporting the very best olive oil to Italy.</English>
+		<German>Wenn es ein gutes Angebot an Oliven und Raps gibt, können die Ölpressen mechanisiert werden, um exportfähige Mengen zu erzeugen.[NEWLINE]Wenn in der Nähe der Fabrik überschüssige Öl- und Rapsmengen angebaut werden können, könnte sich ein ehrgeiziger Manager durch den Export von bestem Olivenöl nach Italien beweisen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]cooking oil factory[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK], where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]rapeseed oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]rapeseed oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil traders[\LINK] are particularly effective at this.</English>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Speiseölfabrik[COLOR_REVERT] ist das höchste Ausbaustufe des [LINK=BUILDING_OIL_TRADER_HOUSE]Haus des Ölhändlers[\LINK], wo der [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Olivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder der [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] herstellt.[PARAGRAPH:1][LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<!-- ROASTER -->
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_ROASTER</Tag>
+		<English>Roastery</English>
+		<German>
+			<Text>Erdnussrösterei</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_ROASTER_HOUSE</Tag>
+		<English>Roaster's House</English>
+		<French>Maison de torréfaction</French>
+		<German>
+			<Text>Haus des Rösters</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дом обжарщика</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_ROASTER_SHOP</Tag>
+		<English>Roaster's Shop</English>
+		<French>Maison du rôtisseur de graines</French>
+		<German>
+			<Text>Röstwarenladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Мастерская обжарки</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_ROASTER_FACTORY</Tag>
+		<English>Roastery</English>
+		<French>Rôtisserie de graines</French>
+		<German>
+			<Text>Rösterei</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Фабрика обжарки</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROASTER_HOUSE</Tag>
+		<English>Roaster's House</English>
+		<French>Maison du rôtisseur de graines</French>
+		<German>
+			<Text>Haus des Rösters</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дом обжарщика</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROASTER_SHOP</Tag>
+		<English>Roaster's Shop</English>
+		<French>Atelier du rôtisseur de graines</French>
+		<German>
+			<Text>Röstwarenladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Мастерская обжарки</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROASTER_FACTORY</Tag>
+		<English>Roastery</English>
+		<French>Rôtisserie de graines industrielle </French>
+		<German>
+			<Text>Rösterei</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Фабрика обжарки</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_PEDIA</Tag>
+		<English>Peanuts are widely grown in the tropics and subtropics. Botanically they're a member of the bean family but in cooking they're used like a nut. Unlike most legumes peanut pods mature underground.[NEWLINE]Peanuts are an excellent source of protein and vitamins. They complement traditional European grains, contributing to workers' health and stamina.</English>
+		<French>Les cacahuètes sont largement cultivées dans les régions tropicales et subtropicales. Sur le plan botanique, elles font partie de la famille des haricots, mais en cuisine, elles sont utilisées comme des noix. Contrairement à la plupart des légumineuses, les gousses d'arachide mûrissent sous terre.</French>
+		<German>Erdnüsse werden in den Tropen und Subtropen weit verbreitet angebaut. Botanisch gesehen gehören sie zur Familie der Bohnengewächse, aber in der Küche werden sie wie eine Nuss verwendet. Im Gegensatz zu den meisten Hülsenfrüchten reifen Erdnussschoten unterirdisch.[NEWLINE]Erdnüsse sind eine hervorragende Quelle für Proteine und Vitamine. Sie ergänzen die traditionellen europäischen Getreidesorten und tragen zur Gesundheit und Ausdauer der Arbeitnehmer bei.</German>
+		<Italian>Le arachidi sono ampiamente coltivate nei tropici e nelle regioni subtropicali. Dal punto di vista botanico fanno parte della famiglia dei fagioli, ma in cucina vengono utilizzate come una noce. A differenza della maggior parte dei legumi, i baccelli delle arachidi maturano sottoterra.</Italian>
+		<Spanish>Los cacahuetes se cultivan ampliamente en las zonas tropicales y subtropicales. Botánicamente pertenecen a la familia de las judías, pero en la cocina se utilizan como frutos secos. A diferencia de la mayoría de las legumbres, las vainas de los cacahuetes maduran bajo tierra.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]roaster's house[COLOR_REVERT] is where various foods are roasted:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Peanut roasters[\LINK] roast [LINK=YIELD_PEANUTS]peanuts[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]cocoa roasters[\LINK] roast [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Coffee roasters[\LINK] roast [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COFFEE]coffee[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Master roasters[\LINK] are particularly effective in this regard.</English>
+		<German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Rösters[COLOR_REVERT] oder einer seiner Ausbaustufen können verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.[PARAGRAPH:1][LINK=UNIT_ROASTER]Röstmeister[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROASTER_SHOP_PEDIA</Tag>
+		<English>Though they can be boiled, fresh harvested raw peanuts are usually roasted before being eaten. Enterprising roasters soon learn to add salt or grind the peanuts into peanut butter. Other nut butters soon follow.[NEWLINE]Once dried, peanuts last for a long time in a scout's saddlebags or in the barrels on a wagon. Peanut oil is also valuable for cooking.</English>
+		<German>Obwohl sie gekocht werden können, werden frisch geerntete, rohe Erdnüsse in der Regel geröstet, bevor sie verzehrt werden. Unternehmungslustige Röster lernten bald, Salz hinzuzufügen oder die Erdnüsse zu Erdnussbutter zu mahlen. Andere Nussbuttersorten folgten bald.[NEWLINE]Einmal getrocknet, halten sich Erdnüsse lange in den Satteltaschen der Pfadfinder oder in den Fässern auf dem Wagen. Erdnussöl ist auch zum Kochen wertvoll.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROASTER_SHOP_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]roaster shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK] where various foods are roasted:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Peanut roasters[\LINK] roast [LINK=YIELD_PEANUTS]peanuts[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]cocoa roasters[\LINK] roast [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Coffee roasters[\LINK] roast [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COFFEE]coffee[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Master roasters[\LINK] are particularly effective in this regard.</English>
+		<German>Der [COLOR_HIGHLIGHT_TEXT]Röstwarenladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_ROASTER_HOUSE]Haus des Rösters[\LINK], wo verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.[PARAGRAPH:1][LINK=UNIT_ROASTER]Röstmeister[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_PEDIA</Tag>
+		<English>As peanut growers start to deliver large crops, roasters extend the market beyond their own cities, promoting the peanut as an exotic delicacy in temperate regions where it won't grow, Europe for example.[NEWLINE]A region with a big peanut roasting factory helps keep workers healthy. Peanuts are especially important where slave populations need added protein. Their owners can afford to eat meat, increasing their risk of heart disease.</English>
+		<German>In dem Maße, in dem die Erdnussbauern beginnen, große Ernten zu liefern, dehnen die Röster den Markt über ihre eigenen Städte hinaus aus und werben für die Erdnuss als exotische Delikatesse in  Regionen, wie zum Beispiel Europa, in denen sie nicht wächst.[NEWLINE]Eine Region mit einer großen Erdnussrösterei trägt zur Gesunderhaltung der Arbeiter bei. Erdnüsse sind besonders wichtig, wenn Sklaven zusätzliche Proteine benötigen. Ihre Besitzer können es sich leisten, Fleisch zu essen, was ihr Risiko für Herzkrankheiten erhöht.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]roastery[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK] where various foods are roasted:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Peanut roasters[\LINK] roast [LINK=YIELD_PEANUTS]peanuts[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]cocoa roasters[\LINK] roast [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Coffee roasters[\LINK] roast [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COFFEE]coffee[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Master roasters[\LINK] are particularly effective in this regard.</English>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Rösterei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_ROASTER_HOUSE]Haus des Rösters[\LINK], wo verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.[PARAGRAPH:1][LINK=UNIT_ROASTER]Röstmeister[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<!-- POTTERY -->
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_POTTERY</Tag>
+		<English>Potter's House</English>
+		<French>Maison du potier</French>
+		<German>
+			<Text>Töpferei</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_HOUSE</Tag>
+		<English>Potter's House</English>
+		<French>Maison du potier</French>
+		<German>
+			<Text>Haus des Töpfers</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дом гончара</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_SHOP</Tag>
+		<English>Potter's Shop</English>
+		<French>Atelier du potier</French>
+		<German>
+			<Text>Töpferladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Гончарная мастерская</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_FACTORY</Tag>
+		<English>Pottery Factory</English>
+		<French>Usine de poterie</French>
+		<German>
+			<Text>Töpferei</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Фабрика гончарных изделий</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POTTERY_HOUSE</Tag>
+		<English>Potter's House</English>
+		<French>Maison du potier</French>
+		<German>
+			<Text>Haus des Töpfers</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дом гончара</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POTTERY_SHOP</Tag>
+		<English>Potter's Shop</English>
+		<French>Atelier du potier</French>
+		<German>
+			<Text>Töpferladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Гончарная мастерская</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POTTERY_FACTORY</Tag>
+		<English>Pottery Factory</English>
+		<French>Usine de poterie</French>
+		<German>
+			<Text>Töpferei</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Фабрика гончарных изделий</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_PEDIA</Tag>
+		<English>Pottery is an ancient way to store grain. In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until they can finally plant their new crops in spring. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements.</English>
+		<French>La poterie est un moyen ancien de stocker le grain. Dans le Nouveau Monde pluvieux et infesté d'insectes, les pots contiennent suffisamment de céréales pour permettre aux colons de survivre pendant l'hiver jusqu'à ce qu'ils puissent enfin planter leurs nouvelles cultures au printemps.</French>
+		<German>Töpferwaren sind eine uralte Methode zur Lagerung von Getreide. In der regnerischen, von Insekten heimgesuchten Neuen Welt enthielten die Töpfe genug Getreide, um die Siedler über den Winter am Leben zu erhalten, bis sie im Frühjahr endlich ihre neue Ernte einpflanzen konnten.[NEWLINE]Töpferwaren ermöglichen es den Dörfern, ihr überschüssiges Getreide zu lagern, um den Winter zu überstehen. Das Beladen von Wagen mit robusten Töpfen ist eine praktische Methode, um Getreide zu transportieren und neue Siedlungen mit Lebensmitteln zu versorgen.</German>
+		<Italian>La ceramica è un modo antico di conservare il grano. Nel Nuovo Mondo, caratterizzato da piogge e insetti, i vasi contengono abbastanza grano per mantenere i coloni in vita durante l'inverno, fino a quando non possono piantare le nuove colture in primavera.</Italian>
+		<Spanish>La cerámica es una forma antigua de almacenar grano. En el lluvioso Nuevo Mundo, plagado de insectos, las vasijas contienen grano suficiente para mantener vivos a los colonos durante el invierno, hasta que por fin pueden plantar sus nuevas cosechas en primavera.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]potter's house[COLOR_REVERT] is where a colonist with the [LINK=PROFESSION_POTTER]potter[\LINK] profession uses [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are artists at this, and more productive as well.</English>
+		<German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Töpfers[COLOR_REVERT] ist der Ort, an dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK], mit Hilfe von [LINK=YIELD_PEAT]Torf[\LINK], zu [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verarbeitet.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POTTERY_SHOP_PEDIA</Tag>
+		<English>As the pottery business grows employees specialize. Most of the money comes in for sturdy practical pots holding everything from rice to rum, but a few creative types form imaginative vessels with decorative patterns, some merely for display. The Puritans strongly object.[NEWLINE]With food and drink stored securely in pottery, life is now less precarious. Businesses feel safer taking risks and so the communities grow.</English>
+		<German>Während das Töpfergeschäft wächst, spezialisieren sich die Mitarbeiter. Das meiste Geld wird für robuste, praktische Töpfe ausgegeben, in denen alles von Reis bis Rum aufbewahrt wird, aber ein paar kreative Typen formen phantasievolle Gefäße mit dekorativen Mustern, einige davon nur zur Schau. Die Puritaner sind strikt dagegen.[NEWLINE]Durch die sichere Aufbewahrung von Lebensmitteln und Getränken in Töpferwaren ist das Leben nun weniger prekär. Die Unternehmen fühlen sich sicherer und somit risikobereiter, wodurch sich das Wachstum erhöht.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POTTERY_SHOP_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]pottery shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession use [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
+		<German>Der [COLOR_HIGHLIGHT_TEXT]Töpferladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK], mit Hilfe von [LINK=YIELD_PEAT]Torf[\LINK], zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_PEDIA</Tag>
+		<English>Pottery factories can be built near the best sources of clay, thus delivering high quality at a cheap price. With every type of pot in demand, the pottery factory owners are squirrelling away pots of money.</English>
+		<German>Töpferfabriken können in der Nähe der besten Tonvorkommen errichtet werden, so dass sie eine hohe Qualität zu einem günstigen Preis liefern.[NEWLINE]Da alle Arten von Töpfen gefragt sind, legen die Besitzer der Töpferfabriken einen Haufen Geld beiseite.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]pottery factory[COLOR_REVERT] is the final upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession use [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Töpferei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK], mit Hilfe von [LINK=YIELD_PEAT]Torf[\LINK], zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<!-- TAILOR -->
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_TAILOR</Tag>
+		<English>Tailor</English>
+		<German>
+			<Text>Schneiderei</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_HOUSE</Tag>
+		<English>Tailor's House</English>
+		<German>
+			<Text>Haus des Schneiders</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дом портного</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_SHOP</Tag>
+		<English>Tailor's Shop</English>
+		<German>
+			<Text>Schneiderladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Мастерская портного</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_FACTORY</Tag>
+		<English>Clothing Factory</English>
+		<German>
+			<Text>Schneiderei</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Фабрика одежды</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAILOR_HOUSE</Tag>
+		<English>Tailor's House</English>
+		<French>Maison du tailleur de vêtements</French>
+		<German>
+			<Text>Haus des Schneiders</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дом портного</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAILOR_SHOP</Tag>
+		<English>Tailor's Shop</English>
+		<French>Atelier du tailleur de vêtements</French>
+		<German>
+			<Text>Schneiderladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Мастерская портного</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAILOR_FACTORY</Tag>
+		<English>Clothing Factory</English>
+		<French>Usine de vêtements</French>
+		<German>
+			<Text>Schneiderei</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Фабрика одежды</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_PEDIA</Tag>
+		<English>At first women prided themselves on sewing all their families' clothes, getting their cloth from the weaver. The tailor needs to show his garments are better, or hope that people assume they're better simply because he's a man.[NEWLINE]With time and talent the tailor is finally able to create the well-dressed man, stylish and ready to succeed at diplomacy, business or romance.</English>
+		<German>Anfangs waren die Frauen stolz darauf, die gesamte Kleidung ihrer Familien zu nähen und den Stoff von der Weberin zu beziehen. Der Schneider muss zeigen, dass seine Kleidung besser ist, oder darauf hoffen, dass die Leute annehmen, dass sie besser ist, nur weil er ein Mann ist.[NEWLINE]Der Schneider erschafft den gut gekleideten Mann, stilvoll und bereit, in der Diplomatie, im Geschäftsleben oder in der Liebe erfolgreich zu sein.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]tailor's house[COLOR_REVERT] is where the coloured fabrics from the [LINK=BUILDING_DYERS_HOUSE]dyer's house[\LINK], or one of its upgrades, are made into clothing.[NEWLINE]A settler with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession uses [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; or the [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailor[\LINK] uses [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK].  [LINK=UNIT_CLOTH_TAYLOR]Master tailors[\LINK] are particularly effective at this.</English>
+		<German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Schneiders[COLOR_REVERT] ist der Ort, an dem die gefärbten Stoffe aus dem [LINK=BUILDING_DYERS_HOUSE]Färberhaus[\LINK], oder einer seiner Erweiterungen, zu Kleidung verarbeitet werden.[NEWLINE]Ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf des [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneiders (Alltagskleider)[\LINK] stellt aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] schlichte [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder der [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] stellt aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK] dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] her.[PARAGRAPH:1][LINK=UNIT_CLOTH_TAYLOR]Schneidermeister[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAILOR_SHOP_PEDIA</Tag>
+		<English>The tailor's shop grows to include a variety of sub-trades. The cutter seldom sews the garment. A different specialist chooses the perfect fabric for every style.[NEWLINE]Having a tailor's shop is a sign of success for a growing town. If the shop has a tailor who's fashionable, everyone from the elder statesman to the firebrand preacher will buy there so they can look their best.</English>
+		<German>Die Schneiderei wächst und umfasst eine Vielzahl von Unterberufen. Selten näht der Schneider das Kleidungsstück. Für jeden Stil wählt ein anderer Spezialist den perfekten Stoff aus.[NEWLINE]Das Vorhandensein einer Schneiderei ist ein Zeichen für den Erfolg einer wachsenden Stadt. Wenn das Geschäft einen Schneider hat, der modisch ist, kauft jeder - vom älteren Staatsmann bis zum Brandprediger - dort ein, damit er gut aussieht.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAILOR_SHOP_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]tailors' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK] where colonists with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession use [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; and where [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailors[\LINK] use [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK]. [LINK=UNIT_CLOTH_TAYLOR]Master tailors[\LINK] are particularly effective at this.</English>
+		<German>Der [COLOR_HIGHLIGHT_TEXT]Schneiderladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_TAILOR_HOUSE]Schneiderhauses[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneider (Alltagskleider)[\LINK] aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] einfache [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK], dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_CLOTH_TAYLOR]Schneidermeister[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_PEDIA</Tag>
+		<English>A tailors' factory offers less prestige than an exclusive shop but it makes up for that in output. Young workers with an eye on advancement can buy off the rack at a fraction of the cost of a personal fitting.[NEWLINE]The tailors' factory demonstrates that menswear and women's fashion are widely available. It's proof that a city has arrived socially.</English>
+		<German>Eine Schneiderei bietet weniger Prestige als ein exklusives Geschäft, macht dies aber durch die Produktion wieder wett. Junge, aufstiegsorientierte Arbeitnehmer können zu einem Bruchteil der Kosten einer persönlichen Anprobe von der Stange kaufen.[NEWLINE]Die Schneiderei zeigt, dass Herrenmode weithin verfügbar ist. Sie ist der Beweis dafür, dass eine Stadt gesellschaftlich angekommen ist.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]tailors' factory[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK] where colonists with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession use [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; and where [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailors[\LINK] use [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK]. [LINK=UNIT_CLOTH_TAYLOR]Master tailors[\LINK] are particularly effective at this.</English>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Schneiderei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_TAILOR_HOUSE]Haus des Schneiders[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneider (Alltagskleider)[\LINK] aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] einfache [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK], dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_CLOTH_TAYLOR]Schneidermeister[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<!-- FIREWORKER -->
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_BLACK_POWDER</Tag>
+		<English>Powder Shed</English>
+		<German>
+			<Text>Pulvermühle</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_HOUSE</Tag>
+		<English>Powder Maker's House</English>
+		<French>Maison du fabricant de poudre</French>
+		<German>Haus des Pulvermachers</German>
+		<Italian>Casa del polveriere</Italian>
+		<Spanish>Casa del polvorero</Spanish>
+		<Russian>Дом пороховщика</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_SHOP</Tag>
+		<English>Powder Makers' Shop</English>
+		<French>Atelier du fabricant de poudre</French>
+		<German>
+			<Text>Pulverladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Мастерская по изготовлению пороха</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_FACTORY</Tag>
+		<English>Powder Magazine</English>
+		<French>Usine poudrière</French>
+		<German>
+			<Text>Pulverfabrik</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Фабрика взрывчатки</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE</Tag>
+		<English>Powder Maker's House</English>
+		<French>Maison du fabricant de poudre</French>
+		<German>Haus des Pulvermachers</German>
+		<Italian>Casa del polveriere</Italian>
+		<Spanish>Casa del polvorero</Spanish>
+		<Russian>Дом пороховщика</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP</Tag>
+		<English>Powder Makers' Shop</English>
+		<French>Atelier du fabricant de poudre</French>
+		<German>
+			<Text>Pulverladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Мастерская по изготовлению пороха</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY</Tag>
+		<English>Powder Magazine</English>
+		<French>Usine poudrière</French>
+		<German>
+			<Text>Pulverfabrik</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Фабрика взрывчатки</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_PEDIA</Tag>
+		<English>Well away from other buildings the powder maker mixes gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. In colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.[NEWLINE]The powder maker needs to produce enough black powder so that soldiers are well-supplied to defend their settlements. Even more is needed for miners and the pioneers building roads.</English>
+		<French>A l'écart des autres bâtiments, le poudrier mélange la poudre à canon à partir de soufre, de charbon de bois et de salpêtre : des munitions pour les fusils des soldats. À l'époque coloniale, c'est le seul explosif disponible (la dynamite sera inventée en 1867). Elle est donc également utilisée pour l'artillerie, l'exploitation minière et la construction de routes.</French>
+		<German>Weit entfernt von anderen Gebäuden mischt der Pulvermacher Schießpulver aus Schwefel, Holzkohle und Salpeter für die Gewehre der Soldaten. In der Kolonialzeit ist es der einzige verfügbare Sprengstoff (Dynamit wird erst 1867 erfunden) und wird auch für die Artillerie, den Bergbau und den Straßenbau verwendet.[NEWLINE]Der Pulvermacher muss genügend Schwarzpulver herstellen, damit die Soldaten gut ausgerüstet sind, um ihre Siedlungen zu verteidigen. Noch mehr wird für die Bergleute und die Pioniere zum Straßenbau benötigt.</German>
+		<Italian>Ben lontano da altri edifici, il polveriere mescola la polvere da sparo con zolfo, carbone e salnitro: munizioni per i cannoni dei soldati. In epoca coloniale è l'unico esplosivo disponibile (la dinamite sarà inventata nel 1867), quindi viene utilizzato anche per l'artiglieria, le miniere e la costruzione di strade.</Italian>
+		<Spanish>Alejado de otros edificios, el polvorero mezcla pólvora a partir de azufre, carbón vegetal y salitre: munición para las armas de los soldados. En la época colonial es el único explosivo disponible (la dinamita se inventará en 1867), por lo que también se utiliza para la artillería, la minería y la construcción de carreteras.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]powder maker's house[COLOR_REVERT] is where, first, [LINK=YIELD_CHAR_COAL]charcoal[\LINK] is made from [LINK=YIELD_LUMBER]lumber[\LINK] by a settler with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession; and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by another colonist with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]line infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]light artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
+		<German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Pulvermachers[COLOR_REVERT] wird zunächst von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] hergestellt und dann daraus von einem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Pulvermacher[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_PEDIA</Tag>
+		<English>As the business gets bigger, the black powder is stored in kegs which represent a massive increase in explosive power, so much that "powder keg" becomes a metaphor for high risk. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.</English>
+		<German>Mit zunehmender Größe des Unternehmens wird das Schwarzpulver in Fässern gelagert, die eine so große Sprengkraft haben, dass "Pulverfass" zu einer Metapher für ein hohes Risiko wird.[NEWLINE]Schwarzpulver mag gefährlich sein, aber es ist nicht so gefährlich wie eine schwache Armee ohne genügend Munition.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]powder makers' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] where charcoal is made from [LINK=YIELD_LUMBER]lumber[\LINK] by settlers with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession, and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by other colonists with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]line infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]light artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
+		<German>Der [COLOR_HIGHLIGHT_TEXT]Pulverladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_FIREWORKERS_HOUSE]Haus des Pulvermachers[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] herstellt, und dann von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Pulvermacher[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet wird.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_PEDIA</Tag>
+		<English>The powder maker supplies propellant for guns and artillery, and explosives for mining and road building. For a big army so much has to be kept in kegs that an unlucky event in this building can blow up the entire town.[NEWLINE]Centralizing production of propellant for guns and artillery, and explosives for mining and road building, is efficient but it means powder trains of vulnerable wagons are now on the roads, open to attack.</English>
+		<German>Der Pulvermacher liefert Treibladungen für Geschütze und Artillerie sowie Sprengstoff für den Berg- und Straßenbau. Für eine große Armee muss so viel in Fässern gelagert werden, dass ein einziges Missgeschick in diesem Gebäude die ganze Stadt in die Luft jagen kann.[NEWLINE]Die Zentralisierung der Produktion von Treibstoff für Geschütze und Artillerie sowie von Sprengstoff für den Berg- und Straßenbau ist effizient, bedeutet aber auch, dass Pulverzüge mit anfälligen Wagen auf den Straßen unterwegs sind und angegriffen werden können.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]powder magazine[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] where charcoal is made from [LINK=YIELD_LUMBER]lumber[\LINK] by settlers with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession, and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by other colonists with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]line infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]light artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Pulverfabrik[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_FIREWORKERS_HOUSE]Haus des Pulvermachers[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] herstellt, und dann von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Pulvermacher[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet wird.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
+	</TEXT>
+	<!-- BAKER -->
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_BAKER</Tag>
+		<English>Baker</English>
+		<French>Boulanger</French>
+		<German>Bäcker</German>
+		<Italian>Fornaio</Italian>
+		<Spanish>Panadero</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BAKER_HOUSE</Tag>
+		<English>Baker's House</English>
+		<French>Maison du boulanger</French>
+		<German>Haus des Bäckers</German>
+		<Italian>Casa del fornaio</Italian>
+		<Spanish>Casa del panadero</Spanish>
+		<Russian>Дом пекаря</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BAKER_SHOP</Tag>
+		<English>Baker's Shop</English>
+		<German>
+			<Text>Bäckerladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Пекарня</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BAKERY</Tag>
+		<English>Bakery</English>
+		<French>Boulangerie</French>
+		<German>Bäckerei</German>
+		<Italian>Panificio</Italian>
+		<Spanish>Panadería</Spanish>
+		<Russian>Фабрика выпечки</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAKER_HOUSE</Tag>
+		<English>Baker's House</English>
+		<French>Maison du boulanger</French>
+		<German>Haus des Bäckers</German>
+		<Italian>Casa del fornaio</Italian>
+		<Spanish>Casa del panadero</Spanish>
+		<Russian>Дом пекаря</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAKER_SHOP</Tag>
+		<English>Baker's Shop</English>
+		<French>Atelier du boulanger</French>
+		<German>
+			<Text>Bäckerladen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Пекарня</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAKERY</Tag>
+		<English>Bakery</English>
+		<French>Boulangerie</French>
+		<German>Bäckerei</German>
+		<Italian>Panificio</Italian>
+		<Spanish>Panadería</Spanish>
+		<Russian>Фабрика выпечки</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAKER_HOUSE_PEDIA</Tag>
+		<English>At first every household bakes its own bread but soon the baker's house centralizes food production. The baker starts work well before dawn so that households can have their daily bread. Settlers who remember the early starvation days continue to grow squash, beans and corn but new arrivals prefer familiar food from the old country.[NEWLINE]Having a bakery means each household doesn't need to bake its own bread. That allows other colonists to spend time on what they do best. Specialization helps the economy to grow, a concept soon popularized in books by economists Adam Smith and David Ricardo.</English>
+		<French>Au début, chaque foyer cuit son propre pain, mais bientôt la maison du boulanger centralise la production alimentaire. Le boulanger commence à travailler bien avant l'aube pour que les ménages puissent avoir leur pain quotidien. Les colons qui se souviennent des premiers jours de famine continuent de cultiver des courges, des haricots et du maïs, mais les nouveaux arrivants préfèrent les aliments familiers du vieux pays.[NEWLINE]Le fait d'avoir une boulangerie signifie que chaque foyer n'a pas besoin de cuire son propre pain. Cela permet aux autres colons de consacrer du temps à ce qu'ils font le mieux. La spécialisation favorise la croissance de l'économie, un concept bientôt popularisé dans les livres des économistes Adam Smith et David Ricardo.</French>
+		<German>Zunächst bäckt jeder Haushalt sein eigenes Brot, doch schon bald wird die Lebensmittelproduktion durch die Bäckereien zentralisiert. Der Bäcker beginnt seine Arbeit lange vor dem Morgengrauen, damit die Haushalte ihr tägliches Brot bekommen. Siedler, die sich an die frühen Hungertage erinnern, bauen weiterhin Kürbisse, Bohnen und Mais an, aber Neuankömmlinge bevorzugen die vertrauten Lebensmittel aus dem alten Land.[NEWLINE]Mit einer Bäckerei muss nicht jeder Haushalt sein eigenes Brot backen. So können die anderen Kolonisten ihre Zeit mit dem verbringen, was sie am besten können. Spezialisierung hilft der Wirtschaft zu wachsen, ein Konzept, das schon bald in den Büchern der Ökonomen Adam Smith und David Ricardo popularisiert wurde.</German>
+		<Italian>All'inizio ogni famiglia prepara il proprio pane, ma presto la casa del fornaio centralizza la produzione di cibo. Il fornaio inizia a lavorare molto prima dell'alba, in modo che le famiglie possano avere il pane quotidiano. I coloni che ricordano i primi tempi di fame continuano a coltivare zucche, fagioli e mais, ma i nuovi arrivati preferiscono il cibo familiare del vecchio Paese.[NEWLINE]Avere un panificio significa che ogni famiglia non ha bisogno di cuocere il proprio pane. Questo permette agli altri coloni di dedicare il loro tempo a ciò che sanno fare meglio. La specializzazione aiuta l'economia a crescere, un concetto presto reso popolare nei libri degli economisti Adam Smith e David Ricardo.</Italian>
+		<Spanish>Al principio, cada hogar hornea su propio pan, pero pronto la casa del panadero centraliza la producción de alimentos. El panadero empieza a trabajar mucho antes del amanecer para que los hogares puedan tener su pan diario. Los colonos que recuerdan los primeros días de hambruna siguen cultivando calabaza, judías y maíz, pero los recién llegados prefieren la comida familiar del viejo país.[NEWLINE]Tener una panadería significa que cada hogar no necesita hornear su propio pan. Eso permite a los demás colonos dedicar su tiempo a lo que mejor saben hacer. La especialización contribuye al crecimiento de la economía, un concepto que pronto se popularizó en los libros de los economistas Adam Smith y David Ricardo.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAKER_HOUSE_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]baker's house[COLOR_REVERT] is where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
+		<German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Bäckers[COLOR_REVERT] stellen [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] her. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAKER_SHOP_PEDIA</Tag>
+		<English>As the bakery gets more workers it might add a pastry chef who creates sweet treats that bring in business. The business also provides a variety of loaves so that new arrivals can buy the kind of bread that reminds them of home. The bakery also has cured meats for sandwiches, soon offering all the variety a hungry traveller might want.[NEWLINE]As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats. A few serve coffee which is considered scandalous because of the stimulating effect.</English>
+		<German>Wenn die Bäckerei mehr Mitarbeiter hat, kann sie einen Konditor einstellen, der süße Leckereien herstellt, die das Geschäft ankurbeln. Das Unternehmen bietet auch eine Vielzahl von Brotsorten an, damit Gäste das Brot kaufen können, das sie an ihre Heimat erinnert.[NEWLINE]Wenn die Bäckerei wächst und Kekse und Gebäck anbietet, wird sie zu einem sozialen Zentrum. Einige Bäcker stellen sogar Tische auf, an denen Tee zu den Leckereien serviert wird. Einige wenige servieren Kaffee, der wegen seiner anregenden Wirkung als skandalös gilt.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAKER_SHOP_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]bakeshop[COLOR_REVERT] is the upgrade of the[LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
+		<German>Der [COLOR_HIGHLIGHT_TEXT]Bäckerladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAKERY_PEDIA</Tag>
+		<English>A large bakery serves a region. On the one hand it offers cheap food thanks to economies of sale. On the other it delivers an unparalleled variety of pastries, pies and cakes for special occasions.[NEWLINE]A big bakery makes an important contribution to the region it serves, increasing both the food supply and the community's happiness.</English>
+		<German>Eine Großbäckerei bedient eine Region. Einerseits bietet sie dank des günstigen Verkaufs günstige Lebensmittel an. Darüber hinaus liefert sie eine unvergleichliche Vielfalt an Backwaren, Torten und Kuchen für besondere Anlässe.[NEWLINE]Eine große Bäckerei leistet einen wichtigen Beitrag für die Region, in der sie tätig ist, indem sie sowohl die Lebensmittelversorgung als auch das Wohlbefinden der Bevölkerung verbessert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_BAKERY_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]bakery[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Bäckerei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
+	</TEXT>
+	<!-- Courthouse -->
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_LAW</Tag>
+		<English>Courthouse</English>
+		<German>
+			<Text>Gerichtsgebäude</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_VILLAGE_COURT</Tag>
+		<English>Village Courthouse</English>
+		<French>Maison du juge</French>
+		<German>
+			<Text>Dorfgerichtshaus</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Здание суда</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TOWN_COURT</Tag>
+		<English>Town Courthouse</English>
+		<French>Tribunal de la ville</French>
+		<German>
+			<Text>Stadtgerichtshaus</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Городской суд</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CITY_COURT</Tag>
+		<English>City Courthouse</English>
+		<French>Tribunal d'arrondissement</French>
+		<German>
+			<Text>Distriktsgerichthaus</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Окружной суд</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_SUPREME_COURT</Tag>
+		<English>Supreme Court</English>
+		<French>Cour suprême</French>
+		<German>
+			<Text>Oberstes Gericht</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Верховный суд</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VILLAGE_COURT</Tag>
+		<English>Village Courthouse</English>
+		<French>Maison du juge de paix</French>
+		<German>
+			<Text>Dorfgerichtshaus</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Здание суда</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOWN_COURT</Tag>
+		<English>Town Courthouse</English>
+		<French>Tribunal de la ville</French>
+		<German>
+			<Text>Stadtgerichtshaus</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Городской суд</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_COURT</Tag>
+		<English>City Courthouse</English>
+		<French>Tribunal d'arrondissement</French>
+		<German>
+			<Text>Distriktsgerichthaus</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Окружной суд</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SUPREME_COURT</Tag>
+		<English>Supreme Court</English>
+		<French>Cour suprême</French>
+		<German>
+			<Text>Oberstes Gericht</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Верховный суд</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VILLAGE_COURT_PEDIA</Tag>
+		<English>Village courthouses handle small property disputes and local misbehaviour. Some use common law, where the judge recalls what was decided the last time that the cow broke through the fence and grazed in the neighbour's field. Others rely on written rules from the governor or the overseas monarch.</English>
+		<German>Die Dorfgerichte kümmern sich um kleine Eigentumsstreitigkeiten und lokales Fehlverhalten. Einige wenden das Gewohnheitsrecht an, wobei sich der Richter daran erinnert, was das letzte Mal entschieden wurde, als die Kuh den Zaun durchbrach und auf dem Feld des Nachbarn graste. Andere stützen sich auf schriftliche Vorschriften des Gouverneurs oder des Monarchen in Übersee.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_VILLAGE_COURT_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]village court[COLOR_REVERT] is the smallest justice building. A colonist assigned as a [LINK=PROFESSION_JUDGE]judge[\LINK] in the [COLOR_HIGHLIGHT_TEXT]village court[COLOR_REVERT] generates [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] are particularly effective at this.</English>
+		<German>Das [COLOR_HIGHLIGHT_TEXT]Dorfgericht[COLOR_REVERT] ist das kleinste Justizgebäude. Ein im [COLOR_HIGHLIGHT_TEXT]Dorfgericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOWN_COURT_PEDIA</Tag>
+		<English>The town courthouse expands its purview to contracts and business law. It still hears criminal cases but they're a distraction from the decisions that really matter. There's a long list of hanging offences.</English>
+		<German>Das Stadtgericht weitet seinen Zuständigkeitsbereich auf Verträge und Wirtschaftsrecht aus. Es werden zwar immer noch Gewalttaten verhandelt, aber die lenken von den wirklich wichtigen Entscheidungen ab. Es gibt eine lange Liste von Hinrichtungsdelikten.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_TOWN_COURT_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]town courthouse[COLOR_REVERT] is the first expansion stage of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed in the [COLOR_HIGHLIGHT_TEXT]town courthouse[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] are particularly effective at this.</English>
+		<German>Das [COLOR_HIGHLIGHT_TEXT]Stadtgericht[COLOR_REVERT] ist die erste Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Stadtgericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_COURT_PEDIA</Tag>
+		<English>The city courthouse still has to control violence and money, but dangerous ideas are increasingly subject to regulation. The jails have political prisoners alongside drunks and con artists. Sometimes all three are the same person.</English>
+		<German>Das Distriktsgericht muss nach wie vor Gewalt und Geld kontrollieren, aber gefährliche Ideen werden zunehmend einer Regulierung unterworfen. In den Gefängnissen sitzen politische Gefangene neben Säufern und Betrügern. Manchmal sind alle drei ein und dieselbe Person.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_CITY_COURT_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]city courthouse[COLOR_REVERT] is the highest normal expansion level of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed to the [COLOR_HIGHLIGHT_TEXT]city courthouse[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] are particularly effective at this.</English>
+		<German>Das [COLOR_HIGHLIGHT_TEXT]Distriktsgerichthaus[COLOR_REVERT] ist die höchste normale Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Distriktsgerichthaus[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SUPREME_COURT_PEDIA</Tag>
+		<English>The Supreme Court exists as a counterbalance to government. Rules are made consistent. Many laws have a strong religious component. Precedent remains important, so the Supreme Court is a force for social continuity.</English>
+		<German>Der Oberste Gerichtshof ist ein Gegengewicht zur Regierung. Regeln werden konsequent umgesetzt. Viele Gesetze haben eine starke religiöse Komponente. Präzedenzfälle bleiben wichtig, so dass der Oberste Gerichtshof eine Kraft für soziale Kontinuität ist.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]supreme court[COLOR_REVERT] can only be built once and is the very highest expansion level of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed in the [COLOR_HIGHLIGHT_TEXT]supreme court[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates a great deal of [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] are particularly effective at this.</English>
+		<German>Das [COLOR_HIGHLIGHT_TEXT]Oberste Gericht[COLOR_REVERT] kann nur einmal errichtet werden und ist die allerhöchste Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Obersten Gericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt sehr viel [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
+	</TEXT>
+	<!-- JAIL -->
+	<TEXT>
+		<Tag>TXT_KEY_SPECIALBUILDING_JAIL</Tag>
+		<English>Jail</English>
+		<French>Prison</French>
+		<German>
+			<Text>Gefängnis</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_JAIL</Tag>
+		<English>Jail</English>
+		<French>Prison</French>
+		<German>
+			<Text>Gefängnis</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Тюрьма</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JAIL</Tag>
+		<English>Jail</English>
+		<French>Prison</French>
+		<German>
+			<Text>Gefängnis</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Тюрьма</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JAIL_PEDIA</Tag>
+		<English>Jail is how the settlement handles drunks, domestic disputes, witches and thieves. Murderers don't stay in jail for long because they're hanged. Thieves are hanged later.</English>
+		<German>Das Gefängnis ist der Ort, an dem Betrunkene, häusliche Gewalttäter, Hexen und Dieben landen. Mörder bleiben nicht lange im Gefängnis, weil sie gehängt werden. Diebe werden später aufgehängt.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_JAIL_STRATEGY</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]jail[COLOR_REVERT] increases the [LINK=YIELD_LAW]law[\LINK] without additional use of [LINK=PROFESSION_JUDGE]judges[\LINK] in the city.</English>
+		<German>Das [COLOR_HIGHLIGHT_TEXT]Gefängnis[COLOR_REVERT] erhöht die [LINK=YIELD_LAW]Justiz[\LINK] ohne zusätzlichen Einsatz von [LINK=PROFESSION_JUDGE]Richtern[\LINK] in der Stadt.</German>
+	</TEXT>
 </Civ4GameText>

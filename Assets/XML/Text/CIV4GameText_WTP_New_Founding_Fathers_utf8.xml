@@ -5,641 +5,641 @@
 <!-- -->
 <!-- Game Text Infos -->
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <!-- CARL_VON_LINNES -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_CARL_VON_LINNES</Tag>
-        <English>
-            <Text>Carl von Linné</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Carl von Linné</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Carl von Linné</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Carl von Linné</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Carl von Linné</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Карл Линней</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_CARL_VON_LINNES</Tag>
-        <English>TXT_KEY_FATHER_CARL_VON_LINNES</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_CARL_VON_LINNES_PEDIA</Tag>
-        <English>[H1]Carl von Linné[\H1][NEWLINE][BOLD]Lived : [\BOLD]1707 - 1778[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Carl von Linné, known as Carl Linnaeus before being knighted in 1761, is the father of modern taxonomy. Born in Rashult in southern Sweden, he was a botanist, zoologist, taxonomist, and physician. His higher education was at Uppsala University. He began giving lectures in botany there in 1730.[PARAGRAPH:2:1]His manuscript on classifying plants was published as "Systema Naturae" (1735). It established binomial nomenclature in Latin as the world standard.[PARAGRAPH:2:1]He admired the child care practices of the Lapps. They had healthier babies than Europeans who employed wet nurses. He became a strong advocate of breast-feeding by mothers. His activism here likely played a role in his choice of the term Mammalia for our class of organisms.</English>
-        <!--<German>[H1]Carl von Linné[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1707 - 1778[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_CARL_VON_LINNES_STRATEGY</Tag>
-        <English>Boost your political progress with [COLOR_TECH_TEXT]Carl von Linné[COLOR_REVERT]. This Founding Father allows you to grow and get oil from [COLOR_HIGHLIGHT_TEXT]peanuts[COLOR_REVERT] in half the normal time.</English>
-    </TEXT>
-    <!-- SIR_THOMAS_GATES -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES</Tag>
-        <English>
-            <Text>Sir Thomas Gates</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Sir Thomas Gates</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Sir Thomas Gates</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Sir Thomas Gates</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Sir Thomas Gates</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Томас Гейтс</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_SIR_THOMAS_GATES</Tag>
-        <English>TXT_KEY_FATHER_SIR_THOMAS_GATES</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES_PEDIA</Tag>
-        <English>[H1]Sir Thomas Gates[\H1][NEWLINE][BOLD]Lived : [\BOLD]1578 - 1622[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Sir Thomas Gates was the governor of Jamestown following George Percy who, through inept leadership, was responsible for the lives lost during the the Starving Time. His controlled, strict methods helped the early colonies survive.[PARAGRAPH:2:1]Sir Thomas was knighted in 1596 for gallantry at the Capture of Cadiz, an honour confirmed by Queen Elizabeth I.[PARAGRAPH:2:1]Gates would go on to establish three new forts along the James River, as well as blockhouses, a wharf, and a governor's house. Gates' actions made him a national hero upon his return to England, something the Virginia Company badly needed due to their previous dip in investors.</English>
-        <!--<German>[H1]Sir Thomas Gates[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1578 - 1622[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES_STRATEGY</Tag>
-        <English>Boost your political progress with [COLOR_TECH_TEXT]Sir Thomas Gates[COLOR_REVERT]. This Founding Father allows you to breed [COLOR_HIGHLIGHT_TEXT]goats[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]pigs[COLOR_REVERT] in half the normal time.</English>
-    </TEXT>
-    <!-- EUSEBIO FRANCISCO KINO -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO</Tag>
-        <English>
-            <Text>Eusebius Franz Kühn</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Eusebius Franz Kühn</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Eusebius Franz Kühn</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Eusebius Franz Kühn</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Eusebius Franz Kühn</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Эусебио Франсиско Кино</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO_PEDIA</Tag>
-        <English>[H1]Eusebius Franz Kühn[\H1][NEWLINE][BOLD]Lived : [\BOLD]1645 - 1711[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Father Kino, also known as Eusebio Francisco Kino, was a Tyrolean Jesuit who opposed the slavery and compulsory hard labour in the silver mines that the Spaniards forced on the Native people.[PARAGRAPH:2:1]He was an expert astronomer, mathematician and cartographer who drew the first accurate maps of the Gulf of California and Baja California. He also believed that Mexican Natives could easily access California by sea.</English>
-        <!--<German>[H1]Eusebius Franz Kühn[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1645 - 1711[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO_STRATEGY</Tag>
-        <English>Boost your religious progress with [COLOR_TECH_TEXT]Eusebius Franz Kühn[COLOR_REVERT]. This Founding Father allows you to grow [COLOR_HIGHLIGHT_TEXT]olives[COLOR_REVERT] and press [COLOR_HIGHLIGHT_TEXT]olive oil[COLOR_REVERT] in half the normal time.</English>
-    </TEXT>
-    <!-- HUMPHREY GILBERT -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT</Tag>
-        <English>
-            <Text>Sir Humphrey Gilbert</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Sir Humphrey Gilbert</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Sir Humphrey Gilbert</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Sir Humphrey Gilbert</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Sir Humphrey Gilbert</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Хемфри Гилберт</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT_PEDIA</Tag>
-        <English>[H1]Sir Humphrey Gilbert[\H1][NEWLINE][BOLD]Lived : [\BOLD]c.1537 - 1583[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Sir Humphrey Gilbert was a strong advocate with Queen Elizabeth for the Northwest Passage to China.[PARAGRAPH:2:1]After three expeditions led by Martin Frobisher failed to find the north-west passage in 1576, 1577, and in 1578, Gilbert set out on his own expedition with a small fleet of five vessels in June 1583. On the return journey to Europe his ship, the small 10-ton frigate "Squirrel", went down with all hands off the Azores.</English>
-        <!--<German>[H1]Sir Humphrey Gilbert[\H1][NEWLINE][BOLD]Lebte : [\BOLD]ca. 1537 - 1583[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT_STRATEGY</Tag>
-        <English>Boost your political progress with [COLOR_TECH_TEXT]Sir Humphrey Gilbert[COLOR_REVERT]. This Founding Father allows you to grow [COLOR_HIGHLIGHT_TEXT]rapeseed[COLOR_REVERT] and process [COLOR_HIGHLIGHT_TEXT]rapeseed oil[COLOR_REVERT] in half the normal time.</English>
-    </TEXT>
-    <!-- ROBERT_BAKEWELL -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_ROBERT_BAKEWELL</Tag>
-        <English>
-            <Text>Robert Bakewell</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Robert Bakewell</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Robert Bakewell</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Robert Bakewell</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Robert Bakewell</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Роберт Бейкуэлл</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_ROBERT_BAKEWELL</Tag>
-        <English>TXT_KEY_FATHER_ROBERT_BAKEWELL</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_ROBERT_BAKEWELL_PEDIA</Tag>
-        <English>[H1]Robert Bakewell[\H1][NEWLINE][BOLD]Lived : [\BOLD]1725 - 1795[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Robert Bakewell was an English agriculturalist, the first to implement systematic selective breeding of livestock. Using native sheep, he was able to select for large animals with long, lustrous wool.[PARAGRAPH:2:1]As more and more farmers followed his lead, farm animals increased dramatically in size and quality. In 1700, the average weight of a bull sold for slaughter was 370 pounds (168 kg). By 1786, that weight had more than doubled to 840 pounds (381 kg).[PARAGRAPH:2:1]Selective breeding inspired Charles Darwin's theory of natural selection. In "On the Origin of Species" Darwin cited Bakewell's work.</English>
-        <!--<German>[H1]Robert Bakewell[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1725 - 1795[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_ROBERT_BAKEWELL_STRATEGY</Tag>
-        <English>Boost your industrialization with [COLOR_TECH_TEXT]Robert Bakewell[COLOR_REVERT]. This Founding Father allows you to breed [COLOR_HIGHLIGHT_TEXT]cattle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]sheep[COLOR_REVERT] in half the normal time.</English>
-    </TEXT>
-    <!-- THOMAS_WEST_DE_LA_WARR -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR</Tag>
-        <English>
-            <Text>Baron De La Warr</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Baron De La Warr</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Baron De La Warr</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Baron De La Warr</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Baron De La Warr</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Томас Уэст</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_THOMAS_WEST_DE_LA_WARR</Tag>
-        <English>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR_PEDIA</Tag>
-        <English>[H1]Thomas West, Baron De La Warr[\H1][NEWLINE][BOLD]Lived : [\BOLD]1577 - 1618[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Thomas West, 3rd Baron De La Warr, was an English merchant and politician for whom the U.S. state of Delaware was named. He was the largest investor in the London Company which received two charters to settle colonists in the New World.[PARAGRAPH:2:1]In 1609, Baron De La Warr was also appointed governor-for-life and captain-general of the Colony of Virginia. In 1616, he introduced John Rolfe and his wife, Pocahontas, into English society.[PARAGRAPH:2:1]After receiving complaints from the Virginia settlers about the tyranny of his governor there, he set sail for Virginia in 1618 aboard the "Neptune" to investigate those charges. He died at sea on June 7. It is believed that he was poisoned.</English>
-        <!--<German>[H1]Thomas West, Baron De La Warr[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1577 - 1618[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR_STRATEGY</Tag>
-        <English>Boost your political standing with [COLOR_TECH_TEXT]Baron De La Warr[COLOR_REVERT]. This Founding Father allows you to breed [COLOR_HIGHLIGHT_TEXT]chickens[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]geese[COLOR_REVERT] in half the normal time.</English>
-    </TEXT>
-    <!-- JAMES_BAKER -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JAMES_BAKER</Tag>
-        <English>
-            <Text>James Baker</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>James Baker</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>James Baker</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>James Baker</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>James Baker</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Джеймс Бейкер</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_JAMES_BAKER</Tag>
-        <English>TXT_KEY_FATHER_JAMES_BAKER</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JAMES_BAKER_PEDIA</Tag>
-        <English>[H1]Doctor James Baker[\H1][NEWLINE][BOLD]Lived : [\BOLD]1739 - 1825[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Owing to James Baker's gentle disposition, his parents were induced to fit him for the ministry. With this in view he went through Harvard College, graduating in 1760. However it soon became apparent that his extreme diffidence would prevent him from performing the duties of a minister.[PARAGRAPH:2:1]Next he opened a store. Soon he saw that there were great possibilities in the chocolate business, so he closed his store and began to manufacture chocolate. The success of this undertaking was remarkable and Baker’s Chocolate has been manufactured ever since, now being known in all parts of the world.</English>
-        <!--<German>[H1]Doktor James Baker[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1739 - 1825[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JAMES_BAKER_STRATEGY</Tag>
-        <English>Boost your political progress with [COLOR_TECH_TEXT]James Baker[COLOR_REVERT]. This Founding Father allows you to grow [COLOR_HIGHLIGHT_TEXT]vanilla beans[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]cocoa beans[COLOR_REVERT], and to manufacture [COLOR_HIGHLIGHT_TEXT]vanilla[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]cocoa[COLOR_REVERT], in half the normal time.</English>
-    </TEXT>
-    <!-- WILLIAM_STRACHEY -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY</Tag>
-        <English>
-            <Text>William Strachey</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>William Strachey</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>William Strachey</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>William Strachey</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>William Strachey</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Уильям Стрейчи</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_WILLIAM_STRACHEY</Tag>
-        <English>TXT_KEY_FATHER_WILLIAM_STRACHEY</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY_PEDIA</Tag>
-        <English>[H1]William Strachey[\H1][NEWLINE][BOLD]Lived : [\BOLD]1572 - 1621[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]William Strachey was an English writer whose works describe the early history of the English colonization of North America.[PARAGRAPH:2:1]He was an eye-witness to the 1609 shipwreck of the "Sea Venture" on Bermuda, then uninhabited. The survivors had to build new boats to continue on to Virginia.[PARAGRAPH:2:1]His account of the incident and of the Virginia colony is thought by most scholars to have been the source for Shakespeare's play, "The Tempest".[PARAGRAPH:2:1]Strachey's writings are among the few first-hand descriptions of Virginia in the period. His glossary of Powhatan words is one of only two records of the language, the other being Captain John Smith's.</English>
-        <!--<German>[H1]William Strachey[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1572 - 1621[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY_STRATEGY</Tag>
-        <English>Boost your trading with [COLOR_TECH_TEXT]William Strachey[COLOR_REVERT]. This Founding Father allows you to collect [COLOR_HIGHLIGHT_TEXT]pig skin[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]cattle hides[COLOR_REVERT], and to tan [COLOR_HIGHLIGHT_TEXT]pig leather[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]cattle leather[COLOR_REVERT] in half the normal time.</English>
-    </TEXT>
-    <!-- SIR_JOHN_HARVEY -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY</Tag>
-        <English>
-            <Text>Sir John Harvey</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Sir John Harvey</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Sir John Harvey</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Sir John Harvey</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Sir John Harvey</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Джон Харви</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_SIR_JOHN_HARVEY</Tag>
-        <English>TXT_KEY_FATHER_SIR_JOHN_HARVEY</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY_PEDIA</Tag>
-        <English>[H1]Sir John Harvey[\H1][NEWLINE][BOLD]Lived : [\BOLD]c.1581 - 1646[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Sir John Harvey complained about the lack of leather shoes in colonial Virginia. He encouraged shoe manufacturers and tanneries, and also prevented the export of leather or deer hide, keeping it all for the local market.[PARAGRAPH:2:1] Harvey was the Governor of Virginia, appointed by Charles I. In 1635, he was suspended and impeached by the Council of Virginia.[PARAGRAPH:2:1]Charles I restored him to his post in 1636. The captain and sailors who transported the governor back to Virginia in 1635 had to sue in Admiralty court for their pay.[PARAGRAPH:2:1]His government was tyrannical and Harvey himself was called "an obnoxious ruler". In 1639, Harvey was replaced as governor by Sir Francis Wyatt.</English>
-        <!--<German>[H1]Sir John Harvey[\H1][NEWLINE][BOLD]Lebte : [\BOLD]ca. 1581 - 1646[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY_STRATEGY</Tag>
-        <English>Boost your political progress with [COLOR_TECH_TEXT]Sir John Harvey[COLOR_REVERT]. This Founding Father allows you to collect [COLOR_HIGHLIGHT_TEXT]goat skins[COLOR_REVERT] and manufacture [COLOR_HIGHLIGHT_TEXT]goat hide boots[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]padded leather coats[COLOR_REVERT] in half the normal time.</English>
-    </TEXT>
-    <!-- JOHN_MAURICE -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JOHN_MAURICE</Tag>
-        <English>
-            <Text>Johann Moritz</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Johann Moritz</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Johann Moritz</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Johann Moritz</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Johann Moritz</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Иоганн Мориц Нассау-Зигенский</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_JOHN_MAURICE</Tag>
-        <English>TXT_KEY_FATHER_JOHN_MAURICE</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JOHN_MAURICE_PEDIA</Tag>
-        <English>[H1]Johann Moritz, Fürst von Nassau-Siegen[\H1][NEWLINE][BOLD]Lived : [\BOLD]1604 - 1679[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Johann Moritz, Prince of Nassau-Siegen, was a Dutch field marshal and gouverneur-generaal of Nieuw-Holland from 1636 to 1643.[PARAGRAPH:2:1]After his appointment as gouverneur-generaal of the possessions of the Dutch West India Company in Brazil in 1636, he conquered a large part of the northeastern coast of Brazil from the Portuguese despite having only small forces at his disposal. Subsequently, in 1637, Johann Moritz sent an expedition of nine ships and 800 soldiers to the African coast, which captured for the Dutch the Portuguese fortress and most important trading post on the coast of Guinea, São Jorge da Mina. Elmina then became the Dutch headquarters in West Africa and one of the starting points of the transatlantic slave trade.[PARAGRAPH:2:1]With the massive use of African slaves on the extensive sugar plantations, Johann Moritz contributed significantly to the rise of Nieuw-Holland whose "white gold" brought great profits to the Dutch West India Company. The economic success of the Dutch spurred the Portuguese even more to reconquer their colony, which they succeeded in doing by 1654.[PARAGRAPH:2:1]He also established representative councils in the colony for local government, and developed Recife's transportation infrastructure. His large schemes and lavish expenditures alarmed the parsimonious directors of the West India Company and, refusing to retain his post unless he were given a free hand, he returned to Europe in July 1644.[PARAGRAPH:2:1]When war broke out with England Johann Moritz, Prince of Nassau-Siegen, was appointed commander-in-chief of the Dutch States Army. Though hampered in his command by the restrictions of the states-general, he repelled the invasion.</English>
-        <!--<German>[H1]Johann Moritz, Fürst von Nassau-Siegen[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1604 - 1679[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JOHN_MAURICE_STRATEGY</Tag>
-        <English>Boost your military with [COLOR_TECH_TEXT]Johann Moritz[COLOR_REVERT]. This Founding Father gives you a [COLOR_HIGHLIGHT_TEXT]settler militia[COLOR_REVERT] and also allows you to produce [COLOR_HIGHLIGHT_TEXT]cheese[COLOR_REVERT] in half the normal time.</English>
-    </TEXT>
-    <!-- WILLIAM_TAILER -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_WILLIAM_TAILER</Tag>
-        <English>
-            <Text>William Tailer</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>William Tailer</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>William Tailer</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>William Tailer</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>William Tailer</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Уильям Тейлер</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_WILLIAM_TAILER</Tag>
-        <English>TXT_KEY_FATHER_WILLIAM_TAILER</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_WILLIAM_TAILER_PEDIA</Tag>
-        <English>[H1]William Tailer[\H1][NEWLINE][BOLD]Lived : [\BOLD]1675 - 1731[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]William Tailer was a military officer and politician in Massachusetts Bay. He commanded a regiment in the 1710 siege of Port Royal, the capital of French Acadia, during Queen Anne's War.[PARAGRAPH:2:1]Tailer was responsible for overseeing the defenses of Boston in the 1720s, and negotiated with the Iroquois and Abenaki during Dummer's War.[PARAGRAPH:2:1]An Anglican, he opposed Puritan Governor Joseph Dudley. Tailer was ultimately turned out of office when the king chose Colonel Samuel Shute, a land bank opponent, to replace his government.</English>
-        <!--<German>[H1]William Tailer[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1675 - 1731[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_WILLIAM_TAILER_STRATEGY</Tag>
-        <English>Boost your political progress with [COLOR_TECH_TEXT]William Tailer[COLOR_REVERT]. This Founding Father gives you an [COLOR_HIGHLIGHT_TEXT]Expert Farmer[COLOR_REVERT] and allows you to bake more [COLOR_HIGHLIGHT_TEXT]bread[COLOR_REVERT] in proportion to the tax rate.</English>
-    </TEXT>
-    <!-- SAMUEL_NICHOLAS -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS</Tag>
-        <English>
-            <Text>Samuel Nicholas</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Samuel Nicholas</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Samuel Nicholas</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Samuel Nicholas</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Samuel Nicholas</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Сэмюэл Николас</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_SAMUEL_NICHOLAS</Tag>
-        <English>TXT_KEY_FATHER_SAMUEL_NICHOLAS</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS_PEDIA</Tag>
-        <English>[H1]Samuel Nicholas[\H1][NEWLINE][BOLD]Lived : [\BOLD]1744 - 1790[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Samuel Nicholas, the first officer commissioned in the United States Continental Marines, is by tradition considered to be the first Commandant of the Marine Corps.[PARAGRAPH:2:1]He led the first successful landing by Continental Marines, which saw the capture of Nassau.[PARAGRAPH:2:1]The Marines under Major Nicholas fought a detachment of Cornwallis's main army at Princeton, New Jersey. During the ensuing months, Nicholas's battalion served both as infantry and artillery, participating in several skirmishes.[PARAGRAPH:2:1]Following the British evacuation of Philadelphia in June 1778, Nicholas was put in charge of recruiting, and also acted as Muster Master of the Navy.</English>
-        <!--<German>[H1]Samuel Nicholas[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1744 - 1790[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS_STRATEGY</Tag>
-        <English>Boost your military with [COLOR_TECH_TEXT]Samuel Nicholas[COLOR_REVERT]. This Founding Father gives you a [COLOR_HIGHLIGHT_TEXT]Brave Lieutenant[COLOR_REVERT] and a [COLOR_HIGHLIGHT_TEXT]Capable Captain[COLOR_REVERT].</English>
-    </TEXT>
-    <!-- JOHN_WINTHROP_THE_YOUNGER -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER</Tag>
-        <English>
-            <Text>John Winthrop</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>John Winthrop</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>John Winthrop</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>John Winthrop</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>John Winthrop</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Джон Уинтроп</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_JOHN_WINTHROP_THE_YOUNGER</Tag>
-        <English>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_PEDIA</Tag>
-        <English>[H1]John Winthrop the Younger[\H1][NEWLINE][BOLD]Lived : [\BOLD]1606 - 1676[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]John Winthrop the Younger was an early governor of the Connecticut colony. He lived in Massachusetts, where he built a grist mill and was granted a monopoly. This was one of the first monopolies granted in New England.[PARAGRAPH:2:1]Winthrop became a magistrate of the Connecticut colony in 1651, was governor of the colony from 1657 to 1658, and again became governor in 1659, being annually re-elected until his death.[PARAGRAPH:2:1]During his tenure as Governor of Connecticut, he oversaw the acceptance of Quakers who were banned from Massachusetts.[PARAGRAPH:2:1]In 1662, he obtained the charter in England which united the colonies of Connecticut and New Haven.</English>
-        <!--<German>[H1]John Winthrop, der Jüngere[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1606 - 1676[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_STRATEGY</Tag>
-        <English>Boost your trade with [COLOR_TECH_TEXT]John Winthrop[COLOR_REVERT]. This Founding Father gives you a [COLOR_HIGHLIGHT_TEXT]Master Charcoal Burner[COLOR_REVERT] and a [COLOR_HIGHLIGHT_TEXT]Master Powder Maker[COLOR_REVERT].</English>
-    </TEXT>
-    <!-- BENJAMIN_KISSAM -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_BENJAMIN_KISSAM</Tag>
-        <English>
-            <Text>Benjamin Kissam</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Benjamin Kissam</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Benjamin Kissam</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Benjamin Kissam</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Benjamin Kissam</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Бенджамин Киссам</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_BENJAMIN_KISSAM</Tag>
-        <English>TXT_KEY_FATHER_BENJAMIN_KISSAM</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_BENJAMIN_KISSAM_PEDIA</Tag>
-        <English>[H1]Benjamin Kissam[\H1][NEWLINE][BOLD]Lived : [\BOLD]1728 - 1782[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Benjamin Kissam was a prominent lawyer in New York City who trained prospective lawyers. One of his clerks was John Jay. Kissam's wife was Catherine Rutgers, whose family owned a large amount of land in New York, and his brother Daniel was a judge.[PARAGRAPH:2:1]Kissam represented the proprietors of the Kayoderosseras, a huge area of former Mohawk land. The Native nation felt the land patent granted to colonists in the early eighteenth century was unfair. Kissam acted for the proprietors in reaching a new settlement with the Mohawk in 1768.</English>
-        <!--<German>[H1]Benjamin Kissam[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1728 - 1782[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_BENJAMIN_KISSAM_STRATEGY</Tag>
-        <English>Boost your political status with [COLOR_TECH_TEXT]Benjamin Kissam[COLOR_REVERT]. This Founding Father gives you two [COLOR_HIGHLIGHT_TEXT]Honourable Judges[COLOR_REVERT] and increases gavel production by the tax rate.</English>
-    </TEXT>
-    <!-- JUAN_DE_PAREJA -->
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JUAN_DE_PAREJA</Tag>
-        <English>
-            <Text>Juan de Pareja</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </English>
-        <French>
-            <Text>Juan de Pareja</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Juan de Pareja</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Juan de Pareja</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Juan de Pareja</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Хуан де Пареха</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TRAIT_JUAN_DE_PAREJA</Tag>
-        <English>TXT_KEY_FATHER_JUAN_DE_PAREJA</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JUAN_DE_PAREJA_PEDIA</Tag>
-        <English>[H1]Juan de Pareja[\H1][NEWLINE][BOLD]Lived : [\BOLD]c.1610 - 1670[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Juan de Pareja was a Spanish Morisco born around 1610 into slavery in Southern Spain. He was of "mixed parentage and unusual colour".[PARAGRAPH:2:1]In 1630, he apprenticed as a painter, rising to work with Diego Velazquez. In 1642, he had power of attorney for Velazquez in a lawsuit against scribes in the criminal court.[PARAGRAPH:2:1]In 1649, he accompanied Velazquez to Italy, where Velazquez did his famous painting, "Portrait of Juan de Pareja", currently in the Metropolitan Museum of Art of New York.[PARAGRAPH:2:1]In 1650, Velazquez granted him a letter of freedom which would come into effect after four years, on the condition that de Pareja did not escape or commit any criminal act in that period. From then on until his death in Madrid he worked as an independent painter, demonstrating knowledge acquired in Velazquez's workshop.</English>
-        <!--<German>[H1]Juan de Pareja[\H1][NEWLINE][BOLD]Lebte : [\BOLD]ca. 1610 - 1670[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FATHER_JUAN_DE_PAREJA_STRATEGY</Tag>
-        <English>Boost your trade with [COLOR_TECH_TEXT]Juan de Pareja[COLOR_REVERT]. This Founding Father adds two [COLOR_HIGHLIGHT_TEXT]Mestizos[COLOR_REVERT] and two [COLOR_HIGHLIGHT_TEXT]Mulattos[COLOR_REVERT], gives a 10% increase to learning by doing, and adds one emigrant to the dock in Europe.</English>
-    </TEXT>
+	<!-- CARL_VON_LINNES -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_CARL_VON_LINNES</Tag>
+		<English>
+			<Text>Carl von Linné</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Carl von Linné</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Carl von Linné</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Carl von Linné</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Carl von Linné</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Карл Линней</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_CARL_VON_LINNES</Tag>
+		<English>TXT_KEY_FATHER_CARL_VON_LINNES</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_CARL_VON_LINNES_PEDIA</Tag>
+		<English>[H1]Carl von Linné[\H1][NEWLINE][BOLD]Lived : [\BOLD]1707 - 1778[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Carl von Linné, known as Carl Linnaeus before being knighted in 1761, is the father of modern taxonomy. Born in Rashult in southern Sweden, he was a botanist, zoologist, taxonomist, and physician. His higher education was at Uppsala University. He began giving lectures in botany there in 1730.[PARAGRAPH:2:1]His manuscript on classifying plants was published as "Systema Naturae" (1735). It established binomial nomenclature in Latin as the world standard.[PARAGRAPH:2:1]He admired the child care practices of the Lapps. They had healthier babies than Europeans who employed wet nurses. He became a strong advocate of breast-feeding by mothers. His activism here likely played a role in his choice of the term Mammalia for our class of organisms.</English>
+		<!--<German>[H1]Carl von Linné[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1707 - 1778[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_CARL_VON_LINNES_STRATEGY</Tag>
+		<English>Boost your political progress with [COLOR_TECH_TEXT]Carl von Linné[COLOR_REVERT]. This Founding Father allows you to grow and get oil from [COLOR_HIGHLIGHT_TEXT]peanuts[COLOR_REVERT] in half the normal time.</English>
+	</TEXT>
+	<!-- SIR_THOMAS_GATES -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES</Tag>
+		<English>
+			<Text>Sir Thomas Gates</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sir Thomas Gates</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sir Thomas Gates</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sir Thomas Gates</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sir Thomas Gates</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Томас Гейтс</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SIR_THOMAS_GATES</Tag>
+		<English>TXT_KEY_FATHER_SIR_THOMAS_GATES</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES_PEDIA</Tag>
+		<English>[H1]Sir Thomas Gates[\H1][NEWLINE][BOLD]Lived : [\BOLD]1578 - 1622[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Sir Thomas Gates was the governor of Jamestown following George Percy who, through inept leadership, was responsible for the lives lost during the the Starving Time. His controlled, strict methods helped the early colonies survive.[PARAGRAPH:2:1]Sir Thomas was knighted in 1596 for gallantry at the Capture of Cadiz, an honour confirmed by Queen Elizabeth I.[PARAGRAPH:2:1]Gates would go on to establish three new forts along the James River, as well as blockhouses, a wharf, and a governor's house. Gates' actions made him a national hero upon his return to England, something the Virginia Company badly needed due to their previous dip in investors.</English>
+		<!--<German>[H1]Sir Thomas Gates[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1578 - 1622[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES_STRATEGY</Tag>
+		<English>Boost your political progress with [COLOR_TECH_TEXT]Sir Thomas Gates[COLOR_REVERT]. This Founding Father allows you to breed [COLOR_HIGHLIGHT_TEXT]goats[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]pigs[COLOR_REVERT] in half the normal time.</English>
+	</TEXT>
+	<!-- EUSEBIO FRANCISCO KINO -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO</Tag>
+		<English>
+			<Text>Eusebius Franz Kühn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Eusebius Franz Kühn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Eusebius Franz Kühn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Eusebius Franz Kühn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Eusebius Franz Kühn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Эусебио Франсиско Кино</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO_PEDIA</Tag>
+		<English>[H1]Eusebius Franz Kühn[\H1][NEWLINE][BOLD]Lived : [\BOLD]1645 - 1711[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Father Kino, also known as Eusebio Francisco Kino, was a Tyrolean Jesuit who opposed the slavery and compulsory hard labour in the silver mines that the Spaniards forced on the Native people.[PARAGRAPH:2:1]He was an expert astronomer, mathematician and cartographer who drew the first accurate maps of the Gulf of California and Baja California. He also believed that Mexican Natives could easily access California by sea.</English>
+		<!--<German>[H1]Eusebius Franz Kühn[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1645 - 1711[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO_STRATEGY</Tag>
+		<English>Boost your religious progress with [COLOR_TECH_TEXT]Eusebius Franz Kühn[COLOR_REVERT]. This Founding Father allows you to grow [COLOR_HIGHLIGHT_TEXT]olives[COLOR_REVERT] and press [COLOR_HIGHLIGHT_TEXT]olive oil[COLOR_REVERT] in half the normal time.</English>
+	</TEXT>
+	<!-- HUMPHREY GILBERT -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT</Tag>
+		<English>
+			<Text>Sir Humphrey Gilbert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sir Humphrey Gilbert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sir Humphrey Gilbert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sir Humphrey Gilbert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sir Humphrey Gilbert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Хемфри Гилберт</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT_PEDIA</Tag>
+		<English>[H1]Sir Humphrey Gilbert[\H1][NEWLINE][BOLD]Lived : [\BOLD]c.1537 - 1583[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Sir Humphrey Gilbert was a strong advocate with Queen Elizabeth for the Northwest Passage to China.[PARAGRAPH:2:1]After three expeditions led by Martin Frobisher failed to find the north-west passage in 1576, 1577, and in 1578, Gilbert set out on his own expedition with a small fleet of five vessels in June 1583. On the return journey to Europe his ship, the small 10-ton frigate "Squirrel", went down with all hands off the Azores.</English>
+		<!--<German>[H1]Sir Humphrey Gilbert[\H1][NEWLINE][BOLD]Lebte : [\BOLD]ca. 1537 - 1583[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT_STRATEGY</Tag>
+		<English>Boost your political progress with [COLOR_TECH_TEXT]Sir Humphrey Gilbert[COLOR_REVERT]. This Founding Father allows you to grow [COLOR_HIGHLIGHT_TEXT]rapeseed[COLOR_REVERT] and process [COLOR_HIGHLIGHT_TEXT]rapeseed oil[COLOR_REVERT] in half the normal time.</English>
+	</TEXT>
+	<!-- ROBERT_BAKEWELL -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_ROBERT_BAKEWELL</Tag>
+		<English>
+			<Text>Robert Bakewell</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Robert Bakewell</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Robert Bakewell</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Robert Bakewell</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Robert Bakewell</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Роберт Бейкуэлл</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_ROBERT_BAKEWELL</Tag>
+		<English>TXT_KEY_FATHER_ROBERT_BAKEWELL</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_ROBERT_BAKEWELL_PEDIA</Tag>
+		<English>[H1]Robert Bakewell[\H1][NEWLINE][BOLD]Lived : [\BOLD]1725 - 1795[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Robert Bakewell was an English agriculturalist, the first to implement systematic selective breeding of livestock. Using native sheep, he was able to select for large animals with long, lustrous wool.[PARAGRAPH:2:1]As more and more farmers followed his lead, farm animals increased dramatically in size and quality. In 1700, the average weight of a bull sold for slaughter was 370 pounds (168 kg). By 1786, that weight had more than doubled to 840 pounds (381 kg).[PARAGRAPH:2:1]Selective breeding inspired Charles Darwin's theory of natural selection. In "On the Origin of Species" Darwin cited Bakewell's work.</English>
+		<!--<German>[H1]Robert Bakewell[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1725 - 1795[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_ROBERT_BAKEWELL_STRATEGY</Tag>
+		<English>Boost your industrialization with [COLOR_TECH_TEXT]Robert Bakewell[COLOR_REVERT]. This Founding Father allows you to breed [COLOR_HIGHLIGHT_TEXT]cattle[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]sheep[COLOR_REVERT] in half the normal time.</English>
+	</TEXT>
+	<!-- THOMAS_WEST_DE_LA_WARR -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR</Tag>
+		<English>
+			<Text>Baron De La Warr</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Baron De La Warr</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Baron De La Warr</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Baron De La Warr</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Baron De La Warr</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Томас Уэст</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_THOMAS_WEST_DE_LA_WARR</Tag>
+		<English>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR_PEDIA</Tag>
+		<English>[H1]Thomas West, Baron De La Warr[\H1][NEWLINE][BOLD]Lived : [\BOLD]1577 - 1618[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Thomas West, 3rd Baron De La Warr, was an English merchant and politician for whom the U.S. state of Delaware was named. He was the largest investor in the London Company which received two charters to settle colonists in the New World.[PARAGRAPH:2:1]In 1609, Baron De La Warr was also appointed governor-for-life and captain-general of the Colony of Virginia. In 1616, he introduced John Rolfe and his wife, Pocahontas, into English society.[PARAGRAPH:2:1]After receiving complaints from the Virginia settlers about the tyranny of his governor there, he set sail for Virginia in 1618 aboard the "Neptune" to investigate those charges. He died at sea on June 7. It is believed that he was poisoned.</English>
+		<!--<German>[H1]Thomas West, Baron De La Warr[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1577 - 1618[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR_STRATEGY</Tag>
+		<English>Boost your political standing with [COLOR_TECH_TEXT]Baron De La Warr[COLOR_REVERT]. This Founding Father allows you to breed [COLOR_HIGHLIGHT_TEXT]chickens[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]geese[COLOR_REVERT] in half the normal time.</English>
+	</TEXT>
+	<!-- JAMES_BAKER -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_JAMES_BAKER</Tag>
+		<English>
+			<Text>James Baker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>James Baker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>James Baker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>James Baker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>James Baker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джеймс Бейкер</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_JAMES_BAKER</Tag>
+		<English>TXT_KEY_FATHER_JAMES_BAKER</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_JAMES_BAKER_PEDIA</Tag>
+		<English>[H1]Doctor James Baker[\H1][NEWLINE][BOLD]Lived : [\BOLD]1739 - 1825[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Owing to James Baker's gentle disposition, his parents were induced to fit him for the ministry. With this in view he went through Harvard College, graduating in 1760. However it soon became apparent that his extreme diffidence would prevent him from performing the duties of a minister.[PARAGRAPH:2:1]Next he opened a store. Soon he saw that there were great possibilities in the chocolate business, so he closed his store and began to manufacture chocolate. The success of this undertaking was remarkable and Baker’s Chocolate has been manufactured ever since, now being known in all parts of the world.</English>
+		<!--<German>[H1]Doktor James Baker[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1739 - 1825[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_JAMES_BAKER_STRATEGY</Tag>
+		<English>Boost your political progress with [COLOR_TECH_TEXT]James Baker[COLOR_REVERT]. This Founding Father allows you to grow [COLOR_HIGHLIGHT_TEXT]vanilla beans[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]cocoa beans[COLOR_REVERT], and to manufacture [COLOR_HIGHLIGHT_TEXT]vanilla[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]cocoa[COLOR_REVERT], in half the normal time.</English>
+	</TEXT>
+	<!-- WILLIAM_STRACHEY -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY</Tag>
+		<English>
+			<Text>William Strachey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>William Strachey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>William Strachey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>William Strachey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>William Strachey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Уильям Стрейчи</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_WILLIAM_STRACHEY</Tag>
+		<English>TXT_KEY_FATHER_WILLIAM_STRACHEY</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY_PEDIA</Tag>
+		<English>[H1]William Strachey[\H1][NEWLINE][BOLD]Lived : [\BOLD]1572 - 1621[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]William Strachey was an English writer whose works describe the early history of the English colonization of North America.[PARAGRAPH:2:1]He was an eye-witness to the 1609 shipwreck of the "Sea Venture" on Bermuda, then uninhabited. The survivors had to build new boats to continue on to Virginia.[PARAGRAPH:2:1]His account of the incident and of the Virginia colony is thought by most scholars to have been the source for Shakespeare's play, "The Tempest".[PARAGRAPH:2:1]Strachey's writings are among the few first-hand descriptions of Virginia in the period. His glossary of Powhatan words is one of only two records of the language, the other being Captain John Smith's.</English>
+		<!--<German>[H1]William Strachey[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1572 - 1621[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY_STRATEGY</Tag>
+		<English>Boost your trading with [COLOR_TECH_TEXT]William Strachey[COLOR_REVERT]. This Founding Father allows you to collect [COLOR_HIGHLIGHT_TEXT]pig skin[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]cattle hides[COLOR_REVERT], and to tan [COLOR_HIGHLIGHT_TEXT]pig leather[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]cattle leather[COLOR_REVERT] in half the normal time.</English>
+	</TEXT>
+	<!-- SIR_JOHN_HARVEY -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY</Tag>
+		<English>
+			<Text>Sir John Harvey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sir John Harvey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sir John Harvey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sir John Harvey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sir John Harvey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джон Харви</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SIR_JOHN_HARVEY</Tag>
+		<English>TXT_KEY_FATHER_SIR_JOHN_HARVEY</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY_PEDIA</Tag>
+		<English>[H1]Sir John Harvey[\H1][NEWLINE][BOLD]Lived : [\BOLD]c.1581 - 1646[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Sir John Harvey complained about the lack of leather shoes in colonial Virginia. He encouraged shoe manufacturers and tanneries, and also prevented the export of leather or deer hide, keeping it all for the local market.[PARAGRAPH:2:1] Harvey was the Governor of Virginia, appointed by Charles I. In 1635, he was suspended and impeached by the Council of Virginia.[PARAGRAPH:2:1]Charles I restored him to his post in 1636. The captain and sailors who transported the governor back to Virginia in 1635 had to sue in Admiralty court for their pay.[PARAGRAPH:2:1]His government was tyrannical and Harvey himself was called "an obnoxious ruler". In 1639, Harvey was replaced as governor by Sir Francis Wyatt.</English>
+		<!--<German>[H1]Sir John Harvey[\H1][NEWLINE][BOLD]Lebte : [\BOLD]ca. 1581 - 1646[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY_STRATEGY</Tag>
+		<English>Boost your political progress with [COLOR_TECH_TEXT]Sir John Harvey[COLOR_REVERT]. This Founding Father allows you to collect [COLOR_HIGHLIGHT_TEXT]goat skins[COLOR_REVERT] and manufacture [COLOR_HIGHLIGHT_TEXT]goat hide boots[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]padded leather coats[COLOR_REVERT] in half the normal time.</English>
+	</TEXT>
+	<!-- JOHN_MAURICE -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_JOHN_MAURICE</Tag>
+		<English>
+			<Text>Johann Moritz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Johann Moritz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Johann Moritz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Johann Moritz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Johann Moritz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Иоганн Мориц Нассау-Зигенский</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_JOHN_MAURICE</Tag>
+		<English>TXT_KEY_FATHER_JOHN_MAURICE</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_JOHN_MAURICE_PEDIA</Tag>
+		<English>[H1]Johann Moritz, Fürst von Nassau-Siegen[\H1][NEWLINE][BOLD]Lived : [\BOLD]1604 - 1679[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Johann Moritz, Prince of Nassau-Siegen, was a Dutch field marshal and gouverneur-generaal of Nieuw-Holland from 1636 to 1643.[PARAGRAPH:2:1]After his appointment as gouverneur-generaal of the possessions of the Dutch West India Company in Brazil in 1636, he conquered a large part of the northeastern coast of Brazil from the Portuguese despite having only small forces at his disposal. Subsequently, in 1637, Johann Moritz sent an expedition of nine ships and 800 soldiers to the African coast, which captured for the Dutch the Portuguese fortress and most important trading post on the coast of Guinea, São Jorge da Mina. Elmina then became the Dutch headquarters in West Africa and one of the starting points of the transatlantic slave trade.[PARAGRAPH:2:1]With the massive use of African slaves on the extensive sugar plantations, Johann Moritz contributed significantly to the rise of Nieuw-Holland whose "white gold" brought great profits to the Dutch West India Company. The economic success of the Dutch spurred the Portuguese even more to reconquer their colony, which they succeeded in doing by 1654.[PARAGRAPH:2:1]He also established representative councils in the colony for local government, and developed Recife's transportation infrastructure. His large schemes and lavish expenditures alarmed the parsimonious directors of the West India Company and, refusing to retain his post unless he were given a free hand, he returned to Europe in July 1644.[PARAGRAPH:2:1]When war broke out with England Johann Moritz, Prince of Nassau-Siegen, was appointed commander-in-chief of the Dutch States Army. Though hampered in his command by the restrictions of the states-general, he repelled the invasion.</English>
+		<!--<German>[H1]Johann Moritz, Fürst von Nassau-Siegen[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1604 - 1679[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_JOHN_MAURICE_STRATEGY</Tag>
+		<English>Boost your military with [COLOR_TECH_TEXT]Johann Moritz[COLOR_REVERT]. This Founding Father gives you a [COLOR_HIGHLIGHT_TEXT]settler militia[COLOR_REVERT] and also allows you to produce [COLOR_HIGHLIGHT_TEXT]cheese[COLOR_REVERT] in half the normal time.</English>
+	</TEXT>
+	<!-- WILLIAM_TAILER -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_WILLIAM_TAILER</Tag>
+		<English>
+			<Text>William Tailer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>William Tailer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>William Tailer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>William Tailer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>William Tailer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Уильям Тейлер</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_WILLIAM_TAILER</Tag>
+		<English>TXT_KEY_FATHER_WILLIAM_TAILER</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_WILLIAM_TAILER_PEDIA</Tag>
+		<English>[H1]William Tailer[\H1][NEWLINE][BOLD]Lived : [\BOLD]1675 - 1731[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]William Tailer was a military officer and politician in Massachusetts Bay. He commanded a regiment in the 1710 siege of Port Royal, the capital of French Acadia, during Queen Anne's War.[PARAGRAPH:2:1]Tailer was responsible for overseeing the defenses of Boston in the 1720s, and negotiated with the Iroquois and Abenaki during Dummer's War.[PARAGRAPH:2:1]An Anglican, he opposed Puritan Governor Joseph Dudley. Tailer was ultimately turned out of office when the king chose Colonel Samuel Shute, a land bank opponent, to replace his government.</English>
+		<!--<German>[H1]William Tailer[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1675 - 1731[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_WILLIAM_TAILER_STRATEGY</Tag>
+		<English>Boost your political progress with [COLOR_TECH_TEXT]William Tailer[COLOR_REVERT]. This Founding Father gives you an [COLOR_HIGHLIGHT_TEXT]Expert Farmer[COLOR_REVERT] and allows you to bake more [COLOR_HIGHLIGHT_TEXT]bread[COLOR_REVERT] in proportion to the tax rate.</English>
+	</TEXT>
+	<!-- SAMUEL_NICHOLAS -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS</Tag>
+		<English>
+			<Text>Samuel Nicholas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Samuel Nicholas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Samuel Nicholas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Samuel Nicholas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Samuel Nicholas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Сэмюэл Николас</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SAMUEL_NICHOLAS</Tag>
+		<English>TXT_KEY_FATHER_SAMUEL_NICHOLAS</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS_PEDIA</Tag>
+		<English>[H1]Samuel Nicholas[\H1][NEWLINE][BOLD]Lived : [\BOLD]1744 - 1790[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Samuel Nicholas, the first officer commissioned in the United States Continental Marines, is by tradition considered to be the first Commandant of the Marine Corps.[PARAGRAPH:2:1]He led the first successful landing by Continental Marines, which saw the capture of Nassau.[PARAGRAPH:2:1]The Marines under Major Nicholas fought a detachment of Cornwallis's main army at Princeton, New Jersey. During the ensuing months, Nicholas's battalion served both as infantry and artillery, participating in several skirmishes.[PARAGRAPH:2:1]Following the British evacuation of Philadelphia in June 1778, Nicholas was put in charge of recruiting, and also acted as Muster Master of the Navy.</English>
+		<!--<German>[H1]Samuel Nicholas[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1744 - 1790[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS_STRATEGY</Tag>
+		<English>Boost your military with [COLOR_TECH_TEXT]Samuel Nicholas[COLOR_REVERT]. This Founding Father gives you a [COLOR_HIGHLIGHT_TEXT]Brave Lieutenant[COLOR_REVERT] and a [COLOR_HIGHLIGHT_TEXT]Capable Captain[COLOR_REVERT].</English>
+	</TEXT>
+	<!-- JOHN_WINTHROP_THE_YOUNGER -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER</Tag>
+		<English>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джон Уинтроп</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_JOHN_WINTHROP_THE_YOUNGER</Tag>
+		<English>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_PEDIA</Tag>
+		<English>[H1]John Winthrop the Younger[\H1][NEWLINE][BOLD]Lived : [\BOLD]1606 - 1676[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]John Winthrop the Younger was an early governor of the Connecticut colony. He lived in Massachusetts, where he built a grist mill and was granted a monopoly. This was one of the first monopolies granted in New England.[PARAGRAPH:2:1]Winthrop became a magistrate of the Connecticut colony in 1651, was governor of the colony from 1657 to 1658, and again became governor in 1659, being annually re-elected until his death.[PARAGRAPH:2:1]During his tenure as Governor of Connecticut, he oversaw the acceptance of Quakers who were banned from Massachusetts.[PARAGRAPH:2:1]In 1662, he obtained the charter in England which united the colonies of Connecticut and New Haven.</English>
+		<!--<German>[H1]John Winthrop, der Jüngere[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1606 - 1676[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_STRATEGY</Tag>
+		<English>Boost your trade with [COLOR_TECH_TEXT]John Winthrop[COLOR_REVERT]. This Founding Father gives you a [COLOR_HIGHLIGHT_TEXT]Master Charcoal Burner[COLOR_REVERT] and a [COLOR_HIGHLIGHT_TEXT]Master Powder Maker[COLOR_REVERT].</English>
+	</TEXT>
+	<!-- BENJAMIN_KISSAM -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_BENJAMIN_KISSAM</Tag>
+		<English>
+			<Text>Benjamin Kissam</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Benjamin Kissam</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Benjamin Kissam</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Benjamin Kissam</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Benjamin Kissam</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Бенджамин Киссам</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_BENJAMIN_KISSAM</Tag>
+		<English>TXT_KEY_FATHER_BENJAMIN_KISSAM</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_BENJAMIN_KISSAM_PEDIA</Tag>
+		<English>[H1]Benjamin Kissam[\H1][NEWLINE][BOLD]Lived : [\BOLD]1728 - 1782[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Benjamin Kissam was a prominent lawyer in New York City who trained prospective lawyers. One of his clerks was John Jay. Kissam's wife was Catherine Rutgers, whose family owned a large amount of land in New York, and his brother Daniel was a judge.[PARAGRAPH:2:1]Kissam represented the proprietors of the Kayoderosseras, a huge area of former Mohawk land. The Native nation felt the land patent granted to colonists in the early eighteenth century was unfair. Kissam acted for the proprietors in reaching a new settlement with the Mohawk in 1768.</English>
+		<!--<German>[H1]Benjamin Kissam[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1728 - 1782[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_BENJAMIN_KISSAM_STRATEGY</Tag>
+		<English>Boost your political status with [COLOR_TECH_TEXT]Benjamin Kissam[COLOR_REVERT]. This Founding Father gives you two [COLOR_HIGHLIGHT_TEXT]Honourable Judges[COLOR_REVERT] and increases gavel production by the tax rate.</English>
+	</TEXT>
+	<!-- JUAN_DE_PAREJA -->
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_JUAN_DE_PAREJA</Tag>
+		<English>
+			<Text>Juan de Pareja</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Juan de Pareja</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Juan de Pareja</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Juan de Pareja</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Juan de Pareja</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Хуан де Пареха</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_JUAN_DE_PAREJA</Tag>
+		<English>TXT_KEY_FATHER_JUAN_DE_PAREJA</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_JUAN_DE_PAREJA_PEDIA</Tag>
+		<English>[H1]Juan de Pareja[\H1][NEWLINE][BOLD]Lived : [\BOLD]c.1610 - 1670[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Juan de Pareja was a Spanish Morisco born around 1610 into slavery in Southern Spain. He was of "mixed parentage and unusual colour".[PARAGRAPH:2:1]In 1630, he apprenticed as a painter, rising to work with Diego Velazquez. In 1642, he had power of attorney for Velazquez in a lawsuit against scribes in the criminal court.[PARAGRAPH:2:1]In 1649, he accompanied Velazquez to Italy, where Velazquez did his famous painting, "Portrait of Juan de Pareja", currently in the Metropolitan Museum of Art of New York.[PARAGRAPH:2:1]In 1650, Velazquez granted him a letter of freedom which would come into effect after four years, on the condition that de Pareja did not escape or commit any criminal act in that period. From then on until his death in Madrid he worked as an independent painter, demonstrating knowledge acquired in Velazquez's workshop.</English>
+		<!--<German>[H1]Juan de Pareja[\H1][NEWLINE][BOLD]Lebte : [\BOLD]ca. 1610 - 1670[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FATHER_JUAN_DE_PAREJA_STRATEGY</Tag>
+		<English>Boost your trade with [COLOR_TECH_TEXT]Juan de Pareja[COLOR_REVERT]. This Founding Father adds two [COLOR_HIGHLIGHT_TEXT]Mestizos[COLOR_REVERT] and two [COLOR_HIGHLIGHT_TEXT]Mulattos[COLOR_REVERT], gives a 10% increase to learning by doing, and adds one emigrant to the dock in Europe.</English>
+	</TEXT>
 </Civ4GameText>

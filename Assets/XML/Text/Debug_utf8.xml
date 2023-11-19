@@ -1,36 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_DEBUG_DESYNC_LOG_BUTTON</Tag>
-        <English>Generate OOS debug log</English>
-        <Russian>Создать журнал отладки Рассинхронизации</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_DEBUG_DESYNC_LOG_COMPLETE</Tag>
-        <English>Done generating files:In mod dir:[NEWLINE]    Desync log for player %d1.txt[NEWLINE]    Desync save for player %d2.ColonizationSave[NEWLINE]In documents\my games\colonization\logs:[NEWLINE]    Random Player %d3.log[NEWLINE][NEWLINE]Please collect those files from all players, put them in a single zip file and submit them as an OOS bug report. Add the autosave from the previous turn if possible.</English>
-        <Russian>Создание файлов завершено:В каталоге мода:[NEWLINE]    Журнал рассинхронизации для player %d1.txt[NEWLINE]    Сохранение рассинхронизации для игрока %d2.ColonizationSave[NEWLINE]В documents\my games\colonization\logs:[NEWLINE]    Random Player %d3 .log[NEWLINE][NEWLINE]Соберите эти файлы у всех игроков, поместите их в один zip-файл и отправьте в виде отчета об ошибке Рассинхронизации. Если возможно, добавьте автосохранение из предыдущего хода.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_DEBUG_OOS_MENU</Tag>
-        <English>OOS testing menu[NEWLINE][NEWLINE]Here data can be send to all computers on the network to detect if all computers will react the same way.</English>
-        <Russian>Меню тестирования Рассинхронизации[NEWLINE][NEWLINE]Здесь можно отправить данные на все компьютеры в сети, чтобы определить, будут ли все компьютеры реагировать одинаково.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE</Tag>
-        <English>Negative cargo stored error</English>
-        <Russian>Ошибка хранения отрицательного груза</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_DESC</Tag>
-        <English>Colony is storing negative amount of cargo.[NEWLINE]Please make a bug report and provide a savegame from just before this happened.[NEWLINE]Be aware that the autosave from this turn might be from after this happened if it happened just as the turn started.</English>
-        <Russian>В колонии хранится отрицательное количество груза.[NEWLINE]Сообщите об ошибке и предоставьте сохраненную игру, сделанную незадолго до того, как это произошло.[NEWLINE]Имейте в виду, что автосохранение этого хода может произойти после того, как это случилось, если ошибка возникла в момент начала хода.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE</Tag>
-        <English>%s1
+	<TEXT>
+		<Tag>TXT_KEY_DEBUG_DESYNC_LOG_BUTTON</Tag>
+		<English>Generate OOS debug log</English>
+		<Russian>Создать журнал отладки Рассинхронизации</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DEBUG_DESYNC_LOG_COMPLETE</Tag>
+		<English>Done generating files:In mod dir:[NEWLINE]	Desync log for player %d1.txt[NEWLINE]	Desync save for player %d2.ColonizationSave[NEWLINE]In documents\my games\colonization\logs:[NEWLINE]	Random Player %d3.log[NEWLINE][NEWLINE]Please collect those files from all players, put them in a single zip file and submit them as an OOS bug report. Add the autosave from the previous turn if possible.</English>
+		<Russian>Создание файлов завершено:В каталоге мода:[NEWLINE]	Журнал рассинхронизации для player %d1.txt[NEWLINE]	Сохранение рассинхронизации для игрока %d2.ColonizationSave[NEWLINE]В documents\my games\colonization\logs:[NEWLINE]	Random Player %d3 .log[NEWLINE][NEWLINE]Соберите эти файлы у всех игроков, поместите их в один zip-файл и отправьте в виде отчета об ошибке Рассинхронизации. Если возможно, добавьте автосохранение из предыдущего хода.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DEBUG_OOS_MENU</Tag>
+		<English>OOS testing menu[NEWLINE][NEWLINE]Here data can be send to all computers on the network to detect if all computers will react the same way.</English>
+		<Russian>Меню тестирования Рассинхронизации[NEWLINE][NEWLINE]Здесь можно отправить данные на все компьютеры в сети, чтобы определить, будут ли все компьютеры реагировать одинаково.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE</Tag>
+		<English>Negative cargo stored error</English>
+		<Russian>Ошибка хранения отрицательного груза</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_DESC</Tag>
+		<English>Colony is storing negative amount of cargo.[NEWLINE]Please make a bug report and provide a savegame from just before this happened.[NEWLINE]Be aware that the autosave from this turn might be from after this happened if it happened just as the turn started.</English>
+		<Russian>В колонии хранится отрицательное количество груза.[NEWLINE]Сообщите об ошибке и предоставьте сохраненную игру, сделанную незадолго до того, как это произошло.[NEWLINE]Имейте в виду, что автосохранение этого хода может произойти после того, как это случилось, если ошибка возникла в момент начала хода.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE</Tag>
+		<English>%s1
 Tag: %s2
 Read: %d3
 Excepted non-negative number</English>
-    </TEXT>
+	</TEXT>
 </Civ4GameText>

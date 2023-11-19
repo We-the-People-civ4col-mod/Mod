@@ -1,371 +1,371 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_ADVISOR_HELP</Tag>
-        <English>Sid's Tips</English>
-        <French>Aide du conseiller</French>
-        <German>Beraterhilfe</German>
-        <Italian>Aiuto del consigliere</Italian>
-        <Spanish>Ayuda de consejeros</Spanish>
-        <Russian>Советы Сида</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_ADVISOR_HELP_HELP</Tag>
-        <English>Sid provides extra help for the player's research and build choices</English>
-        <French>Le conseiller apparaît pour aider le joueur quand il a achevé une recherche ou construit un bâtiment.</French>
-        <German>Der Berater wird eingeblendet, um dem Spieler zusätzliche Hilfestellung bei der Auswahl eines Forschungs- oder Bauprojekts zu geben</German>
-        <Italian>Quando dovrai scegliere una costruzione o una ricerca, il consigliere apparirà per offrirti aiuto extra</Italian>
-        <Spanish>Sid proporciona ayuda al jugador en relación a la investigación y las opciones de construcción.</Spanish>
-        <Russian>Дедушка Сид Мейер оказывает дополнительную помощь игроку в исследованиях и выборе построек</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_ADVISOR_POPUPS</Tag>
-        <English>Advisor Pop-Ups</English>
-        <French>Info-bulle du conseiller</French>
-        <German>Berater-Popups</German>
-        <Italian>Avvisi dei consiglieri</Italian>
-        <Spanish>Ventanas de consejeros</Spanish>
-        <Russian>Всплывающее окно советника</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_ADVISOR_POPUPS_HELP</Tag>
-        <English>The advisor occasionally interrupts play to suggest a new build choice in a settlement</English>
-        <French>Le conseiller interrompt parfois la partie pour suggérer une nouvelle construction dans la colonie.</French>
-        <German>Der Berater unterbricht gelegentlich das Spiel, um ein neues Bauprojekt in einer Siedlung vorzuschlagen</German>
-        <Italian>Il consigliere interromperà saltuariamente il gioco per suggerirti una costruzione da realizzare in un insediamento</Italian>
-        <Spanish>El consejero interrumpe de vez en cuando para sugerir algo nuevo que construir en un asentamiento.</Spanish>
-        <Russian>Советник иногда прерывает игру, чтобы предложить новый вариант строительства в поселении</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_AUTO_PROMOTION</Tag>
-        <English>Units Auto-Promote</English>
-        <French>Auto-promotion des unités</French>
-        <German>Auto-Einheitenbeförderung</German>
-        <Italian>Promozione automatica unità</Italian>
-        <Spanish>Ascenso automático de unidades</Spanish>
-        <Russian>Автоматическое повышение юнитов</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_AUTO_PROMOTION_HELP</Tag>
-        <English>The player's units are automatically promoted (if possible) at the beginning of each turn</English>
-        <French>Les unités du joueur sont automatiquement promues (si possible) au début de chaque tour.</French>
-        <German>Die eigenen Einheiten werden zu Beginn jeder Runde automatisch befördert (sofern möglich)</German>
-        <Italian>All'inizio di ogni turno le unità del giocatore vengono automaticamente promosse (dove possibile)</Italian>
-        <Spanish>Las unidades del jugador ascienden automáticamente (a ser posible) al principio de cada turno.</Spanish>
-        <Russian>Отряды игрока сами выбирают повышения (если получили достаточно опыта) в начале хода</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_LEAVE_FORESTS</Tag>
-        <English>Automated Pioneers Leave Forests</English>
-        <French>Les pionniers automatisés délaissent les forêts.</French>
-        <German>Automatisierte Pioniere verlassen Wälder</German>
-        <Italian>Pionieri autom. risparmiano le foreste</Italian>
-        <Spanish>Los Pioneros automatizados dejan los bosques</Spanish>
-        <Russian>Автоматизированные Первопроходцы не вырубают леса</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_LEAVE_FORESTS_HELP</Tag>
-        <English>Automated Pioneers will not chop down forests</English>
-        <French>Les pionniers automatisés n'abattent pas d'arbres.</French>
-        <German>Automatisierte Pioniere holzen keine Wälder ab</German>
-        <Italian>I pionieri automatizzati risparmiano le foreste</Italian>
-        <Spanish>Los Pioneros automatizados no talarán los bosques</Spanish>
-        <Russian>Любые - лиственные, сосновые, а также джунгли и т.д.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_MINIMIZE_POP_UPS</Tag>
-        <English>Minimize Pop-Ups</English>
-        <French>Réduire info-bulles</French>
-        <German>Popups minimieren</German>
-        <Italian>Minimizza i menu a comparsa</Italian>
-        <Spanish>Minimizar ventanas emergentes</Spanish>
-        <Russian>Свернуть всплывающие окна</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_MINIMIZE_POP_UPS_HELP</Tag>
-        <English>Popups are minimized until the player has moved all units</English>
-        <French>Les fenêtres sont minimisées tant que le joueur n'a pas déplacé toutes ses unités.</French>
-        <German>Popups werden verkleinert dargestellt, bis der Spieler alle Einheiten fortbewegt hat</German>
-        <Italian>I menu a comparsa vengono ridotti al minimo finché il giocatore non ha mosso tutte le sue unità</Italian>
-        <Spanish>Los elementos emergentes quedarán ocultos hasta que el jugador haya movido todas las unidades.</Spanish>
-        <Russian>Всплывающие окна об окончании строительства в колониях не будут появляться в начале хода, а останутся свернуты до тех пор, пока игрок не переместит все юниты</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_MODDER_1</Tag>
-        <English>ModPlayerOption1</English>
-        <French>Mod Option du joueur 1</French>
-        <German>Mod-Spieleroption1</German>
-        <Italian>ModPlayerOption1</Italian>
-        <Spanish>ModPlayerOption1</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_MODDER_1_HELP</Tag>
-        <English>????</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_MODDER_2</Tag>
-        <English>ModPlayerOption2</English>
-        <French>Mod Option du joueur 2</French>
-        <German>Mod-Spieleroption2</German>
-        <Italian>ModPlayerOption2</Italian>
-        <Spanish>ModPlayerOption2</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_MODDER_2_HELP</Tag>
-        <English>Player Option for Modding use 2.</English>
-        <French>Option joueur pour le mod 2.</French>
-        <German>Mod-Spieleroption 2.</German>
-        <Italian>Opzioni giocatore modding 2.</Italian>
-        <Spanish>Opción del jugador para uso "modding" 2.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_MODDER_3</Tag>
-        <English>ModPlayerOption3</English>
-        <French>Mod Option du joueur 3</French>
-        <German>Mod-Spieleroption3</German>
-        <Italian>ModPlayerOption3</Italian>
-        <Spanish>ModPlayerOption3</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_MODDER_3_HELP</Tag>
-        <English>Player Option for Modding use 3.</English>
-        <French>Option joueur pour le mod 3.</French>
-        <German>Mod-Spieleroption 3.</German>
-        <Italian>Opzioni giocatore modding 3.</Italian>
-        <Spanish>Opción del jugador para uso "modding" 3.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_NO_UNIT_CYCLING</Tag>
-        <English>No Unit Cycling</English>
-        <French>Impossible de faire défiler les unités</French>
-        <German>Kein Einheitendurchlauf</German>
-        <Italian>Nessuno scorrimento delle unità</Italian>
-        <Spanish>Sin alternar unidades</Spanish>
-        <Russian>Нет зацикливания юнитов</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_NO_UNIT_CYCLING_HELP</Tag>
-        <English>No automatic cycling between units</English>
-        <French>Pas de cycle automatique entre les unités.</French>
-        <German>Kein automatischer Einheitendurchlauf</German>
-        <Italian>Disattiva lo scorrimento automatico tra le unità</Italian>
-        <Spanish>Las unidades no se alternan automáticamente.</Spanish>
-        <Russian>Нет автоматического переключения между юнитами игрока</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_NO_UNIT_RECOMMENDATIONS</Tag>
-        <English>No Unit Action Recommendations</English>
-        <French>Sans recommandation d'unité</French>
-        <German>Keine Einheitenempfehlungen</German>
-        <Italian>Nessuna raccomandazione delle unità</Italian>
-        <Spanish>Sin recomendaciones de unidades</Spanish>
-        <Russian>Нет рекомендаций по действиям юнитов</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_NO_UNIT_RECOMMENDATIONS_HELP</Tag>
-        <English>No unit action or movement recommendations</English>
-        <French>Pas d'action ou de manoeuvre recommandée pour les unités.</French>
-        <German>Keine Empfehlungen für Einheitenfortbewegung oder -aktionen</German>
-        <Italian>Disattiva i consigli sulle azioni e sui movimenti delle unità</Italian>
-        <Spanish>No se dan recomendaciones para las acciones y el movimiento de las unidades.</Spanish>
-        <Russian>Нет рекомендаций по действиям или перемещениям юнитов</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_NUMPAD_HELP</Tag>
-        <English>Numpad Help</English>
-        <French>Aide pavé numérique</French>
-        <German>Ziffernblock-Hilfe</German>
-        <Italian>Aiuto del tastierino numerico</Italian>
-        <Spanish>Ayuda del teclado numérico</Spanish>
-        <Russian>Помощь по Numpad</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_NUMPAD_HELP_HELP</Tag>
-        <English>Show NUM-PAD help for unit movement</English>
-        <French>Voir l'aide du pavé numérique pour le déplacement des unités.</French>
-        <German>Ziffernblock-Hilfe für Fortbewegung der Einheiten einblenden</German>
-        <Italian>Mostra l'aiuto TAST-NUM per il movimento delle unità</Italian>
-        <Spanish>Muestra la ayuda del teclado numérico para el movimiento de las unidades.</Spanish>
-        <Russian>Показать справку NUM-PAD для перемещения юнитов</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_QUICK_ATTACK</Tag>
-        <English>Quick Combat (Offense)</English>
-        <French>Combat rapide (Attaque)</French>
-        <German>Kampf nicht animieren (Offensive)</German>
-        <Italian>Combattimento rapido (Offensivo)</Italian>
-        <Spanish>Combate rápido (ataque)</Spanish>
-        <Russian>Быстрая битва (нападение)</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_QUICK_ATTACK_HELP</Tag>
-        <English>The player's combats are accelerated (when on offense)</English>
-        <French>Les combats du joueur sont accélérés (en position offensive).</French>
-        <German>Alle eigenen Gefechte werden beschleunigt (nur in der Offensive)</German>
-        <Italian>I combattimenti del giocatore vengono velocizzati (in attacco)</Italian>
-        <Spanish>Los combates del jugador se aceleran (cuando ataca).</Spanish>
-        <Russian>Бои игрока ускорены (при нападении)</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_QUICK_DEFENSE</Tag>
-        <English>Quick Combat (Defense)</English>
-        <French>Combat rapide (Défense)</French>
-        <German>Kampf nicht animieren (Defensive)</German>
-        <Italian>Combattimento rapido (Difensivo)</Italian>
-        <Spanish>Combate rápido (defensa)</Spanish>
-        <Russian>Быстрая битва (оборона)</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_QUICK_DEFENSE_HELP</Tag>
-        <English>The player's combats are accelerated (when on defense)</English>
-        <French>Les combats du joueur sont accélérés (en position défensive).</French>
-        <German>Alle eigenen Gefechte werden beschleunigt (nur in der Defensive)</German>
-        <Italian>I combattimenti del giocatore vengono velocizzati (in difesa)</Italian>
-        <Spanish>Los combates del jugador se aceleran (cuando defiende).</Spanish>
-        <Russian>Бои игрока ускорены (во время обороны)</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_QUICK_MOVES</Tag>
-        <English>Quick Moves</English>
-        <French>Mouvements rapides</French>
-        <German>Schnelle Bewegungen</German>
-        <Italian>Movimenti rapidi</Italian>
-        <Spanish>Movimientos rápidos</Spanish>
-        <Russian>Быстрые перемещения</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_QUICK_MOVES_HELP</Tag>
-        <English>All of the player's moves are accelerated</English>
-        <French>Tous les mouvements du joueur sont accélérés.</French>
-        <German>Alle eigenen Spielzüge werden beschleunigt</German>
-        <Italian>Tutti i movimenti del giocatore vengono velocizzati</Italian>
-        <Spanish>Todos los movimientos del jugador se aceleran.</Spanish>
-        <Russian>Все перемещения юнитов игрока ускорены</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_RIGHT_CLICK_MENU</Tag>
-        <English>Right-Click Menu</English>
-        <French>Menu clic droit</French>
-        <German>Kontextmenü</German>
-        <Italian>Richiama il menu con il tasto destro del mouse</Italian>
-        <Spanish>Menú de clic derecho</Spanish>
-        <Russian>Меню правой кнопки мыши</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_RIGHT_CLICK_MENU_HELP</Tag>
-        <English>Context menu via RIGHT-CLICK (normally available with [SHIFT + LEFT-CLICK])</English>
-        <French>Menu contextuel avec un CLIC DROIT (normalement accessible par [MAJ + CLIC GAUCHE]).</French>
-        <German>Kontextmenü per RECHTSKLICK öffnen (normalerweise mit [UMSCHALTEN + LINKSKLICK] verfügbar)</German>
-        <Italian>Menu contestuale tramite PULSANTE DESTRO (normalmente utilizzabile con [MAIUSC + PULSANTE SINISTRO])</Italian>
-        <Spanish>El menú contextual se activa haciendo CLIC DERECHO (normalmente es con [MAYÚS + CLIC IZQUIERDO])</Spanish>
-        <Russian>Контекстное меню с помощью ПРАВОГО ЩЕЛЧКА (обычно доступно с [SHIFT + ЛЕВЫЙ ЩЕЛЧОК])</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_SAFE_AUTOMATION</Tag>
-        <English>Automated Pioneers Leave Old Improvements</English>
-        <French>Les pionniers automatisés délaissent les anciennes améliorations.</French>
-        <German>Automat. Pioniere lassen alte Modernis. unverändert</German>
-        <Italian>Pionieri autom. lasciano miglioram. preced.</Italian>
-        <Spanish>Los Pioneros automatizados dejan las mejoras antiguas</Spanish>
-        <Russian>Автоматизированные Первопроходцы не трогают улучшения</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_SAFE_AUTOMATION_HELP</Tag>
-        <English>Automated Pioneers will not change previously built improvements</English>
-        <French>Les pionniers automatisés ne modifient pas les améliorations précédentes.</French>
-        <German>Automatisierte Pioniere verändern keine zuvor errichteten Modernisierungen</German>
-        <Italian>I pionieri automatizzati ignora vecchi miglioramenti</Italian>
-        <Spanish>Los Pioneros automatizados no cambiarán las mejoras construidas previamente</Spanish>
-        <Russian>Автоматизированные Первопроходцы не будут менять ранее построенные улучшения</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_SHOW_ENEMY_MOVES</Tag>
-        <English>Show Enemy Moves</English>
-        <French>Afficher mouvements ennemis</French>
-        <German>Bewegungen feindlicher Einheiten zeigen</German>
-        <Italian>Mostra i movimenti delle unità nemiche</Italian>
-        <Spanish>Mostrar movimientos de enemigos</Spanish>
-        <Russian>Показать перемещения противников</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_SHOW_ENEMY_MOVES_HELP</Tag>
-        <English>Show the moves of enemy units between turns</English>
-        <French>Voir les déplacements des unités ennemies entre deux tours.</French>
-        <German>Fortbewegung feindlicher Einheiten zwischen den Runden anzeigen</German>
-        <Italian>Mostra i movimenti delle unità nemiche tra un turno e l'altro</Italian>
-        <Spanish>Muestra los movimientos de las unidades enemigas entre turno y turno.</Spanish>
-        <Russian>Отображение движений вражеских юнитов между ходами игрока</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_SHOW_FRIENDLY_MOVES</Tag>
-        <English>Show Friendly Moves</English>
-        <French>Afficher mouvements alliés</French>
-        <German>Bewegungen nicht-feindlicher Einheiten zeigen</German>
-        <Italian>Mostra i movimenti delle unità amiche</Italian>
-        <Spanish>Mostrar movimientos de amigos</Spanish>
-        <Russian>Показать перемещения союзников</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_SHOW_FRIENDLY_MOVES_HELP</Tag>
-        <English>Show the moves of friendly units between turns</English>
-        <French>Voir les déplacements des unités alliées entre deux tours.</French>
-        <German>Fortbewegung freundlicher Einheiten zwischen den Runden anzeigen</German>
-        <Italian>Mostra i movimenti delle unità amichevoli tra un turno e l'altro</Italian>
-        <Spanish>Muestra los movimientos de las unidades amistosas entre turno y turno.</Spanish>
-        <Russian>Показывать движения дружественных юнитов между ходами игрока</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_STACK_ATTACK</Tag>
-        <English>Stack Attack</English>
-        <French>Attaque d'unités empilées</French>
-        <German>Stapelangriff</German>
-        <Italian>Attacco di massa</Italian>
-        <Spanish>Ataque conjunto</Spanish>
-        <Russian>Массовая атака</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_STACK_ATTACK_HELP</Tag>
-        <English>All selected units will attack in rapid succession (note: this is purely an interface convenience - the underlying battle mechanics are unchanged)</English>
-        <French>Toutes les unités sélectionnées attaqueront en succession rapide (remarque : c'est uniquement pour le confort de l'interface, les mécanismes des combats restent inchangés).</French>
-        <German>Alle gewählten Einheiten greifen in schneller Folge nacheinander an (Hinweis: Diese Einstellung bezieht sich ausschließlich auf die Darstellung auf der Karte - die zugrunde liegenden Kampfeinstellungen bleiben unverändert)</German>
-        <Italian>Tutte le unità selezionate attaccheranno in rapida successione (nota: è solo una comodità in termini di interfaccia, la meccanica di gioco resta invariata)</Italian>
-        <Spanish>Todas las unidades seleccionadas atacarán en rápida sucesión (nota: esto se hace solamente a conveniencia de la interfaz, no tiene efecto alguno en la mecánica de combate subyacente).</Spanish>
-        <Russian>Все выбранные юниты будут атаковать в быстрой последовательности (примечание: это просто удобство отображения — основная механика боя не изменится)</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_TUTORIAL</Tag>
-        <English>Tutorial</English>
-        <French>Didacticiel</French>
-        <German>Tutorial</German>
-        <Italian>Tutorial</Italian>
-        <Spanish>Tutorial</Spanish>
-        <Russian>Руководство по игре (не функционирует!)</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_TUTORIAL_HELP</Tag>
-        <English>Enable the tips and quests that help teach you the basics of Colonization</English>
-        <French>Active les conseils et les quêtes d'apprentissage des bases de Colonization.</French>
-        <German>Tipps und Quests aktivieren, um mehr über die Grundlagen von Colonization zu erfahren</German>
-        <Italian>Attiva i consigli e le imprese che servono a insegnarti le basi di Colonization</Italian>
-        <Spanish>Activa las pistas y consejos que ayudan a entender los fundamentos de Colonization.</Spanish>
-        <Russian>Включите подсказки и советы, которые научат вас основам колонизации</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_WAIT_END_TURN</Tag>
-        <English>Wait at End of Turn</English>
-        <French>Attendre en fin de tour</French>
-        <German>Am Ende einer Runde warten</German>
-        <Italian>In attesa della fine del turno</Italian>
-        <Spanish>Esperar al final del turno</Spanish>
-        <Russian>Ждать нажатия Конец хода</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_PLAYEROPTION_WAIT_END_TURN_HELP</Tag>
-        <English>The game will not progress until the player specifies that the turn should end</English>
-        <French>Le jeu n'avance pas tant que le joueur n'indique pas qu'il a terminé son tour.</French>
-        <German>Das Spiel wird erst nach Beendigung der Runde durch den Spieler fortgesetzt</German>
-        <Italian>Il gioco non proseguirà finché il giocatore non specifica che intende passare il turno</Italian>
-        <Spanish>La partida no avanzará hasta que el jugador especifique que el turno debe finalizar.</Spanish>
-        <Russian>Ход игрока не будет завершен до тех пор, пока не будет нажата кнопка "Конец хода"</Russian>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_ADVISOR_HELP</Tag>
+		<English>Sid's Tips</English>
+		<French>Aide du conseiller</French>
+		<German>Beraterhilfe</German>
+		<Italian>Aiuto del consigliere</Italian>
+		<Spanish>Ayuda de consejeros</Spanish>
+		<Russian>Советы Сида</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_ADVISOR_HELP_HELP</Tag>
+		<English>Sid provides extra help for the player's research and build choices</English>
+		<French>Le conseiller apparaît pour aider le joueur quand il a achevé une recherche ou construit un bâtiment.</French>
+		<German>Der Berater wird eingeblendet, um dem Spieler zusätzliche Hilfestellung bei der Auswahl eines Forschungs- oder Bauprojekts zu geben</German>
+		<Italian>Quando dovrai scegliere una costruzione o una ricerca, il consigliere apparirà per offrirti aiuto extra</Italian>
+		<Spanish>Sid proporciona ayuda al jugador en relación a la investigación y las opciones de construcción.</Spanish>
+		<Russian>Дедушка Сид Мейер оказывает дополнительную помощь игроку в исследованиях и выборе построек</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_ADVISOR_POPUPS</Tag>
+		<English>Advisor Pop-Ups</English>
+		<French>Info-bulle du conseiller</French>
+		<German>Berater-Popups</German>
+		<Italian>Avvisi dei consiglieri</Italian>
+		<Spanish>Ventanas de consejeros</Spanish>
+		<Russian>Всплывающее окно советника</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_ADVISOR_POPUPS_HELP</Tag>
+		<English>The advisor occasionally interrupts play to suggest a new build choice in a settlement</English>
+		<French>Le conseiller interrompt parfois la partie pour suggérer une nouvelle construction dans la colonie.</French>
+		<German>Der Berater unterbricht gelegentlich das Spiel, um ein neues Bauprojekt in einer Siedlung vorzuschlagen</German>
+		<Italian>Il consigliere interromperà saltuariamente il gioco per suggerirti una costruzione da realizzare in un insediamento</Italian>
+		<Spanish>El consejero interrumpe de vez en cuando para sugerir algo nuevo que construir en un asentamiento.</Spanish>
+		<Russian>Советник иногда прерывает игру, чтобы предложить новый вариант строительства в поселении</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_AUTO_PROMOTION</Tag>
+		<English>Units Auto-Promote</English>
+		<French>Auto-promotion des unités</French>
+		<German>Auto-Einheitenbeförderung</German>
+		<Italian>Promozione automatica unità</Italian>
+		<Spanish>Ascenso automático de unidades</Spanish>
+		<Russian>Автоматическое повышение юнитов</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_AUTO_PROMOTION_HELP</Tag>
+		<English>The player's units are automatically promoted (if possible) at the beginning of each turn</English>
+		<French>Les unités du joueur sont automatiquement promues (si possible) au début de chaque tour.</French>
+		<German>Die eigenen Einheiten werden zu Beginn jeder Runde automatisch befördert (sofern möglich)</German>
+		<Italian>All'inizio di ogni turno le unità del giocatore vengono automaticamente promosse (dove possibile)</Italian>
+		<Spanish>Las unidades del jugador ascienden automáticamente (a ser posible) al principio de cada turno.</Spanish>
+		<Russian>Отряды игрока сами выбирают повышения (если получили достаточно опыта) в начале хода</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_LEAVE_FORESTS</Tag>
+		<English>Automated Pioneers Leave Forests</English>
+		<French>Les pionniers automatisés délaissent les forêts.</French>
+		<German>Automatisierte Pioniere verlassen Wälder</German>
+		<Italian>Pionieri autom. risparmiano le foreste</Italian>
+		<Spanish>Los Pioneros automatizados dejan los bosques</Spanish>
+		<Russian>Автоматизированные Первопроходцы не вырубают леса</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_LEAVE_FORESTS_HELP</Tag>
+		<English>Automated Pioneers will not chop down forests</English>
+		<French>Les pionniers automatisés n'abattent pas d'arbres.</French>
+		<German>Automatisierte Pioniere holzen keine Wälder ab</German>
+		<Italian>I pionieri automatizzati risparmiano le foreste</Italian>
+		<Spanish>Los Pioneros automatizados no talarán los bosques</Spanish>
+		<Russian>Любые - лиственные, сосновые, а также джунгли и т.д.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_MINIMIZE_POP_UPS</Tag>
+		<English>Minimize Pop-Ups</English>
+		<French>Réduire info-bulles</French>
+		<German>Popups minimieren</German>
+		<Italian>Minimizza i menu a comparsa</Italian>
+		<Spanish>Minimizar ventanas emergentes</Spanish>
+		<Russian>Свернуть всплывающие окна</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_MINIMIZE_POP_UPS_HELP</Tag>
+		<English>Popups are minimized until the player has moved all units</English>
+		<French>Les fenêtres sont minimisées tant que le joueur n'a pas déplacé toutes ses unités.</French>
+		<German>Popups werden verkleinert dargestellt, bis der Spieler alle Einheiten fortbewegt hat</German>
+		<Italian>I menu a comparsa vengono ridotti al minimo finché il giocatore non ha mosso tutte le sue unità</Italian>
+		<Spanish>Los elementos emergentes quedarán ocultos hasta que el jugador haya movido todas las unidades.</Spanish>
+		<Russian>Всплывающие окна об окончании строительства в колониях не будут появляться в начале хода, а останутся свернуты до тех пор, пока игрок не переместит все юниты</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_MODDER_1</Tag>
+		<English>ModPlayerOption1</English>
+		<French>Mod Option du joueur 1</French>
+		<German>Mod-Spieleroption1</German>
+		<Italian>ModPlayerOption1</Italian>
+		<Spanish>ModPlayerOption1</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_MODDER_1_HELP</Tag>
+		<English>????</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_MODDER_2</Tag>
+		<English>ModPlayerOption2</English>
+		<French>Mod Option du joueur 2</French>
+		<German>Mod-Spieleroption2</German>
+		<Italian>ModPlayerOption2</Italian>
+		<Spanish>ModPlayerOption2</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_MODDER_2_HELP</Tag>
+		<English>Player Option for Modding use 2.</English>
+		<French>Option joueur pour le mod 2.</French>
+		<German>Mod-Spieleroption 2.</German>
+		<Italian>Opzioni giocatore modding 2.</Italian>
+		<Spanish>Opción del jugador para uso "modding" 2.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_MODDER_3</Tag>
+		<English>ModPlayerOption3</English>
+		<French>Mod Option du joueur 3</French>
+		<German>Mod-Spieleroption3</German>
+		<Italian>ModPlayerOption3</Italian>
+		<Spanish>ModPlayerOption3</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_MODDER_3_HELP</Tag>
+		<English>Player Option for Modding use 3.</English>
+		<French>Option joueur pour le mod 3.</French>
+		<German>Mod-Spieleroption 3.</German>
+		<Italian>Opzioni giocatore modding 3.</Italian>
+		<Spanish>Opción del jugador para uso "modding" 3.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_NO_UNIT_CYCLING</Tag>
+		<English>No Unit Cycling</English>
+		<French>Impossible de faire défiler les unités</French>
+		<German>Kein Einheitendurchlauf</German>
+		<Italian>Nessuno scorrimento delle unità</Italian>
+		<Spanish>Sin alternar unidades</Spanish>
+		<Russian>Нет зацикливания юнитов</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_NO_UNIT_CYCLING_HELP</Tag>
+		<English>No automatic cycling between units</English>
+		<French>Pas de cycle automatique entre les unités.</French>
+		<German>Kein automatischer Einheitendurchlauf</German>
+		<Italian>Disattiva lo scorrimento automatico tra le unità</Italian>
+		<Spanish>Las unidades no se alternan automáticamente.</Spanish>
+		<Russian>Нет автоматического переключения между юнитами игрока</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_NO_UNIT_RECOMMENDATIONS</Tag>
+		<English>No Unit Action Recommendations</English>
+		<French>Sans recommandation d'unité</French>
+		<German>Keine Einheitenempfehlungen</German>
+		<Italian>Nessuna raccomandazione delle unità</Italian>
+		<Spanish>Sin recomendaciones de unidades</Spanish>
+		<Russian>Нет рекомендаций по действиям юнитов</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_NO_UNIT_RECOMMENDATIONS_HELP</Tag>
+		<English>No unit action or movement recommendations</English>
+		<French>Pas d'action ou de manoeuvre recommandée pour les unités.</French>
+		<German>Keine Empfehlungen für Einheitenfortbewegung oder -aktionen</German>
+		<Italian>Disattiva i consigli sulle azioni e sui movimenti delle unità</Italian>
+		<Spanish>No se dan recomendaciones para las acciones y el movimiento de las unidades.</Spanish>
+		<Russian>Нет рекомендаций по действиям или перемещениям юнитов</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_NUMPAD_HELP</Tag>
+		<English>Numpad Help</English>
+		<French>Aide pavé numérique</French>
+		<German>Ziffernblock-Hilfe</German>
+		<Italian>Aiuto del tastierino numerico</Italian>
+		<Spanish>Ayuda del teclado numérico</Spanish>
+		<Russian>Помощь по Numpad</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_NUMPAD_HELP_HELP</Tag>
+		<English>Show NUM-PAD help for unit movement</English>
+		<French>Voir l'aide du pavé numérique pour le déplacement des unités.</French>
+		<German>Ziffernblock-Hilfe für Fortbewegung der Einheiten einblenden</German>
+		<Italian>Mostra l'aiuto TAST-NUM per il movimento delle unità</Italian>
+		<Spanish>Muestra la ayuda del teclado numérico para el movimiento de las unidades.</Spanish>
+		<Russian>Показать справку NUM-PAD для перемещения юнитов</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_QUICK_ATTACK</Tag>
+		<English>Quick Combat (Offense)</English>
+		<French>Combat rapide (Attaque)</French>
+		<German>Kampf nicht animieren (Offensive)</German>
+		<Italian>Combattimento rapido (Offensivo)</Italian>
+		<Spanish>Combate rápido (ataque)</Spanish>
+		<Russian>Быстрая битва (нападение)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_QUICK_ATTACK_HELP</Tag>
+		<English>The player's combats are accelerated (when on offense)</English>
+		<French>Les combats du joueur sont accélérés (en position offensive).</French>
+		<German>Alle eigenen Gefechte werden beschleunigt (nur in der Offensive)</German>
+		<Italian>I combattimenti del giocatore vengono velocizzati (in attacco)</Italian>
+		<Spanish>Los combates del jugador se aceleran (cuando ataca).</Spanish>
+		<Russian>Бои игрока ускорены (при нападении)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_QUICK_DEFENSE</Tag>
+		<English>Quick Combat (Defense)</English>
+		<French>Combat rapide (Défense)</French>
+		<German>Kampf nicht animieren (Defensive)</German>
+		<Italian>Combattimento rapido (Difensivo)</Italian>
+		<Spanish>Combate rápido (defensa)</Spanish>
+		<Russian>Быстрая битва (оборона)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_QUICK_DEFENSE_HELP</Tag>
+		<English>The player's combats are accelerated (when on defense)</English>
+		<French>Les combats du joueur sont accélérés (en position défensive).</French>
+		<German>Alle eigenen Gefechte werden beschleunigt (nur in der Defensive)</German>
+		<Italian>I combattimenti del giocatore vengono velocizzati (in difesa)</Italian>
+		<Spanish>Los combates del jugador se aceleran (cuando defiende).</Spanish>
+		<Russian>Бои игрока ускорены (во время обороны)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_QUICK_MOVES</Tag>
+		<English>Quick Moves</English>
+		<French>Mouvements rapides</French>
+		<German>Schnelle Bewegungen</German>
+		<Italian>Movimenti rapidi</Italian>
+		<Spanish>Movimientos rápidos</Spanish>
+		<Russian>Быстрые перемещения</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_QUICK_MOVES_HELP</Tag>
+		<English>All of the player's moves are accelerated</English>
+		<French>Tous les mouvements du joueur sont accélérés.</French>
+		<German>Alle eigenen Spielzüge werden beschleunigt</German>
+		<Italian>Tutti i movimenti del giocatore vengono velocizzati</Italian>
+		<Spanish>Todos los movimientos del jugador se aceleran.</Spanish>
+		<Russian>Все перемещения юнитов игрока ускорены</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_RIGHT_CLICK_MENU</Tag>
+		<English>Right-Click Menu</English>
+		<French>Menu clic droit</French>
+		<German>Kontextmenü</German>
+		<Italian>Richiama il menu con il tasto destro del mouse</Italian>
+		<Spanish>Menú de clic derecho</Spanish>
+		<Russian>Меню правой кнопки мыши</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_RIGHT_CLICK_MENU_HELP</Tag>
+		<English>Context menu via RIGHT-CLICK (normally available with [SHIFT + LEFT-CLICK])</English>
+		<French>Menu contextuel avec un CLIC DROIT (normalement accessible par [MAJ + CLIC GAUCHE]).</French>
+		<German>Kontextmenü per RECHTSKLICK öffnen (normalerweise mit [UMSCHALTEN + LINKSKLICK] verfügbar)</German>
+		<Italian>Menu contestuale tramite PULSANTE DESTRO (normalmente utilizzabile con [MAIUSC + PULSANTE SINISTRO])</Italian>
+		<Spanish>El menú contextual se activa haciendo CLIC DERECHO (normalmente es con [MAYÚS + CLIC IZQUIERDO])</Spanish>
+		<Russian>Контекстное меню с помощью ПРАВОГО ЩЕЛЧКА (обычно доступно с [SHIFT + ЛЕВЫЙ ЩЕЛЧОК])</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_SAFE_AUTOMATION</Tag>
+		<English>Automated Pioneers Leave Old Improvements</English>
+		<French>Les pionniers automatisés délaissent les anciennes améliorations.</French>
+		<German>Automat. Pioniere lassen alte Modernis. unverändert</German>
+		<Italian>Pionieri autom. lasciano miglioram. preced.</Italian>
+		<Spanish>Los Pioneros automatizados dejan las mejoras antiguas</Spanish>
+		<Russian>Автоматизированные Первопроходцы не трогают улучшения</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_SAFE_AUTOMATION_HELP</Tag>
+		<English>Automated Pioneers will not change previously built improvements</English>
+		<French>Les pionniers automatisés ne modifient pas les améliorations précédentes.</French>
+		<German>Automatisierte Pioniere verändern keine zuvor errichteten Modernisierungen</German>
+		<Italian>I pionieri automatizzati ignora vecchi miglioramenti</Italian>
+		<Spanish>Los Pioneros automatizados no cambiarán las mejoras construidas previamente</Spanish>
+		<Russian>Автоматизированные Первопроходцы не будут менять ранее построенные улучшения</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_SHOW_ENEMY_MOVES</Tag>
+		<English>Show Enemy Moves</English>
+		<French>Afficher mouvements ennemis</French>
+		<German>Bewegungen feindlicher Einheiten zeigen</German>
+		<Italian>Mostra i movimenti delle unità nemiche</Italian>
+		<Spanish>Mostrar movimientos de enemigos</Spanish>
+		<Russian>Показать перемещения противников</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_SHOW_ENEMY_MOVES_HELP</Tag>
+		<English>Show the moves of enemy units between turns</English>
+		<French>Voir les déplacements des unités ennemies entre deux tours.</French>
+		<German>Fortbewegung feindlicher Einheiten zwischen den Runden anzeigen</German>
+		<Italian>Mostra i movimenti delle unità nemiche tra un turno e l'altro</Italian>
+		<Spanish>Muestra los movimientos de las unidades enemigas entre turno y turno.</Spanish>
+		<Russian>Отображение движений вражеских юнитов между ходами игрока</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_SHOW_FRIENDLY_MOVES</Tag>
+		<English>Show Friendly Moves</English>
+		<French>Afficher mouvements alliés</French>
+		<German>Bewegungen nicht-feindlicher Einheiten zeigen</German>
+		<Italian>Mostra i movimenti delle unità amiche</Italian>
+		<Spanish>Mostrar movimientos de amigos</Spanish>
+		<Russian>Показать перемещения союзников</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_SHOW_FRIENDLY_MOVES_HELP</Tag>
+		<English>Show the moves of friendly units between turns</English>
+		<French>Voir les déplacements des unités alliées entre deux tours.</French>
+		<German>Fortbewegung freundlicher Einheiten zwischen den Runden anzeigen</German>
+		<Italian>Mostra i movimenti delle unità amichevoli tra un turno e l'altro</Italian>
+		<Spanish>Muestra los movimientos de las unidades amistosas entre turno y turno.</Spanish>
+		<Russian>Показывать движения дружественных юнитов между ходами игрока</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_STACK_ATTACK</Tag>
+		<English>Stack Attack</English>
+		<French>Attaque d'unités empilées</French>
+		<German>Stapelangriff</German>
+		<Italian>Attacco di massa</Italian>
+		<Spanish>Ataque conjunto</Spanish>
+		<Russian>Массовая атака</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_STACK_ATTACK_HELP</Tag>
+		<English>All selected units will attack in rapid succession (note: this is purely an interface convenience - the underlying battle mechanics are unchanged)</English>
+		<French>Toutes les unités sélectionnées attaqueront en succession rapide (remarque : c'est uniquement pour le confort de l'interface, les mécanismes des combats restent inchangés).</French>
+		<German>Alle gewählten Einheiten greifen in schneller Folge nacheinander an (Hinweis: Diese Einstellung bezieht sich ausschließlich auf die Darstellung auf der Karte - die zugrunde liegenden Kampfeinstellungen bleiben unverändert)</German>
+		<Italian>Tutte le unità selezionate attaccheranno in rapida successione (nota: è solo una comodità in termini di interfaccia, la meccanica di gioco resta invariata)</Italian>
+		<Spanish>Todas las unidades seleccionadas atacarán en rápida sucesión (nota: esto se hace solamente a conveniencia de la interfaz, no tiene efecto alguno en la mecánica de combate subyacente).</Spanish>
+		<Russian>Все выбранные юниты будут атаковать в быстрой последовательности (примечание: это просто удобство отображения — основная механика боя не изменится)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_TUTORIAL</Tag>
+		<English>Tutorial</English>
+		<French>Didacticiel</French>
+		<German>Tutorial</German>
+		<Italian>Tutorial</Italian>
+		<Spanish>Tutorial</Spanish>
+		<Russian>Руководство по игре (не функционирует!)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_TUTORIAL_HELP</Tag>
+		<English>Enable the tips and quests that help teach you the basics of Colonization</English>
+		<French>Active les conseils et les quêtes d'apprentissage des bases de Colonization.</French>
+		<German>Tipps und Quests aktivieren, um mehr über die Grundlagen von Colonization zu erfahren</German>
+		<Italian>Attiva i consigli e le imprese che servono a insegnarti le basi di Colonization</Italian>
+		<Spanish>Activa las pistas y consejos que ayudan a entender los fundamentos de Colonization.</Spanish>
+		<Russian>Включите подсказки и советы, которые научат вас основам колонизации</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_WAIT_END_TURN</Tag>
+		<English>Wait at End of Turn</English>
+		<French>Attendre en fin de tour</French>
+		<German>Am Ende einer Runde warten</German>
+		<Italian>In attesa della fine del turno</Italian>
+		<Spanish>Esperar al final del turno</Spanish>
+		<Russian>Ждать нажатия Конец хода</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PLAYEROPTION_WAIT_END_TURN_HELP</Tag>
+		<English>The game will not progress until the player specifies that the turn should end</English>
+		<French>Le jeu n'avance pas tant que le joueur n'indique pas qu'il a terminé son tour.</French>
+		<German>Das Spiel wird erst nach Beendigung der Runde durch den Spieler fortgesetzt</German>
+		<Italian>Il gioco non proseguirà finché il giocatore non specifica che intende passare il turno</Italian>
+		<Spanish>La partida no avanzará hasta que el jugador especifique que el turno debe finalizar.</Spanish>
+		<Russian>Ход игрока не будет завершен до тех пор, пока не будет нажата кнопка "Конец хода"</Russian>
+	</TEXT>
 </Civ4GameText>
