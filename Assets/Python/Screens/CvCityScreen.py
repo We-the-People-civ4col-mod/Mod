@@ -26,6 +26,7 @@ NUM_HIDE_LEVELS = 5
 HIDE_TYPE_CITY = 0
 
 class BuildingData:
+    """This class calculates the position of the various buildin"""
 #this describes the positions of the various building on the city Screen
     BUILDING_DATA = [\
      [30, 18, 20, 12] #Bells
@@ -95,20 +96,23 @@ class CityScreenPosition:
     BOUNDARY_4_3 = 1.666
     BOUNDARY_16_9 = 2.1
 
-    def __new__(cls, *args, **kwargs):
-        screen_x_resolution, screen_y_resolution, = args
+    def __new__(cls, screen_x_resolution, screen_y_resolution, *args, **kwargs):
+
         ratio = float(screen_x_resolution)/float(screen_y_resolution)
         if ratio <= CityScreenPosition.BOUNDARY_4_3:
-            return CityScreenPosition_4_3(*args,**kwargs)
+            return CityScreenPosition_4_3(screen_x_resolution, screen_y_resolution, *args,**kwargs)
         elif CityScreenPosition.BOUNDARY_4_3 < ratio <= CityScreenPosition.BOUNDARY_16_9:
-            return CityScreenPosition_16_9(*args,**kwargs)
+            return CityScreenPosition_16_9(screen_x_resolution, screen_y_resolution, *args,**kwargs)
         else:
-            return CityScreenPosition_21_9(*args,**kwargs)
+            return CityScreenPosition_21_9(screen_x_resolution, screen_y_resolution, *args,**kwargs)
 
     def __init__(self, screen_x_resolution, screen_y_resolution):
 
         self.screen_x_resolution = screen_x_resolution
         self.screen_y_resolution = screen_y_resolution
+
+    def set_globals(self):
+        pass
 
 class CityScreenPosition_4_3(CityScreenPosition):
 
@@ -134,3 +138,6 @@ class CityScreen:
         """The role if this function is to return a new  instance of screen if the API does require a new object
         If it id well done, creating *one* should be enough"""
         return CyGInterfaceScreen(self.screen_name, self.screen_num)
+
+    def interfaceScreen(self):
+        pass

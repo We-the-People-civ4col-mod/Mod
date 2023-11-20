@@ -12,6 +12,7 @@ import CvAchieveAdvisor
 import CvTradeRoutesAdvisor
 # TAC - Trade Route Advisor - koma13 - END
 
+import CvCityScreen
 import CvRevolutionAdvisor
 import CvMilitaryAdvisor
 import CvEuropeScreen
@@ -71,6 +72,10 @@ def showMainInterface():
 
 def numPlotListButtons():
 	return mainInterface.numPlotListButtons()
+
+cityScreen = CvCityScreen.CityScreen()
+def showCityScreen():
+	return cityScreen.interfaceScreen()
 
 fatherScreen = CvFoundingFatherScreen.CvFoundingFatherScreen()
 def showFoundingFatherScreen(argsList):
@@ -771,6 +776,7 @@ HandleMouseoverMap = {  EUROPE_SCREEN : europeScreen,
 ## Handle Input Map
 #######################################################################################
 HandleInputMap = {  MAIN_INTERFACE : mainInterface,
+					CITY_SCREEN : cityScreen,
 					DOMESTIC_ADVISOR : domesticAdvisor,
 					FATHER_SCREEN : fatherScreen,
 					FOREIGN_ADVISOR : foreignAdvisor,

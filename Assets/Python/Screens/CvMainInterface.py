@@ -1406,7 +1406,8 @@ class CvMainInterface(object):
 			iLevel = 1
 
 		if (CyInterface().isCityScreenUp()):
-			self.SetHideState(screen, HIDE_TYPE_CITY, iLevel)
+
+			#self.SetHideState(screen, HIDE_TYPE_CITY, iLevel)
 		elif (CyEngine().isGlobeviewUp()):
 			self.SetHideState(screen, HIDE_TYPE_GLOBAL, iLevel)
 		else:
