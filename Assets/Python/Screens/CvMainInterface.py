@@ -42,6 +42,7 @@ FLAG_WIDTH = -1
 FLAG_PERCENT_WIDTH = 8
 
 MINI_MAP_WIDTH = -1
+#Must be corrected for wide screen
 MINI_MAP_PERCENT_WIDTH = 30
 
 LOWER_RIGHT_CORNER_BACKGROUND_WIDTH = MINI_MAP_WIDTH
@@ -193,7 +194,7 @@ BUILDING_DATA[40] = [81, 88, 20, 7] #Statue
 BUILDING_DATA[41] = [45, 88, 20, 10] #Graveyard
 BUILDING_DATA[42] = [59, 86, 20, 10] #Jail
 
-BUILDING_GRID = ["", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""]
+BUILDING_GRID = [""]*43
 
 BUILDING_AREA_WIDTH = -1
 BUILDING_AREA_HEIGHT = -1
@@ -3336,129 +3337,144 @@ class CvMainInterface(object):
 
 		pHeadSelectedCity = CyInterface().getHeadSelectedCity()
 
-		if ((CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_HIDE_ALL and CyInterface().getShowInterface() != InterfaceVisibility.INTERFACE_MINIMAP_ONLY)):
-			if (CyInterface().isScoresVisible() and not CyInterface().isCityScreenUp() and not CyEngine().isGlobeviewUp() ):
+		if CyInterface().getShowInterface() in (InterfaceVisibility.INTERFACE_HIDE_ALL, InterfaceVisibility.INTERFACE_MINIMAP_ONLY) :
+			return
 
-				iCount = 8
-				iBtnHeight = 22
-				iWidth = int((25 * xResolution) / 100)
-				yCoord = yResolution - SADDLE_HEIGHT * 14/16 - self.SCORE_TEXT_BOTTOM_MARGIN_SMALL
+		if not ( CyInterface().isScoresVisible() and not CyInterface().isCityScreenUp() and not CyEngine().isGlobeviewUp())  :
+			return
 
-				# Scrollable Scoreboard
-				if (not pHeadSelectedCity):
-					screen.addTableControlGFC("ScoreBackground", 1, xResolution - self.SCORE_BACKGROUND_SIDE_MARGIN/2 - iWidth, yCoord - (iBtnHeight * (iCount - 1)), iWidth, (iBtnHeight * (iCount - 1)), False, False, 0, 0, TableStyles.TABLE_STYLE_STANDARD)
-					screen.enableSelect("ScoreBackground", False)
-					screen.setTableColumnHeader("ScoreBackground", 0, "", iWidth - 10)
-			
-				i = 0
-				while (i < gc.getMAX_CIV_TEAMS()):
-					eTeam = gc.getGame().getRankTeam(i)
-					if (gc.getTeam(gc.getGame().getActiveTeam()).isHasMet(eTeam) or gc.getTeam(eTeam).isHuman() or gc.getGame().isDebugMode()):
-						#j = gc.getMAX_CIV_PLAYERS() - 1
-						#while (j > -1):
-						j = 0
-						while (j < gc.getMAX_CIV_PLAYERS()):
-							ePlayer = gc.getGame().getRankPlayer(j)
-							if (gc.getPlayer(ePlayer).isAlive()):
-								# < JAnimals Mod Start 1/1 > AND # R&R, ray, Church
-								if (gc.getGame().isBarbarianPlayer(ePlayer) or gc.getGame().isChurchPlayer(ePlayer)):
-									#j = j - 1
-									j = j + 1
-									continue
-								# < JAnimals Mod End 1/1 >
-								if (gc.getPlayer(ePlayer).getTeam() == eTeam):
-									szBuffer = u"<font=2>"
+		iCount = 8
+		iBtnHeight = 22
+		iWidth = int((25 * xResolution) / 100)
+		yCoord = yResolution - SADDLE_HEIGHT * 14/16 - self.SCORE_TEXT_BOTTOM_MARGIN_SMALL
 
-									if (gc.getGame().isGameMultiPlayer()):
-										if (not (gc.getPlayer(ePlayer).isTurnActive())):
-											szBuffer = szBuffer + "*"
+		# Scrollable Scoreboard
+		if (not pHeadSelectedCity):
+			screen.addTableControlGFC("ScoreBackground", 1, xResolution - self.SCORE_BACKGROUND_SIDE_MARGIN/2 - iWidth, yCoord - (iBtnHeight * (iCount - 1)), iWidth, (iBtnHeight * (iCount - 1)), False, False, 0, 0, TableStyles.TABLE_STYLE_STANDARD)
+			screen.enableSelect("ScoreBackground", False)
+			screen.setTableColumnHeader("ScoreBackground", 0, "", iWidth - 10)
 
-									if gc.getGame().getPlayerScore(ePlayer) > 0:
-										szBuffer += u"%d: " % gc.getGame().getPlayerScore(ePlayer)
-									
-									if (gc.getTeam(eTeam).isParentOf(gc.getGame().getActiveTeam())):
-											szTempBuffer = u"%c" %(CyGame().getSymbolID(FontSymbols.ANCHOR_EUROPE_CHAR))
-											szBuffer = szBuffer +  szTempBuffer  + " "
-									
-									if (not CyInterface().isFlashingPlayer(ePlayer) or CyInterface().shouldFlash(ePlayer)):
-										if (ePlayer == gc.getGame().getActivePlayer()):
-											szTempBuffer = u"[<color=%d,%d,%d,%d>%s</color>]" %(gc.getPlayer(ePlayer).getPlayerTextColorR(), gc.getPlayer(ePlayer).getPlayerTextColorG(), gc.getPlayer(ePlayer).getPlayerTextColorB(), gc.getPlayer(ePlayer).getPlayerTextColorA(), gc.getPlayer(ePlayer).getName())
-										else:
-											szTempBuffer = u"<color=%d,%d,%d,%d>%s</color>" %(gc.getPlayer(ePlayer).getPlayerTextColorR(), gc.getPlayer(ePlayer).getPlayerTextColorG(), gc.getPlayer(ePlayer).getPlayerTextColorB(), gc.getPlayer(ePlayer).getPlayerTextColorA(), gc.getPlayer(ePlayer).getName())
-									else:
-										szTempBuffer = u"%s" %(gc.getPlayer(ePlayer).getName())
-									szBuffer = szBuffer + szTempBuffer
+		#i = 0
 
-									if (gc.getTeam(eTeam).isAlive()):
-										if ( not (gc.getTeam(gc.getGame().getActiveTeam()).isHasMet(eTeam)) ):
-											szBuffer = szBuffer + (" ?")
-										if (gc.getTeam(eTeam).isAtWar(gc.getGame().getActiveTeam())):
-											szBuffer = szBuffer + "("  + localText.getColorText("TXT_KEY_WAR", (), gc.getInfoTypeForString("COLOR_RED")).upper() + ")"
-										if (not gc.getPlayer(ePlayer).isHuman() and ePlayer != gc.getGame().getActivePlayer()):
-											iAtt = gc.getPlayer(ePlayer).AI_getAttitude(gc.getGame().getActivePlayer())
-											cAtt = unichr(CyGame().getSymbolID(FontSymbols.ATTITUDE_FURIOUS_CHAR) + iAtt)
-											szBuffer += " " +cAtt #+ " (" +u"%d" %iGold  + localText.getText("[ICON_GOLD]", ()) + ")"
-										else:
-											szBuffer += "    "
-										if (gc.getTeam(eTeam).isOpenBorders(gc.getGame().getActiveTeam())):
-											szTempBuffer = u"%c" %(CyGame().getSymbolID(FontSymbols.OPEN_BORDERS_CHAR))
-											szBuffer = szBuffer + szTempBuffer
-										if (gc.getTeam(eTeam).isDefensivePact(gc.getGame().getActiveTeam())):
-											szTempBuffer = u"%c" %(CyGame().getSymbolID(FontSymbols.DEFENSIVE_PACT_CHAR))
-											szBuffer = szBuffer + szTempBuffer
-										# Alignement 
-										elif (not gc.getTeam(eTeam).isOpenBorders(gc.getGame().getActiveTeam())):
-											szBuffer = szBuffer + "    "
-										if (not gc.getPlayer(ePlayer).isHuman() and ePlayer != gc.getGame().getActivePlayer() and not gc.getPlayer(ePlayer).isEurope() and (not gc.getPlayer(ePlayer).isNative() or gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN))):
-											iGold = gc.getPlayer(ePlayer).getGold()
-											# Alignement issues 
-											if iGold<10:
-												szBuffer += "        (" +u"%d" %iGold  + localText.getText("[ICON_GOLD]", ()) + ")"
-											elif iGold<100:
-												szBuffer += "     (" +u"%d" %iGold  + localText.getText("[ICON_GOLD]", ()) + ")"
-											elif iGold<1000:
-												szBuffer += "   (" +u"%d" %iGold  + localText.getText("[ICON_GOLD]", ()) + ")"
-											else:	
-												szBuffer += " (" +u"%d" %iGold  + localText.getText("[ICON_GOLD]", ()) + ")"
-										else:
-											szBuffer += "               "
-									if (CyGame().isNetworkMultiPlayer()):
-										szBuffer = szBuffer + CyGameTextMgr().getNetStats(ePlayer)
+		teams_player_ordered = dict()
 
-									if (gc.getPlayer(ePlayer).isHuman() and CyInterface().isOOSVisible()):
-										szTempBuffer = u" <color=255,0,0>* %s *</color>" %(CyGameTextMgr().getOOSSeeds(ePlayer))
-										szBuffer = szBuffer + szTempBuffer
+		for i in range(gc.getMAX_CIV_PLAYERS()):
+			ePlayer = gc.getGame().getRankPlayer(i)
+			if gc.getGame().isBarbarianPlayer(ePlayer) or gc.getGame().isChurchPlayer(ePlayer):
+				continue
+			kPlayer = gc.getPlayer(ePlayer)
+			if not kPlayer.isAlive():
+				continue
+			eTeam = kPlayer.getTeam()
+			curr = teams_player_ordered.get(eTeam,list())
+			curr.append(ePlayer)
+			teams_player_ordered[eTeam] = curr
 
-									szBuffer = szBuffer + "</font>"
+		eActiveTeam = gc.getGame().getActiveTeam()
+		eActivePlayer = gc.getGame().getActivePlayer()
 
-									if ( CyInterface().determineWidth( szBuffer ) > iWidth ):
-										iWidth = CyInterface().determineWidth( szBuffer )
+		for i in range(gc.getMAX_CIV_TEAMS()):
+			eTeam = gc.getGame().getRankTeam(i)
+			kTeam = gc.getTeam(eTeam)
+			players = teams_player_ordered.get(eTeam, None)
+			if players is None:
+				continue
+			if not (gc.getTeam(eActiveTeam).isHasMet(eTeam) or gc.getTeam(eTeam).isHuman() or gc.getGame().isDebugMode()):
+				continue
+				#j = gc.getMAX_CIV_PLAYERS() - 1
+				#while (j > -1):
+			for ePlayer in players:
 
-									szName = "ScoreText" + str(ePlayer)
-									if ( CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_SHOW or CyInterface().isInAdvancedStart() or pHeadSelectedCity != None):
-										yCoord = yResolution - SADDLE_HEIGHT * 38 / 100 - 20
-									else:
-										yCoord = yResolution - SADDLE_HEIGHT - self.SCORE_TEXT_BOTTOM_MARGIN_SMALL
+				kPlayer = gc.getPlayer(ePlayer)
+				szBuffer = u"<font=2>"
 
-									if not pHeadSelectedCity:
-										iRow = screen.appendTableRow("ScoreBackground")
-										screen.setTableText("ScoreBackground", 0, iRow, szBuffer, "", WidgetTypes.WIDGET_CONTACT_CIV, ePlayer, -1, CvUtil.FONT_RIGHT_JUSTIFY)
+				if (gc.getGame().isGameMultiPlayer()):
+					if not kPlayer.isTurnActive():
+						szBuffer = szBuffer + "*"
 
-									CyInterface().checkFlashReset(ePlayer)
+				if gc.getGame().getPlayerScore(ePlayer) > 0:
+					szBuffer += u"%d: " % gc.getGame().getPlayerScore(ePlayer)
 
-									iCount += 1
-							#j = j - 1
-							j = j + 1
-					#i = i - 1
-					i = i + 1
-				
-				if ( CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_SHOW or CyInterface().isInAdvancedStart() or pHeadSelectedCity != None):
-					yCoord = yResolution - SADDLE_HEIGHT * 38 / 100
+				if kTeam.isParentOf(eActiveTeam):
+						szTempBuffer = u"%c" %(CyGame().getSymbolID(FontSymbols.ANCHOR_EUROPE_CHAR))
+						szBuffer = szBuffer +  szTempBuffer  + " "
+
+				if (not CyInterface().isFlashingPlayer(ePlayer) or CyInterface().shouldFlash(ePlayer)):
+					if (ePlayer == eActivePlayer):
+						szTempBuffer = u"[<color=%d,%d,%d,%d>%s</color>]" %(gc.getPlayer(ePlayer).getPlayerTextColorR(), gc.getPlayer(ePlayer).getPlayerTextColorG(), gc.getPlayer(ePlayer).getPlayerTextColorB(), gc.getPlayer(ePlayer).getPlayerTextColorA(), gc.getPlayer(ePlayer).getName())
+					else:
+						szTempBuffer = u"<color=%d,%d,%d,%d>%s</color>" %(gc.getPlayer(ePlayer).getPlayerTextColorR(), gc.getPlayer(ePlayer).getPlayerTextColorG(), gc.getPlayer(ePlayer).getPlayerTextColorB(), gc.getPlayer(ePlayer).getPlayerTextColorA(), gc.getPlayer(ePlayer).getName())
 				else:
-					yCoord = yResolution - SADDLE_HEIGHT - self.SCORE_BACKGROUND_BOTTOM_MARGIN_SMALL
+					szTempBuffer = u"%s" %(gc.getPlayer(ePlayer).getName())
+				szBuffer = szBuffer + szTempBuffer
+
+				if (kTeam.isAlive()):
+					if not gc.getTeam(eActiveTeam).isHasMet(eTeam) :
+						szBuffer = szBuffer + (" ?")
+					if kTeam.isAtWar(eActiveTeam):
+						szBuffer = szBuffer + "("  + localText.getColorText("TXT_KEY_WAR", (), gc.getInfoTypeForString("COLOR_RED")).upper() + ")"
+					if (not gc.getPlayer(ePlayer).isHuman() and ePlayer != gc.getGame().getActivePlayer()):
+						iAtt = gc.getPlayer(ePlayer).AI_getAttitude(gc.getGame().getActivePlayer())
+						cAtt = unichr(CyGame().getSymbolID(FontSymbols.ATTITUDE_FURIOUS_CHAR) + iAtt)
+						szBuffer += " " +cAtt #+ " (" +u"%d" %iGold  + localText.getText("[ICON_GOLD]", ()) + ")"
+					else:
+						szBuffer += "    "
+					if kTeam.isOpenBorders(eActiveTeam):
+						szTempBuffer = u"%c" %(CyGame().getSymbolID(FontSymbols.OPEN_BORDERS_CHAR))
+						szBuffer = szBuffer + szTempBuffer
+					if kTeam.isDefensivePact(eActiveTeam):
+						szTempBuffer = u"%c" %(CyGame().getSymbolID(FontSymbols.DEFENSIVE_PACT_CHAR))
+						szBuffer = szBuffer + szTempBuffer
+					# Alignement
+					elif not kTeam.isOpenBorders(eActiveTeam):
+						szBuffer = szBuffer + "    "
+					if (not kPlayer.isHuman() and ePlayer != eActivePlayer and not kPlayer.isEurope() and (not kPlayer.isNative() or gc.getGame().isOption(GameOptionTypes.GAMEOPTION_NO_MORE_VARIABLES_HIDDEN))):
+						iGold = gc.getPlayer(ePlayer).getGold()
+						# Alignement issues
+						if iGold<10:
+							szBuffer += "        (" +u"%d" %iGold  + localText.getText("[ICON_GOLD]", ()) + ")"
+						elif iGold<100:
+							szBuffer += "     (" +u"%d" %iGold  + localText.getText("[ICON_GOLD]", ()) + ")"
+						elif iGold<1000:
+							szBuffer += "   (" +u"%d" %iGold  + localText.getText("[ICON_GOLD]", ()) + ")"
+						else:
+							szBuffer += " (" +u"%d" %iGold  + localText.getText("[ICON_GOLD]", ()) + ")"
+					else:
+						szBuffer += "               "
+				if (CyGame().isNetworkMultiPlayer()):
+					szBuffer = szBuffer + CyGameTextMgr().getNetStats(ePlayer)
+
+				if (gc.getPlayer(ePlayer).isHuman() and CyInterface().isOOSVisible()):
+					szTempBuffer = u" <color=255,0,0>* %s *</color>" %(CyGameTextMgr().getOOSSeeds(ePlayer))
+					szBuffer = szBuffer + szTempBuffer
+
+				szBuffer = szBuffer + "</font>"
+
+				if ( CyInterface().determineWidth( szBuffer ) > iWidth ):
+					iWidth = CyInterface().determineWidth( szBuffer )
+
+				szName = "ScoreText" + str(ePlayer)
+				if ( CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_SHOW or CyInterface().isInAdvancedStart() or pHeadSelectedCity != None):
+					yCoord = yResolution - SADDLE_HEIGHT * 38 / 100 - 20
+				else:
+					yCoord = yResolution - SADDLE_HEIGHT - self.SCORE_TEXT_BOTTOM_MARGIN_SMALL
 
 				if not pHeadSelectedCity:
-					screen.show("ScoreBackground")
+					iRow = screen.appendTableRow("ScoreBackground")
+					screen.setTableText("ScoreBackground", 0, iRow, szBuffer, "", WidgetTypes.WIDGET_CONTACT_CIV, ePlayer, -1, CvUtil.FONT_RIGHT_JUSTIFY)
+
+				CyInterface().checkFlashReset(ePlayer)
+
+				iCount += 1
+
+
+		if ( CyInterface().getShowInterface() == InterfaceVisibility.INTERFACE_SHOW or CyInterface().isInAdvancedStart() or pHeadSelectedCity != None):
+			yCoord = yResolution - SADDLE_HEIGHT * 38 / 100
+		else:
+			yCoord = yResolution - SADDLE_HEIGHT - self.SCORE_BACKGROUND_BOTTOM_MARGIN_SMALL
+
+		if not pHeadSelectedCity:
+			screen.show("ScoreBackground")
 
 	# Will update the help Strings
 	def updateHelpStrings( self ):
