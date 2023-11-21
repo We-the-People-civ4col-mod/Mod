@@ -2771,7 +2771,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_GRAVEYARDS</Tag>
-		<English>Milord, the church requests that we build graveyards in at least five cities to bury dead citizens. We are promised that also priests will then be sent to hold funeral ceremonies.</English>
+		<English>Milord, the church requests that we build graveyards in at least five cities. The church will then send priests to hold funeral services for our dead citizens.</English>
 		<French>Sire, l'église demande que nous construisions des cimetières dans cinq villes pour y enterrer nos morts. Il nous a été promis que des prêtres nous seraient envoyés pour mener les funérailles.</French>
 		<German>Milord, die Kirche verlangt, dass wir in mindestens fünf Städten Friedhöfe bauen, um tote Bürger zu begraben. Uns wurde versprochen, dass dann auch Priester für die Beerdigungen geschickt werden.</German>
 		<Russian>Милорд, церковь требует, чтобы мы построили кладбища как минимум в пяти городах для захоронения умерших граждан. Нам обещают, что потом будут присланы священники для совершения похоронных обрядов.</Russian>
@@ -2841,7 +2841,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_BAKERIES</Tag>
-		<English>Of course we shall ensure that the brave men guarding our cities shall be well provisioned.</English>
+		<English>Of course we shall ensure that the brave men guarding our cities are well provisioned.</English>
 		<French>Bien sûr, nous allons nous assurer que les hommes courageux gardant nos villes aient les meilleures rations.</French>
 		<German>Selbstverständlich werden wir sicherstellen, dass die mutigen Männer, die unsere Städte bewachen gut versorgt sind.</German>
 		<Russian>Конечно, мы позаботимся о том, чтобы храбрецы, охраняющие наши города, были хорошо обеспечены.</Russian>
@@ -2855,7 +2855,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS</Tag>
-		<English>Milord, some Hessian mercenaries are looking for a new contract. But they include a strange demand that they will only work for the country with the best sausages. Maybe if we build butcheries in five of our cities we could convince them to come to us.</English>
+		<English>Milord, some Hessian mercenaries are looking for a new contract. They include a strange demand that they will only work for the country with the best sausages. Maybe if we build butcheries in five of our cities we could convince them to come to us.</English>
 		<French>Sire, des mercenaires de Hesse recherchent un nouveau contrat. Mais parmi leurs conditions, ils souhaitent travailler pour le pays avec les meilleures saucisses. Peut-être que si nous construisons des boucheries dans cinq de nos villes, nous pourrons les convaincre de nous rejoindre</French>
 		<German>Milord, einige hessische Söldner suchen nach einem neuen Auftrag. Aber sie stellen die seltsame Bedingung dass sie nur für das Land mit den besten Würsten arbeiten wollen. Vielleicht können wir sie davon überzeugen zu uns zu kommen indem wir in fünf unserer Städte Schlachtereien errichten.</German>
 		<Russian>Милорд, несколько гессенских наемников ищут новый контракт. Но включают странное требование, что они будут работать только на страну с лучшими колбасами. Может быть, если мы построим дома мясников в пяти наших городах, мы сможем убедить их прийти к нам.</Russian>
@@ -2953,7 +2953,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_OPERA_DONE</Tag>
-		<English>Milord, you've built an opera before any other colony could. Famous entertainers from Europe want to come and play in it.</English>
+		<English>Milord, you've built an opera before any other colony could. Famous entertainers from Europe now want to come here to perform.</English>
 		<French>Sire, vous avez été le premier à construire un opéra. Des artistes célèbres d'Europe veulent venir y jouer.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen eine Oper errichten. Berühmte Schauspieler aus Europa wollen nun darin auftreten.</German>
 		<Russian>Милорд, мы построили оперу раньше любой другой колониальной державы. Известные артисты из Европы уже присылают свои заявки на выступление в ней.</Russian>
@@ -2974,7 +2974,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_OPERA_DONE_1</Tag>
-		<English>We are looking forward to see the first performances in our new Opera.</English>
+		<English>We are looking forward to see the first performances in our new opera.</English>
 		<French>Nous attendons avec impatience les premières représentations dans notre nouvel Opéra.</French>
 		<German>Wir freuen uns bereits auf die ersten Aufführungen in unserer neuen Oper.</German>
 		<Russian>С нетерпением ждем первых спектаклей в нашей новой опере.</Russian>
