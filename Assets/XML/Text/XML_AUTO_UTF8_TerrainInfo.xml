@@ -1,471 +1,471 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_DESERT</Tag>
-        <English>Desert</English>
-        <French>
-            <Text>Désert</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Wüste</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Deserto:Deserti</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Desierto:Desiertos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Пустыня</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_DESERT_PEDIA</Tag>
-        <English>A [COLOR_HIGHLIGHT_TEXT]desert[COLOR_REVERT] is a landscape or region that receives an extremely low amount of precipitation, not enough for most plants to survive. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] cannot plant any vegetation here.[NEWLINE]Deserts have an average annual precipitation of less than 250 millimetres (10 inches) per year, or they lose more water by evaporation than they receive as precipitation. A desert landscape can be recognised by its bare appearance over large areas, with no significant human presence.[NEWLINE][NEWLINE]In the Köppen climate classification system, deserts are classed as BWh (hot desert) or BWk (temperate desert). In the Thornthwaite climate classification system, deserts are classified as arid megathermal climates.</English>
-        <French>Un [COLOR_HIGHLIGHT_TEXT]désert[COLOR_REVERT] est un paysage ou une région qui reçoit une quantité extrêmement faible de précipitations, insuffisante pour la survie de la plupart des plantes. Les déserts ont des précipitations annuelles moyennes inférieures à 250 millimètres (10 pouces) par an, ou ils perdent plus d'eau par évaporation qu'ils n'en reçoivent sous forme de précipitations. Un paysage désertique se reconnaît à son aspect dénudé sur de vastes surfaces, sans présence humaine réellement importante.[NEWLINE][NEWLINE]Dans le système de classification climatique de Köppen, les déserts sont classés en BWh (désert chaud) ou BWk (désert tempéré). Dans le système de classification climatique de Thornthwaite, les déserts sont classés dans la catégorie des climats mégathermiques arides.</French>
-        <German>Eine [COLOR_HIGHLIGHT_TEXT]Wüste[COLOR_REVERT] ist eine Landschaft oder Region, in der extrem wenig Niederschlag fällt, der für die meisten Pflanzen nicht zum Überleben ausreicht. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier auch keine Vegetation anpflanzen.[NEWLINE]Wüsten haben einen durchschnittlichen Jahresniederschlag von weniger als 250 Millimetern (10 Zoll) pro Jahr, oder sie verlieren mehr Wasser durch Verdunstung als sie als Niederschlag erhalten. Eine Wüstenlandschaft erkennt man daran, dass sie über weite Flächen kahl ist und keine wirklich große menschliche Präsenz aufweist.[NEWLINE][NEWLINE]Im Köppen-Klimaklassifikationssystem werden Wüsten als BWh (heiße Wüste) oder BWk (gemäßigte Wüste) eingestuft. Im Klimaklassifizierungssystem von Thornthwaite werden Wüsten als aride megathermische Klimazonen eingestuft.</German>
-        <Italian>Un [COLOR_HIGHLIGHT_TEXT]deserto[COLOR_REVERT] è un paesaggio o una regione che riceve una quantità di precipitazioni estremamente bassa, non sufficiente per la sopravvivenza della maggior parte delle piante. I deserti hanno una media annuale di precipitazioni inferiore a 250 millimetri (10 pollici) all'anno, ovvero perdono più acqua per evaporazione di quanta ne ricevano come precipitazioni. Un paesaggio desertico si riconosce per il suo aspetto spoglio su vaste aree, senza alcuna presenza umana significativa.[NEWLINE][NEWLINE]Nel sistema di classificazione climatica di Köppen, i deserti sono classificati come BWh (deserto caldo) o BWk (deserto temperato). Nel sistema di classificazione climatica Thornthwaite, i deserti sono classificati come climi megatermici aridi.</Italian>
-        <Spanish>Un [COLOR_HIGHLIGHT_TEXT]desierto[COLOR_REVERT] es un paisaje o región que recibe una cantidad de precipitaciones extremadamente baja, insuficiente para que la mayoría de las plantas sobrevivan. Los desiertos tienen una precipitación media anual inferior a 250 milímetros (10 pulgadas) al año, o pierden más agua por evaporación de la que reciben en forma de precipitaciones. Un paisaje desértico se reconoce por su aspecto desnudo en grandes extensiones, sin presencia humana significativa.[NEWLINE][NEWLINE]En el sistema de clasificación climática de Köppen, los desiertos se clasifican como BWh (desierto cálido) o BWk (desierto templado). En el sistema de clasificación climática de Thornthwaite, los desiertos se clasifican como climas áridos megatérmicos.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_GRASS</Tag>
-        <English>Grassland</English>
-        <French>Prairies</French>
-        <German>Grasland</German>
-        <Italian>Praterie</Italian>
-        <Spanish>Herbazal</Spanish>
-        <Russian>Луга</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_GRASS_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Grasslands[COLOR_REVERT] are areas where the vegetation is dominated by grasses and other herbaceous (non-woody) plants. Sedge and rush families can also be found. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant [LINK=FEATURE_FOREST_EVERGREEN]coniferous forests[\LINK] here.[NEWLINE]Grasslands occur naturally on every continent except Antarctica. In temperate latitudes, such as northwest Europe or the Great Plains in North America, native grasslands are dominated by perennial bunch grass species, whereas in warmer climates annual species make up more of the vegetation.[NEWLINE][NEWLINE]Grassland is good land for grazing animals and for farming. [LINK=YIELD_HEMP]Hemp[\LINK] and [LINK=YIELD_TOBACCO]tobacco[\LINK] on flatlands as well as [LINK=YIELD_GRAPES]grapes[\LINK] on hills grow well there.</English>
-        <French>Les [COLOR_HIGHLIGHT_TEXT]prairies[COLOR_REVERT] sont des zones où la végétation est dominée par des graminées et d'autres plantes herbacées (non ligneuses). On peut également y trouver des familles de carex et de joncs. Les prairies sont présentes naturellement sur tous les continents, à l'exception de l'Antarctique. Dans les latitudes tempérées, comme le nord-ouest de l'Europe ou les grandes plaines d'Amérique du Nord, les prairies indigènes sont dominées par des espèces de graminées vivaces, tandis que dans les climats plus chauds, les espèces annuelles constituent la majeure partie de la végétation.[NEWLINE][NEWLINE]Les prairies sont de bonnes terres pour le pâturage des animaux et pour l'agriculture. Le [LINK=YIELD_HEMP]chanvre[\LINK] et le [LINK=YIELD_TOBACCO]tabac[\LINK] sur les plaines ainsi que le [LINK=YIELD_GRAPES]raisin[\LINK] sur les collines y poussent bien.</French>
-        <German>Als [COLOR_HIGHLIGHT_TEXT]Grasland[COLOR_REVERT] bezeichnet man Gebiete, in denen die Vegetation von Gräsern und anderen krautigen (nicht-holzigen) Pflanzen dominiert wird. Auch Seggen- und Binsengewächse können hier vorkommen. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier [LINK=FEATURE_FOREST_EVERGREEN]Nadelwälder[\LINK] anpflanzen.[NEWLINE]Grasland kommt in der Natur auf allen Kontinenten außer der Antarktis vor. In gemäßigten Breiten, wie z. B. im Nordwesten Europas oder in den Great Plains in Nordamerika, werden die einheimischen Graslandschaften von mehrjährigen Gräsern dominiert, während in wärmeren Klimazonen einjährige Arten einen größeren Teil der Vegetation ausmachen.[NEWLINE][NEWLINE]Grasland ist gut geeignet für Weidewirtschaft und für Landwirtschaft. Gut wachsen im Flachland [LINK=YIELD_HEMP]Hanf[\LINK] und [LINK=YIELD_TOBACCO]Tabak[\LINK] sowie [LINK=YIELD_GRAPES]Weintrauben[\LINK] auf Hügeln.</German>
-        <Italian>Le [COLOR_HIGHLIGHT_TEXT]praterie[COLOR_REVERT] sono aree in cui la vegetazione è dominata da erbe e altre piante erbacee (non legnose). Si possono trovare anche famiglie di carici e giunchi. Le praterie sono presenti naturalmente in tutti i continenti, tranne l'Antartide. Alle latitudini temperate, come l'Europa nord-occidentale o le Grandi Pianure del Nord America, le praterie autoctone sono dominate da specie erbacee perenni, mentre nei climi più caldi le specie annuali costituiscono la maggior parte della vegetazione.[NEWLINE][NEWLINE]Le praterie sono un buon terreno per il pascolo degli animali e per l'agricoltura. La [LINK=YIELD_HEMP]canapa[\LINK] e il [LINK=YIELD_TOBACCO]tabacco[\LINK] in pianura e la [LINK=YIELD_GRAPES]uva[\LINK] in collina crescono bene.</Italian>
-        <Spanish>Los [COLOR_HIGHLIGHT_TEXT]herbazales[COLOR_REVERT] son zonas en las que la vegetación está dominada por gramíneas y otras plantas herbáceas (no leñosas). También pueden encontrarse juncias y juncos. Los herbazales se dan de forma natural en todos los continentes excepto en la Antártida. En las latitudes templadas, como el noroeste de Europa o las Grandes Llanuras de América del Norte, los herbazales nativos están dominados por especies de gramíneas perennes, mientras que en los climas más cálidos la vegetación se compone más de especies anuales.[NEWLINE][NEWLINE]Los herbazales son buenas tierras para el pastoreo de animales y para la agricultura. [LINK=YIELD_HEMP]Cáñamo[\LINK] y [LINK=YIELD_TOBACCO]tabaco[\LINK] en las llanuras, así como [LINK=YIELD_GRAPES]uvas[\LINK] en las colinas crecen bien allí.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_HILL</Tag>
-        <English>Hill</English>
-        <French>
-            <Text>Colline</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Hügel</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Collina:Colline</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Colina:Colinas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Холмы</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_HILL_PEDIA</Tag>
-        <English>A [COLOR_HIGHLIGHT_TEXT]hill[COLOR_REVERT] is a landform that extends above the surrounding terrain. Hills often have a distinct summit, although in areas with scarp/dip topography a hill may be higher flat terrain without a distinct summit (e.g. Box Hill).</English>
-        <French>Une [COLOR_HIGHLIGHT_TEXT]colline[COLOR_REVERT] est un relief généralement modéré et relativement peu étendu qui s'élève au-dessus d'une plaine ou d'un plateau et se distingue dans le paysage. Les collines peuvent être isolées ou se regrouper en champs de collines.</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Hügel[COLOR_REVERT] sind eine Landform, die sich über das umgebende Terrain erhebt, jedoch noch keinen massiven Gipfel, wie einen Berg, aufweist.</German>
-        <Italian>Una [COLOR_HIGHLIGHT_TEXT]collina[COLOR_REVERT] è una forma di terreno generalmente moderata e relativamente piccola che si erge sopra una pianura o un altopiano e si distingue nel paesaggio. Le colline possono essere isolate o raggruppate in campi collinari.</Italian>
-        <Spanish>Una [COLOR_HIGHLIGHT_TEXT]colina[COLOR_REVERT] es un relieve generalmente moderado y relativamente pequeño que se eleva sobre una llanura o meseta y destaca en el paisaje. Las colinas pueden estar aisladas o agrupadas en campos de colinas.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_MARSH</Tag>
-        <English>Marsh</English>
-        <French>Marais</French>
-        <German>Sumpf</German>
-        <Italian>Palude</Italian>
-        <Spanish>Marisma</Spanish>
-        <Russian>Болото</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_MARSH_PEDIA</Tag>
-        <English>A [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT] is wetland dominated by herbaceous rather than woody plant species. When drained by [LINK=PROFESSION_PIONEER]pioneers[\LINK], marshes turn into [LINK=TERRAIN_SAVANNAH]savanna[\LINK]. Pioneers can plant [LINK=FEATURE_JUNGLE]jungle[\LINK] on marsh terrain.[NEWLINE]Marshes can often be found at the edges of lakes and streams where they form a transition between the aquatic and terrestrial ecosystems. They are often dominated by grasses, rushes or reeds. If woody plants are present they tend to be low-growing shrubs. This form of vegetation is what differentiates marshes from other types of wetland such as swamps, which are dominated by trees, and bogs, which are wetlands that have accumulated deposits of acidic peat.</English>
-        <French>Un [COLOR_HIGHLIGHT_TEXT]marais[COLOR_REVERT] est une zone humide dominée par des espèces végétales herbacées plutôt que ligneuses. Les marais se trouvent souvent au bord des lacs et des cours d'eau, où ils forment une transition entre les écosystèmes aquatiques et terrestres. Ils sont souvent dominés par des graminées, des joncs ou des roseaux. Si des plantes ligneuses sont présentes, il s'agit généralement d'arbustes à faible croissance. Cette forme de végétation est ce qui différencie les marais d'autres types de zones humides comme les marécages, qui sont dominés par les arbres, et les tourbières, qui sont des zones humides qui ont accumulé des dépôts de tourbe acide.</French>
-        <German>Ein [COLOR_HIGHLIGHT_TEXT]Sumpf[COLOR_REVERT] ist ein Feuchtgebiet, das eher von niedrigen Blattpflanzen als von Bäumen dominiert wird. Sümpfe können durch [LINK=PROFESSION_PIONEER]Pioniere[\LINK] trockengelegt werden, wodurch sie zur [LINK=TERRAIN_SAVANNAH]Savanne[\LINK] werden. Pioniere können in Sümpfen neuen [LINK=FEATURE_JUNGLE]Dschungel[\LINK] anpflanzen.[NEWLINE]Sümpfe findet man oft an den Rändern von Seen und Flüssen, wo sie einen Übergang zwischen dem aquatischen und dem terrestrischen Ökosystem bilden. Sie werden oft von Gräsern, Binsen oder Schilf dominiert. Wenn Gehölze vorhanden sind, handelt es sich meist um niedrig wachsende Sträucher. Diese Form der Vegetation unterscheidet Sümpfe von anderen Feuchtgebieten wie Sümpfen, die von Bäumen dominiert werden, und Mooren, in denen sich saurer Torf angesammelt hat.</German>
-        <Italian>Una [COLOR_HIGHLIGHT_TEXT]palude[COLOR_REVERT] è una zona umida dominata da specie vegetali erbacee piuttosto che legnose. Le paludi si trovano spesso ai margini di laghi e corsi d'acqua, dove costituiscono una transizione tra l'ecosistema acquatico e quello terrestre. Sono spesso dominate da erbe, giunchi o canne. Se sono presenti piante legnose, tendono a essere arbusti a bassa crescita. Questa forma di vegetazione è ciò che differenzia le paludi da altri tipi di zone umide come le paludi, che sono dominate da alberi, e le torbiere, che sono zone umide che hanno accumulato depositi di torba acida.</Italian>
-        <Spanish>Una [COLOR_HIGHLIGHT_TEXT]marisma[COLOR_REVERT] es un humedal dominado por especies vegetales herbáceas más que leñosas. Las marismas suelen encontrarse en los bordes de lagos y arroyos, donde forman una transición entre los ecosistemas acuático y terrestre. Suelen estar dominadas por gramíneas, juncos o carrizos. Si hay plantas leñosas, suelen ser arbustos de bajo crecimiento. Esta forma de vegetación es lo que diferencia a las marismas de otros tipos de humedales como los pantanos, en los que predominan los árboles, y las turberas, que son humedales en los que se han acumulado depósitos de turba ácida.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_PEAK</Tag>
-        <English>Peak</English>
-        <French>
-            <Text>Pic</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Berg</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Montagna:Montagne</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Pico:Picos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Горы</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_PEAK_PEDIA</Tag>
-        <English>A [COLOR_HIGHLIGHT_TEXT]mountain peak[COLOR_REVERT], in topography, is a point on a surface that is higher in elevation than all points immediately adjacent to it. Mathematically, a summit is a local maximum in elevation. The topographic terms "acme", "apex", "peak", and "zenith" are synonyms.</English>
-        <French>Une [COLOR_HIGHLIGHT_TEXT]montagne[COLOR_REVERT] est une forme topographique de relief positif, à la surface de planètes telluriques (comme la Terre, Mars ou un satellite comme la Lune), et faisant partie d'un ensemble - une « chaîne de montagne » - ou formant un relief isolé.</French>
-        <German>Als [COLOR_HIGHLIGHT_TEXT]Gipfel oder Berg[COLOR_REVERT] bezeichnet man einen geographischen Punkt, der höher als alle umgebenden Geländepunkte ist.</German>
-        <Italian>Un [COLOR_HIGHLIGHT_TEXT]picco di montagna[COLOR_REVERT], in topografia, è un punto su una superficie che è più alto in elevazione di tutti i punti immediatamente adiacenti.</Italian>
-        <Spanish>Un [COLOR_HIGHLIGHT_TEXT]pico de montaña[COLOR_REVERT], en topografía, es un punto de una superficie cuya elevación es superior a la de todos los puntos inmediatamente adyacentes.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_PLAINS</Tag>
-        <English>Plains</English>
-        <French>
-            <Text>Plaines</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>
-            <Text>Ebene</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Pianura:Pianure</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Llanura:Llanuras</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Равнины</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] are temperate steppes, often vast grasslands away to the horizon. A plain is a particular form of relief, it is a geographical space characterised by a flat topographic surface, with relatively low slopes.[NEWLINE][NEWLINE]Plains are good land for grazing animals and for farming. [LINK=YIELD_BARLEY]Barley[\LINK] and [LINK=YIELD_PEANUTS]peanuts[\LINK] on flatlands as well as [LINK=YIELD_OLIVES]olives[\LINK] on hills grow well there. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant [LINK=FEATURE_DENSE_FOREST]dense forests[\LINK] on plains terrain.</English>
-        <French>Les [COLOR_HIGHLIGHT_TEXT]plaines[COLOR_REVERT] sont des steppes tempérées, souvent de vastes prairies s'étendant jusqu'à l'horizon. Une plaine est une forme particulière de relief, c'est un espace géographique caractérisé par une surface topographique plane, avec des pentes relativement faibles.[NEWLINE][NEWLINE]C'est une bonne terre pour le pâturage des animaux et pour l'agriculture. L'[LINK=YIELD_BARLEY]orge[\LINK], les [LINK=YIELD_PEANUTS]cacahuètes[\LINK] et les [LINK=YIELD_OLIVES]olives[\LINK] y poussent bien.</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Ebenen[COLOR_REVERT] sind gemäßigte Steppen, oft weite Graslandschaften, die sich bis zum Horizont erstrecken. Eine Ebene ist eine besondere Form des Reliefs, ein geografischer Raum, der sich durch eine flache topografische Oberfläche mit relativ geringen Steigungen auszeichnet.[NEWLINE][NEWLINE]Ebenen sind gut geeignet für Weidewirtschaft und für Landwirtschaft. Gut wachsen im Flachland [LINK=YIELD_BARLEY]Gerste[\LINK] und [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] sowie [LINK=YIELD_OLIVES]Oliven[\LINK] auf Hügeln. Ein [LINK=PROFESSION_PIONEER]Pionier[\LINK] kann [LINK=FEATURE_DENSE_FOREST]dichten Wald[\LINK] auf dem Ebenen Terrain anpflanzen.</German>
-        <Italian>Le [COLOR_HIGHLIGHT_TEXT]pianure[COLOR_REVERT] sono steppe temperate, spesso vaste praterie che si estendono fino all'orizzonte. Una pianura è una particolare forma di rilievo, è uno spazio geografico caratterizzato da una superficie topografica piatta, con pendenze relativamente basse.[NEWLINE][NEWLINE]È un buon terreno per il pascolo degli animali e per l'agricoltura. Vi crescono bene [LINK=YIELD_BARLEY]orzo[\LINK], [LINK=YIELD_PEANUTS]arachidi[\LINK] e [LINK=YIELD_OLIVES]olive[\LINK].</Italian>
-        <Spanish>Las [COLOR_HIGHLIGHT_TEXT]llanuras[COLOR_REVERT] son estepas templadas, a menudo vastos pastizales que se extienden hasta el horizonte. Una llanura es una forma particular de relieve, es un espacio geográfico caracterizado por una superficie topográfica plana, con pendientes relativamente bajas.[NEWLINE][NEWLINE]Es una buena tierra para el pastoreo de animales y para la agricultura. [LINK=YIELD_BARLEY]Cebada[\LINK], [LINK=YIELD_PEANUTS]cacahuetes[\LINK] y [LINK=YIELD_OLIVES]olivos[\LINK] crecen bien allí.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_PRAIRIE</Tag>
-        <English>Prairie</English>
-        <French>Prairie sèche</French>
-        <German>Prärie</German>
-        <Italian>Prateria</Italian>
-        <Spanish>Pradera</Spanish>
-        <Russian>Прерии</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_PRAIRIE_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Prairies[COLOR_REVERT] are ecosystems considered part of the temperate grasslands, savannas, and shrublands biome by ecologists, based on similar temperate climates, moderate rainfall, and a composition of grasses, herbs, and shrubs, rather than trees, as the dominant vegetation type. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant [LINK=FEATURE_FOREST]deciduous forests[\LINK] on prairie terrain.[NEWLINE]Temperate grassland regions include the Pampas of Argentina, Brazil and Uruguay as well as the steppes of Eurasia.[NEWLINE][NEWLINE]Lands referred to as "prairie" tend to be in North America. The term encompasses the area referred to as the Interior Lowlands of the United States, Canada and Mexico, which includes all of the Great Plains as well as the wetter, somewhat hillier land to the east.[NEWLINE][NEWLINE]In the U.S., the area is constituted by most or all of the states of North Dakota, South Dakota, Nebraska, Kansas, and Oklahoma, and sizable parts of the states of Montana, Wyoming, Colorado, New Mexico, Texas, Missouri, Iowa, Illinois, Indiana, Wisconsin, and western and southern Minnesota. The Central Valley of California is also a prairie. The Canadian Prairies extend across vast areas of Manitoba, Saskatchewan and Alberta.[NEWLINE][NEWLINE]Plains are good land for grazing animals and for farming. [LINK=YIELD_COTTON]Cotton[\LINK] and [LINK=YIELD_INDIGO]indigo[\LINK] on flatlands as well as [LINK=YIELD_RED_PEPPER]red pepper[\LINK] on hills grow well there.</English>
-        <French>La [COLOR_HIGHLIGHT_TEXT]Prairie sèche[COLOR_REVERT] (anglais : Tallgrass Prairie) occupe les Grandes Plaines entre les Appalaches et les Montagnes Rocheuses. Cette écorégion à prairie de zone tempérée est constituée d'une flore herbeuse de graminées, de composées et de légumineuses. Son nom lui vient des explorateurs français et n'a pas été anglicisé. Elle est l'équivalent de la steppe en Eurasie et de la pampa en Amérique du Sud. Aux États-Unis et au Canada, on fait parfois la distinction entre la végétation de taille basse des Hautes Plaines à l'ouest du 104e méridien terrestre et la végétation de taille moyenne et haute de l'est (depuis le sud du Manitoba jusqu'au centre du Texas). Lorsque cette distinction est faite, il est habituel de limiter le mot "prairie" aux zones de végétation moyenne à haute. La plus grande partie de ce territoire a été convertie en zone cultivée au cours des deux cents dernières années.[NEWLINE][NEWLINE]Les plaines sont de bonnes terres pour le pâturage des animaux et pour l'agriculture. Le [LINK=YIELD_COTTON]coton[\LINK] et l'[LINK=YIELD_INDIGO]indigo[\LINK] sur les plaines ainsi que le [LINK=YIELD_RED_PEPPER]poivre rouge[\LINK] sur les collines y poussent bien.</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Prärien[COLOR_REVERT] sind Ökosysteme, die von Ökologen als Teil der gemäßigten Grasländer, Savannen und Buschlandschaften betrachtet werden, basierend auf einem ähnlichen gemäßigten Klima, mäßigen Niederschlägen und einer Zusammensetzung aus Gräsern, Kräutern und Sträuchern als dominierender Vegetationsart. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können [LINK=FEATURE_FOREST]Laubwälder[\LINK] in der Prärie anpflanzen.[NEWLINE]Zu den gemäßigten Graslandregionen gehören die Pampas in Argentinien, Brasilien und Uruguay sowie die Steppen in Eurasien.[NEWLINE][NEWLINE]Die als "Prärie" bezeichneten Gebiete befinden sich meist in Nordamerika. Der Begriff umfasst das als Interior Lowlands bezeichnete Gebiet der Vereinigten Staaten, Kanadas und Mexikos, das die gesamten Great Plains sowie das feuchtere, etwas hügeligere Land im Osten einschließt.[NEWLINE][NEWLINE]In den Vereinigten Staaten besteht das Gebiet aus den meisten oder allen Bundesstaaten North Dakota, South Dakota, Nebraska, Kansas und Oklahoma sowie beträchtlichen Teilen der Bundesstaaten Montana, Wyoming, Colorado, New Mexico, Texas, Missouri, Iowa, Illinois, Indiana, Wisconsin sowie dem westlichen und südlichen Minnesota. Auch das Central Valley in Kalifornien ist eine Prärie. Die kanadischen Prärien erstrecken sich über weite Teile von Manitoba, Saskatchewan und Alberta.[NEWLINE][NEWLINE]Prärien sind gut geeignet für Weidewirtschaft und für Landwirtschaft. Gut wachsen im Flachland [LINK=YIELD_COTTON]Baumwolle[\LINK] und [LINK=YIELD_INDIGO]Indigo[\LINK] sowie [LINK=YIELD_RED_PEPPER]Roter Pfeffer[\LINK] auf Hügeln.</German>
-        <Italian>Le [COLOR_HIGHLIGHT_TEXT]praterie[COLOR_REVERT] sono ecosistemi considerati dagli ecologi parte del bioma delle praterie, savane e arbusteti temperati, in base a climi temperati simili, precipitazioni moderate e una composizione di erbe, erbe e arbusti, piuttosto che di alberi, come tipo di vegetazione dominante. Le regioni di prateria temperata comprendono le Pampas di Argentina, Brasile e Uruguay e le steppe dell'Eurasia.[NEWLINE][NEWLINE]Le terre definite "praterie" si trovano tendenzialmente in Nord America. Il termine comprende l'area denominata Interior Lowlands degli Stati Uniti, del Canada e del Messico, che include tutte le Grandi Pianure e le terre più umide e collinari a est.[NEWLINE][NEWLINE]Negli Stati Uniti, l'area è costituita dalla maggior parte o dalla totalità degli Stati del Nord Dakota, del Sud Dakota, del Nebraska, del Kansas e dell'Oklahoma, e da parti consistenti degli Stati del Montana, del Wyoming, del Colorado, del Nuovo Messico, del Texas, del Missouri, dell'Iowa, dell'Illinois, dell'Indiana, del Wisconsin e del Minnesota occidentale e meridionale. Anche la Central Valley della California è una prateria. Le praterie canadesi si estendono su vaste aree del Manitoba, del Saskatchewan e dell'Alberta.[NEWLINE][NEWLINE]Le pianure sono un buon terreno per il pascolo degli animali e per l'agricoltura. Il [LINK=YIELD_COTTON]cotone[\LINK] e l'[LINK=YIELD_INDIGO]indaco[\LINK] in pianura e il [LINK=YIELD_RED_PEPPER]pepe rosso[\LINK] in collina crescono bene.</Italian>
-        <Spanish>Las [COLOR_HIGHLIGHT_TEXT]praderas[COLOR_REVERT] son ecosistemas que los ecologistas consideran parte del bioma de los pastizales, sabanas y matorrales templados, basándose en climas templados similares, precipitaciones moderadas y una composición de gramíneas, hierbas y arbustos, en lugar de árboles, como tipo de vegetación dominante. Las regiones de praderas templadas incluyen las pampas de Argentina, Brasil y Uruguay, así como las estepas de Eurasia.[NEWLINE][NEWLINE]Las tierras denominadas "pradera" suelen estar en Norteamérica. El término engloba la zona denominada Tierras Bajas Interiores de Estados Unidos, Canadá y México, que incluye todas las Grandes Llanuras, así como las tierras más húmedas y algo más montañosas situadas al este.[NEWLINE][NEWLINE]En Estados Unidos, la zona está constituida por la mayor parte o la totalidad de los estados de Dakota del Norte, Dakota del Sur, Nebraska, Kansas y Oklahoma, y partes considerables de los estados de Montana, Wyoming, Colorado, Nuevo México, Texas, Misuri, Iowa, Illinois, Indiana, Wisconsin y el oeste y sur de Minnesota. El Valle Central de California también es una pradera. Las praderas canadienses se extienden por amplias zonas de Manitoba, Saskatchewan y Alberta.[NEWLINE][NEWLINE]Las llanuras son buenas tierras para el pastoreo de animales y para la agricultura. Allí crecen bien el [LINK=YIELD_COTTON]algodón[\LINK] y el [LINK=YIELD_INDIGO]índigo[\LINK] en las llanuras, así como el [LINK=YIELD_RED_PEPPER]pimiento rojo[\LINK] en las colinas.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_ROCK_STEPPES</Tag>
-        <English>Rock Steppes</English>
-        <French>Steppe rocheuse</French>
-        <German>Felssteppe</German>
-        <Italian>Steppa rocciosa</Italian>
-        <Spanish>Estepa rocosa</Spanish>
-        <Russian>Каменистые степи</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_ROCK_STEPPES_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Rock steppes[COLOR_REVERT] are barren plains with only a few shrubs or isolated trees. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] cannot plant any vegetation here.[NEWLINE][NEWLINE]Prospectors and miners like to explore there because there's no burden of topsoil to clear away.</English>
-        <French>Les [COLOR_HIGHLIGHT_TEXT]steppes rocheuses[COLOR_REVERT] sont des plaines arides avec seulement quelques arbustes ou arbres isolés.[NEWLINE][NEWLINE]Les prospecteurs et les mineurs aiment y faire de l'exploration car il n'y a pas de terre arable à enlever.</French>
-        <German>In einer [COLOR_HIGHLIGHT_TEXT]Felssteppe[COLOR_REVERT] lässt der Boden keine hohe Vegetation zu, da das Gestein dort bis knapp unter oder bis an die Oberfläche reicht. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier auch keine Vegetation anpflanzen.[NEWLINE][NEWLINE]Schürfer und Bergleute suchen dort gerne nach Rohstoffen, weil sie dort keinen Mutterboden abtragen müssen.</German>
-        <Italian>Le [COLOR_HIGHLIGHT_TEXT]steppe rocciose[COLOR_REVERT] sono pianure brulle con solo pochi arbusti o alberi isolati.[NEWLINE][NEWLINE]I cercatori d'oro e i minatori amano esplorare in queste zone perché non c'è un carico di terra da rimuovere.</Italian>
-        <Spanish>Las [COLOR_HIGHLIGHT_TEXT]estepas rocosas[COLOR_REVERT] son llanuras estériles con sólo unos pocos arbustos o árboles aislados.[NEWLINE][NEWLINE]A los prospectores y mineros les gusta explorar allí porque no hay carga de tierra vegetal que remover.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_SAVANNAH</Tag>
-        <English>Savanna</English>
-        <French>Savane</French>
-        <German>Savanne</German>
-        <Italian>Savana</Italian>
-        <Spanish>Sabana</Spanish>
-        <Russian>Саванна</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_SAVANNAH_PEDIA</Tag>
-        <English>A [COLOR_HIGHLIGHT_TEXT]savanna[COLOR_REVERT], or savannah, is a grassland ecosystem characterized by the trees being sufficiently widely spaced so that the canopy does not close. The open canopy allows enough light to reach the ground to support an unbroken herbaceous layer consisting primarily of grasses. Some classification systems also recognize a grassland savanna from which trees are absent. It is often believed that savannas feature widely spaced, scattered trees. However, in many savannas, tree densities are higher and trees are more regularly spaced than in forest.[NEWLINE][NEWLINE]Savannas are also characterized by seasonal water availability, with the majority of rainfall confined to one season. Savannas are associated with several types of biomes. Savannas are frequently in a transitional zone between forest and desert or grassland. Savanna covers approximately 20% of the Earth's land area.[NEWLINE][NEWLINE]Savannas are good land for grazing animals and for farming. [LINK=YIELD_COFFEE_BERRIES]Coffee berries[\LINK] and [LINK=YIELD_SUGAR]sugar[\LINK] on flatlands as well as [LINK=YIELD_COCA_LEAVES]coca leaves[\LINK] on hills grow well there. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] can grow [LINK=FEATURE_JUNGLE]jungle[\LINK] on savanna terrain.</English>
-        <French>La [COLOR_HIGHLIGHT_TEXT]savane[COLOR_REVERT] est une formation végétale propre aux régions chaudes à longue saison sèche et dominée par les plantes herbacées de la famille des Poacées. Elle est plus ou moins parsemée d'arbres ou d'arbustes. Selon la densité (dans l'ordre croissant) des espèces ligneuses, on parle de « savane herbeuse », de « savane arbustive », de « savane arborée », de « savane boisée », puis de forêt claire, la transition se faisant en général de manière progressive.[NEWLINE][NEWLINE]Les savanes sont de bonnes terres pour le pâturage des animaux et pour l'agriculture. Les [LINK=YIELD_COFFEE_BERRIES]baies de café[\LINK] et le [LINK=YIELD_SUGAR]sucre[\LINK] sur les plaines ainsi que les [LINK=YIELD_COCA_LEAVES]feuilles de coca[\LINK] sur les collines y poussent bien.</French>
-        <German>Die Savanne ist ein überwiegend subtropisches und tropisches terrestrisches Ökosystem, das zwischen 10 und 20° nördlicher und südlicher Breite liegt und durch eine Trocken- und eine Regenzeit gekennzeichnet ist.[NEWLINE][NEWLINE]Die Vegetation besteht überwiegend aus Sträuchern und Bäumen, die weit genug auseinander stehen, um kein geschlossenes Kronendach zu bilden.[NEWLINE][NEWLINE]Diese Art von Lebensraum findet sich in vielen Übergangszonen zwischen Regenwald und Wüste oder Steppe in Mittel-Afrika, Mittel- und Süd-Amerika, Indien, Indochina und Australien, kann aber auch in anderen Breitengraden vorkommen. Savannen können sich aufgrund bestimmter klimatischer Bedingungen, saisonaler (auch vom Menschen verursachter) Brände oder besonderer Faunenmerkmale bilden.[NEWLINE][NEWLINE]Savannen sind gut geeignet für Weidewirtschaft und für Landwirtschaft. Gut wachsen im Flachland [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] und [LINK=YIELD_SUGAR]Zucker[\LINK] sowie [LINK=YIELD_COCA_LEAVES]Coca-Blätter[\LINK] auf Hügeln. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier einen [LINK=FEATURE_JUNGLE]Dschungel[\LINK] anpflanzen.</German>
-        <Italian>La [COLOR_HIGHLIGHT_TEXT]savana[COLOR_REVERT] è un bioma terrestre soprattutto subtropicale e tropicale localizzato tra 10 e 20° di latitudine (N e S) e caratterizzato da una stagione secca e da una stagione umida.[NEWLINE][NEWLINE]La vegetazione è a prevalenza di arbusti e alberi abbastanza distanziati da non dar luogo a una volta chiusa.[NEWLINE][NEWLINE]Questo tipo di ambiente si trova in molte zone di transizione fra la foresta pluviale e il deserto o la steppa in Africa centrale, Centro e Sud America, India, Indocina e Australia, ma può essere presente anche ad altre latitudini. Le savane possono formarsi in seguito alla presenza di specifiche condizioni climatiche, oppure a causa di incendi stagionali (anche indotti dall'uomo) o particolari faune caratteristiche del suolo.[NEWLINE][NEWLINE]Le savane sono un buon terreno per il pascolo degli animali e per l'agricoltura. Le [LINK=YIELD_COFFEE_BERRIES]bacche di caffè[\LINK] e [LINK=YIELD_SUGAR]zucchero[\LINK] in pianura e le [LINK=YIELD_COCA_LEAVES]foglie di coca[\LINK] in collina crescono bene.</Italian>
-        <Spanish>La [COLOR_HIGHLIGHT_TEXT]sabana[COLOR_REVERT] es un bioma caracterizado por un estrato arbóreo-arbustivo en que su dosel arbóreo tiene una escasa cobertura, ya sea por árboles pequeños o por tener poca densidad de ellos, que le permite un estrato herbáceo continuo y generalmente alto. Combina características del bosque y del pastizal.[NEWLINE][NEWLINE]Normalmente, las sabanas son zonas secas de transición entre selvas y semidesiertos. Las sabanas se encuentran ubicadas en zonas tropicales y subtropicales, sobre todo con climas tropicales secos; aunque en ocasiones también se incluyen ecosistemas templados similares bajo esta denominación.[NEWLINE][NEWLINE]Las sabanas son buenas tierras para el pastoreo de animales y para la agricultura. Allí crecen bien [LINK=YIELD_COFFEE_BERRIES]bayas de café[\LINK] y [LINK=YIELD_SUGAR]azúcar[\LINK] en las llanuras, así como [LINK=YIELD_COCA_LEAVES]hojas de coca[\LINK] en las colinas.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_SHRUBLAND</Tag>
-        <English>Shrubland</English>
-        <French>Maquis</French>
-        <German>Buschland</German>
-        <Italian>Arbusteto</Italian>
-        <Spanish>Matorral</Spanish>
-        <Russian>Кустарниковая местность</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_SHRUBLAND_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Shrubland[COLOR_REVERT] is an area characterised by vegetation dominated by shrubs and bushes, often including grasses, herbaceous plants and geophytes. Shrubland can also arise as a consequence of human activity. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] cannot plant any vegetation here.[NEWLINE][NEWLINE]It may be the mature vegetation in a particular region and remain stable for a period, or a transient community that develops temporarily as a result of a disturbance, such as fire. Shrubland may be unsuitable for human habitation because of the danger of catastrophes such as fire.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Shrubland[COLOR_REVERT] suits a variety of yields. Food, cassava, cochineal, pigs, chickens, red peppers, grapes, clay, coca, olives, yerba leaves and sheep may all be found there. Along shrubland rivers there could be goats, ore, silver, gold or gems.</English>
-        <French>Un [COLOR_HIGHLIGHT_TEXT]maquis[COLOR_REVERT] ou une fruticée (du latin frutex, « arbrisseau ») est une formation végétale où dominent des arbustes, des arbrisseaux et des sous-arbrisseaux.[NEWLINE][NEWLINE]Cette formation peut correspondre à un stade intermédiaire transitoire dans la succession de végétation qui conduit jusqu'à la constitution d'une forêt. Elle peut dans des conditions naturelles plus ingrates représenter un stade stabilisé au-delà duquel la végétation ne connaîtra pas de développement plus important. Elle peut également caractériser un stade de régression à la suite de la dégradation d'un milieu forestier.[NEWLINE][NEWLINE]La [COLOR_HIGHLIGHT_TEXT]zone arbustive[COLOR_REVERT] convient à une variété de rendements. On peut y trouver de la nourriture, du manioc, de la cochenille, des cochons, des poulets, des poivrons rouges, du raisin, de l'argile, de la coca, des olives, des feuilles de yerba et des moutons. Le long des rivières arbustives, on peut trouver des chèvres, du minerai, de l'argent, de l'or ou des pierres précieuses.</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Buschland[COLOR_REVERT] hat eine Vegetation, die von Sträuchern und Büschen dominiert wird, zu der oft auch Gräser, krautige Pflanzen und Geophyten gehören. Buschland kann auch als Folge menschlicher Aktivitäten entstehen. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier keine Vegetation anpflanzen.[NEWLINE][NEWLINE]Es kann sich dabei um die ausgewachsene Vegetation in einer bestimmten Region handeln, die über einen bestimmten Zeitraum stabil bleibt, oder um eine vorübergehende Gemeinschaft, die sich infolge einer Störung, z. B. eines Brandes, vorübergehend entwickelt. Buschland kann wegen der Gefahr von Katastrophen wie Bränden für die menschliche Besiedlung ungeeignet sein.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Buschland[COLOR_REVERT] eignet sich für eine Vielzahl von Ressourcen. Nahrungsmittel, Maniok, Cochenille, Schweine, Hühner, Paprika, Weintrauben, Lehm, Koka, Oliven, Mate-Blätter und Schafe sind dort zu finden. Entlang von Buschlandflüssen könnten Ziegen, Erz, Silber, Gold oder Edelsteine zu finden sein.</German>
-        <Italian>L'[COLOR_HIGHLIGHT_TEXT]arbusteto[COLOR_REVERT] è un campo caratterizzato da una vegetazione dominata da arbusti e cespugli, spesso comprendente erbe, piante erbacee e geofite. La boscaglia può anche nascere come conseguenza dell'attività umana.[NEWLINE][NEWLINE]Può essere la vegetazione matura di una particolare regione e rimanere stabile per un certo periodo, oppure una comunità transitoria che si sviluppa temporaneamente in seguito a un disturbo, come un incendio. Gli arbusteti possono essere inadatti all'abitazione umana a causa del pericolo di catastrofi come gli incendi.[NEWLINE][NEWLINE]Gli [COLOR_HIGHLIGHT_TEXT]arboscelli[COLOR_REVERT] si adattano a una varietà di raccolti. Vi si possono trovare cibo, manioca, cocciniglia, maiali, polli, peperoni rossi, uva, argilla, coca, olive, foglie di yerba e pecore. Lungo i fiumi di arbusti possono trovarsi capre, minerali, argento, oro o gemme.</Italian>
-        <Spanish>El [COLOR_HIGHLIGHT_TEXT]matorral[COLOR_REVERT] o arbustal es un campo caracterizado por una vegetación dominada por arbustos y matas, y que a menudo incluye céspedes, plantas de porte herbáceo y plantas geófitas. El matorral también puede surgir como consecuencia de la actividad humana.[NEWLINE][NEWLINE]Puede ser la vegetación madura en una región particular y seguir de un modo estable durante un periodo, o una comunidad transitoria que se desarrolle temporalmente como resultado de un disturbio, tal como el fuego. El matorral puede ser inadecuado para la habitación humana debido al peligro de catástrofes como los incendios.[NEWLINE][NEWLINE]El [COLOR_HIGHLIGHT_TEXT]matorral[COLOR_REVERT] se adapta a diversos rendimientos. Puede haber alimentos, mandioca, cochinilla, cerdos, pollos, pimientos rojos, uvas, arcilla, coca, aceitunas, hojas de yerba y ovejas. A lo largo de los ríos de matorral puede haber cabras, mineral, plata, oro o gemas.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_SNOW</Tag>
-        <English>Permafrost</English>
-        <French>Permafrost</French>
-        <German>Permafrost</German>
-        <Italian>Permafrost</Italian>
-        <Spanish>Permafrost</Spanish>
-        <Russian>Вечная мерзлота</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_SNOW_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Permafrost[COLOR_REVERT] is permanently frozen, at least for two years, which makes it impermeable. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] cannot plant any vegetation here.[NEWLINE]Its formation, persistence or disappearance, and its thickness are very closely linked to climate change. This is why permafrost is studied as an indicator of global warming by a worldwide network of researchers using soundings, temperature measurements and satellite monitoring.</English>
-        <French>Le [COLOR_HIGHLIGHT_TEXT]permafrost[COLOR_REVERT], ou pergélisol, désigne la partie d'un sol gelé en permanence, au moins pendant deux ans, et de ce fait imperméable. Ses formations, persistance ou disparition, et son épaisseur sont très étroitement liées aux changements climatiques. C'est pourquoi le permafrost est étudié en tant qu'indicateur du réchauffement climatique par un réseau mondial de chercheurs s'appuyant sur des sondages, des mesures de température et un suivi satellitaire.</French>
-        <German>Der [COLOR_HIGHLIGHT_TEXT]Permafrost[COLOR_REVERT], auch Permafrostboden genannt, bezeichnet den Teil eines Bodens, der dauerhaft, mindestens zwei Jahre lang, gefroren und damit undurchlässig ist. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier keine Vegetation anpflanzen.[NEWLINE] Seine Formationen, sein Fortbestehen oder Verschwinden und seine Dicke sind sehr eng mit dem Klimawandel verknüpft. Aus diesem Grund wird der Permafrost als Indikator für die globale Erwärmung von einem weltweiten Netzwerk von Forschern untersucht, die sich auf Probebohrungen, Temperaturmessungen und Satellitenüberwachung stützen.</German>
-        <Italian>Il [COLOR_HIGHLIGHT_TEXT]permafrost[COLOR_REVERT], o permafrost, si riferisce alla parte del terreno che è permanentemente congelata, almeno per due anni, e quindi impermeabile. La sua formazione, persistenza o scomparsa e il suo spessore sono strettamente legati ai cambiamenti climatici. Per questo motivo il permafrost viene studiato come indicatore del riscaldamento globale da una rete mondiale di ricercatori che utilizza scandagli, misure di temperatura e monitoraggio satellitare.</Italian>
-        <Spanish>El [COLOR_HIGHLIGHT_TEXT]permafrost[COLOR_REVERT], o permahielo, se refiere a la parte del suelo que está permanentemente congelada, al menos durante dos años, y por tanto impermeable. Su formación, persistencia o desaparición, y su espesor están muy estrechamente ligados al cambio climático. Por ello, una red mundial de investigadores estudia el permafrost como indicador del calentamiento global mediante sondeos, mediciones de temperatura y seguimiento por satélite.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_TAIGA</Tag>
-        <English>Taiga</English>
-        <French>
-            <Text>Taïga</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Taiga</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Taiga:Taiga</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Taiga:Taiga</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Тайга</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_TAIGA_PEDIA</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]taiga[COLOR_REVERT] is characterized by coniferous forests consisting mostly of pines, spruces, and larches. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant [LINK=FEATURE_ANCIENT_FOREST]ancient northern forest[\LINK] on taiga terrain.[NEWLINE]Over the last 12,000 years it's come to cover much of the cold part of the world. It was originally mammoth steppe. Its very large seasonal temperature ranges suit the growth of boreal forest. Forests are largely coniferous.</English>
-        <French>La [COLOR_HIGHLIGHT_TEXT]taïga[COLOR_REVERT] est caractérisée par des forêts de conifères composées principalement de pins, d'épicéas et de mélèzes. Au cours des 12 000 dernières années, elle a fini par couvrir une grande partie de la partie froide du monde. C'était à l'origine une steppe à mammouths. Ses très grandes amplitudes thermiques saisonnières sont propices à la croissance de la forêt boréale. Les forêts sont en grande partie constituées de conifères.</French>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Taiga[COLOR_REVERT] ist durch Nadelwälder gekennzeichnet, die hauptsächlich aus Kiefern, Fichten und Lärchen bestehen. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier [LINK=FEATURE_ANCIENT_FOREST]alten Nordwald[\LINK] anpflanzen.[NEWLINE]In den letzten 12.000 Jahren hat sie einen Großteil des kalten Teils der Welt bedeckt. Ursprünglich war sie eine Mammutsteppe. Die sehr großen jahreszeitlichen Temperaturschwankungen begünstigen das Wachstum der borealen Wälder. Die Wälder bestehen größtenteils aus Nadelbäumen.</German>
-        <Italian>La [COLOR_HIGHLIGHT_TEXT]taiga[COLOR_REVERT] è caratterizzata da foreste di conifere costituite per lo più da pini, abeti e larici. Negli ultimi 12.000 anni è arrivata a coprire gran parte della parte fredda del mondo. In origine era una steppa di mammut. Le sue forti escursioni termiche stagionali favoriscono la crescita della foresta boreale. Le foreste sono in gran parte di conifere.</Italian>
-        <Spanish>La [COLOR_HIGHLIGHT_TEXT]taiga[COLOR_REVERT] se caracteriza por bosques de coníferas formados principalmente por pinos, abetos y alerces. En los últimos 12.000 años ha llegado a cubrir gran parte de la zona fría del mundo. Originalmente era la estepa de los mamuts. Su gran amplitud térmica estacional favorece el crecimiento del bosque boreal. Los bosques son en gran parte de coníferas.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_TUNDRA</Tag>
-        <English>Tundra</English>
-        <French>
-            <Text>Toundra</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Tundra</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Tundra:Tundre</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Tundra:Tundras</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Тундра</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_TUNDRA_PEDIA</Tag>
-        <English>In physical geography, [COLOR_HIGHLIGHT_TEXT]tundra[COLOR_REVERT] is where tree growth is hindered by low temperatures and short growing seasons, but [LINK=PROFESSION_PIONEER]pioneers[\LINK] can still plant [LINK=FEATURE_FOREST_TUNDRA]northern forest[\LINK] there.[NEWLINE]The word "tundra" comes through Russian from the Kildin Sami word "tundâr" ("uplands"), describing a treeless mountain tract. There are three types of tundra: Arctic tundra, alpine tundra, and Antarctic tundra. Tundra vegetation is dwarf shrubs, sedges and grasses, mosses, and lichens. Scattered trees grow in some tundra. The ecological boundary region between tundra and forest is known as the tree line.</English>
-        <French>La [COLOR_HIGHLIGHT_TEXT]toundra[COLOR_REVERT], terme emprunté au russe, lui-même emprunté au same désigne la formation végétale circumpolaire. Elle forme un cercle autour du pôle de plus de huit millions de km², soit 6 % des terres émergées. Du fait de la répartition des terres émergées sur la planète, la toundra n'existe pratiquement que dans l'hémisphère nord.</French>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] ist ein Gebiet, in dem das Wachstum von Bäumen durch niedrige Temperaturen und kurze Wachstumsperioden behindert wird. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können dort jedoch [LINK=FEATURE_FOREST_TUNDRA]Nordwald[\LINK] anpflanzen.[NEWLINE]Das Wort "Tundra" stammt aus dem Russischen von dem kildinsamischen Wort "tundâr" ("Hochland"), das eine baumlose Gebirgslandschaft beschreibt. Es gibt drei Arten von Tundra: die arktische Tundra, die alpine Tundra und die antarktische Tundra. Die Vegetation der Tundra besteht aus Zwergsträuchern, Seggen und Gräsern, Moosen und Flechten. In einigen Tundren wachsen vereinzelte Bäume. Der ökologische Grenzbereich zwischen Tundra und Wald wird als Baumgrenze bezeichnet.</German>
-        <Italian>In geografia, la [COLOR_HIGHLIGHT_TEXT]tundra[COLOR_REVERT] è il luogo in cui la crescita degli alberi è ostacolata dalle basse temperature e dalle brevi stagioni di crescita. La parola "tundra" deriva in russo dalla parola Kildin Sami "tundâr" ("altopiano"), che descrive un tratto di montagna privo di alberi. Esistono tre tipi di tundra: tundra artica, tundra alpina e tundra antartica. La vegetazione della tundra è costituita da arbusti nani, carici ed erbe, muschi e licheni. In alcune zone della tundra crescono alberi sparsi. La regione di confine ecologico tra tundra e foresta è nota come linea degli alberi.</Italian>
-        <Spanish>En geografía, la [COLOR_HIGHLIGHT_TEXT]tundra[COLOR_REVERT] es el lugar donde el crecimiento de los árboles se ve obstaculizado por las bajas temperaturas y las cortas temporadas de crecimiento. La palabra "tundra" procede del ruso de la palabra kildin sami "tundâr" ("tierras altas"), que describe una zona montañosa sin árboles. Hay tres tipos de tundra: la tundra ártica, la tundra alpina y la tundra antártica. La vegetación de la tundra está formada por arbustos enanos, juncias y gramíneas, musgos y líquenes. En algunas tundras crecen árboles dispersos. La región ecológica limítrofe entre la tundra y el bosque se conoce como límite arbóreo.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_WETLAND</Tag>
-        <English>Wetland</English>
-        <French>Marécage</French>
-        <German>Moor</German>
-        <Italian>Zona umida</Italian>
-        <Spanish>Humedal</Spanish>
-        <Russian>Заболоченная местность</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_WETLAND_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] is like a [LINK=TERRAIN_MARSH]marsh[\LINK]. Wetlands are more common in temperate climates. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] can drain marshes and wetlands but it's a slow expensive process. When drained, wetlands turn into [LINK=TERRAIN_GRASS]grassland[\LINK]. Pioneers cannot plant any vegetation on wetlands.</English>
-        <French>Un [COLOR_HIGHLIGHT_TEXT]Marécage[COLOR_REVERT], ou milieu humide, dénomination dérivant du terme anglais wetland, est une région où le principal facteur d'influence du biotope et de sa biocénose est l'eau. Elles jouent un rôle majeur en ce qui concerne le cycle de l'eau et le cycle du carbone.</French>
-        <German>Ein [COLOR_HIGHLIGHT_TEXT]Moor[COLOR_REVERT] oder Feuchtbiotop ist ein Gebiet, das im Übergangsbereich von trockenen zu dauerhaft feuchten Ökosystemen liegt. Moore können durch [LINK=PROFESSION_PIONEER]Pioniere[\LINK] trockengelegt werden, wodurch sie zu [LINK=TERRAIN_GRASS]Grasland[\LINK] werden. Vegetation kann in Mooren nicht durch Pioniere angepflanzt werden.[NEWLINE] Der Begriff des Feuchtgebiets umfasst verschiedene Lebensraumtypen der Flora und Fauna wie Aue, Bruchwald, Feuchtwiese, Moor, Ried, Sumpf und Marschland, die an den ganzjährigen Überschuss von Wasser angepasst sind. Feuchtgebiete haben eine hohe Bedeutung für Ökologie, Klimaschutz und Hochwasserschutz.</German>
-        <Italian>Per [COLOR_HIGHLIGHT_TEXT]zona umida[COLOR_REVERT] si intende genericamente qualsiasi tipo di ambiente naturale caratterizzato in qualche modo dalla compresenza di terreno e acqua. </Italian>
-        <Spanish>Un [COLOR_HIGHLIGHT_TEXT]humedal[COLOR_REVERT] es una zona de tierra, generalmente plana, cuya superficie se inunda de manera permanente o intermitente. Al cubrirse regularmente de agua, el suelo se satura, quedando desprovisto de oxígeno y da lugar a un ecosistema híbrido entre los puramente acuáticos y los terrestres.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_LARGE_RIVERS</Tag>
-        <English>Large River</English>
-        <French>Grand fleuve</French>
-        <German>Großer Strom</German>
-        <Italian>Fiume grande</Italian>
-        <Spanish>Gran río</Spanish>
-        <Russian>Большая река</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_LARGE_RIVERS_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Large rivers[COLOR_REVERT] like the Mississippi, Missouri or Amazonas were crucial for the expansion and trade in the New World. They served as natural trade routes between coastal colonies and the deeper colonial heartlands. Thus many early settlements were founded along them.</English>
-        <French>Les [COLOR_HIGHLIGHT_TEXT]grands fleuves[COLOR_REVERT] comme le Mississippi, le Missouri ou l'Amazone ont été déterminants pour le développement des colonies et le commerce entre les colonies. Ils servaient de routes commerciales naturelles et de voies de communication entre les villes côtières et les terres intérieures peu développées. C'est pourquoi de nombreuses premières colonies ont été établies le long de grands fleuves.</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Große Ströme[COLOR_REVERT] wie der Mississippi, Missouri oder Amazonas waren entscheidend für die Entwicklung der Kolonien und den Handel zwischen den Kolonien. Diese dienten als natürliche Handelsstraßen und Verkehrswege zwischen den Küstenstädten und dem wenig erschlossenen Binnenland. Daher wurden viele frühe Siedlungen entlang großer Ströme gegründet.</German>
-        <Italian>[COLOR_HIGHLIGHT_TEXT]Grandi fiumi[COLOR_REVERT] come il Mississippi, il Missouri o il Rio delle Amazzoni furono fondamentali per lo sviluppo delle colonie e per il commercio tra di esse. Questi servivano come vie commerciali e di trasporto naturali tra le città costiere e le aree interne meno sviluppate. Per questo motivo, molti dei primi insediamenti furono fondati lungo i grandi fiumi.</Italian>
-        <Spanish>Los [COLOR_HIGHLIGHT_TEXT]grandes ríos[COLOR_REVERT] como el Misisipi, el Misuri o el Amazonas fueron cruciales para el desarrollo de las colonias y el comercio entre ellas. Servían de rutas comerciales naturales y vías de transporte entre las ciudades costeras y las zonas menos desarrolladas del interior. Por ello, muchos de los primeros asentamientos se fundaron a lo largo de grandes ríos.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_LAKE</Tag>
-        <English>Lake</English>
-        <French>Lac d'eau douce</French>
-        <German>Süßwassersee</German>
-        <Italian>Lago d'acqua dolce</Italian>
-        <Spanish>Lago de agua dulce</Spanish>
-        <Russian>Пресноводное озеро</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_LAKE_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Lakes[COLOR_REVERT] are typically found in mountain ranges, or where their beds were hollowed out by glaciers at the end of the last ice age. They’re fresh water, larger than ponds, and often are part of a river system.[NEWLINE][NEWLINE]Waterways often radiate out from mountains or run parallel along glacial gouges. Canada famously has a deranged drainage pattern because the basins are still too young.[NEWLINE][NEWLINE]Fishing is often good and travel across lakes is calm compared to fighting river currents, though great lakes can be as stormy as the ocean.[NEWLINE][NEWLINE]Because lakes hold enough water to moderate the local climate, they have always been a desirable place to live.</English>
-        <French>Les grands [COLOR_HIGHLIGHT_TEXT]lacs d'eau douce[COLOR_REVERT] se trouvent généralement à proximité des montagnes. Certains se trouvent également dans des régions où les glaciers ont laissé de grands bas-fonds lors de la dernière période glaciaire. Les grands lacs d'eau douce sont généralement alimentés par des rivières. C'est pourquoi ils ne s'assèchent pas et peuvent devenir beaucoup plus grands que les étangs, qui peuvent aussi se former uniquement par la pluie.[NEWLINE][NEWLINE]Les lacs d'eau douce offrent souvent d'excellents lieux de pêche. Contrairement aux rivières qui s'écoulent rapidement, il n'y a pas de courant et la surface calme du lac ne présente pas de vagues. Cependant, les très grands lacs d'eau douce peuvent être très venteux en cas de tempête.[NEWLINE][NEWLINE]Comme les grands lacs d'eau douce ont suffisamment d'eau pour stocker la chaleur, le climat qui les entoure est généralement tempéré. C'est pourquoi ils ont toujours été des zones d'habitation appréciées.</French>
-        <German>Größere [COLOR_HIGHLIGHT_TEXT]Süßwasserseen[COLOR_REVERT] werden üblicherweise in der Nähe von Gebirgen gefunden. Manche finden sich auch in Regionen, in denen Gletscher in der letzten Eiszeit größere Untiefen hinterließen. Größere Süßwasserseen werden meist von Flüssen gespeist. Daher trocknen sie nicht aus und können deutlich größer als Teiche werden, die auch alleine durch Regen entstehen können.[NEWLINE][NEWLINE]Süßwasserseen bieten oftmals hervorragende Fischfanggründe. Im Gegensatz zu schnell fließenden Flüssen gibt es auch kaum Strömungen und die ruhige Seeoberfläche zeigt kaum Wellengang. Jedoch kann es auf sehr großen Süßwasserseen bei Stürmen auch sehr windig werden.[NEWLINE][NEWLINE]Da größere Süßwasserseen genug Wasser zur Wärmespeicherung haben, ist das Klima in ihrer Umgebung meist gemäßigt. Daher sind sie seit jeher beliebte Siedlungsgebiete.</German>
-        <Italian>I [COLOR_HIGHLIGHT_TEXT]laghi d'acqua dolce [COLOR_REVERT]più grandi si trovano di solito vicino alle montagne. Alcuni si trovano anche in regioni dove i ghiacciai hanno lasciato banchi più grandi durante l'ultima era glaciale. I laghi d'acqua dolce più grandi sono solitamente alimentati da fiumi. Per questo motivo, non si prosciugano e possono diventare molto più grandi degli stagni, che si formano anche solo con la pioggia.[NEWLINE][NEWLINE]I laghi d'acqua dolce sono spesso ottime zone di pesca. A differenza dei fiumi che scorrono veloci, non ci sono correnti e la superficie calma del lago non presenta quasi onde. Tuttavia, i laghi d'acqua dolce molto grandi possono anche diventare molto ventosi durante le tempeste.[NEWLINE][NEWLINE]Poiché i laghi d'acqua dolce più grandi hanno abbastanza acqua per immagazzinare il calore, il clima intorno a loro è solitamente temperato. Per questo motivo, sono sempre state aree di insediamento popolari.</Italian>
-        <Spanish>Los [COLOR_HIGHLIGHT_TEXT]lagos de agua dulce[COLOR_REVERT] más grandes suelen encontrarse cerca de las montañas. Algunos también se encuentran en regiones donde los glaciares dejaron bancos más grandes durante la última glaciación. Los lagos de agua dulce más grandes suelen estar alimentados por ríos. Por lo tanto, no se secan y pueden llegar a ser mucho más grandes que los estanques, que también pueden formarse sólo con la lluvia[NEWLINE][NEWLINE]Los lagos de agua dulce suelen ser excelentes lugares de pesca. A diferencia de los ríos caudalosos, tampoco hay apenas corrientes y la tranquila superficie del lago apenas muestra olas. Sin embargo, los lagos de agua dulce muy grandes también pueden volverse muy ventosos durante las tormentas.[NEWLINE][NEWLINE]Como los lagos de agua dulce más grandes tienen suficiente agua para almacenar calor, el clima que los rodea suele ser templado. Por ello, siempre han sido zonas de asentamiento populares.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_ICE_LAKE</Tag>
-        <English>Ice Lake</English>
-        <French>Lac de glace</French>
-        <German>Eissee</German>
-        <Italian>Lago di ghiaccio</Italian>
-        <Spanish>Lago de hielo</Spanish>
-        <Russian>Заледеневшее озеро</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_ICE_LAKE_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Ice lakes[COLOR_REVERT] are typically found in mountain ranges, or where their beds were hollowed out by glaciers at the end of the last ice age. They’re fresh water, larger than ponds, and often are part of a river system.[NEWLINE][NEWLINE]Ice lakes must thaw for at least part of the year or else they'd be glaciers. Often they're adjacent to glaciers.[NEWLINE][NEWLINE]Fishing can be good and travel across lakes is calm compared to fighting river currents. They're often the flattest route through the mountains, though falling through the ice is a potentially fatal risk.</English>
-        <French>Les [COLOR_HIGHLIGHT_TEXT]lacs de glace[COLOR_REVERT]se trouvent généralement dans les chaînes de montagnes, ou là où leur lit a été creusé par les glaciers à la fin de la dernière période glaciaire. Ce sont des eaux douces, plus grandes que des étangs, et ils font souvent partie d'un réseau fluvial.[NEWLINE][NEWLINE]Les lacs de glace doivent dégeler au moins une partie de l'année, sinon ils seraient des glaciers. Ils sont souvent adjacents à des glaciers.[NEWLINE][NEWLINE]La pêche peut être bonne et la traversée des lacs est plus calme que la lutte contre les courants des rivières. Ils constituent souvent la route la plus plate à travers les montagnes, bien que la chute à travers la glace soit un risque potentiellement mortel.</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Eisseen[COLOR_REVERT] findet man in der Regel in Gebirgszügen oder dort, wo ihr Grund am Ende der letzten Eiszeit von Gletschern ausgehöhlt wurde. Sie sind Süßwasserseen, größer als Teiche, und oft Teil eines Flusssystems.[NEWLINE][NEWLINE]Eisseen müssen zumindest einen Teil des Jahres auftauen, sonst wären sie Gletscher. Oft grenzen sie an Gletscher.[NEWLINE][NEWLINE]Man kann gut angeln, und die Fahrt über die Seen ist ruhiger als der Kampf gegen Flussströmungen. Sie sind oft die flachste Route durch die Berge, obwohl ein Sturz durch das Eis ein potenziell tödliches Risiko darstellt.</German>
-        <Italian>I [COLOR_HIGHLIGHT_TEXT]laghi di ghiaccio[COLOR_REVERT]si trovano tipicamente nelle catene montuose o dove i loro letti sono stati scavati dai ghiacciai alla fine dell'ultima era glaciale. Sono d'acqua dolce, più grandi degli stagni, e spesso fanno parte di un sistema fluviale.[NEWLINE][NEWLINE]I laghi di ghiaccio devono scongelarsi per almeno una parte dell'anno, altrimenti sarebbero ghiacciai. Spesso sono adiacenti ai ghiacciai.[NEWLINE][NEWLINE]La pesca può essere buona e gli spostamenti attraverso i laghi sono più tranquilli rispetto alle correnti dei fiumi. Sono spesso il percorso più pianeggiante attraverso le montagne, anche se la caduta nel ghiaccio è un rischio potenzialmente fatale.</Italian>
-        <Spanish>Los [COLOR_HIGHLIGHT_TEXT]lagos de hielo[COLOR_REVERT]suelen encontrarse en cadenas montañosas o donde los glaciares excavaron sus lechos al final de la última glaciación. Son de agua dulce, más grandes que los estanques, y a menudo forman parte de un sistema fluvial.[NEWLINE][NEWLINE]Los lagos de hielo deben descongelarse al menos durante una parte del año, de lo contrario serían glaciares. A menudo son adyacentes a glaciares.[NEWLINE][NEWLINE]La pesca puede ser buena y el viaje a través de los lagos es tranquilo en comparación con la lucha contra las corrientes fluviales. Suelen ser la ruta más llana para atravesar las montañas, aunque caerse por el hielo es un riesgo potencialmente mortal.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_COAST</Tag>
-        <English>Coast</English>
-        <French>
-            <Text>Côte</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Küste</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Costa:Coste</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Costa:Costas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Побережье</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_COAST_PEDIA</Tag>
-        <English>The [COLOR_HIGHLIGHT_TEXT]coastline[COLOR_REVERT] is where the land meets the sea or ocean. A precise line that can be called a coastline cannot be determined due to the dynamic nature of tides. The term "coastal zone" can be used instead, which is a spatial zone where interaction of the sea and land occurs. Both the terms coast and coastal are often used to describe a geographic location or region; for example, New Zealand's West Coast, or the East and West Coasts of the United States.</English>
-        <French>Le [COLOR_HIGHLIGHT_TEXT]littoral[COLOR_REVERT] est la bande de terre qui sépare la zone comprise entre une étendue maritime et le continent, ou l'arrière-pays. Selon les échelles retenues, le littoral peut s'étendre de quelques centaines de mètres à plusieurs kilomètres de part et d'autre de la limite terre-eau ou au sens strict, correspondre à l'estran.</French>
-        <German>Die [COLOR_HIGHLIGHT_TEXT]Küste[COLOR_REVERT] ist der Landstreifen, der den Bereich zwischen einem Meeresgebiet und dem Festland bzw. dem Hinterland abgrenzt. Je nach Maßstab kann sich die Küste von einigen hundert Metern bis zu mehreren Kilometern auf beiden Seiten der Land-Wasser-Grenze erstrecken oder im engeren Sinne dem Vorland entsprechen.</German>
-        <Italian>La [COLOR_HIGHLIGHT_TEXT]linea di costa[COLOR_REVERT] è la striscia di terra che separa l'area tra un tratto di mare e la terraferma, o l'entroterra. A seconda della scala utilizzata, la linea di costa può estendersi da poche centinaia di metri a diversi chilometri su entrambi i lati del confine terra-acqua o, in senso stretto, corrispondere alla battigia.</Italian>
-        <Spanish>El [COLOR_HIGHLIGHT_TEXT]litoral[COLOR_REVERT] es la franja de tierra que separa la zona entre una franja de mar y el continente, o el interior. Según la escala utilizada, la línea de costa puede extenderse desde unos cientos de metros hasta varios kilómetros a ambos lados del límite tierra-agua o, en sentido estricto, corresponder a la playa.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_SHALLOW_COAST</Tag>
-        <English>Shallow Coast</English>
-        <French>Eaux côtières peu profondes</French>
-        <German>Seichte Küste</German>
-        <Italian>Acque costiere poco profonde</Italian>
-        <Spanish>Aguas costeras poco profundas</Spanish>
-        <Russian>Мелководье</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_SHALLOW_COAST_PEDIA</Tag>
-        <English>[COLOR_HIGHLIGHT_TEXT]Shallow coast[COLOR_REVERT] is impassable to large ocean-going ships with deep drafts. Ships that travel along large rivers, i.e. coastal ships and minor warships, can also move across shallow coast tiles.</English>
-        <French>Les [COLOR_HIGHLIGHT_TEXT]eaux côtières peu profondes[COLOR_REVERT] ne sont pas praticables par les grands navires de haute mer en raison de leur grand tirant d'eau. Les navires qui peuvent également naviguer sur de grands fleuves, c'est-à-dire les caboteurs et les petits navires de guerre, peuvent également naviguer dans les eaux côtières peu profondes.</French>
-        <German>[COLOR_HIGHLIGHT_TEXT]Seichte Küstengewässer[COLOR_REVERT] sind für große hochseetaugliche Schiffe wegen ihres großen Tiefgangs nicht passierbar. Schiffe, die auch große Flüsse befahren können, also Küstenschiffe und kleinere Kriegsschiffe, können auch seichte Küstengewässer befahren.</German>
-        <Italian>Le [COLOR_HIGHLIGHT_TEXT]acque costiere poco profonde[COLOR_REVERT] non sono percorribili dalle grandi navi oceaniche a causa del loro grande pescaggio. Le navi che possono navigare su grandi fiumi, cioè le navi costiere e le navi da guerra più piccole, possono anche navigare in acque costiere poco profonde.</Italian>
-        <Spanish>Las [COLOR_HIGHLIGHT_TEXT]aguas costeras poco profundas[COLOR_REVERT] no son transitables para los grandes buques oceánicos debido a su gran calado. Los buques que también pueden navegar por grandes ríos, es decir, los buques costeros y los buques de guerra más pequeños, también pueden navegar por aguas costeras poco profundas.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_OCEAN</Tag>
-        <English>Ocean</English>
-        <French>
-            <Text>Océan</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Ozean</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Oceano:Oceani</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Océano:Océanos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Океан</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_OCEAN_PEDIA</Tag>
-        <English>An [COLOR_HIGHLIGHT_TEXT]ocean[COLOR_REVERT] is often defined in geography as a vast expanse of salt water. In fact, it is more of a volume, with water constantly being renewed by ocean currents. Approximately 70.7% of the Earth's surface is covered by the world ocean, commonly divided into five oceans and several dozen seas.</English>
-        <French>Un [COLOR_HIGHLIGHT_TEXT]océan[COLOR_REVERT] est souvent défini, en géographie, comme une vaste étendue d'eau salée. En fait, il s'agit plutôt d'un volume, dont l'eau est en permanence renouvelée par des courants marins. Approximativement 70,7 % de la surface de la Terre est recouverte par l'océan mondial, communément divisé en cinq océans et en plusieurs dizaines de mers.</French>
-        <German>Ein [COLOR_HIGHLIGHT_TEXT]Ozean[COLOR_REVERT] wird in der Geografie oft als eine große Fläche Salzwasser definiert. Tatsächlich handelt es sich aber eher um ein Volumen, dessen Wasser durch Meeresströmungen ständig erneuert wird. Etwa 70,7 % der Erdoberfläche sind vom Weltozean bedeckt, der gemeinhin in fünf Ozeane und mehrere Dutzend Meere unterteilt wird.</German>
-        <Italian>Un [COLOR_HIGHLIGHT_TEXT]oceano[COLOR_REVERT] è spesso definito in geografia come una vasta distesa di acqua salata. In realtà, si tratta piuttosto di un volume, con l'acqua che viene costantemente rinnovata dalle correnti oceaniche. Circa il 70,7% della superficie terrestre è coperto dall'oceano mondiale, comunemente suddiviso in cinque oceani e diverse decine di mari.</Italian>
-        <Spanish>Un [COLOR_HIGHLIGHT_TEXT]océano[COLOR_REVERT] suele definirse en geografía como una vasta extensión de agua salada. De hecho, se trata más bien de un volumen, con agua que se renueva constantemente gracias a las corrientes oceánicas. Aproximadamente el 70,7% de la superficie de la Tierra está cubierta por el océano mundial, comúnmente dividido en cinco océanos y varias docenas de mares.</Spanish>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_DESERT</Tag>
+		<English>Desert</English>
+		<French>
+			<Text>Désert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Wüste</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Deserto:Deserti</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Desierto:Desiertos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Пустыня</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_DESERT_PEDIA</Tag>
+		<English>A [COLOR_HIGHLIGHT_TEXT]desert[COLOR_REVERT] is a landscape or region that receives an extremely low amount of precipitation, not enough for most plants to survive. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] cannot plant any vegetation here.[NEWLINE]Deserts have an average annual precipitation of less than 250 millimetres (10 inches) per year, or they lose more water by evaporation than they receive as precipitation. A desert landscape can be recognised by its bare appearance over large areas, with no significant human presence.[NEWLINE][NEWLINE]In the Köppen climate classification system, deserts are classed as BWh (hot desert) or BWk (temperate desert). In the Thornthwaite climate classification system, deserts are classified as arid megathermal climates.</English>
+		<French>Un [COLOR_HIGHLIGHT_TEXT]désert[COLOR_REVERT] est un paysage ou une région qui reçoit une quantité extrêmement faible de précipitations, insuffisante pour la survie de la plupart des plantes. Les déserts ont des précipitations annuelles moyennes inférieures à 250 millimètres (10 pouces) par an, ou ils perdent plus d'eau par évaporation qu'ils n'en reçoivent sous forme de précipitations. Un paysage désertique se reconnaît à son aspect dénudé sur de vastes surfaces, sans présence humaine réellement importante.[NEWLINE][NEWLINE]Dans le système de classification climatique de Köppen, les déserts sont classés en BWh (désert chaud) ou BWk (désert tempéré). Dans le système de classification climatique de Thornthwaite, les déserts sont classés dans la catégorie des climats mégathermiques arides.</French>
+		<German>Eine [COLOR_HIGHLIGHT_TEXT]Wüste[COLOR_REVERT] ist eine Landschaft oder Region, in der extrem wenig Niederschlag fällt, der für die meisten Pflanzen nicht zum Überleben ausreicht. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier auch keine Vegetation anpflanzen.[NEWLINE]Wüsten haben einen durchschnittlichen Jahresniederschlag von weniger als 250 Millimetern (10 Zoll) pro Jahr, oder sie verlieren mehr Wasser durch Verdunstung als sie als Niederschlag erhalten. Eine Wüstenlandschaft erkennt man daran, dass sie über weite Flächen kahl ist und keine wirklich große menschliche Präsenz aufweist.[NEWLINE][NEWLINE]Im Köppen-Klimaklassifikationssystem werden Wüsten als BWh (heiße Wüste) oder BWk (gemäßigte Wüste) eingestuft. Im Klimaklassifizierungssystem von Thornthwaite werden Wüsten als aride megathermische Klimazonen eingestuft.</German>
+		<Italian>Un [COLOR_HIGHLIGHT_TEXT]deserto[COLOR_REVERT] è un paesaggio o una regione che riceve una quantità di precipitazioni estremamente bassa, non sufficiente per la sopravvivenza della maggior parte delle piante. I deserti hanno una media annuale di precipitazioni inferiore a 250 millimetri (10 pollici) all'anno, ovvero perdono più acqua per evaporazione di quanta ne ricevano come precipitazioni. Un paesaggio desertico si riconosce per il suo aspetto spoglio su vaste aree, senza alcuna presenza umana significativa.[NEWLINE][NEWLINE]Nel sistema di classificazione climatica di Köppen, i deserti sono classificati come BWh (deserto caldo) o BWk (deserto temperato). Nel sistema di classificazione climatica Thornthwaite, i deserti sono classificati come climi megatermici aridi.</Italian>
+		<Spanish>Un [COLOR_HIGHLIGHT_TEXT]desierto[COLOR_REVERT] es un paisaje o región que recibe una cantidad de precipitaciones extremadamente baja, insuficiente para que la mayoría de las plantas sobrevivan. Los desiertos tienen una precipitación media anual inferior a 250 milímetros (10 pulgadas) al año, o pierden más agua por evaporación de la que reciben en forma de precipitaciones. Un paisaje desértico se reconoce por su aspecto desnudo en grandes extensiones, sin presencia humana significativa.[NEWLINE][NEWLINE]En el sistema de clasificación climática de Köppen, los desiertos se clasifican como BWh (desierto cálido) o BWk (desierto templado). En el sistema de clasificación climática de Thornthwaite, los desiertos se clasifican como climas áridos megatérmicos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_GRASS</Tag>
+		<English>Grassland</English>
+		<French>Prairies</French>
+		<German>Grasland</German>
+		<Italian>Praterie</Italian>
+		<Spanish>Herbazal</Spanish>
+		<Russian>Луга</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_GRASS_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Grasslands[COLOR_REVERT] are areas where the vegetation is dominated by grasses and other herbaceous (non-woody) plants. Sedge and rush families can also be found. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant [LINK=FEATURE_FOREST_EVERGREEN]coniferous forests[\LINK] here.[NEWLINE]Grasslands occur naturally on every continent except Antarctica. In temperate latitudes, such as northwest Europe or the Great Plains in North America, native grasslands are dominated by perennial bunch grass species, whereas in warmer climates annual species make up more of the vegetation.[NEWLINE][NEWLINE]Grassland is good land for grazing animals and for farming. [LINK=YIELD_HEMP]Hemp[\LINK] and [LINK=YIELD_TOBACCO]tobacco[\LINK] on flatlands as well as [LINK=YIELD_GRAPES]grapes[\LINK] on hills grow well there.</English>
+		<French>Les [COLOR_HIGHLIGHT_TEXT]prairies[COLOR_REVERT] sont des zones où la végétation est dominée par des graminées et d'autres plantes herbacées (non ligneuses). On peut également y trouver des familles de carex et de joncs. Les prairies sont présentes naturellement sur tous les continents, à l'exception de l'Antarctique. Dans les latitudes tempérées, comme le nord-ouest de l'Europe ou les grandes plaines d'Amérique du Nord, les prairies indigènes sont dominées par des espèces de graminées vivaces, tandis que dans les climats plus chauds, les espèces annuelles constituent la majeure partie de la végétation.[NEWLINE][NEWLINE]Les prairies sont de bonnes terres pour le pâturage des animaux et pour l'agriculture. Le [LINK=YIELD_HEMP]chanvre[\LINK] et le [LINK=YIELD_TOBACCO]tabac[\LINK] sur les plaines ainsi que le [LINK=YIELD_GRAPES]raisin[\LINK] sur les collines y poussent bien.</French>
+		<German>Als [COLOR_HIGHLIGHT_TEXT]Grasland[COLOR_REVERT] bezeichnet man Gebiete, in denen die Vegetation von Gräsern und anderen krautigen (nicht-holzigen) Pflanzen dominiert wird. Auch Seggen- und Binsengewächse können hier vorkommen. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier [LINK=FEATURE_FOREST_EVERGREEN]Nadelwälder[\LINK] anpflanzen.[NEWLINE]Grasland kommt in der Natur auf allen Kontinenten außer der Antarktis vor. In gemäßigten Breiten, wie z. B. im Nordwesten Europas oder in den Great Plains in Nordamerika, werden die einheimischen Graslandschaften von mehrjährigen Gräsern dominiert, während in wärmeren Klimazonen einjährige Arten einen größeren Teil der Vegetation ausmachen.[NEWLINE][NEWLINE]Grasland ist gut geeignet für Weidewirtschaft und für Landwirtschaft. Gut wachsen im Flachland [LINK=YIELD_HEMP]Hanf[\LINK] und [LINK=YIELD_TOBACCO]Tabak[\LINK] sowie [LINK=YIELD_GRAPES]Weintrauben[\LINK] auf Hügeln.</German>
+		<Italian>Le [COLOR_HIGHLIGHT_TEXT]praterie[COLOR_REVERT] sono aree in cui la vegetazione è dominata da erbe e altre piante erbacee (non legnose). Si possono trovare anche famiglie di carici e giunchi. Le praterie sono presenti naturalmente in tutti i continenti, tranne l'Antartide. Alle latitudini temperate, come l'Europa nord-occidentale o le Grandi Pianure del Nord America, le praterie autoctone sono dominate da specie erbacee perenni, mentre nei climi più caldi le specie annuali costituiscono la maggior parte della vegetazione.[NEWLINE][NEWLINE]Le praterie sono un buon terreno per il pascolo degli animali e per l'agricoltura. La [LINK=YIELD_HEMP]canapa[\LINK] e il [LINK=YIELD_TOBACCO]tabacco[\LINK] in pianura e la [LINK=YIELD_GRAPES]uva[\LINK] in collina crescono bene.</Italian>
+		<Spanish>Los [COLOR_HIGHLIGHT_TEXT]herbazales[COLOR_REVERT] son zonas en las que la vegetación está dominada por gramíneas y otras plantas herbáceas (no leñosas). También pueden encontrarse juncias y juncos. Los herbazales se dan de forma natural en todos los continentes excepto en la Antártida. En las latitudes templadas, como el noroeste de Europa o las Grandes Llanuras de América del Norte, los herbazales nativos están dominados por especies de gramíneas perennes, mientras que en los climas más cálidos la vegetación se compone más de especies anuales.[NEWLINE][NEWLINE]Los herbazales son buenas tierras para el pastoreo de animales y para la agricultura. [LINK=YIELD_HEMP]Cáñamo[\LINK] y [LINK=YIELD_TOBACCO]tabaco[\LINK] en las llanuras, así como [LINK=YIELD_GRAPES]uvas[\LINK] en las colinas crecen bien allí.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_HILL</Tag>
+		<English>Hill</English>
+		<French>
+			<Text>Colline</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Hügel</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Collina:Colline</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Colina:Colinas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Холмы</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_HILL_PEDIA</Tag>
+		<English>A [COLOR_HIGHLIGHT_TEXT]hill[COLOR_REVERT] is a landform that extends above the surrounding terrain. Hills often have a distinct summit, although in areas with scarp/dip topography a hill may be higher flat terrain without a distinct summit (e.g. Box Hill).</English>
+		<French>Une [COLOR_HIGHLIGHT_TEXT]colline[COLOR_REVERT] est un relief généralement modéré et relativement peu étendu qui s'élève au-dessus d'une plaine ou d'un plateau et se distingue dans le paysage. Les collines peuvent être isolées ou se regrouper en champs de collines.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Hügel[COLOR_REVERT] sind eine Landform, die sich über das umgebende Terrain erhebt, jedoch noch keinen massiven Gipfel, wie einen Berg, aufweist.</German>
+		<Italian>Una [COLOR_HIGHLIGHT_TEXT]collina[COLOR_REVERT] è una forma di terreno generalmente moderata e relativamente piccola che si erge sopra una pianura o un altopiano e si distingue nel paesaggio. Le colline possono essere isolate o raggruppate in campi collinari.</Italian>
+		<Spanish>Una [COLOR_HIGHLIGHT_TEXT]colina[COLOR_REVERT] es un relieve generalmente moderado y relativamente pequeño que se eleva sobre una llanura o meseta y destaca en el paisaje. Las colinas pueden estar aisladas o agrupadas en campos de colinas.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_MARSH</Tag>
+		<English>Marsh</English>
+		<French>Marais</French>
+		<German>Sumpf</German>
+		<Italian>Palude</Italian>
+		<Spanish>Marisma</Spanish>
+		<Russian>Болото</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_MARSH_PEDIA</Tag>
+		<English>A [COLOR_HIGHLIGHT_TEXT]marsh[COLOR_REVERT] is wetland dominated by herbaceous rather than woody plant species. When drained by [LINK=PROFESSION_PIONEER]pioneers[\LINK], marshes turn into [LINK=TERRAIN_SAVANNAH]savanna[\LINK]. Pioneers can plant [LINK=FEATURE_JUNGLE]jungle[\LINK] on marsh terrain.[NEWLINE]Marshes can often be found at the edges of lakes and streams where they form a transition between the aquatic and terrestrial ecosystems. They are often dominated by grasses, rushes or reeds. If woody plants are present they tend to be low-growing shrubs. This form of vegetation is what differentiates marshes from other types of wetland such as swamps, which are dominated by trees, and bogs, which are wetlands that have accumulated deposits of acidic peat.</English>
+		<French>Un [COLOR_HIGHLIGHT_TEXT]marais[COLOR_REVERT] est une zone humide dominée par des espèces végétales herbacées plutôt que ligneuses. Les marais se trouvent souvent au bord des lacs et des cours d'eau, où ils forment une transition entre les écosystèmes aquatiques et terrestres. Ils sont souvent dominés par des graminées, des joncs ou des roseaux. Si des plantes ligneuses sont présentes, il s'agit généralement d'arbustes à faible croissance. Cette forme de végétation est ce qui différencie les marais d'autres types de zones humides comme les marécages, qui sont dominés par les arbres, et les tourbières, qui sont des zones humides qui ont accumulé des dépôts de tourbe acide.</French>
+		<German>Ein [COLOR_HIGHLIGHT_TEXT]Sumpf[COLOR_REVERT] ist ein Feuchtgebiet, das eher von niedrigen Blattpflanzen als von Bäumen dominiert wird. Sümpfe können durch [LINK=PROFESSION_PIONEER]Pioniere[\LINK] trockengelegt werden, wodurch sie zur [LINK=TERRAIN_SAVANNAH]Savanne[\LINK] werden. Pioniere können in Sümpfen neuen [LINK=FEATURE_JUNGLE]Dschungel[\LINK] anpflanzen.[NEWLINE]Sümpfe findet man oft an den Rändern von Seen und Flüssen, wo sie einen Übergang zwischen dem aquatischen und dem terrestrischen Ökosystem bilden. Sie werden oft von Gräsern, Binsen oder Schilf dominiert. Wenn Gehölze vorhanden sind, handelt es sich meist um niedrig wachsende Sträucher. Diese Form der Vegetation unterscheidet Sümpfe von anderen Feuchtgebieten wie Sümpfen, die von Bäumen dominiert werden, und Mooren, in denen sich saurer Torf angesammelt hat.</German>
+		<Italian>Una [COLOR_HIGHLIGHT_TEXT]palude[COLOR_REVERT] è una zona umida dominata da specie vegetali erbacee piuttosto che legnose. Le paludi si trovano spesso ai margini di laghi e corsi d'acqua, dove costituiscono una transizione tra l'ecosistema acquatico e quello terrestre. Sono spesso dominate da erbe, giunchi o canne. Se sono presenti piante legnose, tendono a essere arbusti a bassa crescita. Questa forma di vegetazione è ciò che differenzia le paludi da altri tipi di zone umide come le paludi, che sono dominate da alberi, e le torbiere, che sono zone umide che hanno accumulato depositi di torba acida.</Italian>
+		<Spanish>Una [COLOR_HIGHLIGHT_TEXT]marisma[COLOR_REVERT] es un humedal dominado por especies vegetales herbáceas más que leñosas. Las marismas suelen encontrarse en los bordes de lagos y arroyos, donde forman una transición entre los ecosistemas acuático y terrestre. Suelen estar dominadas por gramíneas, juncos o carrizos. Si hay plantas leñosas, suelen ser arbustos de bajo crecimiento. Esta forma de vegetación es lo que diferencia a las marismas de otros tipos de humedales como los pantanos, en los que predominan los árboles, y las turberas, que son humedales en los que se han acumulado depósitos de turba ácida.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_PEAK</Tag>
+		<English>Peak</English>
+		<French>
+			<Text>Pic</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Berg</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Montagna:Montagne</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pico:Picos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Горы</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_PEAK_PEDIA</Tag>
+		<English>A [COLOR_HIGHLIGHT_TEXT]mountain peak[COLOR_REVERT], in topography, is a point on a surface that is higher in elevation than all points immediately adjacent to it. Mathematically, a summit is a local maximum in elevation. The topographic terms "acme", "apex", "peak", and "zenith" are synonyms.</English>
+		<French>Une [COLOR_HIGHLIGHT_TEXT]montagne[COLOR_REVERT] est une forme topographique de relief positif, à la surface de planètes telluriques (comme la Terre, Mars ou un satellite comme la Lune), et faisant partie d'un ensemble - une « chaîne de montagne » - ou formant un relief isolé.</French>
+		<German>Als [COLOR_HIGHLIGHT_TEXT]Gipfel oder Berg[COLOR_REVERT] bezeichnet man einen geographischen Punkt, der höher als alle umgebenden Geländepunkte ist.</German>
+		<Italian>Un [COLOR_HIGHLIGHT_TEXT]picco di montagna[COLOR_REVERT], in topografia, è un punto su una superficie che è più alto in elevazione di tutti i punti immediatamente adiacenti.</Italian>
+		<Spanish>Un [COLOR_HIGHLIGHT_TEXT]pico de montaña[COLOR_REVERT], en topografía, es un punto de una superficie cuya elevación es superior a la de todos los puntos inmediatamente adyacentes.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_PLAINS</Tag>
+		<English>Plains</English>
+		<French>
+			<Text>Plaines</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Ebene</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Pianura:Pianure</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Llanura:Llanuras</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Равнины</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_PLAINS_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Plains[COLOR_REVERT] are temperate steppes, often vast grasslands away to the horizon. A plain is a particular form of relief, it is a geographical space characterised by a flat topographic surface, with relatively low slopes.[NEWLINE][NEWLINE]Plains are good land for grazing animals and for farming. [LINK=YIELD_BARLEY]Barley[\LINK] and [LINK=YIELD_PEANUTS]peanuts[\LINK] on flatlands as well as [LINK=YIELD_OLIVES]olives[\LINK] on hills grow well there. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant [LINK=FEATURE_DENSE_FOREST]dense forests[\LINK] on plains terrain.</English>
+		<French>Les [COLOR_HIGHLIGHT_TEXT]plaines[COLOR_REVERT] sont des steppes tempérées, souvent de vastes prairies s'étendant jusqu'à l'horizon. Une plaine est une forme particulière de relief, c'est un espace géographique caractérisé par une surface topographique plane, avec des pentes relativement faibles.[NEWLINE][NEWLINE]C'est une bonne terre pour le pâturage des animaux et pour l'agriculture. L'[LINK=YIELD_BARLEY]orge[\LINK], les [LINK=YIELD_PEANUTS]cacahuètes[\LINK] et les [LINK=YIELD_OLIVES]olives[\LINK] y poussent bien.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Ebenen[COLOR_REVERT] sind gemäßigte Steppen, oft weite Graslandschaften, die sich bis zum Horizont erstrecken. Eine Ebene ist eine besondere Form des Reliefs, ein geografischer Raum, der sich durch eine flache topografische Oberfläche mit relativ geringen Steigungen auszeichnet.[NEWLINE][NEWLINE]Ebenen sind gut geeignet für Weidewirtschaft und für Landwirtschaft. Gut wachsen im Flachland [LINK=YIELD_BARLEY]Gerste[\LINK] und [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] sowie [LINK=YIELD_OLIVES]Oliven[\LINK] auf Hügeln. Ein [LINK=PROFESSION_PIONEER]Pionier[\LINK] kann [LINK=FEATURE_DENSE_FOREST]dichten Wald[\LINK] auf dem Ebenen Terrain anpflanzen.</German>
+		<Italian>Le [COLOR_HIGHLIGHT_TEXT]pianure[COLOR_REVERT] sono steppe temperate, spesso vaste praterie che si estendono fino all'orizzonte. Una pianura è una particolare forma di rilievo, è uno spazio geografico caratterizzato da una superficie topografica piatta, con pendenze relativamente basse.[NEWLINE][NEWLINE]È un buon terreno per il pascolo degli animali e per l'agricoltura. Vi crescono bene [LINK=YIELD_BARLEY]orzo[\LINK], [LINK=YIELD_PEANUTS]arachidi[\LINK] e [LINK=YIELD_OLIVES]olive[\LINK].</Italian>
+		<Spanish>Las [COLOR_HIGHLIGHT_TEXT]llanuras[COLOR_REVERT] son estepas templadas, a menudo vastos pastizales que se extienden hasta el horizonte. Una llanura es una forma particular de relieve, es un espacio geográfico caracterizado por una superficie topográfica plana, con pendientes relativamente bajas.[NEWLINE][NEWLINE]Es una buena tierra para el pastoreo de animales y para la agricultura. [LINK=YIELD_BARLEY]Cebada[\LINK], [LINK=YIELD_PEANUTS]cacahuetes[\LINK] y [LINK=YIELD_OLIVES]olivos[\LINK] crecen bien allí.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_PRAIRIE</Tag>
+		<English>Prairie</English>
+		<French>Prairie sèche</French>
+		<German>Prärie</German>
+		<Italian>Prateria</Italian>
+		<Spanish>Pradera</Spanish>
+		<Russian>Прерии</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_PRAIRIE_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Prairies[COLOR_REVERT] are ecosystems considered part of the temperate grasslands, savannas, and shrublands biome by ecologists, based on similar temperate climates, moderate rainfall, and a composition of grasses, herbs, and shrubs, rather than trees, as the dominant vegetation type. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant [LINK=FEATURE_FOREST]deciduous forests[\LINK] on prairie terrain.[NEWLINE]Temperate grassland regions include the Pampas of Argentina, Brazil and Uruguay as well as the steppes of Eurasia.[NEWLINE][NEWLINE]Lands referred to as "prairie" tend to be in North America. The term encompasses the area referred to as the Interior Lowlands of the United States, Canada and Mexico, which includes all of the Great Plains as well as the wetter, somewhat hillier land to the east.[NEWLINE][NEWLINE]In the U.S., the area is constituted by most or all of the states of North Dakota, South Dakota, Nebraska, Kansas, and Oklahoma, and sizable parts of the states of Montana, Wyoming, Colorado, New Mexico, Texas, Missouri, Iowa, Illinois, Indiana, Wisconsin, and western and southern Minnesota. The Central Valley of California is also a prairie. The Canadian Prairies extend across vast areas of Manitoba, Saskatchewan and Alberta.[NEWLINE][NEWLINE]Plains are good land for grazing animals and for farming. [LINK=YIELD_COTTON]Cotton[\LINK] and [LINK=YIELD_INDIGO]indigo[\LINK] on flatlands as well as [LINK=YIELD_RED_PEPPER]red pepper[\LINK] on hills grow well there.</English>
+		<French>La [COLOR_HIGHLIGHT_TEXT]Prairie sèche[COLOR_REVERT] (anglais : Tallgrass Prairie) occupe les Grandes Plaines entre les Appalaches et les Montagnes Rocheuses. Cette écorégion à prairie de zone tempérée est constituée d'une flore herbeuse de graminées, de composées et de légumineuses. Son nom lui vient des explorateurs français et n'a pas été anglicisé. Elle est l'équivalent de la steppe en Eurasie et de la pampa en Amérique du Sud. Aux États-Unis et au Canada, on fait parfois la distinction entre la végétation de taille basse des Hautes Plaines à l'ouest du 104e méridien terrestre et la végétation de taille moyenne et haute de l'est (depuis le sud du Manitoba jusqu'au centre du Texas). Lorsque cette distinction est faite, il est habituel de limiter le mot "prairie" aux zones de végétation moyenne à haute. La plus grande partie de ce territoire a été convertie en zone cultivée au cours des deux cents dernières années.[NEWLINE][NEWLINE]Les plaines sont de bonnes terres pour le pâturage des animaux et pour l'agriculture. Le [LINK=YIELD_COTTON]coton[\LINK] et l'[LINK=YIELD_INDIGO]indigo[\LINK] sur les plaines ainsi que le [LINK=YIELD_RED_PEPPER]poivre rouge[\LINK] sur les collines y poussent bien.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Prärien[COLOR_REVERT] sind Ökosysteme, die von Ökologen als Teil der gemäßigten Grasländer, Savannen und Buschlandschaften betrachtet werden, basierend auf einem ähnlichen gemäßigten Klima, mäßigen Niederschlägen und einer Zusammensetzung aus Gräsern, Kräutern und Sträuchern als dominierender Vegetationsart. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können [LINK=FEATURE_FOREST]Laubwälder[\LINK] in der Prärie anpflanzen.[NEWLINE]Zu den gemäßigten Graslandregionen gehören die Pampas in Argentinien, Brasilien und Uruguay sowie die Steppen in Eurasien.[NEWLINE][NEWLINE]Die als "Prärie" bezeichneten Gebiete befinden sich meist in Nordamerika. Der Begriff umfasst das als Interior Lowlands bezeichnete Gebiet der Vereinigten Staaten, Kanadas und Mexikos, das die gesamten Great Plains sowie das feuchtere, etwas hügeligere Land im Osten einschließt.[NEWLINE][NEWLINE]In den Vereinigten Staaten besteht das Gebiet aus den meisten oder allen Bundesstaaten North Dakota, South Dakota, Nebraska, Kansas und Oklahoma sowie beträchtlichen Teilen der Bundesstaaten Montana, Wyoming, Colorado, New Mexico, Texas, Missouri, Iowa, Illinois, Indiana, Wisconsin sowie dem westlichen und südlichen Minnesota. Auch das Central Valley in Kalifornien ist eine Prärie. Die kanadischen Prärien erstrecken sich über weite Teile von Manitoba, Saskatchewan und Alberta.[NEWLINE][NEWLINE]Prärien sind gut geeignet für Weidewirtschaft und für Landwirtschaft. Gut wachsen im Flachland [LINK=YIELD_COTTON]Baumwolle[\LINK] und [LINK=YIELD_INDIGO]Indigo[\LINK] sowie [LINK=YIELD_RED_PEPPER]Roter Pfeffer[\LINK] auf Hügeln.</German>
+		<Italian>Le [COLOR_HIGHLIGHT_TEXT]praterie[COLOR_REVERT] sono ecosistemi considerati dagli ecologi parte del bioma delle praterie, savane e arbusteti temperati, in base a climi temperati simili, precipitazioni moderate e una composizione di erbe, erbe e arbusti, piuttosto che di alberi, come tipo di vegetazione dominante. Le regioni di prateria temperata comprendono le Pampas di Argentina, Brasile e Uruguay e le steppe dell'Eurasia.[NEWLINE][NEWLINE]Le terre definite "praterie" si trovano tendenzialmente in Nord America. Il termine comprende l'area denominata Interior Lowlands degli Stati Uniti, del Canada e del Messico, che include tutte le Grandi Pianure e le terre più umide e collinari a est.[NEWLINE][NEWLINE]Negli Stati Uniti, l'area è costituita dalla maggior parte o dalla totalità degli Stati del Nord Dakota, del Sud Dakota, del Nebraska, del Kansas e dell'Oklahoma, e da parti consistenti degli Stati del Montana, del Wyoming, del Colorado, del Nuovo Messico, del Texas, del Missouri, dell'Iowa, dell'Illinois, dell'Indiana, del Wisconsin e del Minnesota occidentale e meridionale. Anche la Central Valley della California è una prateria. Le praterie canadesi si estendono su vaste aree del Manitoba, del Saskatchewan e dell'Alberta.[NEWLINE][NEWLINE]Le pianure sono un buon terreno per il pascolo degli animali e per l'agricoltura. Il [LINK=YIELD_COTTON]cotone[\LINK] e l'[LINK=YIELD_INDIGO]indaco[\LINK] in pianura e il [LINK=YIELD_RED_PEPPER]pepe rosso[\LINK] in collina crescono bene.</Italian>
+		<Spanish>Las [COLOR_HIGHLIGHT_TEXT]praderas[COLOR_REVERT] son ecosistemas que los ecologistas consideran parte del bioma de los pastizales, sabanas y matorrales templados, basándose en climas templados similares, precipitaciones moderadas y una composición de gramíneas, hierbas y arbustos, en lugar de árboles, como tipo de vegetación dominante. Las regiones de praderas templadas incluyen las pampas de Argentina, Brasil y Uruguay, así como las estepas de Eurasia.[NEWLINE][NEWLINE]Las tierras denominadas "pradera" suelen estar en Norteamérica. El término engloba la zona denominada Tierras Bajas Interiores de Estados Unidos, Canadá y México, que incluye todas las Grandes Llanuras, así como las tierras más húmedas y algo más montañosas situadas al este.[NEWLINE][NEWLINE]En Estados Unidos, la zona está constituida por la mayor parte o la totalidad de los estados de Dakota del Norte, Dakota del Sur, Nebraska, Kansas y Oklahoma, y partes considerables de los estados de Montana, Wyoming, Colorado, Nuevo México, Texas, Misuri, Iowa, Illinois, Indiana, Wisconsin y el oeste y sur de Minnesota. El Valle Central de California también es una pradera. Las praderas canadienses se extienden por amplias zonas de Manitoba, Saskatchewan y Alberta.[NEWLINE][NEWLINE]Las llanuras son buenas tierras para el pastoreo de animales y para la agricultura. Allí crecen bien el [LINK=YIELD_COTTON]algodón[\LINK] y el [LINK=YIELD_INDIGO]índigo[\LINK] en las llanuras, así como el [LINK=YIELD_RED_PEPPER]pimiento rojo[\LINK] en las colinas.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_ROCK_STEPPES</Tag>
+		<English>Rock Steppes</English>
+		<French>Steppe rocheuse</French>
+		<German>Felssteppe</German>
+		<Italian>Steppa rocciosa</Italian>
+		<Spanish>Estepa rocosa</Spanish>
+		<Russian>Каменистые степи</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_ROCK_STEPPES_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Rock steppes[COLOR_REVERT] are barren plains with only a few shrubs or isolated trees. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] cannot plant any vegetation here.[NEWLINE][NEWLINE]Prospectors and miners like to explore there because there's no burden of topsoil to clear away.</English>
+		<French>Les [COLOR_HIGHLIGHT_TEXT]steppes rocheuses[COLOR_REVERT] sont des plaines arides avec seulement quelques arbustes ou arbres isolés.[NEWLINE][NEWLINE]Les prospecteurs et les mineurs aiment y faire de l'exploration car il n'y a pas de terre arable à enlever.</French>
+		<German>In einer [COLOR_HIGHLIGHT_TEXT]Felssteppe[COLOR_REVERT] lässt der Boden keine hohe Vegetation zu, da das Gestein dort bis knapp unter oder bis an die Oberfläche reicht. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier auch keine Vegetation anpflanzen.[NEWLINE][NEWLINE]Schürfer und Bergleute suchen dort gerne nach Rohstoffen, weil sie dort keinen Mutterboden abtragen müssen.</German>
+		<Italian>Le [COLOR_HIGHLIGHT_TEXT]steppe rocciose[COLOR_REVERT] sono pianure brulle con solo pochi arbusti o alberi isolati.[NEWLINE][NEWLINE]I cercatori d'oro e i minatori amano esplorare in queste zone perché non c'è un carico di terra da rimuovere.</Italian>
+		<Spanish>Las [COLOR_HIGHLIGHT_TEXT]estepas rocosas[COLOR_REVERT] son llanuras estériles con sólo unos pocos arbustos o árboles aislados.[NEWLINE][NEWLINE]A los prospectores y mineros les gusta explorar allí porque no hay carga de tierra vegetal que remover.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SAVANNAH</Tag>
+		<English>Savanna</English>
+		<French>Savane</French>
+		<German>Savanne</German>
+		<Italian>Savana</Italian>
+		<Spanish>Sabana</Spanish>
+		<Russian>Саванна</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SAVANNAH_PEDIA</Tag>
+		<English>A [COLOR_HIGHLIGHT_TEXT]savanna[COLOR_REVERT], or savannah, is a grassland ecosystem characterized by the trees being sufficiently widely spaced so that the canopy does not close. The open canopy allows enough light to reach the ground to support an unbroken herbaceous layer consisting primarily of grasses. Some classification systems also recognize a grassland savanna from which trees are absent. It is often believed that savannas feature widely spaced, scattered trees. However, in many savannas, tree densities are higher and trees are more regularly spaced than in forest.[NEWLINE][NEWLINE]Savannas are also characterized by seasonal water availability, with the majority of rainfall confined to one season. Savannas are associated with several types of biomes. Savannas are frequently in a transitional zone between forest and desert or grassland. Savanna covers approximately 20% of the Earth's land area.[NEWLINE][NEWLINE]Savannas are good land for grazing animals and for farming. [LINK=YIELD_COFFEE_BERRIES]Coffee berries[\LINK] and [LINK=YIELD_SUGAR]sugar[\LINK] on flatlands as well as [LINK=YIELD_COCA_LEAVES]coca leaves[\LINK] on hills grow well there. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] can grow [LINK=FEATURE_JUNGLE]jungle[\LINK] on savanna terrain.</English>
+		<French>La [COLOR_HIGHLIGHT_TEXT]savane[COLOR_REVERT] est une formation végétale propre aux régions chaudes à longue saison sèche et dominée par les plantes herbacées de la famille des Poacées. Elle est plus ou moins parsemée d'arbres ou d'arbustes. Selon la densité (dans l'ordre croissant) des espèces ligneuses, on parle de « savane herbeuse », de « savane arbustive », de « savane arborée », de « savane boisée », puis de forêt claire, la transition se faisant en général de manière progressive.[NEWLINE][NEWLINE]Les savanes sont de bonnes terres pour le pâturage des animaux et pour l'agriculture. Les [LINK=YIELD_COFFEE_BERRIES]baies de café[\LINK] et le [LINK=YIELD_SUGAR]sucre[\LINK] sur les plaines ainsi que les [LINK=YIELD_COCA_LEAVES]feuilles de coca[\LINK] sur les collines y poussent bien.</French>
+		<German>Die Savanne ist ein überwiegend subtropisches und tropisches terrestrisches Ökosystem, das zwischen 10 und 20° nördlicher und südlicher Breite liegt und durch eine Trocken- und eine Regenzeit gekennzeichnet ist.[NEWLINE][NEWLINE]Die Vegetation besteht überwiegend aus Sträuchern und Bäumen, die weit genug auseinander stehen, um kein geschlossenes Kronendach zu bilden.[NEWLINE][NEWLINE]Diese Art von Lebensraum findet sich in vielen Übergangszonen zwischen Regenwald und Wüste oder Steppe in Mittel-Afrika, Mittel- und Süd-Amerika, Indien, Indochina und Australien, kann aber auch in anderen Breitengraden vorkommen. Savannen können sich aufgrund bestimmter klimatischer Bedingungen, saisonaler (auch vom Menschen verursachter) Brände oder besonderer Faunenmerkmale bilden.[NEWLINE][NEWLINE]Savannen sind gut geeignet für Weidewirtschaft und für Landwirtschaft. Gut wachsen im Flachland [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] und [LINK=YIELD_SUGAR]Zucker[\LINK] sowie [LINK=YIELD_COCA_LEAVES]Coca-Blätter[\LINK] auf Hügeln. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier einen [LINK=FEATURE_JUNGLE]Dschungel[\LINK] anpflanzen.</German>
+		<Italian>La [COLOR_HIGHLIGHT_TEXT]savana[COLOR_REVERT] è un bioma terrestre soprattutto subtropicale e tropicale localizzato tra 10 e 20° di latitudine (N e S) e caratterizzato da una stagione secca e da una stagione umida.[NEWLINE][NEWLINE]La vegetazione è a prevalenza di arbusti e alberi abbastanza distanziati da non dar luogo a una volta chiusa.[NEWLINE][NEWLINE]Questo tipo di ambiente si trova in molte zone di transizione fra la foresta pluviale e il deserto o la steppa in Africa centrale, Centro e Sud America, India, Indocina e Australia, ma può essere presente anche ad altre latitudini. Le savane possono formarsi in seguito alla presenza di specifiche condizioni climatiche, oppure a causa di incendi stagionali (anche indotti dall'uomo) o particolari faune caratteristiche del suolo.[NEWLINE][NEWLINE]Le savane sono un buon terreno per il pascolo degli animali e per l'agricoltura. Le [LINK=YIELD_COFFEE_BERRIES]bacche di caffè[\LINK] e [LINK=YIELD_SUGAR]zucchero[\LINK] in pianura e le [LINK=YIELD_COCA_LEAVES]foglie di coca[\LINK] in collina crescono bene.</Italian>
+		<Spanish>La [COLOR_HIGHLIGHT_TEXT]sabana[COLOR_REVERT] es un bioma caracterizado por un estrato arbóreo-arbustivo en que su dosel arbóreo tiene una escasa cobertura, ya sea por árboles pequeños o por tener poca densidad de ellos, que le permite un estrato herbáceo continuo y generalmente alto. Combina características del bosque y del pastizal.[NEWLINE][NEWLINE]Normalmente, las sabanas son zonas secas de transición entre selvas y semidesiertos. Las sabanas se encuentran ubicadas en zonas tropicales y subtropicales, sobre todo con climas tropicales secos; aunque en ocasiones también se incluyen ecosistemas templados similares bajo esta denominación.[NEWLINE][NEWLINE]Las sabanas son buenas tierras para el pastoreo de animales y para la agricultura. Allí crecen bien [LINK=YIELD_COFFEE_BERRIES]bayas de café[\LINK] y [LINK=YIELD_SUGAR]azúcar[\LINK] en las llanuras, así como [LINK=YIELD_COCA_LEAVES]hojas de coca[\LINK] en las colinas.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SHRUBLAND</Tag>
+		<English>Shrubland</English>
+		<French>Maquis</French>
+		<German>Buschland</German>
+		<Italian>Arbusteto</Italian>
+		<Spanish>Matorral</Spanish>
+		<Russian>Кустарниковая местность</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SHRUBLAND_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Shrubland[COLOR_REVERT] is an area characterised by vegetation dominated by shrubs and bushes, often including grasses, herbaceous plants and geophytes. Shrubland can also arise as a consequence of human activity. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] cannot plant any vegetation here.[NEWLINE][NEWLINE]It may be the mature vegetation in a particular region and remain stable for a period, or a transient community that develops temporarily as a result of a disturbance, such as fire. Shrubland may be unsuitable for human habitation because of the danger of catastrophes such as fire.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Shrubland[COLOR_REVERT] suits a variety of yields. Food, cassava, cochineal, pigs, chickens, red peppers, grapes, clay, coca, olives, yerba leaves and sheep may all be found there. Along shrubland rivers there could be goats, ore, silver, gold or gems.</English>
+		<French>Un [COLOR_HIGHLIGHT_TEXT]maquis[COLOR_REVERT] ou une fruticée (du latin frutex, « arbrisseau ») est une formation végétale où dominent des arbustes, des arbrisseaux et des sous-arbrisseaux.[NEWLINE][NEWLINE]Cette formation peut correspondre à un stade intermédiaire transitoire dans la succession de végétation qui conduit jusqu'à la constitution d'une forêt. Elle peut dans des conditions naturelles plus ingrates représenter un stade stabilisé au-delà duquel la végétation ne connaîtra pas de développement plus important. Elle peut également caractériser un stade de régression à la suite de la dégradation d'un milieu forestier.[NEWLINE][NEWLINE]La [COLOR_HIGHLIGHT_TEXT]zone arbustive[COLOR_REVERT] convient à une variété de rendements. On peut y trouver de la nourriture, du manioc, de la cochenille, des cochons, des poulets, des poivrons rouges, du raisin, de l'argile, de la coca, des olives, des feuilles de yerba et des moutons. Le long des rivières arbustives, on peut trouver des chèvres, du minerai, de l'argent, de l'or ou des pierres précieuses.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Buschland[COLOR_REVERT] hat eine Vegetation, die von Sträuchern und Büschen dominiert wird, zu der oft auch Gräser, krautige Pflanzen und Geophyten gehören. Buschland kann auch als Folge menschlicher Aktivitäten entstehen. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier keine Vegetation anpflanzen.[NEWLINE][NEWLINE]Es kann sich dabei um die ausgewachsene Vegetation in einer bestimmten Region handeln, die über einen bestimmten Zeitraum stabil bleibt, oder um eine vorübergehende Gemeinschaft, die sich infolge einer Störung, z. B. eines Brandes, vorübergehend entwickelt. Buschland kann wegen der Gefahr von Katastrophen wie Bränden für die menschliche Besiedlung ungeeignet sein.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Buschland[COLOR_REVERT] eignet sich für eine Vielzahl von Ressourcen. Nahrungsmittel, Maniok, Cochenille, Schweine, Hühner, Paprika, Weintrauben, Lehm, Koka, Oliven, Mate-Blätter und Schafe sind dort zu finden. Entlang von Buschlandflüssen könnten Ziegen, Erz, Silber, Gold oder Edelsteine zu finden sein.</German>
+		<Italian>L'[COLOR_HIGHLIGHT_TEXT]arbusteto[COLOR_REVERT] è un campo caratterizzato da una vegetazione dominata da arbusti e cespugli, spesso comprendente erbe, piante erbacee e geofite. La boscaglia può anche nascere come conseguenza dell'attività umana.[NEWLINE][NEWLINE]Può essere la vegetazione matura di una particolare regione e rimanere stabile per un certo periodo, oppure una comunità transitoria che si sviluppa temporaneamente in seguito a un disturbo, come un incendio. Gli arbusteti possono essere inadatti all'abitazione umana a causa del pericolo di catastrofi come gli incendi.[NEWLINE][NEWLINE]Gli [COLOR_HIGHLIGHT_TEXT]arboscelli[COLOR_REVERT] si adattano a una varietà di raccolti. Vi si possono trovare cibo, manioca, cocciniglia, maiali, polli, peperoni rossi, uva, argilla, coca, olive, foglie di yerba e pecore. Lungo i fiumi di arbusti possono trovarsi capre, minerali, argento, oro o gemme.</Italian>
+		<Spanish>El [COLOR_HIGHLIGHT_TEXT]matorral[COLOR_REVERT] o arbustal es un campo caracterizado por una vegetación dominada por arbustos y matas, y que a menudo incluye céspedes, plantas de porte herbáceo y plantas geófitas. El matorral también puede surgir como consecuencia de la actividad humana.[NEWLINE][NEWLINE]Puede ser la vegetación madura en una región particular y seguir de un modo estable durante un periodo, o una comunidad transitoria que se desarrolle temporalmente como resultado de un disturbio, tal como el fuego. El matorral puede ser inadecuado para la habitación humana debido al peligro de catástrofes como los incendios.[NEWLINE][NEWLINE]El [COLOR_HIGHLIGHT_TEXT]matorral[COLOR_REVERT] se adapta a diversos rendimientos. Puede haber alimentos, mandioca, cochinilla, cerdos, pollos, pimientos rojos, uvas, arcilla, coca, aceitunas, hojas de yerba y ovejas. A lo largo de los ríos de matorral puede haber cabras, mineral, plata, oro o gemas.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SNOW</Tag>
+		<English>Permafrost</English>
+		<French>Permafrost</French>
+		<German>Permafrost</German>
+		<Italian>Permafrost</Italian>
+		<Spanish>Permafrost</Spanish>
+		<Russian>Вечная мерзлота</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SNOW_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Permafrost[COLOR_REVERT] is permanently frozen, at least for two years, which makes it impermeable. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] cannot plant any vegetation here.[NEWLINE]Its formation, persistence or disappearance, and its thickness are very closely linked to climate change. This is why permafrost is studied as an indicator of global warming by a worldwide network of researchers using soundings, temperature measurements and satellite monitoring.</English>
+		<French>Le [COLOR_HIGHLIGHT_TEXT]permafrost[COLOR_REVERT], ou pergélisol, désigne la partie d'un sol gelé en permanence, au moins pendant deux ans, et de ce fait imperméable. Ses formations, persistance ou disparition, et son épaisseur sont très étroitement liées aux changements climatiques. C'est pourquoi le permafrost est étudié en tant qu'indicateur du réchauffement climatique par un réseau mondial de chercheurs s'appuyant sur des sondages, des mesures de température et un suivi satellitaire.</French>
+		<German>Der [COLOR_HIGHLIGHT_TEXT]Permafrost[COLOR_REVERT], auch Permafrostboden genannt, bezeichnet den Teil eines Bodens, der dauerhaft, mindestens zwei Jahre lang, gefroren und damit undurchlässig ist. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier keine Vegetation anpflanzen.[NEWLINE] Seine Formationen, sein Fortbestehen oder Verschwinden und seine Dicke sind sehr eng mit dem Klimawandel verknüpft. Aus diesem Grund wird der Permafrost als Indikator für die globale Erwärmung von einem weltweiten Netzwerk von Forschern untersucht, die sich auf Probebohrungen, Temperaturmessungen und Satellitenüberwachung stützen.</German>
+		<Italian>Il [COLOR_HIGHLIGHT_TEXT]permafrost[COLOR_REVERT], o permafrost, si riferisce alla parte del terreno che è permanentemente congelata, almeno per due anni, e quindi impermeabile. La sua formazione, persistenza o scomparsa e il suo spessore sono strettamente legati ai cambiamenti climatici. Per questo motivo il permafrost viene studiato come indicatore del riscaldamento globale da una rete mondiale di ricercatori che utilizza scandagli, misure di temperatura e monitoraggio satellitare.</Italian>
+		<Spanish>El [COLOR_HIGHLIGHT_TEXT]permafrost[COLOR_REVERT], o permahielo, se refiere a la parte del suelo que está permanentemente congelada, al menos durante dos años, y por tanto impermeable. Su formación, persistencia o desaparición, y su espesor están muy estrechamente ligados al cambio climático. Por ello, una red mundial de investigadores estudia el permafrost como indicador del calentamiento global mediante sondeos, mediciones de temperatura y seguimiento por satélite.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_TAIGA</Tag>
+		<English>Taiga</English>
+		<French>
+			<Text>Taïga</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Taiga</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Taiga:Taiga</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Taiga:Taiga</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Тайга</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_TAIGA_PEDIA</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]taiga[COLOR_REVERT] is characterized by coniferous forests consisting mostly of pines, spruces, and larches. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant [LINK=FEATURE_ANCIENT_FOREST]ancient northern forest[\LINK] on taiga terrain.[NEWLINE]Over the last 12,000 years it's come to cover much of the cold part of the world. It was originally mammoth steppe. Its very large seasonal temperature ranges suit the growth of boreal forest. Forests are largely coniferous.</English>
+		<French>La [COLOR_HIGHLIGHT_TEXT]taïga[COLOR_REVERT] est caractérisée par des forêts de conifères composées principalement de pins, d'épicéas et de mélèzes. Au cours des 12 000 dernières années, elle a fini par couvrir une grande partie de la partie froide du monde. C'était à l'origine une steppe à mammouths. Ses très grandes amplitudes thermiques saisonnières sont propices à la croissance de la forêt boréale. Les forêts sont en grande partie constituées de conifères.</French>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Taiga[COLOR_REVERT] ist durch Nadelwälder gekennzeichnet, die hauptsächlich aus Kiefern, Fichten und Lärchen bestehen. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können hier [LINK=FEATURE_ANCIENT_FOREST]alten Nordwald[\LINK] anpflanzen.[NEWLINE]In den letzten 12.000 Jahren hat sie einen Großteil des kalten Teils der Welt bedeckt. Ursprünglich war sie eine Mammutsteppe. Die sehr großen jahreszeitlichen Temperaturschwankungen begünstigen das Wachstum der borealen Wälder. Die Wälder bestehen größtenteils aus Nadelbäumen.</German>
+		<Italian>La [COLOR_HIGHLIGHT_TEXT]taiga[COLOR_REVERT] è caratterizzata da foreste di conifere costituite per lo più da pini, abeti e larici. Negli ultimi 12.000 anni è arrivata a coprire gran parte della parte fredda del mondo. In origine era una steppa di mammut. Le sue forti escursioni termiche stagionali favoriscono la crescita della foresta boreale. Le foreste sono in gran parte di conifere.</Italian>
+		<Spanish>La [COLOR_HIGHLIGHT_TEXT]taiga[COLOR_REVERT] se caracteriza por bosques de coníferas formados principalmente por pinos, abetos y alerces. En los últimos 12.000 años ha llegado a cubrir gran parte de la zona fría del mundo. Originalmente era la estepa de los mamuts. Su gran amplitud térmica estacional favorece el crecimiento del bosque boreal. Los bosques son en gran parte de coníferas.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_TUNDRA</Tag>
+		<English>Tundra</English>
+		<French>
+			<Text>Toundra</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Tundra</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Tundra:Tundre</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Tundra:Tundras</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Тундра</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_TUNDRA_PEDIA</Tag>
+		<English>In physical geography, [COLOR_HIGHLIGHT_TEXT]tundra[COLOR_REVERT] is where tree growth is hindered by low temperatures and short growing seasons, but [LINK=PROFESSION_PIONEER]pioneers[\LINK] can still plant [LINK=FEATURE_FOREST_TUNDRA]northern forest[\LINK] there.[NEWLINE]The word "tundra" comes through Russian from the Kildin Sami word "tundâr" ("uplands"), describing a treeless mountain tract. There are three types of tundra: Arctic tundra, alpine tundra, and Antarctic tundra. Tundra vegetation is dwarf shrubs, sedges and grasses, mosses, and lichens. Scattered trees grow in some tundra. The ecological boundary region between tundra and forest is known as the tree line.</English>
+		<French>La [COLOR_HIGHLIGHT_TEXT]toundra[COLOR_REVERT], terme emprunté au russe, lui-même emprunté au same désigne la formation végétale circumpolaire. Elle forme un cercle autour du pôle de plus de huit millions de km², soit 6 % des terres émergées. Du fait de la répartition des terres émergées sur la planète, la toundra n'existe pratiquement que dans l'hémisphère nord.</French>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Tundra[COLOR_REVERT] ist ein Gebiet, in dem das Wachstum von Bäumen durch niedrige Temperaturen und kurze Wachstumsperioden behindert wird. [LINK=PROFESSION_PIONEER]Pioniere[\LINK] können dort jedoch [LINK=FEATURE_FOREST_TUNDRA]Nordwald[\LINK] anpflanzen.[NEWLINE]Das Wort "Tundra" stammt aus dem Russischen von dem kildinsamischen Wort "tundâr" ("Hochland"), das eine baumlose Gebirgslandschaft beschreibt. Es gibt drei Arten von Tundra: die arktische Tundra, die alpine Tundra und die antarktische Tundra. Die Vegetation der Tundra besteht aus Zwergsträuchern, Seggen und Gräsern, Moosen und Flechten. In einigen Tundren wachsen vereinzelte Bäume. Der ökologische Grenzbereich zwischen Tundra und Wald wird als Baumgrenze bezeichnet.</German>
+		<Italian>In geografia, la [COLOR_HIGHLIGHT_TEXT]tundra[COLOR_REVERT] è il luogo in cui la crescita degli alberi è ostacolata dalle basse temperature e dalle brevi stagioni di crescita. La parola "tundra" deriva in russo dalla parola Kildin Sami "tundâr" ("altopiano"), che descrive un tratto di montagna privo di alberi. Esistono tre tipi di tundra: tundra artica, tundra alpina e tundra antartica. La vegetazione della tundra è costituita da arbusti nani, carici ed erbe, muschi e licheni. In alcune zone della tundra crescono alberi sparsi. La regione di confine ecologico tra tundra e foresta è nota come linea degli alberi.</Italian>
+		<Spanish>En geografía, la [COLOR_HIGHLIGHT_TEXT]tundra[COLOR_REVERT] es el lugar donde el crecimiento de los árboles se ve obstaculizado por las bajas temperaturas y las cortas temporadas de crecimiento. La palabra "tundra" procede del ruso de la palabra kildin sami "tundâr" ("tierras altas"), que describe una zona montañosa sin árboles. Hay tres tipos de tundra: la tundra ártica, la tundra alpina y la tundra antártica. La vegetación de la tundra está formada por arbustos enanos, juncias y gramíneas, musgos y líquenes. En algunas tundras crecen árboles dispersos. La región ecológica limítrofe entre la tundra y el bosque se conoce como límite arbóreo.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_WETLAND</Tag>
+		<English>Wetland</English>
+		<French>Marécage</French>
+		<German>Moor</German>
+		<Italian>Zona umida</Italian>
+		<Spanish>Humedal</Spanish>
+		<Russian>Заболоченная местность</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_WETLAND_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Wetland[COLOR_REVERT] is like a [LINK=TERRAIN_MARSH]marsh[\LINK]. Wetlands are more common in temperate climates. [LINK=PROFESSION_PIONEER]Pioneers[\LINK] can drain marshes and wetlands but it's a slow expensive process. When drained, wetlands turn into [LINK=TERRAIN_GRASS]grassland[\LINK]. Pioneers cannot plant any vegetation on wetlands.</English>
+		<French>Un [COLOR_HIGHLIGHT_TEXT]Marécage[COLOR_REVERT], ou milieu humide, dénomination dérivant du terme anglais wetland, est une région où le principal facteur d'influence du biotope et de sa biocénose est l'eau. Elles jouent un rôle majeur en ce qui concerne le cycle de l'eau et le cycle du carbone.</French>
+		<German>Ein [COLOR_HIGHLIGHT_TEXT]Moor[COLOR_REVERT] oder Feuchtbiotop ist ein Gebiet, das im Übergangsbereich von trockenen zu dauerhaft feuchten Ökosystemen liegt. Moore können durch [LINK=PROFESSION_PIONEER]Pioniere[\LINK] trockengelegt werden, wodurch sie zu [LINK=TERRAIN_GRASS]Grasland[\LINK] werden. Vegetation kann in Mooren nicht durch Pioniere angepflanzt werden.[NEWLINE] Der Begriff des Feuchtgebiets umfasst verschiedene Lebensraumtypen der Flora und Fauna wie Aue, Bruchwald, Feuchtwiese, Moor, Ried, Sumpf und Marschland, die an den ganzjährigen Überschuss von Wasser angepasst sind. Feuchtgebiete haben eine hohe Bedeutung für Ökologie, Klimaschutz und Hochwasserschutz.</German>
+		<Italian>Per [COLOR_HIGHLIGHT_TEXT]zona umida[COLOR_REVERT] si intende genericamente qualsiasi tipo di ambiente naturale caratterizzato in qualche modo dalla compresenza di terreno e acqua. </Italian>
+		<Spanish>Un [COLOR_HIGHLIGHT_TEXT]humedal[COLOR_REVERT] es una zona de tierra, generalmente plana, cuya superficie se inunda de manera permanente o intermitente. Al cubrirse regularmente de agua, el suelo se satura, quedando desprovisto de oxígeno y da lugar a un ecosistema híbrido entre los puramente acuáticos y los terrestres.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LARGE_RIVERS</Tag>
+		<English>Large River</English>
+		<French>Grand fleuve</French>
+		<German>Großer Strom</German>
+		<Italian>Fiume grande</Italian>
+		<Spanish>Gran río</Spanish>
+		<Russian>Большая река</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_LARGE_RIVERS_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Large rivers[COLOR_REVERT] like the Mississippi, Missouri or Amazonas were crucial for the expansion and trade in the New World. They served as natural trade routes between coastal colonies and the deeper colonial heartlands. Thus many early settlements were founded along them.</English>
+		<French>Les [COLOR_HIGHLIGHT_TEXT]grands fleuves[COLOR_REVERT] comme le Mississippi, le Missouri ou l'Amazone ont été déterminants pour le développement des colonies et le commerce entre les colonies. Ils servaient de routes commerciales naturelles et de voies de communication entre les villes côtières et les terres intérieures peu développées. C'est pourquoi de nombreuses premières colonies ont été établies le long de grands fleuves.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Große Ströme[COLOR_REVERT] wie der Mississippi, Missouri oder Amazonas waren entscheidend für die Entwicklung der Kolonien und den Handel zwischen den Kolonien. Diese dienten als natürliche Handelsstraßen und Verkehrswege zwischen den Küstenstädten und dem wenig erschlossenen Binnenland. Daher wurden viele frühe Siedlungen entlang großer Ströme gegründet.</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Grandi fiumi[COLOR_REVERT] come il Mississippi, il Missouri o il Rio delle Amazzoni furono fondamentali per lo sviluppo delle colonie e per il commercio tra di esse. Questi servivano come vie commerciali e di trasporto naturali tra le città costiere e le aree interne meno sviluppate. Per questo motivo, molti dei primi insediamenti furono fondati lungo i grandi fiumi.</Italian>
+		<Spanish>Los [COLOR_HIGHLIGHT_TEXT]grandes ríos[COLOR_REVERT] como el Misisipi, el Misuri o el Amazonas fueron cruciales para el desarrollo de las colonias y el comercio entre ellas. Servían de rutas comerciales naturales y vías de transporte entre las ciudades costeras y las zonas menos desarrolladas del interior. Por ello, muchos de los primeros asentamientos se fundaron a lo largo de grandes ríos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_LAKE</Tag>
+		<English>Lake</English>
+		<French>Lac d'eau douce</French>
+		<German>Süßwassersee</German>
+		<Italian>Lago d'acqua dolce</Italian>
+		<Spanish>Lago de agua dulce</Spanish>
+		<Russian>Пресноводное озеро</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_LAKE_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Lakes[COLOR_REVERT] are typically found in mountain ranges, or where their beds were hollowed out by glaciers at the end of the last ice age. They’re fresh water, larger than ponds, and often are part of a river system.[NEWLINE][NEWLINE]Waterways often radiate out from mountains or run parallel along glacial gouges. Canada famously has a deranged drainage pattern because the basins are still too young.[NEWLINE][NEWLINE]Fishing is often good and travel across lakes is calm compared to fighting river currents, though great lakes can be as stormy as the ocean.[NEWLINE][NEWLINE]Because lakes hold enough water to moderate the local climate, they have always been a desirable place to live.</English>
+		<French>Les grands [COLOR_HIGHLIGHT_TEXT]lacs d'eau douce[COLOR_REVERT] se trouvent généralement à proximité des montagnes. Certains se trouvent également dans des régions où les glaciers ont laissé de grands bas-fonds lors de la dernière période glaciaire. Les grands lacs d'eau douce sont généralement alimentés par des rivières. C'est pourquoi ils ne s'assèchent pas et peuvent devenir beaucoup plus grands que les étangs, qui peuvent aussi se former uniquement par la pluie.[NEWLINE][NEWLINE]Les lacs d'eau douce offrent souvent d'excellents lieux de pêche. Contrairement aux rivières qui s'écoulent rapidement, il n'y a pas de courant et la surface calme du lac ne présente pas de vagues. Cependant, les très grands lacs d'eau douce peuvent être très venteux en cas de tempête.[NEWLINE][NEWLINE]Comme les grands lacs d'eau douce ont suffisamment d'eau pour stocker la chaleur, le climat qui les entoure est généralement tempéré. C'est pourquoi ils ont toujours été des zones d'habitation appréciées.</French>
+		<German>Größere [COLOR_HIGHLIGHT_TEXT]Süßwasserseen[COLOR_REVERT] werden üblicherweise in der Nähe von Gebirgen gefunden. Manche finden sich auch in Regionen, in denen Gletscher in der letzten Eiszeit größere Untiefen hinterließen. Größere Süßwasserseen werden meist von Flüssen gespeist. Daher trocknen sie nicht aus und können deutlich größer als Teiche werden, die auch alleine durch Regen entstehen können.[NEWLINE][NEWLINE]Süßwasserseen bieten oftmals hervorragende Fischfanggründe. Im Gegensatz zu schnell fließenden Flüssen gibt es auch kaum Strömungen und die ruhige Seeoberfläche zeigt kaum Wellengang. Jedoch kann es auf sehr großen Süßwasserseen bei Stürmen auch sehr windig werden.[NEWLINE][NEWLINE]Da größere Süßwasserseen genug Wasser zur Wärmespeicherung haben, ist das Klima in ihrer Umgebung meist gemäßigt. Daher sind sie seit jeher beliebte Siedlungsgebiete.</German>
+		<Italian>I [COLOR_HIGHLIGHT_TEXT]laghi d'acqua dolce [COLOR_REVERT]più grandi si trovano di solito vicino alle montagne. Alcuni si trovano anche in regioni dove i ghiacciai hanno lasciato banchi più grandi durante l'ultima era glaciale. I laghi d'acqua dolce più grandi sono solitamente alimentati da fiumi. Per questo motivo, non si prosciugano e possono diventare molto più grandi degli stagni, che si formano anche solo con la pioggia.[NEWLINE][NEWLINE]I laghi d'acqua dolce sono spesso ottime zone di pesca. A differenza dei fiumi che scorrono veloci, non ci sono correnti e la superficie calma del lago non presenta quasi onde. Tuttavia, i laghi d'acqua dolce molto grandi possono anche diventare molto ventosi durante le tempeste.[NEWLINE][NEWLINE]Poiché i laghi d'acqua dolce più grandi hanno abbastanza acqua per immagazzinare il calore, il clima intorno a loro è solitamente temperato. Per questo motivo, sono sempre state aree di insediamento popolari.</Italian>
+		<Spanish>Los [COLOR_HIGHLIGHT_TEXT]lagos de agua dulce[COLOR_REVERT] más grandes suelen encontrarse cerca de las montañas. Algunos también se encuentran en regiones donde los glaciares dejaron bancos más grandes durante la última glaciación. Los lagos de agua dulce más grandes suelen estar alimentados por ríos. Por lo tanto, no se secan y pueden llegar a ser mucho más grandes que los estanques, que también pueden formarse sólo con la lluvia[NEWLINE][NEWLINE]Los lagos de agua dulce suelen ser excelentes lugares de pesca. A diferencia de los ríos caudalosos, tampoco hay apenas corrientes y la tranquila superficie del lago apenas muestra olas. Sin embargo, los lagos de agua dulce muy grandes también pueden volverse muy ventosos durante las tormentas.[NEWLINE][NEWLINE]Como los lagos de agua dulce más grandes tienen suficiente agua para almacenar calor, el clima que los rodea suele ser templado. Por ello, siempre han sido zonas de asentamiento populares.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_ICE_LAKE</Tag>
+		<English>Ice Lake</English>
+		<French>Lac de glace</French>
+		<German>Eissee</German>
+		<Italian>Lago di ghiaccio</Italian>
+		<Spanish>Lago de hielo</Spanish>
+		<Russian>Заледеневшее озеро</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_ICE_LAKE_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Ice lakes[COLOR_REVERT] are typically found in mountain ranges, or where their beds were hollowed out by glaciers at the end of the last ice age. They’re fresh water, larger than ponds, and often are part of a river system.[NEWLINE][NEWLINE]Ice lakes must thaw for at least part of the year or else they'd be glaciers. Often they're adjacent to glaciers.[NEWLINE][NEWLINE]Fishing can be good and travel across lakes is calm compared to fighting river currents. They're often the flattest route through the mountains, though falling through the ice is a potentially fatal risk.</English>
+		<French>Les [COLOR_HIGHLIGHT_TEXT]lacs de glace[COLOR_REVERT]se trouvent généralement dans les chaînes de montagnes, ou là où leur lit a été creusé par les glaciers à la fin de la dernière période glaciaire. Ce sont des eaux douces, plus grandes que des étangs, et ils font souvent partie d'un réseau fluvial.[NEWLINE][NEWLINE]Les lacs de glace doivent dégeler au moins une partie de l'année, sinon ils seraient des glaciers. Ils sont souvent adjacents à des glaciers.[NEWLINE][NEWLINE]La pêche peut être bonne et la traversée des lacs est plus calme que la lutte contre les courants des rivières. Ils constituent souvent la route la plus plate à travers les montagnes, bien que la chute à travers la glace soit un risque potentiellement mortel.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Eisseen[COLOR_REVERT] findet man in der Regel in Gebirgszügen oder dort, wo ihr Grund am Ende der letzten Eiszeit von Gletschern ausgehöhlt wurde. Sie sind Süßwasserseen, größer als Teiche, und oft Teil eines Flusssystems.[NEWLINE][NEWLINE]Eisseen müssen zumindest einen Teil des Jahres auftauen, sonst wären sie Gletscher. Oft grenzen sie an Gletscher.[NEWLINE][NEWLINE]Man kann gut angeln, und die Fahrt über die Seen ist ruhiger als der Kampf gegen Flussströmungen. Sie sind oft die flachste Route durch die Berge, obwohl ein Sturz durch das Eis ein potenziell tödliches Risiko darstellt.</German>
+		<Italian>I [COLOR_HIGHLIGHT_TEXT]laghi di ghiaccio[COLOR_REVERT]si trovano tipicamente nelle catene montuose o dove i loro letti sono stati scavati dai ghiacciai alla fine dell'ultima era glaciale. Sono d'acqua dolce, più grandi degli stagni, e spesso fanno parte di un sistema fluviale.[NEWLINE][NEWLINE]I laghi di ghiaccio devono scongelarsi per almeno una parte dell'anno, altrimenti sarebbero ghiacciai. Spesso sono adiacenti ai ghiacciai.[NEWLINE][NEWLINE]La pesca può essere buona e gli spostamenti attraverso i laghi sono più tranquilli rispetto alle correnti dei fiumi. Sono spesso il percorso più pianeggiante attraverso le montagne, anche se la caduta nel ghiaccio è un rischio potenzialmente fatale.</Italian>
+		<Spanish>Los [COLOR_HIGHLIGHT_TEXT]lagos de hielo[COLOR_REVERT]suelen encontrarse en cadenas montañosas o donde los glaciares excavaron sus lechos al final de la última glaciación. Son de agua dulce, más grandes que los estanques, y a menudo forman parte de un sistema fluvial.[NEWLINE][NEWLINE]Los lagos de hielo deben descongelarse al menos durante una parte del año, de lo contrario serían glaciares. A menudo son adyacentes a glaciares.[NEWLINE][NEWLINE]La pesca puede ser buena y el viaje a través de los lagos es tranquilo en comparación con la lucha contra las corrientes fluviales. Suelen ser la ruta más llana para atravesar las montañas, aunque caerse por el hielo es un riesgo potencialmente mortal.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_COAST</Tag>
+		<English>Coast</English>
+		<French>
+			<Text>Côte</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Küste</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Costa:Coste</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Costa:Costas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Побережье</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_COAST_PEDIA</Tag>
+		<English>The [COLOR_HIGHLIGHT_TEXT]coastline[COLOR_REVERT] is where the land meets the sea or ocean. A precise line that can be called a coastline cannot be determined due to the dynamic nature of tides. The term "coastal zone" can be used instead, which is a spatial zone where interaction of the sea and land occurs. Both the terms coast and coastal are often used to describe a geographic location or region; for example, New Zealand's West Coast, or the East and West Coasts of the United States.</English>
+		<French>Le [COLOR_HIGHLIGHT_TEXT]littoral[COLOR_REVERT] est la bande de terre qui sépare la zone comprise entre une étendue maritime et le continent, ou l'arrière-pays. Selon les échelles retenues, le littoral peut s'étendre de quelques centaines de mètres à plusieurs kilomètres de part et d'autre de la limite terre-eau ou au sens strict, correspondre à l'estran.</French>
+		<German>Die [COLOR_HIGHLIGHT_TEXT]Küste[COLOR_REVERT] ist der Landstreifen, der den Bereich zwischen einem Meeresgebiet und dem Festland bzw. dem Hinterland abgrenzt. Je nach Maßstab kann sich die Küste von einigen hundert Metern bis zu mehreren Kilometern auf beiden Seiten der Land-Wasser-Grenze erstrecken oder im engeren Sinne dem Vorland entsprechen.</German>
+		<Italian>La [COLOR_HIGHLIGHT_TEXT]linea di costa[COLOR_REVERT] è la striscia di terra che separa l'area tra un tratto di mare e la terraferma, o l'entroterra. A seconda della scala utilizzata, la linea di costa può estendersi da poche centinaia di metri a diversi chilometri su entrambi i lati del confine terra-acqua o, in senso stretto, corrispondere alla battigia.</Italian>
+		<Spanish>El [COLOR_HIGHLIGHT_TEXT]litoral[COLOR_REVERT] es la franja de tierra que separa la zona entre una franja de mar y el continente, o el interior. Según la escala utilizada, la línea de costa puede extenderse desde unos cientos de metros hasta varios kilómetros a ambos lados del límite tierra-agua o, en sentido estricto, corresponder a la playa.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SHALLOW_COAST</Tag>
+		<English>Shallow Coast</English>
+		<French>Eaux côtières peu profondes</French>
+		<German>Seichte Küste</German>
+		<Italian>Acque costiere poco profonde</Italian>
+		<Spanish>Aguas costeras poco profundas</Spanish>
+		<Russian>Мелководье</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_SHALLOW_COAST_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Shallow coast[COLOR_REVERT] is impassable to large ocean-going ships with deep drafts. Ships that travel along large rivers, i.e. coastal ships and minor warships, can also move across shallow coast tiles.</English>
+		<French>Les [COLOR_HIGHLIGHT_TEXT]eaux côtières peu profondes[COLOR_REVERT] ne sont pas praticables par les grands navires de haute mer en raison de leur grand tirant d'eau. Les navires qui peuvent également naviguer sur de grands fleuves, c'est-à-dire les caboteurs et les petits navires de guerre, peuvent également naviguer dans les eaux côtières peu profondes.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Seichte Küstengewässer[COLOR_REVERT] sind für große hochseetaugliche Schiffe wegen ihres großen Tiefgangs nicht passierbar. Schiffe, die auch große Flüsse befahren können, also Küstenschiffe und kleinere Kriegsschiffe, können auch seichte Küstengewässer befahren.</German>
+		<Italian>Le [COLOR_HIGHLIGHT_TEXT]acque costiere poco profonde[COLOR_REVERT] non sono percorribili dalle grandi navi oceaniche a causa del loro grande pescaggio. Le navi che possono navigare su grandi fiumi, cioè le navi costiere e le navi da guerra più piccole, possono anche navigare in acque costiere poco profonde.</Italian>
+		<Spanish>Las [COLOR_HIGHLIGHT_TEXT]aguas costeras poco profundas[COLOR_REVERT] no son transitables para los grandes buques oceánicos debido a su gran calado. Los buques que también pueden navegar por grandes ríos, es decir, los buques costeros y los buques de guerra más pequeños, también pueden navegar por aguas costeras poco profundas.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_OCEAN</Tag>
+		<English>Ocean</English>
+		<French>
+			<Text>Océan</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Ozean</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Oceano:Oceani</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Océano:Océanos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Океан</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_OCEAN_PEDIA</Tag>
+		<English>An [COLOR_HIGHLIGHT_TEXT]ocean[COLOR_REVERT] is often defined in geography as a vast expanse of salt water. In fact, it is more of a volume, with water constantly being renewed by ocean currents. Approximately 70.7% of the Earth's surface is covered by the world ocean, commonly divided into five oceans and several dozen seas.</English>
+		<French>Un [COLOR_HIGHLIGHT_TEXT]océan[COLOR_REVERT] est souvent défini, en géographie, comme une vaste étendue d'eau salée. En fait, il s'agit plutôt d'un volume, dont l'eau est en permanence renouvelée par des courants marins. Approximativement 70,7 % de la surface de la Terre est recouverte par l'océan mondial, communément divisé en cinq océans et en plusieurs dizaines de mers.</French>
+		<German>Ein [COLOR_HIGHLIGHT_TEXT]Ozean[COLOR_REVERT] wird in der Geografie oft als eine große Fläche Salzwasser definiert. Tatsächlich handelt es sich aber eher um ein Volumen, dessen Wasser durch Meeresströmungen ständig erneuert wird. Etwa 70,7 % der Erdoberfläche sind vom Weltozean bedeckt, der gemeinhin in fünf Ozeane und mehrere Dutzend Meere unterteilt wird.</German>
+		<Italian>Un [COLOR_HIGHLIGHT_TEXT]oceano[COLOR_REVERT] è spesso definito in geografia come una vasta distesa di acqua salata. In realtà, si tratta piuttosto di un volume, con l'acqua che viene costantemente rinnovata dalle correnti oceaniche. Circa il 70,7% della superficie terrestre è coperto dall'oceano mondiale, comunemente suddiviso in cinque oceani e diverse decine di mari.</Italian>
+		<Spanish>Un [COLOR_HIGHLIGHT_TEXT]océano[COLOR_REVERT] suele definirse en geografía como una vasta extensión de agua salada. De hecho, se trata más bien de un volumen, con agua que se renueva constantemente gracias a las corrientes oceánicas. Aproximadamente el 70,7% de la superficie de la Tierra está cubierta por el océano mundial, comúnmente dividido en cinco océanos y varias docenas de mares.</Spanish>
+	</TEXT>
 </Civ4GameText>

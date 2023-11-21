@@ -1214,7 +1214,7 @@ void CvPromotionInfo::calculateAvailableForDefensiveUnit()
 			m_bAvailableForDefensiveUnit = false;   return;
 		}
 	}
-	m_bAvailableForDefensiveUnit = true; 
+	m_bAvailableForDefensiveUnit = true;
 }
 
 const char* CvPromotionInfo::getSound() const
@@ -2887,7 +2887,7 @@ m_bGatherBoat(false),
 // < JAnimals Mod Start >
 m_bAnimal(false),
 // < JAnimals Mod End >
-m_iLeaderPromotion(NO_PROMOTION),
+m_eLeaderPromotion(NO_PROMOTION),
 /// Move Into Peak - start - Nightinggale
 m_bMoveIntoPeak(false),
 /// Move Into Peak - end - Nightinggale
@@ -3599,9 +3599,9 @@ bool CvUnitInfo::isPrereqOrBuilding(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_abPrereqOrBuilding ? m_abPrereqOrBuilding[i] : false;
 }
-int CvUnitInfo::getLeaderPromotion() const
+PromotionTypes CvUnitInfo::getLeaderPromotion() const
 {
-	return m_iLeaderPromotion;
+	return m_eLeaderPromotion;
 }
 int CvUnitInfo::getLeaderExperience() const
 {
@@ -3919,7 +3919,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_abPrereqOrBuilding);
 	m_abPrereqOrBuilding = new bool[GC.getNumBuildingClassInfos()];
 	stream->Read(GC.getNumBuildingClassInfos(), m_abPrereqOrBuilding);
-	stream->Read(&m_iLeaderPromotion);
+	//stream->Read(&m_iLeaderPromotion);
 	stream->Read(&m_iLeaderExperience);
 	SAFE_DELETE_ARRAY(m_paszUnitNames);
 	m_paszUnitNames = new CvString[m_iNumUnitNames];
@@ -4090,7 +4090,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumProfessionInfos(), m_abProfessionsNotAllowed);
 	///TK end
 	stream->Write(GC.getNumBuildingClassInfos(), m_abPrereqOrBuilding);
-	stream->Write(m_iLeaderPromotion);
+	//stream->Write(m_iLeaderPromotion);
 	stream->Write(m_iLeaderExperience);
 	stream->WriteString(m_iNumUnitNames, m_paszUnitNames);
 	stream->WriteString(m_szFormationType);
@@ -4324,8 +4324,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	///TK Viscos Mod
 	pXML->SetVariableListTagPair(&m_abProfessionsNotAllowed, "ProfessionsNotAllowed", GC.getNumProfessionInfos(), false);
 	///TK end
-	pXML->GetChildXmlValByName(szTextVal, "LeaderPromotion");
-	m_iLeaderPromotion = pXML->FindInInfoClass(szTextVal);
+	pXML->GetEnum(getType(), m_eLeaderPromotion, "LeaderPromotion", false);
 	pXML->GetChildXmlValByName(&m_iLeaderExperience, "iLeaderExperience");
 	updateArtDefineButton();
 
@@ -5538,7 +5537,7 @@ const CvArtInfoBuilding* CvBuildingInfo::getArtInfo() const
 const CvArtInfoMovie* CvBuildingInfo::getMovieInfo() const
 {
 	const char* pcTag = getMovieDefineTag();
-	if (NULL != pcTag && 0 != _tcscmp(pcTag, "NONE"))
+	if (NULL != pcTag && 0 != strcmp(pcTag, "NONE"))
 	{
 		return ARTFILEMGR.getMovieArtInfo(pcTag);
 	}
@@ -6536,7 +6535,7 @@ CvWString CvCivilizationInfo::getGeneralNames(int i) const
 {
 	FAssertMsg(i < getNumGeneralNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	
+
 	CvWString tag;
 	tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), i);
 	return gDLL->getText(tag);
@@ -6548,7 +6547,7 @@ CvWString CvCivilizationInfo::getAdmiralNames(int i) const
 {
 	FAssertMsg(i < getNumAdmiralNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	
+
 	CvWString tag;
 	tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), i);
 	return gDLL->getText(tag);
@@ -6560,7 +6559,7 @@ CvWString CvCivilizationInfo::getShipNames(int i) const
 {
 	FAssertMsg(i < getNumShipNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	
+
 	CvWString tag;
 	tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), i);
 	return gDLL->getText(tag);
@@ -8670,6 +8669,11 @@ bool CvImprovementInfo::isGoodyForSpawningHostileNatives() const
 bool CvImprovementInfo::isGoodyForSpawningHostileCriminals() const
 {
 	return m_bGoodyForSpawningHostileCriminals;
+}
+bool CvImprovementInfo::isAINoRemove() const
+{
+	// todo: figure out if forts or other improvements should be added here, possibly by xml bool setting
+	return isGoody();
 }
 //WTP, Protected Hostile Goodies - END
 bool CvImprovementInfo::isPermanent() const
@@ -12407,14 +12411,14 @@ bool CvAnimationPathInfo::read(CvXMLLoadUtility* pXML)
 	gDLL->getXMLIFace()->NextSibling(pXML->GetXML());
 	do
 	{
-		if ( pXML->GetChildXmlValByName( szTempString, _T("Category") ))
+		if ( pXML->GetChildXmlValByName( szTempString, "Category" ))
 		{
 			iCurrentCategory = pXML->FindInInfoClass( szTempString);
 			fParameter = 0.0f;
 		}
 		else
 		{
-			pXML->GetChildXmlValByName( szTempString, _T("Operator"));
+			pXML->GetChildXmlValByName( szTempString, "Operator" );
 			iCurrentCategory = GC.getInfoTypeForString(szTempString);
 			iCurrentCategory = ((int)ANIMOP_FIRST) + iCurrentCategory;
 			if ( !pXML->GetChildXmlValByName( &fParameter, "Parameter" ) )
@@ -13777,7 +13781,7 @@ int CvGameText::getLanguageAtIndex(int iIndex)
 	return 0;
 }
 
-const TCHAR* CvGameText::getLanguageName(int iLanguageID)
+char const* CvGameText::getLanguageName(int iLanguageID)
 {
 	// The game will store the chosen language as an int, not a string.
 	// This has a history of messing up switching between mods.
@@ -13928,7 +13932,7 @@ void CvGameText::setText(const wchar* szText)
 {
 	m_szText = szText;
 }
-bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, const TCHAR* szLanguage)
+bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, char const* szLanguage)
 {
 	CvString szTextVal;
 	CvWString wszTextVal;
@@ -14868,7 +14872,7 @@ bool CvEventTriggerInfo::isTeam() const
 }
 
 // Begin EmperorFool: Events with Images
-const TCHAR* CvEventTriggerInfo::getEventArt() const
+char const* CvEventTriggerInfo::getEventArt() const
 {
 	if (m_szEventArt.empty())
 	{
@@ -15879,6 +15883,10 @@ const char* CvEventInfo::getPythonHelp() const
 {
 	return m_szPythonHelp;
 }
+const char* CvEventInfo::getHelpText() const
+{
+	return m_szHelpText;
+}
 const wchar* CvEventInfo::getUnitNameKey() const
 {
 	return m_szUnitName;
@@ -16160,6 +16168,7 @@ bool CvEventInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(m_szPythonExpireCheck, "PythonExpireCheck");
 	pXML->GetChildXmlValByName(m_szPythonCanDo, "PythonCanDo");
 	pXML->GetChildXmlValByName(m_szPythonHelp, "PythonHelp");
+	pXML->GetChildXmlValByName(m_szHelpText, "HelpText");
 	m_aszWorldNews.clear();
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"WorldNewsTexts"))
 	{

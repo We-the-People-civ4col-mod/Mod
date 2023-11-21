@@ -508,7 +508,7 @@ void CyGame::setScriptData(std::string szNewValue)
 	if (m_pGame)
 		m_pGame->setScriptData(szNewValue);
 }
-void CyGame::setName(TCHAR* szNewValue)
+void CyGame::setName(char const* szNewValue)
 {
 	if (m_pGame)
 		m_pGame->setName(szNewValue);
@@ -559,7 +559,7 @@ CvRandom& CyGame::getMapRand()
 	FAssert(m_pGame);
 	return (m_pGame->getMapRand());
 }
-int CyGame::getMapRandNum(int iNum, TCHAR* pszLog)
+int CyGame::getMapRandNum(int iNum, char const* pszLog)
 {
 	return m_pGame ? m_pGame->getMapRandNum(iNum, pszLog) : -1;
 }
@@ -568,7 +568,7 @@ CvRandom& CyGame::getSorenRand()
 	FAssert(m_pGame);
 	return (m_pGame->getSorenRand());
 }
-int CyGame::getSorenRandNum(int iNum, TCHAR* pszLog)
+int CyGame::getSorenRandNum(int iNum, char const* pszLog)
 {
 	return m_pGame ? m_pGame->getSorenRandNum(iNum, pszLog) : -1;
 }

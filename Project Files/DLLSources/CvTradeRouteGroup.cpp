@@ -1,5 +1,5 @@
-#include "CvTradeRouteGroup.h"
 #include "CvGameCoreDLL.h"
+#include "CvTradeRouteGroup.h"
 #include "CvTradeRoute.h"
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvSavegame.h"

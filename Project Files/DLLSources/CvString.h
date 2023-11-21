@@ -24,13 +24,7 @@ public:
 	CvWString(const CvWString& s) { *this = s; 	}
 	CvWString(const char* s) { Copy(s); 	}
 	CvWString(const wchar* s) { if (s) *this = s; }
-//	CvWString(const __wchar_t* s) { if (s) *this = s; }
 	CvWString(const std::wstring& s) { assign(s.c_str()); }
-#ifndef _USRDLL
-	// FString conversion, if not in the DLL
-	CvWString(const FStringA& s) { Copy(s.GetCString()); }
-	CvWString(const FStringW& s) { assign(s.GetCString()); }
-#endif
 	~CvWString() {}
 
 	void Copy(const char* s)
@@ -92,11 +86,6 @@ public:
 	const CvWString& operator=( const std::wstring& s) { assign(s.c_str());	return *this; }
 	const CvWString& operator=( const std::string& w) { Copy(w.c_str());	return *this; }
 	const CvWString& operator=( const CvWString& w) { assign(w.c_str());	return *this; }
-#ifndef _USRDLL
-	// FString conversion, if not in the DLL
-	const CvWString& operator=( const FStringW& s) { assign(s.GetCString());	return *this; }
-	const CvWString& operator=( const FStringA& w) { Copy(w.GetCString());	return *this; }
-#endif
 	const CvWString& operator=( const char* w) { Copy(w);	return *this; }
 
 	void Format( LPCWSTR lpszFormat, ... );

@@ -4816,7 +4816,8 @@ bool CvPlot::hasNearbyPlotWith(const InfoArray1<T>& kInfo, int iRange, bool bEmp
 }
 
 template <typename T>
-bool CvPlot::hasNearbyPlotWith(T eVal, int iRange) const
+typename boost::enable_if<boost::is_enum<T>, bool>::type
+CvPlot::hasNearbyPlotWith(T eVal, int iRange) const
 {
 	CvMap& kMap = GC.getMap();
 	const int iPlotX = getX_INLINE();

@@ -1,10 +1,9 @@
-#include "CvGameCoreDll.h"
+#include "CvGameCoreDLL.h"
 #include "FDialogTemplate.h"
 #include "CvGameCoreDLLUndefNew.h"
 
 #if defined(WIN32)
 
-#include <tchar.h>
 #include "CvGameCoreDLLUndefNew.h"
 
 CDialogTemplate::CDialogTemplate(LPCSTR caption, DWORD style, int x, int y, int w, int h,
@@ -31,8 +30,8 @@ CDialogTemplate::CDialogTemplate(LPCSTR caption, DWORD style, int x, int y, int 
 	dialogTemplate->dwExtendedStyle = WS_EX_TOPMOST;
 
 	// Assume no menu or special class
-	AppendData(_T("\0"), 2);
-	AppendData(_T("\0"), 2);
+	AppendData("\0", 2);
+	AppendData("\0", 2);
 
 	// Add the dialog's caption to the template
 	AppendString(caption);
@@ -185,7 +184,7 @@ void CDialogTemplate::AppendString(LPCSTR string)
 	free(wideString);
 }
 
-void CDialogTemplate::AppendData(void* data, int dataLength)
+void CDialogTemplate::AppendData(void const* data, int dataLength)
 {
 	EnsureSpace(dataLength);
 

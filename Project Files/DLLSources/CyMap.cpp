@@ -3,7 +3,7 @@
 //
 
 #include "CvGameCoreDLL.h"
-#include "cyMap.h"
+#include "CyMap.h"
 #include "CyPlot.h"
 #include "CvMap.h"
 #include "CyCity.h"

@@ -85,6 +85,7 @@
 	<ElementType name="PythonCanDoCity" content="textOnly"/>
 	<ElementType name="PythonCanDoUnit" content="textOnly"/>
 	<ElementType name="PythonHelp" content="textOnly"/>
+	<ElementType name="HelpText" content="textOnly"/>
 	<ElementType name="iWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iAIValue" content="textOnly" dt:type="int"/>
 	<ElementType name="iGenericParameter1" content="textOnly"/>
@@ -307,6 +308,7 @@
 		<element type="PythonExpireCheck"/>
 		<element type="PythonCanDo"/>
 		<element type="PythonHelp"/>
+		<element type="HelpText" minOccurs="0"/>
 		<element type="Button"/>
 		<element type="iAIValue"/>
 		<element type="iGenericParameter1"/>

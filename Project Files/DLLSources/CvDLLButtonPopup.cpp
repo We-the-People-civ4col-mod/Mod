@@ -3870,7 +3870,8 @@ bool CvDLLButtonPopup::launchGotoMenuPopup(CvPopup* pPopup, CvPopupInfo &info)
 		{
 			int iPathTurns = 0;
 			// if (pUnit->generatePath(pLoopCity->plot(), 0, true, &iPathTurns))
-			if (pUnit->generatePath(pLoopCity->plot(), 0, false, &iPathTurns))	// R&R, ray, improvment from vetiarvind
+			// Using MOVE_MAX_MOVES to prevent assert since this is just a check for reachability
+			if (pUnit->generatePath(pLoopCity->plot(), MOVE_MAX_MOVES, false, &iPathTurns))	// R&R, ray, improvment from vetiarvind
 			{
 				gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_GOTO_MENU_SELECTION", pLoopCity->getNameKey(), iPathTurns), ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION")->getPath(), pLoopCity->getID(), WIDGET_GENERAL, pUnit->getID(), -1);
 				bValid = true;

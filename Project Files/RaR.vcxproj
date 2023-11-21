@@ -398,7 +398,6 @@
     <ClInclude Include="DLLSources\PlayerHelperFunctions.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="DLLSources\CvGameCoreDLL.def" />
     <None Include="DLLSources\FVariableSystem.inl" />
     <None Include="DLLSources\interfaceDirtyBits.inl" />
   </ItemGroup>
@@ -548,103 +547,91 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Debug|Win32'">
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Debug
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll  /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Debug
 nmake clean  /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Debug
 nmake clean  /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Profile|Win32'">
     <NMakePreprocessorDefinitions>WIN32;_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Profile
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Profile
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Profile
 nmake clean  /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Release
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Release
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Final Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=FinalRelease
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=FinalRelease
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=FinalRelease
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Single core-Assert|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Assert
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Assert
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake dll /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Release
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Release
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
@@ -653,23 +640,21 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Release
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Release
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Release
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Final Release|Win32'">
@@ -677,81 +662,73 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=FinalRelease
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=FinalRelease
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=FinalRelease
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Final Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=FinalRelease
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=FinalRelease
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=FinalRelease
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Build Release|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=FinalRelease
 set RELEASE_VERSION=READ
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO &amp;&amp; ^
 nmake BuildRelease /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=FinalRelease
 set RELEASE_VERSION=READ
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO &amp;&amp; ^
 nmake BuildRelease /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=FinalRelease
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Debug|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Debug
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Debug
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Debug
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Test-Debug|Win32'">
@@ -759,23 +736,21 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES -DCHECK_GLOBAL_CONSTANTS
 set TEMP_DIR_POSTFIX=_TEST
 set TARGET=Debug
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 bin\jom pre_test /NOLOGO &amp;&amp; ^
 bin\jom test /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES -DCHECK_GLOBAL_CONSTANTS
 set TEMP_DIR_POSTFIX=_TEST
 set TARGET=Debug
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake pre_test /NOLOGO &amp;&amp; ^
 bin\jom test /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES -DCHECK_GLOBAL_CONSTANTS
 set TEMP_DIR_POSTFIX=_TEST
 set TARGET=Debug
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR /DCHECK_GLOBAL_CONSTANTS</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR /DCHECK_GLOBAL_CONSTANTS</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Debug|Win32'">
@@ -783,41 +758,37 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Debug
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Debug
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Debug
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /D_DEBUG /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Profile|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Profile
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Profile
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Profile
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DPROFILING_ENABLED</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DPROFILING_ENABLED</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='XML hardcoding-Profile|Win32'">
@@ -825,41 +796,37 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Profile
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Profile
 nmake clean /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Profile
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES /DPROFILING_ENABLED</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES /DPROFILING_ENABLED</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Multi core-Assert|Win32'">
     <NMakePreprocessorDefinitions>WIN32;NDEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>set TARGET=Assert
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set TARGET=Assert
 nmake clean  /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR</AdditionalOptions>
     <NMakeIncludeSearchPath>
     </NMakeIncludeSearchPath>
   </PropertyGroup>
@@ -868,23 +835,21 @@ nmake clean /NOLOGO</NMakeCleanCommandLine>
     <NMakeBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Assert
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Assert
 nmake clean  /NOLOGO &amp;&amp; ^
-nmake source_list /NOLOGO &amp;&amp; ^
-nmake fastdep /NOLOGO &amp;&amp; ^
+bin\jom source_list /NOLOGO &amp;&amp; ^
 nmake precompile  /NOLOGO &amp;&amp; ^
 bin\jom build /NOLOGO</NMakeReBuildCommandLine>
     <NMakeCleanCommandLine>set CONFIG_CFLAGS=-DHARDCODE_XML_VALUES
 set TEMP_DIR_POSTFIX=_HARDCODED
 set TARGET=Assert
 nmake clean /NOLOGO</NMakeCleanCommandLine>
-    <AdditionalOptions>/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
+    <AdditionalOptions>/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE /DFASSERT_ENABLE /DUSE_DATA_DIR /DHARDCODE_XML_VALUES</AdditionalOptions>
     <NMakeIncludeSearchPath />
   </PropertyGroup>
   <ItemDefinitionGroup>

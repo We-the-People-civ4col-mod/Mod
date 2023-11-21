@@ -25,7 +25,7 @@ class CvMilitaryAdvisor:
 	LOCATION_GROUP_ID = 4
 
 	numGroups = 0
-	INITED = false
+	INITED = False
 
 	def __init__(self, screenId):
 		self.screenId = screenId
@@ -89,7 +89,7 @@ class CvMilitaryAdvisor:
 		self.screen = CyGInterfaceScreen(self.MILITARY_SCREEN_NAME, self.screenId)
 
 		global INITED
-		INITED = true
+		INITED = True
 
 	def getScreen(self):
 		if self.INITED:
@@ -176,7 +176,7 @@ class CvMilitaryAdvisor:
 		
 		
 		#LEADERS
-		screen.addScrollPanel(self.LEADER_PANEL_ID, "", self.viewX + 10, self.viewY + self.viewHeight + (self.viewMargin / 2) , self.viewWidth - 20, self.H_LEADERS, PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addScrollPanel(self.LEADER_PANEL_ID, "", self.viewX + 10, self.viewY + self.viewHeight + (self.viewMargin / 2) , self.viewWidth - 20, self.H_LEADERS, PanelStyles.PANEL_STYLE_MAIN, False, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		self.KnownLeaders = []
 		for iLoopPlayer in range(gc.getMAX_PLAYERS()):
@@ -199,11 +199,11 @@ class CvMilitaryAdvisor:
 
 	def ListActivePlayerUnits(self):
 		AllUnits = []
-		(city, iter) = self.pActivePlayer.firstCity(true)
+		(city, iter) = self.pActivePlayer.firstCity(True)
 		while(city):
 			for iCitizen in range(city.getPopulation()):
 				AllUnits.append(city.getPopulationUnitByIndex(iCitizen))
-			(city, iter) = self.pActivePlayer.nextCity(iter, true)
+			(city, iter) = self.pActivePlayer.nextCity(iter, True)
 
 	 	(unit, iter) = self.pActivePlayer.firstUnit()
 		while(unit):
@@ -241,7 +241,7 @@ class CvMilitaryAdvisor:
 			horMapMargin = self.viewMargin
 			verMapMargin = (self.viewHeight - mapHeight) / 2
 
-		screen.initMinimap( self.viewX + horMapMargin, self.viewX + self.viewWidth - horMapMargin, self.viewY + verMapMargin, self.viewY + self.viewHeight - verMapMargin, self.Z_CONTROLS, false)
+		screen.initMinimap( self.viewX + horMapMargin, self.viewX + self.viewWidth - horMapMargin, self.viewY + verMapMargin, self.viewY + self.viewHeight - verMapMargin, self.Z_CONTROLS, False)
 		screen.updateMinimapSection(False)
 
 		screen.setMinimapMode(MinimapModeTypes.MINIMAPMODE_MILITARY)
@@ -272,7 +272,7 @@ class CvMilitaryAdvisor:
 	def addUnitToList(self, unit, idx, verticalIndex):
 		screen = self.getScreen()
 		screen.addCheckBoxGFCAt(self.unitBackgroundName, self.unitCheckBox + str(idx), gc.getUnitInfo(unit.getUnitType()).getButton(), ArtFileMgr.getInterfaceArtInfo("BUTTON_HILITE_SQUARE").getPath(), 1, 2 + verticalIndex * 50, 46, 46, WidgetTypes.WIDGET_GENERAL, self.UNIT_TOGGLE, idx, ButtonStyles.BUTTON_STYLE_LABEL)
-		szDescription = CyGameTextMgr().getSpecificUnitHelp(unit, true, false)
+		szDescription = CyGameTextMgr().getSpecificUnitHelp(unit, True, False)
 		screen.attachMultilineTextAt(self.unitBackgroundName, "description" + str(idx), u"<font=3>" + szDescription + u"</font>", 50, (verticalIndex * 50) - 4, 360, 50, WidgetTypes.WIDGET_GENERAL, self.UNIT_TOGGLE, idx, CvUtil.FONT_LEFT_JUSTIFY)
 
 	def addUnitsToList(self, units):
@@ -284,9 +284,9 @@ class CvMilitaryAdvisor:
 	def setUnitCheckBoxStates(self):
 		screen = self.getScreen()
 		for idx in range(len(self.unitList)):
-			screen.setState(self.unitCheckBox + str(idx), false)
+			screen.setState(self.unitCheckBox + str(idx), False)
 		for idx in self.selectedUnitList:
-			screen.setState(self.unitCheckBox + str(idx), true)
+			screen.setState(self.unitCheckBox + str(idx), True)
 
 	def handleInput (self, inputClass):
 		screen = self.getScreen()
@@ -313,25 +313,25 @@ class CvMilitaryAdvisor:
 		screen = self.getScreen()
 		if unitIndex in self.selectedUnitList:
 			self.selectedUnitList.remove(unitIndex)
-			screen.setState(self.unitCheckBox + str(unitIndex), false)
+			screen.setState(self.unitCheckBox + str(unitIndex), False)
 		else:
 			self.selectedUnitList.append(unitIndex)
-			screen.setState(self.unitCheckBox + str(unitIndex), true)
+			screen.setState(self.unitCheckBox + str(unitIndex), True)
 		self.refreshMinimap()
 
 	def toggleAllCheckBoxes(self, groupIndex):
 		screen = self.getScreen()
 
 		if self.allState:
-			self.allState = false
+			self.allState = False
 			self.selectedUnitList = []
 			for unitIndex in range(len(self.unitList)):
-				screen.setState(self.unitCheckBox + str(unitIndex), false)
+				screen.setState(self.unitCheckBox + str(unitIndex), False)
 		else:
-			self.allState = true
+			self.allState = True
 			self.selectedUnitList = []
 			for unitIndex in range(len(self.unitList)):
-				screen.setState(self.unitCheckBox + str(unitIndex), true)
+				screen.setState(self.unitCheckBox + str(unitIndex), True)
 				self.selectedUnitList.append(unitIndex)
 
 		self.refreshMinimap()
@@ -342,17 +342,17 @@ class CvMilitaryAdvisor:
 		units = self.groups[groupID].units
 
 		if (self.groupState[groupIndex]):
-			self.groupState[groupIndex] = false
+			self.groupState[groupIndex] = False
 			for unitIndex in units:
 				if unitIndex in self.selectedUnitList:
 					self.selectedUnitList.remove(unitIndex)
-					screen.setState(self.unitCheckBox + str(unitIndex), false)
+					screen.setState(self.unitCheckBox + str(unitIndex), False)
 		else:
-			self.groupState[groupIndex] = true
+			self.groupState[groupIndex] = True
 			for unitIndex in units:
 				if unitIndex not in self.selectedUnitList:
 					self.selectedUnitList.append(unitIndex)
-					screen.setState(self.unitCheckBox + str(unitIndex), true)
+					screen.setState(self.unitCheckBox + str(unitIndex), True)
 
 		self.refreshMinimap()
 
@@ -360,7 +360,7 @@ class CvMilitaryAdvisor:
 		screen = self.getScreen()
 
 		screen.deleteWidget(self.unitBackgroundName)
-		screen.addScrollPanel(self.unitBackgroundName, "", 0, 85, self.viewX + 13, self.H_SCREEN - 164, PanelStyles.PANEL_STYLE_CITY_LEFT, false, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addScrollPanel(self.unitBackgroundName, "", 0, 85, self.viewX + 13, self.H_SCREEN - 164, PanelStyles.PANEL_STYLE_CITY_LEFT, False, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		if (groupId == self.OWNER_GROUP_ID):
 			self.createGroups(OwnerGroupHelper())
@@ -394,13 +394,13 @@ class CvMilitaryAdvisor:
 		keys.sort(groupHelper.compareGroups)
 
 		self.addGroupPanel(localText.getText("TXT_KEY_PEDIA_ALL_UNITS", ()).upper(), -1, 0, 0)
-		self.allState = false
+		self.allState = False
 
 		groupIndex = 0
 		verticalIndex = 1
 		for groupId in keys:
 			self.groupIDs.append(groupId)
-			self.groupState.append(false)
+			self.groupState.append(False)
 			self.addGroupPanel(groupHelper.getGroupLabel(groupId), groupIndex, verticalIndex, groupId)
 
 			units = self.groups[groupId].units
@@ -427,7 +427,7 @@ class CvMilitaryAdvisor:
 		for unitIndex in self.selectedUnitList:
 			unit = self.unitList[unitIndex]
 			iColor = gc.getPlayerColorInfo(gc.getPlayer(unit.getOwner()).getPlayerColor()).getColorTypePrimary()
-			if (unit.getOwner() == self.iActivePlayer or not unit.isInvisible(gc.getGame().getActiveTeam(), false)):
+			if (unit.getOwner() == self.iActivePlayer or not unit.isInvisible(gc.getGame().getActiveTeam(), False)):
 				screen.minimapFlashPlot(unit.plot().getX(), unit.plot().getY(), iColor, -1)
 
 
@@ -462,7 +462,7 @@ class CvMilitaryAdvisor:
 	def hideScreen(self):
 		screen = self.getScreen()
 		for iIndex in range(len(self.KnownLeaders)):
-			screen.setState(self.LEADER_BUTTON_ID + str(self.KnownLeaders[iIndex]), false)
+			screen.setState(self.LEADER_BUTTON_ID + str(self.KnownLeaders[iIndex]), False)
 
 		self.selectedPlayerList = []
 		self.selectedGroupList = []
@@ -476,7 +476,7 @@ class CvMilitaryAdvisor:
 		return 0
 		
 	def refreshSelectedLeader(self, iPlayer):
-		bDirty = false
+		bDirty = False
 		if iPlayer == self.iActivePlayer:
 			Units = self.ListActivePlayerUnits()
 		else:
@@ -485,14 +485,14 @@ class CvMilitaryAdvisor:
 		if (iPlayer in self.selectedPlayerList):
 			self.selectedPlayerList.remove(iPlayer)
 			if len(Units) > 0:
-				bDirty = true
+				bDirty = True
 			for iUnit in self.selectedUnitList:
 				if self.unitList[iUnit].getOwner() == iPlayer:
 					self.selectedUnitList.remove(iUnit)
 		else:
 			self.selectedPlayerList.append(iPlayer)
 			if len(Units) > 0:
-				bDirty = true
+				bDirty = True
 
 		if bDirty:
 			NewSelectedUnitList = []

@@ -274,7 +274,7 @@ public:
 	bool isInAdvancedStart() const;
 
 	DllExport const CvWString & getName();
-	void setName(const TCHAR* szName);
+	void setName(char const* szName);
 
 	// Script data needs to be a narrow string for pickling in Python
 	std::string getScriptData() const;

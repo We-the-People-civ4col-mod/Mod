@@ -26,7 +26,10 @@ class DomesticDemandAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 		colorA = "255,0,0"
 		colorB = "255,0,0"
 		
-		if (iStored < iDemand):
+		if iStored == 0 and iDemand == 0:
+			colorA = "0,150,200"
+			colorB = "0,150,200"
+		elif (iStored < iDemand):
 			if (iStored == 0):
 				colorA = "255,0,0"
 			else:
@@ -38,7 +41,7 @@ class DomesticDemandAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 			colorA = "0,255,255"
 			colorB = colorA
 			
-		self.tableManager.addText("<color=" + colorA + ">" + unicode(iStored) + " / " + "</color>" + "<color=" + colorB + ">" + unicode(iDemand) + " / " + "</color>" + unicode(pCity.getYieldBuyPrice(iYield)))
+		self.tableManager.addText("<color=" + colorA + ">" + unicode(iStored) + " / " + "</color>" + "<color=" + colorB + ">" + unicode(iDemand) + " / " + "</color>" + unicode(pCity.getYieldBuyPrice(iYield)), iCity, iYield, WidgetTypes.WIDGET_HELP_DOMESTIC_DEMAND_ADVISOR)
 
 
 	def createTableHeader(self):
@@ -50,3 +53,18 @@ class DomesticDemandAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 		self.tableManager.addHeaderButton()
 		self.tableManager.addHeaderCityName()
 		self.tableManager.addHeaderArray(player.getDomesticDemandYieldTypes())
+
+	def getWidgetHelp(self, argsList):
+		iScreen, eWidgetType, iCity, iYield, bOption = argsList
+
+		if eWidgetType != WidgetTypes.WIDGET_HELP_DOMESTIC_DEMAND_ADVISOR:
+			return None
+
+		pCity = self.parent.Cities[iCity]
+		iStored = pCity.getYieldStored(iYield)
+		iDemand = pCity.getYieldDemand(iYield)
+		iPrice = pCity.getYieldBuyPrice(iYield)
+
+		yieldInfo = gc.getYieldInfo(iYield)
+		icon = (u" %c" % yieldInfo.getChar())
+		return localText.getText("TXT_KEY_DOMESTIC_ADVISOR_HELP_POPUP", (icon, yieldInfo.getDescription(), iStored, iDemand, iPrice))

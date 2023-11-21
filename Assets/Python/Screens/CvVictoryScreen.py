@@ -376,7 +376,7 @@ class CvVictoryScreen:
 
 				if (victory.isEndScore()):
 
-					szText1 = localText.getText("TXT_KEY_VICTORY_SCREEN_HIGHEST_SCORE", (CyGameTextMgr().getTimeStr(gc.getGame().getStartTurn() + gc.getGame().getMaxTurns(), false), ))
+					szText1 = localText.getText("TXT_KEY_VICTORY_SCREEN_HIGHEST_SCORE", (CyGameTextMgr().getTimeStr(gc.getGame().getStartTurn() + gc.getGame().getMaxTurns(), False), ))
 
 					iRow = screen.appendTableRow(szTable)
 					screen.setTableText(szTable, 0, iRow, szText1, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
@@ -555,10 +555,10 @@ class CvVictoryScreen:
 			if player.isAlive():
 
 				cityList = []
-				(loopCity, iter) = player.firstCity(false)
+				(loopCity, iter) = player.firstCity(False)
 				while(loopCity):
 					cityList.append(loopCity)
-					(loopCity, iter) = player.nextCity(iter, false)
+					(loopCity, iter) = player.nextCity(iter, False)
 
 				listCultureCities = len(cityList) * [(0, 0)]
 				i = 0

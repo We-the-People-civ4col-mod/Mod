@@ -650,7 +650,7 @@ int CvPlayer::startingPlotRange() const
 //	iRange = (GC.getMapINLINE().maxStepDistance() + 40);
 	// PatchMod: Spread out start locs END
 
-	iRange *= GC.getDefineINT("STARTING_DISTANCE_PERCENT");
+	iRange *= GLOBAL_DEFINE_STARTING_DISTANCE_PERCENT;
 	iRange /= 100;
 
 	iRange *= (GC.getMap().getLandPlots() / (GC.getWorldInfo(GC.getMap().getWorldSize()).getTargetNumCities() * GC.getGameINLINE().countCivPlayersAlive()));
@@ -665,7 +665,7 @@ int CvPlayer::startingPlotRange() const
 		iRange /= 100;
 	}
 
-	return std::max(iRange, GC.getDefineINT("MIN_CIV_STARTING_DISTANCE"));
+	return std::max(iRange, GLOBAL_DEFINE_MIN_CIV_STARTING_DISTANCE);
 }
 
 
@@ -687,12 +687,12 @@ int CvPlayer::startingPlotDistanceFactor(CvPlot* pPlot, PlayerTypes ePlayer, int
 		{
 			if (GET_PLAYER(ePlayer).getTeam() == getTeam())
 			{
-				iRange *= GC.getDefineINT("OWN_TEAM_STARTING_MODIFIER");
+				iRange *= GLOBAL_DEFINE_OWN_TEAM_STARTING_MODIFIER;
 				iRange /= 100;
 			}
 			else
 			{
-				iRange *= GC.getDefineINT("RIVAL_TEAM_STARTING_MODIFIER");
+				iRange *= GLOBAL_DEFINE_RIVAL_TEAM_STARTING_MODIFIER;
 				iRange /= 100;
 			}
 		}
@@ -2130,7 +2130,7 @@ ArtStyleTypes CvPlayer::getArtStyleType() const
 	}
 }
 
-const TCHAR* CvPlayer::getUnitButton(UnitTypes eUnit) const
+char const* CvPlayer::getUnitButton(UnitTypes eUnit) const
 {
 	//Androrc UnitArtStyles
 //	return GC.getUnitInfo(eUnit).getArtInfo(0, NO_PROFESSION)->getButton();
@@ -2591,7 +2591,7 @@ void CvPlayer::doTurnUnits()
 
 					/** NBMOD TAX**/
 
-					int iNewTaxRate = NBMOD_GetNewTaxRate(std::min(99, iOldTaxRate + 1 + GC.getGameINLINE().getSorenRandNum(GC.getDefineINT("TAX_RATE_MAX_INCREASE"), "Tax Rate Increase for ship")));
+					int iNewTaxRate = NBMOD_GetNewTaxRate(std::min(99, iOldTaxRate + 1 + GC.getGameINLINE().getSorenRandNum(GLOBAL_DEFINE_TAX_RATE_MAX_INCREASE, "Tax Rate Increase for ship")));
 					int iChange = iNewTaxRate - iOldTaxRate;
 
 					if (iChange > 0)
@@ -3335,11 +3335,11 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 			// R&R, ray, Improvements to Tax Mechanism - END
 			CvCity* pCity = kPlayer.getCity(iData2);
 			if (pCity == NULL) break;
-			
+
 			pCity->setYieldStored(eYield, 0);
 			CvWString szMessage = gDLL->getText("TXT_KEY_BOSTON_TEA_PARTY", kPlayer.getCivilizationAdjectiveKey(), pCity->getNameKey(), GC.getYieldInfo(eYield).getTextKeyWide());
 			gDLL->UI().addPlayerMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szMessage, pCity, "AS2D_CITY_REVOLT", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
-			
+
 		}
 		break;
 
@@ -3892,7 +3892,7 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 					UnitTypes Colonial_Intervention_Unit3 = (UnitTypes)GC.getCivilizationInfo(kNativePlayer.getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_GREAT_GENERAL"));
 
 					// now let us see how much Gold the Natives have and how many Native Soldiers can be acquired
-					int iGoldCostPerUnit = GC.getCOLONIAL_INTERVENTION_NATIVE_WAR_GOLD_TO_PAY_PER_UNIT();
+					int iGoldCostPerUnit = GC.getCOLONIAL_INTERVENTION_NATIVE_WAR_GOLD_TO_PAY_PER_UNIT() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent() / 100;
 					while (kNativePlayer.getGold() > iGoldCostPerUnit)
 					{
 						kNativePlayer.changeGold(-iGoldCostPerUnit);
@@ -4412,7 +4412,9 @@ void CvPlayer::handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer
 				location.deepCoastal = true;
 				location.europe = true;
 				CvCity *locationToAppear = kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_SHIP", 1, "", 0, location, false, false);
-				CvWString locationName = locationToAppear != NULL ? locationToAppear->getNameKey() : gDLL->getText("TXT_KEY_CONCEPT_EUROPE");
+				CvWString locationName = locationToAppear != NULL
+					? static_cast<CvWString>(locationToAppear->getNameKey())
+					: gDLL->getText("TXT_KEY_CONCEPT_EUROPE");
 				CvWString szBuffer = gDLL->getText("TXT_KEY_ROYAL_INTERVENTION_ACCEPTED", GC.getLeaderHeadInfo(GET_PLAYER(enemyID).getLeaderType()).getDescription(), locationName.c_str());
 
 				kPlayer.buyUnitFromParentPlayer(getID(), "UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_1", 1, szBuffer, 0, location, false, false);
@@ -8400,7 +8402,7 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 			{
 				if (gDLL->getChtLvl() > 0)
 				{
-					TCHAR szOut[1024];
+					char szOut[1024];
 					sprintf(szOut, "Player %d Turn ON\n", getID());
 					gDLL->messageControlLog(szOut);
 				}
@@ -8482,7 +8484,7 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 			{
 				if (gDLL->getChtLvl() > 0)
 				{
-					TCHAR szOut[1024];
+					char szOut[1024];
 					sprintf(szOut, "Player %d Turn OFF\n", getID());
 					gDLL->messageControlLog(szOut);
 				}
@@ -18141,7 +18143,7 @@ void CvPlayer::changeYieldTradedTotal(YieldTypes eYield, int iChange, int iUnitP
 			}
 	}
 
-	
+
 	setYieldScoreTotal(eYield, getYieldScoreTotal(eYield) + iChange*iUnitPrice);
 	setYieldTradedTotal(eYield, getYieldTradedTotal(eYield) + iChange);
 }
@@ -18191,8 +18193,8 @@ void CvPlayer::wipeRoyalYieldScore()
 		if (!getColonyPlayer()->isYieldEuropeTradable(eYieldCargo)) continue; //skip whatever is on embargo
 
 		setYieldTradedTotal(eYieldCargo, 0);
-		setYieldScoreTotal(eYieldCargo, 0); 
-		
+		setYieldScoreTotal(eYieldCargo, 0);
+
 	}
 }
 
@@ -18221,7 +18223,7 @@ const int CvPlayer::getFullYieldScore(bool fullCalculation)
 	{
 		return  iGrandTotal * GLOBAL_DEFINE_TAX_RATE_RETAINED_FRACTION / 100;
 	}
-}		
+}
 
 const int CvPlayer::getTaxThresold()
 {
@@ -18256,7 +18258,7 @@ const int CvPlayer::getTaxThresold(bool fullCalculation)
 	{
 		return threshold / 10000;
 	}
-		
+
 }
 
 
@@ -19248,6 +19250,10 @@ const int CvPlayer::getTaxRaiseChance()
 
 	if (GC.getEraInfo(getCurrentEra()).isRevolution()) return 0;
 	if (pColony.getHighestTradedYield() == NO_YIELD) return 0;
+
+	// If the colony is already above the max tax rate, then there is no chance
+	if (pColony.getTaxRate() >= pColony.NBMOD_GetMaxTaxRate()) return 0;
+
 	// the revenue fraction  for tax purpose is now calculated here
 	if (getFullYieldScore(true) <= getTaxThresold(true)) return 0;
 
@@ -19286,9 +19292,9 @@ void CvPlayer::doTaxRaises()
 	// the revenue fraction  for tax purpose is now calculated here
 	if (getFullYieldScore(true) <= getTaxThresold(true) ) return; // we have not traded enough yet;
 
-	
+
 	int iAttitudeModifier = AI().AI_getAttitudeVal(pColony.getID()) * GLOBAL_DEFINE_TAX_TRADE_INCREASE_CHANCE_KING_ATTITUDE_BASE;
-	
+
 	if (iAttitudeModifier > MAX_ATTITUDE_ADJUST)
 	{
 		iAttitudeModifier = MAX_ATTITUDE_ADJUST;

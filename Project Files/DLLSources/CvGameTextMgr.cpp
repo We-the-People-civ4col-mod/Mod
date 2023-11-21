@@ -5483,7 +5483,7 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	if (NO_PROMOTION != kUnitInfo.getLeaderPromotion())
 	{
 		szBuffer.append(CvWString::format(L"%s%c%s", NEWLINE, GC.getSymbolID(BULLET_CHAR), gDLL->getText("TXT_KEY_PROMOTION_WHEN_LEADING").GetCString()));
-		parsePromotionHelp(szBuffer, (PromotionTypes)kUnitInfo.getLeaderPromotion(), L"\n   ");
+		parsePromotionHelp(szBuffer, kUnitInfo.getLeaderPromotion(), L"\n   ");
 	}
 
 	if (kUnitInfo.getCargoSpace() > 0)
@@ -10400,6 +10400,12 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 
 		szBuffer.append(NEWLINE);
 		szBuffer.append(szHelp);
+	}
+
+	if (!isEmpty(kEvent.getHelpText()))
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText(kEvent.getHelpText()));
 	}
 
 	CvWStringBuffer szTemp;

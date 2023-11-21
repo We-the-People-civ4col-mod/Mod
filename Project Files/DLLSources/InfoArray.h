@@ -4,7 +4,7 @@
 // It's a relative of JustInTime arrays though it's aimed at storing xml data in info classes.
 //
 // It's designed to store static data as in write once and then it becomes read only. Writing is mainly directly from xml.
-// 
+//
 // read(tagname) is all it takes to read from xml, even if the tag is a list of lists.
 // Well developed error detection and asserting when reading xml data.
 // If xml contains something like Unit instead of UnitClass, it will tell you which file, what's wrong and what it expects.
@@ -35,7 +35,7 @@
 //
 // Written to work together with BoolArray, JustInTimeArray, JustInTimeArray2D and CacheArray2D.
 //   addCache in those (add in BoolArray) can be used in those to make a list of combined values of multiple InfoArrays
-// 
+//
 //
 //  The class is split into two classes:
 //    InfoArray: data and read functions
@@ -86,7 +86,7 @@ public:
 	int getIndex(int iIndex, int iSubIndex) const;
 	int getLength() const;
 	int getDimentions() const;
-	bool isBool() const; // dimentions and types are the same 
+	bool isBool() const; // dimentions and types are the same
 
 	int getMin(int iDimention) const;
 	int getMax(int iDimention) const;
@@ -102,7 +102,7 @@ public:
 
 	int getWithType(JITarrayTypes eType, int iIndex, int iTokenIndex) const;
 
-	// adds UnitClass->Unit and BuildingClass->Building conversion. Otherwise the same as without the civinfo argument 
+	// adds UnitClass->Unit and BuildingClass->Building conversion. Otherwise the same as without the civinfo argument
 	int getWithTypeWithConversion(JITarrayTypes eType, int iIndex, int iTokenIndex, const CvCivilizationInfo *pCivInfo) const;
 
 protected:
@@ -212,9 +212,9 @@ public:
 	void addTo(EnumMap<Ta, bool, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
 	template<typename Ta, class T, int DEFAULT>
 	bool addCache(EnumMap<Ta, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
-	template<typename class T, int DEFAULT>
+	template<typename T, int DEFAULT>
 	bool addCache(EnumMap<BuildingTypes, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
-	template<typename class T, int DEFAULT>
+	template<typename T, int DEFAULT>
 	bool addCache(EnumMap<UnitTypes, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const;
 	template<typename Ta, class T, int DEFAULT>
 	void copyTo(EnumMap<Ta, T, DEFAULT> & em) const;
@@ -419,7 +419,7 @@ bool InfoArray2Only<T0, T1>::addCache(EnumMap<Ta, T, DEFAULT> & em, int iChange,
 }
 
 template<typename T0, typename T1>
-template<class T, int DEFAULT>
+template<typename T, int DEFAULT>
 bool InfoArray2Only<T0, T1>::addCache(EnumMap<BuildingTypes, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
 {
 	BOOST_STATIC_ASSERT((!boost::is_same<T, bool>::value));
@@ -440,7 +440,7 @@ bool InfoArray2Only<T0, T1>::addCache(EnumMap<BuildingTypes, T, DEFAULT> & em, i
 }
 
 template<typename T0, typename T1>
-template<class T, int DEFAULT>
+template<typename T, int DEFAULT>
 bool InfoArray2Only<T0, T1>::addCache(EnumMap<UnitTypes, T, DEFAULT> & em, int iChange, const CvCivilizationInfo* pCivInfo) const
 {
 	BOOST_STATIC_ASSERT((!boost::is_same<T, bool>::value));

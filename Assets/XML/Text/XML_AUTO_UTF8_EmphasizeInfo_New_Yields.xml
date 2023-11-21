@@ -1,483 +1,483 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_HARDWOOD</Tag>
-        <English>Emphasize Hardwood</English>
-        <German>Schwerpunkt Hartholz</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_HARDWOOD</Tag>
-        <English>Deemphasize Hardwood</English>
-        <German>Schwerpunkt Hartholz aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_FLAX</Tag>
-        <English>Emphasize Flax</English>
-        <German>Schwerpunkt Flachs</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_FLAX</Tag>
-        <English>Deemphasize Flax</English>
-        <German>Schwerpunkt Flachs aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_COAL</Tag>
-        <English>Emphasize Coal</English>
-        <German>Schwerpunkt Kohle</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_COAL</Tag>
-        <English>Deemphasize Coal</English>
-        <German>Schwerpunkt Kohle aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_CHAR_COAL</Tag>
-        <English>Emphasize Charcoal</English>
-        <German>Schwerpunkt Holzkohle</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_CHAR_COAL</Tag>
-        <English>Deemphasize Charcoal</English>
-        <German>Schwerpunkt Holzkohle aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_BLACK_POWDER</Tag>
-        <English>Emphasize Gunpowder</English>
-        <German>Schwerpunkt Schwarzpulver</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_BLACK_POWDER</Tag>
-        <English>Deemphasize Gunpowder</English>
-        <German>Schwerpunkt Schwarzpulver aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_BAKERY_GOODS</Tag>
-        <English>Emphasize Bakery Goods</English>
-        <German>Schwerpunkt Proviant</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_BAKERY_GOODS</Tag>
-        <English>Deemphasize Bakery Goods</English>
-        <German>Schwerpunkt Proviant aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_PEAT</Tag>
-        <English>Emphasize Peat</English>
-        <German>Schwerpunkt Torf</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_PEAT</Tag>
-        <English>Deemphasize Peat</English>
-        <German>Schwerpunkt Torf aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_GOATS</Tag>
-        <English>Emphasize Goats</English>
-        <German>Schwerpunkt Ziegen</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_GOATS</Tag>
-        <English>Deemphasize Goats</English>
-        <German>Schwerpunkt Ziegen aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_PIGS</Tag>
-        <English>Emphasize Pigs</English>
-        <German>Schwerpunkt Schweine</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_PIGS</Tag>
-        <English>Deemphasize Pigs</English>
-        <German>Schwerpunkt Schweine aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_CHICKEN</Tag>
-        <English>Emphasize Chicken</English>
-        <German>Schwerpunkt Hühner</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_CHICKEN</Tag>
-        <English>Deemphasize Chicken</English>
-        <German>Schwerpunkt Hühner aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_GEESE</Tag>
-        <English>Emphasize Geese</English>
-        <German>Schwerpunkt Gänse</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_GEESE</Tag>
-        <English>Deemphasize Geese</English>
-        <German>Schwerpunkt Gänse aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_PEANUTS</Tag>
-        <English>Emphasize Peanuts</English>
-        <German>Schwerpunkt Erdnüsse</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_PEANUTS</Tag>
-        <English>Deemphasize Peanuts</English>
-        <German>Schwerpunkt Erdnüsse aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_YERBA_LEAVES</Tag>
-        <English>Emphasize Yerba Leaves</English>
-        <German>Schwerpunkt Mate-Blätter</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_YERBA_LEAVES</Tag>
-        <English>Deemphasize Yerba Leaves</English>
-        <German>Schwerpunkt Mate-Blätter aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_LOGWOOD</Tag>
-        <English>Emphasize Logwood</English>
-        <German>Schwerpunkt Blauholz</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_LOGWOOD</Tag>
-        <English>Deemphasize Logwood</English>
-        <German>Schwerpunkt Blauholz aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_COCHINEAL</Tag>
-        <English>Emphasize Cochineal</English>
-        <German>Schwerpunkt Cochineal</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_COCHINEAL</Tag>
-        <English>Deemphasize Cochineal</English>
-        <German>Schwerpunkt Cochineal aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_GOAT_HIDES</Tag>
-        <English>Emphasize Goatskins</English>
-        <German>Schwerpunkt Ziegenfelle</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_GOAT_HIDES</Tag>
-        <English>Deemphasize Cochineal</English>
-        <German>Schwerpunkt Ziegenfelle aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_PIG_SKIN</Tag>
-        <English>Emphasize Pigskins</English>
-        <German>Schwerpunkt Schweinehäute</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_PIG_SKIN</Tag>
-        <English>Deemphasize Pigskins</English>
-        <German>Schwerpunkt Schweinehäute aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_DOWNS</Tag>
-        <English>Emphasize Down</English>
-        <German>Schwerpunkt Daunen</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_DOWNS</Tag>
-        <English>Deemphasize Down</English>
-        <German>Schwerpunkt Daunen aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_VANILLA_PODS</Tag>
-        <English>Emphasize Green Vanilla Pods</English>
-        <German>Schwerpunkt Vanilleschoten</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_VANILLA_PODS</Tag>
-        <English>Deemphasize Green Vanilla Pods</English>
-        <German>Schwerpunkt Vanilleschoten aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_FRUITS</Tag>
-        <English>Emphasize Fruit</English>
-        <German>Schwerpunkt Früchte</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_FRUITS</Tag>
-        <English>Deemphasize Fruit</English>
-        <German>Schwerpunkt Früchte aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_OLIVES</Tag>
-        <English>Emphasize Olives</English>
-        <German>Schwerpunkt Oliven</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_OLIVES</Tag>
-        <English>Deemphasize Olives</English>
-        <German>Schwerpunkt Oliven aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_RAPE</Tag>
-        <English>Emphasize Rapeseed</English>
-        <German>Schwerpunkt Raps</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_RAPE</Tag>
-        <English>Deemphasize Rapeseed</English>
-        <German>Schwerpunkt Raps aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_WILD_FEATHERS</Tag>
-        <English>Emphasize Wild Bird Feathers</English>
-        <German>Schwerpunkt Wildvogelfedern</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_WILD_FEATHERS</Tag>
-        <English>Deemphasize Wild Bird Feathers</English>
-        <German>Schwerpunkt Wildvogelfedern aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_RICE</Tag>
-        <English>Emphasize Rice</English>
-        <German>Schwerpunkt Reis</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_RICE</Tag>
-        <English>Deemphasize Rice</English>
-        <German>Schwerpunkt Reis aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_CASSAVA</Tag>
-        <English>Emphasize Cassava</English>
-        <German>Schwerpunkt Cassava</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_CASSAVA</Tag>
-        <English>Deemphasize Cassava</English>
-        <German>Schwerpunkt Cassava aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_MAPLE_SIRUP</Tag>
-        <English>Emphasize Maple Syrup</English>
-        <German>Schwerpunkt Ahornsirup</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_MAPLE_SIRUP</Tag>
-        <English>Deemphasize Maple Syrup</English>
-        <German>Schwerpunkt Ahornsirup aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_KAUTSCHUK</Tag>
-        <English>Emphasize Rubber</English>
-        <German>Schwerpunkt Kautschuk</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_KAUTSCHUK</Tag>
-        <English>Deemphasize Rubber</English>
-        <German>Schwerpunkt Kautschuk aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_FESTIVE_CLOTHES</Tag>
-        <English>Emphasize Festive Clothes</English>
-        <German>Schwerpunkt Festliche Kleidung</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_FESTIVE_CLOTHES</Tag>
-        <English>Deemphasize Festive Clothes</English>
-        <German>Schwerpunkt Festliche Kleidung aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_EVERYDAY_CLOTHES</Tag>
-        <English>Emphasize Everyday Clothes</English>
-        <German>Schwerpunkt Alltagskleidung</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_EVERYDAY_CLOTHES</Tag>
-        <English>Deemphasize Everyday Clothes</English>
-        <German>Schwerpunkt Alltagskleidung aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_POTTERY</Tag>
-        <English>Emphasize Pottery</English>
-        <German>Schwerpunkt Töpferwaren</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_POTTERY</Tag>
-        <English>Deemphasize Pottery</English>
-        <German>Schwerpunkt Töpferwaren aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_MILK</Tag>
-        <English>Emphasize Milk</English>
-        <German>Schwerpunkt Milch</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_MILK</Tag>
-        <English>Deemphasize Milk</English>
-        <German>Schwerpunkt Milch aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_CHEESE</Tag>
-        <English>Emphasize Cheese</English>
-        <German>Schwerpunkt Käse</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_CHEESE</Tag>
-        <English>Deemphasize Cheese</English>
-        <German>Schwerpunkt Käse aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_ROASTED_PEANUTS</Tag>
-        <English>Emphasize Roasted Peanuts</English>
-        <German>Schwerpunkt Geröstete Erdnüsse</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_ROASTED_PEANUTS</Tag>
-        <English>Deemphasize Roasted Peanuts</English>
-        <German>Schwerpunkt Geröstete Erdnüsse aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_YERBA_TEA</Tag>
-        <English>Emphasize Yerba-Maté</English>
-        <German>Schwerpunkt Mate-Tee</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_YERBA_TEA</Tag>
-        <English>Deemphasize Yerba-Maté</English>
-        <German>Schwerpunkt Mate-Tee aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_COLOURED_WOOL_CLOTH</Tag>
-        <English>Emphasize Coloured Wool Cloth</English>
-        <German>Schwerpunkt Gefärbter Wollstoff</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_COLOURED_WOOL_CLOTH</Tag>
-        <English>Deemphasize Coloured Wool Cloth</English>
-        <German>Schwerpunkt Gefärbter Wollstoff aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_GOAT_HIDE_BOOTS</Tag>
-        <English>Emphasize Goat Hide Boots</English>
-        <German>Schwerpunkt Ziegenlederstiefel</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_GOAT_HIDE_BOOTS</Tag>
-        <English>Deemphasize Goat Hide Boots</English>
-        <German>Schwerpunkt Ziegenlederstiefel aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_PIG_LEATHER</Tag>
-        <English>Emphasize Pig Leather Aprons</English>
-        <German>Schwerpunkt Schweinslederschürzen</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_PIG_LEATHER</Tag>
-        <English>Deemphasize Pig Leather Aprons</English>
-        <German>Schwerpunkt Schweinslederschürzen aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_PADDED_LEATHER_COATS</Tag>
-        <English>Emphasize Lined Leather Coats</English>
-        <German>Schwerpunkt Gefütterte Ledermäntel</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_PADDED_LEATHER_COATS</Tag>
-        <English>Deemphasize Lined Leather Coats</English>
-        <German>Schwerpunkt Gefütterte Ledermäntel aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_VANILLA</Tag>
-        <English>Emphasize Dried Vanilla</English>
-        <German>Schwerpunkt Getrocknete Vanille</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_VANILLA</Tag>
-        <English>Deemphasize Dried Vanilla</English>
-        <German>Schwerpunkt Getrocknete Vanille aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_CHOCOLATE</Tag>
-        <English>Emphasize Chocolate</English>
-        <German>Schwerpunkt Schokolade</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_CHOCOLATE</Tag>
-        <English>Deemphasize Chocolate</English>
-        <German>Schwerpunkt Schokolade aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_HOOCH</Tag>
-        <English>Emphasize Fruit Brandy</English>
-        <German>Schwerpunkt Schnaps</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_HOOCH</Tag>
-        <English>Deemphasize Fruit Brandy</English>
-        <German>Schwerpunkt Schnaps aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_OLIVE_OIL</Tag>
-        <English>Emphasize Olive Oil</English>
-        <German>Schwerpunkt Olivenöl</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_OLIVE_OIL</Tag>
-        <English>Deemphasize Olive Oil</English>
-        <German>Schwerpunkt Olivenöl aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_RAPE_OIL</Tag>
-        <English>Emphasize Rapeseed Oil</English>
-        <German>Schwerpunkt Rapsöl</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_RAPE_OIL</Tag>
-        <English>Deemphasize Rapeseed Oil</English>
-        <German>Schwerpunkt Rapsöl aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_PADDED_FURNITURE</Tag>
-        <English>Emphasize Upholstered Furniture</English>
-        <German>Schwerpunkt Polstermöbel</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_PADDED_FURNITURE</Tag>
-        <English>Deemphasize Upholstered Furniture</English>
-        <German>Schwerpunkt Polstermöbel aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_FIELD_WORKER_TOOLS</Tag>
-        <English>Emphasize Fieldworker Tools</English>
-        <German>Schwerpunkt Feldarbeiterwerkzeuge</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_FIELD_WORKER_TOOLS</Tag>
-        <English>Deemphasize Fieldworker Tools</English>
-        <German>Schwerpunkt Feldarbeiterwerkzeuge aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_HOUSEHOLD_GOODS</Tag>
-        <English>Emphasize Household Goods</English>
-        <German>Schwerpunkt Haushaltswaren</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_HOUSEHOLD_GOODS</Tag>
-        <English>Deemphasize Household Goods</English>
-        <German>Schwerpunkt Haushaltswaren aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_CULTURE</Tag>
-        <English>Emphasize Culture</English>
-        <German>Schwerpunkt Kultur</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_CULTURE</Tag>
-        <English>Deemphasize Culture</English>
-        <German>Schwerpunkt Kultur aufheben</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_HEALTH</Tag>
-        <English>Emphasize Health</English>
-        <German>Schwerpunkt Gesundheit</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_EMPHASIZE_NO_HEALTH</Tag>
-        <English>Deemphasize Health</English>
-        <German>Schwerpunkt Gesundheit aufheben</German>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_HARDWOOD</Tag>
+		<English>Emphasize Hardwood</English>
+		<German>Schwerpunkt Hartholz</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_HARDWOOD</Tag>
+		<English>Deemphasize Hardwood</English>
+		<German>Schwerpunkt Hartholz aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_FLAX</Tag>
+		<English>Emphasize Flax</English>
+		<German>Schwerpunkt Flachs</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_FLAX</Tag>
+		<English>Deemphasize Flax</English>
+		<German>Schwerpunkt Flachs aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_COAL</Tag>
+		<English>Emphasize Coal</English>
+		<German>Schwerpunkt Kohle</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_COAL</Tag>
+		<English>Deemphasize Coal</English>
+		<German>Schwerpunkt Kohle aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_CHAR_COAL</Tag>
+		<English>Emphasize Charcoal</English>
+		<German>Schwerpunkt Holzkohle</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_CHAR_COAL</Tag>
+		<English>Deemphasize Charcoal</English>
+		<German>Schwerpunkt Holzkohle aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_BLACK_POWDER</Tag>
+		<English>Emphasize Gunpowder</English>
+		<German>Schwerpunkt Schwarzpulver</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_BLACK_POWDER</Tag>
+		<English>Deemphasize Gunpowder</English>
+		<German>Schwerpunkt Schwarzpulver aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_BAKERY_GOODS</Tag>
+		<English>Emphasize Bakery Goods</English>
+		<German>Schwerpunkt Proviant</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_BAKERY_GOODS</Tag>
+		<English>Deemphasize Bakery Goods</English>
+		<German>Schwerpunkt Proviant aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_PEAT</Tag>
+		<English>Emphasize Peat</English>
+		<German>Schwerpunkt Torf</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_PEAT</Tag>
+		<English>Deemphasize Peat</English>
+		<German>Schwerpunkt Torf aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_GOATS</Tag>
+		<English>Emphasize Goats</English>
+		<German>Schwerpunkt Ziegen</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_GOATS</Tag>
+		<English>Deemphasize Goats</English>
+		<German>Schwerpunkt Ziegen aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_PIGS</Tag>
+		<English>Emphasize Pigs</English>
+		<German>Schwerpunkt Schweine</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_PIGS</Tag>
+		<English>Deemphasize Pigs</English>
+		<German>Schwerpunkt Schweine aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_CHICKEN</Tag>
+		<English>Emphasize Chicken</English>
+		<German>Schwerpunkt Hühner</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_CHICKEN</Tag>
+		<English>Deemphasize Chicken</English>
+		<German>Schwerpunkt Hühner aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_GEESE</Tag>
+		<English>Emphasize Geese</English>
+		<German>Schwerpunkt Gänse</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_GEESE</Tag>
+		<English>Deemphasize Geese</English>
+		<German>Schwerpunkt Gänse aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_PEANUTS</Tag>
+		<English>Emphasize Peanuts</English>
+		<German>Schwerpunkt Erdnüsse</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_PEANUTS</Tag>
+		<English>Deemphasize Peanuts</English>
+		<German>Schwerpunkt Erdnüsse aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_YERBA_LEAVES</Tag>
+		<English>Emphasize Yerba Leaves</English>
+		<German>Schwerpunkt Mate-Blätter</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_YERBA_LEAVES</Tag>
+		<English>Deemphasize Yerba Leaves</English>
+		<German>Schwerpunkt Mate-Blätter aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_LOGWOOD</Tag>
+		<English>Emphasize Logwood</English>
+		<German>Schwerpunkt Blauholz</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_LOGWOOD</Tag>
+		<English>Deemphasize Logwood</English>
+		<German>Schwerpunkt Blauholz aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_COCHINEAL</Tag>
+		<English>Emphasize Cochineal</English>
+		<German>Schwerpunkt Cochineal</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_COCHINEAL</Tag>
+		<English>Deemphasize Cochineal</English>
+		<German>Schwerpunkt Cochineal aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_GOAT_HIDES</Tag>
+		<English>Emphasize Goatskins</English>
+		<German>Schwerpunkt Ziegenfelle</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_GOAT_HIDES</Tag>
+		<English>Deemphasize Cochineal</English>
+		<German>Schwerpunkt Ziegenfelle aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_PIG_SKIN</Tag>
+		<English>Emphasize Pigskins</English>
+		<German>Schwerpunkt Schweinehäute</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_PIG_SKIN</Tag>
+		<English>Deemphasize Pigskins</English>
+		<German>Schwerpunkt Schweinehäute aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_DOWNS</Tag>
+		<English>Emphasize Down</English>
+		<German>Schwerpunkt Daunen</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_DOWNS</Tag>
+		<English>Deemphasize Down</English>
+		<German>Schwerpunkt Daunen aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_VANILLA_PODS</Tag>
+		<English>Emphasize Green Vanilla Pods</English>
+		<German>Schwerpunkt Vanilleschoten</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_VANILLA_PODS</Tag>
+		<English>Deemphasize Green Vanilla Pods</English>
+		<German>Schwerpunkt Vanilleschoten aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_FRUITS</Tag>
+		<English>Emphasize Fruit</English>
+		<German>Schwerpunkt Früchte</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_FRUITS</Tag>
+		<English>Deemphasize Fruit</English>
+		<German>Schwerpunkt Früchte aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_OLIVES</Tag>
+		<English>Emphasize Olives</English>
+		<German>Schwerpunkt Oliven</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_OLIVES</Tag>
+		<English>Deemphasize Olives</English>
+		<German>Schwerpunkt Oliven aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_RAPE</Tag>
+		<English>Emphasize Rapeseed</English>
+		<German>Schwerpunkt Raps</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_RAPE</Tag>
+		<English>Deemphasize Rapeseed</English>
+		<German>Schwerpunkt Raps aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_WILD_FEATHERS</Tag>
+		<English>Emphasize Wild Bird Feathers</English>
+		<German>Schwerpunkt Wildvogelfedern</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_WILD_FEATHERS</Tag>
+		<English>Deemphasize Wild Bird Feathers</English>
+		<German>Schwerpunkt Wildvogelfedern aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_RICE</Tag>
+		<English>Emphasize Rice</English>
+		<German>Schwerpunkt Reis</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_RICE</Tag>
+		<English>Deemphasize Rice</English>
+		<German>Schwerpunkt Reis aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_CASSAVA</Tag>
+		<English>Emphasize Cassava</English>
+		<German>Schwerpunkt Cassava</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_CASSAVA</Tag>
+		<English>Deemphasize Cassava</English>
+		<German>Schwerpunkt Cassava aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_MAPLE_SIRUP</Tag>
+		<English>Emphasize Maple Syrup</English>
+		<German>Schwerpunkt Ahornsirup</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_MAPLE_SIRUP</Tag>
+		<English>Deemphasize Maple Syrup</English>
+		<German>Schwerpunkt Ahornsirup aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_KAUTSCHUK</Tag>
+		<English>Emphasize Rubber</English>
+		<German>Schwerpunkt Kautschuk</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_KAUTSCHUK</Tag>
+		<English>Deemphasize Rubber</English>
+		<German>Schwerpunkt Kautschuk aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_FESTIVE_CLOTHES</Tag>
+		<English>Emphasize Festive Clothes</English>
+		<German>Schwerpunkt Festliche Kleidung</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_FESTIVE_CLOTHES</Tag>
+		<English>Deemphasize Festive Clothes</English>
+		<German>Schwerpunkt Festliche Kleidung aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_EVERYDAY_CLOTHES</Tag>
+		<English>Emphasize Everyday Clothes</English>
+		<German>Schwerpunkt Alltagskleidung</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_EVERYDAY_CLOTHES</Tag>
+		<English>Deemphasize Everyday Clothes</English>
+		<German>Schwerpunkt Alltagskleidung aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_POTTERY</Tag>
+		<English>Emphasize Pottery</English>
+		<German>Schwerpunkt Töpferwaren</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_POTTERY</Tag>
+		<English>Deemphasize Pottery</English>
+		<German>Schwerpunkt Töpferwaren aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_MILK</Tag>
+		<English>Emphasize Milk</English>
+		<German>Schwerpunkt Milch</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_MILK</Tag>
+		<English>Deemphasize Milk</English>
+		<German>Schwerpunkt Milch aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_CHEESE</Tag>
+		<English>Emphasize Cheese</English>
+		<German>Schwerpunkt Käse</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_CHEESE</Tag>
+		<English>Deemphasize Cheese</English>
+		<German>Schwerpunkt Käse aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_ROASTED_PEANUTS</Tag>
+		<English>Emphasize Roasted Peanuts</English>
+		<German>Schwerpunkt Geröstete Erdnüsse</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_ROASTED_PEANUTS</Tag>
+		<English>Deemphasize Roasted Peanuts</English>
+		<German>Schwerpunkt Geröstete Erdnüsse aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_YERBA_TEA</Tag>
+		<English>Emphasize Yerba-Maté</English>
+		<German>Schwerpunkt Mate-Tee</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_YERBA_TEA</Tag>
+		<English>Deemphasize Yerba-Maté</English>
+		<German>Schwerpunkt Mate-Tee aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_COLOURED_WOOL_CLOTH</Tag>
+		<English>Emphasize Coloured Wool Cloth</English>
+		<German>Schwerpunkt Gefärbter Wollstoff</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_COLOURED_WOOL_CLOTH</Tag>
+		<English>Deemphasize Coloured Wool Cloth</English>
+		<German>Schwerpunkt Gefärbter Wollstoff aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_GOAT_HIDE_BOOTS</Tag>
+		<English>Emphasize Goat Hide Boots</English>
+		<German>Schwerpunkt Ziegenlederstiefel</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_GOAT_HIDE_BOOTS</Tag>
+		<English>Deemphasize Goat Hide Boots</English>
+		<German>Schwerpunkt Ziegenlederstiefel aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_PIG_LEATHER</Tag>
+		<English>Emphasize Pig Leather Aprons</English>
+		<German>Schwerpunkt Schweinslederschürzen</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_PIG_LEATHER</Tag>
+		<English>Deemphasize Pig Leather Aprons</English>
+		<German>Schwerpunkt Schweinslederschürzen aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_PADDED_LEATHER_COATS</Tag>
+		<English>Emphasize Lined Leather Coats</English>
+		<German>Schwerpunkt Gefütterte Ledermäntel</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_PADDED_LEATHER_COATS</Tag>
+		<English>Deemphasize Lined Leather Coats</English>
+		<German>Schwerpunkt Gefütterte Ledermäntel aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_VANILLA</Tag>
+		<English>Emphasize Dried Vanilla</English>
+		<German>Schwerpunkt Getrocknete Vanille</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_VANILLA</Tag>
+		<English>Deemphasize Dried Vanilla</English>
+		<German>Schwerpunkt Getrocknete Vanille aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_CHOCOLATE</Tag>
+		<English>Emphasize Chocolate</English>
+		<German>Schwerpunkt Schokolade</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_CHOCOLATE</Tag>
+		<English>Deemphasize Chocolate</English>
+		<German>Schwerpunkt Schokolade aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_HOOCH</Tag>
+		<English>Emphasize Fruit Brandy</English>
+		<German>Schwerpunkt Schnaps</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_HOOCH</Tag>
+		<English>Deemphasize Fruit Brandy</English>
+		<German>Schwerpunkt Schnaps aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_OLIVE_OIL</Tag>
+		<English>Emphasize Olive Oil</English>
+		<German>Schwerpunkt Olivenöl</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_OLIVE_OIL</Tag>
+		<English>Deemphasize Olive Oil</English>
+		<German>Schwerpunkt Olivenöl aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_RAPE_OIL</Tag>
+		<English>Emphasize Rapeseed Oil</English>
+		<German>Schwerpunkt Rapsöl</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_RAPE_OIL</Tag>
+		<English>Deemphasize Rapeseed Oil</English>
+		<German>Schwerpunkt Rapsöl aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_PADDED_FURNITURE</Tag>
+		<English>Emphasize Upholstered Furniture</English>
+		<German>Schwerpunkt Polstermöbel</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_PADDED_FURNITURE</Tag>
+		<English>Deemphasize Upholstered Furniture</English>
+		<German>Schwerpunkt Polstermöbel aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_FIELD_WORKER_TOOLS</Tag>
+		<English>Emphasize Fieldworker Tools</English>
+		<German>Schwerpunkt Feldarbeiterwerkzeuge</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_FIELD_WORKER_TOOLS</Tag>
+		<English>Deemphasize Fieldworker Tools</English>
+		<German>Schwerpunkt Feldarbeiterwerkzeuge aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_HOUSEHOLD_GOODS</Tag>
+		<English>Emphasize Household Goods</English>
+		<German>Schwerpunkt Haushaltswaren</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_HOUSEHOLD_GOODS</Tag>
+		<English>Deemphasize Household Goods</English>
+		<German>Schwerpunkt Haushaltswaren aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_CULTURE</Tag>
+		<English>Emphasize Culture</English>
+		<German>Schwerpunkt Kultur</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_CULTURE</Tag>
+		<English>Deemphasize Culture</English>
+		<German>Schwerpunkt Kultur aufheben</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_HEALTH</Tag>
+		<English>Emphasize Health</English>
+		<German>Schwerpunkt Gesundheit</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EMPHASIZE_NO_HEALTH</Tag>
+		<English>Deemphasize Health</English>
+		<German>Schwerpunkt Gesundheit aufheben</German>
+	</TEXT>
 </Civ4GameText>

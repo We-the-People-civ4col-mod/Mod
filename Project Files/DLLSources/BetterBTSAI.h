@@ -27,6 +27,6 @@
 #define gMapLogLevel    0 // K-Mod
 #endif
 
-void logBBAI(TCHAR* format, ... );
+void logBBAI(char const* format, ... );
 
 #endif  //BETTERBTSAI_H

@@ -78,7 +78,8 @@ class CvEuropeScreen:
 		self.SAIL_WEST_SFrigid = 36
 		self.SectorNames = dict([(0, 'NFrigid'), (1, 'NTemperate'), (2, 'NTropic'), (3, 'STropic'), (4, 'STemperate'), (5, 'SFrigid')])		
 		# R&R, vetiarvind, Navigation Sectors - END
-		self.bBookIntro, self.bBookOutro = false, false
+		self.bBookIntro, self.bBookOutro = False, False
+		self.show_tax_details = -1 # 0 - always hide details, 1 - always show details , -1 show iff No Hidden Variable is set
 	
 	def getScreen(self):
 		return CyGInterfaceScreen("EuropeScreen", CvScreenEnums.EUROPE_SCREEN)
@@ -114,10 +115,10 @@ class CvEuropeScreen:
 		self.playerEurope = gc.getPlayer(player.getParent())
 		self.iThisWinter = 0
 		self.iSoundID = 0
-		self.bBookIntro, self.bBookOutro = false, false
+		self.bBookIntro, self.bBookOutro = False, False
 		
 		if (not sdToolKit.sdEntityExists( 'komaScreens', player.getID())): 
-			sdToolKit.sdEntityInit('komaScreens', player.getID(), { 'TradeBox': false, 'LastWinter': 0, 'PreviewMode': "INTERFACE_DOMESTIC_ADVISOR", 'DealFailed': -1 })
+			sdToolKit.sdEntityInit('komaScreens', player.getID(), { 'TradeBox': False, 'LastWinter': 0, 'PreviewMode': "INTERFACE_DOMESTIC_ADVISOR", 'DealFailed': -1 })
 
 		bShowTradeBox = sdToolKit.sdGetVal('komaScreens', player.getID(), 'TradeBox')
 		self.EuropeUnitsList = []
@@ -143,7 +144,7 @@ class CvEuropeScreen:
 			February = localText.getText("TXT_KEY_MONTH_FEBRUARY", ())
 			December = localText.getText("TXT_KEY_MONTH_DECEMBER", ())
 			
-			szDate = CyGameTextMgr().getTimeStr(iCurrentTurn, true)
+			szDate = CyGameTextMgr().getTimeStr(iCurrentTurn, True)
 
 			January = localText.getText("TXT_KEY_MONTH_JANUARY", ())
 			February = localText.getText("TXT_KEY_MONTH_FEBRUARY", ())
@@ -284,11 +285,11 @@ class CvEuropeScreen:
 		screen.showWindowBackground(False)
 	
 		# Water Animation
-		screen.addUnitGraphicGFC("WaterAnim_Widget", gc.getInfoTypeForString("UNIT_CARAVEL"), -1, 0, 0, self.XResolution, self.XResolution, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, true)
+		screen.addUnitGraphicGFC("WaterAnim_Widget", UnitTypes.UNIT_CARAVEL, -1, 0, 0, self.XResolution, self.XResolution, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, True)
 	
 		# show background
 		if not self.iThisWinter:
-			if self.iVideo > 0 and iCurrentTurn % self.iVideo == 0 and not iCurrentTurn == 0 and not CyUserProfile().getGraphicOption(gc.getInfoTypeForString("GRAPHICOPTION_NO_MOVIES")):
+			if self.iVideo > 0 and iCurrentTurn % self.iVideo == 0 and not iCurrentTurn == 0 and not CyUserProfile().getGraphicOption(GraphicOptionTypes.GRAPHICOPTION_NO_MOVIES):
 				screen.playMovie("Art/Interface/Screens/Europe/intro.bik", 0, 0, self.XResolution, self.YResolution * 23 / 100, 0)
 				screen.addDDSGFC("EuropeScreenBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_BACKGROUND").getPath(), 0, 0, self.XResolution, self.YResolution, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 			else:
@@ -298,17 +299,17 @@ class CvEuropeScreen:
 			screen.addDDSGFC("EuropeScreenBackground", "Art/Interface/Screens/Europe/BackgroundWinter.dds", 0, 0, self.XResolution, self.YResolution, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		
 		# InBound
-		screen.addScrollPanel("InBoundList", u"", self.INBOUND_X, self.INBOUND_Y, self.INBOUND_W, self.INBOUND_H, PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addScrollPanel("InBoundList", u"", self.INBOUND_X, self.INBOUND_Y, self.INBOUND_W, self.INBOUND_H, PanelStyles.PANEL_STYLE_MAIN, False, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		# OutBound
-		screen.addScrollPanel("OutBoundList", u"", self.OUTBOUND_X, self.OUTBOUND_Y, self.OUTBOUND_W, self.OUTBOUND_H, PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1 )
+		screen.addScrollPanel("OutBoundList", u"", self.OUTBOUND_X, self.OUTBOUND_Y, self.OUTBOUND_W, self.OUTBOUND_H, PanelStyles.PANEL_STYLE_MAIN, False, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1 )
 	
 		# In Port
 		screen.addScrollPanel("LoadingList", u"", self.INPORT_X, self.INPORT_Y, self.INPORT_W, self.INPORT_H, PanelStyles.PANEL_STYLE_MAIN, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		screen.addScrollPanel("OutBoundListOverlay", u"", self.OUTBOUND_X, self.OUTBOUND_Y, self.OUTBOUND_W, self.OUTBOUND_H, PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1 )
+		screen.addScrollPanel("OutBoundListOverlay", u"", self.OUTBOUND_X, self.OUTBOUND_Y, self.OUTBOUND_W, self.OUTBOUND_H, PanelStyles.PANEL_STYLE_MAIN, False, WidgetTypes.WIDGET_SAIL, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1 )
 	
 		# Dock
-		screen.addScrollPanel("DockList", u"", self.DOCK_X, self.DOCK_Y, self.DOCK_W, self.DOCK_H, PanelStyles.PANEL_STYLE_MAIN, false, WidgetTypes.WIDGET_DOCK, -1, -1 )
+		screen.addScrollPanel("DockList", u"", self.DOCK_X, self.DOCK_Y, self.DOCK_W, self.DOCK_H, PanelStyles.PANEL_STYLE_MAIN, False, WidgetTypes.WIDGET_DOCK, -1, -1 )
 	
 		# Messages
 		self.iCounter = self.TRADE_X
@@ -317,7 +318,7 @@ class CvEuropeScreen:
 			
 		screen.setImageButton("TradeMessagePanel", "Art/Interface/Screens/Europe/Book.dds", self.iCounter - 240, self.TRADE_Y, self.TRADE_W, self.TRADE_H, WidgetTypes.WIDGET_GENERAL, self.TRADE_LOG, -1)
 		self.szTradeTable = "TradeMessages"
-		screen.addTableControlGFC(self.szTradeTable, 4, self.TRADE_X, self.TRADE_Y + self.STANDARD_MARGIN, self.TRADE_W - self.STANDARD_MARGIN * 2, self.TRADE_H - self.STANDARD_MARGIN * 2, false, false, 32, 32, TableStyles.TABLE_STYLE_ALTEMPTY)
+		screen.addTableControlGFC(self.szTradeTable, 4, self.TRADE_X, self.TRADE_Y + self.STANDARD_MARGIN, self.TRADE_W - self.STANDARD_MARGIN * 2, self.TRADE_H - self.STANDARD_MARGIN * 2, False, False, 32, 32, TableStyles.TABLE_STYLE_ALTEMPTY)
 		screen.setTableColumnHeader(self.szTradeTable, 0, u"", 58)
 		screen.setTableColumnHeader(self.szTradeTable, 1, u"", 68)
 		screen.setTableColumnHeader(self.szTradeTable, 2, u"", 48)
@@ -333,7 +334,7 @@ class CvEuropeScreen:
 		
 		# Purchase
 		if (gc.getPlayer(gc.getGame().getActivePlayer()).canTradeWithEurope()):
-			# screen.addUnitGraphicGFC("PurchaseButton", gc.getInfoTypeForString("UNIT_GREAT_GENERAL"), -1, self.XResolution - self.RECRUIT_W - self.STANDARD_MARGIN, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_GENERAL, self.BUY_UNIT_BUTTON_ID, -1, 0, 0, 1.0, false)
+			# screen.addUnitGraphicGFC("PurchaseButton", gc.getInfoTypeForString("UNIT_GREAT_GENERAL"), -1, self.XResolution - self.RECRUIT_W - self.STANDARD_MARGIN, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_GENERAL, self.BUY_UNIT_BUTTON_ID, -1, 0, 0, 1.0, False)
 			screen.setImageButton("PurchaseButton",  "Art/Interface/Screens/Europe/Great_General_Dollar.dds",  self.XResolution - self.RECRUIT_W - self.STANDARD_MARGIN,  self.RECRUIT_Y, self.RECRUIT_W,self.RECRUIT_H,  WidgetTypes.WIDGET_GENERAL, self.BUY_UNIT_BUTTON_ID, -1)
 		
 		# draw the contents
@@ -359,10 +360,10 @@ class CvEuropeScreen:
 		screen.setText(self.getNextWidgetName(), "Background", szExit, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - self.STANDARD_MARGIN, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1 )
 
 		szTaxRate = u"<font=4>" + localText.getText(hudColor, ()) + localText.getText("TXT_KEY_MISC_TAX_RATE", (player.getTaxRate(), player.NBMOD_GetMaxTaxRate())).upper() + u"</font>"
-		screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_HELP_TAX_CALCULATION, self.player_id , -1 )
+		screen.setText(self.getNextWidgetName(), "Background", szTaxRate, CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - CyInterface().determineWidth(szExit) - self.STANDARD_MARGIN * 2, self.STANDARD_MARGIN, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_HELP_TAX_CALCULATION, self.player_id, self.show_tax_details)
 
 		
-		if (sdToolKit.sdGetVal('komaScreens', player.getID(), 'TradeBox') == false):
+		if (sdToolKit.sdGetVal('komaScreens', player.getID(), 'TradeBox') == False):
 			screen.hide(self.szTradeTable)
 			
 		#Units
@@ -554,9 +555,9 @@ class CvEuropeScreen:
 			if player.getDocksNextUnit(i) != UnitTypes.NO_UNIT:
 				UnitInfo = gc.getUnitInfo(player.getDocksNextUnit(i))
 				## R&R, Robert Surcouf,  Multiple rows of Yields if necessary START
-				#screen.addUnitGraphicGFC("Recruits" + str(i), player.getDocksNextUnit(i), UnitInfo.getDefaultProfession(), iX, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_PLAYER_HURRY, gc.getInfoTypeForString("HURRY_IMMIGRANT"), i, 0, 0, 1.0, false)
+				#screen.addUnitGraphicGFC("Recruits" + str(i), player.getDocksNextUnit(i), UnitInfo.getDefaultProfession(), iX, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_PLAYER_HURRY, gc.getInfoTypeForString("HURRY_IMMIGRANT"), i, 0, 0, 1.0, False)
 				# Sometimes immigrants appear on water !!!!!
-				screen.addUnitGraphicGFC("Recruits" + str(i), player.getDocksNextUnit(i), UnitInfo.getDefaultProfession(), iX, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_PLAYER_HURRY, gc.getInfoTypeForString("HURRY_IMMIGRANT"), i, 0, 0, 1.0, false)
+				screen.addUnitGraphicGFC("Recruits" + str(i), player.getDocksNextUnit(i), UnitInfo.getDefaultProfession(), iX, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_PLAYER_HURRY, gc.getInfoTypeForString("HURRY_IMMIGRANT"), i, 0, 0, 1.0, False)
 				## R&R, Robert Surcouf,  Multiple rows of Yields if necessary END
 				iX += RecruitSpacing
 				
@@ -615,7 +616,7 @@ class CvEuropeScreen:
 			kYield = gc.getYieldInfo(iYield)
 			iSellPrice = self.playerEurope.getYieldSellPrice(iYield)
 			iBuyPrice = self.playerEurope.getYieldBuyPrice(iYield)
-			#player.setYieldEuropeTradable(iYield, false)
+			#player.setYieldEuropeTradable(iYield, False)
 			#screen.addDDSGFC(self.getNextWidgetName(), ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_SHADOW_BOX").getPath(), iX, self.BOX_Y, self.BOX_W, self.BOX_H, WidgetTypes.WIDGET_MOVE_CARGO_TO_TRANSPORT, iYield, -1)
 			#screen.addDDSGFC(self.getNextWidgetName(), ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_BOX_PRICE").getPath(), iX, self.BOX_Y, self.BOX_W, self.BOX_H, WidgetTypes.WIDGET_MOVE_CARGO_TO_TRANSPORT, iYield, -1)
 			screen.addDDSGFC(self.getNextWidgetName(), ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_SHADOW_BOX").getPath(), iX,iY, self.BOX_W, self.BOX_H, WidgetTypes.WIDGET_MOVE_CARGO_TO_TRANSPORT, iYield, -1)
@@ -711,7 +712,7 @@ class CvEuropeScreen:
 				elif (inputClass.getData1() == self.BUY_UNIT_BUTTON_ID) :
 					popupInfo = CyPopupInfo()
 					popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PURCHASE_EUROPE_UNIT)
-					CyInterface().addPopup(popupInfo, gc.getGame().getActivePlayer(), true, false)
+					CyInterface().addPopup(popupInfo, gc.getGame().getActivePlayer(), True, False)
 
 				elif (inputClass.getData1() == self.SAIL_TO_NEW_WORLD) :
 					self.sailToNewWorld(inputClass.getData2())
@@ -742,7 +743,7 @@ class CvEuropeScreen:
 									pPlot = self.getBestCityPlot(pCity.plot()) 
 									self.CityPlotList[index] = [pCity, pPlot]
 								CyMessageControl().sendApplyEvent(CvUtil.EventDoEuropeScreen, EventContextTypes.EVENTCONTEXT_ALL, (SEND_TO_NEW_WORLD_CITY, inputClass.getData2(), pPlot.getX(), pPlot.getY(), pCity.plot().getX(), pCity.plot().getY(), -1, -1, -1))
-								CyMessageControl().sendDoCommand(inputClass.getData2(), CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1, false)
+								CyMessageControl().sendDoCommand(inputClass.getData2(), CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1, False)
 								self.EuropeUnitsList.remove(inputClass.getData2())
 								self.setSound(UNIT_SOUND_ORDER)
 
@@ -880,11 +881,11 @@ class CvEuropeScreen:
 			self.iCounter += iStep
 		else:
 			if self.bBookIntro:
-				self.bBookIntro = false
+				self.bBookIntro = False
 				screen.show(self.szTradeTable)
 				screen.moveToFront(self.szTradeTable)
 			else:
-				self.bBookOutro = false
+				self.bBookOutro = False
 			
 	
 	def toggleTradeLog(self):
@@ -954,14 +955,14 @@ class CvEuropeScreen:
 		#if self.EuropePlotList == []:
 		self.getPlotLists(pTransport)
 				
-		self.createBox(self.DIALOG_X, self.DIALOG_Y, self.DIALOG_W, self.DIALOG_H, true)
+		self.createBox(self.DIALOG_X, self.DIALOG_Y, self.DIALOG_W, self.DIALOG_H, True)
 		
 		screen.hide("DealFailedText")
 		
-		screen.addUnitGraphicGFC("DialogMap" + "Water", gc.getInfoTypeForString("UNIT_CARAVEL"), -1, self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, true)			
+		screen.addUnitGraphicGFC("DialogMap" + "Water", gc.getInfoTypeForString("UNIT_CARAVEL"), -1, self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, True)
 		screen.addDDSGFC("DialogMap", "Art/Interface/Screens/Europe/DialogMapAmerica.dds", self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setLabelAt(self.getNextWidgetName(), "DialogMap", u"<font=4>" + localText.getText("TXT_KEY_EU_SAIL", ()) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.MAP_SIZE / 2, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		self.createBorder(0, 0, self.MAP_SIZE, self.MAP_SIZE, self.BORDER_SIZE, "DialogMap", true)
+		self.createBorder(0, 0, self.MAP_SIZE, self.MAP_SIZE, self.BORDER_SIZE, "DialogMap", True)
 		# R&R, vetiarvind, Navigation Sectors - START
 		#The first param in setImageButtonAt's chars needs to have a name followed by a unique digit to be processed by handleInput(which removes the digit in it's method)
 		#if len(self.EuropePlotListEast) > 0:		#east button
@@ -990,7 +991,7 @@ class CvEuropeScreen:
 		szPreviewMode = sdToolKit.sdGetVal('komaScreens', self.player_id, 'PreviewMode')
 		screen.setImageButtonAt("PreviewMode", "DialogMap", ArtFileMgr.getInterfaceArtInfo(szPreviewMode).getPath(), self.MAP_SIZE - 40, self.MAP_SIZE - 40, 40, 40, WidgetTypes.WIDGET_GENERAL, self.PREVIEW_MODE, -1)
 		
-		screen.addTableControlGFC("DialogTable", 3, self.DIALOG_TABLE_X, self.DIALOG_TABLE_Y, self.DIALOG_TABLE_W, self.DIALOG_TABLE_H, true, true, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
+		screen.addTableControlGFC("DialogTable", 3, self.DIALOG_TABLE_X, self.DIALOG_TABLE_Y, self.DIALOG_TABLE_W, self.DIALOG_TABLE_H, True, True, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
 		screen.enableSort("DialogTable")
 		screen.setTableColumnHeader("DialogTable", 0, u"id", 0)
 		screen.setTableColumnHeader("DialogTable", 1, localText.getText("TXT_KEY_TRADE_ROUTES_EXPORT_TABLE_2", ()), self.DIALOG_TABLE_W - 64)
@@ -1010,7 +1011,7 @@ class CvEuropeScreen:
 		
 	def sailToEastOrWest(self, iUnit, pPlot):
 		CyMessageControl().sendApplyEvent(CvUtil.EventDoEuropeScreen, EventContextTypes.EVENTCONTEXT_ALL, (SEND_TO_EAST_OR_WEST, iUnit, pPlot.getX(), pPlot.getY(), -1, -1, -1, -1, -1))
-		CyMessageControl().sendDoCommand(iUnit, CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1, false)
+		CyMessageControl().sendDoCommand(iUnit, CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_FROM_EUROPE, -1, False)
 		self.EuropeUnitsList.remove(iUnit)
 		self.setSound(UNIT_SOUND_ORDER)
 		self.hideDialogBox(-1)
@@ -1022,11 +1023,11 @@ class CvEuropeScreen:
 		pTransport = player.getUnit(iUnit)
 		
 		if player.getNumShips() > 1:
-			self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, true) 
-			screen.addDDSGFCAt("SellShipEurope", "DialogPanel", "Art/Interface/Screens/Europe/Background.dds", self.SELL_SHIP_IMAGE_X, self.SELL_SHIP_IMAGE_Y, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, WidgetTypes.WIDGET_GENERAL, -1, -1, false)
+			self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, True)
+			screen.addDDSGFCAt("SellShipEurope", "DialogPanel", "Art/Interface/Screens/Europe/Background.dds", self.SELL_SHIP_IMAGE_X, self.SELL_SHIP_IMAGE_Y, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, WidgetTypes.WIDGET_GENERAL, -1, -1, False)
 			screen.setLabelAt(self.getNextWidgetName(), "SellShipEurope", u"<font=4>" + localText.getText("TXT_KEY_EU_SELL_LABEL", ()) + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, self.STANDARD_MARGIN, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-			self.createBorder(0, 0, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, self.BORDER_SIZE, "SellShipEurope", true)
-			screen.addDDSGFCAt(self.getNextWidgetName(), "SellShipEurope", self.getMirrorShipIcon(pTransport), self.SELL_SHIP_IMAGE_W / 4, self.SELL_SHIP_IMAGE_W / 16, self.SELL_SHIP_IMAGE_W / 2, self.SELL_SHIP_IMAGE_W * 7 / 8, WidgetTypes.WIDGET_SHIP_CARGO, pTransport.getID(), -1, false)
+			self.createBorder(0, 0, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, self.BORDER_SIZE, "SellShipEurope", True)
+			screen.addDDSGFCAt(self.getNextWidgetName(), "SellShipEurope", self.getMirrorShipIcon(pTransport), self.SELL_SHIP_IMAGE_W / 4, self.SELL_SHIP_IMAGE_W / 16, self.SELL_SHIP_IMAGE_W / 2, self.SELL_SHIP_IMAGE_W * 7 / 8, WidgetTypes.WIDGET_SHIP_CARGO, pTransport.getID(), -1, False)
 				
 			szMessage = localText.getText("TXT_KEY_EU_SELL_MESSAGE", (pTransport.getName(), self.getShipSellPrice(iUnit)))
 			screen.addMultilineText("DialogMessage", szMessage, self.SELL_SHIP_X + self.SELL_SHIP_IMAGE_X, self.SELL_SHIP_MESSAGE_Y, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_MESSAGE_H, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
@@ -1039,10 +1040,10 @@ class CvEuropeScreen:
 		player = self.player
 		iKingAttitude = self.playerEurope.AI_getAttitude(player.getID())
 		
-		self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, true) 
+		self.createBox(self.SELL_SHIP_X, self.SELL_SHIP_Y, self.SELL_SHIP_W, self.SELL_SHIP_H, True)
 		screen.addLeaderheadGFC ("DialogKing", self.playerEurope.getLeaderType(), iKingAttitude, self.SELL_SHIP_X + self.SELL_SHIP_IMAGE_X, self.SELL_SHIP_Y + self.SELL_SHIP_IMAGE_Y, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setLabelAt(self.getNextWidgetName(), "DialogKing", u"<font=4>" + localText.getText("TXT_KEY_EU_BOYCOTT_LABEL", ()) + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, self.STANDARD_MARGIN, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		self.createBorder(0, 0, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, self.BORDER_SIZE, "DialogKing", true)
+		self.createBorder(0, 0, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_IMAGE_H, self.BORDER_SIZE, "DialogKing", True)
 			
 		szMessage = localText.getText("TXT_KEY_EU_BOYCOTT_MESSAGE", (self.getBoycottPrice(iYield), gc.getYieldInfo(iYield).getDescription()))
 		screen.addMultilineText("DialogMessage", szMessage, self.SELL_SHIP_X + self.SELL_SHIP_IMAGE_X, self.SELL_SHIP_MESSAGE_Y, self.SELL_SHIP_IMAGE_W, self.SELL_SHIP_MESSAGE_H, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
@@ -1084,12 +1085,12 @@ class CvEuropeScreen:
 	def createBorder(self, iX, iY, iW, iH, iBorderSize, szAttachTo, bShadow):
 		screen = self.getScreen()
 		szBorderArt = "Art/Interface/Screens/TradeRoutes/Pixel.dds"
-		screen.addDDSGFCAt(szAttachTo + "Border" + str(1), szAttachTo, szBorderArt, iX, iY, iW, iBorderSize, WidgetTypes.WIDGET_GENERAL, -1, -1, false)
-		screen.addDDSGFCAt(szAttachTo + "Border" + str(2), szAttachTo, szBorderArt, iX + iW - iBorderSize, iY + iBorderSize, iBorderSize, iH - iBorderSize * 2, WidgetTypes.WIDGET_GENERAL, -1, -1, false)
-		screen.addDDSGFCAt(szAttachTo + "Border" + str(3), szAttachTo, szBorderArt, iX, iY + iH - iBorderSize, iW, iBorderSize, WidgetTypes.WIDGET_GENERAL, -1, -1, false)
-		screen.addDDSGFCAt(szAttachTo + "Border" + str(4), szAttachTo, szBorderArt, iX, iY + iBorderSize, iBorderSize, iH - iBorderSize * 2, WidgetTypes.WIDGET_GENERAL, -1, -1, false)
+		screen.addDDSGFCAt(szAttachTo + "Border" + str(1), szAttachTo, szBorderArt, iX, iY, iW, iBorderSize, WidgetTypes.WIDGET_GENERAL, -1, -1, False)
+		screen.addDDSGFCAt(szAttachTo + "Border" + str(2), szAttachTo, szBorderArt, iX + iW - iBorderSize, iY + iBorderSize, iBorderSize, iH - iBorderSize * 2, WidgetTypes.WIDGET_GENERAL, -1, -1, False)
+		screen.addDDSGFCAt(szAttachTo + "Border" + str(3), szAttachTo, szBorderArt, iX, iY + iH - iBorderSize, iW, iBorderSize, WidgetTypes.WIDGET_GENERAL, -1, -1, False)
+		screen.addDDSGFCAt(szAttachTo + "Border" + str(4), szAttachTo, szBorderArt, iX, iY + iBorderSize, iBorderSize, iH - iBorderSize * 2, WidgetTypes.WIDGET_GENERAL, -1, -1, False)
 		if bShadow:
-			screen.addDDSGFCAt(szAttachTo + "Shadow", szAttachTo, "Art/Interface/Screens/Europe/Shadow.dds", iX, iY, iW, iH, WidgetTypes.WIDGET_GENERAL, -1, -1, false)
+			screen.addDDSGFCAt(szAttachTo + "Shadow", szAttachTo, "Art/Interface/Screens/Europe/Shadow.dds", iX, iY, iW, iH, WidgetTypes.WIDGET_GENERAL, -1, -1, False)
 	
 
 	def hideDialogBox (self, index):
@@ -1149,9 +1150,9 @@ class CvEuropeScreen:
 		if sdToolKit.sdGetVal('komaScreens', player.getID(), 'PreviewMode') == "INTERFACE_DOMESTIC_ADVISOR":
 			szName = "DialogImage" + str(index)
 			if not szName in self.PreviewPlotList:
-				screen.addPlotGraphicGFC(szName, self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, pCity.plot(), 350, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				screen.addPlotGraphicGFC(szName, self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, pCity.plot(), 350, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				screen.setLabelAt(szName + "Label", szName, u"<font=4>" + localText.getText("TXT_KEY_EU_SAIL", ()) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.MAP_SIZE / 2, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-				self.createBorder(0, 0, self.MAP_SIZE, self.MAP_SIZE, self.BORDER_SIZE, szName, true)
+				self.createBorder(0, 0, self.MAP_SIZE, self.MAP_SIZE, self.BORDER_SIZE, szName, True)
 				self.PreviewPlotList.append(szName)
 			else:
 				screen.show(szName)
@@ -1178,7 +1179,7 @@ class CvEuropeScreen:
 			curX = pLoopPlot.getX()
 			curY = pLoopPlot.getY()
 			if CyMap().isPlot(curX, curY):
-				if pLoopPlot.isRevealed(player.getTeam(), false):
+				if pLoopPlot.isRevealed(player.getTeam(), False):
 					if pLoopPlot.isEurope():
 		## R&R, vetiarvind, navigation sectors - START
 						#if pLoopPlot.getX() >= CyMap().getGridWidth() / 2:
@@ -1241,15 +1242,15 @@ class CvEuropeScreen:
 		#City list
 		self.CityPlotList = []
 			
-		(city, iter) = player.firstCity(false)
+		(city, iter) = player.firstCity(False)
 
 		while (city):
 			if (city.isCoastal(gc.getMIN_WATER_SIZE_FOR_OCEAN()) and city.isEuropeAccessable()):
-				if unit.getGroup().generatePath(plotEast, city.plot(), 0, false, None):
+				if unit.getGroup().generatePath(plotEast, city.plot(), 0, False, None):
 					self.CityPlotList.append([city, None])
-				elif unit.getGroup().generatePath(plotWest, city.plot(), 0, false, None):
+				elif unit.getGroup().generatePath(plotWest, city.plot(), 0, False, None):
 					self.CityPlotList.append([city, None])
-			(city, iter) = player.nextCity(iter, false)
+			(city, iter) = player.nextCity(iter, False)
 	
 	
 	def getCenterPlot (self):
@@ -1258,12 +1259,12 @@ class CvEuropeScreen:
 		pCenterPlot = player.getStartingPlot()
 		iCenterX, iCenterY, iCityCount = 0, 0, 0
 	
-		(city, iter) = player.firstCity(false)
+		(city, iter) = player.firstCity(False)
 		while (city):
 			iCenterX += city.plot().getX()
 			iCenterY += city.plot().getY()
 			iCityCount += 1
-			(city, iter) = player.nextCity(iter, false)
+			(city, iter) = player.nextCity(iter, False)
 	
 		if iCityCount > 0:
 			iCenterX /= iCityCount
@@ -1357,7 +1358,7 @@ class CvEuropeScreen:
 		#destination info
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		plot = player.getUnit(iUnit).plot()
-		nextCityName = localText.getText("%s1", (CyMap().findCity (plot.getX(), plot.getY(), player.getID(), -1, true, true, -1, -1, plot.getPlotCity()).getName(), ()))
+		nextCityName = localText.getText("%s1", (CyMap().findCity (plot.getX(), plot.getY(), player.getID(), -1, True, True, -1, -1, plot.getPlotCity()).getName(), ()))
 	
 		if (plot.getX() >= CyMap().getGridWidth() / 2):
 			direction = localText.getText("TXT_KEY_EU_SAIL_EAST", ())

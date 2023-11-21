@@ -1425,7 +1425,7 @@
 			<EventType>ENTITY_EVENT_GREAT_EVENT</EventType>
 			<EventType>ENTITY_EVENT_BOMBARD</EventType>
 			<EventType>ENTITY_EVENT_FOUND</EventType>
-                </EventMaskList>
+		</EventMaskList>
 		<UnitEntry>
 			<UnitEntryType>UNIT</UnitEntryType>
 			<Position>
@@ -1473,7 +1473,7 @@
 			<EventType>ENTITY_EVENT_GREAT_EVENT</EventType>
 			<EventType>ENTITY_EVENT_BOMBARD</EventType>
 			<EventType>ENTITY_EVENT_FOUND</EventType>
-                </EventMaskList>
+		</EventMaskList>
 		<UnitEntry>
 			<UnitEntryType>UNIT</UnitEntryType>
 			<Position>

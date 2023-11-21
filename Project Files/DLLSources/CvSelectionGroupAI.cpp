@@ -9,7 +9,7 @@
 #include "CvDLLEntityIFaceBase.h"
 #include "CvGameCoreUtils.h"
 #include "FProfiler.h"
-#include "CVInfos.h"
+#include "CvInfos.h"
 #include "CvTradeRoute.h"
 //TAC Whaling, ray
 #include "CvDLLInterfaceIFaceBase.h"
@@ -195,7 +195,7 @@ bool CvSelectionGroupAI::AI_update()
 			{
 				if (GC.getLogging())
 				{
-					TCHAR szOut[1024];
+					char szOut[1024];
 					CvWString szTempString;
 					getUnitAIString(szTempString, pHeadUnit->AI_getUnitAIType());
 					sprintf(szOut, "Unit stuck in loop: %S(%S)[%d, %d] (%S)", pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),

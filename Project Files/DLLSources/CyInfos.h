@@ -55,6 +55,7 @@ class CyUnitInfo : public CvUnitInfo
 {
 public:
 	int getDefaultProfession() const;
+	int getLeaderPromotion() const;
 	int getUnitClassType() const;
 };
 BOOST_STATIC_ASSERT(sizeof(CyUnitInfo) == sizeof(CvUnitInfo));

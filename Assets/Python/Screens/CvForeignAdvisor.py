@@ -76,7 +76,7 @@ class CvForeignAdvisor:
 
 		self.EXIT_TEXT = u"<font=4>" + localText.getText("TXT_KEY_PEDIA_SCREEN_EXIT", ()).upper() + u"</font>"
 		self.SCREEN_TITLE = u"<font=4b>" + localText.getText("TXT_KEY_FOREIGN_ADVISOR_TITLE", ()).upper() + u"</font>"
-		self.SCREEN_TITLE = localText.changeTextColor(self.SCREEN_TITLE, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+		self.SCREEN_TITLE = localText.changeTextColor(self.SCREEN_TITLE, ColorTypes.COLOR_FONT_CREAM)
 
 		if (self.iScreen != iScreen):
 			self.killScreen()
@@ -139,7 +139,7 @@ class CvForeignAdvisor:
 		# Put everything inside a main panel, so we get vertical scrolling
 		mainPanelName = self.getNextWidgetName()
 		#screen.addPanel(mainPanelName, "", "", True, True, 50, 100, self.XResolution - 100, self.YResolution - 200, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		screen.addScrollPanel(mainPanelName, u"", 50, 100, self.XResolution - 100, self.YResolution - 200, PanelStyles.PANEL_STYLE_EMPTY, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addScrollPanel(mainPanelName, u"", 50, 100, self.XResolution - 100, self.YResolution - 200, PanelStyles.PANEL_STYLE_EMPTY, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		# loop through all players and sort them by number of active deals
 		listPlayers = [(0,0)] * gc.getMAX_PLAYERS()

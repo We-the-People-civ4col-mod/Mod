@@ -223,7 +223,7 @@ void CyInfoPythonInterface1()
 		// < JAnimals Mod End >
 		.def("getFreePromotions", &CvUnitInfo::getFreePromotions, "bool (int i)")
 		.def("isPrereqOrBuilding", &CvUnitInfo::isPrereqOrBuilding, "bool ()")
-		.def("getLeaderPromotion", &CvUnitInfo::getLeaderPromotion, "int ()")
+		.def("getLeaderPromotion", &CyUnitInfo::getLeaderPromotion, "int ()")
 		.def("getLeaderExperience", &CvUnitInfo::getLeaderExperience, "int ()")
 		//Androrc UnitArtStyles
 //		.def("getArtDefineTag", &CvUnitInfo::getArtDefineTag, "string (int i)")

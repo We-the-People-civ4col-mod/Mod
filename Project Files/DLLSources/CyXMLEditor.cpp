@@ -1340,7 +1340,7 @@ void CyXMLEditor::setModPath()
 
 void CyXMLEditor::setDLLpath()
 {
-	HMODULE hModule = GetModuleHandle(_T("CvGameCoreDLL.dll"));
+	HMODULE hModule = GetModuleHandle("CvGameCoreDLL.dll");
 	m_dllPath = new TCHAR[MAX_PATH];
 	GetModuleFileName(hModule, m_dllPath, MAX_PATH);
 	std::string strModPath = m_dllPath;

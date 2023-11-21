@@ -17,16 +17,16 @@ int CyTradeRouteGroup::getID()
 
 std::wstring CyTradeRouteGroup::getName()
 {
-	return m_pTradeGroup ? m_pTradeGroup->getName(0) : std::wstring();
+	if (m_pTradeGroup == NULL)
+		return std::wstring();
+	return m_pTradeGroup->getName(0);
 }
 
-
 void CyTradeRouteGroup::setName(std::wstring szName)
-{	
+{
 	if (m_pTradeGroup)
 		m_pTradeGroup->setName(CvWString(szName).GetCString());
 }
-	
 
 void CyTradeRouteGroup::removeRoute(int routeId)
 {

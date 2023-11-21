@@ -172,7 +172,7 @@ class CvEventManager:
 		self.origArgsList = argsList	# point to original
 		tag = argsList[0]				# event type string
 		idx = len(argsList)-6
-		bDummy = false
+		bDummy = False
 		self.bDbg, bDummy, self.bAlt, self.bCtrl, self.bShift, self.bAllowCheats = argsList[idx:]
 		ret = 0
 		if self.EventHandlerMap.has_key(tag):
@@ -331,7 +331,7 @@ class CvEventManager:
 					if ( self.bShift ):
 						city = CyMap().plot(px, py).getPlotCity()
 						if (city != None):
-							CyInterface().selectCity(city, true)
+							CyInterface().selectCity(city, True)
 							return 1
 					# don't return 1 unless you want the input consumed
 
@@ -385,7 +385,7 @@ class CvEventManager:
 
 	def onGameStart(self, argsList):
 		'Called at the start of the game'
-		if (gc.getGame().getGameTurnYear() == gc.getDefineINT("START_YEAR") and not gc.getGame().isOption(GameOptionTypes.GAMEOPTION_ADVANCED_START)):
+		if (gc.getGame().getGameTurnYear() == GlobalDefines.START_YEAR and not gc.getGame().isOption(GameOptionTypes.GAMEOPTION_ADVANCED_START)):
 			for iPlayer in range(gc.getMAX_PLAYERS()):
 				player = gc.getPlayer(iPlayer)
 				if (player.isAlive() and player.isHuman()):
@@ -394,7 +394,7 @@ class CvEventManager:
 					popupInfo.setText(u"showDawnOfMan")
 					popupInfo.addPopup(iPlayer)
 		else:
-			CyInterface().setSoundSelectionReady(true)
+			CyInterface().setSoundSelectionReady(True)
 
 		if gc.getGame().isPbem():
 			for iPlayer in range(gc.getMAX_PLAYERS()):
@@ -402,7 +402,7 @@ class CvEventManager:
 				if (player.isAlive() and player.isHuman()):
 					popupInfo = CyPopupInfo()
 					popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_DETAILS)
-					popupInfo.setOption1(true)
+					popupInfo.setOption1(True)
 					popupInfo.addPopup(iPlayer)
 		
 		
@@ -893,7 +893,7 @@ class CvEventManager:
 		popup.setBodyString(localText.getText("TXT_KEY_SETTLE_NEW_CITY_NAME", ()), CvUtil.FONT_CENTER_JUSTIFY)
 		popup.createEditBox(city.getName(), 0)
 		popup.setEditBoxMaxCharCount( 15, 32, 0 )
-		popup.launch(true, PopupStates.POPUPSTATE_IMMEDIATE)
+		popup.launch(True, PopupStates.POPUPSTATE_IMMEDIATE)
 
 	def __eventEditCityNameApply(self, playerID, userData, popupReturn):
 
@@ -918,11 +918,11 @@ class CvEventManager:
 		for iPlayer in range(gc.getMAX_PLAYERS()):
 			loopPlayer = gc.getPlayer(iPlayer)
 			if (loopPlayer.isAlive() and player.canLoadYield(iPlayer)):
-				(pCity, iter) = loopPlayer.firstCity(false)
+				(pCity, iter) = loopPlayer.firstCity(False)
 				while (pCity):
 					iId = gc.getMAX_PLAYERS() * pCity.getID() + pCity.getOwner()
 					popup.addPullDownString(pCity.getName(), iId, 0)
-					(pCity, iter) = loopPlayer.nextCity(iter, false)
+					(pCity, iter) = loopPlayer.nextCity(iter, False)
 
 		popup.setBodyString(localText.getText("TXT_KEY_DESTINATION", ()), CvUtil.FONT_LEFT_JUSTIFY)
 		popup.createPullDown(1)
@@ -930,11 +930,11 @@ class CvEventManager:
 		for iPlayer in range(gc.getMAX_PLAYERS()):
 			loopPlayer = gc.getPlayer(iPlayer)
 			if (loopPlayer.isAlive() and player.canUnloadYield(iPlayer)):
-				(pCity, iter) = loopPlayer.firstCity(false)
+				(pCity, iter) = loopPlayer.firstCity(False)
 				while (pCity):
 					iId = gc.getMAX_PLAYERS() * pCity.getID() + pCity.getOwner()
 					popup.addPullDownString(pCity.getName(), iId, 1)
-					(pCity, iter) = loopPlayer.nextCity(iter, false)
+					(pCity, iter) = loopPlayer.nextCity(iter, False)
 
 		popup.setBodyString(localText.getText("TXT_KEY_YIELD", ()), CvUtil.FONT_LEFT_JUSTIFY)
 		popup.createPullDown(2)
@@ -943,7 +943,7 @@ class CvEventManager:
 			if (gc.getYieldInfo(i).isCargo()):
 				popup.addPullDownString(gc.getYieldInfo(i).getDescription(), i, 2)
 
-		popup.launch(true, PopupStates.POPUPSTATE_IMMEDIATE)
+		popup.launch(True, PopupStates.POPUPSTATE_IMMEDIATE)
 
 	def __eventCreateTradeRouteApply(self, playerID, userData, popupReturn):
 		'Create Trade Route Event'
@@ -970,26 +970,26 @@ class CvEventManager:
 		for iPlayer in range(gc.getMAX_PLAYERS()):
 			loopPlayer = gc.getPlayer(iPlayer)
 			if (loopPlayer.isAlive() and player.canLoadYield(iPlayer)):
-				(pCity, iter) = loopPlayer.firstCity(false)
+				(pCity, iter) = loopPlayer.firstCity(False)
 				while (pCity):
 					iId = gc.getMAX_PLAYERS() * pCity.getID() + pCity.getOwner()
 					popup.addPullDownString(pCity.getName(), iId, 0)
 					if (pRoute.getSourceCity().iID == pCity.getID() and pRoute.getSourceCity().eOwner == pCity.getOwner()):
 						popup.setSelectedPulldownID(iId, 0);
-					(pCity, iter) = loopPlayer.nextCity(iter, false)
+					(pCity, iter) = loopPlayer.nextCity(iter, False)
 
 		popup.setBodyString(localText.getText("TXT_KEY_DESTINATION", ()), CvUtil.FONT_LEFT_JUSTIFY)
 		popup.createPullDown(1)
 		for iPlayer in range(gc.getMAX_PLAYERS()):
 			loopPlayer = gc.getPlayer(iPlayer)
 			if (loopPlayer.isAlive() and player.canUnloadYield(iPlayer)):
-				(pCity, iter) = loopPlayer.firstCity(false)
+				(pCity, iter) = loopPlayer.firstCity(False)
 				while (pCity):
 					iId = gc.getMAX_PLAYERS() * pCity.getID() + pCity.getOwner()
 					popup.addPullDownString(pCity.getName(), iId, 1)
 					if (pRoute.getDestinationCity().iID == pCity.getID() and pRoute.getDestinationCity().eOwner == pCity.getOwner()):
 						popup.setSelectedPulldownID(iId, 1);
-					(pCity, iter) = loopPlayer.nextCity(iter, false)
+					(pCity, iter) = loopPlayer.nextCity(iter, False)
 
 				if player.canTradeWithEurope():
 					popup.addPullDownString(localText.getText("TXT_KEY_CONCEPT_EUROPE", ()), -1, 1)
@@ -1011,7 +1011,7 @@ class CvEventManager:
 		popup.createCheckBoxes( 1, 4 )
 		popup.setCheckBoxText( 0, localText.getText("TXT_KEY_CREATE_TRADE_ROUTE", ()), 4 )
 
-		popup.launch(true, PopupStates.POPUPSTATE_IMMEDIATE)
+		popup.launch(True, PopupStates.POPUPSTATE_IMMEDIATE)
 
 	def __eventEditTradeRouteApply(self, PlayerID, userData, popupReturn):
 		'Edit Trade Route Event'
@@ -1074,7 +1074,7 @@ class CvEventManager:
 		popup.setBodyString(localText.getText("TXT_KEY_RENAME_UNIT", ()), CvUtil.FONT_CENTER_JUSTIFY)
 		popup.createEditBox(pUnit.getNameNoDesc(), 0)
 		popup.setEditBoxMaxCharCount(20, 20, 0)
-		popup.launch(true, PopupStates.POPUPSTATE_IMMEDIATE)
+		popup.launch(True, PopupStates.POPUPSTATE_IMMEDIATE)
 
 	def __eventEditUnitNameApply(self, playerID, userData, popupReturn):
 
@@ -1109,7 +1109,7 @@ class CvEventManager:
 		popup = CyPopup(CvUtil.EventWBScriptPopup, EventContextTypes.EVENTCONTEXT_ALL, True)
 		popup.setHeaderString(localText.getText("TXT_KEY_WB_SCRIPT", ()), CvUtil.FONT_CENTER_JUSTIFY)
 		popup.createEditBox(CvScreensInterface.getWorldBuilderScreen().getCurrentScript(), 0)
-		popup.launch(true, PopupStates.POPUPSTATE_IMMEDIATE)
+		popup.launch(True, PopupStates.POPUPSTATE_IMMEDIATE)
 
 	def __eventWBScriptPopupApply(self, playerID, userData, popupReturn):
 		if (popupReturn.getEditBoxString(0)):
@@ -1119,7 +1119,7 @@ class CvEventManager:
 	def __eventWBStartYearPopupBegin(self, argsList):
 		popup = CyPopup(CvUtil.EventWBStartYearPopup, EventContextTypes.EVENTCONTEXT_ALL, True)
 		popup.createSpinBox(0, "", gc.getGame().getStartYear(), 1, 5000, -5000)
-		popup.launch(true, PopupStates.POPUPSTATE_IMMEDIATE)
+		popup.launch(True, PopupStates.POPUPSTATE_IMMEDIATE)
 
 	def __eventWBStartYearPopupApply(self, playerID, userData, popupReturn):
 		iStartYear = popupReturn.getSpinnerWidgetValue(int(0))
@@ -1191,32 +1191,32 @@ class CvEventManager:
 			transport.getGroup().clearMissionQueue ()
 			transport.getGroup().pushMoveToMission(iCityX, iCityY)
 			if not iX == transport.getX() or not iY == transport.getY():
-				transport.setXY(iX, iY, true, false, false)
+				transport.setXY(iX, iY, True, False, False)
 		elif iMode == SEND_TO_EAST_OR_WEST:
 			if not iX == transport.getX() or not iY == transport.getY():
-				transport.setXY(iX, iY, true, false, false)
+				transport.setXY(iX, iY, True, False, False)
 		elif iMode == RECALL_TO_EUROPE:
-			transport.setUnitTravelState(1,false)
+			transport.setUnitTravelState(1,False)
 			transport.getGroup().clearMissionQueue()
 		elif iMode == RECALL_TO_AFRICA:
-			transport.setUnitTravelState(5,false)
+			transport.setUnitTravelState(5,False)
 			transport.getGroup().clearMissionQueue()
 		elif iMode == RECALL_TO_PORT_ROYAL:
-			transport.setUnitTravelState(8,false)
+			transport.setUnitTravelState(8,False)
 			transport.getGroup().clearMissionQueue()
 		elif iMode == SELL_SHIP_IN_EUROPE:
 			if (not transport.isNone() and not iSellPrice == -1):
-				transport.kill(false)
+				transport.kill(False)
 				player.changeGold(iSellPrice)
-				CyInterface().setDirty(InterfaceDirtyBits.EuropeScreen_DIRTY_BIT, true)
-				CyInterface().setDirty(InterfaceDirtyBits.AfricaScreen_DIRTY_BIT, true)
-				CyInterface().setDirty(InterfaceDirtyBits.PortRoyalScreen_DIRTY_BIT, true)
+				CyInterface().setDirty(InterfaceDirtyBits.EuropeScreen_DIRTY_BIT, True)
+				CyInterface().setDirty(InterfaceDirtyBits.AfricaScreen_DIRTY_BIT, True)
+				CyInterface().setDirty(InterfaceDirtyBits.PortRoyalScreen_DIRTY_BIT, True)
 		elif iMode == LIFT_BOYCOTT_IN_EUROPE:
 			if (not iYield == -1 and (player.getGold() - iBoycottPrice) >= 0):
-				player.setYieldEuropeTradable(iYield, true)
+				player.setYieldEuropeTradable(iYield, True)
 				player.changeGold(-iBoycottPrice)
-				CyInterface().setDirty(InterfaceDirtyBits.EuropeScreen_DIRTY_BIT, true)
-				CyInterface().setDirty(InterfaceDirtyBits.AfricaScreen_DIRTY_BIT, true)
+				CyInterface().setDirty(InterfaceDirtyBits.EuropeScreen_DIRTY_BIT, True)
+				CyInterface().setDirty(InterfaceDirtyBits.AfricaScreen_DIRTY_BIT, True)
 				
 		return 0
 		

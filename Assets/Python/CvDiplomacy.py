@@ -503,7 +503,7 @@ class CvDiplomacy:
 			# Exit option
 			self.addUserComment("USER_DIPLOCOMMENT_NEVERMIND", -1, -1)
 			self.addUserComment("USER_DIPLOCOMMENT_EXIT", -1, -1)
-			self.diploScreen.startTrade( eComment, true)
+			self.diploScreen.startTrade( eComment, True)
 
 		#RWL Bargaining Start 
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_BARGAIN_BUY_SUCCESS")):
@@ -624,7 +624,7 @@ class CvDiplomacy:
 			# Exit option
 			self.addUserComment("USER_DIPLOCOMMENT_NEVERMIND", -1, -1)
 			self.addUserComment("USER_DIPLOCOMMENT_EXIT", -1, -1)
-			self.diploScreen.startTrade( eComment, false )
+			self.diploScreen.startTrade( eComment, False )
 
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_SOMETHING_ELSE")):
 			if (gc.getTeam(gc.getGame().getActiveTeam()).canDeclareWar(gc.getPlayer(self.diploScreen.getWhoTradingWith()).getTeam())):
@@ -660,11 +660,11 @@ class CvDiplomacy:
 				if (gc.getPlayer(i).isAlive()):
 					if (gc.getTeam(gc.getGame().getActiveTeam()).isAtWar(gc.getPlayer(i).getTeam())):
 						player = gc.getPlayer(i)
-						(loopCity, iter) = player.firstCity(false)
+						(loopCity, iter) = player.firstCity(False)
 						while(loopCity):
-							if (loopCity.isRevealed(gc.getGame().getActiveTeam(), false)):
+							if (loopCity.isRevealed(gc.getGame().getActiveTeam(), False)):
 								self.addUserComment("USER_DIPLOCOMMENT_TARGET_CITY", i, loopCity.getID(), loopCity.getNameKey())
-							(loopCity, iter) = player.nextCity(iter, false)
+							(loopCity, iter) = player.nextCity(iter, False)
 
 			self.addUserComment("USER_DIPLOCOMMENT_SOMETHING_ELSE", -1, -1)
 			self.addUserComment("USER_DIPLOCOMMENT_EXIT", -1, -1)
@@ -824,11 +824,11 @@ class CvDiplomacy:
 		return self.iLastResponseID
 
 	def isUsed(self, var, i, num):
-		"returns true if any element in the var list is true"
+		"returns True if any element in the var list is True"
 		for j in range(num):
 			if (var(i, j)):
-				return true
-		return false
+				return True
+		return False
 
 	def filterUserResponse(self, diploInfo):
 		"pick the user's response from a CvDiplomacyTextInfo, based on response conditions"
@@ -1228,34 +1228,34 @@ class CvDiplomacy:
 			diploScreen.closeScreen()
 
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_FOUND_FIRST_CITY")):
-			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_FOUND_CITY, diploScreen.getData(), false)
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_FOUND_CITY, diploScreen.getData(), False)
 			diploScreen.closeScreen()
 
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_FOUND_CITY_BUY")):
-			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_FOUND_CITY, diploScreen.getData(), true)
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_FOUND_CITY, diploScreen.getData(), True)
 			diploScreen.closeScreen()
 
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_FOUND_CITY_TAKE")):
-			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_FOUND_CITY, diploScreen.getData(), false)
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_FOUND_CITY, diploScreen.getData(), False)
 			diploScreen.closeScreen()
 		
 		# ray18
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ACQUIRE_CITY_BUY")):
-			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_CITY, diploScreen.getData(), true)
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_CITY, diploScreen.getData(), True)
 			diploScreen.closeScreen()
 		
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ACQUIRE_CITY_TAKE")):
-			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_CITY, diploScreen.getData(), false)
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_CITY, diploScreen.getData(), False)
 			diploScreen.closeScreen()
 		# Ende ray18
 		
 		# TAC Native Mercs 
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ACQUIRE_MERC")):
-			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_MERC, diploScreen.getData(), false)
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_MERC, diploScreen.getData(), False)
 			diploScreen.closeScreen()
 		
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_ACQUIRE_MERC_CHEAP")):
-			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_MERC, diploScreen.getData(), true)
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_MERC, diploScreen.getData(), True)
 			diploScreen.closeScreen()
 		# Ende TAC Native Mercs 
 		
@@ -1356,11 +1356,11 @@ class CvDiplomacy:
 		
 		# TAC Revolution Support
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_REV_NEED_LAND")):
-			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_REV_SUPPORT, true, false)
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_REV_SUPPORT, True, False)
 			diploScreen.closeScreen()
 		
 		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_REV_NEED_SEA")):
-			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_REV_SUPPORT, false, true)
+			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_REV_SUPPORT, False, True)
 			diploScreen.closeScreen()
 		# Ende Revolution Support
 		

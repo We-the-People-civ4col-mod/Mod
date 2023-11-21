@@ -94,11 +94,11 @@ class CvTradeRoutesAdvisor:
 		
 		# City list
 		self.CityList = []
-		(city, iter) = self.player.firstCity(false)
+		(city, iter) = self.player.firstCity(False)
 		while (city):
-			if self.pTransport.generatePath(city.plot(), 0, false, None):
+			if self.pTransport.generatePath(city.plot(), 0, False, None):
 				self.CityList.append(city)
-			(city, iter) = self.player.nextCity(iter, false)
+			(city, iter) = self.player.nextCity(iter, False)
 		
 		if self.CityList == []:
 			return
@@ -118,7 +118,7 @@ class CvTradeRoutesAdvisor:
 		self.ExistingRoutes, self.AssignedRoutes = [], {}
 		for iRoute in range(self.player.getNumTradeRoutes()):
 			pRoute = self.player.getTradeRouteByIndex(iRoute)
-			if self.pTransport.canAssignTradeRoute(pRoute.getID(), true):
+			if self.pTransport.canAssignTradeRoute(pRoute.getID(), True):
 				self.ExistingRoutes.append(pRoute)
 				self.AssignedRoutes[pRoute.getID()] = self.pTransport.getGroup().isAssignedTradeRoute(pRoute.getID())
 		
@@ -129,7 +129,7 @@ class CvTradeRoutesAdvisor:
 		self.iExport, self.iImport = self.NO_CITY, self.NO_CITY
 		self.iExportPreview, self.iImportPreview = self.NO_CITY, self.NO_CITY
 		
-		self.bAssigned, self.bSelected = false, false
+		self.bAssigned, self.bSelected = False, False
 		self.bDanger = self.pTransport.isIgnoreDanger()
 		
 		# Table names		
@@ -252,7 +252,7 @@ class CvTradeRoutesAdvisor:
 			screen.addDDSGFC(szPreview + "Highlight", "Art/Interface/Screens/TradeRoutes/PreviewHighlight.dds", CURRENT_X, self.PREVIEW_Y, self.PREVIEW_WIDTH, self.PREVIEW_HEIGHT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 			screen.addDDSGFC(szPreview + "Background", "Art/Interface/Screens/TradeRoutes/PreviewBackground.dds", CURRENT_X, self.PREVIEW_Y, self.PREVIEW_WIDTH, self.PREVIEW_HEIGHT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 			screen.setImageButton(szPreview + "Border" + str(0), "Art/Interface/Screens/TradeRoutes/PreviewBorder.dds", CURRENT_X, self.PREVIEW_Y, self.PREVIEW_WIDTH, self.PREVIEW_HEIGHT, WidgetTypes.WIDGET_GENERAL, TABLE_ID, -1)
-			screen.addDDSGFCAt(szPreview + "Banner", szPreview + "Border" + str(0), "Art/Interface/Screens/TradeRoutes/BlackPixel.dds", 10, self.PREVIEW_HEIGHT - 26 , self.PREVIEW_WIDTH - 20, 17, WidgetTypes.WIDGET_GENERAL, -1, -1, false)
+			screen.addDDSGFCAt(szPreview + "Banner", szPreview + "Border" + str(0), "Art/Interface/Screens/TradeRoutes/BlackPixel.dds", 10, self.PREVIEW_HEIGHT - 26 , self.PREVIEW_WIDTH - 20, 17, WidgetTypes.WIDGET_GENERAL, -1, -1, False)
 			screen.setImageButtonAt(szPreview + "Cancel", szPreview + "Border" + str(0), "Art/Interface/Screens/TradeRoutes/Cancel.dds", self.PREVIEW_WIDTH - 28, 4, 24, 24, WidgetTypes.WIDGET_GENERAL, CLEAR_ID, -1)
 			screen.hide(szPreview + "Highlight")
 			screen.hide(szPreview + "Cancel")
@@ -273,7 +273,7 @@ class CvTradeRoutesAdvisor:
 
 	
 	def drawContents(self):
-		self.routesTable(true)
+		self.routesTable(True)
 				
 	
 	def routesTable(self, bRebuild):
@@ -319,10 +319,10 @@ class CvTradeRoutesAdvisor:
 		szTable = self.TableNames[self.CURRENT_TABLE]
 		
 		screen.modifyLabel(self.szTitle, u"<font=3b>" + self.TableLabel[self.CURRENT_TABLE] + u"</font>", CvUtil.FONT_LEFT_JUSTIFY)
-		screen.addTableControlGFC(szTable, 5, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, true, false, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
+		screen.addTableControlGFC(szTable, 5, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, True, False, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
 		screen.setStyle(szTable, "Table_StandardCiv_Style")
 		screen.enableSort(szTable)
-		screen.enableSelect(szTable, false)
+		screen.enableSelect(szTable, False)
 		screen.setTableColumnHeader(szTable, 0, u"id", 0)
 		screen.setTableColumnHeader(szTable, 1, u"", 32)
 		screen.setTableColumnHeader(szTable, 2, u"", 32)
@@ -360,16 +360,16 @@ class CvTradeRoutesAdvisor:
 		self.ExistingRoutes = []
 		for iRoute in range(self.player.getNumTradeRoutes()):
 			pRoute = self.player.getTradeRouteByIndex(iRoute)
-			if self.pTransport.canAssignTradeRoute(pRoute.getID(), true):
+			if self.pTransport.canAssignTradeRoute(pRoute.getID(), True):
 				self.ExistingRoutes.append(pRoute)
 				if not pRoute.getID() in self.AssignedRoutes:
-					self.AssignedRoutes[pRoute.getID()] = false
+					self.AssignedRoutes[pRoute.getID()] = False
 					if self.iYields == pRoute.getYield():
 						if self.iExport == pRoute.getSourceCity().iID:
 							if self.iImport == pRoute.getDestinationCity().iID:
 								self.AssignedRoutes[pRoute.getID()] = self.bAssigned
 					
-		self.bAssigned = false
+		self.bAssigned = False
 		
 		self.iYields = self.NO_YIELD
 		self.iExport, self.iImport = self.NO_CITY, self.NO_CITY
@@ -419,17 +419,17 @@ class CvTradeRoutesAdvisor:
 			
 		if self.CURRENT_TABLE == self.BUILDER_TABLE:
 			if self.bAssigned:
-				self.bAssigned = false
+				self.bAssigned = False
 				szLabel = u"%c" % CyGame().getSymbolID(FontSymbols.CHECKBOX_CHAR)
 			else:
-				self.bAssigned = true
+				self.bAssigned = True
 				szLabel = u"%c" % CyGame().getSymbolID(FontSymbols.CHECKBOX_SELECTED_CHAR)
 				
 		elif self.AssignedRoutes[iRoute]:
-			self.AssignedRoutes[iRoute] = false
+			self.AssignedRoutes[iRoute] = False
 			szLabel = u"%c" % CyGame().getSymbolID(FontSymbols.CHECKBOX_CHAR)
 		else:
-			self.AssignedRoutes[iRoute] = true
+			self.AssignedRoutes[iRoute] = True
 			szLabel = u"%c" % CyGame().getSymbolID(FontSymbols.CHECKBOX_SELECTED_CHAR)
 		
 		self.getScreen().setTableText(self.TableNames[self.CURRENT_TABLE], 1, iRow, szLabel, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
@@ -455,9 +455,9 @@ class CvTradeRoutesAdvisor:
 		screen.addPanel(szTable, u"", u"", True, True, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		
 		for iYield in self.YieldList:
-			screen.addDDSGFCAt(szTable + "Highlight" + str(iYield), szTable, "Art/Interface/Screens/TradeRoutes/BoxSelected.dds", YIELD_X, YIELD_Y, BOX_SIZE, BOX_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, false)
+			screen.addDDSGFCAt(szTable + "Highlight" + str(iYield), szTable, "Art/Interface/Screens/TradeRoutes/BoxSelected.dds", YIELD_X, YIELD_Y, BOX_SIZE, BOX_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, False)
 			screen.hide(szTable + "Highlight" + str(iYield))
-			screen.addDDSGFCAt(szTable + "Box" + str(iYield), szTable, ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_BOX_PRICE").getPath(), YIELD_X, YIELD_Y, BOX_SIZE, BOX_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, false)
+			screen.addDDSGFCAt(szTable + "Box" + str(iYield), szTable, ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_BOX_PRICE").getPath(), YIELD_X, YIELD_Y, BOX_SIZE, BOX_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, False)
 			screen.setImageButtonAt(szTable + "Selector" + str(iYield), szTable + "Box" + str(iYield), gc.getYieldInfo(iYield).getIcon(), BOX_SIZE / 6, BOX_SIZE / 6, BOX_SIZE * 2 / 3, BOX_SIZE * 2 / 3, WidgetTypes.WIDGET_GENERAL, self.YIELD_LIST_ID, iYield)
 		
 			YIELD_X += BOX_SIZE
@@ -483,10 +483,10 @@ class CvTradeRoutesAdvisor:
 			szYieldHeader = u"<font=3>%c</font>" % gc.getYieldInfo(self.iYields).getChar()
 			
 		screen.modifyLabel(self.szTitle, u"<font=3b>" + self.TableLabel[self.CURRENT_TABLE] + u"</font>", CvUtil.FONT_LEFT_JUSTIFY)
-		screen.addTableControlGFC(szTable, 5, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, true, false, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
+		screen.addTableControlGFC(szTable, 5, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, True, False, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
 		screen.setStyle(szTable, "Table_StandardCiv_Style")
 		screen.enableSort(szTable)
-		screen.enableSelect(szTable, false)
+		screen.enableSelect(szTable, False)
 		screen.setTableColumnHeader(szTable, 0, u"id", 0)
 		screen.setTableColumnHeader(szTable, 1, u"<img=%s size=16></img>" % "Art/Interface/Screens/TradeRoutes/Anchor.dds", 32)
 		screen.setTableColumnHeader(szTable, 2, localText.getText("TXT_KEY_TRADE_ROUTES_EXPORT_TABLE_2", ()), self.TABLE_WIDTH * 2 / 3 - 80)
@@ -532,10 +532,10 @@ class CvTradeRoutesAdvisor:
 		
 		
 		szTable = self.TableNames[self.CURRENT_TABLE]		
-		screen.addTableControlGFC(szTable, 4, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, true, false, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
+		screen.addTableControlGFC(szTable, 4, self.TABLE_X, self.TABLE_Y, self.TABLE_WIDTH, self.TABLE_HEIGHT, True, False, 32, 32, TableStyles.TABLE_STYLE_STANDARD)
 		screen.setStyle(szTable, "Table_StandardCiv_Style")
 		screen.enableSort(szTable)
-		screen.enableSelect(szTable, false)
+		screen.enableSelect(szTable, False)
 		screen.setTableColumnHeader(szTable, 0, u"id", 0)		
 		screen.setTableColumnHeader(szTable, 1, u"Routes", 0)		
 		screen.setTableColumnHeader(szTable, 2, localText.getText("TXT_KEY_NAME_COL_TRADE_GROUP", ()), self.TABLE_WIDTH / 4)				
@@ -594,7 +594,7 @@ class CvTradeRoutesAdvisor:
 		popupInfo.setText(idstr) 
 		
 		popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_SAVE_TRADEGROUP)
-		CyInterface().addPopup(popupInfo, gc.getGame().getActivePlayer(), true, false)			
+		CyInterface().addPopup(popupInfo, gc.getGame().getActivePlayer(), True, False)
 		return	
 		
 	def deleteGroupTable(self):		
@@ -604,7 +604,7 @@ class CvTradeRoutesAdvisor:
 	#Loads selected routes in trade group into the main trade screen
 	def loadSelectedGroup(self, iRow):		
 		for pRoute in self.CurrentList:			
-			self.AssignedRoutes[pRoute.getID()] = false
+			self.AssignedRoutes[pRoute.getID()] = False
 			
 		tableCellValue = str(self.getScreen().getTableText(self.TableNames[self.CURRENT_TABLE], 1, iRow))
 		
@@ -614,9 +614,9 @@ class CvTradeRoutesAdvisor:
 			spl = token.split(" ")			
 			for pRoute in self.CurrentList:				
 				if str(pRoute.getSourceCity().iID) == spl[0] and str(pRoute.getDestinationCity().iID) == spl[1] and str(pRoute.getYield()) == spl[2]:								
-					self.AssignedRoutes[pRoute.getID()] = true		
+					self.AssignedRoutes[pRoute.getID()] = True
 		
-		self.routesTable(false)		
+		self.routesTable(False)
 		self.updateRoutes()
 		
 		
@@ -630,7 +630,7 @@ class CvTradeRoutesAdvisor:
 		
 		self.player.removeTradeRouteGroup(int(tableCellValue))
 		
-		self.routesTable(false)
+		self.routesTable(False)
 		
 		return
 		
@@ -685,7 +685,7 @@ class CvTradeRoutesAdvisor:
 				self.iImport = self.NO_CITY
 				self.iImportPreview = self.NO_CITY
 		
-		self.routesTable(false)
+		self.routesTable(False)
 	
 	
 	def selectImport(self, iRow):
@@ -695,7 +695,7 @@ class CvTradeRoutesAdvisor:
 				self.iExport = self.NO_CITY
 				self.iExportPreview = self.NO_CITY
 		
-		self.routesTable(false)
+		self.routesTable(False)
 				
 		
 	def updatePreview(self):
@@ -724,7 +724,7 @@ class CvTradeRoutesAdvisor:
 					screen.setLabelAt(self.szPreviewExport + "Label", self.szPreviewExport + "Banner", szLabel, CvUtil.FONT_LEFT_JUSTIFY, 3, 10, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				else:
 					screen.setLabelAt(self.szPreviewExport + "Label", self.szPreviewExport + "Banner", szLabel, CvUtil.FONT_CENTER_JUSTIFY, (self.PREVIEW_WIDTH - 20) / 2, 10, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-				screen.addPlotGraphicGFC(self.szPreviewExport, CURRENT_X + 6, self.PREVIEW_Y + 6, self.PREVIEW_WIDTH - 12, self.PREVIEW_HEIGHT - 12, self.player.getCity(self.iExport).plot(), 350, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				screen.addPlotGraphicGFC(self.szPreviewExport, CURRENT_X + 6, self.PREVIEW_Y + 6, self.PREVIEW_WIDTH - 12, self.PREVIEW_HEIGHT - 12, self.player.getCity(self.iExport).plot(), 350, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				screen.moveToFront(self.szPreviewExport + "Border" + str(0))
 		else:
 			screen.hide(self.szPreviewExport)
@@ -743,7 +743,7 @@ class CvTradeRoutesAdvisor:
 					screen.setLabelAt(self.szPreviewImport + "Label", self.szPreviewImport + "Banner", u"<font=2>" + u"%s" % self.player.getCity(self.iImport).getName() + u"</font>", CvUtil.FONT_LEFT_JUSTIFY, 3, 10, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				else:
 					screen.setLabelAt(self.szPreviewImport + "Label", self.szPreviewImport + "Banner", u"<font=2>" + u"%s" % self.player.getCity(self.iImport).getName() + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.PREVIEW_WIDTH - 20) / 2, 10, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-				screen.addPlotGraphicGFC(self.szPreviewImport, CURRENT_X + 6, self.PREVIEW_Y + 6, self.PREVIEW_WIDTH - 12, self.PREVIEW_HEIGHT - 12, self.player.getCity(self.iImport).plot(), 350, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
+				screen.addPlotGraphicGFC(self.szPreviewImport, CURRENT_X + 6, self.PREVIEW_Y + 6, self.PREVIEW_WIDTH - 12, self.PREVIEW_HEIGHT - 12, self.player.getCity(self.iImport).plot(), 350, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				screen.moveToFront(self.szPreviewImport + "Border" + str(0))
 		elif self.iImport == self.EUROPE_CITY:
 			screen.show(self.szPreviewImport + "Banner")
@@ -778,7 +778,7 @@ class CvTradeRoutesAdvisor:
 		elif self.CURRENT_TABLE == self.BUILDER_TABLE:
 			screen.appendMultiListButton(self.szButtonPanel, szRoutesButton, 0, WidgetTypes.WIDGET_GENERAL, self.ROUTES_ID, -1, False)
 			if self.isSelectionReady():
-				screen.enableMultiListPulse(self.szButtonPanel, true, 0, 0)
+				screen.enableMultiListPulse(self.szButtonPanel, True, 0, 0)
 			else:
 				screen.disableMultiListButton(self.szButtonPanel, 0, 0, szRoutesButton)
 		else:
@@ -791,12 +791,12 @@ class CvTradeRoutesAdvisor:
 		self.bSelected = not self.bSelected
 		for pRoute in self.CurrentList:
 			self.AssignedRoutes[pRoute.getID()] = self.bSelected
-		self.routesTable(false)
+		self.routesTable(False)
 		
 		
 	def toggleDanger(self):
 		self.bDanger = not self.bDanger
-		CyMessageControl().sendDoCommand(self.pTransport.getID(), CommandTypes.COMMAND_IGNORE_DANGER, self.bDanger, -1, false)
+		CyMessageControl().sendDoCommand(self.pTransport.getID(), CommandTypes.COMMAND_IGNORE_DANGER, self.bDanger, -1, False)
 		self.updateButtons()
 
 		
@@ -806,9 +806,9 @@ class CvTradeRoutesAdvisor:
 		if not self.isSelectionReady():
 			return
 			
-		CyMessageControl().sendDoTask(self.iExport, TaskTypes.TASK_YIELD_EXPORT, self.iYields, true, false, false, false, false)
+		CyMessageControl().sendDoTask(self.iExport, TaskTypes.TASK_YIELD_EXPORT, self.iYields, True, False, False, False, False)
 		if self.iImport > self.EUROPE_CITY:
-			CyMessageControl().sendDoTask(self.iImport, TaskTypes.TASK_YIELD_IMPORT, self.iYields, true, false, false, false, false)
+			CyMessageControl().sendDoTask(self.iImport, TaskTypes.TASK_YIELD_IMPORT, self.iYields, True, False, False, False, False)
 				
 	
 	def isSelectionEmpty(self):
@@ -835,7 +835,7 @@ class CvTradeRoutesAdvisor:
 				elif inputClass.getData1() == self.ROUTES_ID:
 					self.addSelection()
 				elif inputClass.getData1() == self.RETURN_ID:
-					self.routesTable(false)
+					self.routesTable(False)
 			#R&R mod, vetiarvind, trade groups - START
 			elif inputClass.getFunctionName() == self.TableNames[self.LOAD_GROUP_TABLE]:							
 				self.loadSelectedGroup(inputClass.getMouseY())									
@@ -868,25 +868,25 @@ class CvTradeRoutesAdvisor:
 				if inputClass.getData1() == self.YIELD_TABLE_ID:
 					self.yieldTable()
 				elif inputClass.getData1() == self.EXPORT_TABLE_ID:
-					self.cityTable(false)
+					self.cityTable(False)
 				elif inputClass.getData1() == self.IMPORT_TABLE_ID:
-					self.cityTable(true)
+					self.cityTable(True)
 					
 				elif inputClass.getData1() == self.YIELD_LIST_ID:
 					self.iYields = inputClass.getData2()
-					self.routesTable(false)
+					self.routesTable(False)
 				
 				elif inputClass.getData1() == self.CLEAR_YIELD_ID:
 					self.iYields = self.NO_YIELD
-					self.routesTable(false)
+					self.routesTable(False)
 				elif inputClass.getData1() == self.CLEAR_EXPORT_ID:
 					self.iExport = self.NO_CITY
 					self.iExportPreview = self.NO_CITY
-					self.routesTable(false)
+					self.routesTable(False)
 				elif inputClass.getData1() == self.CLEAR_IMPORT_ID:
 					self.iImport = self.NO_CITY
 					self.iImportPreview = self.NO_CITY
-					self.routesTable(false)
+					self.routesTable(False)
 				#R&R mod, vetiarvind, trade groups - START
 				elif inputClass.getData1() == self.LOAD_GROUP_ID:
 					self.loadGroupTable()
@@ -958,7 +958,7 @@ class CvTradeRoutesAdvisor:
 		
 	def onClose(self) :
 		for iRoute, bAssigned in self.AssignedRoutes.iteritems():
-			CyMessageControl().sendDoCommand(self.pTransport.getID(), CommandTypes.COMMAND_ASSIGN_TRADE_ROUTE, iRoute, bAssigned, false)
+			CyMessageControl().sendDoCommand(self.pTransport.getID(), CommandTypes.COMMAND_ASSIGN_TRADE_ROUTE, iRoute, bAssigned, False)
 		
 		return 0
 	
