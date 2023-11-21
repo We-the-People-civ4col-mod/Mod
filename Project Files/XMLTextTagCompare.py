@@ -16,6 +16,7 @@ class Civ4TextXMLHandler(xml.sax.ContentHandler):
         self.locator = None
         self.start_end = None
         self.current_Tag_content = None
+        self.dup_list = []
         #super(type(Civ4TextXMLHandler)).__init__(type(Civ4TextXMLHandler))
 
     def setDocumentLocator(self, locator):
@@ -49,6 +50,8 @@ class Civ4TextXMLHandler(xml.sax.ContentHandler):
             self.current_tag["line_end"] = self.locator.getLineNumber()
         if name == "Tag":
             self.current_tag = {"FILE": self.filename, "line_start": self.start_end, "line_end": None}
+            if self.dict_to_fill.has_key(self.current_Tag_content):
+                self.dup_list.append(self.current_Tag_content)
             self.dict_to_fill[ self.current_Tag_content] = self.current_tag
             self.last_tag = self.current_Tag_content
     def endDocument(self):
@@ -136,7 +139,7 @@ class LineCopier:
 
 
 
-def get_tags_from_text(filename,tags):
+def get_tags_from_text(filename,tags, print_dup):
 
     input_source = xml.sax.xmlreader.InputSource();
     file_stream = open(filename, "rb")
@@ -145,6 +148,10 @@ def get_tags_from_text(filename,tags):
     handler = Civ4TextXMLHandler(filename, tags)
 
     xml.sax.parse(input_source, handler)
+    if print_dup and handler.dup_list:
+        pprint (filename)
+        pprint(handler.dup_list)
+        print "########################################################################################"
 
 
 def used_in_mod(key):
@@ -153,7 +160,7 @@ def used_in_mod(key):
     return True
 
 
-def make_tags_list(text_folder, tags_to_fill):
+def make_tags_list(text_folder, tags_to_fill,print_dup= False):
 
     os.chdir(text_folder)
     for root, dir, files in os.walk("."):
@@ -161,7 +168,7 @@ def make_tags_list(text_folder, tags_to_fill):
             # print "MOD",file
             if file[-4:] != ".xml":
                 continue
-            get_tags_from_text(file, tags_to_fill)
+            get_tags_from_text(file, tags_to_fill, print_dup)
     os.chdir(start)
 
 
@@ -170,12 +177,13 @@ if __name__ == "__main__":
     tags_from_mod = dict()
     tags_from_vanilla = dict()
 
+
     mod_text_folder = r"..\Assets\XML\Text"
     vanilla_text_folder = "..\..\..\Assets\XML\Text"
 
     start =  os.getcwd() ##assumed to be "Project Files"
 
-    make_tags_list(mod_text_folder, tags_from_mod)
+    make_tags_list(mod_text_folder, tags_from_mod, True)
     make_tags_list(vanilla_text_folder, tags_from_vanilla)
 
     print "##############"
@@ -192,8 +200,10 @@ if __name__ == "__main__":
     extracts.sort()
     print len(extracts)
 
-    dest_file_name = "Vanilla_TEXT_XML_key.xml"
-    line_copier = LineCopier(dest_file_name,vanilla_text_folder)
-    line_copier.process_extract_list(extracts)
+
+
+    #dest_file_name = "Vanilla_TEXT_XML_key.xml"
+    #line_copier = LineCopier(dest_file_name,vanilla_text_folder)
+    #line_copier.process_extract_list(extracts)
 
 

@@ -2849,6 +2849,14 @@
 		<Russian>[COLOR_WARNING_TEXT]Здесь производится недостаточно еды, чтобы еще один колонист мог присоединиться к поселению[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_GLOBELAYER_RESOURCES</Tag>
+		<English>Bonus Resources</English>
+		<French>Ressources bonus</French>
+		<German>Bonus-Ressourcen</German>
+		<Italian>Risorse bonus</Italian>
+		<Spanish>Recursos adicionales</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_RESOURCES_NATIVE_TRADE</Tag>
 		<English>Native Goods Requests</English>
 		<French>Demandes de marchandises indigènes</French>
