@@ -234,6 +234,9 @@ public:
 	// copy graphics files from mod to editor
 	void copyFiles();
 
+	//  write a new EditorSettings.xml
+	void setupEditorSettings();
+
 	// is key held down
 	bool altKey()     const;
 	bool shiftKey()   const;

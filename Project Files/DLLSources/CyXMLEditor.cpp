@@ -1028,6 +1028,31 @@ void CyXMLEditor::copyFiles()
 	quit();
 }
 
+//  write a new EditorSettings.xml
+void CyXMLEditor::setupEditorSettings()
+{
+	tinyxml2::XMLDocument doc;
+
+	tinyxml2::XMLElement* root = doc.NewElement("Editor");
+
+	doc.InsertFirstChild(root);
+
+	root->InsertEndChild(doc.NewComment(" Path to the mod. Path should end with Assets "));
+	root->InsertEndChild(doc.NewElement("ModPath"));
+
+
+	root->InsertEndChild(doc.NewComment(" Delete tags below if remote mod is a colonization mod "));
+	root->InsertEndChild(doc.NewComment(" Path to civ4 vanilla folders. Should end with Assets "));
+	root->InsertEndChild(doc.NewElement("Original"));
+	root->InsertEndChild(doc.NewElement("Warlords"));
+	root->InsertEndChild(doc.NewElement("BTS"));
+
+
+	CvString path = getDLLPath();
+	path.append("EditorSettings.xml");
+	doc.SaveFile(path.c_str());
+}
+
 bool CyXMLEditor::altKey() const
 {
 	return gDLL->altKey();
@@ -1254,6 +1279,12 @@ void CyXMLEditor::setModPath()
 	XMLElement *pEditor = getModSettings()->FirstChildElement("Editor");
 
 	const char* pathBuffer = pEditor ? pEditor->FirstChildElement("ModPath")->GetText() : ".";
+
+	if (pathBuffer == NULL)
+	{
+		// 
+		pathBuffer = ".";
+	}
 	
 	std::string XMLpath = "";
 	if (pathBuffer[0] == '.' && pathBuffer[1] == 0)
@@ -1270,7 +1301,7 @@ void CyXMLEditor::setModPath()
 
 	CONST_VANILLA_PATH[0] = m_modPath;
 
-	if (pEditor == NULL)
+	if (pEditor == NULL || m_EditorInMod)
 	{
 		return;
 	}
@@ -1292,6 +1323,10 @@ void CyXMLEditor::setModPath()
 		if (eTemp != NULL)
 		{
 			std::string path = eTemp->GetText();
+			if (path.empty())
+			{
+				continue;
+			}
 			path.append("/xml/");
 			char *str = new char[path.size() + 1];
 			memcpy(str, path.c_str(), path.size()*sizeof(CHAR));

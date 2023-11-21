@@ -14,8 +14,8 @@ class xmlPopupCommandConfirm:
 	def draw(self):
 		screen = CyGInterfaceScreen( "xmlEditor", CvScreenEnums.XML_EDITOR )
 		
-		nScreenWidth = 400
-		nScreenHeight = 300
+		nScreenWidth = 600
+		nScreenHeight = 400
 		
 		left = (screen.getXResolution()/2) - (nScreenWidth/2)
 		top  = (screen.getYResolution()/2) - (nScreenHeight/2)

@@ -3,7 +3,7 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
     <TEXT>
         <Tag>TXT_KEY_POPUP_ENTER_XML_EDITOR</Tag>
-        <English>Enter XML editor</English>
+        <English>Enter XML Editor</English>
     </TEXT>
 	<TEXT>
         <Tag>TXT_KEY_XML_EDITOR_CONFIRM_QUIT</Tag>
@@ -74,5 +74,17 @@
     <TEXT>
         <Tag>TXT_KEY_XML_EDITOR_LoadArtAndGameFont_Text</Tag>
         <English>Clicking this button will copy DDS files and GameFont from the mod into the Editor mod.[NEWLINE]If the Editor is running in Colonization and the mod isn't a Colonization mod, vanilla files will be copied as well.[NEWLINE][NEWLINE]The game will appear like it crashed while this feature is working. (it's a bit slow)</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_XML_EDITOR_GenerateEditorSettings_Name</Tag>
+        <English>Generate settings for editing remote mod</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_XML_EDITOR_GenerateEditorSettings_Help</Tag>
+        <English>Configure editor to edit xml files in another mod.[NEWLINE]This includes support for civ4bts.</English>
+    </TEXT>
+    <TEXT>
+        <Tag>TXT_KEY_XML_EDITOR_GenerateEditorSettings_Text</Tag>
+        <English>Set the editor to edit a mod other than the current one.[NEWLINE]Clicking ok will generate EditorSettings.xml. Edit that one according to the comments in it and restart Colonization. Removing EditorSettings.xml will revert back to editing We The People.[NEWLINE][NEWLINE]Be aware that when editing a remote mod, the menu will contain "Load Art and GameFont". This will copy button art and GameFont, through that will obviously break graphics in WTP. It might be worth considering making Art a symbolic link instead (advancved setup).</English>
     </TEXT>
 </Civ4GameText>

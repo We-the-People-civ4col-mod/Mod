@@ -44,6 +44,7 @@ void CyXMLEditorPythonInterface1(python::class_<CyXMLEditor>& x)
 		.def("cleanActiveFile", &CyXMLEditor::cleanActiveFile, "void ()")
 
 		.def("copyFiles", &CyXMLEditor::copyFiles, "void ()")
+		.def("setupEditorSettings", &CyXMLEditor::setupEditorSettings, "void ()")
 
 		.def("altKey"    , &CyXMLEditor::altKey    , "bool ()")
 		.def("shiftKey"  , &CyXMLEditor::shiftKey  , "bool ()")

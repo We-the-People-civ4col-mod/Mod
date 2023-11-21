@@ -1111,6 +1111,8 @@ class xmlEditorScreen:
 			self.XML.cleanActiveFile()
 		elif command == "LoadArtAndGameFont":
 			self.XML.copyFiles()
+		elif command == "GenerateEditorSettings":
+			self.XML.setupEditorSettings()
 
 		# doubles as close window
 		self.openPopupWindow(command)
@@ -1164,6 +1166,8 @@ class xmlEditorScreen:
 		self.commandList.append("CleanCurrentFile")
 		if (not self.XML.isEditorInMod()):
 			self.commandList.append("LoadArtAndGameFont")
+		else:
+			self.commandList.append("GenerateEditorSettings")
 		# get the number of items intended for the menu popup
 		self.menuItemCount = len(self.commandList)
 

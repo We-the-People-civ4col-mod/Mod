@@ -360,8 +360,8 @@
     <Type/>
     <bAnimated/>
     <TileArtType/>
-    <fScale/>
-    <fInterfaceScale/>
+    <fScale class="Float"/>
+    <fInterfaceScale class="Float"/>
     <Button class="Button"/>
     <FeatureVariety>
         <FeatureArtPieces>
@@ -877,6 +877,15 @@
     <iOrderPriority/>
 </PromotionInfo>
 
+<RiverModelInfo>
+    <ModelFile/>
+    <BorderFile/>
+    <TextureIndex/>
+    <DeltaType/>
+    <Connections/>
+    <Rotations/>
+</RiverModelInfo>
+
 <Script2DSound>
     <ScriptID/>
     <SoundID/>
@@ -1105,7 +1114,7 @@
     <Combat class="Type" type="UnitCombatInfo" none="false"/>
     <Domain class="Type" type="DomainInfo" none="false"/>
     <DefaultUnitAI class="Type" type="UnitAIInfo" none="false"/>
-    <DefaultProfession class="Type" type="ProfessionInfo" none="true"/>
+    <DefaultProfession class="Type" type="ProfessionInfo" none="true" help="help"/>
     <eEthnicity class="Type" type="EthnicityType" none="false"/>
     <eCitizenStatus class="Type" type="CitizenStatusType" none="true"/>
     <Invisible class="Type" type="InvisibleInfo" none="true"/>
@@ -1115,7 +1124,7 @@
     <Strategy/>
     <Help/>
     <iTeachLevel/>
-    <fNBMOD_REF_StrengthWeight/>
+    <fNBMOD_REF_StrengthWeight class="Float"/>
     <iAnimalPatrolWeight/>
     <iAnimalAttackWeight/>
     <bGraphicalOnly/>
@@ -1123,7 +1132,7 @@
     <bOnlyDefensive/>
     <bNoCapture/>
     <bQuickCombat/>
-    <bRivalTerritory/>
+    <bRivalTerritory class="Bool"/>
     <bMilitaryProduction/>
     <bFound/>
     <bInvisible/>
