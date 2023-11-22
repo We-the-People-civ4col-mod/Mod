@@ -4415,7 +4415,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Tag>
-		<English>For the Glory and Wealth of the motherland! Higher market prices are always welcome!</English>
+		<English>For the glory and wealth of the motherland! Higher market prices are always welcome!</English>
 		<French>Pour la gloire et la fortune de la patrie! Des prix plus élevés sont toujours les bienvenus</French>
 		<German>Für Ruhm und Reichtum des Heimatlandes! Höhere Verkaufspreise sind immer willkommen!</German>
 		<Russian>Да здравствует Король! Всегда готовы выполнить любой приказ Вашего Величества!</Russian>
@@ -4506,7 +4506,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_14</Tag>
-		<English>For the Glory and Wealth of our colonies! Higher market prices are always welcome!</English>
+		<English>For the glory and wealth of our colonies! Higher market prices are always welcome!</English>
 		<French>Pour la gloire et la richesse de nos colonies! Des prix plus élevés sont toujours bons à prendre.</French>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
 		<Russian>Во славу и богатство наших колоний! Более высокие рыночные цены всегда приветствуются!</Russian>
@@ -4534,7 +4534,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_PRICE_AND_ATTITUDE_HELP</Tag>
-		<English>The quality of our goods has impressed the peaple in Africa.[NEWLINE]His Majesty is delighted. Demand for colonial goods is rising.</English>
+		<English>The quality of our goods has impressed the people in Africa.[NEWLINE]His Majesty is delighted. Demand for colonial goods is rising.</English>
 		<French>La qualité de nos biens a impressionné les peuples d'Afrique.[NEWLINE] Sa Majesté est ravie. La demande de biens coloniaux est en hausse.</French>
 		<German>Die Menschen in Afrika sind von der Qualität unsere Kolonialwaren begeistert.[NEWLINE]Seine Majestät ist hocherfreut. Die Nachfrage nach unseren Waren steigt.</German>
 		<Russian>Качество наших товаров произвело впечатление на жителей Африки.[NEWLINE]Его Величество в восторге. Спрос на колониальные товары растет.</Russian>
@@ -4632,21 +4632,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ECCENTRIC_ARCHITECT</Tag>
-		<English>There are rumors that his Majesty has sent an experienced architect to your colonies in order to support the development of the colonies.</English>
+		<English>There are rumours that his Majesty has sent an experienced architect to your colonies in order to support the development of the colonies.</English>
 		<French>Il paraitrait que sa Majesté a envoyé un architecte expérimenté dans vos colonies afin d'aider à les bâtir.</French>
 		<German>Es heißt, der König habe zur Förderung der Entwicklung seiner Kolonien in der Neuen Welt einen Architekten nach [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] entsandt.</German>
 		<Russian>Ходят слухи, что Его Величество направил в наши колонии опытного архитектора, чтобы поддержать их развитие.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ECCENTRIC_ARCHITECT</Tag>
-		<English>Sir, the number of colonies you manage in the New World is growing steadily, but the construction is not going fast enough. His Majesty has therefore decided to send a very experienced architect of the highest repute to the colonies to support the construction work of the colonies.</English>
+		<English>Sir, the number of colonies you manage in the New World is growing steadily, but construction is not going fast enough. His Majesty has therefore decided to send us an architect with an international reputation to oversee the construction work.</English>
 		<French>Sire, le nombre de colonies que vous gérez dans le nouveau monde croît à allure régulière, mais le bâtiment ne suit pas assez vite. Sa Majesté a donc décidé de vous envoyer un architecte très expérimenté et jouissant de la meilleure réputation pour aider à la construction au sein des colonies. </French>
 		<German>Sir, die Anzahl der Kolonien in der Neuen Welt wächst stetig, aber der Aufbau geht nicht schnell genug voran. Seine Majestät hat daher entschieden, einen erfahrenen Architekten mit höchstem Ansehen in die Kolonien zu entsenden, um den Aufbau voranzutreiben.</German>
 		<Russian>Милорд, количество управляемых вами колоний в Новом Свете неуклонно растёт, но строительство идёт недостаточно быстро. Поэтому Его Величество решил прислать к нам опытного архитектора с самой высокой репутацией для поддержки строительных работ в колониях.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF</Tag>
-		<English>A rumour is spreading that the bailiffs are in the colonies looking for a for an architect in debt.</English>
+		<English>A rumour is spreading that the bailiffs are in the colonies looking for an indebted architect.</English>
 		<French>Une rumeur veut que des huissiers venus d'Europe sont à la recherche d'un architecte perclus de dettes.</French>
 		<German>Es heißt die Büttel sind in den Kolonien auf der Suche nach einem verschuldeten Architekten.</German>
 		<Russian>Ходят слухи, что судебные приставы объявили в розыск архитектора-должника.</Russian>
