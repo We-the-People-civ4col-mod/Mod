@@ -3051,7 +3051,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_COLONIAL_CONGRESS</Tag>
-		<English>We shall establish a Colonial Congress as central political institution in the colonies.</English>
+		<English>We shall establish a Colonial Congress as the central political institution in our colonies.</English>
 		<French>Nous établirons un congrès colonual comme institution politique centrale dans nos colonies.</French>
 		<German>Wir werden einen Kolonialkongress als zentrale politische Einrichtung in den Kolonien etablieren.</German>
 		<Russian>Мы создадим Колониальный Конгресс как центральный политический институт в колониях.</Russian>
@@ -3065,7 +3065,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CUSTOM_OFFICE</Tag>
-		<English>Milord, our customs officers report that our customs system is flawed and corrupt. We lose money each day. We need to establish a Central Customs Auhtority to regulate affairs and root out such corruption. Some black market traders might end up working for us legally.</English>
+		<English>Milord, our customs officers report that our customs system is flawed and corrupt. We lose money each day. We need to establish a Central Customs Authority to regulate affairs and root out corruption. Black market traders might even end up working for us legally.</English>
 		<French>Sire, nos offciers des douanes nous rapporte que notre système de collecte actuel est corrompu et faillible. Il y a un manque à gagner énorme. Nous devons mettre en place une autorité centrale des douanes pour réguler tout ça et mettre fin aux abus. Il sera même possible de recruter des marchands qui travaillaient dans le marché  noir.</French>
 		<German>Milord, unsere Zollbeamten berichten, dass die Zollerhebung eher schlecht funktioniert und zudem korruptionsanfällig ist. Uns entgehen dadurch tagtäglich Einnahmen. Wir müssen ein Zentrales Zollamt errichten, um die Zollerhebung einheitlich zu regeln und der Korruption die Basis zu entziehen. Dann werden sich letztlich auch Schmuggler und die Verkäufer von geschmuggelter Waren der Zollerhebung nicht mehr entziehen können und ihre Abgaben abführen.</German>
 		<Russian>Милорд, наши таможенники сообщают, что наша таможенная система несовершенна и коррумпирована. Мы теряем деньги каждый день. Нам необходимо создать Центральное таможенное управление для регулирования дел и искоренения такой коррупции. Некоторые торговцы с черного рынка могут работать на нас легально.</Russian>
@@ -3170,7 +3170,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIRST_HORSE_MARKET</Tag>
-		<English>Milord, the governor of another colony has built a Grand Horse and Cattle Market before you. You've missed the chance to gain more rachers.</English>
+		<English>Milord, the governor of another colony has built a Grand Horse and Cattle Market before you. You've missed the chance to gain more ranchers.</English>
 		<French>Sire, le gouverneur d'une autre colonie a construit avant vous une grande halle aux bestiaux. Vous avez laissé passer l'occasion de faire venir des éleveurs.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Großen Viehmarkt errichten. Dadurch habt Ihr die Chance vertan, weitere Rancher zu erwerben.</German>
 		<Russian>Милорд, губернатор другой колониальной нации построил Большую скотоводческую ферму раньше нас. Мы упустили шанс получить больше скотоводов.</Russian>
@@ -3765,7 +3765,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_POLITICAL_REFUGEE</Tag>
-		<English>Milord, a chance at liberty is enough for well-educated people to leave their homes and to sail to the New Word. A university graduate wishes to join our own colony, if we will pay his passage.</English>
+		<English>Milord, a chance at liberty is enough for well-educated people to leave their homes and to sail to the New World. A university graduate wishes to join our own colony if we will pay his passage.</English>
 		<French>Seigneur, il suffit d'une chance de liberté pour que des gens instruits quittent leurs maisons et s'embarquent pour le Nouveau Monde. Un diplômé d'université souhaite rejoindre notre colonie, si nous payons son passage.</French>
 		<German>Milord, die Vorzüge der Freiheit in der Neuen Welt lassen auch die Gebildeten aufhorchen. Es heißt, dass einer dieser Studierten sich unseren Kolonien anschließen würde, wenn wir ihm die Überfahrt bezahlen.</German>
 		<Russian>Милорд, достоинства свобод Нового Света заставляют даже образованных людей задуматься о переезде. Выпускник одного университета желает присоединиться к нашим колониям, если мы оплатим его проезд.</Russian>
@@ -3779,7 +3779,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WHALE_OIL_COOKER</Tag>
-		<English>Milord, whaling along our coasts promises high profits. In Europe our merchant vessel recently picked up a master train oil cooker, who wants to start a new life in the colonies. Shall we engage him?</English>
+		<English>Milord, whaling along our coasts promises high profits. In Europe our merchant vessel recently picked up a master train oil cooker who wants to start a new life in the colonies. Shall we hire him?</English>
 		<French>Seigneur, la chasse à la baleine le long de nos côtes promet de gros profits. En Europe, notre navire marchand a récemment recueilli un maître cuiseur d'huile de train, qui veut commencer une nouvelle vie dans les colonies. Devons-nous l'engager ?</French>
 		<German>Milord, der Walfang vor unseren Küsten würde gute Gewinne versprechen. Wie es der Zufall will, hat der Kapitän eines Handelsschiffes in Europa einen Meister-Trankocher an Bord genommen, der hier ein neues Leben beginnen möchte. Sollen wir im eine Anstellung geben?</German>
 		<Russian>Милорд, китобойный промысел у наших берегов сулит большие прибыли. В Европе наше торговое судно недавно подобрало мастера вытопки ворвани, который хочет начать новую жизнь в колониях. Давайте наймём его?</Russian>
@@ -4233,7 +4233,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SELL_AFRICAN_SLAVE</Tag>
-		<English>Milord, a recently deceased plantation owner left a will, in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever. They intend to sell the slaves to the highest bidder. Should we intervene? Be warned! Setting slaves free will be unpopular with the European settlers.</English>
+		<English>Milord, a recently deceased plantation owner left a will in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever. They intend to sell the slaves to the highest bidder. Should we intervene? Be warned! Setting slaves free will be unpopular with the European settlers.</English>
 		<French>Seigneur, un propriétaire de plantation récemment décédé, a laissé un testament dans lequel il souhaite que tous ses esclaves africains soient libérés. A peine est-il décédé qu'une bande de chasseurs de primes arrive et enchaîne les pauvres gens. Ils disent que le planteur délirait de la fièvre. Ils ont l'intention de vendre les esclaves au plus offrant. Devons-nous intervenir ? Soyez avertis ! Libérer les esclaves sera impopulaire auprès des colons européens.</French>
 		<German>Milord, ein im Sterben liegender Plantagenbesitzer hat in seinem letzten Willen verfügt, dass seine schwarzen Sklaven aus der Sklaverei entlassen werden sollen. Kurz nachdem er verstarb, sind jedoch Sklaveneintreiber erschienen und haben seine Sklaven in Ketten gelegt. Sie behaupten, dass der alte Mann nicht mehr Herr seiner Sinne gewesen sei und wollen die Sklaven an den Höchstbietenden verkaufen. Sollen wir hier eingreifen?</German>
 		<Russian>Милорд, недавно умерший владелец плантации оставил завещание, в котором желает, чтобы все его африканские рабы были освобождены. Едва он скончался, как прибыла банда охотников за головами и заковала несчастных в цепи. Говорят, плантатор был в бреду от лихорадки. Они намерены продать рабов тому, кто предложит самую высокую цену. Должны ли мы вмешаться? Однако, имейте в виду - освобождение рабов не понравится европейским поселенцам!</Russian>
