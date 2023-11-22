@@ -1034,19 +1034,29 @@ void CyXMLEditor::setupEditorSettings()
 	tinyxml2::XMLDocument doc;
 
 	tinyxml2::XMLElement* root = doc.NewElement("Editor");
+	tinyxml2::XMLElement* element = NULL;
 
 	doc.InsertFirstChild(root);
 
 	root->InsertEndChild(doc.NewComment(" Path to the mod. Path should end with Assets "));
-	root->InsertEndChild(doc.NewElement("ModPath"));
+	element = doc.NewElement("ModPath");
+	element->SetText("C:\\GOG Games\\Civilization IV Complete\\Civ4\\Beyond the Sword\\Mods\\MyModName\\Assets");
+	root->InsertEndChild(element);
 
 
 	root->InsertEndChild(doc.NewComment(" Delete tags below if remote mod is a colonization mod "));
 	root->InsertEndChild(doc.NewComment(" Path to civ4 vanilla folders. Should end with Assets "));
-	root->InsertEndChild(doc.NewElement("Original"));
-	root->InsertEndChild(doc.NewElement("Warlords"));
-	root->InsertEndChild(doc.NewElement("BTS"));
-
+	element = doc.NewElement("Original");
+	element->SetText("C:\\GOG Games\\Civilization IV Complete\\Civ4\\Assets");
+	root->InsertEndChild(element);
+	element = doc.NewElement("Warlords");
+	element->SetText("C:\\GOG Games\\Civilization IV Complete\\Civ4\\Warlords\\Assets");
+	root->InsertEndChild(element);
+#ifdef COLONIZATION_EXE
+	element = doc.NewElement("BTS");
+	element->SetText("C:\\GOG Games\\Civilization IV Complete\\Civ4\\Beyond the Sword\\Assets");
+	root->InsertEndChild(element);
+#endif
 
 	CvString path = getDLLPath();
 	path.append("EditorSettings.xml");
