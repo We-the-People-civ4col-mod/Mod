@@ -4637,7 +4637,9 @@ int CvUnit::getMaxLoadYieldAmount(YieldTypes eYield) const
 				{
 					// ray, making special storage capacity rules for Yields XML configurable
 					if ((pCity->getYieldStored(eLoopYield) > 0) && (GC.getYieldInfo(eLoopYield).isCargo()) && !(GC.getYieldInfo(eLoopYield).isIgnoredForStorageCapacity()))
-						{iCargoYields++;}
+					{
+						iCargoYields++;
+					}
 				}
 
 				if(iCargoYields > 0)//R&R mod, vetiarvind, max yield import limit

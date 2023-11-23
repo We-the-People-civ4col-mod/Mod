@@ -21,6 +21,7 @@
 #include "CvSavegame.h"
 #include <algorithm>
 #include "BetterBTSAI.h"
+#include "CvMacros.h"
 
 #include "TBB.h"
 
@@ -5350,9 +5351,15 @@ void CvCityAI::AI_setPort(bool iNewValue)
 {
 	m_bPort = iNewValue;
 	if (iNewValue)
+	{ 
 		AI_setCityRole(AI_CITY_EXPORT_PORT);
+		AI_setCityRole(AI_CITY_NAVAL_PROD);
+	}
 	else
+	{
 		AI_clearCityRole(AI_CITY_EXPORT_PORT);
+		AI_clearCityRole(AI_CITY_NAVAL_PROD);
+	}
 }
 
 bool CvCityAI::AI_potentialPlot(const EnumMap<YieldTypes, short>& em_iYields) const
@@ -5380,13 +5387,18 @@ int CvCityAI::AI_getRequiredYieldLevel(YieldTypes eYield)
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 
+	// Disabled for now, find a different way to
+	// encourage the relief of encumbered cities!
+	/*
 	if (getTotalYieldStored() > getMaxYieldCapacity() / 2)
 	{
 		int iCargoYields = 0;
 		for (int iYield = 1; iYield < NUM_YIELD_TYPES; iYield++)
 		{
 			if ((getYieldStored((YieldTypes)iYield) > 0) && (GC.getYieldInfo(eYield).isCargo()))
-			{iCargoYields++;}
+			{
+				iCargoYields++;
+			}
 		}
 		if (iCargoYields < 1)
 		{
@@ -5394,6 +5406,7 @@ int CvCityAI::AI_getRequiredYieldLevel(YieldTypes eYield)
 		}
 		return (getMaintainLevel(eYield) / iCargoYields);
 	}
+	*/
 	return getMaintainLevel(eYield);
 }
 
@@ -5470,10 +5483,29 @@ void CvCityAI::AI_updateRequiredYieldLevels()
 	}
 	*/
 
-	int iPercent = 60;
+	// Ensure that we don't export the gifted wagon yields. TODO: Don't hard-code it!
+	if (kPlayer.getPrimaryCity())
+	{
+		const UnitTypes eBestUnit = AI_bestUnitAI(UNITAI_WAGON);
 
-	// R&R, ray, fix for new storage capacity
-	aiLevels[YIELD_MUSKETS] = getMaxYieldCapacity() / 5 * iPercent / 100;
+		if (eBestUnit != NO_UNIT)
+		{
+			FOREACH_CARGO_YIELD(Yield)
+			{
+				// Note: Need to check if we can produe this unit
+				// Note: Hammer yield (production points) is ignored
+				const int iYieldRequired = GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(eBestUnit, eLoopYield);
+
+				if (iYieldRequired > 0)
+				{
+					// Make sure we're importing this yield unless we've already got enough
+					aiLevels[eLoopYield] = std::max(iYieldRequired, aiLevels[eLoopYield]);
+				}
+			}
+		}
+	}
+
+	aiLevels[YIELD_MUSKETS] = GC.getGameINLINE().getCargoYieldCapacity();
 
 	//for (int iPass = 0; iPass < 2; ++iPass)
 	{
@@ -5481,22 +5513,22 @@ void CvCityAI::AI_updateRequiredYieldLevels()
 		BuildingTypes eBuilding = getProductionBuilding();
 		if (eBuilding != NO_BUILDING)
 		{
-			CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
-			for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+			const CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
+			FOREACH_CARGO_YIELD(Yield)
 			{
-				int iAmount = kBuilding.getYieldCost(i);
-				aiLevels[i] = std::max(iAmount, aiLevels[i]);
+				int iAmount = kBuilding.getYieldCost(eLoopYield);
+				aiLevels[eLoopYield] = std::max(iAmount, aiLevels[eLoopYield]);
 			}
 		}
 
 		UnitTypes eUnit = getProductionUnit();
 		if (eUnit != NO_UNIT)
 		{
-			CvUnitInfo& kUnit = GC.getUnitInfo(eUnit);
-			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+			const CvUnitInfo& kUnit = GC.getUnitInfo(eUnit);
+			FOREACH_CARGO_YIELD(Yield)
 			{
-				int iAmount = kUnit.getYieldCost(eYield);
-				aiLevels[eYield] = std::max(iAmount, aiLevels[eYield]);
+				int iAmount = kUnit.getYieldCost(eLoopYield);
+				aiLevels[eLoopYield] = std::max(iAmount, aiLevels[eLoopYield]);
 			}
 		}
 	}
@@ -5509,9 +5541,30 @@ void CvCityAI::AI_updateRequiredYieldLevels()
 	*/
 	// TAC - AI Economy - koma13 - END
 
-	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+	if (AI_hasCityRole(AI_CITY_NAVAL_PROD))
 	{
-		setMaintainLevel((YieldTypes)i, std::max(getMaintainLevel((YieldTypes)i), aiLevels[i]));
+		const UnitTypes eBestUnit = AI_bestUnitAI(UNITAI_TRANSPORT_SEA);
+		
+		if (eBestUnit != NO_UNIT)
+		{
+			FOREACH_CARGO_YIELD(Yield)
+			{
+				// Note: Need to check if we can produe this unit
+				// Note: Hammer yield (production points) is ignored
+				const int iYieldRequired = GET_PLAYER(getOwnerINLINE()).getYieldProductionNeeded(eBestUnit, eLoopYield);
+
+				if (iYieldRequired > 0)
+				{
+					// Make sure we're importing this yield unless we've already got enough
+					setImportsLimit(eLoopYield, std::max(getMaintainLevel(eLoopYield), iYieldRequired));
+				}
+			}
+		}
+	}
+
+	FOREACH_CARGO_YIELD(Yield)
+	{
+		setMaintainLevel(eLoopYield, std::max(getMaintainLevel(eLoopYield), aiLevels[eLoopYield]));
 	}
 }
 
@@ -7010,9 +7063,9 @@ int CvCityAI::AI_getIdleColonistCount() const
 bool CvCityAI::AI_vetoBuilding(BuildingTypes eBuilding) const
 {
 	if (AI_isSignificantNavalBuilding(eBuilding) && !AI_hasCityRole(AI_CITY_NAVAL_PROD)) 
-		return false;
+		return true;
 
-	return true;
+	return false;
 }
 
 // Identifies expensive naval buildings (currently dry dock and beyond)

@@ -4803,11 +4803,9 @@ void CvUnitAI::AI_transportSeaMove()
 		// If we happen to be in a city we own, attempt to load as many goods as possible
 		if (pCity != NULL && pCity->getOwner() == getOwner())
 		{
-			// Be a bit more picky about the amount of yields in case we have multiple cities
-			if (kOwner.getNumCities() > 1)
-				AI_collectGoods(GC.getGameINLINE().getCargoYieldCapacity() / 2);
-			else
-				AI_collectGoods(GC.getGameINLINE().getCargoYieldCapacity() / 10);
+			// Try to fill our cargo holds
+			AI_collectGoods(GC.getGameINLINE().getCargoYieldCapacity());
+			AI_collectGoods(GC.getGameINLINE().getCargoYieldCapacity() / 2);
 		}
 
 		if (kOwner.AI_totalUnitAIs(UNITAI_TREASURE) > 0)
@@ -7010,10 +7008,6 @@ bool CvUnitAI::AI_travelToPort(int iMinPercent, int iMaxPath)
 	{
 		if (!atPlot(pLoopCity->plot()) && AI_plotValid(pLoopCity->plot()))
 		{
-			// Cities with a customs house need not be considered
-			if (pLoopCity->getHasUnlockedStorageLossTradeSettings())
-				continue;
-
 			if (!(pLoopCity->plot()->isVisibleEnemyUnit(this)))
 			{
 				// TAC - AI Improved Naval AI - koma13 - START
@@ -7048,6 +7042,12 @@ bool CvUnitAI::AI_travelToPort(int iMinPercent, int iMaxPath)
 
 							iValue /= 100 + getPathCost();
 							iValue /= 3 + pLoopCity->plot()->getDistanceToOcean();
+
+							// De-emphasize cities that can sell their goods without being shipped (e.g. customs house has been unlocked)
+							if (pLoopCity->getHasUnlockedStorageLossTradeSettings())
+							{
+								iValue /= 2;
+							}
 
 							if (iValue > iBestValue)
 							{

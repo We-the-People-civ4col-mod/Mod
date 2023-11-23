@@ -1146,6 +1146,7 @@ enum AICityRole
 	AI_CITY_EXPORT_PORT	 = (1 << 1), // Replacement for "best port city"
 	AI_CITY_NAVAL_PROD   = (1 << 2), // Allow dry-dock and beyond, prepare for ship building (inc. coastal tr.)
 	AI_CITY_WAGON_PROD   = (1 << 3), // Prepare and execute wagon prodction when needed
+	AI_CITY_PROVISIONS   = (1 << 4), // Produce provisions from local or imported yields
 };
 
 enum EndTurnButtonStates

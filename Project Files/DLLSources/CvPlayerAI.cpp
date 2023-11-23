@@ -8745,7 +8745,7 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_COAL:
 		case YIELD_CHAR_COAL:
 		case YIELD_PEAT:
-			return true; // TODO: Add a suitable threshold for these so that the surplus can be exported
+			return AI_surplusYieldCount(eYield) > 0;
 			break;
 		case YIELD_SHEEP:
 		case YIELD_GOATS:
@@ -8794,7 +8794,7 @@ bool CvPlayerAI::AI_isYieldForSale(YieldTypes eYield) const
 		case YIELD_BAKERY_GOODS:
 		case YIELD_ROPE:
 		case YIELD_SAILCLOTH:
-			return !AI_isYieldNeeded(eYield);
+			return AI_surplusYieldCount(eYield) > 0;
 			break;
 		// Erik: It does the AI little good to sell these yields
 		case YIELD_TOOLS:
@@ -8927,15 +8927,17 @@ bool CvPlayerAI::AI_isYieldNeeded(YieldTypes eYield, int iCapacityPercent, CvCit
 	{
 		if (pCity == NULL || pCity == pLoopCity)
 		{
-			if (iCapacityPercent == -1)
+			//if (iCapacityPercent == -1)
 			{
 				iTotalNeeded += pLoopCity->AI_getRequiredYieldLevel(eYield) - pLoopCity->getYieldStored(eYield);
 			}
+			/*
 			else
 			{
 				// R&R, ray, fix for new storage capacity
 				iTotalNeeded += ((pLoopCity->getMaxYieldCapacity() / 5 * iCapacityPercent) / 100) - pLoopCity->getYieldStored(eYield);
 			}
+			*/
 		}
 	}
 
@@ -9829,7 +9831,9 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 			for (int iYield = 1; iYield < NUM_YIELD_TYPES; iYield++)//YIELD_FOOD
 			{
 				if ((pCity->getYieldStored((YieldTypes)iYield) > 0) && (GC.getYieldInfo(eYield).isCargo()))
-					{iCargoYields++;}
+				{
+					iCargoYields++;
+				}
 			}
 			if (iCargoYields < 1)
 			{
@@ -16718,3 +16722,17 @@ ProfessionTypes CvPlayerAI::getSettlerProfession() const
 	return eSettlerProfession;
 }
 
+// Returns true if this yield can be considered for export due to being abundant in our colonies
+int CvPlayerAI::AI_surplusYieldCount(YieldTypes eYield) const
+{
+	const int iEmpireReserveAmount = 50 * getNumCities();
+	int iSurplus = 0;
+
+	FOREACH_CITY(pLoopCity)
+	{
+		const int iMargin = pLoopCity->getMaintainLevel(eYield) - pLoopCity->getYieldStored(eYield);
+		iSurplus += iMargin;
+	}
+
+	return std::max(0, iSurplus - iEmpireReserveAmount);
+}

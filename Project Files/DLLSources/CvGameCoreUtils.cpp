@@ -2563,7 +2563,33 @@ CvWString getUnitAIStateString(UnitAIStates eUnitAIState)
 	return szString;
 }
 
+CvWString getAICityRoleString(AICityRole eAICityRole)
+{
+	CvWString szString = L"";
 
+	if (eAICityRole == NO_AI_CITY_ROLE) {
+		return L"NO_AI_CITY_ROLE";
+	}
+
+	if (eAICityRole & AI_CITY_EXPORT_PORT) {
+		szString += L"AI_CITY_EXPORT_PORT ";
+	}
+
+	if (eAICityRole & AI_CITY_NAVAL_PROD) {
+		szString += L"AI_CITY_NAVAL_PROD ";
+	}
+
+	if (eAICityRole & AI_CITY_WAGON_PROD) {
+		szString += L"AI_CITY_WAGON_PROD ";
+	}
+
+	// Remove trailing space, if there is one
+	if (!szString.empty() && szString[szString.length() - 1] == L' ') {
+		szString.erase(szString.length() - 1);
+	}
+
+	return szString;
+}
 /// post load function - start - Nightinggale
 //
 // This function is called whenever a savegame finish loading
