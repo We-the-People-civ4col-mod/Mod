@@ -1017,8 +1017,11 @@ protected:
 	void setAutoExport(YieldTypes eYield, bool bExport);
 	void doAutoExport(YieldTypes eYield);
 	void handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoExportAll);
-
 	// auto traderoute - end - Nightinggale
+
+	//bobisback import mod
+	void handleDemandedImport(int bImportAllDemanaded);
+	void CvCity::handleConstructionImport(int bImportAllDemanaded);
 
 public:
 	int getMarketModifier() const { return m_iCacheMarketModifier; }
