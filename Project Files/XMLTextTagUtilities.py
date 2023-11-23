@@ -2,7 +2,8 @@ import codecs
 import xml.sax
 import xml.sax.handler
 import xml.sax.xmlreader
-import os
+import re
+import glob
 import os.path
 
 
@@ -104,12 +105,12 @@ class XMLTagUsage(object):
         return self.__presence_list and not self.__usage_list
 
     def __repr__(self):
-        return  "P: "+self.__presence_list.__repr__()+"\n"\
+        return  "P: "+self.__presence_list.__repr__()+", "\
                +"U: "+self.__usage_list.__repr__()
 
 
 
-def fill_usage(strings_file, usage_dict, source):
+def fill_usage_exe_strings(strings_file, usage_dict, source):
     """
     :param strings_file: a file object, that contains the strings extracted from the exe
     :type strings_file: file
@@ -129,17 +130,54 @@ def fill_usage(strings_file, usage_dict, source):
 
         usage_dict[tag] = tag_usage
         line = strings_file.readline()
-        line_no = line_no +1
+        line_no += 1
+
+def fill_usage_cpp_py(source_file, file_name, usage_dict, source):
+    """ fills the  usage_dict with
+
+    :param source_file: a file object, opening a C++ or a Python file
+    :type source_file: file
+    :param file_name: the path to access the file
+    :type file_name: str
+    :param usage_dict: the dictionary where all keys are listed.
+    :type usage_dict: dict[str, XMLTagUsage]
+    :param source:
+    :return:
+    """
+    regexp = re.compile("\"(?P<TXT>TXT_KEY_[^\"]*)\"")
 
 
+    line = source_file.readline() #type : str
+    line_no = 1
+    while line:
+        start_pos = 0
+        while start_pos < len(line):
+            result = regexp.search(line,start_pos) # there might be more than one tag key
+            if result is None:
+                break
+            tag_name = result.group("TXT")
+
+            tag_usage = usage_dict.get(tag_name, XMLTagUsage())
+
+            tag_usage.push_usage(source,file_name,line_no)
+
+            usage_dict[tag_name] = tag_usage
+            start_pos = result.end()
+
+        line = source_file.readline()
+        line_no += 1
 
 class Civ4TextXMLHandler(xml.sax.ContentHandler):
+
+    def __new__(cls, *args, **kwargs):
+        return Civ4TextXMLHandler(*args,**kwargs)
 
     def __init__(self, file_name, usage_dict, source):
         self.tags_path = []
         self.file_name = file_name
         self.locator = None
         self.source = source
+        self.usage_dict = usage_dict
 
     def setDocumentLocator(self, locator):
         self.locator = locator
@@ -147,15 +185,22 @@ class Civ4TextXMLHandler(xml.sax.ContentHandler):
 
 
 if __name__ == "__main__":
-    tags_presence_dict = dict() #type: dict[str,XMLTagUsage()]
+    tags_presence_dict = dict() #type: dict[str, XMLTagUsage]
 
     colonization = file("colonization_exe.txt")
-    fill_usage(colonization, tags_presence_dict, PresenceSpot.EXE_COLONIZATION)
+    fill_usage_exe_strings(colonization, tags_presence_dict, PresenceSpot.EXE_COLONIZATION)
     colonization.close()
 
-    pitboss = file("pitboss_exe.txt")
-    fill_usage(pitboss, tags_presence_dict, PresenceSpot.EXE_PITBOSS)
-    pitboss.close()
+    pit_boss = file("pitboss_exe.txt")
+    fill_usage_exe_strings(pit_boss, tags_presence_dict, PresenceSpot.EXE_PITBOSS)
+    pit_boss.close()
+
+    os.chdir("..")
+
+    for file_name in glob.glob(".\\Project Files\\DLLSources\\*.cpp"):
+        cpp = file(file_name)
+        fill_usage_cpp_py(cpp, file_name, tags_presence_dict, PresenceSpot.DLL_CODE)
+        cpp.close()
 
     import pprint
     pprint.pprint(tags_presence_dict)
