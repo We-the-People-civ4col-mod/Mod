@@ -14,7 +14,7 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
 
 //TODO: Add static assert to provide a meaningful error msg for non-YieldTypes
 #define FOREACH_CARGO_YIELD(TYPE) \
-    for (TYPE##Types eLoop##TYPE = (TYPE##Types)0; \
+    for (TYPE##Types eLoop##TYPE = (TYPE##Types)FIRST_YIELD; \
     eLoop##TYPE < NUM_CARGO_YIELD_TYPES; \
     eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
 

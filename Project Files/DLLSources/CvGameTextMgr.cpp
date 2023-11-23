@@ -2743,16 +2743,12 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 					// end color
 					szString.append(CvWString::format( ENDCOLR ));
 				}
-				// Custom_House_Mod Start
-				if (bIsBestPortCity)
-				{
-					szString.append(L"\n");
-					szString.append(CvWString::format(SETCOLR, TEXT_COLOR("COLOR_ALT_HIGHLIGHT_TEXT")));
-					szString.append(CvWString::format(L"IsBestPortCity"));
-					szString.append(CvWString::format( ENDCOLR ));
-					//szTempBuffer.Format(SETCOLR L"\n%s is best port city" ENDCOLR, TEXT_COLOR("COLOR_ALT_HIGHLIGHT_TEXT"), pCity->getName().GetCString());
-				}
-				// Custom_House_Mod End
+				szString.append(L"\n");
+				szString.append(CvWString::format(SETCOLR, TEXT_COLOR("COLOR_ALT_HIGHLIGHT_TEXT")));
+				szString.append(CvWString::format(L"AI City Role:\n"));
+				szString.append(getAICityRoleString(pCityAI->AI_getCityRole()));
+				szString.append(CvWString::format( ENDCOLR ));
+				//szTempBuffer.Format(SETCOLR L"\n%s is best port city" ENDCOLR, TEXT_COLOR("COLOR_ALT_HIGHLIGHT_TEXT"), pCity->getName().GetCString());
 
 				// if control key is down, ignore food
 				bool bIgnoreFood = gDLL->ctrlKey();

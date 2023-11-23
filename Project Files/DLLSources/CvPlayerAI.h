@@ -592,6 +592,7 @@ protected:
 	bool AI_isStrategicInputYield(YieldTypes eYield) const;
 	bool AI_isStrategicFinalYield(YieldTypes eYield) const;
 	bool AI_isStrategicYield(YieldTypes eYield) const;
+	int AI_surplusYieldCount(YieldTypes eYield) const;
 
 	friend class CvGameTextMgr;
 };
