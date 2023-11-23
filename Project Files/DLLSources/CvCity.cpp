@@ -12755,8 +12755,8 @@ void CvCity::handleDemandedImport(int bImportAllDemanaded)
 			bool bExport = isExport(eYield);
 			bool bMaintainImport = getImportsMaintain(eYield);
 			bool bAutoExport = isAutoExport(eYield);
-			int iMaintainLevel = iAmount * SOME_SUPER_COOL_GLOBAL_DEFINE_I_DONT_KNOW_HOW_TO_DO;
-			int iImportLimitLevel = iAmount * SOME_SUPER_COOL_GLOBAL_DEFINE_I_DONT_KNOW_HOW_TO_DO * 1.5;
+			int iMaintainLevel = iAmount * GLOBAL_DEFINE_IMPORT_DEMANDED_GOODS_MAINTAIN_AMOUNT;
+			int iImportLimitLevel = iAmount * GLOBAL_DEFINE_IMPORT_DEMANDED_GOODS_IMPORT_LIMIT_AMOUNT * 1.5;
 
 			int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
 			iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
