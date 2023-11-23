@@ -4653,28 +4653,28 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_1</Tag>
-		<English>Milord, the architect we recently accepted into our colony, is doing a good job. Unfortunately, there is also a catch. Apparently, he has made enemies in Europe and gotten himself heavily into debt. The bailiffs have heard that he is working for us and are now comb through our colonies from north to south. They demand that we pay the whole sum immediately, otherwise the man will face the debtors' prison and be brought back to Europe in disgrace.</English>
+		<English>Milord, the architect we recently hired for our colony does a good job, but there's a catch. He's made enemies in Europe and gotten himself heavily into debt. The bailiffs heard he's working for us here in our colonies. They demand that we pay the whole sum immediately. Otherwise they'll take him back to Europe in disgrace to face debtors' prison.</English>
 		<French>Sire, l'architecte que nous avons accueilli récemment fait du très bon travail. Hélas, il est venu avec des ennuis. Apparemment il s'est fait des ennemis en Europe et s'est retrouvé lourdement endetté. Les huissiers ont entendu qu'il travaille pour notre compte et passent nos colonies au peigne fin du nord au sud. Ils exigent que nous payions immédiatement toute sa dette, sinon ils ramènent l'homme pieds et poings liés en Europe pour y faite de la prison pour dettes.</French>
 		<German>Milord, der Architekt, den wir kürzlich in unsere Kolonie aufgenommen haben, leistet gute Arbeit. Leider hat das Ganze auch einen Haken. Offenbar hat er sich in der Alten Welt Feinde gemacht und sich hoch verschuldet. Die Büttel haben gehört, dass er für uns arbeitet und durchsuchen unsere Kolonien von Nord nach Süd. Sie verlangen, dass wir die ganze Summe sogleich bezahlen, ansonsten droht dem Mann der Schuldturm und man wird ihn in Schande nach Europa zurückbringen.</German>
 		<Russian>Милорд, архитектор, который недавно принехал к нам, хорошо справляется со своей работой. Однако, есть одна проблема: он по уши в долгах, с которыми не может расплатиться. Приставы прослышали, что он работает на нас и теперь прочесывают наши колонии вдоль и поперёк. Они требуют, чтобы мы незамедлительно выплатили всю сумму долга, иначе мужчине грозит долговая тюрьма и его с позором вернут в Европу, как только найдут.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_PAY</Tag>
-		<English>Darn it and sew it up, I knew there was a catch when we took him in. The letter of recommendation was too generously worded. Still, we can't leave him hanging. Pay the bailiffs and then hopefully the grass will grow over the matter. But keep quiet about it, the king should not know that we helped the man.</English>
+		<English>Hell's bells, I knew there was a catch when we took him in. That letter of recommendation was too generously worded. Still, we can't leave him hanging. Pay the bailiffs and hopefully in time it will be forgotten. Keep quiet about it. The King must never know we helped the man.</English>
 		<French>Misère de misère, je savais qu'il y avait un os avec lui. La lettre de recommandation était trop fleurie pour être honnête. On ne peut pourtant pas le laisser tomber. Payez les huissiers et espérons que de l'eau coule sous les ponts. Restez discrets, le roi ne doit rien savoir à ce sujet.</French>
 		<German>Verflixt und zugenäht, ich wusste da war ein Haken, als wir ihn aufnahmen. Das Empfehlungsschreiben war allzu großzügig abgefasst. Dennoch, wir können ihn nicht hängen lassen. Bezahlt die Büttel und dann wächst hoffentlich Gras über die Sache. Aber schweigt darüber, der König sollte nicht erfahren, dass wir dem Mann geholfen haben.</German>
 		<Russian>Три тысячи чертей, я чувствовал, что здесь что-то не чисто, когда мы его брали! Рекомендательные письма были слишком хороши! Тем не менее, мы не можем лишиться такого ценного сотрудника. Заплатите судебным приставам и будем надеяться, что об этом скоро забудут. Но прошу вас - никому не слова. И уж тем более Король не должен знать, что мы помогли этому человеку.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_NEGOTIATE</Tag>
-		<English>It's really maddening. Let's try to negotiate with the bailiffs first. Let's offer them half of what the architect owes.</English>
+		<English>It's really maddening. Try to negotiate with the bailiffs first. Let's offer them half of what the architect owes.</English>
 		<French>Jarnicoton. Essayions de négocier avec les huissiers. Offrons-leur la moitié de ce que doit cet architecte</French>
 		<German>Verd...ach, man soll ja nicht fluchen. Aber es ist doch wirklich zum verrückt werden. Versuchen wir erst einmal mit den Halunken zu verhandeln. Bieten wir ihnen die Hälfte von dem was der Architekt ihnen schuldet.</German>
 		<Russian>Дьявол... Что же, давайте попробуем договориться с судебными приставами. Предложите им половину того, что должен архитектор и будем надеяться, их аппетиты не вырастут.</Russian>
 	</TEXT> 
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_REFUSE</Tag>
-		<English>Aha, that would have been too good to be true. But this is a free colony and everyone should be happy here - his old misdemeanors should be forgiven. Call the guard and scare away this rabble. We will not hand over this faithful servant of our progress just like that.</English>
+		<English>Aha, that would have been too good to be true. Still, this is a free colony and everyone deserves to be happy here. What happened in Europe stays in Europe. Call the guard and scare away these pests. We won't hand over such a talented planner just like that.</English>
 		<French>C'était donc trop beau pour être vrai. Mais nous sommes une colonie libre et tout le monde doit être heureux ici - ses écarts passés doivent être pardonnés. Appelez la garde et virez-moi ces chiens. Nous ne leur livrerons pas notre fidèle serviteur dans le progrès sur un coup de tête.</French>
 		<German>Aha, wäre ja auch zu schön gewesen. Aber dies ist eine freie Kolonie und jeder soll hier glücklich werden - seine Altlasten seien ihm vergeben. Ruft die Wache und verscheucht dieses Pack. Wir liefern diesen treuen Diener unseres Fortschritts nicht einfach so aus.</German>
 		<Russian>Я так и знал, что этот старый прохвост доставит нам хлопот. Но в Новом Свете мы строим новое общество и ошибки прошлого должны быть забыты. Прикажите охране вышвырнуть этих ищеек с нашей территории. Мы никому не отдадим верного слугу нашего прогресса.</Russian>
