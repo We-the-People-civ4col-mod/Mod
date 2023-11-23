@@ -12691,8 +12691,8 @@ void CvCity::handleConstructionImport(int bImportAllDemanaded)
 	bool bExport = isExport(YIELD_LUMBER);
 	bool bMaintainImport = getImportsMaintain(YIELD_LUMBER);
 	bool bAutoExport = isAutoExport(YIELD_LUMBER);
-	int iMaintainLevel = 100;
-	int iImportLimitLevel = 150;
+	int iMaintainLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_LUMBER_IMPORT_LIMIT_AMOUNT;
+	int iImportLimitLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_LUMBER_IMPORT_LIMIT_AMOUNT * 1.5;
 
 	int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
 	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
@@ -12703,8 +12703,8 @@ void CvCity::handleConstructionImport(int bImportAllDemanaded)
 	bExport = isExport(YIELD_STONE);
 	bMaintainImport = getImportsMaintain(YIELD_STONE);
 	bAutoExport = isAutoExport(YIELD_STONE);
-	iMaintainLevel = 100;
-	iImportLimitLevel = 150;
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_STONE_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_STONE_IMPORT_LIMIT_AMOUNT * 1.5;
 
 	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
 	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
@@ -12715,8 +12715,8 @@ void CvCity::handleConstructionImport(int bImportAllDemanaded)
 	bExport = isExport(YIELD_CLAY);
 	bMaintainImport = getImportsMaintain(YIELD_CLAY);
 	bAutoExport = isAutoExport(YIELD_CLAY);
-	iMaintainLevel = 100;
-	iImportLimitLevel = 150;
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_CLAY_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_CLAY_IMPORT_LIMIT_AMOUNT * 1.5;
 
 	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
 	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
@@ -12727,8 +12727,8 @@ void CvCity::handleConstructionImport(int bImportAllDemanaded)
 	bExport = isExport(YIELD_TOOLS);
 	bMaintainImport = getImportsMaintain(YIELD_TOOLS);
 	bAutoExport = isAutoExport(YIELD_TOOLS);
-	iMaintainLevel = 150;
-	iImportLimitLevel = 200;
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_TOOLS_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_TOOLS_IMPORT_LIMIT_AMOUNT * 1.5;
 
 	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
 	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
@@ -12738,8 +12738,6 @@ void CvCity::handleConstructionImport(int bImportAllDemanaded)
 
 void CvCity::handleDemandedImport(int bImportAllDemanaded)
 {
-	int SOME_SUPER_COOL_GLOBAL_DEFINE_I_DONT_KNOW_HOW_TO_DO = 5;
-
 	YieldCargoArray<int> aYields;
 	getYieldDemands(aYields);
 	const InfoArray<YieldTypes>& kYieldArray = GC.getDomesticDemandYieldTypes();
@@ -12756,7 +12754,7 @@ void CvCity::handleDemandedImport(int bImportAllDemanaded)
 			bool bMaintainImport = getImportsMaintain(eYield);
 			bool bAutoExport = isAutoExport(eYield);
 			int iMaintainLevel = iAmount * GLOBAL_DEFINE_IMPORT_DEMANDED_GOODS_MAINTAIN_AMOUNT;
-			int iImportLimitLevel = iAmount * GLOBAL_DEFINE_IMPORT_DEMANDED_GOODS_IMPORT_LIMIT_AMOUNT * 1.5;
+			int iImportLimitLevel = iAmount * GLOBAL_DEFINE_IMPORT_DEMANDED_GOODS_IMPORT_LIMIT_AMOUNT;
 
 			int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
 			iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits

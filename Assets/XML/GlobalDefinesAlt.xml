@@ -1736,4 +1736,24 @@
         <DefineName>IMPORT_DEMANDED_GOODS_IMPORT_LIMIT_AMOUNT</DefineName>
         <iDefineIntVal>8</iDefineIntVal>
     </Define>
+	<!-- How much lumber should the construction button import -->
+	<Define>
+        <DefineName>IMPORT_CONSTRUCTION_LUMBER_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+	<!-- How much stone should the construction button import -->
+	<Define>
+        <DefineName>IMPORT_CONSTRUCTION_STONE_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+	<!-- How much clay should the construction button import -->
+	<Define>
+        <DefineName>IMPORT_CONSTRUCTION_CLAY_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+	<!-- How much tools should the construction button import -->
+	<Define>
+        <DefineName>IMPORT_CONSTRUCTION_TOOLS_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>150</iDefineIntVal>
+    </Define>
 </Civ4Defines>
