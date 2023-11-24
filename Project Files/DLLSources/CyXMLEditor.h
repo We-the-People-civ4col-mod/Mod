@@ -284,8 +284,6 @@ private:
 	tinyxml2::XMLDocument *m_ModSettingsDoc;
 	std::vector<xmlFileContainer*> m_szFiles;
 
-	tinyxml2::XMLDocument *m_DocCommandFile;
-
 	int m_iMaxGameFontID;
 
 	TCHAR *m_szKeyboard;

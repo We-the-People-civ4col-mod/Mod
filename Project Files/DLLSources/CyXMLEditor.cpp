@@ -571,7 +571,6 @@ CyXMLEditor::CyXMLEditor()
 	, m_iActiveModFile(0)
 	, m_szKeyboard(NULL)
 	, m_pFileSpecificInfo(NULL)
-	, m_DocCommandFile(new XMLDocument)
 	, m_EditorInMod(false)
 {
 	m_Document = new XMLDocument;
@@ -594,13 +593,6 @@ CyXMLEditor::CyXMLEditor()
 	// set the keyboard string
 	m_szKeyboard = new TCHAR[KL_NAMELENGTH];
 	GetKeyboardLayoutName(m_szKeyboard);
-
-	{
-		std::string name = getDLLPath();
-		name.append("XML/Editor/CommandText.xml");
-		XMLError eError = m_DocCommandFile->LoadFile(name.c_str());
-		FAssertMsg(eError == XML_SUCCESS, "Assets/XML/Editor/CommandText.xml not found in Editor mod");
-	}
 
 	bool bHasEditorFiles = openFile("Editor/EditorFiles.xml");
 	if (!bHasEditorFiles)
@@ -712,7 +704,6 @@ CyXMLEditor::~CyXMLEditor()
 	SAFE_DELETE(m_Schema);
 	SAFE_DELETE(m_Keyboard);
 	SAFE_DELETE(m_szKeyboard);
-	SAFE_DELETE(m_DocCommandFile);
 
 	if (m_pInstance == this)
 	{
