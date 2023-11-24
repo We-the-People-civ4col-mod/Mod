@@ -1205,24 +1205,24 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 			}
 
 			// auto traderoute - start - Nightinggale
-			if (pPopupReturn->getButtonClicked() >= 0)
+			if (pPopupReturn->getButtonClicked() >= 0 && pPopupReturn->getButtonClicked() <= 2)
 			{
 				bool bReset          = pPopupReturn->getButtonClicked() == 0;
 				bool bImportAll      = pPopupReturn->getButtonClicked() == 1;
 				bool bAutoExportAll  = pPopupReturn->getButtonClicked() == 2;
 
-				//bobisback import goods changes
-				int bImportAllChanges = 0;
-
-				if (pPopupReturn->getButtonClicked() == 3)
-					bImportAllChanges = 1;
-
-				if (pPopupReturn->getButtonClicked() == 4)
-					bImportAllChanges = 2;
-
-				gDLL->sendDoTask(info.getData1(), TASK_AUTO_TRADEROUTE, bImportAllChanges, 0, bReset, bImportAll, bAutoExportAll, false);
+				gDLL->sendDoTask(info.getData1(), TASK_AUTO_TRADEROUTE, 0, 0, bReset, bImportAll, bAutoExportAll, false);
 			}
 			// auto traderoute - end - Nightinggale
+
+			//bobisback import changes
+			if (pPopupReturn->getButtonClicked() == 3 || pPopupReturn->getButtonClicked() == 4)
+			{
+				bool importDemandedGoods = pPopupReturn->getButtonClicked() == 3;
+				bool importConstructionGoods = pPopupReturn->getButtonClicked() == 4;
+
+				gDLL->sendDoTask(info.getData1(), TASK_IMPORT_CHANGES, 0, 0, importDemandedGoods, importConstructionGoods, false, false);
+			}
 		}
 		break;
 

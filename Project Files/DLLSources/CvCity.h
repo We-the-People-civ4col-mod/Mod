@@ -1020,8 +1020,8 @@ protected:
 	// auto traderoute - end - Nightinggale
 
 	//bobisback import mod
-	void handleDemandedImport(int bImportAllDemanaded);
-	void CvCity::handleConstructionImport(int bImportAllDemanaded);
+	void handleDemandedImport();
+	void handleConstructionImport();
 
 public:
 	int getMarketModifier() const { return m_iCacheMarketModifier; }
