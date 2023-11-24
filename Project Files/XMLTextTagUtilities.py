@@ -167,10 +167,20 @@ def fill_usage_cpp_py(source_file, file_name, usage_dict, source):
         line = source_file.readline()
         line_no += 1
 
-class Civ4TextXMLHandler(xml.sax.ContentHandler):
-
-    def __new__(cls, *args, **kwargs):
-        return Civ4TextXMLHandler(*args,**kwargs)
+class Civ4XMLHandler(xml.sax.ContentHandler):
+    CAPTURE = []
+    TAG_NAMES = []
+    @staticmethod
+    def new(file_name, usage_dict, *args, **kwargs):
+        seps = file_name.split(os.sep)
+        if seps[-2] != "Text":
+            return Civ4ReferentialXMLHandler(file_name,usage_dict,PresenceSpot.XML_REFERENCE)
+        if seps[-1].lower() in ["names_admirals_utf8.xml",
+                        "names_cities_utf8.xml",
+                        "names_generals_utf8.xml",
+                        "names_ships_utf8.xml"]:
+            return Civ4TextXMLHandler(file_name,usage_dict,PresenceSpot.TEXT_TAG_CIVS_VARS)
+        return Civ4TextXMLHandler(file_name, usage_dict,PresenceSpot.TEXT_TAG_STANDARD)
 
     def __init__(self, file_name, usage_dict, source):
         self.tags_path = []
@@ -178,10 +188,117 @@ class Civ4TextXMLHandler(xml.sax.ContentHandler):
         self.locator = None
         self.source = source
         self.usage_dict = usage_dict
+        self.position = PresenceSpot(PresenceSpot.XML_REFERENCE)
+        self.tag = ""
+        self.is_in_tag_capture_mode = False
+
 
     def setDocumentLocator(self, locator):
         self.locator = locator
 
+    def startElement(self, name, attributes):
+        self.tags_path.append(name)
+        if name in self.CAPTURE:
+            self.position = PresenceSpot(source= self.source,
+                                         file_name= self.file_name,
+                                         line_start= self.locator.getLineNumber())
+            self.tag = ""
+        if name in self.TAG_NAMES:
+            self.is_in_tag_capture_mode = True
+
+
+    def characters(self, content):
+        if self.is_in_tag_capture_mode:
+            self.tag += content
+
+    def endElement(self, name):
+        self.tags_path.pop()
+        if name in self.CAPTURE:
+            self.position.line_end = self.locator.getLineNumber()
+            xml_tag_usage = self.usage_dict.get(self.tag, XMLTagUsage()) #type: XMLTagUsage
+            xml_tag_usage.push_presence(self.position.source,
+                                        self.position.file_name,
+                                        self.position.line_start,
+                                        self.position.line_end)
+            self.usage_dict[self.tag] = xml_tag_usage
+        if name in self.TAG_NAMES:
+            self.is_in_tag_capture_mode = False
+
+    @property
+    def current_tag(self):
+        try:
+            return self.tags_path[-1]
+        except IndexError:
+            return None
+
+class Civ4TextXMLHandler(Civ4XMLHandler):
+
+    CAPTURE = ["TEXT"]
+    TAG_NAMES = ["Tag"]
+
+
+
+class Civ4ReferentialXMLHandler(Civ4XMLHandler):
+
+    TAG_NAMES = ["Description","ShortDescription","Civilopedia","Strategy","Adjective"]
+    CAPTURE = TAG_NAMES
+
+    def endElement(self, name):
+        self.tags_path.pop()
+        if name in self.CAPTURE:
+            self.position.line_end = self.locator.getLineNumber()
+            xml_tag_usage = self.usage_dict.get(self.tag, XMLTagUsage()) #type: XMLTagUsage
+            xml_tag_usage.push_usage(self.position.source,
+                                        self.position.file_name,
+                                        self.position.line_start)
+
+            self.usage_dict[self.tag] = xml_tag_usage
+
+        if name in self.TAG_NAMES:
+            self.is_in_tag_capture_mode = False
+
+
+def filler(extension, source):
+    """ create a function that search through the sources
+
+    :param extension:
+    :param source:
+    :return:
+    :rtype: (str, dict[str, XMLTagUsage]) -> None
+    """
+    def fill_function(my_folder, tags_presence_dict):
+        for root, dirs, file_names in os.walk(my_folder):
+            for file_name in file_names:
+                if os.path.splitext(file_name)[-1].lower() != extension: continue
+                file_name = os.path.join(root, file_name)
+                python = file(file_name)
+                fill_usage_cpp_py(python, file_name, tags_presence_dict, source)
+                python.close()
+    return fill_function
+
+
+
+fill_from_python = filler(".py", PresenceSpot.PYTHON_CODE) #type: (str, dict[str, XMLTagUsage]) -> None
+fill_from_cpp = filler(".cpp",PresenceSpot.DLL_CODE) #type: (str, dict[str, XMLTagUsage]) -> None
+
+
+def fill_from_xml(my_folder, tags_presence_dict):
+    for root, dirs, file_names in os.walk(my_folder):
+        for file_name in file_names:
+            if os.path.splitext(file_name)[-1].lower() != ".xml":
+                #print "Skip %s"%(file_name)
+                continue
+            file_name = os.path.join(root, file_name)
+            xml_file = open(file_name,"rb")
+
+            input_source = xml.sax.xmlreader.InputSource();
+            input_source.setByteStream(xml_file)
+            input_source.setEncoding("utf8")
+            handler = Civ4XMLHandler.new(file_name,tags_presence_dict)
+
+            xml.sax.parse(input_source,handler)
+
+            xml_file.close()
 
 
 if __name__ == "__main__":
@@ -197,10 +314,21 @@ if __name__ == "__main__":
 
     os.chdir("..")
 
-    for file_name in glob.glob(".\\Project Files\\DLLSources\\*.cpp"):
-        cpp = file(file_name)
-        fill_usage_cpp_py(cpp, file_name, tags_presence_dict, PresenceSpot.DLL_CODE)
-        cpp.close()
 
-    import pprint
-    pprint.pprint(tags_presence_dict)
+    fill_from_cpp(r".\Project Files\DLLSources",tags_presence_dict)
+    fill_from_python(r".\Assets\Python",tags_presence_dict)
+    fill_from_python(r".\PrivateMaps",tags_presence_dict)
+
+    fill_from_xml(r".\Assets\XML",tags_presence_dict)
+
+    from pprint import pprint
+
+    pprint(tags_presence_dict)
+
+    if False:
+        for key in tags_presence_dict:
+            value = tags_presence_dict[key]
+            if value.is_duplicated() or value.is_not_used() or value.is_missing():
+                pprint(key)
+                pprint(value)
+                print ("------")
