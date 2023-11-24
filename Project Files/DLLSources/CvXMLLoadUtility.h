@@ -308,8 +308,8 @@ private:
 	void SetGlobalClassInfo(std::vector<T*>& aInfos, const char* szTagName);
 	template <class T>
 	void LoadGlobalClassInfo(std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (char const*));
-	template <class IndexType, class T, int DEFAULT>
-	void LoadGlobalClassInfo(bool bFirst, EnumMap<IndexType, T, DEFAULT>& aInfos);
+	template <typename IndexType, class T, int DEFAULT>
+	void LoadGlobalClassInfo(XMLReadStage eStage, EnumMap<IndexType, T, DEFAULT>& em);
 
 	void SetDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfos, const char* szTagName);
 	void LoadDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (char const*));

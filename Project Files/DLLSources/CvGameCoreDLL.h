@@ -156,7 +156,7 @@ std::string GetDLLPath(bool bLoadDLLPath = true);
 #include "InfoArray.h"
 #include "EnumMap.h"
 
-#include "CvGlobals.h"
+#include "CiGlobals.h"
 
 #include "CvPlayerAI.h"
 #include "CvGameCoreUtils.h"

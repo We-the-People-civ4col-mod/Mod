@@ -508,6 +508,18 @@
     <ClCompile Include="DLLSources\CyXMLAttributes.cpp">
       <Filter>XML Editor</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CiXMLReader.cpp">
+      <Filter>Classes\XML\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CiXMLFileReader.cpp">
+      <Filter>Classes\XML\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CiGlobals.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CiInfos.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -971,6 +983,21 @@
     </ClInclude>
     <ClInclude Include="DLLSources\CyXMLAttributes.h">
       <Filter>XML Editor</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CiXMLReader.h">
+      <Filter>Classes\XML\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CiXMLFileReader.h">
+      <Filter>Classes\XML\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CiInfos.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CiGlobals.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CiGlobalsInfoContainer.h">
+      <Filter>CV\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

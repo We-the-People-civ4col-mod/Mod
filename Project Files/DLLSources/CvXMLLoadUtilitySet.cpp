@@ -18,6 +18,9 @@
 #include "CvSavegame.h"
 #include "SavegameConstants.h"
 
+#include "CiXMLFileReader.h"
+#include "CiGlobalsInfoContainer.h"
+
 // ignore type check for template functions
 // no need to be strict in this file
 DEFINE_ENUM_INT_COMPARISON(YieldTypes)
@@ -273,6 +276,7 @@ void CvXMLLoadUtility::readXMLfiles(XMLReadStage eStage)
 	PreLoadGlobalClassInfo(eStage, GC.getDenialInfo(), "CIV4DenialInfos", "BasicInfos", "Civ4DenialInfos/DenialInfos/DenialInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getInvisibleInfo(), "CIV4InvisibleInfos", "BasicInfos", "Civ4InvisibleInfos/InvisibleInfos/InvisibleInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getUnitCombatInfo(), "CIV4UnitCombatInfos", "BasicInfos", "Civ4UnitCombatInfos/UnitCombatInfos/UnitCombatInfo", NULL);
+	LoadGlobalClassInfo(eStage, GC.m_info.m_DomainTypes);
 	PreLoadGlobalClassInfo(eStage, GC.getDomainInfo(), "CIV4DomainInfos", "BasicInfos", "Civ4DomainInfos/DomainInfos/DomainInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getUnitAIInfo(), "CIV4UnitAIInfos", "BasicInfos", "Civ4UnitAIInfos/UnitAIInfos/UnitAIInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getAttitudeInfo(), "CIV4AttitudeInfos", "BasicInfos", "Civ4AttitudeInfos/AttitudeInfos/AttitudeInfo", NULL);
@@ -2308,50 +2312,41 @@ void CvXMLLoadUtility::LoadGlobalClassInfo(std::vector<T*>& aInfos, const char* 
 	}
 }
 
-template <class IndexType, class T, int DEFAULT>
-void CvXMLLoadUtility::LoadGlobalClassInfo(bool bFirst, EnumMap<IndexType, T, DEFAULT>& aInfos)
+template <typename IndexType, class T, int DEFAULT>
+void CvXMLLoadUtility::LoadGlobalClassInfo(XMLReadStage eStage, EnumMap<IndexType, T, DEFAULT>& em)
 {
-	const char * szFileRoot = xmlLocation<IndexType>::file();
-	const char* szFileDirectory = xmlLocation<IndexType>::folder();
-	const char* szXmlPath = xmlLocation<IndexType>::path();
-
-	bool bLoaded = LoadCivXml(m_pFXml, CvString::format("xml\\%s/%s.xml", szFileDirectory, szFileRoot));
-
-	if (!bLoaded)
+	CiXMLFileReader reader(em.FIRST);
+	reader.openFile();
+	if (eStage == XML_STAGE_BASIC)
 	{
-		char szMessage[1024];
-		sprintf(szMessage, "LoadXML call failed for %s.", CvString::format("%s/%s.xml", szFileDirectory, szFileRoot).GetCString());
-		gDLL->MessageBox(szMessage, "XML Load Error");
-		return;
+		reader.validate(this);
 	}
 
-	if (gDLL->getXMLIFace()->LocateNode(m_pFXml, szXmlPath))
+	CiXMLTypeContainer entry = reader.getFirstListElement();
+	for (IndexType index = em.FIRST; index <= em.LAST; ++index)
 	{
-		aInfos.allocate();
+		FAssert(entry.valid());
 
-		for (IndexType eLoopVar = aInfos.FIRST; eLoopVar <= aInfos.LAST; ++eLoopVar)
+		bool bPresent = false;
+
+		switch (eStage)
 		{
-			const bool bValidEntry = SkipToNextVal();	// skip to the next non-comment node
-
-			if (!bValidEntry)
-			{
-				// avoid a crash if last sibling is a comment
-				break;
-			}
-
-			if (bFirst)
-			{
-				aInfos.getFast(eLoopVar).CvInfoBase::read(this);
-			}
-			else
-			{
-				aInfos.getFast(eLoopVar).read(this);
-			}
-			if (!gDLL->getXMLIFace()->NextSibling(m_pFXml))
-			{
-				break;
-			}
+		case XML_STAGE_BASIC:
+			bPresent = em[index].readType(entry.getListElement());
+			break;
+		case XML_STAGE_FULL:
+			bPresent = em[index].read(entry.getListElement());
+			break;
+		case XML_STAGE_POST_SETUP:
+			bPresent = em[index].postLoadSetup(entry.getListElement());
+			break;
 		}
+		if (!bPresent)
+		{
+			return;
+		}
+
+		entry.next();
 	}
 }
 
