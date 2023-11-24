@@ -570,7 +570,6 @@ CyXMLEditor::CyXMLEditor()
 	, m_iMaxGameFontID(0)
 	, m_iActiveModFile(0)
 	, m_szKeyboard(NULL)
-	, m_pFileSpecificInfo(NULL)
 	, m_EditorInMod(false)
 {
 	m_Document = new XMLDocument;
@@ -607,7 +606,7 @@ CyXMLEditor::CyXMLEditor()
 			e = 0;
 		}
 	}
-	XMLElement * pRoot = getRoot("Files");
+	XMLElement * pRoot = m_Document->FirstChildElement()->FirstChildElement("Files");
 	FAssertMsg(pRoot != NULL, "Failed to read files in XML/Editor/EditorFiles.xml");
 	XMLElement * pElement = pRoot != NULL ? pRoot->FirstChildElement("File") : NULL;
 	while (pElement != NULL)
@@ -623,7 +622,7 @@ CyXMLEditor::CyXMLEditor()
 	}
 
 	openFile("GlobalTypes.xml", m_GlobalTypes);
-	pRoot = getRoot("Civ4Types", m_GlobalTypes);
+	pRoot = m_GlobalTypes->FirstChildElement("Civ4Types");
 	pElement = pRoot->FirstChildElement();
 	while (pElement != NULL)
 	{
@@ -653,7 +652,7 @@ CyXMLEditor::CyXMLEditor()
 	// next delete any string, which is identical to the last one
 	m_vectorDirs.erase( unique( m_vectorDirs.begin(), m_vectorDirs.end() ), m_vectorDirs.end() );
 
-	pRoot = getRoot("MaxGameFontID");
+	pRoot = m_Document->FirstChildElement()->FirstChildElement("MaxGameFontID");
 	m_iMaxGameFontID = pRoot != NULL ? pRoot->IntText() : 0;
 	FAssertMsg(m_iMaxGameFontID != 0, "Failed to read MaxGameFontID from XML/Editor/EditorFiles.xml");
 
@@ -661,7 +660,7 @@ CyXMLEditor::CyXMLEditor()
 
 	// read keys
 	openKeyboard();
-	pRoot = getRoot("keys", m_Keyboard);
+	pRoot = m_Keyboard->FirstChildElement("keys");
 	FAssertMsg(pRoot != NULL, "Corrupted keyboard xml");
 	if (pRoot != NULL)
 	{
@@ -679,8 +678,10 @@ CyXMLEditor::CyXMLEditor()
 	openFile(m_szInfoFileName, m_Info, true);
 	if (m_Info->ErrorID() != XML_SUCCESS)
 	{
-		XMLNode * pRoot = m_Info->NewElement("Tags");
-		m_Info->InsertFirstChild(pRoot);
+		tinyxml2::XMLDeclaration* Header = m_Info->NewDeclaration();
+		m_Info->InsertFirstChild(Header);
+		XMLNode * pRoot = m_Info->NewElement("root");
+		m_Info->InsertEndChild(pRoot);
 		writeFile(true);
 	}
 }
@@ -717,9 +718,11 @@ void CyXMLEditor::createEditorFiles() const
 	tinyxml2::XMLDeclaration* Header = m_Document->NewDeclaration();
 	m_Document->InsertFirstChild(Header);
 
+	tinyxml2::XMLElement* root = m_Document->NewElement("root");
+
 	// add the icons
 	tinyxml2::XMLElement* Icons = m_Document->NewElement("Icons");
-	m_Document->InsertEndChild(Icons);
+	root->InsertEndChild(Icons);
 	for (int i = 0; i < (int)(sizeof CONST_ICON_PATHS/sizeof CONST_ICON_PATHS[0]) != NULL; ++i)
 	{
 		tinyxml2::XMLElement* temp = m_Document->NewElement(CONST_ICON_PATHS[i][0]);
@@ -730,33 +733,7 @@ void CyXMLEditor::createEditorFiles() const
 	//TODO set the end automatically to match the xml
 	tinyxml2::XMLElement* GameFont = m_Document->NewElement("MaxGameFontID");
 	GameFont->SetText("8950");
-	m_Document->InsertEndChild(GameFont);
-
-	// set the languages needed
-	{
-		XMLElement *Languages = m_Document->NewElement("Languages");
-		m_Document->InsertEndChild(Languages);
-
-		Languages->InsertEndChild(m_Document->NewComment(" DefaultString is whatever string should be added for non-English strings. "));
-
-		XMLElement *Default = m_Document->NewElement("DefaultString");
-		Default->SetText("FIXME");
-		Languages->InsertEndChild(Default);
-
-		Languages->InsertEndChild(m_Document->NewComment(" List of languages to add to xml OTHER than English.                       "));
-		Languages->InsertEndChild(m_Document->NewComment(" Order matters and English is assumed to always be first.                  "));
-
-		XMLElement *LangList = m_Document->NewElement("List");
-		Languages->InsertEndChild(LangList);
-
-		for (int i = 0; LANGUAGES[i] != NULL; ++i)
-		{
-			XMLElement *lang = m_Document->NewElement(LANGUAGES[i]);
-			lang->SetText(LANGUAGES[i]);
-			LangList->InsertEndChild(lang);
-		}
-	}
-
+	root->InsertEndChild(GameFont);
 
 	// generate a list of all xml files
 	std::vector<std::string> files;
@@ -770,7 +747,7 @@ void CyXMLEditor::createEditorFiles() const
 
 	// insert the now sorted list into xml
 	tinyxml2::XMLElement* FileElement = m_Document->NewElement("Files");
-	m_Document->InsertEndChild(FileElement);
+	root->InsertEndChild(FileElement);
 
 	for (unsigned int i = 0; i < files.size(); ++i)
 	{
@@ -1251,22 +1228,6 @@ int CyXMLEditor::getFileIndex(const TCHAR* szTagName) const
 	return -1;
 }
 
-XMLElement* CyXMLEditor::getRoot(const TCHAR* szRootName, XMLDocument *pDoc) const
-{
-	XMLNode *pRoot = pDoc ? pDoc->FirstChild() : m_Document->FirstChild();
-
-	while (pRoot != NULL)
-	{
-		if (strcmp(pRoot->Value(), szRootName) == 0)
-		{
-			return pRoot->ToElement();
-		}
-		pRoot = pRoot->NextSiblingElement(szRootName);
-	}
-	FAssertMsg(false, CvString::format("Failed to find xml root %s", szRootName));
-	return NULL;
-}
-
 XMLElement* CyXMLEditor::getSchemaElement(const char *szType)
 {
 	return m_SchemaCache[szType];
@@ -1404,7 +1365,7 @@ void CyXMLEditor::setActiveFile(int iIndex)
 
 		// rebuild ElementType hash
 		m_SchemaCache.clear();
-		XMLElement *pElement = getRoot("Schema", m_Schema);
+		XMLElement *pElement = m_Schema->FirstChildElement("Schema");
 		pElement = pElement->FirstChildElement("ElementType");
 		while (pElement != NULL)
 		{
@@ -1412,14 +1373,7 @@ void CyXMLEditor::setActiveFile(int iIndex)
 			pElement = pElement->NextSiblingElement("ElementType");
 		}
 
-		// update the file specific info pointer
-		m_pFileSpecificInfo = m_Info->FirstChildElement("FileSpecific");
-		if (m_pFileSpecificInfo != NULL)
-		{
-			m_pFileSpecificInfo = m_pFileSpecificInfo->FirstChildElement(m_szFiles[iIndex]->getTag());	
-		}
-
-		m_pFileInfoRoot = m_Info->FirstChildElement(m_szFiles[iIndex]->getTag());
+		m_pFileInfoRoot = m_Info->FirstChildElement("root")->FirstChildElement(m_szFiles[iIndex]->getTag());
 		if (m_pFileInfoRoot == NULL)
 		{
 			// file not already mentioned in xml
@@ -1429,21 +1383,12 @@ void CyXMLEditor::setActiveFile(int iIndex)
 			const TCHAR* name = m_szFiles[iIndex]->getTag();
 			m_pFileInfoRoot = m_Info->NewElement(name);
 
-			tinyxml2::XMLElement* loopElement = m_Info->FirstChildElement("Tags");
-			if (loopElement != NULL)
-			{
-				loopElement = loopElement->NextSiblingElement();
-			}
-			else
-			{
-				loopElement = m_Info->FirstChildElement();
-			}
-
+			tinyxml2::XMLElement* loopElement = m_Info->FirstChildElement("root")->FirstChildElement();
 			while (true)
 			{
 				if (loopElement == NULL)
 				{
-					m_Info->InsertEndChild(m_pFileInfoRoot);
+					m_Info->FirstChildElement("root")->InsertEndChild(m_pFileInfoRoot);
 					break;
 				}
 				if (strcmp(name, loopElement->Name()) < 0)
@@ -1531,15 +1476,10 @@ xmlFileContainer* CyXMLEditor::getCurrentFileContainer() const
 	return m_szFiles[m_iActiveFile];
 }
 
+#if 0
 const TCHAR* CyXMLEditor::getInfo(const TCHAR* szTag, const TCHAR* szSetting) const
 {
 	XMLElement* pTag = NULL;
-	if (m_pFileSpecificInfo != NULL)
-	{
-		// try to use the file specific setting
-		pTag = m_pFileSpecificInfo->FirstChildElement(szTag);
-	}
-	
 	if (pTag == NULL)
 	{
 		// no file specific settings found. Try global settings
@@ -1567,38 +1507,16 @@ const TCHAR* CyXMLEditor::getInfo(const TCHAR* szTag, const TCHAR* szSetting) co
 
 	return pTag->GetText();
 }
+#endif
 
+#if 0
 void CyXMLEditor::setInfo(bool bFileSpecific, const TCHAR* szTag, const TCHAR* szType, const TCHAR* szHelp, const TCHAR* szClass, bool bAllowTypeNone, bool bRemoteCreate, bool bRemoteCreatePrefix, const TCHAR* szButtonChild)
 {
-	XMLElement* pRoot = m_Info->FirstChildElement("Tags");
+	XMLElement* pRoot = m_Info->FirstChildElement("root");
 	if (pRoot == NULL)
 	{
 		FAssertMsg(pRoot != NULL, "editor file corrupted");
 		return;
-	}
-
-	if (bFileSpecific)
-	{
-		pRoot = m_pFileSpecificInfo; // use cached pointer to file specific settings
-		if (pRoot == NULL)
-		{
-			// file specific entry doesn't exist. Create it
-			XMLElement* pNewRoot = m_Info->FirstChildElement("FileSpecific");
-			if (pNewRoot == NULL)
-			{
-				pNewRoot = m_Info->NewElement("FileSpecific");
-				insertElement(m_Info, pNewRoot, sortByValue);
-			}
-			const TCHAR* szFile = m_szFiles[m_iActiveFile]->getTag();
-			pRoot = pNewRoot->FirstChildElement(szFile);
-			if (pRoot == NULL)
-			{
-				pRoot = m_Info->NewElement(szFile);
-				insertElement(pNewRoot, pRoot, sortByValue);
-				// update cache
-				m_pFileSpecificInfo = pRoot;
-			}
-		}
 	}
 
 	XMLElement* pTag = pRoot->FirstChildElement(szTag);
@@ -1661,6 +1579,7 @@ void CyXMLEditor::setInfo(bool bFileSpecific, const TCHAR* szTag, const TCHAR* s
 	}
 	writeFile(true);
 }
+#endif
 
 int CyXMLEditor::getNumTypes(int iFile) const
 {
@@ -1948,7 +1867,7 @@ void CyXMLEditor::writeAllFiles()
 
 const TCHAR* CyXMLEditor::getIcon(const TCHAR* szIcon) const
 {
-	XMLElement *pRoot = getRoot("Icons");
+	XMLElement *pRoot = m_Document->FirstChildElement()->FirstChildElement("Icons");
 	if (pRoot != NULL)
 	{
 		XMLElement *pChild = pRoot->FirstChildElement(szIcon);
@@ -1961,6 +1880,7 @@ const TCHAR* CyXMLEditor::getIcon(const TCHAR* szIcon) const
 	return NULL;
 }
 
+#if 0
 const TCHAR* CyXMLEditor::getButtonArt(const XMLElement* pElement) const
 {
 	if (pElement == NULL)
@@ -2009,6 +1929,7 @@ const TCHAR* CyXMLEditor::getButtonArt(const XMLElement* pElement) const
 	// the code ended with something (possibly invalid), which failed to provide button art
 	return NULL;
 }
+#endif
 
 bool CyXMLEditor::isColonizationExe() const
 {
@@ -2314,24 +2235,6 @@ int CyXMLEditor::getComboFileIndex(int iFile, const TCHAR* szString) const
 //
 // private
 //
-
-XMLElement* CyXMLEditor::gotoList(int iFile, XMLDocument *pDoc)
-{
-	if (pDoc == NULL)
-	{
-		pDoc = m_Document;
-	}
-	FAssert(pDoc != NULL);
-
-	XMLElement* pRoot = getRoot(m_szFiles[iFile]->getRoot(), pDoc);
-	FAssert(pRoot != NULL);
-	CvString szString = m_szFiles[iFile]->getTag();
-	szString.append("s");
-	XMLElement* pElement = pRoot->FirstChildElement(szString);
-	pElement = pElement->FirstChildElement(m_szFiles[iFile]->getTag());
-
-	return pElement;
-}
 
 CyXMLCommandItem::CyXMLCommandItem()
 {

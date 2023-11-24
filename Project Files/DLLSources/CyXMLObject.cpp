@@ -382,13 +382,11 @@ bool CyXMLObject::allowsTypeNone() const
 bool CyXMLObject::isRemoteCreate() const
 {
 	return false;
-	return m_pEditor->getInfo(getName(), "bRemoteCreate") != NULL;
 }
 
 bool CyXMLObject::isRemoteCreatePrefix() const
 {
 	return false;
-	return m_pEditor->getInfo(getName(), "bRemoteCreatePrefix") != NULL;
 }
 
 const TCHAR* CyXMLObject::getHelp() const
@@ -596,6 +594,7 @@ void CyXMLObject::setValue(const TCHAR* szNewValue)
 
 void CyXMLObject::createRemote()
 {
+#if 0
 	// first ignore calls from entries without a type
 	const TCHAR* szTypeOfFirstElement = getParentType();
 	if (szTypeOfFirstElement == NULL)
@@ -633,6 +632,7 @@ void CyXMLObject::createRemote()
 
 	// write the newly created Type to this element
 	setValue(szNewValue.c_str());
+#endif
 }
 
 void CyXMLObject::setGameFontChar(int iNewValue)
