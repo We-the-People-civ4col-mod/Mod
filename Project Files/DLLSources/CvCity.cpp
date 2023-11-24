@@ -959,14 +959,17 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 
 	// auto traderoute - start - Nightinggale
 	case TASK_AUTO_TRADEROUTE:
-		if (iData1 == 1)
-			handleDemandedImport(iData1);
-		else if (iData1 == 2)
-			handleConstructionImport(iData1);
-
 		handleAutoTraderouteSetup(bOption, bAlt, bShift);
 		break;
-	// auto traderoute - end - Nightinggale
+	// auto traderoute - end - Nightinggale'
+
+	// bobisback import changes
+	case TASK_IMPORT_CHANGES:
+		if(bOption)
+			handleDemandedImport();
+		if(bAlt)
+			handleConstructionImport();
+		break;
 
 	case TASK_CLEAR_SPECIALTY:
 		{
@@ -12664,7 +12667,7 @@ void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoE
 	}
 }
 
-void CvCity::handleConstructionImport(int bImportAllDemanaded)
+void CvCity::handleConstructionImport()
 {
 	bool bImport = true;
 	bool bExport = isExport(YIELD_LUMBER);
@@ -12715,7 +12718,7 @@ void CvCity::handleConstructionImport(int bImportAllDemanaded)
 	doTask(TASK_YIELD_TRADEROUTE, YIELD_TOOLS, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
 }
 
-void CvCity::handleDemandedImport(int bImportAllDemanaded)
+void CvCity::handleDemandedImport()
 {
 	YieldCargoArray<int> aYields;
 	getYieldDemands(aYields);
