@@ -10031,6 +10031,7 @@
 		<German>Feindliche Militäreinheiten im eigenen Territorium</German>
 		<Italian>Nemici nel territorio</Italian>
 		<Spanish>Enemigos en territorio</Spanish>
+		<Russian>Вражеские войска на нашей территории</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HIDDEN_NATIONALITY</Tag>
@@ -10147,7 +10148,7 @@
 		<German>[ICON_BULLET]Zusätzlich %s2_txt_key_event_delay_below %d1%% Wahrscheinlichkeit für :</German>
 		<Italian>[ICON_BULLET]Inoltre %s2_txt_key_event_delay_below, %d1%% di probabilità che :</Italian>
 		<Spanish>[ICON_BULLET]Además%s2_txt_key_event_delay_below, %d1%% de probabilidad de :</Spanish>
-		<Russian>[ICON_BULLET]Кроме того%s2_txt_key_event_delay_below, %d1%% шанс для :</Russian>
+		<Russian>[ICON_BULLET]Кроме того %s2_txt_key_event_delay_below, %d1%% шанс для :</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DELAY</Tag>
@@ -10156,7 +10157,7 @@
 		<German>[ICON_BULLET]Zusätzlich %s1_txt_key_event_delay_below :</German>
 		<Italian>[ICON_BULLET]Inoltre %s1_txt_key_event_delay_below :</Italian>
 		<Spanish>[ICON_BULLET]Además%s1_txt_key_event_delay_below :</Spanish>
-		<Russian>[ICON_BULLET]Кроме того%s1_txt_key_event_delay_below :</Russian>
+		<Russian>[ICON_BULLET]Кроме того %s1_txt_key_event_delay_below :</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DELAY_TURNS</Tag>
@@ -10306,6 +10307,7 @@
 		<German>[COLOR_GREEN]Befreien[COLOR_REVERT]</German>
 		<Italian>[COLOR_GREEN]Libera[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_GREEN]Liberar[COLOR_REVERT]</Spanish>
+		<Russian>[COLOR_GREEN]освободить[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_LIBERATE</Tag>
@@ -10314,6 +10316,7 @@
 		<German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] befreien (Geschenk an [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</German>
 		<Italian>Libera [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (regalo a [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</Italian>
 		<Spanish>Liberar [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (regalo para [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</Spanish>
+		<Russian>Освободить город [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (передать [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CITY_LIBERATED</Tag>
@@ -10322,6 +10325,7 @@
 		<German>In einer großzügigen Geste hat [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] die Siedlung [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] befreit, die sich damit jetzt wieder unter der [COLOR_HIGHLIGHT_TEXT]%s3:2_civ_adjective[COLOR_REVERT] Herrschaft befindet.</German>
 		<Italian>In un momento di generosità, [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] ha liberato [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT], che è passata sotto il controllo [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT].</Italian>
 		<Spanish>En un gracioso acto de generosidad, [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] ha liberado [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT], que ha pasado a control [COLOR_HIGHLIGHT_TEXT]%s3:1_civ_adjective[COLOR_REVERT].</Spanish>
+		<Russian>Проявив неслыханную щедрость, [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] освободил окупированный город[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT], передав его под контроль [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_LIBERATION_DEMAND</Tag>
@@ -10330,6 +10334,7 @@
 		<German>Milord, die Bewohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] bitten in aller Form darum, wieder Teil des Reiches von [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT] zu werden. Eure Erlaubnis würde [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] hoch erfreuen.</German>
 		<Italian>Signore, i cittadini di [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] a buon diritto chiedono di unirsi a [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Concedendoglielo, [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] ci guarderebbe con favore.</Italian>
 		<Spanish>Excelencia, los ciudadanos de [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] piden legítimamente unirse al [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Permitírselo nos predispondría favorablemente a ojos de [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT].</Spanish>
+		<Russian>Милорд, жители города [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] хотят стать поддаными [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Если мы позволим им это сделать, [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] будет очень доволен нами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILOPEDIA_STRATEGY</Tag>

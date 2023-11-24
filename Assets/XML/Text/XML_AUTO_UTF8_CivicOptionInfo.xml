@@ -19,6 +19,7 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Spanish>
+		<Russian>Позиция по выборам</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_NATIVES</Tag>
@@ -39,6 +40,7 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Spanish>
+		<Russian>Позиция в отношении индейцев</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_RELIGION</Tag>
@@ -59,6 +61,7 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Spanish>
+		<Russian>Позиция в отношении религии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_SECURITY</Tag>
@@ -79,6 +82,7 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Spanish>
+		<Russian>Позиция по безопасности</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_SLAVERY</Tag>
@@ -99,5 +103,6 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Spanish>
+		<Russian>Позиция в отношении рабства</Russian>
 	</TEXT>
 </Civ4GameText>

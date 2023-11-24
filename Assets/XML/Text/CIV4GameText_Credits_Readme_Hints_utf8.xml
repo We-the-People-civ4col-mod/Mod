@@ -844,7 +844,7 @@ Viel Spass![NEWLINE]
 		<!--<German>Jede Kolonisteneinheit kann eine neue Siedlung errichten. Sie müssen dazu lediglich eine Einheit an den gewünschten Ort bewegen und auf "Siedlung gründen" klicken.</German>-->
 		<!--<Italian>Qualsiasi colono può costruire un nuovo insediamento. Tutto quello che devi fare è spostarlo nella posizione desiderata e premere il pulsante "Costruisci insediamento".</Italian>-->
 		<!--<Spanish>Cualquier unidad de Colonos puede construir un nuevo asentamiento. Todo lo que tenéis que hacer es trasladar una unidad al lugar deseado y pulsar el botón "Fundar asentamiento".</Spanish>-->
-		<Russian>Для основания колонии вам нужен юнит, владеющий профессией [COLOR_HIGHLIGHT_TEXT]поселенец[COLOR_REVERT]. Назначить эту профессию можно почти любому юниту в доках Европы (нужно при этом оборудование будет куплено за золото из вашей казны) или в одном из ваших поселений в Новом Свете (при условии, что требуемое оборудование есть на складе).</Russian>
+		<Russian>Для основания колонии вам нужен юнит, владеющий профессией [COLOR_HIGHLIGHT_TEXT]поселенец[COLOR_REVERT]. Назначить эту профессию можно почти любому юниту в доках Европы (нужное при этом оборудование будет куплено за золото из вашей казны) или в одном из ваших поселений в Новом Свете (при условии, что требуемое оборудование есть на складе).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_48</Tag>
