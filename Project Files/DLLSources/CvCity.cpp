@@ -961,7 +961,7 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 	case TASK_AUTO_TRADEROUTE:
 		handleAutoTraderouteSetup(bOption, bAlt, bShift);
 		break;
-	// auto traderoute - end - Nightinggale'
+	// auto traderoute - end - Nightinggale
 
 	// bobisback import changes
 	case TASK_IMPORT_CHANGES:
