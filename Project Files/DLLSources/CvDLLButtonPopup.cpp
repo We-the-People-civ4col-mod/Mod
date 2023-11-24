@@ -1210,7 +1210,6 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				bool bReset          = pPopupReturn->getButtonClicked() == 0;
 				bool bImportAll      = pPopupReturn->getButtonClicked() == 1;
 				bool bAutoExportAll  = pPopupReturn->getButtonClicked() == 2;
-
 				gDLL->sendDoTask(info.getData1(), TASK_AUTO_TRADEROUTE, 0, 0, bReset, bImportAll, bAutoExportAll, false);
 			}
 			// auto traderoute - end - Nightinggale
