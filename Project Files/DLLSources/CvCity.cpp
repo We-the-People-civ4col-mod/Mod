@@ -12662,27 +12662,6 @@ void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoE
 			}
 		}
 	}
-
-	if (bImportAll || bAutoExportAll)
-	{
-		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
-		{
-			if (GC.getYieldInfo(eYield).isExportYield())
-			{
-				bool bImport = bImportAll || isImport(eYield);
-				bool bExport = isExport(eYield);
-				bool bMaintainImport = getImportsMaintain(eYield);
-				bool bAutoExport = bAutoExportAll || isAutoExport(eYield);
-				int iMaintainLevel = getMaintainLevel(eYield);
-				int iImportLimitLevel = getImportsLimit(eYield);
-
-				int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
-				iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
-
-				doTask(TASK_YIELD_TRADEROUTE, eYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
-			}
-		}
-	}
 }
 
 void CvCity::handleConstructionImport(int bImportAllDemanaded)
