@@ -9,6 +9,15 @@
 
 #include <boost/python/class.hpp>
 
+/// xml Editor - start - Nightinggale
+#include "CyXMLEditor.h"
+#include "CyXMLObject.h"
+//void CyXMLEditorPythonInterfaceTextString(python::class_<CyXMLTextString>& x);
+void CyXMLEditorPythonInterface1(python::class_<CyXMLEditor>& x);
+void CyXMLEditorPythonObjectInterface1(python::class_<CyXMLObject>& x);
+void CyXMLEditorPythonCommandItemInterface1(python::class_<CyXMLCommandItem>& x);
+/// xml Editor - end - Nightinggale
+
 void CyCityPythonInterface1(python::class_<CyCity>& x);
 void CyCityPythonInterface2(python::class_<CyCity>& x);
 void CyCityPythonInterface3(python::class_<CyCity>& x);
@@ -54,6 +63,7 @@ void CyTradeRouteGroupPythonInterface();//R&R mod,vetiarvind, trade groups
 void CyUserSettingsPythonInterface(); // WTP
 void CyDataPythonInterface(); // WTP
 
+
 //
 //
 //
@@ -78,6 +88,20 @@ DllExport void DLLPublishToPython()
 	CyTradeRouteGroupPythonInterface();//R&R mod,vetiarvind, trade groups
 	CyUserSettingsPythonInterface(); // WTP
 	CyDataPythonInterface(); // WTP
+
+	/// xml Editor - start - Nightinggale
+	//python::class_<CyXMLTextString> xmlTextString("CyXMLTextString");
+	//CyXMLEditorPythonInterfaceTextString(xmlTextString);
+
+	python::class_<CyXMLEditor> xmlEditor("CyXMLEditor");
+	CyXMLEditorPythonInterface1(xmlEditor);
+
+	python::class_<CyXMLObject> XMLObject("CyXMLObject");
+	CyXMLEditorPythonObjectInterface1(XMLObject);
+
+	python::class_<CyXMLCommandItem> XMLCommandItem("CyXMLCommandItem");
+	CyXMLEditorPythonCommandItemInterface1(XMLCommandItem);
+	/// xml Editor - end - Nightinggale
 
 	//
 	// large interfaces which can be split across files if need be

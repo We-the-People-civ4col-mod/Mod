@@ -441,22 +441,6 @@
 	<ElementType name="DefaultPlayerColor" content="textOnly"/>
 	<ElementType name="FlagTexture" content="textOnly"/>
 	<ElementType name="ArtStyleType" content="textOnly"/>
-	<ElementType name="City" content="textOnly"/>
-	<ElementType name="Cities" content="eltOnly">
-		<element type="City" minOccurs="0" maxOccurs="*"/>
-	</ElementType>
-	<ElementType name="General" content="textOnly"/>
-	<ElementType name="Generals" content="eltOnly">
-		<element type="General" minOccurs="0" maxOccurs="*"/>
-	</ElementType>
-	<ElementType name="Admiral" content="textOnly"/>
-	<ElementType name="Admirals" content="eltOnly">
-		<element type="Admiral" minOccurs="0" maxOccurs="*"/>
-	</ElementType>
-	<ElementType name="Ship" content="textOnly"/>
-	<ElementType name="Ships" content="eltOnly">
-		<element type="Ship" minOccurs="0" maxOccurs="*"/>
-	</ElementType>
 	<ElementType name="BuildingClassType" content="textOnly"/>
 	<ElementType name="BuildingType" content="textOnly"/>
 	<ElementType name="Building" content="eltOnly">
@@ -576,10 +560,6 @@
 		<element type="iTreasure"/>
 		<element type="FavoredTerrain"/>
 		<element type="DefaultProfession"/>
-		<element type="Cities"/>
-		<element type="Generals"/>
-		<element type="Admirals"/>
-		<element type="Ships"/>
 		<element type="Buildings"/>
 		<element type="Units"/>
 		<element type="Professions"/>

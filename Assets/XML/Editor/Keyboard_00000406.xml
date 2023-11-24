@@ -1,0 +1,458 @@
+<!-- keyboard key read by Nightinggale -->
+<!-- Used to get a string from a pressed key in XML editor -->
+<!-- -->
+<!-- The approach is as follows: -->
+<!-- The key at the keycode index is used (meaning order matters) -->
+<!-- The code loops all char tags and returns the first valid -->
+<!-- char can have attributes to require keys behind held down -->
+<!-- available attributes: shift control alt -->
+<!-- If an attribute is set and the key is not pressed, then the char is skipped -->
+<!-- if an attribute is not set, it's valid regardless of the key being pressed or not -->
+<!-- Setting an attribute to not pressed is not possible. Control this with order of chars instead -->
+<!-- Some characters can't be written/read as a single character. -->
+<!-- To add those, write a keyword instead. -->
+<!-- Available keywords: -->
+<!-- space: adds a space -->
+<!-- delete: removes the last character from a string -->
+<keys>
+    <key>
+        <enum>KB_NONE</enum>
+    </key>
+    <key>
+        <enum>KB_ESCAPE</enum>
+    </key>
+    <key>
+        <enum>KB_0</enum>
+        <char shift="1">=</char>
+        <char control="1" alt="1">}</char>
+        <char>0</char>
+    </key>
+    <key>
+        <enum>KB_1</enum>
+        <char shift="1" control="1" alt="1">¡</char>
+        <char shift="1">!</char>
+        <char>1</char>
+    </key>
+    <key>
+        <enum>KB_2</enum>
+        <char shift="1">"</char>
+        <char control="1" alt="1">@</char>
+        <char>2</char>
+    </key>
+    <key>
+        <enum>KB_3</enum>
+        <char shift="1">#</char>
+        <char>3</char>
+    </key>
+    <key>
+        <enum>KB_4</enum>
+        <char shift="1">$</char>
+        <char>4</char>
+    </key>
+    <key>
+        <enum>KB_5</enum>
+        <char shift="1">%</char>
+        <char>5</char>
+    </key>
+    <key>
+        <enum>KB_6</enum>
+        <char shift="1">&amp;</char>
+        <char>6</char>
+    </key>
+    <key>
+        <enum>KB_7</enum>
+        <char shift="1" control="1" alt="1">\</char>
+        <char shift="1">/</char>
+        <char control="1" alt="1">{</char>
+        <char>7</char>
+    </key>
+    <key>
+        <enum>KB_8</enum>
+        <char shift="1">(</char>
+        <char control="1" alt="1">[</char>
+        <char>8</char>
+    </key>
+    <key>
+        <enum>KB_9</enum>
+        <char shift="1">)</char>
+        <char control="1" alt="1">]</char>
+        <char>9</char>
+    </key>
+    <key>
+        <enum>KB_MINUS</enum>
+        <char shift="1">_</char>
+        <char>-</char>
+    </key>
+    <key>
+        <enum>KB_A</enum>
+        <char shift="1">A</char>
+        <char>a</char>
+    </key>
+    <key>
+        <enum>KB_B</enum>
+        <char shift="1">B</char>
+        <char>b</char>
+    </key>
+    <key>
+        <enum>KB_C</enum>
+        <char shift="1">C</char>
+        <char>c</char>
+    </key>
+    <key>
+        <enum>KB_D</enum>
+        <char shift="1">D</char>
+        <char>d</char>
+    </key>
+    <key>
+        <enum>KB_E</enum>
+        <char shift="1">E</char>
+        <char>e</char>
+    </key>
+    <key>
+        <enum>KB_F</enum>
+        <char shift="1">F</char>
+        <char>f</char>
+    </key>
+    <key>
+        <enum>KB_G</enum>
+        <char shift="1">G</char>
+        <char>g</char>
+    </key>
+    <key>
+        <enum>KB_H</enum>
+        <char shift="1">H</char>
+        <char>h</char>
+    </key>
+    <key>
+        <enum>KB_I</enum>
+        <char shift="1">I</char>
+        <char>i</char>
+    </key>
+    <key>
+        <enum>KB_J</enum>
+        <char shift="1">J</char>
+        <char>j</char>
+    </key>
+    <key>
+        <enum>KB_K</enum>
+        <char shift="1">K</char>
+        <char>k</char>
+    </key>
+    <key>
+        <enum>KB_L</enum>
+        <char shift="1">L</char>
+        <char>l</char>
+    </key>
+    <key>
+        <enum>KB_M</enum>
+        <char shift="1">M</char>
+        <char control="1" alt="1">µ</char>
+        <char>m</char>
+    </key>
+    <key>
+        <enum>KB_N</enum>
+        <char shift="1">N</char>
+        <char>n</char>
+    </key>
+    <key>
+        <enum>KB_O</enum>
+        <char shift="1">O</char>
+        <char>o</char>
+    </key>
+    <key>
+        <enum>KB_P</enum>
+        <char shift="1">P</char>
+        <char>p</char>
+    </key>
+    <key>
+        <enum>KB_Q</enum>
+        <char shift="1">Q</char>
+        <char control="1" alt="1">°</char>
+        <char>q</char>
+    </key>
+    <key>
+        <enum>KB_R</enum>
+        <char shift="1">R</char>
+        <char>r</char>
+    </key>
+    <key>
+        <enum>KB_S</enum>
+        <char shift="1">S</char>
+        <char control="1" alt="1">ß</char>
+        <char>s</char>
+    </key>
+    <key>
+        <enum>KB_T</enum>
+        <char shift="1">T</char>
+        <char>t</char>
+    </key>
+    <key>
+        <enum>KB_U</enum>
+        <char shift="1">U</char>
+        <char>u</char>
+    </key>
+    <key>
+        <enum>KB_V</enum>
+        <char shift="1">V</char>
+        <char>v</char>
+    </key>
+    <key>
+        <enum>KB_W</enum>
+        <char shift="1">W</char>
+        <char>w</char>
+    </key>
+    <key>
+        <enum>KB_X</enum>
+        <char shift="1">X</char>
+        <char>x</char>
+    </key>
+    <key>
+        <enum>KB_Y</enum>
+        <char shift="1">Y</char>
+        <char>y</char>
+    </key>
+    <key>
+        <enum>KB_Z</enum>
+        <char shift="1">Z</char>
+        <char>z</char>
+    </key>
+    <key>
+        <enum>KB_EQUALS</enum>
+        <char shift="1" control="1" alt="1">±</char>
+        <char shift="1">?</char>
+        <char>+</char>
+    </key>
+    <key>
+        <enum>KB_BACKSPACE</enum>
+        <char>delete</char>
+    </key>
+    <key>
+        <enum>KB_TAB</enum>
+    </key>
+    <key>
+        <enum>KB_LBRACKET</enum>
+        <char control="1" alt="1">|</char>
+        <char>`</char>
+    </key>
+    <key>
+        <enum>KB_RBRACKET</enum>
+        <char shift="1">Å</char>
+        <char>å</char>
+    </key>
+    <key>
+        <enum>KB_RETURN</enum>
+        <char>[NEWLINE]</char>
+    </key>
+    <key>
+        <enum>KB_LCONTROL</enum>
+    </key>
+    <key>
+        <enum>KB_SEMICOLON</enum>
+        <char shift="1">^</char>
+        <char control="1" alt="1">~</char>
+        <char>¨</char>
+    </key>
+    <key>
+        <enum>KB_APOSTROPHE</enum>
+        <char shift="1">Ø</char>
+        <char>ø</char>
+    </key>
+    <key>
+        <enum>KB_GRAVE</enum>
+        <char shift="1">Æ</char>
+        <char>æ</char>
+    </key>
+    <key>
+        <enum>KB_LSHIFT</enum>
+    </key>
+    <key>
+        <enum>KB_BACKSLASH</enum>
+        <char control="1" alt="1">§</char>
+    </key>
+    <key>
+        <enum>KB_COMMA</enum>
+        <char shift="1">;</char>
+        <char control="1" alt="1">&lt;</char>
+        <char>,</char>
+    </key>
+    <key>
+        <enum>KB_PERIOD</enum>
+        <char shift="1">:</char>
+        <char control="1" alt="1">&gt;</char>
+        <char>.</char>
+    </key>
+    <key>
+        <enum>KB_SLASH</enum>
+        <char shift="1">*</char>
+        <char>'</char>
+    </key>
+    <key>
+        <enum>KB_RSHIFT</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPADSTAR</enum>
+    </key>
+    <key>
+        <enum>KB_LALT</enum>
+    </key>
+    <key>
+        <enum>KB_SPACE</enum>
+        <char alt="1">[NEWLINE]</char>
+        <char alt="1">delete front</char>
+        <char>space</char>
+    </key>
+    <key>
+        <enum>KB_CAPSLOCK</enum>
+    </key>
+    <key>
+        <enum>KB_F1</enum>
+    </key>
+    <key>
+        <enum>KB_F2</enum>
+    </key>
+    <key>
+        <enum>KB_F3</enum>
+    </key>
+    <key>
+        <enum>KB_F4</enum>
+    </key>
+    <key>
+        <enum>KB_F5</enum>
+    </key>
+    <key>
+        <enum>KB_F6</enum>
+    </key>
+    <key>
+        <enum>KB_F7</enum>
+    </key>
+    <key>
+        <enum>KB_F8</enum>
+    </key>
+    <key>
+        <enum>KB_F9</enum>
+    </key>
+    <key>
+        <enum>KB_F10</enum>
+    </key>
+    <key>
+        <enum>KB_F11</enum>
+    </key>
+    <key>
+        <enum>KB_F12</enum>
+    </key>
+    <key>
+        <enum>KB_NUMLOCK</enum>
+    </key>
+    <key>
+        <enum>KB_SCROLL</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPAD0</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPAD1</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPAD2</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPAD3</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPAD4</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPAD5</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPAD6</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPAD7</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPAD8</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPAD9</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPADMINUS</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPADPLUS</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPADPERIOD</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPADEQUALS</enum>
+    </key>
+    <key>
+        <enum>KB_AT</enum>
+    </key>
+    <key>
+        <enum>KB_UNDERLINE</enum>
+    </key>
+    <key>
+        <enum>KB_COLON</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPADENTER</enum>
+    </key>
+    <key>
+        <enum>KB_RCONTROL</enum>
+    </key>
+    <key>
+        <enum>KB_VOLUMEDOWN</enum>
+    </key>
+    <key>
+        <enum>KB_VOLUMEUP</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPADCOMMA</enum>
+    </key>
+    <key>
+        <enum>KB_NUMPADSLASH</enum>
+    </key>
+    <key>
+        <enum>KB_SYSRQ</enum>
+    </key>
+    <key>
+        <enum>KB_RALT</enum>
+    </key>
+    <key>
+        <enum>KB_PAUSE</enum>
+    </key>
+    <key>
+        <enum>KB_HOME</enum>
+    </key>
+    <key>
+        <enum>KB_UP</enum>
+    </key>
+    <key>
+        <enum>KB_PGUP</enum>
+    </key>
+    <key>
+        <enum>KB_LEFT</enum>
+    </key>
+    <key>
+        <enum>KB_RIGHT</enum>
+    </key>
+    <key>
+        <enum>KB_END</enum>
+    </key>
+    <key>
+        <enum>KB_DOWN</enum>
+    </key>
+    <key>
+        <enum>KB_PGDN</enum>
+    </key>
+    <key>
+        <enum>KB_INSERT</enum>
+    </key>
+    <key>
+        <enum>KB_DELETE</enum>
+        <char>delete front</char>
+    </key>
+</keys>

@@ -2771,7 +2771,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_GRAVEYARDS</Tag>
-		<English>Milord, the church requests that we build graveyards in at least five cities to bury dead citizens. We are promised that also priests will then be sent to hold funeral ceremonies.</English>
+		<English>Milord, the church requests that we build graveyards in at least five cities. The church will then send priests to hold funeral services for our dead citizens.</English>
 		<French>Sire, l'église demande que nous construisions des cimetières dans cinq villes pour y enterrer nos morts. Il nous a été promis que des prêtres nous seraient envoyés pour mener les funérailles.</French>
 		<German>Milord, die Kirche verlangt, dass wir in mindestens fünf Städten Friedhöfe bauen, um tote Bürger zu begraben. Uns wurde versprochen, dass dann auch Priester für die Beerdigungen geschickt werden.</German>
 		<Russian>Милорд, церковь требует, чтобы мы построили кладбища как минимум в пяти городах для захоронения умерших граждан. Нам обещают, что потом будут присланы священники для совершения похоронных обрядов.</Russian>
@@ -2841,7 +2841,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_BAKERIES</Tag>
-		<English>Of course we shall ensure that the brave men guarding our cities shall be well provisioned.</English>
+		<English>Of course we shall ensure that the brave men guarding our cities are well provisioned.</English>
 		<French>Bien sûr, nous allons nous assurer que les hommes courageux gardant nos villes aient les meilleures rations.</French>
 		<German>Selbstverständlich werden wir sicherstellen, dass die mutigen Männer, die unsere Städte bewachen gut versorgt sind.</German>
 		<Russian>Конечно, мы позаботимся о том, чтобы храбрецы, охраняющие наши города, были хорошо обеспечены.</Russian>
@@ -2855,7 +2855,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS</Tag>
-		<English>Milord, some Hessian mercenaries are looking for a new contract. But they include a strange demand that they will only work for the country with the best sausages. Maybe if we build butcheries in five of our cities we could convince them to come to us.</English>
+		<English>Milord, some Hessian mercenaries are looking for a new contract. They include a strange demand that they will only work for the country with the best sausages. Maybe if we build butcheries in five of our cities we could convince them to come to us.</English>
 		<French>Sire, des mercenaires de Hesse recherchent un nouveau contrat. Mais parmi leurs conditions, ils souhaitent travailler pour le pays avec les meilleures saucisses. Peut-être que si nous construisons des boucheries dans cinq de nos villes, nous pourrons les convaincre de nous rejoindre</French>
 		<German>Milord, einige hessische Söldner suchen nach einem neuen Auftrag. Aber sie stellen die seltsame Bedingung dass sie nur für das Land mit den besten Würsten arbeiten wollen. Vielleicht können wir sie davon überzeugen zu uns zu kommen indem wir in fünf unserer Städte Schlachtereien errichten.</German>
 		<Russian>Милорд, несколько гессенских наемников ищут новый контракт. Но включают странное требование, что они будут работать только на страну с лучшими колбасами. Может быть, если мы построим дома мясников в пяти наших городах, мы сможем убедить их прийти к нам.</Russian>
@@ -2953,7 +2953,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_OPERA_DONE</Tag>
-		<English>Milord, you've built an opera before any other colony could. Famous entertainers from Europe want to come and play in it.</English>
+		<English>Milord, you've built an opera before any other colony could. Famous entertainers from Europe now want to come here to perform.</English>
 		<French>Sire, vous avez été le premier à construire un opéra. Des artistes célèbres d'Europe veulent venir y jouer.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen eine Oper errichten. Berühmte Schauspieler aus Europa wollen nun darin auftreten.</German>
 		<Russian>Милорд, мы построили оперу раньше любой другой колониальной державы. Известные артисты из Европы уже присылают свои заявки на выступление в ней.</Russian>
@@ -2974,7 +2974,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_OPERA_DONE_1</Tag>
-		<English>We are looking forward to see the first performances in our new Opera.</English>
+		<English>We are looking forward to see the first performances in our new opera.</English>
 		<French>Nous attendons avec impatience les premières représentations dans notre nouvel Opéra.</French>
 		<German>Wir freuen uns bereits auf die ersten Aufführungen in unserer neuen Oper.</German>
 		<Russian>С нетерпением ждем первых спектаклей в нашей новой опере.</Russian>
@@ -3051,7 +3051,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_COLONIAL_CONGRESS</Tag>
-		<English>We shall establish a Colonial Congress as central political institution in the colonies.</English>
+		<English>We shall establish a Colonial Congress as the central political institution in our colonies.</English>
 		<French>Nous établirons un congrès colonual comme institution politique centrale dans nos colonies.</French>
 		<German>Wir werden einen Kolonialkongress als zentrale politische Einrichtung in den Kolonien etablieren.</German>
 		<Russian>Мы создадим Колониальный Конгресс как центральный политический институт в колониях.</Russian>
@@ -3065,7 +3065,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CUSTOM_OFFICE</Tag>
-		<English>Milord, our customs officers report that our customs system is flawed and corrupt. We lose money each day. We need to establish a Central Customs Auhtority to regulate affairs and root out such corruption. Some black market traders might end up working for us legally.</English>
+		<English>Milord, our customs officers report that our customs system is flawed and corrupt. We lose money each day. We need to establish a Central Customs Authority to regulate affairs and root out corruption. Black market traders might even end up working for us legally.</English>
 		<French>Sire, nos offciers des douanes nous rapporte que notre système de collecte actuel est corrompu et faillible. Il y a un manque à gagner énorme. Nous devons mettre en place une autorité centrale des douanes pour réguler tout ça et mettre fin aux abus. Il sera même possible de recruter des marchands qui travaillaient dans le marché  noir.</French>
 		<German>Milord, unsere Zollbeamten berichten, dass die Zollerhebung eher schlecht funktioniert und zudem korruptionsanfällig ist. Uns entgehen dadurch tagtäglich Einnahmen. Wir müssen ein Zentrales Zollamt errichten, um die Zollerhebung einheitlich zu regeln und der Korruption die Basis zu entziehen. Dann werden sich letztlich auch Schmuggler und die Verkäufer von geschmuggelter Waren der Zollerhebung nicht mehr entziehen können und ihre Abgaben abführen.</German>
 		<Russian>Милорд, наши таможенники сообщают, что наша таможенная система несовершенна и коррумпирована. Мы теряем деньги каждый день. Нам необходимо создать Центральное таможенное управление для регулирования дел и искоренения такой коррупции. Некоторые торговцы с черного рынка могут работать на нас легально.</Russian>
@@ -3170,7 +3170,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIRST_HORSE_MARKET</Tag>
-		<English>Milord, the governor of another colony has built a Grand Horse and Cattle Market before you. You've missed the chance to gain more rachers.</English>
+		<English>Milord, the governor of another colony has built a Grand Horse and Cattle Market before you. You've missed the chance to gain more ranchers.</English>
 		<French>Sire, le gouverneur d'une autre colonie a construit avant vous une grande halle aux bestiaux. Vous avez laissé passer l'occasion de faire venir des éleveurs.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Großen Viehmarkt errichten. Dadurch habt Ihr die Chance vertan, weitere Rancher zu erwerben.</German>
 		<Russian>Милорд, губернатор другой колониальной нации построил Большую скотоводческую ферму раньше нас. Мы упустили шанс получить больше скотоводов.</Russian>
@@ -3765,7 +3765,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_POLITICAL_REFUGEE</Tag>
-		<English>Milord, a chance at liberty is enough for well-educated people to leave their homes and to sail to the New Word. A university graduate wishes to join our own colony, if we will pay his passage.</English>
+		<English>Milord, a chance at liberty is enough for well-educated people to leave their homes and to sail to the New World. A university graduate wishes to join our own colony if we will pay his passage.</English>
 		<French>Seigneur, il suffit d'une chance de liberté pour que des gens instruits quittent leurs maisons et s'embarquent pour le Nouveau Monde. Un diplômé d'université souhaite rejoindre notre colonie, si nous payons son passage.</French>
 		<German>Milord, die Vorzüge der Freiheit in der Neuen Welt lassen auch die Gebildeten aufhorchen. Es heißt, dass einer dieser Studierten sich unseren Kolonien anschließen würde, wenn wir ihm die Überfahrt bezahlen.</German>
 		<Russian>Милорд, достоинства свобод Нового Света заставляют даже образованных людей задуматься о переезде. Выпускник одного университета желает присоединиться к нашим колониям, если мы оплатим его проезд.</Russian>
@@ -3779,7 +3779,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WHALE_OIL_COOKER</Tag>
-		<English>Milord, whaling along our coasts promises high profits. In Europe our merchant vessel recently picked up a master train oil cooker, who wants to start a new life in the colonies. Shall we engage him?</English>
+		<English>Milord, whaling along our coasts promises high profits. In Europe our merchant vessel recently picked up a master train oil cooker who wants to start a new life in the colonies. Shall we hire him?</English>
 		<French>Seigneur, la chasse à la baleine le long de nos côtes promet de gros profits. En Europe, notre navire marchand a récemment recueilli un maître cuiseur d'huile de train, qui veut commencer une nouvelle vie dans les colonies. Devons-nous l'engager ?</French>
 		<German>Milord, der Walfang vor unseren Küsten würde gute Gewinne versprechen. Wie es der Zufall will, hat der Kapitän eines Handelsschiffes in Europa einen Meister-Trankocher an Bord genommen, der hier ein neues Leben beginnen möchte. Sollen wir im eine Anstellung geben?</German>
 		<Russian>Милорд, китобойный промысел у наших берегов сулит большие прибыли. В Европе наше торговое судно недавно подобрало мастера вытопки ворвани, который хочет начать новую жизнь в колониях. Давайте наймём его?</Russian>
@@ -4233,7 +4233,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SELL_AFRICAN_SLAVE</Tag>
-		<English>Milord, a recently deceased plantation owner left a will, in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever. They intend to sell the slaves to the highest bidder. Should we intervene? Be warned! Setting slaves free will be unpopular with the European settlers.</English>
+		<English>Milord, a recently deceased plantation owner left a will in which he desires all of his African slaves be freed. No sooner had he passed away than a gang of bounty hunters arrived and put the poor people in chains. They say the planter was delirious with fever. They intend to sell the slaves to the highest bidder. Should we intervene? Be warned! Setting slaves free will be unpopular with the European settlers.</English>
 		<French>Seigneur, un propriétaire de plantation récemment décédé, a laissé un testament dans lequel il souhaite que tous ses esclaves africains soient libérés. A peine est-il décédé qu'une bande de chasseurs de primes arrive et enchaîne les pauvres gens. Ils disent que le planteur délirait de la fièvre. Ils ont l'intention de vendre les esclaves au plus offrant. Devons-nous intervenir ? Soyez avertis ! Libérer les esclaves sera impopulaire auprès des colons européens.</French>
 		<German>Milord, ein im Sterben liegender Plantagenbesitzer hat in seinem letzten Willen verfügt, dass seine schwarzen Sklaven aus der Sklaverei entlassen werden sollen. Kurz nachdem er verstarb, sind jedoch Sklaveneintreiber erschienen und haben seine Sklaven in Ketten gelegt. Sie behaupten, dass der alte Mann nicht mehr Herr seiner Sinne gewesen sei und wollen die Sklaven an den Höchstbietenden verkaufen. Sollen wir hier eingreifen?</German>
 		<Russian>Милорд, недавно умерший владелец плантации оставил завещание, в котором желает, чтобы все его африканские рабы были освобождены. Едва он скончался, как прибыла банда охотников за головами и заковала несчастных в цепи. Говорят, плантатор был в бреду от лихорадки. Они намерены продать рабов тому, кто предложит самую высокую цену. Должны ли мы вмешаться? Однако, имейте в виду - освобождение рабов не понравится европейским поселенцам!</Russian>
@@ -4415,7 +4415,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Tag>
-		<English>For the Glory and Wealth of the motherland! Higher market prices are always welcome!</English>
+		<English>For the glory and wealth of the motherland! Higher market prices are always welcome!</English>
 		<French>Pour la gloire et la fortune de la patrie! Des prix plus élevés sont toujours les bienvenus</French>
 		<German>Für Ruhm und Reichtum des Heimatlandes! Höhere Verkaufspreise sind immer willkommen!</German>
 		<Russian>Да здравствует Король! Всегда готовы выполнить любой приказ Вашего Величества!</Russian>
@@ -4506,7 +4506,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_14</Tag>
-		<English>For the Glory and Wealth of our colonies! Higher market prices are always welcome!</English>
+		<English>For the glory and wealth of our colonies! Higher market prices are always welcome!</English>
 		<French>Pour la gloire et la richesse de nos colonies! Des prix plus élevés sont toujours bons à prendre.</French>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
 		<Russian>Во славу и богатство наших колоний! Более высокие рыночные цены всегда приветствуются!</Russian>
@@ -4534,7 +4534,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_PRICE_AND_ATTITUDE_HELP</Tag>
-		<English>The quality of our goods has impressed the peaple in Africa.[NEWLINE]His Majesty is delighted. Demand for colonial goods is rising.</English>
+		<English>The quality of our goods has impressed the people in Africa.[NEWLINE]His Majesty is delighted. Demand for colonial goods is rising.</English>
 		<French>La qualité de nos biens a impressionné les peuples d'Afrique.[NEWLINE] Sa Majesté est ravie. La demande de biens coloniaux est en hausse.</French>
 		<German>Die Menschen in Afrika sind von der Qualität unsere Kolonialwaren begeistert.[NEWLINE]Seine Majestät ist hocherfreut. Die Nachfrage nach unseren Waren steigt.</German>
 		<Russian>Качество наших товаров произвело впечатление на жителей Африки.[NEWLINE]Его Величество в восторге. Спрос на колониальные товары растет.</Russian>
@@ -4632,49 +4632,49 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ECCENTRIC_ARCHITECT</Tag>
-		<English>There are rumors that his Majesty has sent an experienced architect to your colonies in order to support the development of the colonies.</English>
+		<English>There are rumours that his Majesty has sent an experienced architect to your colonies in order to support the development of the colonies.</English>
 		<French>Il paraitrait que sa Majesté a envoyé un architecte expérimenté dans vos colonies afin d'aider à les bâtir.</French>
 		<German>Es heißt, der König habe zur Förderung der Entwicklung seiner Kolonien in der Neuen Welt einen Architekten nach [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] entsandt.</German>
 		<Russian>Ходят слухи, что Его Величество направил в наши колонии опытного архитектора, чтобы поддержать их развитие.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ECCENTRIC_ARCHITECT</Tag>
-		<English>Sir, the number of colonies you manage in the New World is growing steadily, but the construction is not going fast enough. His Majesty has therefore decided to send a very experienced architect of the highest repute to the colonies to support the construction work of the colonies.</English>
+		<English>Sir, the number of colonies you manage in the New World is growing steadily, but construction is not going fast enough. His Majesty has therefore decided to send us an architect with an international reputation to oversee the construction work.</English>
 		<French>Sire, le nombre de colonies que vous gérez dans le nouveau monde croît à allure régulière, mais le bâtiment ne suit pas assez vite. Sa Majesté a donc décidé de vous envoyer un architecte très expérimenté et jouissant de la meilleure réputation pour aider à la construction au sein des colonies. </French>
 		<German>Sir, die Anzahl der Kolonien in der Neuen Welt wächst stetig, aber der Aufbau geht nicht schnell genug voran. Seine Majestät hat daher entschieden, einen erfahrenen Architekten mit höchstem Ansehen in die Kolonien zu entsenden, um den Aufbau voranzutreiben.</German>
 		<Russian>Милорд, количество управляемых вами колоний в Новом Свете неуклонно растёт, но строительство идёт недостаточно быстро. Поэтому Его Величество решил прислать к нам опытного архитектора с самой высокой репутацией для поддержки строительных работ в колониях.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF</Tag>
-		<English>A rumour is spreading that the bailiffs are in the colonies looking for a for an architect in debt.</English>
+		<English>A rumour is spreading that the bailiffs are in the colonies looking for an indebted architect.</English>
 		<French>Une rumeur veut que des huissiers venus d'Europe sont à la recherche d'un architecte perclus de dettes.</French>
 		<German>Es heißt die Büttel sind in den Kolonien auf der Suche nach einem verschuldeten Architekten.</German>
 		<Russian>Ходят слухи, что судебные приставы объявили в розыск архитектора-должника.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_1</Tag>
-		<English>Milord, the architect we recently accepted into our colony, is doing a good job. Unfortunately, there is also a catch. Apparently, he has made enemies in Europe and gotten himself heavily into debt. The bailiffs have heard that he is working for us and are now comb through our colonies from north to south. They demand that we pay the whole sum immediately, otherwise the man will face the debtors' prison and be brought back to Europe in disgrace.</English>
+		<English>Milord, the architect we recently hired for our colony does a good job, but there's a catch. He's made enemies in Europe and gotten himself heavily into debt. The bailiffs heard he's working for us here in our colonies. They demand that we pay the whole sum immediately. Otherwise they'll take him back to Europe in disgrace to face debtors' prison.</English>
 		<French>Sire, l'architecte que nous avons accueilli récemment fait du très bon travail. Hélas, il est venu avec des ennuis. Apparemment il s'est fait des ennemis en Europe et s'est retrouvé lourdement endetté. Les huissiers ont entendu qu'il travaille pour notre compte et passent nos colonies au peigne fin du nord au sud. Ils exigent que nous payions immédiatement toute sa dette, sinon ils ramènent l'homme pieds et poings liés en Europe pour y faite de la prison pour dettes.</French>
 		<German>Milord, der Architekt, den wir kürzlich in unsere Kolonie aufgenommen haben, leistet gute Arbeit. Leider hat das Ganze auch einen Haken. Offenbar hat er sich in der Alten Welt Feinde gemacht und sich hoch verschuldet. Die Büttel haben gehört, dass er für uns arbeitet und durchsuchen unsere Kolonien von Nord nach Süd. Sie verlangen, dass wir die ganze Summe sogleich bezahlen, ansonsten droht dem Mann der Schuldturm und man wird ihn in Schande nach Europa zurückbringen.</German>
 		<Russian>Милорд, архитектор, который недавно принехал к нам, хорошо справляется со своей работой. Однако, есть одна проблема: он по уши в долгах, с которыми не может расплатиться. Приставы прослышали, что он работает на нас и теперь прочесывают наши колонии вдоль и поперёк. Они требуют, чтобы мы незамедлительно выплатили всю сумму долга, иначе мужчине грозит долговая тюрьма и его с позором вернут в Европу, как только найдут.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_PAY</Tag>
-		<English>Darn it and sew it up, I knew there was a catch when we took him in. The letter of recommendation was too generously worded. Still, we can't leave him hanging. Pay the bailiffs and then hopefully the grass will grow over the matter. But keep quiet about it, the king should not know that we helped the man.</English>
+		<English>Hell's bells, I knew there was a catch when we took him in. That letter of recommendation was too generously worded. Still, we can't leave him hanging. Pay the bailiffs and hopefully in time it will be forgotten. Keep quiet about it. The King must never know we helped the man.</English>
 		<French>Misère de misère, je savais qu'il y avait un os avec lui. La lettre de recommandation était trop fleurie pour être honnête. On ne peut pourtant pas le laisser tomber. Payez les huissiers et espérons que de l'eau coule sous les ponts. Restez discrets, le roi ne doit rien savoir à ce sujet.</French>
 		<German>Verflixt und zugenäht, ich wusste da war ein Haken, als wir ihn aufnahmen. Das Empfehlungsschreiben war allzu großzügig abgefasst. Dennoch, wir können ihn nicht hängen lassen. Bezahlt die Büttel und dann wächst hoffentlich Gras über die Sache. Aber schweigt darüber, der König sollte nicht erfahren, dass wir dem Mann geholfen haben.</German>
 		<Russian>Три тысячи чертей, я чувствовал, что здесь что-то не чисто, когда мы его брали! Рекомендательные письма были слишком хороши! Тем не менее, мы не можем лишиться такого ценного сотрудника. Заплатите судебным приставам и будем надеяться, что об этом скоро забудут. Но прошу вас - никому не слова. И уж тем более Король не должен знать, что мы помогли этому человеку.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_NEGOTIATE</Tag>
-		<English>It's really maddening. Let's try to negotiate with the bailiffs first. Let's offer them half of what the architect owes.</English>
+		<English>It's really maddening. Try to negotiate with the bailiffs first. Let's offer them half of what the architect owes.</English>
 		<French>Jarnicoton. Essayions de négocier avec les huissiers. Offrons-leur la moitié de ce que doit cet architecte</French>
 		<German>Verd...ach, man soll ja nicht fluchen. Aber es ist doch wirklich zum verrückt werden. Versuchen wir erst einmal mit den Halunken zu verhandeln. Bieten wir ihnen die Hälfte von dem was der Architekt ihnen schuldet.</German>
 		<Russian>Дьявол... Что же, давайте попробуем договориться с судебными приставами. Предложите им половину того, что должен архитектор и будем надеяться, их аппетиты не вырастут.</Russian>
 	</TEXT> 
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_REFUSE</Tag>
-		<English>Aha, that would have been too good to be true. But this is a free colony and everyone should be happy here - his old misdemeanors should be forgiven. Call the guard and scare away this rabble. We will not hand over this faithful servant of our progress just like that.</English>
+		<English>Aha, that would have been too good to be true. Still, this is a free colony and everyone deserves to be happy here. What happened in Europe stays in Europe. Call the guard and scare away these pests. We won't hand over such a talented planner just like that.</English>
 		<French>C'était donc trop beau pour être vrai. Mais nous sommes une colonie libre et tout le monde doit être heureux ici - ses écarts passés doivent être pardonnés. Appelez la garde et virez-moi ces chiens. Nous ne leur livrerons pas notre fidèle serviteur dans le progrès sur un coup de tête.</French>
 		<German>Aha, wäre ja auch zu schön gewesen. Aber dies ist eine freie Kolonie und jeder soll hier glücklich werden - seine Altlasten seien ihm vergeben. Ruft die Wache und verscheucht dieses Pack. Wir liefern diesen treuen Diener unseres Fortschritts nicht einfach so aus.</German>
 		<Russian>Я так и знал, что этот старый прохвост доставит нам хлопот. Но в Новом Свете мы строим новое общество и ошибки прошлого должны быть забыты. Прикажите охране вышвырнуть этих ищеек с нашей территории. Мы никому не отдадим верного слугу нашего прогресса.</Russian>
@@ -4695,21 +4695,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_FINALLY</Tag>
-		<English>Milord, it didn't help that we fobbed off the bailiffs with half the debt. They are back and want to collect the rest of the debt. What do we do now?</English>
+		<English>Milord, it didn't help that we fobbed off the bailiffs by paying half the debt. They're back to collect the rest of it. What do we do now?</English>
 		<French>Sire, esquiver en payant la moitié de la dette aux huissiers n'a pas suffi. Ils reviennent à la charge et veulent le reste. Que faire ?</French>
 		<German>Milord, es hat nichts genutzt, dass wir die Büttel mit der Hälfte der Schulden abgespeist haben. Sie sind wieder da und wollen den Rest der Schulden eintreiben. Was machen wir jetzt?</German>
 		<Russian>То, что мы отдали приставам половину долга, не помогло. Они хотят получить оставшуюся часть денег. Что будем делать, Милорд?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_FINAL_PAY</Tag>
-		<English>All right, then maybe they'll finally give it a rest. People are already talking on the streets. Pay out the money and then chase them away.</English>
+		<English>All right, pay up and maybe they'll finally give it a rest. People are already talking on the streets. Pay the money and then chase them away.</English>
 		<French>Très bien, dans ce cas ils laisseront en paix. Ca commence déjà à jaser dans les rues. Payons leur le reste et chassez-les de chez nous.</French>
 		<German>Also gut, dann geben sie vielleicht endlich Ruhe. Auf der Straße wird schon geredet. Zahlt das Geld aus und dann jagt sie fort.</German>
 		<Russian>Вот негодяи, мы же договорились!.. Ай, чего уж там, отдайте им недостающую сумму и проследите, чтобы они как можно скорее покинули колонии.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_FINAL_REFUSE</Tag>
-		<English>It's really maddening. Let's try to negotiate with the bailiffs first. Let's offer them half of what the architect owes.</English>
+		<English>It's really maddening. Let's try to negotiate with the bailiffs first. Offer half of what the architect owes.</English>
 		<French>C'est de la folie, cette histoire. On va essayer de négocier avec les huissiers. On va leur offrir la moitié de ce que l'architecte leur doit.</French>
 		<German>Jetzt reicht es uns aber. Noch mehr bekommen sie nicht! Unser Geldbeutel bleibt geschlossen. Mobilisiert die Milz!</German>	 
 		<Russian>Ах вот как?! Они не получат ни цента! Надо проучить этих наглецов - соберите ополченцев!</Russian>
@@ -4723,35 +4723,35 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE</Tag>
-		<English>The wife of an officer has apparently once too much cheated on her husband. The husband - an officer of our garrison - thinks that this can be solved only in one way. He has challenged the other man of honor to a duel.</English>
+		<English>The wife of one of our officers has apparently cheated on her husband, who says this can be solved only in one way. He has challenged his rival to a duel of honour.</English>
 		<French>La femme d'un officier a décidé de batifoler avec un autre une fois de trop. Le mari - un officier de notre garnison - pense qu'il n'y a plus qu'une solution. Il a provoqué l'autre homme d'honneur en duel</French>
 		<German>Milord, die Ehefrau eines Offiziers hat offenbar einmal zu viel mit einem anderen angebandelt. Der Ehemann - ein Offizier unserer Garnison - meint, dass kann nur auf eine Weise aus der Welt geschafft werden. Er hat den anderen Ehrenmann zum Duell gefordert.</German>
 		<Russian>В одной из наших колоний молодой офицер уличил свою жену в неверности и считает, что решить эту проблему можно только одним способом - дуэль чести!</Russian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_1</Tag>
-		<English>A duel? How wonderful, we haven't had that for a long time! I will second.</English>
+		<English>A duel? How wonderful! We haven't had one for a long time! I will offer myself as second.</English>
 		<French>Un duel ? Merveilleux, on n'en a pas eu depuis longtemps ! Je vais servir de témoins.</French>
 		<German>Ein Duell? Wie wunderbar, das hatten wir schon lange nicht mehr! Ich werde sekundieren.</German>
 		<Russian>Дуэль? Как здорово, давно у нас такого не было! Я буду секундантом.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_2</Tag>
-		<English>Lord in heaven! Duels are also forbidden in the coloniescountry.</English>
+		<English>Lord in heaven! Duels are forbidden in this colony.</English>
 		<French>Dieu du ciel ! Les duels sont prohibés.</French>
 		<German>Herr im Himmel! Duelle sind auch hier zulande verboten.</German>
 		<Russian>Господи! Какая дуэль? Они же запрещены!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICER_DUEL_HELP</Tag>
-		<English>[ICON_BULLET]The duelists shoot wildly. There are injured among the spectators.</English>
+		<English>[ICON_BULLET]The duelists are terrible shots and accidentally injure two spectators.</English>
 		<French>[ICON_BULLET]Les duellistes tirent à tout-va. Il y a des blessés dans la foule.</French>
 		<German>[ICON_BULLET]Die Duellanten schießen wild um sich. Es gibt Verletzte unter den Zuschauern.</German>
 		<Russian>[ICON_BULLET]Беспорядочная стрельба дуэлянтов. Есть пострадавшие среди зрителей.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICER_NODUEL_HELP</Tag>
-		<English>[ICON_BULLET]The people are upset that they miss such a spectacle.</English>
+		<English>[ICON_BULLET]The people are upset about missing such a spectacle.</English>
 		<French>[ICON_BULLET]Les gens sont déçus de rater un tel spectacle</French>
 		<German>[ICON_BULLET]Die Bevölkerung ist wütend um so ein Spektakel gebracht zu werden.</German>
 		<Russian>[ICON_BULLET]Люди расстроены тем, что пропустили такое зрелище.</Russian>
@@ -4765,7 +4765,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_AFTERDUEL</Tag>
-		<English>Milord, now that the wounded have recovered from the duel and the bullet wounds have healed, the doctor can again devote his full attention to the normal infirmities and diseases of the colony.</English>
+		<English>Milord, now that the bullet wounds from the duel have been patched up the doctor can redirect his full attention to the usual infirmities and diseases of the colony.</English>
 		<French>Sire, les blessés suite au duel ont guéri de leurs blessures par balle. Le docteur qui les soignait peut se consacrer à nouveau aux maladies et tracas du quotiden de la colonie.</French>
 		<German>Milord, nachdem sich die Verletzten von dem Duell erholt haben und die Schusswunden verheilt sind, kann sich der Arzt nun wieder vollständig den normalen Gebrechen und Krankheiten der Kolonie widmen.</German>
 		<Russian>Милорд. Теперь, когда раненые оправились от ран, полученных на дуэли, доктор снова может полностью посвятить себя лечению обычных недугов и болезней колонии.</Russian>
@@ -4786,14 +4786,14 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_ASSIGNMENT</Tag>
-		<English>Milord, there is unrest in the city because you have forbidden the duel. The situation will not calm down until you transfer the officer and his horny wife to a quiet outpost.</English>
+		<English>Milord, there is unrest in the city because you have forbidden the duel. The situation will not calm down until you transfer the officer and his wayward wife to a quiet outpost.</English>
 		<French>Sire, il y a de l'agitation en ville suite à l'interdiction du duel. La situation ne se tassera pas tant que vous n'écarterez pas cet officier et sa femme insatiable dans un poste reculé.</French>
 		<German>Milord, es gibt Unruhen in der Stadt, weil ihr das Duell verboten habt. Die Lage wird sich erst beruhigen, wenn ihr den Offizier samt seiner umtriebigen Ehefrau zu einem ruhigen Außenposten versetzt.</German>
 		<Russian>Милорд, в городе беспорядки после запрещения дуэлей. Для спокойствия горожан есть смысл отправить офицера вместе с его похотливой жёнушкой на одну из наших отдалённых застав.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_ASSIGNMENT</Tag>
-		<English>I confirm. Hopefully, the officer will then have enough time to take care of his service as well as his wife.</English>
+		<English>I agree. Hopefully the officer will finally have the time to attend to his duties instead of just spying on his wife.</English>
 		<French>Je confirme. J'espère que l'officier trouvera assez de temps pour s'occuper de sa mission et de son épouse.</French>
 		<German>Ja, es lässt sich wohl nicht ändern. Der Offizier hat dann hoffentlich genug Zeit, sich um seinen Dienst und seine Frau zu kümmern.</German>
 		<Russian>Согласен. Для всех нас это будет благом.</Russian>
@@ -4807,42 +4807,42 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_ARRIVAL</Tag>
-		<English>My lord, we have received a message that the officer you transferred because of his horny wife has arrived at the fort safe and sound. He can begin his duties there immediately.</English>
+		<English>My lord, we've received word that the officer you transferred because of his amorous wife has arrived at the fort safe and sound. He can begin his duties there immediately.</English>
 		<French>Sire, nous avons reçu une lettre selon laquelle l'officier que vous avez muté suite aux aventure de sa femme est arrivé sain et sauf au fort. Il peut prendre son service immédiatement.</French>
 		<German>Milord, wir haben Nachricht erhalten, dass der Offizier, den ihr wg. seiner umtriebigen Ehefrau versetzt habt, wohlbehalten im Fort angekommen ist. Er kann dort gleich seinen Dienst antreten.</German>
 		<Russian>Милорд, мы получили сообщение, что офицер, которого вы перевели из-за скандальной дуэли в отдалённый форт, прибыл на место.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_ARRIVAL</Tag>
-		<English>Thank you. Hopefully, that will get him and his horny wife rid of trouble. Hopefully he won't fight a duel with all the other officers.</English>
+		<English>Thank you. That should get him and his troublesome wife out of the way. Hopefully he won't try to fight duels with all the other officers.</English>
 		<French>$Merci. J'espère que cela évitera des tentations à lui et et à sa femme, et qu'il ne provoquera pas en duel tous les autres officiers.</French>
 		<German>Ich danke Euch. Das wird ihm und seiner Frau hoffentlich die Flausen austreiben. Hoffentlich duelliert er sich nicht mit sämtlichen anderen Offizieren. Die Herren Offiziere sind da ja sehr speziell.</German>
 		<Russian>Спасибо. Будем надеяться, что это избавит его и его похотливую жену от неприятностей.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICER_ARRIVAL_AT_FORT_HELP</Tag>
-		<English>[ICON_BULLET]The Officer takes up duty.</English>
+		<English>[ICON_BULLET]The officer shows up for duty.</English>
 		<French>[ICON_BULLET]L'officier prend su service.</French>
 		<German>[ICON_BULLET]Der Offizier nimmt seinen Dienst auf.</German>
 		<Russian>[ICON_BULLET]Офицер приступает к исполнению своих обязанностей.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_UPGRADE</Tag>
-		<English>Through hard work and good service, the pioneers upgraded the fort.</English>
+		<English>Through hard work and good service, the pioneers have upgraded the fort.</English>
 		<French>Les pionniers améliorent le fort en se livrant à la tâche avec zèle et ardeur.</French>
 		<German>Durch harte Arbeit und guten Dienst haben die Pioniere ein Fort ausgebaut.</German>
 		<Russian>Благодаря упорному труду и хорошей службе Первопроходцы улучшили форт.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_UPGRADE</Tag>
-		<English>My lord, it seems we have made the right decision. The officer - you remember, the one with the horny wife - is doing an excellent job and has ensured that the fort has been expanded and better fortified.</English>
+		<English>My lord, it seems we made the right decision. The officer - you remember, the one with the wayward wife - is doing an excellent job seeing that the fort expands with better defences.</English>
 		<French>Sire, nous avons pris la bonne décision. L'officier - vous savez, celui avec l'épouse insatiable - fait un excellent travail et s'assure que le fort est agrandi et renforcé.</French>
 		<German>Milord, es scheint wir haben die richtige Entscheidung getroffen. Der Offizier - ihr erinnert euch, der mit der umtriebigen Ehefrau - leistet hervorragende Arbeit und hat dafür gesorgt, dass das Fort ausgebaut und besser befestigt wurde.</German>
 		<Russian>Милорд, кажется, мы приняли правильное решение. Офицер, помните тот, у которого была похотливая жёнушка, отлично справляется со своей работой и позаботился о том, чтобы форт был расширен и лучше укреплен.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_UPGRADE</Tag>
-		<English>It seems that the man will become a good officer after all. I always say it: the wilderness makes real guys out of the boys.</English>
+		<English>That man is becoming a good officer after all. I always say it: the wilderness turns boys into men.</English>
 		<French>On dirait que cet homme deviendra un bon offcier après tout. Je l'ai toujours dit : la nature sauvage forme de vrais hommes de nos recrues.</French>
 		<German>Es scheint, als würde aus dem Mann doch noch ein guter Offizier werden. Ich sage es ja immer: Die Wildniss macht aus den Jungens echte Kerle.</German>
 		<Russian>Похоже, из этого парня выйдет хороший офицер. Я всегда говорил: дикая природа делает из мальчиков настоящих мужчин.</Russian>

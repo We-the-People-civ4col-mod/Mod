@@ -21,6 +21,10 @@
 #include "CvDLLInterfaceIFaceBase.h"
 #include "OpenURL.h"
 
+/// xml Editor - start - Nightinggale
+#include "CyXMLEditor.h"
+/// xml Editor - end - Nightinggale
+
 CyGlobalContext::CyGlobalContext()
 {
 }
@@ -557,3 +561,10 @@ void CyGlobalContext::openReadme(std::string section)
 		OpenURL::openReadme();
 	}
 }
+
+/// xml Editor - start - Nightinggale
+CyXMLEditor* CyGlobalContext::getxmlEditor() const
+{
+	return new CyXMLEditor;
+}
+/// xml Editor - end - Nightinggale

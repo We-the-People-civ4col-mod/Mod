@@ -254,6 +254,21 @@
 		<WidgetType>WIDGET_HELP_SHOW_OR_HIDE_YIELDS</WidgetType>
 		<WidgetType>WIDGET_HELP_TAX_CALCULATION</WidgetType>
 		<WidgetType>WIDGET_HELP_DOMESTIC_DEMAND_ADVISOR</WidgetType>
+
+		<!-- xml editor start -->
+		<WidgetType>WIDGET_XML_EDITOR</WidgetType>
+		<WidgetType>WIDGET_XML_EDITOR_BOX</WidgetType>
+		<WidgetType>WIDGET_XML_OK</WidgetType>
+		<WidgetType>WIDGET_XML_CANCEL</WidgetType>
+		<WidgetType>WIDGET_XML_DELETE</WidgetType>
+		<WidgetType>WIDGET_XML_CLONE</WidgetType>
+		<WidgetType>WIDGET_XML_MENU_ITEM</WidgetType>
+		<!-- needs to be in order down, zero, up because it makes widget - zero = +1 (up) or -1 (down) -->
+		<WidgetType>WIDGET_XML_DOWN</WidgetType>
+		<WidgetType>WIDGET_XML_ZERO</WidgetType>
+		<WidgetType>WIDGET_XML_UP</WidgetType>
+		<!-- xml editor end -->
+
 	</WidgetTypes>
 	<FontSymbols>
 		<FontSymbol>HAPPY_CHAR</FontSymbol>
