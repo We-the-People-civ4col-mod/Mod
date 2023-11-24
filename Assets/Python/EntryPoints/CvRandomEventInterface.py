@@ -1886,7 +1886,7 @@ def CheckLandmark(argsList):
 	eEvent = argsList[0]
 	kTriggeredData = argsList[1]
 	event = gc.getEventInfo(eEvent)
-	szLandmark = "TXT_KEY_"+event.getType()+"_LANDMARK"
+	szLandmark = "TXT_KEY_%s_LANDMARK"%(event.getType())
 	for i in range (CyEngine().getNumSigns()):
 		Sign = CyEngine().getSignByIndex(i)
 		if (Sign.getPlot().getX() == kTriggeredData.iPlotX and Sign.getPlot().getY() == kTriggeredData.iPlotY):
@@ -1898,7 +1898,7 @@ def SetLandmark(argsList):
 	kTriggeredData = argsList[1]
 	event = gc.getEventInfo(eEvent)
 	if GlobalDefines.SHOW_LANDMARKS == 1:
-		szLandmark = "TXT_KEY_"+event.getType()+"_LANDMARK"
+		szLandmark = "TXT_KEY_%s_LANDMARK"%(event.getType())
 		plot = gc.getMap().plot(kTriggeredData.iPlotX,  kTriggeredData.iPlotY)
 		CyEngine().addSign(plot, -1, szLandmark)
 
