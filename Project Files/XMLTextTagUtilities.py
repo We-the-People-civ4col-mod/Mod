@@ -3,7 +3,7 @@ import xml.sax
 import xml.sax.handler
 import xml.sax.xmlreader
 import re
-import glob
+import sys
 import os.path
 
 
@@ -302,8 +302,10 @@ def fill_from_xml(my_folder, tags_presence_dict):
             input_source.setByteStream(xml_file)
             input_source.setEncoding("utf8")
             handler = Civ4XMLHandler.new(file_name,tags_presence_dict)
-
-            xml.sax.parse(input_source,handler)
+            try:
+                xml.sax.parse(input_source,handler)
+            except xml.sax.SAXParseException:
+                sys.stderr.write("Could not parse %s !\r\n"%file_name)
 
             xml_file.close()
 
