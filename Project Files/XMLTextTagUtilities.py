@@ -244,7 +244,7 @@ class Civ4ReferentialXMLHandler(Civ4XMLHandler):
 
     TAG_NAMES = ["Description","ShortDescription",
                  "Civilopedia","Strategy","Adjective","Text",
-                 "HeaderKey","BodyTextKey"]
+                 "HeaderTextKey","BodyTextKey"]
     CAPTURE = TAG_NAMES
 
     def endElement(self, name):
@@ -333,11 +333,25 @@ if __name__ == "__main__":
     from pprint import pprint
     full_dict = open("full_dict.txt","wb")
     pprint(tags_presence_dict, stream=full_dict)
+    full_dict.close()
 
-
+    duplicate = open("duplicate.txt","wb")
+    missing = open("missing.txt","wb")
+    notused = open("not_used.txt","wb")
     for key in tags_presence_dict:
         value = tags_presence_dict[key]
-        if value.is_not_used() or value.is_missing():
-            pprint(key)
-            pprint(value)
-            print ("------")
+        if value.is_duplicated():
+            pprint(key, stream= duplicate)
+            pprint(value, stream= duplicate)
+            pprint ("------",  stream= duplicate )
+        if value.is_missing():
+            pprint(key, stream= missing)
+            pprint(value, stream= missing)
+            pprint ("------", stream=missing)
+        if value.is_not_used():
+            pprint(key, stream= notused)
+            pprint(value, stream= notused)
+            pprint ("------", stream= notused)
+    duplicate.close()
+    missing.close()
+    notused.close()
