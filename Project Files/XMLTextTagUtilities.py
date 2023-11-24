@@ -102,7 +102,9 @@ class XMLTagUsage(object):
         return not self.__presence_list and self.__usage_list
 
     def is_not_used(self):
-        return self.__presence_list and not self.__usage_list
+        return self.__presence_list and\
+            not self.__usage_list and \
+            self.__presence_list[0].source != PresenceSpot.TEXT_TAG_CIVS_VARS
 
     def __repr__(self):
         return  "P: "+self.__presence_list.__repr__()+", "\
@@ -240,13 +242,18 @@ class Civ4TextXMLHandler(Civ4XMLHandler):
 
 class Civ4ReferentialXMLHandler(Civ4XMLHandler):
 
-    TAG_NAMES = ["Description","ShortDescription","Civilopedia","Strategy","Adjective"]
+    TAG_NAMES = ["Description","ShortDescription",
+                 "Civilopedia","Strategy","Adjective","Text",
+                 "HeaderKey","BodyTextKey"]
     CAPTURE = TAG_NAMES
 
     def endElement(self, name):
         self.tags_path.pop()
         if name in self.CAPTURE:
             self.position.line_end = self.locator.getLineNumber()
+            starts_with = ["TXT_KEY" ,"AI_DIPLO"]
+            if not True in [self.tag.startswith(name) for name in starts_with]:
+                return
             xml_tag_usage = self.usage_dict.get(self.tag, XMLTagUsage()) #type: XMLTagUsage
             xml_tag_usage.push_usage(self.position.source,
                                         self.position.file_name,
@@ -322,13 +329,13 @@ if __name__ == "__main__":
     fill_from_xml(r".\Assets\XML",tags_presence_dict)
 
     from pprint import pprint
+    full_dict = open("full_dict.txt","wb")
+    pprint(tags_presence_dict, stream=full_dict)
 
-    pprint(tags_presence_dict)
 
-    if False:
-        for key in tags_presence_dict:
-            value = tags_presence_dict[key]
-            if value.is_duplicated() or value.is_not_used() or value.is_missing():
-                pprint(key)
-                pprint(value)
-                print ("------")
+    for key in tags_presence_dict:
+        value = tags_presence_dict[key]
+        if value.is_not_used() or value.is_missing():
+            pprint(key)
+            pprint(value)
+            print ("------")
