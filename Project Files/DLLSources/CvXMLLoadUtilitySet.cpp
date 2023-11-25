@@ -1442,6 +1442,7 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	readXMLfiles(XML_STAGE_FULL);
 	readXMLfiles(XML_STAGE_POST_SETUP);
 	GC.postXMLLoad(false);
+	CiXMLFileReader::clearCache(); // we are done reading xml files now
 	/// XML type preloading - end - Nightinggale
 
 	/// xml verification
@@ -2316,7 +2317,6 @@ template <typename IndexType, class T, int DEFAULT>
 void CvXMLLoadUtility::LoadGlobalClassInfo(XMLReadStage eStage, EnumMap<IndexType, T, DEFAULT>& em)
 {
 	CiXMLFileReader reader(em.FIRST);
-	reader.openFile();
 	if (eStage == XML_STAGE_BASIC)
 	{
 		reader.validate(this);

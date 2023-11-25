@@ -2,6 +2,109 @@
 #include "CiXMLFileReader.h"
 #include "CvXMLLoadUtility.h"
 
+class XMLCache;
+
+extern XMLCache* XML_CACHE_HANDLER;
+
+struct XMLCacheContainerEntry
+{
+	XMLCacheContainerEntry(CvString name) : m_name(name) {}
+	tinyxml2::XMLError openFile()
+	{
+		std::string fullPath = GetDLLPath(true);
+		fullPath.append("/XML/");
+		fullPath.append(m_name);
+
+		tinyxml2::XMLError error = m_doc.LoadFile(fullPath.c_str());
+		if (error != tinyxml2::XML_SUCCESS)
+		{
+			fullPath = "Assets/XML/";
+			fullPath.append(m_name);
+			error = m_doc.LoadFile(fullPath.c_str());
+			FAssertMsg(error == tinyxml2::XML_SUCCESS, CvString::format("Failed to open file: %s", m_name.c_str()));
+		}
+		return error;
+	}
+
+	XMLCacheContainerEntry(const XMLCacheContainerEntry& original)
+	{
+		m_name = original.m_name;
+	}
+
+	XMLCacheContainerEntry& operator = (const XMLCacheContainerEntry& original)
+	{
+		m_name = original.m_name;
+		return *this;
+	}
+
+
+	CvString m_name;
+	tinyxml2::XMLDocument m_doc;
+};
+
+class XMLCacheContainer
+{
+public:
+	bool getFile(CvString filename, tinyxml2::XMLDocument*& doc)
+	{
+		for (unsigned i = 0; i < m_vector.size(); ++i)
+		{
+			if (filename == m_vector[i].m_name)
+			{
+				doc = &m_vector[i].m_doc;
+				return true;
+			}
+		}
+		m_vector.push_back(XMLCacheContainerEntry(filename));
+		doc = &m_vector[m_vector.size()-1].m_doc;
+		m_vector[m_vector.size() - 1].openFile();
+		return false;
+	}
+protected:
+	std::vector<XMLCacheContainerEntry> m_vector;
+};
+
+
+
+class XMLCache
+{
+public:
+	const tinyxml2::XMLDocument* getFile(CvString filename)
+	{
+		tinyxml2::XMLDocument* pFile;
+		m_files.getFile(filename, pFile);
+		return pFile;
+	}
+	const tinyxml2::XMLDocument* getSchema(CvString filename)
+	{
+		tinyxml2::XMLDocument* pFile;
+		bool bHasBeenSetUp = m_schema.getFile(filename, pFile);
+		if (!bHasBeenSetUp)
+		{
+			tinyxml2::XMLElement* m_pSchemaRoot = pFile->FirstChildElement("Schema");
+			for (tinyxml2::XMLElement* element = m_pSchemaRoot->FirstChildElement("ElementType"); element != NULL; element = element->NextSiblingElement("ElementType"))
+			{
+				element->SetName(element->Attribute("name"));
+			}
+		}
+		return pFile;
+	}
+
+
+protected:
+	XMLCacheContainer m_files;
+	XMLCacheContainer m_schema;
+};
+
+//
+// ---------------------------------
+//            end of cache
+// ---------------------------------
+//
+
+
+
+
 CiXMLTypeContainer::CiXMLTypeContainer(const CiXMLFileReader& Reader)
 	: m_Reader(Reader)
 	, m_pElement(Reader.getFirstElement())
@@ -80,11 +183,17 @@ CiXMLFileReader::~CiXMLFileReader()
 
 void CiXMLFileReader::openFile()
 {
+	if (XML_CACHE_HANDLER == NULL)
+	{
+		// start the cache if it's not already started
+		XML_CACHE_HANDLER = new XMLCache;
+	}
+	
 	const char *path = m_FileNameHolder->getFileName();
-	tinyxml2::XMLError error = openFile(m_File, path);
-	FAssertMsg(error == tinyxml2::XML_SUCCESS, CvString::format("XML error: couldn't read %s", path).c_str());
+	m_pFile = XML_CACHE_HANDLER->getFile(path);
+	FAssert(m_pFile != NULL);
 
-	for (m_pRoot = m_File.FirstChildElement(); m_pRoot != NULL; m_pRoot = m_pRoot->NextSiblingElement())
+	for (m_pRoot = m_pFile->FirstChildElement(); m_pRoot != NULL; m_pRoot = m_pRoot->NextSiblingElement())
 	{
 		m_xmlns = m_pRoot->Attribute("xmlns");
 		if (m_xmlns != NULL)
@@ -95,17 +204,11 @@ void CiXMLFileReader::openFile()
 
 	std::string schemaStr = getPath(path);
 	schemaStr.append(m_xmlns + 9);
-	error = openFile(m_Schema, schemaStr.c_str());
-	FAssertMsg(error == tinyxml2::XML_SUCCESS, CvString::format("XML error: couldn't read schema %s", schemaStr.c_str()).c_str());
-	m_pSchemaRoot = m_Schema.FirstChildElement("Schema");
+	m_pSchema = XML_CACHE_HANDLER->getSchema(schemaStr);
+	FAssert(m_pSchema != NULL);
 
-	// now we play a little dirty. Rename all ElementType to whatever is in the name attribute
-	// this way m_SchemapRoot->FirstChildElement(name) can be used to get the schema for a specific name and avoid looping in our code to locate an attribute
-	for (tinyxml2::XMLElement* element = m_pSchemaRoot->FirstChildElement("ElementType"); element != NULL; element = element->NextSiblingElement("ElementType"))
-	{
-		element->SetName(element->Attribute("name"));
-	}
-	
+	m_pSchemaRoot = m_pSchema->FirstChildElement("Schema");
+	FAssert(m_pSchemaRoot != NULL);
 }
 
 void CiXMLFileReader::validate(CvXMLLoadUtility* pUtility) const
@@ -123,22 +226,6 @@ void CiXMLFileReader::validate(CvXMLLoadUtility* pUtility) const
 	}
 }
 
-tinyxml2::XMLError CiXMLFileReader::openFile(tinyxml2::XMLDocument& doc, const char *path)
-{
-	std::string fullPath = GetDLLPath(true);
-	fullPath.append("/XML/");
-	fullPath.append(path);
-
-	tinyxml2::XMLError error = doc.LoadFile(fullPath.c_str());
-	if (error != tinyxml2::XML_SUCCESS)
-	{
-		fullPath = "Assets/XML/";
-		fullPath.append(path);
-		error = doc.LoadFile(fullPath.c_str());
-	}
-	return error;
-}
-
 int CiXMLFileReader::getNumTypes() const
 {
 	int iCount = 0;
@@ -154,6 +241,11 @@ CiXMLTypeContainer CiXMLFileReader::getFirstListElement() const
 	return CiXMLTypeContainer(*this);
 }
 
+
+void CiXMLFileReader::clearCache()
+{
+	SAFE_DELETE(XML_CACHE_HANDLER);
+}
 
 const tinyxml2::XMLElement* CiXMLFileReader::getFirstElement() const
 {

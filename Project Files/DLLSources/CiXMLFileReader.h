@@ -46,29 +46,33 @@ class CiXMLFileReader
 	friend class CiXMLTypeContainer;
 public:
 	template<typename T>
-	CiXMLFileReader(T var) { m_FileNameHolder = new CiXMLFileNameHolder<T>(); }
+	CiXMLFileReader(T var) 
+		: m_pFile(NULL)
+		, m_pSchema(NULL)
+		, m_pRoot(NULL)
+		, m_pSchemaRoot(NULL)
+	{ m_FileNameHolder = new CiXMLFileNameHolder<T>(); openFile();  }
 	~CiXMLFileReader();
-
-	void openFile();
 
 	void validate(CvXMLLoadUtility* pUtility) const;
 
 	int getNumTypes() const;
 
-	// warning: CiXMLReader can't be used after the parent CiXMLFileReader goes out of scope
-	//CiXMLReader getFirstListElement() const;
+	// warning: CiXMLTypeContainer and any CiXMLReader it spawns can't be used after clearCache is called
 	CiXMLTypeContainer getFirstListElement() const;
 
+	// remove the cached files to free up memory
+	static void clearCache();
+
 private:
+	void openFile();
 	const tinyxml2::XMLElement* getFirstElement() const;
 
-	tinyxml2::XMLError openFile(tinyxml2::XMLDocument& doc, const char *path);
+	const tinyxml2::XMLDocument* m_pFile;
+	const tinyxml2::XMLDocument* m_pSchema;
 
-	tinyxml2::XMLDocument m_File;
-	tinyxml2::XMLDocument m_Schema;
-
-	tinyxml2::XMLElement* m_pRoot;
-	tinyxml2::XMLElement* m_pSchemaRoot;
+	const tinyxml2::XMLElement* m_pRoot;
+	const tinyxml2::XMLElement* m_pSchemaRoot;
 	const char* m_xmlns;
 
 	CiXMLFileNameHolderBase* m_FileNameHolder;
