@@ -8,55 +8,57 @@ extern XMLCache* XML_CACHE_HANDLER;
 
 struct XMLCacheContainerEntry
 {
-	XMLCacheContainerEntry(CvString name) : m_name(name) {}
+	XMLCacheContainerEntry(CvString name) 
+		: m_name(name)
+		, m_pDoc(new tinyxml2::XMLDocument())
+	{}
+
 	tinyxml2::XMLError openFile()
 	{
 		std::string fullPath = GetDLLPath(true);
 		fullPath.append("/XML/");
 		fullPath.append(m_name);
 
-		tinyxml2::XMLError error = m_doc.LoadFile(fullPath.c_str());
+		tinyxml2::XMLError error = m_pDoc->LoadFile(fullPath.c_str());
 		if (error != tinyxml2::XML_SUCCESS)
 		{
 			fullPath = "Assets/XML/";
 			fullPath.append(m_name);
-			error = m_doc.LoadFile(fullPath.c_str());
+			error = m_pDoc->LoadFile(fullPath.c_str());
 			FAssertMsg(error == tinyxml2::XML_SUCCESS, CvString::format("Failed to open file: %s", m_name.c_str()));
 		}
 		return error;
 	}
 
-	XMLCacheContainerEntry(const XMLCacheContainerEntry& original)
-	{
-		m_name = original.m_name;
-	}
-
-	XMLCacheContainerEntry& operator = (const XMLCacheContainerEntry& original)
-	{
-		m_name = original.m_name;
-		return *this;
-	}
-
-
 	CvString m_name;
-	tinyxml2::XMLDocument m_doc;
+	tinyxml2::XMLDocument* m_pDoc; // warning: do not free this pointer. Doing so will mess up when the vector size increase
 };
 
 class XMLCacheContainer
 {
 public:
+	~XMLCacheContainer()
+	{
+		// free m_pDoc as XMLCacheContainerEntry is not able to do it itself
+		// this is (partly?) due to missing std::move
+		for (unsigned int i = 0; i < m_vector.size(); ++i)
+		{
+			SAFE_DELETE(m_vector[i].m_pDoc);
+		}
+	}
+
 	bool getFile(CvString filename, tinyxml2::XMLDocument*& doc)
 	{
 		for (unsigned i = 0; i < m_vector.size(); ++i)
 		{
 			if (filename == m_vector[i].m_name)
 			{
-				doc = &m_vector[i].m_doc;
+				doc = m_vector[i].m_pDoc;
 				return true;
 			}
 		}
 		m_vector.push_back(XMLCacheContainerEntry(filename));
-		doc = &m_vector[m_vector.size()-1].m_doc;
+		doc = m_vector[m_vector.size()-1].m_pDoc;
 		m_vector[m_vector.size() - 1].openFile();
 		return false;
 	}
@@ -201,6 +203,8 @@ void CiXMLFileReader::openFile()
 			break;
 		}
 	}
+	FAssert(m_pRoot != NULL);
+	FAssert(m_xmlns != NULL);
 
 	std::string schemaStr = getPath(path);
 	schemaStr.append(m_xmlns + 9);
