@@ -4,6 +4,7 @@
 
 struct CiGlobalsInfoContainer;
 
+class CiCivCategoryInfo;
 class CiDomainInfo;
 
 class CiGlobals : public CvGlobals
@@ -14,6 +15,7 @@ public:
 
 	static CiGlobals& getInstance();
 
+	const CiCivCategoryInfo& getInfo(CivCategoryTypes eCategory) const;
 	const CiDomainInfo& getInfo(DomainTypes eDomain) const;
 
 

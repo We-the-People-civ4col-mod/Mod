@@ -640,4 +640,11 @@
 	<ElementType name="Civ4AlarmInfos" content="eltOnly">
 		<element type="AlarmInfos"/>
 	</ElementType>
+	<ElementType name="CivCategoryInfo" content="eltOnly">
+		<element type="Type"/>
+		<element type="eCivEffect"/>
+	</ElementType>
+	<ElementType name="CivCategoryInfos" content="eltOnly">
+		<element type="CivCategoryInfo" maxOccurs="*"/>
+	</ElementType>
 </Schema>

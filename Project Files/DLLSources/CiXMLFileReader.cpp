@@ -268,6 +268,12 @@ const tinyxml2::XMLElement* CiXMLFileReader::getFirstElement() const
 	return NULL;
 }
 
+
+const char* CiXMLFileNameHolder<CivCategoryTypes>::getFileName() const
+{
+	return "Civilizations/CivCategoryInfos.xml";
+}
+
 const char* CiXMLFileNameHolder<DomainTypes>::getFileName() const
 {
 	return "BasicInfos/CIV4DomainInfos.xml";

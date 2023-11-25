@@ -66,3 +66,13 @@ class CiDomainInfo : public DiInfoBaseTypeDesc
 {
 };
 
+class CiCivCategoryInfo : public DiInfoBaseTypeDesc
+{
+public:
+	CiCivCategoryInfo();
+	bool read(CiXMLReader& reader);
+
+	CivEffectTypes getCivEffect() const;
+protected:
+	CivEffectTypes m_eCivEffect;
+};

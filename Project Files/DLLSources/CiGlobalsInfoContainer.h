@@ -9,5 +9,6 @@
 
 struct CiGlobalsInfoContainer
 {
+	EnumMap< CivCategoryTypes, CiCivCategoryInfo> m_CivCategoryTypes;
 	EnumMap<DomainTypes, CiDomainInfo> m_DomainTypes;
 };

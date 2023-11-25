@@ -276,6 +276,7 @@ void CvXMLLoadUtility::readXMLfiles(XMLReadStage eStage)
 	PreLoadGlobalClassInfo(eStage, GC.getDenialInfo(), "CIV4DenialInfos", "BasicInfos", "Civ4DenialInfos/DenialInfos/DenialInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getInvisibleInfo(), "CIV4InvisibleInfos", "BasicInfos", "Civ4InvisibleInfos/InvisibleInfos/InvisibleInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getUnitCombatInfo(), "CIV4UnitCombatInfos", "BasicInfos", "Civ4UnitCombatInfos/UnitCombatInfos/UnitCombatInfo", NULL);
+	LoadGlobalClassInfo(eStage, GC.m_info.m_CivCategoryTypes);
 	LoadGlobalClassInfo(eStage, GC.m_info.m_DomainTypes);
 	PreLoadGlobalClassInfo(eStage, GC.getDomainInfo(), "CIV4DomainInfos", "BasicInfos", "Civ4DomainInfos/DomainInfos/DomainInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getUnitAIInfo(), "CIV4UnitAIInfos", "BasicInfos", "Civ4UnitAIInfos/UnitAIInfos/UnitAIInfo", NULL);

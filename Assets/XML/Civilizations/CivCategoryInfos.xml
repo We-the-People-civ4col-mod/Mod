@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<CivCategoryInfos xmlns="x-schema:CIV4CivilizationsSchema.xml">
+	<CivCategoryInfo>
+		<Type>CIV_CATEGORY_EUROPEAN</Type>
+		<eCivEffect>CIV_EFFECT_DEFAULT_EUROPEAN</eCivEffect>
+	</CivCategoryInfo>
+	<CivCategoryInfo>
+		<Type>CIV_CATEGORY_NATIVE</Type>
+		<eCivEffect>CIV_EFFECT_DEFAULT_NATIVE</eCivEffect>
+	</CivCategoryInfo>
+	<CivCategoryInfo>
+		<Type>CIV_CATEGORY_KING</Type>
+		<eCivEffect>CIV_EFFECT_DEFAULT_KING</eCivEffect>
+	</CivCategoryInfo>
+	<CivCategoryInfo>
+		<Type>CIV_CATEGORY_BARBARIAN</Type>
+		<eCivEffect>CIV_EFFECT_DEFAULT_BARBARIAN</eCivEffect>
+	</CivCategoryInfo>
+	<CivCategoryInfo>
+		<Type>CIV_CATEGORY_CHURCH</Type>
+		<eCivEffect>CIV_EFFECT_DEFAULT_CHURCH</eCivEffect>
+	</CivCategoryInfo>
+	<CivCategoryInfo>
+		<Type>CIV_CATEGORY_NOT_SET</Type>
+		<eCivEffect>NONE</eCivEffect>
+	</CivCategoryInfo>
+</CivCategoryInfos>

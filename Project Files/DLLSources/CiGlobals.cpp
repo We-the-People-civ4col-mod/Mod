@@ -7,9 +7,13 @@ CiGlobals::CiGlobals(CiGlobalsInfoContainer& storage)
 }
 
 
+const CiCivCategoryInfo& CiGlobals::getInfo(CivCategoryTypes eCategory) const
+{
+	return m_info.m_CivCategoryTypes[eCategory];
+}
+
 const CiDomainInfo& CiGlobals::getInfo(DomainTypes eDomain) const
 {
-	//return m_info_Domain[eDomain];
 	return m_info.m_DomainTypes[eDomain];
 }
 

@@ -134,3 +134,18 @@ CvWString DiInfoBasePedia::getStrategy() const
 	return gDLL->getText(m_szSttrategy);
 }
 
+
+CiCivCategoryInfo::CiCivCategoryInfo()
+	: m_eCivEffect(NO_CIV_EFFECT)
+{}
+
+bool CiCivCategoryInfo::read(CiXMLReader& reader)
+{
+	reader.Read("eCivEffect", m_eCivEffect);
+	return true;
+}
+
+CivEffectTypes CiCivCategoryInfo::getCivEffect() const
+{
+	return m_eCivEffect;
+};
