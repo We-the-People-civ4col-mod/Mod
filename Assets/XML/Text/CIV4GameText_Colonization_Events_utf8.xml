@@ -4905,49 +4905,49 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_2</Tag>
-		<English>Go ahead and get the indians drunk. Then steal their goods, jewelry and women and send them back to where they came from.</English>
+		<English>Go ahead and get the Indians drunk. Steal their goods, jewels and women and send them back to where they came from.</English>
 		<French>Allez-y et énivrez les Indiens. Et après faites main basse sur leurs biens, leurs bijoux, leurs femmes et renvoyez-les chez eux.</French>
 		<German>Macht die Wilden ordentlich besoffen. Danach stehlt ihnen ihre Waren, den Schmuck und die Frauen und schickt sie hin wo sie hergekommen sind.</German>
 		<Russian>Эти дикари у меня уже в печёнках сидят. Но давайте развлечёмся - напоите краснокожих, отберите у них все, что найдёте и выкиньте их из города. Пусть убираются в свои дебри.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_3</Tag>
-		<English>Yes, well, ...agreed. But I do not trust the peace. Let's share some of the costs and donate them a few horses. When the indians leave, send scouts after them to explore their villages.</English>
+		<English>Yes, well, ...agreed. But I do not trust this peace. Let's share part of the costs and give them a few horses. When the Natives leave, send scouts quietly after them to explore their villages.</English>
 		<French>Et bien, .. d'accord. Mais je ne crois pas dans cette paix. On va se répartir les coûts et leur faire don de quelques chevaux. Quand les Indiens partiront, on enverra des éclaireurs les pister pour ecplorer leurs villages.</French>
 		<German>Ja, gut,... einverstanden. Ich traue dem Frieden aber nicht. Beteiligen wir uns mit einem Teil der Kosten und schenken ihnen ein paar Pferde. Wenn die Wilden wieder abziehen, schickt Ihnen Kundschafter hinterher, um ihre Dörfer zu erkunden.</German>
 		<Russian>Что же, это.. интересно. Давайте покроем часть расходов на организацию и задобрим краснокожих, подарив им несколько лошадей. А когда дикари уйдут, отправьте за ними разведчиков, чтобы они обследовали их деревни.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_HELP</Tag>
-		<English>[ICON_BULLET]The natives are furious and scalp some trader.</English>
+		<English>[ICON_BULLET]The Natives are furious. A trader has lost his scalp.</English>
 		<French>[ICON_BULLET]Les indigènes furieux décident de scalper quelques marchands.</French>
 		<German>[ICON_BULLET]Die Ureinwohner sind wütend und skalpieren einige Händler.</German>
 		<Russian>[ICON_BULLET]Разъяренные индейцы решают снять скальпы с некоторых торговцев.</Russian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_1</Tag>
-		<English>Your scout has entered a previously unnoticed native village. The natives look at you expectantly. What do you want to do?</English>
+		<English>Your scout has entered a previously unknown Native village. The people there look at him expectantly. What should he do?</English>
 		<French>Votre éclaireur est entré dans un village indigène ignoré jusqu'à présent. Les habitants vous regardent dans l'expectative. Que faites-vous? </French>
 		<German>Euer Scout hat ein bisher unbeachtet gebliebenes Dorf der Ureinwohner betreten. Die Ureinwohner blicken Euch erwartungsvoll an. Was wollt Ihr tun?</German>
 		<Russian>Наш разведчик обнаружил деревню индейцев, о которой раньше никто не сообщал. Туземцы не предпринимают никаких действий, заняв выжидательную позицию. Что будем делать?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_2</Tag>
-		<English>Your scout has stumbled unawares into a native indian camp. Here you are apparently the intruder. They look at you skeptically, but not hostilely. The village is preparing for a feast, do you want to stay?</English>
+		<English>Your scout has stumbled unaware into a large Native camp. He feels like an intruder. They look at him sceptically, but without hostility. The village is preparing for a feast. Should he stay?</English>
 		<French>Votre scout est entré dans un camp des Indiens. Ils vous prennent pour un intrus. Ils vous regardent avec méfiance mais sans hostilité. Le village se prépare à une fête, vouslez vous rester? </French>
 		<German>Euer Scout ist unversehens in ein Lager der Ureinwohner gestolpert. Hier seid Ihr offenbar der Eindringling. Man blickt Euch skeptisch, aber nicht feindlich an. Das Dorf bereitet sich auf ein Fest vor, wollt ihr bleiben?</German>
 		<Russian>Наш разведчик забрел в индейский лагерь, в котором ведётся поготовка к какому-то празднеству. Не смотря на то, что его никто не приглашал, туземцы не выглядят враждебными. Останемся посмотреть на церемонию?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_3</Tag>
-		<English>Your scout has discovered a native indian village. However, the natives have been watching you for quite a while and could easily take you down. How do you behave?</English>
+		<English>Your scout has discovered a Native village. Well-concealed young men guard the perimeter. They've seen him and can easily take him down. How should he behave?</English>
 		<French>Votre éclaireur a découvert un village d'Indiens. Ils vous observent depuis un moment et pourraient vous abattre facilement. Comment vous tenez-vous ?</French>
 		<German>Euer Scout hat ein Dorf der Ureinwohner entdeckt. Die Ureinwohner beobachten Euch allerdings schon eine ganze Weile und könnten Euch mühelos überwältigen. Wie verhaltet Ihr Euch?</German>
 		<Russian>Наш разведчик набрёл на одну деревню индейцев. Однако те уже давно наблюдают за ним и готовы атаковать. Как нам поступить?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_1</Tag>
-		<English>We stay here for a while to make friends with the natives and warm ourselves at their campfires.</English>
+		<English>We'll stay here for a while to reassure the Natives and warm ourselves at their campfires.</English>
 		<French>Nous restons là un moment pour nous faire des amis et nous rechauffer auprès du feu.</French>
 		<German>Wir bleiben eine Weile hier, um mit den Ureinwohnern Freundschaft zu schließen und uns an deren Lagerfeuern zu wärmen.</German>
 		<Russian>Остаемся здесь на некоторое время, чтобы погреться у костра и попробовать подружиться с туземцами.</Russian>
