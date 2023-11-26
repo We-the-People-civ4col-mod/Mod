@@ -2,37 +2,44 @@
 
 class CiXMLReader;
 
-class DiInfoBaseTypeDesc
+class CiInfoBase
 #ifdef COMPILE_STATIC_TEST
 	: private boost::noncopyable
 #endif
 {
 public:
-	DiInfoBaseTypeDesc();
-	~DiInfoBaseTypeDesc();
+	bool readType(CiXMLReader& reader);
+	bool read(CiXMLReader& reader);
+	bool postLoadSetup(CiXMLReader& reader);
+};
+
+class CiInfoBaseTypeDesc
+#ifdef COMPILE_STATIC_TEST
+	: private boost::noncopyable
+#endif
+{
+public:
+	const char* getType() const;
+	CvWString getTextKeyWide() const;
+	CvWString getDescription(uint uiForm = 0) const;
 
 	bool readType(CiXMLReader& reader);
 	bool read(CiXMLReader& reader);
 	bool postLoadSetup(CiXMLReader& reader);
 
-	const char* getType() const;
-
-	const wchar* getTextKeyWide() const;
-	CvWString getDescription(uint uiForm = 0) const;
-
 protected:
-	const char* m_szType;
-	const wchar* m_szTextKey;
+	CvString m_szType;
+	CvString m_szTextKey;
 };
 
-class DiInfoBasePedia
+class CiInfoBasePedia
 #ifdef COMPILE_STATIC_TEST
 	: private boost::noncopyable
 #endif
 {
 public:
-	DiInfoBasePedia();
-	~DiInfoBasePedia();
+	CiInfoBasePedia();
+	~CiInfoBasePedia();
 
 	bool readType(CiXMLReader& reader);
 	bool read(CiXMLReader& reader);
@@ -62,17 +69,22 @@ protected:
 	mutable std::vector<CvWString> m_aCachedDescriptions;
 };
 
-class CiDomainInfo : public DiInfoBaseTypeDesc
+class CiDomainInfo : public CiInfoBaseTypeDesc
 {
 };
 
-class CiCivCategoryInfo : public DiInfoBaseTypeDesc
+class CiCivCategoryInfo : public CiInfoBase
 {
 public:
 	CiCivCategoryInfo();
+
+	const char* getType() const;
+	CivEffectTypes getCivEffect() const;
+
+	bool readType(CiXMLReader& reader);
 	bool read(CiXMLReader& reader);
 
-	CivEffectTypes getCivEffect() const;
 protected:
+	CvString m_szType;
 	CivEffectTypes m_eCivEffect;
 };

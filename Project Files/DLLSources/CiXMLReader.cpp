@@ -23,51 +23,7 @@ bool CiXMLReader::valid() const
 	return m_Element != NULL;
 }
 
-void CiXMLReader::ReadText(const char* szTag, const char*& szText) const
-{
-	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
-	if (element == NULL)
-	{
-		return;
-	}
-	CvString buffer = element->GetText();
-
-	int iLength = buffer.length();
-	if (iLength <= 0)
-	{
-		return;
-	}
-
-	char* newStr = new char[iLength + 1];
-	newStr[iLength] = 0;
-	memcpy(newStr, buffer.c_str(), iLength);
-	szText = newStr;
-}
-
-void CiXMLReader::ReadTextKey(const char* szTag, const wchar*& szText) const
-{
-	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
-	if (element == NULL)
-	{
-		return;
-	}
-	CvWString buffer = element->GetText();
-
-	FAssert(buffer != gDLL->getText(buffer));
-
-	int iLength = buffer.length();
-	if (iLength <= 0)
-	{
-		return;
-	}
-
-	wchar* newStr = new wchar[iLength + 1];
-	newStr[iLength] = 0;
-	memcpy(newStr, buffer.c_str(), iLength * sizeof(wchar));
-	szText = newStr;
-}
-
-void CiXMLReader::ReadTextKey(const char* szTag, CvWString& szText) const
+void CiXMLReader::Read(const char* szTag, CvString& szText) const
 {
 	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
 	if (element == NULL)
@@ -75,5 +31,21 @@ void CiXMLReader::ReadTextKey(const char* szTag, CvWString& szText) const
 		return;
 	}
 	szText = element->GetText();
-	FAssert(szText != gDLL->getText(szText));
+}
+
+void CiXMLReader::ReadTextKey(const char* szTag, CvString& szText) const
+{
+	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
+	if (element == NULL)
+	{
+		return;
+	}
+	szText = element->GetText();
+	FAssert(CvWString(szText) != gDLL->getText(szText));
+}
+
+const char* CiXMLReader::_ReadString(const char* szTag) const
+{
+	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
+	return element == NULL ? NULL : element->GetText();
 }

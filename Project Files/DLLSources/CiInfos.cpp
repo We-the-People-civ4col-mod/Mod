@@ -2,49 +2,34 @@
 #include "CiInfos.h"
 #include "CiXMLReader.h"
 
-
-DiInfoBaseTypeDesc::DiInfoBaseTypeDesc()
-	: m_szType(NULL)
-	, m_szTextKey(NULL)
-{
-}
-
-DiInfoBaseTypeDesc::~DiInfoBaseTypeDesc()
-{
-	SAFE_DELETE(m_szType);
-	SAFE_DELETE(m_szTextKey);
-}
-
-bool DiInfoBaseTypeDesc::readType(CiXMLReader& reader)
-{
-	reader.ReadText("Type", m_szType);
-	return true;
-}
-
-bool DiInfoBaseTypeDesc::read(CiXMLReader& reader)
-{
-	reader.ReadTextKey("Description", m_szTextKey);
-	return true;
-}
-
-bool DiInfoBaseTypeDesc::postLoadSetup(CiXMLReader& reader)
+bool CiInfoBase::readType(CiXMLReader& reader)
 {
 	return false;
 }
 
-const char* DiInfoBaseTypeDesc::getType() const
+bool CiInfoBase::read(CiXMLReader& reader)
+{
+	return false;
+}
+
+bool CiInfoBase::postLoadSetup(CiXMLReader& reader)
+{
+	return false;
+}
+
+const char* CiInfoBaseTypeDesc::getType() const
 {
 	return m_szType;
 }
 
-const wchar* DiInfoBaseTypeDesc::getTextKeyWide() const
+CvWString CiInfoBaseTypeDesc::getTextKeyWide() const
 {
 	return m_szTextKey;
 }
 
-CvWString DiInfoBaseTypeDesc::getDescription(uint uiForm) const
+CvWString CiInfoBaseTypeDesc::getDescription(uint uiForm) const
 {
-	if (m_szTextKey == NULL)
+	if (m_szTextKey.IsEmpty())
 	{
 		return L"";
 	}
@@ -52,9 +37,26 @@ CvWString DiInfoBaseTypeDesc::getDescription(uint uiForm) const
 	return gDLL->getObjectText(m_szTextKey, uiForm);
 }
 
+bool CiInfoBaseTypeDesc::readType(CiXMLReader& reader)
+{
+	reader.Read("Type", m_szType);
+	return true;
+}
+
+bool CiInfoBaseTypeDesc::read(CiXMLReader& reader)
+{
+	reader.ReadTextKey("Description", m_szTextKey);
+	return true;
+}
+
+bool CiInfoBaseTypeDesc::postLoadSetup(CiXMLReader& reader)
+{
+	return false;
+}
 
 
-DiInfoBasePedia::DiInfoBasePedia()
+
+CiInfoBasePedia::CiInfoBasePedia()
 	: m_szType(NULL)
 	, m_szTextKey(NULL)
 	, m_szCivilopedia(NULL)
@@ -63,7 +65,7 @@ DiInfoBasePedia::DiInfoBasePedia()
 {
 }
 
-DiInfoBasePedia::~DiInfoBasePedia()
+CiInfoBasePedia::~CiInfoBasePedia()
 {
 	SAFE_DELETE(m_szType);
 	SAFE_DELETE(m_szTextKey);
@@ -72,32 +74,32 @@ DiInfoBasePedia::~DiInfoBasePedia()
 	SAFE_DELETE(m_szSttrategy);
 }
 
-bool DiInfoBasePedia::readType(CiXMLReader& reader)
+bool CiInfoBasePedia::readType(CiXMLReader& reader)
 {
 	return true;
 }
 
-bool DiInfoBasePedia::read(CiXMLReader& reader)
+bool CiInfoBasePedia::read(CiXMLReader& reader)
 {
 	return false;
 }
 
-bool DiInfoBasePedia::postLoadSetup(CiXMLReader& reader)
+bool CiInfoBasePedia::postLoadSetup(CiXMLReader& reader)
 {
 	return false;
 }
 
-const char* DiInfoBasePedia::getType() const
+const char* CiInfoBasePedia::getType() const
 {
 	return m_szType;
 }
 
-const wchar* DiInfoBasePedia::getTextKeyWide() const
+const wchar* CiInfoBasePedia::getTextKeyWide() const
 {
 	return m_szTextKey;
 }
 
-CvWString DiInfoBasePedia::getDescription(uint uiForm) const
+CvWString CiInfoBasePedia::getDescription(uint uiForm) const
 {
 	if (m_szTextKey == NULL)
 	{
@@ -107,7 +109,7 @@ CvWString DiInfoBasePedia::getDescription(uint uiForm) const
 	return gDLL->getObjectText(m_szTextKey, uiForm);
 }
 
-CvWString DiInfoBasePedia::getCivilopedia() const
+CvWString CiInfoBasePedia::getCivilopedia() const
 {
 	if (m_szCivilopedia == NULL)
 	{
@@ -116,7 +118,7 @@ CvWString DiInfoBasePedia::getCivilopedia() const
 	return gDLL->getText(m_szCivilopedia);
 }
 
-CvWString DiInfoBasePedia::getHelp() const
+CvWString CiInfoBasePedia::getHelp() const
 {
 	if (m_szHelp == NULL)
 	{
@@ -125,7 +127,7 @@ CvWString DiInfoBasePedia::getHelp() const
 	return gDLL->getText(m_szHelp);
 }
 
-CvWString DiInfoBasePedia::getStrategy() const
+CvWString CiInfoBasePedia::getStrategy() const
 {
 	if (m_szSttrategy == NULL)
 	{
@@ -139,13 +141,24 @@ CiCivCategoryInfo::CiCivCategoryInfo()
 	: m_eCivEffect(NO_CIV_EFFECT)
 {}
 
-bool CiCivCategoryInfo::read(CiXMLReader& reader)
+const char* CiCivCategoryInfo::getType() const
 {
-	reader.Read("eCivEffect", m_eCivEffect);
-	return true;
+	return m_szType;
 }
 
 CivEffectTypes CiCivCategoryInfo::getCivEffect() const
 {
 	return m_eCivEffect;
 };
+
+bool CiCivCategoryInfo::readType(CiXMLReader& reader)
+{
+	reader.Read("Type", m_szType);
+	return true;
+}
+
+bool CiCivCategoryInfo::read(CiXMLReader& reader)
+{
+	reader.Read("eCivEffect", m_eCivEffect);
+	return true;
+}

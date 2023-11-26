@@ -1,6 +1,9 @@
 #pragma once
 
-#include "tinyxml2.h"
+namespace tinyxml2
+{
+	class XMLElement;
+}
 
 class CiXMLTypeContainer;
 
@@ -15,14 +18,14 @@ public:
 
 	bool valid() const;
 
-	void ReadText(const char* szTag, const char*& szText) const;
-	void ReadTextKey(const char* szTag, const wchar*& szText) const;
-	void ReadTextKey(const char* szTag, CvWString& szText) const;
+	void Read(const char* szTag, CvString& szText) const;
+	void ReadTextKey(const char* szTag, CvString& szText) const;
 	
 	template<typename T>
 	void Read(const char* szTag, T& type) const;
 
 private:
+	const char* _ReadString(const char* szTag) const;
 	const CiXMLTypeContainer& m_FileReader;
 	const tinyxml2::XMLElement* m_Element;
 };
@@ -31,10 +34,10 @@ private:
 template<typename T>
 void CiXMLReader::Read(const char* szTag, T& type) const
 {
-	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
-	if (element == NULL)
+	const char* text = _ReadString(szTag);
+	if (text == NULL)
 	{
 		return;
 	}
-	getIndexOfType(type, element->GetText());
+	getIndexOfType(type, text);
 }
