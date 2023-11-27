@@ -318,7 +318,7 @@ class CvPediaProfession:
 
 	# TAC - Hide Whaling Profession - koma13 - START
 	def isWhalingProfession(self, iProfession):
-		return (iProfession == gc.getInfoTypeForString("PROFESSION_WHALING_BOAT_WORKING") or iProfession == gc.getInfoTypeForString("PROFESSION_FISHING_BOAT_WORKING"))
+		return (iProfession == ProfessionTypes.PROFESSION_WHALING_BOAT_WORKING or iProfession == ProfessionTypes.PROFESSION_FISHING_BOAT_WORKING)
 		#return (iProfession == gc.getInfoTypeForString("PROFESSION_WHALING_BOAT_WORKING"))
 	# TAC - Hide Whaling Profession - koma13 - END
 	

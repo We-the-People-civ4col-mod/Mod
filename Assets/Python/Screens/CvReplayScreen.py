@@ -226,10 +226,10 @@ class CvReplayScreen:
 				if iPlayer != -1:
 					screen.setMinimapColor(MinimapModeTypes.MINIMAPMODE_REPLAY, iX, iY, self.replayInfo.getColor(iPlayer), 0.6)
 				else:
-					screen.setMinimapColor(MinimapModeTypes.MINIMAPMODE_REPLAY, iX, iY, gc.getInfoTypeForString("COLOR_CLEAR"), 0.6)
+					screen.setMinimapColor(MinimapModeTypes.MINIMAPMODE_REPLAY, iX, iY, ColorTypes.COLOR_CLEAR, 0.6)
 			else:
 				if (iX > -1 and iY > -1 and not bSilent):
-					screen.minimapFlashPlot(iX, iY, gc.getInfoTypeForString("COLOR_WHITE"), 10)
+					screen.minimapFlashPlot(iX, iY, ColorTypes.COLOR_WHITE, 10)
 		if (self.yMessage > self.H_TEXT):
 			screen.scrollableAreaScrollToBottom(self.szAreaId)
 
@@ -256,7 +256,7 @@ class CvReplayScreen:
 		screen = self.getScreen()
 		for iX in range(self.replayInfo.getMapWidth()):
 			for iY in range(self.replayInfo.getMapHeight()):
-				screen.setMinimapColor(MinimapModeTypes.MINIMAPMODE_REPLAY, iX, iY, gc.getInfoTypeForString("COLOR_CLEAR"), 0.6)
+				screen.setMinimapColor(MinimapModeTypes.MINIMAPMODE_REPLAY, iX, iY, ColorTypes.COLOR_CLEAR, 0.6)
 
 	def resetData(self):
 		screen = self.getScreen()

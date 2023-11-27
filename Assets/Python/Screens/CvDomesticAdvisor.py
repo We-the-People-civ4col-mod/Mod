@@ -512,7 +512,7 @@ class CvDomesticAdvisor:
 			end = min((self.MAX_BUILDINGS_IN_A_PAGE * (self.CurrentPage + 1)) + 1, gc.getNumSpecialBuildingInfos()-1)
 		
 			for iSpecial in range(start, end):
-				if (iSpecial != gc.getInfoTypeForString("SPECIALBUILDING_BELLS")):
+				if (iSpecial != SpecialBuildingTypes.SPECIALBUILDING_BELLS):
 					iIconBuilding = -1
 					for iBuilding in range(gc.getNumBuildingInfos()):
 						if gc.getBuildingInfo(iBuilding).getSpecialBuildingType() == iSpecial:

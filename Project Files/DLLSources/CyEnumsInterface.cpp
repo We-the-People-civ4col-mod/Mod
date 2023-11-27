@@ -167,9 +167,12 @@ void CyEnumsPythonInterface()
 	addEnumValues(NO_BUTTON_POPUP      , "ButtonPopupTypes"   , "NO_BUTTON_POPUP"  , "NUM_BUTTONPOPUP_TYPES"    );
 	addEnumValues(NO_COLOR             , "ColorTypes"         , "NO_COLOR"         , "NUM_COLOR_TYPES"          );
 	addEnumValues(NO_CONCEPT           , "ConceptTypes"       , "NO_CONCEPT"       , "NUM_CONCEPT_TYPES"        );
+	addEnumValues(NO_EUROPE            , "EuropeTypes"        , "NO_EUROPE"        , "NUM_EUROPE_TYPES"         );
 	addEnumValues(NO_FEATURE           , "FeatureTypes"       , "NO_FEATURE"       , "NUM_FEATURE_TYPES"        );
 	addEnumValues(MAX_NUM_SYMBOLS      , "FontSymbols"        , NULL               , "MAX_NUM_SYMBOLS"          );
 	addEnumValues(NO_HANDICAP          , "HandicapTypes"      , "NO_HANDICAP"      , "NUM_HANDICAP_TYPES"       );
+	addEnumValues(NO_HURRY             , "HurryTypes"         , "NO_HURRY"         , "NUM_HURRY_TYPES"          );
+	addEnumValues(NO_PROFESSION        , "ProfessionTypes"    , "NO_PROFESSION"    , "NUM_PROFESSION_TYPES"     );
 	addEnumValues(NO_SPECIALBUILDING   , "SpecialBuildingTypes","NO_SPECIALBUILDING", "NUM_SPECIALBUILDING_TYPES");
 	addEnumValues(NO_TERRAIN           , "TerrainTypes"       , "NO_TERRAIN"       , "NUM_TERRAIN_TYPES"        );
 	addEnumValues(NO_UNIT              , "UnitTypes"          , "NO_UNIT"          , "NUM_UNIT_TYPES"           );
@@ -502,6 +505,8 @@ void CyEnumsPythonInterface()
 		;
 	python::enum_<CivilizationTypes>("CivilizationTypes")
 		.value("NO_CIVILIZATION", NO_CIVILIZATION)
+		.value("CIVILIZATION_BARBARIAN", CIVILIZATION_BARBARIAN)
+		.value("CIVILIZATION_CHURCH", CIVILIZATION_CHURCH)
 		;
 	python::enum_<LeaderHeadTypes>("LeaderHeadTypes")
 		.value("NO_LEADER", NO_LEADER)
@@ -627,6 +632,7 @@ void CyEnumsPythonInterface()
 		;
 	python::enum_<BuildingTypes>("BuildingTypes")
 		.value("NO_BUILDING", NO_BUILDING)
+		.value("BUILDING_CHICKEE", BUILDING_CHICKEE)
 		;
 	python::enum_<InfoBarTypes>("InfoBarTypes")
 		.value("INFOBAR_STORED", INFOBAR_STORED)
@@ -685,9 +691,6 @@ void CyEnumsPythonInterface()
 		.value("DOMAIN_LAND", DOMAIN_LAND)
 		.value("DOMAIN_IMMOBILE", DOMAIN_IMMOBILE)
 		.value("NUM_DOMAIN_TYPES", NUM_DOMAIN_TYPES)
-		;
-	python::enum_<ProfessionTypes>("ProfessionTypes")
-		.value("NO_PROFESSION", NO_PROFESSION)
 		;
 	python::enum_<SpecialUnitTypes>("SpecialUnitTypes")
 		.value("NO_SPECIALUNIT", NO_SPECIALUNIT)
@@ -927,9 +930,6 @@ void CyEnumsPythonInterface()
 		;
 	python::enum_<PromotionTypes>("PromotionTypes")
 		.value("NO_PROMOTION", NO_PROMOTION)
-		;
-	python::enum_<HurryTypes>("HurryTypes")
-		.value("NO_HURRY", NO_HURRY)
 		;
 	python::enum_<CultureLevelTypes>("CultureLevelTypes")
 		.value("NO_CULTURELEVEL", NO_CULTURELEVEL)

@@ -429,12 +429,12 @@ class CvEuropeScreen:
 					iCargoCount += 1
 
 			if (YieldOnBoard):
-				screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", gc.getActionInfo(gc.getInfoTypeForString("COMMAND_YIELD_TRADE")).getButton(), iX + self.INPORT_SHIP_W * 15 / 16 - self.CARGO_ICON_SIZE * 5 / 4, self.INPORT_SHIP_H * 9 / 20, self.CARGO_ICON_SIZE * 5 / 4, self.CARGO_ICON_SIZE * 5 / 4, WidgetTypes.WIDGET_GENERAL, self.SELL_ALL, unit.getID())
+				screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", gc.getCommandInfo(CommandTypes.COMMAND_YIELD_TRADE).getButton(), iX + self.INPORT_SHIP_W * 15 / 16 - self.CARGO_ICON_SIZE * 5 / 4, self.INPORT_SHIP_H * 9 / 20, self.CARGO_ICON_SIZE * 5 / 4, self.CARGO_ICON_SIZE * 5 / 4, WidgetTypes.WIDGET_GENERAL, self.SELL_ALL, unit.getID())
 			elif (iCargoCount == 0) and (gc.getUnitInfo(unit.getUnitType()).getEuropeCost() > 0) and (iSeaUnitCount > 1) and (self.iSellShip > 0):
 				screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_PURCHASE_UNIT").getPath(), iX + self.INPORT_SHIP_W * 15 / 16 - self.CARGO_ICON_SIZE * 5 / 4, self.INPORT_SHIP_H * 9 / 20, self.CARGO_ICON_SIZE * 5 / 4, self.CARGO_ICON_SIZE * 5 / 4, WidgetTypes.WIDGET_GENERAL, self.SELL_SHIP, unit.getID())
 
 			if (not unit.isFull() and player.getNumEuropeUnits() > 0 and unit.specialCargo() == SpecialUnitTypes.NO_SPECIALUNIT):
-				screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", gc.getActionInfo(gc.getInfoTypeForString("COMMAND_LOAD")).getButton(), iX + self.INPORT_SHIP_W * 15 / 16 - self.CARGO_ICON_SIZE * 17 / 8, self.INPORT_SHIP_H * 9 / 20, self.CARGO_ICON_SIZE * 5 / 4, self.CARGO_ICON_SIZE * 5 / 4, WidgetTypes.WIDGET_GENERAL, self.LOAD_ALL, unit.getID())
+				screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", gc.getCommandInfo(CommandTypes.COMMAND_LOAD).getButton(), iX + self.INPORT_SHIP_W * 15 / 16 - self.CARGO_ICON_SIZE * 17 / 8, self.INPORT_SHIP_H * 9 / 20, self.CARGO_ICON_SIZE * 5 / 4, self.CARGO_ICON_SIZE * 5 / 4, WidgetTypes.WIDGET_GENERAL, self.LOAD_ALL, unit.getID())
 			
 			screen.setImageButtonAt(self.getNextWidgetName(), "LoadingList", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_SAIL").getPath(), iX + self.INPORT_SHIP_W / 8, self.INPORT_SHIP_H * 9 / 20, self.CARGO_ICON_SIZE * 5 / 4, self.CARGO_ICON_SIZE * 5 / 4, WidgetTypes.WIDGET_GENERAL, self.SAIL_TO_NEW_WORLD, unit.getID())
 
@@ -533,7 +533,7 @@ class CvEuropeScreen:
 		for i in range(player.getNumEuropeUnits()):
 			loopUnit = player.getEuropeUnit(i)
 			iY, iW = 0, self.DOCK_UNIT_W
-			if (loopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_HEAVY_ARTILLERY_VETERAN") or loopUnit.getUnitType() == gc.getInfoTypeForString("UNIT_LIGHT_ARTILLERY_VETERAN")):
+			if loopUnit.getUnitType() == UnitTypes.UNIT_HEAVY_ARTILLERY_VETERAN or loopUnit.getUnitType() == UnitTypes.UNIT_LIGHT_ARTILLERY_VETERAN:
 				iY = -6
 				iW = iW * 17 / 10
 			UnitInfo = gc.getUnitInfo(loopUnit.getUnitType())
@@ -557,7 +557,7 @@ class CvEuropeScreen:
 				## R&R, Robert Surcouf,  Multiple rows of Yields if necessary START
 				#screen.addUnitGraphicGFC("Recruits" + str(i), player.getDocksNextUnit(i), UnitInfo.getDefaultProfession(), iX, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_PLAYER_HURRY, gc.getInfoTypeForString("HURRY_IMMIGRANT"), i, 0, 0, 1.0, False)
 				# Sometimes immigrants appear on water !!!!!
-				screen.addUnitGraphicGFC("Recruits" + str(i), player.getDocksNextUnit(i), UnitInfo.getDefaultProfession(), iX, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_PLAYER_HURRY, gc.getInfoTypeForString("HURRY_IMMIGRANT"), i, 0, 0, 1.0, False)
+				screen.addUnitGraphicGFC("Recruits" + str(i), player.getDocksNextUnit(i), UnitInfo.getDefaultProfession(), iX, self.RECRUIT_Y, self.RECRUIT_W, self.RECRUIT_H, WidgetTypes.WIDGET_PLAYER_HURRY, HurryTypes.HURRY_IMMIGRANT, i, 0, 0, 1.0, False)
 				## R&R, Robert Surcouf,  Multiple rows of Yields if necessary END
 				iX += RecruitSpacing
 				
@@ -651,10 +651,10 @@ class CvEuropeScreen:
 			iW = iW_Max
 		iX = iX_Begin + (iX_End - iX_Begin) / 2 - iW / 2
 		screen.addStackedBarGFC(szWidget, iX, self.STANDARD_MARGIN, iW, self.STANDARD_MARGIN * 2, InfoBarTypes.NUM_INFOBAR_TYPES, WidgetTypes.WIDGET_GENERAL, self.HELP_CROSS_RATE, -1)
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_WATER_TEXT"))
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_CITY_BLUE"))
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY"))
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY"))
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_WATER_TEXT)
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_CITY_BLUE)
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE_EXTRA, ColorTypes.COLOR_EMPTY)
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_EMPTY, ColorTypes.COLOR_EMPTY)
 		fStoredPercent = float(player.getCrossesStored()) / float(player.immigrationThreshold())
 		screen.setBarPercentage(szWidget, InfoBarTypes.INFOBAR_STORED, fStoredPercent)
 		if (fStoredPercent < 1.0):
@@ -959,7 +959,7 @@ class CvEuropeScreen:
 		
 		screen.hide("DealFailedText")
 		
-		screen.addUnitGraphicGFC("DialogMap" + "Water", gc.getInfoTypeForString("UNIT_CARAVEL"), -1, self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, True)
+		screen.addUnitGraphicGFC("DialogMap" + "Water", UnitTypes.UNIT_CARAVEL, -1, self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, True)
 		screen.addDDSGFC("DialogMap", "Art/Interface/Screens/Europe/DialogMapAmerica.dds", self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setLabelAt(self.getNextWidgetName(), "DialogMap", u"<font=4>" + localText.getText("TXT_KEY_EU_SAIL", ()) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.MAP_SIZE / 2, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		self.createBorder(0, 0, self.MAP_SIZE, self.MAP_SIZE, self.BORDER_SIZE, "DialogMap", True)

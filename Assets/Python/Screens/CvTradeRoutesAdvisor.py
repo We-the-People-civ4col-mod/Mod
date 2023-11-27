@@ -785,7 +785,7 @@ class CvTradeRoutesAdvisor:
 			screen.appendMultiListButton(self.szButtonPanel, szReturnButton, 0, WidgetTypes.WIDGET_GENERAL, self.RETURN_ID, -1, False)
 		
 		screen.appendMultiListButton(self.szButtonPanel, szDangerButton, 0, WidgetTypes.WIDGET_GENERAL, self.DANGER_ID, -1, False)
-		screen.appendMultiListButton(self.szButtonPanel, szHelpButton, 0, WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, gc.getInfoTypeForString("CONCEPT_TRADE_ROUTE"), False)
+		screen.appendMultiListButton(self.szButtonPanel, szHelpButton, 0, WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, ConceptTypes.CONCEPT_TRADE_ROUTE, False)
 	
 	def toggleSelect(self):
 		self.bSelected = not self.bSelected
