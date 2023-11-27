@@ -1075,31 +1075,30 @@ const CyXMLCommandItem* CyXMLEditor::getCommandItem(const char* name) const
 	CvWString tagPrefix = L"TXT_KEY_XML_EDITOR_";
 	tagPrefix.append(CvWString(name));
 
-	CvWString tag(tagPrefix);
-	tag.append(L"_Name");
-	szName = gDLL->getText(tag);
-	if (tag == szName)
+	szName = tagPrefix;
+	szName.append(L"_Name");
+	if (gDLL->getText(szName) == szName)
 	{
 		szName.clear();
 	}
 
-	tag = tagPrefix;
-	tag.append(L"_Help");
-	szHelp = gDLL->getText(tag);
-	if (tag == szHelp || szHelp == L"-")
+	szHelp = tagPrefix;
+	szHelp.append(L"_Help");
+	CvWString tmp = gDLL->getText(szHelp);
+	if (tmp == szHelp || tmp == L"-")
 	{
 		szHelp.clear();
 	}
 
-	tag = tagPrefix;
-	tag.append(L"_Text");
-	szText = gDLL->getText(tag);
-	if (tag == szText || szText == L"-")
+	szText = tagPrefix;
+	szText.append(L"_Text");
+	tmp = gDLL->getText(szText);
+	if (tmp == szText || tmp == L"-")
 	{
 		szText.clear();
 	}
 
-	return new CyXMLCommandItem(gDLL->getText(szName), gDLL->getText(szHelp), gDLL->getText(szText));
+	return new CyXMLCommandItem(CvString(szName), CvString(szHelp), CvString(szText));
 }
 
 bool CyXMLEditor::openFile(const TCHAR* szFileName)
@@ -2240,10 +2239,10 @@ CyXMLCommandItem::CyXMLCommandItem()
 {
 }
 
-CyXMLCommandItem::CyXMLCommandItem(CvWString szName, CvWString szPopupHelp, CvWString szFullText)
-	: m_szName(CvString(szName))
-	, m_szHelp(CvString(szPopupHelp))
-	, m_szText(CvString(szFullText))
+CyXMLCommandItem::CyXMLCommandItem(CvString szName, CvString szPopupHelp, CvString szFullText)
+	: m_szName(szName)
+	, m_szHelp(szPopupHelp)
+	, m_szText(szFullText)
 {
 }
 

@@ -4,6 +4,8 @@ import ScreenInput
 import CvScreenEnums
 import CvEventManager
 
+localText = CyTranslator()
+
 class xmlPopupCommandConfirm:
 
 	def __init__(self, editor, commandElement, commandID):
@@ -27,7 +29,7 @@ class xmlPopupCommandConfirm:
 		
 		
 		screen.addPanel( "xmlEditorSmallBG", u"", u"", True, False, left, top, nScreenWidth, nScreenHeight, PanelStyles.PANEL_STYLE_MAIN, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-		screen.setLabel("xmlEditorSmallHeader", "xmlEditorSmallBG", u"<font=4b>" + self.element.getName() + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, left + nScreenWidth / 2, top + 18, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.setLabel("xmlEditorSmallHeader", "xmlEditorSmallBG", u"<font=4b>" + localText.getText(self.element.getName(), ()) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, left + nScreenWidth / 2, top + 18, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		
 		screen.addPanel( "HelpTextField", u"", u"", True, False, panelLeft, panelTop, panelWidth, panelHeight, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		
@@ -35,8 +37,8 @@ class xmlPopupCommandConfirm:
 		text = CyTranslator().getText(self.element.getText(), ())
 		screen.attachMultilineText("HelpTextField", "MultiLineText", text, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 		
-		screen.setTextAt("cancel_button", "xmlEditorSmallBG", u"<font=4u>" + "CANCEL" + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, 3*(nScreenWidth / 4),  nScreenHeight - 60, -0.1, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_XML_CANCEL, -1, -1)
-		screen.setTextAt("ok_button", "xmlEditorSmallBG", u"<font=4u>" + "OK" + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, nScreenWidth / 4,  nScreenHeight - 60, -0.1, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_XML_OK, self.commandID, -1)
+		screen.setTextAt("cancel_button", "xmlEditorSmallBG", u"<font=4u>" + localText.getText("TXT_KEY_SCREEN_CANCEL", ()) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, 3*(nScreenWidth / 4),  nScreenHeight - 60, -0.1, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_XML_CANCEL, -1, -1)
+		screen.setTextAt("ok_button", "xmlEditorSmallBG", u"<font=4u>" + localText.getText("TXT_KEY_MAIN_MENU_OK", ()) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, nScreenWidth / 4,  nScreenHeight - 60, -0.1, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_XML_OK, self.commandID, -1)
 		
 
 	def delete(self):

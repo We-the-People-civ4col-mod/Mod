@@ -292,7 +292,7 @@ class CyXMLCommandItem
 {
 public:
 	CyXMLCommandItem();
-	CyXMLCommandItem(CvWString szName, CvWString szPopupHelp, CvWString szFullText);
+	CyXMLCommandItem(CvString szName, CvString szPopupHelp, CvString szFullText);
 
 	const char* getName() const;
 	const char* getHelp() const;

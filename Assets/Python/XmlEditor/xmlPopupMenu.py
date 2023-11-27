@@ -4,6 +4,8 @@ import ScreenInput
 import CvScreenEnums
 import CvEventManager
 
+localText = CyTranslator()
+
 class xmlPopupMenu:
 
 	def __init__(self, editor):
@@ -42,12 +44,12 @@ class xmlPopupMenu:
 
 		for i in range(self.editor.menuItemCount):
 			element = self.editor.XML.getCommandItem(self.editor.commandList[i])
-			title = u"<font=3>" + element.getName() + u"</font>"
+			title = u"<font=3>" + localText.getText(element.getName(), ()) + u"</font>"
 			screen.appendTableRow("MenuTable")
 			screen.setTableRowHeight("MenuTable", i, iRowHeight)
 			screen.setTableText("MenuTable", 0, i, title, "", WidgetTypes.WIDGET_XML_MENU_ITEM, i, -1, CvUtil.FONT_CENTER_JUSTIFY)
 
-		screen.setTextAt("cancel_button", "xmlEditorSmallBG", u"<font=4u>" + "CANCEL" + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, 2*(nScreenWidth / 4),  nScreenHeight - 30, -0.1, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_XML_CANCEL, -1, -1)
+		screen.setTextAt("cancel_button", "xmlEditorSmallBG", u"<font=4u>" + localText.getText("TXT_KEY_SCREEN_CANCEL", ()) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, 2*(nScreenWidth / 4),  nScreenHeight - 30, -0.1, FontTypes.MENU_HIGHLIGHT_FONT, WidgetTypes.WIDGET_XML_CANCEL, -1, -1)
 
 	def delete(self):
 		screen = CyGInterfaceScreen( "xmlEditor", CvScreenEnums.XML_EDITOR )
