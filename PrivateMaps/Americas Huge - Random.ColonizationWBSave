@@ -938,32 +938,32 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=0,y=110
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=0,y=111
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=0,y=112
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=0,y=113
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=7,
 EndPlot
 BeginPlot
 	x=0,y=114
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	FeatureType=FEATURE_ICE, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
@@ -1704,33 +1704,33 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=1,y=110
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	FeatureType=FEATURE_ARROW_NW, FeatureVariety=0
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=1,y=111
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=1,y=112
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 EndPlot
 BeginPlot
 	x=1,y=113
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=7,
 EndPlot
 BeginPlot
 	x=1,y=114
-	EuropeType=EUROPE_EAST
+	EuropeType=EUROPE_WEST
 	TerrainType=TERRAIN_OCEAN
 	PlotType=3
 	TeamReveal=7,
