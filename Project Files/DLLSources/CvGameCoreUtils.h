@@ -250,6 +250,8 @@ DllExport bool isCardinalDirection(DirectionTypes eDirection);
 DirectionTypes estimateDirection(int iDX, int iDY);
 DllExport DirectionTypes estimateDirection(const CvPlot* pFromPlot, const CvPlot* pToPlot);
 DllExport float directionAngle(DirectionTypes eDirection);
+int getDirectionDiff(DirectionTypes direction1, DirectionTypes direction2);
+DirectionTypes getDirectionFrom_dX_dY(int dX, int dY);
 bool atWar(TeamTypes eTeamA, TeamTypes eTeamB);
 bool isPotentialEnemy(TeamTypes eOurTeam, TeamTypes eTheirTeam);
 

@@ -12330,6 +12330,7 @@ bool CvUnitAI::AI_exploreOcean(int iRange)
 	CvPlot* pBestPlot = NULL;
 	CvPlot* pBestExplorePlot = NULL;
 	int iBestValue = 0;
+	DirectionTypes preferredDirection = GET_PLAYER(getOwnerINLINE()).getPreferredStartingDirection();
 
 	for (int iDX = -iRange; iDX <= iRange; iDX++)
 	{
@@ -12383,15 +12384,8 @@ bool CvUnitAI::AI_exploreOcean(int iRange)
 
 					if (GC.getGameINLINE().getGameTurn() < 10)
 					{
-						CvPlot* pStartingPlot = GET_PLAYER(getOwnerINLINE()).getStartingPlot();
-						if (pStartingPlot != NULL)
-						{
-							if ((std::abs(pLoopPlot->getX_INLINE() - pStartingPlot->getX_INLINE()) <= 1) || (std::abs(pLoopPlot->getY_INLINE() - pStartingPlot->getY_INLINE()) <= 1))
-							{
-								iValue *= 2;
-							}
-
-						}
+						DirectionTypes currentDirection = getDirectionFrom_dX_dY(iDX, iDY);
+						iValue += ((NUM_DIRECTION_TYPES / 2) - getDirectionDiff(currentDirection, preferredDirection)) * 100;
 					}
 
 					if (iValue > 0)
