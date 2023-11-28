@@ -24899,6 +24899,75 @@ void CvPlayer::writeDesyncLog(FILE *f) const
 	}
 }
 
+// Function returns preferred direction for initial exploration basing on where starting plot is placed
+DirectionTypes CvPlayer::getPreferredStartingDirection() const
+{
+	int startX = getStartingPlot()->getX_INLINE();
+	int startY = getStartingPlot()->getY_INLINE();
+	int score[NUM_DIRECTION_TYPES] = { 0 };
+	int bestScore = 0;
+	DirectionTypes bestDirection = NO_DIRECTION;
+
+	// Here we loop every direction around starting plot and if it is not Europe -
+	// then we increase score of plots surrounding starting plot,
+	// depending on how big is the angle between that direction and current one.
+	// This is for case of pretty weird configurations of Europe tiles that occasionally can happen.
+	for (DirectionTypes direction = FIRST_DIRECTION; direction < NUM_DIRECTION_TYPES; direction++)
+	{
+		CvPlot* loopPlot = plotDirection(startX, startY, direction);
+		if (loopPlot)
+		{
+			if (!loopPlot->isEurope())
+			{
+				for (DirectionTypes d = FIRST_DIRECTION; d < NUM_DIRECTION_TYPES; d++)
+				{
+					score[d] += ((NUM_DIRECTION_TYPES / 2) - getDirectionDiff(direction, d)) * 1000;
+					score[d] += GC.getGame().getSorenRandNum(10, "AI Preferred Starting Direction");
+				}
+			}
+		}
+	}
+
+	// for the case of two or more directions are equally good (e.g starting plot fully surrounded by europe tiles)
+	switch (getStartingPlot()->getEurope())
+	{
+	case EUROPE_EAST:
+		score[DIRECTION_NORTHWEST] += 100;
+		score[DIRECTION_WEST] += 100;
+		score[DIRECTION_SOUTHWEST] += 100;
+		break;
+	case EUROPE_WEST:
+		score[DIRECTION_NORTHEAST] += 100;
+		score[DIRECTION_EAST] += 100;
+		score[DIRECTION_SOUTHEAST] += 100;
+		break;
+	case EUROPE_NORTH:
+		score[DIRECTION_SOUTHEAST] += 100;
+		score[DIRECTION_SOUTH] += 100;
+		score[DIRECTION_SOUTHWEST] += 100;
+		break;
+	case EUROPE_SOUTH:
+		score[DIRECTION_NORTHEAST] += 100;
+		score[DIRECTION_NORTH] += 100;
+		score[DIRECTION_NORTHWEST] += 100;
+		break;
+	default:
+		break;
+	}
+
+	for (DirectionTypes direction = FIRST_DIRECTION; direction < NUM_DIRECTION_TYPES; direction++)
+	{
+		if (score[direction] > bestScore)
+		{
+			bestScore = score[direction];
+			bestDirection = direction;
+		}
+	}
+
+	FAssertMsg(bestDirection >= FIRST_DIRECTION && bestDirection < NUM_DIRECTION_TYPES, "Invalid DirectionTypes enum returned");
+	return bestDirection;
+}
+
 void CvPlayer::changeOppressometerDiscriminationModifier(int iChange)
 {
 	m_iOppressometerDiscriminationModifier += iChange;
