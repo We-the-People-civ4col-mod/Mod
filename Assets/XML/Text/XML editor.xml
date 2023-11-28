@@ -21,27 +21,27 @@
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_WriteAllFiles_Name</Tag>
 		<English>Write all files</English>
-		<!--<Russian>Записать все файлы</Russian>-->
+		<Russian>Записать все файлы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_WriteAllFiles_Help</Tag>
 		<English>Write all files[NEWLINE]This will make all the XML files get the layout used by the editor.[NEWLINE]This is very useful for producing readable diff files and a nice git/svn log.</English>
-		<!--<Russian>Записать все файлы[NEWLINE]Это позволит всем XML-файлам получить макет, используемый редактором.[NEWLINE]Это очень полезно для создания читаемых файлов различий и красивого журнала git/svn.</Russian>-->
+		<Russian>Записать все файлы[NEWLINE]Это позволит всем XML-файлам получить макет, используемый редактором.[NEWLINE]Это очень полезно для создания читаемых файлов различий и красивого журнала git/svn.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_WriteAllFiles_Text</Tag>
 		<English>Write all files[NEWLINE]This will make all the XML files get the layout used by the editor.[NEWLINE]This is very useful for producing readable diff files and a nice git/svn log.</English>
-		<!--<Russian>Записать все файлы[NEWLINE]Это позволит всем XML-файлам получить макет, используемый редактором.[NEWLINE]Это очень полезно для создания читаемых файлов различий и красивого журнала git/svn.</Russian>-->
+		<Russian>Записать все файлы[NEWLINE]Это позволит всем XML-файлам получить макет, используемый редактором.[NEWLINE]Это очень полезно для создания читаемых файлов различий и красивого журнала git/svn.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_GameFont_Name</Tag>
 		<English>GameFont Overview</English>
-		<!--<Russian>Обзор GameFont</Russian>-->
+		<Russian>Обзор GameFont</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_GameFont_Help</Tag>
 		<English>Provides an overview of all GameFont and their IDs[NEWLINE]Useful because the game might not just count blocks in GameFont when assigning IDs and asking the game for IDs is the only way to be sure.[NEWLINE][NEWLINE]Not possible to alter anything here. It's just a display.</English>
-		<!--<Russian>Предоставляет обзор всех GameFont и их идентификаторов.[NEWLINE]Полезно, поскольку игра может не просто подсчитывать блоки в GameFont при назначении идентификаторов, и единственный способ убедиться в этом — запросить у игры идентификаторы.[NEWLINE][NEWLINE]Здесь ничего нельзя изменить. Это просто дисплей.</Russian>-->
+		<Russian>Предоставляет обзор всех GameFont и их идентификаторов.[NEWLINE]Полезно, поскольку игра может не просто подсчитывать блоки в GameFont при назначении идентификаторов, и единственный способ убедиться в этом — запросить у игры идентификаторы.[NEWLINE][NEWLINE]Здесь ничего нельзя изменить. Это просто дисплей.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_GameFont_Text</Tag>
@@ -50,12 +50,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_Keyboard_Name</Tag>
 		<English>Keyboard layout</English>
-		<!--<Russian>Раскладка клавиатуры</Russian>-->
+		<Russian>Раскладка клавиатуры</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_Keyboard_Help</Tag>
 		<English>Customize keyboard layout[NEWLINE][NEWLINE]Sometimes the editor guess wrong when reading the keyboard. To fix this problem, click here and type the keys requested on the screen. The result is saved meaning you will only have to do this once.</English>
-		<!--<Russian>Настройте раскладку клавиатуры[NEWLINE][NEWLINE]Иногда редактор ошибается при чтении клавиатуры. Чтобы решить эту проблему, нажмите здесь и введите запрошенные на экране ключи. Результат сохраняется, то есть вам не придется делать это каждый раз.</Russian>-->
+		<Russian>Настройте раскладку клавиатуры[NEWLINE][NEWLINE]Иногда редактор ошибается при чтении клавиатуры. Чтобы решить эту проблему, нажмите здесь и введите запрошенные на экране ключи. Результат сохраняется, то есть вам не придется делать это каждый раз.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_Keyboard_Text</Tag>
@@ -64,46 +64,46 @@
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_CleanCurrentFile_Name</Tag>
 		<English>Clean current file</English>
-		<!--<Russian>Очистить текущий файл</Russian>-->
+		<Russian>Очистить текущий файл</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_CleanCurrentFile_Help</Tag>
 		<English>Cleaning the tags in the current file[NEWLINE][NEWLINE]ALWAYS BACK UP FIRST!!![NEWLINE]This will move the tags around to make them match the schema file.[NEWLINE]Tags not present in the schema file will be deleted.[NEWLINE]This is useful if tags have been moved/removed/renamed in the schema file.[NEWLINE]Will likely benefit from git diff to check the result.</English>
-		<!--<Russian>Очистка тегов в текущем файле[NEWLINE][NEWLINE]ВСЕГДА СНАЧАЛА ВЫПОЛНЯЙТЕ РЕЗЕРВНОЕ КОПИРОВАНИЕ!!![NEWLINE]Теги будут перемещены в соответствии с файлом схемы.[NEWLINE]Теги, отсутствующие в файле схемы, будут удалены.[NEWLINE]Это полезно, если теги были перемещены/удалены/переименованы в файле схемы.[NEWLINE]Возможно, вам понадобится git diff, чтобы проверить результат.</Russian>-->
+		<Russian>Очистка тегов в текущем файле[NEWLINE][NEWLINE]ВСЕГДА СНАЧАЛА ВЫПОЛНЯЙТЕ РЕЗЕРВНОЕ КОПИРОВАНИЕ!!![NEWLINE]Теги будут перемещены в соответствии с файлом схемы.[NEWLINE]Теги, отсутствующие в файле схемы, будут удалены.[NEWLINE]Это полезно, если теги были перемещены/удалены/переименованы в файле схемы.[NEWLINE]Возможно, вам понадобится git diff, чтобы проверить результат.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_CleanCurrentFile_Text</Tag>
 		<English>Cleaning the tags in the current file[NEWLINE][NEWLINE]ALWAYS BACK UP FIRST!!![NEWLINE]This will move the tags around to make them match the schema file.[NEWLINE]Tags not present in the schema file will be deleted.[NEWLINE]This is useful if tags have been moved/removed/renamed in the schema file.[NEWLINE]Will likely benefit from git diff to check the result.</English>
-		<!--<Russian>Очистка тегов в текущем файле[NEWLINE][NEWLINE]ВСЕГДА СНАЧАЛА выполняйте резервное копирование!!![NEWLINE]Теги будут перемещены в соответствии с файлом схемы.[NEWLINE]Теги, отсутствующие в файле схемы, будут удалены.[NEWLINE]Это полезно, если теги были перемещены/удалены/переименованы в файле схемы.[NEWLINE]Возможно, вам понадобится git diff, чтобы проверить результат.</Russian>-->
+		<Russian>Очистка тегов в текущем файле[NEWLINE][NEWLINE]ВСЕГДА СНАЧАЛА выполняйте резервное копирование!!![NEWLINE]Теги будут перемещены в соответствии с файлом схемы.[NEWLINE]Теги, отсутствующие в файле схемы, будут удалены.[NEWLINE]Это полезно, если теги были перемещены/удалены/переименованы в файле схемы.[NEWLINE]Возможно, вам понадобится git diff, чтобы проверить результат.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_LoadArtAndGameFont_Name</Tag>
 		<English>Load Art and GameFont</English>
-		<!--<Russian>Загрузить изображение и GameFont</Russian>-->
+		<Russian>Загрузить изображение и GameFont</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_LoadArtAndGameFont_Help</Tag>
 		<English>Fix missing button art</English>
-		<!--<Russian>Исправить отсутствующую картинку кнопки</Russian>-->
+		<Russian>Исправить отсутствующую картинку кнопки</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_LoadArtAndGameFont_Text</Tag>
 		<English>Clicking this button will copy DDS files and GameFont from the mod into the Editor mod.[NEWLINE]If the Editor is running in Colonization and the mod isn't a Colonization mod, vanilla files will be copied as well.[NEWLINE][NEWLINE]The game will appear like it crashed while this feature is working. (it's a bit slow)</English>
-		<!--<Russian>Нажатие этой кнопки приведет к копированию файлов DDS и GameFont из мода в Редактор.[NEWLINE]Если редактор работает в режиме Colonization, а мод не является модом Colonization, ванильные файлы также будут скопированы.[NEWLINE][NEWLINE]Пока эта функция работает, игра будет выглядеть так, как будто она зависла (это немного медленно).</Russian>-->
+		<Russian>Нажатие этой кнопки приведет к копированию файлов DDS и GameFont из мода в Редактор.[NEWLINE]Если редактор работает в режиме Colonization, а мод не является модом Colonization, ванильные файлы также будут скопированы.[NEWLINE][NEWLINE]Пока эта функция работает, игра будет выглядеть так, как будто она зависла (это немного медленно).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_GenerateEditorSettings_Name</Tag>
 		<English>Generate settings for editing remote mod</English>
-		<!--<Russian>Сгенерировать настройки для редактирования стороннего мода</Russian>-->
+		<Russian>Генерация настроек для редак-ии другого мода</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_GenerateEditorSettings_Help</Tag>
 		<English>Configure editor to edit xml files in another mod.[NEWLINE]This includes support for civ4bts.</English>
-		<!--<Russian>Настройте редактор для редактирования XML-файлов в другом моде.[NEWLINE]Это включает поддержку civ4bts.</Russian>-->
+		<Russian>Настройте редактор для редактирования XML-файлов в другом моде.[NEWLINE]Это включает поддержку civ4bts.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_GenerateEditorSettings_Text</Tag>
 		<English>Set the editor to edit a mod other than the current one.[NEWLINE]Clicking ok will generate EditorSettings.xml. Edit that one according to the comments in it and restart Colonization. Removing EditorSettings.xml will revert back to editing We The People.[NEWLINE][NEWLINE]Be aware that when editing a remote mod, the menu will contain "Load Art and GameFont". This will copy button art and GameFont, through that will obviously break graphics in WTP. It might be worth considering making Art a symbolic link instead (advancved setup).</English>
-		<!--<Russian>Настройте редактор на редактирование мода, отличного от текущего.[NEWLINE]Нажатие «ОК» создаст файл EditorSettings.xml. Отредактируйте его в соответствии с комментариями и перезапустите Колонизацию. Удаление EditorSettings.xml приведет к возврату редактирования We The People.[NEWLINE][NEWLINE]Имейте в виду, что при редактировании стороннего мода в меню будет пункт «Загрузить обложку и GameFont». Это скопирует оформление кнопок и GameFont, что явно нарушит графику в WTP. Возможно, вместо этого стоит подумать о том, чтобы сделать Art символической ссылкой (расширенная настройка).</Russian>-->
+		<Russian>Настройте редактор на редактирование мода, отличного от текущего.[NEWLINE]Нажатие «ОК» создаст файл EditorSettings.xml. Отредактируйте его в соответствии с комментариями и перезапустите Колонизацию. Удаление EditorSettings.xml приведет к возврату редактирования We The People.[NEWLINE][NEWLINE]Имейте в виду, что при редактировании стороннего мода в меню будет пункт «Загрузить обложку и GameFont». Это скопирует оформление кнопок и GameFont, что явно нарушит графику в WTP. Возможно, вместо этого стоит подумать о том, чтобы сделать Art символической ссылкой (расширенная настройка).</Russian>
 	</TEXT>
 </Civ4GameText>
