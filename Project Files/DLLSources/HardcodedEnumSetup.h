@@ -33,6 +33,7 @@ enum BonusTypes
 
 enum BuildingTypes
 {
+	BUILDING_CHICKEE,
 	BUILDING_PLACEHOLDER,
 };
 
