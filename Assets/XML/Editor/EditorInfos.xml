@@ -117,7 +117,7 @@
 	<BuildingInfo class="Dir" child="ArtDefineTag">
 		<Type/>
 		<BuildingClass class="Type" type="BuildingClassInfo" none="false"/>
-		<SpecialBuildingType/>
+		<SpecialBuildingType class="Type" type="SpecialBuildingInfo" none="false"/>
 		<iSpecialBuildingPriority/>
 		<Description/>
 		<Civilopedia/>

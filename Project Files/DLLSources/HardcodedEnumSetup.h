@@ -34,7 +34,6 @@ enum BonusTypes
 enum BuildingTypes
 {
 	BUILDING_CHICKEE,
-	BUILDING_PLACEHOLDER,
 };
 
 enum CivEffectTypes
@@ -118,7 +117,6 @@ enum UnitCombatTypes
 
 enum UnitTypes
 {
-	UNIT_PLACEHOLDER,
 };
 
 #include "CvEnums.h"

@@ -1481,7 +1481,7 @@ public:
 			vector = CvGlobals::getBuildingInfo();
 			while(vector.size() < static_cast<unsigned int>(getNumBuildingInfos()))
 			{
-				vector.push_back(&CvGlobals::getBuildingInfo(BUILDING_PLACEHOLDER));
+				vector.push_back(&CvGlobals::getBuildingInfo(FIRST_BUILDING));
 			}
 		}
 		return vector;
@@ -1494,7 +1494,7 @@ public:
 		{
 			return CvGlobals::getBuildingInfo(eBuildingNum);
 		}
-		return CvGlobals::getBuildingInfo(BUILDING_PLACEHOLDER);
+		return CvGlobals::getBuildingInfo(FIRST_BUILDING);
 	}
 			/*
 		getCAMERA_FAR_CLIP_Z_HEIGHT
@@ -1775,11 +1775,11 @@ public:
 	DllExport int getNumBuildingInfos()
 	{
 		// show the exe an arbitrarily high number of building types because that somehow affects savegame padding
-		// the free slots will be directed to the BUILDING_PLACEHOLDER by getBuildingInfo()
+		// the free slots will be directed to the FIRST_BUILDING by getBuildingInfo()
 		// This is meant to be a workaround for savegames becoming incompatible each time a building is added or removed
 		if (!m_bExeXmlLengthOverride)
 		{
-			return BUILDING_PLACEHOLDER;
+			return NUM_BUILDING_TYPES;
 		}
 		static int iNumBuildings = 0;
 		if (iNumBuildings == 0)
@@ -1922,11 +1922,11 @@ public:
 	DllExport int getNumUnitInfos()
 	{
 		// show the exe an arbitrarily high number of unit types because that somehow affects savegame padding
-		// the free slots will be directed to the UNIT_PLACEHOLDER by getUnitInfo()
+		// the free slots will be directed to the FIRST_UNIT by getUnitInfo()
 		// This is meant to be a workaround for savegames becoming incompatible each time a unit is added or removed
 		if (!m_bExeXmlLengthOverride)
 		{
-			return UNIT_PLACEHOLDER;
+			return NUM_UNIT_TYPES;
 		}
 		static int iNumUnits = 0;
 		if (iNumUnits == 0)
@@ -2076,7 +2076,7 @@ public:
 			vector = CvGlobals::getUnitInfo();
 			while(vector.size() < static_cast<unsigned int>(getNumUnitInfos()))
 			{
-				vector.push_back(&CvGlobals::getUnitInfo(UNIT_PLACEHOLDER));
+				vector.push_back(&CvGlobals::getUnitInfo(FIRST_UNIT));
 			}
 		}
 		return vector;
@@ -2090,7 +2090,7 @@ public:
 		{
 			return CvGlobals::getUnitInfo(eUnitNum);
 		}
-		return CvGlobals::getUnitInfo(UNIT_PLACEHOLDER);
+		return CvGlobals::getUnitInfo(FIRST_UNIT);
 	}
 
 			/*
@@ -3040,11 +3040,11 @@ public:
 	#pragma comment(linker, "/EXPORT:?getUnitButton@CvPlayer@@QBEPBDW4UnitTypes@@@Z=?getUnitButton@EXE_CvPlayer@@QBEPBDW4UnitTypes@@@Z")
 	DllExport char const* getUnitButton(UnitTypes eUnit) const
 	{
-		if (eUnit <= UNIT_PLACEHOLDER)
+		if (eUnit < NUM_UNIT_TYPES)
 		{
 			return CvPlayer::getUnitButton(eUnit);
 		}
-		return CvPlayer::getUnitButton(UNIT_PLACEHOLDER);
+		return CvPlayer::getUnitButton(FIRST_UNIT);
 	}
 
 
