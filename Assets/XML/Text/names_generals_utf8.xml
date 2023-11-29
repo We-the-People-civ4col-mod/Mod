@@ -427,42 +427,107 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_0</Tag>
 		<English>Count Fedor Golovin</English>
+		<Russian>Граф Фёдор Головин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_1</Tag>
 		<English>Count Boris Sheremetev</English>
+		<Russian>Граф Борис Шереметьев</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_2</Tag>
 		<English>Prince Alexander Menshikov</English>
+		<Russian>Князь Александр Меншиков</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_3</Tag>
 		<English>Prince Anikita Repnin</English>
+		<Russian>Князь Аникита Репнин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_4</Tag>
 		<English>Prince Mikhail Galitzine</English>
+		<Russian>Князь Князь Михаил Галицын</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_5</Tag>
-		<English>Prince Ivan Trubetskoy</English>
+		<English>Count Stepan Apraksin</English>
+		<Russian>Граф Степан Апраксин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_6</Tag>
-		<English>Stepan Apraksin</English>
+		<English>Prince Grigory Romodanovsky</English>
+		<Russian>Князь Григорий Ромодановский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_7</Tag>
-		<English>Nikolai Rezanov</English>
+		<English>Prince Grigory Volkonsky</English>
+		<Russian>Князь Григорий Волконский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_8</Tag>
-		<English>Gerasim Izmailov</English>
+		<English>Prince Vasily Dolgorukov</English>
+		<Russian>Князь Василий Долгоруков</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_9</Tag>
-		<English>Lavrenty Zagoskin</English>
+		<English>General Grigory Kosagov</English>
+		<Russian>Генерал Григорий Косагов</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_10</Tag>
+		<English>General Alexey Golovin</English>
+		<Russian>Генерал Алексей Головин</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_11</Tag>
+		<English>General Matvey Krovkov</English>
+		<Russian>Генерал Матвей Кровков</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_12</Tag>
+		<English>General Franz Lefort</English>
+		<Russian>Генерал Франц Лефорт</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_13</Tag>
+		<English>General Bogdan Korsak</English>
+		<Russian>Генерал Богдан Корсак</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_14</Tag>
+		<English>General Alexey Shein</English>
+		<Russian>Генерал Алексей Шеин</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_15</Tag>
+		<English>General Ivan Koltsov-Mosalsky</English>
+		<Russian>Генерал Иван Кольцов-Мосальский</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_16</Tag>
+		<English>General Yakov Polonsky</English>
+		<Russian>Генерал Яков Полонский</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_17</Tag>
+		<English>General Nikolai von Werden</English>
+		<Russian>Генерал Николай фон Верден</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_18</Tag>
+		<English>General Ivan Buturlin</English>
+		<Russian>Генерал Иван Бутурлин</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_19</Tag>
+		<English>General Andrey Gulits</English>
+		<Russian>Генерал Андрей Гулиц</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_20</Tag>
+		<English>General Ivan Gorbov</English>
+		<Russian>Генерал Иван Горбов</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_0</Tag>
@@ -799,26 +864,32 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_0</Tag>
 		<English>Count Alexander Buturlin</English>
+		<Russian>Граф Александр Бутурлин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_1</Tag>
 		<English>Count Alexei Razumovsky</English>
+		<Russian>Граф Алексей Разумовский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_2</Tag>
 		<English>Count Pyotr Saltykov</English>
+		<Russian>Граф Пётр Салтыков</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_3</Tag>
 		<English>Prince Nikita Trubetskoy</English>
+		<Russian>Князь Никита Трубецкой</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_4</Tag>
 		<English>Count Kirill Razumovsky</English>
+		<Russian>Граф Кирилл Разумовский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_5</Tag>
 		<English>Prince Grigori Potemkin</English>
+		<Russian>Князь Григорий Потёмкин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_GENERAL_0</Tag>
