@@ -4954,56 +4954,56 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_2</Tag>
-		<English>We are not here to make friends. Let us ask for treasures from which we can redeem them.</English>
+		<English>We're not here to make friends. Let's ask for treasures that we can sell.</English>
 		<French>Nous ne sommes pas là pour nous faire des amis. Demandez leur des trésors dont nous pouvons les soulager.</French>
 		<German>Wir sind nicht hier um Freundschaft zu schließen. Fragen wir nach Schätzen, von denen wir sie erlösen können.</German>
 		<Russian>Мы здесь не для того, чтобы заводить друзей. Попросим их показать свои сокровища. Может быть, удастся выменять их на какую-нибудь безделушку.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_3</Tag>
-		<English>Unfortunately, we are in a hurry. The natives don't look like they could be of any use to us either.</English>
+		<English>Unfortunately we're in a hurry. These worthless Natives look like a waste of time.</English>
 		<French>Nous sommes hélas pressés. Les indigènes n'ont pas l'air dd pouvoir nous être utiles.</French>
 		<German>Wir haben es leider sehr eilig. Die Ureinwohner sehen auch nicht so aus, als könnten Sie uns von Nutzen sein.</German>
 		<Russian>Нам некогда разглядывать еще одно стойбище этих дикарей. Поторопимся, впереди еще много более важных дел.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_HELP</Tag>
-		<English>[ICON_BULLET]Some natives are angry and do not approve of their chief giving you such a rich gift.</English>
+		<English>[ICON_BULLET]Some Natives are angry, seeing their chief giving you such a rich gift.</English>
 		<French>[ICON_BULLET]Des indigènes sont en colère et n'apprécient pas que leur chef vous fasse un tel cadeau.</French>
 		<German>[ICON_BULLET]Einige Ureinwohner sind wütend und nicht damit einverstanden, dass ihr Häuptling Euch so reich beschenkt.</German>
 		<Russian>[ICON_BULLET]Некоторые индейцы разгневаны и не одобряют того, что их вождь преподносит вам богатый подарок.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_1</Tag>
-		<English>Your seasoned trader has entered a previously unnoticed native village. The natives look at you expectantly. What do you want to do?</English>
+		<English>Your expert trader has entered an undiscovered Native village. The people regard him expectantly. What should he do?</English>
 		<French>Votre marchand expérimenté est entré dans un village indigène ignoré jusqu'à présent. Les habitants vous regardent dans l'expectative. Que faites-vous? </French>
 		<German>Euer couragierter Händler hat ein bisher unbeachtet gebliebenes Dorf der Ureinwohner betreten. Die Ureinwohner blicken Euch erwartungsvoll an. Was wollt Ihr tun?</German>
 		<Russian>Наш отважный торговец нашёл ранее незамеченную индейскую деревню. Её жители с интересом наблюдают за тем, что мы будем делать.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_2</Tag>
-		<English>Your seasoned trader has stumbled unawares into a native indian camp. Here you are apparently the intruder. They look at you skeptically, but not hostilely. The natives are obviously interested in your goods. Do you want to stay and to trade?</English>
+		<English>Your expert trader has stumbled unaware into a Native camp. He feels like an intruder. They look at him sceptically, but without hostility. People are obviously interested in his goods. Should he stay and trade?</English>
 		<French>Votre marchand expérimenté est entré dans un camp des Indiens. Ils vous prennent pour un intrus. Ils vous regardent avec méfiance mais sans hostilité. Les indigènes sont intéressés par vos biens, voulez vous rester et faire échange? </French>
 		<German>Euer couragierter Ureinwohnerhändler ist unversehens in ein Lager der Ureinwohner gestolpert. Hier seid Ihr offenbar der Eindringling. Man blickt Euch skeptisch, aber nicht feindlich an. Die Einwohner sind offenbar an Euren Waren interessiert. Wollt ihr bleiben und handeln?</German>
 		<Russian>Наш отважный торговец неожиданно наткнулся на лагерь индейцев. Они смотрят не враждебно и, кажется, даже готовы вести торговлю. Задержимся здесь ненадолго?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_3</Tag>
-		<English>Your seasoned trader has discovered a native indian village. However, the natives have been watching you for quite a while and could easily take you down. How do you behave?</English>
+		<English>Your expert trader has discovered a Native village. Their guards have been watching him for quite a while and could easily take him down. How should he behave?</English>
 		<French>Votre marchand expérimenté a découvert un village indien. Mais les indigènes vous observent depuis longtemps et peuvent vous abattre sans coup férir. Comment vous tenez-vous ? </French>
 		<German>Euer couragierter Ureinwohnerhändler hat ein Dorf der Ureinwohner entdeckt. Die Ureinwohner beobachten Euch allerdings schon eine ganze Weile und könnten Euch mühelos überwältigen. Wie verhaltet Ihr Euch?</German>
 		<Russian>Наш отважный торговец набрёл на одну деревню индейцев. Однако те уже давно наблюдают за ним и готовы атаковать. Как нам поступить?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_1_News</Tag>
-		<English>Our scouts and the natives have a lively party - relations improve.</English>
+		<English>Our scouts and the Natives have a lively party - relations improve.</English>
 		<French>Nos éclaireurs et les indigènes ont fait une fête réussie - les relations s'améliorent.</French>
 		<German>Unsere Kundschafter und die Wilden feiern ein rauschendes Fest - die Beziehungen verbessern sich.</German>
 		<Russian>Наш разведчик улучшил отношения с племенем, приняв участие в одном из их празднеств.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_2_News</Tag>
-		<English>Our scouts receive rich gifts. But not all Indians like it.</English>
+		<English>Our scouts receive rich gifts. Not all Natives approve</English>
 		<French>Nos éclaireurs sont couverts de cadeaux. Tous les Indiens n'aiment pas ça.</French>
 		<German>Unsere Kundschafter werden reich beschenkt. Aber nicht allen Indianern gfällt das.</German>
 		<Russian>Наш разведчик получил богатые дары от вождей племени. Но не всем индийцам это понравилось.</Russian>
