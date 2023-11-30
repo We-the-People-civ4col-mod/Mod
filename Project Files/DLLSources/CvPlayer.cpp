@@ -19493,25 +19493,19 @@ bool CvPlayer::canHurry(HurryTypes eHurry, int iIndex) const
 {
 	CvHurryInfo& kHurry = GC.getHurryInfo(eHurry);
 
-	if (getHurryCount(eHurry) > 0)
+	if (getHurryCount(eHurry) <= 0)
 	{
-		if (kHurry.getGoldPerCross() > 0)
-		{
-			if (canTradeWithEurope())
-			{
-				if (immigrationThreshold() > getCrossesStored())
-				{
-					if (getHurryGold(eHurry, iIndex) <= getGold())
-					{
-						return true;
-					}
-				}
-			}
-		}
-		else
-		{
-			return true;
-		}
+		return false;
+	}
+	
+	if (kHurry.getGoldPerCross() <= 0)
+	{
+		return true;
+	}
+
+	if (canTradeWithEurope() && getHurryGold(eHurry, iIndex) <= getGold())
+	{
+		return true;
 	}
 
 	return false;
@@ -19544,9 +19538,17 @@ void CvPlayer::hurry(HurryTypes eHurry, int iIndex)
 		{
 			OOS_LOG("hurry gold", getHurryGold(eHurry, iIndex));
 			changeGold(-getHurryGold(eHurry, iIndex));
-			changeCrossesStored(immigrationThreshold() - getCrossesStored());
+
+			int iMissingCrosses = immigrationThreshold() - getCrossesStored();
+			changeCrossesStored(iMissingCrosses);
 			// TAC - short messages for immigration after fist - RAY
 			doImmigrant(iIndex, true);
+
+			//since the crosses can overflow above the threshold iMissingCrosses may be go below zero
+			if (iMissingCrosses < 0)
+			{
+				changeCrossesStored(-iMissingCrosses);
+			}
 		}
 	}
 }
@@ -19554,42 +19556,50 @@ void CvPlayer::hurry(HurryTypes eHurry, int iIndex)
 int CvPlayer::getHurryGold(HurryTypes eHurry, int iIndex) const
 {
 	int iThreshold = immigrationThreshold();
-	int iCrossesLeft = iThreshold - getCrossesStored();
-	int iGold = GC.getHurryInfo(eHurry).getGoldPerCross() * iCrossesLeft;
+	int iMissingCrosses = iThreshold - getCrossesStored();
+
+	// We may have crosses stored above the immigration stored with the Immigration reform.
+	// We need at least one cross for the subsequent calculatuons.
+	iMissingCrosses = iMissingCrosses >= 1 ? iMissingCrosses : 1;
+
+	int iGold = GC.getHurryInfo(eHurry).getGoldPerCross() * iMissingCrosses;
 	iGold += GC.getHurryInfo(eHurry).getFlatGold() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent() / 100;
-	if (iIndex != -1)
+
+	if (iIndex == -1)
 	{
-		// WTP, ray, disconnect hurry Gold on Docks from Unit Buy Price - START
-		// instead hurrying will never be more expensive than original buy price
-		int iMaxBuyPriceHurry = GC.getUnitInfo(getDocksNextUnit(iIndex)).getEuropeCost();
-		iMaxBuyPriceHurry *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-		iMaxBuyPriceHurry /= 100;
-
-		iMaxBuyPriceHurry *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getTrainPercent();
-		iMaxBuyPriceHurry /= 100;
-
-		for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
-		{
-			if (hasTrait((TraitTypes) iTrait))
-			{
-				iMaxBuyPriceHurry *= std::max(0, (100 - GC.getTraitInfo((TraitTypes) iTrait).getRecruitPriceDiscount()));
-				iMaxBuyPriceHurry /= 100;
-			}
-		}
-
-		if (!isHuman())
-		{
-			iMaxBuyPriceHurry *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAITrainPercent();
-			iMaxBuyPriceHurry /= 100;
-
-			iMaxBuyPriceHurry *= std::max(0, ((GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIPerEraModifier() * getCurrentEra()) + 100));
-			iMaxBuyPriceHurry /= 100;
-		}
-
-		int iImmigrationPrice = std::abs(iMaxBuyPriceHurry) * iCrossesLeft / std::max(1, iThreshold);
-		// WTP, ray, disconnect hurry Gold on Docks from Unit Buy Price - END
-		iGold = std::min(iGold, iImmigrationPrice);
+		return iGold;
 	}
+
+	// WTP, ray, disconnect hurry Gold on Docks from Unit Buy Price - START
+	// instead hurrying will never be more expensive than original buy price
+	int iMaxBuyPriceHurry = GC.getUnitInfo(getDocksNextUnit(iIndex)).getEuropeCost();
+	iMaxBuyPriceHurry *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+	iMaxBuyPriceHurry /= 100;
+
+	iMaxBuyPriceHurry *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getTrainPercent();
+	iMaxBuyPriceHurry /= 100;
+
+	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
+	{
+		if (hasTrait((TraitTypes) iTrait))
+		{
+			iMaxBuyPriceHurry *= std::max(0, (100 - GC.getTraitInfo((TraitTypes) iTrait).getRecruitPriceDiscount()));
+			iMaxBuyPriceHurry /= 100;
+		}
+	}
+
+	if (!isHuman())
+	{
+		iMaxBuyPriceHurry *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAITrainPercent();
+		iMaxBuyPriceHurry /= 100;
+
+		iMaxBuyPriceHurry *= std::max(0, ((GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIPerEraModifier() * getCurrentEra()) + 100));
+		iMaxBuyPriceHurry /= 100;
+	}
+
+	int iImmigrationPrice = std::abs(iMaxBuyPriceHurry) * iMissingCrosses / std::max(1, iThreshold);
+	// WTP, ray, disconnect hurry Gold on Docks from Unit Buy Price - END
+	iGold = std::min(iGold, iImmigrationPrice);
 
 	return iGold;
 }
