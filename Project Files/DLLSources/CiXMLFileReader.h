@@ -26,21 +26,6 @@ private:
 };
 
 
-class CiXMLFileNameHolderBase
-{
-public:
-	virtual const char* getFileName() const = 0;
-	virtual const char* getType() const = 0;
-};
-
-template<typename T>
-class CiXMLFileNameHolder : public CiXMLFileNameHolderBase
-{
-public:
-	const char* getFileName() const;
-	const char* getType() const;
-};
-
 class CiXMLFileReader
 {
 	friend class CiXMLTypeContainer;
@@ -51,8 +36,9 @@ public:
 		, m_pSchema(NULL)
 		, m_pRoot(NULL)
 		, m_pSchemaRoot(NULL)
-	{ m_FileNameHolder = new CiXMLFileNameHolder<T>(); openFile();  }
-	~CiXMLFileReader();
+		, m_EnumType(getEnumName(var))
+		, m_pFileInfo(NULL)
+	{ openFile(); }
 
 	void validate(CvXMLLoadUtility* pUtility) const;
 
@@ -74,12 +60,6 @@ private:
 	const tinyxml2::XMLElement* m_pRoot;
 	const tinyxml2::XMLElement* m_pSchemaRoot;
 	const char* m_xmlns;
-
-	CiXMLFileNameHolderBase* m_FileNameHolder;
+	const char* m_EnumType;
+	const tinyxml2::XMLElement* m_pFileInfo;
 };
-
-template<typename T>
-const char* CiXMLFileNameHolder<T>::getType() const
-{
-	return "Type";
-}

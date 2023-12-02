@@ -33,6 +33,13 @@ static T getIndexOfTypeInit(const T eIndex, const char* szType)
 	return getIndexOfType(buffer, szType);
 }
 
+template<typename T>
+const char* getEnumName(T var)
+{
+	const char* type = typeid(T).name();
+	FAssert(strncmp(type, "enum ", 5) == 0);
+	return type + 5;
+}
 
 template <typename T>
 struct VARINFO

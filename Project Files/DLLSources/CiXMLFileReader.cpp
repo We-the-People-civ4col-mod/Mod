@@ -92,10 +92,26 @@ public:
 		return pFile;
 	}
 
+	const tinyxml2::XMLElement* getFileInfo(const char* enumType) const
+	{
+		const tinyxml2::XMLElement* root = m_fileList.FirstChildElement("Files");
+		FAssert(root != NULL);
+		return root->FirstChildElement(enumType);
+	}
+
+	XMLCache()
+	{
+		std::string fullPath = GetDLLPath(true);
+		fullPath.append("/XML/Files.xml");
+		tinyxml2::XMLError error = m_fileList.LoadFile(fullPath.c_str());
+		FAssert(error == tinyxml2::XML_SUCCESS);
+	}
+
 
 protected:
 	XMLCacheContainer m_files;
 	XMLCacheContainer m_schema;
+	tinyxml2::XMLDocument m_fileList;
 };
 
 //
@@ -149,7 +165,16 @@ void CiXMLTypeContainer::setType()
 		return;
 	}
 
-	const tinyxml2::XMLElement* type = m_pElement->FirstChildElement(m_Reader.m_FileNameHolder->getType());
+	CvString typeStr = "Type";
+
+	const tinyxml2::XMLElement* typeElement = m_Reader.m_pFileInfo->FirstChildElement("Type");
+	if (typeElement != NULL)
+	{
+		typeStr = typeElement->GetText();
+	}
+
+
+	const tinyxml2::XMLElement* type = m_pElement->FirstChildElement(typeStr);
 	if (type != NULL)
 	{
 		m_szType = type->GetText();
@@ -177,11 +202,6 @@ static std::string getPath(std::string path)
 	return path;
 }
 
-CiXMLFileReader::~CiXMLFileReader()
-{
-	SAFE_DELETE(m_FileNameHolder);
-}
-
 
 void CiXMLFileReader::openFile()
 {
@@ -190,8 +210,11 @@ void CiXMLFileReader::openFile()
 		// start the cache if it's not already started
 		XML_CACHE_HANDLER = new XMLCache;
 	}
+
+	m_pFileInfo = XML_CACHE_HANDLER->getFileInfo(m_EnumType);
+	const tinyxml2::XMLElement* files = m_pFileInfo->FirstChildElement("Files");
 	
-	const char *path = m_FileNameHolder->getFileName();
+	const char *path = files->FirstChildElement("File")->GetText();
 	m_pFile = XML_CACHE_HANDLER->getFile(path);
 	FAssert(m_pFile != NULL);
 
@@ -217,16 +240,22 @@ void CiXMLFileReader::openFile()
 
 void CiXMLFileReader::validate(CvXMLLoadUtility* pUtility) const
 {
-	std::string path = "XML/";
-	path.append(m_FileNameHolder->getFileName());
-	bool bLoaded = pUtility->LoadCivXml(pUtility->GetXML(), path.c_str());
+	const tinyxml2::XMLElement* FileInfo = XML_CACHE_HANDLER->getFileInfo(m_EnumType);
+	const tinyxml2::XMLElement* files = FileInfo->FirstChildElement("Files");
 
-	if (!bLoaded)
+	for (const tinyxml2::XMLElement* file = files->FirstChildElement("File"); file != NULL; file = file->NextSiblingElement("File"))
 	{
-		char szMessage[1024];
-		sprintf(szMessage, "LoadXML call failed for %s.", m_FileNameHolder->getFileName());
-		gDLL->MessageBox(szMessage, "XML Load Error");
-		return;
+		std::string path = "XML/";
+		path.append(file->GetText());
+		bool bLoaded = pUtility->LoadCivXml(pUtility->GetXML(), path.c_str());
+
+		if (!bLoaded)
+		{
+			char szMessage[1024];
+			sprintf(szMessage, "LoadXML call failed for %s.", file->GetText());
+			gDLL->MessageBox(szMessage, "XML Load Error");
+			return;
+		}
 	}
 }
 
@@ -268,18 +297,3 @@ const tinyxml2::XMLElement* CiXMLFileReader::getFirstElement() const
 	return NULL;
 }
 
-
-const char* CiXMLFileNameHolder<CivCategoryTypes>::getFileName() const
-{
-	return "Civilizations/CivCategoryInfos.xml";
-}
-
-const char* CiXMLFileNameHolder<CivilizationTypes>::getFileName() const
-{
-	return "Civilizations/CIV4CivilizationInfos.xml";
-}
-
-const char* CiXMLFileNameHolder<DomainTypes>::getFileName() const
-{
-	return "BasicInfos/CIV4DomainInfos.xml";
-}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  List of files to be loaded into which enum type
+  Files: the file paths (max one file per enum at the time of writing)
+  Type: error messages will report the text in the child tag of this name. Defaults to Type
+-->
+<Files>
+	<CivCategoryTypes>
+		<Files>
+			<File>Civilizations/CivCategoryInfos.xml</File>
+		</Files>
+	</CivCategoryTypes>
+	<CivilizationTypes>
+		<Files>
+			<File>Civilizations/CIV4CivilizationInfos.xml</File>
+		</Files>
+	</CivilizationTypes>
+	<DomainTypes>
+		<Files>
+			<File>BasicInfos/CIV4DomainInfos.xml</File>
+		</Files>
+	</DomainTypes>
+</Files>
