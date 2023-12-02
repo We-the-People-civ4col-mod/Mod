@@ -44,6 +44,24 @@ void CiXMLReader::ReadTextKey(const char* szTag, CvString& szText) const
 	FAssert(CvWString(szText) != gDLL->getText(szText));
 }
 
+void CiXMLReader::Read(const char* szTag, bool& bBool) const
+{
+	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
+	if (element != NULL)
+	{
+		bBool = element->BoolText();
+	}
+}
+
+void CiXMLReader::Read(const char* szTag, int& iValue) const
+{
+	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
+	if (element != NULL)
+	{
+		iValue = element->IntText();
+	}
+}
+
 const char* CiXMLReader::_ReadString(const char* szTag) const
 {
 	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);

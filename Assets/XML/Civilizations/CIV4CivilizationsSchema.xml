@@ -585,7 +585,7 @@
 		<element type="TraitInfos"/>
 	</ElementType>
 	<ElementType name="Civ4CivilizationInfos" content="eltOnly">
-		<element type="CivilizationInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="CivilizationInfos"/>
 	</ElementType>
 	<ElementType name="EarlyArtDefineTag" content="textOnly"/>
 	<ElementType name="LateArtDefineTag" content="textOnly"/>

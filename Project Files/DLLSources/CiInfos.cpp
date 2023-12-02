@@ -162,3 +162,23 @@ bool CiCivCategoryInfo::read(CiXMLReader& reader)
 	reader.Read("eCivEffect", m_eCivEffect);
 	return true;
 }
+
+CiCivilizationInfo::CiCivilizationInfo()
+	: m_bPlayable(false)
+	, m_iAreaMultiplier(0)
+{
+}
+
+bool CiCivilizationInfo::readType(CiXMLReader& reader)
+{
+	reader.Read("Type", m_szType);
+	return true;
+}
+
+bool CiCivilizationInfo::read(CiXMLReader& reader)
+{
+	reader.Read("bPlayable", m_bPlayable);
+	reader.Read("iAreaMultiplier", m_iAreaMultiplier);
+
+	return true;
+}

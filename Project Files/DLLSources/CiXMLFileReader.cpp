@@ -274,6 +274,11 @@ const char* CiXMLFileNameHolder<CivCategoryTypes>::getFileName() const
 	return "Civilizations/CivCategoryInfos.xml";
 }
 
+const char* CiXMLFileNameHolder<CivilizationTypes>::getFileName() const
+{
+	return "Civilizations/CIV4CivilizationInfos.xml";
+}
+
 const char* CiXMLFileNameHolder<DomainTypes>::getFileName() const
 {
 	return "BasicInfos/CIV4DomainInfos.xml";

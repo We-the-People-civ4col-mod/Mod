@@ -9,6 +9,7 @@
 
 struct CiGlobalsInfoContainer
 {
-	EnumMap< CivCategoryTypes, CiCivCategoryInfo> m_CivCategoryTypes;
+	EnumMap<CivilizationTypes, CiCivilizationInfo> m_CivilizationTypes;
+	EnumMap<CivCategoryTypes, CiCivCategoryInfo> m_CivCategoryTypes;
 	EnumMap<DomainTypes, CiDomainInfo> m_DomainTypes;
 };

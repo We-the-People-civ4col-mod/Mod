@@ -7,6 +7,10 @@ CiGlobals::CiGlobals(CiGlobalsInfoContainer& storage)
 }
 
 
+const CiCivilizationInfo& CiGlobals::getInfo(CivilizationTypes eCiv) const
+{
+	return m_info.m_CivilizationTypes[eCiv];
+}
 const CiCivCategoryInfo& CiGlobals::getInfo(CivCategoryTypes eCategory) const
 {
 	return m_info.m_CivCategoryTypes[eCategory];

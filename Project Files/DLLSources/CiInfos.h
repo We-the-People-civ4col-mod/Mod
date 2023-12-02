@@ -88,3 +88,16 @@ protected:
 	CvString m_szType;
 	CivEffectTypes m_eCivEffect;
 };
+
+class CiCivilizationInfo : public CiInfoBase
+{
+public:
+	CiCivilizationInfo();
+
+	bool readType(CiXMLReader& reader);
+	bool read(CiXMLReader& reader);
+private:
+	CvString m_szType;
+	bool m_bPlayable;
+	int m_iAreaMultiplier;
+};

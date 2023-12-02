@@ -21,6 +21,9 @@ public:
 	void Read(const char* szTag, CvString& szText) const;
 	void ReadTextKey(const char* szTag, CvString& szText) const;
 	
+	void Read(const char* szTag, bool& bBool) const;
+	void Read(const char* szTag, int& iValue) const;
+
 	template<typename T>
 	void Read(const char* szTag, T& type) const;
 
