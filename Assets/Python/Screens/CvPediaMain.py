@@ -467,7 +467,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 			iColumn = iCounter // nRows
 			# R&R, ray, Church
 			# if (not gc.getCivilizationInfo(item[1]).isEurope() and not item[1] == gc.getInfoTypeForString("CIVILIZATION_BARBARIAN")):
-			if not gc.getCivilizationInfo(item[1]).isEurope() and not item[1] == CivilizationTypes.CIVILIZATION_BARBARIAN and not item[1] == CivilizzationTypes.CIVILIZATION_CHURCH:
+			if not gc.getCivilizationInfo(item[1]).isEurope() and not item[1] == CivilizationTypes.CIVILIZATION_BARBARIAN and not item[1] == CivilizationTypes.CIVILIZATION_CHURCH:
 				if iRow >= iNumRows:
 					iNumRows += 1
 					screen.appendTableRow(tableName)
