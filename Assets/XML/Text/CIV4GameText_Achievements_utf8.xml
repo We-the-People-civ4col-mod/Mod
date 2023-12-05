@@ -3796,14 +3796,14 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LOGWOOD_COLLECTORS_HEAD</Tag>
-		<English>The jungle's rich colors</English>
+		<English>The jungle's rich colours</English>
 		<French>Les teintes profondes de la jungle</French>
 		<German>Des Urwalds satte Farben</German>
 		<Russian>Яркие краски джунглей</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LOGWOOD_COLLECTORS_TEXT</Tag>
-		<English>Milord, the primeval forest always holds new surprises. Not only does it offer an almost inexhaustible supply of good wood for building colonies, it also offers very special types of wood that can even be used to make paints.[NEWLINE][NEWLINE]You would do well to send your craftsmen with special skills in finding such wood species out into the jungle. Procure the wood, extract the dyes, and make fine fabrics! The new citizens of your colony will snatch them from your hands - or sell them for expensive money to Europe![NEWLINE][NEWLINE]</English>
+		<English>Milord, the primeval forest always holds new surprises. Along with an almost inexhaustible supply of lumber for building colonies, it offers special types of wood that can be used to make dyes![NEWLINE][NEWLINE]Send your botanical specialists out into the jungle to find this wood. Extract the dyes, and create fine fabrics! The citizens of your colony will snatch them from your hands - or sell them for big money to their friends in Europe![NEWLINE][NEWLINE]</English>
 		<German>Mylord, der Urwald birgt doch immer wieder neue Überraschungen. Er bietet nicht nur einen schier unerschöpflichen Vorrat an guten Hölzern für den Aufbau der Kolonien, er bietet auch ganz besonderte Holzarten, aus denen man sogar Farben herstellen kann.[NEWLINE][NEWLINE]Ihr tut gut daran, Eure Handwerker mit besonderen Fähigkeiten im Aufspüren solcher Holzarten in den Urwald ausschwärmen zu lassen. Beschafft Euch das Holz, extrahiert die Farben und stellt edle Stoffe her! Die neuen Bürger Eurer Kolonie werden sie Euch aus den Händen reißen - oder verkauft sie für teures Geld nach Europa![NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, первобытный лес всегда таит в себе новые сюрпризы. Мало того, что он предлагает почти неисчерпаемый запас хорошей древесины для строительства колоний. В некоторых местах находятся очень интересные породы дерева, которые можно использовать даже для изготовления красок.[NEWLINE][NEWLINE]Хорошо бы отправить в джунгли наших мастеров, обладающих специальными навыками в поиске таких пород дерева. Добывайте древесину, извлекайте красители и шейте прекрасные ткани! Новые жители вашей колонии вырвут их у вас из рук, ну или продадут за большие деньги в Европу![NEWLINE][NEWLINE]</Russian>
 	</TEXT>
@@ -3823,7 +3823,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_FORTS_TEXT</Tag>
-		<English>Milord, once again you have completed a palisade and one of your cities is now much better protected.[NEWLINE][NEWLINE]Keep it up, then even the last savage will understand that there is nothing to get here. But don't overdo it with the deforestation, after all the trees have to grow again, so that our colonies and our new trading fleet will still find enough wood in 1-2 years.[NEWLINE][NEWLINE]</English>
+		<English>Milord, you've erected a new palisade and five of your cities are now protected.[NEWLINE][NEWLINE]No renegade Native will dare to attack here. Build strong but don't cut down all the trees. We have other plans that demand a lot of wood.[NEWLINE][NEWLINE]</English>
 		<German>Mylord, schon wieder habt Ihr eine Palisade fertiggestellt und eine Eurer Städte ist jetzt viel besser geschützt. [NEWLINE][NEWLINE]Macht nur weiter so, dann wird auch der letzte Wilde begreifen, dass es hier nichts zu holen gibt. Übertreibt es aber mit der Abholzung der Wälder auch nicht, immerhin müssen die Bäume ja auch wieder nachwachsen, damit unsere Kolonien und unsere neue Handelsflotte auch in 1-2 Jahren noch genug Holz vorfinden. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, мы построили еще одно укрепление и теперь один из наших городов стал лучше защищен.[NEWLINE][NEWLINE]Будем продолжать в том же духе и даже самый злобный дикарь поймет, что здесь он не прорвётся. Главное, не переусердствовать с вырубкой леса, ведь деревья должны снова отрасти, чтобы наши колонии и наш новый торговый флот находили достаточно древесины через некоторое время.[NEWLINE][NEWLINE]</Russian>
 	</TEXT>
