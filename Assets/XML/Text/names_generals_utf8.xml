@@ -3,426 +3,532 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_0</Tag>
 		<English>Horatio Lloyd Gates</English>
+		<Russian>Горацио Ллойд Гейтс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_1</Tag>
 		<English>Daniel Morgan</English>
+		<Russian>Дэниел Морган</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_2</Tag>
 		<English>Charles Lee</English>
+		<Russian>Чарльз Ли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_3</Tag>
-		<English>Daniel Morgan</English>
+		<English>William Henry</English>
+		<Russian>Уильям Генри</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_4</Tag>
 		<English>Arthur St. Clair</English>
+		<Russian>Артур Сент-Клер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_5</Tag>
 		<English>Seth Warner</English>
+		<Russian>Сет Уорнер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_6</Tag>
 		<English>Nicholas Herkimer</English>
+		<Russian>Николас Херкимер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_7</Tag>
 		<English>Nathanael Greene</English>
+		<Russian>Натанаэль Грин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_8</Tag>
 		<English>Edward Braddock</English>
+		<Russian>Эдвард Брэддок</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_9</Tag>
 		<English>Richard Montgomery</English>
+		<Russian>Ричард Монтгомери</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_10</Tag>
 		<English>James Wolfe</English>
+		<Russian>Джеймс Вульф</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_11</Tag>
 		<English>Henry Knox</English>
+		<Russian>Генри Нокс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_12</Tag>
 		<English>George Rogers Clark</English>
+		<Russian>Джордж Роджерс Кларк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_13</Tag>
 		<English>Anthony Wayne</English>
+		<Russian>Энтони Уэйн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_14</Tag>
 		<English>Thomas Conway</English>
+		<Russian>Томас Конвей</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_15</Tag>
 		<English>Josiah Harmar</English>
+		<Russian>Джозайя Хармар</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_16</Tag>
 		<English>John Sullivan</English>
+		<Russian>Джон Салливан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_17</Tag>
 		<English>David Wooster</English>
+		<Russian>Дэвид Вустер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_18</Tag>
 		<English>Francis Marion</English>
+		<Russian>Фрэнсис Мэрион</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_19</Tag>
 		<English>William Alexander</English>
+		<Russian>Уильям Александр</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_20</Tag>
 		<English>John Cadwalader</English>
+		<Russian>Джон Кадуолладер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_21</Tag>
 		<English>Enoch Poor</English>
+		<Russian>Енох Пур</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_GENERAL_22</Tag>
 		<English>James Abercrombie</English>
+		<Russian>Джеймс Аберкромби</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_0</Tag>
 		<English>Chevalier de Mercy</English>
+		<Russian>Шевалье де Мерси</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_1</Tag>
 		<English>Jean-Baptiste Le Moyne de Bienville</English>
+		<Russian>Жан-Батист Ле Муан де Бьенвиль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_2</Tag>
 		<English>Comte de La Galissoniere</English>
+		<Russian>Граф де Ла Галиссоньер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_3</Tag>
 		<English>Pierre François de Rigaud</English>
+		<Russian>Пьер Франсуа де Риго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_4</Tag>
 		<English>Louis-Joseph de Montcalm</English>
+		<Russian>Луи-Жозеф де Монкальм</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_5</Tag>
 		<English>Jean-Baptiste-Donatien de Rochambeau</English>
+		<Russian>Жан-Батист-Донатьен де Рошамбо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_6</Tag>
 		<English>Joseph Coulon de Jumonville</English>
+		<Russian>Жозеф Кулон де Жюмонвиль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_7</Tag>
 		<English>Francis de Gaston</English>
+		<Russian>Фрэнсис де Гастон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_8</Tag>
 		<English>Jean-Baptiste de Vimeur</English>
+		<Russian>Жан-Батист де Вимер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_9</Tag>
 		<English>Armand Louis de Gontaut</English>
+		<Russian>Арман Луи де Гонто</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_10</Tag>
 		<English>François-Jean de Chastellux</English>
+		<Russian>Франсуа-Жан де Шастеллукс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_11</Tag>
 		<English>Antoine-Charles du Houx</English>
+		<Russian>Антуан-Шарль дю У</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_12</Tag>
 		<English>Charles du Houx de Vioménil</English>
+		<Russian>Шарль дю У де Виомениль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_13</Tag>
 		<English>François-Marie Le Marchand de Lignery</English>
+		<Russian>Франсуа-Мари Ле Маршан де Линьери</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_14</Tag>
 		<English>Michel-Ange de Menneville</English>
+		<Russian>Мишель-Анж де Менневиль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_15</Tag>
 		<English>Daniel de Beaujeu</English>
+		<Russian>Даниэль де Боже</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_GENERAL_16</Tag>
 		<English>Charles Tuffin</English>
+		<Russian>Чарльз Таффин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_0</Tag>
 		<English>Sebastian de Miranda Rodríguez</English>
+		<Russian>Себастьян де Миранда Родригес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_1</Tag>
 		<English>Carlos Soublette</English>
+		<Russian>Карлос Сублетт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_2</Tag>
 		<English>José Francisco Bermúdez</English>
+		<Russian>Хосе Франсиско Бермудес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_3</Tag>
 		<English>Rafael Urdaneta</English>
+		<Russian>Рафаэль Урданета</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_4</Tag>
 		<English>Antonio Nariño</English>
+		<Russian>Антонио Нариньо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_5</Tag>
 		<English>Francisco de Paula Santander</English>
+		<Russian>Франсиско де Паула Сантандер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_6</Tag>
-		<English>José Antonio Páez </English>
+		<English>José Antonio Páez</English>
+		<Russian>Хосе Антонио Паес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_7</Tag>
 		<English>Bernardo de Gálvez</English>
+		<Russian>Бернардо де Гальвес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_8</Tag>
 		<English>Matías de Gálvez</English>
+		<Russian>Матиас де Гальвес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_9</Tag>
 		<English>Esteban Rodríguez Miró</English>
+		<Russian>Эстебан Родригес Миро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_10</Tag>
 		<English>Luis de Unzaga</English>
+		<Russian>Луис де Унсага</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_GENERAL_11</Tag>
 		<English>Francisco de Miranda</English>
+		<Russian>Франсиско де Миранда</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_0</Tag>
 		<English>Willem Kieft</English>
+		<Russian>Виллем Кифт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_1</Tag>
 		<English>Cornelis Jacobszoon May</English>
+		<Russian>Корнелис Якобсзон Мэй</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_2</Tag>
 		<English>Adrian Joriszoon Thienpont</English>
+		<Russian>Адриан Йорисун Тьенпонт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_3</Tag>
 		<English>Abraham Crijnssen</English>
+		<Russian>Авраам Крайнссен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_4</Tag>
 		<English>Siegmund von Schkoppe</English>
+		<Russian>Зигмунд фон Шкоппе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_5</Tag>
 		<English>Johannes Heinisius</English>
+		<Russian>Йоханнес Хейнисиус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_6</Tag>
 		<English>Wouter van Twiller</English>
+		<Russian>Воутер ван Твиллер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_7</Tag>
 		<English>Sebastiaen Jansen Krol</English>
+		<Russian>Себастьян Янсен Крол</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_8</Tag>
 		<English>Willem Verhulst</English>
+		<Russian>Виллем Верхюльст</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_9</Tag>
 		<English>Brant Aertzsz van Slechtenhorst</English>
+		<Russian>Брант Аертц ван Слехтенхорст</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_10</Tag>
 		<English>Johan Maurits</English>
+		<Russian>Йохан Мауриц</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_11</Tag>
 		<English>Elias Herkmans</English>
+		<Russian>Элиас Херкманс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_GENERAL_12</Tag>
 		<English>Hendrik van Haus</English>
+		<Russian>Хендрик ван Хаус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_0</Tag>
 		<English>Matias de Albuquerque</English>
+		<Russian>Матиас де Альбукерке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_1</Tag>
 		<English>Fernandes Vieira</English>
+		<Russian>Фернандес Виейра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_2</Tag>
 		<English>André Vidal de Negreiros</English>
+		<Russian>Андре Видаль де Негрейрос</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_3</Tag>
 		<English>Henrique Dias</English>
+		<Russian>Энрике Диас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_4</Tag>
 		<English>António Filipe Camarão</English>
+		<Russian>Антониу Филипе Камарао</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_5</Tag>
 		<English>Afonso Sardinha</English>
+		<Russian>Афонсу Сардинья</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_6</Tag>
 		<English>Antonio Dias Adorno</English>
+		<Russian>Антонио Диас Адорно</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_7</Tag>
 		<English>Antonio Dias de Oliveira</English>
+		<Russian>Антонио Диас де Оливейра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_8</Tag>
 		<English>Bartolomeu Bueno da Silva</English>
+		<Russian>Бартоломеу Буэно да Силва</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_9</Tag>
 		<English>Belchior Dias Moria</English>
+		<Russian>Бельхиор Диас Мория</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_10</Tag>
 		<English>Manuel da Borba Gato</English>
+		<Russian>Мануэль да Борба Гато</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_11</Tag>
 		<English>Domingos Jorge Velho</English>
+		<Russian>Домингуш Хорхе Велью</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_12</Tag>
 		<English>Fernandes Tourinho</English>
+		<Russian>Фернандес Туриньо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_13</Tag>
 		<English>Ferno Dias Pais</English>
+		<Russian>Ферно Диас Паис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_14</Tag>
 		<English>Francisco Dias Velho</English>
+		<Russian>Франсиско Диас Велью</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_15</Tag>
 		<English>Henrique da Cunha Gago</English>
+		<Russian>Энрике да Кунья Гаго</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_16</Tag>
 		<English>Manuel Preto</English>
+		<Russian>Мануэль Прето</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_17</Tag>
 		<English>Pascoal Moreira Cabral</English>
+		<Russian>Паскоаль Морейра Кабрал</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_GENERAL_18</Tag>
 		<English>Antonio Raposo Tavares</English>
+		<Russian>Антонио Рапосо Таварес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_0</Tag>
 		<English>Camus</English>
+		<Russian>Камю</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_1</Tag>
 		<English>Axel Urup</English>
+		<Russian>Аксель Уруп</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_2</Tag>
 		<English>Anders Bille</English>
+		<Russian>Андерс Билле</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_3</Tag>
 		<English>Vincens Budde</English>
+		<Russian>Винсенс Бадде</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_4</Tag>
 		<English>Prince Christian of Hesse</English>
+		<Russian>Принц Кристиан Гессенский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_5</Tag>
 		<English>Johan Caspar von Cicignon</English>
+		<Russian>Йохан Каспар фон Чициньон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_6</Tag>
 		<English>Johann Ewald</English>
+		<Russian>Иоганн Эвальд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_7</Tag>
 		<English>Svend Poulsen Gonge</English>
+		<Russian>Свенд Поульсен Гонж</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_GENERAL_8</Tag>
 		<English>Caspar Herman Hausemann</English>
+		<Russian>Каспар Герман Хаусеманн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_0</Tag>
 		<English>Otto Louis of Salm</English>
+		<Russian>Отто Луи из Зальма</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_1</Tag>
 		<English>Knut Jonsson Posse</English>
+		<Russian>Кнут Йонссон Поссе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_2</Tag>
 		<English>Henrik von Rehbinder</English>
+		<Russian>Хенрик фон Ребиндер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_3</Tag>
 		<English>Jindrich Matyas Thurn-Valsassina</English>
+		<Russian>Йиндрих Матьяс Турн-Валсассина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_4</Tag>
 		<English>Count Nils Brahe</English>
+		<Russian>Граф Нильс Браге</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_5</Tag>
 		<English>Carl Gustaf Armfeldt</English>
+		<Russian>Карл Густав Армфельдт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_6</Tag>
 		<English>Goeran Silfverhielm</English>
+		<Russian>Геран Сильфверхильм</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_7</Tag>
 		<English>Johan August Meijerfeldt</English>
+		<Russian>Йохан Август Мейерфельдт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_8</Tag>
 		<English>Arvid Axel Mardefelt</English>
+		<Russian>Арвид Аксель Мардефельт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_9</Tag>
 		<English>Magnus De la Gardie</English>
+		<Russian>Магнус Де ла Гарди</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_10</Tag>
 		<English>Berendt von Mehlen</English>
+		<Russian>Берендт фон Мелен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_11</Tag>
 		<English>Lars Eriksson</English>
+		<Russian>Ларс Эрикссон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_GENERAL_12</Tag>
 		<English>Gustav Horn</English>
+		<Russian>Густав Хорн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_0</Tag>
@@ -472,394 +578,477 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_9</Tag>
 		<English>General Grigory Kosagov</English>
-		<Russian>Генерал Григорий Косагов</Russian>
+		<Russian>Григорий Косагов</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_10</Tag>
 		<English>General Alexey Golovin</English>
-		<Russian>Генерал Алексей Головин</Russian>
+		<Russian>Алексей Головин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_11</Tag>
 		<English>General Matvey Krovkov</English>
-		<Russian>Генерал Матвей Кровков</Russian>
+		<Russian>Матвей Кровков</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_12</Tag>
 		<English>General Franz Lefort</English>
-		<Russian>Генерал Франц Лефорт</Russian>
+		<Russian>Франц Лефорт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_13</Tag>
 		<English>General Bogdan Korsak</English>
-		<Russian>Генерал Богдан Корсак</Russian>
+		<Russian>Богдан Корсак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_14</Tag>
 		<English>General Alexey Shein</English>
-		<Russian>Генерал Алексей Шеин</Russian>
+		<Russian>Алексей Шеин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_15</Tag>
 		<English>General Ivan Koltsov-Mosalsky</English>
-		<Russian>Генерал Иван Кольцов-Мосальский</Russian>
+		<Russian>Иван Кольцов-Мосальский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_16</Tag>
 		<English>General Yakov Polonsky</English>
-		<Russian>Генерал Яков Полонский</Russian>
+		<Russian>Яков Полонский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_17</Tag>
 		<English>General Nikolai von Werden</English>
-		<Russian>Генерал Николай фон Верден</Russian>
+		<Russian>Николай фон Верден</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_18</Tag>
 		<English>General Ivan Buturlin</English>
-		<Russian>Генерал Иван Бутурлин</Russian>
+		<Russian>Иван Бутурлин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_19</Tag>
 		<English>General Andrey Gulits</English>
-		<Russian>Генерал Андрей Гулиц</Russian>
+		<Russian>Андрей Гулиц</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_20</Tag>
 		<English>General Ivan Gorbov</English>
-		<Russian>Генерал Иван Горбов</Russian>
+		<Russian>Иван Горбов</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_0</Tag>
 		<English>John Burgoyne</English>
+		<Russian>Джон Бергойн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_1</Tag>
 		<English>William Johnson</English>
+		<Russian>Уильям Джонсон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_2</Tag>
 		<English>Henry Clinton</English>
+		<Russian>Генри Клинтон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_3</Tag>
 		<English>William Howe</English>
+		<Russian>Уильям Хоу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_4</Tag>
 		<English>Simon Fraser</English>
+		<Russian>Саймон Фрейзер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_5</Tag>
 		<English>William Phillips</English>
+		<Russian>Уильям Филлипс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_6</Tag>
 		<English>Jeffrey Amherst</English>
+		<Russian>Джеффри Амхерст</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_7</Tag>
 		<English>James Wolfe</English>
+		<Russian>Джеймс Вульф</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_8</Tag>
 		<English>Charles Cornwallis</English>
+		<Russian>Чарльз Корнуоллис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_9</Tag>
 		<English>George Augustus Howe</English>
+		<Russian>Джордж Огастес Хау</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_10</Tag>
 		<English>Thomas Gage</English>
+		<Russian>Томас Гейдж</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_11</Tag>
 		<English>Edward Braddock</English>
+		<Russian>Эдвард Брэддок</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_12</Tag>
 		<English>Henry Seymour Conway</English>
+		<Russian>Генри Сеймур Конвей</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_13</Tag>
 		<English>George Augustus Eliott</English>
+		<Russian>Джордж Огастес Элиотт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_14</Tag>
 		<English>Robert Monckton</English>
+		<Russian>Роберт Монктон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_15</Tag>
 		<English>Guy Carleton</English>
+		<Russian>Гай Карлтон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_16</Tag>
 		<English>James Grant</English>
+		<Russian>Джеймс Грант</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_17</Tag>
 		<English>Thomas Wentworth</English>
+		<Russian>Томас Вентворт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_18</Tag>
 		<English>Benedict Arnold</English>
+		<Russian>Бенедикт Арнольд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_0</Tag>
 		<English>Friedrich von Schomberg</English>
+		<Russian>Фридрих фон Шомберг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_1</Tag>
 		<English>Louis de Bourbon-Penthievre</English>
+		<Russian>Луи де Бурбон-Пентьевр</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_2</Tag>
 		<English>Louis Augustin d'Affry</English>
+		<Russian>Луи Огюстен д'Аффри</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_3</Tag>
 		<English>Jean Le Miceaud d'Aron</English>
+		<Russian>Жан Ле Мисо д'Арон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_4</Tag>
 		<English>Armand Fouquet</English>
+		<Russian>Арман Фуке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_5</Tag>
 		<English>Peter von Besenval</English>
+		<Russian>Петер фон Безенваль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_6</Tag>
 		<English>Armand-Louis de Gontaut</English>
+		<Russian>Арман-Луи де Гонто</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_7</Tag>
 		<English>Louis II. de Bourbon</English>
+		<Russian>Людовик II де Бурбон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_8</Tag>
 		<English>Louis de Bourbon-Cond</English>
+		<Russian>Луи де Бурбон-Конд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_9</Tag>
 		<English>René Duguay-Trouin</English>
+		<Russian>Рене Дюге-Труэн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_10</Tag>
 		<English>Jacques Dugommier</English>
+		<Russian>Жак Дюгомье</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_11</Tag>
 		<English>Victor-Marie d'Estres</English>
+		<Russian>Виктор-Мари д'Эстр</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_12</Tag>
 		<English>Charles Fouquet</English>
+		<Russian>Шарль Фуке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_13</Tag>
 		<English>Louis Fouquet</English>
+		<Russian>Луи Фуке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_14</Tag>
 		<English>Charles Patissier</English>
+		<Russian>Шарль Патисье</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_15</Tag>
 		<English>Joseph Dupleix</English>
+		<Russian>Жозеф Дюпле</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE_GENERAL_16</Tag>
 		<English>Claude de Villars</English>
+		<Russian>Клод де Виллар</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_0</Tag>
 		<English>Juan Domingo de Monteverde</English>
+		<Russian>Хуан Доминго де Монтеверде</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_1</Tag>
 		<English>Miguel de la Torre</English>
+		<Russian>Мигель де ла Торре</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_2</Tag>
 		<English>Francisco Tomás Morales</English>
+		<Russian>Франсиско Томас Моралес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_3</Tag>
 		<English>Ambrosio Spinola</English>
+		<Russian>Амбросио Спинола</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_4</Tag>
 		<English>Luis Méndez de Haro</English>
+		<Russian>Луис Мендес де Аро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_5</Tag>
 		<English>Juan José de Austria</English>
+		<Russian>Хуан Хосе де Австрия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_6</Tag>
 		<English>Martín Álvarez de Sotomayor</English>
+		<Russian>Мартин Альварес де Сотомайор</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE_GENERAL_7</Tag>
 		<English>Rafael Conti</English>
+		<Russian>Рафаэль Конти</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_0</Tag>
 		<English>Ludwig von Nassau-Dillenburg</English>
+		<Russian>Людвиг фон Нассау-Дилленбург</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_1</Tag>
 		<English>Ludwig von Boisot</English>
+		<Russian>Людвиг фон Бойсо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_2</Tag>
 		<English>Johann Wolfart van Brederode</English>
+		<Russian>Иоганн Вольфарт ван Бредероде</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_3</Tag>
 		<English>Theodorus Frederik van Capellen</English>
+		<Russian>Теодор Фредерик ван Капеллен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_4</Tag>
 		<English>Francois Nicolaas Fagel</English>
+		<Russian>Франсуа Николаас Фагель</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_5</Tag>
 		<English>Reinhardt Vincent von Hompesch</English>
+		<Russian>Рейнхардт Винсент фон Хомпеш</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_6</Tag>
 		<English>Niels Juel</English>
+		<Russian>Нильс Юэль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_7</Tag>
 		<English>Justinus von Nassau</English>
+		<Russian>Юстинус фон Нассау</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_8</Tag>
 		<English>Albrecht Graf zu Schaumburg-Lippe</English>
+		<Russian>Альбрехт Граф цу Шаумбург-Липпе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_9</Tag>
 		<English>Ludwig von Nassau-Dillenburg</English>
+		<Russian>Людвиг фон Нассау-Дилленбург</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE_GENERAL_10</Tag>
 		<English>Heinrich von Nassau-Ouwerkerk</English>
+		<Russian>Генрих фон Нассау-Ауверкерк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_0</Tag>
 		<English>Antonio Lus de Meneses</English>
+		<Russian>Антонио Лус де Менесес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_1</Tag>
 		<English>João de Castro</English>
+		<Russian>Жоау де Кастро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_2</Tag>
 		<English>Gomes Freire de Andrade</English>
+		<Russian>Гомес Фрейре де Андраде</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_3</Tag>
 		<English>Antonio Lus de Sousa</English>
+		<Russian>Антонио Лус де Соуза</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_4</Tag>
 		<English>Antonio de Saldanha</English>
+		<Russian>Антонио де Салданья</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_5</Tag>
 		<English>Antonio Correia</English>
+		<Russian>Антонио Коррейя</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_6</Tag>
 		<English>Martim Afonso de Castro</English>
+		<Russian>Мартим Афонсу де Кастро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_GENERAL_7</Tag>
 		<English>Johann Heinrich Böhm</English>
+		<Russian>Иоганн Генрих Бём</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_0</Tag>
 		<English>Nils Eriksson Gyldenstjerne</English>
+		<Russian>Нильс Эрикссон Гильденстьерне</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_1</Tag>
 		<English>Karl Christian von Trampe</English>
+		<Russian>Карл Кристиан фон Трампе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_2</Tag>
 		<English>P.C. Lilienskiold</English>
+		<Russian>П.К. Лилиеншельд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_3</Tag>
 		<English>Frands Brockenhuus</English>
+		<Russian>Франдс Брокенхуус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_4</Tag>
 		<English>Iver Huitfeldt</English>
+		<Russian>Ивер Хуитфельдт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_5</Tag>
 		<English>Svend Poulsen Gonge</English>
+		<Russian>Свенд Поульсен Гонж</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_6</Tag>
 		<English>Martin von Falkenskjold</English>
+		<Russian>Мартин фон Фалькеншельд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_7</Tag>
 		<English>Christian af Holstein</English>
+		<Russian>Кристиан аф-Гольштейн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_GENERAL_8</Tag>
 		<English>Holger Rosenkrantz</English>
+		<Russian>Хольгер Розенкранц</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_0</Tag>
 		<English>Hemming Gadh</English>
+		<Russian>Хемминг Гад</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_1</Tag>
 		<English>Johan Tre Rosor</English>
+		<Russian>Йохан Тре Росор</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_2</Tag>
 		<English>Karl Horn</English>
+		<Russian>Карл Хорн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_3</Tag>
 		<English>Carl Gustaf Wrangel</English>
+		<Russian>Карл Густав Врангель</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_4</Tag>
 		<English>Arvid Wittenberg</English>
+		<Russian>Арвид Виттенберг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_5</Tag>
 		<English>Agustin Ehrensvard</English>
+		<Russian>Агустин Эренсвард</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_6</Tag>
 		<English>Fredrik von Fersen</English>
+		<Russian>Фредрик фон Ферсен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_7</Tag>
 		<English>Henrik af Trolle</English>
+		<Russian>Хенрик аф Тролле</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_8</Tag>
 		<English>Carl J. Adlercreutz</English>
+		<Russian>Карл Дж. Адлеркройц</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_9</Tag>
 		<English>Lennart Torstensson</English>
+		<Russian>Леннарт Торстенссон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_GENERAL_10</Tag>
 		<English>Johan Baner</English>
+		<Russian>Йохан Банер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_0</Tag>
@@ -894,989 +1083,1236 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_GENERAL_0</Tag>
 		<English>Deadly Piranha</English>
+		<Russian>Смертоносная пиранья</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_GENERAL_1</Tag>
 		<English>Great Jaguar</English>
+		<Russian>Великий ягуар</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_GENERAL_2</Tag>
 		<English>Great Tapir</English>
+		<Russian>Великий Тапир</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_0</Tag>
 		<English>Hatuey</English>
+		<Russian>Хатуэй</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_1</Tag>
 		<English>Guarocuya</English>
+		<Russian>Гуарокуя</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_2</Tag>
 		<English>Urayoán</English>
+		<Russian>Урайоан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_3</Tag>
 		<English>Guarionex</English>
+		<Russian>Гуарионекс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_4</Tag>
 		<English>Jumacao</English>
+		<Russian>Хумакао</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_0</Tag>
 		<English>Ahuitzotl</English>
+		<Russian>Ауисотль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_1</Tag>
 		<English>Nezahualpilli</English>
+		<Russian>Несауальпилли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_2</Tag>
 		<English>Cuitláhuac</English>
+		<Russian>Куитлауак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_3</Tag>
 		<English>Cuauhtémoc</English>
+		<Russian>Куаутемок</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_4</Tag>
 		<English>Ixtlilxochitl</English>
+		<Russian>Иштлильшочитль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC_GENERAL_5</Tag>
 		<English>Tizoc</English>
+		<Russian>Тизок</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_0</Tag>
 		<English>Atahualpa</English>
+		<Russian>Атауальпа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_1</Tag>
 		<English>Rumiñahui</English>
+		<Russian>Руминьяуи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_2</Tag>
 		<English>Chalcuchimac</English>
+		<Russian>Чалкучимак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_3</Tag>
 		<English>Manco Cápac</English>
+		<Russian>Манко Капак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_4</Tag>
 		<English>Tupac Amaru</English>
+		<Russian>Тупак Амару</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INCA_GENERAL_5</Tag>
 		<English>Ninan Cuyochi</English>
+		<Russian>Нинан Коючи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_0</Tag>
 		<English>Geronimo</English>
+		<Russian>Джеронимо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_1</Tag>
 		<English>Cochise</English>
+		<Russian>Кочиз</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_2</Tag>
 		<English>Naiche</English>
+		<Russian>Найче</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_3</Tag>
 		<English>Nana</English>
+		<Russian>Нана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_4</Tag>
 		<English>Ulzana</English>
+		<Russian>Ульзана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_5</Tag>
 		<English>Chato</English>
+		<Russian>Чато</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_6</Tag>
 		<English>Nokedaklinne</English>
+		<Russian>Нокедаклинне</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_APACHE_GENERAL_7</Tag>
 		<English>Hashkaila</English>
+		<Russian>Хашкайла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_0</Tag>
 		<English>Little Crow</English>
+		<Russian>Маленькая Ворона</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_1</Tag>
 		<English>Red Cloud</English>
+		<Russian>Красное Облако</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_2</Tag>
 		<English>High Backbone</English>
+		<Russian>Высокий позвоночник</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_3</Tag>
 		<English>Crazy Horse</English>
+		<Russian>Бешеная лошадь</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_4</Tag>
 		<English>Gall</English>
+		<Russian>Галль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_5</Tag>
 		<English>Waneta</English>
+		<Russian>Ванета</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_6</Tag>
 		<English>Big Eagle</English>
+		<Russian>Большой Орел</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_7</Tag>
 		<English>Rain-in-the-Face</English>
+		<Russian>Лицо дождя</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_8</Tag>
 		<English>Big Foot</English>
+		<Russian>Большая нога</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_0</Tag>
 		<English>Chief Bowl</English>
+		<Russian>Вождь Боул</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_1</Tag>
 		<English>Attakullakulla</English>
+		<Russian>Аттакуллакулла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_2</Tag>
 		<English>Guwisguwi</English>
+		<Russian>Гувисгуви</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_3</Tag>
 		<English>Black Fox</English>
+		<Russian>Черная лисица</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_4</Tag>
 		<English>Kunagadoga</English>
+		<Russian>Кунагадога</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_5</Tag>
 		<English>Sequoyah</English>
+		<Russian>Секвойя</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_0</Tag>
 		<English>Canaqueese</English>
+		<Russian>Канакезе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_1</Tag>
 		<English>Thayendanegea</English>
+		<Russian>Тайенданегеа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_2</Tag>
 		<English>Segoyewatha</English>
+		<Russian>Сагоеваватха</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_3</Tag>
 		<English>Tododaho</English>
+		<Russian>Тадодахо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_4</Tag>
 		<English>Black Snake</English>
+		<Russian>Черная змея</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_5</Tag>
 		<English>Garakonthie</English>
+		<Russian>Гараконти</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_6</Tag>
 		<English>Red Head</English>
+		<Russian>Рыжая голова</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_7</Tag>
 		<English>Skenandoa</English>
+		<Russian>Скенандоа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_8</Tag>
 		<English>Skandawati</English>
+		<Russian>Скандавати</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_0</Tag>
 		<English>Jacinto Canek</English>
+		<Russian>Хасинто Канек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_1</Tag>
 		<English>Cecilio Chi</English>
+		<Russian>Сесилио Чи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_2</Tag>
 		<English>Crescencio Poot</English>
+		<Russian>Кресенсио Пут</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_3</Tag>
 		<English>Hunahau</English>
+		<Russian>Хунахау</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_4</Tag>
 		<English>Hunapu</English>
+		<Russian>Хунапу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_5</Tag>
 		<English>Gonzalo Guerrero</English>
+		<Russian>Гонсало Герреро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_6</Tag>
 		<English>Tecn Umn</English>
+		<Russian>Текн Умн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_7</Tag>
 		<English>Napuk Chi</English>
+		<Russian>Напук Чи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAYA_GENERAL_8</Tag>
 		<English>Kayb'il B'alam</English>
+		<Russian>Кайб'ил Б'алам</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_0</Tag>
 		<English>Lautaro</English>
+		<Russian>Лаутаро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_1</Tag>
 		<English>Caupolican</English>
+		<Russian>Кауполикан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_2</Tag>
 		<English>Galvarino</English>
+		<Russian>Гальварино</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_3</Tag>
 		<English>Ainavillo</English>
+		<Russian>Айнавилло</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_4</Tag>
 		<English>Butapichon</English>
+		<Russian>Бутапичон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_5</Tag>
 		<English>Chechehet</English>
+		<Russian>Чечехет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_6</Tag>
 		<English>Colo-Colo</English>
+		<Russian>Коло-Коло</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_7</Tag>
 		<English>Curinancu</English>
+		<Russian>Куринанку</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_8</Tag>
 		<English>Didiuhet</English>
+		<Russian>Дидюэ</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_9</Tag>
 		<English>Illangulién</English>
+		<Russian>Иллангулиен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_10</Tag>
 		<English>Lemucaguin</English>
+		<Russian>Лемукагин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_11</Tag>
 		<English>Lientur</English>
+		<Russian>Лиентур</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_12</Tag>
 		<English>Llanganabal</English>
+		<Russian>Лланганабал</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_13</Tag>
 		<English>Loble</English>
+		<Russian>Лобле</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_14</Tag>
 		<English>Malloquete</English>
+		<Russian>Маллокет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_15</Tag>
 		<English>Mestizo Alejo</English>
+		<Russian>Метис Алехо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_16</Tag>
 		<English>Millalelmo</English>
+		<Russian>Миллаельмо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_17</Tag>
 		<English>Paillamachu</English>
+		<Russian>Пайламачу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_18</Tag>
 		<English>Pelantaru</English>
+		<Russian>Пелантару</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_19</Tag>
 		<English>Taluhet</English>
+		<Russian>Талухет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_20</Tag>
 		<English>Turcupichun</English>
+		<Russian>Туркупичун</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE_GENERAL_21</Tag>
 		<English>Vilumilla</English>
+		<Russian>Вилумилла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_0</Tag>
 		<English>Quiruba</English>
+		<Russian>Кируба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_1</Tag>
 		<English>Yahuarmaqui</English>
+		<Russian>Яуармаки</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_2</Tag>
 		<English>Tsere</English>
+		<Russian>Цере</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_3</Tag>
 		<English>Kunamp</English>
+		<Russian>Кунамп</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_4</Tag>
 		<English>Patach</English>
+		<Russian>Патах</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_5</Tag>
 		<English>Sumpa</English>
+		<Russian>Сумпа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_6</Tag>
 		<English>Kujancham</English>
+		<Russian>Куянчам</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_7</Tag>
 		<English>Tsentsak</English>
+		<Russian>Ценцак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_8</Tag>
 		<English>Etsa</English>
+		<Russian>Эца</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_9</Tag>
 		<English>Uwishin</English>
+		<Russian>Увишин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_10</Tag>
 		<English>Kakaram</English>
+		<Russian>Какарам</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_11</Tag>
 		<English>Musiak</English>
+		<Russian>Мусяк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR_GENERAL_12</Tag>
 		<English>Nekas</English>
+		<Russian>Некас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_0</Tag>
 		<English>Tiggak</English>
+		<Russian>Тиггак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_1</Tag>
 		<English>Akigsiak</English>
+		<Russian>Акигсиак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_2</Tag>
 		<English>Namak</English>
+		<Russian>Намак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_3</Tag>
 		<English>Pisagsak</English>
+		<Russian>Писагсак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_4</Tag>
 		<English>Akutak</English>
+		<Russian>Акутак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_5</Tag>
 		<English>Manik</English>
+		<Russian>Маник</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INUIT_GENERAL_6</Tag>
 		<English>Saugak</English>
+		<Russian>Саугак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_0</Tag>
 		<English>Magua</English>
+		<Russian>Магуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_1</Tag>
 		<English>Acona</English>
+		<Russian>Акона</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_2</Tag>
 		<English>Ochastequin</English>
+		<Russian>Очастекин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_3</Tag>
 		<English>Atironta</English>
+		<Russian>Атиронта</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_4</Tag>
 		<English>Donnacona</English>
+		<Russian>Доннакона</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_5</Tag>
 		<English>Anenkhiondic</English>
+		<Russian>Аненхиондический</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_6</Tag>
 		<English>Tsondakina</English>
+		<Russian>Цондакина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON_GENERAL_7</Tag>
 		<English>Pieskaret</English>
+		<Russian>Пискарет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_GENERAL_0</Tag>
 		<English>Maxin</English>
+		<Russian>Максин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_GENERAL_1</Tag>
 		<English>Huijatoo</English>
+		<Russian>Хуиджату</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_GENERAL_2</Tag>
 		<English>Zaachila</English>
+		<Russian>Заахила</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_GENERAL_3</Tag>
 		<English>Cocijopii</English>
+		<Russian>Кочижопи</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_GENERAL_4</Tag>
 		<English>Nucano</English>
+		<Russian>Нукано</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC_GENERAL_5</Tag>
 		<English>Laamasii</English>
+		<Russian>Лаамасии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_GENERAL_0</Tag>
 		<English>Nisio</English>
+		<Russian>Нисио</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_GENERAL_1</Tag>
 		<English>Nhech</English>
+		<Russian>Нхеч</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_GENERAL_2</Tag>
 		<English>Apiaguaiki</English>
+		<Russian>Апиагуайки</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_GENERAL_3</Tag>
 		<English>Etiguara</English>
+		<Russian>Этигуара</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI_GENERAL_4</Tag>
 		<English>Tuma</English>
+		<Russian>Тума</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_GENERAL_0</Tag>
 		<English>Caonabo</English>
+		<Russian>Каонабо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_GENERAL_1</Tag>
 		<English>Hyarima</English>
+		<Russian>Хьярима</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_GENERAL_2</Tag>
 		<English>Queskeya</English>
+		<Russian>Кескея</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_GENERAL_3</Tag>
 		<English>Hyarema</English>
+		<Russian>Хьярема</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_GENERAL_4</Tag>
 		<English>Ahameke</English>
+		<Russian>Ахамеке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS_GENERAL_5</Tag>
 		<English>Jaureybo II</English>
+		<Russian>Хорейбо II</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_GENERAL_0</Tag>
 		<English>Na'yei na'zone</English>
+		<Russian>На'йей на'зоне</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_GENERAL_1</Tag>
 		<English>Nai'dikisi</English>
+		<Russian>Най'дикиси</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_GENERAL_2</Tag>
 		<English>Tqo bajishchini</English>
+		<Russian>Тко бажищини</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_GENERAL_3</Tag>
 		<English>Bad'ni</English>
+		<Russian>Бад'ни</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_GENERAL_4</Tag>
 		<English>Tqo toko je</English>
+		<Russian>Тко токо же</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO_GENERAL_5</Tag>
 		<English>Ndso doko</English>
+		<Russian>Ндсо доко</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_0</Tag>
 		<English>Opechancanough</English>
+		<Russian>Опечанканоф</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_1</Tag>
 		<English>Assacumbuit</English>
+		<Russian>Ассакамбуит</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_2</Tag>
 		<English>Paugus</English>
+		<Russian>Паугус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_3</Tag>
 		<English>Mehkskeme-Sukahs</English>
+		<Russian>Мехскеме-Сукас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_4</Tag>
 		<English>Black Kettle</English>
+		<Russian>Черный котёл</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_5</Tag>
 		<English>Tepastenam</English>
+		<Russian>Тепастенам</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_6</Tag>
 		<English>Tecumseh</English>
+		<Russian>Текумсе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_7</Tag>
 		<English>Pontiac</English>
+		<Russian>Понтиак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_8</Tag>
 		<English>Cheeseekau</English>
+		<Russian>Чизикау</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_9</Tag>
 		<English>Metacomet</English>
+		<Russian>Метакомета</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_10</Tag>
 		<English>Massasoit</English>
+		<Russian>Массасойт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN_GENERAL_11</Tag>
 		<English>Wassamapah</English>
+		<Russian>Вассамапах</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_GENERAL_0</Tag>
 		<English>Aparia</English>
+		<Russian>Апария</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_GENERAL_1</Tag>
 		<English>Ica</English>
+		<Russian>Ика</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_GENERAL_2</Tag>
 		<English>Dirimara</English>
+		<Russian>Диримара</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_GENERAL_3</Tag>
 		<English>Paytiti</English>
+		<Russian>Пайтити</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO_GENERAL_4</Tag>
 		<English>Paguana</English>
+		<Russian>Пагуана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_0</Tag>
 		<English>Eight Deer</English>
+		<Russian>Восьмой Олень</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_1</Tag>
 		<English>Twelve Earthquake</English>
+		<Russian>Двенадцатое землетрясение</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_2</Tag>
 		<English>Five Crocodile</English>
+		<Russian>Пятый крокодил</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_3</Tag>
 		<English>Eight Crocodile</English>
+		<Russian>Восьмой крокодил</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_4</Tag>
 		<English>Nine Flower</English>
+		<Russian>Девятый Цветок</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_5</Tag>
 		<English>Eleven Wind</English>
+		<Russian>Одиннадцатый ветер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_6</Tag>
 		<English>Four Jaguar</English>
+		<Russian>Четвёртый ягуар</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_0</Tag>
 		<English>Hunzahua</English>
+		<Russian>Хунзауа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_1</Tag>
 		<English>Tomagata</English>
+		<Russian>Томагата</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_2</Tag>
 		<English>Tutazua</English>
+		<Russian>Тутазуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_3</Tag>
 		<English>Michua</English>
+		<Russian>Михуа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_4</Tag>
 		<English>Meicuchuca</English>
+		<Russian>Мейкучука</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_5</Tag>
 		<English>Saguamanchica</English>
+		<Russian>Сагуаманчика</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_6</Tag>
 		<English>Nemequene</English>
+		<Russian>Немекен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_7</Tag>
 		<English>Tisquesusa</English>
+		<Russian>Тискесуза</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_8</Tag>
 		<English>Sagipa</English>
+		<Russian>Сагипа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_9</Tag>
 		<English>Aquiminzaque</English>
+		<Russian>Акиминзак</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_0</Tag>
 		<English>Buffalo Hump</English>
+		<Russian>Горб буйвола</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_1</Tag>
 		<English>Old Owl</English>
+		<Russian>Старая Сова</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_2</Tag>
 		<English>Ten Bears</English>
+		<Russian>Десять медведей</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_3</Tag>
 		<English>Green Horn</English>
+		<Russian>Зеленый Рог</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_4</Tag>
 		<English>Santa Anna</English>
+		<Russian>Санта-Анна</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_5</Tag>
 		<English>Tosawi</English>
+		<Russian>Тосави</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_6</Tag>
 		<English>Isa-Tai</English>
+		<Russian>Иса-Тай</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_0</Tag>
 		<English>Pocatello</English>
+		<Russian>Покателло</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_1</Tag>
 		<English>Cameahwait</English>
+		<Russian>Камеавэйт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_2</Tag>
 		<English>Sagwitch</English>
+		<Russian>Сэгвич</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_3</Tag>
 		<English>Sanpitch</English>
+		<Russian>Санпитч</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_4</Tag>
 		<English>Bear Hunter</English>
+		<Russian>Охотник на медведя</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_5</Tag>
 		<English>Little Soldier</English>
+		<Russian>Маленький солдат</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_6</Tag>
 		<English>Soquitch</English>
+		<Russian>Соквитч</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_GENERAL_0</Tag>
 		<English>Wiracocha</English>
+		<Russian>Виракоча</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_GENERAL_1</Tag>
 		<English>Pachamama</English>
+		<Russian>Пачамама</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_GENERAL_2</Tag>
 		<English>Vatana</English>
+		<Russian>Ватана</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_GENERAL_3</Tag>
 		<English>Buada</English>
+		<Russian>Буада</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_GENERAL_4</Tag>
 		<English>Itseti</English>
+		<Russian>Ицети</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA_GENERAL_5</Tag>
 		<English>Sotara</English>
+		<Russian>Сотара</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_0</Tag>
 		<English>Arapooish</English>
+		<Russian>Арапуиш</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_1</Tag>
 		<English>Kaamneewiash</English>
+		<Russian>Камневиаш</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_2</Tag>
 		<English>Eshsuppeemeshish</English>
+		<Russian>Эшсуппимешиш</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_3</Tag>
 		<English>Daasawatash</English>
+		<Russian>Даасаваташ</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_4</Tag>
 		<English>Buahisshish</English>
+		<Russian>Буахишиш</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_5</Tag>
 		<English>Baattaaxalusshish</English>
+		<Russian>Бааттааксалушиш</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_6</Tag>
 		<English>Ishtuwatash</English>
+		<Russian>Иштуваташ</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_7</Tag>
 		<English>Chiitdeehisshish</English>
+		<Russian>Чиитдихишиш</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW_GENERAL_8</Tag>
 		<English>Shiipdeetash</English>
+		<Russian>Шиипдеташ</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_0</Tag>
 		<English>Crowfoot</English>
+		<Russian>Воронья лапа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_1</Tag>
 		<English>Calf Shirt</English>
+		<Russian>Рубашка из теленка</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_2</Tag>
 		<English>Acaoomahcaye</English>
+		<Russian>Акаомакайе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_3</Tag>
 		<English>Mekaisto</English>
+		<Russian>Мекаисто</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_4</Tag>
 		<English>Old Sun</English>
+		<Russian>Старое Солнце</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_5</Tag>
 		<English>Kill Eagle</English>
+		<Russian>Убить Орла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_6</Tag>
 		<English>Penukwiim</English>
+		<Russian>Пенуквиим</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_7</Tag>
 		<English>Kangicu</English>
+		<Russian>Кангику</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_0</Tag>
 		<English>Nata</English>
+		<Russian>Ната</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_1</Tag>
 		<English>Parita</English>
+		<Russian>Парита</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_2</Tag>
 		<English>Yaravi</English>
+		<Russian>Ярави</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_3</Tag>
 		<English>Chiriquf</English>
+		<Russian>Чирикуф</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_4</Tag>
 		<English>Vareclas</English>
+		<Russian>Вареклас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_5</Tag>
 		<English>Perequete</English>
+		<Russian>Перекет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_6</Tag>
 		<English>Tabore</English>
+		<Russian>Таборе</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_7</Tag>
 		<English>Chame</English>
+		<Russian>Чаме</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI_GENERAL_8</Tag>
 		<English>Chird</English>
+		<Russian>Чёрд</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_0</Tag>
 		<English>Hiripan</English>
+		<Russian>Хирипан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_1</Tag>
 		<English>Ticatame</English>
+		<Russian>Тикатаме</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_2</Tag>
 		<English>Zinzicha</English>
+		<Russian>Зинзича</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_3</Tag>
 		<English>Paquingata</English>
+		<Russian>Пакингата</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_4</Tag>
 		<English>Tangaxoan</English>
+		<Russian>Тангашоан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_5</Tag>
 		<English>Zuangua</English>
+		<Russian>Zuangua</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS_GENERAL_6</Tag>
 		<English>Huiquingaje</English>
+		<Russian>Уикингадже</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_0</Tag>
 		<English>Rimyura</English>
+		<Russian>Римюра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_1</Tag>
 		<English>Coelho</English>
+		<Russian>Коэльо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_2</Tag>
 		<English>Ucayali</English>
+		<Russian>Укаяли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_3</Tag>
 		<English>Parahus</English>
+		<Russian>Парахус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_4</Tag>
 		<English>Imonas</English>
+		<Russian>Имонас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_5</Tag>
 		<English>Boreat</English>
+		<Russian>Бореат</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA_GENERAL_6</Tag>
 		<English>Manali</English>
+		<Russian>Манали</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_0</Tag>
 		<English>Caupolican</English>
+		<Russian>Кауполикан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_1</Tag>
 		<English>Colo-Colo</English>
+		<Russian>Коло-Коло</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_2</Tag>
 		<English>Paillamachu</English>
+		<Russian>Пайламачу</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_3</Tag>
 		<English>Pelantaru</English>
+		<Russian>Пелантару</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_4</Tag>
 		<English>Lientur</English>
+		<Russian>Лиентур</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_5</Tag>
 		<English>Butapichon</English>
+		<Russian>Бутапичон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_6</Tag>
 		<English>Mestizo Alejo</English>
+		<Russian>Метис Алехо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_7</Tag>
 		<English>Vilumilla</English>
+		<Russian>Вилумилла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE_GENERAL_8</Tag>
 		<English>Curinancu</English>
+		<Russian>Куринанку</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_0</Tag>
 		<English>Ollokot</English>
+		<Russian>Оллокот</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_1</Tag>
 		<English>White Bird</English>
+		<Russian>Белая птица</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_2</Tag>
 		<English>Old Joseph</English>
+		<Russian>Старый Джозеф</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_3</Tag>
 		<English>Yellow Bull</English>
+		<Russian>Жёлтый Бык</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_4</Tag>
 		<English>Looking Glass</English>
+		<Russian>Зеркало</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_5</Tag>
 		<English>Toohoolhoolzote</English>
+		<Russian>Тухулхулзот</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_6</Tag>
 		<English>Red Owl</English>
+		<Russian>Красная Сова</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_7</Tag>
 		<English>Wahchumyus</English>
+		<Russian>Вахчумюс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_8</Tag>
 		<English>Pahkatos Owyeen</English>
+		<Russian>Пахкатос Оуин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_9</Tag>
 		<English>Hal-hal-hoot-soot</English>
+		<Russian>Хал-хал-ух-сажа</Russian>
 	</TEXT>
 </Civ4GameText>
