@@ -74,6 +74,7 @@ class InfoArrayBase
 	friend class InfoArrayMod;
 	template<int, typename>
 	friend class InfoArrayToken;
+	friend class CiXMLReader;
 
 protected:
 	InfoArrayBase() {};
@@ -145,6 +146,8 @@ public:
 	void read(CvXMLLoadUtility* pXML, const char* szType, const char *sTagName);
 private:
 	void readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vector<short>& aArray, std::vector<short>& aIndex, int iLevel, const char *sTagName, const char* szType);
+
+	void assignFromVector(const std::vector<short> vec);
 };
 
 
@@ -571,6 +574,7 @@ void InfoArray3Only<T0, T1, T2>::addTo(EnumMap2D<Ta, Tb, bool, DEFAULT> & em, in
 template<typename T0, typename T1 = JIT_NoneTypes, typename T2 = JIT_NoneTypes, typename T3 = JIT_NoneTypes>
 class InfoArray : public InfoArray4Only<T0, T1, T2, T3>
 {
+	friend class CiXMLReader;
 public:
 	InfoArray() : InfoArray4Only<T0, T1, T2, T3>(VARINFO<T0>::JIT, VARINFO<T1>::JIT, VARINFO<T2>::JIT, VARINFO<T3>::JIT)
 	{};
@@ -598,6 +602,7 @@ public:
 template<typename T0, typename T1, typename T2>
 class InfoArray< T0, T1, T2, JIT_NoneTypes> : public InfoArray3Only<T0, T1, T2>
 {
+	friend class CiXMLReader;
 public:
 	InfoArray() : InfoArray3Only<T0, T1, T2>(VARINFO<T0>::JIT, VARINFO<T1>::JIT, VARINFO<T2>::JIT, JIT_ARRAY_NO_TYPE)
 	{};
@@ -606,6 +611,7 @@ public:
 template<typename T0, typename T1>
 class InfoArray< T0, T1, JIT_NoneTypes, JIT_NoneTypes> : public InfoArray2Only<T0, T1>
 {
+	friend class CiXMLReader;
 public:
 	InfoArray() : InfoArray2Only<T0, T1>(VARINFO<T0>::JIT, VARINFO<T1>::JIT, JIT_ARRAY_NO_TYPE, JIT_ARRAY_NO_TYPE)
 	{};
@@ -615,6 +621,7 @@ public:
 template<typename T0>
 class InfoArray< T0, JIT_NoneTypes, JIT_NoneTypes, JIT_NoneTypes> : public InfoArray1Only<T0>
 {
+	friend class CiXMLReader;
 public:
 	InfoArray() : InfoArray1Only<T0>(VARINFO<T0>::JIT, JIT_ARRAY_NO_TYPE, JIT_ARRAY_NO_TYPE, JIT_ARRAY_NO_TYPE)
 	{};

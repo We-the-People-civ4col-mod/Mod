@@ -156,6 +156,21 @@ bool CiXMLTypeContainer::valid() const
 	return m_pElement != NULL;
 }
 
+bool CiXMLTypeContainer::isType(const tinyxml2::XMLElement* pElement, const char* szType) const
+{
+	const tinyxml2::XMLElement* schema = m_Reader.m_pSchemaRoot->FirstChildElement(pElement->Name());
+	FAssert(schema != NULL);
+	if (schema != NULL)
+	{
+		//schema doesn't actually tell us which type it is, so just assume true for all pure text
+		if (strcmp(schema->Attribute("content"), "textOnly") == 0 && schema->Attribute("dt:type") == NULL)
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
 void CiXMLTypeContainer::setType()
 {
 	if (m_pElement == NULL)

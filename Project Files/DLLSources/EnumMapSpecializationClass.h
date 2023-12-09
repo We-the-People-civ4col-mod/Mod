@@ -49,13 +49,14 @@ public:
 	const T& operator[](IndexType eIndex) const;
 
 protected:
-	std::vector<T> m_Array;
+	T* m_Array;
 
 	void assignmentOperator(const EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>& rhs);
 };
 
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::EnumMapBase()
+	: m_Array(NULL)
 {
 	BOOST_STATIC_ASSERT(VARINFO<T>::IS_CLASS == 1);
 }
@@ -68,26 +69,22 @@ EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CL
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 bool EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::isAllocated() const
 {
-	return m_Array.size() > 0;
+	return m_Array != NULL;
 }
 
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 void EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::allocate()
 {
-#ifndef COMPILE_STATIC_TEST
-	// resize will fail during static test as CvInfoBase intentionally has a private copy constructor
 	if (!isAllocated())
 	{
-		m_Array.reserve(NUM_ELEMENTS);
-		m_Array.resize(NUM_ELEMENTS);
+		m_Array = new T[NUM_ELEMENTS];
 	}
-#endif
 }
 
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>
 void EnumMapBase<IndexType, T, 0, LengthType, VARIABLE_TYPE_DYNAMIC, VARIABLE_TYPE_CLASS, LENGTH_KNOWN_WHILE_COMPILING>::reset()
 {
-	m_Array.resize(0);
+	SAFE_DELETE_ARRAY(m_Array);
 }
 
 template<class IndexType, class T, class LengthType, VariableLengthTypes LENGTH_KNOWN_WHILE_COMPILING>

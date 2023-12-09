@@ -100,4 +100,9 @@ private:
 	CvString m_szType;
 	bool m_bPlayable;
 	int m_iAreaMultiplier;
+	InfoArray<LeaderHeadTypes> m_Leaders;
+
+
+	
+	
 };

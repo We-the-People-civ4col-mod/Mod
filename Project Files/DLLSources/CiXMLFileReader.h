@@ -17,6 +17,8 @@ public:
 
 	bool valid() const;
 
+	bool isType(const tinyxml2::XMLElement* pElement, const char* szType) const;
+
 private:
 	void setType();
 

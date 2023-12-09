@@ -481,29 +481,39 @@ void InfoArrayBase::read(CvXMLLoadUtility* pXML, const char* szType, const char 
 			int iIndex = 0;
 			readRecursive(pXML, iIndex, aArray, aIndex, 0, sTagName, szType);
 			
-			int iArrayLength = aArray.size(); // local copy rather than the same function call over and over
-
-			m_iLength = iArrayLength / m_iNumDimentions;
-
-			if (m_iLength > 0)
-			{
-				m_bStatic = iArrayLength <= 2;
-				if (m_bStatic)
-				{
-					for (int i = 0; i < iArrayLength; ++i)
-					{
-						m_aiStaticArray[i] = aArray[i];
-					}
-				}
-				else
-				{
-					m_pArray = new short[iArrayLength];
-					memcpy(m_pArray, &aArray[0], iArrayLength * sizeof(short));
-				}
-			}
+			assignFromVector(aArray);
 
 			gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 		}
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+}
+
+void InfoArrayBase::assignFromVector(const std::vector<short> vec)
+{
+	if (!m_bStatic)
+	{
+		SAFE_DELETE_ARRAY(m_pArray);
+	}
+
+	const int iArrayLength = vec.size(); // local copy rather than the same function call over and over
+
+	m_iLength = iArrayLength / m_iNumDimentions;
+
+	if (m_iLength > 0)
+	{
+		m_bStatic = iArrayLength <= 2;
+		if (m_bStatic)
+		{
+			for (int i = 0; i < iArrayLength; ++i)
+			{
+				m_aiStaticArray[i] = vec[i];
+			}
+		}
+		else
+		{
+			m_pArray = new short[iArrayLength];
+			memcpy(m_pArray, &vec[0], iArrayLength * sizeof(short));
+		}
 	}
 }
