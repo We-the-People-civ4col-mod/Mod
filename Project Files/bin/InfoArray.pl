@@ -16,6 +16,8 @@ my $output_reader = "";
 
 my @types = ( {}, {}, {}, {});
 
+my %fullTypeSets;
+
 my @TypesToIgnore;
 
 push(@TypesToIgnore, "JIT_NoneTypes");
@@ -54,9 +56,15 @@ for my $i (0 .. $#types )
 	{
 		next if (grep( /^$type$/, @TypesToIgnore ));
 		handleInfoArraySingle($type, $i);
-		$output_reader .= "\treader->Read(\"\", InfoArray<$type>());\n" if $i == 0;
+		#$output_reader .= "\treader->Read(\"\", InfoArray<$type>());\n" if $i == 0;
     }
 }
+
+for my $typeSet (sort keys %fullTypeSets )
+{
+	$output_reader .= "\treader->Read(\"\", InfoArray<$typeSet>());\n";
+}
+
 $output_reader .= "}\n\n";
 
 
@@ -81,11 +89,14 @@ sub handleFile
 		$info = substr($info, index($info, "<")+1);
 		
 		my $i = 0;
+		my $skip = 0;
 		foreach my $token (split(', ', $info))
 		{
-			handleToken($token, $i);
+			my $type = handleToken($token, $i);
 			$i += 1;
+			$skip = 1 if $skip == 0 and grep( /^$type$/, @TypesToIgnore );
 		}
+		handleFullTypeSet($info) unless $skip == 1;
 	}
 
 	close $fileHandle;
@@ -100,6 +111,15 @@ sub handleToken
 	$token=~ s/^\s+|\s+$//g;
 	
 	$types[$index]{$token} = 1;
+	
+	return $token;
+}
+
+sub handleFullTypeSet
+{
+	my $info = shift;
+	$info =~ tr/ //ds; # remove all spaces to avoid <UnitTypes, int> and <UnitTypes,   int> from being seen as two different ones   
+	$fullTypeSets{$info} = 1;
 }
 
 sub handleInfoArraySingle

@@ -179,6 +179,7 @@ bool CiCivilizationInfo::read(CiXMLReader& reader)
 {
 	reader.Read("bPlayable", m_bPlayable);
 	reader.Read("iAreaMultiplier", m_iAreaMultiplier);
+	reader.Read("Units", m_Units);
 	reader.Read("Leaders", m_Leaders);
 
 	return true;

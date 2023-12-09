@@ -42,6 +42,8 @@ private:
 	template<typename T0, typename T1, typename T2, typename T3>
 	void ReadInfoArray(const char* szTag, InfoArray4Only<T0, T1, T2, T3>& infoArray);
 
+	template<typename T>
+	void readElement(const char* szTag, T& var, const tinyxml2::XMLElement* pElement, bool bAllowNone) const;
 
 	const char* _ReadString(const char* szTag) const;
 	const CiXMLTypeContainer& m_FileReader;
@@ -72,24 +74,3 @@ void CiXMLReader::Read(const char* szTag, InfoArray<T0, T1, T2, T3>& infoArray)
 
 	child.ReadInfoArray(szTag, infoArray);
 }
-
-template<typename T0, typename T1>
-void CiXMLReader::ReadInfoArray(const char* szTag, InfoArray2Only<T0, T1>& infoArray)
-{
-	BOOST_STATIC_ASSERT(0);
-}
-
-
-template<typename T0, typename T1, typename T2>
-void CiXMLReader::ReadInfoArray(const char* szTag, InfoArray3Only<T0, T1, T2>& infoArray)
-{
-	BOOST_STATIC_ASSERT(0);
-}
-
-template<typename T0, typename T1, typename T2, typename T3>
-void CiXMLReader::ReadInfoArray(const char* szTag, InfoArray4Only<T0, T1, T2, T3>& infoArray)
-{
-	BOOST_STATIC_ASSERT(0);
-}
-
-
