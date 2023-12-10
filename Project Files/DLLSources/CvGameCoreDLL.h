@@ -48,18 +48,18 @@ typedef unsigned long    dword;
 typedef unsigned __int64 qword;
 typedef wchar_t          wchar;
 
-#define MAX_CHAR                            (0x7f)
-#define MIN_CHAR                            (0x80)
-#define MAX_SHORT                           (0x7fff)
-#define MIN_SHORT                           (0x8000)
-#define MAX_INT                             (0x7fffffff)
-#define MIN_INT                             (0x80000000)
-#define MAX_UNSIGNED_CHAR                   (0xff)
-#define MIN_UNSIGNED_CHAR                   (0x00)
-#define MAX_UNSIGNED_SHORT                  (0xffff)
-#define MIN_UNSIGNED_SHORT                  (0x0000)
-#define MAX_UNSIGNED_INT                    (0xffffffff)
-#define MIN_UNSIGNED_INT                    (0x00000000)
+const          int MAX_CHAR           = 0x7f;
+const          int MIN_CHAR           = (char)0x80;
+const          int MAX_SHORT          = 0x7fff;
+const          int MIN_SHORT          = (short)0x8000;
+const          int MAX_INT            = 0x7fffffff;
+const          int MIN_INT            = 0x80000000;
+const unsigned int MAX_UNSIGNED_CHAR  = 0xff;
+const unsigned int MIN_UNSIGNED_CHAR  = 0x00;
+const unsigned int MAX_UNSIGNED_SHORT = 0xffff;
+const unsigned int MIN_UNSIGNED_SHORT = 0x0000;
+const unsigned int MAX_UNSIGNED_INT   = 0xffffffff;
+const unsigned int MIN_UNSIGNED_INT   = 0x00000000;
 
 #define SAFE_DELETE(p)       { if(p) { delete (p);     (p)=NULL; } }
 #define SAFE_DELETE_ARRAY(p) { if(p) { delete[] (p);   (p)=NULL; } }
