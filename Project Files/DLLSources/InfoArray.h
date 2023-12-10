@@ -76,6 +76,16 @@ class InfoArrayBase
 	friend class InfoArrayToken;
 	friend class CiXMLReader;
 
+	enum InfoArrayMemoryType
+	{
+		INFO_MEM_DYNAMIC_SHORT,
+		INFO_MEM_DYNAMIC_BYTE,
+		INFO_MEM_DYNAMIC_BYTE_SHIFTED,
+		INFO_MEM_STATIC_SHORT,
+		INFO_MEM_STATIC_BYTE,
+		INFO_MEM_STATIC_BYTE_SHIFTED,
+	};
+
 protected:
 	InfoArrayBase() {};
 
@@ -113,17 +123,17 @@ protected:
 	int getInternal(int iIndex, int iTokenIndex = 0) const;
 	int _getIndexOf(int iValue, int iDim) const;
 
-	void _setLength(int iLength);
-	bool _setValue(int iValue0);
-	bool _setValue(int iValue0, int iValue1);
+	void _Free();
 
-	short m_iLength;
-	char m_iNumDimentions : 7;
-	bool m_bStatic : 1;
+	int m_iLength : 16;
+	int m_iNumDimentions : 4;
+	InfoArrayMemoryType m_eMemoryLayout : 4;
 	union
 	{
-		short m_aiStaticArray[2];
-		short* m_pArray;
+		short m_aiStaticArrayShort[2];
+		char  m_aiStaticArrayChar[4];
+		short* m_pArrayShort;
+		char*  m_pArrayChar;
 	};
 	union
 	{
@@ -146,9 +156,11 @@ public:
 	void read(CvXMLLoadUtility* pXML, const char* szType, const char *sTagName);
 private:
 	void readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vector<short>& aArray, std::vector<short>& aIndex, int iLevel, const char *sTagName, const char* szType);
-
+public:
 	void assignFromVector(const std::vector<short> vec);
 };
+
+BOOST_STATIC_ASSERT(sizeof(InfoArrayBase) == 12);
 
 
 enum JIT_NoneTypes {};
@@ -254,36 +266,36 @@ template<typename T0>
 template<typename Ta, class T, int DEFAULT>
 void InfoArray1Only<T0>::assignFrom(const EnumMap<Ta, T, DEFAULT> & em)
 {
-	const int iLength = em.GetNumPositiveElements();
-	_setLength(iLength);
-	for (T0 eIndex = em.FIRST; eIndex <= em.LAST; ++eIndex)
+	std::vector<short> vec;
+	if (em.isAllocated())
 	{
-		if (em.get(eIndex) > 0)
+		for (T0 eIndex = em.FIRST; eIndex <= em.LAST; ++eIndex)
 		{
-			bool bDone = _setValue(eIndex);
-#ifndef FASSERT_ENABLE
-			if (bDone) return;
-#endif
+			if (em.get(eIndex) > 0)
+			{
+				vec.push_back(eIndex);
+			}
 		}
 	}
+	assignFromVector(vec);
 }
 
 template<typename T0>
 template<typename Ta, int DEFAULT>
 void InfoArray1Only<T0>::assignFrom(const EnumMap<Ta, bool, DEFAULT> & em)
 {
-	const int iLength = em.getNumTrueElements();
-	_setLength(iLength);
-	for (T0 eIndex = em.FIRST; eIndex <= em.LAST; ++eIndex)
+	std::vector<short> vec;
+	if (em.isAllocated())
 	{
-		if (em.get(eIndex))
+		for (T0 eIndex = em.FIRST; eIndex <= em.LAST; ++eIndex)
 		{
-			bool bDone = _setValue(eIndex);
-#ifndef FASSERT_ENABLE
-			if (bDone) return;
-#endif
+			if (em.get(eIndex))
+			{
+				vec.push_back(eIndex);
+			}
 		}
 	}
+	assignFromVector(vec);
 }
 
 
@@ -291,42 +303,44 @@ template<typename T0, typename T1>
 template<typename Ta, class T, int DEFAULT>
 void InfoArray2Only<T0, T1>::assignFrom(const EnumMap<Ta, T, DEFAULT> & em)
 {
-	BOOST_STATIC_ASSERT((!boost::is_same<T, bool>::value));
-	const int iLength = em.getNumNonDefaultElements();
-	_setLength(iLength);
-	for (T0 eIndex = em.FIRST; eIndex <= em.LAST; ++eIndex)
+	std::vector<short> vec;
+	if (em.isAllocated())
 	{
-		int iVal = em.get(eIndex);
-		if (iVal != em.DEFAULT)
+		for (T0 eIndex = em.FIRST; eIndex <= em.LAST; ++eIndex)
 		{
-			bool bDone = _setValue(eIndex, iVal);
-#ifndef FASSERT_ENABLE
-			if (bDone) return;
-#endif
+			const int iVal = em.get(eIndex);
+			if (iVal != DEFAULT)
+			{
+				vec.push_back(eIndex);
+				vec.push_back(iVal);
+			}
 		}
 	}
+	assignFromVector(vec);
 }
 
 template<typename T0, typename T1>
 template<typename Ta, typename Tb, int DEFAULT>
 void InfoArray2Only<T0, T1>::assignFrom(const EnumMap2D<Ta, Tb, bool, DEFAULT> & em)
 {
-	const int iLength = em.getNumTrueElements();
-	_setLength(iLength);
-	for (T0 eIndex0 = em.FIRST; eIndex0 <= em.LAST; ++eIndex0)
+	std::vector<short> vec;
+	if (em.isAllocated())
 	{
-		const EnumMap<Tb, bool, DEFAULT>& em1 = em[eIndex0];
-		for (Tb eIndex1 = em1.FIRST; eIndex1 <= em1.LAST; ++eIndex1)
+		for (T0 eIndex0 = em.FIRST; eIndex0 <= em.LAST; ++eIndex0)
 		{
-			if (em1.get(eIndex1))
+			const EnumMap<Tb, bool, DEFAULT>& em1 = em[eIndex0];
+			for (Tb eIndex1 = em1.FIRST; eIndex1 <= em1.LAST; ++eIndex1)
 			{
-				bool bDone = _setValue(eIndex0, eIndex1);
-#ifndef FASSERT_ENABLE
-				if (bDone) return;
-#endif
+				const int iVal = em.get(eIndex);
+				if (em1.get(eIndex1))
+				{
+					vec.push_back(eIndex0);
+					vec.push_back(eIndex1);
+				}
 			}
 		}
 	}
+	assignFromVector(vec);
 }
 
 template<typename T0>

@@ -4,6 +4,18 @@
 
 #include "InfoArray.h"
 
+// avoid magic numbers
+// also placed in one location for consistency
+const int iMAX_CHAR = MAX_CHAR;
+const int iMIN_CHAR = MIN_CHAR;
+const int iCHAR_SHIFT_OFFSET = 127;
+const int iMAX_CHAR_SHIFT = iMAX_CHAR + iCHAR_SHIFT_OFFSET;
+const int iMIN_CHAR_SHIFTED = -1;
+
+// ensure that one byte is used and no more
+BOOST_STATIC_ASSERT(iMAX_CHAR - iMIN_CHAR == 255);
+BOOST_STATIC_ASSERT(iMAX_CHAR_SHIFT - iMIN_CHAR_SHIFTED == 255);
+
 // bogus default constructor needed by python interface
 /*
 InfoArray::InfoArray()
@@ -25,8 +37,8 @@ InfoArray::InfoArray()
 InfoArrayBase::InfoArrayBase(JITarrayTypes eType0, JITarrayTypes eType1, JITarrayTypes eType2, JITarrayTypes eType3)
 	: m_iLength(0)
 	, m_iNumDimentions(0)
-	, m_bStatic(false)
-	, m_pArray(NULL)
+	, m_eMemoryLayout(INFO_MEM_DYNAMIC_SHORT)
+	, m_pArrayShort(NULL)
 	, m_aiTypes(0)
 {
 	std::vector<JITarrayTypes> aTypes;
@@ -59,10 +71,7 @@ InfoArrayBase::InfoArrayBase(JITarrayTypes eType0, JITarrayTypes eType1, JITarra
 
 InfoArrayBase::~InfoArrayBase()
 {
-	if (!m_bStatic)
-	{
-		SAFE_DELETE_ARRAY(m_pArray);
-	}
+	_Free();
 }
 
 ///
@@ -80,18 +89,25 @@ int InfoArrayBase::getInternal(int iIndex, int iDimention) const
 	FAssert(iIndex >= 0);
 	FAssert(iDimention >= 0 && iDimention < m_iNumDimentions);
 
-	if (m_bStatic)
-	{
-		return m_aiStaticArray[iIndex + iDimention];
-	}
-	else
-	{
-		FAssert(m_pArray != NULL);
+	unsigned int iArrayIndex = (iIndex * m_iNumDimentions) + iDimention;
 
-		unsigned int iArrayIndex = (iIndex * m_iNumDimentions) + iDimention;
-
-		return m_pArray[iArrayIndex];
+	switch (m_eMemoryLayout)
+	{
+	case INFO_MEM_DYNAMIC_SHORT:
+		return m_pArrayShort[iArrayIndex];
+	case INFO_MEM_DYNAMIC_BYTE:
+		return m_pArrayChar[iArrayIndex];
+	case INFO_MEM_DYNAMIC_BYTE_SHIFTED:
+		return m_pArrayChar[iArrayIndex] + iCHAR_SHIFT_OFFSET;
+	case INFO_MEM_STATIC_SHORT:
+		return m_aiStaticArrayShort[iArrayIndex];
+	case INFO_MEM_STATIC_BYTE:
+		return m_aiStaticArrayChar[iArrayIndex];
+	case INFO_MEM_STATIC_BYTE_SHIFTED:
+		return m_aiStaticArrayChar[iArrayIndex] + iCHAR_SHIFT_OFFSET;
 	}
+	FAssertMsg(false, "Missing case");
+	return -1; 
 }
 
 int InfoArrayBase::_getIndexOf(int iValue, int iDim) const
@@ -106,78 +122,20 @@ int InfoArrayBase::_getIndexOf(int iValue, int iDim) const
 	return -1;
 }
 
-void InfoArrayBase::_setLength(int iLength)
+void InfoArrayBase::_Free()
 {
-	if (m_bStatic)
+	switch (m_eMemoryLayout)
 	{
-		// clear static array
-		m_pArray = NULL;
+	case INFO_MEM_DYNAMIC_SHORT:
+		SAFE_DELETE_ARRAY(m_pArrayShort);
+		break;
+	case INFO_MEM_DYNAMIC_BYTE:
+	case INFO_MEM_DYNAMIC_BYTE_SHIFTED:
+		SAFE_DELETE_ARRAY(m_pArrayChar);
+		break;
 	}
-	else
-	{
-		SAFE_DELETE_ARRAY(m_pArray);
-	}
-
-	int iNewShortLength = iLength * m_iNumDimentions;
-	m_bStatic = iNewShortLength <= 2;
-	m_iLength = iLength;
-
-	if (m_bStatic)
-	{
-		m_aiStaticArray[0] = -1;
-		m_aiStaticArray[1] = -1;
-	}
-	else
-	{
-		m_pArray = new short[iNewShortLength];
-		memset(m_pArray, 0xFF, iNewShortLength * sizeof(short));
-	}
-
-}
-
-bool InfoArrayBase::_setValue(int iValue0)
-{
-	for (int i = 0; i < m_iLength; ++i)
-	{
-		if (getInternal(i) == -1)
-		{
-			if (m_bStatic)
-			{
-				m_aiStaticArray[i] = iValue0;
-			}
-			else
-			{
-				m_pArray[i] = iValue0;
-			}
-			return (i+1) == m_iLength; // filled the last element?
-		}
-	}
-	FAssertMsg(false, "InfoArray calls set value on full array");
-	return false;
-}
-
-bool InfoArrayBase::_setValue(int iValue0, int iValue1)
-{
-	for (int i = 0; i < m_iLength; ++i)
-	{
-		if (getInternal(i) == -1)
-		{
-			if (m_bStatic)
-			{
-				FAssert(i == 0);
-				m_aiStaticArray[0] = iValue0;
-				m_aiStaticArray[1] = iValue1;
-			}
-			else
-			{
-				m_pArray[i*2] = iValue0;
-				m_pArray[i * 2 + 1] = iValue1;
-			}
-			return (i + 1) == m_iLength; // filled the last element?
-		}
-	}
-	FAssertMsg(false, "InfoArray calls set value on full array");
-	return false;
+	m_eMemoryLayout = INFO_MEM_DYNAMIC_SHORT;
+	m_pArrayShort = NULL;
 }
 
 int InfoArrayBase::getIndex(int iIndex) const
@@ -310,34 +268,38 @@ InfoArrayBase& InfoArrayBase::operator=(const InfoArrayBase &rhs)
 	if (this != &rhs)
 	{
 		FAssert(this->m_aiTypes == rhs.m_aiTypes);
+		_Free();
+		m_iLength = rhs.m_iLength;
+		m_eMemoryLayout = rhs.m_eMemoryLayout;
 
-		this->m_iLength = rhs.m_iLength;
-
-		if (this->m_bStatic)
+		if (m_iLength > 0)
 		{
-			// clear static array
-			this->m_pArray = NULL;
-		}
-		else
-		{
-			SAFE_DELETE_ARRAY(this->m_pArray);
-		}
+			const int iLength = m_iLength * getDimentions();
 
-		this->m_bStatic = rhs.m_bStatic;
-
-		int iLoopLength = m_iLength * m_iNumDimentions;
-
-		if (iLoopLength > 0)
-		{
-			if (rhs.m_bStatic)
+			switch (m_eMemoryLayout)
 			{
-				// copying the pointer will copy the entire static array due to the union
-				this->m_pArray = rhs.m_pArray;
-			}
-			else
-			{
-				this->m_pArray = new short[iLoopLength];
-				memcpy(this->m_pArray, rhs.m_pArray, iLoopLength * sizeof(short));
+			case INFO_MEM_DYNAMIC_SHORT:
+				m_pArrayShort = new short[iLength];
+				memcpy(m_pArrayShort, rhs.m_pArrayShort, iLength * sizeof(short));
+				break;
+			case INFO_MEM_DYNAMIC_BYTE:
+			case INFO_MEM_DYNAMIC_BYTE_SHIFTED:
+				m_pArrayChar = new char[iLength];
+				memcpy(m_pArrayChar, rhs.m_pArrayChar, iLength * sizeof(char));
+				break;
+			case INFO_MEM_STATIC_SHORT:
+				for (int i = 0; i < iLength; ++i)
+				{
+					m_aiStaticArrayShort[i] = rhs.m_aiStaticArrayShort[i];
+				}
+				break;
+			case INFO_MEM_STATIC_BYTE:
+			case INFO_MEM_STATIC_BYTE_SHIFTED:
+				for (int i = 0; i < iLength; ++i)
+				{
+					m_aiStaticArrayChar[i] = rhs.m_aiStaticArrayChar[i];
+				}
+				break;
 			}
 		}
 	}
@@ -455,18 +417,6 @@ void InfoArrayBase::readRecursive(CvXMLLoadUtility* pXML, int& iIndex, std::vect
 
 void InfoArrayBase::read(CvXMLLoadUtility* pXML, const char* szType, const char *sTagName)
 {
-	if (m_bStatic)
-	{
-		// clear static array
-		m_pArray = NULL;
-	}
-	else
-	{
-		SAFE_DELETE_ARRAY(m_pArray);
-	}
-	m_bStatic = false;
-	m_iLength = 0;
-
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),sTagName))
 	{
 		if (gDLL->getXMLIFace()->SetToChild(pXML->GetXML()))
@@ -491,29 +441,80 @@ void InfoArrayBase::read(CvXMLLoadUtility* pXML, const char* szType, const char 
 
 void InfoArrayBase::assignFromVector(const std::vector<short> vec)
 {
-	if (!m_bStatic)
-	{
-		SAFE_DELETE_ARRAY(m_pArray);
-	}
+	_Free();
 
 	const int iArrayLength = vec.size(); // local copy rather than the same function call over and over
 
 	m_iLength = iArrayLength / m_iNumDimentions;
 
-	if (m_iLength > 0)
+	int iMin = 0;
+	int iMax = 0;
+
+	for (unsigned int i = 0; i < vec.size(); ++i)
 	{
-		m_bStatic = iArrayLength <= 2;
-		if (m_bStatic)
+		const short value = vec[i];
+		if (iMin > value) iMin = value;
+		if (iMax < value) iMax = value;
+	}
+
+	if (iMin >= iMIN_CHAR && iMax <= iMAX_CHAR)
+	{
+		if (iArrayLength <= 4)
 		{
+			m_eMemoryLayout = INFO_MEM_STATIC_BYTE;
 			for (int i = 0; i < iArrayLength; ++i)
 			{
-				m_aiStaticArray[i] = vec[i];
+				m_aiStaticArrayChar[i] = (char)vec[i];
 			}
 		}
 		else
 		{
-			m_pArray = new short[iArrayLength];
-			memcpy(m_pArray, &vec[0], iArrayLength * sizeof(short));
+			m_eMemoryLayout = INFO_MEM_DYNAMIC_BYTE;
+			m_pArrayChar = new char[iArrayLength];
+			for (int i = 0; i < iArrayLength; ++i)
+			{
+				m_pArrayChar[i] = (char)vec[i];
+			}
+		}
+	}
+	else if (iMin >= -1 && iMax <= iMAX_CHAR_SHIFT)
+	{
+		if (iArrayLength <= 4)
+		{
+			m_eMemoryLayout = INFO_MEM_STATIC_BYTE_SHIFTED;
+			for (int i = 0; i < iArrayLength; ++i)
+			{
+				m_aiStaticArrayChar[i] = vec[i] - iCHAR_SHIFT_OFFSET;
+			}
+		}
+		else
+		{
+			m_eMemoryLayout = INFO_MEM_DYNAMIC_BYTE_SHIFTED;
+			m_pArrayChar = new char[iArrayLength];
+			for (int i = 0; i < iArrayLength; ++i)
+			{
+				m_pArrayChar[i] = vec[i] - iCHAR_SHIFT_OFFSET;
+			}
+		}
+	}
+	else
+	{
+		if (iArrayLength <= 2)
+		{
+			m_eMemoryLayout = INFO_MEM_STATIC_SHORT;
+			for (int i = 0; i < iArrayLength; ++i)
+			{
+				m_aiStaticArrayShort[i] = vec[i];
+			}
+		}
+		else
+		{
+			m_eMemoryLayout = INFO_MEM_DYNAMIC_SHORT;
+			m_pArrayShort = new short[iArrayLength];
+			for (int i = 0; i < iArrayLength; ++i)
+			{
+				m_pArrayShort[i] = vec[i];
+			}
 		}
 	}
 }
