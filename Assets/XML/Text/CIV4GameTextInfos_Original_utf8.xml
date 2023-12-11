@@ -195,6 +195,7 @@
 		<German>Laden</German>
 		<Italian>Imbarca</Italian>
 		<Spanish>Embarcar</Spanish>
+		<Russian>Загрузить (где?)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_BUILD</Tag>
@@ -1241,12 +1242,13 @@
 		<Russian>Выход</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_PEDIA_SCREEN_LOAD_GROUP</Tag>
+		<Tag>TXT_KEY_PEDIA_SCREEN_LOAD_GROUP</Tag> <!-- setting up trade routes -->
 		<English>Load</English>
 		<French>Charger</French>
 		<German>Laden</German>
 		<Italian>Carico</Italian>
 		<Spanish>Carga</Spanish>
+		<Russian>Загрузить</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_SCREEN_BACK</Tag>
@@ -2200,12 +2202,13 @@
 		<Spanish>Pitboss para Civilization IV - Firaxis Games</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_PITBOSS_SAVE</Tag>
+		<Tag>TXT_KEY_PITBOSS_SAVE</Tag> <!-- setting up trade routes -->
 		<English>Save</English>
 		<French>Sauver</French>
 		<German>Speichern</German>
 		<Italian>Salva</Italian>
 		<Spanish>Guardar</Spanish>
+		<Russian>Сохранить</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SAVE_TEXT</Tag>
