@@ -318,7 +318,7 @@
 		<German>[SPACE]([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] für alle Einheiten)</German>
 		<Italian>[SPACE]([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per tutte le unità)</Italian>
 		<Spanish>[SPACE]([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para todas las unidades)</Spanish>
-		<Russian>[SPACE]([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для всех юнитов)</Russian>
+		<Russian>[SPACE]([COLOR:140:255:40:255]ALT[COLOR_REVERT] для всех юнитов)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_GOES_TO_CIV</Tag>
@@ -3005,7 +3005,7 @@
 		<German>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] für eine Kriegserklärung)</German>
 		<Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per dichiarare guerra)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para declarar la guerra)</Spanish>
-		<Russian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для объявления войны)</Russian>
+		<Russian>([COLOR:140:255:40:255]ALT[COLOR_REVERT] для объявления войны)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WARNING</Tag>
@@ -4123,7 +4123,7 @@
 		<German>([COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] zur Auswahl aller %s1-Einheiten)</German>
 		<Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per selezionare %s1)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para seleccionar [NUM1:todos los:todas las:todos los:todas las] %s1:2)</Spanish>
-		<Russian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] чтобы выделить все %s1)</Russian>
+		<Russian>([COLOR:140:255:40:255]CTRL[COLOR_REVERT] чтобы выделить все %s1)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ALT_SELECT</Tag>
@@ -4132,7 +4132,7 @@
 		<German>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] zur Auswahl aller Einheiten)</German>
 		<Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per selezionare tutte le unità)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para seleccionar todas las unidades)</Spanish>
-		<Russian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для выбора всех юнитов)</Russian>
+		<Russian>([COLOR:140:255:40:255]ALT[COLOR_REVERT] для выбора всех юнитов)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CTRL_SHIFT</Tag>
@@ -4357,7 +4357,7 @@
 		<German>[COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] per [COLOR:140:255:40:255]&lt; Linksklick &gt;[COLOR_REVERT] auswählen</German>
 		<Italian>[COLOR:140:255:40:255]&lt;Clicca con il tasto sinistro &gt;[COLOR_REVERT] [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Italian>
 		<Spanish>Hacer [COLOR:140:255:40:255]&lt;clic izquierdo &gt;[COLOR_REVERT] para seleccionar [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Spanish>
-		<Russian>[COLOR:140:255:40:255]&lt; Left-Click &gt;[COLOR_REVERT] чтобы выбрать [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Russian>
+		<Russian>[COLOR:140:255:40:255]Клик ЛКМ[COLOR_REVERT] чтобы выбрать [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_FOOD_THRESHOLD</Tag>

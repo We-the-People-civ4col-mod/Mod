@@ -49,7 +49,7 @@
 		<German>[COLOR_HIGHLIGHT_TEXT]Hauptmenü öffnen[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Apri menu principale[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Abrir menú principal[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</Spanish>
-		<Russian>[COLOR_HIGHLIGHT_TEXT]Открыть игровое меню[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</Russian>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Открыть игровое меню[COLOR_REVERT] [COLOR:140:255:40:255]Esc[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_CIVILOPEDIA</Tag>
@@ -420,7 +420,7 @@
 		<German>Rundenende ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</German>
 		<Italian>Fine del turno ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</Italian>
 		<Spanish>Fin del turno ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</Spanish>
-		<Russian>Конец хода ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</Russian>
+		<Russian>Конец хода ([COLOR:140:255:40:255]Alt[COLOR_REVERT])</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_ENDTURN_ALT_HELP</Tag>
@@ -723,7 +723,7 @@
 		<German>Runde beenden [COLOR:140:255:40:255]&lt; UMSCHALTEN-EINGABETASTE &gt;[COLOR_REVERT]</German>
 		<Italian>Fine turno [COLOR:140:255:40:255]&lt; MAIUSC-INVIO &gt;[COLOR_REVERT]</Italian>
 		<Spanish>Terminar turno [COLOR:140:255:40:255]&lt; MAYÚS-INTRO &gt;[COLOR_REVERT]</Spanish>
-		<Russian>Конец хода [COLOR:140:255:40:255]&lt; SHIFT-ENTER &gt;[COLOR_REVERT]</Russian>
+		<Russian>Конец хода [COLOR:140:255:40:255]SHIFT-ENTER[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>SYSTEM_END_TURN</Tag>
@@ -732,7 +732,7 @@
 		<German>Runde beenden mit [COLOR:140:255:40:255]&lt; EINGABETASTE &gt;[COLOR_REVERT] ...</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; INVIO &gt;[COLOR_REVERT] per terminare il turno...</Italian>
 		<Spanish>Pulsar [COLOR:140:255:40:255]&lt; INTRO &gt;[COLOR_REVERT] para terminar el turno...</Spanish>
-		<Russian>Нажмите [COLOR:140:255:40:255]&lt; ENTER &gt;[COLOR_REVERT] для завершения хода.</Russian>
+		<Russian>Нажмите [COLOR:140:255:40:255]ENTER[COLOR_REVERT] для завершения хода.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SCORES</Tag>
