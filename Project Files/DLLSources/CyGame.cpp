@@ -707,7 +707,7 @@ void CyGame::setFatherTeam(int /*FatherTypes*/ eFather, int /*TeamTypes*/ eTeam)
 {
 	if (m_pGame)
 	{
-		m_pGame->setFatherTeam((FatherTypes) eFather, (TeamTypes) eTeam);
+		m_pGame->setFatherTeam(CREATE_ASSERT_DATA, (FatherTypes) eFather, (TeamTypes) eTeam);
 	}
 }
 int CyGame::getFatherCategoryPosition(int /*FatherTypes*/ eFather)

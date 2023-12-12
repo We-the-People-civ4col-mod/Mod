@@ -279,11 +279,11 @@ float CvRandom::getGaussian(float fMean, float fStandardDeviation)
 	return( fMean + y1 * fStandardDeviation );
 }
 
-int CvRandom::pickValue(std::vector<int>& aWeights, char const* pszLog)
+int CvRandom::pickValue(AssertCallerData assertData, std::vector<int>& aWeights, char const* pszLog)
 {
 	int iTotalWeights = std::accumulate(aWeights.begin(), aWeights.end(), 0);
-	FAssert(iTotalWeights >= 0);
-	FAssert(iTotalWeights <= std::numeric_limits<unsigned short>::max());
+	FAssertWithCaller(assertData, iTotalWeights >= 0);
+	FAssertWithCaller(assertData, iTotalWeights <= std::numeric_limits<unsigned short>::max());
 
 	int iValue = get(iTotalWeights, pszLog);
 	int iSum = 0;
@@ -296,7 +296,7 @@ int CvRandom::pickValue(std::vector<int>& aWeights, char const* pszLog)
 		}
 	}
 
-	FAssert(false);
+	FAssertMsgWithCaller(assertData, false, "failed to pick any value");
 	return 0;
 }
 

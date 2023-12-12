@@ -27,6 +27,9 @@ namespace
 		const char* szFileName;
 		const char* szFunctionName; // advc.006f
 		unsigned int line;
+		const char* callerFile;
+		unsigned int callerLine;
+		const char* callerFunction;
 
 		// EIP / EBP / ESP
 		CONTEXT context;
@@ -63,19 +66,45 @@ namespace
 				sprintf(title, "Assert Failed: %s", moduleName);
 				SetWindowText(hDlg, title);
 
-				sprintf( g_AssertText, "Assert Failed\r\n\r\n"
-					"File:  %s\r\n"
-					"Line:  %u\r\n"
-					"Func:  %s\r\n" // advc.006f
-					"Expression:  %s\r\n"
-					"Message:  %s\r\n"
-					"\r\n"
-					"----------------------------------------------------------\r\n",
-					g_AssertInfo.szFileName,
-					g_AssertInfo.line,
-					g_AssertInfo.szFunctionName, // advc.006f
-					g_AssertInfo.szExpression,
-					g_AssertInfo.szMessage ? g_AssertInfo.szMessage : "" );
+				if (g_AssertInfo.callerFile != NULL && g_AssertInfo.callerFunction != NULL)
+				{
+					sprintf(g_AssertText, "Assert Failed\r\n\r\n"
+						"File:  %s\r\n"
+						"Line:  %u\r\n"
+						"Func:  %s\r\n" // advc.006f
+						"Expression:  %s\r\n"
+						"Caller File:  %s\r\n"
+						"Caller Line:  %u\r\n"
+						"Caller Func:  %s\r\n"
+						"Message:  %s\r\n"
+						"\r\n"
+						"----------------------------------------------------------\r\n",
+						g_AssertInfo.szFileName,
+						g_AssertInfo.line,
+						g_AssertInfo.szFunctionName, // advc.006f
+						g_AssertInfo.szExpression,
+						g_AssertInfo.callerFile,
+						g_AssertInfo.callerLine,
+						g_AssertInfo.callerFunction,
+						g_AssertInfo.szMessage ? g_AssertInfo.szMessage : "");
+				}
+				else
+				{
+					sprintf(g_AssertText, "Assert Failed\r\n\r\n"
+						"File:  %s\r\n"
+						"Line:  %u\r\n"
+						"Func:  %s\r\n" // advc.006f
+						"Expression:  %s\r\n"
+						"Message:  %s\r\n"
+						"\r\n"
+						"----------------------------------------------------------\r\n",
+						g_AssertInfo.szFileName,
+						g_AssertInfo.line,
+						g_AssertInfo.szFunctionName, // advc.006f
+						g_AssertInfo.szExpression,
+						g_AssertInfo.szMessage ? g_AssertInfo.szMessage : "");
+				}
+					
 
 				::SetWindowText( ::GetDlgItem(hDlg, IDC_ASSERTION_TEXT), g_AssertText );
 				::SetFocus( ::GetDlgItem(hDlg, IDC_DEBUG) );
@@ -145,7 +174,7 @@ namespace
 } // end anonymous namespace
 
 bool FAssertDlg(const char* szExpr, const char* szMsg, const char* szFile, unsigned int line,
-	/* <advc.006f> */ const char* szFunction, /* </advc006f> */ bool& bIgnoreAlways)
+	/* <advc.006f> */ const char* szFunction, /* </advc006f> */ const char* callerFile, unsigned int callerLine, const char* callerFunction, bool& bIgnoreAlways)
 {
 //	FILL_CONTEXT( g_AssertInfo.context );
 
@@ -154,6 +183,9 @@ bool FAssertDlg(const char* szExpr, const char* szMsg, const char* szFile, unsig
 	g_AssertInfo.szFileName = szFile;
 	g_AssertInfo.szFunctionName = szFunction; // advc.006f
 	g_AssertInfo.line = line;
+	g_AssertInfo.callerFile = callerFile;
+	g_AssertInfo.callerLine = callerLine;
+	g_AssertInfo.callerFunction = callerFunction;
 
 	DWORD dwResult = DisplayAssertDialog();
 

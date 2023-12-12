@@ -372,7 +372,7 @@ public:
 
 	TeamTypes getFatherTeam(FatherTypes eFather) const;
 	int getFatherGameTurn(FatherTypes eFather) const;
-	void setFatherTeam(FatherTypes eFather, TeamTypes eTeam);
+	void setFatherTeam(AssertCallerData assertData, FatherTypes eFather, TeamTypes eTeam);
 	bool getRemainingFathers(FatherPointTypes ePointType, std::vector<FatherTypes>& aFathers);
 	int getFatherCategoryPosition(FatherTypes eFather) const;
 

@@ -945,7 +945,7 @@ CvPlot* CvPlayer::findStartingPlot(bool bRandomize)
 
 		if (bRandomize)
 		{
-			iBestIndex = GC.getGameINLINE().getSorenRand().pickValue(aiWeights, "Randomizing start");
+			iBestIndex = GC.getGameINLINE().getSorenRand().pickValue(CREATE_ASSERT_DATA, aiWeights, "Randomizing start");
 		}
 
 		return GC.getMap().plotByIndexINLINE(iBestIndex);
@@ -1199,7 +1199,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 	for (int i = 0; i < iPopulation; ++i)
 	{
 		CvUnit* pUnit = pOldCity->getPopulationUnitByIndex(0);
-		bool bRemoved = pOldCity->removePopulationUnit(pUnit, false, NO_PROFESSION, bConquest);
+		bool bRemoved = pOldCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, NO_PROFESSION, bConquest);
 		FAssert(bRemoved);
 		aOldPopulationUnits.push_back(pUnit);
 		GET_PLAYER(pOldCity->getOwnerINLINE()).getAndRemoveUnit(pUnit->getID());
@@ -11245,7 +11245,7 @@ void CvPlayer::NBMOD_AddEuropeRandomUnit(bool bDisplay)
 
 		if (iNumFreeUnits > 0)
 		{
-			int iIndex = GC.getGameINLINE().getSorenRand().pickValue(aiUnitWeights, "Pick Expeditionary force unit");
+			int iIndex = GC.getGameINLINE().getSorenRand().pickValue(CREATE_ASSERT_DATA, aiUnitWeights, "Pick Expeditionary force unit");
 			int iUnitClass = kCivilizationInfo.getCivilizationFreeUnitsClass(iIndex);
 			ProfessionTypes eUnitProfession = (ProfessionTypes) kCivilizationInfo.getCivilizationFreeUnitsProfession(iIndex);
 			UnitTypes eUnit = (UnitTypes)kCivilizationInfo.getCivilizationUnits(iUnitClass);
@@ -11316,7 +11316,7 @@ void CvPlayer::NBMOD_AddEuropeShipUnit(bool bDisplay)
 
 		if (iNumFreeUnits > 0)
 		{
-			int iIndex = GC.getGameINLINE().getSorenRand().pickValue(aiUnitWeights, "Pick Expeditionary force unit");
+			int iIndex = GC.getGameINLINE().getSorenRand().pickValue(CREATE_ASSERT_DATA, aiUnitWeights, "Pick Expeditionary force unit");
 			int iUnitClass = kCivilizationInfo.getCivilizationFreeUnitsClass(iIndex);
 			ProfessionTypes eUnitProfession = (ProfessionTypes) kCivilizationInfo.getCivilizationFreeUnitsProfession(iIndex);
 			UnitTypes eUnit = (UnitTypes)kCivilizationInfo.getCivilizationUnits(iUnitClass);
@@ -11545,7 +11545,7 @@ void CvPlayer::doBells()
 						int iNumUnits = std::max(1, GC.getDefineINT("KING_INITIAL_UNIT_INCREASE") * getKingNumUnitMultiplier() / 100);
 						for (int i = 0; i < iNumUnits; ++i)
 						{
-							int iIndex = GC.getGameINLINE().getSorenRand().pickValue(aiUnitWeights, "Pick Expeditionary force unit");
+							int iIndex = GC.getGameINLINE().getSorenRand().pickValue(CREATE_ASSERT_DATA, aiUnitWeights, "Pick Expeditionary force unit");
 							int iUnitClass = kCivilizationInfo.getCivilizationFreeUnitsClass(iIndex);
 							ProfessionTypes eUnitProfession = (ProfessionTypes) kCivilizationInfo.getCivilizationFreeUnitsProfession(iIndex);
 							UnitTypes eUnit = (UnitTypes)kCivilizationInfo.getCivilizationUnits(iUnitClass);
@@ -19479,7 +19479,7 @@ UnitTypes CvPlayer::pickBestImmigrant()
 		}
 	}
 
-	UnitTypes eBestUnit = (UnitTypes) GC.getGameINLINE().getSorenRand().pickValue(aiWeights, "pick immigrant");
+	UnitTypes eBestUnit = (UnitTypes) GC.getGameINLINE().getSorenRand().pickValue(CREATE_ASSERT_DATA, aiWeights, "pick immigrant");
 	FAssert(NO_UNIT != eBestUnit);
 	if (eBestUnit != NO_UNIT)
 	{

@@ -8420,7 +8420,7 @@ bool CvUnitAI::AI_betterJob()
 
 	if (bJoined)
 	{
-		pCity->removePopulationUnit(this, false, eOriginalProfession);
+		pCity->removePopulationUnit(CREATE_ASSERT_DATA, this, false, eOriginalProfession);
 		AI_setUnitAIType(eOriginalAI);
 		AI_setMovePriority(iOriginalMovePriority);
 

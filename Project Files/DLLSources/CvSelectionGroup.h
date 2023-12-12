@@ -104,7 +104,7 @@ public:
 	RouteTypes getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBestBuild = NULL, RouteTypes ePreferredRoute = NO_ROUTE) const;
 
 	bool groupDeclareWar(CvPlot* pPlot, bool bForce = false);
-	bool groupAttack(int iX, int iY, int iFlags, bool& bFailedAlreadyFighting);
+	bool groupAttack(AssertCallerData assertData, int iX, int iY, int iFlags, bool& bFailedAlreadyFighting);
 	void groupMove(CvPlot* pPlot, bool bCombat, CvUnit* pCombatUnit = NULL, bool bEndMove = false);
 	bool groupPathTo(int iX, int iY, int iFlags);
 	bool groupRouteTo(int iX, int iY, int iFlags, RouteTypes ePreferredRoute = ROUTE_PLASTERED_ROAD);

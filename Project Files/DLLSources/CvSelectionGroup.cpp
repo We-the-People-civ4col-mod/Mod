@@ -1012,7 +1012,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 		if (headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO)
 		{
 			bool bFailedAlreadyFighting;
-			if (groupAttack(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags, bFailedAlreadyFighting))
+			if (groupAttack(CREATE_ASSERT_DATA, headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags, bFailedAlreadyFighting))
 			{
 				bDone = true;
 			}
@@ -2684,9 +2684,9 @@ bool CvSelectionGroup::groupDeclareWar(CvPlot* pPlot, bool bForce)
 // R&R, ray, Natives raiding party - START
 // R&R, ray, Heavily modified, use complete method
 // Returns true if attack was made...
-bool CvSelectionGroup::groupAttack(int iX, int iY, int iFlags, bool& bFailedAlreadyFighting)
+bool CvSelectionGroup::groupAttack(AssertCallerData assertData, int iX, int iY, int iFlags, bool& bFailedAlreadyFighting)
 {
-	FAssert(!isBusy()); // K-Mod
+	FAssertWithCaller(assertData, !isBusy()); // K-Mod
 
 	CvPlot* pDestPlot = GC.getMap().plot(iX, iY);
 

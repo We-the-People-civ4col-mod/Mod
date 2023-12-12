@@ -7054,12 +7054,12 @@ int CvGame::getFatherGameTurn(FatherTypes eFather) const
 	return m_em_iFatherGameTurn.get(eFather);
 }
 
-void CvGame::setFatherTeam(FatherTypes eFather, TeamTypes eTeam)
+void CvGame::setFatherTeam(AssertCallerData assertData, FatherTypes eFather, TeamTypes eTeam)
 {
-	FAssert(eFather >= 0);
-	FAssert(eFather < GC.getNumFatherInfos());
-	FAssert(eTeam >= 0);
-	FAssert(eTeam < MAX_TEAMS);
+	FAssertWithCaller(assertData, eFather >= 0);
+	FAssertWithCaller(assertData, eFather < NUM_FATHER_TYPES);
+	FAssertWithCaller(assertData, eTeam >= 0);
+	FAssertWithCaller(assertData, eTeam < NUM_TEAM_TYPES);
 
 	if (getFatherTeam(eFather) != eTeam)
 	{

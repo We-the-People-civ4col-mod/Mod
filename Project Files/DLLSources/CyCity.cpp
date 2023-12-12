@@ -1528,7 +1528,7 @@ void CyCity::addPopulationUnit(CyUnit* pUnit, int /*ProfessionTypes*/ eProfessio
 
 bool CyCity::removePopulationUnit(CyUnit* pUnit, bool bDelete, int /*ProfessionTypes*/ eProfession)
 {
-	return m_pCity ? m_pCity->removePopulationUnit(pUnit->getUnit(), bDelete, (ProfessionTypes) eProfession) : false;
+	return m_pCity ? m_pCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnit->getUnit(), bDelete, (ProfessionTypes) eProfession) : false;
 }
 
 bool CyCity::isExport(int /*YieldTypes*/ eYield) const

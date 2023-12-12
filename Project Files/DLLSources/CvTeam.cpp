@@ -156,7 +156,7 @@ void CvTeam::addTeam(TeamTypes eTeam)
 		//transfer father ownership from other team to us
 		if (GC.getGameINLINE().getFatherTeam(eFather) == eTeam)
 		{
-			GC.getGameINLINE().setFatherTeam(eFather, getID());
+			GC.getGameINLINE().setFatherTeam(CREATE_ASSERT_DATA, eFather, getID());
 		}
 
 		//give father benefits to other team's players
@@ -1749,7 +1749,7 @@ void CvTeam::convinceFather(FatherTypes eFather, bool bAccept)
 			changeFatherPoints(ePointType, -getFatherPointCost(eFather, ePointType));
 		}
 
-		GC.getGameINLINE().setFatherTeam(eFather, getID());
+		GC.getGameINLINE().setFatherTeam(CREATE_ASSERT_DATA, eFather, getID());
 
 		for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 		{
@@ -2022,7 +2022,7 @@ void CvTeam::freeFathers()
 		FatherTypes eFather = (FatherTypes) iFather;
 		if (GC.getGameINLINE().getFatherTeam(eFather) == getID())
 		{
-			GC.getGameINLINE().setFatherTeam(eFather, NO_TEAM);
+			GC.getGameINLINE().setFatherTeam(CREATE_ASSERT_DATA, eFather, NO_TEAM);
 			for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 			{
 				// notify all teams that this FF is available again

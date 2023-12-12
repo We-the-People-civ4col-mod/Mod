@@ -213,7 +213,7 @@ bool CvSelectionGroupAI::AI_update()
 		{
 			m_bGroupAttack = false;
 
-			groupAttack(m_iGroupAttackX, m_iGroupAttackY, MOVE_DIRECT_ATTACK, bFailedAlreadyFighting);
+			groupAttack(CREATE_ASSERT_DATA, m_iGroupAttackX, m_iGroupAttackY, MOVE_DIRECT_ATTACK, bFailedAlreadyFighting);
 		}
 		// else pick AI action
 		else

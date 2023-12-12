@@ -37,7 +37,7 @@ public:
 	DllExport unsigned short get(unsigned short usNum, char const* pszLog = NULL);  //  Returns value from 0 to num-1 inclusive.
 	DllExport float getFloat();
 	DllExport float getGaussian(float fMean, float fStandardDeviation);
-	int pickValue(std::vector<int>& aWeights, char const* pszLog);
+	int pickValue(AssertCallerData assertData, std::vector<int>& aWeights, char const* pszLog);
 	void shuffleArray(std::vector<int>& aNumbers, char const* pszLog);
 	DllExport void shuffleSequence(std::vector<int>& aNumbers, char const* pszLog);
 

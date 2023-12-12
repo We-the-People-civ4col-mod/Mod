@@ -3092,7 +3092,7 @@ bool CvCityAI::AI_removeWorstPopulationUnit(bool bDelete)
 		ProfessionTypes eEjectProfession = GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
 		if (m_aPopulationUnits[i]->canHaveProfession(eEjectProfession, false))
 		{
-			if (removePopulationUnit(m_aPopulationUnits[i], bDelete, eEjectProfession))
+			if (removePopulationUnit(CREATE_ASSERT_DATA, m_aPopulationUnits[i], bDelete, eEjectProfession))
 			{
 				return true;
 			}
@@ -3136,7 +3136,7 @@ CvUnit* CvCityAI::AI_bestPopulationUnit(UnitAITypes eUnitAI, ProfessionTypes ePr
 	}
 	if (pBestUnit != NULL)
 	{
-		removePopulationUnit(pBestUnit, false, eProfession);
+		removePopulationUnit(CREATE_ASSERT_DATA, pBestUnit, false, eProfession);
 		pBestUnit->AI_setUnitAIType(eUnitAI);
 	}
 
@@ -3429,7 +3429,7 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 	{
 		if (getPopulation() > 1)
 		{
-			bool bSuccess = removePopulationUnit(&kUnit, false, (ProfessionTypes)GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
+			bool bSuccess = removePopulationUnit(CREATE_ASSERT_DATA, &kUnit, false, (ProfessionTypes)GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
 			FAssertMsg(bSuccess, "Failed to remove useless citizen");
 		}
 		jobMutex.unlock();
@@ -3612,7 +3612,7 @@ CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 	{
 		if (getPopulation() > 1)
 		{
-			bool bSuccess = removePopulationUnit(pUnit, false, GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
+			bool bSuccess = removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
 			FAssertMsg(bSuccess, "Failed to remove useless citizen");
 		}
 		return NULL;

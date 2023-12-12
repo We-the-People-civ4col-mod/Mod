@@ -4831,7 +4831,7 @@ void CvUnit::clearSpecialty()
 		//pCity->removePopulationUnit(this, true, NO_PROFESSION);
 		if (kPlayer.getPopulationUnitCity(getID()) != NULL)
 		{
-			pCity->removePopulationUnit(this, true, NO_PROFESSION);
+			pCity->removePopulationUnit(CREATE_ASSERT_DATA, this, true, NO_PROFESSION);
 		}
 		else
 		{
@@ -15559,7 +15559,7 @@ bool CvUnit::raidScalp(CvCity* pCity)
 
 	GET_TEAM(getTeam()).AI_changeDamages(pCity->getTeam(), -pTargetUnit->getAsset());
 
-	pCity->removePopulationUnit(pTargetUnit, false, NO_PROFESSION);
+	pCity->removePopulationUnit(CREATE_ASSERT_DATA, pTargetUnit, false, NO_PROFESSION);
 	pTargetUnit->kill(false, this);
 
 	return true;
