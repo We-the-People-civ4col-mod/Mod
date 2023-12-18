@@ -4318,6 +4318,7 @@
 		<German>Wachstum : %d1 / %d2[ICON_FOOD]</German>
 		<Italian>Crescita : %d1 / %d2[ICON_FOOD]</Italian>
 		<Spanish>Crecimiento : %d1 / %d2[ICON_FOOD]</Spanish>
+		<Russian>Еды для роста : %d1 / %d2[ICON_FOOD]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_BAR_FOOD_GROWTH</Tag>
@@ -10590,7 +10591,7 @@
 		<German>Der unerschrockene [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] gilt den in [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Tapferkeit und Manneszucht. Landauf und landab eilt ihm der Ruf voraus, ein wahrhaft großer Krieger und General zu sein.</German>
 		<Italian>%s1_GPName è nato a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!</Italian>
 		<Spanish>%s1_GPName ha nacido en [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
-		<Russian>Во всех колониях [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] знают, как великого воина и полководца. Гарнизон [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] рад прибытию этого прославленного генерала.</Russian>
+		<Russian>Во всех колониях [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] известен, как великий воин и полководец. Гарнизон города [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] рад прибытию этого прославленного военачальника.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_GP_BORN_SOMEWHERE</Tag>

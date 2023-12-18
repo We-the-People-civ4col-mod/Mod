@@ -127,6 +127,7 @@
 		<German>Den Siedlungsbildschirm dieser Siedlung betreten</German>
 		<Italian>Accedi alla schermata dell'insediamento per questo insediamento</Italian>
 		<Spanish>Entrar en la pantalla de este asentamiento.</Spanish>
+		<Russian>Открыть [COLOR_FONT_CREAM]Экран поселения[COLOR_REVERT] для этой колонии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_ELIM_TAG</Tag>
