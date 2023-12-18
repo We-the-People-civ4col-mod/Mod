@@ -242,6 +242,7 @@
     <ClCompile Include="DLLSources\tinyxml2.cpp" />
     <ClCompile Include="DLLSources\UserSettings.cpp" />
     <ClCompile Include="DLLSources\XMLLengthSet.cpp" />
+    <ClCompile Include="DLLSources\XMLReaderAlert.cpp" />
     <ClCompile Include="DLLSources\_precompile.cpp" />
     <ClCompile Include="DLLSources\PlayerHelperFunctions.cpp" />
   </ItemGroup>
@@ -407,6 +408,7 @@
     <ClInclude Include="DLLSources\UserSettings.h" />
     <ClInclude Include="DLLSources\xmlFiles.h" />
     <ClInclude Include="DLLSources\PlayerHelperFunctions.h" />
+    <ClInclude Include="DLLSources\XMLReaderAlerts.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl" />

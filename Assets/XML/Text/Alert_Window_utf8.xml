@@ -113,4 +113,40 @@ Regardez le fichier Readme pour plus de détails.</French>
 		<French>Cette sauvegarde a été écrite par une version de We The People plus récente que celle que vous utilisez maintenant. Sans savoir quelles données ont été rajoutées, il n'y a aucun moyen de lire cette sauvegarde. Le jeu va s'arrêter pour éviter un plantage.</French>
 		<Russian>Сохранение сделано с версией We The People, которая новее, чем версия, которую вы используете сейчас. Не зная, какие данные были добавлены, невозможно прочитать сохранение. Игра будет закрыта, чтобы предотвратить сбой кода сохранения.</Russian>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_XML_READ_ERROR_HEADER</Tag>
+		<English>XML READ ERROR</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_XML_ENUM_MISSING_TYPE</Tag>
+		<English>File: %s
+%s: tag %s
+Tag missing when default NONE isn't allowed</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_XML_ENUM_WRONG_TYPE_CHILD</Tag>
+		<English>File: %s
+%s: tag %s
+subtag %s
+%s not of type %s</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_XML_ENUM_WRONG_TYPE</Tag>
+		<English>File: %s
+%s: tag %s
+%s not of type %s</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_XML_ENUM_NONE_TYPE_CHILD</Tag>
+		<English>File: %s
+%s: tag %s
+subtag %s
+Type NONE not allowed for this tag</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_XML_ENUM_NONE_TYPE</Tag>
+		<English>File: %s
+%s: tag %s
+Type NONE not allowed for this tag</English>
+	</TEXT>
 </Civ4GameText>

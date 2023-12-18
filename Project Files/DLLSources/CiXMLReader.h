@@ -1,5 +1,8 @@
 #pragma once
 
+#include <boost/utility/enable_if.hpp>
+#include <boost/type_traits/is_enum.hpp>
+
 namespace tinyxml2
 {
 	class XMLElement;
@@ -27,7 +30,8 @@ public:
 	void Read(const char* szTag, int& iValue) const;
 
 	template<typename T>
-	void Read(const char* szTag, T& type) const;
+	typename boost::enable_if<boost::is_enum<T>, void>::type
+	Read(const char* szTag, T& type) const;
 
 	template<typename T0, typename T1, typename T2, typename T3>
 	void Read(const char* szTag, InfoArray<T0, T1, T2, T3>& infoArray);
@@ -42,24 +46,24 @@ private:
 	template<typename T0, typename T1, typename T2, typename T3>
 	void ReadInfoArray(const char* szTag, InfoArray4Only<T0, T1, T2, T3>& infoArray);
 
+	// read a single element. Use this one as it aims to have full error detection and reporting
 	template<typename T>
-	void readElement(const char* szTag, T& var, const tinyxml2::XMLElement* pElement, bool bAllowNone) const;
+	void readElement(const char* szTag, T& var, const tinyxml2::XMLElement* pElement, const tinyxml2::XMLElement* pParent, bool bAllowNone) const;
 
 	const char* _ReadString(const char* szTag) const;
+	
+	const tinyxml2::XMLElement* childElement(const char* szTag) const;
+	
 	const CiXMLTypeContainer& m_FileReader;
 	const tinyxml2::XMLElement* m_Element;
 };
 
 
 template<typename T>
-void CiXMLReader::Read(const char* szTag, T& type) const
+typename boost::enable_if<boost::is_enum<T>, void>::type
+CiXMLReader::Read(const char* szTag, T& type) const
 {
-	const char* text = _ReadString(szTag);
-	if (text == NULL)
-	{
-		return;
-	}
-	getIndexOfType(type, text);
+	readElement(szTag, type, childElement(szTag), m_Element, true);
 }
 
 

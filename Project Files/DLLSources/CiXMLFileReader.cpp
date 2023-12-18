@@ -151,6 +151,11 @@ const char* CiXMLTypeContainer::getType() const
 	return m_szType.c_str();
 }
 
+const char* CiXMLTypeContainer::getCurrentFile() const
+{
+	return m_Reader.getCurrentFile();
+}
+
 bool CiXMLTypeContainer::valid() const
 {
 	return m_pElement != NULL;
@@ -230,6 +235,7 @@ void CiXMLFileReader::openFile()
 	const tinyxml2::XMLElement* files = m_pFileInfo->FirstChildElement("Files");
 	
 	const char *path = files->FirstChildElement("File")->GetText();
+	m_file = path;
 	m_pFile = XML_CACHE_HANDLER->getFile(path);
 	FAssert(m_pFile != NULL);
 
@@ -282,6 +288,11 @@ int CiXMLFileReader::getNumTypes() const
 		++iCount;
 	}
 	return iCount;
+}
+
+const char* CiXMLFileReader::getCurrentFile() const
+{
+	return m_file;
 }
 
 CiXMLTypeContainer CiXMLFileReader::getFirstListElement() const

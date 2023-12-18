@@ -14,6 +14,7 @@ public:
 	void next();
 
 	const char* getType() const;
+	const char* getCurrentFile() const;
 
 	bool valid() const;
 
@@ -40,11 +41,13 @@ public:
 		, m_pSchemaRoot(NULL)
 		, m_EnumType(getEnumName(var))
 		, m_pFileInfo(NULL)
+		, m_file(NULL)
 	{ openFile(); }
 
 	void validate(CvXMLLoadUtility* pUtility) const;
 
 	int getNumTypes() const;
+	const char* getCurrentFile() const;
 
 	// warning: CiXMLTypeContainer and any CiXMLReader it spawns can't be used after clearCache is called
 	CiXMLTypeContainer getFirstListElement() const;
@@ -64,4 +67,5 @@ private:
 	const char* m_xmlns;
 	const char* m_EnumType;
 	const tinyxml2::XMLElement* m_pFileInfo;
+	const char* m_file;
 };

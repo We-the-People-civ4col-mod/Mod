@@ -3975,7 +3975,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -5114,7 +5114,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -6248,7 +6248,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -7387,7 +7387,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -8525,7 +8525,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -9663,7 +9663,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -10801,7 +10801,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -11939,7 +11939,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -13073,7 +13073,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -14203,7 +14203,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -15333,7 +15333,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -16467,7 +16467,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -17601,7 +17601,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -18735,7 +18735,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -19870,7 +19870,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -21009,7 +21009,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -22147,7 +22147,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -23285,7 +23285,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -24415,7 +24415,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -25554,7 +25554,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -26693,7 +26693,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -27831,7 +27831,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -28969,7 +28969,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -30103,7 +30103,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -31241,7 +31241,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -32379,7 +32379,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -33513,7 +33513,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -34647,7 +34647,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -35782,7 +35782,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -36912,7 +36912,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
@@ -38050,7 +38050,7 @@
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
-					<UnitClassType>UNIT_EXPERT_TRADER</UnitClassType>
+					<UnitClassType>UNITCLASS_EXPERT_TRADER</UnitClassType>
 					<UnitType>NONE</UnitType>
 				</Unit>
 				<Unit>
