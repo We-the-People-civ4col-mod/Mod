@@ -5,11 +5,11 @@
 // Placing them here mean only 3 cpp file will need to include all infos
 
 #include "CvEnums.h"
-#include "CiInfos.h"
+#include "Infos.h"
 
-struct CiGlobalsInfoContainer
+struct GlobalsInfoContainer
 {
-	EnumMap<CivilizationTypes, CiCivilizationInfo> m_CivilizationTypes;
-	EnumMap<CivCategoryTypes, CiCivCategoryInfo> m_CivCategoryTypes;
-	EnumMap<DomainTypes, CiDomainInfo> m_DomainTypes;
+	EnumMap<CivilizationTypes, CivilizationInfo> m_CivilizationTypes;
+	EnumMap<CivCategoryTypes, CivCategoryInfo> m_CivCategoryTypes;
+	EnumMap<DomainTypes, DomainInfo> m_DomainTypes;
 };

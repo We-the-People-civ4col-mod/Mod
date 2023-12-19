@@ -2,7 +2,7 @@
 
 class CiXMLReader;
 
-class CiInfoBase
+class InfoBase
 #ifdef COMPILE_STATIC_TEST
 	: private boost::noncopyable
 #endif
@@ -13,7 +13,7 @@ public:
 	bool postLoadSetup(CiXMLReader& reader);
 };
 
-class CiInfoBaseTypeDesc
+class InfoBaseTypeDesc
 #ifdef COMPILE_STATIC_TEST
 	: private boost::noncopyable
 #endif
@@ -32,14 +32,14 @@ protected:
 	CvString m_szTextKey;
 };
 
-class CiInfoBasePedia
+class InfoBasePedia
 #ifdef COMPILE_STATIC_TEST
 	: private boost::noncopyable
 #endif
 {
 public:
-	CiInfoBasePedia();
-	~CiInfoBasePedia();
+	InfoBasePedia();
+	~InfoBasePedia();
 
 	bool readType(CiXMLReader& reader);
 	bool read(CiXMLReader& reader);
@@ -69,14 +69,14 @@ protected:
 	mutable std::vector<CvWString> m_aCachedDescriptions;
 };
 
-class CiDomainInfo : public CiInfoBaseTypeDesc
+class DomainInfo : public InfoBaseTypeDesc
 {
 };
 
-class CiCivCategoryInfo : public CiInfoBase
+class CivCategoryInfo : public InfoBase
 {
 public:
-	CiCivCategoryInfo();
+	CivCategoryInfo();
 
 	const char* getType() const;
 	CivEffectTypes getCivEffect() const;
@@ -89,10 +89,10 @@ protected:
 	CivEffectTypes m_eCivEffect;
 };
 
-class CiCivilizationInfo : public CiInfoBase
+class CivilizationInfo : public InfoBase
 {
 public:
-	CiCivilizationInfo();
+	CivilizationInfo();
 
 	bool readType(CiXMLReader& reader);
 	bool read(CiXMLReader& reader);

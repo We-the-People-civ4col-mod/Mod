@@ -1,33 +1,33 @@
 #include "CvGameCoreDLL.h"
-#include "CiInfos.h"
+#include "Infos.h"
 #include "CiXMLReader.h"
 
-bool CiInfoBase::readType(CiXMLReader& reader)
+bool InfoBase::readType(CiXMLReader& reader)
 {
 	return false;
 }
 
-bool CiInfoBase::read(CiXMLReader& reader)
+bool InfoBase::read(CiXMLReader& reader)
 {
 	return false;
 }
 
-bool CiInfoBase::postLoadSetup(CiXMLReader& reader)
+bool InfoBase::postLoadSetup(CiXMLReader& reader)
 {
 	return false;
 }
 
-const char* CiInfoBaseTypeDesc::getType() const
+const char* InfoBaseTypeDesc::getType() const
 {
 	return m_szType;
 }
 
-CvWString CiInfoBaseTypeDesc::getTextKeyWide() const
+CvWString InfoBaseTypeDesc::getTextKeyWide() const
 {
 	return m_szTextKey;
 }
 
-CvWString CiInfoBaseTypeDesc::getDescription(uint uiForm) const
+CvWString InfoBaseTypeDesc::getDescription(uint uiForm) const
 {
 	if (m_szTextKey.IsEmpty())
 	{
@@ -37,26 +37,26 @@ CvWString CiInfoBaseTypeDesc::getDescription(uint uiForm) const
 	return gDLL->getObjectText(m_szTextKey, uiForm);
 }
 
-bool CiInfoBaseTypeDesc::readType(CiXMLReader& reader)
+bool InfoBaseTypeDesc::readType(CiXMLReader& reader)
 {
 	reader.Read("Type", m_szType);
 	return true;
 }
 
-bool CiInfoBaseTypeDesc::read(CiXMLReader& reader)
+bool InfoBaseTypeDesc::read(CiXMLReader& reader)
 {
 	reader.ReadTextKey("Description", m_szTextKey);
 	return true;
 }
 
-bool CiInfoBaseTypeDesc::postLoadSetup(CiXMLReader& reader)
+bool InfoBaseTypeDesc::postLoadSetup(CiXMLReader& reader)
 {
 	return false;
 }
 
 
 
-CiInfoBasePedia::CiInfoBasePedia()
+InfoBasePedia::InfoBasePedia()
 	: m_szType(NULL)
 	, m_szTextKey(NULL)
 	, m_szCivilopedia(NULL)
@@ -65,7 +65,7 @@ CiInfoBasePedia::CiInfoBasePedia()
 {
 }
 
-CiInfoBasePedia::~CiInfoBasePedia()
+InfoBasePedia::~InfoBasePedia()
 {
 	SAFE_DELETE(m_szType);
 	SAFE_DELETE(m_szTextKey);
@@ -74,32 +74,32 @@ CiInfoBasePedia::~CiInfoBasePedia()
 	SAFE_DELETE(m_szSttrategy);
 }
 
-bool CiInfoBasePedia::readType(CiXMLReader& reader)
+bool InfoBasePedia::readType(CiXMLReader& reader)
 {
 	return true;
 }
 
-bool CiInfoBasePedia::read(CiXMLReader& reader)
+bool InfoBasePedia::read(CiXMLReader& reader)
 {
 	return false;
 }
 
-bool CiInfoBasePedia::postLoadSetup(CiXMLReader& reader)
+bool InfoBasePedia::postLoadSetup(CiXMLReader& reader)
 {
 	return false;
 }
 
-const char* CiInfoBasePedia::getType() const
+const char* InfoBasePedia::getType() const
 {
 	return m_szType;
 }
 
-const wchar* CiInfoBasePedia::getTextKeyWide() const
+const wchar* InfoBasePedia::getTextKeyWide() const
 {
 	return m_szTextKey;
 }
 
-CvWString CiInfoBasePedia::getDescription(uint uiForm) const
+CvWString InfoBasePedia::getDescription(uint uiForm) const
 {
 	if (m_szTextKey == NULL)
 	{
@@ -109,7 +109,7 @@ CvWString CiInfoBasePedia::getDescription(uint uiForm) const
 	return gDLL->getObjectText(m_szTextKey, uiForm);
 }
 
-CvWString CiInfoBasePedia::getCivilopedia() const
+CvWString InfoBasePedia::getCivilopedia() const
 {
 	if (m_szCivilopedia == NULL)
 	{
@@ -118,7 +118,7 @@ CvWString CiInfoBasePedia::getCivilopedia() const
 	return gDLL->getText(m_szCivilopedia);
 }
 
-CvWString CiInfoBasePedia::getHelp() const
+CvWString InfoBasePedia::getHelp() const
 {
 	if (m_szHelp == NULL)
 	{
@@ -127,7 +127,7 @@ CvWString CiInfoBasePedia::getHelp() const
 	return gDLL->getText(m_szHelp);
 }
 
-CvWString CiInfoBasePedia::getStrategy() const
+CvWString InfoBasePedia::getStrategy() const
 {
 	if (m_szSttrategy == NULL)
 	{
@@ -137,45 +137,45 @@ CvWString CiInfoBasePedia::getStrategy() const
 }
 
 
-CiCivCategoryInfo::CiCivCategoryInfo()
+CivCategoryInfo::CivCategoryInfo()
 	: m_eCivEffect(NO_CIV_EFFECT)
 {}
 
-const char* CiCivCategoryInfo::getType() const
+const char* CivCategoryInfo::getType() const
 {
 	return m_szType;
 }
 
-CivEffectTypes CiCivCategoryInfo::getCivEffect() const
+CivEffectTypes CivCategoryInfo::getCivEffect() const
 {
 	return m_eCivEffect;
 };
 
-bool CiCivCategoryInfo::readType(CiXMLReader& reader)
+bool CivCategoryInfo::readType(CiXMLReader& reader)
 {
 	reader.Read("Type", m_szType);
 	return true;
 }
 
-bool CiCivCategoryInfo::read(CiXMLReader& reader)
+bool CivCategoryInfo::read(CiXMLReader& reader)
 {
 	reader.Read("eCivEffect", m_eCivEffect);
 	return true;
 }
 
-CiCivilizationInfo::CiCivilizationInfo()
+CivilizationInfo::CivilizationInfo()
 	: m_bPlayable(false)
 	, m_iAreaMultiplier(0)
 {
 }
 
-bool CiCivilizationInfo::readType(CiXMLReader& reader)
+bool CivilizationInfo::readType(CiXMLReader& reader)
 {
 	reader.Read("Type", m_szType);
 	return true;
 }
 
-bool CiCivilizationInfo::read(CiXMLReader& reader)
+bool CivilizationInfo::read(CiXMLReader& reader)
 {
 	reader.Read("bPlayable", m_bPlayable);
 	reader.Read("iAreaMultiplier", m_iAreaMultiplier);

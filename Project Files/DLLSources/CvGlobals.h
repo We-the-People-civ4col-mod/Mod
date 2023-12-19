@@ -1551,9 +1551,21 @@ protected:
 	bool m_bExeXmlLengthOverride;
 };
 
+extern CvGlobals gGlobals;	// for debugging
+
+//
+// inlines
+//
+inline CvGlobals& CvGlobals::getInstance()
+{
+	return gGlobals;
+}
+
+
 //
 // helpers
 //
+#define GC CvGlobals::getInstance()
 #define gDLL GC.getDLLIFace()
 
 //helper functions

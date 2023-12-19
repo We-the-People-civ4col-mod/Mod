@@ -3,7 +3,7 @@
 
 #include"xmlFiles.h"
 #include "StartupErrorChecking.h"
-#include "CiGlobalsInfoContainer.h"
+#include "GlobalsInfoContainer.h"
 
 // small class where the constructor reads XML lengths
 // this way xml reading can take place prior to calling the CvGlobals constructor
@@ -73,8 +73,9 @@ loadXML MyXMLloader;
 
 
 // CvGlobals constructor needs to run after the loadXML as it requires the global xml lengths to be set up
-CiGlobalsInfoContainer InfoContainer;
-CiGlobals gGlobals(InfoContainer);
+GlobalsInfoContainer InfoContainer;
+GlobalInfos INFO(InfoContainer);
+CvGlobals gGlobals;
 
 void setupVARINFO();
 
