@@ -508,10 +508,10 @@
     <ClCompile Include="DLLSources\CyXMLAttributes.cpp">
       <Filter>XML Editor</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\CiXMLReader.cpp">
+    <ClCompile Include="DLLSources\XMLReader.cpp">
       <Filter>Classes\XML\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\CiXMLFileReader.cpp">
+    <ClCompile Include="DLLSources\XMLFileReader.cpp">
       <Filter>Classes\XML\CPP</Filter>
     </ClCompile>
     <ClCompile Include="DLLSources\GlobalInfos.cpp">
@@ -987,10 +987,10 @@
     <ClInclude Include="DLLSources\CyXMLAttributes.h">
       <Filter>XML Editor</Filter>
     </ClInclude>
-    <ClInclude Include="DLLSources\CiXMLReader.h">
+    <ClInclude Include="DLLSources\XMLReader.h">
       <Filter>Classes\XML\Header</Filter>
     </ClInclude>
-    <ClInclude Include="DLLSources\CiXMLFileReader.h">
+    <ClInclude Include="DLLSources\XMLFileReader.h">
       <Filter>Classes\XML\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\Infos.h">

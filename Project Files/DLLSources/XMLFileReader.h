@@ -1,16 +1,16 @@
 #pragma once
 
-#include "CiXMLReader.h"
+#include "XMLReader.h"
 #include "tinyxml2.h"
 
-class CiXMLFileReader;
+class XMLFileReader;
 
-class CiXMLTypeContainer
+class XMLTypeContainer
 {
 public:
-	CiXMLTypeContainer(const CiXMLFileReader& Reader);
+	XMLTypeContainer(const XMLFileReader& Reader);
 
-	CiXMLReader getListElement();
+	XMLReader getListElement();
 	void next();
 
 	const char* getType() const;
@@ -23,18 +23,18 @@ public:
 private:
 	void setType();
 
-	const CiXMLFileReader& m_Reader;
+	const XMLFileReader& m_Reader;
 	const tinyxml2::XMLElement* m_pElement;
 	CvString m_szType;
 };
 
 
-class CiXMLFileReader
+class XMLFileReader
 {
-	friend class CiXMLTypeContainer;
+	friend class XMLTypeContainer;
 public:
 	template<typename T>
-	CiXMLFileReader(T var) 
+	XMLFileReader(T var) 
 		: m_pFile(NULL)
 		, m_pSchema(NULL)
 		, m_pRoot(NULL)
@@ -50,7 +50,7 @@ public:
 	const char* getCurrentFile() const;
 
 	// warning: CiXMLTypeContainer and any CiXMLReader it spawns can't be used after clearCache is called
-	CiXMLTypeContainer getFirstListElement() const;
+	XMLTypeContainer getFirstListElement() const;
 
 	// remove the cached files to free up memory
 	static void clearCache();

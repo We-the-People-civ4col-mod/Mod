@@ -18,7 +18,7 @@
 #include "CvSavegame.h"
 #include "SavegameConstants.h"
 
-#include "CiXMLFileReader.h"
+#include "XMLFileReader.h"
 #include "GlobalsInfoContainer.h"
 
 // ignore type check for template functions
@@ -1444,7 +1444,7 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	readXMLfiles(XML_STAGE_FULL);
 	readXMLfiles(XML_STAGE_POST_SETUP);
 	GC.postXMLLoad(false);
-	CiXMLFileReader::clearCache(); // we are done reading xml files now
+	XMLFileReader::clearCache(); // we are done reading xml files now
 	/// XML type preloading - end - Nightinggale
 
 	/// xml verification
@@ -2318,13 +2318,13 @@ void CvXMLLoadUtility::LoadGlobalClassInfo(std::vector<T*>& aInfos, const char* 
 template <typename IndexType, class T, int DEFAULT>
 void CvXMLLoadUtility::LoadGlobalClassInfo(XMLReadStage eStage, EnumMap<IndexType, T, DEFAULT>& em)
 {
-	CiXMLFileReader reader(em.FIRST);
+	XMLFileReader reader(em.FIRST);
 	if (eStage == XML_STAGE_BASIC)
 	{
 		reader.validate(this);
 	}
 
-	CiXMLTypeContainer entry = reader.getFirstListElement();
+	XMLTypeContainer entry = reader.getFirstListElement();
 	for (IndexType index = em.FIRST; index <= em.LAST; ++index)
 	{
 		FAssert(entry.valid());

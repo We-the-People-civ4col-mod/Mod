@@ -8,16 +8,16 @@ namespace tinyxml2
 	class XMLElement;
 }
 
-class CiXMLTypeContainer;
+class XMLTypeContainer;
 class InfoArrayBase;
 
-class CiXMLReader
+class XMLReader
 {
 public:
-	CiXMLReader(const CiXMLTypeContainer& FileReader, const tinyxml2::XMLElement* Element);
+	XMLReader(const XMLTypeContainer& FileReader, const tinyxml2::XMLElement* Element);
 
 	void nextSiblingSameName();
-	CiXMLReader openFolder(const char* name) const;
+	XMLReader openFolder(const char* name) const;
 
 	bool valid() const;
 	bool isType(const char* szType) const;
@@ -54,23 +54,23 @@ private:
 	
 	const tinyxml2::XMLElement* childElement(const char* szTag) const;
 	
-	const CiXMLTypeContainer& m_FileReader;
+	const XMLTypeContainer& m_FileReader;
 	const tinyxml2::XMLElement* m_Element;
 };
 
 
 template<typename T>
 typename boost::enable_if<boost::is_enum<T>, void>::type
-CiXMLReader::Read(const char* szTag, T& type) const
+XMLReader::Read(const char* szTag, T& type) const
 {
 	readElement(szTag, type, childElement(szTag), m_Element, true);
 }
 
 
 template<typename T0, typename T1, typename T2, typename T3>
-void CiXMLReader::Read(const char* szTag, InfoArray<T0, T1, T2, T3>& infoArray)
+void XMLReader::Read(const char* szTag, InfoArray<T0, T1, T2, T3>& infoArray)
 {
-	CiXMLReader child = openFolder(szTag);
+	XMLReader child = openFolder(szTag);
 	if (!child.valid())
 	{
 		return;

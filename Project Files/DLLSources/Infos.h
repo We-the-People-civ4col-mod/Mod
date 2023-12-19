@@ -1,6 +1,6 @@
 #pragma once
 
-class CiXMLReader;
+class XMLReader;
 
 class InfoBase
 #ifdef COMPILE_STATIC_TEST
@@ -8,9 +8,9 @@ class InfoBase
 #endif
 {
 public:
-	bool readType(CiXMLReader& reader);
-	bool read(CiXMLReader& reader);
-	bool postLoadSetup(CiXMLReader& reader);
+	bool readType(XMLReader& reader);
+	bool read(XMLReader& reader);
+	bool postLoadSetup(XMLReader& reader);
 };
 
 class InfoBaseTypeDesc
@@ -23,9 +23,9 @@ public:
 	CvWString getTextKeyWide() const;
 	CvWString getDescription(uint uiForm = 0) const;
 
-	bool readType(CiXMLReader& reader);
-	bool read(CiXMLReader& reader);
-	bool postLoadSetup(CiXMLReader& reader);
+	bool readType(XMLReader& reader);
+	bool read(XMLReader& reader);
+	bool postLoadSetup(XMLReader& reader);
 
 protected:
 	CvString m_szType;
@@ -41,9 +41,9 @@ public:
 	InfoBasePedia();
 	~InfoBasePedia();
 
-	bool readType(CiXMLReader& reader);
-	bool read(CiXMLReader& reader);
-	bool postLoadSetup(CiXMLReader& reader);
+	bool readType(XMLReader& reader);
+	bool read(XMLReader& reader);
+	bool postLoadSetup(XMLReader& reader);
 
 	const char* getType() const;
 
@@ -81,8 +81,8 @@ public:
 	const char* getType() const;
 	CivEffectTypes getCivEffect() const;
 
-	bool readType(CiXMLReader& reader);
-	bool read(CiXMLReader& reader);
+	bool readType(XMLReader& reader);
+	bool read(XMLReader& reader);
 
 protected:
 	CvString m_szType;
@@ -94,8 +94,8 @@ class CivilizationInfo : public InfoBase
 public:
 	CivilizationInfo();
 
-	bool readType(CiXMLReader& reader);
-	bool read(CiXMLReader& reader);
+	bool readType(XMLReader& reader);
+	bool read(XMLReader& reader);
 private:
 	CvString m_szType;
 	bool m_bPlayable;

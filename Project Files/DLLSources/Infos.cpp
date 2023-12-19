@@ -1,18 +1,18 @@
 #include "CvGameCoreDLL.h"
 #include "Infos.h"
-#include "CiXMLReader.h"
+#include "XMLReader.h"
 
-bool InfoBase::readType(CiXMLReader& reader)
+bool InfoBase::readType(XMLReader& reader)
 {
 	return false;
 }
 
-bool InfoBase::read(CiXMLReader& reader)
+bool InfoBase::read(XMLReader& reader)
 {
 	return false;
 }
 
-bool InfoBase::postLoadSetup(CiXMLReader& reader)
+bool InfoBase::postLoadSetup(XMLReader& reader)
 {
 	return false;
 }
@@ -37,19 +37,19 @@ CvWString InfoBaseTypeDesc::getDescription(uint uiForm) const
 	return gDLL->getObjectText(m_szTextKey, uiForm);
 }
 
-bool InfoBaseTypeDesc::readType(CiXMLReader& reader)
+bool InfoBaseTypeDesc::readType(XMLReader& reader)
 {
 	reader.Read("Type", m_szType);
 	return true;
 }
 
-bool InfoBaseTypeDesc::read(CiXMLReader& reader)
+bool InfoBaseTypeDesc::read(XMLReader& reader)
 {
 	reader.ReadTextKey("Description", m_szTextKey);
 	return true;
 }
 
-bool InfoBaseTypeDesc::postLoadSetup(CiXMLReader& reader)
+bool InfoBaseTypeDesc::postLoadSetup(XMLReader& reader)
 {
 	return false;
 }
@@ -74,17 +74,17 @@ InfoBasePedia::~InfoBasePedia()
 	SAFE_DELETE(m_szSttrategy);
 }
 
-bool InfoBasePedia::readType(CiXMLReader& reader)
+bool InfoBasePedia::readType(XMLReader& reader)
 {
 	return true;
 }
 
-bool InfoBasePedia::read(CiXMLReader& reader)
+bool InfoBasePedia::read(XMLReader& reader)
 {
 	return false;
 }
 
-bool InfoBasePedia::postLoadSetup(CiXMLReader& reader)
+bool InfoBasePedia::postLoadSetup(XMLReader& reader)
 {
 	return false;
 }
@@ -151,13 +151,13 @@ CivEffectTypes CivCategoryInfo::getCivEffect() const
 	return m_eCivEffect;
 };
 
-bool CivCategoryInfo::readType(CiXMLReader& reader)
+bool CivCategoryInfo::readType(XMLReader& reader)
 {
 	reader.Read("Type", m_szType);
 	return true;
 }
 
-bool CivCategoryInfo::read(CiXMLReader& reader)
+bool CivCategoryInfo::read(XMLReader& reader)
 {
 	reader.Read("eCivEffect", m_eCivEffect);
 	return true;
@@ -169,13 +169,13 @@ CivilizationInfo::CivilizationInfo()
 {
 }
 
-bool CivilizationInfo::readType(CiXMLReader& reader)
+bool CivilizationInfo::readType(XMLReader& reader)
 {
 	reader.Read("Type", m_szType);
 	return true;
 }
 
-bool CivilizationInfo::read(CiXMLReader& reader)
+bool CivilizationInfo::read(XMLReader& reader)
 {
 	reader.Read("bPlayable", m_bPlayable);
 	reader.Read("iAreaMultiplier", m_iAreaMultiplier);

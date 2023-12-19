@@ -1,37 +1,37 @@
 #include "CvGameCoreDLL.h"
 #include <boost/type_traits/is_enum.hpp>
-#include "CiXMLReader.h"
-#include "CiXMLFileReader.h"
+#include "XMLReader.h"
+#include "XMLFileReader.h"
 #include "tinyxml2.h"
 #include "XMLReaderAlerts.h"
 
-CiXMLReader::CiXMLReader(const CiXMLTypeContainer& FileReader, const tinyxml2::XMLElement* Element)
+XMLReader::XMLReader(const XMLTypeContainer& FileReader, const tinyxml2::XMLElement* Element)
 	: m_FileReader(FileReader)
 	, m_Element(Element)
 {
 }
 
-void CiXMLReader::nextSiblingSameName()
+void XMLReader::nextSiblingSameName()
 {
 	m_Element = m_Element->NextSiblingElement(m_Element->Name());
 }
 
-CiXMLReader CiXMLReader::openFolder(const char* name) const
+XMLReader XMLReader::openFolder(const char* name) const
 {
-	return CiXMLReader(m_FileReader, m_Element->FirstChildElement(name));
+	return XMLReader(m_FileReader, m_Element->FirstChildElement(name));
 }
 
-bool CiXMLReader::valid() const
+bool XMLReader::valid() const
 {
 	return m_Element != NULL;
 }
 
-bool CiXMLReader::isType(const char* szType) const
+bool XMLReader::isType(const char* szType) const
 {
 	return m_FileReader.isType(m_Element, szType);
 }
 
-void CiXMLReader::Read(const char* szTag, CvString& szText) const
+void XMLReader::Read(const char* szTag, CvString& szText) const
 {
 	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
 	if (element == NULL)
@@ -41,7 +41,7 @@ void CiXMLReader::Read(const char* szTag, CvString& szText) const
 	szText = element->GetText();
 }
 
-void CiXMLReader::ReadTextKey(const char* szTag, CvString& szText) const
+void XMLReader::ReadTextKey(const char* szTag, CvString& szText) const
 {
 	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
 	if (element == NULL)
@@ -52,7 +52,7 @@ void CiXMLReader::ReadTextKey(const char* szTag, CvString& szText) const
 	FAssert(CvWString(szText) != gDLL->getText(szText));
 }
 
-void CiXMLReader::Read(const char* szTag, bool& bBool) const
+void XMLReader::Read(const char* szTag, bool& bBool) const
 {
 	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
 	if (element != NULL)
@@ -61,7 +61,7 @@ void CiXMLReader::Read(const char* szTag, bool& bBool) const
 	}
 }
 
-void CiXMLReader::Read(const char* szTag, int& iValue) const
+void XMLReader::Read(const char* szTag, int& iValue) const
 {
 	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
 	if (element != NULL)
@@ -71,13 +71,13 @@ void CiXMLReader::Read(const char* szTag, int& iValue) const
 }
 
 template<>
-void CiXMLReader::readElement<int>(const char* szTag, int& var, const tinyxml2::XMLElement* pElement, const tinyxml2::XMLElement* pParent, bool bAllowNone) const
+void XMLReader::readElement<int>(const char* szTag, int& var, const tinyxml2::XMLElement* pElement, const tinyxml2::XMLElement* pParent, bool bAllowNone) const
 {
 	var = pElement->IntText();
 }
 
 template<typename T>
-void CiXMLReader::readElement(const char* szTag, T& var, const tinyxml2::XMLElement* pElement, const tinyxml2::XMLElement* pParent, bool bAllowNone) const
+void XMLReader::readElement(const char* szTag, T& var, const tinyxml2::XMLElement* pElement, const tinyxml2::XMLElement* pParent, bool bAllowNone) const
 {
 	BOOST_STATIC_ASSERT(boost::is_enum<T>::value);
 
@@ -110,20 +110,20 @@ void CiXMLReader::readElement(const char* szTag, T& var, const tinyxml2::XMLElem
 	}
 }
 
-const char* CiXMLReader::_ReadString(const char* szTag) const
+const char* XMLReader::_ReadString(const char* szTag) const
 {
 	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
 	return element == NULL ? NULL : element->GetText();
 }
 
-const tinyxml2::XMLElement* CiXMLReader::childElement(const char* szTag) const
+const tinyxml2::XMLElement* XMLReader::childElement(const char* szTag) const
 {
 	return m_Element->FirstChildElement(szTag);
 }
 
 
 template<typename T0>
-void CiXMLReader::ReadInfoArray(const char* szTag, InfoArray1Only<T0>& infoArray)
+void XMLReader::ReadInfoArray(const char* szTag, InfoArray1Only<T0>& infoArray)
 {
 	std::vector<short> vec;
 
@@ -146,7 +146,7 @@ void CiXMLReader::ReadInfoArray(const char* szTag, InfoArray1Only<T0>& infoArray
 }
 
 template<typename T0, typename T1>
-void CiXMLReader::ReadInfoArray(const char* szTag, InfoArray2Only<T0, T1>& infoArray)
+void XMLReader::ReadInfoArray(const char* szTag, InfoArray2Only<T0, T1>& infoArray)
 {
 	std::vector<short> vec;
 
@@ -165,7 +165,7 @@ void CiXMLReader::ReadInfoArray(const char* szTag, InfoArray2Only<T0, T1>& infoA
 }
 
 template<typename T0, typename T1, typename T2>
-void CiXMLReader::ReadInfoArray(const char* szTag, InfoArray3Only<T0, T1, T2>& infoArray)
+void XMLReader::ReadInfoArray(const char* szTag, InfoArray3Only<T0, T1, T2>& infoArray)
 {
 	std::vector<short> vec;
 
@@ -188,7 +188,7 @@ void CiXMLReader::ReadInfoArray(const char* szTag, InfoArray3Only<T0, T1, T2>& i
 }
 
 template<typename T0, typename T1, typename T2, typename T3>
-void CiXMLReader::ReadInfoArray(const char* szTag, InfoArray4Only<T0, T1, T2, T3>& infoArray)
+void XMLReader::ReadInfoArray(const char* szTag, InfoArray4Only<T0, T1, T2, T3>& infoArray)
 {
 	std::vector<short> vec;
 
@@ -219,7 +219,7 @@ typename boost::enable_if<boost::is_enum<T>, void>::type
 declareSpecialization(T var)
 {
 	FAssert(0);
-	CiXMLReader* reader = NULL;
+	XMLReader* reader = NULL;
 	reader->Read("", var);
 }
 
@@ -230,6 +230,6 @@ void declarations2()
 {
 	// never call this function. It will fail/crash
 	FAssert(0);
-	CiXMLReader* reader = NULL;
+	XMLReader* reader = NULL;
 	declareSpecialization((CivEffectTypes)0);
 }

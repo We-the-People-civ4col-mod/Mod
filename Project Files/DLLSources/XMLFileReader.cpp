@@ -1,5 +1,5 @@
 #include "CvGameCoreDLL.h"
-#include "CiXMLFileReader.h"
+#include "XMLFileReader.h"
 #include "CvXMLLoadUtility.h"
 
 class XMLCache;
@@ -123,7 +123,7 @@ protected:
 
 
 
-CiXMLTypeContainer::CiXMLTypeContainer(const CiXMLFileReader& Reader)
+XMLTypeContainer::XMLTypeContainer(const XMLFileReader& Reader)
 	: m_Reader(Reader)
 	, m_pElement(Reader.getFirstElement())
 {
@@ -131,13 +131,13 @@ CiXMLTypeContainer::CiXMLTypeContainer(const CiXMLFileReader& Reader)
 }
 
 
-CiXMLReader CiXMLTypeContainer::getListElement()
+XMLReader XMLTypeContainer::getListElement()
 {
 	setType();
-	return CiXMLReader(*this, m_pElement);
+	return XMLReader(*this, m_pElement);
 }
 
-void CiXMLTypeContainer::next()
+void XMLTypeContainer::next()
 {
 	FAssert(m_pElement != NULL);
 	if (m_pElement != NULL)
@@ -146,22 +146,22 @@ void CiXMLTypeContainer::next()
 	}
 }
 
-const char* CiXMLTypeContainer::getType() const
+const char* XMLTypeContainer::getType() const
 {
 	return m_szType.c_str();
 }
 
-const char* CiXMLTypeContainer::getCurrentFile() const
+const char* XMLTypeContainer::getCurrentFile() const
 {
 	return m_Reader.getCurrentFile();
 }
 
-bool CiXMLTypeContainer::valid() const
+bool XMLTypeContainer::valid() const
 {
 	return m_pElement != NULL;
 }
 
-bool CiXMLTypeContainer::isType(const tinyxml2::XMLElement* pElement, const char* szType) const
+bool XMLTypeContainer::isType(const tinyxml2::XMLElement* pElement, const char* szType) const
 {
 	const tinyxml2::XMLElement* schema = m_Reader.m_pSchemaRoot->FirstChildElement(pElement->Name());
 	FAssert(schema != NULL);
@@ -176,7 +176,7 @@ bool CiXMLTypeContainer::isType(const tinyxml2::XMLElement* pElement, const char
 	return false;
 }
 
-void CiXMLTypeContainer::setType()
+void XMLTypeContainer::setType()
 {
 	if (m_pElement == NULL)
 	{
@@ -223,7 +223,7 @@ static std::string getPath(std::string path)
 }
 
 
-void CiXMLFileReader::openFile()
+void XMLFileReader::openFile()
 {
 	if (XML_CACHE_HANDLER == NULL)
 	{
@@ -259,7 +259,7 @@ void CiXMLFileReader::openFile()
 	FAssert(m_pSchemaRoot != NULL);
 }
 
-void CiXMLFileReader::validate(CvXMLLoadUtility* pUtility) const
+void XMLFileReader::validate(CvXMLLoadUtility* pUtility) const
 {
 	const tinyxml2::XMLElement* FileInfo = XML_CACHE_HANDLER->getFileInfo(m_EnumType);
 	const tinyxml2::XMLElement* files = FileInfo->FirstChildElement("Files");
@@ -280,7 +280,7 @@ void CiXMLFileReader::validate(CvXMLLoadUtility* pUtility) const
 	}
 }
 
-int CiXMLFileReader::getNumTypes() const
+int XMLFileReader::getNumTypes() const
 {
 	int iCount = 0;
 	for (const tinyxml2::XMLElement* element = getFirstElement(); element != NULL; element = element->NextSiblingElement(element->Name()))
@@ -290,23 +290,23 @@ int CiXMLFileReader::getNumTypes() const
 	return iCount;
 }
 
-const char* CiXMLFileReader::getCurrentFile() const
+const char* XMLFileReader::getCurrentFile() const
 {
 	return m_file;
 }
 
-CiXMLTypeContainer CiXMLFileReader::getFirstListElement() const
+XMLTypeContainer XMLFileReader::getFirstListElement() const
 {
-	return CiXMLTypeContainer(*this);
+	return XMLTypeContainer(*this);
 }
 
 
-void CiXMLFileReader::clearCache()
+void XMLFileReader::clearCache()
 {
 	SAFE_DELETE(XML_CACHE_HANDLER);
 }
 
-const tinyxml2::XMLElement* CiXMLFileReader::getFirstElement() const
+const tinyxml2::XMLElement* XMLFileReader::getFirstElement() const
 {
 	const tinyxml2::XMLElement* element = m_pRoot;
 
