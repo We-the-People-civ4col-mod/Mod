@@ -994,7 +994,12 @@ bool CyCity::isFreePromotion(int /*PromotionTypes*/ eIndex)
 
 bool CyCity::isHasRealBuilding(int /*BuildingTypes*/ iIndex)
 {
-	return m_pCity ? m_pCity->isHasRealBuilding((BuildingTypes) iIndex) : false;
+	BuildingTypes eBuilding = static_cast<BuildingTypes>(iIndex);
+	if (m_pCity && isInRange(eBuilding))
+	{
+		return m_pCity->isHasRealBuilding(eBuilding);
+	}
+	return false;
 }
 
 void CyCity::setHasRealBuilding(int /*BuildingTypes*/ iIndex, bool bNewValue)

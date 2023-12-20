@@ -6465,7 +6465,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	int iLast;
 	int iI;
 
-	if (NO_BUILDING == eBuilding)
+	if (NO_BUILDING == eBuilding || eBuilding >= NUM_BUILDING_TYPES)
 	{
 		return;
 	}
