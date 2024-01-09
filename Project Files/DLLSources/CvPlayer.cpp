@@ -24902,6 +24902,10 @@ void CvPlayer::writeDesyncLog(FILE *f) const
 // Function returns preferred direction for initial exploration basing on where starting plot is placed
 DirectionTypes CvPlayer::getPreferredStartingDirection() const
 {
+	if (getStartingPlot() == NULL) {
+		return NO_DIRECTION;
+	}
+	
 	int startX = getStartingPlot()->getX_INLINE();
 	int startY = getStartingPlot()->getY_INLINE();
 	int score[NUM_DIRECTION_TYPES] = { 0 };
