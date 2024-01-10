@@ -699,7 +699,7 @@
 		</GoodyInfo>
 		<GoodyInfo>
 			<Type>GOODY_FAILED_TRADER</Type>
-			<Description>TXT_KEY_GOODY_FAILED_TRADRE</Description>
+			<Description>TXT_KEY_GOODY_FAILED_TRADER</Description>
 			<Sound>AS2D_GOODY_XP</Sound>
 			<AnnounceText>TXT_KEY_GOODY_FAILED_TRADER</AnnounceText>
 			<ChiefText>TXT_KEY_CHIEF_FAILED_TRADER</ChiefText>
