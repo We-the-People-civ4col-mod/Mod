@@ -54441,7 +54441,7 @@
 			<iCombat>3</iCombat>
 			<iXPValueAttack>1</iXPValueAttack>
 			<iXPValueDefense>0</iXPValueDefense>
-			<iWithdrawalProb>20</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -54999,7 +54999,7 @@
 			<iCombat>3</iCombat>
 			<iXPValueAttack>1</iXPValueAttack>
 			<iXPValueDefense>0</iXPValueDefense>
-			<iWithdrawalProb>20</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -78423,7 +78423,7 @@
 			<iCombat>20</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -78629,7 +78629,7 @@
 			<iCombat>22</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -79249,7 +79249,7 @@
 			<iCombat>25</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -79463,7 +79463,7 @@
 			<iCombat>30</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -79693,7 +79693,7 @@
 			<iCombat>32</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>5</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -81410,7 +81410,7 @@
 			<iCombat>23</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>30</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -83077,7 +83077,7 @@
 			<iCombat>26</iCombat>
 			<iXPValueAttack>3</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -83271,7 +83271,7 @@
 			<iCombat>2</iCombat>
 			<iXPValueAttack>0</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>20</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
