@@ -570,12 +570,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_WITHDRAWAL_TEXT</Tag>
-		<English>[ICON_BULLET]%D1_Change%% withdrawal chance</English>
-		<French>[ICON_BULLET]Chances de repli de %D1_Change%%</French>
-		<German>[ICON_BULLET]%D1_Change%% Rückzugswahrscheinlichkeit</German>
-		<Italian>[ICON_BULLET]%D1_Change%% di probabilità di ritirata</Italian>
-		<Spanish>[ICON_BULLET]%D1_Change%% a la probabilidad de retirarse</Spanish>
-		<Russian>[ICON_BULLET]%D1_Change%% к шансу выйти из боя</Russian>
+		<English>[ICON_BULLET]%D1_Change%% withdrawal chance on attack</English>
+		<French>[ICON_BULLET]Chances de repli en attaque de %D1_Change%%</French>
+		<German>[ICON_BULLET]%D1_Change%% Rückzugswahrscheinlichkeitdes Rückzugs im Angriff</German>
+		<Italian>[ICON_BULLET]%D1_Change%% di probabilità di ritirata in attacco</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change%% a la probabilidad de retirarse en ataque</Spanish>
+		<Russian>[ICON_BULLET]%D1_Change%% к шансу выйти из боя при атаке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_HEALS_EXTRA_TEXT</Tag>
@@ -865,21 +865,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY_SHORT</Tag>
-		<English>[ICON_BULLET]Withdrawal chance : %d1_Amount%%</English>
-		<French>[ICON_BULLET]Chances de rompre le combat : %d1_Amount%%</French>
-		<German>[ICON_BULLET]Rückzugschance : %d1_Amount%%</German>
-		<Italian>[ICON_BULLET]Probabilità di ritirata : %d1_Amount%%</Italian>
-		<Spanish>[ICON_BULLET]Probabilidad de retirarse : %d1_Amount%%</Spanish>
-		<Russian>[ICON_BULLET]Шанс отступить : %d1_Amount%%</Russian>
+		<English>[ICON_BULLET]Withdrawal chance on attack: %d1_Amount%%</English>
+		<French>[ICON_BULLET]Chances de rompre le combat en attaque: %d1_Amount%%</French>
+		<German>[ICON_BULLET]Chance auf Rückzug beim Angriff: %d1_Amount%%</German>
+		<Italian>[ICON_BULLET]Probabilità di ritirata in attacco: %d1_Amount%%</Italian>
+		<Spanish>[ICON_BULLET]Probabilidad de retirarse en ataque: %d1_Amount%%</Spanish>
+		<Russian>[ICON_BULLET]Шанс отступить при атаке: %d1_Amount%%</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY</Tag>
-		<English>[ICON_BULLET]Can withdraw from combat (%d1_Amount%% chance)</English>
-		<French>[ICON_BULLET]Peut rompre le combat (%d1_Amount%% de chance)</French>
-		<German>[ICON_BULLET]Kann im Kampf den Rückzug antreten (Wahrscheinlichkeit: %d1_Amount%%)</German>
-		<Italian>[ICON_BULLET]Può ritirarsi dal combattimento (%d1_Amount%% di probabilità)</Italian>
-		<Spanish>[ICON_BULLET]Puede retirarse del combate (probabilidad del %d1_Amount%%)</Spanish>
-		<Russian>[ICON_BULLET]Может выйти из боя (шанс %d1_Amount%%)</Russian>
+		<English>[ICON_BULLET]Can withdraw from combat on attack (%d1_Amount%% chance)</English>
+		<French>[ICON_BULLET]Peut rompre le combat en attaque(%d1_Amount%% de chance)</French>
+		<German>[ICON_BULLET]Kann im Angriff den Rückzug antreten (Wahrscheinlichkeit: %d1_Amount%%)</German>
+		<Italian>[ICON_BULLET]Può ritirarsi dal combattimento in attacco(%d1_Amount%% di probabilità)</Italian>
+		<Spanish>[ICON_BULLET]Puede retirarse del combate en ataque(probabilidad del %d1_Amount%%)</Spanish>
+		<Russian>[ICON_BULLET]Может выйти из боя при атаке (шанс %d1_Amount%%)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MOD_VS_TYPE</Tag>
