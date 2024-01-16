@@ -9882,7 +9882,7 @@
 		<German>[ICON_BULLET]Die Modernisierung [COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] wird errichtet</German>
 		<Italian>[ICON_BULLET][NUM1:È stato costruito un:È stata costruita una] [COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Se [NUM1:ha construido un:ha construido una:han construido unos:han construido unas] [COLOR_HIGHLIGHT_TEXT]%s1:1_improvement[COLOR_REVERT]</Spanish>
-		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] построено</Russian>
+		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] построен(а)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_IMPROVEMENT_REMOVE</Tag>
@@ -9891,7 +9891,7 @@
 		<German>[ICON_BULLET]Die Modernisierung %s1_improvement wird zerstört</German>
 		<Italian>[ICON_BULLET]%s1_improvement [NUM1:distrutto:distrutta] </Italian>
 		<Spanish>[ICON_BULLET][NUM1:El:La:Los:Las] %s1:1_improvement [NUM1:ha quedado destruido:ha quedado destruida:han quedado destruidos:han quedado destruidas]</Spanish>
-		<Russian>[ICON_BULLET]The %s1_improvement is destroyed</Russian>
+		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] уничтожен(а)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ROUTE_GROWTH</Tag>
