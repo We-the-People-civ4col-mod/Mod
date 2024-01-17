@@ -2519,7 +2519,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALING_2</Tag>
-		<English>These poor animals. They need our protection but not our harpoons. Furthermore our neighbours are already whaling in this area. I will not jeopardise our relationship.</English>
+		<English>These poor animals. They need our protection, not our harpoons. Furthermore our neighbours are already whaling in this area. I will not jeopardise our relationship.</English>
 		<French>These poor animals. They need our protection but not our harpoons. Furthermore our neighbours do already whaling in this area. I will not jeopardise our relationship.</French>
 		<German>Diese armen Tiere. Sie benötigen unseren Schutz, nicht unsere Harpunen. Außerdem betreiben unsere Nachbarn hier bereits Walfang. Ich möchte die guten Beziehungen nicht gefährden.</German>
 		<Russian>Бедные животные. Они нуждаются в нашей защите, а не в наших гарпунах. Кроме того, наши соседи уже ведут китобойный промысел в этом районе. Я не буду рисковать нашими отношениями.</Russian>
@@ -2617,7 +2617,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RABBLE_1</Tag>
-		<English>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more beadles.</English>
+		<English>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more constables.</English>
 		<French>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more beadles.</French>
 		<German>Na schön, das Lumpenpack soll ihren Wegzoll haben. Aber wir müssen dringend was gegen dieses Gesindel tun. Wir sollten noch ein paar Büttel mehr einstellen.</German>
 		<Russian>Ладно, пусть люмпены возьмут свою часть. Но надо срочно что-то делать с этим сбродом. Мы должны нанять еще несколько судебных приставов.</Russian>
@@ -2638,7 +2638,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADEFORT_1</Tag>
-		<English>Yes, this job is just right for a trading post. Local farmers and Indians will trade with us. This way we will outdo the competition.</English>
+		<English>Yes, this spot is just right for a trading post. The local Natives and farmers will trade with us. That's how we can outdo the competition.</English>
 		<French>Yes, this job is just right for a trading post. Local farmers and Indians will trade with us. This way we will outdo the competition.</French>
 		<German>Ja, diese Stelle ist für einen Handelsposten genau richtig. Ortsansässige Farmer und Indianer werden mit uns Handeln. Damit stechen wir die Konkurrenz aus.</German>
 		<Russian>Да, это место как раз подходит для торгового поста. Местные фермеры и индейцы будут торговать с нами под защитой пушек форта. Таким образом, мы превзойдем конкурентов.</Russian>
@@ -2652,7 +2652,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADEFORT_3</Tag>
-		<English>I don't have time for this now. The trading company should take care of it itself.</English>
+		<English>I don't have time for this now. The trading company should take care of everything itself.</English>
 		<French>I don't have time for this now. The trading company should take care of it itself.</French>
 		<German>Für sowas hab ich jetzt keine Zeit. Die Handelsgesellschaft soll sich gefälligst selbst darum kümmern.</German>
 		<Russian>У меня сейчас нет на это времени. Торговая компания должна позаботиться об этом сама.</Russian>
@@ -2694,7 +2694,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_LOST_SHIP_1</Tag>
-		<English>Aye, the ship is unsalvageable. These damn shallow waters! Steer the ship close to shore. Maybe we can recover something from it later.</English>
+		<English>Aye, the ship is unsalvageable. These damn shallow waters! Try to beach the ship near the shore. Maybe we can recover something from it later.</English>
 		<French>Aye, the ship is unsalvageable. These damn shallow waters. Then the ship will at least steer close to shore, maybe we can salvage something from it later!</French>
 		<German>Aye, das Schiff ist nicht mehr zu retten. Diese verdammten seichten Gewässer. Dann steuert das Schiff wenigstens in Ufernähe, vielleicht können wir später noch etwas daraus bergen!</German>
 		<Russian>Да, корабль не подлежит восстановлению. Чёртовы мелководья! Подведите корабль поближе к берегу. Может быть, мы сможем извлечь из него что-нибудь позже.</Russian>
