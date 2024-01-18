@@ -2511,7 +2511,7 @@ void CvTeam::testFoundingFather()
 	{
 		FatherTypes eFather = (FatherTypes)iFather;
 
-		//This code was produced by Dyllin.
+		//This code was produced by Dyllin. Jan 2024
 		//Written to address a prior issue where only one FF was offered per turn,
 		//but that means if you rejected that FF, you didn't get another chance that turn.
 		//As a result, you could lose FFs further down the list to other colonies easily.
@@ -2527,7 +2527,7 @@ void CvTeam::testFoundingFather()
 
 			for (int iFatherPointType = 0; iFatherPointType < GC.getNumFatherPointInfos(); iFatherPointType++)
 			{
-				if (getFatherPointCost(eFather, (FatherPointTypes)iFatherPointType) >= getFatherPointCost(eFather, ePrimaryPointType))
+				if (getFatherPointCost(eFather, (FatherPointTypes)iFatherPointType) > getFatherPointCost(eFather, ePrimaryPointType))
 				{
 					ePrimaryPointType = (FatherPointTypes)iFatherPointType;
 				}
