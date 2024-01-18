@@ -2701,7 +2701,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_COLONY_GROWTH</Tag>
-		<English>Your colony has grown a lot. But we can only expect that our rivals do the same. We need to reach a population of 20 to increase our production and strengthen our borders.</English>
+		<English>Our colony has grown a lot. Naturally our rivals are striving to do the same. We need to reach a population of 20 to increase our production and strengthen our borders.</English>
 		<French>Votre colonie a beaucoup grandi. Mais nous ne pouvons que nous attendre à ce que nos rivaux fassent de même. Nous devons atteindre une population de 20 pour augmenter notre production et renforcer nos frontières.</French>
 		<German>> Ihre Kolonie ist stark gewachsen. Aber wir können nur erwarten, dass unsere Konkurrenten dasselbe tun. Wir müssen eine Bevölkerungszahl von 20 erreichen, um unsere Produktion zu steigern und unsere Grenzen zu stärken.</German>
 		<Russian>Наша колония сильно выросла. Однако и у наших соперников дела могут пойти также хорошо. Нам нужно достичь населения в 20 человек, чтобы увеличить производство и укрепить наши границы.</Russian>
@@ -2715,7 +2715,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_COLONY_GROWTH</Tag>
-		<English>Another nation did expand a settlement to 20 colonists.</English>
+		<English>Another nation managed to expand a settlement to 20 colonists.</English>
 		<French>Une autre nation a étendu une colonie à 20 colon.</French>
 		<German>Eine andere Nation erweiterte eine Siedlung auf 20 Kolonisten.</German>
 		<Russian>Другая нация расширила поселение до 20 колонистов.</Russian>
@@ -2729,7 +2729,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_COLONY_GROWTH_DONE</Tag>
-		<English>Congratulations! You have strengthened our position by expanding the colony to 20 colonists. By now they all live cramped together and hardly know each other anymore.</English>
+		<English>Congratulations! You have strengthened our position by expanding the colony to 20 colonists, even if they all live cramped together with odd newcomers arriving every day. You'd better keep everyone busy. Better yet, help them all get rich.</English>
 		<French>Félicitations! Vous avez renforcé notre position en élargissant la colonie à 20 colons. Désormais, ils vivent tous à l'étroit et ne se connaissent presque plus.</French>
 		<German>Glückwunsch! Sie haben unsere Position gestärkt, indem Sie die Kolonie auf 20 Kolonisten erweitert haben. Mittlerweile leben sie alle auf engstem Raum zusammen und kennen sich kaum noch.</German>
 		<Russian>Поздравляем! Вы укрепили наши позиции в Новом Свете, увеличив население колонии до 20 жителей. И не смотря на то, что пока все они живут вместе на очень маленьком пространстве и почти не знают друг друга, скоро все изменится к лучшему.</Russian>
@@ -2743,20 +2743,20 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_COLONY_GROWTH_DONE_2</Tag>
-		<English>Theft and other shady business take place in broad daylight. We need a judge to restore order!</English>
+		<English>Thefts, shakedowns and other shady business are taking place in broad daylight. We need a judge to restore order!</English>
 		<French>> Les vols et autres affaires louches ont lieu en plein jour. Il nous faut un juge pour rétablir l'ordre!</French>
 		<German>Diebstähle und andere dubiose Geschäfte geschehen am helllichten Tag. Wir brauchen einen Richter, der die Ordnung wiederherstellt!</German>
 		<Russian>Кражи и другие тёмные дела происходят средь бела дня! Нам срочно нужен судья, чтобы восстановить порядок!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ECCENTRIC_ARCHITECT_1</Tag>
-		<English>Inform His Majesty we are extremely grateful for his support. Indeed, an experienced architect would be of great help to us. May we be graciously sent the man and the King's bill. Presumably the man will not be sent to us free of charge.</English>
+		<English>Inform His Majesty we are extremely grateful for his support. Indeed, an experienced architect will be of great help to us. We will gratefully receive the man, along with the King's bill. We would not expect to get such a man free of charge.</English>
 		<German>Richten Sie Seiner Majestät aus, wir sind ihm für seine Unterstützung äußerst dankbar. In der Tat würde uns ein erfahrener Architekt sehr helfen. Man möge uns gnädigerweise den Mann und die Kostennote des Königs übersenden. Vermutlich wird man uns den Mann ja nicht kostenlos übersenden.</German>
 		<Russian>Сообщите Его Величеству, что мы чрезвычайно благодарны за Его поддержку. Действительно, опытный архитектор был бы нам очень полезен. Мы с радостью примем и этого специалиста и Королевский счет. Думается, бесплатно такого человека к нам не пришлют...</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ECCENTRIC_ARCHITECT_2</Tag>
-		<English>We should exercise extreme caution here. His Majesty likes to send us people who have made themselves unpopular at court, and there is bound to be a catch. Tell His Majesty that we will graciously do without, but will take care of the construction ourselves.</English>
+		<English>We should exercise extreme caution here. His Majesty likes to send us people who have made themselves unpopular at court. There's bound to be some catch. Tell His Majesty that we can do without for the time being. It's better to take care of the construction ourselves.</English>
 		 <German>Wir sollten hier äußerste Vorsicht walten lasen. Seine Majestät schickt uns gerne Leute herüber, die sich bei Hofe unbeliebt gemacht haben und die Sache hat bestimmt einen Haken. Richtet seiner Majestät aus, dass wir gnädigst darauf verzichten, aber uns selbst um den Aufbau kümmern werden.</German>
 		<Russian>Здесь нам следует проявлять крайнюю осторожность. Его Величество любит присылать к нам людей, которые стали непопулярными при Дворе и здесь обязательно должен быть какой-то подвох. Скажите Его Величеству, что мы сожалеем о том, что не сможем принять столь высокую персону в наших скромных обителях. Ну а о строительстве мы как-нибудь сами позаботимся.</Russian>
 	</TEXT>
@@ -2786,19 +2786,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING_1</Tag>
-		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] the friendship was celebrated with a great festivity and future trade was promised.</English>
+		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] our mutual friendship was celebrated with great festivity and future trade was promised.</English>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde die Freundschaft mit einem großen Palaver gefeiert und zukünftiger Handel beschlossen.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] на большой ярмарке заключили множество союзов и торговых сделок.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING_2</Tag>
-		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] native people scalped and murdered local traders.</English>
+		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] Native people scalped and murdered local traders.</English>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben die Ureinwohner lokale Händler skalpiert und ermordet.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] краснокожие демоны скальпировали и убили местных торговцев.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING_3</Tag>
-		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a friendly meeting between settlers and native people took place.</English>
+		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a friendly meeting between settlers and Native people took place.</English>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] fand ein freundschaftliches Treffen zwischen Siedlern und Ureinwohnern statt.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] состоялась дружеская встреча индейцев и европейских поселенцев.</Russian>
 	</TEXT>
