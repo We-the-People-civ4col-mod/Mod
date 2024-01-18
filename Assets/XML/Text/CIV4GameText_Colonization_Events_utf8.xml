@@ -2613,7 +2613,7 @@
 		<English>In the woods close to one of our forts our troops heard shots. When they went out to investigate they walked into an dispute between Natives and trappers about hunting rights. The Natives claim that those forests still belong to them and that no settler is allowed to hunt there.</English>
 		<French>À proximité de l'un de nos forts, nos troupes ont entendu des tirs dans les bois. En menant l'investigation, ils se sont confrontés à une querelle entre des trappeurs et des indigènes à propos de droits de chasse. Les indigènes considèrent que cette forêt leur appartient et que les blancs n'y sont pas autorisés à chasser.</French>
 		<German>In der Nähe eines unserer Forts haben die Truppen Schüsse in den Wäldern gehört. Als sie zur Untersuchung ausrückten, fanden sie Ureinwohner und Trapper in einen Streit über Jagdrechte in den umliegenden Wäldern verwickelt vor. Die Ureinwohner behaupten, dass das Land immer noch ihnen gehört und dass dort kein weisser Mann ohne ihre Erlaubnis jagen darf.</German>
-		<Russian>В лесу, недалеко от одного из наших фортов, наши бойцы услышали выстрелы. Они вышли на проверить, в чем дело и увидели группы индейцев и звероловов, между которыми возник спор о правах на охоту. Туземцы утверждают, что эти леса по-прежнему принадлежат им и что ни одному поселенцу не разрешается там охотиться.</Russian>
+		<Russian>В лесу, недалеко от одного из наших фортов, наши бойцы услышали выстрелы. Они пошли проверить, в чем дело и увидели группы индейцев и звероловов, между которыми возник спор о правах на охоту. Туземцы утверждают, что эти леса по-прежнему принадлежат им и что ни одному поселенцу не разрешается там охотиться.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CUTTHROATS_IN_THE_WOODS</Tag>
@@ -3663,7 +3663,7 @@
 		<English>The printing press in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] still functions.</English>
 		<French>L'imprimerie de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] n'est pas utilisée à pleine capacité.</French>
 		<German>Die Druckerpresse in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat noch freie Druckkapazität.</German>
-		<Russian>Работа печатного станка в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Russian>Безостановочная работа печатного станка в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRINTING_PRESS</Tag>
