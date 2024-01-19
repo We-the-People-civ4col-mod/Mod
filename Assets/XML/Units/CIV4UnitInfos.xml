@@ -74608,7 +74608,7 @@
 			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
 			<bMechanized>0</bMechanized>
 			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>1</bHiddenNationality>
+			<bHiddenNationality>0</bHiddenNationality>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
