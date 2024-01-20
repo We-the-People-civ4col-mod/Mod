@@ -2804,31 +2804,31 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_1</Tag>
-		<English>Send experienced traders! This trade must necessarily be a success. The welfare of the colony also depends on it!</English>
+		<English>Send experienced traders! This trade has to be a success. The welfare of the colony depends on it!</English>
 		<German>Schickt erfahrene Händler! Dieser Handel muss unbedingt ein Erfolg werden. Das Wohl der Kolonie hängt auch davon ab!</German>
 		<Russian>Отправьте к ним опытных торговцев! Эта сделка обязательно должна быть успешной. Я уже чувствую запах денег!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_1</Tag>
-		<English>We expect a lot from this trade. However, we should be careful. Send out good cars, but don't overdo it either.</English>
+		<English>We expect a lot from this trade. Nonetheless we should be careful. Send out good shipments, but don't overdo it.</English>
 		<German>Wir erwarten uns viel von diesem Handel. Allerdings sollten wir vorsichtig sein. Schickt gute Wagen aus, aber übertreibt es auch nicht.</German>
 		<Russian>Мы ожидаем многого от этой сделки. Однако нам следует быть осторожными. Рассылайте хорошие машины (что это за бред?), но и не переусердствуйте.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_2</Tag>
-		<English>Send out the wagons and see what the savages have to offer us. Fill the wagons up to the tarp and best of all have additional wagons follow.</English>
+		<English>Send out our wagons and see what the Natives have to offer. Fill up those wagons so that the tarp bulges and, just to be prepared, make sure more wagons are following.</English>
 		<German>Schickt die Wagen aus und seht, was die Wilden uns zu bieten haben. Macht die Wagen voll bis unter die Plane und am besten lasst Ihr noch zusätzliche Wagen nachkommen.</German>
 		<Russian>Отправьте повозки и посмотрите, что эти дикари могут нам предложить. Если дело стоящее, грузите до верха и отправьте дополнительные повозки.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_3</Tag>
-		<English>Send our most experienced traders! Treasures await the men if they handle the trade with the Indians properly. And believe me, they better not come back without full wagons!</English>
+		<English>Send our most experienced traders! A generous reward awaits the men if they handle the Native trade properly. And, believe me, they better not come back without full wagons!</English>
 		<German>Schickt unsere erfahrensten Händler! Reichtum erwartet die Männer, wenn sie den Handel mit den Indianern richtig angehen. Und glaubt mir, sie sollten besser nicht ohne volle Wagen zurückkommen!</German>
 		<Russian>Отправьте наших самых опытных торговцев! Нас ждут несметные богатства, если мы будем "правильно" вести торговлю с индейцами. Обоз должен вернуться битком забитым товарами!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_4</Tag>
-		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train successfully returns from the Indian village in the wilderness!</English>
+		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train successfully returns from the Native village far out in the wilderness.</English>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug kehrt erfolgreich aus dem Indianer-Dorf in der Wildnis zurück!</German>
 		<Russian>Торговый обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] возвращается из индейской деревни после успешной торговли!</Russian>
 	</TEXT>
