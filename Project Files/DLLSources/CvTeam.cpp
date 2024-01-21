@@ -2536,7 +2536,7 @@ void CvTeam::testFoundingFather()
 			{
 				CvTeam& kOtherTeam = GET_TEAM((TeamTypes)iTeam);
 
-				if (kOtherTeam.getID() != getID() && kOtherTeam.canConvinceFather(eFather))
+				if (kOtherTeam.getID() != getID() && kOtherTeam.canConvinceFather(eFather) && kOtherTeam.isAlive())
 				{
 					if (kOtherTeam.getFatherPoints(ePrimaryPointType) > getFatherPoints(ePrimaryPointType))
 					{
