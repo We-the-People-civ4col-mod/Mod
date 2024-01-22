@@ -2519,15 +2519,29 @@ void CvTeam::testFoundingFather()
 
 		if (canConvinceFather(eFather))
 		{
-			FatherPointTypes ePrimaryPointType = (FatherPointTypes)0;
+			FatherPointTypes ePrimaryPointType = (FatherPointTypes)0; //0 in FatherPointTypes is Exploration.
 			bool bMakeOffer = true;
+			bool bIsThisFatherPurelyPolitical = true;
 			
-			for (FatherPointTypes ePointType = FIRST_FATHER_POINT; ePointType < NUM_FATHER_POINT_TYPES; ++ePointType)
+			//This is required to ensure Exploration Founding Fathers aren't confused as Political ones.
+			if (getFatherPointCost(eFather, ePrimaryPointType) > 0)
+			{
+				bIsThisFatherPurelyPolitical = false;
+			}
+
+			//Search through any points required that aren't Political Points. If any are non-zero, the highest of these will be the primary type.
+			for (FatherPointTypes ePointType = FIRST_FATHER_POINT; ePointType < NUM_FATHER_POINT_TYPES - 1; ++ePointType)
 			{
 				if (getFatherPointCost(eFather, ePointType) > getFatherPointCost(eFather, ePrimaryPointType))
 				{
 					ePrimaryPointType = ePointType;
+					bIsThisFatherPurelyPolitical = false;
 				}
+			}
+
+			if (bIsThisFatherPurelyPolitical)
+			{
+				ePrimaryPointType = FATHER_POINT_POLITICAL;
 			}
 
 			FAssert((ePrimaryPointType >= 0) && (ePrimaryPointType < GC.getNumFatherPointInfos()));
