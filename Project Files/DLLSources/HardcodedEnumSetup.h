@@ -59,6 +59,11 @@ enum EffectTypes
 	EFFECT_SETTLERSMOKE,
 };
 
+enum FatherPointTypes
+{
+	FATHER_POINT_POLITICAL,
+};
+
 enum LeaderHeadTypes
 {
 	LEADER_BARBARIAN,

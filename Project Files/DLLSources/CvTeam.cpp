@@ -2507,32 +2507,98 @@ void CvTeam::changeUnitsPurchasedHistory(UnitClassTypes eIndex, int iChange)
 // Protected Functions...
 void CvTeam::testFoundingFather()
 {
-	bool bFound = false;
-	for (int iFather = 0; iFather < GC.getNumFatherInfos() && !bFound; ++iFather)
+	for (FatherTypes eFather = FIRST_FATHER; eFather < NUM_FATHER_TYPES; ++eFather)
 	{
-		FatherTypes eFather = (FatherTypes) iFather;
+		//This code was produced by Dyllin. Jan 2024
+		//Written to address a prior issue where only one FF was offered per turn,
+		//but that means if you rejected that FF, you didn't get another chance that turn.
+		//As a result, you could lose FFs further down the list to other colonies easily.
+		//The one FF per turn thing was itself meant to address snapping up newly freed FFs
+		//when a colony died, but Dyllin believes this code addresses all those problems
+		//reasonably well, as well as the "France gets first dibs" problem too.
+
 		if (canConvinceFather(eFather))
 		{
-			bFound = true;
-			if (isHuman())
+			FatherPointTypes ePrimaryPointType = (FatherPointTypes)0;
+			bool bMakeOffer = true;
+			
+			for (FatherPointTypes ePointType = FIRST_FATHER_POINT; ePointType < NUM_FATHER_POINT_TYPES; ++ePointType)
 			{
-				for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+				if (getFatherPointCost(eFather, ePointType) > getFatherPointCost(eFather, ePrimaryPointType))
 				{
-					CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
-					if (kPlayer.isAlive() && kPlayer.getTeam() == getID())
+					ePrimaryPointType = ePointType;
+				}
+			}
+
+			FAssert((ePrimaryPointType >= 0) && (ePrimaryPointType < GC.getNumFatherPointInfos()));
+
+			for (int iTeam = 0; iTeam < MAX_TEAMS; iTeam++)
+			{
+				CvTeam& kOtherTeam = GET_TEAM((TeamTypes)iTeam);
+
+				if (kOtherTeam.getID() != getID() && kOtherTeam.canConvinceFather(eFather) && kOtherTeam.isAlive())
+				{
+					if (kOtherTeam.getFatherPoints(ePrimaryPointType) > getFatherPoints(ePrimaryPointType))
 					{
-						if (kPlayer.isHuman())
+						bMakeOffer = false;
+					}
+					else
+					{
+						if (kOtherTeam.getFatherPoints(ePrimaryPointType) == getFatherPoints(ePrimaryPointType))
 						{
-							CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_FOUNDING_FATHER, eFather);
-							gDLL->getInterfaceIFace()->addPopup(pInfo, (PlayerTypes) iPlayer);
+							if (kOtherTeam.getFatherPoints(FATHER_POINT_POLITICAL) > getFatherPoints(FATHER_POINT_POLITICAL))
+							{
+								bMakeOffer = false;
+							}
 						}
 					}
 				}
+
 			}
-			else //AI
+
+			if (bMakeOffer)
 			{
-				convinceFather(eFather, true);
+				if (isHuman()) //Check for any humans on THIS team
+				{
+					for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+					{
+						CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+						if (kPlayer.isAlive() && kPlayer.getTeam() == getID())
+						{
+							if (kPlayer.isHuman())
+							{
+								CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_FOUNDING_FATHER, eFather);
+								gDLL->getInterfaceIFace()->addPopup(pInfo, (PlayerTypes)iPlayer); //This line seems to wait for input from the player before moving on.
+							}
+						}
+					}
+				}
+				else //This is an AI only team
+				{
+					convinceFather(eFather, true);
+				}
 			}
+
+			//I think this is Ray's old logic for this function. -Dyllin
+			//if (isHuman())
+			//{
+			//	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+			//	{
+			//		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes) iPlayer);
+			//		if (kPlayer.isAlive() && kPlayer.getTeam() == getID())
+			//		{
+			//			if (kPlayer.isHuman())
+			//			{
+			//				CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_FOUNDING_FATHER, eFather);
+			//				gDLL->getInterfaceIFace()->addPopup(pInfo, (PlayerTypes) iPlayer);
+			//			}
+			//		}
+			//	}
+			//}
+			//else //AI
+			//{
+			//	convinceFather(eFather, true);
+			//}
 		}
 	}
 }
