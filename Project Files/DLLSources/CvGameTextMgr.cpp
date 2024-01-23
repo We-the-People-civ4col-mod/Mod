@@ -7404,7 +7404,8 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		// WTP, ray, Not allowed next to itself - END
 
 		//WTP, ray, Large Rivers - START
-		if (info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
+		//Not all improvements on Large Rivers allow crossing anymore, modifying to be more specific. -Dyllin Jan 2024
+		if (strcmp("IMPROVEMENT_RAFT_STATION", info.getType()) == 0)
 		{
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_ALLOWS_CROSSING_OF_LARGE_RIVERS"));
