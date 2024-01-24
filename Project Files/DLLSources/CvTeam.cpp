@@ -2517,7 +2517,6 @@ void CvTeam::changeUnitsPurchasedHistory(UnitClassTypes eIndex, int iChange)
 void CvTeam::testFoundingFather()
 {
 	std::vector<FatherTypes> vFathersToCourt(NUM_FATHER_TYPES);
-	CvPlayer& kStoredHumanPlayer = NULL;
 	FatherTypes eFather = FIRST_FATHER;	//Reused in second loop.
 
 	//First loop, iterate through all FFs to see who will get the opportunity to hire them THIS turn.
@@ -2609,15 +2608,12 @@ void CvTeam::testFoundingFather()
 			{
 				if (isHuman()) //Check for any humans on THIS team
 				{
-					bool bHumanOnThisTeamIdentified = false;
-					for (int iPlayer = 0; !bHumanOnThisTeamIdentified || iPlayer < MAX_PLAYERS; ++iPlayer)
+					for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
 					{
 						CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
 						if (kPlayer.isAlive() && kPlayer.getTeam() == getID() && kPlayer.isHuman())
 						{
 							vFathersToCourt.push_back(eFather);
-							kStoredHumanPlayer = kPlayer;
-							bHumanOnThisTeamIdentified = true;
 						}
 					}
 				}
@@ -2634,14 +2630,21 @@ void CvTeam::testFoundingFather()
 	//game not to commit suicide otherwise in some weird situations.
 	if (vFathersToCourt.size() != 0)
 	{
-		for (int i = 0; i < vFathersToCourt.size(); i++)
+		for (int i = 0; i < (int)vFathersToCourt.size(); i++)
 		{
 			eFather = vFathersToCourt.at(i);
 
 			if (canConvinceFather(eFather))
 			{
-				CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_FOUNDING_FATHER, eFather);
-				gDLL->getInterfaceIFace()->addPopup(pInfo, kStoredHumanPlayer); //This line seems to wait for input from the player before moving on.
+				for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+				{
+					CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+					if (kPlayer.isAlive() && kPlayer.getTeam() == getID() && kPlayer.isHuman())
+					{
+						CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_FOUNDING_FATHER, eFather); //This line seems to wait for input from the player before moving on.
+						gDLL->getInterfaceIFace()->addPopup(pInfo, (PlayerTypes)iPlayer);
+					}
+				}
 			}
 		}
 	}
