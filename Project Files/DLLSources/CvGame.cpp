@@ -5364,6 +5364,66 @@ void CvGame::doTurn()
 
 	gDLL->getEngineIFace()->AutoSave();
 }
+
+void CvGame::doFoundingFathers()
+{
+	std::vector<CvTeam*> teams;
+
+	// find alive colonial players for fast looping
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	{
+		CvTeam &kTeam = GET_TEAM(eTeam);
+		if (kTeam.isAlive() && kTeam.hasColonialPlayer())
+		{
+			teams.push_back(&kTeam);
+		}
+	}
+
+	std::vector<CvTeam*> teamsThisFather;
+
+	for (FatherTypes eFather = FIRST_FATHER; eFather < NUM_FATHER_TYPES; ++eFather)
+	{
+		if (getFatherTeam(eFather) != NO_TEAM)
+		{
+			continue;
+		}
+		const CvFatherInfo& kFather = GC.getFatherInfo(eFather);
+
+		int iMaxPoints = -1;
+		teamsThisFather.clear();
+		for (std::vector<CvTeam*>::iterator it = teams.begin(); it != teams.end(); ++it)
+		{
+			CvTeam *pTeam = *it;
+			if (pTeam->canConvinceFather(eFather))
+			{
+				const int iPoints = pTeam->getFatherPoints(kFather.getFatherPointType());
+				if (iPoints > iMaxPoints)
+				{
+					teamsThisFather.clear();
+					teamsThisFather.push_back(pTeam);
+					iMaxPoints = iPoints;
+				}
+				else if (iPoints == iMaxPoints)
+				{
+					teamsThisFather.push_back(pTeam);
+				}
+			}
+		}
+
+		const unsigned int iNumWinningTeams = teamsThisFather.size();
+		if (iNumWinningTeams == 1)
+		{
+			teamsThisFather[0]->offerFoundingFather(eFather);
+		}
+		else if (iNumWinningTeams > 1)
+		{
+			// since there is more than one team, offer the founding father to a random one. This way if a bunch of FFs are released in one turn,
+			// we will likely not have the case where one team takes all of them prior to them even being offered to other teams
+			teamsThisFather[getSorenRand().get(iNumWinningTeams, "pick team for founding father")]->offerFoundingFather(eFather);
+		}
+	}
+}
+
 // < JAnimals Mod Start >
 void CvGame::createBarbarianPlayer()
 {
@@ -7142,7 +7202,7 @@ int CvGame::getFatherCategoryPosition(FatherTypes eFather) const
 {
 	FAssert(eFather != NO_FATHER);
 	int iCost = eFather;
-	FatherCategoryTypes eCategory = (FatherCategoryTypes) GC.getFatherInfo(eFather).getFatherCategory();
+	FatherCategoryTypes eCategory = GC.getFatherInfo(eFather).getFatherCategory();
 	int iPosition = 0;
 	for (int iLoopFather = 0; iLoopFather < GC.getNumFatherInfos(); ++iLoopFather)
 	{

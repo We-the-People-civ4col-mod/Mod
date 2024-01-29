@@ -179,6 +179,8 @@ public:
 	bool isParentOf(TeamTypes eChildTeam) const;
 	bool checkIndependence() const;
 
+	void offerFoundingFather(FatherTypes eFather);
+
 	virtual void AI_init() = 0;
 	virtual void AI_reset() = 0;
 	virtual void AI_doTurnPre() = 0;

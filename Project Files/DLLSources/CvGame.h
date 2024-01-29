@@ -497,6 +497,7 @@ protected:
 	int		m_eCultureVictoryCultureLevel;
 
 	void doTurn();
+	void doFoundingFathers();
 	// < JAnimals Mod Start >
 	void createBarbarianPlayer();
 	void createAnimalsLand();

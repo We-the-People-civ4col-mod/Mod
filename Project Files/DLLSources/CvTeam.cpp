@@ -2504,6 +2504,36 @@ void CvTeam::changeUnitsPurchasedHistory(UnitClassTypes eIndex, int iChange)
 	FAssert(getUnitsPurchasedHistory(eIndex) >= 0);
 }
 
+void CvTeam::offerFoundingFather(FatherTypes eFather)
+{
+	if (!canConvinceFather(eFather))
+	{
+		FAssert(canConvinceFather(eFather));
+		return;
+	}
+
+	if (isHuman())
+	{
+		for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+		{
+			const CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+			if (kPlayer.getTeam() == getID())
+			{
+				if (kPlayer.isHuman())
+				{
+					CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_FOUNDING_FATHER, eFather);
+					gDLL->getInterfaceIFace()->addPopup(pInfo, ePlayer);
+				}
+			}
+		}
+	}
+	else
+	{
+		// AI code just accepts anything
+		convinceFather(eFather, true);
+	}
+}
+
 // Protected Functions...
 
 //This function was altered by Dyllin. Jan 2024

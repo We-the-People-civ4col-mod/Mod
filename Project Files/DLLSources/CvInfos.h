@@ -4765,7 +4765,8 @@ class CvFatherInfo : public CvInfoBase
 public:
 	DllExport CvFatherInfo();
 	virtual ~CvFatherInfo();
-	int getFatherCategory() const;
+	FatherCategoryTypes getFatherCategory() const;
+	FatherPointTypes getFatherPointType() const;
 	TraitTypes getTrait() const;
 	int getFreeUnits(int iUnitClass) const;
 	int getPointCost(int iFatherPointType) const;
@@ -4783,7 +4784,7 @@ public:
 	bool read(CvXMLLoadUtility* pXML);
 
 protected:
-	int m_iFatherCategory;
+	FatherCategoryTypes m_eFatherCategory;
 	TraitTypes m_eTrait;
 	CivEffectTypes m_eCivEffect;
 	int* m_aiFreeUnits;

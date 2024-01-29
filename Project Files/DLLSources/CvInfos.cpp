@@ -16300,7 +16300,7 @@ bool CvMainMenuInfo::read(CvXMLLoadUtility* pXML)
 }
 
 CvFatherInfo::CvFatherInfo() :
-	m_iFatherCategory(NO_FATHERCATEGORY),
+	m_eFatherCategory(NO_FATHERCATEGORY),
 	m_eTrait(NO_TRAIT),
 	m_eCivEffect(NO_CIV_EFFECT),
 	m_aiFreeUnits(NULL),
@@ -16316,9 +16316,24 @@ CvFatherInfo::~CvFatherInfo()
 	SAFE_DELETE_ARRAY(m_abRevealImprovement);
 }
 
-int CvFatherInfo::getFatherCategory() const
+FatherCategoryTypes CvFatherInfo::getFatherCategory() const
 {
-	return m_iFatherCategory;
+	return m_eFatherCategory;
+}
+
+FatherPointTypes CvFatherInfo::getFatherPointType() const
+{
+#ifdef HARDCODE_XML_VALUES
+	// make sure the assumption that they are 1:1 is true
+	// test only available at compile time in hardcoded dlls
+	BOOST_STATIC_ASSERT((int)FATHERCATEGORY_EXPLORATION == (int)FATHER_POINT_EXPLORATION);
+	BOOST_STATIC_ASSERT((int)FATHERCATEGORY_RELIGION == (int)FATHER_POINT_RELIGION);
+	BOOST_STATIC_ASSERT((int)FATHERCATEGORY_TRADE == (int)FATHER_POINT_TRADE);
+	BOOST_STATIC_ASSERT((int)FATHERCATEGORY_MILITARY == (int)FATHER_POINT_MILITARY);
+	BOOST_STATIC_ASSERT((int)FATHERCATEGORY_POLITICS == (int)FATHER_POINT_POLITICAL);
+	BOOST_STATIC_ASSERT((int)NUM_FATHERCATEGORY_TYPES == (int)NUM_FATHER_POINT_TYPES);
+#endif
+	return static_cast<FatherPointTypes>(m_eFatherCategory);
 }
 
 TraitTypes CvFatherInfo::getTrait() const
@@ -16370,7 +16385,7 @@ void CvFatherInfo::read(FDataStreamBase* stream)
 
 	uint uiFlag=0;
 	stream->Read(&uiFlag);	// flags for expansion
-	stream->Read(&m_iFatherCategory);
+	//stream->Read(&m_iFatherCategory);
 	stream->Read(&m_eTrait);
 
 	SAFE_DELETE_ARRAY(m_aiFreeUnits);
@@ -16397,7 +16412,7 @@ void CvFatherInfo::write(FDataStreamBase* stream)
 
 	uint uiFlag=0;
 	stream->Write(uiFlag);		// flag for expansion
-	stream->Write(m_iFatherCategory);
+	//stream->Write(m_iFatherCategory);
 	stream->Write(m_eTrait);
 	stream->Write(GC.getNumUnitClassInfos(), m_aiFreeUnits);
 	stream->Write(GC.getNumFatherPointInfos(), m_aiPointCost);
@@ -16415,9 +16430,7 @@ bool CvFatherInfo::read(CvXMLLoadUtility* pXML)
 		return false;
 	}
 
-	CvString szTextVal;
-	pXML->GetChildXmlValByName(szTextVal, "FatherCategory");
-	m_iFatherCategory = GC.getInfoTypeForString(szTextVal);
+	pXML->GetEnum(getType(), m_eFatherCategory, "FatherCategory");
 
 	pXML->GetChildXmlValByName(m_szPortrait, "Portrait");
 	pXML->GetEnum(getType(), m_eTrait, "Trait", false);
