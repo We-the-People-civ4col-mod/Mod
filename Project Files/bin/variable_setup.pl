@@ -71,7 +71,7 @@ $var{Europe}           = {not_strict => 1};
 $var{Event}            = {not_strict => 1, XML => 1};
 $var{EventTrigger}     = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_EVENT_TRIGGER"};
 $var{Father}           = {not_strict => 1, XML => 1};
-$var{FatherCategory}   = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{FatherCategory}   = {not_strict => 1, XML => 1};
 $var{FatherPoint}      = {not_strict => 1, XML => 1, JIT => "JIT_ARRAY_FATHER_POINT", NUM => "NUM_FATHER_POINT_TYPES", COMPILE => "COMPILE_TIME_NUM_FATHER_POINT_TYPES"};
 $var{Feat}             = {not_strict => 1};
 $var{Feature}          = {not_strict => 1, XML => 1};
