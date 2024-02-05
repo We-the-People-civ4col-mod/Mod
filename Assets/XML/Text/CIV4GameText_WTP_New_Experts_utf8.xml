@@ -371,7 +371,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OLIVES_PLANTER_STRATEGY</Tag>
-		<English>The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.[NEWLINE]When assigned to the Olive Picker profession, the expert can gather double the olives in the same amount of time it would take a regular colonist.</English>
+		<English>The olive is a small tree originating in the Mediterranean basin. [LINK=YIELD_OLIVES]Olives[\LINK] are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.[NEWLINE]When assigned to the Olive Picker profession, the expert can gather double the olives in the same amount of time it would take a regular colonist.</English>
 		<French>L'olive est un petit arbre originaire du bassin méditerranéen. L'olive est l'un des principaux ingrédients de la cuisine méditerranéenne. L'olivier compte des milliers de cultivars.</French>
 		<German>Die Olive ist ein kleiner Baum, der im Mittelmeerraum beheimatet ist. Oliven sind eine der wichtigsten Zutaten der mediterranen Küche. Der Olivenbaum hat Tausende von Kultivaren.</German>
 		<Italian>L'olivo è un piccolo albero originario del bacino del Mediterraneo. Le olive sono uno degli ingredienti principali della cucina mediterranea. L'olivo ha migliaia di cultivar.</Italian>
@@ -438,7 +438,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEANUT_PLANTER_STRATEGY</Tag>
-		<English>A [COLOR_HIGHLIGHT_TEXT]expert penut planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_PEANUT_PLANTER]planting[\LINK] [LINK=YIELD_PEANUTS]penuts[\LINK] than any other expert.[PARAGRAPH:1]Expert penut planter can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
+		<English>An [COLOR_HIGHLIGHT_TEXT]expert peanut planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_PEANUT_PLANTER]planting[\LINK] [LINK=YIELD_PEANUTS]peanuts[\LINK] than any other expert.[PARAGRAPH:1]Expert peanut planters can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]Natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Erdnusspflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_PEANUT_PLANTER]pflanzen[\LINK] von [LINK=YIELD_PEANUTS]Erdnüssen[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Erdnusspflanzer können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 	</TEXT>
 	<!-- PEAT_CUTTER -->
@@ -562,7 +562,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAPE_PLANTER_STRATEGY</Tag>
-		<English>Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.[NEWLINE]When assigned to the Rapeseed Planter profession, the expert can harvest double the rapeseed in the same time as a regular colonist.</English>
+		<English>Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.[NEWLINE]When assigned to the Rapeseed Planter profession, the expert can harvest double the [LINK=YIELD_RAPE]rapeseed[\LINK] in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- RICE_FARMER -->
 	<TEXT>
@@ -621,7 +621,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RICE_FARMER_STRATEGY</Tag>
-		<English>Rice is nutritious and light to carry. Scouts may have a loaf of bread for their first day on the trail but it's the bag of dried rice that feeds them for the rest of the trip.[NEWLINE]When assigned to the Rice Farmer profession, the expert can grow double the rice in the same time as a regular colonist.</English>
+		<English>[LINK=YIELD_RICE]Rice[\LINK] is nutritious and light to carry. Scouts may have a loaf of bread for their first day on the trail but it's the bag of dried rice that feeds them for the rest of the trip.[NEWLINE]When assigned to the Rice Farmer profession, the expert can grow double the rice in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- VANILLA_COLLECTOR -->
 	<TEXT>
@@ -684,7 +684,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_STRATEGY</Tag>
-		<English>Vanilla is one of the two most popular flavours for sweet treats, the other being chocolate. It's used in candy, baking and liqueurs, all of which would be familiar to monks in colonial missions.[NEWLINE]When assigned to the Vanilla Collector profession, the expert can gather twice as many vanilla beans in the same time as a regular colonist.</English>
+		<English>[LINK=YIELD_VANILLA]Vanilla[\LINK] is one of the two most popular flavours for sweet treats, the other being [LINK=YIELD_COCOA]chocolate[\LINK]. It's used in candy, baking and liqueurs, all of which would be familiar to monks in colonial missions.[NEWLINE]When assigned to the Vanilla Collector profession, the expert can gather twice as many vanilla beans in the same time as a regular colonist.</English>
 		<French>La vanille est l'un des deux arômes les plus populaires pour les friandises, l'autre étant le chocolat. Elle est utilisée dans les bonbons, les pâtisseries et les liqueurs, autant d'arômes familiers aux moines des missions coloniales.[NEWLINE]Lorsqu'il est affecté à la profession de collecteur de vanille, l'expert peut récolter deux fois plus de gousses de vanille dans le même temps qu'un colon ordinaire.</French>
 		<German>Vanille ist neben Schokolade eine der beiden beliebtesten Geschmacksrichtungen für süße Leckereien. Sie wird in Süßigkeiten, zum Backen und für Liköre verwendet, alles Dinge, die Mönchen in kolonialen Missionen vertraut sind.[NEWLINE]Wenn der Experte den Beruf des Vanille-Sammlers ausübt, kann er in derselben Zeit doppelt so viele Vanilleschoten sammeln wie ein normaler Kolonist.</German>
 		<Italian>La vaniglia è uno dei due aromi più popolari per i dolci, l'altro è il cioccolato. Si usa nei dolci, nella pasticceria e nei liquori, tutti aromi familiari ai monaci delle missioni coloniali.[NEWLINE]Quando viene assegnato alla professione di Raccoglitore di Vaniglia, l'esperto può raccogliere il doppio dei semi di vaniglia nello stesso tempo di un normale colono.</Italian>
