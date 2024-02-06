@@ -823,7 +823,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HERDER_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Expert Herder[COLOR_REVERT] are in breeding ([LINK=PROFESSION_SHEPHERD]Sheep[\LINK] / [LINK=PROFESSION_COWBOY]cattle[\LINK] / [LINK=PROFESSION_GOATHERD]goats[\LINK]) of [LINK=YIELD_SHEEP]sheep[\LINK], [LINK=YIELD_PIG]pigs[\LINK], and [LINK=YIELD_GOATS]goats[\LINK]. [NEWLINE]Some animals of the appropriate species must be kept for breeding purposes. For more information, see the [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]livestock[\LINK] concept.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Expert herders[COLOR_REVERT] can take on different professions to handle [LINK=PROFESSION_SHEPHERD]sheep[\LINK], [LINK=PROFESSION_GOATHERD]goats[\LINK] or [LINK=PROFESSION_PIG_BREEDER]pigs[\LINK]. To increase the flocks of [LINK=YIELD_SHEEP]sheep[\LINK], [LINK=YIELD_PIG]pigpen[\LINK] populations, or herds of [LINK=YIELD_GOATS]goats[\LINK], animals have to be in the settlement so they can mate. For more information, see the [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]livestock[\LINK] concept.</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Hirten[COLOR_REVERT] sind beim Züchten ([LINK=PROFESSION_SHEPHERD]Schafe[\LINK] / [LINK=PROFESSION_GOATHERD]Ziegen[\LINK] / [LINK=PROFESSION_PIG_BREEDER]Schweine[\LINK]) von [LINK=YIELD_SHEEP]Schafen[\LINK], [LINK=YIELD_GOATS]Ziegen[\LINK] und [LINK=YIELD_PIG]Schweinen[\LINK] besonders effektiv. [NEWLINE]Einige Tiere der entsprechenden Art muss zu Zuchtzwecken gehalten werden. Mehr Informationen dazu unter dem Konzept [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]Tierzucht[\LINK].</German>
 	</TEXT>
 	<!-- MAPLE_SIRUP_COLLECTOR -->
@@ -944,7 +944,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
-		<English>Rubber has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.[NEWLINE]When assigned to the Rubber Collector profession, the expert can get twice as much rubber in the same time as a regular colonist.</English>
+		<English>[LINK=YIELD_KAUTSCHUK]Rubber[\LINK] has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.[NEWLINE]When assigned to the Rubber Collector profession, the expert can get twice as much rubber in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- CONFECTIONER -->
 	<TEXT>
@@ -1007,7 +1007,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONFECTIONER_STRATEGY</Tag>
-		<English>The confectioner creates variety, candy for every taste, alongside traditional sweets that remind people of home. The business can become a social destination, with tables and beverages to accompany the treats.[NEWLINE]When assigned to the Confectioner profession, the master can make twice as much candy in the time a regular colonist would take to do the job.</English>
+		<English>The confectioner creates variety, candy for every taste, alongside traditional sweets that remind people of home. Flavouring is done with [LINK=YIELD_VANILLA]vanilla[\LINK] or [LINK=YIELD_COCOA]cocoa[\LINK]. The business can become a social destination, with tables and beverages to accompany the treats.[NEWLINE]When assigned to the Confectioner profession, the master can make twice as much candy in the time a regular colonist would take to do the job.</English>
 	</TEXT>
 	<!-- HOUSEHOLD_TRADER -->
 	<TEXT>
@@ -1066,7 +1066,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_STRATEGY</Tag>
-		<English>Pots and pans are important trade goods. The houseware trader is expected to have all the necessities in stock at a fair price.[NEWLINE]When assigned to the Household Trader profession, the master can handle twice the goods in the same time as a regular colonist.</English>
+		<English>The houseware trader is expected to have all the necessities in stock at a fair price. Raw materials to make furniture include [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK] and [LINK=YIELD_GOAT_HIDES]goatskins[\LINK]. [NEWLINE]When assigned to the Household Trader profession, the master can handle twice the goods in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- YERBA_TRADER -->
 	<TEXT>
@@ -1125,7 +1125,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_YERBA_TRADER_STRATEGY</Tag>
-		<English>Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba-maté. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the yerba-maté trader profession, the master can market twice the quantity of yerba leaves in the same time as a regular colonist.</English>
+		<English>[LINK=YIELD_YERBA_LEAVES]Yerba leaves[\LINK] are steeped in hot water to make a caffeinated beverage: yerba-maté. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the yerba-maté trader profession, the master can market twice the quantity of yerba leaves in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- OIL_TRADER -->
 	<TEXT>
