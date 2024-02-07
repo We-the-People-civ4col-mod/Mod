@@ -1495,7 +1495,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CLOTH_TAYLOR_STRATEGY</Tag>
-		<English>The tailor creates the well-dressed man, stylish and ready to succeed at diplomacy, business and romance.[NEWLINE]When assigned to the Tailor profession, the master tailor can complete twice the clothes in the same time as a regular colonist.</English>
+		<English>The tailor creates the well-dressed man, stylish and ready to succeed at diplomacy, business and romance. The tailor can make [LINK=YIELD_FESTIVE_CLOTHES]formal outfits[\LINK] from [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] or [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothes[\LINK] from [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK].[NEWLINE]When assigned to the Tailor profession, the master tailor can complete twice the clothes in the same time as a regular colonist.</English>
 		<French>Le tailleur crée l'homme bien habillé, élégant et prêt à réussir dans la diplomatie, les affaires et la romance.[NEWLINE]Lorsqu'il est affecté à la profession de tailleur, le maître tailleur peut réaliser deux fois plus de vêtements dans le même temps qu'un colon ordinaire.</French>
 		<German>Der Schneider erschafft den gut gekleideten Mann, stilvoll und bereit, in der Diplomatie, im Geschäftsleben und in der Romantik erfolgreich zu sein.[NEWLINE]Wenn er dem Beruf des Schneiders zugewiesen wird, kann der Schneidermeister doppelt so viele Kleidungsstücke in derselben Zeit anfertigen wie ein normaler Kolonist.</German>
 		<Italian>Il sarto crea l'uomo ben vestito, elegante e pronto ad avere successo nella diplomazia, negli affari e nel romanticismo.[NEWLINE]Quando è assegnato alla professione di sarto, il mastro sarto può completare il doppio dei vestiti nello stesso tempo di un normale colono.</Italian>
@@ -1625,7 +1625,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POTTER_STRATEGY</Tag>
-		<English>Pottery lets villages store their surplus grain to get them through the hungry winter. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements.[NEWLINE]When assigned to the Potter profession, the master can make twice as many pots in the same time as a regular colonist.</English>
+		<English>Pottery lets villages store their surplus grain to get them through the hungry winter. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements. The raw materials the potter needs are [LINK=YIELD_CLAY]clay[\LINK], and [LINK=YIELD_PEAT]peat[\LINK] to fire the pots.[NEWLINE]When assigned to the Potter profession, the master can make twice as many pots in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- MILK_MAID -->
 	<TEXT>
@@ -1688,7 +1688,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MILK_MAID_STRATEGY</Tag>
-		<English>Milkmaids work hard to deliver much-needed protein to settlers young and old. Anyone who thinks the work is easy hasn't been close enough to the business end of a cow. Milkmaids are also immune to smallpox, a rare advantage in colonial times.[NEWLINE]When assigned to the Milkmaid profession, the skilled milkmaid can get twice the milk in the same time as a regular colonist.</English>
+		<English>Milkmaids work hard to deliver much-needed protein to settlers young and old. Anyone who thinks the work is easy hasn't been close enough to the business end of a cow. Milkmaids are also immune to smallpox, a rare advantage in colonial times.[NEWLINE]When assigned to the Milkmaid profession, the skilled milkmaid can get twice the [LINK=YIELD_MILK]milk[\LINK] in the same time as a regular colonist.</English>
 		<French>Les laitières travaillent dur pour fournir les protéines dont les colons, jeunes et vieux, ont tant besoin. Quiconque pense que ce travail est facile n'a jamais été assez près de l'extrémité d'une vache. Les laitières sont également immunisées contre la variole, un avantage rare à l'époque coloniale.[NEWLINE]Lorsqu'elle est affectée à la profession de laitière, la laitière qualifiée peut obtenir deux fois plus de lait dans le même temps qu'un colon ordinaire.</French>
 		<German>Milchmädchen arbeiten hart, um die Siedler, ob jung oder alt, mit dem dringend benötigten Eiweiß zu versorgen. Wer glaubt, dass die Arbeit leicht ist, war noch nicht nah genug am Hinterteil einer Kuh. Milchmädchen sind auch immun gegen Pocken, ein seltener Vorteil in der Kolonialzeit.[NEWLINE]Wenn ein fleißiges Milchmädchen den Beruf des Milchmädchens ausübt, kann sie in der gleichen Zeit doppelt so viel Milch wie ein normaler Kolonist produzieren.</German>
 		<Italian>Le lattaie lavorano duramente per fornire le proteine tanto necessarie ai coloni giovani e anziani. Chiunque pensi che il lavoro sia facile non è stato abbastanza vicino alla parte commerciale di una mucca. Le lattaie sono anche immuni al vaiolo, un vantaggio raro in epoca coloniale.[NEWLINE]Se assegnata alla professione di lattaio, la lattaia esperta può ottenere il doppio del latte nello stesso tempo di un normale colono.</Italian>
@@ -1751,7 +1751,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHEESE_MAKER_STRATEGY</Tag>
-		<English>Cheese is valued for its transportability, long shelf life, and high content of fat, protein, calcium, and phosphorus. The long storage life of some cheeses, especially when encased in a protective rind, allows selling when markets are favourable.[NEWLINE]When assigned to the [LINK=PROFESSION_CHEESE_MAKER]cheese maker[\LINK] profession, the master can get twice the weight of [LINK=YIELD_CHEESE]cheese[\LINK] in the same time as a regular colonist.</English>
+		<English>Cheese is valued for its transportability, long shelf life, and high content of fat, protein, calcium, and phosphorus. It's made from [LINK=YIELD_MILK]milk[\LINK]. The long storage life of some cheeses, especially when encased in a protective rind, allows selling when markets are favourable.[NEWLINE]When assigned to the [LINK=PROFESSION_CHEESE_MAKER]cheese maker[\LINK] profession, the master can get twice the weight of [LINK=YIELD_CHEESE]cheese[\LINK] in the same time as a regular colonist.</English>
 		<German>Wenn der [COLOR_HIGHLIGHT_TEXT]Meister Käsemacher[COLOR_REVERT] den Beruf des [LINK=PROFESSION_CHEESE_MAKER]Käsemachers[\LINK] ausübt, kann er in derselben Zeit doppelt so viel [LINK=YIELD_CHEESE]Käse[\LINK] herstellen, wie ein normaler Kolonist.</German>
 	</TEXT>
 	<!-- CHARCOAL_BURNER -->
@@ -1922,7 +1922,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIREWORKER_STRATEGY</Tag>
-		<English>The powder maker needs to produce enough black powder for the soldiers' guns. Even more is needed for miners and the pioneers building roads. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.[NEWLINE]When assigned to the Powder Maker profession, the master can mix twice as much gunpowder in the same time as a regular colonist.</English>
+		<English>The powder maker uses [LINK=YIELD_CHAR_COAL]charcoal[\LINK] to produce enough black powder for the soldiers' guns. Even more is needed for miners and the pioneers building roads. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.[NEWLINE]When assigned to the Powder Maker profession, the master can mix twice as much gunpowder in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- MESTIZZO -->
 	<TEXT>
@@ -1981,7 +1981,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MESTIZZO_STRATEGY</Tag>
-		<English>Sometimes mestizos advance in spite of of the prejudice. Quanah Parker, a mestizo born to a European mother, was known as the most terrifying Comanche leader in raids on white settlements.</English>
+		<English>Sometimes mestizos advance in spite of of the prejudice. Quanah Parker, a mestizo born to a European mother, was known as the most terrifying Comanche leader because of his devastating raids on white settlements.</English>
 	</TEXT>
 	<!-- MULATTO -->
 	<TEXT>
