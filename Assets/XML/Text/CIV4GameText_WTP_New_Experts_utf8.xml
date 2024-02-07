@@ -1184,7 +1184,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OIL_TRADER_STRATEGY</Tag>
-		<English>Cooking oil is used in most households almost every day. Because the market is so widespread it's a good cover for smuggling. Nostalgic settlers often prefer the taste of oil from their home country.[NEWLINE]When assigned to the Cooking Oil Trader profession, the master can sell twice as much cooking oil in the same time as a regular colonist.</English>
+		<English>Cooking oil is used in most households almost every day. Because the market is so widespread it's a good cover for smuggling. Nostalgic settlers often prefer the taste of oil from their home country. [LINK=YIELD_OLIVES]Olives[\LINK] and [LINK=YIELD_RAPE]rapeseed[\LINK] are pressed to create two popular cooking oils.[NEWLINE]When assigned to the Cooking Oil Trader profession, the master presser can sell twice as much cooking oil in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- FRUITS_PICKER -->
 	<TEXT>
@@ -1300,12 +1300,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_PEDIA</Tag>
-		<English>Poultry is usually the cheapest domestic meat in any settlement. A good butcher works fast and keeps the price down. Workers who don't get paid much still can eat well and the result is a busy happy community.[NEWLINE]Butchers use sharp knives and they have to work fast so it's a dangerous job. Poultry is tricky because not only do the carcasses have to be cleaned and the meat portioned, but the feathers and down, particularly from geese and ducks, must be plucked for insulation.</English>
+		<English>Poultry is usually the cheapest domestic meat in any settlement. A good butcher works fast and keeps the price down. Workers who don't get paid much still can eat well and the result is a busy happy community.[NEWLINE]Butchers use sharp knives and they have to work fast so it's a dangerous job. Poultry is tricky because not only do the carcasses have to be cleaned and the meat portioned, but the feathers and down, particularly from geese and ducks, must be plucked to insulate quilts and coats.</English>
 		<German>Geflügel ist in der Regel das billigste einheimische Fleisch in jeder Siedlung. Ein guter Fleischer arbeitet schnell und hält den Preis niedrig. Arbeiter, die nicht viel verdienen, können sich trotzdem gut ernähren.[NEWLINE]Metzger arbeiten mit scharfen Messern und müssen schnell arbeiten, daher ist es ein gefährlicher Beruf. Geflügel ist eine schwierige Angelegenheit, da nicht nur die Kadaver gesäubert und das Fleisch portioniert werden müssen, sondern auch die Federn und Daunen, vor allem von Gänsen und Enten, zur Isolierung gerupft werden müssen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Master Poultry Butcher[COLOR_REVERT] achieve particularly high yields of [LINK=YIELD_FOOD]food[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] when [LINK=PROFESSION_BUTCHER_CHICKEN]slaughtering[\LINK] [LINK=YIELD_CHICKEN]chickens[\LINK] in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK].</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Master poultry butchers[COLOR_REVERT] achieve particularly high yields of [LINK=YIELD_FOOD]food[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] when [LINK=PROFESSION_BUTCHER_CHICKEN]slaughtering[\LINK] [LINK=YIELD_CHICKEN]chickens[\LINK] in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK].</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Meister-Geflügelschlachter[COLOR_REVERT] erzielen beim [LINK=PROFESSION_BUTCHER_CHICKEN]Schlachten[\LINK] von [LINK=YIELD_CHICKEN]Hühnern[\LINK] im [LINK=BUILDING_BUTCHERS_HOUSE]Haus des Schlachters[\LINK] besonders hohe Erträge von [LINK=YIELD_FOOD]Nahrung[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK].</German>
 	</TEXT>
 	<!-- COAL_MINER -->
@@ -1431,7 +1431,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Master Leatherworker[COLOR_REVERT] produce as [LINK=PROFESSION_LEATHER_PADDER_COATS]coat maker[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker[\LINK] in the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's hous[\LINK] more lined [LINK=YIELD_PADDED_LEATHER_COATS]leather coats[\LINK] made of [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] resp. more lined [LINK=YIELD_GOAT_HIDE_BOOTS]goatskin boots[\LINK] made of [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]wool[\LINK] than free colonists.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Master leatherworkers[COLOR_REVERT] are trained for the professions of [LINK=PROFESSION_LEATHER_PADDER_COATS]coat maker[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker[\LINK] in the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK]. They make lined [LINK=YIELD_PADDED_LEATHER_COATS]leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK], or insulated [LINK=YIELD_GOAT_HIDE_BOOTS] boots[\LINK] out of [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]wool[\LINK]. They work much faster than than free colonists.</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Meister-Lederschneider[COLOR_REVERT] produzieren als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher[\LINK] im [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK] mehr gefütterte [LINK=YIELD_PADDED_LEATHER_COATS]Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] bzw. mehr gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] als freie Kolonisten.</German>
 	</TEXT>
 	<!-- CLOTH_TAYLOR -->
