@@ -392,6 +392,8 @@
     <ClInclude Include="DLLSources\SavegameAlert.h" />
     <ClInclude Include="DLLSources\SavegameConstants.h" />
     <ClInclude Include="DLLSources\StartupErrorChecking.h" />
+    <ClInclude Include="DLLSources\TBB.h" />
+    <ClInclude Include="DLLSources\ThreadOverview.h" />
     <ClInclude Include="DLLSources\tinyxml2.h" />
     <ClInclude Include="DLLSources\UserSettings.h" />
     <ClInclude Include="DLLSources\xmlFiles.h" />

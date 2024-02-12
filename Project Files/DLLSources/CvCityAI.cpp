@@ -22,22 +22,7 @@
 #include <algorithm>
 #include "BetterBTSAI.h"
 
-#define MULTICORE
-
-#ifdef MULTICORE
-
-#pragma push_macro("free")
-#pragma push_macro("new")
-#undef free
-#undef new
-#include "tbb/parallel_reduce.h"
-#include "tbb/blocked_range.h"
-#include "tbb/task_scheduler_init.h"
-#include "tbb/mutex.h"
-#pragma pop_macro("new")
-#pragma pop_macro("free")
-
-#endif
+#include "TBB.h"
 
 
 #define BUILDINGFOCUS_NO_RECURSION			(1 << 31)
@@ -275,16 +260,7 @@ void CvCityAI::AI_assignWorkingPlots()
 			jobMutex.unlock();
 		}
 
-#define PARALLEL
-#ifdef PARALLEL
 		CvUnit* pOldUnit = AI_parallelAssignToBestJob(*pUnit);
-#endif
-
-//#define SERIAL
-#ifdef SERIAL
-		CvUnit* pOldUnit = AI_assignToBestJob(pUnit);
-		//FAssertMsg(pOldUnit == pOldUnitCheck, "Parallel version produced different result!");
-#endif
 
 		if (pOldUnit != NULL)
 		{
@@ -3225,7 +3201,6 @@ void CvCityAI::AI_juggleCitizens()
 	}
 }
 
-#ifdef  MULTICORE
 struct BestJob
 {
 	BestJob() :
@@ -3410,7 +3385,7 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 	// TODO: Determine if 8 bits are enough
 	// TODO: Split in two ranges to better balance the workload (plot vs. building workers) ?
 	// TODO: Maybe set grainsize to the number of professions that we expect to iterate through divided by the
-	tbb::parallel_reduce(tbb::blocked_range<size_t>(0, kValidCityJobs.size()), fbj, tbb::auto_partitioner());
+	Threads::parallel_reduce(tbb::blocked_range<size_t>(0, kValidCityJobs.size()), fbj, tbb::auto_partitioner());
 
 	// Assert that the rng state is the same after the concurrent operation has completed
 	unsigned long rngStatePost = GC.getGameConst().getSorenRand().peek();
@@ -3429,7 +3404,7 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 	{
 		if (getPopulation() > 1)
 		{
-			bool bSuccess = removePopulationUnit(CREATE_ASSERT_DATA, &kUnit, false, (ProfessionTypes)GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
+			bool bSuccess = removePopulationUnit(CREATE_ASSERT_DATA, &kUnit, false, GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
 			FAssertMsg(bSuccess, "Failed to remove useless citizen");
 		}
 		jobMutex.unlock();
@@ -3510,7 +3485,6 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 	return pDisplacedUnit;
 
 }
-#endif
 
 //Returns the displaced unit, if any.
 CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)

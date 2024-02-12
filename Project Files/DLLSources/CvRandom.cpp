@@ -10,6 +10,8 @@
 
 #include "CvSavegame.h"
 
+#include "ThreadOverview.h"
+
 #define RANDOM_A      (1103515245)
 #define RANDOM_C      (12345)
 #define RANDOM_SHIFT  (16)
@@ -194,7 +196,7 @@ void CvRandom::reset(unsigned long ulSeed)
 
 unsigned short CvRandom::get(unsigned short usNum, char const* pszLog)
 {
-	FAssertMsg(!m_bSynced || GC.isMainThread(), "Random called outside main thread");
+	FAssertMsg(!m_bSynced || !ThreadOverview.isMultiThreaded(), "Random called while TBB is in multithreaded mode");
 
 	if (pszLog != NULL)
 	{
