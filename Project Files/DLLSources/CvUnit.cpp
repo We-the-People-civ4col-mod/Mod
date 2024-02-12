@@ -12231,7 +12231,11 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 				// if (movesLeft() == 0)
 				if (movesLeft() <= 0)
 				{
-					return false;
+					// the code to force drop units out of cities assumes default profession is always available
+					if (kOwner.getCivilizationInfo().getDefaultProfession() != eProfession)
+					{
+						return false;
+					}
 				}
 			}
 		}
