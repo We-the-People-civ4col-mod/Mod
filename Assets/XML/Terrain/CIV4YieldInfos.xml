@@ -1665,7 +1665,7 @@
 			<UnitClass>UNITCLASS_LOGWOOD</UnitClass>
 			<iTextureIndex>40</iTextureIndex>
 			<iWaterTextureIndex>-1</iWaterTextureIndex>
-			<Icon>Art/interface/buttons/New_Yieds_Icons/Bloodwood_Goods_Icon.dds</Icon>	
+			<Icon>Art/interface/buttons/New_Yields_Icons/Bloodwood_Goods_Icon.dds</Icon>	
 			<HighlightIcon>,Art/Interface/Screens/City_Management/Colonization_Yield_Highlight_Icon_Atlas.dds,10,1</HighlightIcon>
 			<Button>Art/interface/buttons/New_Yields_Buttons/Bloodwood_Goods_Button.dds</Button>
 		</YieldInfo>
