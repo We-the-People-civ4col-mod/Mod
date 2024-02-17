@@ -1185,7 +1185,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_BLOODWOOD</Tag>
-		<English>Bloodwood Trees</English>
+		<English>Logwood Trees</English>
 		<French>Bois de campêche</French>
 		<German>
 			<Text>Blauholzbäume</Text>
@@ -1196,7 +1196,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_BLOODWOOD_PEDIA</Tag>
-		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Bloodwood Trees[COLOR_REVERT] produce a versatile dye, used for both textiles and paper. It can also be used as a pH indicator, yellow-reddish under acidic conditions and purple when alkaline. The bark and leaves are also used in various medical applications.</English>
+		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Logwood trees[COLOR_REVERT] produce a versatile dye, used for both textiles and paper. It can also be used as a pH indicator, yellow-reddish under acidic conditions and purple when alkaline. The bark and leaves are also used in various medical applications.</English>
 		<!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Blauholzbäume[COLOR_REVERT]tbd</German>-->
 	</TEXT>
 	<TEXT>
