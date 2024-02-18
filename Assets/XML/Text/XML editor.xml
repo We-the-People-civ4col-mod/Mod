@@ -54,7 +54,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_Keyboard_Help</Tag>
-		<English>Customize keyboard layout[NEWLINE][NEWLINE]Sometimes the editor guess wrong when reading the keyboard. To fix this problem, click here and type the keys requested on the screen. The result is saved meaning you will only have to do this once.</English>
+		<English>Customize keyboard layout[NEWLINE][NEWLINE]Sometimes the editor guesses wrong when reading the keyboard. To fix this problem, click here and type the keys requested on the screen. The result is saved, meaning you will only have to do this once.</English>
 		<Russian>Настройте раскладку клавиатуры[NEWLINE][NEWLINE]Иногда редактор ошибается при чтении клавиатуры. Чтобы решить эту проблему, нажмите здесь и введите запрошенные на экране ключи. Результат сохраняется, то есть вам не придется делать это каждый раз.</Russian>
 	</TEXT>
 	<TEXT>
@@ -103,7 +103,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_XML_EDITOR_GenerateEditorSettings_Text</Tag>
-		<English>Set the editor to edit a mod other than the current one.[NEWLINE]Clicking ok will generate EditorSettings.xml. Edit that one according to the comments in it and restart Colonization. Removing EditorSettings.xml will revert back to editing We The People.[NEWLINE][NEWLINE]Be aware that when editing a remote mod, the menu will contain "Load Art and GameFont". This will copy button art and GameFont, through that will obviously break graphics in WTP. It might be worth considering making Art a symbolic link instead (advancved setup).</English>
+		<English>Set the editor to edit a mod other than the current one.[NEWLINE]Clicking ok will generate EditorSettings.xml. Edit that one according to the comments in it and restart Colonization. Removing EditorSettings.xml will revert back to editing We The People.[NEWLINE][NEWLINE]Be aware that when editing a remote mod, the menu will contain "Load Art and GameFont". This will copy button art and GameFont, through that will obviously break graphics in WTP. It might be worth considering making Art a symbolic link instead (advanced setup).</English>
 		<Russian>Настройте редактор на редактирование мода, отличного от текущего.[NEWLINE]Нажатие «ОК» создаст файл EditorSettings.xml. Отредактируйте его в соответствии с комментариями и перезапустите Колонизацию. Удаление EditorSettings.xml приведет к возврату редактирования We The People.[NEWLINE][NEWLINE]Имейте в виду, что при редактировании стороннего мода в меню будет пункт «Загрузить обложку и GameFont». Это скопирует оформление кнопок и GameFont, что явно нарушит графику в WTP. Возможно, вместо этого стоит подумать о том, чтобы сделать Art символической ссылкой (расширенная настройка).</Russian>
 	</TEXT>
 </Civ4GameText>
