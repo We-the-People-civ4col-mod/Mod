@@ -65,6 +65,24 @@
 		<Russian>Авто-экспорт всех товаров</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_DEMANDED_GOODS</Tag>
+		<English>Import all demanded goods</English>
+		<French>Importer toutes les marchandises demandées</French>
+		<German>Importieren Sie alle nachgefragten Waren</German>
+		<Italian>Importa tutti i beni richiesti</Italian>
+		<Spanish>Importar todos los bienes demandados</Spanish>
+		<Russian>Импортируйте все востребованные товары</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_CONSTRUCTION_GOODS</Tag>
+		<English>Import construction goods</English>
+		<French>Importer des biens de construction</French>
+		<German>Bauwaren importieren</German>
+		<Italian>Importare beni da costruzione</Italian>
+		<Spanish>importar bienes de construccion</Spanish>
+		<Russian>Импорт строительных товаров</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_POPUP_IMPORT_IMPORT</Tag>
 		<English>Import</English>
 		<French>Importer</French>
