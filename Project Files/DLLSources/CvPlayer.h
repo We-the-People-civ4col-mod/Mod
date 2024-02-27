@@ -972,6 +972,8 @@ public:
 
 	void writeDesyncLog(FILE *f) const;
 
+	DirectionTypes getPreferredStartingDirection() const;
+
 protected:
 
 /** NBMOD REF **/
