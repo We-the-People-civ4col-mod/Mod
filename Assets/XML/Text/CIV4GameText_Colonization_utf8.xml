@@ -162,6 +162,7 @@
 		<German>[SPACE](Die Siedlung muss produzieren, um zur Modernisierung %s1_ImpName zu werden)</German>
 		<Italian>[SPACE](L'insediamento deve lavorare per diventare %s1_ImpName)</Italian>
 		<Spanish>[SPACE](El asentamiento debe trabajar para convertirse en [NUM1:un:una:unos:unas] %s1_ImpName)</Spanish>
+		<Russian>[SPACE](Поселение (???) должно работать, чтобы стать %s1_ImpName)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_WHAT_TO_BUILD</Tag>
@@ -1397,7 +1398,7 @@
 		<German>[ICON_BULLET]Pioniere arbeiten %D1%% schneller</German>
 		<Italian>[ICON_BULLET]Pioneers work %D1%% faster</Italian>
 		<Spanish>[ICON_BULLET]Pioneers work %D1%% faster</Spanish>
-		<Russian>[ICON_BULLET]Пионеры работают на %D1%% быстрее</Russian>
+		<Russian>[ICON_BULLET]Первопроходцы работают на %D1%% быстрее</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_IMPROVEMENT_PRICE_MODIFIER</Tag>
@@ -1406,7 +1407,7 @@
 		<German>[ICON_BULLET]%D1%% Kosten für Arbeiten der Pioniere</German>
 		<Italian>[ICON_BULLET]%D1%% Cost of Pioneer Actions</Italian>
 		<Spanish>[ICON_BULLET]%D1%% Cost of Pioneer Actions</Spanish>
-		<Russian>[ICON_BULLET]%D1%% стоимость полевых работ пионеров</Russian>
+		<Russian>[ICON_BULLET]%D1%% стоимость полевых работ первопроходцев</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_IMPROVEMENT_GROWTH_TIME_MODIFIER</Tag>
