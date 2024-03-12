@@ -1170,7 +1170,7 @@
 		<English>A rumour is spreading that the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] daughter of a plantation owner fell in love with a slave.</English>
 		<French>Selon une rumeur, la fille d'un riche planteur [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est tombé amouruese d'un esclave.</French>
 		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Tocher eines Plantagenbesitzers hat sich in einen Sklaven verliebt.</German>
-		<Russian>Ходят слухи, что [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] дочь плантатора влюбилась в раба.</Russian>
+		<Russian>Ходят слухи, что дочь [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] плантатора влюбилась в раба.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1</Tag>
@@ -2760,7 +2760,7 @@
 		<English>Milord, another colonial nation is the first to have markets in five cities.</English>
 		<French>Une puissance coloniale a été la première à construire des marchés dans 5 villes.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen in 5 Städten Märkte errichten.</German>
-		<Russian>Милорд, еще одна колониальная нация первой открыла рынки в пяти городах.</Russian>
+		<Russian>Колониальная нация построила рынки в пяти своих городах.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MARKETS_DONE</Tag>
