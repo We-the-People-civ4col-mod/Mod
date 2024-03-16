@@ -793,6 +793,7 @@ public:
 	const CvCityYields& yields() const { return m_yields; }
 
 	void writeDesyncLog(FILE *f) const;
+	int getCultureTurnsLeft() const;
 
 protected:
 	CvCityYields m_yields;

@@ -4946,8 +4946,10 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 				const int populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
 				iValue = static_cast<int>(iAmount * YIELD_HAMMERS_BASE_VALUE + populationMultiplier);
 
-				if (AI_isPort() || AI_isMajorCity())
+				if (AI().AI_hasCityRole(AI_CITY_EXPORT_PORT) || AI().AI_hasCityRole(AI_CITY_NAVAL_PROD))
 				{
+					// Port cities and naval production centers need to prioritize hammers to fullfull
+					// their role
 					iValue *= 150;
 					iValue /= 100;
 				}
@@ -4970,12 +4972,23 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			}
 			break;
 		case YIELD_CROSSES:
+
 			break;
 		case YIELD_CULTURE:
+			{
+				const int iCultureRate = getCultureRate();
+				if (getCultureLevel() <= 1)
+				{
+					// Put it some effort to gain access to the second ring (fat cross)
+					iValue = iAmount * std::max(0, 15 - iCultureRate);
+				} 
+			}
 			break;
 		case YIELD_HEALTH:
 			break;
 		case YIELD_EDUCATION:
+			// Don't bother for now, lbd is strongh enough atm
+			iValue = 0;
 			break;
 		case YIELD_HAPPINESS: // WTP, ray, Happiness - START
 			break;

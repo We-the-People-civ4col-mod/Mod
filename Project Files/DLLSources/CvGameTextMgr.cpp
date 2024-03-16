@@ -9065,15 +9065,9 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		int iCultureRate = city.getCultureRate();
 		if (iCultureRate > 0)
 		{
-			int iCultureLeft = city.getCultureThreshold() - iCulture;
-
-			if (iCultureLeft > 0)
-			{
-				int iTurnsLeft = (iCultureLeft  + iCultureRate - 1) / iCultureRate;
-
-				szBuffer.append(L' ');
-				szBuffer.append(gDLL->getText("INTERFACE_CITY_TURNS", std::max(1, iTurnsLeft)));
-			}
+			const int iTurnsLeft = city.getCultureTurnsLeft();
+			szBuffer.append(L' ');
+			szBuffer.append(gDLL->getText("INTERFACE_CITY_TURNS", std::max(1, iTurnsLeft)));
 		}
 
 		szBuffer.append(SEPARATOR);
