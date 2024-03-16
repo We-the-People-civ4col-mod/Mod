@@ -4843,7 +4843,7 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 			}
 		}
 		// R&R, Androrc, Livestock Breeding, END
-		// transport feeder - start - Nightinggale
+		// transport feeder - start - Nightinggale	
 		checkImportsMaintain(eYield);
 		// transport feeder - end - Nightinggale
 	}
@@ -14449,3 +14449,25 @@ TerrainTypes CvCity::getCenterPlotTerrainType() const
 }
 // WTP, ray, Center Plot specific Backgrounds - END
 
+int CvCity::getCultureTurnsLeft() const
+{
+	int iCultureRate = getCultureRate();
+	if (iCultureRate > 0)
+	{
+		const int iCulture = getCulture(getOwnerINLINE());
+		const int iCultureLeft = getCultureThreshold() - iCulture;
+
+		if (iCultureLeft > 0)
+		{
+			int iTurnsLeft = (iCultureLeft + iCultureRate - 1) / iCultureRate;
+		}
+		else
+		{
+			return 1;
+		}
+	}
+	else
+	{
+		return -1;
+	}
+}
