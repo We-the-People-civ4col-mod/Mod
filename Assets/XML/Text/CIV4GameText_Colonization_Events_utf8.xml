@@ -1753,7 +1753,7 @@
 		<English>Numerous new [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] settlements have been established inland.</English>
 		<French>De nombreuses nouvelles colonies [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] ont été fondées à l'intérieur des terres.</French>
 		<German>Zahlreiche neue [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Siedlungen wurden im Landesinneren gegründet.</German>
-		<Russian>Внутри страны было основано множество новых поселений [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT].</Russian>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] основали несколько поселений вдали от побережья.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TERRAX_DONE</Tag>
@@ -2347,7 +2347,7 @@
 		<English>Since your colonies have now made contact with various Native nations, a local merchant in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] proposes to invest in a network of trading posts to gather rare and valuable spices from distant tribes.</English>
 		<French>Maintenant que vos colonies ont pris contact avec de multiples civilisations indigènes, un marchand local de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vous propose d'investir dans un réseau de comptoirs à épices chez les indigènes pour ainsi recueillir des saveurs rares, appréciées, et lointaines.</French>
 		<German>Da unsere Kolonien nun Kontakt zu mehreren Ureinwohnerstämmen in unserer Nachbarschaft haben, hat ein örtlicher Händler aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vorgeschlagen, ein Netzwerk aus Handelsposten aufzubauen, dass seltene und wertvolle Gewürze von diesen Stämmen erwirbt.</German>
-		<Russian>Поскольку ваши колонии теперь установили контакт с различными коренными народами, местный торговец из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] предлагает инвестировать в сеть торговых постов, чтобы собирать редкие и ценные специи из далеких племен.</Russian>
+		<Russian>Поскольку ваши колонии смогли установить контакт с большим количеством племён индейцев, торговец из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] предлагает инвестировать в сеть торговых постов, чтобы собирать редкие и ценные специи из далеких деревень туземцев.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PIRATEATTACK1</Tag>
@@ -2732,7 +2732,7 @@
 		<English>Milord, another colonial nation has built harbours in five cities ahead of every other colony.</English>
 		<French>Une autre colonie a été la première à construire 5 ports avant les autres.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen in 5 Städten Häfen errichten.</German>
-		<Russian>Милорд, другая колониальная нация построила доки в пяти городах раньше всех остальных.</Russian>
+		<Russian>Колониальная нация построила доки в пяти городах раньше всех остальных.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_DOCKS_DONE</Tag>
@@ -2781,7 +2781,7 @@
 		<English>Milord, another colonial nation is the first to have graveyards in five cities.</English>
 		<French>Sire, une autre nation a été la première à construire cinq cimetières dans les villes.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Friedhöfe errichten.</German>
-		<Russian>Милорд, другая колониальная нация первой организовала кладбища в пяти городах.</Russian>
+		<Russian>Колониальная нация организовала кладбища в пяти городах.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_GRAVEYARDS_DONE</Tag>
@@ -2816,14 +2816,14 @@
 		<English>Milord, the commander of the town guard of our capitol suggests that we build five more bakeries in our cities to supply the guard with better rations. He promises that this would bring many new volunteers to the guard.</English>
 		<French>Sire, le commandant des piquiers de garde de notre capitale suggère de construire cinq boulangeries dans le nouveau monde pour fournir à la garde de meilleures rations. Il promet que ceci amènera de nombreux volontaires pour la garde.</French>
 		<German>Milord, der Befehlshaber der Statdwache unserer Haupstadt schlägt vor, dass wir mehr Bäckereien in unseren Städten bauen, um die Wache mit besseren Rationen zu versorgen. Er verspricht dass dies zu vielen neuen Freiwilligen für die Wache führne wird.</German>
-		<Russian>Милорд, командир городской стражи нашей столицы, предлагает нам построить еще пять пекарен в наших городах, чтобы снабжать стражу лучшим пайком. Он обещает, что это приведет в гвардию много новых добровольцев.</Russian>
+		<Russian>Милорд, командир городской стражи нашей столицы предлагает построить еще пять пекарен, чтобы улучшить снабжение гарнизонов. Он обещает, что это увеличит количество новобранцев и таким образом мы сможем улучшить нашу обороноспособность.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_BAKERIES_DONE</Tag>
 		<English>Milord, another colonial nation is the first to have bakeries in five cities.</English>
 		<French>Une autre nation a construit la première une boulangerie dans cinq de ses villes.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Bäckereien errichten.</German>
-		<Russian>Милорд, другая колониальная нация первой открыла пекарни в пяти городах.</Russian>
+		<Russian>Колониальная нация открыла пекарни в пяти городах.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BAKERIES_DONE</Tag>
@@ -2907,7 +2907,7 @@
 		<English>Milord, another colonial nation is the first to have hospitals in five cities.</English>
 		<French>Sire, une autre nation a construit la première des hôpitaux dans cinq villes</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Krankenhäuser errichten.</German>
-		<Russian>Милорд, другая колониальная нация, первой построила дома для врачей в пяти городах.</Russian>
+		<Russian>Колониальная нация построила дома для врачей в пяти городах.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MEDICAL_OFFICES_DONE</Tag>
@@ -2949,7 +2949,7 @@
 		<English>Milord, another colonial nation is the first to have built an opera.</English>
 		<French>Sire, une autre colonie a construit la première un Opéra.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen eine Oper errichten.</German>
-		<Russian>Милорд, другая колониальная нация первой построила оперу.</Russian>
+		<Russian>Колониальная нация построила оперу.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_OPERA_DONE</Tag>
@@ -2991,7 +2991,7 @@
 		<English>Milord, another colonial nation is the first to have built a Supreme Court.</English>
 		<French>Sire, une autre nation a été la première à construire une Cour Suprême.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen einen Obersten Gerichtshof errichten.</German>
-		<Russian>Милорд, другая колониальная нация первой построила Верховный суд.</Russian>
+		<Russian>Колониальная нация первой построила Верховный суд.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_SUPREME_COURT_DONE</Tag>
@@ -3033,7 +3033,7 @@
 		<English>Milord, another colonial nation is the first to have built a Colonial Congress.</English>
 		<French>Sire, une autre nation a construit la première un Congrès Colonial.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen einen Kolonialkongress errichten.</German>
-		<Russian>Милорд, другая колониальная нация первой создала Колониальный Конгресс.</Russian>
+		<Russian>Колониальная нация первой создала Колониальный Конгресс.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_COLONIAL_CONGRESS_DONE</Tag>
@@ -3075,7 +3075,7 @@
 		<English>Milord, another colonial nation is the first to have built a Central Customs Authority.</English>
 		<French>Sire, une autre nation a construit une Autorité Centrale des Douanes avant nous.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen ein Zentrales Zollamt errichten.</German>
-		<Russian>Милорд, другая колониальная нация первой построила Центральное таможенное управление.</Russian>
+		<Russian>Колониальная нация построила Центральное таможенное управление.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CUSTOM_OFFICE_DONE</Tag>
@@ -3117,7 +3117,7 @@
 		<English>Milord, another colonial nation is the first to have built the Cathedral of the Archbishop.</English>
 		<French>Sire, une autre nation a été la première à construire une cathédrale de l'archevêché</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen eine Kathedrale für den Erzbischof errichten.</German>
-		<Russian>Милорд, другая колониальная нация первой построила Кафедральный собор.</Russian>
+		<Russian>Колониальная нация построила Кафедральный собор.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_MINSTER_DONE</Tag>
@@ -3201,7 +3201,7 @@
 		<English>Milord, another colonial nation is the first to have built the Colonial Publisher.</English>
 		<French>Sire, une autre nation a construit avant vous une imprimerie coloniale.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen einen Kolonialen Zeitungverlag errichten.</German>
-		<Russian>Милорд, другая колониальная нация первой построила колониальное издательство.</Russian>
+		<Russian>Колониальная нация построила Колониальное издательство.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_PUBLISHING_DONE</Tag>
@@ -4635,7 +4635,7 @@
 		<English>There are rumours that his Majesty has sent an experienced architect to your colonies in order to support the development of the colonies.</English>
 		<French>Il paraitrait que sa Majesté a envoyé un architecte expérimenté dans vos colonies afin d'aider à les bâtir.</French>
 		<German>Es heißt, der König habe zur Förderung der Entwicklung seiner Kolonien in der Neuen Welt einen Architekten nach [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] entsandt.</German>
-		<Russian>Ходят слухи, что Его Величество направил в наши колонии опытного архитектора, чтобы поддержать их развитие.</Russian>
+		<Russian>Ходят слухи об отправке в колонии опытного архитектора, чтобы поддержать их развитие.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ECCENTRIC_ARCHITECT</Tag>
