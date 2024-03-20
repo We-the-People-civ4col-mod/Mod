@@ -340,7 +340,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_TAIGA</Tag>
-		<English>Plant northern forrest</English>
+		<English>Plant northern forest</English>
 		<French>Planter une foret boréale</French>
 		<German>Nordwald aufforsten</German>
 		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]тайгу[COLOR_REVERT]</Russian>
@@ -483,7 +483,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_FISHING_NETS</Tag>
-		<English>Build [LINK=IMPROVEMENT_FISHING_NETS]fishing nets[\LINK]</English>
+		<English>Weave [LINK=IMPROVEMENT_FISHING_NETS]fishing nets[\LINK]</English>
 		<German>[LINK=IMPROVEMENT_FISHING_NETS]Fischernetze[\LINK] auslegen</German>
 		<French>Placer des  [LINK=IMPROVEMENT_FISHING_NETS]filets de nets[\LINK]</French>
 		<Russian>Построить [COLOR_HIGHLIGHT_TEXT]рыбацкие сети[COLOR_REVERT]</Russian>
@@ -497,7 +497,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_FISHING_NETS_RIVER</Tag>
-		<English>Build [LINK=IMPROVEMENT_FISHING_NETS_RIVER]river fishing nets[\LINK]</English>
+		<English>Weave [LINK=IMPROVEMENT_FISHING_NETS_RIVER]river fishing nets[\LINK]</English>
 		<German>[LINK=IMPROVEMENT_FISHING_NETS_RIVER]Fischernetz am Fluss[\LINK] auslegen</German>
 		<French>Placer des [LINK=IMPROVEMENT_FISHING_NETS_RIVER]filets de pêche en rivière[\LINK]</French>
 		<Russian>Построить [COLOR_HIGHLIGHT_TEXT]рыбацкие сети[COLOR_REVERT]</Russian>
