@@ -1729,4 +1729,8 @@
 		<DefineName>BASE_TERRAINS_WITHOUT_FEATURE_PERCENTAGE</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
+	<Define>
+		<DefineName>PURCHASE_PROFESSION_PREMIUM</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
 </Civ4Defines>

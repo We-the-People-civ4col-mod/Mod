@@ -1745,6 +1745,19 @@ bool CvProfessionInfo::isWorkSlot() const
 	return (m_bCitizen && !m_bWorkPlot);
 }
 
+bool CvProfessionInfo::requireAnyYields() const
+{
+	for (uint i = 0; i < m_aYieldEquipments.size(); ++i)
+	{
+		const YieldEquipment& kYieldEquipment = m_aYieldEquipments[i];
+		if (kYieldEquipment.iYieldAmount > 0)
+		{
+			return false;
+		}
+	}
+	return true;
+}
+
 void CvProfessionInfo::read(FDataStreamBase* stream)
 {
 	// R&R, ray , MYCP partially based on code of Aymerick - START

@@ -12108,29 +12108,17 @@ bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce, bool bRemov
 	return true;
 }
 
-bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, const CvPlot* pPlot, bool bForceCheck) const
+// Refactored the unconditional checks into this function. If false is returned the colonist may never have eProfession under
+// any circumstances!
+bool CvUnit::canEverHaveProfession(ProfessionTypes eProfession) const
 {
-	if (NO_PROFESSION == eProfession)
+	if (GC.getUnitInfo(getUnitType()).getProfessionsNotAllowed(eProfession))
 	{
-		return true;
+		return false;
 	}
-
-	if (!bForceCheck && eProfession == getProfession())
-	{
-		return true;
-	}
-	///TK Viscos Mod
-	//for (iJ = 0; iJ < GC.getNumProfessionInfos(); iJ++)
-    //{
-    if (GC.getUnitInfo(getUnitType()).getProfessionsNotAllowed(eProfession))
-    {
-        return false;
-    }
-    //}
-	///Tk end
-
-	CvProfessionInfo& kNewProfession = GC.getProfessionInfo(eProfession);
-	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	
+	const CvProfessionInfo& kNewProfession = GC.getProfessionInfo(eProfession);
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 
 	if (!kOwner.isProfessionValid(eProfession, getUnitType()))
 	{
@@ -12157,6 +12145,26 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 	}
 	// R&R, ray, High Sea Fishing - END
 
+	return true;
+}
+
+bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, const CvPlot* pPlot, bool bForceCheck) const
+{
+	if (NO_PROFESSION == eProfession)
+	{
+		return true;
+	}
+
+	if (!bForceCheck && eProfession == getProfession())
+	{
+		return true;
+	}
+
+	if (!canEverHaveProfession(eProfession))
+		return false;
+
+	const CvProfessionInfo& kNewProfession = GC.getProfessionInfo(eProfession);
+	
 	// R&R, ray , MYCP partially based on code of Aymerick - START
 	for (int i = 0; i < kNewProfession.getNumYieldsProduced(); i++)
 	{
@@ -12182,6 +12190,9 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 			pCity = pPlot->getPlotCity();
 		}
 	}
+
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+
 	if (pCity == NULL)
 	{
 		pCity = kOwner.getPopulationUnitCity(getID());
@@ -12473,18 +12484,18 @@ void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bU
 				}
 			}
 		}
+	}
 
-		if (bUpdateCity)
+	if (bUpdateCity && pCity != NULL && pCity->getOwnerINLINE() == getOwnerINLINE())
+	{
+		pCity->setYieldRateDirty();
+		pCity->updateYield();
+		CvPlot* pPlot = pCity->getPlotWorkedByUnit(this);
+		if (pPlot != NULL)
 		{
-			pCity->setYieldRateDirty();
-			pCity->updateYield();
-			CvPlot* pPlot = pCity->getPlotWorkedByUnit(this);
-			if(pPlot != NULL)
-			{
-				pCity->verifyWorkingPlot(pCity->getCityPlotIndex(pPlot));
-			}
-			pCity->AI_setAssignWorkDirty(true);
+			pCity->verifyWorkingPlot(pCity->getCityPlotIndex(pPlot));
 		}
+		pCity->AI_setAssignWorkDirty(true);
 	}
 }
 

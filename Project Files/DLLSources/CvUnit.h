@@ -589,6 +589,8 @@ public:
 	bool canHaveProfession(ProfessionTypes eProfession, bool bBumpOther,  const CvPlot* pPlot = NULL, bool bForceCheck = false) const;
 	void processProfession(ProfessionTypes eProfession, int iChange, bool bUpdateCity, bool bRemoveYieldsFromCity = true);
 	void processProfessionStats(ProfessionTypes eProfession, int iChange);
+	bool canEverHaveProfession(ProfessionTypes eProfession) const;
+
 private:
 	void processProfessionStatsUnsaved(const CvProfessionInfo& kProfession, int iChange);
 public:

@@ -697,6 +697,7 @@ enum TaskTypes
 	TASK_YIELD_TRADEROUTE, // transport feeder - Nightinggale
 	TASK_AUTO_TRADEROUTE, // auto traderoute - Nightinggale
 	TASK_CHOOSE_CITY_PLOT_YIELD,
+	TASK_PURCHASE_PROFESSION,
 
 	NUM_TASK_TYPES
 };

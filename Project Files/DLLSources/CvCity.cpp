@@ -1025,6 +1025,10 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		setPreferredYieldAtCityPlot(static_cast<YieldTypes>(iData1));
 		break;
 
+	case TASK_PURCHASE_PROFESSION:
+		alterUnitProfession(iData1, (ProfessionTypes)iData2, true);
+		break;
+
 	default:
 		FAssertMsg(false, "eTask failed to match a valid option");
 		break;
@@ -6050,21 +6054,34 @@ void CvCity::alterUnitWorkingBuilding(BuildingTypes eBuilding, int iUnitId, bool
 }
 //Androrc End
 
-void CvCity::alterUnitProfession(int iUnitId, ProfessionTypes eProfession)
+// if bPay is true we deduct the Europe price of the yields rather than sourcing the yields from the unit's city
+void CvCity::alterUnitProfession(int iUnitId, ProfessionTypes eProfession, bool bPay)
 {
-	CvUnit* pUnit = getPopulationUnitById(iUnitId);
+	CvUnit* const pUnit = getPopulationUnitById(iUnitId);
 	if(pUnit != NULL)
 	{
-		if (pUnit->canHaveProfession(eProfession, false))
+		if (bPay || pUnit->canHaveProfession(eProfession, false))
 		{
 			pUnit->setColonistLocked(true);
-			pUnit->setProfession(eProfession);
-
+			if (!bPay)
+			{
+				pUnit->setProfession(eProfession);
+			}
+			else
+			{
+				const int iCost = (pUnit->getEuropeProfessionChangeCost(eProfession) * (100 + GLOBAL_DEFINE_PURCHASE_PROFESSION_PREMIUM)) / 100;
+				GET_PLAYER(getOwnerINLINE()).changeGold(-iCost);
+				// Since we've already deducted the gold we do not remove yields from the city
+				pUnit->setProfession(eProfession, true, false);
+				// Prevent the unit from acting this turn to enforce a slight penalty on hurrying proffession
+				pUnit->finishMoves();
+			}
+		
 			if (GC.getProfessionInfo(eProfession).isWorkPlot())
 			{
 				if (!isUnitWorkingAnyPlot(pUnit))
 				{
-					int iBestPlot = AI_bestProfessionPlot(eProfession, pUnit);
+					const int iBestPlot = AI_bestProfessionPlot(eProfession, pUnit);
 					if (iBestPlot != -1)
 					{
 						FAssert(!isPlotProducingYields((CityPlotTypes)iBestPlot));

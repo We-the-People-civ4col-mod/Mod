@@ -406,6 +406,7 @@ public:
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 
 	bool isWorkSlot() const;
+	bool requireAnyYields() const;
 
 	/// Move Into Peak - start - Nightinggale
 	bool allowsMoveIntoPeak() const {return m_bMoveIntoPeak;}

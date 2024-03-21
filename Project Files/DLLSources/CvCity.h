@@ -432,7 +432,7 @@ public:
 	//Androrc Multiple Professions per Building
 	void alterUnitWorkingBuilding(BuildingTypes eBuilding, int iUnitId, bool bAskProfession);
 	//Androrc End
-	void alterUnitProfession(int iUnitId, ProfessionTypes eProfession);
+	void alterUnitProfession(int iUnitId, ProfessionTypes eProfession, bool bPay = false);
 	void ejectToTransport(int iUnitId, int iTransportId);
 	void replaceCitizen(int iUnitId, int iReplacedUnitId, bool bAskProfession);
 	bool isHasRealBuilding(BuildingTypes eIndex) const;
