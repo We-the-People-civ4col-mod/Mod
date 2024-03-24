@@ -1380,6 +1380,82 @@ bool CvCity::isAvailableBuildingSlot(BuildingTypes eBuilding, const CvUnit* pUni
 }
 //Androrc End
 
+// Returns the number of available worker slots for eBuilding
+int CvCity::countAvailableBuildingSlots(BuildingTypes eBuilding) const
+{
+	int iSlots = 0;
+	const CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
+	if (isHasBuilding(eBuilding))
+	{
+		iSlots = kBuilding.getMaxWorkers();
+	}
+
+	if (iSlots == 0)
+		return 0;
+
+	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
+	{
+		CvUnit* const pLoopUnit = m_aPopulationUnits[i];
+		{
+			if (pLoopUnit->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pLoopUnit->getProfession()).getSpecialBuilding() == kBuilding.getSpecialBuildingType())
+			{
+				--iSlots;
+			}
+		}
+	}
+
+	FAssert(iSlots >= 0);
+	return iSlots;
+}
+
+// Returns the number of available worker slots for eProfession
+int CvCity::countAvailableBuildingSlots(ProfessionTypes eProfession) const
+{
+	const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+	if (!kProfession.isWorkSlot())
+		return 0;
+
+	BuildingTypes eBuilding = NO_BUILDING;
+
+	for (BuildingTypes eLoopBuilding = FIRST_BUILDING; eLoopBuilding < NUM_BUILDING_TYPES; ++eLoopBuilding)
+	{
+		const CvBuildingInfo& kBuilding = GC.getBuildingInfo(eLoopBuilding);
+		if (GC.getBuildingInfo(eLoopBuilding).getSpecialBuildingType() == GC.getProfessionInfo(eProfession).getSpecialBuilding() && isHasBuilding(eLoopBuilding))
+		{
+			eBuilding = eLoopBuilding;
+			break;
+		}
+	}
+
+	if (eBuilding == NO_BUILDING)
+		return 0;
+
+	int iSlots = 0;
+	const CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
+	if (isHasBuilding(eBuilding))
+	{
+		iSlots = kBuilding.getMaxWorkers();
+	}
+
+	if (iSlots == 0)
+		return 0;
+
+	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
+	{
+		CvUnit* const pLoopUnit = m_aPopulationUnits[i];
+		{
+			if (pLoopUnit->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pLoopUnit->getProfession()).getSpecialBuilding() == kBuilding.getSpecialBuildingType())
+			{
+				--iSlots;
+			}
+		}
+	}
+
+	FAssert(iSlots >= 0);
+	return iSlots;
+}
+
+
 int CvCity::professionCount(ProfessionTypes eProfession) const
 {
 	int iCount = 0;
