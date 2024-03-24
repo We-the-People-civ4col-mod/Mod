@@ -7,6 +7,7 @@
 #include "CvPlotFunctions.h"
 #include "CvCityYields.h"
 
+class CvCityAI;
 class CvPlot;
 class CvArea;
 class CvGenericBuilding;
@@ -15,6 +16,8 @@ class CvInfoBase;
 class CvCity : public CvDLLEntity
 {
 public:
+	__forceinline CvCityAI& AI() { return (CvCityAI&)*this; }
+	__forceinline const CvCityAI& AI() const { return (CvCityAI&)*this; }
 
 	void UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 /** NBMOD EDU **/
@@ -685,7 +688,7 @@ public:
 	virtual CvUnit* AI_bestPopulationUnit(UnitAITypes eUnitAI, ProfessionTypes eProfession = NO_PROFESSION) = 0;
 	virtual ProfessionTypes AI_bestPlotProfession(const CvUnit* pUnit, const CvPlot* pPlot) const = 0;
 	virtual int AI_bestProfessionPlot(ProfessionTypes eProfession, const CvUnit* pUnit) const = 0;
-	virtual int AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot) const = 0;
+	virtual int AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit) const = 0;
 	virtual int AI_professionBasicOutput(ProfessionTypes eProfession, UnitTypes eUnit, const CvPlot* pPlot) const = 0;
 	virtual int AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfession) const = 0;
 	virtual int AI_unitJoinReplaceValue(CvUnit* pUnit, CvUnit** pReplaceUnit = NULL) const = 0;
