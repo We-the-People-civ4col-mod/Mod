@@ -630,6 +630,9 @@ public:
 
 	bool canTradeAway(PlayerTypes eToPlayer) const;
 
+	int countAvailableBuildingSlots(BuildingTypes eBuilding) const;
+	int	countAvailableBuildingSlots(ProfessionTypes eProfession) const;
+
 	void resetSavedData(int iID, PlayerTypes eOwner, int iX, int iY, bool bConstructorCall);
 	void resetSavedData(int iID, PlayerTypes eOwner, Coordinates resetCoord, bool bConstructorCall);
 	void read(CvSavegameReader reader);
@@ -682,7 +685,7 @@ public:
 	virtual CvUnit* AI_bestPopulationUnit(UnitAITypes eUnitAI, ProfessionTypes eProfession = NO_PROFESSION) = 0;
 	virtual ProfessionTypes AI_bestPlotProfession(const CvUnit* pUnit, const CvPlot* pPlot) const = 0;
 	virtual int AI_bestProfessionPlot(ProfessionTypes eProfession, const CvUnit* pUnit) const = 0;
-	virtual int AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit) const = 0;
+	virtual int AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot) const = 0;
 	virtual int AI_professionBasicOutput(ProfessionTypes eProfession, UnitTypes eUnit, const CvPlot* pPlot) const = 0;
 	virtual int AI_unitJoinCityValue(CvUnit* pUnit, ProfessionTypes* peNewProfession) const = 0;
 	virtual int AI_unitJoinReplaceValue(CvUnit* pUnit, CvUnit** pReplaceUnit = NULL) const = 0;
