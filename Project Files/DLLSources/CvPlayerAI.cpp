@@ -16637,6 +16637,7 @@ bool CvPlayerAI::AI_isStrategicInputYield(YieldTypes eYield) const
 		case YIELD_LUMBER:
 		case YIELD_STONE:
 		case YIELD_CLAY:
+		case YIELD_FLAX:
 		case YIELD_HEMP:
 		case YIELD_ORE:
 		case YIELD_COAL:
