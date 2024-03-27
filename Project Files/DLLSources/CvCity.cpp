@@ -14460,6 +14460,7 @@ int CvCity::getCultureTurnsLeft() const
 		if (iCultureLeft > 0)
 		{
 			int iTurnsLeft = (iCultureLeft + iCultureRate - 1) / iCultureRate;
+			return iTurnsLeft;
 		}
 		else
 		{

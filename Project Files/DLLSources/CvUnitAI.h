@@ -95,6 +95,9 @@ public:
 	bool AI_africa();
 
 	bool canPotentiallyTransport(const CvUnitInfo& kUnitInfo) const;
+	
+	void setCitizenValue(int iValue);
+	int getCitizenValue() const;
 
 protected:
 
@@ -112,6 +115,8 @@ protected:
 	int m_iAutomatedAbortTurn;
 	
 	mutable ProfessionTypes m_eIdealProfessionCache;
+
+	int m_iCitizenValue;
 
 	// < JAnimals Mod Start >
 	void AI_animalMove();

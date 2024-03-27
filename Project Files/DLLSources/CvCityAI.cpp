@@ -1132,51 +1132,23 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 	const BuildingClassTypes eBuildingClass = (BuildingClassTypes)kBuildingInfo.getBuildingClassType();
 	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
-	bool bIsMilitary = false;
 	int iValue = 0;
 
 	// Custom_House_Mod Start
 	bool bIsBestPortCity = isBestPortCity();
 	// Custom_House_Mod End
-	// TAC - AI Buildings - koma13 - START
-	//bIsMajorCity = AI_isMajorCity()
-	bool bIsMajorCity = AI_isMajorCity() || bIsBestPortCity;
-	bool bProductionBuilding = AI_isProductionBuilding(eBuilding, bIsMajorCity);
+	//bool bProductionBuilding = AI_isProductionBuilding(eBuilding, bIsMajorCity);
 	int iCount = kOwner.getBuildingClassCountPlusMaking(eBuildingClass);
 	// TAC - AI Buildings - koma13 - END
 
 	if (kBuildingInfo.getYieldStorage() != 0)
 	{
-		int iCityCapacity = getMaxYieldCapacity();
+		int iCityCapacityLeft = std::max(0, getMaxYieldCapacity() - getTotalYieldStored());
 
-		if (isHasBuilding(eBuilding))
-		{
-			iCityCapacity += kBuildingInfo.getYieldStorage() * GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getStoragePercent() / 100;
-		}
+		// The closer we are to the storage limit the higher the value of storage
 
-		int iTotalExcess = 0;
-		int iHighestPercentFull = 0;
-
-		const int iCoef = 100;
-		int iExcess = (iCityCapacity - getTotalYieldStored()) * iCoef;
-		if (iExcess < 1)
-		{
-			iExcess = iCoef / 2;
-		}
-		iTotalExcess = (iCityCapacity * iCoef) / iExcess;
-		iHighestPercentFull = std::max(iHighestPercentFull, 100 * getTotalYieldStored() / iCityCapacity);
-		int iTempValue = kBuildingInfo.getYieldStorage();
-
-		iValue += iTempValue / 3;
-		iValue += iHighestPercentFull;
-		iValue += 10 * iTotalExcess;
-		// Custom_House_Mod Start
-		if (bIsBestPortCity)
-		{
-			iValue *= 2;
-		}
-		// Custom_House_Mod END
-		bIsMilitary = true;
+		if (iCityCapacityLeft > 0)
+			iValue += 100;
 	}
 
 	if (kBuildingInfo.getDefenseModifier() != 0)
@@ -1193,7 +1165,6 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				iValue += 100;
 			}
 		}
-		bIsMilitary = true;
 	}
 
 	if (kBuildingInfo.isWorksWater())
@@ -1222,487 +1193,169 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 	// TAC - AI Buildings - koma13 - START
 	bool bSpecialBuildingLimit = false;
 
-	YieldTypes eYieldConsumed = NO_YIELD;
-	YieldTypes eYieldProduced = NO_YIELD;
 	// TAC - AI Buildings - koma13 - END
 
-	for (int iI = 0; iI < GC.getNumProfessionInfos(); iI++)
+	if (kBuildingInfo.getMaxWorkers() > 0)
 	{
-		ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
-		if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession))
+		for (int iI = 0; iI < GC.getNumProfessionInfos(); iI++)
 		{
-			CvProfessionInfo& kLoopProfession = GC.getProfessionInfo(eLoopProfession);
-
-			if (kLoopProfession.getSpecialBuilding() == kBuildingInfo.getSpecialBuildingType())
+			const ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
+			if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession))
 			{
-				// TAC - AI Buildings - koma13 - START
-				// R&R, ray , MYCP partially based on code of Aymerick - START
-				eYieldConsumed = (YieldTypes)kLoopProfession.getYieldsConsumed(0);
-				eYieldProduced = (YieldTypes) kLoopProfession.getYieldsProduced(0);
-				// R&R, ray , MYCP partially based on code of Aymerick - END
-
-				if (eYieldProduced == YIELD_CROSSES || eYieldProduced == YIELD_EDUCATION)
+				const CvProfessionInfo& kLoopProfession = GC.getProfessionInfo(eLoopProfession);
+				if (kLoopProfession.getSpecialBuilding() == kBuildingInfo.getSpecialBuildingType())
 				{
-					int iSpecialBuilding = kBuildingInfo.getSpecialBuildingType();
-					CvCity * pCity = kOwner.getCity(getID());
-					// R&R adjustment for Crosses Buildings - START
-					// bSpecialBuildingLimit = (!pCity->isHasSpecialBuilding(iSpecialBuilding) && (kOwner.getSpecialBuildingCount(iSpecialBuilding, true) >= 2));
-					int iTargetAmountOfSpecialbuilding = 2; // So this will be used for education and for crosses if only a few cities exist
-					if (eYieldProduced == YIELD_CROSSES)
+					if (kLoopProfession.getYieldsConsumed(0) == NO_YIELD)
 					{
-						if (kOwner.getNumCities() >4)
+						// Professions that do not convert input (e.g. statesmen)
+						// Note that the ability to generate output without input is already quite strong!
+						for (YieldTypes eYieldProduced = (YieldTypes)kLoopProfession.getYieldsProduced(0); eYieldProduced < kLoopProfession.getNumYieldsProduced(); ++eYieldProduced)
 						{
-							iTargetAmountOfSpecialbuilding = kOwner.getNumCities() / 2; // so only every second city will build church
-						}
-					}
-					bSpecialBuildingLimit = (!pCity->isHasSpecialBuilding(iSpecialBuilding) && (kOwner.getSpecialBuildingCount(iSpecialBuilding, true) >= iTargetAmountOfSpecialbuilding));
-					// R&R adjustment for Crosses Buildings - END
-
-				}
-
-				//if ((eYieldProduced != NO_YIELD) && !kOwner.AI_isYieldFinalProduct(eYieldProduced) && (eYieldProduced != YIELD_HAMMERS) || bIsMajorCity)
-				if (((eYieldConsumed == NO_YIELD) && !bSpecialBuildingLimit) || bProductionBuilding || bIsBestPortCity)
-				// TAC - AI Buildings - koma13 - END
-				{
-					int iHighestOutput = kOwner.AI_highestProfessionOutput(eLoopProfession, this);
-					int iOutput = kBuildingInfo.getProfessionOutput();
-
-					int iModifiedOutput = iOutput;
-					if(eYieldProduced != NO_YIELD)
-					{
-						iModifiedOutput *= 100 + kBuildingInfo.getYieldModifier(eYieldProduced);
-						iModifiedOutput /= 100;
-					}
-
-					if (iModifiedOutput > iHighestOutput)
-					{
-						if (iOutput != 0)
-						{
-							int iRawYieldProduced = getRawYieldProduced(eYieldProduced);
-							if (iOutput > 0)
-							{
-								int iTempValue = AI_estimateYieldValue(eYieldProduced, iModifiedOutput);
-								if (iRawYieldProduced > 0)
-								{
-									iTempValue *= 150 + 10 * iRawYieldProduced;
-									iTempValue /= 100;
-								}
-								if (bIsStarted || getPopulation() >= 5)
-								{
-									if ((eYieldProduced == YIELD_HAMMERS) && !kOwner.AI_isStrategy(STRATEGY_CASH_FOCUS))
-									{
-										// R&R, ray, AI builds stronger - START
-										if(isNative())
-										{
-											iTempValue *= 100 + 20 * (getPopulation() - 4); // old code
-										}
-										else
-										{
-											iTempValue *= 100 + 20 * getPopulation();
-										}
-										// R&R, ray, AI builds stronger - END
-										iTempValue /= 100;
-									}
-								}
-
-								if (eYieldConsumed != NO_YIELD)
-								{
-									int iAvailable = getRawYieldProduced(eYieldConsumed) + std::max(0, AI_getTradeBalance(eYieldConsumed));
-
-									if (iAvailable < iOutput)
-									{
-										int iMax = std::max(1, GC.getGameINLINE().getCargoYieldCapacity());
-
-										int iPercent = 100 * getYieldStored(eYieldConsumed) / iMax;
-										iPercent = std::max(iPercent, 100 * kOwner.AI_getBestPlotYield(eYieldConsumed) / iOutput);
-
-										if (iPercent > 100)
-										{
-											iPercent = 100 + (iPercent - 100) / 2;
-										}
-
-										iTempValue *= iPercent;
-										iTempValue /= 100;
-									}
-								}
-								if ((eYieldProduced == YIELD_HORSES))
-								{
-									if (kOwner.isNative())
-									{
-										iTempValue *= 10;
-									}
-									else
-									{
-										iTempValue /= 10;
-									}
-								}
-
-								if (iHighestOutput == 0)
-								{
-									int iMultiplier = 150;
-									for (int i = 0; i < getPopulation(); ++i)
-									{
-										CvUnit* pLoopUnit = getPopulationUnitByIndex(i);
-										if (pLoopUnit->AI_getIdealProfession() == eLoopProfession)
-										{
-											iMultiplier += 100;
-										}
-									}
-									iTempValue *= iMultiplier;
-									iTempValue /= 100;
-								}
-
-								if (eYieldProduced == YIELD_HORSES || eYieldProduced == YIELD_BLADES || eYieldProduced == YIELD_MUSKETS || eYieldProduced == YIELD_CANNONS || eYieldProduced == YIELD_BLACK_POWDER || eYieldProduced == YIELD_TOOLS || eYieldProduced == YIELD_FOOD)
-								{
-									bIsMilitary = true;
-								}
-								iValue += iTempValue;
-								bIsGoodProfession = true;
-							}
+							const int iMaxYieldProduced = kBuildingInfo.getMaxWorkers() * kBuildingInfo.getProfessionOutput();
+							const int iMinYieldProduced = kBuildingInfo.getProfessionOutput();
+							iValue += AI_estimateYieldValue(eYieldProduced, iMinYieldProduced * kBuildingInfo.getProfessionOutput());
 						}
 					}
 					else
 					{
-						bIsBadProfession = true;
-					}
-				}
-			}
-		}
-	}
+						// Converter buildings (e.g blacksmith)
+						bool bSufficientInput = true;
 
-	if (bIsGoodProfession)
-	{
-		if (getPopulation() < 3)
-		{
-			iValue *= 1 + getPopulation();
-			iValue /= 4;
-		}
-	}
-
-	// TAC - AI Buildings - koma13 - START
-	//if (!bIsBadProfession)
-	if (!bIsBadProfession && !bSpecialBuildingLimit)
-	// TAC - AI Buildings - koma13 - END
-	{
-		//XXX - underlying gameplay may be changed...
-		for (int i = 0; i < NUM_YIELD_TYPES; ++i)
-		{
-			YieldTypes eLoopYield = (YieldTypes)i;
-
-			int iAdded = 0;
-
-			// TAC - AI Buildings - koma13 - START
-			//iAdded += kBuildingInfo.getYieldChange(eLoopYield);
-			//iAdded += getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
-			//iAdded += kOwner.getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
-
-			if (!GC.getYieldInfo(eLoopYield).isCargo())
-			{
-				iAdded += kBuildingInfo.getYieldChange(eLoopYield);
-				iAdded += getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
-				iAdded += kOwner.getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield);
-			}
-			// TAC - AI Buildings - koma13 - END
-
-			if (kBuildingInfo.getYieldModifier(eLoopYield) > 0)
-			{
-				int iRaw = getRawYieldProduced(eLoopYield);
-				// Commented out the below since bells are too valuable in general to depend on such strict conditions
-				//if ((eLoopYield == YIELD_BELLS) && kOwner.AI_isStrategy(STRATEGY_FAST_BELLS) && (kOwner.AI_findBestCity() == this))
-				if (eLoopYield == YIELD_BELLS)
-				{
-					// Slight hack to value the SPECIALBUILDING_PRINT class more highly
-					iRaw *= getPopulation();
-				}
-				iAdded += ((2 * iRaw * kBuildingInfo.getYieldModifier(eLoopYield)) / 100);
-			}
-
-			if (iAdded != 0)
-			{
-				if (eLoopYield == YIELD_HORSES || eLoopYield == YIELD_BLADES || eLoopYield == YIELD_MUSKETS || eLoopYield == YIELD_CANNONS || eLoopYield == YIELD_BLACK_POWDER || eLoopYield == YIELD_TOOLS || eLoopYield == YIELD_FOOD)
-				{
-					bIsMilitary = true;
-				}
-				iValue += AI_estimateYieldValue(eLoopYield, iAdded);
-			}
-
-			if (kBuildingInfo.getSeaPlotYieldChange(i) != 0)
-			{
-				// Determine the net change that would be added by the building
-				// We have to avoid double-counting yield changes that do not stack\accumulate
-				const int iYieldChange = kBuildingInfo.getSeaPlotYieldChange(i) - getSeaPlotYield((YieldTypes)i);
-
-				if (iYieldChange != 0)
-				{
-					int iTempValue = 0;
-
-					int iFood = 0;
-					int iNumLandPlots = 0;
-
-					for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-					{
-						CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
-						if (pLoopPlot != NULL && canWork(pLoopPlot, /*bIgnoreCityWorksWaterCheck*/true))
+						for (YieldTypes eYieldConsumed = (YieldTypes)kLoopProfession.getYieldsConsumed(0); eYieldConsumed < kLoopProfession.getNumYieldsConsumed(); ++eYieldConsumed)
 						{
-							if (pLoopPlot->isWater())
+							// Input yield must be available in sufficient quantities to for this profession
+							const int iAvailable = getRawYieldProduced(eYieldConsumed) + std::max(0, AI_getTradeBalance(eYieldConsumed)) + getYieldStored(eYieldConsumed);
+
+							// It's difficult to evaluate the max potential of a building, besides we don't even know if a building will be staffed after building it!
+							// TODO: Check the population for the actual consumption since experts require more input to be max efficient
+							const int iMaxYieldConsumed = kBuildingInfo.getMaxWorkers() * kBuildingInfo.getProfessionOutput();
+							const int iMinYieldConsumed = kBuildingInfo.getProfessionOutput();
+
+							if (iAvailable < iMinYieldConsumed)
 							{
-								iTempValue += iYieldChange;
-								if (pLoopPlot->isBeingWorked())
-								{
-									iTempValue += iYieldChange;
-								}
-								if (pLoopPlot->getBonusType() != NO_BONUS)
-								{
-									iTempValue += iYieldChange * 3;
-								}
-							}
-							else if (iI != CITY_HOME_PLOT)
-							{
-								iFood += pLoopPlot->getYield(YIELD_FOOD);
-								iNumLandPlots++;
+								bSufficientInput = false;
 							}
 						}
-					}
 
-					iTempValue = AI_estimateYieldValue(eLoopYield, iTempValue);
-
-					if (eLoopYield == YIELD_FOOD && iTempValue > 0 && iNumLandPlots > 0)
-					{
-						if (iFood / iNumLandPlots < 2)
+						if (bSufficientInput)
 						{
-							iTempValue += 10;
-							iTempValue += iNumLandPlots * 4 - iFood * 2;
-						}
-					}
+							int maxProfessionValue = 0;
 
-					iValue += iTempValue;
-					bIsMilitary = true;
-				}
-			}
-
-			// R&R, ray, Landplot Yields - START
-			if (kBuildingInfo.getLandPlotYieldChange(i) != 0)
-			{
-				// Determine the net change that would be added by the building
-				// We have to avoid double-counting yield changes that do not stack\accumulate
-				const int iYieldChange = kBuildingInfo.getLandPlotYieldChange(i) - getLandPlotYield((YieldTypes)i);
-
-				if (iYieldChange != 0)
-				{
-					int iTempValue = 0;
-
-					int iFood = 0;
-					int iNumLandPlots = 0;
-
-					for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
-					{
-						CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
-						if (pLoopPlot != NULL && canWork(pLoopPlot, /*bIgnoreCityWorksWaterCheck*/true))
-						{
-							if (!pLoopPlot->isWater()) // here we check for Land
+							// We know that we have the input so let's try to calculate the value we may generate
+							for (YieldTypes eYieldProduced = (YieldTypes)kLoopProfession.getYieldsProduced(0); eYieldProduced < kLoopProfession.getNumYieldsProduced(); ++eYieldProduced)
 							{
-								iTempValue += iYieldChange;
-								if (pLoopPlot->isBeingWorked())
-								{
-									iTempValue += iYieldChange;
-								}
-								if (pLoopPlot->getBonusType() != NO_BONUS)
-								{
-									iTempValue += iYieldChange * 3;
-								}
+								const int iMaxYieldProduced = kBuildingInfo.getMaxWorkers() * kBuildingInfo.getProfessionOutput();
+								const int iMinYieldProduced = kBuildingInfo.getProfessionOutput();
+								maxProfessionValue = std:: max(maxProfessionValue, AI_estimateYieldValue(eYieldProduced, iMinYieldProduced * kBuildingInfo.getProfessionOutput()));
+							}
+							iValue += maxProfessionValue;
+						}
+
+						// TODO: Education is a special case since there is no output!
+
+
+						// TODO: we should check for experts
+						/*
+						for (int i = 0; i < getPopulation(); ++i)
+						{
+							CvUnit* const pLoopUnit = getPopulationUnitByIndex(i);
+							if (pLoopUnit->AI_getIdealProfession() == eLoopProfession)
+							{
+								iMultiplier += 100;
 							}
 						}
-					}
-
-					iTempValue = AI_estimateYieldValue(eLoopYield, iTempValue);
-
-					if (eLoopYield == YIELD_FOOD && iTempValue > 0 && iNumLandPlots > 0)
-					{
-						if (iFood / iNumLandPlots < 2)
-						{
-							iTempValue += 10;
-							iTempValue += iNumLandPlots * 4 - iFood * 2;
+						iTempValue *= iMultiplier;
+						iTempValue /= 100;
 						}
-					}
-
-					iValue += iTempValue;
-					bIsMilitary = true;
-				}
-				// R&R, ray, Landplot Yields - END
-			}
-		}
-	}
-
-	// Just because we're a major cities does not mean that we should value the unlocking of units which
-	// we are unlikely to ever build anyway
-	if (/*(bIsMajorCity) || */(iFocusFlags & BUILDINGFOCUS_MILITARY))	// TAC - AI Buildings - koma13
-	{
-		int iUnitsTrainedCount = 0;
-
-		for (int i = 0; i < GC.getNumUnitInfos(); ++i)
-		{
-			if (GC.getUnitInfo((UnitTypes)i).getPrereqBuilding() == kBuildingInfo.getBuildingClassType())
-			{
-				iUnitsTrainedCount++;
-			}
-		}
-
-		// TODO: Differentiate between domain, transport units getCargoSpace() > 0 and actual military units
-
-		if (iUnitsTrainedCount > 0)
-		{
-			int iBuildingCount = kOwner.getBuildingClassCountPlusMaking(eBuildingClass);
-
-			// TAC - AI Buildings - koma13 - START
-			//int iTargetBuildingCount = 1 + kOwner.getNumCities() / 10;
-			int iTargetBuildingCount = 1 + kOwner.getNumCities() / 5;
-
-			//if (iBuildingCount < iTargetBuildingCount)
-			if ((iBuildingCount < iTargetBuildingCount) || (kOwner.getGold() > 25000) || (iFocusFlags & BUILDINGFOCUS_MILITARY))
-			{
-				//iValue += 5 * calculateNetYield(YIELD_HAMMERS);
-				iValue += std::max(10, 5 * calculateNetYield(YIELD_HAMMERS));
-			}
-			// TAC - AI Buildings - koma13 - END
-			bIsMilitary = true;
-		}
-	}
-
-	// TAC - AI Buildings - koma13 - START
-	//if (bIsMajorCity && !(iFocusFlags & BUILDINGFOCUS_NO_RECURSION))
-	if (!(iFocusFlags & BUILDINGFOCUS_NO_RECURSION))
-	// TAC - AI Buildings - koma13 - END
-	{
-		// WTP, ray, refactored according to advice of Nightinggale
-		for (BuildingTypes eLoopBuilding = FIRST_BUILDING; eLoopBuilding < NUM_BUILDING_TYPES; ++eLoopBuilding)
-		{
-			if (!isHasBuilding(eLoopBuilding))
-			{
-				CvBuildingInfo& kLoopBuilding = GC.getBuildingInfo(eLoopBuilding);
-				if (kLoopBuilding.isBuildingClassNeededInCity(kBuildingInfo.getBuildingClassType()))
-				{
-					// TAC - AI Buildings - koma13 - START
-					//bool bOthersNeeded = false;
-					bool bOthersNeeded = ((kLoopBuilding.getAIWeight() > 0) || AI_isProductionBuilding(eLoopBuilding, bIsMajorCity));
-					if (!bOthersNeeded && bIsMajorCity)
-					{
-						// WTP, ray, refactored according to advice of Nightinggale
-						for (BuildingTypes eLoopBuilding2 = FIRST_BUILDING; eLoopBuilding2 < NUM_BUILDING_TYPES; eLoopBuilding2++)
-						{
-							if ((eLoopBuilding2 != eBuilding) && isHasBuilding(eLoopBuilding2))
-							{
-								if (kLoopBuilding.isBuildingClassNeededInCity(GC.getBuildingInfo(eLoopBuilding2).getBuildingClassType()))
-								{
-									bOthersNeeded = true;
-									break;
-								}
-							}
-						}
-					}
-					// TAC - AI Buildings - koma13 - END
-					if (bOthersNeeded)
-					{
-						iValue += AI_buildingValue(eLoopBuilding, iFocusFlags | BUILDINGFOCUS_NO_RECURSION) / 3;
+						*/
 					}
 				}
 			}
 		}
 	}
+	
+	// TODO: National wonders. Need to find the best city...
 
-	if ((kBuildingInfo.getSpecialBuildingType() != NO_SPECIALBUILDING) && kBuildingInfo.getYieldStorage() == 0)
+	
+	for (YieldTypes eLoopYield = FIRST_YIELD; eLoopYield < NUM_YIELD_TYPES; ++eLoopYield)
 	{
-		if (!isHasConceptualBuilding(eBuilding))//Prevents recursion.
+		int iAdded = 0;
+		iAdded += (kBuildingInfo.getYieldModifier(eLoopYield) * getRawYieldProduced(eLoopYield)) / 100; // Multiplier building with or wihtout slots (e.g printing press)
+		iAdded += kBuildingInfo.getYieldChange(eLoopYield); // Extra yield for building itself
+		iAdded += getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield); // Extra yield on a per city basis (e.g. granted by an event)
+		iAdded += kOwner.getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield); // Extra yield on a per player basis (e.g. trait)
+		iValue += AI_estimateYieldValue(eLoopYield, iAdded);
+
+		if (kBuildingInfo.getSeaPlotYieldChange(eLoopYield) != 0)
 		{
-			int iBestValue = -1;
-			BuildingTypes eBestExisting = NO_BUILDING;
-			for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); ++iBuildingClass)
+			// Determine the net change that would be added by the building
+			// We have to avoid double-counting yield changes that do not stack\accumulate
+			const int iYieldChange = kBuildingInfo.getSeaPlotYieldChange(eLoopYield) - getSeaPlotYield(eLoopYield);
+
+			if (iYieldChange != 0)
 			{
-				BuildingTypes eLoopBuilding = (BuildingTypes) GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getCivilizationBuildings(iBuildingClass);
-				if ((NO_BUILDING != eLoopBuilding) && (eLoopBuilding != eBuilding))
+				int iSeaPlotsWorked = 0;
+
+				for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 				{
-					CvBuildingInfo& kLoopBuilding = GC.getBuildingInfo(eLoopBuilding);
-					if (kLoopBuilding.getSpecialBuildingType() == kBuildingInfo.getSpecialBuildingType())
+					CvPlot* const pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
+					if (pLoopPlot != NULL && canWork(pLoopPlot, /*bIgnoreCityWorksWaterCheck*/true))
 					{
-						if (isHasConceptualBuilding(eLoopBuilding))
+						if (pLoopPlot->isWater())
 						{
-							int iValue = kLoopBuilding.getSpecialBuildingPriority();
-							if (iValue > iBestValue)
+							if (pLoopPlot->isBeingWorked())
 							{
-								iBestValue = iValue;
-								eBestExisting = eLoopBuilding;
+								iSeaPlotsWorked++;
 							}
 						}
 					}
 				}
-			}
-			if (eBestExisting != NO_BUILDING)
-			{
-				iValue -= AI_buildingValue(eBestExisting, iFocusFlags);
-			}
-		}
-	}
-
-	//increase building value if only needs hammers
-	if (!isHasConceptualBuilding(eBuilding) && (iFocusFlags & BUILDINGFOCUS_BUILD_ANYTHING))
-	{
-		iValue += 10;
-
-		bool bNonHammerCost = false;
-		for (int i = 0; i < NUM_YIELD_TYPES; ++i)
-		{
-			if ((kBuildingInfo.getYieldCost(i) > 0) && (i != YIELD_HAMMERS))
-			{
-				bNonHammerCost = true;
-				break;
+				iValue += AI_estimateYieldValue(eLoopYield, iSeaPlotsWorked);;
 			}
 		}
 
-		if (!bNonHammerCost)
+		// R&R, ray, Landplot Yields - START
+		if (kBuildingInfo.getLandPlotYieldChange(eLoopYield) != 0)
 		{
-			iValue += 10;
-		}
-	}
+			// Determine the net change that would be added by the building
+			// We have to avoid double-counting yield changes that do not stack\accumulate
+			const int iYieldChange = kBuildingInfo.getLandPlotYieldChange(eLoopYield) - getLandPlotYield(eLoopYield);
 
-	// TAC - AI Buildings - koma13 - START
-	if (!isHasConceptualBuilding(eBuilding))
-	{
-		iValue += kBuildingInfo.getAIWeight();
-
-		if (bProductionBuilding)
-		{
-			iValue += 100 + 10 * getRawYieldProduced(eYieldConsumed);
-
-			// WTP, ray, also check for available AI experts for Building Construction - START
-			// first we get the Array containing UnitClasses and Weight
-			const InfoArray<UnitClassTypes, int>& AI_ExpertWeightInfoArray = kBuildingInfo.AI_getUnitClassWeight();
-			// now we loop
-			for (int iI = 0; iI < AI_ExpertWeightInfoArray.getLength(); ++iI)
+			if (iYieldChange != 0)
 			{
-				//first we get the XML info about Experts we check for from BuildingInfos
-				UnitClassTypes UnitClassExpertToCheckForWeightIncrease = AI_ExpertWeightInfoArray.getUnitClass(iI);
-				int iWeightIncreaseIfExpertFound = AI_ExpertWeightInfoArray.getInt(iI);
+				int iLandPlotsWorked = 0;
 
-				// in case somebody configured 0 as weight increase in XML we will not loop the Population
-				if (iWeightIncreaseIfExpertFound == 0) continue;
-
-				// now we need to figure out if the City has the UnitClass
-				for (int i = 0; i < getPopulation(); ++i)
+				for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 				{
-					CvUnit* pUnit = getPopulationUnitByIndex(i);
-					if (pUnit->getUnitClassType() == UnitClassExpertToCheckForWeightIncrease)
+					CvPlot* const pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
+					if (pLoopPlot != NULL && canWork(pLoopPlot, /*bIgnoreCityWorksWaterCheck*/true))
 					{
-						// we add the XML ExpertIncrease value on top of the alredy calculated Building value
-						iValue += iWeightIncreaseIfExpertFound;
+						if (!pLoopPlot->isWater()) // here we check for Land
+						{
+							if (pLoopPlot->isBeingWorked())
+							{
+								iLandPlotsWorked++;
+							}
+						}
 					}
 				}
+				iValue += AI_estimateYieldValue(eLoopYield, iLandPlotsWorked);;
 			}
-			// WTP, ray, also check for available AI experts for Building Construction - END
+			// R&R, ray, Landplot Yields - END
+		}
+
+		if (kBuildingInfo.getRiverPlotYieldChange(eLoopYield) != 0)
+		{
 		}
 	}
 
-	//return iValue;
+	if (kBuildingInfo.getFoodKept() != 0)
+	{
+		// A x% reduction in food required to grow is roughly equivalent to a x% bonus on food surplus
+		iValue += AI_estimateYieldValue(YIELD_FOOD, foodDifference());
+	}
+
 	return std::max(0, iValue);
-	// TAC - AI Buildings - koma13 - END
 }
 
 int CvCityAI::AI_neededSeaWorkers() const
@@ -3472,6 +3125,7 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 		pDisplacedUnit->setProfession(NO_PROFESSION);
 	}
 
+	kUnit.AI().setCitizenValue(iBestValue);
 	kUnit.setProfession(eBestProfession);
 
 	FAssert(!isUnitWorkingAnyPlot(&kUnit));
@@ -4788,7 +4442,7 @@ const int YIELD_TOOLS_BASE_VALUE = 10;
 int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 {
 	int iValue = iAmount * GET_PLAYER(getOwnerINLINE()).AI_yieldValue(eYield);
-
+	
 	switch (eYield)
 	{
 		case YIELD_FOOD:
@@ -4831,6 +4485,23 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			break;
 		// We punish overproduction of input yields
 		case YIELD_LUMBER:
+		{
+			const PlayerTypes eParent = GET_PLAYER(getOwnerINLINE()).getParent();
+			if (eParent != NO_PLAYER)
+			{
+				const CvPlayer& kParent = GET_PLAYER(eParent);
+				if (getYieldStored(eYield) < 20)
+				{
+					// In case hammer production if blocked by lack of lumber
+					iValue = (AI_estimateYieldValue(YIELD_HAMMERS, 1) + std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield))) / 2;
+				}
+				else
+				{
+					iValue = std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
+				}
+			}
+		}
+		break;
 		case YIELD_HARDWOOD:
 		case YIELD_STONE:
 		case YIELD_CLAY:
@@ -4880,12 +4551,10 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_WHALE_BLUBBER:
 		case YIELD_VALUABLE_WOOD:
 			{
-				PlayerTypes eParent = GET_PLAYER(getOwnerINLINE()).getParent();
-
+				const PlayerTypes eParent = GET_PLAYER(getOwnerINLINE()).getParent();
 				if (eParent != NO_PLAYER)
-				{
-					CvPlayer& kParent = GET_PLAYER(eParent);
-
+				{				
+					const CvPlayer& kParent = GET_PLAYER(eParent);
 					// We value the yield by what we would have had to pay for it in
 					// a port as long as we only have a small amount of it
 					const int iBaselineAmount = GC.getGameINLINE().getCargoYieldCapacity()*2;
@@ -4981,7 +4650,12 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 				{
 					// Put it some effort to gain access to the second ring (fat cross)
 					iValue = iAmount * std::max(0, 15 - iCultureRate);
-				} 
+				}
+				else
+				{
+					// Culture still has some value (it converts to political points) after the initial border expansion
+					iValue = iAmount * 5;
+				}
 			}
 			break;
 		case YIELD_HEALTH:

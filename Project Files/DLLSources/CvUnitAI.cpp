@@ -69,7 +69,7 @@ void CvUnitAI::AI_reset()
 
 	AI_resetSavedData();
 	m_iLastAIChangeTurn= GC.getGameINLINE().getGameTurn();
-
+	m_iCitizenValue = -1; // Not serialized, only used by debug UI
 }
 
 // AI_update returns true when we should abort the loop and wait until next slice
@@ -19479,4 +19479,15 @@ bool CvUnitAI::canPotentiallyTransport(const CvUnitInfo& kUnitInfo) const
 	// WTP, ray Treasure Ship - END
 
 	return true;
+}
+
+
+void CvUnitAI::setCitizenValue(int iValue)
+{
+	m_iCitizenValue = iValue;
+}
+
+int CvUnitAI::getCitizenValue() const
+{
+	return m_iCitizenValue;
 }

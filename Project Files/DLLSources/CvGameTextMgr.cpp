@@ -9795,6 +9795,10 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 
 	if ((gDLL->getChtLvl() > 0) && gDLL->shiftKey())
 	{
+		int iValue = kCity.AI_citizenProfessionValue(kUnit.getProfession(), &kUnit, kCity.getPlotWorkedByUnit(&kUnit), NULL);
+		szString.append(CvWString::format(L"\n Current: computed = %d, cached = %d", iValue, kUnit.AI().getCitizenValue()));
+
+
 		CvPlayer& kOwner = GET_PLAYER(kCity.getOwnerINLINE());
 		szString.append(CvWString::format(L"\nID = %d Count = %d", kUnit.getID(), kOwner.getUnitClassCount(kUnit.getUnitClassType())));
 		for (int iI = 0; iI < GC.getNumProfessionInfos(); iI++)
@@ -9812,22 +9816,7 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 					szString.append(CvWString::format(L"\n %s (%c) = %d (V:%d)", GC.getProfessionInfo(eLoopProfession).getDescription(), iYieldChar, iValue, iViability));
 					// R&R, ray , MYCP partially based on code of Aymerick - END
 				}
-				else if (iViability > 0)
-				{
-					szString.append(CvWString::format(L"\n %s = %d (V:%d)", GC.getProfessionInfo(eLoopProfession).getDescription(), -1, iViability));
-				}
 			}
-		}
-	}
-
-	if ((gDLL->getChtLvl() > 0) && gDLL->shiftKey())
-	{
-		CvUnit* pSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
-
-		if ((pSelectedUnit != NULL) && (pSelectedUnit != &kUnit))
-		{
-			int iValue = kCity.AI_citizenProfessionValue(kUnit.getProfession(), pSelectedUnit, kCity.getPlotWorkedByUnit(&kUnit), &kUnit);
-			szString.append(CvWString::format(L"\n Selected = %d", iValue));
 		}
 	}
 }
