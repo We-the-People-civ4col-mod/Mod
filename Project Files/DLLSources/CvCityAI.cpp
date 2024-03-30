@@ -312,6 +312,14 @@ void CvCityAI::AI_assignWorkingPlots()
 		gDLL->getInterfaceIFace()->setDirty(CitizenButtons_DIRTY_BIT, true);
 		jobMutex.unlock();
 	}
+
+
+	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
+	{
+		m_citizenValues.push_back(m_aPopulationUnits[i]->AI().getCitizenValue());
+	}
+	// Sort citizen values in ascending order (index 0 will contain the least valuable job)
+	std::sort(m_citizenValues.begin(), m_citizenValues.end());
 }
 
 
@@ -1122,6 +1130,29 @@ bool CvCityAI::AI_isProductionBuilding(BuildingTypes eBuilding, bool bMajorCity)
 }
 // TAC - AI Buildings - koma13 - END
 
+// Returns the total expected gain in value realized by substituting jobs in a for which there are better jobs in b
+// Example: currentCitizenValue = [10,20,30] potentialCitizenValue = [5,15] maxJobs = 2
+//			In the example above the result will be 15-10 = 5 since there is only a single potential job that is better than current
+// Note that both vectors are expected to be sorted in ascending order (lowest value at index 0)
+int valueGained(const std::vector<int>& currentCitizenValues, const std::vector<int>& potentialCitizenValues, size_t maxJobs) {
+	// Ensure we're not trying to access beyond the bounds of potentialCitizenValues
+	maxJobs = std::min(maxJobs, potentialCitizenValues.size());
+
+	int sum = 0;
+
+	// Iterate over the last maxJobs elements of potentialCitizenValues
+	for (size_t i = potentialCitizenValues.size() - maxJobs; i < potentialCitizenValues.size(); ++i) {
+		// Find the first element in currentCitizenValues that is not less than the current element in potentialCitizenValues
+		std::vector<int>::const_iterator it = std::lower_bound(currentCitizenValues.begin(), currentCitizenValues.end(), potentialCitizenValues[i]);
+		if (it != currentCitizenValues.begin()) { // Ensure there is an element in currentCitizenValues that is less than potentialCitizenValues[i]
+			--it; // Move to the previous element, which is the largest element less than potentialCitizenValues[i]
+			sum += potentialCitizenValues[i] - *it; // Calculate the difference and add to sum
+		}
+	}
+
+	return sum;
+}
+
 int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 {
 	if (AI_vetoBuilding(eBuilding))
@@ -1145,12 +1176,14 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 	{
 		int iCityCapacityLeft = std::max(0, getMaxYieldCapacity() - getTotalYieldStored());
 
-		// The closer we are to the storage limit the higher the value of storage
+		// The closer we are to the storage limit, the higher the value of storage
 
 		if (iCityCapacityLeft > 0)
-			iValue += 100;
+			iValue += 50;
 	}
 
+	// Don't mix in military value
+	/*
 	if (kBuildingInfo.getDefenseModifier() != 0)
 	{
 		bool bAtWar = GET_TEAM(getTeam()).getAnyWarPlanCount();
@@ -1166,34 +1199,52 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 			}
 		}
 	}
+	*/
 
-	if (kBuildingInfo.isWorksWater())
+	// First building to allow water to be worked is a special case
+	if (kBuildingInfo.getSeaPlotYieldChange(YIELD_FOOD) != 0)
 	{
-		if (!isWorksWater())
+		const int iSeaPlotFoodYieldChange = kBuildingInfo.getSeaPlotYieldChange(YIELD_FOOD);
+
+		//if (!isWorksWater())
 		{
-			// It's tricky to evaluate the potential value of unlocked plots but let's
-			// assume that the 
+			int genericWaterPlotsCount = 0;
+
 			for (int iI = 0; iI < NUM_CITY_PLOTS; iI++)
 			{
-				CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
+				CvPlot* const pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), iI);
 				if (pLoopPlot != NULL)
 				{
-					if (pLoopPlot->isWater() && canWork(pLoopPlot, /*bIgnoreCityWorksWaterCheck*/true))
+					// Note: Bonus plots can always be worked so they don't contribute to the value
+					if (pLoopPlot->isWater() && canWork(pLoopPlot, /*bIgnoreCityWorksWaterCheck*/true) && pLoopPlot->getBonusType() != NO_BONUS)
 					{
-						// TODO: Add check for YIELD_FOOD being unlocked by the ability to work water.
-						iValue += 8 * std::max(0, pLoopPlot->getYield(YIELD_FOOD) - GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
+						genericWaterPlotsCount++;
 					}
 				}
 			}
+
+			std::vector<int> m_potentialCitizenValues;
+
+			for (uint j = 0; j < m_aPopulationUnits.size(); ++j)
+			{
+				int iWaterPlotYield = 0;
+				// TODO: Don't hard-code the profession!
+				// Note that we only check a single plot since it's assumed that non-bonus water plots are identical
+				// Also, we can't simply call AI_citizenProfessionValue since it checks canWork
+				CvUnit* const pUnit = m_aPopulationUnits[j];
+				const CvUnitInfo& kUnitInfo = GC.getUnitInfo(pUnit->getUnitType());
+				if (kUnitInfo.isWaterYieldChanges())
+				{
+					iWaterPlotYield = kUnitInfo.getYieldChange(YIELD_FOOD);
+				}
+				iWaterPlotYield += iSeaPlotFoodYieldChange;
+				m_potentialCitizenValues.push_back(AI_estimateYieldValue(YIELD_FOOD, iWaterPlotYield));
+			}
+			std::sort(m_potentialCitizenValues.begin(), m_potentialCitizenValues.end());
+			int maxWaterWorkers = std::min((int)m_potentialCitizenValues.size(), genericWaterPlotsCount);
+			iValue += valueGained(m_citizenValues, m_potentialCitizenValues, maxWaterWorkers);
 		}
 	}
-
-	bool bIsGoodProfession = false;
-	bool bIsBadProfession = false;
-	// TAC - AI Buildings - koma13 - START
-	bool bSpecialBuildingLimit = false;
-
-	// TAC - AI Buildings - koma13 - END
 
 	if (kBuildingInfo.getMaxWorkers() > 0)
 	{
@@ -1207,75 +1258,91 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 				{
 					if (kLoopProfession.getYieldsConsumed(0) == NO_YIELD)
 					{
+						std::vector<int> professionValue;
+
 						// Professions that do not convert input (e.g. statesmen)
 						// Note that the ability to generate output without input is already quite strong!
-						for (YieldTypes eYieldProduced = (YieldTypes)kLoopProfession.getYieldsProduced(0); eYieldProduced < kLoopProfession.getNumYieldsProduced(); ++eYieldProduced)
+						for (int k = 0; k < kLoopProfession.getNumYieldsProduced(); ++k)
 						{
-							const int iMaxYieldProduced = kBuildingInfo.getMaxWorkers() * kBuildingInfo.getProfessionOutput();
-							const int iMinYieldProduced = kBuildingInfo.getProfessionOutput();
-							iValue += AI_estimateYieldValue(eYieldProduced, iMinYieldProduced * kBuildingInfo.getProfessionOutput());
+							const YieldTypes eYieldProduced = (YieldTypes)kLoopProfession.getYieldsProduced(k);
+
+							std::vector<int> m_potentialCitizenValues;
+
+							for (uint j = 0; j < m_aPopulationUnits.size(); ++j)
+							{
+								CvUnit* const pUnit = m_aPopulationUnits[j];
+								const CvUnitInfo& kUnitInfo = GC.getUnitInfo(pUnit->getUnitType());
+								int iModifier = 100;
+								iModifier += kUnitInfo.getYieldModifier(eYieldProduced);
+								const int iExtra = kUnitInfo.getYieldChange(eYieldProduced);
+								const int iBuildingOutput = (kBuildingInfo.getProfessionOutput() + iExtra) * iModifier / 100;
+								m_potentialCitizenValues.push_back(AI_estimateYieldValue(eYieldProduced, iBuildingOutput));
+							}
+							std::sort(m_potentialCitizenValues.begin(), m_potentialCitizenValues.end());
+							int maxWorkers = std::min((int)m_potentialCitizenValues.size(), kBuildingInfo.getMaxWorkers());
+							professionValue.push_back(valueGained(m_citizenValues, m_potentialCitizenValues, maxWorkers));
 						}
+						if (!professionValue.empty())
+							iValue += *std::max_element(professionValue.begin(), professionValue.end());
 					}
 					else
 					{
 						// Converter buildings (e.g blacksmith)
-						bool bSufficientInput = true;
-
-						for (YieldTypes eYieldConsumed = (YieldTypes)kLoopProfession.getYieldsConsumed(0); eYieldConsumed < kLoopProfession.getNumYieldsConsumed(); ++eYieldConsumed)
+						int iSufficientInput = 0;
+						YieldTypes eBestInputYield = NO_YIELD;
+						for (int j=0; j < kLoopProfession.getNumYieldsConsumed(); ++j)
 						{
+							const YieldTypes eYieldConsumed = (YieldTypes)kLoopProfession.getYieldsConsumed(j);
+
 							// Input yield must be available in sufficient quantities to for this profession
 							const int iAvailable = getRawYieldProduced(eYieldConsumed) + std::max(0, AI_getTradeBalance(eYieldConsumed)) + getYieldStored(eYieldConsumed);
 
 							// It's difficult to evaluate the max potential of a building, besides we don't even know if a building will be staffed after building it!
 							// TODO: Check the population for the actual consumption since experts require more input to be max efficient
 							const int iMaxYieldConsumed = kBuildingInfo.getMaxWorkers() * kBuildingInfo.getProfessionOutput();
-							const int iMinYieldConsumed = kBuildingInfo.getProfessionOutput();
+							//const int iMinYieldConsumed = kBuildingInfo.getProfessionOutput();
 
-							if (iAvailable < iMinYieldConsumed)
+							if (iAvailable >= iMaxYieldConsumed)
 							{
-								bSufficientInput = false;
+								iSufficientInput++;
+								eBestInputYield = (YieldTypes)kLoopProfession.getYieldsConsumed(0);
 							}
 						}
 
-						if (bSufficientInput)
+						if (iSufficientInput == kLoopProfession.getNumYieldsConsumed())
 						{
-							int maxProfessionValue = 0;
+							std::vector<int> professionValue;
 
-							// We know that we have the input so let's try to calculate the value we may generate
-							for (YieldTypes eYieldProduced = (YieldTypes)kLoopProfession.getYieldsProduced(0); eYieldProduced < kLoopProfession.getNumYieldsProduced(); ++eYieldProduced)
+							for (int k = 0; k < kLoopProfession.getNumYieldsProduced(); ++k)
 							{
-								const int iMaxYieldProduced = kBuildingInfo.getMaxWorkers() * kBuildingInfo.getProfessionOutput();
-								const int iMinYieldProduced = kBuildingInfo.getProfessionOutput();
-								maxProfessionValue = std:: max(maxProfessionValue, AI_estimateYieldValue(eYieldProduced, iMinYieldProduced * kBuildingInfo.getProfessionOutput()));
+								const YieldTypes eYieldProduced = (YieldTypes)kLoopProfession.getYieldsProduced(k);
+								std::vector<int> m_potentialCitizenValues;
+
+								for (uint j = 0; j < m_aPopulationUnits.size(); ++j)
+								{
+									CvUnit* const pUnit = m_aPopulationUnits[j];
+									const CvUnitInfo& kUnitInfo = GC.getUnitInfo(pUnit->getUnitType());
+									int iModifier = 100;
+									iModifier += kUnitInfo.getYieldModifier(eYieldProduced);
+									const int iExtra = kUnitInfo.getYieldChange(eYieldProduced);
+									const int iBuildingOutput = (kBuildingInfo.getProfessionOutput() + iExtra) * iModifier / 100;
+									const int citizenValue = AI_estimateYieldValue(eYieldProduced, iBuildingOutput);
+									m_potentialCitizenValues.push_back(citizenValue);
+								}
+								std::sort(m_potentialCitizenValues.begin(), m_potentialCitizenValues.end());
+								int maxWorkers = std::min((int)m_potentialCitizenValues.size(), kBuildingInfo.getMaxWorkers());
+								// TODO: Make this accurate
+								const int professionInputValue = 0; // AI_estimateYieldValue(eBestInputYield, maxWorkers* kBuildingInfo.getProfessionOutput());
+								professionValue.push_back(valueGained(m_citizenValues, m_potentialCitizenValues, maxWorkers) - professionInputValue);
 							}
-							iValue += maxProfessionValue;
+							if (!professionValue.empty())
+								iValue += *std::max_element(professionValue.begin(), professionValue.end());
 						}
-
-						// TODO: Education is a special case since there is no output!
-
-
-						// TODO: we should check for experts
-						/*
-						for (int i = 0; i < getPopulation(); ++i)
-						{
-							CvUnit* const pLoopUnit = getPopulationUnitByIndex(i);
-							if (pLoopUnit->AI_getIdealProfession() == eLoopProfession)
-							{
-								iMultiplier += 100;
-							}
-						}
-						iTempValue *= iMultiplier;
-						iTempValue /= 100;
-						}
-						*/
 					}
 				}
 			}
 		}
 	}
-	
-	// TODO: National wonders. Need to find the best city...
-
 	
 	for (YieldTypes eLoopYield = FIRST_YIELD; eLoopYield < NUM_YIELD_TYPES; ++eLoopYield)
 	{
@@ -1286,7 +1353,7 @@ int CvCityAI::AI_buildingValue(BuildingTypes eBuilding, int iFocusFlags) const
 		iAdded += kOwner.getBuildingYieldChange((BuildingClassTypes)kBuildingInfo.getBuildingClassType(), eLoopYield); // Extra yield on a per player basis (e.g. trait)
 		iValue += AI_estimateYieldValue(eLoopYield, iAdded);
 
-		if (kBuildingInfo.getSeaPlotYieldChange(eLoopYield) != 0)
+		if (kBuildingInfo.getSeaPlotYieldChange(eLoopYield) != 0 && eLoopYield != YIELD_FOOD)
 		{
 			// Determine the net change that would be added by the building
 			// We have to avoid double-counting yield changes that do not stack\accumulate
@@ -2301,12 +2368,10 @@ bool CvCityAI::AI_chooseBuild()
 				{
 					int iTurnsLeft = getProductionTurnsLeft(eLoopBuilding, 0);
 
-
-					iValue *= (GC.getGameINLINE().getSorenRandNum(25, "AI Best Building") + 100);
-					iValue /= 100;
+					//iValue *= (GC.getGameINLINE().getSorenRandNum(25, "AI Best Building") + 100);
+					//iValue /= 100;
 
 					iValue += getBuildingProduction(eLoopBuilding);
-
 
 					FAssert((MAX_INT / 1000) > iValue);
 					iValue *= 1000;
@@ -4486,6 +4551,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		// We punish overproduction of input yields
 		case YIELD_LUMBER:
 		{
+			// TODO: Check for canConsume (and also check buildings under construction)
 			const PlayerTypes eParent = GET_PLAYER(getOwnerINLINE()).getParent();
 			if (eParent != NO_PLAYER)
 			{
@@ -4493,7 +4559,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 				if (getYieldStored(eYield) < 20)
 				{
 					// In case hammer production if blocked by lack of lumber
-					iValue = (AI_estimateYieldValue(YIELD_HAMMERS, 1) + std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield))) / 2;
+					iValue = AI_estimateYieldValue(YIELD_HAMMERS, 1) - std::max(kParent.getYieldBuyPrice(eYield), kParent.getYieldAfricaBuyPrice(eYield));
 				}
 				else
 				{
@@ -4634,7 +4700,7 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 
 				// Note that the doubles are necessary for the calculation to round correctly
 				const int rebelPercent = getRebelPercent();
-				const double rebelFactor = (125 - getRebelPercent()) / (double)100;
+				const double rebelFactor = (150 - getRebelPercent()) / (double)100;
 				const double populationMultiplier = std::max(1U, m_aPopulationUnits.size() / 5);
 
 				iValue = static_cast<int>(iAmount * ((YIELD_BELLS_BASE_VALUE + populationMultiplier) * (getRebelPercent() < 50 ? rebelFactor : 1.0)));
@@ -4654,14 +4720,14 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 				else
 				{
 					// Culture still has some value (it converts to political points) after the initial border expansion
-					iValue = iAmount * 5;
+					iValue = iAmount * 4;
 				}
 			}
 			break;
 		case YIELD_HEALTH:
 			break;
 		case YIELD_EDUCATION:
-			// Don't bother for now, lbd is strongh enough atm
+			// Don't bother for now, lbd is strong enough atm
 			iValue = 0;
 			break;
 		case YIELD_HAPPINESS: // WTP, ray, Happiness - START
@@ -4675,10 +4741,6 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 		case YIELD_BLACK_POWDER:
 			break;
 		case YIELD_CANNONS:
-			// Erik: Since the AI cannot use this yield for military purposes, I've decided to
-			// block it so that production is not diverted to it. (cannons are usually just sold in Europe
-			// without this fix)
-			iValue = 0;
 			break;
 		default:
 			FAssert(false);

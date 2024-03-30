@@ -239,6 +239,7 @@ protected:
 	int m_iWorkersNeeded;
 	int m_iWorkersHave;
 	AICityRole m_cityRole;
+	std::vector<int> m_citizenValues; // Cache, not serialized (re-generated per job assignment run)
 
 	void AI_doEmphasize();
 	void AI_doNativeTrade();
