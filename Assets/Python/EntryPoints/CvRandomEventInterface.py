@@ -7992,6 +7992,16 @@ getHelpMilitiaDefend = get_simple_help("TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP"
 
 getHelpOfficerAtFort = get_simple_help("TXT_KEY_EVENT_OFFICER_ARRIVAL_AT_FORT_HELP")
 
+######## Discovery Start Event  ###########
+
+getHelpDiscoveryConquistador = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_START_CONQUISTADOR_HELP")
+
+getHelpDiscoveryMissionary = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_START_MISSIONARY_HELP")
+
+getHelpDiscoveryTrader = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_START_SEASONED_TRADER_HELP")
+
+getHelpDiscoveryOxcart = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_START_Oxcart_HELP")
+
 ######## Slave Hunter Offers Service ###########
 
 def checkRunawaySlavesOnAdjacentPlotOfCity(argsList): ### When you copy rename specically for your actuall EventTrigger

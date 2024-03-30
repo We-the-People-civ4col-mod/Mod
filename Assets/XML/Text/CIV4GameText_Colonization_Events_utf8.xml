@@ -5239,4 +5239,64 @@
 		<German>Holt sofort einen Priester, damit er einen Exorzismus vornehmen kann und der Geist des Kapitäns nicht im Hafenviertel weiterspukt! Sicherheitshalber sollten wir das Schiff aber auch noch verbrennen. Die Crew kann erst einmal an Land bleiben, bis wir ein neues Schiff für sie gefunden oder gebaut haben.</German>
 		<Russian>Немедленно найдите священника, который сможет провести обряд и изгонит призрак капитана! А корабль следует сжечь, на всякий случай. Экипаж может остаться на берегу, пока мы не найдем другой корабль или не построим для них новый.</Russian>
 	</TEXT>
+   <TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_START</Tag>
+		<English>An expedition was started under the leadership of experienced scouts.</English>
+		<German>Eine Expedition unter der Führung erfahrener Kundschafter wurde gestartet.</German>
+	</TEXT>
+   <TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_START_1</Tag>
+		<English>Milord, You are about to explore the New World with your expedition. But be aware that you have no idea what hardships and dangers await you. You should choose your traveling companions wisely!</English>
+		<German>Milord, Ihr seid im Begriff mit Eurer Expedition die Neue Welt zu erkunden. Aber seid Euch darüber gewahr, dass Ihr keine Ahnung habt, was für Strapazen und Gefahren auf Euch warten. Ihr solltet Eure Reisegefährten weise wählen!</German>
+	</TEXT>
+   <TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_START_2</Tag>
+		<English>Milord, you have made it across the great sea to the shores of this unknown land. Now you surely want to see what lies beyond the beach, don't you? Who do you want to take with you on your expedition?</English>
+		<German>Milord, Ihr habt es über das große Meer hierher an die Küsten dieses unbekannten Landes geschafft. Nun wollt Ihr doch sicher auch noch sehen was sich hinter dem Strand befindet, oder? Wen wollt Ihr auf Eure Expedition mitnehmen?</German>
+	</TEXT>
+   <TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_START_3</Tag>
+		<English>Milord, discovering the continent and returning here alive will be a great challenge. None of us knows what lies beyond the beach. We should not decide who should accompany us!</English>
+		<German>Milord, den Kontinent zu entdecken und wieder lebend hierher zurückzukehren wird eine große Herausforderung werden. Keiner von uns weiß, was hinter dem Strand verborgen liegt. Wir sollten nicht leitfertig entscheiden, wer uns begleiten soll!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_1</Tag>
+		<English>You are right. We need strong and adventurous men who will follow us to hell and back. The prospect of adventure and gold should attract exactly the men we need, even for a small handout.</English>
+		 <German>Ihr habt Recht. Wir brauchen kampfkräftige und abenteuerlustige Männer, die uns bis in die Hölle folgen und wieder zurück. Die Aussicht auf Abenteuer und Gold sollte auch für ein kleines Handgeld genau die Männer anlocken, die wir brauchen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_2</Tag>
+		<English>You are right. But even more important than the sword is our steadfast faith. We should take missionaries with us on the expedition who can proclaim the word of God to all the heathens we will meet along the way. God will then place his protective hand over us.</English>
+		<German>Ihr habt Recht. Aber noch wichtiger als das Schwert ist unser unterschütterlicher Glaube. Wir sollten Missionare auf die Reise mitnehmen, die das Wort Gottes allen Heiden verkünden können, denen wir unterwegs begegnen werden. Gott wird damit seine schützende Hand über uns legen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_3</Tag>
+		<English>You are right. But we have not come to this New World to plunder and murder. We want to trade with the inhabitants of this beautiful land. The prospect of profit will excite the traders. Hire a few traders.</English>
+		<German>Ihr habt Recht. Aber wir sind nicht in diese Neue Welt gekommen um zu plündern und zu morden. Wir wollen Handel mit den Bewohnern dieses schönen Landes treiben. Die Aussicht auf Profit wird die Händler begeistern. Heuert ein paar Händler an.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_4</Tag>
+		<English>You are right. But I don't expect any resistance from the natives. Curiosity will guide these simple natures. All we have to do is pick up the treasures or talk them out of them. Let's take a wagon with us to transport the treasures and our luggage.</English>
+		<German>Ihr habt Recht. Aber ich erwarte keine Gegenwehr von den Ureinwohnern. Die Neugier wird diese einfachen Naturen leiten. Wir brauchen die Schätze nur aufzusammeln oder sie ihnen abzuschwatzen. Nehmen wir einen Wagen mit, mit dem wir die Schätze und unser Gepäck transportieren können.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_CONQUISTADOR_HELP</Tag>
+		<English>[ICON_BULLET]Mounted conquistadores join our expedition.</English>
+		<German>[ICON_BULLET]Berittene Konquistadoren schließen sich uns an.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_MISSIONARY_HELP</Tag>
+		<English>[ICON_BULLET]Missionaries join our expedition.</English>
+		<German>[ICON_BULLET]Missionare schließen sich uns an.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_SEASONED_TRADER_HELP</Tag>
+		<English>[ICON_BULLET]A courageous native trader joins our expedition.</English>
+		<German>[ICON_BULLET]Couragierte Ureinwohnerhändler schließen sich uns an.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_Oxcart_HELP</Tag>
+		<English>[ICON_BULLET]An oxcart joins the expedition.</English>
+		<German>[ICON_BULLET]Ein Oxenkarren schließt sich uns an.</German>
+	</TEXT>
 </Civ4GameText>
