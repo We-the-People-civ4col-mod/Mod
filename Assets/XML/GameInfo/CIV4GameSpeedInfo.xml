@@ -92,8 +92,20 @@
 			<iRevolutionTurns>3600</iRevolutionTurns>
 			<GameTurnInfos>
 				<GameTurnInfo>
+					<iMonthIncrement>6</iMonthIncrement>
+					<iTurnsPerIncrement>200</iTurnsPerIncrement>
+				</GameTurnInfo>
+				<GameTurnInfo>
+					<iMonthIncrement>3</iMonthIncrement>
+					<iTurnsPerIncrement>200</iTurnsPerIncrement>
+				</GameTurnInfo>
+				<GameTurnInfo>
+					<iMonthIncrement>2</iMonthIncrement>
+					<iTurnsPerIncrement>300</iTurnsPerIncrement>
+				</GameTurnInfo>
+				<GameTurnInfo>
 					<iMonthIncrement>1</iMonthIncrement>
-					<iTurnsPerIncrement>7200</iTurnsPerIncrement>
+					<iTurnsPerIncrement>6600</iTurnsPerIncrement>
 				</GameTurnInfo>
 			</GameTurnInfos>
 		</GameSpeedInfo>
