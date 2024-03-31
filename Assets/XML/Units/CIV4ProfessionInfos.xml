@@ -5055,8 +5055,8 @@
 			<bWater>0</bWater>
 			<bScout>0</bScout>
 			<bCanCrossLargeRivers>1</bCanCrossLargeRivers>
-			<bCityDefender>0</bCityDefender>
-			<bCanFound>0</bCanFound>
+			<bCityDefender>1</bCityDefender>
+			<bCanFound>1</bCanFound>
 			<bUnarmed>0</bUnarmed>
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
 			<iCombatChange>5</iCombatChange>
@@ -5106,7 +5106,7 @@
 			<bScout>0</bScout>
 			<bCanCrossLargeRivers>1</bCanCrossLargeRivers>
 			<bCityDefender>1</bCityDefender>
-			<bCanFound>0</bCanFound>
+			<bCanFound>1</bCanFound>
 			<bUnarmed>0</bUnarmed>
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>5</iCombatChange>
@@ -5155,8 +5155,8 @@
 			<bWater>0</bWater>
 			<bScout>0</bScout>
 			<bCanCrossLargeRivers>1</bCanCrossLargeRivers>
-			<bCityDefender>0</bCityDefender>
-			<bCanFound>0</bCanFound>
+			<bCityDefender>1</bCityDefender>
+			<bCanFound>1</bCanFound>
 			<bUnarmed>0</bUnarmed>
 			<bNoDefensiveBonus>1</bNoDefensiveBonus>
 			<iCombatChange>6</iCombatChange>
