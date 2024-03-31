@@ -5299,4 +5299,34 @@
 		<English>[ICON_BULLET]An oxcart joins the expedition.</English>
 		<German>[ICON_BULLET]Ein Oxenkarren schließt sich uns an.</German>
 	</TEXT>
+  <TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_FEVER</Tag>
+		<English>One expedition was gripped by a fever.</English>
+		<German>Eine Expedition wurde vom Fieber gepackt.</German>
+	</TEXT>
+   <TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_FEVER</Tag>
+		<English>Milord, our expedition has reached swampy, impenetrable jungle. The mosquitoes are buzzing around the men's heads and they bite like arrows. It's probably called malaria. The men and even the animals are weakened and need to rest for a while.</English>
+		<German>Milord, unsere Expedition hat sumpfigen, undurchdringlichen Urwald erreicht. Die Mücken schwirren nur so um die Köpfe der Männer herum und sie stechen wie Pfeile. Man nennt es wohl Malaria. Die Männer und sogar die Tiere sind geschwächt und müssen sich eine Weile ausruhen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FEVER</Tag>
+		<English>Well, we have no choice. Set up a makeshift camp and try to get the men some fresh water and fruit. That's all we can do at the moment.</English>
+		 <German>Nun gut, wir haben keine Wahl. Errichtet ein provisorisches Lager und versucht den Männern frisches Wasser und ein paar Früchte zu beschaffen. Mehr können wir derzeit nicht unternehmen.</German>
+	</TEXT>
+  <TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_DESERT</Tag>
+		<English>One expedition crosses a desert.</English>
+		<German>Eine Expedition durchquert eine Wüste.</German>
+	</TEXT>
+   <TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_DESERT</Tag>
+		<English>Milord, our expedition has reached a desert and has only a small supply of water. The animals must be spared. The expedition is making slow progress.</English>
+		<German>Milord, unsere Expedition hat eine Wüste erreicht und nur geringe Wasservorräte dabei. Die Tiere müssen geschont werden. Die Expedition kommt nur langsam vorran.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_DESERT</Tag>
+		<English>Well, we have no choice. Drink as little as possible and give the rest to the horses. We're lost without them. Spread out in the area and look for a watering hole.</English>
+		 <German>Nun gut, wir haben keine Wahl. Trinkt so wenig wie möglich und gebt den Rest den Pferden. Ohne sie sind wir verloren. Verteilt Euch in der Gegend und sucht nach einer Wasserstelle.</German>
+	</TEXT>
 </Civ4GameText>

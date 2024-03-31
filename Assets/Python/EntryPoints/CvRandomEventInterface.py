@@ -909,6 +909,22 @@ def getHelpPeasantWarPrep(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_PEASANT_WARPREP_HELP", (iPriceChange, gc.getYieldInfo(iYield1).getChar(), king.getCivilizationDescriptionKey(), iPriceChange, gc.getYieldInfo(iYield2).getChar(), king.getCivilizationDescriptionKey()))
 	return szHelp
 
+######## Discovery Events for Scouts ###########
+
+def canTriggerDiscovery(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return False
+	unit = player.getUnit(kTriggeredData.iUnitId)
+	eScout = gc.getInfoTypeForString("PROFESSION_SCOUT")
+	if unit.getProfession() != eScout:
+		return False
+	# Read parameter 3 from the event as random chance
+	if TriggerChance(argsList):
+		return True
+	return False
+
 ######## The Lost Tribe ###########
 
 def canTriggerLostTribe(argsList):
