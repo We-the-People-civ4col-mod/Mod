@@ -5329,4 +5329,44 @@
 		<English>Well, we have no choice. Drink as little as possible and give the rest to the horses. We're lost without them. Spread out in the area and look for a watering hole.</English>
 		 <German>Nun gut, wir haben keine Wahl. Trinkt so wenig wie möglich und gebt den Rest den Pferden. Ohne sie sind wir verloren. Verteilt Euch in der Gegend und sucht nach einer Wasserstelle.</German>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_ATTACKED</Tag>
+		<English>There's a rumour that a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] expedition has been attacked and murdered by hostile Natives.</English>
+		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Expedition wurde von Ureinwohnern angegriffen und abgeschlachtet.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_ATTACKED_1</Tag>
+		<English>Milord, our epedition was ambushed by hostile natives on the way through this vast new continent in search of a campsite!</English>
+		<German>Milord, unsere Epedition wurde auf dem Weg durch diesen riesigen neuen Kontinent auf der Suche nach einem Lagerplatz aus dem Hinterhalt von Wilden angegriffen!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_ATTACKED_1</Tag>
+		<English>For heaven's sake! What a godless country this is!</English>
+		<German>Um Himmels willen! Was ist das nur für ein gottloses Land!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_MUTINY</Tag>
+		<English>There's a rumour that a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] expedition has been stoppey by a mutiny.</English>
+		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Expedition wird durch eine Meuterei aufgehalten.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_MUTINY</Tag>
+		<English>Milord, some of our men are losing their nerve. They are emaciated and have not preyed for a long time. They are threatening to mutiny!</English>
+		<German>Milord, einige unserer Männer verlieren die Nerven. Sie sind ausgezehrt und haben lange keine Beute mehr gemacht. Sie drohen zu meutern!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_MUTINY_1</Tag>
+		<English>Damn it, the devil take them. And the devil is me. Call to arms!</English>
+		<German>Verdammt noch mal, der Teufel soll sie holen. Und der Teufel bin ich. Zu den Waffen!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_MUTINY_2</Tag>
+		<English>Well, I understand that. Many of them only came along for the loot. They have no interest in the beauty of nature. Let's pay them their wages first, that should calm them down for a while.</English>
+		<German>Nun gut, das verstehe ich. Viele sind nur wegen der Beute mitgekommen. Für die schöne Natur haben sie nichts übrig. Zahlen wir Ihnen erst einmal ihren Sold, das sollte sie für eine Weile beruhigen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_MUTINY_HELP</Tag>
+		<English>[ICON_BULLET]Some of our men will mutiny and fight against us!</English>
+		<German>[ICON_BULLET]Einige unserer Männer werden meutern und gegen uns kämpfen!</German>
+	</TEXT>
 </Civ4GameText>

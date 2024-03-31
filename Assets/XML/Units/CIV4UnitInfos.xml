@@ -3639,7 +3639,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -4469,7 +4469,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -6686,7 +6686,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -7511,7 +7511,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -37641,7 +37641,7 @@
 			<LeaderPromotion>NONE</LeaderPromotion>
 			<iLeaderExperience>0</iLeaderExperience>
 			<ProfessionsNotAllowed>
-			   <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_TOWN_GUARD</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -37665,7 +37665,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -45638,7 +45638,8 @@
 				<Build>
 					<BuildType>BUILD_SUPPLY_DEPOT</BuildType>
 					<bBuild>1</bBuild>
-				</Build>				<Build>
+				</Build>
+				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -50888,7 +50889,7 @@
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
@@ -50899,7 +50900,7 @@
 					<UnitMeshGroup>
 						<iRequired>2</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
@@ -50910,7 +50911,7 @@
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_DRAGOON</ProfessionType>
@@ -51462,7 +51463,7 @@
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
@@ -51473,7 +51474,7 @@
 					<UnitMeshGroup>
 						<iRequired>2</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
@@ -51484,7 +51485,7 @@
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_DRAGOON</ProfessionType>
@@ -52044,7 +52045,7 @@
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
@@ -52055,7 +52056,7 @@
 					<UnitMeshGroup>
 						<iRequired>2</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
@@ -52066,7 +52067,7 @@
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_DRAGOON</ProfessionType>
@@ -54363,7 +54364,7 @@
 				<UniqueName>TXT_KEY_GREAT_PERSON_COCHRANE</UniqueName>
 				<UniqueName>TXT_KEY_GREAT_PERSON_ARNOLD</UniqueName>
 			</UniqueNames>
-			<Special>NONE</Special>
+			<Special>SPECIALUNIT_MILITARY_UNIT</Special>
 			<Capture>NONE</Capture>
 			<Combat>NONE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
@@ -69384,7 +69385,7 @@
 			<LeaderPromotion>NONE</LeaderPromotion>
 			<iLeaderExperience>0</iLeaderExperience>
 			<ProfessionsNotAllowed>
-			   <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_TOWN_GUARD</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -69408,7 +69409,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -73481,7 +73482,7 @@
 				</YieldDemand>
 			</YieldDemands>
 			<YieldChanges>
-				 <YieldChange>
+				<YieldChange>
 					<YieldType>YIELD_COCOA</YieldType>
 					<iChange>-2</iChange>
 				</YieldChange>
@@ -73971,7 +73972,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -75066,7 +75067,7 @@
 				</YieldDemand>
 			</YieldDemands>
 			<YieldChanges>
-				 <YieldChange>
+				<YieldChange>
 					<YieldType>YIELD_COCOA</YieldType>
 					<iChange>-2</iChange>
 				</YieldChange>
@@ -75556,7 +75557,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -75996,7 +75997,7 @@
 			<LeaderPromotion>NONE</LeaderPromotion>
 			<iLeaderExperience>0</iLeaderExperience>
 			<ProfessionsNotAllowed>
-			   <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_TOWN_GUARD</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -76020,7 +76021,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -76508,7 +76509,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -84681,7 +84682,7 @@
 			<eCitizenStatus>NONE</eCitizenStatus>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
-		   <Description>TXT_KEY_YIELD_GOLD</Description>
+			<Description>TXT_KEY_YIELD_GOLD</Description>
 			<Civilopedia>TXT_KEY_UNIT_GOLD_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_GOLD_STRATEGY</Strategy>
 			<iTeachLevel>100</iTeachLevel>

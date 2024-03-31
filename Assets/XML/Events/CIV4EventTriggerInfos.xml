@@ -38716,7 +38716,7 @@
 			<EventArt>,Art/EventImages/scout.dds</EventArt>
 			<iPercentGamesActive>100</iPercentGamesActive>
 			<iWeight>-1</iWeight>
-			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>0</iMinTreasury>
@@ -38797,7 +38797,7 @@
 			<EventArt>,Art/EventImages/scout.dds</EventArt>
 			<iPercentGamesActive>100</iPercentGamesActive>
 			<iWeight>-1</iWeight>
-			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>0</iMinTreasury>
@@ -38837,6 +38837,169 @@
 			<RoutesRequired/>
 			<Events>
 				<Event>EVENT_DISCOVERY_EVENTS_DESERT</Event>
+			</Events>
+			<PrereqEvents/>
+			<bPrereqEventPlot>0</bPrereqEventPlot>
+			<bRecurring>1</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>0</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>0</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo>canTriggerDiscovery</PythonCanDo>
+			<PythonCanDoCity/>
+			<PythonCanDoUnit/>
+			<PythonCallback/>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_DISCOVERY_EVENTS_ATTACKED</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_ATTACKED</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_ATTACKED_1</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/scout.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired>
+				<UnitClass>UNITCLASS_SCOUT</UnitClass>
+				<UnitClass>UNITCLASS_INDENTURED_SERVANT</UnitClass>
+				<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+				<UnitClass>UNITCLASS_MULATTO</UnitClass>
+				<UnitClass>UNITCLASS_COLONIST</UnitClass>
+				<UnitClass>UNITCLASS_CONVERTED_NATIVE</UnitClass>
+				<UnitClass>UNITCLASS_FREED_SLAVE</UnitClass>
+				<UnitClass>UNITCLASS_EXPERT_SETTLER</UnitClass>
+			</UnitsRequired>
+			<iNumUnits>1</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>1</bUnitsOnPlot>
+			<BuildingsRequired/>
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>1</iNumPlotsRequired>
+			<bOwnPlot>0</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired>
+				<FeatureType>FEATURE_JUNGLE</FeatureType>
+				<FeatureType>FEATURE_MANGROVE</FeatureType>
+				<FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
+				<FeatureType>FEATURE_FOREST</FeatureType>
+				<FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+				<FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+				<FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+				<FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+				<FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
+			</FeaturesRequired>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
+			<Events>
+				<Event>EVENT_DISCOVERY_EVENTS_ATTACKED_1</Event>
+			</Events>
+			<PrereqEvents/>
+			<bPrereqEventPlot>0</bPrereqEventPlot>
+			<bRecurring>0</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>0</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>0</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo>canTriggerDiscovery</PythonCanDo>
+			<PythonCanDoCity/>
+			<PythonCanDoUnit/>
+			<PythonCallback/>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_DISCOVERY_EVENTS_MUTINY</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_MUTINY</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_MUTINY</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/scout.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>-1</iWeight>
+			<bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired>
+				<UnitClass>UNITCLASS_SCOUT</UnitClass>
+				<UnitClass>UNITCLASS_INDENTURED_SERVANT</UnitClass>
+				<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
+				<UnitClass>UNITCLASS_MULATTO</UnitClass>
+				<UnitClass>UNITCLASS_COLONIST</UnitClass>
+				<UnitClass>UNITCLASS_CONVERTED_NATIVE</UnitClass>
+				<UnitClass>UNITCLASS_FREED_SLAVE</UnitClass>
+				<UnitClass>UNITCLASS_EXPERT_SETTLER</UnitClass>
+			</UnitsRequired>
+			<iNumUnits>1</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>1</bUnitsOnPlot>
+			<BuildingsRequired/>
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>1</iNumPlotsRequired>
+			<bOwnPlot>0</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired/>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
+			<Events>
+				<Event>EVENT_DISCOVERY_EVENTS_MUTINY_1</Event>
+				<Event>EVENT_DISCOVERY_EVENTS_MUTINY_2</Event>
 			</Events>
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>

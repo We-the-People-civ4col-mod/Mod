@@ -1123,7 +1123,12 @@
 		<bLbDCanGetFree/>
 		<bLbDCanEscape/>
 		<bLbDCanRevolt/>
-		<UnitClassUpgrades/>
+		<UnitClassUpgrades>
+			<UnitClassUpgrade>
+				<UnitClassUpgradeType/>
+				<bUnitClassUpgrade/>
+			</UnitClassUpgrade>
+		</UnitClassUpgrades>
 		<UnitAIs>
 			<UnitAI>
 				<UnitAIType class="Type" type="UnitAIInfo" none="false"/>
@@ -1143,9 +1148,17 @@
 			</Build>
 		</Builds>
 		<PrereqBuilding class="Type" type="BuildingClassInfo" none="true"/>
-		<PrereqOrBuildings/>
+		<PrereqOrBuildings>
+			<PrereqOrBuilding>
+				<BuildingClass/>
+				<bPrereq/>
+			</PrereqOrBuilding>
+		</PrereqOrBuildings>
 		<ProductionTraits>
-			<ProductionTrait/>
+			<ProductionTrait>
+				<ProductionTraitType/>
+				<iProductionTrait/>
+			</ProductionTrait>
 		</ProductionTraits>
 		<iAIWeight/>
 		<YieldCosts class="Dir" child="YieldCost">
@@ -1216,20 +1229,60 @@
 		<iHillsAttack/>
 		<iHillsDefense/>
 		<iDomesticBonus/>
-		<TerrainAttacks/>
-		<TerrainDefenses/>
-		<FeatureAttacks/>
-		<FeatureDefenses/>
-		<UnitClassAttackMods/>
-		<UnitClassDefenseMods/>
-		<UnitCombatMods/>
+		<TerrainAttacks>
+			<TerrainAttack>
+				<TerrainType/>
+				<iTerrainAttack/>
+			</TerrainAttack>
+		</TerrainAttacks>
+		<TerrainDefenses>
+			<TerrainDefense>
+				<TerrainType/>
+				<iTerrainDefense/>
+			</TerrainDefense>
+		</TerrainDefenses>
+		<FeatureAttacks>
+			<FeatureAttack>
+				<FeatureType/>
+				<iFeatureAttack/>
+			</FeatureAttack>
+		</FeatureAttacks>
+		<FeatureDefenses>
+			<FeatureDefense>
+				<FeatureType/>
+				<iFeatureDefense/>
+			</FeatureDefense>
+		</FeatureDefenses>
+		<UnitClassAttackMods>
+			<UnitClassAttackMod>
+				<UnitClassType/>
+				<iUnitClassMod/>
+			</UnitClassAttackMod>
+		</UnitClassAttackMods>
+		<UnitClassDefenseMods>
+			<UnitClassDefenseMod>
+				<UnitClassType/>
+				<iUnitClassMod/>
+			</UnitClassDefenseMod>
+		</UnitClassDefenseMods>
+		<UnitCombatMods>
+			<UnitCombatMod>
+				<UnitCombatType/>
+				<iUnitCombatMod/>
+			</UnitCombatMod>
+		</UnitCombatMods>
 		<DomainMods>
 			<DomainMod>
 				<DomainType/>
 				<iDomainMod/>
 			</DomainMod>
 		</DomainMods>
-		<YieldModifiers/>
+		<YieldModifiers>
+			<YieldModifier>
+				<YieldType/>
+				<iYieldMod/>
+			</YieldModifier>
+		</YieldModifiers>
 		<YieldDemands class="Dir" child="YieldDemand">
 			<YieldDemand class="Dir" child="YieldType">
 				<YieldType class="Type" type="YieldInfo" none="false"/>
@@ -1242,7 +1295,12 @@
 				<iChange/>
 			</YieldChange>
 		</YieldChanges>
-		<BonusYieldChanges/>
+		<BonusYieldChanges>
+			<BonusYieldChange>
+				<YieldType/>
+				<iChange/>
+			</BonusYieldChange>
+		</BonusYieldChanges>
 		<bLandYieldChanges/>
 		<bWaterYieldChanges/>
 		<iBombardRate/>
