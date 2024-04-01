@@ -88620,7 +88620,7 @@
 			<iAIValue>300</iAIValue>
 			<iGenericParameter1>UNITCLASS_MOUNTED_CONQUISTADOR</iGenericParameter1>
 			<iGenericParameter2>1</iGenericParameter2>
-			<iGenericParameter3>1000</iGenericParameter3>
+			<iGenericParameter3>200</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
