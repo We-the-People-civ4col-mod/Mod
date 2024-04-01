@@ -5479,4 +5479,54 @@
 		<German>[ICON_BULLET]Einige Ureinwohner sind wütend über Eure Reaktion. Sie wollen beweisen wie wertvoll sie sind und werden Euch angreifen.</German>
 		<Russian>[ICON_BULLET]Некоторых туземцев не устраивает ваша реакция. Они хотят доказать, насколько они хороши и нападут на вас.</Russian>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER</Tag>
+		<English>A failed native trader has found his way back to civilization from the wilderness.</English>
+		<German>Ein gescheiterter Ureinwohnerhändler hat aus der Wildnis zurück in die Zivilisation gefunden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER</Tag>
+		<English>Milord, a [COLOR_HIGHLIGHT_TEXT]failed native trader[COLOR_REVERT] has returned from the wilderness to the colonies. What a blessing. Now that he has recovered, he is ready to go back to the natives. Trade is simply in his blood.</English>
+		<German>Milord, ein [COLOR_HIGHLIGHT_TEXT]gescheiterter Ureinwohnerhändler[COLOR_REVERT] hat aus der Wildnis zurück in die Kolonien gefunden. Welch ein Segen. Nachdem er sich erholt hat, ist er bereit nochmals zu den Ureinwohnern aufzubrechen. Handel liegt ihm einfach im Blut.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER_1</Tag>
+		<English>Excellent, that makes me happy. Let's equip him with new goods and then send him off again. Hopefully he'll be more successful this time.</English>
+		<German>Hervorragend, das freut mich. Statten wir ihn mit neuen Waren aus und senden ihn dann wieder los. Hoffentlich ist der dieses Mal erfolgreicher.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER_2</Tag>
+		<English>That's pointless. We shouldn't waste money on this. Put him somewhere in the colony.</English>
+		<German>Das ist doch sinnlos. Dafür sollten wir kein Geld verschwenden. Bringt ihn irgendwo in der Kolonie unter.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FALIED_TRADER_CHANGE_HELP</Tag>
+		<English>[ICON_BULLET]A failed native trader becomes an experienced native trader again.</English>
+		<German>[ICON_BULLET]Ein gescheiterter Ureinwohnerhändler wird wieder zu einem erfahrenen Ureinwohnerhändler.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY</Tag>
+		<English>A failed missionary has found his way back to civilization from the wilderness.</English>
+		<German>Ein gescheiterter Missionar hat aus der Wildnis zurück in die Zivilisation gefunden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY</Tag>
+		<English>Milord, a [COLOR_HIGHLIGHT_TEXT]failed missionary[COLOR_REVERT] has returned from the wilderness to the colonies. What a blessing. Now that he has recovered, he is ready to go back to the natives. Proclaiming the word of God is simply in his blood.</English>
+		<German>Milord, ein [COLOR_HIGHLIGHT_TEXT]gescheiterter Missionar[COLOR_REVERT] hat aus der Wildnis zurück in die Kolonien gefunden. Welch ein Segen. Nachdem er sich erholt hat, ist er bereit nochmals zu den Ureinwohnern aufzubrechen. Das Wort Gottes zu verkünden liegt ihm einfach im Blut.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY_1</Tag>
+		<English>Excellent, that makes me happy. Let's equip him with new clothes and supplies and then send him off again. Hopefully he'll be more successful this time.</English>
+		<German>Hervorragend, das freut mich. Statten wir ihn mit neuen Gewändern und Vorräten aus und senden ihn dann wieder los. Hoffentlich ist der dieses Mal erfolgreicher.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY_2</Tag>
+		<English>That's pointless. We shouldn't waste money on this. Put him somewhere in the colony.</English>
+		<German>Das ist doch sinnlos. Dafür sollten wir kein Geld verschwenden. Bringt ihn irgendwo in der Kolonie unter.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FALIED_MISSIONARY_CHANGE_HELP</Tag>
+		<English>[ICON_BULLET]A failed missionary becomes a christian missionary again.</English>
+		<German>[ICON_BULLET]Ein gescheiterter Missionar wird wieder zu einem erfahrenen Missionar.</German>
+	</TEXT>		
 </Civ4GameText>

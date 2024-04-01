@@ -8026,6 +8026,11 @@ getHelpDiscoveryNoNewScout = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_NON
 
 getHelpDiscoveryNewScout = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_NEW_SCOUT_HELP")
 
+getHelpDiscoveryFailedTraderChange = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_FALIED_TRADER_CHANGE_HELP")
+
+getHelpDiscoveryFailedMissionaryChange = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_FALIED_MISSIONARY_CHANGE_HELP")
+
+
 ######## Slave Hunter Offers Service ###########
 
 def checkRunawaySlavesOnAdjacentPlotOfCity(argsList): ### When you copy rename specically for your actuall EventTrigger
