@@ -5399,84 +5399,84 @@
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Tag>
 		<English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] treasure column was attacked by a roving band. Can the militiamen defend it?</English>
 		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Schatzkolonne wurde von einer vagabundierenden Bande angegriffen. Ob die Miliz ihn verteidigen kann?</German>
-		<Russian>йцукен</Russian>
+		<Russian>Ходят слухи, что [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] обоз с сокровищами подверглась нападению бродячей банды. Смогут ли ополченцы защитить его?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Tag>
 		<English>Lured by the prospects of rich takings, a band of roving adventurers has attacked a [COLOR_HIGHLIGHT_TEXT]treasure column[COLOR_REVERT]. They're beggarly and lack everything - and so they want our gold - if we can't stop them!</English>
 		<German>Angelockt von den Aussichten auf reiche Beute hat eine Bande umherstreifender Abenteurer eine [COLOR_HIGHLIGHT_TEXT]Schatzkolonne[COLOR_REVERT] angegriffen. Die Banditen sind arm und es fehlt ihnen an allem - und daher wollen sie unser Gold - wenn wir es nicht verhindern können!</German>
-		<Russian>йцукен</Russian>
+		<Russian>Соблазненная перспективой богатой добычи, группа искателей приключений напала на [COLOR_HIGHLIGHT_TEXT]обоз с сокровищами[COLOR_REVERT]. У этих нищих бродяг за душой ни гроша и поэтому они ни перед чем не остановятся, чтобы заполучить наше золото, если мы не остановим их!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Tag>
 		<English>We will never go down without a fight!</English>
 		<German>Wir werden den Schatz beschützen!</German>
-		<Russian>йцукен</Russian>
+		<Russian>Мы ни за что не сдадимся без боя!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_ATTACK_TREASURE_2</Tag>
 		<English>Give them a share without a fight, then maybe they'll let us move on with the rest!</English>
 		<German>Gebt ihnen kampflos einen Anteil, dann lassen Sie uns vielleicht mit dem Rest weiterziehen!</German>
-		<Russian>йцукен</Russian>
+		<Russian>Давайте дадим этим бедолагам небольшую часть сокровищ и будем надеяться, что они позволят нам уйти с оставшимися.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_TREASURE_ATTACK_HELP</Tag>
 		<English>A band of roving adventurers attacks the treasure column. A few brave militiamen and guards defend it.</English>
 		<German>Eine Bande umherstreifender Abenteurer greift die Schatzkolonne an. Ein paar mutige Milizionäre und Wachen verteidigen ihn.</German>
-		<Russian>йцукен</Russian>
+		<Russian>Группа бродячих искателей приключений нападает на обоз с сокровищами. Его защищают несколько храбрых ополченцев и охранников.</Russian>
 	</TEXT>
   <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_BRAVE_FELLOWS</Tag>
 		<English>Your expedition has entered a Native village. The natives are thrilled by your strange garments and stories of the adventures they have experienced. Some warriors want to join your expedition. What would you do?</English>
 		<German>Euere Expedition hat ein Dorf der Ureinwohner betreten. Die Ureinwohner sind begeistert von Euren fremdartigen Gewändern und Geschichten von den erlebten Abenteuern. Einige Krieger wollen sich Euch anschließen. Was wollt Ihr tun?</German>
-		<Russian>йцукен</Russian>
+		<Russian>Ваша экспедиция вошла в деревню индейцев. Туземцы в восторге от странных одежд и рассказов о приключениях, которые пережили их гости. Некоторые воины жаждут приключений и хотят присоединиться к экспедиции. Как нам поступить?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_1</Tag>
 		<English>We will accept the warriors into our ranks. We can make good use of them. Give them some of our clothes as a symbol of friendship.</English>
 		<German>Wir werden die Krieger in unsere Reihen aufnehmen. Wir können sie gut gebrauchen. Gebt Ihnen einige unserer Kleider als Zeichen der Freundschaft.</German>
-		<Russian>йцукен</Russian>
+		<Russian>Мы примем воинов в наши ряды. Думаю, они могут нам пригодится. Подарите индейцам что-нибудь из нашей одежды в знак дружбы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_1_News</Tag>
 		<English>Some warriors have joined your expedition.</English>
 		<German>Einige Krieger haben sich Eurer expedition angeschlossen.</German>
-		<Russian>йцукен</Russian>
+		<Russian>К вашей экспедиции присоединились несколько индейских воинов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_2</Tag>
 		<English>Send them away, we don't need Indians in our ranks. They only cause trouble and want to spy on us.</English>
 		<German>Schickt sie weg, wir brauchen keine Indianer in unseren Reihen. Die machen doch nur Ärger und wollen uns ausspionieren.</German>
-		<Russian>йцукен</Russian>
+		<Russian>Гоните их прочь, нам не нужны индейцы в отряде. Они только создают проблемы и, возможно, хотят шпионить за нами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_2_News</Tag>
 		<English>The natives are angry about the behavior of an expedition.</English>
 		<German>Die Ureinwohner sind über das Verhalten einer Expedition verärgert.</German>
-		<Russian>йцукен</Russian>
+		<Russian>Индейцы возмущены поведением членов экспедиции.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_3</Tag>
 		<English>Tell them the offer honors us, but they should rather stay at home and protect their village. Perhaps they can tell us something helpful about the area here?</English>
 		<German>Sagt Ihnen das Angebot ehrt uns, aber sie sollten lieber zuhause bleiben und ihr Dorf beschützen. Vielleicht können sie uns aber etwas hilfreiches über die Gegend hier berichten?</German>
-		<Russian>йцукен</Russian>
+		<Russian>Скажите вождю, что мы высоко ценим их предложение, но воинам лучше остаться дома и защищать свою деревню. Но, может быть, они смогут рассказать нам что-нибудь полезное об окружающей местности?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_3_News</Tag>
 		<English>An expedition makes friends with some Natives.</English>
 		<German>Eine Expedition freundet sich mit einigen Ureinwohnern an.</German>
-		<Russian>йцукен</Russian>
+		<Russian>Экспедиция заводит дружбу с индейцами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_NEW_SCOUT_HELP</Tag>
 		<English>[ICON_BULLET]Some natives will join you, allowing you to split up the expedition.</English>
 		<German>[ICON_BULLET]Einige Ureinwohner werden sich Euch anschließen, wodurch Ihr die Expedition aufteilen könnt.</German>
-		<Russian>йцукен</Russian>
+		<Russian>[ICON_BULLET]К вам присоединятся несколько индейцев туземцы, что позволит разделить экспедицию на несколько отрядов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_NONEW_SCOUT_HELP</Tag>
 		<English>[ICON_BULLET]Some natives are angry at your reaction. They want to prove how valuable they are and will attack you.</English>
 		<German>[ICON_BULLET]Einige Ureinwohner sind wütend über Eure Reaktion. Sie wollen beweisen wie wertvoll sie sind und werden Euch angreifen.</German>
-		<Russian>йцукен</Russian>
+		<Russian>[ICON_BULLET]Некоторых туземцев не устраивает ваша реакция. Они хотят доказать, насколько они хороши и нападут на вас.</Russian>
 	</TEXT>
 </Civ4GameText>
