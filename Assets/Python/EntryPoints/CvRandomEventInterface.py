@@ -8020,6 +8020,12 @@ getHelpDiscoveryOxcart = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_START_O
 
 getHelpDiscoveryMutiny = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_MUTINY_HELP")
 
+getHelpDiscoveryTreasureAttack = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_TREASURE_ATTACK_HELP")
+
+getHelpDiscoveryNoNewScout = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_NONEW_SCOUT_HELP")
+
+getHelpDiscoveryNewScout = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_NEW_SCOUT_HELP")
+
 ######## Slave Hunter Offers Service ###########
 
 def checkRunawaySlavesOnAdjacentPlotOfCity(argsList): ### When you copy rename specically for your actuall EventTrigger

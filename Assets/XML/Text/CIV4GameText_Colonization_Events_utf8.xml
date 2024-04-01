@@ -5306,8 +5306,8 @@
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_FEVER</Tag>
-		<English>Milord, our expedition has reached swampy, impenetrable jungle. The mosquitoes are buzzing around the men's heads and they bite like arrows. It's probably called malaria. The men and even the animals are weakened and need to rest for a while.</English>
-		<German>Milord, unsere Expedition hat sumpfigen, undurchdringlichen Urwald erreicht. Die Mücken schwirren nur so um die Köpfe der Männer herum und sie stechen wie Pfeile. Man nennt es wohl Malaria. Die Männer und sogar die Tiere sind geschwächt und müssen sich eine Weile ausruhen.</German>
+		<English>Milord, our expedition has reached swampy, impenetrable jungle. The mosquitoes are buzzing around the men's heads and they bite like arrows. It's probably called [COLOR_HIGHLIGHT_TEXT]malaria[COLOR_REVERT]. The men and even the animals are weakened and need to rest for a while.</English>
+		<German>Milord, unsere Expedition hat sumpfigen, undurchdringlichen Urwald erreicht. Die Mücken schwirren nur so um die Köpfe der Männer herum und sie stechen wie Pfeile. Man nennt es wohl [COLOR_HIGHLIGHT_TEXT]Malaria[COLOR_REVERT]. Die Männer und sogar die Tiere sind geschwächt und müssen sich eine Weile ausruhen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FEVER</Tag>
@@ -5322,12 +5322,12 @@
    <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_DESERT</Tag>
 		<English>Milord, our expedition has reached a desert and has only a small supply of water. The animals must be spared. The expedition is making slow progress.</English>
-		<German>Milord, unsere Expedition hat eine Wüste erreicht und nur geringe Wasservorräte dabei. Die Tiere müssen geschont werden. Die Expedition kommt nur langsam vorran.</German>
+		<German>Milord, unsere Expedition hat eine Wüste erreicht und nur geringe [COLOR_HIGHLIGHT_TEXT]Wasservorräte[COLOR_REVERT] dabei. Die Tiere müssen geschont werden. Die Expedition kommt nur langsam vorran.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_DESERT</Tag>
-		<English>Well, we have no choice. Drink as little as possible and give the rest to the horses. We're lost without them. Spread out in the area and look for a watering hole.</English>
-		 <German>Nun gut, wir haben keine Wahl. Trinkt so wenig wie möglich und gebt den Rest den Pferden. Ohne sie sind wir verloren. Verteilt Euch in der Gegend und sucht nach einer Wasserstelle.</German>
+		<English>Well, we have no choice. Drink as little as possible and give the rest to the horses. We're lost without them. Spread out in the area and look for a [COLOR_HIGHLIGHT_TEXT]watering hole[COLOR_REVERT].</English>
+		 <German>Nun gut, wir haben keine Wahl. Trinkt so wenig wie möglich und gebt den Rest den Pferden. Ohne sie sind wir verloren. Verteilt Euch in der Gegend und sucht nach einer [COLOR_HIGHLIGHT_TEXT]Wasserstelle[COLOR_REVERT].</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_ATTACKED</Tag>
@@ -5336,8 +5336,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_ATTACKED_1</Tag>
-		<English>Milord, our epedition was ambushed by hostile natives on the way through this vast new continent in search of a campsite!</English>
-		<German>Milord, unsere Epedition wurde auf dem Weg durch diesen riesigen neuen Kontinent auf der Suche nach einem Lagerplatz aus dem Hinterhalt von Wilden angegriffen!</German>
+		<English>Milord, our epedition was [COLOR_HIGHLIGHT_TEXT]ambushed[COLOR_REVERT] by hostile natives on the way through this vast new continent in search of a campsite!</English>
+		<German>Milord, unsere Epedition wurde auf dem Weg durch diesen riesigen neuen Kontinent auf der Suche nach einem Lagerplatz aus dem [COLOR_HIGHLIGHT_TEXT]Hinterhalt[COLOR_REVERT] von Wilden angegriffen!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_ATTACKED_1</Tag>
@@ -5366,7 +5366,77 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_MUTINY_HELP</Tag>
-		<English>[ICON_BULLET]Some of our men will mutiny and fight against us!</English>
-		<German>[ICON_BULLET]Einige unserer Männer werden meutern und gegen uns kämpfen!</German>
+		<English>[ICON_BULLET]Some of our men will [COLOR_HIGHLIGHT_TEXT]mutiny[COLOR_REVERT] and fight against us!</English>
+		<German>[ICON_BULLET]Einige unserer Männer werden [COLOR_HIGHLIGHT_TEXT]meutern[COLOR_REVERT] und gegen uns kämpfen!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Tag>
+		<English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] treasure column was attacked by a roving band. Can the militiamen defend it?</English>
+		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Schatzkolonne wurde von einer vagabundierenden Bande angegriffen. Ob die Miliz ihn verteidigen kann?</German>
+	 </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Tag>
+		<English>Lured by the prospects of rich takings, a band of roving adventurers has attacked a [COLOR_HIGHLIGHT_TEXT]treasure column[COLOR_REVERT]. They're beggarly and lack everything - and so they want our gold - if we can't stop them!</English>
+		<German>Angelockt von den Aussichten auf reiche Beute hat eine Bande umherstreifender Abenteurer eine [COLOR_HIGHLIGHT_TEXT]Schatzkolonne[COLOR_REVERT] angegriffen. Die Banditen sind arm und es fehlt ihnen an allem - und daher wollen sie unser Gold - wenn wir es nicht verhindern können!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Tag>
+		<English>We will never go down without a fight!</English>
+		<German>Wir werden den Schatz beschützen!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_ATTACK_TREASURE_2</Tag>
+		<English>Give them a share without a fight, then maybe they'll let us move on with the rest!</English>
+		<German>Gebt ihnen kampflos einen Anteil, dann lassen Sie uns vielleicht mit dem Rest weiterziehen!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_TREASURE_ATTACK_HELP</Tag>
+		<English>A band of roving adventurers attacks the treasure column. A few brave militiamen and guards defend it.</English>
+		<German>Eine Bande umherstreifender Abenteurer greift die Schatzkolonne an. Ein paar mutige Milizionäre und Wachen verteidigen ihn.</German>
+	</TEXT>
+  <TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_BRAVE_FELLOWS</Tag>
+		<English>Your expedition has entered a Native village. The natives are thrilled by your strange garments and stories of the adventures they have experienced. Some warriors want to join your expedition. What would you do?</English>
+		<German>Euere Expedition hat ein Dorf der Ureinwohner betreten. Die Ureinwohner sind begeistert von Euren fremdartigen Gewändern und Geschichten von den erlebten Abenteuern. Einige Krieger wollen sich Euch anschließen. Was wollt Ihr tun?</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_1</Tag>
+		<English>We will accept the warriors into our ranks. We can make good use of them. Give them some of our clothes as a symbol of friendship.</English>
+		<German>Wir werden die Krieger in unsere Reihen aufnehmen. Wir können sie gut gebrauchen. Gebt Ihnen einige unserer Kleider als Zeichen der Freundschaft.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_1_News</Tag>
+		<English>Some warriors have joined your expedition.</English>
+		<German>Einige Krieger haben sich Eurer expedition angeschlossen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_2</Tag>
+		<English>Send them away, we don't need Indians in our ranks. They only cause trouble and want to spy on us.</English>
+		<German>Schickt sie weg, wir brauchen keine Indianer in unseren Reihen. Die machen doch nur Ärger und wollen uns ausspionieren.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_2_News</Tag>
+		<English>The natives are angry about the behavior of an expedition.</English>
+		<German>Die Ureinwohner sind über das Verhalten einer Expedition verärgert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_3</Tag>
+		<English>Tell them the offer honors us, but they should rather stay at home and protect their village. Perhaps they can tell us something helpful about the area here?</English>
+		<German>Sagt Ihnen das Angebot ehrt uns, aber sie sollten lieber zuhause bleiben und ihr Dorf beschützen. Vielleicht können sie uns aber etwas hilfreiches über die Gegend hier berichten?</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_3_News</Tag>
+		<English>An expedition makes friends with some Natives.</English>
+		<German>Eine Expedition freundet sich mit einigen Ureinwohnern an.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_NEW_SCOUT_HELP</Tag>
+		<English>[ICON_BULLET]Some natives will join you, allowing you to split up the expedition.</English>
+		<German>[ICON_BULLET]Einige Ureinwohner werden sich Euch anschließen, wodurch Ihr die Expedition aufteilen könnt.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_NONEW_SCOUT_HELP</Tag>
+		<English>[ICON_BULLET]Some natives are angry at your reaction. They want to prove how valuable they are and will attack you.</English>
+		<German>[ICON_BULLET]Einige Ureinwohner sind wütend über Eure Reaktion. Sie wollen beweisen wie wertvoll sie sind und werden Euch angreifen.</German>
 	</TEXT>
 </Civ4GameText>

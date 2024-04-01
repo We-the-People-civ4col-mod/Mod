@@ -38033,8 +38033,8 @@
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
 			<iPercentGamesActive>100</iPercentGamesActive>
-			<iWeight>200</iWeight>
-			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<iWeight>600</iWeight>
+			<bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>0</iMinTreasury>
@@ -38049,7 +38049,7 @@
 			</UnitsRequired>
 			<iNumUnits>1</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
-			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDamagedWeight>1</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>1</bUnitsOnPlot>
@@ -39018,6 +39018,154 @@
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
 			<PythonCanDo>canTriggerDiscovery</PythonCanDo>
+			<PythonCanDoCity/>
+			<PythonCanDoUnit/>
+			<PythonCallback/>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_DISCOVERY_EVENTS_ATTACK_TREASURE</Type>
+			<WorldNewsTexts>
+				<Text>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Text>
+			</WorldNewsTexts>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>500</iWeight>
+			<bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>500</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired>
+				<UnitClass>UNITCLASS_TREASURE</UnitClass>
+			</UnitsRequired>
+			<iNumUnits>1</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>1</iUnitExperienceWeight>
+			<bUnitsOnPlot>1</bUnitsOnPlot>
+			<BuildingsRequired/>
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>1</iNumPlotsRequired>
+			<bOwnPlot>0</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired>
+				<FeatureType>FEATURE_JUNGLE</FeatureType>
+				<FeatureType>FEATURE_MANGROVE</FeatureType>
+				<FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
+				<FeatureType>FEATURE_FOREST</FeatureType>
+				<FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
+				<FeatureType>FEATURE_DENSE_FOREST</FeatureType>
+				<FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
+				<FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
+			</FeaturesRequired>
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
+			<Events>
+				<Event>EVENT_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Event>
+				<Event>EVENT_DISCOVERY_EVENTS_ATTACK_TREASURE_2</Event>
+			</Events>
+			<PrereqEvents/>
+			<bPrereqEventPlot>0</bPrereqEventPlot>
+			<bRecurring>1</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>0</bGlobal>
+			<bPickPlayer>0</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>0</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>0</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo>isPlayable</PythonCanDo>
+			<PythonCanDoCity/>
+			<PythonCanDoUnit/>
+			<PythonCallback/>
+		</EventTriggerInfo>
+		<EventTriggerInfo>
+			<Type>EVENTTRIGGER_DISCOVERY_EVENTS_BRAVE_FELLOWS</Type>
+			<WorldNewsTexts/>
+			<TriggerTexts>
+				<TriggerText>
+					<Text>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_BRAVE_FELLOWS</Text>
+					<Era>NONE</Era>
+				</TriggerText>
+			</TriggerTexts>
+			<bTutorial>0</bTutorial>
+			<bSinglePlayer>0</bSinglePlayer>
+			<EventArt>,Art/EventImages/scout.dds</EventArt>
+			<iPercentGamesActive>100</iPercentGamesActive>
+			<iWeight>1000</iWeight>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
+			<eCivic>NONE</eCivic>
+			<iMinTreasury>0</iMinTreasury>
+			<iMinPopulation>0</iMinPopulation>
+			<iMaxPopulation>0</iMaxPopulation>
+			<iMinMapLandmass>0</iMinMapLandmass>
+			<iMinOurLandmass>0</iMinOurLandmass>
+			<iMaxOurLandmass>-1</iMaxOurLandmass>
+			<eMinDifficulty>NONE</eMinDifficulty>
+			<UnitsRequired>
+				<UnitClass>UNITCLASS_SCOUT</UnitClass>
+			</UnitsRequired>
+			<iNumUnits>1</iNumUnits>
+			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iUnitDamagedWeight>0</iUnitDamagedWeight>
+			<iUnitDistanceWeight>0</iUnitDistanceWeight>
+			<iUnitExperienceWeight>0</iUnitExperienceWeight>
+			<bUnitsOnPlot>1</bUnitsOnPlot>
+			<BuildingsRequired/>
+			<iNumBuildings>0</iNumBuildings>
+			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
+			<iNumPlotsRequired>1</iNumPlotsRequired>
+			<bOwnPlot>0</bOwnPlot>
+			<ePlotType>NONE</ePlotType>
+			<FeaturesRequired/> 
+			<TerrainsRequired/>
+			<ImprovementsRequired/>
+			<RoutesRequired/>
+			<Events>
+				<Event>EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_1</Event>
+				<Event>EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_2</Event>
+				<Event>EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_3</Event>
+			</Events>
+			<PrereqEvents/>
+			<bPrereqEventPlot>0</bPrereqEventPlot>
+			<bRecurring>1</bRecurring>
+			<bTeam>0</bTeam>
+			<bGlobal>0</bGlobal>
+			<bPickPlayer>1</bPickPlayer>
+			<bOtherPlayerWar>0</bOtherPlayerWar>
+			<bOtherPlayerAI>0</bOtherPlayerAI>
+			<bOtherPlayerNative>1</bOtherPlayerNative>
+			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
+			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
+			<bPickCity>0</bPickCity>
+			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
+			<bShowPlot>1</bShowPlot>
+			<bFrontPopup>0</bFrontPopup>
+			<iCityFoodWeight>0</iCityFoodWeight>
+			<PythonCanDo>isNativeVillage</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
