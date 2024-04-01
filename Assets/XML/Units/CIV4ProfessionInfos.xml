@@ -5162,7 +5162,7 @@
 			<iCombatChange>6</iCombatChange>
 			<iBarracksSpaceNeededChange>1</iBarracksSpaceNeededChange>
 			<iMovesChange>2</iMovesChange>
-			<bMoveIntoPeak>1</bMoveIntoPeak>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<iWorkRate>0</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>
 			<iNativeTradeRate>0</iNativeTradeRate>
