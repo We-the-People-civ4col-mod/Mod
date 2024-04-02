@@ -2641,7 +2641,7 @@
 		<English>Some men from the nearby wilderness haved come into our fort to buy supplies. They know the area and could be very useful to us.</English>
 		<French>Des hommes vivant dans les terres sauvages sont venu pour s'approvisionner dans nos forts. Ils semblent bien connaître les environs et pourraient nous être utiles.</French>
 		<German>Einige Männer, die in der nahegelegenen Wildnis leben, sind in unser Fort gekommen, um Vorräte zu kaufen. Es scheint, als hätten sie sehr viel Wissen über die Gegend. Daher könnten sie uns sehr nützlich sein.</German>
-		<Russian>Несколько человек из близлежащей глуши пришли в наш форт, чтобы купить припасы. Они знают местность и могут быть нам очень полезны.</Russian>
+		<Russian>Несколько человек из диких мест пришли в наш форт, чтобы купить припасы. Они знают местность и могут быть нам очень полезны.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MONASTERY_TRADING_FOOD</Tag>
@@ -5267,49 +5267,49 @@
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_1</Tag>
 		<English>You are right. We need strong and adventurous men who will follow us to hell and back. The prospect of adventure and gold should attract exactly the men we need, even for a small handout.</English>
 		 <German>Ihr habt Recht. Wir brauchen kampfkräftige und abenteuerlustige Männer, die uns bis in die Hölle folgen und wieder zurück. Die Aussicht auf Abenteuer und Gold sollte auch für ein kleines Handgeld genau die Männer anlocken, die wir brauchen.</German>
-		<Russian>Ты прав. Нам нужны сильные и предприимчивые люди, которые последуют за нами в ад и обратно. Перспектива приключений и золота должна привлечь именно тех людей, которые нам нужны, даже за небольшую подачку.</Russian>
+		<Russian>Да, нам нужны сильные и храбрые люди, которые готовы совершить рисковую прогулку даже в ад. Жажда наживы и приключений всегда привлекает таких смельчаков, даже за небольшой барыш.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_2</Tag>
 		<English>You are right. But even more important than the sword is our steadfast faith. We should take missionaries with us on the expedition who can proclaim the word of God to all the heathens we will meet along the way. God will then place his protective hand over us.</English>
 		<German>Ihr habt Recht. Aber noch wichtiger als das Schwert ist unser unterschütterlicher Glaube. Wir sollten Missionare auf die Reise mitnehmen, die das Wort Gottes allen Heiden verkünden können, denen wir unterwegs begegnen werden. Gott wird damit seine schützende Hand über uns legen.</German>
-		<Russian>Ты прав. Но еще более важным, чем меч, является наша непоколебимая вера. В экспедицию нам следует взять с собой миссионеров, которые смогут провозглашать слово Божье всем язычникам, которых мы встретим на своем пути. Тогда Бог возложит на нас Свою защитную руку.</Russian>
+		<Russian>В тяжёлых странствиях важен не только добрый меч, но и сильный дух. Возьмём с собой миссионеров. Своими молитвами они помогут нам пережить невзгоды, а дикарей обратят в Истинную Веру. Господь всемогущий да пребудет с нами!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_3</Tag>
 		<English>You are right. But we have not come to this New World to plunder and murder. We want to trade with the inhabitants of this beautiful land. The prospect of profit will excite the traders. Hire a few traders.</English>
 		<German>Ihr habt Recht. Aber wir sind nicht in diese Neue Welt gekommen um zu plündern und zu morden. Wir wollen Handel mit den Bewohnern dieses schönen Landes treiben. Die Aussicht auf Profit wird die Händler begeistern. Heuert ein paar Händler an.</German>
-		<Russian>Ты прав. Но мы пришли в этот Новый Свет не для того, чтобы грабить и убивать. Мы хотим торговать с жителями этой прекрасной земли. Перспектива прибыли будет волновать трейдеров. Наймите несколько торговцев.</Russian>
+		<Russian>Мы пришли сюда не грабить и убивать, а преумножить наше состояние. Перспектива большой прибыли должна привлечь множество торговцев. Наймите нескольких из них.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_4</Tag>
 		<English>You are right. But I don't expect any resistance from the natives. Curiosity will guide these simple natures. All we have to do is pick up the treasures or talk them out of them. Let's take a wagon with us to transport the treasures and our luggage.</English>
 		<German>Ihr habt Recht. Aber ich erwarte keine Gegenwehr von den Ureinwohnern. Die Neugier wird diese einfachen Naturen leiten. Wir brauchen die Schätze nur aufzusammeln oder sie ihnen abzuschwatzen. Nehmen wir einen Wagen mit, mit dem wir die Schätze und unser Gepäck transportieren können.</German>
-		<Russian>Ты прав. Но я не жду сопротивления со стороны туземцев. Любопытство будет руководить этими простыми натурами. Все, что нам нужно сделать, это забрать сокровища или отговорить их от них. Давайте возьмем с собой повозку, чтобы перевезти сокровища и наш багаж.</Russian>
+		<Russian>Ну какие опасности? Посмотрите на этих милых дикарей - они словно любопытные дети. Все, что нам нужно сделать, это уговорить их расстаться со своими сокровищами, цену которым они даже не представляют. Нам нужна повозка, чтобы мы смогли собрать как можно больше подарков в деревнях индейцев.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_CONQUISTADOR_HELP</Tag>
 		<English>[ICON_BULLET]Mounted conquistadores join our expedition.</English>
 		<German>[ICON_BULLET]Berittene Konquistadoren schließen sich uns an.</German>
-		<Russian>[ICON_BULLET]Конные конкистадоры присоединяются к нашей экспедиции.</Russian>
+		<Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]Конные конкистадоры[COLOR_REVERT] присоединяются к нашей экспедиции.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_MISSIONARY_HELP</Tag>
 		<English>[ICON_BULLET]Missionaries join our expedition.</English>
 		<German>[ICON_BULLET]Missionare schließen sich uns an.</German>
-		<Russian>[ICON_BULLET]Миссионеры присоединяются к нашей экспедиции.</Russian>
+		<Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]Миссионеры[COLOR_REVERT] присоединяются к нашей экспедиции.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_SEASONED_TRADER_HELP</Tag>
 		<English>[ICON_BULLET]A courageous native trader joins our expedition.</English>
 		<German>[ICON_BULLET]Couragierte Ureinwohnerhändler schließen sich uns an.</German>
-		<Russian>[ICON_BULLET]Отважный торговец с индейцами присоединяется к нашей экспедиции.</Russian>
+		<Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]Отважный торговец с индейцами[COLOR_REVERT] присоединяется к нашей экспедиции.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_Oxcart_HELP</Tag>
 		<English>[ICON_BULLET]An oxcart joins the expedition.</English>
 		<German>[ICON_BULLET]Ein Oxenkarren schließt sich uns an.</German>
-		<Russian>[ICON_BULLET]Повозка с волами присоединяются к нашей экспедиции.</Russian>
+		<Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]Воловья упряж[COLOR_REVERT] присоединяется к нашей экспедиции.</Russian>
 	</TEXT>
   <TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_FEVER</Tag>
@@ -5321,13 +5321,13 @@
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_FEVER</Tag>
 		<English>Milord, our expedition has reached swampy, impenetrable jungle. The mosquitoes are buzzing around the men's heads and they bite like arrows. It's probably called [COLOR_HIGHLIGHT_TEXT]malaria[COLOR_REVERT]. The men and even the animals are weakened and need to rest for a while.</English>
 		<German>Milord, unsere Expedition hat sumpfigen, undurchdringlichen Urwald erreicht. Die Mücken schwirren nur so um die Köpfe der Männer herum und sie stechen wie Pfeile. Man nennt es wohl [COLOR_HIGHLIGHT_TEXT]Malaria[COLOR_REVERT]. Die Männer und sogar die Tiere sind geschwächt und müssen sich eine Weile ausruhen.</German>
-		<Russian>Милорд, наша экспедиция достигла болотистых, непроходимых джунглей. Тучи комаров жужжат над головами людей и кусают, как стрелы. Вероятно, это называется малярией. Люди и даже животные ослаблены и нуждаются в отдыхе.</Russian>
+		<Russian>Милорд, наша экспедиция достигла непроходимых, болотистых джунглей. Тучи комаров жужжат над головами людей и жалят, как стрелы. Люди и даже животные ослаблены, а у некоторых сильный жар. Кажется, это называется малярией. Нам всем нужен отдых.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FEVER</Tag>
 		<English>Well, we have no choice. Set up a makeshift camp and try to get the men some fresh water and fruit. That's all we can do at the moment.</English>
 		 <German>Nun gut, wir haben keine Wahl. Errichtet ein provisorisches Lager und versucht den Männern frisches Wasser und ein paar Früchte zu beschaffen. Mehr können wir derzeit nicht unternehmen.</German>
-		<Russian>Что ж, у нас нет выбора. Разбейте временный лагерь и дайте пресную воду и фрукты. Это все, что мы можем для них сейчас сделать.</Russian>
+		<Russian>Что ж, у нас нет выбора. Разбейте временный лагерь и выдайте всем по двойной порции рома. Тем, у кого жар, дайте порошок из коры, что подарили нам индейцы. Это все, что мы можем для них сейчас сделать.</Russian>
 	</TEXT>
   <TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_DESERT</Tag>
@@ -5339,7 +5339,7 @@
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_DESERT</Tag>
 		<English>Milord, our expedition has reached a desert and has only a small supply of water. The animals must be spared. The expedition is making slow progress.</English>
 		<German>Milord, unsere Expedition hat eine Wüste erreicht und nur geringe [COLOR_HIGHLIGHT_TEXT]Wasservorräte[COLOR_REVERT] dabei. Die Tiere müssen geschont werden. Die Expedition kommt nur langsam vorran.</German>
-		<Russian>Милорд, наша экспедиция достигла пустыни и имеет лишь небольшой запас воды. Животных надо пощадить. Экспедиция продвигается медленно.</Russian>
+		<Russian>Милорд, наша экспедиция достигла пустыни и имеет лишь небольшой запас воды. Нам нужно поберечь животных и сбавить темп.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_DESERT</Tag>
@@ -5483,50 +5483,60 @@
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER</Tag>
 		<English>A failed native trader has found his way back to civilization from the wilderness.</English>
 		<German>Ein gescheiterter Ureinwohnerhändler hat aus der Wildnis zurück in die Zivilisation gefunden.</German>
+		<Russian>Неудачливый торговец с индейцами нашел путь обратно к цивилизации из дикой местности.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER</Tag>
 		<English>Milord, a [COLOR_HIGHLIGHT_TEXT]failed native trader[COLOR_REVERT] has returned from the wilderness to the colonies. What a blessing. Now that he has recovered, he is ready to go back to the natives. Trade is simply in his blood.</English>
 		<German>Milord, ein [COLOR_HIGHLIGHT_TEXT]gescheiterter Ureinwohnerhändler[COLOR_REVERT] hat aus der Wildnis zurück in die Kolonien gefunden. Welch ein Segen. Nachdem er sich erholt hat, ist er bereit nochmals zu den Ureinwohnern aufzubrechen. Handel liegt ihm einfach im Blut.</German>
+		<Russian>Милорд, [COLOR_HIGHLIGHT_TEXT]неудачливый торговец с индейцами[COLOR_REVERT] вернулся из пустошей в колонию. Какое счастье. И теперь, когда он поправил пошатнувшееся за время скитаний здоровье, он готов вернуться к аборигенам. Он  не может жить без торговли, она у него в крови.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER_1</Tag>
 		<English>Excellent, that makes me happy. Let's equip him with new goods and then send him off again. Hopefully he'll be more successful this time.</English>
 		<German>Hervorragend, das freut mich. Statten wir ihn mit neuen Waren aus und senden ihn dann wieder los. Hoffentlich ist der dieses Mal erfolgreicher.</German>
+		<Russian>Превосходно, это меня радует. Давайте снабдим его новыми товарами и снова отправим к индейцам. Надеюсь, в этот раз он добьётся большего успеха.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER_2</Tag>
 		<English>That's pointless. We shouldn't waste money on this. Put him somewhere in the colony.</English>
 		<German>Das ist doch sinnlos. Dafür sollten wir kein Geld verschwenden. Bringt ihn irgendwo in der Kolonie unter.</German>
+		<Russian>Что за вздор?! Прошлого раза ему было недостаточно? Дайте ему какую-нибудь работу в колонии.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FALIED_TRADER_CHANGE_HELP</Tag>
 		<English>[ICON_BULLET]A failed native trader becomes an experienced native trader again.</English>
 		<German>[ICON_BULLET]Ein gescheiterter Ureinwohnerhändler wird wieder zu einem erfahrenen Ureinwohnerhändler.</German>
+		<Russian>[ICON_BULLET]Неудачливый торговец с индейцами снова становится опытным торговцем.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY</Tag>
 		<English>A failed missionary has found his way back to civilization from the wilderness.</English>
 		<German>Ein gescheiterter Missionar hat aus der Wildnis zurück in die Zivilisation gefunden.</German>
+		<Russian>Неудачливый миссионер нашел путь обратно к цивилизации из дикой местности.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY</Tag>
 		<English>Milord, a [COLOR_HIGHLIGHT_TEXT]failed missionary[COLOR_REVERT] has returned from the wilderness to the colonies. What a blessing. Now that he has recovered, he is ready to go back to the natives. Proclaiming the word of God is simply in his blood.</English>
 		<German>Milord, ein [COLOR_HIGHLIGHT_TEXT]gescheiterter Missionar[COLOR_REVERT] hat aus der Wildnis zurück in die Kolonien gefunden. Welch ein Segen. Nachdem er sich erholt hat, ist er bereit nochmals zu den Ureinwohnern aufzubrechen. Das Wort Gottes zu verkünden liegt ihm einfach im Blut.</German>
+		<Russian>Милорд, [COLOR_HIGHLIGHT_TEXT]неудачливый миссионер[COLOR_REVERT] вернулся из пустошей в колонию. Господь был милостив к нему. И теперь, когда он поправил пошатнувшееся за время скитаний здоровье, он готов вернуться к аборигенам и с новыми силами нести Слово Божье заблудшим душам.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY_1</Tag>
 		<English>Excellent, that makes me happy. Let's equip him with new clothes and supplies and then send him off again. Hopefully he'll be more successful this time.</English>
 		<German>Hervorragend, das freut mich. Statten wir ihn mit neuen Gewändern und Vorräten aus und senden ihn dann wieder los. Hoffentlich ist der dieses Mal erfolgreicher.</German>
+		<Russian>Господь да укрепит дух его. Помогите ему с провиантом и одеждой. Надеюсь, в этот раз он встретит более дружелюбных индейцев.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY_2</Tag>
 		<English>That's pointless. We shouldn't waste money on this. Put him somewhere in the colony.</English>
 		<German>Das ist doch sinnlos. Dafür sollten wir kein Geld verschwenden. Bringt ihn irgendwo in der Kolonie unter.</German>
+		<Russian>Ни в коем случае! Такому набожному человеку не место среди дикарей. Найдите ему работу в колонии.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FALIED_MISSIONARY_CHANGE_HELP</Tag>
 		<English>[ICON_BULLET]A failed missionary becomes a christian missionary again.</English>
 		<German>[ICON_BULLET]Ein gescheiterter Missionar wird wieder zu einem erfahrenen Missionar.</German>
+		<Russian>[ICON_BULLET]Разочаровавшийся миссиоенр снова становится христианским миссионером.</Russian>
 	</TEXT>		
 </Civ4GameText>

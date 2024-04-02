@@ -1415,7 +1415,7 @@
 		<English>Well, then sell them the supplies they came for.</English>
 		<French>Bien. Vendons leurs ce dont ils ont besoin.</French>
 		<German>Dann verkauft ihnen die Vorräte, die sie wollen.</German>
-		<Russian>Ну, тогда продай им припасы, за которыми они пришли.</Russian>
+		<Russian>Продайте им припасы, за которыми они пришли.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MAN_FROM_THE_WILDERNESS_2</Tag>
@@ -1429,7 +1429,7 @@
 		<English>Try to convince them to join our forces as rangers.</English>
 		<French>Essayez de les convaincre de rejoindre nos forces en tant que gardes-forestiers.</French>
 		<German>Versucht sie zu überzeugen, unseren Truppen als Rangers zu dienen.</German>
-		<Russian>Попытайтесь убедить их присоединиться к нашим силам в качестве рейнджеров.</Russian>
+		<Russian>Попытайтесь убедить их присоединиться к нам в качестве рейнджеров.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MINING_ACCIDENT_1</Tag>
