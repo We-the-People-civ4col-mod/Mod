@@ -9166,6 +9166,7 @@
 			<ImprovementsRequired/>
 			<RoutesRequired/>
 			<Events>
+				<Event>EVENT_FIVE_MARKETS_DONE_1</Event>
 				<Event>EVENT_FIVE_MARKETS_DONE_2</Event>
 				<Event>EVENT_FIVE_MARKETS_DONE_3</Event>
 			</Events>

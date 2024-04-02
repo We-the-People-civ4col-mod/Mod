@@ -988,10 +988,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_MARKETS_DONE_1</Tag>
-		<English>They could build a larger market in one of our cities. Thus they will profit as well.</English>
-		<French>Ils peuvent construire un marché encore plus grand dans l'une de nos villes. Les profits générés augmenteront ainsi.</French>
-		<German>Sie sollen in einer unserer Städte den vorhandenen Marktplatz ausbauen. So profitieren sie selbst auch davon.</German>
-		<Russian>Они могли бы построить рынок побольше в одном из наших городов. Таким образом, они также получат прибыль.</Russian>
+		<English>We now have the markets, but we should also expand trade with the natives. They should hire a courageous native trader.</English>
+		<German>Wir haben zwar nun die Marktplätze, aber wir sollten den Handel mit den Ureinwohnern noch zusätzlich ausbauen. Sie sollen einen couragierten Ureinwohnerhändler anheuern.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_MARKETS_DONE_2</Tag>
