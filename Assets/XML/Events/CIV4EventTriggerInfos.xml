@@ -38695,7 +38695,7 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo>canTriggerDiscovery</PythonCanDo>
+			<PythonCanDo>canTriggerDiscoveryStart</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -38992,7 +38992,7 @@
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>1</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
-			<ePlotType>NONE</ePlotType>
+			<ePlotType>PLOT_LAND</ePlotType>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
 			<ImprovementsRequired/>

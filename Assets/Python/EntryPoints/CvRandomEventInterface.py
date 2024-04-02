@@ -911,6 +911,18 @@ def getHelpPeasantWarPrep(argsList):
 
 ######## Discovery Events for Scouts ###########
 
+def canTriggerDiscoveryStart(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return False
+	unit = player.getUnit(kTriggeredData.iUnitId)
+	eScout = gc.getInfoTypeForString("PROFESSION_SCOUT")
+	if unit.getProfession() != eScout:
+		return False
+	return True
+
+
 def canTriggerDiscovery(argsList):
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
