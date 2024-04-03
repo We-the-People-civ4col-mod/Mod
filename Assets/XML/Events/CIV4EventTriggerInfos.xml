@@ -38649,7 +38649,6 @@
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
 			<UnitsRequired>
-				<UnitClass>UNITCLASS_SCOUT</UnitClass>
 				<UnitClass>UNITCLASS_INDENTURED_SERVANT</UnitClass>
 				<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
 				<UnitClass>UNITCLASS_MULATTO</UnitClass>
@@ -38668,7 +38667,7 @@
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>1</iNumPlotsRequired>
-			<bOwnPlot>0</bOwnPlot>
+			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>PLOT_LAND</ePlotType>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
