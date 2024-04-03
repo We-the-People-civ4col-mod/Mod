@@ -1612,7 +1612,7 @@
 		<German>Vor der Küste der [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien wurde eine neue Walschule entdeckt.</German>
 		<Italian>È stata localizzata una nuova fonte di balene davanti alla costa [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Italian>
 		<Spanish>Se ha localizado un nuevo caladero de ballenas en la costa [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT].</Spanish>
-		<Russian>У побережья [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] обнаружены множество [COLOR_SELECTED_TEXT]китов[COLOR_REVERT].</Russian>
+		<Russian>У побережья [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] обнаружено множество [COLOR_SELECTED_TEXT]китов[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WHALEOFATHING_1</Tag>
