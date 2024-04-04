@@ -5538,5 +5538,35 @@
 		<English>[ICON_BULLET]A failed missionary becomes a christian missionary again.</English>
 		<German>[ICON_BULLET]Ein gescheiterter Missionar wird wieder zu einem erfahrenen Missionar.</German>
 		<Russian>[ICON_BULLET]Разочаровавшийся миссиоенр снова становится христианским миссионером.</Russian>
-	</TEXT>		
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_FAKE_NEWS</Tag>
+		<English>News unsettles the public</English>
+		<German>Nachrichten stacheln die Bevölkerung auf.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_FAKE_NEWS_1</Tag>
+		<English>Milord, newspapers are opening in more and more cities and printing presses. Among them, however, were more and more seditious writings which are spreading horror stories about the king. The Crown demands that we intervene!</English>
+		<German>Milord, in immer mehr Städten eröffnen Zeitungen und Druckerpressen. Darunter mischen sich aber auch immer mehr aufrührerische Schriften, die wahre Schauermärchen über den König verbreiten. Die Krone verlangt, dass wir einschreiten!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_1</Tag>
+		<English>We support the revolution. Let the scribblers have their way. Let them stir up the atmosphere a little. </English>
+		<German>Wir unterstützen die Revolution. Lasst die Schreiberlinge gewähren. Sollen sie die Stimmung ruhig ein wenig anheizen. </German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_2</Tag>
+		<English>Excellent, that's what people like to read. But let's not show our support too clearly - not yet.</English>
+		<German>Hervorragend, sowas lesen die Leute eben gerne. Aber zeigen wir unsere Unterstützung mal lieber nicht zu deutlich - noch nicht.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_3</Tag>
+		<English>That is high treason! Long live the king. Let the militia line up and keep order. Let's arrest the ringleaders and make sure that the newspapers only print non-political local news.</English>
+		<German>Das ist Hochverrat! Verhaften wir die Rädelsführer und sorgen dafür, dass die Zeitungen nur noch unpolitische Lokalnachrichten drucken. Mobilisiert die Miliz!</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_4</Tag>
+		<English>That is high treason! Long live the king. Let's arrest the ringleaders and close down at least one newspaper. That will teach the others a lesson.</English>
+		<German>Das ist Hochverrat! Verhaften wir die Rädelsführer und schließen wir mindestens ein Zeitungshaus. Das wird den anderen eine Lehre sein.</German>
+	</TEXT>	
 </Civ4GameText>
