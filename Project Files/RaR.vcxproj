@@ -236,6 +236,7 @@
     <ClCompile Include="DLLSources\FAssert.cpp" />
     <ClCompile Include="DLLSources\FDialogTemplate.cpp" />
     <ClCompile Include="DLLSources\tinyxml2.cpp" />
+    <ClCompile Include="DLLSources\TxtReader.cpp" />
     <ClCompile Include="DLLSources\UserSettings.cpp" />
     <ClCompile Include="DLLSources\XMLLengthSet.cpp" />
     <ClCompile Include="DLLSources\_precompile.cpp" />
@@ -395,6 +396,7 @@
     <ClInclude Include="DLLSources\TBB.h" />
     <ClInclude Include="DLLSources\ThreadOverview.h" />
     <ClInclude Include="DLLSources\tinyxml2.h" />
+    <ClInclude Include="DLLSources\TxtReader.h" />
     <ClInclude Include="DLLSources\UserSettings.h" />
     <ClInclude Include="DLLSources\xmlFiles.h" />
     <ClInclude Include="DLLSources\PlayerHelperFunctions.h" />

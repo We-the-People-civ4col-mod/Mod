@@ -17,6 +17,7 @@
 
 #include "CvSavegame.h"
 #include "SavegameConstants.h"
+#include "TxtReader.h"
 
 // ignore type check for template functions
 // no need to be strict in this file
@@ -1284,6 +1285,16 @@ static void loadTextFiles(std::vector<CvString>& aszFiles, const std::string szL
 //------------------------------------------------------------------------------------------------------
 bool CvXMLLoadUtility::LoadGlobalText()
 {
+	MOD_PROFILE("TXT key loading");
+	// Set the locate to the one needed by the language in question
+	// Sadly this seems to be very much hit or miss on a per computer basis. Sometimes it works and sometimes it doesn't.
+	// If it doesn't work, the user has to change the windows locale manually.
+	setlocale(LC_CTYPE, CvString::format(".%d", CvGameText::getCodePage()).c_str());
+	TxtReader textReader;
+	textReader.readFiles();
+	return true;
+
+
 	const bool DISABLE_VANILLA_TXT = true;
 
 	CvCacheObject* cache = gDLL->createGlobalTextCacheObject("GlobalText.dat");	// cache file name
@@ -1990,6 +2001,7 @@ void CvXMLLoadUtility::SetGlobalUnitScales(float* pfLargeScale, float* pfSmallSc
 void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName, GameTextList& FStringListEnglish, GameTextList& FStringListCurrentLanguage, stdext::hash_map< std::string, bool >& StringList)
 {
 	PROFILE_FUNC();
+
 	logMsg("SetGameText %s\n", szTagName);
 	int i=0;		//loop counter - Index into pTextInfo
 

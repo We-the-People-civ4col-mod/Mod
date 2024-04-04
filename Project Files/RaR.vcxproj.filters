@@ -508,6 +508,9 @@
     <ClCompile Include="DLLSources\CyXMLAttributes.cpp">
       <Filter>XML Editor</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\TxtReader.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -977,6 +980,9 @@
     </ClInclude>
     <ClInclude Include="DLLSources\TBB.h">
       <Filter>Classes\Threads</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\TxtReader.h">
+      <Filter>CV\Header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
