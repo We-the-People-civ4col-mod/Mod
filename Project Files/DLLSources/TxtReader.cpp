@@ -55,10 +55,20 @@ void TxtReader::readFile(const char* pFile)
 
 	for (; root != NULL; root = root->NextSiblingElement("TEXT"))
 	{
-		tinyxml2::XMLElement* tag = root->FirstChildElement("Tag");
+		bool bFallback = false;
+
+		tinyxml2::XMLElement* tagElement = root->FirstChildElement("Tag");
 		tinyxml2::XMLElement* text = root->FirstChildElement(language);
+		const char* tag = NULL;
+		
+		if (tagElement != NULL)
+		{
+			tag = tagElement->GetText();
+		}
+		
 		if (text == NULL)
 		{
+			bFallback = true;
 			text = root->FirstChildElement("English");
 		}
 		if (text == NULL || tag == NULL)
@@ -75,10 +85,10 @@ void TxtReader::readFile(const char* pFile)
 			text = text->FirstChildElement("Text");
 		}
 
-		CvWString convertedText = CvGameText::convertFromUTF8(text->GetText(), false, pFile, tag->GetText());
+		CvWString convertedText = CvGameText::convertFromUTF8(text->GetText(), bFallback, pFile, tag);
 		CvWString convertedGender = gender ? CvWString(gender->GetText()) : L"N";
 		CvWString convertedPlural = gender ? CvWString(gender->GetText()) : L"false";
 
-		gDLL->addText(tag->GetText(), convertedText.c_str(), convertedGender, convertedPlural);
+		gDLL->addText(tag, convertedText.c_str(), convertedGender, convertedPlural);
 	}
 }
