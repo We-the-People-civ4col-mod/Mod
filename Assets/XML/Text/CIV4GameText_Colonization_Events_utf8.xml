@@ -1594,7 +1594,7 @@
 		<German>Milord, in den Bergen nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind Minenarbeiter auf seltsame Geröllhaufen gestoßen. Es scheint Jade zu sein. Das satte Grün des Waldes und das seelenvolle Blau des Meeres schimmern in den weichen Steinen.[NEWLINE]Einen haben die Arbeiter den Eingeborenen gezeigt. Ihre Gesichter leuchteten vor Glück, und sie boten ihnen Gold zum Tausch an.</German>
 		<Italian>Signore, nelle montagne vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], i minatori si sono imbattuti in strani cumuli di macerie. Sembra essere giada. Il verde ricco della foresta e l'azzurro intenso del mare brillano nelle pietre morbide. I loro volti si illuminarono di felicità e offrirono loro dell'oro in cambio.</Italian>
 		<Spanish>Excelencia, en las montañas cercanas a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], los mineros han encontrado extraños montones de escombros. Parece ser jade. El verde intenso del bosque y el azul conmovedor del mar brillan en las piedras blandas.[NEWLINE]Los trabajadores mostraron una a los nativos. Sus rostros se iluminaron de felicidad y les ofrecieron oro a cambio.</Spanish>
-		<Russian>Милорд, в горах возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] шахтеры наткнулись на странные груды камней. Кажется, это нефрит. Насыщенная зелень леса и одухотворенная синева моря переливаются в этих камнях.[NEWLINE]Рабочие показали один из них индейцам. Их лица озарились счастьем и они предложили им золото в обмен.</Russian>
+		<Russian>Милорд, в горах возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] шахтеры наткнулись на странные груды камней. Кажется, это нефрит. Насыщенная зелень леса и одухотворенная синева моря переливаются в этих камнях.[NEWLINE]Рабочие показали один из них индейцам. Их лица озарились счастьем и они предложили им золото в обмен на камни.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_JADE_1_LANDMARK</Tag>
@@ -3845,7 +3845,7 @@
 		<English>A Native from a tribe nearby wishes to join our colony.</English>
 		<French>Un indigène d'une tribu voisine souhaite rejoindre notre colonie.</French>
 		<German>Ein Ureinwohner möchte sich Euch schließen.</German>
-		<Russian>Индеец из соседнего племени желает присоединиться к нашей колонии.</Russian>
+		<Russian>Индеец ушёл из племени, чтобы присоединиться к колонистам.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_TOWNHALL_1</Tag>
@@ -5537,36 +5537,42 @@
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FALIED_MISSIONARY_CHANGE_HELP</Tag>
 		<English>[ICON_BULLET]A failed missionary becomes a christian missionary again.</English>
 		<German>[ICON_BULLET]Ein gescheiterter Missionar wird wieder zu einem erfahrenen Missionar.</German>
-		<Russian>[ICON_BULLET]Разочаровавшийся миссиоенр снова становится христианским миссионером.</Russian>
+		<Russian>[ICON_BULLET]Разочаровавшийся миссионер снова становится христианским миссионером.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_FAKE_NEWS</Tag>
 		<English>News unsettles the public</English>
 		<German>Nachrichten stacheln die Bevölkerung auf.</German>
+		<Russian>Новости тревожат общественность</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_FAKE_NEWS_1</Tag>
 		<English>Milord, newspapers are opening in more and more cities and printing presses. Among them, however, were more and more seditious writings which are spreading horror stories about the king. The Crown demands that we intervene!</English>
 		<German>Milord, in immer mehr Städten eröffnen Zeitungen und Druckerpressen. Darunter mischen sich aber auch immer mehr aufrührerische Schriften, die wahre Schauermärchen über den König verbreiten. Die Krone verlangt, dass wir einschreiten!</German>
+		<Russian>Милорд, во все большем количестве городов открываются печатные станки и типографии. Прекрасно, не правда ли? Однако все чаще среди публикуемого стали встречаться статьи, распространяющие ужасные истории о нашем Короле. Корона требует, чтобы мы вмешались!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_1</Tag>
-		<English>We support the revolution. Let the scribblers have their way. Let them stir up the atmosphere a little. </English>
-		<German>Wir unterstützen die Revolution. Lasst die Schreiberlinge gewähren. Sollen sie die Stimmung ruhig ein wenig anheizen. </German>
+		<English>We support the revolution. Let the scribblers have their way. Let them stir up the atmosphere a little.</English>
+		<German>Wir unterstützen die Revolution. Lasst die Schreiberlinge gewähren. Sollen sie die Stimmung ruhig ein wenig anheizen.</German>
+		<Russian>Мы поддерживаем революцию. Пусть писаки добиваются своего. Пусть они немного накачают атмосферу.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_2</Tag>
 		<English>Excellent, that's what people like to read. But let's not show our support too clearly - not yet.</English>
 		<German>Hervorragend, sowas lesen die Leute eben gerne. Aber zeigen wir unsere Unterstützung mal lieber nicht zu deutlich - noch nicht.</German>
+		<Russian>Отлично, люди любят это читать. Но давайте не будем слишком явно демонстрировать нашу поддержку – пока.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_3</Tag>
 		<English>That is high treason! Long live the king. Let the militia line up and keep order. Let's arrest the ringleaders and make sure that the newspapers only print non-political local news.</English>
 		<German>Das ist Hochverrat! Verhaften wir die Rädelsführer und sorgen dafür, dass die Zeitungen nur noch unpolitische Lokalnachrichten drucken. Mobilisiert die Miliz!</German>
+		<Russian>Это государственная измена! Да здравствует король. Пусть ополченцы выстроятся и будут следить за порядком. Давайте арестуем зачинщиков и сделаем так, чтобы газеты печатали только неполитические местные новости.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_4</Tag>
 		<English>That is high treason! Long live the king. Let's arrest the ringleaders and close down at least one newspaper. That will teach the others a lesson.</English>
 		<German>Das ist Hochverrat! Verhaften wir die Rädelsführer und schließen wir mindestens ein Zeitungshaus. Das wird den anderen eine Lehre sein.</German>
+		<Russian>Это государственная измена! Да здравствует король. Давайте арестуем зачинщиков и закроем хотя бы одну газету. Это станет уроком для остальных.</Russian>
 	</TEXT>	
 </Civ4GameText>
