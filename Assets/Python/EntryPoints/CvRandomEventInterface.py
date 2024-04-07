@@ -1859,7 +1859,6 @@ def CheckCheesemakerInCity(argsList):
 
 	return True
 
-
 ######## Bonus Funktionen ###########
 
 def CanApplyBonus(argsList):
@@ -8167,8 +8166,6 @@ getHelpSlaveAndPlanationOwnerDaughter1 = get_simple_help("TXT_KEY_EVENT_SLAVE_AN
 ######## Indentured Servant Steals from Employer ###########
 getHelpIndenturedServantStealsFromEmployer = get_simple_help("TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1_HELP")
 
-
-
 ######## Liet Event Training ###########
 
 def checkCityAbovePopulation(numPop):
@@ -8191,3 +8188,140 @@ def checkCityAbovePopulation(numPop):
 
 canTriggerAtCityPopulationOf10 = checkCityAbovePopulation(10)
 canTriggerAtCityPopulationOf20 = checkCityAbovePopulation(20)
+
+###### Revolutionary Events Start Event ######
+ 
+def CheckNobleInCity(argsList):
+	ePlayer = argsList[1]
+	player = gc.getPlayer(ePlayer)
+
+	if not player.isPlayable():
+		return False
+
+	if player.isNative():
+		return False
+	
+	king = gc.getPlayer(player.getParent())
+	if not king.isEurope():
+		return False
+	
+	if player.isInRevolution():
+		return False
+
+	# you could add checks for several Units like this
+	iUnitType = CvUtil.findInfoTypeNum('UNIT_NOBLE')
+	iUnitsCurrent = countUnitsInCityForCityTrigger(argsList, iUnitType)
+	if iUnitsCurrent == 0:
+		return False
+
+	return True
+   
+def isExpiredRevolutionaryQuest(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	plot = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+	if (plot.getOwner() != kTriggeredData.ePlayer):
+		return True
+	if gc.getGame().getGameTurn() >= kTriggeredData.iTurn + event.getGenericParameter(1):
+		return True
+	return False
+
+def getHelpRevolutionaryQuest(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_NOBLE'))
+	szHelp = localText.getText("TXT_KEY_EVENT_REVOLUTIONARY_START_EVENT_HELP", (UnitClass.getTextKey(), city.getNameKey(), event.getGenericParameter(1)))
+	return szHelp
+
+def applyKingMad(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	player.AI_changeAttitudeExtra(eking, event.getGenericParameter(3))
+	king.AI_changeAttitudeExtra(kTriggeredData.ePlayer, event.getGenericParameter(3))
+	if event.getGenericParameter(4) == 1 :
+		player.NBMOD_DecreaseMaxTaxRate()
+
+def getHelpKingMad(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	szHelp = localText.getText("TXT_KEY_EVENT_KING_MAD_HELP", ())
+	if (player.getTaxRate() + event.getGenericParameter(1) <= player.NBMOD_GetMaxTaxRate()) and event.getGenericParameter(1) <>0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_TAX_INCREASE", (event.getGenericParameter(1), player.getTaxRate() + event.getGenericParameter(1)))
+	if (player.getTaxRate() + event.getGenericParameter(1) > player.NBMOD_GetMaxTaxRate()) and event.getGenericParameter(1) <>0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAX_INCREASE", (GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()+GlobalDefines.INCREASE_MAX_TAX_RATE))
+	if event.getGenericParameter(2) <> 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_DECREASE", (event.getGenericParameter(2), king.getCivilizationAdjectiveKey()))
+	return szHelp
+
+def getHelpRevolution1(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	szHelp = localText.getText("TXT_KEY_EVENT_REVOLUTION_1_HELP", ())
+	if (player.getTaxRate() + event.getGenericParameter(1) <= player.NBMOD_GetMaxTaxRate()) and event.getGenericParameter(1) <>0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_TAX_INCREASE", (event.getGenericParameter(1), player.getTaxRate() + event.getGenericParameter(1)))
+	if (player.getTaxRate() + event.getGenericParameter(1) > player.NBMOD_GetMaxTaxRate()) and event.getGenericParameter(1) <>0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAX_INCREASE", (GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()+GlobalDefines.INCREASE_MAX_TAX_RATE))
+	if event.getGenericParameter(2) <> 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_DECREASE", (event.getGenericParameter(2), king.getCivilizationAdjectiveKey()))
+	return szHelp
+    
+######## Infantry Mutiny Event ###########
+    
+getHelpInfantryMutiny = get_simple_help("TXT_KEY_EVENT_INFANTRY_MUTINY_HELP")
+
+###### Liberty or Death Event ###### 
+def CheckJudgeInCity(argsList):
+	ePlayer = argsList[1]
+	player = gc.getPlayer(ePlayer)
+
+	if not player.isPlayable():
+		return False
+
+	# you could add checks for several Units like this
+	iUnitType = CvUtil.findInfoTypeNum('UNIT_JUDGE')
+	iUnitsCurrent = countUnitsInCityForCityTrigger(argsList, iUnitType)
+	if iUnitsCurrent == 0:
+		return False
+
+	return True
+
+def CheckInfantryInCity(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if not player.isPlayable():
+		return False
+
+	if player.isNative():
+		return False
+	
+	king = gc.getPlayer(player.getParent())
+	if not king.isEurope():
+		return False
+	
+	if player.isInRevolution():
+		return False
+
+	iUnitType = CvUtil.findInfoTypeNum('UNIT_EUROPEAN_LINE_INFANTRY')
+	iUnitsCurrent = countUnits(argsList, iUnitType)
+	if iUnitsCurrent > 0:
+		return True
+	return False
+

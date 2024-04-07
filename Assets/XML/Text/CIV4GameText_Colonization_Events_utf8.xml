@@ -5571,8 +5571,208 @@
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_4</Tag>
-		<English>That is high treason! Long live the king. Let's arrest the ringleaders and close down at least one newspaper. That will teach the others a lesson.</English>
-		<German>Das ist Hochverrat! Verhaften wir die Rädelsführer und schließen wir mindestens ein Zeitungshaus. Das wird den anderen eine Lehre sein.</German>
+		<English>That is high treason! Long live the king. Let's arrest the ringleaders and close down at least the newspaper in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. That will teach the others a lesson.</English>
+		<German>Das ist Hochverrat! Verhaften wir die Rädelsführer und schließen wir jedenfalls das Zeitungshaus in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Das wird den anderen eine Lehre sein.</German>
 		<Russian>Это государственная измена! Да здравствует король. Давайте арестуем зачинщиков и закроем хотя бы одну газету. Это станет уроком для остальных.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES</Tag>
+		<English>In the [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] empire the taverns and alehouses become conspiratorial places.</English>
+		<German>Im [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonialreich werden die Taveren und Spelunken zu konspirativen Orten.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_1</Tag>
+		<English>Milord, alcohol makes people talkative and careless. In pubs and taverns extremely critical speeches about the king are being made more and more frequently.</English>
+		<German>Milord, Alkohol macht die Leute redselig und leichtsinnig. In Schenken und Spelunken werden immer häufiger äußerst kritische Reden über den König geschwungen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_1</Tag>
+		<English>Yes, I've noticed that too, I mean, I've heard it. So what, as long as people just talk like that and drinking doesn't stop them from working, let them talk. I suggest we have a good drink first, too.</English>
+		<German>Ja, das ist mir auch schon aufgefallen, ähm ich meine, es ist mir zu Ohren gekommen. Na und, solange die Leute nur so daherreden und sie das Trinken nicht von der Arbeit abhält, lasst die Leute doch reden. Ich schlage vor, wir genehmigen uns auch erst mal einen guten Tropfen.</German>
 	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_2</Tag>
+		<English>Yes, but what should we do? If we ban people from whoring and drinking, we'll have a revolution on the spot. But let's make sure it doesn't get too out of hand and move the curfew forward by an hour.</English>
+		<German>Ja, nur was sollen wir tun. Wenn wir den Leuten das Huren und Trinken verbieten, haben wir auf der Stelle eine Revolution. Sorgen wir aber dafür, dass es nicht zu sehr ausartet und verlegen wir die Sperrstunde um eine Stunde nach vorne.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_3</Tag>
+		<English>For heaven's sake, is nothing sacred anymore? People should have fun in pubs and not talk about politics. We absolutely have to close at least one pub and chase the whores away so that we can say we're cracking down. But let's close a pub far away from the town hall. please</English>
+		<German>Um Himmels Willen, ist denn gar nichts mehr heilig. Im Wirtshaus soll man sich amüsieren und nicht über Politik reden. Wir müssen unbedingt mindestens ein Wirtshaus schließen und die Huren verjagen, damit wir sagen können wir greifen hart durch. Aber schließen wir bitte ein Wirtshaus weit weg vom Rathaus.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_4</Tag>
+		<English>That's treason, of course! The ringleaders of the sons of liberty meet in the taverns, as far as I've heard. Send in the royal troops and arrest them! They will hang.</English>
+		<German>Das ist natürlich Hochverrat! In den Spelunken treffen sich die Rädelsführer der Söhne der Freiheit, soweit ich gehört habe. Lasst die Königlichen Truppen antreten und sie dingfest machen! Sie werden hängen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY</Tag>
+		<English>An elite unit of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Empire's revolutionary troops has deserted!</English>
+		<German>Bei den Revolutionstruppen des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs ist eine Eliteeinheit desertiert!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_1</Tag>
+		<English>Milord, desertion is spreading. Some of our best troops have decided against the glorious cause and in favor of mutiny. They have run off with the regimental treasury and are gathering in the surrounding area.</English>
+		<German>Milord, Desertion greift um sich. Einige unserer besten Truppen haben sich gegen die glorreiche Sache und für die Meuterei entschieden. Sie sind mit der Regimentskasse abgehauen und sammeln sich in der Umgebung.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_1</Tag>
+		<English>It is unbelievable. In our darkest hour, they let us down. To arms, we'll deal with these traitors, too!</English>
+		<German>Es ist unfassbar. In unserer schwersten Stunde lassen sie uns im Stich. Zu den Waffen, mit diesen Verrätern werden wir auch noch fertig!</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_2</Tag>
+		<English>We will bribe the commander. Everyone has their price. I'm sure he can change his men's minds.</English>
+		<German>Wir werden den Kommandeur bestechen. Jeder hat seinen Preis. Er kann seine Männer bestimmt umstimmen.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_3</Tag>
+		<English>Let them go, we will meet them again in hell. The fight for freedom goes first.</English>
+		<German>Lasst sie ziehen, wir werden sie in der Hölle wiedersehen. Der Kampf für die Freiheit geht vor.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_INFANTRY_MUTINY_HELP</Tag>
+		<English>The deserters will gather nearby and probably attack us.</English>
+		<German>Die Deserteure werden sich in der Nähe sammeln und uns vermutlich angreifen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH</Tag>
+		<English>In the colonies of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] empire, an enthusiastic speaker fires up the idea of revolution.</English>
+		<German>In den Kolonien des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs befeuert ein begeisterter Redner die Idee der Revolution.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH_1</Tag>
+		<English>Milord, a well-known lawyer and advocate of the revolution, gave a moving and inspiring speech in Congress. He literally said "...give me liberty or give me death!" He was referring to the king. We must speak out, otherwise they will storm the palace. I can already see the torches in the distance!</English>
+		<German>Milord, ein bekannter Anwalt und Verfechter der Revolution hat im Kongress eine ergreifende und begeisternde Rede gehalten. Er sagte wörtlich "...geben Sie mir die Freiheit oder den Tod!" Damit meint er den König. Wir müssen uns dazu äußern, sonst stürmen sie noch den Palast. Ich sehe schon die Fackeln in der Ferne!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH_1</Tag>
+		<English>Yes, of course! Topple the king's statue from its pedestal and burn his flag. We are free and we will fight for it!</English>
+		<German>Ja, aber natürlich! Stürzt die Statue des Königs vom Sockel und verbrennt seine Fahne. Wir sind frei und dafür werden wir kämpfen!</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH_2</Tag>
+		<English>Are we all mad? We can't go to war with our king. We must remain loyal to our monarch! But you're right, maybe we should leave through a side entrance until things have calmed down a bit. Then we need to talk to the most influential people to get the situation under control.</English>
+		<German>Ja sind denn alle des Wahnsinns? Wir können uns nicht mit unserem König in einen Krieg stürzen. Wir müssen loyal zu unserem Monarchen bleiben! Aber ihr habt Recht, vielleicht sollten wir uns lieber durch einen Seiteneingang verdrücken, bis sich die Lage etwas beruhigt hat. Danach müssen wir mit den einflussreichsten Leuten sprechen, um die Lage in den Griff zu bekommen.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_KING_MAD_HELP</Tag>
+		<English>His Majesty is beside himself at this reaction. That sounds like treason!</English>
+		<German>Seine Majestät ist über diese Reaktion wie von Sinnen. Das klingt wie Hochverrat!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTION_1_HELP</Tag>
+		<English>[COLOR_FONT_GOLD]His Majesty reaction was ferocious. Rumours report that He has shot at a portrait of you.[COLOR_REVERT]</English>
+		<German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Der König ist fuchsteufelswild. Kammerdiener berichten, dass er auf ein Porträt von Euch geschossen haben soll.[COLOR_REVERT]</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_START_EVENT_HELP</Tag>
+		<English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the port of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] within %d3 rounds.</English>
+		<German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zum Hafen in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_START</Tag>
+		<English>Influential merchants suggest sending an [COLOR_UNIT_TEXT]envoy[COLOR_REVERT] to Europe to negotiate with the king.</English>
+		<German>Einflussreiche Kaufleute schlagen vor, einen [COLOR_UNIT_TEXT]Gesandten[COLOR_REVERT] nach Europa zu schicken, um mit dem König zu verhandeln.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_START_DONE</Tag>
+		<English>The envoy is ready for the crossing.</English>
+		<German>Der Gesandte ist zur Überfahrt bereit.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_START</Tag>
+		<English>Milord, we should definitely send an envoy to Europe who can speak directly to the king about the situation. It would be best to send a nobleman who knows how to talk to a king. Perhaps we can at least negotiate tax concessions.</English>
+		<German>Milord, wir sollten unbedingt einen Gesandten nach Europa schicken, der direkt mit dem König über die Situation sprechen kann. Schickt am besten einen [COLOR_UNIT_TEXT]Adligen[COLOR_REVERT], der weiß wie man mit einem König spricht. Vielleicht können wir wenigstens Steuererleichterungen herausschlagen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_START_DONE</Tag>
+		<English>Milord, the nobleman is now at the harbor and ready to sail to Europe. Should we really dare to make demands of the king through an envoy or would we rather remain loyal subjects? However, this could lead to unrest.</English>
+		<German>Milord, der Adlige steht nun am Hafen und ist bereit zur Überfahrt nach Europa. Sollen wir es wirklich wagen, dem König durch einen Gesandten Forderungen zu stellen oder wollen wir doch lieber die treuen Untertanen bleiben? Das könnte allerdings zu Unruhen führen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_START_1</Tag>
+		<English>We will see. The merchants are only concerned about their profits. I'm still in the service of the king. But well, I'll think about it. It's no use to anyone if there's unrest in the colonies.</English>
+		<German>Wir werden sehen. Die Handelsherren sind doch nur um ihren Profit besorgt. Ich stehe immer noch im Dienste des Königs. Aber gut, ich werde darüber nachdenken. Es nützt niemandem, wenn in den Kolonien Unruhen herrschen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_START_FAIL</Tag>
+		<English>Milord, you have waited too long - or did you not want to send an envoy to Europe? That may cost us dearly. There is more and more unrest in the colonies and you will be seen as loyal to the king. Think carefully about what you do next!</English>
+		<German>Milord, Ihr habt zu lange gewartet - oder wolltet Ihr gar keinen Gesandten nach Europa schicken? Das wird uns vielleicht noch teuer zu stehen kommen. In den Kolonien gibt es immer mehr Unruhen und man wird Euch als königstreu ansehen. Überlegt gut, was Ihr als nächstes tut!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DONE_1</Tag>
+		<English>Yes, definitely. But we don't do things by halves. It's time the king took our concerns seriously. The envoy should not be squeamish. We know what the king and the treasury have in store for us. If necessary, we will now go into confrontation!</English>
+		<German>Ja, auf jeden Fall. aber wir machen keine halben Sachen. Es wird Zeit, dass der König unsere Sorgen ernst nimmt. Der Gesandte soll nicht zimperlich sein. Wir wissen, was der König und die Staatskasse an uns haben. Wenn nötig gehen wir nun auf Konfrontation!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_1</Tag>
+		<English>An envoy was entrusted with the delicate task of wringing tax concessions from the king without offending him.</English>
+		<German>Ein Gesandter wurde mit der heiklen Aufgabe betraut, dem König Steuererleichterungen abzuringen und ihn dabei möglichst nicht zu beleidigen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DONE_2</Tag>
+		<English>Yes, ship the nobleman to Europe. But we certainly don't want to provoke the king. We just want the envoy to create a good atmosphere, assure the king of our loyalty, and then lobby for trade and tax relief. That will have to be enough!</English>
+		<German>Ja, verschifft den Adligen nach Europa. Aber wir wollen den König auf keinen Fall provozieren. Der Gesandte soll nur ein wenig für gute Stimmung sorgen, dem König unsere Treue versichern und sich für den Handel und dann erst für Steuererleichterungen einsetzen. Dies muss reichen!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_2</Tag>
+		<English>An envoy was entrusted with the delicate task of talking to the king about the conditions for overseas trade and, if possible, not offending him in the process.</English>
+		<German>Ein Gesandter wurde mit der heiklen Aufgabe betraut, mit dem König über die Bedingungen für den Überseehandel zu sprechen und ihn dabei möglichst nicht zu beleidigen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DONE_3</Tag>
+		<English>I'm not going to make myself even more unpopular with the king! The nobleman should go to his mistress. Long live the king! I will continue to assert the king's power here.</English>
+		<German>Von wegen, ich mache mich beim König doch nicht noch unbeliebter! Der Adlige soll sich zu seiner Mätresse scheren. Es lebe der König! Ich werde die Macht des Königs hier weiter durchsetzen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_3</Tag>
+		<English>It was decided not to send an envoy to Europe. This will further inflame the mood against the king and his loyalists in the colonies. Who knows what will happen now.</English>
+		<German>Es wurde darauf verzichtet einen Gesandten nach Europa zu senden. Dies wird die Stimmung gegen den König und seine Getreuen in den Kolonien noch weiter anheizen. Wer weiß was jetzt passiert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_1A</Tag>
+		<English>The envoy is back from Europe and has made himself very unpopular. The king has become even angrier and will continue to raise taxes. This will lead to more unrest.</English>
+		<German>Der Gesandte ist aus Europa zurück und hat sich mächtig unbeliebt gemacht. Der König ist noch wütender geworden und wird die Steuern weiter erhöhen. Das wird zu mehr Unruhen führen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_1B</Tag>
+		<English>The envoy is back from Europe and has managed to calm things down a little. But the king is still more annoyed than ever and will continue to raise taxes. So the trip has achieved nothing except to consolidate his position.</English>
+		<German>Der Gesandte ist aus Europa zurück und konnte die Wogen ein wenig glätten. Aber der König ist trotzdem mehr verärgert als je zuvor und wird die Steuern weiter erhöhen. Die Reise hat also nichts gebracht, außer die Standtpunkte zu festigen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_2A</Tag>
+		<English>The envoy is back from Europe and was able to negotiate something for the merchants. This will satisfy the merchants, but not the common people. The mood will continue to sink. At least taxes will not be increased.</English>
+		<German>Der Gesandte ist aus Europa zurück und konnte für die Händler etwas herausschlagen. Das wird zwar die Händler, aber nicht das gemeine Volk zufriedenstellen. Die Stimmung wird weiter sinken. Immerhin werden die Steuern nicht erhöht.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_2B</Tag>
+		<English>The envoy is back from Europe and has really managed to get something for the traders. That will satisfy the traders and even the population for a while. We'll see how things develop.</English>
+		<German>Der Gesandte ist aus Europa zurück und konnte für die Händler wirklich etwas herausschlagen. Das wird für eine Weile die Händler und sogar die Bevölkerung zufriedenstellen. Wir werden sehen wie es sich entwickelt.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_ROYAL_TROOPS</Tag>
+		<English>Citizens complain about the amount of troops of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] empire in the colonies.</English>
+		<German>Bürger beschweren sich über die vielen Truppen des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs in den Kolonien.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_1</Tag>
+		<English>Milord, the citizens complain that they have to feed and endure so many troops from Europe. The troops are spreading throughout the colonies. We should do something about it.</English>
+		<German>Milord, die Bürger beschweren sich, dass sie so viele Truppen aus Europa durchfüttern und erdulden müssen. Die Truppen machen sich in den Kolonien breit. Wir sollten etwas unternehmen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_1</Tag>
+		<English>Yes, it seems that way to me too. We should ask the commander to send some troops back to Europe. The king won't like that, but it will calm the citizens down a bit.</English>
+		<German>Ja, scheint mir auch so. Wir sollten den Kommandeur bitten, einige Truppen nach Europa zurückzuschicken. Das wird zwar dem König nicht gefallen, aber die Bürger etwas beruhigen.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_2</Tag>
+		<English>The protection of the colonies and the expansion of the empire require sacrifices. The troops stay where they are. But I am happy to contribute something from my casket to supply the troops</English>
+		<German>Der Schutz der Kolonien und die Erweiterung des Reiches erfordern nun mal Opfer. Die Truppen bleiben wo sie sind. Aber ich bin gerne bereit etwas aus meiner Schatulle zur Versorgung der Truppen beizusteuern.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_3</Tag>
+		<English>The protection of the colonies and the expansion of the empire require sacrifices. The troops stay where they are. But I can understand people's concerns. We will contribute generously to the provisioning and compensate for any damage caused by the troops in the colonies</English>
+		<German>Der Schutz der Kolonien und die Erweiterung des Reiches erfordern nun mal Opfer. Die Truppen bleiben wo sie sind. Aber ich kann die Sorgen der Leute verstehen. Wir werden uns großzügig an der Verproviantierung beteiligen und etwaige Schäden ersetzen, die in den Kolonien durch die Truppen verursacht werden.</German>
+	</TEXT>
 </Civ4GameText>
