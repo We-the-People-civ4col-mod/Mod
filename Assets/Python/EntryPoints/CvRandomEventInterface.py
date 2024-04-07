@@ -1545,7 +1545,7 @@ def getHelpRuins5(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_BONUS_UNIT", (1, UnitClass.getTextKey(), ))
 	return szHelp
 
-######## Native Trade with Wagons Quest ###########
+######## Native Trade Quests ###########
 
 def isExpiredNativeWagonTrade(argsList):
 	eEvent = argsList[0]
@@ -1580,6 +1580,31 @@ def applyNativeWagonTrade5(argsList):
 
 def getHelpNativeWagonTrade5(argsList):
 	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_WAGON_TRAIN'))
+	szHelp = localText.getText("TXT_KEY_EVENT_BONUS_UNIT", (1, UnitClass.getTextKey(), ))
+	return szHelp
+
+def getHelpNativeNeighborTrade(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_WAGON_TRAIN'))
+	szHelp = localText.getText("TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_HELP", (UnitClass.getTextKey(), city.getNameKey(), event.getGenericParameter(1)))
+	return szHelp
+
+def applyNativeNeighborTrade5(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	iUnitClassType = CvUtil.findInfoTypeNum('UNITCLASS_EXPERT_TRADER')
+	iUnitType = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iUnitClassType)
+	if iUnitType != -1:
+		player.initUnit(iUnitType, 0, kTriggeredData.iPlotX, kTriggeredData.iPlotY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH, 0)
+
+def getHelpNativeNeighborTrade5(argsList):
+	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_EXPERT_TRADER'))
 	szHelp = localText.getText("TXT_KEY_EVENT_BONUS_UNIT", (1, UnitClass.getTextKey(), ))
 	return szHelp
 	
