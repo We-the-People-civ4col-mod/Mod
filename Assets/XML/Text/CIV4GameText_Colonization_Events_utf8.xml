@@ -5555,275 +5555,325 @@
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_1</Tag>
 		<English>We support the revolution. Let the scribblers have their way. Let them stir up the atmosphere a little.</English>
 		<German>Wir unterstützen die Revolution. Lasst die Schreiberlinge gewähren. Sollen sie die Stimmung ruhig ein wenig anheizen.</German>
-		<Russian>Мы поддерживаем революцию. Пусть писаки добиваются своего. Пусть они немного накачают атмосферу.</Russian>
+		<Russian>К чёрту короля с его запретами - не препятствовать выпуску этих статей. Нашему обществу давно пора проснуться.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_2</Tag>
 		<English>Excellent, that's what people like to read. But let's not show our support too clearly - not yet.</English>
 		<German>Hervorragend, sowas lesen die Leute eben gerne. Aber zeigen wir unsere Unterstützung mal lieber nicht zu deutlich - noch nicht.</German>
-		<Russian>Отлично, люди любят это читать. Но давайте не будем слишком явно демонстрировать нашу поддержку – пока.</Russian>
+		<Russian>Отлично, люди любят читать такие новости. Но давайте не будем слишком явно демонстрировать нашу поддержку – пока.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_3</Tag>
 		<English>That is high treason! Long live the king. Let the militia line up and keep order. Let's arrest the ringleaders and make sure that the newspapers only print non-political local news.</English>
 		<German>Das ist Hochverrat! Verhaften wir die Rädelsführer und sorgen dafür, dass die Zeitungen nur noch unpolitische Lokalnachrichten drucken. Mobilisiert die Miliz!</German>
-		<Russian>Это государственная измена! Да здравствует король. Пусть ополченцы выстроятся и будут следить за порядком. Давайте арестуем зачинщиков и сделаем так, чтобы газеты печатали только неполитические местные новости.</Russian>
+		<Russian>Это же государственная измена! Да здравствует Король! Прикажите ополчению арестовать зачинщиков и навести порядок. И распорядитесь, чтобы газеты печатали только местные неполитические новости.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_4</Tag>
 		<English>That is high treason! Long live the king. Let's arrest the ringleaders and close down at least the newspaper in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. That will teach the others a lesson.</English>
 		<German>Das ist Hochverrat! Verhaften wir die Rädelsführer und schließen wir jedenfalls das Zeitungshaus in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Das wird den anderen eine Lehre sein.</German>
-		<Russian>Это государственная измена! Да здравствует король. Давайте арестуем зачинщиков и закроем хотя бы одну газету. Это станет уроком для остальных.</Russian>
+		<Russian>Арестовать негодяев, распространяющих эти лживые новости про нашего обожаемого Короля, да благословит его Господь, и закрыть их мерзкую газетёнку в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Это послужит хорошим уроком для всех остальных.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES</Tag>
 		<English>In the [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] empire the taverns and alehouses become conspiratorial places.</English>
 		<German>Im [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonialreich werden die Taveren und Spelunken zu konspirativen Orten.</German>
+		<Russian>В колониях [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] таверны и кабаки становятся местами заговора.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_1</Tag>
 		<English>Milord, alcohol makes people talkative and careless. In pubs and taverns extremely critical speeches about the king are being made more and more frequently.</English>
 		<German>Milord, Alkohol macht die Leute redselig und leichtsinnig. In Schenken und Spelunken werden immer häufiger äußerst kritische Reden über den König geschwungen.</German>
+		<Russian>Милорд, алкоголь делает людей чересчур разговорчивыми и беспечными. В кабаках и тавернах все чаще можно услышать что-то нелицеприятное в адрес Короля.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_1</Tag>
 		<English>Yes, I've noticed that too, I mean, I've heard it. So what, as long as people just talk like that and drinking doesn't stop them from working, let them talk. I suggest we have a good drink first, too.</English>
 		<German>Ja, das ist mir auch schon aufgefallen, ähm ich meine, es ist mir zu Ohren gekommen. Na und, solange die Leute nur so daherreden und sie das Trinken nicht von der Arbeit abhält, lasst die Leute doch reden. Ich schlage vor, wir genehmigen uns auch erst mal einen guten Tropfen.</German>
+		<Russian>Да, я тоже это заметил, то есть даже сам слышал. Ничего страшного - пока подобные высказвания и выпивка им не мешает работать, пусть болтают. Надо же им где-то выпускать пар. Кстати, а почему бы и нам не опрокинуть по стаканчику?</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_2</Tag>
 		<English>Yes, but what should we do? If we ban people from whoring and drinking, we'll have a revolution on the spot. But let's make sure it doesn't get too out of hand and move the curfew forward by an hour.</English>
 		<German>Ja, nur was sollen wir tun. Wenn wir den Leuten das Huren und Trinken verbieten, haben wir auf der Stelle eine Revolution. Sorgen wir aber dafür, dass es nicht zu sehr ausartet und verlegen wir die Sperrstunde um eine Stunde nach vorne.</German>
+		<Russian>Да, но что нам делать? Если мы закроем трактиры, нас тут же поднимут на вилы. Но чтобы хоть как-то обезопаситься и держать ситуацию под контролем, давайте перенесем начало комендантского часа, допустим, на один час раньше.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_3</Tag>
 		<English>For heaven's sake, is nothing sacred anymore? People should have fun in pubs and not talk about politics. We absolutely have to close at least one pub and chase the whores away so that we can say we're cracking down. But let's close a pub far away from the town hall. please</English>
 		<German>Um Himmels Willen, ist denn gar nichts mehr heilig. Im Wirtshaus soll man sich amüsieren und nicht über Politik reden. Wir müssen unbedingt mindestens ein Wirtshaus schließen und die Huren verjagen, damit wir sagen können wir greifen hart durch. Aber schließen wir bitte ein Wirtshaus weit weg vom Rathaus.</German>
+		<Russian>Да что они себе позволяют? В кабаках люди должны отдыхать, а не говорить о политике. Давайте закроем один салун и прогоним всех шлюх, чтобы можно было сказать, что мы ужесточаем меры и к нам не было бы претензий от метрополии. Но только давайте закроем какое-нибудь заведение подальше от ратуши.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_4</Tag>
 		<English>That's treason, of course! The ringleaders of the sons of liberty meet in the taverns, as far as I've heard. Send in the royal troops and arrest them! They will hang.</English>
 		<German>Das ist natürlich Hochverrat! In den Spelunken treffen sich die Rädelsführer der Söhne der Freiheit, soweit ich gehört habe. Lasst die Königlichen Truppen antreten und sie dingfest machen! Sie werden hängen.</German>
+		<Russian>Господь всемогущий, да это же измена! Насколько я слышал, главари этих так называемых "Сынов свободы" встречаются в тавернах. Отправить туда королевские войска и арестовать их! Скоро они все будут раскачиваться в петле.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY</Tag>
 		<English>An elite unit of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Empire's revolutionary troops has deserted!</English>
 		<German>Bei den Revolutionstruppen des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs ist eine Eliteeinheit desertiert!</German>
+		<Russian>Элитное подразделение революционных войск [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Империи дезертировало!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_1</Tag>
 		<English>Milord, desertion is spreading. Some of our best troops have decided against the glorious cause and in favor of mutiny. They have run off with the regimental treasury and are gathering in the surrounding area.</English>
 		<German>Milord, Desertion greift um sich. Einige unserer besten Truppen haben sich gegen die glorreiche Sache und für die Meuterei entschieden. Sie sind mit der Regimentskasse abgehauen und sammeln sich in der Umgebung.</German>
+		<Russian>Милорд, в войсках распространяется дезертирство. Несколько из наших лучших солдат подняли мятеж! Они сбежали с полковой казной и собираются в отряды.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_1</Tag>
 		<English>It is unbelievable. In our darkest hour, they let us down. To arms, we'll deal with these traitors, too!</English>
 		<German>Es ist unfassbar. In unserer schwersten Stunde lassen sie uns im Stich. Zu den Waffen, mit diesen Verrätern werden wir auch noch fertig!</German>
+		<Russian>Мерзавцы, они предали всех, кто сражался с ними плечом к плечу! К оружию, разберёмся с этими предателями!</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_2</Tag>
 		<English>We will bribe the commander. Everyone has their price. I'm sure he can change his men's minds.</English>
 		<German>Wir werden den Kommandeur bestechen. Jeder hat seinen Preis. Er kann seine Männer bestimmt umstimmen.</German>
+		<Russian>Давайте подкупим командира. У всего есть своя цена. Я уверен, что он способен изменить мнение своих людей в нужную нам сторону.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_3</Tag>
 		<English>Let them go, we will meet them again in hell. The fight for freedom goes first.</English>
 		<German>Lasst sie ziehen, wir werden sie in der Hölle wiedersehen. Der Kampf für die Freiheit geht vor.</German>
+		<Russian>Не будем отвлекаться на этих трусов, мы спросим с них за всё потом. Борьба за нашу свободу должна быть на первом месте.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INFANTRY_MUTINY_HELP</Tag>
 		<English>The deserters will gather nearby and probably attack us.</English>
 		<German>Die Deserteure werden sich in der Nähe sammeln und uns vermutlich angreifen.</German>
+		<Russian>Дезертиры соберутся в отряд неподалеку и, вероятно, нападут на нас.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH</Tag>
 		<English>In the colonies of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] empire, an enthusiastic speaker fires up the idea of revolution.</English>
 		<German>In den Kolonien des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs befeuert ein begeisterter Redner die Idee der Revolution.</German>
+		<Russian>В колониях империи [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] оратор-энтузиаст разжигает идею революции в умах людей.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH_1</Tag>
 		<English>Milord, a well-known lawyer and advocate of the revolution, gave a moving and inspiring speech in Congress. He literally said "...give me liberty or give me death!" He was referring to the king. We must speak out, otherwise they will storm the palace. I can already see the torches in the distance!</English>
 		<German>Milord, ein bekannter Anwalt und Verfechter der Revolution hat im Kongress eine ergreifende und begeisternde Rede gehalten. Er sagte wörtlich "...geben Sie mir die Freiheit oder den Tod!" Damit meint er den König. Wir müssen uns dazu äußern, sonst stürmen sie noch den Palast. Ich sehe schon die Fackeln in der Ferne!</German>
+		<Russian>Милорд, известный юрист и защитник революции выступил с вдохновляющей речью в Конгрессе. Он сказал буквально следующее: "...дайте мне свободу или дайте мне смерть!" Он обращался к Королю. Мы срочно должны как-то ответить, иначе толпа возьмёт наш дворец штурмом. Я уже вижу вдалеке факелы!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH_1</Tag>
 		<English>Yes, of course! Topple the king's statue from its pedestal and burn his flag. We are free and we will fight for it!</English>
 		<German>Ja, aber natürlich! Stürzt die Statue des Königs vom Sockel und verbrennt seine Fahne. Wir sind frei und dafür werden wir kämpfen!</German>
+		<Russian>И мы согласны с ним! Свергните статую короля с постамента и сожгите его флаг. Мы свободные люди и мы будем бороться за свою свободу!</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH_2</Tag>
 		<English>Are we all mad? We can't go to war with our king. We must remain loyal to our monarch! But you're right, maybe we should leave through a side entrance until things have calmed down a bit. Then we need to talk to the most influential people to get the situation under control.</English>
 		<German>Ja sind denn alle des Wahnsinns? Wir können uns nicht mit unserem König in einen Krieg stürzen. Wir müssen loyal zu unserem Monarchen bleiben! Aber ihr habt Recht, vielleicht sollten wir uns lieber durch einen Seiteneingang verdrücken, bis sich die Lage etwas beruhigt hat. Danach müssen wir mit den einflussreichsten Leuten sprechen, um die Lage in den Griff zu bekommen.</German>
+		<Russian>Они в своём уме? Мы не можем воевать с нашим Королем. Мы должны сохранять верность нашему монарху! Но ты прав, наверное нам стоит покинуть дворец через боковой вход и подождать, пока всё немного успокоится. И нам срочно нужно поговорить с наиболее влиятельными людьми города, чтобы взять ситуацию под контроль.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_KING_MAD_HELP</Tag>
 		<English>His Majesty is beside himself at this reaction. That sounds like treason!</English>
 		<German>Seine Majestät ist über diese Reaktion wie von Sinnen. Das klingt wie Hochverrat!</German>
+		<Russian>Его Величество вне себя от такой реакции. Он расценивает это, как предательство!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTION_1_HELP</Tag>
 		<English>[COLOR_FONT_GOLD]His Majesty reaction was ferocious. Rumours report that He has shot at a portrait of you.[COLOR_REVERT]</English>
 		<German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Der König ist fuchsteufelswild. Kammerdiener berichten, dass er auf ein Porträt von Euch geschossen haben soll.[COLOR_REVERT]</German>
+		<Russian>[COLOR_FONT_GOLD]Его Величества в бешенстве. Ходят слухи, что Он расстрелял ваш портрет.[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_START_EVENT_HELP</Tag>
 		<English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the port of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] within %d3 rounds.</English>
 		<German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zum Hafen in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</German>
+		<Russian>Отправьте отряд [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в порт города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] в течение %d3 раундов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_START</Tag>
 		<English>Influential merchants suggest sending an [COLOR_UNIT_TEXT]envoy[COLOR_REVERT] to Europe to negotiate with the king.</English>
 		<German>Einflussreiche Kaufleute schlagen vor, einen [COLOR_UNIT_TEXT]Gesandten[COLOR_REVERT] nach Europa zu schicken, um mit dem König zu verhandeln.</German>
+		<Russian>Влиятельные торговцы предлагают отправить [COLOR_UNIT_TEXT]посланника[COLOR_REVERT] в Европу для переговоров с Королём.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_START_DONE</Tag>
 		<English>The envoy is ready for the crossing.</English>
 		<German>Der Gesandte ist zur Überfahrt bereit.</German>
+		<Russian>Посланец готов к отбытию.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_START</Tag>
 		<English>Milord, we should definitely send an envoy to Europe who can speak directly to the king about the situation. It would be best to send a nobleman who knows how to talk to a king. Perhaps we can at least negotiate tax concessions.</English>
 		<German>Milord, wir sollten unbedingt einen Gesandten nach Europa schicken, der direkt mit dem König über die Situation sprechen kann. Schickt am besten einen [COLOR_UNIT_TEXT]Adligen[COLOR_REVERT], der weiß wie man mit einem König spricht. Vielleicht können wir wenigstens Steuererleichterungen herausschlagen.</German>
+		<Russian>Милорд, нам обязательно следует отправить в Европу посланника, который сможет поговорить о ситуации напрямую с Королём. Лучше всего было бы послать дворянина, который знает, как правильно разговаривать с монархом. Возможно, нам даже удастся договориться о налоговых льготах.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_START_DONE</Tag>
 		<English>Milord, the nobleman is now at the harbor and ready to sail to Europe. Should we really dare to make demands of the king through an envoy or would we rather remain loyal subjects? However, this could lead to unrest.</English>
 		<German>Milord, der Adlige steht nun am Hafen und ist bereit zur Überfahrt nach Europa. Sollen wir es wirklich wagen, dem König durch einen Gesandten Forderungen zu stellen oder wollen wir doch lieber die treuen Untertanen bleiben? Das könnte allerdings zu Unruhen führen.</German>
+		<Russian>Милорд, дворянин сейчас находится в гавани и готов отплыть в Европу. Действительно ли мы готовы предъявлять требования Королю или нам лучше остаться верными подданными Его Величества? Боюсь, однако, в любом случае нам надо быть готовыми к народным волнениям.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_START_1</Tag>
 		<English>We will see. The merchants are only concerned about their profits. I'm still in the service of the king. But well, I'll think about it. It's no use to anyone if there's unrest in the colonies.</English>
 		<German>Wir werden sehen. Die Handelsherren sind doch nur um ihren Profit besorgt. Ich stehe immer noch im Dienste des Königs. Aber gut, ich werde darüber nachdenken. Es nützt niemandem, wenn in den Kolonien Unruhen herrschen.</German>
+		<Russian>Да, непростой вопрос. Торговцы озабочены только своей прибылью... А я все еще на службе у Короля... Думаю, никому не будет никакой пользы, если в колониях начнутся волнения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_START_FAIL</Tag>
 		<English>Milord, you have waited too long - or did you not want to send an envoy to Europe? That may cost us dearly. There is more and more unrest in the colonies and you will be seen as loyal to the king. Think carefully about what you do next!</English>
 		<German>Milord, Ihr habt zu lange gewartet - oder wolltet Ihr gar keinen Gesandten nach Europa schicken? Das wird uns vielleicht noch teuer zu stehen kommen. In den Kolonien gibt es immer mehr Unruhen und man wird Euch als königstreu ansehen. Überlegt gut, was Ihr als nächstes tut!</German>
+		<Russian>Милорд, вы слишком долго ждали – или вы вообще не хотели отправлять посланника в Европу? Это может стоить нам очень дорого. В колониях растут беспорядки и вас будут считать лояльным Королю. Хорошенько подумайте, что нам делать дальше!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DONE_1</Tag>
 		<English>Yes, definitely. But we don't do things by halves. It's time the king took our concerns seriously. The envoy should not be squeamish. We know what the king and the treasury have in store for us. If necessary, we will now go into confrontation!</English>
 		<German>Ja, auf jeden Fall. aber wir machen keine halben Sachen. Es wird Zeit, dass der König unsere Sorgen ernst nimmt. Der Gesandte soll nicht zimperlich sein. Wir wissen, was der König und die Staatskasse an uns haben. Wenn nötig gehen wir nun auf Konfrontation!</German>
+		<Russian>Да, конечно. Но мы не делаем дела наполовину. Пришло время Королю серьёзно отнестись к нашим опасениям. Посланник не должен быть слабовольным. Мы знаем, что готовят нам Король и Парламент. Если нас вынудят, теперь мы пойдем на конфронтацию!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_1</Tag>
 		<English>An envoy was entrusted with the delicate task of wringing tax concessions from the king without offending him.</English>
 		<German>Ein Gesandter wurde mit der heiklen Aufgabe betraut, dem König Steuererleichterungen abzuringen und ihn dabei möglichst nicht zu beleidigen.</German>
+		<Russian>На посланника была возложена деликатная задача — добиться от Короля налоговых уступок, не оскорбив Его Величества.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DONE_2</Tag>
 		<English>Yes, ship the nobleman to Europe. But we certainly don't want to provoke the king. We just want the envoy to create a good atmosphere, assure the king of our loyalty, and then lobby for trade and tax relief. That will have to be enough!</English>
 		<German>Ja, verschifft den Adligen nach Europa. Aber wir wollen den König auf keinen Fall provozieren. Der Gesandte soll nur ein wenig für gute Stimmung sorgen, dem König unsere Treue versichern und sich für den Handel und dann erst für Steuererleichterungen einsetzen. Dies muss reichen!</German>
+		<Russian>Да, отправляетсяте дворянина в Европу. Но мы, конечно, не хотим провоцировать Короля. Мы лишь хотим, чтобы посланник создал хорошую атмосферу на приёме, заверил Его Величество в нашей лояльности, а затем добился торговых и налоговых льгот. Этого должно быть достаточно для процветания колоний.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_2</Tag>
 		<English>An envoy was entrusted with the delicate task of talking to the king about the conditions for overseas trade and, if possible, not offending him in the process.</English>
 		<German>Ein Gesandter wurde mit der heiklen Aufgabe betraut, mit dem König über die Bedingungen für den Überseehandel zu sprechen und ihn dabei möglichst nicht zu beleidigen.</German>
+		<Russian>На посланника была возложена деликатная задача переговорить с Королем об условиях заграничной торговли и, по возможности, при этом не обидеть Его Величество.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DONE_3</Tag>
 		<English>I'm not going to make myself even more unpopular with the king! The nobleman should go to his mistress. Long live the king! I will continue to assert the king's power here.</English>
 		<German>Von wegen, ich mache mich beim König doch nicht noch unbeliebter! Der Adlige soll sich zu seiner Mätresse scheren. Es lebe der König! Ich werde die Macht des Königs hier weiter durchsetzen.</German>
+		<Russian>Я не собираюсь делать себя посмешищем в глазах Короля! Дворянин может отправиться к своей любовнице или куда пожелает его деятельная натура. Да здравствует Король! А я продолжу укреплять здесь королевскую власть.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_3</Tag>
 		<English>It was decided not to send an envoy to Europe. This will further inflame the mood against the king and his loyalists in the colonies. Who knows what will happen now.</English>
 		<German>Es wurde darauf verzichtet einen Gesandten nach Europa zu senden. Dies wird die Stimmung gegen den König und seine Getreuen in den Kolonien noch weiter anheizen. Wer weiß was jetzt passiert.</German>
+		<Russian>Было решено не отправлять посланника в Европу. Это спровоцирует еще больше беспорядков против Короля и его сторонников в колониях. Кто знает, что произойдет дальше...</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_1A</Tag>
 		<English>The envoy is back from Europe and has made himself very unpopular. The king has become even angrier and will continue to raise taxes. This will lead to more unrest.</English>
 		<German>Der Gesandte ist aus Europa zurück und hat sich mächtig unbeliebt gemacht. Der König ist noch wütender geworden und wird die Steuern weiter erhöhen. Das wird zu mehr Unruhen führen.</German>
+		<Russian>Посол вернулся из Европы и стал крайне непопулярным. Король разозлился еще больше и пригрозил продолжать повышать налоги. Это приведёт к еще большим беспорядкам в колониях.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_1B</Tag>
 		<English>The envoy is back from Europe and has managed to calm things down a little. But the king is still more annoyed than ever and will continue to raise taxes. So the trip has achieved nothing except to consolidate his position.</English>
 		<German>Der Gesandte ist aus Europa zurück und konnte die Wogen ein wenig glätten. Aber der König ist trotzdem mehr verärgert als je zuvor und wird die Steuern weiter erhöhen. Die Reise hat also nichts gebracht, außer die Standtpunkte zu festigen.</German>
+		<Russian>Посол вернулся из Европы и сумел немного разрядить обстановку. Но король по-прежнему раздражен и продолжит повышать налоги. Так что поездка не принесла ничего, кроме укрепления его позиций.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_2A</Tag>
 		<English>The envoy is back from Europe and was able to negotiate something for the merchants. This will satisfy the merchants, but not the common people. The mood will continue to sink. At least taxes will not be increased.</English>
 		<German>Der Gesandte ist aus Europa zurück und konnte für die Händler etwas herausschlagen. Das wird zwar die Händler, aber nicht das gemeine Volk zufriedenstellen. Die Stimmung wird weiter sinken. Immerhin werden die Steuern nicht erhöht.</German>
+		<Russian>Посланник вернулся из Европы и смог договориться о послаблениях для торговцев. Однако для простого народа ничего не изменилось. Обстановка в колониях будет продалжать накаляться. Ну хотя бы налоги не будут увеличены.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_2B</Tag>
 		<English>The envoy is back from Europe and has really managed to get something for the traders. That will satisfy the traders and even the population for a while. We'll see how things develop.</English>
 		<German>Der Gesandte ist aus Europa zurück und konnte für die Händler wirklich etwas herausschlagen. Das wird für eine Weile die Händler und sogar die Bevölkerung zufriedenstellen. Wir werden sehen wie es sich entwickelt.</German>
+		<Russian>Посланник вернулся из Европы и смог договориться о некоторых послаблениях. На какое-то время это удовлетворит торговцев и даже население. Посмотрим, как дальше будут развиваться события.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_ROYAL_TROOPS</Tag>
 		<English>Citizens complain about the amount of troops of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] empire in the colonies.</English>
 		<German>Bürger beschweren sich über die vielen Truppen des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs in den Kolonien.</German>
+		<Russian>Граждане жалуются на количество войск [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] империи в колониях.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_1</Tag>
 		<English>Milord, the citizens complain that they have to feed and endure so many troops from Europe. The troops are spreading throughout the colonies. We should do something about it.</English>
 		<German>Milord, die Bürger beschweren sich, dass sie so viele Truppen aus Europa durchfüttern und erdulden müssen. Die Truppen machen sich in den Kolonien breit. Wir sollten etwas unternehmen.</German>
+		<Russian>Милорд, граждане жалуются, что им приходится кормить и обустраивать такое большое количество войск из Европы, которые были расквартированы в колониях. Мы должны что-то делать с этим.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_1</Tag>
 		<English>Yes, it seems that way to me too. We should ask the commander to send some troops back to Europe. The king won't like that, but it will calm the citizens down a bit.</English>
 		<German>Ja, scheint mir auch so. Wir sollten den Kommandeur bitten, einige Truppen nach Europa zurückzuschicken. Das wird zwar dem König nicht gefallen, aber die Bürger etwas beruhigen.</German>
+		<Russian>Да, мне тоже так кажется. Мы должны попросить командующего отправить часть войск обратно в Европу. Королю это точно не понравится, но зато немного успокоит наших граждан.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_2</Tag>
-		<English>The protection of the colonies and the expansion of the empire require sacrifices. The troops stay where they are. But I am happy to contribute something from my casket to supply the troops</English>
+		<English>The protection of the colonies and the expansion of the empire require sacrifices. The troops stay where they are. But I am happy to contribute something from my casket to supply the troops.</English>
 		<German>Der Schutz der Kolonien und die Erweiterung des Reiches erfordern nun mal Opfer. Die Truppen bleiben wo sie sind. Aber ich bin gerne bereit etwas aus meiner Schatulle zur Versorgung der Truppen beizusteuern.</German>
+		<Russian>Защита колоний и расширение империи требуют жертв. Войска останутся там, где они есть. Я с удовольствием пожертвую небольшую часть средств из своей казны на снабжение войск.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_3</Tag>
-		<English>The protection of the colonies and the expansion of the empire require sacrifices. The troops stay where they are. But I can understand people's concerns. We will contribute generously to the provisioning and compensate for any damage caused by the troops in the colonies</English>
+		<English>The protection of the colonies and the expansion of the empire require sacrifices. The troops stay where they are. But I can understand people's concerns. We will contribute generously to the provisioning and compensate for any damage caused by the troops in the colonies.</English>
 		<German>Der Schutz der Kolonien und die Erweiterung des Reiches erfordern nun mal Opfer. Die Truppen bleiben wo sie sind. Aber ich kann die Sorgen der Leute verstehen. Wir werden uns großzügig an der Verproviantierung beteiligen und etwaige Schäden ersetzen, die in den Kolonien durch die Truppen verursacht werden.</German>
+		<Russian>Я понимаю обеспокоенность людей, но эти войска здесь для нашей же защиты. Мы будем компенсировать обеспечение солдат продовольствием, а также возмещать любой ущерб, причиненный войсками.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_1</Tag>
 		<English>Milord, a neighboring Indian village wants to trade with us for mutual benefit. We should definitely send a wagon train and start trading relations. That can only be beneficial.</English>
 		<German>Milord, ein benachbartes Indianerdorf möchte zum gegenseitigen Vorteil Handel mit uns treiben. Wir sollten unbedingt einen Wagenzug entsenden und Handelsbeziehungen beginnen. Das kann nur von Vorteil sein.</German>
+		<Russian>Милорд, индейцы из соседней деревни хотят торговать с нами, обещая взаимную выгоду. Нам обязательно следует отправить к ним обоз и начать торговлю. Это предприятие сулит хорошую прибыль.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE</Tag>
 		<English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train sets out into the wilderness to trade.</English>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug bricht zum Handel in die Wildnis auf.</German>
+		<Russian>Торговый обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправляется в дикую местность для торговли с туземцами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_HELP</Tag>
 		<English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the neighboring Native village within %d3 rounds that likes to trade with you. Take trade goods from Europe or other goods that you have produced locally. It's up to you what you want to trade.</English>
 		<German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem benachbarten Indianer-Dorf, das mit Euch Handel treibem möchte. Nehmt Handelswaren aus Europa mit oder andere Waren, die ihr vor Ort produziert habt. Es bleibt Euch überlassen, mit was Ihr handeln wollt.</German>
+		<Russian>Отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в соседнюю деревню индейцев, которые хотят торговать с вами, в течение %d3 раундов. Возьмите с собой мануфактуру из Европы или другие товары, которые вы произвели в своих поселениях. Чем вы будете торговать, зависит только от вас.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS</Tag>
 		<English>Unfortunately you have waited too long. The Indian village can't or doesn't want to trade with you at the moment. The wagon train is now available for other uses.</English>
 		<German>Ihr habt leider zulange gewartet. Das Indianerdorf kann oder möchte gegenwärtig keinen Handel mit Euch treiben. Ihr könnt den Wagenzug nun wieder anderweitig verwenden.</German>
+		<Russian>К сожалению, вы слишком долго ждали. В данный момент индейцы не могут или не хотят торговать с вами. Вы можете перенаправить транспорт на другие торговые маршруты.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE</Tag>
 		<English>Milord, our wagon train has reached the Native village. What happens next?</English>
 		<German>Milord, unser Wagenzug hat das Indianer-Dorf erreicht. Wie geht es weiter?</German>
+		<Russian>Милорд, наш транспорт добрался до деревни индейцев. Что будем делать дальше?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_1</Tag>
 		<English>We should seize this opportunity. If trade goes well, we could gain allies who will give us an advantage in the competition with our European rivals.</English>
 		<German>Diese Gelegenheit sollten wir nutzen. Wenn der Handel gut läuft, dann könnten wir damit Verbündete gewinnen, die uns im Wettstreit mit unseren europäischen Konkurrenten einen Vorteil verschaffen.</German>
+		<Russian>Нам необходимо воспользоваться этой возможностью. Если торговля пойдёт хорошо, мы сможем обрести союзников, которые дадут нам преимущество в конкурентной борьбе с нашими европейскими соперниками.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_1</Tag>
 		<English>We shouldn't overreach the Indians right from the first trade. Establishing trade relations currently is more important to me than the gold for our goods.</English>
 		<German>Wir sollten die Indianer nicht gleich beim ersten Handel übervorteilen. Der Aufbau der Handelsbeziehungen ist mir gegenwärtig wichtiger als das Gold für unsere Waren.</German>
+		<Russian>Мы не должны требовать больших скидок от индейцев с первой же сделки. Установление хороших торговых отношений сейчас для меня важнее, чем золото.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2</Tag>
 		<English>We can negotiate with the Indians, but we should remain fair. We should also stay in the village for a while and see if we can't negotiate a bit more.</English>
 		<German>Wir können ruhig kräftig mit den Indianern verhandeln, sollten aber fair bleiben. Wir sollten eine Weile in dem Dorf bleiben und sehen, ob wir nicht noch etwas mehr herausschlagen können.</German>
+		<Russian>Нам нужно вести торговые переговоры с индейцами, но мы должны оставаться справедливыми. И предлагаю остаться в деревне на какое-то время и посмотреть, сможем ли мы договориться ещё о чем-нибудь.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_3</Tag>
 		<English>Get out everything you can. After all, the natives wanted this trade. Now let them see how Europeans negotiate!</English>
 		<German>Holt alles raus, was ihr könnt. Immerhin wollten ja die Indianer diesen Handel. Nun sollen sie mal sehen, wie Europäer verhandeln!</German>
+		<Russian>Забирайте всё, что сможете. В конце концов, индейцы сами хотели этой торговли. Сейчас мы им покажем, как нужно вести переговоры по-европейски!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_4</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trade with the natives was successful.</English>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Handel mit den Ureinwohnern war von Erfolg gekrönt!</German>
+		<Russian>Торговля [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] с индейцами прошла успешно.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_5</Tag>
@@ -5833,5 +5883,6 @@
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_6</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trade with the natives was ultimately too aggressive. The Indians are a bit disgruntled!</English>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Handel mit den Ureinwohnern war letztlich zu agressiv. Die Indianer sind etwas verstimmt!</German>
+		<Russian>Индейцы крайне недовольны агрессивными методами ведения торговли со стороны [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]!</Russian>
 	</TEXT>
 </Civ4GameText>
