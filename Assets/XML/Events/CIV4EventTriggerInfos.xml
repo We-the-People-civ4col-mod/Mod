@@ -39147,7 +39147,7 @@
 				<UnitClass>UNITCLASS_GOVERNOR</UnitClass>
 			</UnitsRequired>
 			<iNumUnits>20</iNumUnits>
-			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iNumUnitsGlobal>20</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
@@ -39295,7 +39295,7 @@
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>3000</iMinTreasury>
-			<iMinPopulation>15</iMinPopulation>
+			<iMinPopulation>80</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -39305,11 +39305,11 @@
 				<UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
 			</UnitsRequired>
 			<iNumUnits>15</iNumUnits>
-			<iNumUnitsGlobal>0</iNumUnitsGlobal>
+			<iNumUnitsGlobal>15</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
-			<bUnitsOnPlot>1</bUnitsOnPlot>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
 			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
@@ -39325,9 +39325,7 @@
 				<Event>EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_2</Event>
 				<Event>EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_3</Event>
 			</Events>
-			<PrereqEvents>
-				<Event>EVENT_REVOLUTIONARY_EVENTS_START_QUEST</Event>
-			</PrereqEvents>
+			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>
 			<bRecurring>0</bRecurring>
 			<bTeam>0</bTeam>
@@ -39338,7 +39336,7 @@
 			<bOtherPlayerNative>0</bOtherPlayerNative>
 			<bOtherPlayerPlayable>0</bOtherPlayerPlayable>
 			<iOtherPlayerShareBorders>0</iOtherPlayerShareBorders>
-			<bPickCity>1</bPickCity>
+			<bPickCity>0</bPickCity>
 			<bPickOtherPlayerCity>0</bPickOtherPlayerCity>
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
@@ -39506,12 +39504,12 @@
 			<bSinglePlayer>0</bSinglePlayer>
 			<EventArt>,Art/EventImages/revolution.dds</EventArt>
 			<iPercentGamesActive>100</iPercentGamesActive>
-			<iWeight>2000</iWeight>
+			<iWeight>3000</iWeight>
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>1</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>0</iMinTreasury>
-			<iMinPopulation>0</iMinPopulation>
+			<iMinPopulation>15</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -39520,19 +39518,19 @@
 			<UnitsRequired>
 				<UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
 			</UnitsRequired>
-			<iNumUnits>1</iNumUnits>
+			<iNumUnits>5</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
-			<bUnitsOnPlot>1</bUnitsOnPlot>
+			<bUnitsOnPlot>0</bUnitsOnPlot>
 			<BuildingsRequired>
 				<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
 			</BuildingsRequired>
 			<iNumBuildings>3</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
-			<bOwnPlot>0</bOwnPlot>
+			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
@@ -39560,8 +39558,8 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
-			<PythonCanDoCity>canDoNotInRevolution</PythonCanDoCity>
+			<PythonCanDo>CheckInfantryTheRoyals</PythonCanDo>
+			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
 		</EventTriggerInfo>
@@ -39585,7 +39583,7 @@
 			<bProbabilityBuildingMultiply>1</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>4000</iMinTreasury>
-			<iMinPopulation>0</iMinPopulation>
+			<iMinPopulation>15</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -39594,7 +39592,7 @@
 			<UnitsRequired>
 				<UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
 			</UnitsRequired>
-			<iNumUnits>1</iNumUnits>
+			<iNumUnits>5</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
@@ -39606,7 +39604,7 @@
 			<iNumBuildings>3</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
-			<bOwnPlot>0</bOwnPlot>
+			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
@@ -39633,7 +39631,7 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>CheckInfantryTheRoyals</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -39658,7 +39656,7 @@
 			<bProbabilityBuildingMultiply>1</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>4000</iMinTreasury>
-			<iMinPopulation>0</iMinPopulation>
+			<iMinPopulation>15</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -39667,7 +39665,7 @@
 			<UnitsRequired>
 				<UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
 			</UnitsRequired>
-			<iNumUnits>1</iNumUnits>
+			<iNumUnits>5</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
@@ -39679,7 +39677,7 @@
 			<iNumBuildings>3</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
-			<bOwnPlot>0</bOwnPlot>
+			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
@@ -39706,7 +39704,7 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>CheckInfantryTheRoyals</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -39731,7 +39729,7 @@
 			<bProbabilityBuildingMultiply>1</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>2000</iMinTreasury>
-			<iMinPopulation>0</iMinPopulation>
+			<iMinPopulation>15</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -39740,7 +39738,7 @@
 			<UnitsRequired>
 				<UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
 			</UnitsRequired>
-			<iNumUnits>1</iNumUnits>
+			<iNumUnits>5</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
@@ -39752,7 +39750,7 @@
 			<iNumBuildings>3</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
-			<bOwnPlot>0</bOwnPlot>
+			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
@@ -39779,7 +39777,7 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>CheckInfantryTheRoyals</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -39804,7 +39802,7 @@
 			<bProbabilityBuildingMultiply>1</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>4000</iMinTreasury>
-			<iMinPopulation>0</iMinPopulation>
+			<iMinPopulation>15</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
 			<iMinOurLandmass>0</iMinOurLandmass>
@@ -39813,19 +39811,19 @@
 			<UnitsRequired>
 				<UnitClass>UNITCLASS_EUROPEAN_LINE_INFANTRY</UnitClass>
 			</UnitsRequired>
-			<iNumUnits>1</iNumUnits>
+			<iNumUnits>5</iNumUnits>
 			<iNumUnitsGlobal>0</iNumUnitsGlobal>
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			<bUnitsOnPlot>0</bUnitsOnPlot>
 			<BuildingsRequired>
-				<BuildingClass>BUILDINGCLASS_PALACE</BuildingClass>
+				<BuildingClass>BUILDINGCLASS_NEWSPAPER</BuildingClass>
 			</BuildingsRequired>
-			<iNumBuildings>3</iNumBuildings>
+			<iNumBuildings>1</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>0</iNumPlotsRequired>
-			<bOwnPlot>0</bOwnPlot>
+			<bOwnPlot>1</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
@@ -39852,7 +39850,7 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo/>
+			<PythonCanDo>CheckInfantryTheRoyals</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>

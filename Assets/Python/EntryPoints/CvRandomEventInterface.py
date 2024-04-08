@@ -8327,10 +8327,9 @@ def CheckJudgeInCity(argsList):
 
 	return True
 
-def CheckInfantryInCity(argsList):
+def CheckInfantryTheRoyals(argsList):
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
-
 	if not player.isPlayable():
 		return False
 
@@ -8346,7 +8345,16 @@ def CheckInfantryInCity(argsList):
 
 	iUnitType = CvUtil.findInfoTypeNum('UNIT_EUROPEAN_LINE_INFANTRY')
 	iUnitsCurrent = countUnits(argsList, iUnitType)
-	if iUnitsCurrent > 0:
+	if not iUnitsCurrent > 5:
+		return False
+
+	city = player.getCity(kTriggeredData.iCityId)
+	unit = player.getUnit(kTriggeredData.iUnitId)
+	if city.isNone():
+		return False
+
+	if city.getX() == unit.getX() and city.getY() == unit.getY():
 		return True
+
 	return False
 
