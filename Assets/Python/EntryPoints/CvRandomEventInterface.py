@@ -1607,6 +1607,16 @@ def getHelpNativeNeighborTrade5(argsList):
 	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_EXPERT_TRADER'))
 	szHelp = localText.getText("TXT_KEY_EVENT_BONUS_UNIT", (1, UnitClass.getTextKey(), ))
 	return szHelp
+
+def getHelpNativeNeighborTrade2(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_TREK'))
+	szHelp = localText.getText("TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_HELP", (UnitClass.getTextKey(), city.getNameKey(), event.getGenericParameter(1)))
+	return szHelp
 	
 ####### The Royals Event ########
 	
@@ -3024,6 +3034,31 @@ def isNativeVillageAndHuman(argsList):
 	if not gc.getPlayer(plot.getOwner()).isNative():
 		return False
 	return True
+
+def isNativeVillageAndHumanTrade(argsList):
+	pTriggeredData = argsList[0]
+	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
+	player = gc.getPlayer(pTriggeredData.ePlayer)
+	if not player.isHuman():
+		return False
+	if not plot.isCity():
+		return False
+	if not gc.getPlayer(plot.getOwner()).isNative():
+		return False
+	iUnitType = CvUtil.findInfoTypeNum('UNIT_TREK')
+	iUnitsCurrent = countUnits(argsList, iUnitType)
+	if not iUnitsCurrent > 5:
+		return False
+	return True
+
+def canTriggerInitialNativeTrade(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	iAchieve = gc.getInfoTypeForString("ACHIEVE_FOUR_COLONIES")
+	#CyInterface().addImmediateMessage("iAchieve "+str(iAchieve), "")
+	if player.isAchieveGained(iAchieve):
+		return True
+	return False
 
 ######## Coca Events ###########
 def canTriggerCocaEvent(argsList):
