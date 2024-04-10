@@ -5955,4 +5955,29 @@
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Handel mit den Ureinwohnern war letztlich zu agressiv. Der Anführer und seine Krieger sind sauer! Sie werden uns vielleicht auf dem Rückweg angreifen.</German>
 		<Russian>Индейцы крайне недовольны агрессивными методами ведения торговли со стороны [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]!</Russian>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_INITIAL_TRADE_WITH_NATIVES_1</Tag>
+		<English>The native women of a nearby indian village have heard about our offer of blankets, pots, beads and other goods. Now they have sent their men to procure these beautiful things for them. The men have not brought any riches with them, but promise us a little food in exchange.</English>
+		<German>Die Ureinwohner-Frauen eines nahegelegenen Dorfes haben von unserem Angebot an Decken, Töpfen, Perlen und derlei gehört. Nun haben sie ihre Männer losgeschickt, ihnen diese schönen Dinge zu beschaffen. Die Männer haben keine Reichtümer mitgebracht, versprechen uns aber ein wenig Nahrung als Tauschware.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_INITIAL_TRADE_WITH_NATIVES</Tag>
+		<English>Native people come to the cities of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] empire for trade.</English>
+		<German>Ureinwohner kommen zum Handeln in die Städte des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_INITIAL_TRADE_WITH_NATIVES_1</Tag>
+		<English>They can keep their supplies. Give them a few crates of trade goods. That's money well spent.</English>
+		<German>Sie können ihre Vorräte behalten. Gebt ihnen ruhig einige Kisten mit Handelswaren. Das ist gut investiertes Geld.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_INITIAL_TRADE_WITH_NATIVES_2</Tag>
+		<English>They have to offer us more than just a bit of corn and berries. Send them away. They should only come back when they have something worthwhile to offer us.</English>
+		<German>Da müssen sie uns schon mehr bieten als das bischen Mais und Beeren. Schickt sie weg. Sie sollen erst wiederkommen, wenn sie etwas anbieten können, das sich für uns lohnt.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_INITIAL_TRADE_WITH_NATIVES_3</Tag>
+		<English>Yes, of course. Give them plenty of everything they want in exchange for the food. If the Indian women are happy, the men are happy, too and we don't have to worry too much about raids for the time being.</English>
+		<German>Ja, natürlich. Gebt Ihnen im Tausch für die Nahrung reichlich von allem, was sie haben möchten. Sind die Indianer-Frauen glücklich, sind es die Männer auch und wir müssen uns erst einmal keine großen Sorgen um Überfälle machen.</German>
+	</TEXT>
 </Civ4GameText>

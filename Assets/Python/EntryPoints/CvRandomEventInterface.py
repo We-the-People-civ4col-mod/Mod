@@ -3060,6 +3060,85 @@ def canTriggerInitialNativeTrade(argsList):
 		return True
 	return False
 
+######## Initial Native Trade Event ###########
+
+def canTriggerInitialNativeTradeNew(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return False
+	city = player.getCity(kTriggeredData.iCityId)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	if player.isNone() or player2.isNone() :
+		return False
+	if city.isNone():
+		return False
+	# Read Parameter 1 from the first event and check if enough yield is stored in city
+	eEvent1 = gc.getInfoTypeForString("EVENT_INITIAL_TRADE_WITH_NATIVES_1")
+	event1 = gc.getEventInfo(eEvent1)
+	iYield = gc.getInfoTypeForString("YIELD_TRADE_GOODS")
+	quantity = event1.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return False
+	return True
+
+def applyInitialNativeTrade(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	nativecity = player2.getCity(kTriggeredData.iOtherPlayerCityId)
+	iYield = gc.getInfoTypeForString("YIELD_TRADE_GOODS")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
+	city.changeYieldStored(iYield, quantity)
+	nativecity.changeYieldStored(iYield, -quantity)
+
+def getHelpInitialNativeTrade1(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	nativecity = player2.getCity(kTriggeredData.iOtherPlayerCityId)
+	iYield = gc.getInfoTypeForString("YIELD_TRADE_GOODS")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	szHelp = ""
+	if event.getGenericParameter(1) <> 0 :
+		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_YIELD_GAIN", (-quantity,  gc.getYieldInfo(iYield).getChar(), nativecity.getNameKey()))
+	return szHelp
+
+def canApplyInitialNativeTrade3(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	if player.isNone() or player2.isNone() :
+		return False
+	if city.isNone():
+		return False
+	# Read Parameter 1 from event and check if enough yield is stored in city
+	iYield = gc.getInfoTypeForString("YIELD_TRADE_GOODS")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return False
+	return True
+
 ######## Coca Events ###########
 def canTriggerCocaEvent(argsList):
 	ePlayer = argsList[1]
