@@ -5830,7 +5830,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_HELP</Tag>
 		<English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the neighboring Native village within %d3 rounds that likes to trade with you. Take trade goods from Europe or other goods that you have produced locally. It's up to you what you want to trade.</English>
-		<German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem benachbarten Indianer-Dorf, das mit Euch Handel treibem möchte. Nehmt Handelswaren aus Europa mit oder andere Waren, die ihr vor Ort produziert habt. Es bleibt Euch überlassen, mit was Ihr handeln wollt.</German>
+		<German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem benachbarten Indianer-Dorf, das mit Euch Handel treiben möchte. Nehmt Handelswaren aus Europa mit oder andere Waren, die ihr vor Ort produziert habt. Es bleibt Euch überlassen, mit was Ihr handeln wollt.</German>
 		<Russian>Отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в соседнюю деревню индейцев, которые хотят торговать с вами, в течение %d3 ходов. Возьмите с собой [COLOR_SELECTED_TEXT]мануфактуру[COLOR_REVERT] из Европы или другие товары, которые вы произвели в своих поселениях. Чем вы будете торговать, зависит только от вас.</Russian>
 	</TEXT>
 	<TEXT>
@@ -5979,5 +5979,65 @@
 		<Tag>TXT_KEY_EVENT_INITIAL_TRADE_WITH_NATIVES_3</Tag>
 		<English>Yes, of course. Give them plenty of everything they want in exchange for the food. If the Indian women are happy, the men are happy, too and we don't have to worry too much about raids for the time being.</English>
 		<German>Ja, natürlich. Gebt Ihnen im Tausch für die Nahrung reichlich von allem, was sie haben möchten. Sind die Indianer-Frauen glücklich, sind es die Männer auch und wir müssen uns erst einmal keine großen Sorgen um Überfälle machen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_TRADE_WITH_NATIVES_BETRAYAL_1</Tag>
+		<English>The native women of a nearby indian village have heard about our offer of blankets, pots, beads and other goods. Now they have sent their men to procure these beautiful things for them. The men have not brought any riches with them, but promise us a little food in exchange.</English>
+		<German>Milord, Krieger eines nahegelegenen Dorfes sind zu uns gekommen und möchten wieder mit uns handeln. Ihre Frauen verlangen nach den üblichen Handelswaren. Insbesondere Decken für den kalten Winter sind dieses Jahr sehr gefragt. </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_TRADE_WITH_NATIVES_BETRAYAL</Tag>
+		<English>The native people of a neighboring village want to trade with the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] empire.</English>
+		<German>Ureinwohner eines benachbarten Dorfes wollen wieder mit dem [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich handeln.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVES_BETRAYAL_1</Tag>
+		<English>They can keep their supplies. Give them a few crates of trade goods. That's money well spent.</English>
+		<German>Wir handeln doch immer gerne. Sagt ihnen, dass wir bald Händler zu Ihnen schicken werden.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVE_BETRAYAL_HELP</Tag>
+		<English>Within %d3 turns, send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the neighboring native village that wants to trade with you. But be warned, the trader are up to something. Check the goods again beforehand. If you sell the natives bad goods, they will get angry.</English>
+		<German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem benachbarten Indianer-Dorf, das mit Euch Handel treiben möchte. Aber seid gewarnt, die Händler führen etwas im Schilde. Kontrolliert die Waren vorher noch einmal. Verkauft ihr den Ureinwohnern schlechte Waren, werden sie wütend werden.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_TRADE_WITH_NATIVES_BETRAYAL_2</Tag>
+		<English>Milord, we have received word that our traders have reached the native settlements. The convoy can now set off.</English>
+		<German>Milord, wir erhielten Nachricht, dass unsere Händler die Dörfer der Ureinwohner erreicht haben. Die Wagenkolonne kann sich nun auf den Weg machen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVES_BETRAYAL_2_1</Tag>
+		<English>The native people of a neighboring village want to trade with the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] empire.</English>
+		<German>Ureinwohner eines benachbarten Dorfes wollen wieder mit dem [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich handeln.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_FAIL_TRADE_WITH_NATIVES_BETRAYAL_2</Tag>
+		<English>Unfortunately you have waited too long. The Indian village can't or doesn't want to trade with you at the moment. The trek is now available for other uses.</English>
+		<German>Ihr habt leider zulange gewartet. Das Indianerdorf kann oder möchte gegenwärtig keinen Handel mit Euch treiben. Ihr könnt den Treck nun wieder anderweitig verwenden.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_TRADE_WITH_NATIVES_BETRAYAL_2_DONE</Tag>
+		<English>Devious Händler erreichen die indischen Dörfer.</English>
+		<German>Verschlagene Händler erreichen die Indianerdörfer. </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVES_BETRAYAL_2_DONE_1</Tag>
+		<English>Milord, the wagon train has reached the Indian village. But something is wrong here. The traders look slyly over at the Indians, who are eagerly awaiting the goods. Now it dawns on you - the goods are spoiled and the blankets are moldy, perhaps even infected with smallpox. But there is nothing more you can do, the greed of the traders has won out.</English>
+		<German>Milord, die Wagenkolonne hat das Indianerdorf erreicht. Aber irgend etwas stimmt hier nicht. Die Händler blicken verschlagen zu den Indianern herüber, die begierig den Waren entgegensehen. Jetzt geht Euch ein Licht auf - die Waren sind verdorben und die Decken verschimmelt, vielleicht sogar mit Pocken infiziert. Aber ihr könnt nichts mehr tun, die Gier auf Seiten der Händler hat gesiegt. Ihr solltet machen, dass ihr da wegkommt!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVES_BETRAYAL_2_DONE</Tag>
+		<English>Greedy traders sell spoiled and moldy goods to the natives.</English>
+		<German>Gierige Händler verkaufen den Ureinwohnern verdorbene und verschimmelte Waren.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_TRADE_WITH_NATIVES_BETRAYAL_3</Tag>
+		<English>Natives are deeply disappointed by Europeans and their fraud with traded goods.</English>
+		<German>Ureinwohner sind zutiefst enttäuscht von den Europäern und ihrem Betrug mit gehandelten Waren.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVES_BETRAYAL_3</Tag>
+		<English>What have the trader done! Gambled away all trust with a wagonload. The natives will take revenge after many of their women, children and warriors have died as a result of the tainted goods. We must be prepared!</English>
+		<German>Was haben die Händler getan! Mit einer Wagenladung alles Vertrauen verspielt. Die Ureinwohner werden sich rächen, nachdem viele ihrer Frauen, Kinder und Krieger an den Folgen der verdorbenen Waren umgekommen sind. Wir müssen uns wapnen!</German>
 	</TEXT>
 </Civ4GameText>

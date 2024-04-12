@@ -1617,6 +1617,16 @@ def getHelpNativeNeighborTrade2(argsList):
 	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_TREK'))
 	szHelp = localText.getText("TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_HELP", (UnitClass.getTextKey(), city.getNameKey(), event.getGenericParameter(1)))
 	return szHelp
+
+def getHelpNativeNeighborTradeBetrayal(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_TREK'))
+	szHelp = localText.getText("TXT_KEY_EVENT_TRADE_WITH_NATIVE_BETRAYAL_HELP", (UnitClass.getTextKey(), city.getNameKey(), event.getGenericParameter(1)))
+	return szHelp
 	
 ####### The Royals Event ########
 	
@@ -3051,7 +3061,7 @@ def isNativeVillageAndHumanTrade(argsList):
 		return False
 	return True
 
-def canTriggerInitialNativeTrade(argsList):
+def canTriggerNativeMilitaryDragoon(argsList):
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	iAchieve = gc.getInfoTypeForString("ACHIEVE_FOUR_COLONIES")
@@ -3060,9 +3070,11 @@ def canTriggerInitialNativeTrade(argsList):
 		return True
 	return False
 
+
+
 ######## Initial Native Trade Event ###########
 
-def canTriggerInitialNativeTradeNew(argsList):
+def canTriggerInitialNativeTrade(argsList):
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	if not player.isPlayable():
