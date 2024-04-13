@@ -5962,7 +5962,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_INITIAL_TRADE_WITH_NATIVES</Tag>
-		<English>Native people come to the cities of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] empire for trade.</English>
+		<English>Native people come to the cities of the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] empire for trade.</English>
 		<German>Ureinwohner kommen zum Handeln in die Städte des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs.</German>
 	</TEXT>
 	<TEXT>
@@ -6039,5 +6039,45 @@
 		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVES_BETRAYAL_3</Tag>
 		<English>What have the trader done! Gambled away all trust with a wagonload. The natives will take revenge after many of their women, children and warriors have died as a result of the tainted goods. We must be prepared!</English>
 		<German>Was haben die Händler getan! Mit einer Wagenladung alles Vertrauen verspielt. Die Ureinwohner werden sich rächen, nachdem viele ihrer Frauen, Kinder und Krieger an den Folgen der verdorbenen Waren umgekommen sind. Wir müssen uns wapnen!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_STIRRED_UP_NATIVES_INITIAL_1</Tag>
+		<English>Milord, some Indians from the nearby villages are increasingly [COLOR_HIGHLIGHT_TEXT]complaining[COLOR_REVERT] about the many [COLOR_HIGHLIGHT_TEXT]soldiers[COLOR_REVERT] stationed in our colonies. They feel threatened and demand that we send some of them back across the big water - that means back to Europe.</English>
+		<German>Milord, einige Indianer aus den nahegelegenen Dörfern [COLOR_HIGHLIGHT_TEXT]beschweren[COLOR_REVERT] sich immer häufiger über die vielen [COLOR_HIGHLIGHT_TEXT]Soldaten[COLOR_REVERT], die in unseren Kolonien stationiert sind. Sie fühlen sich bedroht und verlangen, dass wir einige von Ihnen zurück über das große Wasser schicken - zurück nach Europa also.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_INITIAL_1</Tag>
+		<English>So, do they? Well, as the Indians rightly point out, we have a lot of soldiers here. So we have nothing to fear from the Indians. Tell them....so...um, tell them what you like. The troops are staying here anyway.</English>
+		<German>So, tun sie das? Nun, wie die Indianer richtig bemerken, haben wir hier viele Soldaten. Wir haben die Indianer also nicht zu fürchten. Sagt Ihnen....also...ähm, ach sagt ihnen doch was Ihr wollt. Die Truppen bleiben jedenfalls hier.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_STIRRED_UP_NATIVES_INITIAL</Tag>
+		<English>Some natives are disgruntled about the many soldiers of the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] empire.</English>
+		<German>Einige Ureinwohner sind verstimmt über die vielen Soldaten im Dienste des [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Königreichs.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_STIRRED_UP_NATIVES_HORSES_1</Tag>
+		<English>Milord, some Indians from a nearby village [COLOR_HIGHLIGHT_TEXT]are worried[COLOR_REVERT] and at the same time fascinated by our mounted troops. They want you to send the soldiers away. However, they are obviously very fond of the [COLOR_HIGHLIGHT_TEXT]horses [COLOR_REVERT] and "demand" them as a gift.</English>
+		<German>Milord, einige Indianer aus einem nahegelegenen Dorf [COLOR_HIGHLIGHT_TEXT]sind besorgt[COLOR_REVERT] und gleichzeitig fasziniert von unseren berittenen Truppen. Sie möchten, dass ihr die Soldaten wegschickt. Allerdings finden sie offenbar großen Gefallen an den [COLOR_HIGHLIGHT_TEXT]Pferden [COLOR_REVERT] und "verlangen" sie als Geschenk.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_1</Tag>
+		<English>Yes, I understand that. We're starting to spread out quite a bit here and our troops are very intimidating. Well, we need a few more settlers anyway. Send the troops to the barracks and give the Indians the horses as a sign of goodwill. The soldiers can make themselves useful in the colony in other ways.</English>
+		<German>Ja, das verstehe ich. Wir machen uns hier langsam ziemlich breit und unsere Truppen sind ja auch sehr einschüchternd. Nun gut, wir brauchen sowieso noch einige Siedler. Schickt die Truppe in die Kaserne und schenkt den Indianern als Zeichen des guten Willens die Pferde. Die Soldaten können sich in der Kolonie anders nützlich machen. </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_2</Tag>
+		<English>So. All right, a serious situation. But we can't just leave all the Pfere to you. They would make fun of us. The troops stay where they are. Let the Indians leave without them.</English>
+		<German>Soso. Nun gut, eine ernste Situation. Aber wir können Ihnen ja nicht einfach die ganzen Pferde überlassen. Man würde über uns spotten. Die Truppe bleibt wo sie ist. Die Indianer sollen ohne sie abziehen.</German>
+	</TEXT>	
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_WN_1</Tag>
+		<English>Some of the mounted troops of the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] have been disbanded and are now to become settlers..</English>
+		<German>Ein Teil der berittenen Truppen des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs wurde aufgelöst und soll nun zu Siedlern werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_WN_2</Tag>
+		<English>The atmosphere between the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] empire and some of the natives is deteriorating.</English>
+		<German>Die Stimmung zwischen dem [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich und einigen Ureinwohnern verschlechtert sich.</German>
 	</TEXT>
 </Civ4GameText>
