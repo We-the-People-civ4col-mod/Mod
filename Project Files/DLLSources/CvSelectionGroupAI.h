@@ -97,6 +97,19 @@ private:
 	// R&R mod, vetiarvind, max yield import limit - end
 
 	void processTradeRoute(CvTradeRoute* pRoute, std::map<IDInfo, int>& cityValues, std::vector<CvTradeRoute*>& routes, std::vector<int>& routeValues, std::vector<bool>& yieldsDelivered, std::vector<bool>& yieldsToUnload);
+
+	bool isCoastalTransport();
+	std::set<int>::iterator humanOrNonAutomaticFull(std::set<int>::iterator it, CvPlayerAI &kOwner, const IDInfo kEurope, std::map<IDInfo, int> cityValues, std::vector<CvTradeRoute *> routes, std::vector<int> routeValues, std::vector<bool> yieldsDelivered, std::vector<bool> yieldsToUnload, const bool bIgnoreDanger);
+	void hasCargo(std::vector<bool> yieldsToUnload, std::vector<bool> yieldsDelivered, CvCity* pPlotCity);
+	void AIOrAutomaticFull(CvPlayerAI &kOwner, const IDInfo kEurope, bool bCoastalTransport, std::map<IDInfo, int> cityValues, std::vector<CvTradeRoute *> routes, std::vector<int> routeValues, std::vector<bool> yieldsDelivered, std::vector<bool> yieldsToUnload);
+	bool doRouteStuff(std::vector<CvTradeRoute *> &routes, const bool bNoCargo, std::map<IDInfo, int> cityValues, const bool bIgnoreDanger, short * aiYieldsLoaded, const IDInfo kEurope, CvPlayerAI &kOwner, CvCity* pPlotCity, std::vector<int> &routeValues);
+	void hasCargo(std::vector<CvTradeRoute *> &routes, CvCity* pPlotCity, short * aiYieldsLoaded, const bool bIgnoreDanger, CvPlayerAI &kOwner, std::map<IDInfo, int> cityValues, std::vector<int> &routeValues);
+	bool bestDestinationAmerica(IDInfo kBestDestination, const bool bIgnoreDanger);
+	bool checkPath(IDInfo &kBestDestination, CvPlayerAI &kOwner, const bool bIgnoreDanger);
+	void doCalculationTradeRoutes(std::vector<CvTradeRoute *> &routes, CvCity* pPlotCity, IDInfo kBestDestination, const bool bIgnoreDanger, short * aiYieldsLoaded, CvPlayerAI &kOwner);
+	void findBestDestination(std::map<IDInfo, int> &cityValues, const bool bIgnoreDanger, CvPlayerAI &kOwner, bool bCoastalTransport, int &iBestDestinationValue, IDInfo &kBestDestination);
+
+
 };
 
 #endif
