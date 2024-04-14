@@ -6145,5 +6145,81 @@
 		<English>The natives will [COLOR_FONT_GOLD]attack[COLOR_REVERT] the colony. Only recommended if the space around the colony is not occupied by any unit.</English>
 		<German>Die Indianer werden die Siedlung [COLOR_FONT_GOLD]angreifen[COLOR_REVERT]. Nur zu empfehlen, wenn der Platz rund um die Kolonie nicht von irgendeiner Einheit besetzt ist.</German>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_WHALING_TRIP_1</Tag>
+		<English>Milord, the crew of one of our fishing boats claim to have seen a huge white whale at sea, the biggest whale they have ever seen. We shouldn't miss out on that.</English>
+		<German>Milord, die Besatung eines unserer Fischerboote behauptet, sie habe auf dem Meer einen gewaltigen weißen Wal gesehen, so groß wie noch nie ein Wal zuvor gewesen sei. Das sollten wir uns nicht entgehen lassen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALING_TRIP_1</Tag>
+		<English>In any case, the whalers should take a look. Where there's one whale, there's bound to be more. I assume it is worth doing it.</English>
+		<German>Auf jeden Fall sollten sich die Walfänger das mal ansehen. Wo ein Wal ist, sind bestimmt noch mehr zu finden. Ich wittere reiche Beute.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_FAIL_WHALING_TRIP</Tag>
+		<English>Unfortunately, your whalers were unable to track down the legendary white whale.</English>
+		<German>Eure Walfänger haben den legendären weißen Wal leider nicht aufstöbern können.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALING_TRIP_HELP</Tag>
+		<English>[ICON_BULLET] Within [COLOR_UNIT_TEXT]30[COLOR_REVERT] turns, send a unit of [COLOR_UNIT_TEXT]whaling boat[COLOR_REVERT] to the position at sea where the crew of the fishing boat claims to have seen the white whale.</English>
+		<German>[ICON_BULLET] Schickt innerhalb von [COLOR_UNIT_TEXT]30[COLOR_REVERT] Runden eine Einheit [COLOR_UNIT_TEXT]Walfänger[COLOR_REVERT] zu der Position auf See, wo die Besatzung des Fischerboots den weißen Wal gesehen haben will.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_PYTHON</Tag>
+		<English>[ICON_BULLET] Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to .</English>
+		<German>[ICON_BULLET] Die [COLOR_UNIT_TEXT]Buckelwale[COLOR_REVERT] in der Nähe sind gefährlich. Seid gewarnt, sie werden Euch vermutlich angreifen!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRIGGER_WHALING_TRIP_DONE</Tag>
+		<English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] whaling boat set sail to find the legendary white whale.</English>
+		<German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Walfänger ist in See gestochen, um den legendären weißen Wal zu finden.</German>
+	</TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_1</Tag>
+		<English>Milord, our men have the best lookout on board, but couldn't find the great white whale. Nevertheless, there are [COLOR_HIGHLIGHT_TEXT]plenty of whales[COLOR_REVERT] in the area. It seems the fishermen were right about that at least. We stay nearby for a while, maybe we'll find the whale - or it will find us.</English>
+		<German>Milord, unsere Männer haben den besten Ausguck an Bord, konnten den großen weißen Wal aber nicht finden. Trotzdem gibt es in dem Gebiet [COLOR_HIGHLIGHT_TEXT]reichlich Wale[COLOR_REVERT]. Es scheint, als hätten die Fischer wenigstens damit Recht gehabt. Wir bleiben eine Weile in der Nähe, vielleicht finden wir den Wal noch - oder er uns.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_2</Tag>
+		<English>Milord, the whalers can't find any whales at this position. But [COLOR_HIGHLIGHT_TEXT]plenty of schools of fish[COLOR_REVERT]. The fishermen were probably just drunk and mistook a school of fish for a whale. We should report that and send another fishing boat here.</English>
+		<German>Milord, die Walfänger können keine Wale auf dieser Position finden. Aber [COLOR_HIGHLIGHT_TEXT]jede Menge Fischschwärme[COLOR_REVERT]. Wahrscheinlich waren die Fischer nur betrunken und haben einen Fischschwarm für einen Wal gehalten. Wir sollten das berichten und noch einen Fischkutter hierher schicken. </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_3</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]There he blows![COLOR_REVERT] Oh my God, look at him! What a giant! None of the whalers have ever seen a whale like this before. We have to kill it or come back with reinforcements, if he escapes. Let's go hunting!</English>
+		<German>[COLOR_HIGHLIGHT_TEXT]Da bläst er![COLOR_REVERT] Oh mein Gott, seht ihn Euch an! Was für ein Riese! So einen Wal hat keiner der Walfänger je zuvor gesehen. Wir müssen ihn erlegen oder unbedingt mit Verstärkung wiederkommen, wenn er uns entwischt. Auf zur Jagd! </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_WHALING_TRIP_DONE_1</Tag>
+		<English>No white whale was found, but another school of whales was. Let's go hunting!</English>
+		<German>Es wurde kein weißer Wal gefunden, dafür aber eine andere Walschule. Auf zur Jagd!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_WHALING_TRIP_DONE_2</Tag>
+		<English>A whaler has found a school of fish, but no whales.</English>
+		<German>Ein Walfänger hat einen Schwarm Fische gefunden, aber keine Wale.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENTTRIGGER_WHALING_TRIP_DONE_3</Tag>
+		<English>A whaler has found a legendary white whale!</English>
+		<German>Ein Walfänger hat einen legendären weißen Wal gefunden!</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_4</Tag>
+		<English>A whaler has flushed out some large humpback whales.</English>
+		<German>Ein Walfänger hat einige große Buckelwale aufgescheucht.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_5</Tag>
+		<English>Milord, a fishing boat is equipped to explore the new fishing grounds.</English>
+		<German>Milord, ein [COLOR_HIGHLIGHT_TEXT]Fischerboot[COLOR_REVERT] wird ausgerüstet, um die neuen Fischgründe zu erkunden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_6</Tag>
+		<English>Milord, another whaling boat has been acquired and equipped.</English>
+		<German>Milord, ein weiteres [COLOR_HIGHLIGHT_TEXT]Walfangschiff[COLOR_REVERT] wurde erworben und ausgerüstet.</German>
+	</TEXT>
 </Civ4GameText>
 
