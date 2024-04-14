@@ -5525,19 +5525,25 @@ int CvPlayerAI::AI_adjacantToAreaMissionAIs(CvArea* pArea, MissionAITypes eMissi
 	return iCount;
 }
 
+int CvPlayerAI::AI_plotTargetMissionAIsInternal(CvPlot& kPlot, MissionAITypes eMissionAI, const CvSelectionGroup* pSkipSelectionGroup, int iRange) const
+{
+	int iClosestTargetRange;
+	return AI_plotTargetMissionAIs(&kPlot, &eMissionAI, 1, iClosestTargetRange, pSkipSelectionGroup, iRange);
+}
 
 int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, int iRange)
 {
 	int iClosestTargetRange;
-	return AI_plotTargetMissionAIs(pPlot, &eMissionAI, 1, iClosestTargetRange, pSkipSelectionGroup, iRange);
+	// Note: const cast is safe here and prevents us from having to duplicate const versions of the rest of the call-chain
+	return AI_plotTargetMissionAIs(pPlot, &eMissionAI, 1, iClosestTargetRange, const_cast<const CvSelectionGroup*>(pSkipSelectionGroup), iRange);
 }
 
-int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup, int iRange)
+int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, int& iClosestTargetRange, const CvSelectionGroup* pSkipSelectionGroup, int iRange) const
 {
 	return AI_plotTargetMissionAIs(pPlot, &eMissionAI, 1, iClosestTargetRange, pSkipSelectionGroup, iRange);
 }
 
-int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes* aeMissionAI, int iMissionAICount, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup, int iRange)
+int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes* aeMissionAI, int iMissionAICount, int& iClosestTargetRange, const CvSelectionGroup* pSkipSelectionGroup, int iRange) const
 {
 	PROFILE_FUNC();
 
@@ -5547,7 +5553,7 @@ int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes* aeMission
 	CvSelectionGroup* pTransportSelectionGroup = NULL;
 	if (pSkipSelectionGroup != NULL)
 	{
-		CvUnit* pHeadUnit = pSkipSelectionGroup->getHeadUnit();
+		const CvUnit* const pHeadUnit = pSkipSelectionGroup->getHeadUnit();
 		if (pHeadUnit->getTransportUnit() != NULL)
 		{
 			pTransportSelectionGroup = pHeadUnit->getTransportUnit()->getGroup();
@@ -5558,12 +5564,12 @@ int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes* aeMission
 	{
 		if ((pSkipSelectionGroup == NULL) || ((pLoopSelectionGroup != pSkipSelectionGroup) && (pLoopSelectionGroup != pTransportSelectionGroup)))
 		{
-			CvPlot* pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlot();
+			const CvPlot* const pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlot();
 
 			if (pMissionPlot != NULL)
 			{
-				MissionAITypes eGroupMissionAI = pLoopSelectionGroup->AI_getMissionAIType();
-				int iDistance = stepDistance(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pMissionPlot->getX_INLINE(), pMissionPlot->getY_INLINE());
+				const MissionAITypes eGroupMissionAI = pLoopSelectionGroup->AI_getMissionAIType();
+				const int iDistance = stepDistance(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pMissionPlot->getX_INLINE(), pMissionPlot->getY_INLINE());
 
 				if (iDistance <= iRange)
 				{
@@ -5589,6 +5595,7 @@ int CvPlayerAI::AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes* aeMission
 
 	return iCount;
 }
+
 // TAC - AI Improved Naval AI - koma13 - START
 int CvPlayerAI::AI_cargoSpaceToEurope(CvSelectionGroup* pSkipSelectionGroup)
 {
@@ -9744,7 +9751,7 @@ void CvPlayerAI::AI_updateYieldValues()
 	}
 }
 
-int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, int iAmount)
+int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, int iAmount) const
 {
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
