@@ -2557,6 +2557,9 @@ CvWString getUnitAIStateString(UnitAIStates eUnitAIState)
 	case UNITAI_STATE_PURCHASED: szString = L"UNITAI_STATE_PURCHASED"; break;
 	case UNITAI_STATE_SELL_TO_NATIVES: szString = L"UNITAI_STATE_SELL_TO_NATIVES"; break;
 	case UNITAI_STATE_SAIL: szString = L"UNITAI_STATE_SAIL"; break;
+	case UNITAI_STATE_EXPLORE: szString = L"UNITAI_STATE_EXPLORE"; break;
+	case UNITAI_STATE_TRADE: szString = L"UNITAI_STATE_TRADE"; break;
+	case UNITAI_STATE_SETTLER_TRANSPORT: szString = L"UNITAI_STATE_SETTLER_TRANSPORT"; break;
 	default: szString = CvWString::format(L"UNKOWN_UNITAI_STATE(%d)", eUnitAIState); break;
 	}
 

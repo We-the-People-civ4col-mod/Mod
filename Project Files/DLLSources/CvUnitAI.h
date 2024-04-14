@@ -413,6 +413,7 @@ protected:
 	void AI_sellYieldUnits(Port port);
 	void AI_unloadUnits(Port port);
 	void AI_automateSailTo(const SailToHelper& sth);
+	bool AI_joinUnit(UnitAITypes eUnitAI, int iMaxPathTurns);
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;

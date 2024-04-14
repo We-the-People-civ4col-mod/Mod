@@ -9795,7 +9795,7 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 
 	if ((gDLL->getChtLvl() > 0) && gDLL->shiftKey())
 	{
-		int iValue = kCity.AI_citizenProfessionValue(kUnit.getProfession(), &kUnit, kCity.getPlotWorkedByUnit(&kUnit), NULL);
+		int iValue = kCity.AI().AI_citizenProfessionValue(kUnit.getProfession(), &kUnit, kCity.getPlotWorkedByUnit(&kUnit));
 		szString.append(CvWString::format(L"\n Current: computed = %d, cached = %d", iValue, kUnit.AI().getCitizenValue()));
 
 
@@ -9806,7 +9806,7 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 			ProfessionTypes eLoopProfession = (ProfessionTypes) iI;
 			if (GC.getCivilizationInfo(kCity.getCivilizationType()).isValidProfession(eLoopProfession))
 			{
-				int iValue = kCity.AI().AI_professionValueInternal(eLoopProfession, &kUnit, GC.getProfessionInfo(eLoopProfession).isWorkPlot() ? kCity.getPlotWorkedByUnit(&kUnit) : NULL);
+				int iValue = kCity.AI().AI_citizenProfessionValue(eLoopProfession, &kUnit, GC.getProfessionInfo(eLoopProfession).isWorkPlot() ? kCity.getPlotWorkedByUnit(&kUnit) : NULL);
 				int iViability = GET_PLAYER(kUnit.getOwnerINLINE()).AI_professionSuitability(&kUnit, eLoopProfession, GC.getProfessionInfo(eLoopProfession).isWorkPlot() ? kCity.getPlotWorkedByUnit(&kUnit) : kCity.plot());
 
 				if (iValue > 0)
@@ -9826,7 +9826,7 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 
 		if ((pSelectedUnit != NULL) && (pSelectedUnit != &kUnit))
 		{
-			int iValue = kCity.AI().AI_professionValueInternal(kUnit.getProfession(), pSelectedUnit, kCity.getPlotWorkedByUnit(&kUnit));
+			int iValue = kCity.AI().AI_citizenProfessionValue(kUnit.getProfession(), pSelectedUnit, kCity.getPlotWorkedByUnit(&kUnit));
 			szString.append(CvWString::format(L"\n Selected = %d", iValue));
 		}
 	}

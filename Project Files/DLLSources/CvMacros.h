@@ -35,4 +35,8 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
     for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
     for (CvUnit* pLoopUnit = firstUnit(&UNIQUE_VAR(iLoop)); pLoopUnit != NULL; pLoopUnit = nextUnit(&UNIQUE_VAR(iLoop)))
 
+#define FOREACH_UNIT_OF_OWNER(pLoopUnit,kOwner) \
+    for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
+    for (CvUnit* pLoopUnit = (kOwner).firstUnit(&UNIQUE_VAR(iLoop)); pLoopUnit != NULL; pLoopUnit = (kOwner).nextUnit(&UNIQUE_VAR(iLoop)))
+
 #endif

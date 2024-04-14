@@ -1098,7 +1098,7 @@ bool CvCity::canWork(const CvPlot* pPlot, bool bIgnoreCityWorksWaterCheck) const
 		}
 	}
 
-	if (!(pPlot->hasYield()))
+	if (!bIgnoreCityWorksWaterCheck && !(pPlot->hasYield()))
 	{
 		return false;
 	}

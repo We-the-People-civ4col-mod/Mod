@@ -102,9 +102,9 @@ public:
 	int AI_professionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot, const CvUnit* pDisplaceUnit) const
 	{
 		// pDisplaceUnit is no longer in use
-		return AI_professionValueInternal(eProfession, pUnit, pPlot);
+		return AI_citizenProfessionValue(eProfession, pUnit, pPlot);
 	}
-	int AI_professionValueInternal(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot) const;
+	int AI_citizenProfessionValue(ProfessionTypes eProfession, const CvUnit* pUnit, const CvPlot* pPlot) const;
 	int AI_professionBasicOutput(ProfessionTypes eProfession, UnitTypes eUnit, const CvPlot* pPlot) const;
 	CvUnit* AI_getWorstProfessionUnit(ProfessionTypes eProfession) const;
 
@@ -275,7 +275,6 @@ protected:
 	CvUnit* AI_bestPopulationUnit(UnitAITypes eUnitAI, ProfessionTypes eProfession = NO_PROFESSION);
 	void AI_juggleCitizens();
 
-	CvUnit* AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly = false);
 	CvUnit* AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly = false);
 
 	CvUnit* AI_juggleColonist(CvUnit* pUnit);

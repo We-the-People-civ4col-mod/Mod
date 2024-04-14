@@ -1410,12 +1410,18 @@ void CvUnitAI::AI_colonistMove()
 {
 	if (isCargo())
 	{
+		// TODO: This logic assumes that the colonist is being transported to the colonies, but what about the case
+		//  when the colonist is transported between settlements ?
 		if (AI_joinOptimalCity()) return;
 		if (AI_joinAnyCity()) return;
 		// If we get here we have failed to find any joinable city so
 		// just go hang out in a city plot somewhere so that the cargo
 		// slots an be freed up
 		if (AI_joinAnyCity(-1, /*bRequireJoinable*/false)) return;
+		// If there are no cities at all, join a nearby settler
+		//if (AI_joinUnit(UNITAI_SETTLER, 10)) return;
+		// Just disembark if we're in a city and cannot find anywhere we'd rather go
+		if (plot()->getOwner() == getOwner() && plot()->isCity(true)) return;
 		getGroup()->pushMission(MISSION_SKIP);
 		return;
 	}
@@ -4672,9 +4678,53 @@ void CvUnitAI::AI_transportSeaMove()
 {
 	PROFILE_FUNC();
 
+	if (GC.getGameINLINE().getGameTurn() == GC.getGameINLINE().getStartTurn())
+	{
+		// TODO: Check for settler being present!
+		AI_setUnitAIState(UNITAI_STATE_SETTLER_TRANSPORT);
+	}
+
 	if (plot()->getPlotCity() && isHurt())
 	{
 		AI_heal();
+	}
+
+	if (AI_getUnitAIState() == UNITAI_STATE_SETTLER_TRANSPORT)
+	{
+		// Check if we should exit this state
+		if (getUnitAICargo(UNITAI_SETTLER) == 0)
+		{
+			AI_setUnitAIState(UNITAI_STATE_SAIL);
+			return;
+		}
+
+		// Prioritize the delivery of the settler, then the rest of the units
+		// Explore a little if necessary
+		if (AI_deliverUnits(UNITAI_SETTLER))
+		{
+			return;
+		}
+
+		// Deliver non-settlers
+		if (AI_deliverUnits())
+		{
+			return;
+		}
+
+		// Check for settler requesting pickup
+		if (AI_pickup(UNITAI_SETTLER, 10))
+		{
+			return;
+		}
+
+		// Exploring is necessary for the initial city
+		if (AI_exploreOcean(1))
+		{
+			return;
+		}
+
+		AI_setUnitAIState(UNITAI_STATE_SAIL);
+		return;
 	}
 
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
@@ -4851,9 +4901,6 @@ void CvUnitAI::AI_transportSeaMove()
 		AI_setUnitAIState(UNITAI_STATE_DEFAULT);
 	}
 
-	if (AI_deliverUnits())
-		return;
-
 	if (AI_getUnitAIState() == UNITAI_STATE_PICKUP)
 	{
 		if (AI_respondToPickup(2))
@@ -4948,11 +4995,12 @@ void CvUnitAI::AI_transportSeaMove()
 		bRoutes = false;
 	}
 
-	// TAC - AI Improved Naval AI - koma13 - START
-	//if (iSettlerCount > 0 || iNativeSaleGoods > 0 || ((kOwner.getNumEuropeUnits() == 0) && (kOwner.AI_countYieldWaiting() < 3)))
-	if (iSettlerCount > 0 || iNativeSaleGoods > 0 || (!bPickupUnitsFromEurope && (kOwner.AI_countYieldWaiting() < 3)))
-	// TAC - AI Improved Naval AI - koma13 - END
+	if (AI_getUnitAIState() == UNITAI_STATE_EXPLORE)
 	{
+		// TAC - AI Improved Naval AI - koma13 - START
+		//if (iSettlerCount > 0 || iNativeSaleGoods > 0 || ((kOwner.getNumEuropeUnits() == 0) && (kOwner.AI_countYieldWaiting() < 3)))
+		//if (iSettlerCount > 0 || iNativeSaleGoods > 0 || (!bPickupUnitsFromEurope && (kOwner.AI_countYieldWaiting() < 3)))
+		// TAC - AI Improved Naval AI - koma13 - END
 		if (AI_exploreCoast(2))
 		{
 			return;
@@ -5005,6 +5053,7 @@ void CvUnitAI::AI_transportSeaMove()
 		}
 	}
 
+	/*
 	if (iNativeSaleGoods > 0)
 	{
 		if (AI_exploreCoast(2))
@@ -5016,6 +5065,7 @@ void CvUnitAI::AI_transportSeaMove()
 			return;
 		}
 	}
+	*/
 
 	// TAC - AI Improved Naval AI - koma13 - START
 	//if ((GET_PLAYER(getOwnerINLINE()).getNumEuropeUnits() > 0) || isFull())
@@ -5025,24 +5075,6 @@ void CvUnitAI::AI_transportSeaMove()
 		FAssert(AI_getUnitAIState() != UNITAI_STATE_SAIL);
 		AI_setUnitAIState(UNITAI_STATE_SAIL);
 		return;
-	}
-
-	CvArea* pArea = area();
-	if (!pArea->isWater())
-	{
-		pArea = plot()->waterArea();
-	}
-	FAssert(pArea != NULL);
-	if (pArea != NULL && pArea->getNumTiles() - pArea->getNumRevealedTiles(getTeam()) > 0)
-	{
-		if (AI_exploreCoast(2))
-		{
-			return;
-		}
-		if (AI_exploreDeep())
-		{
-			return;
-		}
 	}
 
 	if (bRoutes)
@@ -6681,6 +6713,7 @@ bool CvUnitAI::AI_europe()
 		if (pUnit->canLoadUnit(this, plot(), false) && pUnit->AI_getUnitAIType() == UNITAI_SETTLER)
 		{
 			kOwner.loadUnitFromEurope(pUnit, this);
+			pUnit->AI_setUnitAIState(UNITAI_STATE_SETTLER_TRANSPORT);
 			if (getGroup()->getAutomateType() == AUTOMATE_FULL)
 			{
 				FAssert(pUnit->getGroup() != NULL);
@@ -7198,38 +7231,20 @@ bool CvUnitAI::AI_deliverUnits(UnitAITypes eUnitAI)
 		}
 	}
 
-
-	/*
-	if (iBestValue > 0)
-	{
-		// TAC - AI Improved Naval AI - koma13 - START
-		//getGroup()->pushMission(MISSION_MOVE_TO, pBestDestination->getX_INLINE(), pBestDestination->getY_INLINE());
-		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, NO_MISSIONAI, pBestDestination);
-		// TAC - AI Improved Naval AI - koma13 - END
-
-		bool bWaitForCargo = AI_wakeCargo(NO_UNITAI, AI_getMovePriority() + 1);
-
-		if (bWaitForCargo)
-		{
-			if (canMove())
-			{
-				AI_setMovePriority(AI_getMovePriority() - 1);
-			}
-		}
-		return true;
-	}
-	return false;
-	*/
 	if (iBestValue > 0)
 	{
 		if (atPlot(pBestPlot))
 		{
-			if (AI_wakeCargo(NO_UNITAI, AI_getMovePriority() + 1))
+			if (AI_wakeCargo(eUnitAI, AI_getMovePriority() + 1))
 			{
 				// Need to yield here to let the cargo take its turn
 				return true;
 			}
-			return false;
+			else
+			{
+				// No cargo matching eUnitAI was woken up
+				return false;
+			}
 		}
 		else
 		{
@@ -7358,29 +7373,29 @@ bool CvUnitAI::AI_loadUnits(UnitAITypes eUnitAI, MissionAITypes eMissionAI)
 	return (iCount > 0);
 }
 
+// Returns true if a unit with eUnitAI was woken up
 bool CvUnitAI::AI_wakeCargo(UnitAITypes eUnitAI, int iPriority)
 {
-	bool bWaitForCargo = false;
-	CvPlot* pPlot = plot();
+	CvPlot* const pPlot = plot();
 
-	CLLNode<IDInfo>*  pUnitNode = plot()->headUnitNode();
+	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
+		CvUnit* const pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->isCargo() && (pLoopUnit->getTransportUnit()->getGroup() == getGroup()))
 		{
 			if (eUnitAI == NO_UNITAI || pLoopUnit->AI_getUnitAIType() == eUnitAI)
 			{
-				//if (pLoopUnit->canMove())	// TAC - AI Improved Naval AI - koma13
+				if (pLoopUnit->canMove())
 				{
-				pLoopUnit->AI_setMovePriority(AI_getMovePriority() + 1);
+					pLoopUnit->AI_setMovePriority(iPriority);
+					return true;
 				}
-				bWaitForCargo = true;
 			}
 		}
 	}
-	return bWaitForCargo;
+	return false;
 }
 
 //This function is used for units on board transports, essentially they may decide
@@ -15278,7 +15293,7 @@ bool CvUnitAI::AI_joinAnyCity(int iMaxPath, bool bRequireJoinable)
 					iValue /= 100;
 				}
 				// TAC - AI Economy- koma13 - START
-				else if (iSizeGap < 0)
+				else if (iSizeGap <= 0)
 				{
 					// Even though this city is undesireable it's still better than having idle colonists
 					iValue /= 2;
@@ -17750,12 +17765,12 @@ bool CvUnitAI::AI_pickup(UnitAITypes eUnitAI, int iMaxPathTurns)
 			bool bAnyLoaded = false;
 			int iCount = 0;
 
-			CvPlot* pPlot = pCity->plot();
+			const CvPlot* const pPlot = pCity->plot();
 			CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 
 			while (pUnitNode != NULL)
 			{
-				CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
+				CvUnit* const pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 				if (pLoopUnit != NULL && pLoopUnit->AI_getUnitAIType() == eUnitAI)
 				{
@@ -17768,12 +17783,9 @@ bool CvUnitAI::AI_pickup(UnitAITypes eUnitAI, int iMaxPathTurns)
 
 			if (iCount > 0)
 			{
-				if (iCount > 0)
+				if (AI_loadUnits(eUnitAI, MISSIONAI_AWAIT_PICKUP))
 				{
-					if (AI_loadUnits(eUnitAI, MISSIONAI_AWAIT_PICKUP))
-					{
-						return true;
-					}
+					return true;
 				}
 				if ((AI_getUnitAIType() != UNITAI_ASSAULT_SEA) || pCity->AI_isDefended(-1))
 				{
@@ -19491,3 +19503,94 @@ int CvUnitAI::getCitizenValue() const
 {
 	return m_iCitizenValue;
 }
+
+#if 0
+bool CvUnitAI::AI_joinUnit(UnitAITypes eUnitAI, int iMaxPath)
+{
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	CvUnit* const pTransportUnit = getTransportUnit();
+	FAssert(pTransportUnit != NULL);
+
+	int iBestValue = 0;
+	CvPlot* pBestPlot = NULL;
+	CvPlot* pBestJoinPlot = NULL;
+
+	bool bTransportPath = false;
+	int iValue = 0;
+	FOREACH_UNIT_OF_OWNER(pLoopUnit, kOwner)
+	{
+		CvPlot* pLoopPlot = pLoopUnit->plot();	
+
+		if (!pLoopPlot->isCoastalLand() || pLoopUnit->AI_getUnitAIType() != eUnitAI)
+			continue;
+
+		int iPathTurns = 0;
+		bool bValid = atPlot(pLoopPlot);
+
+		if (!bValid)
+		{
+			{
+				bValid = pTransportUnit->generatePath(pLoopPlot, 0, bTransportPath, &iPathTurns, iMaxPath);
+			}
+		}
+
+		if (bValid)
+		{
+			iValue *= 100;
+			iValue /= 100 + 10 * iPathTurns;
+
+			if (iValue > iBestValue)
+			{
+				iBestValue = iValue;
+				pBestPlot = atPlot(pLoopPlot) ? pLoopPlot : pLoopPlot;
+				pBestJoinPlot = pLoopPlot;
+			}
+		}
+	}
+
+	if (pBestJoinPlot == NULL)
+	{
+		CvCity* pPlotCity = plot()->getPlotCity();
+		if (pPlotCity != NULL && (pPlotCity->getOwnerINLINE() == getOwnerINLINE()))
+		{
+			if (canUnload())
+			{
+				unload();
+				return true;
+			}
+		}
+	}
+
+	if ((pBestPlot != NULL) && (pBestJoinPlot != NULL))
+	{
+		if (atPlot(pBestJoinPlot))
+		{
+			if (!canJoinCity(plot(), true))
+			{
+				if (getTransportUnit() != NULL)
+				{
+					unload();
+				}
+				getGroup()->pushMission(MISSION_SKIP);
+				return true;
+			}
+
+			AI_setMovePriority(0);
+			return true;
+		}
+		else if ((pTransportUnit != NULL) && !(canUnload() && (pBestJoinPlot->area() == area())))
+		{
+			getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_JOIN_CITY, pBestJoinPlot);
+			return true;
+		}
+		else
+		{
+			FAssert(!atPlot(pBestPlot));
+			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), MOVE_NO_ENEMY_TERRITORY, false, false, MISSIONAI_JOIN_CITY, pBestJoinPlot);
+			return true;
+		}
+	}
+	return false;
+}
+#endif
