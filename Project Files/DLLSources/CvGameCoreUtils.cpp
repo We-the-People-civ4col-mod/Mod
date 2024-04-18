@@ -592,7 +592,7 @@ bool isPlotEventTrigger(EventTriggerTypes eTrigger)
 
 	if (kTrigger.getNumPlotsRequired() > 0)
 	{
-		if (kTrigger.getPlotType() != NO_PLOT)
+		if (kTrigger.getPlotTypes().hasContent())
 		{
 			return true;
 		}

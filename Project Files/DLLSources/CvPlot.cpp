@@ -9341,9 +9341,9 @@ bool CvPlot::canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const
 		return false;
 	}
 
-	if (kTrigger.getPlotType() != NO_PLOT)
+	if (kTrigger.getPlotTypes().hasContent())
 	{
-		if (getPlotType() != kTrigger.getPlotType())
+		if (!kTrigger.getPlotTypes().get(getPlotType()))
 		{
 			return false;
 		}
