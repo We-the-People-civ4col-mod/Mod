@@ -2638,6 +2638,20 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 		break;
 	// WTP, ray, Construction Supplies - END
 
+	case COMMAND_ALLOW_DANGEROUS_PATH:
+		if (isGroupHead() && !isAllowDangerousPath())
+		{
+			return true;
+		}
+		break;
+
+	case COMMAND_DISALLOW_DANGEROUS_PATH:
+		if (isGroupHead() && isAllowDangerousPath())
+		{
+			return true;
+		}
+		break;
+
 	default:
 		FAssert(false);
 		break;
@@ -2947,6 +2961,20 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 			}
 			break;
 		// WTP, ray, Construction Supplies - END
+
+		case COMMAND_ALLOW_DANGEROUS_PATH:
+			if (gDLL->getInterfaceIFace()->getHeadSelectedUnit() == this)
+			{
+				setAllowDangerousPath(true, /*bRefreshUi*/true);
+			}
+			break;
+
+		case COMMAND_DISALLOW_DANGEROUS_PATH:
+			if (gDLL->getInterfaceIFace()->getHeadSelectedUnit() == this)
+			{
+				setAllowDangerousPath(false, /*bRefreshUi*/true);
+			}
+			break;
 
 		default:
 			FAssert(false);
@@ -16734,4 +16762,25 @@ int CvUnit::getDiscriminationFactor() const
 		}
 	}
 	return 0;
+}
+
+bool CvUnit::isAllowDangerousPath() const
+{
+	return m_bAllowDangerousPath;
+}
+
+void CvUnit::setAllowDangerousPath(bool bNewValue, bool bRefreshUi)
+{
+	if (m_bAllowDangerousPath != bNewValue)
+	{
+		m_bAllowDangerousPath = bNewValue;
+		if (bRefreshUi)
+		{
+			// UI path finder needs a reset since it may be caching a path that 
+			// we may invalidate with this setting 
+			gDLL->getFAStarIFace()->ForceReset(&GC.getInterfacePathFinder());
+			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
+
+		}
+	}
 }

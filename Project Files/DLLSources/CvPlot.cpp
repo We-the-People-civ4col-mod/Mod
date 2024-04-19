@@ -10554,3 +10554,16 @@ bool CvPlot::isBarbarianUnitOnAdjacentPlot(int /*UnitClassTypes*/ iIndex) const
 	return false;
 }
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
+int CvPlot::getTurnDamage() const
+{
+	const FeatureTypes featureType = getFeatureType();
+	
+	if (featureType != NO_FEATURE)
+	{
+		const CvFeatureInfo & kFeatureInfo = GC.getFeatureInfo(getFeatureType());
+		return kFeatureInfo.getTurnDamage();
+	}
+	
+	return 0;
+}

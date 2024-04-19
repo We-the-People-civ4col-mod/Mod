@@ -1716,6 +1716,12 @@ int pathValid_join(FAStarNode* parent, FAStarNode* node, CvSelectionGroup* pSele
 		!kMap.getPlot(kToPlot.getX(), kFromPlot.getY()).isWater() /*&&
 		!pSelectionGroup->canMoveAllTerrain()*/) // WTP: Not supported
 		return FALSE;
+
+	if (kToPlot.getTurnDamage() > 0 && !pSelectionGroup->getHeadUnit()->isAllowDangerousPath())
+	{
+		return FALSE;
+	}
+
 	return TRUE;
 }
 

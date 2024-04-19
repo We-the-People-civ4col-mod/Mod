@@ -517,6 +517,8 @@ public:
 
 	void writeDesyncLog(FILE *f);
 
+	int getTurnDamage() const;
+
 protected:
 
 	void resetSavedData();

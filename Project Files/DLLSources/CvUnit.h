@@ -753,7 +753,7 @@ public:
 	bool isIgnoreDanger() const;
 	void setIgnoreDanger(bool bNewValue);
 	// TAC - Trade Routes Advisor - koma13 - END
-
+	
 	bool raidWeapons(CvCity* pCity);
 	bool raidWeapons(CvUnit* pUnit);
 	bool raidGoods(CvCity* pCity);
@@ -827,6 +827,9 @@ public:
 	bool isOwnPlayerUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
 	bool isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
+	bool isAllowDangerousPath() const;
+	void setAllowDangerousPath(bool bNewValue, bool bRefreshUi = false);
 
 protected:
 
@@ -932,6 +935,8 @@ protected:
 	int m_iAmountForNativeTrade;
 	YieldTypes m_eYieldForNativeTrade;
 	// R&R, ray, Natives Trading - END
+
+	bool m_bAllowDangerousPath;
 
 	UnitTravelStates m_eUnitTravelState;
 

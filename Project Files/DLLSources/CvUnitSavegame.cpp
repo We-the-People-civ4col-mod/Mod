@@ -43,6 +43,7 @@ const bool defaultCombatFocus = false;
 const bool defaultColonistLocked = false;
 const bool defaultGatheringResource = false;
 const bool defaultIgnoreDanger = false;
+const bool defaultAllowDangerousPath = false;
 const bool defaultBarbarian = false;
 
 const ProfessionTypes defaultProfession = NO_PROFESSION;
@@ -97,6 +98,7 @@ enum SavegameVariableTypes
 	UnitSave_ColonistLocked,
 	UnitSave_GatheringResource,
 	UnitSave_IgnoreDanger,
+
 	UnitSave_Barbarian,
 
 	UnitSave_Profession,
@@ -120,6 +122,8 @@ enum SavegameVariableTypes
 
 	UnitSave_LbDroundsBefore,
 	UnitSave_LastProfessionBefore,
+
+	UnitSave_AllowDangerousPath,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -187,6 +191,7 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 
 	case UnitSave_HasRealPromotion: return "UnitSave_HasRealPromotion";
 	case UnitSave_FreePromotionCount: return "UnitSave_FreePromotionCount";
+	case UnitSave_AllowDangerousPath: return "UnitSave_AllowDangerousPath";
 }
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -239,6 +244,8 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_bColonistLocked = defaultColonistLocked;
 	m_bGatheringResource = defaultGatheringResource;
 	m_bIgnoreDanger = defaultIgnoreDanger;
+	m_bAllowDangerousPath = defaultAllowDangerousPath;
+
 	m_bBarbarian = defaultBarbarian;
 
 	m_eProfession = defaultProfession;
@@ -329,6 +336,7 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_ColonistLocked: reader.Read(m_bColonistLocked); break;
 		case UnitSave_GatheringResource: reader.Read(m_bGatheringResource); break;
 		case UnitSave_IgnoreDanger: reader.Read(m_bIgnoreDanger); break;
+
 		case UnitSave_Barbarian: reader.Read(m_bBarbarian); break;
 
 		case UnitSave_Profession: reader.Read(m_eProfession); break;
@@ -350,6 +358,8 @@ void CvUnit::read(CvSavegameReader reader)
 
 		case UnitSave_HasRealPromotion: reader.Read(m_embHasRealPromotion); break;
 		case UnitSave_FreePromotionCount: reader.Read(m_ja_iFreePromotionCount); break;
+
+		case UnitSave_AllowDangerousPath: reader.Read(m_bAllowDangerousPath); break;
 		}
 	}
 
@@ -448,6 +458,7 @@ void CvUnit::write(CvSavegameWriter writer)
 
 	writer.Write(UnitSave_HasRealPromotion, m_embHasRealPromotion);
 	writer.Write(UnitSave_FreePromotionCount, m_ja_iFreePromotionCount);
+	writer.Write(UnitSave_AllowDangerousPath, m_bAllowDangerousPath, defaultAllowDangerousPath);
 
 	writer.Write(UnitSave_END);
 }
