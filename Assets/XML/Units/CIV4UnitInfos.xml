@@ -74605,7 +74605,7 @@
 			<bInvisible>0</bInvisible>
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bMoveIntoPeak>1</bMoveIntoPeak>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
 			<bFlatMovementCost>0</bFlatMovementCost>
 			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
@@ -74682,71 +74682,71 @@
 			<YieldDemands>
 				<YieldDemand>
 					<YieldType>YIELD_COFFEE</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>25</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_CHEESE</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_CIGARS</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>25</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_WOOL_CLOTH</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>25</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_LEATHER</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_PIG_LEATHER</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_COATS</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_SALT</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_SPICES</YieldType>
-					<iYieldDemand>10</iYieldDemand>
+					<iYieldDemand>12</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_VANILLA</YieldType>
-					<iYieldDemand>10</iYieldDemand>
+					<iYieldDemand>12</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_CHOCOLATE</YieldType>
-					<iYieldDemand>10</iYieldDemand>
+					<iYieldDemand>12</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_BEER</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_RUM</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>25</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_HOOCH</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>25</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_WINE</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_LUXURY_GOODS</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>25</iYieldDemand>
 				</YieldDemand>
 			</YieldDemands>
 			<YieldChanges>
@@ -76640,10 +76640,10 @@
 			<TerrainImpassables/>
 			<FeatureImpassables/>
 			<EvasionBuildings/>
-			<iCombat>1</iCombat>
+			<iCombat>2</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>0</iWithdrawalProb>
+			<iWithdrawalProb>10</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -76658,44 +76658,48 @@
 			<UnitCombatMods/>
 			<DomainMods/>
 			<YieldModifiers/>
-			<YieldChanges>
-				<YieldChange>
-					<YieldType>YIELD_FUR</YieldType>
-					<iChange>3</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_HORSES</YieldType>
-					<iChange>3</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_PREMIUM_FUR</YieldType>
-					<iChange>3</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_COCA_LEAVES</YieldType>
-					<iChange>3</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_COCOA_FRUITS</YieldType>
-					<iChange>3</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_KAUTSCHUK</YieldType>
-					<iChange>3</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_SILVER</YieldType>
-					<iChange>2</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_GOLD</YieldType>
-					<iChange>2</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_GEMS</YieldType>
-					<iChange>2</iChange>
-				</YieldChange>
-			</YieldChanges>
+            <YieldChanges>
+               <YieldChange>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_KAUTSCHUK</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iChange>4</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iChange>4</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iChange>4</iChange>
+                </YieldChange>
+            </YieldChanges>
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
