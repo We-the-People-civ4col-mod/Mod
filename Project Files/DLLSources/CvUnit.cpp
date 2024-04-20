@@ -4625,12 +4625,15 @@ int CvUnit::loadYieldAmount(YieldTypes eYield, int iAmount, bool bTrade)
 		return 0;
 	}
 
-	CvUnit* pUnit = plot()->getPlotCity()->createYieldUnit(eYield, getOwnerINLINE(), iAmount);
+	CvUnit* const pUnit = plot()->getPlotCity()->createYieldUnit(eYield, getOwnerINLINE(), iAmount);
 	FAssert(pUnit != NULL);
 	if(pUnit != NULL)
 	{
 		pUnit->setTransportUnit(this);
 	}
+
+	groupTransportedYieldUnits(pUnit);
+
 	return iAmount; //R&R mod, vetiarvind, max yield import limit
 }
 
@@ -14782,7 +14785,9 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 			}
 			else
 			{
-				getGroup()->splitGroup(1, this);
+				// Yield units are intentionally grouped so don't split them up
+				if (!getGroup()->getHeadUnit()->isYield())
+					getGroup()->splitGroup(1, this);
 			}
 		}
 
@@ -16780,7 +16785,26 @@ void CvUnit::setAllowDangerousPath(bool bNewValue, bool bRefreshUi)
 			// we may invalidate with this setting 
 			gDLL->getFAStarIFace()->ForceReset(&GC.getInterfacePathFinder());
 			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
+		}
+	}
+}
 
+// Must be called on a transport. Group sall transported units by adding pUnit to a common group
+// Note that the transport itself is NOT included in the group!
+void CvUnit::groupTransportedYieldUnits(CvUnit* pYieldUnit)
+{
+	FAssert(pYieldUnit->isYield());
+
+	for (int i = 0; i < plot()->getNumUnits(); i++)
+	{
+		CvUnit* const pLoopUnit = plot()->getUnitByIndex(i);
+		if (pLoopUnit != NULL)
+		{
+			if (pLoopUnit->getTransportUnit() == this && pLoopUnit->isYield() && pLoopUnit != pYieldUnit)
+			{
+				pYieldUnit->joinGroup(pLoopUnit->getGroup());
+				break;
+			}
 		}
 	}
 }

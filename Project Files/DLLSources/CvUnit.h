@@ -830,6 +830,7 @@ public:
 
 	bool isAllowDangerousPath() const;
 	void setAllowDangerousPath(bool bNewValue, bool bRefreshUi = false);
+	void groupTransportedYieldUnits(CvUnit* pYieldUnit);
 
 protected:
 

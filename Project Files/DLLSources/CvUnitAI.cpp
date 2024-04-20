@@ -1100,7 +1100,10 @@ void CvUnitAI::AI_setUnitAIType(UnitAITypes eNewValue)
 		{
 			area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), 1);
 
-			joinGroup(NULL);
+			// If eNewValue is NO_UNITAI then the unit is joining a city and hence
+			// there is not need to join a new group
+			if (eNewValue != NO_UNITAI)
+				joinGroup(NULL);
 
 			if (getTransportUnit() != NULL)
 			{
@@ -3667,6 +3670,12 @@ void CvUnitAI::AI_defensiveBraveMove()
 				}
 			}
 		}
+	}
+
+	if (AI_group(UNITAI_DEFENSIVE))
+	{
+		// Group with other defenders
+		return;
 	}
 
 	if (AI_guardHomeColony())
