@@ -297,7 +297,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_PLAINS</Tag>
-		<English>TXT_KEY_BUILD_REFORESTATION_GRASS</English>
+		<English>Plant a forest</English>
+		<French>Planter une forêt</French>
+		<German>Wald aufforsten</German>
+		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]джунгли[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_PLAINS_HELP</Tag>
@@ -305,7 +308,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_PLAINS_FERTILE</Tag>
-		<English>TXT_KEY_BUILD_REFORESTATION_GRASS</English>
+		<English>Plant a forest</English>
+		<French>Planter une forêt</French>
+		<German>Wald aufforsten</German>
+		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]джунгли[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_PLAINS_FERTILE_HELP</Tag>
@@ -313,7 +319,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_SHRUBLAND</Tag>
-		<English>TXT_KEY_BUILD_REFORESTATION_GRASS</English>
+		<English>Plant a forest</English>
+		<French>Planter une forêt</French>
+		<German>Wald aufforsten</German>
+		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]джунгли[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_SHRUBLAND_HELP</Tag>
@@ -321,7 +330,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_SAVANNAH</Tag>
-		<English>TXT_KEY_BUILD_REFORESTATION_MARSH</English>
+		<English>Plant a jungle</English>
+		<French>Planter une jungle</French>
+		<German>Dschungel aufforsten</German>
+		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]джунгли[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_SAVANNAH_HELP</Tag>
