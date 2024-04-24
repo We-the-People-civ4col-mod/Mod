@@ -780,7 +780,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT</Tag>
-		<English>Three native tribes met</English>
+		<English>Three Native tribes met</English>
 		<French>Trois peuples indigènes</French>
 		<German>Drei Stämme getroffen</German>
 		<Russian>Три туземных племени</Russian>
@@ -1202,7 +1202,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WHALING_BOAT</Tag>
-		<English>Your first Whaling Boat</English>
+		<English>Your first whaling boat</English>
 		<French>Premier navire baleinier</French>
 		<German>Euer erster Walfänger</German>
 		<Russian>Ваш первый китобойный корабль</Russian>
@@ -1891,7 +1891,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_FUR_TRADERS_HOUSE</Tag>
-		<English>Several fur traders' houses (3)</English>
+		<English>Three fur traders' houses</English>
 		<French>Plusieurs maisons de fourreur (3)</French>
 		<German>Mehrere Pelzhändlerhütten (3)</German>
 		<Russian>Три дома скорняка</Russian>
@@ -1905,7 +1905,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_FUR_TRADERS_HOUSE_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]Grandfather,[COLOR_REVERT]" asks the Indian boy, "[COLOR_SELECTED_TEXT]beavers build houses, they have families, and they have dexterous paws that are like hands. They are almost like us. Do they believe in gods too?[COLOR_REVERT]"[NEWLINE][NEWLINE]The old man takes a slow drag on his pipe. "[COLOR_SELECTED_TEXT]Hmm ... what do you think, little warrior?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I think they believe in a type of god who they see every day. There are many of these gods, and they are evil. They are all-powerful and cruel.[NEWLINE][NEWLINE]They kill the beavers by the hundreds, skin them and let the naked corpses float down the river.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]Grandfather,[COLOR_REVERT]" asks the Native boy, "[COLOR_SELECTED_TEXT]beavers build houses, they have families, and they have dexterous paws that are like hands. They are almost like us. Do they believe in gods too?[COLOR_REVERT]"[NEWLINE][NEWLINE]The old man takes a slow drag on his pipe. "[COLOR_SELECTED_TEXT]Hmm ... what do you think, little warrior?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I think they believe in a type of god who they see every day. There are many of these gods, and they are evil. They are all-powerful and cruel.[NEWLINE][NEWLINE]They kill the beavers by the hundreds, skin them and let their naked corpses float down the river.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<French>« [COLOR_SELECTED_TEXT]Grand-père,[COLOR_REVERT] » demande le jeune garçon indien, «[COLOR_SELECTED_TEXT]Les castors construisent des maisons, ils ont des familles, et des pattes agiles comme des mains. Ils nous ressemblent tant. Croient-ils en des dieux eux aussi ?[COLOR_REVERT] »[NEWLINE][NEWLINE]Le veil homme tire une longue bouffée de sa pipe. «Hummm ... Qu'en penses-tu, jeune guerrier? »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Je pense qu'ils croient en un grenre de dieu qu'ils voient tous jours. Ils sont nombreux, et ils sont méchants. Ils sont tous puissants et cruels.[NEWLINE][NEWLINE] Ils tuent les castors par centaines et laissent leur cadavre dénudés descendre la rivière.[COLOR_REVERT] » </French>
 		<German>"[COLOR_SELECTED_TEXT]Großvater[COLOR_REVERT]", fragt der Indianerjunge, "[COLOR_SELECTED_TEXT]Biber bauen Häuser, sie haben Familien, und sie haben geschickte Pfoten, die wie Hände sind. Sie sind fast wie wir. Glauben auch sie an Götter?[COLOR_REVERT]"[NEWLINE][NEWLINE]Der alte Mann zieht gemächlich an seiner Pfeife. "[COLOR_SELECTED_TEXT]Hmm ... was meinst denn du, kleiner Krieger?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich glaube, dass sie an Götter glauben. Sie sehen sie jeden Tag. Es sind viele Götter, und sie sind böse. Sie sind allmächtig und grausam.[NEWLINE][NEWLINE]Sie töten die Biber zu Hunderten, ziehen ihnen die Haut ab und lassen die nackten Leichen den Fluss hinabtreiben.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Дедушка,[COLOR_REVERT]" — говорит индейский мальчик — [COLOR_SELECTED_TEXT]бобры строят дома, у них есть семьи и у них ловкие лапы, похожие на руки. Они почти как мы. Они тоже верят в богов? [COLOR_REVERT]"[NEWLINE][NEWLINE]Старик медленно затягивается трубкой. "[COLOR_SELECTED_TEXT]Хм... а что ты думаешь, маленький воин?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я думаю, что они верят в бога, которого видят каждый день. Этих богов много и они злые. Они всесильны и жестоки.[NEWLINE][NEWLINE]Они убивают бобров сотнями, снимают с них шкуры, а голые трупы спускают по реке.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
@@ -2089,7 +2089,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CONTINENTAL_GUARD_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]Second line load, first line aim,[COLOR_REVERT]" the sergeant bellows at the new recruits. "[COLOR_SELECTED_TEXT]I'll make real guardsmen out of you yet if we have to practice all day and all night.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Same thing over and over, and I always thought guardsmen only had to stand guard and march on parades,[COLOR_REVERT]" the recruit murmurs to his comrade next to him.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Quiet there, or you'll never learn,[COLOR_REVERT]" snaps the sergeant.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Again and again, and again! Until you can do it all in your sleep![NEWLINE][NEWLINE]Pour your powder, drop in the bullet, tamp down with the ramrod, aim, fire, in goes the next bullet...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]Second line load, first line aim,[COLOR_REVERT]" the sergeant bellows at the new recruits. "[COLOR_SELECTED_TEXT]I'll make real guardsmen out of you yet if we have to practice all day and all night.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Same thing over and over, and I always thought guardsmen only had to stand guard and march on parades,[COLOR_REVERT]" the recruit murmurs to his comrade next to him.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Quiet there, or you'll never learn,[COLOR_REVERT]" snaps the sergeant.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Again and again, and again! Until you can do it all in your sleep![NEWLINE][NEWLINE]Pour your powder, drop in the bullet, tamp down with the ramrod, aim, fire, repeat powder, in goes the next bullet...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<French>Vous êtes maintenant aux commandes de votre premier régiment de garde continentale.[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Zweite Reihe laden, erste Reihe anlegen,[COLOR_REVERT]" drillt der Sergeant die neuen Rekruten. "[COLOR_SELECTED_TEXT]Ich werde schon richtige Gardisten aus euch machen, und wenn wir den ganzen Tag und die ganze Nacht üben müssen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Immer und überall dasselbe und ich dachte immer, Gardisten müssen nur Wache schieben und auf Paraden marschieren,[COLOR_REVERT]" raunt der Rekrut seinem Kameraden neben ihm zu.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ruhe da, sonst lernt ihr's nie[COLOR_REVERT]", schnauzt der Sergeant.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Immer wieder, nochmal von vorne! Bis ihr die Abläufe im Schlaf könnt![NEWLINE][NEWLINE]Pulver und Kugel einfüllen, Ladestock ansetzen, Anlegen, Zielen, Feuern und mit der nächsten Kugel wieder von vorne...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Вторая линия заряжается, первая линия прицеливается![COLOR_REVERT]" — кричит сержант новобранцам. "[COLOR_SELECTED_TEXT]Я сделаю из вас настоящих гвардейцев, даже если нам придется тренироваться весь день и всю ночь.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Постоянно одно и то же, а я всегда думал, что гвардейцы должны только стоять в карауле и маршировать на парадах.[COLOR_REVERT]" — бормочет новобранец своему товарищу рядом с ним.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тихо там, а то никогда не научишься![COLOR_REVERT]" — рявкает сержант.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Снова и снова и снова! Пока вы не сможете делать все это даже во сне![NEWLINE][NEWLINE]Насыпать порох, вставить пулю, прибить шомполом, прицелиться, выстрелить, прочистить! И еще раз - насыпать порох, вставить пулю...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
@@ -2178,7 +2178,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_VETERANS</Tag>
-		<English>Three Veterans</English>
+		<English>Three veterans</English>
 		<French>Trois officiers vétérans</French>
 		<German>Drei Offiziere</German>
 		<Russian>Три ветерана</Russian>
