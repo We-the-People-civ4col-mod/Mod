@@ -2178,7 +2178,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_VETERANS</Tag>
-		<English>Three veterans</English>
+		<English>Three Veterans</English>
 		<French>Trois officiers vétérans</French>
 		<German>Drei Offiziere</German>
 		<Russian>Три ветерана</Russian>
@@ -2345,7 +2345,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_TRAPPER_HEAD</Tag>
-		<English>A noble fur</English>
+		<English>Fur fit for nobility</English>
 		<French>Une fourrure noble</French>
 		<German>Ein edler Pelz</German>
 		<Russian>Благородный мех</Russian>
@@ -2398,7 +2398,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_CONVERTED_NATIVES</Tag>
-		<English>Six converted natives</English>
+		<English>Six Converted Natives</English>
 		<French>Six convertis</French>
 		<German>Sechs Konvertierte</German>
 		<Russian>Шесть крещенных индейцев</Russian>
@@ -2445,7 +2445,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_CRIMINALS_HEAD</Tag>
-		<English>Land of opportunity</English>
+		<English>Land of criminal opportunity</English>
 		<French>Terre des possibles</French>
 		<German>Land der unbegrenzten [NEWLINE]Möglichkeiten</German>
 		<Russian>Земля возможностей</Russian>
@@ -2518,7 +2518,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_DOCTOR</Tag>
-		<English>The first Renowned Medic</English>
+		<English>Your first Renowned Medic</English>
 		<French>Le premier médecin renommé</French>
 		<German>Der erste ausgebildete Ärzte</German>
 		<Russian>Первый известный медик</Russian>
@@ -2687,7 +2687,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_HORSE_MARKET_HEAD</Tag>
-		<English>Successful breeding</English>
+		<English>Successful stock breeding</English>
 		<French>De bien belles bêtes</French>
 		<German>Erfolgreiche Zucht</German>
 		<Russian>Успешная селекция</Russian>
@@ -3052,7 +3052,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT_HEAD</Tag>
-		<English>Religious salvation for the natives</English>
+		<English>Religious salvation for the Natives</English>
 		<French>Le salut religieux pour les indigènes</French>
 		<German>Religiöse Rettung für die Wilden</German>
 		<Russian>Религия спасет туземцев</Russian>
@@ -3135,7 +3135,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_TRADER_HEAD</Tag>
-		<English>Trade with the natives</English>
+		<English>Trade with the Natives</English>
 		<French>Commerce avec les indigènes</French>
 		<German>Handel mit den Wilden</German>
 		<Russian>Торговля с индейцами</Russian>
@@ -3569,7 +3569,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_LINE_INFANTRY</Tag>
-		<English>Fifteen line infantries</English>
+		<English>Fifteen line infantry</English>
 		<French>Quinze infanteries de ligne</French>
 		<German>Fünfzehn Einheiten Linieninfanterie</German>
 		<Russian>Пятнадцать линейных пехотинцев</Russian>
@@ -3636,7 +3636,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY_HEAD</Tag>
-		<English>Iron balls and[NEWLINE] black powder</English>
+		<English>Iron balls and[NEWLINE]black powder</English>
 		<French>Boulets en fer et poudre noire</French>
 		<German>Eisenkugeln und Schwarzpulver</German>
 		<Russian>Тяжелые ядра</Russian>
@@ -3649,7 +3649,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS</Tag>
-		<English>Several religious people</English>
+		<English>Several religious sects</English>
 		<French>Plusieurs hommes religieux</French>
 		<German>Mehrere religiöse Eiferer</German>
 		<Russian>Несколько религиозных людей</Russian>
@@ -3663,7 +3663,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS_TEXT</Tag>
-		<English>Milord, you've certainly noticed that a wide variety of religious nonconformists have settled in the colonies. Basically, the colonies are open to everyone as long as they work hard for the good of the colonies and do not cause trouble.[NEWLINE][NEWLINE]The only problem is that these people ended up here in the New World for a reason. That reason is that Europe didn't want them. Take care that they don't make trouble while they preach the word of God. If they endanger the welfare of the colonies, you might have to send them on their way again.[NEWLINE][NEWLINE]</English>
+		<English>Milord, you've certainly noticed the variety of religious nonconformists who have settled in the colonies. Settling here is open to everyone as long as they work hard for the good of all of us.[NEWLINE][NEWLINE]The only problem is that these people ended up in the New World for a reason. That reason is that Europe didn't want them. They can easily make trouble when they preach their differing interpretations of the word of God. If they decide to force their beliefs on other colonists, you might have to send them on their way again.[NEWLINE][NEWLINE]</English>
 		<German>Mylord, mittlerweile haben sich in den Kolonien verschiedenste religiöse Vertriebene niedergelassen. Grundsätzlich stehen die Kolonien allen offen, solange sie hart für das Wohl der Kolonien arbeiten und keinen Ärger machen.[NEWLINE][NEWLINE]Das Problem ist nur, dass diese Leute aus gutem Grund hier in die neue Welt gekommen sind und man sie in Europa nicht mehr haben wollte. Achtet darauf, dass sie keinen Unfrieden stiften und nichts weiter tun als das Wort Gottes zu predigen. Sollten sie das Wohl der Kolonien gefährden, solltet Ihr Euch vielleicht wieder von Ihnen trennen. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, вы наверняка заметили, что в колониях поселились самые разные религиозные нонконформисты. По сути, колонии открыты для всех, если они усердно трудятся на благо колоний и не создают проблем.[NEWLINE][NEWLINE]Единственная проблема в том, что эти люди оказались здесь, в Новом Свете, не просто так. Причина в том, что в Европе они стали кому-то неугодны. Следите за тем, чтобы они не создавали проблем, когда проповедуют слово Божье. Если они угрожают благополучию колоний, возможно, нам придется снова отправить их в путь...[NEWLINE][NEWLINE]</Russian>
 	</TEXT>
@@ -4348,7 +4348,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER</Tag>
-		<English>Three master butcher</English>
+		<English>Three master butchers</English>
 		<French>Trois maitres bouchers</French>
 		<German>Drei Meister Schlachter</German>
 		<Russian>Три мастера мясника</Russian>
