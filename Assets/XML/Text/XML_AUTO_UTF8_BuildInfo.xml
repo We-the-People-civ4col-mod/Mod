@@ -300,7 +300,7 @@
 		<English>Plant a forest</English>
 		<French>Planter une forêt</French>
 		<German>Wald aufforsten</German>
-		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]джунгли[COLOR_REVERT]</Russian>
+		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]лес[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_PLAINS_HELP</Tag>
@@ -311,7 +311,7 @@
 		<English>Plant a forest</English>
 		<French>Planter une forêt</French>
 		<German>Wald aufforsten</German>
-		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]джунгли[COLOR_REVERT]</Russian>
+		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]лес[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_PLAINS_FERTILE_HELP</Tag>
@@ -322,7 +322,7 @@
 		<English>Plant a forest</English>
 		<French>Planter une forêt</French>
 		<German>Wald aufforsten</German>
-		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]джунгли[COLOR_REVERT]</Russian>
+		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]лес[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_SHRUBLAND_HELP</Tag>
@@ -373,7 +373,7 @@
 		<English>Needs River to create Flood Plains.</English>
 		<French>Une rivière est nécessaire pour créer des plaines d'inondations</French>
 		<German>Benötigt einen Fluss um fruchtbares Schwemmland zu erzeugen.</German>
-		<Russian>Для создания пойм нужна река</Russian>
+		<Russian>Для создания нужна река</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REMOVE_FOREST</Tag>
@@ -403,7 +403,8 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REMOVE_LIGHT_FOREST</Tag>
-		<English>TXT_KEY_BUILD_REMOVE_FOREST</English>
+		<English>Chop down the [LINK=FEATURE_FOREST]forest[\LINK]</English>
+		<Russian>Вырубить [COLOR_HIGHLIGHT_TEXT]редколесье[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REMOVE_LIGHT_FOREST_HELP</Tag>
