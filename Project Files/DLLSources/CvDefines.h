@@ -135,7 +135,18 @@
 // It's off unless CUSTOM_CFLAGS contains -DWITH_EXTRA_POWER_CHECKS (Makefile.settings)
 //   Nightinggale
 #ifdef WITH_EXTRA_POWER_CHECKS
-#define EXTRA_POWER_CHECK FAssert(checkPower(false));
+//#define EXTRA_POWER_CHECK FAssert(checkPower(false));
+#define EXTRA_POWER_CHECK \
+do { \
+    for (int i = 0; i < MAX_PLAYERS; ++i) \
+    { \
+        CvPlayerAI& kPlayer = GET_PLAYER((PlayerTypes)i); \
+        if (kPlayer.isAlive()) \
+        { \
+            kPlayer.checkPower(false); \
+        } \
+    } \
+} while(0);
 #else
 #define EXTRA_POWER_CHECK
 #endif

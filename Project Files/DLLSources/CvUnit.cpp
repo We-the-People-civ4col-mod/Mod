@@ -729,6 +729,7 @@ void CvUnit::updateOwnerCache(int iChange)
 	kPlayer.changeAssets(getAsset() * iChange);
 	kPlayer.changePower(getPower() * iChange);
 	CvArea* pArea = area();
+	//FAssertMsg(pArea, "No area assigned");
 	if (pArea != NULL)
 	{
 		pArea->changePower(getOwnerINLINE(), getPower() * iChange);
@@ -10757,12 +10758,15 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 
 		pOldPlot->changeAdjacentSight(getTeam(), visibilityRange(), false, this);
 
-		pOldPlot->area()->changeUnitsPerPlayer(getOwnerINLINE(), -1);
-		pOldPlot->area()->changePower(getOwnerINLINE(), -getPower());
+		//pOldPlot->area()->changeUnitsPerPlayer(getOwnerINLINE(), -1);
+		//pOldPlot->area()->changePower(getOwnerINLINE(), -getPower());
+		area()->changeUnitsPerPlayer(getOwnerINLINE(), -1);
+		area()->changePower(getOwnerINLINE(), -getPower());
 
 		if (AI_getUnitAIType() != NO_UNITAI)
 		{
-			pOldPlot->area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), -1);
+			//pOldPlot->area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), -1);
+			area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), -1);
 		}
 
 		setLastMoveTurn(GC.getGameINLINE().getTurnSlice());
@@ -10902,12 +10906,15 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 
 		pNewPlot->addUnit(this, bUpdate);
 
-		pNewPlot->area()->changeUnitsPerPlayer(getOwnerINLINE(), 1);
-		pNewPlot->area()->changePower(getOwnerINLINE(), getPower());
+		//pNewPlot->area()->changeUnitsPerPlayer(getOwnerINLINE(), 1);
+		//pNewPlot->area()->changePower(getOwnerINLINE(), getPower());
+		area()->changeUnitsPerPlayer(getOwnerINLINE(), 1);
+		area()->changePower(getOwnerINLINE(), getPower());
 
 		if (AI_getUnitAIType() != NO_UNITAI)
 		{
-			pNewPlot->area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), 1);
+			//pNewPlot->area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), 1);
+			area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), 1);
 		}
 
 		if (shouldLoadOnMove(pNewPlot))
@@ -11177,6 +11184,7 @@ int CvUnit::getLandArea() const
 
 CvArea* CvUnit::area() const
 {
+	// If the AI unit is in Europe, use the area of the Europe plots (i.e. the atlantic sea)
 	CvPlot* pPlot = plot();
 	if (pPlot == NULL)
 	{
@@ -12475,6 +12483,7 @@ void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bU
 
 			kOwner.changePower(iPower);
 			CvArea* pArea = area();
+			//FAssertMsg(pArea, "No area assigned");
 			if (pArea != NULL)
 			{
 				pArea->changePower(getOwnerINLINE(), iPower);
@@ -14473,7 +14482,8 @@ void CvUnit::setYieldStored(int iYieldAmount)
 			GET_PLAYER(getOwnerINLINE()).changePower(iChange * GC.getYieldInfo(eYield).getPowerValue());
 			GET_PLAYER(getOwnerINLINE()).changeAssets(iChange * GC.getYieldInfo(eYield).getAssetValue());
 			CvArea* pArea = area();
-			if (pArea  != NULL)
+			//FAssertMsg(pArea, "No area assigned");
+			if (pArea != NULL)
 			{
 				pArea->changePower(getOwnerINLINE(), iChange * GC.getYieldInfo(eYield).getPowerValue());
 			}

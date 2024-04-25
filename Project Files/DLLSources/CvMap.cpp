@@ -1504,7 +1504,7 @@ void CvMap::calculateAreas()
 
 		if (pLoopPlot->getArea() == FFreeList::INVALID_INDEX)
 		{
-			CvArea*  pArea = addArea();
+			CvArea* pArea = addArea();
 			pArea->init(pArea->getID(), pLoopPlot->isWater());
 			const int iArea = pArea->getID();
 			calculateLandAreaBfs(pLoopPlot, iArea, visited);

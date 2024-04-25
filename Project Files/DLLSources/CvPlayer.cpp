@@ -2327,6 +2327,8 @@ void CvPlayer::doTurn()
 
 	interceptEuropeUnits();
 
+	EXTRA_POWER_CHECK
+
 	updateEconomyHistory(GC.getGameINLINE().getGameTurn(), getGold());
 	updateIndustryHistory(GC.getGameINLINE().getGameTurn(), calculateTotalYield(YIELD_HAMMERS));
 	updateAgricultureHistory(GC.getGameINLINE().getGameTurn(), calculateTotalYield(YIELD_FOOD));
@@ -2345,6 +2347,8 @@ void CvPlayer::doTurn()
 	recalculatePlayerOppressometer();
 
 	gDLL->getInterfaceIFace()->setDirty(CityInfo_DIRTY_BIT, true);
+
+	EXTRA_POWER_CHECK
 
 	AI_doTurnPost();
 
@@ -7675,6 +7679,7 @@ void CvPlayer::changeAssets(int iChange)
 	m_iAssets += iChange;
 	OOS_LOG_3("Player change assets B", GC.isMainThread() ? 1 : 0, m_iAssets);
 	FAssert(getAssets() >= 0);
+	//if (GC.getGameINLINE().isFinalInitialized())
 }
 
 int CvPlayer::getPower() const
@@ -7688,6 +7693,7 @@ void CvPlayer::changePower(int iChange)
 	m_iPower += iChange;
 	OOS_LOG_3("Player change power B", GC.isMainThread() ? 1 : 0, m_iPower);
 	FAssert(getPower() >= 0);
+	//if (GC.getGameINLINE().isFinalInitialized())
 }
 
 
@@ -19048,8 +19054,9 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 			int iPower = pUnit->getPower();
 			changePower(-iPower);
 			CvArea* pArea = pUnit->area();
+			//FAssertMsg(pArea, "No area assigned");
 			if (pArea != NULL)
-			{
+			{	
 				pArea->changePower(getID(), -iPower);
 			}
 		}
@@ -19063,6 +19070,7 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 			int iPower = pUnit->getPower();
 			changePower(iPower);
 			CvArea* pArea = pUnit->area();
+			//FAssertMsg(pArea, "No area assigned");
 			if (pArea != NULL)
 			{
 				pArea->changePower(getID(), iPower);
@@ -20188,24 +20196,27 @@ bool CvPlayer::checkPower(bool bReset)
 	int iPower = 0;
 	int iAsset = 0;
 	std::map<int, int> mapAreaPower;
+	//bool bSkipAreaPower = false;
 	int iLoop;
 	for (CvUnit* pUnit = firstUnit(&iLoop); pUnit != NULL; pUnit = nextUnit(&iLoop))
 	{
-		int iUnitPower = pUnit->getPower();
+		const int iUnitPower = pUnit->getPower();
 		iPower += iUnitPower;
+		iAsset += pUnit->getAsset();
 		// large rivers power fix - Nightinggale - start
 		// use the area the unit is placed on
 		// using CvUnit::area() might return the area from the plot next to the unit
 		// this happens with land units on large rivers and ships on land (cities)
-		//CvArea* pArea = pUnit->area();
-		CvPlot* pPlot = pUnit->plot();
-		CvArea* pArea = pPlot ? pPlot->area() : NULL;
-		// large rivers power fix - Nightinggale - end
-		if (pArea != NULL)
-		{
+		CvArea* const pArea = pUnit->area();
+		if (pArea != NULL) {
+			// Area can be null during initialization and sometimes its useful
+			// to call checkPower on every power update during test runs
 			mapAreaPower[pArea->getID()] += iUnitPower;
 		}
-		iAsset += pUnit->getAsset();
+		else
+		{
+			//bSkipAreaPower = true;
+		}
 	}
 	for (uint i = 0; i < m_aEuropeUnits.size(); ++i)
 	{
@@ -20266,6 +20277,9 @@ bool CvPlayer::checkPower(bool bReset)
 	bool bCheck = true;
 	if (iPower != getPower())
 	{
+		const int iDifference = iPower - getPower();
+		FAssertMsg(false, CvString::format("Power discrepancy detected! player %d: %d != %d. Difference: %d",
+			getID(), iPower, getPower(), iDifference).c_str());
 		if (bReset)
 		{
 			changePower(iPower - getPower());
@@ -20275,6 +20289,9 @@ bool CvPlayer::checkPower(bool bReset)
 
 	if (iAsset != getAssets())
 	{
+		const int iDifference = iAsset - getAssets();
+		FAssertMsg(false, CvString::format("Asset discrepancy detected! player %d: %d != %d. Difference: %d",
+			getID(), iAsset, getAssets(), iDifference).c_str());
 		if (bReset)
 		{
 			changeAssets(iAsset - getAssets());
@@ -20282,15 +20299,21 @@ bool CvPlayer::checkPower(bool bReset)
 		bCheck = false;
 	}
 
-	for (CvArea* pArea = GC.getMap().firstArea(&iLoop); pArea != NULL; pArea = GC.getMap().nextArea(&iLoop))
-	{
-		if (mapAreaPower[pArea->getID()] != pArea->getPower(getID()))
+	//if (!bSkipAreaPower)
+	{ 
+		for (CvArea* pArea = GC.getMap().firstArea(&iLoop); pArea != NULL; pArea = GC.getMap().nextArea(&iLoop))
 		{
-			if (bReset)
+			const int iDifference = mapAreaPower[pArea->getID()] - pArea->getPower(getID());
+			if (iDifference != 0)
 			{
-				pArea->changePower(getID(), mapAreaPower[pArea->getID()] - pArea->getPower(getID()));
+				FAssertMsg(false, CvString::format("Area power discrepancy detected for player %d: %d != %d. Difference: %d for area %d", 
+					getID(), mapAreaPower[pArea->getID()], pArea->getPower(getID()), iDifference, pArea->getID()).c_str());
+				if (bReset)
+				{
+					pArea->changePower(getID(), mapAreaPower[pArea->getID()] - pArea->getPower(getID()));
+				}
+				bCheck = false;
 			}
-			bCheck = false;
 		}
 	}
 

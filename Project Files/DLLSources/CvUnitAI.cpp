@@ -1453,14 +1453,17 @@ void CvUnitAI::AI_FleeingMove()
 
 void CvUnitAI::AI_colonistMove()
 {
+	EXTRA_POWER_CHECK
 	if (isCargo())
 	{
 		if (AI_joinOptimalCity())
 		{
+			EXTRA_POWER_CHECK
 			return;
 		}
 		if (AI_joinCity())
 		{
+			EXTRA_POWER_CHECK
 			return;
 		}
 		getGroup()->pushMission(MISSION_SKIP);
@@ -1567,8 +1570,8 @@ void CvUnitAI::AI_settlerMove()
 		// If we cannot find any suitable city spot, disembark
 		// so that we don't needlessly occupy a cargo hold
 		// TODO: Check if the ship has other cargo
-		if (canUnload())
-			unload();
+		//if (canUnload())
+		//	unload();
 
 		getGroup()->pushMission(MISSION_SKIP);
 		return;
@@ -7345,6 +7348,8 @@ CvPlot* CvUnitAI::AI_bestDestinationPlot(bool bIgnoreDanger) const
 //Returns true if any units are loaded.
 bool CvUnitAI::AI_loadUnits(UnitAITypes eUnitAI, MissionAITypes eMissionAI)
 {
+	EXTRA_POWER_CHECK
+
 	CvPlot * pPlot = plot();
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 
@@ -7362,6 +7367,7 @@ bool CvUnitAI::AI_loadUnits(UnitAITypes eUnitAI, MissionAITypes eMissionAI)
 					if (pLoopUnit->canLoadUnit(this, plot(), true))
 					{
 						pLoopUnit->loadUnit(this);
+						pLoopUnit->jumpTo(this->plot());
 						iCount++;
 
 						if (!isHuman())
@@ -7373,6 +7379,7 @@ bool CvUnitAI::AI_loadUnits(UnitAITypes eUnitAI, MissionAITypes eMissionAI)
 			}
 		}
 	}
+	EXTRA_POWER_CHECK
 	return (iCount > 0);
 }
 
@@ -15340,6 +15347,7 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 			{
 				if (getTransportUnit() != NULL)
 				{
+					//TODO: Missing JumpTo ?
 					unload();
 				}
 				getGroup()->pushMission(MISSION_SKIP);

@@ -824,7 +824,39 @@ void CvPlayerAI::AI_unitUpdate()
 						{
 							if (!pUnit->getGroup()->isBusy() && !pUnit->getGroup()->isCargoBusy())
 							{
+
 								pUnit->AI_update();
+
+#if WITH_EXTRA_POWER_CHECKS
+								for (int i = 0; i < MAX_PLAYERS; ++i)
+								{
+									CvPlayerAI& kPlayer = GET_PLAYER((PlayerTypes)i);
+
+									if (kPlayer.isAlive())
+									{
+										bool res = kPlayer.checkPower(false);
+										if (!res)
+										{
+											const bool bOnTransport = pUnit->getTransportUnit() != NULL;
+											CvWString szUnitAI;
+											getUnitAIString(szUnitAI, pUnit->AI_getUnitAIType());
+											CvWString szTempBuffer;
+											if (!bOnTransport)
+											{
+												szTempBuffer.Format(L"Unit %d not on a transport at (%d,%d) with unit AI %s caused checkPower to be inconsistent!", pUnit->getID(),
+													pUnit->getX(), pUnit->getY(), szUnitAI.GetCString());
+											}
+											else
+											{
+												szTempBuffer.Format(L"Unit %d on a transport at (%d,%d) with unit AI %s caused checkPower to be inconsistent!", pUnit->getID(),
+													pUnit->getX(), pUnit->getY(), szUnitAI.GetCString());
+											}
+											std::string s(szTempBuffer.begin(), szTempBuffer.end());
+											FAssertMsg(false, s.c_str());
+										}
+									}
+								}
+#endif
 							}
 							else
 							{
