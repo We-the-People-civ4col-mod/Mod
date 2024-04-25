@@ -6899,10 +6899,8 @@ bool CvUnitAI::AI_sailTo(const SailToHelper& sth, bool bMove, bool bIgnoreDanger
 // R&R, ray, Port Royal - END
 
 // TAC - AI Improved Naval AI - koma13 - START
-CvPlot* CvUnitAI::findNearbyOceanPlot(CvPlot* pPlot)
+CvPlot* CvUnitAI::findNearbyOceanPlot(const CvPlot& kPlot) const
 {
-	FAssert (pPlot != NULL);
-
 	CvPlot* pBestPlot = NULL;
 	int iBestValue = 0;
 
@@ -6921,6 +6919,9 @@ CvPlot* CvUnitAI::findNearbyOceanPlot(CvPlot* pPlot)
 		if (m_pUnitInfo->getTerrainImpassable(pLoopPlot->getTerrainType()))
 			continue;
 
+		if (pLoopPlot->getTurnDamage() > 0)
+			continue;
+
 		if (pLoopPlot->getFeatureType() != NO_FEATURE)
 		{
 			if (m_pUnitInfo->getFeatureImpassable(pLoopPlot->getFeatureType()))
@@ -6934,12 +6935,12 @@ CvPlot* CvUnitAI::findNearbyOceanPlot(CvPlot* pPlot)
 				if (canCrossOcean(pLoopPlot, UNIT_TRAVEL_STATE_FROM_EUROPE))
 				{
 					int iPathTurns;
-					if (getGroup()->generatePath(pPlot, pLoopPlot, 0, true, &iPathTurns))
+					if (getGroup()->generatePath(&kPlot, pLoopPlot, 0, true, &iPathTurns))
 					{
 						int iValue = 10000;
 						iValue /= 100 + getPathCost();
 
-						if ((pPlot->getY_INLINE() == pLoopPlot->getY_INLINE()) ? (iValue >= iBestValue) : (iValue > iBestValue))
+						if ((kPlot.getY_INLINE() == pLoopPlot->getY_INLINE()) ? (iValue >= iBestValue) : (iValue > iBestValue))
 						{
 							iBestValue = iValue;
 							pBestPlot = pLoopPlot;
@@ -7216,40 +7217,38 @@ bool CvUnitAI::AI_deliverUnits(UnitAITypes eUnitAI)
 
 }
 // TAC - AI Improved Naval AI - koma13 - START
-CvPlot* CvUnitAI::AI_bestDestinationPlot(bool bIgnoreDanger)
+CvPlot* CvUnitAI::AI_bestDestinationPlot(bool bIgnoreDanger) const
 {
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-
-	CvPlot* pPlot = plot();
-	CvCity* pCity;
-
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	CvPlot* const pPlot = plot();
 	CvPlot* pBestPlot = NULL;
 	int iBestValue = 0;
 
 	int iLoop;
-	for (pCity = kOwner.firstCity(&iLoop); pCity != NULL; pCity = kOwner.nextCity(&iLoop))
+	for (CvCity* pCity = kOwner.firstCity(&iLoop); pCity != NULL; pCity = kOwner.nextCity(&iLoop))
 	{
-		CvPlot* pLoopPlot = pCity->plot();
-		if (pLoopPlot->isEuropeAccessable())
+		CvPlot* const pCityPlot = pCity->plot();
+		if (pCityPlot->isEuropeAccessable())
 		{
-			CvPlot* pOceanPlot = findNearbyOceanPlot(pLoopPlot);
-			if (pOceanPlot != NULL && getGroup()->generatePath(pOceanPlot, pLoopPlot, MOVE_BUST_FOG, true, NULL/*, bIgnoreDanger*/))
+			CvPlot* const pOceanPlot = findNearbyOceanPlot(*pCityPlot);
+			const int iFlags = MOVE_BUST_FOG | (bIgnoreDanger ? MOVE_IGNORE_DANGER : 0);
+			if (pOceanPlot != NULL && getGroup()->generatePath(pOceanPlot, pCityPlot, iFlags, true, NULL))
 			{
 				int iValue = (pCity->isBestPortCity() ? 2 : 1);
 
 				CLLNode<IDInfo>* pUnitNode;
-				CvArea* pArea = pLoopPlot->area();
+				CvArea* const pArea = pCityPlot->area();
 				pUnitNode = pPlot->headUnitNode();
 
 				while (pUnitNode != NULL)
 				{
-					CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
+					CvUnit* const pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 					{
 						int iTempValue = 0;
 
-						YieldTypes eYield = pLoopUnit->getYield();
+						const YieldTypes eYield = pLoopUnit->getYield();
 						if (NO_YIELD != eYield)
 						{
 							iTempValue += 10 + 3 * std::max(0, pCity->getMaintainLevel(pLoopUnit->getYield()) - pCity->getYieldStored(pLoopUnit->getYield()));
@@ -7258,11 +7257,11 @@ CvPlot* CvUnitAI::AI_bestDestinationPlot(bool bIgnoreDanger)
 						else
 						{
 							iTempValue += 100000;
-							int iNumAIUnits = pLoopPlot->plotCount(PUF_isUnitAIType, pLoopUnit->AI_getUnitAIType(), -1, getOwnerINLINE());
+							int iNumAIUnits = pCityPlot->plotCount(PUF_isUnitAIType, pLoopUnit->AI_getUnitAIType(), -1, getOwnerINLINE());
 
 							for (int i = 0; i < pCity->getPopulation(); ++i)
 							{
-								CvUnit* pLoopCitizen = pCity->getPopulationUnitByIndex(i);
+								CvUnit* const pLoopCitizen = pCity->getPopulationUnitByIndex(i);
 								if (pLoopUnit->getUnitType() == pLoopCitizen->getUnitType())
 								{
 									iNumAIUnits++;
@@ -7274,7 +7273,7 @@ CvPlot* CvUnitAI::AI_bestDestinationPlot(bool bIgnoreDanger)
 
 							if (pLoopUnit->AI_getUnitAIType() == UNITAI_OFFENSIVE)
 							{
-								CvArea* pArea = pCity->area();
+								CvArea* const pArea = pCity->area();
 								if (pArea->getAreaAIType(getTeam()) == AREAAI_NEUTRAL)
 								{
 									iTempValue = 0;
@@ -18292,7 +18291,7 @@ int CvUnitAI::AI_searchRange(int iRange)
 
 
 // XXX at some point test the game with and without this function...
-bool CvUnitAI::AI_plotValid(CvPlot* pPlot)
+bool CvUnitAI::AI_plotValid(CvPlot* pPlot) const
 {
 	PROFILE_FUNC();
 

@@ -502,8 +502,6 @@ public:
 	void setDistanceToOcean(int iNewValue);
 	int getDistanceToOcean() const;
 
-	CvPlot* findNearbyOceanPlot(int iRandomization = 25);
-
 	int getCrumbs() const;
 	void addCrumbs(int iQuantity);
 

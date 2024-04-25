@@ -9724,37 +9724,6 @@ int CvPlot::getDistanceToOcean() const
 	return m_iDistanceToOcean;
 }
 
-CvPlot* CvPlot::findNearbyOceanPlot(int iRandomization)
-{
-    CvPlot* pOceanPlot = this;
-
-    while (pOceanPlot->getDistanceToOcean() > 0)
-    {
-        CvPlot* pBestPlot = NULL;
-        int iBestValue = MAX_INT;
-        for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
-        {
-            CvPlot* pDirectionPlot = plotDirection(pOceanPlot->getX_INLINE(), pOceanPlot->getY_INLINE(), (DirectionTypes)iDirection);
-            if (pDirectionPlot != NULL)
-            {
-				int iValue = pDirectionPlot->getDistanceToOcean() * (1000 + GC.getGame().getSorenRandNum(10 * iRandomization, "find nearby ocean plot"));
-                if (iValue < iBestValue)
-                {
-                    iBestValue = iValue;
-                    pBestPlot = pDirectionPlot;
-                }
-            }
-        }
-        FAssert(pBestPlot != NULL);
-        if (pBestPlot == NULL)
-        {
-            return NULL;
-        }
-        pOceanPlot = pBestPlot;
-    }
-    return pOceanPlot;
-}
-
 int CvPlot::countFriendlyCulture(TeamTypes eTeam) const
 {
 	int iTotalCulture = 0;
