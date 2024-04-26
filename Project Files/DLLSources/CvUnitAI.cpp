@@ -883,6 +883,22 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 
 	const CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
 
+	// K-Mod. hack: For the AI, I want to use the standard pathfinder, CvUnit::generatePath.
+	// but this function is also used to give action recommendations for the player
+	// - and for that I do not want to disrupt the standard pathfinder. (because I'm paranoid about OOS bugs.)
+	KmodPathFinder alt_finder;
+	KmodPathFinder& pathFinder = getGroup()->AI_isControlled() ? CvSelectionGroup::path_finder : alt_finder;
+	if (getGroup()->AI_isControlled())
+	{
+		// standard settings. cf. CvUnit::generatePath
+		pathFinder.SetSettings(getGroup(), 0);
+	}
+	else
+	{
+		// like I said - this is only for action recommendations. It can be rough.
+		pathFinder.SetSettings(getGroup(), 0, 5, GLOBAL_DEFINE_MOVE_DENOMINATOR);
+	}
+
 	for (int iPass = 0; iPass < 2; iPass++)
 	{
 		for (iI = 0; iI < NUM_CITY_PLOTS; iI++)
@@ -916,6 +932,7 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 									{
 										if (!(pLoopPlot->isVisibleEnemyUnit(this)))
 										{
+											/* original colo code	
 											int iPathTurns = 0;
 											if (generatePath(pLoopPlot, 0, true, &iPathTurns))
 											{
@@ -935,7 +952,16 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 													{
 														iMaxWorkers += 10;
 													}
-												}
+												} */
+											// K-Mod. basically the same thing, but using pathFinder.
+											if (pathFinder.GeneratePath(pLoopPlot))
+											{
+												const int iPathTurns = pathFinder.GetPathTurns() + (pathFinder.GetFinalMoves() == 0 ? 1 : 0);
+												int iMaxWorkers = iPathTurns > 1 ? 1 : AI_calculatePlotWorkersNeeded(pLoopPlot, eBuild);
+												if (pUnit && pUnit->plot()->isCity() && iPathTurns == 1)
+													iMaxWorkers += 10;
+											// K-Mod end
+
 												if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_BUILD, getGroup()) < iMaxWorkers)
 												{
 													//XXX this could be improved greatly by
@@ -963,6 +989,7 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 			if (eBestBuild != NO_BUILD)
 			{
 				FAssert(pBestPlot != NULL);
+				/* original bts code
 				int iPathTurns;
 				if ((generatePath(pBestPlot, 0, true, &iPathTurns)) && canBuild(pBestPlot, eBestBuild)
 					&& !(pBestPlot->isVisibleEnemyUnit(this)))
@@ -982,8 +1009,16 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 					else if (iPathTurns <= 1)
 					{
 						iMaxWorkers = AI_calculatePlotWorkersNeeded(pBestPlot, eBestBuild);
-					}
-					int iWorkerCount = GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pBestPlot, MISSIONAI_BUILD, getGroup());
+					} */
+				// K-Mod. basically the same thing, but using pathFinder.
+				if (pathFinder.GeneratePath(pBestPlot))
+				{
+					const int iPathTurns = pathFinder.GetPathTurns() + (pathFinder.GetFinalMoves() == 0 ? 1 : 0);
+					int iMaxWorkers = iPathTurns > 1 ? 1 : AI_calculatePlotWorkersNeeded(pBestPlot, eBestBuild);
+					if (pUnit && pUnit->plot()->isCity() && iPathTurns == 1)
+						iMaxWorkers += 10;
+				// K-Mod end
+					const int iWorkerCount = GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pBestPlot, MISSIONAI_BUILD, getGroup());
 					if (iWorkerCount < iMaxWorkers)
 					{
 						//Good to go.
