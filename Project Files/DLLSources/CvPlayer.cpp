@@ -1198,8 +1198,8 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 	std::vector<CvUnit *> aOldPopulationUnits;
 	for (int i = 0; i < iPopulation; ++i)
 	{
-		CvUnit* pUnit = pOldCity->getPopulationUnitByIndex(0);
-		bool bRemoved = pOldCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, NO_PROFESSION, bConquest);
+		CvUnit* const pUnit = pOldCity->getPopulationUnitByIndex(0);
+		const bool bRemoved = pOldCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, NO_PROFESSION, bConquest);
 		FAssert(bRemoved);
 		aOldPopulationUnits.push_back(pUnit);
 		GET_PLAYER(pOldCity->getOwnerINLINE()).getAndRemoveUnit(pUnit->getID());
@@ -1212,13 +1212,14 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 
 	//acquire old population units
 	std::vector<CvUnit*> aNewPopulationUnits;
-	for(int i=0;i<(int)aOldPopulationUnits.size();i++)
+	for(uint i=0;i<aOldPopulationUnits.size();i++)
 	{
 		CvUnit* pOldUnit = aOldPopulationUnits[i];
-		UnitTypes eNewUnitType = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(pOldUnit->getUnitClassType());
+		const UnitTypes eNewUnitType = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(pOldUnit->getUnitClassType());
 		if (eNewUnitType != NO_UNIT)
 		{
-			CvUnit* pNewUnit = initUnit(eNewUnitType, NO_PROFESSION, pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), pOldUnit->AI_getUnitAIType());
+			// Ensure that the citizens acquired use the default colonist AI (otherwise they risk getting assigned an inappropriate AI type)
+			CvUnit* const pNewUnit = initUnit(eNewUnitType, NO_PROFESSION, pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), UNITAI_COLONIST);
 			pNewUnit->convert(pOldUnit, true); //kills old unit
 			aNewPopulationUnits.push_back(pNewUnit);
 		}
@@ -1235,7 +1236,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 		{
 			for (iDY = -1; iDY <= 1; iDY++)
 			{
-				pLoopPlot	= plotXY(pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), iDX, iDY);
+				pLoopPlot = plotXY(pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), iDX, iDY);
 
 				if (pLoopPlot != NULL)
 				{

@@ -1078,12 +1078,12 @@ void CvUnitAI::AI_setUnitAIType(UnitAITypes eNewValue)
 {
 	if (AI_getUnitAIType() != eNewValue)
 	{
-		if (eNewValue == UNITAI_SETTLER)
-		{
-			FAssertMsg(canFound(NULL), "Unit must be able to found to have this UNITAI!");
-		}
+		FAssertMsg(eNewValue != UNITAI_SETTLER || (eNewValue == UNITAI_SETTLER && canFound(NULL)),
+			"Unit must be able to found to have this UNITAI!");	
+		FAssertMsg(eNewValue != UNITAI_WORKER || (eNewValue == UNITAI_WORKER && workRate(true) > 0),
+			"Unit must have non-zero work rate to have this UNITAI!");
 
-		bool bOnMap = (getX_INLINE() != INVALID_PLOT_COORD) && (getY_INLINE() != INVALID_PLOT_COORD);
+		const bool bOnMap = (getX_INLINE() != INVALID_PLOT_COORD) && (getY_INLINE() != INVALID_PLOT_COORD);
 
 		if (AI_getUnitAIType() != NO_UNITAI)
 		{
@@ -1112,7 +1112,7 @@ void CvUnitAI::AI_setUnitAIType(UnitAITypes eNewValue)
 		}
 		GET_PLAYER(getOwnerINLINE()).AI_changeNumAIUnits(AI_getUnitAIType(), 1);
 
-		int iCurrentTurn = GC.getGameINLINE().getGameTurn();
+		const int iCurrentTurn = GC.getGameINLINE().getGameTurn();
 		if (getGameTurnCreated() != iCurrentTurn)
 		{
 			m_iLastAIChangeTurn = iCurrentTurn;
