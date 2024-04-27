@@ -243,10 +243,12 @@
 		<Tag>TXT_KEY_ALLOW_DANGEROUS_PATH</Tag>
 		<English>Allow unit to pathfind through plots that inflict damage</English>
 		<German>Einen schnellen Weg wählen, der durch Gelände führen kann, welches auch Schaden an der Einheit verursachen kann.</German>
+		<Russian>Разрешить юниту пересекать клетки, наносящие урон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DISALLOW_DANGEROUS_PATH</Tag>
 		<English>Prevent unit from pathfinding through plots that inflict damage</English>
 		<German>Einen Weg wählen, der vielleicht langsamer ist, aber durch Gelände führt, welches keinen Schaden verursacht.</German>
-	</TEXT>	
+		<Russian>Запретить юниту пересекать клетки, наносящие урон</Russian>
+	</TEXT>
 </Civ4GameText>
