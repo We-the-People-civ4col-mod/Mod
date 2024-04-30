@@ -3031,10 +3031,10 @@ int CvUnit::getPathCost() const
 
 bool CvUnit::generatePath(const CvPlot* pToPlot, int iFlags, bool bReuse,
 	int* piPathTurns, int iMaxPath,   // <advc.128>
-	bool bUseTempFinder) const
+	bool bUseTempFinder, bool bCalledFromPython) const
 {
 	return getGroup()->generatePath(plot(), pToPlot, iFlags, bReuse, piPathTurns,
-		iMaxPath, bUseTempFinder);
+		iMaxPath, bUseTempFinder, bCalledFromPython);
 }
 
 // K-Mod. Return the standard pathfinder, for extracting path information.

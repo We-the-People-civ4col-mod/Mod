@@ -2646,10 +2646,15 @@ CvWString getStrategyString(StrategyTypes eStrategy)
 
 bool generatePathForHypotheticalUnit(const CvPlot* pFrom, const CvPlot* pTo, PlayerTypes ePlayer, UnitTypes eUnit, int iFlags, int iMaxTurns)
 {
+	CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+	const int iPower = kPlayer.getPower();
+	const int iAssets = kPlayer.getAssets();
 	PROFILE_FUNC();
-	CvUnit* const pTempUnit = GET_PLAYER(ePlayer).getOrCreateTempUnit(eUnit, pFrom->getX(), pFrom->getY());
+	CvUnit* const pTempUnit = kPlayer.getOrCreateTempUnit(eUnit, pFrom->getX(), pFrom->getY());
 	pTempUnit->finishMoves();
 	const bool bResult = pTempUnit->generatePath(pTo, iFlags, false, NULL, iMaxTurns, /*bUseTempFinder*/true);
-	GET_PLAYER(ePlayer).releaseTempUnit();
+	kPlayer.releaseTempUnit();
 	return bResult;
+	FAssert(iPower == kPlayer.getPower());
+	FAssert(iAssets == kPlayer.getAssets());
 }

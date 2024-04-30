@@ -123,7 +123,9 @@ public:
 	bool generatePath(const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false,							// Exposed to Python
 		int* piPathTurns = NULL,
 		int iMaxPath = -1, // K-Mod
-		bool bUseTempFinder = false) const; // advc.128
+		bool bUseTempFinder = false, // advc.128
+		bool bCalledFromPython = false
+		) const;
 	KmodPathFinder& getPathFinder() const; // K-Mod
 
 	bool canEnterTerritory(PlayerTypes ePlayer, bool bIgnoreRightOfPassage = false) const;

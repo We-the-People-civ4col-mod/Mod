@@ -824,6 +824,7 @@ void CvPlayerAI::AI_unitUpdate()
 						{
 							if (!pUnit->getGroup()->isBusy() && !pUnit->getGroup()->isCargoBusy())
 							{
+								FAssert(!isTempUnit(pUnit));
 								pUnit->AI_update();
 							}
 							else

@@ -3640,7 +3640,7 @@ int CvSelectionGroup::getPathLength() const
 // Note that the bReuse parameter is ignored due to internal cacheing and hence there is no need to request it.
 // If a temporary path finder is used, be aware that the life time of the pf is restricted to the duration of
 // generatePath and thus attempting to access the internal pf state to get the nodes will be invalid!
-bool CvSelectionGroup::generatePath(const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, int iMaxPath, bool bUseTempFinder) const
+bool CvSelectionGroup::generatePath(const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns, int iMaxPath, bool bUseTempFinder, bool bCalledFromPython) const
 {
 	PROFILE("CvSelectionGroup::generatePath()");
 
@@ -3649,18 +3649,7 @@ bool CvSelectionGroup::generatePath(const CvPlot* pFromPlot, const CvPlot* pToPl
 		return false;
 	}
 
-	bool inPort = false;
-#ifdef FASSERT_ENABLE
-	CvUnit* const pNewHeadUnit = getHeadUnit();
-	const UnitTravelStates eTravelState = pNewHeadUnit ? pNewHeadUnit->getUnitTravelState() : NO_UNIT_TRAVEL_STATE;
-
-	if (eTravelState == UNIT_TRAVEL_STATE_IN_EUROPE || eTravelState == UNIT_TRAVEL_STATE_IN_AFRICA ||
-		eTravelState == UNIT_TRAVEL_STATE_IN_PORT_ROYAL) {
-		inPort = true;
-	}
-#endif
-
-	FAssert(AI().AI_isControlledInternal() || (iFlags & MOVE_MAX_MOVES) || inPort);
+	FAssert(bCalledFromPython || AI().AI_isControlledInternal() || (iFlags & MOVE_MAX_MOVES));
 	FAssert(!bUseTempFinder || !bReuse);
 
 	KmodPathFinder tempFinder;

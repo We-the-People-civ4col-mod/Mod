@@ -153,7 +153,7 @@ public:
 	CvPlot* getPathPlotByIndex(int iIndex) const;
 	int getPathLength() const;
 	// TAC - AI Improved Naval AI - koma13 - END
-	bool generatePath(const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL, int iMaxPath = -1, bool bUseTempFinder = false) const; // Exposed to Python (K-mod added iMaxPath)
+	bool generatePath(const CvPlot* pFromPlot, const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL, int iMaxPath = -1, bool bUseTempFinder = false, bool bCalledFromPython = false) const; // Exposed to Python (K-mod added iMaxPath)
 	// void resetPath() const; // disabled by K-mod. Use path_finder.Reset instead. (was exposed to Python)
 
 	DllExport void clearUnits();
