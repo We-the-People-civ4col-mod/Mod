@@ -10288,7 +10288,7 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 		return false;
 	}
 
-	CvSelectionGroup* pGroup = getGroup();
+	CvSelectionGroup* const pGroup = getGroup();
 	if (pGroup == NULL)
 	{
 		return false;
@@ -10307,7 +10307,7 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 	CLLNode<IDInfo>* pUnitNode = listCargo.head();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = listCargo.next(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getYield() == NO_YIELD)
@@ -10322,11 +10322,11 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 	}
 	// TAC - Trade Routes Advisor - koma13 - END
 
-	PlayerTypes ePlayer = getOwnerINLINE();
+	const PlayerTypes ePlayer = getOwnerINLINE();
 	FAssert(ePlayer != NO_PLAYER);
-	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
-
-	CvTradeRoute* pTradeRoute = kPlayer.getTradeRoute(iRouteID);
+	const CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+	const CvTradeRoute* pTradeRoute = kPlayer.getTradeRoute(iRouteID);
+	
 	if (pTradeRoute == NULL)
 	{
 		return false;
@@ -10356,22 +10356,21 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 		}
 	}
 
-	// Note: Adding MOVE_MAX_MOVES to prevent the assert for non-ai usage of the group pathfinder since
-	// that shoud be safe here and is easier than adding another pf flag
-
-	CvCity* pSource = ::getCity(pTradeRoute->getSourceCity());
+	CvCity* const pSource = ::getCity(pTradeRoute->getSourceCity());
 	// TAC - Trade Routes Advisor - koma13 - START
-	//if (pSource == NULL || !generatePath(pSource->plot(), 0, bReusePath))
-	if (pSource == NULL || !generatePath(pSource->plot(), (isIgnoreDanger() ? MOVE_IGNORE_DANGER | MOVE_MAX_MOVES : MOVE_NO_ENEMY_TERRITORY | MOVE_MAX_MOVES), bReusePath))
+	KmodPathFinder alt_finder;
+	const int iFlags = isIgnoreDanger() ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY;
+	alt_finder.SetSettings(getGroup(), iFlags);
+	
+	if (pSource == NULL || !alt_finder.GeneratePath(pSource->plot()))
 	// TAC - Trade Routes Advisor - koma13 - END
 	{
 		return false;
 	}
 
-	CvCity* pDestination = ::getCity(pTradeRoute->getDestinationCity());
+	CvCity* const pDestination = ::getCity(pTradeRoute->getDestinationCity());
 	// TAC - Trade Routes Advisor - koma13 - START
-	//if (pDestination != NULL && !generatePath(pDestination->plot(), 0, bReusePath))
-	if (pDestination != NULL && !generatePath(pDestination->plot(), (isIgnoreDanger() ? MOVE_IGNORE_DANGER | MOVE_MAX_MOVES : MOVE_NO_ENEMY_TERRITORY | MOVE_MAX_MOVES), bReusePath))
+	if (pDestination != NULL && !alt_finder.GeneratePath(pDestination->plot()))
 	// TAC - Trade Routes Advisor - koma13 - END
 	{
 		return false;
