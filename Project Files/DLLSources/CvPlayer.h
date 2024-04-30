@@ -973,6 +973,7 @@ public:
 	void writeDesyncLog(FILE *f) const;
 
 	DirectionTypes getPreferredStartingDirection() const;
+	std::vector<CvUnit*> getPortUnitsByProfession(ProfessionTypes eProfession) const;
 
 protected:
 

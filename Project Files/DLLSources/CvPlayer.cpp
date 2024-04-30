@@ -6758,6 +6758,7 @@ void CvPlayer::processFather(FatherTypes eFather, int iChange)
 	{
 		processTrait((TraitTypes) kFatherInfo.getTrait(), iChange);
 	}
+	EXTRA_POWER_CHECK
 }
 
 void CvPlayer::processFatherOnce(FatherTypes eFather)
@@ -19017,7 +19018,8 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 	if (iChange != 0)
 	{
 		OOS_LOG_3("set profession equipment modifier", getTypeStr(eProfession), iValue);
-		std::vector<CvUnit*> aProfessionUnits;
+		std::vector<CvUnit*> aProfessionUnits = getPortUnitsByProfession(eProfession);
+
 		int iLoop;
 		for (CvUnit* pUnit = firstUnit(&iLoop); pUnit != NULL; pUnit = nextUnit(&iLoop))
 		{
@@ -19026,14 +19028,7 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 				aProfessionUnits.push_back(pUnit);
 			}
 		}
-		for (uint i = 0; i < m_aEuropeUnits.size(); ++i)
-		{
-			CvUnit* pUnit = m_aEuropeUnits[i];
-			if (pUnit->getProfession() == eProfession)
-			{
-				aProfessionUnits.push_back(pUnit);
-			}
-		}
+
 		for (CvCity* pCity = firstCity(&iLoop); pCity != NULL; pCity = nextCity(&iLoop))
 		{
 			for (int i = 0; i < pCity->getPopulation(); ++i)
@@ -25047,4 +25042,39 @@ void CvPlayer::onTurnLogging() const
 			logBBAI(" Total Score: %d, Population Score: %d (%d total pop), Land Score: %d", calculateScore(), getPopScore(), getTotalPopulation(), getLandScore());
 		}
 	}
+}
+
+// Returns all port units (currently Europe, Africa, Port Royal)
+std::vector<CvUnit*> CvPlayer::getPortUnitsByProfession(ProfessionTypes eProfession) const
+{
+	std::vector<CvUnit*> aProfessionUnits;
+
+	for (uint i = 0; i < m_aEuropeUnits.size(); ++i)
+	{
+		CvUnit* const pUnit = m_aEuropeUnits[i];
+		if (pUnit->getProfession() == eProfession)
+		{
+			aProfessionUnits.push_back(pUnit);
+		}
+	}
+
+	for (uint i = 0; i < m_aAfricaUnits.size(); ++i)
+	{
+		CvUnit* const pUnit = m_aAfricaUnits[i];
+		if (pUnit->getProfession() == eProfession)
+		{
+			aProfessionUnits.push_back(pUnit);
+		}
+	}
+
+	for (uint i = 0; i < m_aPortRoyalUnits.size(); ++i)
+	{
+		CvUnit* const pUnit = m_aPortRoyalUnits[i];
+		if (pUnit->getProfession() == eProfession)
+		{
+			aProfessionUnits.push_back(pUnit);
+		}
+	}
+
+	return aProfessionUnits;
 }
