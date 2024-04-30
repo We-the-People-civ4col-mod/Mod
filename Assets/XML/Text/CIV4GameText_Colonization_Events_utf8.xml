@@ -5247,13 +5247,13 @@
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_START_1</Tag>
-		<English>Milord, you are about to explore the New World with an inexperienced expedition. But be aware that these adventurers have no idea what hardships and dangers await them. You should encourage them to hire a few more traveling companions!</English>
+		<English>Milord, you plan to explore the New World with an inexperienced expedition. These adventurers have no idea what hardships and dangers await them. Give them a few knowledgeable traveling companions!</English>
 		<German>Milord, Ihr seid im Begriff mit einer unerfahrenen Expedition die Neue Welt zu erkunden. Aber seid Euch darüber gewahr, dass diese Abenteurer keine Ahnung haben, was für Strapazen und Gefahren auf sie warten. Ihr solltet sie dazu ermutigen noch ein paar Reisegefährten anzuheuern!</German>
 		<Russian>Милорд, вы собираетесь начать исследование Нового Света. Но вы даже не догадываетесь, какие трудности и опасности могут вас поджидать. Нашей эспедиции не хватает опытных людей!</Russian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_START_2</Tag>
-		<English>Milord, some inexperienced adventurers have made it across the great sea to the shores of this unknown land. Now you surely want them to succeed and see what lies beyond the beach, don't you? Who would you like to accompany the expedition?</English>
+		<English>Milord, some inexperienced adventurers have made it across the great sea to the shores of this unknown land. Surely you want them to discover what lies beyond the beach, don't you? Who would be best to accompany the expedition?</English>
 		<German>Milord, einige unerfahrene Abenteurer haben es über das große Meer hierher an die Küsten dieses unbekannten Landes geschafft. Nun wollt Ihr doch sicher auch, dass sie erfolgreich sind und sehen was sich hinter dem Strand befindet, oder? Wen wollt Ihr der Expedition als Begleitung mitgeben?</German>
 		<Russian>Милорд, вы пересекли великое море и достигли берегов этой неведомой доселе земли. Вам наверняка захочется посмотреть, что находится за пляжем, не так ли? Но у нас так мало опытных людей. Давайте потратим немного денег и наймем их.</Russian>
 	</TEXT>
@@ -5265,25 +5265,25 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_1</Tag>
-		<English>You are right. They need strong and adventurous fellows who will follow them to hell and back. The prospect of adventure and gold should attract exactly the men we need, even for a small handout.</English>
+		<English>You are right. They need strong and adventurous fellows who will lead them into hell and back. The prospect of adventure and gold should attract exactly the men we need, in return for a small share.</English>
 		 <German>Ihr habt Recht. Sie brauchen kampfkräftige und abenteuerlustige Begleiter, die ihnen bis in die Hölle folgen und wieder zurück. Die Aussicht auf Abenteuer und Gold sollte auch für ein kleines Handgeld genau die Männer anlocken, die wir brauchen.</German>
 		<Russian>Да, нам нужны сильные и храбрые люди, которые готовы совершить рисковую прогулку даже в ад. Жажда наживы и приключений всегда привлекает таких смельчаков, даже за небольшой барыш.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_2</Tag>
-		<English>You are right. But even more important than the sword is the steadfast faith. They should take missionaries with us on the expedition who can proclaim the word of God to all the heathens they will meet along the way. God will then place his protective hand over them.</English>
+		<English>You're right. But steadfast faith is far more important than the sword. We need missionaries with us proclaiming God's word to those heathens we meet along the way. God's mighty hand will shield us.</English>
 		<German>Ihr habt Recht. Aber noch wichtiger als das Schwert ist der unterschütterliche Glaube. Sie sollten Missionare auf die Reise mitnehmen, die das Wort Gottes allen Heiden verkünden können, denen sie unterwegs begegnen werden. Gott wird damit seine schützende Hand über sie legen.</German>
 		<Russian>В тяжёлых странствиях важен не только добрый меч, но и сильный дух. Возьмём с собой миссионеров. Своими молитвами они помогут нам пережить невзгоды, а дикарей обратят в Истинную Веру. Господь всемогущий да пребудет с нами!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_3</Tag>
-		<English>You are right. But they have not come to this New World to plunder and murder. They want to trade with the inhabitants of this beautiful land. The prospect of profit will excite the traders. Hire a few traders.</English>
+		<English>You're right. But rather than coming to this New World to plunder and murder, they look forward to trading with the inhabitants of this beautiful land. Profit excites traders. Hire traders.</English>
 		<German>Ihr habt Recht. Aber sie sind nicht in diese Neue Welt gekommen um zu plündern und zu morden. Sie wollen Handel mit den Bewohnern dieses schönen Landes treiben. Die Aussicht auf Profit wird die Händler begeistern. Heuert ein paar Händler an.</German>
 		<Russian>Мы пришли сюда не грабить и убивать, а преумножить наше состояние. Перспектива большой прибыли должна привлечь множество торговцев. Наймите нескольких из них.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_4</Tag>
-		<English>You are right. But I don't expect any resistance from the natives. Curiosity will guide these simple natures. All they have to do is pick up the treasures or talk them out of them. They shall take a wagon with them to transport the treasures and the luggage.</English>
+		<English>You are right. I don't expect resistance from the Natives. Curiosity will guide their simple natures. All our explorers have to do is pick up the treasures or persuade the ignorant owners to give them to us. What we need is a wagon to transport treasures and supplies.</English>
 		<German>Ihr habt Recht. Aber ich erwarte keine Gegenwehr von den Ureinwohnern. Die Neugier wird diese einfachen Naturen leiten. Sie brauchen die Schätze nur aufzusammeln oder sie ihnen abzuschwatzen. Sie sollen einen Wagen mitnehmen, mit dem sie die Schätze und das Gepäck transportieren können.</German>
 		<Russian>Ну какие опасности? Посмотрите на этих милых дикарей - они словно любопытные дети. Все, что нам нужно сделать, это уговорить их расстаться со своими сокровищами, цену которым они даже не представляют. Нам нужна повозка, чтобы мы смогли собрать как можно больше подарков в деревнях индейцев.</Russian>
 	</TEXT>
@@ -5301,7 +5301,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_SEASONED_TRADER_HELP</Tag>
-		<English>[ICON_BULLET]A courageous native trader joins the expedition.</English>
+		<English>[ICON_BULLET]A courageous Native trader joins the expedition.</English>
 		<German>[ICON_BULLET]Couragierte Ureinwohnerhändler schließen sich der Expedition an.</German>
 		<Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]Отважный торговец с индейцами[COLOR_REVERT] присоединяется к нашей экспедиции.</Russian>
 	</TEXT>
