@@ -19062,36 +19062,9 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 			}
 		}
 
-		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-
-		if (hasContentsYieldEquipmentAmount(eProfession))
-		{
-			// Update power and asset contribution from current professionals
-			for (uint i = 0; i < aProfessionUnits.size(); ++i)
-			{
-				CvUnit* const pUnit = aProfessionUnits[i];
-				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
-				{
-					const int iYieldAmount = getYieldEquipmentAmount(eProfession, eYield);
-					if (iYieldAmount != 0)
-					{
-						// Note that nn increased modifier is a reduction of power / asset value
-						// since we effectively loose yields
-						const int iPowerChange = iChange * GC.getYieldInfo(eYield).getPowerValue() * iYieldAmount;
-						changePower(iPowerChange);
-						const int iAssetChange = iChange * GC.getYieldInfo(eYield).getAssetValue() * iYieldAmount;
-						changeAssets(iAssetChange);
-						CvArea* const pArea = pUnit->area();
-						if (pArea != NULL)
-						{
-							pArea->changePower(getID(), iPowerChange);
-						}
-					}
-				}
-			}
-		}
-
 		m_em_iProfessionEquipmentModifier.set(eProfession, iValue);
+		FAssert(getProfessionEquipmentModifier(eProfession) >= -100);
+		Update_cache_YieldEquipmentAmount(eProfession); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 
 		for (uint i = 0; i < aProfessionUnits.size(); ++i)
 		{
@@ -19106,9 +19079,6 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 				pArea->changePower(getID(), iPower);
 			}
 		}
-
-		FAssert(getProfessionEquipmentModifier(eProfession) >= -100);
-		Update_cache_YieldEquipmentAmount(eProfession); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 	}
 }
 
