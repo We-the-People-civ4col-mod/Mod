@@ -767,7 +767,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RELATION_KING_INCREASE</Tag>
-		<English>[ICON_BULLET]Relations to [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] king are improved by [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</English>
+		<English>[ICON_BULLET]Relations to [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] King are improved by [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</English>
 		<French>[ICON_BULLET]Vos relations avec le roi [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] se sont ameliorées de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Beziehungen zum [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT] König verbessern sich um [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]Отношения с [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] Королем улучшились на [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</Russian>
