@@ -199,6 +199,9 @@ void CvCityAI::AI_assignWorkingPlots()
 	it's kind of expensive, but not THAT expensive with only 8 plots per colony
 	and the population numbers being low.
 	*/
+
+	const int iMaxAttemptsPerCitizen = 2;
+	stdext::hash_map<CvUnit*, int> attempts;
 	std::deque<CvUnit*> citizens;
 
 	for (int iPass = 0; iPass < 3; ++iPass)
@@ -263,20 +266,28 @@ void CvCityAI::AI_assignWorkingPlots()
 			jobMutex.unlock();
 		}
 
-		CvUnit* pOldUnit = AI_parallelAssignToBestJob(*pUnit);
+		CvUnit* const pOldUnit = AI_parallelAssignToBestJob(*pUnit);
+		attempts[pUnit]++;
 
-		if (pOldUnit != NULL)
+		// Limit the number of attempt for this citizen
+		if (pOldUnit != NULL && attempts[pUnit] > iMaxAttemptsPerCitizen)
 		{
 			if (std::find(citizens.begin(), citizens.end(), pOldUnit) == citizens.end())
 			{
 				citizens.push_front(pOldUnit);
 			}
 		}
+
 		iCount++;
 		if (iCount > iMaxIterations)
 		{
+			// Check if there's a sensible reason why we failed to employ the citizen
+			const int iNetFood = foodDifference();
+			const int iStoredFood = getYieldStored(YIELD_FOOD);
 			CvWString szTempBuffer;
-			szTempBuffer.Format(L"AI plot assignment confusion. Unit: %s in city: %s could not be assigned to a job!", pUnit->getNameAndProfession().GetCString(), getName().GetCString());
+			szTempBuffer.Format(L"AI plot assignment confusion. Unit: %s in city: %s could not be assigned to a job!. \
+				Food difference: %d Food Stored: %d", pUnit->getNameAndProfession().GetCString(), getName().GetCString(),
+				iNetFood, iStoredFood);
 			std::string s(szTempBuffer.begin(), szTempBuffer.end());
 			FAssertMsg(false, s.c_str());
 			break;
