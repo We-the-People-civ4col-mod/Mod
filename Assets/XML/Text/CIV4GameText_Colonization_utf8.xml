@@ -906,7 +906,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_REMOVED</Tag>
-		<English>In [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] the natives burnt down the [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] mission and threw the missionary into the flames. He had incurred their hatred because he had smashed an ancient idol statue.</English>
+		<English>In [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] the Natives burnt down the [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] mission and threw the missionary into the flames. He incurred their hatred by smashing an ancient statue of their beloved idol.</English>
 		<French>Dans la ville: [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT], les indigènes ont repoussé la mission [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT]</French>
 		<German>In [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben die Ureinwohner die [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] Mission niedergebrannt und den Missionar in die Flammen geworfen. Er hatte sich ihren Hass zugezogen, weil er eine alte Götzenstatue zerschlagen hatte.</German>
 		<Italian>I nativi a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno rinnegato la missione [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT]</Italian>
