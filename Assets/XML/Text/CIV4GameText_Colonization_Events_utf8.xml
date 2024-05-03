@@ -5319,7 +5319,7 @@
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_FEVER</Tag>
-		<English>Milord, our expedition has reached swampy, impenetrable jungle. The mosquitoes are buzzing around the men's heads and they bite like arrows. It's probably called [COLOR_HIGHLIGHT_TEXT]malaria[COLOR_REVERT]. The men and even the animals are weakened and need to rest for a while.</English>
+		<English>Milord, our expedition has reached impenetrable jungle. The mosquitoes buzz around the men's heads and bite like tiny arrows. Swamps here have bad air, what the Italians call [COLOR_HIGHLIGHT_TEXT]malaria[COLOR_REVERT]. Our men and even the animals have been weakened. We need frequent rest.</English>
 		<German>Milord, unsere Expedition hat sumpfigen, undurchdringlichen Urwald erreicht. Die Mücken schwirren nur so um die Köpfe der Männer herum und sie stechen wie Pfeile. Man nennt es wohl [COLOR_HIGHLIGHT_TEXT]Malaria[COLOR_REVERT]. Die Männer und sogar die Tiere sind geschwächt und müssen sich eine Weile ausruhen.</German>
 		<Russian>Милорд, наша экспедиция достигла непроходимых, болотистых джунглей. Тучи комаров жужжат над головами людей и жалят, как стрелы. Люди и даже животные ослаблены, а у некоторых сильный жар. Кажется, это называется малярией. Нам всем нужен отдых.</Russian>
 	</TEXT>
@@ -5337,13 +5337,13 @@
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_DESERT</Tag>
-		<English>Milord, our expedition has reached a desert and has only a small supply of water. The animals must be spared. The expedition is making slow progress.</English>
+		<English>Milord, our expedition has reached a desert. We have only a little water, most of which we need for the animals. The expedition is making slow progress.</English>
 		<German>Milord, unsere Expedition hat eine Wüste erreicht und nur geringe [COLOR_HIGHLIGHT_TEXT]Wasservorräte[COLOR_REVERT] dabei. Die Tiere müssen geschont werden. Die Expedition kommt nur langsam vorran.</German>
 		<Russian>Милорд, наша экспедиция достигла пустыни и имеет лишь небольшой запас воды. Нам нужно поберечь животных и сбавить темп.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_DESERT</Tag>
-		<English>Well, we have no choice. Drink as little as possible and give the rest to the horses. We're lost without them. Spread out in the area and look for a [COLOR_HIGHLIGHT_TEXT]watering hole[COLOR_REVERT].</English>
+		<English>Well, we have no choice. Drink as little as possible and give the rest to the horses. We're lost without them. Spread out across the area and look for a [COLOR_HIGHLIGHT_TEXT]watering hole[COLOR_REVERT].</English>
 		 <German>Nun gut, wir haben keine Wahl. Trinkt so wenig wie möglich und gebt den Rest den Pferden. Ohne sie sind wir verloren. Verteilt Euch in der Gegend und sucht nach einer [COLOR_HIGHLIGHT_TEXT]Wasserstelle[COLOR_REVERT].</German>
 		<Russian>Что ж, у нас нет выбора. Пейте как можно меньше, а остальное отдайте лошадям. Без них мы пропадём. И отправьте разведчиков на поиски водоёма.</Russian>
 	</TEXT>
@@ -5355,7 +5355,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_ATTACKED_1</Tag>
-		<English>Milord, our epedition was [COLOR_HIGHLIGHT_TEXT]ambushed[COLOR_REVERT] by hostile natives on the way through this vast new continent in search of a campsite!</English>
+		<English>Milord, our epedition is being [COLOR_HIGHLIGHT_TEXT]ambushed[COLOR_REVERT] by hostile Natives! All across this vast new continent they attack us wherever we search for campsites.</English>
 		<German>Milord, unsere Epedition wurde auf dem Weg durch diesen riesigen neuen Kontinent auf der Suche nach einem Lagerplatz aus dem [COLOR_HIGHLIGHT_TEXT]Hinterhalt[COLOR_REVERT] von Wilden angegriffen!</German>
 		<Russian>Милорд, наша экспедиция попала в засаду враждебно настроенных туземцев!</Russian>
 	</TEXT>
@@ -5367,13 +5367,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_MUTINY</Tag>
-		<English>There's a rumour that a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] expedition has been stoppey by a mutiny.</English>
+		<English>We hear that mutineers have ended the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] expedition.</English>
 		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Expedition wird durch eine Meuterei aufgehalten.</German>
 		<Russian>Ходят слухи, что в экспедиции [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] назревает мятеж.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_MUTINY</Tag>
-		<English>Milord, some of our men are losing their nerve. They are emaciated and have not preyed for a long time. They are threatening to mutiny!</English>
+		<English>Milord, our men are losing their nerve. They're emaciated.  They haven't prayed for many days. The're right on the edge of mutiny!</English>
 		<German>Milord, einige unserer Männer verlieren die Nerven. Sie sind ausgezehrt und haben lange keine Beute mehr gemacht. Sie drohen zu meutern!</German>
 		<Russian>Милорд, среди разведчиков ходят слухи, что вы не желаете делиться будущей добычей. Некоторые открыто предлагают забрать то, что уже было найдено. Назревает мятеж!</Russian>
 	</TEXT>
@@ -5385,7 +5385,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_MUTINY_2</Tag>
-		<English>Well, I understand that. Many of them only came along for the loot. They have no interest in the beauty of nature. Let's pay them their wages first, that should calm them down for a while.</English>
+		<English>Well, I understand. Many of them are only here for the loot. The beauty of nature? They don't care. We'll pay their wages. See if that calms them down.</English>
 		<German>Nun gut, das verstehe ich. Viele sind nur wegen der Beute mitgekommen. Für die schöne Natur haben sie nichts übrig. Zahlen wir Ihnen erst einmal ihren Sold, das sollte sie für eine Weile beruhigen.</German>
 		<Russian>Что же, я могу их понять. Многие из них пришли сюда только ради добычи. Их не интересуют красоты природы и тайны этого мира. Давайте дадим им немного денег. На какое-то время это их успокоит.</Russian>
 	</TEXT>
@@ -5403,19 +5403,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Tag>
-		<English>Lured by the prospects of rich takings, a band of roving adventurers has attacked a [COLOR_HIGHLIGHT_TEXT]treasure column[COLOR_REVERT]. They're beggarly and lack everything - and so they want our gold - if we can't stop them!</English>
+		<English>Lured by the promise of rich takings, a band of rogues has attacked a [COLOR_HIGHLIGHT_TEXT]treasure column[COLOR_REVERT]. They're starving and desperate - and so they want our gold - unless we stop them!</English>
 		<German>Angelockt von den Aussichten auf reiche Beute hat eine Bande umherstreifender Abenteurer eine [COLOR_HIGHLIGHT_TEXT]Schatzkolonne[COLOR_REVERT] angegriffen. Die Banditen sind arm und es fehlt ihnen an allem - und daher wollen sie unser Gold - wenn wir es nicht verhindern können!</German>
 		<Russian>Соблазненная перспективой богатой добычи, группа искателей приключений напала на [COLOR_HIGHLIGHT_TEXT]обоз с сокровищами[COLOR_REVERT]. У этих нищих бродяг за душой ни гроша и поэтому они ни перед чем не остановятся, чтобы заполучить наше золото, если мы не остановим их!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Tag>
-		<English>We will never go down without a fight!</English>
+		<English>We won't give up without a fight!</English>
 		<German>Wir werden den Schatz beschützen!</German>
 		<Russian>Мы ни за что не сдадимся без боя!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_ATTACK_TREASURE_2</Tag>
-		<English>Give them a share without a fight, then maybe they'll let us move on with the rest!</English>
+		<English>Let them take a share without a fight. Maybe they'll let us keep the rest!</English>
 		<German>Gebt ihnen kampflos einen Anteil, dann lassen Sie uns vielleicht mit dem Rest weiterziehen!</German>
 		<Russian>Давайте дадим этим бедолагам небольшую часть сокровищ и будем надеяться, что они позволят нам уйти с оставшимися.</Russian>
 	</TEXT>
