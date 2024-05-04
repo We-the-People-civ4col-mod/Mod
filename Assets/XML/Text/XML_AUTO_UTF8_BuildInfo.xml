@@ -264,7 +264,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_PLASTERED_ROAD</Tag>
-		<English>Build plastered country roads</English>
+		<English>Build paved country roads</English>
 		<French>Construire une route pavée</French>
 		<German>gepflasterte Landstraße bauen</German>
 		<Russian>Построить [COLOR_HIGHLIGHT_TEXT]вымощенную камнем дорогу[COLOR_REVERT]</Russian>
