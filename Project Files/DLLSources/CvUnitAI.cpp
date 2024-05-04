@@ -6513,25 +6513,28 @@ bool CvUnitAI::AI_africa()
 
 	AI_sellYieldUnits(AFRICA);
 
-	for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
+	if (kOwner.m_estimatedUnemploymentCount < kOwner.getNumCities() * 2)
 	{
-		UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
-		CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
-
-		if (kUnitInfo.getDefaultUnitAIType() == UNITAI_COLONIST && kUnitInfo.getAfricaCost() > 0)
+		for (int iI = 0; iI < GC.getNumUnitClassInfos(); iI++)
 		{
-			// Attempt to buy slaves as long as we have have enough gold and free cargo slots
-			const int iPotentialSlavesToBuy = cargoSpace() - getCargo();
+			UnitTypes eLoopUnit = ((UnitTypes)(GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iI)));
+			CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
 
-			for (int i=0; i < iPotentialSlavesToBuy; i++)
+			if (kUnitInfo.getDefaultUnitAIType() == UNITAI_COLONIST && kUnitInfo.getAfricaCost() > 0)
 			{
-				if (kOwner.buyAfricaUnit(eLoopUnit, 100) == NULL)
-					// Early exit since we could not buy anymore
-					break;
-			}
+				// Attempt to buy slaves as long as we have have enough gold and free cargo slots
+				const int iPotentialSlavesToBuy = cargoSpace() - getCargo();
 
-			// No need to consider other units
-			break;
+				for (int i=0; i < iPotentialSlavesToBuy; i++)
+				{
+					if (kOwner.buyAfricaUnit(eLoopUnit, 100) == NULL)
+						// Early exit since we could not buy anymore
+						break;
+				}
+
+				// No need to consider other units
+				break;
+			}
 		}
 	}
 
