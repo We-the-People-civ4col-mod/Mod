@@ -5643,11 +5643,10 @@ void CvGame::createAnimalsSea()
 						CivilizationTypes eBarbCiv = GET_PLAYER(getBarbarianPlayer()).getCivilizationType();
 						for (int iJ = 0; iJ < GC.getNumUnitInfos(); iJ++)
 						{
-							//eLoopUnit = (UnitTypes) GC.getCivilizationInfo(eBarbCiv).getCivilizationUnits(iJ);
 							eLoopUnit = (UnitTypes) iJ;
 
-							const bool bHasPathToEuropePlots = generatePathForHypotheticalUnit(pPlot, pEuropePlot, getBarbarianPlayer(), eLoopUnit, 0);
-							if (!bHasPathToEuropePlots)
+							// Check if the plot is connected to any Europe plot
+							if (pPlot->getDistanceToOcean() >= PLOT_OCEAN_DISTANCE_IMPASSABLE_THRESHOLD)
 								continue;
 
 							if (eLoopUnit == NO_UNIT)
@@ -7337,8 +7336,9 @@ void CvGame::updateOceanDistances()
 		}
 
 		if (pPlot->isImpassable())
-		{
-			iDistance += 50;
+		{	
+			// Non-impassable plots with a number higher than this threshold are considered ice-locked.
+			iDistance += PLOT_OCEAN_DISTANCE_IMPASSABLE_THRESHOLD;
 		}
 
 		for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
