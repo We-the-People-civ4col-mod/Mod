@@ -88356,7 +88356,7 @@
 			<iAIValue>1000</iAIValue>
 			<iGenericParameter1>0</iGenericParameter1>
 			<iGenericParameter2>0</iGenericParameter2>
-			<iGenericParameter3>200</iGenericParameter3>
+			<iGenericParameter3>100</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -88417,7 +88417,7 @@
 			<iAIValue>1000</iAIValue>
 			<iGenericParameter1>0</iGenericParameter1>
 			<iGenericParameter2>0</iGenericParameter2>
-			<iGenericParameter3>200</iGenericParameter3>
+			<iGenericParameter3>100</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
@@ -88478,7 +88478,7 @@
 			<iAIValue>1000</iAIValue>
 			<iGenericParameter1>UNITCLASS_HOSTILE_NATIVE</iGenericParameter1>
 			<iGenericParameter2>2</iGenericParameter2>
-			<iGenericParameter3>300</iGenericParameter3>
+			<iGenericParameter3>200</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
 		<EventInfo>
