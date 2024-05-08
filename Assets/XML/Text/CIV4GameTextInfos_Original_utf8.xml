@@ -448,7 +448,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_STREAM_EFFECT</Tag>
-		<English>[ICON_BULLET]Doubles movement with stream[NEWLINE][ICON_BULLET]Halves movement against stream</English>
+		<English>[ICON_BULLET]Doubles movement with current[NEWLINE][ICON_BULLET]Halves movement against current</English>
 		<French>[ICON_BULLET]Doubles le mouvement suivant le courant[NEWLINE][ICON_BULLET]Divise le mouvement à contre-courant</French>
 		<German>[ICON_BULLET]Verdoppelt Bewegung mit Strom[NEWLINE][ICON_BULLET]Halbiert Bewegung gegen Strom</German>
 		<Russian>[ICON_BULLET]Движение по течению удваивает скорость перемещения[NEWLINE][ICON_BULLET]Движение против течения вдвое замедляет скорость перемещения</Russian>
