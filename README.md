@@ -28,7 +28,7 @@ Otherwise the mod will not work!
 
 ### Other Gameplay Changes
 * Coastal tiles can now be "shallow coast", a terrain type which only small ships can enter
-* Oceans now have "streams", increasing movement in the direction of the stream
+* Oceans now have "currents", increasing movement in the direction of the stream
 * City growth now gives different types of colonists depending on the people that work in the city (free/forced laborers, ancestry)
 * Slaves will sometimes not run away, but start an armed rebellion against their oppression in the colonies
 * Several new units have been added (buccaneer, slave overseer, slave hunter)
