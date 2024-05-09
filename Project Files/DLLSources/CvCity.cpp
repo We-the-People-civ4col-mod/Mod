@@ -963,12 +963,21 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		break;
 	// auto traderoute - end - Nightinggale
 
-	// bobisback import changes
+
+// bobisback import changes
 	case TASK_IMPORT_CHANGES:
 		if(bOption)
 			handleDemandedImport();
 		if(bAlt)
 			handleConstructionImport();
+		break;
+
+		
+	case TASK_IMPORT_CHANGES_GRP2:
+		if(bOption)
+			handleMilitaryImport();
+		if(bAlt)
+			handleLivestockImport();
 		break;
 
 	case TASK_CLEAR_SPECIALTY:
@@ -12628,6 +12637,7 @@ void CvCity::setAutoExport(YieldTypes eYield, bool bExport)
 
 void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoExportAll)
 {
+
 	if (bReset)
 	{
 		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
@@ -12716,6 +12726,180 @@ void CvCity::handleConstructionImport()
 	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
 
 	doTask(TASK_YIELD_TRADEROUTE, YIELD_TOOLS, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+	
+	bImport = true;
+	bExport = isExport(YIELD_ROPE);
+	bMaintainImport = getImportsMaintain(YIELD_ROPE);
+	bAutoExport = isAutoExport(YIELD_ROPE);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_ROPE_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_ROPE_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_ROPE, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+	
+	bImport = true;
+	bExport = isExport(YIELD_SAILCLOTH);
+	bMaintainImport = getImportsMaintain(YIELD_SAILCLOTH);
+	bAutoExport = isAutoExport(YIELD_SAILCLOTH);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_SAILCLOTH_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_SAILCLOTH_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_SAILCLOTH, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+}
+
+void CvCity::handleMilitaryImport()
+{
+	bool bImport = true;
+	bool bExport = isExport(YIELD_MUSKETS);
+	bool bMaintainImport = getImportsMaintain(YIELD_MUSKETS);
+	bool bAutoExport = isAutoExport(YIELD_MUSKETS);
+	int iMaintainLevel = GLOBAL_DEFINE_IMPORT_MILITARY_MUSKETS_IMPORT_LIMIT_AMOUNT;
+	int iImportLimitLevel = GLOBAL_DEFINE_IMPORT_MILITARY_MUSKETS_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_MUSKETS, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+	
+	bImport = true;
+	bExport = isExport(YIELD_BLADES);
+	bMaintainImport = getImportsMaintain(YIELD_BLADES);
+	bAutoExport = isAutoExport(YIELD_BLADES);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_MILITARY_BLADES_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_MILITARY_BLADES_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_BLADES, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+	
+	bImport = true;
+	bExport = isExport(YIELD_CANNONS);
+	bMaintainImport = getImportsMaintain(YIELD_CANNONS);
+	bAutoExport = isAutoExport(YIELD_CANNONS);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_MILITARY_CANNONS_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_MILITARY_CANNONS_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_CANNONS, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+	
+	bImport = true;
+	bExport = isExport(YIELD_HORSES);
+	bMaintainImport = getImportsMaintain(YIELD_HORSES);
+	bAutoExport = isAutoExport(YIELD_HORSES);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_MILITARY_HORSES_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_MILITARY_HORSES_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_HORSES, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+	
+	bImport = true;
+	bExport = isExport(YIELD_BLACK_POWDER);
+	bMaintainImport = getImportsMaintain(YIELD_BLACK_POWDER);
+	bAutoExport = isAutoExport(YIELD_BLACK_POWDER);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_MILITARY_BLACK_POWDER_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_MILITARY_BLACK_POWDER_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_BLACK_POWDER, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);	
+}
+
+void CvCity::handleLivestockImport()
+{
+	bool bImport = true;
+	bool bExport = isExport(YIELD_CATTLE);
+	bool bMaintainImport = getImportsMaintain(YIELD_CATTLE);
+	bool bAutoExport = isAutoExport(YIELD_CATTLE);
+	int iMaintainLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_CATTLE_IMPORT_LIMIT_AMOUNT;
+	int iImportLimitLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_CATTLE_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_CATTLE, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+	
+	bImport = true;
+	bExport = isExport(YIELD_SHEEP);
+	bMaintainImport = getImportsMaintain(YIELD_SHEEP);
+	bAutoExport = isAutoExport(YIELD_SHEEP);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_SHEEP_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_SHEEP_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_SHEEP, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+	
+	bImport = true;
+	bExport = isExport(YIELD_HORSES);
+	bMaintainImport = getImportsMaintain(YIELD_HORSES);
+	bAutoExport = isAutoExport(YIELD_HORSES);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_HORSES_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_HORSES_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_HORSES, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+	
+	bImport = true;
+	bExport = isExport(YIELD_CHICKEN);
+	bMaintainImport = getImportsMaintain(YIELD_CHICKEN);
+	bAutoExport = isAutoExport(YIELD_CHICKEN);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_CHICKEN_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_CHICKEN_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_CHICKEN, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+	
+	bImport = true;
+	bExport = isExport(YIELD_GEESE);
+	bMaintainImport = getImportsMaintain(YIELD_GEESE);
+	bAutoExport = isAutoExport(YIELD_GEESE);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_GEESE_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_GEESE_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_GEESE, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+	
+	bImport = true;
+	bExport = isExport(YIELD_GOATS);
+	bMaintainImport = getImportsMaintain(YIELD_GOATS);
+	bAutoExport = isAutoExport(YIELD_GOATS);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_GOATS_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_GOATS_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_PIGS, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+	
+	bImport = true;
+	bExport = isExport(YIELD_PIGS);
+	bMaintainImport = getImportsMaintain(YIELD_PIGS);
+	bAutoExport = isAutoExport(YIELD_PIGS);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_PIGS_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_LIVESTOCK_PIGS_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_PIGS, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);	
 }
 
 void CvCity::handleDemandedImport()

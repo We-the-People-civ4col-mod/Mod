@@ -697,6 +697,7 @@ enum TaskTypes
 	TASK_YIELD_TRADEROUTE, // transport feeder - Nightinggale
 	TASK_AUTO_TRADEROUTE, // auto traderoute - Nightinggale
 	TASK_IMPORT_CHANGES, //bobisback import changes
+	TASK_IMPORT_CHANGES_GRP2, //bobisback import changes
 	TASK_CHOOSE_CITY_PLOT_YIELD,
 
 	NUM_TASK_TYPES

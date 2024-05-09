@@ -1205,7 +1205,9 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 			}
 
 			// auto traderoute - start - Nightinggale
-			if (pPopupReturn->getButtonClicked() >= 0 && pPopupReturn->getButtonClicked() <= 2)
+
+		if (pPopupReturn->getButtonClicked() >= 0 && pPopupReturn->getButtonClicked() <= 2)
+
 			{
 				bool bReset          = pPopupReturn->getButtonClicked() == 0;
 				bool bImportAll      = pPopupReturn->getButtonClicked() == 1;
@@ -1222,9 +1224,19 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 
 				gDLL->sendDoTask(info.getData1(), TASK_IMPORT_CHANGES, 0, 0, importDemandedGoods, importConstructionGoods, false, false);
 			}
+
+			
+			if (pPopupReturn->getButtonClicked() == 5 || pPopupReturn->getButtonClicked() == 6)
+			{
+				bool importMilitaryGoods = pPopupReturn->getButtonClicked() == 5;
+				bool importLivestockGoods = pPopupReturn->getButtonClicked() == 6;
+				gDLL->sendDoTask(info.getData1(), TASK_IMPORT_CHANGES_GRP2, 0, 0, importMilitaryGoods, importLivestockGoods, false, false);
+			}						
+
 		}
 		break;
-
+		
+		
 	// Teacher List - start - Nightinggale
 	case BUTTONPOPUP_TEACHER_LIST:
 		{
@@ -3381,10 +3393,12 @@ bool CvDLLButtonPopup::launchYieldImportExportPopup(CvPopup* pPopup, CvPopupInfo
 	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_EXPORT_ALL").c_str(), NULL, 2);
 	// auto traderoute - end - Nightinggale
 
-	//bobisback demanded goods
+	
+//bobisback demanded goods
 	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_DEMANDED_GOODS").c_str(), NULL, 3);
 	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_CONSTRUCTION_GOODS").c_str(), NULL, 4);
-
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_MILITARY_GOODS").c_str(), NULL, 5);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_IMPORT_LIVESTOCK_GOODS").c_str(), NULL, 6);
 
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
