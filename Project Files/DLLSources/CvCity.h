@@ -1026,6 +1026,11 @@ protected:
 
 	// auto traderoute - end - Nightinggale
 
+//bobisback import mod
+	void handleDemandedImport();
+	void handleConstructionImport();
+	void handleMilitaryImport();
+	void handleLivestockImport();	
 public:
 	int getMarketModifier() const { return m_iCacheMarketModifier; }
 	const YieldCargoArray<int>& getBuildingYieldDemands() const { return m_ja_iBuildingYieldDemands; }

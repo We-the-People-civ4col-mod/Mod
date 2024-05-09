@@ -833,6 +833,8 @@ enum TaskTypes
 	// Teacher List - end - Nightinggale
 	TASK_YIELD_TRADEROUTE, // transport feeder - Nightinggale
 	TASK_AUTO_TRADEROUTE, // auto traderoute - Nightinggale
+	TASK_IMPORT_CHANGES, //bobisback import changes
+	TASK_IMPORT_CHANGES_GRP2, //bobisback import changes
 	TASK_CHOOSE_CITY_PLOT_YIELD,
 
 #ifdef _USRDLL
