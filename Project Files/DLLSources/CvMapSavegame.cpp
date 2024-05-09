@@ -10,9 +10,9 @@ const int defaultOwnedPlots = 0;
 const int defaultTopLatitude = 0;
 const int defaultBottomLatitude = 0;
 const int defaultNextRiverID = 0;
-
 const bool defaultWrapX = false;
 const bool defaultWrapY = false;
+const bool defaultHasStream = false;
 
 enum SavegameVariableTypes
 {
@@ -24,15 +24,12 @@ enum SavegameVariableTypes
 	Save_TopLatitude,
 	Save_BottomLatitude,
 	Save_NextRiverID,
-
 	Save_WrapX,
 	Save_WrapY,
 	Save_UseTwoPlotCities,
-
 	Save_Areas,
-
 	Save_Plots,
-
+	Save_HasStream,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -45,21 +42,20 @@ const char* getSavedEnumNameMap(SavegameVariableTypes eType)
 {
 	switch (eType)
 	{
-	case Save_END: return "Save_END";
-	case Save_GridWidth: return "Save_GridWidth";
-	case Save_GridHeight: return "Save_GridHeight";
-	case Save_LandPlots: return "Save_LandPlots";
-	case Save_OwnedPlots: return "Save_OwnedPlots";
-	case Save_TopLatitude: return "Save_TopLatitude";
-	case Save_BottomLatitude: return "Save_BottomLatitude";
-	case Save_NextRiverID: return "Save_NextRiverID";
-
-	case Save_WrapX: return "Save_WrapX";
-	case Save_WrapY: return "Save_WrapY";
-	case Save_UseTwoPlotCities: return "Save_UseTwoPlotCities";
-
-	case Save_Areas: return "Save_Areas";
-	case Save_Plots: return "Save_Plots";
+		case Save_END: return "Save_END";
+		case Save_GridWidth: return "Save_GridWidth";
+		case Save_GridHeight: return "Save_GridHeight";
+		case Save_LandPlots: return "Save_LandPlots";
+		case Save_OwnedPlots: return "Save_OwnedPlots";
+		case Save_TopLatitude: return "Save_TopLatitude";
+		case Save_BottomLatitude: return "Save_BottomLatitude";
+		case Save_NextRiverID: return "Save_NextRiverID";
+		case Save_WrapX: return "Save_WrapX";
+		case Save_WrapY: return "Save_WrapY";
+		case Save_UseTwoPlotCities: return "Save_UseTwoPlotCities";
+		case Save_Areas: return "Save_Areas";
+		case Save_Plots: return "Save_Plots";
+		case Save_HasStream: return "Save_HasStream";
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -75,10 +71,9 @@ void CvMap::resetSavedData()
 	m_iTopLatitude      = defaultTopLatitude;
 	m_iBottomLatitude   = defaultBottomLatitude;
 	m_iNextRiverID      = defaultNextRiverID;
-
 	m_bWrapX            = defaultWrapX;
 	m_bWrapY            = defaultWrapY;
-
+	m_bHasStream		= defaultHasStream;
 	m_ja_NumBonuses.reset();
 	m_ja_NumBonusesOnLand.reset();
 }
@@ -118,10 +113,9 @@ void CvMap::read(CvSavegameReader reader)
 		case Save_TopLatitude:         reader.Read(m_iTopLatitude);        break;
 		case Save_BottomLatitude:      reader.Read(m_iBottomLatitude);     break;
 		case Save_NextRiverID:         reader.Read(m_iNextRiverID);        break;
-
 		case Save_WrapX:               reader.Read(m_bWrapX);              break;
 		case Save_WrapY:               reader.Read(m_bWrapY);              break;
-		
+		case Save_HasStream:		   reader.Read(m_bHasStream);		   break;
 		case Save_UseTwoPlotCities:
 		{
 			char iBuffer = 0;
@@ -208,10 +202,10 @@ void CvMap::write(CvSavegameWriter writer)
 	writer.Write(Save_TopLatitude, m_iTopLatitude, defaultTopLatitude);
 	writer.Write(Save_BottomLatitude, m_iBottomLatitude, defaultBottomLatitude);
 	writer.Write(Save_NextRiverID, m_iNextRiverID, defaultNextRiverID);
-
 	writer.Write(Save_WrapX, m_bWrapX, defaultWrapX);
 	writer.Write(Save_WrapY, m_bWrapY, defaultWrapY);
 	writer.Write(Save_UseTwoPlotCities, this->getCityCatchmentRadius(), (char)0);
+	writer.Write(Save_HasStream, m_bHasStream, defaultHasStream);
 
 	if (numPlotsINLINE() > 0)
 	{

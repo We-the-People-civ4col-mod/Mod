@@ -244,7 +244,8 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 		gDLL->callUpdater();
 		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
 		{
-			plotSoren(iX, iY)->init(iX, iY);
+			CvPlot& kPlot = *plotSoren(iX, iY);
+			kPlot.init(iX, iY);
 		}
 	}
 	calculateAreas();
@@ -1522,6 +1523,16 @@ char CvMap::getCityCatchmentRadius() const
 void CvMap::setCityCatchmentRadius(int iSetting)
 {
 	GC.setCityCatchmentRadius(iSetting);
+}
+
+bool CvMap::hasStream() const
+{
+	return m_bHasStream;
+}
+
+void CvMap::setStreamFlag()
+{
+	m_bHasStream = true;
 }
 
 // Private Functions...

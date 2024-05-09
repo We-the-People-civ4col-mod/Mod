@@ -5990,12 +5990,29 @@ void CvPlot::setFeatureType(FeatureTypes eNewValue, int iVariety)
 
 	if (eNewValue != NO_FEATURE)
 	{
+		const CvFeatureInfo& kNewFeatureInfo = GC.getFeatureInfo(eNewValue);
+
 		if (iVariety == -1)
 		{
-			iVariety = ((GC.getFeatureInfo(eNewValue).getArtInfo()->getNumVarieties() * ((getLatitude() * 9) / 8)) / 90);
+			iVariety = ((kNewFeatureInfo.getArtInfo()->getNumVarieties() * ((getLatitude() * 9) / 8)) / 90);
 		}
 
-		iVariety = range(iVariety, 0, (GC.getFeatureInfo(eNewValue).getArtInfo()->getNumVarieties() - 1));
+		iVariety = range(iVariety, 0, (kNewFeatureInfo.getArtInfo()->getNumVarieties() - 1));
+
+		if (!GC.getMap().hasStream() &&
+			kNewFeatureInfo.isNorthMovementBonus() ||
+			kNewFeatureInfo.isSouthMovementBonus() ||
+			kNewFeatureInfo.isEastMovementBonus() ||
+			kNewFeatureInfo.isWestMovementBonus() ||
+			kNewFeatureInfo.isNorthEastMovementBonus() ||
+			kNewFeatureInfo.isNorthWestMovementBonus() ||
+			kNewFeatureInfo.isSouthEastMovementBonus() ||
+			kNewFeatureInfo.isSouthWestMovementBonus())
+		{
+			// Need to determine if the map has any streams since
+			// that info is required by the pathfinder
+			GC.getMap().setStreamFlag();
+		}
 	}
 	else
 	{

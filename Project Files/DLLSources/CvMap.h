@@ -334,7 +334,8 @@ public:
 
 	char getCityCatchmentRadius() const;
 	void setCityCatchmentRadius(int iSetting);
-
+	void setStreamFlag();
+	bool hasStream() const;
 protected:
 
 	void resetVisibilityCache() const; // defined in CvPlot.cpp
@@ -351,8 +352,9 @@ protected:
 	int m_iBottomLatitude;
 	int m_iNextRiverID;
 
-	bool m_bWrapX;
+	bool m_bWrapX;	
 	bool m_bWrapY;
+	bool m_bHasStream;
 
 	BonusArray<int> m_ja_NumBonuses;
 	BonusArray<int> m_ja_NumBonusesOnLand;
