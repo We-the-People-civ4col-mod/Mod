@@ -369,8 +369,8 @@ protected:
 	int AI_pillageValue(CvPlot* pPlot);
 	bool AI_canPillage(CvPlot& kPlot) const;
 
-	int AI_searchRange(int iRange);
-	bool AI_plotValid(CvPlot* pPlot) const;
+	int AI_searchRange(int iRange) const;
+	bool AI_plotValid(const CvPlot* pPlot) const;
 
 	int AI_finalOddsThreshold(CvPlot* pPlot, int iOddsThreshold);
 

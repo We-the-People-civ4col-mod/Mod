@@ -1277,18 +1277,15 @@ bool CvUnitAI::AI_animalLandPatrol()
 {
 	PROFILE_FUNC();
 
-	CvPlot* pAdjacentPlot;
-	CvPlot* pBestPlot;
+	const CvPlot* pBestPlot;
 	int iValue, iRand;
 	int iBestValue;
-	int iI;
-
 	iBestValue = 0;
 	pBestPlot = NULL;
 
-	for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 	{
-		pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		const CvPlot* const pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
 
 		if (pAdjacentPlot != NULL)
 		{
@@ -1297,7 +1294,7 @@ bool CvUnitAI::AI_animalLandPatrol()
 				//if (!pAdjacentPlot->isVisibleEnemyUnit(this))
 				if (!pAdjacentPlot->isCity() && !pAdjacentPlot->isEurope() && pAdjacentPlot->getNumUnits() == 0)
 				{
-					if (generatePath(pAdjacentPlot, 0, true))
+					if (canMoveInto(*pAdjacentPlot))
 					{
 						iValue = 0;
 						iRand = getUnitInfo().getAnimalPatrolWeight();
@@ -1317,8 +1314,8 @@ bool CvUnitAI::AI_animalLandPatrol()
 
 							if (iValue > iBestValue)
 							{
-									iBestValue = iValue;
-									pBestPlot = getPathEndTurnPlot();
+								iBestValue = iValue;
+								pBestPlot = pAdjacentPlot;
 							}
 						}
 					}
@@ -1342,47 +1339,32 @@ bool CvUnitAI::AI_animalSeaPatrol()
 {
 	PROFILE_FUNC();
 
-	CvPlot* pAdjacentPlot;
-	CvPlot* pBestPlot;
-	int iValue, iRand;
+	const CvPlot* pBestPlot;
 	int iBestValue;
-	int iI;
-
 	iBestValue = 0;
 	pBestPlot = NULL;
 
-	for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 	{
-		pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		const CvPlot* const pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
 
 		if (pAdjacentPlot != NULL)
 		{
 			if (AI_plotValid(pAdjacentPlot))
 			{
-				//if (!pAdjacentPlot->isVisibleEnemyUnit(this))
 				if (!pAdjacentPlot->isCity() && !pAdjacentPlot->isEurope() && pAdjacentPlot->getNumUnits() == 0)
 				{
-					if (generatePath(pAdjacentPlot, 0, true))
+					if (canMoveInto(*pAdjacentPlot))
 					{
-						iValue = 0;
-						iRand = getUnitInfo().getAnimalPatrolWeight();
+						const int iRand = getUnitInfo().getAnimalPatrolWeight();
 						if (iRand > 0)
 						{
-							iValue += (1 + GC.getGameINLINE().getSorenRandNum(iRand, "Wild Sea Animal Patrol - Base Weight"));
-
-							/*if (pAdjacentPlot->getTerrainType() != NO_TERRAIN)
-							{
-								if (getUnitInfo().getTerrainNative(pAdjacentPlot->getTerrainType()))
-								{
-									iRand = GC.getWILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT();
-									iValue += (1 + GC.getGameINLINE().getSorenRandNum(iRand, "Wild Sea Animal Patrol - Terrain Weight"));
-								}
-							}*/
+							const int iValue = (1 + GC.getGameINLINE().getSorenRandNum(iRand, "Wild Sea Animal Patrol - Base Weight"));
 
 							if (iValue > iBestValue)
 							{
 								iBestValue = iValue;
-								pBestPlot = getPathEndTurnPlot();
+								pBestPlot = pAdjacentPlot;
 							}
  						}
 					}
@@ -18322,7 +18304,7 @@ int CvUnitAI::AI_pillageValue(CvPlot* pPlot)
 }
 
 
-int CvUnitAI::AI_searchRange(int iRange)
+int CvUnitAI::AI_searchRange(int iRange) const
 {
 	if (iRange == 0)
 	{
@@ -18341,7 +18323,7 @@ int CvUnitAI::AI_searchRange(int iRange)
 
 
 // XXX at some point test the game with and without this function...
-bool CvUnitAI::AI_plotValid(CvPlot* pPlot) const
+bool CvUnitAI::AI_plotValid(const CvPlot* pPlot) const
 {
 	PROFILE_FUNC();
 
