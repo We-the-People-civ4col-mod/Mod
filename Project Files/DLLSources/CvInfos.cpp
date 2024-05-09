@@ -281,6 +281,13 @@ void CvInfoBase::checkStringContents(CvWString& szStr, const wchar* szExtension)
 	}
 }
 
+bool CvInfoBase::postLoadSetup()
+{
+	// returns if all instances will need to be run postLoadSetup
+	// obvoiusly if this is overwritten somewhere, then it must return true to make it work
+	return false;
+}
+
 //
 // XML reading code
 //
@@ -928,6 +935,7 @@ m_bRiver(false),
 m_bEnemyRoute(false),
 m_bAlwaysHeal(false),
 m_bHillsDoubleMove(false),
+m_bAvailableForDefensiveUnit(true),       // WTP, johanb - cache for defensive unit availabilty - by default everything is allowed
 m_aiTerrainAttackPercent(NULL),
 m_aiTerrainDefensePercent(NULL),
 m_aiFeatureAttackPercent(NULL),
@@ -1147,6 +1155,68 @@ bool CvPromotionInfo::isHillsDoubleMove() const
 {
 	return m_bHillsDoubleMove;
 }
+
+bool CvPromotionInfo::isAvailableForDefensiveUnit() const
+{
+	return m_bAvailableForDefensiveUnit;
+}
+
+bool CvPromotionInfo::isNotAvailableForDefensiveUnit() const
+{
+	return !m_bAvailableForDefensiveUnit;
+}
+
+void CvPromotionInfo::calculateAvailableForDefensiveUnit()
+{
+	if (getCityAttackPercent() != 0)
+	{
+		m_bAvailableForDefensiveUnit = false;   return;
+	}
+	if (getWithdrawalChange() != 0)
+	{
+		m_bAvailableForDefensiveUnit = false;   return;
+	}
+	if (isBlitz())
+	{
+		m_bAvailableForDefensiveUnit = false;   return;
+	}
+	if (isAmphib())
+	{
+		m_bAvailableForDefensiveUnit = false;   return;
+	}
+	if (isRiver())
+	{
+		m_bAvailableForDefensiveUnit = false;   return;
+	}
+	if (getHillsAttackPercent() != 0)
+	{
+		m_bAvailableForDefensiveUnit = false;   return;
+	}
+
+	for (TerrainTypes eTerrain = FIRST_TERRAIN; eTerrain < NUM_TERRAIN_TYPES; ++eTerrain)
+	{
+		if (getTerrainAttackPercent(eTerrain) != 0)
+		{
+			m_bAvailableForDefensiveUnit = false;   return;
+		}
+	}
+	for (FeatureTypes eFeature = FIRST_FEATURE; eFeature < NUM_FEATURE_TYPES; ++eFeature)
+	{
+		if (getFeatureAttackPercent(eFeature) != 0)
+		{
+			m_bAvailableForDefensiveUnit = false;   return;
+		}
+	}
+	for (UnitClassTypes eUnitClass = FIRST_UNITCLASS; eUnitClass < NUM_UNITCLASS_TYPES; ++eUnitClass)
+	{
+		if (getUnitClassAttackModifier(eUnitClass) != 0)
+		{
+			m_bAvailableForDefensiveUnit = false;   return;
+		}
+	}
+	m_bAvailableForDefensiveUnit = true;
+}
+
 const char* CvPromotionInfo::getSound() const
 {
 	return m_szSound;
@@ -1422,6 +1492,13 @@ bool CvPromotionInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_abUnitCombat, "UnitCombats", GC.getNumUnitCombatInfos(), false);
 	return true;
 }
+
+bool CvPromotionInfo::postLoadSetup()
+{
+	calculateAvailableForDefensiveUnit();
+	return true;
+}
+
 bool CvPromotionInfo::readPass2(CvXMLLoadUtility* pXML)
 {
 	CvString szTextVal;
@@ -1433,6 +1510,8 @@ bool CvPromotionInfo::readPass2(CvXMLLoadUtility* pXML)
 	m_iPrereqOrPromotion2 = GC.getInfoTypeForString(szTextVal);
 	return true;
 }
+
+
 
 //======================================================================================================
 //					CvProfessionInfo
@@ -2808,7 +2887,7 @@ m_bGatherBoat(false),
 // < JAnimals Mod Start >
 m_bAnimal(false),
 // < JAnimals Mod End >
-m_iLeaderPromotion(NO_PROMOTION),
+m_eLeaderPromotion(NO_PROMOTION),
 /// Move Into Peak - start - Nightinggale
 m_bMoveIntoPeak(false),
 /// Move Into Peak - end - Nightinggale
@@ -3520,9 +3599,9 @@ bool CvUnitInfo::isPrereqOrBuilding(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_abPrereqOrBuilding ? m_abPrereqOrBuilding[i] : false;
 }
-int CvUnitInfo::getLeaderPromotion() const
+PromotionTypes CvUnitInfo::getLeaderPromotion() const
 {
-	return m_iLeaderPromotion;
+	return m_eLeaderPromotion;
 }
 int CvUnitInfo::getLeaderExperience() const
 {
@@ -3840,7 +3919,7 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_abPrereqOrBuilding);
 	m_abPrereqOrBuilding = new bool[GC.getNumBuildingClassInfos()];
 	stream->Read(GC.getNumBuildingClassInfos(), m_abPrereqOrBuilding);
-	stream->Read(&m_iLeaderPromotion);
+	//stream->Read(&m_iLeaderPromotion);
 	stream->Read(&m_iLeaderExperience);
 	SAFE_DELETE_ARRAY(m_paszUnitNames);
 	m_paszUnitNames = new CvString[m_iNumUnitNames];
@@ -4011,7 +4090,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumProfessionInfos(), m_abProfessionsNotAllowed);
 	///TK end
 	stream->Write(GC.getNumBuildingClassInfos(), m_abPrereqOrBuilding);
-	stream->Write(m_iLeaderPromotion);
+	//stream->Write(m_iLeaderPromotion);
 	stream->Write(m_iLeaderExperience);
 	stream->WriteString(m_iNumUnitNames, m_paszUnitNames);
 	stream->WriteString(m_szFormationType);
@@ -4245,8 +4324,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	///TK Viscos Mod
 	pXML->SetVariableListTagPair(&m_abProfessionsNotAllowed, "ProfessionsNotAllowed", GC.getNumProfessionInfos(), false);
 	///TK end
-	pXML->GetChildXmlValByName(szTextVal, "LeaderPromotion");
-	m_iLeaderPromotion = pXML->FindInInfoClass(szTextVal);
+	pXML->GetEnum(getType(), m_eLeaderPromotion, "LeaderPromotion", false);
 	pXML->GetChildXmlValByName(&m_iLeaderExperience, "iLeaderExperience");
 	updateArtDefineButton();
 
@@ -5459,7 +5537,7 @@ const CvArtInfoBuilding* CvBuildingInfo::getArtInfo() const
 const CvArtInfoMovie* CvBuildingInfo::getMovieInfo() const
 {
 	const char* pcTag = getMovieDefineTag();
-	if (NULL != pcTag && 0 != _tcscmp(pcTag, "NONE"))
+	if (NULL != pcTag && 0 != strcmp(pcTag, "NONE"))
 	{
 		return ARTFILEMGR.getMovieArtInfo(pcTag);
 	}
@@ -6457,7 +6535,7 @@ CvWString CvCivilizationInfo::getGeneralNames(int i) const
 {
 	FAssertMsg(i < getNumGeneralNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	
+
 	CvWString tag;
 	tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), i);
 	return gDLL->getText(tag);
@@ -6469,7 +6547,7 @@ CvWString CvCivilizationInfo::getAdmiralNames(int i) const
 {
 	FAssertMsg(i < getNumAdmiralNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	
+
 	CvWString tag;
 	tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), i);
 	return gDLL->getText(tag);
@@ -6481,7 +6559,7 @@ CvWString CvCivilizationInfo::getShipNames(int i) const
 {
 	FAssertMsg(i < getNumShipNames(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	
+
 	CvWString tag;
 	tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), i);
 	return gDLL->getText(tag);
@@ -6853,39 +6931,42 @@ bool CvCivilizationInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_abLeaders, "Leaders", GC.getNumLeaderHeadInfos(), false);
 	pXML->GetChildXmlValByName(szTextVal, "CivilizationSelectionSound");
 
-	{
-		// setlength of lists of names based on available TXT_KEYs
-		CvWString tag;
-		CvWString text;
-
-		for (;; ++m_iNumAdmiralNames)
-		{
-			tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), m_iNumAdmiralNames);
-			text = gDLL->getText(tag);
-			if (tag == text) break;
-		}
-		for (;; ++m_iNumCityNames)
-		{
-			tag.Format(L"%s_CITY_%d", m_szTextKey.GetCString(), m_iNumCityNames);
-			text = gDLL->getText(tag);
-			if (tag == text) break;
-		}
-		for (;; ++m_iNumGeneralNames)
-		{
-			tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), m_iNumGeneralNames);
-			text = gDLL->getText(tag);
-			if (tag == text) break;
-		}
-		for (;; ++m_iNumShipNames)
-		{
-			tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), m_iNumShipNames);
-			text = gDLL->getText(tag);
-			if (tag == text) break;
-		}
-	}
-
 	return true;
 }
+
+bool CvCivilizationInfo::postLoadSetup()
+{
+	// setlength of lists of names based on available TXT_KEYs
+	CvWString tag;
+	CvWString text;
+
+	for (;; ++m_iNumAdmiralNames)
+	{
+		tag.Format(L"%s_ADMIRAL_%d", m_szTextKey.GetCString(), m_iNumAdmiralNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	for (;; ++m_iNumCityNames)
+	{
+		tag.Format(L"%s_CITY_%d", m_szTextKey.GetCString(), m_iNumCityNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	for (;; ++m_iNumGeneralNames)
+	{
+		tag.Format(L"%s_GENERAL_%d", m_szTextKey.GetCString(), m_iNumGeneralNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	for (;; ++m_iNumShipNames)
+	{
+		tag.Format(L"%s_SHIP_%d", m_szTextKey.GetCString(), m_iNumShipNames);
+		text = gDLL->getText(tag);
+		if (tag == text) break;
+	}
+	return true;
+}
+
 bool CvCivilizationInfo::readPass2(CvXMLLoadUtility* pXML)
 {
 	CvString szTextVal;
@@ -8588,6 +8669,11 @@ bool CvImprovementInfo::isGoodyForSpawningHostileNatives() const
 bool CvImprovementInfo::isGoodyForSpawningHostileCriminals() const
 {
 	return m_bGoodyForSpawningHostileCriminals;
+}
+bool CvImprovementInfo::isAINoRemove() const
+{
+	// todo: figure out if forts or other improvements should be added here, possibly by xml bool setting
+	return isGoody();
 }
 //WTP, Protected Hostile Goodies - END
 bool CvImprovementInfo::isPermanent() const
@@ -12325,14 +12411,14 @@ bool CvAnimationPathInfo::read(CvXMLLoadUtility* pXML)
 	gDLL->getXMLIFace()->NextSibling(pXML->GetXML());
 	do
 	{
-		if ( pXML->GetChildXmlValByName( szTempString, _T("Category") ))
+		if ( pXML->GetChildXmlValByName( szTempString, "Category" ))
 		{
 			iCurrentCategory = pXML->FindInInfoClass( szTempString);
 			fParameter = 0.0f;
 		}
 		else
 		{
-			pXML->GetChildXmlValByName( szTempString, _T("Operator"));
+			pXML->GetChildXmlValByName( szTempString, "Operator" );
 			iCurrentCategory = GC.getInfoTypeForString(szTempString);
 			iCurrentCategory = ((int)ANIMOP_FIRST) + iCurrentCategory;
 			if ( !pXML->GetChildXmlValByName( &fParameter, "Parameter" ) )
@@ -13695,7 +13781,7 @@ int CvGameText::getLanguageAtIndex(int iIndex)
 	return 0;
 }
 
-const TCHAR* CvGameText::getLanguageName(int iLanguageID)
+char const* CvGameText::getLanguageName(int iLanguageID)
 {
 	// The game will store the chosen language as an int, not a string.
 	// This has a history of messing up switching between mods.
@@ -13846,7 +13932,7 @@ void CvGameText::setText(const wchar* szText)
 {
 	m_szText = szText;
 }
-bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, const TCHAR* szLanguage)
+bool CvGameText::read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, char const* szLanguage)
 {
 	CvString szTextVal;
 	CvWString wszTextVal;
@@ -14542,7 +14628,6 @@ CvEventTriggerInfo::CvEventTriggerInfo() :
 	m_iNumUnitsGlobal(0),
 	m_iNumBuildingsGlobal(0),
 	m_iNumPlotsRequired(0),
-	m_ePlotType(PLOT_PEAK),
 	m_iOtherPlayerShareBorders(0),
 	m_eCivic(NO_CIVIC),
 	m_iMinPopulation(0),
@@ -14624,13 +14709,9 @@ int CvEventTriggerInfo::getNumPlotsRequired() const
 {
 	return m_iNumPlotsRequired;
 }
-PlotTypes CvEventTriggerInfo::getPlotType() const
+const EnumMap<PlotTypes, bool> CvEventTriggerInfo::getPlotTypes() const
 {
-	return m_ePlotType;
-}
-int CvEventTriggerInfo::PY_getPlotType() const
-{
-	return m_ePlotType;
+	return m_em_PlotTypes;
 }
 int CvEventTriggerInfo::getOtherPlayerShareBorders() const
 {
@@ -14786,7 +14867,7 @@ bool CvEventTriggerInfo::isTeam() const
 }
 
 // Begin EmperorFool: Events with Images
-const TCHAR* CvEventTriggerInfo::getEventArt() const
+char const* CvEventTriggerInfo::getEventArt() const
 {
 	if (m_szEventArt.empty())
 	{
@@ -14920,7 +15001,6 @@ void CvEventTriggerInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iNumUnitsGlobal);
 	stream->Read(&m_iNumBuildingsGlobal);
 	stream->Read(&m_iNumPlotsRequired);
-	stream->Read(&m_ePlotType);
 	stream->Read(&m_iOtherPlayerShareBorders);
 	stream->Read(&m_eCivic);
 	stream->Read(&m_iMinPopulation);
@@ -14994,7 +15074,6 @@ void CvEventTriggerInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iNumUnitsGlobal);
 	stream->Write(m_iNumBuildingsGlobal);
 	stream->Write(m_iNumPlotsRequired);
-	stream->Write(m_ePlotType);
 	stream->Write(m_iOtherPlayerShareBorders);
 	stream->Write(m_eCivic);
 	stream->Write(m_iMinPopulation);
@@ -15063,7 +15142,24 @@ bool CvEventTriggerInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iNumUnitsGlobal, "iNumUnitsGlobal");
 	pXML->GetChildXmlValByName(&m_iNumBuildingsGlobal, "iNumBuildingsGlobal");
 	pXML->GetChildXmlValByName(&m_iNumPlotsRequired, "iNumPlotsRequired");
-	pXML->GetEnum(getType(), m_ePlotType, "ePlotType", false);
+
+
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "PlotRequirements"))
+	{
+		InfoArray<PlotTypes> ia;
+		readXML(ia, "PlotTypes");
+		ia.addTo(m_em_PlotTypes);
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	{
+		PlotTypes ePlot;
+		pXML->GetEnum(getType(), ePlot, "ePlotType", false); 
+		if (ePlot != NO_PLOT)
+		{
+			m_em_PlotTypes.set(ePlot, true);
+		}
+	}
 	pXML->GetEnum(getType(), m_eCivic, "eCivic", false);
 	pXML->GetChildXmlValByName(&m_iOtherPlayerShareBorders, "iOtherPlayerShareBorders");
 	pXML->GetChildXmlValByName(&m_iMinPopulation, "iMinPopulation");
@@ -15244,7 +15340,7 @@ void CvEventTriggerInfo::verifyTriggerSettings(const InfoArray<T>& kArray) const
 
 const char* CvEventTriggerInfo::verifyTriggerSettings(FeatureTypes eFeature) const
 {
-	if (getPlotType() == PLOT_PEAK)
+	if (getPlotTypes().get(PLOT_PEAK))
 	{
 		return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
 	}
@@ -15268,17 +15364,22 @@ const char* CvEventTriggerInfo::verifyTriggerSettings(FeatureTypes eFeature) con
 			return "TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN";
 		}
 	}
-	else if (getPlotType() != NO_PLOT)
+	else if (getPlotTypes().hasContent())
 	{
 		bool bValid = false;
-		for (TerrainTypes eTerrain = FIRST_TERRAIN; eTerrain < NUM_TERRAIN_TYPES; ++eTerrain)
+		for (TerrainTypes eTerrain = FIRST_TERRAIN; !bValid && eTerrain < NUM_TERRAIN_TYPES; ++eTerrain)
 		{
 			if (kInfo.isTerrain(eTerrain))
 			{
-				if (GC.getTerrainInfo(eTerrain).canHavePlotType(getPlotType()))
+				const CvTerrainInfo& kTerrain = GC.getTerrainInfo(eTerrain);
+				const EnumMap<PlotTypes, bool> plotTypes = getPlotTypes();
+				for (PlotTypes ePlot = plotTypes.FIRST; ePlot <= plotTypes.LAST; ++ePlot)
 				{
-					bValid = true;
-					break;
+					if (plotTypes.get(ePlot) && kTerrain.canHavePlotType(ePlot))
+					{
+						bValid = true;
+						break;
+					}
 				}
 			}
 		}
@@ -15320,9 +15421,23 @@ const char* CvEventTriggerInfo::verifyTriggerSettings(TerrainTypes eTerrain) con
 {
 	const CvTerrainInfo& kInfo = GC.getInfo(eTerrain);
 
-	if (!kInfo.canHavePlotType(getPlotType()))
+	const EnumMap<PlotTypes, bool> plotTypes = getPlotTypes();
+
+	if (plotTypes.hasContent())
 	{
-		return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
+		bool bValid = false;
+		for (PlotTypes ePlot = plotTypes.FIRST; ePlot <= plotTypes.LAST; ++ePlot)
+		{
+			if (plotTypes.get(ePlot) && kInfo.canHavePlotType(ePlot))
+			{
+				bValid = true;
+				break;
+			}
+		}
+		if (!bValid)
+		{
+			return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
+		}
 	}
 
 	if (kInfo.isWater() && getRoutesRequired().getLength() > 0)
@@ -15375,19 +15490,18 @@ const char* CvEventTriggerInfo::verifyTriggerSettings(ImprovementTypes eImprovem
 {
 	const CvImprovementInfo& kInfo = GC.getInfo(eImprovement);
 
-	PlotTypes ePlot = getPlotType();
-
-	if (ePlot != NO_PLOT)
+	if (getPlotTypes().hasContent())
 	{
-		if (kInfo.isRequiresFlatlands() && ePlot != PLOT_LAND)
+		const EnumMap<PlotTypes, bool> plotTypes = getPlotTypes();
+		if (kInfo.isRequiresFlatlands() && !plotTypes.get(PLOT_LAND))
 		{
 			return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
 		}
-		if (kInfo.isWater() && ePlot != PLOT_OCEAN)
+		if (kInfo.isWater() && plotTypes.get(PLOT_OCEAN))
 		{
 			return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
 		}
-		if (kInfo.isHillsMakesValid() && ePlot != PLOT_HILLS && ePlot != PLOT_PEAK)
+		if (kInfo.isHillsMakesValid() && !(plotTypes.get(PLOT_HILLS) || plotTypes.get(PLOT_PEAK)))
 		{
 			return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
 		}
@@ -15487,7 +15601,7 @@ const char* CvEventTriggerInfo::verifyTriggerSettings(ImprovementTypes eImprovem
 
 const char* CvEventTriggerInfo::verifyTriggerSettings(RouteTypes eRoute) const
 {
-	if (getPlotType() == PLOT_OCEAN)
+	if (getPlotTypes().get(PLOT_OCEAN))
 	{
 		return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
 	}
@@ -15797,6 +15911,10 @@ const char* CvEventInfo::getPythonHelp() const
 {
 	return m_szPythonHelp;
 }
+const char* CvEventInfo::getHelpText() const
+{
+	return m_szHelpText;
+}
 const wchar* CvEventInfo::getUnitNameKey() const
 {
 	return m_szUnitName;
@@ -16078,6 +16196,7 @@ bool CvEventInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(m_szPythonExpireCheck, "PythonExpireCheck");
 	pXML->GetChildXmlValByName(m_szPythonCanDo, "PythonCanDo");
 	pXML->GetChildXmlValByName(m_szPythonHelp, "PythonHelp");
+	pXML->GetChildXmlValByName(m_szHelpText, "HelpText");
 	m_aszWorldNews.clear();
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"WorldNewsTexts"))
 	{
@@ -16209,7 +16328,7 @@ bool CvMainMenuInfo::read(CvXMLLoadUtility* pXML)
 }
 
 CvFatherInfo::CvFatherInfo() :
-	m_iFatherCategory(NO_FATHERCATEGORY),
+	m_eFatherCategory(NO_FATHERCATEGORY),
 	m_eTrait(NO_TRAIT),
 	m_eCivEffect(NO_CIV_EFFECT),
 	m_aiFreeUnits(NULL),
@@ -16225,9 +16344,24 @@ CvFatherInfo::~CvFatherInfo()
 	SAFE_DELETE_ARRAY(m_abRevealImprovement);
 }
 
-int CvFatherInfo::getFatherCategory() const
+FatherCategoryTypes CvFatherInfo::getFatherCategory() const
 {
-	return m_iFatherCategory;
+	return m_eFatherCategory;
+}
+
+FatherPointTypes CvFatherInfo::getFatherPointType() const
+{
+#ifdef HARDCODE_XML_VALUES
+	// make sure the assumption that they are 1:1 is true
+	// test only available at compile time in hardcoded dlls
+	BOOST_STATIC_ASSERT((int)FATHERCATEGORY_EXPLORATION == (int)FATHER_POINT_EXPLORATION);
+	BOOST_STATIC_ASSERT((int)FATHERCATEGORY_RELIGION == (int)FATHER_POINT_RELIGION);
+	BOOST_STATIC_ASSERT((int)FATHERCATEGORY_TRADE == (int)FATHER_POINT_TRADE);
+	BOOST_STATIC_ASSERT((int)FATHERCATEGORY_MILITARY == (int)FATHER_POINT_MILITARY);
+	BOOST_STATIC_ASSERT((int)FATHERCATEGORY_POLITICS == (int)FATHER_POINT_POLITICAL);
+	BOOST_STATIC_ASSERT((int)NUM_FATHERCATEGORY_TYPES == (int)NUM_FATHER_POINT_TYPES);
+#endif
+	return static_cast<FatherPointTypes>(m_eFatherCategory);
 }
 
 TraitTypes CvFatherInfo::getTrait() const
@@ -16279,7 +16413,7 @@ void CvFatherInfo::read(FDataStreamBase* stream)
 
 	uint uiFlag=0;
 	stream->Read(&uiFlag);	// flags for expansion
-	stream->Read(&m_iFatherCategory);
+	//stream->Read(&m_iFatherCategory);
 	stream->Read(&m_eTrait);
 
 	SAFE_DELETE_ARRAY(m_aiFreeUnits);
@@ -16306,7 +16440,7 @@ void CvFatherInfo::write(FDataStreamBase* stream)
 
 	uint uiFlag=0;
 	stream->Write(uiFlag);		// flag for expansion
-	stream->Write(m_iFatherCategory);
+	//stream->Write(m_iFatherCategory);
 	stream->Write(m_eTrait);
 	stream->Write(GC.getNumUnitClassInfos(), m_aiFreeUnits);
 	stream->Write(GC.getNumFatherPointInfos(), m_aiPointCost);
@@ -16324,9 +16458,7 @@ bool CvFatherInfo::read(CvXMLLoadUtility* pXML)
 		return false;
 	}
 
-	CvString szTextVal;
-	pXML->GetChildXmlValByName(szTextVal, "FatherCategory");
-	m_iFatherCategory = GC.getInfoTypeForString(szTextVal);
+	pXML->GetEnum(getType(), m_eFatherCategory, "FatherCategory");
 
 	pXML->GetChildXmlValByName(m_szPortrait, "Portrait");
 	pXML->GetEnum(getType(), m_eTrait, "Trait", false);

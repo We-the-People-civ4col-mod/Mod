@@ -4,7 +4,7 @@
 
 // AI decision making logging
 
-void logBBAI(TCHAR* format, ... )
+void logBBAI(char const* format, ... )
 {
 #ifdef LOG_AI
 	static char buf[2048];

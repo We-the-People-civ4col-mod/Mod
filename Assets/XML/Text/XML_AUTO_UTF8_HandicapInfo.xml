@@ -1,122 +1,122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_PILGRIM</Tag>
-        <English>Pilgrim (Easiest)</English>
-        <French>Pèlerin (facile)</French>
-        <German>Pilger (am leichtesten)</German>
-        <Italian>Pellegrino (diff. min.)</Italian>
-        <Spanish>Peregrino (más fácil)</Spanish>
-        <Russian>Пилигрим (самый простой)</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_PILGRIM_HELP</Tag>
-        <English>Pilgrim difficulty is the perfect place for a new player to start learning.</English>
-        <French>Le niveau de difficulté Pèlerin est idéal pour un joueur débutant, il permet d'apprendre les ficelles du jeu.</French>
-        <German>Der Pilger-Schwierigkeitsgrad eignet sich perfekt für neue Spieler zum Einstieg.</German>
-        <Italian>Il livello di difficoltà "pellegrino" è l'ideale per imparare a giocare.</Italian>
-        <Spanish>La dificultad Peregrino es el lugar perfecto para que un jugador nuevo empiece a aprender.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_PIONEER</Tag>
-        <English>Pioneer</English>
-        <French>Pionnier</French>
-        <German>Pionier</German>
-        <Italian>Pioniere</Italian>
-        <Spanish>Pionero</Spanish>
-        <Russian>Первопроходец</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_PIONEER_HELP</Tag>
-        <English>Pioneer difficulty is a good place for a new player familiar with the original Colonization to start.</English>
-        <French>Le niveau Pionner est à conseiller au joueur débutant, mais qui connaît déjà le premier Colonization.</French>
-        <German>Der Pionier-Schwierigkeitsgrad eignet sich gut für neue Spieler zum Einstieg, die bereits mit dem ursprünglichen Colonization vertraut sind.</German>
-        <Italian>Il livello "pioniere" è un buon punto di partenza per un nuovo giocatore che comunque conosce Colonization.</Italian>
-        <Spanish>El ajuste Pionero es un buen lugar para que empiece un jugador familiarizado con el Colonization original.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_EXPLORER</Tag>
-        <English>Explorer</English>
-        <French>Explorateur</French>
-        <German>Kundschafter (Ausgewogen)</German>
-        <Italian>Esploratore</Italian>
-        <Spanish>Explorador</Spanish>
-        <Russian>Исследователь</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_EXPLORER_HELP</Tag>
-        <English>Explorer difficulty is the standard difficulty where the AI have no advantages over you and you have no advantages over them.</English>
-        <French>C'est le niveau de difficulté standard, où l'IA joue contre vous à armes égales.</French>
-        <German>Im Kundschafter-Schwierigkeitsgrad hat die KI dem Spieler gegenüber weder einen Vorteil noch einen Nachteil.</German>
-        <Italian>Questo è il livello di difficoltà standard, in cui tu non hai vantaggi sull'IA e questa non ne ha su di te.</Italian>
-        <Spanish>Ésta es la dificultad estándar, en la que la IA no tiene ventaja sobre el jugador ni éste sobre ella.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_CONQUISTADOR</Tag>
-        <English>Conquistador</English>
-        <French>Conquistador</French>
-        <German>Eroberer</German>
-        <Italian>Conquistador</Italian>
-        <Spanish>Conquistador</Spanish>
-        <Russian>Конкистадор</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_CONQUISTADOR_HELP</Tag>
-        <English>Conquistador difficulty is good for experienced players trying new strategies.</English>
-        <French>Ce niveau de difficulté correspond aux joueurs expérimentés qui veulent tenter de nouvelles stratégies.</French>
-        <German>Der Eroberer-Schwierigkeitsgrad eignet sich für erfahrene Spieler, um neue Strategien auszuprobieren.</German>
-        <Italian>Un buon livello di difficoltà per giocatori con esperienza che vogliono provare nuove strategie.</Italian>
-        <Spanish>Éste es un buen nivel de dificultad para los jugadores experimentados que quieran probar nuevas estrategias.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_GOVERNOR</Tag>
-        <English>Governor</English>
-        <French>Gouverneur</French>
-        <German>Gouverneur</German>
-        <Italian>Governatore</Italian>
-        <Spanish>Gobernante</Spanish>
-        <Russian>Губернатор</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_GOVERNOR_HELP</Tag>
-        <English>Governor difficulty is great for experienced players looking for a challenge.</English>
-        <French>Ce niveau de difficulté s'adresse aux joueurs expérimentés en quête de défis.</French>
-        <German>Der Gouverneur-Schwierigkeit eignet sich hervorragend für erfahrene Spieler, die eine neue Herausforderung suchen.</German>
-        <Italian>Un livello di difficoltà ottimo per giocatori esperti in cerca di una sfida.</Italian>
-        <Spanish>Éste es nivel de dificultad ideal para los jugadores experimentados que quieran nuevos retos.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_PATRIOT</Tag>
-        <English>Patriot</English>
-        <French>Patriote</French>
-        <German>Patriot</German>
-        <Italian>Patriota</Italian>
-        <Spanish>Patriota</Spanish>
-        <Russian>Патриот</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_PATRIOT_HELP</Tag>
-        <English>Patriot difficulty is for expert Colonization players who wish to test their skill.</English>
-        <French>Le niveau de difficulté Patriote est destiné aux joueurs experts qui veulent évaluer leur niveau.</French>
-        <German>Der Patriot-Schwierigkeitsgrad eignet sich für Colonization-Experten, die ihre Fähigkeiten auf die Probe stellen wollen.</German>
-        <Italian>La difficoltà "patriota" è dedicata ai giocatori esperti di Colonization che vogliono mettere alla prova la propria abilità.</Italian>
-        <Spanish>La dificultad Patriota es para los jugadores expertos de Colonization que quieran poner a prueba su habilidad.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_REVOLUTIONARY</Tag>
-        <English>Revolutionary (Hardest)</English>
-        <French>Révolutionnaire (Dur)</French>
-        <German>Revolutionär (am schwierigsten)</German>
-        <Italian>Rivoluzionario (max)</Italian>
-        <Spanish>Revoluc. (más difícil)</Spanish>
-        <Russian>Революционер (самый сложный)</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HANDICAP_REVOLUTIONARY_HELP</Tag>
-        <English>Revolutionary difficulty is not remotely fair, but neither is life. Good Luck!</English>
-        <French>En hommage à la vie, ce niveau de difficulté est franchement injuste. Bonne chance !</French>
-        <German>Der Revolutionär-Schwierigkeitsgrad ist nicht einmal annähernd fair, aber so ist das Leben. Viel Glück!</German>
-        <Italian>Questo livello di difficoltà è davvero ingiusto, ma del resto lo è anche la vita. Buona fortuna!</Italian>
-        <Spanish>Esta dificultad no es justa ni por asomo, como la vida misma. Buena suerte.</Spanish>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_PILGRIM</Tag>
+		<English>Pilgrim (Easiest)</English>
+		<French>Pèlerin (facile)</French>
+		<German>Pilger (am leichtesten)</German>
+		<Italian>Pellegrino (diff. min.)</Italian>
+		<Spanish>Peregrino (más fácil)</Spanish>
+		<Russian>Пилигрим (самый простой)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_PILGRIM_HELP</Tag>
+		<English>Pilgrim difficulty is the perfect place for a new player to start learning.</English>
+		<French>Le niveau de difficulté Pèlerin est idéal pour un joueur débutant, il permet d'apprendre les ficelles du jeu.</French>
+		<German>Der Pilger-Schwierigkeitsgrad eignet sich perfekt für neue Spieler zum Einstieg.</German>
+		<Italian>Il livello di difficoltà "pellegrino" è l'ideale per imparare a giocare.</Italian>
+		<Spanish>La dificultad Peregrino es el lugar perfecto para que un jugador nuevo empiece a aprender.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_PIONEER</Tag>
+		<English>Pioneer</English>
+		<French>Pionnier</French>
+		<German>Pionier</German>
+		<Italian>Pioniere</Italian>
+		<Spanish>Pionero</Spanish>
+		<Russian>Первопроходец</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_PIONEER_HELP</Tag>
+		<English>Pioneer difficulty is a good place for a new player familiar with the original Colonization to start.</English>
+		<French>Le niveau Pionner est à conseiller au joueur débutant, mais qui connaît déjà le premier Colonization.</French>
+		<German>Der Pionier-Schwierigkeitsgrad eignet sich gut für neue Spieler zum Einstieg, die bereits mit dem ursprünglichen Colonization vertraut sind.</German>
+		<Italian>Il livello "pioniere" è un buon punto di partenza per un nuovo giocatore che comunque conosce Colonization.</Italian>
+		<Spanish>El ajuste Pionero es un buen lugar para que empiece un jugador familiarizado con el Colonization original.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_EXPLORER</Tag>
+		<English>Explorer</English>
+		<French>Explorateur</French>
+		<German>Kundschafter (Ausgewogen)</German>
+		<Italian>Esploratore</Italian>
+		<Spanish>Explorador</Spanish>
+		<Russian>Исследователь</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_EXPLORER_HELP</Tag>
+		<English>Explorer difficulty is the standard difficulty where the AI have no advantages over you and you have no advantages over them.</English>
+		<French>C'est le niveau de difficulté standard, où l'IA joue contre vous à armes égales.</French>
+		<German>Im Kundschafter-Schwierigkeitsgrad hat die KI dem Spieler gegenüber weder einen Vorteil noch einen Nachteil.</German>
+		<Italian>Questo è il livello di difficoltà standard, in cui tu non hai vantaggi sull'IA e questa non ne ha su di te.</Italian>
+		<Spanish>Ésta es la dificultad estándar, en la que la IA no tiene ventaja sobre el jugador ni éste sobre ella.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_CONQUISTADOR</Tag>
+		<English>Conquistador</English>
+		<French>Conquistador</French>
+		<German>Eroberer</German>
+		<Italian>Conquistador</Italian>
+		<Spanish>Conquistador</Spanish>
+		<Russian>Конкистадор</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_CONQUISTADOR_HELP</Tag>
+		<English>Conquistador difficulty is good for experienced players trying new strategies.</English>
+		<French>Ce niveau de difficulté correspond aux joueurs expérimentés qui veulent tenter de nouvelles stratégies.</French>
+		<German>Der Eroberer-Schwierigkeitsgrad eignet sich für erfahrene Spieler, um neue Strategien auszuprobieren.</German>
+		<Italian>Un buon livello di difficoltà per giocatori con esperienza che vogliono provare nuove strategie.</Italian>
+		<Spanish>Éste es un buen nivel de dificultad para los jugadores experimentados que quieran probar nuevas estrategias.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_GOVERNOR</Tag>
+		<English>Governor</English>
+		<French>Gouverneur</French>
+		<German>Gouverneur</German>
+		<Italian>Governatore</Italian>
+		<Spanish>Gobernante</Spanish>
+		<Russian>Губернатор</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_GOVERNOR_HELP</Tag>
+		<English>Governor difficulty is great for experienced players looking for a challenge.</English>
+		<French>Ce niveau de difficulté s'adresse aux joueurs expérimentés en quête de défis.</French>
+		<German>Der Gouverneur-Schwierigkeit eignet sich hervorragend für erfahrene Spieler, die eine neue Herausforderung suchen.</German>
+		<Italian>Un livello di difficoltà ottimo per giocatori esperti in cerca di una sfida.</Italian>
+		<Spanish>Éste es nivel de dificultad ideal para los jugadores experimentados que quieran nuevos retos.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_PATRIOT</Tag>
+		<English>Patriot</English>
+		<French>Patriote</French>
+		<German>Patriot</German>
+		<Italian>Patriota</Italian>
+		<Spanish>Patriota</Spanish>
+		<Russian>Патриот</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_PATRIOT_HELP</Tag>
+		<English>Patriot difficulty is for expert Colonization players who wish to test their skill.</English>
+		<French>Le niveau de difficulté Patriote est destiné aux joueurs experts qui veulent évaluer leur niveau.</French>
+		<German>Der Patriot-Schwierigkeitsgrad eignet sich für Colonization-Experten, die ihre Fähigkeiten auf die Probe stellen wollen.</German>
+		<Italian>La difficoltà "patriota" è dedicata ai giocatori esperti di Colonization che vogliono mettere alla prova la propria abilità.</Italian>
+		<Spanish>La dificultad Patriota es para los jugadores expertos de Colonization que quieran poner a prueba su habilidad.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_REVOLUTIONARY</Tag>
+		<English>Revolutionary (Hardest)</English>
+		<French>Révolutionnaire (Dur)</French>
+		<German>Revolutionär (am schwierigsten)</German>
+		<Italian>Rivoluzionario (max)</Italian>
+		<Spanish>Revoluc. (más difícil)</Spanish>
+		<Russian>Революционер (самый сложный)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HANDICAP_REVOLUTIONARY_HELP</Tag>
+		<English>Revolutionary difficulty is not remotely fair, but neither is life. Good Luck!</English>
+		<French>En hommage à la vie, ce niveau de difficulté est franchement injuste. Bonne chance !</French>
+		<German>Der Revolutionär-Schwierigkeitsgrad ist nicht einmal annähernd fair, aber so ist das Leben. Viel Glück!</German>
+		<Italian>Questo livello di difficoltà è davvero ingiusto, ma del resto lo è anche la vita. Buona fortuna!</Italian>
+		<Spanish>Esta dificultad no es justa ni por asomo, como la vida misma. Buena suerte.</Spanish>
+	</TEXT>
 </Civ4GameText>

@@ -477,17 +477,18 @@ void CvPlot::doTurn()
 	// R&R, ray, Monasteries and Forts - END
 
 	// XXX
-#ifdef _DEBUG
+#ifdef FASSERT_ENABLE
 	{
-		CLLNode<IDInfo>* pUnitNode;
-		CvUnit* pLoopUnit;
-
-		pUnitNode = headUnitNode();
+		CLLNode<IDInfo>* pUnitNode = headUnitNode();
 
 		while (pUnitNode != NULL)
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = nextUnitNode(pUnitNode);
+			CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
+
+			if (pLoopUnit == NULL) continue;
+
+			if (pLoopUnit->isTempUnit())
+				continue;
 
 			FAssertMsg(pLoopUnit->atPlot(this), "pLoopUnit is expected to be at the current plot instance");
 		}
@@ -867,8 +868,7 @@ void CvPlot::verifyUnitValidPlot()
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
 		if (NULL != pLoopUnit)
 		{
 			aUnits.push_back(pLoopUnit);
@@ -2334,9 +2334,8 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 
 				while (pUnitNode != NULL)
 				{
-					CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = nextUnitNode(pUnitNode);
-					if(pLoopUnit != NULL && pLoopUnit->getOwner() != ePlayer)
+					CvUnit* const pLoopUnit = getUnitNodeLoop(pUnitNode);
+					if (pLoopUnit != NULL && pLoopUnit->getOwner() != ePlayer)
 					{
 						if(pLoopUnit->getBuildType() != NO_BUILD)
 						{
@@ -2568,8 +2567,7 @@ int CvPlot::getBuildTurnsLeft(BuildTypes eBuild, int iNowExtra, int iThenExtra) 
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
+		pLoopUnit = getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getBuildType() == eBuild)
 		{
@@ -2661,8 +2659,7 @@ CvUnit* CvPlot::getBestDefender(PlayerTypes eOwner, PlayerTypes eAttackingPlayer
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
+		pLoopUnit = getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->isOnMap() && !pLoopUnit->isCargo())
 		{
@@ -2704,8 +2701,7 @@ bool CvPlot::hasDefender(bool bCheckCanAttack, PlayerTypes eOwner, PlayerTypes e
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
+		pLoopUnit = getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->isOnMap() && !pLoopUnit->isCargo())
 		{
@@ -2740,15 +2736,13 @@ bool CvPlot::hasDefender(bool bCheckCanAttack, PlayerTypes eOwner, PlayerTypes e
 int CvPlot::AI_sumStrength(PlayerTypes eOwner, PlayerTypes eAttackingPlayer, DomainTypes eDomainType, bool bDefensiveBonuses, bool bTestAtWar, bool bTestPotentialEnemy) const
 {
 	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
 	int	strSum = 0;
 
 	pUnitNode = headUnitNode();
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit == NULL)
 		{
@@ -2784,15 +2778,11 @@ int CvPlot::AI_sumStrength(PlayerTypes eOwner, PlayerTypes eAttackingPlayer, Dom
 
 CvUnit* CvPlot::getSelectedUnit() const
 {
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-
-	pUnitNode = headUnitNode();
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->IsSelected())
 		{
@@ -2810,8 +2800,7 @@ int CvPlot::getUnitPower(PlayerTypes eOwner) const
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && (eOwner == NO_PLAYER || pLoopUnit->getOwnerINLINE() == eOwner))
 		{
@@ -3841,15 +3830,13 @@ PlayerTypes CvPlot::calculateCulturalOwner() const
 
 void CvPlot::plotAction(PlotUnitFunc func, int iData1, int iData2, PlayerTypes eOwner, TeamTypes eTeam)
 {
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-
-	pUnitNode = headUnitNode();
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
+
+		if (pLoopUnit == NULL) continue;
 
 		if ((eOwner == NO_PLAYER) || (pLoopUnit->getOwnerINLINE() == eOwner))
 		{
@@ -3864,18 +3851,14 @@ void CvPlot::plotAction(PlotUnitFunc func, int iData1, int iData2, PlayerTypes e
 
 int CvPlot::plotCount(ConstPlotUnitFunc funcA, int iData1A, int iData2A, PlayerTypes eOwner, TeamTypes eTeam, ConstPlotUnitFunc funcB, int iData1B, int iData2B) const
 {
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	int iCount;
-
-	iCount = 0;
-
-	pUnitNode = headUnitNode();
+	int iCount = 0;
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
+
+		if (pLoopUnit == NULL) continue;
 
 		if ((eOwner == NO_PLAYER) || (pLoopUnit->getOwnerINLINE() == eOwner))
 		{
@@ -3898,15 +3881,13 @@ int CvPlot::plotCount(ConstPlotUnitFunc funcA, int iData1A, int iData2A, PlayerT
 
 CvUnit* CvPlot::plotCheck(ConstPlotUnitFunc funcA, int iData1A, int iData2A, PlayerTypes eOwner, TeamTypes eTeam, ConstPlotUnitFunc funcB, int iData1B, int iData2B) const
 {
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-
-	pUnitNode = headUnitNode();
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
+
+		if (pLoopUnit == NULL) continue;
 
 		if ((eOwner == NO_PLAYER) || (pLoopUnit->getOwnerINLINE() == eOwner))
 		{
@@ -3951,6 +3932,9 @@ bool CvPlot::isVisible(TeamTypes eTeam, bool bDebug) const
 
 bool CvPlot::isActiveVisible(bool bDebug) const
 {
+	if (this == NULL)
+		return false;
+
 	return isVisible(GC.getGameINLINE().getActiveTeam(), bDebug);
 }
 
@@ -4838,7 +4822,8 @@ bool CvPlot::hasNearbyPlotWith(const InfoArray1<T>& kInfo, int iRange, bool bEmp
 }
 
 template <typename T>
-bool CvPlot::hasNearbyPlotWith(T eVal, int iRange) const
+typename boost::enable_if<boost::is_enum<T>, bool>::type
+CvPlot::hasNearbyPlotWith(T eVal, int iRange) const
 {
 	CvMap& kMap = GC.getMap();
 	const int iPlotX = getX_INLINE();
@@ -8730,6 +8715,13 @@ CLLNode<IDInfo>* CvPlot::tailUnitNode() const
 	return m_units.tail();
 }
 
+CvUnit* CvPlot::getUnitNodeLoop(CLLNode<IDInfo>*& pUnitNode) const
+{
+	CvUnit *pUnit = ::getUnit(pUnitNode->m_data);
+	FAssertMsg(pUnit != NULL, "Plot has a NULL unit");
+	pUnitNode = nextUnitNode(pUnitNode);
+	return pUnit;
+}
 
 CvString CvPlot::getScriptData() const
 {
@@ -8865,37 +8857,34 @@ void CvPlot::doCulture()
 
 	doImprovementCulture();
 
-	ImprovementTypes eImprovement = getImprovementType();
-	if(eImprovement != NO_IMPROVEMENT)
+	const ImprovementTypes eImprovement = getImprovementType();
+	if (eImprovement != NO_IMPROVEMENT)
 	{
 		// Check for a fort culture flip
-		if(GC.getImprovementInfo(eImprovement).isActsAsCity() && (getOwnershipDuration() > GC.getDefineINT("SUPER_FORTS_DURATION_BEFORE_REVOLT")))
+		if (GC.getImprovementInfo(eImprovement).isActsAsCity() && (getOwnershipDuration() > GLOBAL_DEFINE_SUPER_FORTS_DURATION_BEFORE_REVOLT))
 		{
 			eCulturalOwner = calculateCulturalOwner();
-			if(eCulturalOwner != NO_PLAYER)
+			if (eCulturalOwner != NO_PLAYER)
 			{
-				if(GET_PLAYER(eCulturalOwner).getTeam() != getTeam())
+				if (GET_PLAYER(eCulturalOwner).getTeam() != getTeam())
 				{
 					bool bDefenderFound = false;
 
 					CLLNode<IDInfo>* pUnitNode = headUnitNode();
-					CvUnit* pLoopUnit;
 
 					while (pUnitNode != NULL)
 					{
-						pLoopUnit = ::getUnit(pUnitNode->m_data);
-
-						pUnitNode = nextUnitNode(pUnitNode);
-						if(pLoopUnit != NULL && pLoopUnit->canDefend(this)) //R&R mod, vetiarvind, super forts merge, added null check
+						CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
+						if (pLoopUnit != NULL && pLoopUnit->canDefend(this)) //R&R mod, vetiarvind, super forts merge, added null check
 						{
-							if(pLoopUnit->getOwner() == getOwnerINLINE())
+							if (pLoopUnit->getOwner() == getOwnerINLINE())
 							{
 								bDefenderFound = true;
 								break;
 							}
 						}
 					}
-					if(!bDefenderFound)
+					if (!bDefenderFound)
 					{
 						szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_REVOLTED_JOINED", GC.getImprovementInfo(getImprovementType()).getText(), GET_PLAYER(eCulturalOwner).getCivilizationDescriptionKey());
 						gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CULTUREEXPANDS", MESSAGE_TYPE_INFO, GC.getImprovementInfo(getImprovementType()).getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), getX_INLINE(), getY_INLINE(), true, true);
@@ -9358,9 +9347,9 @@ bool CvPlot::canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const
 		return false;
 	}
 
-	if (kTrigger.getPlotType() != NO_PLOT)
+	if (kTrigger.getPlotTypes().hasContent())
 	{
-		if (getPlotType() != kTrigger.getPlotType())
+		if (!kTrigger.getPlotTypes().get(getPlotType()))
 		{
 			return false;
 		}
@@ -9460,8 +9449,7 @@ bool CvPlot::canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const
 
 		while (NULL != pUnitNode)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = nextUnitNode(pUnitNode);
+			CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == ePlayer)
 			{
@@ -9742,37 +9730,6 @@ int CvPlot::getDistanceToOcean() const
 	return m_iDistanceToOcean;
 }
 
-CvPlot* CvPlot::findNearbyOceanPlot(int iRandomization)
-{
-    CvPlot* pOceanPlot = this;
-
-    while (pOceanPlot->getDistanceToOcean() > 0)
-    {
-        CvPlot* pBestPlot = NULL;
-        int iBestValue = MAX_INT;
-        for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
-        {
-            CvPlot* pDirectionPlot = plotDirection(pOceanPlot->getX_INLINE(), pOceanPlot->getY_INLINE(), (DirectionTypes)iDirection);
-            if (pDirectionPlot != NULL)
-            {
-				int iValue = pDirectionPlot->getDistanceToOcean() * (1000 + GC.getGame().getSorenRandNum(10 * iRandomization, "find nearby ocean plot"));
-                if (iValue < iBestValue)
-                {
-                    iBestValue = iValue;
-                    pBestPlot = pDirectionPlot;
-                }
-            }
-        }
-        FAssert(pBestPlot != NULL);
-        if (pBestPlot == NULL)
-        {
-            return NULL;
-        }
-        pOceanPlot = pBestPlot;
-    }
-    return pOceanPlot;
-}
-
 int CvPlot::countFriendlyCulture(TeamTypes eTeam) const
 {
 	int iTotalCulture = 0;
@@ -9886,8 +9843,7 @@ CvUnit* CvPlot::getUnitLayerUnit(UnitLayerOptionTypes eOption, CvWStringBuffer& 
 		CLLNode<IDInfo>* pUnitNode = headUnitNode();
 		while (pUnitNode != NULL && pUnit == NULL)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = nextUnitNode(pUnitNode);
+			CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL && !pLoopUnit->isInvisible(eActiveTeam, GC.getGame().isDebugMode()))
 			{
@@ -9997,7 +9953,7 @@ CvUnit* CvPlot::getFortDefender()
 	CvUnit* pDefenseUnit = NULL;
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
 		if (pLoopUnit == NULL)
 			continue;
 
@@ -10016,8 +9972,6 @@ CvUnit* CvPlot::getFortDefender()
 				}
 			}
 		}
-
-		pUnitNode = nextUnitNode(pUnitNode);
 	}
 	return pDefenseUnit;
 }
@@ -10034,8 +9988,7 @@ CvUnit* CvPlot::getMonasteryMissionary()
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getProfession() != NO_PROFESSION && GC.getProfessionInfo(pLoopUnit->getProfession()).getMissionaryRate() > 0 && pLoopUnit->getFortifyTurns() > 0 )
 		{
@@ -10082,8 +10035,7 @@ void CvPlot::doFort()
 			CvWString szBuffer;
 			while (pUnitNode2)
 			{
-				pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-				pUnitNode2 = pAdjacentPlot->nextUnitNode(pUnitNode2);
+				pLoopUnit2 = pAdjacentPlot->getUnitNodeLoop(pUnitNode2);
 
 				if (pLoopUnit2 != NULL && pDefenseUnit->getTeam() != pLoopUnit2->getTeam() && (GET_TEAM(pDefenseUnit->getTeam()).isAtWar(pLoopUnit2->getTeam()) || pLoopUnit2->getUnitInfo().isHiddenNationality()) && !pLoopUnit2->isCargo())
 				{
@@ -10271,8 +10223,7 @@ void CvPlot::doMonastery()
 			CvWString szBuffer;
 			while (pUnitNode2)
 			{
-				pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-				pUnitNode2 = pAdjacentPlot->nextUnitNode(pUnitNode2);
+				pLoopUnit2 = pAdjacentPlot->getUnitNodeLoop(pUnitNode2);
 
 				// Native Unit and we are not at war
 				if (pLoopUnit2 != NULL && pLoopUnit2->isNative() && !GET_TEAM(missionaryUnit->getTeam()).isAtWar(pLoopUnit2->getTeam()))
@@ -10524,8 +10475,7 @@ bool CvPlot::isPlayerUnitOnAdjacentPlot(int /*PlayerTypes*/ iPlayer, int /*UnitC
 				CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
 				while (pUnitNode)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = pAdjacentPlot->getUnitNodeLoop(pUnitNode);
 
 					// check for owner and UnitType
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
@@ -10563,8 +10513,7 @@ bool CvPlot::isBarbarianUnitOnAdjacentPlot(int /*UnitClassTypes*/ iIndex) const
 				CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
 				while (pUnitNode)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = pAdjacentPlot->getUnitNodeLoop(pUnitNode);
 
 					// check for owner and UnitType
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)
@@ -10580,3 +10529,16 @@ bool CvPlot::isBarbarianUnitOnAdjacentPlot(int /*UnitClassTypes*/ iIndex) const
 	return false;
 }
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
+int CvPlot::getTurnDamage() const
+{
+	const FeatureTypes featureType = getFeatureType();
+	
+	if (featureType != NO_FEATURE)
+	{
+		const CvFeatureInfo & kFeatureInfo = GC.getFeatureInfo(getFeatureType());
+		return kFeatureInfo.getTurnDamage();
+	}
+	
+	return 0;
+}

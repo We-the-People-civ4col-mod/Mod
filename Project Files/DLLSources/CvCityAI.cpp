@@ -22,22 +22,7 @@
 #include <algorithm>
 #include "BetterBTSAI.h"
 
-#define MULTICORE
-
-#ifdef MULTICORE
-
-#pragma push_macro("free")
-#pragma push_macro("new")
-#undef free
-#undef new
-#include "tbb/parallel_reduce.h"
-#include "tbb/blocked_range.h"
-#include "tbb/task_scheduler_init.h"
-#include "tbb/mutex.h"
-#pragma pop_macro("new")
-#pragma pop_macro("free")
-
-#endif
+#include "TBB.h"
 
 
 #define BUILDINGFOCUS_NO_RECURSION			(1 << 31)
@@ -99,6 +84,9 @@ void CvCityAI::AI_reset()
 void CvCityAI::AI_doTurn()
 {
 	PROFILE_FUNC();
+
+	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("DEFAULT_POPULATION_UNIT"));
+	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
 	AI_doTradedYields();
 
@@ -211,6 +199,9 @@ void CvCityAI::AI_assignWorkingPlots()
 	it's kind of expensive, but not THAT expensive with only 8 plots per colony
 	and the population numbers being low.
 	*/
+
+	const int iMaxAttemptsPerCitizen = 2;
+	stdext::hash_map<CvUnit*, int> attempts;
 	std::deque<CvUnit*> citizens;
 
 	for (int iPass = 0; iPass < 3; ++iPass)
@@ -275,29 +266,28 @@ void CvCityAI::AI_assignWorkingPlots()
 			jobMutex.unlock();
 		}
 
-#define PARALLEL
-#ifdef PARALLEL
-		CvUnit* pOldUnit = AI_parallelAssignToBestJob(*pUnit);
-#endif
+		CvUnit* const pOldUnit = AI_parallelAssignToBestJob(*pUnit);
+		attempts[pUnit]++;
 
-//#define SERIAL
-#ifdef SERIAL
-		CvUnit* pOldUnit = AI_assignToBestJob(pUnit);
-		//FAssertMsg(pOldUnit == pOldUnitCheck, "Parallel version produced different result!");
-#endif
-
-		if (pOldUnit != NULL)
+		// Limit the number of attempt for this citizen
+		if (pOldUnit != NULL && attempts[pUnit] > iMaxAttemptsPerCitizen)
 		{
 			if (std::find(citizens.begin(), citizens.end(), pOldUnit) == citizens.end())
 			{
 				citizens.push_front(pOldUnit);
 			}
 		}
+
 		iCount++;
 		if (iCount > iMaxIterations)
 		{
+			// Check if there's a sensible reason why we failed to employ the citizen
+			const int iNetFood = foodDifference();
+			const int iStoredFood = getYieldStored(YIELD_FOOD);
 			CvWString szTempBuffer;
-			szTempBuffer.Format(L"AI plot assignment confusion. Unit: %s in city: %s could not be assigned to a job!", pUnit->getNameAndProfession().GetCString(), getName().GetCString());
+			szTempBuffer.Format(L"AI plot assignment confusion. Unit: %s in city: %s could not be assigned to a job!. \
+				Food difference: %d Food Stored: %d", pUnit->getNameAndProfession().GetCString(), getName().GetCString(),
+				iNetFood, iStoredFood);
 			std::string s(szTempBuffer.begin(), szTempBuffer.end());
 			FAssertMsg(false, s.c_str());
 			break;
@@ -846,10 +836,7 @@ BuildingTypes CvCityAI::AI_bestBuilding(int iFocusFlags, int iMaxTurns, bool bAs
 /// <summary>Determine if there's a coastal route to another city. Both cities must be in different areas (cannot share continent/island)</summary>
 bool CvCityAI::AI_hasCoastalRoute() const
 {
-	gDLL->getFAStarIFace()->ForceReset(&GC.getCoastalRouteFinder());
-
-	// Erik: determine if it makes sense to build a coastal transport
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
 	int iLoop;
 	for (CvCity* pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
@@ -859,12 +846,13 @@ bool CvCityAI::AI_hasCoastalRoute() const
 			// Determine if these cities share a common water area
 			if (waterArea() == pLoopCity->waterArea())
 			{
+				static const UnitTypes eShipUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GC.getDefineINT("UNITCLASS_SMALL_COASTAL_SHIP"));
+				FAssert(eShipUnit != NO_UNIT);
+
 				// Check if there's a coastal / cultural route between the cities
-				if (gDLL->getFAStarIFace()->GeneratePath(&GC.getCoastalRouteFinder(), getX_INLINE(), getY_INLINE(), pLoopCity->getX_INLINE(), pLoopCity->getY_INLINE(), false, getOwnerINLINE(), true))
-				{
-					// We found a valid path
+				const bool found = generatePathForHypotheticalUnit(plot(), pLoopCity->plot(), getOwner(), eShipUnit);
+				if (found)
 					return true;
-				}
 			}
 		}
 	}
@@ -3092,7 +3080,7 @@ bool CvCityAI::AI_removeWorstPopulationUnit(bool bDelete)
 		ProfessionTypes eEjectProfession = GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
 		if (m_aPopulationUnits[i]->canHaveProfession(eEjectProfession, false))
 		{
-			if (removePopulationUnit(m_aPopulationUnits[i], bDelete, eEjectProfession))
+			if (removePopulationUnit(CREATE_ASSERT_DATA, m_aPopulationUnits[i], bDelete, eEjectProfession))
 			{
 				return true;
 			}
@@ -3136,7 +3124,7 @@ CvUnit* CvCityAI::AI_bestPopulationUnit(UnitAITypes eUnitAI, ProfessionTypes ePr
 	}
 	if (pBestUnit != NULL)
 	{
-		removePopulationUnit(pBestUnit, false, eProfession);
+		removePopulationUnit(CREATE_ASSERT_DATA, pBestUnit, false, eProfession);
 		pBestUnit->AI_setUnitAIType(eUnitAI);
 	}
 
@@ -3225,7 +3213,6 @@ void CvCityAI::AI_juggleCitizens()
 	}
 }
 
-#ifdef  MULTICORE
 struct BestJob
 {
 	BestJob() :
@@ -3410,7 +3397,7 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 	// TODO: Determine if 8 bits are enough
 	// TODO: Split in two ranges to better balance the workload (plot vs. building workers) ?
 	// TODO: Maybe set grainsize to the number of professions that we expect to iterate through divided by the
-	tbb::parallel_reduce(tbb::blocked_range<size_t>(0, kValidCityJobs.size()), fbj, tbb::auto_partitioner());
+	Threads::parallel_reduce(tbb::blocked_range<size_t>(0, kValidCityJobs.size()), fbj, tbb::auto_partitioner());
 
 	// Assert that the rng state is the same after the concurrent operation has completed
 	unsigned long rngStatePost = GC.getGameConst().getSorenRand().peek();
@@ -3429,7 +3416,7 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 	{
 		if (getPopulation() > 1)
 		{
-			bool bSuccess = removePopulationUnit(&kUnit, false, (ProfessionTypes)GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
+			bool bSuccess = removePopulationUnit(CREATE_ASSERT_DATA, &kUnit, false, GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
 			FAssertMsg(bSuccess, "Failed to remove useless citizen");
 		}
 		jobMutex.unlock();
@@ -3510,7 +3497,6 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 	return pDisplacedUnit;
 
 }
-#endif
 
 //Returns the displaced unit, if any.
 CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
@@ -3612,7 +3598,7 @@ CvUnit* CvCityAI::AI_assignToBestJob(CvUnit* pUnit, bool bIndoorOnly)
 	{
 		if (getPopulation() > 1)
 		{
-			bool bSuccess = removePopulationUnit(pUnit, false, GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
+			bool bSuccess = removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession());
 			FAssertMsg(bSuccess, "Failed to remove useless citizen");
 		}
 		return NULL;
@@ -5785,8 +5771,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 
 		while (pUnitNode != NULL)
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = pPlot->nextUnitNode(pUnitNode);
+			pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL && pLoopUnit->getBuildType() != NO_BUILD)
 			{

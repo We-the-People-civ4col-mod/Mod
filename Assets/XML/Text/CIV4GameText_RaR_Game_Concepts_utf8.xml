@@ -6,29 +6,29 @@
 <!-- Game Text - New -->
 <!-- Domestic advisor -->
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_CONCEPT_TOTAL_PRODUCTION</Tag>
-        <English>Total Production</English>
-        <French>
-            <Text>Production totale</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Gesamtproduktion</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Produzione totale</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Producción total</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-        <Russian>Общий объем производства</Russian>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_CONCEPT_TOTAL_PRODUCTION</Tag>
+		<English>Total Production</English>
+		<French>
+			<Text>Production totale</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Gesamtproduktion</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Produzione totale</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Producción total</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Общий объем производства</Russian>
+	</TEXT>
 </Civ4GameText>

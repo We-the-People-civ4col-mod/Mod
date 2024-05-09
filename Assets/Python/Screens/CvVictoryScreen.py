@@ -105,7 +105,7 @@ class CvVictoryScreen:
 
 		# Header...
 		self.SCREEN_TITLE = u"<font=4b>" + localText.getText("TXT_KEY_VICTORY_SCREEN_TITLE", ()).upper() + u"</font>"
-		self.SCREEN_TITLE = localText.changeTextColor(self.SCREEN_TITLE, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+		self.SCREEN_TITLE = localText.changeTextColor(self.SCREEN_TITLE, ColorTypes.COLOR_FONT_CREAM)
 
 		screen.setLabel(self.HEADER_ID, "Background", self.SCREEN_TITLE, CvUtil.FONT_CENTER_JUSTIFY, self.W_SCREEN / 2, 4, self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
@@ -135,7 +135,7 @@ class CvVictoryScreen:
 			screen.addDrawControl(OnTabName + "Right", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCREEN_TAB_END").getPath(), (TabWidth * iTab) + TabWidth - EdgeWidth, self.H_SCREEN - BottomPanelHight, EdgeWidth, BottomPanelHight, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 			TabText = Tabs[iTab]
-			TabText = localText.changeTextColor(TabText, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+			TabText = localText.changeTextColor(TabText, ColorTypes.COLOR_FONT_CREAM)
 
 			screen.setTextAt("OnTabTitle" + str(iTab), OnTabName + "Center", u"<font=4>" + TabText + "</font>", CvUtil.FONT_LEFT_JUSTIFY, 0 , 33, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 			screen.hide(OnTabName + "Left")
@@ -376,7 +376,7 @@ class CvVictoryScreen:
 
 				if (victory.isEndScore()):
 
-					szText1 = localText.getText("TXT_KEY_VICTORY_SCREEN_HIGHEST_SCORE", (CyGameTextMgr().getTimeStr(gc.getGame().getStartTurn() + gc.getGame().getMaxTurns(), false), ))
+					szText1 = localText.getText("TXT_KEY_VICTORY_SCREEN_HIGHEST_SCORE", (CyGameTextMgr().getTimeStr(gc.getGame().getStartTurn() + gc.getGame().getMaxTurns(), False), ))
 
 					iRow = screen.appendTableRow(szTable)
 					screen.setTableText(szTable, 0, iRow, szText1, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
@@ -555,10 +555,10 @@ class CvVictoryScreen:
 			if player.isAlive():
 
 				cityList = []
-				(loopCity, iter) = player.firstCity(false)
+				(loopCity, iter) = player.firstCity(False)
 				while(loopCity):
 					cityList.append(loopCity)
-					(loopCity, iter) = player.nextCity(iter, false)
+					(loopCity, iter) = player.nextCity(iter, False)
 
 				listCultureCities = len(cityList) * [(0, 0)]
 				i = 0

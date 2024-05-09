@@ -593,7 +593,7 @@ sizes!) I will try to figure this out and update these notes again before releas
 rift_grain has to do with forced strips of water running in a mostly vertical
 direction. They simulate the Atlantic and Pacific Oceans separating Earth's
 two primary land regions. You can turn off the Atlantic rift by setting
-has_center_rift to false. You can turn off all rifts by setting rift_grain
+has_center_rift to False. You can turn off all rifts by setting rift_grain
 to -1. For most regional fractals, you will probably want to disable rifts.
 
 invert_heights is not a function I have needed, but it seems clear enough. It
@@ -1070,15 +1070,15 @@ class TerrainGenerator:
 
 		self.variation.fracInit(self.iWidth, self.iHeight, self.grain_amount, self.mapRand, self.iFlags, self.fracXExp, self.fracYExp)
 
-		self.terrainDesert = self.gc.getInfoTypeForString("TERRAIN_DESERT")
-		self.terrainPlains = self.gc.getInfoTypeForString("TERRAIN_PLAINS")
-		self.terrainIce = self.gc.getInfoTypeForString("TERRAIN_SNOW")
-		self.terrainTundra = self.gc.getInfoTypeForString("TERRAIN_TUNDRA")
-		self.terrainGrass = self.gc.getInfoTypeForString("TERRAIN_GRASS")
+		self.terrainDesert = TerrainTypes.TERRAIN_DESERT
+		self.terrainPlains = TerrainTypes.TERRAIN_PLAINS
+		self.terrainIce = TerrainTypes.TERRAIN_SNOW
+		self.terrainTundra = TerrainTypes.TERRAIN_TUNDRA
+		self.terrainGrass = TerrainTypes.TERRAIN_GRASS
 		#R&R, Androrc, Generation of Savannah
-		self.terrainSavannah = self.gc.getInfoTypeForString("TERRAIN_SAVANNAH")
+		self.terrainSavannah = TerrainTypes.TERRAIN_SAVANNAH
 		#R&R, Androrc, Generation of Savannah End
-		self.terrainMarsh = self.gc.getInfoTypeForString("TERRAIN_MARSH")
+		self.terrainMarsh = TerrainTypes.TERRAIN_MARSH
 
 	def getLatitudeAtPlot(self, iX, iY):
 		"""given a point (iX,iY) such that (0,0) is in the NW,
@@ -1208,11 +1208,11 @@ class FeatureGenerator:
 		self.iLightForestLevel = self.lightForests.getHeightFromPercent(100 - self.iLightForestPercent)
 
 	def __initFeatureTypes(self):
-		self.featureIce = self.gc.getInfoTypeForString("FEATURE_ICE")
-		self.featureJungle = self.gc.getInfoTypeForString("FEATURE_JUNGLE")
-		self.featureForest = self.gc.getInfoTypeForString("FEATURE_FOREST")
-		self.featureForestTundra = self.gc.getInfoTypeForString("FEATURE_FOREST_TUNDRA")
-		self.featureLightForest = self.gc.getInfoTypeForString("FEATURE_LIGHT_FOREST")
+		self.featureIce = FeatureTypes.FEATURE_ICE
+		self.featureJungle = FeatureTypes.FEATURE_JUNGLE
+		self.featureForest = FeatureTypes.FEATURE_FOREST
+		self.featureForestTundra = FeatureTypes.FEATURE_FOREST_TUNDRA
+		self.featureLightForest = FeatureTypes.FEATURE_LIGHT_FOREST
 
 	def addFeatures(self):
 		"adds features to all plots as appropriate"
@@ -1301,7 +1301,7 @@ def findStartingPlot(playerID, validFn = None):
 	iRange = player.startingPlotRange()
 	iPass = 0
 
-	while (true):
+	while (True):
 		iBestValue = 0
 		pBestPlot = None
 

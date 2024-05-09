@@ -7,6 +7,10 @@
 
 //#include "CvEnums.h"
 //#include "CvStructs.h"
+
+#include <boost/python/tuple.hpp>
+namespace python = boost::python;
+
 class CyUnit;
 class CvPlayer;
 class CyCity;

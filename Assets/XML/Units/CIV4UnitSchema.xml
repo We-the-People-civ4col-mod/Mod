@@ -418,11 +418,11 @@
 	<ElementType name="VoidProfessionType" content="textOnly"/>
 	<ElementType name="bIsNotAllowed" content="textOnly" dt:type="boolean"/>
 	<ElementType name="ProfessionNotAllowed" content="eltOnly">
-    <element type="VoidProfessionType"/>
-    <element type="bIsNotAllowed"/>
+		<element type="VoidProfessionType"/>
+		<element type="bIsNotAllowed"/>
 	</ElementType>
 	<ElementType name="ProfessionsNotAllowed" content="eltOnly">
-    <element type="ProfessionNotAllowed" minOccurs="0" maxOccurs="*"/>
+		<element type="ProfessionNotAllowed" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="YieldCost" content="eltOnly">
 		<element type="YieldType"/>

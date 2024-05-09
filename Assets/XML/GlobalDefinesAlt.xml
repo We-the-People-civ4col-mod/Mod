@@ -10,6 +10,10 @@
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>START_YEAR</DefineName>
+		<iDefineIntVal>1492</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>STANDARD_HANDICAP</DefineName>
 		<DefineTextVal>HANDICAP_EXPLORER</DefineTextVal>
 	</Define>
@@ -176,6 +180,14 @@
 	<Define>
 		<DefineName>TAX_RATE_MAX_INCREASE</DefineName>
 		<iDefineIntVal>4</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TAX_RATE_RETAINED_FRACTION</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TAX_RATE_ATTITUDE_BOUND</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>AI_HURRY_IMMIGRANTS</DefineName>
@@ -500,6 +512,10 @@
 	<Define>
 		<DefineName>PRICE_INCREASE_BARGAIN_SELL</DefineName>
 		<iDefineIntVal>300</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>MAX_NATIVE_BARGAIN_MODIFIER</DefineName>
+		<iDefineIntVal>75</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>ROUNDS_NO_TALK_BECAUSE_BAD_BARGAINING</DefineName>
@@ -1545,7 +1561,6 @@
 	<Define>
 		<DefineName>USE_CLASSIC_MOVEMENT_SYSTEM</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>
-		<bAlwaysHardcoded>1</bAlwaysHardcoded>
 	</Define>
 	<Define>
 		<DefineName>TIMER_PRIVATEERS_DIPLO_EVENT</DefineName>
@@ -1745,6 +1760,7 @@
         <DefineName>IMPORT_CONSTRUCTION_TOOLS_IMPORT_LIMIT_AMOUNT</DefineName>
         <iDefineIntVal>150</iDefineIntVal>
     </Define>
+
 	<Define>
         <DefineName>IMPORT_CONSTRUCTION_ROPE_IMPORT_LIMIT_AMOUNT</DefineName>
         <iDefineIntVal>150</iDefineIntVal>
@@ -1801,4 +1817,5 @@
         <DefineName>IMPORT_LIVESTOCK_GEESE_IMPORT_LIMIT_AMOUNT</DefineName>
         <iDefineIntVal>150</iDefineIntVal>
     </Define>	
+
 </Civ4Defines>

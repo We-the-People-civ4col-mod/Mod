@@ -65,7 +65,7 @@ class CvFoundingFatherScreen:
 		screen.addDDSGFC("FatherTopPanel", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCREEN_TITLE").getPath(), 0, 0, self.XResolution, 55, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		TitleText = localText.getText("TXT_KEY_FATHER_SCREEN_TITLE", ()).upper()
-		TitleText = localText.changeTextColor(TitleText, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+		TitleText = localText.changeTextColor(TitleText, ColorTypes.COLOR_FONT_CREAM)
 
 		screen.setText("Title", "Background", u"<font=4b>" + TitleText + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.XResolution / 2, 4, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setActivation("FatherScreenExit", ActivationTypes.ACTIVATE_MIMICPARENTFOCUS)
@@ -114,7 +114,7 @@ class CvFoundingFatherScreen:
 			self.FatherBars.append((iTopBarPoints, iBottomBarPoints))
 
 		for iCategory in range(gc.getNumFatherCategoryInfos()):
-			screen.addScrollPanel("FoundingFatherList" + str(iCategory), u"", 0, 0, self.XResolution, self.FATHERLIST_HEIGHT, PanelStyles.PANEL_STYLE_EXTERNAL, true, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			screen.addScrollPanel("FoundingFatherList" + str(iCategory), u"", 0, 0, self.XResolution, self.FATHERLIST_HEIGHT, PanelStyles.PANEL_STYLE_EXTERNAL, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 			screen.setActivation("FoundingFatherList" + str(iCategory), ActivationTypes.ACTIVATE_NORMAL)
 			screen.hide("FoundingFatherList" + str(iCategory))
 
@@ -147,7 +147,7 @@ class CvFoundingFatherScreen:
 			screen.addDrawControl(OnTabName + "Right", ArtFileMgr.getInterfaceArtInfo("INTERFACE_SCREEN_TAB_END").getPath(), (TabWidth * iTab) + TabWidth - EdgeWidth, self.YResolution - BottomPanelHeight, EdgeWidth, BottomPanelHeight, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 			TabText = gc.getFatherCategoryInfo(iTab).getDescription()
-			TabText = localText.changeTextColor(TabText, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+			TabText = localText.changeTextColor(TabText, ColorTypes.COLOR_FONT_CREAM)
 
 			screen.setLabelAt("OnTabTitle" + str(iTab), OnTabName + "Center", u"<font=4>" + TabText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, 65 , 33, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 			screen.hide(OnTabName + "Left")
@@ -196,18 +196,18 @@ class CvFoundingFatherScreen:
 			
 				screen.addDDSGFCAt("TopAcumulationBar" + str(iCategory), "FoundingFatherList" + str(iCategory), ArtFileMgr.getInterfaceArtInfo("FATHER_PROGRESS_BAR_START").getPath(), 20, (self.FATHERLIST_HEIGHT / 2) - (self.BarAreaHeight / 2), self.XResolution / 5, self.BarAreaHeight / 2, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 				szBarTitle = gc.getFatherPointInfo(iTopBarPoints).getDescription()
-				szBarTitle = localText.changeTextColor(szBarTitle, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+				szBarTitle = localText.changeTextColor(szBarTitle, ColorTypes.COLOR_FONT_GOLD)
 				screen.setLabelAt("TopBarTitle" + str(iCategory), "TopAcumulationBar" + str(iCategory), "<font=3>" + szBarTitle + "</font>", CvUtil.FONT_LEFT_JUSTIFY, 20, self.BarAreaHeight / 4, -0.1, FontTypes.SMALL_FONT,  WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 				screen.addDDSGFCAt("BottomAcumulationBar" + str(iCategory), "FoundingFatherList" + str(iCategory), ArtFileMgr.getInterfaceArtInfo("FATHER_PROGRESS_BAR_START").getPath(), 20, (self.FATHERLIST_HEIGHT / 2), self.XResolution / 5, self.BarAreaHeight / 2, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 				szBarTitle = gc.getFatherPointInfo(iBottomBarPoints).getDescription()
-				szBarTitle = localText.changeTextColor(szBarTitle, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+				szBarTitle = localText.changeTextColor(szBarTitle, ColorTypes.COLOR_FONT_GOLD)
 				screen.setLabelAt("BottomBarTitle" + str(iCategory), "BottomAcumulationBar" + str(iCategory), "<font=3>" + szBarTitle + "</font>", CvUtil.FONT_LEFT_JUSTIFY, 20, self.BarAreaHeight / 4, -0.1, FontTypes.SMALL_FONT,  WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 			else:
 				screen.addDDSGFCAt("TopAcumulationBar" + str(iCategory), "FoundingFatherList" + str(iCategory), ArtFileMgr.getInterfaceArtInfo("FATHER_PROGRESS_BAR_START").getPath(), 20, (self.FATHERLIST_HEIGHT / 2) - (self.BarAreaHeight / 4), self.XResolution / 5, self.BarAreaHeight / 2, WidgetTypes.WIDGET_GENERAL, -1, -1, False )
 				szBarTitle = gc.getFatherPointInfo(iBottomBarPoints).getDescription()
-				szBarTitle = localText.changeTextColor(szBarTitle, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+				szBarTitle = localText.changeTextColor(szBarTitle, ColorTypes.COLOR_FONT_GOLD)
 				screen.setLabelAt("TopBarTitle" + str(iCategory), "TopAcumulationBar" + str(iCategory), "<font=3>" + szBarTitle + "</font>", CvUtil.FONT_LEFT_JUSTIFY, 20, self.BarAreaHeight / 4, -0.1, FontTypes.SMALL_FONT,  WidgetTypes.WIDGET_GENERAL, -1, -1)
 				
 	def placeFathers (self):
@@ -232,7 +232,7 @@ class CvFoundingFatherScreen:
 			PreceedingFather = 0
 			szFatherData = u"<font=3>" + CyGameTextMgr().getFatherHelp(i, True)[1:] + u"</font>"
 			szFatherTitle = gc.getFatherInfo(i).getDescription()
-			szFatherTitle = localText.changeTextColor(szFatherTitle, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+			szFatherTitle = localText.changeTextColor(szFatherTitle, ColorTypes.COLOR_FONT_CREAM)
 
 			j = index + 1
 			BoxName = "PortraitBox" + str(i)
@@ -253,10 +253,10 @@ class CvFoundingFatherScreen:
 
 # TAC 0201 Start: Test if FF was rejected before by active player. Set flag in lower row if FF unavailable
 				if activeTeam.isFatherIgnore(i):
-					screen.addDDSGFCAt("Flag Icon" + str(i), ScrollPanel, ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL").getPath(), (self.FatherRecordWidth * (j+ 1)) - (self.FatherRecordHeight * 6 / 7) + (self.FatherRecordHeight * 9 / 10) - (self.FatherRecordHeight / 5), self.BarAreaHeight + self.FatherRecordHeight - 15 + (self.FatherRecordWidth / 5), (self.FatherRecordHeight / 5), (self.FatherRecordHeight / 5), WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, gc.getInfoTypeForString("CONCEPT_FATHERS"), False )	
+					screen.addDDSGFCAt("Flag Icon" + str(i), ScrollPanel, ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL").getPath(), (self.FatherRecordWidth * (j+ 1)) - (self.FatherRecordHeight * 6 / 7) + (self.FatherRecordHeight * 9 / 10) - (self.FatherRecordHeight / 5), self.BarAreaHeight + self.FatherRecordHeight - 15 + (self.FatherRecordWidth / 5), (self.FatherRecordHeight / 5), (self.FatherRecordHeight / 5), WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, ConceptTypes.CONCEPT_FATHERS, False )	
 					szTempBuffer = localText.getText("TXT_KEY_FATHER_REJECTED", ())
-					szTempBuffer = localText.changeTextColor(szTempBuffer, gc.getInfoTypeForString("COLOR_FONT_RED"))
-					screen.setTextAt("FatherOwner" + str(i), ScrollPanel, "<font=3>" + szTempBuffer + "</font>", CvUtil.FONT_LEFT_JUSTIFY, (self.FatherRecordWidth * (j + 1)) - (self.FatherRecordHeight * 6 / 7) + (self.FatherRecordHeight * 9 / 10), self.BarAreaHeight + self.FatherRecordHeight - 30 + (self.FatherRecordWidth / 5) + (self.FatherRecordWidth / 5), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, gc.getInfoTypeForString("CONCEPT_FATHERS") )
+					szTempBuffer = localText.changeTextColor(szTempBuffer, ColorTypes.COLOR_FONT_RED)
+					screen.setTextAt("FatherOwner" + str(i), ScrollPanel, "<font=3>" + szTempBuffer + "</font>", CvUtil.FONT_LEFT_JUSTIFY, (self.FatherRecordWidth * (j + 1)) - (self.FatherRecordHeight * 6 / 7) + (self.FatherRecordHeight * 9 / 10), self.BarAreaHeight + self.FatherRecordHeight - 30 + (self.FatherRecordWidth / 5) + (self.FatherRecordWidth / 5), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, ConceptTypes.CONCEPT_FATHERS)
 # TAC End				
 
 				if (gc.getGame().getFatherTeam(i) != TeamTypes.NO_TEAM):
@@ -292,10 +292,10 @@ class CvFoundingFatherScreen:
 
 # TAC 0201 Start: Test if FF was rejected before by active player. Set flag in upper row if FF unavailable
 				if activeTeam.isFatherIgnore(i):
-					screen.addDDSGFCAt("Flag Icon" + str(i), ScrollPanel, ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL").getPath(), (self.FatherRecordWidth * (j - 1)) + self.FatherRecordWidth + (self.FatherRecordHeight / 20), self.TopPanelHeight + (self.FatherRecordHeight / 2) - (self.FatherRecordHeight / 12), (self.FatherRecordHeight / 5), (self.FatherRecordHeight / 5), WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, gc.getInfoTypeForString("CONCEPT_FATHERS"), False )	
+					screen.addDDSGFCAt("Flag Icon" + str(i), ScrollPanel, ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL").getPath(), (self.FatherRecordWidth * (j - 1)) + self.FatherRecordWidth + (self.FatherRecordHeight / 20), self.TopPanelHeight + (self.FatherRecordHeight / 2) - (self.FatherRecordHeight / 12), (self.FatherRecordHeight / 5), (self.FatherRecordHeight / 5), WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, ConceptTypes.CONCEPT_FATHERS, False )	
 					szTempBuffer = localText.getText("TXT_KEY_FATHER_REJECTED", ())
-					szTempBuffer = localText.changeTextColor(szTempBuffer, gc.getInfoTypeForString("COLOR_FONT_RED"))
-					screen.setTextAt("FatherOwner" + str(i), ScrollPanel, "<font=3>" + szTempBuffer + "</font>", CvUtil.FONT_RIGHT_JUSTIFY, (self.FatherRecordWidth * (j - 1)) + self.FatherRecordWidth + (self.FatherRecordHeight / 20), self.TopPanelHeight + (self.FatherRecordHeight / 2) - (self.FatherRecordHeight / 12) + (self.FatherRecordWidth / 5), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, gc.getInfoTypeForString("CONCEPT_FATHERS") )
+					szTempBuffer = localText.changeTextColor(szTempBuffer, ColorTypes.COLOR_FONT_RED)
+					screen.setTextAt("FatherOwner" + str(i), ScrollPanel, "<font=3>" + szTempBuffer + "</font>", CvUtil.FONT_RIGHT_JUSTIFY, (self.FatherRecordWidth * (j - 1)) + self.FatherRecordWidth + (self.FatherRecordHeight / 20), self.TopPanelHeight + (self.FatherRecordHeight / 2) - (self.FatherRecordHeight / 12) + (self.FatherRecordWidth / 5), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, ConceptTypes.CONCEPT_FATHERS)
 # TAC End
 				
 				if (gc.getGame().getFatherTeam(i) != TeamTypes.NO_TEAM):
@@ -473,7 +473,7 @@ class CvFoundingFatherScreen:
 			screen = self.getScreen()
 			iIndex = screen.getSelectedPullDownID("CivDropDown")
 			self.iCivSelected = screen.getPullDownData("CivDropDown", iIndex)
-			self.updateFatherRecords(false)
+			self.updateFatherRecords(False)
 
 	# Will handle the input for this screen...
 	def handleInput (self, inputClass):
@@ -488,7 +488,7 @@ class CvFoundingFatherScreen:
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
 			if (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL and inputClass.getData1() == 1111):
 				self.TypeSelection = inputClass.getData2()
-				self.updateFatherRecords(false)
+				self.updateFatherRecords(False)
 				for x in range(gc.getNumFatherCategoryInfos()):
 					if (x == self.TypeSelection):
 						self.setTab(x, True)

@@ -7,9 +7,11 @@
 #include "CyArea.h"
 #include "CyTradeRoute.h"
 #include "CyData.h"
-//# include <boost/python/manage_new_object.hpp>
-//# include <boost/python/return_value_policy.hpp>
-//# include <boost/python/scope.hpp>
+
+#include <boost/python/manage_new_object.hpp>
+#include <boost/python/class.hpp>
+#include <boost/python/scope.hpp>
+
 //
 // published python interface for CyPlayer
 //

@@ -18,6 +18,10 @@ namespace
 		const AutomateTypes automateType;
 		const MissionAITypes missionAI;
 	};
+
+	const SailToHelper kSailToEurope(UNIT_TRAVEL_STATE_TO_EUROPE, AUTOMATE_SAIL_TO_EUROPE, MISSIONAI_SAIL_TO_EUROPE);
+	const SailToHelper kSailToAfrica(UNIT_TRAVEL_STATE_TO_AFRICA, AUTOMATE_SAIL_TO_AFRICA, MISSIONAI_SAIL_TO_AFRICA);
+	const SailToHelper kSailToPortRoyal(UNIT_TRAVEL_STATE_TO_PORT_ROYAL, AUTOMATE_SAIL_TO_PORT_ROYAL, MISSIONAI_SAIL_TO_PORT_ROYAL);
 }
 
 class CvCity;
@@ -30,7 +34,7 @@ public:
 	CvUnitAI();
 	virtual ~CvUnitAI();
 
-	void AI_init();
+	void AI_init(int iBirthmark);
 	void AI_uninit();
 	void AI_reset();
 
@@ -181,7 +185,7 @@ protected:
 	bool AI_sailToAfrica(bool bMove = true); /*** TRIANGLETRADE 10/28/08 by DPII ***/
 	bool AI_sailToPortRoyal(bool bMove = true); // R&R, ray, Port Royal
 
-	CvPlot* findNearbyOceanPlot(CvPlot* pPlot);	// TAC - AI Improved Naval AI - koma13
+	CvPlot* findNearbyOceanPlot(const CvPlot& kPlot) const;	// TAC - AI Improved Naval AI - koma13
 
 	bool AI_travelToPort(int iMinPercent = 25, int iMaxPath = MAX_INT);
 
@@ -192,7 +196,7 @@ protected:
 
 	bool AI_deliverUnits(UnitAITypes eUnitAI = NO_UNITAI);
 	
-	CvPlot* AI_bestDestinationPlot(bool bIgnoreDanger = false);	// TAC - AI Improved Naval AI - koma13
+	CvPlot* AI_bestDestinationPlot(bool bIgnoreDanger = false) const;	// TAC - AI Improved Naval AI - koma13
 
 	bool AI_loadUnits(UnitAITypes eUnitAI, MissionAITypes eMissionAI);
 	
@@ -366,7 +370,7 @@ protected:
 	bool AI_canPillage(CvPlot& kPlot) const;
 
 	int AI_searchRange(int iRange);
-	bool AI_plotValid(CvPlot* pPlot);
+	bool AI_plotValid(CvPlot* pPlot) const;
 
 	int AI_finalOddsThreshold(CvPlot* pPlot, int iOddsThreshold);
 
@@ -401,6 +405,7 @@ protected:
 
 	void AI_sellYieldUnits(Port port);
 	void AI_unloadUnits(Port port);
+	void AI_automateSailTo(const SailToHelper& sth);
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;

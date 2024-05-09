@@ -1,84 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_VICTORY_DOMINATION</Tag>
-        <English>Domination</English>
-        <French>Suprématie</French>
-        <German>Vorherrschaft</German>
-        <Italian>Supremazia</Italian>
-        <Spanish>Supremacía</Spanish>
-        <Russian>Доминирование</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_VICTORY_DOMINATION_PEDIA</Tag>
-        <English>In colonial times European powers struggled for supremacy in the New World. This mod, "We The People", explores that colonization history. You will negotiate with or struggle against Native nations and other European colonies, working to establish the most successful nation the New World has ever seen.</English>
-        <French>Dans les temps coloniaux, les puissances européens luttaient pour la suprématie dans le Nouveau Monde. Ce mod, "We The People", vous permet de ressentir quelques aspects de cette Histoire colonial, qui marquera à jamais l'Humanité. Vous combatterez vos rivaux européens et indigènes pour établir la plus grande Nation que le monde n'aura jamais connu.</French>
-        <German>Über 300 Jahre kämpften die Europäischen Mächte um die Vorherrschaft in der Neuen Welt. Dieser Mod, "We The People", erlaubt Ihnen das Erleben der Kolonialisierungsgeschichte. Sie werden mit den Ureinwohnern und anderen europäischen Kolonien verhandeln oder gegen sie kämpfen müssen, während Sie daran arbeiten, die erfolgreichste Nation zu gründen, die die Neue Welt je gesehen hat.</German>
-        <Italian>In epoca coloniale le potenze europee lottavano per la supremazia nel Nuovo Mondo. Questo mod, "We The People", esplora la storia della colonizzazione. Potrete negoziare o lottare contro le nazioni native e altre colonie europee, lavorando per stabilire la nazione di maggior successo che il Nuovo Mondo abbia mai visto.</Italian>
-        <Spanish>En la época colonial, las potencias europeas lucharon por la supremacía en el Nuevo Mundo. Este mod, "We The People", explora esa historia de colonización. Negociarás con las naciones nativas y otras colonias europeas, o lucharás contra ellas, trabajando para establecer la nación más exitosa que el Nuevo Mundo haya visto jamás.</Spanish>
-        <Russian>В колониальные времена европейские державы боролись за господство в Новом Свете. Этот мод «We The People» исследует историю этой колонизации. Вы будете вести переговоры или бороться против коренных народов и других европейских колоний, работая над созданием самой успешной нации, которую когда-либо видел Новый Свет.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_VICTORY_PRODUCTION</Tag>
-        <English>Industrialisation</English>
-        <French>Industrialisation</French>
-        <German>Industrialisierung</German>
-        <Italian>Industrializzazione</Italian>
-        <Spanish>Industrialización</Spanish>
-        <Russian>Индустриализация</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_VICTORY_PRODUCTION_PEDIA</Tag>
-        <English>Start the Industrial Revolution (production rate of 10 000 yields per turn)</English>
-        <French>Commencer la Révolution Industrielle (taux de production par tour)</French>
-        <German>Leitet die Industrielle Revolution ein (Produktion : 10.000 pro Runde)</German>
-        <Italian>Iniziare la rivoluzione industriale (tasso di produzione per turno)</Italian>
-        <Spanish>Iniciar la revolución industrial (tasa de producción por turno)</Spanish>
-        <Russian>Начать промышленную революцию (производительность за ход)</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_VICTORY_REVOLUTION</Tag>
-        <English>Independence</English>
-        <French>Indépendance</French>
-        <German>Unabhängigkeit</German>
-        <Italian>Indipendenza</Italian>
-        <Spanish>Independencia</Spanish>
-        <Russian>Независимость</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_VICTORY_REVOLUTION_PEDIA</Tag>
-        <English>For over 300 years, the European powers fought for supremacy in the New World. You have the opportunity to intervene decisively. Prove yourself in battles against the Natives and the other colonial powers, stand up to your King and his expeditionary corps in the War of Independence and lead your nation to independence.</English>
-        <French>Pendant plus de 300 ans, les puissances européennes se sont battues pour la suprématie dans le Nouveau Monde. Vous avez la possibilité d'intervenir de manière décisive. Faites vos preuves dans les batailles contre les indigènes et les autres puissances coloniales, tenez tête à votre roi et à son corps expéditionnaire dans la guerre d'indépendance et menez votre nation à l'indépendance.</French>
-        <German>Über 300 Jahre kämpften die Europäischen Mächte um die Vorherrschaft in der Neuen Welt. Ihr habt die Möglichkeit, dabei entscheidend einzugreifen. Bewährt Euch in Kämpfen gegen die Ureinwohner und die anderen Kolonialmächte, setzt Euch im Unabhängigkeitskrieg gegen Euren König und sein Expeditionskorps durch und führt Eure Nation in die Unabhängigkeit.</German>
-        <Italian>Per oltre 300 anni, le potenze europee hanno combattuto per la supremazia nel Nuovo Mondo. Avete l'opportunità di intervenire con decisione. Mettiti alla prova nelle battaglie contro i nativi e le altre potenze coloniali, tieni testa al tuo re e al suo corpo di spedizione nella guerra d'indipendenza e guida la tua nazione all'indipendenza.</Italian>
-        <Spanish>Durante más de 300 años, las potencias europeas lucharon por la supremacía en el Nuevo Mundo. Tienes la oportunidad de intervenir con decisión. Demuestra tu valía en las batallas contra los nativos y las demás potencias coloniales, enfréntate a tu rey y a sus cuerpos expedicionarios en la Guerra de la Independencia y lleva a tu nación a la independencia.</Spanish>
-        <Russian>Более 300 лет европейские державы боролись за господство в Новом Свете. У вас есть возможность решительно вмешаться в данный процесс. Проявите себя в битвах с туземцами и другими колониальными державами, дайте отпор своему Королю и его экспедиционному корпусу в Войне за Независимость своего народа.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_VICTORY_SCORE</Tag>
-        <English>Score</English>
-        <French>Score</French>
-        <German>Punktestand</German>
-        <Italian>A punti</Italian>
-        <Spanish>Por puntos</Spanish>
-        <Russian>Очки</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_VICTORY_SCORE_PEDIA</Tag>
-        <English>????</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_VICTORY_TIME</Tag>
-        <English>Score Victory after Turn Limit</English>
-        <French>Victoire aux points après limite de tours</French>
-        <German>Punktesieg nach Rundenlimit</German>
-        <Italian>Punteggio della vittoria dopo il limite del turno</Italian>
-        <Spanish>Marcar la victoria después del límite de turno</Spanish>
-        <Russian>Победа до истечения лимита ходов</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_VICTORY_TIME_PEDIA</Tag>
-        <English>????</English>
-        <Russian>Победите любым способом до истечения лимита ходов</Russian>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DOMINATION</Tag>
+		<English>Domination</English>
+		<French>Suprématie</French>
+		<German>Vorherrschaft</German>
+		<Italian>Supremazia</Italian>
+		<Spanish>Supremacía</Spanish>
+		<Russian>Доминирование</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_DOMINATION_PEDIA</Tag>
+		<English>In colonial times European powers struggled for supremacy in the New World. This mod, "We The People", explores that colonization history. You will negotiate with or struggle against Native nations and other European colonies, working to establish the most successful nation the New World has ever seen.</English>
+		<French>Dans les temps coloniaux, les puissances européens luttaient pour la suprématie dans le Nouveau Monde. Ce mod, "We The People", vous permet de ressentir quelques aspects de cette Histoire colonial, qui marquera à jamais l'Humanité. Vous combatterez vos rivaux européens et indigènes pour établir la plus grande Nation que le monde n'aura jamais connu.</French>
+		<German>Über 300 Jahre kämpften die Europäischen Mächte um die Vorherrschaft in der Neuen Welt. Dieser Mod, "We The People", erlaubt Ihnen das Erleben der Kolonialisierungsgeschichte. Sie werden mit den Ureinwohnern und anderen europäischen Kolonien verhandeln oder gegen sie kämpfen müssen, während Sie daran arbeiten, die erfolgreichste Nation zu gründen, die die Neue Welt je gesehen hat.</German>
+		<Italian>In epoca coloniale le potenze europee lottavano per la supremazia nel Nuovo Mondo. Questo mod, "We The People", esplora la storia della colonizzazione. Potrete negoziare o lottare contro le nazioni native e altre colonie europee, lavorando per stabilire la nazione di maggior successo che il Nuovo Mondo abbia mai visto.</Italian>
+		<Spanish>En la época colonial, las potencias europeas lucharon por la supremacía en el Nuevo Mundo. Este mod, "We The People", explora esa historia de colonización. Negociarás con las naciones nativas y otras colonias europeas, o lucharás contra ellas, trabajando para establecer la nación más exitosa que el Nuevo Mundo haya visto jamás.</Spanish>
+		<Russian>В колониальные времена европейские державы боролись за господство в Новом Свете. Мод «We The People» исследует историю этой колонизации. Вы будете вести переговоры или бороться против коренных народов и других европейских колоний, работая над созданием самой успешной нации, которую когда-либо видел Новый Свет.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_PRODUCTION</Tag>
+		<English>Industrialisation</English>
+		<French>Industrialisation</French>
+		<German>Industrialisierung</German>
+		<Italian>Industrializzazione</Italian>
+		<Spanish>Industrialización</Spanish>
+		<Russian>Индустриализация</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_PRODUCTION_PEDIA</Tag>
+		<English>Start the Industrial Revolution (production rate of 10 000 yields per turn)</English>
+		<French>Commencer la Révolution Industrielle (taux de production par tour)</French>
+		<German>Leitet die Industrielle Revolution ein (Produktion : 10.000 pro Runde)</German>
+		<Italian>Iniziare la rivoluzione industriale (tasso di produzione per turno)</Italian>
+		<Spanish>Iniciar la revolución industrial (tasa de producción por turno)</Spanish>
+		<Russian>Начать промышленную революцию (производительность 10'000 за ход)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_REVOLUTION</Tag>
+		<English>Independence</English>
+		<French>Indépendance</French>
+		<German>Unabhängigkeit</German>
+		<Italian>Indipendenza</Italian>
+		<Spanish>Independencia</Spanish>
+		<Russian>Независимость</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_REVOLUTION_PEDIA</Tag>
+		<English>For over 300 years, the European powers fought for supremacy in the New World. You have the opportunity to intervene decisively. Prove yourself in battles against the Natives and the other colonial powers, stand up to your King and his expeditionary corps in the War of Independence and lead your nation to independence.</English>
+		<French>Pendant plus de 300 ans, les puissances européennes se sont battues pour la suprématie dans le Nouveau Monde. Vous avez la possibilité d'intervenir de manière décisive. Faites vos preuves dans les batailles contre les indigènes et les autres puissances coloniales, tenez tête à votre roi et à son corps expéditionnaire dans la guerre d'indépendance et menez votre nation à l'indépendance.</French>
+		<German>Über 300 Jahre kämpften die Europäischen Mächte um die Vorherrschaft in der Neuen Welt. Ihr habt die Möglichkeit, dabei entscheidend einzugreifen. Bewährt Euch in Kämpfen gegen die Ureinwohner und die anderen Kolonialmächte, setzt Euch im Unabhängigkeitskrieg gegen Euren König und sein Expeditionskorps durch und führt Eure Nation in die Unabhängigkeit.</German>
+		<Italian>Per oltre 300 anni, le potenze europee hanno combattuto per la supremazia nel Nuovo Mondo. Avete l'opportunità di intervenire con decisione. Mettiti alla prova nelle battaglie contro i nativi e le altre potenze coloniali, tieni testa al tuo re e al suo corpo di spedizione nella guerra d'indipendenza e guida la tua nazione all'indipendenza.</Italian>
+		<Spanish>Durante más de 300 años, las potencias europeas lucharon por la supremacía en el Nuevo Mundo. Tienes la oportunidad de intervenir con decisión. Demuestra tu valía en las batallas contra los nativos y las demás potencias coloniales, enfréntate a tu rey y a sus cuerpos expedicionarios en la Guerra de la Independencia y lleva a tu nación a la independencia.</Spanish>
+		<Russian>Более 300 лет европейские державы боролись за господство в Новом Свете. У вас есть возможность решительно вмешаться в данный процесс. Проявите себя в битвах с туземцами и другими колониальными державами, дайте отпор своему Королю и его экспедиционному корпусу в Войне за Независимость своего народа.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_SCORE</Tag>
+		<English>Score</English>
+		<French>Score</French>
+		<German>Punktestand</German>
+		<Italian>A punti</Italian>
+		<Spanish>Por puntos</Spanish>
+		<Russian>Очки</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_SCORE_PEDIA</Tag>
+		<English>????</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIME</Tag>
+		<English>Score Victory after Turn Limit</English>
+		<French>Victoire aux points après limite de tours</French>
+		<German>Punktesieg nach Rundenlimit</German>
+		<Italian>Punteggio della vittoria dopo il limite del turno</Italian>
+		<Spanish>Marcar la victoria después del límite de turno</Spanish>
+		<Russian>Победа до истечения лимита ходов</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_VICTORY_TIME_PEDIA</Tag>
+		<English>????</English>
+		<Russian>Победите любым способом до истечения лимита ходов</Russian>
+	</TEXT>
 </Civ4GameText>

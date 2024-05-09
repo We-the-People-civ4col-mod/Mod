@@ -28,32 +28,32 @@ class CvDawnOfMan:
 		screen.showScreen(PopupStates.POPUPSTATE_QUEUED, False)
 		screen.showWindowBackground( False )
 		screen.setDimensions(self.X_SCREEN, screen.centerY(self.Y_SCREEN), self.W_SCREEN, self.H_SCREEN)
-		screen.enableWorldSounds( false )
+		screen.enableWorldSounds( False )
 
 		# Create panels
 
 		# Main
 		szMainPanel = "DawnOfManMainPanel"
-		screen.addPanel("DawnBackGroundPanel", "", "", true, true, self.X_MAIN_PANEL - 50, self.Y_MAIN_PANEL - 50, self.W_MAIN_PANEL + 100, self.H_MAIN_PANEL + 100, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel("DawnBackGroundPanel", "", "", True, True, self.X_MAIN_PANEL - 50, self.Y_MAIN_PANEL - 50, self.W_MAIN_PANEL + 100, self.H_MAIN_PANEL + 100, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.addDrawControl("DawnBackGroundPanel", ArtFileMgr.getInterfaceArtInfo("INTERFACE_ROYAL_CHARTER_BG").getPath(), self.X_MAIN_PANEL - 50, self.Y_MAIN_PANEL - 50, self.W_MAIN_PANEL + 100, self.H_MAIN_PANEL + 100, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 	
-		screen.addPanel( szMainPanel, "", "", true, true, self.X_MAIN_PANEL, self.Y_MAIN_PANEL, self.W_MAIN_PANEL, self.H_MAIN_PANEL, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel( szMainPanel, "", "", True, True, self.X_MAIN_PANEL, self.Y_MAIN_PANEL, self.W_MAIN_PANEL, self.H_MAIN_PANEL, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		
 		screen.setButtonGFC("Exit", self.EXIT_TEXT, "", self.X_EXIT, self.Y_EXIT, self.W_EXIT, self.H_EXIT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1, ButtonStyles.BUTTON_STYLE_STANDARD )
 
 		# Top
 		szHeaderPanel = "DawnOfManHeaderPanel"
-		screen.addPanel( szHeaderPanel, "", "", true, false, self.X_HEADER_PANEL, self.Y_HEADER_PANEL, self.W_HEADER_PANEL, self.H_HEADER_PANEL, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel( szHeaderPanel, "", "", True, False, self.X_HEADER_PANEL, self.Y_HEADER_PANEL, self.W_HEADER_PANEL, self.H_HEADER_PANEL, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		# Bottom
 		szTextPanel = "DawnOfManTextPanel"
-		screen.addPanel( szTextPanel, "", "", true, true, self.X_TEXT_PANEL, self.Y_TEXT_PANEL, self.W_TEXT_PANEL, self.H_TEXT_PANEL, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel( szTextPanel, "", "", True, True, self.X_TEXT_PANEL, self.Y_TEXT_PANEL, self.W_TEXT_PANEL, self.H_TEXT_PANEL, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		# Add contents
 
 		# Leaderhead graphic
 		szLeaderPanel = "DawnOfManLeaderPanel"
-		screen.addPanel( szLeaderPanel, "", "", true, false, self.X_LEADER_ICON - 3, self.Y_LEADER_ICON - 5, self.W_LEADER_ICON + 6, self.H_LEADER_ICON + 8, PanelStyles.PANEL_STYLE_DAWNTOP, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		screen.addPanel( szLeaderPanel, "", "", True, False, self.X_LEADER_ICON - 3, self.Y_LEADER_ICON - 5, self.W_LEADER_ICON + 6, self.H_LEADER_ICON + 8, PanelStyles.PANEL_STYLE_DAWNTOP, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.addLeaderheadGFC("LeaderHead", self.player.getLeaderType(), AttitudeTypes.ATTITUDE_PLEASED, self.X_LEADER_ICON + 5, self.Y_LEADER_ICON + 5, self.W_LEADER_ICON - 10, self.H_LEADER_ICON - 10, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		szNameText = u"<font=4b>"
@@ -75,7 +75,7 @@ class CvDawnOfMan:
 		screen.addMultilineText( "StartingUnitText", localText.getText("TXT_KEY_DAWN_OF_MAN_SCREEN_STARTING_UNITS", ()), self.X_LEADER_ICON, self.Y_STATS_TEXT + 5 + self.H_CIV_PANEL + 104, self.W_STATS_TEXT - (self.iMarginSpace * 3), self.H_STATS_TEXT - (self.iMarginSpace * 4), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 		# Fancy icon things
-		### TAC Ermittlung König ein paar Zeilen nach oben verschoben
+		### TAC Ermittlung Kï¿½nig ein paar Zeilen nach oben verschoben
 		eKingPlayer = self.player.getParent()
 		if (eKingPlayer != PlayerTypes.NO_PLAYER):
 			kingPlayer = gc.getPlayer(eKingPlayer)
@@ -89,7 +89,7 @@ class CvDawnOfMan:
 		szDawnTitle = u"<font=4>" + localText.getText("TXT_KEY_ROYAL_CHARTER_TITLE", ()).upper() + u"</font>"
 		screen.setLabel("DawnTitle", "Background", szDawnTitle, CvUtil.FONT_CENTER_JUSTIFY, self.X_TEXT_PANEL + (self.W_TEXT_PANEL / 2), self.Y_TEXT_PANEL + 15, -2.0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
-		bodyString = localText.getText("TXT_KEY_ROYAL_CHARTER_BODY_2", (CyGameTextMgr().getTimeStr(gc.getGame().getGameTurn(), false), kingPlayer.getCivilizationShortDescriptionKey(), self.player.getNameKey()))
+		bodyString = localText.getText("TXT_KEY_ROYAL_CHARTER_BODY_2", (CyGameTextMgr().getTimeStr(gc.getGame().getGameTurn(), False), kingPlayer.getCivilizationShortDescriptionKey(), self.player.getNameKey()))
 		screen.addMultilineText( "BodyText", bodyString, self.X_TEXT_PANEL + self.iMarginSpace, self.Y_TEXT_PANEL + self.iMarginSpace + self.iTEXT_PANEL_MARGIN, self.W_TEXT_PANEL - (self.iMarginSpace * 2), self.H_TEXT_PANEL - (self.iMarginSpace * 2) - 75, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 		pActivePlayer = gc.getPlayer(CyGame().getActivePlayer())
@@ -103,7 +103,7 @@ class CvDawnOfMan:
 		return
 
 	def onClose(self):
-		CyInterface().setSoundSelectionReady(true)
+		CyInterface().setSoundSelectionReady(True)
 		return 0
 
 	def calculateSizesAndPositions(self):
@@ -145,7 +145,7 @@ class CvDawnOfMan:
 
 		self.Y_LEADER_TITLE_TEXT = self.Y_HEADER_PANEL + self.iMarginSpace + 6
 		self.W_LEADER_TITLE_TEXT = self.W_HEADER_PANEL / 3 + 50
-		### TAC +20 zu H_LEADER_TITLE_TEXT addiert, um Platz für 3 Leader Traits zu schaffen
+		### TAC +20 zu H_LEADER_TITLE_TEXT addiert, um Platz fï¿½r 3 Leader Traits zu schaffen
 		self.H_LEADER_TITLE_TEXT = self.H_HEADER_PANEL / 3 + 20
 
 		self.X_STATS_TEXT = self.X_FANCY_ICON1

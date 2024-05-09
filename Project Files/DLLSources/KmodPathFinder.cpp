@@ -7,21 +7,7 @@
 #include "CvSelectionGroup.h"
 #include "CvMap.h"
 
-#define MULTICORE
-
-#ifdef MULTICORE
-
-#pragma push_macro("free")  
-#pragma push_macro("new")  
-#undef free
-#undef new
-#include "tbb/parallel_for.h"
-#include "tbb/blocked_range.h"
-#include "tbb/cache_aligned_allocator.h"
-#pragma pop_macro("new")  
-#pragma pop_macro("free")  
-
-#endif
+#include "TBB.h"
 
 int KmodPathFinder::admissible_scaled_weight = 1;
 int KmodPathFinder::admissible_base_weight = 1;
@@ -373,7 +359,11 @@ struct ProcesNodesOutput
 	// A list of nodes we want to explore, the order is not important but the index will have to match with the slots below
 	std::vector<FAStarNode*> child_nodes(NUM_DIRECTION_TYPES);
 	// We maintain an array for output data with a slot per viable child node to avoid possible contention i.e. push_back 
+#ifdef MULTICORE
 	typedef std::vector<ProcesNodesOutput, tbb::cache_aligned_allocator<ProcesNodesOutput> > ProcesNodesOutputVec;
+#else
+	typedef std::vector<ProcesNodesOutput> ProcesNodesOutputVec;
+#endif
 	// Allocated once and then cleared to avoid allocations in the inner loop
 	ProcesNodesOutputVec pno(NUM_DIRECTION_TYPES);
 
@@ -527,7 +517,8 @@ bool KmodPathFinder::ProcessNode()
 	// Execute parallel work
 	ProcessNodesInternal pni(parent_node, child_nodes, settings, dest_x, dest_y, pno);
 	const int grainSize = 2; // 1 seems to result in too little work per task
-	tbb::parallel_for(tbb::blocked_range<size_t>(0, child_nodes.size(), grainSize), pni, tbb::auto_partitioner());
+	const tbb::blocked_range<size_t> range = tbb::blocked_range<size_t>(0, child_nodes.size(), grainSize);
+	Threads::parallel_for(range, pni, tbb::auto_partitioner());
 
 	for (size_t i=0; i<pno.size(); i++)
 	{

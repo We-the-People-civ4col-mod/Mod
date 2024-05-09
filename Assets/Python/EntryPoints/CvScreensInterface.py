@@ -40,6 +40,8 @@ import CvPediaHistory
 import CvWorldBuilderScreen
 import CvWorldBuilderDiplomacyScreen
 
+import xmlEditorScreen
+
 import CvDebugTools
 
 import CvUtil
@@ -176,6 +178,15 @@ victoryScreen = CvVictoryScreen.CvVictoryScreen()
 def showVictoryScreen(argsList):
 	if (-1 != CyGame().getActivePlayer()):
 		victoryScreen.interfaceScreen()
+
+### XML editor - start - Nightinggale
+xmlEditor = xmlEditorScreen.xmlEditorScreen()
+def showXmlEditor():
+	xmlEditor.interfaceScreen()
+
+def editorScreenDragOn(argsList):
+	xmlEditor.handleDrag(argsList[0], argsList[1], argsList[2], argsList[3])
+### XML editor - end - Nightinggale
 
 #################################################
 ## Civilopedia
@@ -365,7 +376,7 @@ def WorldBuilderOnAdvancedStartBrushSelected(argsList):
 	iList,iIndex,iTab = argsList;
 	print("WB Advanced Start brush selected, iList=%d, iIndex=%d, type=%d" %(iList,iIndex,iTab))
 	if (iTab == worldBuilderScreen.m_iASCityTabID and iList == worldBuilderScreen.m_iASAutomateListID):
-		CyMessageControl().sendAdvancedStartAction(AdvancedStartActionTypes.ADVANCEDSTARTACTION_AUTOMATE, worldBuilderScreen.m_iCurrentPlayer, -1, -1, -1, true)
+		CyMessageControl().sendAdvancedStartAction(AdvancedStartActionTypes.ADVANCEDSTARTACTION_AUTOMATE, worldBuilderScreen.m_iCurrentPlayer, -1, -1, -1, True)
 	if (worldBuilderScreen.setCurrentAdvancedStartIndex(iIndex)):
 		if (worldBuilderScreen.setCurrentAdvancedStartList(iList)):
 			return 1
@@ -707,7 +718,7 @@ def featAccomplishedOnClickedCallback(argsList):
 			CyMessageControl().sendPlayerAction(CyGlobalContext().getGame().getActivePlayer(), PlayerActionTypes.PLAYER_ACTION_FEAT, iData1, 1, -1);
 	elif iData1 == FeatTypes.FEAT_GOTO_EUROPE:
 		if (iButtonId == 0):
-			CyMessageControl().sendDoCommand(iData2, CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, -1, false);
+			CyMessageControl().sendDoCommand(iData2, CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, -1, False);
 		elif (iButtonId == 2):
 			CyMessageControl().sendPlayerAction(CyGlobalContext().getGame().getActivePlayer(), PlayerActionTypes.PLAYER_ACTION_FEAT, iData1, 1, -1);
 	elif iData1 == FeatTypes.FEAT_EUROPE_SHIPS:
@@ -717,7 +728,7 @@ def featAccomplishedOnClickedCallback(argsList):
 			CyMessageControl().sendPlayerAction(CyGlobalContext().getGame().getActivePlayer(), PlayerActionTypes.PLAYER_ACTION_FEAT, iData1, 1, -1);
 	elif iData1 == FeatTypes.FEAT_CITY_SCREEN:
 		if (iButtonId == 1):
-			CyMessageControl().sendPlayerOption(PlayerOptionTypes.PLAYEROPTION_TUTORIAL, false)
+			CyMessageControl().sendPlayerOption(PlayerOptionTypes.PLAYEROPTION_TUTORIAL, False)
 
 def featAccomplishedOnFocusCallback(argsList):
 	iData1 = argsList[0]
@@ -766,6 +777,7 @@ HandleMouseoverMap = {  EUROPE_SCREEN : europeScreen,
 				# TAC - Trade Routes Advisor - koma13 - START
 						TRADE_ROUTES_ADVISOR : tradeRoutesAdvisor,
 				# TAC - Trade Routes Advisor - koma13 - END
+						XML_EDITOR : xmlEditor,
 				}
 #######################################################################################
 ## Handle Input Map
@@ -817,6 +829,7 @@ HandleInputMap = {  MAIN_INTERFACE : mainInterface,
 				# TAC - Trade Routes Advisor - koma13 - START
 					TRADE_ROUTES_ADVISOR : tradeRoutesAdvisor,
 				# TAC - Trade Routes Advisor - koma13 - END
+					XML_EDITOR : xmlEditor,
 				}
 
 #######################################################################################

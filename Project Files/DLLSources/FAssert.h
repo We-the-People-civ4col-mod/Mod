@@ -11,20 +11,44 @@
 #endif
 
 #ifdef FASSERT_ENABLE
+struct AssertCallerData
+{
+	const char* file;
+	const unsigned int line;
+	const char* function;
+
+	AssertCallerData(const char* fileAug, int lineAug, const char* functionAug)
+		: file(fileAug)
+		, line(lineAug)
+		, function(functionAug)
+	{}
+};
+
+#define CREATE_ASSERT_DATA AssertCallerData(__FILE__, __LINE__, __FUNCTION__)
+
+#else
+struct AssertCallerData {};
+#define CREATE_ASSERT_DATA AssertCallerData()
+#endif
+
+#ifdef FASSERT_ENABLE
 
 #ifdef WIN32
 
 bool FAssertDlg(const char*, const char*, const char*, unsigned int,
 	/*  advc.006f (from C2C): const char* param added. And changed the
 	two locations below so that __FUNCTION__ is passed. */
-	const char*, bool&);
+	const char*,
+	// add arguments to forward caller location
+	const char*, unsigned int, const char*,
+	bool&);
 
 #define FAssert( expr )	\
 { \
 	static bool bIgnoreAlways = false; \
 	if( !bIgnoreAlways && !(expr) ) \
 { \
-	if( FAssertDlg( #expr, 0, __FILE__, __LINE__, __FUNCTION__, bIgnoreAlways ) ) \
+	if( FAssertDlg( #expr, 0, __FILE__, __LINE__, __FUNCTION__, NULL, 0, NULL, bIgnoreAlways ) ) \
 { _asm int 3 } \
 } \
 }
@@ -34,7 +58,27 @@ bool FAssertDlg(const char*, const char*, const char*, unsigned int,
 	static bool bIgnoreAlways = false; \
 	if( !bIgnoreAlways && !(expr) ) \
 { \
-	if( FAssertDlg( #expr, msg, __FILE__, __LINE__, __FUNCTION__, bIgnoreAlways ) ) \
+	if( FAssertDlg( #expr, msg, __FILE__, __LINE__, __FUNCTION__, NULL, 0, NULL, bIgnoreAlways ) ) \
+{ _asm int 3 } \
+} \
+}
+
+#define FAssertWithCaller( data, expr )	\
+{ \
+	static bool bIgnoreAlways = false; \
+	if( !bIgnoreAlways && !(expr) ) \
+{ \
+	if( FAssertDlg( #expr, 0, __FILE__, __LINE__, __FUNCTION__, data.file, data.line, data.function, bIgnoreAlways ) ) \
+{ _asm int 3 } \
+} \
+}
+
+#define FAssertMsgWithCaller( data, expr, msg ) \
+{ \
+	static bool bIgnoreAlways = false; \
+	if( !bIgnoreAlways && !(expr) ) \
+{ \
+	if( FAssertDlg( #expr, msg, __FILE__, __LINE__, __FUNCTION__, data.file, data.line, data.function, bIgnoreAlways ) ) \
 { _asm int 3 } \
 } \
 }
@@ -72,6 +116,8 @@ bool FAssertDlg(const char*, const char*, const char*, unsigned int,
 // K-Mod:
 #define FAssertBounds(lower,upper,index) (void)0
 
+#define FAssertWithCaller( data, expr )
+#define FAssertMsgWithCaller( data, expr, msg )
 #endif
 
 #endif // FASSERT_H

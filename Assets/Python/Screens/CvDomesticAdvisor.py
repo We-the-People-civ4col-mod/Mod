@@ -66,7 +66,7 @@ class CvDomesticAdvisor:
 #VET NewCapacity - begin 1/4
 		# WTP ray, careful this does not exist anymore, we set it to true
 		# self.bNewCapacity = (gc.getDefineINT("NEW_CAPACITY") > 0)
-		self.bNewCapacity = true
+		self.bNewCapacity = True
 #VET NewCapacity - end 1/4
 		## R&R, Robert Surcouf,  Domestic Advisor Screen - Start
 		#self.nTableWidth = self.nScreenWidth * 19 / 20
@@ -259,12 +259,12 @@ class CvDomesticAdvisor:
 
 		# Building Headers
 		for iSpecial in range(gc.getNumSpecialBuildingInfos()):
-			if (iSpecial != gc.getInfoTypeForString("SPECIALBUILDING_BELLS")):
+			if iSpecial != SpecialBuildingTypes.SPECIALBUILDING_BELLS:
 				iBuildingOnPage = (iSpecial-1) % self.MAX_BUILDINGS_IN_A_PAGE
 				iPage = (iSpecial-1) // self.MAX_BUILDINGS_IN_A_PAGE
 				self.createSubpage(self.BUILDING_STATE, iPage)
 				
-				if (iSpecial == gc.getInfoTypeForString("SPECIALBUILDING_WHALE_OIL")):
+				if iSpecial == SpecialBuildingTypes.SPECIALBUILDING_WHALE_OIL:
 					screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getYieldInfo(YieldTypes.YIELD_WHALE_OIL).getChar()) + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )				
 				else:
 					screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getSpecialBuildingInfo(iSpecial).getChar())         + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )
@@ -512,7 +512,7 @@ class CvDomesticAdvisor:
 			end = min((self.MAX_BUILDINGS_IN_A_PAGE * (self.CurrentPage + 1)) + 1, gc.getNumSpecialBuildingInfos()-1)
 		
 			for iSpecial in range(start, end):
-				if (iSpecial != gc.getInfoTypeForString("SPECIALBUILDING_BELLS")):
+				if (iSpecial != SpecialBuildingTypes.SPECIALBUILDING_BELLS):
 					iIconBuilding = -1
 					for iBuilding in range(gc.getNumBuildingInfos()):
 						if gc.getBuildingInfo(iBuilding).getSpecialBuildingType() == iSpecial:
@@ -553,7 +553,7 @@ class CvDomesticAdvisor:
 		
 		## R&R, Robert Surcouf, Domestic Market display START
 		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 2): 
-			iStartYield=gc.getDefineINT("DOMESTIC_MARKET_SCREEN_START_YIELD_ID")
+			iStartYield=1 #gc.getDefineINT("DOMESTIC_MARKET_SCREEN_START_YIELD_ID")
 			for iYield in range(iStartYield, YieldTypes.YIELD_LUXURY_GOODS + 1):
 				#screen.setTableInt("GeneralStatePage3ListBackground", iYield-iStartYield + 2, i, "<font=2>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "/"+ "<color=0,255,0>" +  unicode(pLoopCity.getYieldDemand(iYield)) + "</color>" "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 				# CBM 0.8.020 display of quantity available in city - start 
@@ -771,30 +771,30 @@ class CvDomesticAdvisor:
 		#Get a list of the Players Cities
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		self.Cities = []
-		(pLoopCity, iter) = player.firstCity(false)
+		(pLoopCity, iter) = player.firstCity(False)
 		while(pLoopCity):
 			self.Cities.append(pLoopCity)
-			(pLoopCity, iter) = player.nextCity(iter, false)
+			(pLoopCity, iter) = player.nextCity(iter, False)
 
 		self.Routes = []
 		for iRoute in range(player.getNumTradeRoutes()):
 			self.Routes.append(player.getTradeRouteByIndex(iRoute))
 
 		self.Transports = []
-		SelectionGroup, Iterator = player.firstSelectionGroup(false)
+		SelectionGroup, Iterator = player.firstSelectionGroup(False)
 		while (SelectionGroup != None):
-			if (SelectionGroup.canAssignTradeRoute(-1, false)):
+			if (SelectionGroup.canAssignTradeRoute(-1, False)):
 				self.Transports.append(SelectionGroup)
-			SelectionGroup, Iterator = player.nextSelectionGroup(Iterator, false)
+			SelectionGroup, Iterator = player.nextSelectionGroup(Iterator, False)
 
 		self.RouteValidity = []
 		for iTransport in range(len(self.Transports)):
 			Transport = self.Transports[iTransport]
 			RouteValidArray = []
-			bReusePath = false
+			bReusePath = False
 			for Route in self.Routes:
 				RouteValidArray.append(Transport.canAssignTradeRoute(Route.getID(), bReusePath))
-				bReusePath = true
+				bReusePath = True
 			self.RouteValidity.append(RouteValidArray)
 		
 		
@@ -806,10 +806,10 @@ class CvDomesticAdvisor:
 			ePlayer = gc.getPlayer(iLoopPlayer)
 			#if (player.isAlive() and player.isNative() and (gc.getTeam(player.getTeam()).isHasMet(activePlayer.getTeam()))):
 			if (ePlayer.isAlive() and ePlayer.isNative()):
-				(pLoopCity, iter) = ePlayer.firstCity(false)
+				(pLoopCity, iter) = ePlayer.firstCity(False)
 				while(pLoopCity):
 					self.NativeCities.append(pLoopCity)
-					(pLoopCity, iter) = ePlayer.nextCity(iter, false)
+					(pLoopCity, iter) = ePlayer.nextCity(iter, False)
 		## R&R, Robert Surcouf,  Domestic Advisor Screen - End
 		return self.NativeCities
 		
@@ -881,7 +881,7 @@ class CvDomesticAdvisor:
 					screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 					screen.hideScreen()
 
-					CyInterface().selectCity(gc.getPlayer(inputClass.getData1()).getCity(inputClass.getData2()), true);
+					CyInterface().selectCity(gc.getPlayer(inputClass.getData1()).getCity(inputClass.getData2()), True);
 
 					popupInfo = CyPopupInfo()
 					popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_PYTHON_SCREEN)
@@ -996,7 +996,7 @@ class CvDomesticAdvisor:
 			elif iData1 == 10001:
 				unit = gc.getActivePlayer().getUnit(iData2)
 				if not unit.isNone():
-					return CyGameTextMgr().getSpecificUnitHelp(unit, true, false)
+					return CyGameTextMgr().getSpecificUnitHelp(unit, True, False)
 			elif iData1 == self.GAME_FONT_STATE and iData1 != -1:
 				return "DEBUG: GameFont"
 			elif iData1 == self.TERRAIN_STATE and iData1 != -1:

@@ -204,6 +204,72 @@
 		<InterfaceVisibilityType>INTERFACE_HIDE</InterfaceVisibilityType>
 		<InterfaceVisibilityType>INTERFACE_HIDE_ALL</InterfaceVisibilityType>
 	</InterfaceVisibilityTypes>
+	<ButtonPopupTypes>
+		<!-- R&R, Robert Surcouf, Custom House Popup-Screen START -->
+		<ButtonPopupType>BUTTONPOPUP_CUSTOM_HOUSE</ButtonPopupType>
+		<ButtonPopupType>BUTTONPOPUP_DOMESTIC_MARKET</ButtonPopupType>
+		<!-- R&R, Robert Surcouf, Custom House Popup-Screen END -->
+		<ButtonPopupType>BUTTONPOPUP_PURCHASE_AFRICA_UNIT</ButtonPopupType> <!-- TRIANGLETRADE 10/15/08 by DPII -->
+		<ButtonPopupType>BUTTONPOPUP_PURCHASE_PORT_ROYAL_UNIT</ButtonPopupType> <!-- R&R, ray, Port Royal -->
+		<ButtonPopupType>BUTTONPOPUP_ACHIEVEMENTS</ButtonPopupType> <!-- PatchMod: Achievements -->
+		<ButtonPopupType>BUTTONPOPUP_GOTO_MENU</ButtonPopupType> <!-- TAC - Goto Menu - koma13 -->
+		<ButtonPopupType>BUTTONPOPUP_TEACHER_LIST</ButtonPopupType> <!-- Teacher List - Nightinggale -->
+		<ButtonPopupType>BUTTONPOPUP_SAVE_TRADEGROUP</ButtonPopupType> <!-- R&R mod, vetiarvind, trade groups -->
+		<ButtonPopupType>BUTTONPOPUP_CHOOSE_CITY_PLOT_YIELD</ButtonPopupType>
+		<ButtonPopupType>BUTTONPOPUP_NO_EVENT_ON_OK_CLICKED</ButtonPopupType> <!-- use info.setButtonPopupType to this to avoid the ok button from doing anything -->
+		<ButtonPopupType>BUTTONPOPUP_START_GAME_CHECK_FAILED</ButtonPopupType>
+		<!-- OOS hunting tools START -->
+		<ButtonPopupType>BUTTONPOPUP_DESYNC_LOG_COMPLETE</ButtonPopupType>
+		<ButtonPopupType>BUTTONPOPUP_NETWORK_OOS_MENU</ButtonPopupType>
+		<!-- OOS hunting tools END -->
+	</ButtonPopupTypes>
+	<WidgetTypes>
+		<!-- vanilla widgets are script inserted to ensure exe compatibility -->
+		<!-- only add non-vanilla widgets here                               -->
+		<WidgetType>WIDGET_CONDENSED_YIELD_IMPORT_EXPORT</WidgetType> <!-- R&R mod, vetiarvind, max yield import limit -->
+		<!-- R&R, Robert Surcouf, Custom House Popup-Screen START -->
+		<WidgetType>WIDGET_CUSTOM_HOUSE</WidgetType>
+		<WidgetType>WIDGET_DOMESTIC_MARKET</WidgetType>
+		<!-- R&R, Robert Surcouf, Custom House Popup-Screen END -->
+		<WidgetType>WIDGET_CITY_PLOT_INFO</WidgetType> <!-- city plot mouse over help - inaiwae -->
+		<WidgetType>WIDGET_MOVE_CARGO_TO_TRANSPORT_AFRICA</WidgetType> <!-- R&R, ray, Africa -->
+		<WidgetType>WIDGET_SHIP_CARGO_AFRICA</WidgetType> <!-- R&R, ray, Africa -->
+		<WidgetType>WIDGET_DOCK_AFRICA</WidgetType> <!-- TRIANGLETRADE 10/28/08 by DPII -->
+		<WidgetType>WIDGET_MOVE_CARGO_TO_TRANSPORT_PORT_ROYAL</WidgetType> <!-- R&R, ray, Port Royal -->
+		<WidgetType>WIDGET_SHIP_CARGO_PORT_ROYAL</WidgetType> <!-- R&R, ray, Port Royal -->
+		<WidgetType>WIDGET_DOCK_PORT_ROYAL</WidgetType> <!-- R&R, ray, Port Royal -->
+		<!-- Androrc Multiple Professions per Building -->
+		<WidgetType>WIDGET_HELP_TWO_YIELDS</WidgetType>
+		<WidgetType>WIDGET_ASSIGN_CITIZEN_TO_BUILDING</WidgetType>
+		<!-- Androrc End -->
+		<WidgetType>WIDGET_TEACHER_LIST</WidgetType> <!-- Teacher List - Nightinggale -->
+		<WidgetType>WIDGET_HELP_TEACHER_UNIT</WidgetType> <!-- Teacher List - Nightinggale -->
+		<WidgetType>WIDGET_CITY_CENTER_PLOT</WidgetType>
+		<WidgetType>WIDGET_HELP_TEXT</WidgetType>
+		<WidgetType>WIDGET_NETWORK_DESYNC</WidgetType>
+		<WidgetType>WIDGET_JUMP_TO_SETTLEMENT</WidgetType>
+		<WidgetType>WIDGET_MISSION_CHAR</WidgetType>
+		<WidgetType>WIDGET_HELP_HARBOUR_SYSTEM</WidgetType> <!-- WTP, ray, Widgets for Harbour System and Barracks System -->
+		<WidgetType>WIDGET_HELP_BARRACKS_SYSTEM</WidgetType> <!-- WTP, ray, Widgets for Harbour System and Barracks System -->
+		<WidgetType>WIDGET_HELP_SHOW_OR_HIDE_YIELDS</WidgetType>
+		<WidgetType>WIDGET_HELP_TAX_CALCULATION</WidgetType>
+		<WidgetType>WIDGET_HELP_DOMESTIC_DEMAND_ADVISOR</WidgetType>
+
+		<!-- xml editor start -->
+		<WidgetType>WIDGET_XML_EDITOR</WidgetType>
+		<WidgetType>WIDGET_XML_EDITOR_BOX</WidgetType>
+		<WidgetType>WIDGET_XML_OK</WidgetType>
+		<WidgetType>WIDGET_XML_CANCEL</WidgetType>
+		<WidgetType>WIDGET_XML_DELETE</WidgetType>
+		<WidgetType>WIDGET_XML_CLONE</WidgetType>
+		<WidgetType>WIDGET_XML_MENU_ITEM</WidgetType>
+		<!-- needs to be in order down, zero, up because it makes widget - zero = +1 (up) or -1 (down) -->
+		<WidgetType>WIDGET_XML_DOWN</WidgetType>
+		<WidgetType>WIDGET_XML_ZERO</WidgetType>
+		<WidgetType>WIDGET_XML_UP</WidgetType>
+		<!-- xml editor end -->
+
+	</WidgetTypes>
 	<FontSymbols>
 		<FontSymbol>HAPPY_CHAR</FontSymbol>
 		<FontSymbol>UNHAPPY_CHAR</FontSymbol>

@@ -2,6 +2,9 @@
 #include "CyArtFileMgr.h"
 #include "CvInfos.h"
 
+#include <boost/python/class.hpp>
+namespace python = boost::python;
+
 //
 // published python interface for CyArea
 //

@@ -1489,11 +1489,10 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 			CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 			while(pUnitNode != NULL)
 			{
-				CvUnit* pHeadUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = pPlot->nextUnitNode(pUnitNode);
+				CvUnit* pHeadUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 				// is this unit the head of a group, not cargo, and visible?
-				if (pHeadUnit && pHeadUnit->isGroupHead() && !pHeadUnit->isCargo() && !pHeadUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
+				if (pHeadUnit != NULL && pHeadUnit->isGroupHead() && !pHeadUnit->isCargo() && !pHeadUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
 				{
 					// head unit name and unitai
 					szString.append(CvWString::format(SETCOLR L"%s" ENDCOLR, 255,190,0,255, pHeadUnit->getName().GetCString()));
@@ -1523,8 +1522,7 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 						CLLNode<IDInfo>* pUnitNode = pHeadGroup->headUnitNode();
 						while (pUnitNode != NULL)
 						{
-							CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-							pUnitNode = pHeadGroup->nextUnitNode(pUnitNode);
+							CvUnit* pLoopUnit = pHeadGroup->getUnitNodeLoop(pUnitNode);
 
 							if (pLoopUnit != NULL)
 							{
@@ -1635,11 +1633,10 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 					CLLNode<IDInfo>* pUnitNode2 = pPlot->headUnitNode();
 					while(pUnitNode2 != NULL)
 					{
-						CvUnit* pCargoUnit = ::getUnit(pUnitNode2->m_data);
-						pUnitNode2 = pPlot->nextUnitNode(pUnitNode2);
+						CvUnit* pCargoUnit = pPlot->getUnitNodeLoop(pUnitNode2);
 
 						// is this unit visible?
-						if (pCargoUnit && (pCargoUnit != pHeadUnit) && !pCargoUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
+						if (pCargoUnit != NULL && (pCargoUnit != pHeadUnit) && !pCargoUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
 						{
 							// is this unit in cargo of the headunit?
 							if (pCargoUnit->getTransportUnit() == pHeadUnit)
@@ -1667,11 +1664,10 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 					CLLNode<IDInfo>* pUnitNode3 = pPlot->headUnitNode();
 					while(pUnitNode3 != NULL)
 					{
-						CvUnit* pUnit = ::getUnit(pUnitNode3->m_data);
-						pUnitNode3 = pPlot->nextUnitNode(pUnitNode3);
+						CvUnit* pUnit = pPlot->getUnitNodeLoop(pUnitNode3);
 
 						// is this unit not head, in head's group and visible?
-						if (pUnit && (pUnit != pHeadUnit) && (pUnit->getGroupID() == pHeadUnit->getGroupID()) && !pUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
+						if (pUnit != NULL && (pUnit != pHeadUnit) && (pUnit->getGroupID() == pHeadUnit->getGroupID()) && !pUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
 						{
 							FAssertMsg(!pUnit->isCargo(), "unit is cargo but head unit is not cargo");
 							// name and unitai
@@ -1694,11 +1690,10 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 							CLLNode<IDInfo>* pUnitNode4 = pPlot->headUnitNode();
 							while(pUnitNode4 != NULL)
 							{
-								CvUnit* pCargoUnit = ::getUnit(pUnitNode4->m_data);
-								pUnitNode4 = pPlot->nextUnitNode(pUnitNode4);
+								CvUnit* pCargoUnit = pPlot->getUnitNodeLoop(pUnitNode4);
 
 								// is this unit visible?
-								if (pCargoUnit && (pCargoUnit != pUnit) && !pCargoUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
+								if (pCargoUnit != NULL && (pCargoUnit != pUnit) && !pCargoUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
 								{
 									// is this unit in cargo of unit?
 									if (pCargoUnit->getTransportUnit() == pUnit)
@@ -1776,10 +1771,9 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 		CLLNode<IDInfo>* pUnitNode5 = pPlot->headUnitNode();
 		while(pUnitNode5 != NULL)
 		{
-			CvUnit* pUnit = ::getUnit(pUnitNode5->m_data);
-			pUnitNode5 = pPlot->nextUnitNode(pUnitNode5);
+			CvUnit* pUnit =  pPlot->getUnitNodeLoop(pUnitNode5);
 
-			if (pUnit && !pUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
+			if (pUnit != NULL && !pUnit->isInvisible(GC.getGameINLINE().getActiveTeam(), GC.getGameINLINE().isDebugMode()))
 			{
 				++iNumVisibleUnits;
 			}
@@ -2535,6 +2529,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 	if ((gDLL->getChtLvl() > 0) && (bCtrl || bAlt || bShift))
 	{
 		szTempBuffer.Format(L"\n(%d, %d) (Oc: %d  / Cr: %d)", pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getDistanceToOcean(), pPlot->getCrumbs());
+		//szTempBuffer.Format(L"\nNumAIUnits: %d", pPlot->area()->getNumAIUnits(GC.getGameINLINE().getActivePlayer(), UNITAI_TRANSPORT_SEA));
 		szString.append(szTempBuffer);
 	}
 
@@ -3015,11 +3010,11 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 				}
 			}
 
-			// WTP, check Harbour System also for Monasteries, Forts and Canals - START
+			// WTP, check Harbour System also for Forts and Canals - START
 			if (GLOBAL_DEFINE_ENABLE_NEW_HARBOUR_SYSTEM)
 			{
 				const CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
-				if(kImprovement.isFort() || kImprovement.isMonastery() || kImprovement.isCanal())
+				if(kImprovement.isFort() || kImprovement.isCanal())
 				{
 					// we check how many Units that place would allow
 					int iImprovementHarbourSpace = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
@@ -3033,7 +3028,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 					szString.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", iImprovementHarbourSpace, GC.getSymbolID(ANCHOR_CHAR)));
 				}
 			}
-			// WTP, check Harbour System also for Monasteries, Forts and Canals - END
+			// WTP, check Harbour System also for Forts and Canals - END
 
 			// WTP, check Barracks System also for Monasteries and Forts - START
 			if (GLOBAL_DEFINE_ENABLE_NEW_BARRACKS_SYSTEM)
@@ -5489,7 +5484,7 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	if (NO_PROMOTION != kUnitInfo.getLeaderPromotion())
 	{
 		szBuffer.append(CvWString::format(L"%s%c%s", NEWLINE, GC.getSymbolID(BULLET_CHAR), gDLL->getText("TXT_KEY_PROMOTION_WHEN_LEADING").GetCString()));
-		parsePromotionHelp(szBuffer, (PromotionTypes)kUnitInfo.getLeaderPromotion(), L"\n   ");
+		parsePromotionHelp(szBuffer, kUnitInfo.getLeaderPromotion(), L"\n   ");
 	}
 
 	if (kUnitInfo.getCargoSpace() > 0)
@@ -6471,7 +6466,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	int iLast;
 	int iI;
 
-	if (NO_BUILDING == eBuilding)
+	if (NO_BUILDING == eBuilding || eBuilding >= NUM_BUILDING_TYPES)
 	{
 		return;
 	}
@@ -7410,7 +7405,8 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		// WTP, ray, Not allowed next to itself - END
 
 		//WTP, ray, Large Rivers - START
-		if (info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
+		//Not all improvements on Large Rivers allow crossing anymore, modifying to be more specific. -Dyllin Jan 2024
+		if (strcmp("IMPROVEMENT_RAFT_STATION", info.getType()) == 0)
 		{
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_ALLOWS_CROSSING_OF_LARGE_RIVERS"));
@@ -7506,22 +7502,22 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_MONASTERY_FEATURES"));
 		// WTP, ray, Improvements give Bonus to their City - START
-		int iMonsasteryCrossBonusModifier = GC.getDefineINT("MONASTERY_CROSSES_MODIFIER_FOR_CITY");
+		int iMonasteryCrossBonusModifier = GC.getDefineINT("MONASTERY_CROSSES_MODIFIER_FOR_CITY");
 
 		// we double if it is second level improvement, which we know if it has no more upgrade
 		if (info.getImprovementUpgrade() == NO_IMPROVEMENT)
 		{
-			iMonsasteryCrossBonusModifier = iMonsasteryCrossBonusModifier * 2;
+			iMonasteryCrossBonusModifier = iMonasteryCrossBonusModifier * 2;
 		}
 
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_MONASTERY_CROSSS_MODIFIER_IF_WORKED", iMonsasteryCrossBonusModifier, GC.getYieldInfo(YIELD_CROSSES).getChar()));
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_MONASTERY_CROSS_MODIFIER_IF_WORKED", iMonasteryCrossBonusModifier, GC.getYieldInfo(YIELD_CROSSES).getChar()));
 		// WTP, ray, Improvements give Bonus to their City - END
 	}
 	// R&R, ray, Monasteries and Forts - END
 
-	// WTP, check Harbour System also for Monasteries, Forts and Canals - START
-	if(info.isFort() || info.isMonastery() || info.isCanal())
+	// WTP, check Harbour System also for Forts and Canals - START
+	if(info.isFort() || info.isCanal())
 	{
 		// we check how many Units that place would allow
 		int iImprovementHarbourSpace = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
@@ -7534,7 +7530,7 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", iImprovementHarbourSpace, GC.getSymbolID(ANCHOR_CHAR)));
 	}
-	// WTP, check Harbour System also for Monasteries, Forts and Canals - END
+	// WTP, check Harbour System also for Forts and Canals - END
 
 	// WTP, check Barracks System also for Monasteries and Forts - START
 	if(info.isFort() || info.isMonastery())
@@ -10408,6 +10404,12 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 		szBuffer.append(szHelp);
 	}
 
+	if (!isEmpty(kEvent.getHelpText()))
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText(kEvent.getHelpText()));
+	}
+
 	CvWStringBuffer szTemp;
 	for (int i = 0; i < GC.getNumEventInfos(); ++i)
 	{
@@ -10559,7 +10561,7 @@ void CvGameTextMgr::setFatherHelp(CvWStringBuffer &szBuffer, FatherTypes eFather
 		szTempBuffer.Format(SETCOLR L"%s" ENDCOLR , TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), kFatherInfo.getDescription());
 		szBuffer.append(szTempBuffer);
 
-		FatherCategoryTypes eCategory = (FatherCategoryTypes) kFatherInfo.getFatherCategory();
+		FatherCategoryTypes eCategory = kFatherInfo.getFatherCategory();
 		if (eCategory != NO_FATHERCATEGORY)
 		{
 			szTempBuffer.Format(SETCOLR L" (%s)" ENDCOLR , TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), GC.getFatherCategoryInfo(eCategory).getDescription());

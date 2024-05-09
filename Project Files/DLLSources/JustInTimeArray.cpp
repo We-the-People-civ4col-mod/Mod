@@ -41,7 +41,7 @@ void JustInTimeArray<T>::copy(const JustInTimeArray<T> &OtherArray)
 	FAssert(this->m_eDefault == OtherArray.m_eDefault);
 
 	if (!OtherArray.isAllocated())
-	{ 
+	{
 		reset();
 		return;
 	}
@@ -106,7 +106,7 @@ bool JustInTimeArray<T>::addCache(int iChange, int iIndex)
 	{
 		return 0;
 	}
-	 
+
 	bool bBefore = get(iIndex) > 0;
 	add((T)iChange, iIndex);
 	bool bAfter = get(iIndex) > 0;
@@ -280,7 +280,7 @@ int JustInTimeArray<T>::getPositiveCount() const
 	{
 		return m_eDefault > 0 ? m_iLength : 0;
 	}
-	
+
 	int iCount = 0;
 	for (int i = 0; i < m_iLength; ++i)
 	{
@@ -423,7 +423,7 @@ void JustInTimeArray<T>::read(FDataStreamBase* pStream, bool bRead)
 	{
 		return;
 	}
-	
+
 	for (unsigned int i = 0; i < m_iLength; ++i)
 	{
 		int iBuffer = 0;
@@ -440,7 +440,7 @@ void JustInTimeArray<T>::write(FDataStreamBase* pStream, bool bWrite)
 	{
 		return;
 	}
-	
+
 	for (unsigned int i = 0; i < m_iLength; ++i)
 	{
 		int iBuffer = get(i);
@@ -580,7 +580,7 @@ JustInTimeArray<T>& JustInTimeArray<T>::operator=(const JustInTimeArray<T> &rhs)
 	{
 		this->set(rhs.get(i), i);
 	}
-	
+
 	this->hasContent(); // clear array if possible
 
 	return *this;
@@ -648,30 +648,6 @@ bool JustInTimeArray<T>::operator!=(const JustInTimeArray<T> &rhs) const
 }
 
 template<class T>
-JustInTimeArray2D<T>::JustInTimeArray2D<T>(JITarrayTypes eType, JITarrayTypes eSubType, T eDefault)
-	: tArray(NULL)
-	, m_iType(eType)
-	, m_iSubType(eSubType)
-	, m_iLength(getArrayLength(eType))
-	, m_eDefault(eDefault)
-{
-	FAssert(m_iLength > 1);
-	m_iArraysInUse = 0;
-}
-
-template<class T>
-JustInTimeArray2D<T>::JustInTimeArray2D<T>(int iLength, JITarrayTypes eSubType, T eDefault)
-	: tArray(NULL)
-	, m_iType(JIT_ARRAY_NO_TYPE)
-	, m_iSubType(eSubType)
-	, m_iLength(iLength)
-	, m_eDefault(eDefault)
-{
-	FAssert(m_iLength > 1);
-	m_iArraysInUse = 0;
-}
-
-template<class T>
 JustInTimeArray2D<T>::~JustInTimeArray2D<T>()
 {
 	reset();
@@ -687,7 +663,7 @@ void JustInTimeArray2D<T>::allocate()
 	// Instead the approach is to go a bit more low level, allocate the memory manually without calling a constructor
 	//   next the memory is filled with data from the local JIT array, which did call the constructor.
 	// This only works because all arrays are identical and no array in the JIT arrays has been allocated yet.
-	
+
 	if (tArray != NULL)
 	{
 		return;
@@ -828,7 +804,7 @@ void JustInTimeArray2D<T>::Write(FDataStreamBase* pStream)
 template<class T>
 void JustInTimeArray2D<T>::ReadWrite(bool bRead, FDataStreamBase* pStream)
 {
-	
+
 	unsigned short iLength = 0;
 
 	if (bRead)
@@ -891,7 +867,7 @@ void JustInTimeArray2D<T>::ReadWrite(bool bRead, FDataStreamBase* pStream)
 		}
 	}
 	maybeFreeArray();
-	
+
 }
 
 template<class T>

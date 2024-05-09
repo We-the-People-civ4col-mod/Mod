@@ -8,6 +8,8 @@
 //#include "CvStructs.h"
 #include "LinkedList.h"
 #include <bitset>
+#include <boost/utility/enable_if.hpp>
+#include <boost/type_traits/is_enum.hpp>
 
 #include "CvPlotFunctions.h"
 
@@ -216,21 +218,19 @@ public:
 	bool isImpassable() const;
 
 	DllExport int getX() const;
-#ifdef _USRDLL
 	inline int getX_INLINE() const
 	{
 		// return m_iX;
 		return m_coord.x();
 	}
-#endif
+
 	DllExport int getY() const;
-#ifdef _USRDLL
 	inline int getY_INLINE() const
 	{
 		// return m_iY;
 		return m_coord.y();
 	}
-#endif
+
 	inline const Coordinates& coord() const
 	{
 		return m_coord;
@@ -270,7 +270,8 @@ public:
 	// function to avoid using an InfoArray, though it only works when searching for a single value
 	// use InfoArray if searching for multiple as it will be faster
 	template <typename T>
-	bool hasNearbyPlotWith(T eVal, int iRange = 1) const;
+	typename boost::enable_if<boost::is_enum<T>, bool>::type
+	hasNearbyPlotWith(T eVal, int iRange = 1) const;
 	//WTP, Nightinggale - Terrain locator - start
 
 	DllExport int getFeatureVariety() const;
@@ -324,12 +325,10 @@ public:
 	void setFlagDirty(bool bNewValue);
 
 	DllExport PlayerTypes getOwner() const;
-#ifdef _USRDLL
 	inline PlayerTypes getOwnerINLINE() const
 	{
 		return m_eOwner;
 	}
-#endif
 	void setOwner(PlayerTypes eNewValue, bool bCheckUnits);
 	PlotTypes getPlotType() const;
 	DllExport bool isWater() const;
@@ -486,6 +485,9 @@ public:
 	DllExport CLLNode<IDInfo>* headUnitNode() const;
 	CLLNode<IDInfo>* tailUnitNode() const;
 
+	// Returns the unit the node is pointing to and then the node will point to the next unit node
+	CvUnit* getUnitNodeLoop(CLLNode<IDInfo>*& pUnitNode) const;
+
 	// Script data needs to be a narrow string for pickling in Python
 	CvString getScriptData() const;
 	void setScriptData(const char* szNewValue);
@@ -500,8 +502,6 @@ public:
 	void setDistanceToOcean(int iNewValue);
 	int getDistanceToOcean() const;
 
-	CvPlot* findNearbyOceanPlot(int iRandomization = 25);
-
 	int getCrumbs() const;
 	void addCrumbs(int iQuantity);
 
@@ -514,6 +514,8 @@ public:
 	void write(CvSavegameWriter writer);
 
 	void writeDesyncLog(FILE *f);
+
+	int getTurnDamage() const;
 
 protected:
 

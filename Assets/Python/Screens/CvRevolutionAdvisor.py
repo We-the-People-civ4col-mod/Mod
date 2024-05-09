@@ -55,7 +55,7 @@ class CvRevolutionAdvisor:
 		screen.showWindowBackground(False)
 
 		self.SCREEN_TITLE = u"<font=4b>" + localText.getText("TXT_KEY_REVOLUTION_ADVISOR_TITLE", ()).upper() + u"</font>"
-		self.SCREEN_TITLE = localText.changeTextColor(self.SCREEN_TITLE, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+		self.SCREEN_TITLE = localText.changeTextColor(self.SCREEN_TITLE, ColorTypes.COLOR_FONT_CREAM)
 
 		screen.setText( "Title", "Background", self.SCREEN_TITLE, CvUtil.FONT_CENTER_JUSTIFY, self.XResolution / 2, 4, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setText( "RevolutionScreenExit", "Background", u"<font=4>" + CyTranslator().getText("TXT_KEY_PEDIA_SCREEN_EXIT", ()).upper() + "</font>", CvUtil.FONT_RIGHT_JUSTIFY, self.XResolution - 30, self.YResolution - 36, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1 )
@@ -118,10 +118,10 @@ class CvRevolutionAdvisor:
 
 		BarWidth = self.XResolution - ((self.BAR_SIDE_MARGIN  + self.BAR_END_ICON_SIZE) * 2)
 		screen.addStackedBarGFC("RebelBar", self.BAR_SIDE_MARGIN + self.BAR_END_ICON_SIZE, self.Y_REBEL_BAR + ((self.BAR_END_ICON_SIZE - self.BarHight) / 2), BarWidth, self.BarHight, InfoBarTypes.NUM_INFOBAR_TYPES, WidgetTypes.WIDGET_HELP_REBEL, 0, -1 )
-		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_RED") )
-		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_RED") )
-		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY") )
-		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY") )
+		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_RED )
+		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_RED )
+		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_RATE_EXTRA, ColorTypes.COLOR_EMPTY )
+		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_EMPTY, ColorTypes.COLOR_EMPTY )
 		RebelPercentage = (gc.getTeam(self.player.getTeam()).getRebelPercent()) / 100.0
 		screen.setBarPercentage("RebelBar", InfoBarTypes.INFOBAR_STORED, RebelPercentage)
 
@@ -138,38 +138,38 @@ class CvRevolutionAdvisor:
 		## R&R, Robert Surcouf,  Revolution Advisor Screen, Cannons, Start
 		#CityCount, iHorses, iMuskets = 0, 0, 0
 		CityCount, iHorses, iBlades, iMuskets, iCannons, iBlackpowder = 0, 0, 0, 0, 0, 0
-		(city, iter) = self.player.firstCity(true)
+		(city, iter) = self.player.firstCity(True)
 		while(city):
-			iHorses += city.getYieldStored(gc.getInfoTypeForString("YIELD_HORSES"))
-			iBlades += city.getYieldStored(gc.getInfoTypeForString("YIELD_BLADES")) # R&R, ray, Blades
-			iMuskets += city.getYieldStored(gc.getInfoTypeForString("YIELD_MUSKETS"))
-			iCannons += city.getYieldStored(gc.getInfoTypeForString("YIELD_CANNONS")) ## R&R, Robert Surcouf
-			iBlackpowder += city.getYieldStored(gc.getInfoTypeForString("YIELD_BLACK_POWDER"))
-			(city, iter) = self.player.nextCity(iter, true)
+			iHorses += city.getYieldStored(YieldTypes.YIELD_HORSES)
+			iBlades += city.getYieldStored(YieldTypes.YIELD_BLADES) # R&R, ray, Blades
+			iMuskets += city.getYieldStored(YieldTypes.YIELD_MUSKETS)
+			iCannons += city.getYieldStored(YieldTypes.YIELD_CANNONS) ## R&R, Robert Surcouf
+			iBlackpowder += city.getYieldStored(YieldTypes.YIELD_BLACK_POWDER)
+			(city, iter) = self.player.nextCity(iter, True)
 
-		screen.addDDSGFC( "HorseIcon", gc.getYieldInfo(gc.getInfoTypeForString("YIELD_HORSES")).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 5 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addDDSGFC( "HorseIcon", gc.getYieldInfo(YieldTypes.YIELD_HORSES).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 5 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		HorseText = str(iHorses)
-		HorseText = localText.changeTextColor(HorseText, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+		HorseText = localText.changeTextColor(HorseText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Horse Count", "Background", u"<font=4>" + HorseText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 5 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 	
-		screen.addDDSGFC( "MusketIcon", gc.getYieldInfo(gc.getInfoTypeForString("YIELD_MUSKETS")).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 9 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addDDSGFC( "MusketIcon", gc.getYieldInfo(YieldTypes.YIELD_MUSKETS).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 9 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		GunText = str(iMuskets) 
-		GunText = localText.changeTextColor(GunText, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+		GunText = localText.changeTextColor(GunText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Musket Count", "Background", u"<font=4>" + GunText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 9 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
-		screen.addDDSGFC( "CannonIcon", gc.getYieldInfo(gc.getInfoTypeForString("YIELD_CANNONS")).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 7 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addDDSGFC( "CannonIcon", gc.getYieldInfo(YieldTypes.YIELD_CANNONS).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 7 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		CannonText = str(iCannons) 
-		CannonText = localText.changeTextColor(CannonText, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+		CannonText = localText.changeTextColor(CannonText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Cannon Count", "Background", u"<font=4>" + CannonText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 7 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		
-		screen.addDDSGFC( "BlackPowderIcon", gc.getYieldInfo(gc.getInfoTypeForString("YIELD_BLACK_POWDER")).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 8 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addDDSGFC( "BlackPowderIcon", gc.getYieldInfo(YieldTypes.YIELD_BLACK_POWDER).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 8 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		BlackPowderText = str(iBlackpowder) 
-		BlackPowderText = localText.changeTextColor(BlackPowderText, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+		BlackPowderText = localText.changeTextColor(BlackPowderText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Cannon Count", "Background", u"<font=4>" + BlackPowderText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 8 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		
-		screen.addDDSGFC( "BladesIcon", gc.getYieldInfo(gc.getInfoTypeForString("YIELD_BLADES")).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 6 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.addDDSGFC( "BladesIcon", gc.getYieldInfo(YieldTypes.YIELD_BLADES).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 6 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		BladesText = str(iBlades) 
-		BladesText = localText.changeTextColor(BladesText, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+		BladesText = localText.changeTextColor(BladesText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Blades Count", "Background", u"<font=4>" + BladesText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 6 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		## R&R, Robert Surcouf,  Revolution Advisor Screen, Cannons, End
 
@@ -188,7 +188,7 @@ class CvRevolutionAdvisor:
 		screen = self.getScreen()
 #TAC -->
 		RoyalText = localText.getText("INTERFACE_ROYAL_EXPEDITIONARY_FORCES", ())
-		RoyalText = localText.changeTextColor(RoyalText, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+		RoyalText = localText.changeTextColor(RoyalText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Royal Troops", "Background", u"<font=4>" + RoyalText + "</font>", CvUtil.FONT_LEFT_JUSTIFY, self.X_ROYAL_UNITS, self.Y_UNITS_LISTS, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 	
 		UnitList = []
@@ -226,7 +226,7 @@ class CvRevolutionAdvisor:
 	def drawColonialTroops(self):
 		screen = self.getScreen()
 		RebelText = localText.getText("INTERFACE_COLONIAL_FORCES", ())
-		RebelText = localText.changeTextColor(RebelText, gc.getInfoTypeForString("COLOR_FONT_GOLD"))
+		RebelText = localText.changeTextColor(RebelText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Colonial Troops", "Background", u"<font=4>" + RebelText + "</font>", CvUtil.FONT_LEFT_JUSTIFY, self.X_COLONIAL_UNITS - self.XResolution / 60, self.Y_UNITS_LISTS, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 	
 		UnitList = []
@@ -279,7 +279,7 @@ class CvRevolutionAdvisor:
 
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
 			if (inputClass.getData1() == self.REVOLUTION_BUTTON):
-				CyMessageControl().sendChangeWar(gc.getPlayer(self.player.getParent()).getTeam(), true)
+				CyMessageControl().sendChangeWar(gc.getPlayer(self.player.getParent()).getTeam(), True)
 				self.getScreen().hideScreen()
 			
 		return 0
@@ -293,7 +293,7 @@ class CvRevolutionAdvisor:
 		if eWidgetType == WidgetTypes.WIDGET_GENERAL and iData1 == self.AMENDMENT_BUTTON:
 			szHelp = CyGameTextMgr().parseCivicInfo(iData2, True, False, True)
 			szName = gc.getCivicInfo(iData2).getDescription()
-			szColoredName = localText.changeTextColor(szName, gc.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"))
+			szColoredName = localText.changeTextColor(szName, ColorTypes.COLOR_HIGHLIGHT_TEXT)
 			return szColoredName + szHelp
 
 		return u""
@@ -365,39 +365,39 @@ class CvRevolutionAdvisor:
 # <-- TAC
 def isSoldier(eProfession):
 	if eProfession == ProfessionTypes.NO_PROFESSION:
-		return false
+		return False
 	if (gc.getProfessionInfo(eProfession).getCombatChange() == 0):
-		return false
+		return False
 	if (gc.getProfessionInfo(eProfession).isUnarmed()):
-		return false
+		return False
 	return (getProfessionYieldsRequired(eProfession) == 1)
 	
 def isDragoon(eProfession):
 	if eProfession == ProfessionTypes.NO_PROFESSION:
-		return false
+		return False
 	if (gc.getProfessionInfo(eProfession).getCombatChange() == 0):
-		return false
+		return False
 	if (gc.getProfessionInfo(eProfession).isUnarmed()):
-		return false
+		return False
 	return (getProfessionYieldsRequired(eProfession) > 1)
 
 def isCannon(eUnit):
 	unit = gc.getUnitInfo(eUnit)
 	if unit.getDomainType() != DomainTypes.DOMAIN_LAND:
-		return false
+		return False
 	if (unit.getCombat() == 0):
-		return false
-	return true
+		return False
+	return True
 
 def isWarship(eUnit):
 	unit = gc.getUnitInfo(eUnit)
 	if unit.getDomainType() != DomainTypes.DOMAIN_SEA:
-		return false
+		return False
 	if (unit.getCombat() == 0):
-		return false
+		return False
 	if (unit.isOnlyDefensive()):
-		return false
-	return true
+		return False
+	return True
 
 def getProfessionYieldsRequired(eProfession):
 	iNumYieldsRequired = 0
@@ -410,6 +410,6 @@ def isVeteran(eUnit):
 	unit = gc.getUnitInfo(eUnit)
 	for iPromotion in range(gc.getNumPromotionInfos()):
 		if unit.getFreePromotions(iPromotion):
-			return true
-	return false
+			return True
+	return False
 

@@ -206,19 +206,15 @@ public:
 	DllExport IDInfo getIDInfo() const;
 	void setID(int iID);
 	DllExport int getX() const;
-#ifdef _USRDLL
 	inline int getX_INLINE() const
 	{
 		return m_coord.x();
 	}
-#endif
 	DllExport int getY() const;
-#ifdef _USRDLL
 	inline int getY_INLINE() const
 	{
 		return m_coord.y();
 	}
-#endif
 	inline const Coordinates& coord() const
 	{
 		return m_coord;
@@ -259,8 +255,8 @@ public:
 	int getHealRate() const;
 	void changeHealRate(int iChange);
 	int getFood() const;
-	void setFood(int iNewValue);
-	void changeFood(int iChange);
+	void setFood(int iNewValue, bool bAllowNegative = false);
+	void changeFood(int iChange, bool bAllowNegative = false);
 
 	int getFoodKept() const;
 	void setFoodKept(int iNewValue);
@@ -322,12 +318,10 @@ public:
 	DllExport void setLayoutDirty(bool bNewValue);
 
 	DllExport PlayerTypes getOwner() const;
-#ifdef _USRDLL
 	inline PlayerTypes getOwnerINLINE() const
 	{
 		return m_eOwner;
 	}
-#endif
 	DllExport TeamTypes getTeam() const;
 
 	PlayerTypes getPreviousOwner() const;
@@ -473,11 +467,11 @@ public:
 	// Fill the kEffectNames array with references to effects in the CIV4EffectInfos.xml to have a
 	// city play a given set of effects. This is called whenever the interface updates the city billboard
 	// or when the zoom level changes
-	DllExport void getVisibleEffects(ZoomLevelTypes eCurrentZoom, std::vector<const TCHAR*>& kEffectNames) const;
+	DllExport void getVisibleEffects(ZoomLevelTypes eCurrentZoom, std::vector<char const*>& kEffectNames) const;
 
 	// Billboard appearance controls
 	DllExport void getCityBillboardSizeIconColors(NiColorA& kDotColor, NiColorA& kTextColor) const;
-	DllExport const TCHAR* getCityBillboardProductionIcon() const;
+	DllExport char const* getCityBillboardProductionIcon() const;
 	DllExport bool getCityBillboardTopBarValues(float& fStored, float& fRate, float& fRateExtra) const;
 	DllExport bool getCityBillboardBottomBarValues(float& fStored, float& fRate, float& fRateExtra) const;
 
@@ -735,7 +729,7 @@ public:
 	int getBestYieldsAmountAvailable(YieldTypes eYield, ProfessionTypes eProfession, const CvUnit* pUnit) const;
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 	void addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession);
-	bool removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes eProfession, bool conquest = false);
+	bool removePopulationUnit(AssertCallerData assertData, CvUnit* pUnit, bool bDelete, ProfessionTypes eProfession, bool conquest = false);
 	CvUnit* removeUnitType(UnitTypes eUnit, ProfessionTypes eProfession);
 	void removeNonCityPopulationUnits();
 	int getPopulationUnitId(int iPlotIndex) const;
@@ -1031,6 +1025,7 @@ protected:
 	void handleConstructionImport();
 	void handleMilitaryImport();
 	void handleLivestockImport();	
+
 public:
 	int getMarketModifier() const { return m_iCacheMarketModifier; }
 	const YieldCargoArray<int>& getBuildingYieldDemands() const { return m_ja_iBuildingYieldDemands; }

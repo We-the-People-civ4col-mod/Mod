@@ -85,6 +85,7 @@
 	<ElementType name="PythonCanDoCity" content="textOnly"/>
 	<ElementType name="PythonCanDoUnit" content="textOnly"/>
 	<ElementType name="PythonHelp" content="textOnly"/>
+	<ElementType name="HelpText" content="textOnly"/>
 	<ElementType name="iWeight" content="textOnly" dt:type="int"/>
 	<ElementType name="iAIValue" content="textOnly" dt:type="int"/>
 	<ElementType name="iGenericParameter1" content="textOnly"/>
@@ -106,6 +107,12 @@
 	<ElementType name="iNumBuildingsGlobal" content="textOnly" dt:type="int"/>
 	<ElementType name="iNumPlotsRequired" content="textOnly" dt:type="int"/>
 	<ElementType name="ePlotType" content="textOnly"/>
+	<ElementType name="PlotRequirements" content="eltOnly">
+		<element type="PlotTypes" minOccurs="0"/>
+	</ElementType>
+	<ElementType name="PlotTypes" content="eltOnly">
+		<element type="ePlotType" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="eRequiredCivCategory" content="textOnly"/>
 	<ElementType name="CivCategoriesRequired" content="eltOnly">
 		<element type="eRequiredCivCategory" minOccurs="0" maxOccurs="*"/>
@@ -221,6 +228,7 @@
 		<element type="iNumPlotsRequired"/>
 		<element type="bOwnPlot"/>
 		<element type="ePlotType"/>
+		<element type="PlotRequirements" minOccurs="0"/>
 		<element type="FeaturesRequired"/>
 		<element type="TerrainsRequired"/>
 		<element type="ImprovementsRequired"/>
@@ -307,6 +315,7 @@
 		<element type="PythonExpireCheck"/>
 		<element type="PythonCanDo"/>
 		<element type="PythonHelp"/>
+		<element type="HelpText" minOccurs="0"/>
 		<element type="Button"/>
 		<element type="iAIValue"/>
 		<element type="iGenericParameter1"/>

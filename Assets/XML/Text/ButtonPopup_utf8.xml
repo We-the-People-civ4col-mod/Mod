@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
 <Civ4GameText xmlns="http://www.firaxis.com">
+
     <TEXT>
         <Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_TITLE</Tag>
         <English>Crops can be grown on the land near the settlement. The governor asks if you have any requests.</English>
@@ -64,6 +65,71 @@
         <Spanish>Exportación automática de todas las mercancías</Spanish>
         <Russian>Авто-экспорт всех товаров</Russian>
     </TEXT>
+
+	<TEXT>
+		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_TITLE</Tag>
+		<English>Crops can be grown on the land near the settlement. The governor asks if you have any requests.</English>
+		<French>On peut cultiver sur les terres près de la colonie. Le gouverneur demande si vous avez des demandes.</French>
+		<German>Es können Feldfrüchte auf dem Land nahe der Siedlung angebaut werden. Der Gouverneur fragt, ob Sie besondere Wünsche haben.</German>
+		<Italian>Le colture possono essere coltivate sul terreno vicino all'insediamento. Il governatore chiede se hai qualche richiesta.</Italian>
+		<Spanish>Se puede cultivar en las tierras cercanas al asentamiento. El gobernador pregunta si tiene alguna petición.</Spanish>
+		<Russian>На центральной клетке поселения также можно собирать разные ресурсы. Губернатор спрашивает, есть ли у вас какие-либо пожелания относительно этого.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_AUTO</Tag>
+		<English>The governor knows best how to use his land.</English>
+		<French>Le gouverneur sait mieux que quiconque comment utiliser ses terres.</French>
+		<German>Der Gouverneur weiß am besten, wie sein Land zu nutzen ist.</German>
+		<Italian>Il governatore sa come utilizzare al meglio la sua terra.</Italian>
+		<Spanish>El gobernador es el que mejor sabe cómo utilizar su tierra.</Spanish>
+		<Russian>Губернатор будет руководить выбором</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_HELP</Tag>
+		<English>Each turn the governor will consider what would be best to produce. He can easily change production to get the best out of the situation whenever things change.[PARAGRAPH:2]Note: Your requests are guidelines only. If in future the requested crops are unavailable, the governor will switch production to make the best out of the situation. If your request becomes available again later, the governor remembers and will resume production.</English>
+		<French>À chaque tour, le gouverneur réfléchira à ce qui serait le mieux à produire. Il peut facilement modifier la production pour tirer le meilleur parti de la situation lorsque les choses changent.[PARAGRAPH:2]Remarque : vos demandes ne sont que des indications. Si, à l'avenir, les cultures demandées ne sont plus disponibles, le gouverneur modifiera la production pour tirer le meilleur parti de la situation. Si votre demande redevient disponible plus tard, le gouverneur s'en souvient et reprendra la production.</French>
+		<German>Jede Runde wird der Gouverneur überlegen, was am besten angebaut werden soll. Sollten die Umstände es erfordern, etwas zu ändern, kann er frei über die Produktion entscheiden, um das Beste aus der Situation zu machen.[PARAGRAPH:2]Beachten Sie, daß Ihre Wünsche nur Richtlinien sind. Sollte es in Zukunft nicht möglich sein, die gewünschten Feldfrüchte anzubauen, wird der Governeur die Produktion umstellen. Wenn Ihre Wünsche wieder erfüllbar sind, wird sich der Gouverneur an sie erinnern und die gewünschten Feldfrüchte anbauen lassen.</German>
+		<Italian>Ad ogni turno il governatore considererà cosa sarebbe meglio produrre. Egli può facilmente cambiare la produzione per ottenere il meglio dalla situazione ogni volta che le cose cambiano.[PARAGRAPH:2]Nota: Le tue richieste sono solo linee guida. Se in futuro le colture richieste non saranno disponibili, il governatore cambierà la produzione per trarre il meglio dalla situazione. Se la tua richiesta tornerà disponibile più tardi, il governatore se ne ricorderà e riprenderà la produzione.</Italian>
+		<Spanish>En cada turno, el gobernador considerará qué sería lo mejor para producir. Puede cambiar fácilmente la producción para sacar lo mejor de la situación siempre que las cosas cambien.[PARAGRAPH:2]Nota: Sus peticiones son sólo orientativas. Si en el futuro los cultivos solicitados no están disponibles, el gobernador cambiará la producción para sacar lo mejor de la situación. Si su solicitud vuelve a estar disponible más adelante, el gobernador lo recordará y reanudará la producción.</Spanish>
+		<Russian>Каждый ход губернатор будет рассматривать, что лучше всего производить. Он может изменить производство, чтобы получить максимальную отдачу от ситуации всякий раз, когда что-то меняется.[PARAGRAPH:2]Примечание: ваши запросы носят только рекомендательный характер. Если в будущем требуемые культуры будут недоступны, губернатор изменит производство, чтобы извлечь максимальную пользу из ситуации. Если позже ваш запрос снова станет доступным, губернатор об этом вспомнит и возобновит производство.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_TITLE</Tag>
+		<English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Select imports, exports, minimum and maximum goods stored (Read Colopedia's concept page [COLOR_HIGHLIGHT_TEXT]Transport Automation[COLOR_REVERT] to learn how to use this.) :[NEWLINE]</English>
+		<French>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Sélectionnez les importations, les exportations, le minimum et le maximum de marchandises stockées (Lisez la page conceptuelle de Colopedia [COLOR_HIGHLIGHT_TEXT]Automatisation du transport[COLOR_REVERT] pour savoir comment l'utiliser). :[NEWLINE]</French>
+		<German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Importe, Exporte sowie Ober- und Untergrenze für Lagerbestände festlegen (Details sind in der Colopedia unter dem Konzept [COLOR_HIGHLIGHT_TEXT]Transportautomatisierung[COLOR_REVERT] nachzulesen) :[NEWLINE]</German>
+		<Italian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Seleziona le importazioni, le esportazioni, le merci minime e massime immagazzinate (Leggi la pagina del concetto di Colopedia [COLOR_HIGHLIGHT_TEXT]Automazione dei trasporti[COLOR_REVERT] per sapere come usarlo). :[NEWLINE]</Italian>
+		<Spanish>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][PARAGRAPH:2]Seleccione las importaciones, las exportaciones y las mercancías mínimas y máximas almacenadas (Lea la página de conceptos de Colopedia [COLOR_HIGHLIGHT_TEXT]Automatización del transporte[COLOR_REVERT] para aprender a utilizarlo). :[NEWLINE]</Spanish>
+		<Russian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Выберите импорт или фидер, экспорт или автоматизацию и количество товаров (прочитайте концептуальную страницу Колопедии [COLOR_HIGHLIGHT_TEXT]Автоматизация транспорта[COLOR_REVERT], чтобы узнать, как это использовать) :[NEWLINE]</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_CLEAR_ALL</Tag>
+		<English>Clear All</English>
+		<French>Supprimer tout</French>
+		<German>Alles löschen</German>
+		<Italian>Cancellare tutto</Italian>
+		<Spanish>Eliminar todo</Spanish>
+		<Russian>Очистить все</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_ALL</Tag>
+		<English>Import all goods</English>
+		<French>Importation de tous les biens</French>
+		<German>Import aller Güter</German>
+		<Italian>Importazione di tutte le merci</Italian>
+		<Spanish>Importar todas las mercancías</Spanish>
+		<Russian>Импорт всех товаров</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_EXPORT_ALL</Tag>
+		<English>Auto-export all goods</English>
+		<French>Exportation automatique de tous les biens</French>
+		<German>Automatischer Export aller Güter</German>
+		<Italian>Esportazione automatica di tutte le merci</Italian>
+		<Spanish>Exportación automática de todas las mercancías</Spanish>
+		<Russian>Авто-экспорт всех товаров</Russian>
+	</TEXT>
+
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_IMPORT_DEMANDED_GOODS</Tag>
 		<English>Import all demanded goods</English>
@@ -441,4 +507,346 @@
         <German>Keine KI-Kolonialmächte im Spiel. Es ist möglich, dass diese versehentlich deaktiviert wurden. "Offene" Player Slots werden im Multiplayer nicht automatisch gefüllt.</German>
         <Russian>Европейские ИИ-игроки не обнаружены. Возможно, они были исключены по ошибке. "Открытые" слоты для игроков в мультиплеере не будут использоваться ИИ-игроками.</Russian>
     </TEXT>
+
+		<Tag>TXT_KEY_POPUP_IMPORT_IMPORT</Tag>
+		<English>Import</English>
+		<French>Importer</French>
+		<German>Import</German>
+		<Italian>Importazione</Italian>
+		<Spanish>Importar</Spanish>
+		<Russian>Импорт</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_IMPORT_HELP</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Import this good[COLOR_REVERT][PARAGRAPH:2]Left: import limit[NEWLINE]While importing, no transport can make the warehouse exceed this amount.[NEWLINE]0 means no limit.</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Importer cette bien[COLOR_REVERT][PARAGRAPH:2]A gauche : limite d'importation[NEWLINE]Pendant l'importation, aucun transport ne peut faire dépasser ce montant à l'entrepôt.[NEWLINE]0 signifie aucune limite.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Güter importieren[COLOR_REVERT][PARAGRAPH:2]Links: Obergrenze für Importe[NEWLINE]Wenn importiert wird, kann der Lagerbestand durch ankommende Transporte nicht überschritten werden.[NEWLINE]0 bedeutet keine Einschränkungen.</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Importa questo merce[COLOR_REVERT][PARAGRAPH:2]Sinistra: limite di importazione[NEWLINE]Durante l'importazione, nessun trasporto può far superare al magazzino questa quantità.[NEWLINE]0 significa nessun limite.</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Importar esta mercancía[COLOR_REVERT][PARAGRAPH:2]Izquierda: límite de importación[NEWLINE]Durante la importación, ningún transporte puede hacer que el almacén supere esta cantidad.[NEWLINE]0 significa que no hay límite.</Spanish>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Импортировать этот товар[COLOR_REVERT][PARAGRAPH:2]Ограничение на импорт[NEWLINE]При импорте ни один транспорт не может превысить это количество на складе.[NEWLINE]0 означает отсутствие ограничений.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_FEEDER</Tag>
+		<English>Feeder</English>
+		<French>Gestionnaire d'importation</French>
+		<German>Import-Manager</German>
+		<Russian>Фидер</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_FEEDER_HELP</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Import feeder[COLOR_REVERT][PARAGRAPH:2]Turn import on at 75%[NEWLINE]Turn import off at 100%[NEWLINE]Compared to maintain level (bottom spinbutton)</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Gestionnaire d'importation[COLOR_REVERT][PARAGRAPH:2]Démarre l'importation à 75%[NEWLINE]Arrête l'importation à 100%[NEWLINE]Par rapport au niveau de maintien (bouton rotatif inférieur)</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Importsteuerung[COLOR_REVERT][PARAGRAPH:2]Schaltet Import bei 75% an[NEWLINE]Schaltet Import bei 100% aus[NEWLINE]In Relation zur Obergrenze für Importe (unterer Button)</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Import feeder[COLOR_REVERT][PARAGRAPH:2]Attiva l'importazione al 75%[NEWLINE]Disattiva l'importazione al 100%[NEWLINE]Rispetto al mantenimento del livello (pulsante in basso)</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Alimentador de importación[COLOR_REVERT][PARAGRAPH:2]Activar la importación al 75%[NEWLINE]Desactivar la importación al 100%[NEWLINE]En comparación con mantener el nivel (botón giratorio inferior)</Spanish>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Фидер импорта[COLOR_REVERT][PARAGRAPH:2]Включить импорт при 75%[NEWLINE]Выключить импорт при 100%[NEWLINE]Автоматическое поддержание нижнего счетчика</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_EXPORT</Tag>
+		<English>Export</English>
+		<French>Exporter</French>
+		<German>Export</German>
+		<Italian>Esportazione</Italian>
+		<Spanish>Exportar</Spanish>
+		<Russian>Экспорт</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_EXPORT_HELP</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Export this good[COLOR_REVERT][PARAGRAPH:2]Left: maintain level[NEWLINE]Import if warehouse is below this level or export if warehouse exceeds this level.</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Exporter ce bien[COLOR_REVERT][PARAGRAPH:2]Gauche : maintenir le niveau[NEWLINE]Importer si l'entrepôt est inférieur à ce niveau ou exporter si l'entrepôt dépasse ce niveau.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Güter exportieren[COLOR_REVERT][PARAGRAPH:2]Links: Lagerbestand einhalten[NEWLINE]Importieren, wenn der Lagerbestand unterhalb dieser Schwelle liegt.[NEWLINE]Exportieren, wenn der Lagerbestand oberhalb dieser Schwelle liegt.</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Esporta questo bene[COLOR_REVERT][PARAGRAPH:2]Sinistra: mantenere il livello[NEWLINE]Importa se il magazzino è sotto questo livello o esporta se il magazzino supera questo livello.</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Exportar este bien[COLOR_REVERT][PARAGRAPH:2]Izquierda: mantener el nivel[NEWLINE]Importar si el almacén está por debajo de este nivel o exportar si el almacén supera este nivel.</Spanish>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Экспортировать этот товар[COLOR_REVERT][PARAGRAPH:2]Поддерживать уровень[NEWLINE]Импортировать, если количество на складе ниже этого уровня; экспортировать, если количество на складе превышает этот уровень</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_AUTO_EXPORT</Tag>
+		<English>Auto</English>
+		<French>Automatique</French>
+		<German>Automatisch</German>
+		<Italian>Automatico</Italian>
+		<Spanish>Automático</Spanish>
+		<Russian>Авто</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_IMPORT_AUTO_EXPORT_HELP</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Automatic turn export ON/OFF at turn start[COLOR_REVERT][PARAGRAPH:2]A high number of trade routes slows down the game. This feature allows disabling trade routes when there's nothing to transport.[PARAGRAPH:2]Remember that restarting exports won't take effect until the next turn. This means it isn't well suited for cases where you both import and export at the same time.</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Activation/désactivation automatique des exportations au début du tour [COLOR_REVERT][PARAGRAPH:2]Un nombre élevé de routes commerciales ralentit le jeu. Cette fonctionnalité permet de désactiver les routes commerciales lorsqu'il n'y a rien à transporter.[PARAGRAPH:2]N'oubliez pas que le redémarrage des exportations ne prend effet qu'au tour suivant. Cela signifie qu'elle n'est pas bien adaptée aux cas où vous importez et exportez en même temps.</French>
+		<German>[COLOR_HIGHLIGHT_TEXT]Automatisches Ein- und Ausschalten des Exports bei Rundenbeginn[COLOR_REVERT][PARAGRAPH:2]Da eine hohe Anzahl von Handelsrouten das Spiel verlangsamt, ermöglicht diese Funktion es, Handelsrouten zu deaktivieren, wenn es nichts zu transportieren gibt.[PARAGRAPH:2]Denken Sie daran, dass das erneute Starten der Exporte erst in der nächsten Runde wirksam wird. Das heißt, es ist nicht gut geeignet für Fälle, in denen Sie gleichzeitig importieren und exportieren.</German>
+		<Italian>[COLOR_HIGHLIGHT_TEXT]Automatico attiva/disattiva le esportazioni all'inizio del turno[COLOR_REVERT][PARAGRAPH:2]Un alto numero di rotte commerciali rallenta il gioco. Questa funzione permette di disabilitare le rotte commerciali quando non c'è nulla da trasportare.[PARAGRAPH:2]Ricorda che il riavvio delle esportazioni non avrà effetto fino al turno successivo. Questo significa che non è adatto ai casi in cui si importa e si esporta allo stesso tempo.</Italian>
+		<Spanish>[COLOR_HIGHLIGHT_TEXT]Activación/desactivación automática de la exportación al inicio del turno[COLOR_REVERT][PARAGRAPH:2]Un número elevado de rutas comerciales ralentiza el juego. Esta característica permite desactivar las rutas comerciales cuando no hay nada que transportar.[PARAGRAPH:2]Recuerda que el reinicio de las exportaciones no tendrá efecto hasta el siguiente turno. Esto significa que no es adecuado para los casos en los que se importa y exporta al mismo tiempo.</Spanish>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Включение/выключение автоматического экспорта в начале каждого хода[COLOR_REVERT][PARAGRAPH:2]Большое количество торговых путей замедляет игру. Эта функция позволяет отключать торговые пути, когда нечего перевозить.[PARAGRAPH:2]Помните, что перезапуск экспорта не вступит в силу до следующего хода. Это означает, что он не очень подходит для случаев, когда вы импортируете и экспортируете одновременно.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_MAIN_TABLE</Tag>
+		<English>Available transport routes :</English>
+		<French>Routes commerciales disponibles :</French>
+		<German>Liste verfügbarer Transportrouten</German>
+		<Russian>Доступные транспортные маршруты :</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_YIELD_PREVIEW</Tag>
+		<English>Yields</English>
+		<French>Ressources</French>
+		<German>Waren</German>
+		<Italian>Yields</Italian>
+		<Spanish>Yields</Spanish>
+		<Russian>Товары</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_YIELD_HELP</Tag>
+		<English>Select a yield type for new transport route</English>
+		<French>Sélectionner une ressource pour la nouvelle route:</French>
+		<German>Warentyp für neue Transportroute auswählen</German>
+		<Italian>Select a yield type</Italian>
+		<Spanish>Select a yield type</Spanish>
+		<Russian>Выберите товар для нового транспортного маршрута</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_EXPORT_PREVIEW</Tag>
+		<English>Export</English>
+		<French>Exporter</French>
+		<German>Export</German>
+		<Italian>Esportazione</Italian>
+		<Spanish>Exportar</Spanish>
+		<Russian>Экспорт</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_EXPORT_HELP</Tag>
+		<English>Select an export city for new transport route (minimum stocks of goods that are not to be transported away can be set locally in the settlement screen)</English>
+		<French>Sélectionner une colonie exportatrice pour cette nouvelle route (le niveau minimal de ressources à conserver peut être ajusté localement dans l'écran de la colonie)</French>
+		<German>Exportsiedlung für neue Transportroute auswählen (Mindestbestände von Waren, die nicht abtransportiert werden sollen, lassen sich vor Ort im Siedlungsbildschirm einstellen)</German>
+		<Italian>Select an export city</Italian>
+		<Spanish>Select an export city</Spanish>
+		<Russian>Выберите город экспорта для нового транспортного маршрута (минимальные запасы товаров, которые не подлежат вывозу, можно установить на экране импорта/экспорта города)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_IMPORT_PREVIEW</Tag>
+		<English>Import</English>
+		<French>Importer</French>
+		<German>Import</German>
+		<Italian>Importazione</Italian>
+		<Spanish>Importar</Spanish>
+		<Russian>Импорт</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_IMPORT_HELP</Tag>
+		<English>Select an import city for new transport route</English>
+		<French>Sélectionner une colonie importatrice pour cette nouvelle route</French>
+		<German>Importsiedlung für neue Transportroute auswählen</German>
+		<Italian>Select an import city</Italian>
+		<Spanish>Select an import city</Spanish>
+		<Russian>Выберите город импорта для нового транспортного маршрута</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_NEW_ROUTE</Tag>
+		<English>Create new transport route :</English>
+		<French>Créer une nouvelle route commerciale :</French>
+		<German>Neue Transportroute erstellen :</German>
+		<Russian>Создать новый транспортный маршрут :</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_YIELD_TABLE</Tag>
+		<English>Yield types :</English>
+		<French>Ressource :</French>
+		<German>Warentyp :</German>
+		<Russian>Виды товаров :</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_EXPORT_TABLE</Tag>
+		<English>Source city :</English>
+		<French>Provenance :</French>
+		<German>Exportsiedlung :</German>
+		<Russian>Исходный город :</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_IMPORT_TABLE</Tag>
+		<English>Destination city :</English>
+		<French>Destination :</French>
+		<German>Importsiedlung :</German>
+		<Russian>Город назначения :</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_LOAD_GROUP_TABLE</Tag>
+		<English>Load group :</English>
+		<French>Groupe de Route :</French>
+		<German>Gruppe laden :</German>
+		<Italian>Gruppo di Carico :</Italian>
+		<Spanish>Grupo de Carga :</Spanish>
+		<Russian>Загрузить группу :</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HELP_LOAD_TRADE_GROUP</Tag>
+		<English> ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to load)</English>
+		<French> ([COLOR:140:255:40:255]&gt; Cliquer &lt;[COLOR_REVERT] pour charger)</French>
+		<German> ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um zu laden)</German>
+		<Italian> (clicca per caricare)</Italian>
+		<Spanish> (clic para cargar)</Spanish>
+		<Russian> ([COLOR:140:255:40:255]Нажмите[COLOR_REVERT] для загрузки)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_NAME_COL_TRADE_GROUP</Tag>
+		<English>Name</English>
+		<French>Nom</French>
+		<German>Name</German>
+		<Italian>Nome</Italian>
+		<Spanish>Nombre</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DESC_COL_TRADE_GROUP</Tag>
+		<English>Description</English>
+		<French>Description</French>
+		<German>Beschreibung</German>
+		<Italian>Descrizione</Italian>
+		<Spanish>Descripción</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_DELETE_GROUP_TABLE</Tag>
+		<English>Delete group :</English>
+		<French>Supprimer Groupe :</French>
+		<German>Gruppe entfernen :</German>
+		<Italian>Elimina Gruppo :</Italian>
+		<Spanish>Eliminar Grupo :</Spanish>
+		<Russian>Удалить группу :</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HELP_DELETE_TRADE_GROUP</Tag>
+		<English> ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to delete)</English>
+		<French> ([COLOR:140:255:40:255]&gt; Cliquer &lt;[COLOR_REVERT] pour effacer)</French>
+		<German> ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um zu löschen)</German>
+		<Italian> (clic per rimuovere)</Italian>
+		<Spanish> (clic para quitar)</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_EXPORT_TABLE_2</Tag>
+		<English>Name</English>
+		<French>Nom</French>
+		<German>Name</German>
+		<Italian>Name</Italian>
+		<Spanish>Name</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_MAIN_TABLE_3</Tag>
+		<English>from</English>
+		<French>de</French>
+		<German>von</German>
+		<Italian>from</Italian>
+		<Spanish>from</Spanish>
+		<Russian>из</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_MAIN_TABLE_4</Tag>
+		<English>to</English>
+		<French>vers</French>
+		<German>nach</German>
+		<Italian>to</Italian>
+		<Spanish>to</Spanish>
+		<Russian>в</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_MISSING_YIELD</Tag>
+		<English>-</English>
+		<French>-</French>
+		<German>-</German>
+		<Italian>-</Italian>
+		<Spanish>-</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_MISSING_CITY</Tag>
+		<English>-</English>
+		<French>-</French>
+		<German>-</German>
+		<Italian>-</Italian>
+		<Spanish>-</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_CLEAR_SELECTION_HELP</Tag>
+		<English>Remove selection</English>
+		<French>Annuler la sélection</French>
+		<German>Auswahl löschen</German>
+		<Italian>Remove selection</Italian>
+		<Spanish>Remove selection</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_SELECT_ROUTES_HELP</Tag>
+		<English>Assign all transport routes of this list to the unit</English>
+		<French>Activer toutes les routes commerciales</French>
+		<German>Alle Transportrouten dieser Liste der Einheit zuweisen</German>
+		<Italian>Activate all shown trade routes</Italian>
+		<Spanish>Activate all shown trade routes</Spanish>
+		<Russian>Назначить все транспортные маршруты списка этому юниту</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_DESELECT_ROUTES_HELP</Tag>
+		<English>Deactivate all currently assigned transport routes for this unit</English>
+		<French>Désactiver toutes les routes commerciales</French>
+		<German>Alle derzeit zugewiesenen Transportrouten für diese Einheit deaktivieren</German>
+		<Russian>Отключить все назначенные транспортные маршруты для этого юнита</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_RETURN_HELP</Tag>
+		<English>Return to transport routes main view</English>
+		<French>Retourner au menu principal des routes commerciales</French>
+		<German>Zur Routenübersicht zurückkehren</German>
+		<Italian>Return to trade routes main view</Italian>
+		<Spanish>Return to trade routes main view</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_IGNORE_DANGER_HELP</Tag>
+		<English>Unit does currently stop when an enemy comes into view ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to change)</English>
+		<French>L'unité s'arrête quand un ennemi est en vue ([COLOR:140:255:40:255]&lt; Cliquer &gt;[COLOR_REVERT]pour ignorer les dangers)</French>
+		<German>Einheit hält derzeit an, wenn ein Feind in Sichtweite gerät ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um das zu ändern)</German>
+		<Russian>В настоящее время юнит останавливается, когда враг появляется в поле зрения ([COLOR:140:255:40:255]Нажмите[COLOR_REVERT] для изменения)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_CANCEL_IGNORE_DANGER_HELP</Tag>
+		<English>Unit does not currently stop when an enemy comes into view ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to change)</English>
+		<French>L'unité poursuit sa route même si un ennemi est en vue ([COLOR:140:255:40:255]&lt; Cliquer &gt;[COLOR_REVERT]pour tenir compte des dangers)</French>
+		<German>Einheit hält nicht derzeit an, wenn ein Feind in Sichtweite gerät ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um das zu ändern)</German>
+		<Russian>В настоящее время отряд не останавливается, когда в поле зрения появляется враг ([COLOR:140:255:40:255]Нажмите[COLOR_REVERT] для изменения)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_ADD_SELECTION_HELP</Tag>
+		<English>Confirm this transport route and make it available for transport units</English>
+		<French>Ajouter la sélection en tant que nouvelle route commerciale</French>
+		<German>Diese Transportroute bestätigen und für Transporteinheiten zur Verfügung stellen</German>
+		<Russian>Подтвердите этот транспортный маршрут и сделайте его доступным для транспортных юнитов.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRADE_ROUTES_HELP_HELP</Tag>
+		<English>: Help</English>
+		<French>: Aide</French>
+		<German>: Anleitung</German>
+		<Italian>: Help</Italian>
+		<Spanish>: Help</Spanish>
+		<Russian>: Помощь</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_POPUP_CHOOSE_PROFESSION_UNREST</Tag>
+		<English>The colony is in unrest. Nobody will be able to leave before order is restored.</English>
+		<French>La colonie est en émeute. Personne ne sort tant que l'ordre n'est pas restoré.</French>
+		<German>Die Kolonie ist in Aufruhr. Kolonisten können die Kolonie nicht verlassen.</German>
+		<Russian>В колонии хаос. Никто не может покинуть поселение, пока не будет восстановлен порядок.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STARTUP_TEST_ERROR</Tag>
+		<English>Balancing Warning</English>
+		<French>Problème d'équilibrage</French>
+		<German>Balancing Hinweis</German>
+		<Russian>ВНИМАНИЕ</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STARTUP_TEST_WETLANDS</Tag>
+		<English>The generated map is missing at least one terrain to produce strategic goods. Please try to regenerate the Map. Or play Scenario Maps which will work for sure.</English>
+		<French>La carte générée manque un type de terrain nécessaire à la production de biens stratégique. Veuillez relancer la génération de carte. Ou jouez sur un scénario qui marchera à coup sûr.</French>
+		<German>Die Karte beinhaltet mindestens eine Geländeart nicht, die wichtig für strategische Waren ist. Bitte generiere die Karte neu. Oder spiele eine Szneario Karte, da diese sicher funktionieren.</German>
+		<Russian>На карте отсутствует минимум один из типов местности, требуемый для добычи критически важных ресурсов. Попробуйте сгенерировать карту еще раз (возможно, стоит увеличить размер карты). Или выберите любой из существующих сценариев - их карты содержат все типы местности.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_STARTUP_TEST_AI_PLAYERS</Tag>
+		<English>No European AI players detected. It's possible they were excluded by mistake. "Open" player slots in multiplayer will not be used by AI players.</English>
+		<French>Aucun joueur IA pour les puissances coloniales détecté. Il est possible qu'ils aient été désactivés par mégarde. Les sièges de joueurs « Ouvert » en multijoueurs ne seront pas utilisés par l'IA.</French>
+		<German>Keine KI-Kolonialmächte im Spiel. Es ist möglich, dass diese versehentlich deaktiviert wurden. "Offene" Player Slots werden im Multiplayer nicht automatisch gefüllt.</German>
+		<Russian>Европейские ИИ-игроки не обнаружены. Возможно, они были исключены по ошибке. "Открытые" слоты для игроков в мультиплеере не будут использоваться ИИ-игроками.</Russian>
+	</TEXT>
 </Civ4GameText>

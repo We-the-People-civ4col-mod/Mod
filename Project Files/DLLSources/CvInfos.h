@@ -65,6 +65,7 @@ public:
 	virtual bool readPass3() { FAssertMsg(false, "Override this"); return false; }
 
 	void cleanStrings();
+	bool postLoadSetup();
 
 protected:
 	void checkStringContents(CvWString& szStr, const wchar* szExtension);
@@ -267,6 +268,8 @@ public:
 	bool isEnemyRoute() const;
 	bool isAlwaysHeal() const;
 	bool isHillsDoubleMove() const;
+	bool isAvailableForDefensiveUnit() const; //WTP, jbu - calculated from attack characteristics or rather lack thereof
+	bool isNotAvailableForDefensiveUnit() const; //WTP, jbu
 
 	const char* getSound() const;
 	void setSound(const char* szVal);
@@ -288,6 +291,7 @@ public:
 	void write(FDataStreamBase* stream);
 	bool read(CvXMLLoadUtility* pXML);
 	bool readPass2(CvXMLLoadUtility* pXML);
+	bool postLoadSetup();
 
 protected:
 
@@ -330,7 +334,8 @@ protected:
 	bool m_bEnemyRoute;
 	bool m_bAlwaysHeal;
 	bool m_bHillsDoubleMove;
-
+	bool m_bAvailableForDefensiveUnit;
+	void calculateAvailableForDefensiveUnit();
 	CvString m_szSound;
 	// Arrays
 	int* m_aiTerrainAttackPercent;
@@ -855,7 +860,7 @@ public:
 	bool getFreePromotions(int i) const;
 	bool getProfessionsNotAllowed(int i) const;  	///TK Viscos Mod
 	bool isPrereqOrBuilding(int i) const;
-	int getLeaderPromotion() const;
+	PromotionTypes getLeaderPromotion() const;
 	int getLeaderExperience() const;
 
 	//Androrc UnitArtStyles
@@ -997,7 +1002,7 @@ protected:
 	// < JAnimals Mod Start >
 	bool m_bAnimal;
 	// < JAnimals Mod End >
-	int m_iLeaderPromotion;
+	PromotionTypes m_eLeaderPromotion;
 
 	/// Move Into Peak - start - Nightinggale
 	bool m_bMoveIntoPeak;
@@ -1726,6 +1731,8 @@ public:
 	void read(FDataStreamBase* stream);
 	void write(FDataStreamBase* stream);
 
+	bool postLoadSetup();
+
 	// EXE/python access functions
 	int PY_getDefaultProfession() const;
 
@@ -2425,6 +2432,7 @@ public:
 	bool isGoodyForSpawningHostileAnimals() const; //WTP, Unit only Goodies
 	bool isGoodyForSpawningHostileNatives() const; //WTP, Unit only Goodies
 	bool isGoodyForSpawningHostileCriminals() const; //WTP, Unit only Goodies
+	bool isAINoRemove() const;
 	bool isPermanent() const;
 	DllExport bool useLSystem() const;
 	bool isOutsideBorders() const;
@@ -4157,10 +4165,10 @@ public:
 	const wchar* getPlural() const { return m_szPlural; }
 	DllExport int getNumLanguages() const; // not static for Python access
 	DllExport void setNumLanguages(int iNum); // not static for Python access
-	bool read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, const TCHAR* szLanguage);
+	bool read(CvXMLLoadUtility* pXML, bool bUTF8, const char *szFileName, char const* szLanguage);
 
 	static int getNumLanguagesStatic();
-	static const TCHAR* getLanguageName(int iLanguageID);
+	static char const* getLanguageName(int iLanguageID);
 	static int getLanguageAtIndex(int iIndex);
 	static bool readLanguages(CvXMLLoadUtility* pXML);
 	static void setChangeLanguage();
@@ -4425,7 +4433,7 @@ public:
 	int getNumUnitsGlobal() const;
 	int getNumBuildingsGlobal() const;
 	int getNumPlotsRequired() const;
-	PlotTypes getPlotType() const;
+	const EnumMap<PlotTypes, bool> getPlotTypes() const;
 	int getOtherPlayerShareBorders() const;
 	int getCityFoodWeight() const;
 	CivicTypes getCivic() const;
@@ -4457,7 +4465,7 @@ public:
 	int getNumWorldNews() const;
 
 	// Start EmperorFool: Events with Images
-	const TCHAR* getEventArt() const;				// Exposed to Python
+	char const* getEventArt() const;				// Exposed to Python
 	// End EmperorFool: Events with Images
 	bool isTutorial() const;
 	bool isSinglePlayer() const;
@@ -4504,7 +4512,7 @@ private:
 	int m_iNumUnitsGlobal;
 	int m_iNumBuildingsGlobal;
 	int m_iNumPlotsRequired;
-	PlotTypes m_ePlotType;
+	EnumMap<PlotTypes, bool> m_em_PlotTypes;
 	int m_iOtherPlayerShareBorders;
 	int m_iCityFoodWeight;
 	CivicTypes m_eCivic;
@@ -4559,7 +4567,6 @@ private:
 
 public:
 	// functions purely for the python interface
-	int PY_getPlotType() const;
 	int PY_getCivic() const;
 	int PY_getMinDifficulty() const;
 	int PY_getBuildingRequired(int i) const;
@@ -4646,6 +4653,7 @@ public:
 	const char* getPythonExpireCheck() const;
 	const char* getPythonCanDo() const;
 	const char* getPythonHelp() const;
+	const char* getHelpText() const;
 	const wchar* getUnitNameKey() const;
 	const wchar* getQuestFailTextKey() const;
 	const wchar* getOtherPlayerPopup() const;
@@ -4714,6 +4722,7 @@ private:
 	CvString m_szPythonExpireCheck;
 	CvString m_szPythonCanDo;
 	CvString m_szPythonHelp;
+	CvString m_szHelpText;
 	CvWString m_szUnitName;
 	CvWString m_szOtherPlayerPopup;
 	CvWString m_szQuestFailText;
@@ -4755,7 +4764,8 @@ class CvFatherInfo : public CvInfoBase
 public:
 	DllExport CvFatherInfo();
 	virtual ~CvFatherInfo();
-	int getFatherCategory() const;
+	FatherCategoryTypes getFatherCategory() const;
+	FatherPointTypes getFatherPointType() const;
 	TraitTypes getTrait() const;
 	int getFreeUnits(int iUnitClass) const;
 	int getPointCost(int iFatherPointType) const;
@@ -4773,7 +4783,7 @@ public:
 	bool read(CvXMLLoadUtility* pXML);
 
 protected:
-	int m_iFatherCategory;
+	FatherCategoryTypes m_eFatherCategory;
 	TraitTypes m_eTrait;
 	CivEffectTypes m_eCivEffect;
 	int* m_aiFreeUnits;
@@ -4997,7 +5007,7 @@ public:
 	inline const InfoArray<UnitClassTypes    , int>& getAllowedUnitClasses          () const { return m_info_AllowUnits        ; }
 	inline const InfoArray<YieldTypes        , int>& getAllowedYields               () const { return m_info_AllowYields       ; }
 
-	inline const bool getAllowFoundCity                    () const { return m_iAllowFoundCity        ; }
+	inline const int getAllowFoundCity                     () const { return m_iAllowFoundCity        ; }
 
 	// city
 	inline int getCanUseDomesticMarket                     () const { return m_iCanUseDomesticMarket  ; }

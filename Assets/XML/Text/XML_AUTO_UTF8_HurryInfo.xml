@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_HURRY_GOLD</Tag>
-        <English>Can spend gold to finish production in a settlement</English>
-        <French>Peut dépenser de l'or pour finir la production dans une colonie</French>
-        <German>Kann die Produktion in einer Siedlung durch die Zahlung von Gold vollenden</German>
-        <Italian>Permette di spendere oro per terminare la produzione in un insediamento</Italian>
-        <Spanish>Se puede gastar oro para terminar la producción en un asentamiento</Spanish>
-        <Russian>Можно потратить золото, чтобы завершить производство в поселении.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_HURRY_IMMIGRANT</Tag>
-        <English>Can spend gold to make an immigrant appear instantly at the European docks</English>
-        <French>Peut dépenser de l?or pour qu?un immigrant apparaisse instantanément dans les docks européens</French>
-        <German>Kann Gold ausgeben, damit sofort ein Immigrant an den Docks in Europa erscheint</German>
-        <Italian>Puoi usare dell'oro per far comparire istantaneamente un immigrante sui moli europei</Italian>
-        <Spanish>Es posible gastar Oro para que un inmigrante aparezca en el acto en los muelles de Europa.</Spanish>
-        <Russian>Можно потратить золото, чтобы иммигрант мгновенно появился в европейских доках.</Russian>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HURRY_GOLD</Tag>
+		<English>Can spend gold to finish production in a settlement</English>
+		<French>Peut dépenser de l'or pour finir la production dans une colonie</French>
+		<German>Kann die Produktion in einer Siedlung durch die Zahlung von Gold vollenden</German>
+		<Italian>Permette di spendere oro per terminare la produzione in un insediamento</Italian>
+		<Spanish>Se puede gastar oro para terminar la producción en un asentamiento</Spanish>
+		<Russian>Можно потратить золото, чтобы завершить производство в поселении.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_HURRY_IMMIGRANT</Tag>
+		<English>Can spend gold to make an immigrant appear instantly at the European docks</English>
+		<French>Peut dépenser de l?or pour qu?un immigrant apparaisse instantanément dans les docks européens</French>
+		<German>Kann Gold ausgeben, damit sofort ein Immigrant an den Docks in Europa erscheint</German>
+		<Italian>Puoi usare dell'oro per far comparire istantaneamente un immigrante sui moli europei</Italian>
+		<Spanish>Es posible gastar Oro para que un inmigrante aparezca en el acto en los muelles de Europa.</Spanish>
+		<Russian>Можно потратить золото, чтобы иммигрант мгновенно появился в европейских доках.</Russian>
+	</TEXT>
 </Civ4GameText>

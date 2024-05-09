@@ -9,7 +9,7 @@
 #include "CvDLLEntityIFaceBase.h"
 #include "CvGameCoreUtils.h"
 #include "FProfiler.h"
-#include "CVInfos.h"
+#include "CvInfos.h"
 #include "CvTradeRoute.h"
 //TAC Whaling, ray
 #include "CvDLLInterfaceIFaceBase.h"
@@ -195,7 +195,7 @@ bool CvSelectionGroupAI::AI_update()
 			{
 				if (GC.getLogging())
 				{
-					TCHAR szOut[1024];
+					char szOut[1024];
 					CvWString szTempString;
 					getUnitAIString(szTempString, pHeadUnit->AI_getUnitAIType());
 					sprintf(szOut, "Unit stuck in loop: %S(%S)[%d, %d] (%S)", pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
@@ -213,7 +213,7 @@ bool CvSelectionGroupAI::AI_update()
 		{
 			m_bGroupAttack = false;
 
-			groupAttack(m_iGroupAttackX, m_iGroupAttackY, MOVE_DIRECT_ATTACK, bFailedAlreadyFighting);
+			groupAttack(CREATE_ASSERT_DATA, m_iGroupAttackX, m_iGroupAttackY, MOVE_DIRECT_ATTACK, bFailedAlreadyFighting);
 		}
 		// else pick AI action
 		else
@@ -548,7 +548,7 @@ inline bool CvSelectionGroupAI::AI_isGroupAttack()
 	return m_bGroupAttack;
 }
 
-bool CvSelectionGroupAI::AI_isControlled()
+bool CvSelectionGroupAI::AI_isControlled() const
 {
 	return (!isHuman() || isAutomated());
 }
@@ -760,8 +760,7 @@ bool CvSelectionGroupAI::AI_launchAssault(CvPlot* pTargetCityPlot)
 
     while (pUnitNode != NULL)
     {
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
         if (pLoopUnit != NULL && pLoopUnit->isCargo())
         {
@@ -1043,8 +1042,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 		CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 		while (pUnitNode != NULL)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL)
 			{
@@ -1135,10 +1133,10 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			int iAmount = pSourceCity->getYieldStored(eYield) - pSourceCity->getAutoMaintainThreshold(eYield);
 			// transport feeder - end - Nightinggale
 			// R&R mod, vetiarvind, max yield import limit - start
-			if(pDestinationCity != NULL &&   pDestinationCity->getMaxImportAmount(eYield) > 0)
+			if(pDestinationCity != NULL && pDestinationCity->getMaxImportAmount(eYield) > 0)
 			{
 				int turnsToReachToSource = 0, turnsToReachFromSourceToDest = 0;
-				const bool bSourceOk = generatePath(plot(), pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachToSource);
+				const bool bSourceOk = generatePath(pSourceCity->plot(), plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachToSource);
 				const bool bDestOk = generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachFromSourceToDest);
 
 				if (!(bSourceOk && bDestOk))
@@ -1418,8 +1416,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				CvUnit* pLoopUnit;
 				while (pUnitNode != NULL)
 				{
-					pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = plot()->nextUnitNode(pUnitNode);
+					pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 					if (pLoopUnit != NULL)
 					{

@@ -2,6 +2,10 @@
 #include "CyArea.h"
 #include "CyTeam.h"
 #include "CyUnit.h"
+
+#include <boost/python/class.hpp>
+namespace python = boost::python;
+
 //
 // published python interface for CyTeam
 //

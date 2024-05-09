@@ -39,6 +39,8 @@ static void DisplayXMLhardcodingError(const char* szName, const char* szAssumedN
 	DisplayXMLhardcodingError(strcmp(szName, szAssumedName) == 0, szName, false);
 }
 
+void CyEnumsPythonInterfacePostApply();
+
 void CvGlobals::postXMLLoad(bool bFirst)
 {
 	if (bFirst)
@@ -62,6 +64,8 @@ void CvGlobals::postXMLLoad(bool bFirst)
 	}
 	else // bFirst
 	{
+		// expose the rest of the enum data to python now that all have been read from xml
+		CyEnumsPythonInterfacePostApply();
 		// Now all xml data has been loaded
 
 		// first test if DLL hardcoding and xml are out of sync

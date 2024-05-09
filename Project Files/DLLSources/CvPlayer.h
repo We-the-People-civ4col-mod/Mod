@@ -14,6 +14,7 @@
 #include "CvTradeRouteGroup.h" //R&R mod, vetiarvind, trade groups
 #include "PlayerHelperFunctions.h"
 
+#define	UNIT_BIRTHMARK_TEMP_UNIT	20000
 
 class CvDiploParameters;
 class CvPlayerAI;
@@ -219,7 +220,7 @@ public:
 	void getCivilizationCityName(CvWString& szBuffer, CivilizationTypes eCivilization) const;
 	bool isCityNameValid(const CvWString& szName, bool bTestDestroyed = true) const;
 	DllExport CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, int iX, int iY, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
-	CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordinates initCoord, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0);
+	CvUnit* initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordinates initCoord, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION, int iYieldStored = 0, int iBirthmark = -1);
 	CvUnit* initEuropeUnit(UnitTypes eUnit, UnitAITypes eUnitAI = NO_UNITAI, DirectionTypes eFacingDirection = NO_DIRECTION);
 	bool initEuropeSettler(bool bPayEquipment);
 	bool initEuropeTransport(bool bPay);
@@ -256,7 +257,7 @@ public:
 	DllExport bool isInvertFlag() const;
 	DllExport const CvWString getWorstEnemyName() const;
 	DllExport ArtStyleTypes getArtStyleType() const;
-	const TCHAR* getUnitButton(UnitTypes eUnit) const;
+	char const* getUnitButton(UnitTypes eUnit) const;
 	void doTurn();
 	void doTurnUnits();
 	void doEra();
@@ -478,8 +479,15 @@ public:
 	void setPersonalityType(LeaderHeadTypes eNewValue);
 	DllExport EraTypes getCurrentEra() const;
 	void setCurrentEra(EraTypes eNewValue);
+
 	PlayerTypes getParent() const;
 	void setParent(PlayerTypes eParent);
+	PlayerTypes getColony() const;
+	void setColony(PlayerTypes eColony);
+
+	CvPlayerAI* getColonyPlayer() const;
+	CvPlayerAI* getParentPlayer() const;
+
 	DllExport TeamTypes getTeam() const;
 	void setTeam(TeamTypes eTeam);
 	void updateTeamType();
@@ -582,7 +590,9 @@ public:
 
 	// unit iteration
 	DllExport CvUnit* firstUnit(int *pIterIdx) const;
+	CvUnit* firstUnitInternal(int* pIterIdx) const;
 	DllExport CvUnit* nextUnit(int *pIterIdx) const;
+	CvUnit* nextUnitInternal(int* pIterIdx) const;
 	DllExport int getNumUnits() const;
 	int getNumShips() const;// WTP, ray, easily counting Ships - START
 	DllExport CvUnit* getUnit(int iID) const;
@@ -783,6 +793,10 @@ public:
 	// R&R, vetiarvind, Price dependent tax rate change - Start
 	int CvPlayer::getYieldScoreTotal(YieldTypes eYield) const;
 	void CvPlayer::setYieldScoreTotal(YieldTypes eYield, int iValue);
+	const int getFullYieldScore();
+	const int getTaxRaiseChance();
+	const int getTaxThresold();
+
 	void CvPlayer::changeYieldTradedTotal(YieldTypes eYield, int iChange, int iUnitPrice = -1);
 	void CvPlayer::changeYieldTradedTotalAfrica(YieldTypes eYield, int iChange, int iUnitPrice = -1); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 	void CvPlayer::changeYieldTradedTotalPortRoyal(YieldTypes eYield, int iChange, int iUnitPrice = -1); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
@@ -847,6 +861,7 @@ public:
 	bool hasContentsYieldEquipmentAmountSecure(ProfessionTypes eProfession) const;
 	// cache CvPlayer::getYieldEquipmentAmount - end - Nightinggale
 	bool isProfessionValid(ProfessionTypes eProfession, UnitTypes eUnit) const;
+	void taxIncreaseDiploCall(int iOldTaxRate, int iNewTaxRate, int iChange);
 	void changeProfessionEurope(int iUnitId, ProfessionTypes eProfession);
 
 	int getNumRevolutionEuropeUnits() const;
@@ -959,6 +974,9 @@ public:
 	UnitTypes getUnitType(UnitClassTypes eUnitClass) const;
 
 	void writeDesyncLog(FILE *f) const;
+
+	DirectionTypes getPreferredStartingDirection() const;
+	std::vector<CvUnit*> getPortUnitsByProfession(ProfessionTypes eProfession) const;
 
 protected:
 
@@ -1093,8 +1111,12 @@ protected:
 	LeaderHeadTypes m_ePersonalityType;
 	EraTypes m_eCurrentEra;
 	PlayerTypes m_eParent;
+	PlayerTypes m_eColony;
 	TeamTypes m_eTeamType;
 	YieldTypes m_eImmigrationConversion;
+
+	CvPlayerAI* m_pParent;
+	CvPlayerAI* m_pColony;
 
 	EnumMap<YieldTypes, int> m_em_iLandPlotYield; // R&R, ray, Landplot Yields - START
 	EnumMap<YieldTypes, int> m_em_iSeaPlotYield;
@@ -1188,8 +1210,13 @@ protected:
 	void doWarnings();
 	void doEvents();
 	void doPrices();
+	void doTaxRaises(); //WTP, jburet, Tax Reform
 	void doAfricaPrices(); // R&R, ray, Africa
 	void doPortRoyalPrices(); // R&R, ray, Port Royal
+	void wipeRoyalYieldScore(); //WTP, jburet, Tax Reform
+
+	const int getFullYieldScore(bool fullCalculation);//WTP, jburet, Tax Reform
+	const int getTaxThresold(bool fullCalculation);//WTP, jburet, Tax Reform
 
 	bool checkExpireEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData) const;
 	void expireEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData, bool bFail);
@@ -1230,6 +1257,11 @@ protected:
 	void testOOSanDoEvent(EventTypes eEvent, bool bSuccess) const;
 	void testOOSanDoGoody(GoodyTypes eGoody, int iUnitID, bool bSuccess) const;
 
+	// Temp unit which is used to generate paths for hypothetical units.
+	// Kept around rather than created each usage to avoid chewing through the ID space.
+	CvUnit* m_pTempUnit;
+
+	// transport feeder - start - Nightinggale
 public:
 	int getIDSecondPlayerFrenchNativeWar() const;//WTP, ray, Colonial Intervention In Native War - START
 	// transport feeder - start - Nightinggale
@@ -1263,6 +1295,13 @@ public:
 	long long getPlayerOppressometer() const
 	{
 		return m_lPlayerOppressometer;
+	}
+	CvUnit* getOrCreateTempUnit(UnitTypes eUnit, int iX, int iY);
+	void releaseTempUnit();
+
+	inline bool isTempUnit(const CvUnit* pUnit) const
+	{
+		return (pUnit == m_pTempUnit || pUnit->AI_getBirthmark() == UNIT_BIRTHMARK_TEMP_UNIT);
 	}
 };
 

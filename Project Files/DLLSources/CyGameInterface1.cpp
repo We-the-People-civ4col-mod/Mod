@@ -3,6 +3,10 @@
 #include "CvRandom.h"
 #include "CyCity.h"
 #include "CyReplayInfo.h"
+#include "CyPlot.h"
+
+#include <boost/python/class.hpp>
+
 //
 // published python interface for CyGame
 //
@@ -10,7 +14,7 @@
 void CyGamePythonInterface1(python::class_<CyGame>& x)
 {
 	OutputDebugString("Python Extension Module - CyGamePythonInterface1\n");
-	
+
 	x
 		// R&R, ray, Correct Geographical Placement of Natives - START
 		.def("isWBNorthAmericanNative", &CyGame::isWBNorthAmericanNative)

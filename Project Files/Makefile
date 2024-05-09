@@ -30,7 +30,7 @@
 ##     in Makefile.settings and it will be defined for you without the risk of committing active debug output to other people
 ##
 ##     You can write whatever you want after -D and it will work like you write #DEFINE in C++
-## 
+##
 
 
 #### Paths ####
@@ -76,8 +76,8 @@ BLACKLIST=CvTextScreens
 ## Assert adds /DFASSERT_ENABLE, which should be added to additional options too, if you care.
 ## However you will only be able to tell a difference if you do something with asserts other than FAssert() or FAssertMsg()
 
-Debug_DEFINES=/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /D_DEBUG
-Release_DEFINES=/DWIN32 /D_WINDOWS /D_USRDLL /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE
+Debug_DEFINES=/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /D_DEBUG
+Release_DEFINES=/DWIN32 /D_WINDOWS /DCVGAMECOREDLL_EXPORTS /DNDEBUG /DFINAL_RELEASE
 
 #### You shouldn't need to modify anything beyond this point ####
 #################################################################
@@ -165,8 +165,6 @@ Target_RESOURCE=$(TEMP_TARGET_FILES)\CvGameCoreDLL.res
 
 Target_STATICLIB=$(TEMP_TARGET_FILES)\CvGameCoreDLL.lib
 
-Target_LIBDEF=$(TEMP_TARGET_FILES)\CvGameCoreDLL.def
-
 Target_PCH=$(TEMP_TARGET_FILES)\CvGameCoreDLL.pch
 
 Target_PDB=$(TEMP_TARGET_FILES)\CvGameCoreDLL.pdb
@@ -191,7 +189,7 @@ PRECOMPILE_CFLAGS2 = CvGameCoreDLL.h" /Fp"$(Target_PCH)"
 #### LDFLAGS ####
 
 # /DEBUG makes the linker make a pdb file (symbols), something we need for both debugging and profiling
-GLOBAL_LDFLAGS=/DLL /NOLOGO /DEBUG /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /PDB:"$(Target_PDB)" $(CUSTOM_LDFLAGS) $(PROJECT_LDFLAGS) /IGNORE:4089 /DEF:"$(SOURCE_DIR)\CvGameCoreDLL.def"
+GLOBAL_LDFLAGS=/DLL /NOLOGO /DEBUG /SUBSYSTEM:WINDOWS /LARGEADDRESSAWARE /TLBID:1 /PDB:"$(Target_PDB)" $(CUSTOM_LDFLAGS) $(PROJECT_LDFLAGS) /IGNORE:4089
 Debug_LDFLAGS=/INCREMENTAL /IMPLIB:"$(Target_STATICLIB)" $(GLOBAL_LDFLAGS)
 Release_LDFLAGS=/INCREMENTAL:NO /OPT:REF /OPT:ICF $(GLOBAL_LDFLAGS)
 
@@ -271,7 +269,7 @@ LDFLAGS = $(LDFLAGS) $(CONFIG_DLFLAGS)
 #### Targets ####
 #################
 
-.PHONY: all clean build precompile Make_Dir fastdep source_list pre_test test test_DllExport BuildRelease
+.PHONY: all clean build precompile Make_Dir fastdep source_list pre_test test test_DllExport BuildRelease source_list_building header_building test_Python
 
 all: Precompile build
 
@@ -279,8 +277,8 @@ dll: all
 
 clean:
 	@IF EXIST "$(TEMP_TARGET_FILES)" RMDIR /s /q "$(TEMP_TARGET_FILES)"
-	@FOR %i IN ($(Target_BIN) $(Target_STATICLIB) $(Target_LIBDEF) $(Target_RESOURCE) \
-		$(Target_PCH) $(Target_PDB) $(Target_OTHER) "WeThePeople-*.zip") DO @IF EXIST "%i" DEL "%i"
+	@FOR %i IN ($(Target_BIN) $(Target_STATICLIB) $(Target_RESOURCE) \
+		$(Target_PCH) $(Target_PDB) $(Target_OTHER) "WeThePeople-*.zip" $(TEMP_FILE_DIR)"\python.timestamp") DO @IF EXIST "%i" DEL "%i"
 
 build: $(Target_BIN)
 !IFDEF YOURMOD
@@ -295,7 +293,9 @@ build: $(Target_BIN)
 
 precompile: Make_Dir Target_unfinished $(Target_PCH)
 
-source_list: Make_Dir test_DllExport
+source_list: source_list_building Make_Dir test_DllExport test_Python fastdep
+
+source_list_building: header_building
 	@ECHO Building source list
 	@ECHO SOURCES= \> $(FILE_DEPENDS)
 	@FOR %j in ($(SUBDIRS)) DO @(FOR %i IN ($(SOURCE_DIR)\%j\*.cpp) DO @ECHO %i \>> $(FILE_DEPENDS))
@@ -304,11 +304,17 @@ source_list: Make_Dir test_DllExport
 	@ECHO OBJS= \>> $(FILE_DEPENDS)
     @FOR %j in ($(SUBDIRS)) DO @(FOR /F "delims=." %i IN ('dir /b $(SOURCE_DIR)\%j\*.cpp') DO @ECHO. $(TEMP_TARGET_FILES)\%j\%i.obj \>> $(FILE_DEPENDS))
     @ECHO.>> $(FILE_DEPENDS)
+	
+header_building:
+!IFDEF NO_FASTDEP
+	@IF EXIST $(TEMP_TARGET_FILES) DEL /f /q $(TEMP_TARGET_FILES)
+!ENDIF
+	@ECHO Building headers
 	@$(PERL) bin\xml_enum_gen.pl
 	@$(PERL) bin\variable_setup.pl
 	@$(PERL) bin\Makefile_setup.pl "$(PROGRAMFILES)"
 
-fastdep:
+fastdep: source_list_building
 	@ECHO Running fastdep
 !IFDEF RELEASE_VERSION
 	@echo $(RELEASE_VERSION)| $(PERL) bin\git_version.pl
@@ -317,8 +323,10 @@ fastdep:
 !ELSE
 	@echo Unknown Version| $(PERL) bin\git_version.pl
 !ENDIF
+!IFNDEF NO_FASTDEP
 	@$(FD) --objectextension=pch -q --removepath=$(SOURCE_DIR)\ -O $(TEMP_TARGET_FILES) $(SOURCE_DIR)\CvGameCoreDLL.cpp >> $(FILE_DEPENDS)
     @$(FD) --objectextension=obj -q --removepath=$(SOURCE_DIR)\ -O $(TEMP_TARGET_FILES) $(SOURCES) >> $(FILE_DEPENDS)
+!ENDIF
 
 Make_Dir:
 	@FOR %j in ($(SUBDIRS)) DO @(IF NOT EXIST "$(TEMP_TARGET_FILES)\%j\." MKDIR "$(TEMP_TARGET_FILES)\%j")
@@ -344,7 +352,7 @@ $(Target_BIN): $(OBJS) $(Target_RESOURCE)
 	@ECHO.>"$*.obj.@"
     @$(CPP) /nologo $(CFLAGS) $(INCS) /Fo$*.obj /c $<
 	@DEL "$*.obj.@"
-	
+
 {$(SOURCE_DIR)\$(SUBDIR1)}.cpp{$(TEMP_TARGET_FILES)\$(SUBDIR1)}.obj:
 	@ECHO.>"$*.obj.@"
     @$(CPP) /nologo $(CFLAGS) $(PRECOMPILE_CFLAGS1)$(SUBDIRPATH1)$(PRECOMPILE_CFLAGS2) $(INCS) /Fo$*.obj /c $<
@@ -364,7 +372,7 @@ $(Target_BIN): $(OBJS) $(Target_RESOURCE)
 	@ECHO.>"$*.obj.@"
     @$(CPP) /nologo $(CFLAGS) $(PRECOMPILE_CFLAGS1)$(SUBDIRPATH4)$(PRECOMPILE_CFLAGS2) $(INCS) /Fo$*.obj /c $<
 	@DEL "$*.obj.@"
-	
+
 {$(SOURCE_DIR)\$(SUBDIR5)}.cpp{$(TEMP_TARGET_FILES)\$(SUBDIR5)}.obj:
 	@ECHO.>"$*.obj.@"
     @$(CPP) /nologo $(CFLAGS) $(PRECOMPILE_CFLAGS1)$(SUBDIRPATH5)$(PRECOMPILE_CFLAGS2) $(INCS) /Fo$*.obj /c $<
@@ -384,7 +392,7 @@ $(Target_BIN): $(OBJS) $(Target_RESOURCE)
 	@ECHO.>"$*.obj.@"
     @$(CPP) /nologo $(CFLAGS) $(PRECOMPILE_CFLAGS1)$(SUBDIRPATH8)$(PRECOMPILE_CFLAGS2) $(INCS) /Fo$*.obj /c $<
 	@DEL "$*.obj.@"
-	
+
 {$(SOURCE_DIR)\$(SUBDIR9)}.cpp{$(TEMP_TARGET_FILES)\$(SUBDIR9)}.obj:
 	@ECHO.>"$*.obj.@"
     @$(CPP) /nologo $(CFLAGS) $(PRECOMPILE_CFLAGS1)$(SUBDIRPATH9)$(PRECOMPILE_CFLAGS2) $(INCS) /Fo$*.obj /c $<
@@ -419,7 +427,7 @@ $(Target_BIN): $(OBJS) $(Target_RESOURCE)
 	@ECHO.>"$*.obj.@"
     @$(CPP) /nologo $(CFLAGS) $(PRECOMPILE_CFLAGS1)$(SUBDIRPATH15)$(PRECOMPILE_CFLAGS2) $(INCS) /Fo$*.obj /c $<
 	@DEL "$*.obj.@"
-	
+
 
 $(Target_PCH) $(TEMP_TARGET_FILES)\_precompile.obj: $(PRECOMPILE_DEPENDENCIES)
 	@ECHO.>"$(Target_PCH).@"
@@ -467,7 +475,11 @@ test_DllExport:
 	@$(PERL) bin\DllExport.pl "$(SOURCE_DIR)"
 	@$(PERL) bin\xml_validation.pl
 	@$(PERL) bin\CPP_line_checker.pl
+	@$(PERL) bin\InfoArray.pl
+
+test_Python: header_building
 	@$(PERL) bin\xml_enum_global_types.pl
+	@$(PERL) bin\python_enum_check.pl
 
 # first step in the testing process
 # each target mentioned here will run in a dedicated process

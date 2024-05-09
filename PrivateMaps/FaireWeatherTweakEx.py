@@ -361,7 +361,13 @@ class MapConstants :
         # Belisarius - Large Rivers
         self.LARGE_RIVER = 11
         self.LAKE = 12
-  
+
+        # We need to set initial default values here. They will be changed when we know actual grid size.
+        self.iceCapMaxHeightNorth = 4
+        self.iceCapMaxHeightSouth = 4
+
+        # complementary Hill generation coefficient, 0.3 was a bit too much
+        self.complementaryHillsCoeff = 0.25
         return
     
     def initInGameOptions(self):
@@ -2122,7 +2128,7 @@ class SmallMaps :
                                 self.terrainMap[i] = mc.SAVANNAH
                             # Generate some Hills
                             iRandPlotType = PRand.random()
-                            if iRandPlotType <= 0.3: 
+                            if iRandPlotType <= mc.complementaryHillsCoeff:
                                 self.plotMap[i] = mc.HILLS
                             #ray Savannah End
                         else:
@@ -2135,7 +2141,7 @@ class SmallMaps :
                                 self.terrainMap[i] = mc.SAVANNAH
                             # Generate some Hills
                             iRandPlotType = PRand.random()
-                            if iRandPlotType <= 0.3: 
+                            if iRandPlotType <= mc.complementaryHillsCoeff:
                                 self.plotMap[i] = mc.HILLS
 
         #Make sure ice is always higher than tundra, and tundra is always higher than
@@ -4716,23 +4722,23 @@ def generateTerrainTypes():
     NiTextOut("Generating Terrain  ...")
     print "Adding Terrain"
     gc = CyGlobalContext()
-    terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
-    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
-    terrainIce = gc.getInfoTypeForString("TERRAIN_SNOW")
-    terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
-    terrainGrass = gc.getInfoTypeForString("TERRAIN_GRASS")
-    terrainHill = gc.getInfoTypeForString("TERRAIN_HILL")
-    terrainCoast = gc.getInfoTypeForString("TERRAIN_COAST")
-    terrainShallowCoast = gc.getInfoTypeForString("TERRAIN_SHALLOW_COAST")
-    terrainOcean = gc.getInfoTypeForString("TERRAIN_OCEAN")
-    terrainPeak = gc.getInfoTypeForString("TERRAIN_PEAK")
-    terrainMarsh = gc.getInfoTypeForString("TERRAIN_MARSH")
+    terrainDesert = TerrainTypes.TERRAIN_DESERT
+    terrainPrairie = TerrainTypes.TERRAIN_PLAINS
+    terrainIce = TerrainTypes.TERRAIN_SNOW
+    terrainTundra = TerrainTypes.TERRAIN_TUNDRA
+    terrainGrass = TerrainTypes.TERRAIN_GRASS
+    terrainHill = TerrainTypes.TERRAIN_HILL
+    terrainCoast = TerrainTypes.TERRAIN_COAST
+    terrainShallowCoast = TerrainTypes.TERRAIN_SHALLOW_COAST
+    terrainOcean = TerrainTypes.TERRAIN_OCEAN
+    terrainPeak = TerrainTypes.TERRAIN_PEAK
+    terrainMarsh = TerrainTypes.TERRAIN_MARSH
     #Androrc Savannah
-    terrainSavannah = gc.getInfoTypeForString("TERRAIN_SAVANNAH")
+    terrainSavannah = TerrainTypes.TERRAIN_SAVANNAH
     #Androrc End
-    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
+    terrainPlains = TerrainTypes.TERRAIN_PLAINS_FERTILE
     # Belisarius - Large Rivers
-    terrainLargeRiver = gc.getInfoTypeForString("TERRAIN_LARGE_RIVERS")
+    terrainLargeRiver = TerrainTypes.TERRAIN_LARGE_RIVERS
 
    
     terrainTypes = [0]*(mc.width*mc.height)
@@ -4853,7 +4859,7 @@ def addLakes():
     print "Adding Lakes"
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    terrainLake = gc.getInfoTypeForString("TERRAIN_LAKE")
+    terrainLake = TerrainTypes.TERRAIN_LAKE
 #    PrintFlowMap()
     oceanMap = Areamap(mc.width,mc.height,True,True)
     oceanMap.defineAreas(isSmallWaterMatch)
@@ -4876,7 +4882,7 @@ def addFeatures():
     print "Adding Large Rivers"
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    featureRiverFord = gc.getInfoTypeForString("FEATURE_RIVER_FORD")
+    featureRiverFord = FeatureTypes.FEATURE_RIVER_FORD
 
     for y in range(mc.height):
         for x in range(mc.width):
@@ -4934,8 +4940,8 @@ def generateShallowCoast():
     gc = CyGlobalContext()
     mmap = gc.getMap()
     am = Areamap(mc.hmWidth,mc.hmHeight,True,True)
-    terrainCoast = gc.getInfoTypeForString("TERRAIN_COAST")
-    terrainShallowCoast = gc.getInfoTypeForString("TERRAIN_SHALLOW_COAST")
+    terrainCoast = TerrainTypes.TERRAIN_COAST
+    terrainShallowCoast = TerrainTypes.TERRAIN_SHALLOW_COAST
     
     shallowCoastChance = 0.2 # Baseline chance for converting coast to shallow coast
     shallowCostAdjacentChance = 0.4 # Higher chance if there's already adjacent shallow coast
@@ -4956,11 +4962,11 @@ def generateShrubland():
     
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    terrainShrubland = gc.getInfoTypeForString("TERRAIN_SHRUBLAND")
-    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
-    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
-    terrainGrassland = gc.getInfoTypeForString("TERRAIN_GRASS")
-    terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
+    terrainShrubland = TerrainTypes.TERRAIN_SHRUBLAND
+    terrainPrairie = TerrainTypes.TERRAIN_PLAINS
+    terrainPlains = TerrainTypes.TERRAIN_PLAINS_FERTILE
+    terrainGrassland = TerrainTypes.TERRAIN_GRASS
+    terrainDesert = TerrainTypes.TERRAIN_DESERT
 
     shrublandChance = 0.5 # Baseline chance for converting terrains around desert to shrubland
     shrublandNextToShrublandChance = 0.5 # Chance to create Shrubland next to other Shrubland
@@ -4975,24 +4981,24 @@ def generateShrubland():
                         if PRand.random() <= shrublandChance:
                             plot.setTerrainType(terrainShrubland, True, True)
                             iRandPlotType = PRand.random()
-                            if iRandPlotType <= 0.3: 
+                            if iRandPlotType <= mc.complementaryHillsCoeff:
                                 plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
                     elif isAnyAdjacentPlotTerrainType(x, y, terrainShrubland):
                         if PRand.random() <= shrublandNextToShrublandChance:
                             plot.setTerrainType(terrainShrubland, True, True)
                             iRandPlotType = PRand.random()
-                            if iRandPlotType <= 0.3: 
+                            if iRandPlotType <= mc.complementaryHillsCoeff:
                                 plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
 
 def generateTaiga():
     
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    terrainTaiga = gc.getInfoTypeForString("TERRAIN_TAIGA")
-    terrainGrassland = gc.getInfoTypeForString("TERRAIN_GRASS")
-    terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
-    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
-    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
+    terrainTaiga = TerrainTypes.TERRAIN_TAIGA
+    terrainGrassland = TerrainTypes.TERRAIN_GRASS
+    terrainTundra = TerrainTypes.TERRAIN_TUNDRA
+    terrainPrairie = TerrainTypes.TERRAIN_PLAINS
+    terrainPlains = TerrainTypes.TERRAIN_PLAINS_FERTILE
     
     tundraToTaigaChance = 0.4 # Baseline chance to convert Tundra To Taiga
     taigaNearTundraChance = 0.1 # Baseline chance for converting other terrain next to Tundar to Taiga
@@ -5008,7 +5014,7 @@ def generateTaiga():
                             plot.setTerrainType(terrainTaiga, True, True)
                             # Generate some Hills
                             iRandPlotType = PRand.random()
-                            if iRandPlotType <= 0.3: 
+                            if iRandPlotType <= mc.complementaryHillsCoeff:
                                 plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
                 if plot.getTerrainType() == terrainTundra:
                     if isAnyAdjacentPlotTerrainType(x, y, terrainTundra):
@@ -5023,9 +5029,9 @@ def generateRockSteppes():
 
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
-    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
-    terrainRockSteppes = gc.getInfoTypeForString("TERRAIN_ROCK_STEPPES")
+    terrainPrairie = TerrainTypes.TERRAIN_PLAINS
+    terrainPlains = TerrainTypes.TERRAIN_PLAINS_FERTILE
+    terrainRockSteppes = TerrainTypes.TERRAIN_ROCK_STEPPES
     
     rockSteppesChance = 0.25 # Baseline chance for converting terrain
     
@@ -5042,7 +5048,7 @@ def generateRockSteppes():
                                     plot.setTerrainType(terrainRockSteppes, True, True)
                                     # Generate some Hills
                                     iRandPlotType = PRand.random()
-                                    if iRandPlotType <= 0.3: 
+                                    if iRandPlotType <= mc.complementaryHillsCoeff:
                                         plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
 
     
@@ -5056,16 +5062,16 @@ def generateRockSteppes():
                             if PRand.random() <= rockSteppesChance:
                                 plot.setTerrainType(terrainRockSteppes, True, True)
                                 iRandPlotType = PRand.random()
-                                if iRandPlotType <= 0.3: 
+                                if iRandPlotType <= mc.complementaryHillsCoeff:
                                     plot.setPlotType(PlotTypes.PLOT_HILLS,True,True)
 
 def generateWetland():
 
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    terrainWetland = gc.getInfoTypeForString("TERRAIN_WETLAND")
-    terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
-    terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
+    terrainWetland = TerrainTypes.TERRAIN_WETLAND
+    terrainDesert = TerrainTypes.TERRAIN_DESERT
+    terrainTundra = TerrainTypes.TERRAIN_TUNDRA
     
     wetlandChance = 0.1 # Baseline chance for converting terrain
     wetlandAdjacentChance = 0.5 # Higher chance if there's already adjacent wetland
@@ -5102,12 +5108,17 @@ def generateWetland():
                                 plot.setTerrainType(terrainWetland, True, True)
                         
 def afterGeneration():
+
+    # Those are scaled depending on map size, and will scale also if new map sizes are introduced
+    mc.iceCapMaxHeightNorth = 2 + int(round(PRand.random() * 0.224 * (mc.height ** 0.34))) + mc.height // 21
+    mc.iceCapMaxHeightSouth = 2 + int(round(PRand.random() * 0.224 * (mc.height ** 0.34))) + mc.height // 21
+
     gc = CyGlobalContext()
     mmap = gc.getMap()
     em.initialize()
     
-    europeEast = gc.getInfoTypeForString("EUROPE_EAST")
-    europeWest = gc.getInfoTypeForString("EUROPE_WEST")
+    europeEast = EuropeTypes.EUROPE_EAST
+    europeWest = EuropeTypes.EUROPE_WEST
     
     for y in range(mc.height):
         for x in range(mc.width):
@@ -5118,7 +5129,7 @@ def afterGeneration():
                 continue
             if x > mc.width/3 and x < 2 * mc.width/3:#dont penetrate past 1/3 of map
                 continue
-            if y < 4 or y > mc.height - 5:#make room for ice
+            if y < mc.iceCapMaxHeightSouth or y > mc.height - 1 - mc.iceCapMaxHeightNorth: #make room for ice
                 continue
             landFound = False
             for yy in range(y - mc.distanceToEurope,y + mc.distanceToEurope + 1,1):
@@ -5161,42 +5172,150 @@ def afterGeneration():
                     plot.setEurope(europeWest)
                 else:
                     plot.setEurope(europeEast)
-        
-    createIce()
+
     generateShallowCoast()
     generateShrubland()
     generateTaiga()
     generateRockSteppes()
     generateWetland()
+    createIce()
     mg = CyMapGenerator()
     mg.addFeaturesOnLand()
     mg.addFeaturesOnWater()
-    
+
+# both arguments must be floating point numbers between 0.0 and 1.0
+def addProbability(p1, p2):
+    return 1.0 - (1.0 - p1) * (1.0 - p2)
+
+# This Function creates Ice Caps on poles with slightly random penetration, depending on following factors:
+# Map Size, tile surrounding and how far from edge of the map tile actually is.
+# The resulting caps should form irregular shape, but still remain quite solid
 def createIce():
+    ## Those are magic numbers, empirically balanced:
+
+    # There is a very little chance that a tile can be ice-capped without corresponding surrounding
+    initialChance = 0.002
+    chanceIncreaseAdjacent = 0.35
+    chanceIncreaseDiagonal = 0.18
+    chanceReductionFromLatitude = 0.20 * mc.height ** 0.287
+
+    numOfIterations = 3
+
+    def isPlotWithinBounds(x, y):
+         return 0 <= x < mc.width and 0 <= y < mc.height
+
+    def calculateIceChanceFromAdjacent(x, y):
+        # More chance for Ice if adjacent tiles are Ice or Permafrost
+        totalChance = initialChance
+        # this list will give the right chances depending on the directions, as they are well ordered
+        chances = [0] + [chanceIncreaseAdjacent] * 4 + [chanceIncreaseDiagonal] * 4
+
+        for direction in range(1, 9):
+            xx, yy = GetXYFromDirection(x, y, direction)
+            if isPlotWithinBounds(xx, yy) and (xx, yy) in icePlots:
+                totalChance = addProbability(totalChance, chances[direction])
+        return totalChance
+
+    # used only for command-line tests
+    def printIceMap():
+        lineString = "Ice Cap Map:"
+        print lineString
+        # South Pole
+        for y in range(mc.iceCapMaxHeightSouth + 1):
+            lineString = ""
+            for x in range(mc.width):
+                if (x, y) in icePlots:
+                    if icePlots[(x, y)] == "FEATURE_ICE":
+                        lineString += 'v'
+                else:
+                    lineString += '.'
+            print lineString
+
+        lineString = ""
+        for i in range(mc.width):
+            lineString += '0'
+        print lineString
+
+        # North Pole
+        for y in range(mc.height - mc.iceCapMaxHeightNorth - 1, mc.height, 1):
+            lineString = ""
+            for x in range(mc.width):
+                if (x, y) in icePlots:
+                    if icePlots[(x, y)] == "FEATURE_ICE":
+                        lineString += 'v'
+                else:
+                    lineString += '.'
+            print lineString
+        lineString = " "
+        print lineString
+        return
+
+    # In this dictionary we store Ice plots which should be generated on water and Permafrost tiles on land
+    # (both cause probability increase for neighbouring plots to become ice)
+    icePlots = {}
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    featureIce = gc.getInfoTypeForString("FEATURE_ICE")
-    iceChance = 1.0 
-    # TAC - Map scripts - koma13 - START
-    #for y in range(4):
-    if abs(mc.bottomLattitude) == 90 and (mc.bottomLattitude != mc.topLattitude or mc.topLattitude < 0):
-       for y in range(4):
-            for x in range(mc.width):
-                plot = mmap.plot(x,y)
-                if plot != 0 and plot.isWater() == True and PRand.random() < iceChance:
-                    plot.setFeatureType(featureIce,0)
-            iceChance *= .66
-    iceChance = 1.0
-    #for y in range(mc.height - 1,mc.height - 5,-1):
-    if abs(mc.topLattitude) == 90 and (mc.topLattitude != mc.bottomLattitude or mc.topLattitude > 0):
-        for y in range(mc.height - 1,mc.height - 5,-1):
-            for x in range(mc.width):
-                plot = mmap.plot(x,y)
-                if plot != 0 and plot.isWater() == True and PRand.random() < iceChance:
-                    plot.setFeatureType(featureIce,0)
-            iceChance *= .66 
-    
-    # TAC - Map scripts - koma13 - END
+    terrainPermafrost = TerrainTypes.TERRAIN_SNOW
+    featureSeaIce = FeatureTypes.FEATURE_ICE
+    plotOcean = PlotTypes.PLOT_OCEAN
+    terrainLake = TerrainTypes.TERRAIN_LAKE
+
+    # Deal with the South Pole
+    if abs(mc.bottomLattitude) >= 90 and (mc.bottomLattitude != mc.topLattitude or mc.topLattitude < 0):
+        # First row tiles are always Ice, except Land tiles
+        for x in range(mc.width):
+            if (mmap.plot(x, 0).getTerrainType() == terrainPermafrost):
+                icePlots[(x, 0)] = "TERRAIN_SNOW"
+            else:
+                icePlots[(x, 0)] = "FEATURE_ICE"
+
+        for loop in range(numOfIterations):
+            iceChanceReduction = 1
+            for y in range(1, mc.iceCapMaxHeightSouth):
+                iceChanceReduction *= chanceReductionFromLatitude
+                for x in range(mc.width):
+                    if not (x, y) in icePlots:
+                        if mmap.plot(x, y).getTerrainType() == terrainPermafrost:
+                            icePlots[(x, y)] = "TERRAIN_SNOW"
+                        elif mmap.plot(x, y).getPlotType() == plotOcean or mmap.plot(x, y).getTerrainType() == terrainLake:
+                            iceChance = calculateIceChanceFromAdjacent(x, y) * iceChanceReduction
+                            rand = PRand.random()
+                            if iceChance > rand:
+                                icePlots[(x, y)] = "FEATURE_ICE"
+
+    # Do all the same with the North Pole
+    if abs(mc.topLattitude) >= 90 and (mc.topLattitude != mc.bottomLattitude or mc.topLattitude > 0):
+        # Last row tiles are always Ice, except Land tiles
+        for x in range(mc.width):
+            if (mmap.plot(x, mc.height - 1).getTerrainType() == terrainPermafrost):
+                icePlots[(x, mc.height - 1)] = "TERRAIN_SNOW"
+            else:
+                icePlots[(x, mc.height - 1)] = "FEATURE_ICE"
+        for loop in range(numOfIterations):
+            iceChanceReduction = 1
+            for y in range(mc.height - 2, mc.height - mc.iceCapMaxHeightNorth - 1, -1):
+                iceChanceReduction *= chanceReductionFromLatitude
+                for x in range(mc.width):
+                    if not (x, y) in icePlots:
+                        if mmap.plot(x, y).getTerrainType() == terrainPermafrost:
+                            icePlots[(x, y)] = "TERRAIN_SNOW"
+                        elif mmap.plot(x, y).getPlotType() == plotOcean or mmap.plot(x, y).getTerrainType() == terrainLake:
+                            iceChance = calculateIceChanceFromAdjacent(x, y) * iceChanceReduction
+                            rand = PRand.random()
+                            if iceChance > rand:
+                                icePlots[(x, y)] = "FEATURE_ICE"
+
+    # printIceMap()
+
+    # Actually create Ice feature
+    for xyPair in icePlots:
+        x = xyPair[0]
+        y = xyPair[1]
+        if icePlots[(x, y)] == "FEATURE_ICE":
+            mmap.plot(x, y).setFeatureType(featureSeaIce, 0)
+
+    return
+
 
 ##mc.initialize()
 ##PRand.seed()

@@ -14,6 +14,13 @@
 #include "CyTeam.h"
 #include "CyUserSettings.h"
 
+/// xml Editor - start - Nightinggale
+#include "CyXMLEditor.h"
+/// xml Editor - end - Nightinggale
+
+#include <boost/python/class.hpp>
+#include <boost/python/manage_new_object.hpp>
+
 
 void CyGlobalContextPythonInterface7(python::class_<CyGlobalContext>& x)
 {
@@ -72,5 +79,9 @@ void CyGlobalContextPythonInterface7(python::class_<CyGlobalContext>& x)
 		.def("getUserSettings", &CyGlobalContext::getUserSettings, python::return_value_policy<python::manage_new_object>(), "class ()")
 		.def("openNetworkOOSMenu", &CyGlobalContext::openNetworkOOSMenu, "void()")
 		.def("openReadme", &CyGlobalContext::openReadme, "void(str)")
+
+		/// xml Editor - start - Nightinggale
+		.def("getxmlEditor", &CyGlobalContext::getxmlEditor, python::return_value_policy<python::manage_new_object>(), "get XML editor")
+		/// xml Editor - end - Nightinggale
 	;
 }

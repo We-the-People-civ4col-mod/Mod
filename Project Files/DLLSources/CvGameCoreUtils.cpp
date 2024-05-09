@@ -168,6 +168,93 @@ float directionAngle( DirectionTypes eDirection )
 	}
 }
 
+// returns minimal number of steps (clockwise or counterclockwise) from one direction to another
+int getDirectionDiff(DirectionTypes direction1, DirectionTypes direction2)
+{
+	FAssertMsg(direction1 >= FIRST_DIRECTION && direction1 < NUM_DIRECTION_TYPES 
+		&& direction2 >= FIRST_DIRECTION && direction2 < NUM_DIRECTION_TYPES,
+		"Invalid DirectionTypes enum argument");
+
+	// in case one of directions is NO_DIRECTION
+	if (direction1 == NO_DIRECTION || direction2 == NO_DIRECTION)
+	{
+		if (direction1 == NO_DIRECTION && direction2 == NO_DIRECTION)
+		{
+			return 0;
+		}
+		else
+		{
+			return 1;
+		}
+	}
+
+	int diff = std::abs(direction1 - direction2);
+	if (diff <= NUM_DIRECTION_TYPES / 2)
+	{
+		return diff;
+	}
+	else
+	{
+		return NUM_DIRECTION_TYPES - diff;
+	}
+}
+
+DirectionTypes getDirectionFrom_dX_dY(int dX, int dY)
+{
+	int x, y;
+	if (dX < 0) x = -1;
+	else if (dX > 0) x = 1;
+	else x = 0;
+
+	if (dY < 0) y = -1;
+	else if (dY > 0) y = 1;
+	else y = 0;
+
+	switch (x)
+	{
+	case -1:
+		switch (y)
+		{
+		case -1:
+			return DIRECTION_SOUTHWEST;
+		case 0:
+			return DIRECTION_WEST;
+		case 1:
+			return DIRECTION_NORTHWEST;
+		default:
+			break;
+		}
+	case 0:
+		switch (y)
+		{
+		case -1:
+			return DIRECTION_SOUTH;
+		case 0:
+			return NO_DIRECTION;
+		case 1:
+			return DIRECTION_NORTH;
+		default:
+			break;
+		}
+	case 1:
+		switch (y)
+		{
+		case -1:
+			return DIRECTION_SOUTHEAST;
+		case 0:
+			return DIRECTION_EAST;
+		case 1:
+			return DIRECTION_NORTHEAST;
+		default:
+			break;
+		}
+	default:
+		break;
+	}
+
+	return NO_DIRECTION;
+}
+
 bool atWar(TeamTypes eTeamA, TeamTypes eTeamB)
 {
 	if (eTeamA == NO_TEAM || eTeamB == NO_TEAM)
@@ -288,6 +375,9 @@ bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB)
 
 bool shouldUnitMove(const CvUnit* pUnit)
 {
+	if (pUnit->isTempUnit())
+		return false;
+
 	if (pUnit->isDead() || pUnit->isDelayedDeath())
 	{
 		return false;
@@ -505,7 +595,7 @@ bool isPlotEventTrigger(EventTriggerTypes eTrigger)
 
 	if (kTrigger.getNumPlotsRequired() > 0)
 	{
-		if (kTrigger.getPlotType() != NO_PLOT)
+		if (kTrigger.getPlotTypes().hasContent())
 		{
 			return true;
 		}
@@ -1314,31 +1404,34 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			int iMoveCost = kToPlot.movementCost(pLoopUnit, &kFromPlot,
 				false); // advc.001i
 			//FAssert(pLoopUnit->getDomainType() != DOMAIN_AIR);
-#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
-			int iMaxMoves = parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves();
-			int iMovesLeft = std::max(0, (iMaxMoves - iMoveCost));
-
-			iWorstMovesLeft = std::min(iWorstMovesLeft, iMovesLeft);
-			iWorstMaxMoves = std::min(iWorstMaxMoves, iMaxMoves);
-
-			int iCost = PATH_MOVEMENT_WEIGHT * (iMovesLeft == 0 ? iMaxMoves : iMoveCost);
-			iCost = (iCost * iExploreModifier) / 3;
-			//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
-			if (iCost > iWorstCost)
+			if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
 			{
-				iWorstCost = iCost;
-				iWorstMovesLeft = iMovesLeft;
-				iWorstMaxMoves = iMaxMoves;
+				int iMaxMoves = parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves();
+				int iMovesLeft = std::max(0, (iMaxMoves - iMoveCost));
+
+				iWorstMovesLeft = std::min(iWorstMovesLeft, iMovesLeft);
+				iWorstMaxMoves = std::min(iWorstMaxMoves, iMaxMoves);
+
+				int iCost = PATH_MOVEMENT_WEIGHT * (iMovesLeft == 0 ? iMaxMoves : iMoveCost);
+				iCost = (iCost * iExploreModifier) / 3;
+				//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
+				if (iCost > iWorstCost)
+				{
+					iWorstCost = iCost;
+					iWorstMovesLeft = iMovesLeft;
+					iWorstMaxMoves = iMaxMoves;
+				}
 			}
-#else
-			int iCost = PATH_MOVEMENT_WEIGHT * iMoveCost;
-			iCost = (iCost * iExploreModifier) / 3;
-			//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
-			if (iCost > iWorstCost)
+			else
 			{
-				iWorstCost = iCost;
+				int iCost = PATH_MOVEMENT_WEIGHT * iMoveCost;
+				iCost = (iCost * iExploreModifier) / 3;
+				//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
+				if (iCost > iWorstCost)
+				{
+					iWorstCost = iCost;
+				}
 			}
-#endif
 		}
 	}
 
@@ -1626,6 +1719,12 @@ int pathValid_join(FAStarNode* parent, FAStarNode* node, CvSelectionGroup* pSele
 		!kMap.getPlot(kToPlot.getX(), kFromPlot.getY()).isWater() /*&&
 		!pSelectionGroup->canMoveAllTerrain()*/) // WTP: Not supported
 		return FALSE;
+
+	if (kToPlot.getTurnDamage() > 0 && !pSelectionGroup->getHeadUnit()->isAllowDangerousPath())
+	{
+		return FALSE;
+	}
+
 	return TRUE;
 }
 
@@ -1790,13 +1889,14 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		// K-Mod. I've moved the code from here into separate functions.
 		iMoves = bMoveMaxMoves ? pSelectionGroup->maxMoves() : pSelectionGroup->movesLeft();
 
-		#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
+		if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0)
+		{
 			while (iMoves <= 0)
 			{
 				++iTurns;
 				iMoves += pSelectionGroup->maxMoves();
 			}
-		#endif
+		}
 
 		// K-Mod end
 	}
@@ -1819,7 +1919,8 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		// K-Mod. The original code would give incorrect results for groups where one unit had more moves but also had higher move cost.
 		// (eg. the most obvious example is when a group with 1-move units and 2-move units is moving on a railroad. - In this situation,
 		//  the original code would consistently underestimate the remaining moves at every step.)
-		#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+		if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
+		{
 			const bool bNewTurn = iMoves == 0;
 
 			if (bNewTurn)
@@ -1827,14 +1928,16 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 				++iTurns;
 				iMoves = pSelectionGroup->maxMoves();
 			}
-		#else // GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
-		// add how many turns it takes before the unit can move again
+		}
+		else // GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
+		{
+			// add how many turns it takes before the unit can move again
 			while (iMoves <= 0)
 			{
 				++iTurns;
 				iMoves += pSelectionGroup->maxMoves();
 			}
-		#endif
+		}
 
 		CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
 		// TODO: getUnit can return NULL in rare cases
@@ -1858,11 +1961,14 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		if (bUniformCost)
 		{
 			// the simple, normal case
-			#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+			if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
+			{
 				iMoves = std::max(0, iMoves - iMoveCost);
-			#else
+			}
+			else
+			{
 				iMoves -= iMoveCost;
-			#endif
+			}
 		}
 		else
 		{
@@ -1897,18 +2003,20 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 						false*/); // advc.001i
 					FAssert(iUnitMoves > 0 || i == 1);
 				}
-				#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+				if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
+				{
 					iUnitMoves = std::max(iUnitMoves, 0);
-				#endif
+				}
 				iMoves = std::min(iMoves, iUnitMoves);
 			}
 		}
 		// K-Mod end
 	}
 
-	#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+	if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
+	{
 		FAssertMsg(iMoves >= 0, "iMoves is expected to be non-negative (invalid Index)");
-	#endif
+	}
 
 	node->m_iData1 = iMoves;
 	node->m_iData2 = iTurns > 0 ? iTurns : 1; // this avoids saving 0 turns, which might (?) lead to a div by 0 crash
@@ -2052,62 +2160,6 @@ int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* point
 	return FALSE;
 }
 
-int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
-{
-	CvPlot* pNewPlot;
-
-	if (parent == NULL)
-	{
-		return true;
-	}
-
-	pNewPlot = GC.getMap().plotSoren(node->m_iX, node->m_iY);
-
-	const PlayerTypes ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
-
-	// Erik: It's ok to check for a city here since cities they have to be separated by at least 1-non city plot
-	// Erik: TODO: check that it's our own city! When we implement trading with natives\Europeans, we can allow it
-	if (pNewPlot->isCity())
-	{
-		return true;
-	}
-
-	// WTP, ray, Canal - START
-	if (pNewPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pNewPlot->getImprovementType()).isCanal())
-	{
-		return true;
-	}
-	// WTP, ray, Canal - END
-
-	const TeamTypes eTeam = GET_PLAYER(ePlayer).getTeam();
-
-	if (pNewPlot->isWater() && pNewPlot->isRevealed(eTeam, false) && !pNewPlot->isImpassable())
-	{
-		const FeatureTypes featureType = pNewPlot->getFeatureType();
-
-		// Erik: If the plot has a feature it can't be impassable
-		if (featureType != NO_FEATURE)
-		{
-			const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(featureType);
-
-			// Erik: Just in case impassable terrain is added to the game (unused in WTP)
-			if (!kFeatureInfo.isImpassable())
-			{
-				return false;
-			}
-		}
-
-		//WTP, ray, Large Rivers
-		// if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTeam() == eTeam)
-		//WTP, ray, Lakes
-		if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTerrainType() == TERRAIN_SHALLOW_COAST || pNewPlot->getTerrainType() == TERRAIN_LARGE_RIVERS || pNewPlot->getTerrainType() == TERRAIN_LAKE || pNewPlot->getTerrainType() == TERRAIN_ICE_LAKE || pNewPlot->getTeam() == eTeam)
-		{
-			return true;
-		}
-	}
-
-	return false;
-}
 
 int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
@@ -2154,13 +2206,13 @@ int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 	return 1;
 }
 
-bool isPickableName(const TCHAR* szName)
+bool isPickableName(char const* szName)
 {
 	if (szName)
 	{
-		int iLen = _tcslen(szName);
+		int iLen = strlen(szName);
 
-		if (!_tcsicmp(&szName[iLen-6], "NOPICK"))
+		if (!_stricmp(&szName[iLen-6], "NOPICK"))
 		{
 			return false;
 		}
@@ -2495,7 +2547,36 @@ void postLoadGameFixes()
 
 		kPlayer.postLoadFixes();
 	}
-	
+
+#ifdef _DEBUG
+	//jburet, pointer sanity check
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+	{
+		CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+
+		if (!kPlayer.isEverAlive()) continue; //Inactive from day one players do not count
+
+		if (kPlayer.getParent() != NO_PLAYER)
+		{
+			CvPlayer* kKing = kPlayer.getParentPlayer();
+			CvPlayer* kColony = &kPlayer;
+			FAssertMsg(kKing != NULL, "Pointer to Parent Player not initialized");
+			FAssertMsg(kKing->getID() == kColony->getParent(), "Pointer to Parent Player doesn't point on the right player");
+			FAssertMsg(kKing->getColony() == kColony->getID(), "Pointer to Parent Player doesn't point on the right player");
+		}
+
+		if (kPlayer.getColony() != NO_PLAYER)
+		{
+			CvPlayer* kKing = &kPlayer;
+			CvPlayer* kColony = kPlayer.getColonyPlayer();
+			FAssertMsg(kColony != NULL, "Pointer to Colony Player not initialized");
+			FAssertMsg(kKing->getID() == kColony->getParent(), "Pointer to Colony Player doesn't point on the right player");
+			FAssertMsg(kKing->getColony() == kColony->getID(), "Pointer to Colony Player doesn't point on the right player");
+		}
+
+	}
+
+#endif
 	GC.getGameINLINE().postLoadFixes();
 }
 /// post load function - end - Nightinggale
@@ -2561,4 +2642,19 @@ CvWString getStrategyString(StrategyTypes eStrategy)
 	}
 
 	return szString;
+}
+
+bool generatePathForHypotheticalUnit(const CvPlot* pFrom, const CvPlot* pTo, PlayerTypes ePlayer, UnitTypes eUnit, int iFlags, int iMaxTurns)
+{
+	CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+	const int iPower = kPlayer.getPower();
+	const int iAssets = kPlayer.getAssets();
+	PROFILE_FUNC();
+	CvUnit* const pTempUnit = kPlayer.getOrCreateTempUnit(eUnit, pFrom->getX(), pFrom->getY());
+	pTempUnit->finishMoves();
+	const bool bResult = pTempUnit->generatePath(pTo, iFlags, false, NULL, iMaxTurns, /*bUseTempFinder*/true);
+	kPlayer.releaseTempUnit();
+	return bResult;
+	FAssert(iPower == kPlayer.getPower());
+	FAssert(iAssets == kPlayer.getAssets());
 }

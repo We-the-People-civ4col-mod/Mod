@@ -1,5 +1,9 @@
 #include "CvGameCoreDLL.h"
 #include "CyInfos.h"
+
+#include <boost/python/class.hpp>
+namespace python = boost::python;
+
 //
 // Python interface for info classes (formerly structs)
 // These are simple enough to be exposed directly - no wrappers
@@ -388,7 +392,6 @@ void CyInfoPythonInterface3()
 		.def("getNumUnitsGlobal", &CvEventTriggerInfo::getNumUnitsGlobal, "int ()")
 		.def("getNumBuildingsGlobal", &CvEventTriggerInfo::getNumBuildingsGlobal, "int ()")
 		.def("getNumPlotsRequired", &CvEventTriggerInfo::getNumPlotsRequired, "int ()")
-		.def("getPlotsType", &CvEventTriggerInfo::PY_getPlotType, "int ()")
 		.def("getOtherPlayerShareBorders", &CvEventTriggerInfo::getOtherPlayerShareBorders, "int ()")
 		.def("getCityFoodWeight", &CvEventTriggerInfo::getCityFoodWeight, "int ()")
 		.def("getCivic", &CvEventTriggerInfo::PY_getCivic, "int ()")

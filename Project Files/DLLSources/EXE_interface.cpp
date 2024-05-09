@@ -11,7 +11,7 @@
 // 1: find the function in the comments below
 // 2: add the function there as it is written in vanilla, including DllExport
 // 3: write a body for the call, usually a function call to the parent class
-// 4: copy paste the redirect string to CvGameCoreDLL.def to let the DLL linking know the call should go to this file
+// 4: copy paste the redirect string to a new #pragma to let the DLL linking know the call should go to this file
 //      no need to understand the redirect string. They are copy pasted from what the exe looks for.
 //      the weird string part tells how many arguments and stuff like that. It just has to stay to match exe expectations.
 //
@@ -159,6 +159,7 @@ BOOST_STATIC_ASSERT(sizeof(EXE_CvArtFileMgr) == sizeof(CvArtFileMgr));
 class EXE_CvArtInfoAsset : public CvArtInfoAsset
 {
 public:
+	#pragma comment(linker, "/EXPORT:?getNIF@CvArtInfoAsset@@QBEPBDXZ=?getNIF@EXE_CvArtInfoAsset@@QBEPBDXZ")
 	DllExport const char* getNIF() const
 	{
 		if (GLOBAL_DEFINE_USE_NIF_LOGGING)
@@ -171,6 +172,7 @@ public:
 		return CvArtInfoAsset::getNIF();
 	}
 
+	#pragma comment(linker, "/EXPORT:?getKFM@CvArtInfoAsset@@QBEPBDXZ=?getKFM@EXE_CvArtInfoAsset@@QBEPBDXZ")
 	DllExport const char* getKFM() const
 	{
 		return CvArtInfoAsset::getKFM();
@@ -630,10 +632,12 @@ public:
 		plot
 			?plot@CvCity@@QBEPAVCvPlot@@XZ=?plot@EXE_CvCity@@QBEPAVCvPlot@@XZ
 			*/
+	#pragma comment(linker, "/EXPORT:?pushOrder@CvCity@@QAEXW4OrderTypes@@HH_N111@Z=?pushOrder@EXE_CvCity@@QAEXW4OrderTypes@@HH_N111@Z")
 	DllExport void pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce = false)
 	{
 		CvCity::pushOrder(eOrder, iData1, iData2, bSave, bPop, bAppend, bForce);
 	}
+	#pragma comment(linker, "/EXPORT:?popOrder@CvCity@@QAEXH_N0@Z=?popOrder@EXE_CvCity@@QAEXH_N0@Z")
 	DllExport void popOrder(int iNum, bool bFinish = false, bool bChoose = false)
 	{
 		CvCity::popOrder(iNum, bFinish, bChoose);
@@ -1467,6 +1471,7 @@ public:
 		getBuildInfo
 			?getBuildInfo@CvGlobals@@QAEAAVCvBuildInfo@@W4BuildTypes@@@Z=?getBuildInfo@EXE_CvGlobals@@QAEAAVCvBuildInfo@@W4BuildTypes@@@Z
 */
+	#pragma comment(linker, "/EXPORT:?getBuildingInfo@CvGlobals@@QAEAAV?$vector@PAVCvBuildingInfo@@V?$allocator@PAVCvBuildingInfo@@@std@@@std@@XZ=?getBuildingInfo@EXE_CvGlobals@@QAEAAV?$vector@PAVCvBuildingInfo@@V?$allocator@PAVCvBuildingInfo@@@std@@@std@@XZ")
 	DllExport std::vector<CvBuildingInfo*>& getBuildingInfo()
 	{
 		static std::vector<CvBuildingInfo*> vector;
@@ -1476,19 +1481,20 @@ public:
 			vector = CvGlobals::getBuildingInfo();
 			while(vector.size() < static_cast<unsigned int>(getNumBuildingInfos()))
 			{
-				vector.push_back(&CvGlobals::getBuildingInfo(BUILDING_PLACEHOLDER));
+				vector.push_back(&CvGlobals::getBuildingInfo(FIRST_BUILDING));
 			}
 		}
 		return vector;
 	}
 
+	#pragma comment(linker, "/EXPORT:?getBuildingInfo@CvGlobals@@QAEAAVCvBuildingInfo@@W4BuildingTypes@@@Z=?getBuildingInfo@EXE_CvGlobals@@QAEAAVCvBuildingInfo@@W4BuildingTypes@@@Z")
 	DllExport CvBuildingInfo& getBuildingInfo(BuildingTypes eBuildingNum)
 	{
 		if (eBuildingNum < NUM_BUILDING_TYPES)
 		{
 			return CvGlobals::getBuildingInfo(eBuildingNum);
 		}
-		return CvGlobals::getBuildingInfo(BUILDING_PLACEHOLDER);
+		return CvGlobals::getBuildingInfo(FIRST_BUILDING);
 	}
 			/*
 		getCAMERA_FAR_CLIP_Z_HEIGHT
@@ -1698,6 +1704,7 @@ public:
 		getMainMenus
 			?getMainMenus@CvGlobals@@QAEAAVCvMainMenuInfo@@H@Z=?getMainMenus@EXE_CvGlobals@@QAEAAVCvMainMenuInfo@@H@Z
 	*/
+	#pragma comment(linker, "/EXPORT:?getMap@CvGlobals@@QAEAAVCvMap@@XZ=?getMap@EXE_CvGlobals@@QAEAAVCvMap@@XZ")
 	DllExport CvMap& getMap()
 	{
 		return CvGlobals::getMap();
@@ -1740,6 +1747,7 @@ public:
 			?getNUM_LEADERANIM_TYPES@CvGlobals@@QBEHXZ=?getNUM_LEADERANIM_TYPES@EXE_CvGlobals@@QBEHXZ
 		*/
 
+	#pragma comment(linker, "/EXPORT:?getNUM_YIELD_TYPES@CvGlobals@@QBEHXZ=?getNUM_YIELD_TYPES@EXE_CvGlobals@@QBEHXZ")
 	DllExport int getNUM_YIELD_TYPES() const
 	{
 		return NUM_YIELD_TYPES;
@@ -1763,14 +1771,15 @@ public:
 			?getNumBuildingClassInfos@CvGlobals@@QAEHXZ=?getNumBuildingClassInfos@EXE_CvGlobals@@QAEHXZ
 			*/
 
+	#pragma comment(linker, "/EXPORT:?getNumBuildingInfos@CvGlobals@@QAEHXZ=?getNumBuildingInfos@EXE_CvGlobals@@QAEHXZ")
 	DllExport int getNumBuildingInfos()
 	{
 		// show the exe an arbitrarily high number of building types because that somehow affects savegame padding
-		// the free slots will be directed to the BUILDING_PLACEHOLDER by getBuildingInfo()
+		// the free slots will be directed to the FIRST_BUILDING by getBuildingInfo()
 		// This is meant to be a workaround for savegames becoming incompatible each time a building is added or removed
 		if (!m_bExeXmlLengthOverride)
 		{
-			return BUILDING_PLACEHOLDER;
+			return NUM_BUILDING_TYPES;
 		}
 		static int iNumBuildings = 0;
 		if (iNumBuildings == 0)
@@ -1909,14 +1918,15 @@ public:
 			?getNumUnitFormationInfos@CvGlobals@@QAEHXZ=?getNumUnitFormationInfos@EXE_CvGlobals@@QAEHXZ
 			*/
 
+	#pragma comment(linker, "/EXPORT:?getNumUnitInfos@CvGlobals@@QAEHXZ=?getNumUnitInfos@EXE_CvGlobals@@QAEHXZ")
 	DllExport int getNumUnitInfos()
 	{
 		// show the exe an arbitrarily high number of unit types because that somehow affects savegame padding
-		// the free slots will be directed to the UNIT_PLACEHOLDER by getUnitInfo()
+		// the free slots will be directed to the FIRST_UNIT by getUnitInfo()
 		// This is meant to be a workaround for savegames becoming incompatible each time a unit is added or removed
 		if (!m_bExeXmlLengthOverride)
 		{
-			return UNIT_PLACEHOLDER;
+			return NUM_UNIT_TYPES;
 		}
 		static int iNumUnits = 0;
 		if (iNumUnits == 0)
@@ -2056,6 +2066,7 @@ public:
 			*/
 
 	// this one might not be necessary
+	#pragma comment(linker, "/EXPORT:?getUnitInfo@CvGlobals@@QAEAAV?$vector@PAVCvUnitInfo@@V?$allocator@PAVCvUnitInfo@@@std@@@std@@XZ=?getUnitInfo@EXE_CvGlobals@@QAEAAV?$vector@PAVCvUnitInfo@@V?$allocator@PAVCvUnitInfo@@@std@@@std@@XZ")
 	DllExport std::vector<CvUnitInfo*>& getUnitInfo()
 	{
 		static std::vector<CvUnitInfo*> vector;
@@ -2065,20 +2076,21 @@ public:
 			vector = CvGlobals::getUnitInfo();
 			while(vector.size() < static_cast<unsigned int>(getNumUnitInfos()))
 			{
-				vector.push_back(&CvGlobals::getUnitInfo(UNIT_PLACEHOLDER));
+				vector.push_back(&CvGlobals::getUnitInfo(FIRST_UNIT));
 			}
 		}
 		return vector;
 	}
 
 	// this is probably the relevant one
+	#pragma comment(linker, "/EXPORT:?getUnitInfo@CvGlobals@@QAEAAVCvUnitInfo@@W4UnitTypes@@@Z=?getUnitInfo@EXE_CvGlobals@@QAEAAVCvUnitInfo@@W4UnitTypes@@@Z")
 	DllExport	CvUnitInfo& getUnitInfo(UnitTypes eUnitNum)
 	{
 		if (eUnitNum < NUM_UNIT_TYPES)
 		{
 			return CvGlobals::getUnitInfo(eUnitNum);
 		}
-		return CvGlobals::getUnitInfo(UNIT_PLACEHOLDER);
+		return CvGlobals::getUnitInfo(FIRST_UNIT);
 	}
 
 			/*
@@ -3025,13 +3037,14 @@ public:
 			?getUnit@CvPlayer@@QBEPAVCvUnit@@H@Z=?getUnit@EXE_CvPlayer@@QBEPAVCvUnit@@H@Z
 */
 
-	DllExport const TCHAR* getUnitButton(UnitTypes eUnit) const
+	#pragma comment(linker, "/EXPORT:?getUnitButton@CvPlayer@@QBEPBDW4UnitTypes@@@Z=?getUnitButton@EXE_CvPlayer@@QBEPBDW4UnitTypes@@@Z")
+	DllExport char const* getUnitButton(UnitTypes eUnit) const
 	{
-		if (eUnit <= UNIT_PLACEHOLDER)
+		if (eUnit < NUM_UNIT_TYPES)
 		{
 			return CvPlayer::getUnitButton(eUnit);
 		}
-		return CvPlayer::getUnitButton(UNIT_PLACEHOLDER);
+		return CvPlayer::getUnitButton(FIRST_UNIT);
 	}
 
 
@@ -3904,6 +3917,7 @@ public:
 			?doCommand@CvUnit@@QAEXW4CommandTypes@@HH@Z=?doCommand@EXE_CvUnit@@QAEXW4CommandTypes@@HH@Z
 */
 
+	#pragma comment(linker, "/EXPORT:?getArtInfo@CvUnit@@QBEPBVCvArtInfoUnit@@H@Z=?getArtInfo@EXE_CvUnit@@QBEPBVCvArtInfoUnit@@H@Z")
 	DllExport const CvArtInfoUnit* getArtInfo(int i) const
 	{
 		return CvUnit::getArtInfo(i);
@@ -4086,16 +4100,19 @@ class EXE_CvUnitInfo : public CvUnitInfo
 {
 public:
 
+	#pragma comment(linker, "/EXPORT:?getArtInfo@CvUnitInfo@@QBEPBVCvArtInfoUnit@@HH@Z=?getArtInfo@EXE_CvUnitInfo@@QBEPBVCvArtInfoUnit@@HH@Z")
 	DllExport const CvArtInfoUnit* getArtInfo(int i, int iProfession) const
 	{
 		return CvUnitInfo::getArtInfo(i, iProfession);
 	}
 
+	#pragma comment(linker, "/EXPORT:?getDefaultProfession@CvUnitInfo@@QBEHXZ=?getDefaultProfession@EXE_CvUnitInfo@@QBEHXZ")
 	DllExport int getDefaultProfession() const
 	{
 		return CvUnitInfo::getDefaultProfession();
 	}
 
+	#pragma comment(linker, "/EXPORT:?getDomainType@CvUnitInfo@@QBEHXZ=?getDomainType@EXE_CvUnitInfo@@QBEHXZ")
 	DllExport int getDomainType() const
 	{
 		return CvUnitInfo::getDomainType();
@@ -4111,6 +4128,7 @@ public:
 		getGroupSize
 			?getGroupSize@CvUnitInfo@@QBEHH@Z=?getGroupSize@EXE_CvUnitInfo@@QBEHH@Z
 */
+	#pragma comment(linker, "/EXPORT:?getUnitClassType@CvUnitInfo@@QBEHXZ=?getUnitClassType@EXE_CvUnitInfo@@QBEHXZ")
 	DllExport int getUnitClassType() const
 	{
 		return CvUnitInfo::getUnitClassType();

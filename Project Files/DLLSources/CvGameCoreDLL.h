@@ -17,7 +17,7 @@
 #pragma warning( 3: 4701 ) // local variable used without being initialized
 
 #define WIN32_LEAN_AND_MEAN
-#include <windows.h>
+#include <Windows.h>
 #include <MMSystem.h>
 #if defined _DEBUG && !defined USE_MEMMANAGER
 //#define USE_MEMMANAGER
@@ -25,7 +25,6 @@
 #endif
 #include <vector>
 #include <list>
-#include <tchar.h>
 #include <math.h>
 #include <assert.h>
 #include <map>
@@ -36,99 +35,11 @@
 #define DllExport   __declspec( dllexport )
 
 // The makefile use version 1310 to compile
-// VC use never versions for IntelliSense 
+// VC use never versions for IntelliSense
 // Used to avoid IntelliSense spamming bogus errors
 #if _MSC_VER == 1310
 # define MakefileCompilation
 #endif
-
-
-//
-// GameBryo
-//
-class NiColor
-{
-public:
-	float r, g, b;
-};
-class NiColorA
-{
-public:
-	NiColorA(float fr, float fg, float fb, float fa) : r(fr), g(fg), b(fb), a(fa) {}
-	NiColorA() /* advc: */ : r(0), g(0), b(0), a(0) {}
-	float r, g, b, a;
-};
-class NiPoint2
-{
-public:
-	NiPoint2() /* advc: */ : x(-1), y(-1) {}
-	NiPoint2(float fx, float fy) : x(fx),y(fy) {}
-
-	float x, y;
-};
-class NiPoint3
-{
-public:
-	NiPoint3() {}
-	NiPoint3(float fx, float fy, float fz) : x(fx),y(fy),z(fz) {}
-
-	bool NiPoint3::operator== (const NiPoint3& pt) const
-	{	return (x == pt.x && y == pt.y && z == pt.z);	}
-
-	inline NiPoint3 NiPoint3::operator+ (const NiPoint3& pt) const
-	{	return NiPoint3(x+pt.x,y+pt.y,z+pt.z);	}
-
-	inline NiPoint3 NiPoint3::operator- (const NiPoint3& pt) const
-	{	return NiPoint3(x-pt.x,y-pt.y,z-pt.z);	}
-
-	inline float NiPoint3::operator* (const NiPoint3& pt) const
-	{	return x*pt.x+y*pt.y+z*pt.z;	}
-
-	inline NiPoint3 NiPoint3::operator* (float fScalar) const
-	{	return NiPoint3(fScalar*x,fScalar*y,fScalar*z);	}
-
-	inline NiPoint3 NiPoint3::operator/ (float fScalar) const
-	{
-		float fInvScalar = 1.0f/fScalar;
-		return NiPoint3(fInvScalar*x,fInvScalar*y,fInvScalar*z);
-	}
-
-	inline NiPoint3 NiPoint3::operator- () const
-	{	return NiPoint3(-x,-y,-z);	}
-
-	inline float Length() const
-	{ return sqrt(x * x + y * y + z * z); }
-
-	inline float Unitize()
-	{
-		float length = Length();
-		if(length != 0)
-		{
-			x /= length;
-			y /= length;
-			z /= length;
-		}
-		return length;
-	}
-
-//	inline NiPoint3 operator* (float fScalar, const NiPoint3& pt)
-//	{	return NiPoint3(fScalar*pt.x,fScalar*pt.y,fScalar*pt.z);	}
-	float x, y, z;
-};
-
-namespace NiAnimationKey
-{
-	enum KeyType
-	{
-		NOINTERP,
-		LINKEY,
-		BEZKEY,
-		TCBKEY,
-		EULERKEY,
-		STEPKEY,
-		NUMKEYTYPES
-	};
-};
 
 typedef unsigned char    byte;
 typedef unsigned short   word;
@@ -167,84 +78,13 @@ __forceinline float DWtoF( dword n ) { return *(float*)&n; }
 __forceinline float MaxFloat() { return DWtoF(0x7f7fffff); }
 */
 
-/// bitmap - start - Nightinggale
-// variableless versions assuming the argument to be 0
-// useful for enums
-#define SETBIT( x ) (1 << x)
-#define SETBITS( numBits, firstBit ) (((1 << numBits) - 1 ) << firstBit)
-
-#define GETBIT ( x, y ) ((x >> y) & 1)
-#define GETBITS( x, y, z ) ((x >> y) & ((1 << z) - 1 ))
-
-template <typename T>
-static inline bool HasBit(const T x, const int y)
-{
-	return (x & ((T)1U << y)) != 0;
-}
-
-template <typename T>
-static inline T SetBit(T &x, const int y)
-{
-	return x = (T)(x | ((T)1U << y));
-}
-
-template <typename T>
-static inline T ClrBit(T &x, const int y)
-{
-	return x = (T)(x & ~((T)1U << y));
-}
-
-// use one of the previous functions instead of hardcoding bValue
-// this function is only for cases where a bit can be turned both on and off
-template <typename T>
-static inline T SetBit(T &x, const int y, const bool bValue)
-{
-	if (bValue)
-	{
-		return x = (T)(x | ((T)1U << y));
-	}
-	else {
-		return x = (T)(x & ~((T)1U << y));
-	}
-}
-
-// use both has and get prefix as both fits and remembering both appears to be a pain
-template <typename T>
-static inline T GetBits(T &x, const int iIndex, const int iNumBits)
-{
-	return (x >> iIndex) & (((T)1u << iNumBits) - 1);
-}
-
-template <typename T>
-static inline T HasBits(T &x, const int iIndex, const int iNumBits)
-{
-	return GetBits(x, iIndex, iNumBits);
-}
-
-template <typename T>
-static inline T SetBits(T &x, const int iIndex, const int iNumBits, const T iValue)
-{
-	x &= ~(((1 << iNumBits) - 1) << iIndex);
-	x |= (iValue & ((1 << iNumBits) - 1)) << iIndex;
-	return x;
-}
-
-/// bitmap - end - Nightinggale
-
 //
 // Boost Python
 //
 #ifdef MakefileCompilation
-# include <boost/python/list.hpp>
-# include <boost/python/tuple.hpp>
-# include <boost/python/class.hpp>
-# include <boost/python/manage_new_object.hpp>
-# include <boost/python/return_value_policy.hpp>
-# include <boost/python/object.hpp>
-# include <boost/python/def.hpp>
-
-namespace python = boost::python;
-
+#include <boost/graph/detail/is_same.hpp>
+#include <boost/noncopyable.hpp>
+#include <boost/static_assert.hpp>
 #else
 
 // write some garbage code to kill IntelliSense errors
@@ -285,6 +125,13 @@ namespace boost
 std::string GetDLLPath(bool bLoadDLLPath = true);
 
 
+#include "NiColorA.h"
+#include "NiPoint2.h"
+#include "NiPoint3.h"
+#include "NiAnimationKey.h"
+
+#include "BitFunctions.h"
+
 #include "CvMacros.h"
 #include "FAssert.h"
 #include "CvGameCoreDLLDefNew.h"
@@ -319,13 +166,12 @@ std::string GetDLLPath(bool bLoadDLLPath = true);
 #include "CvUnit.h"
 #include "CvCity.h"
 #include "FProfiler.h"
-#include "CyCity.h"
 #include "CvInfos.h"
 #include "CvTeamAI.h"
 #include "CvDLLPythonIFaceBase.h"
 #include "CvRandom.h"
 #include "CvArea.h"
-#include "CvDllEntity.h"
+#include "CvDLLEntity.h"
 #include "CvDeal.h"
 #include "CvDLLEntityIFaceBase.h"
 #include "CvGame.h"

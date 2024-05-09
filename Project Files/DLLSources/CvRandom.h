@@ -34,12 +34,12 @@ public:
 	void uninit();
 	void reset(unsigned long ulSeed = 0);
 
-	DllExport unsigned short get(unsigned short usNum, const TCHAR* pszLog = NULL);  //  Returns value from 0 to num-1 inclusive.
+	DllExport unsigned short get(unsigned short usNum, char const* pszLog = NULL);  //  Returns value from 0 to num-1 inclusive.
 	DllExport float getFloat();
 	DllExport float getGaussian(float fMean, float fStandardDeviation);
-	int pickValue(std::vector<int>& aWeights, const TCHAR* pszLog);
-	void shuffleArray(std::vector<int>& aNumbers, const TCHAR* pszLog);
-	DllExport void shuffleSequence(std::vector<int>& aNumbers, const TCHAR* pszLog);
+	int pickValue(AssertCallerData assertData, std::vector<int>& aWeights, char const* pszLog);
+	void shuffleArray(std::vector<int>& aNumbers, char const* pszLog);
+	DllExport void shuffleSequence(std::vector<int>& aNumbers, char const* pszLog);
 
 	void reseed(unsigned long ulNewValue);
 	unsigned long getSeed();

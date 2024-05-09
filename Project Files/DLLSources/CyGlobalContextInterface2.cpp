@@ -12,6 +12,8 @@
 #include "CvInfos.h"
 #include "CyTeam.h"
 
+#include <boost/python/class.hpp>
+
 void CyGlobalContextPythonInterface2(python::class_<CyGlobalContext>& x)
 {
 	OutputDebugString("Python Extension Module - CyGlobalContextPythonInterface2\n");

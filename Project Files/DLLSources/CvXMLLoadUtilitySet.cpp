@@ -17,6 +17,7 @@
 
 #include "CvSavegame.h"
 #include "SavegameConstants.h"
+#include "TxtReader.h"
 
 // ignore type check for template functions
 // no need to be strict in this file
@@ -38,13 +39,13 @@ static void verifyXMLsettings()
 		EventTriggerTypes eTrigger = (EventTriggerTypes)i;
 
 		CvEventTriggerInfo& kInfo = GC.getEventTriggerInfo(eTrigger);
-	
+
 		if (kInfo.getPercentGamesActive() > 0 && kInfo.isUnitsOnPlot())
 		{
 			FAssertMsg(isPlotEventTrigger(eTrigger), CvString::format("XML error: %s has bUnitsOnPlot set, but failed isPlotEventTrigger()", kInfo.getType()));
 		}
 	}
-	
+
 }
 #endif
 /// xml verification
@@ -53,7 +54,7 @@ void CvXMLLoadUtility::GameTextContainer::Read(CvXMLLoadUtility* pXML, const cha
 {
 	if (gDLL->getXMLIFace()->LocateFirstSiblingNodeByTagName(pXML->GetXML(), szLanguage))
 	{
-		
+
 		if (CvGameText::readString(pXML, m_Text, "Text", bUTF8, szFileName, bTranslated, szTag))
 		{
 			// There are child tags. Read all 3 of them.
@@ -77,7 +78,7 @@ void CvXMLLoadUtility::GameTextContainer::Read(CvXMLLoadUtility* pXML, const cha
 			m_Gender = L"N";
 			m_Plural = L"false";
 		}
-		
+
 	}
 };
 
@@ -111,7 +112,7 @@ CvXMLLoadUtility::GameTextStringKey& CvXMLLoadUtility::GameTextList::init(std::s
 	return iIterator->second;
 }
 
-bool CvXMLLoadUtility::GameTextList::readString(const TCHAR* szTag, GameTextList& FStringListCurrentLanguage, GameTextContainer& resultContainer)
+bool CvXMLLoadUtility::GameTextList::readString(char const* szTag, GameTextList& FStringListCurrentLanguage, GameTextContainer& resultContainer)
 {
 	FGameTextMap::iterator iIterator;
 
@@ -166,7 +167,6 @@ void CvXMLLoadUtility::GameTextList::setAllStrings(GameTextList& FStringListCurr
 
 		bool bTranslated = readString(iIterator->first.c_str(), FStringListCurrentLanguage, resultContainer);
 
-		
 		if (resultContainer.m_Text.size() == 0)
 		{
 			CvString szBuffer(iIterator->first.c_str());
@@ -221,16 +221,36 @@ bool bFirstRead = false;
 
 // same as LoadGlobalClassInfo, except that it clears vectors without types
 template <class T>
-void CvXMLLoadUtility::PreLoadGlobalClassInfo(std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, bool bTwoPass, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (const TCHAR*))
+void CvXMLLoadUtility::PreLoadGlobalClassInfo(XMLReadStage eStage, std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, bool bTwoPass, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (char const*))
 {
-	if (!bFirstRead && aInfos.size() > 0 && aInfos[0]->getType() == NULL)
+	if (eStage == XML_STAGE_FULL && aInfos.size() > 0 && aInfos[0]->getType() == NULL)
 	{
 		// Vector has content without types
 		// with no types to find indexes for, all XML data will be added to the end
 		// clear the vector to avoid dublicates (not to mention some with only basic info)
 		aInfos.clear();
 	}
-	LoadGlobalClassInfo(aInfos, szFileRoot, szFileDirectory, szXmlPath, NULL);
+	if (eStage == XML_STAGE_POST_SETUP)
+	{
+		if (aInfos.size() > 0)
+		{
+			bool bHasPostSetup = aInfos[0]->postLoadSetup();
+			if (!bHasPostSetup)
+			{
+				// no need to loop all when nothing happens in them
+				return;
+			}
+
+			for (unsigned int i = 1; i < aInfos.size(); ++i)
+			{
+				aInfos[i]->postLoadSetup();
+			}
+		}
+	}
+	else
+	{
+		LoadGlobalClassInfo(aInfos, szFileRoot, szFileDirectory, szXmlPath, NULL);
+	}
 }
 
 // progress display when reading actual data, not just the types
@@ -242,81 +262,81 @@ void CvXMLLoadUtility::PreUpdateProgressCB(const char* szMessage)
 	}
 }
 
-void CvXMLLoadUtility::readXMLfiles(bool bFirst)
+void CvXMLLoadUtility::readXMLfiles(XMLReadStage eStage)
 {
-	bFirstRead = bFirst;
+	bFirstRead = eStage == XML_STAGE_BASIC;
 
 	// 4 LoadBasicInfos
-	PreLoadGlobalClassInfo(GC.getConceptInfo(), "CIV4BasicInfos", "BasicInfos", "Civ4BasicInfos/ConceptInfos/ConceptInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getCalendarInfo(), "CIV4CalendarInfos", "BasicInfos", "Civ4CalendarInfos/CalendarInfos/CalendarInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getSeasonInfo(), "CIV4SeasonInfos", "BasicInfos", "Civ4SeasonInfos/SeasonInfos/SeasonInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getMonthInfo(), "CIV4MonthInfos", "BasicInfos", "Civ4MonthInfos/MonthInfos/MonthInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getDenialInfo(), "CIV4DenialInfos", "BasicInfos", "Civ4DenialInfos/DenialInfos/DenialInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getInvisibleInfo(), "CIV4InvisibleInfos", "BasicInfos", "Civ4InvisibleInfos/InvisibleInfos/InvisibleInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getUnitCombatInfo(), "CIV4UnitCombatInfos", "BasicInfos", "Civ4UnitCombatInfos/UnitCombatInfos/UnitCombatInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getDomainInfo(), "CIV4DomainInfos", "BasicInfos", "Civ4DomainInfos/DomainInfos/DomainInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getUnitAIInfo(), "CIV4UnitAIInfos", "BasicInfos", "Civ4UnitAIInfos/UnitAIInfos/UnitAIInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getAttitudeInfo(), "CIV4AttitudeInfos", "BasicInfos", "Civ4AttitudeInfos/AttitudeInfos/AttitudeInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getMemoryInfo(), "CIV4MemoryInfos", "BasicInfos", "Civ4MemoryInfos/MemoryInfos/MemoryInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getFatherCategoryInfo(), "CIV4FatherCategoryInfos", "BasicInfos", "Civ4FatherCategoryInfos/FatherCategoryInfos/FatherCategoryInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getConceptInfo(), "CIV4BasicInfos", "BasicInfos", "Civ4BasicInfos/ConceptInfos/ConceptInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getCalendarInfo(), "CIV4CalendarInfos", "BasicInfos", "Civ4CalendarInfos/CalendarInfos/CalendarInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getSeasonInfo(), "CIV4SeasonInfos", "BasicInfos", "Civ4SeasonInfos/SeasonInfos/SeasonInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getMonthInfo(), "CIV4MonthInfos", "BasicInfos", "Civ4MonthInfos/MonthInfos/MonthInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getDenialInfo(), "CIV4DenialInfos", "BasicInfos", "Civ4DenialInfos/DenialInfos/DenialInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getInvisibleInfo(), "CIV4InvisibleInfos", "BasicInfos", "Civ4InvisibleInfos/InvisibleInfos/InvisibleInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getUnitCombatInfo(), "CIV4UnitCombatInfos", "BasicInfos", "Civ4UnitCombatInfos/UnitCombatInfos/UnitCombatInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getDomainInfo(), "CIV4DomainInfos", "BasicInfos", "Civ4DomainInfos/DomainInfos/DomainInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getUnitAIInfo(), "CIV4UnitAIInfos", "BasicInfos", "Civ4UnitAIInfos/UnitAIInfos/UnitAIInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getAttitudeInfo(), "CIV4AttitudeInfos", "BasicInfos", "Civ4AttitudeInfos/AttitudeInfos/AttitudeInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getMemoryInfo(), "CIV4MemoryInfos", "BasicInfos", "Civ4MemoryInfos/MemoryInfos/MemoryInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getFatherCategoryInfo(), "CIV4FatherCategoryInfos", "BasicInfos", "Civ4FatherCategoryInfos/FatherCategoryInfos/FatherCategoryInfo", NULL);
 
 	// 5 LoadPreMenuGlobals
-	PreLoadGlobalClassInfo(GC.getColorInfo(), "CIV4ColorVals", "Interface", "Civ4ColorVals/ColorVals/ColorVal", NULL);
-	PreLoadGlobalClassInfo(GC.getUnitClassInfo(), "CIV4UnitClassInfos", "Units", "Civ4UnitClassInfos/UnitClassInfos/UnitClassInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getCultureLevelInfo(), "CIV4CultureLevelInfo", "GameInfo", "Civ4CultureLevelInfo/CultureLevelInfos/CultureLevelInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getVictoryInfo(), "CIV4VictoryInfo", "GameInfo", "Civ4VictoryInfo/VictoryInfos/VictoryInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getBuildingClassInfo(), "CIV4BuildingClassInfos", "Buildings", "Civ4BuildingClassInfos/BuildingClassInfos/BuildingClassInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getYieldInfo(), "CIV4YieldInfos", "Terrain", "Civ4YieldInfos/YieldInfos/YieldInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getAlarmInfo(), "CIV4AlarmInfos", "Civilizations", "Civ4AlarmInfos/AlarmInfos/AlarmInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getGameSpeedInfo(), "CIV4GameSpeedInfo", "GameInfo", "Civ4GameSpeedInfo/GameSpeedInfos/GameSpeedInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getTurnTimerInfo(), "CIV4TurnTimerInfo", "GameInfo", "Civ4TurnTimerInfo/TurnTimerInfos/TurnTimerInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getWorldInfo(), "CIV4WorldInfo", "GameInfo", "Civ4WorldInfo/WorldInfos/WorldInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getClimateInfo(), "CIV4ClimateInfo", "GameInfo", "Civ4ClimateInfo/ClimateInfos/ClimateInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getSeaLevelInfo(), "CIV4SeaLevelInfo", "GameInfo", "Civ4SeaLevelInfo/SeaLevelInfos/SeaLevelInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getEuropeInfo(), "CIV4EuropeInfo", "GameInfo", "Civ4EuropeInfo/EuropeInfos/EuropeInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getTerrainInfo(), "CIV4TerrainInfos", "Terrain", "Civ4TerrainInfos/TerrainInfos/TerrainInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getEraInfo(), "CIV4EraInfos", "GameInfo", "Civ4EraInfos/EraInfos/EraInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getFeatureInfo(), "Civ4FeatureInfos", "Terrain", "Civ4FeatureInfos/FeatureInfos/FeatureInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getPromotionInfo(), "CIV4PromotionInfos", "Units", "Civ4PromotionInfos/PromotionInfos/PromotionInfo", &CvDLLUtilityIFaceBase::createPromotionInfoCacheObject);
-	PreLoadGlobalClassInfo(GC.getProfessionInfo(), "CIV4ProfessionInfos", "Units", "Civ4ProfessionInfos/ProfessionInfos/ProfessionInfo", &CvDLLUtilityIFaceBase::createProfessionInfoCacheObject);
-	PreLoadGlobalClassInfo(GC.getGoodyInfo(), "CIV4GoodyInfo", "GameInfo", "Civ4GoodyInfo/GoodyInfos/GoodyInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getTraitInfo(), "CIV4TraitInfos", "Civilizations", "Civ4TraitInfos/TraitInfos/TraitInfo", &CvDLLUtilityIFaceBase::createTraitInfoCacheObject);
-	PreLoadGlobalClassInfo(GC.getSpecialBuildingInfo(), "CIV4SpecialBuildingInfos", "Buildings", "Civ4SpecialBuildingInfos/SpecialBuildingInfos/SpecialBuildingInfo", NULL);
-	if (!bFirstRead)
+	PreLoadGlobalClassInfo(eStage, GC.getColorInfo(), "CIV4ColorVals", "Interface", "Civ4ColorVals/ColorVals/ColorVal", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getUnitClassInfo(), "CIV4UnitClassInfos", "Units", "Civ4UnitClassInfos/UnitClassInfos/UnitClassInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getCultureLevelInfo(), "CIV4CultureLevelInfo", "GameInfo", "Civ4CultureLevelInfo/CultureLevelInfos/CultureLevelInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getVictoryInfo(), "CIV4VictoryInfo", "GameInfo", "Civ4VictoryInfo/VictoryInfos/VictoryInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getBuildingClassInfo(), "CIV4BuildingClassInfos", "Buildings", "Civ4BuildingClassInfos/BuildingClassInfos/BuildingClassInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getYieldInfo(), "CIV4YieldInfos", "Terrain", "Civ4YieldInfos/YieldInfos/YieldInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getAlarmInfo(), "CIV4AlarmInfos", "Civilizations", "Civ4AlarmInfos/AlarmInfos/AlarmInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getGameSpeedInfo(), "CIV4GameSpeedInfo", "GameInfo", "Civ4GameSpeedInfo/GameSpeedInfos/GameSpeedInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getTurnTimerInfo(), "CIV4TurnTimerInfo", "GameInfo", "Civ4TurnTimerInfo/TurnTimerInfos/TurnTimerInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getWorldInfo(), "CIV4WorldInfo", "GameInfo", "Civ4WorldInfo/WorldInfos/WorldInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getClimateInfo(), "CIV4ClimateInfo", "GameInfo", "Civ4ClimateInfo/ClimateInfos/ClimateInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getSeaLevelInfo(), "CIV4SeaLevelInfo", "GameInfo", "Civ4SeaLevelInfo/SeaLevelInfos/SeaLevelInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getEuropeInfo(), "CIV4EuropeInfo", "GameInfo", "Civ4EuropeInfo/EuropeInfos/EuropeInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getTerrainInfo(), "CIV4TerrainInfos", "Terrain", "Civ4TerrainInfos/TerrainInfos/TerrainInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getEraInfo(), "CIV4EraInfos", "GameInfo", "Civ4EraInfos/EraInfos/EraInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getFeatureInfo(), "Civ4FeatureInfos", "Terrain", "Civ4FeatureInfos/FeatureInfos/FeatureInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getPromotionInfo(), "CIV4PromotionInfos", "Units", "Civ4PromotionInfos/PromotionInfos/PromotionInfo", &CvDLLUtilityIFaceBase::createPromotionInfoCacheObject);
+	PreLoadGlobalClassInfo(eStage, GC.getProfessionInfo(), "CIV4ProfessionInfos", "Units", "Civ4ProfessionInfos/ProfessionInfos/ProfessionInfo", &CvDLLUtilityIFaceBase::createProfessionInfoCacheObject);
+	PreLoadGlobalClassInfo(eStage, GC.getGoodyInfo(), "CIV4GoodyInfo", "GameInfo", "Civ4GoodyInfo/GoodyInfos/GoodyInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getTraitInfo(), "CIV4TraitInfos", "Civilizations", "Civ4TraitInfos/TraitInfos/TraitInfo", &CvDLLUtilityIFaceBase::createTraitInfoCacheObject);
+	PreLoadGlobalClassInfo(eStage, GC.getSpecialBuildingInfo(), "CIV4SpecialBuildingInfos", "Buildings", "Civ4SpecialBuildingInfos/SpecialBuildingInfos/SpecialBuildingInfo", NULL);
+	if (eStage == XML_STAGE_FULL)
 	{
 		for (int i=0; i < GC.getNumProfessionInfos(); ++i)
 		{
 			GC.getProfessionInfo((ProfessionTypes)i).readPass3();
 		}
 	}
-	PreLoadGlobalClassInfo(GC.getAnimationCategoryInfo(), "CIV4AnimationInfos", "Units", "Civ4AnimationInfos/AnimationCategories/AnimationCategory", NULL);
-	PreLoadGlobalClassInfo(GC.getAnimationPathInfo(), "CIV4AnimationPathInfos", "Units", "Civ4AnimationPathInfos/AnimationPaths/AnimationPath", NULL);
-	PreLoadGlobalClassInfo(GC.getHandicapInfo(), "CIV4HandicapInfo", "GameInfo", "Civ4HandicapInfo/HandicapInfos/HandicapInfo", &CvDLLUtilityIFaceBase::createHandicapInfoCacheObject);
-	PreLoadGlobalClassInfo(GC.getCursorInfo(), "CIV4CursorInfo", "GameInfo", "Civ4CursorInfo/CursorInfos/CursorInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getCivicOptionInfo(), "CIV4CivicOptionInfos", "GameInfo", "Civ4CivicOptionInfos/CivicOptionInfos/CivicOptionInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getHurryInfo(), "CIV4HurryInfo", "GameInfo", "Civ4HurryInfo/HurryInfos/HurryInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getBuildingInfo(), "CIV4BuildingInfos", "Buildings", "Civ4BuildingInfos/BuildingInfos/BuildingInfo", &CvDLLUtilityIFaceBase::createBuildingInfoCacheObject);
-	if (!bFirstRead)
+	PreLoadGlobalClassInfo(eStage, GC.getAnimationCategoryInfo(), "CIV4AnimationInfos", "Units", "Civ4AnimationInfos/AnimationCategories/AnimationCategory", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getAnimationPathInfo(), "CIV4AnimationPathInfos", "Units", "Civ4AnimationPathInfos/AnimationPaths/AnimationPath", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getHandicapInfo(), "CIV4HandicapInfo", "GameInfo", "Civ4HandicapInfo/HandicapInfos/HandicapInfo", &CvDLLUtilityIFaceBase::createHandicapInfoCacheObject);
+	PreLoadGlobalClassInfo(eStage, GC.getCursorInfo(), "CIV4CursorInfo", "GameInfo", "Civ4CursorInfo/CursorInfos/CursorInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getCivicOptionInfo(), "CIV4CivicOptionInfos", "GameInfo", "Civ4CivicOptionInfos/CivicOptionInfos/CivicOptionInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getHurryInfo(), "CIV4HurryInfo", "GameInfo", "Civ4HurryInfo/HurryInfos/HurryInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getBuildingInfo(), "CIV4BuildingInfos", "Buildings", "Civ4BuildingInfos/BuildingInfos/BuildingInfo", &CvDLLUtilityIFaceBase::createBuildingInfoCacheObject);
+	if (eStage == XML_STAGE_FULL)
 	{
 		for (int i=0; i < GC.getNumBuildingClassInfos(); ++i)
 		{
 			GC.getBuildingClassInfo((BuildingClassTypes)i).readPass3();
 		}
 	}
-	PreLoadGlobalClassInfo(GC.getBonusInfo(), "CIV4BonusInfos", "Terrain", "Civ4BonusInfos/BonusInfos/BonusInfo", &CvDLLUtilityIFaceBase::createBonusInfoCacheObject);
-	PreLoadGlobalClassInfo(GC.getRouteInfo(), "Civ4RouteInfos", "Misc", "Civ4RouteInfos/RouteInfos/RouteInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getImprovementInfo(), "CIV4ImprovementInfos", "Terrain", "Civ4ImprovementInfos/ImprovementInfos/ImprovementInfo", &CvDLLUtilityIFaceBase::createImprovementInfoCacheObject);
-	PreLoadGlobalClassInfo(GC.getFatherPointInfo(), "CIV4FatherPointInfos", "GameInfo", "Civ4FatherPointInfos/FatherPointInfos/FatherPointInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getFatherInfo(), "CIV4FatherInfos", "GameInfo", "Civ4FatherInfos/FatherInfos/FatherInfo", &CvDLLUtilityIFaceBase::createFatherInfoCacheObject);
-	PreLoadGlobalClassInfo(GC.getSpecialUnitInfo(), "CIV4SpecialUnitInfos", "Units", "Civ4SpecialUnitInfos/SpecialUnitInfos/SpecialUnitInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getCivicInfo(), "CIV4CivicInfos", "GameInfo", "Civ4CivicInfos/CivicInfos/CivicInfo", &CvDLLUtilityIFaceBase::createCivicInfoCacheObject);
-	PreLoadGlobalClassInfo(GC.getLeaderHeadInfo(), "CIV4LeaderHeadInfos", "Civilizations", "Civ4LeaderHeadInfos/LeaderHeadInfos/LeaderHeadInfo", &CvDLLUtilityIFaceBase::createLeaderHeadInfoCacheObject);
-	PreLoadGlobalClassInfo(GC.getPlayerColorInfo(), "CIV4PlayerColorInfos", "Interface", "Civ4PlayerColorInfos/PlayerColorInfos/PlayerColorInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getEffectInfo(), "CIV4EffectInfos", "Misc", "Civ4EffectInfos/EffectInfos/EffectInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getEntityEventInfo(), "CIV4EntityEventInfos", "Units", "Civ4EntityEventInfos/EntityEventInfos/EntityEventInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getBuildInfo(), "CIV4BuildInfos", "Units", "Civ4BuildInfos/BuildInfos/BuildInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getUnitInfo(), "CIV4UnitInfos", "Units", "Civ4UnitInfos/UnitInfos/UnitInfo", &CvDLLUtilityIFaceBase::createUnitInfoCacheObject);
-	if (!bFirst)
+	PreLoadGlobalClassInfo(eStage, GC.getBonusInfo(), "CIV4BonusInfos", "Terrain", "Civ4BonusInfos/BonusInfos/BonusInfo", &CvDLLUtilityIFaceBase::createBonusInfoCacheObject);
+	PreLoadGlobalClassInfo(eStage, GC.getRouteInfo(), "Civ4RouteInfos", "Misc", "Civ4RouteInfos/RouteInfos/RouteInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getImprovementInfo(), "CIV4ImprovementInfos", "Terrain", "Civ4ImprovementInfos/ImprovementInfos/ImprovementInfo", &CvDLLUtilityIFaceBase::createImprovementInfoCacheObject);
+	PreLoadGlobalClassInfo(eStage, GC.getFatherPointInfo(), "CIV4FatherPointInfos", "GameInfo", "Civ4FatherPointInfos/FatherPointInfos/FatherPointInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getFatherInfo(), "CIV4FatherInfos", "GameInfo", "Civ4FatherInfos/FatherInfos/FatherInfo", &CvDLLUtilityIFaceBase::createFatherInfoCacheObject);
+	PreLoadGlobalClassInfo(eStage, GC.getSpecialUnitInfo(), "CIV4SpecialUnitInfos", "Units", "Civ4SpecialUnitInfos/SpecialUnitInfos/SpecialUnitInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getCivicInfo(), "CIV4CivicInfos", "GameInfo", "Civ4CivicInfos/CivicInfos/CivicInfo", &CvDLLUtilityIFaceBase::createCivicInfoCacheObject);
+	PreLoadGlobalClassInfo(eStage, GC.getLeaderHeadInfo(), "CIV4LeaderHeadInfos", "Civilizations", "Civ4LeaderHeadInfos/LeaderHeadInfos/LeaderHeadInfo", &CvDLLUtilityIFaceBase::createLeaderHeadInfoCacheObject);
+	PreLoadGlobalClassInfo(eStage, GC.getPlayerColorInfo(), "CIV4PlayerColorInfos", "Interface", "Civ4PlayerColorInfos/PlayerColorInfos/PlayerColorInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getEffectInfo(), "CIV4EffectInfos", "Misc", "Civ4EffectInfos/EffectInfos/EffectInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getEntityEventInfo(), "CIV4EntityEventInfos", "Units", "Civ4EntityEventInfos/EntityEventInfos/EntityEventInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getBuildInfo(), "CIV4BuildInfos", "Units", "Civ4BuildInfos/BuildInfos/BuildInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getUnitInfo(), "CIV4UnitInfos", "Units", "Civ4UnitInfos/UnitInfos/UnitInfo", &CvDLLUtilityIFaceBase::createUnitInfoCacheObject);
+	if (eStage == XML_STAGE_FULL)
 	{
 		for (int i=0; i < GC.getNumUnitClassInfos(); ++i)
 		{
@@ -324,81 +344,81 @@ void CvXMLLoadUtility::readXMLfiles(bool bFirst)
 		}
 	}
 	// trade screen type - start - Nightinggale
-	PreLoadGlobalClassInfo(GC.getTradeScreenInfo(), "CIV4TradeScreenInfo", "GameInfo", "Civ4TradeScreenInfo/TradeScreenInfos/TradeScreenInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getTradeScreenInfo(), "CIV4TradeScreenInfo", "GameInfo", "Civ4TradeScreenInfo/TradeScreenInfos/TradeScreenInfo", NULL);
 	// trade screen type - end - Nightinggale
 	// Load CivEffects
-	PreLoadGlobalClassInfo(GC.getCivEffectInfo(), "CIV4CivEffectsInfos", "CivEffects", "Civ4CivEffectInfos/CivEffectInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getCivEffectInfo(), "CIV4CivEffectsInfos", "CivEffects", "Civ4CivEffectInfos/CivEffectInfo", NULL);
 	//Androrc UnitArtStyles
-	PreLoadGlobalClassInfo(GC.getUnitArtStyleTypeInfo(), "CIV4UnitArtStyleTypeInfos", "Civilizations", "Civ4UnitArtStyleTypeInfos/UnitArtStyleTypeInfos/UnitArtStyleTypeInfo", false);
+	PreLoadGlobalClassInfo(eStage, GC.getUnitArtStyleTypeInfo(), "CIV4UnitArtStyleTypeInfos", "Civilizations", "Civ4UnitArtStyleTypeInfos/UnitArtStyleTypeInfos/UnitArtStyleTypeInfo", false);
 	//Androrc End
-	PreLoadGlobalClassInfo(GC.getCivilizationInfo(), "CIV4CivilizationInfos", "Civilizations", "Civ4CivilizationInfos/CivilizationInfos/CivilizationInfo", &CvDLLUtilityIFaceBase::createCivilizationInfoCacheObject);
-	PreLoadGlobalClassInfo(GC.getHints(), "CIV4Hints", "GameInfo", "Civ4Hints/HintInfos/HintInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getMainMenus(), "CIV4MainMenus", "Art", "Civ4MainMenus/MainMenus/MainMenu", NULL);
-	PreLoadGlobalClassInfo(GC.getSlideShowInfo(), "CIV4SlideShowInfos", "Interface", "Civ4SlideShowInfos/SlideShowInfos/SlideShowInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getSlideShowRandomInfo(), "CIV4SlideShowRandomInfos", "Interface", "Civ4SlideShowRandomInfos/SlideShowRandomInfos/SlideShowRandomInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getWorldPickerInfo(), "CIV4WorldPickerInfos", "Interface", "Civ4WorldPickerInfos/WorldPickerInfos/WorldPickerInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getCivilizationInfo(), "CIV4CivilizationInfos", "Civilizations", "Civ4CivilizationInfos/CivilizationInfos/CivilizationInfo", &CvDLLUtilityIFaceBase::createCivilizationInfoCacheObject);
+	PreLoadGlobalClassInfo(eStage, GC.getHints(), "CIV4Hints", "GameInfo", "Civ4Hints/HintInfos/HintInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getMainMenus(), "CIV4MainMenus", "Art", "Civ4MainMenus/MainMenus/MainMenu", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getSlideShowInfo(), "CIV4SlideShowInfos", "Interface", "Civ4SlideShowInfos/SlideShowInfos/SlideShowInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getSlideShowRandomInfo(), "CIV4SlideShowRandomInfos", "Interface", "Civ4SlideShowRandomInfos/SlideShowRandomInfos/SlideShowRandomInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getWorldPickerInfo(), "CIV4WorldPickerInfos", "Interface", "Civ4WorldPickerInfos/WorldPickerInfos/WorldPickerInfo", NULL);
 
-	PreLoadGlobalClassInfo(GC.getGameOptionInfo(), "CIV4GameOptionInfos", "GameInfo", "Civ4GameOptionInfos/GameOptionInfos/GameOptionInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getMPOptionInfo(), "CIV4MPOptionInfos", "GameInfo", "Civ4MPOptionInfos/MPOptionInfos/MPOptionInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getForceControlInfo(), "CIV4ForceControlInfos", "GameInfo", "Civ4ForceControlInfos/ForceControlInfos/ForceControlInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getGameOptionInfo(), "CIV4GameOptionInfos", "GameInfo", "Civ4GameOptionInfos/GameOptionInfos/GameOptionInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getMPOptionInfo(), "CIV4MPOptionInfos", "GameInfo", "Civ4MPOptionInfos/MPOptionInfos/MPOptionInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getForceControlInfo(), "CIV4ForceControlInfos", "GameInfo", "Civ4ForceControlInfos/ForceControlInfos/ForceControlInfo", NULL);
 
 	// PatchMod: Achievements START
-	PreLoadGlobalClassInfo(GC.getAchieveInfo(), "CIV4AchieveInfos", "Events", "Civ4AchieveInfos/AchieveInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getAchieveInfo(), "CIV4AchieveInfos", "Events", "Civ4AchieveInfos/AchieveInfo", NULL);
 	// PatchMod: Achievements END
 
 	// 6 SetupGlobalLandscapeInfo
-	PreLoadGlobalClassInfo(GC.getLandscapeInfo(), "CIV4TerrainSettings", "Terrain", "Civ4TerrainSettings/LandscapeInfos/LandscapeInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getLandscapeInfo(), "CIV4TerrainSettings", "Terrain", "Civ4TerrainSettings/LandscapeInfos/LandscapeInfo", NULL);
 
 	// 7 LoadPostMenuGlobals
 	PreUpdateProgressCB("Global Events");
 
-	PreLoadGlobalClassInfo(GC.getEventInfo(), "CIV4EventInfos", "Events", "Civ4EventInfos/EventInfos/EventInfo", &CvDLLUtilityIFaceBase::createEventInfoCacheObject);
-	PreLoadGlobalClassInfo(GC.getEventTriggerInfo(), "CIV4EventTriggerInfos", "Events", "Civ4EventTriggerInfos/EventTriggerInfos/EventTriggerInfo", &CvDLLUtilityIFaceBase::createEventTriggerInfoCacheObject);
+	PreLoadGlobalClassInfo(eStage, GC.getEventInfo(), "CIV4EventInfos", "Events", "Civ4EventInfos/EventInfos/EventInfo", &CvDLLUtilityIFaceBase::createEventInfoCacheObject);
+	PreLoadGlobalClassInfo(eStage, GC.getEventTriggerInfo(), "CIV4EventTriggerInfos", "Events", "Civ4EventTriggerInfos/EventTriggerInfos/EventTriggerInfo", &CvDLLUtilityIFaceBase::createEventTriggerInfoCacheObject);
 
 	PreUpdateProgressCB("Global Routes");
 
-	PreLoadGlobalClassInfo(GC.getRouteModelInfo(), "Civ4RouteModelInfos", "Art", "Civ4RouteModelInfos/RouteModelInfos/RouteModelInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getRouteModelInfo(), "Civ4RouteModelInfos", "Art", "Civ4RouteModelInfos/RouteModelInfos/RouteModelInfo", NULL);
 
 	PreUpdateProgressCB("Global Rivers");
 
-	PreLoadGlobalClassInfo(GC.getRiverModelInfo(), "CIV4RiverModelInfos", "Art", "Civ4RiverModelInfos/RiverModelInfos/RiverModelInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getRiverModelInfo(), "CIV4RiverModelInfos", "Art", "Civ4RiverModelInfos/RiverModelInfos/RiverModelInfo", NULL);
 
 	PreUpdateProgressCB("Global Other");
 
-	PreLoadGlobalClassInfo(GC.getWaterPlaneInfo(), "CIV4WaterPlaneInfos", "Misc", "Civ4WaterPlaneInfos/WaterPlaneInfos/WaterPlaneInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getTerrainPlaneInfo(), "CIV4TerrainPlaneInfos", "Misc", "Civ4TerrainPlaneInfos/TerrainPlaneInfos/TerrainPlaneInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getCameraOverlayInfo(), "CIV4CameraOverlayInfos", "Misc", "Civ4CameraOverlayInfos/CameraOverlayInfos/CameraOverlayInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getWaterPlaneInfo(), "CIV4WaterPlaneInfos", "Misc", "Civ4WaterPlaneInfos/WaterPlaneInfos/WaterPlaneInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getTerrainPlaneInfo(), "CIV4TerrainPlaneInfos", "Misc", "Civ4TerrainPlaneInfos/TerrainPlaneInfos/TerrainPlaneInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getCameraOverlayInfo(), "CIV4CameraOverlayInfos", "Misc", "Civ4CameraOverlayInfos/CameraOverlayInfos/CameraOverlayInfo", NULL);
 
 	PreUpdateProgressCB("Global Emphasize");
 
-	PreLoadGlobalClassInfo(GC.getEmphasizeInfo(), "CIV4EmphasizeInfo", "GameInfo", "Civ4EmphasizeInfo/EmphasizeInfos/EmphasizeInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getEmphasizeInfo(), "CIV4EmphasizeInfo", "GameInfo", "Civ4EmphasizeInfo/EmphasizeInfos/EmphasizeInfo", NULL);
 
 	PreUpdateProgressCB("Global Other");
 
-	PreLoadGlobalClassInfo(GC.getMissionInfo(), "CIV4MissionInfos", "Units", "Civ4MissionInfos/MissionInfos/MissionInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getControlInfo(), "CIV4ControlInfos", "Units", "Civ4ControlInfos/ControlInfos/ControlInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getCommandInfo(), "CIV4CommandInfos", "Units", "Civ4CommandInfos/CommandInfos/CommandInfo", NULL);
-	PreLoadGlobalClassInfo(GC.getAutomateInfo(), "CIV4AutomateInfos", "Units", "Civ4AutomateInfos/AutomateInfos/AutomateInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getMissionInfo(), "CIV4MissionInfos", "Units", "Civ4MissionInfos/MissionInfos/MissionInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getControlInfo(), "CIV4ControlInfos", "Units", "Civ4ControlInfos/ControlInfos/ControlInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getCommandInfo(), "CIV4CommandInfos", "Units", "Civ4CommandInfos/CommandInfos/CommandInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getAutomateInfo(), "CIV4AutomateInfos", "Units", "Civ4AutomateInfos/AutomateInfos/AutomateInfo", NULL);
 
 	PreUpdateProgressCB("Global Interface");
 
-	PreLoadGlobalClassInfo(GC.getInterfaceModeInfo(), "CIV4InterfaceModeInfos", "Interface", "Civ4InterfaceModeInfos/InterfaceModeInfos/InterfaceModeInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getInterfaceModeInfo(), "CIV4InterfaceModeInfos", "Interface", "Civ4InterfaceModeInfos/InterfaceModeInfos/InterfaceModeInfo", NULL);
 
-	if (!bFirst)
+	if (eStage == XML_STAGE_FULL)
 	{
 		SetGlobalActionInfo();
 	}
 
 	// Load the formation info
-	PreLoadGlobalClassInfo(GC.getUnitFormationInfo(), "CIV4FormationInfos", "Units", "UnitFormations/UnitFormation", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getUnitFormationInfo(), "CIV4FormationInfos", "Units", "UnitFormations/UnitFormation", NULL);
 
 	// Load the attachable infos
-	PreLoadGlobalClassInfo(GC.getAttachableInfo(), "CIV4AttachableInfos", "Misc", "Civ4AttachableInfos/AttachableInfos/AttachableInfo", NULL);
+	PreLoadGlobalClassInfo(eStage, GC.getAttachableInfo(), "CIV4AttachableInfos", "Misc", "Civ4AttachableInfos/AttachableInfos/AttachableInfo", NULL);
 
-	if (bFirst)
+	if (eStage == XML_STAGE_BASIC)
 	{
 		// preloading the types will not require the special case code
-		PreLoadGlobalClassInfo(GC.getDiplomacyInfo(), "CIV4DiplomacyInfos", "GameInfo", "Civ4DiplomacyInfos/DiplomacyInfos/DiplomacyInfo", &CvDLLUtilityIFaceBase::createDiplomacyInfoCacheObject);
+		PreLoadGlobalClassInfo(eStage, GC.getDiplomacyInfo(), "CIV4DiplomacyInfos", "GameInfo", "Civ4DiplomacyInfos/DiplomacyInfos/DiplomacyInfo", &CvDLLUtilityIFaceBase::createDiplomacyInfoCacheObject);
 	}
 	else
 	{
@@ -408,12 +428,10 @@ void CvXMLLoadUtility::readXMLfiles(bool bFirst)
 
 
 	bFirstRead = false;
-
-	GC.postXMLLoad(bFirst);
 }
 /// XML type preloading - end - Nightinggale
 
-bool CvXMLLoadUtility::ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObject* cache)
+bool CvXMLLoadUtility::ReadGlobalDefines(char const* szXMLFileName, CvCacheObject* cache)
 {
 	bool bLoaded = false;	// used to make sure that the xml file was loaded correctly
 
@@ -929,7 +947,7 @@ bool CvXMLLoadUtility::SetPostGlobalsGlobalDefines()
 		idx = FindInInfoClass(szVal);
 		GC.getDefinesVarSystem()->SetValue("UNITCLASS_ROYAL_INTERVENTIONS_LAND_UNIT_2", idx);
 		// WTP, ray, Royal Intervention, END
-		
+
 		//TAC Whaling, ray
 		SetGlobalDefine("UNITCLASS_WHALING_BOAT", szVal);
 		idx = FindInInfoClass(szVal);
@@ -1206,7 +1224,7 @@ void CvXMLLoadUtility::SetGameFont()
 	{
 		return;
 	}
-	
+
 	iGameFontCodePage = CvGameText::getCodePage();
 
 	switch (iGameFontCodePage)
@@ -1267,6 +1285,18 @@ static void loadTextFiles(std::vector<CvString>& aszFiles, const std::string szL
 //------------------------------------------------------------------------------------------------------
 bool CvXMLLoadUtility::LoadGlobalText()
 {
+	MOD_PROFILE("TXT key loading");
+	// Set the locate to the one needed by the language in question
+	// Sadly this seems to be very much hit or miss on a per computer basis. Sometimes it works and sometimes it doesn't.
+	// If it doesn't work, the user has to change the windows locale manually.
+	setlocale(LC_CTYPE, CvString::format(".%d", CvGameText::getCodePage()).c_str());
+	TxtReader textReader;
+	textReader.readFiles();
+	return true;
+
+
+	const bool DISABLE_VANILLA_TXT = true;
+
 	CvCacheObject* cache = gDLL->createGlobalTextCacheObject("GlobalText.dat");	// cache file name
 	if (!gDLL->cacheRead(cache))
 	{
@@ -1296,7 +1326,10 @@ bool CvXMLLoadUtility::LoadGlobalText()
 
 		// read vanilla, then mod
 		// gDLL->enumerateFiles mixes those two together. Removed because it unlocked vanilla overwriting mod strings.
-		loadTextFiles(aszFiles, "."                   , "xml\\text\\");
+		if (!DISABLE_VANILLA_TXT)
+		{
+			loadTextFiles(aszFiles, ".", "xml\\text\\");
+		}
 		loadTextFiles(aszFiles, gDLL->getModName(true), "xml\\text\\");
 
 		if (gDLL->isModularXMLLoading())
@@ -1331,7 +1364,7 @@ bool CvXMLLoadUtility::LoadGlobalText()
 					// First check if utf8 is in the filename.
 					// Vanilla has converted the path to lowercase at this point meaning it's not a case sensitive search.
 					bool bUTF8 = strstr(it->c_str(), "utf8") != NULL || strstr(it->c_str(), "UTF8") != NULL;
-
+					bUTF8 |= DISABLE_VANILLA_TXT;
 					// Now call the vanilla read code.
 					SetGameText("Civ4GameText", "Civ4GameText/TEXT", bUTF8, it->c_str(), FStringListEnglish, FStringListCurrentLang, StringList);
 				}
@@ -1413,7 +1446,9 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	}
 
 	/// XML type preloading - start - Nightinggale
-	readXMLfiles(false);
+	readXMLfiles(XML_STAGE_FULL);
+	readXMLfiles(XML_STAGE_POST_SETUP);
+	GC.postXMLLoad(false);
 	/// XML type preloading - end - Nightinggale
 
 	/// xml verification
@@ -1588,7 +1623,7 @@ bool CvXMLLoadUtility::LoadPostMenuGlobals()
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   SetGlobalStringArray(TCHAR (**ppszString)[256], char* szTagName, int* iNumVals)
+//  FUNCTION:   SetGlobalStringArray(CvString **ppszString, char* szTagName, int* iNumVals, bool bUseEnum)
 //
 //  PURPOSE :   takes the szTagName parameter and if it finds it in the m_pFXml member variable
 //				then it loads the ppszString parameter with the string values under it and the
@@ -1938,7 +1973,7 @@ void CvXMLLoadUtility::SetGlobalUnitScales(float* pfLargeScale, float* pfSmallSc
 		if (GetChildXmlVal(pfLargeScale))
 		{
 			// set the current xml node to it's next sibling and then
-			// get the sibling's TCHAR value
+			// get the sibling's char value
 			GetNextXmlVal(pfSmallScale);
 
 			// set the current xml node to it's parent node
@@ -1966,12 +2001,13 @@ void CvXMLLoadUtility::SetGlobalUnitScales(float* pfLargeScale, float* pfSmallSc
 void CvXMLLoadUtility::SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName, GameTextList& FStringListEnglish, GameTextList& FStringListCurrentLanguage, stdext::hash_map< std::string, bool >& StringList)
 {
 	PROFILE_FUNC();
+
 	logMsg("SetGameText %s\n", szTagName);
 	int i=0;		//loop counter - Index into pTextInfo
 
 	int iCurrentLanguage = GAMETEXT.getCurrentLanguage();
 
-	const TCHAR* szLanguageName = CvGameText::getLanguageName(iCurrentLanguage);
+	char const* szLanguageName = CvGameText::getLanguageName(iCurrentLanguage);
 
 	if (gDLL->getXMLIFace()->LocateNode(m_pFXml, szTextGroup)) // Get the Text Group 1st
 	{
@@ -2205,7 +2241,7 @@ void CvXMLLoadUtility::SetDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfo
 }
 
 template <class T>
-void CvXMLLoadUtility::LoadGlobalClassInfo(std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (const TCHAR*))
+void CvXMLLoadUtility::LoadGlobalClassInfo(std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (char const*))
 {
 	bool bLoaded = false;
 	bool bWriteCache = true;
@@ -2331,7 +2367,7 @@ void CvXMLLoadUtility::LoadGlobalClassInfo(bool bFirst, EnumMap<IndexType, T, DE
 	}
 }
 
-void CvXMLLoadUtility::LoadDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (const TCHAR*))
+void CvXMLLoadUtility::LoadDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (char const*))
 {
 	bool bLoaded = false;
 	bool bWriteCache = true;
@@ -2484,7 +2520,7 @@ void CvXMLLoadUtility::SetFeatureStruct(int** ppiFeatureTime, std::vector<std::v
 {
 	int iNumSibs;					// the number of siblings the current xml node has
 	int iFeatureIndex;
-	TCHAR szTextVal[256];	// temporarily hold the text value of the current xml node
+	char szTextVal[256];	// temporarily hold the text value of the current xml node
 	int* paiFeatureTime = NULL;
 	bool* pabFeatureRemove = NULL;
 
@@ -2564,7 +2600,7 @@ void CvXMLLoadUtility::SetImprovementBonuses(CvImprovementBonusInfo** ppImprovem
 {
 	int i=0;				//loop counter
 	int iNumSibs;			// the number of siblings the current xml node has
-	TCHAR szNodeVal[256];	// temporarily holds the string value of the current xml node
+	char szNodeVal[256];	// temporarily holds the string value of the current xml node
 	CvImprovementBonusInfo* paImprovementBonus;	// local pointer to the bonus type struct in memory
 
 	// Skip any comments and stop at the next value we might want
@@ -2687,18 +2723,18 @@ bool CvXMLLoadUtility::SetAndLoadVar(int** ppiVar, int iDefault)
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   SetVariableListTagPairForAudioScripts(int **ppiList, const TCHAR* szRootTagName,
+//  FUNCTION:   SetVariableListTagPairForAudioScripts(int **ppiList, char const* szRootTagName,
 //										int iInfoBaseLength, int iDefaultListVal)
 //
 //  PURPOSE :   allocate and initialize a list from a tag pair in the xml for audio scripts
 //
 //------------------------------------------------------------------------------------------------------
-void CvXMLLoadUtility::SetVariableListTagPairForAudioScripts(int **ppiList, const TCHAR* szRootTagName, int iInfoBaseLength, int iDefaultListVal)
+void CvXMLLoadUtility::SetVariableListTagPairForAudioScripts(int **ppiList, char const* szRootTagName, int iInfoBaseLength, int iDefaultListVal)
 {
 	int i;
 	int iIndexVal;
 	int iNumSibs;
-	TCHAR szTextVal[256];
+	char szTextVal[256];
 	int* piList;
 	CvString szTemp;
 
@@ -2777,7 +2813,8 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 	gDLL->ChangeINIKeyValue("CONFIG", "Mod", gDLL->getModName(false));
 
 	/// XML type preloading - start - Nightinggale
-	readXMLfiles(true);
+	readXMLfiles(XML_STAGE_BASIC);
+	GC.postXMLLoad(true);
 	/// XML type preloading - end - Nightinggale
 
 	LoadGlobalClassInfo(GC.getPlayerOptionInfo(), "CIV4PlayerOptionInfos", "GameInfo", "Civ4PlayerOptionInfos/PlayerOptionInfos/PlayerOptionInfo", NULL);

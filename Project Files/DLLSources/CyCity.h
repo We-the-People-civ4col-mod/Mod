@@ -8,8 +8,8 @@
 
 //#include "CvEnums.h"
 #include <string>
-//# include <boost/python/tuple.hpp>
-//namespace python = boost::python;
+#include <boost/python/tuple.hpp>
+namespace python = boost::python;
 
 struct OrderData;
 class CvCity;

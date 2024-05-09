@@ -1,5 +1,5 @@
 #include "CvGameCoreDLL.h"
-#include ".\cvpopupinfo.h"
+#include "CvPopupInfo.h"
 
 #include "CvSavegame.h"
 

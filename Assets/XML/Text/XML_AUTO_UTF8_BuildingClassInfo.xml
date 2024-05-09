@@ -1,1661 +1,1661 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_ARMORY</Tag>
-        <English>Armoury</English>
-        <French>
-            <Text>Armurerie:Armureries</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Waffenkammer</German>
-        <Italian>
-            <Text>Armeria</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Polvorín:Polvorines</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_ARSENAL</Tag>
-        <English>Arsenal</English>
-        <French>
-            <Text>Arsenal:Arsenaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Arsenal</German>
-        <Italian>
-            <Text>Arsenale</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Fábrica de armas:Fábricas de armas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BASECAMP</Tag>
-        <English>Basecamp</English>
-        <French>
-            <Text>Camp de Base:Camps de Base</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Basislager</German>
-        <Italian>Basecamp</Italian>
-        <Spanish>Basecamp</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BEER_FACTORY</Tag>
-        <English>Beer Factory</English>
-        <French>Brasserie industrielle</French>
-        <German>Bierfabrik</German>
-        <Italian>Beer Factory</Italian>
-        <Spanish>Beer Factory</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BLACKSMITH_HOUSE</Tag>
-        <English>Blacksmith's House</English>
-        <French>
-            <Text>Maison du forgeron:Maisons de forgeron</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Dorfschmiede</German>
-        <Italian>
-            <Text>Casa del fabbro</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Casa del herrero:Casas del herrero</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BLACKSMITH_SHOP</Tag>
-        <English>Blacksmith's Shop</English>
-        <French>
-            <Text>Forge:Forges</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Stadtschmiede</German>
-        <Italian>
-            <Text>Bottega del fabbro</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Herrería:Herrerías</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BONUS</Tag>
-        <English>????</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BREWERS_HOUSE</Tag>
-        <English>Brewer's House</English>
-        <French>Maison du brasseur</French>
-        <German>Haus des Brauers</German>
-        <Italian>Brewers House</Italian>
-        <Spanish>Brewers House</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BREWERY</Tag>
-        <English>Brewery</English>
-        <French>Brasserie</French>
-        <German>Brauerei</German>
-        <Italian>Brewery</Italian>
-        <Spanish>Brewery</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BUTCHERS_HOUSE</Tag>
-        <English>Butcher's House</English>
-        <French>Maison du Boucher</French>
-        <German>Haus des Schlachters</German>
-        <Italian>Butchers House</Italian>
-        <Spanish>Butchers House</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BUTCHERY</Tag>
-        <English>Butchery</English>
-        <French>Boucherie</French>
-        <German>Schlachterei</German>
-        <Italian>Butchery</Italian>
-        <Spanish>Butchery</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CARPENTER_SHOP</Tag>
-        <English>Carpenter's Shop</English>
-        <French>
-            <Text>Maison du charpentier:Maisonsw de charpentier</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Zimmerei</German>
-        <Italian>
-            <Text>Bottega del carpentiere</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Ebanistería:Ebanisterías</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CATHEDRAL</Tag>
-        <English>Cathedral</English>
-        <French>
-            <Text>Cathédrale:Cathédrales</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Kathedrale:Kathedralen</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Cattedrale</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Catedral</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CENTRAL_CITY_MARKET</Tag>
-        <English>Regional Market</English>
-        <French>
-            <Text>Bourse coloniale</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Überregionaler Kolonialmarkt</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>National Colonial Market</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>National Colonial Market</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CHAPEL</Tag>
-        <English>Chapel</English>
-        <French>
-            <Text>Chapelle:Chapelles</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Kapelle:Kapellen</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Cappella:Cappelle</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Capilla:Capillas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CHURCH</Tag>
-        <English>Church</English>
-        <French>
-            <Text>Église:Églises</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Kirche</German>
-        <Italian>
-            <Text>Chiesa</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Iglesia:Iglesias</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CIGAR_FACTORY</Tag>
-        <English>Cigar Factory</English>
-        <French>
-            <Text>Usine de cigares:Usines de cigares</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Zigarrenfabrik</German>
-        <Italian>
-            <Text>Fabbrica di sigari</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Fábrica de puros:Fábricas de puros</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CITADEL</Tag>
-        <English>Citadel</English>
-        <French>
-            <Text>Citadelle:Citadelles</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Zitadelle</German>
-        <Italian>Citadel</Italian>
-        <Spanish>Citadel</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CITYHALL</Tag>
-        <English>City Hall</English>
-        <French>
-            <Text>Hôtel de ville:Hôtels de ville</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Rathaus</German>
-        <Italian>City Hall</Italian>
-        <Spanish>City Hall</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CITY_HOSPITAL</Tag>
-        <English>City Hospital</English>
-        <French>Hôpital</French>
-        <German>Bezirkskrankenhaus</German>
-        <Italian>City Hospital</Italian>
-        <Spanish>City Hospital</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_COLLEGE</Tag>
-        <English>College</English>
-        <French>
-            <Text>Lycée:Lycées</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Akademie</German>
-        <Italian>
-            <Text>College</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Colegio universitario:Colegios universitarios</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_COLONIAL_CONGRESS</Tag>
-        <English>Continental Congress</English>
-        <French>
-            <Text>Congrès des Colonies</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Kontinentalkongress</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Colonial Congress</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Colonial Congress</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CORN_CHAMBER</Tag>
-        <English>Corn Chamber</English>
-        <French>
-            <Text>Grenier à céréales</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Getreidekammer</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Corn Chamber</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Corn Chamber</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CUSTOM_HOUSE</Tag>
-        <English>Custom House</English>
-        <French>
-            <Text>Poste de douane:Postes de douane</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Zollhaus</German>
-        <Italian>
-            <Text>Custom House</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Custom House</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_CUSTOM_OFFICE</Tag>
-        <English>Central Customs Authority</English>
-        <French>
-            <Text>Autorité centrale des Douanes</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Zentrales Zollamt</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Central Customs Authority</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Central Customs Authority</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_DISTILLERS_HOUSE</Tag>
-        <English>Distiller's House</English>
-        <French>
-            <Text>Maison du distillateur:Maisons de distillateur</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Haus des Brenners</German>
-        <Italian>
-            <Text>Casa del distillatore</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Casa del destilador:Casas del destilador</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_DISTILLERY</Tag>
-        <English>Distillery</English>
-        <French>
-            <Text>Distillerie:Distilleries</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Brennereibetrieb</German>
-        <Italian>
-            <Text>Distilleria</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Destilería:Destilerías</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_DOCK</Tag>
-        <English>Dock</English>
-        <French>
-            <Text>Quais</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </French>
-        <German>Hafen</German>
-        <Italian>
-            <Text>Molo</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Muelle:Muelles</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Док</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_DRYDOCK</Tag>
-        <English>Drydock</English>
-        <French>
-            <Text>Cale sèche:Cales sèches</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Trockendock</German>
-        <Italian>
-            <Text>Bacino di carenaggio</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Dique seco:Diques secos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Сухой док</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_DYERS_HOUSE</Tag>
-        <English>Dyer's House</English>
-        <French>Maison du teinturier</French>
-        <German>Haus des Färbers</German>
-        <Italian>Dyers House</Italian>
-        <Spanish>Dyers House</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_DYERY</Tag>
-        <English>Dyery</English>
-        <French>Teinturerie</French>
-        <German>Färberei</German>
-        <Italian>Dyery</Italian>
-        <Spanish>Dyery</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_FORT</Tag>
-        <English>Stockade</English>
-        <French>
-            <Text>Palissade:Palissades</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Palisade</German>
-        <Italian>
-            <Text>Palizzata</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Empalizada:Empalizadas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_FORTRESS</Tag>
-        <English>Fort</English>
-        <French>
-            <Text>Fort:Forts</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Fort:Forts</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Forte:Forti</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Fuerte:Fuertes</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_FURNITURE_FACTORY</Tag>
-        <English>Furniture Factory</English>
-        <French>Usine de meubles</French>
-        <German>Möbelfabrik</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_FURNITURE_MAKERS_HOUSE</Tag>
-        <English>TXT_KEY_BUILDING_FURNITURE_MAKERS_HOUSE</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_FURNITURY</Tag>
-        <English>TXT_KEY_BUILDING_FURNITURY</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_FUR_FACTORY</Tag>
-        <English>Coat Factory</English>
-        <French>
-            <Text>Usine de manteaux:Usines de manteaux</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Pelzwarenfabrik</German>
-        <Italian>
-            <Text>Fabbrica di mantelli</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Fábrica de abrigos:Fábricas de abrigos</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_FUR_TRADERS_HOUSE</Tag>
-        <English>Fur Trader's House</English>
-        <French>
-            <Text>Maison du fourreur:Maisons de fourreur</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Haus des Pelzhändlers</German>
-        <Italian>
-            <Text>Casa del pellicciaio</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Casa del peletero:Casas del peletero</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_FUR_TRADING_POST</Tag>
-        <English>Fur Trading Post</English>
-        <French>
-            <Text>Comptoir de fourrures:Comptoirs de fourrures</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Pelzhandelsposten</German>
-        <Italian>
-            <Text>Negozio di pellicce</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Peletería:Peleterías</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_GRANARY</Tag>
-        <English>Granary</English>
-        <French>
-            <Text>Grenier</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Getreidespeicher</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Granary</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Granary</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_GREAT_ARSENAL</Tag>
-        <English>Great Arsenal</English>
-        <French>
-            <Text>Grand arsenal:Grands arsenaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Großes Zeughaus</German>
-        <Italian>Great Arsenal</Italian>
-        <Spanish>Great Arsenal</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_GREAT_BASTION</Tag>
-        <English>Great Bastion</English>
-        <French>
-            <Text>Grand bastion</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Große Bastion</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Great Bastion</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Great Bastion</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_GREAT_CATHEDRAL</Tag>
-        <English>TXT_KEY_BUILDING_GREAT_CATHEDRAL</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_GREAT_SHIPYARD</Tag>
-        <English>Naval Port</English>
-        <French>
-            <Text>Complexe portuaire:Complexes portuaires</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Marinehafen</German>
-        <Italian>Naval Port</Italian>
-        <Spanish>Naval Port</Spanish>
-        <Russian>Военно-морской порт</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_GREAT_TOOL_FACTORY</Tag>
-        <English>Great Tool Factory</English>
-        <French>
-            <Text>Haut fourneau:Hauts fourneaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Große Eisenwarenfabrik</German>
-        <Italian>Great Tool Factory</Italian>
-        <Spanish>Great Tool Factory</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_GREAT_UNIVERSITY</Tag>
-        <English>Great University</English>
-        <French>
-            <Text>Université de prestige:Universités de prestige</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Elitehochschule</German>
-        <Italian>
-            <Text>Università</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Universidad:Universidades</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_GREAT_WHEELWRIGHTS_WORKSHOP</Tag>
-        <English>Great Wheelwright's Workshop</English>
-        <French>
-            <Text>Grande fabrique de chariots:Grandes Fabriques de chariots</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Holzmanufaktur</German>
-        <Italian>Great Wheelwrights Workshop</Italian>
-        <Spanish>Great Wheelwrights Workshop</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_HORSE_MARKET</Tag>
-        <English>Grand Horse and Cattle Market</English>
-        <French>
-            <Text>Grande Halle aux bestiaux</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Großer Viehmarkt</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Grand Horse and Cattle Market</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Grand Horse and Cattle Market</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_IRONWORKS</Tag>
-        <English>Ironworks</English>
-        <French>
-            <Text>Ferronnerie:Ferronneries</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Schmiedemanufaktur</German>
-        <Italian>
-            <Text>Ferriera</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Fundición:Fundiciones</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_LANDING_STAGE</Tag>
-        <English>Pier</English>
-        <French>
-            <Text>Embarcadère:Embarcadères</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Landungssteg</German>
-        <Italian>Landing Stage</Italian>
-        <Spanish>Landing Stage</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_LARGE_DYERY</Tag>
-        <English>Large Dyery</English>
-        <French>Teinturerie industrielle</French>
-        <German>Große Färberei</German>
-        <Italian>Large Dyery</Italian>
-        <Spanish>Large Dyery</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_LEATHER_FACTORY</Tag>
-        <English>Leather Factory</English>
-        <French>Tannerie industrielle</French>
-        <German>Lederfabrik</German>
-        <Italian>Leather Factory</Italian>
-        <Spanish>Leather Factory</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_LUMBER_MILL</Tag>
-        <English>Lumber Mill</English>
-        <French>
-            <Text>Scierie:Scieries</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Sägewerk</German>
-        <Italian>
-            <Text>Segheria</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Aserradero:Aserraderos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_MAGAZINE</Tag>
-        <English>Magazine</English>
-        <French>
-            <Text>Magasin:Magasins</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Magazin</German>
-        <Italian>
-            <Text>Santabarbara</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Arsenal:Arsenales</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_MARKET</Tag>
-        <English>Village Market</English>
-        <French>
-            <Text>Marché du village:Marchés du village</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Dorfmarkt:Dofrmärkte</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Village Market:Village Markets</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Mercado del pueblo:Mercados del pueblo</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_MEDICAL_OFFICE</Tag>
-        <English>Medical Office</English>
-        <French>Cabinet médical</French>
-        <German>Arztpraxis</German>
-        <Italian>Medical Office</Italian>
-        <Spanish>Medical Office</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_MINSTER</Tag>
-        <English>Cathedral of the Archbishop</English>
-        <French>
-            <Text>Cathédrale de l'Archevêché</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Kathedrale des Erzbishofs</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Cathedral of the Archbishop</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Cathedral of the Archbishop</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_NEWSPAPER</Tag>
-        <English>Newspaper</English>
-        <French>
-            <Text>Journal:Journaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Zeitung</German>
-        <Italian>
-            <Text>Giornale</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Periódico:Periódicos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_OPERA</Tag>
-        <English>Grand Opera</English>
-        <French>
-            <Text>Grand Opéra</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Koloniales Opernhaus</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Grand Opera</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Grand Opera</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_PALACE</Tag>
-        <English>Government Palace</English>
-        <French>
-            <Text>Hôtel colonial:Hôtels coloniaux</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Regierungspalast</German>
-        <Italian>Government Palace</Italian>
-        <Spanish>Government Palace</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_PRINTING_PRESS</Tag>
-        <English>Printing Press</English>
-        <French>
-            <Text>Imprimerie:Imprimeries</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Druckerpresse</German>
-        <Italian>
-            <Text>Tipografia</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Imprenta:Imprentas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_PUBLISHING</Tag>
-        <English>Colonial Publisher</English>
-        <French>
-            <Text>Éditeur colonial</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Kolonialer Zeitungsverlag</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Colonial Publisher</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Colonial Publisher</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_RANCH</Tag>
-        <English>Ranch</English>
-        <French>
-            <Text>Ranch:Ranchs</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Ranch</German>
-        <Italian>
-            <Text>Fattoria</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Rancho:Ranchos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_RUM_FACTORY</Tag>
-        <English>Rum and Brandy Factory</English>
-        <French>
-            <Text>Usine de rhum:Usines de rhum</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Rum- und Schnapsfabrik</German>
-        <Italian>
-            <Text>Fabbrica di rum</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Fábrica de ron:Fábricas de ron</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_SALOON</Tag>
-        <English>Saloon</English>
-        <French>
-            <Text>Saloon</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Saloon</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Saloon</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Saloon</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_SCHOOLHOUSE</Tag>
-        <English>Schoolhouse</English>
-        <French>
-            <Text>École:Écoles</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Schule</German>
-        <Italian>
-            <Text>Scuola</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Escuela:Escuelas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_SHIPYARD</Tag>
-        <English>Shipyard</English>
-        <French>
-            <Text>Chantier naval:Chantiers navals</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Schiffswerft</German>
-        <Italian>
-            <Text>Cantiere navale</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Astillero:Astilleros</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Судоверфь</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_SLAUGHTERHOUSE</Tag>
-        <English>Slaughterhouse</English>
-        <French>Abattoir</French>
-        <German>Schlachthaus</German>
-        <Italian>Slaughterhouse</Italian>
-        <Spanish>Slaughterhouse</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_HALL</Tag>
-        <English>Spice Trader's Hall</English>
-        <French>Halle aux Épices</French>
-        <German>Gewürzhandelshalle</German>
-        <Italian>Spice Traders Hall</Italian>
-        <Spanish>Spice Traders Hall</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_HOUSE</Tag>
-        <English>Spice Trader's House</English>
-        <French>Maison de l'épicier</French>
-        <German>Haus des Gewürzhändlers</German>
-        <Italian>Spice Trader's House</Italian>
-        <Spanish>Spice Trader's House</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_POST</Tag>
-        <English>Spice Trading Post</English>
-        <French>Épicerie</French>
-        <German>Gewürzhandelsposten</German>
-        <Italian>Spice Trading Post</Italian>
-        <Spanish>Spice Trading Post</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_STABLE</Tag>
-        <English>Stable</English>
-        <French>
-            <Text>Étable:Étables</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Stallungen</German>
-        <Italian>
-            <Text>Stalla</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Establo:Establos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_STATUE_GOVERNOR</Tag>
-        <English>Statue of the Governor</English>
-        <French>
-            <Text>Statue du Gouverneur:Statues de Gouverneur</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Statue des Gouverneurs</German>
-        <Italian>Statue of Governor</Italian>
-        <Spanish>Statue of Governor</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_STOCKADE</Tag>
-        <English>Stockade</English>
-        <French>
-            <Text>Cheval de frise:Chevaux de Frise</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Friesische Reiter</German>
-        <Italian>Cavallo di Frisia</Italian>
-        <Spanish>Chevaux de Frise</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_STRONGHOLD</Tag>
-        <English>Fortress</English>
-        <French>
-            <Text>Forteresse:Forteresses</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Festung</German>
-        <Italian>
-            <Text>Fortezza</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Fortaleza:Fortalezas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TANNERS_HOUSE</Tag>
-        <English>Tanner's House</English>
-        <French>Maison du Tanneur</French>
-        <German>Haus des Gerbers</German>
-        <Italian>Tanners House</Italian>
-        <Spanish>Tanners House</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TANNERY</Tag>
-        <English>Tannery</English>
-        <French>Tannerie</French>
-        <German>Gerberei</German>
-        <Italian>Tannery</Italian>
-        <Spanish>Tannery</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TAVERN</Tag>
-        <English>Tavern</English>
-        <French>Taverne</French>
-        <German>Taverne</German>
-        <Italian>Tavern</Italian>
-        <Spanish>Tavern</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TEXTILE_MILL</Tag>
-        <English>Textile Mill</English>
-        <French>
-            <Text>Usine textile:Usines textiles</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Textilfabrik</German>
-        <Italian>
-            <Text>Fabbrica tessile</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Taller textil:Talleres textiles</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_THEATRE</Tag>
-        <English>Theatre</English>
-        <French>
-            <Text>Théâtre</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Theater</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Theatre</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Theatre</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TOBACCONIST_HOUSE</Tag>
-        <English>Tobacconist's House</English>
-        <French>
-            <Text>Maison du cigarier:Maison de cigarier</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Tabakhaus</German>
-        <Italian>
-            <Text>Casa del tabaccaio</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Casa del tabaquero:Casas del tabaquero</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TOBACCONIST_SHOP</Tag>
-        <English>Tobacconist's Shop</English>
-        <French>
-            <Text>Atelier de tabac:Ateliers de tabac</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Tabakwarenbetrieb</German>
-        <Italian>
-            <Text>Negozio del tabaccaio</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Tabaquería:Tabaquerías</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TOOL_FACTORY</Tag>
-        <English>Tool Factory</English>
-        <French>
-            <Text>Usine sidérurgique:Usines sidérurgiques</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Eisenwarenfabrik</German>
-        <Italian>Tool Factory</Italian>
-        <Spanish>Tool Factory</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TOWNHALL</Tag>
-        <English>Town Hall</English>
-        <French>
-            <Text>Mairie:HôMairies</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Stadthalle</German>
-        <Italian>
-            <Text>Municipio</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Ayuntamiento:Ayuntamientos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TOWN_HOSPITAL</Tag>
-        <English>Town Hospital</English>
-        <French>Clinique</French>
-        <German>Stadtkrankenhaus</German>
-        <Italian>Town Hospital</Italian>
-        <Spanish>Town Hospital</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TOWN_MARKET</Tag>
-        <English>Town Market</English>
-        <French>
-            <Text>Marché couvert:Marchés couverts</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Städtischer Markt:Städtische Märkte</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Town Market:Town Markets</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Town Market:Town Markets</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_TRAIN_STATION</Tag>
-        <English>Waystation</English>
-        <French>Relais de poste</French>
-        <German>Postreiter- und Pferdewechselstation</German>
-        <Italian>Waystation</Italian>
-        <Spanish>Waystation</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_UNIVERSITY</Tag>
-        <English>University</English>
-        <French>
-            <Text>Université:Universités</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Universität</German>
-        <Italian>
-            <Text>Università</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Universidad:Universidades</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_VILLAGEHALL</Tag>
-        <English>Village Hall</English>
-        <French>
-            <Text>Salle communale:Salles communales</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Gemeindehaus</German>
-        <Italian>Village Hall</Italian>
-        <Spanish>Village Hall</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_VILLAGE_WELL</Tag>
-        <English>Village Well</English>
-        <French>Puits du village</French>
-        <German>Dorfbrunnen</German>
-        <Italian>Village Well</Italian>
-        <Spanish>Village Well</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_BONUS</Tag>
-        <English>Bonus Dummy for Building Infos</English>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_VINTAGERS_HOUSE</Tag>
-        <English>Vintager's House</English>
-        <French>Maison du vigneron</French>
-        <German>Haus des Winzers</German>
-        <Italian>Vintager's House</Italian>
-        <Spanish>Vintager's House</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_WAREHOUSE</Tag>
-        <English>Storage House</English>
-        <French>
-            <Text>Remise:Remises</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Lagerhaus</German>
-        <Italian>
-            <Text>Magazzino</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Almacén:Almacenes</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_WAREHOUSE_EXPANSION</Tag>
-        <English>Warehouse</English>
-        <French>
-            <Text>Entrepôt:Entrepôts</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Lagerhauserweiterung</German>
-        <Italian>
-            <Text>Espansione del magazzino</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Almacén ampliado:Almacenes ampliados</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_WAREHOUSE_EXPANSION_2</Tag>
-        <English>Warehouse Expansion</English>
-        <French>
-            <Text>Entrepôt étendu:Entrepôts étendus</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Große Lagerhauserweiterung</German>
-        <Italian>
-            <Text>Warehouse Expansion</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Warehouse Expansion</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_WATERMILL</Tag>
-        <English>
-            <Text>Watermill:Watermills</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>Moulin à eau:Moulins à eau</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Wassermühle:Wassermühlen</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Watermill:Watermills</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Watermill:Watermills</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_WEAVERS_HOUSE</Tag>
-        <English>Weaver's House</English>
-        <French>
-            <Text>Maison du tisserand:Maisons du tisserand</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Haus des Webers</German>
-        <Italian>
-            <Text>Casa del tessitore</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Casa del tejedor:Casas del tejedor</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_WEAVERS_SHOP</Tag>
-        <English>Weaver's Shop</English>
-        <French>
-            <Text>Boutique du tisserand:Boutiques de tisserand</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Webereibetrieb</German>
-        <Italian>
-            <Text>Negozio del tessitore</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Tejeduría:Tejedurías</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_WHALE_OIL_FACTORY</Tag>
-        <English>Train Oil Rendering Plant</English>
-        <French>
-            <Text>Usine de raffinage des baleines:Usines de raffinage des baleines</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Tranfabrik</German>
-        <Italian>Train Oil Rendering Plant</Italian>
-        <Spanish>Train Oil Rendering Plant</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_WHALE_OIL_HOUSE</Tag>
-        <English>Train Oil Manufactory</English>
-        <French>
-            <Text>Maison du raffineur de baleine:Maison du raffineur de baleine</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Haus des Trankochers</German>
-        <Italian>Train Oil Manufactory</Italian>
-        <Spanish>Train Oil Manufactory</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_WHEELWRIGHTS_WORKSHOP</Tag>
-        <English>Wheelwright's Workshop</English>
-        <French>
-            <Text>Fabrique de chariots:Fabriques de chariot</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Wagnerei</German>
-        <Italian>Wheelwrights Workshop</Italian>
-        <Spanish>Wheelwrights Workshop</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_WINDMILL</Tag>
-        <English>
-            <Text>Windmill:Windmills</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </English>
-        <French>
-            <Text>Moulin à vent:Moulins à vent</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>
-            <Text>Windmühle:Windmühlen</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>Windmill:Windmills</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Windmill:Windmills</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_WINERY</Tag>
-        <English>Winery</English>
-        <French>Chai à vin</French>
-        <German>Winzerei</German>
-        <Italian>Winery</Italian>
-        <Spanish>Winery</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_BUILDINGCLASS_WINE_FACTORY</Tag>
-        <English>Wine Factory</English>
-        <French>Domaine viticole</French>
-        <German>Weinfabrik</German>
-        <Italian>Wine Factory</Italian>
-        <Spanish>Wine Factory</Spanish>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_ARMORY</Tag>
+		<English>Armoury</English>
+		<French>
+			<Text>Armurerie:Armureries</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Waffenkammer</German>
+		<Italian>
+			<Text>Armeria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Polvorín:Polvorines</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_ARSENAL</Tag>
+		<English>Arsenal</English>
+		<French>
+			<Text>Arsenal:Arsenaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Arsenal</German>
+		<Italian>
+			<Text>Arsenale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fábrica de armas:Fábricas de armas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BASECAMP</Tag>
+		<English>Basecamp</English>
+		<French>
+			<Text>Camp de Base:Camps de Base</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Basislager</German>
+		<Italian>Basecamp</Italian>
+		<Spanish>Basecamp</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BEER_FACTORY</Tag>
+		<English>Beer Factory</English>
+		<French>Brasserie industrielle</French>
+		<German>Bierfabrik</German>
+		<Italian>Beer Factory</Italian>
+		<Spanish>Beer Factory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BLACKSMITH_HOUSE</Tag>
+		<English>Blacksmith's House</English>
+		<French>
+			<Text>Maison du forgeron:Maisons de forgeron</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Dorfschmiede</German>
+		<Italian>
+			<Text>Casa del fabbro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Casa del herrero:Casas del herrero</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BLACKSMITH_SHOP</Tag>
+		<English>Blacksmith's Shop</English>
+		<French>
+			<Text>Forge:Forges</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Stadtschmiede</German>
+		<Italian>
+			<Text>Bottega del fabbro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Herrería:Herrerías</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BONUS</Tag>
+		<English>????</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BREWERS_HOUSE</Tag>
+		<English>Brewer's House</English>
+		<French>Maison du brasseur</French>
+		<German>Haus des Brauers</German>
+		<Italian>Brewers House</Italian>
+		<Spanish>Brewers House</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BREWERY</Tag>
+		<English>Brewery</English>
+		<French>Brasserie</French>
+		<German>Brauerei</German>
+		<Italian>Brewery</Italian>
+		<Spanish>Brewery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BUTCHERS_HOUSE</Tag>
+		<English>Butcher's House</English>
+		<French>Maison du Boucher</French>
+		<German>Haus des Schlachters</German>
+		<Italian>Butchers House</Italian>
+		<Spanish>Butchers House</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BUTCHERY</Tag>
+		<English>Butchery</English>
+		<French>Boucherie</French>
+		<German>Schlachterei</German>
+		<Italian>Butchery</Italian>
+		<Spanish>Butchery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CARPENTER_SHOP</Tag>
+		<English>Carpenter's Shop</English>
+		<French>
+			<Text>Maison du charpentier:Maisonsw de charpentier</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Zimmerei</German>
+		<Italian>
+			<Text>Bottega del carpentiere</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Ebanistería:Ebanisterías</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CATHEDRAL</Tag>
+		<English>Cathedral</English>
+		<French>
+			<Text>Cathédrale:Cathédrales</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Kathedrale:Kathedralen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Cattedrale</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Catedral</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CENTRAL_CITY_MARKET</Tag>
+		<English>Regional Market</English>
+		<French>
+			<Text>Bourse coloniale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Überregionaler Kolonialmarkt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>National Colonial Market</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>National Colonial Market</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CHAPEL</Tag>
+		<English>Chapel</English>
+		<French>
+			<Text>Chapelle:Chapelles</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Kapelle:Kapellen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Cappella:Cappelle</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Capilla:Capillas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CHURCH</Tag>
+		<English>Church</English>
+		<French>
+			<Text>Église:Églises</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Kirche</German>
+		<Italian>
+			<Text>Chiesa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Iglesia:Iglesias</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CIGAR_FACTORY</Tag>
+		<English>Cigar Factory</English>
+		<French>
+			<Text>Usine de cigares:Usines de cigares</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Zigarrenfabrik</German>
+		<Italian>
+			<Text>Fabbrica di sigari</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fábrica de puros:Fábricas de puros</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CITADEL</Tag>
+		<English>Citadel</English>
+		<French>
+			<Text>Citadelle:Citadelles</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Zitadelle</German>
+		<Italian>Citadel</Italian>
+		<Spanish>Citadel</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CITYHALL</Tag>
+		<English>City Hall</English>
+		<French>
+			<Text>Hôtel de ville:Hôtels de ville</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Rathaus</German>
+		<Italian>City Hall</Italian>
+		<Spanish>City Hall</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CITY_HOSPITAL</Tag>
+		<English>City Hospital</English>
+		<French>Hôpital</French>
+		<German>Bezirkskrankenhaus</German>
+		<Italian>City Hospital</Italian>
+		<Spanish>City Hospital</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_COLLEGE</Tag>
+		<English>College</English>
+		<French>
+			<Text>Lycée:Lycées</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Akademie</German>
+		<Italian>
+			<Text>College</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Colegio universitario:Colegios universitarios</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_COLONIAL_CONGRESS</Tag>
+		<English>Continental Congress</English>
+		<French>
+			<Text>Congrès des Colonies</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Kontinentalkongress</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Colonial Congress</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Colonial Congress</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CORN_CHAMBER</Tag>
+		<English>Corn Chamber</English>
+		<French>
+			<Text>Grenier à céréales</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Getreidekammer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Corn Chamber</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Corn Chamber</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CUSTOM_HOUSE</Tag>
+		<English>Custom House</English>
+		<French>
+			<Text>Poste de douane:Postes de douane</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Zollhaus</German>
+		<Italian>
+			<Text>Custom House</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Custom House</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_CUSTOM_OFFICE</Tag>
+		<English>Central Customs Authority</English>
+		<French>
+			<Text>Autorité centrale des Douanes</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Zentrales Zollamt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Central Customs Authority</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Central Customs Authority</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_DISTILLERS_HOUSE</Tag>
+		<English>Distiller's House</English>
+		<French>
+			<Text>Maison du distillateur:Maisons de distillateur</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Haus des Brenners</German>
+		<Italian>
+			<Text>Casa del distillatore</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Casa del destilador:Casas del destilador</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_DISTILLERY</Tag>
+		<English>Distillery</English>
+		<French>
+			<Text>Distillerie:Distilleries</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Brennereibetrieb</German>
+		<Italian>
+			<Text>Distilleria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Destilería:Destilerías</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_DOCK</Tag>
+		<English>Dock</English>
+		<French>
+			<Text>Quais</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>Hafen</German>
+		<Italian>
+			<Text>Molo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Muelle:Muelles</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Док</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_DRYDOCK</Tag>
+		<English>Drydock</English>
+		<French>
+			<Text>Cale sèche:Cales sèches</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Trockendock</German>
+		<Italian>
+			<Text>Bacino di carenaggio</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Dique seco:Diques secos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Сухой док</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_DYERS_HOUSE</Tag>
+		<English>Dyer's House</English>
+		<French>Maison du teinturier</French>
+		<German>Haus des Färbers</German>
+		<Italian>Dyers House</Italian>
+		<Spanish>Dyers House</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_DYERY</Tag>
+		<English>Dyery</English>
+		<French>Teinturerie</French>
+		<German>Färberei</German>
+		<Italian>Dyery</Italian>
+		<Spanish>Dyery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_FORT</Tag>
+		<English>Stockade</English>
+		<French>
+			<Text>Palissade:Palissades</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Palisade</German>
+		<Italian>
+			<Text>Palizzata</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Empalizada:Empalizadas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_FORTRESS</Tag>
+		<English>Fort</English>
+		<French>
+			<Text>Fort:Forts</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Fort:Forts</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Forte:Forti</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fuerte:Fuertes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_FURNITURE_FACTORY</Tag>
+		<English>Furniture Factory</English>
+		<French>Usine de meubles</French>
+		<German>Möbelfabrik</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_FURNITURE_MAKERS_HOUSE</Tag>
+		<English>TXT_KEY_BUILDING_FURNITURE_MAKERS_HOUSE</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_FURNITURY</Tag>
+		<English>TXT_KEY_BUILDING_FURNITURY</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_FUR_FACTORY</Tag>
+		<English>Coat Factory</English>
+		<French>
+			<Text>Usine de manteaux:Usines de manteaux</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Pelzwarenfabrik</German>
+		<Italian>
+			<Text>Fabbrica di mantelli</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fábrica de abrigos:Fábricas de abrigos</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_FUR_TRADERS_HOUSE</Tag>
+		<English>Fur Trader's House</English>
+		<French>
+			<Text>Maison du fourreur:Maisons de fourreur</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Haus des Pelzhändlers</German>
+		<Italian>
+			<Text>Casa del pellicciaio</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Casa del peletero:Casas del peletero</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_FUR_TRADING_POST</Tag>
+		<English>Fur Trading Post</English>
+		<French>
+			<Text>Comptoir de fourrures:Comptoirs de fourrures</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Pelzhandelsposten</German>
+		<Italian>
+			<Text>Negozio di pellicce</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Peletería:Peleterías</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_GRANARY</Tag>
+		<English>Granary</English>
+		<French>
+			<Text>Grenier</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Getreidespeicher</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Granary</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Granary</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_GREAT_ARSENAL</Tag>
+		<English>Great Arsenal</English>
+		<French>
+			<Text>Grand arsenal:Grands arsenaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Großes Zeughaus</German>
+		<Italian>Great Arsenal</Italian>
+		<Spanish>Great Arsenal</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_GREAT_BASTION</Tag>
+		<English>Great Bastion</English>
+		<French>
+			<Text>Grand bastion</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Große Bastion</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Great Bastion</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Great Bastion</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_GREAT_CATHEDRAL</Tag>
+		<English>TXT_KEY_BUILDING_GREAT_CATHEDRAL</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_GREAT_SHIPYARD</Tag>
+		<English>Naval Port</English>
+		<French>
+			<Text>Complexe portuaire:Complexes portuaires</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Marinehafen</German>
+		<Italian>Naval Port</Italian>
+		<Spanish>Naval Port</Spanish>
+		<Russian>Военно-морской порт</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_GREAT_TOOL_FACTORY</Tag>
+		<English>Great Tool Factory</English>
+		<French>
+			<Text>Haut fourneau:Hauts fourneaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Große Eisenwarenfabrik</German>
+		<Italian>Great Tool Factory</Italian>
+		<Spanish>Great Tool Factory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_GREAT_UNIVERSITY</Tag>
+		<English>Great University</English>
+		<French>
+			<Text>Université de prestige:Universités de prestige</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Elitehochschule</German>
+		<Italian>
+			<Text>Università</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Universidad:Universidades</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_GREAT_WHEELWRIGHTS_WORKSHOP</Tag>
+		<English>Great Wheelwright's Workshop</English>
+		<French>
+			<Text>Grande fabrique de chariots:Grandes Fabriques de chariots</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Holzmanufaktur</German>
+		<Italian>Great Wheelwrights Workshop</Italian>
+		<Spanish>Great Wheelwrights Workshop</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_HORSE_MARKET</Tag>
+		<English>Grand Horse and Cattle Market</English>
+		<French>
+			<Text>Grande Halle aux bestiaux</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Großer Viehmarkt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Grand Horse and Cattle Market</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Grand Horse and Cattle Market</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_IRONWORKS</Tag>
+		<English>Ironworks</English>
+		<French>
+			<Text>Ferronnerie:Ferronneries</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Schmiedemanufaktur</German>
+		<Italian>
+			<Text>Ferriera</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fundición:Fundiciones</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_LANDING_STAGE</Tag>
+		<English>Pier</English>
+		<French>
+			<Text>Embarcadère:Embarcadères</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Landungssteg</German>
+		<Italian>Landing Stage</Italian>
+		<Spanish>Landing Stage</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_LARGE_DYERY</Tag>
+		<English>Large Dyery</English>
+		<French>Teinturerie industrielle</French>
+		<German>Große Färberei</German>
+		<Italian>Large Dyery</Italian>
+		<Spanish>Large Dyery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_FACTORY</Tag>
+		<English>Leather Factory</English>
+		<French>Tannerie industrielle</French>
+		<German>Lederfabrik</German>
+		<Italian>Leather Factory</Italian>
+		<Spanish>Leather Factory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_LUMBER_MILL</Tag>
+		<English>Lumber Mill</English>
+		<French>
+			<Text>Scierie:Scieries</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Sägewerk</German>
+		<Italian>
+			<Text>Segheria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Aserradero:Aserraderos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_MAGAZINE</Tag>
+		<English>Magazine</English>
+		<French>
+			<Text>Magasin:Magasins</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Magazin</German>
+		<Italian>
+			<Text>Santabarbara</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Arsenal:Arsenales</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_MARKET</Tag>
+		<English>Village Market</English>
+		<French>
+			<Text>Marché du village:Marchés du village</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Dorfmarkt:Dofrmärkte</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Village Market:Village Markets</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Mercado del pueblo:Mercados del pueblo</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_MEDICAL_OFFICE</Tag>
+		<English>Medical Office</English>
+		<French>Cabinet médical</French>
+		<German>Arztpraxis</German>
+		<Italian>Medical Office</Italian>
+		<Spanish>Medical Office</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_MINSTER</Tag>
+		<English>Cathedral of the Archbishop</English>
+		<French>
+			<Text>Cathédrale de l'Archevêché</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Kathedrale des Erzbishofs</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Cathedral of the Archbishop</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Cathedral of the Archbishop</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_NEWSPAPER</Tag>
+		<English>Newspaper</English>
+		<French>
+			<Text>Journal:Journaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Zeitung</German>
+		<Italian>
+			<Text>Giornale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Periódico:Periódicos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_OPERA</Tag>
+		<English>Grand Opera</English>
+		<French>
+			<Text>Grand Opéra</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Koloniales Opernhaus</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Grand Opera</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Grand Opera</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_PALACE</Tag>
+		<English>Government Palace</English>
+		<French>
+			<Text>Hôtel colonial:Hôtels coloniaux</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Regierungspalast</German>
+		<Italian>Government Palace</Italian>
+		<Spanish>Government Palace</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_PRINTING_PRESS</Tag>
+		<English>Printing Press</English>
+		<French>
+			<Text>Imprimerie:Imprimeries</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Druckerpresse</German>
+		<Italian>
+			<Text>Tipografia</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Imprenta:Imprentas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_PUBLISHING</Tag>
+		<English>Colonial Publisher</English>
+		<French>
+			<Text>Éditeur colonial</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Kolonialer Zeitungsverlag</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Colonial Publisher</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Colonial Publisher</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_RANCH</Tag>
+		<English>Ranch</English>
+		<French>
+			<Text>Ranch:Ranchs</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Ranch</German>
+		<Italian>
+			<Text>Fattoria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Rancho:Ranchos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_RUM_FACTORY</Tag>
+		<English>Rum and Brandy Factory</English>
+		<French>
+			<Text>Usine de rhum:Usines de rhum</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Rum- und Schnapsfabrik</German>
+		<Italian>
+			<Text>Fabbrica di rum</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fábrica de ron:Fábricas de ron</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_SALOON</Tag>
+		<English>Saloon</English>
+		<French>
+			<Text>Saloon</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Saloon</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Saloon</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Saloon</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_SCHOOLHOUSE</Tag>
+		<English>Schoolhouse</English>
+		<French>
+			<Text>École:Écoles</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Schule</German>
+		<Italian>
+			<Text>Scuola</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Escuela:Escuelas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_SHIPYARD</Tag>
+		<English>Shipyard</English>
+		<French>
+			<Text>Chantier naval:Chantiers navals</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Schiffswerft</German>
+		<Italian>
+			<Text>Cantiere navale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Astillero:Astilleros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Судоверфь</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_SLAUGHTERHOUSE</Tag>
+		<English>Slaughterhouse</English>
+		<French>Abattoir</French>
+		<German>Schlachthaus</German>
+		<Italian>Slaughterhouse</Italian>
+		<Spanish>Slaughterhouse</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_HALL</Tag>
+		<English>Spice Trader's Hall</English>
+		<French>Halle aux Épices</French>
+		<German>Gewürzhandelshalle</German>
+		<Italian>Spice Traders Hall</Italian>
+		<Spanish>Spice Traders Hall</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_HOUSE</Tag>
+		<English>Spice Trader's House</English>
+		<French>Maison de l'épicier</French>
+		<German>Haus des Gewürzhändlers</German>
+		<Italian>Spice Trader's House</Italian>
+		<Spanish>Spice Trader's House</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_POST</Tag>
+		<English>Spice Trading Post</English>
+		<French>Épicerie</French>
+		<German>Gewürzhandelsposten</German>
+		<Italian>Spice Trading Post</Italian>
+		<Spanish>Spice Trading Post</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_STABLE</Tag>
+		<English>Stable</English>
+		<French>
+			<Text>Étable:Étables</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Stallungen</German>
+		<Italian>
+			<Text>Stalla</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Establo:Establos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_STATUE_GOVERNOR</Tag>
+		<English>Statue of the Governor</English>
+		<French>
+			<Text>Statue du Gouverneur:Statues de Gouverneur</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Statue des Gouverneurs</German>
+		<Italian>Statue of Governor</Italian>
+		<Spanish>Statue of Governor</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_STOCKADE</Tag>
+		<English>Stockade</English>
+		<French>
+			<Text>Cheval de frise:Chevaux de Frise</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Friesische Reiter</German>
+		<Italian>Cavallo di Frisia</Italian>
+		<Spanish>Chevaux de Frise</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_STRONGHOLD</Tag>
+		<English>Fortress</English>
+		<French>
+			<Text>Forteresse:Forteresses</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Festung</German>
+		<Italian>
+			<Text>Fortezza</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fortaleza:Fortalezas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TANNERS_HOUSE</Tag>
+		<English>Tanner's House</English>
+		<French>Maison du Tanneur</French>
+		<German>Haus des Gerbers</German>
+		<Italian>Tanners House</Italian>
+		<Spanish>Tanners House</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TANNERY</Tag>
+		<English>Tannery</English>
+		<French>Tannerie</French>
+		<German>Gerberei</German>
+		<Italian>Tannery</Italian>
+		<Spanish>Tannery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TAVERN</Tag>
+		<English>Tavern</English>
+		<French>Taverne</French>
+		<German>Taverne</German>
+		<Italian>Tavern</Italian>
+		<Spanish>Tavern</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TEXTILE_MILL</Tag>
+		<English>Textile Mill</English>
+		<French>
+			<Text>Usine textile:Usines textiles</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Textilfabrik</German>
+		<Italian>
+			<Text>Fabbrica tessile</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Taller textil:Talleres textiles</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_THEATRE</Tag>
+		<English>Theatre</English>
+		<French>
+			<Text>Théâtre</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Theater</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Theatre</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Theatre</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TOBACCONIST_HOUSE</Tag>
+		<English>Tobacconist's House</English>
+		<French>
+			<Text>Maison du cigarier:Maison de cigarier</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Tabakhaus</German>
+		<Italian>
+			<Text>Casa del tabaccaio</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Casa del tabaquero:Casas del tabaquero</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TOBACCONIST_SHOP</Tag>
+		<English>Tobacconist's Shop</English>
+		<French>
+			<Text>Atelier de tabac:Ateliers de tabac</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Tabakwarenbetrieb</German>
+		<Italian>
+			<Text>Negozio del tabaccaio</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Tabaquería:Tabaquerías</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TOOL_FACTORY</Tag>
+		<English>Tool Factory</English>
+		<French>
+			<Text>Usine sidérurgique:Usines sidérurgiques</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Eisenwarenfabrik</German>
+		<Italian>Tool Factory</Italian>
+		<Spanish>Tool Factory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TOWNHALL</Tag>
+		<English>Town Hall</English>
+		<French>
+			<Text>Mairie:HôMairies</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Stadthalle</German>
+		<Italian>
+			<Text>Municipio</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Ayuntamiento:Ayuntamientos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TOWN_HOSPITAL</Tag>
+		<English>Town Hospital</English>
+		<French>Clinique</French>
+		<German>Stadtkrankenhaus</German>
+		<Italian>Town Hospital</Italian>
+		<Spanish>Town Hospital</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TOWN_MARKET</Tag>
+		<English>Town Market</English>
+		<French>
+			<Text>Marché couvert:Marchés couverts</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Städtischer Markt:Städtische Märkte</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Town Market:Town Markets</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Town Market:Town Markets</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_TRAIN_STATION</Tag>
+		<English>Waystation</English>
+		<French>Relais de poste</French>
+		<German>Postreiter- und Pferdewechselstation</German>
+		<Italian>Waystation</Italian>
+		<Spanish>Waystation</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_UNIVERSITY</Tag>
+		<English>University</English>
+		<French>
+			<Text>Université:Universités</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Universität</German>
+		<Italian>
+			<Text>Università</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Universidad:Universidades</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_VILLAGEHALL</Tag>
+		<English>Village Hall</English>
+		<French>
+			<Text>Salle communale:Salles communales</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Gemeindehaus</German>
+		<Italian>Village Hall</Italian>
+		<Spanish>Village Hall</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_VILLAGE_WELL</Tag>
+		<English>Village Well</English>
+		<French>Puits du village</French>
+		<German>Dorfbrunnen</German>
+		<Italian>Village Well</Italian>
+		<Spanish>Village Well</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_BONUS</Tag>
+		<English>Bonus Dummy for Building Infos</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_VINTAGERS_HOUSE</Tag>
+		<English>Vintager's House</English>
+		<French>Maison du vigneron</French>
+		<German>Haus des Winzers</German>
+		<Italian>Vintager's House</Italian>
+		<Spanish>Vintager's House</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_WAREHOUSE</Tag>
+		<English>Storage House</English>
+		<French>
+			<Text>Remise:Remises</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Lagerhaus</German>
+		<Italian>
+			<Text>Magazzino</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Almacén:Almacenes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_WAREHOUSE_EXPANSION</Tag>
+		<English>Warehouse</English>
+		<French>
+			<Text>Entrepôt:Entrepôts</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Lagerhauserweiterung</German>
+		<Italian>
+			<Text>Espansione del magazzino</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Almacén ampliado:Almacenes ampliados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_WAREHOUSE_EXPANSION_2</Tag>
+		<English>Warehouse Expansion</English>
+		<French>
+			<Text>Entrepôt étendu:Entrepôts étendus</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Große Lagerhauserweiterung</German>
+		<Italian>
+			<Text>Warehouse Expansion</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Warehouse Expansion</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_WATERMILL</Tag>
+		<English>
+			<Text>Watermill:Watermills</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Moulin à eau:Moulins à eau</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Wassermühle:Wassermühlen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Watermill:Watermills</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Watermill:Watermills</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_WEAVERS_HOUSE</Tag>
+		<English>Weaver's House</English>
+		<French>
+			<Text>Maison du tisserand:Maisons du tisserand</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Haus des Webers</German>
+		<Italian>
+			<Text>Casa del tessitore</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Casa del tejedor:Casas del tejedor</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_WEAVERS_SHOP</Tag>
+		<English>Weaver's Shop</English>
+		<French>
+			<Text>Boutique du tisserand:Boutiques de tisserand</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Webereibetrieb</German>
+		<Italian>
+			<Text>Negozio del tessitore</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Tejeduría:Tejedurías</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_WHALE_OIL_FACTORY</Tag>
+		<English>Train Oil Rendering Plant</English>
+		<French>
+			<Text>Usine de raffinage des baleines:Usines de raffinage des baleines</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Tranfabrik</German>
+		<Italian>Train Oil Rendering Plant</Italian>
+		<Spanish>Train Oil Rendering Plant</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_WHALE_OIL_HOUSE</Tag>
+		<English>Train Oil Manufactory</English>
+		<French>
+			<Text>Maison du raffineur de baleine:Maison du raffineur de baleine</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Haus des Trankochers</German>
+		<Italian>Train Oil Manufactory</Italian>
+		<Spanish>Train Oil Manufactory</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_WHEELWRIGHTS_WORKSHOP</Tag>
+		<English>Wheelwright's Workshop</English>
+		<French>
+			<Text>Fabrique de chariots:Fabriques de chariot</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Wagnerei</German>
+		<Italian>Wheelwrights Workshop</Italian>
+		<Spanish>Wheelwrights Workshop</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_WINDMILL</Tag>
+		<English>
+			<Text>Windmill:Windmills</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Moulin à vent:Moulins à vent</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Windmühle:Windmühlen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Windmill:Windmills</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Windmill:Windmills</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_WINERY</Tag>
+		<English>Winery</English>
+		<French>Chai à vin</French>
+		<German>Winzerei</German>
+		<Italian>Winery</Italian>
+		<Spanish>Winery</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDINGCLASS_WINE_FACTORY</Tag>
+		<English>Wine Factory</English>
+		<French>Domaine viticole</French>
+		<German>Weinfabrik</German>
+		<Italian>Wine Factory</Italian>
+		<Spanish>Wine Factory</Spanish>
+	</TEXT>
 </Civ4GameText>

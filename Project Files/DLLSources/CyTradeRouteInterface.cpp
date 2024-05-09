@@ -1,5 +1,9 @@
 #include "CvGameCoreDLL.h"
 #include "CyTradeRoute.h"
+
+#include <boost/python/class.hpp>
+namespace python = boost::python;
+
 //
 // published python interface for CyTradeRoute
 //

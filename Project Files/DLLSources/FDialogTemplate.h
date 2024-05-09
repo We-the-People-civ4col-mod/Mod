@@ -5,7 +5,7 @@
 
 #if defined(WIN32) // only makes sense on win32
 
-#include <windows.h>	// This is needed just for the LPCSTR, DWORD, and WORD typedefs
+#include <Windows.h>	// This is needed just for the LPCSTR, DWORD, and WORD typedefs
 						// As a rule, I hate including windows.h in headers
 
 // This class is a convenient wrapper around DLGTEMPLATE.  This can be used to
@@ -54,7 +54,7 @@ private:
 
 	void AlignData(int size);
 	void AppendString(LPCSTR string);
-	void AppendData(void* data, int dataLength);
+	void AppendData(void const* data, int dataLength);
 	void EnsureSpace(int length);
 
 	DLGTEMPLATE* dialogTemplate;

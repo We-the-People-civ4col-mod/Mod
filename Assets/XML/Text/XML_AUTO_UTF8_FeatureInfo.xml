@@ -1,923 +1,923 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_FOREST</Tag>
-        <English>Deciduous Forest</English>
-        <French>Forêt de feuillus</French>
-        <German>
-            <Text>Laubwald</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Лиственный лес</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_FOREST_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Deciduous forests[COLOR_REVERT] grow in intermediate and high latitudes, and also on higher terrain in low latitudes. Your colonists can harvest [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_LUMBER]lumber[\LINK] there.[PARAGRAPH:1]Forests prevent any other resource on that plot except [LINK=YIELD_ORE]ore[\LINK], unless a bonus resource is present.[LINK=IMPROVEMENT_LODGE]Lodges[\LINK] and [LINK=IMPROVEMENT_TRAPPER_HUT]trapper huts[\LINK] can be built in deciduous forests. Putting up any other improvement clears the forest.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant deciduous forests on [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A forest, also referred to as a wood or the woods and less often as a "wold" (or "weald"), "holt", or "frith" (or "firth"), means trees are the dominant plant. There are many definitions for forest. Forests cover 9.4% of the Earth's surface (or 30% of the land area), though long ago they covered much more, about 50% of the land, creating habitats for a wide range of organisms, working as hydrologic flow modulators and soil conservers, constituting one of the most important aspects of the Earth's biosphere. Although forest is primarily trees the forest ecosystem has many additional species such as fungi.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La [COLOR_HIGHLIGHT_TEXT]Forêt[COLOR_REVERT] pousse à des lattitudes intermédiaires. Le terrain permet de produire de la [LINK=YIELD_FUR]fourrure[\LINK] et du [LINK=YIELD_LUMBER]bois de construction[\LINK].[PARAGRAPH:1]La forêt empêche la production de n'importe quelle autre bien à l'exception du [LINK=YIELD_ORE]minerai[\LINK], à part si une ressource bonus y est présente. Des [LINK=IMPROVEMENT_LODGE]abris[\LINK] et des [LINK=IMPROVEMENT_TRAPPER_HUT]Huttes de trappeurs[\LINK] peuvent être construites dans la forêt.[PARAGRAPH:1]Les [LINK=PROFESSION_PIONEER]pionniers[\LINK] peuvent planter de la forêt sur les terrains de [LINK=TERRAIN_GRASS]prairie[\LINK] et de [LINK=TERRAIN_PLAINS]Plaines[\LINK].[PARAGRAPH:2][BOLD]Contexte :[\BOLD][PARAGRAPH:1]Une forêt ou un massif forestier est une étendue boisée, relativement grande, constituée d'un ou plusieurs peuplements d'arbres et d'espèces associées. Un boisement de faible étendue est dit bois, boqueteau ou bosquet selon son importance. Divers types de forêts existent; des forêts primaires aux forêts dites urbaines, avec les gradients intermédiaires. Il existe également de nombreux types d'exploitation des forêts (sylviculture, agrosylviculture). La forêt est aussi un milieu de vie et une source de revenus pour l'homme : au début du XXe siècle, plus de 500 millions de personnes, dont 150 millions d'autochtones vivent encore en forêt ou à ses abords. Elle abrite une grande richesse écologique composée d'une centaine d'espèces de mammifères, d'une cinquantaine d'espèces d'oiseaux, d'un millier d'espèces végétales et de plusieurs millions d'espèces d'insectes.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Laubwald[COLOR_REVERT] wächst in gemäßigten und nördlichen Breitengraden, aber auch in höheren Lagen der niedrigeren Breitengrade. Die Kolonisten können dort [LINK=YIELD_FUR]Pelze[\LINK] gewinnen und [LINK=YIELD_LUMBER]Holz[\LINK] schlagen. Zur Gewinnung anderer Rohstoffe sind Wälder schlecht geeignet. Es können [LINK=IMPROVEMENT_LODGE]Holzfällerhütten[\LINK] und [LINK=IMPROVEMENT_TRAPPER_HUT]Jagdhütten[\LINK] in Laubwäldern gebaut werden. Andere Geländeverbesserungen entfernen den Wald.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioniere[\LINK] können neue Laubwälder in der [LINK=TERRAIN_PLAINS]Prärie[\LINK] anpflanzen.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Unter einem Wald versteht man ein Gebiet mit stark ausgeprägtem Baumbewuchs verschiendensten Alters. Die Dichte und die Baumarten und Pflanzenarten variieren von Region zu Region.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_FOREST_EVERGREEN</Tag>
-        <English>Coniferous Forest</English>
-        <French>Forêt de conifères</French>
-        <German>
-            <Text>Nadelwald</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Хвойный лес</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_FOREST_EVERGREEN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Coniferous forests[COLOR_REVERT] grow in intermediate and high latitudes, and also on higher terrain in low latitudes. Your colonists can harvest [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_LUMBER]lumber[\LINK] there.[NEWLINE]Forests prevent any other resource on that plot except [LINK=YIELD_ORE]ore[\LINK], unless a bonus resource is present.[LINK=IMPROVEMENT_LODGE]Lodges[\LINK] and [LINK=IMPROVEMENT_TRAPPER_HUT]trapper huts[\LINK] can be built in  coniferous forests. Putting up any other improvement clears the forest.[NEWLINE][LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant coniferous forests on [LINK=TERRAIN_GRASS]grassland[\LINK] terrain.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]An evergreen forest keeps its leaves, or needles, year round. Seeds are protected inside cones, one of the features that makes evergreens much hardier than deciduous trees. Subarctic forests will be exclusively coniferous. Although forest is primarily trees the forest ecosystem has many additional species such as fungi.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La [COLOR_HIGHLIGHT_TEXT]Forêt[COLOR_REVERT] pousse à des lattitudes intermédiaires. Le terrain permet de produire de la [LINK=YIELD_FUR]fourrure[\LINK] et du [LINK=YIELD_LUMBER]bois de construction[\LINK].[NEWLINE]La forêt empêche la production de n'importe quelle autre bien à l'exception du [LINK=YIELD_ORE]minerai[\LINK], à part si une ressource bonus y est présente. Des [LINK=IMPROVEMENT_LODGE]abris[\LINK] et des [LINK=IMPROVEMENT_TRAPPER_HUT]Huttes de trappeurs[\LINK] peuvent être construites dans la forêt.[NEWLINE]Les [LINK=PROFESSION_PIONEER]pionniers[\LINK] peuvent planter de la forêt sur les terrains de [LINK=TERRAIN_GRASS]prairie[\LINK] et de [LINK=TERRAIN_PLAINS]Plaines[\LINK].[PARAGRAPH:2][BOLD]Contexte :[\BOLD][PARAGRAPH:1]Une forêt ou un massif forestier est une étendue boisée, relativement grande, constituée d'un ou plusieurs peuplements d'arbres et d'espèces associées. Un boisement de faible étendue est dit bois, boqueteau ou bosquet selon son importance. Divers types de forêts existent ; des forêts primaires aux forêts dites urbaines, avec les gradients intermédiaires. Il existe également de nombreux types d'exploitation des forêts (sylviculture, agrosylviculture). La forêt est aussi un milieu de vie et une source de revenus pour l'homme : au début du XXe siècle, plus de 500 millions de personnes, dont 150 millions d'autochtones vivent encore en forêt ou à ses abords. Elle abrite une grande richesse écologique composée d'une centaine d'espèces de mammifères, d'une cinquantaine d'espèces d'oiseaux, d'un millier d'espèces végétales et de plusieurs millions d'espèces d'insectes.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nadelwald[COLOR_REVERT] wächst in gemässigten und nördlichen Breitengraden, aber auch in höheren Lagen der niedrigen Breitengrade. Die Kolonisten können dort [LINK=YIELD_FUR]Pelze[\LINK] gewinnen und [LINK=YIELD_LUMBER]Holz[\LINK] schlagen. Zur Gewinnung anderer Rohstoffe, ist der Nadelwald sehr schlecht geeignet. Es können [LINK=IMPROVEMENT_LODGE]Holzfällerhütten[\LINK] und [LINK=IMPROVEMENT_TRAPPER_HUT]Jagdhütten[\LINK] in Wäldern gebaut werden. Andere Geländeverbesserungen entfernen den Wald.[NEWLINE][LINK=PROFESSION_PIONEER]Pioniere[\LINK] können neue Nadelwälder auf [LINK=TERRAIN_GRASS]Grasland[\LINK] anpflanzen.[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Unter einem Wald versteht man ein Gebiet mit stark ausgeprägtem Baumbewuchs verschiendensten Alters. Die Dichte und die Baumarten und Pflanzenarten variieren von Region zu Region.</German>
-        <Italian>[TAB]A forest, also referred to as a wood or the woods and less often as a "wold" (or "weald"), "holt", or "frith" (or "firth"), is an area with a high density of trees. There are many definitions for forest, based on the various criteria. These plant communities cover approximately 9.4% of the Earth's surface (or 30% of total land area), though they once covered much more (about 50% of total land area), in many different regions and function as habitats for organisms, hydrologic flow modulators, and soil conservers, constituting one of the most important aspects of the Earth's biosphere. Although a forest is classified primarily by trees a forest ecosystem is defined intrinsically with additional species such as fungi.</Italian>
-        <Spanish>[TAB]A forest, also referred to as a wood or the woods and less often as a "wold" (or "weald"), "holt", or "frith" (or "firth"), is an area with a high density of trees. There are many definitions for forest, based on the various criteria. These plant communities cover approximately 9.4% of the Earth's surface (or 30% of total land area), though they once covered much more (about 50% of total land area), in many different regions and function as habitats for organisms, hydrologic flow modulators, and soil conservers, constituting one of the most important aspects of the Earth's biosphere. Although a forest is classified primarily by trees a forest ecosystem is defined intrinsically with additional species such as fungi.</Spanish>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_DENSE_FOREST</Tag>
-        <English>Dense Forest</English>
-        <French>Forêt dense</French>
-        <German>
-            <Text>Dichter Wald</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Густой лес</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_DENSE_FOREST_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dense forest[COLOR_REVERT] is almost impassable. In the tropics getting through it means using a machete. Travelling in the temperate dense forest takes a lot of time and a sharp axe. A [LINK=PROFESSION_PIONEER]Pioneer[\LINK] can plant dense forests on [LINK=TERRAIN_PLAINS_FERTILE]plains[\LINK] terrain.</English>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dichter Wald[COLOR_REVERT] is fast unpassierbar. Man braucht eine Machete oder Axt, um voranzukommen. Ein [LINK=PROFESSION_PIONEER]Pionier[\LINK] kann dichten Wald auf dem [LINK=TERRAIN_PLAINS_FERTILE]Ebenen[\LINK] Terrain anpflanzen. </German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_FOREST_TUNDRA</Tag>
-        <English>Northern Forest</English>
-        <French>Forêt boréale</French>
-        <German>
-            <Text>Nordwald</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Северный лес</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ANCIENT_FOREST</Tag>
-        <English>Ancient Northern Forest</English>
-        <French>Forêt boréale primordiale</French>
-        <German>
-            <Text>Alter Nordwald</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Старый северный лес</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ANCIENT_FOREST_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ancient northern forests[COLOR_REVERT] have the world's tallest trees. The old growth there is prized for ship masts. It can be planted on [LINK=TERRAIN_TAIGA]taiga[\LINK] terrain by [LINK=PROFESSION_PIONEER]pioneers[\LINK]  </English>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Alter Nordwald[COLOR_REVERT] kann durch [LINK=PROFESSION_PIONEER]Pioniere[\LINK] im [LINK=TERRAIN_TAIGA]Taiga[\LINK] Gelände angepflanzt werden.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_FOREST_TUNDRA_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Taigas[COLOR_REVERT], or [COLOR_HIGHLIGHT_TEXT]northern forests[COLOR_REVERT], grow predominantly in high latitudes, though they can be found on high terrain in low latitudes. Your colonists can harvest [LINK=YIELD_FUR]fur[\LINK], [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK], [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK] and [LINK=YIELD_LUMBER]lumber[\LINK] there.[PARAGRAPH:1]Taiga prevents any other resource on its plot other than [LINK=YIELD_ORE]ore[\LINK], unless a bonus resource is present.[LINK=IMPROVEMENT_LODGE]Lodges[\LINK] and [LINK=IMPROVEMENT_TRAPPER_HUT]trapper huts[\LINK] can be built in taiga. Other improvements remove the taiga.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant northern forests on [LINK=TERRAIN_TUNDRA]tundra[\LINK] terrain.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A forest is mainly trees. These plant communities cover approximately 9.4% of the Earth's surface, or 30% of total land area, though they once covered about 50% of the land area. The brief taiga summer is alive with colourful plants and insects, though iceworms nest only in folk songs.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La [COLOR_HIGHLIGHT_TEXT]Taïga[COLOR_REVERT] pousse principalement dans les climats de haute lattitude, bien qu'on puisse également la trouver dans les terrains très élevées de plus basse lattitutde. Le terrain permet de produire de la [LINK=YIELD_FUR]fourrure[\LINK], de la [LINK=YIELD_PREMIUM_FUR]fourrure de qualité[\LINK], du [LINK=YIELD_VALUABLE_WOOD]bois précieux[\LINK] et du [LINK=YIELD_LUMBER]bois de construction[\LINK].[PARAGRAPH:1]La taïga empêche la production de n'importe quelle autre bien à l'exception du [LINK=YIELD_ORE]minerai[\LINK], à part si une ressource bonus y est présente. Des [LINK=IMPROVEMENT_LODGE]abris[\LINK] et des [LINK=IMPROVEMENT_TRAPPER_HUT]Huttes de trappeurs[\LINK] peuvent être construites dans la taïga.[PARAGRAPH:1]Les [LINK=PROFESSION_PIONEER]pionniers[\LINK] peuvent planter de la taïga sur les terrains de [LINK=TERRAIN_TUNDRA]Tundra[\LINK].[PARAGRAPH:2][BOLD]Contexte :[\BOLD][PARAGRAPH:1]La taïga ou forêt boréale est l'un des principaux biomes terrestres. Fortement liée au climat subarctique, elle consiste en une formation végétale de type forestière parcourue par un vaste réseau lacustre résultant de l'érosion fluvioglaciaire. Sa végétation a la particularité d'être formée d'une majorité de conifères adaptés au froid (pins, épicéas, mélèzes et sapins), associée à un mélange de feuillus principalement composé de bouleaux, d'aulnes, de saules et de peupliers. Véritable désert humain, la taïga est la plus vaste continuité boisée de la planète et occupe à elle seule 10 % des terres émergées. Elle couvre la majorité des territoires intérieurs de l'Alaska, du Canada, de la Scandinavie, de la Finlande et de la Russie.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Taiga[COLOR_REVERT], hier auch [COLOR_HIGHLIGHT_TEXT]Nordwald[COLOR_REVERT] genannt, wächst in nördlichen Breitengraden, aber auch gelegentlich in höheren Lagen der gemässigten Breitengrade. Die Kolonisten können dort [LINK=YIELD_FUR]Pelze[\LINK] oder [LINK=YIELD_PREMIUM_FUR]Hochwertige Pelze[\LINK] gewinnen und [LINK=YIELD_LUMBER]Holz[\LINK] schlagen. Zur Gewinnung anderer Rohstoffe ist Taiga sehr schlecht geeignet. Es können [LINK=IMPROVEMENT_LODGE]Holzfällerhütten[\LINK] und [LINK=IMPROVEMENT_TRAPPER_HUT]Jagdhütten[\LINK] in der Taiga gebaut werden. Andere Geländeverbesserungen entfernen den Wald.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioniere[\LINK] können neue Nordwälder in der [LINK=TERRAIN_TUNDRA]Tundra[\LINK] anpflanzen.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Unter einem Wald versteht man ein Gebiet mit stark ausgeprägtem Baumbewuchs verschiendensten Alters. Die Dichte und die Baumarten und Pflanzenarten variieren von Region zu Region.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ICE</Tag>
-        <English>Polar Ice</English>
-        <French>Banquise</French>
-        <German>
-            <Text>Polareis</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Ghiaccio:Ghiacci</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Hielo:Hielos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Полярный лед</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ICE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polar ice[COLOR_REVERT] is impassible terrain to all units. The only option you have is to sail around it.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Ice is water frozen solid. During the "We The People" game period ice boundaries remain stable, though later that will change. Usually ice is in the phase known as ice Ih, the most abundant of the solid phases on the Earth's surface. It can appear transparent or opaque bluish-white colour, depending on the presence of impurities or air inclusions. Other materials such as soil may further alter the appearance.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La banquise est la couche de glace qui se forme à la surface d'une étendue d'eau par solidification des premières couches d'eau, généralement la mer mais aussi les lacs et les rivières. Il ne faut pas confondre cette glace plus ou moins pérenne avec les calottes glaciaires et les inlandsis qui sont constitués quant à eux de glace continentale, c'est-à-dire de précipitations neigeuses accumulées et tassées.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polareis[COLOR_REVERT] tritt nur auf dem Meer auf und ist für alle Schiffe unpassierbar. Diese müssen um diese herum segeln.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Als Eis bezeichnet man gefrorenes und somit festes Wasser. Ein beachtlicher Teil der Wasservorräte der Erde liegt in Eisform vor.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_JUNGLE</Tag>
-        <English>Jungle</English>
-        <French>
-            <Text>Jungle</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Dschungel</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Giungla:Giungle</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Selva:Selvas</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Джунгли</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_JUNGLE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Jungles[COLOR_REVERT] grow in tropical latitudes, and your colonists can harvest [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] there, as well as [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK]. [LINK=YIELD_LUMBER]Lumber[\LINK] is also found in jungles.[PARAGRAPH:1]Unlike forests, [LINK=PROFESSION_FARMER]farmers[\LINK] can grow a little [LINK=YIELD_FOOD]food[\LINK] in jungles if the underlying terrain is capable of producing at least 3 food. [LINK=IMPROVEMENT_LODGE]Lodges[\LINK] and [LINK=IMPROVEMENT_FRUIT_PLANTATION]fruits plantations[\LINK] can be built in jungles. Other construction removes the jungle.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant jungles on both [LINK=TERRAIN_MARSH]marsh[\LINK] and [LINK=TERRAIN_SAVANNAH]savanna[\LINK] terrain.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Jungle or tropical forest refers to the dense, impenetrable tropical rainforest biome luxuriant with animal and plant life. The term "jungle" is a synonym for tropical rainforest.[PARAGRAPH:1]The northwest Pacific coast of North America also has the characteristic rainfall and plant growth to qualify as the world's only temperate jungle.[PARAGRAPH:1]The word "jungle" originates from the Sanskrit word "jangala" which in India referred to uncultivated land. Although the Sanskrit word refers to "dry land", it has been suggested that an Anglo-Indian misinterpretation led to its use for a dense "tangled thicket". while others have argued that a cognate word in Urdu did refer to forests. The term is prevalent in many languages of South Asia, and on the Iranian plateau, particularly in Bangla, Hindi, Marathi, Urdu, Punjabi and Persian.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La jungle désigne les forêts de feuillus humides tropicales et subtropicales ou les forêts tropicales humides constituent un biome des zones intertropicales caractérisé par une formation végétale arborée haute et dense ainsi qu'un climat chaud et très humide.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dschungel[COLOR_REVERT] wächst in tropischen Breitengraden. Ihre Kolonisten können dort [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] ernten, aber auch [LINK=YIELD_VALUABLE_WOOD]Edelholz[\LINK] schlagen. Normales [LINK=YIELD_LUMBER]Holz[\LINK] ist im Dschungel natürlich ebenfalls vorhanden.[PARAGRAPH:1]Im Gegensatz zu anderen Wäldern, kann im Dschungel auch [LINK=YIELD_FOOD]Nahrung[\LINK] geerntet werden, wenn das zugrunde liegende Gelände mindestens 3 Nahrung erzeugt. Im Dschungel können [LINK=IMPROVEMENT_LODGE]Holzfällerhütten[\LINK] und [LINK=IMPROVEMENT_FRUIT_PLANTATION]Obstplantagen gebaut werden[\LINK]. Der Bau einer anderen Geländeverbesserung entfernt den Dschungel.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioniere[\LINK] können in [LINK=TERRAIN_MARSH]Sümpfen[\LINK] and [LINK=TERRAIN_SAVANNAH]Savannen[\LINK] neuen Dschungel anpflanzen.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Dschungel oder Tropischer Wald bezieht sich aufgrund seiner Dichte auf einen mehr oder weniger undurchdringlichen Regenwald mit einer Vielzahl von Pflanzen und Tieren.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_MANGROVE</Tag>
-        <English>Mangroves</English>
-        <French>Mangrove</French>
-        <German>
-            <Text>Mangroven</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Манговые заросли</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_MANGROVE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mangrove[COLOR_REVERT] forests, also called mangrove swamps, are productive wetlands that occur in coastal intertidal zones. Mangroves allow land units to cross large rivers, but slowly. Ships passing a mango forest also have to slow down. The choice is to cut down the forest to speed up the ships and get more food, or leave them as a kind of ford and a source of exotic wood. [PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mangroves[COLOR_REVERT] are coastal swampy forests found mainly in tropical and subtropical latitudes because mangrove trees cannot withstand freezing temperatures. They have a dense tangle of prop roots so they seem to be standing on stilts above the water. This tangle of roots allows the trees to handle the daily rise and fall of tides, which means that most mangroves get flooded at least twice per day. The roots also slow the movement of tidal waters, causing sediments to settle out of the water and build up the muddy bottom. Mangrove forests stabilise the coastline, reducing erosion from storm surges, currents, waves, and tides. The intricate root system of mangroves also makes these forests attractive to fish and other organisms seeking food and shelter from predators.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mangroven[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_TROPICAL_GROVES</Tag>
-        <English>Tropical Grove</English>
-        <French>Bosquet tropical:Bosquets tropicaux</French>
-        <German>
-            <Text>Tropischer Hain</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Тропическая роща</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_TROPICAL_GROVES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tropical groves[COLOR_REVERT] have big trees with hardwood prized for furniture.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tropischer Hain[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_TAR_PIT</Tag>
-        <English>Tar Pit</English>
-        <French>Goudron</French>
-        <German>
-            <Text>Teergrube</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Битумная яма</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_TAR_PIT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]tar pit[COLOR_REVERT] provides the right sealant to waterproof seams on canoes and ships. It can also hide the bones of long-extinct animals.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Teergrube[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_SALT_PAN</Tag>
-        <English>Salt Desert</English>
-        <French>Désert salin</French>
-        <German>
-            <Text>Salzwüste</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Соляная пустыня</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_SALT_PAN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]salt pan[COLOR_REVERT] is the dry bed of an ancient salt lake where salt can be mined.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salzwüste[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_SALT_DRAINAGE</Tag>
-        <English>Salt Water Pools</English>
-        <French>Marais salant naturel</French>
-        <German>
-            <Text>Salzwassertümpel</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Солончаки</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_SALT_DRAINAGE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salt water pools[COLOR_REVERT] have no exit channel so the water can't run off. Minerals including salt accumulate. Water has to be evaporated to get the salt.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salzwassertümpel[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_FLOOD_PLAINS</Tag>
-        <English>Fertile Flood Plains</English>
-        <French>Plaine d'inondation</French>
-        <German>
-            <Text>Fruchtbares Schwemmland</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Плодородные поймы</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_FLOOD_PLAINS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fertile flood plains[COLOR_REVERT] get fresh silt every spring when their rivers overflow. Abundant crops support a large healthy population.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fruchtbares Schwemmland[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_CRATER</Tag>
-        <English>Meteor Crater</English>
-        <French>Cartère de météorite</French>
-        <German>
-            <Text>Meteoritenkrater</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Метеоритный кратер</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_CRATER_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meteor craters[COLOR_REVERT] are where meteorites hit the ground. They're rare. Most space rocks burn up in Earth's atmosphere, unlike on the moon which is pockmarked with frequent impacts. Craters often have lakes in the middle.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meteoritenkrater[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN</Tag>
-        <English>Impassable Mountain</English>
-        <French>Montagne infranchissable</French>
-        <German>
-            <Text>Unpassierbarer Berg</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Непроходимые горы</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Impassable mountains[COLOR_REVERT] are too steep and icy for any path to be cut or cantilevered around the tricky spots. They can be climbed only by expert mountaineers, and are an absolute barrier to commerce.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Unpassierbarer Berg[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT</Tag>
-        <English>Rock Formation (Desert)</English>
-        <French>Formation rocheuse (Désert)</French>
-        <German>
-            <Text>Felsenformation (Wüste)</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Скальные образования (пустыня)</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Desert rock formations[COLOR_REVERT] are shaped by the wind into exotic shapes.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenformation (Wüste)[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_TEMPERATE</Tag>
-        <English>Rock Formation (Temperate)</English>
-        <French>Formation rocheuse (tempérée)</French>
-        <German>
-            <Text>Felsenformation (Gemäßigt)</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Скальные образования (умеренный климат)</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_TEMPERATE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Temperate rock formations[COLOR_REVERT] are shaped by water into exotic shapes.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenformation (Gemäßigt)[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_POLAR</Tag>
-        <English>Rock Formation (Polar)</English>
-        <French>Formation rocheuse (polaire)</French>
-        <German>
-            <Text>Felsenformation (Polar)</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Скальные образования (полярные)</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_POLAR_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polar rock formations[COLOR_REVERT] are shaped by ice into exotic shapes.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenformation (Polar)[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_LIGHT_FOREST</Tag>
-        <English>Light Forest</English>
-        <French>
-            <Text>Forêt clairsemée:Forêts clairsemées</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </French>
-        <German>Buschland</German>
-        <Italian>
-            <Text>Foresta rada</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Bosque disperso:Bosques dispersos</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Редколесье</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_LIGHT_FOREST_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Light forest[COLOR_REVERT] can grow in all latitudes. It slightly increases the production of [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_LUMBER]lumber[\LINK] on its plot, but also keeps all the other yields the plot has due to its base terrain, albeit in reduced numbers.[PARAGRAPH:1][LINK=IMPROVEMENT_LODGE]Lodges[\LINK] and [LINK=IMPROVEMENT_TRAPPER_HUT]trapper huts[\LINK] can be built in light forests. Other improvements remove the forest.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioneers[\LINK] cannot plant light forests. Once they're gone, they're gone forever.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A forest is an area where trees predominate. Forests cover 9.4% of the Earth's surface or 30% of total land area. They once covered much more, about 50% of total land area. They are rich habitats for organisms, hydrologic flow modulators and soil conservers, constituting one of the most important aspects of the Earth's biosphere. A forest ecosystem includes additional species such as fungi.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Une forêt ou un massif forestier est une étendue boisée, relativement grande, constituée d'un ou plusieurs peuplements d'arbres et d'espèces associées. Un boisement de faible étendue est dit bois, boqueteau ou bosquet selon son importance. Les définitions de la forêt sont nombreuses en fonction des latitudes et des usages.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Buschland[COLOR_REVERT] und lichte Wälder wachsen in allen Breitengraden. Die Kolonisten können dort ein wenig [LINK=YIELD_FUR]Felle[\LINK] gewinnen und auch etwas[LINK=YIELD_LUMBER]Holz[\LINK] schlagen. Die Gewinnung anderer Rohstoffe wird durch Buschland nur leicht behindert. Es können [LINK=IMPROVEMENT_LODGE]Holzfällerhütten[\LINK] und [LINK=IMPROVEMENT_TRAPPER_HUT]Jagdhütten[\LINK] im Buschland gebaut werden. Andere Geländeverbesserungen entfernen den Wald.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioniere[\LINK] können kein neues Buschland pflanzen.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Unter einem Wald versteht man ein Gebiet mit stark ausgeprägtem Baumbewuchs verschiendensten Alters. Die Dichte und die Baumarten und Pflanzenarten variieren von Region zu Region.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_SWAMP</Tag>
-        <English>Swamp</English>
-        <French>Marais</French>
-        <German>
-            <Text>Sumpf</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Трясина</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_SWAMP_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]swamp[COLOR_REVERT] is a shallow lake with so much vegetation that a boat crosses only with difficulty. Luxuriant plant life hosts a complex ecosystem.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sumpf[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_BOG</Tag>
-        <English>Bog</English>
-        <French>Fondrière</French>
-        <German>
-            <Text>Moorpflanzen</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Топь</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_BOG_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]bog[COLOR_REVERT] is what happens when a swamp dries out. Plants turn into peat. There are still sinkholes to threaten the unwary traveller.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moorpflanzen[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_BARREL_CACTUS</Tag>
-        <English>Barrel Cactus Field</English>
-        <French>Champ de cactus</French>
-        <German>
-            <Text>Kugelkaktusfeld</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Поле бочковых кактусов</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_BARREL_CACTUS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]barrel cactus[COLOR_REVERT] is one of the few sources of water in the desert.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kugelkaktusfeld[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_CACTUS_TREES</Tag>
-        <English>Cactus Trees</English>
-        <French>Cactus géant</French>
-        <German>
-            <Text>Kaktusbäume</Text>
-            <Gender>Male</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Russian>Кактусовые деревья</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_CACTUS_TREES_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cactus trees[COLOR_REVERT] are slow-growing, some living for a hundred and fifty years.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kaktusbäume[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_LICHEN</Tag>
-        <English>Lichen</English>
-        <French>Lichen</French>
-        <German>
-            <Text>Flechten</Text>
-            <Gender>Female</Gender>
-            <Plural>1</Plural>
-        </German>
-        <Russian>Лишайник</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_LICHEN_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lichen[COLOR_REVERT] is an ancient plant, food for caribou. Clinging to rocks it brings colour to the polar regions.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flechten[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_MOSS</Tag>
-        <English>Moss</English>
-        <French>Mousse</French>
-        <German>
-            <Text>Moos</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Мох</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_MOSS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moss[COLOR_REVERT]is found in wet forests where the sun seldom appears. It's a guide to direction because it grows thicker on the north side of trees.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moos[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_THICKET</Tag>
-        <English>Thicket</English>
-        <French>Bosquet</French>
-        <German>
-            <Text>Dickicht</Text>
-            <Gender>Neuter</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Заросли</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_THICKET_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]thicket[COLOR_REVERT] is a bunch of trees, usually not too tall, in a meadow or an open area with low shrubs.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dickicht[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_STORM</Tag>
-        <English>Storm</English>
-        <French>
-            <Text>Tempête</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Gewittersturm</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Tempesta:Tempesta</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>tormenta:tormenta</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Шторм</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_STORM_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Storms[COLOR_REVERT] take many movement points to get through and, on top of that, damage your ships. You want to avoid these weather systems. They occur only on [LINK=TERRAIN_OCEAN]ocean[\LINK] tiles, so on [LINK=TERRAIN_COAST]coast[\LINK] or [COLOR_HIGHLIGHT_TEXT]fresh water lake[COLOR_REVERT] tiles you'll be safe from them.[PARAGRAPH:1]Storms can never destroy a ship, but they can weaken it severely. For more information, see [LINK=CONCEPT_WINDS_AND_STORMS]Winds and Storms[\LINK][PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A storm is any disturbed state of an astronomical body's atmosphere especially affecting its surface, and strongly implying severe weather. It may be marked by strong wind, hail, thunder and/or lightning (a thunderstorm), heavy precipitation (snowstorm, rainstorm), heavy freezing rain (ice storm), strong winds (tropical cyclone, windstorm), or wind transporting some substance through the atmosphere as in a dust storm, blizzard or sandstorm. Storms destroy lives and property through storm surge, heavy rain flooding roads and homes, lightning, wildfires, and vertical wind shear. However heavy rainfall can alleviate drought. Heavy snowfall is good for skiing and snowboarding.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Une tempête est un phénomène météorologique violent à large échelle dite synoptique, avec un diamètre compris en général entre 200 à 1 000 km, caractérisé par des vents rapides (tourbillon) et des précipitations intenses. Elle peut être accompagnée d'orages donnant des éclairs et du tonnerre ainsi que de la grêle et des tornades.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Stürme[COLOR_REVERT] benötigen viele Bewegungspunkte, um hindurch zu segeln und beschädigen auch die Schiffe darin. Daher sollten Stürme, wenn möglich, vermieden werden. Sie kommen nur auf dem offenen [LINK=TERRAIN_COEAN]Ozean[\LINK] vor. Daher sind [LINK=TERRAIN_COAST]Küstengewässer[\LINK] für Schiffe viel sicherer.[PARAGRAPH:1]Stürme zerstören Schiffe nicht vollständig, können diese aber schwer beschädigen. Für weitere Informationen siehe [LINK=CONCEPT_WINDS_AND_STORMS]Wind und Stürme[\LINK][PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Sturm ist ein gestörter Zustand der Atmosphäre, der heftige Wetterbedingungen verursacht. Dazu können sehr starke Winde, Regen, Schnee, Hagel, Donner und Blitze gehören.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_SANDSTORM</Tag>
-        <English>Sandstorm</English>
-        <French>Tempête de sable</French>
-        <German>
-            <Text>Sandsturm</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Песчаная буря</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_SANDSTORM_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sandstorms[COLOR_REVERT] are the most dramatic danger in the desert. In the blowing sand it's hard to breathe, and impossible to know which way to go. The only thing to do is to wait it out.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sandstürme[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_BLIZZARD</Tag>
-        <English>Blizzard</English>
-        <German>
-            <Text>Blizzard</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Снежная буря</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_BLIZZARD_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]blizzard[COLOR_REVERT] is a snowstorm lasting four hours or more, with wind speeds exceeding forty kilometres an hour and visibility less than a kilometre.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blizzard[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_FOG</Tag>
-        <English>Fog</English>
-        <French>Brouillard</French>
-        <German>
-            <Text>Nebel</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Туман</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_FOG_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fog[COLOR_REVERT] is what happens when a cloud forms on the ground. Sometimes it's possible to move slowly through fog, and sometimes it's hard to see your hand in front of your face.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nebel[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_REEF</Tag>
-        <English>Coral Reef</English>
-        <French>Récif de coraux</French>
-        <German>
-            <Text>Korallenriff</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Коралловый риф</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_REEF_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Coral reefs[COLOR_REVERT] are growing rocks, the shells of small animals just below the surface of the water, a major cause of shipwrecks. Knowing familiar reefs and being able to spot new ones is the mark of a good captain.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Korallenriffe[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_STONE_REEF</Tag>
-        <English>Rock Reef</English>
-        <French>Récifs rocheux</French>
-        <German>
-            <Text>Felsenriff</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Скалистый риф</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_STONE_REEF_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rock reefs[COLOR_REVERT] can be of volcanic origin or forced up by the movement of tectonic plates. They sit just below the water and might be exposed at low tide.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenriff[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_PEARL_REEF</Tag>
-        <English>Pearl Reef</English>
-        <French>Récif perlier</French>
-        <German>
-            <Text>Perlenriff</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Жемчужный риф</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_PEARL_REEF_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]pearl reef[COLOR_REVERT] is a rock reef with oysters clinging to it.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Perlenriff[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_KELP</Tag>
-        <English>Kelp</English>
-        <French>Varech</French>
-        <German>
-            <Text>Seetang</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Бурые водоросли</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_KELP_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kelp[COLOR_REVERT] is both a barrier to navigation and a good source of Vitamin C.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seetang[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_SEAGRASS</Tag>
-        <English>Seagrass</English>
-        <French>Sargasse</French>
-        <German>
-            <Text>Seegrass</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Водоросли</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_SEAGRASS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seagrass[COLOR_REVERT] indicates shallow water. Small boats can pass slowly through seagrass.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seegrass[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_N</Tag>
-        <English>North Stream</English>
-        <French>Courant vers le nord</French>
-        <German>
-            <Text>Nord Strömung</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Северное течение</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_N_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]north ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nord Strömung[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_S</Tag>
-        <English>South Stream</English>
-        <French>Courant vers le sud</French>
-        <German>
-            <Text>Süd Strömung</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Южное течение</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_S_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]south ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süd Strömung[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_E</Tag>
-        <English>East Stream</English>
-        <French>Courant vers l'est</French>
-        <German>
-            <Text>Ost Strömung</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Восточное течение</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_E_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]east ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ost Strömung[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_W</Tag>
-        <English>West Stream</English>
-        <French>Courant vers l'Ouest</French>
-        <German>
-            <Text>West Strömung</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Западное течение</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_W_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]west ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]West Strömung[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_NE</Tag>
-        <English>North-East Stream</English>
-        <French>Courant vers le Nord Est</French>
-        <German>
-            <Text>Nord-Ost Strömung</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Северо-восточное течение</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_NE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]north-east ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nord-Ost Strömung[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_NW</Tag>
-        <English>North-West Stream</English>
-        <French>Courant vers le Nord-Ouest</French>
-        <German>
-            <Text>Nord-West Strömung</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Северо-западное течение</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_NW_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]north-west ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nord-West Strömung[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_SE</Tag>
-        <English>South-East Stream</English>
-        <French>Courant vers le Sud-Est</French>
-        <German>
-            <Text>Süd-Ost Strömung</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Юго-восточное течение</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_SE_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]south-east ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süd-Ost Strömung[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_SW</Tag>
-        <English>South-West Stream</English>
-        <French>Courant vers le Sud-Ouest</French>
-        <German>
-            <Text>Süd-Ost Strömung</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Юго-западное течение</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_ARROW_SW_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A[COLOR_HIGHLIGHT_TEXT]south-west ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süd-West Strömung[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_LUSHGRASS</Tag>
-        <English>Lush Grass</English>
-        <French>Herbes hautes</French>
-        <German>
-            <Text>Saftiges Gras</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Сочная трава</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_LUSHGRASS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lush grass[COLOR_REVERT] is sought by ranchers and herders so their animals can grow fat.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Saftiges Gras[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_WILD_FLOWERS</Tag>
-        <English>Wild Flowers</English>
-        <French>Fleurs sauvages</French>
-        <German>
-            <Text>Wilde Blumen</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Дикие цветы</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_WILD_FLOWERS_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wildflowers[COLOR_REVERT] are pretty, but in the colonial era their commercial value is insignificant.</English>
-        <French>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wildflowers[COLOR_REVERT] sont jolies, mais leur valeur commerciale à l'ère coloniale est dérisoire. Elles permettent de plus grandes possibilités d'élevages.</French>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wilde Blumen[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_MEADOW</Tag>
-        <English>Hill Meadow</English>
-        <French>Bocage de collines</French>
-        <German>
-            <Text>Weidelhügel</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Горный луг</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_MEADOW_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meadows[COLOR_REVERT] are open areas with grass and shrubs, surrounded by trees.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Weidelhügel[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_SHRUB</Tag>
-        <English>Shrubs</English>
-        <French>Buissons</French>
-        <German>
-            <Text>Sträuche</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Russian>Непролазный кустарник</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_SHRUB_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrubs[COLOR_REVERT] are medium-sized plants, usually shorter than a human. They exist in great variety and can be found in all terrains and climates.</English>
-        <!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sträuche[COLOR_REVERT]tbd</German>-->
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_TORNADO</Tag>
-        <English>Tornado</English>
-        <French>Tornade</French>
-        <German>Tornado</German>
-        <Italian>Tornado</Italian>
-        <Spanish>Tornado</Spanish>
-        <Russian>Торнадо</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_TORNADO_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tornadoes[COLOR_REVERT] make a plot temporarily impassible to all units. They can spontaneously form on any land plot, and remain active for a few turns. During this period no resources can be won from that plot. Improvements and roads there are destroyed and, on adjacent plots, improvements and roads are endangered as well. Settlements and units will never be destroyed.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A tornado is a violent, rotating column of air touching down on the surface of the earth. Tornadoes are typically in the form of a visible condensation funnel, whose narrow end touches the earth in a swirling cloud of debris.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Une tornade est un vortex (tourbillon) de vents extrêmement violents, prenant naissance à la base d'un nuage d'orage (cumulonimbus) lorsque les conditions de cisaillement des vents sont favorables dans la basse atmosphère. De très faibles tornades peuvent également se développer sous des nuages d'averses (cumulus bourgeonnant).</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tornados[COLOR_REVERT] sind für alle Einheiten unpassierbar. Sie können sich spontan auf dem Land bilden und bleiben einige wenige Runden aktiv. Während dieser Zeit können auf dem Feld keine Rohstoffe gewonnen werden. Geländeverbesserungen und Straßen werden zerstört. Auch auf benachbarten Geländefeldern sind Geländeverbesserungen und Straßen in Gefahr. Siedlungen sind jedoch nicht gefährdet.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Tornado, auch Wind- oder Wasserhose genannt, ist ein kleinräumiger Luftwirbel in der Erdatmosphäre, der eine annähernd senkrechte Drehachse aufweist und im Zusammenhang mit konvektiver Bewölkung (Cumulus und Cumulonimbus) steht. Der Wirbel erstreckt sich hierbei durchgehend vom Boden bis zur Wolkenuntergrenze und ist von einem Staubwolke umgeben.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_VENT_DEF</Tag>
-        <English>Unfavourable wind</English>
-        <French>
-            <Text>Vent défavorable</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Ungünstige Winde</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Tempesta di vento:Tempesta di vento</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>ventarron:ventarron</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Неблагоприятный ветер</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_VENT_DEF_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Unfavourable winds[COLOR_REVERT] grant a defensive bonus to all ships on the tile, but they take more movement points to sail through. This movement penalty can be reduced by the [LINK=PROMOTION_MOBILITY1]Mobility I[\LINK] and [LINK=PROMOTION_SAILING3]Naval Warfare III[\LINK] promotions.[PARAGRAPH:1]Like other weather systems, unfavourable winds occur only on [LINK=TERRAIN_COEAN]ocean[\LINK] tiles, not on [LINK=TERRAIN_COAST]coast[\LINK] or [COLOR_HIGHLIGHT_TEXT]fresh water lake[COLOR_REVERT] tiles.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_WINDS_AND_STORMS]Winds and Storms[\LINK][PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1](navigation) Unfavourable winds delay a vessel sailing in its desired direction.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1](navigation) Un vent défavorable empêche un équipage de se déplacer dans la direction qu'il souhaite.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ungünstige Winde[COLOR_REVERT] geben den darin befindlichen Schiffen zwar kleine Vorteile bei der Verteidigung, erfordern aber mehr Bewegungspunkte, um darin zu segeln. Dieser Effekt kann aber durch die Beförderungen [LINK=PROMOTION_MOBILITY1]Mobilität I[\LINK] und [LINK=PROMOTION_SAILING3]Seekrieg III[\LINK] gesenkt werden. Ungünstige Winde kommen nur auf dem offenen [LINK=TERRAIN_COEAN]Ozean[\LINK] vor. Für weitere Informationen siehe [LINK=CONCEPT_WINDS_AND_STORMS]Wind und Stürme[\LINK][PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Wind, der das Vorankommen eines Segelschiffs in einer bestimmten Richtung behindert.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_VENT_FAV</Tag>
-        <English>Favourable wind</English>
-        <French>
-            <Text>Vent favorable</Text>
-            <Gender>Male</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>Günstige Brise</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </German>
-        <Italian>
-            <Text>Favourable wind:Favourable wind</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>Favourable wind:Favourable wind</Text>
-            <Gender>Male</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>Благоприятный ветер</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_VENT_FAV_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Favourable winds[COLOR_REVERT] impose a defensive penalty for any ships on that tile, but they allow vessels with the [LINK=PROMOTION_SEA_EXPLORER]Sea Explorer[\LINK] promotion to move at double speed. The defensive penalty can be reduced by the [LINK=PROMOTION_MOBILITY1]Mobility I[\LINK] promotions.[PARAGRAPH:1]Like other weather systems, favourable winds occur only on [LINK=TERRAIN_COEAN]ocean[\LINK] tiles, not on [LINK=TERRAIN_COAST]coast[\LINK] or [COLOR_HIGHLIGHT_TEXT]fresh water lake[COLOR_REVERT] tiles.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_WINDS_AND_STORMS]Winds and Storms[\LINK][PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1](navigation) A favourable wind is one which aids a craft in making progress in a desired direction; usually used in plural form in connection with sailing vessels; also called a fair wind.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1](navigation) Un vent favorable aide un équipage à se déplacer dans la direction qu'il souhaite.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Günstige Winde[COLOR_REVERT] erlauben es Schiffen mit der Beförderung [LINK=PROMOTION_SEA_EXPLORER]Entdecker der Meere[\LINK] mit doppelter Geschwindigkeit zu segeln. Allerdings senken sie auch die Verteidigungswerte des darin befindlichen Schiffes. Dieser Effekt kann aber durch die Beförderung [LINK=PROMOTION_MOBILITY1]Mobilität I[\LINK] gesenkt werden. Günstige Winde kommen nur auf dem offenen [LINK=TERRAIN_COEAN]Ozean[\LINK] vor. Für weitere Informationen siehe [LINK=CONCEPT_WINDS_AND_STORMS]Wind und Stürme[\LINK][PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Wind, der das Vorankommen eines Segelschiffs in einer bestimmten Richtung begünstigt.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_VOLCANO</Tag>
-        <English>Volcano</English>
-        <French>Volcan</French>
-        <German>Vulkan</German>
-        <Italian>Vulcano</Italian>
-        <Spanish>Volcán</Spanish>
-        <Russian>Вулкан</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_VOLCANO_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Volcanoes[COLOR_REVERT] are impassible to all units. They spontaneously erupt on plots with [COLOR_HIGHLIGHT_TEXT]peaks[COLOR_REVERT], and remain active for a few turns. During this period no resources can be extracted from that plot. Improvements and roads on that plot are destroyed and, on adjacent plots, improvements and roads are endangered. Settlements and units will never be destroyed.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A volcano is a rupture in a planet's surface which allows hot molten rock, ash and gases to escape from below. Volcanic activity creates new land and can form mountains over a long enough time.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Un [COLOR_HIGHLIGHT_TEXT]volcan[COLOR_REVERT] est un ensemble géologique terrestre, sous-marin ou extra-terrestre qui résulte de la montée d'un magma puis de l'éruption d'une partie de ce magma. Le magma provient de la fusion partielle du manteau et exceptionnellement de la croûte terrestre. L'éruption peut se manifester, de manière plus ou moins combinée, par des émissions de lave, par des émanations ou des explosions de gaz, par des projections de tephras, par des phénomènes hydromagmatiques, etc. Les laves refroidies et les retombées de tephras constituent des roches éruptives qui peuvent s'accumuler et atteindre des milliers de mètres d'épaisseur formant ainsi des montagnes ou des îles. Selon la nature des matériaux, le type d'éruption, la fréquence d'éruption et l'orogenèse, les volcans prennent des formes variées, la plus typique étant celle d'une montagne conique couronnée par un cratère ou une caldeira. La définition de ce qu'est un volcan a évolué au cours des derniers siècles en fonction de la connaissance que les géologues en avaient et de la représentation qu'ils pouvaient en donner.</French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vulkane[COLOR_REVERT] sind für alle Einheiten unpassierbar. Sie brechen spontan auf Gebirgsgipfeln aus und bleiben für einige Runden aktiv. Während dieser Zeit können keine Rohstoffe auf dem Gelände gewonnen werden. Geländeverbesserungen und Straßen werden vernichtet. Selbst auf angrenzenden Geländefeldern sind Geländeverbesserungen und Straßen gefährdet.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Vulkan ist eine geologische Struktur, die entsteht, wenn Magma (Gesteinsschmelze) bis an die Oberfläche eines Planeten (z.B. der Erde) aufsteigt. Alle Begleiterscheinungen, die mit dem Aufstieg und Austritt der glutflüssigen Gesteinsschmelze verbunden sind, bezeichnet man als Vulkanismus. Bei einem Vulkanausbruch werden nicht nur glutflüssige, sondern auch feste oder gasförmige Stoffe freigesetzt (Vulkanismus). Die meisten Vulkane haben annähernd die Form eines Kegels, dessen Hangneigung von der Zähigkeit der Lava abhängt. Die Gestalt kann aber auch unregelmäßig sein oder eine kuppelförmige Aufwölbung bilden.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_RIVER_FORD</Tag>
-        <English>River Ford</English>
-        <French>Passage à gué</French>
-        <German>Flussfurt</German>
-        <Russian>Речной брод</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_FEATURE_RIVER_FORD_PEDIA</Tag>
-        <English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]River fords[COLOR_REVERT] allow all land units to make it across a [LINK=TERRAIN_LARGE_RIVERS]large river[\LINK] without being swept away. They form naturally from sediment deposited by the flowing river.</English>
-        <French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]passages à gué[COLOR_REVERT] permettent à toutes les unités de traverser des [LINK=TERRAIN_LARGE_RIVERS]grandes  rivières[\LINK] sans être emportés par le courant. Ils se forment naturellement avec le dépôt de sédiments par le cours de la rivière. </French>
-        <German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flussfurten[COLOR_REVERT] erlauben es allen Landeinheiten, einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren. Sie enstehen auf natürliche Weise durch Ablagerungen von Sedimenten.</German>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_TERRAIN_FEATURE_ALLOWS_CROSSING_OF_LARGE_RIVERS</Tag>
-        <English>[ICON_BULLET]Allows all land units to cross [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK]</English>
-        <French>[ICON_BULLETPermet à toutes les unités terrestres de traverser les [LINK=TERRAIN_LARGE_RIVERS]grandes rivières[\LINK]</French>
-        <German>[ICON_BULLET]Erlaubt es allen Landeinheiten, einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren.</German>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FOREST</Tag>
+		<English>Deciduous Forest</English>
+		<French>Forêt de feuillus</French>
+		<German>
+			<Text>Laubwald</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Лиственный лес</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FOREST_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Deciduous forests[COLOR_REVERT] grow in intermediate and high latitudes, and also on higher terrain in low latitudes. Your colonists can harvest [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_LUMBER]lumber[\LINK] there.[PARAGRAPH:1]Forests prevent any other resource on that plot except [LINK=YIELD_ORE]ore[\LINK], unless a bonus resource is present.[LINK=IMPROVEMENT_LODGE]Lodges[\LINK] and [LINK=IMPROVEMENT_TRAPPER_HUT]trapper huts[\LINK] can be built in deciduous forests. Putting up any other improvement clears the forest.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant deciduous forests on [LINK=TERRAIN_PLAINS]prairie[\LINK] terrain.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A forest, also referred to as a wood or the woods and less often as a "wold" (or "weald"), "holt", or "frith" (or "firth"), means trees are the dominant plant. There are many definitions for forest. Forests cover 9.4% of the Earth's surface (or 30% of the land area), though long ago they covered much more, about 50% of the land, creating habitats for a wide range of organisms, working as hydrologic flow modulators and soil conservers, constituting one of the most important aspects of the Earth's biosphere. Although forest is primarily trees the forest ecosystem has many additional species such as fungi.</English>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La [COLOR_HIGHLIGHT_TEXT]Forêt[COLOR_REVERT] pousse à des lattitudes intermédiaires. Le terrain permet de produire de la [LINK=YIELD_FUR]fourrure[\LINK] et du [LINK=YIELD_LUMBER]bois de construction[\LINK].[PARAGRAPH:1]La forêt empêche la production de n'importe quelle autre bien à l'exception du [LINK=YIELD_ORE]minerai[\LINK], à part si une ressource bonus y est présente. Des [LINK=IMPROVEMENT_LODGE]abris[\LINK] et des [LINK=IMPROVEMENT_TRAPPER_HUT]Huttes de trappeurs[\LINK] peuvent être construites dans la forêt.[PARAGRAPH:1]Les [LINK=PROFESSION_PIONEER]pionniers[\LINK] peuvent planter de la forêt sur les terrains de [LINK=TERRAIN_GRASS]prairie[\LINK] et de [LINK=TERRAIN_PLAINS]Plaines[\LINK].[PARAGRAPH:2][BOLD]Contexte :[\BOLD][PARAGRAPH:1]Une forêt ou un massif forestier est une étendue boisée, relativement grande, constituée d'un ou plusieurs peuplements d'arbres et d'espèces associées. Un boisement de faible étendue est dit bois, boqueteau ou bosquet selon son importance. Divers types de forêts existent; des forêts primaires aux forêts dites urbaines, avec les gradients intermédiaires. Il existe également de nombreux types d'exploitation des forêts (sylviculture, agrosylviculture). La forêt est aussi un milieu de vie et une source de revenus pour l'homme : au début du XXe siècle, plus de 500 millions de personnes, dont 150 millions d'autochtones vivent encore en forêt ou à ses abords. Elle abrite une grande richesse écologique composée d'une centaine d'espèces de mammifères, d'une cinquantaine d'espèces d'oiseaux, d'un millier d'espèces végétales et de plusieurs millions d'espèces d'insectes.</French>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Laubwald[COLOR_REVERT] wächst in gemäßigten und nördlichen Breitengraden, aber auch in höheren Lagen der niedrigeren Breitengrade. Die Kolonisten können dort [LINK=YIELD_FUR]Pelze[\LINK] gewinnen und [LINK=YIELD_LUMBER]Holz[\LINK] schlagen. Zur Gewinnung anderer Rohstoffe sind Wälder schlecht geeignet. Es können [LINK=IMPROVEMENT_LODGE]Holzfällerhütten[\LINK] und [LINK=IMPROVEMENT_TRAPPER_HUT]Jagdhütten[\LINK] in Laubwäldern gebaut werden. Andere Geländeverbesserungen entfernen den Wald.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioniere[\LINK] können neue Laubwälder in der [LINK=TERRAIN_PLAINS]Prärie[\LINK] anpflanzen.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Unter einem Wald versteht man ein Gebiet mit stark ausgeprägtem Baumbewuchs verschiendensten Alters. Die Dichte und die Baumarten und Pflanzenarten variieren von Region zu Region.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FOREST_EVERGREEN</Tag>
+		<English>Coniferous Forest</English>
+		<French>Forêt de conifères</French>
+		<German>
+			<Text>Nadelwald</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Хвойный лес</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FOREST_EVERGREEN_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Coniferous forests[COLOR_REVERT] grow in intermediate and high latitudes, and also on higher terrain in low latitudes. Your colonists can harvest [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_LUMBER]lumber[\LINK] there.[NEWLINE]Forests prevent any other resource on that plot except [LINK=YIELD_ORE]ore[\LINK], unless a bonus resource is present.[LINK=IMPROVEMENT_LODGE]Lodges[\LINK] and [LINK=IMPROVEMENT_TRAPPER_HUT]trapper huts[\LINK] can be built in  coniferous forests. Putting up any other improvement clears the forest.[NEWLINE][LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant coniferous forests on [LINK=TERRAIN_GRASS]grassland[\LINK] terrain.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]An evergreen forest keeps its leaves, or needles, year round. Seeds are protected inside cones, one of the features that makes evergreens much hardier than deciduous trees. Subarctic forests will be exclusively coniferous. Although forest is primarily trees the forest ecosystem has many additional species such as fungi.</English>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La [COLOR_HIGHLIGHT_TEXT]Forêt[COLOR_REVERT] pousse à des lattitudes intermédiaires. Le terrain permet de produire de la [LINK=YIELD_FUR]fourrure[\LINK] et du [LINK=YIELD_LUMBER]bois de construction[\LINK].[NEWLINE]La forêt empêche la production de n'importe quelle autre bien à l'exception du [LINK=YIELD_ORE]minerai[\LINK], à part si une ressource bonus y est présente. Des [LINK=IMPROVEMENT_LODGE]abris[\LINK] et des [LINK=IMPROVEMENT_TRAPPER_HUT]Huttes de trappeurs[\LINK] peuvent être construites dans la forêt.[NEWLINE]Les [LINK=PROFESSION_PIONEER]pionniers[\LINK] peuvent planter de la forêt sur les terrains de [LINK=TERRAIN_GRASS]prairie[\LINK] et de [LINK=TERRAIN_PLAINS]Plaines[\LINK].[PARAGRAPH:2][BOLD]Contexte :[\BOLD][PARAGRAPH:1]Une forêt ou un massif forestier est une étendue boisée, relativement grande, constituée d'un ou plusieurs peuplements d'arbres et d'espèces associées. Un boisement de faible étendue est dit bois, boqueteau ou bosquet selon son importance. Divers types de forêts existent ; des forêts primaires aux forêts dites urbaines, avec les gradients intermédiaires. Il existe également de nombreux types d'exploitation des forêts (sylviculture, agrosylviculture). La forêt est aussi un milieu de vie et une source de revenus pour l'homme : au début du XXe siècle, plus de 500 millions de personnes, dont 150 millions d'autochtones vivent encore en forêt ou à ses abords. Elle abrite une grande richesse écologique composée d'une centaine d'espèces de mammifères, d'une cinquantaine d'espèces d'oiseaux, d'un millier d'espèces végétales et de plusieurs millions d'espèces d'insectes.</French>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nadelwald[COLOR_REVERT] wächst in gemässigten und nördlichen Breitengraden, aber auch in höheren Lagen der niedrigen Breitengrade. Die Kolonisten können dort [LINK=YIELD_FUR]Pelze[\LINK] gewinnen und [LINK=YIELD_LUMBER]Holz[\LINK] schlagen. Zur Gewinnung anderer Rohstoffe, ist der Nadelwald sehr schlecht geeignet. Es können [LINK=IMPROVEMENT_LODGE]Holzfällerhütten[\LINK] und [LINK=IMPROVEMENT_TRAPPER_HUT]Jagdhütten[\LINK] in Wäldern gebaut werden. Andere Geländeverbesserungen entfernen den Wald.[NEWLINE][LINK=PROFESSION_PIONEER]Pioniere[\LINK] können neue Nadelwälder auf [LINK=TERRAIN_GRASS]Grasland[\LINK] anpflanzen.[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Unter einem Wald versteht man ein Gebiet mit stark ausgeprägtem Baumbewuchs verschiendensten Alters. Die Dichte und die Baumarten und Pflanzenarten variieren von Region zu Region.</German>
+		<Italian>[TAB]A forest, also referred to as a wood or the woods and less often as a "wold" (or "weald"), "holt", or "frith" (or "firth"), is an area with a high density of trees. There are many definitions for forest, based on the various criteria. These plant communities cover approximately 9.4% of the Earth's surface (or 30% of total land area), though they once covered much more (about 50% of total land area), in many different regions and function as habitats for organisms, hydrologic flow modulators, and soil conservers, constituting one of the most important aspects of the Earth's biosphere. Although a forest is classified primarily by trees a forest ecosystem is defined intrinsically with additional species such as fungi.</Italian>
+		<Spanish>[TAB]A forest, also referred to as a wood or the woods and less often as a "wold" (or "weald"), "holt", or "frith" (or "firth"), is an area with a high density of trees. There are many definitions for forest, based on the various criteria. These plant communities cover approximately 9.4% of the Earth's surface (or 30% of total land area), though they once covered much more (about 50% of total land area), in many different regions and function as habitats for organisms, hydrologic flow modulators, and soil conservers, constituting one of the most important aspects of the Earth's biosphere. Although a forest is classified primarily by trees a forest ecosystem is defined intrinsically with additional species such as fungi.</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_DENSE_FOREST</Tag>
+		<English>Dense Forest</English>
+		<French>Forêt dense</French>
+		<German>
+			<Text>Dichter Wald</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Густой лес</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_DENSE_FOREST_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dense forest[COLOR_REVERT] is almost impassable. In the tropics getting through it means using a machete. Travelling in the temperate dense forest takes a lot of time and a sharp axe. A [LINK=PROFESSION_PIONEER]Pioneer[\LINK] can plant dense forests on [LINK=TERRAIN_PLAINS_FERTILE]plains[\LINK] terrain.</English>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dichter Wald[COLOR_REVERT] is fast unpassierbar. Man braucht eine Machete oder Axt, um voranzukommen. Ein [LINK=PROFESSION_PIONEER]Pionier[\LINK] kann dichten Wald auf dem [LINK=TERRAIN_PLAINS_FERTILE]Ebenen[\LINK] Terrain anpflanzen. </German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FOREST_TUNDRA</Tag>
+		<English>Northern Forest</English>
+		<French>Forêt boréale</French>
+		<German>
+			<Text>Nordwald</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Северный лес</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ANCIENT_FOREST</Tag>
+		<English>Ancient Northern Forest</English>
+		<French>Forêt boréale primordiale</French>
+		<German>
+			<Text>Alter Nordwald</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Старый северный лес</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ANCIENT_FOREST_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ancient northern forests[COLOR_REVERT] have the world's tallest trees. The old growth there is prized for ship masts. It can be planted on [LINK=TERRAIN_TAIGA]taiga[\LINK] terrain by [LINK=PROFESSION_PIONEER]pioneers[\LINK]  </English>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Alter Nordwald[COLOR_REVERT] kann durch [LINK=PROFESSION_PIONEER]Pioniere[\LINK] im [LINK=TERRAIN_TAIGA]Taiga[\LINK] Gelände angepflanzt werden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FOREST_TUNDRA_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Taigas[COLOR_REVERT], or [COLOR_HIGHLIGHT_TEXT]northern forests[COLOR_REVERT], grow predominantly in high latitudes, though they can be found on high terrain in low latitudes. Your colonists can harvest [LINK=YIELD_FUR]fur[\LINK], [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK], [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK] and [LINK=YIELD_LUMBER]lumber[\LINK] there.[PARAGRAPH:1]Taiga prevents any other resource on its plot other than [LINK=YIELD_ORE]ore[\LINK], unless a bonus resource is present.[LINK=IMPROVEMENT_LODGE]Lodges[\LINK] and [LINK=IMPROVEMENT_TRAPPER_HUT]trapper huts[\LINK] can be built in taiga. Other improvements remove the taiga.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant northern forests on [LINK=TERRAIN_TUNDRA]tundra[\LINK] terrain.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A forest is mainly trees. These plant communities cover approximately 9.4% of the Earth's surface, or 30% of total land area, though they once covered about 50% of the land area. The brief taiga summer is alive with colourful plants and insects, though iceworms nest only in folk songs.</English>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La [COLOR_HIGHLIGHT_TEXT]Taïga[COLOR_REVERT] pousse principalement dans les climats de haute lattitude, bien qu'on puisse également la trouver dans les terrains très élevées de plus basse lattitutde. Le terrain permet de produire de la [LINK=YIELD_FUR]fourrure[\LINK], de la [LINK=YIELD_PREMIUM_FUR]fourrure de qualité[\LINK], du [LINK=YIELD_VALUABLE_WOOD]bois précieux[\LINK] et du [LINK=YIELD_LUMBER]bois de construction[\LINK].[PARAGRAPH:1]La taïga empêche la production de n'importe quelle autre bien à l'exception du [LINK=YIELD_ORE]minerai[\LINK], à part si une ressource bonus y est présente. Des [LINK=IMPROVEMENT_LODGE]abris[\LINK] et des [LINK=IMPROVEMENT_TRAPPER_HUT]Huttes de trappeurs[\LINK] peuvent être construites dans la taïga.[PARAGRAPH:1]Les [LINK=PROFESSION_PIONEER]pionniers[\LINK] peuvent planter de la taïga sur les terrains de [LINK=TERRAIN_TUNDRA]Tundra[\LINK].[PARAGRAPH:2][BOLD]Contexte :[\BOLD][PARAGRAPH:1]La taïga ou forêt boréale est l'un des principaux biomes terrestres. Fortement liée au climat subarctique, elle consiste en une formation végétale de type forestière parcourue par un vaste réseau lacustre résultant de l'érosion fluvioglaciaire. Sa végétation a la particularité d'être formée d'une majorité de conifères adaptés au froid (pins, épicéas, mélèzes et sapins), associée à un mélange de feuillus principalement composé de bouleaux, d'aulnes, de saules et de peupliers. Véritable désert humain, la taïga est la plus vaste continuité boisée de la planète et occupe à elle seule 10 % des terres émergées. Elle couvre la majorité des territoires intérieurs de l'Alaska, du Canada, de la Scandinavie, de la Finlande et de la Russie.</French>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Taiga[COLOR_REVERT], hier auch [COLOR_HIGHLIGHT_TEXT]Nordwald[COLOR_REVERT] genannt, wächst in nördlichen Breitengraden, aber auch gelegentlich in höheren Lagen der gemässigten Breitengrade. Die Kolonisten können dort [LINK=YIELD_FUR]Pelze[\LINK] oder [LINK=YIELD_PREMIUM_FUR]Hochwertige Pelze[\LINK] gewinnen und [LINK=YIELD_LUMBER]Holz[\LINK] schlagen. Zur Gewinnung anderer Rohstoffe ist Taiga sehr schlecht geeignet. Es können [LINK=IMPROVEMENT_LODGE]Holzfällerhütten[\LINK] und [LINK=IMPROVEMENT_TRAPPER_HUT]Jagdhütten[\LINK] in der Taiga gebaut werden. Andere Geländeverbesserungen entfernen den Wald.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioniere[\LINK] können neue Nordwälder in der [LINK=TERRAIN_TUNDRA]Tundra[\LINK] anpflanzen.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Unter einem Wald versteht man ein Gebiet mit stark ausgeprägtem Baumbewuchs verschiendensten Alters. Die Dichte und die Baumarten und Pflanzenarten variieren von Region zu Region.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ICE</Tag>
+		<English>Polar Ice</English>
+		<French>Banquise</French>
+		<German>
+			<Text>Polareis</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Ghiaccio:Ghiacci</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Hielo:Hielos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Полярный лед</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ICE_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polar ice[COLOR_REVERT] is impassible terrain to all units. The only option you have is to sail around it.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Ice is water frozen solid. During the "We The People" game period ice boundaries remain stable, though later that will change. Usually ice is in the phase known as ice Ih, the most abundant of the solid phases on the Earth's surface. It can appear transparent or opaque bluish-white colour, depending on the presence of impurities or air inclusions. Other materials such as soil may further alter the appearance.</English>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La banquise est la couche de glace qui se forme à la surface d'une étendue d'eau par solidification des premières couches d'eau, généralement la mer mais aussi les lacs et les rivières. Il ne faut pas confondre cette glace plus ou moins pérenne avec les calottes glaciaires et les inlandsis qui sont constitués quant à eux de glace continentale, c'est-à-dire de précipitations neigeuses accumulées et tassées.</French>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polareis[COLOR_REVERT] tritt nur auf dem Meer auf und ist für alle Schiffe unpassierbar. Diese müssen um diese herum segeln.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Als Eis bezeichnet man gefrorenes und somit festes Wasser. Ein beachtlicher Teil der Wasservorräte der Erde liegt in Eisform vor.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_JUNGLE</Tag>
+		<English>Jungle</English>
+		<French>
+			<Text>Jungle</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Dschungel</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Giungla:Giungle</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Selva:Selvas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Джунгли</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_JUNGLE_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Jungles[COLOR_REVERT] grow in tropical latitudes, and your colonists can harvest [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] there, as well as [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK]. [LINK=YIELD_LUMBER]Lumber[\LINK] is also found in jungles.[PARAGRAPH:1]Unlike forests, [LINK=PROFESSION_FARMER]farmers[\LINK] can grow a little [LINK=YIELD_FOOD]food[\LINK] in jungles if the underlying terrain is capable of producing at least 3 food. [LINK=IMPROVEMENT_LODGE]Lodges[\LINK] and [LINK=IMPROVEMENT_FRUIT_PLANTATION]fruits plantations[\LINK] can be built in jungles. Other construction removes the jungle.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioneers[\LINK] can plant jungles on both [LINK=TERRAIN_MARSH]marsh[\LINK] and [LINK=TERRAIN_SAVANNAH]savanna[\LINK] terrain.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Jungle or tropical forest refers to the dense, impenetrable tropical rainforest biome luxuriant with animal and plant life. The term "jungle" is a synonym for tropical rainforest.[PARAGRAPH:1]The northwest Pacific coast of North America also has the characteristic rainfall and plant growth to qualify as the world's only temperate jungle.[PARAGRAPH:1]The word "jungle" originates from the Sanskrit word "jangala" which in India referred to uncultivated land. Although the Sanskrit word refers to "dry land", it has been suggested that an Anglo-Indian misinterpretation led to its use for a dense "tangled thicket". while others have argued that a cognate word in Urdu did refer to forests. The term is prevalent in many languages of South Asia, and on the Iranian plateau, particularly in Bangla, Hindi, Marathi, Urdu, Punjabi and Persian.</English>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]La jungle désigne les forêts de feuillus humides tropicales et subtropicales ou les forêts tropicales humides constituent un biome des zones intertropicales caractérisé par une formation végétale arborée haute et dense ainsi qu'un climat chaud et très humide.</French>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dschungel[COLOR_REVERT] wächst in tropischen Breitengraden. Ihre Kolonisten können dort [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] ernten, aber auch [LINK=YIELD_VALUABLE_WOOD]Edelholz[\LINK] schlagen. Normales [LINK=YIELD_LUMBER]Holz[\LINK] ist im Dschungel natürlich ebenfalls vorhanden.[PARAGRAPH:1]Im Gegensatz zu anderen Wäldern, kann im Dschungel auch [LINK=YIELD_FOOD]Nahrung[\LINK] geerntet werden, wenn das zugrunde liegende Gelände mindestens 3 Nahrung erzeugt. Im Dschungel können [LINK=IMPROVEMENT_LODGE]Holzfällerhütten[\LINK] und [LINK=IMPROVEMENT_FRUIT_PLANTATION]Obstplantagen gebaut werden[\LINK]. Der Bau einer anderen Geländeverbesserung entfernt den Dschungel.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioniere[\LINK] können in [LINK=TERRAIN_MARSH]Sümpfen[\LINK] and [LINK=TERRAIN_SAVANNAH]Savannen[\LINK] neuen Dschungel anpflanzen.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Dschungel oder Tropischer Wald bezieht sich aufgrund seiner Dichte auf einen mehr oder weniger undurchdringlichen Regenwald mit einer Vielzahl von Pflanzen und Tieren.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_MANGROVE</Tag>
+		<English>Mangroves</English>
+		<French>Mangrove</French>
+		<German>
+			<Text>Mangroven</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Манговые заросли</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_MANGROVE_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mangrove[COLOR_REVERT] forests, also called mangrove swamps, are productive wetlands that occur in coastal intertidal zones. Mangroves allow land units to cross large rivers, but slowly. Ships passing a mango forest also have to slow down. The choice is to cut down the forest to speed up the ships and get more food, or leave them as a kind of ford and a source of exotic wood. [PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mangroves[COLOR_REVERT] are coastal swampy forests found mainly in tropical and subtropical latitudes because mangrove trees cannot withstand freezing temperatures. They have a dense tangle of prop roots so they seem to be standing on stilts above the water. This tangle of roots allows the trees to handle the daily rise and fall of tides, which means that most mangroves get flooded at least twice per day. The roots also slow the movement of tidal waters, causing sediments to settle out of the water and build up the muddy bottom. Mangrove forests stabilise the coastline, reducing erosion from storm surges, currents, waves, and tides. The intricate root system of mangroves also makes these forests attractive to fish and other organisms seeking food and shelter from predators.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Mangroven[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_TROPICAL_GROVES</Tag>
+		<English>Tropical Grove</English>
+		<French>Bosquet tropical:Bosquets tropicaux</French>
+		<German>
+			<Text>Tropischer Hain</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Тропическая роща</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_TROPICAL_GROVES_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tropical groves[COLOR_REVERT] have big trees with hardwood prized for furniture.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tropischer Hain[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_TAR_PIT</Tag>
+		<English>Tar Pit</English>
+		<French>Goudron</French>
+		<German>
+			<Text>Teergrube</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Битумная яма</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_TAR_PIT_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]tar pit[COLOR_REVERT] provides the right sealant to waterproof seams on canoes and ships. It can also hide the bones of long-extinct animals.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Teergrube[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SALT_PAN</Tag>
+		<English>Salt Desert</English>
+		<French>Désert salin</French>
+		<German>
+			<Text>Salzwüste</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Соляная пустыня</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SALT_PAN_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]salt pan[COLOR_REVERT] is the dry bed of an ancient salt lake where salt can be mined.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salzwüste[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SALT_DRAINAGE</Tag>
+		<English>Salt Water Pools</English>
+		<French>Marais salant naturel</French>
+		<German>
+			<Text>Salzwassertümpel</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Солончаки</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SALT_DRAINAGE_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salt water pools[COLOR_REVERT] have no exit channel so the water can't run off. Minerals including salt accumulate. Water has to be evaporated to get the salt.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Salzwassertümpel[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FLOOD_PLAINS</Tag>
+		<English>Fertile Flood Plains</English>
+		<French>Plaine d'inondation</French>
+		<German>
+			<Text>Fruchtbares Schwemmland</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Плодородные поймы</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FLOOD_PLAINS_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fertile flood plains[COLOR_REVERT] get fresh silt every spring when their rivers overflow. Abundant crops support a large healthy population.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fruchtbares Schwemmland[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_CRATER</Tag>
+		<English>Meteor Crater</English>
+		<French>Cartère de météorite</French>
+		<German>
+			<Text>Meteoritenkrater</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Метеоритный кратер</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_CRATER_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meteor craters[COLOR_REVERT] are where meteorites hit the ground. They're rare. Most space rocks burn up in Earth's atmosphere, unlike on the moon which is pockmarked with frequent impacts. Craters often have lakes in the middle.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meteoritenkrater[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN</Tag>
+		<English>Impassable Mountain</English>
+		<French>Montagne infranchissable</French>
+		<German>
+			<Text>Unpassierbarer Berg</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Непроходимые горы</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Impassable mountains[COLOR_REVERT] are too steep and icy for any path to be cut or cantilevered around the tricky spots. They can be climbed only by expert mountaineers, and are an absolute barrier to commerce.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Unpassierbarer Berg[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT</Tag>
+		<English>Rock Formation (Desert)</English>
+		<French>Formation rocheuse (Désert)</French>
+		<German>
+			<Text>Felsenformation (Wüste)</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Скальные образования (пустыня)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Desert rock formations[COLOR_REVERT] are shaped by the wind into exotic shapes.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenformation (Wüste)[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_TEMPERATE</Tag>
+		<English>Rock Formation (Temperate)</English>
+		<French>Formation rocheuse (tempérée)</French>
+		<German>
+			<Text>Felsenformation (Gemäßigt)</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Скальные образования (умеренный климат)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_TEMPERATE_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Temperate rock formations[COLOR_REVERT] are shaped by water into exotic shapes.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenformation (Gemäßigt)[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_POLAR</Tag>
+		<English>Rock Formation (Polar)</English>
+		<French>Formation rocheuse (polaire)</French>
+		<German>
+			<Text>Felsenformation (Polar)</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Скальные образования (полярные)</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_POLAR_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Polar rock formations[COLOR_REVERT] are shaped by ice into exotic shapes.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenformation (Polar)[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_LIGHT_FOREST</Tag>
+		<English>Light Forest</English>
+		<French>
+			<Text>Forêt clairsemée:Forêts clairsemées</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Buschland</German>
+		<Italian>
+			<Text>Foresta rada</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Bosque disperso:Bosques dispersos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Редколесье</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_LIGHT_FOREST_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Light forest[COLOR_REVERT] can grow in all latitudes. It slightly increases the production of [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_LUMBER]lumber[\LINK] on its plot, but also keeps all the other yields the plot has due to its base terrain, albeit in reduced numbers.[PARAGRAPH:1][LINK=IMPROVEMENT_LODGE]Lodges[\LINK] and [LINK=IMPROVEMENT_TRAPPER_HUT]trapper huts[\LINK] can be built in light forests. Other improvements remove the forest.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioneers[\LINK] cannot plant light forests. Once they're gone, they're gone forever.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A forest is an area where trees predominate. Forests cover 9.4% of the Earth's surface or 30% of total land area. They once covered much more, about 50% of total land area. They are rich habitats for organisms, hydrologic flow modulators and soil conservers, constituting one of the most important aspects of the Earth's biosphere. A forest ecosystem includes additional species such as fungi.</English>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Une forêt ou un massif forestier est une étendue boisée, relativement grande, constituée d'un ou plusieurs peuplements d'arbres et d'espèces associées. Un boisement de faible étendue est dit bois, boqueteau ou bosquet selon son importance. Les définitions de la forêt sont nombreuses en fonction des latitudes et des usages.</French>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Buschland[COLOR_REVERT] und lichte Wälder wachsen in allen Breitengraden. Die Kolonisten können dort ein wenig [LINK=YIELD_FUR]Felle[\LINK] gewinnen und auch etwas[LINK=YIELD_LUMBER]Holz[\LINK] schlagen. Die Gewinnung anderer Rohstoffe wird durch Buschland nur leicht behindert. Es können [LINK=IMPROVEMENT_LODGE]Holzfällerhütten[\LINK] und [LINK=IMPROVEMENT_TRAPPER_HUT]Jagdhütten[\LINK] im Buschland gebaut werden. Andere Geländeverbesserungen entfernen den Wald.[PARAGRAPH:1][LINK=PROFESSION_PIONEER]Pioniere[\LINK] können kein neues Buschland pflanzen.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Unter einem Wald versteht man ein Gebiet mit stark ausgeprägtem Baumbewuchs verschiendensten Alters. Die Dichte und die Baumarten und Pflanzenarten variieren von Region zu Region.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SWAMP</Tag>
+		<English>Swamp</English>
+		<French>Marais</French>
+		<German>
+			<Text>Sumpf</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Трясина</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SWAMP_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]swamp[COLOR_REVERT] is a shallow lake with so much vegetation that a boat crosses only with difficulty. Luxuriant plant life hosts a complex ecosystem.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sumpf[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_BOG</Tag>
+		<English>Bog</English>
+		<French>Fondrière</French>
+		<German>
+			<Text>Moorpflanzen</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Топь</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_BOG_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]bog[COLOR_REVERT] is what happens when a swamp dries out. Plants turn into peat. There are still sinkholes to threaten the unwary traveller.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moorpflanzen[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_BARREL_CACTUS</Tag>
+		<English>Barrel Cactus Field</English>
+		<French>Champ de cactus</French>
+		<German>
+			<Text>Kugelkaktusfeld</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Поле бочковых кактусов</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_BARREL_CACTUS_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]barrel cactus[COLOR_REVERT] is one of the few sources of water in the desert.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kugelkaktusfeld[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_CACTUS_TREES</Tag>
+		<English>Cactus Trees</English>
+		<French>Cactus géant</French>
+		<German>
+			<Text>Kaktusbäume</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</German>
+		<Russian>Кактусовые деревья</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_CACTUS_TREES_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Cactus trees[COLOR_REVERT] are slow-growing, some living for a hundred and fifty years.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kaktusbäume[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_LICHEN</Tag>
+		<English>Lichen</English>
+		<French>Lichen</French>
+		<German>
+			<Text>Flechten</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</German>
+		<Russian>Лишайник</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_LICHEN_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lichen[COLOR_REVERT] is an ancient plant, food for caribou. Clinging to rocks it brings colour to the polar regions.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flechten[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_MOSS</Tag>
+		<English>Moss</English>
+		<French>Mousse</French>
+		<German>
+			<Text>Moos</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Мох</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_MOSS_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moss[COLOR_REVERT]is found in wet forests where the sun seldom appears. It's a guide to direction because it grows thicker on the north side of trees.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moos[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_THICKET</Tag>
+		<English>Thicket</English>
+		<French>Bosquet</French>
+		<German>
+			<Text>Dickicht</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Заросли</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_THICKET_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]thicket[COLOR_REVERT] is a bunch of trees, usually not too tall, in a meadow or an open area with low shrubs.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Dickicht[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_STORM</Tag>
+		<English>Storm</English>
+		<French>
+			<Text>Tempête</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Gewittersturm</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Tempesta:Tempesta</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>tormenta:tormenta</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Шторм</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_STORM_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Storms[COLOR_REVERT] take many movement points to get through and, on top of that, damage your ships. You want to avoid these weather systems. They occur only on [LINK=TERRAIN_OCEAN]ocean[\LINK] tiles, so on [LINK=TERRAIN_COAST]coast[\LINK] or [COLOR_HIGHLIGHT_TEXT]fresh water lake[COLOR_REVERT] tiles you'll be safe from them.[PARAGRAPH:1]Storms can never destroy a ship, but they can weaken it severely. For more information, see [LINK=CONCEPT_WINDS_AND_STORMS]Winds and Storms[\LINK][PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A storm is any disturbed state of an astronomical body's atmosphere especially affecting its surface, and strongly implying severe weather. It may be marked by strong wind, hail, thunder and/or lightning (a thunderstorm), heavy precipitation (snowstorm, rainstorm), heavy freezing rain (ice storm), strong winds (tropical cyclone, windstorm), or wind transporting some substance through the atmosphere as in a dust storm, blizzard or sandstorm. Storms destroy lives and property through storm surge, heavy rain flooding roads and homes, lightning, wildfires, and vertical wind shear. However heavy rainfall can alleviate drought. Heavy snowfall is good for skiing and snowboarding.</English>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Une tempête est un phénomène météorologique violent à large échelle dite synoptique, avec un diamètre compris en général entre 200 à 1 000 km, caractérisé par des vents rapides (tourbillon) et des précipitations intenses. Elle peut être accompagnée d'orages donnant des éclairs et du tonnerre ainsi que de la grêle et des tornades.</French>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Stürme[COLOR_REVERT] benötigen viele Bewegungspunkte, um hindurch zu segeln und beschädigen auch die Schiffe darin. Daher sollten Stürme, wenn möglich, vermieden werden. Sie kommen nur auf dem offenen [LINK=TERRAIN_COEAN]Ozean[\LINK] vor. Daher sind [LINK=TERRAIN_COAST]Küstengewässer[\LINK] für Schiffe viel sicherer.[PARAGRAPH:1]Stürme zerstören Schiffe nicht vollständig, können diese aber schwer beschädigen. Für weitere Informationen siehe [LINK=CONCEPT_WINDS_AND_STORMS]Wind und Stürme[\LINK][PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Sturm ist ein gestörter Zustand der Atmosphäre, der heftige Wetterbedingungen verursacht. Dazu können sehr starke Winde, Regen, Schnee, Hagel, Donner und Blitze gehören.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SANDSTORM</Tag>
+		<English>Sandstorm</English>
+		<French>Tempête de sable</French>
+		<German>
+			<Text>Sandsturm</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Песчаная буря</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SANDSTORM_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sandstorms[COLOR_REVERT] are the most dramatic danger in the desert. In the blowing sand it's hard to breathe, and impossible to know which way to go. The only thing to do is to wait it out.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sandstürme[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_BLIZZARD</Tag>
+		<English>Blizzard</English>
+		<German>
+			<Text>Blizzard</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Снежная буря</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_BLIZZARD_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]blizzard[COLOR_REVERT] is a snowstorm lasting four hours or more, with wind speeds exceeding forty kilometres an hour and visibility less than a kilometre.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Blizzard[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FOG</Tag>
+		<English>Fog</English>
+		<French>Brouillard</French>
+		<German>
+			<Text>Nebel</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Туман</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_FOG_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Fog[COLOR_REVERT] is what happens when a cloud forms on the ground. Sometimes it's possible to move slowly through fog, and sometimes it's hard to see your hand in front of your face.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nebel[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_REEF</Tag>
+		<English>Coral Reef</English>
+		<French>Récif de coraux</French>
+		<German>
+			<Text>Korallenriff</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Коралловый риф</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_REEF_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Coral reefs[COLOR_REVERT] are growing rocks, the shells of small animals just below the surface of the water, a major cause of shipwrecks. Knowing familiar reefs and being able to spot new ones is the mark of a good captain.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Korallenriffe[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_STONE_REEF</Tag>
+		<English>Rock Reef</English>
+		<French>Récifs rocheux</French>
+		<German>
+			<Text>Felsenriff</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Скалистый риф</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_STONE_REEF_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Rock reefs[COLOR_REVERT] can be of volcanic origin or forced up by the movement of tectonic plates. They sit just below the water and might be exposed at low tide.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Felsenriff[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_PEARL_REEF</Tag>
+		<English>Pearl Reef</English>
+		<French>Récif perlier</French>
+		<German>
+			<Text>Perlenriff</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Жемчужный риф</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_PEARL_REEF_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]pearl reef[COLOR_REVERT] is a rock reef with oysters clinging to it.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Perlenriff[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_KELP</Tag>
+		<English>Kelp</English>
+		<French>Varech</French>
+		<German>
+			<Text>Seetang</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Бурые водоросли</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_KELP_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Kelp[COLOR_REVERT] is both a barrier to navigation and a good source of Vitamin C.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seetang[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SEAGRASS</Tag>
+		<English>Seagrass</English>
+		<French>Sargasse</French>
+		<German>
+			<Text>Seegrass</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Водоросли</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SEAGRASS_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seagrass[COLOR_REVERT] indicates shallow water. Small boats can pass slowly through seagrass.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Seegrass[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_N</Tag>
+		<English>Northerly Current</English>
+		<French>Courant vers le nord</French>
+		<German>
+			<Text>Nord Strömung</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Северное течение</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_N_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]north ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nord Strömung[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_S</Tag>
+		<English>Southerly Current</English>
+		<French>Courant vers le sud</French>
+		<German>
+			<Text>Süd Strömung</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Южное течение</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_S_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]south ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süd Strömung[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_E</Tag>
+		<English>Easterly Current</English>
+		<French>Courant vers l'est</French>
+		<German>
+			<Text>Ost Strömung</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Восточное течение</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_E_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]east ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ost Strömung[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_W</Tag>
+		<English>Westerly Current</English>
+		<French>Courant vers l'Ouest</French>
+		<German>
+			<Text>West Strömung</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Западное течение</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_W_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]west ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]West Strömung[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_NE</Tag>
+		<English>Nor'East Current</English>
+		<French>Courant vers le Nord Est</French>
+		<German>
+			<Text>Nord-Ost Strömung</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Северо-восточное течение</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_NE_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]north-east ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nord-Ost Strömung[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_NW</Tag>
+		<English>Nor'West Current</English>
+		<French>Courant vers le Nord-Ouest</French>
+		<German>
+			<Text>Nord-West Strömung</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Северо-западное течение</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_NW_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]The [COLOR_HIGHLIGHT_TEXT]north-west ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Nord-West Strömung[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_SE</Tag>
+		<English>Sou'East Current</English>
+		<French>Courant vers le Sud-Est</French>
+		<German>
+			<Text>Süd-Ost Strömung</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Юго-восточное течение</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_SE_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]south-east ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süd-Ost Strömung[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_SW</Tag>
+		<English>Sou'West Current</English>
+		<French>Courant vers le Sud-Ouest</French>
+		<German>
+			<Text>Süd-Ost Strömung</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Юго-западное течение</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_ARROW_SW_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A[COLOR_HIGHLIGHT_TEXT]south-west ocean current[COLOR_REVERT] is indicated by a series of arrows.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Süd-West Strömung[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_LUSHGRASS</Tag>
+		<English>Lush Grass</English>
+		<French>Herbes hautes</French>
+		<German>
+			<Text>Saftiges Gras</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Сочная трава</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_LUSHGRASS_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Lush grass[COLOR_REVERT] is sought by ranchers and herders so their animals can grow fat.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Saftiges Gras[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_WILD_FLOWERS</Tag>
+		<English>Wild Flowers</English>
+		<French>Fleurs sauvages</French>
+		<German>
+			<Text>Wilde Blumen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Дикие цветы</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_WILD_FLOWERS_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wildflowers[COLOR_REVERT] are pretty, but in the colonial era their commercial value is insignificant.</English>
+		<French>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wildflowers[COLOR_REVERT] sont jolies, mais leur valeur commerciale à l'ère coloniale est dérisoire. Elles permettent de plus grandes possibilités d'élevages.</French>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Wilde Blumen[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_MEADOW</Tag>
+		<English>Hill Meadow</English>
+		<French>Bocage de collines</French>
+		<German>
+			<Text>Weidelhügel</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Горный луг</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_MEADOW_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meadows[COLOR_REVERT] are open areas with grass and shrubs, surrounded by trees.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Weidelhügel[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SHRUB</Tag>
+		<English>Shrubs</English>
+		<French>Buissons</French>
+		<German>
+			<Text>Sträuche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Russian>Непролазный кустарник</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_SHRUB_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Shrubs[COLOR_REVERT] are medium-sized plants, usually shorter than a human. They exist in great variety and can be found in all terrains and climates.</English>
+		<!--<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sträuche[COLOR_REVERT]tbd</German>-->
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_TORNADO</Tag>
+		<English>Tornado</English>
+		<French>Tornade</French>
+		<German>Tornado</German>
+		<Italian>Tornado</Italian>
+		<Spanish>Tornado</Spanish>
+		<Russian>Торнадо</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_TORNADO_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tornadoes[COLOR_REVERT] make a plot temporarily impassible to all units. They can spontaneously form on any land plot, and remain active for a few turns. During this period no resources can be won from that plot. Improvements and roads there are destroyed and, on adjacent plots, improvements and roads are endangered as well. Settlements and units will never be destroyed.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A tornado is a violent, rotating column of air touching down on the surface of the earth. Tornadoes are typically in the form of a visible condensation funnel, whose narrow end touches the earth in a swirling cloud of debris.</English>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Une tornade est un vortex (tourbillon) de vents extrêmement violents, prenant naissance à la base d'un nuage d'orage (cumulonimbus) lorsque les conditions de cisaillement des vents sont favorables dans la basse atmosphère. De très faibles tornades peuvent également se développer sous des nuages d'averses (cumulus bourgeonnant).</French>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Tornados[COLOR_REVERT] sind für alle Einheiten unpassierbar. Sie können sich spontan auf dem Land bilden und bleiben einige wenige Runden aktiv. Während dieser Zeit können auf dem Feld keine Rohstoffe gewonnen werden. Geländeverbesserungen und Straßen werden zerstört. Auch auf benachbarten Geländefeldern sind Geländeverbesserungen und Straßen in Gefahr. Siedlungen sind jedoch nicht gefährdet.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Tornado, auch Wind- oder Wasserhose genannt, ist ein kleinräumiger Luftwirbel in der Erdatmosphäre, der eine annähernd senkrechte Drehachse aufweist und im Zusammenhang mit konvektiver Bewölkung (Cumulus und Cumulonimbus) steht. Der Wirbel erstreckt sich hierbei durchgehend vom Boden bis zur Wolkenuntergrenze und ist von einem Staubwolke umgeben.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_VENT_DEF</Tag>
+		<English>Unfavourable wind</English>
+		<French>
+			<Text>Vent défavorable</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Ungünstige Winde</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Tempesta di vento:Tempesta di vento</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>ventarron:ventarron</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Неблагоприятный ветер</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_VENT_DEF_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Unfavourable winds[COLOR_REVERT] grant a defensive bonus to all ships on the tile, but they take more movement points to sail through. This movement penalty can be reduced by the [LINK=PROMOTION_MOBILITY1]Mobility I[\LINK] and [LINK=PROMOTION_SAILING3]Naval Warfare III[\LINK] promotions.[PARAGRAPH:1]Like other weather systems, unfavourable winds occur only on [LINK=TERRAIN_COEAN]ocean[\LINK] tiles, not on [LINK=TERRAIN_COAST]coast[\LINK] or [COLOR_HIGHLIGHT_TEXT]fresh water lake[COLOR_REVERT] tiles.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_WINDS_AND_STORMS]Winds and Storms[\LINK][PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1](navigation) Unfavourable winds delay a vessel sailing in its desired direction.</English>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1](navigation) Un vent défavorable empêche un équipage de se déplacer dans la direction qu'il souhaite.</French>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Ungünstige Winde[COLOR_REVERT] geben den darin befindlichen Schiffen zwar kleine Vorteile bei der Verteidigung, erfordern aber mehr Bewegungspunkte, um darin zu segeln. Dieser Effekt kann aber durch die Beförderungen [LINK=PROMOTION_MOBILITY1]Mobilität I[\LINK] und [LINK=PROMOTION_SAILING3]Seekrieg III[\LINK] gesenkt werden. Ungünstige Winde kommen nur auf dem offenen [LINK=TERRAIN_COEAN]Ozean[\LINK] vor. Für weitere Informationen siehe [LINK=CONCEPT_WINDS_AND_STORMS]Wind und Stürme[\LINK][PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Wind, der das Vorankommen eines Segelschiffs in einer bestimmten Richtung behindert.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_VENT_FAV</Tag>
+		<English>Favourable wind</English>
+		<French>
+			<Text>Vent favorable</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Günstige Brise</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Favourable wind:Favourable wind</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Favourable wind:Favourable wind</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Благоприятный ветер</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_VENT_FAV_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Favourable winds[COLOR_REVERT] impose a defensive penalty for any ships on that tile, but they allow vessels with the [LINK=PROMOTION_SEA_EXPLORER]Sea Explorer[\LINK] promotion to move at double speed. The defensive penalty can be reduced by the [LINK=PROMOTION_MOBILITY1]Mobility I[\LINK] promotions.[PARAGRAPH:1]Like other weather systems, favourable winds occur only on [LINK=TERRAIN_COEAN]ocean[\LINK] tiles, not on [LINK=TERRAIN_COAST]coast[\LINK] or [COLOR_HIGHLIGHT_TEXT]fresh water lake[COLOR_REVERT] tiles.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_WINDS_AND_STORMS]Winds and Storms[\LINK][PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1](navigation) A favourable wind is one which aids a craft in making progress in a desired direction; usually used in plural form in connection with sailing vessels; also called a fair wind.</English>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1](navigation) Un vent favorable aide un équipage à se déplacer dans la direction qu'il souhaite.</French>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Günstige Winde[COLOR_REVERT] erlauben es Schiffen mit der Beförderung [LINK=PROMOTION_SEA_EXPLORER]Entdecker der Meere[\LINK] mit doppelter Geschwindigkeit zu segeln. Allerdings senken sie auch die Verteidigungswerte des darin befindlichen Schiffes. Dieser Effekt kann aber durch die Beförderung [LINK=PROMOTION_MOBILITY1]Mobilität I[\LINK] gesenkt werden. Günstige Winde kommen nur auf dem offenen [LINK=TERRAIN_COEAN]Ozean[\LINK] vor. Für weitere Informationen siehe [LINK=CONCEPT_WINDS_AND_STORMS]Wind und Stürme[\LINK][PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Wind, der das Vorankommen eines Segelschiffs in einer bestimmten Richtung begünstigt.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_VOLCANO</Tag>
+		<English>Volcano</English>
+		<French>Volcan</French>
+		<German>Vulkan</German>
+		<Italian>Vulcano</Italian>
+		<Spanish>Volcán</Spanish>
+		<Russian>Вулкан</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_VOLCANO_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Volcanoes[COLOR_REVERT] are impassible to all units. They spontaneously erupt on plots with [COLOR_HIGHLIGHT_TEXT]peaks[COLOR_REVERT], and remain active for a few turns. During this period no resources can be extracted from that plot. Improvements and roads on that plot are destroyed and, on adjacent plots, improvements and roads are endangered. Settlements and units will never be destroyed.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]A volcano is a rupture in a planet's surface which allows hot molten rock, ash and gases to escape from below. Volcanic activity creates new land and can form mountains over a long enough time.</English>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Un [COLOR_HIGHLIGHT_TEXT]volcan[COLOR_REVERT] est un ensemble géologique terrestre, sous-marin ou extra-terrestre qui résulte de la montée d'un magma puis de l'éruption d'une partie de ce magma. Le magma provient de la fusion partielle du manteau et exceptionnellement de la croûte terrestre. L'éruption peut se manifester, de manière plus ou moins combinée, par des émissions de lave, par des émanations ou des explosions de gaz, par des projections de tephras, par des phénomènes hydromagmatiques, etc. Les laves refroidies et les retombées de tephras constituent des roches éruptives qui peuvent s'accumuler et atteindre des milliers de mètres d'épaisseur formant ainsi des montagnes ou des îles. Selon la nature des matériaux, le type d'éruption, la fréquence d'éruption et l'orogenèse, les volcans prennent des formes variées, la plus typique étant celle d'une montagne conique couronnée par un cratère ou une caldeira. La définition de ce qu'est un volcan a évolué au cours des derniers siècles en fonction de la connaissance que les géologues en avaient et de la représentation qu'ils pouvaient en donner.</French>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vulkane[COLOR_REVERT] sind für alle Einheiten unpassierbar. Sie brechen spontan auf Gebirgsgipfeln aus und bleiben für einige Runden aktiv. Während dieser Zeit können keine Rohstoffe auf dem Gelände gewonnen werden. Geländeverbesserungen und Straßen werden vernichtet. Selbst auf angrenzenden Geländefeldern sind Geländeverbesserungen und Straßen gefährdet.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Ein Vulkan ist eine geologische Struktur, die entsteht, wenn Magma (Gesteinsschmelze) bis an die Oberfläche eines Planeten (z.B. der Erde) aufsteigt. Alle Begleiterscheinungen, die mit dem Aufstieg und Austritt der glutflüssigen Gesteinsschmelze verbunden sind, bezeichnet man als Vulkanismus. Bei einem Vulkanausbruch werden nicht nur glutflüssige, sondern auch feste oder gasförmige Stoffe freigesetzt (Vulkanismus). Die meisten Vulkane haben annähernd die Form eines Kegels, dessen Hangneigung von der Zähigkeit der Lava abhängt. Die Gestalt kann aber auch unregelmäßig sein oder eine kuppelförmige Aufwölbung bilden.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_RIVER_FORD</Tag>
+		<English>River Ford</English>
+		<French>Passage à gué</French>
+		<German>Flussfurt</German>
+		<Russian>Речной брод</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_RIVER_FORD_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]River fords[COLOR_REVERT] allow all land units to make it across a [LINK=TERRAIN_LARGE_RIVERS]large river[\LINK] without being swept away. They form naturally from sediment deposited by the flowing river.</English>
+		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]passages à gué[COLOR_REVERT] permettent à toutes les unités de traverser des [LINK=TERRAIN_LARGE_RIVERS]grandes  rivières[\LINK] sans être emportés par le courant. Ils se forment naturellement avec le dépôt de sédiments par le cours de la rivière. </French>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flussfurten[COLOR_REVERT] erlauben es allen Landeinheiten, einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren. Sie enstehen auf natürliche Weise durch Ablagerungen von Sedimenten.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TERRAIN_FEATURE_ALLOWS_CROSSING_OF_LARGE_RIVERS</Tag>
+		<English>[ICON_BULLET]Allows all land units to cross [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK]</English>
+		<French>[ICON_BULLETPermet à toutes les unités terrestres de traverser les [LINK=TERRAIN_LARGE_RIVERS]grandes rivières[\LINK]</French>
+		<German>[ICON_BULLET]Erlaubt es allen Landeinheiten, einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren.</German>
+	</TEXT>
 </Civ4GameText>

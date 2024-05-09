@@ -51,7 +51,6 @@ private:
 	bool launchLoadUnitPopup(CvPopup* pPopup, CvPopupInfo &info);
 	bool launchLoadCargoPopup(CvPopup* pPopup, CvPopupInfo &info);
 	bool launchLeadUnitPopup(CvPopup* pPopup, CvPopupInfo &info);
-	bool launchMainMenuPopup(CvPopup* pPopup, CvPopupInfo &info);
 	bool launchConfirmMenu(CvPopup *pPopup, CvPopupInfo &info);
 	bool launchPythonScreen(CvPopup* pPopup, CvPopupInfo &info);
 	bool launchMovie(CvPopup* pPopup, CvPopupInfo &info);

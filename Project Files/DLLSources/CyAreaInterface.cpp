@@ -5,6 +5,8 @@
 // published python interface for CyArea
 //
 
+#include <boost/python/class.hpp>
+
 void CyAreaPythonInterface()
 {
 	OutputDebugString("Python Extension Module - CyAreaPythonInterface\n");

@@ -57,19 +57,13 @@ CyPlot* CyUnit::getPathEndTurnPlot()
 	return m_pUnit ? new CyPlot(m_pUnit->getPathEndTurnPlot()) : false;
 }
 
-// TAC - AI Improved Naval AI - koma13 - START
-/*
 bool CyUnit::generatePath(CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns)
 {
-	return m_pUnit ? m_pUnit->generatePath(pToPlot->getPlot(), iFlags, bReuse, piPathTurns) : false;
+	// Force pathfinder calls from Python to use a temporary pathfinder instance
+	// This change ensures that cached data does not inadvertently get shared between player and AI,
+	// which could potentially lead to OOS issues
+	return m_pUnit ? m_pUnit->generatePath(pToPlot->getPlot(), iFlags, bReuse, piPathTurns, -1, /*bUseTempFinder*/true, /*bCalledFromPython*/true) : false;
 }
-*/
-
-bool CyUnit::generatePath(CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns)
-{
-	return m_pUnit ? m_pUnit->generatePath(pToPlot->getPlot(), iFlags, bReuse, piPathTurns) : false;
-}
-// TAC - AI Improved Naval AI - koma13 - END
 
 bool CyUnit::canEnterTerritory(int /*PlayerTypes*/ ePlayer, bool bIgnoreRightOfPassage)
 {

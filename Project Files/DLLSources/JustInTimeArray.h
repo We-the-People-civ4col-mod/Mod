@@ -56,7 +56,7 @@ public:
 	{
 		return m_tArray != NULL;
 	}
-	
+
 	inline int length() const
 	{
 		return m_iLength;
@@ -132,7 +132,7 @@ public:
 	// bEnable can be used like "uiFlag > x" to make oneline conditional loads
 	// pNormalArray can be used to make read/write take place in an array other than the JIT array, but it must be allocated to the same length as the JIT array
 	// this is normally not used, but it helps when making savegames resistant to xml changes while keeping vanilla code as untouched as possible
-	// TODO remove this when cleaning up savegame code 
+	// TODO remove this when cleaning up savegame code
 	void read (FDataStreamBase* pStream, bool bEnable);
 	void write(FDataStreamBase* pStream, bool bEnable);
 	void Read(FDataStreamBase* pStream);
@@ -174,8 +174,26 @@ private:
 
 public:
 
-	JustInTimeArray2D(JITarrayTypes eType, JITarrayTypes eSubType, T eDefault = (T)0);
-	JustInTimeArray2D(int iLength, JITarrayTypes eSubType, T eDefault = (T)0);
+	JustInTimeArray2D(JITarrayTypes eType, JITarrayTypes eSubType, T eDefault = (T)0)
+		: m_tArray(nullptr)
+		, m_iType(eType)
+		, m_iSubType(eSubType)
+		, m_iLength(getArrayLength(eType))
+		, m_eDefault(eDefault)
+	{
+		FAssert(m_iLength > 1);
+		m_iArraysInUse = 0;
+	}
+	JustInTimeArray2D(int iLength, JITarrayTypes eSubType, T eDefault = (T)0)
+		: m_tArray(nullptr)
+		, m_iType(JIT_ARRAY_NO_TYPE)
+		, m_iSubType(eSubType)
+		, m_iLength(iLength)
+		, m_eDefault(eDefault)
+	{
+		FAssert(m_iLength > 1);
+		m_iArraysInUse = 0;
+	}
 	~JustInTimeArray2D();
 
 	// reset all arrays

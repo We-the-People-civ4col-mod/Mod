@@ -1,5 +1,9 @@
 #include "CvGameCoreDLL.h"
 #include "CyInfos.h"
+
+#include <boost/python/class.hpp>
+namespace python = boost::python;
+
 //
 // Python interface for info classes (formerly structs)
 // These are simple enough to be exposed directly - no wrappers

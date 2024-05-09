@@ -242,6 +242,7 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 		case CitySave_WallOverride: return "CitySave_WallOverride";
 		case CitySave_PopulationRankValid: return "CitySave_PopulationRankValid";
 
+		case CitySave_HasHurried: return "CitySave_HasHurried";
 		case CitySave_Owner: return "CitySave_Owner";
 		case CitySave_PreviousOwner: return "CitySave_PreviousOwner";
 		case CitySave_OriginalOwner: return "CitySave_OriginalOwner";

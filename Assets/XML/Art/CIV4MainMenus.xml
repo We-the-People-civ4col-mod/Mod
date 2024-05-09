@@ -5,16 +5,16 @@
 <!-- -->
 <!-- Main Menu Infos -->
 <Civ4MainMenus xmlns="x-schema:CIV4ArtDefinesSchema.xml">
-    <MainMenus>
-        <MainMenu>
-            <Type>MAIN_MENU_COLONIZATION</Type>
-            <Description>TXT_KEY_MAIN_MENU_COLONIZATION</Description>
-            <Scene>MAINMENU_SCENE</Scene>
-            <Soundtrack>AS2D_OPENING_MENU</Soundtrack>
-            <LoadingScreens>
-                <Loading>MAINMENU_LOAD_BTS</Loading>
-            </LoadingScreens>
-            <LoadingSlideshow>MAINMENU_SLIDESHOW_LOAD_BTS</LoadingSlideshow>
-        </MainMenu>
-    </MainMenus>
+	<MainMenus>
+		<MainMenu>
+			<Type>MAIN_MENU_COLONIZATION</Type>
+			<Description>TXT_KEY_MAIN_MENU_COLONIZATION</Description>
+			<Scene>MAINMENU_SCENE</Scene>
+			<Soundtrack>AS2D_OPENING_MENU</Soundtrack>
+			<LoadingScreens>
+				<Loading>MAINMENU_LOAD_BTS</Loading>
+			</LoadingScreens>
+			<LoadingSlideshow>MAINMENU_SLIDESHOW_LOAD_BTS</LoadingSlideshow>
+		</MainMenu>
+	</MainMenus>
 </Civ4MainMenus>

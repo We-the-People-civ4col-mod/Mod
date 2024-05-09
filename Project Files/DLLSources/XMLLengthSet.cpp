@@ -3,6 +3,7 @@
 
 #include"xmlFiles.h"
 #include "StartupErrorChecking.h"
+#include "ThreadOverview.h"
 
 // small class where the constructor reads XML lengths
 // this way xml reading can take place prior to calling the CvGlobals constructor
@@ -48,7 +49,7 @@ static int getNumEntries(const std::string& path, const char* file)
 static std::string GetCurrentDirectory(bool bLoadDLLPath)
 {
 	char buffer[MAX_PATH];
-	GetModuleFileNameA(bLoadDLLPath ? GetModuleHandle(_T("CvGameCoreDLL.dll")) : NULL, buffer, MAX_PATH);
+	GetModuleFileNameA(bLoadDLLPath ? GetModuleHandle("CvGameCoreDLL.dll") : NULL, buffer, MAX_PATH);
 	std::string::size_type pos = std::string(buffer).find_last_of("\\/");
 
 	return std::string(buffer).substr(0, pos);
@@ -70,6 +71,7 @@ loadXML MyXMLloader;
 
 // CvGlobals constructor needs to run after the loadXML as it requires the global xml lengths to be set up
 CvGlobals gGlobals;
+ThreadOverviewClass ThreadOverview;
 
 void setupVARINFO();
 
@@ -77,7 +79,7 @@ void setupVARINFO();
 loadXML::loadXML()
 {
 	const std::string basePath = GetCurrentDirectory(true);
-	
+
 	setXmlLengthsAuto(basePath);
 	setupVARINFO();
 }

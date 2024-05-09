@@ -33,6 +33,13 @@ class CvCacheObject;
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 class CvXMLLoadUtility
 {
+	enum XMLReadStage
+	{
+		XML_STAGE_BASIC,
+		XML_STAGE_FULL,
+		XML_STAGE_POST_SETUP,
+	};
+
 	struct GameTextContainer
 	{
 		CvWString m_Text;
@@ -55,7 +62,7 @@ class CvXMLLoadUtility
 
 	class GameTextList
 	{
-		friend GameTextList;
+		friend class GameTextList;
 
 	public:
 		GameTextContainer* get(std::string);
@@ -63,7 +70,7 @@ class CvXMLLoadUtility
 		GameTextStringKey& init(std::string);
 
 
-		bool readString(const TCHAR* szTag, GameTextList& FStringListCurrentLanguage, GameTextContainer& resultContainer);
+		bool readString(char const* szTag, GameTextList& FStringListCurrentLanguage, GameTextContainer& resultContainer);
 		void add(std::string, const GameTextContainer& data);
 		void setAllStrings(GameTextList& FStringListCurrentLanguage, stdext::hash_map< std::string, bool >& StringList);
 
@@ -98,7 +105,7 @@ public:
 	DllExport bool LoadGraphicOptions();
 
 	// read the global defines from a specific file
-	bool ReadGlobalDefines(const TCHAR* szXMLFileName, CvCacheObject* cache);
+	bool ReadGlobalDefines(char const* szXMLFileName, CvCacheObject* cache);
 	// loads globaldefines.xml and calls various other functions to load relevant global variables
 	DllExport bool SetGlobalDefines();
 	// loads globaltypes.xml and calls various other functions to load relevant global variables
@@ -186,21 +193,21 @@ public:
 	// overloaded function that gets the child value of the tag with szName if there is only one child
 	// value of that name
 	void MapChildren();	// call this before GetChildXMLValByName to use fast searching
-	bool GetChildXmlValByName(std::string& pszVal, const TCHAR* szName, char* pszDefault = NULL);
-	bool GetChildXmlValByName(std::wstring& pszVal, const TCHAR* szName, wchar* pszDefault = NULL);
+	bool GetChildXmlValByName(std::string& pszVal, char const* szName, char* pszDefault = NULL);
+	bool GetChildXmlValByName(std::wstring& pszVal, char const* szName, wchar* pszDefault = NULL);
 	// overloaded function that gets the child value of the tag with szName if there is only one child
 	// value of that name
-	bool GetChildXmlValByName(char* pszVal, const TCHAR* szName, char* pszDefault = NULL);
-	bool GetChildXmlValByName(wchar* pszVal, const TCHAR* szName, wchar* pszDefault = NULL);
+	bool GetChildXmlValByName(char* pszVal, char const* szName, char* pszDefault = NULL);
+	bool GetChildXmlValByName(wchar* pszVal, char const* szName, wchar* pszDefault = NULL);
 	// overloaded function that gets the child value of the tag with szName if there is only one child
 	// value of that name
-	bool GetChildXmlValByName(int* piVal, const TCHAR* szName, int iDefault = 0);
+	bool GetChildXmlValByName(int* piVal, char const* szName, int iDefault = 0);
 	// overloaded function that gets the child value of the tag with szName if there is only one child
 	// value of that name
-	bool GetChildXmlValByName(float* pfVal, const TCHAR* szName, float fDefault = 0.0f);
+	bool GetChildXmlValByName(float* pfVal, char const* szName, float fDefault = 0.0f);
 	// overloaded function that gets the child value of the tag with szName if there is only one child
 	// value of that name
-	bool GetChildXmlValByName(bool* pbVal, const TCHAR* szName, bool bDefault = false);
+	bool GetChildXmlValByName(bool* pbVal, char const* szName, bool bDefault = false);
 
 	// allocate and set the feature struct variables for the CvBuildInfo class
 	void SetFeatureStruct(int** ppiFeatureTime, std::vector<std::vector<int> >& aaiFeatureYield, bool** ppbFeatureRemove);
@@ -212,7 +219,7 @@ public:
 
 	// check through the pszList parameter for the pszVal and returns the location a match
 	// is found if one is found
-	static int FindInInfoClass(const TCHAR* pszVal, bool hideAssert = false);
+	static int FindInInfoClass(char const* pszVal, bool hideAssert = false);
 
 	template <class T>
 	void InitList(T **ppList, int iListLen, T val);
@@ -229,13 +236,13 @@ public:
 
 	// allocate and initialize a list from a tag pair in the xml
 	template <class T>
-	void SetVariableListTagPair(T** ppList, const TCHAR* szRootTagName, int iInfoBaseLength, T kDefaultListVal);
+	void SetVariableListTagPair(T** ppList, char const* szRootTagName, int iInfoBaseLength, T kDefaultListVal);
 
 	// allocate and initialize a list from a tag pair in the xml
-	void SetVariableListTagPairForAudioScripts(int **ppiList, const TCHAR* szRootTagName, int iInfoBaseLength, int iDefaultListVal = -1);
+	void SetVariableListTagPairForAudioScripts(int **ppiList, char const* szRootTagName, int iInfoBaseLength, int iDefaultListVal = -1);
 
 	// create a hot key from a description
-	CvWString CreateHotKeyFromDescription(const TCHAR* pszHotKey, bool bShift = false, bool bAlt = false, bool bCtrl = false);
+	CvWString CreateHotKeyFromDescription(char const* pszHotKey, bool bShift = false, bool bAlt = false, bool bCtrl = false);
 
 	// set the variable to a default and load it from the xml if there are any children
 	bool SetAndLoadVar(int** ppiVar, int iDefault=0);
@@ -245,14 +252,14 @@ public:
 	bool SetStringList(CvString** ppszStringArray, int* piSize);
 
 	// get the integer value for the keyboard mapping of the hotkey if it exists
-	int GetHotKeyInt(const TCHAR* pszHotKeyVal);
+	int GetHotKeyInt(char const* pszHotKeyVal);
 
 	// loads an xml file into the FXml variable.  The szFilename parameter has
 	// the m_szXmlPath member variable pre-pended to it to form the full pathname
-	bool LoadCivXml(FXml* pFXml, const TCHAR* szFilename);
+	bool LoadCivXml(FXml* pFXml, char const* szFilename);
 
 	// read a tag and store the int value, either directly as an int or as a type string, which is converted to an int
-	// xml schema type must be set to string 
+	// xml schema type must be set to string
 	bool GetIntOrType(const char* szType, int& iVar, const char* szTagName, bool bMandatory = true);
 
 	// modded enum read function
@@ -300,12 +307,12 @@ private:
 	template <class T>
 	void SetGlobalClassInfo(std::vector<T*>& aInfos, const char* szTagName);
 	template <class T>
-	void LoadGlobalClassInfo(std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (const TCHAR*));
+	void LoadGlobalClassInfo(std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (char const*));
 	template <class IndexType, class T, int DEFAULT>
 	void LoadGlobalClassInfo(bool bFirst, EnumMap<IndexType, T, DEFAULT>& aInfos);
 
 	void SetDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfos, const char* szTagName);
-	void LoadDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (const TCHAR*));
+	void LoadDiplomacyInfo(std::vector<CvDiplomacyInfo*>& DiploInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (char const*));
 
 	//
 	// special cases of set class info which don't use the template because of extra code they have
@@ -315,7 +322,7 @@ private:
 	void SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName, GameTextList& FStringListEnglish, GameTextList& FStringListCurrentLanguage, stdext::hash_map< std::string, bool >& StringList);
 
 	// create a keyboard string from a KB code, Delete would be returned for KB_DELETE
-	CvWString CreateKeyStringFromKBCode(const TCHAR* pszHotKey);
+	CvWString CreateKeyStringFromKBCode(char const* pszHotKey);
 
 	//
 	// template which can handle and sort all hotkey info classes
@@ -330,9 +337,9 @@ private:
 
 	/// XML type preloading - start - Nightinggale
 	template <class T>
-	void PreLoadGlobalClassInfo(std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, bool bTwoPass, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (const TCHAR*) = NULL);
+	void PreLoadGlobalClassInfo(XMLReadStage eStage, std::vector<T*>& aInfos, const char* szFileRoot, const char* szFileDirectory, const char* szXmlPath, bool bTwoPass, CvCacheObject* (CvDLLUtilityIFaceBase::*pArgFunction) (char const*) = NULL);
 	void PreUpdateProgressCB(const char* szMessage);
-	void readXMLfiles(bool bFirst);
+	void readXMLfiles(XMLReadStage eStage);
 	/// XML type preloading - end - Nightinggale
 };
 
@@ -353,13 +360,13 @@ void CvXMLLoadUtility::InitList(T **ppList, int iListLen, T val)
 
 //------------------------------------------------------------------------------------------------------
 //
-//  FUNCTION:   SetVariableListTagPair(T** ppList, const TCHAR* szRootTagName, int iInfoBaseLength, T& kDefaultListVal)
+//  FUNCTION:   SetVariableListTagPair(T** ppList, char const* szRootTagName, int iInfoBaseLength, T& kDefaultListVal)
 //
 //  PURPOSE :   allocate and initialize a list from a tag pair in the xml
 //
 //------------------------------------------------------------------------------------------------------
 template <class T>
-void CvXMLLoadUtility::SetVariableListTagPair(T** ppList, const TCHAR* szRootTagName, int iInfoBaseLength, T kDefaultListVal)
+void CvXMLLoadUtility::SetVariableListTagPair(T** ppList, char const* szRootTagName, int iInfoBaseLength, T kDefaultListVal)
 {
 	if (iInfoBaseLength < 0)
 	{
@@ -386,7 +393,7 @@ void CvXMLLoadUtility::SetVariableListTagPair(T** ppList, const TCHAR* szRootTag
 				}
 				if (gDLL->getXMLIFace()->SetToChild(m_pFXml))
 				{
-					TCHAR szTextVal[256];
+					char szTextVal[256];
 
 					for (int i = 0; i < iNumSibs; i++)
 					{

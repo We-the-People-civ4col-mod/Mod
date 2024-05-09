@@ -2371,7 +2371,9 @@ void XMLPrinter::Print( const char* format, ... )
 void XMLPrinter::PrintSpace( int depth )
 {
     for( int i=0; i<depth; ++i ) {
-        Print( "    " );
+        // WTP change space indentation to tabs
+		//Print( "    " );
+		Print( "\t" );
     }
 }
 

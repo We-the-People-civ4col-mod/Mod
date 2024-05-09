@@ -1995,6 +1995,13 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>SND_CITYCRIME</SoundID>
+			<Filename>Sounds/CityCrime</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>SND_CITYRAZE</SoundID>
 			<Filename>Sounds/CityCapture</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>
@@ -4461,6 +4468,13 @@
 		<SoundData>
 			<SoundID>SND_GATOR_FIDGET</SoundID>
 			<Filename>Sounds/Units/gator_fidget</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
+			<SoundID>SND_MOD_SCIENCE_HMM_VOX</SoundID>
+			<Filename>Sounds/Units/ModScienceHmmVox</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>
 			<bIsCompressed>1</bIsCompressed>
 			<bInGeneric>1</bInGeneric>

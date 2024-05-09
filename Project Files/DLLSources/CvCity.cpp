@@ -91,7 +91,7 @@ void CvCity::init(int iID, PlayerTypes eOwner, Coordinates initCoord, bool bBump
 	{
 		if (gDLL->getChtLvl() > 0)
 		{
-			TCHAR szOut[1024];
+			char szOut[1024];
 			sprintf(szOut, "Player %d City %d built at %d:%d\n", eOwner, iID, initCoord.x(), initCoord.y());
 			gDLL->messageControlLog(szOut);
 		}
@@ -423,8 +423,7 @@ void CvCity::kill()
 		CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 		while (pUnitNode)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL && pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
 			{
@@ -681,7 +680,7 @@ void CvCity::doTurn()
 
 			for (unsigned int i = 0; i < stuckUnits.size(); ++i)
 			{
-				removePopulationUnit(stuckUnits[i], false, eDefaultProfession);
+				removePopulationUnit(CREATE_ASSERT_DATA, stuckUnits[i], false, eDefaultProfession);
 			}
 		}
 	}
@@ -964,6 +963,7 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		break;
 	// auto traderoute - end - Nightinggale
 
+
 // bobisback import changes
 	case TASK_IMPORT_CHANGES:
 		if(bOption)
@@ -971,6 +971,7 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		if(bAlt)
 			handleConstructionImport();
 		break;
+
 		
 	case TASK_IMPORT_CHANGES_GRP2:
 		if(bOption)
@@ -978,7 +979,7 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		if(bAlt)
 			handleLivestockImport();
 		break;
-		
+
 	case TASK_CLEAR_SPECIALTY:
 		{
 			CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).getUnit(iData1);
@@ -3596,16 +3597,16 @@ int CvCity::getFood() const
 }
 
 
-void CvCity::setFood(int iNewValue)
+void CvCity::setFood(int iNewValue, bool bAllowNegative)
 {
 	setYieldStored(YIELD_FOOD, iNewValue);
-	FAssert(getYieldStored(YIELD_FOOD) >= 0);
+	FAssert(bAllowNegative || getYieldStored(YIELD_FOOD) >= 0);
 }
 
 
-void CvCity::changeFood(int iChange)
+void CvCity::changeFood(int iChange, bool bAllowNegative)
 {
-	setFood(getFood() + iChange);
+	setFood(getFood() + iChange, bAllowNegative);
 }
 
 
@@ -6101,7 +6102,7 @@ void CvCity::ejectToTransport(int iUnitId, int iTransportId)
 	{
 		if (pUnit->canLoadUnit(pTransport, pUnit->plot(), true))
 		{
-			if (removePopulationUnit(pUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
+			if (removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
 			{
 				pUnit->loadUnit(pTransport);
 			}
@@ -7128,7 +7129,7 @@ void CvCity::doGrowth()
 
 	iDiff = foodDifference();
 
-	changeFood(iDiff);
+	changeFood(iDiff, true);
 	changeFoodKept(iDiff);
 
 	setFoodKept(range(getFoodKept(), 0, ((growthThreshold() * getMaxFoodKeptPercent()) / 100)));
@@ -7180,7 +7181,7 @@ void CvCity::doGrowth()
 	else if (getFood() < 0)
 	{
 		// Food is reset to 0
-		changeFood(-(getFood()));
+		setFood(0);
 
 		// Population is larger 1, we can eject citizens
 		if (getPopulation() > 1)
@@ -8049,7 +8050,7 @@ static int natGetDeterministicRandom(int iMin, int iMax, int iSeedX, int iSeedY)
 	return (rand() % (iMax - iMin)) + iMin;
 }
 
-void CvCity::getVisibleEffects(ZoomLevelTypes eCurZoom, std::vector<const TCHAR*>& kEffectNames) const
+void CvCity::getVisibleEffects(ZoomLevelTypes eCurZoom, std::vector<char const*>& kEffectNames) const
 {
 	if (isOccupation() && isVisible(getTeam(), false))
 	{
@@ -8109,7 +8110,7 @@ void CvCity::getCityBillboardSizeIconColors(NiColorA& kDotColor, NiColorA& kText
 	}
 }
 
-const TCHAR* CvCity::getCityBillboardProductionIcon() const
+char const* CvCity::getCityBillboardProductionIcon() const
 {
 	if (isNative() && getOwnerINLINE() != GC.getGameINLINE().getActivePlayer() && AI_getDesiredYield() != NO_YIELD)
 	{
@@ -8187,8 +8188,7 @@ bool CvCity::getCityBillboardBottomBarValues(float& fStored, float& fRate, float
 		CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 		while (pUnitNode != NULL)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL && pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
 			{
@@ -8959,18 +8959,18 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 	gDLL->getEventReporterIFace()->populationJoined(getOwnerINLINE(), getID(), pTransferUnit->getID());
 }
 
-bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes eProfession, bool bConquest)
+bool CvCity::removePopulationUnit(AssertCallerData assertData, CvUnit* pUnit, bool bDelete, ProfessionTypes eProfession, bool bConquest)
 {
 	int iUnitIndex = getPopulationUnitIndex(*pUnit);
 	if(iUnitIndex < 0)
 	{
-		FAssertMsg(false, "Could not find unit in city");
+		FAssertMsgWithCaller(assertData, false, "Could not find unit in city");
 		return false;
 	}
 
 	if (!pUnit->canHaveProfession(eProfession, false))
 	{
-		FAssertMsg(false, "Illegal Profession");
+		FAssertMsgWithCaller(assertData, false, "Illegal Profession");
 		pUnit->setProfession(NO_PROFESSION);
 		return false;
 	}
@@ -8986,7 +8986,7 @@ bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes e
 
 	int iOldPopulation = getPopulation();
 
-	FAssert(pUnit->getOwnerINLINE() == getOwnerINLINE());
+	FAssertWithCaller(assertData, pUnit->getOwnerINLINE() == getOwnerINLINE());
 	m_aPopulationUnits.erase(std::remove(m_aPopulationUnits.begin(), m_aPopulationUnits.end(), pUnit));
 	area()->changePower(getOwnerINLINE(), -pUnit->getPower());
 	setYieldRateDirty();
@@ -9035,7 +9035,7 @@ CvUnit* CvCity::removeUnitType(UnitTypes eUnit, ProfessionTypes eProfession)
 
 		if (pUnit->getUnitType() == eUnit)
 		{
-			if (removePopulationUnit(pUnit, false, eProfession))
+			if (removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, eProfession))
 			{
 				return pUnit;
 			}
@@ -9059,7 +9059,7 @@ void CvCity::removeNonCityPopulationUnits()
 			if (NO_PROFESSION != eUnitProfession && !GC.getProfessionInfo(eUnitProfession).isCitizen())
 			{
 				//unit list changes, so break and repeat
-				removePopulationUnit(pUnit, false, eUnitProfession);
+				removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, eUnitProfession);
 				bDone = false;
 				break;
 			}
@@ -9225,8 +9225,7 @@ void CvCity::ejectTeachUnits()
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 	while (pUnitNode)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pPlot->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_LIVE_AMONG_NATIVES)
 		{
@@ -10165,7 +10164,7 @@ void CvCity::doCityCrime()
 
 		// add message
 		CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_GOLD_STOLEN_BECAUSE_CRIME", getNameKey());
-		gDLL->UI().addPlayerMessage(eOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+		gDLL->UI().addPlayerMessage(eOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CITYCRIME", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_SHOW_CTIYCRIME")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 
 	}
 
@@ -11544,8 +11543,7 @@ UnitClassTypes CvCity::bestGrowthUnitClass()
 	CLLNode<IDInfo>* pUnitNode = pCityCenterPlot->headUnitNode();
 	while (pUnitNode)
 	{
-		CvUnit* pLoopUnit2 = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit2 = plot()->getUnitNodeLoop(pUnitNode);
 
 		// however, we only consider Units that belong to the same Player as the City
 		if (pLoopUnit2 != NULL && pLoopUnit2->getOwnerINLINE() == getOwnerINLINE())
@@ -11806,7 +11804,7 @@ CvUnit* CvCity::ejectBestDefender(CvUnit* pCurrentBest, CvUnit* pAttacker)
 	{
 		if (pDefender != pCurrentBest)
 		{
-			if (!removePopulationUnit(pDefender, false, eProfession))
+			if (!removePopulationUnit(CREATE_ASSERT_DATA, pDefender, false, eProfession))
 			{
 				return pCurrentBest;
 			}
@@ -11938,7 +11936,7 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 
 	pUnit->setYieldStored(0);
 	// perform the conversion
-	if (!removePopulationUnit(pUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
+	if (!removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
 	{
 		return false;
 	}
@@ -12932,8 +12930,6 @@ void CvCity::handleDemandedImport()
 	}
 }
 
-
-
 void CvCity::doAutoExport(YieldTypes eYield)
 {
 	if (isAutoExport(eYield))
@@ -13110,7 +13106,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	OOS_LOG_3("Learning by doing", CvString(getName()).c_str(), getTypeStr(expertUnitType));
 	CvUnit* expertUnit = GET_PLAYER(getOwnerINLINE()).initUnit(expertUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
 	FAssert(expertUnit != NULL);
-	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	bool remove = removePopulationUnit(CREATE_ASSERT_DATA, convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	FAssertMsg(remove, "Failed to remove unit!");
 	(void)remove; // Silence cppcheck
 	expertUnit->convert(convUnit, true);
@@ -13222,7 +13218,7 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	OOS_LOG_3("Learning by doing (free)", CvString(getName()).c_str(), getTypeStr(GeneratedUnitType));
 	CvUnit* GeneratedUnit = GET_PLAYER(getOwnerINLINE()).initUnit(GeneratedUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
 	FAssert(GeneratedUnit != NULL);
-	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	bool remove = removePopulationUnit(CREATE_ASSERT_DATA, convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	FAssertMsg(remove, "Failed to remove unit!");
 	(void)remove; // Silence cppcheck
 	GeneratedUnit->convert(convUnit, true);
@@ -13289,13 +13285,13 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 		return false;
 	}
 
-	const TCHAR* buttonStringForMessage = convUnit->getButton();
+	char const* buttonStringForMessage = convUnit->getButton();
 
 	// with true, we greate Unit with Default AI, otherwise it is AI_Flee
 	createFleeingUnit(convUnit->getUnitType(), false);
 
 	//Unit is then simply destroyed
-	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	bool remove = removePopulationUnit(CREATE_ASSERT_DATA, convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	FAssertMsg(remove, "Failed to remove unit!");
 	(void)remove; // Silence cppcheck
 	convUnit->kill(false);
@@ -13388,15 +13384,15 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 	// get Button of the Unit from UnitType for message
 	// Test um Bug zu finden
 	// CvUnit* GeneratedUnit = GET_PLAYER(getOwnerINLINE()).getUnit(GeneratedUnitType);
-	// const TCHAR* buttonStringForMessage = GeneratedUnit->getButton();
-	const TCHAR* buttonStringForMessage = convUnit->getButton();
+	// char const* buttonStringForMessage = GeneratedUnit->getButton();
+	char const* buttonStringForMessage = convUnit->getButton();
 
 	// with true, we greate Unit with Default AI, otherwise it is AI_Flee
 	// Test um Bug zu finden
 	createFleeingUnit(GeneratedUnitType, true);
 
 	//Unit is then simply destroyed
-	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	bool remove = removePopulationUnit(CREATE_ASSERT_DATA, convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	FAssertMsg(remove, "Failed to remove unit!");
 	(void)remove; // Silence cppcheck
 	convUnit->kill(false);
@@ -13554,8 +13550,7 @@ void CvCity::doExtraCityDefenseAttacks()
 
 		while (pUnitNode && !alreadyBombarded)
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL)
 			{
@@ -13579,8 +13574,7 @@ void CvCity::doExtraCityDefenseAttacks()
 								pUnitNode2 = pAdjacentPlot->headUnitNode();
 								while (pUnitNode2)
 								{
-									pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-									pUnitNode2 = pAdjacentPlot->nextUnitNode(pUnitNode2);
+									pLoopUnit2 = pAdjacentPlot->getUnitNodeLoop(pUnitNode2);
 
 									if (pLoopUnit != NULL && (getTeam() != pLoopUnit2->getTeam() && (GET_TEAM(getTeam()).isAtWar(pLoopUnit2->getTeam()) || pLoopUnit2->getUnitInfo().isHiddenNationality()) && !pLoopUnit2->isCargo()))
 									{
@@ -13768,8 +13762,7 @@ void CvCity::doExtraCityDefenseAttacks()
 
 		while (pUnitNode && !alreadyFired)
 		{
-			pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = plot()->nextUnitNode(pUnitNode);
+			pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit != NULL)
 			{
@@ -13798,8 +13791,7 @@ void CvCity::doExtraCityDefenseAttacks()
 								pUnitNode2 = pAdjacentPlot->headUnitNode();
 								while (pUnitNode2)
 								{
-									pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-									pUnitNode2 = pAdjacentPlot->nextUnitNode(pUnitNode2);
+									pLoopUnit2 = pAdjacentPlot->getUnitNodeLoop(pUnitNode2);
 
 									if (pLoopUnit2 != NULL && getTeam() != pLoopUnit2->getTeam() && (GET_TEAM(getTeam()).isAtWar(pLoopUnit2->getTeam()) || pLoopUnit2->getUnitInfo().isHiddenNationality()) && !pLoopUnit2->isCargo())
 									{
@@ -13982,8 +13974,7 @@ void CvCity::getYieldDemands(YieldCargoArray<int> &aYields) const
 	CLLNode<IDInfo>* pUnitNode = pCityCenterPlot->headUnitNode();
 	while (pUnitNode)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		// however, we only consider Units that belong to the same Player as the City
 		if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
@@ -14258,8 +14249,7 @@ int CvCity::getSlaveRevoltReductionBonus() const
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 		{
@@ -14298,8 +14288,7 @@ void CvCity::updateSlaveWorkerProductionBonus(int iBonus)
 	CLLNode<IDInfo>* pUnitNode = plot()->headUnitNode();
 	while (pUnitNode)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = plot()->nextUnitNode(pUnitNode);
+		CvUnit* pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 		{
@@ -14432,8 +14421,7 @@ bool CvCity::isOwnPlayerUnitOnAdjacentPlotOfCity(int /*UnitClassTypes*/ iIndex) 
 				CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
 				while (pUnitNode)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = pAdjacentPlot->getUnitNodeLoop(pUnitNode);
 
 					// check for owner and UnitType
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eOwnPlayerType && pLoopUnit->getUnitType() == eUnit)
@@ -14471,8 +14459,7 @@ bool CvCity::isBarbarianUnitOnAdjacentPlotOfCity(int /*UnitClassTypes*/ iIndex) 
 				CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
 				while (pUnitNode)
 				{
-					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-					pUnitNode = pAdjacentPlot->nextUnitNode(pUnitNode);
+					CvUnit* pLoopUnit = pAdjacentPlot->getUnitNodeLoop(pUnitNode);
 
 					// check for owner and UnitType
 					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == eBarbarianPlayerType && pLoopUnit->getUnitType() == eUnit)

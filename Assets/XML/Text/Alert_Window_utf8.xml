@@ -17,100 +17,100 @@ In general, this means arguments are named %d (number) and %s (string). No numbe
 
 
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_MOD_IN_DOCUMENTS_HEADER</Tag>
-        <English>Invalid Mod install location</English>
-        <French>Emplacement d'installation du mod non valide</French>
-        <Russian>Некорректное место расположения мода</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_MOD_IN_DOCUMENTS</Tag>
-        <English>This mod doesn't work correctly when installed in My Documents.
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_MOD_IN_DOCUMENTS_HEADER</Tag>
+		<English>Invalid Mod install location</English>
+		<French>Emplacement d'installation du mod non valide</French>
+		<Russian>Некорректное место расположения мода</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_MOD_IN_DOCUMENTS</Tag>
+		<English>This mod doesn't work correctly when installed in My Documents.
 Please move it to Mods in the game directory.
 See Readme for more details.</English>
-        <French>Ce mod ne fonctionne pas correctement quand il est installé dans le dossier « Mes documents ».
+		<French>Ce mod ne fonctionne pas correctement quand il est installé dans le dossier « Mes documents ».
 Veuillez le déplacer dans le dossier « Mods » du programme du jeu.
 Regardez le fichier Readme pour plus de détails.</French>
-        <Russian>Этот мод работает некорректно при установке в папке "Мои документы".
+		<Russian>Этот мод работает некорректно при установке в папке "Мои документы".
 Пожалуйста, переместите его в папку Mods в папке с игрой.
 Для более подробной информации прочитайте Readme.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_CONFIGURATION_ERROR_HEADER</Tag>
-        <English>Configuration error</English>
-        <French>Erreur de configuration</French>
-        <Russian>Ошибка конфигурации</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_CONFIGURATION_ERROR</Tag>
-        <English>The game tried to set AllowPublicMaps to 0 in %s. Something went wrong while doing so and now it's possible that incompatible public maps can be selected ingame. Please manually open this file and set AllowPublicMaps = 0 Restart the game once this is done.</English>
-        <French>Le jeu a essayé de placer AllowPublicMaps à 0 dans %s. Cette opération a échoué et il est maintenant possible de sélectionner en jeu des cartes non compatibles. Veuillez ouvrir manuellement ce fichier et passer AllowPublicMaps = 0. Redémarrez le jeu après que c'est fait.</French>
-        <Russian>Игра пыталась установить значение AllowPublicMaps (старые карты из Vanilla) на 0 в файле %s. При этом что-то пошло не так и теперь в игре могут быть выбраны общедоступные карты, несовместимые с модом. Пожалуйста, вручную откройте этот файл и установите AllowPublicMaps = 0 Перезапустите игру, как только это будет сделано.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_PUBLIC_MAPS_DISABLED_HEADER</Tag>
-        <English>Restart required</English>
-        <French>Redémarrage nécessaire</French>
-        <Russian>Требуется перезагрука</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_PUBLIC_MAPS_DISABLED</Tag>
-        <English>The mod has changed configuration to remove known incompatible maps from the menus. Please restart the game for the new settings to take effect. Do you want to quit now?</English>
-        <French>Le mod a changé la configuration pour supprimer du menu les cartes connues pour être incompatible. Veuillez relancer le jeu pour que ces nouveaux réglages entrent en vigueur. Voulez-vous quitter maintenant ?</French>
-        <Russian>Мод изменил конфигурацию, чтобы удалить известные несовместимые карты из меню. Пожалуйста, перезапустите игру, чтобы новые настройки вступили в силу. Сделать это сейчас?</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_LARGE_ADDRESS_AWARE_HEADER</Tag>
-        <English>Low memory warning</English>
-        <French>Avertissemnt: manque de mémoire</French>
-        <Russian>Предупреждение о нехватке памяти</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_LARGE_ADDRESS_AWARE</Tag>
-        <English>Colonization.exe is currently set to use max 2 GB of RAM. We The People will sometimes need more than that and if so the game will crash. Do you want to quit the game and open the readme on how to patch the game to use 4 GB?</English>
-        <French>Colonization.exe est configuré pour utiliser au plus 2 Go de RAM. We the People aura besoin de temps à autre de davantage et le jeu plantera dans ce cas-là. Voulez-vous quitter le jeu et lire le fichier Readme pour appliquer le correctif de jeu qui lui permette d'utiliser 4 Go ?</French>
-        <Russian>В настоящее время Colonization.exe настроен на использование не более 2 ГБ ОЗУ. Моду "We The People" иногда может понадобится больше и тогда игра вылетит. Хотите выйти из игры и открыть инструкцию о том, как пропатчить игру, чтобы использовать 4 ГБ?</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_WRONG_STEAM_VERION_HEADER</Tag>
-        <English>Wrong steam version</English>
-        <French>Mauvaise version Steam</French>
-        <Russian>Неправильная Steam-версия игры</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_WRONG_STEAM_VERION</Tag>
-        <English>The currently selected version of Colonization has issues with mod compatibility. This can be fixed by telling steam to switch to the beta version. Do you want to quit now and open the readme on this issue?</English>
-        <French>La version sélectionnée de Colonization a des problèmes de compatibilités avec les mods. Ceci peut être corrigé en demandant à Steam d'utiliser la version beta. Voulez-vous quitter le jeu et lire le fichier Readme à ce sujet ?</French>
-        <Russian>Текущая выбранная версия Колонизации имеет проблемы с совместимостью модов. Это можно исправить, изменив в настройках Steam версию игры на бета-версию. Хотите выйти из игры сейчас и открыть инструкцию по этому вопросу?</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_XML_HARDCODE_MISMATCH_HEADER</Tag>
-        <English>XML hardcoding error</English>
-        <French>Erreur de couplage du fichier XML</French>
-        <Russian>Ошибка жесткого кодирования XML</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_XML_HARDCODE_MISMATCH</Tag>
-        <English>The DLL is compiled with the assumption that %s has a length of %d. However the xml file has an actual length of %d. This will cause issues and likely crashes and it needs to be fixed. This can be fixed by recompiling the DLL file, through the DLL file can't be updated while the game is running. Do you want to quit now?</English>
-        <French>La DLL du jeu est compilée en supposant que %s a une longueur de %d. Cependant le fichier xml a une longueur de %d. Ceci causera des problèmes et probablement des plantages. Ceci peut être corrigé en recompilant la DLL, mais celle-ci ne peut être mis à jour à chaud, quand le jeu est lancé. Voulez vous quitter maintenant ?</French>
-        <Russian>DLL компилируется с предположением, что файл %s имеет длину %d. Однако фактическая длина файла составляет %d. Это может вызвать проблемы и вероятные сбои и требует исправления. Это можно сделать, перекомпилировав файл DLL. Но поскольку он не может быть обновлен во время работы игры, запуск нужно прервать. Хотите сделать это?</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_SAVEGAME_READ_ERROR_HEADER</Tag>
-        <English>Savegame read error</English>
-        <French>Erreur de lecture de la sauvegarde</French>
-        <Russian>Ошибка чтения сохранения игры</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_SAVEGAME_TOO_OLD</Tag>
-        <English>The savegame is too old to be read. It was made using an outdated savegame format and can sadly not be converted to match current requirements. The game will now shut down to prevent the savegame code from crashing.</English>
-        <French>Cette sauvegarde est trop vieille pour être lue. Elle a été écrite dans un format de sauvegarde obsolète et ne peut hélas être convertie dans le format à jour. Le jeu va s'arrêter pour éviter un plantage.</French>
-        <Russian>Сохранение слишком старое. Оно было создано с использованием устаревшего формата сохранения и, к сожалению, не может быть преобразовано в соответствии с текущими требованиями. Игра будет закрыта, чтобы предотвратить сбой кода сохранения.</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ALERT_SAVEGAME_TOO_NEW</Tag>
-        <English>The savegame is made with a version of We The People, which is newer than the version you are currently using. Without knowing what data was added, there is no way the savegame can be read. The game will now shut down to prevent the savegame code from crashing.</English>
-        <French>Cette sauvegarde a été écrite par une version de We The People plus récente que celle que vous utilisez maintenant. Sans savoir quelles données ont été rajoutées, il n'y a aucun moyen de lire cette sauvegarde. Le jeu va s'arrêter pour éviter un plantage.</French>
-        <Russian>Сохранение сделано с версией We The People, которая новее, чем версия, которую вы используете сейчас. Не зная, какие данные были добавлены, невозможно прочитать сохранение. Игра будет закрыта, чтобы предотвратить сбой кода сохранения.</Russian>
-    </TEXT>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_CONFIGURATION_ERROR_HEADER</Tag>
+		<English>Configuration error</English>
+		<French>Erreur de configuration</French>
+		<Russian>Ошибка конфигурации</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_CONFIGURATION_ERROR</Tag>
+		<English>The game tried to set AllowPublicMaps to 0 in %s. Something went wrong while doing so and now it's possible that incompatible public maps can be selected ingame. Please manually open this file and set AllowPublicMaps = 0 Restart the game once this is done.</English>
+		<French>Le jeu a essayé de placer AllowPublicMaps à 0 dans %s. Cette opération a échoué et il est maintenant possible de sélectionner en jeu des cartes non compatibles. Veuillez ouvrir manuellement ce fichier et passer AllowPublicMaps = 0. Redémarrez le jeu après que c'est fait.</French>
+		<Russian>Игра пыталась установить значение AllowPublicMaps (старые карты из Vanilla) на 0 в файле %s. При этом что-то пошло не так и теперь в игре могут быть выбраны общедоступные карты, несовместимые с модом. Пожалуйста, вручную откройте этот файл и установите AllowPublicMaps = 0 Перезапустите игру, как только это будет сделано.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_PUBLIC_MAPS_DISABLED_HEADER</Tag>
+		<English>Restart required</English>
+		<French>Redémarrage nécessaire</French>
+		<Russian>Требуется перезагрука</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_PUBLIC_MAPS_DISABLED</Tag>
+		<English>The mod has changed configuration to remove known incompatible maps from the menus. Please restart the game for the new settings to take effect. Do you want to quit now?</English>
+		<French>Le mod a changé la configuration pour supprimer du menu les cartes connues pour être incompatible. Veuillez relancer le jeu pour que ces nouveaux réglages entrent en vigueur. Voulez-vous quitter maintenant ?</French>
+		<Russian>Мод изменил конфигурацию, чтобы удалить известные несовместимые карты из меню. Пожалуйста, перезапустите игру, чтобы новые настройки вступили в силу. Сделать это сейчас?</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_LARGE_ADDRESS_AWARE_HEADER</Tag>
+		<English>Low memory warning</English>
+		<French>Avertissemnt: manque de mémoire</French>
+		<Russian>Предупреждение о нехватке памяти</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_LARGE_ADDRESS_AWARE</Tag>
+		<English>Colonization.exe is currently set to use max 2 GB of RAM. We The People will sometimes need more than that and if so the game will crash. Do you want to quit the game and open the readme on how to patch the game to use 4 GB?</English>
+		<French>Colonization.exe est configuré pour utiliser au plus 2 Go de RAM. We the People aura besoin de temps à autre de davantage et le jeu plantera dans ce cas-là. Voulez-vous quitter le jeu et lire le fichier Readme pour appliquer le correctif de jeu qui lui permette d'utiliser 4 Go ?</French>
+		<Russian>В настоящее время Colonization.exe настроен на использование не более 2 ГБ ОЗУ. Моду "We The People" иногда может понадобится больше и тогда игра вылетит. Хотите выйти из игры и открыть инструкцию о том, как пропатчить игру, чтобы использовать 4 ГБ?</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_WRONG_STEAM_VERION_HEADER</Tag>
+		<English>Wrong steam version</English>
+		<French>Mauvaise version Steam</French>
+		<Russian>Неправильная Steam-версия игры</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_WRONG_STEAM_VERION</Tag>
+		<English>The currently selected version of Colonization has issues with mod compatibility. This can be fixed by telling steam to switch to the beta version. Do you want to quit now and open the readme on this issue?</English>
+		<French>La version sélectionnée de Colonization a des problèmes de compatibilités avec les mods. Ceci peut être corrigé en demandant à Steam d'utiliser la version beta. Voulez-vous quitter le jeu et lire le fichier Readme à ce sujet ?</French>
+		<Russian>Текущая выбранная версия Колонизации имеет проблемы с совместимостью модов. Это можно исправить, изменив в настройках Steam версию игры на бета-версию. Хотите выйти из игры сейчас и открыть инструкцию по этому вопросу?</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_XML_HARDCODE_MISMATCH_HEADER</Tag>
+		<English>XML hardcoding error</English>
+		<French>Erreur de couplage du fichier XML</French>
+		<Russian>Ошибка жесткого кодирования XML</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_XML_HARDCODE_MISMATCH</Tag>
+		<English>The DLL is compiled with the assumption that %s has a length of %d. However the xml file has an actual length of %d. This will cause issues and likely crashes and it needs to be fixed. This can be fixed by recompiling the DLL file, through the DLL file can't be updated while the game is running. Do you want to quit now?</English>
+		<French>La DLL du jeu est compilée en supposant que %s a une longueur de %d. Cependant le fichier xml a une longueur de %d. Ceci causera des problèmes et probablement des plantages. Ceci peut être corrigé en recompilant la DLL, mais celle-ci ne peut être mis à jour à chaud, quand le jeu est lancé. Voulez vous quitter maintenant ?</French>
+		<Russian>DLL компилируется с предположением, что файл %s имеет длину %d. Однако фактическая длина файла составляет %d. Это может вызвать проблемы и вероятные сбои и требует исправления. Это можно сделать, перекомпилировав файл DLL. Но поскольку он не может быть обновлен во время работы игры, запуск нужно прервать. Хотите сделать это?</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_SAVEGAME_READ_ERROR_HEADER</Tag>
+		<English>Savegame read error</English>
+		<French>Erreur de lecture de la sauvegarde</French>
+		<Russian>Ошибка чтения сохранения игры</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_SAVEGAME_TOO_OLD</Tag>
+		<English>The savegame is too old to be read. It was made using an outdated savegame format and can sadly not be converted to match current requirements. The game will now shut down to prevent the savegame code from crashing.</English>
+		<French>Cette sauvegarde est trop vieille pour être lue. Elle a été écrite dans un format de sauvegarde obsolète et ne peut hélas être convertie dans le format à jour. Le jeu va s'arrêter pour éviter un plantage.</French>
+		<Russian>Сохранение слишком старое. Оно было создано с использованием устаревшего формата сохранения и, к сожалению, не может быть преобразовано в соответствии с текущими требованиями. Игра будет закрыта, чтобы предотвратить сбой кода сохранения.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALERT_SAVEGAME_TOO_NEW</Tag>
+		<English>The savegame is made with a version of We The People, which is newer than the version you are currently using. Without knowing what data was added, there is no way the savegame can be read. The game will now shut down to prevent the savegame code from crashing.</English>
+		<French>Cette sauvegarde a été écrite par une version de We The People plus récente que celle que vous utilisez maintenant. Sans savoir quelles données ont été rajoutées, il n'y a aucun moyen de lire cette sauvegarde. Le jeu va s'arrêter pour éviter un plantage.</French>
+		<Russian>Сохранение сделано с версией We The People, которая новее, чем версия, которую вы используете сейчас. Не зная, какие данные были добавлены, невозможно прочитать сохранение. Игра будет закрыта, чтобы предотвратить сбой кода сохранения.</Russian>
+	</TEXT>
 </Civ4GameText>

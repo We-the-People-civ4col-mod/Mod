@@ -89,6 +89,11 @@ template <> struct VARINFO<ENUM_NAME> \
 	}; \
 };
 
+template<typename T>
+static bool isInRange(T var)
+{
+	return VARINFO<T>::isInRange(var);
+}
 
 // overloaded ++ for enum types
 
@@ -227,7 +232,6 @@ SET_ENUM_OPERATORS_AND_FORBID(AnimationTypes);
 SET_ENUM_OPERATORS_AND_FORBID(AreaBorderLayers);
 SET_ENUM_OPERATORS_AND_FORBID(AudioTag);
 SET_ENUM_OPERATORS_AND_FORBID(AxisTypes);
-SET_ENUM_OPERATORS_AND_FORBID(ButtonPopupTypes);
 SET_ENUM_OPERATORS_AND_FORBID(ButtonStyles);
 SET_ENUM_OPERATORS_AND_FORBID(CameraLookAtTypes);
 SET_ENUM_OPERATORS_AND_FORBID(CameraMovementSpeeds);
@@ -309,7 +313,6 @@ SET_ENUM_OPERATORS_AND_FORBID(VersionTypes);
 SET_ENUM_OPERATORS_AND_FORBID(VoiceTargetTypes);
 SET_ENUM_OPERATORS_AND_FORBID(VoteResultTypes);
 SET_ENUM_OPERATORS_AND_FORBID(VoteStatusTypes);
-SET_ENUM_OPERATORS_AND_FORBID(WidgetTypes);
 SET_ENUM_OPERATORS_AND_FORBID(WrapDirection);
 SET_ENUM_OPERATORS_AND_FORBID(WorldBuilderPopupTypes);
 SET_ENUM_OPERATORS_AND_FORBID(ZoomLevelTypes);

@@ -29,7 +29,7 @@ def unitMoveFeats(pUnit, pPlot, pOldPlot):
 			pGroup = pUnit.getGroup()
 			if (not pGroup.isNone() and pGroup.getLengthMissionQueue() == 1):
 				if (pGroup.getMissionType(0) == MissionTypes.MISSION_MOVE_TO and pGroup.at(pGroup.getMissionData1(0), pGroup.getMissionData2(0))):
-					if (not pUnit.isAutomated() and pUnit.canDoCommand(CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, -1, false)):
+					if (not pUnit.isAutomated() and pUnit.canDoCommand(CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, -1, False)):
 						popupInfo = CyPopupInfo()
 						popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_FEAT)
 						popupInfo.setData1(FeatTypes.FEAT_GOTO_EUROPE)
@@ -54,7 +54,7 @@ def cityScreenFeats(iPlayer, iCityId):
 		popupInfo.setOnFocusPythonCallback("featAccomplishedOnFocusCallback")
 		popupInfo.addPythonButton(localText.getText("TXT_KEY_MAIN_MENU_OK", ()), "")
 		popupInfo.addPythonButton(localText.getText("TXT_KEY_EVENT_TUTORIAL_END_TUTORIAL_2", ()), "")
-		CyInterface().addPopup(popupInfo, iPlayer, true, false)
+		CyInterface().addPopup(popupInfo, iPlayer, True, False)
 	
 def buildingBuiltFeats(pCity, iBuildingType):
 	return
@@ -69,7 +69,7 @@ def unitSelectedFeats(pUnit):
 	global g_listUnitNags
 	player = gc.getPlayer(pUnit.getOwner())
 	if (player.shouldDisplayFeatPopup(FeatTypes.FEAT_TREASURE)):
-		if (pUnit.getUnitType() == gc.getInfoTypeForString("UNIT_TREASURE")):
+		if (pUnit.getUnitType() == UnitTypes.UNIT_TREASURE):
 			if pUnit.getID() not in g_listUnitNags:
 				CyMessageControl().sendPlayerAction(pUnit.getOwner(), PlayerActionTypes.PLAYER_ACTION_FEAT, FeatTypes.FEAT_TREASURE, 1, -1);
 				popupInfo = CyPopupInfo()
@@ -87,7 +87,7 @@ def unitSelectedFeats(pUnit):
 		if (pUnit.canKingTransport()):
 			if pUnit.getID() not in g_listUnitNags:
 				CyMessageControl().sendPlayerAction(pUnit.getOwner(), PlayerActionTypes.PLAYER_ACTION_FEAT, FeatTypes.FEAT_TREASURE_IN_PORT, 1, -1);
-				CyMessageControl().sendDoCommand(pUnit.getID(), CommandTypes.COMMAND_KING_TRANSPORT, -1, -1, false)
+				CyMessageControl().sendDoCommand(pUnit.getID(), CommandTypes.COMMAND_KING_TRANSPORT, -1, -1, False)
 				g_listUnitNags.append(pUnit.getID())
 
 	if (player.shouldDisplayFeatPopup(FeatTypes.FEAT_TALK_NATIVES)):
@@ -125,7 +125,7 @@ def cityAdvise(pCity, iPlayer):
 
 	if (gc.getPlayer(iPlayer).isOption(PlayerOptionTypes.PLAYEROPTION_ADVISOR_POPUPS) and gc.getPlayer(iPlayer).isHuman() and not gc.getGame().isNetworkMultiPlayer()):
 
-		eLiberationPlayer = pCity.getLiberationPlayer(false)
+		eLiberationPlayer = pCity.getLiberationPlayer(False)
 		if (eLiberationPlayer != -1):
 
 			if (gc.getGame().getGameTurn()) % 40 == pCity.getGameTurnFounded() % 40:
@@ -207,7 +207,7 @@ def cityAdvise(pCity, iPlayer):
 							popupInfo.addPopup(iPlayer)
 							g_iAdvisorNags += 1
 
-				iCultureYield = gc.getDefineINT("CULTURE_YIELD")
+				iCultureYield = YieldTypes.YIELD_CULTURE
 				if (pCity.getCultureRate() == 0 and not pCity.isOccupation() and iCultureYield != -1):
 
 					if (gc.getGame().getGameTurn() + 7) % 40 == pCity.getGameTurnFounded() % 40:

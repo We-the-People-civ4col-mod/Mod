@@ -1,11 +1,125 @@
 #include "CvGameCoreDLL.h"
-#include"CvEnums.h"
-#include "CvGameCoreDLLUnDefNew.h"
-# include <boost/python/enum.hpp>
+#include "CvEnums.h"
+#include "CvGameCoreDLLUndefNew.h"
+#include <boost/python/enum.hpp>
 #include "CvGameCoreDLLDefNew.h"
+
+namespace python = boost::python;
 //
-// Python interface for free enums
+// Python interface for enums
 //
+
+// How to read what can be accessed from python
+//
+// The file is split into 3 sections
+//
+// Section 1: Value setup
+//   void EnumContainer<  TYPE  >::apply()
+//      this one adds extra values to TYPE
+//      each new value is added with enumTable.value(python name, C++ name)
+//   WARNING: section 1 values doesn't exist during python's first init during startup as the data haven't been loaded yet (usually not a problem)
+//      Section 2 and 3 are however available
+//
+// Section 2: XML Types
+//    At the start of CyEnumsPythonInterface(), a number of xml files are listed
+//    Any file listed here will have types from xml, NO_ and NUM_, even in a dynamic dll
+//
+// Section 2: Vanilla approach
+// python::enum_<AAA>("BBB")
+//      .value("NO_COLOR", NO_COLOR)
+//     ;
+// This adds BBB to python and it returns value AAA (usually the same)
+// Nothing automatic happens here. It adds values like Section 1
+//
+// Note Section 3 will slowly be replaced by Section 2 as Section 3 needs manual updating to match xml while section 2 is automatic
+
+
+class EnumContainerBase
+{
+protected:
+	EnumContainerBase() {}
+public:
+	virtual void apply() = 0;
+};
+
+template<typename T>
+class EnumContainer : public EnumContainerBase
+{
+public:
+	EnumContainer(boost::python::enum_<T> enumTableInit) : enumTable(enumTableInit) {}
+
+	void apply();
+
+protected:
+	boost::python::enum_<T> enumTable;
+};
+
+// There is a problem with python exposure during startup.
+// The exe is hardcoded to expose everything prior to being done loading xml files.
+// To get around this limitation, only expose what is available (NO_, NUM_, Type tag from xml and enums)
+// While this takes place, store the enum instance in the vector.
+// Once xml is done loading, the vector is looped to call apply() and the rest of the values can be added.
+static std::vector<EnumContainerBase*> EnumVector;
+
+
+template<typename T>
+void EnumContainer<T>::apply()
+{
+	// intentionally empty. Fallback for any type, which doesn't have extra values to add
+}
+
+// python_enum_check.pl NEXT STATE
+template<>
+void EnumContainer<int>::apply()
+{
+	// Python name: GlobalDefines
+
+	enumTable.value("BASE_CAPTURE_GOLD", GLOBAL_DEFINE_BASE_CAPTURE_GOLD);
+	enumTable.value("BUILDING_PRODUCTION_PERCENT", GLOBAL_DEFINE_BUILDING_PRODUCTION_PERCENT);
+	enumTable.value("CAPTURE_GOLD_MAX_TURNS", GLOBAL_DEFINE_CAPTURE_GOLD_MAX_TURNS);
+	enumTable.value("CAPTURE_GOLD_PER_POPULATION", GLOBAL_DEFINE_CAPTURE_GOLD_PER_POPULATION);
+	enumTable.value("CAPTURE_GOLD_RAND1", GLOBAL_DEFINE_CAPTURE_GOLD_RAND1);
+	enumTable.value("CAPTURE_GOLD_RAND2", GLOBAL_DEFINE_CAPTURE_GOLD_RAND2);
+	enumTable.value("CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY", GLOBAL_DEFINE_CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY);
+	enumTable.value("DECREASE_MAX_TAX_RATE", GLOBAL_DEFINE_DECREASE_MAX_TAX_RATE);
+	enumTable.value("INCREASE_MAX_TAX_RATE", GLOBAL_DEFINE_INCREASE_MAX_TAX_RATE);
+	enumTable.value("MAX_TAX_RATE", GLOBAL_DEFINE_MAX_TAX_RATE);
+	enumTable.value("NEW_CAPACITY", 1);
+	enumTable.value("PORT_ROYAL_PORT_TAX", GLOBAL_DEFINE_PORT_ROYAL_PORT_TAX);
+	enumTable.value("SCORE_FATHER_FACTOR", GLOBAL_DEFINE_SCORE_FATHER_FACTOR);
+	enumTable.value("SCORE_FREE_PERCENT", GLOBAL_DEFINE_SCORE_FREE_PERCENT);
+	enumTable.value("SCORE_HANDICAP_PERCENT_OFFSET", GLOBAL_DEFINE_SCORE_HANDICAP_PERCENT_OFFSET);
+	enumTable.value("SCORE_HANDICAP_PERCENT_PER", GLOBAL_DEFINE_SCORE_HANDICAP_PERCENT_PER);
+	enumTable.value("SCORE_LAND_FACTOR", GLOBAL_DEFINE_SCORE_LAND_FACTOR);
+	enumTable.value("SCORE_POPULATION_FACTOR", GLOBAL_DEFINE_SCORE_POPULATION_FACTOR);
+	enumTable.value("SCORE_VICTORY_PERCENT", GLOBAL_DEFINE_SCORE_VICTORY_PERCENT);
+	enumTable.value("SHOW_LANDMARKS", GLOBAL_DEFINE_SHOW_LANDMARKS);
+	enumTable.value("START_YEAR", GLOBAL_DEFINE_START_YEAR);
+	enumTable.value("UNIT_PRODUCTION_PERCENT", GLOBAL_DEFINE_UNIT_PRODUCTION_PERCENT);
+	enumTable.value("USE_MODDERS_PLAYEROPTION_1", GLOBAL_DEFINE_USE_MODDERS_PLAYEROPTION_1);
+	enumTable.value("USE_MODDERS_PLAYEROPTION_2", GLOBAL_DEFINE_USE_MODDERS_PLAYEROPTION_2);
+	enumTable.value("USE_MODDERS_PLAYEROPTION_3", GLOBAL_DEFINE_USE_MODDERS_PLAYEROPTION_3);
+}
+
+template<>
+void EnumContainer<HandicapTypes>::apply()
+{
+	enumTable.value("STANDARD_HANDICAP", GLOBAL_DEFINE_STANDARD_HANDICAP);
+}
+
+template<>
+void EnumContainer<UnitClassTypes>::apply()
+{
+	enumTable.value("DEFAULT_POPULATION_UNIT", GLOBAL_DEFINE_DEFAULT_POPULATION_UNIT);
+}
+
+template<>
+void EnumContainer<YieldTypes>::apply()
+{
+	enumTable.value("NUM_CARGO_YIELD_TYPES", NUM_CARGO_YIELD_TYPES);
+}
+
+// python_enum_check.pl NEXT STATE
 
 template<typename T>
 static void addEnumValues(T value, const char* szName, const char* szNoType, const char* szNumTypes)
@@ -20,6 +134,22 @@ static void addEnumValues(T value, const char* szName, const char* szNoType, con
 	{
 		enumTable.value(getTypeStr(eLoopVar), eLoopVar);
 	}
+	EnumVector.push_back(new EnumContainer<T>(enumTable));
+}
+
+void CyEnumsPythonInterfacePostApply()
+{
+	// Apply the xml data, which wasn't available during the first run.
+	const unsigned int iLength = EnumVector.size();
+	for (unsigned int i = 0; i < iLength; ++i)
+	{
+		EnumVector[i]->apply();
+		SAFE_DELETE(EnumVector[i]);
+	}
+	EnumVector.clear();
+
+	// End of python enum setup.
+	// Should any post setup activity ever be needed, then it can be added after this comment.
 }
 
 void CyEnumsPythonInterface()
@@ -32,13 +162,29 @@ void CyEnumsPythonInterface()
 	// 2: name of enum in python
 	// 3: name of NO_ type. Skipped if it is set to NULL
 	// 4 name of NUM_
+
+// python_enum_check.pl NEXT STATE
+	addEnumValues(NO_BUTTON_POPUP      , "ButtonPopupTypes"   , "NO_BUTTON_POPUP"  , "NUM_BUTTONPOPUP_TYPES"    );
+	addEnumValues(NO_COLOR             , "ColorTypes"         , "NO_COLOR"         , "NUM_COLOR_TYPES"          );
 	addEnumValues(NO_CONCEPT           , "ConceptTypes"       , "NO_CONCEPT"       , "NUM_CONCEPT_TYPES"        );
+	addEnumValues(NO_EUROPE            , "EuropeTypes"        , "NO_EUROPE"        , "NUM_EUROPE_TYPES"         );
+	addEnumValues(NO_FEATURE           , "FeatureTypes"       , "NO_FEATURE"       , "NUM_FEATURE_TYPES"        );
 	addEnumValues(MAX_NUM_SYMBOLS      , "FontSymbols"        , NULL               , "MAX_NUM_SYMBOLS"          );
+	addEnumValues(NO_HANDICAP          , "HandicapTypes"      , "NO_HANDICAP"      , "NUM_HANDICAP_TYPES"       );
+	addEnumValues(NO_HURRY             , "HurryTypes"         , "NO_HURRY"         , "NUM_HURRY_TYPES"          );
+	addEnumValues(NO_PROFESSION        , "ProfessionTypes"    , "NO_PROFESSION"    , "NUM_PROFESSION_TYPES"     );
+	addEnumValues(NO_SPECIALBUILDING   , "SpecialBuildingTypes","NO_SPECIALBUILDING", "NUM_SPECIALBUILDING_TYPES");
 	addEnumValues(NO_TERRAIN           , "TerrainTypes"       , "NO_TERRAIN"       , "NUM_TERRAIN_TYPES"        );
+	addEnumValues(NO_UNIT              , "UnitTypes"          , "NO_UNIT"          , "NUM_UNIT_TYPES"           );
+	addEnumValues(NO_UNITCLASS         , "UnitClassTypes"     , "NO_UNITCLASS"     , "NUM_UNITCLASS_TYPES"      );
 	addEnumValues(NO_WORLDSIZE         , "WorldSizeTypes"     , "NO_WORLDSIZE"     , "NUM_WORLDSIZE_TYPES"      );
+	addEnumValues(NO_WIDGET            , "WidgetTypes"        , "NO_WIDGET"        , "NUM_WIDGET_TYPES"         );
 	addEnumValues(NO_YIELD             , "YieldTypes"         , "NO_YIELD"         , "NUM_YIELD_TYPES"          );
+// python_enum_check.pl NEXT STATE
+	
+	EnumVector.push_back(new EnumContainer<int>(python::enum_<int>("GlobalDefines")));
 
-
+// python_enum_check.pl NEXT STATE
 	python::enum_<GameStateTypes>("GameStateTypes")
 		.value("GAMESTATE_ON", GAMESTATE_ON)
 		.value("GAMESTATE_OVER", GAMESTATE_OVER)
@@ -86,9 +232,6 @@ void CyEnumsPythonInterface()
 		.value("CARDINALDIRECTION_SOUTH", CARDINALDIRECTION_SOUTH)
 		.value("CARDINALDIRECTION_WEST", CARDINALDIRECTION_WEST)
 		.value("NUM_CARDINALDIRECTION_TYPES", NUM_CARDINALDIRECTION_TYPES)
-		;
-	python::enum_<ColorTypes>("ColorTypes")
-		.value("NO_COLOR", NO_COLOR)
 		;
 	python::enum_<PlayerColorTypes>("PlayerColorTypes")
 		.value("NO_PLAYERCOLOR", NO_PLAYERCOLOR)
@@ -223,188 +366,6 @@ void CyEnumsPythonInterface()
 		.value("PortRoyalScreen_DIRTY_BIT", PortRoyalScreen_DIRTY_BIT) // R&R, ray, Port Royal
 		.value("NUM_INTERFACE_DIRTY_BITS", NUM_INTERFACE_DIRTY_BITS)
 		;
-	python::enum_<WidgetTypes>("WidgetTypes")
-		.value("WIDGET_PLOT_LIST", WIDGET_PLOT_LIST)
-		.value("WIDGET_PLOT_LIST_SHIFT", WIDGET_PLOT_LIST_SHIFT)
-		.value("WIDGET_CITY_SCROLL", WIDGET_CITY_SCROLL)
-		.value("WIDGET_LIBERATE_CITY", WIDGET_LIBERATE_CITY)
-		.value("WIDGET_CITY_NAME", WIDGET_CITY_NAME)
-		.value("WIDGET_UNIT_NAME", WIDGET_UNIT_NAME)
-		.value("WIDGET_CREATE_GROUP", WIDGET_CREATE_GROUP)
-		.value("WIDGET_DELETE_GROUP", WIDGET_DELETE_GROUP)
-		.value("WIDGET_TRAIN", WIDGET_TRAIN)
-		.value("WIDGET_CONSTRUCT", WIDGET_CONSTRUCT)
-		.value("WIDGET_CONVINCE", WIDGET_CONVINCE)
-		.value("WIDGET_HURRY", WIDGET_HURRY)
-		.value("WIDGET_PLAYER_HURRY", WIDGET_PLAYER_HURRY)
-		.value("WIDGET_MENU_ICON", WIDGET_MENU_ICON)
-		.value("WIDGET_ACTION", WIDGET_ACTION)
-		.value("WIDGET_CITIZEN", WIDGET_CITIZEN)
-		.value("WIDGET_CONTACT_CIV", WIDGET_CONTACT_CIV)
-		.value("WIDGET_SCORE_BREAKDOWN", WIDGET_SCORE_BREAKDOWN)
-		.value("WIDGET_ZOOM_CITY", WIDGET_ZOOM_CITY)
-		.value("WIDGET_END_TURN", WIDGET_END_TURN)
-		.value("WIDGET_WB_SAVE_BUTTON", WIDGET_WB_SAVE_BUTTON)
-		.value("WIDGET_WB_LOAD_BUTTON", WIDGET_WB_LOAD_BUTTON)
-		.value("WIDGET_WB_ALL_PLOTS_BUTTON", WIDGET_WB_ALL_PLOTS_BUTTON)
-		.value("WIDGET_WB_LANDMARK_BUTTON", WIDGET_WB_LANDMARK_BUTTON)
-		.value("WIDGET_WB_ERASE_BUTTON", WIDGET_WB_ERASE_BUTTON)
-		.value("WIDGET_WB_EXIT_BUTTON", WIDGET_WB_EXIT_BUTTON)
-		.value("WIDGET_WB_UNIT_EDIT_BUTTON", WIDGET_WB_UNIT_EDIT_BUTTON)
-		.value("WIDGET_WB_CITY_EDIT_BUTTON", WIDGET_WB_CITY_EDIT_BUTTON)
-		.value("WIDGET_WB_NORMAL_PLAYER_TAB_MODE_BUTTON", WIDGET_WB_NORMAL_PLAYER_TAB_MODE_BUTTON)
-		.value("WIDGET_WB_NORMAL_MAP_TAB_MODE_BUTTON", WIDGET_WB_NORMAL_MAP_TAB_MODE_BUTTON)
-		.value("WIDGET_WB_REVEAL_TAB_MODE_BUTTON", WIDGET_WB_REVEAL_TAB_MODE_BUTTON)
-		.value("WIDGET_WB_DIPLOMACY_MODE_BUTTON", WIDGET_WB_DIPLOMACY_MODE_BUTTON)
-		.value("WIDGET_WB_REVEAL_ALL_BUTTON", WIDGET_WB_REVEAL_ALL_BUTTON)
-		.value("WIDGET_WB_UNREVEAL_ALL_BUTTON", WIDGET_WB_UNREVEAL_ALL_BUTTON)
-		.value("WIDGET_WB_REGENERATE_MAP", WIDGET_WB_REGENERATE_MAP)
-		.value("WIDGET_AUTOMATE_CITIZENS", WIDGET_AUTOMATE_CITIZENS)
-		.value("WIDGET_AUTOMATE_PRODUCTION", WIDGET_AUTOMATE_PRODUCTION)
-		.value("WIDGET_EMPHASIZE", WIDGET_EMPHASIZE)
-		.value("WIDGET_DIPLOMACY_RESPONSE", WIDGET_DIPLOMACY_RESPONSE)
-		.value("WIDGET_GENERAL", WIDGET_GENERAL)
-		.value("WIDGET_FILE_LISTBOX", WIDGET_FILE_LISTBOX)
-		.value("WIDGET_FILE_EDITBOX", WIDGET_FILE_EDITBOX)
-		.value("WIDGET_TRADE_ITEM", WIDGET_TRADE_ITEM)
-		.value("WIDGET_UNIT_MODEL", WIDGET_UNIT_MODEL)
-		.value("WIDGET_POPUP_QUEUE", WIDGET_POPUP_QUEUE)
-		.value("WIDGET_PYTHON", WIDGET_PYTHON)
-		.value("WIDGET_HELP_DEFENSE", WIDGET_HELP_DEFENSE)
-		.value("WIDGET_HELP_POPULATION", WIDGET_HELP_POPULATION)
-		.value("WIDGET_HELP_REBEL", WIDGET_HELP_REBEL)
-		.value("WIDGET_HELP_GREAT_GENERAL", WIDGET_HELP_GREAT_GENERAL)
-		.value("WIDGET_HELP_SELECTED", WIDGET_HELP_SELECTED)
-		.value("WIDGET_HELP_YIELD", WIDGET_HELP_YIELD)
-		.value("WIDGET_HELP_PROMOTION", WIDGET_HELP_PROMOTION)
-		.value("WIDGET_HELP_UNIT_PROMOTION", WIDGET_HELP_UNIT_PROMOTION)
-		.value("WIDGET_CHOOSE_EVENT", WIDGET_CHOOSE_EVENT)
-		.value("WIDGET_PEDIA_JUMP_TO_UNIT", WIDGET_PEDIA_JUMP_TO_UNIT)
-		.value("WIDGET_PEDIA_JUMP_TO_PROFESSION", WIDGET_PEDIA_JUMP_TO_PROFESSION)
-		.value("WIDGET_PEDIA_JUMP_TO_BUILDING", WIDGET_PEDIA_JUMP_TO_BUILDING)
-		.value("WIDGET_PEDIA_BACK", WIDGET_PEDIA_BACK)
-		.value("WIDGET_PEDIA_FORWARD", WIDGET_PEDIA_FORWARD)
-		.value("WIDGET_PEDIA_JUMP_TO_BONUS", WIDGET_PEDIA_JUMP_TO_BONUS)
-		.value("WIDGET_PEDIA_MAIN", WIDGET_PEDIA_MAIN)
-		.value("WIDGET_PEDIA_JUMP_TO_PROMOTION", WIDGET_PEDIA_JUMP_TO_PROMOTION)
-		.value("WIDGET_PEDIA_JUMP_TO_IMPROVEMENT", WIDGET_PEDIA_JUMP_TO_IMPROVEMENT)
-		.value("WIDGET_PEDIA_JUMP_TO_CIVIC", WIDGET_PEDIA_JUMP_TO_CIVIC)
-		.value("WIDGET_PEDIA_JUMP_TO_CIV", WIDGET_PEDIA_JUMP_TO_CIV)
-		.value("WIDGET_PEDIA_JUMP_TO_LEADER", WIDGET_PEDIA_JUMP_TO_LEADER)
-		.value("WIDGET_PEDIA_JUMP_TO_TERRAIN", WIDGET_PEDIA_JUMP_TO_TERRAIN)
-		.value("WIDGET_PEDIA_JUMP_TO_YIELDS", WIDGET_PEDIA_JUMP_TO_YIELDS)
-		.value("WIDGET_PEDIA_JUMP_TO_FEATURE", WIDGET_PEDIA_JUMP_TO_FEATURE)
-		.value("WIDGET_PEDIA_JUMP_TO_FATHER", WIDGET_PEDIA_JUMP_TO_FATHER)
-		.value("WIDGET_TURN_EVENT", WIDGET_TURN_EVENT)
-		.value("WIDGET_PEDIA_DESCRIPTION", WIDGET_PEDIA_DESCRIPTION)
-		.value("WIDGET_PEDIA_DESCRIPTION_NO_HELP", WIDGET_PEDIA_DESCRIPTION_NO_HELP)
-		.value("WIDGET_DEAL_KILL", WIDGET_DEAL_KILL)
-		.value("WIDGET_MINIMAP_HIGHLIGHT", WIDGET_MINIMAP_HIGHLIGHT)
-		.value("WIDGET_PRODUCTION_MOD_HELP", WIDGET_PRODUCTION_MOD_HELP)
-		.value("WIDGET_LEADERHEAD", WIDGET_LEADERHEAD)
-		.value("WIDGET_LEADER_LINE", WIDGET_LEADER_LINE)
-		.value("WIDGET_CLOSE_SCREEN", WIDGET_CLOSE_SCREEN)
-		.value("WIDGET_GLOBELAYER", WIDGET_GLOBELAYER)
-		.value("WIDGET_GLOBELAYER_OPTION", WIDGET_GLOBELAYER_OPTION)
-		.value("WIDGET_GLOBELAYER_TOGGLE", WIDGET_GLOBELAYER_TOGGLE)
-		.value("WIDGET_CITY_UNIT_ASSIGN_PROFESSION", WIDGET_CITY_UNIT_ASSIGN_PROFESSION)
-		.value("WIDGET_MOVE_CARGO_TO_CITY", WIDGET_MOVE_CARGO_TO_CITY)
-		.value("WIDGET_RECEIVE_MOVE_CARGO_TO_CITY", WIDGET_RECEIVE_MOVE_CARGO_TO_CITY)
-		.value("WIDGET_MOVE_CARGO_TO_TRANSPORT", WIDGET_MOVE_CARGO_TO_TRANSPORT)
-		.value("WIDGET_MOVE_CARGO_TO_TRANSPORT_AFRICA", WIDGET_MOVE_CARGO_TO_TRANSPORT_AFRICA) // R&R, ray, Africa
-		.value("WIDGET_MOVE_CARGO_TO_TRANSPORT_PORT_ROYAL", WIDGET_MOVE_CARGO_TO_TRANSPORT_PORT_ROYAL) // R&R, ray, Port Royal
-		.value("WIDGET_RECEIVE_MOVE_CARGO_TO_TRANSPORT", WIDGET_RECEIVE_MOVE_CARGO_TO_TRANSPORT)
-		.value("WIDGET_CREATE_TRADE_ROUTE", WIDGET_CREATE_TRADE_ROUTE)
-		.value("WIDGET_EDIT_TRADE_ROUTE", WIDGET_EDIT_TRADE_ROUTE)
-		.value("WIDGET_YIELD_IMPORT_EXPORT", WIDGET_YIELD_IMPORT_EXPORT)
-		.value("WIDGET_CONDENSED_YIELD_IMPORT_EXPORT", WIDGET_CONDENSED_YIELD_IMPORT_EXPORT) // R&R mod, vetiarvind, max yield import limit
-		// Teacher List - start - Nightinggale
-		.value("WIDGET_TEACHER_LIST", WIDGET_TEACHER_LIST)
-		// Teacher List - end - Nightinggale
-		// R&R, Robert Surcouf, Custom House Popup-Screen START
-		.value("WIDGET_CUSTOM_HOUSE", WIDGET_CUSTOM_HOUSE)
-		.value("WIDGET_DOMESTIC_MARKET", WIDGET_DOMESTIC_MARKET)
-		// R&R, Robert Surcouf, Custom House Popup-Screen END
-		.value("WIDGET_ASSIGN_CITIZEN_TO_PLOT", WIDGET_ASSIGN_CITIZEN_TO_PLOT)
-		.value("WIDGET_CITY_PLOT_INFO", WIDGET_CITY_PLOT_INFO) // city plot mouse over help - inaiwae
-		.value("WIDGET_ASSIGN_TRADE_ROUTE", WIDGET_ASSIGN_TRADE_ROUTE)
-		.value("WIDGET_EJECT_CITIZEN", WIDGET_EJECT_CITIZEN)
-		.value("WIDGET_SHIP_CARGO", WIDGET_SHIP_CARGO)
-		.value("WIDGET_SHIP_CARGO_AFRICA", WIDGET_SHIP_CARGO_AFRICA) // R&R, ray, Africa
-		.value("WIDGET_SHIP_CARGO_PORT_ROYAL", WIDGET_SHIP_CARGO_PORT_ROYAL) // R&R, ray, Port Royal
-		.value("WIDGET_DOCK", WIDGET_DOCK)
-		.value("WIDGET_SAIL", WIDGET_SAIL)
-		.value("WIDGET_GOTO_CITY", WIDGET_GOTO_CITY)
-		//Androrc Multiple Professions per Building
-		.value("WIDGET_HELP_TWO_YIELDS", WIDGET_HELP_TWO_YIELDS)
-		.value("WIDGET_ASSIGN_CITIZEN_TO_BUILDING", WIDGET_ASSIGN_CITIZEN_TO_BUILDING)
-		//Androrc End
-		.value("WIDGET_DOCK_AFRICA", WIDGET_DOCK_AFRICA) /*** TRIANGLETRADE 10/28/08 by DPII ***/
-		.value("WIDGET_DOCK_PORT_ROYAL", WIDGET_DOCK_PORT_ROYAL) // R&R, ray, Port Royal
-		.value("WIDGET_CITY_CENTER_PLOT", WIDGET_CITY_CENTER_PLOT)
-		.value("WIDGET_HELP_TEXT", WIDGET_HELP_TEXT)
-		.value("WIDGET_NETWORK_DESYNC", WIDGET_NETWORK_DESYNC)
-		.value("WIDGET_JUMP_TO_SETTLEMENT", WIDGET_JUMP_TO_SETTLEMENT)
-		.value("WIDGET_MISSION_CHAR", WIDGET_MISSION_CHAR)
-		.value("WIDGET_HELP_HARBOUR_SYSTEM", WIDGET_HELP_HARBOUR_SYSTEM) // WTP, ray, Widgets for Harbour System and Barracks System - START
-		.value("WIDGET_HELP_BARRACKS_SYSTEM", WIDGET_HELP_BARRACKS_SYSTEM) // WTP, ray, Widgets for Harbour System and Barracks System - START
-		.value("WIDGET_HELP_SHOW_OR_HIDE_YIELDS", WIDGET_HELP_SHOW_OR_HIDE_YIELDS)
-		.value("NUM_WIDGET_TYPES", NUM_WIDGET_TYPES)
-		;
-	python::enum_<ButtonPopupTypes>("ButtonPopupTypes")
-		.value("BUTTONPOPUP_TEXT", BUTTONPOPUP_TEXT)
-		.value("BUTTONPOPUP_MAIN_MENU", BUTTONPOPUP_MAIN_MENU)
-		.value("BUTTONPOPUP_CONFIRM_MENU", BUTTONPOPUP_CONFIRM_MENU)
-		.value("BUTTONPOPUP_DECLAREWARMOVE", BUTTONPOPUP_DECLAREWARMOVE)
-		.value("BUTTONPOPUP_CONFIRMCOMMAND", BUTTONPOPUP_CONFIRMCOMMAND)
-		.value("BUTTONPOPUP_CONFIRMTASK", BUTTONPOPUP_CONFIRMTASK)
-		.value("BUTTONPOPUP_LOADUNIT", BUTTONPOPUP_LOADUNIT)
-		.value("BUTTONPOPUP_LOAD_CARGO", BUTTONPOPUP_LOAD_CARGO)
-		.value("BUTTONPOPUP_LEADUNIT", BUTTONPOPUP_LEADUNIT)
-		.value("BUTTONPOPUP_RAZECITY", BUTTONPOPUP_RAZECITY)
-		.value("BUTTONPOPUP_CHOOSEPRODUCTION", BUTTONPOPUP_CHOOSEPRODUCTION)
-		.value("BUTTONPOPUP_CHOOSE_YIELD_BUILD", BUTTONPOPUP_CHOOSE_YIELD_BUILD)
-		.value("BUTTONPOPUP_CHOOSE_EDUCATION", BUTTONPOPUP_CHOOSE_EDUCATION)
-		.value("BUTTONPOPUP_ALARM", BUTTONPOPUP_ALARM)
-		.value("BUTTONPOPUP_DEAL_CANCELED", BUTTONPOPUP_DEAL_CANCELED)
-		.value("BUTTONPOPUP_PYTHON", BUTTONPOPUP_PYTHON)
-		.value("BUTTONPOPUP_FEAT", BUTTONPOPUP_FEAT)
-		.value("BUTTONPOPUP_PYTHON_SCREEN", BUTTONPOPUP_PYTHON_SCREEN)
-		.value("BUTTONPOPUP_MOVIE", BUTTONPOPUP_MOVIE)
-		.value("BUTTONPOPUP_DETAILS", BUTTONPOPUP_DETAILS)
-		.value("BUTTONPOPUP_ADMIN", BUTTONPOPUP_ADMIN)
-		.value("BUTTONPOPUP_ADMIN_PASSWORD", BUTTONPOPUP_ADMIN_PASSWORD)
-		.value("BUTTONPOPUP_EXTENDED_GAME", BUTTONPOPUP_EXTENDED_GAME)
-		.value("BUTTONPOPUP_DIPLOMACY", BUTTONPOPUP_DIPLOMACY)
-		.value("BUTTONPOPUP_ADDBUDDY", BUTTONPOPUP_ADDBUDDY)
-		.value("BUTTONPOPUP_FORCED_DISCONNECT", BUTTONPOPUP_FORCED_DISCONNECT)
-		.value("BUTTONPOPUP_PITBOSS_DISCONNECT", BUTTONPOPUP_PITBOSS_DISCONNECT)
-		.value("BUTTONPOPUP_KICKED", BUTTONPOPUP_PITBOSS_DISCONNECT)
-		.value("BUTTONPOPUP_EVENT", BUTTONPOPUP_EVENT)
-		.value("BUTTONPOPUP_FREE_COLONY", BUTTONPOPUP_FREE_COLONY)
-		.value("BUTTONPOPUP_CHOOSE_PROFESSION", BUTTONPOPUP_CHOOSE_PROFESSION)
-		.value("BUTTONPOPUP_PURCHASE_EUROPE_UNIT", BUTTONPOPUP_PURCHASE_EUROPE_UNIT)
-		.value("BUTTONPOPUP_FOUNDING_FATHER", BUTTONPOPUP_FOUNDING_FATHER)
-		.value("BUTTONPOPUP_CIVIC_OPTION", BUTTONPOPUP_CIVIC_OPTION)
-		.value("BUTTONPOPUP_TRADE_ROUTES", BUTTONPOPUP_TRADE_ROUTES)
-		.value("BUTTONPOPUP_YIELD_IMPORT_EXPORT", BUTTONPOPUP_YIELD_IMPORT_EXPORT)
-		// R&R, Robert Surcouf, Custom House Popup-Screen START
-		.value("BUTTONPOPUP_CUSTOM_HOUSE", BUTTONPOPUP_CUSTOM_HOUSE)
-		// R&R, Robert Surcouf, Custom House Popup-Screen END
-		.value("BUTTONPOPUP_PROMOTE", BUTTONPOPUP_PROMOTE)
-		.value("BUTTONPOPUP_CHOOSE_GOODY", BUTTONPOPUP_CHOOSE_GOODY)
-		.value("BUTTONPOPUP_SELECT_YIELD_AMOUNT", BUTTONPOPUP_SELECT_YIELD_AMOUNT)
-		.value("BUTTONPOPUP_EUROPE_UNIT", BUTTONPOPUP_EUROPE_UNIT)
-		.value("BUTTONPOPUP_TALK_NATIVES", BUTTONPOPUP_TALK_NATIVES)
-		// PatchMod: Achievements START
-		.value("BUTTONPOPUP_ACHIEVEMENTS", BUTTONPOPUP_ACHIEVEMENTS)
-		// PatchMod: Achievements END
-		.value("BUTTONPOPUP_GOTO_MENU", BUTTONPOPUP_GOTO_MENU)		// TAC - Goto Menu - koma13
-		.value("BUTTONPOPUP_PURCHASE_AFRICA_UNIT", BUTTONPOPUP_PURCHASE_AFRICA_UNIT) /*** TRIANGLETRADE 10/15/08 by DPII ***/
-		.value("BUTTONPOPUP_PURCHASE_PORT_ROYAL_UNIT", BUTTONPOPUP_PURCHASE_PORT_ROYAL_UNIT) // R&R, ray, Port Royal
-		.value("BUTTONPOPUP_SAVE_TRADEGROUP", BUTTONPOPUP_SAVE_TRADEGROUP) //R&R mod, vetiarvind, trade groups
-		.value("NUM_BUTTONPOPUP_TYPES", NUM_BUTTONPOPUP_TYPES)
-		;
 	python::enum_<ClimateTypes>("ClimateTypes")
 		.value("NO_CLIMATE", NO_CLIMATE)
 		;
@@ -518,10 +479,6 @@ void CyEnumsPythonInterface()
 	python::enum_<VictoryTypes>("VictoryTypes")
 		.value("NO_VICTORY", NO_VICTORY)
 		;
-	python::enum_<FeatureTypes>("FeatureTypes")
-		.value("NO_FEATURE", NO_FEATURE)
-		.value("NUM_FEATURE_TYPES", NUM_FEATURE_TYPES)
-		;
 	python::enum_<BonusTypes>("BonusTypes")
 		.value("NO_BONUS", NO_BONUS)
 		;
@@ -537,9 +494,6 @@ void CyEnumsPythonInterface()
 	python::enum_<BuildTypes>("BuildTypes")
 		.value("NO_BUILD", NO_BUILD)
 		;
-	python::enum_<HandicapTypes>("HandicapTypes")
-		.value("NO_HANDICAP", NO_HANDICAP)
-		;
 	python::enum_<GameSpeedTypes>("GameSpeedTypes")
 		.value("NO_GAMESPEED", NO_GAMESPEED)
 		;
@@ -551,6 +505,8 @@ void CyEnumsPythonInterface()
 		;
 	python::enum_<CivilizationTypes>("CivilizationTypes")
 		.value("NO_CIVILIZATION", NO_CIVILIZATION)
+		.value("CIVILIZATION_BARBARIAN", CIVILIZATION_BARBARIAN)
+		.value("CIVILIZATION_CHURCH", CIVILIZATION_CHURCH)
 		;
 	python::enum_<LeaderHeadTypes>("LeaderHeadTypes")
 		.value("NO_LEADER", NO_LEADER)
@@ -676,11 +632,7 @@ void CyEnumsPythonInterface()
 		;
 	python::enum_<BuildingTypes>("BuildingTypes")
 		.value("NO_BUILDING", NO_BUILDING)
-		;
-	python::enum_<SpecialBuildingTypes>("SpecialBuildingTypes")
-		.value("NO_SPECIALBUILDING", NO_SPECIALBUILDING)
-		// next line looks up an "enum" value at runtime where it is based on xml type strings
-		.value("SPECIALBUILDING_EDUCATION", getIndexForType<SpecialBuildingTypes>("SPECIALBUILDING_EDUCATION", "SPECIALBUILDING_EDUCATION must exist in xml"))
+		.value("BUILDING_CHICKEE", BUILDING_CHICKEE)
 		;
 	python::enum_<InfoBarTypes>("InfoBarTypes")
 		.value("INFOBAR_STORED", INFOBAR_STORED)
@@ -740,15 +692,6 @@ void CyEnumsPythonInterface()
 		.value("DOMAIN_IMMOBILE", DOMAIN_IMMOBILE)
 		.value("NUM_DOMAIN_TYPES", NUM_DOMAIN_TYPES)
 		;
-	python::enum_<UnitClassTypes>("UnitClassTypes")
-		.value("NO_UNITCLASS", NO_UNITCLASS)
-		;
-	python::enum_<UnitTypes>("UnitTypes")
-		.value("NO_UNIT", NO_UNIT)
-		;
-	python::enum_<ProfessionTypes>("ProfessionTypes")
-		.value("NO_PROFESSION", NO_PROFESSION)
-		;
 	python::enum_<SpecialUnitTypes>("SpecialUnitTypes")
 		.value("NO_SPECIALUNIT", NO_SPECIALUNIT)
 		;
@@ -770,7 +713,7 @@ void CyEnumsPythonInterface()
 		.value("UNITAI_WAGON", UNITAI_WAGON)
 		.value("UNITAI_TREASURE", UNITAI_TREASURE)
 		.value("UNITAI_DEFENSIVE", UNITAI_DEFENSIVE)
-		.value("UNITAI_OFFENSIVE", UNITAI_DEFENSIVE)
+		.value("UNITAI_OFFENSIVE", UNITAI_OFFENSIVE)
 		.value("UNITAI_COUNTER", UNITAI_COUNTER)
 		.value("UNITAI_WORKER_SEA", UNITAI_WORKER_SEA) //TAC Whaling, ray
 		.value("UNITAI_TRANSPORT_SEA", UNITAI_TRANSPORT_SEA)
@@ -987,9 +930,6 @@ void CyEnumsPythonInterface()
 		;
 	python::enum_<PromotionTypes>("PromotionTypes")
 		.value("NO_PROMOTION", NO_PROMOTION)
-		;
-	python::enum_<HurryTypes>("HurryTypes")
-		.value("NO_HURRY", NO_HURRY)
 		;
 	python::enum_<CultureLevelTypes>("CultureLevelTypes")
 		.value("NO_CULTURELEVEL", NO_CULTURELEVEL)
@@ -1769,4 +1709,15 @@ void CyEnumsPythonInterface()
 		.value("JIT_ARRAY_UNSIGNED_INT", JIT_ARRAY_UNSIGNED_INT)
 		.value("JIT_ARRAY_FLOAT", JIT_ARRAY_FLOAT)
 		;
+// python_enum_check.pl NEXT STATE
+	static bool bFirstRun = true;
+	if (bFirstRun)
+	{
+		bFirstRun = false;
+	}
+	else
+	{
+		// run this function on reloads, thorugh skip it the first time as it is handled later in the xml reading order
+		CyEnumsPythonInterfacePostApply();
+	}
 }

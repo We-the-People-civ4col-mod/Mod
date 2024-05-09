@@ -37,7 +37,7 @@ $ignored_strings{"TXT_KEY_ERROR_XML_WRONG_TYPE_STRING"} = 1;
 $ignored_strings{"TXT_KEY_EVENT_TRIGGER_ERROR"} = 1;
 $ignored_strings{"TXT_KEY_EUROPE_WAR_KING_DECREASED_MAX_TAX"} = 1; # french not updated
 
-$dir_path = "DLLsources/";
+$dir_path = "DLLSources/";
 
 opendir(DIR, $dir_path);
 @files = grep(/\.cpp$/,readdir(DIR));
@@ -62,7 +62,7 @@ foreach my $file (@files)
 
 # loop through text xml files
 
-$dir_path = getXMLlocation . "/text/";
+$dir_path = getXMLlocation . "/Text/";
 
 opendir(DIR, $dir_path);
 @files = grep(/\.xml$/,readdir(DIR));

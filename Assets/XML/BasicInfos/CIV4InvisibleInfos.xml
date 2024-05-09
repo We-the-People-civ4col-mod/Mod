@@ -5,10 +5,10 @@
 <!-- -->
 <!-- Basic Infos -->
 <Civ4InvisibleInfos xmlns="x-schema:CIV4BasicInfoSchema.xml">
-    <InvisibleInfos>
-        <InvisibleInfo>
-            <Type>INVISIBLE_RANGER</Type>
-            <Description>TXT_KEY_INVISIBLE_RANGER</Description>
-        </InvisibleInfo>
-    </InvisibleInfos>
+	<InvisibleInfos>
+		<InvisibleInfo>
+			<Type>INVISIBLE_RANGER</Type>
+			<Description>TXT_KEY_INVISIBLE_RANGER</Description>
+		</InvisibleInfo>
+	</InvisibleInfos>
 </Civ4InvisibleInfos>

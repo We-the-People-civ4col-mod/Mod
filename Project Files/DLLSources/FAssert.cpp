@@ -1,10 +1,9 @@
-#include "CvGameCoreDll.h"
+#include "CvGameCoreDLL.h"
 
 #if defined(FASSERT_ENABLE) && defined(WIN32)
 
 #include "FDialogTemplate.h"
 
-#include <tchar.h>
 #include <stdio.h>
 
 namespace
@@ -28,6 +27,9 @@ namespace
 		const char* szFileName;
 		const char* szFunctionName; // advc.006f
 		unsigned int line;
+		const char* callerFile;
+		unsigned int callerLine;
+		const char* callerFunction;
 
 		// EIP / EBP / ESP
 		CONTEXT context;
@@ -64,19 +66,45 @@ namespace
 				sprintf(title, "Assert Failed: %s", moduleName);
 				SetWindowText(hDlg, title);
 
-				sprintf( g_AssertText, "Assert Failed\r\n\r\n"
-					"File:  %s\r\n"
-					"Line:  %u\r\n"
-					"Func:  %s\r\n" // advc.006f
-					"Expression:  %s\r\n"
-					"Message:  %s\r\n"
-					"\r\n"
-					"----------------------------------------------------------\r\n",
-					g_AssertInfo.szFileName,
-					g_AssertInfo.line,
-					g_AssertInfo.szFunctionName, // advc.006f
-					g_AssertInfo.szExpression,
-					g_AssertInfo.szMessage ? g_AssertInfo.szMessage : "" );
+				if (g_AssertInfo.callerFile != NULL && g_AssertInfo.callerFunction != NULL)
+				{
+					sprintf(g_AssertText, "Assert Failed\r\n\r\n"
+						"File:  %s\r\n"
+						"Line:  %u\r\n"
+						"Func:  %s\r\n" // advc.006f
+						"Expression:  %s\r\n"
+						"Caller File:  %s\r\n"
+						"Caller Line:  %u\r\n"
+						"Caller Func:  %s\r\n"
+						"Message:  %s\r\n"
+						"\r\n"
+						"----------------------------------------------------------\r\n",
+						g_AssertInfo.szFileName,
+						g_AssertInfo.line,
+						g_AssertInfo.szFunctionName, // advc.006f
+						g_AssertInfo.szExpression,
+						g_AssertInfo.callerFile,
+						g_AssertInfo.callerLine,
+						g_AssertInfo.callerFunction,
+						g_AssertInfo.szMessage ? g_AssertInfo.szMessage : "");
+				}
+				else
+				{
+					sprintf(g_AssertText, "Assert Failed\r\n\r\n"
+						"File:  %s\r\n"
+						"Line:  %u\r\n"
+						"Func:  %s\r\n" // advc.006f
+						"Expression:  %s\r\n"
+						"Message:  %s\r\n"
+						"\r\n"
+						"----------------------------------------------------------\r\n",
+						g_AssertInfo.szFileName,
+						g_AssertInfo.line,
+						g_AssertInfo.szFunctionName, // advc.006f
+						g_AssertInfo.szExpression,
+						g_AssertInfo.szMessage ? g_AssertInfo.szMessage : "");
+				}
+					
 
 				::SetWindowText( ::GetDlgItem(hDlg, IDC_ASSERTION_TEXT), g_AssertText );
 				::SetFocus( ::GetDlgItem(hDlg, IDC_DEBUG) );
@@ -116,26 +144,26 @@ namespace
 
 	DWORD DisplayAssertDialog()
 	{
-		CDialogTemplate dialogTemplate(_T("Assert Failed!"),
+		CDialogTemplate dialogTemplate( "Assert Failed!",
 			DS_SETFONT | DS_CENTER | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU,
-			0, 0, 450, 166, _T("MS Shell Dlg"), 8);
+			0, 0, 450, 166, "MS Shell Dlg", 8 );
 
-		dialogTemplate.AddButton( _T("Ignore Always"), WS_VISIBLE, 0,
+		dialogTemplate.AddButton( "Ignore Always", WS_VISIBLE, 0,
 			157,145,64,14, IDC_IGNORE_ALWAYS );
 
-		dialogTemplate.AddButton( _T("&Ignore Once"), WS_VISIBLE, 0,
+		dialogTemplate.AddButton( "&Ignore Once", WS_VISIBLE, 0,
 			82,145,64,14, IDC_IGNORE_ONCE );
 
-		dialogTemplate.AddButton( _T("&Debug"), WS_VISIBLE, 0,
+		dialogTemplate.AddButton( "&Debug", WS_VISIBLE, 0,
 			307,145,64,14, IDC_DEBUG );
 
-		dialogTemplate.AddButton(_T("&Stop"), WS_VISIBLE, 0,
+		dialogTemplate.AddButton( "&Stop", WS_VISIBLE, 0,
 			382, 145, 64, 14, IDC_STOP);
 
-		dialogTemplate.AddButton( _T("&Abort"), WS_VISIBLE, 0,
+		dialogTemplate.AddButton( "&Abort", WS_VISIBLE, 0,
 			232,145,64,14, IDC_ABORT );
 
-		dialogTemplate.AddEditBox( _T(""), ES_MULTILINE | ES_AUTOVSCROLL |
+		dialogTemplate.AddEditBox( "", ES_MULTILINE | ES_AUTOVSCROLL |
 			ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL | WS_HSCROLL | WS_VISIBLE, WS_EX_STATICEDGE,
 			7,7,365,130, IDC_ASSERTION_TEXT );
 
@@ -146,7 +174,7 @@ namespace
 } // end anonymous namespace
 
 bool FAssertDlg(const char* szExpr, const char* szMsg, const char* szFile, unsigned int line,
-	/* <advc.006f> */ const char* szFunction, /* </advc006f> */ bool& bIgnoreAlways) 
+	/* <advc.006f> */ const char* szFunction, /* </advc006f> */ const char* callerFile, unsigned int callerLine, const char* callerFunction, bool& bIgnoreAlways)
 {
 //	FILL_CONTEXT( g_AssertInfo.context );
 
@@ -155,6 +183,9 @@ bool FAssertDlg(const char* szExpr, const char* szMsg, const char* szFile, unsig
 	g_AssertInfo.szFileName = szFile;
 	g_AssertInfo.szFunctionName = szFunction; // advc.006f
 	g_AssertInfo.line = line;
+	g_AssertInfo.callerFile = callerFile;
+	g_AssertInfo.callerLine = callerLine;
+	g_AssertInfo.callerFunction = callerFunction;
 
 	DWORD dwResult = DisplayAssertDialog();
 

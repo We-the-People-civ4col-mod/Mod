@@ -274,7 +274,7 @@ public:
 	bool isInAdvancedStart() const;
 
 	DllExport const CvWString & getName();
-	void setName(const TCHAR* szName);
+	void setName(char const* szName);
 
 	// Script data needs to be a narrow string for pickling in Python
 	std::string getScriptData() const;
@@ -372,7 +372,7 @@ public:
 
 	TeamTypes getFatherTeam(FatherTypes eFather) const;
 	int getFatherGameTurn(FatherTypes eFather) const;
-	void setFatherTeam(FatherTypes eFather, TeamTypes eTeam);
+	void setFatherTeam(AssertCallerData assertData, FatherTypes eFather, TeamTypes eTeam);
 	bool getRemainingFathers(FatherPointTypes ePointType, std::vector<FatherTypes>& aFathers);
 	int getFatherCategoryPosition(FatherTypes eFather) const;
 
@@ -407,6 +407,8 @@ public:
 	void writeDesyncLog();
 
 	int getRemainingForcedPeaceTurns() const;
+
+	static const int PLOT_OCEAN_DISTANCE_IMPASSABLE_THRESHOLD = 1000;
 
 protected:
 
@@ -497,6 +499,7 @@ protected:
 	int		m_eCultureVictoryCultureLevel;
 
 	void doTurn();
+	void doFoundingFathers();
 	// < JAnimals Mod Start >
 	void createBarbarianPlayer();
 	void createAnimalsLand();
@@ -525,6 +528,7 @@ protected:
 	void updateOceanDistances();
 
 	void doUpdateCacheOnTurn();
+	CvPlot* getAnyEuropePlot() const;
 };
 
 #endif
