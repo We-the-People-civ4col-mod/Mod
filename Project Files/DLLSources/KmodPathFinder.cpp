@@ -283,10 +283,15 @@ void KmodPathFinder::SetSettings(const CvPathSettings& new_settings)
 		{
 			if (settings.pGroup->getDomainType() == DOMAIN_SEA)
 			{
-				// Not accurate anymore due to the introduction of streams:
-				// K-Mod "this assume there are no sea-roads, or promotions to reduce sea movement cost."
-				//settings.iHeuristicWeight = GC.getMOVE_DENOMINATOR();
-				settings.iHeuristicWeight = MinimumStepCost(settings.pGroup->baseMoves());
+				if (GC.getMap().hasStream())
+					// If the map contains any streams then we have to accomodate the possibility
+					// of what is essentially a sea-road that cuts movement cost in half 
+					settings.iHeuristicWeight = GLOBAL_DEFINE_MOVE_DENOMINATOR / 2;
+				else
+					// K-Mod "this assume there are no sea-roads, or promotions to reduce sea movement cost."
+					// Note that WTP does have such promotions but they cannot presently reduce movement below
+					// the move denominator
+					settings.iHeuristicWeight = GLOBAL_DEFINE_MOVE_DENOMINATOR;
 			}
 			else
 			{
