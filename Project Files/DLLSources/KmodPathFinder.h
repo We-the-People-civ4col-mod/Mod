@@ -4,7 +4,11 @@
 #define KMOD_PATHFINDER_H
 
 #include <vector>
+#include <queue>
 #include "FAStarNode.h"
+#include "TBB.h"
+#include "tbb/task_group.h"
+#include <cstdlib>
 
 class CvSelectionGroup;
 
@@ -43,6 +47,14 @@ public:
 	void SetSettings(const CvSelectionGroup* pGroup, int iFlags = 0, int iMaxPath = -1, int iHW=-1) { SetSettings(CvPathSettings(pGroup, iFlags, iMaxPath, iHW)); }
 	void Reset();
 
+	int map_width, map_height;
+	// Pool of pre-cleared node_data
+	std::queue<FAStarNode*> cleared_data_pool;
+	tbb::task_group group;
+	tbb::mutex pool_mutex;
+	void clearNodeData(FAStarNode* data, int totalSize);
+	bool cleared_data_pool_initialized;
+
 protected:
 	void AddStartNode();
 	void RecalculateHeuristics();
@@ -63,10 +75,12 @@ protected:
 	int start_x, start_y;
 	FAStarNode* end_node;
 	CvPathSettings settings;
-	int map_width, map_height;
 
 	static int admissible_scaled_weight;
 	static int admissible_base_weight;
+
+	// Helper to initialize the pool
+	void initializePool(int poolSize);
 };
 
 #endif
