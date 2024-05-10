@@ -5487,7 +5487,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER</Tag>
-		<English>Milord, a [COLOR_HIGHLIGHT_TEXT]failed native trader[COLOR_REVERT] has returned from the wilderness to the colonies. What a blessing. Now that he has recovered, he is ready to go back to the natives. Trade is simply in his blood.</English>
+		<English>Milord, a [COLOR_HIGHLIGHT_TEXT]failed native trader[COLOR_REVERT] recently returned from the wilderness to our colonies. What a blessing! Even so, now that he's recovered he's eager to go back among the Natives. Trading must be in his blood.</English>
 		<German>Milord, ein [COLOR_HIGHLIGHT_TEXT]gescheiterter Ureinwohnerhändler[COLOR_REVERT] hat aus der Wildnis zurück in die Kolonien gefunden. Welch ein Segen. Nachdem er sich erholt hat, ist er bereit nochmals zu den Ureinwohnern aufzubrechen. Handel liegt ihm einfach im Blut.</German>
 		<Russian>Милорд, [COLOR_HIGHLIGHT_TEXT]неудачливый торговец с индейцами[COLOR_REVERT] вернулся из пустошей в колонию. Какое счастье. И теперь, когда он поправил пошатнувшееся за время скитаний здоровье, он готов вернуться к аборигенам. Он  не может жить без торговли, она у него в крови.</Russian>
 	</TEXT>
@@ -5517,7 +5517,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY</Tag>
-		<English>Milord, a [COLOR_HIGHLIGHT_TEXT]failed missionary[COLOR_REVERT] has returned from the wilderness to the colonies. What a blessing. Now that he has recovered, he is ready to go back to the natives. Proclaiming the word of God is simply in his blood.</English>
+		<English>Milord, a [COLOR_HIGHLIGHT_TEXT]failed missionary[COLOR_REVERT] recently made his way back from the wilderness. What a blessing! Now he's recovered and wants to return to the Natives. Preaching God's word must be in his blood.</English>
 		<German>Milord, ein [COLOR_HIGHLIGHT_TEXT]gescheiterter Missionar[COLOR_REVERT] hat aus der Wildnis zurück in die Kolonien gefunden. Welch ein Segen. Nachdem er sich erholt hat, ist er bereit nochmals zu den Ureinwohnern aufzubrechen. Das Wort Gottes zu verkünden liegt ihm einfach im Blut.</German>
 		<Russian>Милорд, [COLOR_HIGHLIGHT_TEXT]неудачливый миссионер[COLOR_REVERT] вернулся из пустошей в колонию. Господь был милостив к нему. И теперь, когда он поправил пошатнувшееся за время скитаний здоровье, он готов вернуться к аборигенам и с новыми силами нести Слово Божье заблудшим душам.</Russian>
 	</TEXT>
@@ -5535,7 +5535,7 @@
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FALIED_MISSIONARY_CHANGE_HELP</Tag>
-		<English>[ICON_BULLET]A failed missionary becomes a christian missionary again.</English>
+		<English>[ICON_BULLET]A failed missionary becomes a Christian missionary again.</English>
 		<German>[ICON_BULLET]Ein gescheiterter Missionar wird wieder zu einem erfahrenen Missionar.</German>
 		<Russian>[ICON_BULLET]Разочаровавшийся миссионер снова становится христианским миссионером.</Russian>
 	</TEXT>	
@@ -5547,7 +5547,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_FAKE_NEWS_1</Tag>
-		<English>Milord, newspapers are opening in more and more cities and printing presses. Among them, however, were more and more seditious writings which are spreading horror stories about the king. The Crown demands that we intervene!</English>
+		<English>Milord, newspapers are rolling off the printing presses in more and more cities. More than a few have seditious horror stories about the King. The Crown demands that we intervene!</English>
 		<German>Milord, in immer mehr Städten eröffnen Zeitungen und Druckerpressen. Darunter mischen sich aber auch immer mehr aufrührerische Schriften, die wahre Schauermärchen über den König verbreiten. Die Krone verlangt, dass wir einschreiten!</German>
 		<Russian>Милорд, во все большем количестве городов открываются печатные станки и типографии. Прекрасно, не правда ли? Однако все чаще среди публикуемого стали встречаться статьи, распространяющие ужасные истории о нашем Короле. Корона требует, чтобы мы вмешались!</Russian>
 	</TEXT>
@@ -5559,55 +5559,55 @@
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_2</Tag>
-		<English>Excellent, that's what people like to read. But let's not show our support too clearly - not yet.</English>
+		<English>Excellent, that's what people like to read. But we mustn't show our support too clearly - not yet.</English>
 		<German>Hervorragend, sowas lesen die Leute eben gerne. Aber zeigen wir unsere Unterstützung mal lieber nicht zu deutlich - noch nicht.</German>
 		<Russian>Отлично, люди любят читать такие новости. Но давайте не будем слишком явно демонстрировать нашу поддержку – пока.</Russian>
 	</TEXT>	
-	<TEXT>
+	<TEXT>to
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_3</Tag>
-		<English>That is high treason! Long live the king. Let the militia line up and keep order. Let's arrest the ringleaders and make sure that the newspapers only print non-political local news.</English>
+		<English>That is high treason! Long live the King! Line up the militia! We need to keep order! Arrest the ringleaders and restrict the newspapers to non-political local news.</English>
 		<German>Das ist Hochverrat! Verhaften wir die Rädelsführer und sorgen dafür, dass die Zeitungen nur noch unpolitische Lokalnachrichten drucken. Mobilisiert die Miliz!</German>
 		<Russian>Это же государственная измена! Да здравствует Король! Прикажите ополчению арестовать зачинщиков и навести порядок. И распорядитесь, чтобы газеты печатали только местные неполитические новости.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_4</Tag>
-		<English>That is high treason! Long live the king. Let's arrest the ringleaders and close down at least the newspaper in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. That will teach the others a lesson.</English>
+		<English>That is high treason! Long live the King. Arrest the ringleaders. Close down the newspaper in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] as an example. That will show the others we're serious.</English>
 		<German>Das ist Hochverrat! Verhaften wir die Rädelsführer und schließen wir jedenfalls das Zeitungshaus in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Das wird den anderen eine Lehre sein.</German>
 		<Russian>Арестовать негодяев, распространяющих эти лживые новости про нашего обожаемого Короля, да благословит его Господь, и закрыть их мерзкую газетёнку в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Это послужит хорошим уроком для всех остальных.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES</Tag>
-		<English>In the [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] empire the taverns and alehouses become conspiratorial places.</English>
+		<English>In the [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] empire taverns and alehouses are becoming conspiratorial hangouts.</English>
 		<German>Im [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonialreich werden die Taveren und Spelunken zu konspirativen Orten.</German>
 		<Russian>В колониях [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] таверны и кабаки становятся местами заговора.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_1</Tag>
-		<English>Milord, alcohol makes people talkative and careless. In pubs and taverns extremely critical speeches about the king are being made more and more frequently.</English>
+		<English>Milord, alcohol makes people careless. In the taverns openly hostile speeches about the King are more and more frequent.</English>
 		<German>Milord, Alkohol macht die Leute redselig und leichtsinnig. In Schenken und Spelunken werden immer häufiger äußerst kritische Reden über den König geschwungen.</German>
 		<Russian>Милорд, алкоголь делает людей чересчур разговорчивыми и беспечными. В кабаках и тавернах все чаще можно услышать что-то нелицеприятное в адрес Короля.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_1</Tag>
-		<English>Yes, I've noticed that too, I mean, I've heard it. So what, as long as people just talk like that and drinking doesn't stop them from working, let them talk. I suggest we have a good drink first, too.</English>
+		<English>Yes, I've noticed that too. I've actually heard it myself. So what, as long as it's just talk and the drinking doesn't stop them from working. Let them talk! Speaking of which, this feels like a good time for us to go get a drink.</English>
 		<German>Ja, das ist mir auch schon aufgefallen, ähm ich meine, es ist mir zu Ohren gekommen. Na und, solange die Leute nur so daherreden und sie das Trinken nicht von der Arbeit abhält, lasst die Leute doch reden. Ich schlage vor, wir genehmigen uns auch erst mal einen guten Tropfen.</German>
 		<Russian>Да, я тоже это заметил, то есть даже сам слышал. Ничего страшного - пока подобные высказвания и выпивка им не мешает работать, пусть болтают. Надо же им где-то выпускать пар. Кстати, а почему бы и нам не опрокинуть по стаканчику?</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_2</Tag>
-		<English>Yes, but what should we do? If we ban people from whoring and drinking, we'll have a revolution on the spot. But let's make sure it doesn't get too out of hand and move the curfew forward by an hour.</English>
+		<English>Yes, but what should we do? If we ban people from whoring and drinking, there'll be a revolution on the spot. We just can't let it get too out of hand. Let's move the curfew forward by an hour.</English>
 		<German>Ja, nur was sollen wir tun. Wenn wir den Leuten das Huren und Trinken verbieten, haben wir auf der Stelle eine Revolution. Sorgen wir aber dafür, dass es nicht zu sehr ausartet und verlegen wir die Sperrstunde um eine Stunde nach vorne.</German>
 		<Russian>Да, но что нам делать? Если мы закроем трактиры, нас тут же поднимут на вилы. Но чтобы хоть как-то обезопаситься и держать ситуацию под контролем, давайте перенесем начало комендантского часа, допустим, на один час раньше.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_3</Tag>
-		<English>For heaven's sake, is nothing sacred anymore? People should have fun in pubs and not talk about politics. We absolutely have to close at least one pub and chase the whores away so that we can say we're cracking down. But let's close a pub far away from the town hall. please</English>
+		<English>For heaven's sake, is nothing sacred anymore? People should have fun in pubs and not talk about politics. We absolutely have to close at least one pub and chase the whores away so that we can say we're cracking down. Make sure the pub we close is far away from the town hall.</English>
 		<German>Um Himmels Willen, ist denn gar nichts mehr heilig. Im Wirtshaus soll man sich amüsieren und nicht über Politik reden. Wir müssen unbedingt mindestens ein Wirtshaus schließen und die Huren verjagen, damit wir sagen können wir greifen hart durch. Aber schließen wir bitte ein Wirtshaus weit weg vom Rathaus.</German>
 		<Russian>Да что они себе позволяют? В кабаках люди должны отдыхать, а не говорить о политике. Давайте закроем один салун и прогоним всех шлюх, чтобы можно было сказать, что мы ужесточаем меры и к нам не было бы претензий от метрополии. Но только давайте закроем какое-нибудь заведение подальше от ратуши.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_4</Tag>
-		<English>That's treason, of course! The ringleaders of the sons of liberty meet in the taverns, as far as I've heard. Send in the royal troops and arrest them! They will hang.</English>
+		<English>That's treason, of course! The ringleaders of the Sons of Liberty meet in the taverns. That's what I've heard. Send the royal troops to arrest them! They will hang.</English>
 		<German>Das ist natürlich Hochverrat! In den Spelunken treffen sich die Rädelsführer der Söhne der Freiheit, soweit ich gehört habe. Lasst die Königlichen Truppen antreten und sie dingfest machen! Sie werden hängen.</German>
 		<Russian>Господь всемогущий, да это же измена! Насколько я слышал, главари этих так называемых "Сынов свободы" встречаются в тавернах. Отправить туда королевские войска и арестовать их! Скоро они все будут раскачиваться в петле.</Russian>
 	</TEXT>
@@ -5619,13 +5619,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_1</Tag>
-		<English>Milord, desertion is spreading. Some of our best troops have decided against the glorious cause and in favor of mutiny. They have run off with the regimental treasury and are gathering in the surrounding area.</English>
+		<English>Milord, desertion is spreading. Some of our best troops have turned against our glorious cause. It's mutiny! After seizing the regimental treasury they're gathering nearby.</English>
 		<German>Milord, Desertion greift um sich. Einige unserer besten Truppen haben sich gegen die glorreiche Sache und für die Meuterei entschieden. Sie sind mit der Regimentskasse abgehauen und sammeln sich in der Umgebung.</German>
 		<Russian>Милорд, в войсках распространяется дезертирство. Несколько из наших лучших солдат подняли мятеж! Они сбежали с полковой казной и собираются в отряды.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_1</Tag>
-		<English>It is unbelievable. In our darkest hour, they let us down. To arms, we'll deal with these traitors, too!</English>
+		<English>It's unbelievable. In our darkest hour, they let us down. To arms! We'll show these traitors hot lead and cold steel!</English>
 		<German>Es ist unfassbar. In unserer schwersten Stunde lassen sie uns im Stich. Zu den Waffen, mit diesen Verrätern werden wir auch noch fertig!</German>
 		<Russian>Мерзавцы, они предали всех, кто сражался с ними плечом к плечу! К оружию, разберёмся с этими предателями!</Russian>
 	</TEXT>	
@@ -5637,25 +5637,25 @@
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_3</Tag>
-		<English>Let them go, we will meet them again in hell. The fight for freedom goes first.</English>
+		<English>Let them go. We'll meet them again in hell. The fight for freedom has to come first.</English>
 		<German>Lasst sie ziehen, wir werden sie in der Hölle wiedersehen. Der Kampf für die Freiheit geht vor.</German>
 		<Russian>Не будем отвлекаться на этих трусов, мы спросим с них за всё потом. Борьба за нашу свободу должна быть на первом месте.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INFANTRY_MUTINY_HELP</Tag>
-		<English>The deserters will gather nearby and probably attack us.</English>
+		<English>The deserters are gathering nearby. They're getting ready to attack us.</English>
 		<German>Die Deserteure werden sich in der Nähe sammeln und uns vermutlich angreifen.</German>
 		<Russian>Дезертиры соберутся в отряд неподалеку и, вероятно, нападут на нас.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH</Tag>
-		<English>In the colonies of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] empire, an enthusiastic speaker fires up the idea of revolution.</English>
+		<English>In the colonies of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] empire, an enthusiastic speaker fires up crowds with talk of revolution.</English>
 		<German>In den Kolonien des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs befeuert ein begeisterter Redner die Idee der Revolution.</German>
 		<Russian>В колониях империи [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] оратор-энтузиаст разжигает идею революции в умах людей.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH_1</Tag>
-		<English>Milord, a well-known lawyer and advocate of the revolution, gave a moving and inspiring speech in Congress. He literally said "...give me liberty or give me death!" He was referring to the king. We must speak out, otherwise they will storm the palace. I can already see the torches in the distance!</English>
+		<English>Milord, a well-known lawyer, an advocate of revolution, gave an inspiring speech in Congress. He literally said "...give me liberty or give me death!" He meant the King. We have to say something, before they storm our palace. I can already see the torches in the distance!</English>
 		<German>Milord, ein bekannter Anwalt und Verfechter der Revolution hat im Kongress eine ergreifende und begeisternde Rede gehalten. Er sagte wörtlich "...geben Sie mir die Freiheit oder den Tod!" Damit meint er den König. Wir müssen uns dazu äußern, sonst stürmen sie noch den Palast. Ich sehe schon die Fackeln in der Ferne!</German>
 		<Russian>Милорд, известный юрист и защитник революции выступил с вдохновляющей речью в Конгрессе. Он сказал буквально следующее: "...дайте мне свободу или дайте мне смерть!" Он обращался к Королю. Мы срочно должны как-то ответить, иначе толпа возьмёт наш дворец штурмом. Я уже вижу вдалеке факелы!</Russian>
 	</TEXT>
@@ -5667,7 +5667,7 @@
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH_2</Tag>
-		<English>Are we all mad? We can't go to war with our king. We must remain loyal to our monarch! But you're right, maybe we should leave through a side entrance until things have calmed down a bit. Then we need to talk to the most influential people to get the situation under control.</English>
+		<English>Are we all mad? We can't go to war with our King. We're deeply loyal to our monarch! But you're right, maybe we should leave through a side entrance until things calm down a bit. That way we can talk to influential people and start to get the situation under control.</English>
 		<German>Ja sind denn alle des Wahnsinns? Wir können uns nicht mit unserem König in einen Krieg stürzen. Wir müssen loyal zu unserem Monarchen bleiben! Aber ihr habt Recht, vielleicht sollten wir uns lieber durch einen Seiteneingang verdrücken, bis sich die Lage etwas beruhigt hat. Danach müssen wir mit den einflussreichsten Leuten sprechen, um die Lage in den Griff zu bekommen.</German>
 		<Russian>Они в своём уме? Мы не можем воевать с нашим Королем. Мы должны сохранять верность нашему монарху! Но ты прав, наверное нам стоит покинуть дворец через боковой вход и подождать, пока всё немного успокоится. И нам срочно нужно поговорить с наиболее влиятельными людьми города, чтобы взять ситуацию под контроль.</Russian>
 	</TEXT>	
@@ -5679,7 +5679,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTION_1_HELP</Tag>
-		<English>[COLOR_FONT_GOLD]His Majesty reaction was ferocious. Rumours report that He has shot at a portrait of you.[COLOR_REVERT]</English>
+		<English>[COLOR_FONT_GOLD]His Majesty's reaction was ferocious. He actually shot holes through your portrait.[COLOR_REVERT]</English>
 		<German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Der König ist fuchsteufelswild. Kammerdiener berichten, dass er auf ein Porträt von Euch geschossen haben soll.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Его Величества в бешенстве. Ходят слухи, что Он расстрелял ваш портрет.[COLOR_REVERT]</Russian>
 	</TEXT>
@@ -5691,19 +5691,19 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_START</Tag>
-		<English>Influential merchants suggest sending an [COLOR_UNIT_TEXT]envoy[COLOR_REVERT] to Europe to negotiate with the king.</English>
+		<English>Influential merchants suggest sending an [COLOR_UNIT_TEXT]envoy[COLOR_REVERT] to Europe to negotiate with the King.</English>
 		<German>Einflussreiche Kaufleute schlagen vor, einen [COLOR_UNIT_TEXT]Gesandten[COLOR_REVERT] nach Europa zu schicken, um mit dem König zu verhandeln.</German>
 		<Russian>Влиятельные торговцы предлагают отправить [COLOR_UNIT_TEXT]посланника[COLOR_REVERT] в Европу для переговоров с Королём.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_START_DONE</Tag>
-		<English>The envoy is ready for the crossing.</English>
+		<English>The envoy is ready to embark for Europe.</English>
 		<German>Der Gesandte ist zur Überfahrt bereit.</German>
 		<Russian>Посланец готов к отбытию.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_START</Tag>
-		<English>Milord, we should definitely send an envoy to Europe who can speak directly to the king about the situation. It would be best to send a nobleman who knows how to talk to a king. Perhaps we can at least negotiate tax concessions.</English>
+		<English>Milord, we should definitely send an envoy to Europe who can speak directly to the King about our situation. It would be best to send a nobleman who knows how to talk to a King. It would help if we can at least negotiate tax concessions.</English>
 		<German>Milord, wir sollten unbedingt einen Gesandten nach Europa schicken, der direkt mit dem König über die Situation sprechen kann. Schickt am besten einen [COLOR_UNIT_TEXT]Adligen[COLOR_REVERT], der weiß wie man mit einem König spricht. Vielleicht können wir wenigstens Steuererleichterungen herausschlagen.</German>
 		<Russian>Милорд, нам обязательно следует отправить в Европу посланника, который сможет поговорить о ситуации напрямую с Королём. Лучше всего было бы послать дворянина, который знает, как правильно разговаривать с монархом. Возможно, нам даже удастся договориться о налоговых льготах.</Russian>
 	</TEXT>
