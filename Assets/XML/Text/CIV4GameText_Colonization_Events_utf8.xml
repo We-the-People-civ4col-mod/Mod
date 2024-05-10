@@ -5301,7 +5301,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_SEASONED_TRADER_HELP</Tag>
-		<English>[ICON_BULLET]A courageous Native trader joins the expedition.</English>
+		<English>[ICON_BULLET]A courageous native trader joins the expedition.</English>
 		<German>[ICON_BULLET]Couragierte Ureinwohnerhändler schließen sich der Expedition an.</German>
 		<Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]Отважный торговец с индейцами[COLOR_REVERT] присоединяется к нашей экспедиции.</Russian>
 	</TEXT>
@@ -5427,13 +5427,13 @@
 	</TEXT>
   <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_BRAVE_FELLOWS</Tag>
-		<English>Your expedition has entered a Native village. The natives are thrilled by your strange garments and stories of the adventures they have experienced. Some warriors want to join your expedition. What would you do?</English>
+		<English>Your expedition has entered a Native village. The Natives are thrilled by your strange garments and stories of the adventures they have experienced. Some warriors want to join your expedition. What would you do?</English>
 		<German>Euere Expedition hat ein Dorf der Ureinwohner betreten. Die Ureinwohner sind begeistert von Euren fremdartigen Gewändern und Geschichten von den erlebten Abenteuern. Einige Krieger wollen sich Euch anschließen. Was wollt Ihr tun?</German>
 		<Russian>Ваша экспедиция вошла в деревню индейцев. Туземцы в восторге от странных одежд и рассказов о приключениях, которые пережили их гости. Некоторые воины жаждут приключений и хотят присоединиться к экспедиции. Как нам поступить?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_1</Tag>
-		<English>We will accept the warriors into our ranks. We can make good use of them. Give them some of our clothes as a symbol of friendship.</English>
+		<English>We will accept the warriors into our ranks. We can make good use of them. Give them some of our distinctive clothing as a symbol of friendship.</English>
 		<German>Wir werden die Krieger in unsere Reihen aufnehmen. Wir können sie gut gebrauchen. Gebt Ihnen einige unserer Kleider als Zeichen der Freundschaft.</German>
 		<Russian>Мы примем воинов в наши ряды. Думаю, они могут нам пригодится. Подарите индейцам что-нибудь из нашей одежды в знак дружбы.</Russian>
 	</TEXT>
@@ -5451,31 +5451,31 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_2_News</Tag>
-		<English>The natives are angry about the behavior of an expedition.</English>
+		<English>The Natives are furious about how our expedition behaved.</English>
 		<German>Die Ureinwohner sind über das Verhalten einer Expedition verärgert.</German>
 		<Russian>Индейцы возмущены поведением членов экспедиции.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_3</Tag>
-		<English>Tell them the offer honors us, but they should rather stay at home and protect their village. Perhaps they can tell us something helpful about the area here?</English>
+		<English>Tell them the offer honours us, but it's better for them to stay at home and protect their village. Can they help us with advice about this area?</English>
 		<German>Sagt Ihnen das Angebot ehrt uns, aber sie sollten lieber zuhause bleiben und ihr Dorf beschützen. Vielleicht können sie uns aber etwas hilfreiches über die Gegend hier berichten?</German>
 		<Russian>Скажите вождю, что мы высоко ценим их предложение, но воинам лучше остаться дома и защищать свою деревню. Но, может быть, они смогут рассказать нам что-нибудь полезное об окружающей местности?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_3_News</Tag>
-		<English>An expedition makes friends with some Natives.</English>
+		<English>An expedition makes friends with local Natives.</English>
 		<German>Eine Expedition freundet sich mit einigen Ureinwohnern an.</German>
 		<Russian>Экспедиция заводит дружбу с индейцами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_NEW_SCOUT_HELP</Tag>
-		<English>[ICON_BULLET]Some natives will join you, allowing you to split up the expedition.</English>
+		<English>[ICON_BULLET]Some Natives will join you, so you can split up the expedition.</English>
 		<German>[ICON_BULLET]Einige Ureinwohner werden sich Euch anschließen, wodurch Ihr die Expedition aufteilen könnt.</German>
 		<Russian>[ICON_BULLET]К вам присоединятся несколько индейцев туземцы, что позволит разделить экспедицию на несколько отрядов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_NONEW_SCOUT_HELP</Tag>
-		<English>[ICON_BULLET]Some natives are angry at your reaction. They want to prove how valuable they are and will attack you.</English>
+		<English>[ICON_BULLET]These Natives are angry at your reaction. As proof of their power they're ready to attack you.</English>
 		<German>[ICON_BULLET]Einige Ureinwohner sind wütend über Eure Reaktion. Sie wollen beweisen wie wertvoll sie sind und werden Euch angreifen.</German>
 		<Russian>[ICON_BULLET]Некоторых туземцев не устраивает ваша реакция. Они хотят доказать, насколько они хороши и нападут на вас.</Russian>
 	</TEXT>
