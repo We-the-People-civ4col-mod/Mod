@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Civ4GameText xmlns="http://www.firaxis.com">
-    <TEXT>
-        <Tag>TXT_KEY_ROUTE_ROAD</Tag>
-        <English>[COLOR_FONT_GOLD]Road[COLOR_REVERT]</English>
-        <French>
-            <Text>[COLOR_FONT_GOLD]Route[COLOR_REVERT]</Text>
-            <Gender>Female</Gender>
-            <Plural>0</Plural>
-        </French>
-        <German>
-            <Text>[COLOR_FONT_GOLD]Straße:Straßen[COLOR_REVERT]</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </German>
-        <Italian>
-            <Text>[COLOR_FONT_GOLD]Strada:Strade[COLOR_REVERT]</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Italian>
-        <Spanish>
-            <Text>[COLOR_FONT_GOLD]Carretera:Carreteras[COLOR_REVERT]</Text>
-            <Gender>Female</Gender>
-            <Plural>0:1</Plural>
-        </Spanish>
-        <Russian>[COLOR_FONT_GOLD]Дорога[COLOR_REVERT]</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ROUTE_COUNTRY_ROAD</Tag>
-        <English>[COLOR_FONT_GOLD]Country Road[COLOR_REVERT]</English>
-        <French>[COLOR_FONT_GOLD]Route de gravier[COLOR_REVERT]</French>
-        <German>[COLOR_FONT_GOLD]Landstraße[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_GOLD]Strada di campagna[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_GOLD]Carretera rural[COLOR_REVERT]</Spanish>
-        <Russian>[COLOR_FONT_GOLD]Гравийная дорога[COLOR_REVERT]</Russian>
-    </TEXT>
-    <TEXT>
-        <Tag>TXT_KEY_ROUTE_PLASTERED_ROAD</Tag>
-        <English>[COLOR_FONT_GOLD]Plastered Country Road[COLOR_REVERT]</English>
-        <French>[COLOR_FONT_GOLD]Route pavée[COLOR_REVERT]</French>
-        <German>[COLOR_FONT_GOLD]gepflasterte Landstraße[COLOR_REVERT]</German>
-        <Italian>[COLOR_FONT_GOLD]Strada di campagna intonacata[COLOR_REVERT]</Italian>
-        <Spanish>[COLOR_FONT_GOLD]Carretera rural enlucida[COLOR_REVERT]</Spanish>
-        <Russian>[COLOR_FONT_GOLD]Вымощенная камнем дорога[COLOR_REVERT]</Russian>
-    </TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ROUTE_ROAD</Tag>
+		<English>Road</English>
+		<French>
+			<Text>Route</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Straße:Straßen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Strada:Strade</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Carretera:Carreteras</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Дорога</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ROUTE_COUNTRY_ROAD</Tag>
+		<English>Country Road</English>
+		<French>Route de gravier</French>
+		<German>Landstraße</German>
+		<Italian>Strada di campagna</Italian>
+		<Spanish>Carretera rural</Spanish>
+		<Russian>Гравийная дорога</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ROUTE_PLASTERED_ROAD</Tag>
+		<English>Paved Country Road</English>
+		<French>Route pavée</French>
+		<German>gepflasterte Landstraße</German>
+		<Italian>Strada di campagna intonacata</Italian>
+		<Spanish>Carretera rural enlucida</Spanish>
+		<Russian>Вымощенная камнем дорога</Russian>
+	</TEXT>
 </Civ4GameText>

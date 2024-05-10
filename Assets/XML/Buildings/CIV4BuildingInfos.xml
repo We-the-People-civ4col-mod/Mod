@@ -255,7 +255,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>200</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -367,7 +367,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>200</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -491,7 +491,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>1000</iYieldStorage>
+			<iYieldStorage>200</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -611,7 +611,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>1400</iYieldStorage>
+			<iYieldStorage>200</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -720,7 +720,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>1000</iYieldStorage>
+			<iYieldStorage>900</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -874,7 +874,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>3000</iYieldStorage>
+			<iYieldStorage>1500</iYieldStorage>
 			<iStorageLossSellPercentage>50</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -968,7 +968,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>5000</iYieldStorage>
+			<iYieldStorage>2100</iYieldStorage>
 			<iStorageLossSellPercentage>60</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -1062,7 +1062,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>150</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>3000</iYieldStorage>
+			<iYieldStorage>2900</iYieldStorage>
 			<iStorageLossSellPercentage>80</iStorageLossSellPercentage>
 			<bIgnoresBoycott>1</bIgnoresBoycott>
 			<bUnlocksStorageLossTradeSettings>1</bUnlocksStorageLossTradeSettings>
@@ -1162,7 +1162,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>150</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>4000</iYieldStorage>
+			<iYieldStorage>3300</iYieldStorage>
 			<iStorageLossSellPercentage>90</iStorageLossSellPercentage>
 			<bIgnoresBoycott>1</bIgnoresBoycott>
 			<bUnlocksStorageLossTradeSettings>1</bUnlocksStorageLossTradeSettings>
@@ -1247,7 +1247,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -1354,7 +1354,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -1457,7 +1457,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -1557,7 +1557,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>100</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -1656,7 +1656,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>200</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -1759,7 +1759,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>300</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -3260,7 +3260,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>50</iYieldStorage>
 			<iMaxHarbourSpaceProvided>8</iMaxHarbourSpaceProvided>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
@@ -3380,7 +3380,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>100</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>100</iYieldStorage>
 			<iMaxHarbourSpaceProvided>14</iMaxHarbourSpaceProvided>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
@@ -3505,7 +3505,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>150</iAsset>
 			<iPower>150</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>150</iYieldStorage>
 			<iMaxHarbourSpaceProvided>20</iMaxHarbourSpaceProvided>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
@@ -3630,7 +3630,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>150</iAsset>
 			<iPower>150</iPower>
-			<iYieldStorage>800</iYieldStorage>
+			<iYieldStorage>200</iYieldStorage>
 			<iMaxHarbourSpaceProvided>32</iMaxHarbourSpaceProvided>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>100.0</fVisibilityPriority>
@@ -3761,7 +3761,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -3860,7 +3860,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -3963,7 +3963,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -4063,7 +4063,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -4165,7 +4165,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -4268,7 +4268,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -4368,7 +4368,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -4483,7 +4483,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -4594,7 +4594,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -4702,7 +4702,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -4809,7 +4809,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -4920,7 +4920,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -5028,7 +5028,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -5130,7 +5130,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -5233,7 +5233,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -5329,7 +5329,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -5432,7 +5432,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -5535,7 +5535,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -5635,7 +5635,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -5740,7 +5740,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -5843,7 +5843,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -5939,7 +5939,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -6041,7 +6041,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -6144,7 +6144,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -6248,7 +6248,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iMaxHarbourSpaceProvided>2</iMaxHarbourSpaceProvided>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
@@ -6348,7 +6348,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iMaxHarbourSpaceProvided>2</iMaxHarbourSpaceProvided>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
@@ -6445,7 +6445,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -6553,7 +6553,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -6652,7 +6652,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -6748,7 +6748,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>10</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -6851,7 +6851,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>50</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -6954,7 +6954,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>100</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -7066,7 +7066,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>100</iPower>
-			<iYieldStorage>800</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -7178,7 +7178,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>100</iPower>
-			<iYieldStorage>1000</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -7284,7 +7284,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>50</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -7383,7 +7383,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>150</iAsset>
 			<iPower>100</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -7482,7 +7482,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>250</iAsset>
 			<iPower>200</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -7587,10 +7587,10 @@
 			<iHealRateChange>0</iHealRateChange>
 			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
 			<iDefense>0</iDefense>
-			<iBombardDefense>800</iBombardDefense>
+			<iBombardDefense>0</iBombardDefense>
 			<iAsset>250</iAsset>
 			<iPower>200</iPower>
-			<iYieldStorage>1000</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -7691,7 +7691,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>50</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -7791,7 +7791,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>150</iAsset>
 			<iPower>100</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -7894,7 +7894,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>250</iAsset>
 			<iPower>200</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -8087,7 +8087,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>50</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -8211,7 +8211,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>100</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -8339,7 +8339,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>100</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -8464,7 +8464,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -8558,7 +8558,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -8661,7 +8661,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -8769,7 +8769,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>800</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -8869,7 +8869,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -8977,7 +8977,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -9089,7 +9089,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -12186,7 +12186,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -12298,7 +12298,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -12409,7 +12409,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -12517,7 +12517,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -12625,7 +12625,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -12732,7 +12732,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -12836,7 +12836,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -12943,7 +12943,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -13050,7 +13050,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -13154,7 +13154,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -13266,7 +13266,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -13377,7 +13377,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -13489,7 +13489,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -13592,7 +13592,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -13695,7 +13695,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -13791,7 +13791,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -13899,7 +13899,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -14006,7 +14006,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -14110,7 +14110,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>200</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -14218,7 +14218,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>100</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>400</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -14329,7 +14329,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>200</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
