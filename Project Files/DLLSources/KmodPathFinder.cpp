@@ -6,8 +6,7 @@
 #include "CvInfos.h"
 #include "CvSelectionGroup.h"
 #include "CvMap.h"
-
-#include "TBB.h"
+#include "NodeDataPool.h"
 
 int KmodPathFinder::admissible_scaled_weight = 1;
 int KmodPathFinder::admissible_base_weight = 1;
@@ -56,8 +55,7 @@ KmodPathFinder::KmodPathFinder() :
 	end_node(0),
 	map_width(0),
 	map_height(0),
-	node_data(NULL),
-	cleared_data_pool_initialized(false)
+	node_data(NULL)
 {
 	// Unfortunately, the pathfinder is constructed before the map width and height are determined.
 
@@ -69,15 +67,7 @@ KmodPathFinder::KmodPathFinder() :
 
 KmodPathFinder::~KmodPathFinder()
 {
-	//free(node_data);
-	group.wait(); // Ensure all async operations are completed
-	delete[] node_data;
-
-	while (!cleared_data_pool.empty()) {
-		FAStarNode* data = cleared_data_pool.front();
-		cleared_data_pool.pop();
-		delete[] data;
-	}
+	NodeDataPool::getInstance().releaseBuffer(node_data);
 }
 
 bool KmodPathFinder::ValidateNodeMap()
@@ -318,112 +308,14 @@ void KmodPathFinder::Reset()
 }
 */
 
-class ClearAndPushFunctor {
-public:
-	FAStarNode* data;
-	KmodPathFinder* finder;
-
-	ClearAndPushFunctor(FAStarNode* d, KmodPathFinder* pf)
-		: data(d), finder(pf) {}
-
-	void operator()() const {
-		FAssert(finder->map_width * finder->map_height != 0);
-		FAssert((finder->map_width * finder->map_height) > 50);
-		finder->clearNodeData(data, finder->map_width * finder->map_height);
-		tbb::mutex::scoped_lock lock(finder->pool_mutex);
-		finder->cleared_data_pool.push(data);
-	}
-};
-
-
-void KmodPathFinder::clearNodeData(FAStarNode* data, int totalSize) {
-	FAssert(totalSize > 50);
-	FAssert(data != NULL);
-	std::memset(data, 0, sizeof(FAStarNode) * totalSize);
-}
-
-void KmodPathFinder::initializePool(int poolSize) 
-{
-	//tbb::mutex::scoped_lock lock(pool_mutex);
-	for (int i = 0; i < poolSize; ++i) 
-	{
-		map_width = GC.getMap().getGridWidth();
-		map_height = GC.getMap().getGridHeight();
-		FAssert(map_width * map_height != 0);
-		FAStarNode* newData = new FAStarNode[map_width * map_height];
-		clearNodeData(newData, map_width * map_height);
-		cleared_data_pool.push(newData);
-	}
-	cleared_data_pool_initialized = true;
-}
-
 void KmodPathFinder::Reset() {
 
-	// Lock access to the shared resource
-	tbb::mutex::scoped_lock lock(pool_mutex);
-
-	// Ensure the pool is initialized
-	if (!cleared_data_pool_initialized) {
-		//lock.release();
-		initializePool(4);
-	}
-
-	// Check if there's pre-cleared node_data in the pool
-	if (!cleared_data_pool.empty()) {
-		// Use the pre-cleared node_data from the pool
-		FAStarNode* new_data = cleared_data_pool.front();
-		cleared_data_pool.pop();
-		lock.release();  // Release the lock as soon as the shared resource is no longer needed
-
-		// Swap the current node_data with the pre-cleared node_data from the pool
-		FAStarNode* temp = node_data;
-		node_data = new_data;
-
-		// May be NULL if this is a new instance with no previous allocation
-		if (temp != NULL)
-		{ 
-			// Asynchronously clear the old node_data and push it back into the pool
-			group.run(ClearAndPushFunctor(temp, this));
-		}
-	}
-	else {
-		lock.release();
-
-		// Busy-wait until at least one buffer is available
-		while (true) {
-			{
-				tbb::mutex::scoped_lock lock(pool_mutex);
-				if (!cleared_data_pool.empty()) {
-					break;
-				}
-			}
-			// You might want to sleep a bit here to prevent a tight spin loop
-			Sleep(1); // Sleep 1 ms if you have usleep
-		}
-
-		lock.acquire(pool_mutex);
-		
-		// Now we should have at least one available buffer
-		FAStarNode* new_data = cleared_data_pool.front();
-		cleared_data_pool.pop();
-
-		lock.release();
-		// Now, swap the current node_data with the newly allocated node_data
-		FAStarNode* temp = node_data;
-		node_data = new_data;
-
-		// May be NULL if this is a new instance with no previous allocation
-		if (temp != NULL) 
-		{
-			// Asynchronously clear the old node_data and push it back into the pool
-			group.run(ClearAndPushFunctor(temp, this));
-		}
-	}
-
+	node_data = NodeDataPool::getInstance().getBuffer(node_data);
 	// Reset pathfinding state
 	open_list.clear();
 	end_node = NULL;
 }
+
 void KmodPathFinder::AddStartNode()
 {
 	FAssertBounds(0, map_width , start_x);

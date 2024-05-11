@@ -3,11 +3,11 @@
 #ifndef KMOD_PATHFINDER_H // advc: Include guards (might be needed for fastdep)
 #define KMOD_PATHFINDER_H
 
+#include "NodeDataPool.h"
 #include <vector>
 #include <queue>
 #include "FAStarNode.h"
 #include "TBB.h"
-#include "tbb/task_group.h"
 #include <cstdlib>
 
 class CvSelectionGroup;
@@ -24,9 +24,11 @@ struct CvPathSettings
 
 class FAStarNode;
 
+
 class KmodPathFinder
 {
 public:
+	
 	static void InitHeuristicWeights();
 	static int MinimumStepCost(int BaseMoves);
 
@@ -48,13 +50,7 @@ public:
 	void Reset();
 
 	int map_width, map_height;
-	// Pool of pre-cleared node_data
-	std::queue<FAStarNode*> cleared_data_pool;
-	tbb::task_group group;
-	tbb::mutex pool_mutex;
-	void clearNodeData(FAStarNode* data, int totalSize);
-	bool cleared_data_pool_initialized;
-
+	
 protected:
 	void AddStartNode();
 	void RecalculateHeuristics();
@@ -78,9 +74,6 @@ protected:
 
 	static int admissible_scaled_weight;
 	static int admissible_base_weight;
-
-	// Helper to initialize the pool
-	void initializePool(int poolSize);
 };
 
 #endif
