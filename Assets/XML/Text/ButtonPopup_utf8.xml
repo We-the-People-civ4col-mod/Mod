@@ -507,7 +507,7 @@
         <German>Keine KI-Kolonialmächte im Spiel. Es ist möglich, dass diese versehentlich deaktiviert wurden. "Offene" Player Slots werden im Multiplayer nicht automatisch gefüllt.</German>
         <Russian>Европейские ИИ-игроки не обнаружены. Возможно, они были исключены по ошибке. "Открытые" слоты для игроков в мультиплеере не будут использоваться ИИ-игроками.</Russian>
     </TEXT>
-
+	<TEXT>
 		<Tag>TXT_KEY_POPUP_IMPORT_IMPORT</Tag>
 		<English>Import</English>
 		<French>Importer</French>
