@@ -1729,4 +1729,93 @@
 		<DefineName>BASE_TERRAINS_WITHOUT_FEATURE_PERCENTAGE</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>
+	<!-- Bobisback Import Mod Changes -->
+	<!-- This is the amount of turns worth of goods you would like when importing -->
+	<Define>
+        <DefineName>IMPORT_DEMANDED_GOODS_MAINTAIN_AMOUNT</DefineName>
+        <iDefineIntVal>5</iDefineIntVal>
+    </Define>
+	<!-- This is the amount of turns worth of goods you would like to set as a import limit -->
+	<Define>
+        <DefineName>IMPORT_DEMANDED_GOODS_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>8</iDefineIntVal>
+    </Define>
+	<!-- How much lumber should the construction button import -->
+	<Define>
+        <DefineName>IMPORT_CONSTRUCTION_LUMBER_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+	<!-- How much stone should the construction button import -->
+	<Define>
+        <DefineName>IMPORT_CONSTRUCTION_STONE_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+	<!-- How much clay should the construction button import -->
+	<Define>
+        <DefineName>IMPORT_CONSTRUCTION_CLAY_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>100</iDefineIntVal>
+    </Define>
+	<!-- How much tools should the construction button import -->
+	<Define>
+        <DefineName>IMPORT_CONSTRUCTION_TOOLS_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>150</iDefineIntVal>
+    </Define>
+
+	<Define>
+        <DefineName>IMPORT_CONSTRUCTION_ROPE_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>150</iDefineIntVal>
+    </Define>
+	<Define>
+        <DefineName>IMPORT_CONSTRUCTION_SAILCLOTH_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>150</iDefineIntVal>
+    </Define>
+	<Define>
+        <DefineName>IMPORT_MILITARY_MUSKETS_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>250</iDefineIntVal>
+    </Define>
+	<Define>
+        <DefineName>IMPORT_MILITARY_BLADES_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>250</iDefineIntVal>
+	</Define>
+	<Define>
+        <DefineName>IMPORT_MILITARY_CANNONS_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>250</iDefineIntVal>
+    </Define>
+	<Define>
+        <DefineName>IMPORT_MILITARY_HORSES_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>250</iDefineIntVal>
+    </Define>	
+ 	<Define>
+        <DefineName>IMPORT_MILITARY_BLACK_POWDER_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>250</iDefineIntVal>
+    </Define> 
+ 	<Define>
+        <DefineName>IMPORT_LIVESTOCK_CATTLE_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>150</iDefineIntVal>
+    </Define> 
+ 	<Define>
+        <DefineName>IMPORT_LIVESTOCK_SHEEP_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>150</iDefineIntVal>
+    </Define>
+ 	<Define>	
+        <DefineName>IMPORT_LIVESTOCK_GOATS_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>150</iDefineIntVal>
+    </Define> 
+	<Define>	
+        <DefineName>IMPORT_LIVESTOCK_PIGS_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>150</iDefineIntVal>
+    </Define>	
+ 	<Define>	
+        <DefineName>IMPORT_LIVESTOCK_HORSES_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>150</iDefineIntVal>
+    </Define>
+	<Define>	
+        <DefineName>IMPORT_LIVESTOCK_CHICKEN_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>150</iDefineIntVal>
+    </Define>
+	<Define>	
+        <DefineName>IMPORT_LIVESTOCK_GEESE_IMPORT_LIMIT_AMOUNT</DefineName>
+        <iDefineIntVal>150</iDefineIntVal>
+    </Define>	
+
 </Civ4Defines>

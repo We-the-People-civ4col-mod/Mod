@@ -112,7 +112,7 @@ void CvUnit::reloadEntity()
 }
 
 
-void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, Coordinates initCoord, DirectionTypes eFacingDirection, int iYieldStored)
+void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, Coordinates initCoord, DirectionTypes eFacingDirection, int iYieldStored, int iBirthmark)
 {
 	CvWString szBuffer;
 	int iUnitName;
@@ -139,6 +139,14 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 		}
 	}
 
+	if (isTempUnit() || iBirthmark == UNIT_BIRTHMARK_TEMP_UNIT)
+	{
+		AI_init(iBirthmark);
+		jumpTo(initCoord, false, false);
+		return;
+	}
+
+	
 	// TAC - Great General Names - Ray - START
 	//Neuer Code
 	//identifiziere General anhand UnitClass
@@ -280,7 +288,10 @@ void CvUnit::init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAIT
 
 	updateBestLandCombat();
 
-	AI_init();
+	if (iBirthmark != UNIT_BIRTHMARK_TEMP_UNIT)
+		AI_init(GC.getGameINLINE().getSorenRandNum(10000, "AI Unit Birthmark"));
+	else
+		AI_init(iBirthmark);
 
 	setProfession(eProfession);
 
@@ -326,13 +337,13 @@ void CvUnit::uninit()
 
 // FUNCTION: reset()
 // Initializes data members that are serialized.
-void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall)
+void CvUnit::reset(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall, bool bIdentityChange)
 {
 	//--------------------------------
 	// Uninit class
 	uninit();
 
-	resetSavedData(iID, eUnit, eOwner, bConstructorCall);
+	resetSavedData(iID, eUnit, eOwner, bConstructorCall, bIdentityChange);
 	if(eOwner!=NO_PLAYER){
 		setPromotions();
 	}
@@ -729,6 +740,7 @@ void CvUnit::updateOwnerCache(int iChange)
 	kPlayer.changeAssets(getAsset() * iChange);
 	kPlayer.changePower(getPower() * iChange);
 	CvArea* pArea = area();
+	//FAssertMsg(pArea, "No area assigned");
 	if (pArea != NULL)
 	{
 		pArea->changePower(getOwnerINLINE(), getPower() * iChange);
@@ -774,6 +786,9 @@ float CvUnit::NBMOD_GetShipStrength() const
 void CvUnit::doTurn()
 {
 	PROFILE_FUNC();
+
+	if (GET_PLAYER(getOwnerINLINE()).isTempUnit(this))
+		return;
 
 	FAssertMsg(!isDead(), "isDead did not return false as expected");
 	FAssert(getGroup() != NULL || GET_PLAYER(getOwnerINLINE()).getPopulationUnitCity(getID()) != NULL);
@@ -2638,6 +2653,20 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 		break;
 	// WTP, ray, Construction Supplies - END
 
+	case COMMAND_ALLOW_DANGEROUS_PATH:
+		if (isGroupHead() && !isAllowDangerousPath())
+		{
+			return true;
+		}
+		break;
+
+	case COMMAND_DISALLOW_DANGEROUS_PATH:
+		if (isGroupHead() && isAllowDangerousPath())
+		{
+			return true;
+		}
+		break;
+
 	default:
 		FAssert(false);
 		break;
@@ -2948,6 +2977,20 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 			break;
 		// WTP, ray, Construction Supplies - END
 
+		case COMMAND_ALLOW_DANGEROUS_PATH:
+			if (gDLL->getInterfaceIFace()->getHeadSelectedUnit() == this)
+			{
+				setAllowDangerousPath(true, /*bRefreshUi*/true);
+			}
+			break;
+
+		case COMMAND_DISALLOW_DANGEROUS_PATH:
+			if (gDLL->getInterfaceIFace()->getHeadSelectedUnit() == this)
+			{
+				setAllowDangerousPath(false, /*bRefreshUi*/true);
+			}
+			break;
+
 		default:
 			FAssert(false);
 			break;
@@ -2986,29 +3029,12 @@ int CvUnit::getPathCost() const
 	return getGroup()->getPathCost();
 }
 
-// TAC - AI Improved Naval AI - koma13 - START
-/*
-bool CvUnit::generatePath(const CvPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns) const
-{
-	return getGroup()->generatePath(plot(), pToPlot, iFlags, bReuse, piPathTurns);
-}
-*/
-// TAC - AI Improved Naval AI - koma13 - END
-
 bool CvUnit::generatePath(const CvPlot* pToPlot, int iFlags, bool bReuse,
 	int* piPathTurns, int iMaxPath,   // <advc.128>
-	bool bUseTempFinder) const
+	bool bUseTempFinder, bool bCalledFromPython) const
 {
-	if (!bUseTempFinder) // </advc.128>
-		return getGroup()->generatePath(plot(), pToPlot, iFlags, bReuse, piPathTurns, iMaxPath);
-	// <advc.128>
-	FAssert(!bReuse);
-	KmodPathFinder temp_finder;
-	temp_finder.SetSettings(getGroup(), iFlags, iMaxPath, GLOBAL_DEFINE_MOVE_DENOMINATOR);
-	bool r = temp_finder.GeneratePath(pToPlot);
-	if (piPathTurns != NULL)
-		*piPathTurns = temp_finder.GetPathTurns();
-	return r; // </advc.128>
+	return getGroup()->generatePath(plot(), pToPlot, iFlags, bReuse, piPathTurns,
+		iMaxPath, bUseTempFinder, bCalledFromPython);
 }
 
 // K-Mod. Return the standard pathfinder, for extracting path information.
@@ -4597,12 +4623,15 @@ int CvUnit::loadYieldAmount(YieldTypes eYield, int iAmount, bool bTrade)
 		return 0;
 	}
 
-	CvUnit* pUnit = plot()->getPlotCity()->createYieldUnit(eYield, getOwnerINLINE(), iAmount);
+	CvUnit* const pUnit = plot()->getPlotCity()->createYieldUnit(eYield, getOwnerINLINE(), iAmount);
 	FAssert(pUnit != NULL);
 	if(pUnit != NULL)
 	{
 		pUnit->setTransportUnit(this);
 	}
+
+	groupTransportedYieldUnits(pUnit);
+
 	return iAmount; //R&R mod, vetiarvind, max yield import limit
 }
 
@@ -10259,7 +10288,7 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 		return false;
 	}
 
-	CvSelectionGroup* pGroup = getGroup();
+	CvSelectionGroup* const pGroup = getGroup();
 	if (pGroup == NULL)
 	{
 		return false;
@@ -10278,7 +10307,7 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 	CLLNode<IDInfo>* pUnitNode = listCargo.head();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data);
 		pUnitNode = listCargo.next(pUnitNode);
 
 		if (pLoopUnit != NULL && pLoopUnit->getYield() == NO_YIELD)
@@ -10293,11 +10322,11 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 	}
 	// TAC - Trade Routes Advisor - koma13 - END
 
-	PlayerTypes ePlayer = getOwnerINLINE();
+	const PlayerTypes ePlayer = getOwnerINLINE();
 	FAssert(ePlayer != NO_PLAYER);
-	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
-
-	CvTradeRoute* pTradeRoute = kPlayer.getTradeRoute(iRouteID);
+	const CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+	const CvTradeRoute* pTradeRoute = kPlayer.getTradeRoute(iRouteID);
+	
 	if (pTradeRoute == NULL)
 	{
 		return false;
@@ -10327,22 +10356,21 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 		}
 	}
 
-	// Note: Adding MOVE_MAX_MOVES to prevent the assert for non-ai usage of the group pathfinder since
-	// that shoud be safe here and is easier than adding another pf flag
-
-	CvCity* pSource = ::getCity(pTradeRoute->getSourceCity());
+	CvCity* const pSource = ::getCity(pTradeRoute->getSourceCity());
 	// TAC - Trade Routes Advisor - koma13 - START
-	//if (pSource == NULL || !generatePath(pSource->plot(), 0, bReusePath))
-	if (pSource == NULL || !generatePath(pSource->plot(), (isIgnoreDanger() ? MOVE_IGNORE_DANGER | MOVE_MAX_MOVES : MOVE_NO_ENEMY_TERRITORY | MOVE_MAX_MOVES), bReusePath))
+	KmodPathFinder alt_finder;
+	const int iFlags = isIgnoreDanger() ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY;
+	alt_finder.SetSettings(getGroup(), iFlags);
+	
+	if (pSource == NULL || !alt_finder.GeneratePath(pSource->plot()))
 	// TAC - Trade Routes Advisor - koma13 - END
 	{
 		return false;
 	}
 
-	CvCity* pDestination = ::getCity(pTradeRoute->getDestinationCity());
+	CvCity* const pDestination = ::getCity(pTradeRoute->getDestinationCity());
 	// TAC - Trade Routes Advisor - koma13 - START
-	//if (pDestination != NULL && !generatePath(pDestination->plot(), 0, bReusePath))
-	if (pDestination != NULL && !generatePath(pDestination->plot(), (isIgnoreDanger() ? MOVE_IGNORE_DANGER | MOVE_MAX_MOVES : MOVE_NO_ENEMY_TERRITORY | MOVE_MAX_MOVES), bReusePath))
+	if (pDestination != NULL && !alt_finder.GeneratePath(pDestination->plot()))
 	// TAC - Trade Routes Advisor - koma13 - END
 	{
 		return false;
@@ -10684,6 +10712,18 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 		}
 	}
 
+	// Temp units do not really exist, and are just used to provide a data anchor for virtual pathing calculations.
+	// As such they do not need to process their position into the wider game state and indeed should not without additional concurrency protection.
+	if (isTempUnit())
+	{
+		m_coord = toCoord;
+		if (!getGroup())
+		{
+			joinGroup(NULL);
+		}
+		return;
+	}
+
 	FAssert(!at(toCoord) || coord().isInvalidPlotCoord());
 	FAssert(!isFighting());
 	FAssert(toCoord.isInvalidPlotCoord() || (GC.getMap().plotINLINE(toCoord)->getX_INLINE() == toCoord.x()));
@@ -10726,12 +10766,15 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 
 		pOldPlot->changeAdjacentSight(getTeam(), visibilityRange(), false, this);
 
-		pOldPlot->area()->changeUnitsPerPlayer(getOwnerINLINE(), -1);
-		pOldPlot->area()->changePower(getOwnerINLINE(), -getPower());
+		//pOldPlot->area()->changeUnitsPerPlayer(getOwnerINLINE(), -1);
+		//pOldPlot->area()->changePower(getOwnerINLINE(), -getPower());
+		area()->changeUnitsPerPlayer(getOwnerINLINE(), -1);
+		area()->changePower(getOwnerINLINE(), -getPower());
 
 		if (AI_getUnitAIType() != NO_UNITAI)
 		{
-			pOldPlot->area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), -1);
+			//pOldPlot->area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), -1);
+			area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), -1);
 		}
 
 		setLastMoveTurn(GC.getGameINLINE().getTurnSlice());
@@ -10871,12 +10914,15 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 
 		pNewPlot->addUnit(this, bUpdate);
 
-		pNewPlot->area()->changeUnitsPerPlayer(getOwnerINLINE(), 1);
-		pNewPlot->area()->changePower(getOwnerINLINE(), getPower());
+		//pNewPlot->area()->changeUnitsPerPlayer(getOwnerINLINE(), 1);
+		//pNewPlot->area()->changePower(getOwnerINLINE(), getPower());
+		area()->changeUnitsPerPlayer(getOwnerINLINE(), 1);
+		area()->changePower(getOwnerINLINE(), getPower());
 
 		if (AI_getUnitAIType() != NO_UNITAI)
 		{
-			pNewPlot->area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), 1);
+			//pNewPlot->area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), 1);
+			area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), 1);
 		}
 
 		if (shouldLoadOnMove(pNewPlot))
@@ -11146,6 +11192,7 @@ int CvUnit::getLandArea() const
 
 CvArea* CvUnit::area() const
 {
+	// If the AI unit is in Europe, use the area of the Europe plots (i.e. the atlantic sea)
 	CvPlot* pPlot = plot();
 	if (pPlot == NULL)
 	{
@@ -12444,6 +12491,7 @@ void CvUnit::processProfession(ProfessionTypes eProfession, int iChange, bool bU
 
 			kOwner.changePower(iPower);
 			CvArea* pArea = area();
+			//FAssertMsg(pArea, "No area assigned");
 			if (pArea != NULL)
 			{
 				pArea->changePower(getOwnerINLINE(), iPower);
@@ -14442,7 +14490,8 @@ void CvUnit::setYieldStored(int iYieldAmount)
 			GET_PLAYER(getOwnerINLINE()).changePower(iChange * GC.getYieldInfo(eYield).getPowerValue());
 			GET_PLAYER(getOwnerINLINE()).changeAssets(iChange * GC.getYieldInfo(eYield).getAssetValue());
 			CvArea* pArea = area();
-			if (pArea  != NULL)
+			//FAssertMsg(pArea, "No area assigned");
+			if (pArea != NULL)
 			{
 				pArea->changePower(getOwnerINLINE(), iChange * GC.getYieldInfo(eYield).getPowerValue());
 			}
@@ -14754,7 +14803,9 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 			}
 			else
 			{
-				getGroup()->splitGroup(1, this);
+				// Yield units are intentionally grouped so don't split them up
+				if (!getGroup()->getHeadUnit()->isYield())
+					getGroup()->splitGroup(1, this);
 			}
 		}
 
@@ -14991,6 +15042,11 @@ bool CvUnit::isOnMap() const
 	}
 
 	if((getX_INLINE() == INVALID_PLOT_COORD) || (getY_INLINE() == INVALID_PLOT_COORD))
+	{
+		return false;
+	}
+
+	if (isTempUnit())
 	{
 		return false;
 	}
@@ -16711,7 +16767,7 @@ int CvUnit::getDiscriminationFactor() const
 		}
 		else if (eEthnicity == ETHNICITY_MESTIZZO)
 		{
-		return 1;
+			return 1;
 		}
 		else
 		{
@@ -16726,7 +16782,7 @@ int CvUnit::getDiscriminationFactor() const
 		}
 		else if (eEthnicity == ETHNICITY_MESTIZZO || eEthnicity == ETHNICITY_MULATTO)
 		{
-		return 1;
+			return 1;
 		}
 		else
 		{
@@ -16734,4 +16790,54 @@ int CvUnit::getDiscriminationFactor() const
 		}
 	}
 	return 0;
+}
+
+bool CvUnit::isAllowDangerousPath() const
+{
+	return m_bAllowDangerousPath;
+}
+
+void CvUnit::setAllowDangerousPath(bool bNewValue, bool bRefreshUi)
+{
+	if (m_bAllowDangerousPath != bNewValue)
+	{
+		m_bAllowDangerousPath = bNewValue;
+		if (bRefreshUi)
+		{
+			// UI path finder needs a reset since it may be caching a path that 
+			// we may invalidate with this setting 
+			gDLL->getFAStarIFace()->ForceReset(&GC.getInterfacePathFinder());
+			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
+		}
+	}
+}
+
+// Must be called on a transport. Group sall transported units by adding pUnit to a common group
+// Note that the transport itself is NOT included in the group!
+void CvUnit::groupTransportedYieldUnits(CvUnit* pYieldUnit)
+{
+	FAssert(pYieldUnit->isYield());
+
+	for (int i = 0; i < plot()->getNumUnits(); i++)
+	{
+		CvUnit* const pLoopUnit = plot()->getUnitByIndex(i);
+		if (pLoopUnit != NULL)
+		{
+			if (pLoopUnit->getTransportUnit() == this && pLoopUnit->isYield() && pLoopUnit != pYieldUnit)
+			{
+				pYieldUnit->joinGroup(pLoopUnit->getGroup());
+				break;
+			}
+		}
+	}
+}
+
+void CvUnit::changeIdentity(UnitTypes eUnit)
+{
+	reset(getID(), eUnit, getOwner(), false, true);
+}
+
+bool CvUnit::isTempUnit() const
+{
+	return GET_PLAYER(getOwner()).isTempUnit(this);
 }

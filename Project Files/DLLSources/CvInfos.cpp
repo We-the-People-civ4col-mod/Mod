@@ -14628,7 +14628,6 @@ CvEventTriggerInfo::CvEventTriggerInfo() :
 	m_iNumUnitsGlobal(0),
 	m_iNumBuildingsGlobal(0),
 	m_iNumPlotsRequired(0),
-	m_ePlotType(PLOT_PEAK),
 	m_iOtherPlayerShareBorders(0),
 	m_eCivic(NO_CIVIC),
 	m_iMinPopulation(0),
@@ -14710,13 +14709,9 @@ int CvEventTriggerInfo::getNumPlotsRequired() const
 {
 	return m_iNumPlotsRequired;
 }
-PlotTypes CvEventTriggerInfo::getPlotType() const
+const EnumMap<PlotTypes, bool> CvEventTriggerInfo::getPlotTypes() const
 {
-	return m_ePlotType;
-}
-int CvEventTriggerInfo::PY_getPlotType() const
-{
-	return m_ePlotType;
+	return m_em_PlotTypes;
 }
 int CvEventTriggerInfo::getOtherPlayerShareBorders() const
 {
@@ -15006,7 +15001,6 @@ void CvEventTriggerInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iNumUnitsGlobal);
 	stream->Read(&m_iNumBuildingsGlobal);
 	stream->Read(&m_iNumPlotsRequired);
-	stream->Read(&m_ePlotType);
 	stream->Read(&m_iOtherPlayerShareBorders);
 	stream->Read(&m_eCivic);
 	stream->Read(&m_iMinPopulation);
@@ -15080,7 +15074,6 @@ void CvEventTriggerInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iNumUnitsGlobal);
 	stream->Write(m_iNumBuildingsGlobal);
 	stream->Write(m_iNumPlotsRequired);
-	stream->Write(m_ePlotType);
 	stream->Write(m_iOtherPlayerShareBorders);
 	stream->Write(m_eCivic);
 	stream->Write(m_iMinPopulation);
@@ -15149,7 +15142,24 @@ bool CvEventTriggerInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iNumUnitsGlobal, "iNumUnitsGlobal");
 	pXML->GetChildXmlValByName(&m_iNumBuildingsGlobal, "iNumBuildingsGlobal");
 	pXML->GetChildXmlValByName(&m_iNumPlotsRequired, "iNumPlotsRequired");
-	pXML->GetEnum(getType(), m_ePlotType, "ePlotType", false);
+
+
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "PlotRequirements"))
+	{
+		InfoArray<PlotTypes> ia;
+		readXML(ia, "PlotTypes");
+		ia.addTo(m_em_PlotTypes);
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
+
+	{
+		PlotTypes ePlot;
+		pXML->GetEnum(getType(), ePlot, "ePlotType", false); 
+		if (ePlot != NO_PLOT)
+		{
+			m_em_PlotTypes.set(ePlot, true);
+		}
+	}
 	pXML->GetEnum(getType(), m_eCivic, "eCivic", false);
 	pXML->GetChildXmlValByName(&m_iOtherPlayerShareBorders, "iOtherPlayerShareBorders");
 	pXML->GetChildXmlValByName(&m_iMinPopulation, "iMinPopulation");
@@ -15330,7 +15340,7 @@ void CvEventTriggerInfo::verifyTriggerSettings(const InfoArray<T>& kArray) const
 
 const char* CvEventTriggerInfo::verifyTriggerSettings(FeatureTypes eFeature) const
 {
-	if (getPlotType() == PLOT_PEAK)
+	if (getPlotTypes().get(PLOT_PEAK))
 	{
 		return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
 	}
@@ -15354,17 +15364,22 @@ const char* CvEventTriggerInfo::verifyTriggerSettings(FeatureTypes eFeature) con
 			return "TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN";
 		}
 	}
-	else if (getPlotType() != NO_PLOT)
+	else if (getPlotTypes().hasContent())
 	{
 		bool bValid = false;
-		for (TerrainTypes eTerrain = FIRST_TERRAIN; eTerrain < NUM_TERRAIN_TYPES; ++eTerrain)
+		for (TerrainTypes eTerrain = FIRST_TERRAIN; !bValid && eTerrain < NUM_TERRAIN_TYPES; ++eTerrain)
 		{
 			if (kInfo.isTerrain(eTerrain))
 			{
-				if (GC.getTerrainInfo(eTerrain).canHavePlotType(getPlotType()))
+				const CvTerrainInfo& kTerrain = GC.getTerrainInfo(eTerrain);
+				const EnumMap<PlotTypes, bool> plotTypes = getPlotTypes();
+				for (PlotTypes ePlot = plotTypes.FIRST; ePlot <= plotTypes.LAST; ++ePlot)
 				{
-					bValid = true;
-					break;
+					if (plotTypes.get(ePlot) && kTerrain.canHavePlotType(ePlot))
+					{
+						bValid = true;
+						break;
+					}
 				}
 			}
 		}
@@ -15406,9 +15421,23 @@ const char* CvEventTriggerInfo::verifyTriggerSettings(TerrainTypes eTerrain) con
 {
 	const CvTerrainInfo& kInfo = GC.getInfo(eTerrain);
 
-	if (!kInfo.canHavePlotType(getPlotType()))
+	const EnumMap<PlotTypes, bool> plotTypes = getPlotTypes();
+
+	if (plotTypes.hasContent())
 	{
-		return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
+		bool bValid = false;
+		for (PlotTypes ePlot = plotTypes.FIRST; ePlot <= plotTypes.LAST; ++ePlot)
+		{
+			if (plotTypes.get(ePlot) && kInfo.canHavePlotType(ePlot))
+			{
+				bValid = true;
+				break;
+			}
+		}
+		if (!bValid)
+		{
+			return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
+		}
 	}
 
 	if (kInfo.isWater() && getRoutesRequired().getLength() > 0)
@@ -15461,19 +15490,18 @@ const char* CvEventTriggerInfo::verifyTriggerSettings(ImprovementTypes eImprovem
 {
 	const CvImprovementInfo& kInfo = GC.getInfo(eImprovement);
 
-	PlotTypes ePlot = getPlotType();
-
-	if (ePlot != NO_PLOT)
+	if (getPlotTypes().hasContent())
 	{
-		if (kInfo.isRequiresFlatlands() && ePlot != PLOT_LAND)
+		const EnumMap<PlotTypes, bool> plotTypes = getPlotTypes();
+		if (kInfo.isRequiresFlatlands() && !plotTypes.get(PLOT_LAND))
 		{
 			return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
 		}
-		if (kInfo.isWater() && ePlot != PLOT_OCEAN)
+		if (kInfo.isWater() && plotTypes.get(PLOT_OCEAN))
 		{
 			return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
 		}
-		if (kInfo.isHillsMakesValid() && ePlot != PLOT_HILLS && ePlot != PLOT_PEAK)
+		if (kInfo.isHillsMakesValid() && !(plotTypes.get(PLOT_HILLS) || plotTypes.get(PLOT_PEAK)))
 		{
 			return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
 		}
@@ -15573,7 +15601,7 @@ const char* CvEventTriggerInfo::verifyTriggerSettings(ImprovementTypes eImprovem
 
 const char* CvEventTriggerInfo::verifyTriggerSettings(RouteTypes eRoute) const
 {
-	if (getPlotType() == PLOT_OCEAN)
+	if (getPlotTypes().get(PLOT_OCEAN))
 	{
 		return "TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE";
 	}

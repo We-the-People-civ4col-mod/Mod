@@ -548,7 +548,7 @@ inline bool CvSelectionGroupAI::AI_isGroupAttack()
 	return m_bGroupAttack;
 }
 
-bool CvSelectionGroupAI::AI_isControlled()
+bool CvSelectionGroupAI::AI_isControlled() const
 {
 	return (!isHuman() || isAutomated());
 }
@@ -903,10 +903,9 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 
 	const IDInfo kEurope(getOwnerINLINE(), CvTradeRoute::EUROPE_CITY_ID);
 
-	CvCity* pPlotCity = plot()->getPlotCity();
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-	std::set<int>::iterator it;
-
+	CvCity* const pPlotCity = plot()->getPlotCity();
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	
 	std::map<IDInfo, int> cityValues;
 
 	std::vector<CvTradeRoute*> routes;
@@ -918,6 +917,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 	// R&R mod, vetiarvind, max yield import limit - start
 	const bool bIgnoreDanger = getIgnoreDangerStatus();
 	// R&R mod, vetiarvind, max yield import limit - end
+
 
 	// Erik: We need to determine if we're dealing with a coastal transport
 	bool bCoastalTransport = isCoastalTransport();
@@ -991,6 +991,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			getHeadUnit()->AI_setUnitAIState(UNITAI_STATE_SAIL);
 		}
 	}
+
 
 	return false;
 }
@@ -1093,9 +1094,11 @@ void CvSelectionGroupAI::doCalculationTradeRoutes(std::vector<CvTradeRoute *> &r
 					}
 				}
 			}
+
 		} //end of for loop of routes
 
 		if (iBestRouteValue > 0)
+
 		{
 			CLLNode<IDInfo>* pUnitNode = headUnitNode();
 			while (pUnitNode != NULL)
@@ -1270,72 +1273,10 @@ bool CvSelectionGroupAI::doRouteStuff(std::vector<CvTradeRoute *> &routes, const
 			int iAmount = pSourceCity->getYieldStored(eYield) - pSourceCity->getAutoMaintainThreshold(eYield);
 			// transport feeder - end - Nightinggale
 			// R&R mod, vetiarvind, max yield import limit - start
+
 			if (pDestinationCity != NULL &&   pDestinationCity->getMaxImportAmount(eYield) > 0)
-			{
-				int turnsToReachToSource = 0, turnsToReachFromSourceToDest = 0;
-				const bool bSourceOk = generatePath(plot(), pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachToSource);
-				const bool bDestOk = generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachFromSourceToDest);
-
-				if (!(bSourceOk && bDestOk))
-				{
-					// We require both of these paths to be valid. If not, we skip this route
-					continue;
-				}
-
-				// At least one destination is reachable
-				bNoRoute = false;
-
-				// Erik: If we can travel from the current plot to the source, and then from source to destination in the same turn,
-				// we have to make sure that we don't overestimate the amount that we should load
-				int turnsRequired;
-				if (turnsToReachToSource == turnsToReachFromSourceToDest)
-				{
-					// No need to add both legs of the journey since that would have the transport load too much cargo for the destination city
-					turnsRequired = turnsToReachToSource + turnsToReachFromSourceToDest - 2;
-					// In case generatePath could ever return 0
-					turnsRequired = std::max(0, turnsRequired);
-				}
-				else
-				{
-					// Slightly underestimate the cargo we should carry (we cannot get this 100% correct since it depends on fractional movement,
-					// other transports, consumption changes at the destination etc.
-					turnsRequired = std::max(turnsToReachToSource, turnsToReachFromSourceToDest);
-				}
-
-				iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsRequired, aiYieldsLoaded[eYield]);
-			}
-			// Note that Europe has no import limit!
-			else if (pDestinationCity == NULL && routes[i]->getDestinationCity() == kEurope)
-			{
-				// This is a Europe trade-route, exempt it from the reachability criteria
-				// TODO: Check that there is actually a route to Europe!
-				bNoRoute = false;
-			}
-
-			// R&R mod, vetiarvind, max yield import limit - end
-			if (iAmount > 0)
-			{
-
-				int iExportValue = kOwner.AI_transferYieldValue(routes[i]->getSourceCity(), routes[i]->getYield(), -iAmount);
-				int iImportValue = kOwner.AI_transferYieldValue(routes[i]->getDestinationCity(), routes[i]->getYield(), iAmount);
-				int iRouteValue = (iExportValue + iImportValue + 2 * std::min(iExportValue, iImportValue)) / 4;
 
 
-				if (pSourceCity == pPlotCity)
-				{
-					cityValues[routes[i]->getDestinationCity()] += 2 * iRouteValue;
-				}
-				else
-				{
-					cityValues[routes[i]->getSourceCity()] += iRouteValue;
-				}
-
-				routeValues[i] = iRouteValue;
-			}
-		}
-	}
-	return bNoRoute;
-}
 
 void CvSelectionGroupAI::hasCargo(std::vector<CvTradeRoute *> &routes, CvCity* pPlotCity, short * aiYieldsLoaded, const bool bIgnoreDanger, CvPlayerAI &kOwner, std::map<IDInfo, int> cityValues, std::vector<int> &routeValues)
 {
@@ -1393,6 +1334,7 @@ void CvSelectionGroupAI::hasCargo(std::vector<bool> yieldsToUnload, std::vector<
 			}
 		}
 	}
+
 
 	for (uint i = 0; i < units.size(); ++i)
 	{
@@ -1518,7 +1460,9 @@ bool CvSelectionGroupAI::isCoastalTransport()
 
 		if (pLoopUnit == NULL)
 		{
+
 			continue;
+
 		}
 
 		UnitAITypes aiType = pLoopUnit->AI_getUnitAIType();
@@ -1648,3 +1592,78 @@ void CvSelectionGroupAI::unloadToCity(CvCity* pCity, CvUnit* unit, UnloadMode um
 }
 
 // R&R mod, vetiarvind, max yield import limit - end
+
+IDInfo CvSelectionGroupAI::findBestDestination(const CvPlayerAI& kOwner, const std::map<IDInfo, int>& cityValues, bool bIgnoreDanger, bool bCoastalTransport) const
+{
+	IDInfo kBestDestination(NO_PLAYER, -1);
+	int iBestDestinationValue = 0;
+
+	//select best destination
+	for (std::map<IDInfo, int>::const_iterator it = cityValues.begin(); it != cityValues.end(); ++it)
+	{
+		int iValue = it->second;
+
+		if (iValue > 0)
+		{
+			CvCity* const pCity = ::getCity(it->first);
+			if (pCity != NULL)
+			{
+				FAssert(!atPlot(pCity->plot()));
+				// TAC - Trade Routes Advisor - koma13 - START
+				//if (generatePath(plot(), pCity->plot(), MOVE_NO_ENEMY_TERRITORY, true))
+
+				CvPlot* const pDestinationCityPlot = pCity->plot();
+
+				int iTurns;
+				if (generatePath(plot(), pDestinationCityPlot, (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &iTurns))
+					// TAC - Trade Routes Advisor - koma13 - END
+				{
+					iValue = 1 + kOwner.AI().AI_plotTargetMissionAIsInternal(*pDestinationCityPlot, MISSIONAI_TRANSPORT, this, 0);
+
+					if (bCoastalTransport)
+					{
+						// Erik: Eventually these tuning factors should not be hard-coded!
+						const int CoastalTransportRangeThreshold = 4;
+						const int CoastalTransportDifferentAreaMultiplier = 2;
+
+						// Erik: If this is a coastal transport, avoid routes that are much longer than land routes unless there are no other wagons in this area
+
+						// Erik: If the destination city is in a different area, then this is a more attractive route (wagons cannot cross coast!)
+						// Note: We don't have to check for the areas being coastally reachable, since that already checked
+
+						const CvArea* pDestinationArea = pDestinationCityPlot->area();
+						const CvArea* pPlotArea = plot()->area();
+
+						if (pDestinationArea != pPlotArea)
+						{
+							// Erik: Double the value of the route. Even if we encourage transportion between areas we don't want to sail around the world!
+							// so we make that less attractive
+							iValue *= CoastalTransportDifferentAreaMultiplier;
+							iValue /= std::max(1, iTurns - (CoastalTransportRangeThreshold * CoastalTransportDifferentAreaMultiplier));
+						}
+						else
+						{
+							if (pPlotArea->getNumAIUnits(getOwnerINLINE(), UNITAI_WAGON) > 0)
+							{
+								// Erik: Longer routes are less attractive for coastal transports
+								iValue /= std::max(1, iTurns - CoastalTransportRangeThreshold);
+							}
+						}
+					}
+				}
+				else
+				{
+					iValue = 0;
+				}
+			}
+
+			if (iValue > iBestDestinationValue)
+			{
+				iBestDestinationValue = iValue;
+				kBestDestination = it->first;
+			}
+		}
+	}
+
+	return kBestDestination;
+}

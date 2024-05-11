@@ -321,6 +321,8 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	m_aiTradeMessageCommissions.clear();
 	// TAC - Trade Messages - koma13 - END
 
+	m_pTempUnit = NULL; // (CvUnit*)-1;
+
 	if (!bConstructorCall)
 	{
 		AI_reset();
@@ -1198,8 +1200,8 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 	std::vector<CvUnit *> aOldPopulationUnits;
 	for (int i = 0; i < iPopulation; ++i)
 	{
-		CvUnit* pUnit = pOldCity->getPopulationUnitByIndex(0);
-		bool bRemoved = pOldCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, NO_PROFESSION, bConquest);
+		CvUnit* const pUnit = pOldCity->getPopulationUnitByIndex(0);
+		const bool bRemoved = pOldCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, NO_PROFESSION, bConquest);
 		FAssert(bRemoved);
 		aOldPopulationUnits.push_back(pUnit);
 		GET_PLAYER(pOldCity->getOwnerINLINE()).getAndRemoveUnit(pUnit->getID());
@@ -1212,13 +1214,14 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 
 	//acquire old population units
 	std::vector<CvUnit*> aNewPopulationUnits;
-	for(int i=0;i<(int)aOldPopulationUnits.size();i++)
+	for(uint i=0;i<aOldPopulationUnits.size();i++)
 	{
 		CvUnit* pOldUnit = aOldPopulationUnits[i];
-		UnitTypes eNewUnitType = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(pOldUnit->getUnitClassType());
+		const UnitTypes eNewUnitType = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(pOldUnit->getUnitClassType());
 		if (eNewUnitType != NO_UNIT)
 		{
-			CvUnit* pNewUnit = initUnit(eNewUnitType, NO_PROFESSION, pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), pOldUnit->AI_getUnitAIType());
+			// Ensure that the citizens acquired use the default colonist AI (otherwise they risk getting assigned an inappropriate AI type)
+			CvUnit* const pNewUnit = initUnit(eNewUnitType, NO_PROFESSION, pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), UNITAI_COLONIST);
 			pNewUnit->convert(pOldUnit, true); //kills old unit
 			aNewPopulationUnits.push_back(pNewUnit);
 		}
@@ -1235,7 +1238,7 @@ void CvPlayer::acquireCity(CvCity* pOldCity, bool bConquest, bool bTrade)
 		{
 			for (iDY = -1; iDY <= 1; iDY++)
 			{
-				pLoopPlot	= plotXY(pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), iDX, iDY);
+				pLoopPlot = plotXY(pCityPlot->getX_INLINE(), pCityPlot->getY_INLINE(), iDX, iDY);
 
 				if (pLoopPlot != NULL)
 				{
@@ -1587,7 +1590,7 @@ CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, int iX,
 	return initUnit(eUnit, eProfession, Coordinates(iX, iY), eUnitAI, eFacingDirection, iYieldStored);
 }
 
-CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordinates initCoord, UnitAITypes eUnitAI, DirectionTypes eFacingDirection, int iYieldStored)
+CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordinates initCoord, UnitAITypes eUnitAI, DirectionTypes eFacingDirection, int iYieldStored, int iBirthmark)
 {
 	PROFILE_FUNC();
 
@@ -1596,6 +1599,7 @@ CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordin
 	OOS_LOG("Init unit", getTypeStr(eUnit));
 
 	CvUnit* pUnit = addUnit();
+
 	FAssertMsg(pUnit != NULL, "Unit is not assigned a valid value");
 	if (NULL != pUnit)
 	{
@@ -1609,7 +1613,7 @@ CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordin
 			eUnitAI = (UnitAITypes) GC.getUnitInfo(eUnit).getDefaultUnitAIType();
 		}
 
-		pUnit->init(pUnit->getID(), eUnit, eProfession, eUnitAI, getID(), initCoord, eFacingDirection, iYieldStored);
+		pUnit->init(pUnit->getID(), eUnit, eProfession, eUnitAI, getID(), initCoord, eFacingDirection, iYieldStored, iBirthmark);
 
 		if (getID() == GC.getGameINLINE().getActivePlayer())
 		{
@@ -2326,6 +2330,8 @@ void CvPlayer::doTurn()
 
 	interceptEuropeUnits();
 
+	EXTRA_POWER_CHECK
+
 	updateEconomyHistory(GC.getGameINLINE().getGameTurn(), getGold());
 	updateIndustryHistory(GC.getGameINLINE().getGameTurn(), calculateTotalYield(YIELD_HAMMERS));
 	updateAgricultureHistory(GC.getGameINLINE().getGameTurn(), calculateTotalYield(YIELD_FOOD));
@@ -2344,6 +2350,8 @@ void CvPlayer::doTurn()
 	recalculatePlayerOppressometer();
 
 	gDLL->getInterfaceIFace()->setDirty(CityInfo_DIRTY_BIT, true);
+
+	EXTRA_POWER_CHECK
 
 	AI_doTurnPost();
 
@@ -6757,6 +6765,7 @@ void CvPlayer::processFather(FatherTypes eFather, int iChange)
 	{
 		processTrait((TraitTypes) kFatherInfo.getTrait(), iChange);
 	}
+	EXTRA_POWER_CHECK
 }
 
 void CvPlayer::processFatherOnce(FatherTypes eFather)
@@ -7673,6 +7682,7 @@ void CvPlayer::changeAssets(int iChange)
 	m_iAssets += iChange;
 	OOS_LOG_3("Player change assets B", GC.isMainThread() ? 1 : 0, m_iAssets);
 	FAssert(getAssets() >= 0);
+	//if (GC.getGameINLINE().isFinalInitialized())
 }
 
 int CvPlayer::getPower() const
@@ -7686,6 +7696,7 @@ void CvPlayer::changePower(int iChange)
 	m_iPower += iChange;
 	OOS_LOG_3("Player change power B", GC.isMainThread() ? 1 : 0, m_iPower);
 	FAssert(getPower() >= 0);
+	//if (GC.getGameINLINE().isFinalInitialized())
 }
 
 
@@ -10004,6 +10015,25 @@ void CvPlayer::deleteCity(int iID)
 
 CvUnit* CvPlayer::firstUnit(int *pIterIdx) const
 {
+	CvUnit* pUnit = firstUnitInternal(pIterIdx);
+
+	if (pUnit != NULL)
+	{
+		if (isTempUnit(pUnit))
+		{
+			pUnit = firstUnitInternal(pIterIdx);
+		}
+		else
+		{
+			return pUnit;
+		}
+	}
+
+	return pUnit;
+}
+
+CvUnit* CvPlayer::firstUnitInternal(int* pIterIdx) const
+{
 	if (m_units.empty())
 	{
 		return NULL;
@@ -10026,6 +10056,25 @@ CvUnit* CvPlayer::firstUnit(int *pIterIdx) const
 }
 
 CvUnit* CvPlayer::nextUnit(int *pIterIdx) const
+{
+	CvUnit* pUnit = nextUnitInternal(pIterIdx);
+
+	if (pUnit != NULL)
+	{
+		if (isTempUnit(pUnit))
+		{ 
+			pUnit = nextUnitInternal(pIterIdx);
+		}
+		else
+		{
+			return pUnit;
+		}
+	}
+
+	return pUnit;
+}
+
+CvUnit* CvPlayer::nextUnitInternal(int* pIterIdx) const
 {
 	CvIdVector<CvUnitAI>::const_iterator it = m_units.find(*pIterIdx);
 
@@ -10051,7 +10100,7 @@ CvUnit* CvPlayer::nextUnit(int *pIterIdx) const
 
 int CvPlayer::getNumUnits() const
 {
-	return (int)(m_units.size());
+	return (int)(m_units.size()) - (m_pTempUnit ? 1 : 0);
 }
 
 CvUnit* CvPlayer::getUnit(int iID) const
@@ -10410,19 +10459,32 @@ int CvPlayer::countNumDomainUnits(DomainTypes eDomain) const
 
 CvSelectionGroup* CvPlayer::firstSelectionGroup(int *pIterIdx, bool bRev) const
 {
-	return !bRev ? m_selectionGroups.beginIter(pIterIdx) : m_selectionGroups.endIter(pIterIdx);
+	CvSelectionGroup* pResult = !bRev ? m_selectionGroups.beginIter(pIterIdx) : m_selectionGroups.endIter(pIterIdx);
+	if (pResult && pResult->getHeadUnit() && pResult->getHeadUnit() == m_pTempUnit)
+	{
+		pResult = nextSelectionGroup(pIterIdx, bRev);
+	}
+
+	return pResult;
+
 }
 
 
 CvSelectionGroup* CvPlayer::nextSelectionGroup(int *pIterIdx, bool bRev) const
 {
-	return !bRev ? m_selectionGroups.nextIter(pIterIdx) : m_selectionGroups.prevIter(pIterIdx);
+	CvSelectionGroup* pResult = !bRev ? m_selectionGroups.nextIter(pIterIdx) : m_selectionGroups.prevIter(pIterIdx);
+	if (pResult && pResult->getHeadUnit() && pResult->getHeadUnit() == m_pTempUnit)
+	{
+		pResult = nextSelectionGroup(pIterIdx, bRev);
+	}
+
+	return pResult;
 }
 
 
 int CvPlayer::getNumSelectionGroups() const
 {
-	return m_selectionGroups.getCount();
+	return m_selectionGroups.getCount() - (m_pTempUnit ? 1 : 0);
 }
 
 
@@ -16379,7 +16441,7 @@ CvUnit* CvPlayer::buyYieldUnitFromEurope(YieldTypes eYield, int iAmount, CvUnit*
 		{
 			pUnit = NULL;
 		}
-
+		pTransport->groupTransportedYieldUnits(pUnit);
 		changeGold(-iPrice);
 		// R&R, vetiarvind, Price dependent tax rate change - Start
 		int iBuyValue = iYieldBuyPrice >> 1; //buying should only contribute 50% of sell to tax incr. score
@@ -16958,7 +17020,7 @@ CvUnit* CvPlayer::buyYieldUnitFromAfrica(YieldTypes eYield, int iAmount, CvUnit*
 		{
 			pUnit = NULL;
 		}
-
+		pTransport->groupTransportedYieldUnits(pUnit);
 		changeGold(-iPrice);
 		// R&R, vetiarvind, Price dependent tax rate change - Start
 		int iBuyValue = kPlayerEurope.getYieldAfricaSellPrice(eYield) >> 1; //buying should only contribute 50% of sell to tax incr. score
@@ -17620,7 +17682,7 @@ CvUnit* CvPlayer::buyYieldUnitFromPortRoyal(YieldTypes eYield, int iAmount, CvUn
 		{
 			pUnit = NULL;
 		}
-
+		pTransport->groupTransportedYieldUnits(pUnit);
 		changeGold(-iPrice);
 		// R&R, vetiarvind, Price dependent tax rate change - Start
 		int iBuyValue = kPlayerEurope.getYieldPortRoyalSellPrice(eYield) >> 1; //buying should contribute only 50% of sell value to tax score
@@ -19016,7 +19078,8 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 	if (iChange != 0)
 	{
 		OOS_LOG_3("set profession equipment modifier", getTypeStr(eProfession), iValue);
-		std::vector<CvUnit*> aProfessionUnits;
+		std::vector<CvUnit*> aProfessionUnits = getPortUnitsByProfession(eProfession);
+
 		int iLoop;
 		for (CvUnit* pUnit = firstUnit(&iLoop); pUnit != NULL; pUnit = nextUnit(&iLoop))
 		{
@@ -19025,14 +19088,7 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 				aProfessionUnits.push_back(pUnit);
 			}
 		}
-		for (uint i = 0; i < m_aEuropeUnits.size(); ++i)
-		{
-			CvUnit* pUnit = m_aEuropeUnits[i];
-			if (pUnit->getProfession() == eProfession)
-			{
-				aProfessionUnits.push_back(pUnit);
-			}
-		}
+
 		for (CvCity* pCity = firstCity(&iLoop); pCity != NULL; pCity = nextCity(&iLoop))
 		{
 			for (int i = 0; i < pCity->getPopulation(); ++i)
@@ -19045,6 +19101,7 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 			}
 		}
 
+		// Note: This covers only the unit itself, irrespective of having the actual profession
 		for (uint i = 0; i < aProfessionUnits.size(); ++i)
 		{
 			CvUnit* pUnit = aProfessionUnits[i];
@@ -19052,13 +19109,16 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 			int iPower = pUnit->getPower();
 			changePower(-iPower);
 			CvArea* pArea = pUnit->area();
+			//FAssertMsg(pArea, "No area assigned");
 			if (pArea != NULL)
-			{
+			{	
 				pArea->changePower(getID(), -iPower);
 			}
 		}
 
 		m_em_iProfessionEquipmentModifier.set(eProfession, iValue);
+		FAssert(getProfessionEquipmentModifier(eProfession) >= -100);
+		Update_cache_YieldEquipmentAmount(eProfession); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 
 		for (uint i = 0; i < aProfessionUnits.size(); ++i)
 		{
@@ -19067,14 +19127,12 @@ void CvPlayer::setProfessionEquipmentModifier(ProfessionTypes eProfession, int i
 			int iPower = pUnit->getPower();
 			changePower(iPower);
 			CvArea* pArea = pUnit->area();
+			//FAssertMsg(pArea, "No area assigned");
 			if (pArea != NULL)
 			{
 				pArea->changePower(getID(), iPower);
 			}
 		}
-
-		FAssert(getProfessionEquipmentModifier(eProfession) >= -100);
-		Update_cache_YieldEquipmentAmount(eProfession); // cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 	}
 }
 
@@ -20147,6 +20205,9 @@ bool CvPlayer::checkPopulation() const
 	int iLoop;
 	for (CvUnit* pLoopUnit = firstUnit(&iLoop); NULL != pLoopUnit; pLoopUnit = nextUnit(&iLoop))
 	{
+		if (pLoopUnit->isTempUnit())
+			continue;
+
 		if (pLoopUnit->getUnitInfo().isFound())
 		{
 			++iNumPopulation;
@@ -20184,6 +20245,8 @@ bool CvPlayer::checkPopulation() const
 	}
 	// R&R, ray, Port Royal - END
 
+	const int iTotalPopulation = getTotalPopulation();
+	FAssert(iNumPopulation == iTotalPopulation);
 	return (iNumPopulation == getTotalPopulation());
 }
 
@@ -20192,24 +20255,30 @@ bool CvPlayer::checkPower(bool bReset)
 	int iPower = 0;
 	int iAsset = 0;
 	std::map<int, int> mapAreaPower;
+	//bool bSkipAreaPower = false;
 	int iLoop;
 	for (CvUnit* pUnit = firstUnit(&iLoop); pUnit != NULL; pUnit = nextUnit(&iLoop))
 	{
+		if (pUnit->isTempUnit())
+			continue;
+
 		int iUnitPower = pUnit->getPower();
 		iPower += iUnitPower;
+		iAsset += pUnit->getAsset();
 		// large rivers power fix - Nightinggale - start
 		// use the area the unit is placed on
 		// using CvUnit::area() might return the area from the plot next to the unit
 		// this happens with land units on large rivers and ships on land (cities)
-		//CvArea* pArea = pUnit->area();
-		CvPlot* pPlot = pUnit->plot();
-		CvArea* pArea = pPlot ? pPlot->area() : NULL;
-		// large rivers power fix - Nightinggale - end
-		if (pArea != NULL)
-		{
+		CvArea* const pArea = pUnit->area();
+		if (pArea != NULL) {
+			// Area can be null during initialization and sometimes its useful
+			// to call checkPower on every power update during test runs
 			mapAreaPower[pArea->getID()] += iUnitPower;
 		}
-		iAsset += pUnit->getAsset();
+		else
+		{
+			//bSkipAreaPower = true;
+		}
 	}
 	for (uint i = 0; i < m_aEuropeUnits.size(); ++i)
 	{
@@ -20270,6 +20339,9 @@ bool CvPlayer::checkPower(bool bReset)
 	bool bCheck = true;
 	if (iPower != getPower())
 	{
+		const int iDifference = iPower - getPower();
+		FAssertMsg(false, CvString::format("Power discrepancy detected! player %d: %d != %d. Difference: %d",
+			getID(), iPower, getPower(), iDifference).c_str());
 		if (bReset)
 		{
 			changePower(iPower - getPower());
@@ -20279,6 +20351,9 @@ bool CvPlayer::checkPower(bool bReset)
 
 	if (iAsset != getAssets())
 	{
+		const int iDifference = iAsset - getAssets();
+		FAssertMsg(false, CvString::format("Asset discrepancy detected! player %d: %d != %d. Difference: %d",
+			getID(), iAsset, getAssets(), iDifference).c_str());
 		if (bReset)
 		{
 			changeAssets(iAsset - getAssets());
@@ -20286,15 +20361,21 @@ bool CvPlayer::checkPower(bool bReset)
 		bCheck = false;
 	}
 
-	for (CvArea* pArea = GC.getMap().firstArea(&iLoop); pArea != NULL; pArea = GC.getMap().nextArea(&iLoop))
-	{
-		if (mapAreaPower[pArea->getID()] != pArea->getPower(getID()))
+	//if (!bSkipAreaPower)
+	{ 
+		for (CvArea* pArea = GC.getMap().firstArea(&iLoop); pArea != NULL; pArea = GC.getMap().nextArea(&iLoop))
 		{
-			if (bReset)
+			const int iDifference = mapAreaPower[pArea->getID()] - pArea->getPower(getID());
+			if (iDifference != 0)
 			{
-				pArea->changePower(getID(), mapAreaPower[pArea->getID()] - pArea->getPower(getID()));
+				FAssertMsg(false, CvString::format("Area power discrepancy detected for player %d: %d != %d. Difference: %d for area %d", 
+					getID(), mapAreaPower[pArea->getID()], pArea->getPower(getID()), iDifference, pArea->getID()).c_str());
+				if (bReset)
+				{
+					pArea->changePower(getID(), mapAreaPower[pArea->getID()] - pArea->getPower(getID()));
+				}
+				bCheck = false;
 			}
-			bCheck = false;
 		}
 	}
 
@@ -25046,4 +25127,71 @@ void CvPlayer::onTurnLogging() const
 			logBBAI(" Total Score: %d, Population Score: %d (%d total pop), Land Score: %d", calculateScore(), getPopScore(), getTotalPopulation(), getLandScore());
 		}
 	}
+}
+
+// Returns all port units (currently Europe, Africa, Port Royal)
+std::vector<CvUnit*> CvPlayer::getPortUnitsByProfession(ProfessionTypes eProfession) const
+{
+	std::vector<CvUnit*> aProfessionUnits;
+
+	for (uint i = 0; i < m_aEuropeUnits.size(); ++i)
+	{
+		CvUnit* const pUnit = m_aEuropeUnits[i];
+		if (pUnit->getProfession() == eProfession)
+		{
+			aProfessionUnits.push_back(pUnit);
+		}
+	}
+
+	for (uint i = 0; i < m_aAfricaUnits.size(); ++i)
+	{
+		CvUnit* const pUnit = m_aAfricaUnits[i];
+		if (pUnit->getProfession() == eProfession)
+		{
+			aProfessionUnits.push_back(pUnit);
+		}
+	}
+
+	for (uint i = 0; i < m_aPortRoyalUnits.size(); ++i)
+	{
+		CvUnit* const pUnit = m_aPortRoyalUnits[i];
+		if (pUnit->getProfession() == eProfession)
+		{
+			aProfessionUnits.push_back(pUnit);
+		}
+	}
+
+	return aProfessionUnits;
+}
+
+CvUnit* CvPlayer::getOrCreateTempUnit(UnitTypes eUnit, int iX, int iY)
+{
+	if (m_pTempUnit)
+	{
+		if (m_pTempUnit->plot())
+		{
+			m_pTempUnit->setXY(INVALID_PLOT_COORD, INVALID_PLOT_COORD, true, false);
+		}
+		m_pTempUnit->changeIdentity(eUnit);
+		m_pTempUnit->setXY(iX, iY, true, false);
+	}
+	else
+	{
+		// TODO: Deal with profession type!
+		m_pTempUnit = initUnit(eUnit, NO_PROFESSION, Coordinates(iX, iY), NO_UNITAI, NO_DIRECTION, 0, UNIT_BIRTHMARK_TEMP_UNIT);
+		// TODO: assert that we did not change any statistics / counters like below!
+		//((CvPlayerAI*)this)->AI_changeNumAIUnits(m_pTempUnit->AI_getUnitAIType(), -1);	//	This one doesn't count
+		removeGroupCycle(m_pTempUnit->getGroup()->getID());
+	}
+
+	//	Set an arbitrary automation type - just need it to be flagged as automated	
+	m_pTempUnit->getGroup()->setAutomateType(AUTOMATE_FULL);
+
+	return m_pTempUnit;
+}
+
+void CvPlayer::releaseTempUnit()
+{
+	//GC.getGame().logOOSSpecial(10, m_pTempUnit->getID(), INVALID_PLOT_COORD, INVALID_PLOT_COORD);
+	m_pTempUnit->setXY(INVALID_PLOT_COORD, INVALID_PLOT_COORD, true, false);
 }

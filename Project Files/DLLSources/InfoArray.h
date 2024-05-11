@@ -357,7 +357,7 @@ void InfoArray1Only<T0>::addTo(EnumMap<Ta, bool, DEFAULT> & em, int iChange, con
 		const T0 eIndex = pCivInfo->getCivSpecificForClass<Ta, T0>(get0(i));
 		if (em.isInRange(eIndex))
 		{
-			em.set(eIndex, iChange);
+			em.set(eIndex, iChange != 0);
 		}
 	}
 }

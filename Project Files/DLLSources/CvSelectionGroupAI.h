@@ -38,7 +38,7 @@ public:
 	void AI_cancelGroupAttack();
 	bool AI_isGroupAttack();
 
-	bool AI_isControlled();
+	bool AI_isControlled() const;
 	bool AI_isDeclareWar(const CvPlot* pPlot = NULL);
 
 	CvPlot* AI_getMissionAIPlot();
@@ -66,6 +66,9 @@ public:
 
 	void AI_resetSavedData();
 
+	bool AI_isControlled() { return AI_isControlledInternal(); }
+	bool AI_isControlledInternal() const { return (!isHuman() || isAutomated()); }
+
 	enum UnloadMode
 	{
 		NoForce,
@@ -90,6 +93,7 @@ protected:
 	// R&R mod, vetiarvind, max yield import limit - start	
 	bool getIgnoreDangerStatus() const;
 	// R&R mod, vetiarvind, max yield import limit - end
+
 private:
 	// R&R mod, vetiarvind, max yield import limit - start
 	int estimateYieldsToLoad(CvCity* pDestinationCity, int maxYieldsToLoad, YieldTypes eYield, int turnsToReach, int alreadyLoaded) const;
@@ -97,6 +101,7 @@ private:
 	// R&R mod, vetiarvind, max yield import limit - end
 
 	void processTradeRoute(CvTradeRoute* pRoute, std::map<IDInfo, int>& cityValues, std::vector<CvTradeRoute*>& routes, std::vector<int>& routeValues, std::vector<bool>& yieldsDelivered, std::vector<bool>& yieldsToUnload);
+
 
 	bool isCoastalTransport();
 	std::set<int>::iterator humanOrNonAutomaticFull(std::set<int>::iterator it, CvPlayerAI &kOwner, const IDInfo kEurope, std::map<IDInfo, int> cityValues, std::vector<CvTradeRoute *> routes, std::vector<int> routeValues, std::vector<bool> yieldsDelivered, std::vector<bool> yieldsToUnload, const bool bIgnoreDanger);
@@ -108,6 +113,7 @@ private:
 	bool checkPath(IDInfo &kBestDestination, CvPlayerAI &kOwner, const bool bIgnoreDanger);
 	void doCalculationTradeRoutes(std::vector<CvTradeRoute *> &routes, CvCity* pPlotCity, IDInfo kBestDestination, const bool bIgnoreDanger, short * aiYieldsLoaded, CvPlayerAI &kOwner);
 	void findBestDestination(std::map<IDInfo, int> &cityValues, const bool bIgnoreDanger, CvPlayerAI &kOwner, bool bCoastalTransport, int &iBestDestinationValue, IDInfo &kBestDestination);
+
 
 
 };

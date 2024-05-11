@@ -7761,7 +7761,7 @@
 		<English>We wonder why the conflict against [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] is taking so long. Do you require more troops? If yes, we are willing to send you a ship and two battalions for just [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. If you prefer, we could levy a tax increase of [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT] instead of the gold.</English>
 		<French>Nous nous demandons pourquoi la guerre contre [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] perdure. Avez-vous besoin de renforts? Si oui, nous vous donnerons un navire et deux bataillons pour [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. Si vous le souhaitez, il est également possible de financer cette expédition via une hausse des taxes de [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT].</French>
 		<German>Wir fragen uns warum der Konflikt mit [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] so lange andauert. Benötigt ihr mehr Truppen? Falls ja, sind wir bereit euch ein Schiff und zwei ein Battallione Truppen für lediglich [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD] zu überlassen. Als Alternative zu der Goldzahlung bieten wir euch eine Steuererhöhung von [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT] an.</German>
-		<Russian>Мы удивляемся, почему конфликт с [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] длится так долго. Вам нужно больше войск? Если да, мы готовы отправить вам корабль и несколько батальон всего за [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. Если хотите, вместо оплаты золотом мы можем увеличить налог на [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT].</Russian>
+		<Russian>Мы удивляемся, почему конфликт с [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] длится так долго. Вам нужно больше войск? Если да, Мы готовы отправить вам корабль и несколько батальонов всего за [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. Если хотите, вместо оплаты золотом Мы можем увеличить налог на [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_ROYAL_INTERVENTION_YES_GOLD</Tag>
@@ -7775,14 +7775,14 @@
 		<English>Yes, we really could use those troops, your Majesty. The tax increase is better for us. (tax increase)</English>
 		<French>Oui, nous avons vraiment besoin de ces troupes, Votre Majesté. Nous acceptons aussi la hausse des taxes. (Payer via les taxes)</French>
 		<German>Wir können diese Truppen gut gebrauchen Eure Majestät. Aber wir würden lieber die Steuererhöhung annehmen. (Steuererhöhung)</German>
-		<Russian>Да, мы действительно могли бы использовать эти войска, Ваше Величество. Повышение налогов для нас предпочтительнее. (увеличение ставки налога)</Russian>
+		<Russian>Да, нам действительно могли бы пригодиться эти войска, Ваше Величество. Повышение налогов для нас было бы предпочтительнее. (увеличение ставки налога)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_ROYAL_INTERVENTION_NO</Tag>
 		<English>Do not worry, Your Majesty, our colonies are strong enough to win this conflict without bothering you further.(King delighted)</English>
 		<French>Ne vous faites pas de souci, Votre Majesté, nos colonies sont bien assez fortes pour venir à bout de ce conflit sans que vous ne deviez vous déranger. (le Roi en est ravi)</French>
 		<German>Seid unbesorgt Eure Majestät, unsere Kolonien sind stark genug diesen Konflikt zu lösen ohne euch weiter belästigen zu müssen. (König erfreut)</German>
-		<Russian>Не беспокойтесь, Ваше Величество, наши колонии достаточно сильны, чтобы победить в этом конфликте, не беспокоя вас больше. (Король в восторге)</Russian>
+		<Russian>Не беспокойтесь, Ваше Величество, наши колонии достаточно сильны, чтобы самостоятельно победить в этом конфликте. Наш триумф уже близок. (Король в восторге)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_PRIVATEERS_ACCUSSATION</Tag>

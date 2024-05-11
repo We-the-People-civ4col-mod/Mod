@@ -502,8 +502,6 @@ public:
 	void setDistanceToOcean(int iNewValue);
 	int getDistanceToOcean() const;
 
-	CvPlot* findNearbyOceanPlot(int iRandomization = 25);
-
 	int getCrumbs() const;
 	void addCrumbs(int iQuantity);
 
@@ -516,6 +514,8 @@ public:
 	void write(CvSavegameWriter writer);
 
 	void writeDesyncLog(FILE *f);
+
+	int getTurnDamage() const;
 
 protected:
 

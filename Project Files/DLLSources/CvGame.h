@@ -408,6 +408,8 @@ public:
 
 	int getRemainingForcedPeaceTurns() const;
 
+	static const int PLOT_OCEAN_DISTANCE_IMPASSABLE_THRESHOLD = 1000;
+
 protected:
 
 	int m_iEndTurnMessagesSent;
@@ -526,6 +528,7 @@ protected:
 	void updateOceanDistances();
 
 	void doUpdateCacheOnTurn();
+	CvPlot* getAnyEuropePlot() const;
 };
 
 #endif

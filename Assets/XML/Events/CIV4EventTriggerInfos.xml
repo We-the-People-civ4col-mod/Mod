@@ -38282,10 +38282,10 @@
 			<EventArt>,Art/EventImages/scout.dds</EventArt>
 			<iPercentGamesActive>100</iPercentGamesActive>
 			<iWeight>-1</iWeight>
-			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
+			<bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
-			<iMinTreasury>200</iMinTreasury>
+			<iMinTreasury>100</iMinTreasury>
 			<iMinPopulation>0</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
 			<iMinMapLandmass>0</iMinMapLandmass>
@@ -38293,6 +38293,7 @@
 			<iMaxOurLandmass>-1</iMaxOurLandmass>
 			<eMinDifficulty>NONE</eMinDifficulty>
 			<UnitsRequired>
+				<UnitClass>UNITCLASS_SCOUT</UnitClass>
 				<UnitClass>UNITCLASS_INDENTURED_SERVANT</UnitClass>
 				<UnitClass>UNITCLASS_MESTIZZO</UnitClass>
 				<UnitClass>UNITCLASS_MULATTO</UnitClass>
@@ -38311,8 +38312,15 @@
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>1</iNumPlotsRequired>
-			<bOwnPlot>1</bOwnPlot>
+			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
+			<PlotRequirements>
+				<PlotTypes>
+					<ePlotType>PLOT_PEAK</ePlotType>
+					<ePlotType>PLOT_HILLS</ePlotType>
+					<ePlotType>PLOT_LAND</ePlotType>
+				</PlotTypes>
+			</PlotRequirements>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
 			<ImprovementsRequired/>
@@ -38854,17 +38862,8 @@
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>1</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
-			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired>
-				<FeatureType>FEATURE_JUNGLE</FeatureType>
-				<FeatureType>FEATURE_MANGROVE</FeatureType>
-				<FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-				<FeatureType>FEATURE_FOREST</FeatureType>
-				<FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
-				<FeatureType>FEATURE_DENSE_FOREST</FeatureType>
-				<FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
-				<FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
-			</FeaturesRequired>
+			<ePlotType>PLOT_LAND</ePlotType>
+			<FeaturesRequired/>
 			<TerrainsRequired/>
 			<ImprovementsRequired/>
 			<RoutesRequired/>
@@ -38933,17 +38932,8 @@
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
 			<iNumPlotsRequired>1</iNumPlotsRequired>
 			<bOwnPlot>1</bOwnPlot>
-			<ePlotType>NONE</ePlotType>
-			<FeaturesRequired>
-				<FeatureType>FEATURE_JUNGLE</FeatureType>
-				<FeatureType>FEATURE_MANGROVE</FeatureType>
-				<FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-				<FeatureType>FEATURE_FOREST</FeatureType>
-				<FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
-				<FeatureType>FEATURE_DENSE_FOREST</FeatureType>
-				<FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
-				<FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
-			</FeaturesRequired>
+			<ePlotType>PLOT_LAND</ePlotType>
+			<FeaturesRequired/>
 			<TerrainsRequired/>
 			<ImprovementsRequired/>
 			<RoutesRequired/>
@@ -39869,7 +39859,7 @@
 			<EventArt>,Art/EventImages/Event_Image1.dds</EventArt>
 			<iPercentGamesActive>100</iPercentGamesActive>
 			<iWeight>-1</iWeight>
-			<bProbabilityUnitMultiply>1</bProbabilityUnitMultiply>
+			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
 			<iMinTreasury>0</iMinTreasury>
@@ -39954,7 +39944,7 @@
 			<iUnitDamagedWeight>0</iUnitDamagedWeight>
 			<iUnitDistanceWeight>0</iUnitDistanceWeight>
 			<iUnitExperienceWeight>0</iUnitExperienceWeight>
-			<bUnitsOnPlot>0</bUnitsOnPlot>
+			<bUnitsOnPlot>1</bUnitsOnPlot>
 			<BuildingsRequired/>
 			<iNumBuildings>0</iNumBuildings>
 			<iNumBuildingsGlobal>0</iNumBuildingsGlobal>
@@ -39984,7 +39974,7 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo>isNativeVillageAndHuman</PythonCanDo>
+			<PythonCanDo>isNativeVillage</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
@@ -40055,7 +40045,7 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo>isNativeVillageAndHuman</PythonCanDo>
+			<PythonCanDo>isNativeVillage</PythonCanDo>
 			<PythonCanDoCity/>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
