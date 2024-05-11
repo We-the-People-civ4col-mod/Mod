@@ -101,6 +101,7 @@ private:
 	// R&R mod, vetiarvind, max yield import limit - end
 
 	void processTradeRoute(CvTradeRoute* pRoute, std::map<IDInfo, int>& cityValues, std::vector<CvTradeRoute*>& routes, std::vector<int>& routeValues, std::vector<bool>& yieldsDelivered, std::vector<bool>& yieldsToUnload);
+	IDInfo findBestDestination(const CvPlayerAI& kOwner, const std::map<IDInfo, int>& cityValues, bool bIgnoreDanger, bool bCoastalTransport) const;
 };
 
 #endif
