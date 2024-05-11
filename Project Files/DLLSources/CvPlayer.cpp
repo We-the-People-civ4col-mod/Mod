@@ -11020,13 +11020,16 @@ void CvPlayer::setSmtpHost(const char* szHost)
 
 void CvPlayer::doGold()
 {
-	CyArgsList argsList;
-	argsList.add(getID());
-	long lResult=0;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "doGold", argsList.makeFunctionArgs(), &lResult);
-	if (lResult == 1)
+	if (GC.getUSE_DO_GOLD_CALLBACK())
 	{
-		return;
+		CyArgsList argsList;
+		argsList.add(getID());
+		long lResult = 0;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "doGold", argsList.makeFunctionArgs(), &lResult);
+		if (lResult == 1)
+		{
+			return;
+		}
 	}
 
 	int iGoldChange = 0;
@@ -11035,7 +11038,6 @@ void CvPlayer::doGold()
 
 	OOS_LOG("doGold", iGoldChange);
 	changeGold(iGoldChange);
-
 }
 
 /** NBMOD REF **/

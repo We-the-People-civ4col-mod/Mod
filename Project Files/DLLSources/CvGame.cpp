@@ -1394,11 +1394,14 @@ void CvGame::updateColoredPlots()
 		gDLL->getEngineIFace()->clearColoredPlots(PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS);
 	}
 
-	lResult = 0;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "updateColoredPlots", NULL, &lResult);
-	if (lResult == 1)
-	{
-		return;
+	if (GC.getUSE_UPDATE_COLORED_PLOTS_CALLBACK())
+	{ 
+		lResult = 0;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "updateColoredPlots", NULL, &lResult);
+		if (lResult == 1)
+		{
+			return;
+		}
 	}
 
 	// City circles when in Advanced Start
@@ -6271,11 +6274,14 @@ void CvGame::testVictory()
 
 	updateScore();
 
-	long lResult = 1;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "isVictoryTest", NULL, &lResult);
-	if (lResult == 0)
-	{
-		return;
+	if (GC.getUSE_IS_VICTORY_TEST_CALLBACK())
+	{ 
+		long lResult = 1;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "isVictoryTest", NULL, &lResult);
+		if (lResult == 0)
+		{
+			return;
+		}
 	}
 
 	std::vector<CvWinner> aaiWinners;

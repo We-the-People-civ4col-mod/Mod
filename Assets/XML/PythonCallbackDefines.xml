@@ -132,5 +132,17 @@
 	<Define>
 		<DefineName>USE_DO_COMBAT_CALLBACK</DefineName>
 		<iDefineIntVal>0</iDefineIntVal>
-	</Define>		
+	</Define>
+	<Define>
+		<DefineName>USE_DO_GOLD_CALLBACK</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>USE_UPDATE_COLORED_PLOTS_CALLBACK</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>USE_IS_VICTORY_TEST_CALLBACK</DefineName>
+		<iDefineIntVal>0</iDefineIntVal>
+	</Define>
 </Civ4Defines>
