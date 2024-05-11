@@ -1780,56 +1780,56 @@ bool CvSelectionGroup::isFull()
 {
 	CLLNode<IDInfo>* pUnitNode;
 
-	if (getNumUnits() <= 0)
+	if (getNumUnits() > 0)
 	{
-		return false;
-	}
+		// do two passes, the first pass, we ignore units with special cargo
+		int iSpecialCargoCount = 0;
+		int iCargoCount = 0;
 
-	// do two passes, the first pass, we ignore units with special cargo
-	int iSpecialCargoCount = 0;
-	int iCargoCount = 0;
-
-	// first pass, count but ignore special cargo units
-	pUnitNode = headUnitNode();
-
-	while (pUnitNode != NULL)
-	{
-		CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
-
-		if (pLoopUnit != NULL)
-		{
-			if (pLoopUnit->cargoSpace() > 0)
-			{
-				iCargoCount++;
-			}
-
-			if (pLoopUnit->specialCargo() != NO_SPECIALUNIT)
-			{
-				iSpecialCargoCount++;
-			}
-			else if (!(pLoopUnit->isFull()))
-			{
-				return false;
-			}
-		}
-	}
-
-	// if every unit in the group has special cargo, then check those, otherwise, consider ourselves full
-	if (iSpecialCargoCount >= iCargoCount)
-	{
+		// first pass, count but ignore special cargo units
 		pUnitNode = headUnitNode();
+
 		while (pUnitNode != NULL)
 		{
 			CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
 
-			if (pLoopUnit != NULL && !(pLoopUnit->isFull()))
+			if (pLoopUnit != NULL)
 			{
-				return false;
+				if (pLoopUnit->cargoSpace() > 0)
+				{
+					iCargoCount++;
+				}
+
+				if (pLoopUnit->specialCargo() != NO_SPECIALUNIT)
+				{
+					iSpecialCargoCount++;
+				}
+				else if (!(pLoopUnit->isFull()))
+				{
+					return false;
+				}
 			}
 		}
+
+		// if every unit in the group has special cargo, then check those, otherwise, consider ourselves full
+		if (iSpecialCargoCount >= iCargoCount)
+		{
+			pUnitNode = headUnitNode();
+			while (pUnitNode != NULL)
+			{
+				CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
+
+				if (pLoopUnit != NULL && !(pLoopUnit->isFull()))
+				{
+					return false;
+				}
+			}
+		}
+
+		return true;
 	}
 
-	return true;
+	return false;
 }
 
 
