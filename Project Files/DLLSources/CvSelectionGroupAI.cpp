@@ -1,5 +1,7 @@
 // selectionGroupAI.cpp
 
+#include <hash_map>
+
 #include "CvGameCoreDLL.h"
 #include "CvSelectionGroupAI.h"
 #include "CvPlayerAI.h"
@@ -897,9 +899,54 @@ void CvSelectionGroupAI::processTradeRoute(CvTradeRoute* pRoute, std::map<IDInfo
 	cityValues[pRoute->getDestinationCity()] = 0;
 }
 
+namespace
+{
+	struct PathCache
+	{	
+		struct Result
+		{
+			Result(bool pathExists_, int turns_)
+				: pathExists(pathExists_), turns(turns_) {}
+
+			const bool pathExists;
+			const int turns;
+		};
+
+		typedef stdext::hash_map<size_t, Result> PathCacheHashMap;
+
+		Result findPath(CvSelectionGroup& kGroup, CvPlot& kSourcePlot, CvPlot& kDestinationPlot, int moveFlags)
+		{
+			const size_t key = generateUniqueKey(&kSourcePlot, &kDestinationPlot);
+			PathCacheHashMap::const_iterator it = pathCache.find(key);
+
+			if (it != pathCache.end())
+			{
+				return it->second;
+			}
+			else
+			{
+				int turns;
+				const bool res = kGroup.generatePath(&kSourcePlot, &kDestinationPlot, moveFlags, true, &turns);
+				Result result(res, turns);
+				pathCache.insert(std::make_pair(key, result));
+				return result;
+			}
+		}
+	private:
+		size_t generateUniqueKey(const CvPlot* plot1, const CvPlot* plot2) {
+			const int W = 256;
+			return plot1->getX() + (plot1->getY() * W) + (plot2->getX() * W * W) + (plot2->getY() * W * W * W);
+		}
+
+		PathCacheHashMap pathCache;
+	};
+}
+
 bool CvSelectionGroupAI::AI_tradeRoutes()
 {
 	PROFILE_FUNC();
+
+	PathCache pathCache;
 
 	const IDInfo kEurope(getOwnerINLINE(), CvTradeRoute::EUROPE_CITY_ID);
 
@@ -1017,9 +1064,9 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 					{
 						// Due to the introduction of the large river feature, the area check may not be sufficient. This is the case
 						// if the source city is in a different area, connected by river fords \ ferry stations
-						const bool res = generatePath(plot(), pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true);
+						const PathCache::Result res = pathCache.findPath(*this, *plot(), *pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
 
-						if (res)
+						if (res.pathExists)
 						{
 							processTradeRoute(pRoute, cityValues, routes, routeValues, yieldsDelivered, yieldsToUnload);
 						}
@@ -1095,9 +1142,8 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				int yieldsToUnload = aiYieldsLoaded[eYield];
 				if(pDestinationCity != NULL && pDestinationCity->getMaxImportAmount(eYield) > 0)
 				{
-					int turnsToReach = 0;
-					generatePath(plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReach);
-					yieldsToUnload = std::min(yieldsToUnload, estimateYieldsToLoad(pDestinationCity, 9999, eYield, turnsToReach, 0));
+					const PathCache::Result res = pathCache.findPath(*this, *plot(), *pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
+					yieldsToUnload = std::min(yieldsToUnload, estimateYieldsToLoad(pDestinationCity, 9999, eYield, res.turns, 0));
 				}
 				//int iRouteValue = kOwner.AI_transferYieldValue(routes[i]->getDestinationCity(), routes[i]->getYield(), aiYieldsLoaded[routes[i]->getYield()]);
 				int iRouteValue = kOwner.AI_transferYieldValue(routes[i]->getDestinationCity(), routes[i]->getYield(), yieldsToUnload);
@@ -1135,11 +1181,10 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			// R&R mod, vetiarvind, max yield import limit - start
 			if(pDestinationCity != NULL && pDestinationCity->getMaxImportAmount(eYield) > 0)
 			{
-				int turnsToReachToSource = 0, turnsToReachFromSourceToDest = 0;
-				const bool bSourceOk = generatePath(pSourceCity->plot(), plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachToSource);
-				const bool bDestOk = generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReachFromSourceToDest);
+				const PathCache::Result sourcePath = pathCache.findPath(*this, *pSourceCity->plot(), *plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
+				const PathCache::Result destinationPath = pathCache.findPath(*this, *pSourceCity->plot(), *pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
 
-				if (!(bSourceOk && bDestOk))
+				if (!(sourcePath.pathExists && destinationPath.pathExists))
 					// We require both of these paths to be valid. If not, we skip this route
 					continue;
 
@@ -1149,10 +1194,10 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				// Erik: If we can travel from the current plot to the source, and then from source to destination in the same turn,
 				// we have to make sure that we don't overestimate the amount that we should load
 				int turnsRequired;
-				if (turnsToReachToSource == turnsToReachFromSourceToDest)
+				if (sourcePath.turns == destinationPath.turns)
 				{
 					// No need to add both legs of the journey since that would have the transport load too much cargo for the destination city
-					turnsRequired = turnsToReachToSource + turnsToReachFromSourceToDest - 2;
+					turnsRequired = sourcePath.turns + destinationPath.turns - 2;
 					// In case generatePath could ever return 0
 					turnsRequired = std::max(0, turnsRequired);
 				}
@@ -1160,7 +1205,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				{
 					// Slightly underestimate the cargo we should carry (we cannot get this 100% correct since it depends on fractional movement,
 					// other transports, consumption changes at the destination etc.
-					turnsRequired = std::max(turnsToReachToSource, turnsToReachFromSourceToDest);
+					turnsRequired = std::max(sourcePath.turns, destinationPath.turns);
 				}
 
 				iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsRequired, aiYieldsLoaded[eYield]);
@@ -1225,8 +1270,8 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 
 				CvPlot* pDestinationCityPlot = pCity->plot();
 
-				int iTurns;
-				if (generatePath(plot(), pDestinationCityPlot, (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &iTurns))
+				const PathCache::Result res = pathCache.findPath(*this, *plot(), *pDestinationCityPlot, (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
+				if (res.pathExists)
 				// TAC - Trade Routes Advisor - koma13 - END
 				{
 					iValue /= 1 + kOwner.AI_plotTargetMissionAIs(pDestinationCityPlot, MISSIONAI_TRANSPORT, this, 0);
@@ -1250,14 +1295,14 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 							// Erik: Double the value of the route. Even if we encourage transportion between areas we don't want to sail around the world!
 							// so we make that less attractive
 							iValue *= CoastalTransportDifferentAreaMultiplier;
-							iValue /=  std::max(1, iTurns - (CoastalTransportRangeThreshold * CoastalTransportDifferentAreaMultiplier));
+							iValue /=  std::max(1, res.turns - (CoastalTransportRangeThreshold * CoastalTransportDifferentAreaMultiplier));
 						}
 						else
 						{
 							if (pPlotArea->getNumAIUnits(getOwnerINLINE(), UNITAI_WAGON) > 0)
 							{
 								// Erik: Longer routes are less attractive for coastal transports
-								iValue /= std::max(1, iTurns - CoastalTransportRangeThreshold);
+								iValue /= std::max(1, res.turns - CoastalTransportRangeThreshold);
 							}
 						}
 					}
@@ -1314,12 +1359,11 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 					int bDestinationHasImportLimit = pDestinationCity != NULL && pDestinationCity->getMaxImportAmount(eYield) > 0;
 					if(bDestinationHasImportLimit)
 					{
-						int turnsToReach = 0;
 						iOriginalAmount = iAmount = std::min(GC.getGameINLINE().getCargoYieldCapacity(), iAmount);
-						const bool r1 = generatePath(pSourceCity->plot(), pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY), true, &turnsToReach);
-						FAssertMsg(r1, "Path must be valid!");
+						const PathCache::Result res = pathCache.findPath(*this, *pSourceCity->plot(), *pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
+						FAssertMsg(res.pathExists, "Path must be valid!");
 						// Erik: If the destination can be reached in the same turn, subtract a turn
-						turnsToReach = std::max(0, turnsToReach - 1);
+						const int turnsToReach = std::max(0, res.turns - 1);
 						iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsToReach, aiYieldsLoaded[eYield]);
 					}
 
