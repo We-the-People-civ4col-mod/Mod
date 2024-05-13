@@ -905,10 +905,10 @@ namespace
 	{	
 		struct Result
 		{
-			Result(bool pathExists_, int turns_)
-				: pathExists(pathExists_), turns(turns_) {}
+			Result(bool exists_, int turns_)
+				: exists(exists_), turns(turns_) {}
 
-			const bool pathExists;
+			const bool exists;
 			const int turns;
 		};
 
@@ -916,8 +916,8 @@ namespace
 
 		Result findPath(CvSelectionGroup& kGroup, CvPlot& kSourcePlot, CvPlot& kDestinationPlot, int moveFlags)
 		{
-			const size_t key = generateUniqueKey(&kSourcePlot, &kDestinationPlot);
-			PathCacheHashMap::const_iterator it = pathCache.find(key);
+			const size_t key = generateUniqueKey(kSourcePlot, kDestinationPlot);
+			const PathCacheHashMap::const_iterator it = pathCache.find(key);
 
 			if (it != pathCache.end())
 			{
@@ -927,15 +927,15 @@ namespace
 			{
 				int turns;
 				const bool res = kGroup.generatePath(&kSourcePlot, &kDestinationPlot, moveFlags, true, &turns);
-				Result result(res, turns);
+				const Result result(res, turns);
 				pathCache.insert(std::make_pair(key, result));
 				return result;
 			}
 		}
 	private:
-		size_t generateUniqueKey(const CvPlot* plot1, const CvPlot* plot2) {
+		size_t generateUniqueKey(const CvPlot& kPlot1, const CvPlot& kPlot2) const {
 			const int W = 256;
-			return plot1->getX() + (plot1->getY() * W) + (plot2->getX() * W * W) + (plot2->getY() * W * W * W);
+			return kPlot1.getX() + (kPlot1.getY() * W) + (kPlot2.getX() * W * W) + (kPlot2.getY() * W * W * W);
 		}
 
 		PathCacheHashMap pathCache;
@@ -1066,7 +1066,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 						// if the source city is in a different area, connected by river fords \ ferry stations
 						const PathCache::Result res = pathCache.findPath(*this, *plot(), *pSourceCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
 
-						if (res.pathExists)
+						if (res.exists)
 						{
 							processTradeRoute(pRoute, cityValues, routes, routeValues, yieldsDelivered, yieldsToUnload);
 						}
@@ -1184,7 +1184,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				const PathCache::Result sourcePath = pathCache.findPath(*this, *pSourceCity->plot(), *plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
 				const PathCache::Result destinationPath = pathCache.findPath(*this, *pSourceCity->plot(), *pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
 
-				if (!(sourcePath.pathExists && destinationPath.pathExists))
+				if (!(sourcePath.exists && destinationPath.exists))
 					// We require both of these paths to be valid. If not, we skip this route
 					continue;
 
@@ -1271,7 +1271,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				CvPlot* pDestinationCityPlot = pCity->plot();
 
 				const PathCache::Result res = pathCache.findPath(*this, *plot(), *pDestinationCityPlot, (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
-				if (res.pathExists)
+				if (res.exists)
 				// TAC - Trade Routes Advisor - koma13 - END
 				{
 					iValue /= 1 + kOwner.AI_plotTargetMissionAIs(pDestinationCityPlot, MISSIONAI_TRANSPORT, this, 0);
@@ -1361,7 +1361,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 					{
 						iOriginalAmount = iAmount = std::min(GC.getGameINLINE().getCargoYieldCapacity(), iAmount);
 						const PathCache::Result res = pathCache.findPath(*this, *pSourceCity->plot(), *pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
-						FAssertMsg(res.pathExists, "Path must be valid!");
+						FAssertMsg(res.exists, "Path must be valid!");
 						// Erik: If the destination can be reached in the same turn, subtract a turn
 						const int turnsToReach = std::max(0, res.turns - 1);
 						iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsToReach, aiYieldsLoaded[eYield]);
