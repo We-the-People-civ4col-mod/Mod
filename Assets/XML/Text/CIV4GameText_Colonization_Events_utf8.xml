@@ -5471,13 +5471,13 @@
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_NEW_SCOUT_HELP</Tag>
 		<English>[ICON_BULLET]Some Natives will join you, so you can split up the expedition.</English>
 		<German>[ICON_BULLET]Einige Ureinwohner werden sich Euch anschließen, wodurch Ihr die Expedition aufteilen könnt.</German>
-		<Russian>[ICON_BULLET]К вам присоединятся несколько индейцев туземцы, что позволит разделить экспедицию на несколько отрядов.</Russian>
+		<Russian>[ICON_BULLET]К вам присоединятся несколько индейцев, что позволит разделить экспедицию на несколько отрядов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_NONEW_SCOUT_HELP</Tag>
 		<English>[ICON_BULLET]These Natives are angry at your reaction. As proof of their power they're ready to attack you.</English>
 		<German>[ICON_BULLET]Einige Ureinwohner sind wütend über Eure Reaktion. Sie wollen beweisen wie wertvoll sie sind und werden Euch angreifen.</German>
-		<Russian>[ICON_BULLET]Некоторых туземцев не устраивает ваша реакция. Они хотят доказать, насколько они хороши и нападут на вас.</Russian>
+		<Russian>[ICON_BULLET]Индейцы недовольны вашей реакцией и чтобы доказать свою силу они готовы напасть на вас.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER</Tag>
@@ -5489,7 +5489,7 @@
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER</Tag>
 		<English>Milord, a [COLOR_HIGHLIGHT_TEXT]failed native trader[COLOR_REVERT] recently returned from the wilderness to our colonies. What a blessing! Even so, now that he's recovered he's eager to go back among the Natives. Trading must be in his blood.</English>
 		<German>Milord, ein [COLOR_HIGHLIGHT_TEXT]gescheiterter Ureinwohnerhändler[COLOR_REVERT] hat aus der Wildnis zurück in die Kolonien gefunden. Welch ein Segen. Nachdem er sich erholt hat, ist er bereit nochmals zu den Ureinwohnern aufzubrechen. Handel liegt ihm einfach im Blut.</German>
-		<Russian>Милорд, [COLOR_HIGHLIGHT_TEXT]неудачливый торговец с индейцами[COLOR_REVERT] вернулся из пустошей в колонию. Какое счастье. И теперь, когда он поправил пошатнувшееся за время скитаний здоровье, он готов вернуться к аборигенам. Он  не может жить без торговли, она у него в крови.</Russian>
+		<Russian>Милорд, [COLOR_HIGHLIGHT_TEXT]неудачливый торговец с индейцами[COLOR_REVERT] вернулся из пустошей в колонию. Какое счастье. И теперь, когда он поправил пошатнувшееся за время скитаний здоровье, он готов вернуться к аборигенам. Он не может жить без торговли, она у него в крови.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER_1</Tag>
