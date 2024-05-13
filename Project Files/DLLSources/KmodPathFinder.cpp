@@ -53,8 +53,8 @@ bool KmodPathFinder::OpenList_sortPred::operator()(const FAStarNode* &left, cons
 
 //
 KmodPathFinder::KmodPathFinder() :
-	start_x(-1),
-	start_y(-1),
+	start_x(0),
+	start_y(0),
 	end_node(0),
 	map_width(0),
 	map_height(0),
@@ -116,15 +116,11 @@ bool KmodPathFinder::GeneratePath(int x1, int y1, int x2, int y2)
 
 	if (x1 != start_x || y1 != start_y)
 	{
-		// No need to reset if this is a newly constructed instance or already reset
-		if (start_x != -1 && start_y != -1)
-		{
-			// Note: it may be possible to salvage some of the old data to get more speed.
-			// eg. If the moves recorded on the node match the group,
-			// just delete everything that isn't a direct descendant of the new start.
-			// and then subtract the start cost & moves off all the remaining nodes.
-			Reset(); // but this is easier.
-		}
+		// Note: it may be possible to salvage some of the old data to get more speed.
+		// eg. If the moves recorded on the node match the group,
+		// just delete everything that isn't a direct descendant of the new start.
+		// and then subtract the start cost & moves off all the remaining nodes.
+		Reset(); // but this is easier.
 	}
 
 	bool bRecalcHeuristics = false;
@@ -310,9 +306,6 @@ void KmodPathFinder::Reset()
 	memset(&node_data[0], 0, sizeof(*node_data)*map_width*map_height);
 	open_list.clear();
 	end_node = NULL;
-	start_x = -1; // Cheesy alternative to a dirty flag :P
-	start_y = -1;
-
 	// settings is set separately.
 }
 
