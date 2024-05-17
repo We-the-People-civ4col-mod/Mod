@@ -5366,6 +5366,8 @@ void CvGame::doTurn()
 	gDLL->getEngineIFace()->DoTurn();
 
 	gDLL->getEngineIFace()->AutoSave();
+
+	endProcessStorms();
 }
 
 void CvGame::doFoundingFathers()

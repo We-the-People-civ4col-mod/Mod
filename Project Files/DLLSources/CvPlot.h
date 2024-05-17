@@ -13,6 +13,8 @@
 
 #include "CvPlotFunctions.h"
 
+#include "tbb/concurrent_queue.h"
+
 #pragma warning( disable: 4251 )		// needs to have dll-interface to be used by clients of class
 
 class CvArea;
@@ -28,6 +30,30 @@ class CvFlagEntity;
 
 typedef bool (*ConstPlotUnitFunc)( const CvUnit* pUnit, int iData1, int iData2);
 typedef bool (*PlotUnitFunc)(CvUnit* pUnit, int iData1, int iData2);
+
+
+class TaskBase
+{
+public:
+	virtual ~TaskBase() {}
+	virtual void execute() const = 0;
+};
+
+template <typename T>
+class Task : public TaskBase
+{
+public:
+	Task(const T& functor) : m_functor(functor) {}
+	void execute() const { m_functor(); }
+
+private:
+	T m_functor;
+};
+
+
+extern tbb::concurrent_queue<TaskBase*> taskQueue;
+void beginProcessStorms();
+void endProcessStorms();
 
 class CvPlot
 {

@@ -27,6 +27,11 @@
 #include "CvDLLPythonIFaceBase.h"
 #include "CvGameTextMgr.h"
 
+//#include "tbb/mutex.h"
+#include "tbb/atomic.h"
+#include "tbb/task_group.h"
+
+
 #define STANDARD_MINIMAP_ALPHA		(0.6f)
 
 // MAX_VISIBILITY_RANGE_PLOT is the max visibility range for a plot or a unit
@@ -47,6 +52,128 @@ enum
 	MAX_VISIBILITY_RANGE_PLOT_BONUS,
 };
 #endif
+
+class RebuildTileArtTask
+{
+public:
+	RebuildTileArtTask(int x, int y)
+		: m_x(x), m_y(y) {}
+
+	void operator()() const
+	{
+		gDLL->getEngineIFace()->RebuildTileArt(m_x, m_y);
+	}
+
+private:
+	int m_x, m_y;
+};
+
+class DestroyFeatureTask
+{
+public:
+	DestroyFeatureTask(CvFeature*& featureSymbol)
+		: m_featureSymbol(featureSymbol) {}
+
+	void operator()() const
+	{
+		gDLL->getFeatureIFace()->destroy(m_featureSymbol);
+	}
+
+private:
+	CvFeature*& m_featureSymbol;
+};
+
+class CreateAndInitFeatureTask
+{
+public:
+	CreateAndInitFeatureTask(CvFeature*& featureSymbol, FeatureTypes eFeature, CvPlot* plot)
+		: m_featureSymbol(featureSymbol), m_eFeature(eFeature), m_plot(plot) {}
+
+	void operator()() const
+	{
+		gDLL->getFeatureIFace()->destroy(m_featureSymbol);
+		m_featureSymbol = gDLL->getFeatureIFace()->createFeature();
+		FAssertMsg(m_featureSymbol != NULL, "m_pFeatureSymbol is not expected to be equal with NULL");
+		gDLL->getFeatureIFace()->init(m_featureSymbol, 0, 0, m_eFeature, m_plot);
+		// Assuming updateFeatureSymbolVisibility() can be called here safely
+		m_plot->updateFeatureSymbolVisibility();
+	}
+
+private:
+	CvFeature*& m_featureSymbol;
+	FeatureTypes m_eFeature;
+	CvPlot* m_plot;
+};
+
+class UpdatePositionTask
+{
+public:
+	UpdatePositionTask(CvFeature* featureSymbol)
+		: m_featureSymbol(featureSymbol) {}
+
+	void operator()() const
+	{
+		gDLL->getEntityIFace()->updatePosition((CvEntity*)m_featureSymbol);
+	}
+
+private:
+	CvFeature* m_featureSymbol;
+};
+
+tbb::concurrent_queue<TaskBase*> taskQueue;
+tbb::atomic<bool> finished;
+tbb::task_group group;
+
+void taskProcessor()
+{
+    while (true)
+    {
+        TaskBase* task = NULL;
+        {
+            if (!taskQueue.try_pop(task))
+            {
+                if (finished)
+                {
+                    break;
+                }
+            }
+        }
+        if (task)
+        {
+            task->execute();
+            delete task;
+        }
+        else
+        {
+            Sleep(10); // Avoid busy-waiting
+        }
+    }
+}
+
+class TaskProcessorFunctor
+{
+public:
+	void operator()() const
+	{
+		taskProcessor();
+	}
+};
+
+tbb::task_group tg;
+
+void beginProcessStorms()
+{
+	// Create and run the TaskProcessorFunctor
+	TaskProcessorFunctor taskProcessorFunctor;
+	tg.run(taskProcessorFunctor);
+}
+
+
+void endProcessStorms()
+{
+	finished = true;
+	tg.wait();
+}
 
 
 void CvMap::resetVisibilityCache() const
@@ -8208,7 +8335,6 @@ void CvPlot::updateFeatureSymbolVisibility()
 	}
 }
 
-
 void CvPlot::updateFeatureSymbol(bool bForce, bool bBuildTileArt)
 {
 	PROFILE_FUNC();
@@ -8222,35 +8348,30 @@ void CvPlot::updateFeatureSymbol(bool bForce, bool bBuildTileArt)
 
 	eFeature = getFeatureType();
 
-	if(bBuildTileArt)
+	if (bBuildTileArt)
 	{
-		// gDLL->getEngineIFace()->RebuildTileArt(m_iX,m_iY);
-		gDLL->getEngineIFace()->RebuildTileArt(m_coord.x(), m_coord.y());
+		// Create a task to rebuild tile art and push it to the queue
+		taskQueue.push(new Task<RebuildTileArtTask>(RebuildTileArtTask(m_coord.x(), m_coord.y())));
 	}
 
 	if ((eFeature == NO_FEATURE) || (GC.getFeatureInfo(eFeature).getArtInfo()->getTileArtType() != TILE_ART_TYPE_NONE))
 	{
-		gDLL->getFeatureIFace()->destroy(m_pFeatureSymbol);
+		// Create a task to destroy feature symbol and push it to the queue
+		taskQueue.push(new Task<DestroyFeatureTask>(DestroyFeatureTask(m_pFeatureSymbol)));
 		return;
 	}
 
 	if (bForce || (m_pFeatureSymbol == NULL) || (gDLL->getFeatureIFace()->getFeature(m_pFeatureSymbol) != eFeature))
 	{
-		gDLL->getFeatureIFace()->destroy(m_pFeatureSymbol);
-		m_pFeatureSymbol = gDLL->getFeatureIFace()->createFeature();
-
-		FAssertMsg(m_pFeatureSymbol != NULL, "m_pFeatureSymbol is not expected to be equal with NULL");
-
-		gDLL->getFeatureIFace()->init(m_pFeatureSymbol, 0, 0, eFeature, this);
-
-		updateFeatureSymbolVisibility();
+		// Create a task to destroy and recreate feature symbol and push it to the queue
+		taskQueue.push(new Task<CreateAndInitFeatureTask>(CreateAndInitFeatureTask(m_pFeatureSymbol, eFeature, this)));
 	}
 	else
 	{
-		gDLL->getEntityIFace()->updatePosition((CvEntity*)m_pFeatureSymbol); //update position and contours
+		// Create a task to update position and push it to the queue
+		taskQueue.push(new Task<UpdatePositionTask>(UpdatePositionTask(m_pFeatureSymbol)));
 	}
 }
-
 
 CvRoute* CvPlot::getRouteSymbol() const
 {

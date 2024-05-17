@@ -429,10 +429,13 @@ void CvMap::doTurn()
 {
 	PROFILE_FUNC();
 
+	beginProcessStorms();
+
 	for (int iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->doTurn();
 	}
+	taskQueue.push(NULL);
 }
 
 
