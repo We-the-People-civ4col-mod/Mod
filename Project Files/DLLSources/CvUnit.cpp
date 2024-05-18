@@ -3747,15 +3747,13 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 {
 	FAssert(canMoveOrAttackInto(pPlot) || isMadeAttack());
 
-	CvPlot* pOldPlot = plot();
+	CvPlot* const pOldPlot = plot();
 
 	//TAC Whaling, ray
 	if (isGatheringResource())
 	{
 		convertFishingBoat();
 		setGatheringResource(false);
-
-		return;
 	}
 	//End TAC Whaling, ray
 
@@ -3768,14 +3766,14 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 	// WTP, ray, we also add logic to damage Units on Land by Land Storms like e.g. Blizzard and Sandstorm
 	if (getDomainType() == DOMAIN_SEA || (getDomainType() == DOMAIN_LAND && !plot()->isWater()))
 	{
-		FeatureTypes eFeature = plot()->getFeatureType();
+		const FeatureTypes eFeature = plot()->getFeatureType();
 		if (NO_FEATURE != eFeature)
 		{
-			int iPotentialDamageFromFeaturePercent = GC.getFeatureInfo(eFeature).getTurnDamage();
+			const int iPotentialDamageFromFeaturePercent = GC.getFeatureInfo(eFeature).getTurnDamage();
 			if (0 != iPotentialDamageFromFeaturePercent)
 			{
 				// R&R, bugfix: we never destroy a unit from feature damage, ray, START
-				int iPotentialDamage = (maxHitPoints() * iPotentialDamageFromFeaturePercent) / 100;
+				const int iPotentialDamage = (maxHitPoints() * iPotentialDamageFromFeaturePercent) / 100;
 				if (currHitPoints() > iPotentialDamage)
 				{
 					//changeDamage(GC.getFeatureInfo(eFeature).getTurnDamage(), NO_PLAYER); Version Beyond The Sword
@@ -3788,13 +3786,13 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 	// R&R, Robert Surcouf, Damage on Storm plots, End
 
 	//change feature
-	FeatureTypes featureType = pPlot->getFeatureType();
+	const FeatureTypes featureType = pPlot->getFeatureType();
 	if(featureType != NO_FEATURE)
 	{
-		CvString featureString(GC.getFeatureInfo(featureType).getOnUnitChangeTo());
+		const CvString featureString(GC.getFeatureInfo(featureType).getOnUnitChangeTo());
 		if(!featureString.IsEmpty())
 		{
-			FeatureTypes newFeatureType = (FeatureTypes) GC.getInfoTypeForString(featureString);
+			const FeatureTypes newFeatureType = (FeatureTypes) GC.getInfoTypeForString(featureString);
 			pPlot->setFeatureType(newFeatureType);
 		}
 	}
