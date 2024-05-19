@@ -4153,7 +4153,7 @@ void CvUnitAI::AI_imperialSoldierMove()
 {
 	if (isCargo())
 	{
-		if (AI_anyAttack(1, 50))
+		if (canMove() && AI_anyAttack(1, 50))
 		{
 			return;
 		}
@@ -4250,7 +4250,7 @@ void CvUnitAI::AI_imperialMountedMove()
 {
 	if (isCargo())
 	{
-		if (AI_anyAttack(1, 50))
+		if (canMove() && AI_anyAttack(1, 50))
 		{
 			return;
 		}
