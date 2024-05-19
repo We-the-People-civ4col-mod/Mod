@@ -14573,14 +14573,12 @@ bool CvUnitAI::AI_pillageRange(int iRange, bool bSafe)
 {
 	PROFILE_FUNC();
 
-	CvPlot* pLoopPlot;
 	CvPlot* pBestPlot;
 	CvPlot* pBestPillagePlot;
 	int iSearchRange;
 	int iPathTurns;
 	int iValue;
 	int iBestValue;
-	int iDX, iDY;
 
 	if (canPillage(plot()) && AI_canPillage(*plot()))
 	{
@@ -14594,77 +14592,67 @@ bool CvUnitAI::AI_pillageRange(int iRange, bool bSafe)
 	pBestPlot = NULL;
 	pBestPillagePlot = NULL;
 
-	for (iDX = -(iSearchRange); iDX <= iSearchRange; iDX++)
+	FOR_EACH_PLOT_IN_RANGE(iSearchRange,
 	{
-		for (iDY = -(iSearchRange); iDY <= iSearchRange; iDY++)
+		if (!AI_plotValid(pLoopPlot))
+			continue;
+
+		if ((potentialWarAction(pLoopPlot)) || (pLoopPlot->getCrumbs() > 0))
 		{
-			pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+			if (!canPillage(pLoopPlot))
+				continue;
+		
+			CvCity* const pWorkingCity = pLoopPlot->getWorkingCity();
 
-			if (pLoopPlot != NULL)
+			if (GET_PLAYER(getOwnerINLINE()).isNative() || ((pWorkingCity != NULL) && !(pWorkingCity == area()->getTargetCity(getOwnerINLINE()))))
 			{
-				if (AI_plotValid(pLoopPlot))
+				if (pLoopPlot->isVisibleEnemyUnit(this))
+					continue;
+
+				if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_PILLAGE, getGroup()) == 0)
 				{
-					if ((potentialWarAction(pLoopPlot)) || (pLoopPlot->getCrumbs() > 0))
+					if (generatePath(pLoopPlot, 0, true, &iPathTurns, iRange))
 					{
-                        CvCity * pWorkingCity = pLoopPlot->getWorkingCity();
+						bool bDanger = false;
+						if (getPathFinder().GetFinalMoves() == 0)
+						{
+							bDanger = true;
+							iPathTurns++;
+						}
 
-                        if (canPillage(pLoopPlot))
-                        {
-                            if (GET_PLAYER(getOwnerINLINE()).isNative() || ((pWorkingCity != NULL) && !(pWorkingCity == area()->getTargetCity(getOwnerINLINE()))))
-                            {
-                                if (!(pLoopPlot->isVisibleEnemyUnit(this)))
-                                {
-                                    if (GET_PLAYER(getOwnerINLINE()).AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_PILLAGE, getGroup()) == 0)
-                                    {
-                                        if (generatePath(pLoopPlot, 0, true, &iPathTurns))
-                                        {
-                                        	bool bDanger = false;
-                                            if (getPathFinder().GetFinalMoves() == 0)
-                                            {
-                                            	bDanger = true;
-                                                iPathTurns++;
-                                            }
+						if (bDanger)
+						{
+							if (pLoopPlot->defenseModifier(getTeam()) > 0 && !noDefensiveBonus())
+							{
+								bDanger = false;
+							}
+						}
 
-                                            if (bDanger)
-                                            {
-                                            	if (pLoopPlot->defenseModifier(getTeam()) > 0 && !noDefensiveBonus())
-                                            	{
-                                            		bDanger = false;
-                                            	}
-                                            }
+						if ((!bDanger || !bSafe) && (iPathTurns <= iRange))
+						{
+							iValue = AI_pillageValue(pLoopPlot);
+							iValue *= 1000;
+							iValue /= (iPathTurns + 1);
 
-                                            if ((!bDanger || !bSafe) && (iPathTurns <= iRange))
-                                            {
-                                                iValue = AI_pillageValue(pLoopPlot);
+							// if not at war with this plot owner, then devalue plot if we already inside this owner's borders
+							// (because declaring war will pop us some unknown distance away)
+							if (pLoopPlot->isOwned() && !isEnemy(pLoopPlot->getTeam()) && plot()->getTeam() == pLoopPlot->getTeam())
+							{
+								iValue /= 10;
+							}
 
-                                                iValue *= 1000;
-
-                                                iValue /= (iPathTurns + 1);
-
-												// if not at war with this plot owner, then devalue plot if we already inside this owner's borders
-												// (because declaring war will pop us some unknown distance away)
-												if (pLoopPlot->isOwned() && !isEnemy(pLoopPlot->getTeam()) && plot()->getTeam() == pLoopPlot->getTeam())
-												{
-													iValue /= 10;
-												}
-
-                                                if (iValue > iBestValue)
-                                                {
-                                                    iBestValue = iValue;
-                                                    pBestPlot = getPathEndTurnPlot();
-                                                    pBestPillagePlot = pLoopPlot;
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
+							if (iValue > iBestValue)
+							{
+								iBestValue = iValue;
+								pBestPlot = getPathEndTurnPlot();
+								pBestPillagePlot = pLoopPlot;
+							}
+						}
 					}
 				}
 			}
 		}
-	}
+	}) // FOR_EACH
 
 	if ((pBestPlot != NULL) && (pBestPillagePlot != NULL))
 	{
@@ -14685,7 +14673,6 @@ bool CvUnitAI::AI_pillageRange(int iRange, bool bSafe)
 		}
 		else
 		{
-			FAssert(!atPlot(pBestPlot));
 			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, MISSIONAI_PILLAGE, pBestPillagePlot);
 			return true;
 		}
