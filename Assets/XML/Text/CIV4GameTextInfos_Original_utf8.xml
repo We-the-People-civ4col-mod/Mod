@@ -5159,6 +5159,7 @@
 		<German>Ihr seid dran, %s1_leader!</German>
 		<Italian>%s1_leader, è il tuo turno!</Italian>
 		<Spanish>¡Es vuestro turno, %s1_leader!</Spanish>
+		<Russian>%s1_leader, Ваш ход!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SHOW_ALL_PLAYERS</Tag>
