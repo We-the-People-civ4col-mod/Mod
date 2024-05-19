@@ -20252,12 +20252,12 @@ bool CvPlayer::checkPopulation() const
 	return (iNumPopulation == getTotalPopulation());
 }
 
+// Returns true if the cached and computed values are different 
 bool CvPlayer::checkPower(bool bReset)
 {
 	int iPower = 0;
 	int iAsset = 0;
 	std::map<int, int> mapAreaPower;
-	//bool bSkipAreaPower = false;
 	int iLoop;
 	for (CvUnit* pUnit = firstUnit(&iLoop); pUnit != NULL; pUnit = nextUnit(&iLoop))
 	{
@@ -20338,50 +20338,59 @@ bool CvPlayer::checkPower(bool bReset)
 	OOS_LOG_3("check power old", getPower(), getAssets());
 	OOS_LOG_3("check power new", iPower, iAsset);
 
-	bool bCheck = true;
+	// Note: I've changed the logic so that asserts will only fire if reset is false
+	// since we don't care about differences if we're about to reset anyway
+
+	bool bDiscrepacyDetected = true;
 	if (iPower != getPower())
 	{
-		const int iDifference = iPower - getPower();
-		FAssertMsg(false, CvString::format("Power discrepancy detected! player %d: %d != %d. Difference: %d",
-			getID(), iPower, getPower(), iDifference).c_str());
-		if (bReset)
+		if (!bReset)
+		{ 
+			const int iDifference = iPower - getPower();
+			FAssertMsg(false, CvString::format("Power discrepancy detected! player %d: %d != %d. Difference: %d",
+				getID(), iPower, getPower(), iDifference).c_str());
+		}
+		else
 		{
 			changePower(iPower - getPower());
 		}
-		bCheck = false;
+		bDiscrepacyDetected = false;
 	}
 
 	if (iAsset != getAssets())
 	{
-		const int iDifference = iAsset - getAssets();
-		FAssertMsg(false, CvString::format("Asset discrepancy detected! player %d: %d != %d. Difference: %d",
-			getID(), iAsset, getAssets(), iDifference).c_str());
-		if (bReset)
+		if (!bReset)
+		{
+			const int iDifference = iAsset - getAssets();
+			FAssertMsg(false, CvString::format("Asset discrepancy detected! player %d: %d != %d. Difference: %d",
+				getID(), iAsset, getAssets(), iDifference).c_str());
+		}
+		else
 		{
 			changeAssets(iAsset - getAssets());
 		}
-		bCheck = false;
+		bDiscrepacyDetected = false;
 	}
 
-	//if (!bSkipAreaPower)
-	{ 
-		for (CvArea* pArea = GC.getMap().firstArea(&iLoop); pArea != NULL; pArea = GC.getMap().nextArea(&iLoop))
+	for (CvArea* pArea = GC.getMap().firstArea(&iLoop); pArea != NULL; pArea = GC.getMap().nextArea(&iLoop))
+	{
+		const int iDifference = mapAreaPower[pArea->getID()] - pArea->getPower(getID());
+		if (iDifference != 0)
 		{
-			const int iDifference = mapAreaPower[pArea->getID()] - pArea->getPower(getID());
-			if (iDifference != 0)
+			if (!bReset)
 			{
 				FAssertMsg(false, CvString::format("Area power discrepancy detected for player %d: %d != %d. Difference: %d for area %d", 
 					getID(), mapAreaPower[pArea->getID()], pArea->getPower(getID()), iDifference, pArea->getID()).c_str());
-				if (bReset)
-				{
-					pArea->changePower(getID(), mapAreaPower[pArea->getID()] - pArea->getPower(getID()));
-				}
-				bCheck = false;
 			}
+			else
+			{
+				pArea->changePower(getID(), mapAreaPower[pArea->getID()] - pArea->getPower(getID()));
+			}
+			bDiscrepacyDetected = false;
 		}
 	}
 
-	return bCheck;
+	return bDiscrepacyDetected;
 }
 
 void CvPlayer::doREFReduction(int iGold)
