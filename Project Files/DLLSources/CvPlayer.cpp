@@ -16441,9 +16441,14 @@ CvUnit* CvPlayer::buyYieldUnitFromEurope(YieldTypes eYield, int iAmount, CvUnit*
 		//unit possibly killed after joining other cargo
 		if (!pUnit->setTransportUnit(pTransport))
 		{
+			// A partial yield unit could have been merged into an already existing partial yield,
+			// so no grouping is necessary due to no net change of units.
 			pUnit = NULL;
 		}
-		pTransport->groupTransportedYieldUnits(pUnit);
+		else
+		{ 
+			pTransport->groupTransportedYieldUnits(pUnit);
+		}
 		changeGold(-iPrice);
 		// R&R, vetiarvind, Price dependent tax rate change - Start
 		int iBuyValue = iYieldBuyPrice >> 1; //buying should only contribute 50% of sell to tax incr. score
@@ -17020,9 +17025,14 @@ CvUnit* CvPlayer::buyYieldUnitFromAfrica(YieldTypes eYield, int iAmount, CvUnit*
 		//unit possibly killed after joining other cargo
 		if (!pUnit->setTransportUnit(pTransport))
 		{
+			// A partial yield unit could have been merged into an already existing partial yield,
+			// so no grouping is necessary due to no net change of units.
 			pUnit = NULL;
 		}
-		pTransport->groupTransportedYieldUnits(pUnit);
+		else
+		{
+			pTransport->groupTransportedYieldUnits(pUnit);
+		}
 		changeGold(-iPrice);
 		// R&R, vetiarvind, Price dependent tax rate change - Start
 		int iBuyValue = kPlayerEurope.getYieldAfricaSellPrice(eYield) >> 1; //buying should only contribute 50% of sell to tax incr. score
@@ -17682,9 +17692,14 @@ CvUnit* CvPlayer::buyYieldUnitFromPortRoyal(YieldTypes eYield, int iAmount, CvUn
 		//unit possibly killed after joining other cargo
 		if (!pUnit->setTransportUnit(pTransport))
 		{
+			// A partial yield unit could have been merged into an already existing partial yield,
+			// so no grouping is necessary due to no net change of units.
 			pUnit = NULL;
 		}
-		pTransport->groupTransportedYieldUnits(pUnit);
+		else
+		{
+			pTransport->groupTransportedYieldUnits(pUnit);
+		}
 		changeGold(-iPrice);
 		// R&R, vetiarvind, Price dependent tax rate change - Start
 		int iBuyValue = kPlayerEurope.getYieldPortRoyalSellPrice(eYield) >> 1; //buying should contribute only 50% of sell value to tax score
