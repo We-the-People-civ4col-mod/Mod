@@ -7255,7 +7255,7 @@
 			<bArea>0</bArea>
 			<bPeaks>0</bPeaks>
 			<bHills>0</bHills>
-			<bFlatlands>0</bFlatlands>
+			<bFlatlands>1</bFlatlands>
 			<bNoRiverSide>0</bNoRiverSide>
 			<bRiverSideOnly>0</bRiverSideOnly>
 			<bCoastalLandOnly>1</bCoastalLandOnly>
@@ -11923,8 +11923,8 @@
 			<iGroupRand>0</iGroupRand>
 			<bArea>0</bArea>
 			<bPeaks>0</bPeaks>
-			<bHills>0</bHills>
-			<bFlatlands>0</bFlatlands>
+			<bHills>1</bHills>
+			<bFlatlands>1</bFlatlands>
 			<bNoRiverSide>0</bNoRiverSide>
 			<bRiverSideOnly>0</bRiverSideOnly>
 			<bCoastalLandOnly>0</bCoastalLandOnly>
