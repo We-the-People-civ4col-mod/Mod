@@ -1863,10 +1863,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_LINE_INFANTRY_PEDIA</Tag>
+		<English>Professional musketeers and riflemen, trained and disciplined, dominated European wars from the sixteenth century onward. In the New World, line infantry quickly captured settlements though in the wilderness they were vulnerable to guerrilla warfare.[NEWLINE]To win against infantry firing in ranks Native Nations needed overwhelming numerical superiority. In the interior of the continent they often had that, and the support of the people. The Comanche wiped out the Spanish and killed any new arrivals for over a century. Ultimately Spain sold land it no longer controlled to the United States.</English>
 		<English>TXT_KEY_PROFESSION_SOLDIER_PEDIA</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_LINE_INFANTRY_STRATEGY</Tag>
+		<English>You can create [COLOR_UNIT_TEXT]line infantry[COLOR_REVERT] from the settlement screen or in [LINK=CONCEPT_EUROPE]Europe[\LINK] if you have enough [LINK=YIELD_MUSKETS]guns[\LINK], [LINK=YIELD_BLADES]blades[\LINK]  and [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] to equip them. They are powerful offensive troops, capable of attacking [LINK=CONCEPT_SETTLEMENTS]settlements[\LINK] or fortifying in terrain with defense bonuses. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_INFANTRY]veteran infantry soldier[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
 		<English>TXT_KEY_PROFESSION_SOLDIER_STRATEGY</English>
 	</TEXT>
 	<TEXT>
