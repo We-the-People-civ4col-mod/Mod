@@ -16379,23 +16379,33 @@ void CvPlayer::sellYieldUnitToEurope(CvUnit* pUnit, int iAmount, int iCommission
 	// PatchMod: Check Europe prices after each trade END
 }
 
-CvUnit* CvPlayer::buyYieldUnitFromEurope(YieldTypes eYield, int iAmount, CvUnit* pTransport)
+CvUnit* CvPlayer::buyYieldUnit(YieldTypes eYield, int iAmount, CvUnit* pTransport, Port port) 
 {
-	if (!isYieldEuropeTradable(eYield))
-	{
+	// Check if the yield is tradable in the specified location
+	bool isTradable = false;
+	switch (port) {
+	case EUROPE:
+		isTradable = isYieldEuropeTradable(eYield);
+		break;
+	case AFRICA:
+		isTradable = isYieldAfricaTradable(eYield);
+		break;
+	case PORT_ROYAL:
+		isTradable = isYieldPortRoyalTradable(eYield);
+		break;
+	}
+	if (!isTradable) {
 		return NULL;
 	}
 
 	FAssert(pTransport != NULL);
-	if (NULL == pTransport)
-	{
+	if (NULL == pTransport) {
 		return NULL;
 	}
 
 	int iAmountAvailable = pTransport->getLoadYieldAmount(eYield);
 	iAmount = std::min(iAmount, iAmountAvailable);
-	if(iAmount == 0)
-	{
+	if (iAmount == 0) {
 		FAssertMsg(false, "Can't load cargo yield.");
 		return NULL;
 	}
@@ -16403,10 +16413,23 @@ CvUnit* CvPlayer::buyYieldUnitFromEurope(YieldTypes eYield, int iAmount, CvUnit*
 	FAssert(pTransport->getOwnerINLINE() == getID());
 	FAssert(getParent() != NO_PLAYER);
 	CvPlayer& kPlayerEurope = GET_PLAYER(getParent());
-	int iYieldBuyPrice = kPlayerEurope.getYieldSellPrice(eYield);// R&R, vetiarvind, Price dependent tax rate change
-	int iPrice = iAmount * iYieldBuyPrice;
-	if (iPrice > getGold())
-	{
+
+	// Get the yield sell price based on the location
+	int iYieldSellPrice = 0;
+	switch (port) {
+	case EUROPE:
+		iYieldSellPrice = kPlayerEurope.getYieldSellPrice(eYield);
+		break;
+	case AFRICA:
+		iYieldSellPrice = kPlayerEurope.getYieldAfricaSellPrice(eYield);
+		break;
+	case PORT_ROYAL:
+		iYieldSellPrice = kPlayerEurope.getYieldPortRoyalSellPrice(eYield);
+		break;
+	}
+
+	const int iPrice = iAmount * iYieldSellPrice;
+	if (iPrice > getGold()) {
 		m_aszTradeMessages.push_back(gDLL->getText("EUROPE_SCREEN_BUY_UNIT_LACK_FUNDS", GC.getYieldInfo(eYield).getTextKeyWide(), iPrice));
 
 		// TAC - Trade Messages - koma13 - START
@@ -16416,49 +16439,79 @@ CvUnit* CvPlayer::buyYieldUnitFromEurope(YieldTypes eYield, int iAmount, CvUnit*
 		m_aiTradeMessageCommissions.push_back(0);
 		// TAC - Trade Messages - koma13 - END
 
-		gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
+		// Set the screen dirty bit based on the location
+		switch (port) {
+		case EUROPE:
+			gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
+			break;
+		case AFRICA:
+			gDLL->getInterfaceIFace()->setDirty(AfricaScreen_DIRTY_BIT, true);
+			break;
+		case PORT_ROYAL:
+			gDLL->getInterfaceIFace()->setDirty(PortRoyalScreen_DIRTY_BIT, true);
+			break;
+		}
+
 		return NULL;
 	}
 
-	CvYieldInfo& kYield = GC.getYieldInfo(eYield);
-	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(kYield.getUnitClass());
+	const CvYieldInfo& kYield = GC.getYieldInfo(eYield);
+	const UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(kYield.getUnitClass());
 	FAssert(NO_UNIT != eUnit);
-	if (NO_UNIT == eUnit)
-	{
+	if (NO_UNIT == eUnit) {
 		return NULL;
 	}
 
 	CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), INVALID_PLOT_COORD, INVALID_PLOT_COORD, NO_UNITAI, NO_DIRECTION, iAmount);
 	FAssert(NULL != pUnit);
-	if (NULL != pUnit)
-	{
-		pUnit->setUnitTravelState(UNIT_TRAVEL_STATE_IN_EUROPE, false);
-		UnitAITypes eUnitAI = pUnit->AI_getUnitAIType();
-		pUnit->removeFromMap(); //needs to match addToMap
+	if (NULL != pUnit) {
+		// Set the unit travel state based on the location
+		switch (port) {
+		case EUROPE:
+			pUnit->setUnitTravelState(UNIT_TRAVEL_STATE_IN_EUROPE, false);
+			break;
+		case AFRICA:
+			pUnit->setUnitTravelState(UNIT_TRAVEL_STATE_IN_AFRICA, false);
+			break;
+		case PORT_ROYAL:
+			pUnit->setUnitTravelState(UNIT_TRAVEL_STATE_IN_PORT_ROYAL, false);
+			break;
+		}
+
+		const UnitAITypes eUnitAI = pUnit->AI_getUnitAIType();
+		pUnit->removeFromMap(); // needs to match addToMap
 		pUnit->addToMap(pTransport->coord());
 		pUnit->AI_setUnitAIType(eUnitAI);
 
-		//unit possibly killed after joining other cargo
-		if (!pUnit->setTransportUnit(pTransport))
-		{
+		// Unit possibly killed after joining other cargo
+		if (!pUnit->setTransportUnit(pTransport)) {
 			// A partial yield unit could have been merged into an already existing partial yield,
 			// so no grouping is necessary due to no net change of units.
 			pUnit = NULL;
 		}
-		else
-		{ 
+		else {
 			pTransport->groupTransportedYieldUnits(pUnit);
 		}
 		changeGold(-iPrice);
-		// R&R, vetiarvind, Price dependent tax rate change - Start
-		int iBuyValue = iYieldBuyPrice >> 1; //buying should only contribute 50% of sell to tax incr. score
-		changeYieldTradedTotal(eYield, iAmount, iBuyValue);
-		kPlayerEurope.changeYieldTradedTotal(eYield, iAmount, iBuyValue);
-		//changeYieldTradedTotal(eYield, iAmount);
-		//kPlayerEurope.changeYieldTradedTotal(eYield, iAmount);
-		// R&R, vetiarvind, Price dependent tax rate change - End
 
-		GC.getGameINLINE().changeYieldBoughtTotal(kPlayerEurope.getID(), eYield, iAmount);
+		// R&R, vetiarvind, Price dependent tax rate change - Start
+		const int iBuyValue = iYieldSellPrice / 2; // buying should only contribute 50% of sell to tax incr. score
+		switch (port) {
+		case EUROPE:
+			changeYieldTradedTotal(eYield, iAmount, iBuyValue);
+			kPlayerEurope.changeYieldTradedTotal(eYield, iAmount, iBuyValue);
+			break;
+		case AFRICA:
+			changeYieldTradedTotalAfrica(eYield, iAmount, iBuyValue); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+			kPlayerEurope.changeYieldTradedTotalAfrica(eYield, iAmount, iBuyValue); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+			GC.getGameINLINE().changeYieldBoughtTotalAfrica(kPlayerEurope.getID(), eYield, iAmount); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+			break;
+		case PORT_ROYAL:
+			changeYieldTradedTotalPortRoyal(eYield, iAmount, iBuyValue); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+			kPlayerEurope.changeYieldTradedTotalPortRoyal(eYield, iAmount, iBuyValue); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+			GC.getGameINLINE().changeYieldBoughtTotalPortRoyal(kPlayerEurope.getID(), eYield, iAmount); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
+			break;
+		}
 
 		CvWStringBuffer szMessage;
 		GAMETEXT.setEuropeYieldBoughtHelp(szMessage, *this, eYield, iAmount);
@@ -16473,16 +16526,41 @@ CvUnit* CvPlayer::buyYieldUnitFromEurope(YieldTypes eYield, int iAmount, CvUnit*
 
 		gDLL->UI().addPlayerMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage.getCString(), "AS2D_BUILD_BANK", MESSAGE_TYPE_LOG_ONLY);
 
-		gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
+		// Set the screen dirty bit based on the location
+		switch (port) {
+		case EUROPE:
+			gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
+			break;
+		case AFRICA:
+			gDLL->getInterfaceIFace()->setDirty(AfricaScreen_DIRTY_BIT, true);
+			break;
+		case PORT_ROYAL:
+			gDLL->getInterfaceIFace()->setDirty(PortRoyalScreen_DIRTY_BIT, true);
+			break;
+		}
 
 		gDLL->getEventReporterIFace()->yieldBoughtFromEurope(getID(), eYield, iAmount);
 	}
 
-	// PatchMod: Check Europe prices after each trade START
-	GET_PLAYER(getParent()).doPrices();
-	// PatchMod: Check Europe prices after each trade END
+	// PatchMod: Check prices after each trade based on location
+	switch (port) {
+	case EUROPE:
+		GET_PLAYER(getParent()).doPrices();
+		break;
+	case AFRICA:
+		GET_PLAYER(getParent()).doAfricaPrices();
+		break;
+	case PORT_ROYAL:
+		GET_PLAYER(getParent()).doPortRoyalPrices();
+		break;
+	}
 
 	return pUnit;
+}
+
+CvUnit* CvPlayer::buyYieldUnitFromEurope(YieldTypes eYield, int iAmount, CvUnit* pTransport) 
+{
+	return buyYieldUnit(eYield, iAmount, pTransport, EUROPE);
 }
 
 // TAC - AI purchases military units - koma13 - START
@@ -16964,108 +17042,9 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 	}
 }
 
-CvUnit* CvPlayer::buyYieldUnitFromAfrica(YieldTypes eYield, int iAmount, CvUnit* pTransport)
+CvUnit* CvPlayer::buyYieldUnitFromAfrica(YieldTypes eYield, int iAmount, CvUnit* pTransport) 
 {
-	if (!isYieldAfricaTradable(eYield))
-	{
-		return NULL;
-	}
-
-	FAssert(pTransport != NULL);
-	if (NULL == pTransport)
-	{
-		return NULL;
-	}
-
-	int iAmountAvailable = pTransport->getLoadYieldAmount(eYield);
-	iAmount = std::min(iAmount, iAmountAvailable);
-	if(iAmount == 0)
-	{
-		FAssertMsg(false, "Can't load cargo yield.");
-		return NULL;
-	}
-
-	FAssert(pTransport->getOwnerINLINE() == getID());
-	FAssert(getParent() != NO_PLAYER);
-	CvPlayer& kPlayerEurope = GET_PLAYER(getParent());
-	int iPrice = iAmount * kPlayerEurope.getYieldAfricaSellPrice(eYield);
-	if (iPrice > getGold())
-	{
-		m_aszTradeMessages.push_back(gDLL->getText("EUROPE_SCREEN_BUY_UNIT_LACK_FUNDS", GC.getYieldInfo(eYield).getTextKeyWide(), iPrice));
-
-		// TAC - Trade Messages - koma13 - START
-		m_aeTradeMessageTypes.push_back(TRADE_MESSAGE_LACK_FUNDS);
-		m_aeTradeMessageYields.push_back(NO_YIELD);
-		m_aiTradeMessageAmounts.push_back(0);
-		m_aiTradeMessageCommissions.push_back(0);
-		// TAC - Trade Messages - koma13 - END
-
-		gDLL->getInterfaceIFace()->setDirty(AfricaScreen_DIRTY_BIT, true);
-		return NULL;
-	}
-
-	CvYieldInfo& kYield = GC.getYieldInfo(eYield);
-	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(kYield.getUnitClass());
-	FAssert(NO_UNIT != eUnit);
-	if (NO_UNIT == eUnit)
-	{
-		return NULL;
-	}
-
-	CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), INVALID_PLOT_COORD, INVALID_PLOT_COORD, NO_UNITAI, NO_DIRECTION, iAmount);
-	FAssert(NULL != pUnit);
-	if (NULL != pUnit)
-	{
-		pUnit->setUnitTravelState(UNIT_TRAVEL_STATE_IN_AFRICA, false);
-		UnitAITypes eUnitAI = pUnit->AI_getUnitAIType();
-		pUnit->removeFromMap(); //needs to match addToMap
-		pUnit->addToMap(pTransport->coord());
-		pUnit->AI_setUnitAIType(eUnitAI);
-
-		//unit possibly killed after joining other cargo
-		if (!pUnit->setTransportUnit(pTransport))
-		{
-			// A partial yield unit could have been merged into an already existing partial yield,
-			// so no grouping is necessary due to no net change of units.
-			pUnit = NULL;
-		}
-		else
-		{
-			pTransport->groupTransportedYieldUnits(pUnit);
-		}
-		changeGold(-iPrice);
-		// R&R, vetiarvind, Price dependent tax rate change - Start
-		int iBuyValue = kPlayerEurope.getYieldAfricaSellPrice(eYield) >> 1; //buying should only contribute 50% of sell to tax incr. score
-		changeYieldTradedTotalAfrica(eYield, iAmount, iBuyValue); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
-		kPlayerEurope.changeYieldTradedTotalAfrica(eYield, iAmount, iBuyValue); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
-		//changeYieldTradedTotal(eYield, iAmount);
-		//kPlayerEurope.changeYieldTradedTotal(eYield, iAmount);
-		// R&R, vetiarvind, Price dependent tax rate change - End
-		GC.getGameINLINE().changeYieldBoughtTotalAfrica(kPlayerEurope.getID(), eYield, iAmount); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
-
-		CvWStringBuffer szMessage;
-		GAMETEXT.setEuropeYieldBoughtHelp(szMessage, *this, eYield, iAmount);
-		m_aszTradeMessages.push_back(szMessage.getCString());
-
-		// TAC - Trade Messages - koma13 - START
-		m_aeTradeMessageTypes.push_back(TRADE_MESSAGE_EUROPE_YIELD_BOUGHT);
-		m_aeTradeMessageYields.push_back(eYield);
-		m_aiTradeMessageAmounts.push_back(iAmount);
-		m_aiTradeMessageCommissions.push_back(0);
-		// TAC - Trade Messages - koma13 - END
-
-		gDLL->UI().addPlayerMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage.getCString(), "AS2D_BUILD_BANK", MESSAGE_TYPE_LOG_ONLY);
-
-		gDLL->getInterfaceIFace()->setDirty(AfricaScreen_DIRTY_BIT, true);
-
-		gDLL->getEventReporterIFace()->yieldBoughtFromEurope(getID(), eYield, iAmount);
-	}
-
-	// PatchMod: Check Europe prices after each trade START
-	GET_PLAYER(getParent()).doAfricaPrices();
-	// PatchMod: Check Europe prices after each trade END
-
-	return pUnit;
+	return buyYieldUnit(eYield, iAmount, pTransport, AFRICA);
 }
 
 void CvPlayer::sellYieldUnitToAfrica(CvUnit* pUnit, int iAmount, int iCommission)
@@ -17631,108 +17610,9 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 	}
 }
 
-CvUnit* CvPlayer::buyYieldUnitFromPortRoyal(YieldTypes eYield, int iAmount, CvUnit* pTransport)
+CvUnit* CvPlayer::buyYieldUnitFromPortRoyal(YieldTypes eYield, int iAmount, CvUnit* pTransport) 
 {
-	if (!isYieldPortRoyalTradable(eYield))
-	{
-		return NULL;
-	}
-
-	FAssert(pTransport != NULL);
-	if (NULL == pTransport)
-	{
-		return NULL;
-	}
-
-	int iAmountAvailable = pTransport->getLoadYieldAmount(eYield);
-	iAmount = std::min(iAmount, iAmountAvailable);
-	if(iAmount == 0)
-	{
-		FAssertMsg(false, "Can't load cargo yield.");
-		return NULL;
-	}
-
-	FAssert(pTransport->getOwnerINLINE() == getID());
-	FAssert(getParent() != NO_PLAYER);
-	CvPlayer& kPlayerEurope = GET_PLAYER(getParent());
-	int iPrice = iAmount * kPlayerEurope.getYieldPortRoyalSellPrice(eYield);
-	if (iPrice > getGold())
-	{
-		m_aszTradeMessages.push_back(gDLL->getText("EUROPE_SCREEN_BUY_UNIT_LACK_FUNDS", GC.getYieldInfo(eYield).getTextKeyWide(), iPrice));
-
-		// TAC - Trade Messages - koma13 - START
-		m_aeTradeMessageTypes.push_back(TRADE_MESSAGE_LACK_FUNDS);
-		m_aeTradeMessageYields.push_back(NO_YIELD);
-		m_aiTradeMessageAmounts.push_back(0);
-		m_aiTradeMessageCommissions.push_back(0);
-		// TAC - Trade Messages - koma13 - END
-
-		gDLL->getInterfaceIFace()->setDirty(PortRoyalScreen_DIRTY_BIT, true);
-		return NULL;
-	}
-
-	CvYieldInfo& kYield = GC.getYieldInfo(eYield);
-	UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(kYield.getUnitClass());
-	FAssert(NO_UNIT != eUnit);
-	if (NO_UNIT == eUnit)
-	{
-		return NULL;
-	}
-
-	CvUnit* pUnit = initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), INVALID_PLOT_COORD, INVALID_PLOT_COORD, NO_UNITAI, NO_DIRECTION, iAmount);
-	FAssert(NULL != pUnit);
-	if (NULL != pUnit)
-	{
-		pUnit->setUnitTravelState(UNIT_TRAVEL_STATE_IN_PORT_ROYAL, false);
-		UnitAITypes eUnitAI = pUnit->AI_getUnitAIType();
-		pUnit->removeFromMap(); //needs to match addToMap
-		pUnit->addToMap(pTransport->coord());
-		pUnit->AI_setUnitAIType(eUnitAI);
-
-		//unit possibly killed after joining other cargo
-		if (!pUnit->setTransportUnit(pTransport))
-		{
-			// A partial yield unit could have been merged into an already existing partial yield,
-			// so no grouping is necessary due to no net change of units.
-			pUnit = NULL;
-		}
-		else
-		{
-			pTransport->groupTransportedYieldUnits(pUnit);
-		}
-		changeGold(-iPrice);
-		// R&R, vetiarvind, Price dependent tax rate change - Start
-		int iBuyValue = kPlayerEurope.getYieldPortRoyalSellPrice(eYield) >> 1; //buying should contribute only 50% of sell value to tax score
-		changeYieldTradedTotalPortRoyal(eYield, iAmount, iBuyValue); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
-		kPlayerEurope.changeYieldTradedTotalPortRoyal(eYield, iAmount, iBuyValue); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
-		//changeYieldTradedTotal(eYield, iAmount);
-		//kPlayerEurope.changeYieldTradedTotal(eYield, iAmount);
-		// R&R, vetiarvind, Price dependent tax rate change - End
-		GC.getGameINLINE().changeYieldBoughtTotalPortRoyal(kPlayerEurope.getID(), eYield, iAmount); // WTP, ray, Yields Traded Total for Africa and Port Royal - START
-
-		CvWStringBuffer szMessage;
-		GAMETEXT.setEuropeYieldBoughtHelp(szMessage, *this, eYield, iAmount);
-		m_aszTradeMessages.push_back(szMessage.getCString());
-
-		// TAC - Trade Messages - koma13 - START
-		m_aeTradeMessageTypes.push_back(TRADE_MESSAGE_EUROPE_YIELD_BOUGHT);
-		m_aeTradeMessageYields.push_back(eYield);
-		m_aiTradeMessageAmounts.push_back(iAmount);
-		m_aiTradeMessageCommissions.push_back(0);
-		// TAC - Trade Messages - koma13 - END
-
-		gDLL->UI().addPlayerMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage.getCString(), "AS2D_BUILD_BANK", MESSAGE_TYPE_LOG_ONLY);
-
-		gDLL->getInterfaceIFace()->setDirty(PortRoyalScreen_DIRTY_BIT, true);
-
-		gDLL->getEventReporterIFace()->yieldBoughtFromEurope(getID(), eYield, iAmount);
-	}
-
-	// PatchMod: Check Europe prices after each trade START
-	GET_PLAYER(getParent()).doPortRoyalPrices();
-	// PatchMod: Check Europe prices after each trade END
-
-	return pUnit;
+	return buyYieldUnit(eYield, iAmount, pTransport, PORT_ROYAL);
 }
 
 void CvPlayer::sellYieldUnitToPortRoyal(CvUnit* pUnit, int iAmount, int iCommission)

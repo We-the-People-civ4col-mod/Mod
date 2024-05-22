@@ -75,7 +75,8 @@ private:
 enum Port
 {
 	EUROPE,
-	AFRICA
+	AFRICA,
+	PORT_ROYAL
 };
 
 class CvUnit : public CvDLLEntity

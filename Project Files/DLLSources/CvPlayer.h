@@ -977,6 +977,7 @@ public:
 
 	DirectionTypes getPreferredStartingDirection() const;
 	std::vector<CvUnit*> getPortUnitsByProfession(ProfessionTypes eProfession) const;
+	CvUnit* buyYieldUnit(YieldTypes eYield, int iAmount, CvUnit* pTransport, Port port);
 
 protected:
 
