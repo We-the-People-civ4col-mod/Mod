@@ -477,9 +477,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 {
 	PROFILE_FUNC();
 
-	CvWString szBuffer;
-
-	CvPlot* pPlot = plot();
+	CvPlot* const pPlot = plot();
 	FAssertMsg(pPlot != NULL, "Plot is not assigned a valid value");
 	FAssert(GET_PLAYER(getOwnerINLINE()).checkPopulation());
 
@@ -493,7 +491,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 	}
 
-	for(int i=0;i<(int)oldUnits.size();i++)
+	for(uint i=0;i<oldUnits.size();i++)
 	{
 		CvUnit* pLoopUnit = ::getUnit(oldUnits[i]);
 
@@ -534,6 +532,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 			{
 				if (GET_PLAYER((PlayerTypes)iI).isAlive())
 				{
+					CvWString szBuffer;
 					szBuffer = gDLL->getText("TXT_KEY_MISC_GENERAL_KILLED", getNameKey());
 					gDLL->UI().addPlayerMessage(((PlayerTypes)iI), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, GC.getEraInfo(GC.getGameINLINE().getCurrentEra()).getAudioUnitDefeatScript(), MESSAGE_TYPE_MAJOR_EVENT);
 				}
@@ -548,15 +547,13 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 	}
 
 	finishMoves();
-
-	int iYieldStored = getYieldStored();
+	const int iYieldStored = getYieldStored();
 	setYieldStored(0);
-
 	removeFromMap();
 	updateOwnerCache(-1);
 
-	PlayerTypes eOwner = getOwnerINLINE();
-	PlayerTypes eCapturingPlayer = getCapturingPlayer();
+	const PlayerTypes eOwner = getOwnerINLINE();
+	const PlayerTypes eCapturingPlayer = getCapturingPlayer();
 	UnitTypes eCaptureUnitType = NO_UNIT;
 	ProfessionTypes eCaptureProfession = getProfession();
 	FAssert(eCaptureProfession == NO_PROFESSION || !GC.getProfessionInfo(eCaptureProfession).isCitizen());
@@ -566,11 +563,11 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 		// eCaptureUnitType = getCaptureUnitType(GET_PLAYER(eCapturingPlayer).getCivilizationType());
 		eCaptureUnitType = getUnitType();
 	}
-	YieldTypes eYield = getYield();
+	//const YieldTypes eYield = getYield();
 
 	gDLL->getEventReporterIFace()->unitLost(this);
 
-  GET_PLAYER(getOwnerINLINE()).AI_removeUnitFromMoveQueue(this);
+	GET_PLAYER(getOwnerINLINE()).AI_removeUnitFromMoveQueue(this);
 	GET_PLAYER(getOwnerINLINE()).deleteUnit(getID());
 
 	FAssert(GET_PLAYER(eOwner).checkPopulation());
@@ -603,7 +600,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 				if (bAlive)
 				{
 					pkCapturedUnit->addDamageRandom(10, 75, 5);
-
+					CvWString szBuffer;
 					szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_UNIT", GC.getUnitInfo(eCaptureUnitType).getTextKeyWide());
 					gDLL->UI().addPlayerMessage(eCapturingPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITCAPTURE", MESSAGE_TYPE_INFO, pkCapturedUnit->getButton(), (ColorTypes)GC.getInfoTypeForString("COLOR_GREEN"), pPlot->getX_INLINE(), pPlot->getY_INLINE());
 
@@ -623,7 +620,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 
 					if (!GET_PLAYER(eCapturingPlayer).isHuman())
 					{
-						CvPlot* pPlot = pkCapturedUnit->plot();
+						CvPlot* const pPlot = pkCapturedUnit->plot();
 						if (pPlot && !pPlot->isCity(false))
 						{
 							if (GET_PLAYER(eCapturingPlayer).AI_getPlotDanger(pPlot) && GC.getDefineINT("AI_CAN_DISBAND_UNITS"))

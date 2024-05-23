@@ -598,7 +598,7 @@ public:
 	DllExport CvUnit* getUnit(int iID) const;
 	CvUnit* addUnit();
 	void addExistingUnit(CvUnit *pUnit);
-	void deleteUnit(int iID);
+	bool deleteUnit(int iID);
 	CvUnit* getAndRemoveUnit(int iId);
 
 	int getNumEuropeUnits() const;

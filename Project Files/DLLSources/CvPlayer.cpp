@@ -1731,9 +1731,33 @@ CvUnit* CvPlayer::initPortRoyalUnit(UnitTypes eUnit, UnitAITypes eUnitAI, Direct
 
 void CvPlayer::killUnits()
 {
-	while (!m_units.empty())
-	{
-		m_units.begin()->second->kill(false);
+	int iLoop;
+	for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
+	{ 
+		if (pLoopUnit == NULL) 
+		{
+			FAssertMsg(false, "Unexpected: NULL unit!")
+			continue;
+		}
+
+		CvPlot* const pPlot = pLoopUnit->plot();
+		if (pPlot != NULL)
+		{
+			pLoopUnit->kill(false);
+		}
+		else
+		{
+			FAssertMsg(false, "Unexpected: unit with NULL plot!")
+			// Special case for the abnormal state in which
+			// the unit's plot is NULL (not on the map)
+			pLoopUnit->finishMoves();
+			pLoopUnit->setYieldStored(0);
+			gDLL->getEventReporterIFace()->unitLost(pLoopUnit);
+			AI().AI_removeUnitFromMoveQueue(pLoopUnit);
+			const bool bUnitDeleted = deleteUnit(getID());
+			FAssert(bUnitDeleted);
+			FAssert(checkPopulation());
+		}
 	}
 }
 
@@ -10120,9 +10144,9 @@ void CvPlayer::addExistingUnit(CvUnit *pUnit)
 	m_units[pUnitAI->getID()] = pUnitAI;
 }
 
-void CvPlayer::deleteUnit(int iID)
+bool CvPlayer::deleteUnit(int iID)
 {
-	m_units.removeById(iID);
+	return m_units.removeById(iID);
 }
 
 CvUnit* CvPlayer::getAndRemoveUnit(int iId)
