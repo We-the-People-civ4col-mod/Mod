@@ -7119,7 +7119,8 @@ void CvGame::setFatherTeam(AssertCallerData assertData, FatherTypes eFather, Tea
 {
 	FAssertWithCaller(assertData, eFather >= 0);
 	FAssertWithCaller(assertData, eFather < NUM_FATHER_TYPES);
-	FAssertWithCaller(assertData, eTeam >= 0);
+	// NO_TEAM is now a valid argument for freeing a father from a dead team
+	FAssertWithCaller(assertData, eTeam >= 0 || eTeam == NO_TEAM);
 	FAssertWithCaller(assertData, eTeam < NUM_TEAM_TYPES);
 
 	if (getFatherTeam(eFather) != eTeam)
