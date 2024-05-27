@@ -1684,11 +1684,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_HEAVY_CAVALRY_PEDIA</Tag>
-		<English>TXT_KEY_PROFESSION_SOLDIER_PEDIA</English>
+		<English>Heavy cavalry were the colonial equivalent of charging knights in medieval times. They used height, speed, and size to dominate opponents on foot. They also had a powerful psychological impact just before physical impact.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_HEAVY_CAVALRY_STRATEGY</Tag>
-		<English>You can create [COLOR_HIGHLIGHT_TEXT]heavy cavalry[COLOR_REVERT] from the settlement screen if you have enough [LINK=YIELD_BLADES]blades[\LINK], [LINK=YIELD_MUSKETS]guns[\LINK] and [LINK=YIELD_HORSES]horses[\LINK] to equip them, or buy them in [LINK=CONCEPT_EUROPE]Europe[\LINK]. They are among the strongest units you can have in this game, and can be used in any land-based war you find yourself embroiled in. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_CAVALRY]veteran cavalryman[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
+		<English>You can create [COLOR_HIGHLIGHT_TEXT]heavy cavalry[COLOR_REVERT] from the settlement screen if you have enough [LINK=YIELD_BLADES]blades[\LINK] and [LINK=YIELD_HORSES]horses[\LINK] to equip them, or buy them in [LINK=CONCEPT_EUROPE]Europe[\LINK]. They are among the strongest units you can have in this game, and can be used in any land-based war you find yourself embroiled in. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_CAVALRY]veteran cavalryman[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
 		<French>Le [COLOR_UNIT_TEXT]cavalerie[COLOR_REVERT] est encore plus puissant que le dragon, mais il est plus lent. Pour pouvoir assigner la profession de cavalerie à une unité, vous devez d'abord disposer du nombre requis de chevaux, d'armes à feu et d'outils.</French>
 		<German>Kolonialmilizen, Dragoner, schwere Kavallerie, Leichte Artillerie und Schwere Artillerie sind die Standardtruppen der Kolonien. Die [COLOR_UNIT_TEXT]Kolonialmilizen[COLOR_REVERT] sind preiswerte und langsame Defensivtruppen, die man am besten einsetzt, um sich in Siedlungen oder im Gelände zu verschanzen. Die [COLOR_UNIT_TEXT]Dragoner[COLOR_REVERT] sind durchschnittlich teure und schnelle Angriffstruppen, die besonders für Überfalle, für Angriffe auf Artillerie und zum Sammeln von Erfahrungspunkten geeignet sind. Die [COLOR_UNIT_TEXT]schwere Kavallerie[COLOR_REVERT] ist eine teure und langsame Angriffstruppe, die nützlich ist, um Feinde zu attackieren, die sich im offenen Gelände verschanzt haben. [COLOR_UNIT_TEXT]Leichte Artillerie[COLOR_REVERT] ist schnell zu bauen und kann Siedlungen einen passablen Schutz bieten, wenn keine Kolonialmilizen zur Verfügung stehen. Die [COLOR_UNIT_TEXT]Schwere Artillerie[COLOR_REVERT] setzt man am besten ein, um die Verteidigungsboni feindlicher Städte durch Bombardement zu schwächen und anschließend die Garnison anzugreifen.[PARAGRAPH:2]Leichte Artillerie und Schwere Artillerie können gebaut oder in Europa gekauft werden. Kolonialmilizen, Dragoner und schwere Kavallerie werden dagegen im Siedlungsbildschirm rekrutiert. Vorausgesetzt, man hat die nötige Menge an Schusswaffen, Pferden und Eisenwaren zur Verfügung, muss man bloß einem Bürger (einer "Einheit") den entsprechenden militärischen "Beruf" zuweisen. Ausnahmen sind die Konvertierten Ureinwohner und die Großen Generäle, die nicht bewaffnet werden können.[PARAGRAPH:2]Grundlage der Kampfstärke, der Fortbewegungspunkte und der Kampfboni der Truppen sind die entsprechenden Werte der Einheiten. Diese Werte werden durch den Militärberuf modifiziert.</German>
 		<Italian>Puoi creare i soldati nella schermata dell'insediamento. Tutto ciò di cui hai bisogno sono un colono disponibile e il necessario numero di armi. Poi premi un tasto e VOILA! Autodifesa pronta per essere usata.</Italian>
@@ -2435,7 +2435,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_CAVALRY_PEDIA</Tag>
-		<English>TXT_KEY_PROFESSION_SOLDIER_PEDIA</English>
+		<English>Heavy cavalry were the colonial equivalent of charging knights in medieval times. They used height, speed, and size to dominate opponents on foot. They also had a powerful psychological impact just before physical impact.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_CAVALRY_STRATEGY</Tag>
@@ -2476,7 +2476,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_DRAGOON_PEDIA</Tag>
-		<English>TXT_KEY_PROFESSION_DRAGOON_PEDIA</English>
+		<English>Dragoons are soldiers trained to shoot from horseback. The ability to fire a musket with any semblance of accuracy while galloping across a battlefield required intense training and the dragoons were rightly respected for their mastery of this skill. Nearly every power in Europe fielded dragoons - Napoleon Bonaparte was especially fond of their combination of force and maneuverability.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_DRAGOON_STRATEGY</Tag>
@@ -2517,7 +2517,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_LIGHT_INFANTRY_PEDIA</Tag>
-		<English>TXT_KEY_PROFESSION_SOLDIER_PEDIA</English>
+		<English>Professional musketeers and riflemen, trained and disciplined, dominated European wars from the sixteenth century onward. Light infantry could move quickly though in the wilderness they struggled to adapt to guerrilla warfare.[NEWLINE]Native Nations soon became skilled with captured European weapons and horses. The Comanche wiped out the Spanish and killed any new arrivals for over a century. Ultimately Spain sold land it no longer controlled to the United States.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_LIGHT_INFANTRY_STRATEGY</Tag>
@@ -2558,7 +2558,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_LINE_INFANTRY_PEDIA</Tag>
-		<English>TXT_KEY_PROFESSION_SOLDIER_PEDIA</English>
+		<English>Professional musketeers and riflemen, trained and disciplined, dominated European wars from the sixteenth century onward. In the New World, line infantry quickly captured settlements though in the wilderness they were vulnerable to guerrilla warfare.[NEWLINE]To win against infantry firing in ranks Native Nations needed overwhelming numerical superiority. In the interior of the continent they often had that, and the support of the people. The Comanche wiped out the Spanish and killed any new arrivals for over a century. Ultimately Spain sold land it no longer controlled to the United States.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_LINE_INFANTRY_STRATEGY</Tag>
@@ -3278,7 +3278,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_VALUABLE_WOOD_LUMBERJACK_PEDIA</Tag>
-		<English>TXT_KEY_UNIT_LUMBERJACK_PEDIA</English>
+		<English>For the colonists of North America, lumber was a free resource. Exotic wood was especially valued for its beauty, strength and durability. Finishing carpenters demanded it for their best work. Skilled lumberjacks were able to fell trees with a rapidity that greatly outdistanced the amateurs. They were lumberjacks and they were okay.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_VALUABLE_WOOD_LUMBERJACK_STRATEGY</Tag>
@@ -3370,7 +3370,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_WEAVER_WOOL_PEDIA</Tag>
-		<English>TXT_KEY_UNIT_WEAVER_PEDIA</English>
+		<English>Weaving is the process by which raw wool or cotton is turned into cloth.[NEWLINE]This is a slow, arduous and difficult task at best but, in the hands of a skilled weaver, the work can be quick and artful, creating a product far superior to anything a mere amateur could create.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_WEAVER_WOOL_STRATEGY</Tag>
