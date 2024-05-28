@@ -698,6 +698,7 @@ public:
 	void trigger(EventTriggerTypes eEventTrigger);
 	void trigger(const EventTriggeredData& kData);
 	void applyEvent(EventTypes eEvent, int iTriggeredId, bool bUpdateTrigger = true);
+	void applyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData, bool bUpdateTrigger = true);
 	bool canDoEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData) const;
 	int getEventCost(EventTypes eEvent, PlayerTypes eOtherPlayer, bool bRandom) const;
 	bool canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const;

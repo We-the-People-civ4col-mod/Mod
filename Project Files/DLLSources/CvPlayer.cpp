@@ -10558,7 +10558,13 @@ EventTriggeredData* CvPlayer::addEventTriggered()
 
 void CvPlayer::deleteEventTriggered(int iID)
 {
-	m_eventsTriggered.removeAt(iID);
+	// sometimes event triggers from countdown aren't in the regular list and yet they are attempted to be deleted anyway
+	// deleting an ID, which isn't there will trigger an assert (not fassert) and should be avoided 
+	//    Nightinggale
+	if (getEventTriggered(iID) != NULL)
+	{
+		m_eventsTriggered.removeAt(iID);
+	}
 }
 
 
@@ -14417,47 +14423,51 @@ bool CvPlayer::canDoEvent(EventTypes eEvent, const EventTriggeredData& kTriggere
 
 void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdateTrigger)
 {
-	OOS_LOG("Trigger event", getID() + (1000 * iEventTriggeredId));
-	FAssert(eEvent != NO_EVENT);
-
-	int iGrowthPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
-
 	EventTriggeredData* pTriggeredData = getEventTriggered(iEventTriggeredId);
-	Coordinates coord(pTriggeredData->m_iPlotX, pTriggeredData->m_iPlotY);
-
-	if (NULL == pTriggeredData)
+	if (pTriggeredData == NULL)
 	{
 		deleteEventTriggered(iEventTriggeredId);
 		return;
 	}
+	applyEvent(eEvent, *pTriggeredData, bUpdateTrigger);
+	
+}
+
+void CvPlayer::applyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData, bool bUpdateTrigger)
+{
+	OOS_LOG("Trigger event", getID() + (1000 * iEventTriggeredId));
+	FAssert(eEvent != NO_EVENT);
+
+	int iGrowthPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+	Coordinates coord(kTriggeredData.m_iPlotX, kTriggeredData.m_iPlotY);
 
 	if (bUpdateTrigger)
 	{
-		setTriggerFired(*pTriggeredData, true);
+		setTriggerFired(kTriggeredData, true);
 	}
 
-	if (!canDoEvent(eEvent, *pTriggeredData))
+	if (!canDoEvent(eEvent, kTriggeredData))
 	{
 		if (bUpdateTrigger)
 		{
-			deleteEventTriggered(iEventTriggeredId);
+			deleteEventTriggered(kTriggeredData.m_iId);
 		}
 		return;
 	}
 
-	setEventOccured(eEvent, *pTriggeredData);
+	setEventOccured(eEvent, kTriggeredData);
 
 	CvEventInfo& kEvent = GC.getEventInfo(eEvent);
-	CvCity* pCity =	getCity(pTriggeredData->m_iCityId);
+	CvCity* pCity =	getCity(kTriggeredData.m_iCityId);
 	CvCity* pOtherPlayerCity = NULL;
 
-	if (NO_PLAYER != pTriggeredData->m_eOtherPlayer)
+	if (NO_PLAYER != kTriggeredData.m_eOtherPlayer)
 	{
-		pOtherPlayerCity = GET_PLAYER(pTriggeredData->m_eOtherPlayer).getCity(pTriggeredData->m_iOtherPlayerCityId);
+		pOtherPlayerCity = GET_PLAYER(kTriggeredData.m_eOtherPlayer).getCity(kTriggeredData.m_iOtherPlayerCityId);
 	}
 
-	int iGold = getEventCost(eEvent, pTriggeredData->m_eOtherPlayer, false);
-	int iRandomGold = getEventCost(eEvent, pTriggeredData->m_eOtherPlayer, true);
+	int iGold = getEventCost(eEvent, kTriggeredData.m_eOtherPlayer, false);
+	int iRandomGold = getEventCost(eEvent, kTriggeredData.m_eOtherPlayer, true);
 	iGold += GC.getGameINLINE().getSorenRandNum(iRandomGold - iGold + 1, "Event random gold");
 
 	if (iGold != 0)
@@ -14465,18 +14475,18 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 		OOS_LOG("Apply event gold A", iGold);
 		changeGold(iGold);
 
-		if (NO_PLAYER != pTriggeredData->m_eOtherPlayer && kEvent.isGoldToPlayer())
+		if (NO_PLAYER != kTriggeredData.m_eOtherPlayer && kEvent.isGoldToPlayer())
 		{
 			OOS_LOG("Apply event gold B", iGold);
-			GET_PLAYER(pTriggeredData->m_eOtherPlayer).changeGold(-iGold);
+			GET_PLAYER(kTriggeredData.m_eOtherPlayer).changeGold(-iGold);
 		}
 	}
 
 	if (kEvent.isDeclareWar())
 	{
-		if (NO_PLAYER != pTriggeredData->m_eOtherPlayer)
+		if (NO_PLAYER != kTriggeredData.m_eOtherPlayer)
 		{
-			GET_TEAM(GET_PLAYER(pTriggeredData->m_eOtherPlayer).getTeam()).declareWar(getTeam(), false, WARPLAN_LIMITED);
+			GET_TEAM(GET_PLAYER(kTriggeredData.m_eOtherPlayer).getTeam()).declareWar(getTeam(), false, WARPLAN_LIMITED);
 		}
 	}
 
@@ -14515,11 +14525,11 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 
 	if (NULL != pCity && kEvent.isCityEffect())
 	{
-		pCity->applyEvent(eEvent, *pTriggeredData, bClear);
+		pCity->applyEvent(eEvent, kTriggeredData, bClear);
 	}
 	else if (NULL != pOtherPlayerCity && kEvent.isOtherPlayerCityEffect())
 	{
-		pOtherPlayerCity->applyEvent(eEvent, *pTriggeredData, bClear);
+		pOtherPlayerCity->applyEvent(eEvent, kTriggeredData, bClear);
 	}
 
 	if (!kEvent.isCityEffect() && !kEvent.isOtherPlayerCityEffect())
@@ -14566,10 +14576,10 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 				}
 			}
 
-			if (NO_PLAYER != pTriggeredData->m_eOtherPlayer)
+			if (NO_PLAYER != kTriggeredData.m_eOtherPlayer)
 			{
 				CvWString szBuffer = gDLL->getText("TXT_KEY_EVENT_NUM_CITY_IMPROVEMENTS_DESTROYED", iNumPillaged, getCivilizationAdjectiveKey());
-				gDLL->UI().addPlayerMessage(pTriggeredData->m_eOtherPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PILLAGED", MESSAGE_TYPE_INFO);
+				gDLL->UI().addPlayerMessage(kTriggeredData.m_eOtherPlayer, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_PILLAGED", MESSAGE_TYPE_INFO);
 			}
 		}
 
@@ -14701,14 +14711,14 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 	CvPlot* pPlot = coord.plot();
 	if (NULL != pPlot)
 	{
-		if (::isPlotEventTrigger(pTriggeredData->m_eTrigger))
+		if (::isPlotEventTrigger(kTriggeredData.m_eTrigger))
 		{
 			FAssert(pPlot->canApplyEvent(eEvent));
 			pPlot->applyEvent(eEvent);
 		}
 	}
 
-	CvUnit* pUnit = getUnit(pTriggeredData->m_iUnitId);
+	CvUnit* pUnit = getUnit(kTriggeredData.m_iUnitId);
 	if (NULL != pUnit)
 	{
 		FAssert(pUnit->canApplyEvent(eEvent));
@@ -14756,39 +14766,39 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 
 	if (0 != kEvent.getOurAttitudeModifier())
 	{
-		if (NO_PLAYER != pTriggeredData->m_eOtherPlayer)
+		if (NO_PLAYER != kTriggeredData.m_eOtherPlayer)
 		{
 			if (kEvent.getOurAttitudeModifier() > 0)
 			{
-				AI_changeMemoryCount(pTriggeredData->m_eOtherPlayer, MEMORY_EVENT_GOOD_TO_US, kEvent.getOurAttitudeModifier());
+				AI_changeMemoryCount(kTriggeredData.m_eOtherPlayer, MEMORY_EVENT_GOOD_TO_US, kEvent.getOurAttitudeModifier());
 			}
 			else
 			{
-				AI_changeMemoryCount(pTriggeredData->m_eOtherPlayer, MEMORY_EVENT_BAD_TO_US, -kEvent.getOurAttitudeModifier());
+				AI_changeMemoryCount(kTriggeredData.m_eOtherPlayer, MEMORY_EVENT_BAD_TO_US, -kEvent.getOurAttitudeModifier());
 			}
 		}
 	}
 
 	if (0 != kEvent.getAttitudeModifier())
 	{
-		if (NO_PLAYER != pTriggeredData->m_eOtherPlayer)
+		if (NO_PLAYER != kTriggeredData.m_eOtherPlayer)
 		{
 			if (kEvent.getAttitudeModifier() > 0)
 			{
-				GET_PLAYER(pTriggeredData->m_eOtherPlayer).AI_changeMemoryCount(getID(), MEMORY_EVENT_GOOD_TO_US, kEvent.getAttitudeModifier());
+				GET_PLAYER(kTriggeredData.m_eOtherPlayer).AI_changeMemoryCount(getID(), MEMORY_EVENT_GOOD_TO_US, kEvent.getAttitudeModifier());
 			}
 			else
 			{
-				GET_PLAYER(pTriggeredData->m_eOtherPlayer).AI_changeMemoryCount(getID(), MEMORY_EVENT_BAD_TO_US, -kEvent.getAttitudeModifier());
+				GET_PLAYER(kTriggeredData.m_eOtherPlayer).AI_changeMemoryCount(getID(), MEMORY_EVENT_BAD_TO_US, -kEvent.getAttitudeModifier());
 			}
 		}
 	}
 
 	if (0 != kEvent.getTheirEnemyAttitudeModifier())
 	{
-		if (NO_PLAYER != pTriggeredData->m_eOtherPlayer)
+		if (NO_PLAYER != kTriggeredData.m_eOtherPlayer)
 		{
-			TeamTypes eWorstEnemy = GET_TEAM(GET_PLAYER(pTriggeredData->m_eOtherPlayer).getTeam()).AI_getWorstEnemy();
+			TeamTypes eWorstEnemy = GET_TEAM(GET_PLAYER(kTriggeredData.m_eOtherPlayer).getTeam()).AI_getWorstEnemy();
 			if (NO_TEAM != eWorstEnemy)
 			{
 				for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
@@ -14818,7 +14828,7 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 
 		CyArgsList argsList;
 		argsList.add(eEvent);
-		argsList.add(gDLL->getPythonIFace()->makePythonObject(pTriggeredData));
+		argsList.add(gDLL->getPythonIFace()->makePythonObject(&kTriggeredData));
 
 		gDLL->getPythonIFace()->callFunction(PYRandomEventModule, kEvent.getPythonCallback(), argsList.makeFunctionArgs(), &lResult);
 	}
@@ -14830,15 +14840,15 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 		CvWString szGlobalText;
 
 		TeamTypes eTheirWorstEnemy = NO_TEAM;
-		if (NO_PLAYER != pTriggeredData->m_eOtherPlayer)
+		if (NO_PLAYER != kTriggeredData.m_eOtherPlayer)
 		{
-			eTheirWorstEnemy = GET_TEAM(GET_PLAYER(pTriggeredData->m_eOtherPlayer).getTeam()).AI_getWorstEnemy();
+			eTheirWorstEnemy = GET_TEAM(GET_PLAYER(kTriggeredData.m_eOtherPlayer).getTeam()).AI_getWorstEnemy();
 		}
 
 		szGlobalText = gDLL->getText(kEvent.getWorldNews(iText).GetCString(),
 			getCivilizationAdjectiveKey(),
 			NULL != pCity ? pCity->getNameKey() : L"",
-			pTriggeredData->m_eOtherPlayer != NO_PLAYER ? GET_PLAYER(pTriggeredData->m_eOtherPlayer).getCivilizationAdjectiveKey() : L"",
+			kTriggeredData.m_eOtherPlayer != NO_PLAYER ? GET_PLAYER(kTriggeredData.m_eOtherPlayer).getCivilizationAdjectiveKey() : L"",
 			NULL != pOtherPlayerCity ? pOtherPlayerCity->getNameKey() : L"",
 			L"",
 			NO_TEAM != eTheirWorstEnemy ? GET_TEAM(eTheirWorstEnemy).getName().GetCString() : L""
@@ -14850,9 +14860,9 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 
 			if (kLoopPlayer.isAlive())
 			{
-				if (GET_TEAM(kLoopPlayer.getTeam()).isHasMet(getTeam()) && (NO_PLAYER == pTriggeredData->m_eOtherPlayer || GET_TEAM(GET_PLAYER(pTriggeredData->m_eOtherPlayer).getTeam()).isHasMet(getTeam())))
+				if (GET_TEAM(kLoopPlayer.getTeam()).isHasMet(getTeam()) && (NO_PLAYER == kTriggeredData.m_eOtherPlayer || GET_TEAM(GET_PLAYER(kTriggeredData.m_eOtherPlayer).getTeam()).isHasMet(getTeam())))
 				{
-					bool bShowPlot = GC.getEventTriggerInfo(pTriggeredData->m_eTrigger).isShowPlot();
+					bool bShowPlot = GC.getEventTriggerInfo(kTriggeredData.m_eTrigger).isShowPlot();
 
 					if (bShowPlot)
 					{
@@ -14885,21 +14895,21 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 		CvWString szLocalText;
 
 		TeamTypes eTheirWorstEnemy = NO_TEAM;
-		if (NO_PLAYER != pTriggeredData->m_eOtherPlayer)
+		if (NO_PLAYER != kTriggeredData.m_eOtherPlayer)
 		{
-			eTheirWorstEnemy = GET_TEAM(GET_PLAYER(pTriggeredData->m_eOtherPlayer).getTeam()).AI_getWorstEnemy();
+			eTheirWorstEnemy = GET_TEAM(GET_PLAYER(kTriggeredData.m_eOtherPlayer).getTeam()).AI_getWorstEnemy();
 		}
 
 		szLocalText = gDLL->getText(kEvent.getLocalInfoTextKey(),
 			getCivilizationAdjectiveKey(),
 			NULL != pCity ? pCity->getNameKey() : L"",
-			pTriggeredData->m_eOtherPlayer != NO_PLAYER ? GET_PLAYER(pTriggeredData->m_eOtherPlayer).getCivilizationAdjectiveKey() : L"",
+			kTriggeredData.m_eOtherPlayer != NO_PLAYER ? GET_PLAYER(kTriggeredData.m_eOtherPlayer).getCivilizationAdjectiveKey() : L"",
 			NULL != pOtherPlayerCity ? pOtherPlayerCity->getNameKey() : L"",
 			L"",
 			NO_TEAM != eTheirWorstEnemy ? GET_TEAM(eTheirWorstEnemy).getName().GetCString() : L""
 			);
 
-			if (GC.getEventTriggerInfo(pTriggeredData->m_eTrigger).isShowPlot())
+			if (GC.getEventTriggerInfo(kTriggeredData.m_eTrigger).isShowPlot())
 			{
 				gDLL->UI().addPlayerMessage(getID(), false, GC.getEVENT_MESSAGE_TIME(), szLocalText, coord, "AS2D_CIVIC_ADOPT", MESSAGE_TYPE_MINOR_EVENT, NULL, (ColorTypes)GC.getInfoTypeForString("COLOR_WHITE"), true, true);
 			}
@@ -14913,12 +14923,12 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 	if (!isEmpty(kEvent.getOtherPlayerPopup()))
 	{
 		// R&R, ray, small improvement
-		if (NO_PLAYER != pTriggeredData->m_eOtherPlayer && GET_PLAYER(pTriggeredData->m_eOtherPlayer).isHuman())
+		if (NO_PLAYER != kTriggeredData.m_eOtherPlayer && GET_PLAYER(kTriggeredData.m_eOtherPlayer).isHuman())
 		{
 			CvWString szText = gDLL->getText(kEvent.getOtherPlayerPopup(),
 				getCivilizationAdjectiveKey(),
 				NULL != pCity ? pCity->getNameKey() : L"",
-				pTriggeredData->m_eOtherPlayer != NO_PLAYER ? GET_PLAYER(pTriggeredData->m_eOtherPlayer).getCivilizationAdjectiveKey() : L"",
+				kTriggeredData.m_eOtherPlayer != NO_PLAYER ? GET_PLAYER(kTriggeredData.m_eOtherPlayer).getCivilizationAdjectiveKey() : L"",
 				NULL != pOtherPlayerCity ? pOtherPlayerCity->getNameKey() : L"",
 				L""
 				);
@@ -14928,24 +14938,24 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 			if (NULL != pInfo)
 			{
 				pInfo->setText(szText);
-				GET_PLAYER(pTriggeredData->m_eOtherPlayer).addPopup(pInfo);
+				GET_PLAYER(kTriggeredData.m_eOtherPlayer).addPopup(pInfo);
 			}
 		}
 	}
 
 	bool bDeleteTrigger = bUpdateTrigger;
 
-	for (int iEvent = 0; iEvent < GC.getNumEventInfos(); ++iEvent)
+	for (EventTypes eEvent = FIRST_EVENT; eEvent < NUM_EVENT_TYPES; ++eEvent)
 	{
-		if (0 == kEvent.getAdditionalEventTime(iEvent))
+		if (0 == kEvent.getAdditionalEventTime(eEvent))
 		{
-			if (kEvent.getAdditionalEventChance(iEvent) > 0)
+			if (kEvent.getAdditionalEventChance(eEvent) > 0)
 			{
-				if (canDoEvent((EventTypes)iEvent, *pTriggeredData))
+				if (canDoEvent(eEvent, kTriggeredData))
 				{
-					if (GC.getGameINLINE().getSorenRandNum(100, "Additional Event") < kEvent.getAdditionalEventChance(iEvent))
+					if (GC.getGameINLINE().getSorenRandNum(100, "Additional Event") < kEvent.getAdditionalEventChance(eEvent))
 					{
-						applyEvent((EventTypes)iEvent, iEventTriggeredId, false);
+						applyEvent(eEvent, kTriggeredData, false);
 					}
 				}
 			}
@@ -14953,9 +14963,9 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 		else
 		{
 			bool bSetTimer = true;
-			if (kEvent.getAdditionalEventChance(iEvent) > 0)
+			if (kEvent.getAdditionalEventChance(eEvent) > 0)
 			{
-				if (GC.getGameINLINE().getSorenRandNum(100, "Additional Event 2") >= kEvent.getAdditionalEventChance(iEvent))
+				if (GC.getGameINLINE().getSorenRandNum(100, "Additional Event 2") >= kEvent.getAdditionalEventChance(eEvent))
 				{
 					bSetTimer = false;
 				}
@@ -14963,17 +14973,18 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 
 			if (bSetTimer)
 			{
-				EventTriggeredData kTriggered = *pTriggeredData;
-				kTriggered.m_iTurn = (iGrowthPercent * kEvent.getAdditionalEventTime((EventTypes)iEvent)) / 100 + GC.getGameINLINE().getGameTurn();
+				// let's make a copy without affecting the original trigger data
+				EventTriggeredData kTriggered = kTriggeredData;
+				kTriggered.m_iTurn = (iGrowthPercent * kEvent.getAdditionalEventTime(eEvent)) / 100 + GC.getGameINLINE().getGameTurn();
 
-				const EventTriggeredData* pExistingTriggered = getEventCountdown((EventTypes)iEvent);
+				const EventTriggeredData* pExistingTriggered = getEventCountdown(eEvent);
 
 				if (NULL != pExistingTriggered)
 				{
 					kTriggered.m_iTurn = std::min(kTriggered.m_iTurn, pExistingTriggered->m_iTurn);
 				}
 
-				setEventCountdown((EventTypes)iEvent, kTriggered);
+				setEventCountdown(eEvent, kTriggered);
 				bDeleteTrigger = false;
 			}
 		}
@@ -14981,9 +14992,10 @@ void CvPlayer::applyEvent(EventTypes eEvent, int iEventTriggeredId, bool bUpdate
 
 	if (bDeleteTrigger)
 	{
-		deleteEventTriggered(iEventTriggeredId);
+		deleteEventTriggered(kTriggeredData.m_iId);
 	}
 }
+
 void CvPlayer::freeEuropeUnits()
 {
 	for (uint i = 0; i < m_aEuropeUnits.size(); ++i)
@@ -15116,15 +15128,15 @@ void CvPlayer::doEvents()
 	}
 
 	std::vector<int> aCleanup;
-	for (int i = 0; i < GC.getNumEventInfos(); ++i)
+	for (EventTypes eEvent = FIRST_EVENT; eEvent < NUM_EVENT_TYPES; ++eEvent)
 	{
-		const EventTriggeredData* pTriggeredData = getEventCountdown((EventTypes)i);
+		const EventTriggeredData* pTriggeredData = getEventCountdown(eEvent);
 		if (NULL != pTriggeredData)
 		{
 			if (GC.getGameINLINE().getGameTurn() >= pTriggeredData->m_iTurn)
 			{
-				applyEvent((EventTypes)i, pTriggeredData->m_iId);
-				resetEventCountdown((EventTypes)i);
+				applyEvent(eEvent, *pTriggeredData);
+				resetEventCountdown(eEvent);
 				aCleanup.push_back(pTriggeredData->m_iId);
 			}
 		}
@@ -15134,9 +15146,9 @@ void CvPlayer::doEvents()
 	{
 		bool bDelete = true;
 
-		for (int i = 0; i < GC.getNumEventInfos(); ++i)
+		for (EventTypes eEvent = FIRST_EVENT; eEvent < NUM_EVENT_TYPES; ++eEvent)
 		{
-			const EventTriggeredData* pTriggeredData = getEventCountdown((EventTypes)i);
+			const EventTriggeredData* pTriggeredData = getEventCountdown(eEvent);
 			if (NULL != pTriggeredData)
 			{
 				if (pTriggeredData->m_iId == *it)
@@ -15281,7 +15293,7 @@ void CvPlayer::trigger(const EventTriggeredData& kData)
 		EventTypes eEvent = AI_chooseEvent(kData.getID());
 		if (NO_EVENT != eEvent)
 		{
-			applyEvent(eEvent, kData.getID());
+			applyEvent(eEvent, kData);
 		}
 	}
 }
