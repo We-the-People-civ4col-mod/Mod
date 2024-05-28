@@ -313,7 +313,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_PROMOTE</Tag>
-		<English>TXT_KEY_COMMAND_PROMOTION</English>
+		<English>Promote unit</English>
+		<French>Promouvoir l'unité</French>
+		<German>Einheit befördern</German>
+		<Italian>Promuovi unità</Italian>
+		<Spanish>Ascender unidad</Spanish>
+		<Russian>Повысить юнит</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_PROMOTE_HELP</Tag>
