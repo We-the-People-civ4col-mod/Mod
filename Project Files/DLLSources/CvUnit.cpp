@@ -3243,17 +3243,6 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 		if (eFeature != NO_FEATURE)
 		{
 			const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(eFeature);
-
-			// Prevent the AI from moving through storms and sustaining damage
-			// Strictly speaking this should preferably be handled by either the path cost or a separate PF flag
-			// Also checking isGeneratedEveryRound() in case a mod-mod adds turn damage to certain plots and
-			// crossing them would be the only way to make forward progress
-			if (getGroup()->AI_isControlled() && kFeatureInfo.getTurnDamage() > 0 &&
-				kFeatureInfo.isGeneratedEveryRound())
-			{
-				return false;
-			}
-
 			if (m_pUnitInfo->getFeatureImpassable(eFeature))
 			{
 				if (DOMAIN_SEA != eDomainType || kPlot.getTeam() != getTeam())  // sea units can enter impassable in own cultural borders

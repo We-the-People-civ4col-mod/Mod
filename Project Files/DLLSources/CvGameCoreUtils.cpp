@@ -1104,227 +1104,6 @@ int pathHeuristic(int iFromX, int iFromY, int iToX, int iToY)
 	return (stepDistance(iFromX, iFromY, iToX, iToY) * PATH_MOVEMENT_WEIGHT);
 }
 
-#if 0
-int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
-{
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	CvPlot* pFromPlot;
-	CvPlot* pToPlot;
-	int iWorstCost;
-	int iCost;
-	int iWorstMovesLeft;
-	int iMovesLeft;
-	int iWorstMax;
-	int iMax;
-
-	pFromPlot = GC.getMap().plotSoren(parent->m_iX, parent->m_iY);
-	FAssert(pFromPlot != NULL);
-	pToPlot = GC.getMap().plotSoren(node->m_iX, node->m_iY);
-	FAssert(pToPlot != NULL);
-
-	//CvSelectionGroup* pSelectionGroup = ((CvSelectionGroup *)pointer);
-	// K-Mod
-	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer : ((CvPathSettings*)pointer)->pGroup;
-	const int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) : ((CvPathSettings*)pointer)->iFlags;
-	// K-Mod end
-
-	//iWorstCost = MAX_INT;
-	iWorstCost = 0;
-	iWorstMovesLeft = MAX_INT;
-	iWorstMax = MAX_INT;
-
-	pUnitNode = pSelectionGroup->headUnitNode();
-
-	while (pUnitNode != NULL)
-	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode);
-
-		if (parent->m_iData1 > 0)
-		{
-			iMax = parent->m_iData1;
-		}
-		else
-		{
-			iMax = pLoopUnit->maxMoves();
-		}
-
-		iCost = pToPlot->movementCost(pLoopUnit, pFromPlot);
-
-		iMovesLeft = std::max(0, (iMax - iCost));
-
-		if (iMovesLeft <= iWorstMovesLeft)
-		{
-			if ((iMovesLeft < iWorstMovesLeft) || (iMax <= iWorstMax))
-			{
-				bool bIsRevealed = pToPlot->isRevealed(pLoopUnit->getTeam(), false);
-
-				if (iMovesLeft == 0)
-				{
-					iCost = (PATH_MOVEMENT_WEIGHT * iMax);
-
-					if (bIsRevealed)
-					{
-						if (pToPlot->getTeam() != pLoopUnit->getTeam())
-						{
-							iCost += PATH_TERRITORY_WEIGHT;
-						}
-					}
-
-					// R&R, Robert Surcouf, Damage on Storm plots, Start
-					if (pToPlot->getFeatureType() != NO_FEATURE)
-					{
-						const int iTurnDamage = GC.getFeatureInfo(pToPlot->getFeatureType()).getTurnDamage();
-
-						if (iTurnDamage > 0)
-						{
-							iCost += (PATH_DAMAGE_WEIGHT * std::max(0, iTurnDamage)) / GC.getMAX_HIT_POINTS();
-						}
-					}
-
-					// R&R, Robert Surcouf, Damage on Storm plots, End
-					// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
-					// Add additional cost for ending turn in or adjacent to enemy territory based on flags
-					if (iFlags & MOVE_AVOID_ENEMY_WEIGHT_3)
-					{
-						if (pToPlot->isOwned() && ((GET_TEAM(pSelectionGroup->getHeadTeam()).AI_getWarPlan(pToPlot->getTeam()) != NO_WARPLAN) || (pToPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pToPlot))))
-						{
-							iCost *= 3;
-						}
-						else
-						{
-							CvPlot* pAdjacentPlot;
-
-							for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
-							{
-								pAdjacentPlot = plotDirection(pToPlot->getX_INLINE(), pToPlot->getY_INLINE(), ((DirectionTypes)iI));
-
-								if( pAdjacentPlot != NULL )
-								{
-									if (pAdjacentPlot->isOwned() && (atWar(pAdjacentPlot->getTeam(), pSelectionGroup->getHeadTeam()) || (pAdjacentPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pAdjacentPlot))))
-									{
-										iCost *= 3;
-										iCost /= 2;
-									}
-								}
-							}
-						}
-					}
-					else if (iFlags & MOVE_AVOID_ENEMY_WEIGHT_2)
-					{
-						if (pToPlot->isOwned() && ((GET_TEAM(pSelectionGroup->getHeadTeam()).AI_getWarPlan(pToPlot->getTeam()) != NO_WARPLAN) || (pToPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pToPlot))))
-						{
-							iCost *= 2;
-						}
-						else
-						{
-							CvPlot* pAdjacentPlot;
-							int iI;
-							for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
-							{
-								pAdjacentPlot = plotDirection(pToPlot->getX_INLINE(), pToPlot->getY_INLINE(), ((DirectionTypes)iI));
-
-								if( pAdjacentPlot != NULL )
-								{
-									if (pAdjacentPlot->isOwned() && (atWar(pAdjacentPlot->getTeam(), pSelectionGroup->getHeadTeam()) || (pAdjacentPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pAdjacentPlot))))
-									{
-										iCost *= 4;
-										iCost /= 3;
-									}
-								}
-							}
-						}
-					}
-				// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - END
-				}
-				else
-				{
-					iCost = (PATH_MOVEMENT_WEIGHT * iCost);
-				}
-
-				if (pLoopUnit->canFight() && bIsRevealed)
-				{
-					if (iMovesLeft == 0)
-					{
-						iCost += (PATH_DEFENSE_WEIGHT * std::max(0, (200 - ((pLoopUnit->noDefensiveBonus()) ? 0 : pToPlot->defenseModifier(pLoopUnit->getTeam())))));
-					}
-
-					if (pSelectionGroup->AI_isControlled())
-					{
-						if (pLoopUnit->canAttack())
-						{
-							/*
-							if (gDLL->getFAStarIFace()->IsPathDest(finder, pToPlot->getX_INLINE(), pToPlot->getY_INLINE()))
-							{
-								if (pToPlot->isVisibleEnemyDefender(pLoopUnit))
-								{
-									iCost += (PATH_DEFENSE_WEIGHT * std::max(0, (200 - ((pLoopUnit->noDefensiveBonus()) ? 0 : pFromPlot->defenseModifier(pLoopUnit->getTeam())))));
-
-									if (!(pFromPlot->isCity()))
-									{
-										iCost += PATH_CITY_WEIGHT;
-									}
-
-									if (pFromPlot->isRiverCrossing(directionXY(pFromPlot, pToPlot)))
-									{
-										if (!(pLoopUnit->isRiver()))
-										{
-											iCost += (PATH_RIVER_WEIGHT * -(GC.getRIVER_ATTACK_MODIFIER()));
-											iCost += (PATH_MOVEMENT_WEIGHT * iMovesLeft);
-										}
-									}
-								}
-							}
-							*/
-						}
-					}
-				}
-
-				if (pSelectionGroup->AI_isControlled())
-				{
-					if (iFlags & MOVE_BUST_FOG)
-					{
-						for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
-						{
-							CvPlot* pLoopPlot = plotDirection(pToPlot->getX_INLINE(), pToPlot->getY_INLINE(), (DirectionTypes)iI);
-							if (pLoopPlot != NULL)
-							{
-								if (pLoopPlot->isRevealed(pSelectionGroup->getTeam(), false))
-								{
-									iCost += PATH_FOGBUST_WEIGHT;
-								}
-							}
-						}
-					}
-				}
-
-				//if (iCost < iWorstCost)
-				if (iCost > iWorstCost) // K-Mod. (no comment)
-				{
-					iWorstCost = iCost;
-					iWorstMovesLeft = iMovesLeft;
-					iWorstMax = iMax;
-				}
-			}
-		}
-	}
-
-	//FAssert(iWorstCost != MAX_INT);
-
-	iWorstCost += PATH_STEP_WEIGHT;
-
-	if ((pFromPlot->getX_INLINE() != pToPlot->getX_INLINE()) && (pFromPlot->getY_INLINE() != pToPlot->getY_INLINE()))
-	{
-		iWorstCost += PATH_STRAIGHT_WEIGHT;
-	}
-
-	FAssert(iWorstCost > 0);
-
-	return iWorstCost;
-}
-#endif
-
 // This function has been completely rewritten for K-Mod. (the rewrite includes some bug fixes as well as some new features)
 int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
@@ -1576,18 +1355,10 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			{
 				const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(kToPlot.getFeatureType());
 
-				//GC.getFeatureInfo(pToPlot->getFeatureType()).getTurnDamage()
 				iWorstCost += PATH_DAMAGE_WEIGHT *
 					std::max(0, kFeatureInfo.getTurnDamage()) /
 					GC.getMAX_HIT_POINTS();
 			}
-
-			/* WTP: Not supported
-			if (kToPlot.getExtraMovePathCost() > 0)
-			{
-				iWorstCost += (PATH_MOVEMENT_WEIGHT * kToPlot.getExtraMovePathCost());
-			}
-			*/
 		}
 		// defence modifiers
 		int iDefenceMod = 0;
@@ -1677,10 +1448,9 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			}
 			else
 			{
-				CvPlot* pAdjacentPlot;
 				for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 				{
-					pAdjacentPlot = plotDirection(kToPlot.getX(), kToPlot.getY(), (DirectionTypes)iI);
+					const CvPlot* const pAdjacentPlot = plotDirection(kToPlot.getX(), kToPlot.getY(), (DirectionTypes)iI);
 					if (pAdjacentPlot != NULL)
 					{
 						if (pAdjacentPlot->isOwned() && atWar(pAdjacentPlot->getTeam(), pSelectionGroup->getHeadTeam()))
