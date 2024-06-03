@@ -11298,16 +11298,14 @@ int CvUnit::getMoves() const
 
 void CvUnit::setMoves(int iNewValue)
 {
-	CvPlot* pPlot;
-
 	if (getMoves() != iNewValue)
 	{
-		pPlot = plot();
+		CvPlot* const pPlot = plot();
 
 		m_iMoves = iNewValue;
 
-		FAssert(getMoves() >= 0);
-
+		// Movement points can turn negative (refer to the Tailwind event's applyTailwind method)
+		//FAssert(getMoves() >= 0);
 		if (getTeam() == GC.getGameINLINE().getActiveTeam())
 		{
 			if (pPlot != NULL)
