@@ -3133,6 +3133,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WINS_VICTORY</Tag>
+		<!-- WARNING: the exe crashes when displaying victory if this line has non-Latin characters, such as Russian. No known workaround known at this time --> 
 		<English>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] wins by %s2_VctryName Victory!!!!</English>
 		<French>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] remporte une victoire de type : %s2_VctryName !</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] trägt den Sieg in der Kategorie %s2_VctryName davon!!!!</German>
