@@ -3138,7 +3138,7 @@
 		<German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] trägt den Sieg in der Kategorie %s2_VctryName davon!!!!</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] conquista una vittoria %s2_VctryName!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha obtenido una victoria %s2_VctryName</Spanish>
-		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] одерживает победу в категории : %s2_VctryName!!!!</Russian>
+		<!--<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] одерживает победу в категории : %s2_VctryName!!!!</Russian>-->
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_OUT_OF_SYNC</Tag>
@@ -4656,6 +4656,7 @@
 		<German>%s1 hat den Sieg in der Kategorie %s2 erzielt!</German>
 		<Italian>%s1 ha ottenuto una vittoria %s2!</Italian>
 		<Spanish>¡%s1 ha conseguido una victoria %s2!</Spanish>
+		<Russian>%s1 одержал победу - %s2!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_MOVEMENT_COST</Tag>
