@@ -1199,7 +1199,11 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			iWorstMovesLeft = std::min(iWorstMovesLeft, iMovesLeft);
 			//iWorstMaxMoves = std::min(iWorstMaxMoves, iMaxMoves);
 
-			int iCost = PATH_MOVEMENT_WEIGHT * (iMovesLeft == 0 ? iMaxMoves : iMoveCost);
+#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+			int iCost = PATH_MOVEMENT_WEIGHT * (iMovesLeft == 0 ? iMoveCost : iMoveCost);
+#else
+			int iCost = PATH_MOVEMENT_WEIGHT * iMoveCost;
+#endif
 			iCost = (iCost * iExploreModifier) / 3;
 			//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
 			if (iCost > iWorstCost)
