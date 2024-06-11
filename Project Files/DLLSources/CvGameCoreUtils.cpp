@@ -1122,29 +1122,35 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 
 	int iWorstCost = 0;
 	int iWorstMovesLeft = MAX_INT;
-	int iWorstMaxMoves = MAX_INT;
+	//int iWorstMaxMoves = MAX_INT; // advc: unused
 
-	TeamTypes eTeam = pSelectionGroup->getHeadTeam();
+	const TeamTypes eTeam = pSelectionGroup->getHeadTeam();
 	// <advc.035>
 	//int const iFlipModifierDiv = 7;
 	//int iFlipModifier = iFlipModifierDiv;
 	// </advc.035>
 	// K-Mod
 	int iExploreModifier = 3; // (in thirds)
-#if 0
-	if (!kToPlot.isRevealed(eTeam))
+
+	if (!kToPlot.isRevealed(eTeam, false))
 	{
 		if (pSelectionGroup->getAutomateType() == AUTOMATE_EXPLORE ||
-			(!pSelectionGroup->isHuman() && (pSelectionGroup->getHeadUnitAIType() == UNITAI_EXPLORE || pSelectionGroup->getHeadUnitAIType() == UNITAI_EXPLORE_SEA)))
+			(!pSelectionGroup->isHuman() && (pSelectionGroup->getHeadUnit()->AI_getUnitAIType() == UNITAI_SCOUT)))
 		{
 			iExploreModifier = 2; // lower cost to encourage exploring unrevealed areas
 		}
-		else if (!kFromPlot.isRevealed(eTeam))
+		// Since WTP does not have UNITAI_EXPLORE_SEA like in BTS, let units with the fog busting
+		// flag be treated as explorers
+		else if (pSelectionGroup->AI_isControlled() && (iFlags & MOVE_BUST_FOG))
+		{
+			iExploreModifier = 2; // lower cost to encourage exploring unrevealed areas
+		}
+		else if (!kFromPlot.isRevealed(eTeam, false))
 		{
 			iExploreModifier = 4; // higher cost to discourage pathfinding deep into the unknown
 		}
 	}
-#endif
+
 	// K-Mod end
 	// <advc.035>
 #if 0
@@ -1178,38 +1184,29 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 		for (CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
 			pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
 		{
-			// TODO: getUnit can return NULL in rare cases
 			CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			int iMoveCost = kToPlot.movementCost(pLoopUnit, &kFromPlot,
+
+			if (pLoopUnit == NULL)
+				continue;
+
+			const int iMoveCost = kToPlot.movementCost(pLoopUnit, &kFromPlot,
 				false); // advc.001i
 			//FAssert(pLoopUnit->getDomainType() != DOMAIN_AIR);
-			if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
-			{
-				int iMaxMoves = parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves();
-				int iMovesLeft = std::max(0, (iMaxMoves - iMoveCost));
+			
+			const int iMaxMoves = parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves();
+			const int iMovesLeft = std::max(0, (iMaxMoves - iMoveCost));
 
-				iWorstMovesLeft = std::min(iWorstMovesLeft, iMovesLeft);
-				iWorstMaxMoves = std::min(iWorstMaxMoves, iMaxMoves);
+			iWorstMovesLeft = std::min(iWorstMovesLeft, iMovesLeft);
+			//iWorstMaxMoves = std::min(iWorstMaxMoves, iMaxMoves);
 
-				int iCost = PATH_MOVEMENT_WEIGHT * (iMovesLeft == 0 ? iMaxMoves : iMoveCost);
-				iCost = (iCost * iExploreModifier) / 3;
-				//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
-				if (iCost > iWorstCost)
-				{
-					iWorstCost = iCost;
-					iWorstMovesLeft = iMovesLeft;
-					iWorstMaxMoves = iMaxMoves;
-				}
-			}
-			else
+			int iCost = PATH_MOVEMENT_WEIGHT * (iMovesLeft == 0 ? iMaxMoves : iMoveCost);
+			iCost = (iCost * iExploreModifier) / 3;
+			//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
+			if (iCost > iWorstCost)
 			{
-				int iCost = PATH_MOVEMENT_WEIGHT * iMoveCost;
-				iCost = (iCost * iExploreModifier) / 3;
-				//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
-				if (iCost > iWorstCost)
-				{
-					iWorstCost = iCost;
-				}
+				iWorstCost = iCost;
+				iWorstMovesLeft = iMovesLeft;
+				//iWorstMaxMoves = iMaxMoves;
 			}
 		}
 	}
@@ -1284,6 +1281,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 
 	if (!kToPlot.isRevealed(eTeam, false))
 		return iWorstCost;
+
 #if 0
 	// WTP: Not supported yet due to the sheer effort required to port everything from AdvCiv atm.
 	// the cost of battle...
@@ -1339,6 +1337,24 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 		eToPlotTeam != eTeam && GET_TEAM(eTeam).AI_isSneakAttackReady(eToPlotTeam))
 		iWorstCost += PATH_DOW_WEIGHT;
 	// </advc.082>
+	
+	// Damage caused by features (for mods). WTP: Also moved out from the no-moves-left branch below since
+	// the cost should apply to all damaging plots that are part of the path and not just the endplot 
+	// (since we would sustain damage when moving through, not by simply ending our turn)
+	if (PATH_DAMAGE_WEIGHT != 0)
+	{
+		const FeatureTypes featureType = kToPlot.getFeatureType();
+
+		if (featureType != NO_FEATURE)
+		{
+			const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(kToPlot.getFeatureType());
+
+			iWorstCost += PATH_DAMAGE_WEIGHT *
+				std::max(0, kFeatureInfo.getTurnDamage()) /
+				GC.getMAX_HIT_POINTS();
+		}
+	}
+
 	if (iWorstMovesLeft <= 0)
 	{
 		if (eToPlotTeam != eTeam)
@@ -1346,20 +1362,6 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			iWorstCost += PATH_TERRITORY_WEIGHT;
 		}
 
-		// Damage caused by features (for mods)
-		if (PATH_DAMAGE_WEIGHT != 0)
-		{
-			const FeatureTypes featureType = kToPlot.getFeatureType();
-
-			if (featureType != NO_FEATURE)
-			{
-				const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(kToPlot.getFeatureType());
-
-				iWorstCost += PATH_DAMAGE_WEIGHT *
-					std::max(0, kFeatureInfo.getTurnDamage()) /
-					GC.getMAX_HIT_POINTS();
-			}
-		}
 		// defence modifiers
 		int iDefenceMod = 0;
 		int iDefenceCount = 0;
