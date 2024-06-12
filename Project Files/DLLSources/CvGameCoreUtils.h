@@ -10,6 +10,7 @@
 #include "CvGlobals.h"
 #include "CvMap.h"
 
+#include <map>
 
 class CvPlot;
 class CvCity;
@@ -397,5 +398,25 @@ CvString getCompileFlags(int iDefineFlags);
 // city radius end
 
 bool generatePathForHypotheticalUnit(const CvPlot* pFrom, const CvPlot* pTo, PlayerTypes ePlayer, UnitTypes eUnit, int iFlags = 0, int iMaxTurns = -1);
+
+
+// Helper function for weighted random selection
+template <typename T>
+T selectWeightedRandom(const std::map<T, int>& counts, int totalWeight)
+{
+	const int randValue = GC.getGameINLINE().getSorenRandNum(totalWeight, "weighted random selection");
+	int cumulativeWeight = 0;
+
+	for (typename std::map<T, int>::const_iterator it = counts.begin(); it != counts.end(); ++it)
+	{
+		cumulativeWeight += it->second;
+		if (randValue < cumulativeWeight)
+		{
+			return it->first;
+		}
+	}
+
+	return counts.begin()->first;
+}
 
 #endif
