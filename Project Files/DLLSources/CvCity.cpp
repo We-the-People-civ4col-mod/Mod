@@ -11453,328 +11453,177 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 }
 
 // WTP, ray, Ethnically correct Population Growth - START
-UnitClassTypes CvCity::bestGrowthUnitClass()
+UnitClassTypes CvCity::bestGrowthUnitClass() const
 {
 	UnitClassTypes eBestUnitClass = NO_UNITCLASS;
 
-	// we need a lot of counters
-	int iEthnicityEuropeCount = 0;
-	int iEthnicityIndioCount = 0;
-	int iEthnicityAfricanCount = 0;
-	int iEthnicityMestizzoCount = 0;
-	int iEthnicityMulattoCount = 0;
+	std::map<EthnicityTypes, int> ethnicityCounts;
+	std::map<CitizenStatusTypes, int> citizenStatusCounts;
 
-	int iCitizenStatusFreeCount = 0;
-	int iCitizenStatusIndenturedCount = 0;
-	int iCitizenStatusEnslavedCount = 0;
-	int iCitizenStatusEliteCount = 0;
+	ethnicityCounts[ETHNICITY_EUROPEAN] = 0;
+	ethnicityCounts[ETHNICITY_INDIO] = 0;
+	ethnicityCounts[ETHNICITY_AFRICAN] = 0;
+	ethnicityCounts[ETHNICITY_MESTIZZO] = 0;
+	ethnicityCounts[ETHNICITY_MULATTO] = 0;
 
-	int iBestEthnicityRand = 0;
-	int iBestCitizenStatusRand = 0;
+	citizenStatusCounts[CITIZEN_STATUS_FREE] = 0;
+	citizenStatusCounts[CITIZEN_STATUS_INDENTURED] = 0;
+	citizenStatusCounts[CITIZEN_STATUS_ENSLAVED] = 0;
+	citizenStatusCounts[CITIZEN_STATUS_ELITE] = 0;
+
 	EthnicityTypes eBestEthnicity = NO_ETHNICITY;
 	CitizenStatusTypes eBestCitizenStatus = NO_CITIZEN_STATUS;
 
-	// let us loop all the Units inside the City to get Ethnicity and Citizen Status
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
 		CvUnit* pLoopUnit = m_aPopulationUnits[i];
 		EthnicityTypes eEthnicityInsideCity = pLoopUnit->getUnitInfo().getEthnicity();
 		CitizenStatusTypes eCitizenStatusInsideCity = pLoopUnit->getUnitInfo().getCitizenStatus();
 
-		switch(eEthnicityInsideCity)
-		{
-			case ETHNICITY_EUROPEAN:
-				iEthnicityEuropeCount++;
-				break;
-			case ETHNICITY_INDIO:
-				iEthnicityIndioCount++;
-				break;
-			case ETHNICITY_AFRICAN:
-				iEthnicityAfricanCount++;
-				break;
-			case ETHNICITY_MESTIZZO:
-				iEthnicityMestizzoCount++;
-				break;
-			case ETHNICITY_MULATTO:
-				iEthnicityMulattoCount++;
-				break;
-			default:
-				break;
-		}
-
-		switch(eCitizenStatusInsideCity)
-		{
-			case CITIZEN_STATUS_FREE:
-				iCitizenStatusFreeCount++;
-				break;
-			case CITIZEN_STATUS_INDENTURED:
-				iCitizenStatusIndenturedCount++;
-				break;
-			case CITIZEN_STATUS_ENSLAVED:
-				iCitizenStatusEnslavedCount++;
-				break;
-			case CITIZEN_STATUS_ELITE:
-				iCitizenStatusEliteCount++;
-				break;
-			default:
-				break;
-		}
+		ethnicityCounts[eEthnicityInsideCity]++;
+		citizenStatusCounts[eCitizenStatusInsideCity]++;
 	}
 
-	// let us loop all the Units on the CityPlot to also get Ethnicity and Citizen Status
 	CvPlot* pCityCenterPlot = plot();
 	CLLNode<IDInfo>* pUnitNode = pCityCenterPlot->headUnitNode();
 	while (pUnitNode)
 	{
 		CvUnit* pLoopUnit2 = plot()->getUnitNodeLoop(pUnitNode);
 
-		// however, we only consider Units that belong to the same Player as the City
 		if (pLoopUnit2 != NULL && pLoopUnit2->getOwnerINLINE() == getOwnerINLINE())
 		{
 			EthnicityTypes eEthnicityCityPlot = pLoopUnit2->getUnitInfo().getEthnicity();
 			CitizenStatusTypes eCitizenStatusCityPlot = pLoopUnit2->getUnitInfo().getCitizenStatus();
 
-			switch(eEthnicityCityPlot)
-			{
-				case ETHNICITY_EUROPEAN:
-					iEthnicityEuropeCount++;
-					break;
-				case ETHNICITY_INDIO:
-					iEthnicityIndioCount++;
-					break;
-				case ETHNICITY_AFRICAN:
-					iEthnicityAfricanCount++;
-					break;
-				case ETHNICITY_MESTIZZO:
-					iEthnicityMestizzoCount++;
-					break;
-				case ETHNICITY_MULATTO:
-					iEthnicityMulattoCount++;
-					break;
-				default:
-					break;
-			}
-
-			switch(eCitizenStatusCityPlot)
-			{
-				case CITIZEN_STATUS_FREE:
-					iCitizenStatusFreeCount++;
-					break;
-				case CITIZEN_STATUS_INDENTURED:
-					iCitizenStatusIndenturedCount++;
-					break;
-				case CITIZEN_STATUS_ENSLAVED:
-					iCitizenStatusEnslavedCount++;
-					break;
-				case CITIZEN_STATUS_ELITE:
-					iCitizenStatusEliteCount++;
-					break;
-				default:
-					break;
-			}
+			ethnicityCounts[eEthnicityCityPlot]++;
+			citizenStatusCounts[eCitizenStatusCityPlot]++;
 		}
 	}
 
-	// now we need to calculate the best random by trying each Ethnicity
-	int iRandValue = 0;
-
-	// random Ethnicity European
-	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityEuropeCount * 100, "Ethicity European");
-	if(iRandValue > iBestEthnicityRand)
-	{
-		iBestEthnicityRand = iRandValue;
-		eBestEthnicity = ETHNICITY_EUROPEAN;
+	int iTotalEthnicityCount = 0;
+	for (std::map<EthnicityTypes, int>::iterator it = ethnicityCounts.begin(); it != ethnicityCounts.end(); ++it) {
+		iTotalEthnicityCount += it->second;
 	}
 
-	// random Ethnicity Indio
-	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityIndioCount * 100, "Ethicity Indio");
-	if(iRandValue > iBestEthnicityRand)
-	{
-		iBestEthnicityRand = iRandValue;
-		eBestEthnicity = ETHNICITY_INDIO;
+	eBestEthnicity = selectWeightedRandom(ethnicityCounts, iTotalEthnicityCount);
+
+	int iTotalCitizenStatusCount = 0;
+	for (std::map<CitizenStatusTypes, int>::iterator it = citizenStatusCounts.begin(); it != citizenStatusCounts.end(); ++it) {
+		iTotalCitizenStatusCount += it->second;
 	}
 
-	// random Ethnicity African
-	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityAfricanCount * 100, "Ethicity African");
-	if(iRandValue > iBestEthnicityRand)
-	{
-		iBestEthnicityRand = iRandValue;
-		eBestEthnicity = ETHNICITY_AFRICAN;
-	}
+	eBestCitizenStatus = selectWeightedRandom(citizenStatusCounts, iTotalCitizenStatusCount);
 
-	// random Ethnicity Mestizzo
-	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityMestizzoCount * 100, "Ethicity Mestizzo");
-	if(iRandValue > iBestEthnicityRand)
-	{
-		iBestEthnicityRand = iRandValue;
-		eBestEthnicity = ETHNICITY_MESTIZZO;
-	}
-
-	// random Ethnicity Mulatto
-	iRandValue = GC.getGameINLINE().getSorenRandNum(iEthnicityMulattoCount * 100, "Ethicity Mulatto");
-	if(iRandValue > iBestEthnicityRand)
-	{
-		iBestEthnicityRand = iRandValue;
-		eBestEthnicity = ETHNICITY_MULATTO;
-	}
-
-	// now we need to calculate the best random by trying each CitizenStatus
-	int iRandValue2 = 0;
-
-	// random CitizenStatus Free
-	iRandValue2 = GC.getGameINLINE().getSorenRandNum(iCitizenStatusFreeCount * 100, "CitizenStatus Free");
-	if(iRandValue2 > iBestCitizenStatusRand)
-	{
-		iBestCitizenStatusRand = iRandValue2;
-		eBestCitizenStatus = CITIZEN_STATUS_FREE;
-	}
-
-	// random CitizenStatus Indentured
-	iRandValue2 = GC.getGameINLINE().getSorenRandNum(iCitizenStatusIndenturedCount * 100, "CitizenStatus Indentured");
-	if(iRandValue2 > iBestCitizenStatusRand)
-	{
-		iBestCitizenStatusRand = iRandValue2;
-		eBestCitizenStatus = CITIZEN_STATUS_INDENTURED;
-	}
-
-	// random CitizenStatus Enslaved
-	iRandValue2 = GC.getGameINLINE().getSorenRandNum(iCitizenStatusEnslavedCount * 100, "CitizenStatus Enslaved");
-	if(iRandValue2 > iBestCitizenStatusRand)
-	{
-		iBestCitizenStatusRand = iRandValue2;
-		eBestCitizenStatus = CITIZEN_STATUS_ENSLAVED;
-	}
-
-	// random CitizenStatus Elite
-	iRandValue2 = GC.getGameINLINE().getSorenRandNum(iCitizenStatusEliteCount * 100, "CitizenStatus Elite");
-	if(iRandValue2 > iBestCitizenStatusRand)
-	{
-		iBestCitizenStatusRand = iRandValue2;
-		eBestCitizenStatus = CITIZEN_STATUS_ELITE;
-	}
-
-	// NOW we have the information of what we need to spawn
-	// for safety just in case something went wrong
 	if (eBestEthnicity == NO_ETHNICITY || eBestCitizenStatus == NO_CITIZEN_STATUS)
 	{
 		eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
 	}
-
-	// now we come to the more complex swtich
-	switch(eBestEthnicity)
+	else
 	{
-		case ETHNICITY_EUROPEAN:
-			switch(eBestCitizenStatus)
-			{
-				case CITIZEN_STATUS_FREE:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
-					break;
-				case CITIZEN_STATUS_INDENTURED:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_INDENTURED;
-					break;
-				case CITIZEN_STATUS_ENSLAVED:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_ENSLAVED;
-					break;
-				case CITIZEN_STATUS_ELITE:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_ELITE;
-					break;
-				default:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
-					break;
+		if (eBestEthnicity == ETHNICITY_EUROPEAN) {
+			switch (eBestCitizenStatus) {
+			case CITIZEN_STATUS_FREE:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
+				break;
+			case CITIZEN_STATUS_INDENTURED:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_INDENTURED;
+				break;
+			case CITIZEN_STATUS_ENSLAVED:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_ENSLAVED;
+				break;
+			case CITIZEN_STATUS_ELITE:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_ELITE;
+				break;
+			default:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
+				break;
 			}
-			break;
-		case ETHNICITY_INDIO:
-			switch(eBestCitizenStatus)
-			{
-				case CITIZEN_STATUS_FREE:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_INDIO_FREE;
-					break;
-				case CITIZEN_STATUS_INDENTURED:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_INDIO_INDENTURED;
-					break;
-				case CITIZEN_STATUS_ENSLAVED:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_INDIO_ENSLAVED;
-					break;
-				case CITIZEN_STATUS_ELITE:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_INDIO_ELITE;
-					break;
-				default:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
-					break;
+		}
+		else if (eBestEthnicity == ETHNICITY_INDIO) {
+			switch (eBestCitizenStatus) {
+			case CITIZEN_STATUS_FREE:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_INDIO_FREE;
+				break;
+			case CITIZEN_STATUS_INDENTURED:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_INDIO_INDENTURED;
+				break;
+			case CITIZEN_STATUS_ENSLAVED:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_INDIO_ENSLAVED;
+				break;
+			case CITIZEN_STATUS_ELITE:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_INDIO_ELITE;
+				break;
+			default:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
+				break;
 			}
-			break;
-		case ETHNICITY_AFRICAN:
-			switch(eBestCitizenStatus)
-			{
-				case CITIZEN_STATUS_FREE:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_AFRICAN_FREE;
-					break;
-				case CITIZEN_STATUS_INDENTURED:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_AFRICAN_INDENTURED;
-					break;
-				case CITIZEN_STATUS_ENSLAVED:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_AFRICAN_ENSLAVED;
-					break;
-				case CITIZEN_STATUS_ELITE:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_AFRICAN_ELITE;
-					break;
-				default:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
-					break;
+		}
+		else if (eBestEthnicity == ETHNICITY_AFRICAN) {
+			switch (eBestCitizenStatus) {
+			case CITIZEN_STATUS_FREE:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_AFRICAN_FREE;
+				break;
+			case CITIZEN_STATUS_INDENTURED:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_AFRICAN_INDENTURED;
+				break;
+			case CITIZEN_STATUS_ENSLAVED:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_AFRICAN_ENSLAVED;
+				break;
+			case CITIZEN_STATUS_ELITE:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_AFRICAN_ELITE;
+				break;
+			default:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
+				break;
 			}
-			break;
-		case ETHNICITY_MESTIZZO:
-			switch(eBestCitizenStatus)
-			{
-				case CITIZEN_STATUS_FREE:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MESTIZZO_FREE;
-					break;
-				case CITIZEN_STATUS_INDENTURED:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MESTIZZO_INDENTURED;
-					break;
-				case CITIZEN_STATUS_ENSLAVED:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MESTIZZO_ENSLAVED;
-					break;
-				case CITIZEN_STATUS_ELITE:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MESTIZZO_ELITE;
-					break;
-				default:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
-					break;
+		}
+		else if (eBestEthnicity == ETHNICITY_MESTIZZO) {
+			switch (eBestCitizenStatus) {
+			case CITIZEN_STATUS_FREE:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MESTIZZO_FREE;
+				break;
+			case CITIZEN_STATUS_INDENTURED:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MESTIZZO_INDENTURED;
+				break;
+			case CITIZEN_STATUS_ENSLAVED:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MESTIZZO_ENSLAVED;
+				break;
+			case CITIZEN_STATUS_ELITE:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MESTIZZO_ELITE;
+				break;
+			default:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
+				break;
 			}
-			break;
-		case ETHNICITY_MULATTO:
-			switch(eBestCitizenStatus)
-			{
-				case CITIZEN_STATUS_FREE:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MULATTO_FREE;
-					break;
-				case CITIZEN_STATUS_INDENTURED:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MULATTO_INDENTURED;
-					break;
-				case CITIZEN_STATUS_ENSLAVED:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MULATTO_ENSLAVED;
-					break;
-				case CITIZEN_STATUS_ELITE:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MULATTO_ELITE;
-					break;
-				default:
-					eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
-					break;
+		}
+		else if (eBestEthnicity == ETHNICITY_MULATTO) {
+			switch (eBestCitizenStatus) {
+			case CITIZEN_STATUS_FREE:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MULATTO_FREE;
+				break;
+			case CITIZEN_STATUS_INDENTURED:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MULATTO_INDENTURED;
+				break;
+			case CITIZEN_STATUS_ENSLAVED:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MULATTO_ENSLAVED;
+				break;
+			case CITIZEN_STATUS_ELITE:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_MULATTO_ELITE;
+				break;
+			default:
+				eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
+				break;
 			}
-			break;
+		}
 	}
 
-	// once more for safety
 	if (eBestUnitClass == NO_UNITCLASS)
 	{
 		eBestUnitClass = GLOBAL_DEFINE_UNITCLASS_EUROPEAN_FREE;
 	}
 
-	// this is the normal case that should be returned
 	return eBestUnitClass;
 }
-
 // WTP, ray, Ethnically correct Population Growth - END
 
 CvUnit* CvCity::ejectBestDefender(CvUnit* pCurrentBest, CvUnit* pAttacker)
