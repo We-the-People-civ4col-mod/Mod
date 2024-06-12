@@ -38,8 +38,6 @@ class CvDawnOfMan:
 		screen.addDrawControl("DawnBackGroundPanel", ArtFileMgr.getInterfaceArtInfo("INTERFACE_ROYAL_CHARTER_BG").getPath(), self.X_MAIN_PANEL - 50, self.Y_MAIN_PANEL - 50, self.W_MAIN_PANEL + 100, self.H_MAIN_PANEL + 100, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 	
 		screen.addPanel( szMainPanel, "", "", True, True, self.X_MAIN_PANEL, self.Y_MAIN_PANEL, self.W_MAIN_PANEL, self.H_MAIN_PANEL, PanelStyles.PANEL_STYLE_EMPTY, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-		
-		screen.setButtonGFC("Exit", self.EXIT_TEXT, "", self.X_EXIT, self.Y_EXIT, self.W_EXIT, self.H_EXIT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1, ButtonStyles.BUTTON_STYLE_STANDARD )
 
 		# Top
 		szHeaderPanel = "DawnOfManHeaderPanel"
@@ -63,16 +61,23 @@ class CvDawnOfMan:
 
 		screen.addMultilineText( "NameText", szNameText, self.X_LEADER_TITLE_TEXT, self.Y_LEADER_TITLE_TEXT, self.W_LEADER_TITLE_TEXT, self.H_LEADER_TITLE_TEXT, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
 
-		# Starting Units
+        # Starting Units
 		iUnit = 0
+		iRow = 0
+		iUnitsPerRow = 3
+		unitYOffset = self.Y_STATS_TEXT + 30 + self.H_CIV_PANEL + 104
 		(unit, iter) = self.player.firstUnit()
 		while(unit):
-			screen.addDDSGFC("Unit Icon" + str(unit.getID()), unit.getButton(),self.X_LEADER_ICON + (self.WH_FANCY_ICON * iUnit), self.Y_STATS_TEXT + 30 + self.H_CIV_PANEL + 104, self.WH_FANCY_ICON, self.WH_FANCY_ICON, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+			screen.addDDSGFC("Unit Icon" + str(unit.getID()), unit.getButton(), self.X_LEADER_ICON + (self.WH_FANCY_ICON * (iUnit % iUnitsPerRow)), unitYOffset + (self.WH_FANCY_ICON * iRow), self.WH_FANCY_ICON, self.WH_FANCY_ICON, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 			iUnit += 1
+			if iUnit % iUnitsPerRow == 0:
+				iRow += 1
 			(unit, iter) = self.player.nextUnit(iter)
 
-
 		screen.addMultilineText( "StartingUnitText", localText.getText("TXT_KEY_DAWN_OF_MAN_SCREEN_STARTING_UNITS", ()), self.X_LEADER_ICON, self.Y_STATS_TEXT + 5 + self.H_CIV_PANEL + 104, self.W_STATS_TEXT - (self.iMarginSpace * 3), self.H_STATS_TEXT - (self.iMarginSpace * 4), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+
+		self.Y_EXIT = unitYOffset + (self.WH_FANCY_ICON * (iRow + 1)) + 20
+		screen.setButtonGFC("Exit", self.EXIT_TEXT, "", self.X_EXIT, self.Y_EXIT, self.W_EXIT, self.H_EXIT, WidgetTypes.WIDGET_CLOSE_SCREEN, -1, -1, ButtonStyles.BUTTON_STYLE_STANDARD )
 
 		# Fancy icon things
 		### TAC Ermittlung K�nig ein paar Zeilen nach oben verschoben
