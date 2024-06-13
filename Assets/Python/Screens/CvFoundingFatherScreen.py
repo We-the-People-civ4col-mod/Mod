@@ -255,7 +255,7 @@ class CvFoundingFatherScreen:
 				if activeTeam.isFatherIgnore(i):
 					screen.addDDSGFCAt("Flag Icon" + str(i), ScrollPanel, ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL").getPath(), (self.FatherRecordWidth * (j+ 1)) - (self.FatherRecordHeight * 6 / 7) + (self.FatherRecordHeight * 9 / 10) - (self.FatherRecordHeight / 5), self.BarAreaHeight + self.FatherRecordHeight - 15 + (self.FatherRecordWidth / 5), (self.FatherRecordHeight / 5), (self.FatherRecordHeight / 5), WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, ConceptTypes.CONCEPT_FATHERS, False )	
 					szTempBuffer = localText.getText("TXT_KEY_FATHER_REJECTED", ())
-					szTempBuffer = localText.changeTextColor(szTempBuffer, gc.getInfoTypeForString("COLOR_FONT_RED"))
+					szTempBuffer = localText.changeTextColor(szTempBuffer, ColorTypes.COLOR_FONT_RED)
 					screen.setTextAt("FatherOwner" + str(i), ScrollPanel, "<font=3>" + szTempBuffer + "</font>", CvUtil.FONT_LEFT_JUSTIFY, (self.FatherRecordWidth * (j + 1)) - (self.FatherRecordHeight * 6 / 7) + (self.FatherRecordHeight * 9 / 10), self.BarAreaHeight + self.FatherRecordHeight - 30 + (self.FatherRecordWidth / 5) + (self.FatherRecordWidth / 5), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, ConceptTypes.CONCEPT_FATHERS)
 # TAC End				
 
@@ -292,10 +292,10 @@ class CvFoundingFatherScreen:
 
 # TAC 0201 Start: Test if FF was rejected before by active player. Set flag in upper row if FF unavailable
 				if activeTeam.isFatherIgnore(i):
-					screen.addDDSGFCAt("Flag Icon" + str(i), ScrollPanel, ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL").getPath(), (self.FatherRecordWidth * (j - 1)) + self.FatherRecordWidth + (self.FatherRecordHeight / 20), self.TopPanelHeight + (self.FatherRecordHeight / 2) - (self.FatherRecordHeight / 12), (self.FatherRecordHeight / 5), (self.FatherRecordHeight / 5), WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, gc.getInfoTypeForString("CONCEPT_FATHERS"), False )	
+					screen.addDDSGFCAt("Flag Icon" + str(i), ScrollPanel, ArtFileMgr.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL").getPath(), (self.FatherRecordWidth * (j - 1)) + self.FatherRecordWidth + (self.FatherRecordHeight / 20), self.TopPanelHeight + (self.FatherRecordHeight / 2) - (self.FatherRecordHeight / 12), (self.FatherRecordHeight / 5), (self.FatherRecordHeight / 5), WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, ConceptTypes.CONCEPT_FATHERS, False )	
 					szTempBuffer = localText.getText("TXT_KEY_FATHER_REJECTED", ())
-					szTempBuffer = localText.changeTextColor(szTempBuffer, gc.getInfoTypeForString("COLOR_FONT_RED"))
-					screen.setTextAt("FatherOwner" + str(i), ScrollPanel, "<font=3>" + szTempBuffer + "</font>", CvUtil.FONT_RIGHT_JUSTIFY, (self.FatherRecordWidth * (j - 1)) + self.FatherRecordWidth + (self.FatherRecordHeight / 20), self.TopPanelHeight + (self.FatherRecordHeight / 2) - (self.FatherRecordHeight / 12) + (self.FatherRecordWidth / 5), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, gc.getInfoTypeForString("CONCEPT_FATHERS") )
+					szTempBuffer = localText.changeTextColor(szTempBuffer, ColorTypes.COLOR_FONT_RED)
+					screen.setTextAt("FatherOwner" + str(i), ScrollPanel, "<font=3>" + szTempBuffer + "</font>", CvUtil.FONT_RIGHT_JUSTIFY, (self.FatherRecordWidth * (j - 1)) + self.FatherRecordWidth + (self.FatherRecordHeight / 20), self.TopPanelHeight + (self.FatherRecordHeight / 2) - (self.FatherRecordHeight / 12) + (self.FatherRecordWidth / 5), -0.1, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, ConceptTypes.CONCEPT_FATHERS)
 # TAC End
 				
 				if (gc.getGame().getFatherTeam(i) != TeamTypes.NO_TEAM):

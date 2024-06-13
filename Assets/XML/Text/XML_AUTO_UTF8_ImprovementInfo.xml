@@ -1246,6 +1246,22 @@
 		<German>[ICON_BULLET]Kann nur angrenzend an [COLOR_UNIT_TEXT]Wassergeländefelder[COLOR_REVERT], wie z.B. Küsten, flache Küsten, große Flüsse, Seen oder Eisseen gebaut werden [NEWLINE][ICON_BULLET]Erlaubt [COLOR_UNIT_TEXT]Küstenschiffen [COLOR_REVERT] und [COLOR_UNIT_TEXT]Fischerbooten[COLOR_REVERT] die Durchfahrt über [COLOR_HIGHLIGHT_TEXT]Land[COLOR_REVERT]</German>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS_RIVER</Tag>
+		<English>River Fishing Nets</English>
+		<French>Filet de Pêche en Rivière</French>
+		<German>
+			<Text>Fischernetz am Fluss</Text>
+			<Gender>Neuter</Gender>
+			<Plural>1</Plural>
+		</German>
+		<Russian>Сеть для речной рыбалки</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS_RIVER_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Fishing nets[COLOR_REVERT] can be woven to scoop up a shoal of fish or, with gill nets, to trap fish of the desired size. It's one of the two main systems used by fishing boats, the other being trawling with hooks.</English>
+		<German>[COLOR_HIGHLIGHT_TEXT]Fischernetze[COLOR_REVERT] werden genutzt um einen Fischschwarm zu fangen, oder mit sogenannten Kiemennetzen auch nur Fische einer bestimmten Größe. Daneben gibt es noch ein anderes Hauptsystem, das von Fischern verwendet wird: das Schleppnetz, welches mit einem Haken hinter dem Schiff hergezogen wird.</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS</Tag>
 		<English>Fishing Nets</English>
 		<French>Filets de pêche</French>

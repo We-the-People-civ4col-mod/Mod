@@ -146,7 +146,7 @@ class CvMilitaryAdvisor:
 
 		self.szHeader = self.getNextWidgetName()
 		self.SCREEN_TITLE = u"<font=4b>" + localText.getText("TXT_KEY_MILITARY_ADVISOR_TITLE", ()).upper() + u"</font>"
-		self.SCREEN_TITLE = localText.changeTextColor(self.SCREEN_TITLE, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+		self.SCREEN_TITLE = localText.changeTextColor(self.SCREEN_TITLE, ColorTypes.COLOR_FONT_CREAM)
 		screen.setText(self.szHeader, "Background", self.SCREEN_TITLE, CvUtil.FONT_CENTER_JUSTIFY, self.W_SCREEN / 2, self.Y_TITLE, self.Z_CONTROLS, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		self.unitPanelName = self.getNextWidgetName()
@@ -157,20 +157,20 @@ class CvMilitaryAdvisor:
 		# GREAT GENERAL
 		szWidget = "GreatGeneralBar"
 		screen.addStackedBarGFC(szWidget, self.W_SCREEN * 2 / 8, self.Y_EXIT + 5, self.W_SCREEN / 4, 30, InfoBarTypes.NUM_INFOBAR_TYPES, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_STORED"))
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_RATE"))
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY"))
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY"))
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_GREAT_PEOPLE_STORED)
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_GREAT_PEOPLE_RATE)
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE_EXTRA, ColorTypes.COLOR_EMPTY)
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_EMPTY, ColorTypes.COLOR_EMPTY)
 		screen.setBarPercentage(szWidget, InfoBarTypes.INFOBAR_STORED, float(self.pActivePlayer.getCombatExperience()) / float(self.pActivePlayer.greatGeneralThreshold()))
 		screen.setLabel(self.getNextWidgetName(), "", u"<font=3>" + localText.getText("TXT_KEY_MISC_GREAT_GENERAL", (self.pActivePlayer.getCombatExperience(), self.pActivePlayer.greatGeneralThreshold())) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.W_SCREEN / 2 - self.W_SCREEN * 1/ 8, self.Y_EXIT + 8, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 
 		# GREAT ADMIRALS
 		szWidget = "GreatAdmiralBar"
 		screen.addStackedBarGFC(szWidget, self.W_SCREEN * 4 / 8, self.Y_EXIT + 5, self.W_SCREEN / 4, 30, InfoBarTypes.NUM_INFOBAR_TYPES, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_STORED"))
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_RATE"))
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY"))
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY"))
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_GREAT_PEOPLE_STORED)
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_GREAT_PEOPLE_RATE)
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE_EXTRA, ColorTypes.COLOR_EMPTY)
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_EMPTY, ColorTypes.COLOR_EMPTY)
 		screen.setBarPercentage(szWidget, InfoBarTypes.INFOBAR_STORED, float(self.pActivePlayer.getSeaCombatExperience()) / float(self.pActivePlayer.greatAdmiralThreshold()))
 		screen.setLabel(self.getNextWidgetName(), "", u"<font=3>" + localText.getText("TXT_KEY_MISC_GREAT_ADMIRAL", (self.pActivePlayer.getSeaCombatExperience(), self.pActivePlayer.greatAdmiralThreshold())) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.W_SCREEN / 2 + self.W_SCREEN * 1/ 8, self.Y_EXIT + 8, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		
@@ -530,7 +530,7 @@ class CvMilitaryAdvisor:
 			iCiv = gc.getPlayer(iData2).getCivilizationType()
 			szHelp = CyGameTextMgr().parseLeaderTraits(iLeader, iCiv, False, True)
 			szName = gc.getLeaderHeadInfo(gc.getPlayer(iData2).getLeaderType()).getDescription()
-			szColoredName = localText.changeTextColor(szName, gc.getInfoTypeForString("COLOR_HIGHLIGHT_TEXT"))
+			szColoredName = localText.changeTextColor(szName, ColorTypes.COLOR_HIGHLIGHT_TEXT)
 			return szColoredName + szHelp
 
 		return u""

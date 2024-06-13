@@ -10,6 +10,10 @@
 		<iDefineIntVal>1</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>START_YEAR</DefineName>
+		<iDefineIntVal>1492</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>STANDARD_HANDICAP</DefineName>
 		<DefineTextVal>HANDICAP_EXPLORER</DefineTextVal>
 	</Define>

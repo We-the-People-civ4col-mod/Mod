@@ -1509,6 +1509,9 @@ protected:
 	bool m_bUSE_DO_PILLAGE_GOLD_CALLBACK;
 	bool m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK;
 	bool m_bUSE_DO_COMBAT_CALLBACK;
+	bool m_bUSE_DO_GOLD_CALLBACK;
+	bool m_bUSE_UPDATE_COLORED_PLOTS_CALLBACK;
+	bool m_bUSE_IS_VICTORY_TEST_CALLBACK;
 	// K-Mod \ RaR end
 
 	const DWORD m_iThreadID;
@@ -1540,6 +1543,9 @@ protected:
 		inline bool getUSE_DO_PILLAGE_GOLD_CALLBACK() { return m_bUSE_DO_PILLAGE_GOLD_CALLBACK; }
 		inline bool getUSE_GET_EXPERIENCE_NEEDED_CALLBACK() { return m_bUSE_GET_EXPERIENCE_NEEDED_CALLBACK; }
 		inline bool getUSE_DO_COMBAT_CALLBACK() { return m_bUSE_DO_COMBAT_CALLBACK; }
+		inline bool getUSE_DO_GOLD_CALLBACK() { return m_bUSE_DO_GOLD_CALLBACK; }
+		inline bool getUSE_UPDATE_COLORED_PLOTS_CALLBACK() { return m_bUSE_UPDATE_COLORED_PLOTS_CALLBACK; }
+		inline bool getUSE_IS_VICTORY_TEST_CALLBACK() { return m_bUSE_IS_VICTORY_TEST_CALLBACK; }
 
 public:
 	void setExeXmlLengthOverride(bool bEnabled)

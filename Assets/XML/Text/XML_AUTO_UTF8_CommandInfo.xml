@@ -122,7 +122,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_ESTABLISH_MISSION_HELP</Tag>
-		<English>Establish a mission in the village to gradually convert natives to your faith.</English>
+		<English>Establish a mission in the village to gradually convert Natives to your faith.</English>
 		<French>Etablir une mission dans le village pour convertir peu à peu les indigènes à votre foi.</French>
 		<German>Eine Mission errichten, um Konvertierte Ureinwohner zu gewinnen.</German>
 		<Italian>Fonda una missione nel villaggio per convertire gradualmente i nativi alla tua fede.</Italian>
@@ -313,7 +313,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_PROMOTE</Tag>
-		<English>TXT_KEY_COMMAND_PROMOTION</English>
+		<English>Promote unit</English>
+		<French>Promouvoir l'unité</French>
+		<German>Einheit befördern</German>
+		<Italian>Promuovi unità</Italian>
+		<Spanish>Ascender unidad</Spanish>
+		<Russian>Повысить юнит</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_PROMOTE_HELP</Tag>

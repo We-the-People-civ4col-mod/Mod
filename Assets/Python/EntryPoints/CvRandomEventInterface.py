@@ -909,6 +909,34 @@ def getHelpPeasantWarPrep(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_PEASANT_WARPREP_HELP", (iPriceChange, gc.getYieldInfo(iYield1).getChar(), king.getCivilizationDescriptionKey(), iPriceChange, gc.getYieldInfo(iYield2).getChar(), king.getCivilizationDescriptionKey()))
 	return szHelp
 
+######## Discovery Events for Scouts ###########
+
+def canTriggerDiscoveryStart(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return False
+	unit = player.getUnit(kTriggeredData.iUnitId)
+	eScout = gc.getInfoTypeForString("PROFESSION_SCOUT")
+	if unit.getProfession() != eScout:
+		return False
+	return True
+
+
+def canTriggerDiscovery(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return False
+	unit = player.getUnit(kTriggeredData.iUnitId)
+	eScout = gc.getInfoTypeForString("PROFESSION_SCOUT")
+	if unit.getProfession() != eScout:
+		return False
+	# Read parameter 3 from the event as random chance
+	if TriggerChance(argsList):
+		return True
+	return False
+
 ######## The Lost Tribe ###########
 
 def canTriggerLostTribe(argsList):
@@ -1517,7 +1545,7 @@ def getHelpRuins5(argsList):
 	szHelp = localText.getText("TXT_KEY_EVENT_BONUS_UNIT", (1, UnitClass.getTextKey(), ))
 	return szHelp
 
-######## Native Trade with Wagons Quest ###########
+######## Native Trade Quests ###########
 
 def isExpiredNativeWagonTrade(argsList):
 	eEvent = argsList[0]
@@ -1553,6 +1581,51 @@ def applyNativeWagonTrade5(argsList):
 def getHelpNativeWagonTrade5(argsList):
 	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_WAGON_TRAIN'))
 	szHelp = localText.getText("TXT_KEY_EVENT_BONUS_UNIT", (1, UnitClass.getTextKey(), ))
+	return szHelp
+
+def getHelpNativeNeighborTrade(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_WAGON_TRAIN'))
+	szHelp = localText.getText("TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_HELP", (UnitClass.getTextKey(), city.getNameKey(), event.getGenericParameter(1)))
+	return szHelp
+
+def applyNativeNeighborTrade5(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	iUnitClassType = CvUtil.findInfoTypeNum('UNITCLASS_EXPERT_TRADER')
+	iUnitType = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iUnitClassType)
+	if iUnitType != -1:
+		player.initUnit(iUnitType, 0, kTriggeredData.iPlotX, kTriggeredData.iPlotY, UnitAITypes.NO_UNITAI, DirectionTypes.DIRECTION_SOUTH, 0)
+
+def getHelpNativeNeighborTrade5(argsList):
+	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_EXPERT_TRADER'))
+	szHelp = localText.getText("TXT_KEY_EVENT_BONUS_UNIT", (1, UnitClass.getTextKey(), ))
+	return szHelp
+
+def getHelpNativeNeighborTrade2(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_TREK'))
+	szHelp = localText.getText("TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_HELP", (UnitClass.getTextKey(), city.getNameKey(), event.getGenericParameter(1)))
+	return szHelp
+
+def getHelpNativeNeighborTradeBetrayal(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_TREK'))
+	szHelp = localText.getText("TXT_KEY_EVENT_TRADE_WITH_NATIVE_BETRAYAL_HELP", (UnitClass.getTextKey(), city.getNameKey(), event.getGenericParameter(1)))
 	return szHelp
 	
 ####### The Royals Event ########
@@ -1831,7 +1904,6 @@ def CheckCheesemakerInCity(argsList):
 
 	return True
 
-
 ######## Bonus Funktionen ###########
 
 def CanApplyBonus(argsList):
@@ -1886,7 +1958,7 @@ def CheckLandmark(argsList):
 	eEvent = argsList[0]
 	kTriggeredData = argsList[1]
 	event = gc.getEventInfo(eEvent)
-	szLandmark = "TXT_KEY_"+event.getType()+"_LANDMARK"
+	szLandmark = "TXT_KEY_%s_LANDMARK"%(event.getType())
 	for i in range (CyEngine().getNumSigns()):
 		Sign = CyEngine().getSignByIndex(i)
 		if (Sign.getPlot().getX() == kTriggeredData.iPlotX and Sign.getPlot().getY() == kTriggeredData.iPlotY):
@@ -1898,7 +1970,7 @@ def SetLandmark(argsList):
 	kTriggeredData = argsList[1]
 	event = gc.getEventInfo(eEvent)
 	if GlobalDefines.SHOW_LANDMARKS == 1:
-		szLandmark = "TXT_KEY_"+event.getType()+"_LANDMARK"
+		szLandmark = "TXT_KEY_%s_LANDMARK"%(event.getType())
 		plot = gc.getMap().plot(kTriggeredData.iPlotX,  kTriggeredData.iPlotY)
 		CyEngine().addSign(plot, -1, szLandmark)
 
@@ -2465,39 +2537,25 @@ def canTriggerTavernVsChapel(argsList):
 				return False
 	return True
 
-#def doPirateAttack1(argsList):
-#	iEvent = argsList[0]
-#	kTriggeredData = argsList[1]
-#	pPlot = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
-#	bPlayer = gc.getPlayer(gc.getBARBARIAN_PLAYER())
-#	if pPlot.isNone() == False:
-#		newUnit = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_PRIVATEER'), pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH)
-#		newUnit.setHasPromotion(gc.getInfoTypeForString('PROMOTION_COMBAT2'), True)
-#		iRnd = CyGame().getSorenRandNum(1000, "YarrrrMatey")
-#		if iRnd > 80:
-#			newUnit.setName("Blackbeard")
-#		elif iRnd > 60:
-#			newUnit.setName("Anne Bonny")
-#		elif iRnd > 40:
-#			newUnit.setName("Calico Jack Rackham")
-#		elif iRnd > 20:
-#			newUnit.setName("Black Bart")
-#		else:
-#			newUnit.setName("Dread Pirate Roberts")
-#		newUnit2 = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_SLOOP'), pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH)
-#		newUnit3 = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_BRIGANTINE'), pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH)
-#
-#def doPirateAttack2(argsList):
-#	iEvent = argsList[0]
-#	kTriggeredData = argsList[1]
-#	pPlot = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
-#	bPlayer = gc.getPlayer(gc.getBARBARIAN_PLAYER())
-#	if pPlot.isNone() == False:
-#		newUnit = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_MAN_O_WAR'), pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH)
-#		newUnit.setHasPromotion(gc.getInfoTypeForString('PROMOTION_COMBAT2'), True)
-#		newUnit2 = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_FRIGATE'), pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH)
-#		newUnit3 = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_BRIGANTINE'), pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH)
-#		newUnit3 = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_PRIVATEER'), pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH)
+def doPirateAttack1(argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+	pPlot = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+	bPlayer = gc.getPlayer(gc.getGame().getBarbarianPlayer())
+	if pPlot.isNone() == False:
+		newUnit = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_PRIVATEER'), -1, pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH, 0)
+		newUnit2 = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_PIRATE_CUTTER'), -1, pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH, 0)
+
+def doPirateAttack2(argsList):
+	iEvent = argsList[0]
+	kTriggeredData = argsList[1]
+	pPlot = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+	bPlayer = gc.getPlayer(gc.getGame().getBarbarianPlayer())
+	if pPlot.isNone() == False:
+		newUnit = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_PIRATE_FRIGATE'), -1, pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH, 0)
+		newUnit2 = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_PIRATE_FRIGATE'), -1, pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH, 0)
+		newUnit = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_PRIVATEER'), -1, pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH, 0)
+		newUnit2 = bPlayer.initUnit(gc.getInfoTypeForString('UNIT_PIRATE_CUTTER'), -1, pPlot.getX(), pPlot.getY(), UnitAITypes.UNITAI_PIRATE_SEA, DirectionTypes.DIRECTION_SOUTH, 0)
 
 ######## BEER ROBBERY ###########
 
@@ -2984,6 +3042,228 @@ def isNativeVillageAndHuman(argsList):
 	if not plot.isCity():
 		return False
 	if not gc.getPlayer(plot.getOwner()).isNative():
+		return False
+	return True
+
+def isNativeVillageAndHumanTrade(argsList):
+	pTriggeredData = argsList[0]
+	plot = gc.getMap().plot(pTriggeredData.iPlotX, pTriggeredData.iPlotY)
+	player = gc.getPlayer(pTriggeredData.ePlayer)
+	if not player.isHuman():
+		return False
+	if not plot.isCity():
+		return False
+	if not gc.getPlayer(plot.getOwner()).isNative():
+		return False
+	iUnitType = CvUtil.findInfoTypeNum('UNIT_TREK')
+	iUnitsCurrent = countUnits(argsList, iUnitType)
+	if not iUnitsCurrent > 5:
+		return False
+	return True
+
+####### Stirred up natives events ########
+
+def canTriggerStirredUpNatives(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	iAchieve = gc.getInfoTypeForString("ACHIEVE_COLONIAL_CAVALRY")
+	#CyInterface().addImmediateMessage("iAchieve "+str(iAchieve), "")
+	if player.isAchieveGained(iAchieve):
+		return True
+	return False
+
+def canTriggerStirredUpNativesHorses(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return False
+	city = player.getCity(kTriggeredData.iCityId)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	if player.isNone() or player2.isNone() :
+		return False
+	if city.isNone():
+		return False
+	# Read Parameter 1 from the first event and check if enough yield is stored in city
+	eEvent1 = gc.getInfoTypeForString("EVENT_STIRRED_UP_NATIVES_HORSES_1")
+	event1 = gc.getEventInfo(eEvent1)
+	iYield = gc.getInfoTypeForString("YIELD_HORSES")
+	quantity = event1.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return False
+	return True
+
+def applyStirredUpNativesHorses(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	nativecity = player2.getCity(kTriggeredData.iOtherPlayerCityId)
+	iYield = gc.getInfoTypeForString("YIELD_HORSES")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
+	city.changeYieldStored(iYield, quantity)
+	nativecity.changeYieldStored(iYield, -quantity)
+
+def getHelpStirredUpNativesHorses(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	nativecity = player2.getCity(kTriggeredData.iOtherPlayerCityId)
+	iYield = gc.getInfoTypeForString("YIELD_HORSES")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	szHelp = ""
+	if event.getGenericParameter(1) <> 0 :
+		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_YIELD_GAIN", (-quantity,  gc.getYieldInfo(iYield).getChar(), nativecity.getNameKey()))
+	return szHelp
+
+def canTriggerStirredUpNativesMuskets(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return False
+	city = player.getCity(kTriggeredData.iCityId)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	if player.isNone() or player2.isNone() :
+		return False
+	if city.isNone():
+		return False
+	# Read Parameter 1 from the first event and check if enough yield is stored in city
+	eEvent1 = gc.getInfoTypeForString("EVENT_STIRRED_UP_NATIVES_MUSKETS_1")
+	event1 = gc.getEventInfo(eEvent1)
+	iYield = gc.getInfoTypeForString("YIELD_MUSKETS")
+	quantity = event1.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return False
+	return True
+
+def applyStirredUpNativesMuskets(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	nativecity = player2.getCity(kTriggeredData.iOtherPlayerCityId)
+	iYield = gc.getInfoTypeForString("YIELD_MUSKETS")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
+	city.changeYieldStored(iYield, quantity)
+	nativecity.changeYieldStored(iYield, -quantity)
+
+def getHelpStirredUpNativesMuskets(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	nativecity = player2.getCity(kTriggeredData.iOtherPlayerCityId)
+	iYield = gc.getInfoTypeForString("YIELD_MUSKETS")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	szHelp = ""
+	if event.getGenericParameter(1) <> 0 :
+		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_YIELD_GAIN", (-quantity,  gc.getYieldInfo(iYield).getChar(), nativecity.getNameKey()))
+	return szHelp
+
+getHelpNativeAttackCity = get_simple_help("TXT_KEY_EVENT_NATIVES_ATTACK_HELP")
+
+######## Initial Native Trade Event ###########
+
+def canTriggerInitialNativeTrade(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return False
+	city = player.getCity(kTriggeredData.iCityId)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	if player.isNone() or player2.isNone() :
+		return False
+	if city.isNone():
+		return False
+	# Read Parameter 1 from the first event and check if enough yield is stored in city
+	eEvent1 = gc.getInfoTypeForString("EVENT_INITIAL_TRADE_WITH_NATIVES_1")
+	event1 = gc.getEventInfo(eEvent1)
+	iYield = gc.getInfoTypeForString("YIELD_TRADE_GOODS")
+	quantity = event1.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
+		return False
+	return True
+
+def applyInitialNativeTrade(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	nativecity = player2.getCity(kTriggeredData.iOtherPlayerCityId)
+	iYield = gc.getInfoTypeForString("YIELD_TRADE_GOODS")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity:
+		return
+	city.changeYieldStored(iYield, quantity)
+	nativecity.changeYieldStored(iYield, -quantity)
+
+def getHelpInitialNativeTrade1(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	nativecity = player2.getCity(kTriggeredData.iOtherPlayerCityId)
+	iYield = gc.getInfoTypeForString("YIELD_TRADE_GOODS")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	szHelp = ""
+	if event.getGenericParameter(1) <> 0 :
+		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_YIELD_GAIN", (-quantity,  gc.getYieldInfo(iYield).getChar(), nativecity.getNameKey()))
+	return szHelp
+
+def canApplyInitialNativeTrade3(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	if player.isNone() or player2.isNone() :
+		return False
+	if city.isNone():
+		return False
+	# Read Parameter 1 from event and check if enough yield is stored in city
+	iYield = gc.getInfoTypeForString("YIELD_TRADE_GOODS")
+	quantity = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	quantity = quantity * Speed.getStoragePercent()/100
+	if city.getYieldStored(iYield) < -quantity :
 		return False
 	return True
 
@@ -8006,6 +8286,29 @@ getHelpMilitiaDefend = get_simple_help("TXT_KEY_EVENT_MILITIA_DEFENDS_MINE_HELP"
 
 getHelpOfficerAtFort = get_simple_help("TXT_KEY_EVENT_OFFICER_ARRIVAL_AT_FORT_HELP")
 
+######## Discovery Start Event  ###########
+
+getHelpDiscoveryConquistador = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_START_CONQUISTADOR_HELP")
+
+getHelpDiscoveryMissionary = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_START_MISSIONARY_HELP")
+
+getHelpDiscoveryTrader = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_START_SEASONED_TRADER_HELP")
+
+getHelpDiscoveryOxcart = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_START_Oxcart_HELP")
+
+getHelpDiscoveryMutiny = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_MUTINY_HELP")
+
+getHelpDiscoveryTreasureAttack = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_TREASURE_ATTACK_HELP")
+
+getHelpDiscoveryNoNewScout = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_NONEW_SCOUT_HELP")
+
+getHelpDiscoveryNewScout = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_NEW_SCOUT_HELP")
+
+getHelpDiscoveryFailedTraderChange = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_FALIED_TRADER_CHANGE_HELP")
+
+getHelpDiscoveryFailedMissionaryChange = get_simple_help("TXT_KEY_EVENT_DISCOVERY_EVENTS_FALIED_MISSIONARY_CHANGE_HELP")
+
+
 ######## Slave Hunter Offers Service ###########
 
 def checkRunawaySlavesOnAdjacentPlotOfCity(argsList): ### When you copy rename specically for your actuall EventTrigger
@@ -8130,8 +8433,6 @@ getHelpSlaveAndPlanationOwnerDaughter1 = get_simple_help("TXT_KEY_EVENT_SLAVE_AN
 ######## Indentured Servant Steals from Employer ###########
 getHelpIndenturedServantStealsFromEmployer = get_simple_help("TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1_HELP")
 
-
-
 ######## Liet Event Training ###########
 
 def checkCityAbovePopulation(numPop):
@@ -8154,3 +8455,163 @@ def checkCityAbovePopulation(numPop):
 
 canTriggerAtCityPopulationOf10 = checkCityAbovePopulation(10)
 canTriggerAtCityPopulationOf20 = checkCityAbovePopulation(20)
+
+###### Revolutionary Events Start Event ######
+ 
+def CheckNobleInCity(argsList):
+	ePlayer = argsList[1]
+	player = gc.getPlayer(ePlayer)
+
+	if not player.isPlayable():
+		return False
+
+	if player.isNative():
+		return False
+	
+	king = gc.getPlayer(player.getParent())
+	if not king.isEurope():
+		return False
+	
+	if player.isInRevolution():
+		return False
+
+	# you could add checks for several Units like this
+	iUnitType = CvUtil.findInfoTypeNum('UNIT_NOBLE')
+	iUnitsCurrent = countUnitsInCityForCityTrigger(argsList, iUnitType)
+	if iUnitsCurrent == 0:
+		return False
+
+	return True
+   
+def isExpiredRevolutionaryQuest(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	plot = gc.getMap().plot(kTriggeredData.iPlotX, kTriggeredData.iPlotY)
+	if (plot.getOwner() != kTriggeredData.ePlayer):
+		return True
+	if gc.getGame().getGameTurn() >= kTriggeredData.iTurn + event.getGenericParameter(1):
+		return True
+	return False
+
+def getHelpRevolutionaryQuest(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	city = player.getCity(kTriggeredData.iCityId)
+	UnitClass = gc.getUnitClassInfo(CvUtil.findInfoTypeNum('UNITCLASS_NOBLE'))
+	szHelp = localText.getText("TXT_KEY_EVENT_REVOLUTIONARY_START_EVENT_HELP", (UnitClass.getTextKey(), city.getNameKey(), event.getGenericParameter(1)))
+	return szHelp
+
+def applyKingMad(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	player.AI_changeAttitudeExtra(eking, event.getGenericParameter(3))
+	king.AI_changeAttitudeExtra(kTriggeredData.ePlayer, event.getGenericParameter(3))
+	if event.getGenericParameter(4) == 1 :
+		player.NBMOD_DecreaseMaxTaxRate()
+
+def getHelpKingMad(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	szHelp = localText.getText("TXT_KEY_EVENT_KING_MAD_HELP", ())
+	if (player.getTaxRate() + event.getGenericParameter(1) <= player.NBMOD_GetMaxTaxRate()) and event.getGenericParameter(1) <>0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_TAX_INCREASE", (event.getGenericParameter(1), player.getTaxRate() + event.getGenericParameter(1)))
+	if (player.getTaxRate() + event.getGenericParameter(1) > player.NBMOD_GetMaxTaxRate()) and event.getGenericParameter(1) <>0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAX_INCREASE", (GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()+GlobalDefines.INCREASE_MAX_TAX_RATE))
+	if event.getGenericParameter(2) <> 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_DECREASE", (event.getGenericParameter(2), king.getCivilizationAdjectiveKey()))
+	return szHelp
+
+def getHelpRevolution1(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	eking = player.getParent()
+	king = gc.getPlayer(eking)
+	szHelp = localText.getText("TXT_KEY_EVENT_REVOLUTION_1_HELP", ())
+	if (player.getTaxRate() + event.getGenericParameter(1) <= player.NBMOD_GetMaxTaxRate()) and event.getGenericParameter(1) <>0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_TAX_INCREASE", (event.getGenericParameter(1), player.getTaxRate() + event.getGenericParameter(1)))
+	if (player.getTaxRate() + event.getGenericParameter(1) > player.NBMOD_GetMaxTaxRate()) and event.getGenericParameter(1) <>0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_MAXTAX_INCREASE", (GlobalDefines.INCREASE_MAX_TAX_RATE, player.NBMOD_GetMaxTaxRate()+GlobalDefines.INCREASE_MAX_TAX_RATE))
+	if event.getGenericParameter(2) <> 0 :
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_DECREASE", (event.getGenericParameter(2), king.getCivilizationAdjectiveKey()))
+	return szHelp
+    
+######## Infantry Mutiny Event ###########
+    
+getHelpInfantryMutiny = get_simple_help("TXT_KEY_EVENT_INFANTRY_MUTINY_HELP")
+
+###### Liberty or Death Event ###### 
+def CheckJudgeInCity(argsList):
+	ePlayer = argsList[1]
+	player = gc.getPlayer(ePlayer)
+
+	if not player.isPlayable():
+		return False
+
+	# you could add checks for several Units like this
+	iUnitType = CvUtil.findInfoTypeNum('UNIT_JUDGE')
+	iUnitsCurrent = countUnitsInCityForCityTrigger(argsList, iUnitType)
+	if iUnitsCurrent == 0:
+		return False
+
+	return True
+
+def CheckInfantryTheRoyals(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if not player.isPlayable():
+		return False
+
+	if player.isNative():
+		return False
+	
+	king = gc.getPlayer(player.getParent())
+	if not king.isEurope():
+		return False
+	
+	if player.isInRevolution():
+		return False
+
+	iUnitType = CvUtil.findInfoTypeNum('UNIT_EUROPEAN_LINE_INFANTRY')
+	iUnitsCurrent = countUnits(argsList, iUnitType)
+	if not iUnitsCurrent > 5:
+		return False
+
+	city = player.getCity(kTriggeredData.iCityId)
+	unit = player.getUnit(kTriggeredData.iUnitId)
+	if city.isNone():
+		return False
+
+	if city.getX() == unit.getX() and city.getY() == unit.getY():
+		return True
+
+	return False
+
+######## Whaling Trip Quest ###########
+
+def isExpiredWhalingTrip(argsList):
+	eEvent = argsList[0]
+	event = gc.getEventInfo(eEvent)
+	kTriggeredData = argsList[1]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if gc.getGame().getGameTurn() >= kTriggeredData.iTurn + event.getGenericParameter(1):
+		return True
+	if not player.isPlayable():
+		return True
+	return False
+
+getHelpWhalingTripDone  = get_simple_help("TXT_KEY_EVENT_WHALING_TRIP_HELP")
+getHelpWhalingTripDone2  = get_simple_help("TXT_KEY_EVENT_WHALING_TRIP_DONE_PYTHON")

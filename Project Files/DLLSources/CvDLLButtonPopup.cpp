@@ -3821,13 +3821,13 @@ bool CvDLLButtonPopup::launchAchievementPopup(CvPopup* pPopup, CvPopupInfo &info
 // TAC - Goto Menu - koma13 - START
 bool CvDLLButtonPopup::launchGotoMenuPopup(CvPopup* pPopup, CvPopupInfo &info)
 {
-	PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
+	const PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
 	if (ePlayer == NO_PLAYER)
 	{
 		return false;
 	}
-	CvPlayer& kPlayer = GET_PLAYER(ePlayer);
-	CvUnit* pUnit = kPlayer.getUnit(info.getData1());
+	const CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+	CvUnit* const pUnit = kPlayer.getUnit(info.getData1());
 	if (pUnit == NULL)
 	{
 		return false;
@@ -3868,11 +3868,11 @@ bool CvDLLButtonPopup::launchGotoMenuPopup(CvPopup* pPopup, CvPopupInfo &info)
 	{
 		if (pUnit->plot() != pLoopCity->plot())
 		{
-			int iPathTurns = 0;
-			// if (pUnit->generatePath(pLoopCity->plot(), 0, true, &iPathTurns))
-			// Using MOVE_MAX_MOVES to prevent assert since this is just a check for reachability
-			if (pUnit->generatePath(pLoopCity->plot(), MOVE_MAX_MOVES, false, &iPathTurns))	// R&R, ray, improvment from vetiarvind
+			KmodPathFinder alt_finder;
+			alt_finder.SetSettings(pUnit->getGroup());
+			if (alt_finder.GeneratePath(pLoopCity->plot()))	// R&R, ray, improvment from vetiarvind
 			{
+				const int iPathTurns = alt_finder.GetPathTurns();
 				gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, L"  " + gDLL->getText("TXT_KEY_COMMAND_GOTO_MENU_SELECTION", pLoopCity->getNameKey(), iPathTurns), ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CITYSELECTION")->getPath(), pLoopCity->getID(), WIDGET_GENERAL, pUnit->getID(), -1);
 				bValid = true;
 			}

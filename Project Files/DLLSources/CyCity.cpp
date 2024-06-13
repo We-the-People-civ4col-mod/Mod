@@ -994,7 +994,12 @@ bool CyCity::isFreePromotion(int /*PromotionTypes*/ eIndex)
 
 bool CyCity::isHasRealBuilding(int /*BuildingTypes*/ iIndex)
 {
-	return m_pCity ? m_pCity->isHasRealBuilding((BuildingTypes) iIndex) : false;
+	BuildingTypes eBuilding = static_cast<BuildingTypes>(iIndex);
+	if (m_pCity && isInRange(eBuilding))
+	{
+		return m_pCity->isHasRealBuilding(eBuilding);
+	}
+	return false;
 }
 
 void CyCity::setHasRealBuilding(int /*BuildingTypes*/ iIndex, bool bNewValue)
@@ -1528,7 +1533,7 @@ void CyCity::addPopulationUnit(CyUnit* pUnit, int /*ProfessionTypes*/ eProfessio
 
 bool CyCity::removePopulationUnit(CyUnit* pUnit, bool bDelete, int /*ProfessionTypes*/ eProfession)
 {
-	return m_pCity ? m_pCity->removePopulationUnit(pUnit->getUnit(), bDelete, (ProfessionTypes) eProfession) : false;
+	return m_pCity ? m_pCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnit->getUnit(), bDelete, (ProfessionTypes) eProfession) : false;
 }
 
 bool CyCity::isExport(int /*YieldTypes*/ eYield) const

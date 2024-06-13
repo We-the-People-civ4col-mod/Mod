@@ -133,8 +133,6 @@ public:
 
 	int getFileIndex(const TCHAR* szTagName) const;
 
-	tinyxml2::XMLElement* getRoot(const TCHAR* szRootName, tinyxml2::XMLDocument *pDoc = NULL) const;
-
 	tinyxml2::XMLElement* getSchemaElement(const char *szType);
 
 	tinyxml2::XMLDocument* getDocument() const {return m_Document;}
@@ -144,20 +142,8 @@ public:
 	xmlFileContainer* getFileContainer(const TCHAR* szTag) const;
 	xmlFileContainer* getCurrentFileContainer() const;
 
-	// info interface
-	// returns NULL unless the requested tag/setting is found
-	const TCHAR* getInfo(const TCHAR* szTag, const TCHAR* szSetting) const;
-
-	// write settings for a tag
-	// except for szTag, use NULL whenever a setting is unused
-	void setInfo(bool bFileSpecific, const TCHAR* szTag, const TCHAR* szType, const TCHAR* szHelp, const TCHAR* szClass, bool bAllowTypeNone, bool bRemoteCreate, bool bRemoteCreatePrefix, const TCHAR* szButtonChild);
-
 	// get the first GameFont of group in question. Returns 0 if not found
 	int getGameFontGroupStart(int iGameFontGroup) const;
-
-	// get art string for the button icon
-	// Note: NULL return possible
-	const TCHAR* getButtonArt(const tinyxml2::XMLElement* pElement) const;
 
 	// get which combo subfile a string belongs to
 	int getComboFileIndex(int iFile, const TCHAR* szString) const;
@@ -254,7 +240,6 @@ private:
 	void cleanActiveFileRecursive(tinyxml2::XMLElement *pParent);
 
 	const TCHAR* getKeyInternal(int iKey, bool bShift, bool bControl, bool bAlt, bool bWide) const;
-	tinyxml2::XMLElement* gotoList(int iFile, tinyxml2::XMLDocument *pDoc = NULL);
 
 	void createEditorFiles() const;
 	std::vector<std::string> getFiles(const TCHAR* path, const TCHAR* prefix = "") const;
@@ -271,7 +256,6 @@ private:
 
 	int m_iActiveFile;
 	int m_iActiveModFile;
-	tinyxml2::XMLElement  *m_pFileSpecificInfo;
 	tinyxml2::XMLElement  *m_pFileInfoRoot;
 	tinyxml2::XMLDocument *m_Document;
 	tinyxml2::XMLDocument *m_GlobalTypes;
@@ -283,8 +267,6 @@ private:
 	TCHAR *m_modPath;
 	tinyxml2::XMLDocument *m_ModSettingsDoc;
 	std::vector<xmlFileContainer*> m_szFiles;
-
-	tinyxml2::XMLDocument *m_DocCommandFile;
 
 	int m_iMaxGameFontID;
 
@@ -310,7 +292,7 @@ class CyXMLCommandItem
 {
 public:
 	CyXMLCommandItem();
-	CyXMLCommandItem(CvWString szName, CvWString szPopupHelp, CvWString szFullText);
+	CyXMLCommandItem(CvString szName, CvString szPopupHelp, CvString szFullText);
 
 	const char* getName() const;
 	const char* getHelp() const;

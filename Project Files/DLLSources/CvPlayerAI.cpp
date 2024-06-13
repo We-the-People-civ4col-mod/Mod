@@ -717,7 +717,7 @@ void CvPlayerAI::AI_unitUpdate()
 							ProfessionTypes eDefaultProfession = GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
 							if (pRemoveUnit->canHaveProfession(eDefaultProfession, false))
 							{
-								pLoopCity->removePopulationUnit(pRemoveUnit, false, eDefaultProfession);
+								pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pRemoveUnit, false, eDefaultProfession);
 							}
 						}
 					}
@@ -824,6 +824,7 @@ void CvPlayerAI::AI_unitUpdate()
 						{
 							if (!pUnit->getGroup()->isBusy() && !pUnit->getGroup()->isCargoBusy())
 							{
+								FAssert(!isTempUnit(pUnit));
 								pUnit->AI_update();
 							}
 							else
@@ -5753,7 +5754,7 @@ int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMission
 
 				if( iMaxPathTurns >= 0 && (pUnit->plot() != NULL) && (pLoopSelectionGroup->plot() != NULL))
 				{
-					pLoopSelectionGroup->generatePath(pLoopSelectionGroup->plot(), pUnit->plot(), 0, false, &iPathTurns);
+					pLoopSelectionGroup->generatePath(pUnit->plot(), pLoopSelectionGroup->plot(), 0, false, &iPathTurns);
 					if( !(pLoopSelectionGroup->canAllMove()) )
 					{
 						iPathTurns++;
@@ -8032,7 +8033,7 @@ void CvPlayerAI::AI_doProfessions()
 
 											if (pUnit->canHaveProfession(eProfession, false) && (AI_professionSuitability(pUnit, eProfession, pLoopCity->plot()) > 100))
 											{
-												pLoopCity->removePopulationUnit(pUnit, false, eProfession);
+												pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, eProfession);
 												pUnit->AI_setUnitAIType(eUnitAI);
 												bDone = true;
 
@@ -8127,7 +8128,7 @@ void CvPlayerAI::AI_doProfessions()
 					}
 					if (pBestUnit != NULL)
 					{
-						pLoopCity->removePopulationUnit(pBestUnit, false, eProfession);
+						pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pBestUnit, false, eProfession);
 						pBestUnit->AI_setUnitAIType(eUnitAI);
 
 						if (gPlayerLogLevel >= 1)
@@ -8199,7 +8200,7 @@ void CvPlayerAI::AI_doProfessions()
 
 						if (pBestUnit != NULL)
 						{
-							pLoopCity->removePopulationUnit(pBestUnit, false, eProfession);
+							pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pBestUnit, false, eProfession);
 							pBestUnit->AI_setUnitAIType(UNITAI_DEFENSIVE);
 							if (gPlayerLogLevel >= 1) logBBAI(" Player (%S)'s City (%S) emits military Unit (%S)",
 								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameAndProfession().GetCString());
@@ -11939,7 +11940,7 @@ void CvPlayerAI::AI_swapUnitJobs(CvUnit* pUnitA, CvUnit* pUnitB)
 	}
 	else
 	{
-		pCity->removePopulationUnit(pUnitB, false, eProfession_A);
+		pCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnitB, false, eProfession_A);
 		pUnitB->AI_setUnitAIType(eUnitAI_A);
 		pUnitB->AI_setMovePriority(iMovePriorityA);
 	}
@@ -11950,7 +11951,7 @@ void CvPlayerAI::AI_swapUnitJobs(CvUnit* pUnitA, CvUnit* pUnitB)
 	}
 	else
 	{
-		pCity->removePopulationUnit(pUnitA, false, eProfession_B);
+		pCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnitA, false, eProfession_B);
 		pUnitA->AI_setMovePriority(iMovePriorityB);
 		pUnitA->AI_setUnitAIType(eUnitAI_B);
 	}

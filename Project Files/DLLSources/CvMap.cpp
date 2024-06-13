@@ -34,6 +34,7 @@
 #include "CvDLLFAStarIFaceBase.h"
 #include "CvDLLFAStarIFaceBase.h"
 #include "CvDLLPythonIFaceBase.h"
+#include "CvDLLInterfaceIFaceBase.h" // K-Mod
 
 #include "CvSavegame.h"
 
@@ -244,7 +245,8 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 		gDLL->callUpdater();
 		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
 		{
-			plotSoren(iX, iY)->init(iX, iY);
+			CvPlot& kPlot = *plotSoren(iX, iY);
+			kPlot.init(iX, iY);
 		}
 	}
 	calculateAreas();
@@ -354,13 +356,6 @@ void CvMap::setup()
 	kAStar.Initialize(&GC.getRouteFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, routeValid, NULL, NULL, NULL);
 	kAStar.Initialize(&GC.getBorderFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, borderValid, NULL, NULL, NULL);
 	kAStar.Initialize(&GC.getAreaFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, NULL, NULL, areaValid, NULL, joinArea, NULL);
-
-	// Erik: We have to create and initialize the coastal route pathfinder since
-	// the exe cannot do this for us
-	FAStar* coastalRouteFinder = gDLL->getFAStarIFace()->create();
-	FAssert(coastalRouteFinder);
-	GC.setCoastalRouteFinder(coastalRouteFinder);
-	kAStar.Initialize(&GC.getCoastalRouteFinder(), getGridWidthINLINE(), getGridHeightINLINE(), isWrapXINLINE(), isWrapYINLINE(), NULL, stepHeuristic, stepCost, coastalRouteValid, NULL, NULL, NULL);
 }
 
 
@@ -511,16 +506,58 @@ void CvMap::updateSight(bool bIncrement)
 	}
 }
 
+// K-Mod. This function is called when the unit selection is changed, or when a selected unit is promoted. (Or when UnitInfo_DIRTY_BIT is set.)
+// The purpose is to update which unit is displayed in the center of each plot.
+// The original implementation simply updated every plot on the map. This is a bad idea because it scales badly for big maps, and the update function on each plot can be expensive.
+// The new functionality attempts to only update plots that are in movement range of the selected group; with a very generous approximation for what might be in range.
 void CvMap::updateCenterUnit()
 {
-	PROFILE_FUNC();
+	/* original bts code
+	int iI;
 
-	for (int iI = 0; iI < numPlotsINLINE(); iI++)
+	for (iI = 0; iI < numPlotsINLINE(); iI++)
 	{
 		plotByIndexINLINE(iI)->updateCenterUnit();
+	} */
+	PROFILE_FUNC();
+	int iRange = -1;
+
+	CLLNode<IDInfo>* pSelectionNode = gDLL->getInterfaceIFace()->headSelectionListNode();
+	while (pSelectionNode)
+	{
+		const CvUnit* const pLoopUnit = ::getUnit(pSelectionNode->m_data);
+		pSelectionNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectionNode);
+
+		const int iStepCost = pLoopUnit->getDomainType() == DOMAIN_LAND ? KmodPathFinder::MinimumStepCost(pLoopUnit->baseMoves()) : GLOBAL_DEFINE_MOVE_DENOMINATOR;
+		const int iLoopRange = pLoopUnit->maxMoves() / iStepCost;
+		iRange = std::max(iRange, iLoopRange);
+		// Note: technically we only really need the minimum range; but I'm using the maximum range because I think it will produce more intuitive and useful information for the player.
+	}
+
+	if (iRange < 0 || iRange * iRange > numPlotsINLINE() / 2)
+	{
+		// update the whole map
+		for (int i = 0; i < numPlotsINLINE(); i++)
+		{
+			plotByIndexINLINE(i)->updateCenterUnit();
+		}
+	}
+	else
+	{
+		// only update within the range
+		const CvPlot& kCenterPlot = *gDLL->getInterfaceIFace()->getHeadSelectedUnit()->plot();
+		for (int x = -iRange; x <= iRange; x++)
+		{
+			for (int y = -iRange; y <= iRange; y++)
+			{
+				CvPlot* const pLoopPlot = plotXY(kCenterPlot.getX(), kCenterPlot.getY(), x, y);
+				if (pLoopPlot)
+					pLoopPlot->updateCenterUnit();
+			}
+		}
 	}
 }
-
+// K-Mod end
 
 void CvMap::updateWorkingCity()
 {
@@ -609,14 +646,14 @@ void CvMap::verifyUnitValidPlot()
 	}
 }
 
-CvPlot* CvMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTimeout)
+CvPlot* CvMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTimeout) const
 {
 	CvPlot* pPlot = NULL;
 	int iCount = 0;
 
 	while (iCount < iTimeout)
 	{
-		CvPlot* pTestPlot = plotSoren(GC.getGameINLINE().getSorenRandNum(getGridWidthINLINE(), "Rand Plot Width"), GC.getGameINLINE().getSorenRandNum(getGridHeightINLINE(), "Rand Plot Height"));
+		CvPlot* const pTestPlot = plotSoren(GC.getGameINLINE().getSorenRandNum(getGridWidthINLINE(), "Rand Plot Width"), GC.getGameINLINE().getSorenRandNum(getGridHeightINLINE(), "Rand Plot Height"));
 
 		FAssertMsg(pTestPlot != NULL, "TestPlot is not assigned a valid value");
 
@@ -1504,7 +1541,7 @@ void CvMap::calculateAreas()
 
 		if (pLoopPlot->getArea() == FFreeList::INVALID_INDEX)
 		{
-			CvArea*  pArea = addArea();
+			CvArea* pArea = addArea();
 			pArea->init(pArea->getID(), pLoopPlot->isWater());
 			const int iArea = pArea->getID();
 			calculateLandAreaBfs(pLoopPlot, iArea, visited);
@@ -1529,6 +1566,16 @@ char CvMap::getCityCatchmentRadius() const
 void CvMap::setCityCatchmentRadius(int iSetting)
 {
 	GC.setCityCatchmentRadius(iSetting);
+}
+
+bool CvMap::hasStream() const
+{
+	return m_bHasStream;
+}
+
+void CvMap::setStreamFlag()
+{
+	m_bHasStream = true;
 }
 
 // Private Functions...

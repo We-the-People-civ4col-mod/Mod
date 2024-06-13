@@ -1995,6 +1995,13 @@
 			<bInGeneric>1</bInGeneric>
 		</SoundData>
 		<SoundData>
+			<SoundID>SND_CITYCRIME</SoundID>
+			<Filename>Sounds/CityCrime</Filename>
+			<LoadType>DYNAMIC_RES</LoadType>
+			<bIsCompressed>1</bIsCompressed>
+			<bInGeneric>1</bInGeneric>
+		</SoundData>
+		<SoundData>
 			<SoundID>SND_CITYRAZE</SoundID>
 			<Filename>Sounds/CityCapture</Filename>
 			<LoadType>DYNAMIC_RES</LoadType>

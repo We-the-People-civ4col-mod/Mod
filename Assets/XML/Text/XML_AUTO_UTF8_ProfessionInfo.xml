@@ -3,7 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ARMED_BRAVE</Tag>
 		<English>
-			<Text>Armed Brave:Armed Braves</Text>
+			<Text>Armed Warrior:Armed Warriors</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
@@ -43,7 +43,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ARMED_BRAVE_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Armed braves[COLOR_REVERT] are deadly [LINK=CONCEPT_NATIVES]Native warriors[\LINK]. They are more than a match for any [LINK=CONCEPT_RIVAL_COLONIES]colonial[\LINK] fighter. Be sure you have superior numbers or terrain on your side before facing off with one of these units. Armed braves need to be equipped with [LINK=YIELD_MUSKETS]guns[\LINK], but they only need half as much of those as a [LINK=PROFESSION_MUSKETMAN]musketman[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Armed warriors[COLOR_REVERT] are deadly [LINK=CONCEPT_NATIVES]Native fighters[\LINK]. They are more than a match for any [LINK=CONCEPT_RIVAL_COLONIES]colonial[\LINK] fighter. Be sure you have superior numbers or terrain on your side before facing off with one of these units. Armed warriors need to be equipped with [LINK=YIELD_MUSKETS]guns[\LINK] and[LINK=YIELD_BLACK_POWDER]gunpowder[\LINK], but they only need half as much of those as a [LINK=PROFESSION_MUSKETMAN]colonial militia[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
 		<French>Les Braves armés sont des combattants indigènes particulièrement redoutables. Ils sont parfaitement capables de se mesurer à n'importe quel guerrier colonial. Assurez-vous d'être supérieur en nombre et en moyens avant d'affronter l'une de ces unités.</French>
 		<German>[COLOR_UNIT_TEXT]Bewaffnete Krieger[COLOR_REVERT] entsprechen in ihrer Kampfkraft etwa den Kolonialmilizen.[PARAGRAPH:2]Die Ureinwohnernationen können auf einem Siedlungsfeld ihre Einheit [COLOR_UNIT_TEXT]Indianer[COLOR_REVERT] in jeden ihrer Militärberufe stecken, unter der Voraussetzung, daß die für diesen Beruf notwendige einmalige Ausstattung mit Schusswaffen und/oder Pferden im Lager der Siedlung vorhanden ist. Diese Ausstattung können die Ureinwohnernationen nicht selber herstellen, sondern nur durch Handel oder durch Überfälle erwerben. Grundlage der Kampfstärke, der Fortbewegungspunkte und der Kampfboni der Truppen sind die entsprechenden Werte der Einheit Indianer. Diese Werte werden durch den Militärberuf modifiziert. Die Kampfboni, die die Einheit besitzt, kommen natürlich auch im jeweiligen Militärberuf zur Anwendung.</German>
 		<Italian>I guerrieri pellerossa armati letali guerrieri nativi. Sono ben più potenti di qualsiasi guerriero coloniale. Assicurati di avere un vantaggio numerico o territoriale, prima di affrontare una di queste unità.</Italian>
@@ -52,7 +52,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ARMED_MOUNTED_BRAVE</Tag>
 		<English>
-			<Text>Armed Mounted Brave:Armed Mounted Braves</Text>
+			<Text>Armed Mounted Warrior:Armed Mounted Warriors</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
@@ -92,7 +92,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ARMED_MOUNTED_BRAVE_STRATEGY</Tag>
-		<English>The [COLOR_HIGHLIGHT_TEXT]armed mounted brave[COLOR_REVERT] is the most powerful [LINK=CONCEPT_NATIVES]Native unit[\LINK]. These fast cavalry units are capable of devastating raids against unsuspecting [LINK=CONCEPT_RIVAL_COLONIES]European[\LINK] colonies. Armed mounted braves need [LINK=YIELD_HORSES]horses[\LINK] and [LINK=YIELD_MUSKETS]guns[\LINK] to be equipped, but they only need half as much of those as a [LINK=PROFESSION_DRAGOON]dragoon[\LINK] would.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
+		<English>The [COLOR_HIGHLIGHT_TEXT]armed mounted warrior[COLOR_REVERT] is the most powerful [LINK=CONCEPT_NATIVES]Native unit[\LINK]. These fast cavalry units are capable of devastating raids against unsuspecting [LINK=CONCEPT_RIVAL_COLONIES]European[\LINK] colonies. Armed mounted warriors need [LINK=YIELD_HORSES]horses[\LINK], [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] and [LINK=YIELD_MUSKETS]guns[\LINK] to be equipped, but they only need half as much of those as a [LINK=PROFESSION_DRAGOON]dragoon[\LINK] would.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
 		<French>Le [COLOR_UNIT_TEXT]Cavalier indigène armé[COLOR_REVERT] est la meilleure unité des peuples autochtones du Nouveau Monde. Ces cavaleries rapides et puissantes sont en mesure de mener sans prévenir des raids dévastateurs dans vos colonies.</French>
 		<German>[COLOR_UNIT_TEXT]Bewaffnete Berittene Krieger[COLOR_REVERT] sind die gefährlichsten Kämpfer der Ureinwohner. Sie entsprechen etwa den Dragonern.[PARAGRAPH:2]Die Ureinwohnernationen können auf einem Siedlungsfeld ihre Einheit [COLOR_UNIT_TEXT]Indianer[COLOR_REVERT] in jeden ihrer Militärberufe stecken, unter der Voraussetzung, daß die für diesen Beruf notwendige einmalige Ausstattung mit Schusswaffen und/oder Pferden im Lager der Siedlung vorhanden ist. Diese Ausstattung können die Ureinwohnernationen nicht selber herstellen, sondern nur durch Handel oder durch Überfälle erwerben. Grundlage der Kampfstärke, der Fortbewegungspunkte und der Kampfboni der Truppen sind die entsprechenden Werte der Einheit Indianer. Diese Werte werden durch den Militärberuf modifiziert. Die Kampfboni, die die Einheit besitzt, kommen natürlich auch im jeweiligen Militärberuf zur Anwendung.</German>
 		<Italian>Il guerriero pellerossa armato a cavallo è la migliore unità dei nativi. Questa unità di cavalleria veloce e potente è in grado di portare devastanti attacchi contro le ignare colonie europee.</Italian>
@@ -240,7 +240,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_BRAVE</Tag>
 		<English>
-			<Text>Brave:Braves</Text>
+			<Text>Warrior:Warriors</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
@@ -272,7 +272,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_BRAVE_PEDIA</Tag>
-		<English>Thanks to their intimate knowledge of their home terrain, braves were invaluable to any tribe, colony or sovereignty lucky enough to employ them. Braves were central to European explorations into the heart of the American continent, ensuring that the settlers had at least some idea of where they were going and how to speak to the locals.</English>
+		<English>Thanks to their intimate knowledge of their home terrain, Native warriors offered a military advantage when any tribe, colony or sovereignty employed them. Warriors were central to European explorations into the heart of the American continent, ensuring that the settlers had at least some idea of where they were going and how to speak to the locals.</English>
 		<French>Grâce à leur connaissance approfondie du terrain, les braves sont des soldats précieux pour toute tribu, colonie ou souveraineté ayant la chance de les avoir à son service. Les Européens vont employer ces braves lors de bon nombre d'explorations au coeur du continent américain pour avoir au moins une vague idée de l'endroit où ils se rendent et pouvoir communiquer avec les populations rencontrées.</French>
 		<German>Dank ihrer hervorragenden Kenntnisse ihres Heimatgebietes waren Krieger eine unschätzbare Hilfe für jeden Stamm, aber auch für jede Kolonie und deren Anführer, wenn diese das Glück hatten, sie in ihren eigenen Reihen zu haben. Krieger wurden bei vielen europäischen Erkundungen des amerikanischen Hinterlandes eingesetzt, damit die Weißen wenigstens eine gewisse Vorstellung davon hatten, wohin sie gingen und wie man sich mit den Einheimischen verständigte.</German>
 		<Italian>Grazie alla profonda conoscenza del proprio territorio, i guerrieri pellerossa erano inestimabili per ogni tribù, colonia o governante abbastanza fortunato da poterle impiegare. I guerrieri vennero utilizzati in molte esplorazioni europee nel cuore del continente americano, facendo in modo che gli uomini bianchi avessero almeno una minima idea di dove stessero andando e di come parlare con i nativi.</Italian>
@@ -280,7 +280,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_BRAVE_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Braves[COLOR_REVERT] are the basic [LINK=CONCEPT_NATIVES]Native warrior[\LINK] profession. Though they are more formidable than the average colonist, a military unit should have little trouble against them.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Warriors[COLOR_REVERT] are the basic [LINK=CONCEPT_NATIVES]Native combat[\LINK] profession. Though they are more formidable than the average colonist, a military unit should have little trouble against them.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
 		<French>Les Braves constituent la profession de base des guerriers Amérindiens. Même s'ils sont plus puissants que les colons traditionnels, les Soldats, Dragons ou Canons ne devraient avoir aucune peine à combattre ces ennemis.</French>
 		<German>Der Militärberuf des [COLOR_UNIT_TEXT]Kriegers[COLOR_REVERT] ist der kampfschwächste Beruf der Ureinwohner.[PARAGRAPH:2]Die Ureinwohnernationen können auf einem Siedlungsfeld ihre Einheit [COLOR_UNIT_TEXT]Indianer[COLOR_REVERT] in jeden ihrer Militärberufe stecken, unter der Voraussetzung, daß die für diesen Beruf notwendige einmalige Ausstattung mit Schusswaffen und/oder Pferden im Lager der Siedlung vorhanden ist. Diese Ausstattung können die Ureinwohnernationen nicht selber herstellen, sondern nur durch Handel oder durch Überfälle erwerben. Grundlage der Kampfstärke, der Fortbewegungspunkte und der Kampfboni der Truppen sind die entsprechenden Werte der Einheit Indianer. Diese Werte werden durch den Militärberuf modifiziert. Die Kampfboni, die die Einheit besitzt, kommen natürlich auch im jeweiligen Militärberuf zur Anwendung.</German>
 		<Italian>I guerrieri pellerossa rappresentano la più elementare unità bellica disponibile per i nativi. Sono più forti dei coloni ma rappresentano un problema di poco conto per soldati, dragoni e cannoni.</Italian>
@@ -783,11 +783,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_COLONIAL_MILITIA_STRATEGY</Tag>
-		<English>You can create [COLOR_UNIT_TEXT]colonial militia[COLOR_REVERT] from the settlement screen or in [LINK=CONCEPT_EUROPE]Europe[\LINK], if you have enough [LINK=YIELD_MUSKETS]guns[\LINK] to equip them. They are inexpensive but slow defensive troops, best used for defending [LINK=CONCEPT_SETTLEMENTS]settlements[\LINK] or fortifying in terrain with defense bonuses. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_INFANTRY]veteran infantry soldier[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
+		<English>You can create [COLOR_UNIT_TEXT]colonial militia[COLOR_REVERT] from the settlement screen or in [LINK=CONCEPT_EUROPE]Europe[\LINK], if you have enough [LINK=YIELD_MUSKETS]guns[\LINK] and [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] to equip them. They are inexpensive but slow defensive troops, best used for defending [LINK=CONCEPT_SETTLEMENTS]settlements[\LINK] or fortifying in terrain with defense bonuses. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_INFANTRY]veteran infantry soldier[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
 		<French>Vous pouvez créer des [COLOR_UNIT_TEXT]Soldats[COLOR_REVERT] à partir de l'écran de colonisation. Tout ce dont vous avez besoin, c'est d'un colon disponible et du nombre d'armes requis. Vous n'avez plus qu'à cliquer et voilà ! Vous êtes désormais en mesure de vous défendre.</French>
 		<German>Kolonialmilizen, Dragoner, schwere Kavallerie, Leichte und Schwere Artillerien sind die Standardtruppen der Kolonien. Die [COLOR_UNIT_TEXT]Kolonialmilizen[COLOR_REVERT] sind preiswerte und langsame Defensivtruppen, die man am besten einsetzt, um sich in Siedlungen oder im Gelände zu verschanzen. Die [COLOR_UNIT_TEXT]Dragoner[COLOR_REVERT] sind durchschnittlich teure und schnelle Angriffstruppen, die besonders für Überfallkommandos, für Angriffe auf Artillerie und zum Sammeln von Erfahrungspunkten geeignet sind. Die [COLOR_UNIT_TEXT]schwere Kavallerie[COLOR_REVERT] sind eine teure und langsame Angriffstruppe, die nützlich sind, um Feinde zu attackieren, die sich im offenen Gelände verschanzt haben. [COLOR_UNIT_TEXT]Leichte Artillerien[COLOR_REVERT] sind schnell zu bauen und können Siedlungen einen passablen Schutz bieten, wenn keine Kolonialmilizen zur Verfügung stehen. Die [COLOR_UNIT_TEXT]Schwere Artillerie[COLOR_REVERT] setzt man am besten ein, um die Verteidigungsboni feindlicher Städte durch Bombardement zu schwächen und anschließend die Garnison anzugreifen.[PARAGRAPH:2]Leichte Artillerien und Schwere Artillerien können gebaut oder in Europa gekauft werden. Kolonialmilizen, Dragoner und schwere Kavallerie werden dagegen im Siedlungsbildschirm rekrutiert. Vorausgesetzt, man hat die nötige Menge an Schusswaffen, Pferden und Eisenwaren zur Verfügung, muss man bloß einem Bürger (einer "Einheit") den entsprechenden militärischen "Beruf" zuweisen. Ausnahmen sind die Konvertierten Ureinwohner und die Großen Generäle, die nicht bewaffnet werden können.[PARAGRAPH:2]Grundlage der Kampfstärke, der Fortbewegungspunkte und der Kampfboni der Truppen sind die entsprechenden Werte der Einheiten. Diese Werte werden durch den Militärberuf modifiziert.</German>
 		<Italian>Puoi creare i soldati nella schermata dell'insediamento. Tutto ciò di cui hai bisogno sono un colono disponibile e il necessario numero di armi. Poi premi un tasto e VOILA! Autodifesa pronta per essere usata.</Italian>
 		<Spanish>Desde la pantalla del asentamiento podéis crear Soldados. Todo lo que necesitáis es tener un Colono disponible y el número de Mosquetes necesario. Pulsáis un botón y, ¡tachán!... La defensa propia al alcance de vuestra mano.</Spanish>
+		<Russian>Вы можете создать [COLOR_UNIT_TEXT]колониальное ополчение[COLOR_REVERT] на экране поселений, если у вас достаточно [LINK=YIELD_MUSKETS]мушкетов[\LINK] и [LINK=YIELD_BLACK_POWDER]пороха[\LINK], чтобы экипировать их. Или сделать это в [LINK=CONCEPT_EUROPE]Европе[\LINK], потратив деньги, соответствующие стоимости необходимого снаряжения. Это недорогие, но медленные защитные войска, которые лучше всего использовать для защиты [LINK=CONCEPT_SETTLEMENTS]поселений[\LINK] или местности с помощью бонусов защиты некоторых клеток. Если обычный колонист достаточно долго участвует в сражениях, в конечном итоге он может стать [LINK=UNIT_VETERAN_INFANTRY]ветераном пехоты[\LINK].[PARAGRAPH:2]Для получения дополнительной информации смотрите концепцию [LINK=CONCEPT_MILITARY_UNITS]Военные отряды[\LINK].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_COLONIST</Tag>
@@ -1018,7 +1019,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_DRAGOON_STRATEGY</Tag>
-		<English>You can create [COLOR_HIGHLIGHT_TEXT]dragoons[COLOR_REVERT] from the settlement screen, if you have enough [LINK=YIELD_MUSKETS]guns[\LINK] and [LINK=YIELD_HORSES]horses[\LINK] to equip them, or you can buy them in [LINK=CONCEPT_EUROPE]Europe[\LINK]. At a moderate cost you get assault troops which are especially useful for ambushes, for attacks against [LINK=UNIT_HEAVY_ARTILLERY]heavy artillery[\LINK] and for gaining experience quickly, since dragoons always have the [LINK=PROMOTION_LEADER]Leadership I[\LINK] promotion. If an unspecialized colonist practices this profession long enough, he may become a [LINK=UNIT_VETERAN_DRAGOON]veteran dragoon[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
+		<English>You can create [COLOR_HIGHLIGHT_TEXT]dragoons[COLOR_REVERT] from the settlement screen, if you have enough [LINK=YIELD_MUSKETS]guns[\LINK], [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] and [LINK=YIELD_HORSES]horses[\LINK] to equip them, or you can buy them in [LINK=CONCEPT_EUROPE]Europe[\LINK]. At a moderate cost you get assault troops which are especially useful for ambushes, for attacks against [LINK=UNIT_HEAVY_ARTILLERY]heavy artillery[\LINK] and for gaining experience quickly, since dragoons always have the [LINK=PROMOTION_LEADER]Leadership I[\LINK] promotion. If an unspecialized colonist practices this profession long enough, he may become a [LINK=UNIT_VETERAN_DRAGOON]veteran dragoon[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
 		<French>Le [COLOR_UNIT_TEXT]Dragon[COLOR_REVERT] combine avec élégance vitesse et puissance, ce qui en fait l'une des unités les plus redoutées du champ de bataille colonial. Même le terrible Canon tremble devant lui, puisque le Dragon reçoit un sympathique bonus lorsqu'il s'attaque à lui ! Pour pouvoir assigner la profession de Dragon à une unité, vous devez d'abord disposer du nombre requis de chevaux et d'armes à feu.</French>
 		<German>[COLOR_UNIT_TEXT]Dragoner[COLOR_REVERT] sind eine durchschnittlich teure und schnelle Angriffstruppe, die besonders für Überfallkommandos und für Angriffe auf die [LINK=UNIT_HEAVY_ARTILLERY]Schwere und Königliche Artillerie[\LINK] geeignet ist. Einheiten sammeln als Dragoner doppelt so schnell Erfahrungspunkte. Sie behalten ihre Beförderungen bzw. ihre überschüssigen Erfahrungspunkte auch dann, wenn sie später in einem anderen Militärberuf eingesetzt werden. Dragoner haben zudem die Chance, sich bei einer drohenden Niederlage aus einem Gefecht zurückzuziehen, vorausgesetzt, sie haben noch einen Bewegungspunkt übrig.[PARAGRAPH:2]Die Kolonienationen können Dragoner im Siedlungsbildschirm rekrutieren. Vorausgesetzt, man hat die nötige Menge an Schusswaffen und Pferden zur Verfügung, muss man bloß einem Bürger diesen militärischen Beruf zuweisen.[PARAGRAPH:2]Die Dragoner des Königs sind den Dragonern der Kolonienationen insofern überlegen, als dass die Einheit, die diesen Militärberuf ausübt, stärker ist: Der Königliche Offizier verfügt automatisch über die Beförderungen [LINK=PROMOTION_VETERAN1]Veteran I[\LINK] und [LINK=PROMOTION_VETERAN2]Veteran II[\LINK] (und damit insgesamt einem Bonus von 20% auf die Kampfstärke) und besitzt zudem einen Bonus von 50% beim Angriff auf Siedlungen.</German>
 		<Italian>I dragoni sono la combinazione perfetta di forza e velocità, che li rende una delle unità più temute sui campi di battaglia coloniali. Anche i possenti cannoni temono il dragone, perché questo ottiene un bonus quando li attacca. Per poter assegnare un'unità alla professione di dragone devi avere a disposizione armi e cavalli.</Italian>
@@ -1683,15 +1684,17 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_HEAVY_CAVALRY_PEDIA</Tag>
-		<English>TXT_KEY_PROFESSION_SOLDIER_PEDIA</English>
+		<English>Heavy cavalry were the colonial equivalent of charging knights in medieval times. They used height, speed, and size to dominate opponents on foot. They also had a powerful psychological impact just before physical impact.</English>
+		<Russian>Тяжёлая кавалерия — род ударных конных войск, в сухопутных войсках вооружённых сил многих государств мира ещё с античных времён. Единственный чёткий критерий отличия от других типов кавалерии — вес коней, значительно превышавший оный у средней, лёгкой и драгунской кавалерий. Благодаря весу своих коней тяжёлая кавалерия одной своей атакой могла смять вражескую пехоту или лёгкую конницу.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_HEAVY_CAVALRY_STRATEGY</Tag>
-		<English>You can create [COLOR_HIGHLIGHT_TEXT]heavy cavalry[COLOR_REVERT] from the settlement screen if you have enough [LINK=YIELD_BLADES]blades[\LINK], [LINK=YIELD_MUSKETS]guns[\LINK] and [LINK=YIELD_HORSES]horses[\LINK] to equip them, or buy them in [LINK=CONCEPT_EUROPE]Europe[\LINK]. They are among the strongest units you can have in this game, and can be used in any land-based war you find yourself embroiled in. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_CAVALRY]veteran cavalryman[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
+		<English>You can create [COLOR_HIGHLIGHT_TEXT]heavy cavalry[COLOR_REVERT] from the settlement screen if you have enough [LINK=YIELD_BLADES]blades[\LINK] and [LINK=YIELD_HORSES]horses[\LINK] to equip them, or buy them in [LINK=CONCEPT_EUROPE]Europe[\LINK]. They are among the strongest units you can have in this game, and can be used in any land-based war you find yourself embroiled in. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_CAVALRY]veteran cavalryman[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
 		<French>Le [COLOR_UNIT_TEXT]cavalerie[COLOR_REVERT] est encore plus puissant que le dragon, mais il est plus lent. Pour pouvoir assigner la profession de cavalerie à une unité, vous devez d'abord disposer du nombre requis de chevaux, d'armes à feu et d'outils.</French>
 		<German>Kolonialmilizen, Dragoner, schwere Kavallerie, Leichte Artillerie und Schwere Artillerie sind die Standardtruppen der Kolonien. Die [COLOR_UNIT_TEXT]Kolonialmilizen[COLOR_REVERT] sind preiswerte und langsame Defensivtruppen, die man am besten einsetzt, um sich in Siedlungen oder im Gelände zu verschanzen. Die [COLOR_UNIT_TEXT]Dragoner[COLOR_REVERT] sind durchschnittlich teure und schnelle Angriffstruppen, die besonders für Überfalle, für Angriffe auf Artillerie und zum Sammeln von Erfahrungspunkten geeignet sind. Die [COLOR_UNIT_TEXT]schwere Kavallerie[COLOR_REVERT] ist eine teure und langsame Angriffstruppe, die nützlich ist, um Feinde zu attackieren, die sich im offenen Gelände verschanzt haben. [COLOR_UNIT_TEXT]Leichte Artillerie[COLOR_REVERT] ist schnell zu bauen und kann Siedlungen einen passablen Schutz bieten, wenn keine Kolonialmilizen zur Verfügung stehen. Die [COLOR_UNIT_TEXT]Schwere Artillerie[COLOR_REVERT] setzt man am besten ein, um die Verteidigungsboni feindlicher Städte durch Bombardement zu schwächen und anschließend die Garnison anzugreifen.[PARAGRAPH:2]Leichte Artillerie und Schwere Artillerie können gebaut oder in Europa gekauft werden. Kolonialmilizen, Dragoner und schwere Kavallerie werden dagegen im Siedlungsbildschirm rekrutiert. Vorausgesetzt, man hat die nötige Menge an Schusswaffen, Pferden und Eisenwaren zur Verfügung, muss man bloß einem Bürger (einer "Einheit") den entsprechenden militärischen "Beruf" zuweisen. Ausnahmen sind die Konvertierten Ureinwohner und die Großen Generäle, die nicht bewaffnet werden können.[PARAGRAPH:2]Grundlage der Kampfstärke, der Fortbewegungspunkte und der Kampfboni der Truppen sind die entsprechenden Werte der Einheiten. Diese Werte werden durch den Militärberuf modifiziert.</German>
 		<Italian>Puoi creare i soldati nella schermata dell'insediamento. Tutto ciò di cui hai bisogno sono un colono disponibile e il necessario numero di armi. Poi premi un tasto e VOILA! Autodifesa pronta per essere usata.</Italian>
 		<Spanish>Desde la pantalla del asentamiento podéis crear Soldados. Todo lo que necesitáis es tener un Colono disponible y el número de Mosquetes necesario. Pulsáis un botón y, ¡tachán!... La defensa propia al alcance de vuestra mano.</Spanish>
+		<Russian>Вы можете создать [COLOR_HIGHLIGHT_TEXT]тяжёлую кавалерию[COLOR_REVERT] на экране поселения, если у вас достаточно [LINK=YIELD_BLADES]клинков[\LINK] и [LINK=YIELD_HORSES]лошадей[\LINK] для их оснащения, или купить её в [LINK=CONCEPT_EUROPE]Европе[\LINK]. Это один из самых сильных юнитов, которые вы можете иметь в этой игре, и их можно использовать в любой наземной войне, в которую вы будете втянуты. Если обычный колонист достаточно долго участвует в сражениях, в конечном итоге он может стать [LINK=UNIT_VETERAN_CAVALRY]ветераном кавалерии[\LINK].[PARAGRAPH:2]Для получения дополнительной информации смотрите концепцию [LINK=CONCEPT_MILITARY_UNITS]Военные отряды[\LINK].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_HEMP_PLANTER</Tag>
@@ -1863,10 +1866,14 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_LINE_INFANTRY_PEDIA</Tag>
+		<English>Professional musketeers and riflemen, trained and disciplined, dominated European wars from the sixteenth century onward. In the New World, line infantry quickly captured settlements though in the wilderness they were vulnerable to guerrilla warfare.[NEWLINE]To win against infantry firing in ranks Native Nations needed overwhelming numerical superiority. In the interior of the continent they often had that, and the support of the people. The Comanche wiped out the Spanish and killed any new arrivals for over a century. Ultimately Spain sold land it no longer controlled to the United States.</English>
+		<Russian>Профессиональные мушкетёры и стрелки, обученные и дисциплинированные, доминировали в европейских войнах, начиная с шестнадцатого века. В Новом Свете линейная пехота быстро захватывала поселения, хотя в дикой местности они были уязвимы для партизанской войны.[NEWLINE]Чтобы победить такую пехоту, коренным народам Америки требовалось подавляющее численное превосходство. И во внутренних частях континента они часто пользовались этим. Команчи истребляли испанцев и многих пришельцев в их земли на протяжении столетий. В конечном итоге Испания продала землю, которую она не могла контролировать, Соединенным Штатам.</Russian>
 		<English>TXT_KEY_PROFESSION_SOLDIER_PEDIA</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_LINE_INFANTRY_STRATEGY</Tag>
+		<English>You can create [COLOR_UNIT_TEXT]line infantry[COLOR_REVERT] from the settlement screen or in [LINK=CONCEPT_EUROPE]Europe[\LINK] if you have enough [LINK=YIELD_MUSKETS]guns[\LINK], [LINK=YIELD_BLADES]blades[\LINK]  and [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] to equip them. They are powerful offensive troops, capable of attacking [LINK=CONCEPT_SETTLEMENTS]settlements[\LINK] or fortifying in terrain with defense bonuses. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_INFANTRY]veteran infantry soldier[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
+		<Russian>Вы можете создать [COLOR_UNIT_TEXT]линейную пехоту[COLOR_REVERT] на экране поселения или в [LINK=CONCEPT_EUROPE]Европе[\LINK], если у вас достаточно [LINK=YIELD_MUSKETS]мушкетов[\LINK], [LINK=YIELD_BLADES]клинков[\LINK] и [LINK=YIELD_BLACK_POWDER]пороха[\LINK] для их оснащения. Это мощные наступательные войска, способные атаковать [LINK=CONCEPT_SETTLEMENTS]поселения[\LINK]. Если обычный колонист достаточно долго участвует в сражениях, в конечном итоге он может стать [LINK=UNIT_VETERAN_INFANTRY]ветераном пехоты[\LINK].[PARAGRAPH:2]Для получения дополнительной информации смотрите концепцию [LINK=CONCEPT_MILITARY_UNITS]Военные отряды[\LINK].</Russian>
 		<English>TXT_KEY_PROFESSION_SOLDIER_STRATEGY</English>
 	</TEXT>
 	<TEXT>
@@ -1970,7 +1977,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_MOUNTED_BRAVE</Tag>
 		<English>
-			<Text>Mounted Brave:Mounted Braves</Text>
+			<Text>Mounted Warrior:Mounted Warriors</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
@@ -2010,7 +2017,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_MOUNTED_BRAVE_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Mounted braves[COLOR_REVERT] are quick and deadly [LINK=CONCEPT_NATIVES]Native warriors[\LINK]. Only properly equipped military units can face these fighters and hope to win. Mounted braves need [LINK=YIELD_HORSES]horses[\LINK] to be equipped, but only half as many horses as a [LINK=PROFESSION_SCOUT]scout[\LINK] would.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Mounted warriors[COLOR_REVERT] are quick and deadly [LINK=CONCEPT_NATIVES]Native combatants[\LINK]. Only properly equipped military units can face these fighters and hope to win. Mounted warriors need [LINK=YIELD_HORSES]horses[\LINK] to be equipped, but only half as many horses as a [LINK=PROFESSION_SCOUT]scout[\LINK] would.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
 		<French>Les [COLOR_UNIT_TEXT]Cavaliers indigènes[COLOR_REVERT] sont des guerriers rapides et redoutables. Seuls les Soldats, les Dragons ou les Canons peuvent affronter ces unités et espérer avoir le dessus.</French>
 		<German>[COLOR_UNIT_TEXT]Berittene Krieger[COLOR_REVERT] sind schnelle, aber wenig starke Kämpfer.[PARAGRAPH:2]Die Ureinwohnernationen können auf einem Siedlungsfeld ihre Einheit [COLOR_UNIT_TEXT]Indianer[COLOR_REVERT] in jeden ihrer Militärberufe stecken, unter der Voraussetzung, daß die für diesen Beruf notwendige einmalige Ausstattung mit Schusswaffen und/oder Pferden im Lager der Siedlung vorhanden ist. Diese Ausstattung können die Ureinwohnernationen nicht selber herstellen, sondern nur durch Handel oder durch Überfälle erwerben. Grundlage der Kampfstärke, der Fortbewegungspunkte und der Kampfboni der Truppen sind die entsprechenden Werte der Einheit Indianer. Diese Werte werden durch den Militärberuf modifiziert. Die Kampfboni, die die Einheit besitzt, kommen natürlich auch im jeweiligen Militärberuf zur Anwendung.</German>
 		<Italian>I guerrieri pellerossa a cavallo sono nativi marziali rapidi e letali. Solo soldati, dragoni o cannoni possono affrontare queste unità sperando di vincere.</Italian>
@@ -2430,7 +2437,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_CAVALRY_PEDIA</Tag>
-		<English>TXT_KEY_PROFESSION_SOLDIER_PEDIA</English>
+		<English>Heavy cavalry were the colonial equivalent of charging knights in medieval times. They used height, speed, and size to dominate opponents on foot. They also had a powerful psychological impact just before physical impact.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_CAVALRY_STRATEGY</Tag>
@@ -2471,7 +2478,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_DRAGOON_PEDIA</Tag>
-		<English>TXT_KEY_PROFESSION_DRAGOON_PEDIA</English>
+		<English>Dragoons are soldiers trained to shoot from horseback. The ability to fire a musket with any semblance of accuracy while galloping across a battlefield required intense training and the dragoons were rightly respected for their mastery of this skill. Nearly every power in Europe fielded dragoons - Napoleon Bonaparte was especially fond of their combination of force and maneuverability.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_DRAGOON_STRATEGY</Tag>
@@ -2512,7 +2519,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_LIGHT_INFANTRY_PEDIA</Tag>
-		<English>TXT_KEY_PROFESSION_SOLDIER_PEDIA</English>
+		<English>Professional musketeers and riflemen, trained and disciplined, dominated European wars from the sixteenth century onward. Light infantry could move quickly though in the wilderness they struggled to adapt to guerrilla warfare.[NEWLINE]Native Nations soon became skilled with captured European weapons and horses. The Comanche wiped out the Spanish and killed any new arrivals for over a century. Ultimately Spain sold land it no longer controlled to the United States.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_LIGHT_INFANTRY_STRATEGY</Tag>
@@ -2553,7 +2560,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_LINE_INFANTRY_PEDIA</Tag>
-		<English>TXT_KEY_PROFESSION_SOLDIER_PEDIA</English>
+		<English>Professional musketeers and riflemen, trained and disciplined, dominated European wars from the sixteenth century onward. In the New World, line infantry quickly captured settlements though in the wilderness they were vulnerable to guerrilla warfare.[NEWLINE]To win against infantry firing in ranks Native Nations needed overwhelming numerical superiority. In the interior of the continent they often had that, and the support of the people. The Comanche wiped out the Spanish and killed any new arrivals for over a century. Ultimately Spain sold land it no longer controlled to the United States.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_LINE_INFANTRY_STRATEGY</Tag>
@@ -2736,7 +2743,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_SCOUT_STRATEGY</Tag>
-		<English>You may assign a colonist to take up the [COLOR_HIGHLIGHT_TEXT]scout[COLOR_REVERT] profession from the settlement screen. Scouts are fast travelers, able to [LINK=CONCEPT_VISIBILITY]explore[\LINK] open territory with ease. You must have enough [LINK=YIELD_HORSES]horses[\LINK] to create a scout unit. [LINK=UNIT_SCOUT]Seasoned scouts[\LINK] are masters of scouting, and get better results when exploring [LINK=IMPROVEMENT_GOODY_HUT]burial grounds[\LINK] or [LINK=IMPROVEMENT_GOODY_HUT2]ancient ruins[\LINK], or when discovering [LINK=CONCEPT_NATIVES]Native villages[\LINK].</English>
+		<English>You may assign a colonist to take up the [COLOR_HIGHLIGHT_TEXT]scout[COLOR_REVERT] profession from the settlement screen. Scouts are fast travelers, able to [LINK=CONCEPT_VISIBILITY]explore[\LINK] open territory with ease. You must have enough [LINK=YIELD_HORSES]horses[\LINK] and [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] to create a scout unit. [LINK=UNIT_SCOUT]Seasoned scouts[\LINK] are masters of scouting, and get better results when exploring [LINK=IMPROVEMENT_GOODY_HUT]burial grounds[\LINK] or [LINK=IMPROVEMENT_GOODY_HUT2]ancient ruins[\LINK], or when discovering [LINK=CONCEPT_NATIVES]Native villages[\LINK].</English>
 		<French>Vous pouvez assigner un colon à la profession d'Eclaireur à partir de l'écran de colonie. Les Eclaireurs sont très rapides et capables d'explorer des territoires vierges sans la moindre difficulté. Vous devez cependant disposer du nombre de chevaux requis avant de pouvoir créer une unité d'Eclaireur.</French>
 		<German>Mit [COLOR_UNIT_TEXT]Spähern[COLOR_REVERT] kann man die Landfelder der Karte erkunden. Einen Späher erhält man, indem man einer beliebigen menschlichen Einheit in einer Siedlung den Beruf des Spähers zuweist. Man muss dafür 50 Pferde im Lagerhaus der Siedlung zur Verfügung haben. Alternativ dazu kann man einem beliebigen Bürger, der im europäischen Heimathafen auf die Überfahrt in die Neue Welt wartet, per Doppelklick den Beruf Späher zuweisen. Die dafür notwendigen Pferde werden dabei automatisch in Europa gekauft.[PARAGRAPH:2]Der Späher ist der einzige zivile Beruf, mit dem der Angriff auf eine feindliche Einheit möglich ist. Allerdings ist die Kampfkraft von Spähern vergleichsweise gering.[PARAGRAPH:2][COLOR_UNIT_TEXT]Routinierte Späher[COLOR_REVERT] sind die Spezialisten für diesen Beruf. Bei Häuptlingsgeschenken und der Plünderung von Antiken Ruinen und Grabstätten erzielen sie bessere Ergebnisse. Routinierte Späher bekommt man in Europa, durch die Ausbildung in Schulen und manchen Indianerdörfern oder zufällig beim Erstkontakt in einem Indianersiedlung.</German>
 		<Italian>Puoi assegnare a un colono la professione di scout dalla schermata dell'insediamento. Gli scout si spostano rapidamente e sono in grado di esplorare il territorio con facilità. Prima di poter creare una simile unità devi però avere il necessario numero di cavalli.</Italian>
@@ -3273,7 +3280,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_VALUABLE_WOOD_LUMBERJACK_PEDIA</Tag>
-		<English>TXT_KEY_UNIT_LUMBERJACK_PEDIA</English>
+		<English>For the colonists of North America, lumber was a free resource. Exotic wood was especially valued for its beauty, strength and durability. Finishing carpenters demanded it for their best work. Skilled lumberjacks were able to fell trees with a rapidity that greatly outdistanced the amateurs. They were lumberjacks and they were okay.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_VALUABLE_WOOD_LUMBERJACK_STRATEGY</Tag>
@@ -3365,7 +3372,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_WEAVER_WOOL_PEDIA</Tag>
-		<English>TXT_KEY_UNIT_WEAVER_PEDIA</English>
+		<English>Weaving is the process by which raw wool or cotton is turned into cloth.[NEWLINE]This is a slow, arduous and difficult task at best but, in the hands of a skilled weaver, the work can be quick and artful, creating a product far superior to anything a mere amateur could create.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_WEAVER_WOOL_STRATEGY</Tag>
@@ -3539,7 +3546,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_TOWN_GUARD_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Town guards[COLOR_REVERT] are cheap military units who serve as a first line of defense when a colony is under attack. These soldiers do not have guns, but use [LINK=YIELD_BLADES]blades[\LINK] as their weapons of choice. Due to the long halberds they wield, they are particularly effective in fighting cavalry units. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_TOWN_GUARD]veteran soldier[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
+		<English>[COLOR_UNIT_TEXT]Town guards[COLOR_REVERT] are cheap military units who serve as a first line of defense when a colony is under attack. These soldiers do not have guns, but use [LINK=YIELD_BLADES]blades[\LINK] as their weapons of choice. They also need [LINK=YIELD_BAKERY_GOODS]provisions[\LINK].[NEWLINE] Due to the long halberds they wield, they are particularly effective in fighting cavalry units. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_TOWN_GUARD]veteran soldier[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
 		<French>Les [COLOR_UNIT_TEXT]piquiers de garde[COLOR_REVERT] sont des unités militaires peu coûteuses qui peuvent être équipées pour servir de première ligne de défense lorsqu'une colonie est attaquée. Ils ne possèdent pas d'armes à feu, mais utilisent des [LINK=YIELD_BLADES]sabres et lances[\LINK] comme armes de prédilection. Grâce à leurs longues hallebardes, ils sont particulièrement efficaces dans le combat contre les unités montées. Si un colon exerce cette profession suffisamment longtemps, il peut éventuellement devenir un [LINK=UNIT_VETERAN_TOWN_GUARD]vétéran[\LINK].[PARAGRAPH:2]Pour plus d'informations, voir [LINK=CONCEPT_MILITARY_UNITS]Unités militaires[\LINK].</French>
 		<German>[COLOR_UNIT_TEXT]Stadtwachen[COLOR_REVERT] sind günstige Militäreinheiten, die ausgerüstet werden können, um als erste Verteidigungslinie zu dienen, wenn eine Kolonie angegriffen wird. Sie haben keine Schusswaffen, sondern benutzen [LINK=YIELD_BLADES]Klingenwaffen[\LINK] als Waffen ihrer Wahl. Aufgrund der langen Hellebarden sind sie besonders im Kampf gegen berittene Einheiten effektiv. Wenn ein Kolonist diesen Beruf lange genug ausübt, kann er schließlich ein [LINK=UNIT_VETERAN_TOWN_GUARD]Veteran[\LINK] werden.[PARAGRAPH:2]Weitere Informationen finden Sie unter [LINK=CONCEPT_MILITARY_UNITS]Militäreinheiten[\LINK].</German>
 	</TEXT>
@@ -3613,7 +3620,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_NATIVE_TRADER_STRATEGY</Tag>
-		<English>[LINK=PROFESSION_NATIVE_TRADER]Native traders[\LINK] are special [LINK=CONCEPT_UNITS]units[\LINK] who can establish [COLOR_HIGHLIGHT_TEXT]trading posts[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Native[\LINK] settlements.[NEWLINE]Over time, trading posts will generate money and create [LINK=UNIT_TREASURE]treasures[\LINK], to be sent back to the colonies.[PARAGRAPH:1]Doing this with an [LINK=UNIT_EXPERT_TRADER]expert trader[\LINK] speeds up the rate at which new [LINK=UNIT_TREASURE]treasures[\LINK] are created. [PARAGRAPH:1]Doing this with an [LINK=UNIT_SEASONED_TRADER]courageous trader[\LINK] speeds up additionally the rate at which new [LINK=UNIT_TREASURE]treasures[\LINK] are accumulated. The courageous native trader can also move forward faster. However, it cannot be acquired as often as you like, but only through special events in the game.</English>
+		<English>[LINK=PROFESSION_NATIVE_TRADER]Native traders[\LINK] are special [LINK=CONCEPT_UNITS]units[\LINK] who can establish [COLOR_HIGHLIGHT_TEXT]trading posts[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Native[\LINK] settlements. They need [LINK=YIELD_TRADE_GOODS]trade goods[\LINK] and [LINK=YIELD_BAKERY_GOODS]provisions[\LINK].[NEWLINE]Over time, trading posts will generate money and create [LINK=UNIT_TREASURE]treasures[\LINK], to be sent back to the colonies.[PARAGRAPH:1]Doing this with an [LINK=UNIT_EXPERT_TRADER]expert trader[\LINK] speeds up the rate at which new [LINK=UNIT_TREASURE]treasures[\LINK] are created. [PARAGRAPH:1]Doing this with a [LINK=UNIT_SEASONED_TRADER]courageous trader[\LINK] means you gather [LINK=UNIT_TREASURE]treasures[\LINK] even quicker. The courageous native trader also moves faster. However, they cannot be acquired as often as you like, but only through special events in the game.</English>
 		<French>Les [LINK=PROFESSION_NATIVE_TRADER]marchands indigènes[\LINK] sont des [LINK=CONCEPT_UNITS]unités[\LINK] spéciales qui peuvent établir des [COLOR_HIGHLIGHT_TEXT]comptoirs de commerce[COLOR_REVERT] dans les villes et villages [LINK=CONCEPT_NATIVES]indigènes[\LINK].[NEWLINE]Au fil du temps, ces comptoirs généreront de l'argent et créeront des [LINK=UNIT_TREASURE]trésors[\LINK], qui seront renvoyés dans les colonies.[PARAGRAPH:1]Faire cela avec un [LINK=UNIT_EXPERT_TRADER]marchand expert[\LINK] accélère la vitesse à laquelle de nouveaux [LINK=UNIT_TREASURE]trésors[\LINK] sont créés.</French>
 		<German>[LINK=PROFESSION_NATIVE_TRADER]Ureinwohnerhändler[\LINK] sind spezielle [LINK=CONCEPT_UNITS]Einheiten[\LINK], die [COLOR_HIGHLIGHT_TEXT]Handelsposten[COLOR_REVERT] in [LINK=CONCEPT_NATIVES]Ureinwohnerdörfern[\LINK] errichten können.[NEWLINE]Von Zeit zu Zeit erzeugen Handelsposten einen [LINK=UNIT_TREASURE]Schatz[\LINK], mit dem das in der Zwischenzeit verdiente Gold zurück in die Kolonien geschickt wird.[PARAGRAPH:1]Nutzt man einen [LINK=UNIT_EXPERT_TRADER]Erfahrenen Ureinwohnerhändler[\LINK], werden deutlich häufiger [LINK=UNIT_TREASURE]Schätze[\LINK] erzeugt.[PARAGRAPH:1]Nutzt man einen [LINK=UNIT_SEASONED_TRADER]Couragierten Ureinwohnerhändler[\LINK], werden noch häufiger [LINK=UNIT_TREASURE]Schätze[\LINK] erzeugt. Der Couragierte Ureinwohnerhändler kann sich außerdem schneller vorwärtsbewegen. Er kann aber nicht beliebig oft erworben werden, sondern nur durch besondere Ereignisse im Spiel.</German>
 	</TEXT>
@@ -3641,7 +3648,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_SETTLER_STRATEGY</Tag>
-		<English>[LINK=PROFESSION_SETTLER]Settlers[\LINK] are the only [LINK=CONCEPT_PROFESSION]profession[\LINK] that can establish new [LINK=CONCEPT_SETTLEMENTS]settlements[\LINK].[PARAGRAPH:1]To do so requires [COLOR_HIGHLIGHT_TEXT]equipment[COLOR_REVERT]. You can either equip colonists in your settlements if you have the necessary supplies stored there or in Europe by paying gold for what's needed.</English>
+		<English>[LINK=PROFESSION_SETTLER]Settlers[\LINK] are the only [LINK=CONCEPT_PROFESSION]profession[\LINK] that can establish new [LINK=CONCEPT_SETTLEMENTS]settlements[\LINK].[PARAGRAPH:1]To do so requires [COLOR_HIGHLIGHT_TEXT]equipment[COLOR_REVERT]: food, lumber, horses and tools. You can either equip colonists in your settlements if you have the necessary supplies stored there or in Europe by paying gold for what's needed.</English>
 		<French>Les [LINK=PROFESSION_SETTLER]fondateurs de colonies[\LINK] sont la seule [LINK=CONCEPT_PROFESSION]profession[\LINK] qui peut fonder de nouvelles [LINK=CONCEPT_SETTLEMENTS]colonies[\LINK][PARAGRAPH:1]Mais pour cela ils ont besoin d'[COLOR_HIGHLIGHT_TEXT]équipement[COLOR_REVERT]. Vous pouvez équiper les colons en tant que fondateurs de colonies, soit dans une colonie, si l'équipement est stocké, soit déjà en Europe, si vous avez l'or nécessaire pour l'équipement.</French>
 		<German>[LINK=PROFESSION_SETTLER]Siedlungsgründer[\LINK] sind der einzige [LINK=CONCEPT_PROFESSION]Beruf[\LINK] der neue [LINK=CONCEPT_SETTLEMENTS]Siedlungen[\LINK] gründen kann.[PARAGRAPH:1]Dafür brauchen sie aber [COLOR_HIGHLIGHT_TEXT]Ausrüstung[COLOR_REVERT]. Man kann Kolonisten als Siedlungsgründer entweder in einer Siedlung ausrüsten, wenn diese die Ausrüstung gelagert hat, oder aber schon gleich in Europa, sofern man das nötige Gold für die Ausrüstung hat.</German>
 	</TEXT>

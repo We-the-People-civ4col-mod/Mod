@@ -729,7 +729,7 @@ public:
 	int getBestYieldsAmountAvailable(YieldTypes eYield, ProfessionTypes eProfession, const CvUnit* pUnit) const;
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 	void addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession);
-	bool removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes eProfession, bool conquest = false);
+	bool removePopulationUnit(AssertCallerData assertData, CvUnit* pUnit, bool bDelete, ProfessionTypes eProfession, bool conquest = false);
 	CvUnit* removeUnitType(UnitTypes eUnit, ProfessionTypes eProfession);
 	void removeNonCityPopulationUnits();
 	int getPopulationUnitId(int iPlotIndex) const;

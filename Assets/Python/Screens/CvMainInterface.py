@@ -665,10 +665,10 @@ class CvMainInterface:
 		
 	# CITY BUILDING MAP CONSTRUCTION BAR
 		screen.addStackedBarGFC("MapCityProductionBar", xResolution - MINIMAP_WIDTH + 3, yResolution - LOWER_SADDLE_HEIGHT - STACK_BAR_HEIGHT * 3 / 2 - 6, MINIMAP_WIDTH - 6, STACK_BAR_HEIGHT * 3 / 2, InfoBarTypes.NUM_INFOBAR_TYPES, WidgetTypes.WIDGET_HELP_SELECTED, 0, -1 )
-		screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_STORED") )
-		screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_RATE") )
-		screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY") )
-		screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY") )
+		screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_GREAT_PEOPLE_STORED)
+		screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_GREAT_PEOPLE_RATE)
+		screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_RATE_EXTRA, ColorTypes.COLOR_EMPTY)
+		screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_EMPTY, ColorTypes.COLOR_EMPTY)
 		screen.hide("MapCityProductionBar")
 	
 	# EMPHASIZE TABLE
@@ -801,10 +801,10 @@ class CvMainInterface:
 
 	# UNIT HEALTH BAR
 		screen.addStackedBarGFC("UnitHealthBar", xResolution - UNIT_HEALTH_BAR_WIDTH - 10, yResolution - LOWER_RIGHT_CORNER_BACKGROUND_HEIGHT - STACK_BAR_HEIGHT, UNIT_HEALTH_BAR_WIDTH, STACK_BAR_HEIGHT, InfoBarTypes.NUM_INFOBAR_TYPES, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-		screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_CULTURE_STORED") )
-		screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_CULTURE_RATE") )
-		screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY") )
-		screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY") )
+		screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_CULTURE_STORED)
+		screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_CULTURE_RATE)
+		screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_RATE_EXTRA, ColorTypes.COLOR_EMPTY)
+		screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_EMPTY, ColorTypes.COLOR_EMPTY)
 		screen.hide("UnitHealthBar")
 
 	# MINIMAP BUTTONS
@@ -1090,10 +1090,10 @@ class CvMainInterface:
 
 	# BUILDING CONSTRUCTION BAR
 		screen.addStackedBarGFC("CityProductionBar", CITIZEN_BAR_WIDTH - 2 + CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100 - SMALL_BUTTON_SIZE / 4, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2) - (CITY_MULTI_TAB_SIZE / 2) - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2) - (STACK_BAR_HEIGHT / 2) + CITY_MULTI_TAB_SIZE * RelativeButtonSize / 200, xResolution - (MAP_EDGE_MARGIN_WIDTH * 2) - CITY_MULTI_TAB_SIZE - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2) - CITIZEN_BAR_WIDTH - CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100 + SMALL_BUTTON_SIZE / 2 + 4, STACK_BAR_HEIGHT, InfoBarTypes.NUM_INFOBAR_TYPES, WidgetTypes.WIDGET_HELP_SELECTED, 0, -1 )
-		screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_STORED") )
-		screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_RATE") )
-		screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY") )
-		screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY") )
+		screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_GREAT_PEOPLE_STORED)
+		screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_GREAT_PEOPLE_RATE)
+		screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_RATE_EXTRA, ColorTypes.COLOR_EMPTY)
+		screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_EMPTY, ColorTypes.COLOR_EMPTY)
 		self.appendtoHideState(screen, "CityProductionBar", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 
 		screen.addPanel("CityProductionBarFrame", u"", u"", True, False, CITIZEN_BAR_WIDTH - 2 + CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100 - SMALL_BUTTON_SIZE / 4, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2) - (CITY_MULTI_TAB_SIZE / 2) - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2) - (STACK_BAR_HEIGHT / 2) + CITY_MULTI_TAB_SIZE * RelativeButtonSize / 200, xResolution - (MAP_EDGE_MARGIN_WIDTH * 2) - CITY_MULTI_TAB_SIZE - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2) - CITIZEN_BAR_WIDTH - CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100 + SMALL_BUTTON_SIZE / 2 + 4, STACK_BAR_HEIGHT, PanelStyles.PANEL_STYLE_STANDARD, WidgetTypes.WIDGET_HELP_SELECTED, 0, -1 )
@@ -1103,10 +1103,10 @@ class CvMainInterface:
 
 	# CITY REBEL BAR
 		screen.addStackedBarGFC("RebelBar", STACK_BAR_HEIGHT, yResolution - BOTTOM_CENTER_HUD_HEIGHT - STACK_BAR_HEIGHT, CITIZEN_BAR_WIDTH - (STACK_BAR_HEIGHT * 2), STACK_BAR_HEIGHT, InfoBarTypes.NUM_INFOBAR_TYPES, WidgetTypes.WIDGET_HELP_REBEL, 1, -1 )
-		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_BLUE") )
-		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_BLUE") )
-		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY") )
-		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY") )
+		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_BLUE)
+		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_BLUE)
+		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_RATE_EXTRA, ColorTypes.COLOR_EMPTY)
+		screen.setStackedBarColors("RebelBar", InfoBarTypes.INFOBAR_EMPTY, ColorTypes.COLOR_EMPTY)
 		self.appendtoHideState(screen, "RebelBar", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 
 		screen.addPanel("RebelBarFrame", u"", u"", True, False, STACK_BAR_HEIGHT, yResolution - BOTTOM_CENTER_HUD_HEIGHT - STACK_BAR_HEIGHT, CITIZEN_BAR_WIDTH - (STACK_BAR_HEIGHT * 2), STACK_BAR_HEIGHT, PanelStyles.PANEL_STYLE_STANDARD, WidgetTypes.WIDGET_HELP_REBEL, 1, -1 )
@@ -1131,7 +1131,7 @@ class CvMainInterface:
 			screen.hide("ProductionBox" + str(iSpecial))
 
 	# BUTTONS
-		screen.setImageButton("HurryGold", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_PURCHASE_UNIT").getPath(), CITIZEN_BAR_WIDTH - 2, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2) - (CITY_MULTI_TAB_SIZE / 2) - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2), CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100, CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100, WidgetTypes.WIDGET_HURRY, gc.getInfoTypeForString("HURRY_GOLD"), -1)
+		screen.setImageButton("HurryGold", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_PURCHASE_UNIT").getPath(), CITIZEN_BAR_WIDTH - 2, CITY_TITLE_BAR_HEIGHT + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2) + (STACK_BAR_HEIGHT * 3 / 2) + (MAP_EDGE_MARGIN_WIDTH / 2) - (CITY_MULTI_TAB_SIZE / 2) - ((CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100) / 2) + (CITY_MULTI_TAB_SIZE / 2), CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100, CITY_MULTI_TAB_SIZE * RelativeButtonSize / 100, WidgetTypes.WIDGET_HURRY, HurryTypes.HURRY_GOLD, -1)
 		self.appendtoHideState(screen, "HurryGold", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 
 	# CITY AND PLOT SCROLL BUTTONS
@@ -1525,11 +1525,11 @@ class CvMainInterface:
 							szStringHealth = szString + "Health"
 							screen.setBarPercentage( szStringHealth, InfoBarTypes.INFOBAR_STORED, float( pLoopUnit.currHitPoints() ) / float( pLoopUnit.maxHitPoints() ) )
 							if (pLoopUnit.getDamage() >= ((pLoopUnit.maxHitPoints() * 2) / 3)):
-								screen.setStackedBarColors(szStringHealth, InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_RED"))
+								screen.setStackedBarColors(szStringHealth, InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_RED)
 							elif (pLoopUnit.getDamage() >= (pLoopUnit.maxHitPoints() / 3)):
-								screen.setStackedBarColors(szStringHealth, InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_YELLOW"))
+								screen.setStackedBarColors(szStringHealth, InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_YELLOW)
 							else:
-								screen.setStackedBarColors(szStringHealth, InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_GREEN"))
+								screen.setStackedBarColors(szStringHealth, InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_GREEN)
 							screen.show( szStringHealth )
 
 						# Adds the overlay first
@@ -1704,11 +1704,11 @@ class CvMainInterface:
 								RedText = True
 								break
 				if (RedText):
-					screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_RED") )
-					screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_WARNING_RATE") )
+					screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_RED)
+					screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_WARNING_RATE)
 				else:
-					screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_STORED") )
-					screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_RATE") )
+					screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_GREAT_PEOPLE_STORED)
+					screen.setStackedBarColors("MapCityProductionBar", InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_GREAT_PEOPLE_RATE)
 					
 				screen.setLabelAt("ProductionText", "MapCityProductionBar", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, UNIT_HEALTH_BAR_WIDTH / 2, STACK_BAR_HEIGHT * 3 / 4, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_HELP_SELECTED, 0, -1 )
 				screen.show("MapCityProductionBar")
@@ -2311,7 +2311,7 @@ class CvMainInterface:
 		CyInterface().cacheInterfacePlotUnits(pHeadSelectedCity.plot())		
 		#screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 2), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT, TRANSPORT_AREA_HEIGHT + (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, False, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )
 		#screen.addScrollPanel("CityTransportPanel", u"", xResolution - TRANSPORT_AREA_WIDTH + MAP_EDGE_MARGIN_WIDTH - SMALL_BUTTON_SIZE / 2, yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, TRANSPORT_AREA_WIDTH * 126 / 128, TRANSPORT_AREA_HEIGHT + (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_MAIN, False, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
-		screen.setLabelAt("TransportPanelLabel", "CityTransportPanel", "    " + self.setFontSize((localText.getColorText("TXT_KEY_TRANSPORT_PANEL", (), gc.getInfoTypeForString("COLOR_FONT_CREAM"))).upper(), 0), CvUtil.FONT_LEFT_JUSTIFY, 0, STACK_BAR_HEIGHT / 2, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
+		screen.setLabelAt("TransportPanelLabel", "CityTransportPanel", "    " + self.setFontSize((localText.getColorText("TXT_KEY_TRANSPORT_PANEL", (), ColorTypes.COLOR_FONT_CREAM)).upper(), 0), CvUtil.FONT_LEFT_JUSTIFY, 0, STACK_BAR_HEIGHT / 2, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_RECEIVE_MOVE_CARGO_TO_CITY, -1, -1 )
 		
 		global LAST_CACHED_TRANSPORT_UNITS_COUNT
 		for i in range(LAST_CACHED_TRANSPORT_UNITS_COUNT):
@@ -2359,7 +2359,7 @@ class CvMainInterface:
 		self.PLOT_LIST_HEALTH_BAR_SHORTENING_CORRECTION = 6
 		CyInterface().cacheInterfacePlotUnits(pHeadSelectedCity.plot())
 		#screen.addScrollPanel("CityGarrisonPanel", u"", CITIZEN_BAR_WIDTH + (SMALL_BUTTON_SIZE / 8), yResolution - BOTTOM_CENTER_HUD_HEIGHT - TRANSPORT_AREA_HEIGHT * 9 / 8 - 2, xResolution - CITIZEN_BAR_WIDTH - TRANSPORT_AREA_WIDTH + STACK_BAR_HEIGHT * 4 / 8, TRANSPORT_AREA_HEIGHT + (STACK_BAR_HEIGHT / 3), PanelStyles.PANEL_STYLE_EMPTY, False, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )
-		screen.setLabelAt("CityGarrisonLabel", "CityGarrisonPanel", self.setFontSize((localText.getColorText("TXT_KEY_GARRISON_PANEL", (), gc.getInfoTypeForString("COLOR_FONT_CREAM"))).upper(), 0), CvUtil.FONT_LEFT_JUSTIFY, SMALL_BUTTON_SIZE / 4, STACK_BAR_HEIGHT / 2, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )
+		screen.setLabelAt("CityGarrisonLabel", "CityGarrisonPanel", self.setFontSize((localText.getColorText("TXT_KEY_GARRISON_PANEL", (), ColorTypes.COLOR_FONT_CREAM)).upper(), 0), CvUtil.FONT_LEFT_JUSTIFY, SMALL_BUTTON_SIZE / 4, STACK_BAR_HEIGHT / 2, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_EJECT_CITIZEN, -1, -1 )
 		
 		global LAST_CACHED_GARRISON_UNITS_COUNT
 		for i in range(LAST_CACHED_GARRISON_UNITS_COUNT):
@@ -2390,11 +2390,11 @@ class CvMainInterface:
 							screen.setBarPercentage( HealthBar, InfoBarTypes.INFOBAR_STORED, float( pLoopUnit.currHitPoints() ) / float( pLoopUnit.maxHitPoints() ) )
 							
 							if (pLoopUnit.getDamage() >= ((pLoopUnit.maxHitPoints() * 2) / 3)):
-								screen.setStackedBarColors(HealthBar, InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_RED"))
+								screen.setStackedBarColors(HealthBar, InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_RED)
 							elif (pLoopUnit.getDamage() >= (pLoopUnit.maxHitPoints() / 3)):
-								screen.setStackedBarColors(HealthBar, InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_YELLOW"))
+								screen.setStackedBarColors(HealthBar, InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_YELLOW)
 							else:
-								screen.setStackedBarColors(HealthBar, InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_GREEN"))
+								screen.setStackedBarColors(HealthBar, InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_GREEN)
 
 						# MOVE ICON
 							if pLoopUnit.isWaiting():
@@ -2532,7 +2532,7 @@ class CvMainInterface:
 
 				szBuffer += u"</font>"
 				
-				localText.changeTextColor(szBuffer, gc.getInfoTypeForString("COLOR_FONT_CREAM"))
+				localText.changeTextColor(szBuffer, ColorTypes.COLOR_FONT_CREAM)
 				screen.setText("CityNameText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution / 2 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_CITY_NAME, -1, -1 )
 
 			# POPULATION GROWTH/STARVATION TEXT
@@ -2591,12 +2591,12 @@ class CvMainInterface:
 							szYieldSymbols += u"% i%c" % (iYieldRequired - iYieldStored, gc.getYieldInfo(iYield).getChar())
 							
 				if len(szYieldSymbols) > 0:
-					screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_RED") )
-					screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_WARNING_RATE") )
+					screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_RED)
+					screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_WARNING_RATE)
 					szBuffer += u" " + localText.getText("TXT_KEY_PEDIA_REQUIRES", ()) + szYieldSymbols
 				else:
-					screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_STORED") )
-					screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_GREAT_PEOPLE_RATE") )
+					screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_GREAT_PEOPLE_STORED)
+					screen.setStackedBarColors("CityProductionBar", InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_GREAT_PEOPLE_RATE)
 #TAC --->					
 				xPostionProductionBar = (xResolution - CITIZEN_BAR_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 3) - (SMALL_BUTTON_SIZE * 4) + 5) / 2
 				screen.setLabelAt("ProductionText", "CityProductionBar", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xPostionProductionBar, STACK_BAR_HEIGHT / 2, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_HELP_SELECTED, 0, -1 )
@@ -3077,11 +3077,11 @@ class CvMainInterface:
 			fPercentage = 1 - float(pHeadSelectedUnit.getDamage() / 100.0)
 			screen.setBarPercentage("UnitHealthBar", InfoBarTypes.INFOBAR_STORED, fPercentage)
 			if (fPercentage >= .666):
-				screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_GREEN"))
+				screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_GREEN)
 			elif (fPercentage >= .333):
-				screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_YELLOW"))
+				screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_YELLOW)
 			else:
-				screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_RED"))
+				screen.setStackedBarColors("UnitHealthBar", InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_RED)
 			screen.show("UnitHealthBar")
 		else:
 			screen.hide("UnitHealthBar")
@@ -3353,7 +3353,7 @@ class CvMainInterface:
 										if ( not (gc.getTeam(gc.getGame().getActiveTeam()).isHasMet(eTeam)) ):
 											szBuffer = szBuffer + (" ?")
 										if (gc.getTeam(eTeam).isAtWar(gc.getGame().getActiveTeam())):
-											szBuffer = szBuffer + "("  + localText.getColorText("TXT_KEY_WAR", (), gc.getInfoTypeForString("COLOR_RED")).upper() + ")"
+											szBuffer = szBuffer + "("  + localText.getColorText("TXT_KEY_WAR", (), ColorTypes.COLOR_RED).upper() + ")"
 										if (not gc.getPlayer(ePlayer).isHuman() and ePlayer != gc.getGame().getActivePlayer()):
 											iAtt = gc.getPlayer(ePlayer).AI_getAttitude(gc.getGame().getActivePlayer())
 											cAtt = unichr(CyGame().getSymbolID(FontSymbols.ATTITUDE_FURIOUS_CHAR) + iAtt)

@@ -5773,7 +5773,7 @@
 		<German>Ihr seid von weit her gekommen, Weißer Mann. Eure Kleidung ist schmutzig, Ihr seht ausgezehrt aus, und Euer Atem riecht wie faulender Fisch. Baut Eure Zelte auf und seid unsere Gäste. Kommt wieder zu Kräften. Doch vergesst nicht: Die Erde, auf der Ihr steht, ist nicht Euer Eigen. Wir sind die Kinder dieser Welt, und Ihr seid Fremde hier.</German>
 		<Italian>Hai fatto molta strada, uomo bianco. I tuoi vestiti sono sporchi, hai l'aria sofferente e il tuo alito puzza di pesce in decomposizione. Piantate le vostre tende e siate nostri ospiti. Ritrova la tua forza. Ma ricordate, la terra su cui vi trovate non è vostra. Noi siamo i figli di questo mondo e voi siete stranieri qui.</Italian>
 		<Spanish>Has recorrido un largo camino, hombre blanco. Tu ropa está sucia, tienes un aspecto demacrado y tu aliento huele a pescado podrido. Monta tus tiendas y sé nuestro invitado. Recupera tu fuerza. Pero recuerda que la tierra sobre la que estás no es tuya. Nosotros somos los hijos de este mundo, y ustedes son extraños aquí.</Spanish>
-		<Russian>Вы проделали долгий путь, путники. Грязная одежда, изможденные лица и изо рта пахнет морем. Ставьте палатки, будьте нашими гостями. Восстановите свою силу. Но никогда не забывайте: эта земля, на которой вы стоите, не ваша. Мы дети этого мира, а вы здесь чужие.</Russian>
+		<Russian>Вы проделали долгий путь, путники. Грязная одежда, изможденные лица и от вас пахнет морем. Ставьте палатки, будьте нашими гостями. Восстановите свою силу. Но никогда не забывайте: эта земля, на которой вы стоите, не ваша. Мы дети этого мира, а вы здесь чужие.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_FOUND_FIRST_CITY_1</Tag>
@@ -6293,7 +6293,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_CHIEF_GOODY_5</Tag>
-		<English>I'm sorry to say we're here to kill you, enslave you, assimilate you or isolate you. The difference is that settlers aren't going to be sorry.</English>
+		<English>I'm sorry to say we're here to kill you, enslave you, assimilate you or isolate you. The difference is that the settlers aren't going to say they're sorry.</English>
 		<French>Je suis désolé de dire que nous sommes là pour vous tuer, vous asservir, vous assimilier ou vous isoler. La différence est que les colons ne présenteront même pas d'excuses.</French>
 		<German>Lebt wohl! Ich werde Euch in meine Gebete einschließen.</German>
 		<Italian>Addio! Vi terrò nelle mie preghiere.</Italian>
@@ -6460,7 +6460,7 @@
 		<German>Seid beglückwünscht, Gouverneur. Die Krone zeigt sich huldvoll und gewährt Euch eine Gelegenheit, Eurem König gefällig zu sein. %d1[ICON_GOLD] dürften genügen.</German>
 		<Italian>Si congratuli, governatore. La corona si mostra graziosa e ti concede l'opportunità di compiacere il tuo re. %d1[ICON_GOLD] dovrebbe essere sufficiente.</Italian>
 		<Spanish>Sea felicitado, Gobernador. La corona se muestra graciosa y le concede la oportunidad de complacer a su rey. %d1[ICON_GOLD] debería ser suficiente.</Spanish>
-		<Russian>Поздравляю, губернатор. Корона проявляет милосердие и дает вам возможность угодить Вашему Королю. %d1[ICON_GOLD] должно быть достаточно.</Russian>
+		<Russian>Губернатор, у вас появилась уникальная возможность угодить Вашему Королю. %d1[ICON_GOLD] будет достаточно, чтобы ненадолго забыть о вашей связи с пиратами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_KING_ASK_FOR_GOLD_2</Tag>
@@ -7761,7 +7761,7 @@
 		<English>We wonder why the conflict against [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] is taking so long. Do you require more troops? If yes, we are willing to send you a ship and two battalions for just [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. If you prefer, we could levy a tax increase of [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT] instead of the gold.</English>
 		<French>Nous nous demandons pourquoi la guerre contre [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] perdure. Avez-vous besoin de renforts? Si oui, nous vous donnerons un navire et deux bataillons pour [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. Si vous le souhaitez, il est également possible de financer cette expédition via une hausse des taxes de [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT].</French>
 		<German>Wir fragen uns warum der Konflikt mit [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] so lange andauert. Benötigt ihr mehr Truppen? Falls ja, sind wir bereit euch ein Schiff und zwei ein Battallione Truppen für lediglich [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD] zu überlassen. Als Alternative zu der Goldzahlung bieten wir euch eine Steuererhöhung von [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT] an.</German>
-		<Russian>Мы удивляемся, почему конфликт с [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] длится так долго. Вам нужно больше войск? Если да, мы готовы отправить вам корабль и несколько батальон всего за [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. Если хотите, вместо оплаты золотом мы можем увеличить налог на [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT].</Russian>
+		<Russian>Мы удивляемся, почему конфликт с [COLOR_HIGHLIGHT_TEXT]%s1_other_colony[COLOR_REVERT] длится так долго. Вам нужно больше войск? Если да, Мы готовы отправить вам корабль и несколько батальонов всего за [COLOR_HIGHLIGHT_TEXT]%d2_gold[COLOR_REVERT][ICON_GOLD]. Если хотите, вместо оплаты золотом Мы можем увеличить налог на [COLOR_HIGHLIGHT_TEXT]%d3_tax_increase%%[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_ROYAL_INTERVENTION_YES_GOLD</Tag>
@@ -7775,14 +7775,14 @@
 		<English>Yes, we really could use those troops, your Majesty. The tax increase is better for us. (tax increase)</English>
 		<French>Oui, nous avons vraiment besoin de ces troupes, Votre Majesté. Nous acceptons aussi la hausse des taxes. (Payer via les taxes)</French>
 		<German>Wir können diese Truppen gut gebrauchen Eure Majestät. Aber wir würden lieber die Steuererhöhung annehmen. (Steuererhöhung)</German>
-		<Russian>Да, мы действительно могли бы использовать эти войска, Ваше Величество. Повышение налогов для нас предпочтительнее. (увеличение ставки налога)</Russian>
+		<Russian>Да, нам действительно могли бы пригодиться эти войска, Ваше Величество. Повышение налогов для нас было бы предпочтительнее. (увеличение ставки налога)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_ROYAL_INTERVENTION_NO</Tag>
 		<English>Do not worry, Your Majesty, our colonies are strong enough to win this conflict without bothering you further.(King delighted)</English>
 		<French>Ne vous faites pas de souci, Votre Majesté, nos colonies sont bien assez fortes pour venir à bout de ce conflit sans que vous ne deviez vous déranger. (le Roi en est ravi)</French>
 		<German>Seid unbesorgt Eure Majestät, unsere Kolonien sind stark genug diesen Konflikt zu lösen ohne euch weiter belästigen zu müssen. (König erfreut)</German>
-		<Russian>Не беспокойтесь, Ваше Величество, наши колонии достаточно сильны, чтобы победить в этом конфликте, не беспокоя вас больше. (Король в восторге)</Russian>
+		<Russian>Не беспокойтесь, Ваше Величество, наши колонии достаточно сильны, чтобы самостоятельно победить в этом конфликте. Наш триумф уже близок. (Король в восторге)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_PRIVATEERS_ACCUSSATION</Tag>

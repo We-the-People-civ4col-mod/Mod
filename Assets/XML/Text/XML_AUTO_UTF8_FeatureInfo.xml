@@ -618,7 +618,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_N</Tag>
-		<English>North Stream</English>
+		<English>Northerly Current</English>
 		<French>Courant vers le nord</French>
 		<German>
 			<Text>Nord Strömung</Text>
@@ -634,7 +634,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_S</Tag>
-		<English>South Stream</English>
+		<English>Southerly Current</English>
 		<French>Courant vers le sud</French>
 		<German>
 			<Text>Süd Strömung</Text>
@@ -650,7 +650,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_E</Tag>
-		<English>East Stream</English>
+		<English>Easterly Current</English>
 		<French>Courant vers l'est</French>
 		<German>
 			<Text>Ost Strömung</Text>
@@ -666,7 +666,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_W</Tag>
-		<English>West Stream</English>
+		<English>Westerly Current</English>
 		<French>Courant vers l'Ouest</French>
 		<German>
 			<Text>West Strömung</Text>
@@ -682,7 +682,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_NE</Tag>
-		<English>North-East Stream</English>
+		<English>Nor'East Current</English>
 		<French>Courant vers le Nord Est</French>
 		<German>
 			<Text>Nord-Ost Strömung</Text>
@@ -698,7 +698,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_NW</Tag>
-		<English>North-West Stream</English>
+		<English>Nor'West Current</English>
 		<French>Courant vers le Nord-Ouest</French>
 		<German>
 			<Text>Nord-West Strömung</Text>
@@ -714,7 +714,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_SE</Tag>
-		<English>South-East Stream</English>
+		<English>Sou'East Current</English>
 		<French>Courant vers le Sud-Est</French>
 		<German>
 			<Text>Süd-Ost Strömung</Text>
@@ -730,7 +730,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_SW</Tag>
-		<English>South-West Stream</English>
+		<English>Sou'West Current</English>
 		<French>Courant vers le Sud-Ouest</French>
 		<German>
 			<Text>Süd-Ost Strömung</Text>

@@ -33,7 +33,7 @@ enum BonusTypes
 
 enum BuildingTypes
 {
-	BUILDING_PLACEHOLDER,
+	BUILDING_CHICKEE,
 };
 
 enum CivEffectTypes
@@ -57,6 +57,11 @@ enum CivilizationTypes
 enum EffectTypes
 {
 	EFFECT_SETTLERSMOKE,
+};
+
+enum FatherPointTypes
+{
+	FATHER_POINT_POLITICAL,
 };
 
 enum LeaderHeadTypes
@@ -117,7 +122,6 @@ enum UnitCombatTypes
 
 enum UnitTypes
 {
-	UNIT_PLACEHOLDER,
 };
 
 #include "CvEnums.h"

@@ -10,6 +10,8 @@
 
 #include "CvSavegame.h"
 
+#include "ThreadOverview.h"
+
 #define RANDOM_A      (1103515245)
 #define RANDOM_C      (12345)
 #define RANDOM_SHIFT  (16)
@@ -194,7 +196,7 @@ void CvRandom::reset(unsigned long ulSeed)
 
 unsigned short CvRandom::get(unsigned short usNum, char const* pszLog)
 {
-	FAssertMsg(!m_bSynced || GC.isMainThread(), "Random called outside main thread");
+	FAssertMsg(!m_bSynced || !ThreadOverview.isMultiThreaded(), "Random called while TBB is in multithreaded mode");
 
 	if (pszLog != NULL)
 	{
@@ -279,11 +281,11 @@ float CvRandom::getGaussian(float fMean, float fStandardDeviation)
 	return( fMean + y1 * fStandardDeviation );
 }
 
-int CvRandom::pickValue(std::vector<int>& aWeights, char const* pszLog)
+int CvRandom::pickValue(AssertCallerData assertData, std::vector<int>& aWeights, char const* pszLog)
 {
 	int iTotalWeights = std::accumulate(aWeights.begin(), aWeights.end(), 0);
-	FAssert(iTotalWeights >= 0);
-	FAssert(iTotalWeights <= std::numeric_limits<unsigned short>::max());
+	FAssertWithCaller(assertData, iTotalWeights >= 0);
+	FAssertWithCaller(assertData, iTotalWeights <= std::numeric_limits<unsigned short>::max());
 
 	int iValue = get(iTotalWeights, pszLog);
 	int iSum = 0;
@@ -296,7 +298,7 @@ int CvRandom::pickValue(std::vector<int>& aWeights, char const* pszLog)
 		}
 	}
 
-	FAssert(false);
+	FAssertMsgWithCaller(assertData, false, "failed to pick any value");
 	return 0;
 }
 

@@ -121,6 +121,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	case JIT_ARRAY_EVENT:              return &GC.getEventInfo((EventTypes)iIndex);
 	case JIT_ARRAY_EVENT_TRIGGER:      return &GC.getEventTriggerInfo((EventTriggerTypes)iIndex);
 	case JIT_ARRAY_FATHER:             return &GC.getFatherInfo((FatherTypes)iIndex);
+	case JIT_ARRAY_FATHERCATEGORY:     return &GC.getFatherCategoryInfo((FatherCategoryTypes)iIndex);
 	case JIT_ARRAY_FATHER_POINT:       return &GC.getFatherPointInfo((FatherPointTypes)iIndex);
 	case JIT_ARRAY_FEATURE:            return &GC.getFeatureInfo((FeatureTypes)iIndex);
 	case JIT_ARRAY_GAME_OPTION:        return &GC.getGameOptionInfo((GameOptionTypes)iIndex);

@@ -83,7 +83,7 @@ const TCHAR* CyXMLAttributes::getButtonArt() const
 		const char* type = getType();
 		if (type == NULL) return NULL;
 
-		tinyxml2::XMLElement* pNewInfo = m_pInfo->GetDocument()->FirstChildElement(type);
+		tinyxml2::XMLElement* pNewInfo = m_pInfo->GetDocument()->FirstChildElement()->FirstChildElement(type);
 		if (pNewInfo == NULL) return NULL;
 
 

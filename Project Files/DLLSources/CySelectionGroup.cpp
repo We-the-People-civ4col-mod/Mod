@@ -253,7 +253,10 @@ CyPlot* CySelectionGroup::getPathEndTurnPlot()
 
 bool CySelectionGroup::generatePath(CyPlot* pFromPlot, CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathTurns)
 {
-	return m_pSelectionGroup ? m_pSelectionGroup->generatePath(pFromPlot->getPlot(), pToPlot->getPlot(), iFlags, bReuse, piPathTurns) : false;
+	// Force pathfinder calls from Python to use a temporary pathfinder instance
+	// This change ensures that cached data does not inadvertently get shared between player and AI,
+	// which could potentially lead to OOS issues
+	return m_pSelectionGroup ? m_pSelectionGroup->generatePath(pFromPlot->getPlot(), pToPlot->getPlot(), iFlags, bReuse, piPathTurns, -1, /*bUseTempFinder*/true, /*bool bCalledFromPython*/true) : false;
 }
 // TAC - AI Improved Naval AI - koma13 - END
 

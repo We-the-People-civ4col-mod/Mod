@@ -1,1373 +1,1398 @@
-<AlarmInfo/>
-
-<AnimationCategory/>
-
-<BonusArtInfo class="Dir" child="Button">
-    <Type/>
-    <fScale/>
-    <fInterfaceScale/>
-    <NIF/>
-    <KFM/>
-    <Button class="Button"/>
-    <FontButtonIndex/>
-    <bShadowCastor/>
-    <bRefractionCastor/>
-</BonusArtInfo>
-
-<BonusInfo class="Dir" child="ArtDefineTag">
-    <Type/>
-    <Description/>
-    <Civilopedia/>
-    <Help/>
-    <ArtDefineTag class="Type" type="BonusArtInfo" none="false"/>
-    <BuildingType class="Type" type="BuildingInfo" none="true"/>
-    <YieldChanges class="Dir" child="YieldIntegerPair">
-        <YieldIntegerPair class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iValue/>
-        </YieldIntegerPair>
-    </YieldChanges>
-    <iHealthEffectFromRessource/>
-    <iAIObjective/>
-    <iPlacementOrder/>
-    <iConstAppearance/>
-    <iMinAreaSize/>
-    <iMinLatitude/>
-    <iMaxLatitude/>
-    <Rands>
-        <iRandApp1/>
-        <iRandApp2/>
-        <iRandApp3/>
-        <iRandApp4/>
-    </Rands>
-    <iPlayer/>
-    <iTilesPer/>
-    <iMinLandPercent/>
-    <iUnique/>
-    <iGroupRange/>
-    <iGroupRand/>
-    <bArea/>
-    <bPeaks/>
-    <bHills/>
-    <bOcean/>
-    <bFlatlands/>
-    <bNoRiverSide/>
-    <bRiverSideOnly/>
-    <bCoastalLandOnly/>
-    <bOnlySouthernHemisphere/>
-    <bOnlyNorthernHemisphere/>
-    <TerrainBooleans/>
-    <FeatureBooleans/>
-    <FeatureTerrainBooleans/>
-    <bUseLSystem/>
-    <bWhalingboatWorkable/>
-    <bFishingboatWorkable/>
-</BonusInfo>
-
-<BuildInfo>
-    <Type/>
-    <Description/>
-    <Help/>
-    <iTime/>
-    <iCost/>
-    <bKill class="Bool" help="Will completing this build kill the building unit?[NEWLINE](Think civ4 fishing boats, which vanish when building improvements)"/>
-    <ImprovementType class="Type" type="ImprovementInfo" none="true"/>
-    <PrereqTerrainType class="Type" type="TerrainInfo" none="true"/>
-    <ResultTerrainType class="Type" type="TerrainInfo" none="true"/>
-    <ResultFeatureType class="Type" type="FeatureInfo" none="true"/>
-    <RouteType class="Type" type="RouteInfo" none="true"/>
-    <EntityEvent/>
-    <FeatureStructs>
-        <FeatureStruct>
-            <FeatureType/>
-            <iTime/>
-            <Yields>
-                <Yield>
-                    <YieldType/>
-                    <iYield/>
-                </Yield>
-            </Yields>
-            <bRemove/>
-        </FeatureStruct>
-    </FeatureStructs>
-    <HotKey/>
-    <bAltDown/>
-    <bShiftDown/>
-    <bCtrlDown/>
-    <iHotKeyPriority/>
-    <Button/>
-    <iOrderPriority/>
-</BuildInfo>
-
-<BuildingArtInfo class="Dir" child="Button">
-    <Type/>
-    <LSystem/>
-    <bAnimated/>
-    <CityTexture/>
-    <CitySelectedTexture/>
-    <fScale/>
-    <fInterfaceScale/>
-    <NIF/>
-    <KFM/>
-    <Button class="Button"/>
-</BuildingArtInfo>
-
-<BuildingClassInfo class="Dir" child="DefaultBuilding">
-    <Type/>
-    <Description/>
-    <DefaultBuilding class="Type" type="BuildingInfo" none="false"/>
-    <VictoryThresholds/>
-</BuildingClassInfo>
-
-<BuildingInfo class="Dir" child="ArtDefineTag">
-    <Type/>
-    <BuildingClass class="Type" type="BuildingClassInfo" none="false"/>
-    <SpecialBuildingType/>
-    <iSpecialBuildingPriority/>
-    <Description/>
-    <Civilopedia/>
-    <Strategy/>
-    <Help/>
-    <ArtDefineTag class="Type" type="BuildingArtInfo" none="false"/>
-    <MovieDefineTag/>
-    <VictoryPrereq/>
-    <FreeStartEra/>
-    <MaxStartEra/>
-    <ProductionTraits/>
-    <FreePromotion/>
-    <RouteTypeCreated/>
-    <bGraphicalOnly/>
-    <bWorksWater/>
-    <bWater/>
-    <bRiver/>
-    <bCapital/>
-    <bNationalWonder/>
-    <bNeverCapture/>
-    <bCenterInCity/>
-    <iAIWeight/>
-    <YieldCosts/>
-    <iHurryCostModifier/>
-    <iAdvancedStartCost/>
-    <iAdvancedStartCostIncrease/>
-    <iProfessionOutput/>
-    <iMaxWorkers/>
-    <iMinAreaSize/>
-    <iConquestProb/>
-    <iCitiesPrereq/>
-    <iTeamsPrereq/>
-    <iLevelPrereq/>
-    <iMinLatitude/>
-    <iMaxLatitude/>
-    <iExperience/>
-    <iFoodKept/>
-    <iHealRateChange/>
-    <iMilitaryProductionModifier/>
-    <iDefense/>
-    <iBombardDefense/>
-    <iAsset/>
-    <iPower/>
-    <iYieldStorage/>
-    <iMaxHarbourSpaceProvided/>
-    <iMaxBarracksSpaceProvided/>
-    <iStorageLossSellPercentage/>
-    <bIgnoresBoycott/>
-    <bUnlocksStorageLossTradeSettings/>
-    <fVisibilityPriority/>
-    <LandPlotYieldChanges/>
-    <SeaPlotYieldChanges/>
-    <RiverPlotYieldChanges/>
-    <YieldChanges/>
-    <YieldModifiers>
-        <YieldModifier>
-            <YieldType/>
-            <iModifier/>
-        </YieldModifier>
-    </YieldModifiers>
-    <iDomesticMarketModifier/>
-    <iEntertainmentGoldModifier/>
-    <YieldDemands/>
-    <ConstructSound/>
-    <UnitCombatFreeExperiences/>
-    <DomainFreeExperiences/>
-    <DomainProductionModifiers/>
-    <PrereqBuildingClasses/>
-    <BuildingClassNeededs/>
-    <RequiredAdjacentTerrains/>
-    <RequiredCatchmentAreaTerrains/>
-    <RequiredCatchmentAreaFeatures/>
-    <AIRequiredCatchmentAreaTerrains/>
-    <AIRequiredCatchmentAreaFeatures/>
-    <AIRequiredCatchmentAreaPlotTypes/>
-    <AIUnitClassWeights>
-        <AIUnitClassWeight>
-            <eUnitClass/>
-            <iWeight/>
-        </AIUnitClassWeight>
-    </AIUnitClassWeights>
-    <HotKey/>
-    <bAltDown/>
-    <bShiftDown/>
-    <bCtrlDown/>
-    <iHotKeyPriority/>
-    <iTeachLevel/>
-    <iAICitySize/>
-    <iOrderPriority/>
-</BuildingInfo>
-
-<CivilizationArtInfo class="Dir" child="Button">
-    <Type/>
-    <Button class="Button"/>
-    <Path/>
-    <bWhiteFlag/>
-    <bInvertFlag/>
-    <iFontButtonIndex/>
-</CivilizationArtInfo>
-
-<CivilizationInfo child="ArtDefineTag" class="Dir">
-    <Type/>
-    <Description/>
-    <ShortDescription/>
-    <Adjective/>
-    <Civilopedia/>
-    <DefaultPlayerColor class="Type" type="PlayerColorInfo" none="false"/>
-    <ArtDefineTag type="CivilizationArtInfo" none="false" class="Type"/>
-    <ArtStyleType class="Type" type="ArtStyleType" none="false"/>
-    <UnitArtStyleType class="Type" type="UnitArtStyleTypeInfo" none="false"/>
-    <bPlayable/>
-    <bAIPlayable class="Bool"/>
-    <bWaterStart/>
-    <bOpenBorders help="fdg"/>
-    <bWaterWorks/>
-    <bEurope/>
-    <bNative/>
-    <bNorthAmericanNative/>
-    <bSouthAmericanNative/>
-    <bCentralAmericanNative/>
-    <eCivCategory/>
-    <eCivEffect class="Type" type="CivEffectInfo" none="true"/>
-    <iAdvancedStartPoints/>
-    <iAreaMultiplier/>
-    <iDensityMultiplier/>
-    <iTreasure/>
-    <FavoredTerrain class="Type" type="TerrainInfo" none="true"/>
-    <DefaultProfession class="Type" type="ProfessionInfo" none="false"/>
-    <Cities/>
-    <Generals/>
-    <Admirals/>
-    <Ships/>
-    <Buildings>
-        <Building class="Dir" child="BuildingType">
-            <BuildingClassType class="Type" type="BuildingClassInfo" none="false"/>
-            <BuildingType class="Type" type="BuildingInfo" none="true"/>
-        </Building>
-    </Buildings>
-    <Units/>
-    <Professions/>
-    <Traits/>
-    <FreeUnitClasses/>
-    <FreeBuildingClasses/>
-    <TeachUnitClasses/>
-    <FreeYields/>
-    <CapturedCityUnitClass class="Type" type="UnitClassInfo" none="true"/>
-    <InitialCivics/>
-    <Leaders class="Dir" child="Leader">
-        <Leader class="Dir" child="LeaderName">
-            <LeaderName class="Type" type="LeaderHeadInfo" none="false"/>
-            <bLeaderAvailability/>
-        </Leader>
-    </Leaders>
-    <DerivativeCiv class="Type" type="CivilizationInfo" none="true"/>
-    <CivilizationSelectionSound class="Type" type="Script3DSound" none="false"/>
-    <CivilizationActionSound class="Type" type="Script3DSound" none="false"/>
-</CivilizationInfo>
-
-<DefineName>
-    <iDefineIntVal/>
-    <fDefineFloatVal/>
-    <DefineTextVal/>
-</DefineName>
-
-<EntityEventInfo/>
-
-<EventInfo>
-    <Type/>
-    <Description/>
-    <LocalInfoText/>
-    <WorldNewsTexts/>
-    <OtherPlayerPopup/>
-    <QuestFailText/>
-    <bQuest/>
-    <bGlobal/>
-    <bTeam/>
-    <bPickCity/>
-    <bPickOtherPlayerCity/>
-    <bDeclareWar/>
-    <iGold/>
-    <bGoldToPlayer/>
-    <iRandomGold/>
-    <iCulture/>
-    <iHealth/>
-    <UnitClass/>
-    <iNumFreeUnits/>
-    <bDisbandUnit/>
-    <iUnitExperience/>
-    <iUnitImmobileTurns/>
-    <UnitPromotion/>
-    <UnitName/>
-    <UnitCombatPromotions/>
-    <UnitClassPromotions class="Dir" child="UnitClassPromotion">
-        <UnitClassPromotion class="Dir" child="UnitClass">
-            <UnitClass class="Type" type="UnitClassInfo" none="false"/>
-            <UnitPromotion class="Type" type="PromotionInfo" none="false"/>
-        </UnitClassPromotion>
-    </UnitClassPromotions>
-    <BuildingClass/>
-    <iBuildingChange/>
-    <BuildingExtraYields/>
-    <iRevoltTurns/>
-    <iMinPillage/>
-    <iMaxPillage/>
-    <iFood/>
-    <iFoodPercent/>
-    <FeatureType class="Type" type="FeatureInfo" none="true"/>
-    <iFeatureChange/>
-    <ImprovementType class="Type" type="ImprovementInfo" none="true"/>
-    <iImprovementChange/>
-    <RouteType class="Type" type="RouteInfo" none="true"/>
-    <iRouteChange/>
-    <BonusRevealed/>
-    <PlotExtraYields/>
-    <iOurAttitudeModifier/>
-    <iAttitudeModifier/>
-    <iTheirEnemyAttitudeModifier/>
-    <iPopulationChange/>
-    <AdditionalEvents/>
-    <EventTimes/>
-    <ClearEvents/>
-    <PythonCallback/>
-    <PythonExpireCheck/>
-    <PythonCanDo/>
-    <PythonHelp/>
-    <Button class="Button"/>
-    <iAIValue/>
-    <iGenericParameter1/>
-    <iGenericParameter2/>
-    <iGenericParameter3/>
-    <iGenericParameter4/>
-</EventInfo>
-
-<FeatureArtInfo class="Dir" child="Button">
-    <Type/>
-    <bAnimated/>
-    <TileArtType/>
-    <fScale class="Float"/>
-    <fInterfaceScale class="Float"/>
-    <Button class="Button"/>
-    <FeatureVariety>
-        <FeatureArtPieces>
-            <FeatureArtPiece>
-                <ModelFile/>
-                <Connections/>
-            </FeatureArtPiece>
-        </FeatureArtPieces>
-        <iModelCopies/>
-        <VarietyButton/>
-    </FeatureVariety>
-</FeatureArtInfo>
-
-<FeatureInfo class="Dir" child="ArtDefineTag">
-    <Type/>
-    <Description/>
-    <Civilopedia/>
-    <Help/>
-    <ArtDefineTag class="Type" type="FeatureArtInfo" none="false"/>
-    <YieldChanges class="Dir" child="YieldIntegerPair">
-        <YieldIntegerPair class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iValue/>
-        </YieldIntegerPair>
-    </YieldChanges>
-    <RiverYieldIncreases class="Dir" child="YieldIntegerPair">
-        <YieldIntegerPair class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iValue/>
-        </YieldIntegerPair>
-    </RiverYieldIncreases>
-    <iMovement/>
-    <iSeeThrough/>
-    <iDefense/>
-    <iAppearance/>
-    <iDisappearance/>
-    <iTurnDamage/>
-    <bGeneratedEveryRound/>
-    <iGrowth/>
-    <bNoCoast/>
-    <bOnlyCoastalLand/>
-    <bNoRiver/>
-    <bNoAdjacent/>
-    <bRequiresFlatlands/>
-    <bRequiresHills/>
-    <bRequiresPeaks/>
-    <bRequiresRiver/>
-    <bImpassable/>
-    <bNorthMovementBonus/>
-    <bSouthMovementBonus/>
-    <bEastMovementBonus/>
-    <bWestMovementBonus/>
-    <bNorthEastMovementBonus/>
-    <bNorthWestMovementBonus/>
-    <bSouthEastMovementBonus/>
-    <bSouthWestMovementBonus/>
-    <bNoCity/>
-    <bNoImprovement/>
-    <bVisibleAlways/>
-    <OnUnitChangeTo class="Type" type="FeatureInfo" none="true"/>
-    <TerrainBooleans/>
-    <FootstepSounds/>
-    <WorldSoundscapeAudioScript class="Type" type="ScriptSoundscape" none="true"/>
-    <EffectType class="Type" type="EffectInfo" none="true"/>
-    <iEffectProbability/>
-    <iAdvancedStartRemoveCost/>
-</FeatureInfo>
-
-<ImprovementArtInfo>
-    <Type/>
-    <bExtraAnimations/>
-    <fScale/>
-    <fInterfaceScale/>
-    <NIF/>
-    <KFM/>
-    <Button class="Button"/>
-</ImprovementArtInfo>
-
-<ImprovementInfo class="Dir" child="ArtDefineTag">
-    <Type/>
-    <Description/>
-    <Civilopedia/>
-    <Help/>
-    <ArtDefineTag class="Type" type="ImprovementArtInfo" none="false"/>
-    <PrereqNatureYields class="Dir" child="YieldIntegerPair">
-        <YieldIntegerPair class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iValue/>
-        </YieldIntegerPair>
-    </PrereqNatureYields>
-    <YieldIncreases class="Dir" child="YieldIntegerPair">
-        <YieldIntegerPair class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iValue/>
-        </YieldIntegerPair>
-    </YieldIncreases>
-    <RiverSideYieldChanges class="Dir" child="YieldIntegerPair">
-        <YieldIntegerPair class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iValue/>
-        </YieldIntegerPair>
-    </RiverSideYieldChanges>
-    <HillsYieldChanges class="Dir" child="YieldIntegerPair">
-        <YieldIntegerPair class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iValue/>
-        </YieldIntegerPair>
-    </HillsYieldChanges>
-    <bActsAsCity/>
-    <bFort/>
-    <bMonastery/>
-    <bCanal/>
-    <bNotAllowedNextToSameAsItself/>
-    <bHillsMakesValid/>
-    <bRiverSideMakesValid/>
-    <bRequiresFlatlands/>
-    <bRequiresRiverSide/>
-    <bRequiresFeature/>
-    <bWater/>
-    <bGoody/>
-    <bGoodyForSpawningUnits/>
-    <bGoodyForSpawningHostileAnimals/>
-    <bGoodyForSpawningHostileNatives/>
-    <bGoodyForSpawningHostileCriminals/>
-    <bPermanent/>
-    <bUseLSystem/>
-    <iAdvancedStartCost/>
-    <iAdvancedStartCostIncrease/>
-    <iTilesPerGoody/>
-    <iGoodyRange/>
-    <iFeatureGrowth/>
-    <iUpgradeTime/>
-    <iDefenseModifier/>
-    <iFoodModifierForCity/>
-    <iHammersModifierForCity/>
-    <iToolsModifierForCity/>
-    <iStorageModifierForCity/>
-    <iPillageGold/>
-    <iHealModifier/>
-    <bOutsideBorders/>
-    <TerrainMakesValids>
-        <TerrainMakesValid>
-            <TerrainType class="Type" type="TerrainInfo" none="false"/>
-            <bMakesValid/>
-        </TerrainMakesValid>
-    </TerrainMakesValids>
-    <FeatureMakesValids>
-        <FeatureMakesValid>
-            <FeatureType class="Type" type="FeatureInfo" none="false"/>
-            <bMakesValid/>
-        </FeatureMakesValid>
-    </FeatureMakesValids>
-    <BonusTypeStructs class="Dir" child="BonusTypeStruct">
-        <BonusTypeStruct class="Dir" child="BonusType">
-            <BonusType class="Type" type="BonusInfo" none="false"/>
-            <bBonusMakesValid/>
-            <iDiscoverRand/>
-            <YieldChanges/>
-        </BonusTypeStruct>
-    </BonusTypeStructs>
-    <ImprovementPillage class="Type" type="ImprovementInfo" help="Set which improvement this improvement turns into if it is pillaged.[NEWLINE]Defaults to NONE, which means the improvement is destroyed.[NEWLINE]Can be used to downgrade improvements and require multiple pillages to completely remove." none="true"/>
-    <ImprovementUpgrade class="Type" type="ImprovementInfo" none="true"/>
-    <RouteYieldChanges>
-        <RouteYieldChange>
-            <RouteType class="Type" type="RouteInfo" none="true"/>
-            <RouteYields>
-                <YieldIntegerPair>
-                    <YieldType class="Type" type="YieldInfo" none="false"/>
-                    <iValue/>
-                </YieldIntegerPair>
-            </RouteYields>
-        </RouteYieldChange>
-    </RouteYieldChanges>
-    <WorldSoundscapeAudioScript class="Type" type="ScriptSoundscape" none="true"/>
-    <bGraphicalOnly/>
-    <iCulture/>
-    <iCultureRange/>
-    <iPlotVisibilityChange/>
-    <iUnitVisibilityChange/>
-    <iSeeFrom/>
-    <iUnique/>
-    <bBombardable/>
-    <bUpgradeRequiresFortify/>
-</ImprovementInfo>
-
-<LandscapeInfo>
-    <Type/>
-    <iWaterHeight/>
-    <EnvironmentTexture/>
-    <fTextureScaleX/>
-    <fTextureScaleY/>
-    <iPlotsPerCellX/>
-    <iPlotsPerCellY/>
-    <iPlotVertsWide/>
-    <iPlotVertsHigh/>
-    <fZScale/>
-    <fPeakScale/>
-    <fHillScale/>
-</LandscapeInfo>
-
-<LeaderHeadInfo class="Dir" child="ArtDefineTag">
-    <Type/>
-    <Description/>
-    <Civilopedia/>
-    <ArtDefineTag class="Type" type="LeaderheadArtInfo" none="false"/>
-    <AlarmType class="Type" type="AlarmInfo" none="true"/>
-    <iBaseAttitude/>
-    <iNativeAttitude/>
-    <iMinAttitudeGiveMercs/>
-    <iBaseChanceGiveMercs/>
-    <iMinAttitudeGiveNativeSlaves/>
-    <iBaseChanceGiveNativeSlaves/>
-    <iRefuseToTalkWarThreshold/>
-    <iMaxGoldTradePercent/>
-    <iMaxWarRand/>
-    <iMaxWarNearbyPowerRatio/>
-    <iMaxWarDistantPowerRatio/>
-    <iMaxWarMinAdjacentLandPercent/>
-    <iLimitedWarRand/>
-    <iLimitedWarPowerRatio/>
-    <iDogpileWarRand/>
-    <iMakePeaceRand/>
-    <iDeclareWarTradeRand/>
-    <iDemandRebukedSneakProb/>
-    <iDemandRebukedWarProb/>
-    <iRazeCityProb/>
-    <iBaseAttackOddsChange/>
-    <iAttackOddsChangeRand/>
-    <iCloseBordersAttitudeChange/>
-    <iAlarmAttitudeChange/>
-    <iLostWarAttitudeChange/>
-    <iRebelAttitudeDivisor/>
-    <iAtWarAttitudeDivisor/>
-    <iAtWarAttitudeChangeLimit/>
-    <iAtPeaceAttitudeDivisor/>
-    <iAtPeaceAttitudeChangeLimit/>
-    <iOpenBordersAttitudeDivisor/>
-    <iOpenBordersAttitudeChangeLimit/>
-    <iDefensivePactAttitudeDivisor/>
-    <iDefensivePactAttitudeChangeLimit/>
-    <iShareWarAttitudeChange/>
-    <iShareWarAttitudeDivisor/>
-    <iShareWarAttitudeChangeLimit/>
-    <DemandTributeAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
-    <NoGiveHelpAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
-    <MapRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
-    <DeclareWarRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
-    <DeclareWarThemRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
-    <StopTradingRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
-    <StopTradingThemRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
-    <OpenBordersRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
-    <DefensivePactRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
-    <PermanentAllianceRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
-    <NativeRaidAttitudeThreshold class="Type" type="AttitudeInfo" none="true"/>
-    <Traits class="Dir" child="Trait">
-        <Trait class="Dir" child="TraitType">
-            <TraitType class="Type" type="TraitInfo" none="false"/>
-            <bTrait/>
-        </Trait>
-    </Traits>
-    <ContactRands class="Dir" child="ContactRand">
-        <ContactRand class="Dir" child="ContactType">
-            <ContactType class="Type" type="ContactType" none="false"/>
-            <iContactRand/>
-        </ContactRand>
-    </ContactRands>
-    <ContactDelays>
-        <ContactDelay>
-            <ContactType class="Type" type="ContactType" none="false"/>
-            <iContactDelay/>
-        </ContactDelay>
-    </ContactDelays>
-    <MemoryDecays>
-        <MemoryDecay>
-            <MemoryType class="Type" type="MemoryInfo" none="false"/>
-            <iMemoryRand/>
-        </MemoryDecay>
-    </MemoryDecays>
-    <MemoryAttitudePercents>
-        <MemoryAttitudePercent>
-            <MemoryType class="Type" type="MemoryInfo" none="false"/>
-            <iMemoryAttitudePercent/>
-        </MemoryAttitudePercent>
-    </MemoryAttitudePercents>
-    <NoWarAttitudeProbs>
-        <NoWarAttitudeProb>
-            <AttitudeType class="Type" type="AttitudeInfo" none="false"/>
-            <iNoWarProb/>
-        </NoWarAttitudeProb>
-    </NoWarAttitudeProbs>
-    <UnitAIWeightModifiers>
-        <UnitAIWeightModifier>
-            <UnitAIType class="Type" type="UnitAIInfo" none="false"/>
-            <iWeightModifier/>
-        </UnitAIWeightModifier>
-    </UnitAIWeightModifiers>
-    <ImprovementWeightModifiers>
-        <ImprovementWeightModifier>
-            <ImprovementType class="Type" type="ImprovementInfo" none="false"/>
-            <iWeightModifier/>
-        </ImprovementWeightModifier>
-    </ImprovementWeightModifiers>
-    <DiplomacyMusicPeace>
-        <DiploMusicPeaceEra>
-            <EraType class="Type" type="EraInfo" none="false"/>
-            <DiploScriptId class="Type" type="Script2DSound" none="false"/>
-        </DiploMusicPeaceEra>
-    </DiplomacyMusicPeace>
-    <DiplomacyMusicWar>
-        <DiploMusicWarEra>
-            <EraType class="Type" type="EraInfo" none="false"/>
-            <DiploScriptId class="Type" type="Script2DSound" none="false"/>
-        </DiploMusicWarEra>
-    </DiplomacyMusicWar>
-</LeaderHeadInfo>
-
-<LeaderheadArtInfo class="Dir" child="Button">
-    <Type/>
-    <Button class="Button"/>
-    <NIF/>
-    <KFM/>
-    <BackgroundKFM/>
-</LeaderheadArtInfo>
-
-<MainMenu>
-    <Type/>
-    <Description/>
-    <Scene/>
-    <Soundtrack/>
-    <LoadingScreens/>
-    <LoadingSlideshow/>
-</MainMenu>
-
-<MiscArtInfo>
-    <Type/>
-    <Path/>
-    <fScale/>
-    <NIF/>
-    <KFM/>
-</MiscArtInfo>
-
-<Name>
-    <FormationType/>
-    <EventMaskList/>
-    <UnitEntry/>
-</Name>
-
-<ProfessionInfo class="Dir" child="Button">
-    <Type/>
-    <Description/>
-    <Civilopedia/>
-    <Strategy/>
-    <Help/>
-    <Combat class="Type" type="UnitCombatInfo" none="true"/>
-    <DefaultUnitAI class="Type" type="UnitAIInfo" none="true"/>
-    <SpecialBuilding class="Type" type="SpecialBuildingInfo" none="true"/>
-    <bWorkPlot/>
-    <bCitizen/>
-    <bWater/>
-    <bScout/>
-    <bCanCrossLargeRivers/>
-    <bCityDefender/>
-    <bCanFound/>
-    <bUnarmed/>
-    <bNoDefensiveBonus/>
-    <iCombatChange/>
-    <iBombardRateChangeProfession/>
-    <iBarracksSpaceNeededChange/>
-    <iMovesChange/>
-    <bMoveIntoPeak/>
-    <iWorkRate/>
-    <iMissionaryRate/>
-    <iNativeTradeRate/>
-    <iPower/>
-    <iAsset/>
-    <YieldEquipedNums class="Dir" child="YieldEquipedNum">
-        <YieldEquipedNum class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iYieldAmount/>
-        </YieldEquipedNum>
-    </YieldEquipedNums>
-    <FreePromotions class="Dir" child="FreePromotion">
-        <FreePromotion class="Dir" child="PromotionType">
-            <PromotionType class="Type" type="PromotionInfo" none="false"/>
-            <bFreePromotion/>
-        </FreePromotion>
-    </FreePromotions>
-    <YieldsProduced/>
-    <YieldsConsumed>
-        <YieldType/>
-    </YieldsConsumed>
-    <Button class="Button"/>
-    <bUseLbD/>
-    <ExpertUnit class="Type" type="UnitClassInfo" none="false"/>
-    <iLbDLearnLevel/>
-</ProfessionInfo>
-
-<PromotionInfo class="Dir" child="Button">
-    <Type/>
-    <Description/>
-    <Help/>
-    <Sound class="Type" type="Script2DSound" none="false"/>
-    <PromotionPrereq class="Type" type="PromotionInfo" none="true"/>
-    <PromotionPrereqOr1 class="Type" type="PromotionInfo" none="true"/>
-    <PromotionPrereqOr2 class="Type" type="PromotionInfo" none="true"/>
-    <bLeader/>
-    <bNegativePromotion/>
-    <bBlitz/>
-    <bAmphib/>
-    <bRiver/>
-    <bEnemyRoute/>
-    <bAlwaysHeal/>
-    <bHillsDoubleMove/>
-    <iVisibilityChange/>
-    <iMovesChange/>
-    <iMoveDiscountChange/>
-    <iWithdrawalChange/>
-    <iCargoChange/>
-    <iBombardRateChange/>
-    <iEnemyHealChange/>
-    <iNeutralHealChange/>
-    <iFriendlyHealChange/>
-    <iSameTileHealChange/>
-    <iAdjacentTileHealChange/>
-    <iCombatPercent/>
-    <iCityAttack/>
-    <iCityDefense/>
-    <iHillsAttack/>
-    <iHillsDefense/>
-    <iDomesticBonus/>
-    <iPillageChange/>
-    <iAnimalGoldChange/>
-    <iSlaveRevoltReductionBonus/>
-    <iSlaveWorkerProductionBonus/>
-    <iAdditionalLawToCity/>
-    <iUpgradeDiscount/>
-    <iExperiencePercent/>
-    <TerrainAttacks>
-        <TerrainAttack>
-            <TerrainType class="Type" type="TerrainInfo" none="false"/>
-            <iTerrainAttack/>
-        </TerrainAttack>
-    </TerrainAttacks>
-    <TerrainDefenses>
-        <TerrainDefense>
-            <TerrainType class="Type" type="TerrainInfo" none="false"/>
-            <iTerrainDefense/>
-        </TerrainDefense>
-    </TerrainDefenses>
-    <FeatureAttacks class="Dir" child="FeatureAttack">
-        <FeatureAttack class="Dir" child="FeatureType">
-            <FeatureType class="Type" type="FeatureInfo" none="false"/>
-            <iFeatureAttack/>
-        </FeatureAttack>
-    </FeatureAttacks>
-    <FeatureDefenses class="Dir" child="FeatureDefense">
-        <FeatureDefense class="Dir" child="FeatureType">
-            <FeatureType class="Type" type="FeatureInfo" none="false"/>
-            <iFeatureDefense/>
-        </FeatureDefense>
-    </FeatureDefenses>
-    <UnitClassAttackMods class="Dir" child="UnitClassAttackMod">
-        <UnitClassAttackMod class="Dir" child="UnitClassType">
-            <UnitClassType class="Type" type="UnitClassInfo" none="false"/>
-            <iUnitClassMod/>
-        </UnitClassAttackMod>
-    </UnitClassAttackMods>
-    <UnitClassDefenseMods class="Dir" child="UnitClassDefenseMod">
-        <UnitClassDefenseMod class="Dir" child="UnitClassType">
-            <UnitClassType class="Type" type="UnitClassInfo" none="false"/>
-            <iUnitClassMod/>
-        </UnitClassDefenseMod>
-    </UnitClassDefenseMods>
-    <UnitCombatMods>
-        <UnitCombatMod>
-            <UnitCombatType class="Type" type="UnitCombatInfo" none="false"/>
-            <iUnitCombatMod/>
-        </UnitCombatMod>
-    </UnitCombatMods>
-    <DomainMods class="Dir" child="DomainMod">
-        <DomainMod class="Dir" child="DomainType">
-            <DomainType class="Type" type="DomainInfo" none="false"/>
-            <iDomainMod/>
-        </DomainMod>
-    </DomainMods>
-    <TerrainDoubleMoves class="Dir" child="TerrainDoubleMove">
-        <TerrainDoubleMove class="Dir" child="TerrainType">
-            <TerrainType class="Type" type="TerrainInfo" none="false"/>
-            <bTerrainDoubleMove/>
-        </TerrainDoubleMove>
-    </TerrainDoubleMoves>
-    <FeatureDoubleMoves class="Dir" child="FeatureDoubleMove">
-        <FeatureDoubleMove class="Dir" child="FeatureType">
-            <FeatureType class="Type" type="FeatureInfo" none="false"/>
-            <bFeatureDoubleMove/>
-        </FeatureDoubleMove>
-    </FeatureDoubleMoves>
-    <UnitCombats class="Dir" child="UnitCombat">
-        <UnitCombat class="Dir" child="UnitCombatType">
-            <UnitCombatType class="Type" type="UnitCombatInfo" none="false"/>
-            <bUnitCombat/>
-        </UnitCombat>
-    </UnitCombats>
-    <HotKey/>
-    <bAltDown/>
-    <bShiftDown/>
-    <bCtrlDown/>
-    <bGraphicalOnly/>
-    <bNotEarnedByXP/>
-    <bHideFromPedia/>
-    <iHotKeyPriority/>
-    <Button class="Button"/>
-    <iOrderPriority/>
-</PromotionInfo>
-
-<RiverModelInfo>
-    <ModelFile/>
-    <BorderFile/>
-    <TextureIndex/>
-    <DeltaType/>
-    <Connections/>
-    <Rotations/>
-</RiverModelInfo>
-
-<Script2DSound>
-    <ScriptID/>
-    <SoundID/>
-    <SoundType/>
-    <iMinVolume/>
-    <iMaxVolume/>
-    <iPitchChangeDown/>
-    <iPitchChangeUp/>
-    <iMinLeftPan/>
-    <iMaxLeftPan/>
-    <iMinRightPan/>
-    <iMaxRightPan/>
-    <bLooping/>
-    <iMinTimeDelay/>
-    <iMaxTimeDelay/>
-    <bTaperForSoundtracks/>
-    <iLengthOfSound/>
-    <fMinDryLevel/>
-    <fMaxDryLevel/>
-    <fMinWetLevel/>
-    <fMaxWetLevel/>
-    <iNotPlayPercent/>
-</Script2DSound>
-
-<SpecialUnitInfo>
-    <Type/>
-    <Description/>
-    <bValid/>
-    <bCityLoad/>
-    <CarrierUnitAIs>
-        <CarrierUnitAI>
-            <UnitAIType class="Type" type="UnitAIInfo" none="false"/>
-            <bUnitAI/>
-        </CarrierUnitAI>
-    </CarrierUnitAIs>
-    <ProductionTraits>
-        <ProductionTrait>
-            <ProductionTraitType/>
-            <iProductionTrait/>
-        </ProductionTrait>
-    </ProductionTraits>
-</SpecialUnitInfo>
-
-<TerrainArtInfo class="Dir" child="Button">
-    <Type/>
-    <Path/>
-    <Grid/>
-    <Detail/>
-    <Button class="Button"/>
-    <LayerOrder/>
-    <TerrainGroup/>
-    <TextureBlend01/>
-    <TextureBlend02/>
-    <TextureBlend04/>
-    <TextureBlend08/>
-    <TextureBlend03/>
-    <TextureBlend06/>
-    <TextureBlend12/>
-    <TextureBlend09/>
-    <TextureBlend07/>
-    <TextureBlend14/>
-    <TextureBlend13/>
-    <TextureBlend11/>
-    <TextureBlend10/>
-    <TextureBlend05/>
-    <TextureBlend15/>
-</TerrainArtInfo>
-
-<TerrainInfo class="Dir" child="Button">
-    <Type/>
-    <Description/>
-    <Civilopedia/>
-    <Help/>
-    <ArtDefineTag class="Type" type="TerrainArtInfo" none="false"/>
-    <Yields class="Dir" child="YieldIntegerPair">
-        <YieldIntegerPair class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iValue/>
-        </YieldIntegerPair>
-    </Yields>
-    <RiverYieldIncreases class="Dir" child="YieldIntegerPair">
-        <YieldIntegerPair class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iValue/>
-        </YieldIntegerPair>
-    </RiverYieldIncreases>
-    <bWater/>
-    <bImpassable/>
-    <bFound/>
-    <bFoundCoast/>
-    <bBadCityLocation/>
-    <iMovement/>
-    <iSeeFrom/>
-    <iSeeThrough/>
-    <iBuildModifier/>
-    <iDefense/>
-    <Button class="Button"/>
-    <FootstepSounds/>
-    <WorldSoundscapeAudioScript class="Type" type="ScriptSoundscape" none="false"/>
-    <bGraphicalOnly/>
-</TerrainInfo>
-
-<TraitInfo>
-    <Type/>
-    <Description/>
-    <ShortDescription/>
-    <Help/>
-    <eCivEffect class="Type" type="CivEffectInfo" none="true"/>
-    <iLevelExperienceModifier/>
-    <iGreatGeneralRateModifier/>
-    <iDomesticGreatGeneralRateModifier/>
-    <iNativeAngerModifier/>
-    <iLearnTimeModifier/>
-    <iNativeCombatModifier/>
-    <iMissionaryModifier/>
-    <iNativeTradeModifier/>
-    <iRebelCombatModifier/>
-    <iTaxRateThresholdModifier/>
-    <iMaxTaxRateThresholdDecrease/>
-    <iMercantileFactor/>
-    <iAfricaSellProfitModifierInPercent/>
-    <iPortRoyalSellProfitModifierInPercent/>
-    <iDomesticMarketProfitModifierInPercent/>
-    <iTreasureModifier/>
-    <iGoodUniqueGoodyChanceModifierLand/>
-    <iGoodUniqueGoodyChanceModifierWater/>
-    <iUnhappinessFromSlavesModifier/>
-    <iChiefGoldModifier/>
-    <iNativeAttitudeChange/>
-    <iEuropeanAttitudeChange/>
-    <iKingAttitudeChange/>
-    <iCityDefense/>
-    <iLandPriceDiscount/>
-    <iRecruitPriceDiscount/>
-    <iRecruitPriceDiscountAfrica/>
-    <iRecruitPriceDiscountPortRoyal/>
-    <iEuropeTravelTimeModifier/>
-    <iImmigrationThresholdModifier/>
-    <iPopGrowthThresholdModifier/>
-    <iCultureLevelModifier/>
-    <iPioneerSpeedModifier/>
-    <iImprovementPriceModifier/>
-    <iImprovementGrowthTimeModifier/>
-    <iLearningByDoingFreeModifier/>
-    <iLearningByDoingRunawayModifier/>
-    <iLearningByDoingRevoltModifier/>
-    <iSpecialistPriceModifier/>
-    <iStorageCapacityModifier/>
-    <CityExtraYields/>
-    <ExtraYieldThresholds/>
-    <ProfessionEquipmentModifiers/>
-    <FreePromotions/>
-    <FreePromotionUnitCombats/>
-    <YieldModifiers/>
-    <TaxYieldModifiers/>
-    <BuildingYieldChanges/>
-    <UnitMoveChanges/>
-    <ProfessionMoveChanges/>
-    <BuildingProductionModifiers/>
-    <BuildingRequiredYieldModifiers/>
-    <UnitStrengthModifiers/>
-    <FreeBuildingClasses/>
-    <GoodyFactors/>
-</TraitInfo>
-
-<Type>
-    <TagGroupAllow/>
-    <TagGroupCity/>
-    <TagGroupGrowth/>
-</Type>
-
-<UnitArtInfo class="Dir" child="Button">
-    <Type/>
-    <Button class="Button"/>
-    <FullLengthIcon class="Button"/>
-    <fScale class="Float"/>
-    <fInterfaceScale class="Float"/>
-    <NIF/>
-    <KFM/>
-    <iDamageStates/>
-    <TrailDefinition/>
-    <fBattleDistance class="Float"/>
-    <fRangedDeathTime class="Float"/>
-    <bSmoothMove/>
-    <fAngleInterpRate/>
-    <fBankRate/>
-    <fExchangeAngle/>
-    <bCombatExempt/>
-    <bActAsRanged/>
-    <TrainSound class="Type" type="Script2DSound" none="true"/>
-    <AudioRunSounds>
-        <AudioRunTypeLoop/>
-        <AudioRunTypeEnd/>
-    </AudioRunSounds>
-    <SelectionSound class="Type" type="Script3DSound" none="true"/>
-    <ActionSound class="Type" type="Script3DSound" none="true"/>
-</UnitArtInfo>
-
-<UnitArtStyleTypeInfo class="Dir">
-    <Type/>
-    <StyleUnits class="Dir">
-        <StyleUnit class="Dir" child="UnitMeshGroup">
-            <UnitType class="Type" type="UnitInfo" none="true"/>
-            <ProfessionType class="Type" type="ProfessionInfo" none="false"/>
-            <UnitMeshGroup class="Dir" child="ArtDefineTag">
-                <ArtDefineTag class="Type" type="UnitArtInfo" none="false"/>
-            </UnitMeshGroup>
-        </StyleUnit>
-    </StyleUnits>
-</UnitArtStyleTypeInfo>
-
-<UnitClassInfo class="Dir" child="DefaultUnit">
-    <Type/>
-    <Description/>
-    <DefaultUnit class="Type" type="UnitInfo" none="false"/>
-</UnitClassInfo>
-
-<UnitInfo class="Dir" child="ProfessionMeshGroups">
-    <Type/>
-    <Class class="Type" type="UnitClassInfo" none="false"/>
-    <UniqueNames>
-        <UniqueName/>
-    </UniqueNames>
-    <Special class="Type" type="SpecialUnitInfo" none="true"/>
-    <Capture class="Type" type="UnitClassInfo" none="true"/>
-    <Combat class="Type" type="UnitCombatInfo" none="false"/>
-    <Domain class="Type" type="DomainInfo" none="false"/>
-    <DefaultUnitAI class="Type" type="UnitAIInfo" none="false"/>
-    <DefaultProfession class="Type" type="ProfessionInfo" none="true" help="help"/>
-    <eEthnicity class="Type" type="EthnicityType" none="false"/>
-    <eCitizenStatus class="Type" type="CitizenStatusType" none="true"/>
-    <Invisible class="Type" type="InvisibleInfo" none="true"/>
-    <SeeInvisible class="Type" type="InvisibleInfo" none="true"/>
-    <Description/>
-    <Civilopedia/>
-    <Strategy/>
-    <Help/>
-    <iTeachLevel/>
-    <fNBMOD_REF_StrengthWeight class="Float"/>
-    <iAnimalPatrolWeight/>
-    <iAnimalAttackWeight/>
-    <bGraphicalOnly/>
-    <bNoBadGoodies/>
-    <bOnlyDefensive/>
-    <bNoCapture/>
-    <bQuickCombat/>
-    <bRivalTerritory class="Bool"/>
-    <bMilitaryProduction/>
-    <bFound/>
-    <bInvisible/>
-    <bNoDefensiveBonus/>
-    <bCanMoveImpassable/>
-    <bMoveIntoPeak/>
-    <bCanMoveAllTerrain/>
-    <bFlatMovementCost/>
-    <bIgnoreTerrainCost/>
-    <bMechanized/>
-    <bLineOfSight/>
-    <bHiddenNationality/>
-    <bSlaveShip/>
-    <bTreasureShip/>
-    <bTroopShip/>
-    <bAlwaysHostile/>
-    <bTreasure/>
-    <bAnimal/>
-    <bNoRevealMap/>
-    <bLbDCanBecomeExpert/>
-    <bLbDCanGetFree/>
-    <bLbDCanEscape/>
-    <bLbDCanRevolt/>
-    <UnitClassUpgrades/>
-    <UnitAIs>
-        <UnitAI>
-            <UnitAIType class="Type" type="UnitAIInfo" none="false"/>
-            <bUnitAI/>
-        </UnitAI>
-    </UnitAIs>
-    <NotUnitAIs>
-        <UnitAI>
-            <UnitAIType class="Type" type="UnitAIInfo" none="false"/>
-            <bUnitAI/>
-        </UnitAI>
-    </NotUnitAIs>
-    <Builds>
-        <Build>
-            <BuildType/>
-            <bBuild/>
-        </Build>
-    </Builds>
-    <PrereqBuilding class="Type" type="BuildingClassInfo" none="true"/>
-    <PrereqOrBuildings/>
-    <ProductionTraits>
-        <ProductionTrait/>
-    </ProductionTraits>
-    <iAIWeight/>
-    <YieldCosts class="Dir" child="YieldCost">
-        <YieldCost class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iCost/>
-        </YieldCost>
-    </YieldCosts>
-    <iHurryCostModifier/>
-    <iProductionWhenUsed/>
-    <iAdvancedStartCost/>
-    <iAdvancedStartCostIncrease/>
-    <iEuropeCost/>
-    <iEuropeCostIncrease/>
-    <iPortRoyalCost/>
-    <iPortRoyalCostIncrease/>
-    <iAfricaCost/>
-    <iAfricaCostIncrease/>
-    <iImmigrationWeight/>
-    <iImmigrationWeightDecay/>
-    <iMinAreaSize/>
-    <iMoves/>
-    <bCapturesCargo/>
-    <bCapturesShips/>
-    <iCaptureShipsChanceIncrease/>
-    <iWorkRate/>
-    <iWorkRateModifier/>
-    <iGoldFromGoodiesAndChiefsModifier/>
-    <iMissionaryRateModifier/>
-    <iNativeTradeRateModifier/>
-    <TerrainImpassables class="Dir" child="TerrainImpassable">
-        <TerrainImpassable class="Dir" child="TerrainType">
-            <TerrainType class="Type" type="TerrainInfo" none="false"/>
-            <bTerrainImpassable/>
-        </TerrainImpassable>
-    </TerrainImpassables>
-    <FeatureImpassables class="Dir" child="FeatureImpassable">
-        <FeatureImpassable class="Dir" child="FeatureType">
-            <FeatureType class="Type" type="FeatureInfo" none="false"/>
-            <bFeatureImpassable/>
-        </FeatureImpassable>
-    </FeatureImpassables>
-    <TerrainNatives class="Dir" child="TerrainNative">
-        <TerrainNative class="Dir" child="TerrainType">
-            <TerrainType class="Type" type="TerrainInfo" none="false"/>
-            <bTerrainNative/>
-        </TerrainNative>
-    </TerrainNatives>
-    <EvasionBuildings class="Dir" child="EvasionBuilding">
-        <EvasionBuilding class="Dir" child="BuildingClass">
-            <BuildingClass class="Type" type="BuildingClassInfo" none="false"/>
-            <bEvasion/>
-        </EvasionBuilding>
-    </EvasionBuildings>
-    <bGatherBoat/>
-    <YieldsGatherable class="Dir" child="YieldGatherable">
-        <YieldGatherable class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <bGathers/>
-        </YieldGatherable>
-    </YieldsGatherable>
-    <iCombat/>
-    <iXPValueAttack/>
-    <iXPValueDefense/>
-    <iWithdrawalProb/>
-    <iCityAttack/>
-    <iCityDefense/>
-    <iHillsAttack/>
-    <iHillsDefense/>
-    <iDomesticBonus/>
-    <TerrainAttacks/>
-    <TerrainDefenses/>
-    <FeatureAttacks/>
-    <FeatureDefenses/>
-    <UnitClassAttackMods/>
-    <UnitClassDefenseMods/>
-    <UnitCombatMods/>
-    <DomainMods>
-        <DomainMod>
-            <DomainType/>
-            <iDomainMod/>
-        </DomainMod>
-    </DomainMods>
-    <YieldModifiers/>
-    <YieldDemands class="Dir" child="YieldDemand">
-        <YieldDemand class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iYieldDemand/>
-        </YieldDemand>
-    </YieldDemands>
-    <YieldChanges class="Dir" child="YieldChange">
-        <YieldChange class="Dir" child="YieldType">
-            <YieldType class="Type" type="YieldInfo" none="false"/>
-            <iChange/>
-        </YieldChange>
-    </YieldChanges>
-    <BonusYieldChanges/>
-    <bLandYieldChanges/>
-    <bWaterYieldChanges/>
-    <iBombardRate/>
-    <SpecialCargo class="Type" type="SpecialUnitInfo" none="true"/>
-    <DomainCargo class="Type" type="DomainInfo" none="true"/>
-    <iCargo/>
-    <iRequiredTransportSize/>
-    <iBerthSize/>
-    <iHarbourSpaceNeeded/>
-    <iBarracksSpaceNeeded/>
-    <iAsset/>
-    <iPower/>
-    <iNativeLearnTime/>
-    <iStudentWeight/>
-    <iTeacherWeight/>
-    <ProfessionMeshGroups class="Dir" child="UnitMeshGroups">
-        <UnitMeshGroups class="Dir" child="UnitMeshGroup">
-            <ProfessionType class="Type" type="ProfessionInfo" none="true"/>
-            <fMaxSpeed/>
-            <fPadTime/>
-            <iMeleeWaveSize/>
-            <iRangedWaveSize/>
-            <UnitMeshGroup class="Dir" child="ArtDefineTag">
-                <iRequired/>
-                <ArtDefineTag class="Type" type="UnitArtInfo" none="false"/>
-            </UnitMeshGroup>
-        </UnitMeshGroups>
-    </ProfessionMeshGroups>
-    <FormationType/>
-    <HotKey/>
-    <bAltDown/>
-    <bShiftDown/>
-    <bCtrlDown/>
-    <iHotKeyPriority/>
-    <FreePromotions>
-        <FreePromotion>
-            <PromotionType class="Type" type="PromotionInfo" none="false"/>
-            <bFreePromotion/>
-        </FreePromotion>
-    </FreePromotions>
-    <LeaderPromotion class="Type" type="PromotionInfo" none="true"/>
-    <iLeaderExperience/>
-    <ProfessionsNotAllowed class="Dir" child="ProfessionNotAllowed">
-        <ProfessionNotAllowed class="Dir" child="VoidProfessionType">
-            <VoidProfessionType class="Type" type="ProfessionInfo" none="false"/>
-            <bIsNotAllowed/>
-        </ProfessionNotAllowed>
-    </ProfessionsNotAllowed>
-    <iOrderPriority/>
-</UnitInfo>
-
-<YieldInfo class="Dir" child="Icon">
-    <Type/>
-    <Description/>
-    <Civilopedia/>
-    <bCargo/>
-    <bIgnoredForStorageCapacity/>
-    <bIsExportYield/>
-    <bLivestock/>
-    <iBuyPriceLow/>
-    <iBuyPriceHigh/>
-    <iBuyPriceMin/>
-    <iSellPriceDifference/>
-    <iPriceChangeThreshold/>
-    <iPriceCorrectionPercent/>
-    <iEuropeVolumeAttrition/>
-    <iAfricaBuyPriceLow/>
-    <iAfricaBuyPriceHigh/>
-    <iAfricaSellPriceDifference/>
-    <iPortRoyalBuyPriceLow/>
-    <iPortRoyalBuyPriceHigh/>
-    <iPortRoyalSellPriceDifference/>
-    <iNativeBuyPrice/>
-    <iNativeSellPrice/>
-    <iNativeConsumptionPercent/>
-    <iNativeHappy/>
-    <iHillsChange/>
-    <iPeakChange/>
-    <iLakeChange/>
-    <iCityChange/>
-    <iMinCity/>
-    <iAIWeightPercent/>
-    <iAIBaseValue/>
-    <iNativeBaseValue/>
-    <iPower/>
-    <iAsset/>
-    <ColorType class="Type" type="ColorVal" none="false"/>
-    <UnitClass class="Type" type="UnitClassInfo" none="false"/>
-    <iTextureIndex/>
-    <iWaterTextureIndex/>
-    <Icon class="Button"/>
-    <CombiIcon/>
-    <HighlightIcon/>
-    <Button class="Button"/>
-</YieldInfo>
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<AlarmInfo/>
+	<AnimationCategory/>
+	<BonusArtInfo class="Dir" child="Button">
+		<Type/>
+		<fScale/>
+		<fInterfaceScale/>
+		<NIF/>
+		<KFM/>
+		<Button class="Button"/>
+		<FontButtonIndex/>
+		<bShadowCastor/>
+		<bRefractionCastor/>
+	</BonusArtInfo>
+	<BonusInfo class="Dir" child="ArtDefineTag">
+		<Type/>
+		<Description/>
+		<Civilopedia/>
+		<Help/>
+		<ArtDefineTag class="Type" type="BonusArtInfo" none="false"/>
+		<BuildingType class="Type" type="BuildingInfo" none="true"/>
+		<YieldChanges class="Dir" child="YieldIntegerPair">
+			<YieldIntegerPair class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iValue/>
+			</YieldIntegerPair>
+		</YieldChanges>
+		<iHealthEffectFromRessource/>
+		<iAIObjective/>
+		<iPlacementOrder/>
+		<iConstAppearance/>
+		<iMinAreaSize/>
+		<iMinLatitude/>
+		<iMaxLatitude/>
+		<Rands>
+			<iRandApp1/>
+			<iRandApp2/>
+			<iRandApp3/>
+			<iRandApp4/>
+		</Rands>
+		<iPlayer/>
+		<iTilesPer/>
+		<iMinLandPercent/>
+		<iUnique/>
+		<iGroupRange/>
+		<iGroupRand/>
+		<bArea/>
+		<bPeaks/>
+		<bHills/>
+		<bOcean/>
+		<bFlatlands/>
+		<bNoRiverSide/>
+		<bRiverSideOnly/>
+		<bCoastalLandOnly/>
+		<bOnlySouthernHemisphere/>
+		<bOnlyNorthernHemisphere/>
+		<TerrainBooleans/>
+		<FeatureBooleans/>
+		<FeatureTerrainBooleans/>
+		<bUseLSystem/>
+		<bWhalingboatWorkable/>
+		<bFishingboatWorkable/>
+	</BonusInfo>
+	<BuildInfo>
+		<Type/>
+		<Description/>
+		<Help/>
+		<iTime/>
+		<iCost/>
+		<bKill class="Bool" help="Will completing this build kill the building unit?[NEWLINE](Think civ4 fishing boats, which vanish when building improvements)"/>
+		<ImprovementType class="Type" type="ImprovementInfo" none="true"/>
+		<PrereqTerrainType class="Type" type="TerrainInfo" none="true"/>
+		<ResultTerrainType class="Type" type="TerrainInfo" none="true"/>
+		<ResultFeatureType class="Type" type="FeatureInfo" none="true"/>
+		<RouteType class="Type" type="RouteInfo" none="true"/>
+		<EntityEvent/>
+		<FeatureStructs>
+			<FeatureStruct>
+				<FeatureType/>
+				<iTime/>
+				<Yields>
+					<Yield>
+						<YieldType/>
+						<iYield/>
+					</Yield>
+				</Yields>
+				<bRemove/>
+			</FeatureStruct>
+		</FeatureStructs>
+		<HotKey/>
+		<bAltDown/>
+		<bShiftDown/>
+		<bCtrlDown/>
+		<iHotKeyPriority/>
+		<Button/>
+		<iOrderPriority/>
+	</BuildInfo>
+	<BuildingArtInfo class="Dir" child="Button">
+		<Type/>
+		<LSystem/>
+		<bAnimated/>
+		<CityTexture/>
+		<CitySelectedTexture/>
+		<fScale/>
+		<fInterfaceScale/>
+		<NIF/>
+		<KFM/>
+		<Button class="Button"/>
+	</BuildingArtInfo>
+	<BuildingClassInfo class="Dir" child="DefaultBuilding">
+		<Type/>
+		<Description/>
+		<DefaultBuilding class="Type" type="BuildingInfo" none="false"/>
+		<VictoryThresholds/>
+	</BuildingClassInfo>
+	<BuildingInfo class="Dir" child="ArtDefineTag">
+		<Type/>
+		<BuildingClass class="Type" type="BuildingClassInfo" none="false"/>
+		<SpecialBuildingType class="Type" type="SpecialBuildingInfo" none="false"/>
+		<iSpecialBuildingPriority/>
+		<Description/>
+		<Civilopedia/>
+		<Strategy/>
+		<Help/>
+		<ArtDefineTag class="Type" type="BuildingArtInfo" none="false"/>
+		<MovieDefineTag/>
+		<VictoryPrereq/>
+		<FreeStartEra/>
+		<MaxStartEra/>
+		<ProductionTraits/>
+		<FreePromotion/>
+		<RouteTypeCreated/>
+		<bGraphicalOnly/>
+		<bWorksWater/>
+		<bWater/>
+		<bRiver/>
+		<bCapital/>
+		<bNationalWonder/>
+		<bNeverCapture/>
+		<bCenterInCity/>
+		<iAIWeight/>
+		<YieldCosts/>
+		<iHurryCostModifier/>
+		<iAdvancedStartCost/>
+		<iAdvancedStartCostIncrease/>
+		<iProfessionOutput/>
+		<iMaxWorkers/>
+		<iMinAreaSize/>
+		<iConquestProb/>
+		<iCitiesPrereq/>
+		<iTeamsPrereq/>
+		<iLevelPrereq/>
+		<iMinLatitude/>
+		<iMaxLatitude/>
+		<iExperience/>
+		<iFoodKept/>
+		<iHealRateChange/>
+		<iMilitaryProductionModifier/>
+		<iDefense/>
+		<iBombardDefense/>
+		<iAsset/>
+		<iPower/>
+		<iYieldStorage/>
+		<iMaxHarbourSpaceProvided/>
+		<iMaxBarracksSpaceProvided/>
+		<iStorageLossSellPercentage/>
+		<bIgnoresBoycott/>
+		<bUnlocksStorageLossTradeSettings/>
+		<fVisibilityPriority/>
+		<LandPlotYieldChanges/>
+		<SeaPlotYieldChanges/>
+		<RiverPlotYieldChanges/>
+		<YieldChanges/>
+		<YieldModifiers>
+			<YieldModifier>
+				<YieldType/>
+				<iModifier/>
+			</YieldModifier>
+		</YieldModifiers>
+		<iDomesticMarketModifier/>
+		<iEntertainmentGoldModifier/>
+		<YieldDemands/>
+		<ConstructSound/>
+		<UnitCombatFreeExperiences/>
+		<DomainFreeExperiences/>
+		<DomainProductionModifiers/>
+		<PrereqBuildingClasses/>
+		<BuildingClassNeededs/>
+		<RequiredAdjacentTerrains/>
+		<RequiredCatchmentAreaTerrains/>
+		<RequiredCatchmentAreaFeatures/>
+		<AIRequiredCatchmentAreaTerrains/>
+		<AIRequiredCatchmentAreaFeatures/>
+		<AIRequiredCatchmentAreaPlotTypes/>
+		<AIUnitClassWeights>
+			<AIUnitClassWeight>
+				<eUnitClass/>
+				<iWeight/>
+			</AIUnitClassWeight>
+		</AIUnitClassWeights>
+		<HotKey/>
+		<bAltDown/>
+		<bShiftDown/>
+		<bCtrlDown/>
+		<iHotKeyPriority/>
+		<iTeachLevel/>
+		<iAICitySize/>
+		<iOrderPriority/>
+	</BuildingInfo>
+	<CivilizationArtInfo class="Dir" child="Button">
+		<Type/>
+		<Button class="Button"/>
+		<Path/>
+		<bWhiteFlag/>
+		<bInvertFlag/>
+		<iFontButtonIndex/>
+	</CivilizationArtInfo>
+	<CivilizationInfo child="ArtDefineTag" class="Dir">
+		<Type/>
+		<Description/>
+		<ShortDescription/>
+		<Adjective/>
+		<Civilopedia/>
+		<DefaultPlayerColor class="Type" type="PlayerColorInfo" none="false"/>
+		<ArtDefineTag type="CivilizationArtInfo" none="false" class="Type"/>
+		<ArtStyleType class="Type" type="ArtStyleType" none="false"/>
+		<UnitArtStyleType class="Type" type="UnitArtStyleTypeInfo" none="false"/>
+		<bPlayable/>
+		<bAIPlayable class="Bool"/>
+		<bWaterStart/>
+		<bOpenBorders help="fdg"/>
+		<bWaterWorks/>
+		<bEurope/>
+		<bNative/>
+		<bNorthAmericanNative/>
+		<bSouthAmericanNative/>
+		<bCentralAmericanNative/>
+		<eCivCategory/>
+		<eCivEffect class="Type" type="CivEffectInfo" none="true"/>
+		<iAdvancedStartPoints/>
+		<iAreaMultiplier/>
+		<iDensityMultiplier/>
+		<iTreasure/>
+		<FavoredTerrain class="Type" type="TerrainInfo" none="true"/>
+		<DefaultProfession class="Type" type="ProfessionInfo" none="false"/>
+		<Cities/>
+		<Generals/>
+		<Admirals/>
+		<Ships/>
+		<Buildings>
+			<Building class="Dir" child="BuildingType">
+				<BuildingClassType class="Type" type="BuildingClassInfo" none="false"/>
+				<BuildingType class="Type" type="BuildingInfo" none="true"/>
+			</Building>
+		</Buildings>
+		<Units/>
+		<Professions/>
+		<Traits/>
+		<FreeUnitClasses/>
+		<FreeBuildingClasses/>
+		<TeachUnitClasses/>
+		<FreeYields/>
+		<CapturedCityUnitClass class="Type" type="UnitClassInfo" none="true"/>
+		<InitialCivics/>
+		<Leaders class="Dir" child="Leader">
+			<Leader class="Dir" child="LeaderName">
+				<LeaderName class="Type" type="LeaderHeadInfo" none="false"/>
+				<bLeaderAvailability/>
+			</Leader>
+		</Leaders>
+		<DerivativeCiv class="Type" type="CivilizationInfo" none="true"/>
+		<CivilizationSelectionSound class="Type" type="Script3DSound" none="false"/>
+		<CivilizationActionSound class="Type" type="Script3DSound" none="false"/>
+	</CivilizationInfo>
+	<DefineName>
+		<iDefineIntVal/>
+		<fDefineFloatVal/>
+		<DefineTextVal/>
+	</DefineName>
+	<EntityEventInfo/>
+	<EventInfo>
+		<Type/>
+		<Description/>
+		<LocalInfoText/>
+		<WorldNewsTexts/>
+		<OtherPlayerPopup/>
+		<QuestFailText/>
+		<bQuest/>
+		<bGlobal/>
+		<bTeam/>
+		<bPickCity/>
+		<bPickOtherPlayerCity/>
+		<bDeclareWar/>
+		<iGold/>
+		<bGoldToPlayer/>
+		<iRandomGold/>
+		<iCulture/>
+		<iHealth/>
+		<UnitClass/>
+		<iNumFreeUnits/>
+		<bDisbandUnit/>
+		<iUnitExperience/>
+		<iUnitImmobileTurns/>
+		<UnitPromotion/>
+		<UnitName/>
+		<UnitCombatPromotions/>
+		<UnitClassPromotions class="Dir" child="UnitClassPromotion">
+			<UnitClassPromotion class="Dir" child="UnitClass">
+				<UnitClass class="Type" type="UnitClassInfo" none="false"/>
+				<UnitPromotion class="Type" type="PromotionInfo" none="false"/>
+			</UnitClassPromotion>
+		</UnitClassPromotions>
+		<BuildingClass/>
+		<iBuildingChange/>
+		<BuildingExtraYields/>
+		<iRevoltTurns/>
+		<iMinPillage/>
+		<iMaxPillage/>
+		<iFood/>
+		<iFoodPercent/>
+		<FeatureType class="Type" type="FeatureInfo" none="true"/>
+		<iFeatureChange/>
+		<ImprovementType class="Type" type="ImprovementInfo" none="true"/>
+		<iImprovementChange/>
+		<RouteType class="Type" type="RouteInfo" none="true"/>
+		<iRouteChange/>
+		<BonusRevealed/>
+		<PlotExtraYields/>
+		<iOurAttitudeModifier/>
+		<iAttitudeModifier/>
+		<iTheirEnemyAttitudeModifier/>
+		<iPopulationChange/>
+		<AdditionalEvents/>
+		<EventTimes/>
+		<ClearEvents/>
+		<PythonCallback/>
+		<PythonExpireCheck/>
+		<PythonCanDo/>
+		<PythonHelp/>
+		<Button class="Button"/>
+		<iAIValue/>
+		<iGenericParameter1/>
+		<iGenericParameter2/>
+		<iGenericParameter3/>
+		<iGenericParameter4/>
+	</EventInfo>
+	<FeatureArtInfo class="Dir" child="Button">
+		<Type/>
+		<bAnimated/>
+		<TileArtType/>
+		<fScale class="Float"/>
+		<fInterfaceScale class="Float"/>
+		<Button class="Button"/>
+		<FeatureVariety>
+			<FeatureArtPieces>
+				<FeatureArtPiece>
+					<ModelFile/>
+					<Connections/>
+				</FeatureArtPiece>
+			</FeatureArtPieces>
+			<iModelCopies/>
+			<VarietyButton/>
+		</FeatureVariety>
+	</FeatureArtInfo>
+	<FeatureInfo class="Dir" child="ArtDefineTag">
+		<Type/>
+		<Description/>
+		<Civilopedia/>
+		<Help/>
+		<ArtDefineTag class="Type" type="FeatureArtInfo" none="false"/>
+		<YieldChanges class="Dir" child="YieldIntegerPair">
+			<YieldIntegerPair class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iValue/>
+			</YieldIntegerPair>
+		</YieldChanges>
+		<RiverYieldIncreases class="Dir" child="YieldIntegerPair">
+			<YieldIntegerPair class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iValue/>
+			</YieldIntegerPair>
+		</RiverYieldIncreases>
+		<iMovement/>
+		<iSeeThrough/>
+		<iDefense/>
+		<iAppearance/>
+		<iDisappearance/>
+		<iTurnDamage/>
+		<bGeneratedEveryRound/>
+		<iGrowth/>
+		<bNoCoast/>
+		<bOnlyCoastalLand/>
+		<bNoRiver/>
+		<bNoAdjacent/>
+		<bRequiresFlatlands/>
+		<bRequiresHills/>
+		<bRequiresPeaks/>
+		<bRequiresRiver/>
+		<bImpassable/>
+		<bNorthMovementBonus/>
+		<bSouthMovementBonus/>
+		<bEastMovementBonus/>
+		<bWestMovementBonus/>
+		<bNorthEastMovementBonus/>
+		<bNorthWestMovementBonus/>
+		<bSouthEastMovementBonus/>
+		<bSouthWestMovementBonus/>
+		<bNoCity/>
+		<bNoImprovement/>
+		<bVisibleAlways/>
+		<OnUnitChangeTo class="Type" type="FeatureInfo" none="true"/>
+		<TerrainBooleans/>
+		<FootstepSounds/>
+		<WorldSoundscapeAudioScript class="Type" type="ScriptSoundscape" none="true"/>
+		<EffectType class="Type" type="EffectInfo" none="true"/>
+		<iEffectProbability/>
+		<iAdvancedStartRemoveCost/>
+	</FeatureInfo>
+	<ImprovementArtInfo>
+		<Type/>
+		<bExtraAnimations/>
+		<fScale/>
+		<fInterfaceScale/>
+		<NIF/>
+		<KFM/>
+		<Button class="Button"/>
+	</ImprovementArtInfo>
+	<ImprovementInfo class="Dir" child="ArtDefineTag">
+		<Type/>
+		<Description/>
+		<Civilopedia/>
+		<Help/>
+		<ArtDefineTag class="Type" type="ImprovementArtInfo" none="false"/>
+		<PrereqNatureYields class="Dir" child="YieldIntegerPair">
+			<YieldIntegerPair class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iValue/>
+			</YieldIntegerPair>
+		</PrereqNatureYields>
+		<YieldIncreases class="Dir" child="YieldIntegerPair">
+			<YieldIntegerPair class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iValue/>
+			</YieldIntegerPair>
+		</YieldIncreases>
+		<RiverSideYieldChanges class="Dir" child="YieldIntegerPair">
+			<YieldIntegerPair class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iValue/>
+			</YieldIntegerPair>
+		</RiverSideYieldChanges>
+		<HillsYieldChanges class="Dir" child="YieldIntegerPair">
+			<YieldIntegerPair class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iValue/>
+			</YieldIntegerPair>
+		</HillsYieldChanges>
+		<bActsAsCity/>
+		<bFort/>
+		<bMonastery/>
+		<bCanal/>
+		<bNotAllowedNextToSameAsItself/>
+		<bHillsMakesValid/>
+		<bRiverSideMakesValid/>
+		<bRequiresFlatlands/>
+		<bRequiresRiverSide/>
+		<bRequiresFeature/>
+		<bWater/>
+		<bGoody/>
+		<bGoodyForSpawningUnits/>
+		<bGoodyForSpawningHostileAnimals/>
+		<bGoodyForSpawningHostileNatives/>
+		<bGoodyForSpawningHostileCriminals/>
+		<bPermanent/>
+		<bUseLSystem/>
+		<iAdvancedStartCost/>
+		<iAdvancedStartCostIncrease/>
+		<iTilesPerGoody/>
+		<iGoodyRange/>
+		<iFeatureGrowth/>
+		<iUpgradeTime/>
+		<iDefenseModifier/>
+		<iFoodModifierForCity/>
+		<iHammersModifierForCity/>
+		<iToolsModifierForCity/>
+		<iStorageModifierForCity/>
+		<iPillageGold/>
+		<iHealModifier/>
+		<bOutsideBorders/>
+		<TerrainMakesValids>
+			<TerrainMakesValid>
+				<TerrainType class="Type" type="TerrainInfo" none="false"/>
+				<bMakesValid/>
+			</TerrainMakesValid>
+		</TerrainMakesValids>
+		<FeatureMakesValids>
+			<FeatureMakesValid>
+				<FeatureType class="Type" type="FeatureInfo" none="false"/>
+				<bMakesValid/>
+			</FeatureMakesValid>
+		</FeatureMakesValids>
+		<BonusTypeStructs class="Dir" child="BonusTypeStruct">
+			<BonusTypeStruct class="Dir" child="BonusType">
+				<BonusType class="Type" type="BonusInfo" none="false"/>
+				<bBonusMakesValid/>
+				<iDiscoverRand/>
+				<YieldChanges/>
+			</BonusTypeStruct>
+		</BonusTypeStructs>
+		<ImprovementPillage class="Type" type="ImprovementInfo" help="Set which improvement this improvement turns into if it is pillaged.[NEWLINE]Defaults to NONE, which means the improvement is destroyed.[NEWLINE]Can be used to downgrade improvements and require multiple pillages to completely remove." none="true"/>
+		<ImprovementUpgrade class="Type" type="ImprovementInfo" none="true"/>
+		<RouteYieldChanges>
+			<RouteYieldChange>
+				<RouteType class="Type" type="RouteInfo" none="true"/>
+				<RouteYields>
+					<YieldIntegerPair>
+						<YieldType class="Type" type="YieldInfo" none="false"/>
+						<iValue/>
+					</YieldIntegerPair>
+				</RouteYields>
+			</RouteYieldChange>
+		</RouteYieldChanges>
+		<WorldSoundscapeAudioScript class="Type" type="ScriptSoundscape" none="true"/>
+		<bGraphicalOnly/>
+		<iCulture/>
+		<iCultureRange/>
+		<iPlotVisibilityChange/>
+		<iUnitVisibilityChange/>
+		<iSeeFrom/>
+		<iUnique/>
+		<bBombardable/>
+		<bUpgradeRequiresFortify/>
+	</ImprovementInfo>
+	<LandscapeInfo>
+		<Type/>
+		<iWaterHeight/>
+		<EnvironmentTexture/>
+		<fTextureScaleX/>
+		<fTextureScaleY/>
+		<iPlotsPerCellX/>
+		<iPlotsPerCellY/>
+		<iPlotVertsWide/>
+		<iPlotVertsHigh/>
+		<fZScale/>
+		<fPeakScale/>
+		<fHillScale/>
+	</LandscapeInfo>
+	<LeaderHeadInfo class="Dir" child="ArtDefineTag">
+		<Type/>
+		<Description/>
+		<Civilopedia/>
+		<ArtDefineTag class="Type" type="LeaderheadArtInfo" none="false"/>
+		<AlarmType class="Type" type="AlarmInfo" none="true"/>
+		<iBaseAttitude/>
+		<iNativeAttitude/>
+		<iMinAttitudeGiveMercs/>
+		<iBaseChanceGiveMercs/>
+		<iMinAttitudeGiveNativeSlaves/>
+		<iBaseChanceGiveNativeSlaves/>
+		<iRefuseToTalkWarThreshold/>
+		<iMaxGoldTradePercent/>
+		<iMaxWarRand/>
+		<iMaxWarNearbyPowerRatio/>
+		<iMaxWarDistantPowerRatio/>
+		<iMaxWarMinAdjacentLandPercent/>
+		<iLimitedWarRand/>
+		<iLimitedWarPowerRatio/>
+		<iDogpileWarRand/>
+		<iMakePeaceRand/>
+		<iDeclareWarTradeRand/>
+		<iDemandRebukedSneakProb/>
+		<iDemandRebukedWarProb/>
+		<iRazeCityProb/>
+		<iBaseAttackOddsChange/>
+		<iAttackOddsChangeRand/>
+		<iCloseBordersAttitudeChange/>
+		<iAlarmAttitudeChange/>
+		<iLostWarAttitudeChange/>
+		<iRebelAttitudeDivisor/>
+		<iAtWarAttitudeDivisor/>
+		<iAtWarAttitudeChangeLimit/>
+		<iAtPeaceAttitudeDivisor/>
+		<iAtPeaceAttitudeChangeLimit/>
+		<iOpenBordersAttitudeDivisor/>
+		<iOpenBordersAttitudeChangeLimit/>
+		<iDefensivePactAttitudeDivisor/>
+		<iDefensivePactAttitudeChangeLimit/>
+		<iShareWarAttitudeChange/>
+		<iShareWarAttitudeDivisor/>
+		<iShareWarAttitudeChangeLimit/>
+		<DemandTributeAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
+		<NoGiveHelpAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
+		<MapRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
+		<DeclareWarRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
+		<DeclareWarThemRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
+		<StopTradingRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
+		<StopTradingThemRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
+		<OpenBordersRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
+		<DefensivePactRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
+		<PermanentAllianceRefuseAttitudeThreshold class="Type" type="AttitudeInfo" none="false"/>
+		<NativeRaidAttitudeThreshold class="Type" type="AttitudeInfo" none="true"/>
+		<Traits class="Dir" child="Trait">
+			<Trait class="Dir" child="TraitType">
+				<TraitType class="Type" type="TraitInfo" none="false"/>
+				<bTrait/>
+			</Trait>
+		</Traits>
+		<ContactRands class="Dir" child="ContactRand">
+			<ContactRand class="Dir" child="ContactType">
+				<ContactType class="Type" type="ContactType" none="false"/>
+				<iContactRand/>
+			</ContactRand>
+		</ContactRands>
+		<ContactDelays>
+			<ContactDelay>
+				<ContactType class="Type" type="ContactType" none="false"/>
+				<iContactDelay/>
+			</ContactDelay>
+		</ContactDelays>
+		<MemoryDecays>
+			<MemoryDecay>
+				<MemoryType class="Type" type="MemoryInfo" none="false"/>
+				<iMemoryRand/>
+			</MemoryDecay>
+		</MemoryDecays>
+		<MemoryAttitudePercents>
+			<MemoryAttitudePercent>
+				<MemoryType class="Type" type="MemoryInfo" none="false"/>
+				<iMemoryAttitudePercent/>
+			</MemoryAttitudePercent>
+		</MemoryAttitudePercents>
+		<NoWarAttitudeProbs>
+			<NoWarAttitudeProb>
+				<AttitudeType class="Type" type="AttitudeInfo" none="false"/>
+				<iNoWarProb/>
+			</NoWarAttitudeProb>
+		</NoWarAttitudeProbs>
+		<UnitAIWeightModifiers>
+			<UnitAIWeightModifier>
+				<UnitAIType class="Type" type="UnitAIInfo" none="false"/>
+				<iWeightModifier/>
+			</UnitAIWeightModifier>
+		</UnitAIWeightModifiers>
+		<ImprovementWeightModifiers>
+			<ImprovementWeightModifier>
+				<ImprovementType class="Type" type="ImprovementInfo" none="false"/>
+				<iWeightModifier/>
+			</ImprovementWeightModifier>
+		</ImprovementWeightModifiers>
+		<DiplomacyMusicPeace>
+			<DiploMusicPeaceEra>
+				<EraType class="Type" type="EraInfo" none="false"/>
+				<DiploScriptId class="Type" type="Script2DSound" none="false"/>
+			</DiploMusicPeaceEra>
+		</DiplomacyMusicPeace>
+		<DiplomacyMusicWar>
+			<DiploMusicWarEra>
+				<EraType class="Type" type="EraInfo" none="false"/>
+				<DiploScriptId class="Type" type="Script2DSound" none="false"/>
+			</DiploMusicWarEra>
+		</DiplomacyMusicWar>
+	</LeaderHeadInfo>
+	<LeaderheadArtInfo class="Dir" child="Button">
+		<Type/>
+		<Button class="Button"/>
+		<NIF/>
+		<KFM/>
+		<BackgroundKFM/>
+	</LeaderheadArtInfo>
+	<MainMenu>
+		<Type/>
+		<Description/>
+		<Scene/>
+		<Soundtrack/>
+		<LoadingScreens/>
+		<LoadingSlideshow/>
+	</MainMenu>
+	<MiscArtInfo>
+		<Type/>
+		<Path/>
+		<fScale/>
+		<NIF/>
+		<KFM/>
+	</MiscArtInfo>
+	<Name>
+		<FormationType/>
+		<EventMaskList/>
+		<UnitEntry/>
+	</Name>
+	<ProfessionInfo class="Dir" child="Button">
+		<Type/>
+		<Description/>
+		<Civilopedia/>
+		<Strategy/>
+		<Help/>
+		<Combat class="Type" type="UnitCombatInfo" none="true"/>
+		<DefaultUnitAI class="Type" type="UnitAIInfo" none="true"/>
+		<SpecialBuilding class="Type" type="SpecialBuildingInfo" none="true"/>
+		<bWorkPlot/>
+		<bCitizen/>
+		<bWater/>
+		<bScout/>
+		<bCanCrossLargeRivers/>
+		<bCityDefender/>
+		<bCanFound/>
+		<bUnarmed/>
+		<bNoDefensiveBonus/>
+		<iCombatChange/>
+		<iBombardRateChangeProfession/>
+		<iBarracksSpaceNeededChange/>
+		<iMovesChange/>
+		<bMoveIntoPeak/>
+		<iWorkRate/>
+		<iMissionaryRate/>
+		<iNativeTradeRate/>
+		<iPower/>
+		<iAsset/>
+		<YieldEquipedNums class="Dir" child="YieldEquipedNum">
+			<YieldEquipedNum class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iYieldAmount/>
+			</YieldEquipedNum>
+		</YieldEquipedNums>
+		<FreePromotions class="Dir" child="FreePromotion">
+			<FreePromotion class="Dir" child="PromotionType">
+				<PromotionType class="Type" type="PromotionInfo" none="false"/>
+				<bFreePromotion/>
+			</FreePromotion>
+		</FreePromotions>
+		<YieldsProduced/>
+		<YieldsConsumed>
+			<YieldType/>
+		</YieldsConsumed>
+		<Button class="Button"/>
+		<bUseLbD/>
+		<ExpertUnit class="Type" type="UnitClassInfo" none="false"/>
+		<iLbDLearnLevel/>
+	</ProfessionInfo>
+	<PromotionInfo class="Dir" child="Button">
+		<Type/>
+		<Description/>
+		<Help/>
+		<Sound class="Type" type="Script2DSound" none="false"/>
+		<PromotionPrereq class="Type" type="PromotionInfo" none="true"/>
+		<PromotionPrereqOr1 class="Type" type="PromotionInfo" none="true"/>
+		<PromotionPrereqOr2 class="Type" type="PromotionInfo" none="true"/>
+		<bLeader/>
+		<bNegativePromotion/>
+		<bBlitz/>
+		<bAmphib/>
+		<bRiver/>
+		<bEnemyRoute/>
+		<bAlwaysHeal/>
+		<bHillsDoubleMove/>
+		<iVisibilityChange/>
+		<iMovesChange/>
+		<iMoveDiscountChange/>
+		<iWithdrawalChange/>
+		<iCargoChange/>
+		<iBombardRateChange/>
+		<iEnemyHealChange/>
+		<iNeutralHealChange/>
+		<iFriendlyHealChange/>
+		<iSameTileHealChange/>
+		<iAdjacentTileHealChange/>
+		<iCombatPercent/>
+		<iCityAttack/>
+		<iCityDefense/>
+		<iHillsAttack/>
+		<iHillsDefense/>
+		<iDomesticBonus/>
+		<iPillageChange/>
+		<iAnimalGoldChange/>
+		<iSlaveRevoltReductionBonus/>
+		<iSlaveWorkerProductionBonus/>
+		<iAdditionalLawToCity/>
+		<iUpgradeDiscount/>
+		<iExperiencePercent/>
+		<TerrainAttacks>
+			<TerrainAttack>
+				<TerrainType class="Type" type="TerrainInfo" none="false"/>
+				<iTerrainAttack/>
+			</TerrainAttack>
+		</TerrainAttacks>
+		<TerrainDefenses>
+			<TerrainDefense>
+				<TerrainType class="Type" type="TerrainInfo" none="false"/>
+				<iTerrainDefense/>
+			</TerrainDefense>
+		</TerrainDefenses>
+		<FeatureAttacks class="Dir" child="FeatureAttack">
+			<FeatureAttack class="Dir" child="FeatureType">
+				<FeatureType class="Type" type="FeatureInfo" none="false"/>
+				<iFeatureAttack/>
+			</FeatureAttack>
+		</FeatureAttacks>
+		<FeatureDefenses class="Dir" child="FeatureDefense">
+			<FeatureDefense class="Dir" child="FeatureType">
+				<FeatureType class="Type" type="FeatureInfo" none="false"/>
+				<iFeatureDefense/>
+			</FeatureDefense>
+		</FeatureDefenses>
+		<UnitClassAttackMods class="Dir" child="UnitClassAttackMod">
+			<UnitClassAttackMod class="Dir" child="UnitClassType">
+				<UnitClassType class="Type" type="UnitClassInfo" none="false"/>
+				<iUnitClassMod/>
+			</UnitClassAttackMod>
+		</UnitClassAttackMods>
+		<UnitClassDefenseMods class="Dir" child="UnitClassDefenseMod">
+			<UnitClassDefenseMod class="Dir" child="UnitClassType">
+				<UnitClassType class="Type" type="UnitClassInfo" none="false"/>
+				<iUnitClassMod/>
+			</UnitClassDefenseMod>
+		</UnitClassDefenseMods>
+		<UnitCombatMods>
+			<UnitCombatMod>
+				<UnitCombatType class="Type" type="UnitCombatInfo" none="false"/>
+				<iUnitCombatMod/>
+			</UnitCombatMod>
+		</UnitCombatMods>
+		<DomainMods class="Dir" child="DomainMod">
+			<DomainMod class="Dir" child="DomainType">
+				<DomainType class="Type" type="DomainInfo" none="false"/>
+				<iDomainMod/>
+			</DomainMod>
+		</DomainMods>
+		<TerrainDoubleMoves class="Dir" child="TerrainDoubleMove">
+			<TerrainDoubleMove class="Dir" child="TerrainType">
+				<TerrainType class="Type" type="TerrainInfo" none="false"/>
+				<bTerrainDoubleMove/>
+			</TerrainDoubleMove>
+		</TerrainDoubleMoves>
+		<FeatureDoubleMoves class="Dir" child="FeatureDoubleMove">
+			<FeatureDoubleMove class="Dir" child="FeatureType">
+				<FeatureType class="Type" type="FeatureInfo" none="false"/>
+				<bFeatureDoubleMove/>
+			</FeatureDoubleMove>
+		</FeatureDoubleMoves>
+		<UnitCombats class="Dir" child="UnitCombat">
+			<UnitCombat class="Dir" child="UnitCombatType">
+				<UnitCombatType class="Type" type="UnitCombatInfo" none="false"/>
+				<bUnitCombat/>
+			</UnitCombat>
+		</UnitCombats>
+		<HotKey/>
+		<bAltDown/>
+		<bShiftDown/>
+		<bCtrlDown/>
+		<bGraphicalOnly/>
+		<bNotEarnedByXP/>
+		<bHideFromPedia/>
+		<iHotKeyPriority/>
+		<Button class="Button"/>
+		<iOrderPriority/>
+	</PromotionInfo>
+	<RiverModelInfo>
+		<ModelFile/>
+		<BorderFile/>
+		<TextureIndex/>
+		<DeltaType/>
+		<Connections/>
+		<Rotations/>
+	</RiverModelInfo>
+	<Script2DSound>
+		<ScriptID/>
+		<SoundID/>
+		<SoundType/>
+		<iMinVolume/>
+		<iMaxVolume/>
+		<iPitchChangeDown/>
+		<iPitchChangeUp/>
+		<iMinLeftPan/>
+		<iMaxLeftPan/>
+		<iMinRightPan/>
+		<iMaxRightPan/>
+		<bLooping/>
+		<iMinTimeDelay/>
+		<iMaxTimeDelay/>
+		<bTaperForSoundtracks/>
+		<iLengthOfSound/>
+		<fMinDryLevel/>
+		<fMaxDryLevel/>
+		<fMinWetLevel/>
+		<fMaxWetLevel/>
+		<iNotPlayPercent/>
+	</Script2DSound>
+	<SpecialUnitInfo>
+		<Type/>
+		<Description/>
+		<bValid/>
+		<bCityLoad/>
+		<CarrierUnitAIs>
+			<CarrierUnitAI>
+				<UnitAIType class="Type" type="UnitAIInfo" none="false"/>
+				<bUnitAI/>
+			</CarrierUnitAI>
+		</CarrierUnitAIs>
+		<ProductionTraits>
+			<ProductionTrait>
+				<ProductionTraitType/>
+				<iProductionTrait/>
+			</ProductionTrait>
+		</ProductionTraits>
+	</SpecialUnitInfo>
+	<TerrainArtInfo class="Dir" child="Button">
+		<Type/>
+		<Path/>
+		<Grid/>
+		<Detail/>
+		<Button class="Button"/>
+		<LayerOrder/>
+		<TerrainGroup/>
+		<TextureBlend01/>
+		<TextureBlend02/>
+		<TextureBlend04/>
+		<TextureBlend08/>
+		<TextureBlend03/>
+		<TextureBlend06/>
+		<TextureBlend12/>
+		<TextureBlend09/>
+		<TextureBlend07/>
+		<TextureBlend14/>
+		<TextureBlend13/>
+		<TextureBlend11/>
+		<TextureBlend10/>
+		<TextureBlend05/>
+		<TextureBlend15/>
+	</TerrainArtInfo>
+	<TerrainInfo class="Dir" child="Button">
+		<Type/>
+		<Description/>
+		<Civilopedia/>
+		<Help/>
+		<ArtDefineTag class="Type" type="TerrainArtInfo" none="false"/>
+		<Yields class="Dir" child="YieldIntegerPair">
+			<YieldIntegerPair class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iValue/>
+			</YieldIntegerPair>
+		</Yields>
+		<RiverYieldIncreases class="Dir" child="YieldIntegerPair">
+			<YieldIntegerPair class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iValue/>
+			</YieldIntegerPair>
+		</RiverYieldIncreases>
+		<bWater/>
+		<bImpassable/>
+		<bFound/>
+		<bFoundCoast/>
+		<bBadCityLocation/>
+		<iMovement/>
+		<iSeeFrom/>
+		<iSeeThrough/>
+		<iBuildModifier/>
+		<iDefense/>
+		<Button class="Button"/>
+		<FootstepSounds/>
+		<WorldSoundscapeAudioScript class="Type" type="ScriptSoundscape" none="false"/>
+		<bGraphicalOnly/>
+	</TerrainInfo>
+	<TraitInfo>
+		<Type/>
+		<Description/>
+		<ShortDescription/>
+		<Help/>
+		<eCivEffect class="Type" type="CivEffectInfo" none="true"/>
+		<iLevelExperienceModifier/>
+		<iGreatGeneralRateModifier/>
+		<iDomesticGreatGeneralRateModifier/>
+		<iNativeAngerModifier/>
+		<iLearnTimeModifier/>
+		<iNativeCombatModifier/>
+		<iMissionaryModifier/>
+		<iNativeTradeModifier/>
+		<iRebelCombatModifier/>
+		<iTaxRateThresholdModifier/>
+		<iMaxTaxRateThresholdDecrease/>
+		<iMercantileFactor/>
+		<iAfricaSellProfitModifierInPercent/>
+		<iPortRoyalSellProfitModifierInPercent/>
+		<iDomesticMarketProfitModifierInPercent/>
+		<iTreasureModifier/>
+		<iGoodUniqueGoodyChanceModifierLand/>
+		<iGoodUniqueGoodyChanceModifierWater/>
+		<iUnhappinessFromSlavesModifier/>
+		<iChiefGoldModifier/>
+		<iNativeAttitudeChange/>
+		<iEuropeanAttitudeChange/>
+		<iKingAttitudeChange/>
+		<iCityDefense/>
+		<iLandPriceDiscount/>
+		<iRecruitPriceDiscount/>
+		<iRecruitPriceDiscountAfrica/>
+		<iRecruitPriceDiscountPortRoyal/>
+		<iEuropeTravelTimeModifier/>
+		<iImmigrationThresholdModifier/>
+		<iPopGrowthThresholdModifier/>
+		<iCultureLevelModifier/>
+		<iPioneerSpeedModifier/>
+		<iImprovementPriceModifier/>
+		<iImprovementGrowthTimeModifier/>
+		<iLearningByDoingFreeModifier/>
+		<iLearningByDoingRunawayModifier/>
+		<iLearningByDoingRevoltModifier/>
+		<iSpecialistPriceModifier/>
+		<iStorageCapacityModifier/>
+		<CityExtraYields/>
+		<ExtraYieldThresholds/>
+		<ProfessionEquipmentModifiers/>
+		<FreePromotions/>
+		<FreePromotionUnitCombats/>
+		<YieldModifiers/>
+		<TaxYieldModifiers/>
+		<BuildingYieldChanges/>
+		<UnitMoveChanges/>
+		<ProfessionMoveChanges/>
+		<BuildingProductionModifiers/>
+		<BuildingRequiredYieldModifiers/>
+		<UnitStrengthModifiers/>
+		<FreeBuildingClasses/>
+		<GoodyFactors/>
+	</TraitInfo>
+	<Type>
+		<TagGroupAllow/>
+		<TagGroupCity/>
+		<TagGroupGrowth/>
+	</Type>
+	<UnitArtInfo class="Dir" child="Button">
+		<Type/>
+		<Button class="Button"/>
+		<FullLengthIcon class="Button"/>
+		<fScale class="Float"/>
+		<fInterfaceScale class="Float"/>
+		<NIF/>
+		<KFM/>
+		<iDamageStates/>
+		<TrailDefinition/>
+		<fBattleDistance class="Float"/>
+		<fRangedDeathTime class="Float"/>
+		<bSmoothMove/>
+		<fAngleInterpRate/>
+		<fBankRate/>
+		<fExchangeAngle/>
+		<bCombatExempt/>
+		<bActAsRanged/>
+		<TrainSound class="Type" type="Script2DSound" none="true"/>
+		<AudioRunSounds>
+			<AudioRunTypeLoop/>
+			<AudioRunTypeEnd/>
+		</AudioRunSounds>
+		<SelectionSound class="Type" type="Script3DSound" none="true"/>
+		<ActionSound class="Type" type="Script3DSound" none="true"/>
+	</UnitArtInfo>
+	<UnitArtStyleTypeInfo class="Dir">
+		<Type/>
+		<StyleUnits class="Dir">
+			<StyleUnit class="Dir" child="UnitMeshGroup">
+				<UnitType class="Type" type="UnitInfo" none="true"/>
+				<ProfessionType class="Type" type="ProfessionInfo" none="false"/>
+				<UnitMeshGroup class="Dir" child="ArtDefineTag">
+					<ArtDefineTag class="Type" type="UnitArtInfo" none="false"/>
+				</UnitMeshGroup>
+			</StyleUnit>
+		</StyleUnits>
+	</UnitArtStyleTypeInfo>
+	<UnitClassInfo class="Dir" child="DefaultUnit">
+		<Type/>
+		<Description/>
+		<DefaultUnit class="Type" type="UnitInfo" none="false"/>
+	</UnitClassInfo>
+	<UnitInfo class="Dir" child="ProfessionMeshGroups">
+		<Type/>
+		<Class class="Type" type="UnitClassInfo" none="false"/>
+		<UniqueNames>
+			<UniqueName/>
+		</UniqueNames>
+		<Special class="Type" type="SpecialUnitInfo" none="true"/>
+		<Capture class="Type" type="UnitClassInfo" none="true"/>
+		<Combat class="Type" type="UnitCombatInfo" none="false"/>
+		<Domain class="Type" type="DomainInfo" none="false"/>
+		<DefaultUnitAI class="Type" type="UnitAIInfo" none="false"/>
+		<DefaultProfession class="Type" type="ProfessionInfo" none="true" help="help"/>
+		<eEthnicity class="Type" type="EthnicityType" none="false"/>
+		<eCitizenStatus class="Type" type="CitizenStatusType" none="true"/>
+		<Invisible class="Type" type="InvisibleInfo" none="true"/>
+		<SeeInvisible class="Type" type="InvisibleInfo" none="true"/>
+		<Description/>
+		<Civilopedia/>
+		<Strategy/>
+		<Help/>
+		<iTeachLevel/>
+		<fNBMOD_REF_StrengthWeight class="Float"/>
+		<iAnimalPatrolWeight/>
+		<iAnimalAttackWeight/>
+		<bGraphicalOnly/>
+		<bNoBadGoodies/>
+		<bOnlyDefensive/>
+		<bNoCapture/>
+		<bQuickCombat/>
+		<bRivalTerritory class="Bool"/>
+		<bMilitaryProduction/>
+		<bFound/>
+		<bInvisible/>
+		<bNoDefensiveBonus/>
+		<bCanMoveImpassable/>
+		<bMoveIntoPeak/>
+		<bCanMoveAllTerrain/>
+		<bFlatMovementCost/>
+		<bIgnoreTerrainCost/>
+		<bMechanized/>
+		<bLineOfSight/>
+		<bHiddenNationality/>
+		<bSlaveShip/>
+		<bTreasureShip/>
+		<bTroopShip/>
+		<bAlwaysHostile/>
+		<bTreasure/>
+		<bAnimal/>
+		<bNoRevealMap/>
+		<bLbDCanBecomeExpert/>
+		<bLbDCanGetFree/>
+		<bLbDCanEscape/>
+		<bLbDCanRevolt/>
+		<UnitClassUpgrades>
+			<UnitClassUpgrade>
+				<UnitClassUpgradeType/>
+				<bUnitClassUpgrade/>
+			</UnitClassUpgrade>
+		</UnitClassUpgrades>
+		<UnitAIs>
+			<UnitAI>
+				<UnitAIType class="Type" type="UnitAIInfo" none="false"/>
+				<bUnitAI/>
+			</UnitAI>
+		</UnitAIs>
+		<NotUnitAIs>
+			<UnitAI>
+				<UnitAIType class="Type" type="UnitAIInfo" none="false"/>
+				<bUnitAI/>
+			</UnitAI>
+		</NotUnitAIs>
+		<Builds>
+			<Build>
+				<BuildType/>
+				<bBuild/>
+			</Build>
+		</Builds>
+		<PrereqBuilding class="Type" type="BuildingClassInfo" none="true"/>
+		<PrereqOrBuildings>
+			<PrereqOrBuilding>
+				<BuildingClass/>
+				<bPrereq/>
+			</PrereqOrBuilding>
+		</PrereqOrBuildings>
+		<ProductionTraits>
+			<ProductionTrait>
+				<ProductionTraitType/>
+				<iProductionTrait/>
+			</ProductionTrait>
+		</ProductionTraits>
+		<iAIWeight/>
+		<YieldCosts class="Dir" child="YieldCost">
+			<YieldCost class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iCost/>
+			</YieldCost>
+		</YieldCosts>
+		<iHurryCostModifier/>
+		<iProductionWhenUsed/>
+		<iAdvancedStartCost/>
+		<iAdvancedStartCostIncrease/>
+		<iEuropeCost/>
+		<iEuropeCostIncrease/>
+		<iPortRoyalCost/>
+		<iPortRoyalCostIncrease/>
+		<iAfricaCost/>
+		<iAfricaCostIncrease/>
+		<iImmigrationWeight/>
+		<iImmigrationWeightDecay/>
+		<iMinAreaSize/>
+		<iMoves/>
+		<bCapturesCargo/>
+		<bCapturesShips/>
+		<iCaptureShipsChanceIncrease/>
+		<iWorkRate/>
+		<iWorkRateModifier/>
+		<iGoldFromGoodiesAndChiefsModifier/>
+		<iMissionaryRateModifier/>
+		<iNativeTradeRateModifier/>
+		<TerrainImpassables class="Dir" child="TerrainImpassable">
+			<TerrainImpassable class="Dir" child="TerrainType">
+				<TerrainType class="Type" type="TerrainInfo" none="false"/>
+				<bTerrainImpassable/>
+			</TerrainImpassable>
+		</TerrainImpassables>
+		<FeatureImpassables class="Dir" child="FeatureImpassable">
+			<FeatureImpassable class="Dir" child="FeatureType">
+				<FeatureType class="Type" type="FeatureInfo" none="false"/>
+				<bFeatureImpassable/>
+			</FeatureImpassable>
+		</FeatureImpassables>
+		<TerrainNatives class="Dir" child="TerrainNative">
+			<TerrainNative class="Dir" child="TerrainType">
+				<TerrainType class="Type" type="TerrainInfo" none="false"/>
+				<bTerrainNative/>
+			</TerrainNative>
+		</TerrainNatives>
+		<EvasionBuildings class="Dir" child="EvasionBuilding">
+			<EvasionBuilding class="Dir" child="BuildingClass">
+				<BuildingClass class="Type" type="BuildingClassInfo" none="false"/>
+				<bEvasion/>
+			</EvasionBuilding>
+		</EvasionBuildings>
+		<bGatherBoat/>
+		<YieldsGatherable class="Dir" child="YieldGatherable">
+			<YieldGatherable class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<bGathers/>
+			</YieldGatherable>
+		</YieldsGatherable>
+		<iCombat/>
+		<iXPValueAttack/>
+		<iXPValueDefense/>
+		<iWithdrawalProb/>
+		<iCityAttack/>
+		<iCityDefense/>
+		<iHillsAttack/>
+		<iHillsDefense/>
+		<iDomesticBonus/>
+		<TerrainAttacks>
+			<TerrainAttack>
+				<TerrainType/>
+				<iTerrainAttack/>
+			</TerrainAttack>
+		</TerrainAttacks>
+		<TerrainDefenses>
+			<TerrainDefense>
+				<TerrainType/>
+				<iTerrainDefense/>
+			</TerrainDefense>
+		</TerrainDefenses>
+		<FeatureAttacks>
+			<FeatureAttack>
+				<FeatureType/>
+				<iFeatureAttack/>
+			</FeatureAttack>
+		</FeatureAttacks>
+		<FeatureDefenses>
+			<FeatureDefense>
+				<FeatureType/>
+				<iFeatureDefense/>
+			</FeatureDefense>
+		</FeatureDefenses>
+		<UnitClassAttackMods>
+			<UnitClassAttackMod>
+				<UnitClassType/>
+				<iUnitClassMod/>
+			</UnitClassAttackMod>
+		</UnitClassAttackMods>
+		<UnitClassDefenseMods>
+			<UnitClassDefenseMod>
+				<UnitClassType/>
+				<iUnitClassMod/>
+			</UnitClassDefenseMod>
+		</UnitClassDefenseMods>
+		<UnitCombatMods>
+			<UnitCombatMod>
+				<UnitCombatType/>
+				<iUnitCombatMod/>
+			</UnitCombatMod>
+		</UnitCombatMods>
+		<DomainMods>
+			<DomainMod>
+				<DomainType/>
+				<iDomainMod/>
+			</DomainMod>
+		</DomainMods>
+		<YieldModifiers>
+			<YieldModifier>
+				<YieldType/>
+				<iYieldMod/>
+			</YieldModifier>
+		</YieldModifiers>
+		<YieldDemands class="Dir" child="YieldDemand">
+			<YieldDemand class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iYieldDemand/>
+			</YieldDemand>
+		</YieldDemands>
+		<YieldChanges class="Dir" child="YieldChange">
+			<YieldChange class="Dir" child="YieldType">
+				<YieldType class="Type" type="YieldInfo" none="false"/>
+				<iChange/>
+			</YieldChange>
+		</YieldChanges>
+		<BonusYieldChanges>
+			<BonusYieldChange>
+				<YieldType/>
+				<iChange/>
+			</BonusYieldChange>
+		</BonusYieldChanges>
+		<bLandYieldChanges/>
+		<bWaterYieldChanges/>
+		<iBombardRate/>
+		<SpecialCargo class="Type" type="SpecialUnitInfo" none="true"/>
+		<DomainCargo class="Type" type="DomainInfo" none="true"/>
+		<iCargo/>
+		<iRequiredTransportSize/>
+		<iBerthSize/>
+		<iHarbourSpaceNeeded/>
+		<iBarracksSpaceNeeded/>
+		<iAsset/>
+		<iPower/>
+		<iNativeLearnTime/>
+		<iStudentWeight/>
+		<iTeacherWeight/>
+		<ProfessionMeshGroups class="Dir" child="UnitMeshGroups">
+			<UnitMeshGroups class="Dir" child="UnitMeshGroup">
+				<ProfessionType class="Type" type="ProfessionInfo" none="true"/>
+				<fMaxSpeed/>
+				<fPadTime/>
+				<iMeleeWaveSize/>
+				<iRangedWaveSize/>
+				<UnitMeshGroup class="Dir" child="ArtDefineTag">
+					<iRequired/>
+					<ArtDefineTag class="Type" type="UnitArtInfo" none="false"/>
+				</UnitMeshGroup>
+			</UnitMeshGroups>
+		</ProfessionMeshGroups>
+		<FormationType/>
+		<HotKey/>
+		<bAltDown/>
+		<bShiftDown/>
+		<bCtrlDown/>
+		<iHotKeyPriority/>
+		<FreePromotions>
+			<FreePromotion>
+				<PromotionType class="Type" type="PromotionInfo" none="false"/>
+				<bFreePromotion/>
+			</FreePromotion>
+		</FreePromotions>
+		<LeaderPromotion class="Type" type="PromotionInfo" none="true"/>
+		<iLeaderExperience/>
+		<ProfessionsNotAllowed class="Dir" child="ProfessionNotAllowed">
+			<ProfessionNotAllowed class="Dir" child="VoidProfessionType">
+				<VoidProfessionType class="Type" type="ProfessionInfo" none="false"/>
+				<bIsNotAllowed/>
+			</ProfessionNotAllowed>
+		</ProfessionsNotAllowed>
+		<iOrderPriority/>
+	</UnitInfo>
+	<YieldInfo class="Dir" child="Icon">
+		<Type/>
+		<Description/>
+		<Civilopedia/>
+		<bCargo/>
+		<bIgnoredForStorageCapacity/>
+		<bIsExportYield/>
+		<bLivestock/>
+		<iBuyPriceLow/>
+		<iBuyPriceHigh/>
+		<iBuyPriceMin/>
+		<iSellPriceDifference/>
+		<iPriceChangeThreshold/>
+		<iPriceCorrectionPercent/>
+		<iEuropeVolumeAttrition/>
+		<iAfricaBuyPriceLow/>
+		<iAfricaBuyPriceHigh/>
+		<iAfricaSellPriceDifference/>
+		<iPortRoyalBuyPriceLow/>
+		<iPortRoyalBuyPriceHigh/>
+		<iPortRoyalSellPriceDifference/>
+		<iNativeBuyPrice/>
+		<iNativeSellPrice/>
+		<iNativeConsumptionPercent/>
+		<iNativeHappy/>
+		<iHillsChange/>
+		<iPeakChange/>
+		<iLakeChange/>
+		<iCityChange/>
+		<iMinCity/>
+		<iAIWeightPercent/>
+		<iAIBaseValue/>
+		<iNativeBaseValue/>
+		<iPower/>
+		<iAsset/>
+		<ColorType class="Type" type="ColorVal" none="false"/>
+		<UnitClass class="Type" type="UnitClassInfo" none="false"/>
+		<iTextureIndex/>
+		<iWaterTextureIndex/>
+		<Icon class="Button"/>
+		<CombiIcon/>
+		<HighlightIcon/>
+		<Button class="Button"/>
+	</YieldInfo>
+</root>

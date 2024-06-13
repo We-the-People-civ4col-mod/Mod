@@ -127,6 +127,7 @@
 		<German>Den Siedlungsbildschirm dieser Siedlung betreten</German>
 		<Italian>Accedi alla schermata dell'insediamento per questo insediamento</Italian>
 		<Spanish>Entrar en la pantalla de este asentamiento.</Spanish>
+		<Russian>Открыть [COLOR_FONT_CREAM]Экран поселения[COLOR_REVERT] для этой колонии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_ELIM_TAG</Tag>
@@ -161,6 +162,7 @@
 		<German>[SPACE](Die Siedlung muss produzieren, um zur Modernisierung %s1_ImpName zu werden)</German>
 		<Italian>[SPACE](L'insediamento deve lavorare per diventare %s1_ImpName)</Italian>
 		<Spanish>[SPACE](El asentamiento debe trabajar para convertirse en [NUM1:un:una:unos:unas] %s1_ImpName)</Spanish>
+		<Russian>[SPACE](Поселение (???) должно работать, чтобы стать %s1_ImpName)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_WHAT_TO_BUILD</Tag>
@@ -268,7 +270,7 @@
 		<German>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] für alle Siedlungen)</German>
 		<Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per tutti gli insediamenti)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para todos los asentamientos)</Spanish>
-		<Russian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для всех поселений)</Russian>
+		<Russian>([COLOR:140:255:40:255]ALT[COLOR_REVERT] для всех поселений)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_BAR_SELECT_CTRL</Tag>
@@ -277,7 +279,7 @@
 		<German>([COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] für alle Siedlungen auf diesem Kontinent)</German>
 		<Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per tutti gli insediamenti in questo continente)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para todos los asentamientos en este continente)</Spanish>
-		<Russian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] для всех поселений на этом континенте)</Russian>
+		<Russian>([COLOR:140:255:40:255]CTRL[COLOR_REVERT] для всех поселений на этом континенте)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_SCREEN_CITY_CULTURE</Tag>
@@ -904,7 +906,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_REMOVED</Tag>
-		<English>In [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] the natives burnt down the [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] mission and threw the missionary into the flames. He had incurred their hatred because he had smashed an ancient idol statue.</English>
+		<English>In [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] the Natives burnt down the [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] mission and threw the missionary into the flames. He incurred their hatred by smashing an ancient statue of their beloved idol.</English>
 		<French>Dans la ville: [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT], les indigènes ont repoussé la mission [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT]</French>
 		<German>In [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben die Ureinwohner die [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] Mission niedergebrannt und den Missionar in die Flammen geworfen. Er hatte sich ihren Hass zugezogen, weil er eine alte Götzenstatue zerschlagen hatte.</German>
 		<Italian>I nativi a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hanno rinnegato la missione [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT]</Italian>
@@ -1396,7 +1398,7 @@
 		<German>[ICON_BULLET]Pioniere arbeiten %D1%% schneller</German>
 		<Italian>[ICON_BULLET]Pioneers work %D1%% faster</Italian>
 		<Spanish>[ICON_BULLET]Pioneers work %D1%% faster</Spanish>
-		<Russian>[ICON_BULLET]Пионеры работают на %D1%% быстрее</Russian>
+		<Russian>[ICON_BULLET]Первопроходцы работают на %D1%% быстрее</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_IMPROVEMENT_PRICE_MODIFIER</Tag>
@@ -1405,7 +1407,7 @@
 		<German>[ICON_BULLET]%D1%% Kosten für Arbeiten der Pioniere</German>
 		<Italian>[ICON_BULLET]%D1%% Cost of Pioneer Actions</Italian>
 		<Spanish>[ICON_BULLET]%D1%% Cost of Pioneer Actions</Spanish>
-		<Russian>[ICON_BULLET]%D1%% стоимость полевых работ пионеров</Russian>
+		<Russian>[ICON_BULLET]%D1%% стоимость полевых работ первопроходцев</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_IMPROVEMENT_GROWTH_TIME_MODIFIER</Tag>
@@ -1806,6 +1808,7 @@
 		<German>Das Ende von Colonization</German>
 		<Italian>La fine di Colonization</Italian>
 		<Spanish>El final de Colonization</Spanish>
+		<Russian>Колонизация завершена</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_YIELD_CONVERSION</Tag>
@@ -3329,7 +3332,7 @@
 		<German>Schwerpunkt setzen</German>
 		<Italian>Accentua</Italian>
 		<Spanish>Favorecer</Spanish>
-		<Russian>Акценты</Russian>
+		<Russian>Акценты авто-производства</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZED</Tag>
@@ -3592,7 +3595,7 @@
 		<German>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT][NEWLINE]um den Namen der Kolonie zu ändern</German>
 		<Italian>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Clicca &gt;[COLOR_REVERT][NEWLINE]qui per cambiare il nome</Italian>
 		<Spanish>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Haz clic &gt;[COLOR_REVERT][NEWLINE]para cambiar el nombre de la colonia</Spanish>
-		<Russian>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]&lt; Нажмите &gt;[COLOR_REVERT][NEWLINE]для изменения названия колонии</Russian>
+		<Russian>[NEWLINE][TAB][TAB][COLOR:140:255:40:255]Нажмите[COLOR_REVERT][NEWLINE]для изменения названия колонии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CHANGE_NAME_UNIT</Tag>
@@ -3601,7 +3604,7 @@
 		<German>[COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um den Namen der Einheit zu ändern</German>
 		<Italian>[COLOR:140:255:40:255]&lt; Clicca &gt;[COLOR_REVERT] qui per cambiare il nome</Italian>
 		<Spanish>[COLOR:140:255:40:255]&lt; Haz clic &gt;[COLOR_REVERT] para cambiar el nombre</Spanish>
-		<Russian>[COLOR:140:255:40:255]&lt; Нажмите &gt;[COLOR_REVERT] для изменения наименования юнита</Russian>
+		<Russian>[COLOR:140:255:40:255]Нажмите[COLOR_REVERT] для изменения наименования юнита</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NAME_CITY</Tag>

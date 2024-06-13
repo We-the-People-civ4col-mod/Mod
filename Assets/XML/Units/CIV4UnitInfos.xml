@@ -3639,7 +3639,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -4469,7 +4469,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -6686,7 +6686,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -7511,7 +7511,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -27156,6 +27156,8 @@
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iEuropeCost>-1</iEuropeCost>
 			<iEuropeCostIncrease>0</iEuropeCostIncrease>
+			<iAfricaCost>800</iAfricaCost>
+			<iAfricaCostIncrease>100</iAfricaCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -37639,7 +37641,7 @@
 			<LeaderPromotion>NONE</LeaderPromotion>
 			<iLeaderExperience>0</iLeaderExperience>
 			<ProfessionsNotAllowed>
-			   <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_TOWN_GUARD</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -37663,7 +37665,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -45636,7 +45638,8 @@
 				<Build>
 					<BuildType>BUILD_SUPPLY_DEPOT</BuildType>
 					<bBuild>1</bBuild>
-				</Build>				<Build>
+				</Build>
+				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -50886,7 +50889,7 @@
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
@@ -50897,7 +50900,7 @@
 					<UnitMeshGroup>
 						<iRequired>2</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
@@ -50908,7 +50911,7 @@
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_DRAGOON</ProfessionType>
@@ -51460,7 +51463,7 @@
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
@@ -51471,7 +51474,7 @@
 					<UnitMeshGroup>
 						<iRequired>2</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
@@ -51482,7 +51485,7 @@
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_DRAGOON</ProfessionType>
@@ -52042,7 +52045,7 @@
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
@@ -52053,7 +52056,7 @@
 					<UnitMeshGroup>
 						<iRequired>2</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
@@ -52064,7 +52067,7 @@
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</ArtDefineTag>
-						</UnitMeshGroup>
+					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
 					<ProfessionType>PROFESSION_DRAGOON</ProfessionType>
@@ -54361,7 +54364,7 @@
 				<UniqueName>TXT_KEY_GREAT_PERSON_COCHRANE</UniqueName>
 				<UniqueName>TXT_KEY_GREAT_PERSON_ARNOLD</UniqueName>
 			</UniqueNames>
-			<Special>NONE</Special>
+			<Special>SPECIALUNIT_MILITARY_UNIT</Special>
 			<Capture>NONE</Capture>
 			<Combat>NONE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
@@ -54441,7 +54444,7 @@
 			<iCombat>3</iCombat>
 			<iXPValueAttack>1</iXPValueAttack>
 			<iXPValueDefense>0</iXPValueDefense>
-			<iWithdrawalProb>20</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -54999,7 +55002,7 @@
 			<iCombat>3</iCombat>
 			<iXPValueAttack>1</iXPValueAttack>
 			<iXPValueDefense>0</iXPValueDefense>
-			<iWithdrawalProb>20</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -69382,7 +69385,7 @@
 			<LeaderPromotion>NONE</LeaderPromotion>
 			<iLeaderExperience>0</iLeaderExperience>
 			<ProfessionsNotAllowed>
-			   <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_TOWN_GUARD</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -69406,7 +69409,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -73479,7 +73482,7 @@
 				</YieldDemand>
 			</YieldDemands>
 			<YieldChanges>
-				 <YieldChange>
+				<YieldChange>
 					<YieldType>YIELD_COCOA</YieldType>
 					<iChange>-2</iChange>
 				</YieldChange>
@@ -73969,7 +73972,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -74602,13 +74605,13 @@
 			<bInvisible>0</bInvisible>
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bMoveIntoPeak>1</bMoveIntoPeak>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
 			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
 			<bFlatMovementCost>0</bFlatMovementCost>
 			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
 			<bMechanized>0</bMechanized>
 			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>1</bHiddenNationality>
+			<bHiddenNationality>0</bHiddenNationality>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -74679,71 +74682,71 @@
 			<YieldDemands>
 				<YieldDemand>
 					<YieldType>YIELD_COFFEE</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>25</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_CHEESE</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_CIGARS</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>25</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_WOOL_CLOTH</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>25</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_LEATHER</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_PIG_LEATHER</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_COATS</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_SALT</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_SPICES</YieldType>
-					<iYieldDemand>10</iYieldDemand>
+					<iYieldDemand>12</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_VANILLA</YieldType>
-					<iYieldDemand>10</iYieldDemand>
+					<iYieldDemand>12</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_CHOCOLATE</YieldType>
-					<iYieldDemand>10</iYieldDemand>
+					<iYieldDemand>12</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_BEER</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_RUM</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>25</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_HOOCH</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>25</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_WINE</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>22</iYieldDemand>
 				</YieldDemand>
 				<YieldDemand>
 					<YieldType>YIELD_LUXURY_GOODS</YieldType>
-					<iYieldDemand>20</iYieldDemand>
+					<iYieldDemand>25</iYieldDemand>
 				</YieldDemand>
 			</YieldDemands>
 			<YieldChanges>
@@ -75064,7 +75067,7 @@
 				</YieldDemand>
 			</YieldDemands>
 			<YieldChanges>
-				 <YieldChange>
+				<YieldChange>
 					<YieldType>YIELD_COCOA</YieldType>
 					<iChange>-2</iChange>
 				</YieldChange>
@@ -75554,7 +75557,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -75994,7 +75997,7 @@
 			<LeaderPromotion>NONE</LeaderPromotion>
 			<iLeaderExperience>0</iLeaderExperience>
 			<ProfessionsNotAllowed>
-			   <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_TOWN_GUARD</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -76018,7 +76021,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -76506,7 +76509,7 @@
 					<VoidProfessionType>PROFESSION_LIGHT_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				 <ProfessionNotAllowed>
+				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_HEAVY_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
@@ -76637,10 +76640,10 @@
 			<TerrainImpassables/>
 			<FeatureImpassables/>
 			<EvasionBuildings/>
-			<iCombat>1</iCombat>
+			<iCombat>2</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>0</iWithdrawalProb>
+			<iWithdrawalProb>10</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -76655,44 +76658,48 @@
 			<UnitCombatMods/>
 			<DomainMods/>
 			<YieldModifiers/>
-			<YieldChanges>
-				<YieldChange>
-					<YieldType>YIELD_FUR</YieldType>
-					<iChange>3</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_HORSES</YieldType>
-					<iChange>3</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_PREMIUM_FUR</YieldType>
-					<iChange>3</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_COCA_LEAVES</YieldType>
-					<iChange>3</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_COCOA_FRUITS</YieldType>
-					<iChange>3</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_KAUTSCHUK</YieldType>
-					<iChange>3</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_SILVER</YieldType>
-					<iChange>2</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_GOLD</YieldType>
-					<iChange>2</iChange>
-				</YieldChange>
-				<YieldChange>
-					<YieldType>YIELD_GEMS</YieldType>
-					<iChange>2</iChange>
-				</YieldChange>
-			</YieldChanges>
+            <YieldChanges>
+               <YieldChange>
+                    <YieldType>YIELD_FOOD</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_FUR</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_HORSES</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_PREMIUM_FUR</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCA_LEAVES</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_COCOA_FRUITS</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_KAUTSCHUK</YieldType>
+                    <iChange>5</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_SILVER</YieldType>
+                    <iChange>4</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GOLD</YieldType>
+                    <iChange>4</iChange>
+                </YieldChange>
+                <YieldChange>
+                    <YieldType>YIELD_GEMS</YieldType>
+                    <iChange>4</iChange>
+                </YieldChange>
+            </YieldChanges>
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
@@ -78423,7 +78430,7 @@
 			<iCombat>20</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -78629,7 +78636,7 @@
 			<iCombat>22</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -79249,7 +79256,7 @@
 			<iCombat>25</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -79463,7 +79470,7 @@
 			<iCombat>30</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -79693,7 +79700,7 @@
 			<iCombat>32</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>5</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -81410,7 +81417,7 @@
 			<iCombat>23</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>30</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -83077,7 +83084,7 @@
 			<iCombat>26</iCombat>
 			<iXPValueAttack>3</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -83199,6 +83206,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_FISHING_NETS_RIVER</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_HUNTERS_STAGE</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -83271,7 +83282,7 @@
 			<iCombat>2</iCombat>
 			<iXPValueAttack>0</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>20</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -84675,7 +84686,7 @@
 			<eCitizenStatus>NONE</eCitizenStatus>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
-		   <Description>TXT_KEY_YIELD_GOLD</Description>
+			<Description>TXT_KEY_YIELD_GOLD</Description>
 			<Civilopedia>TXT_KEY_UNIT_GOLD_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_GOLD_STRATEGY</Strategy>
 			<iTeachLevel>100</iTeachLevel>
@@ -98390,576 +98401,6 @@
 			<FreePromotions/>
 			<LeaderPromotion>NONE</LeaderPromotion>
 			<iLeaderExperience>0</iLeaderExperience>
-		</UnitInfo>
-		<UnitInfo>
-			<Type>UNIT_PLACEHOLDER</Type>
-			<Class>UNITCLASS_COLONIST</Class>
-			<UniqueNames/>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>NONE</Combat>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_COLONIST</DefaultUnitAI>
-			<DefaultProfession>PROFESSION_COLONIST</DefaultProfession>
-			<eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
-			<eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>TXT_KEY_UNIT_COLONIST</Description>
-			<Civilopedia>TXT_KEY_UNIT_COLONIST_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_COLONIST_STRATEGY</Strategy>
-			<iTeachLevel>100</iTeachLevel>
-			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
-			<bGraphicalOnly>1</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>0</bOnlyDefensive>
-			<bNoCapture>0</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>0</bRivalTerritory>
-			<bMilitaryProduction>0</bMilitaryProduction>
-			<bFound>1</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bMoveIntoPeak>0</bMoveIntoPeak>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>0</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>0</bHiddenNationality>
-			<bAlwaysHostile>0</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bLbDCanBecomeExpert>1</bLbDCanBecomeExpert>
-			<bLbDCanGetFree>0</bLbDCanGetFree>
-			<bLbDCanEscape>0</bLbDCanEscape>
-			<bLbDCanRevolt>0</bLbDCanRevolt>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_COLONIST</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs/>
-			<Builds>
-				<Build>
-					<BuildType>BUILD_ROAD</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_COUNTRY_ROAD</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_PLASTERED_ROAD</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_ROAD</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_FARM</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_WINDMILL</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_IRONMILL</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_SAWMILL</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_SUPPLY_DEPOT</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_CANAL</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_PLANTATION</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_PASTURE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_PEN</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MINE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_QUARRY</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_CLAY_PIT</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_PEAT_PIT</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_VINEYARD</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_COLLECTORS_POST</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_COLLECTORS_POST2</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_LODGE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_FRUIT_PLANTATION</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_TRAPPER_HUT</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_FORT</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_MONASTERY</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_JUNGLE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_FOREST</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_LIGHT_FOREST</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_LUSHGRASS</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_CACTUS</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REMOVE_ROCK_FORMATION</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_DRAIN_MARSH</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_DRAIN_WETLAND</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REFORESTATION_GRASS</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REFORESTATION_WETLAND</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REFORESTATION_PLAINS</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REFORESTATION_PLAINS_FERTILE</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REFORESTATION_MARSH</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REFORESTATION_SAVANNAH</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REFORESTATION_TUNDRA</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REFORESTATION_TAIGA</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_REFORESTATION_SHRUBLAND</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_DESERT_IRRIGATION</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_RAFT_STATION</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
-					<BuildType>BUILD_SALINA</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-			</Builds>
-			<PrereqBuilding>NONE</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>0</iAIWeight>
-			<YieldCosts/>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>500</iEuropeCost>
-			<iEuropeCostIncrease>75</iEuropeCostIncrease>
-			<iImmigrationWeight>800</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>1</iMoves>
-			<bCapturesCargo>0</bCapturesCargo>
-			<bCapturesShips>0</bCapturesShips>
-			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
-			<FeatureImpassables/>
-			<EvasionBuildings/>
-			<iCombat>1</iCombat>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>0</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<iDomesticBonus>0</iDomesticBonus>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods/>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<YieldModifiers/>
-			<YieldDemands>
-				<YieldDemand>
-					<YieldType>YIELD_COFFEE</YieldType>
-					<iYieldDemand>20</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_CHEESE</YieldType>
-					<iYieldDemand>20</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_YERBA_TEA</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_WOOL_CLOTH</YieldType>
-					<iYieldDemand>20</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_CLOTH</YieldType>
-					<iYieldDemand>20</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_EVERYDAY_CLOTHES</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_LEATHER</YieldType>
-					<iYieldDemand>20</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_PIG_LEATHER</YieldType>
-					<iYieldDemand>20</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_GOAT_HIDE_BOOTS</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_SALT</YieldType>
-					<iYieldDemand>20</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_BEER</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_RUM</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_HOOCH</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_WINE</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_RAPE_OIL</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_OLIVE_OIL</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_WHALE_OIL</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_POTTERY</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_FURNITURE</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
-					<iYieldDemand>20</iYieldDemand>
-				</YieldDemand>
-				<YieldDemand>
-					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
-					<iYieldDemand>10</iYieldDemand>
-				</YieldDemand>
-			</YieldDemands>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<iBombardRate>0</iBombardRate>
-			<SpecialCargo>NONE</SpecialCargo>
-			<DomainCargo>NONE</DomainCargo>
-			<iCargo>0</iCargo>
-			<iRequiredTransportSize>1</iRequiredTransportSize>
-			<iBerthSize>1</iBerthSize>
-			<iAsset>100</iAsset>
-			<iPower>0</iPower>
-			<iNativeLearnTime>6</iNativeLearnTime>
-			<iStudentWeight>1000</iStudentWeight>
-			<iTeacherWeight>0</iTeacherWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_COLONIST</ArtDefineTag>
-					</UnitMeshGroup>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_SCOUT</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_SCOUT</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_TOWN_GUARD</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>3</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_TOWN_GUARD_ORDINARY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_COLONIAL_MILITIA</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>3</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_COLONIAL_MILITIA</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_HEAVY_CAVALRY</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>2</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_CAVALRY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_LINE_INFANTRY</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>3</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_DRAGOON</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>2</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_DRAGOON</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_LIGHT_ARTILLERY</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>2</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_LIGHT_ARTILLERY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_HEAVY_ARTILLERY</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>2</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_HEAVY_ARTILLERY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_PIONEER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_PIONEER</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_MISSIONARY</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_MISSIONARY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_NATIVE_TRADER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_TRADER</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>PROFESSION_SETTLER</ProfessionType>
-					<fMaxSpeed>1.75</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_CITY_FOUNDER</ArtDefineTag>
-					</UnitMeshGroup>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_COLONIST_FEMALE</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions/>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-			<ProfessionsNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_ROYAL_HALBERDIER</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_ROYAL_LIGHT_INFANTRY</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_ROYAL_LINE_INFANTRY</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_ROYAL_CAVALRY</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_ROYAL_DRAGOON</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
-			</ProfessionsNotAllowed>
 		</UnitInfo>
 	</UnitInfos>
 </Civ4UnitInfos>

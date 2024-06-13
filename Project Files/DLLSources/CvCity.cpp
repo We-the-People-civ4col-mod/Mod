@@ -680,7 +680,7 @@ void CvCity::doTurn()
 
 			for (unsigned int i = 0; i < stuckUnits.size(); ++i)
 			{
-				removePopulationUnit(stuckUnits[i], false, eDefaultProfession);
+				removePopulationUnit(CREATE_ASSERT_DATA, stuckUnits[i], false, eDefaultProfession);
 			}
 		}
 	}
@@ -6085,7 +6085,7 @@ void CvCity::ejectToTransport(int iUnitId, int iTransportId)
 	{
 		if (pUnit->canLoadUnit(pTransport, pUnit->plot(), true))
 		{
-			if (removePopulationUnit(pUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
+			if (removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
 			{
 				pUnit->loadUnit(pTransport);
 			}
@@ -8942,18 +8942,18 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 	gDLL->getEventReporterIFace()->populationJoined(getOwnerINLINE(), getID(), pTransferUnit->getID());
 }
 
-bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes eProfession, bool bConquest)
+bool CvCity::removePopulationUnit(AssertCallerData assertData, CvUnit* pUnit, bool bDelete, ProfessionTypes eProfession, bool bConquest)
 {
 	int iUnitIndex = getPopulationUnitIndex(*pUnit);
 	if(iUnitIndex < 0)
 	{
-		FAssertMsg(false, "Could not find unit in city");
+		FAssertMsgWithCaller(assertData, false, "Could not find unit in city");
 		return false;
 	}
 
 	if (!pUnit->canHaveProfession(eProfession, false))
 	{
-		FAssertMsg(false, "Illegal Profession");
+		FAssertMsgWithCaller(assertData, false, "Illegal Profession");
 		pUnit->setProfession(NO_PROFESSION);
 		return false;
 	}
@@ -8969,7 +8969,7 @@ bool CvCity::removePopulationUnit(CvUnit* pUnit, bool bDelete, ProfessionTypes e
 
 	int iOldPopulation = getPopulation();
 
-	FAssert(pUnit->getOwnerINLINE() == getOwnerINLINE());
+	FAssertWithCaller(assertData, pUnit->getOwnerINLINE() == getOwnerINLINE());
 	m_aPopulationUnits.erase(std::remove(m_aPopulationUnits.begin(), m_aPopulationUnits.end(), pUnit));
 	area()->changePower(getOwnerINLINE(), -pUnit->getPower());
 	setYieldRateDirty();
@@ -9018,7 +9018,7 @@ CvUnit* CvCity::removeUnitType(UnitTypes eUnit, ProfessionTypes eProfession)
 
 		if (pUnit->getUnitType() == eUnit)
 		{
-			if (removePopulationUnit(pUnit, false, eProfession))
+			if (removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, eProfession))
 			{
 				return pUnit;
 			}
@@ -9042,7 +9042,7 @@ void CvCity::removeNonCityPopulationUnits()
 			if (NO_PROFESSION != eUnitProfession && !GC.getProfessionInfo(eUnitProfession).isCitizen())
 			{
 				//unit list changes, so break and repeat
-				removePopulationUnit(pUnit, false, eUnitProfession);
+				removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, eUnitProfession);
 				bDone = false;
 				break;
 			}
@@ -10147,7 +10147,7 @@ void CvCity::doCityCrime()
 
 		// add message
 		CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_GOLD_STOLEN_BECAUSE_CRIME", getNameKey());
-		gDLL->UI().addPlayerMessage(eOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
+		gDLL->UI().addPlayerMessage(eOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CITYCRIME", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_SHOW_CTIYCRIME")->getPath(), (ColorTypes)GC.getInfoTypeForString("COLOR_RED"), true, true);
 
 	}
 
@@ -11787,7 +11787,7 @@ CvUnit* CvCity::ejectBestDefender(CvUnit* pCurrentBest, CvUnit* pAttacker)
 	{
 		if (pDefender != pCurrentBest)
 		{
-			if (!removePopulationUnit(pDefender, false, eProfession))
+			if (!removePopulationUnit(CREATE_ASSERT_DATA, pDefender, false, eProfession))
 			{
 				return pCurrentBest;
 			}
@@ -11919,7 +11919,7 @@ bool CvCity::educateStudent(int iUnitId, UnitTypes eUnit)
 
 	pUnit->setYieldStored(0);
 	// perform the conversion
-	if (!removePopulationUnit(pUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
+	if (!removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession()))
 	{
 		return false;
 	}
@@ -12846,7 +12846,7 @@ bool CvCity::LbD_try_become_expert(CvUnit* convUnit, int base, int increase, int
 	OOS_LOG_3("Learning by doing", CvString(getName()).c_str(), getTypeStr(expertUnitType));
 	CvUnit* expertUnit = GET_PLAYER(getOwnerINLINE()).initUnit(expertUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
 	FAssert(expertUnit != NULL);
-	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	bool remove = removePopulationUnit(CREATE_ASSERT_DATA, convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	FAssertMsg(remove, "Failed to remove unit!");
 	(void)remove; // Silence cppcheck
 	expertUnit->convert(convUnit, true);
@@ -12958,7 +12958,7 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	OOS_LOG_3("Learning by doing (free)", CvString(getName()).c_str(), getTypeStr(GeneratedUnitType));
 	CvUnit* GeneratedUnit = GET_PLAYER(getOwnerINLINE()).initUnit(GeneratedUnitType, NO_PROFESSION, getX_INLINE(), getY_INLINE(), convUnit->AI_getUnitAIType());
 	FAssert(GeneratedUnit != NULL);
-	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	bool remove = removePopulationUnit(CREATE_ASSERT_DATA, convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	FAssertMsg(remove, "Failed to remove unit!");
 	(void)remove; // Silence cppcheck
 	GeneratedUnit->convert(convUnit, true);
@@ -13031,7 +13031,7 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 	createFleeingUnit(convUnit->getUnitType(), false);
 
 	//Unit is then simply destroyed
-	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	bool remove = removePopulationUnit(CREATE_ASSERT_DATA, convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	FAssertMsg(remove, "Failed to remove unit!");
 	(void)remove; // Silence cppcheck
 	convUnit->kill(false);
@@ -13132,7 +13132,7 @@ bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_sl
 	createFleeingUnit(GeneratedUnitType, true);
 
 	//Unit is then simply destroyed
-	bool remove = removePopulationUnit(convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
+	bool remove = removePopulationUnit(CREATE_ASSERT_DATA, convUnit, false, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession());
 	FAssertMsg(remove, "Failed to remove unit!");
 	(void)remove; // Silence cppcheck
 	convUnit->kill(false);

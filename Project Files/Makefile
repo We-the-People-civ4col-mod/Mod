@@ -306,6 +306,9 @@ source_list_building: header_building
     @ECHO.>> $(FILE_DEPENDS)
 	
 header_building:
+!IFDEF NO_FASTDEP
+	@IF EXIST $(TEMP_TARGET_FILES) DEL /f /q $(TEMP_TARGET_FILES)
+!ENDIF
 	@ECHO Building headers
 	@$(PERL) bin\xml_enum_gen.pl
 	@$(PERL) bin\variable_setup.pl
@@ -320,8 +323,10 @@ fastdep: source_list_building
 !ELSE
 	@echo Unknown Version| $(PERL) bin\git_version.pl
 !ENDIF
+!IFNDEF NO_FASTDEP
 	@$(FD) --objectextension=pch -q --removepath=$(SOURCE_DIR)\ -O $(TEMP_TARGET_FILES) $(SOURCE_DIR)\CvGameCoreDLL.cpp >> $(FILE_DEPENDS)
     @$(FD) --objectextension=obj -q --removepath=$(SOURCE_DIR)\ -O $(TEMP_TARGET_FILES) $(SOURCES) >> $(FILE_DEPENDS)
+!ENDIF
 
 Make_Dir:
 	@FOR %j in ($(SUBDIRS)) DO @(IF NOT EXIST "$(TEMP_TARGET_FILES)\%j\." MKDIR "$(TEMP_TARGET_FILES)\%j")

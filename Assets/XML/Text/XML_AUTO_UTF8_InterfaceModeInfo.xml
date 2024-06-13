@@ -161,6 +161,7 @@
 		<German>Zeichenmodus</German>
 		<Italian>Modalità segnale</Italian>
 		<Spanish>Modo letrero</Spanish>
+		<Russian>[COLOR_NEGATIVE_TEXT]Режим заметок[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_SIGN_HELP</Tag>

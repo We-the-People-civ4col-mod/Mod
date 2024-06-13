@@ -19,7 +19,7 @@ class NativeAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 	def __init__(self, parent):
 		BaseAdvisorWindow.BaseAdvisorWindow.__init__(self, parent, "NativeStateClass")
 	
-		self.settlementIcon = gc.getBuildingInfo(gc.getInfoTypeForString("BUILDING_CHICKEE")).getButton()
+		self.settlementIcon = gc.getBuildingInfo(BuildingTypes.BUILDING_CHICKEE).getButton()
 		self.tradeStationChar = gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()
 		self.tradeStationText = u" %c" % self.tradeStationChar
 		

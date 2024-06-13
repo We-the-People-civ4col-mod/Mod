@@ -198,6 +198,7 @@ void CvPlot::setupGraphical()
 	updateMinimapColor();
 
 	updateVisibility();
+	updateCenterUnit(); // K-Mod (This is required now that CvMap::updateCenterUnit doesn't always update the whole map.)
 }
 
 void CvPlot::erase()
@@ -486,6 +487,9 @@ void CvPlot::doTurn()
 			CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
 
 			if (pLoopUnit == NULL) continue;
+
+			if (pLoopUnit->isTempUnit())
+				continue;
 
 			FAssertMsg(pLoopUnit->atPlot(this), "pLoopUnit is expected to be at the current plot instance");
 		}
@@ -3929,6 +3933,9 @@ bool CvPlot::isVisible(TeamTypes eTeam, bool bDebug) const
 
 bool CvPlot::isActiveVisible(bool bDebug) const
 {
+	if (this == NULL)
+		return false;
+
 	return isVisible(GC.getGameINLINE().getActiveTeam(), bDebug);
 }
 
@@ -5984,12 +5991,29 @@ void CvPlot::setFeatureType(FeatureTypes eNewValue, int iVariety)
 
 	if (eNewValue != NO_FEATURE)
 	{
+		const CvFeatureInfo& kNewFeatureInfo = GC.getFeatureInfo(eNewValue);
+
 		if (iVariety == -1)
 		{
-			iVariety = ((GC.getFeatureInfo(eNewValue).getArtInfo()->getNumVarieties() * ((getLatitude() * 9) / 8)) / 90);
+			iVariety = ((kNewFeatureInfo.getArtInfo()->getNumVarieties() * ((getLatitude() * 9) / 8)) / 90);
 		}
 
-		iVariety = range(iVariety, 0, (GC.getFeatureInfo(eNewValue).getArtInfo()->getNumVarieties() - 1));
+		iVariety = range(iVariety, 0, (kNewFeatureInfo.getArtInfo()->getNumVarieties() - 1));
+
+		if (!GC.getMap().hasStream() &&
+			kNewFeatureInfo.isNorthMovementBonus() ||
+			kNewFeatureInfo.isSouthMovementBonus() ||
+			kNewFeatureInfo.isEastMovementBonus() ||
+			kNewFeatureInfo.isWestMovementBonus() ||
+			kNewFeatureInfo.isNorthEastMovementBonus() ||
+			kNewFeatureInfo.isNorthWestMovementBonus() ||
+			kNewFeatureInfo.isSouthEastMovementBonus() ||
+			kNewFeatureInfo.isSouthWestMovementBonus())
+		{
+			// Need to determine if the map has any streams since
+			// that info is required by the pathfinder
+			GC.getMap().setStreamFlag();
+		}
 	}
 	else
 	{
@@ -9341,9 +9365,9 @@ bool CvPlot::canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const
 		return false;
 	}
 
-	if (kTrigger.getPlotType() != NO_PLOT)
+	if (kTrigger.getPlotTypes().hasContent())
 	{
-		if (getPlotType() != kTrigger.getPlotType())
+		if (!kTrigger.getPlotTypes().get(getPlotType()))
 		{
 			return false;
 		}
@@ -9722,37 +9746,6 @@ void CvPlot::setDistanceToOcean(int iNewValue)
 int CvPlot::getDistanceToOcean() const
 {
 	return m_iDistanceToOcean;
-}
-
-CvPlot* CvPlot::findNearbyOceanPlot(int iRandomization)
-{
-    CvPlot* pOceanPlot = this;
-
-    while (pOceanPlot->getDistanceToOcean() > 0)
-    {
-        CvPlot* pBestPlot = NULL;
-        int iBestValue = MAX_INT;
-        for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
-        {
-            CvPlot* pDirectionPlot = plotDirection(pOceanPlot->getX_INLINE(), pOceanPlot->getY_INLINE(), (DirectionTypes)iDirection);
-            if (pDirectionPlot != NULL)
-            {
-				int iValue = pDirectionPlot->getDistanceToOcean() * (1000 + GC.getGame().getSorenRandNum(10 * iRandomization, "find nearby ocean plot"));
-                if (iValue < iBestValue)
-                {
-                    iBestValue = iValue;
-                    pBestPlot = pDirectionPlot;
-                }
-            }
-        }
-        FAssert(pBestPlot != NULL);
-        if (pBestPlot == NULL)
-        {
-            return NULL;
-        }
-        pOceanPlot = pBestPlot;
-    }
-    return pOceanPlot;
 }
 
 int CvPlot::countFriendlyCulture(TeamTypes eTeam) const
@@ -10554,3 +10547,16 @@ bool CvPlot::isBarbarianUnitOnAdjacentPlot(int /*UnitClassTypes*/ iIndex) const
 	return false;
 }
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
+int CvPlot::getTurnDamage() const
+{
+	const FeatureTypes featureType = getFeatureType();
+	
+	if (featureType != NO_FEATURE)
+	{
+		const CvFeatureInfo & kFeatureInfo = GC.getFeatureInfo(getFeatureType());
+		return kFeatureInfo.getTurnDamage();
+	}
+	
+	return 0;
+}

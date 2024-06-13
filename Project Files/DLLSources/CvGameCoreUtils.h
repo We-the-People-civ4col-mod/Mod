@@ -250,6 +250,8 @@ DllExport bool isCardinalDirection(DirectionTypes eDirection);
 DirectionTypes estimateDirection(int iDX, int iDY);
 DllExport DirectionTypes estimateDirection(const CvPlot* pFromPlot, const CvPlot* pToPlot);
 DllExport float directionAngle(DirectionTypes eDirection);
+int getDirectionDiff(DirectionTypes direction1, DirectionTypes direction2);
+DirectionTypes getDirectionFrom_dX_dY(int dX, int dY);
 bool atWar(TeamTypes eTeamA, TeamTypes eTeamB);
 bool isPotentialEnemy(TeamTypes eOurTeam, TeamTypes eTheirTeam);
 
@@ -338,7 +340,6 @@ int stepValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointe
 int stepCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int stepAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
-int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int areaValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
 int joinArea(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder);
@@ -394,4 +395,7 @@ private:
 int getDefineFlagsForDLL();
 CvString getCompileFlags(int iDefineFlags);
 // city radius end
+
+bool generatePathForHypotheticalUnit(const CvPlot* pFrom, const CvPlot* pTo, PlayerTypes ePlayer, UnitTypes eUnit, int iFlags = 0, int iMaxTurns = -1);
+
 #endif

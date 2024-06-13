@@ -1106,7 +1106,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRAVEL_PLASTERED_ROAD_ONLY</Tag>
-		<English>[ICON_BULLET]Requires [COLOR_WARNING_TEXT]plastered country roads[COLOR_REVERT] to travel</English>
+		<English>[ICON_BULLET]Requires [COLOR_WARNING_TEXT]paved country roads[COLOR_REVERT] to travel</English>
 		<French>[ICON_BULLET]Nécessite [COLOR_WARNING_TEXT] une route pavée[COLOR_REVERT] pour voyager</French>
 		<German>[ICON_BULLET]Kann nur auf [COLOR_WARNING_TEXT]gepflasterten Landstraßen[COLOR_REVERT] fahren</German>
 		<Russian>[ICON_BULLET]Требует [COLOR_WARNING_TEXT]вымощенную камнем дорогу[COLOR_REVERT] для передвижения</Russian>
@@ -1217,7 +1217,7 @@
 		<Russian>[ICON_BULLET]Дает дополнительный бонус %d1_defensebonus%%%F2_Icon к защите города, если форт защищают солдаты, а его участок внутри города обрабатывается горожанином.</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_IMPROVEMENT_MONASTERY_CROSSS_MODIFIER_IF_WORKED</Tag>
+		<Tag>TXT_KEY_IMPROVEMENT_MONASTERY_CROSS_MODIFIER_IF_WORKED</Tag>
 		<English>[ICON_BULLET]Adds additional %d1_crossesbonus%%%F2_Icon if the monastery has missionaries and its plot is worked by a citizen inside the city</English>
 		<French>[ICON_BULLET]Ajoute %d1_crossesbonus%%%F2_Icon si le monastère est occupé avec des missionnaires et si son emplacement est travaillé par un citoyen de la ville.</French>
 		<German>[ICON_BULLET]Gibt der Stadt einen zusätzliche %d1_crossesbonus%%%F2_Icon, wenn das Kloster durch Mönche besetzt ist und dessen Feld durch einen Arbeiter in der Stadt bearbeitet wird</German>

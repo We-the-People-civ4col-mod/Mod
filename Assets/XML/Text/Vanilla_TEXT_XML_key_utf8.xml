@@ -499,6 +499,7 @@
 		<German>Alle Ressourcen anzeigen ein/aus</German>
 		<Italian>Abilita/disabilita la finestra 'Mostra tutte le risorse'</Italian>
 		<Spanish>Activar visor de todos los recursos</Spanish>
+		<Russian>Вкл/выкл отображение ресурсов</Russian> <!-- глобальная карта -->
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_SCORES</Tag>
@@ -1011,6 +1012,7 @@
 		<German>Feindanzeige ein-/ausblenden</German>
 		<Italian>Abilita/Disabilita la visualizzazione delle unità nemiche</Italian>
 		<Spanish>Activar el visor de unidades enemigas</Spanish>
+		<Russian>Отображение военных юнитов</Russian> <!-- глобальная карта -->
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_ADVANCED_START</Tag>
@@ -1715,6 +1717,7 @@
 		<German>Einheitenpositionsanzeige ein/aus</German>
 		<Italian>Attiva/Disattiva la visualizzazione della posizione delle unità</Italian>
 		<Spanish>Alterna el visor de posicionamiento de unidades</Spanish>
+		<Russian>Показать/скрыть отображение позиций всех военных юнитов</Russian> <!-- глобальная карта -->
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_BUILD_CITY_HELP</Tag>

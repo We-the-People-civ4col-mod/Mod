@@ -2529,6 +2529,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 	if ((gDLL->getChtLvl() > 0) && (bCtrl || bAlt || bShift))
 	{
 		szTempBuffer.Format(L"\n(%d, %d) (Oc: %d  / Cr: %d)", pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getDistanceToOcean(), pPlot->getCrumbs());
+		//szTempBuffer.Format(L"\nNumAIUnits: %d", pPlot->area()->getNumAIUnits(GC.getGameINLINE().getActivePlayer(), UNITAI_TRANSPORT_SEA));
 		szString.append(szTempBuffer);
 	}
 
@@ -3009,11 +3010,11 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 				}
 			}
 
-			// WTP, check Harbour System also for Monasteries, Forts and Canals - START
+			// WTP, check Harbour System also for Forts and Canals - START
 			if (GLOBAL_DEFINE_ENABLE_NEW_HARBOUR_SYSTEM)
 			{
 				const CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
-				if(kImprovement.isFort() || kImprovement.isMonastery() || kImprovement.isCanal())
+				if(kImprovement.isFort() || kImprovement.isCanal())
 				{
 					// we check how many Units that place would allow
 					int iImprovementHarbourSpace = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
@@ -3027,7 +3028,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 					szString.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", iImprovementHarbourSpace, GC.getSymbolID(ANCHOR_CHAR)));
 				}
 			}
-			// WTP, check Harbour System also for Monasteries, Forts and Canals - END
+			// WTP, check Harbour System also for Forts and Canals - END
 
 			// WTP, check Barracks System also for Monasteries and Forts - START
 			if (GLOBAL_DEFINE_ENABLE_NEW_BARRACKS_SYSTEM)
@@ -6465,7 +6466,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	int iLast;
 	int iI;
 
-	if (NO_BUILDING == eBuilding)
+	if (NO_BUILDING == eBuilding || eBuilding >= NUM_BUILDING_TYPES)
 	{
 		return;
 	}
@@ -7404,7 +7405,8 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		// WTP, ray, Not allowed next to itself - END
 
 		//WTP, ray, Large Rivers - START
-		if (info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
+		//Not all improvements on Large Rivers allow crossing anymore, modifying to be more specific. -Dyllin Jan 2024
+		if (strcmp("IMPROVEMENT_RAFT_STATION", info.getType()) == 0)
 		{
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_ALLOWS_CROSSING_OF_LARGE_RIVERS"));
@@ -7500,22 +7502,22 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_MONASTERY_FEATURES"));
 		// WTP, ray, Improvements give Bonus to their City - START
-		int iMonsasteryCrossBonusModifier = GC.getDefineINT("MONASTERY_CROSSES_MODIFIER_FOR_CITY");
+		int iMonasteryCrossBonusModifier = GC.getDefineINT("MONASTERY_CROSSES_MODIFIER_FOR_CITY");
 
 		// we double if it is second level improvement, which we know if it has no more upgrade
 		if (info.getImprovementUpgrade() == NO_IMPROVEMENT)
 		{
-			iMonsasteryCrossBonusModifier = iMonsasteryCrossBonusModifier * 2;
+			iMonasteryCrossBonusModifier = iMonasteryCrossBonusModifier * 2;
 		}
 
 		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_MONASTERY_CROSSS_MODIFIER_IF_WORKED", iMonsasteryCrossBonusModifier, GC.getYieldInfo(YIELD_CROSSES).getChar()));
+		szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_MONASTERY_CROSS_MODIFIER_IF_WORKED", iMonasteryCrossBonusModifier, GC.getYieldInfo(YIELD_CROSSES).getChar()));
 		// WTP, ray, Improvements give Bonus to their City - END
 	}
 	// R&R, ray, Monasteries and Forts - END
 
-	// WTP, check Harbour System also for Monasteries, Forts and Canals - START
-	if(info.isFort() || info.isMonastery() || info.isCanal())
+	// WTP, check Harbour System also for Forts and Canals - START
+	if(info.isFort() || info.isCanal())
 	{
 		// we check how many Units that place would allow
 		int iImprovementHarbourSpace = GLOBAL_DEFINE_BASE_HARBOUR_SPACES_WITHOUT_BUILDINGS;
@@ -7528,7 +7530,7 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED", iImprovementHarbourSpace, GC.getSymbolID(ANCHOR_CHAR)));
 	}
-	// WTP, check Harbour System also for Monasteries, Forts and Canals - END
+	// WTP, check Harbour System also for Forts and Canals - END
 
 	// WTP, check Barracks System also for Monasteries and Forts - START
 	if(info.isFort() || info.isMonastery())
@@ -10559,7 +10561,7 @@ void CvGameTextMgr::setFatherHelp(CvWStringBuffer &szBuffer, FatherTypes eFather
 		szTempBuffer.Format(SETCOLR L"%s" ENDCOLR , TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), kFatherInfo.getDescription());
 		szBuffer.append(szTempBuffer);
 
-		FatherCategoryTypes eCategory = (FatherCategoryTypes) kFatherInfo.getFatherCategory();
+		FatherCategoryTypes eCategory = kFatherInfo.getFatherCategory();
 		if (eCategory != NO_FATHERCATEGORY)
 		{
 			szTempBuffer.Format(SETCOLR L" (%s)" ENDCOLR , TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), GC.getFatherCategoryInfo(eCategory).getDescription());

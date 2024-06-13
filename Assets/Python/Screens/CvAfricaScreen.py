@@ -645,10 +645,10 @@ class CvAfricaScreen:
 			iW = iW_Max
 		iX = iX_Begin + (iX_End - iX_Begin) / 2 - iW / 2
 		screen.addStackedBarGFC(szWidget, iX, self.STANDARD_MARGIN, iW, self.STANDARD_MARGIN * 2, InfoBarTypes.NUM_INFOBAR_TYPES, WidgetTypes.WIDGET_GENERAL, self.HELP_CROSS_RATE, -1)
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_STORED, gc.getInfoTypeForString("COLOR_WATER_TEXT"))
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE, gc.getInfoTypeForString("COLOR_CITY_BLUE"))
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE_EXTRA, gc.getInfoTypeForString("COLOR_EMPTY"))
-		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_EMPTY, gc.getInfoTypeForString("COLOR_EMPTY"))
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_STORED, ColorTypes.COLOR_WATER_TEXT)
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE, ColorTypes.COLOR_CITY_BLUE)
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_RATE_EXTRA, ColorTypes.COLOR_EMPTY)
+		screen.setStackedBarColors(szWidget, InfoBarTypes.INFOBAR_EMPTY, ColorTypes.COLOR_EMPTY)
 		fStoredPercent = float(player.getCrossesStored()) / float(player.immigrationThreshold())
 		screen.setBarPercentage(szWidget, InfoBarTypes.INFOBAR_STORED, fStoredPercent)
 		if (fStoredPercent < 1.0):
@@ -938,7 +938,7 @@ class CvAfricaScreen:
 		
 		screen.hide("DealFailedText")
 		
-		screen.addUnitGraphicGFC("DialogMap" + "Water", gc.getInfoTypeForString("UNIT_CARAVEL"), -1, self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, True)
+		screen.addUnitGraphicGFC("DialogMap" + "Water", UnitTypes.UNIT_CARAVEL, -1, self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, 0, 0, 0, True)
 		screen.addDDSGFC("DialogMap", "Art/Interface/Screens/Europe/DialogMapAmerica.dds", self.DIALOG_X + self.MAP_X, self.DIALOG_Y + self.MAP_Y, self.MAP_SIZE, self.MAP_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		screen.setLabelAt(self.getNextWidgetName(), "DialogMap", u"<font=4>" + localText.getText("TXT_KEY_EU_SAIL", ()) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, self.MAP_SIZE / 2, self.STANDARD_MARGIN * 3 / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 		self.createBorder(0, 0, self.MAP_SIZE, self.MAP_SIZE, self.BORDER_SIZE, "DialogMap", True)

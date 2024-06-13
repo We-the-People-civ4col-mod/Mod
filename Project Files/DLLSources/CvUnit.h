@@ -75,7 +75,8 @@ private:
 enum Port
 {
 	EUROPE,
-	AFRICA
+	AFRICA,
+	PORT_ROYAL
 };
 
 class CvUnit : public CvDLLEntity
@@ -93,9 +94,10 @@ public:
 	virtual ~CvUnit();
 
 	void reloadEntity();
-	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, Coordinates initCoord, DirectionTypes eFacingDirection, int iYieldStored);
+	void init(int iID, UnitTypes eUnit, ProfessionTypes eProfession, UnitAITypes eUnitAI, PlayerTypes eOwner, Coordinates initCoord, DirectionTypes eFacingDirection, int iYieldStored, int iBirthmark);
+	void changeIdentity(UnitTypes eUnit);
 	void uninit();
-	void reset(int iID = 0, UnitTypes eUnit = NO_UNIT, PlayerTypes eOwner = NO_PLAYER, bool bConstructorCall = false);
+	void reset(int iID = 0, UnitTypes eUnit = NO_UNIT, PlayerTypes eOwner = NO_PLAYER, bool bConstructorCall = false, bool bIdentityChange = false);
 	void setupGraphical();
 	void convert(CvUnit* pUnit, bool bKill);
 	void kill(bool bDelay, CvUnit* pAttacker = NULL);
@@ -119,14 +121,12 @@ public:
 	//FAStarNode* getPathLastNode() const; // disabled by K-Mod
 	CvPlot* getPathEndTurnPlot() const;
 	int getPathCost() const;
-	// TAC - AI Improved Naval AI - koma13 - START
-	//bool generatePath(const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL) const;
-	//bool generatePath(const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL, bool bIgnoreDanger = true) const;
-	// TAC - AI Improved Naval AI - koma13 - END
 	bool generatePath(const CvPlot* pToPlot, int iFlags = 0, bool bReuse = false,							// Exposed to Python
 		int* piPathTurns = NULL,
 		int iMaxPath = -1, // K-Mod
-		bool bUseTempFinder = false) const; // advc.128
+		bool bUseTempFinder = false, // advc.128
+		bool bCalledFromPython = false
+		) const;
 	KmodPathFinder& getPathFinder() const; // K-Mod
 
 	bool canEnterTerritory(PlayerTypes ePlayer, bool bIgnoreRightOfPassage = false) const;
@@ -753,7 +753,7 @@ public:
 	bool isIgnoreDanger() const;
 	void setIgnoreDanger(bool bNewValue);
 	// TAC - Trade Routes Advisor - koma13 - END
-
+	
 	bool raidWeapons(CvCity* pCity);
 	bool raidWeapons(CvUnit* pUnit);
 	bool raidGoods(CvCity* pCity);
@@ -771,11 +771,11 @@ public:
 
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
-	void resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall);
+	void resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool bConstructorCall, bool bIdentityChange = false);
 	void read(CvSavegameReader reader);
 	void write(CvSavegameWriter writer);
 
-	virtual void AI_init() = 0;
+	virtual void AI_init(int iBirthmark) = 0;
 	virtual void AI_uninit() = 0;
 	virtual void AI_reset() = 0;
 	virtual bool AI_update() = 0;
@@ -804,6 +804,7 @@ public:
 	virtual ProfessionTypes AI_getOldProfession() const = 0;
 	virtual void AI_setOldProfession(ProfessionTypes eProfession) = 0;
 	virtual ProfessionTypes AI_getIdealProfession() const = 0;
+	virtual int AI_getBirthmark() const = 0;
 
 	/*** TRIANGLETRADE 10/15/08 by DPII ***/
 	bool canSailToAfrica(const CvPlot* pPlot, UnitTravelStates eNewState = NO_UNIT_TRAVEL_STATE) const;
@@ -827,6 +828,11 @@ public:
 	bool isOwnPlayerUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
 	bool isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) const;
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
+
+	bool isAllowDangerousPath() const;
+	void setAllowDangerousPath(bool bNewValue, bool bRefreshUi = false);
+	void groupTransportedYieldUnits(CvUnit* pYieldUnit);
+	bool isTempUnit() const;
 
 protected:
 
@@ -932,6 +938,8 @@ protected:
 	int m_iAmountForNativeTrade;
 	YieldTypes m_eYieldForNativeTrade;
 	// R&R, ray, Natives Trading - END
+
+	bool m_bAllowDangerousPath;
 
 	UnitTravelStates m_eUnitTravelState;
 

@@ -177,7 +177,7 @@
 		<English>Blasphemy! The hot sun seems to have addled his mind! Quickly, raise a tithe from all the God-fearing citizens and send a missionary to this city! These lost souls need God's help.</English>
 		<French>Balsphème ! Le soleil brûlant semble avoir attaqué son esprit ! Levez rapidement la dîme chez tous les citoyens craignant Dieu et envoyez un missionnaire à la ville ! Ces âmes perdues ont besoin de l'aide de Dieu.</French>
 		<German>Dem hat die Wüstensonne wohl das Hirn verdorrt! Rasch, sammelt Geld von den gottesfürchtigen Bürgern und schickt einen Missionar in die Stadt! Die verirrten Seelen brauchen unsere Hilfe.</German>
-		<Russian>Кощунство! Жаркое солнце, кажется, смутило его разум! Быстро соберите десятину со всех богобоязненных горожан и отправьте миссионера в этот город! Эти заблудшие души нуждаются в Божьей помощи.</Russian>
+		<Russian>Кощунство! Жаркое солнце помутило его разум! Быстро соберите десятину со всех богобоязненных горожан и отправьте миссионера в этот город! Эти заблудшие души нуждаются в Божьей помощи.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BOOK_MORMON_2</Tag>
@@ -988,10 +988,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_MARKETS_DONE_1</Tag>
-		<English>They could build a larger market in one of our cities. Thus they will profit as well.</English>
-		<French>Ils peuvent construire un marché encore plus grand dans l'une de nos villes. Les profits générés augmenteront ainsi.</French>
-		<German>Sie sollen in einer unserer Städte den vorhandenen Marktplatz ausbauen. So profitieren sie selbst auch davon.</German>
-		<Russian>Они могли бы построить рынок побольше в одном из наших городов. Таким образом, они также получат прибыль.</Russian>
+		<English>We now have the markets, but we should also expand trade with the Natives. It's time to hire a courageous native trader.</English>
+		<French>Nous avons maintenant les places de marché, mais nous devrions également développer le commerce avec les autochtones. Nous voulons que vous engagiez un marchand aborigène courageux.</French>
+		<German>Wir haben zwar nun die Marktplätze, aber wir sollten den Handel mit den Ureinwohnern noch zusätzlich ausbauen. Sie sollen einen couragierten Ureinwohnerhändler anheuern.</German>
+		<Russian>Теперь, когда у нас есть рынки, нужно расширять торговлю с индейцами. Пусть пришлют нам самого опытного торговца с индейцами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_MARKETS_DONE_2</Tag>
@@ -1093,7 +1093,7 @@
 		<English>Search for this poor woman and bring her to the colonies. We can at least give her proper work and a steady income without angering the court too much. But do it quietly.</English>
 		<French>Cherchez cette pauvre femme et amenez-la ici.Au moins, nous pouvons lui donner un métier honorable et un revenu stable sans trop froisser la cour. Agissez toutefois discrètement.</French>
 		<German>Sucht nach der armen Frau und bringt sie in die Kolonien. Wir können ihr zumindest eine anständige Arbeitstelle mit stetigem Einkommen beschaffen, ohne den Hof zu sehr zu verärgern. Lasst dies jedoch leise geschehen.</German>
-		<Russian>Найдите эту бедную женщину и приведите ее в колонии. По крайней мере, мы можем дать ей достойную работу и стабильный доход, не слишком раздражая Двор. Но сделайте это по-тихому.</Russian>
+		<Russian>Найдите эту несчастную женщину и привезите ее в колонии. По крайней мере, мы можем дать ей достойную работу и стабильный доход, не слишком раздражая Двор. Но сделайте это по-тихому.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GOVERNOR_LOVER_2</Tag>
@@ -1142,7 +1142,7 @@
 		<English>A vision after my own heart! Well, I will have this Great Tool Factory built, as the first of its kind in America. Of course, I expect the artisans to honour this commitment ...</English>
 		<French>Une vision selon mon propre cœur ! Je ferai construire cette Hauts fourneaux, la première installation de production de ce type en Amérique. Bien sûr, j'attends des artisans qu'ils honorent cet engagement...</French>
 		<German>Eine Vision nach meinem Geschmack! Wohlan, ich werde diese Große Eisenwarenfabrik errichten lassen, als erste Produktionsstätte dieser Art in Amerika. Natürlich erwarte ich, dass die Handwerkerschaft dieses Engagement honorieren wird ...</German>
-		<Russian>Какое интересное видени! Да, я построю Завод инструментов, первый в своем роде в Америке. Надеюсь, ремесленники выполнят свои обязательства...</Russian>
+		<Russian>Чертовски интересное предложение! Да, я построю Завод инструментов, первый в своем роде в Америке. Надеюсь, ремесленники выполнят свои обязательства...</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GREAT_TOOL_FACTORY_DONE_1</Tag>
@@ -1415,7 +1415,7 @@
 		<English>Well, then sell them the supplies they came for.</English>
 		<French>Bien. Vendons leurs ce dont ils ont besoin.</French>
 		<German>Dann verkauft ihnen die Vorräte, die sie wollen.</German>
-		<Russian>Ну, тогда продай им припасы, за которыми они пришли.</Russian>
+		<Russian>Продайте им припасы, за которыми они пришли.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MAN_FROM_THE_WILDERNESS_2</Tag>
@@ -1429,7 +1429,7 @@
 		<English>Try to convince them to join our forces as rangers.</English>
 		<French>Essayez de les convaincre de rejoindre nos forces en tant que gardes-forestiers.</French>
 		<German>Versucht sie zu überzeugen, unseren Truppen als Rangers zu dienen.</German>
-		<Russian>Попытайтесь убедить их присоединиться к нашим силам в качестве рейнджеров.</Russian>
+		<Russian>Попытайтесь убедить их присоединиться к нам в качестве рейнджеров.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MINING_ACCIDENT_1</Tag>
@@ -2519,7 +2519,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALING_2</Tag>
-		<English>These poor animals. They need our protection but not our harpoons. Furthermore our neighbours are already whaling in this area. I will not jeopardise our relationship.</English>
+		<English>These poor animals. They need our protection, not our harpoons. Furthermore our neighbours are already whaling in this area. I will not jeopardise our relationship.</English>
 		<French>These poor animals. They need our protection but not our harpoons. Furthermore our neighbours do already whaling in this area. I will not jeopardise our relationship.</French>
 		<German>Diese armen Tiere. Sie benötigen unseren Schutz, nicht unsere Harpunen. Außerdem betreiben unsere Nachbarn hier bereits Walfang. Ich möchte die guten Beziehungen nicht gefährden.</German>
 		<Russian>Бедные животные. Они нуждаются в нашей защите, а не в наших гарпунах. Кроме того, наши соседи уже ведут китобойный промысел в этом районе. Я не буду рисковать нашими отношениями.</Russian>
@@ -2617,7 +2617,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RABBLE_1</Tag>
-		<English>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more beadles.</English>
+		<English>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more constables.</English>
 		<French>All right, let the ragtag pack have their toll. But we have to do something about this rabble. We should hire a few more beadles.</French>
 		<German>Na schön, das Lumpenpack soll ihren Wegzoll haben. Aber wir müssen dringend was gegen dieses Gesindel tun. Wir sollten noch ein paar Büttel mehr einstellen.</German>
 		<Russian>Ладно, пусть люмпены возьмут свою часть. Но надо срочно что-то делать с этим сбродом. Мы должны нанять еще несколько судебных приставов.</Russian>
@@ -2638,7 +2638,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADEFORT_1</Tag>
-		<English>Yes, this job is just right for a trading post. Local farmers and Indians will trade with us. This way we will outdo the competition.</English>
+		<English>Yes, this spot is just right for a trading post. The local Natives and farmers will trade with us. That's how we can outdo the competition.</English>
 		<French>Yes, this job is just right for a trading post. Local farmers and Indians will trade with us. This way we will outdo the competition.</French>
 		<German>Ja, diese Stelle ist für einen Handelsposten genau richtig. Ortsansässige Farmer und Indianer werden mit uns Handeln. Damit stechen wir die Konkurrenz aus.</German>
 		<Russian>Да, это место как раз подходит для торгового поста. Местные фермеры и индейцы будут торговать с нами под защитой пушек форта. Таким образом, мы превзойдем конкурентов.</Russian>
@@ -2652,7 +2652,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADEFORT_3</Tag>
-		<English>I don't have time for this now. The trading company should take care of it itself.</English>
+		<English>I don't have time for this now. The trading company should take care of everything itself.</English>
 		<French>I don't have time for this now. The trading company should take care of it itself.</French>
 		<German>Für sowas hab ich jetzt keine Zeit. Die Handelsgesellschaft soll sich gefälligst selbst darum kümmern.</German>
 		<Russian>У меня сейчас нет на это времени. Торговая компания должна позаботиться об этом сама.</Russian>
@@ -2694,14 +2694,14 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_LOST_SHIP_1</Tag>
-		<English>Aye, the ship is unsalvageable. These damn shallow waters! Steer the ship close to shore. Maybe we can recover something from it later.</English>
+		<English>Aye, the ship is unsalvageable. These damn shallow waters! Try to beach the ship near the shore. Maybe we can recover something from it later.</English>
 		<French>Aye, the ship is unsalvageable. These damn shallow waters. Then the ship will at least steer close to shore, maybe we can salvage something from it later!</French>
 		<German>Aye, das Schiff ist nicht mehr zu retten. Diese verdammten seichten Gewässer. Dann steuert das Schiff wenigstens in Ufernähe, vielleicht können wir später noch etwas daraus bergen!</German>
 		<Russian>Да, корабль не подлежит восстановлению. Чёртовы мелководья! Подведите корабль поближе к берегу. Может быть, мы сможем извлечь из него что-нибудь позже.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_COLONY_GROWTH</Tag>
-		<English>Your colony has grown a lot. But we can only expect that our rivals do the same. We need to reach a population of 20 to increase our production and strengthen our borders.</English>
+		<English>Our colony has grown a lot. Naturally our rivals are striving to do the same. We need to reach a population of 20 to increase our production and strengthen our borders.</English>
 		<French>Votre colonie a beaucoup grandi. Mais nous ne pouvons que nous attendre à ce que nos rivaux fassent de même. Nous devons atteindre une population de 20 pour augmenter notre production et renforcer nos frontières.</French>
 		<German>> Ihre Kolonie ist stark gewachsen. Aber wir können nur erwarten, dass unsere Konkurrenten dasselbe tun. Wir müssen eine Bevölkerungszahl von 20 erreichen, um unsere Produktion zu steigern und unsere Grenzen zu stärken.</German>
 		<Russian>Наша колония сильно выросла. Однако и у наших соперников дела могут пойти также хорошо. Нам нужно достичь населения в 20 человек, чтобы увеличить производство и укрепить наши границы.</Russian>
@@ -2715,7 +2715,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_COLONY_GROWTH</Tag>
-		<English>Another nation did expand a settlement to 20 colonists.</English>
+		<English>Another nation managed to expand a settlement to 20 colonists.</English>
 		<French>Une autre nation a étendu une colonie à 20 colon.</French>
 		<German>Eine andere Nation erweiterte eine Siedlung auf 20 Kolonisten.</German>
 		<Russian>Другая нация расширила поселение до 20 колонистов.</Russian>
@@ -2729,7 +2729,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_COLONY_GROWTH_DONE</Tag>
-		<English>Congratulations! You have strengthened our position by expanding the colony to 20 colonists. By now they all live cramped together and hardly know each other anymore.</English>
+		<English>Congratulations! You have strengthened our position by expanding the colony to 20 colonists, even if they all live cramped together with odd newcomers arriving every day. You'd better keep everyone busy. Better yet, help them all get rich.</English>
 		<French>Félicitations! Vous avez renforcé notre position en élargissant la colonie à 20 colons. Désormais, ils vivent tous à l'étroit et ne se connaissent presque plus.</French>
 		<German>Glückwunsch! Sie haben unsere Position gestärkt, indem Sie die Kolonie auf 20 Kolonisten erweitert haben. Mittlerweile leben sie alle auf engstem Raum zusammen und kennen sich kaum noch.</German>
 		<Russian>Поздравляем! Вы укрепили наши позиции в Новом Свете, увеличив население колонии до 20 жителей. И не смотря на то, что пока все они живут вместе на очень маленьком пространстве и почти не знают друг друга, скоро все изменится к лучшему.</Russian>
@@ -2743,20 +2743,20 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_COLONY_GROWTH_DONE_2</Tag>
-		<English>Theft and other shady business take place in broad daylight. We need a judge to restore order!</English>
+		<English>Thefts, shakedowns and other shady business are taking place in broad daylight. We need a judge to restore order!</English>
 		<French>> Les vols et autres affaires louches ont lieu en plein jour. Il nous faut un juge pour rétablir l'ordre!</French>
 		<German>Diebstähle und andere dubiose Geschäfte geschehen am helllichten Tag. Wir brauchen einen Richter, der die Ordnung wiederherstellt!</German>
 		<Russian>Кражи и другие тёмные дела происходят средь бела дня! Нам срочно нужен судья, чтобы восстановить порядок!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ECCENTRIC_ARCHITECT_1</Tag>
-		<English>Inform His Majesty we are extremely grateful for his support. Indeed, an experienced architect would be of great help to us. May we be graciously sent the man and the King's bill. Presumably the man will not be sent to us free of charge.</English>
+		<English>Inform His Majesty we are extremely grateful for his support. Indeed, an experienced architect will be of great help to us. We will gratefully receive the man, along with the King's bill. We would not expect to get such a man free of charge.</English>
 		<German>Richten Sie Seiner Majestät aus, wir sind ihm für seine Unterstützung äußerst dankbar. In der Tat würde uns ein erfahrener Architekt sehr helfen. Man möge uns gnädigerweise den Mann und die Kostennote des Königs übersenden. Vermutlich wird man uns den Mann ja nicht kostenlos übersenden.</German>
 		<Russian>Сообщите Его Величеству, что мы чрезвычайно благодарны за Его поддержку. Действительно, опытный архитектор был бы нам очень полезен. Мы с радостью примем и этого специалиста и Королевский счет. Думается, бесплатно такого человека к нам не пришлют...</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ECCENTRIC_ARCHITECT_2</Tag>
-		<English>We should exercise extreme caution here. His Majesty likes to send us people who have made themselves unpopular at court, and there is bound to be a catch. Tell His Majesty that we will graciously do without, but will take care of the construction ourselves.</English>
+		<English>We should exercise extreme caution here. His Majesty likes to send us people who have made themselves unpopular at court. There's bound to be some catch. Tell His Majesty that we can do without for the time being. It's better to take care of the construction ourselves.</English>
 		 <German>Wir sollten hier äußerste Vorsicht walten lasen. Seine Majestät schickt uns gerne Leute herüber, die sich bei Hofe unbeliebt gemacht haben und die Sache hat bestimmt einen Haken. Richtet seiner Majestät aus, dass wir gnädigst darauf verzichten, aber uns selbst um den Aufbau kümmern werden.</German>
 		<Russian>Здесь нам следует проявлять крайнюю осторожность. Его Величество любит присылать к нам людей, которые стали непопулярными при Дворе и здесь обязательно должен быть какой-то подвох. Скажите Его Величеству, что мы сожалеем о том, что не сможем принять столь высокую персону в наших скромных обителях. Ну а о строительстве мы как-нибудь сами позаботимся.</Russian>
 	</TEXT>
@@ -2786,49 +2786,49 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING_1</Tag>
-		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] the friendship was celebrated with a great festivity and future trade was promised.</English>
+		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] our mutual friendship was celebrated with great festivity and future trade was promised.</English>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde die Freundschaft mit einem großen Palaver gefeiert und zukünftiger Handel beschlossen.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] на большой ярмарке заключили множество союзов и торговых сделок.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING_2</Tag>
-		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] native people scalped and murdered local traders.</English>
+		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] Native people scalped and murdered local traders.</English>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben die Ureinwohner lokale Händler skalpiert und ermordet.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] краснокожие демоны скальпировали и убили местных торговцев.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING_3</Tag>
-		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a friendly meeting between settlers and native people took place.</English>
+		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a friendly meeting between settlers and Native people took place.</English>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] fand ein freundschaftliches Treffen zwischen Siedlern und Ureinwohnern statt.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] состоялась дружеская встреча индейцев и европейских поселенцев.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_1</Tag>
-		<English>Send experienced traders! This trade must necessarily be a success. The welfare of the colony also depends on it!</English>
+		<English>Send experienced traders! This trade has to be a success. The welfare of the colony depends on it!</English>
 		<German>Schickt erfahrene Händler! Dieser Handel muss unbedingt ein Erfolg werden. Das Wohl der Kolonie hängt auch davon ab!</German>
 		<Russian>Отправьте к ним опытных торговцев! Эта сделка обязательно должна быть успешной. Я уже чувствую запах денег!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_1</Tag>
-		<English>We expect a lot from this trade. However, we should be careful. Send out good cars, but don't overdo it either.</English>
+		<English>We expect a lot from this trade. Nonetheless we should be careful. Send out good shipments, but don't overdo it.</English>
 		<German>Wir erwarten uns viel von diesem Handel. Allerdings sollten wir vorsichtig sein. Schickt gute Wagen aus, aber übertreibt es auch nicht.</German>
 		<Russian>Мы ожидаем многого от этой сделки. Однако нам следует быть осторожными. Рассылайте хорошие машины (что это за бред?), но и не переусердствуйте.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_2</Tag>
-		<English>Send out the wagons and see what the savages have to offer us. Fill the wagons up to the tarp and best of all have additional wagons follow.</English>
+		<English>Send out our wagons and see what the Natives have to offer. Fill up those wagons so that the tarp bulges and, just to be prepared, make sure more wagons are following.</English>
 		<German>Schickt die Wagen aus und seht, was die Wilden uns zu bieten haben. Macht die Wagen voll bis unter die Plane und am besten lasst Ihr noch zusätzliche Wagen nachkommen.</German>
 		<Russian>Отправьте повозки и посмотрите, что эти дикари могут нам предложить. Если дело стоящее, грузите до верха и отправьте дополнительные повозки.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_3</Tag>
-		<English>Send our most experienced traders! Treasures await the men if they handle the trade with the Indians properly. And believe me, they better not come back without full wagons!</English>
+		<English>Send our most experienced traders! A generous reward awaits the men if they handle the Native trade properly. And, believe me, they better not come back without full wagons!</English>
 		<German>Schickt unsere erfahrensten Händler! Reichtum erwartet die Männer, wenn sie den Handel mit den Indianern richtig angehen. Und glaubt mir, sie sollten besser nicht ohne volle Wagen zurückkommen!</German>
 		<Russian>Отправьте наших самых опытных торговцев! Нас ждут несметные богатства, если мы будем "правильно" вести торговлю с индейцами. Обоз должен вернуться битком забитым товарами!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_4</Tag>
-		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train successfully returns from the Indian village in the wilderness!</English>
+		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train successfully returns from the Native village far out in the wilderness.</English>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug kehrt erfolgreich aus dem Indianer-Dorf in der Wildnis zurück!</German>
 		<Russian>Торговый обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] возвращается из индейской деревни после успешной торговли!</Russian>
 	</TEXT>

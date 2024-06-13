@@ -216,6 +216,7 @@ sub handleCyEnumInterface
 				$type = substr($type, 0, index($type, "\""));
 				$enums{$type} = ();
 				$state = STATE_3_INNER;
+				$modificationFiles{$file}{$type} = 1;
 			}
 		}
 		elsif ($state == STATE_3_INNER)
@@ -321,12 +322,15 @@ sub handleFile
 	my $timestamp = getModificationTime($file);
 	
 	my $timeCategory = 0;
-	for my $i (0..$#timestamps)
+	if ($lastScriptRunDate != 0)
 	{
-		if ($timestamp > $timestamps[$i])
+		for my $i (0..$#timestamps)
 		{
-			$timeCategory = $i;
-			last;
+			if ($timestamp > $timestamps[$i])
+			{
+				$timeCategory = $i;
+				last;
+			}
 		}
 	}
 	
@@ -424,7 +428,7 @@ sub lineErrorCheck
 	my $line = shift;
 	
 	$error_q->enqueue("$file gc.getDefineINT is no longer allowed. See CyEnumsInterface.cpp for details\n") unless index($line, "gc.getDefineINT") == -1;
-	return; # disable checks for getInfoTypeForString until all prior existing cases have been converted
+	#return; # disable checks for getInfoTypeForString until all prior existing cases have been converted
 	if (index($line, "gc.getInfoTypeForString") != -1)
 	{
 		# only trigger on gc.getInfoTypeForString + " as there are a few valid use cases for variables rather than hardcoded strings.

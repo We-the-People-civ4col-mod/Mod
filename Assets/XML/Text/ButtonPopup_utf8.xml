@@ -239,7 +239,7 @@
 		<German> ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um zu laden)</German>
 		<Italian> (clicca per caricare)</Italian>
 		<Spanish> (clic para cargar)</Spanish>
-		<Russian> ([COLOR:140:255:40:255]&lt; Нажмите &gt;[COLOR_REVERT] для загрузки)</Russian>
+		<Russian> ([COLOR:140:255:40:255]Нажмите[COLOR_REVERT] для загрузки)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NAME_COL_TRADE_GROUP</Tag>
@@ -353,20 +353,21 @@
 		<English>Unit does currently stop when an enemy comes into view ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to change)</English>
 		<French>L'unité s'arrête quand un ennemi est en vue ([COLOR:140:255:40:255]&lt; Cliquer &gt;[COLOR_REVERT]pour ignorer les dangers)</French>
 		<German>Einheit hält derzeit an, wenn ein Feind in Sichtweite gerät ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um das zu ändern)</German>
-		<Russian>В настоящее время юнит останавливается, когда враг появляется в поле зрения ([COLOR:140:255:40:255]&lt; Нажмите &gt;[COLOR_REVERT] для изменения)</Russian>
+		<Russian>В настоящее время юнит останавливается, когда враг появляется в поле зрения ([COLOR:140:255:40:255]Нажмите[COLOR_REVERT] для изменения)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_ROUTES_CANCEL_IGNORE_DANGER_HELP</Tag>
 		<English>Unit does not currently stop when an enemy comes into view ([COLOR:140:255:40:255]&lt; Click &gt;[COLOR_REVERT] to change)</English>
 		<French>L'unité poursuit sa route même si un ennemi est en vue ([COLOR:140:255:40:255]&lt; Cliquer &gt;[COLOR_REVERT]pour tenir compte des dangers)</French>
 		<German>Einheit hält nicht derzeit an, wenn ein Feind in Sichtweite gerät ([COLOR:140:255:40:255]&lt; Anklicken &gt;[COLOR_REVERT], um das zu ändern)</German>
-		<Russian>В настоящее время отряд не останавливается, когда в поле зрения появляется враг ([COLOR:140:255:40:255]&lt; Нажмите &gt;[COLOR_REVERT] для изменения)</Russian>
+		<Russian>В настоящее время отряд не останавливается, когда в поле зрения появляется враг ([COLOR:140:255:40:255]Нажмите[COLOR_REVERT] для изменения)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_ROUTES_ADD_SELECTION_HELP</Tag>
 		<English>Confirm this transport route and make it available for transport units</English>
 		<French>Ajouter la sélection en tant que nouvelle route commerciale</French>
 		<German>Diese Transportroute bestätigen und für Transporteinheiten zur Verfügung stellen</German>
+		<Russian>Подтвердите этот транспортный маршрут и сделайте его доступным для транспортных юнитов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_ROUTES_HELP_HELP</Tag>

@@ -1394,11 +1394,14 @@ void CvGame::updateColoredPlots()
 		gDLL->getEngineIFace()->clearColoredPlots(PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS);
 	}
 
-	lResult = 0;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "updateColoredPlots", NULL, &lResult);
-	if (lResult == 1)
-	{
-		return;
+	if (GC.getUSE_UPDATE_COLORED_PLOTS_CALLBACK())
+	{ 
+		lResult = 0;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "updateColoredPlots", NULL, &lResult);
+		if (lResult == 1)
+		{
+			return;
+		}
 	}
 
 	// City circles when in Advanced Start
@@ -5364,6 +5367,66 @@ void CvGame::doTurn()
 
 	gDLL->getEngineIFace()->AutoSave();
 }
+
+void CvGame::doFoundingFathers()
+{
+	std::vector<CvTeam*> teams;
+
+	// find alive colonial players for fast looping
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	{
+		CvTeam &kTeam = GET_TEAM(eTeam);
+		if (kTeam.isAlive() && kTeam.hasColonialPlayer())
+		{
+			teams.push_back(&kTeam);
+		}
+	}
+
+	std::vector<CvTeam*> teamsThisFather;
+
+	for (FatherTypes eFather = FIRST_FATHER; eFather < NUM_FATHER_TYPES; ++eFather)
+	{
+		if (getFatherTeam(eFather) != NO_TEAM)
+		{
+			continue;
+		}
+		const CvFatherInfo& kFather = GC.getFatherInfo(eFather);
+
+		int iMaxPoints = -1;
+		teamsThisFather.clear();
+		for (std::vector<CvTeam*>::iterator it = teams.begin(); it != teams.end(); ++it)
+		{
+			CvTeam *pTeam = *it;
+			if (pTeam->canConvinceFather(eFather))
+			{
+				const int iPoints = pTeam->getFatherPoints(kFather.getFatherPointType());
+				if (iPoints > iMaxPoints)
+				{
+					teamsThisFather.clear();
+					teamsThisFather.push_back(pTeam);
+					iMaxPoints = iPoints;
+				}
+				else if (iPoints == iMaxPoints)
+				{
+					teamsThisFather.push_back(pTeam);
+				}
+			}
+		}
+
+		const unsigned int iNumWinningTeams = teamsThisFather.size();
+		if (iNumWinningTeams == 1)
+		{
+			teamsThisFather[0]->offerFoundingFather(eFather);
+		}
+		else if (iNumWinningTeams > 1)
+		{
+			// since there is more than one team, offer the founding father to a random one. This way if a bunch of FFs are released in one turn,
+			// we will likely not have the case where one team takes all of them prior to them even being offered to other teams
+			teamsThisFather[getSorenRand().get(iNumWinningTeams, "pick team for founding father")]->offerFoundingFather(eFather);
+		}
+	}
+}
+
 // < JAnimals Mod Start >
 void CvGame::createBarbarianPlayer()
 {
@@ -5543,15 +5606,15 @@ void CvGame::createAnimalsSea()
 		return;
 	}
 
-	CvArea* pLoopArea;
-	CvPlot* pPlot;
 	UnitTypes eLastUnit, eBestUnit, eLoopUnit;
 	int iNeededAnimals;
 	int iValue, iBestValue, iRand;
-	int iLoop, iI, iJ;
 	int iStartDist = 0;
 
-	for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
+	CvPlot* const pEuropePlot = getAnyEuropePlot();
+
+	int iLoop;
+	for(CvArea* pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 	{
 		iNeededAnimals = (pLoopArea->getNumTiles() * GC.getHandicapInfo(getHandicapType()).getAIAnimalSeaMaxPercent()) / 100;
 		//iNeededAnimals = std::min(100, iNeededAnimals);
@@ -5562,7 +5625,7 @@ void CvGame::createAnimalsSea()
 		}
 
 		// Another random to create less wild Animals in Water
-		int lessrandom = getSorenRandNum(5, "Less Animal Sea Unit Random");
+		const int lessrandom = getSorenRandNum(5, "Less Animal Sea Unit Random");
 
 		if (lessrandom <= 1 && iNeededAnimals > pLoopArea->getUnitsPerPlayer(getBarbarianPlayer()))
 		{
@@ -5570,28 +5633,24 @@ void CvGame::createAnimalsSea()
 
 			if (pLoopArea->isWater())
 			{
-				for (iI = 0; iI < iNeededAnimals; iI++)
+				for (int iI = 0; iI < iNeededAnimals; iI++)
 				{
-				    pPlot = GC.getMap().syncRandPlot((RANDPLOT_NOT_CITY), pLoopArea->getID(), iStartDist);
-
 					// WTP, ray, Do not spawn in impassable Terrain - owner is checked below
-					if (pPlot != NULL && !pPlot->isImpassable())
+					CvPlot* const pPlot = GC.getMap().syncRandPlot((RANDPLOT_NOT_VISIBLE_TO_CIV | RANDPLOT_PASSIBLE), pLoopArea->getID(), iStartDist);
+
+					if (pPlot != NULL)
 					{
-					    /*
-					    // May Cause OOS Errors as Active Player is different on each Computer
-					    if (pPlot->isActiveVisible(false))
-					    {
-					        continue
-					    }
-					    */
-						eBestUnit = NO_UNIT;
+					    eBestUnit = NO_UNIT;
 						iBestValue = 0;
 
 						CivilizationTypes eBarbCiv = GET_PLAYER(getBarbarianPlayer()).getCivilizationType();
-						for (iJ = 0; iJ < GC.getNumUnitInfos(); iJ++)
+						for (int iJ = 0; iJ < GC.getNumUnitInfos(); iJ++)
 						{
-							//eLoopUnit = (UnitTypes) GC.getCivilizationInfo(eBarbCiv).getCivilizationUnits(iJ);
 							eLoopUnit = (UnitTypes) iJ;
+
+							// Check if the plot is connected to any Europe plot
+							if (pPlot->getDistanceToOcean() >= PLOT_OCEAN_DISTANCE_IMPASSABLE_THRESHOLD)
+								continue;
 
 							if (eLoopUnit == NO_UNIT)
 							{
@@ -5604,7 +5663,7 @@ void CvGame::createAnimalsSea()
 							iValue = 0;
 							if (pPlot->getTerrainType() != NO_TERRAIN)
 							{
-								// WTP, ray, for spawing we now als check that the Owern of the Plot is either NO_Player or Native, thus it will not spawn in cultural radius of Europeans and Kings
+								// WTP, ray, for spawing we now also check that the Owner of the Plot is either NO_Player or Native, thus it will not spawn in cultural radius of Europeans and Kings
 								if (GC.getUnitInfo(eLoopUnit).getTerrainNative(pPlot->getTerrainType()) && (pPlot->getOwnerINLINE() == NO_PLAYER || GET_PLAYER(pPlot->getOwnerINLINE()).isNative()))
 								{
 									iRand = GC.getWILD_ANIMAL_SEA_TERRAIN_NATIVE_WEIGHT();
@@ -5625,8 +5684,7 @@ void CvGame::createAnimalsSea()
 
 						if (eBestUnit != NO_UNIT)
 						{
-						    CvUnit* pNewUnit;
-							pNewUnit = GET_PLAYER(getBarbarianPlayer()).initUnit(eBestUnit, NO_PROFESSION, pPlot->getX_INLINE(), pPlot->getY_INLINE(), UNITAI_ANIMAL_SEA);
+							CvUnit* const pNewUnit = GET_PLAYER(getBarbarianPlayer()).initUnit(eBestUnit, NO_PROFESSION, pPlot->getX_INLINE(), pPlot->getY_INLINE(), UNITAI_ANIMAL_SEA);
 							pNewUnit->setBarbarian(true);
 							eLastUnit = eBestUnit;
 						}
@@ -6216,11 +6274,14 @@ void CvGame::testVictory()
 
 	updateScore();
 
-	long lResult = 1;
-	gDLL->getPythonIFace()->callFunction(PYGameModule, "isVictoryTest", NULL, &lResult);
-	if (lResult == 0)
-	{
-		return;
+	if (GC.getUSE_IS_VICTORY_TEST_CALLBACK())
+	{ 
+		long lResult = 1;
+		gDLL->getPythonIFace()->callFunction(PYGameModule, "isVictoryTest", NULL, &lResult);
+		if (lResult == 0)
+		{
+			return;
+		}
 	}
 
 	std::vector<CvWinner> aaiWinners;
@@ -7054,12 +7115,13 @@ int CvGame::getFatherGameTurn(FatherTypes eFather) const
 	return m_em_iFatherGameTurn.get(eFather);
 }
 
-void CvGame::setFatherTeam(FatherTypes eFather, TeamTypes eTeam)
+void CvGame::setFatherTeam(AssertCallerData assertData, FatherTypes eFather, TeamTypes eTeam)
 {
-	FAssert(eFather >= 0);
-	FAssert(eFather < GC.getNumFatherInfos());
-	FAssert(eTeam >= 0);
-	FAssert(eTeam < MAX_TEAMS);
+	FAssertWithCaller(assertData, eFather >= 0);
+	FAssertWithCaller(assertData, eFather < NUM_FATHER_TYPES);
+	// NO_TEAM is now a valid argument for freeing a father from a dead team
+	FAssertWithCaller(assertData, eTeam >= 0 || eTeam == NO_TEAM);
+	FAssertWithCaller(assertData, eTeam < NUM_TEAM_TYPES);
 
 	if (getFatherTeam(eFather) != eTeam)
 	{
@@ -7142,7 +7204,7 @@ int CvGame::getFatherCategoryPosition(FatherTypes eFather) const
 {
 	FAssert(eFather != NO_FATHER);
 	int iCost = eFather;
-	FatherCategoryTypes eCategory = (FatherCategoryTypes) GC.getFatherInfo(eFather).getFatherCategory();
+	FatherCategoryTypes eCategory = GC.getFatherInfo(eFather).getFatherCategory();
 	int iPosition = 0;
 	for (int iLoopFather = 0; iLoopFather < GC.getNumFatherInfos(); ++iLoopFather)
 	{
@@ -7281,8 +7343,9 @@ void CvGame::updateOceanDistances()
 		}
 
 		if (pPlot->isImpassable())
-		{
-			iDistance += 50;
+		{	
+			// Non-impassable plots with a number higher than this threshold are considered ice-locked.
+			iDistance += PLOT_OCEAN_DISTANCE_IMPASSABLE_THRESHOLD;
 		}
 
 		for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
@@ -7396,4 +7459,23 @@ int CvGame::getRemainingForcedPeaceTurns() const
 	const int forcedPeaceTurns = GC.getDefineINT("COLONIAL_FORCED_PEACE_TURNS") * gamespeedMod / 100;
 	const int diff = forcedPeaceTurns - GC.getGameINLINE().getElapsedGameTurns();
 	return std::max(0, diff);
+}
+
+CvPlot* CvGame::getAnyEuropePlot() const
+{
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ePlayer++)
+	{
+		CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+		
+		if (kPlayer.isEverAlive() && kPlayer.getCivCategoryTypes() == CIV_CATEGORY_EUROPEAN)
+		{
+			 CvPlot* const pStartingPlot = kPlayer.getStartingPlot();
+			 if (pStartingPlot != NULL)
+			 {
+				 return pStartingPlot;
+			 }
+		}
+	}
+	
+	return NULL;
 }

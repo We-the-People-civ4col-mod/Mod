@@ -63,7 +63,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BREEDER_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Expert Poultry Breeder[COLOR_REVERT] are particularly effective in poultry breeding ([LINK=PROFESSION_CHICKEN_BREEDER]chickens[\LINK] / [LINK=PROFESSION_GEESE_BREEDER]geese[\LINK]) of [LINK=YIELD_CHICKEN]chickens[\LINK] and [LINK=YIELD_GEESE]geese[\LINK]. [NEWLINE]Some animals of the appropriate species must be kept for breeding purposes. For more information, see the [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]livestock[\LINK] concept.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Expert poultry breeders[COLOR_REVERT] have two different professions: raising ([LINK=PROFESSION_CHICKEN_BREEDER]chickens[\LINK] or [LINK=PROFESSION_GEESE_BREEDER]geese[\LINK]). The breeders are particularly good at increasing flocks of [LINK=YIELD_CHICKEN]chickens[\LINK] and [LINK=YIELD_GEESE]geese[\LINK]. [NEWLINE]The right birds have to be on hand for breeding to occur. For more information, see the [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]livestock[\LINK] concept.</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Geflügelzüchter[COLOR_REVERT] sind bei der Geflügelzucht ([LINK=PROFESSION_CHICKEN_BREEDER]Hühner[\LINK] / [LINK=PROFESSION_GEESE_BREEDER]Gänse[\LINK]) von [LINK=YIELD_CHICKEN]Hühnern[\LINK] und [LINK=YIELD_GEESE]Gänsen[\LINK] besonders effektiv.[NEWLINE]Einige Tiere der entsprechenden Art muss zu Zuchtzwecken gehalten werden. Mehr Informationen dazu unter dem Konzept [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]Tierzucht[\LINK].</German>
 	</TEXT>
 	<!-- CASSAVA_PLANTER -->
@@ -185,7 +185,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_STRATEGY</Tag>
-		<English>A [COLOR_HIGHLIGHT_TEXT]expert cochineal collector[COLOR_REVERT] is more effective at [LINK=PROFESSION_COCHINEAL_COLLECTOR]collecting[\LINK] [LINK=YIELD_COCHINEAL]cochineal[\LINK] than any other expert.[PARAGRAPH:1]Expert cochineal collectors can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions. They can also be purchased in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</English>
+		<English>An [COLOR_HIGHLIGHT_TEXT]expert cochineal collector[COLOR_REVERT] is more effective at [LINK=PROFESSION_COCHINEAL_COLLECTOR]collecting[\LINK] [LINK=YIELD_COCHINEAL]cochineal[\LINK] than any other expert.[PARAGRAPH:1]Expert cochineal collectors can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]Natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions. They can also be purchased in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</English>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Cochenille-Sammler[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_COCHINEAL_COLLECTOR]Sammeln[\LINK] von [LINK=YIELD_COCHINEAL]Cochenille-Schildläusen[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Cochenille-Sammler können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden. Man kann sie auch in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] erwerben.</German>
 	</TEXT>
 	<!-- LINEN_PLANTER -->
@@ -246,7 +246,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LINEN_PLANTER_STRATEGY</Tag>
-		<English>A [COLOR_HIGHLIGHT_TEXT]expert flax planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_FLAX_PLANTER]planting[\LINK] [LINK=YIELD_FLAX]flax[\LINK] than any other expert.[PARAGRAPH:1]Expert flax planter can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
+		<English>An [COLOR_HIGHLIGHT_TEXT]expert flax planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_FLAX_PLANTER]planting[\LINK] [LINK=YIELD_FLAX]flax[\LINK] than any other expert.[PARAGRAPH:1]Expert flax planters can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]Natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Flachspflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_FLAX_PLANTER]pflanzen[\LINK] von [LINK=YIELD_FLAX]Flachs[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Flachspflanzer können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 	</TEXT>
 	<!-- LOGWOOD_COLLECTOR -->
@@ -307,7 +307,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_STRATEGY</Tag>
-		<English>If an [COLOR_HIGHLIGHT_TEXT]Experienced Logwood Collector[COLOR_REVERT] is employed in the [LINK=PROFESSION_BLOODWOOD_CUTTER]logwood cutter[\LINK] profession, the yield of [LINK=YIELD_LOGWOOD]logwood[\LINK] extraction is greater than other experts. For other types of wood ([LINK=YIELD_LUMBER]lumber[\LINK], [LINK=YIELD_HARDWOOD]hardwood[\LINK] and [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK]), the experienced bluewood collector scores slightly higher than [COLOR_HIGHLIGHT_TEXT]free colonists[COLOR_REVERT].[PARAGRAPH:1]Expert Logwood Collector can be hired in [LINK=CONCEPT_AFRICA]Africa[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
+		<English>If an [COLOR_HIGHLIGHT_TEXT]experienced logwood collector[COLOR_REVERT] is employed in the [LINK=PROFESSION_BLOODWOOD_CUTTER]logwood cutter[\LINK] profession, the yield of [LINK=YIELD_LOGWOOD]logwood[\LINK] extraction is greater than that of other experts. For other types of wood ([LINK=YIELD_LUMBER]lumber[\LINK], [LINK=YIELD_HARDWOOD]hardwood[\LINK] and [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK]), the experienced logwood collector scores slightly higher than [COLOR_HIGHLIGHT_TEXT]free colonists[COLOR_REVERT].[PARAGRAPH:1]Expert logwood collectors can be hired in [LINK=CONCEPT_AFRICA]Africa[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
 		<German>Wird ein [COLOR_HIGHLIGHT_TEXT]Erfahrener Blauholz-Sammler[COLOR_REVERT] im Beruf des [LINK=PROFESSION_BLOODWOOD_CUTTER]Holzfällers (Blauholz)[\LINK] eingesetzt, ist die Ausbeute bei der Gewinnung von [LINK=YIELD_LOGWOOD]Blauholz[\LINK] größer als bei anderen Experten. Bei anderen Holzsorten ([LINK=YIELD_LUMBER]Holz[\LINK], [LINK=YIELD_HARDWOOD]Hartholz[\LINK] und [LINK=YIELD_VALUABLE_WOOD]Edelholz[\LINK]) erzielt der erfahrene Blauholz-Sammler etwas mehr als [COLOR_HIGHLIGHT_TEXT]Freie Kolonisten[COLOR_REVERT].[PARAGRAPH:1]Erfahrene Holzfäller können in [LINK=CONCEPT_AFRICA]Afrika[\LINK] angeheuert werden oder in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 	</TEXT>
 	<!-- LOGWOOD_OLIVES_PLANTER -->
@@ -371,7 +371,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OLIVES_PLANTER_STRATEGY</Tag>
-		<English>The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.[NEWLINE]When assigned to the Olive Picker profession, the expert can gather double the olives in the same amount of time it would take a regular colonist.</English>
+		<English>The olive is a small tree originating in the Mediterranean basin. [LINK=YIELD_OLIVES]Olives[\LINK] are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.[NEWLINE]When assigned to the Olive Picker profession, the expert can gather double the olives in the same amount of time it would take a regular colonist.</English>
 		<French>L'olive est un petit arbre originaire du bassin méditerranéen. L'olive est l'un des principaux ingrédients de la cuisine méditerranéenne. L'olivier compte des milliers de cultivars.</French>
 		<German>Die Olive ist ein kleiner Baum, der im Mittelmeerraum beheimatet ist. Oliven sind eine der wichtigsten Zutaten der mediterranen Küche. Der Olivenbaum hat Tausende von Kultivaren.</German>
 		<Italian>L'olivo è un piccolo albero originario del bacino del Mediterraneo. Le olive sono uno degli ingredienti principali della cucina mediterranea. L'olivo ha migliaia di cultivar.</Italian>
@@ -438,7 +438,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEANUT_PLANTER_STRATEGY</Tag>
-		<English>A [COLOR_HIGHLIGHT_TEXT]expert penut planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_PEANUT_PLANTER]planting[\LINK] [LINK=YIELD_PEANUTS]penuts[\LINK] than any other expert.[PARAGRAPH:1]Expert penut planter can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
+		<English>An [COLOR_HIGHLIGHT_TEXT]expert peanut planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_PEANUT_PLANTER]planting[\LINK] [LINK=YIELD_PEANUTS]peanuts[\LINK] than any other expert.[PARAGRAPH:1]Expert peanut planters can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]Natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Erdnusspflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_PEANUT_PLANTER]pflanzen[\LINK] von [LINK=YIELD_PEANUTS]Erdnüssen[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Erdnusspflanzer können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 	</TEXT>
 	<!-- PEAT_CUTTER -->
@@ -562,7 +562,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAPE_PLANTER_STRATEGY</Tag>
-		<English>Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.[NEWLINE]When assigned to the Rapeseed Planter profession, the expert can harvest double the rapeseed in the same time as a regular colonist.</English>
+		<English>Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.[NEWLINE]When assigned to the Rapeseed Planter profession, the expert can harvest double the [LINK=YIELD_RAPE]rapeseed[\LINK] in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- RICE_FARMER -->
 	<TEXT>
@@ -621,7 +621,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RICE_FARMER_STRATEGY</Tag>
-		<English>Rice is nutritious and light to carry. Scouts may have a loaf of bread for their first day on the trail but it's the bag of dried rice that feeds them for the rest of the trip.[NEWLINE]When assigned to the Rice Farmer profession, the expert can grow double the rice in the same time as a regular colonist.</English>
+		<English>[LINK=YIELD_RICE]Rice[\LINK] is nutritious and light to carry. Scouts may have a loaf of bread for their first day on the trail but it's the bag of dried rice that feeds them for the rest of the trip.[NEWLINE]When assigned to the Rice Farmer profession, the expert can grow double the rice in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- VANILLA_COLLECTOR -->
 	<TEXT>
@@ -684,7 +684,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_STRATEGY</Tag>
-		<English>Vanilla is one of the two most popular flavours for sweet treats, the other being chocolate. It's used in candy, baking and liqueurs, all of which would be familiar to monks in colonial missions.[NEWLINE]When assigned to the Vanilla Collector profession, the expert can gather twice as many vanilla beans in the same time as a regular colonist.</English>
+		<English>[LINK=YIELD_VANILLA]Vanilla[\LINK] is one of the two most popular flavours for sweet treats, the other being [LINK=YIELD_COCOA]chocolate[\LINK]. It's used in candy, baking and liqueurs, all of which would be familiar to monks in colonial missions.[NEWLINE]When assigned to the Vanilla Collector profession, the expert can gather twice as many vanilla beans in the same time as a regular colonist.</English>
 		<French>La vanille est l'un des deux arômes les plus populaires pour les friandises, l'autre étant le chocolat. Elle est utilisée dans les bonbons, les pâtisseries et les liqueurs, autant d'arômes familiers aux moines des missions coloniales.[NEWLINE]Lorsqu'il est affecté à la profession de collecteur de vanille, l'expert peut récolter deux fois plus de gousses de vanille dans le même temps qu'un colon ordinaire.</French>
 		<German>Vanille ist neben Schokolade eine der beiden beliebtesten Geschmacksrichtungen für süße Leckereien. Sie wird in Süßigkeiten, zum Backen und für Liköre verwendet, alles Dinge, die Mönchen in kolonialen Missionen vertraut sind.[NEWLINE]Wenn der Experte den Beruf des Vanille-Sammlers ausübt, kann er in derselben Zeit doppelt so viele Vanilleschoten sammeln wie ein normaler Kolonist.</German>
 		<Italian>La vaniglia è uno dei due aromi più popolari per i dolci, l'altro è il cioccolato. Si usa nei dolci, nella pasticceria e nei liquori, tutti aromi familiari ai monaci delle missioni coloniali.[NEWLINE]Quando viene assegnato alla professione di Raccoglitore di Vaniglia, l'esperto può raccogliere il doppio dei semi di vaniglia nello stesso tempo di un normale colono.</Italian>
@@ -823,7 +823,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HERDER_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Expert Herder[COLOR_REVERT] are in breeding ([LINK=PROFESSION_SHEPHERD]Sheep[\LINK] / [LINK=PROFESSION_COWBOY]cattle[\LINK] / [LINK=PROFESSION_GOATHERD]goats[\LINK]) of [LINK=YIELD_SHEEP]sheep[\LINK], [LINK=YIELD_PIG]pigs[\LINK], and [LINK=YIELD_GOATS]goats[\LINK]. [NEWLINE]Some animals of the appropriate species must be kept for breeding purposes. For more information, see the [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]livestock[\LINK] concept.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Expert herders[COLOR_REVERT] can take on different professions to handle [LINK=PROFESSION_SHEPHERD]sheep[\LINK], [LINK=PROFESSION_GOATHERD]goats[\LINK] or [LINK=PROFESSION_PIG_BREEDER]pigs[\LINK]. To increase the flocks of [LINK=YIELD_SHEEP]sheep[\LINK], [LINK=YIELD_PIG]pigpen[\LINK] populations, or herds of [LINK=YIELD_GOATS]goats[\LINK], animals have to be in the settlement so they can mate. For more information, see the [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]livestock[\LINK] concept.</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Hirten[COLOR_REVERT] sind beim Züchten ([LINK=PROFESSION_SHEPHERD]Schafe[\LINK] / [LINK=PROFESSION_GOATHERD]Ziegen[\LINK] / [LINK=PROFESSION_PIG_BREEDER]Schweine[\LINK]) von [LINK=YIELD_SHEEP]Schafen[\LINK], [LINK=YIELD_GOATS]Ziegen[\LINK] und [LINK=YIELD_PIG]Schweinen[\LINK] besonders effektiv. [NEWLINE]Einige Tiere der entsprechenden Art muss zu Zuchtzwecken gehalten werden. Mehr Informationen dazu unter dem Konzept [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]Tierzucht[\LINK].</German>
 	</TEXT>
 	<!-- MAPLE_SIRUP_COLLECTOR -->
@@ -944,7 +944,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
-		<English>Rubber has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.[NEWLINE]When assigned to the Rubber Collector profession, the expert can get twice as much rubber in the same time as a regular colonist.</English>
+		<English>[LINK=YIELD_KAUTSCHUK]Rubber[\LINK] has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.[NEWLINE]When assigned to the Rubber Collector profession, the expert can get twice as much rubber in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- CONFECTIONER -->
 	<TEXT>
@@ -1007,7 +1007,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONFECTIONER_STRATEGY</Tag>
-		<English>The confectioner creates variety, candy for every taste, alongside traditional sweets that remind people of home. The business can become a social destination, with tables and beverages to accompany the treats.[NEWLINE]When assigned to the Confectioner profession, the master can make twice as much candy in the time a regular colonist would take to do the job.</English>
+		<English>The confectioner creates variety, candy for every taste, alongside traditional sweets that remind people of home. Flavouring is done with [LINK=YIELD_VANILLA]vanilla[\LINK] or [LINK=YIELD_COCOA]cocoa[\LINK]. The business can become a social destination, with tables and beverages to accompany the treats.[NEWLINE]When assigned to the Confectioner profession, the master can make twice as much candy in the time a regular colonist would take to do the job.</English>
 	</TEXT>
 	<!-- HOUSEHOLD_TRADER -->
 	<TEXT>
@@ -1066,7 +1066,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_STRATEGY</Tag>
-		<English>Pots and pans are important trade goods. The houseware trader is expected to have all the necessities in stock at a fair price.[NEWLINE]When assigned to the Household Trader profession, the master can handle twice the goods in the same time as a regular colonist.</English>
+		<English>The houseware trader is expected to have all the necessities in stock at a fair price. Raw materials to make furniture include [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK] and [LINK=YIELD_GOAT_HIDES]goatskins[\LINK]. [NEWLINE]When assigned to the Household Trader profession, the master can handle twice the goods in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- YERBA_TRADER -->
 	<TEXT>
@@ -1125,7 +1125,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_YERBA_TRADER_STRATEGY</Tag>
-		<English>Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba-maté. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the yerba-maté trader profession, the master can market twice the quantity of yerba leaves in the same time as a regular colonist.</English>
+		<English>[LINK=YIELD_YERBA_LEAVES]Yerba leaves[\LINK] are steeped in hot water to make a caffeinated beverage: yerba-maté. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the yerba-maté trader profession, the master can market twice the quantity of yerba leaves in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- OIL_TRADER -->
 	<TEXT>
@@ -1184,7 +1184,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OIL_TRADER_STRATEGY</Tag>
-		<English>Cooking oil is used in most households almost every day. Because the market is so widespread it's a good cover for smuggling. Nostalgic settlers often prefer the taste of oil from their home country.[NEWLINE]When assigned to the Cooking Oil Trader profession, the master can sell twice as much cooking oil in the same time as a regular colonist.</English>
+		<English>Cooking oil is used in most households almost every day. Because the market is so widespread it's a good cover for smuggling. Nostalgic settlers often prefer the taste of oil from their home country. [LINK=YIELD_OLIVES]Olives[\LINK] and [LINK=YIELD_RAPE]rapeseed[\LINK] are pressed to create two popular cooking oils.[NEWLINE]When assigned to the Cooking Oil Trader profession, the master presser can sell twice as much cooking oil in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- FRUITS_PICKER -->
 	<TEXT>
@@ -1300,12 +1300,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_PEDIA</Tag>
-		<English>Poultry is usually the cheapest domestic meat in any settlement. A good butcher works fast and keeps the price down. Workers who don't get paid much still can eat well and the result is a busy happy community.[NEWLINE]Butchers use sharp knives and they have to work fast so it's a dangerous job. Poultry is tricky because not only do the carcasses have to be cleaned and the meat portioned, but the feathers and down, particularly from geese and ducks, must be plucked for insulation.</English>
+		<English>Poultry is usually the cheapest domestic meat in any settlement. A good butcher works fast and keeps the price down. Workers who don't get paid much still can eat well and the result is a busy happy community.[NEWLINE]Butchers use sharp knives and they have to work fast so it's a dangerous job. Poultry is tricky because not only do the carcasses have to be cleaned and the meat portioned, but the feathers and down, particularly from geese and ducks, must be plucked to insulate quilts and coats.</English>
 		<German>Geflügel ist in der Regel das billigste einheimische Fleisch in jeder Siedlung. Ein guter Fleischer arbeitet schnell und hält den Preis niedrig. Arbeiter, die nicht viel verdienen, können sich trotzdem gut ernähren.[NEWLINE]Metzger arbeiten mit scharfen Messern und müssen schnell arbeiten, daher ist es ein gefährlicher Beruf. Geflügel ist eine schwierige Angelegenheit, da nicht nur die Kadaver gesäubert und das Fleisch portioniert werden müssen, sondern auch die Federn und Daunen, vor allem von Gänsen und Enten, zur Isolierung gerupft werden müssen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Master Poultry Butcher[COLOR_REVERT] achieve particularly high yields of [LINK=YIELD_FOOD]food[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] when [LINK=PROFESSION_BUTCHER_CHICKEN]slaughtering[\LINK] [LINK=YIELD_CHICKEN]chickens[\LINK] in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK].</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Master poultry butchers[COLOR_REVERT] achieve particularly high yields of [LINK=YIELD_FOOD]food[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] when [LINK=PROFESSION_BUTCHER_CHICKEN]slaughtering[\LINK] [LINK=YIELD_CHICKEN]chickens[\LINK] in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK].</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Meister-Geflügelschlachter[COLOR_REVERT] erzielen beim [LINK=PROFESSION_BUTCHER_CHICKEN]Schlachten[\LINK] von [LINK=YIELD_CHICKEN]Hühnern[\LINK] im [LINK=BUILDING_BUTCHERS_HOUSE]Haus des Schlachters[\LINK] besonders hohe Erträge von [LINK=YIELD_FOOD]Nahrung[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK].</German>
 	</TEXT>
 	<!-- COAL_MINER -->
@@ -1431,7 +1431,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Master Leatherworker[COLOR_REVERT] produce as [LINK=PROFESSION_LEATHER_PADDER_COATS]coat maker[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker[\LINK] in the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's hous[\LINK] more lined [LINK=YIELD_PADDED_LEATHER_COATS]leather coats[\LINK] made of [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] resp. more lined [LINK=YIELD_GOAT_HIDE_BOOTS]goatskin boots[\LINK] made of [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]wool[\LINK] than free colonists.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Master leatherworkers[COLOR_REVERT] are trained for the professions of [LINK=PROFESSION_LEATHER_PADDER_COATS]coat maker[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker[\LINK] in the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK]. They make lined [LINK=YIELD_PADDED_LEATHER_COATS]leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK], or insulated [LINK=YIELD_GOAT_HIDE_BOOTS] boots[\LINK] out of [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]wool[\LINK]. They work much faster than than free colonists.</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Meister-Lederschneider[COLOR_REVERT] produzieren als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher[\LINK] im [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK] mehr gefütterte [LINK=YIELD_PADDED_LEATHER_COATS]Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] bzw. mehr gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] als freie Kolonisten.</German>
 	</TEXT>
 	<!-- CLOTH_TAYLOR -->
@@ -1495,7 +1495,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CLOTH_TAYLOR_STRATEGY</Tag>
-		<English>The tailor creates the well-dressed man, stylish and ready to succeed at diplomacy, business and romance.[NEWLINE]When assigned to the Tailor profession, the master tailor can complete twice the clothes in the same time as a regular colonist.</English>
+		<English>The tailor creates the well-dressed man, stylish and ready to succeed at diplomacy, business and romance. The tailor can make [LINK=YIELD_FESTIVE_CLOTHES]formal outfits[\LINK] from [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] or [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothes[\LINK] from [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK].[NEWLINE]When assigned to the Tailor profession, the master tailor can complete twice the clothes in the same time as a regular colonist.</English>
 		<French>Le tailleur crée l'homme bien habillé, élégant et prêt à réussir dans la diplomatie, les affaires et la romance.[NEWLINE]Lorsqu'il est affecté à la profession de tailleur, le maître tailleur peut réaliser deux fois plus de vêtements dans le même temps qu'un colon ordinaire.</French>
 		<German>Der Schneider erschafft den gut gekleideten Mann, stilvoll und bereit, in der Diplomatie, im Geschäftsleben und in der Romantik erfolgreich zu sein.[NEWLINE]Wenn er dem Beruf des Schneiders zugewiesen wird, kann der Schneidermeister doppelt so viele Kleidungsstücke in derselben Zeit anfertigen wie ein normaler Kolonist.</German>
 		<Italian>Il sarto crea l'uomo ben vestito, elegante e pronto ad avere successo nella diplomazia, negli affari e nel romanticismo.[NEWLINE]Quando è assegnato alla professione di sarto, il mastro sarto può completare il doppio dei vestiti nello stesso tempo di un normale colono.</Italian>
@@ -1625,7 +1625,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POTTER_STRATEGY</Tag>
-		<English>Pottery lets villages store their surplus grain to get them through the hungry winter. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements.[NEWLINE]When assigned to the Potter profession, the master can make twice as many pots in the same time as a regular colonist.</English>
+		<English>Pottery lets villages store their surplus grain to get them through the hungry winter. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements. The raw materials the potter needs are [LINK=YIELD_CLAY]clay[\LINK], and [LINK=YIELD_PEAT]peat[\LINK] to fire the pots.[NEWLINE]When assigned to the Potter profession, the master can make twice as many pots in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- MILK_MAID -->
 	<TEXT>
@@ -1688,7 +1688,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MILK_MAID_STRATEGY</Tag>
-		<English>Milkmaids work hard to deliver much-needed protein to settlers young and old. Anyone who thinks the work is easy hasn't been close enough to the business end of a cow. Milkmaids are also immune to smallpox, a rare advantage in colonial times.[NEWLINE]When assigned to the Milkmaid profession, the skilled milkmaid can get twice the milk in the same time as a regular colonist.</English>
+		<English>Milkmaids work hard to deliver much-needed protein to settlers young and old. Anyone who thinks the work is easy hasn't been close enough to the business end of a cow. Milkmaids are also immune to smallpox, a rare advantage in colonial times.[NEWLINE]When assigned to the Milkmaid profession, the skilled milkmaid can get twice the [LINK=YIELD_MILK]milk[\LINK] in the same time as a regular colonist.</English>
 		<French>Les laitières travaillent dur pour fournir les protéines dont les colons, jeunes et vieux, ont tant besoin. Quiconque pense que ce travail est facile n'a jamais été assez près de l'extrémité d'une vache. Les laitières sont également immunisées contre la variole, un avantage rare à l'époque coloniale.[NEWLINE]Lorsqu'elle est affectée à la profession de laitière, la laitière qualifiée peut obtenir deux fois plus de lait dans le même temps qu'un colon ordinaire.</French>
 		<German>Milchmädchen arbeiten hart, um die Siedler, ob jung oder alt, mit dem dringend benötigten Eiweiß zu versorgen. Wer glaubt, dass die Arbeit leicht ist, war noch nicht nah genug am Hinterteil einer Kuh. Milchmädchen sind auch immun gegen Pocken, ein seltener Vorteil in der Kolonialzeit.[NEWLINE]Wenn ein fleißiges Milchmädchen den Beruf des Milchmädchens ausübt, kann sie in der gleichen Zeit doppelt so viel Milch wie ein normaler Kolonist produzieren.</German>
 		<Italian>Le lattaie lavorano duramente per fornire le proteine tanto necessarie ai coloni giovani e anziani. Chiunque pensi che il lavoro sia facile non è stato abbastanza vicino alla parte commerciale di una mucca. Le lattaie sono anche immuni al vaiolo, un vantaggio raro in epoca coloniale.[NEWLINE]Se assegnata alla professione di lattaio, la lattaia esperta può ottenere il doppio del latte nello stesso tempo di un normale colono.</Italian>
@@ -1751,7 +1751,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHEESE_MAKER_STRATEGY</Tag>
-		<English>Cheese is valued for its transportability, long shelf life, and high content of fat, protein, calcium, and phosphorus. The long storage life of some cheeses, especially when encased in a protective rind, allows selling when markets are favourable.[NEWLINE]When assigned to the [LINK=PROFESSION_CHEESE_MAKER]cheese maker[\LINK] profession, the master can get twice the weight of [LINK=YIELD_CHEESE]cheese[\LINK] in the same time as a regular colonist.</English>
+		<English>Cheese is valued for its transportability, long shelf life, and high content of fat, protein, calcium, and phosphorus. It's made from [LINK=YIELD_MILK]milk[\LINK]. The long storage life of some cheeses, especially when encased in a protective rind, allows selling when markets are favourable.[NEWLINE]When assigned to the [LINK=PROFESSION_CHEESE_MAKER]cheese maker[\LINK] profession, the master can get twice the weight of [LINK=YIELD_CHEESE]cheese[\LINK] in the same time as a regular colonist.</English>
 		<German>Wenn der [COLOR_HIGHLIGHT_TEXT]Meister Käsemacher[COLOR_REVERT] den Beruf des [LINK=PROFESSION_CHEESE_MAKER]Käsemachers[\LINK] ausübt, kann er in derselben Zeit doppelt so viel [LINK=YIELD_CHEESE]Käse[\LINK] herstellen, wie ein normaler Kolonist.</German>
 	</TEXT>
 	<!-- CHARCOAL_BURNER -->
@@ -1922,7 +1922,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIREWORKER_STRATEGY</Tag>
-		<English>The powder maker needs to produce enough black powder for the soldiers' guns. Even more is needed for miners and the pioneers building roads. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.[NEWLINE]When assigned to the Powder Maker profession, the master can mix twice as much gunpowder in the same time as a regular colonist.</English>
+		<English>The powder maker uses [LINK=YIELD_CHAR_COAL]charcoal[\LINK] to produce enough black powder for the soldiers' guns. Even more is needed for miners and the pioneers building roads. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.[NEWLINE]When assigned to the Powder Maker profession, the master can mix twice as much gunpowder in the same time as a regular colonist.</English>
 	</TEXT>
 	<!-- MESTIZZO -->
 	<TEXT>
@@ -1981,7 +1981,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MESTIZZO_STRATEGY</Tag>
-		<English>Sometimes mestizos advance in spite of of the prejudice. Quanah Parker, a mestizo born to a European mother, was known as the most terrifying Comanche leader in raids on white settlements.</English>
+		<English>Sometimes mestizos advance in spite of of the prejudice. Quanah Parker, a mestizo born to a European mother, was known as the most terrifying Comanche leader because of his devastating raids on white settlements.</English>
 	</TEXT>
 	<!-- MULATTO -->
 	<TEXT>
@@ -2292,7 +2292,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ENTERTAINER_PEDIA</Tag>
-		<English>Celebrities come at first from Europe but ultimately talent surfaces everywhere. Nonetheless plays and readings continue to rely on Old Country texts, both classical and sentimental, throughout the colonial period. Humans are social animals, fame brings people together to be entertained, to see and be seen. A celebrity performance attracts the entire countryside. To have a resident famous actress improves any community's reputation. Leaving a trail of broken hearts behind her, her legend grows.</English>
+		<English>Celebrities come at first from Europe but ultimately talent surfaces everywhere. Nonetheless plays and readings continue to rely on Old Country texts, both classical and sentimental, throughout the colonial period. Humans are social animals. Fame brings people together to be entertained, to see and be seen. A celebrity performance attracts the entire countryside. To have a resident famous actress improves any community's reputation. Leaving a trail of broken hearts behind her, her legend grows.</English>
 		<French>L'homme est un animal social, la célébrité rassemble les gens pour se divertir, pour voir et être vu. Le spectacle d'une célébrité attire toute la campagne. La présence d'une actrice célèbre améliore la réputation de toute communauté. Laissant derrière elle une traînée de cœurs brisés, sa légende grandit.</French>
 		<German>Der Mensch ist ein Gesellschaftstier. Ruhm ist ein gutes Zugpferd Menschen zusammenzubringen, ihnen Unterhaltung zu bieten, damit sie sehen und gesehen werden können. Der Auftritt einer Berühmtheit zieht die ganze Stadt und das Umland in ihren Bann. Die Anwesenheit einer berühmten Schauspielerin verbessert den Ruf einer Stadt. Je mehr gebrochene Herzen sie hinter sich lässt, desto mehr wächst ihre Legende.</German>
 		<Italian>Gli esseri umani sono animali sociali, la fama riunisce le persone per essere intrattenute, per vedere ed essere viste. Un'esibizione di una celebrità attira l'intera campagna. Avere un'attrice famosa residente migliora la reputazione di qualsiasi comunità. Lasciando dietro di sé una scia di cuori infranti, la sua leggenda cresce.</Italian>
@@ -2415,7 +2415,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JUDGE_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Honorable judges[COLOR_REVERT] are experts at dispensing justice and therefore, as [LINK=PROFESSION_JUDGE]judges[\LINK], generate twice as much [LINK=YIELD_LAW]justice[\LINK] as free colonists.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Honourable judges[COLOR_REVERT] are experts at dispensing justice and therefore, as [LINK=PROFESSION_JUDGE]judges[\LINK], generate twice as much [LINK=YIELD_LAW]justice[\LINK] as free colonists.</English>
 		<French>Les [COLOR_HIGHLIGHT_TEXT]juges équitables[COLOR_REVERT] sont experts à dispenser la justice et de ce fait contribuent deux fois plus au maintien de l'[LINK=YIELD_LAW]ordre[\LINK] en tant que [LINK=PROFESSION_JUDGE]juges[\LINK] qu'un colon libre au même poste.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Ehrenwerte Richter[COLOR_REVERT] sind Experten im Sprechen von Recht und erzeugen daher als [LINK=PROFESSION_JUDGE]Richter[\LINK] doppelt so viel [LINK=YIELD_LAW]Justiz[\LINK] wie freie Kolonisten.</German>
 	</TEXT>
@@ -2450,7 +2450,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT][COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT][NEWLINE]Defeated soldiers usually die in battle, but a few are captured to become prisoners of war. They may be ransomed or transferred in a prisoner exchange if the enemy commander is willing to make a deal.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT][NEWLINE]Defeated soldiers usually die in battle, but a few are captured to become prisoners of war. They may be ransomed or transferred in a prisoner exchange if the enemy commander is willing to make a deal.</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Kriegsgefangene[COLOR_REVERT] tbd</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
 	</TEXT>
@@ -2485,7 +2485,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT][COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT] [NEWLINE]If the conditions of their captivity are bad, or if they see an opportunity to escape, prisoners of war will riot. Once they get away they hide in the woods and fight with greater strength than petty criminals, but not as much power as when they were soldiers.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT][NEWLINE]If the conditions of their captivity are bad, or if they see an opportunity to escape, prisoners of war will riot. Once they get away they hide in the woods and fight with greater strength than petty criminals, but not as much power as when they were soldiers.</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Revoltierende Kriegsgefangene[COLOR_REVERT] tbd</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
 	</TEXT>
@@ -2503,14 +2503,14 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT_PEDIA</Tag>
-		<English>The architect is a master builder who will do great for the construction work of a colony - as long as he works in the profession of a carpenter and produces proper hammers. He is unsuitable for other professions.</English>
+		<English>The architect is a master builder who accelerates the construction work of a colony. He's the top producer as a carpenter, but is unsuitable for other professions.</English>
 		<French>L'architecte est un maître en construction qui excellera dans l'édification des bâtiments de la colonie - dès lors qu'il est affecté à la construction dans un atelier de charpentier, une scierie, ou mieux. Il est inapte à toute autre profession.</French>
 		<German>Der Architekt ist ein Meister der Baukunst, der den Aufbau einer Kolonie wahre Wunder vollbringen wird - solange er in dem Beruf des Zimmermanns arbeitet und ordentlich Hämmer produziert. Für andere Berufe ist er ungeeignet. </German>
 		<Russian>[NEWLINE]Архитектор — мастер-строитель, который отлично подойдет для строительных работ в колонии. Под его началом плотники будут работать лучше, чем после благословения Папы (да простит Господь мне эти слова). Другую профессию назначить ему нельзя.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT_STRATEGY</Tag>
-		<English>The [COLOR_UNIT_TEXT]eccentric architect[COLOR_REVERT] is a true expert in the art of building - experienced and gifted, he is a visionary of his guild; but also a bon vivant and dreamer. As soon as you have built 5 lumber mills or higher classes of this building and 5,000[ICON_GOLD] in your treasury and your colonies have at least 15 citizens the king will think about sending a eccentric architect to his colonies to support the construction work in the colonies.[PARAGRAPH:1]The [COLOR_UNIT_TEXT]eccentric architect[COLOR_REVERT] is the best [LINK=YIELD_HAMMERS]hammer[\LINK] producer available.[NEWLINE]Assigning the eccentric architect to the [LINK=PROFESSION_CARPENTER]carpenter[\LINK] profession will quadruple the number of [COLOR_HIGHLIGHT_TEXT]hammers[COLOR_REVERT] an average colonist would produce.[NEWLINE]The eccentric architect cannot be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they cannot be [LINK=CONCEPT_TRAINING]educated[\LINK] in a [LINK=BUILDING_UNIVERSITY]university[\LINK] or any of its upgrades. [NEWLINE]In all other professions he suffers severe production penalties. [NEWLINE]Furthermore he is weak so using him as a soldier is not be a good idea. [NEWLINE]However, he is also a cheerful nature and man of life, who will quickly make friends in the colony with his generous lifestyle. He therefore lifts the happiness in the colony. However, this is exactly what gets him into trouble. It could be a reason why the king wanted to get rid of this very man and deport him to the new world. You should keep an eye on him.</English>
+		<English>The [COLOR_UNIT_TEXT]eccentric architect[COLOR_REVERT] is a true expert in the art of building - experienced and gifted, he is a visionary; but also a bon vivant and dreamer. As soon as you have built 5 lumber mills or its upgrade, have 5,000[ICON_GOLD] in your treasury, and your colonies have at least 15 citizens the King might send a eccentric architect to the colonies to support construction work there.[PARAGRAPH:1]The [COLOR_UNIT_TEXT]eccentric architect[COLOR_REVERT] is the best [LINK=YIELD_HAMMERS]hammer[\LINK] producer available.[NEWLINE]Assigning the eccentric architect to the [LINK=PROFESSION_CARPENTER]carpenter[\LINK] profession will quadruple the number of [COLOR_HIGHLIGHT_TEXT]hammers[COLOR_REVERT] an average colonist would produce.[NEWLINE]The eccentric architect cannot be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they cannot be [LINK=CONCEPT_TRAINING]educated[\LINK] in a [LINK=BUILDING_UNIVERSITY]university[\LINK] or any of its upgrades. [NEWLINE]In all other professions he suffers severe production penalties. [NEWLINE]Furthermore he is weak so using him as a soldier is not a good idea. [NEWLINE]However, he has a cheerful nature, a love of life and quickly makes friends thanks to his generous lifestyle. He therefore lifts happiness in the colony. Of course this is exactly what gets him into trouble. That could be the reason why the King wanted to get rid of him in the first place, conveniently deporting him to the New World. Keep an eye on him.</English>
 		<French>L'architecte excentrique est un véritable expert dans l'art de la construction - doué et avec du métier, c'est l'un des visionnaires de sa guilde, mais aussi un bon vivant et un rêveur. Dès que vous avez construits cinq scieries ou mieux, vous disposez de 5.000[ICON_GOLD], et que vos colonies ont plus de 15 habitants le roi songera à vous envoyer un architecte excentrique dans ses colonies pour accélérer leur construction.[PARAGRAPH:1]The [COLOR_UNIT_TEXT]L'architecte excentrique[COLOR_REVERT] est le meilleur fabricant de [LINK=YIELD_HAMMERS]marteaux[\LINK] disponible. [NEWLINE]Affecter l'architecte excentrique à la profession de [LINK=PROFESSION_CARPENTER]charpentier[\LINK] quadruple la nombre de [COLOR_HIGHLIGHT_TEXT] marteaux[COLOR_REVERT] produit chaque tour comparé à un colon moyen.[NEWLINE]L'architecte excenrique ne peut être embauché en  [LINK=CONCEPT_EUROPE]Europe[\LINK], et ne peut être formé dans votre système éducatif, même dans l'université la plus prestigieuse.[NEWLINE]Dans toutes les autres professions, il souffrira de malus de production très sévères.[NEWLINE]Il est de plus phyisiquement faible, et le faire servir dans l'armée est une mauvaise idée.[NEWLINE]Toutefois, sa nature bonhomme et joviale lui permet de se faire des amis en se montrant généreux dans la vie. Il rendra la colonie plus heureuse par sa présence. Toutefois ceci s'est retourné contre lui; ce pourrait même être la raison pour laquelle le roi l'a envoyé loin, dans le Nouveau Monde. Vous devriez le garder à l'oeil.</French>
 		<German>Der [COLOR_UNIT_TEXT]Exzentrische Architekt[COLOR_REVERT] ist ein wahrer Experte der Baukunst - erfahren, gestählt und begabt ist er ein Visionär seiner Zunft; aber auch ein Lebemann und Träumer. Sobald Ihr 5 Sägewerke oder höhere Gebäudestufen errichtet habt, sich wenigstens 15 Bewohner in den Kolonien befinden und sich 5000[ICON_GOLD] in Eurer Schatzkammer befinden, wird der König darüber nachdenken, diesen Mann in seine Kolonien zu schicken, um den Aufbau der Kolonien zu unterstützen.[PARAGRAPH:1]Der [COLOR_HIGHLIGHT_TEXT]Exzentrische Architekt[COLOR_REVERT] vervierfacht die Anzahl der produzierten [LINK=YIELD_HAMMERS]Hämmer[\LINK] gegenüber einem normalen Bürger, der im Beruf [LINK=PROFESSION_CARPENTER]Zimmermann[\LINK] arbeitet.[PARAGRAPH:2]Für alle anderen Arbeiten ist er jedoch nicht zu gebrauchen und erhält hohe Produktionsmali. Außerdem ist er schwach, so dass er nicht zum Soldaten taugt. [NEWLINE]Er ist jedoch auch eine Frohnatur und Lebenmann, der sich in der Kolonie durch seinen freigebigen Lebensstil schnell Freunde machen wird. Er hebt daher die Stimmung in der Kolonie. Allerdings bringt ihm genau das auch Schwierigkeiten ein. Es könnte ein Grund sein, warum der König gerade diesen Mann loswerden und in die neue Welt abschieben wollte. Ihr solltet ihn im Auge behalten.</German>
 		<Russian>[NEWLINE][COLOR_UNIT_TEXT]Эксцентричный архитектор[COLOR_REVERT] — настоящий эксперт в строительном искусстве: опытный и одаренный, он суровый руководитель своей гильдии; но в то же время весельчак и мечтатель. Как только вы построите несколько [LINK=BUILDING_LUMBER_MILL]плотницких цехов[\LINK] или зданий более высокого класса, в казне будет достаточно [ICON_GOLD], а в колониях соберётся большое количество жителей, Король подумает о том, чтобы отправить лучшего из своих архитекторов в Новый Свет для поддержки строительных работ.[NEWLINE][COLOR_UNIT_TEXT]Эксцентричный архитектор[COLOR_REVERT] – лучший из доступных [LINK=YIELD_HAMMERS]строителей[\LINK].[NEWLINE][NEWLINE]Назначение Эксцентричному архитектору профессии [LINK=PROFESSION_CARPENTER]плотник[\LINK] в четыре раза увеличит количество [COLOR_HIGHLIGHT_TEXT]молотков[COLOR_REVERT], которые производит средний колонист.[NEWLINE][NEWLINE]Эксцентричного архитектора нельзя нанять в [LINK=CONCEPT_EUROPE]Европе[\LINK], его нельзя [LINK=CONCEPT_TRAINING]обучить[\LINK] даже в [LINK=BUILDING_UNIVERSITY]университете[\LINK], не говоря уже о более низших учебных заведениях.[NEWLINE]Во всех остальных профессиях он подвергается серьезным производственным штрафам.[NEWLINE][NEWLINE]Кроме того, он довольно слаб для несения военной службы, поэтому использовать его в качестве солдата — не лучшая идея.[NEWLINE][NEWLINE]Однако это жизнерадостный человек с веселой натурой, который благодаря своему щедрому образу жизни быстро найдет друзей в колониях. Одним словом, он точно поднимет уровень счастья там, где вы прикажете ему поселиться. Однако именно эта черта и доставляет ему большинство неприятностей. Возможно, это могло стать причиной того, что Король захотел избавиться от этого человека и депортировать его в Новый Мир. Нам следует приглядывать за ним.</Russian>

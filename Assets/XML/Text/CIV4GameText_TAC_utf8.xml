@@ -2168,6 +2168,7 @@
 			<Plural>0:0:1:1</Plural>
 		</French>
 		<German>königlich-dänisch:königlich-dänischen:königlich-dänische:königlich-dänischer</German>
+		<Russian>Датским</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DENMARK_EUROPE_DESC</Tag>
@@ -2248,6 +2249,7 @@
 			<Gender>Male:Female</Gender>
 			<Plural>0:0:1:1</Plural>
 		</Spanish>
+		<Russian>Голландским</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_ADJECTIVE</Tag>
@@ -2318,6 +2320,7 @@
 			<Gender>Male:Female</Gender>
 			<Plural>0:0:1:1</Plural>
 		</Spanish>
+		<Russian>Английским</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_ADJECTIVE</Tag>
@@ -2367,6 +2370,7 @@
 			<Gender>Male:Female</Gender>
 			<Plural>0:0:1:1</Plural>
 		</Spanish>
+		<Russian>Французским</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_DESC</Tag>
@@ -2439,6 +2443,7 @@
 		</German>
 		<Italian>Portoghese</Italian>
 		<Spanish>Portugues</Spanish>
+		<Russian>Португальским</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_DESC</Tag>
@@ -2498,6 +2503,7 @@
 			<Plural>0:0:1:1</Plural>
 		</French>
 		<German>königlich-schwedisch:königlich-schwedischen:königlich-schwedische:königlich-schwedischer</German>
+		<Russian>Шведским</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SWEDEN_EUROPE_DESC</Tag>
@@ -2557,6 +2563,7 @@
 			<Plural>0:0:1:1</Plural>
 		</French>
 		<German>königlich-russisch:königlich-russischen:königlich-russische:königlich-russischer</German>
+		<Russian>Русским</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_RUSSIA_EUROPE_DESC</Tag>
@@ -2645,5 +2652,6 @@
 			<Gender>Male:Female</Gender>
 			<Plural>0:0:1:1</Plural>
 		</Spanish>
+		<Russian>Испанским</Russian>
 	</TEXT>
 </Civ4GameText>

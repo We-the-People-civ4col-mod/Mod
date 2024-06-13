@@ -4722,23 +4722,23 @@ def generateTerrainTypes():
     NiTextOut("Generating Terrain  ...")
     print "Adding Terrain"
     gc = CyGlobalContext()
-    terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
-    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
-    terrainIce = gc.getInfoTypeForString("TERRAIN_SNOW")
-    terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
-    terrainGrass = gc.getInfoTypeForString("TERRAIN_GRASS")
-    terrainHill = gc.getInfoTypeForString("TERRAIN_HILL")
-    terrainCoast = gc.getInfoTypeForString("TERRAIN_COAST")
-    terrainShallowCoast = gc.getInfoTypeForString("TERRAIN_SHALLOW_COAST")
-    terrainOcean = gc.getInfoTypeForString("TERRAIN_OCEAN")
-    terrainPeak = gc.getInfoTypeForString("TERRAIN_PEAK")
-    terrainMarsh = gc.getInfoTypeForString("TERRAIN_MARSH")
+    terrainDesert = TerrainTypes.TERRAIN_DESERT
+    terrainPrairie = TerrainTypes.TERRAIN_PLAINS
+    terrainIce = TerrainTypes.TERRAIN_SNOW
+    terrainTundra = TerrainTypes.TERRAIN_TUNDRA
+    terrainGrass = TerrainTypes.TERRAIN_GRASS
+    terrainHill = TerrainTypes.TERRAIN_HILL
+    terrainCoast = TerrainTypes.TERRAIN_COAST
+    terrainShallowCoast = TerrainTypes.TERRAIN_SHALLOW_COAST
+    terrainOcean = TerrainTypes.TERRAIN_OCEAN
+    terrainPeak = TerrainTypes.TERRAIN_PEAK
+    terrainMarsh = TerrainTypes.TERRAIN_MARSH
     #Androrc Savannah
-    terrainSavannah = gc.getInfoTypeForString("TERRAIN_SAVANNAH")
+    terrainSavannah = TerrainTypes.TERRAIN_SAVANNAH
     #Androrc End
-    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
+    terrainPlains = TerrainTypes.TERRAIN_PLAINS_FERTILE
     # Belisarius - Large Rivers
-    terrainLargeRiver = gc.getInfoTypeForString("TERRAIN_LARGE_RIVERS")
+    terrainLargeRiver = TerrainTypes.TERRAIN_LARGE_RIVERS
 
    
     terrainTypes = [0]*(mc.width*mc.height)
@@ -4859,7 +4859,7 @@ def addLakes():
     print "Adding Lakes"
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    terrainLake = gc.getInfoTypeForString("TERRAIN_LAKE")
+    terrainLake = TerrainTypes.TERRAIN_LAKE
 #    PrintFlowMap()
     oceanMap = Areamap(mc.width,mc.height,True,True)
     oceanMap.defineAreas(isSmallWaterMatch)
@@ -4882,7 +4882,7 @@ def addFeatures():
     print "Adding Large Rivers"
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    featureRiverFord = gc.getInfoTypeForString("FEATURE_RIVER_FORD")
+    featureRiverFord = FeatureTypes.FEATURE_RIVER_FORD
 
     for y in range(mc.height):
         for x in range(mc.width):
@@ -4940,8 +4940,8 @@ def generateShallowCoast():
     gc = CyGlobalContext()
     mmap = gc.getMap()
     am = Areamap(mc.hmWidth,mc.hmHeight,True,True)
-    terrainCoast = gc.getInfoTypeForString("TERRAIN_COAST")
-    terrainShallowCoast = gc.getInfoTypeForString("TERRAIN_SHALLOW_COAST")
+    terrainCoast = TerrainTypes.TERRAIN_COAST
+    terrainShallowCoast = TerrainTypes.TERRAIN_SHALLOW_COAST
     
     shallowCoastChance = 0.2 # Baseline chance for converting coast to shallow coast
     shallowCostAdjacentChance = 0.4 # Higher chance if there's already adjacent shallow coast
@@ -4962,11 +4962,11 @@ def generateShrubland():
     
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    terrainShrubland = gc.getInfoTypeForString("TERRAIN_SHRUBLAND")
-    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
-    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
-    terrainGrassland = gc.getInfoTypeForString("TERRAIN_GRASS")
-    terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
+    terrainShrubland = TerrainTypes.TERRAIN_SHRUBLAND
+    terrainPrairie = TerrainTypes.TERRAIN_PLAINS
+    terrainPlains = TerrainTypes.TERRAIN_PLAINS_FERTILE
+    terrainGrassland = TerrainTypes.TERRAIN_GRASS
+    terrainDesert = TerrainTypes.TERRAIN_DESERT
 
     shrublandChance = 0.5 # Baseline chance for converting terrains around desert to shrubland
     shrublandNextToShrublandChance = 0.5 # Chance to create Shrubland next to other Shrubland
@@ -4994,11 +4994,11 @@ def generateTaiga():
     
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    terrainTaiga = gc.getInfoTypeForString("TERRAIN_TAIGA")
-    terrainGrassland = gc.getInfoTypeForString("TERRAIN_GRASS")
-    terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
-    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
-    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
+    terrainTaiga = TerrainTypes.TERRAIN_TAIGA
+    terrainGrassland = TerrainTypes.TERRAIN_GRASS
+    terrainTundra = TerrainTypes.TERRAIN_TUNDRA
+    terrainPrairie = TerrainTypes.TERRAIN_PLAINS
+    terrainPlains = TerrainTypes.TERRAIN_PLAINS_FERTILE
     
     tundraToTaigaChance = 0.4 # Baseline chance to convert Tundra To Taiga
     taigaNearTundraChance = 0.1 # Baseline chance for converting other terrain next to Tundar to Taiga
@@ -5029,9 +5029,9 @@ def generateRockSteppes():
 
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    terrainPrairie = gc.getInfoTypeForString("TERRAIN_PLAINS")
-    terrainPlains = gc.getInfoTypeForString("TERRAIN_PLAINS_FERTILE")
-    terrainRockSteppes = gc.getInfoTypeForString("TERRAIN_ROCK_STEPPES")
+    terrainPrairie = TerrainTypes.TERRAIN_PLAINS
+    terrainPlains = TerrainTypes.TERRAIN_PLAINS_FERTILE
+    terrainRockSteppes = TerrainTypes.TERRAIN_ROCK_STEPPES
     
     rockSteppesChance = 0.25 # Baseline chance for converting terrain
     
@@ -5069,9 +5069,9 @@ def generateWetland():
 
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    terrainWetland = gc.getInfoTypeForString("TERRAIN_WETLAND")
-    terrainDesert = gc.getInfoTypeForString("TERRAIN_DESERT")
-    terrainTundra = gc.getInfoTypeForString("TERRAIN_TUNDRA")
+    terrainWetland = TerrainTypes.TERRAIN_WETLAND
+    terrainDesert = TerrainTypes.TERRAIN_DESERT
+    terrainTundra = TerrainTypes.TERRAIN_TUNDRA
     
     wetlandChance = 0.1 # Baseline chance for converting terrain
     wetlandAdjacentChance = 0.5 # Higher chance if there's already adjacent wetland
@@ -5117,8 +5117,8 @@ def afterGeneration():
     mmap = gc.getMap()
     em.initialize()
     
-    europeEast = gc.getInfoTypeForString("EUROPE_EAST")
-    europeWest = gc.getInfoTypeForString("EUROPE_WEST")
+    europeEast = EuropeTypes.EUROPE_EAST
+    europeWest = EuropeTypes.EUROPE_WEST
     
     for y in range(mc.height):
         for x in range(mc.width):
@@ -5255,10 +5255,10 @@ def createIce():
     icePlots = {}
     gc = CyGlobalContext()
     mmap = gc.getMap()
-    terrainPermafrost = gc.getInfoTypeForString("TERRAIN_SNOW")
-    featureSeaIce = gc.getInfoTypeForString("FEATURE_ICE")
+    terrainPermafrost = TerrainTypes.TERRAIN_SNOW
+    featureSeaIce = FeatureTypes.FEATURE_ICE
     plotOcean = PlotTypes.PLOT_OCEAN
-    terrainLake = gc.getInfoTypeForString("TERRAIN_LAKE")
+    terrainLake = TerrainTypes.TERRAIN_LAKE
 
     # Deal with the South Pole
     if abs(mc.bottomLattitude) >= 90 and (mc.bottomLattitude != mc.topLattitude or mc.topLattitude < 0):

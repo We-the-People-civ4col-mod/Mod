@@ -4,64 +4,106 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=, initial-scale=1.0">
-	<title>Document</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-	<script type="text/javascript" src="https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=D3uRasGVaQHiDJLtAZ1bRCkFKICveraOeH-4yCAc3PLcvCRd19N5oI8_yxjd71vf9_jfuD6NyuIbPPXMJ5T7aE50egOTllvv1JRHWUftg_be-TYQc8dG7AJ3PXFOGABxH1qdXClHEAQUTiIwGQdy0Q" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://ff.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9jZG4uZGlzY29yZGFwcC5jb20vYXR0YWNobWVudHMvMTA5NjQzODgyMjU1MzgwMDgwNy8xMDk2Njg2NTE1ODA5MTc3NjYxL3JlYWRtZS5odG1s"/><script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+	<title>We The People Readme</title>
+
+<style>
+	body {
+		font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		font-size: 2 rem;
+		line-height: 1.6;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		max-width: 1600px;
+	}
+
+	.primaryHeader {
+    --_bg: hsl(0, 0%, 100%);
+    --_LogoColour: hsl(0, 0%, 7%);
+    --_navLinkColour: hsl(228, 81%, 46%);
+
+	font-size: 3 rem;
+	font-weight: 400;
+
+    padding: 1rem;
+    background: var(--_bg);
+
+    position: sticky;
+    top: 0;
+}
+
+.primaryHeaderInner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.primaryHeader a {
+    color: var(--_navLinkColour);
+}
+
+.primaryHeader a:hover,
+.primaryHeader a:focus {
+    opacity: 0.7;;
+}
+
+.logo {
+    color: var(--_LogoColour);
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+.navList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: clamp(0.5rem, 5vw, 2rem);
+}
+
+.section {
+    height: 100%;
+    padding-top: 60px; /* Adjust this value as needed */
+    margin-top: -60px;
+}
+
+.mainHead {
+	font-size: 4rem;
+}
+
+
+#aboutEnglish, #teamEnglish, #installEnglish, #installProblemEnglish, #whatEnglish, #aboutGerman, #teamGerman, #installGerman, #installProblemGerman, #whatGerman, #aboutEnglish, #teamRussian, #installRussian, #installProblemRussian, #whatRussian, #InstructionEnglish, #InstructionGerman, #InstructionRussian{
+	padding-top: 60px; /* Adjust this value as needed */
+    margin-top: -60px;
+	height: 100%;
+} 
+
+</style>
+
 </head>
 <body>
 	<div class="container">
-		<nav class="navbar sticky-top navbar-expand-lg bg-body-tertiary">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="#">Home</a>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">English Menu</a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#InstructionEnglish">Readme</a></li>
-								<li><hr class="dropdown-divider"></li>
-								<li><a class="dropdown-item" href="#aboutEnglish">About We the People</a></li>
-								<li><a class="dropdown-item" href="#teamEnglish">WTP Team Members</a></li>
-								<li><a class="dropdown-item" href="#installEnglish">How to Install the Mod</a></li>
-								<li><a class="dropdown-item" href="#installProblemEnglish">Common issues when getting the mod to work</a></li>
-								<li><a class="dropdown-item" href="#whatEnglish">What is the Mod About</a></li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">German Menu</a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#InstructionGerman">Readme</a></li>
-								<li><hr class="dropdown-divider"></li>
-								<li><a class="dropdown-item" href="#aboutGerman">über diesen We the People</a></li>
-								<li><a class="dropdown-item" href="#teamGerman">WTP Mannschaft</a></li>
-								<li><a class="dropdown-item" href="#installGerman">Wie installiere ich den Mod?</a></li>
-								<li><a class="dropdown-item" href="#whatGerman">Was ist diese mod?</a></li>
-							</ul>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Русское меню</a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="#InstructionRussian">Оглавление</a></li>
-								<li><hr class="dropdown-divider"></li>
-								<li><a class="dropdown-item" href="#aboutRussian">О моде We the People</a></li>
-								<li><a class="dropdown-item" href="#teamRussian">Команда WtP</a></li>
-								<li><a class="dropdown-item" href="#installRussian">Как установить мод</a></li>
-								<li><a class="dropdown-item" href="#installProblemRussian">Распространенные проблемы при работе мода</a></li>
-								<li><a class="dropdown-item" href="#whatRussian">Что это за мод?</a></li>
-							</ul>
-						</li>
-					</ul>
+		<header class="primaryHeader">
+			<div class="wrapper">
+				<div class="primaryHeaderInner">
+					<span class="logo">We The People</span>
+			<ul class="navList">
+				<li><a href="#InstructionEnglish">English</a></li>
+				<li><a href="#InstructionGerman">Deutsch</a></li>
+				<li><a href="#InstructionRussian">Русский</a></li>
+			</ul>
 				</div>
 			</div>
-		</nav>
-	<ol>
-		<li><a href="#InstructionEnglish">English Readme</a></li>
-		<li><a href="#InstructionGerman">Deutsches readme</a></li>
-		<li><a href="#InstructionRussian">Русскоязычная информация</a></li>
-	</ol>
+		</header>
+
+	<div class="section">
+		<h1 class="mainHead">We The People</h1>
+		<h2>Readme</h2>
+	</div>
+
+
+
+
+
 	<div id="InstructionEnglish">
 		<p>Detailed information is available in our forum:<a href="https://forums.civfanatics.com/forums/civ4col-we-the-people.591/">civfanatics</a></p>
 		<h1>Welcome to "We The People"!</h1>
@@ -75,7 +117,7 @@
 			</ul>
 		<h3 id="aboutEnglish">Foreword</h3>
 		<p>"We The People" is the most extensive and complex mod for "Sid Meier's Civilization IV: Colonization" that you can find. As a player, you must decide for yourself whether it is also the best. Just try out a few mods.</p>
-		<p> is heart and soul and a lot of modding history in "We The People", as the next few paragraphs will show you. It is not for nothing that a small but passionate team continuously improves and expands this mod with the help of the community.</p>
+		<p>There is a heart and soul, and a lot of modding history in "We The People", as the next few paragraphs will show you. It is not for nothing that a small but passionate team continuously improves and expands this mod with the help of the community.</p>
 		<h3>Origins:</h3> 
 		<p>To avoid confusion, let's say straightaway that "We The People" (WTP for short) is the successful continuation of "Religion and Revolution" (simply RaR for short). WTP continues the proud tradition of RaR with a new team. Among them are many old team members of RaR.</p>
 		<p>Therefore WTP still contains all the features of RaR, but is much bigger and even better. That means more new features, nicer graphics, better AI, countless bug fixes, text corrections, balancing improvements, performance improvements ...</p>
@@ -112,9 +154,10 @@ Also check out our <a href="https://forums.civfanatics.com/forums/civ4col-we-the
 		<h3>Formal notes:</h3>
 		<p>Please read the ingame credits in Colopedia for detailed information. Please read the notes about distribution and rights of the mod RaR, below.</p>
 		<p>credits for the music:</p>
-		<ul></ul>
-		<li>René Osmanczyk (composer of most of our soundtrack)</li>
-		<li>Gregoire Lourme, The Seven Seas Journey, Cinematic Volume 7 Animation Movies (<a href="https://www.jamendo.com/track/1119930/the-seven-seas-journey?language=ru">a lot of interesting music here</a>)</li>
+		<ul>
+	<li>René Osmanczyk (composer of most of our soundtrack)</li>
+	<li>Gregoire Lourme, The Seven Seas Journey, Cinematic Volume 7 Animation Movies (<a href="https://www.jamendo.com/track/1119930/the-seven-seas-journey?language=ru">a lot of interesting music here</a>)</li>
+		</ul>
 		<p>credits and thanks also to the creators/publishers of the original game:</p>
 		<p>Firaxis and 2Kgames</p>
 		<hr>
@@ -143,7 +186,7 @@ Then copy the unzipped mod into the "Mods" folder of Colonization: (e.g. C:\User
 		<hr>
 		<h3 id="whatEnglish">What is the mod about?</h3>
 		<p>It is currently by far the largest CivCol mod in existence. It’s our attempt to bring together many of the best ideas and concepts that the CivCol modding has created.</p>
-		<p>have also tried to bring back some of the bigger features from the original Colonization, which for some reason were missing from CivCol.</p>
+		<p>We have also tried to bring back some of the bigger features from the original Colonization, which for some reason were missing from CivCol.</p>
 		<p>But we didn't just throw it all together. Almost everything we put in has been tweaked and improved. We’ve very carefully weighed which features to include and how to implement them.</p>
 		<p>We want to create a mod that offers more variety, more surprises and more challenge. Little by little we’re trying to improve every single aspect of the game: economy, exploration, diplomacy, trade, events, wars...</p> 
 		<p>Some aspects of the mod are meant to lean a little more towards complicated simulation, while others deliver more action.</p>
@@ -171,7 +214,6 @@ But please remember to give proper credit. Ask if you’re not sure.</p>
 		<h4> Your WTP Team</h4> 
 	</div>
 
-	<hr>
 	<hr>
 
 	<div id="InstructionGerman">
@@ -241,7 +283,7 @@ But please remember to give proper credit. Ask if you’re not sure.</p>
 		<hr>
 		<h3 id="whatGerman">Was ist diese Mod?</h3>
 		<p>Zurzeit ist es die bei weitem größte vorhandene CivCol Mod. Es ist unser Versuch, viele der besten Ideen und Konzepte zu vereinigen, die von der CivCol Modding Gemeinschaft erschaffen wurden.</p>
-		</p>Wir haben auch versucht, einige größere Features des ursprünglichen Colonization wieder einzubaeuen, welche bei CivCol aus irgendeinem Grund vermisst wurden.</p>
+		<p>Wir haben auch versucht, einige größere Features des ursprünglichen Colonization wieder einzubaeuen, welche bei CivCol aus irgendeinem Grund vermisst wurden.</p>
 		<p>Aber wir haben nicht einfach alles zusammen geworfen. Fast alles, was wir eingebaut haben, wurde angepasst und verbessert. Wir haben sehr sorgfältig abgewogen, welche Features wir hinein nehmen und wie sie umgesetzt werden.</p>
 		<p>Wir wollen eine Mod schaffen, die mehr Abwechslung, mehr Überraschungen und mehr Herausforderung bietet. Nach und nach versuchen wir, jeden einzelnen Aspekt des Spiels zu verbessern. (Wirtschaft, Erforschung, Diplomatie, Handel, Ereignisse, Kriege...)</p>
 		<p>Einige Aspekte der Mod sollen dazu dienen sich ein kleines bisschen mehr zur komplizierten Simulation tendieren, während andere etwas mehr Action liefern sollen.</p>
@@ -264,9 +306,9 @@ But please remember to give proper credit. Ask if you’re not sure.</p>
 	</div>
 
 	<hr>
-	<hr>
 
 	<div id="InstructionRussian">
+
 		<h1>Добро пожаловать в "We The People"!</h1>
 		<h2>Оглавление</h2>
 			<ul>
@@ -311,13 +353,12 @@ But please remember to give proper credit. Ask if you’re not sure.</p>
 		<hr>
 		<p>Особая благодарность Mod DB за размещение загрузки нашего мода! Особая благодарность другим форумам, таким как Steam, которые также сообщают о нас.</p>
 		<hr>
-		<h2>Официальные примечания</h2>
-		<p>Пожалуйста, прочитайте внутриигровые титры в Colopedia для получения подробной информации.Пожалуйста, прочтите примечания о распространении и правах на мод RaR ниже.</p>
 		<p>Особая благодарность за музыку:</p>
-		<p>
+		<ul>
 			<li>René Osmanczyk (<i>композитор большей части нашего саундтрека</i>)</li>
-			<li>Gregoire Lourme, The Seven Seas Journey, Cinematic Volume 7 Animation Movies (<a href="https://www.jamendo.com/track/1119930/the-seven-seas-journey?language=ru">здесь много интересной музыки</a>)</li></p>
-		<p>Мы также благодарим за музыку:</p>
+			<li>Gregoire Lourme, The Seven Seas Journey, Cinematic Volume 7 Animation Movies (<a href="https://www.jamendo.com/track/1119930/the-seven-seas-journey?language=ru">здесь много интересной музыки</a>)</li>
+		</ul>
+			<p>Мы также благодарим за музыку:</p>
 		<ul>
 			<li>Efisio Cross</li>
 			<li>Adrian Ziegler</li>
@@ -357,6 +398,9 @@ But please remember to give proper credit. Ask if you’re not sure.</p>
 		<p><strong>Особая благодарность создателям/издателям оригинальной игры:</strong></p>
 		<p>Firaxis и 2Kgames</p>
 		<hr>
+		<h2>Официальные примечания</h2>
+		<p>Пожалуйста, прочитайте внутриигровые титры в Colopedia для получения подробной информации, а также примечания о распространении и правах на мод RaR ниже.</p>
+		<hr>
 		<h2 id="installRussian">Как установить мод?</h2>
 		<p>Прежде всего убедитесь, что в вашей игре Colonization используется официальный патч 1.01.f. (Другие версии вызывают серьезные проблемы, но только старая версия на компакт-диске нуждается в обновлении).</p>
 		<p>Установите «We The People», как и любой другой мод. Сначала скачайте архив по ссылке для скачивания соответствующего релиза (например, на GitHub). Затем скопируйте полученный архив в папку «Mods», расположенную в папке игры. Например, C:\Games\Civilization IV Colonization\Mods\. И уже теперь распакуйте архив (обычно, мы пользуемся для этого бесплатной программой 7zip), выбрав пункт «Распаковать в (название архива)». После успешной распаковки архив можно удалить.</p>
@@ -364,7 +408,7 @@ But please remember to give proper credit. Ask if you’re not sure.</p>
 		<p>Запустите файл setup.bat (он расположен в той же папке, что и readme, который вы читаете, и иногда может отображаться как просто setup). При этом в автоматическом режиме будут скопированы некоторые библиотеки, про которые некоторые пользователи забывали и после жаловались на ошибки при запуске мода. Также будет проведено небольшое тестирование на соответствие требованиям расположения мода.</p>
 		<p>Для того, чтобы сразу запускать мод, в файле CivilizationIV.ini (располагается в C:\Users\имя пользователя\Documents\my games\Civilization IV Colonization), в строке Mod надо прописать путь к папке с модификацией (например, Mod = Mods\WeThePeople-4.0.2). Этот способ одинаково подходит и для игроков со Steam-версией, и для тех, кто устанавливал игру каким-либо другим способом.</p>
 		<p>Изначально мод запустится на английском языке. Для активации перевода на русский язык нужно зайти в меню <strong>ADVANCED -> OPTIONS</strong> и в строке <strong>Language</strong> выбрать <strong>Russian</strong>. После этого игра должна быть перезапущена. Это нужно для того, чтобы на билбордах отображался русский текст.</p>
-		<p><strong>ВАЖНО!</strong><br> Не пытайтесь использовать игру, переведенную компанией 1С, для игры на русском языке. Перевод, существующий в моде, несовместим с переводом Vanilla от этой компании. Хотя, если вы планируете играть на английском языке, то проблем быть не должно. Но это не точно =)</p>
+		<p><strong>ВАЖНО!</strong><br> Не пытайтесь использовать игру, переведенную компанией 1С, для игры на русском языке. Перевод, существующий в моде, несовместим с переводом Vanilla от этой компании. Но если вы планируете играть на английском языке, то проблем быть не должно. Но это не точно =)</p>
 		<hr>
 		<h3 id="installProblemRussian">Распространенные проблемы при работе мода</h3>
 		<h4 id="wrongSteamRussian">Steam должен использовать бета-версию</h4>
@@ -408,7 +452,7 @@ But please remember to give proper credit. Ask if you’re not sure.</p>
 </div>
 
 <script>
-const teamNames = ["raystuttgart", "Devolution", "Nightinggale", "Schmiddie", "Mr.ZorG", "Fürstbischof", "Kendon", "Raubwürger", "Flavius Belisarius", "Liet", "jooe", "Barthoze", "sneed", "Tucker8", "victorxucp", "Aemon"];
+const teamNames = ["raystuttgart", "Devolution", "Nightinggale", "Schmiddie", "Mr.ZorG", "Fürstbischof", "Kendon", "Raubwürger", "Flavius Belisarius", "Liet", "jooe"];
 const formerTeamNames = ["Robert Surcouf", "colonialfan", "KJ Jansson", "Androrc the Orc", "orlanth"];
 const specialCredits = ["Mighty Toad", "Lethiel", "Zeta Nexus", "Vaeringjar", "Ramstormp", "Writing Bull", "Willi_Tell", "Isabelxxx", "Dale", "Kailric", "Aymerick", "Jeckel", "TC01", "NeseryozniyVET", "Trachmyr", "Dazio", "M07", "bernie14", "ekmek", "SaibotLieh", "Sanotra", "Aeterna", "Roamty", "Kathy", "agnat86", "Marla_Singer", "Commander_Bello", "Vetiarvind", "Barthoze", "melcher kürzer", "Fankman"];
 
@@ -458,6 +502,25 @@ for (let i = 0; i < Math.max(teamNames.length, formerTeamNames.length, specialCr
 				}
 		}
 }
+
+const primaryHeader = document.querySelector(".primaryHeader");
+const scrollWatcher = document.createElement("div");
+
+scrollWatcher.setAttribute("data-scroll-watcher", "");
+primaryHeader.before(scrollWatcher);
+
+const navObserver = new IntersectionObserver ((entries) => {
+    console.log(entries)
+    primaryHeader.classList.toggle('sticking', !entries[0].isIntersecting)
+}, {rootMargin: "200px 0px 0px 0px"});
+
+
+navObserver.observe(scrollWatcher)
 </script>
+
+
+
 </body>
 </html>
+
+

@@ -168,6 +168,93 @@ float directionAngle( DirectionTypes eDirection )
 	}
 }
 
+// returns minimal number of steps (clockwise or counterclockwise) from one direction to another
+int getDirectionDiff(DirectionTypes direction1, DirectionTypes direction2)
+{
+	FAssertMsg(direction1 >= FIRST_DIRECTION && direction1 < NUM_DIRECTION_TYPES 
+		&& direction2 >= FIRST_DIRECTION && direction2 < NUM_DIRECTION_TYPES,
+		"Invalid DirectionTypes enum argument");
+
+	// in case one of directions is NO_DIRECTION
+	if (direction1 == NO_DIRECTION || direction2 == NO_DIRECTION)
+	{
+		if (direction1 == NO_DIRECTION && direction2 == NO_DIRECTION)
+		{
+			return 0;
+		}
+		else
+		{
+			return 1;
+		}
+	}
+
+	int diff = std::abs(direction1 - direction2);
+	if (diff <= NUM_DIRECTION_TYPES / 2)
+	{
+		return diff;
+	}
+	else
+	{
+		return NUM_DIRECTION_TYPES - diff;
+	}
+}
+
+DirectionTypes getDirectionFrom_dX_dY(int dX, int dY)
+{
+	int x, y;
+	if (dX < 0) x = -1;
+	else if (dX > 0) x = 1;
+	else x = 0;
+
+	if (dY < 0) y = -1;
+	else if (dY > 0) y = 1;
+	else y = 0;
+
+	switch (x)
+	{
+	case -1:
+		switch (y)
+		{
+		case -1:
+			return DIRECTION_SOUTHWEST;
+		case 0:
+			return DIRECTION_WEST;
+		case 1:
+			return DIRECTION_NORTHWEST;
+		default:
+			break;
+		}
+	case 0:
+		switch (y)
+		{
+		case -1:
+			return DIRECTION_SOUTH;
+		case 0:
+			return NO_DIRECTION;
+		case 1:
+			return DIRECTION_NORTH;
+		default:
+			break;
+		}
+	case 1:
+		switch (y)
+		{
+		case -1:
+			return DIRECTION_SOUTHEAST;
+		case 0:
+			return DIRECTION_EAST;
+		case 1:
+			return DIRECTION_NORTHEAST;
+		default:
+			break;
+		}
+	default:
+		break;
+	}
+
+	return NO_DIRECTION;
+}
+
 bool atWar(TeamTypes eTeamA, TeamTypes eTeamB)
 {
 	if (eTeamA == NO_TEAM || eTeamB == NO_TEAM)
@@ -288,6 +375,9 @@ bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB)
 
 bool shouldUnitMove(const CvUnit* pUnit)
 {
+	if (pUnit->isTempUnit())
+		return false;
+
 	if (pUnit->isDead() || pUnit->isDelayedDeath())
 	{
 		return false;
@@ -505,7 +595,7 @@ bool isPlotEventTrigger(EventTriggerTypes eTrigger)
 
 	if (kTrigger.getNumPlotsRequired() > 0)
 	{
-		if (kTrigger.getPlotType() != NO_PLOT)
+		if (kTrigger.getPlotTypes().hasContent())
 		{
 			return true;
 		}
@@ -1014,227 +1104,6 @@ int pathHeuristic(int iFromX, int iFromY, int iToX, int iToY)
 	return (stepDistance(iFromX, iFromY, iToX, iToY) * PATH_MOVEMENT_WEIGHT);
 }
 
-#if 0
-int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
-{
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	CvPlot* pFromPlot;
-	CvPlot* pToPlot;
-	int iWorstCost;
-	int iCost;
-	int iWorstMovesLeft;
-	int iMovesLeft;
-	int iWorstMax;
-	int iMax;
-
-	pFromPlot = GC.getMap().plotSoren(parent->m_iX, parent->m_iY);
-	FAssert(pFromPlot != NULL);
-	pToPlot = GC.getMap().plotSoren(node->m_iX, node->m_iY);
-	FAssert(pToPlot != NULL);
-
-	//CvSelectionGroup* pSelectionGroup = ((CvSelectionGroup *)pointer);
-	// K-Mod
-	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer : ((CvPathSettings*)pointer)->pGroup;
-	const int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) : ((CvPathSettings*)pointer)->iFlags;
-	// K-Mod end
-
-	//iWorstCost = MAX_INT;
-	iWorstCost = 0;
-	iWorstMovesLeft = MAX_INT;
-	iWorstMax = MAX_INT;
-
-	pUnitNode = pSelectionGroup->headUnitNode();
-
-	while (pUnitNode != NULL)
-	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode);
-
-		if (parent->m_iData1 > 0)
-		{
-			iMax = parent->m_iData1;
-		}
-		else
-		{
-			iMax = pLoopUnit->maxMoves();
-		}
-
-		iCost = pToPlot->movementCost(pLoopUnit, pFromPlot);
-
-		iMovesLeft = std::max(0, (iMax - iCost));
-
-		if (iMovesLeft <= iWorstMovesLeft)
-		{
-			if ((iMovesLeft < iWorstMovesLeft) || (iMax <= iWorstMax))
-			{
-				bool bIsRevealed = pToPlot->isRevealed(pLoopUnit->getTeam(), false);
-
-				if (iMovesLeft == 0)
-				{
-					iCost = (PATH_MOVEMENT_WEIGHT * iMax);
-
-					if (bIsRevealed)
-					{
-						if (pToPlot->getTeam() != pLoopUnit->getTeam())
-						{
-							iCost += PATH_TERRITORY_WEIGHT;
-						}
-					}
-
-					// R&R, Robert Surcouf, Damage on Storm plots, Start
-					if (pToPlot->getFeatureType() != NO_FEATURE)
-					{
-						const int iTurnDamage = GC.getFeatureInfo(pToPlot->getFeatureType()).getTurnDamage();
-
-						if (iTurnDamage > 0)
-						{
-							iCost += (PATH_DAMAGE_WEIGHT * std::max(0, iTurnDamage)) / GC.getMAX_HIT_POINTS();
-						}
-					}
-
-					// R&R, Robert Surcouf, Damage on Storm plots, End
-					// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
-					// Add additional cost for ending turn in or adjacent to enemy territory based on flags
-					if (iFlags & MOVE_AVOID_ENEMY_WEIGHT_3)
-					{
-						if (pToPlot->isOwned() && ((GET_TEAM(pSelectionGroup->getHeadTeam()).AI_getWarPlan(pToPlot->getTeam()) != NO_WARPLAN) || (pToPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pToPlot))))
-						{
-							iCost *= 3;
-						}
-						else
-						{
-							CvPlot* pAdjacentPlot;
-
-							for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
-							{
-								pAdjacentPlot = plotDirection(pToPlot->getX_INLINE(), pToPlot->getY_INLINE(), ((DirectionTypes)iI));
-
-								if( pAdjacentPlot != NULL )
-								{
-									if (pAdjacentPlot->isOwned() && (atWar(pAdjacentPlot->getTeam(), pSelectionGroup->getHeadTeam()) || (pAdjacentPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pAdjacentPlot))))
-									{
-										iCost *= 3;
-										iCost /= 2;
-									}
-								}
-							}
-						}
-					}
-					else if (iFlags & MOVE_AVOID_ENEMY_WEIGHT_2)
-					{
-						if (pToPlot->isOwned() && ((GET_TEAM(pSelectionGroup->getHeadTeam()).AI_getWarPlan(pToPlot->getTeam()) != NO_WARPLAN) || (pToPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pToPlot))))
-						{
-							iCost *= 2;
-						}
-						else
-						{
-							CvPlot* pAdjacentPlot;
-							int iI;
-							for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
-							{
-								pAdjacentPlot = plotDirection(pToPlot->getX_INLINE(), pToPlot->getY_INLINE(), ((DirectionTypes)iI));
-
-								if( pAdjacentPlot != NULL )
-								{
-									if (pAdjacentPlot->isOwned() && (atWar(pAdjacentPlot->getTeam(), pSelectionGroup->getHeadTeam()) || (pAdjacentPlot->getTeam() != pLoopUnit->getTeam() && pLoopUnit->isAlwaysHostile(pAdjacentPlot))))
-									{
-										iCost *= 4;
-										iCost /= 3;
-									}
-								}
-							}
-						}
-					}
-				// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - END
-				}
-				else
-				{
-					iCost = (PATH_MOVEMENT_WEIGHT * iCost);
-				}
-
-				if (pLoopUnit->canFight() && bIsRevealed)
-				{
-					if (iMovesLeft == 0)
-					{
-						iCost += (PATH_DEFENSE_WEIGHT * std::max(0, (200 - ((pLoopUnit->noDefensiveBonus()) ? 0 : pToPlot->defenseModifier(pLoopUnit->getTeam())))));
-					}
-
-					if (pSelectionGroup->AI_isControlled())
-					{
-						if (pLoopUnit->canAttack())
-						{
-							/*
-							if (gDLL->getFAStarIFace()->IsPathDest(finder, pToPlot->getX_INLINE(), pToPlot->getY_INLINE()))
-							{
-								if (pToPlot->isVisibleEnemyDefender(pLoopUnit))
-								{
-									iCost += (PATH_DEFENSE_WEIGHT * std::max(0, (200 - ((pLoopUnit->noDefensiveBonus()) ? 0 : pFromPlot->defenseModifier(pLoopUnit->getTeam())))));
-
-									if (!(pFromPlot->isCity()))
-									{
-										iCost += PATH_CITY_WEIGHT;
-									}
-
-									if (pFromPlot->isRiverCrossing(directionXY(pFromPlot, pToPlot)))
-									{
-										if (!(pLoopUnit->isRiver()))
-										{
-											iCost += (PATH_RIVER_WEIGHT * -(GC.getRIVER_ATTACK_MODIFIER()));
-											iCost += (PATH_MOVEMENT_WEIGHT * iMovesLeft);
-										}
-									}
-								}
-							}
-							*/
-						}
-					}
-				}
-
-				if (pSelectionGroup->AI_isControlled())
-				{
-					if (iFlags & MOVE_BUST_FOG)
-					{
-						for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
-						{
-							CvPlot* pLoopPlot = plotDirection(pToPlot->getX_INLINE(), pToPlot->getY_INLINE(), (DirectionTypes)iI);
-							if (pLoopPlot != NULL)
-							{
-								if (pLoopPlot->isRevealed(pSelectionGroup->getTeam(), false))
-								{
-									iCost += PATH_FOGBUST_WEIGHT;
-								}
-							}
-						}
-					}
-				}
-
-				//if (iCost < iWorstCost)
-				if (iCost > iWorstCost) // K-Mod. (no comment)
-				{
-					iWorstCost = iCost;
-					iWorstMovesLeft = iMovesLeft;
-					iWorstMax = iMax;
-				}
-			}
-		}
-	}
-
-	//FAssert(iWorstCost != MAX_INT);
-
-	iWorstCost += PATH_STEP_WEIGHT;
-
-	if ((pFromPlot->getX_INLINE() != pToPlot->getX_INLINE()) && (pFromPlot->getY_INLINE() != pToPlot->getY_INLINE()))
-	{
-		iWorstCost += PATH_STRAIGHT_WEIGHT;
-	}
-
-	FAssert(iWorstCost > 0);
-
-	return iWorstCost;
-}
-#endif
-
 // This function has been completely rewritten for K-Mod. (the rewrite includes some bug fixes as well as some new features)
 int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
@@ -1253,29 +1122,35 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 
 	int iWorstCost = 0;
 	int iWorstMovesLeft = MAX_INT;
-	int iWorstMaxMoves = MAX_INT;
+	//int iWorstMaxMoves = MAX_INT; // advc: unused
 
-	TeamTypes eTeam = pSelectionGroup->getHeadTeam();
+	const TeamTypes eTeam = pSelectionGroup->getHeadTeam();
 	// <advc.035>
 	//int const iFlipModifierDiv = 7;
 	//int iFlipModifier = iFlipModifierDiv;
 	// </advc.035>
 	// K-Mod
 	int iExploreModifier = 3; // (in thirds)
-#if 0
-	if (!kToPlot.isRevealed(eTeam))
+
+	if (!kToPlot.isRevealed(eTeam, false))
 	{
 		if (pSelectionGroup->getAutomateType() == AUTOMATE_EXPLORE ||
-			(!pSelectionGroup->isHuman() && (pSelectionGroup->getHeadUnitAIType() == UNITAI_EXPLORE || pSelectionGroup->getHeadUnitAIType() == UNITAI_EXPLORE_SEA)))
+			(!pSelectionGroup->isHuman() && (pSelectionGroup->getHeadUnit()->AI_getUnitAIType() == UNITAI_SCOUT)))
 		{
 			iExploreModifier = 2; // lower cost to encourage exploring unrevealed areas
 		}
-		else if (!kFromPlot.isRevealed(eTeam))
+		// Since WTP does not have UNITAI_EXPLORE_SEA like in BTS, let units with the fog busting
+		// flag be treated as explorers
+		else if (pSelectionGroup->AI_isControlled() && (iFlags & MOVE_BUST_FOG))
+		{
+			iExploreModifier = 2; // lower cost to encourage exploring unrevealed areas
+		}
+		else if (!kFromPlot.isRevealed(eTeam, false))
 		{
 			iExploreModifier = 4; // higher cost to discourage pathfinding deep into the unknown
 		}
 	}
-#endif
+
 	// K-Mod end
 	// <advc.035>
 #if 0
@@ -1309,38 +1184,33 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 		for (CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
 			pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
 		{
-			// TODO: getUnit can return NULL in rare cases
 			CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			int iMoveCost = kToPlot.movementCost(pLoopUnit, &kFromPlot,
+
+			if (pLoopUnit == NULL)
+				continue;
+
+			const int iMoveCost = kToPlot.movementCost(pLoopUnit, &kFromPlot,
 				false); // advc.001i
 			//FAssert(pLoopUnit->getDomainType() != DOMAIN_AIR);
-			if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
-			{
-				int iMaxMoves = parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves();
-				int iMovesLeft = std::max(0, (iMaxMoves - iMoveCost));
+			
+			const int iMaxMoves = parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves();
+			const int iMovesLeft = std::max(0, (iMaxMoves - iMoveCost));
 
-				iWorstMovesLeft = std::min(iWorstMovesLeft, iMovesLeft);
-				iWorstMaxMoves = std::min(iWorstMaxMoves, iMaxMoves);
+			iWorstMovesLeft = std::min(iWorstMovesLeft, iMovesLeft);
+			//iWorstMaxMoves = std::min(iWorstMaxMoves, iMaxMoves);
 
-				int iCost = PATH_MOVEMENT_WEIGHT * (iMovesLeft == 0 ? iMaxMoves : iMoveCost);
-				iCost = (iCost * iExploreModifier) / 3;
-				//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
-				if (iCost > iWorstCost)
-				{
-					iWorstCost = iCost;
-					iWorstMovesLeft = iMovesLeft;
-					iWorstMaxMoves = iMaxMoves;
-				}
-			}
-			else
+#if GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1
+			int iCost = PATH_MOVEMENT_WEIGHT * (iMovesLeft == 0 ? iMoveCost : iMoveCost);
+#else
+			int iCost = PATH_MOVEMENT_WEIGHT * iMoveCost;
+#endif
+			iCost = (iCost * iExploreModifier) / 3;
+			//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
+			if (iCost > iWorstCost)
 			{
-				int iCost = PATH_MOVEMENT_WEIGHT * iMoveCost;
-				iCost = (iCost * iExploreModifier) / 3;
-				//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
-				if (iCost > iWorstCost)
-				{
-					iWorstCost = iCost;
-				}
+				iWorstCost = iCost;
+				iWorstMovesLeft = iMovesLeft;
+				//iWorstMaxMoves = iMaxMoves;
 			}
 		}
 	}
@@ -1415,6 +1285,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 
 	if (!kToPlot.isRevealed(eTeam, false))
 		return iWorstCost;
+
 #if 0
 	// WTP: Not supported yet due to the sheer effort required to port everything from AdvCiv atm.
 	// the cost of battle...
@@ -1470,6 +1341,24 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 		eToPlotTeam != eTeam && GET_TEAM(eTeam).AI_isSneakAttackReady(eToPlotTeam))
 		iWorstCost += PATH_DOW_WEIGHT;
 	// </advc.082>
+	
+	// Damage caused by features (for mods). WTP: Also moved out from the no-moves-left branch below since
+	// the cost should apply to all damaging plots that are part of the path and not just the endplot 
+	// (since we would sustain damage when moving through, not by simply ending our turn)
+	if (PATH_DAMAGE_WEIGHT != 0)
+	{
+		const FeatureTypes featureType = kToPlot.getFeatureType();
+
+		if (featureType != NO_FEATURE)
+		{
+			const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(kToPlot.getFeatureType());
+
+			iWorstCost += PATH_DAMAGE_WEIGHT *
+				std::max(0, kFeatureInfo.getTurnDamage()) /
+				GC.getMAX_HIT_POINTS();
+		}
+	}
+
 	if (iWorstMovesLeft <= 0)
 	{
 		if (eToPlotTeam != eTeam)
@@ -1477,28 +1366,6 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			iWorstCost += PATH_TERRITORY_WEIGHT;
 		}
 
-		// Damage caused by features (for mods)
-		if (PATH_DAMAGE_WEIGHT != 0)
-		{
-			const FeatureTypes featureType = kToPlot.getFeatureType();
-
-			if (featureType != NO_FEATURE)
-			{
-				const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(kToPlot.getFeatureType());
-
-				//GC.getFeatureInfo(pToPlot->getFeatureType()).getTurnDamage()
-				iWorstCost += PATH_DAMAGE_WEIGHT *
-					std::max(0, kFeatureInfo.getTurnDamage()) /
-					GC.getMAX_HIT_POINTS();
-			}
-
-			/* WTP: Not supported
-			if (kToPlot.getExtraMovePathCost() > 0)
-			{
-				iWorstCost += (PATH_MOVEMENT_WEIGHT * kToPlot.getExtraMovePathCost());
-			}
-			*/
-		}
 		// defence modifiers
 		int iDefenceMod = 0;
 		int iDefenceCount = 0;
@@ -1587,10 +1454,9 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			}
 			else
 			{
-				CvPlot* pAdjacentPlot;
 				for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
 				{
-					pAdjacentPlot = plotDirection(kToPlot.getX(), kToPlot.getY(), (DirectionTypes)iI);
+					const CvPlot* const pAdjacentPlot = plotDirection(kToPlot.getX(), kToPlot.getY(), (DirectionTypes)iI);
 					if (pAdjacentPlot != NULL)
 					{
 						if (pAdjacentPlot->isOwned() && atWar(pAdjacentPlot->getTeam(), pSelectionGroup->getHeadTeam()))
@@ -1629,6 +1495,12 @@ int pathValid_join(FAStarNode* parent, FAStarNode* node, CvSelectionGroup* pSele
 		!kMap.getPlot(kToPlot.getX(), kFromPlot.getY()).isWater() /*&&
 		!pSelectionGroup->canMoveAllTerrain()*/) // WTP: Not supported
 		return FALSE;
+
+	if (kToPlot.getTurnDamage() > 0 && !pSelectionGroup->getHeadUnit()->isAllowDangerousPath())
+	{
+		return FALSE;
+	}
+
 	return TRUE;
 }
 
@@ -2064,62 +1936,6 @@ int routeValid(FAStarNode* parent, FAStarNode* node, int data, const void* point
 	return FALSE;
 }
 
-int coastalRouteValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
-{
-	CvPlot* pNewPlot;
-
-	if (parent == NULL)
-	{
-		return true;
-	}
-
-	pNewPlot = GC.getMap().plotSoren(node->m_iX, node->m_iY);
-
-	const PlayerTypes ePlayer = ((PlayerTypes)(gDLL->getFAStarIFace()->GetInfo(finder)));
-
-	// Erik: It's ok to check for a city here since cities they have to be separated by at least 1-non city plot
-	// Erik: TODO: check that it's our own city! When we implement trading with natives\Europeans, we can allow it
-	if (pNewPlot->isCity())
-	{
-		return true;
-	}
-
-	// WTP, ray, Canal - START
-	if (pNewPlot->getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(pNewPlot->getImprovementType()).isCanal())
-	{
-		return true;
-	}
-	// WTP, ray, Canal - END
-
-	const TeamTypes eTeam = GET_PLAYER(ePlayer).getTeam();
-
-	if (pNewPlot->isWater() && pNewPlot->isRevealed(eTeam, false) && !pNewPlot->isImpassable())
-	{
-		const FeatureTypes featureType = pNewPlot->getFeatureType();
-
-		// Erik: If the plot has a feature it can't be impassable
-		if (featureType != NO_FEATURE)
-		{
-			const CvFeatureInfo& kFeatureInfo = GC.getFeatureInfo(featureType);
-
-			// Erik: Just in case impassable terrain is added to the game (unused in WTP)
-			if (!kFeatureInfo.isImpassable())
-			{
-				return false;
-			}
-		}
-
-		//WTP, ray, Large Rivers
-		// if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTeam() == eTeam)
-		//WTP, ray, Lakes
-		if (pNewPlot->getTerrainType() == TERRAIN_COAST || pNewPlot->getTerrainType() == TERRAIN_SHALLOW_COAST || pNewPlot->getTerrainType() == TERRAIN_LARGE_RIVERS || pNewPlot->getTerrainType() == TERRAIN_LAKE || pNewPlot->getTerrainType() == TERRAIN_ICE_LAKE || pNewPlot->getTeam() == eTeam)
-		{
-			return true;
-		}
-	}
-
-	return false;
-}
 
 int borderValid(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
@@ -2602,4 +2418,19 @@ CvWString getStrategyString(StrategyTypes eStrategy)
 	}
 
 	return szString;
+}
+
+bool generatePathForHypotheticalUnit(const CvPlot* pFrom, const CvPlot* pTo, PlayerTypes ePlayer, UnitTypes eUnit, int iFlags, int iMaxTurns)
+{
+	CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+	const int iPower = kPlayer.getPower();
+	const int iAssets = kPlayer.getAssets();
+	PROFILE_FUNC();
+	CvUnit* const pTempUnit = kPlayer.getOrCreateTempUnit(eUnit, pFrom->getX(), pFrom->getY());
+	pTempUnit->finishMoves();
+	const bool bResult = pTempUnit->generatePath(pTo, iFlags, false, NULL, iMaxTurns, /*bUseTempFinder*/true);
+	kPlayer.releaseTempUnit();
+	return bResult;
+	FAssert(iPower == kPlayer.getPower());
+	FAssert(iAssets == kPlayer.getAssets());
 }

@@ -195,6 +195,7 @@
 		<German>Laden</German>
 		<Italian>Imbarca</Italian>
 		<Spanish>Embarcar</Spanish>
+		<Russian>Загрузить (где?)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_BUILD</Tag>
@@ -318,7 +319,7 @@
 		<German>[SPACE]([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] für alle Einheiten)</German>
 		<Italian>[SPACE]([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per tutte le unità)</Italian>
 		<Spanish>[SPACE]([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para todas las unidades)</Spanish>
-		<Russian>[SPACE]([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для всех юнитов)</Russian>
+		<Russian>[SPACE]([COLOR:140:255:40:255]ALT[COLOR_REVERT] для всех юнитов)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_GOES_TO_CIV</Tag>
@@ -447,7 +448,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_STREAM_EFFECT</Tag>
-		<English>[ICON_BULLET]Doubles movement with stream[NEWLINE][ICON_BULLET]Halves movement against stream</English>
+		<English>[ICON_BULLET]Doubles movement with current[NEWLINE][ICON_BULLET]Halves movement against current</English>
 		<French>[ICON_BULLET]Doubles le mouvement suivant le courant[NEWLINE][ICON_BULLET]Divise le mouvement à contre-courant</French>
 		<German>[ICON_BULLET]Verdoppelt Bewegung mit Strom[NEWLINE][ICON_BULLET]Halbiert Bewegung gegen Strom</German>
 		<Russian>[ICON_BULLET]Движение по течению удваивает скорость перемещения[NEWLINE][ICON_BULLET]Движение против течения вдвое замедляет скорость перемещения</Russian>
@@ -569,12 +570,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_WITHDRAWAL_TEXT</Tag>
-		<English>[ICON_BULLET]%D1_Change%% withdrawal chance</English>
-		<French>[ICON_BULLET]Chances de repli de %D1_Change%%</French>
-		<German>[ICON_BULLET]%D1_Change%% Rückzugswahrscheinlichkeit</German>
-		<Italian>[ICON_BULLET]%D1_Change%% di probabilità di ritirata</Italian>
-		<Spanish>[ICON_BULLET]%D1_Change%% a la probabilidad de retirarse</Spanish>
-		<Russian>[ICON_BULLET]%D1_Change%% к шансу выйти из боя</Russian>
+		<English>[ICON_BULLET]%D1_Change%% withdrawal chance on attack</English>
+		<French>[ICON_BULLET]Chances de repli en attaque de %D1_Change%%</French>
+		<German>[ICON_BULLET]%D1_Change%% Rückzugswahrscheinlichkeitdes Rückzugs im Angriff</German>
+		<Italian>[ICON_BULLET]%D1_Change%% di probabilità di ritirata in attacco</Italian>
+		<Spanish>[ICON_BULLET]%D1_Change%% a la probabilidad de retirarse en ataque</Spanish>
+		<Russian>[ICON_BULLET]%D1_Change%% к шансу выйти из боя при атаке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_HEALS_EXTRA_TEXT</Tag>
@@ -864,21 +865,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY_SHORT</Tag>
-		<English>[ICON_BULLET]Withdrawal chance : %d1_Amount%%</English>
-		<French>[ICON_BULLET]Chances de rompre le combat : %d1_Amount%%</French>
-		<German>[ICON_BULLET]Rückzugschance : %d1_Amount%%</German>
-		<Italian>[ICON_BULLET]Probabilità di ritirata : %d1_Amount%%</Italian>
-		<Spanish>[ICON_BULLET]Probabilidad de retirarse : %d1_Amount%%</Spanish>
-		<Russian>[ICON_BULLET]Шанс отступить : %d1_Amount%%</Russian>
+		<English>[ICON_BULLET]Withdrawal chance on attack: %d1_Amount%%</English>
+		<French>[ICON_BULLET]Chances de rompre le combat en attaque: %d1_Amount%%</French>
+		<German>[ICON_BULLET]Chance auf Rückzug beim Angriff: %d1_Amount%%</German>
+		<Italian>[ICON_BULLET]Probabilità di ritirata in attacco: %d1_Amount%%</Italian>
+		<Spanish>[ICON_BULLET]Probabilidad de retirarse en ataque: %d1_Amount%%</Spanish>
+		<Russian>[ICON_BULLET]Шанс отступить при атаке: %d1_Amount%%</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY</Tag>
-		<English>[ICON_BULLET]Can withdraw from combat (%d1_Amount%% chance)</English>
-		<French>[ICON_BULLET]Peut rompre le combat (%d1_Amount%% de chance)</French>
-		<German>[ICON_BULLET]Kann im Kampf den Rückzug antreten (Wahrscheinlichkeit: %d1_Amount%%)</German>
-		<Italian>[ICON_BULLET]Può ritirarsi dal combattimento (%d1_Amount%% di probabilità)</Italian>
-		<Spanish>[ICON_BULLET]Puede retirarse del combate (probabilidad del %d1_Amount%%)</Spanish>
-		<Russian>[ICON_BULLET]Может выйти из боя (шанс %d1_Amount%%)</Russian>
+		<English>[ICON_BULLET]Can withdraw from combat on attack (%d1_Amount%% chance)</English>
+		<French>[ICON_BULLET]Peut rompre le combat en attaque(%d1_Amount%% de chance)</French>
+		<German>[ICON_BULLET]Kann im Angriff den Rückzug antreten (Wahrscheinlichkeit: %d1_Amount%%)</German>
+		<Italian>[ICON_BULLET]Può ritirarsi dal combattimento in attacco(%d1_Amount%% di probabilità)</Italian>
+		<Spanish>[ICON_BULLET]Puede retirarse del combate en ataque(probabilidad del %d1_Amount%%)</Spanish>
+		<Russian>[ICON_BULLET]Может выйти из боя при атаке (шанс %d1_Amount%%)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MOD_VS_TYPE</Tag>
@@ -1241,12 +1242,13 @@
 		<Russian>Выход</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_PEDIA_SCREEN_LOAD_GROUP</Tag>
+		<Tag>TXT_KEY_PEDIA_SCREEN_LOAD_GROUP</Tag> <!-- setting up trade routes -->
 		<English>Load</English>
 		<French>Charger</French>
 		<German>Laden</German>
 		<Italian>Carico</Italian>
 		<Spanish>Carga</Spanish>
+		<Russian>Загрузить</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_SCREEN_BACK</Tag>
@@ -2200,12 +2202,13 @@
 		<Spanish>Pitboss para Civilization IV - Firaxis Games</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_PITBOSS_SAVE</Tag>
+		<Tag>TXT_KEY_PITBOSS_SAVE</Tag> <!-- setting up trade routes -->
 		<English>Save</English>
 		<French>Sauver</French>
 		<German>Speichern</German>
 		<Italian>Salva</Italian>
 		<Spanish>Guardar</Spanish>
+		<Russian>Сохранить</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SAVE_TEXT</Tag>
@@ -3005,7 +3008,7 @@
 		<German>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] für eine Kriegserklärung)</German>
 		<Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per dichiarare guerra)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para declarar la guerra)</Spanish>
-		<Russian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для объявления войны)</Russian>
+		<Russian>([COLOR:140:255:40:255]ALT[COLOR_REVERT] для объявления войны)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WARNING</Tag>
@@ -3130,12 +3133,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WINS_VICTORY</Tag>
+		<!-- WARNING: the exe crashes when displaying victory if this line has non-Latin characters, such as Russian. No known workaround known at this time --> 
 		<English>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] wins by %s2_VctryName Victory!!!!</English>
 		<French>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] remporte une victoire de type : %s2_VctryName !</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] trägt den Sieg in der Kategorie %s2_VctryName davon!!!!</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] conquista una vittoria %s2_VctryName!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha obtenido una victoria %s2_VctryName</Spanish>
-		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] одерживает победу в категории : %s2_VctryName!!!!</Russian>
+		<!--<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] одерживает победу в категории : %s2_VctryName!!!!</Russian>-->
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_OUT_OF_SYNC</Tag>
@@ -3309,6 +3313,7 @@
 		<German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] übernimmt die Staatsform [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT]!</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] adotta la forma di governo [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT]!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha adoptado [NUM2:el:la:los:las] [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT].</Spanish>
+		<Russian>>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] принимает [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT]!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ENEMY_TROOPS_SPOTTED</Tag>
@@ -4123,7 +4128,7 @@
 		<German>([COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] zur Auswahl aller %s1-Einheiten)</German>
 		<Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per selezionare %s1)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para seleccionar [NUM1:todos los:todas las:todos los:todas las] %s1:2)</Spanish>
-		<Russian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] чтобы выделить все %s1)</Russian>
+		<Russian>([COLOR:140:255:40:255]CTRL[COLOR_REVERT] чтобы выделить все %s1)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ALT_SELECT</Tag>
@@ -4132,7 +4137,7 @@
 		<German>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] zur Auswahl aller Einheiten)</German>
 		<Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per selezionare tutte le unità)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para seleccionar todas las unidades)</Spanish>
-		<Russian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] для выбора всех юнитов)</Russian>
+		<Russian>([COLOR:140:255:40:255]ALT[COLOR_REVERT] для выбора всех юнитов)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CTRL_SHIFT</Tag>
@@ -4315,6 +4320,7 @@
 		<German>Wachstum : %d1 / %d2[ICON_FOOD]</German>
 		<Italian>Crescita : %d1 / %d2[ICON_FOOD]</Italian>
 		<Spanish>Crecimiento : %d1 / %d2[ICON_FOOD]</Spanish>
+		<Russian>Еды для роста : %d1 / %d2[ICON_FOOD]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_BAR_FOOD_GROWTH</Tag>
@@ -4357,7 +4363,7 @@
 		<German>[COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] per [COLOR:140:255:40:255]&lt; Linksklick &gt;[COLOR_REVERT] auswählen</German>
 		<Italian>[COLOR:140:255:40:255]&lt;Clicca con il tasto sinistro &gt;[COLOR_REVERT] [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Italian>
 		<Spanish>Hacer [COLOR:140:255:40:255]&lt;clic izquierdo &gt;[COLOR_REVERT] para seleccionar [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Spanish>
-		<Russian>[COLOR:140:255:40:255]&lt; Left-Click &gt;[COLOR_REVERT] чтобы выбрать [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Russian>
+		<Russian>[COLOR:140:255:40:255]Клик ЛКМ[COLOR_REVERT] чтобы выбрать [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_FOOD_THRESHOLD</Tag>
@@ -4651,6 +4657,7 @@
 		<German>%s1 hat den Sieg in der Kategorie %s2 erzielt!</German>
 		<Italian>%s1 ha ottenuto una vittoria %s2!</Italian>
 		<Spanish>¡%s1 ha conseguido una victoria %s2!</Spanish>
+		<Russian>%s1 одержал победу - %s2!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_MOVEMENT_COST</Tag>
@@ -5155,6 +5162,7 @@
 		<German>Ihr seid dran, %s1_leader!</German>
 		<Italian>%s1_leader, è il tuo turno!</Italian>
 		<Spanish>¡Es vuestro turno, %s1_leader!</Spanish>
+		<Russian>%s1_leader, Ваш ход!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SHOW_ALL_PLAYERS</Tag>
@@ -9878,7 +9886,7 @@
 		<German>[ICON_BULLET]Die Modernisierung [COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] wird errichtet</German>
 		<Italian>[ICON_BULLET][NUM1:È stato costruito un:È stata costruita una] [COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Se [NUM1:ha construido un:ha construido una:han construido unos:han construido unas] [COLOR_HIGHLIGHT_TEXT]%s1:1_improvement[COLOR_REVERT]</Spanish>
-		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] построено</Russian>
+		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] построен(а)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_IMPROVEMENT_REMOVE</Tag>
@@ -9887,7 +9895,7 @@
 		<German>[ICON_BULLET]Die Modernisierung %s1_improvement wird zerstört</German>
 		<Italian>[ICON_BULLET]%s1_improvement [NUM1:distrutto:distrutta] </Italian>
 		<Spanish>[ICON_BULLET][NUM1:El:La:Los:Las] %s1:1_improvement [NUM1:ha quedado destruido:ha quedado destruida:han quedado destruidos:han quedado destruidas]</Spanish>
-		<Russian>[ICON_BULLET]The %s1_improvement is destroyed</Russian>
+		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] уничтожен(а)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ROUTE_GROWTH</Tag>
@@ -10031,6 +10039,7 @@
 		<German>Feindliche Militäreinheiten im eigenen Territorium</German>
 		<Italian>Nemici nel territorio</Italian>
 		<Spanish>Enemigos en territorio</Spanish>
+		<Russian>Вражеские войска на нашей территории</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HIDDEN_NATIONALITY</Tag>
@@ -10147,7 +10156,7 @@
 		<German>[ICON_BULLET]Zusätzlich %s2_txt_key_event_delay_below %d1%% Wahrscheinlichkeit für :</German>
 		<Italian>[ICON_BULLET]Inoltre %s2_txt_key_event_delay_below, %d1%% di probabilità che :</Italian>
 		<Spanish>[ICON_BULLET]Además%s2_txt_key_event_delay_below, %d1%% de probabilidad de :</Spanish>
-		<Russian>[ICON_BULLET]Кроме того%s2_txt_key_event_delay_below, %d1%% шанс для :</Russian>
+		<Russian>[ICON_BULLET]Кроме того %s2_txt_key_event_delay_below, %d1%% шанс для :</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DELAY</Tag>
@@ -10156,7 +10165,7 @@
 		<German>[ICON_BULLET]Zusätzlich %s1_txt_key_event_delay_below :</German>
 		<Italian>[ICON_BULLET]Inoltre %s1_txt_key_event_delay_below :</Italian>
 		<Spanish>[ICON_BULLET]Además%s1_txt_key_event_delay_below :</Spanish>
-		<Russian>[ICON_BULLET]Кроме того%s1_txt_key_event_delay_below :</Russian>
+		<Russian>[ICON_BULLET]Кроме того %s1_txt_key_event_delay_below :</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DELAY_TURNS</Tag>
@@ -10306,6 +10315,7 @@
 		<German>[COLOR_GREEN]Befreien[COLOR_REVERT]</German>
 		<Italian>[COLOR_GREEN]Libera[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_GREEN]Liberar[COLOR_REVERT]</Spanish>
+		<Russian>[COLOR_GREEN]освободить[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_LIBERATE</Tag>
@@ -10314,6 +10324,7 @@
 		<German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] befreien (Geschenk an [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</German>
 		<Italian>Libera [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (regalo a [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</Italian>
 		<Spanish>Liberar [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (regalo para [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</Spanish>
+		<Russian>Освободить город [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (передать [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CITY_LIBERATED</Tag>
@@ -10322,6 +10333,7 @@
 		<German>In einer großzügigen Geste hat [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] die Siedlung [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] befreit, die sich damit jetzt wieder unter der [COLOR_HIGHLIGHT_TEXT]%s3:2_civ_adjective[COLOR_REVERT] Herrschaft befindet.</German>
 		<Italian>In un momento di generosità, [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] ha liberato [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT], che è passata sotto il controllo [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT].</Italian>
 		<Spanish>En un gracioso acto de generosidad, [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] ha liberado [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT], que ha pasado a control [COLOR_HIGHLIGHT_TEXT]%s3:1_civ_adjective[COLOR_REVERT].</Spanish>
+		<Russian>Проявив неслыханную щедрость, [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] освободил окупированный город[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT], передав его под контроль [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_LIBERATION_DEMAND</Tag>
@@ -10330,6 +10342,7 @@
 		<German>Milord, die Bewohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] bitten in aller Form darum, wieder Teil des Reiches von [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT] zu werden. Eure Erlaubnis würde [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] hoch erfreuen.</German>
 		<Italian>Signore, i cittadini di [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] a buon diritto chiedono di unirsi a [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Concedendoglielo, [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] ci guarderebbe con favore.</Italian>
 		<Spanish>Excelencia, los ciudadanos de [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] piden legítimamente unirse al [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Permitírselo nos predispondría favorablemente a ojos de [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT].</Spanish>
+		<Russian>Милорд, жители города [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] хотят стать поддаными [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Если мы позволим им это сделать, [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] будет очень доволен нами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILOPEDIA_STRATEGY</Tag>
@@ -10582,7 +10595,7 @@
 		<German>Der unerschrockene [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] gilt den in [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Tapferkeit und Manneszucht. Landauf und landab eilt ihm der Ruf voraus, ein wahrhaft großer Krieger und General zu sein.</German>
 		<Italian>%s1_GPName è nato a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!</Italian>
 		<Spanish>%s1_GPName ha nacido en [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
-		<Russian>Во всех колониях [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] знают, как великого воина и полководца. Гарнизон [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] рад прибытию этого прославленного генерала.</Russian>
+		<Russian>Во всех колониях [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] известен, как великий воин и полководец. Гарнизон города [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] рад прибытию этого прославленного военачальника.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_GP_BORN_SOMEWHERE</Tag>

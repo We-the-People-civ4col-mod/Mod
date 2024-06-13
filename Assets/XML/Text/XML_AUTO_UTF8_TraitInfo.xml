@@ -20,7 +20,7 @@
 		<German>Erfahrener Admiral</German>
 		<Italian>Experienced Admiral</Italian>
 		<Spanish>Experienced Admiral</Spanish>
-		<Russian>Опытный Адмирал</Russian>
+		<Russian>Опытный Адмирал (от лидера)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_AGRICULTURAL</Tag>
@@ -433,7 +433,7 @@
 		<German>Erfahrener General</German>
 		<Italian>Esperto Generale</Italian>
 		<Spanish>Experimentado General</Spanish>
-		<Russian>Опытный Генерал</Russian>
+		<Russian>Опытный Генерал (от лидера)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GEORGE_FOX</Tag>

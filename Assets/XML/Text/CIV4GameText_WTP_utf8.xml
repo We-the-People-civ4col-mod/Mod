@@ -146,21 +146,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NO_MORE_SETTLER</Tag>
-		<English>Since [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has no more settlements and no more settlers, His Majesty has decided to equip some colonists in Europe as settlers. Of course, this comes with a tax increase.</English>
+		<English>Since [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has no more settlements and no more settlers, His Majesty has decided to equip some colonists in Europe as settlers. Of course this comes with a tax increase.</English>
 		<French>Puisque [COLOR_SELECTED_TEXT]%s1_player[COLOR_REVERT] n'a ni colonies ni colons fondateurs, Sa Majesté a eu le plaisir d'équiper des colons en Europe pour fonder une nouvelle ville. Bien sûr, ceci vient avec une hausse des taxes.</French>
 		<German>Da [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] keine weiteren Siedlungen und auch keine Siedler mehr hat, hat Seine Majestät entschieden, in Europe einige Kolonisten als Siedler auszurüsten. Das ist natürlich mit einer Steuererhöhung verbunden.</German>
 		<Russian>Поскольку у [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] больше нет ни поселений, ни поселенцев, Его Величество решил сделать некоторых колонистов в Европе поселенцами. Конечно, это приведет к повышению налоговой ставки.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_FAIL</Tag>
-		<English>Milord, your missionary failed to establish a mission in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Though the Natives might have killed him for insulting their gods, instead they beat him badly leaving him completely broken and disillusioned.</English>
+		<English>Milord, your missionary failed to establish a mission in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. The Natives almost killed him for insulting their gods. They beat him badly, leaving him broken and disillusioned.</English>
 		<French>Sire, notre missionnaire a échoué dans sa mission à [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Même si les indigènes auraient pu le tuer pour avoir insulté leurs dieux, ils se sont contentés de le rosser si violemment qu'il en est ressorti brisé et désabusé.</French>
 		<German>Milord, Euer Missionar ist dabei gescheitert, die Ureinwohner in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zu missionieren. Trotz der Beleidigung ihrer Götter haben die Ureinwohner Euren Missionar nicht getötet, sondern sie haben ihn nur schwer verprügelt, so daß er nun komplett gebrochen und desillusioniert ist.</German>
 		<Russian>Милорд, нашему миссионеру не удалось установить миссию в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Хотя индейцы и могли убить его за оскорбление их богов, вместо этого они, сильно избив его, выбросили за пределы деревни полностью сломленным и разочарованным.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FAILED_TRADER_SPAWNED_FROM_FAIL</Tag>
-		<English>Milord, your trader failed to establish a trade post in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. He gave alcohol to the tribal men and they got violent when becoming drunk. Luckily they did not kill him. But they beat him up and stole all his goods. But he is now broken and traumatised.</English>
+		<English>Milord, your trader failed to establish a trading post in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. He gave too much alcohol to the Natives. Some of them got drunk, and violent. He's lucky they didn't kill him.[NEWLINE][NEWLINE]They did beat him up and then stole all his goods. It's no surprise he's now broken and traumatised.</English>
 		<French>Sire, notre marchand a échoué à établir un poste commercial à [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Il a donné de l'alcool aux indigènes, et l'ivresse les a rendus violent. Heureusement, ils ne l'ont pas tué; mais ils l'ont battu et dépouillé de tous ses biens. Cette mésaventure l'a ruiné financièrement et moralement.</French>
 		<German>Milord, Euer Ureinwohnerhändler ist dabei gescheitert, einen Handelsposten in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zu errichten. Er gab den Männdern des Stammes Alkohol. Als sie betrunken waren wurden sie gewalttätig. Glücklicherweise haben sie ihn nicht getötet. Jedoch schlugen sie ihn und stahlen alle seine Güter. Er ist nun mittellos und traumatisiert.</German>
 		<Russian>Милорд, нашему торговцу не удалось открыть торговый пост в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Он давал алкоголь мужчинам племени и когда они напивались, становились ужасно буйными. К счастью, они не убили его, но избили, отобрали все имущество и выгнали из деревни. Мы должны помочь ему восстановиться телесно и духовно.</Russian>
@@ -238,5 +238,17 @@
 		<English>Your scout has finished exploring and is awaiting new orders!</English>
 		<French>Votre éclaireur a fini d'explorer et attend vos ordres!</French>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Милорд, наш разведчик закончил исследовать местность и ждёт дальнейших приказов![COLOR_REVERT]</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALLOW_DANGEROUS_PATH</Tag>
+		<English>Allow unit to pathfind through plots that inflict damage</English>
+		<German>Einen schnellen Weg wählen, der durch Gelände führen kann, welches auch Schaden an der Einheit verursachen kann.</German>
+		<Russian>Разрешить юниту пересекать клетки, наносящие урон</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DISALLOW_DANGEROUS_PATH</Tag>
+		<English>Prevent unit from pathfinding through plots that inflict damage</English>
+		<German>Einen Weg wählen, der vielleicht langsamer ist, aber durch Gelände führt, welches keinen Schaden verursacht.</German>
+		<Russian>Запретить юниту пересекать клетки, наносящие урон</Russian>
 	</TEXT>
 </Civ4GameText>

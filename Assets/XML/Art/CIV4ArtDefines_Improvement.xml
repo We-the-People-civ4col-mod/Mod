@@ -333,7 +333,7 @@
 		<ImprovementArtInfo>
 			<Type>ART_DEF_IMPROVEMENT_LARGE_FORT</Type>
 			<bExtraAnimations>0</bExtraAnimations>
-			<fScale>0.9</fScale>
+			<fScale>0.7</fScale>
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/forts/fortress.nif</NIF>
 			<KFM/>
@@ -368,6 +368,15 @@
 		</ImprovementArtInfo>
 		<ImprovementArtInfo>
 			<Type>ART_DEF_IMPROVEMENT_FISHING_NETS</Type>
+			<bExtraAnimations>0</bExtraAnimations>
+			<fScale>1.4</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/nets/FishingBoat.nif</NIF>
+			<KFM>Art/Structures/Improvements/nets/FishingBoat.kfm</KFM>
+			<Button>,Art/colonization_atlas_buildings.dds,5,15</Button>
+		</ImprovementArtInfo>
+		<ImprovementArtInfo>
+			<Type>ART_DEF_IMPROVEMENT_FISHING_NETS_RIVER</Type>
 			<bExtraAnimations>0</bExtraAnimations>
 			<fScale>1.4</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>

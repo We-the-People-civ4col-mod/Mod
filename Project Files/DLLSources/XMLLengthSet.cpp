@@ -3,6 +3,7 @@
 
 #include"xmlFiles.h"
 #include "StartupErrorChecking.h"
+#include "ThreadOverview.h"
 
 // small class where the constructor reads XML lengths
 // this way xml reading can take place prior to calling the CvGlobals constructor
@@ -70,6 +71,7 @@ loadXML MyXMLloader;
 
 // CvGlobals constructor needs to run after the loadXML as it requires the global xml lengths to be set up
 CvGlobals gGlobals;
+ThreadOverviewClass ThreadOverview;
 
 void setupVARINFO();
 

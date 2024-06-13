@@ -193,7 +193,7 @@ class CvPediaCivilization:
 		for iI in range(gc.getNumCivilizationInfos()):
 			# < JAnimals Mod Start 1/1 > AND # R&R, ray, Church
 			# if (not gc.getCivilizationInfo(listSorted[iI][1]).isEurope() and not listSorted[iI][1] == gc.getInfoTypeForString("CIVILIZATION_BARBARIAN") and not gc.getCivilizationInfo(listSorted[iI][1]).isGraphicalOnly()):
-			if (not gc.getCivilizationInfo(listSorted[iI][1]).isEurope() and not listSorted[iI][1] == gc.getInfoTypeForString("CIVILIZATION_BARBARIAN") and not listSorted[iI][1] == gc.getInfoTypeForString("CIVILIZATION_CHURCH") and not gc.getCivilizationInfo(listSorted[iI][1]).isGraphicalOnly()):
+			if (not gc.getCivilizationInfo(listSorted[iI][1]).isEurope() and not listSorted[iI][1] == CivilizationTypes.CIVILIZATION_BARBARIAN and not listSorted[iI][1] == CivilizationTypes.CIVILIZATION_CHURCH and not gc.getCivilizationInfo(listSorted[iI][1]).isGraphicalOnly()):
 				if (not GlobalDefines.CIVILOPEDIA_SHOW_ACTIVE_CIVS_ONLY or not gc.getGame().isFinalInitialized() or gc.getGame().isCivEverActive(listSorted[iI][1])):
 					if bRedraw:
 						screen.appendListBoxStringNoUpdate(self.top.LIST_ID, listSorted[iI][0], WidgetTypes.WIDGET_PEDIA_JUMP_TO_CIV, listSorted[iI][1], 0, CvUtil.FONT_LEFT_JUSTIFY )
