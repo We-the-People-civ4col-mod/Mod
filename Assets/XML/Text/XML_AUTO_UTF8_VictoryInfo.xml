@@ -34,7 +34,7 @@
 		<German>Leitet die Industrielle Revolution ein (Produktion : 10.000 pro Runde)</German>
 		<Italian>Iniziare la rivoluzione industriale (tasso di produzione per turno)</Italian>
 		<Spanish>Iniciar la revolución industrial (tasa de producción por turno)</Spanish>
-		<Russian>Начать промышленную революцию (производительность 10'000 за ход)</Russian>
+		<Russian>Начать промышленную революцию (производительность 10'000 продукции за ход)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_REVOLUTION</Tag>
