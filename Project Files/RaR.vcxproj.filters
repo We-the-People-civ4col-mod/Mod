@@ -511,6 +511,9 @@
     <ClCompile Include="DLLSources\TxtReader.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\AIStrengthMemoryMap.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -982,6 +985,9 @@
       <Filter>Classes\Threads</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\TxtReader.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\AIStrengthMemoryMap.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
   </ItemGroup>
