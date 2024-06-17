@@ -30,8 +30,10 @@ public:
 	bool AI_update();
 
 	int AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy) const;
-	CvUnit* AI_getBestGroupAttacker(const CvPlot* pPlot, bool bPotentialEnemy, int& iUnitOdds, bool bForce = false, bool bNoBlitz = false) const;
-	CvUnit* AI_getBestGroupSacrifice(const CvPlot* pPlot, bool bPotentialEnemy, bool bForce = false, bool bNoBlitz = false) const;
+	int AI_getWeightedOdds(CvPlot const* pPlot, bool bPotentialEnemy = false); // K-Mod
+	// advc.003u: These two had returned CvUnit*
+	CvUnitAI* AI_getBestGroupAttacker(const CvPlot* pPlot, bool bPotentialEnemy, int& iUnitOdds, bool bForce = false, bool bNoBlitz = false) const;
+	CvUnitAI* AI_getBestGroupSacrifice(const CvPlot* pPlot, bool bPotentialEnemy, bool bForce = false, bool bNoBlitz = false) const;
 	int AI_compareStacks(const CvPlot* pPlot, bool bPotentialEnemy, bool bCheckCanAttack = false, bool bCheckCanMove = false) const;
 	int AI_sumStrength(const CvPlot* pAttackedPlot = NULL, DomainTypes eDomainType = NO_DOMAIN, bool bCheckCanAttack = false, bool bCheckCanMove = false) const;
 	void AI_queueGroupAttack(int iX, int iY);
@@ -39,14 +41,20 @@ public:
 	bool AI_isGroupAttack();
 
 	bool AI_isControlled() const;
-	bool AI_isDeclareWar(const CvPlot* pPlot = NULL);
+	bool AI_isDeclareWar(const CvPlot* pPlot = NULL) { return AI_isDeclareWarInternal(pPlot); }
+	bool AI_isDeclareWarInternal(const CvPlot* pPlot = NULL) const;
 
-	CvPlot* AI_getMissionAIPlot();
+	CvPlot* AI_getMissionAIPlot() { return AI_getMissionAIPlotInternal(); }
+	bool AI_isForceSeparate() { return AI_isForceSeparateInternal(); }
 
-	bool AI_isForceSeparate();
+	CvPlot* AI_getMissionAIPlotInternal() const;
+	bool AI_isForceSeparateInternal() const;
+	
 	void AI_makeForceSeparate();
 
-	MissionAITypes AI_getMissionAIType();
+	MissionAITypes AI_getMissionAIType() { return AI_getMissionAITypeInternal(); }
+	MissionAITypes AI_getMissionAITypeInternal() const;
+
 	void AI_setMissionAI(MissionAITypes eNewMissionAI, CvPlot* pNewPlot, CvUnit* pNewUnit);
 	CvUnit* AI_ejectBestDefender(CvPlot* pTargetPlot);
 
@@ -68,6 +76,10 @@ public:
 
 	bool AI_isControlled() { return AI_isControlledInternal(); }
 	bool AI_isControlledInternal() const { return (!isHuman() || isAutomated()); }
+
+	// <advc.003u> Counterparts to CvSelectionGroup::getHeadUnit
+	CvUnitAI const* AI_getHeadUnit() const;
+	CvUnitAI* AI_getHeadUnit(); // </advc.003u>
 
 	enum UnloadMode
 	{

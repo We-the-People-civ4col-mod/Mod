@@ -8043,6 +8043,15 @@ void CvUnit::promote(PromotionTypes ePromotion, int iLeaderUnitId)
 
 	gDLL->getEventReporterIFace()->unitPromoted(this, ePromotion);
 }
+/*  <advc> Extracted from 'promote' above.
+	Tbd.: Have any AI code that assumes HP from promotions call this.
+	Also: Should set the percentage through XML. */
+int CvUnit::promotionHeal(PromotionTypes ePromotion) const
+{
+	int iHealPercent = (ePromotion != NO_PROMOTION && GC.getPromotionInfo(ePromotion).isLeader() ?
+		0 : 50);
+	return (getDamage() * iHealPercent) / 100;
+} // </advc>
 
 bool CvUnit::lead(int iUnitId)
 {
@@ -9517,14 +9526,17 @@ int CvUnit::currFirepower(const CvPlot* pPlot, const CvUnit* pAttacker) const
 // this nomalizes str by firepower, useful for quick odds calcs
 // the effect is that a damaged unit will have an effective str lowered by firepower/maxFirepower
 // doing the algebra, this means we mulitply by 1/2(1 + currHP)/maxHP = (maxHP + currHP) / (2 * maxHP)
-int CvUnit::currEffectiveStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDetails* pCombatDetails) const
+int CvUnit::currEffectiveStr(CvPlot const* pPlot, CvUnit const* pAttacker,
+	CombatDetails* pCombatDetails,
+	int iCurrentHP) const // advc.139
 {
-	int currStr = currCombatStr(pPlot, pAttacker, pCombatDetails);
+	int iCurrStr = currCombatStr(pPlot, pAttacker, pCombatDetails);
 
-	currStr *= (maxHitPoints() + currHitPoints());
-	currStr /= (2 * maxHitPoints());
+	iCurrStr *= (maxHitPoints() + /* advc.139: */ (iCurrentHP > 0 ? iCurrentHP :
+		currHitPoints()));
+	iCurrStr /= (2 * maxHitPoints());
 
-	return currStr;
+	return iCurrStr;
 }
 
 float CvUnit::maxCombatStrFloat(const CvPlot* pPlot, const CvUnit* pAttacker) const
@@ -14209,6 +14221,13 @@ bool CvUnit::isEnemy(TeamTypes eTeam, const CvPlot* pPlot) const
 	return (::atWar(getCombatTeam(eTeam, pPlot), eTeam));
 }
 
+// advc.opt: Separate function for potentially unowned plot
+bool CvUnit::isEnemy(CvPlot const& kPlot) const
+{
+	TeamTypes const ePlotTeam = kPlot.getTeam();
+	return (ePlotTeam != NO_TEAM && isEnemy(ePlotTeam, &kPlot));
+}
+
 bool CvUnit::isPotentialEnemy(TeamTypes eTeam, const CvPlot* pPlot) const
 {
 	if (NULL == pPlot)
@@ -16822,4 +16841,14 @@ void CvUnit::changeIdentity(UnitTypes eUnit)
 bool CvUnit::isTempUnit() const
 {
 	return GET_PLAYER(getOwner()).isTempUnit(this);
+}
+
+// advc: Wrapper for brevity
+void CvUnit::pushGroupMoveTo(CvPlot const& kTo, MovementFlags eFlags,
+	bool bAppend, bool bManual, MissionAITypes eMissionAI,
+	CvPlot* pMissionAIPlot, CvUnit* pMissionAIUnit)
+{
+	FAssert(!atPlot(&kTo));
+	getGroup()->pushMission(MISSION_MOVE_TO, kTo.getX(), kTo.getY(), eFlags,
+		bAppend, bManual, eMissionAI, pMissionAIPlot, pMissionAIUnit);
 }

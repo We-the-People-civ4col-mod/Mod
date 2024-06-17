@@ -306,6 +306,7 @@ bool PUF_isFighting( const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_isUnitType( const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_isDomainType( const CvUnit* pUnit, int iData1, int iData2 = -1);
 bool PUF_isUnitAIType( const CvUnit* pUnit, int iData1, int iData2 = -1);
+bool PUF_isMissionAIType(CvUnit const* pUnit, int iMissionAI, int iDummy = -1); // K-Mod
 // R&R, ray, Natives raiding party - START
 bool PUF_isUnitAIStateType( const CvUnit* pUnit, int iData1, int iData2 = -1);
 // R&R, ray, Natives raiding party - END

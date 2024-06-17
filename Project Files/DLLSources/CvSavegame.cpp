@@ -225,7 +225,7 @@ void CvSavegameReader::Read(SavegameVariableTypes& variable)
 
 	unsigned int padding_prefix = 0;
 
-	if (isDebug())
+	if (isDebug())	
 	{
 		Read(padding_prefix);
 	}

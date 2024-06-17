@@ -676,7 +676,7 @@ void CvUnitAI::AI_promote()
 }
 
 
-int CvUnitAI::AI_groupFirstVal()
+int CvUnitAI::AI_groupFirstVal() const
 {
 	switch (AI_getUnitAIType())
 	{
@@ -19421,3 +19421,547 @@ void CvUnitAI::AI_unloadUnits(Port port)
 		}
 	}
 }
+
+/*  advc.159: Like CvUnit::currEffectiveStr, but takes into account first strikes,
+	collateral damage and that combat odds increase superlinearly with combat strength.
+	The scale is arbitrary, i.e. one should only compare the returned values with each other. */
+int CvUnitAI::AI_currEffectiveStr(CvPlot const* pPlot, CvUnit const* pOther,
+	bool bCountCollateral, int iBaseCollateral, bool bCheckCanAttack,
+	int iCurrentHP, bool bAssumePromotion) const // advc.139
+{
+	PROFILE_FUNC(); // Called frequently but not extremely so; fine as it is.
+	int iCombatStrengthPercent = currEffectiveStr(pPlot, pOther, NULL, iCurrentHP);
+	FAssertMsg(iCombatStrengthPercent > 0, "Non-combat unit?");
+
+	// WTP: Not supported
+#if 0
+	/*  <K-Mod> (Moved from CvSelectionGroupAI::AI_sumStrength. Some of the code
+		had been duplicated in CvPlayerAI::AI_localDefenceStrength, AI_localAttackStrength). */
+		/*  first strikes are not counted in currEffectiveStr.
+			actually, the value of first strikes is non-trivial to calculate...
+			but we should do /something/ to take them into account. */
+			/*  note. Most other parts of the code use 5% per first strike, but I figure
+				we should go lower because this unit may get clobbered by collateral damage
+				before fighting. */
+				// (bCountCollateral means that we're the ones dealing collateral damage)
+	int const iFirstStrikeMultiplier = (bCountCollateral ? 5 : 4);
+	iCombatStrengthPercent *= 100 + iFirstStrikeMultiplier * firstStrikes() +
+		(iFirstStrikeMultiplier / 2) * chanceFirstStrikes()
+		+ (bAssumePromotion ? 7 : 0); // advc.139
+	iCombatStrengthPercent /= 100;
+	if (bCountCollateral && collateralDamage() > 0)
+	{
+		int iPossibleTargets = collateralDamageMaxUnits();
+		if (bCheckCanAttack && pPlot != NULL && pPlot->isVisible(getTeam()))
+		{
+			iPossibleTargets = std::min(iPossibleTargets,
+				pPlot->getNumVisibleEnemyDefenders(this) - 1);
+		}
+		// If !bCheckCanAttack, then lets not assume kPlot won't get more units on it.
+		// advc: But let's put some cap on the number of targets
+		else iPossibleTargets = std::min(10, iPossibleTargets);
+		if (iPossibleTargets > 0)
+		{
+			/*	collateral damage is not trivial to calculate. This estimate is pretty rough.
+				(Note: collateralDamage() and iBaseCollateral both include factors of 100.) */
+			iCombatStrengthPercent += baseCombatStr() * iBaseCollateral *
+				collateralDamage() * iPossibleTargets / 10000;
+		}
+	} // </K-Mod>
+#endif
+
+	FAssert(iCombatStrengthPercent < 100000); // A conservative guard against overflow
+	/*  Generally, there's a good chance that a strong unit can kill a weak unit
+		and then heal ("defeat in detail"). However, this function is used for
+		evaluating imminent stack-on-stack combat. When we already know that
+		a stack of stronger units is facing a larger stack of weaker units
+		we need to assume a high chance of having to fight multiple enemies in a row. */
+#if 0
+	static scaled const rExponent = scaled::max(1,
+		fixp(3 / 4.) * per100(GC.getDefineINT(CvGlobals::POWER_CORRECTION)));
+	static scaled const rNormalizationFactor = (rExponent < fixp(1.05) ? 1 :
+		// Pretty arbitrary; only need to weigh rounding errors against the danger of overflow.
+		25000 / scaled(10000).pow(rExponent));
+	/*  Make the AI overestimate weak units a little bit on the low and medium difficulty settings.
+		(Not static b/c difficulty can change through load/ new game.) */
+	scaled rExponentAdjusted = rExponent - scaled(std::max(0,
+		50 - GC.getInfo(GC.getGame().getHandicapType()).getDifficulty()), 250);
+	int iR = std::min(25000, // Guard against overflow problems for caller
+		(scaled(iCombatStrengthPercent).pow(rExponentAdjusted) *
+			rNormalizationFactor).round());
+	return std::max(1, iR); // Don't round down to 0
+#endif
+	return iCombatStrengthPercent;
+}
+
+/*	advc.003u: Extracted from K-Mod's AI_getWeightedOdds, which I've moved to CvSelectionGroupAI.
+	Adjusts the combat odds based on opportunity. */
+int CvUnitAI::AI_opportuneOdds(int iActualOdds, CvUnit const& kDefender) const
+{
+	int const iOdds = iActualOdds; // abbreviate
+	int r = iOdds;
+#if 0
+	// WTP: No direct equivalent
+	// adjust the values based on the relative production cost of the units.
+	{
+		int iOurCost = getUnitInfo().getProductionCost();
+		int iTheirCost = kDefender.getUnitInfo().getProductionCost();
+		if (iOurCost > 0 && iTheirCost > 0 && iOurCost != iTheirCost)
+		{
+			//r += iOdds * (100 - iOdds) * 2 * iTheirCost / (iOurCost + iTheirCost) / 100;
+			//r -= iOdds * (100 - iOdds) * 2 * iOurCost / (iOurCost + iTheirCost) / 100;
+			int x = iOdds * (100 - iOdds) * 2 / (iOurCost + iTheirCost + 20);
+			r += x * (iTheirCost - iOurCost) / 100;
+		}
+	}
+	// similarly, adjust based on the LFB value (slightly diluted)
+	{
+		int iDilution = GC.getDefineINT(CvGlobals::LFB_BASEDONEXPERIENCE) +
+			GC.getDefineINT(CvGlobals::LFB_BASEDONHEALER) +
+			intdiv::round(10 * GC.getDefineINT(CvGlobals::LFB_BASEDONEXPERIENCE) *
+				(GC.getGame().getCurrentEra() - GC.getGame().getStartEra() + 1),
+				std::max(1, GC.getNumEraInfos() - GC.getGame().getStartEra()));
+		int iOurValue = LFBgetRelativeValueRating() + iDilution;
+		int iTheirValue = kDefender.LFBgetRelativeValueRating() + iDilution;
+
+		int x = iOdds * (100 - iOdds) * 2 / std::max(1, iOurValue + iTheirValue);
+		r += x * (iTheirValue - iOurValue) / 100;
+	}
+#endif
+	CvPlot const& kDefenderPlot = *kDefender.plot();
+
+	// adjust down if the enemy is on a defensive tile - we'd prefer to attack them on open ground.
+	if (!kDefender.noDefensiveBonus())
+	{
+		r -= (100 - iOdds) * kDefenderPlot.defenseModifier(kDefender.getTeam(), false/*,
+			getTeam()*/) // advc.012 WTP: Non-owners get the full defensive bonus
+			/ (getDomainType() == DOMAIN_SEA ? 100 : 300);
+	}
+
+	// adjust the odds up if the enemy is wounded. We want to attack them now before they heal.
+	r += iOdds * (100 - iOdds) * kDefender.getDamage() / (100 * kDefender.maxHitPoints());
+	// adjust the odds down if our attacker is wounded - but only if healing is viable.
+	if (isHurt() && healRate(&kDefenderPlot) > 10)
+		r -= iOdds * (100 - iOdds) * getDamage() / (100 * maxHitPoints());
+
+	// We're extra keen to take cites when we can...
+	if (kDefenderPlot.isCity() && AI_countEnemyDefenders(kDefenderPlot) == 1)
+		r += (100 - iOdds) / 3;
+
+	// TODO: Adjust for survival odds
+
+	return r;
+}
+
+/*	advc: Renamed from AI_potentialEnemy. Says whether this unit is allowed to
+	attack units owned by eTeam, starting a war if necessary. */
+bool CvUnitAI::AI_mayAttack(TeamTypes eTeam, CvPlot const& kPlot) const
+{
+	PROFILE_FUNC();
+
+	if (isEnemy(eTeam, &kPlot))
+		return true;
+	if (AI_getGroup()->AI_isDeclareWarInternal(&kPlot))
+	{
+		return GET_TEAM(getTeam()).AI_mayAttack(eTeam); // advc
+	}
+	return false;
+}
+
+/*	advc: Replaces CvUnit::potentialWarAction, which did almost the same thing as
+	CvUnitAI::AI_potentialEnemy (see above). I'm including the BtS implementation
+	as a comment. */
+bool CvUnitAI::AI_mayAttack(CvPlot const& kPlot) const
+{
+	if (!kPlot.isOwned())
+		return false;
+	return AI_mayAttack(kPlot.getTeam(), kPlot);
+	// "returns true if unit can initiate a war action with plot (possibly by declaring war)"
+	/*if (!kPlot.isOwned())
+		return false;
+	if (isEnemy(kPlot))
+		return true;
+	if (AI_getGroup()->AI_isDeclareWar(&kPlot) &&
+		GET_TEAM(getTeam()).AI_getWarPlan(kPlot.getTeam()) != NO_WARPLAN)
+	{
+		return true;
+	}
+	return false;*/
+}
+
+/*	advc: Moved from CvUnit b/c this function eventually checks
+	the war plans of the unit owner. Renamed from "isPotentialEnemy".
+	The caller wants to know if this unit can currently be attacked
+	in kPlot by units of eTeam or if it could soon be attacked (war imminent). */
+bool CvUnitAI::AI_isPotentialEnemyOf(TeamTypes eTeam, CvPlot const& kPlot) const
+{
+	#define TEAMID(x) GET_PLAYER(x).getTeam()
+
+	/*	This can be the BARBARIAN_TEAM is this unit isAlwaysHostile.
+		Normally, it's the unit owner. */
+	TeamTypes eCombatTeam = TEAMID(getCombatOwner(eTeam, &kPlot));
+	return GET_TEAM(eCombatTeam).AI_mayAttack(eTeam);
+}
+
+/*	advc: Moved from CvPlot::getNumVisiblePotentialEnemyDefenders.
+	Counts current enemies of this unit and those on whom war is imminent. */
+int CvUnitAI::AI_countEnemyDefenders(CvPlot const& kPlot) const
+{
+	return kPlot.plotCount(PUF_canDefendPotentialEnemy, getOwner(), isAlwaysHostile(&kPlot),
+		NO_PLAYER, NO_TEAM, PUF_isVisible, getOwner());
+}
+// advc.opt: (plotCheck, apart from that, copy-pasted from above)
+bool CvUnitAI::AI_isAnyEnemyDefender(CvPlot const& kPlot) const
+{
+	return (kPlot.plotCheck(PUF_canDefendPotentialEnemy, getOwner(), isAlwaysHostile(&kPlot),
+		NO_PLAYER, NO_TEAM, PUF_isVisible, getOwner()) != NULL);
+}
+
+// <advc.003u>, advc.003s
+CvSelectionGroupAI const* CvUnitAI::AI_getGroup() const
+{
+	return static_cast<const CvSelectionGroupAI*>(getGroup());
+	//return GET_PLAYER(getOwner()).AI_getSelectionGroup(getGroupID());
+}
+
+CvSelectionGroupAI* CvUnitAI::AI_getGroup()
+{
+	return static_cast<CvSelectionGroupAI*>(getGroup());
+	//return GET_PLAYER(getOwner()).AI_getSelectionGroup(getGroupID());
+} // </advc.003u>
+
+// K-Mod.
+/*	bLocal is just to help with the efficiency of this function for short-range checks.
+	It means that we should look only in nearby plots.
+	the default (bLocal == false) is to look at every plot on the map! */
+bool CvUnitAI::AI_defendTerritory(int iThreshold, MovementFlags eFlags,
+	int iMaxPathTurns, bool bLocal)
+{
+	PROFILE_FUNC();
+
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwner());
+
+	CvPlot* pEndTurnPlot = NULL;
+	int iBestValue = 0;
+
+	//for (int iI = 0; iI < GC.getMap().numPlots(); iI++)
+	// I'm going to use a loop equivalent to the above when !bLocal; and a loop in a square around our unit if bLocal.
+	int i = 0;
+	int iRange = bLocal ? AI_searchRange(iMaxPathTurns) : 0;
+	int iPlots = bLocal ? (2 * iRange + 1) * (2 * iRange + 1) : GC.getMap().numPlots();
+	if (bLocal && iPlots >= GC.getMap().numPlots())
+	{
+		bLocal = false;
+		iRange = 0;
+		iPlots = GC.getMap().numPlots();
+		// otherwise it's just silly.
+	}
+	FAssert(!bLocal || iRange > 0);
+	TeamTypes const eTeam = getTeam(); // advc.opt
+	while (i < iPlots)
+	{
+		CvPlot* pLoopPlot = (bLocal
+			? plotXY(getX(), getY(), -iRange + i % (2 * iRange + 1), -iRange + i / (2 * iRange + 1))
+			: GC.getMap().plotByIndex(i));
+		i++; // for next cycle.
+
+		if (pLoopPlot == NULL || pLoopPlot->getTeam() != eTeam ||
+			!AI_plotValid(pLoopPlot) || !pLoopPlot->isVisibleEnemyUnit(this))
+		{
+			continue;
+		}
+		// <advc.033>
+		/*
+		if (isAlwaysHostile(pLoopPlot) && !AI_isAnyPiracyTarget(*pLoopPlot))
+			continue;
+		*/
+		/*  This doesn't guarantee that the best defender will be a PiracyTarget,
+			but at least we're going to attack a unit that is hanging out
+			with a target. */ // </advc.033>
+		int iPathTurns;
+		if (generatePath(pLoopPlot, eFlags, true, &iPathTurns, iMaxPathTurns))
+		{
+			int iOdds = AI_getGroup()->AI_getWeightedOdds(pLoopPlot);
+			int iValue = iOdds;
+			if (iOdds > 0 && iOdds < 100 && iThreshold > 0)
+			{
+				int iOurAttack = kOwner.AI_localAttackStrength(pLoopPlot, eTeam,
+					getDomainType(), 2, true, true, true);
+				int iEnemyDefence = kOwner.AI_localDefenceStrength(pLoopPlot, NO_TEAM,
+					getDomainType(), 0);
+				if (iOurAttack > iEnemyDefence && iEnemyDefence > 0)
+				{
+					/*int iBonus = 100 - iOdds;
+					iBonus -= iBonus * 4*iBonus / (4*iBonus + 100*(iOurAttack-iEnemyDefence)/iEnemyDefence);
+					FAssert(iBonus >= 0 && iBonus <= 100 - iOdds);
+					iValue += iBonus;*/
+					iValue += 100 * (iOdds + 15) * (iOurAttack - iEnemyDefence) /
+						((iThreshold + 100) * iEnemyDefence);
+				}
+			}
+			if (iValue >= iThreshold)
+			{
+				//BonusTypes eBonus = pLoopPlot->getNonObsoleteBonusType(eTeam);
+				iValue *= 100 /* + (eBonus == NO_BONUS ? 0 :
+					3 * kOwner.AI_bonusVal(eBonus, 0) / 2)*/ +
+					(pLoopPlot->getWorkingCity() ? 20 : 0);
+
+				if (pLoopPlot->getOwner() != getOwner())
+					iValue = 2 * iValue / 3;
+
+				if (iPathTurns > 1)
+					iValue /= iPathTurns + 2;
+
+				if (iOdds >= iThreshold)
+					iValue = 4 * iValue / 3;
+
+				if (iValue > iBestValue)
+				{
+					iBestValue = iValue;
+					pEndTurnPlot = getPathEndTurnPlot();
+				}
+			}
+		}
+	}
+
+	if (pEndTurnPlot != NULL)
+	{
+		pushGroupMoveTo(*pEndTurnPlot, eFlags, false, false, MISSIONAI_DEFEND);
+		return true;
+	}
+
+	return false;
+}
+
+/*	iAttackThreshold is the minimum ratio for
+	our attack / their defence.
+	iRiskThreshold is the minimum ratio for
+	their attack / our defence adjusted for stack size
+	note: iSearchRange is /not/ the number of turns.
+	It is the number of steps. iSearchRange < 1 means 'automatic'
+	Only 1-turn moves are considered here. */
+bool CvUnitAI::AI_stackVsStack(int iSearchRange, int iAttackThreshold, int iRiskThreshold,
+	MovementFlags eFlags)
+{
+	PROFILE_FUNC();
+
+	CvPlayerAI const& kOwner = GET_PLAYER(getOwner());
+
+	//int iOurDefence = kOwner.AI_localDefenceStrength(plot(), getTeam());
+	int const iOurDefence = AI_getGroup()->AI_sumStrength(NULL); // not counting defensive bonuses
+
+	CvPlot* pBestPlot = NULL;
+	int iBestValue = 0;
+	//for (SquareIter it(*this, iSearchRange < 1 ? AI_searchRange(1) : iSearchRange, false);
+	//	it.hasNext(); ++it)
+	FOR_EACH_PLOT_IN_RANGE_OF(plot(), iSearchRange < 1 ? AI_searchRange(1) : iSearchRange,
+	{
+		CvPlot& p = *pLoopPlot;
+		if (!AI_plotValid(&p))
+			continue;
+		int iEnemies = p.getNumVisibleEnemyDefenders(this);
+		int iPathTurns;
+		if (iEnemies > 0 && generatePath(&p, eFlags, true, &iPathTurns, 1))
+		{
+			int iEnemyAttack = kOwner.AI_localAttackStrength(&p, NO_TEAM,
+				getDomainType(), 0, false);
+			int iRiskRatio = 100 * iEnemyAttack / std::max(1, iOurDefence);
+			// adjust risk ratio based on the relative numbers of units.
+			iRiskRatio *= 50 + 50 * (getGroup()->getNumUnits() + 3) /
+				std::min(iEnemies + 3, getGroup()->getNumUnits() + 3);
+			iRiskRatio /= 100;
+			//
+			if (iRiskRatio < iRiskThreshold)
+				continue;
+
+			int iAttackRatio = AI_getGroup()->AI_compareStacks(&p, true);
+			if (iAttackRatio < iAttackThreshold)
+				continue;
+
+			int iValue = iAttackRatio * iRiskRatio;
+			if (iValue > iBestValue)
+			{
+				iBestValue = iValue;
+				pBestPlot = &p;
+				FAssert(pBestPlot == getPathEndTurnPlot());
+			}
+		}
+	}) // FOR_EACH
+
+	if (pBestPlot != NULL)
+	{
+		if (gUnitLogLevel >= 2) logBBAI("    Stack for player %d (%S) uses StackVsStack attack with value %d", getOwner(), GET_PLAYER(getOwner()).getCivilizationDescription(0), iBestValue);
+		pushGroupMoveTo(*pBestPlot, eFlags, false, false,
+			MISSIONAI_COUNTER_ATTACK, pBestPlot);
+		return true;
+	}
+
+	return false;
+} // K-Mod end
+
+// K-Mod. One group function to rule them all.
+bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitAI,
+	bool bStackOfDoom, int iFlags, int iMaxPath, bool bMergeGroups, bool bSafeOnly,
+	bool bIgnoreFaster, bool bIgnoreOwnUnitType, bool bBiggerOnly, int iMinUnitAI,
+	bool bWithCargoOnly, bool bIgnoreBusyTransports)
+{
+	PROFILE_FUNC();
+
+	iFlags &= ~MOVE_DECLARE_WAR; // Don't consider war when we just want to group
+
+	if (isCargo())
+		return false;
+
+	if (!AI_canGroupWithAIType(eUnitAI))
+		return false;
+
+	if (getDomainType() == DOMAIN_LAND && /*!canMoveAllTerrain() &&*/
+		area()->getNumAIUnits(getOwner(), eUnitAI) <= 0)
+	{
+		return false;
+	}
+	CvPlayerAI const& kOwner = GET_PLAYER(getOwner());
+	/*	<advc.057> Except for assault groups, the head unit should have the
+		most restrictive impassable types. */
+	int const iOurGroupFirstVal = AI_groupFirstVal();
+	
+	uint uiOurMaxImpassables = kOwner.AI_unitImpassables(getUnitType());
+	if (AI_getUnitAIType() == UNITAI_ASSAULT_SEA)
+	{
+		for (CLLNode<IDInfo> const* pUnitNode = // We're the head; already done.
+			getGroup()->nextUnitNode(getGroup()->headUnitNode()); // </advc.057>
+			pUnitNode != NULL; pUnitNode = getGroup()->nextUnitNode(pUnitNode))
+		{
+			CvUnit const& kImpassUnit = *::getUnit(pUnitNode->m_data);
+			uiOurMaxImpassables = std::max(uiOurMaxImpassables,
+				kOwner.AI_unitImpassables(kImpassUnit.getUnitType()));
+		}
+	}
+	
+	CvUnit* pBestUnit = NULL;
+	int iBestValue = MAX_INT;
+	FOR_EACH_GROUPAI_VAR(pLoopGroup, kOwner)
+	{
+		CvUnitAI* pLoopUnit = pLoopGroup->AI_getHeadUnit();
+		if (pLoopUnit == NULL)
+			continue;
+		CvPlot const& kLoopPlot = pLoopUnit->getPlot();
+		if (!AI_plotValid(&kLoopPlot))
+			continue;
+		if (iMaxPath == 0 && !atPlot(&kLoopPlot)) // advc.opt (tbd.): Should arguably treat iMaxPath==0 upfront
+			continue;
+		/*if (getDomainType() != DOMAIN_LAND || canMoveAllTerrain() ||
+			kPlot.isArea(getArea())) {*/ // advc.opt: Redundant after AI_plotValid
+		if (!AI_allowGroup(pLoopUnit, eUnitAI))
+			continue;
+
+		// K-Mod. I've restructed this wad of conditions so that it is easier for me to read. // advc: Made a few more edits - parts of it were still off-screen ...
+		/*	((removed ((heaps) of parentheses) (etc)).)
+			also, I've rearranged the order to be slightly faster for failed checks.
+			Note: the iMaxGroups & OwnUnitAI check is apparently off-by-one.
+			This is for backwards compatibility for the original code. */
+		if ((!bSafeOnly || !isEnemy(kLoopPlot))
+			&&
+			(!bWithCargoOnly || pLoopUnit->getGroup()->hasCargo())
+			&&
+			(!bBiggerOnly || !bMergeGroups ||
+				pLoopGroup->getNumUnits() >= getGroup()->getNumUnits())
+			&&
+			(!bIgnoreFaster || pLoopGroup->baseMoves() <= baseMoves())
+			&&
+			(!bIgnoreOwnUnitType || pLoopUnit->getUnitType() != getUnitType())
+			&&
+			(!bIgnoreBusyTransports || !pLoopGroup->hasCargo() ||
+				(pLoopGroup->AI_getMissionAIType() != MISSIONAI_ASSAULT &&
+					pLoopGroup->AI_getMissionAIType() != MISSIONAI_REINFORCE))
+			&&
+			(iMinUnitAI == -1 || pLoopGroup->countNumUnitAIType(eUnitAI) >= iMinUnitAI)
+			&&
+			(iMaxOwnUnitAI == -1 ||
+				(bMergeGroups ? std::max(0, getGroup()->countNumUnitAIType(AI_getUnitAIType()) - 1) : 0) +
+				pLoopGroup->countNumUnitAIType(AI_getUnitAIType()) <=
+				iMaxOwnUnitAI + (bStackOfDoom ? AI_stackOfDoomExtra() : 0))
+			&&
+			(iMaxGroup == -1 || (bMergeGroups ? getGroup()->getNumUnits() - 1 : 0) +
+				pLoopGroup->getNumUnits() +
+				kOwner.AI_unitTargetMissionAIsInternal(pLoopUnit, MISSIONAI_GROUP, getGroup()) <=
+				iMaxGroup + (bStackOfDoom ? AI_stackOfDoomExtra() : 0))
+			&&
+			(pLoopGroup->AI_getMissionAIType() != MISSIONAI_GUARD_CITY ||
+				!pLoopGroup->getPlot().isCity() ||
+				pLoopGroup->getPlot().plotCount(PUF_isMissionAIType, MISSIONAI_GUARD_CITY, -1, getOwner()) >
+				pLoopGroup->getPlot().getPlotCity()->AI().AI_minDefenders())
+			)
+		{
+			FAssert(!kLoopPlot.isVisibleEnemyUnit(this));
+			//if (iOurMaxImpassableCount > 0 || AI_getUnitAIType() == UNITAI_ASSAULT_SEA) { ...
+			{	// <advc.057> Check their impassable count even if ours is 0
+				CLLNode<IDInfo> const* pUnitNode = pLoopGroup->headUnitNode();
+				CvUnitAI const& kHeadUnit = (::getUnit(pUnitNode->m_data))->AI();
+				uint uiTheirMaxImpassables = kOwner.AI_unitImpassables(
+					kHeadUnit.getUnitType());
+				/*	Assault groups aren't always formed through this function;
+					can't rely on head having the most impassable types. */
+				if (kHeadUnit.AI_getUnitAIType() == UNITAI_ASSAULT_SEA)
+				{
+					for (pUnitNode = getGroup()->nextUnitNode(pUnitNode);
+						pUnitNode != NULL; pUnitNode = getGroup()->nextUnitNode(pUnitNode))
+					{
+						CvUnit const& kUnit = *::getUnit(pUnitNode->m_data);
+						uiTheirMaxImpassables = std::max(uiTheirMaxImpassables,
+							kOwner.AI_unitImpassables(kUnit.getUnitType()));
+					}
+				}
+				int const iTheirGroupFirstValue = kHeadUnit.AI_groupFirstVal();
+				/*	Disallow the group if we can't rule out that the impassable count
+					of the head will decrease. (Should really check for set inclusion,
+					i.e. the set of impassables of the leader needs to include all
+					impassables of the group.) */
+				if ((iTheirGroupFirstValue >= iOurGroupFirstVal &&
+					uiTheirMaxImpassables < uiOurMaxImpassables) ||
+					(iTheirGroupFirstValue <= iOurGroupFirstVal &&
+						uiTheirMaxImpassables > uiOurMaxImpassables))
+				{
+					continue;
+				}
+			} // </advc.057>
+			int iPathTurns = 0;
+			if (atPlot(&kLoopPlot) ||
+				generatePath(&kLoopPlot, iFlags, true, &iPathTurns, iMaxPath))
+			{
+				int iCost = 100 * (iPathTurns * iPathTurns + 1);
+				iCost *= 4 + pLoopGroup->getCargo();
+				iCost /= 2 + pLoopGroup->getNumUnits();
+				/*int iSizeMod = 10*std::max(getGroup()->getNumUnits(), pLoopGroup->getNumUnits());
+				iSizeMod /= std::min(getGroup()->getNumUnits(), pLoopGroup->getNumUnits());
+				iCost *= iSizeMod * iSizeMod;
+				iCost /= 1000; */
+				if (iCost < iBestValue)
+				{
+					iBestValue = iCost;
+					pBestUnit = pLoopUnit;
+				}
+			}
+		}
+	}
+	if (pBestUnit == NULL)
+		return false; // advc
+
+	if (!atPlot(pBestUnit->plot()))
+	{
+		if (!bMergeGroups && getGroup()->getNumUnits() > 1)
+		{	/*	might as well leave our current group behind
+				since they won't be merging anyway. */
+			joinGroup(NULL);
+		}
+		getGroup()->pushMission(MISSION_MOVE_TO_UNIT, pBestUnit->getOwner(),
+			pBestUnit->getID(), iFlags, false, false, MISSIONAI_GROUP, NULL, pBestUnit);
+	}
+	if (atPlot(pBestUnit->plot()))
+	{
+		if (bMergeGroups)
+			getGroup()->mergeIntoGroup(pBestUnit->getGroup());
+		else joinGroup(pBestUnit->getGroup());
+	}
+	return true;
+} // K-Mod end

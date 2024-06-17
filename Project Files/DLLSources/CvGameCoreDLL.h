@@ -31,6 +31,7 @@
 #include <hash_map>
 #include <set>
 #include <deque>
+//#include <limits>
 
 #define DllExport   __declspec( dllexport )
 
@@ -159,7 +160,15 @@ std::string GetDLLPath(bool bLoadDLLPath = true);
 #include "CvGlobals.h"
 
 #include "CvPlayerAI.h"
+
+
+//#include "TypeChoice.h"
+//#include "IntegerTraits.h" // </advc>
+//#include "ScaledNumFwd.h" // advc.fract
+
 #include "CvGameCoreUtils.h"
+//#include "IntegerConversion.h" // advc
+//#include "ScaledNum.h"
 #include "CvMap.h"
 #include "CvGameAI.h"
 #include "CvPlot.h"

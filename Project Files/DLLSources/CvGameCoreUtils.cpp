@@ -905,6 +905,15 @@ bool PUF_isUnitAIType(const CvUnit* pUnit, int iData1, int iData2)
 	return (pUnit->AI_getUnitAIType() == iData1);
 }
 
+// K-Mod:
+bool PUF_isMissionAIType(CvUnit const* pUnit, int iMissionAI, int iDummy)
+{
+	FAssert(iDummy == -1);
+	MissionAITypes eMissionAI = (MissionAITypes)iMissionAI;
+	//FAssertEnumBounds(eMissionAI);
+	return (pUnit->AI().AI_getGroup()->AI_getMissionAITypeInternal() == eMissionAI);
+}
+
 // R&R, ray, Natives raiding party - START
 bool PUF_isUnitAIStateType(const CvUnit* pUnit, int iData1, int iData2)
 {
@@ -1286,9 +1295,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 	if (!kToPlot.isRevealed(eTeam, false))
 		return iWorstCost;
 
-#if 0
-	// WTP: Not supported yet due to the sheer effort required to port everything from AdvCiv atm.
-	// the cost of battle...
+#	// the cost of battle...
 	if (iFlags & MOVE_ATTACK_STACK)
 	{
 		FAssert(bAIControl); // only the AI uses MOVE_ATTACK_STACK
@@ -1296,14 +1303,15 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 
 		int iEnemyDefence = 0;
 
-		if (kToPlot.isVisible(eTeam))
+		if (kToPlot.isVisible(eTeam, false))
 		{	/*  <advc.001> In the rare case that the AI plans war while animals
 			still roam the map, the DefenceStrength computation will crash
 			when it gets to the point where the UnitCombatType is accessed.
 			(Actually, not so exotic b/c advc.300 allows animals to survive
 			in continents w/o civ cities.) */
-			CvUnit* pUnit = kToPlot.getUnitByIndex(0);
-			if (pUnit != NULL && !pUnit->isAnimal()) // </advc.001>
+			// WTP: Is this a problem for us ?
+			CvUnit* const pUnit = kToPlot.getUnitByIndex(0);
+			if (pUnit != NULL /* && !pUnit->isAnimal()*/) // </advc.001>
 			{
 				iEnemyDefence = GET_PLAYER(pSelectionGroup->getOwner()).
 					AI_localDefenceStrength(&kToPlot, NO_TEAM,
@@ -1312,9 +1320,8 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			}
 		}
 		else
-		{
-			// plot not visible. use memory
-			iEnemyDefence = GET_TEAM(eTeam).AI_getStrengthMemory(kToPlot.getX(), kToPlot.getY());
+		{	// plot not visible. use memory
+			iEnemyDefence = GET_TEAM(eTeam).AI_strengthMemory().get(kToPlot.plotNum());
 		}
 
 		if (iEnemyDefence > 0)
@@ -1325,15 +1332,15 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			// I just haven't done that yet, mostly because I'm worried about performance.
 			if (iAttackRatio < 400)
 			{
-				iWorstCost += PATH_MOVEMENT_WEIGHT * GC.getMOVE_DENOMINATOR() * (400 - iAttackRatio) /
+				iWorstCost += PATH_MOVEMENT_WEIGHT * GLOBAL_DEFINE_MOVE_DENOMINATOR * (400 - iAttackRatio) /
 					std::min(150, iAttackRatio);
 			}
 			// else, don't worry about it too much.
 		}
 	} //
-#endif
-	  // <advc.082>
-	TeamTypes eToPlotTeam = kToPlot.getTeam();
+	
+	// <advc.082>
+	const TeamTypes eToPlotTeam = kToPlot.getTeam();
 	/*  The AVOID_ENEMY code in the no-moves-left branch below doesn't stop the AI
 	from trying to move _through_ enemy territory and thus declaring war
 	earlier than necessary */

@@ -6,6 +6,7 @@
 #define CIV4_TEAM_AI_H
 
 #include "CvTeam.h"
+#include "AIStrengthMemoryMap.h" // advc.158
 
 class CvTeamAI : public CvTeam
 {
@@ -23,6 +24,12 @@ public:
 		return m_aTeams[eTeam];
 	}
 	DllExport static CvTeamAI& getTeamNonInl(TeamTypes eTeam);
+
+	static bool AI_isImminentWarPlan(WarPlanTypes eWarPlanType)
+	{
+		return (eWarPlanType == WARPLAN_LIMITED || eWarPlanType == WARPLAN_TOTAL ||
+			eWarPlanType == WARPLAN_DOGPILE);
+	}
 
 	static void initStatics();
 	static void freeStatics();
@@ -133,6 +140,9 @@ public:
 	bool AI_isSneakAttackPreparing(TeamTypes eIndex) const;
 	bool AI_isSneakAttackReady(TeamTypes eIndex /* K-Mod (any team): */ = NO_TEAM) const;
 	void AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar = true);
+	// <advc.opt>
+	bool AI_mayAttack(TeamTypes eDefender) const;
+	bool AI_mayAttack(CvPlot const& kPlot) const; // </advc.opt>
 
 	int AI_teamCloseness(TeamTypes eIndex, int iMaxDistance = -1) const;
 	int AI_targetValidity(TeamTypes eTeam) const;
@@ -166,6 +176,10 @@ public:
 
 	int AI_plotDefense(CvPlot const& kPlot, bool bIgnoreBuilding = false,
 		bool bGarrisonStrength = false) const; // advc.500b
+
+	// advc.158:
+	AIStrengthMemoryMap& AI_strengthMemory() const { return m_strengthMemory; }
+
 protected:
 
 	static CvTeamAI* m_aTeams;
@@ -202,7 +216,7 @@ protected:
 	void AI_doWar();
     void AI_doTactics();
 
-
+	mutable AIStrengthMemoryMap m_strengthMemory; // advc.158
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;

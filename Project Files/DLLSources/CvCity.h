@@ -7,6 +7,7 @@
 #include "CvPlotFunctions.h"
 #include "CvCityYields.h"
 
+class CvCityAI; 
 class CvPlot;
 class CvArea;
 class CvGenericBuilding;
@@ -15,6 +16,9 @@ class CvInfoBase;
 class CvCity : public CvDLLEntity
 {
 public:
+
+	__forceinline CvCityAI& AI() { return (CvCityAI&)*this; }
+	__forceinline const CvCityAI& AI() const { return (CvCityAI&)*this; }
 
 	void UpdateBuildingAffectedCache(); // building affected cache - Nightinggale
 /** NBMOD EDU **/
