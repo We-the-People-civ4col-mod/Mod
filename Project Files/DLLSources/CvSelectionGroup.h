@@ -77,7 +77,7 @@ public:
 	DllExport bool canMoveOrAttackInto(CvPlot* pPlot, bool bDeclareWar = false);
 	bool canMoveOrAttackInto(CvPlot const& kPlot, bool bDeclareWar = false, bool bCheckMoves = false, bool bAssumeVisible = true) const;
 	bool canMoveThrough(CvPlot const& kPlot, bool bDeclareWar = false, bool bAssumeVisible = true) const; // Exposed to Python, K-Mod added bDeclareWar and bAssumeVisible; advc: CvPlot const&
-	bool canFight();
+	bool canFight() const;
 	bool canDefend();
 	bool canBombard(const CvPlot* pPlot);
 	bool visibilityRange();
@@ -99,6 +99,7 @@ public:
 	bool at(int iX, int iY) const;
 	bool atPlot(const CvPlot* pPlot) const;
 	DllExport CvPlot* plot() const;
+	CvPlot& getPlot() const { return *plot(); } // advc
 	int getArea() const;
 	CvArea* area() const;
 	DomainTypes getDomainType() const;

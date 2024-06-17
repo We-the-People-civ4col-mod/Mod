@@ -355,11 +355,64 @@ int CvSelectionGroupAI::AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy)
 	return iOdds;
 }
 
-CvUnit* CvSelectionGroupAI::AI_getBestGroupAttacker(const CvPlot* pPlot, bool bPotentialEnemy, int& iUnitOdds, bool bForce, bool bNoBlitz) const
+/*	K-Mod. A new odds-adjusting function to replace CvUnitAI::AI_finalOddsThreshold.
+	(note: I would like to put this in CvSelectionGroupAI ... but - well -
+	I don't need to say it, right?)
+	advc.003u: I think CvUnitAI::AI_getGroup solves karadoc's problem; so - moved. */
+int CvSelectionGroupAI::AI_getWeightedOdds(CvPlot const* pPlot, bool bPotentialEnemy)
+{
+	PROFILE_FUNC();
+	int iOdds = -1;
+	CvUnitAI const* pAttacker = AI_getBestGroupAttacker(pPlot, bPotentialEnemy, iOdds);
+	if (pAttacker == NULL)
+		return 0;
+	/*
+	CvPlot::DefenderFilters defFilters(getOwner(), pAttacker,
+		!bPotentialEnemy, bPotentialEnemy,
+		true, false); // advc.028, advc.089 (same as in CvUnitAI::AI_attackOdds)
+	*/
+	//CvUnit const* pDefender = pPlot->getBestDefender(NO_PLAYER, defFilters);
+	CvUnit const* pDefender = pPlot->getBestDefender(NO_PLAYER, getOwnerINLINE(), 
+		pAttacker, !bPotentialEnemy, bPotentialEnemy);
+	if (pDefender == NULL)
+		return 100;
+
+	/*	<advc.114b> We shouldn't adjust the odds based on an optimistic estimate
+		(increased by AttackOddsChange) b/c that leads to Warriors attacking Tanks -
+		high difference in production cost and non-negligible optimistic odds.
+		I'm subtracting the AttackOddsChange temporarily;
+		adding them back in after the adjustments are done.
+		(A more elaborate fix would avoid adding them in the first place.) */
+	int const iAttackOddsChange = GET_PLAYER(getOwner()).AI_getAttackOddsChange();
+	iOdds -= iAttackOddsChange;
+	/*	Require a stack of at least 3 if actual odds are below 1%. Should
+		matter mostly for Barbarians, hence only this primitive condition
+		(not checking if the other units could actually attack etc.). */
+	if (iOdds == 0 && getNumUnits() < 3)
+		return 0;
+	// </advc.114b>
+	// advc: The bulk of the computation is still in CvUnitAI
+	int iAdjustedOdds = pAttacker->AI_opportuneOdds(iOdds, *pDefender);
+
+	/*  one more thing... unfortunately, the sea AI isn't evolved enough
+		to do without something as painful as this... */
+	if (getDomainType() == DOMAIN_SEA && !hasCargo())
+	{
+		// I'm sorry about this. I really am. I'll try to make it better one day...
+		int iDefenders = pAttacker->AI_countEnemyDefenders(*pPlot);
+		iAdjustedOdds *= 2 + getNumUnits();
+		iAdjustedOdds /= 3 + std::min(iDefenders / 2, getNumUnits());
+	}
+
+	iAdjustedOdds += iAttackOddsChange; // advc.114b
+	return range(iAdjustedOdds, 1, 99);
+}
+
+CvUnitAI* CvSelectionGroupAI::AI_getBestGroupAttacker(const CvPlot* pPlot, 
+	bool bPotentialEnemy, int& iUnitOdds, bool bForce, bool bNoBlitz) const
 {
 	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	CvUnit* pBestUnit;
+	CvUnitAI* pBestUnit = NULL;
 	int iValue;
 	int iBestValue;
 	int iOdds;
@@ -367,15 +420,14 @@ CvUnit* CvSelectionGroupAI::AI_getBestGroupAttacker(const CvPlot* pPlot, bool bP
 
 	iBestValue = 0;
 	iBestOdds = 0;
-	pBestUnit = NULL;
-
+	
 	pUnitNode = headUnitNode();
 
 	bool bIsHuman = (pUnitNode != NULL) ? GET_PLAYER(::getUnit(pUnitNode->m_data)->getOwnerINLINE()).isHuman() : true;
 
 	while (pUnitNode != NULL)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
+		CvUnitAI* pLoopUnit = static_cast<CvUnitAI*>(::getUnit(pUnitNode->m_data));
 		pUnitNode = nextUnitNode(pUnitNode);
 
 		if (pLoopUnit != NULL && !pLoopUnit->isDead())
@@ -424,15 +476,15 @@ CvUnit* CvSelectionGroupAI::AI_getBestGroupAttacker(const CvPlot* pPlot, bool bP
 	return pBestUnit;
 }
 
-CvUnit* CvSelectionGroupAI::AI_getBestGroupSacrifice(const CvPlot* pPlot, bool bPotentialEnemy, bool bForce, bool bNoBlitz) const
+CvUnitAI* CvSelectionGroupAI::AI_getBestGroupSacrifice(const CvPlot* pPlot, bool bPotentialEnemy, bool bForce, bool bNoBlitz) const
 {
 	int iBestValue = 0;
-	CvUnit* pBestUnit = NULL;
+	CvUnitAI* pBestUnit = NULL;
 
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 	while (pUnitNode != NULL)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		CvUnitAI* pLoopUnit = static_cast<CvUnitAI*>(::getUnit(pUnitNode->m_data));
 		pUnitNode = nextUnitNode(pUnitNode);
 
 		if (pLoopUnit != NULL && !pLoopUnit->isDead())
@@ -554,7 +606,7 @@ bool CvSelectionGroupAI::AI_isControlled() const
 }
 
 
-bool CvSelectionGroupAI::AI_isDeclareWar(const CvPlot* pPlot)
+bool CvSelectionGroupAI::AI_isDeclareWarInternal(const CvPlot* pPlot) const
 {
 	FAssert(getHeadUnit() != NULL);
 
@@ -632,13 +684,13 @@ bool CvSelectionGroupAI::AI_isDeclareWar(const CvPlot* pPlot)
 }
 
 
-CvPlot* CvSelectionGroupAI::AI_getMissionAIPlot()
+CvPlot* CvSelectionGroupAI::AI_getMissionAIPlotInternal() const
 {
 	return GC.getMap().plotSoren(m_iMissionAIX, m_iMissionAIY);
 }
 
 
-bool CvSelectionGroupAI::AI_isForceSeparate()
+bool CvSelectionGroupAI::AI_isForceSeparateInternal() const
 {
 	return m_bForceSeparate;
 }
@@ -650,7 +702,7 @@ void CvSelectionGroupAI::AI_makeForceSeparate()
 }
 
 
-MissionAITypes CvSelectionGroupAI::AI_getMissionAIType()
+MissionAITypes CvSelectionGroupAI::AI_getMissionAITypeInternal() const
 {
 	return m_eMissionAIType;
 }
@@ -1564,3 +1616,17 @@ void CvSelectionGroupAI::unloadToCity(CvCity* pCity, CvUnit* unit, UnloadMode um
 }
 
 // R&R mod, vetiarvind, max yield import limit - end
+
+// <advc.003u> Based on CvSelectionGroup::getHeadUnit
+CvUnitAI const* CvSelectionGroupAI::AI_getHeadUnit() const
+{
+	CLLNode<IDInfo> const* pNode = headUnitNode();
+	return (pNode != NULL ? static_cast<CvUnitAI const*>(::getUnit(pNode->m_data)) : NULL);
+}
+
+
+CvUnitAI* CvSelectionGroupAI::AI_getHeadUnit()
+{
+	CLLNode<IDInfo>* pNode = headUnitNode();
+	return (pNode != NULL ? static_cast<CvUnitAI*>(::getUnit(pNode->m_data)) : NULL);
+} // </advc.003u>

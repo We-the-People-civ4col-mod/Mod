@@ -27,6 +27,7 @@ enum SavegameVariableTypes
 
 	TeamAISave_WarPlan,
 	TeamAISave_WorstEnemy,
+	TeamAISave_StrengthMemory,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -52,6 +53,7 @@ const char* getSavedEnumNameTeamAI(SavegameVariableTypes eType)
 
 	case TeamAISave_WarPlan: return "TeamAISave_WarPlan";
 	case TeamAISave_WorstEnemy: return "TeamAISave_WorstEnemy";
+	case TeamAISave_StrengthMemory: return "TeamAISave_StrengthMemory";		
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -82,6 +84,7 @@ void CvTeamAI::AI_resetSavedData()
 
 	m_em_eWarPlan.reset();
 	m_eWorstEnemy=defaultWorstEnemy;
+	m_strengthMemory.reset(); // advc.158
 }
 
 void CvTeamAI::read(CvSavegameReader reader)
@@ -124,6 +127,7 @@ void CvTeamAI::read(CvSavegameReader reader)
 
 		case TeamAISave_WarPlan: reader.Read(m_em_eWarPlan); break;
 		case TeamAISave_WorstEnemy: reader.Read(m_eWorstEnemy); break;
+		case TeamAISave_StrengthMemory: reader.Read(m_strengthMemory.data()); break;
 		}
 	}
 	
@@ -157,5 +161,6 @@ void CvTeamAI::write(CvSavegameWriter writer)
 
 	writer.Write(TeamAISave_WarPlan, m_em_eWarPlan);
 	writer.Write(TeamAISave_WorstEnemy, m_eWorstEnemy, defaultWorstEnemy);
+	writer.Write(TeamAISave_StrengthMemory, m_strengthMemory.data());
 	writer.Write(TeamAISave_END);
 }

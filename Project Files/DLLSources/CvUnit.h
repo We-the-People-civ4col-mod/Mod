@@ -13,6 +13,7 @@
 
 class CvPlot;
 class CvArea;
+class CvUnitAI;
 class CvUnitInfo;
 class CvSelectionGroup;
 class FAStarNode;
@@ -84,6 +85,9 @@ class CvUnit : public CvDLLEntity
 
 public:
 
+	__forceinline CvUnitAI& AI() { return (CvUnitAI&)*this; }
+	__forceinline const CvUnitAI& AI() const { return (CvUnitAI&)*this; }
+
     /** NBMOD REF **/
 
     float NBMOD_GetShipStrength() const;
@@ -128,6 +132,10 @@ public:
 		bool bCalledFromPython = false
 		) const;
 	KmodPathFinder& getPathFinder() const; // K-Mod
+	// <advc>
+	void pushGroupMoveTo(CvPlot const& kTo, MovementFlags eFlags = NO_MOVEMENT_FLAGS,
+		bool bAppend = false, bool bManual = false, MissionAITypes eMissionAI = NO_MISSIONAI,
+		CvPlot* pMissionAIPlot = NULL, CvUnit* pMissionAIUnit = NULL);
 
 	bool canEnterTerritory(PlayerTypes ePlayer, bool bIgnoreRightOfPassage = false) const;
 	bool canEnterArea(PlayerTypes ePlayer, const CvArea* pArea, bool bIgnoreRightOfPassage = false) const;
@@ -268,6 +276,7 @@ public:
 	bool build(BuildTypes eBuild);
 	bool canPromote(PromotionTypes ePromotion, int iLeaderUnitId) const;
 	void promote(PromotionTypes ePromotion, int iLeaderUnitId);
+	int promotionHeal(PromotionTypes ePromotion = NO_PROMOTION) const; // advc
 
 	int canLead(const CvPlot* pPlot, int iUnitId) const;
 	bool lead(int iUnitId);
@@ -334,7 +343,9 @@ public:
 	int maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDetails* pCombatDetails = NULL) const;
 	int currCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDetails* pCombatDetails = NULL) const;
 	int currFirepower(const CvPlot* pPlot, const CvUnit* pAttacker) const;
-	int currEffectiveStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDetails* pCombatDetails = NULL) const;
+	int currEffectiveStr(CvPlot const* pPlot = NULL, CvUnit const* pAttacker = NULL,
+		CombatDetails* pCombatDetails = NULL,
+		int iCurrentHP = -1) const; // advc.139
 	DllExport float maxCombatStrFloat(const CvPlot* pPlot, const CvUnit* pAttacker) const;
 	DllExport float currCombatStrFloat(const CvPlot* pPlot, const CvUnit* pAttacker) const;
 	bool isUnarmed() const;
@@ -447,6 +458,7 @@ public:
 	bool at(Coordinates testCoord) const;
 	DllExport bool atPlot(const CvPlot* pPlot) const;
 	DllExport CvPlot* plot() const;
+	CvPlot& getPlot() const { return *plot(); } // advc
 	CvCity* getCity() const;
 	int getArea() const;
 	int getLandArea() const;
@@ -698,6 +710,7 @@ public:
 	int getSubUnitsAlive(int iDamage) const;
 
 	DllExport bool isEnemy(TeamTypes eTeam, const CvPlot* pPlot = NULL) const;
+	bool isEnemy(CvPlot const& kPlot) const;
 	bool isPotentialEnemy(TeamTypes eTeam, const CvPlot* pPlot = NULL) const;
 
 	int getTriggerValue(EventTriggerTypes eTrigger, const CvPlot* pPlot, bool bCheckPlot) const;
@@ -783,7 +796,6 @@ public:
 	virtual bool AI_follow() = 0;
 	virtual void AI_upgrade() = 0;
 	virtual void AI_promote() = 0;
-	virtual int AI_groupFirstVal() = 0;
 	virtual int AI_groupSecondVal() = 0;
 	virtual int AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy) const = 0;
 	virtual bool AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot = NULL, BuildTypes* peBestBuild = NULL, CvPlot* pIgnorePlot = NULL, CvUnit* pUnit = NULL) = 0;

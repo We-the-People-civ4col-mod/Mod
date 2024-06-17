@@ -86,6 +86,8 @@ void CvTeamAI::AI_doTurnPre()
 
 void CvTeamAI::AI_doTurnPost()
 {
+	m_strengthMemory.decay(); // advc.158
+
 	AI_updateWorstEnemy();
 
 	AI_updateAreaStragies(false);
@@ -3315,6 +3317,42 @@ bool CvTeamAI::AI_isNative() const
 bool CvTeamAI::AI_isKing() const
 {
 	return hasEuropePlayer();
+}
+
+/*	advc.opt: Replacing global isPotentialEnemy (CvGameCoreUtils). Not much faster here -
+	mostly avoids some NO_TEAM checks -, but also makes more sense as a CvTeamAI member.
+	I've also redirected some CvUnitAI::AI_isPotentialEnemy calls here. That function
+	allows alwaysHostile units to attack w/o war plan; this function doesn't. */
+bool CvTeamAI::AI_mayAttack(TeamTypes eDefender) const
+{
+	if (isAtWar(eDefender))
+		return true;
+	TeamTypes const eDefenderMaster = getID(); // GET_TEAM(eDefender).getMasterTeam(); // advc.104j
+	//if (!AI_isSneakAttackReady(eDefender))
+	// advc.opt: Avoid isAtWar and NO_TEAM check
+	if (!AI_isImminentWarPlan(AI_getWarPlan(/* advc.104j: */ eDefenderMaster)))
+		return false;
+	// (War w/ eDefenderMaster and peace w/ eDefender can happen while resolving DoW)
+	FAssertMsg(/*!isAVassal() ||*/ isAtWar(eDefenderMaster), "Vassal shouldn't have imminent undeclared war plan");
+	/*	UNOFFICIAL_PATCH, Bugfix, General AI, 05/05/09, jdog5000: START
+		Fixes bug where AI would launch invasion while unable to declare war
+		which caused units to be bumped once forced peace expired */
+		//return canDeclareWar(eDefender);
+		/*	advc.opt: Avoid the canEventuallyDeclareWar check - the war plan
+			has to be abandoned if we can't ever declare. */
+	return (!isForcePeace(eDefenderMaster) && // advc.104j
+		!isForcePeace(eDefender));
+}
+
+// advc: Replacing K-Mod's CvPlot::isVisiblePotentialEnemyUnit
+bool CvTeamAI::AI_mayAttack(CvPlot const& kPlot) const
+{
+	/*	Unfortunately, PUF_isPotentialEnemy requires a PlayerTypes argument.
+		Would have to change several PUF... signatures to remedy that. */
+	PlayerTypes const ePlayer = getLeaderID();
+	// <K-Mod>
+	return (kPlot.plotCheck(PUF_isPotentialEnemy, ePlayer, false,
+		NO_PLAYER, NO_TEAM, PUF_isVisible, ePlayer) != NULL); // </K-Mod>
 }
 
 // Private Functions...

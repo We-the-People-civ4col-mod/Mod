@@ -115,6 +115,33 @@ public:
 	int getFeatureYield(BuildTypes eBuild, YieldTypes eYield, TeamTypes eTeam, CvCity** ppCity) const;
 
 	CvUnit* getBestDefender(PlayerTypes eOwner, PlayerTypes eAttackingPlayer = NO_PLAYER, const CvUnit* pAttacker = NULL, bool bTestAtWar = false, bool bTestPotentialEnemy = false, bool bTestCanMove = false) const;
+	struct DefenderFilters
+	{
+		DefenderFilters(
+			PlayerTypes eAttackingPlayer = NO_PLAYER, CvUnit const* pAttacker = NULL,
+			bool bTestEnemy = false, bool bTestPotentialEnemy = false,
+			bool bTestVisible = false, // advc.028
+			/*	advc: New params to allow hasDefender checks.
+				advc.089: bTestCanAttack=true by default. */
+			bool bTestCanAttack = true, bool bTestAny = false,
+			/*	(Ideally, this should be swapped with bTestVisible to stay closer
+				to the original code. bTestCanMove had been unused for a while.
+				Not going to change this now, too error-prone.) */
+			bool bTestCanMove = false)
+			: m_eAttackingPlayer(eAttackingPlayer), m_pAttacker(pAttacker),
+			m_bTestEnemy(bTestEnemy), m_bTestPotentialEnemy(bTestPotentialEnemy),
+			m_bTestVisible(bTestVisible), // advc.028
+			m_bTestCanAttack(bTestCanAttack), m_bTestAny(bTestAny), // advc
+			m_bTestCanMove(bTestCanMove)
+		{}
+		PlayerTypes m_eAttackingPlayer;
+		CvUnit const* m_pAttacker;
+		bool m_bTestEnemy, m_bTestPotentialEnemy,
+			m_bTestVisible, // advc.028
+			m_bTestCanAttack, m_bTestAny, // advc
+			m_bTestCanMove;
+	};
+
 	bool hasDefender(bool bCheckCanAttack, PlayerTypes eOwner, PlayerTypes eAttackingPlayer = NO_PLAYER, const CvUnit* pAttacker = NULL, bool bTestAtWar = false, bool bTestPotentialEnemy = false, bool bTestCanMove = false) const;
 	int AI_sumStrength(PlayerTypes eOwner, PlayerTypes eAttackingPlayer = NO_PLAYER, DomainTypes eDomainType = NO_DOMAIN, bool bDefensiveBonuses = true, bool bTestAtWar = false, bool bTestPotentialEnemy = false) const;
 	CvUnit* getSelectedUnit() const;
@@ -481,6 +508,10 @@ public:
 	void addUnit(CvUnit* pUnit, bool bUpdate = true);
 	void removeUnit(CvUnit* pUnit, bool bUpdate = true);
 	DllExport CLLNode<IDInfo>* nextUnitNode(CLLNode<IDInfo>* pNode) const;
+	CLLNode<IDInfo> const* nextUnitNodeInternal(CLLNode<IDInfo> const* pNode) const
+	{
+		return m_units.next(pNode);
+	}
 	CLLNode<IDInfo>* prevUnitNode(CLLNode<IDInfo>* pNode) const;
 	DllExport CLLNode<IDInfo>* headUnitNode() const;
 	CLLNode<IDInfo>* tailUnitNode() const;
@@ -516,6 +547,8 @@ public:
 	void writeDesyncLog(FILE *f);
 
 	int getTurnDamage() const;
+	
+	int plotNum() const { return getIndex(); }
 
 protected:
 

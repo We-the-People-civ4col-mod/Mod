@@ -2102,7 +2102,7 @@ bool CvSelectionGroup::canMoveThrough(CvPlot const& kPlot, bool bDeclareWar, boo
 }
 
 
-bool CvSelectionGroup::canFight()
+bool CvSelectionGroup::canFight() const
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;
@@ -3711,8 +3711,8 @@ bool CvSelectionGroup::addUnit(CvUnit* pUnit, bool bMinimalChange)
 	{
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		if (pLoopUnit != NULL && (
-			(pUnit->AI_groupFirstVal() > pLoopUnit->AI_groupFirstVal()) ||
-			  ((pUnit->AI_groupFirstVal() == pLoopUnit->AI_groupFirstVal()) &&
+			(pUnit->AI().AI_groupFirstVal() > pLoopUnit->AI().AI_groupFirstVal()) ||
+			  ((pUnit->AI().AI_groupFirstVal() == pLoopUnit->AI().AI_groupFirstVal()) &&
 				 (pUnit->AI_groupSecondVal() > pLoopUnit->AI_groupSecondVal()))))
 		{
 			m_units.insertBefore(pUnit->getIDInfo(), pUnitNode);
@@ -3846,7 +3846,7 @@ void CvSelectionGroup::mergeIntoGroup(CvSelectionGroup* pSelectionGroup)
 				// change this UnitAI to the old group UnitAI if possible
 				CvUnit* pNewHeadUnit = pSelectionGroup->getHeadUnit();
 				UnitAITypes eNewHeadUnitAI = pSelectionGroup->getHeadUnitAI();
-				if (pNewHeadUnit!= NULL && eUnitAI != eNewHeadUnitAI && pLoopUnit->AI_groupFirstVal() > pNewHeadUnit->AI_groupFirstVal())
+				if (pNewHeadUnit!= NULL && eUnitAI != eNewHeadUnitAI && pLoopUnit->AI().AI_groupFirstVal() > pNewHeadUnit->AI().AI_groupFirstVal())
 				{
 					// non-zero AI_unitValue means that this UnitAI is valid for this unit (that is the check used everywhere)
 					if (kPlayer.AI_unitValue(pLoopUnit->getUnitType(), eNewHeadUnitAI, NULL) > 0)

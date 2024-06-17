@@ -3,6 +3,11 @@
 #ifndef CVDEFINES_H
 #define CVDEFINES_H
 
+enum MovementFlags // advc.pf: Turned into an enum; exposed to Python (CyEnumsInterface).
+{
+	NO_MOVEMENT_FLAGS = 0,
+};
+
 // defines.h
 
 // The following #defines should not be moddable...

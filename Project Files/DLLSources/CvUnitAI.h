@@ -25,6 +25,7 @@ namespace
 }
 
 class CvCity;
+class CvSelectionGroupAI;
 
 class CvUnitAI : public CvUnit
 {
@@ -46,20 +47,29 @@ public:
 
 	void AI_promote();
 
-	int AI_groupFirstVal();
+	int AI_groupFirstVal() const;
 	int AI_groupSecondVal();
 
 	int AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy) const;
+	int AI_opportuneOdds(int iActualOdds, CvUnit const& kDefender) const; // advc
 
 	bool AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot = NULL, BuildTypes* peBestBuild = NULL, CvPlot* pIgnorePlot = NULL, CvUnit* pUnit = NULL);
 
 	bool AI_isCityAIType() const;
-
+	// <advc>
+	bool AI_mayAttack(TeamTypes eTeam, CvPlot const& kPlot) const; // Renamed from AI_potentialEnemy
+	bool AI_mayAttack(CvPlot const& kPlot) const; // Replacing CvUnit::potentialWarAction
+	bool AI_isPotentialEnemyOf(TeamTypes eTeam, CvPlot const& kPlot) const; // Moved from CvUnit
+	int AI_countEnemyDefenders(CvPlot const& kPlot) const; // Replacing CvPlot::getNumVisiblePotentialEnemyDefenders
+	bool AI_isAnyEnemyDefender(CvPlot const& kPlot) const;
+	// </advc>
 	int AI_getBirthmark() const;
 	void AI_setBirthmark(int iNewValue);
 
 	UnitAITypes AI_getUnitAIType() const;
 	void AI_setUnitAIType(UnitAITypes eNewValue);
+	CvSelectionGroupAI const* AI_getGroup() const; // advc.003u
+	CvSelectionGroupAI* AI_getGroup(); // advc.003u
 
 	UnitAIStates AI_getUnitAIState() const;
 	void AI_setUnitAIState(UnitAIStates eNewValue);
@@ -93,6 +103,13 @@ public:
 	bool AI_moveToCity(bool bUnload, CvCity* pCity);
 	//End TAC Whaling, ray
 	bool AI_africa();
+
+	// <advc.159>
+	int AI_currEffectiveStr(CvPlot const* pPlot = NULL, CvUnit const* pOther = NULL,
+		bool bCountCollateral = false, int iBaseCollateral = 0,
+		bool bCheckCanAttack = false,
+		int iCurrentHP = -1, bool bAssumePromotion = false) const; // advc.139
+	// </advc.159>
 
 protected:
 
@@ -406,6 +423,20 @@ protected:
 	void AI_sellYieldUnits(Port port);
 	void AI_unloadUnits(Port port);
 	void AI_automateSailTo(const SailToHelper& sth);
+
+	// <K-Mod>
+	bool AI_defendTerritory(int iThreshold, MovementFlags eFlags, int iMaxPathTurns,
+		bool bLocal = false);
+	bool AI_stackVsStack(int iSearchRange, int iAttackThreshold, int iRiskThreshold,
+		MovementFlags eFlags /* advc: */ = NO_MOVEMENT_FLAGS); // </K-Mod>
+
+	// K-Mod. I've created AI_omniGroup with the intention of using it to phase out AI_group and AI_groupMergeRange.
+	bool AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup = -1, int iMaxOwnUnitAI = -1,
+		bool bStackOfDoom = false, int iFlags = NO_MOVEMENT_FLAGS,
+		int iMaxPath = -1, bool bMergeGroups = true, bool bSafeOnly = true,
+		bool bIgnoreFaster = false, bool bIgnoreOwnUnitType = false,
+		bool bBiggerOnly = true, int iMinUnitAI = -1, bool bWithCargoOnly = false,
+		bool bIgnoreBusyTransports = false);
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;

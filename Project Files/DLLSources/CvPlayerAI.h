@@ -36,6 +36,41 @@ public:
 	void AI_uninit();
 	void AI_reset();
 
+#if 0
+	// <advc.003u> Access to AI-type members. Code mostly duplicated from CvPlayer.
+	CvCityAI* AI_getCapital() const {
+		return AI_getCity(m_iCapitalCityID);
+	}
+	CvCityAI* AI_firstCity(int* pIterIdx) const {
+		return m_cities.AI_beginIter(pIterIdx);
+	}
+	CvCityAI* AI_nextCity(int* pIterIdx) const {
+		return m_cities.AI_nextIter(pIterIdx);
+	}
+	CvCityAI* AI_getCity(int iID) const {
+		return m_cities.AI_getAt(iID);
+	}
+	CvUnitAI* AI_firstUnit(int* pIterIdx) const {
+		return m_units.AI_beginIter(pIterIdx);
+	}
+	CvUnitAI* AI_nextUnit(int* pIterIdx) const {
+		return m_units.AI_nextIter(pIterIdx);
+	}
+	CvUnitAI* AI_getUnit(int iID) const {
+		return m_units.AI_getAt(iID);
+	}
+	CvSelectionGroupAI* AI_firstSelectionGroup(int* pIterIdx) const {
+		return m_selectionGroups.AI_beginIter(pIterIdx);
+	}
+	CvSelectionGroupAI* AI_nextSelectionGroup(int* pIterIdx) const {
+		return m_selectionGroups.AI_nextIter(pIterIdx);
+	}
+	CvSelectionGroupAI* AI_getSelectionGroup(int iID) const {
+		return m_selectionGroups.AI_getAt(iID);
+	}
+	// </advc.003u>
+#endif
+
 	void AI_doTurnPre();
 	void AI_doTurnPost();
 	void AI_doTurnUnitsPre();
@@ -160,14 +195,20 @@ public:
 
 	int AI_areaMissionAIs(CvArea* pArea, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_adjacantToAreaMissionAIs(CvArea* pArea, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
+	
 	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
 	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
 	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes* aeMissionAI, int iMissionAICount, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
-
+	
+	// Note: First overload is a pure virtual and must be preserved as non-const
+	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL)
+	{
+		return AI_unitTargetMissionAIsInternal(pUnit, eMissionAI, pSkipSelectionGroup);
+	}
+	int AI_unitTargetMissionAIsInternal(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
 	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI);	// TAC - AI Attack City - koma13
-
 	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL);
+	
 	int AI_enemyTargetMissionAIs(MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_enemyTargetMissionAIs(MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_wakePlotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
@@ -465,8 +506,29 @@ public:
 	int AI_getColonialMilitaryModifier() const;
 	bool AI_shouldHurryUnit() const;
 
+	// K-Mod start
+	int AI_localDefenceStrength(const CvPlot* pDefencePlot,
+		TeamTypes eDefenceTeam = NO_TEAM, DomainTypes eDomainType = DOMAIN_LAND,
+		int iRange = 0, bool bMoveToTarget = true, bool bCheckMoves = false, bool bNoCache = false,
+		bool bPredictPromotions = false) const; // advc.139
+	int AI_localAttackStrength(const CvPlot* pTargetPlot,
+		TeamTypes eAttackTeam = NO_TEAM, DomainTypes eDomainType = DOMAIN_LAND,
+		int iRange = 2, bool bUseTarget = true, bool bCheckMoves = false, bool bCheckCanAttack = false,
+		int* piAttackerCount = NULL) const; // advc.139
+	int AI_cityTargetStrengthByPath(CvCity const* pCity, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const;
+	// K-Mod end
+
 	// TODO: Make protective and replace with a getter
 	int m_estimatedUnemploymentCount;
+
+	uint AI_unitImpassables(UnitTypes eUnit) const;
+	// advc.057:
+	bool AI_isAnyImpassable(UnitTypes eUnit) const
+	{
+		/*	BBAI note [moved from some call location]: For galleys, triremes, ironclads ...
+			unit types which are limited in what terrain they can operate in. */
+		return (AI_unitImpassables(eUnit) != 0u);
+	}
 
 protected:
 

@@ -4432,6 +4432,17 @@ void CvGame::setFinalInitialized(bool bNewValue)
 			/// PlotGroup - end - Nightinggale
 		}
 	}
+
+	// Init strength memory
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	{
+		// <advc.158>
+		if (GET_TEAM(eTeam).isAlive())
+		{
+			GET_TEAM(eTeam).AI_strengthMemory().init(
+				GC.getMap().numPlots(), GET_TEAM(eTeam).getID());
+		}
+	}
 }
 
 

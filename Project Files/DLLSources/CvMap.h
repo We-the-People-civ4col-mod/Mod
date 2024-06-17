@@ -16,6 +16,7 @@
 #include "CvArea.h"
 #include "CvPlot.h"
 
+#include "FAssert.h"
 
 class FAStar;
 
@@ -250,6 +251,12 @@ public:
 	{
 		return (((iIndex >= 0) && (iIndex < (getGridWidthINLINE() * getGridHeightINLINE()))) ? &(m_pMapPlots[iIndex]) : NULL);
 	}
+	// <advc.inl> Faster (w/o branching)
+	CvPlot& getPlotByIndex(int iIndex) const
+	{
+		//FAssertBounds(0, numPlots(), iIndex);
+		return m_pMapPlots[iIndex];
+	} // </advc.inl>
 
 	DllExport CvPlot* plot(int iX, int iY) const;
 	__forceinline CvPlot* plotINLINE(int iX, int iY) const

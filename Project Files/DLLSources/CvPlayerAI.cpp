@@ -5709,7 +5709,7 @@ int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMission
 */
 
 // TAC - AI Attack City - koma13 - START
-int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup)
+int CvPlayerAI::AI_unitTargetMissionAIsInternal(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup) const
 {
 	//return AI_unitTargetMissionAIs(pUnit, &eMissionAI, 1, pSkipSelectionGroup, -1);
 	return AI_unitTargetMissionAIs(pUnit, &eMissionAI, 1, pSkipSelectionGroup, -1, NO_UNITAI);
@@ -16577,4 +16577,291 @@ int CvPlayerAI::AI_estimateUnemploymentCount() const
 	}
 
 	return cnt;
+}
+
+// K-Mod
+/*	Total defensive strength of units friendly to us
+	that can move iRange steps to reach pDefencePlot */
+	/*  advc.159 (note): This is not simply the sum of the relevant combat strength values.
+		The result should only be compared with AI_localAttackStrength, AI_localDefenceStrength,
+		AI_cityTargetStrengthByPath or CvSelectionGroupAI::AI_sumStrength. */
+int CvPlayerAI::AI_localDefenceStrength(const CvPlot* pDefencePlot, TeamTypes eDefenceTeam,
+	DomainTypes eDomainType, int iRange, /* advc: renamed from "bAtTarget" */ bool bMoveToTarget,
+	bool bCheckMoves, bool bNoCache,
+	bool bPredictPromotions) const // advc.139
+{
+	PROFILE_FUNC();
+
+	int	iTotal = 0;
+
+	FAssert(bMoveToTarget || !bCheckMoves); // it doesn't make much sense to check moves if the defenders are meant to stay put.
+	FAssert(/*eDomainType != DOMAIN_AIR &&*/eDomainType != DOMAIN_IMMOBILE); // advc: Air combat strength isn't counted
+	int iDefenders = 0; // advc.159
+	//for (SquareIter it(*pDefencePlot, iRange); it.hasNext(); ++it)
+	FOR_EACH_PLOT_IN_RANGE_OF(pDefencePlot, iRange,
+	{
+		CvPlot const& p = *pLoopPlot;
+		if (!p.isVisible(getTeam(), false))
+			continue;
+
+		int iPlotTotal = 0;
+		//FOR_EACH_UNITAI_IN(pLoopUnit, p)
+		FOR_EACH_UNITAI_ON_PLOT(pLoopPlot)
+		{
+			CvUnitAI const& kUnit = *pLoopUnit;
+			// <advc.opt>
+			if (!kUnit.canFight())
+				continue; // </advc.opt>
+			// advc (note): This doesn't respect hidden nationality
+			if (kUnit.getTeam() == eDefenceTeam ||
+				/*(eDefenceTeam != NO_TEAM &&
+					GET_TEAM(kUnit.getTeam()).isVassal(eDefenceTeam)) ||*/
+				(eDefenceTeam == NO_TEAM &&
+					/*GET_TEAM(getTeam()).AI_mayAttack(kUnit.getTeam())))*/
+					isPotentialEnemy(getTeam(), eDefenceTeam)))
+			{
+				if (eDomainType != NO_DOMAIN && kUnit.getDomainType() != eDomainType)
+					continue;
+				// <advc.opt>
+				if (kUnit.isDead())
+					continue; // </advc.opt>
+				if (bCheckMoves)
+				{
+					/*	Unfortunately, we can't use the global pathfinder here
+						- because the calling function might be waiting
+						to use some pathfinding results.
+						So this check will have to be really rough. :( */
+					int iMoves = kUnit.baseMoves();
+					//if (p.isValidRoute(&kUnit, /* advc.001i: */ false)
+					if (p.isValidRoute(&kUnit))
+						iMoves++;
+					if (::stepDistance(pDefencePlot, pLoopPlot) > iMoves)
+						continue; // can't make it. (maybe?)
+				}
+				// <advc.139>
+				int iHP = kUnit.currHitPoints();
+				bool const bAssumePromo = (bPredictPromotions && kUnit.isPromotionReady());
+				if (bAssumePromo && kUnit.getDamage() > 0)
+				{
+					iHP += kUnit.promotionHeal();
+					iHP = std::min(kUnit.maxHitPoints(), iHP);
+				} // </advc.139>
+				int const iUnitStr = kUnit.currEffectiveStr(
+					bMoveToTarget ? pDefencePlot : &p, // </advc.159>
+					NULL);
+				iPlotTotal += iUnitStr;
+				iDefenders++; // advc.159
+			}
+		}
+		/*	since we're here, we might as well update our memory.
+			(human players don't track strength memory)
+			advc.158: They do track it now (unless bNoCache).
+			Note that this is currently the _only_ place where strength memory is set. */
+		if (!bNoCache && /*!isHuman() &&*/ eDefenceTeam == NO_TEAM &&
+			eDomainType == DOMAIN_LAND && !bCheckMoves &&
+			(!bMoveToTarget || &p == pDefencePlot))
+		{
+			GET_TEAM(getTeam()).AI_strengthMemory().set(p, iPlotTotal);
+			FAssert(isTurnActive());
+		}
+		iTotal += iPlotTotal;
+	}) // FOR_EACH
+	//return iTotal;
+	// <advc.159> Large defensive stacks are difficult to assail
+	iDefenders = std::min(iDefenders, 13);
+	return (iTotal * (75 + (iDefenders - 1))) / 75; // </advc.159>
+}
+
+/*	Total attack strength of units (potentially) hostile to us
+	that can move iRange steps to reach pAttackPlot.
+	advc.159: See note above AI_localDefenceStrength */
+int CvPlayerAI::AI_localAttackStrength(const CvPlot* pTargetPlot,
+	TeamTypes eAttackTeam, DomainTypes eDomainType, int iRange, bool bUseTarget,
+	bool bCheckMoves, bool bCheckCanAttack,
+	int* piAttackerCount) const // advc.139
+{
+	PROFILE_FUNC();
+
+	/*
+	int const iBaseCollateral = (bUseTarget ?
+		estimateCollateralWeight(pTargetPlot, getTeam()) :
+		estimateCollateralWeight(0, getTeam()));
+	*/
+	
+	int	iTotal = 0;
+	// <advc.139>
+	if (piAttackerCount != NULL)
+		*piAttackerCount = 0; // </advc.139>
+
+	//for (SquareIter it(*pTargetPlot, iRange); it.hasNext(); ++it)
+	FOR_EACH_PLOT_IN_RANGE_OF(pTargetPlot, iRange,
+	{
+		CvPlot const& p = *pLoopPlot;
+		if (!p.isVisible(getTeam(), false))
+			continue;
+		//FOR_EACH_UNITAI_IN(pLoopUnit, p)
+		FOR_EACH_UNITAI_ON_PLOT(pLoopPlot)
+		{
+			CvUnitAI const& kUnit = *pLoopUnit;
+			if (kUnit.getTeam() == eAttackTeam || (eAttackTeam == NO_TEAM &&
+				GET_TEAM(getTeam()).isAtWar(kUnit.getTeam())))
+			{
+				if (eDomainType == NO_DOMAIN || kUnit.getDomainType() == eDomainType)
+				{
+					if (!kUnit.canAttack()) // bCheckCanAttack means something else.
+						continue;
+					// <advc.315> See comment in AI_adjacentPotentialAttackers
+					if (kUnit.getUnitInfo().isOnlyDefensive())
+						continue; // </advc.315>
+					// <advc.139> Can happen when the call comes from AI_attackMadeAgainst
+					if (kUnit.isDead())
+						continue; // </advc.139>
+					if (bCheckMoves)
+					{
+						/*	can't use the global pathfinder here
+							(see comment in AI_localDefenceStrength) */
+						int iMoves = kUnit.baseMoves();
+						if (p.isValidRoute(&kUnit))
+							iMoves++;
+						if (::stepDistance(pTargetPlot, pLoopPlot) > iMoves)
+							continue; // can't make it. (maybe?)
+					}
+					if (bCheckCanAttack)
+					{
+						if (!kUnit.canMove() ||
+							(pLoopUnit->isMadeAttack() && !pLoopUnit->isBlitz()) ||
+							//kUnit.isMadeAllAttacks() || // advc.164
+							(bUseTarget /*&& kUnit.combatLimit() < 100*/ &&
+								p.isWater() && !pTargetPlot->isWater()))
+						{
+							continue; // can't attack
+						}
+					}
+					/*  <advc.159> Call AI_currEffectiveStr instead of currEffectiveStr.
+						Adjustments for first strikes and collateral damage are handled
+						by that new function. */
+					int const iUnitStr = kUnit.currEffectiveStr(
+						bUseTarget ? pTargetPlot : NULL, bUseTarget ? &kUnit : NULL); // </advc.159>
+					iTotal += iUnitStr;
+					// <advc.139>
+					/*
+					if (piAttackerCount != NULL && kUnit.getDamage() < 30)
+					{
+						// 80 is Cannon; don't count the early siege units.
+						if (kUnit.combatLimit() >= 80)
+							(*piAttackerCount)++;
+					} // </advc.139>
+					*/
+				}
+			}
+		}
+	}) // FOR_EACH
+	return iTotal;
+} // K-Mod end
+
+// BETTER_BTS_AI_MOD, General AI, 04/03/10, jdog5000:
+/*	K-Mod. I've changed this function to calculating the attack power of our groups,
+	rather than just the number of units. I've also changed it to use a separate instance
+	of the path finder, so that it doesn't reset the existing path data. */
+	//int CvPlayerAI::AI_cityTargetUnitsByPath(
+int CvPlayerAI::AI_cityTargetStrengthByPath(/* advc: */CvCity const* pCity,
+	CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const
+{
+	PROFILE_FUNC();
+
+	//int iCount = 0;
+	int iTotalStrength = 0;
+	//GroupPathFinder tempFinder;
+	//GroupPathFinder& tempFinder = CvSelectionGroup::getClearPathFinder(); // advc.opt
+	KmodPathFinder tempFinder;
+
+	FOR_EACH_GROUPAI(pLoopSelectionGroup, *this)
+	{
+		if (pLoopSelectionGroup == pSkipSelectionGroup ||
+			pLoopSelectionGroup->getNumUnits() <= 0)
+		{
+			continue;
+		}
+		FAssert(pLoopSelectionGroup->plot() != NULL); // K-Mod (was part of condition above)
+		CvPlot* const pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlotInternal();
+		if (pMissionPlot == NULL)
+			continue;
+
+		int iDistance = ::stepDistance(pCity->getX(), pCity->getY(),
+			pMissionPlot->getX(), pMissionPlot->getY());
+		if (iDistance <= 1 && pLoopSelectionGroup->canFight())
+		{	/*int iPathTurns;
+			if (pLoopSelectionGroup->generatePath(pLoopSelectionGroup->plot(), pMissionPlot, 0, true, &iPathTurns, iMaxPathTurns)) {
+				if (!pLoopSelectionGroup->canAllMove())
+					iPathTurns++;
+				if (iPathTurns <= iMaxPathTurns)
+					iCount += pLoopSelectionGroup->getNumUnits();
+			}*/ // BtS
+			//void SetSettings(const CvSelectionGroup * pGroup, int iFlags = 0, int iMaxPath = -1, int iHW = -1) { SetSettings(CvPathSettings(pGroup, iFlags, iMaxPath, iHW)); }
+
+			tempFinder.SetSettings(pLoopSelectionGroup, 0 /*NO_MOVEMENT_FLAGS*/,
+				iMaxPathTurns, GLOBAL_DEFINE_MOVE_DENOMINATOR);
+			if (tempFinder.GeneratePath(pMissionPlot))
+			{
+				iTotalStrength += pLoopSelectionGroup->AI_sumStrength(
+					pCity->plot(), DOMAIN_LAND);
+			}
+		}
+	}
+	//return iCount;
+	return iTotalStrength;
+}
+
+// advc.057: Renamed from "AI_unitImpassableCount"; return type was int.
+uint CvPlayerAI::AI_unitImpassables(UnitTypes eUnit) const
+{	// <advc.003t>
+#if 0
+	if (!GC.getInfo(eUnit).isAnyTerrainImpassable() &&
+		!GC.getInfo(eUnit).isAnyFeatureImpassable())
+	{
+		return 0; // </advc.003t>
+	}
+	uint uiCount = 0;
+	// <advc.057>
+	uint const uiCountBits = 3;
+	uint const uiFlagBits = std::numeric_limits<uint>::digits - uiCountBits;
+	uint const uiTerrains = (uint)GC.getNumTerrainInfos();
+	FAssert(uiTerrains + ((uint)GC.getNumFeatureInfos()) <= uiFlagBits);
+	uint uiFlags = 0; // </advc.057>
+	
+	FOR_EACH_ENUM(Terrain)
+	{
+		if (GC.getInfo(eUnit).getTerrainImpassable(eLoopTerrain))
+		{
+			TechTypes eTech = GC.getInfo(eUnit).getTerrainPassableTech(eLoopTerrain);
+			if (eTech == NO_TECH || !GET_TEAM(getTeam()).isHasTech(eTech))
+			{
+				uiCount++;
+				// advc.057:
+				uiFlags += 1u << std::min<uint>(uiFlagBits - 1, eLoopTerrain);
+			}
+		}
+	}
+	FOR_EACH_ENUM(Feature)
+	{
+		if (GC.getInfo(eUnit).getFeatureImpassable(eLoopFeature))
+		{
+			TechTypes eTech = GC.getInfo(eUnit).getFeaturePassableTech(eLoopFeature);
+			if (eTech == NO_TECH || !GET_TEAM(getTeam()).isHasTech(eTech))
+			{
+				uiCount++;
+				// advc.057:
+				uiFlags += 1u << std::min<uint>(uiFlagBits - 1,
+					uiTerrains + eLoopFeature);
+			}
+		}
+	}
+	//return iCount;
+	/*	<advc.057> Put the count in the most significant bits so that the return values
+		can be used for ordering units by count */
+	uiCount = std::min(uiCount, (1u << uiCountBits) - 1);
+	uiFlags |= (uiCount << uiFlagBits);
+	return uiFlags; // </advc.057>
+#endif
+	return 0;
 }
