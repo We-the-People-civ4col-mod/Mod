@@ -3711,8 +3711,8 @@ bool CvSelectionGroup::addUnit(CvUnit* pUnit, bool bMinimalChange)
 	{
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 		if (pLoopUnit != NULL && (
-			(pUnit->AI().AI_groupFirstVal() > pLoopUnit->AI().AI_groupFirstVal()) ||
-			  ((pUnit->AI().AI_groupFirstVal() == pLoopUnit->AI().AI_groupFirstVal()) &&
+			(pUnit->AI().AI_groupFirstValInternal() > pLoopUnit->AI().AI_groupFirstValInternal()) ||
+			  ((pUnit->AI().AI_groupFirstValInternal() == pLoopUnit->AI().AI_groupFirstValInternal()) &&
 				 (pUnit->AI_groupSecondVal() > pLoopUnit->AI_groupSecondVal()))))
 		{
 			m_units.insertBefore(pUnit->getIDInfo(), pUnitNode);

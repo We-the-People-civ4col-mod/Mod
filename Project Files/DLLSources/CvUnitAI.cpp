@@ -676,7 +676,7 @@ void CvUnitAI::AI_promote()
 }
 
 
-int CvUnitAI::AI_groupFirstVal() const
+int CvUnitAI::AI_groupFirstValInternal() const
 {
 	switch (AI_getUnitAIType())
 	{
@@ -19823,7 +19823,7 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 	CvPlayerAI const& kOwner = GET_PLAYER(getOwner());
 	/*	<advc.057> Except for assault groups, the head unit should have the
 		most restrictive impassable types. */
-	int const iOurGroupFirstVal = AI_groupFirstVal();
+	int const iOurGroupFirstVal = AI_groupFirstValInternal();
 	
 	uint uiOurMaxImpassables = kOwner.AI_unitImpassables(getUnitType());
 	if (AI_getUnitAIType() == UNITAI_ASSAULT_SEA)
@@ -19912,7 +19912,7 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 							kOwner.AI_unitImpassables(kUnit.getUnitType()));
 					}
 				}
-				int const iTheirGroupFirstValue = kHeadUnit.AI_groupFirstVal();
+				int const iTheirGroupFirstValue = kHeadUnit.AI_groupFirstValInternal();
 				/*	Disallow the group if we can't rule out that the impassable count
 					of the head will decrease. (Should really check for set inclusion,
 					i.e. the set of impassables of the leader needs to include all

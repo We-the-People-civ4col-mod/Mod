@@ -47,7 +47,9 @@ public:
 
 	void AI_promote();
 
-	int AI_groupFirstVal() const;
+	int AI_groupFirstVal() { return AI_groupFirstValInternal(); }
+	int AI_groupFirstValInternal() const;
+
 	int AI_groupSecondVal();
 
 	int AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy) const;
