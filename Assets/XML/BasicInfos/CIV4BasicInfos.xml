@@ -316,5 +316,10 @@
 			<Description>TXT_KEY_CONCEPT_NEW_MOVEMENT_SYSTEM</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_NEW_MOVEMENT_SYSTEM_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_PRODUCTION_CHAINS</Type>
+			<Description>TXT_KEY_CONCEPT_PRODUCTION_CHAINS</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_PRODUCTION_CHAINS_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>
