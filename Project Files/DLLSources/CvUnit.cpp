@@ -14342,14 +14342,14 @@ bool CvUnit::canApplyEvent(EventTypes eEvent) const
 		}
 	}
 
-	// R&R, ray, this is stupid non-sense for CivCol
-	//if (kEvent.getUnitImmobileTurns() > 0)
-	//{
-	//	if (!canAttack())
-	//	{
-	//		return false;
-	//	}
-	//}
+	// prevent immobilization events from stacking (happened to malaria, which caused the unit to be stuck seemingly forever)
+	if (kEvent.getUnitImmobileTurns() > 0)
+	{
+		if (getImmobileTimer() > 0)
+		{
+			return false;
+		}
+	}
 
 	return true;
 }
