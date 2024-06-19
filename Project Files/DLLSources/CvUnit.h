@@ -456,6 +456,7 @@ public:
 	void jumpTo(CvPlot *plot, bool bGroup = false, bool bUpdate = true, bool bShow = false, bool bCheckPlotVisible = false);
 	bool at(int iX, int iY) const;
 	bool at(Coordinates testCoord) const;
+	bool at(CvPlot const& kPlot) const { return atPlot(&kPlot); }
 	DllExport bool atPlot(const CvPlot* pPlot) const;
 	DllExport CvPlot* plot() const;
 	CvPlot& getPlot() const { return *plot(); } // advc
@@ -463,6 +464,7 @@ public:
 	int getArea() const;
 	int getLandArea() const;
 	CvArea* area() const;
+	bool sameArea(CvUnit const& kOther) const { return (area() == kOther.area()); }
 	int getLastMoveTurn() const;
 	void setLastMoveTurn(int iNewValue);
 	int getGameTurnCreated() const;
@@ -846,6 +848,8 @@ public:
 	void setAllowDangerousPath(bool bNewValue, bool bRefreshUi = false);
 	void groupTransportedYieldUnits(CvUnit* pYieldUnit);
 	bool isTempUnit() const;
+	bool canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage = false,								// Exposed to Python
+		CvArea const* pArea = NULL) const; // advc: canEnterArea merged into canEnterTerritory
 
 protected:
 

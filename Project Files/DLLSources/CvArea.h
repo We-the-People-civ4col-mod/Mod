@@ -60,7 +60,7 @@ public:
 	void changeNumRevealedTiles(TeamTypes eIndex, int iChange);
 	AreaAITypes getAreaAIType(TeamTypes eIndex) const;
 	void setAreaAIType(TeamTypes eIndex, AreaAITypes eNewValue);
-	CvCity* getTargetCity(PlayerTypes eIndex) const;
+	CvCity* AI_getTargetCity(PlayerTypes eIndex) const;
 	void setTargetCity(PlayerTypes eIndex, CvCity* pNewValue);
 	int getYieldRateModifier(PlayerTypes eIndex1, YieldTypes eIndex2) const;
 	void changeYieldRateModifier(PlayerTypes eIndex1, YieldTypes eIndex2, int iChange);

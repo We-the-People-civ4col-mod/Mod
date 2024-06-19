@@ -3355,4 +3355,57 @@ bool CvTeamAI::AI_mayAttack(CvPlot const& kPlot) const
 		NO_PLAYER, NO_TEAM, PUF_isVisible, ePlayer) != NULL); // </K-Mod>
 }
 
+// Returns true if eTeam is an actual colonial power that we can be in a real war with
+// other Europeans, natives and our king qualify
+// the church, barbarians/animals and other kings do not (and ofc our own team!)
+// TODO: result should be cached!
+bool CvTeamAI::AI_isColonialPower() const
+{
+	return (AI_isNative() || hasColonialPlayer());
+}
+
 // Private Functions...
+
+/*  BETTER_BTS_AI_MOD, War Strategy AI, 03/20/10, jdog5000: START
+	Compute power of enemies as percentage of our power */
+int CvTeamAI::AI_getEnemyPowerPercent(bool bConsiderOthers) const
+{
+	int iEnemyPower = 0;
+	
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	{
+		const CvTeamAI& kEnemy = GET_TEAM(eTeam);
+
+		if (eTeam == getID() || !kEnemy.isHasMet(getID()) || !kEnemy.isAlive() && !kEnemy.AI_isColonialPower())
+			continue;
+
+		if (isAtWar(kEnemy.getID()))
+		{
+			int iTempPower = 220 * kEnemy.getPower();
+			iTempPower /= (AI_hasCitiesInPrimaryArea(kEnemy.getID()) ? 2 : 3);
+			//iTempPower /= (kEnemy.isMinorCiv() ? 3 : 1);
+			iTempPower /= std::max(1, (bConsiderOthers ?
+				kEnemy.getNumWars() : 1));
+			iEnemyPower += iTempPower;
+		}
+		else if (AI_isChosenWar(kEnemy.getID())) // Haven't declared war yet
+			/*  advc.104j: getDefensivePower counts vassals already.
+				If planning war against multiple civs, DP allies could also be
+				double counted (fixme). Could collect the war enemies in a std::set
+				in a first pass; though it sucks to implement the vassal/DP logic
+				multiple times (already in getDefensivePower and MilitaryAnalyst).
+				Also, the computation for bConsiderOthers above can be way off. */
+		{
+			int iTempPower = 240 * kEnemy.getDefensivePower();
+			iTempPower /= (AI_hasCitiesInPrimaryArea(kEnemy.getID()) ? 2 : 3);
+			iTempPower /= 1 + (bConsiderOthers ? kEnemy.getNumWars() : 0);
+			iEnemyPower += iTempPower;
+		}
+	}
+
+	//return (iEnemyPower/std::max(1, (isAVassal() ? getCurrentMasterPower(true) : getPower(true))));
+	// K-Mod - Lets not rely too much on our vassals...
+	int iOurPower = getPower();
+	return iEnemyPower / std::max(1, iOurPower);
+	// K-Mod end
+}

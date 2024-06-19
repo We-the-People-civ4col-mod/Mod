@@ -279,7 +279,7 @@ public:
 	// (This had called CvMap::getArea in BtS)
 	//	inline CvArea* area() const { return m_pArea; }													// Exposed to Python
 	inline bool isArea(CvArea const& kArea) const { return (area() == &kArea); }
-	//inline bool sameArea(CvPlot const& kPlot) const { return isArea(kPlot.getArea()); }
+	inline bool sameArea(CvPlot const& kPlot) const { return isArea(*kPlot.area()); }
 	void setArea(int iNewValue);
 
 	//WTP, ray, Large Rivers - Nightinggale addition - start

@@ -5720,7 +5720,7 @@ int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI
 	return AI_unitTargetMissionAIs(pUnit, &eMissionAI, 1, pSkipSelectionGroup, -1, eUnitAI);
 }
 
-int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup)
+int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup) const
 {
 	//return AI_unitTargetMissionAIs(pUnit, aeMissionAI, iMissionAICount, pSkipSelectionGroup, -1);
 	return AI_unitTargetMissionAIs(pUnit, aeMissionAI, iMissionAICount, pSkipSelectionGroup, -1, NO_UNITAI);
@@ -16864,4 +16864,31 @@ uint CvPlayerAI::AI_unitImpassables(UnitTypes eUnit) const
 	return uiFlags; // </advc.057>
 #endif
 	return 0;
+}
+
+// just a stub for now
+bool CvPlayerAI::AI_isDoStrategy(AIStrategy eStrategy, /* advc.007: */ bool bDebug) const
+{
+#if 0
+	if (!isAlive() || isBarbarian() || isMinorCiv() ||
+		(isHuman() && /* advc.007: */ !bDebug))
+	{
+		return false;
+	}
+	return (eStrategy & AI_getStrategyHash());
+#endif
+	return true;
+}
+
+bool CvPlayerAI::AI_isLandWar(CvArea const& kArea) const
+{
+	switch (kArea.getAreaAIType(getTeam()))
+	{
+	case AREAAI_OFFENSIVE:
+	case AREAAI_MASSING:
+	case AREAAI_DEFENSIVE:
+		return true;
+	default:
+		return false;
+	}
 }

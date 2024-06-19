@@ -73,6 +73,8 @@ public:
 	bool hasMoved();
 	bool canEnterTerritory(PlayerTypes ePlayer, bool bIgnoreRightOfPassage = false) const;
 	bool canEnterArea(PlayerTypes ePlayer, const CvArea* pArea, bool bIgnoreRightOfPassage = false) const;
+	bool canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage = false) const;									// Exposed to Python
+	bool canEnterArea(TeamTypes eTeam, CvArea const& kArea, bool bIgnoreRightOfPassage = false) const;					// Exposed to Python
 	DllExport bool canMoveInto(CvPlot* pPlot, bool bAttack = false);
 	DllExport bool canMoveOrAttackInto(CvPlot* pPlot, bool bDeclareWar = false);
 	bool canMoveOrAttackInto(CvPlot const& kPlot, bool bDeclareWar = false, bool bCheckMoves = false, bool bAssumeVisible = true) const;
@@ -113,7 +115,8 @@ public:
 	bool groupPathTo(int iX, int iY, int iFlags);
 	bool groupRouteTo(int iX, int iY, int iFlags, RouteTypes ePreferredRoute = ROUTE_PLASTERED_ROAD);
 	bool groupBuild(BuildTypes eBuild);
-	void setTransportUnit(CvUnit* pTransportUnit);
+	void setTransportUnit(CvUnit* pTransportUnit,
+		CvSelectionGroup** pOtherGroup = NULL); // BBAI
 	bool isAmphibPlot(const CvPlot* pPlot) const;
 	bool groupAmphibMove(CvPlot* pPlot, int iFlags);
 	DllExport bool readyToSelect(bool bAny = false);
@@ -161,7 +164,7 @@ public:
 	DllExport bool addUnit(CvUnit* pUnit, bool bMinimalChange);
 	void removeUnit(CvUnit* pUnit);
 	void mergeIntoGroup(CvSelectionGroup* pSelectionGroup);
-	CvSelectionGroup* splitGroup(int iSplitSize, CvUnit* pNewHeadUnit = NULL);
+	CvSelectionGroup* splitGroup(int iSplitSize, CvUnit* pNewHeadUnit = NULL, CvSelectionGroup** ppOtherGroup = NULL);
 
 	DllExport CLLNode<IDInfo>* deleteUnitNode(CLLNode<IDInfo>* pNode);
 	DllExport inline CLLNode<IDInfo>* nextUnitNode(CLLNode<IDInfo>* pNode) const

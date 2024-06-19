@@ -552,34 +552,75 @@ int CvSelectionGroupAI::AI_compareStacks(const CvPlot* pPlot, bool bPotentialEne
 	return compareRatio;
 }
 
-int CvSelectionGroupAI::AI_sumStrength(const CvPlot* pAttackedPlot, DomainTypes eDomainType, bool bCheckCanAttack, bool bCheckCanMove) const
+/*  K-Mod. I've removed bCheckMove, and changed bCheckCanAttack to include checks
+	for moves, and for hasAlreadyAttacked / blitz */
+	/*  advc.159: No longer simply a sum of combat strength values; see the comment
+		above CvPlayerAI::AI_localDefenceStrength. */
+int CvSelectionGroupAI::AI_sumStrengthInternal(const CvPlot* pAttackedPlot,
+	DomainTypes eDomainType, bool bCheckCanAttack) const
 {
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	int	strSum = 0;
-
-	pUnitNode = headUnitNode();
-
-	while (pUnitNode != NULL)
+	FAssert(eDomainType != DOMAIN_IMMOBILE); // advc: Air combat strength isn't counted
+	// <K-Mod>
+	bool const bDefenders = (pAttackedPlot ?
+		pAttackedPlot->isVisibleEnemyUnit(getHeadOwner()) : false);
+	//bool const bCountCollateral = (pAttackedPlot && pAttackedPlot != plot()); // </K-Mod>
+	//int const iBaseCollateral = (bCountCollateral ?
+	//	estimateCollateralWeight(pAttackedPlot, getTeam()) : 0);
+	int	iSum = 0;
+	FOR_EACH_UNITAI_IN(pUnit, *this)
 	{
-		pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
-
-		if (pLoopUnit != NULL && !pLoopUnit->isDead())
+		if (pUnit->isDead() ||
+			// advc.opt: (If we want to count air units, then this'll have to be removed.)
+			!pUnit->canFight())
 		{
-			bool bCanAttack = pLoopUnit->canAttack();
-
-			if (!bCheckCanAttack || bCanAttack)
-			{
-				if (!bCheckCanMove || pLoopUnit->canMove())
-					if (!bCheckCanMove || pAttackedPlot == NULL || pLoopUnit->canMoveInto(*pAttackedPlot, /*bAttack*/ true, /*bDeclareWar*/ true))
-						if (eDomainType == NO_DOMAIN || pLoopUnit->getDomainType() == eDomainType)
-							strSum += pLoopUnit->currEffectiveStr(pAttackedPlot, pLoopUnit);
-			}
+			continue;
 		}
-	}
+		if (eDomainType != NO_DOMAIN && pUnit->getDomainType() != eDomainType)
+			continue; // advc: Moved up
+		// K-Mod. (original checks deleted.)
+		if (bCheckCanAttack)
+		{
+			// advc.opt: currEffectiveStr is 0 for air units anyway
+			/*if (pUnit->getDomainType() == DOMAIN_AIR)
+			{
+				if (!pUnit->canAirAttack() || !pUnit->canMove() ||
+					(pAttackedPlot != NULL && bDefenders &&
+					!pUnit->canMoveInto(*pAttackedPlot, true, true)))
+				{
+					continue; // can't attack.
+				}
+			}
+			else*/
+			if (!pUnit->canAttack() || !pUnit->canMove() ||
+				(pAttackedPlot && bDefenders &&
+					!pUnit->canMoveInto(*pAttackedPlot, true, true)) ||
+				//(!pUnit->isBlitz() && pUnit->isMadeAttack())
+				//pUnit->isMadeAllAttacks()) // advc.164
+				pUnit->isMadeAttack())
+			{
+				continue; // can't attack.
+			}
+		} // K-Mod end
 
-	return strSum;
+		// iSum += pLoopUnit->currEffectiveStr(pAttackedPlot, pLoopUnit);
+		/*	K-Mod estimate the value of first strike
+			and the attack power of collateral units.
+			(cf with calculation in CvPlayerAI::AI_localAttackStrength) */
+			/*  <advc.159> Call AI_currEffectiveStr instead of currEffectiveStr.
+				Adjustments for first strikes and collateral damage moved into
+				that new function. */
+		/*
+		int const iUnitStr = pUnit->AI_currEffectiveStr(pAttackedPlot, pUnit,
+			bCountCollateral, iBaseCollateral, bCheckCanAttack);
+		*/
+		// WTP: No collateral damage support
+		int const iUnitStr = pUnit->AI_currEffectiveStr(pAttackedPlot, pUnit,
+			false, 0, bCheckCanAttack);
+		// </advc.159>
+		iSum += iUnitStr;
+		// K-Mod end
+	}
+	return iSum;
 }
 
 void CvSelectionGroupAI::AI_queueGroupAttack(int iX, int iY)
@@ -1630,3 +1671,49 @@ CvUnitAI* CvSelectionGroupAI::AI_getHeadUnit()
 	CLLNode<IDInfo>* pNode = headUnitNode();
 	return (pNode != NULL ? static_cast<CvUnitAI*>(::getUnit(pNode->m_data)) : NULL);
 } // </advc.003u>
+
+inline int uceil(int iDividend, int iDivisor)
+{
+	FAssert(iDividend >= 0 && iDivisor > 0);
+	return (iDividend + iDivisor - 1) / iDivisor;
+}
+
+/*	BETTER_BTS_AI_MOD, 08/19/09 and 03/30/10, jdog5000 (General AI): START
+	(advc: Moved from CvSelectionGroup) */
+// Approximate how many turns this group would take to reduce pCity's defense to zero
+int CvSelectionGroupAI::AI_getBombardTurns(CvCity const* pCity) const
+{
+	PROFILE_FUNC();
+	bool const bHasBomber = false; // (getOwner() != NO_PLAYER ?
+	//		GET_PLAYER(getOwner()).AI_isDomainBombard(DOMAIN_AIR) : false);
+	int iTotalBombardRate = (bHasBomber ? 16 : 0);
+	bool bIgnoreBuildingDefense = bHasBomber;
+	int iUnitBombardRate = 0;
+	FOR_EACH_UNIT_IN(pUnit, *this)
+	{
+		if (pUnit->bombardRate() <= 0)
+			continue;
+		iUnitBombardRate = pUnit->bombardRate();
+		/* WTP: Not supported-
+		if (pUnit->ignoreBuildingDefense())
+			bIgnoreBuildingDefense = true;
+		else
+		*/ 
+		{
+			iUnitBombardRate *= std::max(25, 100 - pCity->getBuildingBombardDefense());
+			iUnitBombardRate /= 100;
+		}
+		iTotalBombardRate += iUnitBombardRate;
+	}
+	// advc (minor bugfix?): BBAI had not passed bIgnoreBuildingDefense consistently
+	int const iTotalDefense = pCity->getTotalDefense(/*bIgnoreBuildingDefense*/);
+	if (iTotalDefense <= 0)
+		return 0;
+	int const iHP = GC.getMAX_CITY_DEFENSE_DAMAGE() - pCity->getDefenseDamage();
+	if (iHP <= 0)
+		return 0;
+	int iBombardTurns = uceil(iHP * iTotalDefense,
+			std::max(1, GC.getMAX_CITY_DEFENSE_DAMAGE() * iTotalBombardRate));
+	//if (gUnitLogLevel > 2) logBBAI("      Bombard of %S will take %d turns at rate %d and current damage %d with bombard def %d", pCity->getName().GetCString(), iBombardTurns, iTotalBombardRate, pCity->getDefenseDamage(), (bIgnoreBuildingDefense ? 0 : pCity->getBuildingBombardDefense()));
+	return iBombardTurns;
+}
