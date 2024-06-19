@@ -289,11 +289,11 @@ void CvArea::setAreaAIType(TeamTypes eIndex, AreaAITypes eNewValue)
 }
 
 
-CvCity* CvArea::getTargetCity(PlayerTypes eIndex) const
+CvCity* CvArea::AI_getTargetCity(PlayerTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be >= 0");
 	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be < MAX_PLAYERS");
-	return getCity(m_aTargetCities[eIndex]);
+	return ::getCity(m_aTargetCities[eIndex]);
 }
 
 

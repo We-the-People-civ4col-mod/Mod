@@ -3097,3 +3097,24 @@ void CvTeam::write(FDataStreamBase* pStream)
 	write(writer);
 	writerbase.WriteFile();
 }
+
+// BETTER_BTS_AI_MOD, General AI, 07/20/09, jdog5000: START
+int CvTeam::getNumWars() const
+{	
+	int iCount = 0;
+
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	{
+		if (eTeam == getID())
+			continue;
+
+		if (GET_TEAM(eTeam).isAlive())
+		{
+			if (GET_TEAM(getID()).isAtWar(eTeam))
+			{
+				iCount++;
+			}
+		}
+	}
+	return iCount;
+}

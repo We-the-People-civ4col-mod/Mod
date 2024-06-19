@@ -8,6 +8,7 @@
 #include "CvPlayer.h"
 #include "CvPlayerCivEffect.h"
 #include "CvTradeRouteGroup.h"
+#include "AIStrategies.h" // advc.enum
 
 class CvEventTriggerInfo;
 
@@ -207,7 +208,7 @@ public:
 	}
 	int AI_unitTargetMissionAIsInternal(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
 	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI);	// TAC - AI Attack City - koma13
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL);
+	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
 	
 	int AI_enemyTargetMissionAIs(MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_enemyTargetMissionAIs(MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL);
@@ -529,6 +530,9 @@ public:
 			unit types which are limited in what terrain they can operate in. */
 		return (AI_unitImpassables(eUnit) != 0u);
 	}
+
+	bool AI_isDoStrategy(AIStrategy eStrategy, /* advc.007: */ bool bDebug = false) const;
+	bool AI_isLandWar(CvArea const& kArea) const; // K-Mod
 
 protected:
 

@@ -54,4 +54,66 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
     for (CvSelectionGroupAI* pLoopGroup = static_cast<CvSelectionGroupAI*>((kOwner).firstSelectionGroup(&UNIQUE_VAR(iLoop))); \
          pLoopGroup != NULL; pLoopGroup = static_cast<CvSelectionGroupAI*>((kOwner).nextSelectionGroup(&UNIQUE_VAR(iLoop))))
 
+#define FOR_EACH_UNITAI_VAR(pLoopUnit, kOwner) \
+    for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
+    for (CvUnitAI* pLoopUnit = static_cast<CvUnitAI*>((kOwner).firstUnit(&UNIQUE_VAR(iLoop))); \
+         pLoopUnit != NULL; pLoopUnit = static_cast<CvUnitAI*>((kOwner).nextUnit(&UNIQUE_VAR(iLoop))))
+
+// TODO: should this use const units?
+#define FOR_EACH_UNIT_IN(pLoopUnit, kGroup) \
+    for (CLLNode<IDInfo>* pUnitNode = (kGroup).headUnitNode(); pUnitNode != NULL; pUnitNode = (kGroup).nextUnitNode(pUnitNode)) \
+        if (CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data)) \
+            if (pLoopUnit != NULL)
+
+#define FOR_EACH_UNITAI_IN(pLoopUnit, kGroup) \
+    for (CLLNode<IDInfo>* pUnitNode = (kGroup).headUnitNode(); pUnitNode != NULL; pUnitNode = (kGroup).nextUnitNode(pUnitNode)) \
+        if (const CvUnitAI* pLoopUnit = static_cast<const CvUnitAI*>(::getUnit(pUnitNode->m_data))) \
+            if (pLoopUnit != NULL)
+
+#define FOR_EACH_UNIT_VAR_IN(pLoopUnit, kGroup) \
+    for (CLLNode<IDInfo>* pUnitNode = (kGroup).headUnitNode(); pUnitNode != NULL; pUnitNode = (kGroup).nextUnitNode(pUnitNode)) \
+        if (CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data)) \
+            if (pLoopUnit != NULL)
+
+// TODO: What about checking if we have met the player ?
+/*
+#define FOR_EACH_OTHER_ALIVE_POTENTIAL_ENEMY_COLONIAL_POWER_TEAM(id, teamVar, ACTION) \
+    for (int iI = 0; iI < MAX_TEAMS; iI++) { \
+        const CvTeamAI& teamVar = GET_TEAM(iI); \
+        if (iI != id && teamVar.isAlive() && teamVar.AI_isColonialPower()) { \
+            ACTION; \
+        } \
+    }
+*/
+
+/*
+#define FOR_EACH_OTHER_ALIVE_POTENTIAL_ENEMY_COLONIAL_POWER_TEAM(teamId, kTeam, ACTION) \
+    for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam) { \
+        if (eTeam != (teamId)) { \
+            const CvTeamAI& kTeam = GET_TEAM(eTeam); \
+            ACTION; \
+        } \
+    }
+*/
+/*
+#define FOR_EACH_TEAM(kTeam, ACTION) \
+    do { \
+        for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam) { \
+            const CvTeamAI& (kTeam) = GET_TEAM(eTeam); \
+            ACTION; \
+        } \
+    } while (0)
+ */
+
+/*
+#define FOR_EACH_TEAM(kTeam, ACTION) \
+    for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam) \
+        if (1) \
+        { \
+    		const CvTeamAI& kTeam = GET_TEAM(eTeam); \
+            ACTION; \
+        } \
+ */
+
+
 #endif

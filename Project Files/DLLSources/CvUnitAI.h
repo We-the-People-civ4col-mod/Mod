@@ -113,6 +113,8 @@ public:
 		int iCurrentHP = -1, bool bAssumePromotion = false) const; // advc.139
 	// </advc.159>
 
+	void AI_attackCityMove_advciv();
+
 protected:
 
 	void AI_resetSavedData();
@@ -264,8 +266,13 @@ protected:
 	//bool AI_group(UnitAITypes eUnitAI, int iMaxGroup = -1, int iMaxOwnUnitAI = -1, int iMinUnitAI = -1, bool bIgnoreFaster = false, bool bIgnoreOwnUnitType = false, bool bStackOfDoom = false, int iMaxPath = MAX_INT, bool bAllowRegrouping = false);
 	bool AI_group(UnitAITypes eUnitAI, int iMaxGroup = -1, int iMaxOwnUnitAI = -1, int iMinUnitAI = -1, bool bIgnoreFaster = false, bool bIgnoreOwnUnitType = false, bool bStackOfDoom = false, int iMaxPath = MAX_INT, bool bAllowRegrouping = false, bool bWithCargoOnly = false, bool bInCityOnly = false, MissionAITypes eIgnoreMissionAIType = NO_MISSIONAI);
 	// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - END
-
-	bool AI_load(UnitAITypes eUnitAI, MissionAITypes eMissionAI, UnitAITypes eTransportedUnitAI = NO_UNITAI, int iMinCargo = -1, int iMinCargoSpace = -1, int iMaxCargoSpace = -1, int iMaxCargoOurUnitAI = -1, int iFlags = 0, int iMaxPath = MAX_INT);
+	bool AI_load(UnitAITypes eUnitAI, MissionAITypes eMissionAI,
+		UnitAITypes eTransportedUnitAI = NO_UNITAI, int iMinCargo = -1,
+		int iMinCargoSpace = -1, int iMaxCargoSpace = -1,
+		int iMaxCargoOurUnitAI = -1, MovementFlags eFlags = NO_MOVEMENT_FLAGS, int iMaxPath = MAX_INT,
+		// BETTER_BTS_AI_MOD, War tactics AI, Unit AI, 04/18/10, jdog5000:
+		int iMaxTransportPath = MAX_INT);
+	
 	bool AI_guardCityBestDefender();
 	bool AI_guardCityMinDefender();
 	bool AI_guardCity(bool bAll = false, int iMaxPath = MAX_INT);
@@ -440,9 +447,21 @@ protected:
 		bool bBiggerOnly = true, int iMinUnitAI = -1, bool bWithCargoOnly = false,
 		bool bIgnoreBusyTransports = false);
 
+	bool AI_singleUnitHeal(int iMaxTurnsExposed = 1, int iMaxTurnsOutsideCity = 3);
+	bool AI_stackAttackCity_advciv(int iPowerThreshold);
+	bool AI_considerDOW(CvPlot const& kPlot); // K-Mod
+	bool AI_considerPathDOW(CvPlot* pPlot, MovementFlags eFlags); // K-Mod
+	// advc.012: CvUnit::plot if pPlot=NULL; cf. CvTeamAI::plotDefense.
+	int AI_plotDefense(CvPlot const* pPlot = NULL) const;
+	// K-Mod
+	CvUnit* AI_findTransport(UnitAITypes eUnitAI, MovementFlags eFlags = NO_MOVEMENT_FLAGS,
+		int iMaxPath = MAX_INT, UnitAITypes ePassengerAI = NO_UNITAI,
+		int iMinCargo = -1, int iMinCargoSpace = -1, int iMaxCargoSpace = -1,
+		int iMaxCargoOurUnitAI = -1);
+	// K-Mod end
+
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;
-
 };
-
+	
 #endif

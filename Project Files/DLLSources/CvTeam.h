@@ -214,6 +214,8 @@ public:
 	virtual bool AI_isSneakAttackReady(TeamTypes eIndex) const = 0;
 	virtual void AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar = true) = 0;
 
+	int getNumWars() const;
+
 protected:
 
 	int m_iNumMembers;

@@ -227,8 +227,11 @@ public:
 	bool at(Coordinates coord) const;
 	bool at(const CvPlot* pPlot) const;
 	DllExport CvPlot* plot() const;
+	const CvPlot& getPlot() { return *plot(); }
 	int getArea() const;
 	DllExport CvArea* area() const;
+	bool isArea(CvArea const& kArea) const { return (area() == &kArea); }
+
 	CvArea* waterArea() const;
 
 	CvPlot* getRallyPlot() const;

@@ -1727,7 +1727,7 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 							szString.append(NEWLINE);
 							CvWString szTempBuffer;
 
-							CvCity* pTargetCity = pPlot->area()->getTargetCity(pHeadGroup->getOwner());
+							CvCity* pTargetCity = pPlot->area()->AI_getTargetCity(pHeadGroup->getOwner());
 							if (pTargetCity != NULL)
 							{
 								szString.append(CvWString::format(L"\nTarget City: %s (%s)", pTargetCity->getName().c_str(), GET_PLAYER(pTargetCity->getOwner()).getName()));
@@ -2691,7 +2691,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 		// R&R, ray, Natives raiding party - START
 		if (pPlot->isOwned())
 		{
-			CvCity* pTargetCity = pPlot->area()->getTargetCity(pPlot->getOwner());
+			CvCity* pTargetCity = pPlot->area()->AI_getTargetCity(pPlot->getOwner());
 			if (pTargetCity != NULL)
 			{
 				szString.append(CvWString::format(L"\nTarget City: %s", pTargetCity->getName().c_str()));

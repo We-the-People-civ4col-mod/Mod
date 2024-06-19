@@ -132,6 +132,7 @@ std::string GetDLLPath(bool bLoadDLLPath = true);
 #include "NiAnimationKey.h"
 
 #include "BitFunctions.h"
+//#include "ArithmeticUtils.h" // advc
 
 #include "CvMacros.h"
 #include "FAssert.h"

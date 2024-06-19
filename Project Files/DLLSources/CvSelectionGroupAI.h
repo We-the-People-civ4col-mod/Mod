@@ -35,7 +35,14 @@ public:
 	CvUnitAI* AI_getBestGroupAttacker(const CvPlot* pPlot, bool bPotentialEnemy, int& iUnitOdds, bool bForce = false, bool bNoBlitz = false) const;
 	CvUnitAI* AI_getBestGroupSacrifice(const CvPlot* pPlot, bool bPotentialEnemy, bool bForce = false, bool bNoBlitz = false) const;
 	int AI_compareStacks(const CvPlot* pPlot, bool bPotentialEnemy, bool bCheckCanAttack = false, bool bCheckCanMove = false) const;
-	int AI_sumStrength(const CvPlot* pAttackedPlot = NULL, DomainTypes eDomainType = NO_DOMAIN, bool bCheckCanAttack = false, bool bCheckCanMove = false) const;
+	int AI_sumStrength(const CvPlot* pAttackedPlot = NULL, DomainTypes eDomainType = NO_DOMAIN, bool bCheckCanAttack = false, bool bCheckCanMove = false) const
+	{
+		return AI_sumStrengthInternal(pAttackedPlot, eDomainType, bCheckCanAttack); // K-Mod has removed bCheckCanMove
+	}
+	
+	int AI_sumStrengthInternal(const CvPlot* pAttackedPlot = NULL, DomainTypes eDomainType = NO_DOMAIN,
+		bool bCheckCanAttack = false) const;
+
 	void AI_queueGroupAttack(int iX, int iY);
 	void AI_cancelGroupAttack();
 	bool AI_isGroupAttack();
@@ -51,6 +58,7 @@ public:
 	bool AI_isForceSeparateInternal() const;
 	
 	void AI_makeForceSeparate();
+	void AI_setForceSeparate(bool bNewValue = true) { m_bForceSeparate = bNewValue; } // K-Mod
 
 	MissionAITypes AI_getMissionAIType() { return AI_getMissionAITypeInternal(); }
 	MissionAITypes AI_getMissionAITypeInternal() const;
@@ -80,6 +88,8 @@ public:
 	// <advc.003u> Counterparts to CvSelectionGroup::getHeadUnit
 	CvUnitAI const* AI_getHeadUnit() const;
 	CvUnitAI* AI_getHeadUnit(); // </advc.003u>
+
+	int AI_getBombardTurns(CvCity const* pCity) const;
 
 	enum UnloadMode
 	{

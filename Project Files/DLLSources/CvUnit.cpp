@@ -9341,7 +9341,7 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 	}
 
 	// calc attacker bonueses
-	if (pAttacker != NULL)
+	if (pAttacker != NULL && pAttackedPlot != NULL)
 	{
 		int iTempModifier = 0;
 
@@ -16851,4 +16851,30 @@ void CvUnit::pushGroupMoveTo(CvPlot const& kTo, MovementFlags eFlags,
 	FAssert(!atPlot(&kTo));
 	getGroup()->pushMission(MISSION_MOVE_TO, kTo.getX(), kTo.getY(), eFlags,
 		bAppend, bManual, eMissionAI, pMissionAIPlot, pMissionAIUnit);
+}
+
+bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage,
+	CvArea const* pArea) const // advc.030
+{
+	// <advc.030> Moved from deleted function "canEnterArea" (that name was confusing)
+	if (pArea != NULL && isBarbarian() && DOMAIN_LAND == getDomainType() &&
+		eTeam != NO_TEAM && eTeam != getTeam())
+	{
+		return false;
+	} // </advc.030>
+	if (GET_TEAM(getTeam()).isFriendlyTerritory(eTeam) || eTeam == NO_TEAM ||
+		isEnemy(eTeam) || isRivalTerritory() ||
+		alwaysInvisible() || m_pUnitInfo->isHiddenNationality())
+	{
+		return true;
+	}
+
+	if (!bIgnoreRightOfPassage)
+	{
+		if (GET_TEAM(getTeam()).isOpenBorders(eTeam))
+		{
+			return true;
+		}
+	}
+	return false;
 }

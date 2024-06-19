@@ -3106,76 +3106,80 @@ bool CvSelectionGroup::groupBuild(BuildTypes eBuild)
 	return bContinue;
 }
 
-void CvSelectionGroup::setTransportUnit(CvUnit* pTransportUnit)
+void CvSelectionGroup::setTransportUnit(CvUnit* pTransportUnit,
+	CvSelectionGroup** pOtherGroup) // BETTER_BTS_AI_MOD, General AI, 04/18/10, jdog5000
 {
-	// if we are loading
-	if (pTransportUnit != NULL)
+	if (pTransportUnit != NULL) // if we are loading
 	{
 		CvUnit* pHeadUnit = getHeadUnit();
 		FAssertMsg(pHeadUnit != NULL, "non-zero group without head unit");
 
-		int iCargoSpaceAvailable = pTransportUnit->cargoSpaceAvailable(pHeadUnit->getSpecialUnitType(), pHeadUnit->getDomainType());
+		int iCargoSpaceAvailable = pTransportUnit->cargoSpaceAvailable(
+			pHeadUnit->getSpecialUnitType(), pHeadUnit->getDomainType());
 
 		// if no space at all, give up
 		if (iCargoSpaceAvailable < 1)
-		{
 			return;
-		}
 
-		// if there is space, but not enough to fit whole group, then split us, and set on the new group
+		/*	if there is space, but not enough to fit whole group,
+			then split us, and set on the new group */
 		if (iCargoSpaceAvailable < getNumUnits())
 		{
-			CvSelectionGroup* pSplitGroup = splitGroup(iCargoSpaceAvailable);
-			pSplitGroup->setTransportUnit(pTransportUnit);
+			CvSelectionGroup* pSplitGroup = splitGroup(iCargoSpaceAvailable, NULL,
+				pOtherGroup); // BETTER_BTS_AI_MOD, General AI, 04/18/10, jdog5000
+			if (pSplitGroup != NULL)
+				pSplitGroup->setTransportUnit(pTransportUnit);
+			/*	advc.test: We shouldn't have split the group then; not sure how to
+				guard against that though. Cf. issue #329 on the C2C GitHub page.
+				Let's first of all see if this even occurs in AdvCiv. */
+			FAssertMsg(pSplitGroup != NULL, "Probably no error but sth. to investigate");
 			return;
 		}
 
 		FAssertMsg(iCargoSpaceAvailable >= getNumUnits(), "cargo size too small");
 
-		// setTransportUnit removes the unit from the current group (at least currently), so we have to be careful in the loop here
-		// so, loop until we do not load one
+		/*	setTransportUnit removes the unit from the current group (at least currently),
+			so we have to be careful in the loop here.
+			so, loop until we do not load one. */
 		bool bLoadedOne;
 		do
 		{
 			bLoadedOne = false;
-
 			// loop over all the units, finding one to load
-			CLLNode<IDInfo>* pUnitNode = headUnitNode();
-			while (pUnitNode != NULL && !bLoadedOne)
+			FOR_EACH_UNIT_VAR_IN(pLoopUnit, *this)
 			{
-				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = nextUnitNode(pUnitNode);
-
-				// just in case implementation of setTransportUnit changes, check to make sure this unit is not already loaded
-				if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() != pTransportUnit)
+				if (pLoopUnit == NULL)
 				{
-					// if there is room, load the unit and stop the loop (since setTransportUnit ungroups this unit currently)
-					bool bSpaceAvailable = pTransportUnit->cargoSpaceAvailable(pLoopUnit->getSpecialUnitType(), pLoopUnit->getDomainType());
-					if (bSpaceAvailable)
+					FAssertMsg(pLoopUnit != NULL, "Can this happen?"); // advc.test
+					continue;
+				}
+				/*	just in case implementation of setTransportUnit changes,
+					check to make sure this unit is not already loaded */
+				if (pLoopUnit->getTransportUnit() != pTransportUnit)
+				{
+					/*	if there is room, load the unit and stop the loop
+						(since setTransportUnit ungroups this unit currently) */
+					if (pTransportUnit->cargoSpaceAvailable(pLoopUnit->getSpecialUnitType(),
+						pLoopUnit->getDomainType()) > 0)
 					{
 						pLoopUnit->setTransportUnit(pTransportUnit);
 						bLoadedOne = true;
+						break;
 					}
 				}
 			}
-		}
-		while (bLoadedOne);
+		} while (bLoadedOne);
 	}
-	// otherwise we are unloading
-	else
+	else // otherwise we are unloading
 	{
-		// loop over all the units, unloading them
-		CLLNode<IDInfo>* pUnitNode = headUnitNode();
-		while (pUnitNode != NULL)
+		FOR_EACH_UNIT_VAR_IN(pLoopUnit, *this)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = nextUnitNode(pUnitNode);
-
-			if (pLoopUnit != NULL)
+			if (pLoopUnit == NULL)
 			{
-				// unload unit
-				pLoopUnit->setTransportUnit(NULL);
+				FAssertMsg(pLoopUnit != NULL, "Can this happen?"); // advc.test
+				continue;
 			}
+			pLoopUnit->setTransportUnit(NULL); // unload unit
 		}
 	}
 }
@@ -3867,11 +3871,14 @@ void CvSelectionGroup::mergeIntoGroup(CvSelectionGroup* pSelectionGroup)
 
 // split this group into two new groups, one of iSplitSize, the other the remaining units
 // split up each unit AI type as evenly as possible
-CvSelectionGroup* CvSelectionGroup::splitGroup(int iSplitSize, CvUnit* pNewHeadUnit)
+// K-Mod. I've rewriten most of this function. The new version is faster, gives a more even split, and does not create a dummy group. (unless I've made a mistake.)
+CvSelectionGroup* CvSelectionGroup::splitGroup(int iSplitSize, CvUnit* pNewHeadUnit, CvSelectionGroup** ppOtherGroup)
 {
-	FAssertMsg(iSplitSize > 0, "non-positive splitGroup size");
-	if (!(iSplitSize > 0))
+	FAssert(pNewHeadUnit == 0 || pNewHeadUnit->getGroup() == this);
+
+	if (iSplitSize <= 0)
 	{
+		FAssertMsg(false, "non-positive splitGroup size");
 		return NULL;
 	}
 
@@ -3881,144 +3888,127 @@ CvSelectionGroup* CvSelectionGroup::splitGroup(int iSplitSize, CvUnit* pNewHeadU
 		return this;
 	}
 
-	CLLNode<IDInfo>* pUnitNode = headUnitNode();
-	CvUnit* pOldHeadUnit = ::getUnit(pUnitNode->m_data);
-	FAssertMsg(pOldHeadUnit != NULL, "non-zero group without head unit");
-	if (pOldHeadUnit == NULL)
-	{
-		return NULL;
-	}
-
-	UnitAITypes eOldHeadAI = pOldHeadUnit->AI_getUnitAIType();
+	CvUnit* pOldHeadUnit = getHeadUnit();
 
 	// if pNewHeadUnit NULL, then we will use our current head to head the new split group of target size
 	if (pNewHeadUnit == NULL)
-	{
 		pNewHeadUnit = pOldHeadUnit;
+
+	UnitAITypes eOldHeadAI = pOldHeadUnit->AI_getUnitAIType();
+	UnitAITypes eNewHeadAI = pNewHeadUnit->AI_getUnitAIType();
+
+	int iGroupSize = getNumUnits();
+
+	int aiTotalAIs[NUM_UNITAI_TYPES] = {};
+	int aiNewGroupAIs[NUM_UNITAI_TYPES] = {};
+	FAssert(iGroupSize > 0);
+
+	// populate 'aiTotalAIs' with the number of each AI type in the existing group.
+	CLLNode<IDInfo>* pUnitNode = headUnitNode();
+	while (pUnitNode)
+	{
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = nextUnitNode(pUnitNode);
+		aiTotalAIs[pLoopUnit->AI_getUnitAIType()]++;
 	}
 
-	// the AI of the new head (the remainder will get the AI of the old head)
-	// UnitAITypes eNewHeadAI = pNewHeadUnit->AI_getUnitAIType();
+	// Next, from those numbers, work out how many of each unit type we need in new group.
+	// round evenly, and carry the rounding-error onto the next unit type so that we don't have an off-by-one error at the end.
+	int iCarry = 0;
 
-	// pRemainderHeadUnit is the head unit of the group that contains the remainder of units
-	CvUnit* pRemainderHeadUnit = NULL;
-
-	// if the new head is not the old head, then make the old head the remainder head
-	bool bSplitingHead = (pOldHeadUnit == pNewHeadUnit);
-	if (!bSplitingHead)
+	// There are a couple of special cases that we need to do first (so that iCarry can work correctly at the end)
 	{
-		pRemainderHeadUnit = pOldHeadUnit;
-	}
+		// reserve a unit of the old AI type to lead the remainder group
+		// and more importantly, reserve a unit of the new AI type to lead the new group!
 
-	// try to find remainder head with same AI as head, if we cannot find one, we will split the rest of the group up
-	if (pRemainderHeadUnit == NULL)
-	{
-		// loop over all the units
-		pUnitNode = headUnitNode();
-		while (pUnitNode != NULL && pRemainderHeadUnit == NULL)
+		int x = std::max(1, (aiTotalAIs[eNewHeadAI] * iSplitSize + iGroupSize / 2 + iCarry) / iGroupSize);
+		if (eOldHeadAI == eNewHeadAI)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = nextUnitNode(pUnitNode);
+			if (x > 1 && aiTotalAIs[eOldHeadAI] == x)
+				x--;
 
-			if (pLoopUnit != NULL && pLoopUnit != pNewHeadUnit)
-			{
-				UnitAITypes eLoopUnitAI = pLoopUnit->AI_getUnitAIType();
-				if (eLoopUnitAI == eOldHeadAI)
-				{
-					pRemainderHeadUnit = pLoopUnit;
-				}
-			}
+			iCarry += aiTotalAIs[eNewHeadAI] * iSplitSize - x * iGroupSize;
+			aiNewGroupAIs[eNewHeadAI] = x;
+		}
+		else
+		{
+			iCarry += aiTotalAIs[eNewHeadAI] * iSplitSize - x * iGroupSize;
+			aiNewGroupAIs[eNewHeadAI] = x;
+
+			x = (aiTotalAIs[eOldHeadAI] * iSplitSize + iGroupSize / 2 + iCarry) / iGroupSize;
+
+			if (x > 0 && aiTotalAIs[eOldHeadAI] == x)
+				x--;
+
+			iCarry += aiTotalAIs[eOldHeadAI] * iSplitSize - x * iGroupSize;
+			aiNewGroupAIs[eOldHeadAI] = x;
 		}
 	}
 
-	CvSelectionGroup* pSplitGroup = NULL;
-	CvSelectionGroup* pRemainderGroup = NULL;
+	for (UnitAITypes i = (UnitAITypes)0; i < NUM_UNITAI_TYPES; i = (UnitAITypes)(i + 1))
+	{
+		if (aiTotalAIs[i] == 0 || i == eNewHeadAI || i == eOldHeadAI)
+			continue; // already done. (see above)
+
+		int x = (aiTotalAIs[i] * iSplitSize + iGroupSize / 2 + iCarry) / iGroupSize;
+
+		// In rare situations x can be rounded up above the maximum,
+		// because iCarry may oversized if one of the original head units is reserved.
+		x = std::min(x, aiTotalAIs[i]);
+		FAssert(x >= 0 && x <= aiTotalAIs[i]);
+
+		iCarry += aiTotalAIs[i] * iSplitSize - x * iGroupSize;
+		aiNewGroupAIs[i] = x;
+		FAssert(iCarry >= -iGroupSize && iCarry <= iGroupSize);
+	}
+	FAssert(iCarry == 0);
 
 	// make the new group for the new head
-	pNewHeadUnit->joinGroup(NULL);
-	pSplitGroup = pNewHeadUnit->getGroup();
-	FAssertMsg(pSplitGroup != NULL, "join resulted in NULL group");
+	pNewHeadUnit->joinGroup(0);
+	CvSelectionGroup* pSplitGroup = pNewHeadUnit->getGroup();
+	aiNewGroupAIs[eNewHeadAI]--;
+	aiTotalAIs[eNewHeadAI]--;
+	CvSelectionGroup* pRemainderGroup = this;
 
-	// make a new group for the remainder, if non-null
-	if (pRemainderHeadUnit != NULL)
+	// Populate the new group with the quantity of AI types specified in aiNewGroupAIs.
+	// However, the units of each AI type should not simply be taken from the front of the list,
+	// because we always want to have an even distribution of unit types. (not just unitAI types)
+	pUnitNode = headUnitNode();
+	while (pUnitNode)
 	{
-		pRemainderHeadUnit->joinGroup(NULL);
-		pRemainderGroup = pRemainderHeadUnit->getGroup();
-		FAssertMsg(pRemainderGroup != NULL, "join resulted in NULL group");
-	}
+		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		pUnitNode = nextUnitNode(pUnitNode);
 
-	// loop until this group is empty, trying to move different AI types each time
-
-
-	//Exhibit of why i HATE iustus code sometimes
-	//unsigned int unitAIBitField = 0;
-	//setBit(unitAIBitField, eNewHeadAI);
-
-	bool abUnitAIField[NUM_UNITAI_TYPES];
-	for (int iI = 0; iI < NUM_UNITAI_TYPES; iI++)
-	{
-		abUnitAIField[iI] = false;
-	}
-
-	while (getNumUnits())
-	{
-		UnitAITypes eTargetUnitAI = NO_UNITAI;
-
-		// loop over all the units, find the next different UnitAI and move one of each
-		bool bDestinationSplit = (pSplitGroup->getNumUnits() < iSplitSize);
-		pUnitNode = headUnitNode();
-		while (pUnitNode != NULL)
+		UnitAITypes eAI = pLoopUnit->AI_getUnitAIType();
+		FAssert(eAI != NO_UNITAI);
+		if (aiNewGroupAIs[eAI] > 0)
 		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-			pUnitNode = nextUnitNode(pUnitNode);
-
-			if (pLoopUnit != NULL)
+			if (iGroupSize * aiNewGroupAIs[eAI] >= iSplitSize * aiTotalAIs[eAI])
 			{
-				UnitAITypes eLoopUnitAI = pLoopUnit->AI_getUnitAIType();
-
-				// if we have not found a new type to move, is this a new unitai?
-				// note, if there eventually are unitAIs above 31, we will just always move those, which is fine
-				if (eTargetUnitAI == NO_UNITAI && !abUnitAIField[eLoopUnitAI])
-				{
-					eTargetUnitAI =  eLoopUnitAI;
-					abUnitAIField[eLoopUnitAI] = true;
-				}
-
-				// is this the right UnitAI?
-				if (eLoopUnitAI == eTargetUnitAI)
-				{
-					// move this unit to the appropriate group (if pRemainderGroup NULL, it gets its own group)
-					pLoopUnit->joinGroup(bDestinationSplit ? pSplitGroup : pRemainderGroup);
-
-					// if we moved to remainder, try for next unit AI
-					if (!bDestinationSplit)
-					{
-						eTargetUnitAI = NO_UNITAI;
-
-						bDestinationSplit = (pSplitGroup->getNumUnits() < iSplitSize);
-					}
-					else
-					{
-						// next unit goes to the remainder group
-						bDestinationSplit = false;
-					}
-				}
+				pLoopUnit->joinGroup(pSplitGroup);
+				aiNewGroupAIs[eAI]--;
+				FAssert(aiNewGroupAIs[eAI] >= 0);
 			}
-
 		}
-
-		// clear bitfield, all types are valid again
-		for (int iI = 0; iI < NUM_UNITAI_TYPES; iI++)
-		{
-			abUnitAIField[iI] = false;
-		}
+		aiTotalAIs[eAI]--; // (note. this isn't really important if aiNewGroupAIs[eAI] == 0; but we might as well keep it accurate anyway.)
+		FAssert(aiTotalAIs[eAI] >= 0);
 	}
 
-	FAssertMsg(pSplitGroup->getNumUnits() <= iSplitSize, "somehow our split group is too large");
+	FAssert(pSplitGroup->getNumUnits() == iSplitSize);
+
+	// K-Mod
+	// if the remainder group doesn't have the same unitAI, then it should be split up, so that we don't get any strange groups forming.
+	// Note: the force split can be overridden by the calling function if need be.
+	/* if (pRemainderGroup && pRemainderGroup->getHeadUnitAI() != eOldHeadAI)
+		pRemainderGroup->AI_setForceSeparate(); */
+	FAssert(!pRemainderGroup || pRemainderGroup->getHeadUnitAI() == eOldHeadAI || pRemainderGroup->AI_isForceSeparate()); // this should now be automatic, because of my other edits.
+	// K-Mod end
+
+	if (ppOtherGroup != NULL)
+		*ppOtherGroup = pRemainderGroup;
 
 	return pSplitGroup;
 }
-
 
 //------------------------------------------------------------------------------------------------
 // FUNCTION:    CvSelectionGroup::getUnitIndex
@@ -4501,3 +4491,28 @@ int CvSelectionGroup::movesLeft() const
 	}
 	return iMoves;
 } // K-Mod end
+
+bool CvSelectionGroup::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage) const
+{
+	if (getNumUnits() <= 0)
+		return false;
+	FOR_EACH_UNIT_IN(pUnit, *this)
+	{
+		if (!pUnit->canEnterTerritory(eTeam, bIgnoreRightOfPassage))
+			return false;
+	}
+	return true;
+}
+
+bool CvSelectionGroup::canEnterArea(TeamTypes eTeam, CvArea const& kArea,
+	bool bIgnoreRightOfPassage) const
+{
+	if (getNumUnits() <= 0)
+		return false;
+	FOR_EACH_UNIT_IN(pUnit, *this)
+	{
+		if (!pUnit->canEnterTerritory(eTeam, bIgnoreRightOfPassage, &kArea))
+			return false;
+	}
+	return true;
+}

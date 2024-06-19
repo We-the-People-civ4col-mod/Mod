@@ -9008,7 +9008,7 @@ void CvPlot::processArea(CvArea* pArea, int iChange)
 
 		for (iI = 0; iI < MAX_PLAYERS; ++iI)
 		{
-			if (pArea->getTargetCity((PlayerTypes)iI) == pCity)
+			if (pArea->AI_getTargetCity((PlayerTypes)iI) == pCity)
 			{
 				pArea->setTargetCity(((PlayerTypes)iI), NULL);
 			}

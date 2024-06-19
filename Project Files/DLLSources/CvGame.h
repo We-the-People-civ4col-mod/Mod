@@ -531,4 +531,26 @@ protected:
 	CvPlot* getAnyEuropePlot() const;
 };
 
+// <advc.003s> For generating variable names. (The layer of indirection is necessary.)
+#define CONCATVARNAME_IMPL(prefix, suffix) prefix##suffix
+#define CONCATVARNAME(prefix, suffix) CONCATVARNAME_IMPL(prefix, suffix) // </advc.003s>
+// <advc.007c> For debug output
+#define STRINGIFY_HELPER2(x) #x
+#define STRINGIFY_HELPER1(x) STRINGIFY_HELPER2(x)
+// (__FILE__ prints some path info; that gets too verbose.)
+#define CALL_LOC_STR __FUNCTION__ /*"(" __FILE__ ")"*/ "@L" STRINGIFY_HELPER1(__LINE__)
+// </advc.007c>
+
+// Implementation files can re-define this to use a different CvGame instance
+#define CVGAME_INSTANCE_FOR_RNG GC.getGame()
+/*
+inline CvRandom& syncRand()
+{
+	return CVGAME_INSTANCE_FOR_RNG.getSorenRand();
+}
+*/
+// These have to be macros to let CALL_LOC_STR expand to the proper code location
+#define SyncRandNum(iNumOutcomes) \
+	CVGAME_INSTANCE_FOR_RNG.getSorenRandNum((iNumOutcomes), CALL_LOC_STR)
+
 #endif

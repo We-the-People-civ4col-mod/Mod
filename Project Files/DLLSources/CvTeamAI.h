@@ -137,6 +137,7 @@ public:
 
 	WarPlanTypes AI_getWarPlan(TeamTypes eIndex) const;
 	bool AI_isChosenWar(TeamTypes eIndex) const;
+	bool AI_isAnyWarPlan() const { return (getAnyWarPlanCount() > 0); } // </advc.opt>
 	bool AI_isSneakAttackPreparing(TeamTypes eIndex) const;
 	bool AI_isSneakAttackReady(TeamTypes eIndex /* K-Mod (any team): */ = NO_TEAM) const;
 	void AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar = true);
@@ -179,6 +180,9 @@ public:
 
 	// advc.158:
 	AIStrengthMemoryMap& AI_strengthMemory() const { return m_strengthMemory; }
+
+	bool AI_isColonialPower() const;
+	int AI_getEnemyPowerPercent(bool bConsiderOthers = false) const;
 
 protected:
 

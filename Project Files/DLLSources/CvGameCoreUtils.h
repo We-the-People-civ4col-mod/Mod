@@ -227,6 +227,14 @@ inline DirectionTypes directionXY(const CvPlot* pFromPlot, const CvPlot* pToPlot
 {
 	return directionXY(dxWrap(pToPlot->getX_INLINE() - pFromPlot->getX_INLINE()), dyWrap(pToPlot->getY_INLINE() - pFromPlot->getY_INLINE()));
 }
+
+inline DirectionTypes directionXY(CvPlot const& kFromPlot, CvPlot const& kToPlot) // advc: params as references
+{
+	return directionXY(
+		dxWrap(kToPlot.getX() - kFromPlot.getX()),
+		dyWrap(kToPlot.getY() - kFromPlot.getY()));
+}
+
 CvPlot* plotCity(int iX, int iY, int iIndex);
 int plotCityXY(int iDX, int iDY);
 int plotCityXY(const CvCity* pCity, const CvPlot* pPlot);
