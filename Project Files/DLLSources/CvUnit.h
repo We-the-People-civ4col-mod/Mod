@@ -464,6 +464,7 @@ public:
 	int getArea() const;
 	int getLandArea() const;
 	CvArea* area() const;
+	bool isArea(CvArea const& kArea) const { return (area() == &kArea); }
 	bool sameArea(CvUnit const& kOther) const { return (area() == kOther.area()); }
 	int getLastMoveTurn() const;
 	void setLastMoveTurn(int iNewValue);
@@ -850,6 +851,18 @@ public:
 	bool isTempUnit() const;
 	bool canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage = false,								// Exposed to Python
 		CvArea const* pArea = NULL) const; // advc: canEnterArea merged into canEnterTerritory
+
+	bool isEnemy(TeamTypes eTeam, CvPlot const& kPlot) const;
+	// advc.opt: Instead of allowing pPlot==NULL
+	/*
+	__inline bool isEnemy(TeamTypes eTeam) const
+	{
+		return isEnemy(eTeam, getPlot());
+	}
+	*/
+	// (advc: isPotentialEnemy moved to CvUnitAI)
+	// <advc>
+	bool isEnemyCity(CvPlot const& kPlot) const;											// Exposed to Python /via CyPlot)
 
 protected:
 

@@ -31,6 +31,7 @@
 #include <hash_map>
 #include <set>
 #include <deque>
+#include <utility>
 //#include <limits>
 
 #define DllExport   __declspec( dllexport )

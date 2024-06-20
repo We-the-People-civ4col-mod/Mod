@@ -322,18 +322,20 @@ protected:
 
 	bool AI_extortCity();
 
-	// TAC - AI Attack City - koma13, jdog5000(BBAI) - START
-	CvCity* AI_pickTargetCity(int iFlags = 0, int iMaxPath = MAX_INT, bool bHuntBarbs = false);
-	bool AI_goToTargetCity(int iFlags = 0, int iMaxPath = MAX_INT, CvCity* pTargetCity = NULL);
+	// BETTER_BTS_AI_MOD, War tactics AI, 03/29/10, jdog5000: START
+	CvCity* AI_pickTargetCity(MovementFlags eFlags = NO_MOVEMENT_FLAGS,
+		int iMaxPathTurns = MAX_INT, bool bHuntBarbs = false);
+	bool AI_goToTargetCity(MovementFlags eFlags = NO_MOVEMENT_FLAGS,
+		int iMaxPathTurns = MAX_INT, CvCity* pTargetCity = NULL);
 	bool AI_pillageAroundCity(CvCity* pTargetCity, int iBonusValueThreshold = 0, int iMaxPathTurns = MAX_INT);
 	// TAC - AI Attack City - koma13, jdog5000(BBAI) - END
 
 	bool AI_bombardCity();
-	bool AI_cityAttack(int iRange, int iOddsThreshold, bool bFollow = false);
-	// TAC - AI Attack City - koma13 - START
-	//bool AI_anyAttack(int iRange, int iOddsThreshold, int iMinStack = 0, bool bFollow = false);
-	bool AI_anyAttack(int iRange, int iOddsThreshold, int iMinStack = 0, bool bFollow = false, bool bAllowCities = true);
-	// TAC - AI Attack City - koma13 - END
+	bool AI_cityAttack(int iRange, int iOddsThreshold,
+		MovementFlags eFlags = NO_MOVEMENT_FLAGS, bool bFollow = false);
+	bool AI_anyAttack(int iRange, int iOddsThreshold,
+		MovementFlags eFlags = NO_MOVEMENT_FLAGS, int iMinStack = 0,
+		bool bAllowCities = true, bool bFollow = false);
 	bool AI_smartAttack(int iRange, int iLowOddsThreshold, int iHighOddsThreshold, CvPlot* pHintPlot);
 	bool AI_leaveAttack(int iRange, int iThreshold, int iStrengthThreshold);
 	bool AI_seaBombardRange(int iMaxRange);
@@ -397,6 +399,10 @@ protected:
 
 	int AI_searchRange(int iRange) const;
 	bool AI_plotValid(const CvPlot* pPlot) const;
+	bool AI_canEnterByLand(CvArea const& kArea) const
+	{	// Not checked (to save time): unused canMoveAllTerrain
+		return (isArea(kArea) || (canMoveImpassable()/*&& canEnterArea(kArea)*/));
+	}
 
 	int AI_finalOddsThreshold(CvPlot* pPlot, int iOddsThreshold);
 
@@ -459,6 +465,12 @@ protected:
 		int iMinCargo = -1, int iMinCargoSpace = -1, int iMaxCargoSpace = -1,
 		int iMaxCargoOurUnitAI = -1);
 	// K-Mod end
+
+	unsigned AI_unitBirthmarkHash(int iExtra = 0) const; // K-Mod
+	unsigned AI_unitPlotHash(const CvPlot* pPlot, int iExtra = 0) const; // K-Mod
+	// <advc.033>
+	std::pair<int, int> AI_countPiracyTargets(CvPlot const& kPlot,
+		bool bStopIfAnyTarget = false) const;
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;

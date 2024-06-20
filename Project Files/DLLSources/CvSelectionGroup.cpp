@@ -28,6 +28,7 @@
 #include "BetterBTSAI.h"
 
 KmodPathFinder CvSelectionGroup::path_finder; // K-Mod
+KmodPathFinder CvSelectionGroup::alt_finder;
 
 // Public Functions...
 
@@ -3678,6 +3679,14 @@ bool CvSelectionGroup::generatePath(const CvPlot* pFromPlot, const CvPlot* pToPl
 //path_finder.Reset(); // note. the K-Mod finder doesn't need resetting in all the same places.
 gDLL->getFAStarIFace()->ForceReset(&GC.getPathFinder());
 } */
+
+KmodPathFinder& CvSelectionGroup::getClearPathFinder() // advc.opt
+{
+	/*	(Will use this in a place where cached data could cause OOS issues.
+		The point is only to avoid repeated memory allocation.) */
+	alt_finder.Reset();
+	return alt_finder;
+} // </advc.pf>
 
 
 void CvSelectionGroup::clearUnits()
