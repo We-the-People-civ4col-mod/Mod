@@ -3749,12 +3749,17 @@ void CvCity::setLastDefenseDamage(int iNewValue)
 
 bool CvCity::isBombardable(const CvUnit* pUnit) const
 {
-	if (NULL != pUnit && !pUnit->isEnemy(getTeam()))
-	{
+	if (pUnit != NULL && !pUnit->isEnemy(getTeam()))
 		return false;
-	}
 
-	return (getDefenseModifier() > 0);
+	return (getDefenseModifier() > 0 ||
+		// advc.004c: Don't give away 0 defense in the fog of war to human attacker
+		(pUnit != NULL && pUnit->isHuman() && !isVisible(pUnit->getTeam(), false)) ||
+		/*  advc.004c: Allow bombarding defenseless cities (to keep their def at 0),
+			except cities that have nothing to recover.
+			Don't allow the AI to do this b/c the AI can't tell if it matters.
+			Much easier to prevent 0-bombardment by the AI here than in CvUnitAI. */
+		(getTotalDefense() > 0 && pUnit->isHuman() && !isBombarded()));
 }
 
 

@@ -2372,7 +2372,7 @@ int CvPlayerAI::AI_militaryWeight(CvArea* pArea)
 }
 
 
-int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreAttackers)
+int CvPlayerAI::AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreAttackers) const
 {
 	PROFILE_FUNC();
 
@@ -5377,7 +5377,7 @@ int CvPlayerAI::AI_neededWorkers(CvArea* pArea) const
 	return std::max(1, (iCount * 2) / 3);
 }
 
-int CvPlayerAI::AI_adjacentPotentialAttackers(CvPlot* pPlot, bool bTestCanMove)
+int CvPlayerAI::AI_adjacentPotentialAttackers(CvPlot* pPlot, bool bTestCanMove) const
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;
@@ -16891,4 +16891,10 @@ bool CvPlayerAI::AI_isLandWar(CvArea const& kArea) const
 	default:
 		return false;
 	}
+}
+
+// K-Mod
+bool CvPlayerAI::AI_deduceCitySite(CvCity const& kCity) const
+{
+	return GET_TEAM(getTeam()).AI_deduceCitySite(kCity);
 }

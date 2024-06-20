@@ -182,6 +182,9 @@ public:
 	void AI_doHurry(bool bForce = false);
 	bool canHaveCitizenProfession(const CvUnit& kUnit, ProfessionTypes eProfession, bool bBumpOther) const;
 
+	// TODO: Port this feature
+	bool AI_isEvacuating() const { return false; }
+
 protected:
 
 	void AI_resetSavedData();

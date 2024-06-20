@@ -14221,13 +14221,6 @@ bool CvUnit::isEnemy(TeamTypes eTeam, const CvPlot* pPlot) const
 	return (::atWar(getCombatTeam(eTeam, pPlot), eTeam));
 }
 
-// advc.opt: Separate function for potentially unowned plot
-bool CvUnit::isEnemy(CvPlot const& kPlot) const
-{
-	TeamTypes const ePlotTeam = kPlot.getTeam();
-	return (ePlotTeam != NO_TEAM && isEnemy(ePlotTeam, &kPlot));
-}
-
 bool CvUnit::isPotentialEnemy(TeamTypes eTeam, const CvPlot* pPlot) const
 {
 	if (NULL == pPlot)
@@ -16877,4 +16870,30 @@ bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage,
 		}
 	}
 	return false;
+}
+
+/*	advc: Replacing CvPlot::isEnemyCity(CvUnit const&).
+	Just to be consistent with similar functions moved from CvPlot (see below). */
+bool CvUnit::isEnemyCity(CvPlot const& kPlot) const
+{
+	CvCity const* pCity = kPlot.getPlotCity();
+	if (pCity != NULL)
+		return isEnemy(pCity->getTeam(), kPlot);
+	return false;
+}
+
+// advc.opt: Separate function for potentially unowned plot
+bool CvUnit::isEnemy(CvPlot const& kPlot) const
+{
+	TeamTypes const ePlotTeam = kPlot.getTeam();
+	return (ePlotTeam != NO_TEAM && isEnemy(ePlotTeam, &kPlot));
+}
+
+/*	advc (note): Says whether this unit's combat owner in kPlot
+	as viewed by eTeam is hostile to eTeam (same as in BtS).
+	advc.opt: This needs to be faster. So pPlot==NULL and eTeam==NO_TEAM
+	are no longer allowed. */
+bool CvUnit::isEnemy(TeamTypes eTeam, CvPlot const& kPlot) const
+{
+	return GET_TEAM(eTeam).isAtWar(TEAMID(getCombatOwner(eTeam, &kPlot)));
 }

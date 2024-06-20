@@ -117,7 +117,7 @@ public:
 
 	int AI_militaryWeight(CvArea* pArea);
 
-	int AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreAttackers = false);
+	int AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreAttackers = false) const;
 	CvCity* AI_findTargetCity(CvArea* pArea);
 
 	int AI_getPlotDanger(CvPlot* pPlot, int iRange = -1, bool bTestMoves = true, bool bOffensive = false) const;
@@ -188,7 +188,7 @@ public:
 	int AI_neededWorkers(CvArea* pArea) const;
 	//int AI_neededMissionary(CvArea* pArea);
 
-	int AI_adjacentPotentialAttackers(CvPlot* pPlot, bool bTestCanMove = false);
+	int AI_adjacentPotentialAttackers(CvPlot* pPlot, bool bTestCanMove = false) const;
 	// TAC - AI City Defense - koma13 - START
 	//int AI_totalMissionAIs(MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_totalMissionAIs(MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL, UnitAITypes eUnitAI = NO_UNITAI);
@@ -533,6 +533,7 @@ public:
 
 	bool AI_isDoStrategy(AIStrategy eStrategy, /* advc.007: */ bool bDebug = false) const;
 	bool AI_isLandWar(CvArea const& kArea) const; // K-Mod
+	bool AI_deduceCitySite(CvCity const& pCity) const; // K-Mod
 
 protected:
 

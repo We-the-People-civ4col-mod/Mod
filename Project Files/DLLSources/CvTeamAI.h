@@ -183,6 +183,7 @@ public:
 
 	bool AI_isColonialPower() const;
 	int AI_getEnemyPowerPercent(bool bConsiderOthers = false) const;
+	bool AI_deduceCitySite(CvCity const& kCity) const; // K-Mod
 
 protected:
 
@@ -229,5 +230,6 @@ protected:
 
 // helper for accessing static functions
 #define GET_TEAM CvTeamAI::getTeam
+#define TEAMID(x) GET_PLAYER(x).getTeam()
 
 #endif

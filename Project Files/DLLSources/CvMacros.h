@@ -38,11 +38,29 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
             } \
         }
 
+// Allows loop variable to be specified
+#define FOR_EACH_PLOT_IN_RANGE_OF2(pCenterPlot, pLoopPlot, iSearchRange, ACTION) \
+    for (int iDX = -(iSearchRange); iDX <= (iSearchRange); iDX++) \
+        for (int iDY = -(iSearchRange); iDY <= (iSearchRange); iDY++) \
+        { \
+            CvPlot* const pLoopPlot = ::plotXY(pCenterPlot->getX_INLINE(), pCenterPlot->getY_INLINE(), iDX, iDY); \
+            if (pLoopPlot != NULL) \
+            { \
+                ACTION; \
+            } \
+        }
+
 #define FOR_EACH_UNITAI_ON_PLOT(pPlot) \
     for (const CLLNode<IDInfo>* pUnitNode = (pPlot)->headUnitNode(); \
          pUnitNode != NULL; \
          pUnitNode = (pPlot)->nextUnitNodeInternal(pUnitNode)) \
          if (CvUnitAI* pLoopUnit = static_cast<CvUnitAI*>(::getUnit(pUnitNode->m_data)))
+
+#define FOR_EACH_UNIT_ON_PLOT(pPlot) \
+    for (const CLLNode<IDInfo>* pUnitNode = (pPlot)->headUnitNode(); \
+         pUnitNode != NULL; \
+         pUnitNode = (pPlot)->nextUnitNodeInternal(pUnitNode)) \
+         if (CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data))
 
 #define FOR_EACH_GROUPAI(pLoopUnit, kOwner) \
     for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
@@ -115,5 +133,20 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
         } \
  */
 
+#define FOREACH_CITY_OF_OWNER(pLoopCity, kOwner) \
+    for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
+    for (CvCity* pLoopCity = (kOwner).firstCity(&UNIQUE_VAR(iLoop)); pLoopCity != NULL; pLoopCity = (kOwner).nextCity(&UNIQUE_VAR(iLoop)))    
+
+
+
+#define FOR_EACH_ADJ_PLOT(pCenterPlot, ACTION) \
+    for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++) \
+    { \
+        CvPlot* const pAdjacentPlot = plotDirection(pCenterPlot->getX_INLINE(), pCenterPlot->getY_INLINE(), ((DirectionTypes)iI)); \
+        if (pAdjacentPlot != NULL) \
+        { \
+                ACTION; \
+        } \
+    }
 
 #endif

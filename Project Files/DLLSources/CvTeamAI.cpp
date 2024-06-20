@@ -3409,3 +3409,37 @@ int CvTeamAI::AI_getEnemyPowerPercent(bool bConsiderOthers) const
 	return iEnemyPower / std::max(1, iOurPower);
 	// K-Mod end
 }
+
+// K-Mod: return true if is fair enough for the AI to know there is a city here
+bool CvTeamAI::AI_deduceCitySite(CvCity const& kCity) const
+{
+	PROFILE_FUNC();
+
+	if (kCity.isRevealed(getID(), false))
+		return true;
+
+	/*	The rule is this: if we can see more than n plots of the nth culture ring,
+		we can deduce where the city is. */
+
+	int iPoints = 0;
+	int const iLevel = kCity.getCultureLevel();
+	//for (SquareIter itPlot(kCity.getPlot(), iLevel, false); itPlot.hasNext(); ++itPlot)
+	FOR_EACH_PLOT_IN_RANGE_OF(kCity.plot(), iLevel,
+	{
+		CvPlot* itPlot = pLoopPlot;
+		//int iDist = CvCity::cultureDistance(itPlot.currXDist(), itPlot.currYDist());
+		const int iDist = kCity.cultureDistance(iDX, iDY);
+		if (iDist > iLevel)
+			continue;
+		if (itPlot->getRevealedOwner(getID(), false) == kCity.getOwner())
+		{
+			/*	if multiple cities have their plot in their range,
+				then that will make it harder to deduce the precise city location. */
+			iPoints += 1 + std::max(0, 1 + iLevel
+				- iDist - itPlot->getNumCultureRangeCities(kCity.getOwner()));
+			if (iPoints > iLevel)
+				return true;
+		}
+	}) // FOR_EACH
+	return false;
+}

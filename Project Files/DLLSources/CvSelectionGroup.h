@@ -281,7 +281,10 @@ protected:
 
 public:
 	static KmodPathFinder path_finder; // K-Mod! I'd rather this not be static, but I can't do that here.
+	static KmodPathFinder alt_finder; // advc.opt
 
+	static KmodPathFinder& getClearPathFinder(); // advc.opt
 };
+
 
 #endif
