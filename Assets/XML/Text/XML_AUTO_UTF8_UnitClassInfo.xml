@@ -357,7 +357,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CARAVEL</Tag>
-		<English>TXT_KEY_UNIT_CARAVEL</English>
+		<English>
+			<Text>Caravel:Caravels</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Caravelle:Caravelles</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Lateinersegelkaravelle:Lateinersegelkaravellen</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Caravella:Caravelle</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Carabela:Carabelas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Каравелла:Каравеллы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CARAVELA_REDONDA</Tag>
@@ -449,15 +474,70 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CHRISTIAN_MISSIONARY</Tag>
-		<English>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY</English>
+		<English>Jesuit Missionary:Jesuit Missionaries
+			<Text>Jesuit Missionary:Jesuit Missionaries</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Missionnaire jésuite:Missionnaires jésuites</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Jesuitenmissionar:Jesuitenmissionare</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Missionario gesuita:Missionari gesuiti</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Misionero jesuita:Misioneros jesuitas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Миссионер иезуит:Миссионеры иезуиты</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FAILED_MISSIONARY</Tag>
-		<English>TXT_KEY_UNIT_FAILED_MISSIONARY</English>
+		<English>
+			<Text>Disillusioned Missionary:Disilussioned Missionaries</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>Missionnaire désabusé:Missionnaires désabusés
+			<Text>Missionnaire désabusé:Missionnaires désabusés</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Desillusionierter Missionar:Desillusionierte Missionare</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Russian>Разочаровавшийся миссионер:Разочаровавшиеся миссионеры</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FAILED_TRADER</Tag>
-		<English>TXT_KEY_UNIT_FAILED_TRADER</English>
+		<English>
+			<Text>Failed Trader:Failed Traders</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>Marchand avec les indigènes ruiné:Marchands avec les indigènes ruinés
+			<Text>Marchand avec les indigènes ruiné:Marchands avec les indigènes ruinés</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Gescheiterter Ureinwohnerhändler:Gescheiterte Ureinwohnerhändler</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Russian>Неудачливый торговец:Неудачливые торговцы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CIGARS</Tag>
@@ -688,7 +768,28 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COLONIST</Tag>
-		<English>TXT_KEY_UNIT_COLONIST</English>
+		<English>
+			<Text>Free Colonist:Free Colonists</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Colon libre:Colons libres</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Freier Kolonist:Freie Kolonisten</German>
+		<Italian>
+			<Text>Libero colono:Liberi coloni</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Colono libre:Colonos libres</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Свободный колонист:Свободные колонисты</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COLOURED_CLOTH</Tag>
@@ -717,7 +818,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CONQUISTADOR</Tag>
-		<English>TXT_KEY_UNIT_CONQUISTADOR</English>
+		<English>
+			<Text>Conquistador:Conquistadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Conquistador:Conquistadors</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Konquistador:Konquistadoren</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Conquistador:Conquistadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Conquistador:Conquistadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Конкистадор:Конкистадоры</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CONTINENTAL_GUARD</Tag>
@@ -730,15 +856,56 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_BUCCANNEER</Tag>
-		<English>TXT_KEY_UNIT_BUCCANNEER</English>
+		<English>
+			<Text>Buccaneer:Buccaneers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>Boucanier:Boucaniers</French>
+		<German>
+			<Text>Bukanier:Bukaniere</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Russian>Буканьер:Буканьеры</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_SLAVE_HUNTER</Tag>
-		<English>TXT_KEY_UNIT_SLAVE_HUNTER</English>
+		<English>
+			<Text>Slave Hunter:Slave Hunters</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Chasseur d'esclaves:Chasseurs d'esclaves</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Sklavenjäger:Sklavenjäger</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Russian>Охотник на рабов:Охотники на рабов</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_SLAVE_MASTER</Tag>
-		<English>TXT_KEY_UNIT_SLAVE_MASTER</English>
+		<English>
+			<Text>Slave Overseer:Slave Overseers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Contre-maître des esclaves:Contre-maîtres des esclaves</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Sklavenaufseher:Sklavenaufseher</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Russian>Надсмотрщик за рабами:Надсмотрщики за рабами</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CONVERTED_NATIVE</Tag>
@@ -1086,7 +1253,28 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FISHING_BOAT</Tag>
-		<English>TXT_KEY_UNIT_FISHING_BOAT</English>
+		<English>Fishing Boat:Fishing Boats</English>
+		<French>
+			<Text>Bateau de pêche:Bateaux de pêche</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Fischerboot:Fischerboote</Text>
+			<Gender>Neuter</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Fishing Boat:Fishing Boats</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fishing Boat:Fishing Boats</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Рыбацкая лодка:Рыбацкие лодки</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FLUYT</Tag>
@@ -1639,7 +1827,24 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_INDENTURED_SERVANT</Tag>
-		<English>TXT_KEY_UNIT_INDENTURED_SERVANT</English>
+		<English>Indentured Servant:Indentured Servants</English>
+		<French>
+			<Text>Domestique sous contrat:Domestiques sous contrat</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>Schuldknecht:Schuldknechte</German>
+		<Italian>
+			<Text>Servo per contratto:Servi per contratto</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Siervo por deudas:Siervos por deudas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Наемный работник:Наемные работники</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_INDIGO</Tag>
@@ -1918,7 +2123,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MILITIA</Tag>
-		<English>TXT_KEY_UNIT_MILITIA</English>
+		<English>
+			<Text>Settler Militia:Settler Militias</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Milice:Milices</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Siedlermiliz:Siedlermilizen</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Settler Militia:Settler Militias</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Settler Militia:Settler Militias</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Вооруженный колонист:Вооруженные колонисты</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MINER</Tag>
@@ -1976,15 +2206,85 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MOUNTED_CONQUISTADOR</Tag>
-		<English>TXT_KEY_UNIT_MOUNTED_CONQUISTADOR</English>
+		<English>
+			<Text>Mounted Conquistador:Mounted Conquistadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Conquistador monté:Conquistadors montés</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Berittener Konquistador:Berittene Konquistadoren</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Conquistador Montato:Conquistadores Montati</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Conquistador Montado:Conquistadores Montados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Конный конкистадор:Конные конкистадоры</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_NATIVE_MERC</Tag>
-		<English>TXT_KEY_UNIT_NATIVE_MERC</English>
+		<English>
+			<Text>Native Mercenary:Native Mercenaries</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Mercenaire indigène:Mercenaires indigènes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Indianischer Söldner:Indianische Söldner</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Native Mercenary:Native Mercenaries</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Native Mercenary:Native Mercenaries</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Индейский наемник:Индейские наемники</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_NATIVE_SLAVE</Tag>
-		<English>TXT_KEY_UNIT_NATIVE_SLAVE</English>
+		<English>
+			<Text>Native Slave:Native Slaves</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Esclave indigène:Esclaves indigènes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Versklavter Ureinwohner:Versklavte Ureinwohner</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Spanish>
+			<Text>Esclavo Nativo:Esclavos Nativos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Туземный раб:Туземные рабы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_NOBLE</Tag>
@@ -2071,7 +2371,28 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PEARLS_HUNTER</Tag>
-		<English>TXT_KEY_UNIT_PEARLS_HUNTER</English>
+		<English>Expert Pearl Diver:Expert Pearl Divers</English>
+		<French>
+			<Text>Expert chasseur de perles</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Erfahrener Perlentaucher:Erfahrene Perlentaucher</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Expert Pearls Hunter</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Expert Pearls Hunter</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Опытный ныряльщик за жемчугом:Опытные ныряльщики за жемчугом</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PIONEER</Tag>
@@ -2302,7 +2623,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_RANGER</Tag>
-		<English>TXT_KEY_UNIT_RANGER</English>
+		<English>
+			<Text>Ranger:Rangers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Garde-forestier:Gardes-forestiers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Ranger:Rangers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Ranger:Rangers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Ranger:Rangers</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Рейнджер:Рейнджеры</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_RAW_SALT</Tag>
@@ -2601,7 +2947,28 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_SCOUT</Tag>
-		<English>TXT_KEY_UNIT_SCOUT</English>
+		<English>Seasoned Scout:Seasoned Scouts</English>
+		<French>
+			<Text>Eclaireur aguerri:Eclaireurs aguerris</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Routinierter Späher:Routinierte Späher</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Scout esperto:Scout esperti</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Batidor curtido:Batidores curtidos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Закаленный разведчик:Закаленные разведчики</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_EXPERT_SETTLER</Tag>
@@ -3172,7 +3539,28 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_TREASURE</Tag>
-		<English>TXT_KEY_UNIT_TREASURE</English>
+		<English>Treasure</English>
+		<French>
+			<Text>Trésor:Trésors</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Schatz:Schätze</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Tesoro:Tesori</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Tesoro:Tesoros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Сокровище</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_TREK</Tag>
@@ -3426,7 +3814,28 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WHALING_BOAT</Tag>
-		<English>TXT_KEY_UNIT_WHALING_BOAT</English>
+		<English>Whaling Ship:Whaling Ships</English>
+		<French>
+			<Text>Baleinier</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Walfänger:Walfänger</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Baleniera:Baleniere</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Barco ballenero:Barcos balleneros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Китобойное судно</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WINE</Tag>
