@@ -1717,3 +1717,50 @@ int CvSelectionGroupAI::AI_getBombardTurns(CvCity const* pCity) const
 	//if (gUnitLogLevel > 2) logBBAI("      Bombard of %S will take %d turns at rate %d and current damage %d with bombard def %d", pCity->getName().GetCString(), iBombardTurns, iTotalBombardRate, pCity->getDefenseDamage(), (bIgnoreBuildingDefense ? 0 : pCity->getBuildingBombardDefense()));
 	return iBombardTurns;
 }
+
+// advc: Param renamed from bIgnoreMinors b/c it also causes Barbarians to be ignored
+bool CvSelectionGroupAI::AI_isHasPathToAreaEnemyCity(bool bMajorOnly,
+	MovementFlags eFlags, int iMaxPathTurns) const
+{
+	PROFILE_FUNC();
+	//int iPass = 0; // advc: unused
+	//for (PlayerIter<ALIVE> it; it.hasNext(); ++it)
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+	{
+		const CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+		if (!kPlayer.isAlive())
+			continue;
+
+		if (bMajorOnly && kPlayer.isNative() /*!it->isMajorCiv()*/)
+			continue;
+		if (GET_TEAM(getTeam()).AI_mayAttack(kPlayer.getTeam()) &&
+			AI_isHasPathToAreaPlayerCity(kPlayer.getID(), eFlags, iMaxPathTurns))
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
+bool CvSelectionGroupAI::AI_isHasPathToAreaPlayerCity(PlayerTypes ePlayer,
+	MovementFlags eFlags, int iMaxPathTurns) const
+{
+	PROFILE_FUNC();
+	// <advc> Instead of relying on the area checks to fail when the group has no area
+	if (getNumUnits() <= 0)
+		return false; // </advc>
+	FOREACH_CITY_OF_OWNER(pLoopCity, GET_PLAYER(ePlayer))
+	{
+		if (pLoopCity->isArea(*area()))
+		{
+			int iPathTurns;
+			if (generatePath(&getPlot(), pLoopCity->plot(), eFlags, true,
+				&iPathTurns, iMaxPathTurns))
+			{
+				if (iMaxPathTurns < 0 || iPathTurns <= iMaxPathTurns)
+					return true;
+			}
+		}
+	}
+	return false;
+}

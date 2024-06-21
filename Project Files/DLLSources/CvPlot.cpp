@@ -10587,3 +10587,9 @@ int CvPlot::getTurnDamage() const
 	
 	return 0;
 }
+
+// <advc.003u>
+CvCityAI* CvPlot::AI_getPlotCity() const
+{
+	return static_cast<CvCityAI*>(getPlotCity());
+} // </advc.003u>

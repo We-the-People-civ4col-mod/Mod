@@ -327,9 +327,9 @@ protected:
 		int iMaxPathTurns = MAX_INT, bool bHuntBarbs = false);
 	bool AI_goToTargetCity(MovementFlags eFlags = NO_MOVEMENT_FLAGS,
 		int iMaxPathTurns = MAX_INT, CvCity* pTargetCity = NULL);
-	bool AI_pillageAroundCity(CvCity* pTargetCity, int iBonusValueThreshold = 0, int iMaxPathTurns = MAX_INT);
-	// TAC - AI Attack City - koma13, jdog5000(BBAI) - END
-
+	bool AI_pillageAroundCity(CvCity* pTargetCity, int iBonusValueThreshold = 0,
+		MovementFlags eFlags = NO_MOVEMENT_FLAGS, int iMaxPathTurns = MAX_INT);
+	
 	bool AI_bombardCity();
 	bool AI_cityAttack(int iRange, int iOddsThreshold,
 		MovementFlags eFlags = NO_MOVEMENT_FLAGS, bool bFollow = false);
@@ -420,7 +420,8 @@ protected:
 	bool AI_nativeRaidFort(); // R&R, ray, Monasteries and Forts
 
 	bool AI_poach();
-	bool AI_choke(int iRange = 1);
+	bool AI_choke(int iRange = 1, bool bDefensive = false,
+		MovementFlags eFlags = NO_MOVEMENT_FLAGS);
 
 	bool AI_solveBlockageProblem(CvPlot* pDestPlot, bool bDeclareWar);
 
@@ -471,6 +472,7 @@ protected:
 	// <advc.033>
 	std::pair<int, int> AI_countPiracyTargets(CvPlot const& kPlot,
 		bool bStopIfAnyTarget = false) const;
+	bool AI_handleStranded(MovementFlags eFlags = NO_MOVEMENT_FLAGS); // K-Mod
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;

@@ -382,6 +382,7 @@ public:
 	void setRouteType(RouteTypes eNewValue);
 	void updateCityRoute();
 	DllExport CvCity* getPlotCity() const;
+	CvCityAI* AI_getPlotCity() const;
 	void setPlotCity(CvCity* pNewValue);
 	DllExport CvCity* getWorkingCity() const;
 	void updateWorkingCity();
