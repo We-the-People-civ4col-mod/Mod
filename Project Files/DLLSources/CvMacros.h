@@ -93,6 +93,11 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
         if (CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data)) \
             if (pLoopUnit != NULL)
 
+#define FOR_EACH_NON_CENTER_CITY_PLOT(pLoopPlot, targetCity) \
+    for (CityPlotTypes eCityPlot = FIRST_CITY_PLOT; eCityPlot < NUM_CITY_PLOTS; ++eCityPlot) \
+        if (CvPlot* const pLoopPlot = targetCity->getCityIndexPlot(eCityPlot)) \
+            if (eCityPlot != CITY_HOME_PLOT && pLoopPlot != NULL)
+
 // TODO: What about checking if we have met the player ?
 /*
 #define FOR_EACH_OTHER_ALIVE_POTENTIAL_ENEMY_COLONIAL_POWER_TEAM(id, teamVar, ACTION) \

@@ -197,10 +197,23 @@ public:
 	int AI_areaMissionAIs(CvArea* pArea, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_adjacantToAreaMissionAIs(CvArea* pArea, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	
-	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
-	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
-	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes* aeMissionAI, int iMissionAICount, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
+	// Note: First overload is a pure virtual and must be preserved as non-const
+	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0)
+	{
+		return AI_plotTargetMissionAIsInternal(pPlot, eMissionAI, pSkipSelectionGroup, iRange);
+	}
+	int AI_plotTargetMissionAIsInternal(const CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0) const;
+
+	int AI_plotTargetMissionAIs(const CvPlot* pPlot, MissionAITypes eMissionAI, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
+	int AI_plotTargetMissionAIs(const CvPlot* pPlot, MissionAITypes* aeMissionAI, int iMissionAICount, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0) const;
 	
+	// <advc.opt>
+	bool AI_isAnyPlotTargetMissionAI(CvPlot const& kPlot, MissionAITypes eMissionAI,
+		CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0) const
+	{
+		return (AI_plotTargetMissionAIsInternal(&kPlot, eMissionAI, pSkipSelectionGroup, iRange) >= 1);
+	}
+
 	// Note: First overload is a pure virtual and must be preserved as non-const
 	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL)
 	{

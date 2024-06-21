@@ -43,6 +43,19 @@ public:
 	void SetSettings(const CvSelectionGroup* pGroup, int iFlags = 0, int iMaxPath = -1, int iHW=-1) { SetSettings(CvPathSettings(pGroup, iFlags, iMaxPath, iHW)); }
 	void Reset();
 
+	// Camel-case variant that will eventually replace the above. Just wrapper for now
+	bool generatePath(int x1, int y1, int x2, int y2);
+	bool generatePath(const CvPlot* pToPlot); // just a wrapper for convenience
+	FAStarNode* getEndNode() const { FAssert(end_node); return end_node; } // Note: the returned pointer becomes invalid if the pathfinder is destroyed.
+	bool isPathComplete() const { return end_node != NULL; }
+	int getPathTurns() const;
+	int getFinalMoves() const;
+	CvPlot* getPathFirstPlot() const;
+	CvPlot* getPathEndTurnPlot() const;
+	void setSettings(const CvPathSettings& new_settings);
+	void setSettings(const CvSelectionGroup* pGroup, int iFlags = 0, int iMaxPath = -1, int iHW = -1) { setSettings(CvPathSettings(pGroup, iFlags, iMaxPath, iHW)); }
+	void reset();
+
 protected:
 	void AddStartNode();
 	void RecalculateHeuristics();

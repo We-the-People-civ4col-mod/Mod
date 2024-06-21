@@ -641,3 +641,35 @@ void KmodPathFinder::ForwardPropagate(FAStarNode* head, int cost_delta)
 			ForwardPropagate(head->m_apChildren[i], iNewDelta);
 	}
 }
+
+bool KmodPathFinder::generatePath(int x1, int y1, int x2, int y2) {
+	return GeneratePath(x1, y1, x2, y2);
+}
+
+bool KmodPathFinder::generatePath(const CvPlot* pToPlot) {
+	return GeneratePath(pToPlot);
+}
+
+int KmodPathFinder::getPathTurns() const {
+	return GetPathTurns();
+}
+
+int KmodPathFinder::getFinalMoves() const {
+	return GetFinalMoves();
+}
+
+CvPlot* KmodPathFinder::getPathFirstPlot() const {
+	return GetPathFirstPlot();
+}
+
+CvPlot* KmodPathFinder::getPathEndTurnPlot() const {
+	return GetPathEndTurnPlot();
+}
+
+void KmodPathFinder::setSettings(const CvPathSettings& new_settings) {
+	SetSettings(new_settings);
+}
+
+void KmodPathFinder::reset() {
+	Reset();
+}
