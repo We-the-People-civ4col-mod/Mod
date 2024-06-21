@@ -2374,7 +2374,7 @@
 			<PromotionPrereqOr1>PROMOTION_LEADER</PromotionPrereqOr1>
 			<PromotionPrereqOr2>PROMOTION_LEADER2</PromotionPrereqOr2>
 			<bLeader>0</bLeader>
-			<bBlitz>1</bBlitz>
+			<bBlitz>0</bBlitz>
 			<bAmphib>0</bAmphib>
 			<bRiver>0</bRiver>
 			<bEnemyRoute>0</bEnemyRoute>
@@ -3063,7 +3063,7 @@
 			<PromotionPrereqOr1>PROMOTION_RANGER2</PromotionPrereqOr1>
 			<PromotionPrereqOr2>NONE</PromotionPrereqOr2>
 			<bLeader>0</bLeader>
-			<bBlitz>1</bBlitz>
+			<bBlitz>0</bBlitz>
 			<bAmphib>0</bAmphib>
 			<bRiver>0</bRiver>
 			<bEnemyRoute>0</bEnemyRoute>
@@ -3330,7 +3330,7 @@
 			<PromotionPrereqOr1>PROMOTION_MOUNTAINEER2</PromotionPrereqOr1>
 			<PromotionPrereqOr2>NONE</PromotionPrereqOr2>
 			<bLeader>0</bLeader>
-			<bBlitz>1</bBlitz>
+			<bBlitz>0</bBlitz>
 			<bAmphib>0</bAmphib>
 			<bRiver>0</bRiver>
 			<bEnemyRoute>0</bEnemyRoute>
@@ -3679,7 +3679,7 @@
 			<PromotionPrereqOr1>PROMOTION_SWAMP_FOX2</PromotionPrereqOr1>
 			<PromotionPrereqOr2>NONE</PromotionPrereqOr2>
 			<bLeader>0</bLeader>
-			<bBlitz>1</bBlitz>
+			<bBlitz>0</bBlitz>
 			<bAmphib>0</bAmphib>
 			<bRiver>0</bRiver>
 			<bEnemyRoute>0</bEnemyRoute>
@@ -4446,7 +4446,7 @@
 			<PromotionPrereqOr1>PROMOTION_STORM_ATTACK2</PromotionPrereqOr1>
 			<PromotionPrereqOr2>NONE</PromotionPrereqOr2>
 			<bLeader>0</bLeader>
-			<bBlitz>1</bBlitz>
+			<bBlitz>0</bBlitz>
 			<bAmphib>0</bAmphib>
 			<bRiver>0</bRiver>
 			<bEnemyRoute>0</bEnemyRoute>
@@ -6197,7 +6197,7 @@
 			<PromotionPrereqOr1>NONE</PromotionPrereqOr1>
 			<PromotionPrereqOr2>NONE</PromotionPrereqOr2>
 			<bLeader>0</bLeader>
-			<bBlitz>1</bBlitz>
+			<bBlitz>0</bBlitz>
 			<bAmphib>0</bAmphib>
 			<bRiver>0</bRiver>
 			<bEnemyRoute>0</bEnemyRoute>
@@ -6234,7 +6234,12 @@
 			<DomainMods/>
 			<TerrainDoubleMoves/>
 			<FeatureDoubleMoves/>
-			<UnitCombats/>
+			<UnitCombats>
+				<UnitCombat>
+					<UnitCombatType>UNITCOMBAT_GUN</UnitCombatType>
+					<bUnitCombat>1</bUnitCombat>
+				</UnitCombat>
+			</UnitCombats>
 			<HotKey/>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
