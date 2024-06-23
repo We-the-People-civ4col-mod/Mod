@@ -3443,3 +3443,33 @@ bool CvTeamAI::AI_deduceCitySite(CvCity const& kCity) const
 	}) // FOR_EACH
 	return false;
 }
+
+// advc.105:
+bool CvTeamAI::AI_isAnyChosenWar() const
+{
+	for (int iLoopWarPlan = NO_WARPLAN + 1;  iLoopWarPlan < NUM_WARPLAN_TYPES; ++iLoopWarPlan)
+	{
+		const WarPlanTypes eLoopWarPlan = static_cast<WarPlanTypes>(iLoopWarPlan);
+		if (AI_isChosenWarPlan(eLoopWarPlan) && AI_getNumWarPlans(eLoopWarPlan) > 0)
+			return true;
+	}
+	return false;
+}
+
+// advc.105: Body cut from AI_isChosenWar
+bool CvTeamAI::AI_isChosenWarPlan(WarPlanTypes eWarPlanType)
+{
+	switch (eWarPlanType)
+	{
+	case WARPLAN_ATTACKED_RECENT:
+	case WARPLAN_ATTACKED:
+		return false;
+	case WARPLAN_PREPARING_LIMITED:
+	case WARPLAN_PREPARING_TOTAL:
+	case WARPLAN_LIMITED:
+	case WARPLAN_TOTAL:
+	case WARPLAN_DOGPILE:
+		return true;
+	default: return false; // NO_WARPLAN
+	}
+}

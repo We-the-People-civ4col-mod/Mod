@@ -55700,7 +55700,7 @@
 			<Capture>NONE</Capture>
 			<Combat>UNITCOMBAT_GUN</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
 			<eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
 			<eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
@@ -57384,7 +57384,7 @@
 			<Capture>NONE</Capture>
 			<Combat>UNITCOMBAT_MELEE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
 			<eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
 			<eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
@@ -57422,7 +57422,7 @@
 			<UnitClassUpgrades/>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_DEFENSIVE</UnitAIType>
+					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
@@ -57616,7 +57616,7 @@
 			<Capture>NONE</Capture>
 			<Combat>UNITCOMBAT_MOUNTED</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_COUNTER</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
 			<eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
 			<eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
@@ -57654,7 +57654,7 @@
 			<UnitClassUpgrades/>
 			<UnitAIs>
 				<UnitAI>
-					<UnitAIType>UNITAI_COUNTER</UnitAIType>
+					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 				<UnitAI>
@@ -61155,7 +61155,7 @@
 			<Capture>NONE</Capture>
 			<Combat>NONE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
 			<DefaultProfession>PROFESSION_HEAVY_ARTILLERY</DefaultProfession>
 			<eEthnicity>ETHNICITY_EUROPEAN</eEthnicity>
 			<eCitizenStatus>CITIZEN_STATUS_FREE</eCitizenStatus>
@@ -61194,6 +61194,10 @@
 			<UnitAIs>
 				<UnitAI>
 					<UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
+					<bUnitAI>1</bUnitAI>
+				</UnitAI>
+				<UnitAI>
+					<UnitAIType>UNITAI_ATTACK_CITY</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
 			</UnitAIs>
@@ -62216,7 +62220,7 @@
 			<Capture>NONE</Capture>
 			<Combat>UNITCOMBAT_SIEGE</Combat>
 			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
 			<DefaultProfession>NONE</DefaultProfession>
 			<eEthnicity>NONE</eEthnicity>
 			<eCitizenStatus>NONE</eCitizenStatus>

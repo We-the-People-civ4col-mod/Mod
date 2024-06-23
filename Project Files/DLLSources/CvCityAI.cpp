@@ -1774,11 +1774,13 @@ int CvCityAI::AI_neededDefenders() const
 	// R&R, ray, AI improvements
 	// Colonial AI should use its colonist for enconomy during first period
 
+	// The below is not true anymore since barbs can attack us!
+	/*
 	if (GC.getGame().getRemainingForcedPeaceTurns() > 0)
 	{
 		return 0;
 	}
-
+	*/
 	iDefenders = 2;
 
 	// TAC - AI City Defense - koma13 - START

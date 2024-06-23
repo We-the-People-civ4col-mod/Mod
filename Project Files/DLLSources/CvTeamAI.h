@@ -25,6 +25,8 @@ public:
 	}
 	DllExport static CvTeamAI& getTeamNonInl(TeamTypes eTeam);
 
+	static bool AI_isChosenWarPlan(WarPlanTypes eWarPlanType); // advc.105
+
 	static bool AI_isImminentWarPlan(WarPlanTypes eWarPlanType)
 	{
 		return (eWarPlanType == WARPLAN_LIMITED || eWarPlanType == WARPLAN_TOTAL ||
@@ -137,6 +139,11 @@ public:
 
 	WarPlanTypes AI_getWarPlan(TeamTypes eIndex) const;
 	bool AI_isChosenWar(TeamTypes eIndex) const;
+	bool AI_isAnyChosenWar() const; // advc.105
+	int AI_getNumWarPlans(WarPlanTypes eWarPlanType) const
+	{
+		return getAnyWarPlanCount();
+	}
 	bool AI_isAnyWarPlan() const { return (getAnyWarPlanCount() > 0); } // </advc.opt>
 	bool AI_isSneakAttackPreparing(TeamTypes eIndex) const;
 	bool AI_isSneakAttackReady(TeamTypes eIndex /* K-Mod (any team): */ = NO_TEAM) const;

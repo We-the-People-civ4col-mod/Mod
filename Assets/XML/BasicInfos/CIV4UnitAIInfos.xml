@@ -102,5 +102,9 @@
 			<Type>UNITAI_TRANSPORT_COAST</Type>
 			<Description>UNITAI_TRANSPORT_COAST</Description>
 		</UnitAIInfo>
+		<UnitAIInfo>
+			<Type>UNITAI_ATTACK_CITY</Type>
+			<Description>UNITAI_ATTACK_CITY</Description>
+		</UnitAIInfo>
 	</UnitAIInfos>
 </Civ4UnitAIInfos>

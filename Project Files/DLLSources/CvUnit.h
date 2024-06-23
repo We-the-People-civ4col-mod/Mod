@@ -253,6 +253,7 @@ public:
 	CvPlot* bombardImprovementTarget(const CvPlot* pPlot) const;
 	// Super Forts end
 	bool canBombard(const CvPlot* pPlot) const;
+	int damageToBombardTarget(CvPlot const& kFrom) const; // advc
 	bool bombard();
 	bool canPillage(const CvPlot* pPlot) const;
 	bool pillage();

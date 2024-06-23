@@ -16897,3 +16897,30 @@ bool CvUnit::isEnemy(TeamTypes eTeam, CvPlot const& kPlot) const
 {
 	return GET_TEAM(eTeam).isAtWar(TEAMID(getCombatOwner(eTeam, &kPlot)));
 }
+
+// Moved out of CvUnit::bombard (note: may exceed the target's defensive modifier)
+int CvUnit::damageToBombardTarget(CvPlot const& kFrom) const
+{
+	CvCity const* pBombardCity = bombardTarget(&kFrom);
+	if (pBombardCity == NULL)
+		return 0;
+	// <advc.004c>
+	int iDefWithBuildings = pBombardCity->getDefenseModifier(/*false*/);
+	FAssertMsg(iDefWithBuildings > 0 || isHuman(),
+		"The AI shoudn't bombard cities whose def is already 0");
+	int iDefSansBuildings = pBombardCity->getDefenseModifier(/*true*/);
+	bool const bIgnore = false; // ignoreBuildingDefense();
+	// </advc.004c>
+	int iBombardModifier = 0;
+	if (!bIgnore) // advc.004c
+		iBombardModifier -= pBombardCity->getBuildingBombardDefense();
+	// <advc.004c> Same formula as in BtS (except for rounding)
+	int rDamage = bombardRate();
+	rDamage *= (100 + iBombardModifier);
+	rDamage = std::max(rDamage, 0);
+
+	if (bIgnore && iDefSansBuildings > 0) {
+		rDamage = rDamage * iDefWithBuildings / iDefSansBuildings;
+	}
+	return (rDamage + 99) / 100; // Rounding equivalent to rDamage.round() in scaled
+}

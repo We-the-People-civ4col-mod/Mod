@@ -113,8 +113,6 @@ public:
 		int iCurrentHP = -1, bool bAssumePromotion = false) const; // advc.139
 	// </advc.159>
 
-	void AI_attackCityMove_advciv();
-
 protected:
 
 	void AI_resetSavedData();
@@ -148,24 +146,17 @@ protected:
 	void AI_treasureMove();
 	void AI_yieldUhMove();
 	void AI_generalMove();
-	
-	void AI_offensiveMove();
-	// TAC - AI Attack City - koma13 - START
+	void AI_cityDefenseMove();
+	void AI_attackMove();
 	void AI_attackCityMove();
-	// TAC - AI Attack City - koma13 - END
-
-	void AI_defensiveMove();
 	void AI_counterMove();
-	
 	void AI_defensiveBraveMove();
 	void AI_offensiveBraveMove();
 	void AI_counterBraveMove();
-	
 	void AI_transportMove();
 	void AI_transportMoveRoutes();
 	void AI_transportMoveFull();
 	void AI_pirateMove();
-
 	void AI_imperialShipMove();
 	void AI_imperialSoldierMove();
 	void AI_imperialMountedMove();
@@ -273,16 +264,31 @@ protected:
 		// BETTER_BTS_AI_MOD, War tactics AI, Unit AI, 04/18/10, jdog5000:
 		int iMaxTransportPath = MAX_INT);
 	
+	// TODO: Remove this helper once migrate to MovementFlags
+	bool AI_load(UnitAITypes eUnitAI, MissionAITypes eMissionAI,
+		UnitAITypes eTransportedUnitAI = NO_UNITAI, int iMinCargo = -1,
+		int iMinCargoSpace = -1, int iMaxCargoSpace = -1,
+		int iMaxCargoOurUnitAI = -1, int iFlags = 0, int iMaxPath = MAX_INT,
+		// BETTER_BTS_AI_MOD, War tactics AI, Unit AI, 04/18/10, jdog5000:
+		int iMaxTransportPath = MAX_INT)
+	{
+		return AI_load(eUnitAI, eMissionAI,
+			eTransportedUnitAI, iMinCargo,
+			iMinCargoSpace, iMaxCargoSpace,
+			iMaxCargoOurUnitAI, static_cast<MovementFlags>(iFlags), iMaxPath, iMaxTransportPath);
+	}
+
 	bool AI_guardCityBestDefender();
-	bool AI_guardCityMinDefender();
-	bool AI_guardCity(bool bAll = false, int iMaxPath = MAX_INT);
+	bool AI_cargoGuardCityMinDefender();
+	bool AI_guardCity(bool bLeave = false, bool bSearch = false, int iMaxPath = MAX_INT,
+		MovementFlags eFlags = NO_MOVEMENT_FLAGS);
 	bool AI_guardCityCounter(int iMaxPath = MAX_INT);
 	int AI_getPlotDefendersNeeded(CvPlot* pPlot, int iExtra);
 	bool AI_guardFort(bool bSearch = true);
 	// Super Forts begin *AI_defense*
 	bool AI_guardFortMinDefender(bool bSearch = true);
 	// Super Forts end
-	bool AI_guardCitySite();
+	//bool AI_guardCitySite();
 	bool AI_chokeDefend();
 	bool AI_heal(int iDamagePercent = 0, int iMaxPath = MAX_INT);
 	bool AI_afterAttack();
@@ -473,6 +479,10 @@ protected:
 	std::pair<int, int> AI_countPiracyTargets(CvPlot const& kPlot,
 		bool bStopIfAnyTarget = false) const;
 	bool AI_handleStranded(MovementFlags eFlags = NO_MOVEMENT_FLAGS); // K-Mod
+	bool AI_guardCityMinDefender(bool bSearch = true);
+	bool AI_isCargoOnCivilianTransport() const;
+	void considerCivilianDuty();
+	void AI_handleEmbarkedMilitary();
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;

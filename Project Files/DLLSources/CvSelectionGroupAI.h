@@ -96,6 +96,11 @@ public:
 	bool AI_isHasPathToAreaPlayerCity(PlayerTypes ePlayer, MovementFlags eFlags = NO_MOVEMENT_FLAGS,
 		int iMaxPathTurns = -1) /* Erik (CODE1): */ const;
 
+	// <advc.004c>
+	CvUnit* AI_bestUnitForMission(MissionTypes eMission,
+		CvPlot const* pMissionPlot = NULL,
+		std::vector<int> const* pUnitsToSkip = NULL); // </advc.004c>
+
 	enum UnloadMode
 	{
 		NoForce,

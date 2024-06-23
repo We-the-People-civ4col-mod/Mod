@@ -5811,7 +5811,7 @@
 			<Strategy>TXT_KEY_UNIT_HEAVY_ARTILLERY_VETERAN_STRATEGY</Strategy>
 			<Help>TXT_KEY_PROFESSION_HEAVY_ARTILLERY_HELP</Help>
 			<Combat>UNITCOMBAT_SIEGE</Combat>
-			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
+			<DefaultUnitAI>UNITAI_ATTACK_CITY</DefaultUnitAI>
 			 <SpecialBuilding>NONE</SpecialBuilding>
 			<bWorkPlot>0</bWorkPlot>
 			<bCitizen>0</bCitizen>

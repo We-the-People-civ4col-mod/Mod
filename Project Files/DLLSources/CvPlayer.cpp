@@ -24891,6 +24891,17 @@ void CvPlayer::postLoadFixes()
 		}
 	}
 	recalculatePlayerOppressometer();
+
+#if 0
+	// Migrate UNIT_AI for colonial players
+	if (isColonialNation())
+	{ 
+		FOR_EACH_UNITAI_VAR(pLoopUnit, *this)
+		{
+			
+		}
+	}
+#endif
 }
 
 

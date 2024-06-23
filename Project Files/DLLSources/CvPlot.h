@@ -274,6 +274,8 @@ public:
 	CvArea* waterArea() const;
 	CvArea* secondWaterArea() const;
 	int getArea() const;
+	const CvArea& getConstArea() const { return *area(); };
+
 	// <advc>
 	//inline CvArea& getArea() const { return *m_pArea; }
 	// (This had called CvMap::getArea in BtS)

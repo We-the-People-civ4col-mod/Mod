@@ -2216,7 +2216,12 @@ void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI)
 	case MISSIONAI_SAIL_FROM_AFRICA: szString = L"MISSIONAI_SAIL_FROM_EUROPE"; break;
 	case MISSIONAI_SAIL_TO_PORT_ROYAL: szString = L"MISSIONAI_SAIL_TO_PORT_ROYAL"; break;
 	case MISSIONAI_SAIL_FROM_PORT_ROYAL: szString = L"MISSIONAI_SAIL_FROM_PORT_ROYAL"; break;
-
+	case MISSIONAI_DEFEND: szString = L"MISSIONAI_DEFEND"; break;
+	case MISSIONAI_COUNTER_ATTACK: szString = L"MISSIONAI_COUNTER_ATTACK"; break;
+	case MISSIONAI_REINFORCE: szString = L"MISSIONAI_REINFORCE"; break;
+	case MISSIONAI_HEAL: szString = L"MISSIONAI_HEAL"; break;
+	case MISSIONAI_CHOKE: szString = L"MISSIONAI_CHOKE"; break;
+	case MISSIONAI_STRANDED: szString = L"MISSIONAI_STRANDED"; break;
 	default: szString = CvWString::format(L"UNKOWN_MISSION_AI(%d)", eMissionAI); break;
 	}
 }
@@ -2252,6 +2257,7 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI)
 	case UNITAI_COMBAT_SEA: szString = L"combat sea"; break;
 	case UNITAI_PIRATE_SEA: szString = L"pirate sea"; break;
 	case UNITAI_ESCORT_SEA: szString = L"escort sea"; break;	// TAC - AI Escort Sea - koma13
+	case UNITAI_ATTACK_CITY: szString = L"attack city"; break;
 	default: szString = CvWString::format(L"unknown(%d)", eUnitAI); break;
 	}
 }
@@ -2262,22 +2268,22 @@ CvWString getUnitAIStateString(UnitAIStates eUnitAIState)
 
 	switch (eUnitAIState)
 	{
-	case NO_UNITAI_STATE: szString = L"NO_UNITAI_STATE"; break;
-	case UNITAI_STATE_DEFAULT: szString = L"UNITAI_STATE_DEFAULT"; break;
-	case UNITAI_STATE_BEARING_GIFTS: szString = L"UNITAI_STATE_BEARING_GIFTS"; break;
-	case UNITAI_STATE_RETURN_HOME: szString = L"UNITAI_STATE_RETURN_HOME"; break;
-	case UNITAI_STATE_WANDER: szString = L"UNITAI_STATE_WANDER"; break;
-	case UNITAI_STATE_RAIDING_PARTY: szString = L"UNITAI_STATE_RAIDING_PARTY"; break;
-	case UNITAI_STATE_BEARING_TRADE: szString = L"UNITAI_STATE_BEARING_TRADE"; break;
-	case UNITAI_STATE_GUARDING: szString = L"UNITAI_STATE_GUARDING"; break;
-	case UNITAI_STATE_ADVANCING: szString = L"UNITAI_STATE_ADVANCING"; break;
-	case UNITAI_STATE_GROUPING: szString = L"UNITAI_STATE_GROUPING"; break;
-	case UNITAI_STATE_CHARGING: szString = L"UNITAI_STATE_CHARGING"; break;
-	case UNITAI_STATE_RETREATING: szString = L"UNITAI_STATE_RETREATING"; break;
-	case UNITAI_STATE_PICKUP: szString = L"UNITAI_STATE_PICKUP"; break;
-	case UNITAI_STATE_PURCHASED: szString = L"UNITAI_STATE_PURCHASED"; break;
-	case UNITAI_STATE_SELL_TO_NATIVES: szString = L"UNITAI_STATE_SELL_TO_NATIVES"; break;
-	case UNITAI_STATE_SAIL: szString = L"UNITAI_STATE_SAIL"; break;
+	case NO_UNITAI_STATE: szString = L"NO_STATE"; break;
+	case UNITAI_STATE_DEFAULT: szString = L"DEFAULT"; break;
+	case UNITAI_STATE_BEARING_GIFTS: szString = L"BEARING_GIFTS"; break;
+	case UNITAI_STATE_RETURN_HOME: szString = L"RETURN_HOME"; break;
+	case UNITAI_STATE_WANDER: szString = L"WANDER"; break;
+	case UNITAI_STATE_RAIDING_PARTY: szString = L"RAIDING_PARTY"; break;
+	case UNITAI_STATE_BEARING_TRADE: szString = L"BEARING_TRADE"; break;
+	case UNITAI_STATE_GUARDING: szString = L"GUARDING"; break;
+	case UNITAI_STATE_ADVANCING: szString = L"ADVANCING"; break;
+	case UNITAI_STATE_GROUPING: szString = L"GROUPING"; break;
+	case UNITAI_STATE_CHARGING: szString = L"CHARGING"; break;
+	case UNITAI_STATE_RETREATING: szString = L"RETREATING"; break;
+	case UNITAI_STATE_PICKUP: szString = L"PICKUP"; break;
+	case UNITAI_STATE_PURCHASED: szString = L"PURCHASED"; break;
+	case UNITAI_STATE_SELL_TO_NATIVES: szString = L"SELL_TO_NATIVES"; break;
+	case UNITAI_STATE_SAIL: szString = L"SAIL"; break;
 	default: szString = CvWString::format(L"UNKOWN_UNITAI_STATE(%d)", eUnitAIState); break;
 	}
 

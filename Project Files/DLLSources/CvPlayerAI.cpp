@@ -1130,6 +1130,7 @@ DomainTypes CvPlayerAI::AI_unitAIDomainType(UnitAITypes eUnitAI) const
 	case UNITAI_DEFENSIVE:
 	case UNITAI_OFFENSIVE:
 	case UNITAI_COUNTER:
+	case UNITAI_ATTACK_CITY:
 		return DOMAIN_LAND;
 		break;
 
@@ -1179,6 +1180,7 @@ bool CvPlayerAI::AI_unitAIIsCombat(UnitAITypes eUnitAI) const
 	case UNITAI_DEFENSIVE:
 	case UNITAI_OFFENSIVE:
 	case UNITAI_COUNTER:
+	case UNITAI_ATTACK_CITY:
 		return true;
 		break;
 
@@ -2486,7 +2488,7 @@ CvCity* CvPlayerAI::AI_findTargetCity(CvArea* pArea)
 }
 
 
-int CvPlayerAI::AI_getPlotDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bool bOffensive) const
+int CvPlayerAI::AI_getPlotDangerInternal(const CvPlot* pPlot, int iRange, bool bTestMoves, bool bOffensive) const
 {
 	PROFILE_FUNC();
 
@@ -4711,6 +4713,8 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 			break;
 		case UNITAI_COUNTER:
 			break;
+		case UNITAI_ATTACK_CITY:
+			break;
 
 		//TAC Whaling, ray
 		case UNITAI_WORKER_SEA:
@@ -4871,6 +4875,13 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 			break;
 
 		case UNITAI_OFFENSIVE:
+			if (kUnitInfo.getDefaultProfession() != NO_PROFESSION)
+			{
+				bValid = true;
+			}
+			break;
+
+		case UNITAI_ATTACK_CITY:
 			if (kUnitInfo.getBombardRate() > 0)
 			{
 				bValid = true;
@@ -5007,11 +5018,18 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 	case UNITAI_DEFENSIVE:
 		iTempValue = iOffenseCombatValue / 2;
 		iTempValue += iDefenseCombatValue;
-		iTempValue += kUnitInfo.getBombardRate() * 50;
 		iValue += iTempValue;
 		break;
 
 	case UNITAI_OFFENSIVE:
+		iTempValue = iOffenseCombatValue;
+		iTempValue += iDefenseCombatValue / 2;
+		iTempValue *= 2 + kUnitInfo.getMoves();
+		iTempValue /= 3;
+		iValue += iTempValue;
+		break;
+
+	case UNITAI_ATTACK_CITY:
 		iTempValue = iOffenseCombatValue;
 		iTempValue += iDefenseCombatValue / 2;
 		iTempValue += kUnitInfo.getBombardRate() * 50;
@@ -5236,9 +5254,9 @@ int CvPlayerAI::AI_totalUnitAIs(UnitAITypes eUnitAI)
 }
 
 
-int CvPlayerAI::AI_totalAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI)
+int CvPlayerAI::AI_totalAreaUnitAIsInternal(CvArea const& kArea, UnitAITypes eUnitAI) const
 {
-	return (pArea->getNumTrainAIUnits(getID(), eUnitAI) + pArea->getNumAIUnits(getID(), eUnitAI));
+	return (kArea.getNumTrainAIUnits(getID(), eUnitAI) + kArea.getNumAIUnits(getID(), eUnitAI));
 }
 
 
@@ -5291,34 +5309,33 @@ bool CvPlayerAI::AI_hasSeaTransport(const CvUnit* pCargo) const
 	return false;
 }
 
-int CvPlayerAI::AI_neededExplorers(CvArea* pArea)
+int CvPlayerAI::AI_neededExplorers(const CvArea& kArea) const
 {
-	FAssert(pArea != NULL);
 	int iNeeded = 0;
 
-	if (pArea->isWater())
+	if (kArea.isWater())
 	{
-		iNeeded = std::min(iNeeded + (pArea->getNumUnrevealedTiles(getTeam()) / 400), std::min(2, ((getNumCities() / 2) + 1)));
+		iNeeded = std::min(iNeeded + (kArea.getNumUnrevealedTiles(getTeam()) / 400), std::min(2, ((getNumCities() / 2) + 1)));
 	}
 	else
 	{
-		iNeeded = std::min(iNeeded + (pArea->getNumUnrevealedTiles(getTeam()) / 150), std::min(3, ((getNumCities() / 3) + 2)));
+		iNeeded = std::min(iNeeded + (kArea.getNumUnrevealedTiles(getTeam()) / 150), std::min(3, ((getNumCities() / 3) + 2)));
 	}
 
 	if (0 == iNeeded)
 	{
 		if ((GC.getGameINLINE().countCivTeamsAlive() - 1) > GET_TEAM(getTeam()).getHasMetCivCount())
 		{
-			if (pArea->isWater())
+			if (kArea.isWater())
 			{
-				if (GC.getMap().findBiggestArea(true) == pArea)
+				if (GC.getMap().findBiggestArea(true) == &kArea)
 				{
 					iNeeded++;
 				}
 			}
 			else
 			{
-				if (getPrimaryCity() != NULL && pArea->getID() == getPrimaryCity()->getArea())
+				if (getPrimaryCity() != NULL && kArea.getID() == getPrimaryCity()->getArea())
 				{
 					for (int iPlayer = 0; iPlayer < MAX_PLAYERS; iPlayer++)
 					{
@@ -5327,7 +5344,7 @@ int CvPlayerAI::AI_neededExplorers(CvArea* pArea)
 						{
 							if (!GET_TEAM(getTeam()).isHasMet(kPlayer.getTeam()))
 							{
-								if (pArea->getCitiesPerPlayer(kPlayer.getID()) > 0)
+								if (kArea.getCitiesPerPlayer(kPlayer.getID()) > 0)
 								{
 									iNeeded++;
 									break;
@@ -5459,7 +5476,7 @@ int CvPlayerAI::AI_totalMissionAIs(MissionAITypes eMissionAI, CvSelectionGroup* 
 	return iCount;
 }
 
-int CvPlayerAI::AI_areaMissionAIs(CvArea* pArea, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup)
+int CvPlayerAI::AI_areaMissionAIs(const CvArea& kArea, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup) const
 {
 	PROFILE_FUNC();
 
@@ -5480,7 +5497,7 @@ int CvPlayerAI::AI_areaMissionAIs(CvArea* pArea, MissionAITypes eMissionAI, CvSe
 
 				if (pMissionPlot != NULL)
 				{
-					if (pMissionPlot->getArea() == pArea->getID())
+					if (pMissionPlot->getArea() == kArea.getID())
 					{
 						iCount += pLoopSelectionGroup->getNumUnits();
 					}
@@ -10924,6 +10941,7 @@ int CvPlayerAI::AI_professionValue(ProfessionTypes eProfession, UnitAITypes eUni
 			break;
 
 		case UNITAI_OFFENSIVE:
+		case UNITAI_ATTACK_CITY:
 			// TAC - AI purchases military units - koma13 - START
 			//if (isNative())
 			{
@@ -11309,6 +11327,7 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 			break;
 
 		case UNITAI_OFFENSIVE:
+		case UNITAI_ATTACK_CITY:
 			{
 				bool bAtWar = GET_TEAM(getTeam()).getAnyWarPlanCount();
 				int iLowerPop = bAtWar ? 9 : 15 ;
@@ -11763,11 +11782,19 @@ int CvPlayerAI::AI_professionSuitability(const CvUnit* pUnit, ProfessionTypes eP
 		iValue *= 100 + 5 * iPromotionCount;
 		iValue /= 100;
 
-		if (eUnitAI == UNITAI_OFFENSIVE)
+		if (eUnitAI == UNITAI_ATTACK_CITY)
 		{
 			iValue *= 100 + pUnit->cityAttackModifier();
 			iValue /= 100;
 
+			if (pUnit->isProfessionalMilitary())
+			{
+				iValue *= 200;
+				iValue /= 100;
+			}
+		}
+		else if (eUnitAI == UNITAI_OFFENSIVE)
+		{
 			if (pUnit->isProfessionalMilitary())
 			{
 				iValue *= 200;
@@ -11865,7 +11892,8 @@ int CvPlayerAI::AI_professionSuitability(const CvUnit* pUnit, ProfessionTypes eP
 		iValue /= 100;
 	}
 
-	if (eUnitAI == UNITAI_OFFENSIVE || eUnitAI == UNITAI_DEFENSIVE || eUnitAI == UNITAI_COUNTER)
+	if (eUnitAI == UNITAI_OFFENSIVE || eUnitAI == UNITAI_DEFENSIVE ||
+		eUnitAI == UNITAI_COUNTER || eUnitAI == UNITAI_ATTACK_CITY)
 	{
 		const CvUnitInfo& kUnitInfo = pUnit->getUnitInfo();
 
@@ -14006,6 +14034,7 @@ int CvPlayerAI::AI_getTotalFloatingDefenders(CvArea* pArea)
 	PROFILE_FUNC();
 	int iCount = 0;
 
+	// Not including UNITAI_ATTACK_CITY
 	iCount += AI_totalAreaUnitAIs(pArea, UNITAI_DEFENSIVE);
 	iCount += AI_totalAreaUnitAIs(pArea, UNITAI_OFFENSIVE);
 	iCount += AI_totalAreaUnitAIs(pArea, UNITAI_COUNTER);
@@ -15406,7 +15435,8 @@ UnitTypes CvPlayerAI::AI_nextBuyProfessionUnit(ProfessionTypes* peProfession, Un
 
 namespace
 {
-	const UnitAITypes validUnitAITypes[] = {UNITAI_DEFENSIVE , UNITAI_OFFENSIVE , UNITAI_COUNTER, UNITAI_TRANSPORT_SEA, UNITAI_COMBAT_SEA, UNITAI_PIRATE_SEA};
+	const UnitAITypes validUnitAITypes[] = {UNITAI_DEFENSIVE , UNITAI_OFFENSIVE , UNITAI_COUNTER, 
+		UNITAI_ATTACK_CITY, UNITAI_TRANSPORT_SEA, UNITAI_COMBAT_SEA, UNITAI_PIRATE_SEA};
 }
 
 // TAC - AI purchases military units - koma13 - START
@@ -16897,4 +16927,46 @@ bool CvPlayerAI::AI_isLandWar(CvArea const& kArea) const
 bool CvPlayerAI::AI_deduceCitySite(CvCity const& kCity) const
 {
 	return GET_TEAM(getTeam()).AI_deduceCitySite(kCity);
+}
+
+/*	advc (note): iRange refers to the distance between pPlot and the mission plots
+	of the units that are being counted. 0 (default) means that only units headed
+	for pPlot are counted. */
+int CvPlayerAI::AI_plotTargetMissionAIsEx(CvPlot const& kPlot, MissionAITypes* aeMissionAI,
+	int iMissionAICount, CvSelectionGroup const* pSkipSelectionGroup, int iRange,
+	int iMaxCount) const
+{
+	//PROFILE_FUNC(); // advc.003o
+	FAssert(iMaxCount > 0); // advc.opt (use MAX_INT for infinity)
+
+	int iCount = 0;
+	FOR_EACH_GROUPAI(pLoopSelectionGroup, *this)
+	{
+		if (pLoopSelectionGroup == pSkipSelectionGroup)
+			continue;
+
+		CvPlot* pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlotInternal();
+		if (pMissionPlot == NULL)
+			continue;
+
+		MissionAITypes eGroupMissionAI = pLoopSelectionGroup->AI_getMissionAITypeInternal();
+		int iDistance = ::stepDistance(&kPlot, pMissionPlot);
+
+		if (iDistance <= iRange)
+		{
+			for (int iMissionAIIndex = 0; iMissionAIIndex < iMissionAICount;
+				iMissionAIIndex++)
+			{
+				if (eGroupMissionAI == aeMissionAI[iMissionAIIndex] ||
+					aeMissionAI[iMissionAIIndex] == NO_MISSIONAI)
+				{
+					iCount += pLoopSelectionGroup->getNumUnits();
+					// <advc.opt>
+					if (iCount >= iMaxCount)
+						return iMaxCount; // </advc.opt>
+				}
+			}
+		}
+	}
+	return std::min(iCount, iMaxCount); // advc.opt: (to be consistent)
 }
