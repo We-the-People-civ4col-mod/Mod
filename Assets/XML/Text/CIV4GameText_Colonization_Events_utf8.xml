@@ -5553,13 +5553,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_1</Tag>
-		<English>We support the revolution. Let the scribblers have their way. Let them stir up the atmosphere a little.</English>
+		<English>We support the revolution. The scribblers can have their way. Let them stir up the air a bit.</English>
 		<German>Wir unterstützen die Revolution. Lasst die Schreiberlinge gewähren. Sollen sie die Stimmung ruhig ein wenig anheizen.</German>
 		<Russian>К чёрту короля с его запретами - не препятствовать выпуску этих статей. Нашему обществу давно пора проснуться.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_2</Tag>
-		<English>Excellent, that's what people like to read. But we mustn't show our support too clearly - not yet.</English>
+		<English>Excellent! Tthat's what people like to read. But we mustn't show our support too clearly - not yet.</English>
 		<German>Hervorragend, sowas lesen die Leute eben gerne. Aber zeigen wir unsere Unterstützung mal lieber nicht zu deutlich - noch nicht.</German>
 		<Russian>Отлично, люди любят читать такие новости. Но давайте не будем слишком явно демонстрировать нашу поддержку – пока.</Russian>
 	</TEXT>	
@@ -5577,7 +5577,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES</Tag>
-		<English>In the [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] empire taverns and alehouses are becoming conspiratorial hangouts.</English>
+		<English>In the [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] empire taverns and alehouses are turning into conspiratorial hangouts.</English>
 		<German>Im [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonialreich werden die Taveren und Spelunken zu konspirativen Orten.</German>
 		<Russian>В колониях [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] таверны и кабаки становятся местами заговора.</Russian>
 	</TEXT>
@@ -5589,7 +5589,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_1</Tag>
-		<English>Yes, I've noticed that too. I've actually heard it myself. So what, as long as it's just talk and the drinking doesn't stop them from working. Let them talk! Speaking of which, this feels like a good time for us to go get a drink.</English>
+		<English>Yes, I've noticed that too. I've actually heard it myself. So what, as long as it's just talk and the drinking doesn't stop them from working. Let them talk! Speaking of which, why don't we go get a drink?</English>
 		<German>Ja, das ist mir auch schon aufgefallen, ähm ich meine, es ist mir zu Ohren gekommen. Na und, solange die Leute nur so daherreden und sie das Trinken nicht von der Arbeit abhält, lasst die Leute doch reden. Ich schlage vor, wir genehmigen uns auch erst mal einen guten Tropfen.</German>
 		<Russian>Да, я тоже это заметил, то есть даже сам слышал. Ничего страшного - пока подобные высказвания и выпивка им не мешает работать, пусть болтают. Надо же им где-то выпускать пар. Кстати, а почему бы и нам не опрокинуть по стаканчику?</Russian>
 	</TEXT>	
@@ -5607,7 +5607,7 @@
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_4</Tag>
-		<English>That's treason, of course! The ringleaders of the Sons of Liberty meet in the taverns. That's what I've heard. Send the royal troops to arrest them! They will hang.</English>
+		<English>That's treason, of course! The ringleaders of the Sons of Liberty meet in the taverns. That's what I've heard. Send the royal troops to arrest them. They deserve to hang!</English>
 		<German>Das ist natürlich Hochverrat! In den Spelunken treffen sich die Rädelsführer der Söhne der Freiheit, soweit ich gehört habe. Lasst die Königlichen Truppen antreten und sie dingfest machen! Sie werden hängen.</German>
 		<Russian>Господь всемогущий, да это же измена! Насколько я слышал, главари этих так называемых "Сынов свободы" встречаются в тавернах. Отправить туда королевские войска и арестовать их! Скоро они все будут раскачиваться в петле.</Russian>
 	</TEXT>
@@ -5655,7 +5655,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH_1</Tag>
-		<English>Milord, a well-known lawyer, an advocate of revolution, gave an inspiring speech in Congress. He literally said "...give me liberty or give me death!" He meant the King. We have to say something, before they storm our palace. I can already see the torches in the distance!</English>
+		<English>Milord, a well-known lawyer, an advocate of revolution, gave an inspiring speech in Congress. He literally said "...give me liberty or give me death!" His words were directed at the King. We have to say something before they storm our palace. I can already see the torches in the distance!</English>
 		<German>Milord, ein bekannter Anwalt und Verfechter der Revolution hat im Kongress eine ergreifende und begeisternde Rede gehalten. Er sagte wörtlich "...geben Sie mir die Freiheit oder den Tod!" Damit meint er den König. Wir müssen uns dazu äußern, sonst stürmen sie noch den Palast. Ich sehe schon die Fackeln in der Ferne!</German>
 		<Russian>Милорд, известный юрист и защитник революции выступил с вдохновляющей речью в Конгрессе. Он сказал буквально следующее: "...дайте мне свободу или дайте мне смерть!" Он обращался к Королю. Мы срочно должны как-то ответить, иначе толпа возьмёт наш дворец штурмом. Я уже вижу вдалеке факелы!</Russian>
 	</TEXT>
@@ -5673,7 +5673,7 @@
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_KING_MAD_HELP</Tag>
-		<English>His Majesty is beside himself at this reaction. That sounds like treason!</English>
+		<English>His Majesty is beside himself at these protests. They sound like treason!</English>
 		<German>Seine Majestät ist über diese Reaktion wie von Sinnen. Das klingt wie Hochverrat!</German>
 		<Russian>Его Величество вне себя от такой реакции. Он расценивает это, как предательство!</Russian>
 	</TEXT>
@@ -5799,13 +5799,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_1</Tag>
-		<English>Yes, it seems that way to me too. We should ask the commander to send some troops back to Europe. The king won't like that, but it will calm the citizens down a bit.</English>
+		<English>Yes, it seems that way to me too. We should ask the commander to send some troops back to Europe. The King won't like that, but it will calm the citizens down.</English>
 		<German>Ja, scheint mir auch so. Wir sollten den Kommandeur bitten, einige Truppen nach Europa zurückzuschicken. Das wird zwar dem König nicht gefallen, aber die Bürger etwas beruhigen.</German>
 		<Russian>Да, мне тоже так кажется. Мы должны попросить командующего отправить часть войск обратно в Европу. Королю это точно не понравится, но зато немного успокоит наших граждан.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_2</Tag>
-		<English>The protection of the colonies and the expansion of the empire require sacrifices. The troops stay where they are. But I am happy to contribute something from my casket to supply the troops.</English>
+		<English>The protection of the colonies and the expansion of the empire requires sacrifice. The troops stay where they are. I can contribute from my coffers to pay for the troops.</English>
 		<German>Der Schutz der Kolonien und die Erweiterung des Reiches erfordern nun mal Opfer. Die Truppen bleiben wo sie sind. Aber ich bin gerne bereit etwas aus meiner Schatulle zur Versorgung der Truppen beizusteuern.</German>
 		<Russian>Защита колоний и расширение империи требуют жертв. Войска останутся там, где они есть. Я с удовольствием пожертвую небольшую часть средств из своей казны на снабжение войск.</Russian>
 	</TEXT>	
@@ -5881,13 +5881,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_6</Tag>
-		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trade with the natives was ultimately too aggressive. The Indians are a bit disgruntled!</English>
+		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trade with the Natives was ultimately too aggressive. The Indians are a bit disgruntled!</English>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Handel mit den Ureinwohnern war letztlich zu agressiv. Die Indianer sind etwas verstimmt!</German>
 		<Russian>Индейцы крайне недовольны агрессивными методами ведения торговли со стороны [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_2_1</Tag>
-		<English>Milord, a neighboring Indian village wants to trade with us for mutual benefit. We should definitely send a trek and develop trading relations. That can only be beneficial.</English>
+		<English>Milord, a neighbouring Native village seeks mutual benefit. We should send a trek to develop trade. That can only be beneficial.</English>
 		<German>Milord, ein benachbartes Indianerdorf möchte zum gegenseitigen Vorteil Handel mit uns treiben. Wir sollten unbedingt einen Treck entsenden und die Handelsbeziehungen weiter ausbauen. Das kann nur von Vorteil sein.</German>
 		<Russian>Милорд, индейцы из соседней деревни хотят торговать с нами, обещая взаимную выгоду. Нам обязательно следует отправить к ним обоз и начать торговлю. Это предприятие сулит хорошую прибыль.</Russian>
 	</TEXT>
@@ -5905,7 +5905,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_2</Tag>
-		<English>Unfortunately you have waited too long. The Indian village can't or doesn't want to trade with you at the moment. The trek is now available for other uses.</English>
+		<English>Unfortunately you have waited too long. The Native village can't or doesn't want to trade with you at the moment. The trek is now available for other uses.</English>
 		<German>Ihr habt leider zulange gewartet. Das Indianerdorf kann oder möchte gegenwärtig keinen Handel mit Euch treiben. Ihr könnt den Treck nun wieder anderweitig verwenden.</German>
 		<Russian>К сожалению, вы слишком долго ждали. В данный момент индейцы не могут или не хотят торговать с вами. Вы можете перенаправить транспорт на другие торговые маршруты.</Russian>
 	</TEXT>
@@ -5929,7 +5929,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2_2</Tag>
-		<English>We can negotiate with the Indians, but we should remain fair. We should also stay in the village for a while and see if we can't negotiate a bit more.</English>
+		<English>We can negotiate with the Natives, but we should remain fair. We should stay in the village for a while to try to negotiate a bit more.</English>
 		<German>Wir können ruhig kräftig mit den Indianern verhandeln, sollten aber fair bleiben. Wir sollten eine Weile in dem Dorf bleiben und sehen, ob wir nicht noch etwas mehr herausschlagen können.</German>
 		<Russian>Нам нужно вести торговые переговоры с индейцами, но мы должны оставаться справедливыми. И предлагаю остаться в деревне на какое-то время и посмотреть, сможем ли мы договориться ещё о чем-нибудь.</Russian>
 	</TEXT>
@@ -5951,13 +5951,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_2_6</Tag>
-		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trade with the natives was ultimately too aggressive. The leader and his warriors are angry! They'll might attack us on the way back.</English>
+		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trade with the Natives was ultimately too aggressive. The leader and his warriors are angry! They might attack us on the way back.</English>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Handel mit den Ureinwohnern war letztlich zu agressiv. Der Anführer und seine Krieger sind sauer! Sie werden uns vielleicht auf dem Rückweg angreifen.</German>
 		<Russian>Индейцы крайне недовольны агрессивными методами ведения торговли со стороны [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_INITIAL_TRADE_WITH_NATIVES_1</Tag>
-		<English>The native women of a nearby indian village have heard about our offer of blankets, pots, beads and other goods. Now they have sent their men to procure these beautiful things for them. The men have not brought any riches with them, but promise us a little food in exchange.</English>
+		<English>The women in a nearby Native village have heard about our blankets, pots and beads. Now they've sent their men to bring them these beautiful things. The men have nothing valuable, just a little food to exchange.</English>
 		<German>Die Ureinwohner-Frauen eines nahegelegenen Dorfes haben von unserem Angebot an Decken, Töpfen, Perlen und derlei gehört. Nun haben sie ihre Männer losgeschickt, ihnen diese schönen Dinge zu beschaffen. Die Männer haben keine Reichtümer mitgebracht, versprechen uns aber ein wenig Nahrung als Tauschware.</German>
 		<Russian>Индейские женщины из соседней деревни узнали, что к нам прибыла большая партия товаров для обмена (одеяла, горшки, бусы и много всего остального) и отправили своих мужчин за этими прекрасными вещами. Те не привезли с собой никаких богатств, но обещают нам взамен немного еды.</Russian>
 	</TEXT>
@@ -5975,25 +5975,25 @@
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INITIAL_TRADE_WITH_NATIVES_2</Tag>
-		<English>They have to offer us more than just a bit of corn and berries. Send them away. They should only come back when they have something worthwhile to offer us.</English>
+		<English>They have to offer us more than just somef corn and berries. Send them away. Tell them to come back when they have something worthwhile to offer us.</English>
 		<German>Da müssen sie uns schon mehr bieten als das bischen Mais und Beeren. Schickt sie weg. Sie sollen erst wiederkommen, wenn sie etwas anbieten können, das sich für uns lohnt.</German>
 		<Russian>Они должны предложить нам нечто большее, чем просто немного кукурузы и ягод. Гоните их прочь и пусть возвращаются только тогда, когда они смогут предложить нам что-то более стоящее.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INITIAL_TRADE_WITH_NATIVES_3</Tag>
-		<English>Yes, of course. Give them plenty of everything they want in exchange for the food. If the Indian women are happy, the men are happy, too and we don't have to worry too much about raids for the time being.</English>
+		<English>Yes, of course. Give them whatever they want in exchange for the food. When the Native women are happy, the warriors are happy too so we don't have to worry too much about raids for the time being.</English>
 		<German>Ja, natürlich. Gebt Ihnen im Tausch für die Nahrung reichlich von allem, was sie haben möchten. Sind die Indianer-Frauen glücklich, sind es die Männer auch und wir müssen uns erst einmal keine großen Sorgen um Überfälle machen.</German>
 		<Russian>Это не проблема. Дайте им все, что они хотят, в обмен на еду. Если женщины индейцев будут счастливы, то и их мужчины тоже будут счастливы и в ближайшее время нам не придется беспокоиться о набегах.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRADE_WITH_NATIVES_BETRAYAL_1</Tag>
-		<English>The native women of a nearby indian village have heard about our offer of blankets, pots, beads and other goods. Now they have sent their men to procure these beautiful things for them. The men have not brought any riches with them, but promise us a little food in exchange.</English>
+		<English>The women in a nearby Native village have heard about our blankets, pots and beads. Now they've sent their men to bring them these beautiful things. The men have nothing valuable, just a little food to exchange.</English>
 		<German>Milord, Krieger eines nahegelegenen Dorfes sind zu uns gekommen und möchten wieder mit uns handeln. Ihre Frauen verlangen nach den üblichen Handelswaren. Insbesondere Decken für den kalten Winter sind dieses Jahr sehr gefragt.</German>
 		<Russian>Милорд, воины из соседней деревни индейцев пришли к нам и хотели бы снова торговать с нами. Их жены требуют еще украшений и одеял для предстоящей зимы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TRADE_WITH_NATIVES_BETRAYAL</Tag>
-		<English>The native people of a neighboring village want to trade with the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] empire.</English>
+		<English>The Native people in a neighboring village want to trade with the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] empire.</English>
 		<German>Ureinwohner eines benachbarten Dorfes wollen wieder mit dem [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich handeln.</German>
 		<Russian>Индейцы снова приезжают в города империи [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] для торговли.</Russian>
 	</TEXT>
