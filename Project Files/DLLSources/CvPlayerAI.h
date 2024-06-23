@@ -120,7 +120,16 @@ public:
 	int AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreAttackers = false) const;
 	CvCity* AI_findTargetCity(CvArea* pArea);
 
-	int AI_getPlotDanger(CvPlot* pPlot, int iRange = -1, bool bTestMoves = true, bool bOffensive = false) const;
+	int AI_getPlotDanger(CvPlot* pPlot, int iRange = -1, bool bTestMoves = true, bool bOffensive = false) const
+	{
+		return AI_getPlotDangerInternal(pPlot, iRange, bTestMoves, bOffensive);
+	}
+	bool AI_isAnyPlotDanger(CvPlot const& kPlot, int iRange = -1, bool bTestMoves = true) const // K-Mod
+	{	// advc: Merged with the plot danger counting function
+		return (AI_getPlotDangerInternal(&kPlot, iRange, bTestMoves) > 0);
+	}
+
+	int AI_getPlotDangerInternal(const CvPlot* pPlot, int iRange = -1, bool bTestMoves = true, bool bOffensive = false) const;
 	int AI_getUnitDanger(CvUnit* pUnit, int iRange = -1, bool bTestMoves = true, bool bAnyDanger = true) const;
 
 	// TAC - AI Improved Naval AI - koma13 - START
@@ -180,11 +189,15 @@ public:
 	int AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea) const;
 	int AI_unitValuePercent(UnitTypes eUnit, UnitAITypes* peUnitAI, CvArea* pArea);
 	int AI_totalUnitAIs(UnitAITypes eUnitAI);
-	int AI_totalAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI);
+	int AI_totalAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI)
+	{
+		return AI_totalAreaUnitAIsInternal(*pArea, eUnitAI);
+	}
+	int AI_totalAreaUnitAIsInternal(CvArea const& kArea, UnitAITypes eUnitAI) const;
 	int AI_totalWaterAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI);
 	bool AI_hasSeaTransport(const CvUnit* pCargo) const;
 
-	int AI_neededExplorers(CvArea* pArea);
+	int AI_neededExplorers(const CvArea& kArea) const;
 	int AI_neededWorkers(CvArea* pArea) const;
 	//int AI_neededMissionary(CvArea* pArea);
 
@@ -194,7 +207,7 @@ public:
 	int AI_totalMissionAIs(MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL, UnitAITypes eUnitAI = NO_UNITAI);
 	// TAC - AI City Defense - koma13 - END
 
-	int AI_areaMissionAIs(CvArea* pArea, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
+	int AI_areaMissionAIs(const CvArea& kArea, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
 	int AI_adjacantToAreaMissionAIs(CvArea* pArea, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	
 	// Note: First overload is a pure virtual and must be preserved as non-const
@@ -207,6 +220,22 @@ public:
 	int AI_plotTargetMissionAIs(const CvPlot* pPlot, MissionAITypes eMissionAI, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
 	int AI_plotTargetMissionAIs(const CvPlot* pPlot, MissionAITypes* aeMissionAI, int iMissionAICount, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0) const;
 	
+	// TODO: Replace the above and remove the ex suffix
+
+	// advc: TargetMissionAI counting: const CvPlot&. advc.opt: iMaxCount params added.
+	int AI_plotTargetMissionAIsEx(CvPlot const& kPlot, MissionAITypes eMissionAI,
+		CvSelectionGroup const* pSkipSelectionGroup = NULL, int iRange = 0, int iMaxCount = MAX_INT) const
+	{
+		return AI_plotTargetMissionAIsEx(kPlot, &eMissionAI, 1, pSkipSelectionGroup,
+			iRange, iMaxCount);
+	}
+
+	// advc: Unused (out-)param iClosestTargetRange removed
+	int AI_plotTargetMissionAIsEx(CvPlot const& kPlot, MissionAITypes* aeMissionAI,
+		int iMissionAICount, CvSelectionGroup const* pSkipSelectionGroup = NULL,
+		int iRange = 0, int iMaxCount = MAX_INT) const;
+	// <advc.opt>
+
 	// <advc.opt>
 	bool AI_isAnyPlotTargetMissionAI(CvPlot const& kPlot, MissionAITypes eMissionAI,
 		CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0) const
@@ -222,7 +251,12 @@ public:
 	int AI_unitTargetMissionAIsInternal(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
 	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI);	// TAC - AI Attack City - koma13
 	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
-	
+	bool AI_isAnyUnitTargetMissionAI(CvUnit const& kUnit, MissionAITypes eMissionAI,
+		CvSelectionGroup* pSkipSelectionGroup = NULL) const
+	{
+		return (AI_unitTargetMissionAIsInternal((CvUnit*) & kUnit, eMissionAI, pSkipSelectionGroup) >= 1);
+	}
+
 	int AI_enemyTargetMissionAIs(MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_enemyTargetMissionAIs(MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_wakePlotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);

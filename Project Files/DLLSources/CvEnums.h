@@ -769,7 +769,6 @@ enum HealthBarTypes
 	NUM_HEALTHBAR_TYPES
 };
 
-
 /*
 enum UnitAITypes
 {

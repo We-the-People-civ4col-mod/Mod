@@ -93,6 +93,12 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
         if (CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data)) \
             if (pLoopUnit != NULL)
 
+#define FOR_EACH_UNITAI_VAR_IN(pLoopUnit, kGroup) \
+    for (CLLNode<IDInfo>* pUnitNode = (kGroup).headUnitNode(); pUnitNode != NULL; pUnitNode = (kGroup).nextUnitNode(pUnitNode)) \
+        if (CvUnitAI* pLoopUnit = static_cast<CvUnitAI*>(::getUnit(pUnitNode->m_data))) \
+            if (pLoopUnit != NULL)
+
+
 #define FOR_EACH_NON_CENTER_CITY_PLOT(pLoopPlot, targetCity) \
     for (CityPlotTypes eCityPlot = FIRST_CITY_PLOT; eCityPlot < NUM_CITY_PLOTS; ++eCityPlot) \
         if (CvPlot* const pLoopPlot = targetCity->getCityIndexPlot(eCityPlot)) \
@@ -142,7 +148,9 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
     for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
     for (CvCity* pLoopCity = (kOwner).firstCity(&UNIQUE_VAR(iLoop)); pLoopCity != NULL; pLoopCity = (kOwner).nextCity(&UNIQUE_VAR(iLoop)))    
 
-
+#define FOR_EACH_CITYAI_OF_OWNER(pLoopCity, kOwner) \
+    for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
+    for (CvCityAI* pLoopCity = static_cast<CvCityAI*>((kOwner).firstCity(&UNIQUE_VAR(iLoop))); pLoopCity != NULL; pLoopCity = static_cast<CvCityAI*>((kOwner).nextCity(&UNIQUE_VAR(iLoop)))) 
 
 #define FOR_EACH_ADJ_PLOT(pCenterPlot, ACTION) \
     for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++) \

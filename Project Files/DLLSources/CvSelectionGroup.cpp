@@ -901,54 +901,57 @@ void CvSelectionGroup::startMission()
 			NotifyEntity( headMissionQueueNode()->m_data.eMissionType );
 		}
 
-		CLLNode<IDInfo>* pUnitNode = headUnitNode();
-
-		while (pUnitNode != NULL)
+		FOR_EACH_UNIT_VAR_IN(pUnit, *this)
 		{
-			CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
-
-			if (pLoopUnit != NULL && pLoopUnit->canMove())
+			if (!pUnit->canMove())
+				continue;
+			switch (headMissionQueueNode()->m_data.eMissionType)
 			{
-				switch (headMissionQueueNode()->m_data.eMissionType)
+			case MISSION_SKIP:
+			case MISSION_FORTIFY:
+				/*	If the unit has some particular purpose for its 'skip' mission,
+					automatically unload it. (eg. if a unit in a boat wants to do
+					MISSIONAI_GUARD_CITY, we should unload it here.) */
+				switch (AI().AI_getMissionAIType())
 				{
-				case MISSION_MOVE_TO:
-				case MISSION_ROUTE_TO:
-				case MISSION_ROUTE_TO_ROAD:
-				case MISSION_ROUTE_TO_COUNTRY_ROAD:
-				case MISSION_MOVE_TO_UNIT:
-				case MISSION_SKIP:
-				case MISSION_SLEEP:
-				case MISSION_FORTIFY:
-				case MISSION_HEAL:
-				case MISSION_SENTRY:
-				case MISSION_BOMBARD:
-				case MISSION_PILLAGE:
-				case MISSION_FOUND:
-				case MISSION_JOIN_CITY:
-				case MISSION_BUILD:
-				case MISSION_LEAD:
-				//TAC Whaling, ray
-				case MISSION_WHALING:
-				case MISSION_FISHING:
-				//End TAC Whaling, ray
-					break;
-
+				case NO_MISSIONAI:
+				case MISSIONAI_LOAD_ASSAULT:
+				case MISSIONAI_LOAD_SETTLER:
+				case MISSIONAI_LOAD_SPECIAL:
+					goto exit_unit_loop; // don't auto-unload. Just do nothing.
 				default:
-					FAssert(false);
+					FAssert(AI_isControlled());
+					pUnit->unload(); // this checks canUnload internally
 					break;
 				}
+				break;
+			case MISSION_MOVE_TO:
+			case MISSION_ROUTE_TO:
+			case MISSION_ROUTE_TO_ROAD:
+			case MISSION_ROUTE_TO_COUNTRY_ROAD:
+			case MISSION_MOVE_TO_UNIT:
+			case MISSION_SLEEP:
+			case MISSION_HEAL:
+			case MISSION_SENTRY:
+			case MISSION_BOMBARD:
+			case MISSION_PILLAGE:
+			case MISSION_FOUND:
+			case MISSION_JOIN_CITY:
+			case MISSION_BUILD:
+			case MISSION_LEAD:
+				//TAC Whaling, ray
+			case MISSION_WHALING:
+			case MISSION_FISHING:
+				//End TAC Whaling, ray
+				break;
 
-				if (getNumUnits() == 0)
-				{
-					break;
-				}
-
-				if (headMissionQueueNode() == NULL)
-				{
-					break;
-				}
+			default:
+				FAssert(false);
+				break;
 			}
-		}
+			if (getNumUnits() == 0 || headMissionQueueNode() == NULL)
+				break;
+		} exit_unit_loop:; // advc (had been accomplished through pUnitNode=NULL before)
 	}
 
 	if ((getNumUnits() > 0) && (headMissionQueueNode() != NULL))

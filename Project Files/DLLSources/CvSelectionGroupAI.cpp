@@ -697,6 +697,7 @@ bool CvSelectionGroupAI::AI_isDeclareWarInternal(const CvPlot* pPlot) const
 			case UNITAI_DEFENSIVE:
 			case UNITAI_OFFENSIVE:
 			case UNITAI_COUNTER:
+			case UNITAI_ATTACK_CITY:
 				return true;
 				break;
 			//TAC Whaling, ray
@@ -1549,50 +1550,40 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 
 CvUnit* CvSelectionGroupAI::AI_ejectBestDefender(CvPlot* pDefendPlot)
 {
-	CLLNode<IDInfo>* pEntityNode;
-	CvUnit* pLoopUnit;
-
-	pEntityNode = headUnitNode();
-
-	CvUnit* pBestUnit = NULL;
+	CvUnitAI* pBestUnit = NULL;
 	int iBestUnitValue = 0;
-
-	while (pEntityNode != NULL)
+	FOR_EACH_UNITAI_VAR_IN(pUnit, *this)
 	{
-		pLoopUnit = ::getUnit(pEntityNode->m_data);
-		pEntityNode = nextUnitNode(pEntityNode);
-
-		if (pLoopUnit != NULL && !pLoopUnit->noDefensiveBonus())
+		//if (pUnit->noDefensiveBonus()) continue;
+		// commented out by K-Mod. The noDefBonus thing is already taken into account.
+		/*  advc.159: Call AI_currEffectiveStr instead of currEffectiveStr
+			And reduce the precision multiplier from 100 to 10. */
+		int iValue = pUnit->AI_currEffectiveStr(pDefendPlot) * 10;
+		//if (GET_TEAM(getTeam()).isCityDefense(*pDefendPlot)) // advc
+		if (pDefendPlot->isCity(true, getTeam()))
 		{
-			int iValue = pLoopUnit->currEffectiveStr(pDefendPlot, NULL) * 100;
+			iValue *= 100 + pUnit->cityDefenseModifier();
+			iValue /= 100;
+		}
 
-			if (pDefendPlot->isCity(true, getTeam()))
-			{
-				iValue *= 100 + pLoopUnit->cityDefenseModifier();
-				iValue /= 100;
-			}
+		iValue *= 100;
+		//iValue /= (100 + pUnit->cityAttackModifier() + pUnit->getExtraCityAttackPercent());
+		// advc.mnai: (Note that cityAttackModifier includes ExtraCityAttackPercent)
+		iValue /= 100 + std::max(-50, 2 * pUnit->cityAttackModifier());
 
-			iValue *= 100;
-			iValue /= (100 + pLoopUnit->cityAttackModifier() + pLoopUnit->getExtraCityAttackPercent());
-
-			iValue /= 2 + pLoopUnit->getLevel();
-
-			if (iValue > iBestUnitValue)
-			{
-				iBestUnitValue = iValue;
-				pBestUnit = pLoopUnit;
-			}
+		iValue /= 2 + (pUnit->getLevel() *
+			// advc.mnai:
+			(pUnit->AI_getUnitAIType() == UNITAI_ATTACK_CITY ? 2 : 1));
+		if (iValue > iBestUnitValue)
+		{
+			iBestUnitValue = iValue;
+			pBestUnit = pUnit;
 		}
 	}
-
-	if (NULL != pBestUnit && getNumUnits() > 1)
-	{
+	if (pBestUnit != NULL && getNumUnits() > 1)
 		pBestUnit->joinGroup(NULL);
-	}
-
 	return pBestUnit;
 }
-
 
 // Protected Functions...
 
@@ -1763,4 +1754,156 @@ bool CvSelectionGroupAI::AI_isHasPathToAreaPlayerCity(PlayerTypes ePlayer,
 		}
 	}
 	return false;
+}
+
+namespace
+{
+	int overallUnitValue(CvUnit const& kUnit)
+	{	// Crude ...
+		return kUnit.getUnitInfo().getEuropeCost() *
+			(100 + 6 * kUnit.getExperience());
+	}
+
+	template <typename T>
+	const T& clamp(const T& value, const T& low, const T& high)
+	{
+		if (value < low) return low;
+		if (value > high) return high;
+		return value;
+	}
+}
+
+/*	advc.004c: (Not const b/c it needs to return a non-const unit.
+	Ideally, there would be a const version returning a const unit,
+	but that would lead to a lot of duplicate code.) */
+CvUnit* CvSelectionGroupAI::AI_bestUnitForMission(MissionTypes eMission,
+	CvPlot const* pMissionPlot, std::vector<int> const* pUnitsToSkip)
+{
+	PROFILE_FUNC(); // advc (neither frequently called nor expensive)
+	CvPlot const& kAt = getPlot();
+	bool bEasyCityCapture = false;
+	CvCity const* pTargetCity = (pMissionPlot == NULL ? NULL :
+		pMissionPlot->getPlotCity());
+	int iDefenders = -1;
+	if (eMission == MISSION_BOMBARD)
+	{
+		FOR_EACH_UNIT_IN(pUnit, *this)
+		{
+			pTargetCity = pUnit->bombardTarget(&kAt);
+			if (pTargetCity != NULL)
+				break;
+		}
+		if (pTargetCity != NULL)
+		{
+			pMissionPlot = pTargetCity->plot();
+			iDefenders = pMissionPlot->plotCount(
+				PUF_canDefendEnemy, getOwner(), false);
+			if (!isHuman())
+			{	// Visibility cheat, but saves time.
+				bEasyCityCapture = pTargetCity->AI().AI_isEvacuating();
+			}
+			else
+			{
+				FAssertMsg(iDefenders > 0, "AI bombards undefended city");
+				int iAttackers = 0;
+				FOR_EACH_UNIT_IN(pUnit, kAt)
+				{
+					if (!pUnit->canBombard(&kAt) &&
+						pUnit->canMoveOrAttackInto(pMissionPlot))
+					{
+						iAttackers++;
+						if (iAttackers >= 2 * iDefenders)
+							break;
+					}
+				}
+				if (iAttackers >= iDefenders)
+				{
+					int rStackCmp = AI_compareStacks(pMissionPlot, true, true);
+					if (rStackCmp > 150 &&
+						/*	NB: If iAtt==iDef, odds needs to be very favorable
+							for an immediate conquest. */
+						(iAttackers * 100 / std::max(iDefenders, 1)) * rStackCmp > 250)
+					{	// (Assuming that the city gets bombarded to 0)
+						bEasyCityCapture = true;
+					}
+				}
+			}
+		}
+	}
+	CvUnit* pBestUnit = NULL;
+	int rMaxPriority = INT_MIN;
+	FOR_EACH_UNITAI_VAR_IN(pUnit, *this)
+	{
+		if (!pUnit->canMove() ||
+			(pUnitsToSkip != NULL &&
+				std::find(pUnitsToSkip->begin(), pUnitsToSkip->end(),
+					pUnit->getID()) != pUnitsToSkip->end()))
+		{
+			continue;
+		}
+
+		int rPriority = 0; // Initialize rPriority to a default value to avoid the warning
+
+		switch (eMission)
+		{
+		case MISSION_PILLAGE:
+		{	// K-Mod code cut from startMission
+			/*	K-Mod. Let fast units carry out the pillage action first.
+				(This is based on the idea from BBAI, which had a buggy implementation.) */
+			if (!pUnit->canPillage(&kAt))
+				continue;
+			rPriority = 3;
+			if (pUnit->bombardRate() > 0)
+				rPriority--;
+			if (pUnit->isMadeAttack())
+				rPriority++;
+			if (pUnit->isHurt() && !pUnit->hasMoved())
+				rPriority--;
+			// <advc.004c>
+			rPriority *= 10000;
+			rPriority -= overallUnitValue(*pUnit);
+			// </advc.004c>
+			//iPriority = (3 + iPriority) * pUnit->movesLeft() / 3;
+			// advc.004c: Add 3 upfront. Don't see what good the division would do.
+			rPriority *= pUnit->movesLeft();
+			break;
+		}
+		case MISSION_BOMBARD:
+		{
+			if (!pUnit->canBombard(&kAt))
+				continue;
+			/*	Some baseline to avoid precision problem when getting
+				too close to 0 through divisions and multiplications */
+			rPriority = 1000;
+			if (bEasyCityCapture)
+				rPriority *= pUnit->currHitPoints();
+			int const iBombard = pUnit->damageToBombardTarget(kAt);
+			// bIgnoreBuilding=false b/c iBombard already reflects that
+			int const iCurrDefense = pTargetCity->getDefenseModifier(/*false*/);
+			int const iWaste = std::max(0, iBombard - iCurrDefense);
+			if (isHuman())
+			{	// Derive human intent from promotions
+				int rDeltaBombard = (pUnit->getExtraBombardRate() - iWaste) -
+					(/*pUnit->getExtraCollateralDamage() +*/
+						pUnit->getExtraCityAttackPercent()) / 5;
+				rPriority *= 1 + clamp(5 * rDeltaBombard, -90, 100) / 100;
+			}
+			rPriority *= std::max(1, 15 + iBombard - iWaste);
+			int rOdds = pUnit->AI_attackOdds(pMissionPlot, false);
+			rPriority *= (100 - rOdds);
+			//rPriority /= 1 + per100(pUnit->collateralDamage());
+			//rPriority /= 15 + std::min(iDefenders, pUnit->collateralDamageMaxUnits());
+			/*	(CollateralDamageLimit gets ignored by all AI code so far,
+				so I'm not going to bother with it here either.) */
+			break;
+		}
+		default: FErrorMsg("Mission type not supported by bestUnitForMission");
+		}
+		if (rPriority > rMaxPriority)
+		{
+			rMaxPriority = rPriority;
+			pBestUnit = pUnit;
+		}
+	}
+	return pBestUnit;
 }
