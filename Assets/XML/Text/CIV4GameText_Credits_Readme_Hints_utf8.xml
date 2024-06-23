@@ -677,12 +677,12 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_28</Tag>
-		<English>Furs become coats. Sugar becomes rum. Tobacco becomes cigars. Cotton becomes cloth. Ore becomes Tools, which can in turn become Guns.</English>
-		<French>La fourrure sert à produire des manteaux ; le sucre, du rhum ; le tabac, des cigares ; le coton, du tissu ; le fer, des outils qui peuvent ensuite être changés en armes à feu.</French>
-		<German>Aus Pelzen werden Mäntel. Aus Zucker wird Rum. Aus Tabak werden Zigarren. Aus Baumwolle wird Stoff. Aus Eisenerz werden Werkzeuge, die wiederum zu Schusswaffen werden können.</German>
-		<Italian>Le pellicce diventano mantelli. Lo zucchero diventa rum. Il tabacco diventa sigari. Il cotone diventa tessuto. Il minerale diventa attrezzi, che a loro volta possono diventare armi.</Italian>
-		<Spanish>Las Pieles se convierten en Abrigos. El Azúcar se convierte en Ron. El Tabaco se convierte en Puros. El Algodón se convierte en Tejido. El Mineral se convierte en Herramientas, que a su vez se pueden convertir en Armas.</Spanish>
-		<Russian>Из меха шьют пальто. Сахар и фрукты перегоняют в ром. Листья табака скручиваются в сигары. Из хлопка ткут ткань. Руду переплавляют в инструменты, которые используются при строительстве.</Russian>
+		<English>Furs become coats. Sugar becomes rum. Tobacco becomes cigars. Cotton becomes cloth. Ore becomes Tools. Ore combined with Coal becomes Guns or Cannons. Lumber can be turned into Charcoal, and then Charcoal can be processed into Gunpowder.</English>
+		<French>Les fourrures deviennent des manteaux. Le sucre devient rhum. Le tabac devient cigare. Le coton devient tissu. Le minerai devient Outils. Le minerai combiné avec le charbon devient des canons ou des canons. Le bois peut être transformé en charbon de bois, puis le charbon de bois peut être transformé en poudre à canon.</French>
+		<German>Pelze werden zu Mänteln. Aus Zucker wird Rum. Tabak wird zu Zigarren. Baumwolle wird zu Stoff. Erz wird zu Werkzeugen. Erz kombiniert mit Kohle wird zu Kanonen oder Kanonen. Holz kann zu Holzkohle verarbeitet werden, und dann kann Holzkohle zu Schießpulver verarbeitet werden.</German>
+		<Italian>Le pellicce diventano cappotti. Lo zucchero diventa rum. Il tabacco diventa sigari. Il cotone diventa stoffa. Il minerale diventa Attrezzi. Il minerale combinato con il carbone diventa pistole o cannoni. Il legname può essere trasformato in carbone, quindi il carbone può essere trasformato in polvere da sparo.</Italian>
+		<Spanish>Las pieles se convierten en abrigos. El azúcar se convierte en ron. El tabaco se convierte en cigarros. El algodón se convierte en tela. El mineral se convierte en herramientas. El mineral combinado con carbón se convierte en armas o cañones. La madera se puede convertir en carbón vegetal, y luego el carbón vegetal se puede procesar en pólvora.</Spanish>
+		<Russian>Меха становятся пальто. Сахар становится ромом. Табак становится сигарами. Хлопок становится тканью. Руда становится инструментами. Руда в сочетании с углем превращается в пушки или пушки. Древесину можно превратить в древесный уголь, а затем древесный уголь можно переработать в порох.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_29</Tag>
