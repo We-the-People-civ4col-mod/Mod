@@ -1578,7 +1578,7 @@ void CvUnit::updateCombat(bool bQuick)
 			// TAC Capturing Ships - ray - END
 
 			// WTP, ray, Prisoners of War - START
-			bool displayCapturedPrisoneOfWarMessage = false;
+			bool displayCapturedPrisonerOfWarMessage = false;
 
 			// We only want to have this for Military Combat between Europeans and Kings, and only during War
 			bool bAttackingPlayerInvalid = !kOwner.isPlayable(); // only playable Civs will capture Prisoners of War, to prevent future issues
@@ -1586,6 +1586,7 @@ void CvUnit::updateCombat(bool bQuick)
 			bool bAttackingUnitInvalid = getDomainType() == DOMAIN_SEA || getUnitInfo().isAnimal() || getUnitInfo().isHiddenNationality();
 			bool bDefendingUnitInvalid = pDefender->getDomainType() == DOMAIN_SEA || pDefender->getUnitInfo().isAnimal() || pDefender->isCapturableLandUnit() || pDefender->getUnitInfo().isHiddenNationality();
 			bool bAtWar = GET_TEAM(getTeam()).isAtWar(pDefender->getTeam());
+			bool bCreatePOW = false;
 
 			if (!bAttackingPlayerInvalid && !bDefendingPlayerInvalid && !bAttackingUnitInvalid && !bDefendingUnitInvalid && bAtWar)
 			{
@@ -1598,15 +1599,10 @@ void CvUnit::updateCombat(bool bQuick)
 
 				if (capturingPrisonerOfWarChance > randomCapturePrisonerOfWarValue)
 				{	
-					UnitTypes eCapturedPrisonerOfWar = kOwner.getUnitType(UNITCLASS_PRISONER_OF_WAR);
-					CvUnit* PrisonerOfWarUnit = kOwner.initUnit(eCapturedPrisonerOfWar, GC.getUnitInfo(eCapturedPrisonerOfWar).getDefaultProfession(), pDefender->plot()->coord(), NO_UNITAI);
-					// WTP, ray, Prisoners of War should also get some damage and a Negative Promotion
-					if (PrisonerOfWarUnit != NULL)
-					{
-						PrisonerOfWarUnit->addDamageRandom(10, 75, 5);
-						PrisonerOfWarUnit->acquireAnyNegativePromotion();
-					}
-					displayCapturedPrisoneOfWarMessage = true;
+					//WTP, Dyllin/Razonatair/Dwarfmurdered, POW Creation is now handled later when determining if the unit can advance
+					//into the attacked plot.
+					bCreatePOW = true;
+					displayCapturedPrisonerOfWarMessage = true;
 				}
 			}
 			// WTP, ray, Prisoners of War - END
@@ -1670,7 +1666,7 @@ void CvUnit::updateCombat(bool bQuick)
 			// TAC Capturing Ships - ray - END
 
 			// WTP, ray, Prisoners of War - START
-			if (displayCapturedPrisoneOfWarMessage)
+			if (displayCapturedPrisonerOfWarMessage)
 			{
 				szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_UNIT_CAPTURED_PRISONER_OF_WAR", pDefender->getNameOrProfessionKey());
 			}
@@ -1792,10 +1788,6 @@ void CvUnit::updateCombat(bool bQuick)
 
 			bAdvance = canAdvance(pPlot, ((pDefender->canDefend()) ? 1 : 0));
 
-
-			pDefender->kill(false);
-			pDefender = NULL;
-
 			if (!bAdvance)
 			{
 				changeMoves(pPlot->movementCost(this, plot()));
@@ -1810,7 +1802,42 @@ void CvUnit::updateCombat(bool bQuick)
 						}
 					}
 				}
+
+				//WTP, Dyllin/Razonatair/Dwarfmurdered Earlier we determined if a POW would be created. We will now generate that POW
+				//either on the attacker's tile or the defender's tile based on whether or not the attacker can advance. There used
+				//to be a bug that a city or plot with defenders ready to continue fighting would be captured instantly when generating
+				//a POW, as that POW would ALWAYS be generated on the defender's plot, no matter what.
+				if (bCreatePOW)
+				{
+					UnitTypes eCapturedPrisonerOfWar = kOwner.getUnitType(UNITCLASS_PRISONER_OF_WAR);
+
+					CvUnit* PrisonerOfWarUnit = kOwner.initUnit(eCapturedPrisonerOfWar, GC.getUnitInfo(eCapturedPrisonerOfWar).getDefaultProfession(), this->plot()->coord(), NO_UNITAI);
+					// WTP, ray, Prisoners of War should also get some damage and a Negative Promotion
+					if (PrisonerOfWarUnit != NULL)
+					{
+						PrisonerOfWarUnit->addDamageRandom(10, 75, 5);
+						PrisonerOfWarUnit->acquireAnyNegativePromotion();
+					}
+				}
 			}
+			else
+			{
+				if (bCreatePOW)
+				{
+					UnitTypes eCapturedPrisonerOfWar = kOwner.getUnitType(UNITCLASS_PRISONER_OF_WAR);
+
+					CvUnit* PrisonerOfWarUnit = kOwner.initUnit(eCapturedPrisonerOfWar, GC.getUnitInfo(eCapturedPrisonerOfWar).getDefaultProfession(), pDefender->plot()->coord(), NO_UNITAI);
+					// WTP, ray, Prisoners of War should also get some damage and a Negative Promotion
+					if (PrisonerOfWarUnit != NULL)
+					{
+						PrisonerOfWarUnit->addDamageRandom(10, 75, 5);
+						PrisonerOfWarUnit->acquireAnyNegativePromotion();
+					}
+				}
+			}
+
+			pDefender->kill(false);
+			pDefender = NULL;
 
 			if (!bRaided)
 			{
