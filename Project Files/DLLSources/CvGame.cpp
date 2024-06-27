@@ -485,6 +485,9 @@ void CvGame::reset(HandicapTypes eHandicap, bool bConstructorCall)
 	m_bDebugModeCache = false;
 	m_bPbemTurnSent = false;
 	m_bPlayerOptionsSent = false;
+	
+	// Not serialized - for debugging
+	m_iUnitUpdateAttempts = 0; // advc.001y
 
 	if (!bConstructorCall)
 	{
@@ -2552,7 +2555,7 @@ bool CvGame::canHandleAction(int iAction, CvPlot* pPlot, bool bTestVisible, bool
 						pMissionPlot = pSelectedInterfaceList->plot();
 					}
 
-					if (pSelectedInterfaceList->canStartMission(GC.getActionInfo(iAction).getMissionType(), GC.getActionInfo(iAction).getMissionData(), -1, pMissionPlot, bTestVisible, bUseCache))
+					if (pSelectedInterfaceList->canStartMission((MissionTypes)GC.getActionInfo(iAction).getMissionType(), GC.getActionInfo(iAction).getMissionData(), -1, pMissionPlot, bTestVisible, bUseCache))
 					{
 						return true;
 					}
@@ -4136,6 +4139,7 @@ void CvGame::changeNumGameTurnActive(int iChange)
 {
 	m_iNumGameTurnActive = (m_iNumGameTurnActive + iChange);
 	FAssert(getNumGameTurnActive() >= 0);
+	m_iUnitUpdateAttempts = 0; // advc.001y
 }
 
 
@@ -5812,12 +5816,9 @@ void CvGame::updateMoves()
 {
 	MOD_PROFILE("CvGame::updateMoves");
 
-	CvSelectionGroup* pLoopSelectionGroup;
 	std::vector<int> aiShuffle(MAX_PLAYERS);
-	int iLoop;
-	int iI;
-
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		aiShuffle[iI] = iI;
 	}
@@ -5827,40 +5828,60 @@ void CvGame::updateMoves()
 		getSorenRand().shuffleArray(aiShuffle, NULL);
 	}
 
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	int iMaxUnitUpdateAttempts = 18;
+	FAssertMsg(m_iUnitUpdateAttempts != iMaxUnitUpdateAttempts, "Unit stuck in a loop");
+#ifdef _DEBUG
+	iMaxUnitUpdateAttempts += 4; // Extra iterations for debugging
+#endif
+	// </advc.001y>
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
-		CvPlayer& player = GET_PLAYER((PlayerTypes)(aiShuffle[iI]));
+		CvPlayerAI& kPlayer = GET_PLAYER((PlayerTypes)aiShuffle[iI]);
+		if (!kPlayer.isAlive() || !kPlayer.isTurnActive())
+			continue;
 
-		if (player.isAlive())
+		if (!kPlayer.isAutoMoves())
 		{
-			if (player.isTurnActive())
+			kPlayer.AI_unitUpdate();
+			if (!kPlayer.isHuman() && !kPlayer.hasBusyUnit())
 			{
-				if (!player.isAutoMoves())
+				/*	advc.001y: Safety measure against infinite loop
+					(Complementing Vanilla Civ 4 code in CvSelectionGroupAI::AI_update.
+					The attempt counter there won't work when CvUnitAI::AI_update
+					joins a different selection group.) */
+				if (m_iUnitUpdateAttempts > iMaxUnitUpdateAttempts ||
+					!kPlayer.hasReadyUnit(true))
 				{
-					player.AI_unitUpdate();
-
-					if (!player.isHuman())
-					{
-						if (!player.hasBusyUnit() && !player.hasReadyUnit(true))
-						{
-							player.setAutoMoves(true);
-						}
-					}
+					kPlayer.setAutoMoves(true);
 				}
-
-				if (player.isAutoMoves())
-				{
-					for(pLoopSelectionGroup = player.firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = player.nextSelectionGroup(&iLoop))
-					{
-						pLoopSelectionGroup->autoMission();
-					}
-
-					if (!(player.hasBusyUnit()))
-					{
-						player.setAutoMoves(false);
-					}
-				}
+				else m_iUnitUpdateAttempts++; // advc.001y
 			}
+		}
+		if (kPlayer.isAutoMoves())
+		{
+			FOR_EACH_GROUP_VAR(pGroup, kPlayer)
+				pGroup->autoMission();
+
+			/*	K-Mod. Here's where we do the AI for automated units.
+				Note, we can't do AI_update and autoMission in the same loop, because
+				either one might delete the group - and thus cause the other to crash. */
+			if (kPlayer.isHuman())
+			{
+				FOR_EACH_GROUPAI_VAR(pGroup, kPlayer)
+				{
+					if (pGroup->AI_update())
+					{
+						FAssert(kPlayer.hasBusyUnit());
+						break;
+					}
+				}
+				/*	Refresh the group cycle for human players.
+					Non-human players can wait for their units to wake up, or regain moves -
+					group cycle isn't very important for them anyway. */
+				kPlayer.refreshGroupCycleList();
+			} // K-Mod end
+			if (!kPlayer.hasBusyUnit())
+				kPlayer.setAutoMoves(false);
 		}
 	}
 }

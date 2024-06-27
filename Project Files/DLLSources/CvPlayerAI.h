@@ -84,12 +84,9 @@ public:
 	void AI_updateFoundValues(bool bStartingLoc = false);
 	void AI_updateAreaTargets();
 
-	int AI_movementPriority(CvSelectionGroup* pGroup);
+	int AI_movementPriority(CvSelectionGroupAI const& kGroup) const;
 	void AI_unitUpdate();
-	// TAC - AI BTS Groups - koma13 - START
-	void AI_groupUpdate();
-	// TAC - AI BTS Groups - koma13 - END
-
+	
 	void AI_makeAssignWorkDirty();
 	void AI_assignWorkingPlots();
 	void AI_updateAssignWork();
@@ -581,6 +578,8 @@ public:
 	bool AI_isDoStrategy(AIStrategy eStrategy, /* advc.007: */ bool bDebug = false) const;
 	bool AI_isLandWar(CvArea const& kArea) const; // K-Mod
 	bool AI_deduceCitySite(CvCity const& pCity) const; // K-Mod
+
+	CvSelectionGroupAI* AI_getSelectionGroup(int iID) const { return static_cast<CvSelectionGroupAI*>(getSelectionGroup(iID)); }
 
 protected:
 

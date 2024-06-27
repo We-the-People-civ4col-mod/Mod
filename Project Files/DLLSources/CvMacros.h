@@ -67,10 +67,15 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
     for (const CvSelectionGroupAI* pLoopSelectionGroup = static_cast<const CvSelectionGroupAI*>((kOwner).firstSelectionGroup(&UNIQUE_VAR(iLoop))); \
          pLoopSelectionGroup != NULL; pLoopSelectionGroup = static_cast<const CvSelectionGroupAI*>((kOwner).nextSelectionGroup(&UNIQUE_VAR(iLoop))))
 
-#define FOR_EACH_GROUPAI_VAR(pLoopUnit, kOwner) \
+#define FOR_EACH_GROUP_VAR(pGroup, kOwner) \
     for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
-    for (CvSelectionGroupAI* pLoopGroup = static_cast<CvSelectionGroupAI*>((kOwner).firstSelectionGroup(&UNIQUE_VAR(iLoop))); \
-         pLoopGroup != NULL; pLoopGroup = static_cast<CvSelectionGroupAI*>((kOwner).nextSelectionGroup(&UNIQUE_VAR(iLoop))))
+    for (CvSelectionGroup* pGroup = (kOwner).firstSelectionGroup(&UNIQUE_VAR(iLoop)); \
+    pGroup != NULL; pGroup = (kOwner).nextSelectionGroup(&UNIQUE_VAR(iLoop)))
+
+#define FOR_EACH_GROUPAI_VAR(pGroup, kOwner) \
+    for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
+    for (CvSelectionGroupAI* pGroup = static_cast<CvSelectionGroupAI*>((kOwner).firstSelectionGroup(&UNIQUE_VAR(iLoop))); \
+         pGroup != NULL; pGroup = static_cast<CvSelectionGroupAI*>((kOwner).nextSelectionGroup(&UNIQUE_VAR(iLoop))))
 
 #define FOR_EACH_UNITAI_VAR(pLoopUnit, kOwner) \
     for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \

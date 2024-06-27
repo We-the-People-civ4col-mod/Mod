@@ -525,106 +525,96 @@ void CvPlayerAI::AI_updateAreaTargets()
 	}
 }
 
-
-// Returns priority for unit movement (lower values move first...)
-int CvPlayerAI::AI_movementPriority(CvSelectionGroup* pGroup)
+/*	Returns priority for unit movement (lower values move first...)
+	This function has been heavily edited for K-Mod */
+int CvPlayerAI::AI_movementPriority(CvSelectionGroupAI const& kGroup) const // advc.003u: CvSelectionGroupAI
 {
-	CvUnit* pHeadUnit;
-	int iCurrCombat;
-	int iBestCombat;
+	/*	If the group is trying to do a stack attack, let it go first!
+		(this is required for amphibious assults; during which a low priority group
+		can be ordered to attack before its turn.) */
+	if (kGroup.AI_isGroupAttackInternal())
+		return -1;
 
-	pHeadUnit = pGroup->getHeadUnit();
+	const CvUnit* pHeadUnit = kGroup.getHeadUnit();
 
-	if (pHeadUnit != NULL)
+	if (pHeadUnit == NULL)
+		return MAX_INT;
+
+	if (pHeadUnit->getDomainType() != DOMAIN_LAND)
 	{
+		if (pHeadUnit->bombardRate() > 0)
+			return 1;
+
 		if (pHeadUnit->hasCargo())
 		{
-			if (pHeadUnit->specialCargo() == NO_SPECIALUNIT)
-			{
-				return 0;
-			}
-			else
-			{
-				return 1;
-			}
-		}
-
-		if (pHeadUnit->AI_getUnitAIType() == UNITAI_SETTLER)
-		{
-			return 2;
-		}
-
-		if (pHeadUnit->AI_getUnitAIType() == UNITAI_WORKER)
-		{
-			return 3;
-		}
-
-		if (pHeadUnit->AI_getUnitAIType() == UNITAI_SCOUT)
-		{
-			return 4;
-		}
-
-		if (pHeadUnit->bombardRate() > 0)
-		{
-			return 5;
+			if (pHeadUnit->specialCargo() != NO_SPECIALUNIT)
+				return 2;
+			else return 3;
 		}
 
 		if (pHeadUnit->canFight())
 		{
-			if (pHeadUnit->withdrawalProbability() > 20)
-			{
-				return 7;
-			}
-
-			if (pHeadUnit->withdrawalProbability() > 0)
-			{
-				return 8;
-			}
-
-			iCurrCombat = pHeadUnit->currCombatStr(NULL, NULL);
-			iBestCombat = (GC.getGameINLINE().getBestLandUnitCombat() * 100);
-
-			if (pHeadUnit->noDefensiveBonus())
-			{
-				iCurrCombat *= 3;
-				iCurrCombat /= 2;
-			}
-
-			if (pHeadUnit->AI_isCityAIType())
-			{
-				iCurrCombat /= 2;
-			}
-
-			if (iCurrCombat > iBestCombat)
-			{
-				return 9;
-			}
-			else if (iCurrCombat > ((iBestCombat * 4) / 5))
-			{
-				return 10;
-			}
-			else if (iCurrCombat > ((iBestCombat * 3) / 5))
-			{
-				return 11;
-			}
-			else if (iCurrCombat > ((iBestCombat * 2) / 5))
-			{
-				return 12;
-			}
-			else if (iCurrCombat > ((iBestCombat * 1) / 5))
-			{
-				return 13;
-			}
-			else
-			{
-				return 14;
-			}
+			return 7;
 		}
-
-		return 15;
+		else
+			return 8;
 	}
 
-	return 16;
+	FAssert(pHeadUnit->getDomainType() == DOMAIN_LAND);
+
+	if (pHeadUnit->AI_getUnitAIType() == UNITAI_WORKER) {
+		return 9;
+	}
+
+	if (pHeadUnit->AI_getUnitAIType() == UNITAI_SCOUT)
+		return 10;
+
+	if (pHeadUnit->bombardRate() > 0)
+		return 11;
+
+	if (kGroup.AI_isStranded())
+		return 505;
+
+	if (pHeadUnit->canFight())
+	{
+		int iPriority = 65; // allow + or - 50
+
+		iPriority += (GC.getGame().getBestLandUnitCombat() * 100
+			// note: currCombatStr has a factor of 100 built in.
+			- pHeadUnit->currCombatStr(NULL, NULL) + 10) / 20;
+
+		if (kGroup.getNumUnits() > 1)
+		{
+			iPriority--;
+			if (kGroup.getNumUnits() > 4)
+				iPriority--;
+		}
+		else if (kGroup.AI_getMissionAITypeInternal() == MISSIONAI_GUARD_CITY)
+			iPriority++;
+
+		if (pHeadUnit->withdrawalProbability() > 0 || pHeadUnit->noDefensiveBonus())
+		{
+			iPriority--;
+			if (pHeadUnit->withdrawalProbability() > 20)
+				iPriority--;
+		}
+
+		switch (pHeadUnit->AI_getUnitAIType())
+		{
+		case UNITAI_ATTACK_CITY:
+		case UNITAI_OFFENSIVE: //UNITAI_ATTACK:
+			iPriority--;
+		case UNITAI_COUNTER:
+			iPriority--;
+		case UNITAI_DEFENSIVE: // UNITAI_DEFENSE:
+			break;
+
+		default:
+			break;
+		}
+		return iPriority;
+	}
+	return 200;
 }
 
 void CvPlayerAI::AI_unitUpdate()
@@ -723,20 +713,6 @@ void CvPlayerAI::AI_unitUpdate()
 					}
 				}
 			}
-
-			for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
-			{
-				if (pLoopUnit->AI_getMovePriority() == 0)
-				{
-					pLoopUnit->AI_doInitialMovePriority();
-				}
-				else
-				{
-					FAssert(std::find(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), pLoopUnit->getID()) != m_unitPriorityHeap.end());
-				}
-			}
-			m_iTurnLastManagedPop = GC.getGameINLINE().getGameTurn();
-			m_iMoveQueuePasses = 0;
 		}
 	}
 
@@ -751,184 +727,94 @@ void CvPlayerAI::AI_unitUpdate()
 
 			if (pLoopSelectionGroup->AI_isForceSeparate())
 			{
-				// do not split groups that are in the midst of attacking
-				if (pLoopSelectionGroup->isForceUpdate() || !pLoopSelectionGroup->AI_isGroupAttack())
+				if (pLoopSelectionGroup->isForceUpdate() || 
+					// do not split groups that are in the midst of attacking
+					!pLoopSelectionGroup->AI_isGroupAttack())
 				{
 					pLoopSelectionGroup->AI_separate();	// pointers could become invalid...
 				}
 			}
 		}
 
-		if (isHuman())
+		if (!isHuman()) /*  K-Mod - automated actions are no longer done from this function.
+				Instead, they are done in CvGame::updateMoves */
 		{
-			pCurrUnitNode = headGroupCycleNode();
-
-			while (pCurrUnitNode != NULL)
+			bool bRepeat = true;
+			do
 			{
-				pLoopSelectionGroup = getSelectionGroup(pCurrUnitNode->m_data);
-				pCurrUnitNode = nextGroupCycleNode(pCurrUnitNode);
+				std::vector<std::pair<int, int> > groupList;
 
-				if (pLoopSelectionGroup == NULL || pLoopSelectionGroup->AI_update())
+				pCurrUnitNode = headGroupCycleNode();
+				while (pCurrUnitNode != NULL)
 				{
-					break; // pointers could become invalid...
-				}
-			}
-		}
-        else
-		{
-			int iLoop;
-
-			//Continue existing missions.
-			for(pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
-			{
-				pLoopSelectionGroup->autoMission();
-			}
-
-			while (!m_unitPriorityHeap.empty())
-			{
-				AI_verifyMoveQueue();
-				CvUnit* pUnit = AI_getNextMoveUnit();
-
-				// TAC - AI BTS Groups - koma13 - START
-				/*
-				if ((pUnit != NULL) && shouldUnitMove(pUnit))
-				{
-					int iOriginalPriority = pUnit->AI_getMovePriority();
-					if (iOriginalPriority > 0)
+					CvSelectionGroupAI* pLoopSelectionGroup = AI_getSelectionGroup(
+						pCurrUnitNode->m_data);
+					/*
+					CvUnit* const pHeadUnit = pLoopSelectionGroup->getHeadUnit();
+					if (pHeadUnit && !shouldUnitMove(pHeadUnit))
 					{
-						if (!pUnit->getGroup()->isBusy() && !pUnit->getGroup()->isCargoBusy())
-						{
-							pUnit->AI_update();
-						}
-						else
-						{
-							m_iMoveQueuePasses++;
-							if (m_iMoveQueuePasses > 100)
-							{
-								FAssertMsg(false, "Forcing AI to abort turn");
-								return;
-							}
-							AI_addUnitToMoveQueue(pUnit);
-							return;
-						}
+						deleteGroupCycleNode(pCurrUnitNode);
+						continue;
 					}
-				}
-				*/
+					*/
+					const int iPriority = AI_movementPriority(*pLoopSelectionGroup);
+					// WTP: skip units in Europe / Africa
+					// TODO: Should be a group function!
+					CvUnit* const pHeadUnit = pLoopSelectionGroup->getHeadUnit();
 
-				if (pUnit->getGroup()->getNumUnits() <= 1)
+					groupList.push_back(std::make_pair(iPriority, pCurrUnitNode->m_data));
+					pCurrUnitNode = nextGroupCycleNode(pCurrUnitNode);
+				}
+				const int groupListSizeCnt = groupList.size();
+				const int getNumSelectionGroupsCnt = getNumSelectionGroups();
+				FAssert(groupList.size() == getNumSelectionGroups());
+
+				std::sort(groupList.begin(), groupList.end());
+				for (size_t i = 0; i < groupList.size(); i++)
 				{
-					if ((pUnit != NULL) && shouldUnitMove(pUnit))
+					CvSelectionGroupAI* pLoopSelectionGroup = AI_getSelectionGroup(
+						groupList[i].second);
+					/*	I think it's probably a good idea to activate automissions here,
+						so that the move priority is respected even for commands
+						issued on the previous turn. (This will allow reserve units to
+						guard workers that have already moved, rather than trying to
+						guard workers who are about to move to a different plot.) */
+					
+					if (pLoopSelectionGroup != NULL &&
+						!pLoopSelectionGroup->autoMissionInternal())
 					{
-						int iOriginalPriority = pUnit->AI_getMovePriority();
-						if (iOriginalPriority > 0)
-						{
-							if (!pUnit->getGroup()->isBusy() && !pUnit->getGroup()->isCargoBusy())
+						CvUnit* const pHeadUnit = pLoopSelectionGroup->getHeadUnit();
+						if (pHeadUnit /* && shouldUnitMove(pHeadUnit)*/)
+						{ 
+							if (pLoopSelectionGroup->isBusy() ||
+								pLoopSelectionGroup->isCargoBusy() ||
+								pLoopSelectionGroup->AI_update())
 							{
-								FAssert(!isTempUnit(pUnit));
-								pUnit->AI_update();
-							}
-							else
-							{
-								m_iMoveQueuePasses++;
-								if (m_iMoveQueuePasses > 100)
-								{
-									FAssertMsg(false, "Forcing AI to abort turn");
-									return;
-								}
-								AI_addUnitToMoveQueue(pUnit);
-								return;
+								bRepeat = false;
+								break;
 							}
 						}
 					}
 				}
-				else
-				{
-					AI_removeUnitFromMoveQueue(pUnit);
-				}
-			}
 
-			AI_groupUpdate();
-			// TAC - AI BTS Groups - koma13 - END
-
-			for (CvSelectionGroup*pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
-			{
-				if (pLoopSelectionGroup->readyToMove())
-				{
-					pLoopSelectionGroup->pushMission(MISSION_SKIP);
-				}
-			}
+				/*	one last trick that might save us a bit of time...
+					if the number of selection groups has increased,
+					then lets try to take care of the new groups right away.
+					(there might be a faster way to look for the new groups,
+					but I don't know it.) */
+				bRepeat = bRepeat && m_groupCycle.getLength() > (int)groupList.size();
+				/*	the repeat will do a stack of redundant checks,
+					but I still expect it to be much faster
+					than waiting for the next turnslice.
+					Note: I use m_groupCycle rather than getNumSelectionGroups
+					just in case there is a bug which causes the two to be out of sync.
+					(otherwise, if getNumSelectionGroups is bigger,
+					it could cause an infinite loop.) */
+			} while (bRepeat);
+			// K-Mod end
 		}
 	}
 }
-
-// TAC - AI BTS Groups - koma13 - START
-void CvPlayerAI::AI_groupUpdate()
-{
-	CLLNode<int>* pCurrUnitNode;
-	CvSelectionGroup* pLoopSelectionGroup;
-	CLinkList<int> tempGroupCycle;
-	CLinkList<int> finalGroupCycle;
-	int iValue;
-
-	tempGroupCycle.clear();
-	finalGroupCycle.clear();
-
-	pCurrUnitNode = headGroupCycleNode();
-
-	while (pCurrUnitNode != NULL)
-	{
-		pLoopSelectionGroup = getSelectionGroup(pCurrUnitNode->m_data);
-		if (pLoopSelectionGroup->getNumUnits() > 1)
-		{
-			tempGroupCycle.insertAtEnd(pCurrUnitNode->m_data);
-		}
-		pCurrUnitNode = nextGroupCycleNode(pCurrUnitNode);
-	}
-
-	iValue = 0;
-
-	while (tempGroupCycle.getLength() > 0)
-	{
-		pCurrUnitNode = tempGroupCycle.head();
-
-		while (pCurrUnitNode != NULL)
-		{
-			pLoopSelectionGroup = getSelectionGroup(pCurrUnitNode->m_data);
-			FAssertMsg(pLoopSelectionGroup != NULL, "selection group node with NULL selection group");
-
-			if (AI_movementPriority(pLoopSelectionGroup) <= iValue)
-			{
-				finalGroupCycle.insertAtEnd(pCurrUnitNode->m_data);
-				pCurrUnitNode = tempGroupCycle.deleteNode(pCurrUnitNode);
-			}
-			else
-			{
-				pCurrUnitNode = tempGroupCycle.next(pCurrUnitNode);
-			}
-		}
-
-		iValue++;
-	}
-
-	pCurrUnitNode = finalGroupCycle.head();
-
-	while (pCurrUnitNode != NULL)
-	{
-		pLoopSelectionGroup = getSelectionGroup(pCurrUnitNode->m_data);
-
-		if (NULL != pLoopSelectionGroup)  // group might have been killed by a previous group update
-		{
-			if (pLoopSelectionGroup->AI_update())
-			{
-				break; // pointers could become invalid...
-			}
-		}
-
-		pCurrUnitNode = finalGroupCycle.next(pCurrUnitNode);
-	}
-
-}
-// TAC - AI BTS Groups - koma13 - END
 
 void CvPlayerAI::AI_makeAssignWorkDirty()
 {

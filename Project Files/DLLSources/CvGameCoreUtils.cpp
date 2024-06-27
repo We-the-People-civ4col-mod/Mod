@@ -378,19 +378,21 @@ bool shouldUnitMove(const CvUnit* pUnit)
 	if (pUnit->isTempUnit())
 		return false;
 
+	/*
 	if (pUnit->isDead() || pUnit->isDelayedDeath())
 	{
 		return false;
 	}
+	*/
 	if (!pUnit->isOnMap())
 	{
-		if (!((pUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE) || (pUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)))
+		if (pUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE || pUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
 		{
-			return false;
+			return true;
 		}
 		else
 		{
-			return true;
+			return false;
 		}
 	}
 	return true;

@@ -314,6 +314,7 @@ public:
 	int maxMoves() const;
 	int movesLeft() const;
 	DllExport bool canMove() const;
+	bool canMoveInternal(bool bIgnoreOnMapState = false) const;
 	DllExport bool hasMoved() const;
 
 	bool canBuildRoute(RouteTypes ePreferredRoute = NO_ROUTE) const;
@@ -404,7 +405,7 @@ public:
 	void changeCargoSpace(int iChange);
 	bool isFull() const;
 	int cargoSpaceAvailable(SpecialUnitTypes eSpecialCargo = NO_SPECIALUNIT, DomainTypes eDomainCargo = NO_DOMAIN) const;
-	bool hasCargo() const;
+	bool hasCargo() const { return (getCargo() > 0); }														// Exposed to Python
 	bool canCargoAllMove() const;
 	bool canCargoEnterArea(PlayerTypes ePlayer, const CvArea* pArea, bool bIgnoreRightOfPassage) const;
 	int getUnitAICargo(UnitAITypes eUnitAI) const;
@@ -490,6 +491,7 @@ public:
 	void changeLevel(int iChange);
 	int getCargo() const;
 	void changeCargo(int iChange);
+	void getCargoUnits(std::vector<CvUnit*>& aUnits) const;
 
 	CvPlot* getAttackPlot() const;
 	void setAttackPlot(const CvPlot* pNewValue);

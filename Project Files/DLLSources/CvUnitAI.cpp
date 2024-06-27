@@ -97,7 +97,7 @@ bool CvUnitAI::AI_update()
 {
 	PROFILE_FUNC();
 
-	//FAssertMsg(getUnitTravelState() != NO_UNIT_TRAVEL_STATE || canMove(), "canMove is expected to be true");
+	FAssertMsg(getUnitTravelState() != NO_UNIT_TRAVEL_STATE || canMove(), "canMove is expected to be true");
 	FAssertMsg(isGroupHead(), "isGroupHead is expected to be true"); // XXX is this a good idea???
 
 	//getGroup()->resetPath();
@@ -434,10 +434,12 @@ bool CvUnitAI::AI_europeUpdate()
 		}
 	}
 
-	if (!(getGroup()->isAutomated() && (getGroup()->getAutomateType() != AUTOMATE_FULL)))
+	//if (!(getGroup()->isAutomated() && (getGroup()->getAutomateType() != AUTOMATE_FULL)))
+	if (getGroup()->AI_isControlled())
 	{
 		if (isHurt() && (healRate(plot()) > 0))
 		{
+			// BUG?: even when hurt we should sell yields?
 			if (hasCargo() && getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
 			{
 				// If we're carrying any units we may as well unload them
@@ -469,6 +471,7 @@ bool CvUnitAI::AI_europeUpdate()
 		    break;
 		//TAC Whaling, ray
 		case UNITAI_WORKER_SEA:
+			FErrorMsg("UNITAI_WORKER_SEA in Europe!");
 			if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
 			{
 				crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
@@ -554,25 +557,66 @@ bool CvUnitAI::AI_europeUpdate()
 		}
 	}
 
-	AI_setMovePriority(0);
+	//AI_setMovePriority(0);
+	getGroup()->pushMission(MISSION_SKIP);
 	return false;
 }
 
-
-// Returns true if took an action or should wait to move later...
 bool CvUnitAI::AI_follow()
 {
+	FErrorMsg("Unexpected EXE call: CvUnitAI::AI_follow");
+	return false;
+}
+
+// Returns true if took an action or should wait to move later...
+/*	K-Mod. I've basically rewritten this function.
+	bFirst should be "true" if this is the first unit in the group to use this follow function.
+	the point is that there are some calculations and checks in here
+	which only depend on the group, not the unit,
+	so for efficiency we should only check them once. */
+bool CvUnitAI::AI_follow(bool bFirst)
+{
 	//getGroup()->resetPath();
-	CvSelectionGroup::path_finder.Reset();
+	//CvSelectionGroup::path_finder.Reset();
 
 	if (AI_followBombard())
 	{
 		return true;
 	}
 
-	if (AI_cityAttack(1, 65, NO_MOVEMENT_FLAGS, true))
+	if (bFirst && getGroup()->getHeadUnitAI() == UNITAI_ATTACK_CITY)
 	{
+		/*	note: AI_stackAttackCity will check which of our units can attack
+			when comparing stacks; and it will issue the attack order using
+			MOVE_DIRECT ATTACK, which will execute without waiting for
+			the entire group to have movement points. */
+		if (AI_stackAttackCity()) // automatic threshold
+			return true;
+	}
+
+	/*	I've changed attack-follow code so that it will
+	only attack with a single unit, not the whole group. */
+	if (bFirst && AI_cityAttack(1, 65, NO_MOVEMENT_FLAGS, true))
 		return true;
+	if (bFirst)
+	{
+		bool bMoveGroup = false; // to large groups to leave some units behind.
+		if (getGroup()->getNumUnits() >= 16)
+		{
+			int iCanMove = 0;
+			FOR_EACH_UNIT_IN(pLoopUnit, *getGroup())
+			{
+				if (pLoopUnit->canMove())
+					iCanMove++;
+			}
+			// if 4/5 of our group can still move.
+			bMoveGroup = (5 * iCanMove >= 4 * getGroup()->getNumUnits() || iCanMove >= 20);
+		}
+		if (AI_anyAttack(1, isEnemy(getPlot()) ? 65 : 70, NO_MOVEMENT_FLAGS,
+			bMoveGroup ? 0 : 2, true, true))
+		{
+			return true;
+		}
 	}
 
 	if (isEnemy(plot()->getTeam()))
@@ -6444,10 +6488,12 @@ bool CvUnitAI::AI_loadUnits(UnitAITypes eUnitAI, MissionAITypes eMissionAI)
 						pLoopUnit->jumpTo(this->plot());
 						iCount++;
 
+						/*
 						if (!isHuman())
 						{
 							GET_PLAYER(getOwnerINLINE()).AI_removeUnitFromMoveQueue(pLoopUnit);
 						}
+						*/
 					}
 				}
 			}
@@ -17413,73 +17459,44 @@ bool CvUnitAI::AI_imperialSeaAssault()
 }
 
 
-// Returns true if a mission was pushed or we should wait for another unit to bombard...
+/*  Returns true if a mission was pushed
+	-- or we should wait for another unit to bombard... */
 bool CvUnitAI::AI_followBombard()
 {
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	CvPlot* pAdjacentPlot1;
-	CvPlot* pAdjacentPlot2;
-	int iI, iJ;
-
-	if (canBombard(plot()))
+	if (canBombard(&getPlot()))
 	{
 		getGroup()->pushMission(MISSION_BOMBARD);
 		return true;
 	}
 
-	if (getDomainType() == DOMAIN_LAND)
-	{
-		for (iI = 0; iI < NUM_DIRECTION_TYPES; iI++)
-		{
-			pAdjacentPlot1 = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
-
-			if (pAdjacentPlot1 != NULL)
-			{
-				if (pAdjacentPlot1->isCity())
-				{
-					if (AI_potentialEnemy(pAdjacentPlot1->getTeam(), pAdjacentPlot1))
-					{
-						for (iJ = 0; iJ < NUM_DIRECTION_TYPES; iJ++)
-						{
-							pAdjacentPlot2 = plotDirection(pAdjacentPlot1->getX_INLINE(), pAdjacentPlot1->getY_INLINE(), ((DirectionTypes)iJ));
-
-							if (pAdjacentPlot2 != NULL)
-							{
-								pUnitNode = pAdjacentPlot2->headUnitNode();
-
-								while (pUnitNode != NULL)
-								{
-									pLoopUnit = pAdjacentPlot2->getUnitNodeLoop(pUnitNode);
-
-									if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
-									{
-										if (pLoopUnit->canBombard(pAdjacentPlot2))
-										{
-											if (pLoopUnit->isGroupHead())
-											{
-												if (pLoopUnit->getGroup() != getGroup())
-												{
+	// K-Mod note: I've disabled the following code because it seems like a timewaster with very little benefit.
+	// The code checks if we are standing next to a city, and then checks if we have any other readyToMove group
+	// next to the same city which can bombard... if so, return true.
+	// I suppose the point of the code is to block our units from issuing a follow-attack order if we still have
+	// some bombarding to do. -- But in my opinion, such checks, if we want them, should be done by the attack code.
+	/*if (getDomainType() == DOMAIN_LAND) {
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++) {
+			CvPlot* pAdjacentPlot1 = plotDirection(getX(), getY(), ((DirectionTypes)iI));
+			if (pAdjacentPlot1 != NULL) {
+				if (pAdjacentPlot1->isCity()) {
+					if (AI_potentialEnemy(pAdjacentPlot1->getTeam(), pAdjacentPlot1)) {
+						for (int iJ = 0; iJ < NUM_DIRECTION_TYPES; iJ++) {
+							pAdjacentPlot2 = plotDirection(pAdjacentPlot1->getX(), pAdjacentPlot1->getY(), ((DirectionTypes)iJ));
+							if (pAdjacentPlot2 != NULL) {
+								CLLNode<IDInfo>* pUnitNode = pAdjacentPlot2->headUnitNode();
+								while (pUnitNode != NULL) {
+									pLoopUnit = ::getUnit(pUnitNode->m_data);
+									pUnitNode = pAdjacentPlot2->nextUnitNode(pUnitNode);
+									if (pLoopUnit->getOwner() == getOwner()) {
+										if (pLoopUnit->canBombard(pAdjacentPlot2)) {
+											if (pLoopUnit->isGroupHead()) {
+												if (pLoopUnit->getGroup() != getGroup()) {
 													if (pLoopUnit->getGroup()->readyToMove())
-													{
 														return true;
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+	} } } } } } } } } } } }*/ // BtS
 
 	return false;
 }
-
 
 // Returns true if the unit has found a potential enemy...
 bool CvUnitAI::AI_potentialEnemy(TeamTypes eTeam, const CvPlot* pPlot)
@@ -17730,79 +17747,6 @@ int CvUnitAI::AI_stackOfDoomExtra()
 
 	return (bReady ? iStackOfDoom : 3);
 	// TAC - AI Attack City - koma13 - END
-}
-
-bool CvUnitAI::AI_stackAttackCity(int iRange, int iPowerThreshold, bool bFollow)
-{
-    PROFILE_FUNC();
-	CvPlot* pLoopPlot;
-	CvPlot* pBestPlot;
-	int iSearchRange;
-	int iPathTurns;
-	int iValue;
-	int iBestValue;
-	int iDX, iDY;
-
-	FAssert(canMove());
-
-	if (bFollow)
-	{
-		iSearchRange = 1;
-	}
-	else
-	{
-		iSearchRange = AI_searchRange(iRange);
-	}
-
-	iBestValue = 0;
-	pBestPlot = NULL;
-
-	for (iDX = -(iSearchRange); iDX <= iSearchRange; iDX++)
-	{
-		for (iDY = -(iSearchRange); iDY <= iSearchRange; iDY++)
-		{
-			pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
-
-			if (pLoopPlot != NULL)
-			{
-				if (AI_plotValid(pLoopPlot))
-				{
-					// Super Forts begin *AI_offense* - modified if statement so forts are attacked too
-					if (pLoopPlot->isCity(true))
-					//if (pLoopPlot->isCity() || (pLoopPlot->isCity(true) && pLoopPlot->isVisibleEnemyUnit(this))) - Original Code
-					// Super Forts end
-					{
-						if (AI_potentialEnemy(pLoopPlot->getTeam(), pLoopPlot))
-						{
-							if (!atPlot(pLoopPlot) && ((bFollow) ? canMoveInto(*pLoopPlot, /*bAttack*/ true, /*bDeclareWar*/ true) : (generatePath(pLoopPlot, 0, true, &iPathTurns) && (iPathTurns <= iRange))))
-							{
-								iValue = getGroup()->AI_compareStacks(pLoopPlot, /*bPotentialEnemy*/ true, /*bCheckCanAttack*/ true, /*bCheckCanMove*/ true);
-
-								if (iValue >= iPowerThreshold)
-								{
-									if (iValue > iBestValue)
-									{
-										iBestValue = iValue;
-										pBestPlot = ((bFollow) ? pLoopPlot : getPathEndTurnPlot());
-										FAssert(!atPlot(pBestPlot));
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	if (pBestPlot != NULL)
-	{
-		FAssert(!atPlot(pBestPlot));
-		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), ((bFollow) ? MOVE_DIRECT_ATTACK : 0));
-		return true;
-	}
-
-	return false;
 }
 
 bool CvUnitAI::AI_moveIntoCity(int iRange)
@@ -19667,7 +19611,7 @@ void CvUnitAI::AI_attackCityMove()
 				if (iComparePostBombard >= iAttackRatio)
 				{
 					// in position; and no desire to bombard.  So attack!
-					if (AI_stackAttackCity_advciv(iAttackRatio))
+					if (AI_stackAttackCity(iAttackRatio))
 						return;
 				}
 			}
@@ -19786,7 +19730,7 @@ void CvUnitAI::AI_attackCityMove()
 		if (getGroup()->getNumUnits() > 3 /* + kOwner.AI_getCurrEraFactor() / 2 */ &&
 			iAttackRatio > 100)
 		{
-			if (AI_stackAttackCity_advciv((iAttackRatio + 100) / 2))
+			if (AI_stackAttackCity((iAttackRatio + 100) / 2))
 				return;
 		} // </advc.114c>
 		// Pillage around enemy city
@@ -20217,7 +20161,7 @@ bool CvUnitAI::AI_singleUnitHeal(int iMaxTurnsExposed, int iMaxTurnsOutsideCity)
 }
 
 // This function has been significantly modified for K-Mod
-bool CvUnitAI::AI_stackAttackCity_advciv(int iPowerThreshold)
+bool CvUnitAI::AI_stackAttackCity(int iPowerThreshold)
 {
 	PROFILE_FUNC();
 

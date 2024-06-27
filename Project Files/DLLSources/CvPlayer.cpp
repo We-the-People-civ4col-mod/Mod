@@ -1753,7 +1753,7 @@ void CvPlayer::killUnits()
 			pLoopUnit->finishMoves();
 			pLoopUnit->setYieldStored(0);
 			gDLL->getEventReporterIFace()->unitLost(pLoopUnit);
-			AI().AI_removeUnitFromMoveQueue(pLoopUnit);
+			//AI().AI_removeUnitFromMoveQueue(pLoopUnit);
 			const bool bUnitDeleted = deleteUnit(getID());
 			FAssert(bUnitDeleted);
 			FAssert(checkPopulation());
@@ -2741,7 +2741,8 @@ bool CvPlayer::hasReadyUnit(bool bAny) const
 
 	for(pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
 	{
-		if (pLoopSelectionGroup->readyToMove(bAny))
+		if (pLoopSelectionGroup->readyToMove(bAny) &&
+			!pLoopSelectionGroup->isAutomated()) // K-Mod
 		{
 			return true;
 		}
@@ -2781,12 +2782,10 @@ bool CvPlayer::hasBusyUnit() const
 	{
 		if (pLoopSelectionGroup->isBusy())
 		{
-		    if (pLoopSelectionGroup->getNumUnits() == 0)
-		    {
-		        pLoopSelectionGroup->kill();
-		        return false;
-		    }
-
+			/*if (pLoopSelectionGroup->getNumUnits() == 0) {
+				pLoopSelectionGroup->kill();
+				return false;
+			}*/ // BtS - disabled by K-Mod. isBusy returns false if there are no units in the group.
 			return true;
 		}
 	}
@@ -8599,32 +8598,27 @@ bool CvPlayer::isAutoMoves() const
 	return m_bAutoMoves;
 }
 
-
 void CvPlayer::setAutoMoves(bool bNewValue)
 {
-	MOD_PROFILE("CvPlayer::setAutoMoves");
+	if (isAutoMoves() == bNewValue)
+		return; // advc
 
-	if (isAutoMoves() != bNewValue)
+	m_bAutoMoves = bNewValue;
+	if (!isAutoMoves())
 	{
-		m_bAutoMoves = bNewValue;
-
-		if (!isAutoMoves())
+		if (isEndTurn() || !isHuman())
+			setTurnActive(false);
+		else
 		{
-			if (isEndTurn() || !isHuman())
+			if (isActive())
 			{
-				setTurnActive(false);
-			}
-			else
-			{
-				if (getID() == GC.getGameINLINE().getActivePlayer())
-				{
-					gDLL->getInterfaceIFace()->setCycleSelectionCounter(1);
-				}
+				gDLL->getInterfaceIFace()->setCycleSelectionCounter(1);
+				// this is a subtle case. I think it's best to just use the normal delay
+				//GC.getGame().cycleSelectionGroups_delayed(1, false, true);
 			}
 		}
 	}
 }
-
 
 bool CvPlayer::isEndTurn() const
 {
@@ -9831,7 +9825,6 @@ void CvPlayer::changeTaxYieldModifierCount(YieldTypes eYield, int iChange)
 	m_em_iTaxYieldModifierCount.add(eYield, iChange);
 }
 
-
 // XXX should pUnit be a CvSelectionGroup???
 void CvPlayer::updateGroupCycle(CvUnit* pUnit)
 {
@@ -9939,6 +9932,65 @@ void CvPlayer::updateGroupCycle(CvUnit* pUnit)
 	}
 }
 
+/*	K-Mod. I've changed this function from using pUnit to using pGroup.
+	I've also rewritten most of the code, to give more natural ordering,
+	and to be more robust and readable code. */
+void CvPlayer::updateGroupCycle(CvSelectionGroup const& kGroup)
+{
+	PROFILE_FUNC();
+
+	CvPlot const* pPlot = kGroup.plot();
+	if (pPlot == NULL || !kGroup.isCycleGroup())
+		return;
+
+	CvUnit const& kUnit = *kGroup.getHeadUnit();
+
+	//removeGroupCycle(kGroup.getID()); // will be removed while we reposition it
+
+	CLLNode<int>* pBestSelectionGroupNode = NULL;
+	int iBestCost = MAX_INT;
+	CvSelectionGroup const* pPreviousGroup = NULL;
+	CLLNode<int>* pSelectionGroupNode = headGroupCycleNode();
+	while (pSelectionGroupNode != NULL)
+	{
+		CvSelectionGroup const& kNextGroup = *getSelectionGroup(pSelectionGroupNode->m_data);
+
+		// if we find our group in the list, remove it.
+		if (&kNextGroup == &kGroup)
+			pSelectionGroupNode = deleteGroupCycleNode(pSelectionGroupNode);
+		else if (kNextGroup.isCycleGroup() && //kNextGroup.canAllMove()
+			kNextGroup.canAnyMove()) // advc.153
+		{
+			//int iCost = pPreviousGroup->groupCycleDistance(pGroup) + pGroup->groupCycleDistance(pNextGroup) - pPreviousGroup->groupCycleDistance(pNextGroup);
+			int iCost = kGroup.groupCycleDistance(kNextGroup) +
+				(pPreviousGroup == NULL ? 3 :
+					pPreviousGroup->groupCycleDistance(kGroup) -
+					pPreviousGroup->groupCycleDistance(kNextGroup));
+			if (iCost < iBestCost)
+			{
+				iBestCost = iCost;
+				pBestSelectionGroupNode = pSelectionGroupNode;
+			}
+			pPreviousGroup = &kNextGroup;
+			pSelectionGroupNode = nextGroupCycleNode(pSelectionGroupNode);
+		}
+		else pSelectionGroupNode = nextGroupCycleNode(pSelectionGroupNode);
+	}
+	if (pPreviousGroup != NULL)
+	{
+		FAssert(pPreviousGroup->isCycleGroup() && pPreviousGroup->/*canAllMove*/canAnyMove()); // advc.153
+		int iCost = pPreviousGroup->groupCycleDistance(kGroup) + 3; // cost for being at the end of the list.
+		if (iCost < iBestCost)
+			pBestSelectionGroupNode = NULL;
+	}
+
+	if (pBestSelectionGroupNode != NULL)
+		m_groupCycle.insertBefore(kUnit.getGroupID(), pBestSelectionGroupNode);
+	else m_groupCycle.insertAtEnd(kUnit.getGroupID());
+	// <advc.154>
+	if (isHuman() && isActive())
+		gDLL->UI().setDirty(SelectionButtons_DIRTY_BIT, true); // </advc.154>
+}
 
 void CvPlayer::removeGroupCycle(int iID)
 {
@@ -9957,6 +10009,34 @@ void CvPlayer::removeGroupCycle(int iID)
 		{
 			pSelectionGroupNode = nextGroupCycleNode(pSelectionGroupNode);
 		}
+	}
+}
+
+// K-Mod:
+void CvPlayer::refreshGroupCycleList()
+{
+	std::vector<CvSelectionGroup*> update_list;
+
+	CLLNode<int>* pNode = headGroupCycleNode();
+	while (pNode)
+	{
+		// BUG: what about units in europe that cannot move due to not being on the map
+		CvSelectionGroup* pLoopGroup = getSelectionGroup(pNode->m_data);
+		CvUnit* pLoopHead = pLoopGroup->getHeadUnit();
+		if (pLoopHead && pLoopGroup->isCycleGroup() && //pLoopGroup->canAllMove()
+			pLoopGroup->canAnyMove() && // advc.153
+			(pLoopHead->hasMoved() ||
+				(pLoopHead->isCargo() && pLoopHead->getTransportUnit()->hasMoved())))
+		{
+			update_list.push_back(pLoopGroup);
+			pNode = deleteGroupCycleNode(pNode);
+		}
+		else pNode = nextGroupCycleNode(pNode);
+	}
+
+	for (size_t i = 0; i < update_list.size(); i++)
+	{
+		updateGroupCycle(*update_list[i]);
 	}
 }
 
@@ -25148,3 +25228,5 @@ void CvPlayer::releaseTempUnit()
 	//GC.getGame().logOOSSpecial(10, m_pTempUnit->getID(), INVALID_PLOT_COORD, INVALID_PLOT_COORD);
 	m_pTempUnit->setXY(INVALID_PLOT_COORD, INVALID_PLOT_COORD, true, false);
 }
+
+bool CvPlayer::isActive() const { return GC.getGameINLINE().getActivePlayer() == getID(); }
