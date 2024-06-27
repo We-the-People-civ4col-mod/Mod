@@ -4281,7 +4281,16 @@ bool CvPlot::isVisibleEnemyUnit(PlayerTypes ePlayer) const
 // R&R, ray, Natives raiding party - START
 bool CvPlot::isVisibleEnemyUnit(const CvUnit* pUnit) const
 {
-	return (plotCheck(PUF_isEnemy, pUnit->getOwnerINLINE(), (pUnit->isAlwaysHostile(this) || (pUnit->AI_getUnitAIState() == UNITAI_STATE_RAIDING_PARTY)), NO_PLAYER, NO_TEAM, PUF_isVisible, pUnit->getOwnerINLINE()) != NULL);
+	// for some reason this can be called on units in Europe, which then causes a crash on NULL plots - Nightinggale
+	FAssert(this != NULL);
+	FAssert(pUnit != NULL);
+	FAssert(pUnit->plot() != NULL);
+	if (this != NULL && pUnit != NULL && pUnit->plot() != NULL)
+	{
+		return (plotCheck(PUF_isEnemy, pUnit->getOwnerINLINE(), (pUnit->isAlwaysHostile(this) || (pUnit->AI_getUnitAIState() == UNITAI_STATE_RAIDING_PARTY)), NO_PLAYER, NO_TEAM, PUF_isVisible, pUnit->getOwnerINLINE()) != NULL);
+	}
+	// NULL units and units not on the map reports that they can't see any enemies
+	return false;
 }
 // R&R, ray, Natives raiding party - END
 
