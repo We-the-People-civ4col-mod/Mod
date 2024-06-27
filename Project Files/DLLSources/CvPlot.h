@@ -191,6 +191,11 @@ public:
 	bool isOwned() const;
 
 	bool isVisible(TeamTypes eTeam, bool bDebug) const;
+	// advc: Make bDebug=false the default
+	bool isVisible(TeamTypes eTeam) const
+	{
+		return isVisible(eTeam, false);
+	}
 	DllExport bool isActiveVisible(bool bDebug) const;
 	bool isVisibleToCivTeam() const;
 	bool isVisibleToWatchingHuman() const;

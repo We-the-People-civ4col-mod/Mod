@@ -42,6 +42,7 @@ public:
 	bool AI_update();
 	bool AI_europeUpdate();
 	bool AI_follow();
+	bool AI_follow(/* K-Mod: */ bool bFirst = true);
 
 	void AI_upgrade();
 
@@ -414,7 +415,6 @@ protected:
 
 	int AI_stackOfDoomExtra();
 
-	bool AI_stackAttackCity(int iRange, int iPowerThreshold, bool bFollow = true);
 	bool AI_moveIntoCity(int iRange);
 
 	bool AI_groupMergeRange(UnitAITypes eUnitAI, int iRange, bool bBiggerOnly = true, bool bAllowRegrouping = false, bool bIgnoreFaster = false);
@@ -461,7 +461,9 @@ protected:
 		bool bIgnoreBusyTransports = false);
 
 	bool AI_singleUnitHeal(int iMaxTurnsExposed = 1, int iMaxTurnsOutsideCity = 3);
-	bool AI_stackAttackCity_advciv(int iPowerThreshold);
+	//bool AI_stackAttackCity(int iRange, int iPowerThreshold, bool bFollow = true);
+	// K-Mod. used for adjacent cities only. Negative threshold means 'automatic'.
+	bool AI_stackAttackCity(int iPowerThreshold = -1);
 	bool AI_considerDOW(CvPlot const& kPlot); // K-Mod
 	bool AI_considerPathDOW(CvPlot* pPlot, MovementFlags eFlags); // K-Mod
 	// advc.012: CvUnit::plot if pPlot=NULL; cf. CvTeamAI::plotDefense.

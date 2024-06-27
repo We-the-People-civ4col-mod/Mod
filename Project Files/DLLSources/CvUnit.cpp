@@ -567,7 +567,7 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 
 	gDLL->getEventReporterIFace()->unitLost(this);
 
-	GET_PLAYER(getOwnerINLINE()).AI_removeUnitFromMoveQueue(this);
+	//GET_PLAYER(getOwnerINLINE()).AI_removeUnitFromMoveQueue(this);
 	GET_PLAYER(getOwnerINLINE()).deleteUnit(getID());
 
 	FAssert(GET_PLAYER(eOwner).checkPopulation());
@@ -8975,6 +8975,31 @@ bool CvUnit::canMove() const
 	return true;
 }
 
+bool CvUnit::canMoveInternal(bool bIgnoreOnMapState) const
+{
+	if (isDead())
+	{
+		return false;
+	}
+
+	if (getMoves() >= maxMoves())
+	{
+		return false;
+	}
+
+	if (getImmobileTimer() > 0)
+	{
+		return false;
+	}
+
+	if (!bIgnoreOnMapState && !isOnMap())
+	{
+		return false;
+	}
+
+	return true;
+}
+
 
 bool CvUnit::hasMoved()	const
 {
@@ -10259,12 +10284,6 @@ int CvUnit::cargoSpaceAvailable(SpecialUnitTypes eSpecialCargo, DomainTypes eDom
 	}
 
 	return std::max(0, (cargoSpace() - getCargo()));
-}
-
-
-bool CvUnit::hasCargo() const
-{
-	return (getCargo() > 0);
 }
 
 bool CvUnit::hasAnyUnitInCargo() const
@@ -11554,6 +11573,19 @@ void CvUnit::changeCargo(int iChange)
 	FAssert(getCargo() >= 0);
 }
 
+void CvUnit::getCargoUnits(std::vector<CvUnit*>& aUnits) const
+{
+	aUnits.clear();
+	if (hasCargo())
+	{
+		FOR_EACH_UNIT_VAR_IN(pLoopUnit, *plot())
+		{
+			if (pLoopUnit->getTransportUnit() == this)
+				aUnits.push_back(pLoopUnit);
+		}
+	}
+	FAssert(getCargo() == aUnits.size());
+}
 
 CvPlot* CvUnit::getAttackPlot() const
 {
@@ -12806,7 +12838,6 @@ bool CvUnit::doDelayedDeath()
 		kill(false);
 		return true;
 	}
-
 	return false;
 }
 
@@ -14920,7 +14951,7 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 		{
 			GET_PLAYER(getOwnerINLINE()).updateGroupCycle(this);
 		}
-
+		
 		//popup europe screen
 		if (bShowEuropeScreen)
 		{

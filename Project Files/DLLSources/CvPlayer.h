@@ -242,6 +242,7 @@ public:
 	DllExport void updateHuman();
 	bool isNative() const;
 	bool isColonialNation() const;
+	bool isActive() const;
 	CivCategoryTypes getCivCategoryTypes() const;
 	bool isAlwaysOpenBorders() const;
 	DllExport const wchar* getName(uint uiForm = 0) const;
@@ -567,9 +568,12 @@ public:
 	int getTaxYieldModifierCount(YieldTypes eYield) const;
 	void changeTaxYieldModifierCount(YieldTypes eYield, int iChange);
 
+	// TODO: Migrate to the group version!
 	void updateGroupCycle(CvUnit* pUnit);
+	void updateGroupCycle(CvSelectionGroup const& kGroup); // K-Mod
 	void removeGroupCycle(int iID);
-
+	void refreshGroupCycleList(); // K-Mod
+	
 	CLLNode<int>* deleteGroupCycleNode(CLLNode<int>* pNode);
 	CLLNode<int>* nextGroupCycleNode(CLLNode<int>* pNode) const;
 	CLLNode<int>* previousGroupCycleNode(CLLNode<int>* pNode) const;

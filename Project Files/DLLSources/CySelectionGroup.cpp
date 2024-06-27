@@ -47,7 +47,7 @@ CyPlot* CySelectionGroup::lastMissionPlot()
 
 bool CySelectionGroup::canStartMission(int iMission, int iData1, int iData2, CyPlot* pPlot, bool bTestVisible)
 {
-	return m_pSelectionGroup ? m_pSelectionGroup->canStartMission(iMission, iData1, iData2, pPlot->getPlot(), bTestVisible) : false;
+	return m_pSelectionGroup ? m_pSelectionGroup->canStartMission((MissionTypes)iMission, iData1, iData2, pPlot->getPlot(), bTestVisible) : false;
 }
 
 bool CySelectionGroup::canDoInterfaceMode(InterfaceModeTypes eInterfaceMode)

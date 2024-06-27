@@ -481,7 +481,6 @@ protected:
 	std::vector<CvWString> m_aszGreatAdmiralBorn; // R&R, ray, Great Admirals - START
 	std::vector<CvWString> m_aszShipNamed; // TAC - Ship Names - Ray - Start
 
-
 	FFreeListTrashArray<CvDeal> m_deals;
 
 	CvRandom m_mapRand;
@@ -497,6 +496,8 @@ protected:
 	// CACHE: cache frequently used values
 	int		m_iNumCultureVictoryCities;
 	int		m_eCultureVictoryCultureLevel;
+
+	int m_iUnitUpdateAttempts; // advc.001y
 
 	void doTurn();
 	void doFoundingFathers();

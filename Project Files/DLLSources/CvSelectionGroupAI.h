@@ -44,8 +44,9 @@ public:
 		bool bCheckCanAttack = false) const;
 
 	void AI_queueGroupAttack(int iX, int iY);
-	void AI_cancelGroupAttack();
-	bool AI_isGroupAttack();
+	void AI_cancelGroupAttack() { m_bGroupAttack = false; } // K-Mod (made inline)
+	bool AI_isGroupAttack() { return AI_isGroupAttackInternal(); } // K-Mod (made inline)
+	bool AI_isGroupAttackInternal() const { return m_bGroupAttack; } // K-Mod (made inline)
 
 	bool AI_isControlled() const;
 	bool AI_isDeclareWar(const CvPlot* pPlot = NULL) { return AI_isDeclareWarInternal(pPlot); }
@@ -100,6 +101,8 @@ public:
 	CvUnit* AI_bestUnitForMission(MissionTypes eMission,
 		CvPlot const* pMissionPlot = NULL,
 		std::vector<int> const* pUnitsToSkip = NULL); // </advc.004c>
+
+	bool AI_isStranded() const { return (AI_getMissionAITypeInternal() == MISSIONAI_STRANDED); } // K-Mod}
 
 	enum UnloadMode
 	{

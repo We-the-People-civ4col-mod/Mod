@@ -374,6 +374,7 @@ CvWString getStrategyString(StrategyTypes eStrategy);
 bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB);
 bool shouldUnitMove(const CvUnit* pUnit);
 
+
 class CvShouldMoveBefore
 {
 public:

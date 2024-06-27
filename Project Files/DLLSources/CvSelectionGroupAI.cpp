@@ -148,11 +148,8 @@ void CvSelectionGroupAI::AI_separateEmptyTransports()
 // Returns true if the group has become busy...
 bool CvSelectionGroupAI::AI_update()
 {
-	CLLNode<IDInfo>* pEntityNode;
 	CvUnit* pLoopUnit;
-	bool bDead;
-	bool bFollow;
-
+	
 	PROFILE_FUNC();
 
 	FAssert(getOwnerINLINE() != NO_PLAYER);
@@ -167,30 +164,34 @@ bool CvSelectionGroupAI::AI_update()
 		return false;
 	}
 
+	// K-Mod. (replacing the original "isForceUpdate" stuff.)
 	if (isForceUpdate())
 	{
-		clearMissionQueue(); // XXX ???
-		setActivityType(ACTIVITY_AWAKE);
-		setForceUpdate(false);
-
-		// if we are in the middle of attacking with a stack, cancel it
+		// note: we haven't toggled the update flag, nor woken the group from sleep.
 		AI_cancelGroupAttack();
-	}
+	} // K-Mod end
 
-	FAssert(!(GET_PLAYER(getOwnerINLINE()).isAutoMoves()));
+	//FAssert(!(GET_PLAYER(getOwnerINLINE()).isAutoMoves()));
 
-	int iTempHack = 0; // XXX
+	//int iTempHack = 0; // XXX
+	int iAttempts = 0;
+	int iMaxAttempts = 100 + std::max(getNumUnits(), 4); // WTP: Arbitrary
+#ifdef _DEBUG
+	iMaxAttempts += 4; // Extra iterations for debugging
+#endif
 
-	bDead = false;
-
+	bool bDead = false;
 	bool bFailedAlreadyFighting = false;
-	while ((m_bGroupAttack && !bFailedAlreadyFighting) || readyToMove())
+	//while ((m_bGroupAttack && !bFailedAlreadyFighting) || readyToMove())
+	while ((AI_isGroupAttack() && !isBusy()) || readyToMove()/* || hasShipInPort()*/) // K-Mod / WTP
 	{
-		iTempHack++;
-		if (iTempHack > 100)
+		// K-Mod. Force update just means we should get into this loop at least once.
+		setForceUpdate(false);
+		iAttempts++;
+		if (iAttempts > iMaxAttempts)
 		{
-			FAssert(false);
 			CvUnit* pHeadUnit = getHeadUnit();
+			FAssert(false);
 			if (NULL != pHeadUnit)
 			{
 				if (GC.getLogging())
@@ -211,16 +212,16 @@ bool CvSelectionGroupAI::AI_update()
 		// if we want to force the group to attack, force another attack
 		if (m_bGroupAttack)
 		{
-			m_bGroupAttack = false;
-
-			groupAttack(CREATE_ASSERT_DATA, m_iGroupAttackX, m_iGroupAttackY, MOVE_DIRECT_ATTACK, bFailedAlreadyFighting);
+			AI_cancelGroupAttack();
+			groupAttack(CREATE_ASSERT_DATA, m_iGroupAttackX, m_iGroupAttackY,
+				MOVE_DIRECT_ATTACK, bFailedAlreadyFighting);
 		}
 		// else pick AI action
 		else
 		{
-			CvUnit* pHeadUnit = getHeadUnit();
-
-			if (pHeadUnit == NULL || pHeadUnit->isDelayedDeath())
+			CvUnit* const pHeadUnit = getHeadUnit();
+			//if (pHeadUnit == NULL || pHeadUnit->isDelayedDeath())
+			if (pHeadUnit == NULL || pHeadUnit->doDelayedDeath()) // K-Mod
 			{
 				break;
 			}
@@ -228,6 +229,9 @@ bool CvSelectionGroupAI::AI_update()
 			if (pHeadUnit->AI_update())
 			{
 				// AI_update returns true when we should abort the loop and wait until next slice
+				// WTP: AdvCiv seems to trigger delayed death immediately for most AI actions that kills the unit
+				// We need to determine if we should follow suit before enabling this assert
+				//FAssert(!pHeadUnit->isDelayedDeath());
 				break;
 			}
 		}
@@ -240,21 +244,30 @@ bool CvSelectionGroupAI::AI_update()
 
 		// if no longer group attacking, and force separate is true, then bail, decide what to do after group is split up
 		// (UnitAI of head unit may have changed)
-		if (!m_bGroupAttack && AI_isForceSeparate())
+		if (!AI_isGroupAttackInternal() && AI_isForceSeparate())
 		{
 			AI_separate();	// pointers could become invalid...
-			return true;
+			//return true;
+			return false; // K-Mod
 		}
 	}
 
 	if (!bDead)
-	{
-		CvUnit* pHeadUnit = getHeadUnit();
+	{	
+		// K-Mod. this is how we deal with force update when some group members can't move.
+		if (isForceUpdate())
+		{
+			setForceUpdate(false);
+			AI_cancelGroupAttack();
+			setActivityType(ACTIVITY_AWAKE);
+		}
+		// K-Mod end
+		CvUnit* const pHeadUnit = getHeadUnit();
 		if (pHeadUnit != NULL)
 		{
 			if ((pHeadUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE || pHeadUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA) && AI_isControlled())
 			{
-				pEntityNode = headUnitNode();
+				CLLNode<IDInfo>* pEntityNode = headUnitNode();
 
 				while (pEntityNode != NULL)
 				{
@@ -271,47 +284,56 @@ bool CvSelectionGroupAI::AI_update()
 
 		if (!isHuman())
 		{
-			bFollow = false;
-
-			// if we not group attacking, then check for follow action
-			if (!m_bGroupAttack)
+			bool bFollow = false;
+			// <k146>
+			// if we're not group attacking, then check for 'follow' action
+			if (!AI_isGroupAttack() && readyToMove(true))
 			{
-				pEntityNode = headUnitNode();
-
-				while ((pEntityNode != NULL) && readyToMove(true))
+				/*  What we do here might split the group. So to avoid problems,
+					lets make a list of our units. */
+				std::vector<IDInfo> originalGroup;
+				for (CLLNode<IDInfo> const* pUnitNode = headUnitNode(); pUnitNode != NULL;
+					pUnitNode = nextUnitNode(pUnitNode))
 				{
-					pLoopUnit = ::getUnit(pEntityNode->m_data);
-					pEntityNode = nextUnitNode(pEntityNode);
-
-					if (pLoopUnit != NULL && pLoopUnit->canMove())
+					originalGroup.push_back(pUnitNode->m_data);
+				}
+				FAssert(originalGroup.size() == getNumUnits());
+				bool bFirst = true;
+				CvSelectionGroup::path_finder.Reset();
+				for (std::vector<IDInfo>::iterator it = originalGroup.begin();
+					it != originalGroup.end(); ++it)
+				{
+					CvUnitAI* pLoopUnit = static_cast<CvUnitAI*>(::getUnit(*it));
+					if (pLoopUnit && pLoopUnit->getGroupID() == getID() &&
+						pLoopUnit->canMove())
 					{
-						if (pLoopUnit->AI_follow())
+						if (pLoopUnit->AI_follow(bFirst))
 						{
 							bFollow = true;
-							break;
+							bFirst = true; // let the next unit start fresh.
+							CvSelectionGroup::path_finder.Reset();
+							if (!readyToMove(true))
+								break;
 						}
+						else bFirst = false;
 					}
-				}
+				} // </k146>
 			}
 
 			if (doDelayedDeath())
-			{
 				bDead = true;
-			}
 
 			if (!bDead)
 			{
 				if (!bFollow && readyToMove(true))
-				{
 					pushMission(MISSION_SKIP);
-				}
 			}
 		}
 	}
 
 	if (bDead)
-	{
-		return true;
+	{	//return true;
+		return false; // K-Mod
 	}
 
 	return (isBusy() || isCargoBusy());
@@ -629,16 +651,6 @@ void CvSelectionGroupAI::AI_queueGroupAttack(int iX, int iY)
 
 	m_iGroupAttackX = iX;
 	m_iGroupAttackY = iY;
-}
-
-inline void CvSelectionGroupAI::AI_cancelGroupAttack()
-{
-	m_bGroupAttack = false;
-}
-
-inline bool CvSelectionGroupAI::AI_isGroupAttack()
-{
-	return m_bGroupAttack;
 }
 
 bool CvSelectionGroupAI::AI_isControlled() const
