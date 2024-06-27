@@ -65441,8 +65441,8 @@
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_EXPERT_SETTLER</Description>
-			<Civilopedia>TXT_KEY_PROFESSION_SETTLER_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_PROFESSION_SETTLER_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_UNIT_EXPERT_SETTLER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_EXPERT_SETTLER_STRATEGY</Strategy>
 			<iTeachLevel>100</iTeachLevel>
 			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
 			<bGraphicalOnly>0</bGraphicalOnly>
