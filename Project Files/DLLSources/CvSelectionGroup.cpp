@@ -857,6 +857,7 @@ void CvSelectionGroup::startMission()
 			case MISSION_PILLAGE:
 			case MISSION_FOUND:
 			case MISSION_JOIN_CITY:
+			case MISSION_BUILD:
 			case MISSION_LEAD:
 				//TAC Whaling, ray
 			case MISSION_WHALING:
@@ -932,15 +933,12 @@ void CvSelectionGroup::continueMission()
 	while (continueMission_bulk(iSteps))
 	{
 		iSteps++;
+		FAssertMsg(iSteps < 100, "Mission never completes!");
 	}
 }
 
 bool CvSelectionGroup::continueMission_bulk(int iSteps)
 {
-	CvUnit* pTargetUnit;
-	bool bDone;
-	bool bAction;
-
 	FAssert(!isBusy());
 	FAssert(headMissionQueueNode() != NULL);
 	FAssert(getOwnerINLINE() != NO_PLAYER);
@@ -958,8 +956,8 @@ bool CvSelectionGroup::continueMission_bulk(int iSteps)
 	MissionData missionData = pHeadMission->m_data;
 	CvGame& kGame = GC.getGame();
 	CvPlot* pFromPlot = plot(); // advc.102
-	bDone = false;
-	bAction = false;
+	bool bDone = false;
+	bool bAction = false;
 
 	if (!(missionData.iFlags & MOVE_NO_ATTACK) && // K-Mod
 		(missionData.iPushTurn == kGame.getGameTurn() ||
@@ -1168,7 +1166,6 @@ bool CvSelectionGroup::continueMission_bulk(int iSteps)
 		return false;
 	missionData = pHeadMission->m_data;
 
-
 	if (!bDone)
 	{
 		switch (missionData.eMissionType)
@@ -1217,95 +1214,13 @@ bool CvSelectionGroup::continueMission_bulk(int iSteps)
 		case MISSION_WHALING:
 		case MISSION_FISHING:
 			//End TAC Whaling, ray
-			break;
-
-		case MISSION_BUILD:
-			if (!groupBuild(headMissionQueueNode()->m_data.eBuild))
-			{
-				bDone = true;
-			}
-			break;
-
-		default:
-			FAssert(false);
-			break;
-		}
-	}
-
-	if (!bDone)
-	{
-		switch (headMissionQueueNode()->m_data.eMissionType)
-		{
-		case MISSION_MOVE_TO:
-			headMissionQueueNode()->m_data.iFlags |= MOVE_HAS_STEPPED; // K-Mod
-			if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
-			{
-				bDone = true;
-			}
-			break;
-
-		case MISSION_ROUTE_TO:
-			if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
-			{
-				if (!canBuildRoute(plot()))
-				{
-					bDone = true;
-				}
-			}
-			break;
-
-		case MISSION_ROUTE_TO_ROAD:
-			if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
-			{
-				if (!canBuildRoute(plot(), ROUTE_ROAD))
-				{
-					bDone = true;
-				}
-			}
-			break;
-
-		case MISSION_ROUTE_TO_COUNTRY_ROAD:
-			if (at(headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2))
-			{
-				if (!canBuildRoute(plot(), ROUTE_COUNTRY_ROAD))
-				{
-					bDone = true;
-				}
-			}
-			break;
-
-		case MISSION_MOVE_TO_UNIT:
-			pTargetUnit = GET_PLAYER((PlayerTypes)headMissionQueueNode()->m_data.iData1).getUnit(headMissionQueueNode()->m_data.iData2);
-			if ((pTargetUnit == NULL) || atPlot(pTargetUnit->plot()))
-			{
-				bDone = true;
-			}
-			break;
-
-		case MISSION_SKIP:
-		case MISSION_SLEEP:
-		case MISSION_FORTIFY:
-		case MISSION_HEAL:
-		case MISSION_SENTRY:
-			FAssert(false);
-			break;
-
-		case MISSION_BOMBARD:
-		case MISSION_LEAD:
-		case MISSION_PILLAGE:
-		case MISSION_FOUND:
-		case MISSION_JOIN_CITY:
 			bDone = true;
 			break;
 
-		case MISSION_WHALING: //TAC Whaling, ray
-		case MISSION_FISHING: // R&R, ray, High Sea Fishing
 		case MISSION_BUILD:
 			// XXX what happens if two separate worker groups are both building the mine...
-			/*if (plot()->getBuildType() != ((BuildTypes)(headMissionQueueNode()->m_data.iData1)))
-			{
-				bDone = true;
-			}*/
+			/*if (getPlot().getBuildType() != ((BuildTypes)(headMissionQueueNode()->m_data.iData1)))
+					bDone = true; */
 			break;
 
 		default:
@@ -2478,7 +2393,7 @@ BuildTypes CvSelectionGroup::getBestBuildRouteBuild(CvPlot *pPlot, RouteTypes eP
 }
 
 
-RouteTypes CvSelectionGroup::getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBestBuild, RouteTypes ePreferredRoute) const
+RouteTypes CvSelectionGroup::getBestBuildRoute(const CvPlot* pPlot, BuildTypes* peBestBuild, RouteTypes ePreferredRoute) const
 {
 	PROFILE_FUNC();
 
@@ -3208,6 +3123,7 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 					return false;
 				if (!bCheckMoves)
 					return true;
+				bValid = true;
 			}
 			if (pUnit->canMove() != bValid)
 				return !bValid; // huh?
@@ -3215,36 +3131,57 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 		}
 
 		case MISSION_ROUTE_TO:
-		{
-			if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot))
+			if (!bValid)
 			{
-				return true;
+				if (pPlot->at(iData1, iData2) &&
+					getBestBuildRoute(pPlot, NULL) == NO_ROUTE)
+				{
+					return false;
+				}
+				if (!bCheckMoves)
+					return true;
+				bValid = true;
 			}
+			if (!pUnit->canMove())
+				return false;
 			break;
-		}
 
 		case MISSION_ROUTE_TO_ROAD:
-		{
-			if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot, ROUTE_ROAD))
+			if (!bValid)
 			{
-				return true;
+				if (pPlot->at(iData1, iData2) &&
+					getBestBuildRoute(pPlot, NULL, ROUTE_ROAD) == NO_ROUTE)
+				{
+					return false;
+				}
+				if (!bCheckMoves)
+					return true;
+				bValid = true;
 			}
+			if (!pUnit->canMove())
+				return false;
 			break;
-		}
 
 		case MISSION_ROUTE_TO_COUNTRY_ROAD:
-		{
-			if (!(pPlot->at(iData1, iData2)) || canBuildRoute(pPlot, ROUTE_COUNTRY_ROAD))
+			if (!bValid)
 			{
-				return true;
+				if (pPlot->at(iData1, iData2) &&
+					getBestBuildRoute(pPlot, NULL, ROUTE_COUNTRY_ROAD) == NO_ROUTE)
+				{
+					return false;
+				}
+				if (!bCheckMoves)
+					return true;
+				bValid = true;
 			}
+			if (!pUnit->canMove())
+				return false;
 			break;
-		}
 
 		case MISSION_MOVE_TO_UNIT:
 		{
 			FAssert(iData1 > NO_PLAYER);
-			CvUnit* pTargetUnit = GET_PLAYER((PlayerTypes)iData1).getUnit(iData2);
+			CvUnit* const pTargetUnit = GET_PLAYER((PlayerTypes)iData1).getUnit(iData2);
 			if (!bValid)
 			{
 				if (!pTargetUnit || pTargetUnit->atPlot(pPlot))
@@ -3296,14 +3233,16 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 			break;
 
 		case MISSION_BOMBARD:
-			if (pUnit->canBombard(pPlot))
+			if (pUnit->canBombard(pPlot) &&
+				(!bCheckMoves || pUnit->canMove()))
 			{
 				return true;
 			}
 			break;
 
 		case MISSION_PILLAGE:
-			if (pUnit->canPillage(pPlot))
+			if (pUnit->canPillage(pPlot) &&
+				(!bCheckMoves || pUnit->canMove()))
 			{
 				return true;
 			}
@@ -3324,15 +3263,19 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 			break;
 
 		case MISSION_BUILD:
-			FAssertMsg(((BuildTypes)iData1) < GC.getNumBuildInfos(), "Invalid Build");
-			if (pUnit->canBuild(pPlot, ((BuildTypes)iData1), bTestVisible))
+		{
+			const BuildTypes eBuild = (BuildTypes)iData1;
+			FAssertMsg(eBuild > NO_BUILD && eBuild < GC.getNumBuildInfos(), "Invalid Build");
+			if (pUnit->canBuild(pPlot, eBuild, bTestVisible) &&
+				(!bCheckMoves || pUnit->canMove()))
 			{
 				return true;
 			}
 			break;
-
+		}
 		case MISSION_LEAD:
-			if (pUnit->canLead(pPlot, iData1))
+			if (pUnit->canLead(pPlot, iData1) &&
+				(!bCheckMoves || pUnit->canMove()))
 			{
 				return true;
 			}
@@ -3348,6 +3291,7 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 		case MISSION_MULTI_DESELECT:
 			break;
 			//TAC Whaling, ray
+			// TODO: do we need checkmoves ?
 		case MISSION_WHALING:
 			if (pUnit->isWhalingBoat() && pUnit->canGatherResource(pPlot, bTestVisible))
 			{
