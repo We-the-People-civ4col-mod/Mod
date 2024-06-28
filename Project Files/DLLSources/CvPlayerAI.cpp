@@ -713,6 +713,24 @@ void CvPlayerAI::AI_unitUpdate()
 					}
 				}
 			}
+
+			FOR_EACH_GROUPAI_VAR(pGroup, *this)
+			{
+				CvUnitAI* const pHeadUnit = static_cast<CvUnitAI*>(pGroup->getHeadUnit());
+				if (pHeadUnit == NULL)
+					continue;
+				if (pHeadUnit->AI_getMovePriority() == 0)
+				{
+					pHeadUnit->AI_doInitialMovePriority();
+				}
+				else
+				{
+					FAssert(std::find(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), pHeadUnit->getID()) != m_unitPriorityHeap.end());
+				}
+			}
+			m_iTurnLastManagedPop = GC.getGameINLINE().getGameTurn();
+			m_iMoveQueuePasses = 0;
+
 		}
 	}
 
@@ -739,79 +757,50 @@ void CvPlayerAI::AI_unitUpdate()
 		if (!isHuman()) /*  K-Mod - automated actions are no longer done from this function.
 				Instead, they are done in CvGame::updateMoves */
 		{
-			bool bRepeat = true;
-			do
+			while (!m_unitPriorityHeap.empty())
 			{
-				std::vector<std::pair<int, int> > groupList;
-
-				pCurrUnitNode = headGroupCycleNode();
-				while (pCurrUnitNode != NULL)
+				AI_verifyMoveQueue();
+				CvUnit* const pUnit = AI_getNextMoveUnit();
+				if (pUnit != NULL)
 				{
-					CvSelectionGroupAI* pLoopSelectionGroup = AI_getSelectionGroup(
-						pCurrUnitNode->m_data);
-					/*
-					CvUnit* const pHeadUnit = pLoopSelectionGroup->getHeadUnit();
-					if (pHeadUnit && !shouldUnitMove(pHeadUnit))
-					{
-						deleteGroupCycleNode(pCurrUnitNode);
-						continue;
-					}
-					*/
-					const int iPriority = AI_movementPriority(*pLoopSelectionGroup);
-					// WTP: skip units in Europe / Africa
-					// TODO: Should be a group function!
-					CvUnit* const pHeadUnit = pLoopSelectionGroup->getHeadUnit();
+					CvSelectionGroupAI* const pGroup = static_cast<CvSelectionGroupAI*>(pUnit->getGroup());
 
-					groupList.push_back(std::make_pair(iPriority, pCurrUnitNode->m_data));
-					pCurrUnitNode = nextGroupCycleNode(pCurrUnitNode);
-				}
-				const int groupListSizeCnt = groupList.size();
-				const int getNumSelectionGroupsCnt = getNumSelectionGroups();
-				FAssert(groupList.size() == getNumSelectionGroups());
-
-				std::sort(groupList.begin(), groupList.end());
-				for (size_t i = 0; i < groupList.size(); i++)
-				{
-					CvSelectionGroupAI* pLoopSelectionGroup = AI_getSelectionGroup(
-						groupList[i].second);
-					/*	I think it's probably a good idea to activate automissions here,
-						so that the move priority is respected even for commands
-						issued on the previous turn. (This will allow reserve units to
-						guard workers that have already moved, rather than trying to
-						guard workers who are about to move to a different plot.) */
-					
-					if (pLoopSelectionGroup != NULL &&
-						!pLoopSelectionGroup->autoMissionInternal())
+					if ((pGroup != NULL) && shouldUnitMove(pUnit))
 					{
-						CvUnit* const pHeadUnit = pLoopSelectionGroup->getHeadUnit();
-						if (pHeadUnit /* && shouldUnitMove(pHeadUnit)*/)
-						{ 
-							if (pLoopSelectionGroup->isBusy() ||
-								pLoopSelectionGroup->isCargoBusy() ||
-								pLoopSelectionGroup->AI_update())
+						int iOriginalPriority = pUnit->AI_getMovePriority();
+						if (iOriginalPriority > 0)
+						{
+							if (!pGroup->autoMissionInternal())
 							{
-								bRepeat = false;
-								break;
+								if (!pGroup->isBusy() && !pGroup->isCargoBusy())
+								{
+									pGroup->AI_update();
+								}
+								else
+								{
+									m_iMoveQueuePasses++;
+									if (m_iMoveQueuePasses > 100)
+									{
+										FAssertMsg(false, "Forcing AI to abort turn");
+										return;
+									}
+									AI_addUnitToMoveQueue(pUnit);
+									return;
+								}
 							}
 						}
 					}
 				}
-
-				/*	one last trick that might save us a bit of time...
-					if the number of selection groups has increased,
-					then lets try to take care of the new groups right away.
-					(there might be a faster way to look for the new groups,
-					but I don't know it.) */
-				bRepeat = bRepeat && m_groupCycle.getLength() > (int)groupList.size();
-				/*	the repeat will do a stack of redundant checks,
-					but I still expect it to be much faster
-					than waiting for the next turnslice.
-					Note: I use m_groupCycle rather than getNumSelectionGroups
-					just in case there is a bug which causes the two to be out of sync.
-					(otherwise, if getNumSelectionGroups is bigger,
-					it could cause an infinite loop.) */
-			} while (bRepeat);
-			// K-Mod end
+			}
+			// TODO: We really need to ensure that we don't forget moving a group!
+			int iLoop;
+			for (CvSelectionGroup* pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
+			{
+				if (pLoopSelectionGroup->readyToMove())
+				{
+					pLoopSelectionGroup->pushMission(MISSION_SKIP);
+				}
+			}
 		}
 	}
 }

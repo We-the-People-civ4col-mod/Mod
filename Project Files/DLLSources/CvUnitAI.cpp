@@ -557,7 +557,7 @@ bool CvUnitAI::AI_europeUpdate()
 		}
 	}
 
-	//AI_setMovePriority(0);
+	AI_setMovePriority(0);
 	getGroup()->pushMission(MISSION_SKIP);
 	return false;
 }
@@ -6768,6 +6768,9 @@ int CvUnitAI::AI_getMovePriority() const
 
 void CvUnitAI::AI_setMovePriority(int iNewValue)
 {
+	// Set priority only if group head
+	//getGroup()
+
 	m_iMovePriority = iNewValue;
 
 	if (AI_getMovePriority() <= 0)
