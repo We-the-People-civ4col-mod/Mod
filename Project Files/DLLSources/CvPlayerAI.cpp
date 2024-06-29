@@ -774,7 +774,12 @@ void CvPlayerAI::AI_unitUpdate()
 							{
 								if (!pGroup->isBusy() && !pGroup->isCargoBusy())
 								{
-									pGroup->AI_update();
+									if (pGroup->AI_update())
+									{
+										//static_cast<CvUnitAI*>(pUnit)->m_bHasYielded = false;
+										CvUnit* const pUnit2 = pUnit; // Debugging
+										return;
+									}
 								}
 								else
 								{
@@ -792,14 +797,14 @@ void CvPlayerAI::AI_unitUpdate()
 					}
 				}
 			}
-			// TODO: We really need to ensure that we don't forget moving a group!
-			int iLoop;
-			for (CvSelectionGroup* pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
+		}
+		// TODO: We really need to ensure that we don't forget moving a group!
+		int iLoop;
+		for (CvSelectionGroup* pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
+		{
+			if (pLoopSelectionGroup->readyToMove(/*bAny*/true))
 			{
-				if (pLoopSelectionGroup->readyToMove())
-				{
-					pLoopSelectionGroup->pushMission(MISSION_SKIP);
-				}
+				pLoopSelectionGroup->pushMission(MISSION_SKIP);
 			}
 		}
 	}

@@ -855,14 +855,36 @@ void CvSelectionGroup::startMission()
 			case MISSION_SENTRY:
 			case MISSION_BOMBARD:
 			case MISSION_PILLAGE:
+				break;
 			case MISSION_FOUND:
+				if (pUnit->found())
+					bAction = true;
+				break;
 			case MISSION_JOIN_CITY:
+				if (pUnit->joinCity())
+					bAction = true;
+				break;
 			case MISSION_BUILD:
+				break;
 			case MISSION_LEAD:
-				//TAC Whaling, ray
+				/*
+				if (pUnit->lead(iData1))
+					bAction = true;
+				*/
+				break;
 			case MISSION_WHALING:
+				if (pUnit->isWhalingBoat() && pUnit->gatherResource())
+				{
+					//bAction = true;
+					bAction = true;
+				}
+				break;
 			case MISSION_FISHING:
-				//End TAC Whaling, ray
+				if (pUnit->isFishingBoat() && pUnit->gatherResource())
+				{
+					//bAction = true;
+					bAction = true;
+				}
 				break;
 
 			default:
@@ -888,17 +910,8 @@ void CvSelectionGroup::startMission()
 
 	if ((getNumUnits() > 0) && (headMissionQueueNode() != NULL))
 	{
-		if (false /* bAction */)
-		{
-			if (isHuman())
-			{
-				if (plot()->isVisibleToWatchingHuman())
-				{
-					updateMissionTimer();
-				}
-			}
-		}
-
+		if (bAction && isHuman() && getPlot().isVisibleToWatchingHuman())
+			updateMissionTimer();
 		if (!isBusy())
 		{
 			if (bDelete)
@@ -3249,7 +3262,8 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 			break;
 
 		case MISSION_FOUND:
-			if (pUnit->canFound(pPlot, bTestVisible))
+			if (pUnit->canFound(pPlot, bTestVisible) &&
+				(!bCheckMoves || pUnit->canMove()))
 			{
 				return true;
 			}
@@ -3864,7 +3878,7 @@ int CvSelectionGroup::getNumUnits() const
 	return m_units.getLength();
 }
 
-void CvSelectionGroup::mergeIntoGroup(CvSelectionGroup* pSelectionGroup)
+void CvSelectionGroup::mergeIntoGroup(CvSelectionGroup* pSelectionGroup, UnitAITypes eUnitAI)
 {
 	/*	merge groups, but make sure we do not change the head unit AI
 		this means that if a new unit is going to become the head,
@@ -3892,15 +3906,27 @@ void CvSelectionGroup::mergeIntoGroup(CvSelectionGroup* pSelectionGroup)
 			if (pNewHeadUnit != NULL && eUnitAI != eNewHeadUnitAI &&
 				pUnit->AI_groupFirstValInternal() > pNewHeadUnit->AI().AI_groupFirstValInternal())
 			{
-				/*	non-zero AI_unitValue means that this UnitAI is valid for this unit
-					(that is the check used everywhere) */
-				if (GET_PLAYER(getOwner()).AI_unitValue(
-					pUnit->getUnitType(), eNewHeadUnitAI, NULL) > 0)
+				if (eUnitAI == NO_UNITAI)
 				{
-					// this will remove pLoopUnit from the current group
-					pUnit->AI_setUnitAIType(eNewHeadUnitAI);
-					bChangedUnitAI = true;
-					break;
+					/*	non-zero AI_unitValue means that this UnitAI is valid for this unit
+						(that is the check used everywhere) */
+					if (GET_PLAYER(getOwner()).AI_unitValue(
+						pUnit->getUnitType(), eNewHeadUnitAI, NULL) > 0)
+					{
+						// this will remove pLoopUnit from the current group
+						pUnit->AI_setUnitAIType(eNewHeadUnitAI);
+						bChangedUnitAI = true;
+						break;
+					}
+				}
+				else
+				{	
+					if (pUnit->AI_getUnitAIType() != eUnitAI)
+					{
+						pUnit->AI_setUnitAIType(eUnitAI);
+						bChangedUnitAI = true;
+						break;
+					}
 				}
 			}
 			pUnit->joinGroup(pSelectionGroup);

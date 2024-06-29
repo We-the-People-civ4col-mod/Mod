@@ -89,7 +89,7 @@ void CvUnitAI::AI_reset()
 
 	AI_resetSavedData();
 	m_iLastAIChangeTurn= GC.getGameINLINE().getGameTurn();
-
+	m_bHasYielded = false; // No serialized
 }
 
 // AI_update returns true when we should abort the loop and wait until next slice
@@ -102,6 +102,8 @@ bool CvUnitAI::AI_update()
 
 	//getGroup()->resetPath();
 	CvSelectionGroup::path_finder.Reset();
+
+	m_bHasYielded = false;
 
 	// allow python to handle it
 	if (GC.getUSE_AI_UNIT_UPDATE_CALLBACK()) // K-Mod. block unused python callbacks
@@ -397,7 +399,11 @@ bool CvUnitAI::AI_update()
 			}
 		}
 	}
-	return false;
+	
+	if (m_bHasYielded)
+		return true;
+	else
+		return false;
 }
 
 // AI_update returns true when we should abort the loop and wait until next slice
@@ -758,7 +764,7 @@ int CvUnitAI::AI_groupFirstValInternal() const
 		break;
 
 	case UNITAI_SETTLER:
-		return 5;
+		return 50;
 		break;
 
 	case UNITAI_WORKER:
@@ -1168,7 +1174,7 @@ void CvUnitAI::AI_setUnitAIType(UnitAITypes eNewValue)
 			area()->changeNumAIUnits(getOwnerINLINE(), AI_getUnitAIType(), 1);
 
 			// If eNewValue is NO_UNITAI then the unit is joining a city and hence
-			// there is not need to join a new group
+			// there is no need to join a new group
 			if (eNewValue != NO_UNITAI)
 				joinGroup(NULL);
 
@@ -1589,23 +1595,6 @@ void CvUnitAI::AI_settlerMove()
 	bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getUnitDanger(this, 2, false, false);
 	int iMinFoundValue = (GC.getGame().getGameTurn() > 20) ? 1 : 2;
 
-	if (isNative())
-	{
-		if (AI_foundRange(7))
-		{
-			return;
-		}
-		if (AI_found())
-		{
-			return;
-		}
-		if (GC.getGame().getGameTurn() - AI_getLastAIChangeTurn() > 10)
-		{
-			AI_setUnitAIType(UNITAI_DEFENSIVE);
-			return;
-		}
-	}
-
 	if (isCargo())
 	{
 		if (AI_found(iMinFoundValue))
@@ -1621,6 +1610,27 @@ void CvUnitAI::AI_settlerMove()
 
 		getGroup()->pushMission(MISSION_SKIP);
 		return;
+	}
+	else
+	{
+
+	}
+
+	if (isNative())
+	{
+		if (AI_foundRange(7))
+		{
+			return;
+		}
+		if (AI_found())
+		{
+			return;
+		}
+		if (GC.getGame().getGameTurn() - AI_getLastAIChangeTurn() > 10)
+		{
+			AI_setUnitAIType(UNITAI_DEFENSIVE);
+			return;
+		}
 	}
 
 	if (!isCargo() && (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0) && (plot()->getNearestEurope() != NO_EUROPE))
@@ -1656,6 +1666,53 @@ void CvUnitAI::AI_settlerMove()
 			return;
 		}
 	}
+
+	// K-Mod: sometimes an unescorted settler will join up with an escort mid-mission..
+	//if (iAreaBestFoundValue + iOtherBestFoundValue > 0) // advc.040: But surely not if we have nowhere to settle
+	{
+		CvPlayerAI const& kOwner = GET_PLAYER(getOwner()); // K-Mod
+
+		FOR_EACH_GROUPAI_VAR(pLoopGroup, kOwner)
+		{
+			if (pLoopGroup == getGroup() || pLoopGroup->getNumUnits() <= 0)
+				continue;
+			if (pLoopGroup->AI_getMissionAIUnit() == this &&
+				pLoopGroup->AI_getMissionAIType() == MISSIONAI_GROUP)
+			{
+				int iPathTurns = MAX_INT;
+				generatePath(&pLoopGroup->getPlot(), MOVE_NO_ENEMY_TERRITORY, true, &iPathTurns, 2);
+				if (iPathTurns > 2)
+					continue;
+				CvPlot& kEndTurnPlot = *getPathEndTurnPlot();
+				if (at(kEndTurnPlot))
+				{
+					//getGroup()->pushMission(MISSION_SKIP, 0, 0, 0, false, false, MISSIONAI_GROUP, pEndTurnPlot);
+					pLoopGroup->mergeIntoGroup(getGroup());
+					FAssert(getGroup()->getNumUnits() > 1);
+					FAssert(getGroup()->getHeadUnitAIType() == UNITAI_SETTLER);
+				}
+				else
+				{
+					CvSelectionGroupAI* pGroup = AI_getGroup(); // advc
+					// if we were on our way to a site, keep the current mission plot.
+					if (pGroup->AI_getMissionAIType() == MISSIONAI_FOUND &&
+						pGroup->AI_getMissionAIPlot() != NULL)
+					{
+						pushGroupMoveTo(kEndTurnPlot, static_cast<MovementFlags>(MOVE_NO_ENEMY_TERRITORY), false, false,
+							MISSIONAI_FOUND, pGroup->AI_getMissionAIPlot());
+					}
+					else
+					{
+						pushGroupMoveTo(kEndTurnPlot, static_cast<MovementFlags>(MOVE_NO_ENEMY_TERRITORY), false, false,
+							MISSIONAI_GROUP, NULL, pLoopGroup->getHeadUnit());
+					}
+				}
+				return;
+			}
+		}
+	} // K-Mod end
+
+
 
 	// Settlers should always be on their way towards a spot to settle
 	// So if we get here, this is evidence that we may need to be picked
@@ -2391,6 +2448,12 @@ void CvUnitAI::AI_generalMove()
 
 void CvUnitAI::AI_counterMove()
 {
+	if (isCargo())
+	{
+		AI_handleEmbarkedMilitary();
+		return;
+	}
+
 	PROFILE_FUNC();
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	bool bDanger = kOwner.AI_getPlotDanger(plot(), 2, false, true);
@@ -2422,26 +2485,6 @@ void CvUnitAI::AI_counterMove()
 				}
 			}
 		}
-	}
-
-	if (isCargo())
-	{
-		// TAC - AI Counter units - koma13 - START
-		/*
-		if (AI_guardCityMinDefender())
-		{
-			return;
-		}
-		*/
-		// TAC - AI Counter units - koma13 - END
-
-		if (AI_unloadWhereNeeded())
-		{
-			return;
-		}
-
-		getGroup()->pushMission(MISSION_SKIP);
-		return;
 	}
 
 	CvPlot* pMissionPlot = getGroup()->AI_getMissionAIPlot();
@@ -6315,6 +6358,7 @@ bool CvUnitAI::AI_deliverUnits(UnitAITypes eUnitAI)
 				if (pLoopUnit->getGroup()->AI_getMissionAIType() != NO_MISSIONAI)
 				{
 					CvPlot* pDestination = pLoopUnit->getGroup()->AI_getMissionAIPlot();
+					FAssert(!pDestination->isWater());
 
 					if ((pDestination != NULL) && (pDestination != plot())) //Don't humor foolishness x[.
 					{
@@ -6340,6 +6384,32 @@ bool CvUnitAI::AI_deliverUnits(UnitAITypes eUnitAI)
 		}
 	}
 
+	// On the initial turn the ship may have move before the cargo which is  
+	if (pBestPlot == NULL)
+	{
+		//m_bHasYielded = true; // Mark the unit as waiting for a higher priority unit to move (this will 
+		return false;
+	}
+
+	bool ok = false;
+
+	// Check if pBestPlot is a city or coastal land
+
+	if (pBestPlot->isCity())
+		ok = true;
+
+	if (!ok)
+	{
+		FOR_EACH_ADJ_PLOT(pBestPlot,
+		{
+			if (pAdjacentPlot->isCoastalLand())
+			{
+				ok = true;
+				break;
+			}
+		})
+	}
+	FAssertMsg(ok, "Units cannot be delivered to a plot that lacks a city or coastal access!")
 
 	/*
 	if (iBestValue > 0)
@@ -6366,10 +6436,17 @@ bool CvUnitAI::AI_deliverUnits(UnitAITypes eUnitAI)
 	{
 		if (atPlot(pBestPlot))
 		{
-			if (AI_wakeCargo(NO_UNITAI, AI_getMovePriority() + 1))
+			// BUG: Only wake the cargo if we're on land or we're adjacent to (coastal) land that the unit can move into!
+			// TODO: Check return value!
+			if (ok && AI_wakeCargo(NO_UNITAI, AI_getMovePriority() + 1))
 			{
 				// Need to yield here to let the cargo take its turn
 				return true;
+			}
+			else if (!ok)
+			{
+				// In case the unit fails to act, just unload everything
+				unloadAll(); // TODO: what about adjacent plots ?
 			}
 			return false;
 		}
@@ -6516,11 +6593,15 @@ bool CvUnitAI::AI_wakeCargo(UnitAITypes eUnitAI, int iPriority)
 		{
 			if (eUnitAI == NO_UNITAI || pLoopUnit->AI_getUnitAIType() == eUnitAI)
 			{
+				// TODO: Consider enabling this check to avoid a possible endless loop if the awakened
+				// units fail to act
 				//if (pLoopUnit->canMove())	// TAC - AI Improved Naval AI - koma13
 				{
-				pLoopUnit->AI_setMovePriority(AI_getMovePriority() + 1);
+					pLoopUnit->AI_setMovePriority(AI_getMovePriority() + 1);
 				}
 				bWaitForCargo = true;
+				m_bHasYielded = true; // Mark the unit as waiting for a higher priority unit to move (this will 
+				// prevent AI_update() to be called again for this unit)
 			}
 		}
 	}
@@ -7473,7 +7554,7 @@ bool CvUnitAI::AI_unloadWhereNeeded(int iMaxPath)
 		else
 		{ 
 			getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_REINFORCE, pBestJoinPlot);
-			AI_setMovePriority(1);
+			//AI_setMovePriority(1);
 			return true;
 		}
 	}
@@ -14359,7 +14440,7 @@ int CvUnitAI::AI_foundValue(CvPlot* pPlot)
 }
 
 // Returns true if a mission was pushed...
-bool CvUnitAI::AI_found(int iMinValue)
+bool CvUnitAI::AI_found(int iMinValue, MovementFlags eFlags)
 {
 	PROFILE_FUNC();
 
@@ -14383,58 +14464,47 @@ bool CvUnitAI::AI_found(int iMinValue)
 		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
 		if (pLoopPlot->isRevealed(getTeam(), false) && ((pTransportUnit != NULL) || AI_plotValid(pLoopPlot)))
 		{
-			if (canFound(pLoopPlot))
+			if (!canFound(pLoopPlot))
+				continue;
+			int iValue = AI_foundValue(pLoopPlot);
+			if (iValue <= iMinValue)
+				continue;
+			if (pLoopPlot->isVisibleEnemyUnit(this))
+				continue;		
+			if (!(kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_FOUND, getGroup(), 0) == 0))
+				continue;
+			if (isCargo() && !pLoopPlot->isCoastalLand())
+				continue;
+
+			int iPathTurns = 0;
+			bool bValid = atPlot(pLoopPlot);
+			bool bTransport = false;
+
+			if (!bValid)
 			{
-				int iValue = AI_foundValue(pLoopPlot);
-
-				if (iValue > iMinValue)
+				bTransport = pTransportUnit != NULL;
+				if (bTransport)
 				{
-					if (!(pLoopPlot->isVisibleEnemyUnit(this)))
-					{
-						if (kOwner.AI_plotTargetMissionAIs(pLoopPlot, MISSIONAI_FOUND, getGroup(), 0) == 0)
-						{
-							int iPathTurns = 0;
-							bool bValid = atPlot(pLoopPlot);
-							bool bTransport = false;
+					bValid = pTransportUnit->generatePath(pLoopPlot, eFlags, false, &iPathTurns);
+				}
+				else
+				{
+					// Due to the step <= 1 check, we know that we're adjacent to land. Check if we can move into the plot
+					//bValid = canMoveInto(pLoopPlot); NO, let try for an amphibious landing first 
+					bValid = generatePath(pLoopPlot, eFlags, false, &iPathTurns);
+				}
+			}
 
-							if (!bValid)
-							{
-								bTransport = pTransportUnit != NULL;
-								if (bTransport && canMove())
-								{
-									if (stepDistance(getX_INLINE(), getY_INLINE(), pLoopPlot->getX_INLINE(), pLoopPlot->getY_INLINE()) <= 1)
-									{
-										bTransport = false;
-									}
-								}
-								if (bTransport)
-								{
-									bValid = pTransportUnit->generatePath(pLoopPlot, 0, bTransportPath, &iPathTurns);
-								}
-								else
-								{
-									// Due to the step <= 1 check, we know that we're adjacent to land. Check if we can move into the plot
-									//bValid = canMoveInto(pLoopPlot);
-
-									bValid = generatePath(pLoopPlot, 0, !bTransportPath, &iPathTurns);
-								}
-								bTransportPath = bTransport;
-							}
-
-							if (bValid)
-							{
-								iValue *= 10;
-								iValue /= 5 + iPathTurns;
-								if (iValue > iBestValue)
-								{
-									iBestValue = iValue;
-									pBestPlot = atPlot(pLoopPlot) ? pLoopPlot : (bTransport ? pTransportUnit->getPathEndTurnPlot() : getPathEndTurnPlot());
-									pBestFoundPlot = pLoopPlot;
-									bBestIsTransport = bTransport;
-								}
-							}
-						}
-					}
+			if (bValid)
+			{
+				iValue *= 10;
+				iValue /= 5 + iPathTurns;
+				if (iValue > iBestValue)
+				{
+					iBestValue = iValue;
+					pBestPlot = atPlot(pLoopPlot) ? pLoopPlot : (bTransport ? pTransportUnit->getPathEndTurnPlot() : getPathEndTurnPlot());
+					pBestFoundPlot = pLoopPlot;
+					bBestIsTransport = bTransport;
 				}
 			}
 		}
@@ -14444,7 +14514,9 @@ bool CvUnitAI::AI_found(int iMinValue)
 	{
 		if (bBestIsTransport)
 		{
-			getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_FOUND, pBestFoundPlot);
+			// Let the ship do an amphibious landing
+			pTransportUnit->getGroup()->pushMission(MISSION_MOVE_TO, pBestFoundPlot->getX_INLINE(), pBestFoundPlot->getY_INLINE(), 
+				0, false, false, MISSIONAI_FOUND, pBestFoundPlot);
 			return true;
 		}
 		else
@@ -20622,23 +20694,6 @@ void CvUnitAI::AI_cityDefenseMove()
 	if (isCargo())
 	{
 		AI_handleEmbarkedMilitary();
-		return;
-	}
-
-	// If this unit is cargo, command the transport to a suitable target location
-	if (AI_isCargoOnCivilianTransport())
-	{
-		if (AI_cargoGuardCityMinDefender())
-		{
-			return;
-		}
-
-		if (AI_unloadWhereNeeded())
-		{
-			return;
-		}
-
-		getGroup()->pushMission(MISSION_SKIP);
 		return;
 	}
 

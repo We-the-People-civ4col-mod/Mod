@@ -114,6 +114,9 @@ public:
 		int iCurrentHP = -1, bool bAssumePromotion = false) const; // advc.139
 	// </advc.159>
 
+	// TODO: Add getter and make protected
+	bool m_bHasYielded;
+
 protected:
 
 	void AI_resetSavedData();
@@ -130,7 +133,7 @@ protected:
 	int m_iAutomatedAbortTurn;
 	
 	mutable ProfessionTypes m_eIdealProfessionCache;
-
+	
 	// < JAnimals Mod Start >
 	void AI_animalMove();
 	bool AI_animalAttack();
@@ -353,7 +356,7 @@ protected:
 	bool AI_hostileShuffle();
 	bool AI_wanderAroundAimlessly();
 	int AI_foundValue(CvPlot* pPlot);
-	bool AI_found(int iMinValue = 1);
+	bool AI_found(int iMinValue = 1, MovementFlags eFlags = NO_MOVEMENT_FLAGS);
 	bool AI_foundRange(int iRange, bool bFollow = false);
 	bool AI_joinCityBrave();
 	bool AI_joinCity(int iMaxPath = MAX_INT);

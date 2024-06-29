@@ -378,12 +378,19 @@ bool shouldUnitMove(const CvUnit* pUnit)
 	if (pUnit->isTempUnit())
 		return false;
 
-	/*
 	if (pUnit->isDead() || pUnit->isDelayedDeath())
-	{
 		return false;
-	}
-	*/
+
+	// Unit that are not the head of its group should not move independently
+	CvSelectionGroup const* pGroup = pUnit->getGroup();
+
+	if (pGroup == NULL)
+		return false;
+
+	if (pGroup->getHeadUnit() != pUnit)
+		return false;
+
+	// Note: unit that have travelling state to/from a port is updated by the unit turn timer and should not move
 	if (!pUnit->isOnMap())
 	{
 		if (pUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE || pUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
@@ -2321,6 +2328,20 @@ void postLoadGameFixes()
 	{
 		kMap.plotByIndexINLINE(iI)->postLoadFixes();
 	}
+
+	// teams
+	
+	// Init strength memory
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	{
+		// <advc.158>
+		if (GET_TEAM(eTeam).isAlive())
+		{
+			GET_TEAM(eTeam).AI_strengthMemory().init(
+				GC.getMap().numPlots(), GET_TEAM(eTeam).getID());
+		}
+	}
+
 
 	// deal with players
 

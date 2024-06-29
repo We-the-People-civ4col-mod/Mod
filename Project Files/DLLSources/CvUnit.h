@@ -419,7 +419,7 @@ public:
 	bool isInGroup() const;
 	DllExport bool isGroupHead() const;
 	DllExport CvSelectionGroup* getGroup() const;
-	bool canJoinGroup(const CvPlot* pPlot, CvSelectionGroup* pSelectionGroup) const;
+	bool canJoinGroup(const CvPlot* pPlot, CvSelectionGroup const* pSelectionGroup) const;
 	DllExport void joinGroup(CvSelectionGroup* pSelectionGroup, bool bRemoveSelected = false, bool bRejoin = true);
 	DllExport int getHotKeyNumber();
 	void setHotKeyNumber(int iNewValue);
@@ -436,7 +436,7 @@ public:
 	// R&R, ray, Natives Trading - START
 	void setYieldForNativeTrade(YieldTypes nativeTradeYield);
 	void setAmountForNativeTrade(int nativeTradeAmount);
-	YieldTypes getYieldForNativeTrade() const;
+	YieldTypes getYieldForNativeTrade() const;	
 	int getAmountForNativeTrade() const;
 	// R&R, ray, Natives Trading - END
 	DllExport int getX() const;

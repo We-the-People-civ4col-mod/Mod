@@ -10489,155 +10489,136 @@ CvSelectionGroup* CvUnit::getGroup() const
 }
 
 
-bool CvUnit::canJoinGroup(const CvPlot* pPlot, CvSelectionGroup* pSelectionGroup) const
+bool CvUnit::canJoinGroup(const CvPlot* pPlot, CvSelectionGroup const* pSelectionGroup) const // advc: const pSelectionGroup
 {
-	CvUnit* pHeadUnit;
-
 	// do not allow someone to join a group that is about to be split apart
 	// this prevents a case of a never-ending turn
-	if (pSelectionGroup->AI_isForceSeparate())
-	{
+	if (pSelectionGroup->AI().AI_isForceSeparateInternal())
 		return false;
-	}
 
-	if (pSelectionGroup->getOwnerINLINE() == NO_PLAYER)
+	if (pSelectionGroup->getOwner() == NO_PLAYER)
 	{
-		pHeadUnit = pSelectionGroup->getHeadUnit();
-
+		CvUnit const* pHeadUnit = pSelectionGroup->getHeadUnit();
 		if (pHeadUnit != NULL)
 		{
-			if (pHeadUnit->getOwnerINLINE() != getOwnerINLINE())
-			{
+			if (pHeadUnit->getOwner() != getOwner())
 				return false;
-			}
 		}
 	}
 	else
 	{
-		if (pSelectionGroup->getOwnerINLINE() != getOwnerINLINE())
-		{
+		if (pSelectionGroup->getOwner() != getOwner())
 			return false;
-		}
 	}
 
 	if (pSelectionGroup->getNumUnits() > 0)
 	{
-		if (!(pSelectionGroup->atPlot(pPlot)))
-		{
+		if (!pSelectionGroup->atPlot(pPlot))
 			return false;
-		}
-
 		if (pSelectionGroup->getDomainType() != getDomainType())
-		{
 			return false;
-		}
 	}
 
 	return true;
 }
 
-
+// K-Mod has edited this function to increase readability and robustness
 void CvUnit::joinGroup(CvSelectionGroup* pSelectionGroup, bool bRemoveSelected, bool bRejoin)
 {
-	CvSelectionGroup* pOldSelectionGroup;
-	CvSelectionGroup* pNewSelectionGroup;
-	CvPlot* pPlot;
+	CvSelectionGroup* pOldSelectionGroup = GET_PLAYER(getOwner()).getSelectionGroup(getGroupID());
 
-	pOldSelectionGroup = GET_PLAYER(getOwnerINLINE()).getSelectionGroup(getGroupID());
+	if (pOldSelectionGroup != NULL && pSelectionGroup == pOldSelectionGroup)
+		return; // attempting to join the group we are already in
 
-	if ((pSelectionGroup != pOldSelectionGroup) || (pOldSelectionGroup == NULL))
+	CvPlot* pPlot = plot(); // advc (comment): I suppose this could be NULL(?)
+	CvSelectionGroup* pNewSelectionGroup = pSelectionGroup;
+
+	if (pNewSelectionGroup == NULL && bRejoin)
 	{
-		pPlot = plot();
+		pNewSelectionGroup = GET_PLAYER(getOwner()).addSelectionGroup();
+		pNewSelectionGroup->init(pNewSelectionGroup->getID(), getOwner());
+	}
 
-		if (pSelectionGroup != NULL)
+	if (pNewSelectionGroup == NULL || canJoinGroup(pPlot, pNewSelectionGroup))
+	{
+		if (pOldSelectionGroup != NULL)
 		{
-			pNewSelectionGroup = pSelectionGroup;
-		}
-		else
-		{
-			if (bRejoin)
+			bool bWasHead = false;
+			if (!isHuman())
 			{
-				pNewSelectionGroup = GET_PLAYER(getOwnerINLINE()).addSelectionGroup();
-				pNewSelectionGroup->init(pNewSelectionGroup->getID(), getOwnerINLINE());
-			}
-			else
-			{
-				pNewSelectionGroup = NULL;
-			}
-		}
-
-		if ((pNewSelectionGroup == NULL) || canJoinGroup(plot(), pNewSelectionGroup))
-		{
-			if (pOldSelectionGroup != NULL)
-			{
-				bool bWasHead = false;
-				if (!isHuman())
+				if (pOldSelectionGroup->getNumUnits() > 1)
 				{
-					if (pOldSelectionGroup->getNumUnits() > 1)
-					{
-						if (pOldSelectionGroup->getHeadUnit() == this)
-						{
-							bWasHead = true;
-						}
-					}
-				}
-
-				pOldSelectionGroup->removeUnit(this);
-
-				// if we were the head, if the head unitAI changed, then force the group to separate (non-humans)
-				if (bWasHead)
-				{
-					FAssert(pOldSelectionGroup->getHeadUnit() != NULL);
-					if (pOldSelectionGroup->getHeadUnit()->AI_getUnitAIType() != AI_getUnitAIType())
-					{
-						pOldSelectionGroup->AI_makeForceSeparate();
-					}
+					if (pOldSelectionGroup->getHeadUnit() == this)
+						bWasHead = true;
 				}
 			}
 
-			if ((pNewSelectionGroup != NULL) && pNewSelectionGroup->addUnit(this, !isOnMap()))
-			{
-				m_iGroupID = pNewSelectionGroup->getID();
-			}
-			else
-			{
-				m_iGroupID = FFreeList::INVALID_INDEX;
-			}
+			pOldSelectionGroup->removeUnit(this);
 
-			if (getGroup() != NULL)
+			// if we were the head, if the head unitAI changed, then force the group to separate (non-humans)
+			if (bWasHead)
 			{
-				if (getGroup()->getNumUnits() > 1)
+				FAssert(pOldSelectionGroup->getHeadUnit() != NULL);
+				if (pOldSelectionGroup->getHeadUnit()->AI_getUnitAIType() != AI_getUnitAIType())
+					pOldSelectionGroup->AI().AI_setForceSeparate();
+			}
+		}
+
+		if (pNewSelectionGroup != NULL && pNewSelectionGroup->addUnit(this, false))
+			m_iGroupID = pNewSelectionGroup->getID();
+		else m_iGroupID = FFreeList::INVALID_INDEX;
+
+		if (getGroup() != NULL)
+		{
+			// K-Mod
+			if (isGroupHead())
+				GET_PLAYER(getOwner()).updateGroupCycle(*getGroup());
+			// K-Mod end
+			if (getGroup()->getNumUnits() > 1)
+			{
+				//getGroup()->setActivityType(ACTIVITY_AWAKE); // BtS
+				/*	K-Mod
+					For the AI, only wake the group in particular circumstances.
+					This is to avoid AI deadlocks where they just keep grouping
+					and ungroup indefinitely.
+					If the activity type is not changed at all, then that would
+					enable exploits such as adding new units to air patrol groups
+					to bypass the movement conditions. */
+				if (isHuman())
+				{
+					getGroup()->setAutomateType(NO_AUTOMATE);
+					getGroup()->setActivityType(ACTIVITY_AWAKE);
+					getGroup()->clearMissionQueue();
+					/*	K-Mod note. the mission queue has to be cleared because,
+						when the shift key is released, the exe automatically
+						sends the autoMission net message.
+						(if the mission queue isn't cleared, the units will immediately
+						begin their message whenever units are added using shift.) */
+				}
+				else if (getGroup()->AI().AI_getMissionAIType() == MISSIONAI_GROUP ||
+					getLastMoveTurn() == GC.getGame().getTurnSlice())
 				{
 					getGroup()->setActivityType(ACTIVITY_AWAKE);
 				}
-				else
-				{
-					GET_PLAYER(getOwnerINLINE()).updateGroupCycle(this);
-				}
+				else if (getGroup()->getActivityType() != ACTIVITY_AWAKE)
+					getGroup()->setActivityType(ACTIVITY_HOLD); // don't let them cheat.
+				// K-Mod end
 			}
-
-			if (getTeam() == GC.getGameINLINE().getActiveTeam())
-			{
-				if (pPlot != NULL)
-				{
-					pPlot->setFlagDirty(true);
-				}
-			}
-
-			if (pPlot == gDLL->getInterfaceIFace()->getSelectionPlot())
-			{
-				gDLL->getInterfaceIFace()->setDirty(PlotListButtons_DIRTY_BIT, true);
-			}
+			//else GET_PLAYER(getOwner()).updateGroupCycle(this); // BtS
 		}
 
-		if (bRemoveSelected)
+		if (getTeam() == GC.getGameINLINE().getActiveTeam())
 		{
-			if (IsSelected())
-			{
-				gDLL->getInterfaceIFace()->removeFromSelectionList(this);
-			}
+			if (pPlot != NULL)
+				pPlot->setFlagDirty(true);
 		}
+
+		if (pPlot == gDLL->getInterfaceIFace()->getSelectionPlot())
+			gDLL->getInterfaceIFace()->setDirty(PlotListButtons_DIRTY_BIT, true);
 	}
+
+	if (bRemoveSelected && IsSelected())
+		gDLL->getInterfaceIFace()->removeFromSelectionList(this);
 }
 
 
