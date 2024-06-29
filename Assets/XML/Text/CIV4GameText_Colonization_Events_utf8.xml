@@ -5691,7 +5691,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_START</Tag>
-		<English>Influential merchants suggest sending an [COLOR_UNIT_TEXT]envoy[COLOR_REVERT] to Europe to negotiate with the king about the tense situation in the colonies.</English>
+		<English>Influential merchants suggest sending an [COLOR_UNIT_TEXT]envoy[COLOR_REVERT] to Europe to negotiate with the King about the tense situation in the colonies.</English>
 		<German>Einflussreiche Kaufleute schlagen vor, einen [COLOR_UNIT_TEXT]Gesandten[COLOR_REVERT] nach Europa zu schicken, um mit dem König über die angespannte Situation in den Kolonien zu verhandeln.</German>
 		<Russian>Влиятельные торговцы предлагают отправить [COLOR_UNIT_TEXT]посланника[COLOR_REVERT] в Европу для переговоров с Королём о напряженной ситуации в колониях.</Russian>
 	</TEXT>
@@ -5703,73 +5703,73 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_START</Tag>
-		<English>Milord, we should definitely send an envoy to Europe who can speak directly to the King about our situation. It would be best to send a nobleman who knows how to talk to a King. It would help if we can at least negotiate tax concessions.</English>
+		<English>Milord, we should definitely send an envoy to Europe to speak directly to the King about our situation, ideally a nobleman who knows how to talk to a King. At the very least we need tax concessions.</English>
 		<German>Milord, wir sollten unbedingt einen Gesandten nach Europa schicken, der direkt mit dem König über die Situation sprechen kann. Schickt am besten einen [COLOR_UNIT_TEXT]Adligen[COLOR_REVERT], der weiß wie man mit einem König spricht. Vielleicht können wir wenigstens Steuererleichterungen herausschlagen.</German>
 		<Russian>Милорд, нам обязательно следует отправить в Европу посланника, который сможет поговорить о ситуации напрямую с Королём. Лучше всего было бы послать дворянина, который знает, как правильно разговаривать с монархом. Возможно, нам даже удастся договориться о налоговых льготах.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_START_DONE</Tag>
-		<English>Milord, the nobleman is now at the harbor and ready to sail to Europe. Should we really dare to make demands of the king through an envoy or would we rather remain loyal subjects? However, this could lead to unrest.</English>
+		<English>Milord, the nobleman is now at the harbour, ready to sail for Europe. Do we really dare to make demands on the King or are we better off as humble and obedient subjects? Timidity will probably lead to unrest.</English>
 		<German>Milord, der Adlige steht nun am Hafen und ist bereit zur Überfahrt nach Europa. Sollen wir es wirklich wagen, dem König durch einen Gesandten Forderungen zu stellen oder wollen wir doch lieber die treuen Untertanen bleiben? Das könnte allerdings zu Unruhen führen.</German>
 		<Russian>Милорд, дворянин сейчас находится в гавани и готов отплыть в Европу. Действительно ли мы готовы предъявлять требования Королю или нам лучше остаться верными подданными Его Величества? Боюсь, однако, в любом случае нам надо быть готовыми к народным волнениям.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_START_1</Tag>
-		<English>We will see. The merchants are only concerned about their profits. I'm still in the service of the king. But well, I'll think about it. It's no use to anyone if there's unrest in the colonies.</English>
+		<English>We'll see. The merchants are mainly concerned about their profits. As for me, I still serve the King. Let me think about it. Unrest here is no good for anyone.</English>
 		<German>Wir werden sehen. Die Handelsherren sind doch nur um ihren Profit besorgt. Ich stehe immer noch im Dienste des Königs. Aber gut, ich werde darüber nachdenken. Es nützt niemandem, wenn in den Kolonien Unruhen herrschen.</German>
 		<Russian>Да, непростой вопрос. Торговцы озабочены только своей прибылью... А я все еще на службе у Короля... Думаю, никому не будет никакой пользы, если в колониях начнутся волнения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_START_FAIL</Tag>
-		<English>Milord, you have waited too long - or did you not want to send an envoy to Europe? That may cost us dearly. There is more and more unrest in the colonies and you will be seen as loyal to the king. Think carefully about what you do next!</English>
+		<English>Milord, you waited too long - or did you just not want to send an envoy to Europe? Your dithering may cost us dearly. Amid unrest in the colonies you're still seen as loyal to the King. Think hard about what you do next!</English>
 		<German>Milord, Ihr habt zu lange gewartet - oder wolltet Ihr gar keinen Gesandten nach Europa schicken? Das wird uns vielleicht noch teuer zu stehen kommen. In den Kolonien gibt es immer mehr Unruhen und man wird Euch als königstreu ansehen. Überlegt gut, was Ihr als nächstes tut!</German>
 		<Russian>Милорд, вы слишком долго ждали – или вы вообще не хотели отправлять посланника в Европу? Это может стоить нам очень дорого. В колониях растут беспорядки и вас будут считать лояльным Королю. Хорошенько подумайте, что нам делать дальше!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DONE_1</Tag>
-		<English>Yes, definitely. But we don't do things by halves. It's time the king took our concerns seriously. The envoy should not be squeamish. We know what the king and the treasury have in store for us. If necessary, we will now go into confrontation!</English>
+		<English>Yes, definitely. But we can't do things by halves. The King has to take our concerns seriously. The envoy mustn't be squeamish. We've seen what the King's treasury wants from us. If necessary, we're ready to fight!</English>
 		<German>Ja, auf jeden Fall. aber wir machen keine halben Sachen. Es wird Zeit, dass der König unsere Sorgen ernst nimmt. Der Gesandte soll nicht zimperlich sein. Wir wissen, was der König und die Staatskasse an uns haben. Wenn nötig gehen wir nun auf Konfrontation!</German>
 		<Russian>Да, конечно. Но мы не делаем дела наполовину. Пришло время Королю серьёзно отнестись к нашим опасениям. Посланник не должен быть слабовольным. Мы знаем, что готовят нам Король и Парламент. Если нас вынудят, теперь мы пойдем на конфронтацию!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_1</Tag>
-		<English>An envoy was entrusted with the delicate task of wringing tax concessions from the king without offending him.</English>
+		<English>An envoy has been entrusted with the delicate task of wringing tax concessions from the King without offending him.</English>
 		<German>Ein Gesandter wurde mit der heiklen Aufgabe betraut, dem König Steuererleichterungen abzuringen und ihn dabei möglichst nicht zu beleidigen.</German>
 		<Russian>На посланника была возложена деликатная задача — добиться от Короля налоговых уступок, не оскорбив Его Величества.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DONE_2</Tag>
-		<English>Yes, ship the nobleman to Europe. But we certainly don't want to provoke the king. We just want the envoy to create a good atmosphere, assure the king of our loyalty, and then lobby for trade and tax relief. That will have to be enough!</English>
+		<English>Yes, send the nobleman to Europe. We have no intention of provoking the King. All we want is to create a good atmosphere, assure the King of our loyalty, and then lobby for trade and tax relief. That will be enough.</English>
 		<German>Ja, verschifft den Adligen nach Europa. Aber wir wollen den König auf keinen Fall provozieren. Der Gesandte soll nur ein wenig für gute Stimmung sorgen, dem König unsere Treue versichern und sich für den Handel und dann erst für Steuererleichterungen einsetzen. Dies muss reichen!</German>
 		<Russian>Да, отправьте дворянина в Европу. Но мы, конечно, не хотим провоцировать Короля. Нам нужно, чтобы посланник создал хорошую атмосферу на приёме, заверил Его Величество в нашей лояльности, а затем добился торговых и налоговых льгот. Этого должно быть достаточно для процветания колоний.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_2</Tag>
-		<English>An envoy was entrusted with the delicate task of talking to the king about the conditions for overseas trade and, if possible, not offending him in the process.</English>
+		<English>An envoy has been entrusted with the delicate task of talking to the King about our terms for overseas trade, at the same time taking great pains not to offend His Majesty in any way.</English>
 		<German>Ein Gesandter wurde mit der heiklen Aufgabe betraut, mit dem König über die Bedingungen für den Überseehandel zu sprechen und ihn dabei möglichst nicht zu beleidigen.</German>
 		<Russian>На посланника была возложена деликатная задача переговорить с Королем об условиях заграничной торговли и, по возможности, при этом не обидеть Его Величество.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DONE_3</Tag>
-		<English>I'm not going to make myself even more unpopular with the king! The nobleman should go to his mistress. Long live the king! I will continue to assert the king's power here.</English>
+		<English>I'm not going to make myself even more unpopular with the King! The nobleman can go back to spending time with his mistress. Long live His Majesty! I will continue to assert the King's power here.</English>
 		<German>Von wegen, ich mache mich beim König doch nicht noch unbeliebter! Der Adlige soll sich zu seiner Mätresse scheren. Es lebe der König! Ich werde die Macht des Königs hier weiter durchsetzen.</German>
 		<Russian>Я не собираюсь делать себя посмешищем в глазах Короля! Дворянин может отправиться к своей любовнице или куда пожелает его деятельная натура. Да здравствует Король! А я продолжу укреплять здесь королевскую власть.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_3</Tag>
-		<English>It was decided not to send an envoy to Europe. This will further inflame the mood against the king and his loyalists in the colonies. Who knows what will happen now.</English>
+		<English>It's been decided not to send an envoy to Europe. This will further inflame the mood against the King and his loyalists in the colonies. Who knows what happens now?</English>
 		<German>Es wurde darauf verzichtet einen Gesandten nach Europa zu senden. Dies wird die Stimmung gegen den König und seine Getreuen in den Kolonien noch weiter anheizen. Wer weiß was jetzt passiert.</German>
 		<Russian>Было решено не отправлять посланника в Европу. Это спровоцирует еще больше беспорядков против Короля и его сторонников в колониях. Кто знает, что произойдет дальше...</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_1A</Tag>
-		<English>The envoy is back from Europe and has made himself very unpopular. The king has become even angrier and will continue to raise taxes. This will lead to more unrest.</English>
+		<English>The envoy is back from Europe and has made himself very unpopular. The King is even angrier and says He'll continue to raise taxes. Unrest will only get worse.</English>
 		<German>Der Gesandte ist aus Europa zurück und hat sich mächtig unbeliebt gemacht. Der König ist noch wütender geworden und wird die Steuern weiter erhöhen. Das wird zu mehr Unruhen führen.</German>
 		<Russian>Посол вернулся из Европы и стал крайне непопулярным. Король разозлился еще больше и пригрозил продолжать повышать налоги. Это приведёт к еще большим беспорядкам в колониях.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_1B</Tag>
-		<English>The envoy is back from Europe and has managed to calm things down a little. But the king is still more annoyed than ever and will continue to raise taxes. So the trip has achieved nothing except to consolidate his position.</English>
+		<English>The envoy is back from Europe. Even though he managed to calm things down a little, the King will continue to raise taxes. In effect the trip has simply solidified His position.</English>
 		<German>Der Gesandte ist aus Europa zurück und konnte die Wogen ein wenig glätten. Aber der König ist trotzdem mehr verärgert als je zuvor und wird die Steuern weiter erhöhen. Die Reise hat also nichts gebracht, außer die Standtpunkte zu festigen.</German>
 		<Russian>Посол вернулся из Европы и сумел немного разрядить обстановку. Но король по-прежнему раздражен и продолжит повышать налоги. Так что поездка не принесла ничего, кроме укрепления его позиций.</Russian>
 	</TEXT>
@@ -5787,13 +5787,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_ROYAL_TROOPS</Tag>
-		<English>Citizens complain about the amount of troops of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] empire in the colonies.</English>
+		<English>Citizens complain about the number of troops of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] empire in the colonies.</English>
 		<German>Bürger beschweren sich über die vielen Truppen des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs in den Kolonien.</German>
 		<Russian>Граждане жалуются на количество войск [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] империи в колониях.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_1</Tag>
-		<English>Milord, the citizens complain that they have to feed and endure so many troops from Europe. The troops are spreading throughout the colonies. We should do something about it.</English>
+		<English>Milord, the citizens complain that they have to feed and put up with too many European soldiers. Troops seem to be everywhere in our colonies. We have to do something about it.</English>
 		<German>Milord, die Bürger beschweren sich, dass sie so viele Truppen aus Europa durchfüttern und erdulden müssen. Die Truppen machen sich in den Kolonien breit. Wir sollten etwas unternehmen.</German>
 		<Russian>Милорд, граждане жалуются, что им приходится кормить и обустраивать такое большое количество войск из Европы, которые были расквартированы в колониях. Мы должны что-то делать с этим.</Russian>
 	</TEXT>
@@ -5805,7 +5805,7 @@
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_2</Tag>
-		<English>The protection of the colonies and the expansion of the empire requires sacrifice. The troops stay where they are. I can contribute from my coffers to pay for the troops.</English>
+		<English>The protection of the colonies and the expansion of the empire requires sacrifice. The troops stay where they are. I can contribute from my coffers to cover their pay.</English>
 		<German>Der Schutz der Kolonien und die Erweiterung des Reiches erfordern nun mal Opfer. Die Truppen bleiben wo sie sind. Aber ich bin gerne bereit etwas aus meiner Schatulle zur Versorgung der Truppen beizusteuern.</German>
 		<Russian>Защита колоний и расширение империи требуют жертв. Войска останутся там, где они есть. Я с удовольствием пожертвую небольшую часть средств из своей казны на снабжение войск.</Russian>
 	</TEXT>	
@@ -5817,7 +5817,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_1</Tag>
-		<English>Milord, a neighboring Indian village wants to trade with us for mutual benefit. We should definitely send a wagon train and start trading relations. That can only be beneficial.</English>
+		<English>Milord, a neighbouring Indian village wants to trade with us for mutual benefit. We should definitely send a wagon train and start trading relations. That can only be beneficial.</English>
 		<German>Milord, ein benachbartes Indianerdorf möchte zum gegenseitigen Vorteil Handel mit uns treiben. Wir sollten unbedingt einen Wagenzug entsenden und Handelsbeziehungen beginnen. Das kann nur von Vorteil sein.</German>
 		<Russian>Милорд, индейцы из соседней деревни хотят торговать с нами, обещая взаимную выгоду. Нам обязательно следует отправить к ним обоз и начать торговлю. Это предприятие сулит хорошую прибыль.</Russian>
 	</TEXT>
