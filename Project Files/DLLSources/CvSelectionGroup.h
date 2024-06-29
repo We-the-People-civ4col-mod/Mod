@@ -183,7 +183,7 @@ public:
 	DllExport void clearUnits();
 	DllExport bool addUnit(CvUnit* pUnit, bool bMinimalChange);
 	void removeUnit(CvUnit* pUnit);
-	void mergeIntoGroup(CvSelectionGroup* pSelectionGroup);
+	void mergeIntoGroup(CvSelectionGroup* pSelectionGroup, UnitAITypes eUnitAI = NO_UNITAI);
 	CvSelectionGroup* splitGroup(int iSplitSize, CvUnit* pNewHeadUnit = NULL, CvSelectionGroup** ppOtherGroup = NULL);
 
 	DllExport CLLNode<IDInfo>* deleteUnitNode(CLLNode<IDInfo>* pNode);

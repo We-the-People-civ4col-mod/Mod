@@ -336,7 +336,15 @@ bool CvSelectionGroupAI::AI_update()
 		return false; // K-Mod
 	}
 
-	return (isBusy() || isCargoBusy());
+	CvUnitAI* const pHeadUnit = static_cast<CvUnitAI*>(getHeadUnit());
+
+	if (pHeadUnit != NULL && pHeadUnit->m_bHasYielded)
+	{
+		pHeadUnit->m_bHasYielded = false;
+		return true;
+	}
+	else
+		return (isBusy() || isCargoBusy());
 }
 
 
