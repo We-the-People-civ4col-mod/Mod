@@ -5805,19 +5805,19 @@
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_2</Tag>
-		<English>The protection of the colonies and the expansion of the empire requires sacrifice. The troops stay where they are. I can contribute from my coffers to cover their pay.</English>
+		<English>The protection of the colonies and the expansion of the empire require sacrifices. The troops stay where they are. My own coffers will cover their pay.</English>
 		<German>Der Schutz der Kolonien und die Erweiterung des Reiches erfordern nun mal Opfer. Die Truppen bleiben wo sie sind. Aber ich bin gerne bereit etwas aus meiner Schatulle zur Versorgung der Truppen beizusteuern.</German>
 		<Russian>Защита колоний и расширение империи требуют жертв. Войска останутся там, где они есть. Я с удовольствием пожертвую небольшую часть средств из своей казны на снабжение войск.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_3</Tag>
-		<English>The protection of the colonies and the expansion of the empire require sacrifices. The troops stay where they are. But I can understand people's concerns. We will contribute generously to the provisioning and compensate for any damage caused by the troops in the colonies.</English>
+		<English>The protection of the colonies and the expansion of the empire require sacrifices. The troops stay where they are, but I can understand people's concerns. We will provision the army generously and compensate for any damage caused by our troops.</English>
 		<German>Der Schutz der Kolonien und die Erweiterung des Reiches erfordern nun mal Opfer. Die Truppen bleiben wo sie sind. Aber ich kann die Sorgen der Leute verstehen. Wir werden uns großzügig an der Verproviantierung beteiligen und etwaige Schäden ersetzen, die in den Kolonien durch die Truppen verursacht werden.</German>
 		<Russian>Я понимаю обеспокоенность людей, но эти войска здесь для нашей же защиты. Мы будем компенсировать обеспечение солдат продовольствием, а также возмещать любой ущерб, причиненный войсками.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_1</Tag>
-		<English>Milord, a neighbouring Indian village wants to trade with us for mutual benefit. We should definitely send a wagon train and start trading relations. That can only be beneficial.</English>
+		<English>Milord, a neighbouring Native village sees mutual benefit in trading with us for. We should send them a wagon train to start trading relations. That can only be beneficial.</English>
 		<German>Milord, ein benachbartes Indianerdorf möchte zum gegenseitigen Vorteil Handel mit uns treiben. Wir sollten unbedingt einen Wagenzug entsenden und Handelsbeziehungen beginnen. Das kann nur von Vorteil sein.</German>
 		<Russian>Милорд, индейцы из соседней деревни хотят торговать с нами, обещая взаимную выгоду. Нам обязательно следует отправить к ним обоз и начать торговлю. Это предприятие сулит хорошую прибыль.</Russian>
 	</TEXT>
@@ -5829,13 +5829,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_HELP</Tag>
-		<English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the neighboring Native village within %d3 rounds that likes to trade with you. Take trade goods from Europe or other goods that you have produced locally. It's up to you what you want to trade.</English>
+		<English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the neighbouring Native village within %d3 rounds. Take trade goods from Europe or anything else, local or imported. It's up to you whatever you want to trade.</English>
 		<German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem benachbarten Indianer-Dorf, das mit Euch Handel treiben möchte. Nehmt Handelswaren aus Europa mit oder andere Waren, die ihr vor Ort produziert habt. Es bleibt Euch überlassen, mit was Ihr handeln wollt.</German>
 		<Russian>Отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в соседнюю деревню индейцев, которые хотят торговать с вами, в течение %d3 ходов. Возьмите с собой [COLOR_SELECTED_TEXT]мануфактуру[COLOR_REVERT] из Европы или другие товары, которые вы произвели в своих поселениях. Чем вы будете торговать, зависит только от вас.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS</Tag>
-		<English>Unfortunately you have waited too long. The Indian village can't or doesn't want to trade with you at the moment. The wagon train is now available for other uses.</English>
+		<English>Unfortunately you waited too long. The Native village is no longer willing to trade with you right now. The good news is that the wagon train is now available for other uses.</English>
 		<German>Ihr habt leider zulange gewartet. Das Indianerdorf kann oder möchte gegenwärtig keinen Handel mit Euch treiben. Ihr könnt den Wagenzug nun wieder anderweitig verwenden.</German>
 		<Russian>К сожалению, вы слишком долго ждали. В данный момент индейцы не могут или не хотят торговать с вами. Вы можете перенаправить транспорт на другие торговые маршруты.</Russian>
 	</TEXT>
@@ -5847,31 +5847,31 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_1</Tag>
-		<English>We should seize this opportunity. If trade goes well, we could gain allies who will give us an advantage in the competition with our European rivals.</English>
+		<English>We should seize this opportunity. If trade goes well, we might gain allies who will give us an advantage in the competition with our European rivals.</English>
 		<German>Diese Gelegenheit sollten wir nutzen. Wenn der Handel gut läuft, dann könnten wir damit Verbündete gewinnen, die uns im Wettstreit mit unseren europäischen Konkurrenten einen Vorteil verschaffen.</German>
 		<Russian>Нам необходимо воспользоваться этой возможностью. Если торговля пойдёт хорошо, мы сможем обрести союзников, которые дадут нам преимущество в конкурентной борьбе с нашими европейскими соперниками.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_1</Tag>
-		<English>We shouldn't overreach the Indians right from the first trade. Establishing trade relations currently is more important to me than the gold for our goods.</English>
+		<English>We shouldn't pressue our new Native friends with hard bargaining right from the first trade. Establishing trade relations matters more to me than the gold.</English>
 		<German>Wir sollten die Indianer nicht gleich beim ersten Handel übervorteilen. Der Aufbau der Handelsbeziehungen ist mir gegenwärtig wichtiger als das Gold für unsere Waren.</German>
 		<Russian>Мы не должны требовать больших скидок от индейцев с первой же сделки. Установление хороших торговых отношений сейчас для нас важнее, чем золото.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2</Tag>
-		<English>We can negotiate with the Indians, but we should remain fair. We should also stay in the village for a while and see if we can't negotiate a bit more.</English>
+		<English>We can negotiate with the Natives, but we have to be fair. We should stay in the village for a while and see how we can negotiate a bit more.</English>
 		<German>Wir können ruhig kräftig mit den Indianern verhandeln, sollten aber fair bleiben. Wir sollten eine Weile in dem Dorf bleiben und sehen, ob wir nicht noch etwas mehr herausschlagen können.</German>
 		<Russian>Нам нужно вести торговые переговоры с индейцами, но мы должны оставаться справедливыми. И предлагаю остаться в деревне на какое-то время и посмотреть, сможем ли мы договориться ещё о чем-нибудь.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_3</Tag>
-		<English>Get out everything you can. After all, the natives wanted this trade. Now let them see how Europeans negotiate!</English>
+		<English>Get the most you possibly can! It was the Natives who wanted this trade. Show them how Europeans strike a hard bargain!</English>
 		<German>Holt alles raus, was ihr könnt. Immerhin wollten ja die Indianer diesen Handel. Nun sollen sie mal sehen, wie Europäer verhandeln!</German>
 		<Russian>Забирайте всё, что сможете. В конце концов, индейцы сами хотели этой торговли. Сейчас мы им покажем, как нужно вести переговоры по-европейски!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_4</Tag>
-		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trade with the natives was successful.</English>
+		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trade with the Natives was successful.</English>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Handel mit den Ureinwohnern war von Erfolg gekrönt!</German>
 		<Russian>Торговля [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] с индейцами прошла успешно.</Russian>
 	</TEXT>
@@ -5881,7 +5881,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_6</Tag>
-		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trade with the Natives was ultimately too aggressive. The Indians are a bit disgruntled!</English>
+		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trade with the Natives was ultimately too aggressive. Their traders are more than a bit disgruntled!</English>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Handel mit den Ureinwohnern war letztlich zu agressiv. Die Indianer sind etwas verstimmt!</German>
 		<Russian>Индейцы крайне недовольны агрессивными методами ведения торговли со стороны [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]!</Russian>
 	</TEXT>
@@ -5899,13 +5899,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_HELP</Tag>
-		<English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the neighboring Native village within %d3 rounds that likes to trade with you. Take trade goods from Europe or other goods that you have produced locally. It's up to you what you want to trade.</English>
+		<English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the neighbouring Native village within %d3 rounds. Take trade goods from Europe or anything else, local or imported. It's up to you whatever you want to trade.</English>
 		<German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem benachbarten Indianer-Dorf, das mit Euch Handel treiben möchte. Nehmt Handelswaren aus Europa mit oder andere Waren, die ihr vor Ort produziert habt. Es bleibt Euch überlassen, mit was Ihr handeln wollt.</German>
 		<Russian>Отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в соседнюю деревню индейцев, которые хотят торговать с вами, в течение %d3 ходов. Возьмите с собой [COLOR_SELECTED_TEXT]мануфактуру[COLOR_REVERT] из Европы или другие товары, которые вы произвели в своих поселениях. Чем вы будете торговать, зависит только от вас.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_2</Tag>
-		<English>Unfortunately you have waited too long. The Native village can't or doesn't want to trade with you at the moment. The trek is now available for other uses.</English>
+		<English>Unfortunately you waited too long. The Native village is no longer willing to trade with you right now. The good news is that the trek becomes available for other uses.</English>
 		<German>Ihr habt leider zulange gewartet. Das Indianerdorf kann oder möchte gegenwärtig keinen Handel mit Euch treiben. Ihr könnt den Treck nun wieder anderweitig verwenden.</German>
 		<Russian>К сожалению, вы слишком долго ждали. В данный момент индейцы не могут или не хотят торговать с вами. Вы можете перенаправить транспорт на другие торговые маршруты.</Russian>
 	</TEXT>
@@ -5917,31 +5917,31 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_2_1</Tag>
-		<English>We should seize this opportunity. If trade goes well again this time, we could gain allies who will give us an advantage in the competition with our European rivals.</English>
+		<English>We should seize this opportunity. If trade goes well, we might gain allies who will give us an advantage in the competition with our European rivals.</English>
 		<German>Diese Gelegenheit sollten wir nutzen. Wenn der Handel auch dieses Mal wieder gut läuft, dann könnten wir damit Verbündete gewinnen, die uns im Wettstreit mit unseren europäischen Konkurrenten einen Vorteil verschaffen.</German>
 		<Russian>Нам необходимо воспользоваться этой возможностью. Если торговля пойдёт хорошо, мы сможем обрести союзников, которые дадут нам преимущество в конкурентной борьбе с нашими европейскими соперниками.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2_1</Tag>
-		<English>Trade went very well for us last time. But we should still focus on the good neighborly relations.</English>
-		<German>Beim letzten Mal lief der Handel schon sehr gut für uns. Aber wollten die gute nachbarschaftlichen Beziehungen weiter in den Vordergrund stellen.</German>
+		<English>Trade went very well for us last time, but we must always keep in mind the importance of good neighbourly relations.</English>
+		<German>Beim letzten Mal lief der Handel schon sehr gut für uns. Aber wollten die gute nachbarschaftlichen Beziehungen weiter in den Vordergrund stellen.</German>u
 		<Russian>Мы не должны требовать больших скидок от индейцев с первой же сделки. Установление хороших торговых отношений сейчас для нас важнее, чем золото.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2_2</Tag>
-		<English>We can negotiate with the Natives, but we should remain fair. We should stay in the village for a while to try to negotiate a bit more.</English>
+		<English>We can negotiate with the Natives, but we have to be fair. We should stay in the village for a while and see whether we can negotiate a bit more.</English>
 		<German>Wir können ruhig kräftig mit den Indianern verhandeln, sollten aber fair bleiben. Wir sollten eine Weile in dem Dorf bleiben und sehen, ob wir nicht noch etwas mehr herausschlagen können.</German>
 		<Russian>Нам нужно вести торговые переговоры с индейцами, но мы должны оставаться справедливыми. И предлагаю остаться в деревне на какое-то время и посмотреть, сможем ли мы договориться ещё о чем-нибудь.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2_3</Tag>
-		<English>Get out everything you can. After all, the natives wanted this trade. Now let them see how Europeans negotiate!</English>
+		<English>Get as much as you possibly can! It was the Natives who wanted this trade. Show them Europeans know how to strike a hard bargain!</English>
 		<German>Holt alles raus, was ihr könnt. Immerhin wollten ja die Indianer diesen Handel. Nun sollen sie mal sehen, wie Europäer verhandeln!</German>
 		<Russian>Забирайте всё, что сможете. В конце концов, индейцы сами хотели этой торговли. Сейчас мы им покажем, как нужно вести переговоры по-европейски!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2_4</Tag>
-		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trade with the natives was successful.</English>
+		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trade with the Natives was successful.</English>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Handel mit den Ureinwohnern war von Erfolg gekrönt!</German>
 		<Russian>Торговля [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] с индейцами прошла успешно.</Russian>
 	</TEXT>
@@ -5975,13 +5975,13 @@
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INITIAL_TRADE_WITH_NATIVES_2</Tag>
-		<English>They have to offer us more than just somef corn and berries. Send them away. Tell them to come back when they have something worthwhile to offer us.</English>
+		<English>They have to offer us more than just some corn and berries. Send them away. Tell them to come back when they have something worthwhile to offer us.</English>
 		<German>Da müssen sie uns schon mehr bieten als das bischen Mais und Beeren. Schickt sie weg. Sie sollen erst wiederkommen, wenn sie etwas anbieten können, das sich für uns lohnt.</German>
 		<Russian>Они должны предложить нам нечто большее, чем просто немного кукурузы и ягод. Гоните их прочь и пусть возвращаются только тогда, когда они смогут предложить нам что-то более стоящее.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INITIAL_TRADE_WITH_NATIVES_3</Tag>
-		<English>Yes, of course. Give them whatever they want in exchange for the food. When the Native women are happy, the warriors are happy too so we don't have to worry too much about raids for the time being.</English>
+		<English>Yes, of course. Give them whatever they want in exchange for the food. When the Native women are happy, the warriors are happy too. We shouldn't have to worry too much about raids for a little while.</English>
 		<German>Ja, natürlich. Gebt Ihnen im Tausch für die Nahrung reichlich von allem, was sie haben möchten. Sind die Indianer-Frauen glücklich, sind es die Männer auch und wir müssen uns erst einmal keine großen Sorgen um Überfälle machen.</German>
 		<Russian>Это не проблема. Дайте им все, что они хотят, в обмен на еду. Если женщины индейцев будут счастливы, то и их мужчины тоже будут счастливы и в ближайшее время нам не придется беспокоиться о набегах.</Russian>
 	</TEXT>
@@ -5993,7 +5993,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TRADE_WITH_NATIVES_BETRAYAL</Tag>
-		<English>The Native people in a neighboring village want to trade with the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] empire.</English>
+		<English>The Native people in a neighbouring village want to trade with the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] empire.</English>
 		<German>Ureinwohner eines benachbarten Dorfes wollen wieder mit dem [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich handeln.</German>
 		<Russian>Индейцы снова приезжают в города империи [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] для торговли.</Russian>
 	</TEXT>
@@ -6005,25 +6005,25 @@
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVE_BETRAYAL_HELP</Tag>
-		<English>Within %d3 turns, send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the neighboring native village that wants to trade with you. But be warned, the trader are up to something. Check the goods again beforehand. If you sell the natives bad goods, they will get angry.</English>
+		<English>Within %d3 turns, send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the neighbouring Native village that wants to trade with you. Be on your guard! It looks like the traders are up to something. Double-check the goods beforehand. If we sell shoddy goods to the Natives, they'll make our lives very unpleasant.</English> 
 		<German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem benachbarten Indianer-Dorf, das mit Euch Handel treiben möchte. Aber seid gewarnt, die Händler führen etwas im Schilde. Kontrolliert die Waren vorher noch einmal. Verkauft ihr den Ureinwohnern schlechte Waren, werden sie wütend werden.</German>
 		<Russian>В течение %d3 ходов отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в деревню индейцев, которые хотят торговать с вами. Но будьте осторожны: торговец что-то замышляет. Проверьте повозки перед отправкой. Если вы продадите туземцам плохой товар, они разозлятся.</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRADE_WITH_NATIVES_BETRAYAL_2</Tag>
-		<English>Milord, we have received word that our traders have reached the native settlements. The convoy can now set off.</English>
+		<English>Milord, we have received word that our traders have arrived at the Native settlements. The convoy can depart now.</English>
 		<German>Milord, wir erhielten Nachricht, dass unsere Händler die Dörfer der Ureinwohner erreicht haben. Die Wagenkolonne kann sich nun auf den Weg machen.</German>
 		<Russian>Милорд, мы получили известие, что наши торговцы добрались до поселений индейцев. Теперь мы можем отправить к ним большой обоз(?).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVES_BETRAYAL_2_1</Tag>
-		<English>The native people of a neighboring village want to trade with the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] empire.</English>
+		<English>The Native people in a neighbouring village want to trade with the [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] empire.</English>
 		<German>Ureinwohner eines benachbarten Dorfes wollen wieder mit dem [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich handeln.</German>
 		<Russian>Индейцы снова приезжают в города империи [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] для торговли.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_TRADE_WITH_NATIVES_BETRAYAL_2</Tag>
-		<English>Unfortunately you have waited too long. The Indian village can't or doesn't want to trade with you at the moment. The trek is now available for other uses.</English>
+		<English>Unfortunately you waited too long. The Native village is no longer willing to trade with you at the moment. The good news is that the trek is now available for other work.</English>
 		<German>Ihr habt leider zulange gewartet. Das Indianerdorf kann oder möchte gegenwärtig keinen Handel mit Euch treiben. Ihr könnt den Treck nun wieder anderweitig verwenden.</German>
 		<Russian>К сожалению, вы слишком долго ждали. В данный момент индейцы не могут или не хотят торговать с вами. Вы можете перенаправить транспорт на другие торговые маршруты.</Russian>
 	</TEXT>	
