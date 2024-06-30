@@ -279,6 +279,7 @@ void CvXMLLoadUtility::readXMLfiles(XMLReadStage eStage)
 	LoadGlobalClassInfo(eStage, INFO.m_info.m_CivilizationTypes);
 	LoadGlobalClassInfo(eStage, INFO.m_info.m_CivCategoryTypes);
 	LoadGlobalClassInfo(eStage, INFO.m_info.m_DomainTypes);
+	LoadGlobalClassInfo(eStage, INFO.m_info.m_UnitAITypes);
 	PreLoadGlobalClassInfo(eStage, GC.getDomainInfo(), "CIV4DomainInfos", "BasicInfos", "Civ4DomainInfos/DomainInfos/DomainInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getUnitAIInfo(), "CIV4UnitAIInfos", "BasicInfos", "Civ4UnitAIInfos/UnitAIInfos/UnitAIInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getAttitudeInfo(), "CIV4AttitudeInfos", "BasicInfos", "Civ4AttitudeInfos/AttitudeInfos/AttitudeInfo", NULL);

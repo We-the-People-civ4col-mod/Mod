@@ -10,6 +10,7 @@ namespace tinyxml2
 
 class XMLTypeContainer;
 class InfoArrayBase;
+class XML_VAR_String;
 
 class XMLReader
 {
@@ -23,8 +24,8 @@ public:
 	bool isType(const char* szType) const;
 
 
-	void Read(const char* szTag, CvString& szText) const;
-	void ReadTextKey(const char* szTag, CvString& szText) const;
+	void Read(const char* szTag, XML_VAR_String& string) const;
+	void ReadTextKey(const char* szTag, XML_VAR_String& szText) const;
 	
 	void Read(const char* szTag, bool& bBool) const;
 	void Read(const char* szTag, int& iValue) const;

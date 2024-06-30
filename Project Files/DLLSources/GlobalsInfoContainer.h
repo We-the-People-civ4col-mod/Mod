@@ -12,4 +12,5 @@ struct GlobalsInfoContainer
 	EnumMap<CivilizationTypes, CivilizationInfo> m_CivilizationTypes;
 	EnumMap<CivCategoryTypes, CivCategoryInfo> m_CivCategoryTypes;
 	EnumMap<DomainTypes, DomainInfo> m_DomainTypes;
+	EnumMap<UnitAITypes, UnitAIInfo> m_UnitAITypes;
 };

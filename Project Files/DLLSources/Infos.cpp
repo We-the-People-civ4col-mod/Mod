@@ -2,6 +2,47 @@
 #include "Infos.h"
 #include "XMLReader.h"
 
+
+XML_VAR_String::XML_VAR_String()
+	: m_string(NULL)
+{}
+
+XML_VAR_String::~XML_VAR_String()
+{
+	SAFE_DELETE(m_string);
+}
+
+CvString XML_VAR_String::get() const
+{
+	return m_string;
+}
+
+CvWString XML_VAR_String::getWide() const
+{
+	return CvWString(m_string);
+}
+
+const char* XML_VAR_String::getPointer() const
+{
+	return m_string;
+}
+
+XML_VAR_String::operator const char*() const
+{
+	return m_string;
+}
+
+XML_VAR_String::operator CvString() const
+{
+	return m_string;
+}
+
+XML_VAR_String::operator CvWString() const
+{
+	return CvWString(m_string);
+}
+
+
 bool InfoBase::readType(XMLReader& reader)
 {
 	return false;
@@ -17,6 +58,17 @@ bool InfoBase::postLoadSetup(XMLReader& reader)
 	return false;
 }
 
+const char* InfoBaseTypeOnly::getType() const
+{
+	return m_szType.getPointer();
+}
+
+bool InfoBaseTypeOnly::readType(XMLReader& reader)
+{
+	reader.Read("Type", m_szType);
+	return true;
+}
+
 const char* InfoBaseTypeDesc::getType() const
 {
 	return m_szType;
@@ -29,12 +81,12 @@ CvWString InfoBaseTypeDesc::getTextKeyWide() const
 
 CvWString InfoBaseTypeDesc::getDescription(uint uiForm) const
 {
-	if (m_szTextKey.IsEmpty())
+	if (m_szTextKey.getPointer() == NULL)
 	{
 		return L"";
 	}
 
-	return gDLL->getObjectText(m_szTextKey, uiForm);
+	return gDLL->getObjectText(m_szTextKey.getWide(), uiForm);
 }
 
 bool InfoBaseTypeDesc::readType(XMLReader& reader)

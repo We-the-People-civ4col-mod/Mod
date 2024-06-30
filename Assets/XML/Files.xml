@@ -20,4 +20,9 @@
 			<File>BasicInfos/CIV4DomainInfos.xml</File>
 		</Files>
 	</DomainTypes>
+	<UnitAITypes>
+		<Files>
+			<File>BasicInfos/CIV4UnitAIInfos.xml</File>
+		</Files>
+	</UnitAITypes>
 </Files>

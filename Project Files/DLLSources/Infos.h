@@ -2,6 +2,27 @@
 
 class XMLReader;
 
+// string, which can only be written by XMLReader, hence write once
+// low memory usage and automatic memory allocation/clearing
+class XML_VAR_String
+{
+	friend class XMLReader;
+public:
+	XML_VAR_String();
+	~XML_VAR_String();
+
+	CvString get() const;
+	CvWString getWide() const;
+	const char* getPointer() const;
+
+	operator const char*() const;
+	operator CvString() const;
+	operator CvWString() const;
+
+private:
+	const char* m_string;
+};
+
 class InfoBase
 #ifdef COMPILE_STATIC_TEST
 	: private boost::noncopyable
@@ -11,6 +32,20 @@ public:
 	bool readType(XMLReader& reader);
 	bool read(XMLReader& reader);
 	bool postLoadSetup(XMLReader& reader);
+};
+
+class InfoBaseTypeOnly : public InfoBase
+#ifdef COMPILE_STATIC_TEST
+	: private boost::noncopyable
+#endif
+{
+public:
+	const char* getType() const;
+
+	bool readType(XMLReader& reader);
+
+protected:
+	XML_VAR_String m_szType;
 };
 
 class InfoBaseTypeDesc
@@ -28,8 +63,8 @@ public:
 	bool postLoadSetup(XMLReader& reader);
 
 protected:
-	CvString m_szType;
-	CvString m_szTextKey;
+	XML_VAR_String m_szType;
+	XML_VAR_String m_szTextKey;
 };
 
 class InfoBasePedia
@@ -69,9 +104,9 @@ protected:
 	mutable std::vector<CvWString> m_aCachedDescriptions;
 };
 
-class DomainInfo : public InfoBaseTypeDesc
-{
-};
+class DomainInfo : public InfoBaseTypeDesc {};
+class UnitAIInfo : public InfoBaseTypeOnly {};
+
 
 class CivCategoryInfo : public InfoBase
 {
@@ -85,7 +120,7 @@ public:
 	bool read(XMLReader& reader);
 
 protected:
-	CvString m_szType;
+	XML_VAR_String m_szType;
 	CivEffectTypes m_eCivEffect;
 };
 
@@ -97,7 +132,7 @@ public:
 	bool readType(XMLReader& reader);
 	bool read(XMLReader& reader);
 private:
-	CvString m_szType;
+	XML_VAR_String m_szType;
 	bool m_bPlayable;
 	int m_iAreaMultiplier;
 	InfoArray<UnitClassTypes, UnitTypes> m_Units;

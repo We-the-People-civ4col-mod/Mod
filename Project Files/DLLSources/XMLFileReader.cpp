@@ -96,7 +96,9 @@ public:
 	{
 		const tinyxml2::XMLElement* root = m_fileList.FirstChildElement("Files");
 		FAssert(root != NULL);
-		return root->FirstChildElement(enumType);
+		const tinyxml2::XMLElement* returnVal = root->FirstChildElement(enumType);
+		FAssertMsg(returnVal != NULL, CvString::format("XML/Files.xml is missing %s", enumType).c_str());
+		return returnVal;
 	}
 
 	XMLCache()

@@ -4,6 +4,7 @@
 #include "XMLFileReader.h"
 #include "tinyxml2.h"
 #include "XMLReaderAlerts.h"
+#include "Infos.h"
 
 XMLReader::XMLReader(const XMLTypeContainer& FileReader, const tinyxml2::XMLElement* Element)
 	: m_FileReader(FileReader)
@@ -31,25 +32,25 @@ bool XMLReader::isType(const char* szType) const
 	return m_FileReader.isType(m_Element, szType);
 }
 
-void XMLReader::Read(const char* szTag, CvString& szText) const
+void XMLReader::Read(const char* szTag, XML_VAR_String& string) const
 {
+	SAFE_DELETE(string.m_string);
 	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
 	if (element == NULL)
 	{
 		return;
 	}
-	szText = element->GetText();
+	const char* temp = element->GetText();
+	const int iLength = strlen(temp) + 1; // +1 is the NULL termination
+	char* buffer = new char[iLength];
+	memcpy(buffer, temp, iLength);
+	string.m_string = buffer;
 }
 
-void XMLReader::ReadTextKey(const char* szTag, CvString& szText) const
+void XMLReader::ReadTextKey(const char* szTag, XML_VAR_String& szText) const
 {
-	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
-	if (element == NULL)
-	{
-		return;
-	}
-	szText = element->GetText();
-	FAssert(CvWString(szText) != gDLL->getText(szText));
+	Read(szTag, szText);
+	FAssertMsg(szText.getPointer() == NULL || szText.getWide() != gDLL->getText(szText.getWide()), CvString::format("\r\n\r\nTXT KEY used without being added to text XML\r\n\r\nXML element: %s\r\nTag: %s\r\nTXT KEY: %s", m_FileReader.getType(), szTag, szText.getPointer()).c_str());
 }
 
 void XMLReader::Read(const char* szTag, bool& bBool) const
