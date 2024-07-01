@@ -89502,7 +89502,7 @@
 			<PythonCallback>applyFestivity1</PythonCallback>
 			<PythonExpireCheck/>
 			<PythonCanDo/>
-			<PythonHelp>getHelpKingPleased</PythonHelp>
+			<PythonHelp/>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>1000</iAIValue>
 			<iGenericParameter1>3</iGenericParameter1>

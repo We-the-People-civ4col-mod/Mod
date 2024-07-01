@@ -9,6 +9,7 @@
 #
 # No other modules should import this
 #
+import sys
 import CvUtil
 import CvScreensInterface
 from CvPythonExtensions import *
@@ -2336,7 +2337,10 @@ def getHelpKingPleased(argsList):
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_INCREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
 	if event.getGenericParameter(3) < 0 :
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_DECREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
-	return szHelp
+	if 'szHelp' in locals():
+		return szHelp
+	else:
+		sys.stderr.write(event.getType() + " has PythonHelp getHelpKingPleased without setting generic parameters 3/4 to use it to generate output")
 
 def applyKingAngry(argsList):
 	eEvent = argsList[0]
