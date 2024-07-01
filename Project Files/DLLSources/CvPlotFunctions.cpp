@@ -49,6 +49,13 @@ int Coordinates::plotNum() const
 	return GC.getMap().plotNumINLINE(*this);
 }
 
+int Coordinates::distance(Coordinates otherCoord) const
+{
+	int x = std::abs(this->x() - otherCoord.x());
+	int y = std::abs(this->y() - otherCoord.y());
+	return std::max(x, y);
+}
+
 Coordinates Coordinates::invalidCoord()
 {
 	Coordinates n;

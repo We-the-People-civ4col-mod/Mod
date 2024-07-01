@@ -207,6 +207,8 @@ public:
 	inline bool isOnMap() const;
 	inline bool isInvalidPlotCoord() const;
 
+	int distance(Coordinates otherCoord) const;
+
 	static Coordinates invalidCoord();
 	static Coordinates nullCoord();
 
