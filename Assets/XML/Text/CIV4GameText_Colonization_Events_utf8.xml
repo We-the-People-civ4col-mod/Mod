@@ -5687,13 +5687,13 @@
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_START_EVENT_HELP</Tag>
 		<English>Send a unit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] to the port of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] within %d3 rounds.</English>
 		<German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zum Hafen in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</German>
-		<Russian>Отправьте отряд [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в порт города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] в течение %d3 раундов.</Russian>
+		<Russian>Отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в порт города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] в течение %d3 ходов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_START</Tag>
 		<English>Influential merchants suggest sending an [COLOR_UNIT_TEXT]envoy[COLOR_REVERT] to Europe to negotiate with the King about the tense situation in the colonies.</English>
 		<German>Einflussreiche Kaufleute schlagen vor, einen [COLOR_UNIT_TEXT]Gesandten[COLOR_REVERT] nach Europa zu schicken, um mit dem König über die angespannte Situation in den Kolonien zu verhandeln.</German>
-		<Russian>Влиятельные торговцы предлагают отправить [COLOR_UNIT_TEXT]посланника[COLOR_REVERT] в Европу для переговоров с Королём о напряженной ситуации в колониях.</Russian>
+		<Russian>Торговцы предлагают провести переговоры с Королём о напряжённой ситуации в колониях.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_START_DONE</Tag>
@@ -5705,7 +5705,7 @@
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_START</Tag>
 		<English>Milord, we should definitely send an envoy to Europe to speak directly to the King about our situation, ideally a nobleman who knows how to talk to a King. At the very least we need tax concessions.</English>
 		<German>Milord, wir sollten unbedingt einen Gesandten nach Europa schicken, der direkt mit dem König über die Situation sprechen kann. Schickt am besten einen [COLOR_UNIT_TEXT]Adligen[COLOR_REVERT], der weiß wie man mit einem König spricht. Vielleicht können wir wenigstens Steuererleichterungen herausschlagen.</German>
-		<Russian>Милорд, нам обязательно следует отправить в Европу посланника, который сможет поговорить о ситуации напрямую с Королём. Лучше всего было бы послать дворянина, который знает, как правильно разговаривать с монархом. Возможно, нам даже удастся договориться о налоговых льготах.</Russian>
+		<Russian>Влиятельные торговцы предлагают отправить [COLOR_UNIT_TEXT]посланника[COLOR_REVERT] в Европу для переговоров с Королём о напряжённой ситуации в колониях. Милорд, нам определенно стоит хорошенько подумать над этим предложением. И если уж кого и отправлять, то пусть это будет дворянин, который знает, как правильно разговаривать с монархом. Возможно, нам даже удастся договориться о налоговых льготах.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_START_DONE</Tag>

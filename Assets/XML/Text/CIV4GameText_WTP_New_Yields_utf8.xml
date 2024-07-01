@@ -518,7 +518,7 @@
 		</German>
 		<Italian>Acquavite di frutta</Italian>
 		<Spanish>Aguardiente de fruta</Spanish>
-		<Russian>Фруктовый бренди</Russian>
+		<Russian>Бренди</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HOOCH</Tag>
@@ -531,7 +531,7 @@
 		</German>
 		<Italian>Acquavite di frutta</Italian>
 		<Spanish>Aguardiente de fruta</Spanish>
-		<Russian>Фруктовый бренди</Russian>
+		<Russian>Бренди</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOOCH</Tag>
@@ -544,7 +544,7 @@
 		</German>
 		<Italian>Acquavite di frutta</Italian>
 		<Spanish>Aguardiente de fruta</Spanish>
-		<Russian>Фруктовый бренди</Russian>
+		<Russian>Бренди</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_HOOCH_PEDIA</Tag>
@@ -1142,7 +1142,7 @@
 		</German>
 		<Italian>Prodotti da forno</Italian>
 		<Spanish>Productos de panadería</Spanish>
-		<Russian>Хлебобулочные изделия</Russian>
+		<Russian>Провиант</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_BAKERY_GOODS_PEDIA</Tag>
