@@ -1524,6 +1524,8 @@ void CvUnit::updateCombat(bool bQuick)
 
 			// TAC Capturing Ships - ray
 			bool displayCapturedShipMessage = false;
+			bool bCapturedShip = false;
+			CvUnit* pkCapturedUnitAfterSeaFight = NULL;
 
 			// ray, fix for bNoCapture being ingored
 			if (getUnitInfo().isCapturesShips() && !pDefender->getUnitInfo().isAnimal() && !pDefender->getUnitInfo().isNoCapture())
@@ -1533,8 +1535,8 @@ void CvUnit::updateCombat(bool bQuick)
 				// WTP, ray, Capture Ship chance increase - START
 				const int iCaptureShipsChanceIncrease = getUnitInfo().getCaptureShipsChanceIncrease();
 				capturingShipChance = capturingShipChance * (100 + iCaptureShipsChanceIncrease) / 100;
-				// WTP, ray, Capture Ship chance increase - START
-
+				// WTP, ray, Capture Ship chance increase - END
+				
 				if (capturingShipChance > randomShipCaptureValue)
 				{
 					bool bHasParents = kOwner.getParent() != NO_PLAYER;
@@ -1546,31 +1548,10 @@ void CvUnit::updateCombat(bool bQuick)
 
 						if ((getUnitInfo().isCapturesCargo() && bAtWar) || !getUnitInfo().isCapturesCargo())
 						{
-							// duplicate defeated unit
-							CvUnit* pkCapturedUnitAfterSeaFight = kOwner.initUnit(pDefender->getUnitType(), NO_PROFESSION, pPlot->getX_INLINE(), pPlot->getY_INLINE(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
+							bCapturedShip = true;
 							displayCapturedShipMessage = true;
 
-							pkCapturedUnitAfterSeaFight->setGameTurnCreated(pDefender->getGameTurnCreated());
-							pkCapturedUnitAfterSeaFight->addDamageRandom(10, 75, 5);
-							pkCapturedUnitAfterSeaFight->setFacingDirection(pDefender->getFacingDirection(false));
-							pkCapturedUnitAfterSeaFight->setLevel(pDefender->getLevel());
-
-							const int iOldModifier = std::max(1, 100 + GET_PLAYER(pDefender->getOwnerINLINE()).getLevelExperienceModifier());
-							const int iOurModifier = std::max(1, 100 + GET_PLAYER(pkCapturedUnitAfterSeaFight->getOwnerINLINE()).getLevelExperienceModifier());
-							pkCapturedUnitAfterSeaFight->setExperience(std::max(0, (pDefender->getExperience() * iOurModifier) / iOldModifier));
-
-							pkCapturedUnitAfterSeaFight->setName(pDefender->getNameNoDesc());
-							pkCapturedUnitAfterSeaFight->setLeaderUnitType(pDefender->getLeaderUnitType());
-							for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
-							{
-								PromotionTypes ePromotion = (PromotionTypes) iI;
-								if (pDefender->isHasRealPromotion(ePromotion))
-								{
-									pkCapturedUnitAfterSeaFight->setHasRealPromotion(ePromotion, true);
-								}
-							}
-							// WTP, ray, captured Ships should also get a Negative Promotion
-							pkCapturedUnitAfterSeaFight->acquireAnyNegativePromotion();
+							//WTP, Dyllin, Captured ship generation now handled in the section of code later on where the unit tests if it can advance.
 						}
 					}
 				}
@@ -1815,10 +1796,44 @@ void CvUnit::updateCombat(bool bQuick)
 					// WTP, ray, Prisoners of War should also get some damage and a Negative Promotion
 					if (PrisonerOfWarUnit != NULL)
 					{
-						PrisonerOfWarUnit->addDamageRandom(10, 75, 5);
+						PrisonerOfWarUnit->addDamageRandom(60, 80, 5);
 						PrisonerOfWarUnit->acquireAnyNegativePromotion();
 					}
 				}
+
+				if (bCapturedShip)
+				{
+					pkCapturedUnitAfterSeaFight = kOwner.initUnit(pDefender->getUnitType(), NO_PROFESSION, this->getX(), this->getY(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
+
+					pkCapturedUnitAfterSeaFight->setGameTurnCreated(pDefender->getGameTurnCreated());
+					pkCapturedUnitAfterSeaFight->addDamageRandom(80, 95, 5);
+					pkCapturedUnitAfterSeaFight->setFacingDirection(pDefender->getFacingDirection(false));
+					//pkCapturedUnitAfterSeaFight->setLevel(pDefender->getLevel());
+
+					//WTP, Dyllin, Old modifiers that were important for retaining the level of the unit after capture. We don't do that anymore.
+					//const int iOldModifier = std::max(1, 100 + GET_PLAYER(pDefender->getOwnerINLINE()).getLevelExperienceModifier());
+					//const int iOurModifier = std::max(1, 100 + GET_PLAYER(pkCapturedUnitAfterSeaFight->getOwnerINLINE()).getLevelExperienceModifier());
+					//pkCapturedUnitAfterSeaFight->setExperience(std::max(0, ((pDefender->getExperience() * iOurModifier) / iOldModifier)));
+
+					//WTP, Dyllin, Previous behavior duplicated experience and promotions of captured ship, including a leader such as Able Captain. No longer.
+					//Chances are that after casualties during battle, the remaining crew would split between loyalists and deserters, so we'll divide the XP
+					//to represent remaining crewmen after deaths and capture.
+					pkCapturedUnitAfterSeaFight->setExperience(std::max(0, (pDefender->getExperience() / 2)));
+
+					pkCapturedUnitAfterSeaFight->setName(pDefender->getNameNoDesc());
+					//pkCapturedUnitAfterSeaFight->setLeaderUnitType(pDefender->getLeaderUnitType());
+					//for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+					//{
+					//	PromotionTypes ePromotion = (PromotionTypes)iI;
+					//	if (pDefender->isHasRealPromotion(ePromotion))
+					//	{
+					//		pkCapturedUnitAfterSeaFight->setHasRealPromotion(ePromotion, true);
+					//	}
+					//}
+
+					pkCapturedUnitAfterSeaFight->acquireAnyNegativePromotion();
+				}
+
 			}
 			else
 			{
@@ -1830,9 +1845,42 @@ void CvUnit::updateCombat(bool bQuick)
 					// WTP, ray, Prisoners of War should also get some damage and a Negative Promotion
 					if (PrisonerOfWarUnit != NULL)
 					{
-						PrisonerOfWarUnit->addDamageRandom(10, 75, 5);
+						PrisonerOfWarUnit->addDamageRandom(60, 80, 5);
 						PrisonerOfWarUnit->acquireAnyNegativePromotion();
 					}
+				}
+
+				if (bCapturedShip)
+				{
+					pkCapturedUnitAfterSeaFight = kOwner.initUnit(pDefender->getUnitType(), NO_PROFESSION, pDefender->getX(), pDefender->getY(), NO_UNITAI, NO_DIRECTION, pDefender->getYieldStored());
+
+					pkCapturedUnitAfterSeaFight->setGameTurnCreated(pDefender->getGameTurnCreated());
+					pkCapturedUnitAfterSeaFight->addDamageRandom(80, 95, 5);
+					pkCapturedUnitAfterSeaFight->setFacingDirection(pDefender->getFacingDirection(false));
+					//pkCapturedUnitAfterSeaFight->setLevel(pDefender->getLevel());
+
+					//WTP, Dyllin, Old modifiers that were important for retaining the level of the unit after capture. We don't do that anymore.
+					//const int iOldModifier = std::max(1, 100 + GET_PLAYER(pDefender->getOwnerINLINE()).getLevelExperienceModifier());
+					//const int iOurModifier = std::max(1, 100 + GET_PLAYER(pkCapturedUnitAfterSeaFight->getOwnerINLINE()).getLevelExperienceModifier());
+					//pkCapturedUnitAfterSeaFight->setExperience(std::max(0, ((pDefender->getExperience() * iOurModifier) / iOldModifier)));
+
+					//WTP, Dyllin, Previous behavior duplicated experience and promotions of captured ship, including a leader such as Able Captain. No longer.
+					//Chances are that after casualties during battle, the remaining crew would split between loyalists and deserters, so we'll divide the XP
+					//to represent remaining crewmen after deaths and capture.
+					pkCapturedUnitAfterSeaFight->setExperience(std::max(0, (pDefender->getExperience() / 2)));
+
+					pkCapturedUnitAfterSeaFight->setName(pDefender->getNameNoDesc());
+					//pkCapturedUnitAfterSeaFight->setLeaderUnitType(pDefender->getLeaderUnitType());
+					//for (int iI = 0; iI < GC.getNumPromotionInfos(); iI++)
+					//{
+					//	PromotionTypes ePromotion = (PromotionTypes)iI;
+					//	if (pDefender->isHasRealPromotion(ePromotion))
+					//	{
+					//		pkCapturedUnitAfterSeaFight->setHasRealPromotion(ePromotion, true);
+					//	}
+					//}
+
+					pkCapturedUnitAfterSeaFight->acquireAnyNegativePromotion();
 				}
 			}
 
