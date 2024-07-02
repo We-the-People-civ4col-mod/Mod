@@ -2751,6 +2751,26 @@ bool CvPlayer::hasReadyUnit(bool bAny) const
 	return false;
 }
 
+// For debugging
+CvUnit* CvPlayer::getReadyUnit(bool bAny) const
+{
+	PROFILE_FUNC();
+
+	CvSelectionGroup* pLoopSelectionGroup;
+	int iLoop;
+
+	for (pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
+	{
+		if (pLoopSelectionGroup->readyToMove(bAny) &&
+			!pLoopSelectionGroup->isAutomated()) // K-Mod
+		{
+			return pLoopSelectionGroup->getHeadUnit();
+		}
+	}
+
+	return NULL;
+}
+
 
 bool CvPlayer::hasAutoUnit() const
 {

@@ -4281,7 +4281,8 @@ bool CvPlot::isVisibleEnemyUnit(PlayerTypes ePlayer) const
 // R&R, ray, Natives raiding party - START
 bool CvPlot::isVisibleEnemyUnit(const CvUnit* pUnit) const
 {
-	return (plotCheck(PUF_isEnemy, pUnit->getOwnerINLINE(), (pUnit->isAlwaysHostile(this) || (pUnit->AI_getUnitAIState() == UNITAI_STATE_RAIDING_PARTY)), NO_PLAYER, NO_TEAM, PUF_isVisible, pUnit->getOwnerINLINE()) != NULL);
+	return (plotCheck(PUF_isEnemy, pUnit->getOwnerINLINE(), pUnit->isAlwaysHostile(this),
+			NO_PLAYER, NO_TEAM, PUF_isVisible, pUnit->getOwnerINLINE()) != NULL);
 }
 // R&R, ray, Natives raiding party - END
 

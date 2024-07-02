@@ -10833,6 +10833,8 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 	if (pNewPlot != NULL)
 	{
 		m_coord = pNewPlot->coord();
+		if (canMove())
+			AI_doInitialMovePriority();
 	}
 	else
 	{

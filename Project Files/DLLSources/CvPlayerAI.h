@@ -108,11 +108,11 @@ public:
 
 	int AI_foundValueNative(int iX, int iY, bool settleOnBonus = false) const;
 
-	bool AI_isAreaAlone(CvArea* pArea);
+	bool AI_isAreaAlone(CvArea const& kArea) const;
 	bool AI_isCapitalAreaAlone();
-	bool AI_isPrimaryArea(CvArea* pArea);
+	bool AI_isPrimaryArea(CvArea const& kArea) const;
 
-	int AI_militaryWeight(CvArea* pArea);
+	int AI_militaryWeight(CvArea const* pArea);
 
 	int AI_targetCityValue(CvCity* pCity, bool bRandomize, bool bIgnoreAttackers = false) const;
 	CvCity* AI_findTargetCity(CvArea* pArea);
@@ -563,9 +563,6 @@ public:
 	int AI_cityTargetStrengthByPath(CvCity const* pCity, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const;
 	// K-Mod end
 
-	// TODO: Make protective and replace with a getter
-	int m_estimatedUnemploymentCount;
-
 	uint AI_unitImpassables(UnitTypes eUnit) const;
 	// advc.057:
 	bool AI_isAnyImpassable(UnitTypes eUnit) const
@@ -580,6 +577,15 @@ public:
 	bool AI_deduceCitySite(CvCity const& pCity) const; // K-Mod
 
 	CvSelectionGroupAI* AI_getSelectionGroup(int iID) const { return static_cast<CvSelectionGroupAI*>(getSelectionGroup(iID)); }
+	int AI_estimateUnemploymentCount() const;
+
+	// K-Mod
+	int AI_getCityTargetTimer() const;
+	void AI_setCityTargetTimer(int iTurns);
+	// K-Mod end
+	
+	// TODO: should we cache this like bts ?
+	int countNumMilitaryUnits() const;
 
 protected:
 
@@ -694,8 +700,10 @@ protected:
 
 	int AI_getBestDockUnit() const;
 	bool AI_canHurryDockUnit() const;
-	int AI_estimateUnemploymentCount() const;
 
+	int m_iCityTargetTimer; // K-Mod
+
+	
 	friend class CvGameTextMgr;
 };
 

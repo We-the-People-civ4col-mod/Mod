@@ -2528,7 +2528,7 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 
 	if ((gDLL->getChtLvl() > 0) && (bCtrl || bAlt || bShift))
 	{
-		szTempBuffer.Format(L"\n(%d, %d) (Oc: %d  / Cr: %d)", pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getDistanceToOcean(), pPlot->getCrumbs());
+		szTempBuffer.Format(L"\n(%d, %d) (Europe distance: %d  / Crumbs: %d)", pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getDistanceToOcean(), pPlot->getCrumbs());
 		//szTempBuffer.Format(L"\nNumAIUnits: %d", pPlot->area()->getNumAIUnits(GC.getGameINLINE().getActivePlayer(), UNITAI_TRANSPORT_SEA));
 		szString.append(szTempBuffer);
 	}

@@ -359,7 +359,7 @@ protected:
 	bool AI_found(int iMinValue = 1, MovementFlags eFlags = NO_MOVEMENT_FLAGS);
 	bool AI_foundRange(int iRange, bool bFollow = false);
 	bool AI_joinCityBrave();
-	bool AI_joinCity(int iMaxPath = MAX_INT);
+	bool AI_joinCity(int iMaxPath = MAX_INT, bool bRequireJoinable = true);
 	bool AI_joinOptimalCity();
 	bool AI_joinCityDefender();
 	bool AI_yieldDestination(int iMaxPath = MAX_INT);

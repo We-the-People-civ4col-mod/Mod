@@ -8969,7 +8969,7 @@ bool CvCity::removePopulationUnit(AssertCallerData assertData, CvUnit* pUnit, bo
 	CvPlot* pWorkedPlot = getPlotWorkedByUnit(pUnit);
 	if (pWorkedPlot != NULL)
 	{
-			clearUnitWorkingPlot(pWorkedPlot);
+		clearUnitWorkingPlot(pWorkedPlot);
 	}
 
 	int iOldPopulation = getPopulation();

@@ -121,8 +121,6 @@ void CvPlayerAI::AI_doTurnPre()
 	FAssertMsg(getLeaderType() != NO_LEADER, "getLeaderType() is not expected to be equal with NO_LEADER");
 	FAssertMsg(getCivilizationType() != NO_CIVILIZATION, "getCivilizationType() is not expected to be equal with NO_CIVILIZATION");
 
-	int m_estimatedUnemploymentCount = AI_estimateUnemploymentCount();
-
 	AI_invalidateCloseBordersAttitudeCache();
 
 	AI_doCounter();
@@ -506,23 +504,29 @@ void CvPlayerAI::AI_updateFoundValues(bool bStartingLoc)
 
 void CvPlayerAI::AI_updateAreaTargets()
 {
-	CvArea* pLoopArea;
-	int iLoop;
-
-	for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
+	// <advc.300>
+	//if (isBarbarian())
+	//	return; // </advc.300>
+	// K-Mod: (reset the timer if it is above the minimum time)
+	bool bResetTimer = (AI_getCityTargetTimer() > 4);
+	// advc.104p:
+	bool const bSneakAttackReady = GET_TEAM(getTeam()).AI_isSneakAttackReady();
+	FOR_EACH_AREA_VAR(pArea)
 	{
-		if (!(pLoopArea->isWater()))
+		if (pArea->isWater() /* advc.opt: */ || pArea->getNumCities() <= 0)
+			continue;
+		if (!bSneakAttackReady && // advc.104p
+			SyncRandOneChanceIn(3))
 		{
-			if (GC.getGameINLINE().getSorenRandNum(3, "AI Target City") == 0)
-			{
-				pLoopArea->setTargetCity(getID(), NULL);
-			}
-			else
-			{
-				pLoopArea->setTargetCity(getID(), AI_findTargetCity(pLoopArea));
-			}
+			pArea->setTargetCity(getID(), NULL);
 		}
+		else pArea->setTargetCity(getID(), AI_findTargetCity(pArea));
+		bResetTimer = (bResetTimer || pArea->AI_getTargetCity(getID()) != NULL); // K-Mod
 	}
+	// K-Mod. (guarantee a short amount of time before randomly updating again)
+	if (bResetTimer)
+		AI_setCityTargetTimer(4);
+	// K-Mod end
 }
 
 /*	Returns priority for unit movement (lower values move first...)
@@ -767,6 +771,10 @@ void CvPlayerAI::AI_unitUpdate()
 
 					if ((pGroup != NULL) && shouldUnitMove(pUnit))
 					{
+						// Port units can act but units on the map without remaining moves cannot
+						if (pUnit->isOnMap() && !pUnit->canMove()) // what about the head not able to move but another member can ?
+							continue;
+
 						int iOriginalPriority = pUnit->AI_getMovePriority();
 						if (iOriginalPriority > 0)
 						{
@@ -799,6 +807,7 @@ void CvPlayerAI::AI_unitUpdate()
 			}
 		}
 		// TODO: We really need to ensure that we don't forget moving a group!
+#if 0
 		int iLoop;
 		for (CvSelectionGroup* pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
 		{
@@ -807,6 +816,7 @@ void CvPlayerAI::AI_unitUpdate()
 				pLoopSelectionGroup->pushMission(MISSION_SKIP);
 			}
 		}
+#endif
 	}
 }
 
@@ -892,7 +902,7 @@ void CvPlayerAI::AI_conquerCity(CvCity* pCity)
 					{
 						if (pCity->getPreviousOwner() != NO_PLAYER)
 						{
-							if (GET_TEAM(GET_PLAYER(pCity->getPreviousOwner()).getTeam()).countNumCitiesByArea(pCity->area()) > 3)
+							if (GET_TEAM(GET_PLAYER(pCity->getPreviousOwner()).getTeam()).countNumCitiesByArea(*(pCity->area())) > 3)
 							{
 								iRazeValue += 30;
 							}
@@ -2199,9 +2209,9 @@ int CvPlayerAI::AI_foundValueNative(int iX, int iY, bool allowSettleOnBonus) con
 }
 
 
-bool CvPlayerAI::AI_isAreaAlone(CvArea* pArea)
+bool CvPlayerAI::AI_isAreaAlone(CvArea const& kArea) const
 {
-	return ((pArea->getNumCities()) == GET_TEAM(getTeam()).countNumCitiesByArea(pArea));
+	return ((kArea.getNumCities()) == GET_TEAM(getTeam()).countNumCitiesByArea(kArea));
 }
 
 
@@ -2213,32 +2223,28 @@ bool CvPlayerAI::AI_isCapitalAreaAlone()
 
 	if (pCapitalCity != NULL)
 	{
-		return AI_isAreaAlone(pCapitalCity->area());
+		return AI_isAreaAlone(*pCapitalCity->area());
 	}
 
 	return false;
 }
 
 
-bool CvPlayerAI::AI_isPrimaryArea(CvArea* pArea)
+bool CvPlayerAI::AI_isPrimaryArea(CvArea const& kArea) const
 {
 	CvCity* pCapitalCity;
 
-	if (pArea->isWater())
-	{
+	if (kArea.isWater())
 		return false;
-	}
 
-	if (pArea->getCitiesPerPlayer(getID()) > 2)
-	{
+	if (kArea.getCitiesPerPlayer(getID()) > 2)
 		return true;
-	}
 
 	pCapitalCity = getPrimaryCity();
 
 	if (pCapitalCity != NULL)
 	{
-		if (pCapitalCity->area() == pArea)
+		if (pCapitalCity->area() == &kArea)
 		{
 			return true;
 		}
@@ -2248,9 +2254,11 @@ bool CvPlayerAI::AI_isPrimaryArea(CvArea* pArea)
 }
 
 
-int CvPlayerAI::AI_militaryWeight(CvArea* pArea)
+int CvPlayerAI::AI_militaryWeight(CvArea const* pArea)
 {
-	return (pArea->getPopulationPerPlayer(getID()) + pArea->getCitiesPerPlayer(getID()) + 1);
+	return (pArea != NULL
+		? pArea->getPopulationPerPlayer(getID()) + pArea->getCitiesPerPlayer(getID()) + 1
+		: getTotalPopulation() + getNumCities() + 1); // K-Mod: count all areas
 }
 
 
@@ -2341,14 +2349,18 @@ CvCity* CvPlayerAI::AI_findTargetCity(CvArea* pArea)
 
 	for (iI = 0; iI < MAX_PLAYERS; iI++)
 	{
-		if (GET_PLAYER((PlayerTypes)iI).isAlive())
+		const CvTeam& kOtherTeam = GET_TEAM((TeamTypes)iI);
+
+		if (GET_PLAYER((PlayerTypes)iI).isAlive() && kOtherTeam.isHasMet(TEAMID(getID())))
 		{
 			// R&R, ray, Natives raiding party - START
 			if ((isPotentialEnemy(getTeam(), GET_PLAYER((PlayerTypes)iI).getTeam())) || (AI_isPotentialRaidTarget((PlayerTypes)iI)))
 			{
 				for (pLoopCity = GET_PLAYER((PlayerTypes)iI).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER((PlayerTypes)iI).nextCity(&iLoop))
 				{
-					if (pLoopCity->area() == pArea)
+					if (pLoopCity->area() == pArea && 			
+						// advc.001: Don't cheat with visibility
+						GET_TEAM(getTeam()).AI_deduceCitySite(*pLoopCity))
 					{
 						iValue = AI_targetCityValue(pLoopCity, true);
 
@@ -11863,6 +11875,9 @@ void CvPlayerAI::AI_swapUnitJobs(CvUnit* pUnitA, CvUnit* pUnitB)
 		pUnitA->AI_setMovePriority(iMovePriorityB);
 		pUnitA->AI_setUnitAIType(eUnitAI_B);
 	}
+
+	logBBAI("CvPlayerAI::AI_swapUnitJobs Player %S Units %d and %d", getCivilizationDescription(),
+		pUnitA->getID(), pUnitB->getID());
 }
 
 int CvPlayerAI::AI_sumAttackerStrength(CvPlot* pPlot, CvPlot* pAttackedPlot, int iRange, DomainTypes eDomainType, bool bCheckCanAttack, bool bCheckCanMove)
@@ -16241,7 +16256,7 @@ bool CvPlayerAI::AI_prepareAssaultSea()
 						{
 							if (pLoopCity->plot()->isRevealed(getTeam(), false))
 							{
-								if (!AI_isPrimaryArea(pLoopCity->area()))
+								if (!AI_isPrimaryArea(*pLoopCity->area()))
 								{
 									return true;
 								}
@@ -16485,6 +16500,9 @@ int CvPlayerAI::AI_estimateUnemploymentCount() const
 			cnt++;
 		}
 	}
+
+	logBBAI("CvPlayerAI::AI_estimateUnemploymentCount for Player %S: %d", getCivilizationDescription(),
+		cnt);
 
 	return cnt;
 }
@@ -16849,4 +16867,30 @@ int CvPlayerAI::AI_plotTargetMissionAIsEx(CvPlot const& kPlot, MissionAITypes* a
 		}
 	}
 	return std::min(iCount, iMaxCount); // advc.opt: (to be consistent)
+}
+
+/*	K-Mod. Note, unlike some other timers, this timer is internally stored
+	as the turn number that the timer will expire.
+	With this system, the timer doesn't have to be decremented every turn. */
+int CvPlayerAI::AI_getCityTargetTimer() const
+{
+	return std::max(0, m_iCityTargetTimer - GC.getGame().getGameTurn());
+}
+
+
+void CvPlayerAI::AI_setCityTargetTimer(int iTurns)
+{
+	m_iCityTargetTimer = GC.getGame().getGameTurn() + iTurns;
+} // K-Mod end
+
+int CvPlayerAI::countNumMilitaryUnits() const
+{
+	int iCount = 0;
+	FOR_EACH_UNIT(pUnit, *this)
+	{
+		if (pUnit->canAttack())
+			iCount++;
+	}
+
+	return iCount;
 }

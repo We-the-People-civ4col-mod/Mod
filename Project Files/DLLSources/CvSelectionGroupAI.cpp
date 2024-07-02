@@ -16,6 +16,7 @@
 //End TAC Whaling, ray
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
 // Public Functions...
 
 CvSelectionGroupAI::CvSelectionGroupAI()
@@ -175,7 +176,7 @@ bool CvSelectionGroupAI::AI_update()
 
 	//int iTempHack = 0; // XXX
 	int iAttempts = 0;
-	int iMaxAttempts = 100 + std::max(getNumUnits(), 4); // WTP: Arbitrary
+	int iMaxAttempts = 10 + std::max(getNumUnits(), 4); // WTP: Arbitrary
 #ifdef _DEBUG
 	iMaxAttempts += 4; // Extra iterations for debugging
 #endif
@@ -183,7 +184,7 @@ bool CvSelectionGroupAI::AI_update()
 	bool bDead = false;
 	bool bFailedAlreadyFighting = false;
 	//while ((m_bGroupAttack && !bFailedAlreadyFighting) || readyToMove())
-	while ((AI_isGroupAttack() && !isBusy()) || readyToMove()/* || hasShipInPort()*/) // K-Mod / WTP
+	while ((AI_isGroupAttack() && !isBusy()) || readyToMove()) // K-Mod
 	{
 		// K-Mod. Force update just means we should get into this loop at least once.
 		setForceUpdate(false);
@@ -192,12 +193,40 @@ bool CvSelectionGroupAI::AI_update()
 		{
 			CvUnit* pHeadUnit = getHeadUnit();
 			FAssert(false);
+			pHeadUnit->AI_update(); // Debugging
 			if (NULL != pHeadUnit)
 			{
+				char szOut[1024];
+				CvWString szTempString;
+				getUnitAIString(szTempString, pHeadUnit->AI_getUnitAIType());
+
+				logBBAI("WARNING CvSelectionGroupAI::AI_update() Player %S Unit %d is stuck in a loop. %S(%S)[%d, %d] %s,%s",
+					GET_PLAYER(pHeadUnit->getOwnerINLINE()).getCivilizationDescription(), pHeadUnit->getID(),
+					pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
+					pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->isOnMap() ? "isOnMap:true" : "isOnMap:false",
+					pHeadUnit->isCargo() ? "isCargo:true" : "isCargo:false");
+
+				if (pHeadUnit->hasCargo())
+				{
+					CLinkList<IDInfo> listCargo;
+					pHeadUnit->getGroup()->buildCargoUnitList(listCargo);
+					CLLNode<IDInfo>* pUnitNode = listCargo.head();
+					while (pUnitNode != NULL)
+					{
+						CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data);
+						pUnitNode = listCargo.next(pUnitNode);
+
+						if (pLoopUnit != NULL)
+						{
+							logBBAI("	Cargo: Unit %d is stuck in a loop. %S(%S)[%d, %d] %s",
+								pHeadUnit->getID(), pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
+								pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->canMove() ? "canMove:true" : "canMove:false");
+						}
+					}
+				}
+
 				if (GC.getLogging())
 				{
-					char szOut[1024];
-					CvWString szTempString;
 					getUnitAIString(szTempString, pHeadUnit->AI_getUnitAIType());
 					sprintf(szOut, "Unit stuck in loop: %S(%S)[%d, %d] (%S)", pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
 						pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), szTempString.GetCString());
@@ -225,6 +254,14 @@ bool CvSelectionGroupAI::AI_update()
 			{
 				break;
 			}
+
+			CvWString szTempString;
+			getUnitAIString(szTempString, pHeadUnit->AI_getUnitAIType());
+
+			logBBAI("CvSelectionGroupAI::AI_update() for Player %S Unit %d Attempt: %d: %S(%S)[%d, %d] (%S)", 
+				GET_PLAYER(pHeadUnit->getOwnerINLINE()).getCivilizationDescription(), pHeadUnit->getID(),
+				iAttempts, pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
+				pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), szTempString.GetCString());
 
 			if (pHeadUnit->AI_update())
 			{

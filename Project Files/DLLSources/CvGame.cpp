@@ -31,6 +31,7 @@
 #include "CvDLLPythonIFaceBase.h"
 
 #include "CvSavegame.h"
+#include "BetterBTSAI.h"
 
 // Public Functions...
 
@@ -4428,7 +4429,7 @@ void CvGame::setFinalInitialized(bool bNewValue)
 			{
 				if (GET_TEAM((TeamTypes)iI).isAlive())
 				{
-					GET_TEAM((TeamTypes)iI).AI_updateAreaStragies();
+					GET_TEAM((TeamTypes)iI).AI_updateAreaStrategies();
 				}
 			}
 			/// PlotGroup - start - Nightinggale
@@ -5817,8 +5818,8 @@ void CvGame::updateMoves()
 		getSorenRand().shuffleArray(aiShuffle, NULL);
 	}
 
-	int iMaxUnitUpdateAttempts = 18;
-	FAssertMsg(m_iUnitUpdateAttempts != iMaxUnitUpdateAttempts, "Unit stuck in a loop");
+	int iMaxUnitUpdateAttempts = 10;
+
 #ifdef _DEBUG
 	iMaxUnitUpdateAttempts += 4; // Extra iterations for debugging
 #endif
@@ -5843,7 +5844,51 @@ void CvGame::updateMoves()
 				{
 					kPlayer.setAutoMoves(true);
 				}
-				else m_iUnitUpdateAttempts++; // advc.001y
+				else
+				{
+					m_iUnitUpdateAttempts++; // advc.001y
+					CvUnit* const pHeadUnit = kPlayer.getReadyUnit(true);
+
+					if (m_iUnitUpdateAttempts == iMaxUnitUpdateAttempts)
+					{
+						FErrorMsg("Unit stuck in a loop");
+						if (pHeadUnit != NULL)
+						{
+							logBBAI("CvGame::updateMoves() WARNING Player %S Unit %d is stuck in a loop. %S(%S)[%d, %d] %s,%s",
+								GET_PLAYER(pHeadUnit->getOwnerINLINE()).getCivilizationDescription(), pHeadUnit->getID(),
+								pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
+								pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->isOnMap() ? "isOnMap:true" : "isOnMap:false",
+								pHeadUnit->isCargo() ? "isCargo:true" : "isCargo:false");
+						}
+						if (pHeadUnit->hasCargo())
+						{
+							CLinkList<IDInfo> listCargo;
+							pHeadUnit->getGroup()->buildCargoUnitList(listCargo);
+							CLLNode<IDInfo>* pUnitNode = listCargo.head();
+							while (pUnitNode != NULL)
+							{
+								CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data);
+								pUnitNode = listCargo.next(pUnitNode);
+
+								if (pLoopUnit != NULL)
+								{
+									logBBAI("	Cargo: Unit %d is stuck in a loop. %S(%S)[%d, %d] %s",
+										pHeadUnit->getID(), pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
+										pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->canMove() ? "canMove:true" : "canMove:false");
+								}
+							}
+						}
+					}
+					else if (m_iUnitUpdateAttempts == iMaxUnitUpdateAttempts - 1)
+					{
+						// Debugging for when a unit is about to get stuck
+						volatile int dummy = 1;
+						dummy++;
+
+						pHeadUnit->AI_update(); // Debugging
+					}
+				}
+
 			}
 		}
 		if (kPlayer.isAutoMoves())

@@ -863,7 +863,7 @@ bool CvCityAI::AI_hasCoastalRoute() const
 
 BuildingTypes CvCityAI::AI_bestBuildingThreshold(int iFocusFlags, int iMaxTurns, int iMinThreshold, bool bAsync) const
 {
-	const bool bAreaAlone = GET_PLAYER(getOwnerINLINE()).AI_isAreaAlone(area());
+	const bool bAreaAlone = GET_PLAYER(getOwnerINLINE()).AI_isAreaAlone(*area());
 
 	const int iProductionRank = findYieldRateRank(YIELD_HAMMERS);
 
@@ -6219,11 +6219,11 @@ int CvCityAI::AI_calculateWaterWorldPercent() const
 		{
 			if (iI == getTeam())
 			{
-				iTeamCityCount += GET_TEAM((TeamTypes)iI).countNumCitiesByArea(area());
+				iTeamCityCount += GET_TEAM((TeamTypes)iI).countNumCitiesByArea(*area());
 			}
 			else
 			{
-				iOtherCityCount += GET_TEAM((TeamTypes)iI).countNumCitiesByArea(area());
+				iOtherCityCount += GET_TEAM((TeamTypes)iI).countNumCitiesByArea(*area());
 			}
 		}
 	}

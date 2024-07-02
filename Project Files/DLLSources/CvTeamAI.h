@@ -47,15 +47,15 @@ public:
 
 	int AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensiveBonuses, bool bTestMoves, bool bIncludeVassals = false) const;	// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
 
-	void AI_updateAreaStragies(bool bTargets = true);
+	void AI_updateAreaStrategies(bool bTargets = true);
 	void AI_updateAreaTargets();
 
-	int AI_countMilitaryWeight(CvArea* pArea) const;
+	int AI_countMilitaryWeight(CvArea const* pArea) const;
 
 	bool AI_isAnyCapitalAreaAlone() const;
-	bool AI_isPrimaryArea(CvArea* pArea) const;
+	bool AI_isPrimaryArea(CvArea const& kArea) const;
 	bool AI_hasCitiesInPrimaryArea(TeamTypes eTeam) const;
-	AreaAITypes AI_calculateAreaAIType(CvArea* pArea, bool bPreparingTotal = false) const;
+	AreaAITypes AI_calculateAreaAIType(CvArea const& kArea, bool bPreparingTotal = false) const;
 
 	int AI_calculateAdjacentLandPlots(TeamTypes eTeam) const;
 	int AI_calculateCapitalProximity(TeamTypes eTeam) const;
@@ -189,8 +189,13 @@ public:
 	AIStrengthMemoryMap& AI_strengthMemory() const { return m_strengthMemory; }
 
 	bool AI_isColonialPower() const;
+	int AI_getWarSuccessRating() const; // K-Mod
 	int AI_getEnemyPowerPercent(bool bConsiderOthers = false) const;
 	bool AI_deduceCitySite(CvCity const& kCity) const; // K-Mod
+	// advc: countEnemy... functions moved from CvTeam
+	int AI_countEnemyPowerByArea(CvArea const& kArea) const;
+	int AI_countEnemyCitiesByArea(CvArea const& kArea) const; // K-Mod
+	int AI_countEnemyDangerByArea(CvArea const& kArea, TeamTypes eEnemyTeam = NO_TEAM) const; // bbai
 
 protected:
 

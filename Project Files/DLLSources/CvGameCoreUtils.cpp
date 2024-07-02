@@ -2231,6 +2231,7 @@ void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI)
 	case MISSIONAI_HEAL: szString = L"MISSIONAI_HEAL"; break;
 	case MISSIONAI_CHOKE: szString = L"MISSIONAI_CHOKE"; break;
 	case MISSIONAI_STRANDED: szString = L"MISSIONAI_STRANDED"; break;
+	case MISSIONAI_NO_GOLD: szString = L"MISSIONAI_NO_GOLD"; break;
 	default: szString = CvWString::format(L"UNKOWN_MISSION_AI(%d)", eMissionAI); break;
 	}
 }

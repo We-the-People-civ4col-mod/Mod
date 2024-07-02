@@ -92,7 +92,7 @@ public:
 	bool canFight() const;
 	bool canDefend() const;
 	bool canBombard(const CvPlot* pPlot) const;
-	bool visibilityRange() const;
+	int visibilityRange() const;
 
 	int getBombardTurns( CvCity* pCity );	// TAC - AI Attack City - koma13, jdog5000(BBAI)
 
