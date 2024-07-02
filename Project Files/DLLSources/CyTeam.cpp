@@ -121,28 +121,32 @@ int CyTeam::countNumUnitsByArea(CyArea* pArea)
 }
 int CyTeam::countNumCitiesByArea(CyArea* pArea)
 {
-	return m_pTeam ? m_pTeam->countNumCitiesByArea(pArea->getArea()) : -1;
+	return m_pTeam ? m_pTeam->countNumCitiesByArea(*pArea->getArea()) : -1;
 }
 int CyTeam::countTotalPopulationByArea(CyArea* pArea)
 {
 	return m_pTeam ? m_pTeam->countTotalPopulationByArea(pArea->getArea()) : -1;
 }
-int CyTeam::countPowerByArea(CyArea* pArea)
+/*int CyTeam::countPowerByArea(CyArea* pArea)
 {
 	return m_pTeam ? m_pTeam->countPowerByArea(pArea->getArea()) : -1;
 }
+
 int CyTeam::countEnemyPowerByArea(CyArea* pArea)
 {
 	return m_pTeam ? m_pTeam->countEnemyPowerByArea(pArea->getArea()) : -1;
 }
+*/
 int CyTeam::countNumAIUnitsByArea(CyArea* pArea, int /*UnitAITypes*/ eUnitAI)
 {
 	return m_pTeam ? m_pTeam->countNumAIUnitsByArea(pArea->getArea(), (UnitAITypes) eUnitAI) : -1;
 }
+/*
 int CyTeam::countEnemyDangerByArea(CyArea* pArea)
 {
 	return m_pTeam ? m_pTeam->countEnemyDangerByArea(pArea->getArea()) : -1;
 }
+*/
 int CyTeam::getFatherPointCost(int /*FatherTypes*/ eFather, int /*FatherPointTypes*/ ePointType)
 {
 	return m_pTeam ? m_pTeam->getFatherPointCost((FatherTypes) eFather, (FatherPointTypes) ePointType) : -1;

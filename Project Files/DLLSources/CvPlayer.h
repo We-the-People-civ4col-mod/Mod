@@ -1276,6 +1276,7 @@ public:
 	// transport feeder - end - Nightinggale
 	void sortEuropeUnits();
 	void postLoadFixes();
+	CvUnit* getReadyUnit(bool bAny = false) const;
 
 	// Clean this up
 	std::vector<ProfessionTypes> m_validCityJobProfessions;

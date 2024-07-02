@@ -85,7 +85,7 @@ enum SavegameVariableTypes
 	PlayerSaveAI_Emotions,
 	PlayerSaveAI_StrategyStartedTurn,
 	PlayerSaveAI_StrategyData,
-
+	PlayerSaveAI_CityTargetTimer,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -137,16 +137,16 @@ const char* getSavedEnumNamePlayerAi(SavegameVariableTypes eType)
 	case PlayerSaveAI_LastWave: return "PlayerSaveAI_LastWave";
 	case PlayerSaveAI_WaveIndex: return "PlayerSaveAI_WaveIndex";
 
-		case PlayerSaveAI_AICitySites: return "PlayerSaveAI_AICitySites";
-		case PlayerSaveAI_unitPriorityHeap: return "PlayerSaveAI_unitPriorityHeap";
-		case PlayerSaveAI_UnitClassWeights: return "PlayerSaveAI_UnitClassWeights";
-		case PlayerSaveAI_UnitCombatWeights: return "PlayerSaveAI_UnitCombatWeights";
-		case PlayerSaveAI_CloseBordersAttitudeCache: return "PlayerSaveAI_CloseBordersAttitudeCache";
-		case PlayerSaveAI_StolenPlotsAttitudeCache: return "PlayerSaveAI_StolenPlotsAttitudeCache";
-		case PlayerSaveAI_Emotions: return "PlayerSaveAI_Emotions";
-		case PlayerSaveAI_StrategyStartedTurn: return "PlayerSaveAI_StrategyStartedTurn";
-		case PlayerSaveAI_StrategyData: return "PlayerSaveAI_StrategyData";
-
+	case PlayerSaveAI_AICitySites: return "PlayerSaveAI_AICitySites";
+	case PlayerSaveAI_unitPriorityHeap: return "PlayerSaveAI_unitPriorityHeap";
+	case PlayerSaveAI_UnitClassWeights: return "PlayerSaveAI_UnitClassWeights";
+	case PlayerSaveAI_UnitCombatWeights: return "PlayerSaveAI_UnitCombatWeights";
+	case PlayerSaveAI_CloseBordersAttitudeCache: return "PlayerSaveAI_CloseBordersAttitudeCache";
+	case PlayerSaveAI_StolenPlotsAttitudeCache: return "PlayerSaveAI_StolenPlotsAttitudeCache";
+	case PlayerSaveAI_Emotions: return "PlayerSaveAI_Emotions";
+	case PlayerSaveAI_StrategyStartedTurn: return "PlayerSaveAI_StrategyStartedTurn";
+	case PlayerSaveAI_StrategyData: return "PlayerSaveAI_StrategyData";
+	case PlayerSaveAI_CityTargetTimer: return "PlayerSaveAI_CityTargetTimer";
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -211,7 +211,7 @@ void CvPlayerAI::AI_resetSavedData()
 	m_em_iEmotions.reset();
 	m_em_iStrategyStartedTurn.reset();
 	m_em_iStrategyData.reset();
-
+	m_iCityTargetTimer = 0; // K-Mod
 }
 
 void CvPlayerAI::read(CvSavegameReader reader)
@@ -288,6 +288,7 @@ void CvPlayerAI::read(CvSavegameReader reader)
 		case PlayerSaveAI_Emotions: reader.Read(m_em_iEmotions); break;
 		case PlayerSaveAI_StrategyStartedTurn: reader.Read(m_em_iStrategyStartedTurn); break;
 		case PlayerSaveAI_StrategyData: reader.Read(m_em_iStrategyData); break;
+		case PlayerSaveAI_CityTargetTimer: reader.Read(m_iCityTargetTimer); break;
 		}
 	}
 	
@@ -359,7 +360,8 @@ void CvPlayerAI::write(CvSavegameWriter writer)
 	writer.Write(PlayerSaveAI_Emotions, m_em_iEmotions);
 	writer.Write(PlayerSaveAI_StrategyStartedTurn, m_em_iStrategyStartedTurn);
 	writer.Write(PlayerSaveAI_StrategyData, m_em_iStrategyData);
-	
+	writer.Write(PlayerSaveAI_StrategyData, m_em_iStrategyData);
+	writer.Write(PlayerSaveAI_CityTargetTimer, m_iCityTargetTimer);
 
 	writer.Write(PlayerSaveAI_END);
 }

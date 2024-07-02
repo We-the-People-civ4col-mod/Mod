@@ -554,4 +554,7 @@ inline CvRandom& syncRand()
 #define SyncRandNum(iNumOutcomes) \
 	CVGAME_INSTANCE_FOR_RNG.getSorenRandNum((iNumOutcomes), CALL_LOC_STR)
 
+#define SyncRandOneChanceIn(iNumLots) \
+	(SyncRandNum(iNumLots) == 0)
+
 #endif

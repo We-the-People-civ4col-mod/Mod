@@ -333,7 +333,7 @@ void CvTeam::addTeam(TeamTypes eTeam)
 
 	AI_updateWorstEnemy();
 
-	AI_updateAreaStragies();
+	AI_updateAreaStrategies();
 
 	GC.getGameINLINE().updateScore(true);
 
@@ -1474,7 +1474,7 @@ int CvTeam::countNumUnitsByArea(CvArea* pArea) const
 }
 
 
-int CvTeam::countNumCitiesByArea(CvArea* pArea) const
+int CvTeam::countNumCitiesByArea(CvArea const& kArea) const
 {
 	PROFILE_FUNC();
 
@@ -1489,7 +1489,7 @@ int CvTeam::countNumCitiesByArea(CvArea* pArea) const
 		{
 			if (GET_PLAYER((PlayerTypes)iI).getTeam() == getID())
 			{
-				iCount += pArea->getCitiesPerPlayer((PlayerTypes)iI);
+				iCount += kArea.getCitiesPerPlayer((PlayerTypes)iI);
 			}
 		}
 	}
@@ -1520,7 +1520,7 @@ int CvTeam::countTotalPopulationByArea(CvArea* pArea) const
 }
 
 
-int CvTeam::countPowerByArea(CvArea* pArea) const
+int CvTeam::countPowerByArea(CvArea const& kArea) const
 {
 	int iCount;
 	int iI;
@@ -1533,39 +1533,13 @@ int CvTeam::countPowerByArea(CvArea* pArea) const
 		{
 			if (GET_PLAYER((PlayerTypes)iI).getTeam() == getID())
 			{
-				iCount += pArea->getPower((PlayerTypes)iI);
+				iCount += kArea.getPower((PlayerTypes)iI);
 			}
 		}
 	}
 
 	return iCount;
 }
-
-
-int CvTeam::countEnemyPowerByArea(CvArea* pArea) const
-{
-	int iCount;
-	int iI;
-
-	iCount = 0;
-
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
-	{
-		if (GET_PLAYER((PlayerTypes)iI).isAlive())
-		{
-			if (GET_PLAYER((PlayerTypes)iI).getTeam() != getID())
-			{
-				if (isAtWar(GET_PLAYER((PlayerTypes)iI).getTeam()))
-				{
-					iCount += pArea->getPower((PlayerTypes)iI);
-				}
-			}
-		}
-	}
-
-	return iCount;
-}
-
 
 int CvTeam::countNumAIUnitsByArea(CvArea* pArea, UnitAITypes eUnitAI) const
 {
@@ -1583,36 +1557,6 @@ int CvTeam::countNumAIUnitsByArea(CvArea* pArea, UnitAITypes eUnitAI) const
 			if (GET_PLAYER((PlayerTypes)iI).getTeam() == getID())
 			{
 				iCount += pArea->getNumAIUnits(((PlayerTypes)iI), eUnitAI);
-			}
-		}
-	}
-
-	return iCount;
-}
-
-
-int CvTeam::countEnemyDangerByArea(CvArea* pArea) const
-{
-	PROFILE_FUNC();
-
-	CvPlot* pLoopPlot;
-	int iCount;
-	int iI;
-
-	iCount = 0;
-
-	for (iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
-	{
-		pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
-
-		if (pLoopPlot != NULL)
-		{
-			if (pLoopPlot->area() == pArea)
-			{
-				if (pLoopPlot->getTeam() == getID())
-				{
-					iCount += pLoopPlot->plotCount(PUF_canDefendEnemy, getLeaderID(), false, NO_PLAYER, NO_TEAM, PUF_isVisible, getLeaderID());
-				}
 			}
 		}
 	}

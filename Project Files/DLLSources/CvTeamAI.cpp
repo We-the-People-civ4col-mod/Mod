@@ -90,7 +90,7 @@ void CvTeamAI::AI_doTurnPost()
 
 	AI_updateWorstEnemy();
 
-	AI_updateAreaStragies(false);
+	AI_updateAreaStrategies(false);
 	
 	AI_doTactics();
 
@@ -141,7 +141,7 @@ int CvTeamAI::AI_getOurPlotStrength(CvPlot* pPlot, int iRange, bool bDefensiveBo
 }
 // TAC - AI Assault Sea - koma13, jdog5000(BBAI) - END
 
-void CvTeamAI::AI_updateAreaStragies(bool bTargets)
+void CvTeamAI::AI_updateAreaStrategies(bool bTargets)
 {
 	CvArea* pLoopArea;
 	int iLoop;
@@ -153,7 +153,7 @@ void CvTeamAI::AI_updateAreaStragies(bool bTargets)
 
 	for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 	{
-		pLoopArea->setAreaAIType(getID(), AI_calculateAreaAIType(pLoopArea));
+		pLoopArea->setAreaAIType(getID(), AI_calculateAreaAIType(*pLoopArea));
 	}
 
 	if (bTargets)
@@ -179,7 +179,7 @@ void CvTeamAI::AI_updateAreaTargets()
 	}
 }
 
-int CvTeamAI::AI_countMilitaryWeight(CvArea* pArea) const
+int CvTeamAI::AI_countMilitaryWeight(CvArea const* pArea) const
 {
 	int iCount;
 	int iI;
@@ -223,7 +223,7 @@ bool CvTeamAI::AI_isAnyCapitalAreaAlone() const
 }
 
 
-bool CvTeamAI::AI_isPrimaryArea(CvArea* pArea) const
+bool CvTeamAI::AI_isPrimaryArea(CvArea const& kArea) const
 {
 	int iI;
 
@@ -233,7 +233,7 @@ bool CvTeamAI::AI_isPrimaryArea(CvArea* pArea) const
 		{
 			if (GET_PLAYER((PlayerTypes)iI).getTeam() == getID())
 			{
-				if (GET_PLAYER((PlayerTypes)iI).AI_isPrimaryArea(pArea))
+				if (GET_PLAYER((PlayerTypes)iI).AI_isPrimaryArea(kArea))
 				{
 					return true;
 				}
@@ -254,9 +254,9 @@ bool CvTeamAI::AI_hasCitiesInPrimaryArea(TeamTypes eTeam) const
 
 	for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 	{
-		if (AI_isPrimaryArea(pLoopArea))
+		if (AI_isPrimaryArea(*pLoopArea))
 		{
-			if (GET_TEAM(eTeam).countNumCitiesByArea(pLoopArea))
+			if (GET_TEAM(eTeam).countNumCitiesByArea(*pLoopArea))
 			{
 				return true;
 			}
@@ -267,203 +267,224 @@ bool CvTeamAI::AI_hasCitiesInPrimaryArea(TeamTypes eTeam) const
 }
 
 
-AreaAITypes CvTeamAI::AI_calculateAreaAIType(CvArea* pArea, bool bPreparingTotal) const
+/*  advc.104s (note): If UWAI is enabled, AI_doWar may adjust (i.e. overwrite) the
+	result of this calculation through UWAI::Team::alignAreaAI. */
+AreaAITypes CvTeamAI::AI_calculateAreaAIType(CvArea const& kArea, bool bPreparingTotal) const
 {
 	PROFILE_FUNC();
 
-	bool bRecentAttack;
-	bool bTargets;
-	bool bChosenTargets;
-	bool bDeclaredTargets;
-	int iOffensiveThreshold;
-	int iAreaCities;
-	int iI;
+	if (kArea.isWater())
+		return AREAAI_NEUTRAL; // K-Mod (no functional change)
 
-	if (hasNativePlayer() && !(pArea->isWater()))
+	bool bRecentAttack = false;
+	bool bTargets = false;
+	bool bChosenTargets = false;
+	bool bDeclaredTargets = false;
+
+	bool bAssault = false;
+	bool bPreparingAssault = false;
+
+	// int iOffensiveThreshold = (bPreparingTotal ? 25 : 20); // K-Mod, I don't use this.
+	int iAreaCities = countNumCitiesByArea(kArea);
+	int iWarSuccessRating = AI_getWarSuccessRating(); // K-Mod
+
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 	{
-		int iBestValue = 0;
-		WarPlanTypes eBestWarplan = NO_WARPLAN;
-		TeamTypes eBestTeam = NO_TEAM;
-		
-		//Trying new code for natives only.
-		for (iI = 0; iI < MAX_TEAMS; iI++)
-		{
-			if (GET_TEAM((TeamTypes)iI).isAlive())
-			{
-				TeamTypes eLoopTeam = (TeamTypes)iI;
-				
-				WarPlanTypes eWarplan = AI_getWarPlan((TeamTypes)iI);
-				
-				if (eWarplan != NO_WARPLAN)
-				{
-					FAssert(((TeamTypes)iI) != getID());
-					FAssert(isHasMet((TeamTypes)iI) || GC.getGameINLINE().isOption(GAMEOPTION_ALWAYS_WAR));
+		const CvTeamAI& kEnemy = GET_TEAM(eTeam);
+		const TeamTypes ourTeam = getID();
+		if (!kEnemy.isHasMet(ourTeam) || !kEnemy.isAlive() || !kEnemy.AI_isColonialPower())
+			continue;
 
-					if ((GET_TEAM((TeamTypes)iI).countNumCitiesByArea(pArea) > 0) || (GET_TEAM((TeamTypes)iI).countNumUnitsByArea(pArea) > 4))
-					{
-						int iValue = AI_warplanStrength(eWarplan);
-						if (iValue > iBestValue)
-						{
-							iBestValue = iValue;
-							eBestWarplan = eWarplan;
-							eBestTeam = eLoopTeam;
-						}
-					}
+		CvTeam const& kTarget = GET_TEAM(eTeam);
+		TeamTypes const eTarget = kTarget.getID();
+		if (AI_getWarPlan(eTarget) == NO_WARPLAN)
+			continue;
+
+		if (AI_getWarPlan(eTarget) == WARPLAN_ATTACKED_RECENT)
+		{
+			FAssert(isAtWar(eTarget));
+			bRecentAttack = true;
+		}
+
+		if (kTarget.countNumCitiesByArea(kArea) > 0 &&
+			//|| GET_TEAM((TeamTypes)iI).countNumUnitsByArea(kArea) > 4)
+		/*  advc.104s: Replacing the above. Setting AreaAI to ASSAULT won't stop
+			the AI from fighting any landed units. Need to focus on cities.
+			isLandTarget makes sure that there are reachable cities. Still check
+			city count for efficiency (there can be a lot of land areas to
+			calculate AI types for). */
+			AI_isLandTarget(eTarget))
+		{
+			bTargets = true;
+			if (AI_isChosenWar(eTarget))
+			{
+				bChosenTargets = true;
+
+				if (isAtWar(eTarget) ?
+					(AI_getAtWarCounter(eTarget) < 10) :
+					AI_isSneakAttackReady(eTarget))
+				{
+					bDeclaredTargets = true;
 				}
 			}
-		}
-		
-		if (eBestWarplan == WARPLAN_TOTAL || eBestWarplan == WARPLAN_PREPARING_TOTAL)
-		{
-			return AREAAI_OFFENSIVE;
-		}
-		
-		if (eBestWarplan == WARPLAN_ATTACKED || eBestWarplan == WARPLAN_ATTACKED_RECENT)
-		{
-			if ((countPowerByArea(pArea) * 60) > (countEnemyPowerByArea(pArea) * 100))
-			{
-				if (AI_getAttitude(eBestTeam) == ATTITUDE_FURIOUS)
-				{
-					return AREAAI_OFFENSIVE;
-				}
-				else
-				{
-					return AREAAI_BALANCED;
-				}
-			}
-			else
-			{
-				return AREAAI_DEFENSIVE;
-			}
-		}
-		
-		if (countEnemyPowerByArea(pArea) > 0)
-		{
-			return AREAAI_BALANCED;
-		}
-		
-		return AREAAI_NEUTRAL;
-	}
-	else if (!(pArea->isWater()))
-	{
-		bRecentAttack = false;
-		bTargets = false;
-		bChosenTargets = false;
-		bDeclaredTargets = false;
-
-		bool bAssault = false;
-		bool bPreparingAssault = false;
-
-		if (bPreparingTotal)
-		{
-			iOffensiveThreshold = 25;
 		}
 		else
 		{
-			iOffensiveThreshold = 20;
+			bAssault = true;
+			if (AI_isSneakAttackPreparing(eTarget))
+				bPreparingAssault = true;
 		}
+	}
 
-		iAreaCities = countNumCitiesByArea(pArea);
-		
-		bool bTotalTargets = false;
+	// K-Mod - based on idea from BBAI
+	if (bTargets && iAreaCities > 0 && getNumWars() > 0)
+	{
+		int iPower = countPowerByArea(kArea);
+		int iEnemyPower = AI_countEnemyPowerByArea(kArea);
+		iPower *=
+			AI_limitedWarPowerRatio() + // advc.107: was 100 flat
+			// (addressing the K-Mod comment below)
+			iWarSuccessRating + //(bChosenTargets ? 100 : 50)
+			(bChosenTargets || !bRecentAttack ? 100 : 70); // advc.107
+		iEnemyPower *= 100;
+		/*  it would be nice to put some personality modifiers into this.
+			But this is a Team function. :( */
+		if (iPower < iEnemyPower)
+			return AREAAI_DEFENSIVE;
+	} // K-Mod end
 
-		for (iI = 0; iI < MAX_TEAMS; iI++)
+	if (bDeclaredTargets)
+		return AREAAI_OFFENSIVE;
+
+	if (bTargets)
+	{
+		/* BBAI code. -- This code has two major problems.
+		* Firstly, it makes offense more likely when we are in more wars.
+		* Secondly, it chooses offense based on how many offense units we have --
+		* but offense units are built for offense areas!
+		*
+		// AI_countMilitaryWeight is based on this team's pop and cities ...
+		// if this team is the biggest, it will over estimate needed units
+		int iMilitaryWeight = AI_countMilitaryWeight(&kArea);
+		int iCount = 1;
+		for (int iJ = 0; iJ < MAX_CIV_TEAMS; iJ++) {
+			if (iJ != getID() && GET_TEAM((TeamTypes)iJ).isAlive()) {
+				if (!(GET_TEAM((TeamTypes)iJ).isBarbarian() ||
+						GET_TEAM((TeamTypes)iJ).isMinorCiv())) {
+					if (AI_getWarPlan((TeamTypes)iJ) != NO_WARPLAN) {
+						iMilitaryWeight += GET_TEAM((TeamTypes)iJ).
+								AI_countMilitaryWeight(&kArea);
+						iCount++;
+						if (GET_TEAM((TeamTypes)iJ).isAVassal()) {
+							for (int iK = 0; iK < MAX_CIV_TEAMS; iK++) {
+								if (iK != getID() && GET_TEAM((TeamTypes)iK).isAlive()) {
+									if (GET_TEAM((TeamTypes)iJ).isVassal((TeamTypes)iK)) {
+										iMilitaryWeight += GET_TEAM((TeamTypes)iK).
+												AI_countMilitaryWeight(&kArea);
+		} } } } } } } }
+		iMilitaryWeight /= iCount;
+		if (countNumAIUnitsByArea(kArea, UNITAI_ATTACK) +
+				countNumAIUnitsByArea(kArea, UNITAI_ATTACK_CITY) +
+				countNumAIUnitsByArea(kArea, UNITAI_PILLAGE) +
+				countNumAIUnitsByArea(kArea, UNITAI_ATTACK_AIR) >
+				(iMilitaryWeight * iOffensiveThreshold) / 100 + 1)
+			return AREAAI_OFFENSIVE;*/
+			/*  K-Mod. I'm not sure how best to do this yet. Let me just try a rough
+				idea for now. I'm using AI_countMilitaryWeight; but what I really
+				want is "border territory which needs defending" */
+		int iOurRelativeStrength = 100 * countPowerByArea(kArea) /
+			(AI_countMilitaryWeight(&kArea) + 20);
+		iOurRelativeStrength *= 100 + (bDeclaredTargets ? 30 : 0) +
+			(bPreparingTotal ? -20 : 0) + iWarSuccessRating / 2;
+		iOurRelativeStrength /= 100;
+		int iEnemyRelativeStrength = 0;
+		bool bEnemyCities = false;
+
+		for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 		{
-			if (GET_TEAM((TeamTypes)iI).isAlive())
+			const CvTeamAI& kEnemy = GET_TEAM(eTeam);
+			const TeamTypes ourTeam = getID();
+			if (!kEnemy.isHasMet(ourTeam) || !kEnemy.isAlive() || !kEnemy.AI_isColonialPower())
+				continue;
+
+			CvTeamAI const& kLoopTeam = GET_TEAM(eTeam);
+
+			if (AI_getWarPlan(kLoopTeam.getID()) == NO_WARPLAN)
+				continue;
+
+			int iPower = 100 * kLoopTeam.countPowerByArea(kArea);
+			int iCommitment = (bPreparingTotal ? 30 : 20) +
+				kLoopTeam.AI_countMilitaryWeight(&kArea) *
+				((isAtWar(kLoopTeam.getID()) ? 1 : 2) +
+					kLoopTeam.getNumWars(/*true, true*/)) / 2;
+			iPower /= iCommitment;
+			iEnemyRelativeStrength += iPower;
+			if (kLoopTeam.countNumCitiesByArea(kArea) > 0)
+				bEnemyCities = true;
+		}
+		if (bEnemyCities && iOurRelativeStrength > iEnemyRelativeStrength)
+			return AREAAI_OFFENSIVE;
+		// K-Mod end
+	}
+
+	if (bTargets)
+	{
+		for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+		{
+			const CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
+			if (!kPlayer.isAlive() && TEAMID(ePlayer) != getID())
+				continue;
+
+			CvPlayerAI* itMember = &GET_PLAYER(ePlayer);
+
+			if (itMember->AI_isDoStrategy(AI_STRATEGY_DAGGER) ||
+				itMember->AI_isDoStrategy(AI_STRATEGY_FINAL_WAR))
 			{
-				if (AI_getWarPlan((TeamTypes)iI) != NO_WARPLAN)
-				{
-					FAssert(((TeamTypes)iI) != getID());
-					FAssert(isHasMet((TeamTypes)iI) || GC.getGameINLINE().isOption(GAMEOPTION_ALWAYS_WAR));
-
-					if (AI_getWarPlan((TeamTypes)iI) == WARPLAN_ATTACKED_RECENT)
-					{
-						FAssert(isAtWar((TeamTypes)iI));
-						bRecentAttack = true;
-					}
-
-					if ((GET_TEAM((TeamTypes)iI).countNumCitiesByArea(pArea) > 0) || (GET_TEAM((TeamTypes)iI).countNumUnitsByArea(pArea) > 4))
-					{
-						bTargets = true;
-
-						if (AI_isChosenWar((TeamTypes)iI))
-						{
-							bChosenTargets = true;							
-
-							if ((isAtWar((TeamTypes)iI)) ? (AI_getAtWarCounter((TeamTypes)iI) < 10) : AI_isSneakAttackReady((TeamTypes)iI))
-							{
-								bDeclaredTargets = true;
-							}
-						}
-					}
-					else
-					{
-                        bAssault = true;
-                        if (AI_isSneakAttackPreparing((TeamTypes)iI))
-                        {
-                            bPreparingAssault = true;
-                        }
-					}
-				}
+				if (kArea.getCitiesPerPlayer(itMember->getID()) > 0)
+					return AREAAI_MASSING;
 			}
 		}
-
-		if (bDeclaredTargets)
-		{
-			return AREAAI_OFFENSIVE;
-		}
-
 		if (bRecentAttack)
 		{
-			int iPower = countPowerByArea(pArea);
-			int iEnemyPower = countEnemyPowerByArea(pArea);
+			int iPower = countPowerByArea(kArea);
+			int iEnemyPower = AI_countEnemyPowerByArea(kArea);
 			if (iPower > iEnemyPower)
+				return AREAAI_MASSING;
+			return AREAAI_DEFENSIVE;
+		}
+	}
+	// advc.107: 2*iAreaCities (from MNAI)
+	if (iAreaCities > 0 && AI_countEnemyDangerByArea(kArea) > 2 * iAreaCities)
+		return AREAAI_DEFENSIVE;
+
+	if (bChosenTargets)
+		return AREAAI_MASSING;
+
+	if (bTargets)
+	{
+		if (iAreaCities > getNumMembers() * 3)
+		{
+			if (GC.getGame().isOption(GAMEOPTION_AGGRESSIVE_AI) ||
+				GC.getGame().isOption(GAMEOPTION_ALWAYS_WAR) ||
+				(countPowerByArea(kArea) * 2 >
+					AI_countEnemyPowerByArea(kArea) * 3))
 			{
 				return AREAAI_MASSING;
 			}
-			return AREAAI_DEFENSIVE;
 		}
-
-		if (iAreaCities > 0)
-		{
-			if (countEnemyDangerByArea(pArea) > iAreaCities)
-			{
-				return AREAAI_DEFENSIVE;
-			}
-		}
-
-		if (bChosenTargets)
-		{
-			return AREAAI_MASSING;
-		}
-
-		if (bTargets)
-		{
-			if (iAreaCities > (getNumMembers() * 3))
-			{
-				if (GC.getGameINLINE().isOption(GAMEOPTION_AGGRESSIVE_AI) || GC.getGameINLINE().isOption(GAMEOPTION_ALWAYS_WAR) || (countPowerByArea(pArea) > ((countEnemyPowerByArea(pArea) * 3) / 2)))
-				{
-					return AREAAI_MASSING;
-				}
-			}
-			return AREAAI_DEFENSIVE;
-		}
-		else
-		{
-			if (bAssault)
-			{
-
-                if (bPreparingAssault)
-				{
-					return AREAAI_ASSAULT_MASSING;
-				}
-
-
-				return AREAAI_ASSAULT;
-			}
-		}
+		return AREAAI_DEFENSIVE;
 	}
-
+	else if (bAssault)
+	{
+		if (AI_isPrimaryArea(kArea))
+		{
+			if (bPreparingAssault)
+				return AREAAI_ASSAULT_MASSING;
+		}
+		else if (countNumCitiesByArea(kArea) > 0)
+			return AREAAI_ASSAULT_ASSIST;
+		return AREAAI_ASSAULT;
+	}
 	return AREAAI_NEUTRAL;
 }
 
@@ -1932,43 +1953,45 @@ bool CvTeamAI::AI_isChosenWar(TeamTypes eIndex) const
 	return false;
 }
 
-
-bool CvTeamAI::AI_isSneakAttackPreparing(TeamTypes eIndex) const
-{
-	return ((AI_getWarPlan(eIndex) == WARPLAN_PREPARING_LIMITED) || (AI_getWarPlan(eIndex) == WARPLAN_PREPARING_TOTAL));
-}
-
-/*
-bool CvTeamAI::AI_isSneakAttackReady(TeamTypes eIndex) const
-{
-	return (AI_isChosenWar(eIndex) && !(AI_isSneakAttackPreparing(eIndex)));
-}
-*/
-
 bool CvTeamAI::AI_isSneakAttackReady(TeamTypes eIndex) const
 {
 	//return (AI_isChosenWar(eIndex) && !(AI_isSneakAttackPreparing(eIndex))); // BtS
 	// K-Mod (advc: originally in an overloaded function)
 	if (eIndex != NO_TEAM)
 		return !isAtWar(eIndex) && AI_isChosenWar(eIndex) && !AI_isSneakAttackPreparing(eIndex); // K-Mod
-	/*
-	for (TeamIter<MAJOR_CIV> it; it.hasNext(); ++it)
+	
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 	{
-		if (AI_isSneakAttackReady(it->getID()))
+		const CvTeamAI& kEnemy = GET_TEAM(eTeam);
+		const TeamTypes ourTeam = getID();
+		if (eTeam == ourTeam || !kEnemy.isHasMet(ourTeam) || !kEnemy.isAlive() || !kEnemy.AI_isColonialPower())
+			continue;
+
+		if (AI_isSneakAttackReady(eTeam))
 			return true;
 	}
-	*/
-
-	for (int iI = 0; iI < MAX_TEAMS; iI++)
-	{
-		if (AI_isSneakAttackReady((TeamTypes)iI))
-		{
-			return true;
-		}
-	}
-
 	return false;
 	// K-Mod end
+}
+
+bool CvTeamAI::AI_isSneakAttackPreparing(TeamTypes eIndex) const
+{
+	if (eIndex != NO_TEAM)
+	{
+		const WarPlanTypes eWarPlan = AI_getWarPlan(eIndex); // advc.104j
+		return (eWarPlan == WARPLAN_PREPARING_LIMITED || eWarPlan == WARPLAN_PREPARING_TOTAL);
+	}
+
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	{
+		const CvTeamAI& kEnemy = GET_TEAM(eTeam);
+		const TeamTypes ourTeam = getID();
+		if (eTeam == ourTeam || !kEnemy.isHasMet(ourTeam) || !kEnemy.isAlive() || !kEnemy.AI_isColonialPower())
+			continue;
+		if (AI_isSneakAttackPreparing(eTeam))
+			return true;
+	}
+	return false;
 }
 
 void CvTeamAI::AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar)
@@ -1992,7 +2015,7 @@ void CvTeamAI::AI_setWarPlan(TeamTypes eIndex, WarPlanTypes eNewValue, bool bWar
 			}
 			AI_setWarPlanStateCounter(eIndex, 0);
 
-			AI_updateAreaStragies();
+			AI_updateAreaStrategies();
 
 			for (iI = 0; iI < MAX_PLAYERS; iI++)
 			{
@@ -2551,15 +2574,15 @@ void CvTeamAI::AI_doWar()
 
 						for(pLoopArea = GC.getMap().firstArea(&iLoop); pLoopArea != NULL; pLoopArea = GC.getMap().nextArea(&iLoop))
 						{
-							if (AI_isPrimaryArea(pLoopArea))
+							if (AI_isPrimaryArea(*pLoopArea))
 							{
-								if (GET_TEAM((TeamTypes)iI).countNumCitiesByArea(pLoopArea) > 0)
+								if (GET_TEAM((TeamTypes)iI).countNumCitiesByArea(*pLoopArea) > 0)
 								{
 									bShareValid = true;
 
 									bOffensiveValid = false;
 
-									if (AI_calculateAreaAIType(pLoopArea, true) == AREAAI_OFFENSIVE)
+									if (AI_calculateAreaAIType(*pLoopArea, true) == AREAAI_OFFENSIVE)
 									{
 										bOffensiveValid = true;
 									}
@@ -3375,8 +3398,8 @@ int CvTeamAI::AI_getEnemyPowerPercent(bool bConsiderOthers) const
 	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
 	{
 		const CvTeamAI& kEnemy = GET_TEAM(eTeam);
-
-		if (eTeam == getID() || !kEnemy.isHasMet(getID()) || !kEnemy.isAlive() && !kEnemy.AI_isColonialPower())
+		const TeamTypes ourTeam = getID();
+		if (eTeam == ourTeam || !kEnemy.isHasMet(ourTeam) || !kEnemy.isAlive() || !kEnemy.AI_isColonialPower())
 			continue;
 
 		if (isAtWar(kEnemy.getID()))
@@ -3473,3 +3496,127 @@ bool CvTeamAI::AI_isChosenWarPlan(WarPlanTypes eWarPlanType)
 	default: return false; // NO_WARPLAN
 	}
 }
+
+/*	K-Mod: return a rating of our war success between -99 and 99.
+	-99 means we losing and have very little hope of surviving.
+	99 means we are soundly defeating our enemies.
+	Zero is neutral (eg. no wars being fought).
+	(Based on K-Mod code for Force Peace diplomacy voting.)
+	Replacing AI_getWarSuccessCapitulationRatio
+	(BETTER_BTS_AI_MOD, 03/20/10, jdog5000: War Strategy AI). */
+int CvTeamAI::AI_getWarSuccessRating() const
+{
+	PROFILE_FUNC();
+	// (Based on my code for Force Peace diplomacy voting.)
+
+	int iMilitaryUnits = 0;
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
+	{
+		const CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes)iI);
+		if (kLoopPlayer.getTeam() == getID())
+		{
+			iMilitaryUnits += kLoopPlayer.AI().countNumMilitaryUnits(); // getNumMilitaryUnits();
+		}
+	}
+	int iSuccessScale = iMilitaryUnits * GC.getDefineINT("WAR_SUCCESS_ATTACKING") / 5;
+
+	int iThisTeamPower = getPower();
+	int iScore = 0;
+
+	for (int iI = 0; iI < MAX_TEAMS; iI++)
+	{
+		const CvTeam& kLoopTeam = GET_TEAM((TeamTypes)iI);
+		if (iI != getID() && isAtWar((TeamTypes)iI) && kLoopTeam.isAlive())
+		{
+			int iThisTeamSuccess = AI_getWarSuccess((TeamTypes)iI);
+			int iOtherTeamSuccess = kLoopTeam.AI_getWarSuccess(getID());
+
+			int iOtherTeamPower = kLoopTeam.getPower();
+
+			iScore += (iThisTeamSuccess + iSuccessScale) * iThisTeamPower;
+			iScore -= (iOtherTeamSuccess + iSuccessScale) * iOtherTeamPower;
+		}
+	}
+	iScore = range((100 * iScore) / std::max(1, iThisTeamPower * iSuccessScale * 5), -99, 99);
+	return iScore;
+}
+
+int CvTeamAI::AI_countEnemyPowerByArea(CvArea const& kArea) const
+{
+	int iCount;
+	int iI;
+
+	iCount = 0;
+
+	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	{
+		if (GET_PLAYER((PlayerTypes)iI).isAlive())
+		{
+			if (GET_PLAYER((PlayerTypes)iI).getTeam() != getID())
+			{
+				/************************************************************************************************/
+				/* BETTER_BTS_AI_MOD                      01/11/09                                jdog5000      */
+				/*                                                                                              */
+				/* General AI                                                                                   */
+				/************************************************************************************************/
+				/* original BTS code
+								if (isAtWar(GET_PLAYER((PlayerTypes)iI).getTeam()))
+				*/
+				// Count planned wars as well
+				if (AI_getWarPlan(GET_PLAYER((PlayerTypes)iI).getTeam()) != NO_WARPLAN)
+					/************************************************************************************************/
+					/* BETTER_BTS_AI_MOD                       END                                                  */
+					/************************************************************************************************/
+				{
+					iCount += kArea.getPower((PlayerTypes)iI);
+				}
+			}
+		}
+	}
+
+	return iCount;
+}
+
+// K-Mod: (Note: this includes barbarian cities.)
+int CvTeamAI::AI_countEnemyCitiesByArea(CvArea const& kArea) const // advc.003u: Moved from CvTeam
+{
+	int iCount = 0;
+	for (PlayerTypes i = (PlayerTypes)0; i < MAX_PLAYERS; i = (PlayerTypes)(i + 1))
+	{
+		const CvPlayer& kLoopPlayer = GET_PLAYER(i);
+		if (kLoopPlayer.isAlive() && AI_getWarPlan(kLoopPlayer.getTeam()) != NO_WARPLAN)
+			iCount += kArea.getCitiesPerPlayer(i);
+	}
+	return iCount; // advc.001: was 'return 0'
+}
+
+/************************************************************************************************/
+/* BETTER_BTS_AI_MOD                      05/19/10                                jdog5000      */
+/*                                                                                              */
+/* War strategy AI                                                                              */
+/************************************************************************************************/
+int CvTeamAI::AI_countEnemyDangerByArea(CvArea const& kArea, TeamTypes eEnemyTeam) const
+{
+	PROFILE_FUNC();
+
+	int iCount = 0;
+
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
+	{
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
+
+		if (pLoopPlot != NULL)
+		{
+			if (pLoopPlot->area() == &kArea)
+			{
+				if (pLoopPlot->getTeam() == getID())
+				{
+					iCount += pLoopPlot->plotCount(PUF_canDefendEnemy, getLeaderID(), false, NO_PLAYER, eEnemyTeam, PUF_isVisible, getLeaderID());
+				}
+			}
+		}
+	}
+
+	return iCount;
+}
+

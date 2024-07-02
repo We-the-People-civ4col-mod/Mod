@@ -867,24 +867,16 @@ void CvSelectionGroup::startMission()
 			case MISSION_BUILD:
 				break;
 			case MISSION_LEAD:
-				/*
-				if (pUnit->lead(iData1))
+				if (pUnit->lead(headMissionQueueNode()->m_data.iData1))
 					bAction = true;
-				*/
 				break;
 			case MISSION_WHALING:
 				if (pUnit->isWhalingBoat() && pUnit->gatherResource())
-				{
-					//bAction = true;
 					bAction = true;
-				}
 				break;
 			case MISSION_FISHING:
 				if (pUnit->isFishingBoat() && pUnit->gatherResource())
-				{
-					//bAction = true;
 					bAction = true;
-				}
 				break;
 
 			default:
@@ -968,7 +960,7 @@ bool CvSelectionGroup::continueMission_bulk(int iSteps)
 
 	MissionData missionData = pHeadMission->m_data;
 	CvGame& kGame = GC.getGame();
-	CvPlot* pFromPlot = plot(); // advc.102
+	CvPlot* const pFromPlot = plot(); // advc.102
 	bool bDone = false;
 	bool bAction = false;
 
@@ -1081,10 +1073,11 @@ bool CvSelectionGroup::continueMission_bulk(int iSteps)
 						the city of a teammate. Should only have to stay there
 						if no other team member can defend. */
 					bool bStay = (kPlot.getOwner() == getOwner());
+					bStay = false; // WTP: Until we implement the below
 					if (!bStay)
 					{
-						FAssert(GET_TEAM(getTeam()).getNumMembers() > 1);
-						bStay = true;
+						//FAssert(GET_TEAM(getTeam()).getNumMembers() > 1);
+						//bStay = true;
 						/*
 						for (MemberIter itMember(getTeam()); itMember.hasNext(); ++itMember)
 						{
@@ -1107,7 +1100,6 @@ bool CvSelectionGroup::continueMission_bulk(int iSteps)
 					}
 				}
 			}
-			//(GET_PLAYER((PlayerTypes)unit.eOwner).getUnit(unit.iID));
 			CvUnitAI const* pTargetUnit = static_cast<CvUnitAI const*>(GET_PLAYER((PlayerTypes)missionData.iData1).getUnit(missionData.iData2));
 				 
 			if (pTargetUnit == NULL)
@@ -1118,12 +1110,12 @@ bool CvSelectionGroup::continueMission_bulk(int iSteps)
 			/*	(BETTER_BTS_AI_MOD 12/07/08, 08/08/09, Maniac & jdog5000, General AI
 				pickup of stranded units - deleted by K-Mod.) */
 
-			MissionAITypes eMissionAI = AI().AI_getMissionAIType(); // advc.003u
+			const MissionAITypes eMissionAI = AI().AI_getMissionAIType(); // advc.003u
 			if (eMissionAI != MISSIONAI_SHADOW && eMissionAI != MISSIONAI_GROUP)
 			{
 				if (!kPlot.isOwned() || kPlot.getOwner() == getOwner())
 				{
-					CvPlot* pMissionPlot = pTargetUnit->AI_getGroup()->AI_getMissionAIPlotInternal();
+					CvPlot* const pMissionPlot = pTargetUnit->AI_getGroup()->AI_getMissionAIPlotInternal();
 					if (pMissionPlot != NULL && NO_TEAM != pMissionPlot->getTeam())
 					{
 						if (pMissionPlot->isOwned() && pTargetUnit->AI_isPotentialEnemyOf(
@@ -1988,16 +1980,11 @@ bool CvSelectionGroup::canMoveThrough(CvPlot const& kPlot, bool bDeclareWar, boo
 {
 	if (getNumUnits() <= 0)
 		return false;
-
-	for (CLLNode<IDInfo> const* pUnitNode = headUnitNode(); pUnitNode != NULL;
-		pUnitNode = nextUnitNode(pUnitNode))
+	FOR_EACH_UNIT_IN(pUnit, *this)
 	{
-		CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		//if (!pLoopUnit->canMoveThrough(kPlot))
-		if (pLoopUnit != NULL && !pLoopUnit->canMoveInto(kPlot, false, bDeclareWar, true/*, bAssumeVisible*/)) // K-Mod
-		{
+		//if (!pUnit->canMoveThrough(kPlot))
+		if (!pUnit->canMoveInto(kPlot, false, bDeclareWar, true, bAssumeVisible)) // K-Mod
 			return false;
-		}
 	}
 	return true;
 }
@@ -2034,95 +2021,15 @@ bool CvSelectionGroup::canBombard(const CvPlot* pPlot) const
 	return false;
 }
 
-bool CvSelectionGroup::visibilityRange() const
+int CvSelectionGroup::visibilityRange() const // advc: const; return type was bool
 {
 	int iMaxRange = 0;
-
-	CLLNode<IDInfo>* pUnitNode = headUnitNode();
-	while (pUnitNode != NULL)
+	FOR_EACH_UNIT_IN(pUnit, *this)
 	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-
-		if (pLoopUnit != NULL)
-		{
-			int iRange = pLoopUnit->visibilityRange();
-			if (iRange > iMaxRange)
-			{
-				iMaxRange = iRange;
-			}
-		}
-		pUnitNode = nextUnitNode(pUnitNode);
+		iMaxRange = std::max(iMaxRange, pUnit->visibilityRange());
 	}
-
 	return iMaxRange;
 }
-
-#if 0
-// TAC - AI Attack City - koma13, jdog5000(BBAI) - START
-//
-// Approximate how many turns this group would take to reduce pCity's defense modifier to zero
-//
-int CvSelectionGroup::getBombardTurns(CvCity* pCity)
-{
-	PROFILE_FUNC();
-
-	//bool bHasBomber = (getOwnerINLINE() != NO_PLAYER ? (GET_PLAYER(getOwnerINLINE()).AI_calculateTotalBombard(DOMAIN_AIR) > 0) : false);
-	bool bHasBomber = false;
-	bool bIgnoreBuildingDefense = bHasBomber;
-	int iTotalBombardRate = (bHasBomber ? 16 : 0);
-	int iUnitBombardRate = 0;
-
-	CLLNode<IDInfo>* pUnitNode = headUnitNode();
-	while (pUnitNode != NULL)
-	{
-		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = nextUnitNode(pUnitNode);
-
-		if (pLoopUnit != NULL && pLoopUnit->bombardRate() > 0)
-		{
-			iUnitBombardRate = pLoopUnit->bombardRate();
-
-			/*
-			if( pLoopUnit->ignoreBuildingDefense() )
-			{
-				bIgnoreBuildingDefense = true;
-			}
-			else
-			*/
-			{
-				iUnitBombardRate *= std::max(25, (100 - pCity->getBuildingBombardDefense()));
-				iUnitBombardRate /= 100;
-			}
-
-			iTotalBombardRate += iUnitBombardRate;
-		}
-	}
-
-
-	//if( pCity->getTotalDefense(bIgnoreBuildingDefense) == 0 )
-	if( pCity->getTotalDefense() == 0 )
-	{
-		return 0;
-	}
-
-	//int iBombardTurns = pCity->getTotalDefense(bIgnoreBuildingDefense);
-	int iBombardTurns = pCity->getTotalDefense();
-
-	if( iTotalBombardRate > 0 )
-	{
-		iBombardTurns = (GC.getMAX_CITY_DEFENSE_DAMAGE() - pCity->getDefenseDamage());
-		//iBombardTurns *= pCity->getTotalDefense(false);
-		iBombardTurns *= pCity->getTotalDefense();
-		iBombardTurns += (GC.getMAX_CITY_DEFENSE_DAMAGE() * iTotalBombardRate) - 1;
-		iBombardTurns /= std::max(1, (GC.getMAX_CITY_DEFENSE_DAMAGE() * iTotalBombardRate));
-	}
-
-	//if( gUnitLogLevel > 2 ) logBBAI("      Bombard of %S will take %d turns at rate %d and current damage %d with bombard def %d", pCity->getName().GetCString(), iBombardTurns, iTotalBombardRate, pCity->getDefenseDamage(), (bIgnoreBuildingDefense ? 0 : pCity->getBuildingBombardDefense()));
-
-	return iBombardTurns;
-}
-// TAC - AI Attack City - koma13, jdog5000(BBAI) - END
-#endif
 
 bool CvSelectionGroup::isPromotionReady() const
 {
@@ -2188,25 +2095,14 @@ bool CvSelectionGroup::alwaysInvisible() const
 
 bool CvSelectionGroup::isInvisible(TeamTypes eTeam) const
 {
-	if (getNumUnits() > 0)
+	if (getNumUnits() <= 0)
+		return false;
+	FOR_EACH_UNIT_IN(pUnit, *this)
 	{
-		CLLNode<IDInfo>* pUnitNode = headUnitNode();
-
-		while (pUnitNode != NULL)
-		{
-			CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-
-			if (pLoopUnit != NULL && !pLoopUnit->isInvisible(eTeam, false))
-			{
-				return false;
-			}
-			pUnitNode = nextUnitNode(pUnitNode);
-		}
-
-		return true;
+		if (!pUnit->isInvisible(eTeam, false))
+			return false;
 	}
-
-	return false;
+	return true;
 }
 
 
@@ -3133,7 +3029,7 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 			if (!bValid)
 			{
 				if (pPlot->at(iData1, iData2))
-					return false;
+					goto return_false;
 				if (!bCheckMoves)
 					return true;
 				bValid = true;
@@ -3149,14 +3045,14 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 				if (pPlot->at(iData1, iData2) &&
 					getBestBuildRoute(pPlot, NULL) == NO_ROUTE)
 				{
-					return false;
+					goto return_false;
 				}
 				if (!bCheckMoves)
 					return true;
 				bValid = true;
 			}
 			if (!pUnit->canMove())
-				return false;
+				goto return_false;
 			break;
 
 		case MISSION_ROUTE_TO_ROAD:
@@ -3165,14 +3061,14 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 				if (pPlot->at(iData1, iData2) &&
 					getBestBuildRoute(pPlot, NULL, ROUTE_ROAD) == NO_ROUTE)
 				{
-					return false;
+					goto return_false;
 				}
 				if (!bCheckMoves)
 					return true;
 				bValid = true;
 			}
 			if (!pUnit->canMove())
-				return false;
+				goto return_false;
 			break;
 
 		case MISSION_ROUTE_TO_COUNTRY_ROAD:
@@ -3181,14 +3077,14 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 				if (pPlot->at(iData1, iData2) &&
 					getBestBuildRoute(pPlot, NULL, ROUTE_COUNTRY_ROAD) == NO_ROUTE)
 				{
-					return false;
+					goto return_false;
 				}
 				if (!bCheckMoves)
 					return true;
 				bValid = true;
 			}
 			if (!pUnit->canMove())
-				return false;
+				goto return_false;
 			break;
 
 		case MISSION_MOVE_TO_UNIT:
@@ -3198,13 +3094,13 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 			if (!bValid)
 			{
 				if (!pTargetUnit || pTargetUnit->atPlot(pPlot))
-					return false;
+					goto return_false;
 				if (!bCheckMoves)
 					return true;
 				bValid = true;
 			}
 			if (!pUnit->canMove())
-				return false;
+				goto return_false;
 			break;
 		}
 
@@ -3270,11 +3166,13 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 			break;
 
 		case MISSION_JOIN_CITY:
-			if (pUnit->canJoinCity(pPlot, bTestVisible))
+			if (pUnit->canJoinCity(pPlot, bTestVisible) &&
+				(!bCheckMoves || pUnit->canMove()))
 			{
 				return true;
 			}
 			break;
+
 
 		case MISSION_BUILD:
 		{
@@ -3327,7 +3225,27 @@ bool CvSelectionGroup::canDoMission(MissionTypes eMission, int iData1, int iData
 			break;
 		}
 	}
+
 	return bValid;
+
+
+	return_false:
+	if (headMissionQueueNode()->m_data.iPushTurn == GC.getGameINLINE().getGameTurn())
+	{
+		CvWString szTempString;
+		CvUnit* pHeadUnit = getHeadUnit();
+
+		getMissionTypeString(szTempString, eMission);
+		
+		logBBAI("WARNING CvSelectionGroup::canDoMission() returned false for mission: %S of Player %S Unit %d. %S(%S)[%d, %d] %s,%s",
+			szTempString.GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getCivilizationDescription(), pHeadUnit->getID(),
+			pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
+			pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->isOnMap ? "isOnMap:true" : "isOnMap:false",
+			pHeadUnit->isCargo() ? "isCargo:true" : "isCargo:false");
+		return false;
+	}
+	else
+		return false;
 }
 // K-Mod end
 
@@ -3739,14 +3657,10 @@ KmodPathFinder& CvSelectionGroup::getClearPathFinder() // advc.opt
 
 void CvSelectionGroup::clearUnits()
 {
-	CLLNode<IDInfo>* pUnitNode;
-
-	pUnitNode = headUnitNode();
-
-	while (pUnitNode != NULL)
+	for (CLLNode<IDInfo>* pNode = headUnitNode(); pNode != NULL;
+		pNode = deleteUnitNode(pNode))
 	{
-		pUnitNode = deleteUnitNode(pUnitNode);
-	}
+	} // advc
 }
 
 
@@ -4166,6 +4080,17 @@ void CvSelectionGroup::clearMissionQueue()
 {
 	FAssert(getOwnerINLINE() != NO_PLAYER);
 	
+	/*
+	CvUnitAI* pHeadUnit = static_cast<CvUnitAI*>(getHeadUnit());
+	if (pHeadUnit != NULL && pHeadUnit->AI_getUnitAIType())
+	{
+		logBBAI("CvSelectionGroup::clearMissionQueue() Player %S Unit %d %S(%S)[%d, %d]",
+			GET_PLAYER(pHeadUnit->getOwnerINLINE()).getCivilizationDescription(), pHeadUnit->getID(),
+			pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
+			pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE());
+	}
+	*/
+
 	deactivateHeadMission();
 	m_missionQueue.clear();
 	if ((getOwnerINLINE() == GC.getGameINLINE().getActivePlayer()) && IsSelected())
@@ -4267,7 +4192,7 @@ int CvSelectionGroup::getMissionType(int iNode) const
 	while (pMissionNode != NULL)
 	{
 		if (iNode == iCount)
-			return pMissionNode->m_data.iData1;
+			return pMissionNode->m_data.eMissionType;
 		iCount++;
 		pMissionNode = nextMissionQueueNode(pMissionNode);
 	}

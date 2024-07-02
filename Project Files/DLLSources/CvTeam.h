@@ -11,7 +11,9 @@ class CvArea;
 
 class CvTeam
 {
-
+/// <summary>
+/// 
+/// </summary>
 public:
 	CvTeam();
 	virtual ~CvTeam();
@@ -64,13 +66,11 @@ public:
 	int countTotalCulture() const;
 
 	int countNumUnitsByArea(CvArea* pArea) const;
-	int countNumCitiesByArea(CvArea* pArea) const;
+	int countNumCitiesByArea(CvArea const& kArea) const;
 	int countTotalPopulationByArea(CvArea* pArea) const;
-	int countPowerByArea(CvArea* pArea) const;
-	int countEnemyPowerByArea(CvArea* pArea) const;
+	int countPowerByArea(CvArea const& kArea) const;
 	int countNumAIUnitsByArea(CvArea* pArea, UnitAITypes eUnitAI) const;
-	int countEnemyDangerByArea(CvArea* pArea) const;
-
+	
 	int getFatherCostModifier() const;
 	int getFatherPointCost(FatherTypes eFather, FatherPointTypes ePointType) const;
 
@@ -186,7 +186,7 @@ public:
 	virtual void AI_doTurnPre() = 0;
 	virtual void AI_doTurnPost() = 0;
 	virtual void AI_makeAssignWorkDirty() = 0;
-	virtual void AI_updateAreaStragies(bool bTargets = true) = 0;
+	virtual void AI_updateAreaStrategies(bool bTargets = true) = 0;
 	virtual bool AI_shareWar(TeamTypes eTeam) const = 0;
 	virtual void AI_updateWorstEnemy() = 0;
 	virtual int AI_getAtWarCounter(TeamTypes eIndex) const = 0;

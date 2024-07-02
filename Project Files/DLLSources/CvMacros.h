@@ -82,6 +82,11 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
     for (CvUnitAI* pLoopUnit = static_cast<CvUnitAI*>((kOwner).firstUnit(&UNIQUE_VAR(iLoop))); \
          pLoopUnit != NULL; pLoopUnit = static_cast<CvUnitAI*>((kOwner).nextUnit(&UNIQUE_VAR(iLoop))))
 
+#define FOR_EACH_UNIT(pLoopUnit, kOwner) \
+    for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
+    for (CvUnit* pLoopUnit = (kOwner).firstUnit(&UNIQUE_VAR(iLoop)); \
+         pLoopUnit != NULL; pLoopUnit = (kOwner).nextUnit(&UNIQUE_VAR(iLoop)))
+
 // TODO: should this use const units?
 #define FOR_EACH_UNIT_IN(pLoopUnit, kGroup) \
     for (CLLNode<IDInfo>* pUnitNode = (kGroup).headUnitNode(); pUnitNode != NULL; pUnitNode = (kGroup).nextUnitNode(pUnitNode)) \
@@ -108,6 +113,13 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
     for (CityPlotTypes eCityPlot = FIRST_CITY_PLOT; eCityPlot < NUM_CITY_PLOTS; ++eCityPlot) \
         if (CvPlot* const pLoopPlot = targetCity->getCityIndexPlot(eCityPlot)) \
             if (eCityPlot != CITY_HOME_PLOT && pLoopPlot != NULL)
+
+
+#define FOR_EACH_AREA_VAR(pArea) \
+    for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
+    for (CvArea* pArea = GC.getMap().firstArea(&UNIQUE_VAR(iLoop)); \
+         pArea != NULL; pArea = GC.getMap().nextArea(&UNIQUE_VAR(iLoop))) \
+        if (pArea != NULL)
 
 // TODO: What about checking if we have met the player ?
 /*
