@@ -134,4 +134,24 @@
 		<French>55% de terres</French>
 		<Russian>55% земли</Russian>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS</Tag>
+		<English>Terrain Roughness:</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_0</Tag>
+		<English>Flat</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_1</Tag>
+		<English>Rolling</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_2</Tag>
+		<English>Hilly</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_3</Tag>
+		<English>Mountainous</English>
+	</TEXT>
 </Civ4GameText>
