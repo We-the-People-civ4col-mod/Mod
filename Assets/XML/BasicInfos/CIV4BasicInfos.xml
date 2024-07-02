@@ -321,5 +321,10 @@
 			<Description>TXT_KEY_CONCEPT_PRODUCTION_CHAINS</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_PRODUCTION_CHAINS_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_UNIT_EQUIPMENT</Type>
+			<Description>TXT_KEY_CONCEPT_UNIT_EQUIPMENT</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_UNIT_EQUIPMENT_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>

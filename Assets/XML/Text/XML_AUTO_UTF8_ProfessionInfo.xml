@@ -1676,7 +1676,7 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-		<Russian>Тяжелая кавалерия</Russian>
+		<Russian>Тяжёлая кавалерия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_HEAVY_CAVALRY_HELP</Tag>

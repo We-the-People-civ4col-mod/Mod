@@ -520,6 +520,7 @@
 		<German>Benötigt : %s1_symbol_list</German>
 		<Italian>Consuma : %s1_symbol_list</Italian>
 		<Spanish>Consume : %s1_symbol_list</Spanish>
+		<Russian>Использует: %s1_symbol_list</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_YIELDS_CONVERSION</Tag>
