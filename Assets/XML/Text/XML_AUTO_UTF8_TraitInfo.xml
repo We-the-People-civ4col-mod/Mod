@@ -2,7 +2,32 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ADAM_SMITH</Tag>
-		<English>TXT_KEY_FATHER_ADAM_SMITH</English>
+		<English>
+			<Text>Adam Smith</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Adam Smith</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Adam Smith</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Adam Smith</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Adam Smith</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Адам Смит</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ADMINISTRATIVE</Tag>
@@ -33,39 +58,264 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ALEXANDER_HAMILTON</Tag>
-		<English>TXT_KEY_FATHER_ALEXANDER_HAMILTON</English>
+		<English>
+			<Text>Alexander Hamilton</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Alexander Hamilton</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Alexander Hamilton</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Alexander Hamilton</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Alexander Hamilton</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Александр Гамильтон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ALEXANDER_VON_HUMBOLDT</Tag>
-		<English>TXT_KEY_FATHER_ALEXANDER_VON_HUMBOLDT</English>
+		<English>
+			<Text>Alexander von Humboldt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Alexander von Humboldt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Alexander von Humboldt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Alexander von Humboldt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Alexander von Humboldt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Александр фон Гумбольт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ALEXIS_DE_TOCQUEVILLE</Tag>
-		<English>TXT_KEY_FATHER_ALEXIS_DE_TOCQUEVILLE</English>
+		<English>
+			<Text>Comte de Tocqueville</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Comte de Tocqueville</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Comte de Tocqueville</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Comte de Tocqueville</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Comte de Tocqueville</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Алексис де Токвиль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_BARTOLOME_DE_LAS_CASAS</Tag>
-		<English>TXT_KEY_FATHER_BARTOLOME_DE_LAS_CASAS</English>
+		<English>
+			<Text>Bartolomé de Las Casas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Bartolomé de Las Casas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Bartolomé de Las Casas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Bartolomé de Las Casas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fray Bartolomé de Las Casas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Бартоломе де лас Касас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_BENJAMIN_LINCOLN</Tag>
-		<English>TXT_KEY_FATHER_BENJAMIN_LINCOLN</English>
+		<English>
+			<Text>Benjamin Lincoln</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Benjamin Lincoln</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Benjamin Lincoln</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Benjamin Lincoln</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Benjamin Lincoln</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Бенжамин Линкольн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_BENJAMIN_RUSH</Tag>
-		<English>TXT_KEY_FATHER_BENJAMIN_RUSH</English>
+		<English>
+			<Text>Benjamin Rush</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Benjamin Rush</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Benjamin Rush</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Benjamin Rush</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Benjamin Rush</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Бенжамин Раш</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_BEN_FRANKLIN</Tag>
-		<English>TXT_KEY_FATHER_BEN_FRANKLIN</English>
+		<English>
+			<Text>Benjamin Franklin</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Benjamin Franklin</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Benjamin Franklin</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Benjamin Franklin</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Benjamin Franklin</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Бенжамин Франклин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_BETSY_ROSS</Tag>
-		<English>TXT_KEY_FATHER_BETSY_ROSS</English>
+		<English>
+			<Text>Betsy Ross</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Betsy Ross</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Betsy Ross</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Betsy Ross</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Betsy Ross</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Бетси Росс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_BLACKBEARD</Tag>
-		<English>TXT_KEY_FATHER_BLACKBEARD</English>
+		<English>
+			<Text>Blackbeard</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Barbe Noire</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Blackbeard</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Blackbeard</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Blackbeard</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Эдвард Тич "Черная борода"</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CAPITALIST</Tag>
@@ -115,11 +365,61 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CHARLES_CARROLL</Tag>
-		<English>TXT_KEY_FATHER_CHARLES_CARROLL</English>
+		<English>
+			<Text>Charles Carroll</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Charles Carroll</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Charles Carroll</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Charles Carroll</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Charles Carroll</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Чарльз Кэрролл</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CHIEF_POWHATAN</Tag>
-		<English>TXT_KEY_FATHER_CHIEF_POWHATAN</English>
+		<English>
+			<Text>Chief Powhatan</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Chef Powhatan</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Häuptling Powhatan</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Capo Powhatan</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Jefe Powhatan</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Вождь Поухатан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CITYBUILDER</Tag>
@@ -186,7 +486,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_COMTE_DE_VERGENNES</Tag>
-		<English>TXT_KEY_FATHER_COMTE_DE_VERGENNES</English>
+		<English>
+			<Text>Comte de Vergennes</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Comte de Vergennes</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Comte de Vergennes</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Comte de Vergennes</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Comte de Vergennes</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Шарль Гравье</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CONQUEROR</Tag>
@@ -232,7 +557,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CYRUS_MCCORMICK</Tag>
-		<English>TXT_KEY_FATHER_CYRUS_MCCORMICK</English>
+		<English>
+			<Text>Cyrus McCormick</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Cyrus McCormick</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Cyrus McCormick</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Cyrus McCormick</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Cyrus McCormick</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Сайрус Маккормик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DETERMINED</Tag>
@@ -257,7 +607,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DE_GRASSE</Tag>
-		<English>TXT_KEY_FATHER_DE_GRASSE</English>
+		<English>
+			<Text>Comte de Grasse</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Comte de Grasse</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Comte de Grasse</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Comte de Grasse</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Comte de Grasse</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Франсуа Жосеф Поль де Грасс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DISCIPLINED</Tag>
@@ -282,11 +657,61 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DOM_PEDRO_I</Tag>
-		<English>TXT_KEY_FATHER_DOM_PEDRO_I</English>
+		<English>
+			<Text>Dom Pedro I</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Pierre Ier du Brésil</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Dom Pedro I.</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Dom Pedro I</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Dom Pedro I</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Дон Педро I</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ELI_WHITNEY</Tag>
-		<English>TXT_KEY_FATHER_ELI_WHITNEY</English>
+		<English>
+			<Text>Eli Whitney</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Eli Whitney</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Eli Whitney</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Eli Whitney</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Eli Whitney</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Эли Уитни</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ENTERPRISING</Tag>
@@ -311,7 +736,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ETHAN_ALLEN</Tag>
-		<English>TXT_KEY_FATHER_ETHAN_ALLEN</English>
+		<English>
+			<Text>Ethan Allen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Ethan Allen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Ethan Allen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Ethan Allen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Ethan Allen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Итан Аллен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_EXPANSIVE</Tag>
@@ -358,7 +808,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FERDINAND_MAGELLAN</Tag>
-		<English>TXT_KEY_FATHER_FERDINAND_MAGELLAN</English>
+		<English>
+			<Text>Ferdinand Magellan</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Fernão de Magalhães</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Fernão de Magalhães</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Fernão de Magalhães</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Fernão de Magalhães</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Фернан Магеллан</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FORESTWARRIORS</Tag>
@@ -383,35 +858,235 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FRANCISCO_DE_CORONADO</Tag>
-		<English>TXT_KEY_FATHER_FRANCISCO_DE_CORONADO</English>
+		<English>
+			<Text>Francisco Vázquez de Coronado</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Francisco Vázquez de Coronado</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Francisco Vázquez de Coronado</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Francisco Vázquez de Coronado</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Francisco Vázquez de Coronado</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Франсиско Васкес де Коронадо</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_NATHANIAL_HAWTHORNE</Tag>
-		<English>TXT_KEY_FATHER_NATHANIAL_HAWTHORNE</English>
+		<English>
+			<Text>Nathaniel Hawthorne</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Nathaniel Hawthorne</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Nathaniel Hawthorne</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Nathaniel Hawthorne</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Nathaniel Hawthorne</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Натаниэль Готорн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FRANCISCO_DE_ORELLANA</Tag>
-		<English>TXT_KEY_FATHER_FRANCISCO_DE_ORELLANA</English>
+		<English>
+			<Text>Francisco de Orellana</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Francisco de Orellana</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Francisco de Orellana</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Francisco de Orellana</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Francisco de Orellana</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Франсиско де Орельяна</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FRANCISCO_PIZARRO</Tag>
-		<English>TXT_KEY_FATHER_FRANCISCO_PIZARRO</English>
+		<English>
+			<Text>Francisco Pizarro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Francisco Pizarro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Francisco Pizarro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Francisco Pizarro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Francisco Pizarro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Франсиско Писарро</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FRANCIS_DRAKE</Tag>
-		<English>TXT_KEY_FATHER_FRANCIS_DRAKE</English>
+		<English>
+			<Text>Sir Francis Drake</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sir Francis Drake</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sir Francis Drake</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sir Francis Drake</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sir Francis Drake</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Фрэнсис Дрейк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FRIEDRICH_WILHELM_VON_STEUBEN</Tag>
-		<English>TXT_KEY_FATHER_FRIEDRICH_WILHELM_VON_STEUBEN</English>
+		<English>
+			<Text>Friedrich Wilhelm von Steuben</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Friedrich Wilhelm von Steuben</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Friedrich Wilhelm von Steuben</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Friedrich Wilhelm von Steuben</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Friedrich Wilhelm von Steuben</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Фридрих Вильгельм фон Штойбен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GABRIEL_DE_CLIEU</Tag>
-		<English>TXT_KEY_FATHER_GABRIEL_DE_CLIEU</English>
+		<English>
+			<Text>Sieur de Clieu</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sieur de Clieu</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sieur de Clieu</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sieur de Clieu</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sieur de Clieu</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Габриэль-Матье Франсуа де Кльё</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GABRIEL_LALLEMANT</Tag>
-		<English>TXT_KEY_FATHER_GABRIEL_LALLEMANT</English>
+		<English>
+			<Text>Gabriel Lalemant</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Gabriel Lalemant</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Gabriel Lalemant</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Gabriel Lalemant</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Gabriel Lalemant</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Габриель Лалеман</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GATHERER</Tag>
@@ -437,63 +1112,438 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GEORGE_FOX</Tag>
-		<English>TXT_KEY_FATHER_GEORGE_FOX</English>
+		<English>
+			<Text>George Fox</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>George Fox</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>George Fox</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>George Fox</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>George Fox</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джорж Фокс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GONZALO_JIMENEZ_DE_QUESADA</Tag>
-		<English>TXT_KEY_FATHER_GONZALO_JIMENEZ_DE_QUESADA</English>
+		<English>
+			<Text>Gonzalo Jiménez de Quesada</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Gonzalo Jiménez de Quesada</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Gonzalo Jiménez de Quesada</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Gonzalo Jiménez de Quesada</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Gonzalo Jiménez de Quesada</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Гонсало Хименес де Кесада</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GREGORIO_DE_MATTOS_E_GUERRA</Tag>
-		<English>TXT_KEY_FATHER_GREGORIO_DE_MATTOS_E_GUERRA</English>
+		<English>
+			<Text>Gregório de Matos</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Gregório de Matos</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Gregório de Matos</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Gregório de Matos</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Gregório de Matos</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Грегориу де Матус Герра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JEAN_TALON</Tag>
-		<English>TXT_KEY_FATHER_JEAN_TALON</English>
+		<English>
+			<Text>Jean Talon</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Comte d'Orsainville</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Comte d'Orsainville</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Comte d'Orsainville</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Comte d'Orsainville</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Жан Талон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ROBERT_KING_CARTER_I</Tag>
-		<English>TXT_KEY_FATHER_ROBERT_KING_CARTER_I</English>
+		<English>
+			<Text>Robert Carter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Robert Carter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Robert Carter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Robert Carter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Robert Carter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Роберт Картер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_LOUIS_JOLLIET</Tag>
-		<English>TXT_KEY_FATHER_LOUIS_JOLLIET</English>
+		<English>
+			<Text>Louis Jolliet</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Louis Jolliet</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Louis Jolliet</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Louis Jolliet</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Louis Jolliet</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Луи Жолье</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JAMES_COOK</Tag>
-		<English>TXT_KEY_FATHER_JAMES_COOK</English>
+		<English>
+			<Text>James Cook</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>James Cook</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>James Cook</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>James Cook</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>James Cook</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джеймс Кук</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_VASCO_DA_GAMA</Tag>
-		<English>TXT_KEY_FATHER_VASCO_DA_GAMA</English>
+		<English>
+			<Text>Vasco da Gama</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Vasco da Gama</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Vasco da Gama</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Vasco da Gama</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Vasco da Gama</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Васко да Гама</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ADMIRAL_WILLIAM_PENN</Tag>
-		<English>TXT_KEY_FATHER_ADMIRAL_WILLIAM_PENN</English>
+		<English>
+			<Text>Sir William Penn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sir William Penn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sir William Penn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sir William Penn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sir William Penn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Уильям Пенн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_OTTO_FRIEDRICH_VON_DER_GROEBEN</Tag>
-		<English>TXT_KEY_FATHER_OTTO_FRIEDRICH_VON_DER_GROEBEN</English>
+		<English>
+			<Text>Otto Friedrich von der Groeben</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Otto Friedrich von der Groeben</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Otto Friedrich von der Groeben</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Otto Friedrich von der Groeben</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Otto Friedrich von der Groeben</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Отто Фридрих фон дер Гребен</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_WILLIAM_DAMPIER</Tag>
-		<English>TXT_KEY_FATHER_WILLIAM_DAMPIER</English>
+		<English>
+			<Text>William Dampier</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>William Dampier</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>William Dampier</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>William Dampier</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>William Dampier</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Уильям Дампир</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_THOMAS_CHIPPENDALE</Tag>
-		<English>TXT_KEY_FATHER_THOMAS_CHIPPENDALE</English>
+		<English>
+			<Text>Thomas Chippendale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Thomas Chippendale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Thomas Chippendale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Thomas Chippendale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Thomas Chippendale</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Томас Чиппендейл</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JAMES_LANCASTER</Tag>
-		<English>TXT_KEY_FATHER_JAMES_LANCASTER</English>
+		<English>
+			<Text>Sir James Lancaster</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sir James Lancaster</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sir James Lancaster</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sir James Lancaster</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sir James Lancaster</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джеймс Ланкастер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_HENRY_SHRAPNEL</Tag>
-		<English>TXT_KEY_FATHER_HENRY_SHRAPNEL</English>
+		<English>
+			<Text>Henry Shrapnel</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Henry Shrapnel</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Henry Shrapnel</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Henry Shrapnel</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Henry Shrapnel</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Генри Шрапнель</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_HERNADO_DE_SOTO</Tag>
-		<English>TXT_KEY_FATHER_HERNADO_DE_SOTO</English>
+		<English>
+			<Text>Hernando de Soto</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Hernando de Soto</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Hernando de Soto</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Hernando de Soto</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Hernando de Soto</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Эрнандо де Сото</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_HUNTERS</Tag>
@@ -552,91 +1602,641 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JACQUES_CARTIER</Tag>
-		<English>TXT_KEY_FATHER_JACQUES_CARTIER</English>
+		<English>
+			<Text>Jacques Cartier</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Jacques Cartier</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Jacques Cartier</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Jacques Cartier</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Jacques Cartier</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Жак Картье</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JACQUES_MARQUETTE</Tag>
-		<English>TXT_KEY_FATHER_JACQUES_MARQUETTE</English>
+		<English>
+			<Text>Jacques Marquette</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Jacques Marquette</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Jacques Marquette</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Jacques Marquette</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Jacques Marquette</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Жак Маркетт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JAKOB_FUGGER</Tag>
-		<English>TXT_KEY_FATHER_JAKOB_FUGGER</English>
+		<English>
+			<Text>Jakob Fugger</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Jakob Fugger</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Jakob Fugger</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Jakob Fugger</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Jakob Fugger</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Якоб Фуггер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JAMES_MADISON</Tag>
-		<English>TXT_KEY_FATHER_JAMES_MADISON</English>
+		<English>
+			<Text>James Madison</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>James Madison</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>James Madison</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>James Madison</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>James Madison</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джеймс Мэдисон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JAMES_WILSON</Tag>
-		<English>TXT_KEY_FATHER_JAMES_WILSON</English>
+		<English>
+			<Text>James Wilson</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>James Wilson</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>James Wilson</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>James Wilson</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>James Wilson</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джеймс Уилсон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JAN_DE_WITT</Tag>
-		<English>TXT_KEY_FATHER_JAN_DE_WITT</English>
+		<English>
+			<Text>Johan de Witt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Johan de Witt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Johan de Witt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Johan de Witt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Johan de Witt</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Ян де Витт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JEAN_DE_BREBEUF</Tag>
-		<English>TXT_KEY_FATHER_JEAN_DE_BREBEUF</English>
+		<English>
+			<Text>Jean de Brébeuf</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Jean de Brébeuf</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Jean de Brébeuf</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Jean de Brébeuf</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Jean de Brébeuf</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Жан де Бребёф</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JOHN_ADAMS</Tag>
-		<English>TXT_KEY_FATHER_JOHN_ADAMS</English>
+		<English>
+			<Text>John Adams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>John Adams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>John Adams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>John Adams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>John Adams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джон Адамс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JOHN_AUGUST_SUTTER</Tag>
-		<English>TXT_KEY_FATHER_JOHN_AUGUST_SUTTER</English>
+		<English>
+			<Text>Johann August Sutter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Johann August Sutter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Johann August Sutter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Johann August Sutter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Johann August Sutter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джон Саттер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JOHN_HARVARD</Tag>
-		<English>TXT_KEY_FATHER_JOHN_HAVARD</English>
+		<English>
+			<Text>John Harvard</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>John Harvard</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>John Harvard</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>John Harvard</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>John Harvard</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джон Гарвард</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JOHN_JACOB_ASTOR</Tag>
-		<English>TXT_KEY_FATHER_JOHN_JACOB_ASTOR</English>
+		<English>
+			<Text>Johann Jakob Astor</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Johann Jakob Astor</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Johann Jakob Astor</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Johann Jakob Astor</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Johann Jakob Astor</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джон Джейкоб Астор</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JOHN_JAY</Tag>
-		<English>TXT_KEY_FATHER_JOHN_JAY</English>
+		<English>
+			<Text>John Jay</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>John Jay</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>John Jay</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>John Jay</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>John Jay</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джон Джей</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JOHN_ROLFE</Tag>
-		<English>TXT_KEY_FATHER_JOHN_ROLFE</English>
+		<English>
+			<Text>John Rolfe</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>John Rolfe</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>John Rolfe</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>John Rolfe</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>John Rolfe</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джон Рольф</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_EUSEBIO_FRANCISO_KINO</Tag>
-		<English>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO</English>
+		<English>
+			<Text>Eusebius Franz Kühn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Eusebius Franz Kühn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Eusebius Franz Kühn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Eusebius Franz Kühn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Eusebius Franz Kühn</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Эусебио Франсиско Кино</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_HUMPHREY_GILBERT</Tag>
-		<English>TXT_KEY_FATHER_HUMPHREY_GILBERT</English>
+		<English>
+			<Text>Sir Humphrey Gilbert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sir Humphrey Gilbert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sir Humphrey Gilbert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sir Humphrey Gilbert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sir Humphrey Gilbert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Хемфри Гилберт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JOHN_SMITH</Tag>
-		<English>TXT_KEY_FATHER_JOHN_SMITH</English>
+		<English>
+			<Text>John Smith</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>John Smith</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>John Smith</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>John Smith</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>John Smith</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джон Смит</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JOHN_WINTHROP</Tag>
-		<English>TXT_KEY_FATHER_JOHN_WINTHROP</English>
+		<English>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джон Уинтроп</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JOSE_DE_SAN_MARTIN</Tag>
-		<English>TXT_KEY_FATHER_JOSE_DE_SAN_MARTIN</English>
+		<English>
+			<Text>José de San Martín</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>José de San Martín</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>José de San Martín</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>José de San Martín</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>José de San Martín</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Хосе де Сан-Мартин</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JUAN_DE_BERMUDEZ</Tag>
-		<English>TXT_KEY_FATHER_JUAN_DE_BERMUDEZ</English>
+		<English>
+			<Text>Juan Bermúdez</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Juan Bermúdez</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Juan Bermúdez</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Juan Bermúdez</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Juan Bermúdez</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Хуан Бермудес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JUAN_DE_SEPULVEDA</Tag>
-		<English>TXT_KEY_FATHER_JUAN_DE_SEPULVEDA</English>
+		<English>
+			<Text>Juan Ginés de Sepúlveda</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Juan Ginés de Sepúlveda</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Juan Ginés de Sepúlveda</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Juan Ginés de Sepúlveda</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Juan Ginés de Sepúlveda</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Хуан Хинес де Сепульведа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JUNIPERO_SERRA</Tag>
-		<English>TXT_KEY_FATHER_JUNIPERO_SERRA</English>
+		<English>
+			<Text>Junípero Serra</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Junípero Serra</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Junípero Serra</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Junípero Serra</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Junípero Serra</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Хуниперо Серра</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_LEWIS_AND_CLARK</Tag>
-		<English>TXT_KEY_FATHER_LEWIS_AND_CLARK</English>
+		<English>
+			<Text>Lewis and Clark</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</English>
+		<French>
+			<Text>Lewis et Clark</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
+		<German>
+			<Text>Lewis und Clark</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</German>
+		<Italian>
+			<Text>Lewis e Clark</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Lewis y Clark</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Spanish>
+		<Russian>Льюис и Кларк</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_LIBERTARIAN</Tag>
@@ -661,11 +2261,61 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_LORD_BALTIMORE</Tag>
-		<English>TXT_KEY_FATHER_LORD_BALTIMORE</English>
+		<English>
+			<Text>Lord Baltimore</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Lord Baltimore</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Lord Baltimore</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Lord Baltimore</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Lord Baltimore</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джордж Калверт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_MAQUIS_DE_LA_FAYETTE</Tag>
-		<English>TXT_KEY_FATHER_MAQUIS_DE_LA_FAYETTE</English>
+		<English>
+			<Text>Marquis de La Fayette</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Marquis de La Fayette</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Marquis de La Fayette</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Marchese de La Fayette</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Marqués de La Fayette</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Жильбер де Ла Файет</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_MENTOR</Tag>
@@ -711,19 +2361,119 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_MICHIEL_DE_RUYTER</Tag>
-		<English>TXT_KEY_FATHER_MICHIEL_DE_RUYTER</English>
+		<English>
+			<Text>Michiel de Ruyter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Michiel de Ruyter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Michiel de Ruyter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Michiel de Ruyter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Michiel de Ruyter</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Мишель Адриансун де Рюйтер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_MIGUEL_HIDALGO</Tag>
-		<English>TXT_KEY_FATHER_MIGUEL_HIDALGO</English>
+		<English>
+			<Text>Miguel Hidalgo y Costilla</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Miguel Hidalgo y Costilla</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Miguel Hidalgo y Costilla</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Miguel Hidalgo y Costilla</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Miguel Hidalgo y Costilla</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Мигель Идальго-и-Костилья</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_NICOLAS_DE_VILLEGAGNON</Tag>
-		<English>TXT_KEY_FATHER_NICOLAS_DE_VILLEGAGNON</English>
+		<English>
+			<Text>Sieur de Villegaignon</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sieur de Villegaignon</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sieur de Villegaignon</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sieur de Villegaignon</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sieur de Villegaignon</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Николя Дюран де Виллеганьон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_NICOLAS_MONARDES</Tag>
-		<English>TXT_KEY_FATHER_SAMUEL_NICOLAS_MONARDES</English>
+		<English>
+			<Text>Nicolás Monardes</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Nicolás Monardes</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Nicolás Monardes</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Nicolás Monardes</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Nicolás Monardes</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Николас Монардес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_NOMADS</Tag>
@@ -757,31 +2507,206 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PATRICK_HENRY</Tag>
-		<English>TXT_KEY_FATHER_PATRICK_HENRY</English>
+		<English>
+			<Text>Patrick Henry</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Patrick Henry</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Patrick Henry</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Patrick Henry</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Patrick Henry</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Патрик Генри</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PAUL_CHOMEDEY_DE_MAISONNEUVE</Tag>
-		<English>TXT_KEY_FATHER_PAUL_CHOMEDEY_DE_MAISONNEUVE</English>
+		<English>
+			<Text>Sieur de Maisonneuve</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sieur de Maisonneuve</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sieur de Maisonneuve</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sieur de Maisonneuve</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sieur de Maisonneuve</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Поль Шомеде де Мезоннёв</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PAUL_REVERE</Tag>
-		<English>TXT_KEY_FATHER_PAUL_REVERE</English>
+		<English>
+			<Text>Paul Revere</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Paul Revere</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Paul Revere</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Paul Revere</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Paul Revere</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Пол Ревир</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PEDRO_ALVARES_CABRAL</Tag>
-		<English>TXT_KEY_FATHER_PEDRO_ALVARES_CABRAL</English>
+		<English>
+			<Text>Pedro Álvares Cabral</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Pedro Álvares Cabral</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Pedro Álvares Cabral</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Pedro Álvares Cabral</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pedro Álvares Cabral</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Педру Алвариш Кабрал</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PEDRO_DE_VALDIVIA</Tag>
-		<English>TXT_KEY_FATHER_PEDRO_DE_VALDIVIA</English>
+		<English>
+			<Text>Pedro de Valdivia</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Pedro de Valdivia</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Pedro de Valdivia</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Pedro de Valdivia</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pedro de Valdivia</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Педро де Вальдивия</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PEDRO_MENENDEZ_DE_AVILES</Tag>
-		<English>TXT_KEY_FATHER_PEDRO_MENENDEZ_DE_AVILES</English>
+		<English>
+			<Text>Pedro Menéndez de Avilés</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Pedro Menéndez de Avilés</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Pedro Menéndez de Avilés</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Pedro Menéndez de Avilés</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pedro Menéndez de Avilés</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Педро Менендес де Авилес</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PETER_MINUIT</Tag>
-		<English>TXT_KEY_FATHER_PETER_MINUIT</English>
+		<English>
+			<Text>Peter Minuit</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Peter Minuit</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Peter Minuit</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Peter Minuit</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Peter Minuit</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Петер Минёйт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PIONEER</Tag>
@@ -806,7 +2731,32 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_POCAHONTAS</Tag>
-		<English>TXT_KEY_FATHER_POCAHONTAS</English>
+		<English>
+			<Text>Pocahontas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Pocahontas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Pocahontas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Pocahontas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Pocahontas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Покахонтас</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PUPIL</Tag>
@@ -873,23 +2823,148 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ROBERT_LA_SALLE</Tag>
-		<English>TXT_KEY_FATHER_ROBERT_LA_SALLE</English>
+		<English>
+			<Text>Sieur de La Salle</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sieur de La Salle</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sieur de La Salle</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sieur de La Salle</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sieur de La Salle</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Рене-Робер Кавелье де Ла Саль</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ROBERT_MORRIS</Tag>
-		<English>TXT_KEY_FATHER_ROBERT_MORRIS</English>
+		<English>
+			<Text>Robert Morris</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Robert Morris</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Robert Morris</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Robert Morris</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Robert Morris</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Роберт Моррис</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ROGER_WILLIAMS</Tag>
-		<English>TXT_KEY_FATHER_ROGER_WILLIAMS</English>
+		<English>
+			<Text>Roger Williams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Roger Williams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Roger Williams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Roger Williams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Roger Williams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Роджер Уильямс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SAMUEL_ADAMS</Tag>
-		<English>TXT_KEY_FATHER_SAMUEL_ADAMS</English>
+		<English>
+			<Text>Samuel Adams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Samuel Adams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Samuel Adams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Samuel Adams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Samuel Adams</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Сэмюэл Адамс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SAMUEL_BLOMMAERT</Tag>
-		<English>TXT_KEY_FATHER_SAMUEL_BLOMMAERT</English>
+		<English>
+			<Text>Samuel Blommaert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Samuel Blommaert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Samuel Blommaert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Samuel Blommaert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Samuel Blommaert</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Сэмуел Бломмерт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SEAFARERS</Tag>
@@ -923,15 +2998,90 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SOR_JUANA</Tag>
-		<English>TXT_KEY_FATHER_SOR_JUANA</English>
+		<English>
+			<Text>Sor Juana Inés de la Cruz</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sor Juana Inés de la Cruz</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sor Juana Inés de la Cruz</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sor Juana Inés de la Cruz</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sor Juana Inés de la Cruz</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Хуана Инес де ла Крус</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_THOMAS_JEFFERSON</Tag>
-		<English>TXT_KEY_FATHER_THOMAS_JEFFERSON</English>
+		<English>
+			<Text>Thomas Jefferson</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Thomas Jefferson</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Thomas Jefferson</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Thomas Jefferson</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Thomas Jefferson</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Томас Джефферсон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_THOMAS_PAINE</Tag>
-		<English>TXT_KEY_FATHER_THOMAS_PAINE</English>
+		<English>
+			<Text>Thomas Paine</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Thomas Paine</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Thomas Paine</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Thomas Paine</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Thomas Paine</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Томас Пейн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_TOLERANT</Tag>
@@ -986,58 +3136,408 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_VACO_NUNEZ_DE_BALBOA</Tag>
-		<English>TXT_KEY_FATHER_VACO_NUNEZ_DE_BALBOA</English>
+		<English>
+			<Text>Vasco Núñez de Balboa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Vasco Núñez de Balboa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Vasco Núñez de Balboa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Vasco Núñez de Balboa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Vasco Núñez de Balboa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Васко Нуньес де Бальбоа</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_WASHINGTON_IRVING</Tag>
-		<English>TXT_KEY_FATHER_WASHINGTON_IRVING</English>
+		<English>
+			<Text>Washington Irving</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Washington Irving</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Washington Irving</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Washington Irving</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Washington Irving</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Вашингтон Ирвинг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_WILLEM_BARENTS</Tag>
-		<English>TXT_KEY_FATHER_WILLEM_BARENTS</English>
+		<English>
+			<Text>Willem Barentsz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Willem Barentsz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Willem Barentsz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Willem Barentsz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Willem Barentsz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Виллем Баренц</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_WILLIAM_BREWSTER</Tag>
-		<English>TXT_KEY_FATHER_WILLIAM_BREWSTER</English>
+		<English>
+			<Text>William Brewster</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>William Brewster</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>William Brewster</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>William Brewster</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>William Brewster</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Уильям Брюстер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_THOMAS_HOOKER</Tag>
-		<English>TXT_KEY_FATHER_THOMAS_HOOKER</English>
+		<English>
+			<Text>Thomas Hooker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Thomas Hooker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Thomas Hooker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Thomas Hooker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Thomas Hooker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Томас Хукер</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_TOME_DE_SOUSA</Tag>
-		<English>TXT_KEY_FATHER_TOME_DE_SOUSA</English>
+		<English>
+			<Text>Tomé de Sousa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Tomé de Sousa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Tomé de Sousa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Tomé de Sousa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Tomé de Sousa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Томе де Соуза</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PIET_HEYN</Tag>
-		<English>TXT_KEY_FATHER_PIET_HEYN</English>
+		<English>
+			<Text>Piet Hein</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Piet Hein</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Piet Hein</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Piet Hein</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Piet Hein</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Пит Питерсон Хайн</Russian>
 	</TEXT>	
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_JUAN_PONCE_DE_LEON</Tag>
-		<English>TXT_KEY_FATHER_JUAN_PONCE_DE_LEON</English>
+		<English>
+			<Text>Juan Ponce de León</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Juan Ponce de León</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Juan Ponce de León</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Juan Ponce de León</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Juan Ponce de León</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Хуан Понсе де Леон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_HERMAN_OF_ALASKA</Tag>
-		<English>TXT_KEY_FATHER_HERMAN_OF_ALASKA</English>
+		<English>
+			<Text>German Alyaskinskiy</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>German Alyaskinskiy</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>German Alyaskinskiy</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>German Alyaskinskiy</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>German Alyaskinskiy</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Герман Аляскинский</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_IVAN_KUSKOV</Tag>
-		<English>TXT_KEY_FATHER_IVAN_KUSKOV</English>
+		<English>
+			<Text>Ivan Aleksandrovich Kuskov</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Ivan Aleksandrovich Kuskov</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Ivan Aleksandrovich Kuskov</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Ivan Aleksandrovich Kuskov</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Ivan Aleksandrovich Kuskov</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Иван Александрович Кусков</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_NIKOLAI_REZANOV</Tag>
-		<English>TXT_KEY_FATHER_NIKOLAI_REZANOV</English>
+		<English>
+			<Text>Nikolay Petrovich Rezanov</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Nikolay Petrovich Rezanov</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Nikolay Petrovich Rezanov</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Nikolay Petrovich Rezanov</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Nikolay Petrovich Rezanov</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Николай Петрович Резанов</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_IVAN_KRUZENSHTERN</Tag>
-		<English>TXT_KEY_FATHER_IVAN_KRUZENSHTERN</English>
+		<English>
+			<Text>Ivan Fyodorovich Krusenstern</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Ivan Fyodorovich Krusenstern</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Ivan Fyodorovich Krusenstern</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Ivan Fyodorovich Krusenstern</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Ivan Fyodorovich Krusenstern</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Иван Федорович Крузенштерн</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_WALTER_RALEIGH</Tag>
-		<English>TXT_KEY_FATHER_WALTER_RALEIGH</English>
+		<English>
+			<Text>Sir Walter Raleigh</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sir Walter Raleigh</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sir Walter Raleigh</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sir Walter Raleigh</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sir Walter Raleigh</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Уолтер Рэли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VELAZQUEZ_DE_CUELLAR</Tag>
-		<English>TXT_KEY_FATHER_DEIGO_VELAZQUEZ_DE_CUELLAR</English>
+		<English>
+			<Text>Diego Velázquez de Cuéllar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Diego Velázquez de Cuéllar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Diego Velázquez de Cuéllar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Diego Velázquez de Cuéllar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Diego Velázquez de Cuéllar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Диего Веласкес де Куэльяр</Russian>
 	</TEXT>
 </Civ4GameText>
