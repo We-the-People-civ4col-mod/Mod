@@ -943,12 +943,17 @@ CvPlot* CvPlayer::findStartingPlot(bool bRandomize)
 			aiWeights[iI] = std::max(0, iValue);
 		}
 
-		FAssert(std::accumulate(aiWeights.begin(), aiWeights.end(), 0) > 0);
+		//WTP, Dyllin, Accumulated aiWeights should be positive unless the player is a King,
+		//in which case iBestIndex will be -1 for them.
+		FAssert(std::accumulate(aiWeights.begin(), aiWeights.end(), 0) > 0 || iBestIndex == -1);
 
-		if (bRandomize)
-		{
-			iBestIndex = GC.getGameINLINE().getSorenRand().pickValue(CREATE_ASSERT_DATA, aiWeights, "Randomizing start");
-		}
+		//WTP, Dyllin, Broken in this context, do not re-enable. Calling this function in this context seems
+		//to always return zero for iBestIndex, borking all European placements. The above algorithm is
+		//already random enough as it is.
+		//if (bRandomize)
+		//{
+		//	iBestIndex = GC.getGameINLINE().getSorenRand().pickValue(CREATE_ASSERT_DATA, aiWeights, "Randomizing start");
+		//}
 
 		return GC.getMap().plotByIndexINLINE(iBestIndex);
 
