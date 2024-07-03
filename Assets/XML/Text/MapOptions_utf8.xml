@@ -137,21 +137,26 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS</Tag>
 		<English>Terrain Roughness:</English>
+		<Russian>Неровность местности</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_0</Tag>
 		<English>Flat</English>
+		<Russian>Плоская</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_1</Tag>
 		<English>Rolling</English>
+		<Russian>Пологие холмы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_2</Tag>
 		<English>Hilly</English>
+		<Russian>Холмистая</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_3</Tag>
 		<English>Mountainous</English>
+		<Russian>Горная</Russian>
 	</TEXT>
 </Civ4GameText>
