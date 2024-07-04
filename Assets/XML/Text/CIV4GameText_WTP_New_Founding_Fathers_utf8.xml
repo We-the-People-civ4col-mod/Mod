@@ -36,10 +36,6 @@
 		<Russian>Карл Линней</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TRAIT_CARL_VON_LINNES</Tag>
-		<English>TXT_KEY_FATHER_CARL_VON_LINNES</English>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_FATHER_CARL_VON_LINNES_PEDIA</Tag>
 		<English>[H1]Carl von Linné[\H1][NEWLINE][BOLD]Lived : [\BOLD]1707 - 1778[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Carl von Linné, known as Carl Linnaeus before being knighted in 1761, is the father of modern taxonomy. Born in Rashult in southern Sweden, he was a botanist, zoologist, taxonomist, and physician. His higher education was at Uppsala University. He began giving lectures in botany there in 1730.[PARAGRAPH:2:1]His manuscript on classifying plants was published as "Systema Naturae" (1735). It established binomial nomenclature in Latin as the world standard.[PARAGRAPH:2:1]He admired the child care practices of the Lapps. They had healthier babies than Europeans who employed wet nurses. He became a strong advocate of breast-feeding by mothers. His activism here likely played a role in his choice of the term Mammalia for our class of organisms.</English>
 		<!--<German>[H1]Carl von Linné[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1707 - 1778[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
@@ -77,10 +73,6 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Томас Гейтс</Russian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TRAIT_SIR_THOMAS_GATES</Tag>
-		<English>TXT_KEY_FATHER_SIR_THOMAS_GATES</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES_PEDIA</Tag>
@@ -200,10 +192,6 @@
 		<Russian>Роберт Бейкуэлл</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TRAIT_ROBERT_BAKEWELL</Tag>
-		<English>TXT_KEY_FATHER_ROBERT_BAKEWELL</English>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_FATHER_ROBERT_BAKEWELL_PEDIA</Tag>
 		<English>[H1]Robert Bakewell[\H1][NEWLINE][BOLD]Lived : [\BOLD]1725 - 1795[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Robert Bakewell was an English agriculturalist, the first to implement systematic selective breeding of livestock. Using native sheep, he was able to select for large animals with long, lustrous wool.[PARAGRAPH:2:1]As more and more farmers followed his lead, farm animals increased dramatically in size and quality. In 1700, the average weight of a bull sold for slaughter was 370 pounds (168 kg). By 1786, that weight had more than doubled to 840 pounds (381 kg).[PARAGRAPH:2:1]Selective breeding inspired Charles Darwin's theory of natural selection. In "On the Origin of Species" Darwin cited Bakewell's work.</English>
 		<!--<German>[H1]Robert Bakewell[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1725 - 1795[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
@@ -241,10 +229,6 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Томас Уэст</Russian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TRAIT_THOMAS_WEST_DE_LA_WARR</Tag>
-		<English>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR_PEDIA</Tag>
@@ -286,10 +270,6 @@
 		<Russian>Джеймс Бейкер</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TRAIT_JAMES_BAKER</Tag>
-		<English>TXT_KEY_FATHER_JAMES_BAKER</English>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_FATHER_JAMES_BAKER_PEDIA</Tag>
 		<English>[H1]Doctor James Baker[\H1][NEWLINE][BOLD]Lived : [\BOLD]1739 - 1825[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Owing to James Baker's gentle disposition, his parents were induced to fit him for the ministry. With this in view he went through Harvard College, graduating in 1760. However it soon became apparent that his extreme diffidence would prevent him from performing the duties of a minister.[PARAGRAPH:2:1]Next he opened a store. Soon he saw that there were great possibilities in the chocolate business, so he closed his store and began to manufacture chocolate. The success of this undertaking was remarkable and Baker’s Chocolate has been manufactured ever since, now being known in all parts of the world.</English>
 		<!--<German>[H1]Doktor James Baker[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1739 - 1825[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
@@ -327,10 +307,6 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Уильям Стрейчи</Russian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TRAIT_WILLIAM_STRACHEY</Tag>
-		<English>TXT_KEY_FATHER_WILLIAM_STRACHEY</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_WILLIAM_STRACHEY_PEDIA</Tag>
@@ -372,10 +348,6 @@
 		<Russian>Джон Харви</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TRAIT_SIR_JOHN_HARVEY</Tag>
-		<English>TXT_KEY_FATHER_SIR_JOHN_HARVEY</English>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY_PEDIA</Tag>
 		<English>[H1]Sir John Harvey[\H1][NEWLINE][BOLD]Lived : [\BOLD]c.1581 - 1646[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Sir John Harvey complained about the lack of leather shoes in colonial Virginia. He encouraged shoe manufacturers and tanneries, and also prevented the export of leather or deer hide, keeping it all for the local market.[PARAGRAPH:2:1] Harvey was the Governor of Virginia, appointed by Charles I. In 1635, he was suspended and impeached by the Council of Virginia.[PARAGRAPH:2:1]Charles I restored him to his post in 1636. The captain and sailors who transported the governor back to Virginia in 1635 had to sue in Admiralty court for their pay.[PARAGRAPH:2:1]His government was tyrannical and Harvey himself was called "an obnoxious ruler". In 1639, Harvey was replaced as governor by Sir Francis Wyatt.</English>
 		<!--<German>[H1]Sir John Harvey[\H1][NEWLINE][BOLD]Lebte : [\BOLD]ca. 1581 - 1646[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
@@ -413,10 +385,6 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Иоганн Мориц Нассау-Зигенский</Russian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TRAIT_JOHN_MAURICE</Tag>
-		<English>TXT_KEY_FATHER_JOHN_MAURICE</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JOHN_MAURICE_PEDIA</Tag>
@@ -458,10 +426,6 @@
 		<Russian>Уильям Тейлер</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TRAIT_WILLIAM_TAILER</Tag>
-		<English>TXT_KEY_FATHER_WILLIAM_TAILER</English>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_FATHER_WILLIAM_TAILER_PEDIA</Tag>
 		<English>[H1]William Tailer[\H1][NEWLINE][BOLD]Lived : [\BOLD]1675 - 1731[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]William Tailer was a military officer and politician in Massachusetts Bay. He commanded a regiment in the 1710 siege of Port Royal, the capital of French Acadia, during Queen Anne's War.[PARAGRAPH:2:1]Tailer was responsible for overseeing the defenses of Boston in the 1720s, and negotiated with the Iroquois and Abenaki during Dummer's War.[PARAGRAPH:2:1]An Anglican, he opposed Puritan Governor Joseph Dudley. Tailer was ultimately turned out of office when the king chose Colonel Samuel Shute, a land bank opponent, to replace his government.</English>
 		<!--<German>[H1]William Tailer[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1675 - 1731[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
@@ -499,10 +463,6 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Сэмюэл Николас</Russian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TRAIT_SAMUEL_NICHOLAS</Tag>
-		<English>TXT_KEY_FATHER_SAMUEL_NICHOLAS</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_SAMUEL_NICHOLAS_PEDIA</Tag>
@@ -544,10 +504,6 @@
 		<Russian>Джон Уинтроп</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TRAIT_JOHN_WINTHROP_THE_YOUNGER</Tag>
-		<English>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER</English>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_FATHER_JOHN_WINTHROP_THE_YOUNGER_PEDIA</Tag>
 		<English>[H1]John Winthrop the Younger[\H1][NEWLINE][BOLD]Lived : [\BOLD]1606 - 1676[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]John Winthrop the Younger was an early governor of the Connecticut colony. He lived in Massachusetts, where he built a grist mill and was granted a monopoly. This was one of the first monopolies granted in New England.[PARAGRAPH:2:1]Winthrop became a magistrate of the Connecticut colony in 1651, was governor of the colony from 1657 to 1658, and again became governor in 1659, being annually re-elected until his death.[PARAGRAPH:2:1]During his tenure as Governor of Connecticut, he oversaw the acceptance of Quakers who were banned from Massachusetts.[PARAGRAPH:2:1]In 1662, he obtained the charter in England which united the colonies of Connecticut and New Haven.</English>
 		<!--<German>[H1]John Winthrop, der Jüngere[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1606 - 1676[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
@@ -587,10 +543,6 @@
 		<Russian>Бенджамин Киссам</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_TRAIT_BENJAMIN_KISSAM</Tag>
-		<English>TXT_KEY_FATHER_BENJAMIN_KISSAM</English>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_FATHER_BENJAMIN_KISSAM_PEDIA</Tag>
 		<English>[H1]Benjamin Kissam[\H1][NEWLINE][BOLD]Lived : [\BOLD]1728 - 1782[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Benjamin Kissam was a prominent lawyer in New York City who trained prospective lawyers. One of his clerks was John Jay. Kissam's wife was Catherine Rutgers, whose family owned a large amount of land in New York, and his brother Daniel was a judge.[PARAGRAPH:2:1]Kissam represented the proprietors of the Kayoderosseras, a huge area of former Mohawk land. The Native nation felt the land patent granted to colonists in the early eighteenth century was unfair. Kissam acted for the proprietors in reaching a new settlement with the Mohawk in 1768.</English>
 		<!--<German>[H1]Benjamin Kissam[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1728 - 1782[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]TBD</German>-->
@@ -628,10 +580,6 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Хуан де Пареха</Russian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_TRAIT_JUAN_DE_PAREJA</Tag>
-		<English>TXT_KEY_FATHER_JUAN_DE_PAREJA</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JUAN_DE_PAREJA_PEDIA</Tag>

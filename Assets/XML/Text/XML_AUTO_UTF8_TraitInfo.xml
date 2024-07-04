@@ -3540,4 +3540,381 @@
 		</Spanish>
 		<Russian>Диего Веласкес де Куэльяр</Russian>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_BENJAMIN_KISSAM</Tag>
+		<English>
+			<Text>Benjamin Kissam</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Benjamin Kissam</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Benjamin Kissam</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Benjamin Kissam</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Benjamin Kissam</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Бенджамин Киссам</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_CARL_VON_LINNES</Tag>
+		<English>
+			<Text>Carl von Linné</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Carl von Linné</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Carl von Linné</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Carl von Linné</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Carl von Linné</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Карл Линней</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SIR_THOMAS_GATES</Tag>
+		<English>
+			<Text>Sir Thomas Gates</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sir Thomas Gates</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sir Thomas Gates</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sir Thomas Gates</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sir Thomas Gates</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Томас Гейтс</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_ROBERT_BAKEWELL</Tag>
+		<English>
+			<Text>Robert Bakewell</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Robert Bakewell</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Robert Bakewell</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Robert Bakewell</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Robert Bakewell</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Роберт Бейкуэлл</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_THOMAS_WEST_DE_LA_WARR</Tag>
+		<English>
+			<Text>Baron De La Warr</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Baron De La Warr</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Baron De La Warr</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Baron De La Warr</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Baron De La Warr</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Томас Уэст</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_JAMES_BAKER</Tag>
+		<English>
+			<Text>James Baker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>James Baker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>James Baker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>James Baker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>James Baker</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джеймс Бейкер</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_WILLIAM_STRACHEY</Tag>
+		<English>
+			<Text>William Strachey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>William Strachey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>William Strachey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>William Strachey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>William Strachey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Уильям Стрейчи</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SIR_JOHN_HARVEY</Tag>
+		<English>
+			<Text>Sir John Harvey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Sir John Harvey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Sir John Harvey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Sir John Harvey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Sir John Harvey</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джон Харви</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_JOHN_MAURICE</Tag>
+		<English>
+			<Text>Johann Moritz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Johann Moritz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Johann Moritz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Johann Moritz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Johann Moritz</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Иоганн Мориц Нассау-Зигенский</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_WILLIAM_TAILER</Tag>
+		<English>
+			<Text>William Tailer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>William Tailer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>William Tailer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>William Tailer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>William Tailer</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Уильям Тейлер</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_SAMUEL_NICHOLAS</Tag>
+		<English>
+			<Text>Samuel Nicholas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Samuel Nicholas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Samuel Nicholas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Samuel Nicholas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Samuel Nicholas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Сэмюэл Николас</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_JOHN_WINTHROP_THE_YOUNGER</Tag>
+		<English>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>John Winthrop</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Джон Уинтроп</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_TRAIT_JUAN_DE_PAREJA</Tag>
+		<English>
+			<Text>Juan de Pareja</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</English>
+		<French>
+			<Text>Juan de Pareja</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Juan de Pareja</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Juan de Pareja</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Juan de Pareja</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Хуан де Пареха</Russian>
+	</TEXT>
 </Civ4GameText>
