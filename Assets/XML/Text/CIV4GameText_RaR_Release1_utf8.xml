@@ -6,35 +6,6 @@
 <!-- Game Text - New -->
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
-		<Tag>TXT_KEY_PROFESSION_CONQUISTADOR</Tag>
-		<English>
-			<Text>Conquistador:Conquistadores</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</English>
-		<French>
-			<Text>Conquistador:Conquistadors</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</French>
-		<German>
-			<Text>Konquistador:Konquistadoren</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</German>
-		<Italian>
-			<Text>Conquistador:Conquistadores</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Conquistador:Conquistadores</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Spanish>
-		<Russian>Конкистадор:Конкистадоры</Russian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EUROPE_PEACE_ACCEPTED</Tag>
 		<English>As requested by His Majesty, we have agreed to peace negotiations with [COLOR_HIGHLIGHT_TEXT]%s1_nation[COLOR_REVERT]. The diplomats decided to stay after the negotiations.</English>
 		<French>Conformément aux souhaits du Roi, nous avons accepté les négociations de paix avec %s1_nation.</French>
@@ -77,6 +48,7 @@
 		<German>Milord, es herrscht Krieg, und die Siedler fürchten sich, die schützende Siedlung aufzugeben.</German>
 		<Italian>Abbandonare la città non è possibile durante la guerra.</Italian>
 		<Spanish>El abandono de una ciudad no es posible durante la guerra.</Spanish>
+		<Russian>Милорд, идёт война и колонисты боятся покидать поселение, находящееся под защитой войск.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>NO_TRADE_BECAUSE_BAD_BARGAIN</Tag>
@@ -462,6 +434,7 @@
 		<English>[ICON_BULLET]Cannot explore unrevealed tiles.</English>
 		<French>[ICON_BULLET]Ne peut pas se déplacer dans les territoires inexplorés.</French>
 		<German>[ICON_BULLET]Kann keine unentdeckten Geländefelder aufdecken.</German>
+		<Russian>[ICON_BULLET]Не может исследовать неизведанные клетки карты</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NO_REVEAL_GOODY</Tag>
@@ -477,7 +450,7 @@
 		<German>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Die Lagerhauskapazität ist fast an ihren Grenzen.</German>
 		<Italian>La capacità di storage in %s1_city è quasi al suo limite, Mylord.</Italian>
 		<Spanish>La capacidad de almacenamiento en %s1_city es casi en su límite, Mylord.</Spanish>
-		<Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Емкость хранилища почти исчерпана.</Russian>
+		<Russian>[COLOR_WARNING_TEXT]%s1_city : [COLOR_REVERT]Ёмкость хранилища почти исчерпана.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_REBEL_COMBAT_MOD</Tag>
@@ -625,6 +598,7 @@
 		<English>Orders a new unit automatically whenever no unit is trained.[NEWLINE][NEWLINE]Multiple repeating units is possible and an equal number will be trained of each.</English>
 		<French>Commander une nouvelle unité automatiquement dès lors qu'aucune unité est en formation.[NEWLINE][NEWLINE]Des répétitions multiples d'unités sont possibles et un nombre équivalent d'unités sera formé pour chaque catégorie.</French>
 		<German>Bildet eine weitere Einheit automatisch aus, wenn gerade keine andere ausgebildet wird.[NEWLINE][NEWLINE]Mehrere sich wiederholende Einheiten sind möglich. Es wird jeweils eine gleichmässige Anzahl der verschiedenen Berufe ausgebildet.</German>
+		<Russian>Обучающийся юнит автоматически получит выбранную профессию, если также не указаны другие профессии.[NEWLINE][NEWLINE]Возможно обучение нескольких повторяющихся отрядов. Обучается равное количество различных профессий.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EDIT_TEACHER_LIST_NO_TEACHER</Tag>
@@ -652,14 +626,14 @@
 		<English>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Choose goods to be sold by the local Custom House, and select mimimum amount of a specific yield to enable the Custom House to sell such yield here in this city.</English>
 		<French>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Sélectionner les biens que le poste de douane va vendre, ainsi que le seuil de marchandises qui déclenche la vente de celle-ci pour la colonie suivante: %s1_city</French>
 		<German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Wählen Sie die Güter aus, die durch das Zollhaus auf dem heimischen Markt verkauft werden sollen, sowie eine Mindestschwelle, ab der das Zollhaus verkaufen darf.</German>
-		<Russian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Выберите товары, которые будут продаваться местной таможней (небольшими партиями) и их минимальный остаток на складе, который таможня не будет реализовывать. Однако при переполненном складе часть любого товара может быть продана.</Russian>
+		<Russian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT][NEWLINE][NEWLINE]Выберите товары, которые будут продаваться (небольшими партиями) местной таможней и их минимальный остаток на складе, который таможня не будет реализовывать. Однако при переполненном складе часть любого товара может быть продана.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CUSTOM_HOUSE_POPUP_TEXT_NO_NEW_CAPACITY</Tag>
 		<English>New capacity not activated! Settings will have no effect.</English>
 		<French>La nouvelle capacité n'est pas activée ! Les paramètres n'auront aucun effet.</French>
 		<German>Neue Kapazität nicht aktiviert! Einstellungen haben keine Wirkung.</German>
-		<Russian>Новая емкость не активирована! Настройки не будут иметь никакого значения.</Russian>
+		<Russian>Новая ёмкость не активирована! Настройки не будут иметь никакого значения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CUSTOM_HOUSE_NOT_BUILT_YET_POPUP_TEXT</Tag>
@@ -939,7 +913,7 @@
 		<German>%D1: "Wir stehen zu unseren Glaubensbrüdern und -schwestern."</German>
 		<Italian>%D1: "Ci preoccupiamo dei nostri fratelli e delle nostre sorelle."</Italian>
 		<Spanish>%D1: "Nos preocupamos por nuestros hermanos y hermanas de fe."</Spanish>
-		<Russian>%D1: "Мы заботимся о наших братьях и сестрах по вере."</Russian>
+		<Russian>%D1: "Мы заботимся о наших братьях и сёстрах по вере."</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ATTITUDE_DIFFERENT_RELIGION</Tag>
@@ -1155,37 +1129,6 @@
 		<French>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Des animaux sauvages ont été repérés!</French>
 		<German>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Ein Kundschafter meldet wilde Tiere in der Nähe!</German>
 		<Russian>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Жители жалуются на диких животных, бродящих поблизости от города!</Russian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_ANACONDA</Tag>
-		<English>Anaconda</English>
-		<French>
-			<Text>Anaconda</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</French>
-		<German>
-			<Text>Anaconda</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</German>
-		<Italian>
-			<Text>Anaconda</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Italian>
-		<Spanish>
-			<Text>Anaconda</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Spanish>
-		<Russian>Анаконда</Russian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_UNIT_BLACKBEAR_PEDIA</Tag>
-		<English>[TAB]The American black bear (Ursus americanus) is medium-sized by world standards, but nonetheless the continent's smallest. It is the most common bear species. Black bears are omnivores, with their diets varying greatly depending on season and location. They typically live in forested areas, but do leave forests in search of food. They can be attracted to human communities because of the availability of food. The American black bear is listed by the IUCN as Least Concern, due to the species' widespread distribution with a population estimated to be twice that of all other bear species combined. American black bears often mark trees using their teeth and claws as a form of communication with other bears, a behaviour common to many species of bears.</English>
-		<French>[TAB]L'ours noir (Ursus americanus) est de taille moyenne à l'échelle mondiale, mais est l'ours le plus petit du continent. C'est également le plus commun en Amérique du Nord. Ce sont des omnivores, dont le régime varie fortement suivant la saison et le lieu. Ils vivent le plus souvent en forêt, mais peuvent les quitter à la recherche de nourriture. Ils peuvent être attirés par les regroupements humains à cause de la nourriture. L'ours noir américain est listé dans la catégorie IUCN Préoccupation mineire, en raison de son aire géographique étendue et de sa population estimée à deux fois celle des autres epsèces d'ours réunies.  Les ours noirs américains marquent souvent les arbres à coup de griffes et de mâchoires pour laisser un message aux autres ours, ce qui est comportement commun à biens des espèces d'ours.</French>
-		<German>[TAB]Der Amerikanische Schwarzbär (Ursus americanus), auch Baribal genannt, ist eine in Nord-Amerika lebende Raubtierart aus der Familie der Bären (Ursidae). In seiner Heimat wird er meistens als black bear bezeichnet oder als Baribal. Im Vergleich zum eher gefürchteten Grizzlybär gilt der Schwarzbär als weniger gefährlich. Amerikanische Schwarzbären haben den typischen Körperbau der Bären. Der Rumpf ist massiv, die Gliedmaßen kräftig. Die Pfoten haben je fünf starke Krallen, welche die Bären zum Reißen, Graben und Klettern einsetzen. Der Schwanz ist wie bei allen Bären nur ein kurzer Stummel. Der große Kopf ist durch die eher lange, unbehaarte Schnauze, die kleinen Augen und die runden, aufgerichteten Ohren charakterisiert. Trotz ihres Namens sind nicht alle Amerikanischen Schwarzbären schwarz gefärbt. Es gibt auch silbergraue und rötlichbraune Varianten, und manche Baribals haben eine mit Grizzlies nahezu identische Fellfarbe. Die Färbung des Fells hängt mit dem Lebensraum zusammen: während Tiere, die in dichten Wäldern mit kühlerem Klima (im Norden und Osten des Verbreitungsgebietes) leben, eher schwarz sind, haben die Schwarzbären im südlichen und westlichen Teil des Verbreitungsgebietes, die in offenem, trockenerem Terrain wohnen, eine eher bräunliche Färbung. Das Verbreitungsgebiet der Amerikanischen Schwarzbären umfasst große Teile Nord-Amerikas. Sie leben in nahezu ganz Alaska und Kanada mit Ausnahme des äußersten Nordens, im Kerngebiet der Vereinigten Staaten (den 48 zusammenhängenden Staaten) sind sie ebenfalls weit verbreitet und fehlten ursprünglich nur im südwestlichen, trockenen Landesteil. In Mexiko kommen sie vor allem im Bereich der Gebirgszüge Sierra Madre Oriental und Sierra Madre Occidental vor. Amerikanische Schwarzbären wurden und werden vom Menschen aus verschiedensten Gründen gejagt. Dazu zählen die potenzielle Gefährdung des Menschen, die Angst vor gerissenen Weidetieren und zerstörten Agrarflächen und Bienenstöcken, der Bedarf an Fell und Fleisch sowie die Sportjagd. Untersuchungen haben gezeigt, dass der Schaden bei Weidetieren vernachlässigbar ist, dass sie aber wohl auf landwirtschaftlich genutzten Feldern Schäden anrichten können. Die Sportjagd ist weit verbreitet, nach einer Schätzung aus dem Jahr 1995 werden jedes Jahr rund 40.000 Tiere erlegt. Die Verwendung des Bärenfells und des Fleisches ist heute weitgehend zurückgegangen; bei den Indianern war dies der wichtigste Grund für die Bejagung. Die Bärenfellmützen, die zur Paradeuniform verschiedener britischer Regimenter gehören, werden aber bis heute aus dem Fell kanadischer Schwarzbären hergestellt.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_NATIONAL_WONDER</Tag>

@@ -57,6 +57,31 @@
 		<English>TXT_KEY_UNIT_ANIMAL_STRATEGY</English>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_ANACONDA</Tag>
+		<English>Anaconda</English>
+		<French>
+			<Text>Anaconda</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</French>
+		<German>
+			<Text>Anaconda</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</German>
+		<Italian>
+			<Text>Anaconda</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Anaconda</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Spanish>
+		<Russian>Анаконда</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_BARLEY</Tag>
 		<English>Barley</English>
 		<French>
@@ -257,6 +282,12 @@
 		<English>[COLOR_UNIT_TEXT]Bishops[COLOR_REVERT] are the best source of [LINK=YIELD_CROSSES]crosses[\LINK] a colony could wish for. They are even more effective than [LINK=UNIT_PREACHER]firebrand preachers[\LINK] or [LINK=UNIT_PRIEST]devout priests[\LINK], because they receive a 200% bonus in cross production.[NEWLINE]Your only chance to recruit them is during those rare moments when the [LINK=CONCEPT_CHURCH]Archbishop[\LINK] offers to send you a bishop as a reward for your piety.</English>
 		<French>Les [COLOR_UNIT_TEXT]évêques[COLOR_REVERT] sont la meilleure source de [COLOR_HIGHLIGHT_TEXT]croix[COLOR_REVERT] qu'une colonie peut souhaiter. Ils sont encore plus efficaces que les prédicateurs exaltés, ou les prêtres dévôts mais également très rares.</French>
 		<German>[COLOR_UNIT_TEXT]Bischöfe[COLOR_REVERT] sind die beste Quelle für [LINK=YIELD_CROSSES]Kreuze[\LINK], die sich eine Kolonie wünschen kann. Sie sind sogar noch effektiver als [LINK=UNIT_PREACHER]mitreißende Prediger[\LINK] oder [LINK=UNIT_PRIEST]fromme Priester[\LINK], da sie einen 200%igen Bonus auf die Kreuzproduktion erhalten. Sie sind jedoch sehr selten.[NEWLINE]Du kannst sie rekrutieren, wenn der [LINK=CONCEPT_CHURCH]Erzbischof[\LINK] anbietet, einen Bischof als Belohnung für deine Frömmigkeit zu schicken.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_UNIT_BLACKBEAR_PEDIA</Tag>
+		<English>[TAB]The American black bear (Ursus americanus) is medium-sized by world standards, but nonetheless the continent's smallest. It is the most common bear species. Black bears are omnivores, with their diets varying greatly depending on season and location. They typically live in forested areas, but do leave forests in search of food. They can be attracted to human communities because of the availability of food. The American black bear is listed by the IUCN as Least Concern, due to the species' widespread distribution with a population estimated to be twice that of all other bear species combined. American black bears often mark trees using their teeth and claws as a form of communication with other bears, a behaviour common to many species of bears.</English>
+		<French>[TAB]L'ours noir (Ursus americanus) est de taille moyenne à l'échelle mondiale, mais est l'ours le plus petit du continent. C'est également le plus commun en Amérique du Nord. Ce sont des omnivores, dont le régime varie fortement suivant la saison et le lieu. Ils vivent le plus souvent en forêt, mais peuvent les quitter à la recherche de nourriture. Ils peuvent être attirés par les regroupements humains à cause de la nourriture. L'ours noir américain est listé dans la catégorie IUCN Préoccupation mineire, en raison de son aire géographique étendue et de sa population estimée à deux fois celle des autres epsèces d'ours réunies.  Les ours noirs américains marquent souvent les arbres à coup de griffes et de mâchoires pour laisser un message aux autres ours, ce qui est comportement commun à biens des espèces d'ours.</French>
+		<German>[TAB]Der Amerikanische Schwarzbär (Ursus americanus), auch Baribal genannt, ist eine in Nord-Amerika lebende Raubtierart aus der Familie der Bären (Ursidae). In seiner Heimat wird er meistens als black bear bezeichnet oder als Baribal. Im Vergleich zum eher gefürchteten Grizzlybär gilt der Schwarzbär als weniger gefährlich. Amerikanische Schwarzbären haben den typischen Körperbau der Bären. Der Rumpf ist massiv, die Gliedmaßen kräftig. Die Pfoten haben je fünf starke Krallen, welche die Bären zum Reißen, Graben und Klettern einsetzen. Der Schwanz ist wie bei allen Bären nur ein kurzer Stummel. Der große Kopf ist durch die eher lange, unbehaarte Schnauze, die kleinen Augen und die runden, aufgerichteten Ohren charakterisiert. Trotz ihres Namens sind nicht alle Amerikanischen Schwarzbären schwarz gefärbt. Es gibt auch silbergraue und rötlichbraune Varianten, und manche Baribals haben eine mit Grizzlies nahezu identische Fellfarbe. Die Färbung des Fells hängt mit dem Lebensraum zusammen: während Tiere, die in dichten Wäldern mit kühlerem Klima (im Norden und Osten des Verbreitungsgebietes) leben, eher schwarz sind, haben die Schwarzbären im südlichen und westlichen Teil des Verbreitungsgebietes, die in offenem, trockenerem Terrain wohnen, eine eher bräunliche Färbung. Das Verbreitungsgebiet der Amerikanischen Schwarzbären umfasst große Teile Nord-Amerikas. Sie leben in nahezu ganz Alaska und Kanada mit Ausnahme des äußersten Nordens, im Kerngebiet der Vereinigten Staaten (den 48 zusammenhängenden Staaten) sind sie ebenfalls weit verbreitet und fehlten ursprünglich nur im südwestlichen, trockenen Landesteil. In Mexiko kommen sie vor allem im Bereich der Gebirgszüge Sierra Madre Oriental und Sierra Madre Occidental vor. Amerikanische Schwarzbären wurden und werden vom Menschen aus verschiedensten Gründen gejagt. Dazu zählen die potenzielle Gefährdung des Menschen, die Angst vor gerissenen Weidetieren und zerstörten Agrarflächen und Bienenstöcken, der Bedarf an Fell und Fleisch sowie die Sportjagd. Untersuchungen haben gezeigt, dass der Schaden bei Weidetieren vernachlässigbar ist, dass sie aber wohl auf landwirtschaftlich genutzten Feldern Schäden anrichten können. Die Sportjagd ist weit verbreitet, nach einer Schätzung aus dem Jahr 1995 werden jedes Jahr rund 40.000 Tiere erlegt. Die Verwendung des Bärenfells und des Fleisches ist heute weitgehend zurückgegangen; bei den Indianern war dies der wichtigste Grund für die Bejagung. Die Bärenfellmützen, die zur Paradeuniform verschiedener britischer Regimenter gehören, werden aber bis heute aus dem Fell kanadischer Schwarzbären hergestellt.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BLACKSMITH</Tag>

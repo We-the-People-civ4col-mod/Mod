@@ -741,6 +741,35 @@
 		<Spanish>Las casillas de [LINK=TERRAIN_SAVANNAH]pradera[\LINK] pueden dar [LINK=YIELD_COFFEE_BERRIES]Café[\LINK] si asignáis al Colono que trabaja ahí la profesión de [COLOR_HIGHLIGHT_TEXT]Plantador de Café[COLOR_REVERT]. La cosecha aumentará sustancialmente si ponéis a un [LINK=UNIT_COFFEE_PLANTER]Plantador de Café experto[\LINK] en el puesto.</Spanish>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROFESSION_CONQUISTADOR</Tag>
+		<English>
+			<Text>Conquistador:Conquistadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<French>
+			<Text>Conquistador:Conquistadors</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</French>
+		<German>
+			<Text>Konquistador:Konquistadoren</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Italian>
+			<Text>Conquistador:Conquistadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Italian>
+		<Spanish>
+			<Text>Conquistador:Conquistadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Spanish>
+		<Russian>Конкистадор:Конкистадоры</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_COLONIAL_MILITIA</Tag>
 		<English>
 			<Text>Colonial Militia:Colonial Militias</Text>
