@@ -154,6 +154,7 @@ public:
 	DllExport CvPortal& getPortal();
 	DllExport CvSetupData& getSetupData();
 	DllExport CvInitCore& getInitCore();
+	//CvInitCore& getInitCoreInternal() const;
 	DllExport CvInitCore& getLoadedInitCore();
 	DllExport CvInitCore& getIniInitCore();
 	DllExport CvMessageCodeTranslator& getMessageCodes();

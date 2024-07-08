@@ -455,4 +455,38 @@ bool CvArea::isEuropePlayer() const
 }
 // TAC - AI Explore from Ship endless loop fix - koma13 - END
 
+/*  Replacement for the BtS area()==area() checks. Mostly used for
+	performance reasons before costlier more specific checks. */
+bool CvArea::canBeEntered(CvArea const& kFrom, CvUnit const* u) const
+{
+	// Called very often. Mostly from the various plot danger functions.
+	//PROFILE_FUNC();
+	if (getID() == kFrom.getID())
+		return true;
+	/*  If I wanted to support canMoveAllTerrain here, then I couldn't do
+		anything more when u==NULL. So that's not supported. */
+	// WTP: Not supported, but may be approximated by the oceean distance threshold
+	// to filter out icelocked areas
+	/*
+	if (isWater() == kFrom.isWater() &&
+		(m_iRepresentativeArea != kFrom.m_iRepresentativeArea ||
+			(u != NULL && !u->canMoveImpassable())))
+	{
+		return false;
+	}
+	*/
+	/*  Can't rule out movement between water and land without knowing if the
+		unit is a ship inside a city or a land unit aboard a transport */
+	if (u == NULL)
+		return true;
+	if (isWater() && (u->getDomainType() != DOMAIN_SEA || !u->getPlot().isCity()))
+		return false;
+	if (!isWater() && (u->getDomainType() != DOMAIN_LAND || !u->isCargo()))
+		return false;
+	/*  In the cases above, movement may actually still be possible if it's
+		a sea unit entering a city or a land unit boarding a transport.
+		So this function really assumes that u enters a hostile plot. */
+	return true;
+} // </advc.030>
+
 // Protected Functions...

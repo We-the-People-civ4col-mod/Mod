@@ -8,6 +8,7 @@
 //#include "CvStructs.h"
 #include "LinkedList.h"
 #include "KmodPathFinder.h"
+#include "CvInitCore.h"
 
 class CvPlot;
 class CvArea;
@@ -38,7 +39,8 @@ public:
 
 	void doTurn();
 
-	bool showMoves() const;
+	bool showMoves( /* <advc.102> */ CvPlot const& kFromPlot) const;
+	void setInitiallyVisible(bool b); // </advc.102>
 
 	void updateTimers();
 	bool doDelayedDeath();
@@ -149,7 +151,7 @@ public:
 	int getMissionTimer() const;
 	void setMissionTimer(int iNewValue);
 	void changeMissionTimer(int iChange);
-	void updateMissionTimer(int iSteps = 0);
+	void updateMissionTimer(int iSteps = 0, /* advc.102: */ CvPlot* pFromPlot = NULL);
 
 	bool isForceUpdate();
 	void setForceUpdate(bool bNewValue);
@@ -159,12 +161,15 @@ public:
 		return m_eOwner;
 	}
 	TeamTypes getTeam() const;
+	// <advc>
+	bool isActiveOwned() const { return (GC.getInitCore().getActivePlayer() == getOwner()); }
+	bool isActiveTeam() const { return (GC.getInitCore().getActiveTeam() == getTeam()); } // </advc>
 
 	ActivityTypes getActivityType() const;
 	void setActivityType(ActivityTypes eNewValue);
 
-	AutomateTypes getAutomateType() const;
-	bool isAutomated() const;
+	AutomateTypes getAutomateType() const { return m->eAutomateType; }																									// Exposed to Python
+	bool isAutomated() const { return (getAutomateType() != NO_AUTOMATE); }
 	void setAutomateType(AutomateTypes eNewValue);
 
 	// FAStarNode* getPathLastNode() const; // disabled by K-Mod. Use path_finder methods instead.
@@ -290,7 +295,17 @@ protected:
 
 	PlayerTypes m_eOwner;
 	ActivityTypes m_eActivityType;
-	AutomateTypes m_eAutomateType;
+	//AutomateTypes m_eAutomateType;
+	// <advc.003k> Pointer to additional data members
+	class Data
+	{
+		AutomateTypes eAutomateType;
+		//CLinkList<IDInfo> knownEnemies; // advc.004l
+		bool bInitiallyVisible; // advc.102
+		friend CvSelectionGroup;
+	};
+	Data* m; // dial m for members
+	// </advc.003k>
 
 	CLinkList<IDInfo> m_units;
 	std::set<int> m_aTradeRoutes;

@@ -2815,6 +2815,30 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 			}
 		}
 	}
+	else if (!bShift && bAlt && (gDLL->getChtLvl() > 0))
+	{
+		//Area battle plans.
+		const AreaAITypes eAAI = pPlot->area()->getAreaAIType(pPlot->getTeam());
+		switch (eAAI) // advc: If-else replaced with switch
+		{
+		case AREAAI_OFFENSIVE: szTempBuffer.Format(L"\n Area AI = OFFENSIVE");
+			break;
+		case AREAAI_DEFENSIVE: szTempBuffer.Format(L"\n Area AI = DEFENSIVE");
+			break;
+		case AREAAI_MASSING: szTempBuffer.Format(L"\n Area AI = MASSING");
+			break;
+		case AREAAI_ASSAULT: szTempBuffer.Format(L"\n Area AI = ASSAULT");
+			break;
+		case AREAAI_ASSAULT_MASSING: szTempBuffer.Format(L"\n Area AI = ASSAULT_MASSING");
+			break;
+		case AREAAI_NEUTRAL: szTempBuffer.Format(L"\n Area AI = NEUTRAL");
+			break;
+			// <advc.007> These two were missing
+		case AREAAI_ASSAULT_ASSIST: szTempBuffer.Format(L"\n Area AI = ASSAULT_ASSIST");
+			break;
+		default: szTempBuffer.Format(L"\n Area AI = None"); // </advc.007>
+		}
+	}
 	else
 	{
 		eRevealOwner = pPlot->getRevealedOwner(GC.getGameINLINE().getActiveTeam(), true);

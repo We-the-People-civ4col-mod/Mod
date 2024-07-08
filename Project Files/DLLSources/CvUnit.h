@@ -136,6 +136,9 @@ public:
 	void pushGroupMoveTo(CvPlot const& kTo, MovementFlags eFlags = NO_MOVEMENT_FLAGS,
 		bool bAppend = false, bool bManual = false, MissionAITypes eMissionAI = NO_MISSIONAI,
 		CvPlot* pMissionAIPlot = NULL, CvUnit* pMissionAIUnit = NULL);
+	void pushGroupMoveTo(CvPlot const& kTo, int iFlags = NO_MOVEMENT_FLAGS,
+		bool bAppend = false, bool bManual = false, MissionAITypes eMissionAI = NO_MISSIONAI,
+		CvPlot* pMissionAIPlot = NULL, CvUnit* pMissionAIUnit = NULL);
 
 	bool canEnterTerritory(PlayerTypes ePlayer, bool bIgnoreRightOfPassage = false) const;
 	bool canEnterArea(PlayerTypes ePlayer, const CvArea* pArea, bool bIgnoreRightOfPassage = false) const;
@@ -145,7 +148,7 @@ public:
 		bool bAssumeVisible = true, // K-Mod
 		bool bDangerCheck = false) const; // advc.001k
 	bool canMoveOrAttackInto(const CvPlot* pPlot, bool bDeclareWar = false) const;
-	bool canMoveThrough(const CvPlot* pPlot) const;
+	//bool canMoveThrough(const CvPlot* pPlot) const; // disabled by K-Mod
 	void attack(CvPlot* pPlot, bool bQuick);
 	void move(CvPlot* pPlot, bool bShow);
 	bool jumpToNearestValidPlot();
@@ -636,7 +639,17 @@ public:
 	}
 	CvPlayer &getOwnerR() const;
 	DllExport PlayerTypes getVisualOwner(TeamTypes eForTeam = NO_TEAM) const;
-	PlayerTypes getCombatOwner(TeamTypes eForTeam, const CvPlot* pPlot) const;
+	PlayerTypes getCombatOwner_bulk(TeamTypes eForTeam, CvPlot const& kPlot) const; // advc
+	PlayerTypes getCombatOwner(TeamTypes eForTeam, CvPlot const& kPlot) const								// Exposed to Python
+	{
+		// advc.inl: Split this function up so that part of it can be inlined
+		return (isAlwaysHostile() ? getCombatOwner_bulk(eForTeam, kPlot) : getOwner());
+	}
+	// advc (for convenience)
+	PlayerTypes getCombatOwner(TeamTypes eForTeam) const
+	{
+		return getCombatOwner(eForTeam, getPlot());
+	}
 	DllExport TeamTypes getTeam() const;
 	DllExport PlayerColorTypes getPlayerColor(TeamTypes eForTeam = NO_TEAM) const;
 	DllExport CivilizationTypes getVisualCiv(TeamTypes eForTeam = NO_TEAM) const;
@@ -729,7 +742,7 @@ public:
 	bool potentialWarAction(const CvPlot* pPlot) const;
 
 	bool isAlwaysHostile(const CvPlot* pPlot) const;
-
+	
 	bool verifyStackValid();
 
 	void setYieldStored(int iYieldAmount);
@@ -1030,6 +1043,7 @@ protected:
 	//int canCrossCoastOnly() const;
 	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO - END
 
+	bool isAlwaysHostile() const;
 	EnumMap<PromotionTypes, bool> m_embisPromotionApplied;
 
 public:

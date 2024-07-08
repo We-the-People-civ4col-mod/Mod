@@ -1161,8 +1161,10 @@ int CvTeam::getPower() const
 }
 
 
-int CvTeam::getDefensivePower() const
+int CvTeam::getDefensivePower(TeamTypes eExcludeTeam) const
 {
+	FAssert(!isBarbarian()); // advc
+
 	int iCount;
 	int iI;
 
@@ -1170,14 +1172,16 @@ int CvTeam::getDefensivePower() const
 
 	for (iI = 0; iI < MAX_TEAMS; iI++)
 	{
-		CvTeam& kLoopTeam = GET_TEAM((TeamTypes)iI);
-		if (kLoopTeam.isAlive())
-		{
-			if (getID() == iI || isDefensivePact((TeamTypes)iI))
-			{
-				iCount += kLoopTeam.getPower();
-			}
-		}
+		const CvTeam& kLoopTeam = GET_TEAM((TeamTypes)iI);
+		
+		if (!kLoopTeam.isAlive())
+			continue;
+
+		if (kLoopTeam.getID() == eExcludeTeam)
+			continue;
+
+		if (getID() == iI || isDefensivePact((TeamTypes)iI))
+			iCount += kLoopTeam.getPower();
 	}
 
 	return iCount;
@@ -1450,22 +1454,19 @@ int CvTeam::countTotalCulture() const
 }
 
 
-int CvTeam::countNumUnitsByArea(CvArea* pArea) const
+int CvTeam::countNumUnitsByArea(CvArea const& kArea) const
 {
 	PROFILE_FUNC();
 
-	int iCount;
-	int iI;
+	int iCount = 0;
 
-	iCount = 0;
-
-	for (iI = 0; iI < MAX_PLAYERS; iI++)
+	for (int iI = 0; iI < MAX_PLAYERS; iI++)
 	{
 		if (GET_PLAYER((PlayerTypes)iI).isAlive())
 		{
 			if (GET_PLAYER((PlayerTypes)iI).getTeam() == getID())
 			{
-				iCount += pArea->getUnitsPerPlayer((PlayerTypes)iI);
+				iCount += kArea.getUnitsPerPlayer((PlayerTypes)iI);
 			}
 		}
 	}

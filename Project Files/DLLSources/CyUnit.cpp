@@ -81,10 +81,12 @@ bool CyUnit::canMoveOrAttackInto(CyPlot* pPlot, bool bDeclareWar)
 {
 	return m_pUnit ? m_pUnit->canMoveOrAttackInto(pPlot->getPlot(), bDeclareWar) : false;
 }
+/*
 bool CyUnit::canMoveThrough(CyPlot* pPlot)
 {
 	return m_pUnit ? m_pUnit->canMoveThrough(pPlot->getPlot()) : false;
 }
+*/
 bool CyUnit::jumpToNearestValidPlot()
 {
 	return m_pUnit ? m_pUnit->jumpToNearestValidPlot() : false;
@@ -881,7 +883,7 @@ int CyUnit::getVisualOwner()
 }
 int CyUnit::getCombatOwner(int iForTeam)
 {
-	return m_pUnit ? m_pUnit->getCombatOwner((TeamTypes)iForTeam, m_pUnit->plot()) : -1;
+	return m_pUnit ? m_pUnit->getCombatOwner((TeamTypes)iForTeam, *m_pUnit->plot()) : -1;
 }
 int CyUnit::getTeam()
 {

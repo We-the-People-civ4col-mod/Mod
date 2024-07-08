@@ -412,6 +412,11 @@ public:
 	CvCity* getCapitalCity() const;
 	void setCapitalCity(CvCity* pNewCapitalCity);
 	DllExport CvCity* getPrimaryCity() const;
+	bool hasCapital() const
+	{
+		return (m_iCapitalCityID != FFreeList::INVALID_INDEX);
+	}
+
 	int getCitiesLost() const;
 	void changeCitiesLost(int iChange);
 	int getAssets() const;

@@ -165,7 +165,7 @@ int CyPlot::getUnitPower(int /* PlayerTypes */ eOwner)
 }
 int CyPlot::movementCost(CyUnit* pUnit, CyPlot* pFromPlot)
 {
-	return m_pPlot ? m_pPlot->movementCost(pUnit->getUnit(), pFromPlot->getPlot()) : -1;
+	return m_pPlot ? m_pPlot->movementCost(*pUnit->getUnit(), *pFromPlot->getPlot()) : -1;
 }
 int CyPlot::defenseModifier(int iDefendTeam, bool bHelp)
 {

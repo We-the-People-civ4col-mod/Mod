@@ -200,11 +200,11 @@ bool CvSelectionGroupAI::AI_update()
 				CvWString szTempString;
 				getUnitAIString(szTempString, pHeadUnit->AI_getUnitAIType());
 
-				logBBAI("WARNING CvSelectionGroupAI::AI_update() Player %S Unit %d is stuck in a loop. %S(%S)[%d, %d] %s,%s",
+				logBBAI("WARNING CvSelectionGroupAI::AI_update() Player %S Unit %d is stuck in a loop. %S(%S)[%d, %d] %s,%s %s",
 					GET_PLAYER(pHeadUnit->getOwnerINLINE()).getCivilizationDescription(), pHeadUnit->getID(),
 					pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
 					pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->isOnMap() ? "isOnMap:true" : "isOnMap:false",
-					pHeadUnit->isCargo() ? "isCargo:true" : "isCargo:false");
+					pHeadUnit->isCargo() ? "isCargo:true" : "isCargo:false", szTempString.GetCString());
 
 				if (pHeadUnit->hasCargo())
 				{
@@ -219,8 +219,8 @@ bool CvSelectionGroupAI::AI_update()
 						if (pLoopUnit != NULL)
 						{
 							logBBAI("	Cargo: Unit %d is stuck in a loop. %S(%S)[%d, %d] %s",
-								pHeadUnit->getID(), pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
-								pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->canMove() ? "canMove:true" : "canMove:false");
+								pLoopUnit->getID(), pLoopUnit->getName().GetCString(), GET_PLAYER(pLoopUnit->getOwnerINLINE()).getName(),
+								pLoopUnit->getX_INLINE(), pLoopUnit->getY_INLINE(), pLoopUnit->canMove() ? "canMove:true" : "canMove:false");
 						}
 					}
 				}

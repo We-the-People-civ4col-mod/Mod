@@ -5124,12 +5124,12 @@ void CvGame::addGreatAdmiralBornName(const CvWString& szName)
 
 
 // < JAnimals Mod Start >
-PlayerTypes CvGame::getBarbarianPlayer()
+PlayerTypes CvGame::getBarbarianPlayer() const
 {
 	return m_eBarbarianPlayer;
 }
 
-bool CvGame::hasBarbarianPlayer()
+bool CvGame::hasBarbarianPlayer() const
 {
 	return (getBarbarianPlayer() != NO_PLAYER);
 }
@@ -5139,9 +5139,14 @@ void CvGame::setBarbarianPlayer(PlayerTypes eNewValue)
 	m_eBarbarianPlayer = eNewValue;
 }
 
-bool CvGame::isBarbarianPlayer(PlayerTypes ePlayer)
+bool CvGame::isBarbarianPlayer(PlayerTypes ePlayer) const
 {
 	return (getBarbarianPlayer() == ePlayer);
+}
+
+TeamTypes CvGame::getBarbarianTeam() const
+{
+	return GET_PLAYER(m_eBarbarianPlayer).getTeam();
 }
 
 PlayerTypes CvGame::getNextPlayerType() const
@@ -5181,12 +5186,12 @@ PlayerTypes CvGame::getNextPlayerType() const
 
 
 // R&R, ray, the Church - START
-PlayerTypes CvGame::getChurchPlayer()
+PlayerTypes CvGame::getChurchPlayer() const
 {
 	return m_eChurchPlayer;
 }
 
-bool CvGame::hasChurchPlayer()
+bool CvGame::hasChurchPlayer() const
 {
 	return (getChurchPlayer() != NO_PLAYER);
 }
@@ -5196,7 +5201,7 @@ void CvGame::setChurchPlayer(PlayerTypes eNewValue)
 	m_eChurchPlayer = eNewValue;
 }
 
-bool CvGame::isChurchPlayer(PlayerTypes ePlayer)
+bool CvGame::isChurchPlayer(PlayerTypes ePlayer) const
 {
 	return (getChurchPlayer() == ePlayer);
 }
@@ -5851,10 +5856,10 @@ void CvGame::updateMoves()
 
 					if (m_iUnitUpdateAttempts == iMaxUnitUpdateAttempts)
 					{
-						FErrorMsg("Unit stuck in a loop");
+						FErrorMsg("Unit was not added to the movement queue");
 						if (pHeadUnit != NULL)
 						{
-							logBBAI("CvGame::updateMoves() WARNING Player %S Unit %d is stuck in a loop. %S(%S)[%d, %d] %s,%s",
+							logBBAI("CvGame::updateMoves() WARNING Player %S Unit %d was not added to the movement queue!. %S(%S)[%d, %d] %s,%s",
 								GET_PLAYER(pHeadUnit->getOwnerINLINE()).getCivilizationDescription(), pHeadUnit->getID(),
 								pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
 								pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->isOnMap() ? "isOnMap:true" : "isOnMap:false",
@@ -5873,12 +5878,13 @@ void CvGame::updateMoves()
 								if (pLoopUnit != NULL)
 								{
 									logBBAI("	Cargo: Unit %d is stuck in a loop. %S(%S)[%d, %d] %s",
-										pHeadUnit->getID(), pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
-										pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->canMove() ? "canMove:true" : "canMove:false");
+										pLoopUnit->getID(), pLoopUnit->getName().GetCString(), GET_PLAYER(pLoopUnit->getOwnerINLINE()).getName(),
+										pLoopUnit->getX_INLINE(), pLoopUnit->getY_INLINE(), pLoopUnit->canMove() ? "canMove:true" : "canMove:false");
 								}
 							}
 						}
 					}
+#if 0
 					else if (m_iUnitUpdateAttempts == iMaxUnitUpdateAttempts - 1)
 					{
 						// Debugging for when a unit is about to get stuck
@@ -5887,6 +5893,7 @@ void CvGame::updateMoves()
 
 						pHeadUnit->AI_update(); // Debugging
 					}
+#endif
 				}
 
 			}

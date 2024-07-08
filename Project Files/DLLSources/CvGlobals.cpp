@@ -650,7 +650,12 @@ CvInitCore& CvGlobals::getInitCore()
 {
 	return *m_initCore;
 }
-
+/*
+CvInitCore& CvGlobals::getInitCoreInternal() const
+{
+	
+}
+*/
 CvInitCore& CvGlobals::getLoadedInitCore()
 {
 	return *m_loadedInitCore;

@@ -381,18 +381,19 @@ public:
 	void changeYieldBoughtTotalPortRoyal(PlayerTypes eMainEurope, YieldTypes eYield, int iChange) const; // WTP, ray, Yields Traded Total for Africa and Port Royal - START
 
 	// < JAnimals Mod Start >
-	PlayerTypes getBarbarianPlayer();
-    bool hasBarbarianPlayer();
+	PlayerTypes getBarbarianPlayer() const;
+    bool hasBarbarianPlayer() const;
     void setBarbarianPlayer(PlayerTypes eNewValue);
-    bool isBarbarianPlayer(PlayerTypes ePlayer);
+    bool isBarbarianPlayer(PlayerTypes ePlayer) const;
 	PlayerTypes getNextPlayerType() const;
 	// < JAnimals Mod End >
+	TeamTypes getBarbarianTeam() const;
 
 	// R&R, ray, the Church - START
-	PlayerTypes getChurchPlayer();
-    bool hasChurchPlayer();
+	PlayerTypes getChurchPlayer() const;
+    bool hasChurchPlayer() const;
     void setChurchPlayer(PlayerTypes eNewValue);
-    bool isChurchPlayer(PlayerTypes ePlayer);
+    bool isChurchPlayer(PlayerTypes ePlayer) const;
 	// R&R, ray, the Church - END
 
 	// R&R, ray, Correct Geographical Placement of Natives - START
@@ -409,6 +410,11 @@ public:
 	int getRemainingForcedPeaceTurns() const;
 
 	static const int PLOT_OCEAN_DISTANCE_IMPASSABLE_THRESHOLD = 1000;
+
+	int getPopulationPower(int iPopulation) const
+	{
+		return iPopulation / 2;
+	}
 
 protected:
 

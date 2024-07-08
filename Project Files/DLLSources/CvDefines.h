@@ -34,12 +34,17 @@ enum MovementFlags // advc.pf: Turned into an enum; exposed to Python (CyEnumsIn
 #define MOVE_NO_ATTACK										(0x00000800) // K-Mod. used to prevent humans from accidentally attacking unseen units
 #define MOVE_HAS_STEPPED									(0x00001000) // K-Mod. used to signal that at least one step has been taken for this move command
 #define MOVE_ASSUME_VISIBLE									(0x00002000) // K-Mod. With this flag, the pathfinder will plan around enemy units even if they are not visible. (Note: AI units do this regardless of the flag.)
-#define MOVE_ROUTE_TO										(0x00004000) // advc.049
-#define MOVE_MAX_MOVES										(0x00008000) // Introduced to WTP by K-Mod but originated in BTS
 // K-Mod flags end
 
+// AdvCiv flags begin
+#define MOVE_ROUTE_TO										(0x00004000) // advc.049 advc.pf
+#define MOVE_AVOID_DANGER									(0x00008000) // advc.031d
+// AdvCiv flags end
+
+#define MOVE_MAX_MOVES										(0x00010000) // Introduced to WTP by K-Mod but originated in BTS
+
 // R&R, ray, Natives raiding party - START
-#define MOVE_DIRECT_RAID									(0x00010000) // WTP : Changed value due to clashing with a K-Mod flag
+#define MOVE_DIRECT_RAID									(0x00020000) // WTP : Changed value due to clashing with a K-Mod flag
 // R&R, ray, Natives raiding party - END
 
 #define RANDPLOT_LAND										(0x00000001)

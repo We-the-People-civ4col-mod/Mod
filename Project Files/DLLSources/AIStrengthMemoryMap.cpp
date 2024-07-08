@@ -56,7 +56,7 @@ void AIStrengthMemoryMap::decay()
 	while (it != m_map.end())
 	{
 		CvPlot const& kPlot = GC.getMap().getPlotByIndex(it->first);
-		if (kPlot.isVisible(m_eTeam, false) &&
+		if (kPlot.isVisible(m_eTeam) &&
 			!kPlot.isVisibleEnemyUnit(kTeam.getLeaderID()))
 		{
 			it = m_map.erase(it);
