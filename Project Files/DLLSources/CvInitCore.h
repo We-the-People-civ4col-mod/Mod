@@ -190,6 +190,8 @@ public:
 
 	PlayerTypes getActivePlayer() const	{ return m_eActivePlayer; }
 	DllExport void setActivePlayer(PlayerTypes eActivePlayer);
+	TeamTypes getActiveTeam() const { return m_eActiveTeam; } // advc.opt
+	void updateActiveTeam(); // advc.opt
 
 	DllExport GameType getType() const	{ return m_eType; }
 	DllExport void setType(GameType eType);
@@ -345,6 +347,11 @@ protected:
 	unsigned int m_uiMapRandSeed;
 	PlayerTypes m_eActivePlayer;
 	GameMode m_eMode;
+
+	// advc (note): From here on, it seems to be OK to change the memory layout.
+	// WTP: Need to determine if this is true for us as well
+	// advc.opt: Convenient to cache this here b/c this header gets precompiled
+	TeamTypes m_eActiveTeam;
 
 	// Temp var so we don't return locally scoped var
 	mutable CvWString m_szTemp;

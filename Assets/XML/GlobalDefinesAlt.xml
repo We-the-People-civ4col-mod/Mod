@@ -31,7 +31,7 @@
 	</Define>
 	<Define>
 		<DefineName>MIN_CITY_RANGE_TWO_PLOT</DefineName>
-		<iDefineIntVal>3</iDefineIntVal>
+		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>MIN_CITY_RANGE</DefineName>

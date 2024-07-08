@@ -75,6 +75,7 @@ public:
 	void changeNumImprovements(ImprovementTypes eImprovement, int iChange);
 	bool isEuropePlayer() const;	// TAC - AI Explore from Ship endless loop fix - koma13
 	bool isIsland() const;
+	bool canBeEntered(CvArea const& kFrom, CvUnit const* u = NULL) const;
 
 protected:
 	int m_iID;

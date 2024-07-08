@@ -1154,13 +1154,26 @@ void CvInitCore::setForceControl(ForceControlTypes eIndex, bool bOption)
 
 void CvInitCore::setActivePlayer(PlayerTypes eActivePlayer)
 {
-	m_eActivePlayer = eActivePlayer;
+	//m_uiTotalNameLength = 0; // advc.003k (tidier to reset this asap)
+	// <advc>
+	if (m_eActivePlayer == eActivePlayer)
+		return; // </advc>
 
+	m_eActivePlayer = eActivePlayer;
+	updateActiveTeam(); // advc.opt
 	if (m_eActivePlayer != NO_PLAYER)
 	{
 		// Automatically claim this slot
 		setSlotClaim(m_eActivePlayer, SLOTCLAIM_ASSIGNED);
 	}
+	else m_eActiveTeam = NO_TEAM; // advc.opt
+}
+
+// advc.opt:
+void CvInitCore::updateActiveTeam()
+{
+	m_eActiveTeam = (m_eActivePlayer == NO_PLAYER ? NO_TEAM :
+		GET_PLAYER(m_eActivePlayer).getTeam());
 }
 
 void CvInitCore::setType(GameType eType)
@@ -1521,7 +1534,7 @@ TeamTypes CvInitCore::getTeam(PlayerTypes eID) const
 void CvInitCore::setTeam(PlayerTypes eID, TeamTypes eTeam)
 {
 	FASSERT_BOUNDS(0, MAX_PLAYERS, eID, "CvInitCore::setTeam");
-	if ( checkBounds(eID, 0, MAX_PLAYERS) )
+	if (checkBounds(eID, 0, MAX_PLAYERS))
 	{
 		if (getTeam(eID) != eTeam)
 		{
@@ -1530,6 +1543,7 @@ void CvInitCore::setTeam(PlayerTypes eID, TeamTypes eTeam)
 			if(CvPlayerAI::areStaticsInitialized())
 			{
 				GET_PLAYER(eID).updateTeamType();
+				updateActiveTeam(); // advc.opt
 			}
 		}
 	}

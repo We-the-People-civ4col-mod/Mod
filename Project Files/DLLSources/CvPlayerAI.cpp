@@ -185,9 +185,14 @@ void CvPlayerAI::AI_doTurnUnitsPre()
 	if (GC.getGameINLINE().getSorenRandNum(8, "AI Update Area Targets") == 0) // XXX personality???
 	{
 		AI_updateAreaTargets();
-	}
+	}  // <advc.102>
+	FOR_EACH_GROUP_VAR(pGroup, *this)
+	{
+		if (pGroup->getNumUnits() > 0)
+			pGroup->setInitiallyVisible(pGroup->getPlot().isVisibleToWatchingHuman());
+	} // </advc.102>
 
-	if (!isHuman())
+	if (!isHuman() || isBarbarian())
 	{
 		AI_doMilitaryStrategy();
 		AI_doSuppressRevolution();
@@ -794,10 +799,19 @@ void CvPlayerAI::AI_unitUpdate()
 									m_iMoveQueuePasses++;
 									if (m_iMoveQueuePasses > 100)
 									{
+										// TODO: can this ever happen?
 										FAssertMsg(false, "Forcing AI to abort turn");
 										return;
 									}
-									AI_addUnitToMoveQueue(pUnit);
+									/*
+									logBBAI("WARNING CvPlayerAI::AI_unitUpdate() AI_addUnitToMoveQueue Player %S Unit %d. %S(%S)[%d, %d] %s,%s",
+										GET_PLAYER(pHeadUnit->getOwnerINLINE()).getCivilizationDescription(), pHeadUnit->getID(),
+										pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
+										pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->isOnMap() ? "isOnMap:true" : "isOnMap:false",
+										pHeadUnit->isCargo() ? "isCargo:true" : "isCargo:false");
+									*/
+									if (!pUnit->isDead())
+										AI_addUnitToMoveQueue(pUnit);
 									return;
 								}
 							}
@@ -806,17 +820,6 @@ void CvPlayerAI::AI_unitUpdate()
 				}
 			}
 		}
-		// TODO: We really need to ensure that we don't forget moving a group!
-#if 0
-		int iLoop;
-		for (CvSelectionGroup* pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
-		{
-			if (pLoopSelectionGroup->readyToMove(/*bAny*/true))
-			{
-				pLoopSelectionGroup->pushMission(MISSION_SKIP);
-			}
-		}
-#endif
 	}
 }
 
@@ -1217,6 +1220,7 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 {
 	PROFILE_FUNC();
 	CvPlot* pPlot = GC.getMap().plotINLINE(iX, iY);
+
 
 	if (!canFound(Coordinates(iX, iY)))
 	{
@@ -2457,7 +2461,7 @@ int CvPlayerAI::AI_getPlotDangerInternal(const CvPlot* pPlot, int iRange, bool b
 										else
 										{
 											int iDangerRange = pLoopUnit->baseMoves();
-											iDangerRange += ((pLoopPlot->isValidRoute(pLoopUnit)) ? 1 : 0);
+											iDangerRange += ((pLoopPlot->isValidRoute(pLoopUnit, false)) ? 1 : 0);
 											if (iDangerRange >= iDistance)
 											{
 												iCount++;
@@ -2560,7 +2564,7 @@ int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, boo
 										else
 										{
 											int iDangerRange = pLoopUnit->baseMoves();
-											iDangerRange += ((pLoopPlot->isValidRoute(pLoopUnit)) ? 1 : 0);
+											iDangerRange += ((pLoopPlot->isValidRoute(pLoopUnit, false)) ? 1 : 0);
 											if (iDangerRange >= iDistance)
 											{
 												iCount++;
@@ -2596,12 +2600,7 @@ int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bo
 {
 	PROFILE_FUNC();
 
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	CvPlot* pLoopPlot;
-	int iCount;
-
-	iCount = 0;
+	int iCount = 0;
 
 	if (iRange == -1)
 	{
@@ -2614,50 +2613,45 @@ int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bo
 	{
 		for (int iDY = -(iRange); iDY <= iRange; iDY++)
 		{
-			pLoopPlot = plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), iDX, iDY);
+			CvPlot* const pLoopPlot = plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), iDX, iDY);
 			if (pLoopPlot != NULL)
 			{
-				if (pLoopPlot->isWater())
+				if (!pLoopPlot->isWater())
+					continue;
+
+				if (!bVisibleOnly || pLoopPlot->isVisible(getTeam(), false))	// TAC - AI Improved Navel AI - koma13
 				{
-					if (pPlot->isAdjacentToArea(pLoopPlot->getArea()))
+					CLLNode<IDInfo>* pUnitNode = pLoopPlot->headUnitNode();
+					while (pUnitNode != NULL)
 					{
-						if (!bVisibleOnly || pLoopPlot->isVisible(getTeam(), false))	// TAC - AI Improved Navel AI - koma13
-						{
-							pUnitNode = pLoopPlot->headUnitNode();
-							while (pUnitNode != NULL)
-							{
-								pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
+						CvUnit* const pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
-								if (pLoopUnit == NULL)
-								{
-									continue;
-								}
+						if (pLoopUnit == NULL)
+							continue;
 
-								if (!pLoopUnit->isEnemy(getTeam()))
-									continue;
+						if (!pLoopUnit->isEnemy(getTeam()))
+							continue;
 
-								if (!pLoopUnit->canAttack())
-									continue;
+						if (!pLoopUnit->canAttack())
+							continue;
 
-								if ((pLoopUnit->isInvisible(getTeam(), false)))
-									continue;
+						if ((pLoopUnit->isInvisible(getTeam(), false)))
+							continue;
 
-								// Ignore animals
-								if (pLoopUnit->getUnitInfo().isAnimal())
-									continue;
+						// Ignore animals
+						if (pLoopUnit->getUnitInfo().isAnimal())
+							continue;
 
-								iCount++;
-							}
-						}
-
-						// TAC - AI Improved Navel AI - koma13 - START
-						if (bDangerMap)
-						{
-							iCount += (pLoopPlot->getDangerMap(getID()) > 0) ? 1 : 0;
-						}
-						// TAC - AI Improved Navel AI - koma13 - END
+						iCount++;
 					}
 				}
+
+				// TAC - AI Improved Navel AI - koma13 - START
+				if (bDangerMap)
+				{
+					iCount += (pLoopPlot->getDangerMap(getID()) > 0) ? 1 : 0;
+				}
+				// TAC - AI Improved Navel AI - koma13 - END
 			}
 		}
 	}
@@ -2801,6 +2795,10 @@ bool CvPlayerAI::AI_isWillingToTalk(PlayerTypes ePlayer)
 
 // XXX what if already at war???
 // Returns true if the AI wants to sneak attack...
+/*  advc (comment) ... which is to say: set WARPLAN_LIMITED w/o prior preparation,
+	but don't declare war until units reach the border (perhaps they never do if no
+	proper attack stack ready); whereas demandRebukedWar immediately declares war
+	(which also sets WARPLAN_LIMITED). */
 bool CvPlayerAI::AI_demandRebukedSneak(PlayerTypes ePlayer)
 {
 	FAssertMsg(!isHuman(), "isHuman did not return false as expected");
@@ -2810,7 +2808,17 @@ bool CvPlayerAI::AI_demandRebukedSneak(PlayerTypes ePlayer)
 
 	if (GC.getGameINLINE().getSorenRandNum(100, "AI Demand Rebuked") < GC.getLeaderHeadInfo(getPersonalityType()).getDemandRebukedSneakProb())
 	{
-		if (GET_TEAM(getTeam()).getPower() > GET_TEAM(GET_PLAYER(ePlayer).getTeam()).getDefensivePower())
+		/*	K-Mod. Don't start a war if we're already busy;
+			and use AI_startWarVal to evaluate, rather than just power.
+			The 50 value is arbitrary. zero would probably be fine.
+			50 war rating is also arbitrary, but zero would be too low! */
+		CvTeamAI const& kTeam = GET_TEAM(getTeam());
+		if (kTeam.AI_getWarPlan(GET_PLAYER(ePlayer).getTeam()) == NO_WARPLAN &&
+			(!kTeam.AI_isAnyWarPlan() || kTeam.AI_getWarSuccessRating() > 50) &&
+			/*	advc.001n (comment): This should be synchronized code,
+				so no need to set bConstCache. */
+			kTeam.AI_startWarVal(GET_PLAYER(ePlayer).getTeam(), WARPLAN_LIMITED) > 50)
+			// K-Mod end
 		{
 			return true;
 		}
@@ -4668,19 +4676,80 @@ int CvPlayerAI::AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea
 
 	iCombatValue = GC.getGameINLINE().AI_combatValue(eUnit);
 
-	iValue = 100;
-
-	iValue += kUnitInfo.getAIWeight();
-
-	int iEuropeCost = getEuropeUnitBuyPrice(eUnit);
-	if (iEuropeCost > 0)
-	{
-		iValue += iEuropeCost;
-	}
-
 	return std::max(0, iValue);
 }
 
+#include <cassert>
+
+// Precomputed scaled exponential values for combat values from 1 to 12 with 20% scaling
+// Note: Assuming that the strongest land unit is the continental infantry at 12 strength
+const short scaled_exponential_values[12] = {
+	1000,   // 1.2^0 * 1000 = 1000
+	1200,   // 1.2^1 * 1000 = 1200
+	1440,   // 1.2^2 * 1000 = 1440
+	1728,   // 1.2^3 * 1000 = 1728
+	2074,   // 1.2^4 * 1000 = 2074
+	2488,   // 1.2^5 * 1000 = 2488
+	2986,   // 1.2^6 * 1000 = 2986
+	3584,   // 1.2^7 * 1000 = 3584
+	4301,   // 1.2^8 * 1000 = 4301
+	5161,   // 1.2^9 * 1000 = 5161
+	6194,   // 1.2^10 * 1000 = 6194
+	7433    // 1.2^11 * 1000 = 7433
+};
+
+// Returns the cost-effectiveness of buying this unit. Scale is combat value per 1000 gold
+int CvPlayerAI::AI_combatUnitValue(UnitTypes eUnit, UnitAITypes eUnitAI) const
+{
+	const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eUnit);
+
+	if (kUnitInfo.getDomainType() != AI_unitAIDomainType(eUnitAI))
+		return 0;
+
+	if (kUnitInfo.getNotUnitAIType(eUnitAI))
+		return 0;
+
+	if (!kUnitInfo.getUnitAIType(eUnitAI))
+		return 0;
+
+	// TODO: Include unit promotions!
+	int iCombatValue = kUnitInfo.getCombat(); // BUG! We have to use "all inclusive" value with profession
+
+	ProfessionTypes eProfession = GC.getUnitInfo(eUnit).getDefaultProfession();
+	if (eProfession != NO_PROFESSION)
+	{
+		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+		iCombatValue += kProfession.getCombatChange() + getProfessionCombatChange(eProfession) +
+			getProfessionCombatChange(eProfession);
+	}
+
+	int iEuropeCost = kUnitInfo.getEuropeCost();
+
+	// Ensure the Europe cost is greater than 0 to prevent division by zero
+	FAssert(iEuropeCost > 0);
+
+	if (iEuropeCost == 0)
+		iEuropeCost = 2000; // Avoid division by zero
+
+	// Baseline strength for exponential scaling
+	const int baseline_strength = 4;
+
+	// Calculate the exponent as the difference from the baseline
+	int exponent = iCombatValue - baseline_strength;
+
+	// Ensure the combat value is within the expected range
+	if (exponent < 0 || exponent >= 12) {
+		// Return 0 or some default value if out of range
+		FErrorMsg("Combat value of of range!")
+		return 0;
+	}
+
+	// Use precomputed value for the adjusted combat value
+	int adjusted_combat_value = scaled_exponential_values[exponent] * iCombatValue;
+
+	// Calculate and return the cost-effectiveness
+	return adjusted_combat_value / iEuropeCost;
+}
 
 //This function attempts to return how much gold this unit is worth.
 int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea) const
@@ -5009,21 +5078,12 @@ int CvPlayerAI::AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* p
 		break;
 	}
 
-#if 0
-	const int iEuropeCost = kUnitInfo.getEuropeCost();
-
-	// Normalize unit costs to prevent the AI from repeating purchases of the same
-	// unit when the cost escalates
-	if (iEuropeCost > 0)
+	if (iValue > 0 && (eUnitAI == UNITAI_DEFENSIVE || eUnitAI == UNITAI_OFFENSIVE ||
+		eUnitAI == UNITAI_ATTACK_CITY || eUnitAI == UNITAI_COUNTER))
 	{
-		// Since the value is not scaled and only compared to similarly scaled values
-		// it's ok to multiply here to prevent truncatin after the division.
-		iValue *= 100;
-		iValue /= iEuropeCost;
+		iValue = AI_combatUnitValue(eUnit, eUnitAI);
 	}
 
-	//iValue +=  kUnitInfo.getAIWeight();
-#endif
 	return std::max(0, iValue);
 }
 
@@ -5695,6 +5755,7 @@ int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMission
 }
 // TAC - AI Assault Sea - koma13, jdog5000(BBAI) - END
 
+#if 0
 int CvPlayerAI::AI_enemyTargetMissionAIs(MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup)
 {
 	return AI_enemyTargetMissionAIs(&eMissionAI, 1, pSkipSelectionGroup);
@@ -5742,6 +5803,7 @@ int CvPlayerAI::AI_enemyTargetMissionAIs(MissionAITypes* aeMissionAI, int iMissi
 
 	return iCount;
 }
+#endif
 
 int CvPlayerAI::AI_wakePlotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup)
 {
@@ -7944,15 +8006,15 @@ void CvPlayerAI::AI_doProfessions()
 											{
 												pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, eProfession);
 												pUnit->AI_setUnitAIType(eUnitAI);
+												pUnit->AI_setMovePriority(1);
 												bDone = true;
 
 												if (gPlayerLogLevel >= 1)
 												{
 													CvWString szTempString;
 													getUnitAIString(szTempString, eUnitAI);
-
-													logBBAI(" Player(%S) City(%S) emits civilian Unit(bdone) (%S) with UnitAI (%S)",
-														getCivilizationDescription(), pLoopCity->getNameKey(), pUnit->getNameAndProfession().GetCString(), szTempString.GetCString());
+													logBBAI(" Player(%S) City(%S) emits civilian Unit %d (bdone) (%S) with UnitAI (%S)",
+														getCivilizationDescription(), pLoopCity->getNameKey(), pUnit->getID(), pUnit->getNameAndProfession().GetCString(), szTempString.GetCString());
 												}
 												break;
 											}
@@ -8004,7 +8066,8 @@ void CvPlayerAI::AI_doProfessions()
 
 											if (pUnit->AI_getIdealProfession() != NO_PROFESSION)
 											{
-												if ((pUnit->getProfession() != pUnit->AI_getIdealProfession()) && (GC.getProfessionInfo(pUnit->AI_getIdealProfession()).isWorkPlot()))
+												if ((pUnit->getProfession() != pUnit->AI_getIdealProfession()) && 
+													(GC.getProfessionInfo(pUnit->AI_getIdealProfession()).isWorkPlot()))
 												{
 													iValue *= 150;
 													iValue /= 100;
@@ -8039,15 +8102,16 @@ void CvPlayerAI::AI_doProfessions()
 					{
 						pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pBestUnit, false, eProfession);
 						pBestUnit->AI_setUnitAIType(eUnitAI);
+						pBestUnit->AI_setMovePriority(1);
 
 						if (gPlayerLogLevel >= 1)
 						{
 							CvWString szTempString;
 							getUnitAIString(szTempString, eUnitAI);
 
-							logBBAI(" Player(%S) City (%S) emits civilian Unit (!bdone) (%S) with UnitAI (%S)",
-								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameAndProfession().GetCString(), szTempString.GetCString());
-
+							logBBAI(" Player(%S) City (%S) emits civilian Unit %d (!bdone) (%S) with UnitAI (%S)",
+								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getID(),
+								pBestUnit->getNameAndProfession().GetCString(), szTempString.GetCString());
 						}
 					}
 				}
@@ -8111,8 +8175,9 @@ void CvPlayerAI::AI_doProfessions()
 						{
 							pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pBestUnit, false, eProfession);
 							pBestUnit->AI_setUnitAIType(UNITAI_DEFENSIVE);
-							if (gPlayerLogLevel >= 1) logBBAI(" Player (%S)'s City (%S) emits military Unit (%S)",
-								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameAndProfession().GetCString());
+							pBestUnit->AI_setMovePriority(1);
+							if (gPlayerLogLevel >= 1) logBBAI(" Player (%S)'s City (%S) emits military Unit %d (%S)",
+								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getID(), pBestUnit->getNameAndProfession().GetCString());
 						}
 						else
 						{
@@ -8123,9 +8188,6 @@ void CvPlayerAI::AI_doProfessions()
 			}
 		}
 	}
-
-
-
 }
 
 void CvPlayerAI::AI_doEurope()
@@ -12566,7 +12628,7 @@ void CvPlayerAI::AI_doNativeArmy(TeamTypes eTeam)
 	}
 }
 
-CvCity* CvPlayerAI::AI_getPrimaryCity()
+CvCity* CvPlayerAI::AI_getPrimaryCity() const
 {
 	int iLoop;
 	CvCity* pCity = firstCity(&iLoop);
@@ -13550,7 +13612,7 @@ int CvPlayerAI::AI_getEnemyPlotStrength(CvPlot* pPlot, int iRange, bool bDefensi
                                         else
                                         {
                                             int iDangerRange = pLoopUnit->baseMoves();
-                                            iDangerRange += ((pLoopPlot->isValidRoute(pLoopUnit)) ? 1 : 0);
+                                            iDangerRange += ((pLoopPlot->isValidRoute(pLoopUnit, false)) ? 1 : 0);
                                             if (iDangerRange >= iDistance)
                                             {
                                                 iValue += pLoopUnit->currEffectiveStr((bDefensiveBonuses ? pPlot : NULL), NULL);
@@ -16560,8 +16622,7 @@ int CvPlayerAI::AI_localDefenceStrength(const CvPlot* pDefencePlot, TeamTypes eD
 						to use some pathfinding results.
 						So this check will have to be really rough. :( */
 					int iMoves = kUnit.baseMoves();
-					//if (p.isValidRoute(&kUnit, /* advc.001i: */ false)
-					if (p.isValidRoute(&kUnit))
+					if (p.isValidRoute(&kUnit, /* advc.001i: */ false))
 						iMoves++;
 					if (::stepDistance(pDefencePlot, pLoopPlot) > iMoves)
 						continue; // can't make it. (maybe?)
@@ -16649,7 +16710,7 @@ int CvPlayerAI::AI_localAttackStrength(const CvPlot* pTargetPlot,
 						/*	can't use the global pathfinder here
 							(see comment in AI_localDefenceStrength) */
 						int iMoves = kUnit.baseMoves();
-						if (p.isValidRoute(&kUnit))
+						if (p.isValidRoute(&kUnit, /* advc.001i: */ false))
 							iMoves++;
 						if (::stepDistance(pTargetPlot, pLoopPlot) > iMoves)
 							continue; // can't make it. (maybe?)
@@ -16893,4 +16954,496 @@ int CvPlayerAI::countNumMilitaryUnits() const
 	}
 
 	return iCount;
+}
+
+bool CvPlayerAI::isBarbarian() const { return GC.getGameINLINE().isBarbarianPlayer(getID()); }
+
+/*  advc.105: To replace some of the
+	GET_TEAM(getTeam()).getAnyWarPlanCount(true) > 0
+	checks. */
+bool CvPlayerAI::AI_isFocusWar(CvArea const* pArea) const
+{
+	if (isBarbarian())
+		return true;
+	//if (!hasCapital())
+	//	return false;
+	if (pArea == NULL)
+		pArea = AI_getPrimaryCity()->area();
+	if (AI_isDoStrategy(AI_STRATEGY_ALERT2))
+		return true;
+	CvTeamAI const& kOurTeam = GET_TEAM(getTeam());
+	/*  Chosen wars (ongoing or in preparation) are generally worth focusing on;
+		others only when on the defensive. (In CvTeamAI::AI_calculateAreaAIType,
+		bTargets and bDeclaredTargets are computed in a similar way .) */
+	if (!kOurTeam.AI_isAnyChosenWar() &&
+		pArea->getAreaAIType(getTeam()) != AREAAI_DEFENSIVE)
+	{
+		return false;
+	}
+	// Much weaker targets aren't worth focusing on (except maybe when there are multiple)
+	bool bFirst = true;
+	//for (TeamIter<CIV_ALIVE, KNOWN_POTENTIAL_ENEMY_OF> itTeam(getTeam());
+	//	itTeam.hasNext(); ++itTeam)
+	FOR_EACH_CIV_ALIVE_AND_KNOWN_POTENTIAL_ENEMY_OF_PLAYER(kOtherTeam)
+	{
+		const CvTeamAI* const itTeam = &kOtherTeam;
+		if (kOurTeam.AI_getWarPlan(itTeam->getID()) != NO_WARPLAN)
+		{
+			if (!kOurTeam.AI_isPushover(itTeam->getID()))
+				return true;
+			CvCity const* pEnemyCapital = NULL;
+
+			//for (MemberIter itMember(itTeam->getID());
+			//	pEnemyCapital == NULL && itMember.hasNext(); ++itMember)
+			FOR_EACH_TEAM_PLAYER_MEMBER(kOtherTeam, kPlayer)
+			{
+				pEnemyCapital = /*itMember->*/kPlayer.getCapitalCity();
+			}
+			if (pEnemyCapital != NULL && pEnemyCapital->isArea(*pArea))
+			{
+				if (!bFirst) // Multiple wars
+					return true;
+				bFirst = true;
+			}
+		}
+	}
+	return false;
+}
+
+int CvPlayerAI::AI_adjacentPotentialAttackers(CvPlot const& kPlot,
+	bool bTestCanMove) const
+{
+	int iCount = 0;
+	CvArea const& kPlotArea = *kPlot.area(); // advc.030
+	FOR_EACH_ADJ_PLOT_REF(kPlot,
+	{
+			// <advc.030>
+		CvArea const& kFromArea = *pAdjacentPlot->area();
+		//if (pAdj->area() == pPlot->area())
+		// Replacing the above (negated):
+		if (!kPlotArea.canBeEntered(kFromArea))
+			continue; // </advc.030>
+		FOR_EACH_UNIT_ON(pUnit, pAdjacentPlot)
+		{
+			if (pUnit->getOwner() != getID())
+				continue;
+			//if (pLoopUnit->getDomainType() == ((pPlot->isWater()) ? DOMAIN_SEA : DOMAIN_LAND))
+			// advc.030: Replacing the above
+			if (kPlotArea.canBeEntered(kFromArea, pUnit))
+			{
+				if (pUnit->canAttack() &&
+					/*  advc.315: This way, no units with OnlyAttackBarbarians are counted
+						as potential attackers. Could check if the CenterUnit of pPlot
+						is Barbarian, but only Explorer has OnlyAttackBarbarians and
+						I don't think the AI will or should use Explorers for any
+						coordinated attacks anyway. */
+					!pUnit->getUnitInfo().isOnlyDefensive()/*.isMostlyDefensive()*/)
+				{
+					if (!bTestCanMove || pUnit->canMove())
+					{
+						if (!pUnit->AI_isCityAIType())
+							iCount++;
+					}
+				}
+			}
+		}
+	}) // FOR_EACH
+	return iCount;
+}
+
+// K-mod. The body of this function use to be inside "AI_getStrategyHash"
+void CvPlayerAI::AI_updateStrategyHash()
+{
+#if 0
+	CvTeamAI const& kTeam = GET_TEAM(getTeam()); // K-Mod
+	AIStrategy const eLastStrategyHash = m_eStrategyHash;
+	m_eStrategyHash = AI_DEFAULT_STRATEGY;
+
+	/*if (AI_getFlavorValue(FLAVOR_PRODUCTION) >= 2) // 0, 2, 5 or 10 in default xml [augustus 5, frederick 10, huayna 2, jc 2, chinese leader 2, qin 5, ramsess 2, roosevelt 5, stalin 2]
+		m_iStrategyHash |= AI_STRATEGY_PRODUCTION;*/ // BtS
+		// K-Mod. This strategy is now set later on, with new conditions.
+
+	if (getCapital() == NULL)
+		return;
+
+	//int iNonsense = AI_getStrategyRand();
+
+	int iMetCount = kTeam.getHasMetCivCount(true);
+
+	//Unit Analysis
+	int iBestSlowUnitCombat = -1;
+	int iBestFastUnitCombat = -1;
+
+	int iAttackUnitCount = 0;
+	// K-Mod
+	int iAverageEnemyUnit = 0;
+	int const iTypicalAttack = getTypicalUnitValue(UNITAI_ATTACK);
+	int const iTypicalDefence = getTypicalUnitValue(UNITAI_CITY_DEFENSE);
+	int const iWarSuccessRating = kTeam.AI_getWarSuccessRating();
+	// K-Mod end
+
+	CvCivilization const& kCiv = getCivilization(); // advc.003w
+	for (int i = 0; i < kCiv.getNumUnits(); i++)
+	{
+		UnitTypes eLoopUnit = kCiv.unitAt(i);
+		//if (getCapitalCity() == NULL) continue; // advc: Already ruled out
+		if (!getCapital()->canTrain(eLoopUnit))
+			continue;
+		CvUnitInfo& kLoopUnit = GC.getInfo(eLoopUnit);
+		bool bUU = kCiv.isUnique(eLoopUnit);
+		/*if (kLoopUnit.getUnitAIType(UNITAI_RESERVE) || kLoopUnit.getUnitAIType(UNITAI_ATTACK_CITY)
+				|| kLoopUnit.getUnitAIType(UNITAI_COUNTER) || kLoopUnit.getUnitAIType(UNITAI_PILLAGE)) */
+				/*	K-Mod. Original code was missing the obvious:
+					UNITAI_ATTACK. Was this a bug? (I'm skipping "pillage".) */
+		if (kLoopUnit.getUnitAIType(UNITAI_ATTACK) ||
+			kLoopUnit.getUnitAIType(UNITAI_ATTACK_CITY) ||
+			kLoopUnit.getUnitAIType(UNITAI_COUNTER))
+			// K-Mod end
+		{
+			iAttackUnitCount++;
+			//UU love
+			if (bUU)
+			{
+				if (kLoopUnit.getUnitAIType(UNITAI_ATTACK_CITY) ||
+					(kLoopUnit.getUnitAIType(UNITAI_ATTACK) &&
+						!kLoopUnit.getUnitAIType(UNITAI_CITY_DEFENSE)))
+				{
+					iAttackUnitCount++;
+				}
+			}
+			int iCombat = kLoopUnit.getCombat();
+			int iMoves = kLoopUnit.getMoves();
+			if (iMoves == 1)
+				iBestSlowUnitCombat = std::max(iBestSlowUnitCombat, iCombat);
+			else if (iMoves > 1)
+			{
+				iBestFastUnitCombat = std::max(iBestFastUnitCombat, iCombat);
+				if (bUU)
+					iBestFastUnitCombat += 1;
+			}
+		}
+	}
+
+	// K-Mod
+	{
+		int iTotalPower = 0;
+		int iTotalWeightedValue = 0;
+		// advc.131: At least skip our vassals, master
+		for (PlayerIter<CIV_ALIVE, KNOWN_POTENTIAL_ENEMY_OF> itRival(getTeam());
+			itRival.hasNext(); ++itRival)
+		{
+			/*	Attack units are scaled down to roughly reflect their limitations.
+				(eg. Knights (10) vs Macemen (8). Cavalry (15) vs Rifles (14).
+				Tank (28) vs Infantry (20) / Marine (24)) */
+			int iValue = std::max(100 *
+				itRival->getTypicalUnitValue(UNITAI_ATTACK) / 110,
+				itRival->getTypicalUnitValue(UNITAI_CITY_DEFENSE));
+			iTotalWeightedValue += itRival->getPower() * iValue;
+			iTotalPower += itRival->getPower();
+		}
+		if (iTotalPower == 0)
+			iAverageEnemyUnit = 0;
+		else iAverageEnemyUnit = iTotalWeightedValue / iTotalPower;
+		// A bit of random variation...
+		iAverageEnemyUnit *= (91 + AI_getStrategyRand(1) % 20);
+		iAverageEnemyUnit /= 100;
+	}
+
+	//if (iAttackUnitCount <= 1)
+	CvGame const& kGame = GC.getGame();
+	if ((iAttackUnitCount <= 1 &&
+		20 * kGame.getGameTurn() >
+		GC.getInfo(kGame.getGameSpeedType()).getBarbPercent()) ||
+		(100 * iAverageEnemyUnit > 135 * iTypicalAttack &&
+			100 * iAverageEnemyUnit > 135 * iTypicalDefence))
+	{
+		m_eStrategyHash |= AI_STRATEGY_GET_BETTER_UNITS;
+	}
+	// K-Mod end
+	if (iBestFastUnitCombat > iBestSlowUnitCombat)
+	{
+		m_eStrategyHash |= AI_STRATEGY_FASTMOVERS;
+	}
+
+	log_strat(AI_STRATEGY_LAND_BLITZ)
+		log_strat(AI_STRATEGY_AIR_BLITZ)
+
+		// K-Mod end
+
+		// Turtle strategy
+		if (kTeam.getNumWars() > 0 && getNumCities() > 0)
+		{
+			int iMaxWarCounter = 0;
+			for (TeamIter<MAJOR_CIV, ENEMY_OF> itEnemy(getTeam());
+				itEnemy.hasNext(); ++itEnemy)
+			{
+				iMaxWarCounter = std::max(iMaxWarCounter,
+					kTeam.AI_getAtWarCounter(itEnemy->getID()));
+			}
+			// Are we losing badly or recently attacked?
+			if (iWarSuccessRating < -50 ||
+				(iMaxWarCounter < 10 /* advc: */ && iMaxWarCounter > 0))
+			{
+				if (kTeam.AI_getEnemyPowerPercent(true) >
+					std::max(150, GC.getDefineINT("BBAI_TURTLE_ENEMY_POWER_RATIO")) &&
+					// <advc.107>
+					getNumMilitaryUnits() <=
+					(5 + AI_getCurrEraFactor() * fixp(1.5)) * getNumCities()) // </advc.107>
+				{
+					m_eStrategyHash |= AI_STRATEGY_TURTLE;
+				}
+			}
+		}
+	log_strat(AI_STRATEGY_TURTLE)
+
+		int iParanoia = 0;
+	{
+		int const iOurDefensivePower = kTeam.getDefensivePower();
+		// advc.022: Don't include our master as a possible cause for paranoia
+		for (PlayerAIIter<FREE_MAJOR_CIV, KNOWN_POTENTIAL_ENEMY_OF> itRival(getTeam());
+			itRival.hasNext(); ++itRival)
+		{	// advc: Calculation moved into new function
+			iParanoia += AI_paranoiaRating(itRival->getID(), iOurDefensivePower);
+		}
+	}
+	/*  advc.022: Commented out. BETTER_UNITS is supposed to make us train fewer
+		units (b/c they're not good), but high paranoia will lead to more units. */
+		/*if (m_eStrategyHash & AI_STRATEGY_GET_BETTER_UNITS) {
+			iParanoia *= 3;
+			iParanoia /= 2;
+		}*/
+	int const iCurrentEra = getCurrentEra();
+	// Scale paranoia in later eras/larger games
+	//iParanoia -= (100*(iCurrentEra + 1)) / std::max(1, GC.getNumEraInfos());
+	/*	K-Mod. You call that scaling for "later eras/larger games"?
+		It isn't scaling, and it doesn't use the map size.
+		Lets try something else. Rough and ad hoc, but hopefully a bit better.
+		This starts as a factor of 1, and drops to 1/3. */
+	iParanoia *= 3 * GC.getNumEraInfos() - 2 * iCurrentEra;
+	iParanoia /= 3 * std::max(1, GC.getNumEraInfos());
+	// And now for game size...
+	iParanoia *= 14;
+	iParanoia /= 7 + std::max(kTeam.getHasMetCivCount(true),
+		//GC.getInfo(GC.getMap().getWorldSize()).getDefaultPlayers()));
+		kGame.getRecommendedPlayers()); // advc.137
+	// Alert strategy
+	if (iParanoia >= 200)
+	{
+		m_eStrategyHash |= AI_STRATEGY_ALERT1;
+		if (iParanoia >= 400 &&
+			!AI_isFocusWar()) // advc.022: Need to focus on the war at hand
+		{
+			m_eStrategyHash |= AI_STRATEGY_ALERT2;
+		}
+	}
+	log_strat2(AI_STRATEGY_ALERT1, iParanoia)
+		log_strat2(AI_STRATEGY_ALERT2, iParanoia)
+
+		/*	Economic focus (K-Mod) - This strategy is a gambit.
+			The goal is to tech faster by neglecting military. */
+			//if (kTeam.getAnyWarPlanCount(true) == 0)
+		if (!AI_isFocusWar()) // advc.105
+		{
+			int iFocus = (100 - iParanoia) / 20;
+			iFocus += std::max(iAverageEnemyUnit - std::max(iTypicalAttack, iTypicalDefence),
+				std::min(iTypicalAttack, iTypicalDefence) - iAverageEnemyUnit) / 12;
+			/*	Note: if we haven't met anyone then average enemy is zero.
+				So this essentially assures economic strategy when in isolation. */
+				// note: peace weight will be between 0 and 12
+			iFocus += (AI_getPeaceWeight() + AI_getStrategyRand(2) % 10) / 3;
+			if (iFocus >= 12 /* advc.109: */ || AI_feelsSafe())
+				m_eStrategyHash |= AI_STRATEGY_ECONOMY_FOCUS;
+		}
+	log_strat(AI_STRATEGY_ECONOMY_FOCUS)
+
+		/*  <advc.104f> Don't want dagger even if UWAI only in the background
+			b/c it gets in the way of testing. If UWAI fully disabled, allow dagger
+			with additional restrictions. */
+		bool bNoDagger = (getUWAI().isEnabled() || getUWAI().isEnabled(true) ||
+			GET_TEAM(getTeam()).AI_isAnyChosenWar()); // </advc.104f>
+
+	/*	BBAI TODO: Integrate Dagger with new conquest victory strategy,
+		have Dagger focus on early rushes. (advc.104f: UWAI doesn't use Dagger,
+		so don't bother with that to-do comment.) */
+	if (!bNoDagger && // advc.104f
+		!(m_eStrategyHash & AI_STRATEGY_MISSIONARY) &&
+		AI_getCurrEraFactor() <= (2 + (AI_getStrategyRand(11) % 2)))
+	{
+		/*	<advc> Counting of close targets moved out of the paranoia calculation.
+			(playerCloseness gets cached, so this shouldn't matter for performance.) */
+		int iCloseTargets = 0;
+		for (PlayerAIIter<FREE_MAJOR_CIV, KNOWN_POTENTIAL_ENEMY_OF> itRival(getTeam());
+			itRival.hasNext(); ++itRival)
+		{
+			if (kTeam.AI_getWarPlan(itRival->getTeam()) != NO_WARPLAN ||
+				(AI_playerCloseness(itRival->getID()) > 0 && // K-Mod
+					//GC.getInfo(getPersonalityType()).getNoWarAttitudeProb(AI_getAttitude(itRival->getID())) // BBAI
+					// advc.104y:
+					GET_TEAM(getTeam()).AI_noWarProbAdjusted(itRival->getTeam()) < 90))
+			{
+				iCloseTargets++;
+			}
+		}
+		if (iCloseTargets > 0) // </advc>
+		{
+			int iDagger = 0;
+			iDagger += 12000 / std::max(100,
+				50 + GC.getInfo(getPersonalityType()).getMaxWarRand());
+			iDagger *= (AI_getStrategyRand(12) % 11);
+			iDagger /= 10;
+			iDagger += 5 * std::min(8, AI_getFlavorValue(FLAVOR_MILITARY));
+			if (!kGame.isOption(GAMEOPTION_AGGRESSIVE_AI))
+			{
+				iDagger += range(100 - GC.getInfo(kGame.getHandicapType()).
+					getAITrainPercent(), 0, 15);
+			}
+			if (getCapital()->getArea().getAreaAIType(getTeam()) == AREAAI_OFFENSIVE ||
+				(getCapital()->getArea().getAreaAIType(getTeam()) == AREAAI_DEFENSIVE))
+			{
+				iDagger += (iAttackUnitCount > 0 ? 40 : 20);
+			}
+			if (iDagger >= AI_DAGGER_THRESHOLD)
+				m_eStrategyHash |= AI_STRATEGY_DAGGER;
+			else
+			{
+				//if (eLastStrategyHash &= AI_STRATEGY_DAGGER)
+				if (eLastStrategyHash & AI_STRATEGY_DAGGER) // advc.001
+				{
+					if (iDagger >= (9 * AI_DAGGER_THRESHOLD) / 10)
+						m_eStrategyHash |= AI_STRATEGY_DAGGER;
+				}
+			}
+			log_strat2(AI_STRATEGY_DAGGER, iDagger)
+		}
+	}
+
+	if (!(m_eStrategyHash & AI_STRATEGY_ALERT2) && !(m_eStrategyHash & AI_STRATEGY_TURTLE))
+	{//Crush
+		int iWarCount = 0;
+		int iCrushValue = 0;
+
+		// K-Mod. (experimental)
+			//iCrushValue += (iNonsense % 4);
+			// A leader dependant value. (MaxWarRand is roughly between 50 and 200. Gandi is 400.)
+			//iCrushValue += (iNonsense % 3000) / (400+GC.getInfo(getPersonalityType()).getMaxWarRand());
+		// On second thought, lets try this
+		iCrushValue += AI_getStrategyRand(13) %
+			(4 + AI_getFlavorValue(FLAVOR_MILITARY) / 2 +
+				(kGame.isOption(GAMEOPTION_AGGRESSIVE_AI) ? 2 : 0));
+		iCrushValue += std::min(0, kTeam.AI_getWarSuccessRating() / 15);
+		// note: flavor military is between 0 and 10
+		// K-Mod end
+		/*  advc.018: Commented out.
+			Not clear that conq3 should make the AI more willing to neglect
+			its defense. Also, once crush is adopted, the AI becomes more inclined
+			towards conquest; should only work one way. */
+			/*if (AI_atVictoryStage(AI_VICTORY_CONQUEST3))
+				iCrushValue += 1;*/
+
+		if (m_eStrategyHash & AI_STRATEGY_DAGGER)
+			iCrushValue += 3;
+		for (TeamIter<MAJOR_CIV, KNOWN_POTENTIAL_ENEMY_OF> itEnemy(getTeam());
+			itEnemy.hasNext(); ++itEnemy)
+		{
+			CvTeam const& kEnemy = *itEnemy;
+			if (kTeam.AI_getWarPlan(kEnemy.getID()) == NO_WARPLAN)
+				continue;
+			if (!itEnemy->isAVassal())
+			{
+				if (kTeam.AI_teamCloseness(kEnemy.getID()) > 0)
+					iWarCount++;
+				/*	K-Mod. (if we attack with our defenders,
+					would they beat their defenders?) */
+				if (100 * iTypicalDefence >=
+					110 * itEnemy->getTypicalUnitValue(UNITAI_CITY_DEFENSE))
+				{
+					iCrushValue += 2;
+				}
+			}
+			int iCrushValFromWarplanType = 0; // advc.018: New temp variable
+			if (kTeam.AI_getWarPlan(kEnemy.getID()) == WARPLAN_PREPARING_TOTAL)
+				iCrushValFromWarplanType += 6;
+			else if (kTeam.AI_getWarPlan(kEnemy.getID()) == WARPLAN_TOTAL &&
+				/*  advc.104q: Was AI_getWarPlanStateCounter. Probably war duration was
+					intended. That said, I'm now also resetting WarPlanStateCounter upon
+					a DoW (see advc.104q in CvTeam::declareWar), so that it shouldn't make
+					a difference which function is used (in this context). */ // tagging advc.001
+				kTeam.AI_getAtWarCounter(kEnemy.getID()) < 20)
+			{
+				iCrushValFromWarplanType += 6;
+			}
+			if (kTeam.AI_getWarPlan(kEnemy.getID()) == WARPLAN_DOGPILE &&
+				!kEnemy.isAVassal() &&
+				kTeam.AI_getAtWarCounter(kEnemy.getID()) < 20) // advc.104q, advc.001
+			{
+				for (TeamIter<FREE_MAJOR_CIV, ENEMY_OF> itThird(kEnemy.getID());
+					itThird.hasNext(); ++itThird)
+				{
+					if (itThird->getID() != getTeam() &&
+						itThird->isHasMet(getTeam())) // advc.001
+					{
+						iCrushValFromWarplanType += 4;
+					}
+				}
+			}  // advc.018: Halve the impact
+			iCrushValue += iCrushValFromWarplanType / 2;
+		}
+		if (/* K-Mod: */ iWarCount == 1 &&
+			iCrushValue >= ((eLastStrategyHash & AI_STRATEGY_CRUSH) ? 9 : 10))
+		{
+			m_eStrategyHash |= AI_STRATEGY_CRUSH;
+		}
+		log_strat2(AI_STRATEGY_CRUSH, iCrushValue)
+	}
+
+
+	//Turn off inappropriate strategies.
+	//if (kGame.isOption(GAMEOPTION_ALWAYS_PEACE))
+	if (!GET_TEAM(getTeam()).AI_isWarPossible()) // advc.001j
+	{
+		m_eStrategyHash &= ~AI_STRATEGY_DAGGER;
+		m_eStrategyHash &= ~AI_STRATEGY_CRUSH;
+		m_eStrategyHash &= ~AI_STRATEGY_ALERT1;
+		m_eStrategyHash &= ~AI_STRATEGY_ALERT2;
+		m_eStrategyHash &= ~AI_STRATEGY_TURTLE;
+		m_eStrategyHash &= ~AI_STRATEGY_FINAL_WAR;
+		m_eStrategyHash &= ~AI_STRATEGY_LAST_STAND;
+		m_eStrategyHash &= ~AI_STRATEGY_FASTMOVERS;
+	}
+#endif
+}
+
+// BETTER_BTS_AI_MOD, General AI, 05/19/10, jdog5000:
+// advc.104 (note): Overlaps with UWAICache::updateTargetMissionCount
+int CvPlayerAI::AI_enemyTargetMissions(TeamTypes eTargetTeam,
+	CvSelectionGroup* pSkipSelectionGroup, int iMaxCount) const
+{
+	PROFILE_FUNC();
+	FAssert(iMaxCount > 0); // advc.opt (use MAX_INT for infinity)
+
+	int iCount = 0;
+	FOR_EACH_GROUPAI(pLoopSelectionGroup, *this)
+	{
+		if (pLoopSelectionGroup == pSkipSelectionGroup)
+			continue;
+
+		CvPlot* pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlotInternal();
+		if (pMissionPlot == NULL)
+			pMissionPlot = pLoopSelectionGroup->plot();
+
+		if (pMissionPlot != NULL && pMissionPlot->isOwned() &&
+			pMissionPlot->getTeam() == eTargetTeam)
+		{
+			if (::atWar(getTeam(), pMissionPlot->getTeam()) ||
+				pLoopSelectionGroup->AI_isDeclareWarInternal(pMissionPlot))
+			{
+				iCount += pLoopSelectionGroup->getNumUnits();
+				iCount += pLoopSelectionGroup->getCargo();
+				// <advc.opt>
+				if (iCount >= iMaxCount)
+					return iMaxCount; // </advc.opt>
+			}
+		}
+	}
+	return std::min(iCount, iMaxCount); // advc.opt: (to be consistent)
 }

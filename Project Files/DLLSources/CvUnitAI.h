@@ -297,7 +297,6 @@ protected:
 	bool AI_heal(int iDamagePercent = 0, int iMaxPath = MAX_INT);
 	bool AI_afterAttack();
 	bool AI_lead(std::vector<UnitAITypes>& aeAIUnitTypes);
-	bool AI_protect(int iOddsThreshold);
 	bool AI_bravePatrol();
 	bool AI_patrol();
 	bool AI_defend();
@@ -351,7 +350,8 @@ protected:
 	bool AI_seaBombardRange(int iMaxRange);
 	bool AI_blockade(int iRange);
 	bool AI_pillage();
-	bool AI_pillageRange(int iRange, bool bSafe = false);
+	bool AI_pillageRange(int iRange, int iBonusValueThreshold = 0,
+		MovementFlags eFlags = NO_MOVEMENT_FLAGS);
 	bool AI_maraud(int iRange);
 	bool AI_hostileShuffle();
 	bool AI_wanderAroundAimlessly();
@@ -383,7 +383,7 @@ protected:
 	bool AI_routeCity();
 	bool AI_routeTerritory(bool bImprovementOnly = false);
 	bool AI_travelToUpgradeCity();
-	bool AI_retreatToCity(bool bPrimary = false, int iMaxPath = MAX_INT, bool bAvoidDanger = false);
+	bool AI_retreatToCity(bool bPrimary = false, int iMaxPath = MAX_INT);
 	
 	bool AI_retreatFromDanger();	// TAC - AI Improved Naval AI - koma13
 
@@ -414,8 +414,7 @@ protected:
 		return (isArea(kArea) || (canMoveImpassable()/*&& canEnterArea(kArea)*/));
 	}
 
-	int AI_finalOddsThreshold(CvPlot* pPlot, int iOddsThreshold);
-
+	
 	int AI_stackOfDoomExtra();
 
 	bool AI_moveIntoCity(int iRange);
@@ -488,6 +487,8 @@ protected:
 	bool AI_isCargoOnCivilianTransport() const;
 	void considerCivilianDuty();
 	void AI_handleEmbarkedMilitary();
+	bool AI_settlerSeaTransport(int iMinFoundValue);
+	bool AI_colonistSeaTransport();
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;

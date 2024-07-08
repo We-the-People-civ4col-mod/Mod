@@ -110,6 +110,7 @@ public:
 
 	bool AI_isAreaAlone(CvArea const& kArea) const;
 	bool AI_isCapitalAreaAlone();
+
 	bool AI_isPrimaryArea(CvArea const& kArea) const;
 
 	int AI_militaryWeight(CvArea const* pArea);
@@ -253,9 +254,20 @@ public:
 	{
 		return (AI_unitTargetMissionAIsInternal((CvUnit*) & kUnit, eMissionAI, pSkipSelectionGroup) >= 1);
 	}
-
+	// BBAI start
+	int AI_enemyTargetMissions(TeamTypes eTargetTeam, CvSelectionGroup* pSkipSelectionGroup = NULL,
+		// <advc.opt>
+		int iMaxCount = MAX_INT) const; // BBAI end
+	bool AI_isAnyEnemyTargetMission(TeamTypes eTargetTeam,
+		CvSelectionGroup* pSkipSelectionGroup = NULL) const
+	{
+		return (AI_enemyTargetMissions(eTargetTeam, pSkipSelectionGroup, 1) >= 1);
+	} // </advc.opt>
+	// advc.003j: unused
+	/*
 	int AI_enemyTargetMissionAIs(MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_enemyTargetMissionAIs(MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL);
+	*/
 	int AI_wakePlotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 
 	int AI_cargoSpaceToEurope(CvSelectionGroup* pSkipSelectionGroup = NULL);	// TAC - AI Improved Navel AI - koma13
@@ -519,7 +531,7 @@ public:
 
 	void AI_doNativeArmy(TeamTypes eTeam);
 
-	CvCity* AI_getPrimaryCity();
+	CvCity* AI_getPrimaryCity() const;
 	int AI_getOverpopulationPercent();
 	int AI_countNumHomedUnits(CvCity* pCity, UnitAITypes eUnitAI, UnitAIStates eUnitAIState);
 
@@ -586,6 +598,12 @@ public:
 	
 	// TODO: should we cache this like bts ?
 	int countNumMilitaryUnits() const;
+	int AI_combatUnitValue(UnitTypes eUnit, UnitAITypes eUnitAI) const;
+
+	bool isBarbarian() const;
+
+	bool AI_isFocusWar(CvArea const* pArea = NULL) const; // advc.105
+	int AI_adjacentPotentialAttackers(CvPlot const& kPlot, bool bTestCanMove = false) const;
 
 protected:
 
@@ -692,6 +710,10 @@ protected:
 	int AI_eventValue(EventTypes eEvent, const EventTriggeredData& kTriggeredData);
 
 	void AI_doEnemyUnitData();
+
+	// K-Mod. I've moved the bulk of AI_getStrategyHash into a new function: AI_updateStrategyHash.
+	//AIStrategy AI_getStrategyHash() const { return m_eStrategyHash; }
+	void AI_updateStrategyHash();
 
 	// TAC - AI Revolution - koma13 - START
 	int m_iLastWave;

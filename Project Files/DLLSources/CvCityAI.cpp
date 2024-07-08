@@ -6526,6 +6526,7 @@ void CvCityAI::AI_cachePlayerCloseness(int iMaxDistance) const
 	m_iCachePlayerClosenessDistance = iMaxDistance;
 }
 
+#if 0
 int CvCityAI::AI_cityThreat(bool bDangerPercent) const
 {
 	PROFILE_FUNC();
@@ -6608,6 +6609,246 @@ int CvCityAI::AI_cityThreat(bool bDangerPercent) const
 
 	return iValue;
 }
+#endif
+
+/*	K-Mod has made significant structural & function changes to this function.
+	(loosely described in the comments throughout the function.) */
+int CvCityAI::AI_cityThreat(bool bDangerPercent) const // advc: param unused
+{
+	PROFILE_FUNC();
+
+	int iTotalThreat = 0; // was (iValue)
+	CvPlayerAI const& kOwner = GET_PLAYER(getOwner()); // K-Mod
+	bool const bCrushStrategy = kOwner.AI_isDoStrategy(AI_STRATEGY_CRUSH);
+
+	// advc.001: Exclude unmet players (bugfix?), vassals; K-Mod had only excluded the master.
+	//for (PlayerAIIter<ALIVE, KNOWN_POTENTIAL_ENEMY_OF> itPlayer(getTeam());
+	//	itPlayer.hasNext(); ++itPlayer)
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+	{
+		CvPlayerAI const& kRival = GET_PLAYER(ePlayer);
+		if (ePlayer == getOwner() || !kRival.isAlive() ||
+			!GET_TEAM(getTeam()).isHasMet(kRival.getTeam()))
+			continue;
+
+		int iAccessFactor = // (was "iTempValue")
+			AI_playerCloseness(kRival.getID(), DEFAULT_PLAYER_CLOSENESS);
+		// (this is roughly 20 points for each neighbouring city.)
+
+		// K-Mod
+		// Add some more points for each plot the loop player owns in our fat-cross.
+		if (iAccessFactor > 0)
+		{
+			//for (CityPlotIter itPlot(*this); itPlot.hasNext(); ++itPlot)
+			FOREACH(CityPlot)
+			{
+				const CvPlot* const pLoopPlot = getCityIndexPlot(eLoopCityPlot);
+				if (pLoopPlot == NULL)
+					continue;
+			
+				if (pLoopPlot->getOwner() == kRival.getID())
+				{
+					iAccessFactor += (stepDistance(plot(), pLoopPlot) <= 1 ? 2 : 1);
+				}
+			}
+		}
+
+		// Evaluate the posibility of a naval assault.
+		if (isCoastal( // advc.131: Area size threshold was 10, now 20
+			2 * GC.getMIN_WATER_SIZE_FOR_OCEAN()))
+		{
+			/*	This evaluation may be expensive (when I finish writing it),
+				so only do it if there is reason to be concerned. */
+			if (/*kOwner.AI_atVictoryStage4() ||*/
+				GET_TEAM(getTeam()).AI_getWarPlan(kRival.getTeam()) != NO_WARPLAN ||
+				(!kOwner.AI_isLandWar(*area()) &&
+					//kLoopPlayer.AI_getAttitude(getOwner()) < ATTITUDE_PLEASED))
+					/*  <advc.109> Don't presume human attitude. Using PLEASED as the
+						AI threshold (instead of calling CvTeamAI::AI_isAvoidWar)
+						seems OK as the AI tends to be reluctant to start naval wars. */
+					((kRival.isHuman() && kOwner.AI_getAttitude(kRival.getID()) < ATTITUDE_FRIENDLY) ||
+						(!kRival.isHuman() && kRival.AI_getAttitude(getOwner()) < ATTITUDE_PLEASED))))
+				// </advc.109>
+			{
+				int iNavalAccess = 0;
+
+				//PROFILE("AI_cityThreat naval assault");
+				/*	(temporary calculation based on the original bts code.
+					I intend to make this significantly more detailed - eventually.) */
+					/*int iCurrentEra = kOwner.getCurrentEra();
+					iValue += std::max(0, ((10 * iCurrentEra) / 3) - 6);*/
+				int iEra = GC.getGame().getCurrentEra();
+				iNavalAccess += std::max(0,
+					30 * (iEra + 1) / (GC.getNumEraInfos() + 1) - 10);
+				iAccessFactor = std::max(iAccessFactor, iNavalAccess);
+			}
+		}
+		// K-Mod end
+
+		if (iAccessFactor > 0)
+		{
+			/*	K-Mod. (originally the following code had
+				iTempValue *= foo; rather than iCivFactor = foo;) */
+			int iCivFactor = 0;
+			/*  advc.018: Commented out. I don't see why crush should make us
+				more protective of our cities. The
+				if(bCrushStrategy) iCivFactor/=2 a bit farther down seems to be
+				the better approach. */
+				/*if (bCrushStrategy && GET_TEAM(getTeam()).AI_getWarPlan(kLoopPlayer.getTeam()) != NO_WARPLAN)
+					iCivFactor = 400;
+				else*/
+			if (GET_TEAM(getTeam()).isAtWar(kRival.getTeam()))
+				iCivFactor = 300;
+			// Beef up border security before starting war, but not too much (bbai)
+			else if (GET_TEAM(getTeam()).AI_getWarPlan(kRival.getTeam()) != NO_WARPLAN)
+				iCivFactor = 180;
+			else
+			{	// <advc.022>
+				AttitudeTypes eTowardThem = kOwner.AI_getAttitude(kRival.getID());
+				AttitudeTypes eTowardUs = kRival.AI_getAttitude(kOwner.getID());
+				if (!kRival.isHuman())
+				{
+					// Round toward eTowardUs
+					int iTowardThem = eTowardThem;
+					if (eTowardUs > iTowardThem)
+						iTowardThem++;
+					eTowardUs = (AttitudeTypes)((eTowardUs + iTowardThem) / 2);
+				} // Replaced below:
+				//switch (kOwner.AI_getAttitude((PlayerTypes)iI))
+				/*	(K-Mod note: for good strategy,
+					this should probably be _their_ attitude rather than ours.
+					But perhaps for role-play it is better the way it is.) */
+				switch (eTowardUs) // Yep, use their attitude. </advc.022>
+				{
+				case ATTITUDE_FURIOUS:
+					iCivFactor = 180;
+					break;
+				case ATTITUDE_ANNOYED:
+					iCivFactor = 130;
+					break;
+				case ATTITUDE_CAUTIOUS:
+					iCivFactor = 100;
+					break;
+				case ATTITUDE_PLEASED:
+					iCivFactor = 50;
+					break;
+				case ATTITUDE_FRIENDLY:
+					iCivFactor = 20;
+					break;
+				default:
+					FAssert(false);
+				}
+
+				// K-Mod
+				// Reduce threat level of our vassals, particularly from capitulated vassals.
+				//if (GET_TEAM(kRival.getTeam()).isVassal(getTeam()))
+				//{
+				//	iCivFactor = std::min(iCivFactor,
+				//		GET_TEAM(kRival.getTeam()).isCapitulated() ? 30 : 50);
+				//}
+				//else
+				{
+					/*	Increase threat level for cities that we have captured from this player
+						I may add a turn limit later if this produces unwanted behaviour.
+						(getGameTurn() - getGameTurnAcquired() < 40) */
+					if (getPreviousOwner() == kRival.getID())
+						iCivFactor = (iCivFactor * 3) / 2;
+					// Don't get too comfortable if kLoopPlayer is using a military victory strategy.
+					//if (kRival.AI_atVictoryStage(AI_VICTORY_MILITARY4))
+					//	iCivFactor = std::max(100, iCivFactor);
+				}
+				// K-Mod end
+
+				if (bCrushStrategy)
+					iCivFactor /= 2;
+			}
+
+			// K-Mod. Amplify the threat rating for rivals which have high power.
+			if (kRival.getPower() > kOwner.getPower())
+			{
+				/*iTempValue *= std::min(400, (100 * GET_PLAYER((PlayerTypes)iI).getPower())/std::max(1, GET_PLAYER(getOwner()).getPower()));
+				iTempValue /= 100;*/ // BBAI
+
+				/*	exclude population power. (Should this use the same power comparison
+					used to calculate areaAI and war values?) */
+				int iLoopPower = kRival.getPower() - GC.getGame().
+					getPopulationPower(kRival.getTotalPopulation());
+				int iOurPower = kOwner.getPower() - GC.getGame().
+					getPopulationPower(kOwner.getTotalPopulation());
+				iCivFactor *= range(100 * iLoopPower / std::max(1, iOurPower), 100, 400);
+				iCivFactor /= 100;
+			}
+
+			/* iTempValue /= 100;
+			iTotalThreat += iTempValue; */
+			iTotalThreat += iAccessFactor * iCivFactor / 100; // K-Mod
+		}
+	}
+
+	/*if (isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN())) {
+		int iCurrentEra = kOwner.getCurrentEra();
+		iValue += std::max(0, ((10 * iCurrentEra) / 3) - 6); //there are better ways to do this
+	} */ // BtS - this is now included in the iAccessFactor calculation
+
+	/*iValue += getNumActiveWorldWonders() * 5;
+	if (kOwner.AI_atVictoryStage(AI_VICTORY_CULTURE3)) {
+		iValue += 5;
+		iValue += getCommerceRateModifier(COMMERCE_CULTURE) / 20;
+		if (getCultureLevel() >= GC.getNumCultureLevelInfos() - 2) {
+			iValue += 20;
+			if (getCultureLevel() >= GC.getNumCultureLevelInfos() - 1)
+				iValue += 30;
+		}
+	}*/ // BtS
+
+	iTotalThreat += 3 * kOwner.AI_getPlotDanger(plot(), 3, false); // was 2 *
+
+	/*	K-Mod. Increase the threat rating for high-value cities.
+		(Note: this replaces the culture & wonder stuff above)
+		(Note2: I may end up moving this stuff into AI_getCityImportance) */
+	if (iTotalThreat > 0)
+	{
+		int iImportanceFactor = 100;
+		//iImportanceFactor += 20 * getNumActiveWorldWonders();
+		//iImportanceFactor += isHolyCity() ? 20 : 0;
+		//FOR_EACH_ENUM(Corporation)
+		//{
+		//	if (isHeadquarters(eLoopCorporation))
+		//	{
+		//		/*	note: the corp HQ building counts
+		//			as an active world wonder in addition to this value. */
+		//		iImportanceFactor += 10;
+		//	}
+		//}
+		/*
+		if (kOwner.AI_atVictoryStage(AI_VICTORY_CULTURE3))
+		{
+			if (getCultureLevel() >= GC.getGame().culturalVictoryCultureLevel() - 1)
+			{
+				iImportanceFactor += 20;
+				if (findCommerceRateRank(COMMERCE_CULTURE) <= GC.getGame().culturalVictoryNumCultureCities())
+				{
+					iImportanceFactor += 30;
+					if (kOwner.AI_atVictoryStage(AI_VICTORY_CULTURE4))
+					{
+						iImportanceFactor += 100;
+					}
+				}
+			}
+		}
+		*/
+		if (isCapital())
+		{
+			iImportanceFactor = std::max(iImportanceFactor, 150);
+			//if (GET_TEAM(kOwner.getTeam()).AI_getLowestVictoryCountdown() > 0)
+			//	iImportanceFactor += 100;
+		}
+		iTotalThreat = iTotalThreat * iImportanceFactor / 100;
+	} // K-Mod end
+
+	return iTotalThreat;
+}
+
 
 //Workers have/needed is not intended to be a strict
 //target but rather an indication.

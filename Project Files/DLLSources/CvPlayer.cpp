@@ -2742,7 +2742,7 @@ bool CvPlayer::hasReadyUnit(bool bAny) const
 	for(pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
 	{
 		if (pLoopSelectionGroup->readyToMove(bAny) &&
-			!pLoopSelectionGroup->isAutomated()) // K-Mod
+			!pLoopSelectionGroup->isAutomated() && pLoopSelectionGroup->isOnMap()) // K-Mod
 		{
 			return true;
 		}
@@ -2762,7 +2762,7 @@ CvUnit* CvPlayer::getReadyUnit(bool bAny) const
 	for (pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
 	{
 		if (pLoopSelectionGroup->readyToMove(bAny) &&
-			!pLoopSelectionGroup->isAutomated()) // K-Mod
+			!pLoopSelectionGroup->isAutomated() && pLoopSelectionGroup->isOnMap()) // K-Mod
 		{
 			return pLoopSelectionGroup->getHeadUnit();
 		}
@@ -10022,6 +10022,12 @@ void CvPlayer::removeGroupCycle(int iID)
 	{
 		if (pSelectionGroupNode->m_data == iID)
 		{
+			CvSelectionGroup const& kGroup = *getSelectionGroup(pSelectionGroupNode->m_data);
+			/*
+			CvUnit* const pHeadUnit = kGroup.getHeadUnit();
+			if (pHeadUnit != NULL)
+				pHeadUnit->AI_setMovePriority(0);
+			*/
 			pSelectionGroupNode = deleteGroupCycleNode(pSelectionGroupNode);
 			break;
 		}

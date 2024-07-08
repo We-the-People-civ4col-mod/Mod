@@ -108,6 +108,7 @@ void CvUnit::reloadEntity()
 	if (bSelected)
 	{
 		gDLL->getInterfaceIFace()->insertIntoSelectionList(this, false, false);
+		AI_setMovePriority(1);
 	}
 }
 
@@ -436,6 +437,7 @@ void CvUnit::convert(CvUnit* pUnit, bool bKill)
 		if (pUnit->IsSelected() && isOnMap() && getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
 			gDLL->getInterfaceIFace()->insertIntoSelectionList(this, true, false);
+			AI_setMovePriority(1);
 		}
 	}
 
@@ -1798,7 +1800,7 @@ void CvUnit::updateCombat(bool bQuick)
 
 			if (!bAdvance)
 			{
-				changeMoves(pPlot->movementCost(this, plot()));
+				changeMoves(pPlot->movementCost(*this, *plot()));
 
 				if (!canMove() || !isBlitz())
 				{
@@ -1880,7 +1882,7 @@ void CvUnit::updateCombat(bool bQuick)
 			bool bAdvance = canAdvance(pPlot, 0);
 			if (!bAdvance)
 			{
-				changeMoves(std::max(GLOBAL_DEFINE_MOVE_DENOMINATOR, pPlot->movementCost(this, plot())));
+				changeMoves(std::max(GLOBAL_DEFINE_MOVE_DENOMINATOR, pPlot->movementCost(*this, *plot())));
 
 				if (!canMove() || !isBlitz())
 				{
@@ -1992,7 +1994,7 @@ void CvUnit::updateCombat(bool bQuick)
 			}
 			// WTP, ray, fix for Human Unit not stopping automation after attacked - END
 
-			changeMoves(std::max(GLOBAL_DEFINE_MOVE_DENOMINATOR, pPlot->movementCost(this, plot())));
+			changeMoves(std::max(GLOBAL_DEFINE_MOVE_DENOMINATOR, pPlot->movementCost(*this, *plot())));
 
 			// R&R, ray, Natives raiding party - START
 			CvCity* pCity = pPlot->getPlotCity();
@@ -3712,12 +3714,12 @@ bool CvUnit::canMoveOrAttackInto(const CvPlot* pPlot, bool bDeclareWar) const
 	return (canMoveInto(*pPlot, false, bDeclareWar) || canMoveInto(*pPlot, true, bDeclareWar));
 }
 
-
+/*
 bool CvUnit::canMoveThrough(const CvPlot* pPlot) const
 {
 	return canMoveInto(*pPlot, false, false, true);
 }
-
+*/
 
 void CvUnit::attack(CvPlot* pPlot, bool bQuick)
 {
@@ -3743,7 +3745,7 @@ void CvUnit::move(CvPlot* pPlot, bool bShow)
 	}
 	//End TAC Whaling, ray
 
-	changeMoves(pPlot->movementCost(this, plot()));
+	changeMoves(pPlot->movementCost(*this, *plot()));
 
 	jumpTo(pPlot->coord(), true, true, bShow, bShow);
 
@@ -6806,7 +6808,7 @@ int CvUnit::healRate(const CvPlot* pPlot) const
 	{
 		if (!GET_TEAM(getTeam()).isFriendlyTerritory(pPlot->getTeam()))
 		{
-			if (isEnemy(pPlot->getTeam(), pPlot))
+			if (isEnemy(*pPlot))
 			{
 				iTotalHeal += (GLOBAL_DEFINE_ENEMY_HEAL_RATE * (100 + getExtraEnemyHeal())) / 100;
 			}
@@ -12772,18 +12774,20 @@ PlayerTypes CvUnit::getVisualOwner(TeamTypes eForTeam) const
 	return getOwnerINLINE();
 }
 
-
-PlayerTypes CvUnit::getCombatOwner(TeamTypes eForTeam, const CvPlot* pPlot) const
+/*	advc.inl: This part of getCombatOwner is only relevant for alwaysHostile units,
+	i.e. not needed most of the time. I split the function up so that the
+	frequently needed part can be inlined. */
+PlayerTypes CvUnit::getCombatOwner_bulk(TeamTypes eForTeam, CvPlot const& kPlot) const
 {
-	if (eForTeam != UNKNOWN_TEAM && getTeam() != eForTeam && eForTeam != NO_TEAM)
+	//ROFILE_FUNC(); // advc.003o: getCombatOwner is called extremely often; getCombatOwner_bulk isn't.
+	PlayerTypes eOwner = getOwner();
+	FAssert(eForTeam != NO_TEAM); // advc: No longer supported
+	if (/*eForTeam != NO_TEAM && */TEAMID(eOwner) != eForTeam &&
+		eForTeam != GC.getGameINLINE().getBarbarianTeam() && isAlwaysHostile(&kPlot))
 	{
-		if (isAlwaysHostile(pPlot))
-		{
-			return UNKNOWN_PLAYER;
-		}
+		return GC.getGameINLINE().getBarbarianPlayer();
 	}
-
-	return getOwnerINLINE();
+	return eOwner;
 }
 
 TeamTypes CvUnit::getTeam() const
@@ -12794,7 +12798,7 @@ TeamTypes CvUnit::getTeam() const
 TeamTypes CvUnit::getCombatTeam(TeamTypes eForTeam, const CvPlot* pPlot) const
 {
 	TeamTypes eTeam;
-	PlayerTypes eOwner = getCombatOwner(eForTeam, pPlot);
+	PlayerTypes eOwner = getCombatOwner(eForTeam, *pPlot);
 	switch (eOwner)
 	{
 	case UNKNOWN_PLAYER:
@@ -13077,7 +13081,11 @@ bool CvUnit::setTransportUnit(CvUnit* pTransportUnit, bool bUnload)
             pTransportUnit->changeCargo(iCargoSize);
 			//pTransportUnit->changeCargo(1);
 			// PatchMod: Berth Size END
-			pTransportUnit->getGroup()->setActivityType(ACTIVITY_AWAKE);
+			
+			// Transport may already be in the middle of a mission when popping a goody that results in a
+			// unit. If that's the case then do not disturb the transport's mission!
+			if (pTransportUnit->getGroup()->getActivityType() != ACTIVITY_MISSION)
+				pTransportUnit->getGroup()->setActivityType(ACTIVITY_AWAKE);
 		}
 		else //dropped off of vehicle
 		{
@@ -14470,6 +14478,11 @@ bool CvUnit::isAlwaysHostile(const CvPlot* pPlot) const
 	}
 
 	return true;
+}
+
+bool CvUnit::isAlwaysHostile() const
+{
+	return m_pUnitInfo->isAlwaysHostile();
 }
 
 bool CvUnit::verifyStackValid()
@@ -16696,6 +16709,7 @@ bool CvUnit::isPrisonerOrSlave() const
 
 // Erik: Intended to by used by AI to determine if this unit should ever be considered for non-military uses.
 // Hopefully this should help prevent the AI from fielding pioneers with a GG attached!
+// TODO: Move to AI
 bool CvUnit::isProfessionalMilitary() const
 {
 	if (getUnitCombatType() == NO_UNITCOMBAT)
@@ -16860,6 +16874,16 @@ void CvUnit::pushGroupMoveTo(CvPlot const& kTo, MovementFlags eFlags,
 		bAppend, bManual, eMissionAI, pMissionAIPlot, pMissionAIUnit);
 }
 
+// WTP: Wrapper for wrapper until we fully port MovementFlags
+void CvUnit::pushGroupMoveTo(CvPlot const& kTo, int iFlags,
+	bool bAppend, bool bManual, MissionAITypes eMissionAI,
+	CvPlot* pMissionAIPlot, CvUnit* pMissionAIUnit)
+{
+	FAssert(!atPlot(&kTo));
+	getGroup()->pushMission(MISSION_MOVE_TO, kTo.getX(), kTo.getY(), static_cast<MovementFlags>(iFlags),
+		bAppend, bManual, eMissionAI, pMissionAIPlot, pMissionAIUnit);
+}
+
 bool CvUnit::canEnterTerritory(TeamTypes eTeam, bool bIgnoreRightOfPassage,
 	CvArea const* pArea) const // advc.030
 {
@@ -16909,7 +16933,7 @@ bool CvUnit::isEnemy(CvPlot const& kPlot) const
 	are no longer allowed. */
 bool CvUnit::isEnemy(TeamTypes eTeam, CvPlot const& kPlot) const
 {
-	return GET_TEAM(eTeam).isAtWar(TEAMID(getCombatOwner(eTeam, &kPlot)));
+	return GET_TEAM(eTeam).isAtWar(TEAMID(getCombatOwner(eTeam, kPlot)));
 }
 
 // Moved out of CvUnit::bombard (note: may exceed the target's defensive modifier)

@@ -69,7 +69,8 @@ public:
 	int AI_getAttitudeVal(TeamTypes eTeam, bool bForced = true) const;
 	int AI_getMemoryCount(TeamTypes eTeam, MemoryTypes eMemory) const;
 
-	int AI_startWarVal(TeamTypes eTeam) const;
+	int AI_startWarVal(TeamTypes eTarget, WarPlanTypes eWarPlan = NO_WARPLAN, // K-Mod
+		bool bConstCache = false) const; // advc.001n
 	int AI_endWarVal(TeamTypes eTeam) const;
 	int AI_mapTradeVal(TeamTypes eTeam) const;
 	DenialTypes AI_mapTrade(TeamTypes eTeam) const;
@@ -189,13 +190,16 @@ public:
 	AIStrengthMemoryMap& AI_strengthMemory() const { return m_strengthMemory; }
 
 	bool AI_isColonialPower() const;
+	bool AI_isColonialOrBarbarianPower() const;
 	int AI_getWarSuccessRating() const; // K-Mod
 	int AI_getEnemyPowerPercent(bool bConsiderOthers = false) const;
+	bool AI_isPushover(TeamTypes ePotentialEnemy) const; // advc.105
 	bool AI_deduceCitySite(CvCity const& kCity) const; // K-Mod
 	// advc: countEnemy... functions moved from CvTeam
 	int AI_countEnemyPowerByArea(CvArea const& kArea) const;
 	int AI_countEnemyCitiesByArea(CvArea const& kArea) const; // K-Mod
 	int AI_countEnemyDangerByArea(CvArea const& kArea, TeamTypes eEnemyTeam = NO_TEAM) const; // bbai
+	int AI_roundTradeVal(int iVal) const; // advc.104k
 
 protected:
 

@@ -681,6 +681,7 @@ void CvCity::doTurn()
 			for (unsigned int i = 0; i < stuckUnits.size(); ++i)
 			{
 				removePopulationUnit(CREATE_ASSERT_DATA, stuckUnits[i], false, eDefaultProfession);
+				stuckUnits[i]->AI_setMovePriority(1);
 			}
 		}
 	}
@@ -9012,6 +9013,13 @@ bool CvCity::removePopulationUnit(AssertCallerData assertData, CvUnit* pUnit, bo
 	}
 	// R&R Abandon City, ray END
 
+	logBBAI("CvCity::removePopulationUnit() Player %S Unit %d added to map. %S(%S)[%d, %d] %s,%s",
+		GET_PLAYER(pUnit->getOwnerINLINE()).getCivilizationDescription(), pUnit->getID(),
+		pUnit->getName().GetCString(), GET_PLAYER(pUnit->getOwnerINLINE()).getName(),
+		pUnit->getX_INLINE(), pUnit->getY_INLINE(), pUnit->isOnMap() ? "isOnMap:true" : "isOnMap:false",
+		pUnit->isCargo() ? "isCargo:true" : "isCargo:false");
+
+
 	return true;
 }
 
@@ -12978,10 +12986,11 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_serv)
 {
 	//Feature deactivated for KI
+	/*
 	if (!isHuman()) {
 		return false;
 	}
-
+	*/
 	// do not use feature if City Population = 1, because might destroy city
 	if (getPopulation() == 1)
 	{
@@ -13054,10 +13063,11 @@ bool CvCity::LbD_try_escape(CvUnit* convUnit, int base, int mod_crim, int mod_se
 bool CvCity::LbD_try_revolt(CvUnit* convUnit, int base, int mod_crim, int mod_slave)
 {
 	//Feature deactivated for KI
+	/*
 	if (!isHuman()) {
 		return false;
 	}
-
+	*/
 	// do not use feature if City Population = 1, because might destroy city
 	if (getPopulation() == 1)
 	{

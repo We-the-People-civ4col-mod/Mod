@@ -276,6 +276,71 @@ AreaAITypes CvTeamAI::AI_calculateAreaAIType(CvArea const& kArea, bool bPreparin
 	if (kArea.isWater())
 		return AREAAI_NEUTRAL; // K-Mod (no functional change)
 
+	// WTP: Keeping the old (refactored) code for the natives
+	if (hasNativePlayer())
+	{
+		int iBestValue = 0;
+		WarPlanTypes eBestWarplan = NO_WARPLAN;
+		TeamTypes eBestTeam = NO_TEAM;
+
+		//Trying new code for natives only.
+		for (TeamTypes eTeam = FIRST_TEAM; eTeam < MAX_TEAMS; ++eTeam)
+		{
+			if (GET_TEAM(eTeam).isAlive())
+			{
+				const WarPlanTypes eWarplan = AI_getWarPlan(eTeam);
+				if (eWarplan != NO_WARPLAN)
+				{
+					FAssert(eTeam != getID());
+					FAssert(isHasMet(eTeam) || GC.getGameINLINE().isOption(GAMEOPTION_ALWAYS_WAR));
+					if ((GET_TEAM(eTeam).countNumCitiesByArea(kArea) > 0) || (GET_TEAM(eTeam).countNumUnitsByArea(kArea) > 4))
+					{
+						const int iValue = AI_warplanStrength(eWarplan);
+						if (iValue > iBestValue)
+						{
+							iBestValue = iValue;
+							eBestWarplan = eWarplan;
+							eBestTeam = eTeam;
+						}
+					}
+				}
+			}
+		}
+
+		if (eBestWarplan == WARPLAN_TOTAL || eBestWarplan == WARPLAN_PREPARING_TOTAL)
+		{
+			return AREAAI_OFFENSIVE;
+		}
+
+		if (eBestWarplan == WARPLAN_ATTACKED || eBestWarplan == WARPLAN_ATTACKED_RECENT)
+		{
+			if ((countPowerByArea(kArea) * 60) > (AI_countEnemyPowerByArea(kArea) * 100))
+			{
+				if (AI_getAttitude(eBestTeam) == ATTITUDE_FURIOUS)
+				{
+					return AREAAI_OFFENSIVE;
+				}
+				else
+				{
+					return AREAAI_BALANCED;
+				}
+			}
+			else
+			{
+				return AREAAI_DEFENSIVE;
+			}
+		}
+
+		if (AI_countEnemyPowerByArea(kArea) > 0)
+		{
+			return AREAAI_BALANCED;
+		}
+
+		return AREAAI_NEUTRAL;
+	}
+
+	// WTP: AdvCiv version used for Europeans below
+
 	bool bRecentAttack = false;
 	bool bTargets = false;
 	bool bChosenTargets = false;
@@ -400,15 +465,8 @@ AreaAITypes CvTeamAI::AI_calculateAreaAIType(CvArea const& kArea, bool bPreparin
 		int iEnemyRelativeStrength = 0;
 		bool bEnemyCities = false;
 
-		for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+		FOR_EACH_CIV_ALIVE_AND_KNOWN_POTENTIAL_ENEMY_OF(kOurTeam, kLoopTeam)
 		{
-			const CvTeamAI& kEnemy = GET_TEAM(eTeam);
-			const TeamTypes ourTeam = getID();
-			if (!kEnemy.isHasMet(ourTeam) || !kEnemy.isAlive() || !kEnemy.AI_isColonialPower())
-				continue;
-
-			CvTeamAI const& kLoopTeam = GET_TEAM(eTeam);
-
 			if (AI_getWarPlan(kLoopTeam.getID()) == NO_WARPLAN)
 				continue;
 
@@ -798,23 +856,24 @@ int CvTeamAI::AI_getMemoryCount(TeamTypes eTeam, MemoryTypes eMemory) const
 	return 0;
 }
 
-int CvTeamAI::AI_startWarVal(TeamTypes eTeam) const
+int CvTeamAI::AI_startWarVal(TeamTypes eTarget, WarPlanTypes eWarPlan,
+	bool bConstCache) const // advc.001n
 {
 	PROFILE_FUNC();
 
 	int iValue;
 	
-	int iValidity = AI_targetValidity(eTeam);
+	int iValidity = AI_targetValidity(eTarget);
 	if (iValidity == 0)
 	{
 		return 0;
 	}
 
-	iValue = AI_calculatePlotWarValue(eTeam);
+	iValue = AI_calculatePlotWarValue(eTarget);
 
-	iValue += (3 * AI_calculateCapitalProximity(eTeam)) / ((iValue > 0) ? 2 : 3);
+	iValue += (3 * AI_calculateCapitalProximity(eTarget)) / ((iValue > 0) ? 2 : 3);
 	
-	int iClosenessValue = AI_teamCloseness(eTeam);
+	int iClosenessValue = AI_teamCloseness(eTarget);
 	if (iClosenessValue == 0)
 	{
 		iValue /= 4;
@@ -840,7 +899,7 @@ int CvTeamAI::AI_startWarVal(TeamTypes eTeam) const
 		iValue *= (GC.getGameINLINE().isOption(GAMEOPTION_AGGRESSIVE_AI) ? 6 : 4);
 	}
 
-	switch (AI_getAttitude(eTeam))
+	switch (AI_getAttitude(eTarget))
 	{
 	case ATTITUDE_FURIOUS:
 		iValue *= 16;
@@ -871,75 +930,97 @@ int CvTeamAI::AI_startWarVal(TeamTypes eTeam) const
 }
 
 
-// XXX this should consider area power...
-int CvTeamAI::AI_endWarVal(TeamTypes eTeam) const
+int CvTeamAI::AI_endWarVal(TeamTypes eTeam) const // XXX this should consider area power...
 {
-	int iValue;
+	FAssert(eTeam != getID());
+	FAssert(isAtWar(eTeam));
 
-	FAssertMsg(eTeam != getID(), "shouldn't call this function on ourselves");
-	FAssertMsg(isAtWar(eTeam), "Current AI Team instance is expected to be at war with eTeam");
+	CvTeamAI const& kOurTeam = GET_TEAM(getID());
+	CvTeamAI const& kWarTeam = GET_TEAM(eTeam); // K-Mod
 
-
-
-	iValue = 100;
-
-	iValue += (getNumCities() * 2);
-	iValue += (GET_TEAM(eTeam).getNumCities() * 2);
-
+	int iValue = 100;
+	iValue += getNumCities() * 3;
+	iValue += kWarTeam.getNumCities() * 3;
 	iValue += getTotalPopulation();
-	iValue += GET_TEAM(eTeam).getTotalPopulation();
-	
-	iValue += (GET_TEAM(eTeam).AI_getWarSuccess(getID()) * 10);
-	
-	iValue += GET_TEAM(eTeam).AI_getDamages(getID());
+	iValue += kWarTeam.getTotalPopulation();
+	iValue += (kWarTeam.AI_getWarSuccess(getID()) * 20); // .uround();
 
 	int iOurPower = std::max(1, getPower());
-	int iTheirPower = std::max(1, GET_TEAM(eTeam).getDefensivePower());
-
-	int iModifier = 50;
-	
-	iModifier *= iTheirPower;
-	iModifier /= std::max(1, iOurPower + iTheirPower + 10);
-	iModifier += 50;
-	
-	iValue *= iModifier;
-	iValue /= 100;
-	
-	if (GET_TEAM(eTeam).AI_isNative())
+	int iTheirPower = std::max(1, kWarTeam.getDefensivePower(getID())); 
+#if 0
+	{	// <kekm.39> Multiplying by iTheirPower can overflow
+		scaled rPowMult(iTheirPower + 10, iOurPower + iTheirPower + 10);
+		iValue = (iValue * rPowMult).uround(); // </kekm.39>
+	}
+#endif
+	WarPlanTypes const eWarPlan = AI_getWarPlan(eTeam);
+	/*	if we are not human, do we want to continue war for strategic reasons?
+		only check if our power is at least 120% of theirs */
+	if (!isHuman() && iOurPower > 120 * iTheirPower / 100)
 	{
-		if (GET_TEAM(eTeam).AI_isChosenWar(getID()))
+		bool bDagger = false;
+		for (int iI = 0; iI < MAX_PLAYERS; iI++)
 		{
-			iValue *= 25 + GET_TEAM(eTeam).AI_targetValidity(getID());
-			iValue /= 125;
+			const CvPlayerAI& kLoopPlayer = GET_PLAYER((PlayerTypes)iI); // K-Mod
+			if (kLoopPlayer.isAlive() && kLoopPlayer.getTeam() == getID())
+			{
+				if (kLoopPlayer.AI_isDoStrategy(AI_STRATEGY_DAGGER))
+					bDagger = true;
+			}
+		}
+		if (bDagger)
+		{
+			// if dagger, value peace at 90% * power ratio
+			iValue *= 9 * iTheirPower;
+			iValue /= 10 * iOurPower;
+		}
+		/*	for now, we will always do the land mass check for domination
+			if we have more than half the land, then value peace at 90% * land ratio */
+		int iLandRatio = getTotalLand() * 100 / std::max(1, kWarTeam.getTotalLand());
+		if (iLandRatio > 120)
+		{
+			iValue *= 9 * 100;
+			iValue /= 10 * iLandRatio;
 		}
 	}
-	
-	/*WarPlanTypes eWarPlan = AI_getWarPlan(eTeam);
 
-	// XXX count units in enemy territory...
-
-	if ((!(isHuman()) && (eWarPlan == WARPLAN_TOTAL)) ||
-		  (!(GET_TEAM(eTeam).isHuman()) && (GET_TEAM(eTeam).AI_getWarPlan(getID()) == WARPLAN_TOTAL)))
+	if ((!isHuman() && eWarPlan == WARPLAN_TOTAL) ||
+		(!kWarTeam.isHuman() && kWarTeam.AI_getWarPlan(getID()) == WARPLAN_TOTAL))
 	{
 		iValue *= 2;
 	}
-	else if ((!(isHuman()) && (eWarPlan == WARPLAN_DOGPILE) && (GET_TEAM(eTeam).getAtWarCount(true) > 1)) ||
-		       (!(GET_TEAM(eTeam).isHuman()) && (GET_TEAM(eTeam).AI_getWarPlan(getID()) == WARPLAN_DOGPILE) && (getAtWarCount(true) > 1)))
+	else if ((!isHuman() && eWarPlan == WARPLAN_DOGPILE && kWarTeam.getNumWars() > 1) ||
+		(!kWarTeam.isHuman() &&
+			kWarTeam.AI_getWarPlan(getID()) == WARPLAN_DOGPILE && getNumWars() > 1))
 	{
 		iValue *= 3;
 		iValue /= 2;
-	}*/
+	}
 
-	iValue -= (iValue % GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
+	// Do we have a big stack en route?
+	int iOurAttackers = 0;
+	//for (MemberAIIter it(getID()); it.hasNext(); ++it)
+	FOR_EACH_TEAM_PLAYER_MEMBER(kOurTeam, kPlayer)
+		iOurAttackers += kPlayer.AI_enemyTargetMissions(eTeam);
+	int iTheirAttackers = 0;
+	FOR_EACH_AREA_VAR(pLoopArea)
+		iTheirAttackers += AI_countEnemyDangerByArea(*pLoopArea, eTeam);
 
-	if (isHuman())
+	int iAttackerRatio = (100 * iOurAttackers) /
+		std::max(1 + GC.getGame().getCurrentEra(), iTheirAttackers);
+
+	if (GC.getGame().isOption(GAMEOPTION_AGGRESSIVE_AI))
 	{
-		return std::max(iValue, GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
+		iValue *= 150;
+		iValue /= range(iAttackerRatio, 150, 900);
 	}
 	else
 	{
-		return iValue;
+		iValue *= 200;
+		iValue /= range(iAttackerRatio, 200, 600);
 	}
+	// BETTER_BTS_AI_MOD: END
+	return AI_roundTradeVal(iValue);
 }
 
 // eTeam is the team that we're evaluating
@@ -1960,14 +2041,9 @@ bool CvTeamAI::AI_isSneakAttackReady(TeamTypes eIndex) const
 	if (eIndex != NO_TEAM)
 		return !isAtWar(eIndex) && AI_isChosenWar(eIndex) && !AI_isSneakAttackPreparing(eIndex); // K-Mod
 	
-	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	FOR_EACH_MAJOR_CIV(kOurTeam, kOtherTeam)
 	{
-		const CvTeamAI& kEnemy = GET_TEAM(eTeam);
-		const TeamTypes ourTeam = getID();
-		if (eTeam == ourTeam || !kEnemy.isHasMet(ourTeam) || !kEnemy.isAlive() || !kEnemy.AI_isColonialPower())
-			continue;
-
-		if (AI_isSneakAttackReady(eTeam))
+		if (AI_isSneakAttackReady(kOtherTeam.getID()))
 			return true;
 	}
 	return false;
@@ -3379,12 +3455,22 @@ bool CvTeamAI::AI_mayAttack(CvPlot const& kPlot) const
 }
 
 // Returns true if eTeam is an actual colonial power that we can be in a real war with
-// other Europeans, natives and our king qualify
+// other Europeans, natives and our king (after DOI) qualify
 // the church, barbarians/animals and other kings do not (and ofc our own team!)
+// eTeam must be passed to check if at war with the king. 
 // TODO: result should be cached!
 bool CvTeamAI::AI_isColonialPower() const
 {
+	// TODO: AI_isNative seems to be a duplicate of hasNativePlayer?
+	// TODO: Merge these loops!	
 	return (AI_isNative() || hasColonialPlayer());
+}
+
+bool CvTeamAI::AI_isColonialOrBarbarianPower() const
+{
+	// TODO: AI_isNative seems to be a duplicate of hasNativePlayer?
+	// TODO: Merge these loops!	
+	return (AI_isNative() || hasColonialPlayer() || isBarbarian());
 }
 
 // Private Functions...
@@ -3395,13 +3481,8 @@ int CvTeamAI::AI_getEnemyPowerPercent(bool bConsiderOthers) const
 {
 	int iEnemyPower = 0;
 	
-	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	FOR_EACH_CIV_ALIVE_AND_KNOWN_POTENTIAL_ENEMY_OF(kOurTeam, kEnemy)
 	{
-		const CvTeamAI& kEnemy = GET_TEAM(eTeam);
-		const TeamTypes ourTeam = getID();
-		if (eTeam == ourTeam || !kEnemy.isHasMet(ourTeam) || !kEnemy.isAlive() || !kEnemy.AI_isColonialPower())
-			continue;
-
 		if (isAtWar(kEnemy.getID()))
 		{
 			int iTempPower = 220 * kEnemy.getPower();
@@ -3417,9 +3498,10 @@ int CvTeamAI::AI_getEnemyPowerPercent(bool bConsiderOthers) const
 				double counted (fixme). Could collect the war enemies in a std::set
 				in a first pass; though it sucks to implement the vassal/DP logic
 				multiple times (already in getDefensivePower and MilitaryAnalyst).
-				Also, the computation for bConsiderOthers above can be way off. */
+				Also, the computation for bConsiderOthers above can be way off. 
+			*/
 		{
-			int iTempPower = 240 * kEnemy.getDefensivePower();
+			int iTempPower = 240 * kEnemy.getDefensivePower(getID());
 			iTempPower /= (AI_hasCitiesInPrimaryArea(kEnemy.getID()) ? 2 : 3);
 			iTempPower /= 1 + (bConsiderOthers ? kEnemy.getNumWars() : 0);
 			iEnemyPower += iTempPower;
@@ -3431,6 +3513,19 @@ int CvTeamAI::AI_getEnemyPowerPercent(bool bConsiderOthers) const
 	int iOurPower = getPower();
 	return iEnemyPower / std::max(1, iOurPower);
 	// K-Mod end
+}
+
+// advc.105, advc.104:
+bool CvTeamAI::AI_isPushover(TeamTypes ePotentialEnemy) const
+{
+	/*	Stricter checks for human potential enemy? But there's already
+		some code for dealing with humans at some of the call sites ... */
+	CvTeam const& kPotentialEnemy = GET_TEAM(ePotentialEnemy);
+	int iTheirCities = kPotentialEnemy.getNumCities();
+	int iOurCities = getNumCities();
+	return (((iTheirCities <= 1 && iOurCities >= 3) ||
+		4 * iTheirCities < iOurCities) &&
+		10 * kPotentialEnemy.getPower() < 4 * getPower());
 }
 
 // K-Mod: return true if is fair enough for the AI to know there is a city here
@@ -3447,7 +3542,7 @@ bool CvTeamAI::AI_deduceCitySite(CvCity const& kCity) const
 	int iPoints = 0;
 	int const iLevel = kCity.getCultureLevel();
 	//for (SquareIter itPlot(kCity.getPlot(), iLevel, false); itPlot.hasNext(); ++itPlot)
-	FOR_EACH_PLOT_IN_RANGE_OF(kCity.plot(), iLevel,
+	FOR_EACH_NON_CENTER_PLOT_IN_RANGE_OF(kCity.plot(), iLevel,
 	{
 		CvPlot* itPlot = pLoopPlot;
 		//int iDist = CvCity::cultureDistance(itPlot.currXDist(), itPlot.currYDist());
@@ -3620,3 +3715,14 @@ int CvTeamAI::AI_countEnemyDangerByArea(CvArea const& kArea, TeamTypes eEnemyTea
 	return iCount;
 }
 
+// advc.104k: Same procedure as in BtS mostly
+int CvTeamAI::AI_roundTradeVal(int iVal) const
+{
+	int rem = GLOBAL_DEFINE_DIPLOMACY_VALUE_REMAINDER;
+	iVal -= iVal % rem;
+	/*  Not sure if this lower bound is really needed. The BtS code
+		(see CvPlayerAI::AI_roundTradeVal) doesn't have it. */
+	if (isHuman())
+		return std::max(iVal, rem);
+	return iVal;
+}

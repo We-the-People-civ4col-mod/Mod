@@ -62,7 +62,7 @@ void CvSelectionGroup::resetSavedData(int iID, PlayerTypes eOwner)
 	m_bForceUpdate = defaultForceUpdate;
 	m_eOwner = eOwner;
 	m_eActivityType = defaultActivityType;
-	m_eAutomateType = defaultAutomateType;
+	m->eAutomateType = defaultAutomateType;
 }
 
 void CvSelectionGroup::read(CvSavegameReader reader)
@@ -90,7 +90,7 @@ void CvSelectionGroup::read(CvSavegameReader reader)
 		case SelectionGroupSave_ForceUpdate: reader.Read(m_bForceUpdate); break;
 		case SelectionGroupSave_Owner: reader.Read(m_eOwner); break;
 		case SelectionGroupSave_ActivityType: reader.Read(m_eActivityType); break;
-		case SelectionGroupSave_AutomateType: reader.Read(m_eAutomateType); break;
+		case SelectionGroupSave_AutomateType: reader.Read(m->eAutomateType); break;
 		case SelectionGroupSave_units: reader.Read(m_units); break;
 		case SelectionGroupSave_missionQueue: reader.Read(m_missionQueue); break;
 		case SelectionGroupSave_TradeRoutes:
@@ -124,7 +124,7 @@ void CvSelectionGroup::write(CvSavegameWriter writer)
 	writer.Write(SelectionGroupSave_ForceUpdate, m_bForceUpdate, defaultForceUpdate);
 	writer.Write(SelectionGroupSave_Owner, m_eOwner, defaultOwner);
 	writer.Write(SelectionGroupSave_ActivityType, m_eActivityType, defaultActivityType);
-	writer.Write(SelectionGroupSave_AutomateType, m_eAutomateType, defaultAutomateType);
+	writer.Write(SelectionGroupSave_AutomateType, m->eAutomateType, defaultAutomateType);
 	writer.Write(SelectionGroupSave_units, m_units);
 	writer.Write(SelectionGroupSave_missionQueue, m_missionQueue);
 	int iSize = m_aTradeRoutes.size();

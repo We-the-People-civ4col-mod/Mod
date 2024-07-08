@@ -175,8 +175,8 @@ public:
 	// Super Forts end
 
 	int defenseModifier(TeamTypes eDefender, bool bHelp = false) const;
-	int movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,														// Exposed to Python
-		bool bAssumeRevealed = false) const; // advc.001i, WTP: default is false rather than true
+	int movementCost(CvUnit const& kUnit, CvPlot const& kFrom,
+		bool bAssumeRevealed = true) const; // advc.001i
 
 	bool isAdjacentOwned() const;
 	bool isAdjacentPlayer(PlayerTypes ePlayer, bool bLandOnly = false) const;
@@ -189,13 +189,14 @@ public:
 	DllExport int plotCount(ConstPlotUnitFunc funcA, int iData1A = -1, int iData2A = -1, PlayerTypes eOwner = NO_PLAYER, TeamTypes eTeam = NO_TEAM, ConstPlotUnitFunc funcB = NULL, int iData1B = -1, int iData2B = -1) const;
 	CvUnit* plotCheck(ConstPlotUnitFunc funcA, int iData1A = -1, int iData2A = -1, PlayerTypes eOwner = NO_PLAYER, TeamTypes eTeam = NO_TEAM, ConstPlotUnitFunc funcB = NULL, int iData1B = -1, int iData2B = -1) const;
 	bool isOwned() const;
+	bool isBarbarian() const;
 
 	bool isVisible(TeamTypes eTeam, bool bDebug) const;
 	// advc: Make bDebug=false the default
 	bool isVisible(TeamTypes eTeam) const
 	{
 		return isVisible(eTeam, false);
-	}
+	}	
 	DllExport bool isActiveVisible(bool bDebug) const;
 	bool isVisibleToCivTeam() const;
 	bool isVisibleToWatchingHuman() const;
@@ -243,7 +244,7 @@ public:
 	bool canHaveFeature(FeatureTypes eFeature) const;
 
 	DllExport bool isRoute() const;
-	bool isValidRoute(const CvUnit* pUnit) const;
+	bool isValidRoute(const CvUnit* pUnit, /* advc.001i: */ bool bAssumeRevealed) const;
 	bool isValidDomainForLocation(const CvUnit& unit) const;
 	bool isValidDomainForAction(const CvUnit& unit) const;
 	bool isValidDomainForAction(UnitTypes eUnit) const;
@@ -470,6 +471,12 @@ public:
 	void setRevealedImprovementType(TeamTypes eTeam, ImprovementTypes eNewValue);
 
 	RouteTypes getRevealedRouteType(TeamTypes eTeam, bool bDebug) const;
+	// advc.inl: Faster implementation for non-UI code
+	RouteTypes getRevealedRouteType(TeamTypes eTeam) const
+	{
+		return m_aeRevealedImprovementRouteTypes.getRoute(eTeam);
+	}
+
 	void setRevealedRouteType(TeamTypes eTeam, RouteTypes eNewValue);
 
 	int getBuildProgress(BuildTypes eBuild) const;

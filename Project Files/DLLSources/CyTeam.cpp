@@ -115,10 +115,12 @@ int CyTeam::countTotalCulture()
 {
 	return m_pTeam ? m_pTeam->countTotalCulture() : -1;
 }
+/*
 int CyTeam::countNumUnitsByArea(CyArea* pArea)
 {
 	return m_pTeam ? m_pTeam->countNumUnitsByArea(pArea->getArea()) : -1;
 }
+*/
 int CyTeam::countNumCitiesByArea(CyArea* pArea)
 {
 	return m_pTeam ? m_pTeam->countNumCitiesByArea(*pArea->getArea()) : -1;

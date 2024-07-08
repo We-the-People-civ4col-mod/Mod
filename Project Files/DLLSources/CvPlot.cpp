@@ -3356,23 +3356,27 @@ int CvPlot::defenseModifier(TeamTypes eDefender, bool bHelp) const
 
 // bAssumeRevealed=true will allow a unit (AI or player controlled) to use the actual cost rather
 // than the worst-case estimate if not revealed
-int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
+int CvPlot::movementCost(CvUnit const& kUnit, CvPlot const& kFrom,
 	bool bAssumeRevealed) const // advc.001i
 {
 	int iRegularCost;
-	int iRouteCost;
-	int iRouteFlatCost;
-
+	
 	FAssertMsg(getTerrainType() != NO_TERRAIN, CvString::format("Plot(%d,%d) TerrainType is not assigned a valid value", getX_INLINE(), getY_INLINE()));
 
-	if (pUnit->flatMovementCost())
+	if (kUnit.flatMovementCost())
 	{
 		return GLOBAL_DEFINE_MOVE_DENOMINATOR;
 	}
 
-	if (!bAssumeRevealed && !isRevealed(pUnit->getTeam(), false))
+	TeamTypes const eTeam = kUnit.getTeam(); // advc.opt
+
+	// K-Mod. Why let the AI cheat this?
+	if ( /* advc.001i: The K-Mod condition is OK, but now that the pathfinder passes
+			bAssumeRevealed=false, it's cleaner to check that too. */
+		!bAssumeRevealed && 
+		!isRevealed(kUnit.getTeam(), false))
 	{
-		if (pUnit->getDomainType() == DOMAIN_SEA)
+		if (kUnit.getDomainType() == DOMAIN_SEA)
 		{
 			// Note: Not strictly true due to the introduction of storms which can
 			// "drain" all movement points
@@ -3380,23 +3384,23 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 		}
 		else
 		{
-			return pUnit->maxMoves();
+			return kUnit.maxMoves();
 		}
 	}
 
-	if (!pFromPlot->isValidDomainForLocation(*pUnit))
+	if (!kFrom.isValidDomainForLocation(kUnit))
 	{
-		return pUnit->maxMoves();
+		return kUnit.maxMoves();
 	}
 
-	if (!isValidDomainForAction(*pUnit))
+	if (!isValidDomainForAction(kUnit))
 	{
 		return GLOBAL_DEFINE_MOVE_DENOMINATOR;
 	}
 
-	FAssert(pUnit->getDomainType() != DOMAIN_IMMOBILE);
+	FAssert(kUnit.getDomainType() != DOMAIN_IMMOBILE);
 
-	if (pUnit->ignoreTerrainCost())
+	if (kUnit.ignoreTerrainCost())
 	{
 		iRegularCost = 1;
 	}
@@ -3416,15 +3420,16 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 
 		if (iRegularCost > 0)
 		{
-			iRegularCost = std::max(1, (iRegularCost - pUnit->getExtraMoveDiscount()));
+			iRegularCost = std::max(1, (iRegularCost - kUnit.getExtraMoveDiscount()));
 		}
 	}
 
-	bool bHasTerrainCost = (iRegularCost > 0);
+	int const iBaseMoves = kUnit.baseMoves(); // advc.opt
+	bool bHasTerrainCost = (iRegularCost > 0); // BUG? AdvCiv uses > 1
 
 	if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM)
 	{
-		iRegularCost = std::min(iRegularCost, pUnit->baseMoves()) * GLOBAL_DEFINE_MOVE_DENOMINATOR;
+		iRegularCost = std::min(iRegularCost, kUnit.baseMoves()) * GLOBAL_DEFINE_MOVE_DENOMINATOR;
 	}
 	else
 	{
@@ -3435,8 +3440,8 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 
 	if (bHasTerrainCost)
 	{
-		if (((getFeatureType() == NO_FEATURE) ? pUnit->isTerrainDoubleMove(getTerrainType()) : pUnit->isFeatureDoubleMove(getFeatureType())) ||
-			((isHills() || isPeak()) && pUnit->isHillsDoubleMove()))
+		if (((getFeatureType() == NO_FEATURE) ? kUnit.isTerrainDoubleMove(getTerrainType()) : kUnit.isFeatureDoubleMove(getFeatureType())) ||
+			((isHills() || isPeak()) && kUnit.isHillsDoubleMove()))
 		{
 			iRegularCost /= 2;
 		}
@@ -3445,11 +3450,11 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 	// ray, Streams Feature
 	// we now check if this is a "Stream Feature" with the same movement Bonus
 	// we only check for Water Plots with Features of course - this plot and also from plot
-	if (isWater() && getFeatureType() != NO_FEATURE && pFromPlot->getFeatureType() != NO_FEATURE)
+	if (isWater() && getFeatureType() != NO_FEATURE && kFrom.getFeatureType() != NO_FEATURE)
 	{
 		bool hasSameStreamFeature = false;
 		CvFeatureInfo& eThisFeature = GC.getFeatureInfo(getFeatureType());
-		CvFeatureInfo& eFromFeature = GC.getFeatureInfo(pFromPlot->getFeatureType());
+		CvFeatureInfo& eFromFeature = GC.getFeatureInfo(kFrom.getFeatureType());
 
 		//to check if Movementis against Stream
 		bool bMovementAgainstStream = false;
@@ -3457,8 +3462,8 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 		// get Movement direction
 		int xThisPlot = getX_INLINE();
 		int yThisPlot = getY_INLINE();
-		int xFromPlot = pFromPlot->getX_INLINE();
-		int yFromPlot = pFromPlot->getY_INLINE();
+		int xFromPlot = kFrom.getX_INLINE();
+		int yFromPlot = kFrom.getY_INLINE();
 
 		bool bMovementNorth = yThisPlot > yFromPlot;
 		bool bMovementSouth = yThisPlot < yFromPlot;
@@ -3561,14 +3566,34 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 		}
 	}
 
+	/*
 	if (pFromPlot->isValidRoute(pUnit) && isValidRoute(pUnit))
 	{
 		iRouteCost = std::max((GC.getRouteInfo(pFromPlot->getRouteType()).getMovementCost()),
-			               (GC.getRouteInfo(getRouteType()).getMovementCost()));
+			(GC.getRouteInfo(getRouteType()).getMovementCost()));
 		iRouteFlatCost = std::max((GC.getRouteInfo(pFromPlot->getRouteType()).getFlatMovementCost() * pUnit->baseMoves()),
-			                   (GC.getRouteInfo(getRouteType()).getFlatMovementCost() * pUnit->baseMoves()));
+			(GC.getRouteInfo(getRouteType()).getFlatMovementCost() * pUnit->baseMoves()));
 	}
+	*/
 
+
+	int iRouteCost, iRouteFlatCost;
+	// <advc.001i> Pass along bAssumeRevealed
+	if (kFrom.isValidRoute(&kUnit, bAssumeRevealed) &&
+		isValidRoute(&kUnit, bAssumeRevealed))
+	{	// <advc.001i>
+		const RouteTypes eFromRoute = (bAssumeRevealed ? kFrom.getRouteType() :
+			kFrom.getRevealedRouteType(eTeam));
+		CvRouteInfo const& kFromRoute = GC.getInfo(eFromRoute);
+		const RouteTypes eToRoute = (bAssumeRevealed ? getRouteType() :
+			getRevealedRouteType(eTeam));
+		CvRouteInfo const& kToRoute = GC.getInfo(eToRoute);
+		iRouteCost = std::max(kFromRoute.getMovementCost(), kToRoute.getMovementCost());
+		// </advc.001i>
+		iRouteFlatCost = std::max(
+			kFromRoute.getFlatMovementCost() * iBaseMoves,
+			kToRoute.getFlatMovementCost() * iBaseMoves);
+	}
 	else
 	{
 		iRouteCost = MAX_INT;
@@ -4395,17 +4420,20 @@ bool CvPlot::isRoute() const
 }
 
 
-bool CvPlot::isValidRoute(const CvUnit* pUnit) const
+// advc: rewritten
+bool CvPlot::isValidRoute(CvUnit const* pUnit,
+	/* <advc.001i> */ bool bAssumeRevealed) const
 {
-	if (isRoute())
-	{
-		if (!pUnit->isEnemy(getTeam(), this) || pUnit->isEnemyRoute())
-		{
-			return true;
-		}
-	}
-
-	return false;
+	//if (!isRoute()) return false;
+	CvTeam const& kTeam = GET_TEAM(pUnit->getTeam()); // BUG? AdvCiv uses: GET_TEAM(pUnit->getOwner())
+	RouteTypes const eRoute = (bAssumeRevealed ? getRouteType() :
+		getRevealedRouteType(kTeam.getID()));
+	if (eRoute == NO_ROUTE) // </advc.001i>
+		return false;
+	if (!isOwned() || pUnit->isEnemyRoute())
+		return true;
+	return (!pUnit->isEnemy(getTeam(), *this)/* &&
+		!kTeam.isDisengage(getTeam())*/); // advc.034
 }
 
 bool CvPlot::isValidDomainForLocation(const CvUnit& unit) const
@@ -7958,7 +7986,7 @@ void CvPlot::setRevealed(TeamTypes eTeam, bool bNewValue, bool bTerrainOnly, Tea
 
 				if (getRevealedRouteType(eFromTeam, false) == getRouteType())
 				{
-					setRevealedRouteType(eTeam, getRevealedRouteType(eFromTeam, false));
+						setRevealedRouteType(eTeam, getRevealedRouteType(eFromTeam, false));
 				}
 
 				if (pCity != NULL)
@@ -8062,13 +8090,9 @@ void CvPlot::setRevealedImprovementType(TeamTypes eTeam, ImprovementTypes eNewVa
 RouteTypes CvPlot::getRevealedRouteType(TeamTypes eTeam, bool bDebug) const
 {
 	if (bDebug && GC.getGameINLINE().isDebugMode())
-	{
 		return getRouteType();
-	}
-	else
-	{
-		return m_aeRevealedImprovementRouteTypes.getRoute(eTeam);
-	}
+	
+	return getRevealedRouteType(eTeam); // advc.inl: Call inline version
 }
 
 
@@ -10567,3 +10591,8 @@ CvCityAI* CvPlot::AI_getPlotCity() const
 {
 	return static_cast<CvCityAI*>(getPlotCity());
 } // </advc.003u>
+
+bool CvPlot::isBarbarian() const 
+{ 
+	return GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE());
+}

@@ -798,20 +798,20 @@ bool PUF_isOtherTeam(const CvUnit* pUnit, int iData1, int iData2)
 	return (pUnit->getTeam() != eTeam);
 }
 
-bool PUF_isEnemy(const CvUnit* pUnit, int iData1, int iData2)
+bool PUF_isEnemy(const CvUnit* pUnit, int iPlayer, BOOL iAlwaysHostile)
 {
-	FAssertMsg(iData1 != -1, "Invalid data argument, should be >= 0");
-	FAssertMsg(iData2 != -1, "Invalid data argument, should be >= 0");
+	FAssertMsg(iPlayer != -1, "Invalid data argument, should be >= 0");
+	FAssertMsg(iAlwaysHostile != -1, "Invalid data argument, should be >= 0");
 
-	TeamTypes eOtherTeam = GET_PLAYER((PlayerTypes)iData1).getTeam();
-	TeamTypes eOurTeam = pUnit->getCombatTeam(eOtherTeam, pUnit->plot());
-
-	if (pUnit->canCoexistWithEnemyUnit(eOtherTeam))
-	{
+	const PlayerTypes ePlayer = (PlayerTypes)iPlayer;
+	bool bAlwaysHostile = iAlwaysHostile;
+	// advc: Switched the Our/Other variable names
+	const TeamTypes eOurTeam = TEAMID(ePlayer);
+	const TeamTypes eOtherTeam = TEAMID(pUnit->getCombatOwner(eOurTeam));
+	if (pUnit->canCoexistWithEnemyUnit(eOurTeam))
 		return false;
-	}
-
-	return (iData2 ? eOtherTeam != eOurTeam : atWar(eOtherTeam, eOurTeam));
+	return (bAlwaysHostile ? eOurTeam != eOtherTeam :
+		GET_TEAM(eOurTeam).isAtWar(eOtherTeam));
 }
 
 bool PUF_isVisible(const CvUnit* pUnit, int iData1, int iData2)
@@ -832,35 +832,36 @@ bool PUF_canSiege(const CvUnit* pUnit, int iData1, int iData2)
 	return pUnit->canSiege(GET_PLAYER((PlayerTypes)iData1).getTeam());
 }
 
-bool PUF_isPotentialEnemy(const CvUnit* pUnit, int iData1, int iData2)
+bool PUF_isPotentialEnemy(const CvUnit* pUnit, int iPlayer, BOOL iAlwaysHostile)
 {
-	FAssertMsg(iData1 != -1, "Invalid data argument, should be >= 0");
-	FAssertMsg(iData2 != -1, "Invalid data argument, should be >= 0");
+	FAssertMsg(iPlayer != -1, "Invalid data argument, should be >= 0");
+	FAssertMsg(iAlwaysHostile != -1, "Invalid data argument, should be >= 0");
 
-	TeamTypes eOtherTeam = GET_PLAYER((PlayerTypes)iData1).getTeam();
-	TeamTypes eOurTeam = pUnit->getCombatTeam(eOtherTeam, pUnit->plot());
-
-	if (pUnit->canCoexistWithEnemyUnit(eOtherTeam))
-	{
+	PlayerTypes ePlayer = (PlayerTypes)iPlayer;
+	bool bAlwaysHostile = iAlwaysHostile;
+	// advc: Switched the Our/Other variable names. It's iPlayer whose war plans matter.
+	const TeamTypes eOurTeam = TEAMID(ePlayer);
+	const TeamTypes eOtherTeam = TEAMID(pUnit->getCombatOwner(eOurTeam));
+	if (pUnit->canCoexistWithEnemyUnit(eOurTeam))
 		return false;
-	}
-	return (iData2 ? eOtherTeam != eOurTeam : isPotentialEnemy(eOtherTeam, eOurTeam));
+	return (bAlwaysHostile ? eOurTeam != eOtherTeam :
+			GET_TEAM(eOurTeam).AI_mayAttack(eOtherTeam));
 }
 
-bool PUF_canDeclareWar( const CvUnit* pUnit, int iData1, int iData2)
+bool PUF_canDeclareWar(const CvUnit* pUnit, int iPlayer, BOOL iAlwaysHostile)
 {
-	FAssertMsg(iData1 != -1, "Invalid data argument, should be >= 0");
-	FAssertMsg(iData2 != -1, "Invalid data argument, should be >= 0");
+	FAssertMsg(iPlayer != -1, "Invalid data argument, should be >= 0");
+	FAssertMsg(iAlwaysHostile != -1, "Invalid data argument, should be >= 0");
 
-	TeamTypes eOtherTeam = GET_PLAYER((PlayerTypes)iData1).getTeam();
-	TeamTypes eOurTeam = pUnit->getCombatTeam(eOtherTeam, pUnit->plot());
-
-	if (pUnit->canCoexistWithEnemyUnit(eOtherTeam))
-	{
+	const PlayerTypes ePlayer = (PlayerTypes)iPlayer;
+	bool bAlwaysHostile = iAlwaysHostile;
+	/*	advc: Switched the Our/Other variable names. This function says whether
+		iPlayer can declare war on the combat owner of pUnit. */
+	const TeamTypes eOurTeam = TEAMID(ePlayer);
+	const TeamTypes eOtherTeam = TEAMID(pUnit->getCombatOwner(eOurTeam));
+	if (pUnit->canCoexistWithEnemyUnit(eOurTeam))
 		return false;
-	}
-
-	return (iData2 ? false : GET_TEAM(eOtherTeam).canDeclareWar(eOurTeam));
+	return (bAlwaysHostile ? false : GET_TEAM(eOurTeam).canDeclareWar(eOtherTeam));
 }
 
 bool PUF_canDefend(const CvUnit* pUnit, int iData1, int iData2)
@@ -1055,6 +1056,7 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 				return FALSE;
 			}
 		}
+		/*
 		if (!(iFlags & MOVE_IGNORE_DANGER))
 		{
 			if (!isPlotSafe(*pSelectionGroup, iToX, iToY))
@@ -1063,52 +1065,59 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 			if (!AI_allowMove(*pSelectionGroup, kToPlot))
 				return FALSE;
 		}
+		*/
 		// BETTER_BTS_AI_MOD: END
 	}
 
 	if (bAIControl || kToPlot.isRevealed(pSelectionGroup->getHeadTeam(), false))
 	{
-		if (pSelectionGroup->isAmphibPlot(&kToPlot))
+		CvSelectionGroup& kGroup = *pSelectionGroup;
+		MovementFlags eFlags = static_cast<MovementFlags>(iFlags);
+
+		if (kGroup.isAmphibPlot(&kToPlot))
 		{
-			for (CLLNode<IDInfo> const* pUnitNode1 = pSelectionGroup->headUnitNode();
-				pUnitNode1 != NULL; pUnitNode1 = pSelectionGroup->nextUnitNode(pUnitNode1))
+			/*	advc.opt: Might be faster to go through kGroup.getPlot() directly
+				but only once (as in CvSelectionGroup::canCargoAllMove).
+				However, the profiler suggests that this branch executes quite rarely. */
+			//PROFILE("GroupStepMetric::isValidDest - AmphibPlot");
+			FOR_EACH_UNIT_IN(pTransport, kGroup)
 			{
-				CvUnit const* pLoopUnit1 = ::getUnit(pUnitNode1->m_data);
-				if (pLoopUnit1 != NULL && pLoopUnit1->getCargo() > 0 && pLoopUnit1->domainCargo() == DOMAIN_LAND)
+				if (!pTransport->hasCargo() ||
+					pTransport->domainCargo() != DOMAIN_LAND)
 				{
-					bool bValid = false;
-					for (CLLNode<IDInfo>* pUnitNode2 = pLoopUnit1->plot()->headUnitNode();
-						pUnitNode2 != NULL; pUnitNode2 = pLoopUnit1->plot()->nextUnitNode(pUnitNode2))
-					{
-						CvUnit const* pLoopUnit2 = ::getUnit(pUnitNode2->m_data);
-						if (pLoopUnit2 != NULL && pLoopUnit2->getTransportUnit() == pLoopUnit1)
-						{
-							if (pLoopUnit2->isGroupHead())
-							{
-								//if (pLoopUnit2->getGroup()->canMoveOrAttackInto(pToPlot, (pSelectionGroup->AI_isDeclareWar(kToPlot) || (iFlags & MOVE_DECLARE_WAR))))
-								if (pLoopUnit2->getGroup()->canMoveOrAttackInto(kToPlot, iFlags & MOVE_DECLARE_WAR, false, bAIControl)) // K-Mod. The new AI must be explicit about declaring war.
-								{
-									bValid = true;
-									break;
-								}
-							}
-						}
-					}
-					if (bValid)
-						return TRUE;
+					continue;
 				}
+				bool bValid = false;
+				FOR_EACH_UNIT_ON(pCargoUnit, pTransport->plot())
+				{
+					if (pCargoUnit->getTransportUnit() == pTransport &&
+						pCargoUnit->isGroupHead() &&
+						pCargoUnit->getGroup()->canMoveOrAttackInto(kToPlot,
+							//(kGroup.AI().AI_isDeclareWar(kPlot) || (eFlags & MOVE_DECLARE_WAR)))
+							// K-Mod. The new AI must be explicit about declaring war.
+							eFlags & MOVE_DECLARE_WAR, false, //bAIControl
+							!kGroup.isHuman())) // advc.001 (see below)
+					{
+						bValid = true;
+						break;
+					}
+				}
+				if (bValid)
+					return true;
 			}
 
-			return FALSE;
+			return false;
 		}
 		else
 		{
-			if (!pSelectionGroup->canMoveOrAttackInto(kToPlot,
-				//pSelectionGroup->AI_isDeclareWar(pToPlot) || (iFlags & MOVE_DECLARE_WAR))
+			if (!kGroup.canMoveOrAttackInto(kToPlot,
+				//pSelectionGroup->AI_isDeclareWar(pToPlot) || (eFlags & MOVE_DECLARE_WAR))
 				// K-Mod. The new AI must be explicit about declaring war.
-				iFlags & MOVE_DECLARE_WAR, false, bAIControl))
+				eFlags & MOVE_DECLARE_WAR, false, //bAIControl
+				// advc.001: Automated human units shouldn't be all-seeing
+				!kGroup.isHuman()))
 			{
-				return FALSE;
+				return false;
 			}
 		}
 	}
@@ -1207,7 +1216,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 			if (pLoopUnit == NULL)
 				continue;
 
-			const int iMoveCost = kToPlot.movementCost(pLoopUnit, &kFromPlot,
+			const int iMoveCost = kToPlot.movementCost(*pLoopUnit, kFromPlot,
 				false); // advc.001i
 			//FAssert(pLoopUnit->getDomainType() != DOMAIN_AIR);
 			
@@ -1733,8 +1742,8 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 
 		CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
 		// TODO: getUnit can return NULL in rare cases
-		int iMoveCost = kToPlot.movementCost(::getUnit(pUnitNode->m_data), &kFromPlot/*,
-			false*/); // advc.001i
+		int iMoveCost = kToPlot.movementCost(*::getUnit(pUnitNode->m_data), kFromPlot,
+			false); // advc.001i
 		bool bUniformCost = true;
 
 		for (pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode);
@@ -1743,8 +1752,8 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 			CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
 			if (pLoopUnit != NULL)
 			{
-				int iLoopCost = kToPlot.movementCost(pLoopUnit, &kFromPlot/*,
-					false*/); // advc.001i
+				int iLoopCost = kToPlot.movementCost(*pLoopUnit, kFromPlot,
+					false); // advc.001i
 				if (iLoopCost != iMoveCost)
 					bUniformCost = false;
 			}
@@ -1791,8 +1800,8 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 				int iUnitMoves = bMaxMoves ? pLoopUnit->maxMoves() : pLoopUnit->movesLeft();
 				for (size_t i = plot_list.size() - 1; i > 0; i--)
 				{
-					iUnitMoves -= plot_list[i - 1]->movementCost(pLoopUnit, plot_list[i]/*,
-						false*/); // advc.001i
+					iUnitMoves -= plot_list[i - 1]->movementCost(*pLoopUnit, *plot_list[i],
+						false); // advc.001i
 					FAssert(iUnitMoves > 0 || i == 1);
 				}
 				if (GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 1)
@@ -2135,18 +2144,19 @@ void getCardinalDirectionTypeString(CvWString& szString, CardinalDirectionTypes 
 	getDirectionTypeString(szString, cardinalDirectionToDirection(eDirectionType));
 }
 
+// advc.007: Removed the "ACTIVITY_" prefix from the strings b/c it takes up too much space.
 void getActivityTypeString(CvWString& szString, ActivityTypes eActivityType)
 {
 	switch (eActivityType)
 	{
 	case NO_ACTIVITY: szString = L"NO_ACTIVITY"; break;
 
-	case ACTIVITY_AWAKE: szString = L"ACTIVITY_AWAKE"; break;
-	case ACTIVITY_HOLD: szString = L"ACTIVITY_HOLD"; break;
-	case ACTIVITY_SLEEP: szString = L"ACTIVITY_SLEEP"; break;
-	case ACTIVITY_HEAL: szString = L"ACTIVITY_HEAL"; break;
-	case ACTIVITY_SENTRY: szString = L"ACTIVITY_SENTRY"; break;
-	case ACTIVITY_MISSION: szString = L"ACTIVITY_MISSION"; break;
+	case ACTIVITY_AWAKE: szString = L"AWAKE"; break;
+	case ACTIVITY_HOLD: szString = L"HOLD"; break;
+	case ACTIVITY_SLEEP: szString = L"SLEEP"; break;
+	case ACTIVITY_HEAL: szString = L"HEAL"; break;
+	case ACTIVITY_SENTRY: szString = L"SENTRY"; break;
+	case ACTIVITY_MISSION: szString = L"MISSION"; break;
 
 	default: szString = CvWString::format(L"UNKNOWN_ACTIVITY(%d)", eActivityType); break;
 	}
@@ -2232,6 +2242,10 @@ void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI)
 	case MISSIONAI_CHOKE: szString = L"MISSIONAI_CHOKE"; break;
 	case MISSIONAI_STRANDED: szString = L"MISSIONAI_STRANDED"; break;
 	case MISSIONAI_NO_GOLD: szString = L"MISSIONAI_NO_GOLD"; break;
+	case MISSIONAI_UNLOAD: szString = L"MISSIONAI_UNLOAD"; break;
+	case MISSIONAI_RETREAT: szString = L"MISSIONAI_RETREAT"; break;
+	case MISSIONAI_COUNTER_PIRACY: szString = L"MISSIONAI_COUNTER_PIRACY"; break;
+	case MISSIONAI_LEAD: szString = L"MISSIONAI_LEAD"; break;
 	default: szString = CvWString::format(L"UNKOWN_MISSION_AI(%d)", eMissionAI); break;
 	}
 }

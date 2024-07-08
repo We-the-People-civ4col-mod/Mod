@@ -48,7 +48,7 @@ public:
 	bool canSignDefensivePact(TeamTypes eTeam);
 	int getAssets() const;
 	int getPower() const;
-	int getDefensivePower() const;
+	int getDefensivePower(TeamTypes eExcludeTeam = NO_TEAM) const;
 	int getEnemyPower() const;
 	int getAtWarCount() const;
 	int getWarPlanCount(WarPlanTypes eWarPlan) const;
@@ -65,7 +65,7 @@ public:
 
 	int countTotalCulture() const;
 
-	int countNumUnitsByArea(CvArea* pArea) const;
+	int countNumUnitsByArea(CvArea const& kArea) const;
 	int countNumCitiesByArea(CvArea const& kArea) const;
 	int countTotalPopulationByArea(CvArea* pArea) const;
 	int countPowerByArea(CvArea const& kArea) const;
