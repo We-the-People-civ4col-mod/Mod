@@ -355,12 +355,12 @@ void CvGame::AI_updateAssignWorkExternal() { reportCall;
 int CvGame::AI_combatValueExternal(UnitTypes eUnit) { reportCall;
 	return AI().AI_combatValue(eUnit);
 }
-
+#endif
 // CvSelectionGroup ...
 
-/*void CvSelectionGroup::AI_initExternal() {
+void CvSelectionGroup::AI_initExternal() {
 	AI().AI_init();
-}*/ // Not called; replaced w/ another virtual function.
+}
 void CvSelectionGroup::AI_resetExternal() { reportCall;
 	AI().AI_reset();
 }
@@ -370,20 +370,22 @@ void CvSelectionGroup::AI_separateExternal() { reportCall;
 bool CvSelectionGroup::AI_updateExternal() { reportCall;
 	return AI().AI_update();
 }
-int CvSelectionGroup::AI_attackOddsExternal(CvPlot* pPlot, bool bPotentialEnemy) { reportCall;
+int CvSelectionGroup::AI_attackOddsExternal(const CvPlot* pPlot, bool bPotentialEnemy) const { reportCall;
 	return AI().AI_attackOdds(pPlot, bPotentialEnemy);
 }
-CvUnit* CvSelectionGroup::AI_getBestGroupAttackerExternal(CvPlot* pPlot, bool bPotentialEnemy, int& iUnitOdds, bool bForce, bool bNoBlitz) { reportCall;
+
+CvUnit* CvSelectionGroup::AI_getBestGroupAttackerExternal(const CvPlot* pPlot, bool bPotentialEnemy, int& iUnitOdds, bool bForce, bool bNoBlitz) const { reportCall;
 	return AI().AI_getBestGroupAttacker(pPlot, bPotentialEnemy, iUnitOdds, bForce, bNoBlitz);
 }
-CvUnit* CvSelectionGroup::AI_getBestGroupSacrificeExternal(CvPlot* pPlot, bool bPotentialEnemy, bool bForce, bool bNoBlitz) { reportCall;
+CvUnit* CvSelectionGroup::AI_getBestGroupSacrificeExternal(const CvPlot* pPlot, bool bPotentialEnemy, bool bForce, bool bNoBlitz) const { reportCall;
 	return AI().AI_getBestGroupSacrifice(pPlot, bPotentialEnemy, bForce, bNoBlitz);
 }
 // (Not called:)
-int CvSelectionGroup::AI_compareStacksExternal(CvPlot* pPlot, bool bPotentialEnemy, bool bCheckCanAttack, bool bCheckCanMove) { reportCall;
+// WTP: Check this!
+int CvSelectionGroup::AI_compareStacksExternal(const CvPlot* pPlot, bool bPotentialEnemy, bool bCheckCanAttack, bool bCheckCanMove) const { reportCall;
 	return AI().AI_compareStacks(pPlot, bCheckCanAttack); // K-Mod has removed bPotentialEnemy and bCheckCanMove
 }
-int CvSelectionGroup::AI_sumStrengthExternal(CvPlot* pAttackedPlot, DomainTypes eDomainType, bool bCheckCanAttack, bool bCheckCanMove) { reportCall;
+int CvSelectionGroup::AI_sumStrengthExternal(const CvPlot* pAttackedPlot, DomainTypes eDomainType, bool bCheckCanAttack, bool bCheckCanMove) const { reportCall;
 	return AI().AI_sumStrength(pAttackedPlot, eDomainType, bCheckCanAttack); // K-Mod has removed bCheckCanMove
 }
 void CvSelectionGroup::AI_queueGroupAttackExternal(int iX, int iY) { reportCall;
@@ -398,7 +400,7 @@ bool CvSelectionGroup::AI_isGroupAttackExternal() { reportCall;
 bool CvSelectionGroup::AI_isControlledExternal() { reportCall;
 	return isAIControlled(); // (moved to CvSelectionGroup)
 }
-bool CvSelectionGroup::AI_isDeclareWarExternal(CvPlot* pPlot) { reportCall;
+bool CvSelectionGroup::AI_isDeclareWarExternal(const CvPlot* pPlot) { reportCall;
 	if (pPlot == NULL)
 		return false;
 	return AI().AI_isDeclareWar(*pPlot);
@@ -434,5 +436,3 @@ void CvSelectionGroup::AI_separateAIExternal(UnitAITypes eUnitAI) { reportCall;
 /*bool CvSelectionGroup::AI_isFullExternal() {
 	return AI().AI_isFull();
 }*/
-
-#endif

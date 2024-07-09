@@ -59,7 +59,7 @@ void CvSelectionGroup::init(int iID, PlayerTypes eOwner)
 
 	//--------------------------------
 	// Init other game data
-	AI_init();
+	AI().AI_init();
 }
 
 
@@ -86,7 +86,7 @@ void CvSelectionGroup::reset(int iID, PlayerTypes eOwner, bool bConstructorCall)
 
 	if (!bConstructorCall)
 	{
-		AI_reset();
+		AI().AI_reset();
 	}
 }
 
@@ -215,13 +215,13 @@ void CvSelectionGroup::doTurn()
 		//		or healing and automated or no longer hurt (automated healing is one turn at a time)
 		//		or on sentry and there is danger
 		if ((eActivityType == ACTIVITY_HOLD) ||
-			((eActivityType == ACTIVITY_HEAL) && (AI_isControlled() || !bHurt)) ||
+			((eActivityType == ACTIVITY_HEAL) && (isAIControlled() || !bHurt)) ||
 			((eActivityType == ACTIVITY_SENTRY) && (sentryAlert())))
 		{
 			setActivityType(ACTIVITY_AWAKE);
 		}
 
-		if (AI_isControlled())
+		if (isAIControlled())
 		{
 			if ((getActivityType() != ACTIVITY_MISSION) ||
 				(!canFight() && (GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 2) > 0)))
@@ -510,10 +510,10 @@ void CvSelectionGroup::pushMission(MissionTypes eMission, int iData1, int iData2
 		pHeadUnit->isCargo() ? "isCargo:true" : "isCargo:false");
 
 	if (canAllMove()) // K-Mod. Do not set the AI mission type if this is just a "follow" command!
-		AI_setMissionAI(eMissionAI, pMissionAIPlot, pMissionAIUnit);
+		AI().AI_setMissionAI(eMissionAI, pMissionAIPlot, pMissionAIUnit);
 
 	insertAtEndMissionQueue(mission, !bAppend ||
-		AI_isControlled()); // K-Mod (AI commands should execute immediately)
+		isAIControlled()); // K-Mod (AI commands should execute immediately)
 
 	if (bManual)
 	{
@@ -563,7 +563,7 @@ bool CvSelectionGroup::autoMissionInternal() // K-Mod changed this from void to 
 	//if (isHuman())
 	/*	K-Mod. (otherwise the automation will just reissue commands
 		immediately after they are cleared, resulting in an infinite loop.) */
-	if (!AI_isControlled())
+	if (!isAIControlled())
 	{
 		FOR_EACH_UNIT_IN(pUnit, *this)
 		{
@@ -839,7 +839,7 @@ void CvSelectionGroup::startMission()
 					/*headMissionQueueNode()->m_data.bModified*/)) // advc.111
 				{
 					bAction = true;
-					if (!AI_isControlled())
+					if (!isAIControlled())
 						aiHasPillaged.push_back(pUnit->getID());
 					// AI groups might want to reconsider their action after pillaging
 					if (!isHuman() && canAllMove())
@@ -865,7 +865,7 @@ void CvSelectionGroup::startMission()
 			/*	K-Mod. If the worker is already in danger when the command is issued,
 			use the MOVE_IGNORE_DANGER flag. */
 		case MISSION_BUILD:
-			if (!AI_isControlled() &&
+			if (!isAIControlled() &&
 				headMissionQueueNode()->m_data.iPushTurn == GC.getGame().getGameTurn() &&
 				// cf. condition used in CvSelectionGroup::doTurn.
 				kOwner.AI_isAnyPlotDanger(*plot(), 2, true))
@@ -910,7 +910,7 @@ void CvSelectionGroup::startMission()
 				case MISSIONAI_LOAD_SPECIAL:
 					goto exit_unit_loop; // don't auto-unload. Just do nothing.
 				default:
-					FAssert(AI_isControlled());
+					FAssert(isAIControlled());
 					pUnit->unload(); // this checks canUnload internally
 					break;
 				}
@@ -1137,7 +1137,7 @@ bool CvSelectionGroup::continueMission_bulk(int iSteps)
 						iLastGroupID = getID();
 					}
 					#endif
-					if (AI_isControlled())
+					if (isAIControlled())
 						pushMission(MISSION_SKIP);
 				}
 				// </advc.pf>
@@ -1447,7 +1447,7 @@ bool CvSelectionGroup::continueMission_bulk(int iSteps)
 			if (headMissionQueueNode() != NULL)
 				activateHeadMission();
 			// <advc.153>
-			else if (!AI_isControlled() &&
+			else if (!isAIControlled() &&
 				(missionData.eMissionType == MISSION_BUILD ||
 					// Too annoying?
 					//missionData.eMissionType == MISSION_MOVE_TO ||
@@ -2492,7 +2492,7 @@ bool CvSelectionGroup::groupDeclareWar(CvPlot* pPlot, bool bForce)
 	CvTeamAI& kTeam = GET_TEAM(getTeam());
 	TeamTypes ePlotTeam = pPlot->getTeam();
 
-	if (!AI_isDeclareWar(pPlot))
+	if (!AI().AI_isDeclareWar(*pPlot))
 	{
 		return false;
 	}
@@ -2567,7 +2567,7 @@ bool CvSelectionGroup::groupAttack(AssertCallerData assertData, int iX, int iY, 
 				// R&R, ray, Natives raiding party
 				int iAttackOdds;
 				//CvUnit* pBestAttackUnit = AI_getBestGroupAttacker(pDestPlot, true, iAttackOdds);
-				CvUnit* pBestAttackUnit = AI_getBestGroupAttacker(pDestPlot, true, iAttackOdds, bForceNoWar);
+				CvUnit* pBestAttackUnit = AI().AI_getBestGroupAttacker(pDestPlot, true, iAttackOdds, bForceNoWar);
 				// R&R, ray, Natives raiding party
 
 				if (pBestAttackUnit)
@@ -2606,7 +2606,7 @@ bool CvSelectionGroup::groupAttack(AssertCallerData assertData, int iX, int iY, 
 					{
 						// R&R, ray, Natives raiding party
 						//pBestAttackUnit = AI_getBestGroupAttacker(pDestPlot, false, iAttackOdds, false, bNoBlitz);
-						pBestAttackUnit = AI_getBestGroupAttacker(pDestPlot, false, iAttackOdds, bForceNoWar, bNoBlitz);
+						pBestAttackUnit = AI().AI_getBestGroupAttacker(pDestPlot, false, iAttackOdds, bForceNoWar, bNoBlitz);
 						// R&R, ray, Natives raiding party
 
 						if (pBestAttackUnit == NULL)
@@ -2618,7 +2618,7 @@ bool CvSelectionGroup::groupAttack(AssertCallerData assertData, int iX, int iY, 
 						{
 							// R&R, ray, Natives raiding party
 							//CvUnit * pBestSacrifice = AI_getBestGroupSacrifice(pDestPlot, false, false, bNoBlitz);
-							CvUnit * pBestSacrifice = AI_getBestGroupSacrifice(pDestPlot, false, bForceNoWar, bNoBlitz);
+							CvUnit * pBestSacrifice = AI().AI_getBestGroupSacrifice(pDestPlot, false, bForceNoWar, bNoBlitz);
 							// R&R, ray, Natives raiding party
 
 							if (pBestSacrifice != NULL)
@@ -2832,7 +2832,7 @@ bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 	FAssert(getNumUnits() == 0 || atPlot(pPathPlot)); // K-Mod
 
 	// K-Mod.
-	if (!AI_isControlled() && !bEndMove)
+	if (!isAIControlled() && !bEndMove)
 	{
 		//If the step we just took will make us change our path to something longer, then cancel the move.
 		// This prevents units from wasting all their moves by trying to walk around enemy units.
@@ -2860,7 +2860,7 @@ bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 // Returns true if move was made... --> WTP, jooe, 2023-04-17: really?
 bool CvSelectionGroup::groupRouteTo(int iX, int iY, int iFlags, RouteTypes ePreferredRoute)
 {
-	if (!AI_isControlled() || !at(iX, iY) || (getLengthMissionQueue() == 1))
+	if (!isAIControlled() || !at(iX, iY) || (getLengthMissionQueue() == 1))
 	{
 		CvPlot* const pPlot = plot();
 		BuildTypes eBestBuild = getBestBuildRouteBuild(pPlot, ePreferredRoute);
@@ -2896,7 +2896,7 @@ bool CvSelectionGroup::groupBuild(BuildTypes eBuild)
 	ImprovementTypes eImprovement = (ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement();
 	if (eImprovement != NO_IMPROVEMENT)
 	{
-		if (AI_isControlled())
+		if (isAIControlled())
 		{
 			if (GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION))
 			{
@@ -4131,7 +4131,7 @@ CvSelectionGroup* CvSelectionGroup::splitGroup(int iSplitSize, CvUnit* pNewHeadU
 	// Note: the force split can be overridden by the calling function if need be.
 	/* if (pRemainderGroup && pRemainderGroup->getHeadUnitAI() != eOldHeadAI)
 		pRemainderGroup->AI_setForceSeparate(); */
-	FAssert(!pRemainderGroup || pRemainderGroup->getHeadUnitAI() == eOldHeadAI || pRemainderGroup->AI_isForceSeparate()); // this should now be automatic, because of my other edits.
+	FAssert(!pRemainderGroup || pRemainderGroup->getHeadUnitAI() == eOldHeadAI || pRemainderGroup->AI().AI_isForceSeparate()); // this should now be automatic, because of my other edits.
 	// K-Mod end
 
 	if (ppOtherGroup != NULL)

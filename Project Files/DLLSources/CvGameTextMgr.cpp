@@ -1537,7 +1537,7 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 					}
 
 					// mission ai
-					MissionAITypes eMissionAI = pHeadGroup->AI_getMissionAIType();
+					MissionAITypes eMissionAI = pHeadGroup->AI().AI_getMissionAIType();
 					if (eMissionAI != NO_MISSIONAI)
 					{
 						getMissionAIString(szTempString, eMissionAI);
@@ -1553,7 +1553,7 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 					}
 
 					// mission unit
-					CvUnit* pMissionUnit = pHeadGroup->AI_getMissionAIUnit();
+					CvUnit* pMissionUnit = pHeadGroup->AI().AI_getMissionAIUnit();
 					if (pMissionUnit != NULL && (eMissionAI != NO_MISSIONAI || eMissionType != NO_MISSION))
 					{
 						// mission unit
@@ -1568,7 +1568,7 @@ void CvGameTextMgr::setPlotListHelp(CvWStringBuffer &szString, const CvPlot* pPl
 					if (eMissionAI != NO_MISSIONAI || eMissionType != NO_MISSION)
 					{
 						// first try the plot from the missionAI
-						CvPlot* pMissionPlot = pHeadGroup->AI_getMissionAIPlot();
+						CvPlot* pMissionPlot = pHeadGroup->AI().AI_getMissionAIPlot();
 
 						// if MissionAI does not have a plot, get one from the mission itself
 						if (pMissionPlot == NULL && eMissionType != NO_MISSION)
@@ -1977,11 +1977,11 @@ bool CvGameTextMgr::setCombatPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot)
 	}
 
 	int iOdds;
-	pAttacker = gDLL->getInterfaceIFace()->getSelectionList()->AI_getBestGroupAttacker(pPlot, false, iOdds);
+	pAttacker = gDLL->getInterfaceIFace()->getSelectionList()->AI().AI_getBestGroupAttacker(pPlot, false, iOdds);
 
 	if (pAttacker == NULL)
 	{
-		pAttacker = gDLL->getInterfaceIFace()->getSelectionList()->AI_getBestGroupAttacker(pPlot, false, iOdds, true);
+		pAttacker = gDLL->getInterfaceIFace()->getSelectionList()->AI().AI_getBestGroupAttacker(pPlot, false, iOdds, true);
 	}
 
 	if (pAttacker != NULL)
@@ -2447,7 +2447,7 @@ bool CvGameTextMgr::setCombatPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot)
 				szString.append(NEWLINE);
 				szString.append(gDLL->getText("TXT_KEY_COMBAT_PLOT_HP", pDefender->currHitPoints(), pDefender->maxHitPoints()));
 			}
-
+#if 0
 			if ((gDLL->getChtLvl() > 0))
 			{
 				szTempBuffer.Format(L"\nStack Compare Value = %d",
@@ -2463,7 +2463,7 @@ bool CvGameTextMgr::setCombatPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot)
 				szTempBuffer.Format(L"\nPlot Strength(Enemy)= d%d, o%d", iEnemyStrengthDefense, iEnemyStrengthOffense);
 				szString.append(szTempBuffer);
 			}
-
+#endif
 			szString.append(gDLL->getText("TXT_KEY_COLOR_REVERT"));
 
 			return true;

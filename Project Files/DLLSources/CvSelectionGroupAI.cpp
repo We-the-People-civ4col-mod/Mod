@@ -75,7 +75,7 @@ void CvSelectionGroupAI::AI_separate()
 	}
 }
 
-void CvSelectionGroupAI::AI_seperateNonAI(UnitAITypes eUnitAI)
+void CvSelectionGroupAI::AI_separateNonAI(UnitAITypes eUnitAI)
 {
 	CLLNode<IDInfo>* pEntityNode;
 	CvUnit* pLoopUnit;
@@ -97,7 +97,7 @@ void CvSelectionGroupAI::AI_seperateNonAI(UnitAITypes eUnitAI)
 	}
 }
 
-void CvSelectionGroupAI::AI_seperateAI(UnitAITypes eUnitAI)
+void CvSelectionGroupAI::AI_separateAI(UnitAITypes eUnitAI)
 {
 	CLLNode<IDInfo>* pEntityNode;
 	CvUnit* pLoopUnit;
@@ -588,42 +588,62 @@ CvUnitAI* CvSelectionGroupAI::AI_getBestGroupSacrifice(const CvPlot* pPlot, bool
 	return pBestUnit;
 }
 
-// Returns ratio of strengths of stacks times 100
-// (so 100 is even ratio, numbers over 100 mean this group is more powerful than the stack on a plot)
-int CvSelectionGroupAI::AI_compareStacks(const CvPlot* pPlot, bool bPotentialEnemy, bool bCheckCanAttack, bool bCheckCanMove) const
+/*	Returns ratio of strengths of stacks times 100
+	(so 100 is an even ratio, numbers over 100 mean that
+	this group is more powerful than the stack on a plot) */
+int CvSelectionGroupAI::AI_compareStacks(const CvPlot* pPlot, bool bCheckCanAttack,
+	bool bConstCache) const // advc.001n
 {
 	FAssert(pPlot != NULL);
 
-	int	compareRatio;
 	DomainTypes eDomainType = getDomainType();
-
-	// choose based on the plot, not the head unit (mainly for transport carried units)
+	/*	if not aircraft, then choose based on the plot,
+		not the head unit (mainly for transport carried units) */
 	if (pPlot->isWater())
 		eDomainType = DOMAIN_SEA;
-	else
-		eDomainType = DOMAIN_LAND;
+	else eDomainType = DOMAIN_LAND;
+	
+	int iCompareRatio = AI_sumStrength(pPlot, eDomainType, bCheckCanAttack);
+	iCompareRatio *= 100;
 
-	compareRatio = AI_sumStrength(pPlot, eDomainType, bCheckCanAttack, bCheckCanMove);
-	compareRatio *= 100;
-
-	PlayerTypes eOwner = getOwnerINLINE();
+	PlayerTypes eOwner = getOwner();
 	if (eOwner == NO_PLAYER)
-	{
 		eOwner = getHeadOwner();
-	}
+
 	FAssert(eOwner != NO_PLAYER);
 
-	int defenderSum = pPlot->AI_sumStrength(NO_PLAYER, getOwnerINLINE(), eDomainType, true, !bPotentialEnemy, bPotentialEnemy);
-	compareRatio /= std::max(1, defenderSum);
+	// K-Mod. Note. This function currently does not support bPotentialEnemy == false.
+	//FAssert(bPotentialEnemy);
+	int iDefenderSum = pPlot->isVisible(getHeadTeam()) ?
+		GET_PLAYER(eOwner).AI_localDefenceStrength(pPlot, NO_TEAM, eDomainType, 0,
+			true, false, bConstCache) : // advc.001n
+		GET_TEAM(getHeadTeam()).AI_strengthMemory().get(*pPlot);
+	// K-Mod end
+	iCompareRatio /= std::max(1, iDefenderSum);
 
-	return compareRatio;
+	/*	K-Mod. If there are more defenders than we have attacks,
+		but yet the ratio is still greater than 100,
+		then inflate the ratio futher to account for the fact that we
+		are going to do significantly more damage to them than they to us.
+		The purpose of this is to give the AI extra encouragement
+		to attack when its units are better than the defender's units. */
+		/*if (compareRatio > 100) {
+			FAssert(getHeadUnit() && getNumUnits() > 0);
+			int iDefenders = pPlot->getNumVisibleEnemyDefenders(getHeadUnit());
+			if (iDefenders > getNumUnits())
+				compareRatio += (compareRatio - 100) * (iDefenders - getNumUnits()) / getNumUnits();
+		}*/ // (currently disabled)
+		// K-Mod end
+
+	return iCompareRatio;
 }
+
 
 /*  K-Mod. I've removed bCheckMove, and changed bCheckCanAttack to include checks
 	for moves, and for hasAlreadyAttacked / blitz */
 	/*  advc.159: No longer simply a sum of combat strength values; see the comment
 		above CvPlayerAI::AI_localDefenceStrength. */
-int CvSelectionGroupAI::AI_sumStrengthInternal(const CvPlot* pAttackedPlot,
+int CvSelectionGroupAI::AI_sumStrength(const CvPlot* pAttackedPlot,
 	DomainTypes eDomainType, bool bCheckCanAttack) const
 {
 	FAssert(eDomainType != DOMAIN_IMMOBILE); // advc: Air combat strength isn't counted
@@ -676,11 +696,11 @@ int CvSelectionGroupAI::AI_sumStrengthInternal(const CvPlot* pAttackedPlot,
 			/*  <advc.159> Call AI_currEffectiveStr instead of currEffectiveStr.
 				Adjustments for first strikes and collateral damage moved into
 				that new function. */
-		/*
-		int const iUnitStr = pUnit->AI_currEffectiveStr(pAttackedPlot, pUnit,
-			bCountCollateral, iBaseCollateral, bCheckCanAttack);
-		*/
-		// WTP: No collateral damage support
+				/*
+				int const iUnitStr = pUnit->AI_currEffectiveStr(pAttackedPlot, pUnit,
+					bCountCollateral, iBaseCollateral, bCheckCanAttack);
+				*/
+				// WTP: No collateral damage support
 		int const iUnitStr = pUnit->AI_currEffectiveStr(pAttackedPlot, pUnit,
 			false, 0, bCheckCanAttack);
 		// </advc.159>
@@ -703,80 +723,73 @@ bool CvSelectionGroupAI::AI_isControlled() const
 	return (!isHuman() || isAutomated());
 }
 
-
-bool CvSelectionGroupAI::AI_isDeclareWarInternal(const CvPlot* pPlot) const
+bool CvSelectionGroupAI::AI_isDeclareWar(
+	CvPlot const& kPlot) const // advc: param no longer optional
 {
 	FAssert(getHeadUnit() != NULL);
 
 	if (isHuman())
-	{
 		return false;
-	}
-	else
+	
+	
+	bool bLimitedWar = false;
+	const TeamTypes ePlotTeam = kPlot.getTeam();
+	if (ePlotTeam != NO_TEAM)
 	{
-		bool bLimitedWar = false;
-		if (pPlot != NULL)
+		WarPlanTypes eWarplan = GET_TEAM(getTeam()).AI_getWarPlan(ePlotTeam);
+		if (eWarplan == WARPLAN_LIMITED)
 		{
-			TeamTypes ePlotTeam = pPlot->getTeam();
-			if (ePlotTeam != NO_TEAM)
-			{
-				WarPlanTypes eWarplan = GET_TEAM(getTeam()).AI_getWarPlan(ePlotTeam);
-				if (eWarplan == WARPLAN_LIMITED)
-				{
-					bLimitedWar = true;
-				}
-			}
+			bLimitedWar = true;
 		}
+	}
+	
+	CvUnit* const pHeadUnit = getHeadUnit();
+	if (pHeadUnit == NULL)
+		return false;
 
-		CvUnit* pHeadUnit = getHeadUnit();
+	switch (pHeadUnit->AI_getUnitAIType())
+	{
+	case UNITAI_UNKNOWN:
+	case UNITAI_ANIMAL: // R&R, ray, Wild Animals
+	case UNITAI_ANIMAL_SEA: // R&R, ray, Wild Animals
+	case UNITAI_FLEEING: // R&R, ray, Fleeing Units
+	case UNITAI_COLONIST:
+	case UNITAI_SETTLER:
+	case UNITAI_WORKER:
+	case UNITAI_MISSIONARY:
+	case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
+	case UNITAI_SCOUT:
+	case UNITAI_WAGON:
+	case UNITAI_TREASURE:
+	case UNITAI_YIELD:
+	case UNITAI_GENERAL:
+		return false;
+		break;
 
-		if (pHeadUnit != NULL)
-		{
-			switch (pHeadUnit->AI_getUnitAIType())
-			{
-			case UNITAI_UNKNOWN:
-			case UNITAI_ANIMAL: // R&R, ray, Wild Animals
-			case UNITAI_ANIMAL_SEA: // R&R, ray, Wild Animals
-			case UNITAI_FLEEING: // R&R, ray, Fleeing Units
-			case UNITAI_COLONIST:
-			case UNITAI_SETTLER:
-			case UNITAI_WORKER:
-			case UNITAI_MISSIONARY:
-			case UNITAI_TRADER: // WTP, ray, Native Trade Posts - START
-			case UNITAI_SCOUT:
-			case UNITAI_WAGON:
-			case UNITAI_TREASURE:
-			case UNITAI_YIELD:
-			case UNITAI_GENERAL:
-				return false;
-				break;
+	case UNITAI_DEFENSIVE:
+	case UNITAI_OFFENSIVE: // TODO AdvCiv has return bLimitedWar here;
+	case UNITAI_COUNTER:
+	case UNITAI_ATTACK_CITY:
+		return true;
+		break;
+		//TAC Whaling, ray
+	case UNITAI_WORKER_SEA:
+		//End TAC Whaling, ray
+	case UNITAI_TRANSPORT_SEA:
+	case UNITAI_TRANSPORT_COAST:
+		return false;
+		break;
 
-			case UNITAI_DEFENSIVE:
-			case UNITAI_OFFENSIVE:
-			case UNITAI_COUNTER:
-			case UNITAI_ATTACK_CITY:
-				return true;
-				break;
-			//TAC Whaling, ray
-			case UNITAI_WORKER_SEA:
-			//End TAC Whaling, ray
-			case UNITAI_TRANSPORT_SEA:
-			case UNITAI_TRANSPORT_COAST:
-				return false;
-				break;
+	case UNITAI_ASSAULT_SEA:
+	case UNITAI_COMBAT_SEA:
+	case UNITAI_PIRATE_SEA:
+	case UNITAI_ESCORT_SEA:			// TAC - AI Escort Sea - koma13
+		return true;
+		break;
 
-			case UNITAI_ASSAULT_SEA:
-			case UNITAI_COMBAT_SEA:
-			case UNITAI_PIRATE_SEA:
-			case UNITAI_ESCORT_SEA:			// TAC - AI Escort Sea - koma13
-				return true;
-				break;
-
-			default:
-				FAssert(false);
-				break;
-			}
-		}
+	default:
+		FAssert(false);
+		break;
 	}
 
 	return false;

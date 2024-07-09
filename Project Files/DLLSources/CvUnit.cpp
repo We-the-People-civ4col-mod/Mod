@@ -3230,7 +3230,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 
 	// Prevent the AI from moving through storms and sustaining damage
 	// Strictly speaking this should preferably be handled by either the path cost or a separate PF flag
-	if (getGroup()->AI_isControlled() && (eFeature != NO_FEATURE) &&  GC.getFeatureInfo(eFeature).getTurnDamage() > 0)
+	if (getGroup()->isAIControlled() && (eFeature != NO_FEATURE) &&  GC.getFeatureInfo(eFeature).getTurnDamage() > 0)
 	{
 		return false;
 	}
@@ -3676,7 +3676,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 		{
 			if (GET_TEAM(getTeam()).AI_isSneakAttackReady(ePlotTeam))
 			{
-				if (!(getGroup()->AI_isDeclareWar(&kPlot)))
+				if (!(getGroup()->AI().AI_isDeclareWar(kPlot)))
 				{
 					return false;
 				}
@@ -5616,7 +5616,7 @@ void CvUnit::learn()
 	}
 	// WTP, ray, Game Option only 1 Colonist living in Village - END
 
-	if (isHuman() && !getGroup()->AI_isControlled() && !GET_PLAYER(eNativePlayer).isHuman())
+	if (isHuman() && !getGroup()->isAIControlled() && !GET_PLAYER(eNativePlayer).isHuman())
 	{
 		UnitTypes eUnitType = getLearnUnitType(plot());
 		FAssert(eUnitType != NO_UNIT);
@@ -13965,7 +13965,7 @@ bool CvUnit::potentialWarAction(const CvPlot* pPlot) const
 		return true;
 	}
 
-	if (getGroup()->AI_isDeclareWar(pPlot) && GET_TEAM(eUnitTeam).AI_getWarPlan(ePlotTeam) != NO_WARPLAN)
+	if (getGroup()->AI().AI_isDeclareWar(*pPlot) && GET_TEAM(eUnitTeam).AI_getWarPlan(ePlotTeam) != NO_WARPLAN)
 	{
 		return true;
 	}
@@ -14820,7 +14820,7 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 			if (!isHuman())
 			{
 				// Erik: Unconditionally separate all units (all units will be re-assigned to a group with the unit as its single member)
-				getGroup()->AI_separate();
+				getGroup()->AI().AI_separate();
 			}
 			else
 			{

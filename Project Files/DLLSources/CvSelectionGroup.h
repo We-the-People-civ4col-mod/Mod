@@ -19,6 +19,11 @@ class CvSelectionGroup
 
 public:
 
+	// <advc.003u>
+	/*	Was bool CvSelectionGroupAI::AI_isControlled. Makes at least as much sense
+		at the base class, and non-virtual will be faster (frequently called). */
+	bool isAIControlled() const { return (!isHuman() || isAutomated()); }
+
 	__forceinline CvSelectionGroupAI& AI() { return (CvSelectionGroupAI&)*this; }
 	__forceinline const CvSelectionGroupAI& AI() const { return (CvSelectionGroupAI&)*this; }
 
@@ -241,6 +246,7 @@ public:
 	int movesLeft() const; // K-Mod
 
 	int groupCycleDistance(CvSelectionGroup const& kOther) const; // </advc>
+	bool hasShipInPort() const;
 
 	// for serialization
 	virtual void read(FDataStreamBase* pStream);
@@ -251,38 +257,38 @@ public:
 
 	void resetSavedData(int iID, PlayerTypes eOwner);
 
-	virtual void AI_init() = 0;
-	virtual void AI_reset() = 0;
-	virtual void AI_separate() = 0;
+	//virtual void AI_separateEmptyTransports() = 0;	// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
 
-	virtual void AI_separateEmptyTransports() = 0;	// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
-	bool hasShipInPort() const;
+	// CvVirtualWrappers contains the implementations of these and will delegate the calls to the appropriate non-internal
+	// virutal function. Adopted from AdvCiv
+	virtual void AI_initExternal() = 0;
+	virtual void AI_resetExternal() = 0;
+	virtual void AI_separateExternal() = 0;
+	virtual bool AI_updateExternal() = 0;
+	virtual int AI_attackOddsExternal(const CvPlot* pPlot, bool bPotentialEnemy) const = 0;
+	virtual CvUnit* AI_getBestGroupAttackerExternal(const CvPlot* pPlot, bool bPotentialEnemy, int& iUnitOdds, bool bForce = false, bool bNoBlitz = false) const = 0;
+	virtual CvUnit* AI_getBestGroupSacrificeExternal(const CvPlot* pPlot, bool bPotentialEnemy, bool bForce = false, bool bNoBlitz = false) const = 0;
+	virtual int AI_compareStacksExternal(const CvPlot* pPlot, bool bPotentialEnemy, bool bCheckCanAttack = false, bool bCheckCanMove = false) const = 0;
+	virtual int AI_sumStrengthExternal(const CvPlot* pAttackedPlot = NULL, DomainTypes eDomainType = NO_DOMAIN, bool bCheckCanAttack = false, bool bCheckCanMove = false) const = 0;
+	virtual void AI_queueGroupAttackExternal(int iX, int iY) = 0;
+	virtual void AI_cancelGroupAttackExternal() = 0;
+	virtual bool AI_isGroupAttackExternal() = 0;
 
-	virtual bool AI_update() = 0;
-	virtual int AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy) const = 0;
-	virtual CvUnit* AI_getBestGroupAttacker(const CvPlot* pPlot, bool bPotentialEnemy, int& iUnitOdds, bool bForce = false, bool bNoBlitz = false) const = 0;
-	virtual CvUnit* AI_getBestGroupSacrifice(const CvPlot* pPlot, bool bPotentialEnemy, bool bForce = false, bool bNoBlitz = false) const = 0;
-	virtual int AI_compareStacks(const CvPlot* pPlot, bool bPotentialEnemy, bool bCheckCanAttack = false, bool bCheckCanMove = false) const = 0;
-	virtual int AI_sumStrength(const CvPlot* pAttackedPlot = NULL, DomainTypes eDomainType = NO_DOMAIN, bool bCheckCanAttack = false, bool bCheckCanMove = false) const = 0;
-	virtual void AI_queueGroupAttack(int iX, int iY) = 0;
-	virtual void AI_cancelGroupAttack() = 0;
-	virtual bool AI_isGroupAttack() = 0;
-
-	virtual bool AI_isControlled() = 0;
-	virtual bool AI_isDeclareWar(const CvPlot* pPlot = NULL) = 0;
-	virtual CvPlot* AI_getMissionAIPlot() = 0;
-	virtual bool AI_isForceSeparate() = 0;
-	virtual void AI_makeForceSeparate() = 0;
-	virtual MissionAITypes AI_getMissionAIType() = 0;
-	virtual void AI_setMissionAI(MissionAITypes eNewMissionAI, CvPlot* pNewPlot, CvUnit* pNewUnit) = 0;
-	virtual CvUnit* AI_getMissionAIUnit() = 0;
-	virtual CvUnit* AI_ejectBestDefender(CvPlot* pTargetPlot) = 0;
-	virtual void AI_seperateNonAI(UnitAITypes eUnitAI) = 0;
-	virtual void AI_seperateAI(UnitAITypes eUnitAI) = 0;
+	virtual bool AI_isControlledExternal() = 0;
+	virtual bool AI_isDeclareWarExternal(const CvPlot* pPlot = NULL) = 0;
+	virtual CvPlot* AI_getMissionAIPlotExternal() = 0;
+	virtual bool AI_isForceSeparateExternal() = 0;
+	virtual void AI_makeForceSeparateExternal() = 0;
+	virtual MissionAITypes AI_getMissionAITypeExternal() = 0;
+	virtual void AI_setMissionAIExternal(MissionAITypes eNewMissionAI, CvPlot* pNewPlot, CvUnit* pNewUnit) = 0;
+	virtual CvUnit* AI_getMissionAIUnitExternal() = 0;
+	virtual CvUnit* AI_ejectBestDefenderExternal(CvPlot* pTargetPlot) = 0;
+	virtual void AI_separateNonAIExternal(UnitAITypes eUnitAI) = 0;
+	virtual void AI_separateAIExternal(UnitAITypes eUnitAI) = 0;
 	virtual bool AI_isFull() = 0;
+	// The below functions are not present in BTS and are likely COL specific
 	virtual bool AI_launchAssault(CvPlot* pTargetCityPlot) = 0;
 	virtual void AI_groupBombard() = 0;
-
 	virtual bool AI_tradeRoutes() = 0;
 
 protected:

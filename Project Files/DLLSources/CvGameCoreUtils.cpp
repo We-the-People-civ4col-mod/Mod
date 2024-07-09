@@ -1041,7 +1041,7 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 	if (pSelectionGroup->getDomainType() == DOMAIN_IMMOBILE)
 		return FALSE;
 
-	bool const bAIControl = pSelectionGroup->AI_isControlled();
+	bool const bAIControl = pSelectionGroup->isAIControlled();
 
 	if (bAIControl)
 	{	/*  BETTER_BTS_AI_MOD, Efficiency, 11/04/09, jdog5000: START
@@ -1168,7 +1168,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 		}
 		// Since WTP does not have UNITAI_EXPLORE_SEA like in BTS, let units with the fog busting
 		// flag be treated as explorers
-		else if (pSelectionGroup->AI_isControlled() && (iFlags & MOVE_BUST_FOG))
+		else if (pSelectionGroup->isAIControlled() && (iFlags & MOVE_BUST_FOG))
 		{
 			iExploreModifier = 2; // lower cost to encourage exploring unrevealed areas
 		}
@@ -1291,7 +1291,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 	// So let the AI prefer diagonal movement.
 	// However, diagonal zig-zags will probably seem unnatural and weird to humans who are just trying to move in a straight line.
 	// So let the pathfinding for human groups prefer cardinal movement.
-	bool const bAIControl = pSelectionGroup->AI_isControlled();
+	bool const bAIControl = pSelectionGroup->isAIControlled();
 	if (bAIControl)
 	{
 		if (kFromPlot.getX() == kToPlot.getX() || kFromPlot.getY() == kToPlot.getY())
@@ -1562,7 +1562,7 @@ int pathValid_source(FAStarNode* parent, CvSelectionGroup* pSelectionGroup, int 
 		atWar(kFromPlot.getTeam(), pSelectionGroup->getHeadTeam()))
 		return FALSE;
 
-	bool const bAIControl = pSelectionGroup->AI_isControlled();
+	bool const bAIControl = pSelectionGroup->isAIControlled();
 
 	if (bAIControl)
 	{

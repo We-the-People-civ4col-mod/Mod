@@ -5278,8 +5278,8 @@ int CvCityAI::AI_getTransitYield(YieldTypes eYield) const
 				CvUnit* pTransport = pLoopUnit->getTransportUnit();
 				if (pTransport != NULL)
 				{
-					CvPlot* pMissionPlot = pTransport->getGroup()->AI_getMissionAIPlot();
-					MissionAITypes eMissionAI = pTransport->getGroup()->AI_getMissionAIType();
+					CvPlot* pMissionPlot = pTransport->getGroup()->AI().AI_getMissionAIPlot();
+					MissionAITypes eMissionAI = pTransport->getGroup()->AI().AI_getMissionAIType();
 					if ((eMissionAI == MISSIONAI_TRANSPORT) || (eMissionAI == MISSIONAI_TRANSPORT_SEA))
 					{
 						if (pMissionPlot == plot())

@@ -22,8 +22,8 @@ public:
 	void AI_reset();
 
 	void AI_separate();
-	void AI_seperateNonAI(UnitAITypes eUnitAI);
-	void AI_seperateAI(UnitAITypes eUnitAI);
+	void AI_separateNonAI(UnitAITypes eUnitAI);
+	void AI_separateAI(UnitAITypes eUnitAI);
 
 	void AI_separateEmptyTransports();		// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
 
@@ -34,13 +34,10 @@ public:
 	// advc.003u: These two had returned CvUnit*
 	CvUnitAI* AI_getBestGroupAttacker(const CvPlot* pPlot, bool bPotentialEnemy, int& iUnitOdds, bool bForce = false, bool bNoBlitz = false) const;
 	CvUnitAI* AI_getBestGroupSacrifice(const CvPlot* pPlot, bool bPotentialEnemy, bool bForce = false, bool bNoBlitz = false) const;
-	int AI_compareStacks(const CvPlot* pPlot, bool bPotentialEnemy, bool bCheckCanAttack = false, bool bCheckCanMove = false) const;
-	int AI_sumStrength(const CvPlot* pAttackedPlot = NULL, DomainTypes eDomainType = NO_DOMAIN, bool bCheckCanAttack = false, bool bCheckCanMove = false) const
-	{
-		return AI_sumStrengthInternal(pAttackedPlot, eDomainType, bCheckCanAttack); // K-Mod has removed bCheckCanMove
-	}
-	
-	int AI_sumStrengthInternal(const CvPlot* pAttackedPlot = NULL, DomainTypes eDomainType = NO_DOMAIN,
+	// K-Mod has removed bCheckCanMove param from these two and bPotentialEnemy from AI_compareStacks
+	int AI_compareStacks(const CvPlot* pPlot, bool bCheckCanAttack = false,
+		bool bConstCache = false) const; // advc.001n
+	int AI_sumStrength(const CvPlot* pAttackedPlot = NULL, DomainTypes eDomainType = NO_DOMAIN,
 		bool bCheckCanAttack = false) const;
 
 	void AI_queueGroupAttack(int iX, int iY);
@@ -49,8 +46,7 @@ public:
 	bool AI_isGroupAttackInternal() const { return m_bGroupAttack; } // K-Mod (made inline)
 
 	bool AI_isControlled() const;
-	bool AI_isDeclareWar(const CvPlot* pPlot = NULL) { return AI_isDeclareWarInternal(pPlot); }
-	bool AI_isDeclareWarInternal(const CvPlot* pPlot = NULL) const;
+	bool AI_isDeclareWar(CvPlot const& kPlot) const;
 
 	CvPlot* AI_getMissionAIPlot() { return AI_getMissionAIPlotInternal(); }
 	bool AI_isForceSeparate() { return AI_isForceSeparateInternal(); }

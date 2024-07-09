@@ -753,13 +753,13 @@ void CvPlayerAI::AI_unitUpdate()
 			pLoopSelectionGroup = getSelectionGroup(pCurrUnitNode->m_data);
 			pCurrUnitNode = nextGroupCycleNode(pCurrUnitNode);
 
-			if (pLoopSelectionGroup->AI_isForceSeparate())
+			if (pLoopSelectionGroup->AI().AI_isForceSeparate())
 			{
 				if (pLoopSelectionGroup->isForceUpdate() || 
 					// do not split groups that are in the midst of attacking
-					!pLoopSelectionGroup->AI_isGroupAttack())
+					!pLoopSelectionGroup->AI().AI_isGroupAttack())
 				{
-					pLoopSelectionGroup->AI_separate();	// pointers could become invalid...
+					pLoopSelectionGroup->AI().AI_separate();	// pointers could become invalid...
 				}
 			}
 		}
@@ -5413,7 +5413,7 @@ int CvPlayerAI::AI_totalMissionAIs(MissionAITypes eMissionAI, CvSelectionGroup* 
 	{
 		if (pLoopSelectionGroup != pSkipSelectionGroup)
 		{
-			if (pLoopSelectionGroup->AI_getMissionAIType() == eMissionAI)
+			if (pLoopSelectionGroup->AI().AI_getMissionAIType() == eMissionAI)
 			{
 				// TAC - AI City Defense - koma13 - START
 				//iCount += pLoopSelectionGroup->getNumUnits();
@@ -5444,9 +5444,9 @@ int CvPlayerAI::AI_areaMissionAIs(const CvArea& kArea, MissionAITypes eMissionAI
 	{
 		if (pLoopSelectionGroup != pSkipSelectionGroup)
 		{
-			if (pLoopSelectionGroup->AI_getMissionAIType() == eMissionAI)
+			if (pLoopSelectionGroup->AI().AI_getMissionAIType() == eMissionAI)
 			{
-				pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlot();
+				pMissionPlot = pLoopSelectionGroup->AI().AI_getMissionAIPlot();
 
 				if (pMissionPlot != NULL)
 				{
@@ -5478,9 +5478,9 @@ int CvPlayerAI::AI_adjacantToAreaMissionAIs(CvArea* pArea, MissionAITypes eMissi
 	{
 		if (pLoopSelectionGroup != pSkipSelectionGroup)
 		{
-			if (pLoopSelectionGroup->AI_getMissionAIType() == eMissionAI)
+			if (pLoopSelectionGroup->AI().AI_getMissionAIType() == eMissionAI)
 			{
-				pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlot();
+				pMissionPlot = pLoopSelectionGroup->AI().AI_getMissionAIPlot();
 
 				if (pMissionPlot != NULL)
 				{
@@ -5529,11 +5529,11 @@ int CvPlayerAI::AI_plotTargetMissionAIs(const CvPlot* pPlot, MissionAITypes* aeM
 	{
 		if ((pSkipSelectionGroup == NULL) || ((pLoopSelectionGroup != pSkipSelectionGroup) && (pLoopSelectionGroup != pTransportSelectionGroup)))
 		{
-			CvPlot* pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlot();
+			CvPlot* pMissionPlot = pLoopSelectionGroup->AI().AI_getMissionAIPlot();
 
 			if (pMissionPlot != NULL)
 			{
-				MissionAITypes eGroupMissionAI = pLoopSelectionGroup->AI_getMissionAIType();
+				MissionAITypes eGroupMissionAI = pLoopSelectionGroup->AI().AI_getMissionAIType();
 				int iDistance = stepDistance(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pMissionPlot->getX_INLINE(), pMissionPlot->getY_INLINE());
 
 				if (iDistance <= iRange)
@@ -5574,7 +5574,7 @@ int CvPlayerAI::AI_cargoSpaceToEurope(CvSelectionGroup* pSkipSelectionGroup)
 
 			if ((pHeadUnit != NULL) && (pHeadUnit->AI_getUnitAIType() == UNITAI_TRANSPORT_SEA))
 			{
-				MissionAITypes eMissionAI = pLoopSelectionGroup->AI_getMissionAIType();
+				MissionAITypes eMissionAI = pLoopSelectionGroup->AI().AI_getMissionAIType();
 
 				if ((eMissionAI == MISSIONAI_SAIL_TO_EUROPE) || (eMissionAI == MISSIONAI_SAIL_TO_AFRICA) || ((pHeadUnit->AI_getUnitAIState() == UNITAI_STATE_SAIL) && (eMissionAI != MISSIONAI_PICKUP)))
 				{
@@ -5601,7 +5601,7 @@ int CvPlayerAI::AI_cityTargetUnitsByPath(CvCity* pCity, CvSelectionGroup* pSkipS
 	{
 		if (pLoopSelectionGroup != pSkipSelectionGroup && pLoopSelectionGroup->plot() != NULL && pLoopSelectionGroup->getNumUnits() > 0)
 		{
-			CvPlot* pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlot();
+			CvPlot* pMissionPlot = pLoopSelectionGroup->AI().AI_getMissionAIPlot();
 
 			if (pMissionPlot != NULL )
 			{
@@ -5717,9 +5717,9 @@ int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMission
 	{
 		if (pLoopSelectionGroup != pSkipSelectionGroup)
 		{
-			if (pLoopSelectionGroup->AI_getMissionAIUnit() == pUnit)
+			if (pLoopSelectionGroup->AI().AI_getMissionAIUnit() == pUnit)
 			{
-				MissionAITypes eGroupMissionAI = pLoopSelectionGroup->AI_getMissionAIType();
+				MissionAITypes eGroupMissionAI = pLoopSelectionGroup->AI().AI_getMissionAIType();
 				int iPathTurns = MAX_INT;
 
 				if( iMaxPathTurns >= 0 && (pUnit->plot() != NULL) && (pLoopSelectionGroup->plot() != NULL))
@@ -5829,10 +5829,10 @@ int CvPlayerAI::AI_wakePlotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissi
 	{
 		if ((pSkipSelectionGroup == NULL) || ((pLoopSelectionGroup != pSkipSelectionGroup) && (pLoopSelectionGroup != pTransportSelectionGroup)))
 		{
-			MissionAITypes eGroupMissionAI = pLoopSelectionGroup->AI_getMissionAIType();
+			MissionAITypes eGroupMissionAI = pLoopSelectionGroup->AI().AI_getMissionAIType();
 			if (eMissionAI == NO_MISSIONAI || eMissionAI == eGroupMissionAI)
 			{
-				CvPlot* pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlot();
+				CvPlot* pMissionPlot = pLoopSelectionGroup->AI().AI_getMissionAIPlot();
 				if (pMissionPlot != NULL && pMissionPlot == pPlot)
 				{
 					iCount += pLoopSelectionGroup->getNumUnits();
@@ -17492,7 +17492,7 @@ int CvPlayerAI::AI_enemyTargetMissions(TeamTypes eTargetTeam,
 			pMissionPlot->getTeam() == eTargetTeam)
 		{
 			if (::atWar(getTeam(), pMissionPlot->getTeam()) ||
-				pLoopSelectionGroup->AI_isDeclareWarInternal(pMissionPlot))
+				pLoopSelectionGroup->AI_isDeclareWar(*pMissionPlot))
 			{
 				iCount += pLoopSelectionGroup->getNumUnits();
 				iCount += pLoopSelectionGroup->getCargo();

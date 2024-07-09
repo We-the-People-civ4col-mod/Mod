@@ -446,7 +446,7 @@ bool CvUnitAI::AI_europeUpdate()
 	}
 
 	//if (!(getGroup()->isAutomated() && (getGroup()->getAutomateType() != AUTOMATE_FULL)))
-	if (getGroup()->AI_isControlled())
+	if (getGroup()->isAIControlled())
 	{
 		if (isHurt() && (healRate(plot()) > 0))
 		{
@@ -954,8 +954,8 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 	// but this function is also used to give action recommendations for the player
 	// - and for that I do not want to disrupt the standard pathfinder. (because I'm paranoid about OOS bugs.)
 	KmodPathFinder alt_finder;
-	KmodPathFinder& pathFinder = getGroup()->AI_isControlled() ? CvSelectionGroup::path_finder : alt_finder;
-	if (getGroup()->AI_isControlled())
+	KmodPathFinder& pathFinder = getGroup()->isAIControlled() ? CvSelectionGroup::path_finder : alt_finder;
+	if (getGroup()->isAIControlled())
 	{
 		// standard settings. cf. CvUnit::generatePath
 		pathFinder.SetSettings(getGroup(), 0);
@@ -1517,7 +1517,7 @@ void CvUnitAI::AI_colonistMove()
 		}
 
 		// Skip our turn If the transport is already on a mission 
-		if (getTransportUnit()->getGroup()->AI_getMissionAIType() != NO_MISSIONAI)
+		if (getTransportUnit()->getGroup()->AI().AI_getMissionAIType() != NO_MISSIONAI)
 			getGroup()->pushMission(MISSION_SKIP);
 		if (AI_joinOptimalCity())
 			return;
@@ -1608,7 +1608,7 @@ void CvUnitAI::AI_settlerMove()
 	if (isCargo())
 	{
 		// Skip our turn If the transport is already on a mission 
-		if (getTransportUnit()->getGroup()->AI_getMissionAIType() != NO_MISSIONAI)
+		if (getTransportUnit()->getGroup()->AI().AI_getMissionAIType() != NO_MISSIONAI)
 			getGroup()->pushMission(MISSION_SKIP);
 
 		if (AI_settlerSeaTransport(iMinFoundValue))
@@ -1763,7 +1763,7 @@ void CvUnitAI::AI_workerMove()
 	if (isCargo())
 	{
 		// Skip our turn If the transport is already on a mission 
-		if (getTransportUnit()->getGroup()->AI_getMissionAIType() != NO_MISSIONAI)
+		if (getTransportUnit()->getGroup()->AI().AI_getMissionAIType() != NO_MISSIONAI)
 			getGroup()->pushMission(MISSION_SKIP);
 
 		if (AI_unloadWhereNeeded())
@@ -1918,7 +1918,7 @@ void CvUnitAI::AI_missionaryMove()
 	if (isCargo())
 	{
 		// Skip our turn If the transport is already on a mission 
-		if (getTransportUnit()->getGroup()->AI_getMissionAIType() != NO_MISSIONAI)
+		if (getTransportUnit()->getGroup()->AI().AI_getMissionAIType() != NO_MISSIONAI)
 			getGroup()->pushMission(MISSION_SKIP);
 
 		if (AI_unloadWhereNeeded())
@@ -2031,7 +2031,7 @@ void CvUnitAI::AI_nativeTraderMove()
 	if (isCargo())
 	{
 		// Skip our turn If the transport is already on a mission 
-		if (getTransportUnit()->getGroup()->AI_getMissionAIType() != NO_MISSIONAI)
+		if (getTransportUnit()->getGroup()->AI().AI_getMissionAIType() != NO_MISSIONAI)
 			getGroup()->pushMission(MISSION_SKIP);
 
 		if (AI_unloadWhereNeeded())
@@ -2540,7 +2540,7 @@ void CvUnitAI::AI_counterMove()
 		}
 	}
 
-	CvPlot* pMissionPlot = getGroup()->AI_getMissionAIPlot();
+	CvPlot* pMissionPlot = getGroup()->AI().AI_getMissionAIPlot();
 
 	if (bDanger)
 	{
@@ -3287,7 +3287,7 @@ void CvUnitAI::AI_imperialShipMove()
 		return;
 	}
 
-	if (getGroup()->AI_getMissionAIType() == MISSIONAI_EXPLORE)
+	if (getGroup()->AI().AI_getMissionAIType() == MISSIONAI_EXPLORE)
     {
     	if (AI_anyAttack(1, 1))
     	{
@@ -4504,7 +4504,7 @@ void CvUnitAI::AI_assaultSeaMove()
 							{
 								if( getGroup()->countNumUnitAIType(UNITAI_ESCORT_SEA) > 1 && getGroup()->countNumUnitAIType(UNITAI_COMBAT_SEA) > 0 )
 								{
-									getGroup()->AI_seperateAI(UNITAI_COMBAT_SEA);
+									getGroup()->AI().AI_separateAI(UNITAI_COMBAT_SEA);
 									iEscorts = getGroup()->countNumUnitAIType(UNITAI_ESCORT_SEA);
 								}
 							}
@@ -4554,7 +4554,7 @@ void CvUnitAI::AI_assaultSeaMove()
 
 			if ((iCargo >= iTargetReinforcementSize))
 			{
-				getGroup()->AI_separateEmptyTransports();
+				getGroup()->AI().AI_separateEmptyTransports();
 
 				if( !(getGroup()->hasCargo()) )
 				{
@@ -4602,12 +4602,12 @@ void CvUnitAI::AI_assaultSeaMove()
 			if( iEscorts > 3 && iEscorts > (2*getGroup()->countNumUnitAIType(UNITAI_ASSAULT_SEA)) )
 			{
 				// If we have too many escorts, try freeing some for others
-				getGroup()->AI_seperateAI(UNITAI_COMBAT_SEA);
+				getGroup()->AI().AI_separateAI(UNITAI_COMBAT_SEA);
 
 				iEscorts = getGroup()->countNumUnitAIType(UNITAI_ESCORT_SEA);
 				if( iEscorts > 3 && iEscorts > (2*getGroup()->countNumUnitAIType(UNITAI_ASSAULT_SEA)) )
 				{
-					getGroup()->AI_seperateAI(UNITAI_ESCORT_SEA);
+					getGroup()->AI().AI_separateAI(UNITAI_ESCORT_SEA);
 				}
 			}
 		}
@@ -4657,7 +4657,7 @@ void CvUnitAI::AI_assaultSeaMove()
 					if( pCity->plot()->plotCount(PUF_isAvailableUnitAITypeGroupie, UNITAI_OFFENSIVE, -1, getOwnerINLINE()) < iTargetReinforcementSize )
 					{
 						// Not attacking, no cargo so release any escorts, attack ships, etc and split transports
-						getGroup()->AI_makeForceSeparate();
+						AI().getGroup()->AI().AI_makeForceSeparate();
 					}
 				}
 			}
@@ -4714,7 +4714,7 @@ void CvUnitAI::AI_assaultSeaMove()
 								CvSelectionGroup* pOldGroup = getGroup();
 
 								//Release any Warships to finish the job.
-								getGroup()->AI_seperateAI(UNITAI_COMBAT_SEA);
+								getGroup()->AI().AI_separateAI(UNITAI_COMBAT_SEA);
 
 								// Fixed bug in next line with checking unit type instead of unit AI
 								if (pOldGroup == getGroup() && AI_getUnitAIType() == UNITAI_ASSAULT_SEA)
@@ -4791,7 +4791,7 @@ void CvUnitAI::AI_assaultSeaMove()
 		{
 			if( bIsCity )
 			{
-				getGroup()->AI_separateEmptyTransports();
+				getGroup()->AI().AI_separateEmptyTransports();
 			}
 
 			if( !(getGroup()->hasCargo()) )
@@ -4836,7 +4836,7 @@ void CvUnitAI::AI_assaultSeaMove()
 		{
 			bAttackNatives = true;
 
-			getGroup()->AI_separateEmptyTransports();
+			getGroup()->AI().AI_separateEmptyTransports();
 
 			if( !(getGroup()->hasCargo()) )
 			{
@@ -6560,9 +6560,9 @@ bool CvUnitAI::AI_deliverUnits(UnitAITypes eUnitAI)
 				CvPlot* pDestination = NULL;
 				CvPlot* pMissionPlot = NULL;
 
-				if (pLoopUnit->getGroup()->AI_getMissionAIType() != NO_MISSIONAI)
+				if (pLoopUnit->getGroup()->AI().AI_getMissionAIType() != NO_MISSIONAI)
 				{
-					CvPlot* pDestination = pLoopUnit->getGroup()->AI_getMissionAIPlot();
+					CvPlot* pDestination = pLoopUnit->getGroup()->AI().AI_getMissionAIPlot();
 					FAssert(!pDestination->isWater());
 
 					if ((pDestination != NULL) && (pDestination != plot())) //Don't humor foolishness x[.
@@ -6581,7 +6581,7 @@ bool CvUnitAI::AI_deliverUnits(UnitAITypes eUnitAI)
 
 								pBestPlot = (getGroup()->getPathEndTurnPlot() == pDestination) ? pBestDestination : getGroup()->getPathEndTurnPlot();	// TAC - AI Improved Naval AI - koma13
 								ai = pLoopUnit->getGroup()->getHeadUnit()->AI_getUnitAIType(); // Assert debugging
-								eMissionAI = pLoopUnit->getGroup()->AI_getMissionAIType();
+								eMissionAI = pLoopUnit->getGroup()->AI().AI_getMissionAIType();
 							}
 						}
 					}
@@ -6788,7 +6788,7 @@ bool CvUnitAI::AI_loadUnits(UnitAITypes eUnitAI, MissionAITypes eMissionAI)
 		{
 			if ((eUnitAI == NO_UNITAI) || (pLoopUnit->AI_getUnitAIType() == eUnitAI))
 			{
-				if ((eMissionAI == NO_MISSIONAI) || (pLoopUnit->getGroup()->AI_getMissionAIType() == eMissionAI))
+				if ((eMissionAI == NO_MISSIONAI) || (pLoopUnit->getGroup()->AI().AI_getMissionAIType() == eMissionAI))
 				{
 					if (pLoopUnit->canLoadUnit(this, plot(), true))
 					{
@@ -7688,7 +7688,7 @@ bool CvUnitAI::AI_unloadWhereNeeded(int iMaxPath)
 	// TAC - AI Assault Sea - koma13 - START
 	if (pTransportUnit->AI_getUnitAIType() == UNITAI_ASSAULT_SEA)
 	{
-		if (pTransportUnit->getGroup()->AI_getMissionAIType() == MISSIONAI_ASSAULT)
+		if (pTransportUnit->getGroup()->AI().AI_getMissionAIType() == MISSIONAI_ASSAULT)
 		{
 			return false;
 		}
@@ -8885,9 +8885,9 @@ bool CvUnitAI::AI_requestPickup(int iMaxPath)
 	//Are we ready to load?
 	CvPlayerAI& kOwner= GET_PLAYER(getOwnerINLINE());
 
-	if (getGroup()->AI_getMissionAIType() == MISSIONAI_AWAIT_PICKUP)
+	if (getGroup()->AI().AI_getMissionAIType() == MISSIONAI_AWAIT_PICKUP)
 	{
-		CvPlot* pMissionPlot =  getGroup()->AI_getMissionAIPlot();
+		CvPlot* pMissionPlot =  getGroup()->AI().AI_getMissionAIPlot();
 		FAssert(pMissionPlot != NULL);
 
 		if (kOwner.AI_plotTargetMissionAIs(pMissionPlot, MISSIONAI_PICKUP, NULL, 1) > 0)
@@ -8979,7 +8979,7 @@ bool CvUnitAI::AI_respondToPickup(int iMaxPath, UnitAITypes eUnitAI)
 	{
 		if (pLoopSelectionGroup->getNumUnits() > 0)
 		{
-			if (pLoopSelectionGroup->AI_getMissionAIType() == MISSIONAI_AWAIT_PICKUP)
+			if (pLoopSelectionGroup->AI().AI_getMissionAIType() == MISSIONAI_AWAIT_PICKUP)
 			{
 				if ((eUnitAI == NO_UNITAI) || (pLoopSelectionGroup->getHeadUnit()->AI_getUnitAIType() == eUnitAI))
 				{
@@ -8987,7 +8987,7 @@ bool CvUnitAI::AI_respondToPickup(int iMaxPath, UnitAITypes eUnitAI)
 					CvUnit* pHeadUnit = pLoopSelectionGroup->getHeadUnit();
 					FAssert(pHeadUnit != NULL);
 
-					CvPlot* pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlot();
+					CvPlot* pMissionPlot = pLoopSelectionGroup->AI().AI_getMissionAIPlot();
 					if (pMissionPlot != NULL)
 					{
 						if ((stepDistance(pMissionPlot->getX_INLINE(), pMissionPlot->getY_INLINE(), getX_INLINE(), getY_INLINE()) / std::max(1, baseMoves())) <= iMaxPathTurns)
@@ -9139,7 +9139,7 @@ bool CvUnitAI::AI_pickupAdjacantUnits()
 				{
 					CvUnit* pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
 
-					if (pLoopUnit != NULL && pLoopUnit->getGroup()->AI_getMissionAIType() == MISSIONAI_AWAIT_PICKUP && pLoopUnit->canLoadUnit(this, plot(), false))
+					if (pLoopUnit != NULL && pLoopUnit->getGroup()->AI().AI_getMissionAIType() == MISSIONAI_AWAIT_PICKUP && pLoopUnit->canLoadUnit(this, plot(), false))
 					{
 						units.push_back(pLoopUnit);
 					}
@@ -9174,8 +9174,8 @@ bool CvUnitAI::AI_pickupAdjacantUnits()
 
 bool CvUnitAI::AI_continueMission(int iAbortDistance, MissionAITypes eValidMissionAI, int iFlags, bool bStepwise)
 {
-	CvPlot* pMissionPlot = getGroup()->AI_getMissionAIPlot();
-	MissionAITypes eMissionAI = getGroup()->AI_getMissionAIType();
+	CvPlot* pMissionPlot = getGroup()->AI().AI_getMissionAIPlot();
+	MissionAITypes eMissionAI = getGroup()->AI().AI_getMissionAIType();
 	if (pMissionPlot == NULL || eMissionAI == NO_MISSIONAI)
 	{
 		return false;
@@ -9467,7 +9467,7 @@ bool CvUnitAI::AI_group(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitAI, i
 											{
 												if( !bInCityOnly || pLoopUnit->plot()->isCity() )
 												{
-													if( (eIgnoreMissionAIType == NO_MISSIONAI) || (eIgnoreMissionAIType != pLoopUnit->getGroup()->AI_getMissionAIType()) )
+													if( (eIgnoreMissionAIType == NO_MISSIONAI) || (eIgnoreMissionAIType != pLoopUnit->getGroup()->AI().AI_getMissionAIType()) )
 													{
 														if (!(pPlot->isVisibleEnemyUnit(this)))
 														{
@@ -9759,8 +9759,8 @@ bool CvUnitAI::AI_load(UnitAITypes eUnitAI, MissionAITypes eMissionAI,
 				}
 			}
 			// K-Mod - just for efficiency, I'll take care of the force separate stuff here.
-			if (pRemainderGroup && pRemainderGroup->AI_isForceSeparate())
-				pRemainderGroup->AI_separate();
+			if (pRemainderGroup && pRemainderGroup->AI().AI_isForceSeparate())
+				pRemainderGroup->AI().AI_separate();
 			// K-Mod end
 
 			return true;
@@ -9800,8 +9800,8 @@ bool CvUnitAI::AI_load(UnitAITypes eUnitAI, MissionAITypes eMissionAI,
 					return bMoved;
 					*/ // K-Mod. (that block is obsolete)
 					// K-Mod - just for efficiency, I'll take care of the force separate stuff here.
-					if (pRemainderGroup && pRemainderGroup->AI_isForceSeparate())
-						pRemainderGroup->AI_separate();
+					if (pRemainderGroup && pRemainderGroup->AI().AI_isForceSeparate())
+						pRemainderGroup->AI().AI_separate();
 					// K-Mod end
 					return true;
 				}
@@ -13379,7 +13379,7 @@ bool CvUnitAI::AI_pillageAroundCity(CvCity* pTargetCity, int iBonusValueThreshol
 	PROFILE_FUNC();
 	// K-Mod
 	if (!isEnemy(pTargetCity->getTeam()) &&
-		!AI_getGroup()->AI_isDeclareWar(pTargetCity->plot()))
+		!AI_getGroup()->AI_isDeclareWar(*pTargetCity->plot()))
 	{
 		return false;
 	} // K-Mod end
@@ -13442,7 +13442,7 @@ bool CvUnitAI::AI_pillageAroundCity(CvCity* pTargetCity, int iBonusValueThreshol
 			return false;
 		}*/ // BtS - disabled by K-Mod. (also see new code at top.)
 		// K-Mod
-		FAssert(AI_getGroup()->AI_isDeclareWar(/* advc: */ pBestPillagePlot));
+		FAssert(AI_getGroup()->AI_isDeclareWar(/* advc: */ *pBestPillagePlot));
 		if (AI_considerPathDOW(pBestPlot, eFlags))
 		{	// <advc.163>
 			if (!canMove())
@@ -13770,7 +13770,7 @@ bool CvUnitAI::AI_smartAttack(int iRange, int iLowOddsThreshold, int iHighOddsTh
 						if (!atPlot(pLoopPlot) && (generatePath(pLoopPlot, 0, true, &iPathTurns) && (iPathTurns <= iRange)))
 						{
 							{
-								iValue = getGroup()->AI_attackOdds(pLoopPlot, true);
+								iValue = getGroup()->AI().AI_attackOdds(pLoopPlot, true);
 
 								if (iValue >= iLowOddsThreshold)
 								{
@@ -14456,7 +14456,7 @@ bool CvUnitAI::AI_wanderAroundAimlessly()
 {
 	//I dedicate this function to all seekers of anything in life.
 
-	CvPlot* pMissionPlot = getGroup()->AI_getMissionAIPlot();
+	CvPlot* pMissionPlot = getGroup()->AI().AI_getMissionAIPlot();
 
 	CvMap& kMap = GC.getMap();
 	while ((pMissionPlot == NULL) || atPlot(pMissionPlot))
@@ -15561,9 +15561,9 @@ bool CvUnitAI::AI_assaultSeaTransport(bool bNative)
 		{
 			if( pLoopGroup != getGroup() )
 			{
-				if( pLoopGroup->AI_getMissionAIType() == MISSIONAI_GROUP && pLoopGroup->getHeadUnitAI() == AI_getUnitAIType() )
+				if( pLoopGroup->AI().AI_getMissionAIType() == MISSIONAI_GROUP && pLoopGroup->AI().getHeadUnitAI() == AI_getUnitAIType() )
 				{
-					CvUnit* pMissionUnit = pLoopGroup->AI_getMissionAIUnit();
+					CvUnit* pMissionUnit = pLoopGroup->AI().AI_getMissionAIUnit();
 
 					if( pMissionUnit != NULL && pMissionUnit->getGroup() == getGroup() )
 					{
@@ -15710,9 +15710,9 @@ bool CvUnitAI::AI_assaultSeaReinforce(bool bNative)
 		{
 			if (pLoopSelectionGroup != getGroup())
 			{
-				if (pLoopSelectionGroup->AI_getMissionAIType() == MISSIONAI_ASSAULT)
+				if (pLoopSelectionGroup->AI().AI_getMissionAIType() == MISSIONAI_ASSAULT)
 				{
-					CvPlot* pLoopPlot = pLoopSelectionGroup->AI_getMissionAIPlot();
+					CvPlot* pLoopPlot = pLoopSelectionGroup->AI().AI_getMissionAIPlot();
 
 					if( pLoopPlot != NULL )
 					{
@@ -15891,9 +15891,9 @@ bool CvUnitAI::AI_assaultSeaReinforce(bool bNative)
 		{
 			if( pLoopGroup != getGroup() )
 			{
-				if( pLoopGroup->AI_getMissionAIType() == MISSIONAI_GROUP && pLoopGroup->getHeadUnitAI() == AI_getUnitAIType() )
+				if( pLoopGroup->AI().AI_getMissionAIType() == MISSIONAI_GROUP && pLoopGroup->AI().getHeadUnitAI() == AI_getUnitAIType() )
 				{
-					CvUnit* pMissionUnit = pLoopGroup->AI_getMissionAIUnit();
+					CvUnit* pMissionUnit = pLoopGroup->AI().AI_getMissionAIUnit();
 
 					if( pMissionUnit != NULL && pMissionUnit->getGroup() == getGroup() )
 					{
@@ -17152,7 +17152,7 @@ bool CvUnitAI::AI_retreatFromDanger()
 	int iMovesLeft = movesLeft() / GLOBAL_DEFINE_MOVE_DENOMINATOR;
 	int iDX, iDY;
 
-	MissionAITypes eMissionAI = getGroup()->AI_getMissionAIType();
+	MissionAITypes eMissionAI = getGroup()->AI().AI_getMissionAIType();
 
 	for (iDX = -(iMovesLeft); iDX <= iMovesLeft; iDX++)
 	{
@@ -17731,7 +17731,7 @@ bool CvUnitAI::AI_followBombard()
 // Returns true if the unit has found a potential enemy...
 bool CvUnitAI::AI_potentialEnemy(TeamTypes eTeam, const CvPlot* pPlot)
 {
-	if (getGroup()->AI_isDeclareWar(pPlot))
+	if (getGroup()->AI().AI_isDeclareWar(*pPlot))
 	{
 		return isPotentialEnemy(eTeam, pPlot);
 	}
@@ -18539,7 +18539,7 @@ bool CvUnitAI::AI_allowGroup(const CvUnit* pUnit, UnitAITypes eUnitAI) const
 		return false;
 	}
 
-	switch (pGroup->AI_getMissionAIType())
+	switch (pGroup->AI().AI_getMissionAIType())
 	{
 	case MISSIONAI_GUARD_CITY:
 		// do not join groups that are guarding cities
@@ -18591,7 +18591,7 @@ bool CvUnitAI::AI_allowGroup(const CvUnit* pUnit, UnitAITypes eUnitAI) const
 
 	if (plot()->getOwnerINLINE() == getOwnerINLINE())
 	{
-		CvPlot* pTargetPlot = pGroup->AI_getMissionAIPlot();
+		CvPlot* pTargetPlot = pGroup->AI().AI_getMissionAIPlot();
 
 		if (pTargetPlot != NULL)
 		{
@@ -18619,7 +18619,7 @@ bool CvUnitAI::AI_allowGroup(const CvUnit* pUnit, UnitAITypes eUnitAI) const
 
 bool CvUnitAI::AI_isOnMission()
 {
-	CvPlot* pMissionPlot = getGroup()->AI_getMissionAIPlot();
+	CvPlot* pMissionPlot = getGroup()->AI().AI_getMissionAIPlot();
 	if (pMissionPlot != NULL)
 	{
 		if (!atPlot(pMissionPlot))
@@ -19079,7 +19079,7 @@ bool CvUnitAI::AI_mayAttack(TeamTypes eTeam, CvPlot const& kPlot) const
 
 	if (isEnemy(eTeam, &kPlot))
 		return true;
-	if (AI_getGroup()->AI_isDeclareWarInternal(&kPlot))
+	if (AI_getGroup()->AI().AI_isDeclareWar(kPlot))
 	{
 		return GET_TEAM(getTeam()).AI_mayAttack(eTeam); // advc
 	}
@@ -19264,7 +19264,7 @@ bool CvUnitAI::AI_stackVsStack(int iSearchRange, int iAttackThreshold, int iRisk
 	CvPlayerAI const& kOwner = GET_PLAYER(getOwner());
 
 	//int iOurDefence = kOwner.AI_localDefenceStrength(plot(), getTeam());
-	int const iOurDefence = AI_getGroup()->AI_sumStrengthInternal(NULL); // not counting defensive bonuses
+	int const iOurDefence = AI_getGroup()->AI().AI_sumStrength(NULL); // not counting defensive bonuses
 
 	CvPlot* pBestPlot = NULL;
 	int iBestValue = 0;
@@ -19339,7 +19339,7 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 	CvPlayerAI const& kOwner = GET_PLAYER(getOwner());
 	/*	<advc.057> Except for assault groups, the head unit should have the
 		most restrictive impassable types. */
-	int const iOurGroupFirstVal = AI_groupFirstValInternal();
+	int const iOurGroupFirstVal = AI().AI_groupFirstVal();
 	
 	uint uiOurMaxImpassables = kOwner.AI_unitImpassables(getUnitType());
 	if (AI_getUnitAIType() == UNITAI_ASSAULT_SEA)
@@ -19548,7 +19548,7 @@ void CvUnitAI::AI_attackCityMove()
 			getPlot().getOwner() == getOwner())
 		{
 			CvSelectionGroupAI* pOldGroup = AI_getGroup();
-			pOldGroup->AI_seperateNonAI(UNITAI_ATTACK_CITY);
+			pOldGroup->AI_separateNonAI(UNITAI_ATTACK_CITY);
 			if (pOldGroup != getGroup())
 				return;
 		}
@@ -21663,7 +21663,7 @@ void CvUnitAI::AI_handleEmbarkedMilitary()
 	FAssertMsg(AI_isCargoOnCivilianTransport(), "Military unit not on expected vessel type!");
 
 	// Skip our turn If the transport is already on a mission 
-	if (getTransportUnit()->getGroup()->AI_getMissionAIType() != NO_MISSIONAI)
+	if (getTransportUnit()->getGroup()->AI().AI_getMissionAIType() != NO_MISSIONAI)
 	{
 		getGroup()->pushMission(MISSION_SKIP);
 		return;
