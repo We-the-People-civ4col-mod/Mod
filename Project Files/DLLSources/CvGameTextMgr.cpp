@@ -2637,12 +2637,14 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 		}
 
 		{
+			/*
 			szTempBuffer.Format(L"\nStack Str: land=%d(%d), sea=%d(%d)",
 				pPlot->AI_sumStrength(NO_PLAYER, NO_PLAYER, DOMAIN_LAND, false, false, false),
 				pPlot->AI_sumStrength(NO_PLAYER, NO_PLAYER, DOMAIN_LAND, true, false, false),
 				pPlot->AI_sumStrength(NO_PLAYER, NO_PLAYER, DOMAIN_SEA, false, false, false),
 				pPlot->AI_sumStrength(NO_PLAYER, NO_PLAYER, DOMAIN_SEA, true, false, false));
 			szString.append(szTempBuffer);
+			*/
 		}
 	}
 	else if (!bShift && bAlt && (gDLL->getChtLvl() > 0))

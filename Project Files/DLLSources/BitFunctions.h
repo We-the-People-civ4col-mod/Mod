@@ -1,5 +1,8 @@
 #pragma once
 
+#ifndef BITFUNCTIONS_H
+#define BITFUNCTIONS_H
+
 // variableless versions assuming the argument to be 0
 // useful for enums
 #define SETBIT(x) (1 << (x))
@@ -60,3 +63,40 @@ static inline T SetBits(T &x, const int iIndex, const int iNumBits, const T iVal
 	x |= (iValue & ((1 << iNumBits) - 1)) << iIndex;
 	return x;
 }
+
+// advc.enum (not from WtP): Macro for (somewhat) type-safe bitmasks
+#define OVERLOAD_BITWISE_OPERATORS(EnumType) \
+	inline EnumType operator|(EnumType eLeft, EnumType eRight) \
+	{ \
+		int iLeft = eLeft, iRight = eRight; \
+		return static_cast<EnumType>(iLeft | iRight); \
+	} \
+	inline EnumType operator|=(EnumType& eLeft, EnumType eRight) \
+	{ \
+		return eLeft = (eLeft | eRight); \
+	} \
+	inline EnumType operator&(EnumType eLeft, EnumType eRight) \
+	{ \
+		int iLeft = eLeft, iRight = eRight; \
+		return static_cast<EnumType>(iLeft & iRight); \
+	} \
+	inline EnumType operator&=(EnumType& eLeft, EnumType eRight) \
+	{ \
+		return eLeft = (eLeft & eRight); \
+	} \
+	inline EnumType operator^(EnumType eLeft, EnumType eRight) \
+	{ \
+		int iLeft = eLeft, iRight = eRight; \
+		return static_cast<EnumType>(iLeft ^ iRight); \
+	} \
+	inline EnumType operator^=(EnumType& eLeft, EnumType eRight) \
+	{ \
+		return eLeft = (eLeft ^ eRight); \
+	} \
+	inline EnumType operator~(EnumType e) \
+	{ \
+		int i = e; \
+		return static_cast<EnumType>(~i); \
+	}
+
+#endif

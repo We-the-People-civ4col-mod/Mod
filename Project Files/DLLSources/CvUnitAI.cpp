@@ -629,7 +629,7 @@ bool CvUnitAI::AI_follow(bool bFirst)
 		}
 	}
 
-	if (isEnemy(plot()->getTeam()))
+	if (isEnemy(*plot()))
 	{
 		if (canPillage(plot()))
 		{
@@ -637,14 +637,6 @@ bool CvUnitAI::AI_follow(bool bFirst)
 			return true;
 		}
 	}
-
-	// TODO: BUG ?
-	/*
-	if (AI_anyAttack(1, 70, 2, true))
-	{
-		return true;
-	}
-	*/
 
 	if (canFound(NULL))
 	{
@@ -1609,7 +1601,8 @@ void CvUnitAI::AI_settlerMove()
 {
 	PROFILE_FUNC();
 
-	bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getUnitDanger(this, 2, false, false);
+	CvPlayerAI const& kOwner = GET_PLAYER(getOwner()); // K-Mod
+	const bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getUnitDanger(this, 2, false, false);
 	int iMinFoundValue = (GC.getGame().getGameTurn() > 20) ? 1 : 2;
 
 	if (isCargo())
@@ -1632,11 +1625,7 @@ void CvUnitAI::AI_settlerMove()
 		getGroup()->pushMission(MISSION_SKIP);
 		return;
 	}
-	else
-	{
-
-	}
-
+	
 	if (isNative())
 	{
 		if (AI_foundRange(7))
@@ -1654,7 +1643,7 @@ void CvUnitAI::AI_settlerMove()
 		}
 	}
 
-	if (!isCargo() && (GET_PLAYER(getOwnerINLINE()).getNumCities() == 0) && (plot()->getNearestEurope() != NO_EUROPE))
+	if ((GET_PLAYER(getOwnerINLINE()).getNumCities() == 0) && (plot()->getNearestEurope() != NO_EUROPE))
 	{
 		if (canFound(plot()))
 		{
@@ -1663,29 +1652,24 @@ void CvUnitAI::AI_settlerMove()
 		}
 	}
 
+	//bool const bDanger = kOwner.AI_isAnyPlotDanger(getPlot()); // advc.opt
+	// K-Mod
 	if (bDanger)
 	{
-		// Don't be so eager to join
-		/*
-		if (canJoinCity(plot()))
-		{
-			joinCity();
-			return;
-		}
-		*/
-
-		if (AI_retreatToCity(false, MAX_INT))
-		{
-			return;
+		if (!getGroup()->canDefend() ||
+			100 * kOwner.AI_localAttackStrength(plot()) >
+			80 * AI_getGroup()->AI_sumStrength(0))
+			// K-Mod end
+		{	// flee
+			joinGroup(NULL);
+			if (AI_retreatToCity())
+				return;
 		}
 	}
 
-	if (!isCargo())
+	if (AI_found(iMinFoundValue))
 	{
-		if (AI_found(iMinFoundValue))
-		{
-			return;
-		}
+		return;
 	}
 
 	// K-Mod: sometimes an unescorted settler will join up with an escort mid-mission..
@@ -3982,7 +3966,9 @@ void CvUnitAI::AI_transportSeaMove()
 	}
 	// TAC - AI Improved Naval AI - koma13 - END
 
-	if (AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
+	CvCity* pCity = plot()->getPlotCity();
+
+	if (pCity != NULL && AI_goodyRange(baseMoves(), /*bIgnoreCity*/true))
 	{
 		return;
 	}
@@ -3997,8 +3983,7 @@ void CvUnitAI::AI_transportSeaMove()
 		}
 	}
 
-	CvCity* pCity = NULL;
-	if (plot()->getPlotCity() != NULL)
+	if (pCity != NULL)
 	{
 		if (AI_tradeWithCity())
 		{
@@ -11329,7 +11314,8 @@ bool CvUnitAI::AI_goodyRange(int iRange, bool bIgnoreCity)
 
 								iValue /= 3 + std::max(1, iPathTurns);
 
-								if (iValue > iBestValue)
+								// Only consider goodies that we can reach this turn!
+								if (iValue > iBestValue && getPathFinder().GetPathTurns() == 1)
 								{
 									iBestValue = iValue;
 									pBestPlot = getPathEndTurnPlot();

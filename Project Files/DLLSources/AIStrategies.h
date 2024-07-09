@@ -3,6 +3,8 @@
 #ifndef AI_STRATEGIES_H // advc: Renamed this file from AI_Defines.h
 #define AI_STRATEGIES_H
 
+#include "BitFunctions.h"
+
 // BETTER_BTS_AI_MOD, 03/08/10, jdog5000: START
 // Could increase this value now that player closeness is fixed
 #define DEFAULT_PLAYER_CLOSENESS 7
@@ -22,19 +24,19 @@ enum AIStrategy // advc.enum: To avoid mixup with victory strategies (was #defin
 	AI_STRATEGY_LAST_STAND			=	(1 << 6),
 	AI_STRATEGY_FINAL_WAR			=	(1 << 7),
 // Military strategies based on analysis of trainable units
-	AI_STRATEGY_GET_BETTER_UNITS	=	(1 << 8),
+	//AI_STRATEGY_GET_BETTER_UNITS	=	(1 << 8),
 	AI_STRATEGY_FASTMOVERS          =	(1 << 9),
 	AI_STRATEGY_LAND_BLITZ			=	(1 << 10),
-	AI_STRATEGY_AIR_BLITZ			=	(1 << 11),
-	AI_STRATEGY_OWABWNW				=	(1 << 12),	// "Our words are backed with nuclear weapons"
+	//AI_STRATEGY_AIR_BLITZ			=	(1 << 11),
+	//AI_STRATEGY_OWABWNW				=	(1 << 12),	// "Our words are backed with nuclear weapons"
 // Domestic strategies
 	AI_STRATEGY_PRODUCTION          =	(1 << 13),
-	AI_STRATEGY_MISSIONARY          =	(1 << 14),
-	AI_STRATEGY_BIG_ESPIONAGE		=	(1 << 15),
+	//AI_STRATEGY_MISSIONARY          =	(1 << 14),
+	//AI_STRATEGY_BIG_ESPIONAGE		=	(1 << 15),
 	// K-Mod - catch up in tech, at the expense of military
 	AI_STRATEGY_ECONOMY_FOCUS       =	(1 << 16),
 	// K-Mod - run high espionage slider to steal techs at a discount.
-	AI_STRATEGY_ESPIONAGE_ECONOMY   =	(1 << 17),
+	//AI_STRATEGY_ESPIONAGE_ECONOMY   =	(1 << 17),
 };
 
 // AI victory stages
@@ -85,8 +87,19 @@ enum AIVictoryStage // advc: replacing preprocessor defines
 };
 // <advc.enum>
 OVERLOAD_BITWISE_OPERATORS(AICityRole)*/
-//OVERLOAD_BITWISE_OPERATORS(AIStrategy)
+OVERLOAD_BITWISE_OPERATORS(AIStrategy)
 //OVERLOAD_BITWISE_OPERATORS(AIVictoryStage)
 // </advc.enum>
+
+// TODO: Find a better place for these
+enum FlavorTypes
+{
+	NO_FLAVOR = -1,
+	FLAVOR_MILITARY,
+	FLAVOR_PRODUCTION,
+	FLAVOR_GOLD,
+	FLAVOR_BELLS,
+	FLAVOR_GROWTH,
+};
 
 #endif // AI_DEFINES_H

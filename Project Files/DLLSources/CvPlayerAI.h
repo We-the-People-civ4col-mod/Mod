@@ -604,6 +604,11 @@ public:
 
 	bool AI_isFocusWar(CvArea const* pArea = NULL) const; // advc.105
 	int AI_adjacentPotentialAttackers(CvPlot const& kPlot, bool bTestCanMove = false) const;
+	void AI_initStrategyRand(); // K-Mod
+	int AI_getStrategyRand(int iShift) const;
+	// </advc.003u>
+	int AI_getFlavorValue(FlavorTypes eFlavor) const;
+	bool AI_feelsSafe() const; // advc.109
 
 protected:
 
@@ -724,7 +729,10 @@ protected:
 	bool AI_canHurryDockUnit() const;
 
 	int m_iCityTargetTimer; // K-Mod
-
+	AIStrategy m_eStrategyHash;
+	// BBAI variables (adjusted for K-Mod)
+	unsigned m_iStrategyRand;
+	AIVictoryStage m_eVictoryStageHash;
 	
 	friend class CvGameTextMgr;
 };

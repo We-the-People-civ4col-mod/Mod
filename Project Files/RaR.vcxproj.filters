@@ -514,6 +514,9 @@
     <ClCompile Include="DLLSources\AIStrengthMemoryMap.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\CvVirtualWrappers.cpp">
+      <Filter>AdvCiv</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -990,6 +993,8 @@
     <ClInclude Include="DLLSources\AIStrengthMemoryMap.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\AIStrategies.h" />
+    <ClInclude Include="DLLSources\ArithmeticUtils.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">
@@ -1113,6 +1118,9 @@
     </Filter>
     <Filter Include="Classes\Threads">
       <UniqueIdentifier>{377a1ef5-15db-4ee1-a141-c494df09db44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AdvCiv">
+      <UniqueIdentifier>{9187eeef-637d-4cbe-828e-a5db1096d98d}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

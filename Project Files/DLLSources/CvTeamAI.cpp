@@ -663,6 +663,17 @@ int CvTeamAI::AI_calculateCapitalProximity(TeamTypes eTeam) const
 	return 0;
 }
 
+bool CvTeamAI::AI_isWarPossible() const
+{
+	if (getNumWars() > 0)
+		return true;
+	/*  advc (comment): The option applies only to humans but still implies that
+		all the non-human civs will have a (human) war enemy. */
+	if (GC.getGame().isOption(GAMEOPTION_ALWAYS_WAR))
+		return true;
+	return (!GC.getGame().isOption(GAMEOPTION_ALWAYS_PEACE) &&
+		!GC.getGame().isOption(GAMEOPTION_NO_CHANGING_WAR_PEACE));
+}
 
 bool CvTeamAI::AI_isLandTarget(TeamTypes eTeam) const
 {
