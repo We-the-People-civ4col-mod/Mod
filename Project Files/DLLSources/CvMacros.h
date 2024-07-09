@@ -262,8 +262,7 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
                             continue; \
                         else
 
-
-
+// Declares implicitly kOurTeam from eOurTeam. 
 #define FOR_EACH_MAJOR_CIV_ALIVE_AND_KNOWN_POTENTIAL_ENEMY_OF_TEAM(eOurTeam, kOtherTeam) \
     for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam) \
         for (bool _continue_outer = true; _continue_outer;) \
@@ -274,5 +273,19 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
                         || !(kOtherTeam).isAlive() || !(kOtherTeam).AI_isColonialOrBarbarianPower()) \
                             continue; \
                         else
+
+#define FOR_EACH_MAJOR_CIV_THAT_IS_ENEMY_OF_TEAM(eTeam, kOtherTeam) \
+    for (TeamTypes eTeamIter = FIRST_TEAM; eTeamIter < NUM_TEAM_TYPES; ++eTeamIter) \
+        for (bool _continue_outer = true; _continue_outer;) \
+            for (const CvTeamAI& kOtherTeam = GET_TEAM(eTeamIter); _continue_outer; _continue_outer = false) \
+                for (bool _continue_inner = true; _continue_inner;) \
+                    for (const CvTeamAI& kTeam = GET_TEAM(eTeam); _continue_inner; _continue_inner = false) \
+                        if ((kTeam).getID() == (kOtherTeam).getID() || !(kOtherTeam).isHasMet((kTeam).getID()) \
+                        || !(kOtherTeam).isAlive() || !(kOtherTeam).AI_isColonialPower() \
+                        || !(kTeam).isAtWar((kOtherTeam).getID())) \
+                            continue; \
+                        else
+
+
 
 #endif

@@ -93,6 +93,7 @@
     <ClCompile Include="DLLSources\CvTeamSavegame.cpp" />
     <ClCompile Include="DLLSources\CvTradeRouteGroupSavegame.cpp" />
     <ClCompile Include="DLLSources\CvTradeRouteSavegame.cpp" />
+    <ClCompile Include="DLLSources\CvVirtualWrappers.cpp" />
     <ClCompile Include="DLLSources\CyData.cpp" />
     <ClCompile Include="DLLSources\CyDataInterface.cpp" />
     <ClCompile Include="DLLSources\CyInfos.cpp" />

@@ -2776,7 +2776,6 @@ int CvPlot::AI_sumStrength(PlayerTypes eOwner, PlayerTypes eAttackingPlayer, Dom
 	return strSum;
 }
 
-
 CvUnit* CvPlot::getSelectedUnit() const
 {
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
