@@ -147,7 +147,8 @@ public:
 		bool bIgnoreLoad = false,
 		bool bAssumeVisible = true, // K-Mod
 		bool bDangerCheck = false) const; // advc.001k
-	bool canMoveOrAttackInto(const CvPlot* pPlot, bool bDeclareWar = false) const;
+	bool canMoveOrAttackInto(const CvPlot* pPlot, bool bDeclareWar = false,
+		bool bDangerCheck = false) const; // advc.001k) const;
 	//bool canMoveThrough(const CvPlot* pPlot) const; // disabled by K-Mod
 	void attack(CvPlot* pPlot, bool bQuick);
 	void move(CvPlot* pPlot, bool bShow);
@@ -749,7 +750,6 @@ public:
 	int getYieldStored() const;
 	YieldTypes getYield() const;
 	bool isGoods() const;
-	bool hasAnyUnitInCargo() const;
 	bool isYield() const;
 
 	void changeBadCityDefenderCount(int iChange);
@@ -879,6 +879,9 @@ public:
 	// (advc: isPotentialEnemy moved to CvUnitAI)
 	// <advc>
 	bool isEnemyCity(CvPlot const& kPlot) const;											// Exposed to Python /via CyPlot)
+	CargoCount getCargoCount() const;
+	bool hasAnyUnitInCargo() const;
+	bool hasAnyYieldInCargo() const;
 
 protected:
 

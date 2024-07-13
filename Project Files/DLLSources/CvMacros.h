@@ -27,11 +27,24 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
             } \
         }
 
+// Implicitly declares pLoopPlot
 #define FOR_EACH_PLOT_IN_RANGE_OF(pCenterPlot, iSearchRange, ACTION) \
     for (int iDX = -(iSearchRange); iDX <= (iSearchRange); iDX++) \
         for (int iDY = -(iSearchRange); iDY <= (iSearchRange); iDY++) \
         { \
             CvPlot* const pLoopPlot = ::plotXY(pCenterPlot->getX_INLINE(), pCenterPlot->getY_INLINE(), iDX, iDY); \
+            if (pLoopPlot != NULL) \
+            { \
+                ACTION; \
+            } \
+        }
+
+// Implicitly declares pLoopPlot
+#define FOR_EACH_PLOT_IN_RANGE_OF_REF(kCenterPlot, iSearchRange, ACTION) \
+    for (int iDX = -(iSearchRange); iDX <= (iSearchRange); iDX++) \
+        for (int iDY = -(iSearchRange); iDY <= (iSearchRange); iDY++) \
+        { \
+            CvPlot* const pLoopPlot = ::plotXY(kCenterPlot.getX_INLINE(), kCenterPlot.getY_INLINE(), iDX, iDY); \
             if (pLoopPlot != NULL) \
             { \
                 ACTION; \
@@ -49,6 +62,7 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
             } \
         }
 // Allows loop variable to be specified
+#if 0
 #define FOR_EACH_PLOT_IN_RANGE_OF2(pCenterPlot, pLoopPlot, iSearchRange, ACTION) \
     for (int iDX = -(iSearchRange); iDX <= (iSearchRange); iDX++) \
         for (int iDY = -(iSearchRange); iDY <= (iSearchRange); iDY++) \
@@ -59,6 +73,7 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
                 ACTION; \
             } \
         }
+#endif
 
 #define FOR_EACH_UNITAI_ON_PLOT(pPlot) \
     for (const CLLNode<IDInfo>* pUnitNode = (pPlot)->headUnitNode(); \
@@ -100,13 +115,12 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
 
 #define FOR_EACH_UNIT(pLoopUnit, kOwner) \
     for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
-    for (CvUnit* pLoopUnit = (kOwner).firstUnit(&UNIQUE_VAR(iLoop)); \
+    for (const CvUnit* pLoopUnit = (kOwner).firstUnit(&UNIQUE_VAR(iLoop)); \
          pLoopUnit != NULL; pLoopUnit = (kOwner).nextUnit(&UNIQUE_VAR(iLoop)))
 
-// TODO: should this use const units?
 #define FOR_EACH_UNIT_IN(pLoopUnit, kGroup) \
     for (CLLNode<IDInfo>* pUnitNode = (kGroup).headUnitNode(); pUnitNode != NULL; pUnitNode = (kGroup).nextUnitNode(pUnitNode)) \
-        if (CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data)) \
+        if (CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data)) \
             if (pLoopUnit != NULL)
 
 #define FOR_EACH_UNITAI_IN(pLoopUnit, kGroup) \

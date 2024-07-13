@@ -3815,7 +3815,8 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 }
 
 
-bool CvUnit::canMoveOrAttackInto(const CvPlot* pPlot, bool bDeclareWar) const
+bool CvUnit::canMoveOrAttackInto(const CvPlot* pPlot, bool bDeclareWar,
+	bool bDangerCheck) const
 {
 	return (canMoveInto(*pPlot, false, bDeclareWar) || canMoveInto(*pPlot, true, bDeclareWar));
 }
@@ -10288,32 +10289,6 @@ int CvUnit::cargoSpaceAvailable(SpecialUnitTypes eSpecialCargo, DomainTypes eDom
 	return std::max(0, (cargoSpace() - getCargo()));
 }
 
-bool CvUnit::hasAnyUnitInCargo() const
-{
-	CLLNode<IDInfo>* pUnitNode;
-	CvUnit* pLoopUnit;
-	CvPlot* pPlot;
-
-	pPlot = plot();
-
-	pUnitNode = pPlot->headUnitNode();
-
-	while (pUnitNode != NULL)
-	{
-		pLoopUnit = pPlot->getUnitNodeLoop(pUnitNode);
-
-		if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
-		{
-			if (!pLoopUnit->isGoods())
-			{
-				return true;
-			}
-		}
-	}
-
-	return false;
-}
-
 bool CvUnit::isYield() const
 {
 	return (getUnitInfo().getSpecialUnitType() == SPECIALUNIT_YIELD_CARGO);
@@ -10633,12 +10608,12 @@ bool CvUnit::canJoinGroup(const CvPlot* pPlot, CvSelectionGroup const* pSelectio
 // K-Mod has edited this function to increase readability and robustness
 void CvUnit::joinGroup(CvSelectionGroup* pSelectionGroup, bool bRemoveSelected, bool bRejoin)
 {
-	CvSelectionGroup* pOldSelectionGroup = GET_PLAYER(getOwner()).getSelectionGroup(getGroupID());
+	CvSelectionGroup* const pOldSelectionGroup = GET_PLAYER(getOwner()).getSelectionGroup(getGroupID());
 
 	if (pOldSelectionGroup != NULL && pSelectionGroup == pOldSelectionGroup)
 		return; // attempting to join the group we are already in
 
-	CvPlot* pPlot = plot(); // advc (comment): I suppose this could be NULL(?)
+	CvPlot* const pPlot = plot(); // advc (comment): I suppose this could be NULL(?)
 	CvSelectionGroup* pNewSelectionGroup = pSelectionGroup;
 
 	if (pNewSelectionGroup == NULL && bRejoin)
@@ -11299,11 +11274,9 @@ int CvUnit::getLandArea() const
 CvArea* CvUnit::area() const
 {
 	// If the AI unit is in Europe, use the area of the Europe plots (i.e. the atlantic sea)
-	CvPlot* pPlot = plot();
+	CvPlot* const pPlot = plot();
 	if (pPlot == NULL)
-	{
 		return NULL;
-	}
 
 	return pPlot->area(getDomainType());
 }
@@ -11571,6 +11544,37 @@ void CvUnit::getCargoUnits(std::vector<CvUnit*>& aUnits) const
 	}
 	FAssert(getCargo() == aUnits.size());
 }
+
+// Returns the number of cargo hold types as a pair(unit count, yield count) 
+CargoCount CvUnit::getCargoCount() const
+{
+	int iYieldCount = 0;
+	int iUnitCount = 0;
+
+	FOR_EACH_UNIT_ON(pUnit, plot())
+	{
+		if (pUnit->getTransportUnit() == this)
+		{ 
+			iUnitCount += (!pUnit->isGoods() ? 1 : 0);
+			iYieldCount += (pUnit->isGoods() ? 1 : 0);
+		}
+	}
+	const CargoCount cc(iYieldCount, iUnitCount);
+	return cc;
+}
+
+bool CvUnit::hasAnyUnitInCargo() const
+{
+	const CargoCount cc = getCargoCount();
+	return cc.iUnitCount > 0;
+}
+
+bool CvUnit::hasAnyYieldInCargo() const
+{
+	const CargoCount cc = getCargoCount();
+	return cc.iYieldCount > 0;
+}
+
 
 CvPlot* CvUnit::getAttackPlot() const
 {

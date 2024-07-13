@@ -9,6 +9,7 @@
 #include "CvPlayerCivEffect.h"
 #include "CvTradeRouteGroup.h"
 #include "AIStrategies.h" // advc.enum
+#include "CvEnums.h"
 
 class CvEventTriggerInfo;
 
@@ -16,6 +17,8 @@ class CvPlayerAI : public CvPlayerCivEffect
 {
 
 public:
+
+	static int const DANGER_RANGE = 4;
 
 	CvPlayerAI();
 	virtual ~CvPlayerAI();
@@ -79,7 +82,7 @@ public:
 
 	void AI_doPeace();
 
-	void AI_doEurope();
+	void AI_doEuropePurchases();
 
 	void AI_updateFoundValues(bool bStartingLoc = false);
 	void AI_updateAreaTargets();
@@ -130,10 +133,21 @@ public:
 	int AI_getPlotDangerInternal(const CvPlot* pPlot, int iRange = -1, bool bTestMoves = true, bool bOffensive = false) const;
 	int AI_getUnitDanger(CvUnit* pUnit, int iRange = -1, bool bTestMoves = true, bool bAnyDanger = true) const;
 
-	// TAC - AI Improved Naval AI - koma13 - START
-	//int AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves = true);
-	int AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves = true, bool bDangerMap = false, bool bVisibleOnly = false) const;
-	// TAC - AI Improved Naval AI - koma13 - END
+	int AI_getWaterDanger(CvPlot const& kPlot, CvUnit const& kUnit, int iRange = DANGER_RANGE,
+		/* <advc.opt> */ int iMaxCount = MAX_INT) const;
+	bool AI_isAnyWaterDanger(CvPlot const& kPlot, CvUnit const& kUnit, int iRange = DANGER_RANGE) const
+	{
+		return (AI_getWaterDanger(kPlot, kUnit, iRange, 1) >= 1);
+	} // </advc.opt>
+
+	int AI_getPlotDangerAdvCiv(CvPlot const& kPlot, int iRange = -1, bool bTestMoves = true,
+		int iLimit = MAX_INT, // advc  <advc.104>
+		PlayerTypes eAttackPlayer = NO_PLAYER) const;
+	// </advc.104>
+	// <advc>
+	int AI_countDangerousUnits(CvPlot const& kAttackerPlot, CvPlot const& kDefenderPlot,
+		bool bTestMoves, int iLimit = MAX_INT,
+		PlayerTypes eAttackPlayer = NO_PLAYER) const; // </advc>
 
 	int AI_goldTarget();
 	DllExport DiploCommentTypes AI_getGreeting(PlayerTypes ePlayer);
@@ -186,7 +200,9 @@ public:
 	int AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea);
 	int AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea) const;
 	int AI_unitValuePercent(UnitTypes eUnit, UnitAITypes* peUnitAI, CvArea* pArea);
-	int AI_totalUnitAIs(UnitAITypes eUnitAI);
+	int AI_totalUnitAIs(UnitAITypes eUnitAI) { return AI_totalUnitAIs_(eUnitAI); }
+	int AI_totalUnitAIs_(UnitAITypes eUnitAI) const;
+
 	int AI_totalAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI)
 	{
 		return AI_totalAreaUnitAIsInternal(*pArea, eUnitAI);
@@ -270,9 +286,9 @@ public:
 	*/
 	int AI_wakePlotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 
-	int AI_cargoSpaceToEurope(CvSelectionGroup* pSkipSelectionGroup = NULL);	// TAC - AI Improved Navel AI - koma13
+	int AI_cargoSpaceToEurope(CvSelectionGroup* pSkipSelectionGroup = NULL) { return AI_cargoSpaceToEurope_(pSkipSelectionGroup); }
+	int AI_cargoSpaceToEurope_(CvSelectionGroup* pSkipSelectionGroup = NULL) const;	// TAC - AI Improved Navel AI - koma13
 
-	int AI_cityTargetUnitsByPath(CvCity* pCity, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const;	// TAC - AI Attack City - koma13, jdog5000(BBAI)
 	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const;	// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
 
 	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns, UnitAITypes eUnitAI) const;	// TAC - AI Attack City - koma13
@@ -296,10 +312,13 @@ public:
 	void AI_updateBestPortCities();
 	// TAC - AI Economy - koma13 - END
 
-	int AI_getNumTrainAIUnits(UnitAITypes eIndex);
+	int AI_getNumTrainAIUnits(UnitAITypes eIndex) { return AI_getNumTrainAIUnits_(eIndex); }
+	int AI_getNumTrainAIUnits_(UnitAITypes eIndex) const;
+
 	void AI_changeNumTrainAIUnits(UnitAITypes eIndex, int iChange);
 
-	int AI_getNumAIUnits(UnitAITypes eIndex);
+	int AI_getNumAIUnits(UnitAITypes eIndex) { return AI_getNumAIUnits_(eIndex); };
+	int AI_getNumAIUnits_(UnitAITypes eIndex) const;
 	void AI_changeNumAIUnits(UnitAITypes eIndex, int iChange);
 
 	int AI_getNumRetiredAIUnits(UnitAITypes eIndex);
@@ -406,7 +425,7 @@ public:
 	void AI_updateYieldValues();
 	int AI_transferYieldValue(const IDInfo target, YieldTypes eYield, int iAmount);
 
-	int AI_countYieldWaiting();
+	int AI_countYieldWaiting() const;
 	int AI_highestYieldAdvantage(YieldTypes eYield);
 
 	void AI_manageEconomy();
@@ -609,6 +628,8 @@ public:
 	// </advc.003u>
 	int AI_getFlavorValue(FlavorTypes eFlavor) const;
 	bool AI_feelsSafe() const; // advc.109
+	UnitAIStates AI_determineNextTransportSeaState(const CvUnitAI& kTransport) const;
+	bool AI_canEverDeclareWar(UnitAITypes eUnitAI) const;
 
 protected:
 

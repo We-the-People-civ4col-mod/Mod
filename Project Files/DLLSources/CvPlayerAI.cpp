@@ -37,7 +37,6 @@
 #pragma pop_macro("new")
 #pragma pop_macro("free")
 
-#define DANGER_RANGE				(4)
 #define GREATER_FOUND_RANGE			(5)
 #define CIVIC_CHANGE_DELAY			(25)
 
@@ -178,7 +177,7 @@ void CvPlayerAI::AI_doTurnUnitsPre()
 		if (getParent() != NO_PLAYER)
 		{
 			AI_doProfessions();
-			AI_doEurope();
+			AI_doEuropePurchases();
 		}
 	}
 
@@ -788,12 +787,29 @@ void CvPlayerAI::AI_unitUpdate()
 							{
 								if (!pGroup->isBusy() && !pGroup->isCargoBusy())
 								{
+									int iGroupsAfter = -1;
+									int iGroupsBefore = getNumSelectionGroups();
 									if (pGroup->AI_update())
 									{
+										iGroupsAfter = getNumSelectionGroups();
+										if (iGroupsAfter - iGroupsBefore)
+										{
+											logBBAI("CvPlayerAI::AI_unitUpdate() Number of groups have changed %d", iGroupsAfter - iGroupsBefore);
+										}
+
 										//static_cast<CvUnitAI*>(pUnit)->m_bHasYielded = false;
 										CvUnit* const pUnit2 = pUnit; // Debugging
 										return;
 									}
+									else
+									{
+										iGroupsAfter = getNumSelectionGroups();
+										if (iGroupsAfter - iGroupsBefore)
+										{
+											logBBAI("CvPlayerAI::AI_unitUpdate() Number of groups have changed %d", iGroupsAfter - iGroupsBefore);
+										}
+									}
+
 								}
 								else
 								{
@@ -1089,6 +1105,55 @@ bool CvPlayerAI::AI_unitAIIsCombat(UnitAITypes eUnitAI) const
 	case UNITAI_COMBAT_SEA:
 	case UNITAI_PIRATE_SEA:
 	case UNITAI_ESCORT_SEA: // TAC - AI Escort Sea - koma13
+		return true;
+		break;
+
+	default:
+		FAssert(false);
+		break;
+	}
+	return false;
+}
+
+bool CvPlayerAI::AI_canEverDeclareWar(UnitAITypes eUnitAI) const
+{
+	switch (eUnitAI)
+	{
+	case UNITAI_UNKNOWN:
+		return false;
+		break;
+
+	case UNITAI_FLEEING:
+	case UNITAI_COLONIST:
+	case UNITAI_SETTLER:
+	case UNITAI_WORKER:
+	case UNITAI_MISSIONARY:
+	case UNITAI_TRADER:
+	case UNITAI_SCOUT:
+	case UNITAI_WAGON:
+	case UNITAI_TREASURE:
+	case UNITAI_YIELD:
+	case UNITAI_GENERAL:
+	case UNITAI_TRANSPORT_COAST:
+	case UNITAI_ANIMAL:
+	case UNITAI_DEFENSIVE:
+		return false;
+		break;
+
+	case UNITAI_OFFENSIVE:
+	case UNITAI_COUNTER:
+	case UNITAI_ATTACK_CITY:
+		return true;
+		break;
+	case UNITAI_WORKER_SEA:
+	case UNITAI_ANIMAL_SEA:
+	case UNITAI_TRANSPORT_SEA:
+		return false;
+		break;
+	case UNITAI_ASSAULT_SEA:
+	case UNITAI_COMBAT_SEA:
+	case UNITAI_PIRATE_SEA:
+	case UNITAI_ESCORT_SEA:
 		return true;
 		break;
 
@@ -2410,7 +2475,7 @@ int CvPlayerAI::AI_getPlotDangerInternal(const CvPlot* pPlot, int iRange, bool b
 	{
 		for (iDY = -(iRange); iDY <= iRange; iDY++)
 		{
-			pLoopPlot	= plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), iDX, iDY);
+			pLoopPlot= plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), iDX, iDY);
 
 			if (pLoopPlot != NULL)
 			{
@@ -2442,11 +2507,12 @@ int CvPlayerAI::AI_getPlotDangerInternal(const CvPlot* pPlot, int iRange, bool b
 						}
 
 						// Ignore animals
+						/*
 						if (pLoopUnit->getUnitInfo().isAnimal())
 						{
 							continue;
 						}
-
+						*/
 						if (pLoopUnit->isEnemy(getTeam()))
 						{
 							if (bOffensive || pLoopUnit->canAttack())
@@ -2592,72 +2658,109 @@ int CvPlayerAI::AI_getUnitDanger(CvUnit* pUnit, int iRange, bool bTestMoves, boo
 	return iCount;
 }
 
-// TAC - AI Improved Navel AI - koma13 - START
-//int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves)
+/*	advc: Merged AI_getAnyPlotDamnger (now named "AI_isAnyPlotDanger") into AI_getPlotDanger.
+	I haven't bothered with AI_isPlotThreatened and AI_getWaterDanger, which are also similar. */
+// WTP: bCheckBorder support removed
+int CvPlayerAI::AI_getPlotDangerAdvCiv(/* BtS parameters: */ CvPlot const& kPlot, int iRange, bool bTestMoves,
+	/*  Stop counting at iLimit, i.e. the return value can be at most iLimit.
+		When pLowHPCounter is used, stop only when pLowHPCounter also reaches iLimit. */
+	int iLimit,
+	// advc.104: Unless NO_PLAYER, count only danger from eAttackPlayer.
+	PlayerTypes eAttackPlayer) const
+{
+	FAssert(iLimit > 0);
+	FAssert(iRange != 0); // advc: Call AI_countDangerousUnits instead
+	PROFILE_FUNC();
+
+	if (iRange == -1)
+		iRange = DANGER_RANGE;
+	/*if (bTestMoves && isTurnActive()) {
+		if (iRange <= DANGER_RANGE && pPlot->getActivePlayerNoDangerCache())
+			return false; }*/ // BBAI
+			/*if(bTestMoves && isSafeRangeCacheValid() && iRange <= kPlot.getActivePlayerSafeRangeCache())
+				return false;*/ // K-Mod
+				// advc.opt: Since the SafeRangeCache is disabled, let's not waste any time with this.
+
+	TeamTypes const eTeam = getTeam();
+	int r = 0;
+	CvArea const& kPlotArea = *kPlot.area();
+	// advc: The iterator is a little slower and we don't benefit here from a spiral pattern
+	//for (SquareIter it(kPlot, iRange); it.hasNext(); ++it) { CvPlot const& p = *it;
+	FOR_EACH_PLOT_IN_RANGE_OF_REF(kPlot, iRange,
+	{
+		CvPlot const& p = *pLoopPlot;
+		if (p.isArea(kPlotArea))
+		{
+			if (p.isUnit()) // Redundant but fast (inlined)
+			{
+				// Code moved into auxiliary function
+				r += AI_countDangerousUnits(p, kPlot, bTestMoves, iLimit, eAttackPlayer);
+				if (r >= iLimit)
+					return iLimit;
+			} // </advc>
+		}
+		/*	<advc.030> Same-area no longer rules out a (visible) submarine -
+			but is this really ever going to be a problem? */
+			/*else if (p.isUnit() && kPlotArea.canBeEntered(p.getArea()))
+			{
+				r += AI_countDangerousUnits(p, kPlot, bTestMoves, 1, eAttackPlayer);
+				// ... (copy from above)
+			}*/ // </advc.030>
+	}) // FOR_EACH
+
+	/*	The test moves case is a strict subset of the more general case,
+		either is appropriate for setting the cache.  However, since the test moves
+		case is called far more frequently, it is more important and the cache
+		value being true is only assumed to mean that the plot is safe in the
+		test moves case. */
+		/*if (bTestMoves) {
+			if (isTurnActive()) {
+				if (!GC.getGame().isMPOption(MPOPTION_SIMULTANEOUS_TURNS) && GC.getGame().getNumGameTurnActive() == 1)
+					kPlot.setActivePlayerNoDangerCache(true);
+			}
+		}*/ // BBAI
+		/*	K-Mod. The above bbai code is flawed in that it flags the plot as safe regardless
+			of what iRange is and then reports that the plot is safe for any iRange <= DANGER_RANGE. */
+			/*if (isSafeRangeCacheValid() && iRange > kPlot.getActivePlayerSafeRangeCache())
+				kPlot.setActivePlayerSafeRangeCache(iRange);*/ // advc.opt: SafeRangeCache is disabled
+	return std::min(r, iLimit); // advc.104: May have counted past the limit
+}
+
 // Returns a count of hostile units (animals will be ignored since they do not represent a real threat) within iRange of the plot
-// if bDangerMap is true the count will include a (decaying) history of hostiles that we've seen.
-int CvPlayerAI::AI_getWaterDanger(CvPlot* pPlot, int iRange, bool bTestMoves, bool bDangerMap, bool bVisibleOnly) const
-// TAC - AI Improved Navel AI - koma13 - END
+// Note that this function does not support checking danger from land units even when inside a city
+int CvPlayerAI::AI_getWaterDanger(CvPlot const& kPlot, CvUnit const& kUnit, int iRange, int iMaxCount) const
 {
 	PROFILE_FUNC();
 
-	int iCount = 0;
-
 	if (iRange == -1)
-	{
 		iRange = DANGER_RANGE;
-	}
 
-	//CvArea* pWaterArea = pPlot->waterArea();
-
-	for (int iDX = -(iRange); iDX <= iRange; iDX++)
+	int iCount = 0;
+	FOR_EACH_PLOT_IN_RANGE_OF_REF(kPlot, iRange,
 	{
-		for (int iDY = -(iRange); iDY <= iRange; iDY++)
+		CvPlot const& p = *pLoopPlot;
+		if (!p.isWater() || /* advc.opt: */ !p.hasUnit() ||
+			kUnit.area() != kPlot.area())
 		{
-			CvPlot* const pLoopPlot = plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), iDX, iDY);
-			if (pLoopPlot != NULL)
+			continue;
+		}
+		for (CLLNode<IDInfo>* pUnitNode = p.headUnitNode(); pUnitNode != NULL; pUnitNode = p.nextUnitNode(pUnitNode))
+		{
+			CvUnit* const pEnemyUnit = ::getUnit(pUnitNode->m_data);
+			if (!pEnemyUnit->isEnemy(getTeam(), &kPlot) || pEnemyUnit->getUnitInfo().isAnimal())
+				continue;
+			// advc.315: was pLoopUnit->canAttack()
+			// WTP: Using the original
+			if (pEnemyUnit->canAttack() && !pEnemyUnit->isInvisible(getTeam(), false))
 			{
-				if (!pLoopPlot->isWater())
-					continue;
-
-				if (!bVisibleOnly || pLoopPlot->isVisible(getTeam(), false))	// TAC - AI Improved Navel AI - koma13
-				{
-					CLLNode<IDInfo>* pUnitNode = pLoopPlot->headUnitNode();
-					while (pUnitNode != NULL)
-					{
-						CvUnit* const pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
-
-						if (pLoopUnit == NULL)
-							continue;
-
-						if (!pLoopUnit->isEnemy(getTeam()))
-							continue;
-
-						if (!pLoopUnit->canAttack())
-							continue;
-
-						if ((pLoopUnit->isInvisible(getTeam(), false)))
-							continue;
-
-						// Ignore animals
-						if (pLoopUnit->getUnitInfo().isAnimal())
-							continue;
-
-						iCount++;
-					}
-				}
-
-				// TAC - AI Improved Navel AI - koma13 - START
-				if (bDangerMap)
-				{
-					iCount += (pLoopPlot->getDangerMap(getID()) > 0) ? 1 : 0;
-				}
-				// TAC - AI Improved Navel AI - koma13 - END
+				iCount++;
+				// <advc.opt>
+				if (iCount >= iMaxCount)
+					return iMaxCount; // </advc.opt>
 			}
 		}
-	}
-
-	return iCount;
+	}) // FOR_EACH
+	return std::min(iCount, iMaxCount); // advc.opt (to be consistent)
 }
 
 int CvPlayerAI::AI_goldTarget()
@@ -5201,9 +5304,9 @@ int CvPlayerAI::AI_unitValuePercent(UnitTypes eUnit, UnitAITypes* peUnitAI, CvAr
 	return iValue;
 }
 
-int CvPlayerAI::AI_totalUnitAIs(UnitAITypes eUnitAI)
+int CvPlayerAI::AI_totalUnitAIs_(UnitAITypes eUnitAI) const
 {
-	return (AI_getNumTrainAIUnits(eUnitAI) + AI_getNumAIUnits(eUnitAI));
+	return (AI_getNumTrainAIUnits_(eUnitAI) + AI_getNumAIUnits_(eUnitAI));
 }
 
 
@@ -5561,7 +5664,9 @@ int CvPlayerAI::AI_plotTargetMissionAIs(const CvPlot* pPlot, MissionAITypes* aeM
 	return iCount;
 }
 // TAC - AI Improved Naval AI - koma13 - START
-int CvPlayerAI::AI_cargoSpaceToEurope(CvSelectionGroup* pSkipSelectionGroup)
+// Returns the number of cargo slots that are heading to Europe at this instant
+// TODO: Add max parameter
+int CvPlayerAI::AI_cargoSpaceToEurope_(CvSelectionGroup* pSkipSelectionGroup) const
 {
 	int iCount = 0;
 	int iLoop;
@@ -5576,7 +5681,11 @@ int CvPlayerAI::AI_cargoSpaceToEurope(CvSelectionGroup* pSkipSelectionGroup)
 			{
 				MissionAITypes eMissionAI = pLoopSelectionGroup->AI_getMissionAIType();
 
-				if ((eMissionAI == MISSIONAI_SAIL_TO_EUROPE) || (eMissionAI == MISSIONAI_SAIL_TO_AFRICA) || ((pHeadUnit->AI_getUnitAIState() == UNITAI_STATE_SAIL) && (eMissionAI != MISSIONAI_PICKUP)))
+				// What about transports already in europe
+				if (eMissionAI == MISSIONAI_SAIL_TO_EUROPE ||
+					// Don't include Africa since no immigration is expected
+					//eMissionAI == MISSIONAI_SAIL_TO_AFRICA || 
+					pHeadUnit->AI_getUnitAIState() == UNITAI_STATE_EXPORT)
 				{
 					iCount += pHeadUnit->cargoSpace();
 				}
@@ -5587,48 +5696,6 @@ int CvPlayerAI::AI_cargoSpaceToEurope(CvSelectionGroup* pSkipSelectionGroup)
 	return iCount;
 }
 // TAC - AI Improved Naval AI - koma13 - END
-
-// TAC - AI Attack City - koma13, jdog5000(BBAI) - START
-int CvPlayerAI::AI_cityTargetUnitsByPath(CvCity* pCity, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const
-{
-	PROFILE_FUNC();
-
-	int iCount = 0;
-
-	int iLoop;
-	int iPathTurns;
-	for(CvSelectionGroup* pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
-	{
-		if (pLoopSelectionGroup != pSkipSelectionGroup && pLoopSelectionGroup->plot() != NULL && pLoopSelectionGroup->getNumUnits() > 0)
-		{
-			CvPlot* pMissionPlot = pLoopSelectionGroup->AI_getMissionAIPlot();
-
-			if (pMissionPlot != NULL )
-			{
-				int iDistance = stepDistance(pCity->getX_INLINE(), pCity->getY_INLINE(), pMissionPlot->getX_INLINE(), pMissionPlot->getY_INLINE());
-
-				if (iDistance <= 1)
-				{
-					if( pLoopSelectionGroup->generatePath(pLoopSelectionGroup->plot(), pMissionPlot, 0, true, &iPathTurns) )
-					{
-						if( !(pLoopSelectionGroup->canAllMove()) )
-						{
-							iPathTurns++;
-						}
-
-						if( iPathTurns <= iMaxPathTurns )
-						{
-							iCount += pLoopSelectionGroup->getNumUnits();
-						}
-					}
-				}
-			}
-		}
-	}
-
-	return iCount;
-}
-// TAC - AI Attack City - koma13, jdog5000(BBAI) - END
 
 // TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
 /*
@@ -6096,7 +6163,7 @@ void CvPlayerAI::AI_updateBestPortCities()
 	}
 }
 // TAC - AI Economy - koma13 - END
-int CvPlayerAI::AI_getNumTrainAIUnits(UnitAITypes eIndex)
+int CvPlayerAI::AI_getNumTrainAIUnits_(UnitAITypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_UNITAI_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
@@ -6113,7 +6180,7 @@ void CvPlayerAI::AI_changeNumTrainAIUnits(UnitAITypes eIndex, int iChange)
 }
 
 
-int CvPlayerAI::AI_getNumAIUnits(UnitAITypes eIndex)
+int CvPlayerAI::AI_getNumAIUnits_(UnitAITypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < NUM_UNITAI_TYPES, "eIndex is expected to be within maximum bounds (invalid Index)");
@@ -8191,7 +8258,7 @@ void CvPlayerAI::AI_doProfessions()
 	}
 }
 
-void CvPlayerAI::AI_doEurope()
+void CvPlayerAI::AI_doEuropePurchases()
 {
 	//Buy Units.
 	UnitTypes eBuyUnit;
@@ -9873,7 +9940,7 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 	return iValue;
 }
 
-int CvPlayerAI::AI_countYieldWaiting()
+int CvPlayerAI::AI_countYieldWaiting() const
 {
 	int iCount = 0;
 	int iLoop;
@@ -15790,6 +15857,7 @@ UnitAITypes CvPlayerAI::AI_bestBuildupUnitAI()
 }
 // TAC - AI Military Buildup - koma13 - END
 
+#if 0
 // TAC - AI Improved Naval AI - koma13 - START
 bool CvPlayerAI::AI_isPathDanger(const CvSelectionGroup* pGroup, const CvPlot* pFromPlot, const CvPlot* pToPlot, int iRange) const
 {
@@ -15832,6 +15900,7 @@ bool CvPlayerAI::AI_isPathDanger(const CvSelectionGroup* pGroup, const CvPlot* p
 	return false;
 }
 // TAC - AI Improved Naval AI - koma13 - END
+#endif
 
 int CvPlayerAI::AI_cityDistance(CvPlot* pPlot)
 {
@@ -17570,4 +17639,122 @@ bool CvPlayerAI::AI_feelsSafe() const
 	}
 	return true;
 #endif
+}
+
+UnitAIStates CvPlayerAI::AI_determineNextTransportSeaState(const CvUnitAI& kTransport) const
+{
+	FAssert(kTransport.AI_getUnitAIType() == UNITAI_TRANSPORT_SEA);
+
+	// If we don't have any cities and
+	// there are no settler in the new world, something may be very wrong.
+	// Check if we have a settler waiting in Europe that we can use to
+	// restart our fledgling empire
+	if (getNumCities() == 0)
+	{
+		int iSettlerCount = AI_totalUnitAIs_(UNITAI_SETTLER);
+		if (iSettlerCount == 0)
+		{
+			for (int i = 0; i < getNumEuropeUnits(); ++i)
+			{
+				const CvUnit* const pUnit = getEuropeUnit(i);
+
+				if (pUnit->AI_getUnitAIType() == UNITAI_SETTLER)
+					++iSettlerCount;
+			}
+
+		}
+		if (iSettlerCount > 0)
+		{
+			// TODO: Check for other units having this state!
+			// Dump all cargo (units) and head straight to Europe
+			//AI_sailToEurope(true);
+			// If we don't have any cities at all, settle one ASAP!
+			return UNITAI_STATE_TRANSPORT_SETTLER;
+		}
+	}
+
+	// Need at least 1 transport in Export / Sail
+	const int iExpectedLeftOverEuropeUnits = std::min(0,
+		getNumEuropeUnits() - AI_cargoSpaceToEurope_(kTransport.getGroup()));
+	const int iCargoWaiting = AI_countYieldWaiting();
+
+	if (iExpectedLeftOverEuropeUnits == 0 && iCargoWaiting == 0 && kTransport.AI_isObsoleteTradeShip())
+		return UNITAI_STATE_EXPLORE; // ROUTE ?
+
+	// Just return the generic state fror now
+	// Fall-back to catch-all generic state (should never end up here though)	
+	return UNITAI_STATE_SAIL;
+}
+
+// advc: from AI_getAnyPlotDanger
+int CvPlayerAI::AI_countDangerousUnits(CvPlot const& kAttackerPlot, CvPlot const& kDefenderPlot,
+	bool bTestMoves, int iLimit, /* advc.104: */ PlayerTypes eAttackPlayer) const
+{
+	TeamTypes const eTeam = getTeam();
+	// <advc.128>
+	if (!kAttackerPlot.isVisible(eTeam))
+	{
+		if (isHuman()/* || !AI_cheatDangerVisibility(kAttackerPlot)*/)
+			return 0;
+	} // </advc.128>
+	int iR = 0;
+	TeamTypes const eOurTeam = getTeam(); // advc.opt
+	FOR_EACH_UNIT_IN(pLoopUnit, kAttackerPlot)
+	{
+		CvUnit const& kUnit = *pLoopUnit;
+		if (GET_TEAM(GET_PLAYER(kUnit.getOwner()).getTeam()).getID() == eOurTeam)
+		{
+			if (!kUnit.alwaysInvisible() &&
+				kUnit.getInvisibleType() == NO_INVISIBLE)
+			{
+				FAssertMsg(iR == 0, "Hostile units shouldn't be able to coexist in a plot");
+				return iR;
+			}
+		}
+		if ( // <advc.104>
+			(eAttackPlayer == NO_PLAYER || kUnit.getCombatOwner(
+				eTeam, kAttackerPlot) == eAttackPlayer) && // </advc.104>
+			/*	advc.001: Was kUnit.getPlot(). Only matters if kUnit is alwaysHostile
+				and kDefenderPlot is a city or fort. */
+			kUnit.isEnemy(eTeam, kDefenderPlot) &&
+			// advc.315: was kUnit.canAttack()
+			//AI_canBeAttackedBy(kUnit) &&
+			kUnit.canAttack() &&
+			!kUnit.isInvisible(eTeam, false) &&
+			kUnit.canMoveOrAttackInto(&kDefenderPlot,
+				false, true)) // advc.001k
+		{
+			if (bTestMoves)
+			{
+				int const iDistance = stepDistance(&kAttackerPlot, &kDefenderPlot);
+				// <advc.004l> Take the time to compute a path in important cases
+// TODO
+#if 0
+				if (iDistance <= 3 && (isHuman() ||
+					// Prevent sneak attacks by human Woodsmen and Guerilla
+					(kUnit.isHuman() && kAttackerPlot.isVisible(eTeam) &&
+						AI_getCurrEraFactor() <= 1)))
+				{
+					if (!kUnit.generatePath(&kDefenderPlot,
+						MOVE_MAX_MOVES | MOVE_IGNORE_DANGER, false, NULL, 1, true))
+					{
+						continue;
+					}
+				}
+				else // </advc.004l>
+#endif
+				{
+					int iAttackerRange = kUnit.baseMoves();
+					if (kAttackerPlot.isValidRoute(&kUnit, /* advc.001i: */ false))
+						iAttackerRange++;
+					if (iAttackerRange < iDistance)
+						continue;
+				}
+			}
+			iR++;
+			if (iR >= iLimit)
+				return iLimit;
+		}
+	}
+	return iR;
 }

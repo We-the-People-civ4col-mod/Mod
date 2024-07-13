@@ -985,17 +985,17 @@ namespace
 		//if (!pSelectionGroup->canFight() && !pSelectionGroup->alwaysInvisible()) // BTS \ COLO default condition
 		if (kPlayer.AI_needsProtection(kGroup.getHeadUnitAI()) && !kGroup.alwaysInvisible())
 		{
-			CvPlot* const pPlot = GC.getMap().plotINLINE(x, y);
+			const CvPlot& kPlot = *GC.getMap().plotINLINE(x, y);
 
 			if (kGroup.getDomainType() == DOMAIN_SEA)
 			{
-				if (kPlayer.AI_getWaterDanger(pPlot, -1, true, true, false) > 0)
+				if (kPlayer.AI_isAnyWaterDanger(kPlot, *kGroup.getHeadUnit()))
 					return false;
 			}
 
 			if (kGroup.getDomainType() == DOMAIN_LAND)
 			{
-				if (kPlayer.AI_getPlotDanger(pPlot, 2, false) > 0)
+				if (kPlayer.AI_getPlotDangerInternal(&kPlot, 2, false) > 0)
 					return false;
 			}
 		}
@@ -1056,7 +1056,7 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 				return FALSE;
 			}
 		}
-		/*
+
 		if (!(iFlags & MOVE_IGNORE_DANGER))
 		{
 			if (!isPlotSafe(*pSelectionGroup, iToX, iToY))
@@ -1065,7 +1065,6 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 			if (!AI_allowMove(*pSelectionGroup, kToPlot))
 				return FALSE;
 		}
-		*/
 		// BETTER_BTS_AI_MOD: END
 	}
 
@@ -2150,20 +2149,18 @@ void getCardinalDirectionTypeString(CvWString& szString, CardinalDirectionTypes 
 }
 
 // advc.007: Removed the "ACTIVITY_" prefix from the strings b/c it takes up too much space.
-void getActivityTypeString(CvWString& szString, ActivityTypes eActivityType)
+CvWString getActivityTypeString(ActivityTypes eActivityType)
 {
 	switch (eActivityType)
 	{
-	case NO_ACTIVITY: szString = L"NO_ACTIVITY"; break;
-
-	case ACTIVITY_AWAKE: szString = L"AWAKE"; break;
-	case ACTIVITY_HOLD: szString = L"HOLD"; break;
-	case ACTIVITY_SLEEP: szString = L"SLEEP"; break;
-	case ACTIVITY_HEAL: szString = L"HEAL"; break;
-	case ACTIVITY_SENTRY: szString = L"SENTRY"; break;
-	case ACTIVITY_MISSION: szString = L"MISSION"; break;
-
-	default: szString = CvWString::format(L"UNKNOWN_ACTIVITY(%d)", eActivityType); break;
+	case NO_ACTIVITY: return L"NO_ACTIVITY"; break;
+	case ACTIVITY_AWAKE: return L"AWAKE"; break;
+	case ACTIVITY_HOLD: return L"HOLD"; break;
+	case ACTIVITY_SLEEP: return L"SLEEP"; break;
+	case ACTIVITY_HEAL: return L"HEAL"; break;
+	case ACTIVITY_SENTRY: return L"SENTRY"; break;
+	case ACTIVITY_MISSION: return L"MISSION"; break;
+	default: return CvWString::format(L"UNKNOWN_ACTIVITY(%d)", eActivityType); break;
 	}
 }
 
@@ -2232,7 +2229,7 @@ void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI)
 	case MISSIONAI_SAIL_FROM_EUROPE: szString = L"MISSIONAI_SAIL_FROM_EUROPE"; break;
 	case MISSIONAI_WORKER_SEA: szString = L"MISSIONAI_WORKER_SEA"; break; //TAC Whaling, ray
 	case MISSIONAI_TRANSPORT: szString = L"MISSIONAI_TRANSPORT"; break;
-	case MISSIONAI_TRANSPORT_SEA: szString = L"MISSIONAI_TRANSPORT_SEA"; break;
+	case MISSIONAI_COLLECT_YIELDS: szString = L"MISSIONAI_COLLECT_YIELDS"; break;
 	case MISSIONAI_PIRACY: szString = L"MISSIONAI_PIRACY"; break;
 	case MISSIONAI_BOMBARD: szString = L"MISSIONAI_BOMBARD"; break;
 	case MISSIONAI_LEARN: szString = L"MISSIONAI_LEARN"; break;
@@ -2251,6 +2248,7 @@ void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI)
 	case MISSIONAI_RETREAT: szString = L"MISSIONAI_RETREAT"; break;
 	case MISSIONAI_COUNTER_PIRACY: szString = L"MISSIONAI_COUNTER_PIRACY"; break;
 	case MISSIONAI_LEAD: szString = L"MISSIONAI_LEAD"; break;
+	case MISSIONAI_JOIN: szString = L"MISSIONAI_JOIN"; break;
 	default: szString = CvWString::format(L"UNKOWN_MISSION_AI(%d)", eMissionAI); break;
 	}
 }
@@ -2313,6 +2311,11 @@ CvWString getUnitAIStateString(UnitAIStates eUnitAIState)
 	case UNITAI_STATE_PURCHASED: szString = L"PURCHASED"; break;
 	case UNITAI_STATE_SELL_TO_NATIVES: szString = L"SELL_TO_NATIVES"; break;
 	case UNITAI_STATE_SAIL: szString = L"SAIL"; break;
+	case UNITAI_STATE_EXPORT: szString = L"EXPORT"; break;
+	case UNITAI_STATE_TRANSPORT_SETTLER: szString = L"TRANSPORT_SETTLER"; break;
+	case UNITAI_STATE_EXPLORE: szString = L"EXPLORE"; break;
+	case UNITAI_STATE_IMPORT: szString = L"IMPORT"; break;
+	case UNITAI_STATE_TRADE_ROUTES: szString = L"TRADE_ROUTES"; break;
 	default: szString = CvWString::format(L"UNKOWN_UNITAI_STATE(%d)", eUnitAIState); break;
 	}
 

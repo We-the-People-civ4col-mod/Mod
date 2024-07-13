@@ -490,9 +490,11 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		szString.append(gDLL->getText("TXT_KEY_UNIT_HELP_IMMOBILE", pUnit->getImmobileTimer()));
 	}
 
-	if (GC.getGameINLINE().isDebugMode() && !bAlt && !bShift && (pUnit->AI_getUnitAIType() != NO_UNITAI))
+	if (GC.getGameINLINE().isDebugMode() && (pUnit->AI_getUnitAIType() != NO_UNITAI))
 	{
-	    szTempBuffer.Format(L" %s %s\n", GC.getUnitAIInfo(pUnit->AI_getUnitAIType()).getDescription(), getUnitAIStateString(pUnit->AI_getUnitAIState()).GetCString());
+		szTempBuffer.Format(L" %s %s\n", GC.getUnitAIInfo(pUnit->AI_getUnitAIType()).getDescription(),
+			getUnitAIStateString(pUnit->AI_getUnitAIState()).GetCString());
+			//getActivityTypeString(pUnit->getGroup()->getActivityType()).GetCString());
 		szString.append(szTempBuffer);
 	}
 

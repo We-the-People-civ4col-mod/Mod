@@ -146,7 +146,7 @@ void CvSelectionGroupAI::AI_separateEmptyTransports()
 }
 // TAC - AI Assault Sea - koma13, jdog5000(BBAI)
 
-// Returns true if the group has become busy...
+// Returns true if the group has become busy or has yielded
 bool CvSelectionGroupAI::AI_update()
 {
 	CvUnit* pLoopUnit;
@@ -193,14 +193,14 @@ bool CvSelectionGroupAI::AI_update()
 		{
 			CvUnit* pHeadUnit = getHeadUnit();
 			FAssert(false);
-			pHeadUnit->AI_update(); // Debugging
 			if (NULL != pHeadUnit)
 			{
+				pHeadUnit->AI_update(); // Debugging
 				char szOut[1024];
 				CvWString szTempString;
 				getUnitAIString(szTempString, pHeadUnit->AI_getUnitAIType());
 
-				logBBAI("WARNING CvSelectionGroupAI::AI_update() Player %S Unit %d is stuck in a loop. %S(%S)[%d, %d] %s,%s %s",
+				logBBAI("WARNING CvSelectionGroupAI::AI_update() Player %S Unit %d is stuck in a loop. %S(%S)[%d, %d] %S,%S,%S",
 					GET_PLAYER(pHeadUnit->getOwnerINLINE()).getCivilizationDescription(), pHeadUnit->getID(),
 					pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
 					pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->isOnMap() ? "isOnMap:true" : "isOnMap:false",
@@ -218,7 +218,7 @@ bool CvSelectionGroupAI::AI_update()
 
 						if (pLoopUnit != NULL)
 						{
-							logBBAI("	Cargo: Unit %d is stuck in a loop. %S(%S)[%d, %d] %s",
+							logBBAI("	Cargo: Unit %d. %S(%S)[%d, %d] %s",
 								pLoopUnit->getID(), pLoopUnit->getName().GetCString(), GET_PLAYER(pLoopUnit->getOwnerINLINE()).getName(),
 								pLoopUnit->getX_INLINE(), pLoopUnit->getY_INLINE(), pLoopUnit->canMove() ? "canMove:true" : "canMove:false");
 						}
@@ -324,7 +324,7 @@ bool CvSelectionGroupAI::AI_update()
 			bool bFollow = false;
 			// <k146>
 			// if we're not group attacking, then check for 'follow' action
-			if (!AI_isGroupAttack() && readyToMove(true))
+			if (!AI_isGroupAttack() && readyToMove(/*bAny*/true))
 			{
 				/*  What we do here might split the group. So to avoid problems,
 					lets make a list of our units. */
@@ -362,7 +362,7 @@ bool CvSelectionGroupAI::AI_update()
 
 			if (!bDead)
 			{
-				if (!bFollow && readyToMove(true))
+				if (!bFollow && readyToMove(/*bAny*/true))
 					pushMission(MISSION_SKIP);
 			}
 		}
@@ -377,6 +377,7 @@ bool CvSelectionGroupAI::AI_update()
 
 	if (pHeadUnit != NULL && pHeadUnit->m_bHasYielded)
 	{
+		// Need to return true to avoid being called until our cargo has moved
 		pHeadUnit->m_bHasYielded = false;
 		return true;
 	}

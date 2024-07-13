@@ -409,4 +409,12 @@ struct DllExport CvWidgetDataStruct
 	WidgetTypes m_eWidgetType;			//	What the 'type' of this widget is (for parsing help and executing actions)
 };
 
+struct CargoCount
+{
+	CargoCount(int iYieldCount_, int iUnitCount_) : iYieldCount(iYieldCount_), iUnitCount(iUnitCount_) {}
+	int iYieldCount;
+	int iUnitCount;
+};
+
+
 #endif	// CVSTRUCTS_H

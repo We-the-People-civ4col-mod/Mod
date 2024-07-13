@@ -73,6 +73,7 @@ public:
 	void AI_setUnitAIType(UnitAITypes eNewValue);
 	CvSelectionGroupAI const* AI_getGroup() const; // advc.003u
 	CvSelectionGroupAI* AI_getGroup(); // advc.003u
+	CvSelectionGroupAI const* AI_getTransportGroup(CvUnit* pTransport) const;
 
 	UnitAIStates AI_getUnitAIState() const;
 	void AI_setUnitAIState(UnitAIStates eNewValue);
@@ -114,6 +115,8 @@ public:
 		int iCurrentHP = -1, bool bAssumePromotion = false) const; // advc.139
 	// </advc.159>
 
+	bool AI_isObsoleteTradeShip() const;
+
 	// TODO: Add getter and make protected
 	bool m_bHasYielded;
 
@@ -124,9 +127,8 @@ protected:
 	int m_iBirthmark;
 	int m_iMovePriority;
 	int m_iLastAIChangeTurn;
-
+	int m_iLastStateChangeTurn;
 	UnitAITypes m_eUnitAIType;
-
 	UnitAIStates m_eUnitAIState;
 	ProfessionTypes m_eOldProfession;
 
@@ -196,10 +198,10 @@ protected:
 
 	int AI_getCostDifferenceFreeVsSlave() const;
 
-	bool AI_sailToPreferredPort(bool bMove = true);
-	bool AI_sailToEurope(bool bMove = true);
-	bool AI_sailToAfrica(bool bMove = true); /*** TRIANGLETRADE 10/28/08 by DPII ***/
-	bool AI_sailToPortRoyal(bool bMove = true); // R&R, ray, Port Royal
+	bool AI_sailToPreferredPort(bool bMultiTurn = true);
+	bool AI_sailToEurope(bool bMultiTurn = true);
+	bool AI_sailToAfrica(bool bMultiTurn = true); /*** TRIANGLETRADE 10/28/08 by DPII ***/
+	bool AI_sailToPortRoyal(bool bMultiTurn = true); // R&R, ray, Port Royal
 
 	CvPlot* findNearbyOceanPlot(const CvPlot& kPlot) const;	// TAC - AI Improved Naval AI - koma13
 
@@ -218,7 +220,7 @@ protected:
 	
 	bool AI_wakeCargo(UnitAITypes eUnitAI, int iPriority);
 
-	int AI_promotionValue(PromotionTypes ePromotion);
+	int AI_promotionValue(PromotionTypes ePromotion) const;
 
 	bool AI_seaPatrol();
 
@@ -243,7 +245,7 @@ protected:
 	bool AI_continueMission(int iAbortDistance, MissionAITypes eValidMissionAI, int iFlags = 0, bool bStepwise = true);
 	bool AI_breakAutomation();
 
-	bool AI_unloadWhereNeeded(int iMaxPath = MAX_INT);
+	bool AI_unloadWhereNeeded(int iMaxPath = MAX_INT, MissionAITypes eMissionAI = MISSIONAI_JOIN);
 
 	bool AI_betterJob();
 	bool AI_upgradeProfession();
@@ -321,7 +323,6 @@ protected:
 	int AI_exploreRessourcePlotValue(CvPlot* pPlot);
 	bool AI_gatherResource();
 	//End TAC Whaling, ray
-	bool AI_targetCity(int iFlags = 0);
 	bool AI_targetCityNative(int iFlags = 0);
 
 	// R&R, ray, Natives raiding party - START
@@ -440,9 +441,8 @@ protected:
 	
 	bool AI_isOnMission();
 	
-	bool AI_isObsoleteTradeShip();
-
-	bool AI_sailTo(const SailToHelper& sth, bool bMove, bool bIgnoreDanger = true);
+	bool AI_sailTo(const SailToHelper& sth, bool bMultiTurn, bool bIgnoreDanger = true);
+	void AI_sailFrom(UnitTravelStates eNewState);
 
 	void AI_sellYieldUnits(Port port);
 	void AI_unloadUnits(Port port);

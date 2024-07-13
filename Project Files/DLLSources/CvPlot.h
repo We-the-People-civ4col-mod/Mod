@@ -692,6 +692,8 @@ public:
 	bool isBarbarianUnitOnAdjacentPlot(int /*UnitClassTypes*/ iIndex) const;
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 
+	bool hasUnit() const { return (m_units.getLength() > 0); }												// Exposed to Python
+
 protected:
 	// plot visibility cache
 	void setSeeFromLevelCache();

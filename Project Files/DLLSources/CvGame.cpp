@@ -5823,7 +5823,7 @@ void CvGame::updateMoves()
 		getSorenRand().shuffleArray(aiShuffle, NULL);
 	}
 
-	int iMaxUnitUpdateAttempts = 10;
+	int iMaxUnitUpdateAttempts = 18;
 
 #ifdef _DEBUG
 	iMaxUnitUpdateAttempts += 4; // Extra iterations for debugging
@@ -5859,11 +5859,11 @@ void CvGame::updateMoves()
 						FErrorMsg("Unit was not added to the movement queue");
 						if (pHeadUnit != NULL)
 						{
-							logBBAI("CvGame::updateMoves() WARNING Player %S Unit %d was not added to the movement queue!. %S(%S)[%d, %d] %s,%s",
+							logBBAI("CvGame::updateMoves() WARNING iMaxUnitUpdateAttempts reached fpr Player %S Unit %d. %S(%S)[%d, %d] %s,%s,%s",
 								GET_PLAYER(pHeadUnit->getOwnerINLINE()).getCivilizationDescription(), pHeadUnit->getID(),
 								pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
 								pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->isOnMap() ? "isOnMap:true" : "isOnMap:false",
-								pHeadUnit->isCargo() ? "isCargo:true" : "isCargo:false");
+								pHeadUnit->isCargo() ? "isCargo:true" : "isCargo:false", pHeadUnit->canMove() ? "canMove:true" : "canMove:false");
 						}
 						if (pHeadUnit->hasCargo())
 						{
@@ -5877,7 +5877,7 @@ void CvGame::updateMoves()
 
 								if (pLoopUnit != NULL)
 								{
-									logBBAI("	Cargo: Unit %d is stuck in a loop. %S(%S)[%d, %d] %s",
+									logBBAI("	Cargo: Unit %d. %S(%S)[%d, %d] %s",
 										pLoopUnit->getID(), pLoopUnit->getName().GetCString(), GET_PLAYER(pLoopUnit->getOwnerINLINE()).getName(),
 										pLoopUnit->getX_INLINE(), pLoopUnit->getY_INLINE(), pLoopUnit->canMove() ? "canMove:true" : "canMove:false");
 								}

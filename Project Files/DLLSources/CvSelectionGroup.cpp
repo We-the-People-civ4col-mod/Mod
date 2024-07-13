@@ -223,14 +223,19 @@ void CvSelectionGroup::doTurn()
 
 		if (AI_isControlled())
 		{
-			if ((getActivityType() != ACTIVITY_MISSION) ||
-				(!canFight() && (GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 2) > 0)))
+			if (getActivityType() != ACTIVITY_MISSION || !canFight())
 			{
-				setForceUpdate(true);
-				// K-Mod. (This stuff use to be part force update's job. Now it isn't.)
-				clearMissionQueue();
-				AI().AI_cancelGroupAttack();
-				// K-Mod end
+				const bool isLandDanger = getDomainType() == DOMAIN_LAND && GET_PLAYER(getOwnerINLINE()).AI_isAnyPlotDanger(*plot(), 2);
+				const bool isSeaDanger = getDomainType() == DOMAIN_SEA && GET_PLAYER(getOwnerINLINE()).AI_isAnyWaterDanger(*plot(), *getHeadUnit(), 2);
+
+				if (isLandDanger || isSeaDanger)
+				{
+					setForceUpdate(true);
+					// K-Mod. (This stuff use to be part force update's job. Now it isn't.)
+					clearMissionQueue();
+					AI().AI_cancelGroupAttack();
+					// K-Mod end
+				}
 			}
 		}
 		else
@@ -240,9 +245,15 @@ void CvSelectionGroup::doTurn()
 
 			if (getActivityType() == ACTIVITY_MISSION)
 			{
-				if (GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 1) > 0)
+				if (getDomainType() == DOMAIN_LAND)
+				{ 
+					if (GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 1) > 0)
+						clearMissionQueue();
+				}
+				else if (getDomainType() == DOMAIN_SEA)
 				{
-					clearMissionQueue();
+					if (GET_PLAYER(getOwnerINLINE()).AI_isAnyWaterDanger(*plot(), *getHeadUnit(), 1))
+						clearMissionQueue();
 				}
 			}
 		}
@@ -309,7 +320,7 @@ bool CvSelectionGroup::showMoves(/* advc.102: */ CvPlot const& kFromPlot) const
 
 	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < MAX_PLAYERS; ++ePlayer)
 	{
-		CvPlayer& kHumanPlayer = GET_PLAYER(ePlayer);
+		const CvPlayer& kHumanPlayer = GET_PLAYER(ePlayer);
 		if (kHumanPlayer.isAlive() && kHumanPlayer.isHuman())
 		{
 			CvUnit* const pHeadUnit = getHeadUnit();
@@ -2804,11 +2815,13 @@ bool CvSelectionGroup::groupPathTo(int iX, int iY, int iFlags)
 	// K-Mod. I've added & ~MOVE_DECLARE_WAR so that if we need to declare war at this point, and haven't yet done so,
 	// the move will fail here rather than splitting the group inside groupMove.
 	// Also, I've change it to use a different pathfinder, to avoid clearing the path data - and to avoid OOS errors.
+	// WTP: Maybe skip this for civilian units
+	//if (GET_PLAYER(getOwnerINLINE()).AI_canEverDeclareWar(getHeadUnit()->AI().AI_getUnitAIType()))
 	final_path.SetSettings(this, iFlags & ~MOVE_DECLARE_WAR);
 	if (!final_path.GeneratePath(pDestPlot))
 		return false;
-
-	CvPlot* pPathPlot = final_path.GetPathFirstPlot();
+	
+	CvPlot* const pPathPlot = final_path.GetPathFirstPlot();
 	// K-Mod end
 
 	if (groupAmphibMove(*pPathPlot, static_cast<MovementFlags>(iFlags)))
@@ -3943,6 +3956,7 @@ int CvSelectionGroup::getNumUnits() const
 	return m_units.getLength();
 }
 
+// Setting eUnitAI to something else than NO_UNITAI will make the group head with that eUnitAI the leader 
 void CvSelectionGroup::mergeIntoGroup(CvSelectionGroup* pSelectionGroup, UnitAITypes eUnitAI)
 {
 	/*	merge groups, but make sure we do not change the head unit AI

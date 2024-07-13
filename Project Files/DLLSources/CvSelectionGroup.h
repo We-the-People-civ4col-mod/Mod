@@ -5,7 +5,7 @@
 #ifndef CIV4_GROUP_H
 #define CIV4_GROUP_H
 
-//#include "CvStructs.h"
+#include "CvStructs.h"
 #include "LinkedList.h"
 #include "KmodPathFinder.h"
 #include "CvInitCore.h"
@@ -154,7 +154,7 @@ public:
 	void updateMissionTimer(int iSteps = 0, /* advc.102: */ CvPlot* pFromPlot = NULL);
 
 	bool isForceUpdate();
-	void setForceUpdate(bool bNewValue);
+	void setForceUpdate(bool bNewValue);	
 	DllExport PlayerTypes getOwner() const;
 	inline PlayerTypes getOwnerINLINE() const
 	{
@@ -257,7 +257,7 @@ public:
 
 	virtual void AI_separateEmptyTransports() = 0;	// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
 	bool hasShipInPort() const;
-
+	
 	virtual bool AI_update() = 0;
 	virtual int AI_attackOdds(const CvPlot* pPlot, bool bPotentialEnemy) const = 0;
 	virtual CvUnit* AI_getBestGroupAttacker(const CvPlot* pPlot, bool bPotentialEnemy, int& iUnitOdds, bool bForce = false, bool bNoBlitz = false) const = 0;

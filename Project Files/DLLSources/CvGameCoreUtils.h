@@ -364,7 +364,7 @@ DllExport void stringToBools(const char* szString, int* iNumBools, bool** ppBool
 
 void getDirectionTypeString(CvWString& szString, DirectionTypes eDirectionType);
 void getCardinalDirectionTypeString(CvWString& szString, CardinalDirectionTypes eDirectionType);
-void getActivityTypeString(CvWString& szString, ActivityTypes eActivityType);
+CvWString getActivityTypeString(ActivityTypes eActivityType);
 void getMissionTypeString(CvWString& szString, MissionTypes eMissionType);
 void getMissionAIString(CvWString& szString, MissionAITypes eMissionAI);
 void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI);
