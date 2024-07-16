@@ -840,7 +840,7 @@
 		<German>Rasterlinien ein-/ausblenden</German>
 		<Italian>Attiva/disattiva la griglia</Italian>
 		<Spanish>Activar cuadrícula</Spanish>
-		<Russian>Показать/скрыть сетку, разграничивающую плитки карты</Russian>
+		<Russian>Показать/скрыть сетку, разграничивающую клетки карты</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_UNIT_ICONS</Tag>

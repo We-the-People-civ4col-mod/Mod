@@ -76,33 +76,33 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_0</Tag>
 		<English>Minimum 3</English>
-		<Russian>Минимум 3 плитки</Russian>
+		<Russian>Минимум 3 клетки</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_1</Tag>
 		<English>Minimum 5</English>
-		<Russian>Минимум 5 плиток</Russian>
+		<Russian>Минимум 5 клеток</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_2</Tag>
 		<English>Minimum 7 Plots per Large River (default)</English>
 		<French>Minimum 7 cases par grande rivière (par défaut)</French>
-		<Russian>Минимум 7 плиток (по умолчанию)</Russian>
+		<Russian>Минимум 7 клеток (по умолчанию)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_3</Tag>
 		<English>Minimum 9</English>
-		<Russian>Минимум 9 плиток</Russian>
+		<Russian>Минимум 9 клеток</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_4</Tag>
 		<English>Minimum 11</English>
-		<Russian>Минимум 11 плиток</Russian>
+		<Russian>Минимум 11 клеток</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_5</Tag>
 		<English>Minimum 13</English>
-		<Russian>Минимум 13 плиток</Russian>
+		<Russian>Минимум 13 клеток</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT</Tag>
