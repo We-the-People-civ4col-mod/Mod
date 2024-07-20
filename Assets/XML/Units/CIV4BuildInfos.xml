@@ -4412,7 +4412,7 @@
 			<HotKey>KB_R</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
+			<bCtrlDown>1</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>Art\Interface\Game Hud\Actions\Button_Establish Hunters_Stage.dds</Button>
 		</BuildInfo>
@@ -4436,172 +4436,7 @@
 					<Yields>
 						<Yield>
 							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>20</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_TROPICAL_GROVES</FeatureType>
-					<iTime>800</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>20</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_MANGROVE</FeatureType>
-					<iTime>800</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>20</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST</FeatureType>
-					<iTime>600</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>20</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_EVERGREEN</FeatureType>
-					<iTime>600</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>20</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_DENSE_FOREST</FeatureType>
-					<iTime>1000</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>40</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_FOREST_TUNDRA</FeatureType>
-					<iTime>600</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>20</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_ANCIENT_FOREST</FeatureType>
-					<iTime>1000</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>40</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_LIGHT_FOREST</FeatureType>
-					<iTime>400</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>10</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_SWAMP</FeatureType>
-					<iTime>600</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>10</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_BOG</FeatureType>
-					<iTime>400</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>10</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_BARREL_CACTUS</FeatureType>
-					<iTime>600</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>10</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_CACTUS_TREES</FeatureType>
-					<iTime>600</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>10</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_LICHEN</FeatureType>
-					<iTime>400</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_FOOD</YieldType>
-							<iYield>10</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_MOSS</FeatureType>
-					<iTime>400</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_FOOD</YieldType>
-							<iYield>10</iYield>
-						</Yield>
-					</Yields>
-					<bRemove>1</bRemove>
-				</FeatureStruct>
-				<FeatureStruct>
-					<FeatureType>FEATURE_THICKET</FeatureType>
-					<iTime>400</iTime>
-					<Yields>
-						<Yield>
-							<YieldType>YIELD_LUMBER</YieldType>
-							<iYield>10</iYield>
+							<iYield>100</iYield>
 						</Yield>
 					</Yields>
 					<bRemove>1</bRemove>
@@ -4610,7 +4445,7 @@
 			<HotKey>KB_R</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
+			<bCtrlDown>1</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<Button>Art\Interface\Game Hud\Actions\Button_Establish_Salina.dds</Button>
 		</BuildInfo>
