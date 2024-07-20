@@ -376,7 +376,7 @@
 			<Button>,Art/colonization_atlas_buildings.dds,5,15</Button>
 		</ImprovementArtInfo>
 		<ImprovementArtInfo>
-			<Type>ART_DEF_IMPROVEMENT_FISHING_NETS_RIVER</Type>
+			<Type>ART_DEF_IMPROVEMENT_FISHING_NETS_FRESHWATER</Type>
 			<bExtraAnimations>0</bExtraAnimations>
 			<fScale>1.4</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>

@@ -6752,7 +6752,7 @@
 			<PrereqNatureYields>
 				<YieldIntegerPair>
 					<YieldType>YIELD_FOOD</YieldType>
-					<iValue>1</iValue>
+					<iValue>2</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_GEMS</YieldType>
@@ -6797,19 +6797,15 @@
 			<bOutsideBorders>0</bOutsideBorders>
 			<TerrainMakesValids>
 				<TerrainMakesValid>
-					<TerrainType>TERRAIN_LAKE</TerrainType>
-					<bMakesValid>1</bMakesValid>
-				</TerrainMakesValid>
-				<TerrainMakesValid>
-					<TerrainType>TERRAIN_ICE_LAKE</TerrainType>
-					<bMakesValid>1</bMakesValid>
-				</TerrainMakesValid>
-				<TerrainMakesValid>
 					<TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
 				<TerrainMakesValid>
 					<TerrainType>TERRAIN_COAST</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_OCEAN</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
 			</TerrainMakesValids>
@@ -6821,10 +6817,10 @@
 			<bGraphicalOnly>0</bGraphicalOnly>
 		</ImprovementInfo>
 		<ImprovementInfo>
-			<Type>IMPROVEMENT_FISHING_NETS_RIVER</Type>
-			<Description>TXT_KEY_IMPROVEMENT_FISHING_NETS_RIVER</Description>
-			<Civilopedia>TXT_KEY_IMPROVEMENT_FISHING_NETS_RIVER_PEDIA</Civilopedia>
-			<ArtDefineTag>ART_DEF_IMPROVEMENT_FISHING_NETS_RIVER</ArtDefineTag>
+			<Type>IMPROVEMENT_FISHING_NETS_FRESHWATER</Type>
+			<Description>TXT_KEY_IMPROVEMENT_FISHING_NETS_FRESHWATER</Description>
+			<Civilopedia>TXT_KEY_IMPROVEMENT_FISHING_NETS_FRESHWATER_PEDIA</Civilopedia>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_FISHING_NETS_FRESHWATER</ArtDefineTag>
 			<PrereqNatureYields>
 				<YieldIntegerPair>
 					<YieldType>YIELD_FOOD</YieldType>
@@ -6832,7 +6828,7 @@
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_GEMS</YieldType>
-					<iValue>2</iValue>
+					<iValue>1</iValue>
 				</YieldIntegerPair>
 			</PrereqNatureYields>
 			<YieldIncreases>
@@ -6874,6 +6870,14 @@
 			<TerrainMakesValids>
 				<TerrainMakesValid>
 					<TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_LAKE</TerrainType>
+					<bMakesValid>1</bMakesValid>
+				</TerrainMakesValid>
+				<TerrainMakesValid>
+					<TerrainType>TERRAIN_ICE_LAKE</TerrainType>
 					<bMakesValid>1</bMakesValid>
 				</TerrainMakesValid>
 			</TerrainMakesValids>

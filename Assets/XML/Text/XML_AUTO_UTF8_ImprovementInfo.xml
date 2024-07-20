@@ -1246,18 +1246,18 @@
 		<German>[ICON_BULLET]Kann nur angrenzend an [COLOR_UNIT_TEXT]Wassergeländefelder[COLOR_REVERT], wie z.B. Küsten, flache Küsten, große Flüsse, Seen oder Eisseen gebaut werden [NEWLINE][ICON_BULLET]Erlaubt [COLOR_UNIT_TEXT]Küstenschiffen [COLOR_REVERT] und [COLOR_UNIT_TEXT]Fischerbooten[COLOR_REVERT] die Durchfahrt über [COLOR_HIGHLIGHT_TEXT]Land[COLOR_REVERT]</German>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS_RIVER</Tag>
-		<English>River Fishing Nets</English>
-		<French>Filet de Pêche en Rivière</French>
+		<Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS_FRESHWATER</Tag>
+		<English>Freshwater Fishing Nets</English>
+		<French>Filets de pêche en eau douce</French>
 		<German>
-			<Text>Fischernetz am Fluss</Text>
+			<Text>Süßwasser-Fischernetze</Text>
 			<Gender>Neuter</Gender>
 			<Plural>1</Plural>
 		</German>
 		<Russian>Сеть для речной рыбалки</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS_RIVER_PEDIA</Tag>
+		<Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS_FRESHWATER_PEDIA</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Fishing nets[COLOR_REVERT] can be woven to scoop up a shoal of fish or, with gill nets, to trap fish of the desired size. It's one of the two main systems used by fishing boats, the other being trawling with hooks.</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Fischernetze[COLOR_REVERT] werden genutzt um einen Fischschwarm zu fangen, oder mit sogenannten Kiemennetzen auch nur Fische einer bestimmten Größe. Daneben gibt es noch ein anderes Hauptsystem, das von Fischern verwendet wird: das Schleppnetz, welches mit einem Haken hinter dem Schiff hergezogen wird.</German>
 	</TEXT>
@@ -1336,10 +1336,18 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_LAKE</Tag>
-		<English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]ice lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]coasts[\LINK] or [LINK=TERRAIN_ICE_LAKE]shallow coasts[\LINK]</English>
+		<English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water lakes[\LINK] or [LINK=TERRAIN_ICE_LAKE]ice lakes[\LINK].</English>
 		<French>[ICON_BULLET]Ne peut être construit que sur les [LINK=TERRAIN_LAKE]lacs d'eau douce[\LINK], les [LINK=TERRAIN_ICE_LAKE]lacs de glace[\LINK], les [LINK=TERRAIN_ICE_LAKE]côtes[\LINK] ou les [LINK=TERRAIN_ICE_LAKE]côtes peu profondes[\LINK].</French>
 		<German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LAKE]Süßwassersee[\LINK], [LINK=TERRAIN_ICE_LAKE]Eisseen[\LINK], [LINK=TERRAIN_ICE_LAKE]Küsten[\LINK] oderr [LINK=TERRAIN_ICE_LAKE]flachen Küsten[\LINK] gebaut werden.</German>
 		<Russian>[ICON_BULLET]Можно строить только на [LINK=TERRAIN_LAKE]пресноводном озере[\LINK], [LINK=TERRAIN_ICE_LAKE]замерзшем озере[\LINK], [LINK=TERRAIN_ICE_LAKE]побережье[\LINK] или [LINK=TERRAIN_ICE_LAKE]мелководье[\LINK]</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_SALTWATER</Tag>
+		<English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_SHALLOW_COAST]shallow coasts[\LINK], [LINK=TERRAIN_COAST]coasts[\LINK], or [LINK=TERRAIN_OCEAN]ocean[\LINK].</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_FRESHWATER</Tag>
+		<English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]ice lakes[\LINK], or [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK].</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FOR_SPAWNING_UNITS</Tag>

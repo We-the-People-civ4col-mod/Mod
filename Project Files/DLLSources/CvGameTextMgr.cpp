@@ -7359,27 +7359,63 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 
 		if (info.isWater())
 		{
-			//WTP, ray, Large Rivers - START
-			if (info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
+			//WTP - Dyllin - modified to accomodate freshwater, saltwater, plus lake and large river only improvements.
+			
+			//Saltwater only
+			if (info.getTerrainMakesValid(TERRAIN_OCEAN) &&
+				info.getTerrainMakesValid(TERRAIN_COAST) &&
+				info.getTerrainMakesValid(TERRAIN_SHALLOW_COAST) &&
+				!info.getTerrainMakesValid(TERRAIN_LAKE) &&
+				!info.getTerrainMakesValid(TERRAIN_ICE_LAKE) &&
+				!info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_SALTWATER"));
+			}
+
+			//Freshwater only
+			else if (!info.getTerrainMakesValid(TERRAIN_OCEAN) &&
+				!info.getTerrainMakesValid(TERRAIN_COAST) &&
+				!info.getTerrainMakesValid(TERRAIN_SHALLOW_COAST) &&
+				info.getTerrainMakesValid(TERRAIN_LAKE) &&
+				info.getTerrainMakesValid(TERRAIN_ICE_LAKE) &&
+				info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
+			{
+				szBuffer.append(NEWLINE);
+				szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_FRESHWATER"));
+			}
+
+			//Large rivers only
+			else if (!info.getTerrainMakesValid(TERRAIN_OCEAN) &&
+				!info.getTerrainMakesValid(TERRAIN_COAST) &&
+				!info.getTerrainMakesValid(TERRAIN_SHALLOW_COAST) &&
+				!info.getTerrainMakesValid(TERRAIN_LAKE) &&
+				!info.getTerrainMakesValid(TERRAIN_ICE_LAKE) &&
+				info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
 			{
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_LARGE_RIVERS"));
 			}
 
-			//WTP, ray, Lakes
-			if (info.getTerrainMakesValid(TERRAIN_LAKE) || info.getTerrainMakesValid(TERRAIN_ICE_LAKE))
+			//Lakes only
+			else if (!info.getTerrainMakesValid(TERRAIN_OCEAN) &&
+				!info.getTerrainMakesValid(TERRAIN_COAST) &&
+				!info.getTerrainMakesValid(TERRAIN_SHALLOW_COAST) &&
+				info.getTerrainMakesValid(TERRAIN_LAKE) &&
+				info.getTerrainMakesValid(TERRAIN_ICE_LAKE) &&
+				!info.getTerrainMakesValid(TERRAIN_LARGE_RIVERS))
 			{
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_LAKE"));
 			}
 
-			// old code in else
+			//Goes anywhere there's water.
 			else
 			{
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_BUILD_ONLY_WATER"));
 			}
-			//WTP, ray, Large Rivers - END
+			//WTP - Dyllin - End
 		}
 
 		if (info.isRequiresFlatlands())

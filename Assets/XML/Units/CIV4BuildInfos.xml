@@ -4375,13 +4375,13 @@
 			<Button>Art\Interface\Game Hud\Actions\Button_EstablishFishNet.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_FISHING_NETS_RIVER</Type>
-			<Description>TXT_KEY_BUILD_FISHING_NETS_RIVER</Description>
-			<Help>TXT_KEY_BUILD_FISHING_NETS_RIVER_HELP</Help>
+			<Type>BUILD_FISHING_NETS_FRESHWATER</Type>
+			<Description>TXT_KEY_BUILD_FISHING_NETS_FRESHWATER</Description>
+			<Help>TXT_KEY_BUILD_FISHING_NETS_FRESHWATER_HELP</Help>
 			<iTime>1000</iTime>
 			<iCost>100</iCost>
 			<bKill>0</bKill>
-			<ImprovementType>IMPROVEMENT_FISHING_NETS_RIVER</ImprovementType>
+			<ImprovementType>IMPROVEMENT_FISHING_NETS_FRESHWATER</ImprovementType>
 			<PrereqTerrainType>NONE</PrereqTerrainType>
 			<ResultTerrainType>NONE</ResultTerrainType>
 			<ResultFeatureType>NONE</ResultFeatureType>
