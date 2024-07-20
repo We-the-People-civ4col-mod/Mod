@@ -77,6 +77,7 @@ class MapConstants :
         self.mapOptionNames.append("river commonality")
         self.mapOptionNames.append("river length")
         self.mapOptionNames.append("land percent")
+        self.mapOptionNames.append("terrain roughness")
         return
 
     def getMapOption(self, name):
@@ -98,12 +99,18 @@ class MapConstants :
         #privateers can still be useful.
         self.distanceToEurope = 4
         
-        #How many map squares will be above peak threshold and thus 'peaks'.
+        #What percentage of land map squares will become Peaks.
         self.PeakPercent = 0.05
         self.volcanoProbability = 1.0/150.0
-        #How many map squares will be above hill threshold and thus 'hills' unless
-        #they are also above peak threshold in which case they will be 'peaks'.
-        self.HillPercent = 0.15
+        #What percentage of land map squares will become Hills.
+        self.HillPercent = 0.1
+
+        #Determines the threshold to check the height map against when calculating
+        #whether a square will become a Hill or Peak.
+        #If a square meets the threshold for a Peak, it also meets the threshold for
+        #a Hill, so the HillThresholdPercent must include the PeakThresholdPercent.
+        self.PeakThresholdPercent = self.PeakPercent * self.landPercent
+        self.HillThresholdPercent = (self.HillPercent * self.landPercent) + self.PeakThresholdPercent
 
         #In addition to the relative peak and hill generation, there is also a
         #process that changes flats to hills or peaks based on altitude. This tends
@@ -488,6 +495,30 @@ class MapConstants :
                 self.landPercent = 0.45
             elif selectionID == 3:
                 self.landPercent = 0.55
+
+            #Terrain Roughness
+            selectionID = mmap.getCustomMapOption(self.getMapOption("terrain roughness"))
+            if selectionID == 0:
+                self.PeakPercent = 0.1
+                self.HillPercent = 0.1
+                self.PeakThresholdPercent = self.PeakPercent * self.landPercent
+                self.HillThresholdPercent = (self.HillPercent * self.landPercent) + self.PeakThresholdPercent
+            elif selectionID == 1:
+                self.PeakPercent = 0.165
+                self.HillPercent = 0.165
+                self.PeakThresholdPercent = self.PeakPercent * self.landPercent
+                self.HillThresholdPercent = (self.HillPercent * self.landPercent) + self.PeakThresholdPercent
+            elif selectionID == 2:
+                self.PeakPercent = 0.23
+                self.HillPercent = 0.23
+                self.PeakThresholdPercent = self.PeakPercent * self.landPercent
+                self.HillThresholdPercent = (self.HillPercent * self.landPercent) + self.PeakThresholdPercent
+            elif selectionID == 3:
+                self.PeakPercent = 0.3
+                self.HillPercent = 0.3
+                self.PeakThresholdPercent = self.PeakPercent * self.landPercent
+                self.HillThresholdPercent = (self.HillPercent * self.landPercent) + self.PeakThresholdPercent
+
            
         else:
             # typical choices here
@@ -1987,8 +2018,8 @@ class SmallMaps :
 
         NormalizeMap(diffMap,mc.width,mc.height)
                     
-        peakHeight = FindValueFromPercent(diffMap,mc.width,mc.height,mc.PeakPercent,0.001,True)
-        hillHeight = FindValueFromPercent(diffMap,mc.width,mc.height,mc.HillPercent,0.001,True)
+        peakHeight = FindValueFromPercent(diffMap,mc.width,mc.height,mc.PeakThresholdPercent,0.001,True)
+        hillHeight = FindValueFromPercent(diffMap,mc.width,mc.height,mc.HillThresholdPercent,0.001,True)
 
         self.plotMap = array('i')
         #initialize map with 0CEAN
@@ -4390,6 +4421,8 @@ def getCustomMapOptionName(argsList):
              return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH", ())
         elif mc.mapOptionNames[optionID] == "land percent":
              return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT", ())
+        elif mc.mapOptionNames[optionID] == "terrain roughness":
+             return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS", ())
        
         return u""
 	
@@ -4419,6 +4452,8 @@ def getNumCustomMapOptionValues(argsList):
         elif mc.mapOptionNames[optionID] == "river length":
             return 6
         elif mc.mapOptionNames[optionID] == "land percent":
+            return 4
+        elif mc.mapOptionNames[optionID] == "terrain roughness":
             return 4
         return 0
 	
@@ -4550,6 +4585,16 @@ def getCustomMapOptionDescAt(argsList):
             return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_2", ())
         elif selectionID == 3:
             return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_3", ())
+
+    elif mc.mapOptionNames[optionID] == "terrain roughness":
+        if selectionID == 0:
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_0", ())
+        elif selectionID == 1:
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_1", ())
+        elif selectionID == 2:
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_2", ())
+        elif selectionID == 3:
+            return localText.getText("TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_3", ())
     return u""
 	
 def getCustomMapOptionDefault(argsList):
@@ -4588,6 +4633,9 @@ def getCustomMapOptionDefault(argsList):
     elif mc.mapOptionNames[optionID] == "land percent":
         return 1
 
+    elif mc.mapOptionNames[optionID] == "terrain roughness":
+        return 1
+
     return 0
     
 def isRandomCustomMapOption(argsList):
@@ -4616,6 +4664,8 @@ def isRandomCustomMapOption(argsList):
     elif mc.mapOptionNames[optionID] == "river length":
         return True
     elif mc.mapOptionNames[optionID] == "land percent":
+        return True
+    elif mc.mapOptionNames[optionID] == "terrain roughness":
         return True
 
     return False

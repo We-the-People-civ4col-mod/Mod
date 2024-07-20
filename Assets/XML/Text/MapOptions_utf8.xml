@@ -141,22 +141,22 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_0</Tag>
-		<English>Flat</English>
+		<English>Flat 80% Flat 10% Hill 10% Peak</English>
 		<Russian>Плоская</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_1</Tag>
-		<English>Rolling</English>
+		<English>Rolling 67%F 16.5%H 16.5%P (default)</English>
 		<Russian>Пологие холмы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_2</Tag>
-		<English>Hilly</English>
+		<English>Hilly 54%F 23%H 23%P</English>
 		<Russian>Холмистая</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_3</Tag>
-		<English>Mountainous</English>
+		<English>Mountainous 40%F 30%H 30%P</English>
 		<Russian>Горная</Russian>
 	</TEXT>
 </Civ4GameText>
