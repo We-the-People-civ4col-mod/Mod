@@ -1731,11 +1731,11 @@ void CvUnit::updateCombat(bool bQuick)
 			}
 
 			// If defender is a civilian unit, capture it and all other civilian units on the plot
-			if (	!isNoUnitCapture() &&
-						pDefender->isCapturableLandUnit() &&
- 						!GET_PLAYER(getOwnerINLINE()).isNative() &&
-						!GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()) &&
-						!GC.getGameINLINE().isChurchPlayer(getOwnerINLINE()) )
+			if (!isNoUnitCapture() &&
+				pDefender->isCapturableLandUnit() &&
+				!GET_PLAYER(getOwnerINLINE()).isNative() &&
+				!GC.getGameINLINE().isBarbarianPlayer(getOwnerINLINE()) &&
+				!GC.getGameINLINE().isChurchPlayer(getOwnerINLINE()))
 			{
 				pDefender->setCapturingPlayer(getOwnerINLINE());
 				CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
@@ -1745,6 +1745,19 @@ void CvUnit::updateCombat(bool bQuick)
 				while (pUnitNode != NULL)
 				{
 					IDs.push_back(pUnitNode->m_data);
+
+					//Dyllin - Have to mark all civilians as captured before killing them due to strange capture bug that would move the units
+					//that were to be captured to a different tile despite also capturing them.
+					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+					if (pLoopUnit != NULL && pLoopUnit != pDefender)
+					{
+						if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot) &&
+							(pLoopUnit->isCapturableLandUnit() || pLoopUnit->isYield()))
+						{
+							pLoopUnit->setCapturingPlayer(getOwnerINLINE());
+						}
+					}
+
 					pUnitNode = pPlot->nextUnitNode(pUnitNode);
 				}
 
@@ -1758,9 +1771,8 @@ void CvUnit::updateCombat(bool bQuick)
 					if (pLoopUnit != NULL && pLoopUnit != pDefender)
 					{
 						if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot) &&
-								(pLoopUnit->isCapturableLandUnit() || pLoopUnit->isYield()))
+							(pLoopUnit->isCapturableLandUnit() || pLoopUnit->isYield()))
 						{
-							pLoopUnit->setCapturingPlayer(getOwnerINLINE());
 							pLoopUnit->kill(false);
 						}
 					}
