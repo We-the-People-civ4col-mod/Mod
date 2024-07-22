@@ -1339,15 +1339,17 @@
 		<English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water lakes[\LINK] or [LINK=TERRAIN_ICE_LAKE]ice lakes[\LINK].</English>
 		<French>[ICON_BULLET]Ne peut être construit que sur les [LINK=TERRAIN_LAKE]lacs d'eau douce[\LINK], les [LINK=TERRAIN_ICE_LAKE]lacs de glace[\LINK], les [LINK=TERRAIN_ICE_LAKE]côtes[\LINK] ou les [LINK=TERRAIN_ICE_LAKE]côtes peu profondes[\LINK].</French>
 		<German>[ICON_BULLET]Kann nur auf [LINK=TERRAIN_LAKE]Süßwassersee[\LINK], [LINK=TERRAIN_ICE_LAKE]Eisseen[\LINK], [LINK=TERRAIN_ICE_LAKE]Küsten[\LINK] oderr [LINK=TERRAIN_ICE_LAKE]flachen Küsten[\LINK] gebaut werden.</German>
-		<Russian>[ICON_BULLET]Можно строить только на [LINK=TERRAIN_LAKE]пресноводном озере[\LINK], [LINK=TERRAIN_ICE_LAKE]замерзшем озере[\LINK], [LINK=TERRAIN_ICE_LAKE]побережье[\LINK] или [LINK=TERRAIN_ICE_LAKE]мелководье[\LINK]</Russian>
+		<Russian>[ICON_BULLET]Можно строить только на [LINK=TERRAIN_LAKE]пресноводном[\LINK] или [LINK=TERRAIN_ICE_LAKE]замёрзшем[\LINK] озёрах.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_SALTWATER</Tag>
 		<English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_SHALLOW_COAST]shallow coasts[\LINK], [LINK=TERRAIN_COAST]coasts[\LINK], or [LINK=TERRAIN_OCEAN]ocean[\LINK].</English>
+		<Russian>[ICON_BULLET]Можно строить только на [LINK=TERRAIN_COAST]побережье[\LINK], [LINK=TERRAIN_SHALLOW_COAST]мелководье[\LINK] или в [LINK=TERRAIN_OCEAN]океане[\LINK].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_FRESHWATER</Tag>
 		<English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]ice lakes[\LINK], or [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK].</English>
+		<Russian>[ICON_BULLET]Можно строить только на [LINK=TERRAIN_LAKE]пресноводном[\LINK] и [LINK=TERRAIN_ICE_LAKE]замёрзшем[\LINK] озёрах или на [LINK=TERRAIN_LARGE_RIVERS]больших реках[\LINK].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FOR_SPAWNING_UNITS</Tag>
