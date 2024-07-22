@@ -439,7 +439,8 @@ class CvDiplomacy:
 
 			self.addUserComment("USER_DIPLOCOMMENT_PRIVATEERS_ADMIT", -1, -1)
 			self.addUserComment("USER_DIPLOCOMMENT_PRIVATEERS_DENY", -1, -1)
-			self.addUserComment("USER_DIPLOCOMMENT_PRIVATEERS_WAR", -1, -1)
+			if (gc.getTeam(gc.getGame().getActiveTeam()).canDeclareWar(gc.getPlayer(self.diploScreen.getWhoTradingWith()).getTeam())):
+				self.addUserComment("USER_DIPLOCOMMENT_PRIVATEERS_WAR", -1, -1)
 		# WTP, ray, Privateers DLL Diplo Event - END
 		
 		# RaR, ray Church Wars
