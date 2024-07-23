@@ -6820,7 +6820,7 @@
 			<Type>IMPROVEMENT_FISHING_NETS_FRESHWATER</Type>
 			<Description>TXT_KEY_IMPROVEMENT_FISHING_NETS_FRESHWATER</Description>
 			<Civilopedia>TXT_KEY_IMPROVEMENT_FISHING_NETS_FRESHWATER_PEDIA</Civilopedia>
-			<ArtDefineTag>ART_DEF_IMPROVEMENT_FISHING_NETS_FRESHWATER</ArtDefineTag>
+			<ArtDefineTag>ART_DEF_IMPROVEMENT_FISHING_NETS</ArtDefineTag>
 			<PrereqNatureYields>
 				<YieldIntegerPair>
 					<YieldType>YIELD_FOOD</YieldType>
