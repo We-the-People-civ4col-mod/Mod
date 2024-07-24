@@ -478,9 +478,7 @@ public:
 	std::vector<CvUnitClassInfo*>& getUnitClassInfo();
 	CvUnitClassInfo& getUnitClassInfo(UnitClassTypes eUnitClassNum);
 
-	DllExport int getNumActionInfos();
-	std::vector<CvActionInfo*>& getActionInfo();
-	DllExport CvActionInfo& getActionInfo(int i);
+	CvActionInfo& getActionInfo(int i);
 
 	std::vector<CvMissionInfo*>& getMissionInfo();
 	DllExport CvMissionInfo& getMissionInfo(MissionTypes eMissionNum);
@@ -1130,7 +1128,6 @@ protected:
 	std::vector<CvGraphicOptionInfo*> m_paGraphicOptionInfos;
 	std::vector<CvEmphasizeInfo*> m_paEmphasizeInfo;
 	std::vector<CvCultureLevelInfo*> m_paCultureLevelInfo;
-	std::vector<CvActionInfo*> m_paActionInfo;
 	std::vector<CvMissionInfo*> m_paMissionInfo;
 	std::vector<CvControlInfo*> m_paControlInfo;
 	std::vector<CvCommandInfo*> m_paCommandInfo;

@@ -523,6 +523,12 @@
     <ClCompile Include="DLLSources\XMLReaderAlert.cpp">
       <Filter>Classes\AlertWindow\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\Types\ActionTypes.cpp">
+      <Filter>CV\Info\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\Types\ActionSharedTypes.cpp">
+      <Filter>CV\Info\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -1011,6 +1017,9 @@
     <ClInclude Include="DLLSources\GlobalInfos.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\Types\ActionTypes.h">
+      <Filter>CV\Info\Types</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">
@@ -1131,6 +1140,15 @@
     </Filter>
     <Filter Include="Python\CvPythonCaller">
       <UniqueIdentifier>{a69da161-513e-408d-bb4e-10649825d5ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CV\Info">
+      <UniqueIdentifier>{eb8011e4-0d8e-4f4e-93bb-5ee164afe428}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CV\Info\Types">
+      <UniqueIdentifier>{75a3c5a9-0b67-4d82-ad8f-e462e3dac4b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CV\Info\CPP">
+      <UniqueIdentifier>{f4433e8a-3bd1-46bf-b456-0479262af409}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

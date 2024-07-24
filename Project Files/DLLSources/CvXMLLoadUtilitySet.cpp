@@ -1677,6 +1677,35 @@ void CvXMLLoadUtility::SetGlobalStringArray(CvString **ppszString, char* szTagNa
 }
 
 
+class ActionInitData
+{
+public:
+	ActionInitData(ActionSubTypes initSubtype, int initIndex, int initPriority) : subtype(initSubtype), index(initIndex), priority(initPriority) {}
+
+	bool operator<(const ActionInitData rhs) const;
+
+	ActionSubTypes subtype;
+	int index;
+	int priority;
+};
+
+bool ActionInitData::operator<(const ActionInitData rhs) const
+{
+	// highest priority first
+	if (priority != rhs.priority)
+	{
+		return priority > rhs.priority;
+	}
+
+	// sort by which file the hotkey comes from
+	if (subtype != rhs.subtype)
+	{
+		return subtype < rhs.subtype;
+	}
+
+	// when everything else fails, sort by index in the file
+	return index < rhs.index;
+}
 
 
 //------------------------------------------------------------------------------------------------------
@@ -1749,146 +1778,65 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		gDLL->MessageBox(szMessage, "XML Error");
 	}
 
-	int* piOrderedIndex=NULL;
-
-	int iNumOrigVals = GC.getNumActionInfos();
-
-	int iNumActionInfos = iNumOrigVals +
-		NUM_INTERFACEMODE_TYPES +
-		GC.getNumBuildInfos() +
-		GC.getNumPromotionInfos() +
-		GC.getNumUnitInfos() +
-		NUM_CONTROL_TYPES +
-		NUM_COMMAND_TYPES +
-		GC.getNumAutomateInfos() +
-		NUM_MISSION_TYPES;
-
-	int* piIndexList = new int[iNumActionInfos];
-	int* piPriorityList = new int[iNumActionInfos];
-	int* piActionInfoTypeList = new int[iNumActionInfos];
-
-	int iTotalActionInfoCount = 0;
+	std::vector<CvActionInfo>& infos = INFO.m_info.m_actions;
 
 	// loop through control info
-	for (i=0;i<NUM_COMMAND_TYPES;i++)
+	for (CommandTypes eCommand = FIRST_COMMAND; eCommand < NUM_COMMAND_TYPES; ++eCommand)
 	{
-		piIndexList[iTotalActionInfoCount] = i;
-		piPriorityList[iTotalActionInfoCount] = GC.getCommandInfo((CommandTypes)i).getOrderPriority();
-		piActionInfoTypeList[iTotalActionInfoCount] = ACTIONSUBTYPE_COMMAND;
-		iTotalActionInfoCount++;
+		CvActionInfo temp(eCommand);
+		infos.push_back(temp);
 	}
 
-	for (i=0;i<NUM_INTERFACEMODE_TYPES;i++)
+	for (InterfaceModeTypes eTypes = FIRST_INTERFACEMODE; eTypes < NUM_INTERFACEMODE_TYPES; ++eTypes)
 	{
-		piIndexList[iTotalActionInfoCount] = i;
-		piPriorityList[iTotalActionInfoCount] = GC.getInterfaceModeInfo((InterfaceModeTypes)i).getOrderPriority();
-		piActionInfoTypeList[iTotalActionInfoCount] = ACTIONSUBTYPE_INTERFACEMODE;
-		iTotalActionInfoCount++;
+		CvActionInfo temp(eTypes);
+		infos.push_back(temp);
 	}
 
-	for (i=0;i<GC.getNumBuildInfos();i++)
+	for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; ++eBuild)
 	{
-		piIndexList[iTotalActionInfoCount] = i;
-		piPriorityList[iTotalActionInfoCount] = GC.getBuildInfo((BuildTypes)i).getOrderPriority();
-		piActionInfoTypeList[iTotalActionInfoCount] = ACTIONSUBTYPE_BUILD;
-		iTotalActionInfoCount++;
+		CvActionInfo temp(eBuild);
+		infos.push_back(temp);
 	}
 
-	for (i=0;i<GC.getNumPromotionInfos();i++)
+	for (PromotionTypes ePromotion = FIRST_PROMOTION; ePromotion < NUM_PROMOTION_TYPES; ++ePromotion)
 	{
-		piIndexList[iTotalActionInfoCount] = i;
-		piPriorityList[iTotalActionInfoCount] = GC.getPromotionInfo((PromotionTypes)i).getOrderPriority();
-		piActionInfoTypeList[iTotalActionInfoCount] = ACTIONSUBTYPE_PROMOTION;
-		iTotalActionInfoCount++;
+		CvActionInfo temp(ePromotion);
+		infos.push_back(temp);
 	}
 
-	for (i=0;i<GC.getNumUnitInfos();i++)
+	for (UnitTypes eUnit = FIRST_UNIT; eUnit < NUM_UNIT_TYPES; ++eUnit)
 	{
-		piIndexList[iTotalActionInfoCount] = i;
-		piPriorityList[iTotalActionInfoCount] = GC.getUnitInfo((UnitTypes)i).getOrderPriority();
-		piActionInfoTypeList[iTotalActionInfoCount] = ACTIONSUBTYPE_UNIT;
-		iTotalActionInfoCount++;
+		CvActionInfo temp(eUnit);
+		infos.push_back(temp);
 	}
 
-	for (i=0;i<NUM_CONTROL_TYPES;i++)
+	for (ControlTypes eControl = FIRST_CONTROL; eControl < NUM_CONTROL_TYPES; ++eControl)
 	{
-		piIndexList[iTotalActionInfoCount] = i;
-		piPriorityList[iTotalActionInfoCount] = GC.getControlInfo((ControlTypes)i).getOrderPriority();
-		piActionInfoTypeList[iTotalActionInfoCount] = ACTIONSUBTYPE_CONTROL;
-		iTotalActionInfoCount++;
+		CvActionInfo temp(eControl);
+		infos.push_back(temp);
 	}
 
-	for (i=0;i<GC.getNumAutomateInfos();i++)
+	for (AutomateTypes eAutomate = FIRST_AUTOMATE; eAutomate < NUM_AUTOMATE_TYPES; ++eAutomate)
 	{
-		piIndexList[iTotalActionInfoCount] = i;
-		piPriorityList[iTotalActionInfoCount] = GC.getAutomateInfo(i).getOrderPriority();
-		piActionInfoTypeList[iTotalActionInfoCount] = ACTIONSUBTYPE_AUTOMATE;
-		iTotalActionInfoCount++;
+		CvActionInfo temp(eAutomate);
+		infos.push_back(temp);
 	}
 
-	for (i=0;i<NUM_MISSION_TYPES;i++)
+	for (MissionTypes eMission = FIRST_MISSION; eMission < NUM_MISSION_TYPES; ++eMission)
 	{
-		piIndexList[iTotalActionInfoCount] = i;
-		piPriorityList[iTotalActionInfoCount] = GC.getMissionInfo((MissionTypes)i).getOrderPriority();
-		piActionInfoTypeList[iTotalActionInfoCount] = ACTIONSUBTYPE_MISSION;
-		iTotalActionInfoCount++;
+		CvActionInfo temp(eMission);
+		infos.push_back(temp);
 	}
 
-	SAFE_DELETE_ARRAY(piOrderedIndex);
-	piOrderedIndex = new int[iNumActionInfos];
+	ActionTypes::initLength();
 
-	orderHotkeyInfo(&piOrderedIndex, piPriorityList, iNumActionInfos);
-	for (i=0;i<iNumActionInfos;i++)
+	std::sort(infos.begin(), infos.end());
+
+	for (ActionTypes eAction; eAction.next();)
 	{
-		CvActionInfo* pActionInfo = new CvActionInfo;
-		pActionInfo->setOriginalIndex(piIndexList[piOrderedIndex[i]]);
-		pActionInfo->setSubType((ActionSubTypes)piActionInfoTypeList[piOrderedIndex[i]]);
-		if ((ActionSubTypes)piActionInfoTypeList[piOrderedIndex[i]] == ACTIONSUBTYPE_COMMAND)
-		{
-			GC.getCommandInfo((CommandTypes)piIndexList[piOrderedIndex[i]]).setActionInfoIndex(i);
-		}
-		else if ((ActionSubTypes)piActionInfoTypeList[piOrderedIndex[i]] == ACTIONSUBTYPE_INTERFACEMODE)
-		{
-			GC.getInterfaceModeInfo((InterfaceModeTypes)piIndexList[piOrderedIndex[i]]).setActionInfoIndex(i);
-		}
-		else if ((ActionSubTypes)piActionInfoTypeList[piOrderedIndex[i]] == ACTIONSUBTYPE_BUILD)
-		{
-			GC.getBuildInfo((BuildTypes)piIndexList[piOrderedIndex[i]]).setMissionType(FindInInfoClass("MISSION_BUILD"));
-			GC.getBuildInfo((BuildTypes)piIndexList[piOrderedIndex[i]]).setActionInfoIndex(i);
-		}
-		else if ((ActionSubTypes)piActionInfoTypeList[piOrderedIndex[i]] == ACTIONSUBTYPE_PROMOTION)
-		{
-			GC.getPromotionInfo((PromotionTypes)piIndexList[piOrderedIndex[i]]).setCommandType(FindInInfoClass("COMMAND_PROMOTION"));
-			GC.getPromotionInfo((PromotionTypes)piIndexList[piOrderedIndex[i]]).setActionInfoIndex(i);
-			GC.getPromotionInfo((PromotionTypes)piIndexList[piOrderedIndex[i]]).setHotKeyDescription(GC.getPromotionInfo((PromotionTypes)piIndexList[piOrderedIndex[i]]).getTextKeyWide(), GC.getCommandInfo((CommandTypes)(GC.getPromotionInfo((PromotionTypes)piIndexList[piOrderedIndex[i]]).getCommandType())).getTextKeyWide(), CreateHotKeyFromDescription(GC.getPromotionInfo((PromotionTypes)piIndexList[piOrderedIndex[i]]).getHotKey(), GC.getPromotionInfo((PromotionTypes)piIndexList[piOrderedIndex[i]]).isShiftDown(), GC.getPromotionInfo((PromotionTypes)piIndexList[piOrderedIndex[i]]).isAltDown(), GC.getPromotionInfo((PromotionTypes)piIndexList[piOrderedIndex[i]]).isCtrlDown()));
-		}
-		else if ((ActionSubTypes)piActionInfoTypeList[piOrderedIndex[i]] == ACTIONSUBTYPE_UNIT)
-		{
-			GC.getUnitInfo((UnitTypes)piIndexList[piOrderedIndex[i]]).setCommandType(FindInInfoClass("COMMAND_UPGRADE"));
-			GC.getUnitInfo((UnitTypes)piIndexList[piOrderedIndex[i]]).setActionInfoIndex(i);
-			GC.getUnitInfo((UnitTypes)piIndexList[piOrderedIndex[i]]).setHotKeyDescription(GC.getUnitInfo((UnitTypes)piIndexList[piOrderedIndex[i]]).getTextKeyWide(), GC.getCommandInfo((CommandTypes)(GC.getUnitInfo((UnitTypes)piIndexList[piOrderedIndex[i]]).getCommandType())).getTextKeyWide(), CreateHotKeyFromDescription(GC.getUnitInfo((UnitTypes)piIndexList[piOrderedIndex[i]]).getHotKey(), GC.getUnitInfo((UnitTypes)piIndexList[piOrderedIndex[i]]).isShiftDown(), GC.getUnitInfo((UnitTypes)piIndexList[piOrderedIndex[i]]).isAltDown(), GC.getUnitInfo((UnitTypes)piIndexList[piOrderedIndex[i]]).isCtrlDown()));
-		}
-		else if ((ActionSubTypes)piActionInfoTypeList[piOrderedIndex[i]] == ACTIONSUBTYPE_CONTROL)
-		{
-			GC.getControlInfo((ControlTypes)piIndexList[piOrderedIndex[i]]).setActionInfoIndex(i);
-		}
-		else if ((ActionSubTypes)piActionInfoTypeList[piOrderedIndex[i]] == ACTIONSUBTYPE_AUTOMATE)
-		{
-			GC.getAutomateInfo(piIndexList[piOrderedIndex[i]]).setActionInfoIndex(i);
-		}
-		else if ((ActionSubTypes)piActionInfoTypeList[piOrderedIndex[i]] == ACTIONSUBTYPE_MISSION)
-		{
-			GC.getMissionInfo((MissionTypes)piIndexList[piOrderedIndex[i]]).setActionInfoIndex(i + iNumOrigVals);
-		}
-
-		GC.getActionInfo().push_back(pActionInfo);
+		infos[eAction.getInt()].setIndex(eAction);
 	}
-	GC.addToInfosVectors(&GC.getActionInfo());
-
-	SAFE_DELETE_ARRAY(piOrderedIndex);
-	SAFE_DELETE_ARRAY(piIndexList);
-	SAFE_DELETE_ARRAY(piPriorityList);
-	SAFE_DELETE_ARRAY(piActionInfoTypeList);
 }
 
 

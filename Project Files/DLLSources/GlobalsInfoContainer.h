@@ -6,9 +6,12 @@
 
 #include "CvEnums.h"
 #include "Infos.h"
+#include "CvInfos.h"
 
 struct GlobalsInfoContainer
 {
+	std::vector<CvActionInfo> m_actions;
+	EnumMap<BuildTypes, CvBuildInfo> m_BuildTypes;
 	EnumMap<CivilizationTypes, CivilizationInfo> m_CivilizationTypes;
 	EnumMap<CivCategoryTypes, CivCategoryInfo> m_CivCategoryTypes;
 	EnumMap<DomainTypes, DomainInfo> m_DomainTypes;

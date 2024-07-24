@@ -16,6 +16,8 @@
 #pragma warning( disable: 4127 )
 class CvXMLLoadUtility;
 
+#include "Types/ActionTypes.h"
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //
 //  class : CvInfoBase
@@ -126,8 +128,8 @@ public:
 	bool read(CvXMLLoadUtility* pXML);
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
-	int getActionInfoIndex() const;
-	void setActionInfoIndex(int i);
+	ActionTypes getActionInfoIndex() const;
+	void setActionInfoIndex(ActionTypes eIndex);
 	int getHotKeyVal() const;
 	void setHotKeyVal(int i);
 	int getHotKeyPriority() const;
@@ -156,7 +158,7 @@ public:
 	void setHotKeyDescription(const wchar* szHotKeyDescKey, const wchar* szHotKeyAltDescKey, const wchar* szHotKeyString);
 
 protected:
-	int m_iActionInfoIndex;
+	ActionTypes m_eActionInfoIndex;
 	int m_iHotKeyVal;
 	int m_iHotKeyPriority;
 	int m_iHotKeyValAlt;
@@ -584,9 +586,19 @@ protected:
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 class CvActionInfo
 {
+	friend class CvXMLLoadUtility;
+
 //---------------------------------------PUBLIC INTERFACE---------------------------------
 public:
 	CvActionInfo();
+	CvActionInfo(InterfaceModeTypes);
+	CvActionInfo(CommandTypes);
+	CvActionInfo(BuildTypes);
+	CvActionInfo(PromotionTypes);
+	CvActionInfo(UnitTypes);
+	CvActionInfo(ControlTypes);
+	CvActionInfo(AutomateTypes);
+	CvActionInfo(MissionTypes);
 	virtual ~CvActionInfo();
 	int getMissionData() const;
 	int getCommandData() const;
@@ -611,7 +623,7 @@ public:
 	virtual const char* getButton() const;
 	const wchar* getTextKeyWide() const;
 	// functions to replace the CvHotkey calls
-	int getActionInfoIndex() const;
+	ActionTypes getActionInfoIndex() const;
 	DllExport int getHotKeyVal() const;
 	DllExport int getHotKeyPriority() const;
 	DllExport int getHotKeyValAlt() const;
@@ -627,12 +639,26 @@ public:
 
 	std::wstring getHotKeyDescription() const;
 
+	bool operator<(const CvActionInfo rhs) const;
+
 //---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
-	int m_iOriginalIndex;
+	union 
+	{
+		int m_iOriginalIndex;
+		InterfaceModeTypes m_eInterfaceMode;
+		CommandTypes m_eCommand;
+		BuildTypes m_eBuild;
+		PromotionTypes m_ePromotion;
+		UnitTypes m_eUnit;
+		ControlTypes m_eControl;
+		AutomateTypes m_eAutomate;
+		MissionTypes m_eMission;
+	};
 	ActionSubTypes m_eSubType;
 private:
 	CvHotkeyInfo* getHotkeyInfo() const;
+	void setIndex(const ActionTypes iIndex);
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

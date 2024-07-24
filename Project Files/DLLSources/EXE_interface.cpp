@@ -35,6 +35,8 @@
 #include "CvPopupReturn.h"
 #include "CvReplayInfo.h"
 #include "CvXMLLoadUtility.h"
+#include "GlobalInfos.h"
+#include "GlobalsInfoContainer.h"
 
 #include "CyArgsList.h"
 #include "CyPlot.h"
@@ -1437,10 +1439,15 @@ public:
 
 		getASyncRand
 			?getASyncRand@CvGlobals@@QAEAAVCvRandom@@XZ=?getASyncRand@EXE_CvGlobals@@QAEAAVCvRandom@@XZ
+			*/
 
-		getActionInfo
-			?getActionInfo@CvGlobals@@QAEAAVCvActionInfo@@H@Z=?getActionInfo@EXE_CvGlobals@@QAEAAVCvActionInfo@@H@Z
+	#pragma comment(linker, "/EXPORT:?getActionInfo@CvGlobals@@QAEAAVCvActionInfo@@H@Z=?getActionInfo@EXE_CvGlobals@@QAEAAVCvActionInfo@@H@Z")
+	DllExport CvActionInfo& getActionInfo(int i)
+	{
+		return INFO.m_info.m_actions[i];
+	}
 
+			/*
 		getActiveLandscapeID
 			?getActiveLandscapeID@CvGlobals@@QAEHXZ=?getActiveLandscapeID@EXE_CvGlobals@@QAEHXZ
 
@@ -1753,11 +1760,14 @@ public:
 		return NUM_YIELD_TYPES;
 	}
 
-		/*
+	#pragma comment(linker, "/EXPORT:?getNumActionInfos@CvGlobals@@QAEHXZ=?getNumActionInfos@EXE_CvGlobals@@QAEHXZ")
+	DllExport int getNumActionInfos()
+	{
+		return ActionTypes::NUM;
+	}
 
-		getNumActionInfos
-			?getNumActionInfos@CvGlobals@@QAEHXZ=?getNumActionInfos@EXE_CvGlobals@@QAEHXZ
 
+			/*
 		getNumArtStyleTypes
 			?getNumArtStyleTypes@CvGlobals@@QAEAAHXZ=?getNumArtStyleTypes@EXE_CvGlobals@@QAEAAHXZ
 

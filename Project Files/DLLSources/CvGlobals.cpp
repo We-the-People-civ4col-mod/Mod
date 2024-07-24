@@ -22,6 +22,7 @@
 #include "CvInitCore.h"
 #include "UserSettings.h"
 #include "StartupErrorChecking.h"
+#include "GlobalsInfoContainer.h"
 
 #include <stdlib.h>
 
@@ -2034,21 +2035,10 @@ CvUnitClassInfo& CvGlobals::getUnitClassInfo(UnitClassTypes eUnitClassNum)
 	return *(m_paUnitClassInfo[eUnitClassNum]);
 }
 
-int CvGlobals::getNumActionInfos()
-{
-	return (int)m_paActionInfo.size();
-}
-
-std::vector<CvActionInfo*>& CvGlobals::getActionInfo()	// For Moose - XML Load Util
-{
-	return m_paActionInfo;
-}
-
 CvActionInfo& CvGlobals::getActionInfo(int i)
 {
-	FAssertMsg(i < getNumActionInfos(), "Index out of bounds");
-	FAssertMsg(i > -1, "Index out of bounds");
-	return *(m_paActionInfo[i]);
+	FAssertMsg(ActionTypes::createFromInt(i).isValid(), "Index out of bounds");
+	return INFO.m_info.m_actions[i];
 }
 
 std::vector<CvMissionInfo*>& CvGlobals::getMissionInfo()	// For Moose - XML Load Util, CvInfos

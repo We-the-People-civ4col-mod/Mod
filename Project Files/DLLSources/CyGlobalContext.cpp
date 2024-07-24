@@ -193,7 +193,7 @@ CvInfoBase* CyGlobalContext::getDomainInfo(int i) const
 
 CyActionInfo* CyGlobalContext::getActionInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumActionInfos()) ? (CyActionInfo*)&GC.getActionInfo(i) : NULL;
+	return ActionTypes::createFromInt(i).isValid() ? (CyActionInfo*)&GC.getActionInfo(i) : NULL;
 }
 CyAutomateInfo* CyGlobalContext::getAutomateInfo(int i) const
 {

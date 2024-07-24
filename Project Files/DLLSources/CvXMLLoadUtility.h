@@ -242,7 +242,7 @@ public:
 	void SetVariableListTagPairForAudioScripts(int **ppiList, char const* szRootTagName, int iInfoBaseLength, int iDefaultListVal = -1);
 
 	// create a hot key from a description
-	CvWString CreateHotKeyFromDescription(char const* pszHotKey, bool bShift = false, bool bAlt = false, bool bCtrl = false);
+	static CvWString CreateHotKeyFromDescription(char const* pszHotKey, bool bShift = false, bool bAlt = false, bool bCtrl = false);
 
 	// set the variable to a default and load it from the xml if there are any children
 	bool SetAndLoadVar(int** ppiVar, int iDefault=0);
@@ -252,7 +252,7 @@ public:
 	bool SetStringList(CvString** ppszStringArray, int* piSize);
 
 	// get the integer value for the keyboard mapping of the hotkey if it exists
-	int GetHotKeyInt(char const* pszHotKeyVal);
+	static int GetHotKeyInt(char const* pszHotKeyVal);
 
 	// loads an xml file into the FXml variable.  The szFilename parameter has
 	// the m_szXmlPath member variable pre-pended to it to form the full pathname
@@ -322,7 +322,7 @@ private:
 	void SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName, GameTextList& FStringListEnglish, GameTextList& FStringListCurrentLanguage, stdext::hash_map< std::string, bool >& StringList);
 
 	// create a keyboard string from a KB code, Delete would be returned for KB_DELETE
-	CvWString CreateKeyStringFromKBCode(char const* pszHotKey);
+	static CvWString CreateKeyStringFromKBCode(char const* pszHotKey);
 
 	//
 	// template which can handle and sort all hotkey info classes

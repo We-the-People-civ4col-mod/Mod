@@ -163,7 +163,7 @@ public:
 	int getNumCommandInfos() const { return GC.getNumCommandInfos(); }
 	int getNumControlInfos() const { return GC.getNumControlInfos(); }
 	int getNumMissionInfos() const { return GC.getNumMissionInfos(); }
-	int getNumActionInfos() const { return GC.getNumActionInfos(); }
+	int getNumActionInfos() const { return ActionTypes::NUM; }
 	int getNumPromotionInfos() const { return GC.getNumPromotionInfos(); }
 	int getNumProfessionInfos() const { return GC.getNumProfessionInfos(); }
 	int getNumCivicInfos() const { return GC.getNumCivicInfos(); }

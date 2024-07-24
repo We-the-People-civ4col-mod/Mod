@@ -9,6 +9,8 @@ class DomainInfo;
 class GlobalInfos
 {
 	friend class CvXMLLoadUtility;
+	friend class EXE_CvGlobals;
+	friend class CvGlobals;
 public:
 	GlobalInfos(GlobalsInfoContainer& storage);
 

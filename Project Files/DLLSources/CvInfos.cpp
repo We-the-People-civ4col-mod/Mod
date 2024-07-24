@@ -341,7 +341,6 @@ void CvScalableInfo::setInterfaceScale(float fInterfaceScale)
 //
 //------------------------------------------------------------------------------------------------------
 CvHotkeyInfo::CvHotkeyInfo() :
-m_iActionInfoIndex(-1),
 m_iHotKeyVal(-1),
 m_iHotKeyPriority(-1),
 m_iHotKeyValAlt(-1),
@@ -526,14 +525,14 @@ void CvHotkeyInfo::write(FDataStreamBase* pStream)
 	pStream->WriteString(m_szHotKeyString);
 }
 
-int CvHotkeyInfo::getActionInfoIndex() const
+ActionTypes CvHotkeyInfo::getActionInfoIndex() const
 {
-	return m_iActionInfoIndex;
+	return m_eActionInfoIndex;
 }
 
-void CvHotkeyInfo::setActionInfoIndex(int i)
+void CvHotkeyInfo::setActionInfoIndex(ActionTypes eIndex)
 {
-	m_iActionInfoIndex = i;
+	m_eActionInfoIndex = eIndex;
 }
 
 int CvHotkeyInfo::getHotKeyVal() const
@@ -2259,6 +2258,54 @@ m_iOriginalIndex(-1),
 m_eSubType(NO_ACTIONSUBTYPE)
 {
 }
+
+CvActionInfo::CvActionInfo(InterfaceModeTypes eInterfaceMode)
+	: m_eInterfaceMode(eInterfaceMode)
+	, m_eSubType(ACTIONSUBTYPE_INTERFACEMODE)
+{
+}
+
+CvActionInfo::CvActionInfo(CommandTypes eCommand)
+	: m_eCommand(eCommand)
+	, m_eSubType(ACTIONSUBTYPE_COMMAND)
+{
+}
+
+CvActionInfo::CvActionInfo(BuildTypes eBuild)
+	: m_eBuild(eBuild)
+	, m_eSubType(ACTIONSUBTYPE_BUILD)
+{
+}
+
+CvActionInfo::CvActionInfo(PromotionTypes ePromotion)
+	: m_ePromotion(ePromotion)
+	, m_eSubType(ACTIONSUBTYPE_PROMOTION)
+{
+}
+
+CvActionInfo::CvActionInfo(UnitTypes eUnit)
+	: m_eUnit(eUnit)
+	, m_eSubType(ACTIONSUBTYPE_UNIT)
+{
+}
+
+CvActionInfo::CvActionInfo(ControlTypes eControl)
+	: m_eControl(eControl)
+	, m_eSubType(ACTIONSUBTYPE_CONTROL)
+{
+}
+
+CvActionInfo::CvActionInfo(AutomateTypes eAutomate)
+	: m_eAutomate(eAutomate)
+	, m_eSubType(ACTIONSUBTYPE_AUTOMATE)
+{
+}
+
+CvActionInfo::CvActionInfo(MissionTypes eMission)
+	: m_eMission(eMission)
+	, m_eSubType(ACTIONSUBTYPE_MISSION)
+{
+}
 //------------------------------------------------------------------------------------------------------
 //
 //  FUNCTION:   ~CvActionInfo()
@@ -2384,7 +2431,7 @@ bool CvActionInfo::isVisible() const
 	}
 	else if	(ACTIONSUBTYPE_COMMAND == m_eSubType)
 	{
-		return GC.getCommandInfo((CommandTypes)m_iOriginalIndex).getVisible();
+		return GC.getCommandInfo(m_eCommand).getVisible();
 	}
 	else if (ACTIONSUBTYPE_AUTOMATE == m_eSubType)
 	{
@@ -2392,11 +2439,11 @@ bool CvActionInfo::isVisible() const
 	}
 	else if (ACTIONSUBTYPE_MISSION == m_eSubType)
 	{
-		return GC.getMissionInfo((MissionTypes)m_iOriginalIndex).getVisible();
+		return GC.getMissionInfo(m_eMission).getVisible();
 	}
 	else if (ACTIONSUBTYPE_INTERFACEMODE== m_eSubType)
 	{
-		return GC.getInterfaceModeInfo((InterfaceModeTypes)m_iOriginalIndex).getVisible();
+		return GC.getInterfaceModeInfo(m_eInterfaceMode).getVisible();
 	}
 	else if (ACTIONSUBTYPE_PROMOTION == m_eSubType)
 	{
@@ -2417,33 +2464,53 @@ CvHotkeyInfo* CvActionInfo::getHotkeyInfo() const
 	switch (getSubType())
 	{
 		case ACTIONSUBTYPE_INTERFACEMODE:
-			return &GC.getInterfaceModeInfo((InterfaceModeTypes)getOriginalIndex());
+			return &GC.getInterfaceModeInfo(m_eInterfaceMode);
 			break;
 		case ACTIONSUBTYPE_COMMAND:
-			return &GC.getCommandInfo((CommandTypes)getOriginalIndex());
+			return &GC.getCommandInfo(m_eCommand);
 			break;
 		case ACTIONSUBTYPE_BUILD:
-			return &GC.getBuildInfo((BuildTypes)getOriginalIndex());
+			return &GC.getBuildInfo(m_eBuild);
 			break;
 		case ACTIONSUBTYPE_PROMOTION:
-			return &GC.getPromotionInfo((PromotionTypes)getOriginalIndex());
+			return &GC.getPromotionInfo(m_ePromotion);
 			break;
 		case ACTIONSUBTYPE_UNIT:
-			return &GC.getUnitInfo((UnitTypes)getOriginalIndex());
+			return &GC.getUnitInfo(m_eUnit);
 			break;
 		case ACTIONSUBTYPE_CONTROL:
-			return &GC.getControlInfo((ControlTypes)getOriginalIndex());
+			return &GC.getControlInfo(m_eControl);
 			break;
 		case ACTIONSUBTYPE_AUTOMATE:
-			return &GC.getAutomateInfo(getOriginalIndex());
+			return &GC.getAutomateInfo(m_eAutomate);
 			break;
 		case ACTIONSUBTYPE_MISSION:
-			return &GC.getMissionInfo((MissionTypes)getOriginalIndex());
+			return &GC.getMissionInfo(m_eMission);
 			break;
 	}
 	FAssertMsg((0) ,"Unknown Action Subtype in CvActionInfo::getHotkeyInfo");
 	return NULL;
 }
+
+void CvActionInfo::setIndex(const ActionTypes eAction)
+{
+	CvHotkeyInfo* info = getHotkeyInfo();
+	info->setActionInfoIndex(eAction);
+
+	switch (getSubType())
+	{
+	case ACTIONSUBTYPE_BUILD:
+		GC.getBuildInfo(m_eBuild).setMissionType(MISSION_BUILD);
+		break;
+	case ACTIONSUBTYPE_PROMOTION:
+		GC.getPromotionInfo(m_ePromotion).setCommandType(COMMAND_PROMOTION);
+		break;
+	case ACTIONSUBTYPE_UNIT:
+		GC.getUnitInfo(m_eUnit).setCommandType(COMMAND_UPGRADE);
+		break;
+	}
+}
+
 const char* CvActionInfo::getType() const
 {
 	if (getHotkeyInfo())
@@ -2500,13 +2567,13 @@ const wchar* CvActionInfo::getTextKeyWide() const
 	}
 	return NULL;
 }
-int CvActionInfo::getActionInfoIndex() const
+ActionTypes CvActionInfo::getActionInfoIndex() const
 {
 	if (getHotkeyInfo())
 	{
 		return getHotkeyInfo()->getActionInfoIndex();
 	}
-	return -1;
+	return ActionTypes::NONE;
 }
 int CvActionInfo::getHotKeyVal() const
 {
@@ -2606,11 +2673,78 @@ const char* CvActionInfo::getHotKey() const
 }
 std::wstring CvActionInfo::getHotKeyDescription() const
 {
+	CvWString szTemp;
+	CvWString szHotKeyDescriptionKey;
+	CvWString szHotKeyAltDescriptionKey;
+	CvWString szHotKeyString;
+
+
+	const CvHotkeyInfo* info = getHotkeyInfo();
+
+	switch (getSubType())
+	{
+	case ACTIONSUBTYPE_PROMOTION:
+		szHotKeyDescriptionKey = info->getTextKeyWide();
+		szHotKeyAltDescriptionKey = GC.getCommandInfo((CommandTypes)(GC.getPromotionInfo(m_ePromotion).getCommandType())).getTextKeyWide();
+		szHotKeyString = CvXMLLoadUtility::CreateHotKeyFromDescription(info->getHotKey(), info->isShiftDown(), info->isAltDown(), info->isCtrlDown());
+		break;
+	case ACTIONSUBTYPE_UNIT:
+		szHotKeyDescriptionKey = info->getTextKeyWide();
+		szHotKeyAltDescriptionKey = GC.getCommandInfo((CommandTypes)(GC.getUnitInfo(m_eUnit).getCommandType())).getTextKeyWide();
+		szHotKeyString = CvXMLLoadUtility::CreateHotKeyFromDescription(info->getHotKey(), info->isShiftDown(), info->isAltDown(), info->isCtrlDown());
+		break;
+
+	}
+
+
+	if (!szHotKeyAltDescriptionKey.empty())
+	{
+		szTemp.Format(L"%s (%s)", gDLL->getObjectText(szHotKeyAltDescriptionKey, 0).GetCString(), gDLL->getObjectText(szHotKeyDescriptionKey, 0).GetCString());
+	}
+	else
+	{
+		szTemp = gDLL->getObjectText(szHotKeyDescriptionKey, 0);
+	}
+
+	if (!szHotKeyString.empty())
+	{
+		szTemp += szHotKeyString;
+	}
+
+	return szTemp;
+
+	
+
 	if (getHotkeyInfo())
 	{
 		return getHotkeyInfo()->getHotKeyDescription();
 	}
 	return L"";
+	
+}
+
+bool CvActionInfo::operator<(const CvActionInfo rhs) const
+{
+	const int priority = getOrderPriority();
+	const int rhs_priority = rhs.getOrderPriority();
+
+	// highest priority first
+	if (priority != rhs_priority)
+	{
+		return priority > rhs_priority;
+	}
+
+	const ActionSubTypes subtype = getSubType();
+	const ActionSubTypes rhs_subtype = rhs.getSubType();
+
+	// sort by which file the hotkey comes from
+	if (subtype != rhs_subtype)
+	{
+		return subtype < rhs_subtype;
+	}
+
+	// when everything else fails, sort by index in the file
+	return getOriginalIndex() < rhs.getOriginalIndex();
 }
 //======================================================================================================
 //					CvUnitInfo
