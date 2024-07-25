@@ -4375,27 +4375,6 @@
 			<Button>Art\Interface\Game Hud\Actions\Button_EstablishFishNet.dds</Button>
 		</BuildInfo>
 		<BuildInfo>
-			<Type>BUILD_FISHING_NETS_FRESHWATER</Type>
-			<Description>TXT_KEY_BUILD_FISHING_NETS_FRESHWATER</Description>
-			<Help>TXT_KEY_BUILD_FISHING_NETS_FRESHWATER_HELP</Help>
-			<iTime>1000</iTime>
-			<iCost>100</iCost>
-			<bKill>0</bKill>
-			<ImprovementType>IMPROVEMENT_FISHING_NETS_FRESHWATER</ImprovementType>
-			<PrereqTerrainType>NONE</PrereqTerrainType>
-			<ResultTerrainType>NONE</ResultTerrainType>
-			<ResultFeatureType>NONE</ResultFeatureType>
-			<RouteType>NONE</RouteType>
-			<EntityEvent>ENTITY_EVENT_BUILD</EntityEvent>
-			<FeatureStructs/>
-			<HotKey>KB_R</HotKey>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<Button>Art\Interface\Game Hud\Actions\Button_EstablishFishNet.dds</Button>
-		</BuildInfo>
-		<BuildInfo>
 			<Type>BUILD_HUNTERS_STAGE</Type>
 			<Description>TXT_KEY_BUILD_HUNTERS_STAGE</Description>
 			<Help>TXT_KEY_BUILD_HUNTERS_STAGE_HELP</Help>

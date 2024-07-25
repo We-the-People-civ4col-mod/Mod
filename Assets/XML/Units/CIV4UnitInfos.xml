@@ -83202,10 +83202,6 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
-					<BuildType>BUILD_FISHING_NETS_FRESHWATER</BuildType>
-					<bBuild>1</bBuild>
-				</Build>
-				<Build>
 					<BuildType>BUILD_HUNTERS_STAGE</BuildType>
 					<bBuild>1</bBuild>
 				</Build>

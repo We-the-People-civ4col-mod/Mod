@@ -509,18 +509,6 @@
 		<Russian>Увеличивает продуктивность добычи ресурсов</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILD_FISHING_NETS_FRESHWATER</Tag>
-		<English>Weave [LINK=IMPROVEMENT_FISHING_NETS_FRESHWATER]freshwater fishing nets[\LINK]</English>
-		<Russian>Построить [COLOR_HIGHLIGHT_TEXT]рыбацкие сети[COLOR_REVERT]</Russian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_BUILD_FISHING_NETS_FRESHWATER_HELP</Tag>
-		<English>Increases fishing yields</English>
-		<German>Erhöht Erträge aus Fischfang</German>
-		<French>Augmente le produit de la pêche</French>
-		<Russian>Увеличивает продуктивность добычи ресурсов</Russian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILD_HUNTERS_STAGE</Tag>
 		<English>Build [LINK=IMPROVEMENT_HUNTERS_STAGE]hunters' blind[\LINK]</English>
 		<French>Construire des postes de chasses</French>
