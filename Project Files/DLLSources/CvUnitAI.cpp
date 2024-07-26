@@ -1081,7 +1081,7 @@ void CvUnitAI::AI_setUnitAIType(UnitAITypes eNewValue)
 	{
 		FAssertMsg(eNewValue != UNITAI_SETTLER || (eNewValue == UNITAI_SETTLER && canFound(NULL)),
 			"Unit must be able to found to have this UNITAI!");	
-		FAssertMsg(eNewValue != UNITAI_WORKER || (eNewValue == UNITAI_WORKER && workRate(true) > 0),
+		FAssertMsg(eNewValue != UNITAI_WORKER || (eNewValue == UNITAI_WORKER && workRate(true) > 0 && getProfession() != NO_PROFESSION),
 			"Unit must have non-zero work rate to have this UNITAI!");
 
 		const bool bOnMap = (getX_INLINE() != INVALID_PLOT_COORD) && (getY_INLINE() != INVALID_PLOT_COORD);
