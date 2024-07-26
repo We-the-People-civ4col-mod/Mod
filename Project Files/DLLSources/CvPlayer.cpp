@@ -1600,6 +1600,7 @@ CvUnit* CvPlayer::initUnit(UnitTypes eUnit, ProfessionTypes eProfession, Coordin
 	PROFILE_FUNC();
 
 	FAssertMsg(eUnit != NO_UNIT, "Unit is not assigned a valid value");
+	FAssertMsg(eProfession != NO_PROFESSION || eUnitAI == NO_UNITAI, "UnitAI can't be assigned without also assigning a profession");
 
 	OOS_LOG("Init unit", getTypeStr(eUnit));
 

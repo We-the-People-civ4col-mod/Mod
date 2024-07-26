@@ -4918,7 +4918,7 @@ void CvUnit::clearSpecialty()
 	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
 
 	UnitTypes eUnit = kPlayer.getUnitType(GLOBAL_DEFINE_DEFAULT_POPULATION_UNIT);
-	CvUnit* pNewUnit = kPlayer.initUnit(eUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE(), AI_getUnitAIType());
+	CvUnit* pNewUnit = kPlayer.initUnit(eUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE());
 	FAssert(pNewUnit != NULL);
 
 	CvCity *pCity = kPlayer.getPopulationUnitCity(getID());
