@@ -13,9 +13,9 @@ public:
 
 	ActionTypes();
 	ActionTypes(types type);
+	types value() const;
 
 	bool isValid() const;
-	int getInt() const;
 	bool next();
 
 	const CvActionInfo& info() const;
@@ -23,7 +23,7 @@ public:
 	static ActionTypes createFromInt(int iIndex);
 
 protected:
-	types m_var;
+	types data;
 	static types m_num;
 	static void initLength();
 };

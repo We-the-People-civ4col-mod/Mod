@@ -1835,7 +1835,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 
 	for (ActionTypes eAction; eAction.next();)
 	{
-		infos[eAction.getInt()].setIndex(eAction);
+		infos[eAction.value()].setIndex(eAction);
 	}
 }
 

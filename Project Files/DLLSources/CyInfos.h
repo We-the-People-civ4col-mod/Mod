@@ -171,6 +171,7 @@ BOOST_STATIC_ASSERT(sizeof(CyDiplomacyInfo) == sizeof(CvDiplomacyInfo));
 class CyControlInfo : public CvControlInfo
 {
 public:
+	int getActionInfoIndex() const;
 };
 BOOST_STATIC_ASSERT(sizeof(CyControlInfo) == sizeof(CvControlInfo));
 
@@ -183,6 +184,7 @@ BOOST_STATIC_ASSERT(sizeof(CySpecialBuildingInfo) == sizeof(CvSpecialBuildingInf
 class CyPromotionInfo : public CvPromotionInfo
 {
 public:
+	int getActionInfoIndex() const;
 };
 BOOST_STATIC_ASSERT(sizeof(CyPromotionInfo) == sizeof(CvPromotionInfo));
 

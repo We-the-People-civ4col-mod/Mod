@@ -18,5 +18,5 @@ void ActionTypes::initLength()
 const CvActionInfo& ActionTypes::info() const
 {
 	FAssert(isValid());
-	return InfoContainer.m_actions[m_var];
+	return InfoContainer.m_actions[data];
 }

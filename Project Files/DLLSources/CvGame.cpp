@@ -2549,7 +2549,7 @@ bool CvGame::canHandleAction(int iAction, CvPlot* pPlot, bool bTestVisible, bool
 						pMissionPlot = pSelectedInterfaceList->plot();
 					}
 
-					if (pSelectedInterfaceList->canStartMission(GC.getActionInfo(iAction).getMissionType(), GC.getActionInfo(iAction).getMissionData(), -1, pMissionPlot, bTestVisible, bUseCache))
+					if (pSelectedInterfaceList->canStartMission(GC.getActionInfo(iAction).getMissionType(), GC.getActionInfo(iAction).getBuildType(), -1, pMissionPlot, bTestVisible, bUseCache))
 					{
 						return true;
 					}
@@ -2630,7 +2630,7 @@ void CvGame::handleAction(int iAction)
 
 	if (GC.getActionInfo(iAction).getMissionType() != NO_MISSION)
 	{
-		selectionListGameNetMessage(GAMEMESSAGE_PUSH_MISSION, GC.getActionInfo(iAction).getMissionType(), GC.getActionInfo(iAction).getMissionData(), -1, 0, false, bShift);
+		selectionListGameNetMessage(GAMEMESSAGE_PUSH_MISSION, GC.getActionInfo(iAction).getMissionType(), GC.getActionInfo(iAction).getBuildType(), -1, 0, false, bShift);
 	}
 
 	if (GC.getActionInfo(iAction).getCommandType() != NO_COMMAND)

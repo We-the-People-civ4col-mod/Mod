@@ -341,28 +341,15 @@ void CvScalableInfo::setInterfaceScale(float fInterfaceScale)
 //
 //------------------------------------------------------------------------------------------------------
 CvHotkeyInfo::CvHotkeyInfo() :
-m_iHotKeyVal(-1),
 m_iHotKeyPriority(-1),
-m_iHotKeyValAlt(-1),
 m_iHotKeyPriorityAlt(-1),
 m_iOrderPriority(0),
-m_bAltDown(false),
-m_bShiftDown(false),
-m_bCtrlDown(false),
-m_bAltDownAlt(false),
-m_bShiftDownAlt(false),
-m_bCtrlDownAlt(false)
-{
-}
-
-//------------------------------------------------------------------------------------------------------
-//
-//  FUNCTION:   ~CvHotkeyInfo()
-//
-//  PURPOSE :   Default destructor
-//
-//------------------------------------------------------------------------------------------------------
-CvHotkeyInfo::~CvHotkeyInfo()
+m_bAltDown(0),
+m_bShiftDown(0),
+m_bCtrlDown(0),
+m_bAltDownAlt(0),
+m_bShiftDownAlt(0),
+m_bCtrlDownAlt(0)
 {
 }
 
@@ -370,6 +357,7 @@ bool CvHotkeyInfo::read(CvXMLLoadUtility* pXML)
 {
 	int iVal;
 	bool bVal;
+	KeyboardKeyTypes eKey;
 	CvString szTextVal;
 
 	if (!CvInfoBase::read(pXML))
@@ -377,102 +365,45 @@ bool CvHotkeyInfo::read(CvXMLLoadUtility* pXML)
 		return false;
 	}
 
-	if (pXML->GetChildXmlValByName(szTextVal, "HotKey"))
-	{
-		setHotKey(szTextVal);
-	}
-	else
-	{
-		setHotKey("");
-	}
-	iVal = pXML->GetHotKeyInt(szTextVal);
-	setHotKeyVal(iVal);
-  if (pXML->GetChildXmlValByName(&iVal, "iHotKeyPriority"))
-	{
-		setHotKeyPriority(iVal);
-	}
-	else
-	{
-		setHotKeyPriority(-1);
-	}
+	pXML->GetChildXmlValByName(szTextVal, "HotKey");
+	eKey.assignFromString(szTextVal);
+	m_eHotKeyVal = eKey.value();
+	FAssert(m_eHotKeyVal == eKey.value());
 
-	if (pXML->GetChildXmlValByName(szTextVal, "HotKeyAlt"))
-	{
-		iVal = pXML->GetHotKeyInt(szTextVal);
-	}
-	else
-	{
-		iVal = pXML->GetHotKeyInt("");
-	}
-	setHotKeyValAlt(iVal);
-	if (pXML->GetChildXmlValByName(&iVal, "iHotKeyPriorityAlt"))
-	{
-		setHotKeyPriorityAlt(iVal);
-	}
-	else
-	{
-		setHotKeyPriorityAlt(-1);
-	}
+	pXML->GetChildXmlValByName(&iVal, "iHotKeyPriority", -1);
+	m_iHotKeyPriority = iVal;
+	FAssert(m_iHotKeyPriority == iVal);
 
-	if (pXML->GetChildXmlValByName(&bVal, "bAltDown"))
-	{
-		setAltDown(bVal);
-	}
-	else
-	{
-		setAltDown(false);
-	}
-	if (pXML->GetChildXmlValByName(&bVal, "bShiftDown"))
-	{
-		setShiftDown(bVal);
-	}
-	else
-	{
-		setShiftDown(false);
-	}
-	if (pXML->GetChildXmlValByName(&bVal, "bCtrlDown"))
-	{
-		setCtrlDown(bVal);
-	}
-	else
-	{
-		setCtrlDown(false);
-	}
+	pXML->GetChildXmlValByName(szTextVal, "HotKeyAlt");
+	eKey.assignFromString(szTextVal);
+	m_eHotKeyValAlt = eKey.value();
+	FAssert(m_eHotKeyValAlt == eKey.value());
 
-	if (pXML->GetChildXmlValByName(&bVal, "bAltDownAlt"))
-	{
-		setAltDownAlt(bVal);
-	}
-	else
-	{
-		setAltDownAlt(false);
-	}
-	if (pXML->GetChildXmlValByName(&bVal, "bShiftDownAlt"))
-	{
-		setShiftDownAlt(bVal);
-	}
-	else
-	{
-		setShiftDownAlt(false);
-	}
-	if (pXML->GetChildXmlValByName(&bVal, "bCtrlDownAlt"))
-	{
-		setCtrlDownAlt(bVal);
-	}
-	else
-	{
-		setCtrlDownAlt(false);
-	}
-	if (pXML->GetChildXmlValByName(&iVal, "iOrderPriority"))
-	{
-		setOrderPriority(iVal);
-	}
-	else
-	{
-		setOrderPriority(5);
-	}
+	pXML->GetChildXmlValByName(&iVal, "iHotKeyPriorityAlt", -1);
+	m_iHotKeyPriorityAlt = iVal;
+	FAssert(m_iHotKeyPriorityAlt == iVal);
 
-	setHotKeyDescription(getTextKeyWide(), NULL, pXML->CreateHotKeyFromDescription(getHotKey(), m_bShiftDown, m_bAltDown, m_bCtrlDown));
+	pXML->GetChildXmlValByName(&bVal, "bAltDown");
+	m_bAltDown = bVal ? 1 : 0;
+
+	pXML->GetChildXmlValByName(&bVal, "bShiftDown");
+	m_bShiftDown = bVal ? 1 : 0;
+
+	pXML->GetChildXmlValByName(&bVal, "bCtrlDown");
+	m_bCtrlDown = bVal ? 1 : 0;
+
+	pXML->GetChildXmlValByName(&bVal, "bAltDownAlt");
+	m_bAltDownAlt = bVal ? 1 : 0;
+
+	pXML->GetChildXmlValByName(&bVal, "bShiftDownAlt");
+	m_bShiftDownAlt = bVal ? 1 : 0;
+
+	pXML->GetChildXmlValByName(&bVal, "bCtrlDownAlt");
+	m_bCtrlDownAlt = bVal ? 1 : 0;
+
+	pXML->GetChildXmlValByName(&iVal, "iOrderPriority", 5); // note: vanilla has 5 as default for unknown reasons
+	m_iOrderPriority = iVal;
+	FAssert(m_iOrderPriority == iVal);
 
 	return true;
 }
@@ -484,21 +415,21 @@ void CvHotkeyInfo::read(FDataStreamBase* pStream)
 	uint uiFlag=0;
 	pStream->Read(&uiFlag);	// flags for expansion
 
-	pStream->Read(&m_iHotKeyVal);
-	pStream->Read(&m_iHotKeyPriority);
-	pStream->Read(&m_iHotKeyValAlt);
-	pStream->Read(&m_iHotKeyPriorityAlt);
-	pStream->Read(&m_iOrderPriority);
-	pStream->Read(&m_bAltDown);
-	pStream->Read(&m_bShiftDown);
-	pStream->Read(&m_bCtrlDown);
-	pStream->Read(&m_bAltDownAlt);
-	pStream->Read(&m_bShiftDownAlt);
-	pStream->Read(&m_bCtrlDownAlt);
-	pStream->ReadString(m_szHotKey);
-	pStream->ReadString(m_szHotKeyDescriptionKey);
-	pStream->ReadString(m_szHotKeyAltDescriptionKey);
-	pStream->ReadString(m_szHotKeyString);
+//	pStream->Read(&m_iHotKeyVal);
+//	pStream->Read(&m_iHotKeyPriority);
+//	pStream->Read(&m_iHotKeyValAlt);
+//	pStream->Read(&m_iHotKeyPriorityAlt);
+//	pStream->Read(&m_iOrderPriority);
+//	pStream->Read(&m_bAltDown);
+//	pStream->Read(&m_bShiftDown);
+//	pStream->Read(&m_bCtrlDown);
+//	pStream->Read(&m_bAltDownAlt);
+//	pStream->Read(&m_bShiftDownAlt);
+//	pStream->Read(&m_bCtrlDownAlt);
+//	pStream->ReadString(m_szHotKey);
+//	pStream->ReadString(m_szHotKeyDescriptionKey);
+//	pStream->ReadString(m_szHotKeyAltDescriptionKey);
+//	pStream->ReadString(m_szHotKeyString);
 }
 
 void CvHotkeyInfo::write(FDataStreamBase* pStream)
@@ -508,9 +439,9 @@ void CvHotkeyInfo::write(FDataStreamBase* pStream)
 	uint uiFlag = 0;
 	pStream->Write(uiFlag);		// flag for expansion
 
-	pStream->Write(m_iHotKeyVal);
+	//pStream->Write(m_iHotKeyVal);
 	pStream->Write(m_iHotKeyPriority);
-	pStream->Write(m_iHotKeyValAlt);
+//	pStream->Write(m_iHotKeyValAlt);
 	pStream->Write(m_iHotKeyPriorityAlt);
 	pStream->Write(m_iOrderPriority);
 	pStream->Write(m_bAltDown);
@@ -519,10 +450,10 @@ void CvHotkeyInfo::write(FDataStreamBase* pStream)
 	pStream->Write(m_bAltDownAlt);
 	pStream->Write(m_bShiftDownAlt);
 	pStream->Write(m_bCtrlDownAlt);
-	pStream->WriteString(m_szHotKey);
-	pStream->WriteString(m_szHotKeyDescriptionKey);
-	pStream->WriteString(m_szHotKeyAltDescriptionKey);
-	pStream->WriteString(m_szHotKeyString);
+//	pStream->WriteString(m_szHotKey);
+//	pStream->WriteString(m_szHotKeyDescriptionKey);
+//	pStream->WriteString(m_szHotKeyAltDescriptionKey);
+//	pStream->WriteString(m_szHotKeyString);
 }
 
 ActionTypes CvHotkeyInfo::getActionInfoIndex() const
@@ -532,17 +463,8 @@ ActionTypes CvHotkeyInfo::getActionInfoIndex() const
 
 void CvHotkeyInfo::setActionInfoIndex(ActionTypes eIndex)
 {
-	m_eActionInfoIndex = eIndex;
-}
-
-int CvHotkeyInfo::getHotKeyVal() const
-{
-	return m_iHotKeyVal;
-}
-
-void CvHotkeyInfo::setHotKeyVal(int i)
-{
-	m_iHotKeyVal = i;
+	m_eActionInfoIndex = eIndex.value();
+	FAssert(m_eActionInfoIndex == eIndex.value());
 }
 
 int CvHotkeyInfo::getHotKeyPriority() const
@@ -550,19 +472,9 @@ int CvHotkeyInfo::getHotKeyPriority() const
 	return m_iHotKeyPriority;
 }
 
-void CvHotkeyInfo::setHotKeyPriority(int i)
+KeyboardKeyTypes CvHotkeyInfo::getHotKeyValAlt() const
 {
-	m_iHotKeyPriority = i;
-}
-
-int CvHotkeyInfo::getHotKeyValAlt() const
-{
-	return m_iHotKeyValAlt;
-}
-
-void CvHotkeyInfo::setHotKeyValAlt(int i)
-{
-	m_iHotKeyValAlt = i;
+	return m_eHotKeyValAlt;
 }
 
 int CvHotkeyInfo::getHotKeyPriorityAlt() const
@@ -570,117 +482,44 @@ int CvHotkeyInfo::getHotKeyPriorityAlt() const
 	return m_iHotKeyPriorityAlt;
 }
 
-void CvHotkeyInfo::setHotKeyPriorityAlt(int i)
-{
-	m_iHotKeyPriorityAlt = i;
-}
-
 int CvHotkeyInfo::getOrderPriority() const
 {
 	return m_iOrderPriority;
 }
 
-void CvHotkeyInfo::setOrderPriority(int i)
-{
-	m_iOrderPriority = i;
-}
-
 bool CvHotkeyInfo::isAltDown() const
 {
-	return m_bAltDown;
-}
-
-void CvHotkeyInfo::setAltDown(bool b)
-{
-	m_bAltDown = b;
+	return m_bAltDown != 0;
 }
 
 bool CvHotkeyInfo::isShiftDown() const
 {
-	return m_bShiftDown;
-}
-
-void CvHotkeyInfo::setShiftDown(bool b)
-{
-	m_bShiftDown = b;
+	return m_bShiftDown != 0;
 }
 
 bool CvHotkeyInfo::isCtrlDown() const
 {
-	return m_bCtrlDown;
-}
-
-void CvHotkeyInfo::setCtrlDown(bool b)
-{
-	m_bCtrlDown = b;
+	return m_bCtrlDown != 0;
 }
 
 bool CvHotkeyInfo::isAltDownAlt() const
 {
-	return m_bAltDownAlt;
-}
-
-void CvHotkeyInfo::setAltDownAlt(bool b)
-{
-	m_bAltDownAlt = b;
+	return m_bAltDownAlt != 0;
 }
 
 bool CvHotkeyInfo::isShiftDownAlt() const
 {
-	return m_bShiftDownAlt;
-}
-
-void CvHotkeyInfo::setShiftDownAlt(bool b)
-{
-	m_bShiftDownAlt = b;
+	return m_bShiftDownAlt != 0;
 }
 
 bool CvHotkeyInfo::isCtrlDownAlt() const
 {
-	return m_bCtrlDownAlt;
+	return m_bCtrlDownAlt != 0;
 }
 
-void CvHotkeyInfo::setCtrlDownAlt(bool b)
+KeyboardKeyTypes CvHotkeyInfo::getHotKey() const
 {
-	m_bCtrlDownAlt = b;
-}
-
-const char* CvHotkeyInfo::getHotKey() const
-{
-	return m_szHotKey;
-}
-
-void CvHotkeyInfo::setHotKey(const char* szVal)
-{
-	m_szHotKey = szVal;
-}
-
-std::wstring CvHotkeyInfo::getHotKeyDescription() const
-{
-	CvWString szTemp;
-
-	if (!m_szHotKeyAltDescriptionKey.empty())
-	{
-		szTemp.Format(L"%s (%s)", gDLL->getObjectText(m_szHotKeyAltDescriptionKey, 0).GetCString(), gDLL->getObjectText(m_szHotKeyDescriptionKey, 0).GetCString());
-	}
-	else
-	{
-		szTemp = gDLL->getObjectText(m_szHotKeyDescriptionKey, 0);
-	}
-
-	if (!m_szHotKeyString.empty())
-	{
-		szTemp += m_szHotKeyString;
-	}
-
-	return szTemp;
-}
-
-void CvHotkeyInfo::setHotKeyDescription(const wchar* szHotKeyDescKey, const wchar* szHotKeyAltDescKey, const wchar* szHotKeyString)
-{
-	m_szHotKeyDescriptionKey = szHotKeyDescKey;
-	m_szHotKeyAltDescriptionKey = szHotKeyAltDescKey;
-	m_szHotKeyString = szHotKeyString;
+	return m_eHotKeyVal;
 }
 
 //======================================================================================================
@@ -2254,7 +2093,6 @@ bool CvAutomateInfo::read(CvXMLLoadUtility* pXML)
 //
 //------------------------------------------------------------------------------------------------------
 CvActionInfo::CvActionInfo() :
-m_iOriginalIndex(-1),
 m_eSubType(NO_ACTIONSUBTYPE)
 {
 }
@@ -2316,13 +2154,13 @@ CvActionInfo::CvActionInfo(MissionTypes eMission)
 CvActionInfo::~CvActionInfo()
 {
 }
-int CvActionInfo::getMissionData() const
+BuildTypes CvActionInfo::getBuildType() const
 {
 	if	(ACTIONSUBTYPE_BUILD == m_eSubType)
 	{
-		return m_iOriginalIndex;
+		return m_eBuild;
 	}
-	return -1;
+	return NO_BUILD;
 }
 int CvActionInfo::getCommandData() const
 {
@@ -2330,96 +2168,106 @@ int CvActionInfo::getCommandData() const
 	switch (m_eSubType)
 	{
 	case ACTIONSUBTYPE_PROMOTION:
+		iData = m_ePromotion;
+		break;
 	case ACTIONSUBTYPE_UNIT:
-		iData = m_iOriginalIndex;
+		iData = m_eUnit;
 		break;
 	case ACTIONSUBTYPE_COMMAND:
-		if (m_iOriginalIndex == COMMAND_SAIL_TO_EUROPE)
+		if (m_eCommand == COMMAND_SAIL_TO_EUROPE)
 		{
 			iData = UNIT_TRAVEL_STATE_TO_EUROPE;
 		}
 		break;
 	case ACTIONSUBTYPE_AUTOMATE:
-		iData = GC.getAutomateInfo(m_iOriginalIndex).getAutomate();
+		iData = GC.getAutomateInfo(m_eAutomate).getAutomate();
 		break;
 	default:
 		break;
 	}
 	return iData;
 }
-int CvActionInfo::getAutomateType() const
+AutomateTypes CvActionInfo::getAutomateType() const
 {
 	if (ACTIONSUBTYPE_AUTOMATE == m_eSubType)
 	{
-		return GC.getAutomateInfo(m_iOriginalIndex).getAutomate();
+		return (AutomateTypes)GC.getAutomateInfo(m_eAutomate).getAutomate();
 	}
 	return NO_AUTOMATE;
 }
-int CvActionInfo::getInterfaceModeType() const
+InterfaceModeTypes CvActionInfo::getInterfaceModeType() const
 {
 	if (ACTIONSUBTYPE_INTERFACEMODE == m_eSubType)
 	{
-		return m_iOriginalIndex;
+		return m_eInterfaceMode;
 	}
 	return NO_INTERFACEMODE;
 }
-int CvActionInfo::getMissionType() const
+MissionTypes CvActionInfo::getMissionType() const
 {
 	if (ACTIONSUBTYPE_BUILD == m_eSubType)
 	{
-		return GC.getBuildInfo((BuildTypes)m_iOriginalIndex).getMissionType();
+		return (MissionTypes)GC.getBuildInfo(m_eBuild).getMissionType();
 	}
 	else if (ACTIONSUBTYPE_MISSION == m_eSubType)
 	{
-		return m_iOriginalIndex;
+		return m_eMission;
 	}
 	return NO_MISSION;
 }
-int CvActionInfo::getCommandType() const
+CommandTypes CvActionInfo::getCommandType() const
 {
 	if (ACTIONSUBTYPE_COMMAND == m_eSubType)
 	{
-		return m_iOriginalIndex;
+		return m_eCommand;
 	}
 	else if (ACTIONSUBTYPE_PROMOTION == m_eSubType)
 	{
-		return GC.getPromotionInfo((PromotionTypes)m_iOriginalIndex).getCommandType();
+		return (CommandTypes)GC.getPromotionInfo(m_ePromotion).getCommandType();
 	}
 	else if (ACTIONSUBTYPE_UNIT == m_eSubType)
 	{
-		return GC.getUnitInfo((UnitTypes)m_iOriginalIndex).getCommandType();
+		return (CommandTypes)GC.getUnitInfo(m_eUnit).getCommandType();
 	}
 	else if (ACTIONSUBTYPE_AUTOMATE == m_eSubType)
 	{
-		return GC.getAutomateInfo(m_iOriginalIndex).getCommand();
+		return (CommandTypes)GC.getAutomateInfo(m_eAutomate).getCommand();
 	}
 	return NO_COMMAND;
 }
-int CvActionInfo::getControlType() const
+ControlTypes CvActionInfo::getControlType() const
 {
 	if (ACTIONSUBTYPE_CONTROL == m_eSubType)
 	{
-		return m_iOriginalIndex;
+		return m_eControl;
 	}
-	return -1;
+	return NO_CONTROL;
 }
 int CvActionInfo::getOriginalIndex() const
 {
-	return m_iOriginalIndex;
-}
-void CvActionInfo::setOriginalIndex(int i)
-{
-	m_iOriginalIndex = i;
+	switch (m_eSubType)
+	{
+	case ACTIONSUBTYPE_INTERFACEMODE: return m_eInterfaceMode;
+	case ACTIONSUBTYPE_COMMAND: return m_eCommand;
+	case ACTIONSUBTYPE_BUILD: return m_eBuild;
+	case ACTIONSUBTYPE_PROMOTION: return m_ePromotion;
+	case ACTIONSUBTYPE_UNIT: return m_eUnit;
+	case ACTIONSUBTYPE_CONTROL: return m_eControl;
+	case ACTIONSUBTYPE_AUTOMATE: return m_eAutomate;
+	case ACTIONSUBTYPE_MISSION: return m_eMission;
+	}
+	FAssert(false);
+	return -1;
 }
 bool CvActionInfo::isConfirmCommand() const
 {
 	if	(ACTIONSUBTYPE_COMMAND == m_eSubType)
 	{
-		return GC.getCommandInfo((CommandTypes)m_iOriginalIndex).getConfirmCommand();
+		return GC.getCommandInfo(m_eCommand).getConfirmCommand();
 	}
 	else if (ACTIONSUBTYPE_AUTOMATE == m_eSubType)
 	{
-		return GC.getAutomateInfo(m_iOriginalIndex).getConfirmCommand();
+		return GC.getAutomateInfo(m_eAutomate).getConfirmCommand();
 	}
 	return false;
 }
@@ -2435,7 +2283,7 @@ bool CvActionInfo::isVisible() const
 	}
 	else if (ACTIONSUBTYPE_AUTOMATE == m_eSubType)
 	{
-		return GC.getAutomateInfo(m_iOriginalIndex).getVisible();
+		return GC.getAutomateInfo(m_eAutomate).getVisible();
 	}
 	else if (ACTIONSUBTYPE_MISSION == m_eSubType)
 	{
@@ -2454,10 +2302,6 @@ bool CvActionInfo::isVisible() const
 ActionSubTypes CvActionInfo::getSubType() const
 {
 	return m_eSubType;
-}
-void CvActionInfo::setSubType(ActionSubTypes eSubType)
-{
-	m_eSubType = eSubType;
 }
 CvHotkeyInfo* CvActionInfo::getHotkeyInfo() const
 {
@@ -2579,7 +2423,7 @@ int CvActionInfo::getHotKeyVal() const
 {
 	if (getHotkeyInfo())
 	{
-		return getHotkeyInfo()->getHotKeyVal();
+		return getHotkeyInfo()->getHotKey().value();
 	}
 	return -1;
 }
@@ -2595,7 +2439,7 @@ int CvActionInfo::getHotKeyValAlt() const
 {
 	if (getHotkeyInfo())
 	{
-		return getHotkeyInfo()->getHotKeyValAlt();
+		return getHotkeyInfo()->getHotKeyValAlt().value();
 	}
 	return -1;
 }
@@ -2667,39 +2511,39 @@ const char* CvActionInfo::getHotKey() const
 {
 	if (getHotkeyInfo())
 	{
-		return getHotkeyInfo()->getHotKey();
+		return getHotkeyInfo()->getHotKey().getString();
 	}
 	return NULL;
 }
 std::wstring CvActionInfo::getHotKeyDescription() const
 {
-	CvWString szTemp;
-	CvWString szHotKeyDescriptionKey;
-	CvWString szHotKeyAltDescriptionKey;
-	CvWString szHotKeyString;
-
-
 	const CvHotkeyInfo* info = getHotkeyInfo();
+
+	if (info == NULL)
+	{
+		FAssertMsg(info != NULL, "CvActionInfo has no hotkey info");
+		return L"";
+	}
+
+	CvWString szTemp;
+	CvWString szHotKeyDescriptionKey = info->getTextKeyWide();
+	CvWString szHotKeyString = CreateHotKeyFromDescription(info->getHotKey(), info->isShiftDown(), info->isAltDown(), info->isCtrlDown());
+
+	CommandTypes eCommand = NO_COMMAND;
 
 	switch (getSubType())
 	{
 	case ACTIONSUBTYPE_PROMOTION:
-		szHotKeyDescriptionKey = info->getTextKeyWide();
-		szHotKeyAltDescriptionKey = GC.getCommandInfo((CommandTypes)(GC.getPromotionInfo(m_ePromotion).getCommandType())).getTextKeyWide();
-		szHotKeyString = CvXMLLoadUtility::CreateHotKeyFromDescription(info->getHotKey(), info->isShiftDown(), info->isAltDown(), info->isCtrlDown());
+		eCommand = (CommandTypes)GC.getPromotionInfo(m_ePromotion).getCommandType();
 		break;
 	case ACTIONSUBTYPE_UNIT:
-		szHotKeyDescriptionKey = info->getTextKeyWide();
-		szHotKeyAltDescriptionKey = GC.getCommandInfo((CommandTypes)(GC.getUnitInfo(m_eUnit).getCommandType())).getTextKeyWide();
-		szHotKeyString = CvXMLLoadUtility::CreateHotKeyFromDescription(info->getHotKey(), info->isShiftDown(), info->isAltDown(), info->isCtrlDown());
+		eCommand = (CommandTypes)GC.getUnitInfo(m_eUnit).getCommandType();
 		break;
-
 	}
 
-
-	if (!szHotKeyAltDescriptionKey.empty())
+	if (eCommand != NO_COMMAND)
 	{
-		szTemp.Format(L"%s (%s)", gDLL->getObjectText(szHotKeyAltDescriptionKey, 0).GetCString(), gDLL->getObjectText(szHotKeyDescriptionKey, 0).GetCString());
+		szTemp.Format(L"%s (%s)", gDLL->getObjectText(GC.getCommandInfo(eCommand).getTextKeyWide(), 0).GetCString(), gDLL->getObjectText(szHotKeyDescriptionKey, 0).GetCString());
 	}
 	else
 	{
@@ -2712,15 +2556,40 @@ std::wstring CvActionInfo::getHotKeyDescription() const
 	}
 
 	return szTemp;
+}
 
-	
-
-	if (getHotkeyInfo())
+CvWString CvActionInfo::CreateHotKeyFromDescription(KeyboardKeyTypes eHotKey, bool bShift, bool bAlt, bool bCtrl) const
+{
+	if (eHotKey == eHotKey.NONE)
 	{
-		return getHotkeyInfo()->getHotKeyDescription();
+		return "";
 	}
-	return L"";
-	
+
+	CvWString szHotKey;
+
+	szHotKey += L" <color=140,255,40,255>";
+	szHotKey += L"&lt;";
+
+	if (bShift)
+	{
+		szHotKey += gDLL->getText("TXT_KEY_SHIFT");
+	}
+
+	if (bAlt)
+	{
+		szHotKey += gDLL->getText("TXT_KEY_ALT");
+	}
+
+	if (bCtrl)
+	{
+		szHotKey += gDLL->getText("TXT_KEY_CTRL");
+	}
+
+	szHotKey += eHotKey.getReadableText();
+	szHotKey += L">";
+	szHotKey += L"</color>";
+
+	return szHotKey;
 }
 
 bool CvActionInfo::operator<(const CvActionInfo rhs) const

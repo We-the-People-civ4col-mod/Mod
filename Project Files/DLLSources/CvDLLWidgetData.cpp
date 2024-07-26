@@ -1878,7 +1878,6 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 	ImprovementTypes eImprovement;
 	ImprovementTypes eFinalImprovement;
 	PlayerTypes eGiftPlayer;
-	BuildTypes eBuild;
 	RouteTypes eRoute;
 	bool bAlt;
 	bool bShift;
@@ -2026,7 +2025,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_BUILD)
 			{
-				eBuild = ((BuildTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getMissionData()));
+				const BuildTypes eBuild = GC.getActionInfo(widgetDataStruct.m_iData1).getBuildType();
 				FAssert(eBuild != NO_BUILD);
 				eImprovement = pMissionPlot->getImprovementType();
 				ImprovementTypes eBuildImprovement = (ImprovementTypes) GC.getBuildInfo(eBuild).getImprovement();

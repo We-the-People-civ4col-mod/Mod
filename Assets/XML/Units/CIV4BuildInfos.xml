@@ -523,7 +523,7 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
-			<HotKey>0</HotKey>
+			<HotKey>NONE</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
@@ -1268,7 +1268,7 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
-			<HotKey>0</HotKey>
+			<HotKey>NONE</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
@@ -1488,7 +1488,7 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
-			<HotKey>0</HotKey>
+			<HotKey>NONE</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>
@@ -1708,7 +1708,7 @@
 					<bRemove>1</bRemove>
 				</FeatureStruct>
 			</FeatureStructs>
-			<HotKey>0</HotKey>
+			<HotKey>NONE</HotKey>
 			<bAltDown>0</bAltDown>
 			<bShiftDown>0</bShiftDown>
 			<bCtrlDown>0</bCtrlDown>

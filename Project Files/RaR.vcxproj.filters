@@ -529,6 +529,9 @@
     <ClCompile Include="DLLSources\Types\ActionSharedTypes.cpp">
       <Filter>CV\Info\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\Types\KeyboardKeyTypes.cpp">
+      <Filter>CV\Info\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -1018,6 +1021,9 @@
       <Filter>CV\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\Types\ActionTypes.h">
+      <Filter>CV\Info\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\Types\KeyboardKeyTypes.h">
       <Filter>CV\Info\Types</Filter>
     </ClInclude>
   </ItemGroup>

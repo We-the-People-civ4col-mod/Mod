@@ -11,19 +11,41 @@ use strict;
 use warnings;
 use File::Slurp;
 
-my $dir   = "DLLSources";
+my $dir = "DLLSources";
 
-opendir(DIR, $dir) or die $!;
+processdir($dir);
 
-while (my $file = readdir(DIR))
+open my $handle, '<', "Makefile.project" or die "Failed to open file Makefile.project";
+chomp(my @lines = <$handle>);
+close $handle;
+
+foreach my $line (@lines)
 {
-	next unless (-f "$dir/$file");
-	next unless ($file =~ m/\.h$/) or ($file =~ m/\.cpp$/) or ($file =~ m/\.def$/);
-	processfile($file, "$dir/$file");
+	next unless substr($line, 0, 6) eq "SUBDIR";
+	$line = substr($line, index($line, "=")+1);
+	$line=~ s/^\s+|\s+$//g;
+	processdir($dir . "/" . $line);
 }
-closedir(DIR);
+
+#processdir("DLLSources/Types");
 
 exit();
+
+
+sub processdir
+{
+	my $dir = shift;
+	
+	opendir(DIR, $dir) or die $!;
+
+	while (my $file = readdir(DIR))
+	{
+		next unless (-f "$dir/$file");
+		next unless ($file =~ m/\.h$/) or ($file =~ m/\.cpp$/) or ($file =~ m/\.def$/);
+		processfile($file, "$dir/$file");
+	}
+	closedir(DIR);
+}
 
 sub processfile
 {

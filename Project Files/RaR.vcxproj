@@ -78,6 +78,7 @@
     <ClCompile Include="DLLSources\Types\ActionSharedTypes.cpp" />
     <ClCompile Include="DLLSources\GlobalInfos.cpp" />
     <ClCompile Include="DLLSources\Infos.cpp" />
+    <ClCompile Include="DLLSources\Types\KeyboardKeyTypes.cpp" />
     <ClCompile Include="DLLSources\XMLFileReader.cpp" />
     <ClCompile Include="DLLSources\XMLReader.cpp" />
     <ClCompile Include="DLLSources\CvCityYields.cpp" />
@@ -264,6 +265,7 @@
     <ClInclude Include="DLLSources\GlobalsInfoContainer.h" />
     <ClInclude Include="DLLSources\Infos.h" />
     <ClInclude Include="DLLSources\Types\ActionTypes.h" />
+    <ClInclude Include="DLLSources\Types\KeyboardKeyTypes.h" />
     <ClInclude Include="DLLSources\XMLFileReader.h" />
     <ClInclude Include="DLLSources\XMLReader.h" />
     <ClInclude Include="DLLSources\CvCityYields.h" />

@@ -2008,7 +2008,6 @@ bool CvUnit::isActionRecommended(int iAction)
 	CvCity* pWorkingCity;
 	ImprovementTypes eImprovement;
 	ImprovementTypes eFinalImprovement;
-	BuildTypes eBuild;
 	RouteTypes eRoute;
 	BonusTypes eBonus;
 	int iIndex;
@@ -2089,7 +2088,7 @@ bool CvUnit::isActionRecommended(int iAction)
 	case MISSION_BUILD:
 		if (pPlot->getOwner() == getOwnerINLINE())
 		{
-			eBuild = ((BuildTypes)(GC.getActionInfo(iAction).getMissionData()));
+			const BuildTypes eBuild = GC.getActionInfo(iAction).getBuildType();
 			FAssert(eBuild != NO_BUILD);
 			FAssertMsg(eBuild < GC.getNumBuildInfos(), "Invalid Build");
 

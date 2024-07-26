@@ -11,33 +11,33 @@ const CvActionInfo& ActionTypes::info() const
 #endif
 
 ActionTypes::ActionTypes()
-	: m_var(NONE)
+	: data(NONE)
 {
 
 }ActionTypes::ActionTypes(types type)
-	: m_var(type)
+	: data(type)
 {
+}
+
+ActionTypes::types ActionTypes::value() const
+{
+	return data;
 }
 
 bool ActionTypes::isValid() const
 {
-	return m_var >= 0 && m_var < NUM;
-}
-
-int ActionTypes::getInt() const
-{
-	return m_var;
+	return data >= 0 && data < NUM;
 }
 
 bool ActionTypes::next()
 {
-	m_var = static_cast<types>(m_var + 1);
-	return isValid();
+	data = static_cast<types>(data + 1);
+	return data < NUM;
 }
 
 ActionTypes ActionTypes::createFromInt(int iIndex)
 {
 	ActionTypes eTemp;
-	eTemp.m_var = static_cast<types>(iIndex);
+	eTemp.data = static_cast<types>(iIndex);
 	return eTemp;
 }

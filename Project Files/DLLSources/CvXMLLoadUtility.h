@@ -251,9 +251,6 @@ public:
 	// current xml file, it assumes that the current node is the parent node of the string list children
 	bool SetStringList(CvString** ppszStringArray, int* piSize);
 
-	// get the integer value for the keyboard mapping of the hotkey if it exists
-	static int GetHotKeyInt(char const* pszHotKeyVal);
-
 	// loads an xml file into the FXml variable.  The szFilename parameter has
 	// the m_szXmlPath member variable pre-pended to it to form the full pathname
 	bool LoadCivXml(FXml* pFXml, char const* szFilename);
@@ -320,9 +317,6 @@ private:
 	void SetGlobalActionInfo();
 	void SetGlobalAnimationPathInfo(CvAnimationPathInfo** ppAnimationPathInfo, char* szTagName, int* iNumVals);
 	void SetGameText(const char* szTextGroup, const char* szTagName, bool bUTF8, const char *szFileName, GameTextList& FStringListEnglish, GameTextList& FStringListCurrentLanguage, stdext::hash_map< std::string, bool >& StringList);
-
-	// create a keyboard string from a KB code, Delete would be returned for KB_DELETE
-	static CvWString CreateKeyStringFromKBCode(char const* pszHotKey);
 
 	//
 	// template which can handle and sort all hotkey info classes

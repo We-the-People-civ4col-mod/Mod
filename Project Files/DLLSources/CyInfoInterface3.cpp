@@ -362,7 +362,7 @@ void CyInfoPythonInterface3()
 		.def("setPath", &CvEffectInfo::setPath, "void (string)")
 		;
 	python::class_<CyControlInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvControlInfo")
-		.def("getActionInfoIndex", &CvControlInfo::getActionInfoIndex, "int ()")
+		.def("getActionInfoIndex", &CyControlInfo::getActionInfoIndex, "int ()")
 		;
 	python::class_<CyAutomateInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvAutomateInfo")
 		;

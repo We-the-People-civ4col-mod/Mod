@@ -114,6 +114,9 @@ protected:
 	float m_fInterfaceScale;	//!< the scale of the unit appearing in the interface screens
 };
 
+
+#include "Types\KeyboardKeyTypes.h"
+
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //  CLASS:      CvHotkeyInfo
 //!  \brief			holds the hotkey info for an info class
@@ -121,59 +124,42 @@ protected:
 class CvHotkeyInfo : public CvInfoBase
 {
 public:
-	//constructor
 	CvHotkeyInfo();
-	//destructor
-	virtual ~CvHotkeyInfo();
+
 	bool read(CvXMLLoadUtility* pXML);
-	virtual void read(FDataStreamBase* pStream);
-	virtual void write(FDataStreamBase* pStream);
+	void read(FDataStreamBase* pStream);
+	void write(FDataStreamBase* pStream);
+
 	ActionTypes getActionInfoIndex() const;
 	void setActionInfoIndex(ActionTypes eIndex);
-	int getHotKeyVal() const;
-	void setHotKeyVal(int i);
+	
 	int getHotKeyPriority() const;
-	void setHotKeyPriority(int i);
-	int getHotKeyValAlt() const;
-	void setHotKeyValAlt(int i);
+	KeyboardKeyTypes getHotKeyValAlt() const;
 	int getHotKeyPriorityAlt() const;
-	void setHotKeyPriorityAlt(int i);
 	int getOrderPriority() const;
-	void setOrderPriority(int i);
 	bool isAltDown() const;
-	void setAltDown(bool b);
 	bool isShiftDown() const;
-	void setShiftDown(bool b);
 	bool isCtrlDown() const;
-	void setCtrlDown(bool b);
 	bool isAltDownAlt() const;
-	void setAltDownAlt(bool b);
 	bool isShiftDownAlt() const;
-	void setShiftDownAlt(bool b);
 	bool isCtrlDownAlt() const;
-	void setCtrlDownAlt(bool b);
-	const char* getHotKey() const;
-	void setHotKey(const char* szVal);
-	std::wstring getHotKeyDescription() const;
-	void setHotKeyDescription(const wchar* szHotKeyDescKey, const wchar* szHotKeyAltDescKey, const wchar* szHotKeyString);
+	KeyboardKeyTypes getHotKey() const;
 
 protected:
-	ActionTypes m_eActionInfoIndex;
-	int m_iHotKeyVal;
-	int m_iHotKeyPriority;
-	int m_iHotKeyValAlt;
-	int m_iHotKeyPriorityAlt;
-	int m_iOrderPriority;
-	bool m_bAltDown;
-	bool m_bShiftDown;
-	bool m_bCtrlDown;
-	bool m_bAltDownAlt;
-	bool m_bShiftDownAlt;
-	bool m_bCtrlDownAlt;
-	CvString m_szHotKey;
-	CvWString m_szHotKeyDescriptionKey;
-	CvWString m_szHotKeyAltDescriptionKey;
-	CvWString m_szHotKeyString;
+	ActionTypes::types m_eActionInfoIndex : 16;
+	KeyboardKeyTypes::types m_eHotKeyVal : 8;
+	KeyboardKeyTypes::types m_eHotKeyValAlt : 8;
+	int m_iHotKeyPriority : 8;
+	int m_iHotKeyPriorityAlt : 8;
+	int m_iOrderPriority : 8;
+
+	// use 1 bit ints instead of bools as this allows the compiler to place them in the same word (4 byte block) as the ints
+	unsigned int m_bAltDown : 1;
+	unsigned int m_bShiftDown : 1;
+	unsigned int m_bCtrlDown : 1;
+	unsigned int m_bAltDownAlt : 1;
+	unsigned int m_bShiftDownAlt : 1;
+	unsigned int m_bCtrlDownAlt : 1;
 };
 
 class CvDiplomacyResponse
@@ -600,20 +586,17 @@ public:
 	CvActionInfo(AutomateTypes);
 	CvActionInfo(MissionTypes);
 	virtual ~CvActionInfo();
-	int getMissionData() const;
+	
+	BuildTypes getBuildType() const;
 	int getCommandData() const;
-
-	int getAutomateType() const;
-	int getInterfaceModeType() const;
-	int getMissionType() const;
-	int getCommandType() const;
-	int getControlType() const;
-	int getOriginalIndex() const;
-	void setOriginalIndex(int i);
+	AutomateTypes getAutomateType() const;
+	InterfaceModeTypes getInterfaceModeType() const;
+	MissionTypes getMissionType() const;
+	CommandTypes getCommandType() const;
+	ControlTypes getControlType() const;
 	bool isConfirmCommand() const;
 	DllExport bool isVisible() const;
 	DllExport ActionSubTypes getSubType() const;
-	void setSubType(ActionSubTypes eSubType);
 	// functions to replace the CvInfoBase calls
 	const char* getType() const;
 	const wchar* getDescription() const;
@@ -628,7 +611,6 @@ public:
 	DllExport int getHotKeyPriority() const;
 	DllExport int getHotKeyValAlt() const;
 	DllExport int getHotKeyPriorityAlt() const;
-	int getOrderPriority() const;
 	DllExport bool isAltDown() const;
 	DllExport bool isShiftDown() const;
 	DllExport bool isCtrlDown() const;
@@ -643,9 +625,11 @@ public:
 
 //---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
+	int getOrderPriority() const;
+	int getOriginalIndex() const;
+
 	union 
 	{
-		int m_iOriginalIndex;
 		InterfaceModeTypes m_eInterfaceMode;
 		CommandTypes m_eCommand;
 		BuildTypes m_eBuild;
@@ -657,6 +641,7 @@ protected:
 	};
 	ActionSubTypes m_eSubType;
 private:
+	CvWString CreateHotKeyFromDescription(KeyboardKeyTypes eHotKey, bool bShift, bool bAlt, bool bCtrl) const;
 	CvHotkeyInfo* getHotkeyInfo() const;
 	void setIndex(const ActionTypes iIndex);
 };
