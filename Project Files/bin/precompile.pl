@@ -75,6 +75,7 @@ foreach my $file (@cpp_files)
 	{
 		$output .= "\t$header \\\n";
 	}
+	$output .= " \$(Target_PCH)" if exists $using_precompiled_header{$file_orig}; # add PCH as dependency, but only if the cpp file actually includes it
 	$output .= "\n";
 
 	if ($file eq "$source_dir\\_precompile.cpp")
@@ -93,9 +94,7 @@ foreach my $file (@cpp_files)
 		# skip compiling the precompiled header as the makefile itself handles that part
 
 		# setting up compile target
-		$compile_targets .= "$file_obj: $file";
-		$compile_targets .= " \$(Target_PCH)" if exists $using_precompiled_header{$file_orig}; # add PCH as dependency, but only if the cpp file actually includes it
-		$compile_targets .= "\n";
+		$compile_targets .= "$file_obj:\n";
 		$compile_targets .= "\t\$(AT)\$(CPP) /nologo \$(CFLAGS) ";
 		$compile_targets .= setPrecompilePath($file_orig);
 		$compile_targets .= " \$(INCS) /Fo$file_obj /c $file\n\n";
@@ -276,5 +275,5 @@ sub setPrecompilePath
 
 	my $path = substr($using_precompiled_header{$file}, 0, -15);
 	$path =~ s/\//\\/g;
-	return "\$(PRECOMPILE_CFLAGS1)$path\$(PRECOMPILE_CFLAGS2) "; # trailing space is intentional 
+	return "\$(PRECOMPILE_CFLAGS1)$path\$(PRECOMPILE_CFLAGS2)"; 
 }
