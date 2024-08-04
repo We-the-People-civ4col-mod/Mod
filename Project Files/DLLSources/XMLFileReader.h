@@ -1,7 +1,7 @@
 #pragma once
 
 #include "XMLReader.h"
-#include "tinyxml2.h"
+#include "lib/tinyxml2/tinyxml2.h"
 
 class XMLFileReader;
 

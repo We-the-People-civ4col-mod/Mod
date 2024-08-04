@@ -15,9 +15,9 @@
 #pragma push_macro("new")  
 #undef free
 #undef new
-#include "tbb/parallel_for.h"
-#include "tbb/blocked_range.h"
-#include "tbb/cache_aligned_allocator.h"
+#include "lib/tbb/parallel_for.h"
+#include "lib/tbb/blocked_range.h"
+#include "lib/tbb/cache_aligned_allocator.h"
 #pragma pop_macro("new")  
 #pragma pop_macro("free")  
 

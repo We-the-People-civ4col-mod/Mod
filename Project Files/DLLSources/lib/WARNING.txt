@@ -1,0 +1,5 @@
+This is intended for 3rd party libraries only, not code we edit ourselves. As a result, cpp files will not depend on anything in this directory or any subdirectories. This means if any of the files here are changed, the cpp files including those headers will not automatically recomplile. This is to simplify precompile.pl to make it fast and easier to write and maintain.
+
+In short: once files are added to the lib directory, do not edit those files and assume it works just fine.
+
+If you want to add a library, which you also want to mod in future revisions, do place it in a different directory.

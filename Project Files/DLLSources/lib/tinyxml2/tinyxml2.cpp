@@ -21,9 +21,6 @@ must not be misrepresented as being the original software.
 distribution.
 */
 
-/// include precompiled game header (needed in all files)
-#include "CvGameCoreDLL.h"
-
 #include "tinyxml2.h"
 
 #include <new>		// yes, this one new style header, is in the Android SDK.
@@ -32,8 +29,8 @@ distribution.
 #   include <stdarg.h>
 #else
 // remove what is already added in the precompiled header
-//#   include <cstddef>
-//#   include <cstdarg>
+#   include <cstddef>
+#   include <cstdarg>
 #endif
 
 #if defined(_MSC_VER) && (_MSC_VER >= 1400 ) && (!defined WINCE)

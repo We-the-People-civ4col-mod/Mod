@@ -9,7 +9,6 @@ set TARGET=%1
 set TEMP_DIR_POSTFIX=%2
 set CONFIG_CFLAGS= %3
 bin\jom source_list /NOLOGO && ^
-nmake precompile  /NOLOGO && ^
 bin\jom build
 
 pause

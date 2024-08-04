@@ -445,7 +445,7 @@
     <ClCompile Include="DLLSources\XMLLengthSet.cpp">
       <Filter>Classes\XML\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\tinyxml2.cpp">
+    <ClCompile Include="DLLSources\lib\tinyxml2\tinyxml2.cpp">
       <Filter>Classes\XML\CPP</Filter>
     </ClCompile>
     <ClCompile Include="DLLSources\CvXMLLoadUtilitySet.cpp">
@@ -945,7 +945,7 @@
     <ClInclude Include="DLLSources\CvCityYields.h">
       <Filter>Classes\City\Header</Filter>
     </ClInclude>
-    <ClInclude Include="DLLSources\tinyxml2.h">
+    <ClInclude Include="DLLSources\lib\tinyxml2\tinyxml2.h">
       <Filter>Classes\XML\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\CvXMLLoadUtility.h">

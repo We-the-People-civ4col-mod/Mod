@@ -3,7 +3,7 @@
 #ifndef CyxmlEditor_h
 #define CyxmlEditor_h
 
-#include "tinyxml2.h"
+#include "lib/tinyxml2/tinyxml2.h"
 
 #if CIV4_PRODUCT_ID == 11476
 #define COLONIZATION_EXE

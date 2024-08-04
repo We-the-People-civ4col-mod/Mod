@@ -115,7 +115,7 @@ protected:
 };
 
 
-#include "Types\KeyboardKeyTypes.h"
+#include "Types/KeyboardKeyTypes.h"
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 //  CLASS:      CvHotkeyInfo

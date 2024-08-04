@@ -1,6 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include "AlertWindow.h"
-#include "tinyxml2.h"
+#include "lib/tinyxml2/tinyxml2.h"
 
 AlertWindow::AlertWindow()
 	: m_bKeysLookedup(false)

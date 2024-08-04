@@ -170,7 +170,6 @@ sub createBat
 	}
 	
 	print FH "bin\\jom source_list /NOLOGO && ^\n";
-	print FH "nmake precompile  /NOLOGO && ^\n";
 	print FH "bin\\jom build && ^\n";
 	
 	print FH "cd \"$exe_dir\" && ^\n";

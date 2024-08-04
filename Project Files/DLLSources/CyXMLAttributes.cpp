@@ -5,7 +5,7 @@
 #include "CyXMLAttributes.h"
 #include "CyXMLObject.h"
 
-#include "tinyxml2.h"
+#include "lib/tinyxml2/tinyxml2.h"
 
 
 CyXMLAttributes::CyXMLAttributes(tinyxml2::XMLElement *pXML, tinyxml2::XMLElement *pInfo)
