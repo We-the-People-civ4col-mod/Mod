@@ -1468,7 +1468,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SLAVE_HUNTER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Slave hunters[COLOR_REVERT] are skilled in fighting and capturing runaway slaves including armed rebelling slaves. You can only acquire them by recruitment in Africa or through rare events.</English>
+		<English>[COLOR_UNIT_TEXT]Slave hunters[COLOR_REVERT] are skilled in fighting and capturing runaway slaves including armed rebelling slaves. They start with promotions that make it harder for slaves to escape from any cities where they're stationed. You can only acquire them by recruitment in Africa or through rare events.</English>
 		<German>[COLOR_UNIT_TEXT]Sklavenjäger[COLOR_REVERT] sind darauf spezialisiert flüchtende Sklaven wieder einzufangen oder Sklavenrevolten niederzuschlagen. Sie können lediglich in Afrika rekrutiert werden oder durch seltene Ereignisse erhalten werden.</German>
 	</TEXT>
 	<TEXT>
@@ -1497,7 +1497,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SLAVE_MASTER_STRATEGY</Tag>
-		<English>[COLOR_UNIT_TEXT]Slave overseers[COLOR_REVERT] drive slaves, criminals and indentured servants to work harder to produce more. You can only acquire them by recruitment in Africa or by rare events.</English>
+		<English>[COLOR_UNIT_TEXT]Slave overseers[COLOR_REVERT] drive slaves, criminals and indentured servants to work harder to produce more. Check overseer promotions to see how much more. You can only acquire overseers by recruitment in Africa or by rare events.</English>
 		<German>[COLOR_UNIT_TEXT]Sklavenaufseher[COLOR_REVERT] sind in der Lage Sklaven, Kriminelle und Leibeigene härter arbeiten zu lassen, um mehr zu produzieren. Sie können lediglich in Afrika rekrutiert werden oder durch seltene Ereignisse erhalten werden.</German>
 	</TEXT>
 	<TEXT>
