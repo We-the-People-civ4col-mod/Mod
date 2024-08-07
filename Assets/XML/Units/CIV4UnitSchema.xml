@@ -944,7 +944,7 @@
 		<element type="PathEntry" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="Civ4BuildInfos" content="eltOnly">
-		<element type="BuildInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="BuildInfos" />
 	</ElementType>
 	<ElementType name="Civ4UnitCombatInfos" content="eltOnly">
 		<element type="UnitCombatInfos" minOccurs="0" maxOccurs="*"/>

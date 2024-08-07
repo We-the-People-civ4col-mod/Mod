@@ -341,7 +341,7 @@ protected:
 	bool AI_nextCityToImprove(CvCity* pCity);
 	bool AI_fortTerritory(bool bCanal);
 	bool AI_improvePlot(CvPlot* pPlot, BuildTypes eBuild);
-	BuildTypes AI_betterPlotBuild(CvPlot* pPlot, BuildTypes eBuild);
+	BuildTypes AI_betterPlotBuild(CvPlot* pPlot, const BuildTypes eBuild);
 	bool AI_routeCity();
 	bool AI_routeTerritory(bool bImprovementOnly = false);
 	bool AI_travelToUpgradeCity();

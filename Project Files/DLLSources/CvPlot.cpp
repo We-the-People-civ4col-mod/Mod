@@ -2170,11 +2170,8 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 
 bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible) const
 {
-	ImprovementTypes eImprovement;
-	ImprovementTypes eFinalImprovementType;
-	RouteTypes eRoute;
-	bool bValid;
-
+	// callback not in use and shouldn't be in use due to performance concerns. Delete?
+#if 0
 	if(GC.getUSE_CAN_BUILD_CALLBACK())
 	{
 		CyArgsList argsList;
@@ -2193,15 +2190,17 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 			return false;
 		}
 	}
+#endif
 
 	if (eBuild == NO_BUILD)
 	{
 		return false;
 	}
 
-	bValid = false;
+	bool bValid = false;
 
-	eImprovement = ((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement()));
+	const CvBuildInfo& kBuild = INFO.getInfo(eBuild);
+	const ImprovementTypes eImprovement = kBuild.getImprovement();
 
 	if (eImprovement != NO_IMPROVEMENT)
 	{
@@ -2209,7 +2208,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		bool bRemoveFeature = false;
 		if (getFeatureType() != NO_FEATURE)
 		{
-			bRemoveFeature = GC.getBuildInfo(eBuild).isFeatureRemove(getFeatureType());
+			bRemoveFeature = kBuild.getFeatureRemove(getFeatureType());
 		}
 
 		// build feature removal detection - end - Nightinggale
@@ -2263,7 +2262,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 				return false;
 			}
 
-			eFinalImprovementType = finalImprovementUpgrade(getImprovementType());
+			const ImprovementTypes eFinalImprovementType = finalImprovementUpgrade(getImprovementType());
 
 			if (eFinalImprovementType != NO_IMPROVEMENT)
 			{
@@ -2336,7 +2335,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 					{
 						if(pLoopUnit->getBuildType() != NO_BUILD)
 						{
-							ImprovementTypes eImprovementBuild = (ImprovementTypes)(GC.getBuildInfo(pLoopUnit->getBuildType()).getImprovement());
+							const ImprovementTypes eImprovementBuild = kBuild.getImprovement();
 							if(eImprovementBuild != NO_IMPROVEMENT)
 							{
 								// WTP, ray, Canal - also adjust here
@@ -2355,7 +2354,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		bValid = true;
 	}
 
-	eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
+	const RouteTypes eRoute = kBuild.getRoute();
 
 	// WTP, ray, removing Roads - START
 	// for now I additionally also hardcode eBuild (safest)
@@ -2450,7 +2449,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 
 	if (getFeatureType() != NO_FEATURE)
 	{
-		if (GC.getBuildInfo(eBuild).isFeatureRemove(getFeatureType()))
+		if (kBuild.isFeatureRemove(getFeatureType()))
 		{
 			if (isOwned() && (GET_PLAYER(ePlayer).getTeam() != getTeam()) && !atWar(GET_PLAYER(ePlayer).getTeam(), getTeam()))
 			{
@@ -2462,7 +2461,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 	}
 
 	// R&R, ray, Terraforming Features - START
-	const TerrainTypes ePrereqTerrain = (TerrainTypes)(GC.getBuildInfo(eBuild).getPrereqTerrain());
+	const TerrainTypes ePrereqTerrain = kBuild.getPrereqTerrain();
 	if (ePrereqTerrain != NO_TERRAIN)
 	{
 		// check if Terrain fits
@@ -2484,7 +2483,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 		bValid = true;
 	}
 
-	const FeatureTypes eResultFeature = (FeatureTypes)(GC.getBuildInfo(eBuild).getResultFeature());
+	const FeatureTypes eResultFeature = kBuild.getResultFeature();
 	if (eResultFeature != NO_FEATURE)
 	{
 		//no reforrestation on City Plots
@@ -2529,11 +2528,14 @@ int CvPlot::getBuildTime(BuildTypes eBuild) const
 
 	FAssertMsg(getTerrainType() != NO_TERRAIN, CvString::format("Plot(%d,%d) TerrainType is not assigned a valid value", getX_INLINE(), getY_INLINE()));
 
-	iTime = GC.getBuildInfo(eBuild).getTime();
+	const CvBuildInfo& kBuild = INFO.getInfo(eBuild);
 
-	if (getFeatureType() != NO_FEATURE)
+	iTime = kBuild.getTime();
+
+	const CvBuildInfo::FeatureStruct* RemoveStruct = kBuild.getFeatureRemove(getFeatureType());
+	if (RemoveStruct != NULL)
 	{
-		iTime += GC.getBuildInfo(eBuild).getFeatureTime(getFeatureType());
+		iTime += RemoveStruct->iTime;
 	}
 
 	iTime *= std::max(0, (GC.getTerrainInfo(getTerrainType()).getBuildModifier() + 100));
@@ -2611,6 +2613,21 @@ int CvPlot::getFeatureYield(BuildTypes eBuild, YieldTypes eYield, TeamTypes eTea
 		return 0;
 	}
 
+	const CvBuildInfo::FeatureStruct* featureRemoveStruct = INFO.getInfo(eBuild).getFeatureRemove(getFeatureType());
+	if (featureRemoveStruct == NULL)
+	{
+		// feature won't provide the yield in question
+		return 0;
+	}
+
+	int iProduction = featureRemoveStruct->Yields.get(eYield);
+	if (iProduction == 0)
+	{
+		// applying modifiers to 0 will still be 0. Let's not waste time on that case
+		return 0;
+	}
+
+
 	if (*ppCity == NULL)
 	{
 		*ppCity = getWorkingCity();
@@ -2626,9 +2643,8 @@ int CvPlot::getFeatureYield(BuildTypes eBuild, YieldTypes eYield, TeamTypes eTea
 		return 0;
 	}
 
-	int iProduction = GC.getBuildInfo(eBuild).getFeatureYield(getFeatureType(), eYield);
 	const int iSafeDistance = 2;
-	int iStep = iProduction / std::max(iSafeDistance, GC.getDefineINT("FEATURE_PRODUCTION_YIELD_MAX_DISTANCE"));
+	int iStep = iProduction / std::max(iSafeDistance, GLOBAL_DEFINE_FEATURE_PRODUCTION_YIELD_MAX_DISTANCE);
 	iProduction -= std::max(0, plotDistance(getX_INLINE(), getY_INLINE(), (*ppCity)->getX_INLINE(), (*ppCity)->getY_INLINE()) - iSafeDistance) * iStep;
 
 	iProduction *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
@@ -2636,7 +2652,7 @@ int CvPlot::getFeatureYield(BuildTypes eBuild, YieldTypes eYield, TeamTypes eTea
 
 	if (getTeam() != eTeam)
 	{
-		iProduction *= GC.getDefineINT("DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT");
+		iProduction *= GLOBAL_DEFINE_DIFFERENT_TEAM_FEATURE_PRODUCTION_PERCENT;
 		iProduction /= 100;
 	}
 
@@ -4816,7 +4832,12 @@ bool CvPlot::hasNearbyPlotWith(const InfoArray1<T>& kInfo, int iRange, bool bEmp
 }
 
 template <typename T>
+#ifdef MakefileCompilation
+// boost::enable_if confuses intellisense
 typename boost::enable_if<boost::is_enum<T>, bool>::type
+#else
+bool 
+#endif
 CvPlot::hasNearbyPlotWith(T eVal, int iRange) const
 {
 	CvMap& kMap = GC.getMap();
@@ -6724,13 +6745,14 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 
 		if (eFeature != NO_FEATURE)
 		{
-			for (int iI = 0; iI < GC.getNumBuildInfos(); ++iI)
+			for (LoopBuildTypes eBuild; eBuild.next();)
 			{
-				ImprovementTypes eLoopImprovement = ((ImprovementTypes)(GC.getBuildInfo((BuildTypes)iI).getImprovement()));
+				const CvBuildInfo& kBuild = eBuild.info();
+				const ImprovementTypes eLoopImprovement = kBuild.getImprovement();
 
 				if (eImprovement == eLoopImprovement)
 				{
-					if (GC.getBuildInfo((BuildTypes)iI).isFeatureRemove(eFeature))
+					if (kBuild.isFeatureRemove(eFeature))
 					{
 						bIgnoreFeature = true;
 						break;
@@ -8085,21 +8107,23 @@ bool CvPlot::changeBuildProgress(BuildTypes eBuild, int iChange, TeamTypes eTeam
 
 		if (getBuildProgress(eBuild) >= getBuildTime(eBuild))
 		{
+			const CvBuildInfo& kBuild = INFO.getInfo(eBuild);
+
 			m_em_iBuildProgress.set(eBuild, 0);
 
-			if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
+			if (kBuild.getImprovement() != NO_IMPROVEMENT)
 			{
-				setImprovementType((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement());
+				setImprovementType(kBuild.getImprovement());
 			}
 
 
-			if (GC.getBuildInfo(eBuild).getRoute() != NO_ROUTE)
+			if (kBuild.getRoute() != NO_ROUTE)
 			{
-				setRouteType((RouteTypes)GC.getBuildInfo(eBuild).getRoute());
+				setRouteType(kBuild.getRoute());
 			}
 
 			// WTP, ray, removing Roads - START
-			else if (GC.getBuildInfo(eBuild).getRoute() == NO_ROUTE && eBuild == 3)
+			else if (kBuild.getRoute() == NO_ROUTE && eBuild == 3)
 			{
 				setRouteType(NO_ROUTE);
 			}
@@ -8107,7 +8131,7 @@ bool CvPlot::changeBuildProgress(BuildTypes eBuild, int iChange, TeamTypes eTeam
 
 			if (getFeatureType() != NO_FEATURE)
 			{
-				if (GC.getBuildInfo(eBuild).isFeatureRemove(getFeatureType()))
+				if (kBuild.isFeatureRemove(getFeatureType()))
 				{
 					FAssertMsg(eTeam != NO_TEAM, "eTeam should be valid");
 
@@ -8136,15 +8160,15 @@ bool CvPlot::changeBuildProgress(BuildTypes eBuild, int iChange, TeamTypes eTeam
 			}
 
 			// R&R, ray, Terraforming Features - START
-			if (GC.getBuildInfo(eBuild).getResultTerrain() != NO_TERRAIN)
+			if (kBuild.getResultTerrain() != NO_TERRAIN)
 			{
-				setTerrainType((TerrainTypes)GC.getBuildInfo(eBuild).getResultTerrain());
+				setTerrainType(kBuild.getResultTerrain());
 			}
 
-			if (GC.getBuildInfo(eBuild).getResultFeature() != NO_FEATURE)
+			if (kBuild.getResultFeature() != NO_FEATURE)
 			{
 				setImprovementType(NO_IMPROVEMENT);
-				setFeatureType((FeatureTypes)GC.getBuildInfo(eBuild).getResultFeature());
+				setFeatureType(kBuild.getResultFeature());
 			}
 			// R&R, ray, Terraforming Features - END
 
@@ -9271,10 +9295,12 @@ int CvPlot::getYieldWithBuild(BuildTypes eBuild, YieldTypes eYield, bool bWithUp
 {
 	int iYield = 0;
 
+	const CvBuildInfo& kBuild = INFO.getInfo(eBuild);
+
 	bool bIgnoreFeature = false;
 	if (getFeatureType() != NO_FEATURE)
 	{
-		if (GC.getBuildInfo(eBuild).isFeatureRemove(getFeatureType()))
+		if (kBuild.isFeatureRemove(getFeatureType()))
 		{
 			bIgnoreFeature = true;
 		}
@@ -9282,7 +9308,7 @@ int CvPlot::getYieldWithBuild(BuildTypes eBuild, YieldTypes eYield, bool bWithUp
 
 	iYield += calculateNatureYield(eYield, getTeam(), bIgnoreFeature);
 
-	ImprovementTypes eImprovement = (ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement();
+	ImprovementTypes eImprovement = kBuild.getImprovement();
 
 	if (eImprovement != NO_IMPROVEMENT)
 	{
@@ -9309,7 +9335,7 @@ int CvPlot::getYieldWithBuild(BuildTypes eBuild, YieldTypes eYield, bool bWithUp
 		iYield += calculateImprovementYieldChange(eImprovement, eYield, getOwnerINLINE(), false);
 	}
 
-	RouteTypes eRoute = (RouteTypes)GC.getBuildInfo(eBuild).getRoute();
+	RouteTypes eRoute = kBuild.getRoute();
 	if (eRoute != NO_ROUTE)
 	{
 		eImprovement = getImprovementType();

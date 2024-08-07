@@ -269,7 +269,7 @@ protected:
 
 	int AI_experienceWeight() const;
 
-	int AI_plotYieldValue(const CvPlot* pPlot, int* piYields) const;
+	int AI_plotYieldValue(const CvPlot* pPlot, const EnumMap<YieldTypes, int>& emYields) const;
 	void AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildTypes* peBestBuild) const;
 
 	int AI_getYieldMagicValue(const int* piYieldsTimes100) const;

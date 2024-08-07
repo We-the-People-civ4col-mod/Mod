@@ -1576,7 +1576,7 @@ void CvDLLWidgetData::doPediaBuildJump(CvWidgetDataStruct &widgetDataStruct)
 	BuildTypes eBuild = (BuildTypes)widgetDataStruct.m_iData2;
 	if (NO_BUILD != eBuild)
 	{
-		eImprovement = (ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement();
+		eImprovement = INFO.getInfo(eBuild).getImprovement();
 	}
 
 	if (NO_IMPROVEMENT != eImprovement)
@@ -2027,28 +2027,29 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 			{
 				const BuildTypes eBuild = GC.getActionInfo(widgetDataStruct.m_iData1).getBuildType();
 				FAssert(eBuild != NO_BUILD);
+				const CvBuildInfo& kBuild = INFO.getInfo(eBuild);
 				eImprovement = pMissionPlot->getImprovementType();
-				ImprovementTypes eBuildImprovement = (ImprovementTypes) GC.getBuildInfo(eBuild).getImprovement();
+				ImprovementTypes eBuildImprovement = kBuild.getImprovement();
 				if (eBuildImprovement != NO_IMPROVEMENT)
 				{
 					eImprovement = eBuildImprovement;
 				}
 				eRoute = pMissionPlot->getRouteType();
-				RouteTypes eBuildRoute = (RouteTypes) GC.getBuildInfo(eBuild).getRoute();
+				RouteTypes eBuildRoute = kBuild.getRoute();
 				if (eBuildRoute != NO_ROUTE)
 				{
 					eRoute = eBuildRoute;
 				}
 				FeatureTypes eFeature = pMissionPlot->getFeatureType();
-				bool bIgnoreFeature = (eFeature != NO_FEATURE && GC.getBuildInfo(eBuild).isFeatureRemove(eFeature));
-				for (iI = 0; iI < NUM_YIELD_TYPES; iI++)
+				bool bIgnoreFeature = kBuild.getFeatureRemove(eFeature) != NULL;
+				for (PlotYieldTypes eYield; eYield.next();)
 				{
-					iYield = pMissionPlot->calculatePotentialYield((YieldTypes) iI, GC.getGameINLINE().getActivePlayer(), eImprovement, bIgnoreFeature, eRoute, NO_UNIT, false);
-					iYield -= pMissionPlot->calculatePotentialYield((YieldTypes) iI, GC.getGameINLINE().getActivePlayer(), pMissionPlot->getImprovementType(), false, pMissionPlot->getRouteType(), NO_UNIT, false);
+					iYield = pMissionPlot->calculatePotentialYield(eYield, GC.getGameINLINE().getActivePlayer(), eImprovement, bIgnoreFeature, eRoute, NO_UNIT, false);
+					iYield -= pMissionPlot->calculatePotentialYield(eYield, GC.getGameINLINE().getActivePlayer(), pMissionPlot->getImprovementType(), false, pMissionPlot->getRouteType(), NO_UNIT, false);
 
 					if (iYield != 0)
 					{
-						szTempBuffer.Format(L", %s%d%c", ((iYield > 0) ? L"+" : L""), iYield, GC.getYieldInfo((YieldTypes) iI).getChar());
+						szTempBuffer.Format(L", %s%d%c", ((iYield > 0) ? L"+" : L""), iYield, eYield.info().getChar());
 						szBuffer.append(szTempBuffer);
 					}
 				}
@@ -2102,7 +2103,7 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 					}
 				}
 
-				if (GC.getBuildInfo(eBuild).isKill())
+				if (kBuild.isKill())
 				{
 					szBuffer.append(NEWLINE);
 					szBuffer.append(gDLL->getText("TXT_KEY_ACTION_CONSUME_UNIT"));
@@ -2110,20 +2111,16 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 
 				if (pMissionPlot->getFeatureType() != NO_FEATURE)
 				{
-					if (GC.getBuildInfo(eBuild).isFeatureRemove(pMissionPlot->getFeatureType()))
+					if (kBuild.getFeatureRemove(pMissionPlot->getFeatureType()))
 					{
 						CvCity* pCity = NULL;
-						for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+						for (PlotYieldTypes eYield; eYield.next();)
 						{
-							YieldTypes eYield = (YieldTypes) iYield;
-							if (GC.getYieldInfo(eYield).isCargo())
+							int iYieldProduction = pMissionPlot->getFeatureYield(eBuild, eYield, pHeadSelectedUnit->getTeam(), &pCity);
+							if (iYieldProduction > 0)
 							{
-								int iYieldProduction = pMissionPlot->getFeatureYield(eBuild, eYield, pHeadSelectedUnit->getTeam(), &pCity);
-								if (iYieldProduction > 0)
-								{
-									szBuffer.append(NEWLINE);
-									szBuffer.append(gDLL->getText("TXT_KEY_ACTION_CHANGE_PRODUCTION", iYieldProduction, pCity->getNameKey(), GC.getYieldInfo(eYield).getChar()));
-								}
+								szBuffer.append(NEWLINE);
+								szBuffer.append(gDLL->getText("TXT_KEY_ACTION_CHANGE_PRODUCTION", iYieldProduction, pCity->getNameKey(), GC.getYieldInfo(eYield).getChar()));
 							}
 						}
 
@@ -2282,9 +2279,9 @@ void CvDLLWidgetData::parseActionHelp(CvWidgetDataStruct &widgetDataStruct, CvWS
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_ACTION_NUM_TURNS", iTurns));
 
-				if (!isEmpty(GC.getBuildInfo(eBuild).getHelp()))
+				if (!isEmpty(INFO.getInfo(eBuild).getHelp()))
 				{
-					szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getBuildInfo(eBuild).getHelp()).c_str());
+					szBuffer.append(CvWString::format(L"%s%s", NEWLINE, INFO.getInfo(eBuild).getHelp()).c_str());
 				}
 			}
 

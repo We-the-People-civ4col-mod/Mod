@@ -440,10 +440,6 @@ public:
 	std::vector<CvGoodyInfo*>& getGoodyInfo();
 	CvGoodyInfo& getGoodyInfo(GoodyTypes eGoodyNum);
 
-	int getNumBuildInfos();
-	std::vector<CvBuildInfo*>& getBuildInfo();
-	DllExport CvBuildInfo& getBuildInfo(BuildTypes eBuildNum);
-
 	DllExport int getNumHandicapInfos();
 	DllExport std::vector<CvHandicapInfo*>& getHandicapInfo();
 	DllExport CvHandicapInfo& getHandicapInfo(HandicapTypes eHandicapNum);
@@ -1088,7 +1084,6 @@ protected:
 	std::vector<CvBonusInfo*> m_paBonusInfo;
 	std::vector<CvImprovementInfo*> m_paImprovementInfo;
 	std::vector<CvGoodyInfo*> m_paGoodyInfo;
-	std::vector<CvBuildInfo*> m_paBuildInfo;
 	std::vector<CvHandicapInfo*> m_paHandicapInfo;
 	std::vector<CvGameSpeedInfo*> m_paGameSpeedInfo;
 	std::vector<CvAlarmInfo*> m_paAlarmInfo;

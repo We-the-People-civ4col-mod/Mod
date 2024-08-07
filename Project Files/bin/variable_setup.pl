@@ -64,7 +64,7 @@ $var{DetailManager}    = {                 XML => 1, JIT => "NO_JIT_ARRAY_TYPE",
 $var{Domain}           = {not_strict => 1, XML => 1};
 $var{Emotion}          = {not_strict => 1};
 $var{Effect}           = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE", INFO => "getEffectInfo"};
-$var{EntityEvent}      = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE"};
+$var{EntityEvent}      = {not_strict => 1, XML => 1, JIT => "NO_JIT_ARRAY_TYPE", INFO => "getEntityEventInfo"};
 $var{Era}              = {not_strict => 1, XML => 1};
 $var{Emphasize}        = {not_strict => 1, XML => 1};
 $var{Europe}           = {not_strict => 1};

@@ -33,7 +33,7 @@ int getArrayLength(JITarrayTypes eType)
 	case JIT_ARRAY_ACHIEVE:            return NUM_ACHIEVE_TYPES;
 	case JIT_ARRAY_ARTSTYLE:           return GC.getNumArtStyleTypes();
 	case JIT_ARRAY_BONUS:              return GC.getNumBonusInfos();
-	case JIT_ARRAY_BUILD:              return GC.getNumBuildInfos();
+	case JIT_ARRAY_BUILD:              return NUM_BUILD_TYPES;
 	case JIT_ARRAY_BUILDING:           return GC.getNumBuildingInfos();
 	case JIT_ARRAY_BUILDINGCLASS:      return GC.getNumBuildingClassInfos();
 	case JIT_ARRAY_BUILDING_SPECIAL:   return GC.getNumSpecialBuildingInfos();
@@ -102,7 +102,7 @@ const CvInfoBase* getBaseInfo(JITarrayTypes eType, int iIndex)
 	{
 	case JIT_ARRAY_ACHIEVE:            return &GC.getAchieveInfo((AchieveTypes)iIndex);
 	case JIT_ARRAY_BONUS:              return &GC.getBonusInfo((BonusTypes)iIndex);
-	case JIT_ARRAY_BUILD:              return &GC.getBuildInfo((BuildTypes)iIndex);
+	case JIT_ARRAY_BUILD:              return &INFO.getInfo((BuildTypes)iIndex);
 	case JIT_ARRAY_BUILDING:           return &GC.getBuildingInfo((BuildingTypes)iIndex);
 	case JIT_ARRAY_BUILDINGCLASS:      return &GC.getBuildingClassInfo((BuildingClassTypes)iIndex);
 	case JIT_ARRAY_BUILDING_SPECIAL:   return &GC.getSpecialBuildingInfo((SpecialBuildingTypes)iIndex);

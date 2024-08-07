@@ -165,12 +165,13 @@ sub processCPP
 {
 	my $line = shift;
 	
-	my $index = index($line, "gDLL->getText");
+	my $index = index($line, "gDLL->getText(");
 	if ($index != -1)
 	{
 		$line = substr($line, $index);
 		$line = substr($line, index($line, "(",)+1);
 		my @arguments = getArguments($line);
+		return if scalar @arguments == 0;
 		if (substr($arguments[0], 0, 8) eq "\"TXT_KEY")
 		{
 			my $found_mandatory = 0;

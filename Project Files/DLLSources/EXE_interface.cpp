@@ -453,14 +453,17 @@ BOOST_STATIC_ASSERT(sizeof(EXE_CvBonusInfo) == sizeof(CvBonusInfo));
 class EXE_CvBuildInfo : public CvBuildInfo
 {
 public:
-	/*
-		getEntityEvent
-			?getEntityEvent@CvBuildInfo@@QBEHXZ=?getEntityEvent@EXE_CvBuildInfo@@QBEHXZ
+	#pragma comment(linker, "/EXPORT:?getEntityEvent@CvBuildInfo@@QBEHXZ=?getEntityEvent@EXE_CvBuildInfo@@QBEHXZ")
+	DllExport int getEntityEvent() const
+	{
+		return CvBuildInfo::getEntityEvent();
+	}
 
-		getMissionType
-			?getMissionType@CvBuildInfo@@QBEHXZ=?getMissionType@EXE_CvBuildInfo@@QBEHXZ
-
-	*/
+	#pragma comment(linker, "/EXPORT:?getMissionType@CvBuildInfo@@QBEHXZ=?getMissionType@EXE_CvBuildInfo@@QBEHXZ")
+	DllExport int getMissionType() const
+	{
+		return CvBuildInfo::getMissionType();
+	}
 };
 BOOST_STATIC_ASSERT(sizeof(EXE_CvBuildInfo) == sizeof(CvBuildInfo));
 
@@ -1474,10 +1477,13 @@ public:
 
 		getBorderFinder
 			?getBorderFinder@CvGlobals@@QAEAAVFAStar@@XZ=?getBorderFinder@EXE_CvGlobals@@QAEAAVFAStar@@XZ
-
-		getBuildInfo
-			?getBuildInfo@CvGlobals@@QAEAAVCvBuildInfo@@W4BuildTypes@@@Z=?getBuildInfo@EXE_CvGlobals@@QAEAAVCvBuildInfo@@W4BuildTypes@@@Z
 */
+	#pragma comment(linker, "/EXPORT:?getBuildInfo@CvGlobals@@QAEAAVCvBuildInfo@@W4BuildTypes@@@Z=?getBuildInfo@EXE_CvGlobals@@QAEAAVCvBuildInfo@@W4BuildTypes@@@Z")
+	DllExport CvBuildInfo& getBuildInfo(BuildTypes eBuildNum)
+	{
+		return INFO.m_info.m_BuildTypes[eBuildNum];
+	}
+
 	#pragma comment(linker, "/EXPORT:?getBuildingInfo@CvGlobals@@QAEAAV?$vector@PAVCvBuildingInfo@@V?$allocator@PAVCvBuildingInfo@@@std@@@std@@XZ=?getBuildingInfo@EXE_CvGlobals@@QAEAAV?$vector@PAVCvBuildingInfo@@V?$allocator@PAVCvBuildingInfo@@@std@@@std@@XZ")
 	DllExport std::vector<CvBuildingInfo*>& getBuildingInfo()
 	{

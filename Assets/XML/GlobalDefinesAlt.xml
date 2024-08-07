@@ -22,6 +22,10 @@
 		<DefineTextVal>HANDICAP_EXPLORER</DefineTextVal>
 	</Define>
 	<Define>
+		<DefineName>RUINS_IMPROVEMENT</DefineName>
+		<DefineTextVal>IMPROVEMENT_CITY_RUINS</DefineTextVal>
+	</Define>
+	<Define>
 		<DefineName>MIN_CIV_STARTING_DISTANCE</DefineName>
 		<iDefineIntVal>20</iDefineIntVal>
 	</Define>

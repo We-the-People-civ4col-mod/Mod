@@ -168,9 +168,9 @@ void CyInfoPythonInterface2()
 		.def("getMissionType", &CvBuildInfo::getMissionType, "int ()")
 		.def("isKill", &CvBuildInfo::isKill, "bool ()")
 		// Arrays
-		.def("getFeatureTime", &CvBuildInfo::getFeatureTime, "int (int i)")
-		.def("getFeatureYield", &CvBuildInfo::getFeatureYield, "int (int iFeature, iYield)")
-		.def("isFeatureRemove", &CvBuildInfo::isFeatureRemove, "bool (int i)")
+		.def("getFeatureTime", &CyBuildInfo::getFeatureTime, "int (int i)")
+		.def("getFeatureYield", &CyBuildInfo::getFeatureYield, "int (int iFeature, iYield)")
+		.def("isFeatureRemove", &CyBuildInfo::isFeatureRemove, "bool (int i)")
 		;
 	python::class_<CyGoodyInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvGoodyInfo")
 		.def("getGold", &CvGoodyInfo::getGold, "int ()")

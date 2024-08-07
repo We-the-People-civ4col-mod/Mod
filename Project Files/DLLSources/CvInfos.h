@@ -60,6 +60,12 @@ public:
 	const wchar* getStrategy() const;
 
 	bool isMatchForLink(std::wstring szLink, bool bKeysOnly) const;
+
+	bool readType(XMLReader& reader);
+	bool read(XMLReader& reader);
+	bool postLoadSetup(XMLReader& reader);
+	bool loadText(XMLReader& reader);
+
 	virtual void read(FDataStreamBase* pStream);
 	virtual void write(FDataStreamBase* pStream);
 	virtual bool read(CvXMLLoadUtility* pXML);
@@ -126,6 +132,7 @@ class CvHotkeyInfo : public CvInfoBase
 public:
 	CvHotkeyInfo();
 
+	bool read(XMLReader& reader);
 	bool read(CvXMLLoadUtility* pXML);
 	void read(FDataStreamBase* pStream);
 	void write(FDataStreamBase* pStream);
@@ -2194,44 +2201,49 @@ class CvBuildInfo : public CvHotkeyInfo
 {
 	//---------------------------------------PUBLIC INTERFACE---------------------------------
 public:
+	struct FeatureStruct
+	{
+		FeatureStruct();
+		FeatureTypes FeatureType : 16;
+		int iTime : 16;
+		InfoArray<YieldTypes, int> Yields;
+	};
+
 	CvBuildInfo();
-	virtual ~CvBuildInfo();
+	~CvBuildInfo();
 	int getTime() const;
 	int getCost() const;
-	int getImprovement() const;
-	int getPrereqTerrain() const; // R&R, ray, Terraforming Features
-	int getResultTerrain() const; // R&R, ray, Terraforming Features
-	int getResultFeature() const; // R&R, ray, Terraforming Features
-	int getRoute() const;
-	DllExport int getEntityEvent() const;
-	DllExport int getMissionType() const;
-	void setMissionType(int iNewType);
+	ImprovementTypes getImprovement() const;
+	TerrainTypes getPrereqTerrain() const; // R&R, ray, Terraforming Features
+	TerrainTypes getResultTerrain() const; // R&R, ray, Terraforming Features
+	FeatureTypes getResultFeature() const; // R&R, ray, Terraforming Features
+	RouteTypes getRoute() const;
+	EntityEventTypes getEntityEvent() const;
+	MissionTypes getMissionType() const;
+	void setMissionType(MissionTypes eNewType);
 	bool isKill() const;
 	bool isRoute() const;
 
-	// Arrays
-	int getFeatureTime(int i) const;
-	int getFeatureYield(int iFeature, int iYield) const;
+	const FeatureStruct* getFeatureRemove(FeatureTypes eFeature) const;
+	bool isFeatureRemove(FeatureTypes eFeature) const;
 
-	bool isFeatureRemove(int i) const;
-
-	bool read(CvXMLLoadUtility* pXML);
+	bool read(XMLReader& reader);
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
 	int m_iTime;
 	int m_iCost;
-	int m_iImprovement;
-	int m_iPrereqTerrain; // R&R, ray, Terraforming Features
-	int m_iResultTerrain; // R&R, ray, Terraforming Features
-	int m_iResultFeature; // R&R, ray, Terraforming Features
-	int m_iRoute;
-	int m_iEntityEvent;
-	int m_iMissionType;
+	ImprovementTypes m_eImprovement;
+	TerrainTypes m_ePrereqTerrain; // R&R, ray, Terraforming Features
+	TerrainTypes m_eResultTerrain; // R&R, ray, Terraforming Features
+	FeatureTypes m_eResultFeature; // R&R, ray, Terraforming Features
+	RouteTypes m_eRoute;
+	EntityEventTypes m_eEntityEvent;
+	MissionTypes m_eMissionType;
 	bool m_bKill;
 	// Arrays
-	int* m_paiFeatureTime;
-	bool* m_pabFeatureRemove;
-	std::vector< std::vector<int> > m_aaiFeatureYield;
+	int m_iFeatureRemoveLength;
+	FeatureStruct* m_aFeatureRemoves;
+	EnumMap<FeatureTypes, bool> m_baFeatureRemove;
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

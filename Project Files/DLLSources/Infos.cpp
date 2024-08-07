@@ -42,6 +42,15 @@ XML_VAR_String::operator CvWString() const
 	return CvWString(m_string);
 }
 
+void XML_VAR_String::clear()
+{
+	SAFE_DELETE(m_string);
+}
+
+const char* InfoBase::getType() const
+{
+	return NULL;
+}
 
 bool InfoBase::readType(XMLReader& reader)
 {

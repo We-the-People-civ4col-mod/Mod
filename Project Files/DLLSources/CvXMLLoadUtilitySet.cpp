@@ -25,6 +25,12 @@
 // no need to be strict in this file
 DEFINE_ENUM_INT_COMPARISON(YieldTypes)
 
+CvXMLLoadUtility::XMLReadStage readStage = CvXMLLoadUtility::XML_STAGE_BASIC;
+
+CvXMLLoadUtility::XMLReadStage CvXMLLoadUtility::getReadStage()
+{
+	return readStage;
+}
 
 
 /// xml verification
@@ -249,7 +255,7 @@ void CvXMLLoadUtility::PreLoadGlobalClassInfo(XMLReadStage eStage, std::vector<T
 			}
 		}
 	}
-	else
+	else if (eStage != XML_STAGE_TEXT)
 	{
 		LoadGlobalClassInfo(aInfos, szFileRoot, szFileDirectory, szXmlPath, NULL);
 	}
@@ -266,6 +272,7 @@ void CvXMLLoadUtility::PreUpdateProgressCB(const char* szMessage)
 
 void CvXMLLoadUtility::readXMLfiles(XMLReadStage eStage)
 {
+	readStage = eStage;
 	bFirstRead = eStage == XML_STAGE_BASIC;
 
 	// 4 LoadBasicInfos
@@ -276,10 +283,10 @@ void CvXMLLoadUtility::readXMLfiles(XMLReadStage eStage)
 	PreLoadGlobalClassInfo(eStage, GC.getDenialInfo(), "CIV4DenialInfos", "BasicInfos", "Civ4DenialInfos/DenialInfos/DenialInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getInvisibleInfo(), "CIV4InvisibleInfos", "BasicInfos", "Civ4InvisibleInfos/InvisibleInfos/InvisibleInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getUnitCombatInfo(), "CIV4UnitCombatInfos", "BasicInfos", "Civ4UnitCombatInfos/UnitCombatInfos/UnitCombatInfo", NULL);
-	LoadGlobalClassInfo(eStage, INFO.m_info.m_CivilizationTypes);
-	LoadGlobalClassInfo(eStage, INFO.m_info.m_CivCategoryTypes);
-	LoadGlobalClassInfo(eStage, INFO.m_info.m_DomainTypes);
-	LoadGlobalClassInfo(eStage, INFO.m_info.m_UnitAITypes);
+	//LoadGlobalClassInfo(eStage, INFO.m_info.m_CivilizationTypes);
+	//LoadGlobalClassInfo(eStage, INFO.m_info.m_CivCategoryTypes);
+	//LoadGlobalClassInfo(eStage, INFO.m_info.m_DomainTypes);
+	//LoadGlobalClassInfo(eStage, INFO.m_info.m_UnitAITypes);
 	PreLoadGlobalClassInfo(eStage, GC.getDomainInfo(), "CIV4DomainInfos", "BasicInfos", "Civ4DomainInfos/DomainInfos/DomainInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getUnitAIInfo(), "CIV4UnitAIInfos", "BasicInfos", "Civ4UnitAIInfos/UnitAIInfos/UnitAIInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getAttitudeInfo(), "CIV4AttitudeInfos", "BasicInfos", "Civ4AttitudeInfos/AttitudeInfos/AttitudeInfo", NULL);
@@ -340,7 +347,7 @@ void CvXMLLoadUtility::readXMLfiles(XMLReadStage eStage)
 	PreLoadGlobalClassInfo(eStage, GC.getPlayerColorInfo(), "CIV4PlayerColorInfos", "Interface", "Civ4PlayerColorInfos/PlayerColorInfos/PlayerColorInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getEffectInfo(), "CIV4EffectInfos", "Misc", "Civ4EffectInfos/EffectInfos/EffectInfo", NULL);
 	PreLoadGlobalClassInfo(eStage, GC.getEntityEventInfo(), "CIV4EntityEventInfos", "Units", "Civ4EntityEventInfos/EntityEventInfos/EntityEventInfo", NULL);
-	PreLoadGlobalClassInfo(eStage, GC.getBuildInfo(), "CIV4BuildInfos", "Units", "Civ4BuildInfos/BuildInfos/BuildInfo", NULL);
+	LoadGlobalClassInfo(eStage, INFO.m_info.m_BuildTypes);
 	PreLoadGlobalClassInfo(eStage, GC.getUnitInfo(), "CIV4UnitInfos", "Units", "Civ4UnitInfos/UnitInfos/UnitInfo", &CvDLLUtilityIFaceBase::createUnitInfoCacheObject);
 	if (eStage == XML_STAGE_FULL)
 	{
@@ -426,7 +433,7 @@ void CvXMLLoadUtility::readXMLfiles(XMLReadStage eStage)
 		// preloading the types will not require the special case code
 		PreLoadGlobalClassInfo(eStage, GC.getDiplomacyInfo(), "CIV4DiplomacyInfos", "GameInfo", "Civ4DiplomacyInfos/DiplomacyInfos/DiplomacyInfo", &CvDLLUtilityIFaceBase::createDiplomacyInfoCacheObject);
 	}
-	else
+	else if (eStage != XML_STAGE_TEXT)
 	{
 		// Special Case Diplomacy Info due to double vectored nature and appending of Responses
 		LoadDiplomacyInfo(GC.getDiplomacyInfo(), "CIV4DiplomacyInfos", "GameInfo", "Civ4DiplomacyInfos/DiplomacyInfos/DiplomacyInfo", &CvDLLUtilityIFaceBase::createDiplomacyInfoCacheObject);
@@ -1729,7 +1736,7 @@ void CvXMLLoadUtility::SetGlobalActionInfo()
 		sprintf( szMessage, "NUM_INTERFACE_TYPES is not greater than zero in CvXMLLoadUtility::SetGlobalActionInfo \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
 		gDLL->MessageBox(szMessage, "XML Error");
 	}
-	if(!(GC.getNumBuildInfos() > 0))
+	if(!(NUM_BUILD_TYPES > 0))
 	{
 		char	szMessage[1024];
 		sprintf( szMessage, "GC.getNumBuildInfos() is not greater than zero in CvXMLLoadUtility::SetGlobalActionInfo \n Current XML file is: %s", GC.getCurrentXMLFile().GetCString());
@@ -2284,12 +2291,19 @@ void CvXMLLoadUtility::LoadGlobalClassInfo(XMLReadStage eStage, EnumMap<IndexTyp
 		{
 		case XML_STAGE_BASIC:
 			bPresent = em[index].readType(entry.getListElement());
+			if (bPresent && em[index].getType() != NULL && strcmp(em[index].getType(), "") != 0)
+			{
+				GC.setInfoTypeFromString(em[index].getType(), index);	// add type to global info type hash map
+			}
 			break;
 		case XML_STAGE_FULL:
 			bPresent = em[index].read(entry.getListElement());
 			break;
 		case XML_STAGE_POST_SETUP:
 			bPresent = em[index].postLoadSetup(entry.getListElement());
+			break;
+		case XML_STAGE_TEXT:
+			bPresent = em[index].loadText(entry.getListElement());
 			break;
 		}
 		if (!bPresent)

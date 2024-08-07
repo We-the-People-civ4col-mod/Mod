@@ -480,7 +480,7 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 	if (eBuild != NO_BUILD)
 	{
 		szString.append(L", ");
-		szTempBuffer.Format(L"%s (%d)", GC.getBuildInfo(eBuild).getDescription(), pUnit->plot()->getBuildTurnsLeft(eBuild, 0, 0));
+		szTempBuffer.Format(L"%s (%d)", INFO.getInfo(eBuild).getDescription(), pUnit->plot()->getBuildTurnsLeft(eBuild, 0, 0));
 		szString.append(szTempBuffer);
 	}
 
@@ -2624,13 +2624,13 @@ void CvGameTextMgr::setPlotHelp(CvWStringBuffer& szString, CvPlot* pPlot)
 
             if (NO_BUILD != eBestBuild)
             {
-                szTempBuffer.Format(L"\nBest Build: %s (%d)", GC.getBuildInfo(eBestBuild).getDescription(), iBuildValue);
+                szTempBuffer.Format(L"\nBest Build: %s (%d)", INFO.getInfo(eBestBuild).getDescription(), iBuildValue);
                 szString.append(szTempBuffer);
 			}
 
 			if (NO_BUILD != eCurrentBuild)
 			{
-				szTempBuffer.Format(L"\nCurr Build: %s (%d)", GC.getBuildInfo(eCurrentBuild).getDescription(), iCurrentValue);
+				szTempBuffer.Format(L"\nCurr Build: %s (%d)", INFO.getInfo(eCurrentBuild).getDescription(), iCurrentValue);
                 szString.append(szTempBuffer);
             }
 		}
@@ -5838,7 +5838,7 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	}
 
 	// R&R, ray, Start Logic for Trains
-	if (kUnitInfo.getDomainType() == DOMAIN_LAND && kUnitInfo.getCargoSpace()== 6)
+	if (kUnitInfo.getDomainType() == DOMAIN_LAND && kUnitInfo.getCargoSpace() == 6)
 	{
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_TRAVEL_PLASTERED_ROAD_ONLY"));
@@ -5848,9 +5848,9 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 	if (kUnitInfo.getWorkRate() > 0)
 	{
 		iCount = 0;
-		for (iI = 0; iI < GC.getNumBuildInfos(); ++iI)
+		for (LoopBuildTypes eBuild; eBuild.next();)
 		{
-			if (kUnitInfo.getBuilds(iI))
+			if (kUnitInfo.getBuilds(eBuild))
 			{
 				iCount++;
 			}
@@ -5863,12 +5863,12 @@ void CvGameTextMgr::setBasicUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit,
 		else
 		{
 			bFirst = true;
-			for (iI = 0; iI < GC.getNumBuildInfos(); ++iI)
+			for (LoopBuildTypes eBuild; eBuild.next();)
 			{
-				if (kUnitInfo.getBuilds(iI))
+				if (kUnitInfo.getBuilds(eBuild))
 				{
 					szTempBuffer.Format(L"%s%s ", NEWLINE, gDLL->getText("TXT_KEY_UNIT_CAN").c_str());
-					setListHelp(szBuffer, szTempBuffer, GC.getBuildInfo((BuildTypes) iI).getDescription(), L", ", bFirst);
+					setListHelp(szBuffer, szTempBuffer, eBuild.info().getDescription(), L", ", bFirst);
 					bFirst = false;
 				}
 			}

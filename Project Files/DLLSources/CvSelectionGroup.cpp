@@ -754,11 +754,14 @@ bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvP
 			break;
 
 		case MISSION_BUILD:
-            FAssertMsg(((BuildTypes)iData1) < GC.getNumBuildInfos(), "Invalid Build");
-            if (pLoopUnit->canBuild(pPlot, ((BuildTypes)iData1), bTestVisible))
-            {
-                return true;
-            }
+		{
+			BuildTypes eBuild = static_cast<BuildTypes>(iData1);
+			FAssertMsg(isInRange(eBuild), "Invalid Build");
+			if (pLoopUnit->canBuild(pPlot, eBuild, bTestVisible))
+			{
+				return true;
+			}
+		}
 			break;
 
 		case MISSION_LEAD:
@@ -2554,16 +2557,16 @@ bool CvSelectionGroup::canBuildRoute(CvPlot* pPlot, RouteTypes ePreferredRoute) 
 			continue;
 		}
 
-		for (BuildTypes eLoopBuild = FIRST_BUILD; eLoopBuild < NUM_BUILD_TYPES; eLoopBuild++)
+		for (LoopBuildTypes eLoopBuild; eLoopBuild.next();)
 		{
-			if (GC.getBuildInfo(eLoopBuild).isRoute())
+			if (eLoopBuild.info().isRoute())
 			{
 				if (ePreferredRoute == NO_ROUTE && pLoopUnit->canBuild(pPlot, eLoopBuild))
 				{
 					// there is a route type that can be built
 					return true;
 				}
-				if (GC.getBuildInfo(eLoopBuild).getRoute() == ePreferredRoute && pLoopUnit->canBuild(pPlot, eLoopBuild))
+				if (eLoopBuild.info().getRoute() == ePreferredRoute && pLoopUnit->canBuild(pPlot, eLoopBuild))
 				{
 					// the reqeusted route type can be built
 					return true;
@@ -2608,15 +2611,16 @@ RouteTypes CvSelectionGroup::getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBest
 			continue;
 		}
 
-		for (BuildTypes eLoopBuild = FIRST_BUILD; eLoopBuild < NUM_BUILD_TYPES; eLoopBuild++)
+		for (LoopBuildTypes eLoopBuild; eLoopBuild.next();)
 		{
-			if (GC.getBuildInfo(eLoopBuild).isRoute())
+			const CvBuildInfo& kBuild = eLoopBuild.info();
+			if (kBuild.isRoute())
 			{
-				if(ePreferredRoute == NO_ROUTE)
+				if (ePreferredRoute == NO_ROUTE)
 				{
 					if (pLoopUnit->canBuild(pPlot, eLoopBuild))
 					{
-						RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eLoopBuild).getRoute()));
+						const RouteTypes eRoute = kBuild.getRoute();
 
 						int iValue = GC.getRouteInfo(eRoute).getValue();
 
@@ -2633,7 +2637,7 @@ RouteTypes CvSelectionGroup::getBestBuildRoute(CvPlot* pPlot, BuildTypes* peBest
 				}
 				else // ePreferredRoute is a specific route type!
 				{
-					RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eLoopBuild).getRoute()));
+					const RouteTypes eRoute = kBuild.getRoute();
 					if ((eRoute == ePreferredRoute ||
 							GC.getRouteInfo(ePreferredRoute).getValue() > GC.getRouteInfo(eRoute).getValue() ||
 							(eRoute == ROUTE_RAFT_STATION))
@@ -3057,20 +3061,20 @@ bool CvSelectionGroup::groupBuild(BuildTypes eBuild)
 	bool bContinue;
 
 	FAssert(getOwnerINLINE() != NO_PLAYER);
-	FAssertMsg(eBuild < GC.getNumBuildInfos(), "Invalid Build");
+	FAssertMsg(isInRange(eBuild), "Invalid Build");
 
 	bContinue = false;
 
 	pPlot = plot();
 
-	ImprovementTypes eImprovement = (ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement();
+	ImprovementTypes eImprovement = INFO.getInfo(eBuild).getImprovement();
 	if (eImprovement != NO_IMPROVEMENT)
 	{
 		if (AI_isControlled())
 		{
 			if (GET_PLAYER(getOwnerINLINE()).isOption(PLAYEROPTION_SAFE_AUTOMATION))
 			{
-				if ((pPlot->getImprovementType() != NO_IMPROVEMENT) && (pPlot->getImprovementType() != (ImprovementTypes)(GC.getDefineINT("RUINS_IMPROVEMENT"))))
+				if (pPlot->getImprovementType() != NO_IMPROVEMENT && pPlot->getImprovementType() != GLOBAL_DEFINE_RUINS_IMPROVEMENT)
 				{
 					if (GC.getImprovementInfo(eImprovement).getImprovementPillage() != NO_IMPROVEMENT)
 					{

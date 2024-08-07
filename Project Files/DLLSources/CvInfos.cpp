@@ -16,6 +16,9 @@
 #include "CvGameTextMgr.h"
 #include "CvGameCoreUtils.h"
 #include "lib/iconv/converters.h"
+#include "XMLReader.h"
+#include "Infos.h"
+#include "GlobalsInfoContainer.h"
 
 // static pointer used only by CvInfoBase
 // main purpose is to add read functions to CvInfoBase
@@ -215,6 +218,52 @@ bool CvInfoBase::isMatchForLink(std::wstring szLink, bool bKeysOnly) const
 	return false;
 }
 
+bool CvInfoBase::readType(XMLReader& reader)
+{
+	XML_VAR_String szBuffer;
+
+	reader.Read("Type", szBuffer);
+	m_szType = szBuffer.get();
+	
+	return true;
+}
+
+bool CvInfoBase::read(XMLReader& reader)
+{
+	XML_VAR_String szBuffer;
+
+	reader.Read("bGraphicalOnly", m_bGraphicalOnly);
+
+	reader.Read("Button", szBuffer);
+	m_szButton = szBuffer.get();
+
+	return true;
+}
+
+bool CvInfoBase::postLoadSetup(XMLReader& reader)
+{
+	return false;
+}
+
+bool CvInfoBase::loadText(XMLReader& reader)
+{
+	XML_VAR_String szBuffer;
+
+	reader.ReadTextKey("Description", szBuffer, true);
+	m_szTextKey = szBuffer.getWide();
+
+	reader.ReadTextKey("Civilopedia", szBuffer, true);
+	m_szCivilopediaKey = szBuffer.getWide();
+
+	reader.ReadTextKey("Help", szBuffer, true);
+	m_szHelpKey = szBuffer.getWide();
+
+	reader.ReadTextKey("Strategy", szBuffer, true);
+	m_szStrategyKey = szBuffer.getWide();
+
+	return true;
+}
+
 //
 // read from XML
 // TYPE, DESC, BUTTON
@@ -351,6 +400,58 @@ m_bAltDownAlt(0),
 m_bShiftDownAlt(0),
 m_bCtrlDownAlt(0)
 {
+}
+
+bool CvHotkeyInfo::read(XMLReader& reader)
+{
+	CvInfoBase::read(reader);
+
+	XML_VAR_String szBuffer;
+	KeyboardKeyTypes eKey;
+	int iVal;
+	bool bVal;
+
+	reader.Read("HotKey", szBuffer);
+	eKey.assignFromString(szBuffer);
+	m_eHotKeyVal = eKey.value();
+	FAssert(m_eHotKeyVal == eKey.value());
+
+	reader.Read("iHotKeyPriority", iVal, -1);
+	m_iHotKeyPriority = iVal;
+	FAssert(m_iHotKeyPriority == iVal);
+
+	reader.Read("HotKeyAlt", szBuffer);
+	eKey.assignFromString(szBuffer);
+	m_eHotKeyValAlt = eKey.value();
+	FAssert(m_eHotKeyValAlt == eKey.value());
+
+	reader.Read("iHotKeyPriorityAlt", iVal, -1);
+	m_iHotKeyPriorityAlt = iVal;
+	FAssert(m_iHotKeyPriorityAlt == iVal);
+
+	reader.Read("bAltDown", bVal);
+	m_bAltDown = bVal ? 1 : 0;
+
+	reader.Read("bShiftDown", bVal);
+	m_bShiftDown = bVal ? 1 : 0;
+
+	reader.Read("bCtrlDown", bVal);
+	m_bCtrlDown = bVal ? 1 : 0;
+
+	reader.Read("bAltDownAlt", bVal);
+	m_bAltDownAlt = bVal ? 1 : 0;
+
+	reader.Read("bShiftDownAlt", bVal);
+	m_bShiftDownAlt = bVal ? 1 : 0;
+
+	reader.Read("bCtrlDownAlt", bVal);
+	m_bCtrlDownAlt = bVal ? 1 : 0;
+
+	reader.Read("iOrderPriority", iVal, 5); // note: vanilla has 5 as default for unknown reasons
+	m_iOrderPriority = iVal;
+	FAssert(m_iOrderPriority == iVal);
+
+	return true;
 }
 
 bool CvHotkeyInfo::read(CvXMLLoadUtility* pXML)
@@ -2207,7 +2308,7 @@ MissionTypes CvActionInfo::getMissionType() const
 {
 	if (ACTIONSUBTYPE_BUILD == m_eSubType)
 	{
-		return (MissionTypes)GC.getBuildInfo(m_eBuild).getMissionType();
+		return LoopBuildTypes::info(m_eBuild).getMissionType();
 	}
 	else if (ACTIONSUBTYPE_MISSION == m_eSubType)
 	{
@@ -2307,14 +2408,14 @@ CvHotkeyInfo* CvActionInfo::getHotkeyInfo() const
 {
 	switch (getSubType())
 	{
-		case ACTIONSUBTYPE_INTERFACEMODE:
-			return &GC.getInterfaceModeInfo(m_eInterfaceMode);
-			break;
-		case ACTIONSUBTYPE_COMMAND:
-			return &GC.getCommandInfo(m_eCommand);
-			break;
-		case ACTIONSUBTYPE_BUILD:
-			return &GC.getBuildInfo(m_eBuild);
+	case ACTIONSUBTYPE_INTERFACEMODE:
+		return &GC.getInterfaceModeInfo(m_eInterfaceMode);
+		break;
+	case ACTIONSUBTYPE_COMMAND:
+		return &GC.getCommandInfo(m_eCommand);
+		break;
+	case ACTIONSUBTYPE_BUILD:
+		return &INFO.m_info.m_BuildTypes[m_eBuild];
 			break;
 		case ACTIONSUBTYPE_PROMOTION:
 			return &GC.getPromotionInfo(m_ePromotion);
@@ -2344,7 +2445,7 @@ void CvActionInfo::setIndex(const ActionTypes eAction)
 	switch (getSubType())
 	{
 	case ACTIONSUBTYPE_BUILD:
-		GC.getBuildInfo(m_eBuild).setMissionType(MISSION_BUILD);
+		INFO.m_info.m_BuildTypes[m_eBuild].setMissionType(MISSION_BUILD);
 		break;
 	case ACTIONSUBTYPE_PROMOTION:
 		GC.getPromotionInfo(m_ePromotion).setCommandType(COMMAND_PROMOTION);
@@ -3532,9 +3633,9 @@ bool CvUnitInfo::getNotUnitAIType(int i) const
 }
 bool CvUnitInfo::getBuilds(int i) const
 {
-	FAssertMsg(i < GC.getNumBuildInfos(), "Index out of bounds");
-	FAssertMsg(i > -1, "Index out of bounds");
-	return m_abBuilds ? m_abBuilds[i] : false;
+	LoopBuildTypes eBuild = LoopBuildTypes::createFromInt(i);
+	FAssertMsg(eBuild.isValid(), "Index out of bounds");
+	return m_abBuilds ? m_abBuilds[eBuild] : false;
 }
 bool CvUnitInfo::getTerrainImpassable(int i) const
 {
@@ -3890,8 +3991,8 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	m_abNotUnitAIType = new bool[NUM_UNITAI_TYPES];
 	stream->Read(NUM_UNITAI_TYPES, m_abNotUnitAIType);
 	SAFE_DELETE_ARRAY(m_abBuilds);
-	m_abBuilds = new bool[GC.getNumBuildInfos()];
-	stream->Read(GC.getNumBuildInfos(), m_abBuilds);
+	//m_abBuilds = new bool[GC.getNumBuildInfos()];
+	//stream->Read(GC.getNumBuildInfos(), m_abBuilds);
 	SAFE_DELETE_ARRAY(m_abTerrainImpassable);
 	m_abTerrainImpassable = new bool[GC.getNumTerrainInfos()];
 	stream->Read(GC.getNumTerrainInfos(), m_abTerrainImpassable);
@@ -4078,7 +4179,7 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(GC.getNumUnitClassInfos(), m_abUpgradeUnitClass);
 	stream->Write(NUM_UNITAI_TYPES, m_abUnitAIType);
 	stream->Write(NUM_UNITAI_TYPES, m_abNotUnitAIType);
-	stream->Write(GC.getNumBuildInfos(), m_abBuilds);
+//	stream->Write(GC.getNumBuildInfos(), m_abBuilds);
 	stream->Write(GC.getNumTerrainInfos(), m_abTerrainImpassable);
 	stream->Write(GC.getNumFeatureInfos(), m_abFeatureImpassable);
 	// < JAnimals Mod Start >
@@ -4207,7 +4308,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->SetVariableListTagPair(&m_abUpgradeUnitClass, "UnitClassUpgrades", GC.getNumUnitClassInfos(), false);
 	pXML->SetVariableListTagPair(&m_abUnitAIType, "UnitAIs", NUM_UNITAI_TYPES, false);
 	pXML->SetVariableListTagPair(&m_abNotUnitAIType, "NotUnitAIs", NUM_UNITAI_TYPES, false);
-	pXML->SetVariableListTagPair(&m_abBuilds, "Builds", GC.getNumBuildInfos(), false);
+	pXML->SetVariableListTagPair(&m_abBuilds, "Builds", NUM_BUILD_TYPES, false);
 	pXML->GetChildXmlValByName(szTextVal, "PrereqBuilding");
 	m_iPrereqBuilding = pXML->FindInInfoClass(szTextVal);
 	pXML->SetVariableListTagPair(&m_abPrereqOrBuilding, "PrereqOrBuildings", GC.getNumBuildingClassInfos(), false);
@@ -7915,16 +8016,16 @@ bool CvTurnTimerInfo::read(CvXMLLoadUtility* pXML)
 CvBuildInfo::CvBuildInfo() :
 m_iTime(0),
 m_iCost(0),
-m_iImprovement(NO_IMPROVEMENT),
-m_iPrereqTerrain(NO_TERRAIN), // R&R, ray, Terraforming Features
-m_iResultTerrain(NO_TERRAIN), // R&R, ray, Terraforming Features
-m_iResultFeature(NO_FEATURE), // R&R, ray, Terraforming Features
-m_iRoute(NO_ROUTE),
-m_iEntityEvent(ENTITY_EVENT_NONE),
-m_iMissionType(NO_MISSION),
+m_eImprovement(NO_IMPROVEMENT),
+m_ePrereqTerrain(NO_TERRAIN), // R&R, ray, Terraforming Features
+m_eResultTerrain(NO_TERRAIN), // R&R, ray, Terraforming Features
+m_eResultFeature(NO_FEATURE), // R&R, ray, Terraforming Features
+m_eRoute(NO_ROUTE),
+m_eEntityEvent(ENTITY_EVENT_NONE),
+m_eMissionType(NO_MISSION),
 m_bKill(false),
-m_paiFeatureTime(NULL),
-m_pabFeatureRemove(NULL)
+m_iFeatureRemoveLength(0),
+m_aFeatureRemoves(NULL)
 {
 }
 //------------------------------------------------------------------------------------------------------
@@ -7936,9 +8037,15 @@ m_pabFeatureRemove(NULL)
 //------------------------------------------------------------------------------------------------------
 CvBuildInfo::~CvBuildInfo()
 {
-	SAFE_DELETE_ARRAY(m_paiFeatureTime);
-	SAFE_DELETE_ARRAY(m_pabFeatureRemove);
+	SAFE_DELETE_ARRAY(m_aFeatureRemoves);
 }
+
+CvBuildInfo::FeatureStruct::FeatureStruct()
+	: FeatureType(NO_FEATURE)
+	, iTime(0)
+{
+}
+
 int CvBuildInfo::getTime() const
 {
 	return m_iTime;
@@ -7947,39 +8054,39 @@ int CvBuildInfo::getCost() const
 {
 	return m_iCost;
 }
-int CvBuildInfo::getImprovement() const
+ImprovementTypes CvBuildInfo::getImprovement() const
 {
-	return m_iImprovement;
+	return m_eImprovement;
 }
 // R&R, ray, Terraforming Features - START
-int CvBuildInfo::getPrereqTerrain() const
+TerrainTypes CvBuildInfo::getPrereqTerrain() const
 {
-	return m_iPrereqTerrain;
+	return m_ePrereqTerrain;
 }
-int CvBuildInfo::getResultTerrain() const
+TerrainTypes CvBuildInfo::getResultTerrain() const
 {
-	return m_iResultTerrain;
+	return m_eResultTerrain;
 }
-int CvBuildInfo::getResultFeature() const
+FeatureTypes CvBuildInfo::getResultFeature() const
 {
-	return m_iResultFeature;
+	return m_eResultFeature;
 }
 // R&R, ray, Terraforming Features - END
-int CvBuildInfo::getRoute() const
+RouteTypes CvBuildInfo::getRoute() const
 {
-	return m_iRoute;
+	return m_eRoute;
 }
-int CvBuildInfo::getEntityEvent() const
+EntityEventTypes CvBuildInfo::getEntityEvent() const
 {
-	return m_iEntityEvent;
+	return m_eEntityEvent;
 }
-int CvBuildInfo::getMissionType() const
+MissionTypes CvBuildInfo::getMissionType() const
 {
-	return m_iMissionType;
+	return m_eMissionType;
 }
-void CvBuildInfo::setMissionType(int iNewType)
+void CvBuildInfo::setMissionType(MissionTypes eNewType)
 {
-	m_iMissionType = iNewType;
+	m_eMissionType = eNewType;
 }
 bool CvBuildInfo::isKill() const
 {
@@ -7989,50 +8096,75 @@ bool CvBuildInfo::isRoute() const
 {
 	return (getRoute() != NO_ROUTE);
 }
-// Arrays
-int CvBuildInfo::getFeatureTime(int i) const
+
+const CvBuildInfo::FeatureStruct* CvBuildInfo::getFeatureRemove(FeatureTypes eFeature) const
 {
-	FAssertMsg(i < GC.getNumFeatureInfos(), "Index out of bounds");
-	FAssertMsg(i > -1, "Index out of bounds");
-	return m_paiFeatureTime ? m_paiFeatureTime[i] : -1;
-}
-int CvBuildInfo::getFeatureYield(int iFeature, int iYield) const
-{
-	FAssert(iFeature < GC.getNumFeatureInfos() && iFeature >= 0);
-	FAssert(iYield < NUM_YIELD_TYPES && iYield >= 0);
-	return m_aaiFeatureYield[iFeature][iYield];
-}
-bool CvBuildInfo::isFeatureRemove(int i) const
-{
-	FAssertMsg(i < GC.getNumFeatureInfos(), "Index out of bounds");
-	FAssertMsg(i > -1, "Index out of bounds");
-	return m_pabFeatureRemove ? m_pabFeatureRemove[i] : false;
-}
-bool CvBuildInfo::read(CvXMLLoadUtility* pXML)
-{
-	CvString szTextVal;
-	if (!CvHotkeyInfo::read(pXML))
+	if (!isFeatureRemove(eFeature))
 	{
-		return false;
+		return NULL;
 	}
-	pXML->GetChildXmlValByName(&m_iTime, "iTime");
-	pXML->GetChildXmlValByName(&m_iCost, "iCost");
-	pXML->GetChildXmlValByName(&m_bKill, "bKill");
-	pXML->GetChildXmlValByName(szTextVal, "ImprovementType");
-	m_iImprovement = pXML->FindInInfoClass(szTextVal);
-	// R&R, ray, Terraforming Features - START
-	pXML->GetChildXmlValByName(szTextVal, "PrereqTerrainType");
-	m_iPrereqTerrain = pXML->FindInInfoClass(szTextVal);
-	pXML->GetChildXmlValByName(szTextVal, "ResultTerrainType");
-	m_iResultTerrain = pXML->FindInInfoClass(szTextVal);
-	pXML->GetChildXmlValByName(szTextVal, "ResultFeatureType");
-	m_iResultFeature = pXML->FindInInfoClass(szTextVal);
-	// R&R, ray, Terraforming Features - END
-	pXML->GetChildXmlValByName(szTextVal, "RouteType");
-	m_iRoute = pXML->FindInInfoClass(szTextVal);
-	pXML->GetChildXmlValByName(szTextVal, "EntityEvent");
-	m_iEntityEvent = pXML->FindInInfoClass(szTextVal);
-	pXML->SetFeatureStruct(&m_paiFeatureTime, m_aaiFeatureYield, &m_pabFeatureRemove);
+
+	for (int i = 0; i < m_iFeatureRemoveLength; ++i)
+	{
+		if (m_aFeatureRemoves[i].FeatureType)
+		{
+			return &m_aFeatureRemoves[i];
+		}
+	}
+	return NULL;
+}
+
+bool CvBuildInfo::isFeatureRemove(FeatureTypes eFeature) const
+{
+	if (isInRange(eFeature))
+	{
+		return m_baFeatureRemove.get(eFeature);
+	}
+	return false;
+}
+
+bool CvBuildInfo::read(XMLReader& reader)
+{
+	CvHotkeyInfo::read(reader);
+
+	reader.Read("iTime", m_iTime);
+	reader.Read("iCost", m_iCost);
+	reader.Read("bKill", m_bKill);
+	reader.Read("ImprovementType", m_eImprovement);
+	reader.Read("PrereqTerrainType", m_ePrereqTerrain);
+	reader.Read("ResultTerrainType", m_eResultTerrain);
+	reader.Read("ResultFeatureType", m_eResultFeature);
+	reader.Read("RouteType", m_eRoute);
+	reader.Read("EntityEvent", m_eEntityEvent);
+
+	if (XMLReader childReader = reader.getFirstChild("FeatureStructs"))
+	{
+		m_iFeatureRemoveLength = childReader.getNumChildren("FeatureStruct");
+		if (m_iFeatureRemoveLength > 0)
+		{
+			SAFE_DELETE_ARRAY(m_aFeatureRemoves);
+			m_aFeatureRemoves = new FeatureStruct[m_iFeatureRemoveLength];
+			XMLReader loopReader = childReader.getFirstChild("FeatureStruct");
+			for (int i = 0; loopReader; loopReader.nextSiblingSameName(), ++i)
+			{
+				FeatureStruct& loopStruct = m_aFeatureRemoves[i];
+				
+				FeatureTypes eFeature;
+				loopReader.Read("FeatureType", eFeature);
+				loopStruct.FeatureType = eFeature;
+				m_baFeatureRemove.set(eFeature, true);
+				
+				int iTime;
+				loopReader.Read("iTime", iTime);
+				loopStruct.iTime = iTime;
+
+				loopReader.Read("Yields", loopStruct.Yields);
+				
+			}
+			FAssert(i == m_iFeatureRemoveLength);
+		}
+	}
+
 	return true;
 }
 //======================================================================================================

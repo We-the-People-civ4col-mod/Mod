@@ -2006,10 +2006,6 @@ void CvUnit::updateCombat(bool bQuick)
 bool CvUnit::isActionRecommended(int iAction)
 {
 	CvCity* pWorkingCity;
-	ImprovementTypes eImprovement;
-	ImprovementTypes eFinalImprovement;
-	RouteTypes eRoute;
-	BonusTypes eBonus;
 	int iIndex;
 
 	if (getOwnerINLINE() != GC.getGameINLINE().getActivePlayer())
@@ -2090,13 +2086,14 @@ bool CvUnit::isActionRecommended(int iAction)
 		{
 			const BuildTypes eBuild = GC.getActionInfo(iAction).getBuildType();
 			FAssert(eBuild != NO_BUILD);
-			FAssertMsg(eBuild < GC.getNumBuildInfos(), "Invalid Build");
+			FAssertMsg(isInRange(eBuild), "Invalid Build");
 
 			if (canBuild(pPlot, eBuild))
 			{
-				eImprovement = ((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement()));
-				eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
-				eBonus = pPlot->getBonusType();
+				const CvBuildInfo& kBuild = INFO.getInfo(eBuild);
+				const ImprovementTypes eImprovement = kBuild.getImprovement();
+				const RouteTypes eRoute = kBuild.getRoute();
+				const BonusTypes eBonus = pPlot->getBonusType();
 				pWorkingCity = pPlot->getWorkingCity();
 
 				if (pPlot->getImprovementType() == NO_IMPROVEMENT)
@@ -2148,7 +2145,7 @@ bool CvUnit::isActionRecommended(int iAction)
 						}
 					}
 
-					eFinalImprovement = eImprovement;
+					ImprovementTypes eFinalImprovement = eImprovement;
 
 					if (eFinalImprovement == NO_IMPROVEMENT)
 					{
@@ -7770,7 +7767,7 @@ bool CvUnit::joinCity()
 
 bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible) const
 {
-	FAssertMsg(eBuild < GC.getNumBuildInfos(), "Index out of bounds");
+	FAssertMsg(isInRange(eBuild), "Index out of bounds");
 
 	if (!(m_pUnitInfo->getBuilds(eBuild)))
 	{
@@ -7798,10 +7795,12 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 		//WTP, ray, Large Rivers - Start
 	}
 
+	const CvBuildInfo& kBuild = INFO.getInfo(eBuild);
+
 	// R&R, ray, prevent Forts and Monasteries to be built on Peaks - start
 	if (pPlot->isPeak())
 	{
-		ImprovementTypes eImprovement = (ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement();
+		const ImprovementTypes eImprovement = kBuild.getImprovement();
 		if (eImprovement != NO_IMPROVEMENT && (GC.getImprovementInfo(eImprovement).isFort() || GC.getImprovementInfo(eImprovement).isMonastery()))
 		{
 			return false;
@@ -7813,7 +7812,7 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 	if (!isHuman() || isAutomated())  //R&R 2.3, ray's fix for automated pioneers
 	{
 		// only go into here, if there is a Terrain Feature and build would remove it
-		if (pPlot->getFeatureType() != NO_FEATURE && GC.getBuildInfo(eBuild).isFeatureRemove(pPlot->getFeatureType()))
+		if (pPlot->getFeatureType() != NO_FEATURE && kBuild.isFeatureRemove(pPlot->getFeatureType()))
 		{
 			// R&R, ray, AI Improvement to not let AI destroy valuable Bonusses - START
 			if (pPlot->getBonusType() != NO_BONUS)
@@ -7834,7 +7833,7 @@ bool CvUnit::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestVisible)
 			// R&R, ray, prevent AI from stupidly making existing improvements useless - END
 		}
 		// R&R, ray, prevent AI from stupidly replacing existing improvements -START
-		if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT && pPlot->getImprovementType() != NO_IMPROVEMENT)
+		if (kBuild.getImprovement() != NO_IMPROVEMENT && pPlot->getImprovementType() != NO_IMPROVEMENT)
 		{
 			return false;
 		}
@@ -7849,16 +7848,18 @@ bool CvUnit::build(BuildTypes eBuild)
 {
 	bool bFinished;
 
-	FAssertMsg(eBuild < GC.getNumBuildInfos(), "Invalid Build");
+	FAssertMsg(isInRange(eBuild), "Invalid Build");
 
 	if (!canBuild(plot(), eBuild))
 	{
 		return false;
 	}
 
+	const CvBuildInfo& kBuild = INFO.getInfo(eBuild);
+
 	// Note: notify entity must come before changeBuildProgress - because once the unit is done building,
 	// that function will notify the entity to stop building.
-	NotifyEntity((MissionTypes)GC.getBuildInfo(eBuild).getMissionType());
+	NotifyEntity(kBuild.getMissionType());
 
 	OOS_LOG("CvUnit::build", getTypeStr(eBuild));
 	GET_PLAYER(getOwnerINLINE()).changeGold(-(GET_PLAYER(getOwnerINLINE()).getBuildCost(plot(), eBuild)));
@@ -7870,9 +7871,9 @@ bool CvUnit::build(BuildTypes eBuild)
 	if (bFinished)
 	{
 		// Super Forts begin *culture*
-		if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
+		if (kBuild.getImprovement() != NO_IMPROVEMENT)
 		{
-			if(GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).isActsAsCity())
+			if(GC.getImprovementInfo(kBuild.getImprovement()).isActsAsCity())
 			{
 				if(plot()->getOwner() == NO_PLAYER)
 				{
@@ -7881,7 +7882,7 @@ bool CvUnit::build(BuildTypes eBuild)
 			}
 		}
 		// Super Forts end
-		if (GC.getBuildInfo(eBuild).isKill())
+		if (kBuild.isKill())
 		{
 			kill(true);
 		}
@@ -8856,9 +8857,9 @@ bool CvUnit::hasMoved()	const
 // XXX should this test for coal?
 bool CvUnit::canBuildRoute(RouteTypes ePreferredRoute) const
 {
-	for (BuildTypes eBuild = FIRST_BUILD; eBuild < NUM_BUILD_TYPES; eBuild++)
+	for (RouteBuildTypes eBuild; eBuild.next();)
 	{
-		RouteTypes eRoute = ((RouteTypes)(GC.getBuildInfo(eBuild).getRoute()));
+		const RouteTypes eRoute = eBuild.info().getRoute();
 		if (eRoute != NO_ROUTE)
 		{
 			if (ePreferredRoute == NO_ROUTE && getUnitInfo().getBuilds(eBuild))

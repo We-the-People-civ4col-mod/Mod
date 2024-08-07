@@ -33,12 +33,19 @@ class CvCacheObject;
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 class CvXMLLoadUtility
 {
+	friend class CvGlobals;
+public:
 	enum XMLReadStage
 	{
 		XML_STAGE_BASIC,
 		XML_STAGE_FULL,
 		XML_STAGE_POST_SETUP,
+		XML_STAGE_TEXT,
 	};
+
+	static XMLReadStage getReadStage();
+
+private:
 
 	struct GameTextContainer
 	{

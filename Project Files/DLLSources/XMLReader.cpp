@@ -5,6 +5,8 @@
 #include "lib/tinyxml2/tinyxml2.h"
 #include "XMLReaderAlerts.h"
 #include "Infos.h"
+#include "CvGameTextMgr.h"
+#include "CvXMLLoadUtility.h"
 
 XMLReader::XMLReader(const XMLTypeContainer& FileReader, const tinyxml2::XMLElement* Element)
 	: m_FileReader(FileReader)
@@ -17,9 +19,24 @@ void XMLReader::nextSiblingSameName()
 	m_Element = m_Element->NextSiblingElement(m_Element->Name());
 }
 
-XMLReader XMLReader::openFolder(const char* name) const
+XMLReader XMLReader::getFirstChild(const char* name) const
 {
 	return XMLReader(m_FileReader, m_Element->FirstChildElement(name));
+}
+
+int XMLReader::getNumChildren(const char* name) const
+{
+	int i = 0;
+	for (const tinyxml2::XMLElement* loopElement = m_Element->FirstChildElement(name); loopElement != NULL; loopElement = loopElement->NextSiblingElement(name))
+	{
+		++i;
+	}
+	return i;
+}
+
+XMLReader::operator bool() const
+{
+	return m_Element != NULL;
 }
 
 bool XMLReader::valid() const
@@ -41,30 +58,60 @@ void XMLReader::Read(const char* szTag, XML_VAR_String& string) const
 		return;
 	}
 	const char* temp = element->GetText();
+	if (temp == NULL)
+	{
+		// tag is present, but empty
+		return;
+	}
 	const int iLength = strlen(temp) + 1; // +1 is the NULL termination
 	char* buffer = new char[iLength];
 	memcpy(buffer, temp, iLength);
 	string.m_string = buffer;
 }
 
-void XMLReader::ReadTextKey(const char* szTag, XML_VAR_String& szText) const
+void XMLReader::ReadTextKey(const char* szTag, XML_VAR_String& szText, bool bClearUnused) const
 {
+	// gDLL->getText is unstable and might crash inside the exe if used prior to reaching stage XML_STAGE_TEXT
+	FAssertMsg(CvXMLLoadUtility::getReadStage() == CvXMLLoadUtility::XML_STAGE_TEXT, "Reading TXT KEYs is only allowed in loadText");
+
 	Read(szTag, szText);
-	FAssertMsg(szText.getPointer() == NULL || szText.getWide() != gDLL->getText(szText.getWide()), CvString::format("\r\n\r\nTXT KEY used without being added to text XML\r\n\r\nXML element: %s\r\nTag: %s\r\nTXT KEY: %s", m_FileReader.getType(), szTag, szText.getPointer()).c_str());
+
+	if (GAMETEXT.getCurrentLanguage() == CvGameText::getLanguageID("Tag"))
+	{
+		return;
+	}
+
+	if (bClearUnused)
+	{
+		// plenty of arguments to get around stuff like %2_city crashing the exe during this test
+		CvWString szTestText = gDLL->getText(szText.getWide(), L"", L"", L"", L"", L"", L"", L"", L"", L"", L"", L"");
+
+		if (szTestText == L"????" || (szTestText.length() > 7 && wcsncmp(szTestText, L"TXT_KEY", 7) == 0))
+		{
+			szText.clear();
+			return;
+		}
+	}
+	else
+	{
+		FAssertMsg(szText.getWide() != gDLL->getText(szText.getWide(), L"", L"", L"", L"", L"", L"", L""), CvString::format("\r\n\r\nTXT KEY used without being added to text XML\r\n\r\nXML element: %s\r\nTag: %s\r\nTXT KEY: %s", m_FileReader.getType(), szTag, szText.getPointer()).c_str());
+	}
 }
 
-void XMLReader::Read(const char* szTag, bool& bBool) const
+void XMLReader::Read(const char* szTag, bool& bBool, bool bDefault) const
 {
 	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
+	bBool = bDefault;
 	if (element != NULL)
 	{
 		bBool = element->BoolText();
 	}
 }
 
-void XMLReader::Read(const char* szTag, int& iValue) const
+void XMLReader::Read(const char* szTag, int& iValue, int iDefault) const
 {
 	const tinyxml2::XMLElement* element = m_Element->FirstChildElement(szTag);
+	iValue = iDefault;
 	if (element != NULL)
 	{
 		iValue = element->IntText();
@@ -233,4 +280,5 @@ void declarations2()
 	FAssert(0);
 	XMLReader* reader = NULL;
 	declareSpecialization((CivEffectTypes)0);
+	declareSpecialization((EntityEventTypes)0);
 }

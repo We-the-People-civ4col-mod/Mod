@@ -532,6 +532,12 @@
     <ClCompile Include="DLLSources\Types\KeyboardKeyTypes.cpp">
       <Filter>CV\Info\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\Types\BuildTypes.cpp">
+      <Filter>CV\Info\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\Types\YieldTypes.cpp">
+      <Filter>CV\Info\CPP</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -1024,6 +1030,12 @@
       <Filter>CV\Info\Types</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\Types\KeyboardKeyTypes.h">
+      <Filter>CV\Info\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\Types\BuildTypes.h">
+      <Filter>CV\Info\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\Types\YieldTypes.h">
       <Filter>CV\Info\Types</Filter>
     </ClInclude>
   </ItemGroup>

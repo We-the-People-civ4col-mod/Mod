@@ -150,7 +150,7 @@ public:
 	int getNumFeatureInfos() const { return GC.getNumFeatureInfos(); }
 	int getNumImprovementInfos() const { return GC.getNumImprovementInfos(); }
 	int getNumGoodyInfos() const { return GC.getNumGoodyInfos(); }
-	int getNumBuildInfos() const { return GC.getNumBuildInfos(); }
+	int getNumBuildInfos() const { return NUM_BUILD_TYPES; }
 	int getNumHandicapInfos() const { return GC.getNumHandicapInfos(); }
 	int getNumGameSpeedInfos() const { return GC.getNumGameSpeedInfos(); }
 	int getNumTurnTimerInfos() const { return GC.getNumTurnTimerInfos(); }

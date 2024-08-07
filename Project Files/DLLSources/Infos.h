@@ -20,6 +20,7 @@ public:
 	operator CvWString() const;
 
 private:
+	void clear();
 	const char* m_string;
 };
 
@@ -29,6 +30,8 @@ class InfoBase
 #endif
 {
 public:
+	const char* getType() const;
+
 	bool readType(XMLReader& reader);
 	bool read(XMLReader& reader);
 	bool postLoadSetup(XMLReader& reader);

@@ -5,6 +5,11 @@
   Type: error messages will report the text in the child tag of this name. Defaults to Type
 -->
 <Files>
+	<BuildTypes>
+		<Files>
+			<File>Units/CIV4BuildInfos.xml</File>
+		</Files>
+	</BuildTypes>
 	<CivCategoryTypes>
 		<Files>
 			<File>Civilizations/CivCategoryInfos.xml</File>

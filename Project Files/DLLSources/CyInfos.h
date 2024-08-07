@@ -93,6 +93,9 @@ BOOST_STATIC_ASSERT(sizeof(CyGoodyInfo) == sizeof(CvGoodyInfo));
 class CyBuildInfo : public CvBuildInfo
 {
 public:
+	bool isFeatureRemove(int i) const;
+	int getFeatureTime(int i) const;
+	int getFeatureYield(int iFeature, int iYield) const;
 };
 BOOST_STATIC_ASSERT(sizeof(CyBuildInfo) == sizeof(CvBuildInfo));
 

@@ -194,6 +194,7 @@ sub getNumFunction
 	my $basename = shift;
 
 	return "m_paAttitudeInfos.size()"   if $basename eq "Attitude";
+	return "NUM_BUILD_TYPES"            if $basename eq "Build";
 	return "m_paCivEffectInfo.size()"   if $basename eq "CivEffect";
 	return "m_paDomainInfo.size()"      if $basename eq "Domain";
 	return "m_paGraphicOptionInfos.size()" if $basename eq "GraphicOption";

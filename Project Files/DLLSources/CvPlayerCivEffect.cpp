@@ -79,16 +79,16 @@ void CvPlayerCivEffect::applyCivEffect(const CivEffectInfo& kCivEffect, int iCha
 				continue;
 			}
 
-			const CvBuildInfo& kBuild = GC.getBuildInfo(eBuild);
+			const CvBuildInfo& kBuild = INFO.getInfo(eBuild);
 
-			ImprovementTypes eImprovement = static_cast<ImprovementTypes>(kBuild.getImprovement());
+			const ImprovementTypes eImprovement = kBuild.getImprovement();
 			if (eImprovement != NO_IMPROVEMENT && !this->canUseImprovement(eImprovement))
 			{
 				m_em_bCacheAllowBuild.set(eBuild, false);
 				continue;
 			}
 
-			RouteTypes eRoute = static_cast<RouteTypes>(kBuild.getRoute());
+			const RouteTypes eRoute = kBuild.getRoute();
 			if (eRoute != NO_ROUTE && !this->canUseRoute(eRoute))
 			{
 				m_em_bCacheAllowBuild.set(eBuild, false);

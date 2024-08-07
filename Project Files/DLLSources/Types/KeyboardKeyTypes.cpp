@@ -20,7 +20,7 @@ void KeyboardKeyTypes::assignFromString(const char* szKey)
 {
 	data = NONE;
 
-	if (strcmp(szKey, "") == 0 || strcmp(szKey, "NONE") == 0)
+	if (szKey == NULL || strcmp(szKey, "") == 0 || strcmp(szKey, "NONE") == 0)
 	{
 		return;
 	}

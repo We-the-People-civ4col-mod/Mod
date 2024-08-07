@@ -6,6 +6,10 @@ GlobalInfos::GlobalInfos(GlobalsInfoContainer& storage)
 {
 }
 
+const CvBuildInfo& GlobalInfos::getInfo(BuildTypes eBuild) const
+{
+	return m_info.m_BuildTypes[eBuild];
+}
 
 const CivilizationInfo& GlobalInfos::getInfo(CivilizationTypes eCiv) const
 {

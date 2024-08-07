@@ -18,20 +18,28 @@ public:
 	XMLReader(const XMLTypeContainer& FileReader, const tinyxml2::XMLElement* Element);
 
 	void nextSiblingSameName();
-	XMLReader openFolder(const char* name) const;
+	XMLReader getFirstChild(const char* name) const;
+	int getNumChildren(const char* name = NULL) const;
+
+	operator bool() const;
 
 	bool valid() const;
 	bool isType(const char* szType) const;
 
 
 	void Read(const char* szTag, XML_VAR_String& string) const;
-	void ReadTextKey(const char* szTag, XML_VAR_String& szText) const;
+	void ReadTextKey(const char* szTag, XML_VAR_String& szText, bool bClearUnused = false) const;
 	
-	void Read(const char* szTag, bool& bBool) const;
-	void Read(const char* szTag, int& iValue) const;
+	void Read(const char* szTag, bool& bBool, bool bDefault = false) const;
+	void Read(const char* szTag, int& iValue, int iDefault = 0) const;
 
 	template<typename T>
+#ifdef MakefileCompilation
+	// boost::enable_if confuses intellisense
 	typename boost::enable_if<boost::is_enum<T>, void>::type
+#else
+	void
+#endif
 	Read(const char* szTag, T& type) const;
 
 	template<typename T0, typename T1, typename T2, typename T3>
@@ -61,7 +69,12 @@ private:
 
 
 template<typename T>
+#ifdef MakefileCompilation
+// boost::enable_if confuses intellisense
 typename boost::enable_if<boost::is_enum<T>, void>::type
+#else
+void
+#endif
 XMLReader::Read(const char* szTag, T& type) const
 {
 	readElement(szTag, type, childElement(szTag), m_Element, true);
@@ -71,7 +84,7 @@ XMLReader::Read(const char* szTag, T& type) const
 template<typename T0, typename T1, typename T2, typename T3>
 void XMLReader::Read(const char* szTag, InfoArray<T0, T1, T2, T3>& infoArray)
 {
-	XMLReader child = openFolder(szTag);
+	XMLReader child = getFirstChild(szTag);
 	if (!child.valid())
 	{
 		return;

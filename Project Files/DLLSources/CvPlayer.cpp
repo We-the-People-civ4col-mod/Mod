@@ -6905,7 +6905,7 @@ bool CvPlayer::canBuild(const CvPlot* pPlot, BuildTypes eBuild, bool bTestEra, b
 // Returns the cost
 int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 {
-	FAssert(eBuild >= 0 && eBuild < GC.getNumBuildInfos());
+	FAssert(eBuild >= 0 && eBuild < NUM_BUILD_TYPES);
 
 	int iCost;
 
@@ -6916,7 +6916,7 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 
 	else
 	{
-		iCost = std::max(0, GC.getBuildInfo(eBuild).getCost());
+		iCost = std::max(0, INFO.getInfo(eBuild).getCost());
 
 		for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
 		{
@@ -6939,26 +6939,20 @@ RouteTypes CvPlayer::getBestRoute(CvPlot* pPlot) const
 {
 	PROFILE_FUNC();
 
-	RouteTypes eRoute;
-	RouteTypes eBestRoute;
-	int iValue;
-	int iBestValue;
-	int iI;
+	RouteTypes eBestRoute = NO_ROUTE;
+	int iBestValue = 0;
 
-	iBestValue = 0;
-	eBestRoute = NO_ROUTE;
-
-	for (iI = 0; iI < GC.getNumBuildInfos(); iI++)
+	for (LoopBuildTypes eBuild; eBuild.next();)
 	{
-		eRoute = ((RouteTypes)(GC.getBuildInfo((BuildTypes)iI).getRoute()));
+		const RouteTypes eRoute = eBuild.info().getRoute();
 
 		if (eRoute != NO_ROUTE)
 		{
 			if(pPlot != NULL)
 			{
-				if ((pPlot->getRouteType() == eRoute) || canBuild(pPlot, ((BuildTypes)iI)))
+				if (pPlot->getRouteType() == eRoute || canBuild(pPlot, eBuild))
 				{
-					iValue = GC.getRouteInfo(eRoute).getValue();
+					const int iValue = GC.getRouteInfo(eRoute).getValue();
 					if (iValue > iBestValue)
 					{
 						iBestValue = iValue;
@@ -12139,13 +12133,14 @@ void CvPlayer::doAdvancedStartAction(AdvancedStartActionTypes eAction, Coordinat
 				{
 					if (pPlot->getFeatureType() != NO_FEATURE)
 					{
-						for (int iI = 0; iI < GC.getNumBuildInfos(); ++iI)
+						for (LoopBuildTypes eBuild; eBuild.next();)
 						{
-							ImprovementTypes eLoopImprovement = ((ImprovementTypes)(GC.getBuildInfo((BuildTypes)iI).getImprovement()));
+							const CvBuildInfo& kBuild = eBuild.info();
+							const ImprovementTypes eLoopImprovement = kBuild.getImprovement();
 
 							if (eImprovement == eLoopImprovement)
 							{
-								if (GC.getBuildInfo((BuildTypes)iI).isFeatureRemove(pPlot->getFeatureType()) && canBuild(pPlot, (BuildTypes)iI))
+								if (kBuild.isFeatureRemove(pPlot->getFeatureType()) && canBuild(pPlot, eBuild))
 								{
 									pPlot->setFeatureType(NO_FEATURE);
 									break;
@@ -12846,15 +12841,15 @@ int CvPlayer::getAdvancedStartImprovementCost(ImprovementTypes eImprovement, boo
 
 			bool bValid = false;
 
-			for (int iI = 0; iI < GC.getNumBuildInfos(); ++iI)
+			for (LoopBuildTypes eBuild; eBuild.next();)
 			{
-				CvBuildInfo& kBuild = GC.getBuildInfo((BuildTypes)iI);
-				ImprovementTypes eLoopImprovement = ((ImprovementTypes)(kBuild.getImprovement()));
-				if (eImprovement == eLoopImprovement && canBuild(pPlot, (BuildTypes)iI))
+				const CvBuildInfo& kBuild = eBuild.info();
+				const ImprovementTypes eLoopImprovement = kBuild.getImprovement();
+				if (eImprovement == eLoopImprovement && canBuild(pPlot, eBuild))
 				{
 					bValid = true;
-					FeatureTypes eFeature = pPlot->getFeatureType();
-					if (NO_FEATURE != eFeature && kBuild.isFeatureRemove(eFeature))
+					const FeatureTypes eFeature = pPlot->getFeatureType();
+					if (kBuild.isFeatureRemove(eFeature))
 					{
 						iCost += GC.getFeatureInfo(eFeature).getAdvancedStartRemoveCost();
 					}

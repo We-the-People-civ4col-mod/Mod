@@ -1,6 +1,22 @@
 #include "CvGameCoreDLL.h"
 #include "CyInfos.h"
 
+bool CyBuildInfo::isFeatureRemove(int i) const
+{
+	return CvBuildInfo::getFeatureRemove(static_cast<FeatureTypes>(i)) != NULL;
+}
+
+int CyBuildInfo::getFeatureTime(int i) const
+{
+	const FeatureStruct* featureStruct = CvBuildInfo::getFeatureRemove(static_cast<FeatureTypes>(i));
+	return featureStruct ? featureStruct->iTime : 0;
+}
+
+int CyBuildInfo::getFeatureYield(int iFeature, int iYield) const
+{
+	const FeatureStruct* featureStruct = CvBuildInfo::getFeatureRemove(static_cast<FeatureTypes>(iFeature));
+	return featureStruct ? featureStruct->Yields.get(iYield) : 0;
+}
 
 int CyControlInfo::getActionInfoIndex() const
 {

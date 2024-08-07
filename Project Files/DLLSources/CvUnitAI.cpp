@@ -895,7 +895,7 @@ bool CvUnitAI::AI_bestCityBuild(CvCity* pCity, CvPlot** ppBestPlot, BuildTypes* 
 							if (iValue > iBestValue)
 							{
 								eBuild = pCity->AI_getBestBuild(iI);
-								FAssertMsg(eBuild < GC.getNumBuildInfos(), "Invalid Build");
+								FAssertMsg(isInRange(eBuild), "Invalid Build");
 
 								if (eBuild != NO_BUILD)
 								{
@@ -16577,8 +16577,8 @@ bool CvUnitAI::AI_improveCity(CvCity* pCity)
 	{
 		FAssertMsg(pBestPlot != NULL, "BestPlot is not assigned a valid value");
 		FAssertMsg(eBestBuild != NO_BUILD, "BestBuild is not assigned a valid value");
-		FAssertMsg(eBestBuild < GC.getNumBuildInfos(), "BestBuild is assigned a corrupt value");
-		if ((plot()->getWorkingCity() != pCity) || (GC.getBuildInfo(eBestBuild).getRoute() != NO_ROUTE))
+		FAssertMsg(isInRange(eBestBuild), "BestBuild is assigned a corrupt value");
+		if ((plot()->getWorkingCity() != pCity) || (INFO.getInfo(eBestBuild).getRoute() != NO_ROUTE))
 		{
 			eMission = MISSION_ROUTE_TO;
 		}
@@ -16666,7 +16666,7 @@ bool CvUnitAI::AI_improveLocalPlot(int iRange, CvCity* pIgnoreCity)
 
 										if (bAllowed)
 										{
-											if (pLoopPlot->getImprovementType() != NO_IMPROVEMENT && GC.getBuildInfo(pCity->AI_getBestBuild(iIndex)).getImprovement() != NO_IMPROVEMENT)
+											if (pLoopPlot->getImprovementType() != NO_IMPROVEMENT && INFO.getInfo(pCity->AI_getBestBuild(iIndex)).getImprovement() != NO_IMPROVEMENT)
 											{
 												bAllowed = false;
 											}
@@ -16720,7 +16720,7 @@ bool CvUnitAI::AI_improveLocalPlot(int iRange, CvCity* pIgnoreCity)
 	if (pBestPlot != NULL)
 	{
 	    FAssertMsg(eBestBuild != NO_BUILD, "BestBuild is not assigned a valid value");
-	    FAssertMsg(eBestBuild < GC.getNumBuildInfos(), "BestBuild is assigned a corrupt value");
+	    FAssertMsg(isInRange(eBestBuild), "BestBuild is assigned a corrupt value");
 
 		FAssert(pBestPlot->getWorkingCity() != NULL);
 		if (NULL != pBestPlot->getWorkingCity())
@@ -16912,22 +16912,22 @@ bool CvUnitAI::AI_fortTerritory(bool bCanal)
 						iPlotValue += bCanal ? 0 : kOwner.AI_getPlotCanalValue(pLoopPlot) / 4;
 						// Super Forts end
 
-						for (int iJ = 0; iJ < GC.getNumBuildInfos(); iJ++)
+						for (LoopBuildTypes eBuild; eBuild.next();)
 						{
-							BuildTypes eBuild = ((BuildTypes)iJ);
-							FAssertMsg(eBuild < GC.getNumBuildInfos(), "Invalid Build");
-
-							if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT)
+							const CvBuildInfo& kBuild = eBuild.info();
+							const ImprovementTypes eImprovement = kBuild.getImprovement();
+							if (eImprovement != NO_IMPROVEMENT)
 							{
-								if (GC.getImprovementInfo((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement())).isActsAsCity())
+								const CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
+								if (kImprovement.isActsAsCity())
 								{
-								    if (GC.getImprovementInfo((ImprovementTypes)(GC.getBuildInfo(eBuild).getImprovement())).getDefenseModifier() > 0)
+								    if (kImprovement.getDefenseModifier() > 0)
 								    {
                                         if (canBuild(pLoopPlot, eBuild))
                                         {
                                             iValue = 10000;
 
-                                            iValue /= (GC.getBuildInfo(eBuild).getTime() + 1);
+                                            iValue /= (kBuild.getTime() + 1);
 
                                             if (iValue < iBestTempBuildValue)
                                             {
@@ -16950,7 +16950,7 @@ bool CvUnitAI::AI_fortTerritory(bool bCanal)
 								{
 									if (pLoopPlot->getFeatureType() != NO_FEATURE)
 									{
-										if (GC.getBuildInfo(eBestTempBuild).isFeatureRemove(pLoopPlot->getFeatureType()))
+										if (INFO.getInfo(eBestTempBuild).getFeatureRemove(pLoopPlot->getFeatureType()))
 										{
 											bValid = false;
 										}
@@ -17003,7 +17003,7 @@ bool CvUnitAI::AI_fortTerritory(bool bCanal)
 	if (pBestPlot != NULL)
 	{
 		FAssertMsg(eBestBuild != NO_BUILD, "BestBuild is not assigned a valid value");
-		FAssertMsg(eBestBuild < GC.getNumBuildInfos(), "BestBuild is assigned a corrupt value");
+		FAssertMsg(isInRange(eBestBuild), "BestBuild is assigned a corrupt value");
 
 		getGroup()->pushMission(MISSION_ROUTE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), 0, false, false, MISSIONAI_BUILD, pBestPlot);
 		getGroup()->pushMission(MISSION_BUILD, eBestBuild, -1, 0, (getGroup()->getLengthMissionQueue() > 0), false, MISSIONAI_BUILD, pBestPlot);
@@ -17021,7 +17021,7 @@ bool CvUnitAI::AI_improvePlot(CvPlot* pPlot, BuildTypes eBuild)
 
 	if (eBuild != NO_BUILD)
 	{
-		FAssertMsg(eBuild < GC.getNumBuildInfos(), "BestBuild is assigned a corrupt value");
+		FAssertMsg(isInRange(eBuild), "BestBuild is assigned a corrupt value");
 
 		eBuild = AI_betterPlotBuild(pPlot, eBuild);
 		if (!atPlot(pPlot))
@@ -17044,7 +17044,7 @@ bool CvUnitAI::AI_improvePlot(CvPlot* pPlot, BuildTypes eBuild)
 
 }
 
-BuildTypes CvUnitAI::AI_betterPlotBuild(CvPlot* pPlot, BuildTypes eBuild)
+BuildTypes CvUnitAI::AI_betterPlotBuild(CvPlot* pPlot, const BuildTypes eBuild)
 {
 	FAssert(pPlot != NULL);
 	FAssert(eBuild != NO_BUILD);
@@ -17053,7 +17053,7 @@ BuildTypes CvUnitAI::AI_betterPlotBuild(CvPlot* pPlot, BuildTypes eBuild)
 
 	FeatureTypes eFeature = pPlot->getFeatureType();
 
-	CvBuildInfo& kOriginalBuildInfo = GC.getBuildInfo(eBuild);
+	const CvBuildInfo& kOriginalBuildInfo = INFO.getInfo(eBuild);
 
 	if (kOriginalBuildInfo.getRoute() != NO_ROUTE)
 	{
@@ -17108,16 +17108,15 @@ BuildTypes CvUnitAI::AI_betterPlotBuild(CvPlot* pPlot, BuildTypes eBuild)
 
 	BuildTypes eBestBuild = NO_BUILD;
 	int iBestValue = 0;
-	for (int iBuild = 0; iBuild < GC.getNumBuildInfos(); iBuild++)
+	for (LoopBuildTypes eBuildLoop; eBuildLoop.next();)
 	{
-		BuildTypes eBuild = ((BuildTypes)iBuild);
-		CvBuildInfo& kBuildInfo = GC.getBuildInfo(eBuild);
+		const CvBuildInfo& kBuildInfo = eBuildLoop.info();
 
 
-		RouteTypes eRoute = (RouteTypes)kBuildInfo.getRoute();
+		const RouteTypes eRoute = kBuildInfo.getRoute();
 		if ((bBuildRoute && (eRoute != NO_ROUTE)) || (bClearFeature && kBuildInfo.isFeatureRemove(eFeature)))
 		{
-			if (canBuild(pPlot, eBuild))
+			if (canBuild(pPlot, eBuildLoop))
 			{
 				int iValue = 10000;
 
@@ -17136,7 +17135,7 @@ BuildTypes CvUnitAI::AI_betterPlotBuild(CvPlot* pPlot, BuildTypes eBuild)
 						iValue *= 2 + iWorkersNeeded + ((pPlot->isHills() && (iWorkersNeeded > 1)) ? 2 * GLOBAL_DEFINE_HILLS_EXTRA_MOVEMENT : 0);
 						iValue /= 3;
 					}
-					ImprovementTypes eImprovement = (ImprovementTypes)kOriginalBuildInfo.getImprovement();
+					const ImprovementTypes eImprovement = kOriginalBuildInfo.getImprovement();
 					if (eImprovement != NO_IMPROVEMENT)
 					{
 						int iRouteMultiplier = ((GC.getImprovementInfo(eImprovement).getRouteYieldChanges(eRoute, YIELD_FOOD)) * 100);
@@ -17150,7 +17149,7 @@ BuildTypes CvUnitAI::AI_betterPlotBuild(CvPlot* pPlot, BuildTypes eBuild)
 				if (iValue > iBestValue)
 				{
 					iBestValue = iValue;
-					eBestBuild = eBuild;
+					eBestBuild = eBuildLoop;
 				}
 			}
 		}

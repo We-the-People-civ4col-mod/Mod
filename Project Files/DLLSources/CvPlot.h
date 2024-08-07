@@ -270,7 +270,12 @@ public:
 	// function to avoid using an InfoArray, though it only works when searching for a single value
 	// use InfoArray if searching for multiple as it will be faster
 	template <typename T>
+#ifdef MakefileCompilation
+// boost::enable_if confuses intellisense
 	typename boost::enable_if<boost::is_enum<T>, bool>::type
+#else
+	bool
+#endif
 	hasNearbyPlotWith(T eVal, int iRange = 1) const;
 	//WTP, Nightinggale - Terrain locator - start
 

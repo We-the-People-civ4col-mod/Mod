@@ -159,7 +159,7 @@ CyGoodyInfo* CyGlobalContext::getGoodyInfo(int i) const
 
 CyBuildInfo* CyGlobalContext::getBuildInfo(int i) const
 {
-	return (i>=0 && i<GC.getNumBuildInfos()) ? (CyBuildInfo*)&GC.getBuildInfo((BuildTypes) i) : NULL;
+	return (i>=0 && i< NUM_BUILD_TYPES) ? (CyBuildInfo*)&INFO.getInfo((BuildTypes) i) : NULL;
 }
 
 CyHandicapInfo* CyGlobalContext::getHandicapInfo(int i) const

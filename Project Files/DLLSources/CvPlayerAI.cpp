@@ -14432,10 +14432,10 @@ bool CvPlayerAI::AI_advancedStartPlaceCity(CvPlot* pPlot)
 			int iValue = pCity->AI_getBestBuildValue(iI);
 			if (iValue > iBestValue)
 			{
-				BuildTypes eBuild = pCity->AI_getBestBuild(iI);
+				LoopBuildTypes eBuild = pCity->AI_getBestBuild(iI);
 				if (eBuild != NO_BUILD)
 				{
-					ImprovementTypes eImprovement = (ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement();
+					const ImprovementTypes eImprovement = eBuild.info().getImprovement();
 					if (eImprovement != NO_IMPROVEMENT)
 					{
 						CvPlot* pLoopPlot = plotCity(pCity->getX_INLINE(), pCity->getY_INLINE(), iI);

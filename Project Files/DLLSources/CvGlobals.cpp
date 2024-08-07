@@ -23,6 +23,7 @@
 #include "UserSettings.h"
 #include "StartupErrorChecking.h"
 #include "GlobalsInfoContainer.h"
+#include "CvXMLLoadUtility.h"
 
 #include <stdlib.h>
 
@@ -1866,33 +1867,6 @@ CvGoodyInfo& CvGlobals::getGoodyInfo(GoodyTypes eGoodyNum)
 	return *(m_paGoodyInfo[eGoodyNum]);
 }
 
-/*
-	int CvGlobals::getNumBuildingInfos()
-	Complexity: O( 1 )
-*/
-int CvGlobals::getNumBuildInfos()
-{
-	return (int)m_paBuildInfo.size();
-}
-
-std::vector<CvBuildInfo*>& CvGlobals::getBuildInfo()	// For Moose - XML Load Util, CvInfos
-{
-	return m_paBuildInfo;
-}
-
-/*
-	CvBuildingInfo& CvGlobals::getBuildingInfo(BuildingTypes eBuildingNum)
-	Complexity: O( 1 )
-	Purpose:
-		Get a buildings (CvBuildingInfo) data object.
-*/
-CvBuildInfo& CvGlobals::getBuildInfo(BuildTypes eBuildNum)
-{
-	FAssert(eBuildNum > -1);
-	FAssert(eBuildNum < GC.getNumBuildInfos());
-	return *(m_paBuildInfo[eBuildNum]);
-}
-
 int CvGlobals::getNumHandicapInfos()
 {
 	return (int)m_paHandicapInfo.size();
@@ -3094,6 +3068,16 @@ CvAchieveInfo& CvGlobals::getAchieveInfo(AchieveTypes eAchieve)
 // This call will remove them from memory.
 void CvGlobals::cleanInfoStrings()
 {
+	static bool bHasRun = false;
+	if (bHasRun)
+	{
+		return;
+	}
+	bHasRun = true;
+
+	CvXMLLoadUtility util;
+	util.readXMLfiles(CvXMLLoadUtility::XML_STAGE_TEXT);
+
 	if (GAMETEXT.getCurrentLanguage() == CvGameText::getLanguageID("Tag"))
 	{
 		// The Tag language reveals the TXT_KEYS
