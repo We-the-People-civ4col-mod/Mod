@@ -1746,15 +1746,24 @@ void CvUnit::updateCombat(bool bQuick)
 				{
 					IDs.push_back(pUnitNode->m_data);
 
-					//Dyllin - Have to mark all civilians as captured before killing them due to strange capture bug that would move the units
-					//that were to be captured to a different tile despite also capturing them.
+					//Dyllin - Mark all civilians not loaded in ships as captured before killing them.
 					CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 					if (pLoopUnit != NULL && pLoopUnit != pDefender)
 					{
 						if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot) &&
 							(pLoopUnit->isCapturableLandUnit() || pLoopUnit->isYield()))
 						{
-							pLoopUnit->setCapturingPlayer(getOwnerINLINE());
+							if (pLoopUnit->getTransportUnit() == NULL)
+							{
+								pLoopUnit->setCapturingPlayer(getOwnerINLINE());
+							}
+							else
+							{
+								if (pLoopUnit->getTransportUnit()->getDomainType() != DOMAIN_SEA)
+								{
+									pLoopUnit->setCapturingPlayer(getOwnerINLINE());
+								}
+							}
 						}
 					}
 
@@ -1773,7 +1782,17 @@ void CvUnit::updateCombat(bool bQuick)
 						if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot) &&
 							(pLoopUnit->isCapturableLandUnit() || pLoopUnit->isYield()))
 						{
-							pLoopUnit->kill(false);
+							if (pLoopUnit->getTransportUnit() == NULL)
+							{
+								pLoopUnit->kill(false);
+							}
+							else
+							{
+								if (pLoopUnit->getTransportUnit()->getDomainType() != DOMAIN_SEA)
+								{
+									pLoopUnit->kill(false);
+								}
+							}
 						}
 					}
 				}
