@@ -949,7 +949,7 @@ Viel Spass![NEWLINE]
 		<German>Nach einem [COLOR:140:255:40:255]&lt; RECHTSKLICK &gt;[COLOR_REVERT] auf ein Transportschiff gehen die Einheiten automatisch an Bord.</German>
 		<Italian>Clicca con il [COLOR:140:255:40:255]&lt; PULSANTE DESTRO &gt;[COLOR_REVERT] su un mezzo di trasporto per caricare automaticamente le unità a bordo.</Italian>
 		<Spanish>Hacer [COLOR:140:255:40:255]&lt; CLIC DERECHO &gt;[COLOR_REVERT] en un transporte embarcará directamente las unidades en él.</Spanish>
-		<Russian>[COLOR:140:255:40:255]Клик ПКМ[COLOR_REVERT] на транспорте автоматически загрузит в него юниты. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
+		<Russian>[COLOR:140:255:40:255]ПКМ[COLOR_REVERT] на транспорте автоматически загрузит в него юниты. [COLOR_NEGATIVE_TEXT](ПОКА НЕ РАБОТАЕТ)[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_11</Tag>
@@ -958,7 +958,7 @@ Viel Spass![NEWLINE]
 		<German>Haben Sie ein Transportschiff ausgewählt, gehen alle Einheiten nach einem [COLOR:140:255:40:255]&lt; RECHTSKLICK &gt;[COLOR_REVERT] auf ein angrenzendes Geländefeld automatisch von Bord.</German>
 		<Italian>Quando hai selezionato un mezzo di trasporto, clicca con il [COLOR:140:255:40:255]&lt; PULSANTE DESTRO &gt;[COLOR_REVERT] del mouse su una casella adiacente per sbarcare automaticamente le unità a bordo.</Italian>
 		<Spanish>Con un transporte seleccionado, hacer [COLOR:140:255:40:255]&lt; CLIC DERECHO &gt;[COLOR_REVERT] en una casilla de tierra adyacente desembarcará automáticamente a las unidades.</Spanish>
-		<Russian>При выборе транспорта [COLOR:140:255:40:255]клик ПКМ[COLOR_REVERT] на соседнем квадрате земли автоматически разгрузит туда юниты.</Russian>
+		<Russian>При выборе транспорта [COLOR:140:255:40:255]ПКМ[COLOR_REVERT] на соседнем квадрате земли автоматически разгрузит туда юниты.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_12</Tag>
@@ -1282,7 +1282,7 @@ Viel Spass![NEWLINE]
 		<German>Per [COLOR:140:255:40:255]&lt; RECHTSKLICK &gt;[COLOR_REVERT] schicken Sie Ihre Einheiten auf das gewünschte Geländefeld.</German>
 		<Italian>Muovi le unità su una casella lontana cliccandoci sopra con il [COLOR:140:255:40:255]&lt; PULSANTE DESTRO &gt;[COLOR_REVERT].</Italian>
 		<Spanish>Se pueden mover unidades a una casilla lejana haciendo [COLOR:140:255:40:255]&lt; CLIC DERECHO &gt;[COLOR_REVERT] en ella.</Spanish>
-		<Russian>Переместите юниты на отдалённую клетку с помощью [COLOR:140:255:40:255]клик ПКМ[COLOR_REVERT] на месте назначения.</Russian>
+		<Russian>Переместите юниты на отдалённую клетку с помощью [COLOR:140:255:40:255]ПКМ[COLOR_REVERT] на месте назначения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_49</Tag>
@@ -1291,7 +1291,7 @@ Viel Spass![NEWLINE]
 		<German>Mit [COLOR:140:255:40:255]&lt; STRG + RECHTSKLICK &gt;[COLOR_REVERT] schicken Sie alle Einheiten eines Typs zum gewünschten Geländefeld.</German>
 		<Italian>Puoi muovere un gruppo di unità dello stesso tipo con [COLOR:140:255:40:255]&lt; CTRL + PULSANTE DESTRO &gt;[COLOR_REVERT] sulla destinazione.</Italian>
 		<Spanish>Se pueden mover en grupo todas las unidades del mismo tipo pulsando [COLOR:140:255:40:255]&lt; CTRL + CLIC DERECHO &gt;[COLOR_REVERT] en el lugar de destino.</Spanish>
-		<Russian>Вы можете сгруппировать перемещение всех юнитов одного типа с помощью [COLOR:140:255:40:255]CTRL + клик ПКМ[COLOR_REVERT] в месте назначения.</Russian>
+		<Russian>Вы можете сгруппировать перемещение всех юнитов одного типа с помощью [COLOR:140:255:40:255]CTRL + ПКМ[COLOR_REVERT] в месте назначения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_50</Tag>
@@ -1300,7 +1300,7 @@ Viel Spass![NEWLINE]
 		<German>Sie können alle Einheiten eines Feldes mit [COLOR:140:255:40:255]&lt; ALT + RECHTSKLICK &gt;[COLOR_REVERT] auf die gewünschte Position bewegen.</German>
 		<Italian>Puoi muovere un gruppo di unità sulla stessa casella con [COLOR:140:255:40:255]&lt; ALT + PULSANTE DESTRO &gt;[COLOR_REVERT] sulla destinazione.</Italian>
 		<Spanish>Se pueden mover en grupo todas las unidades de la misma casilla pulsando [COLOR:140:255:40:255]&lt; ALT + CLIC DERECHO &gt;[COLOR_REVERT] en el lugar de destino.</Spanish>
-		<Russian>Вы можете сгруппировать перемещение всех юнитов на одной клетке с помощью [COLOR:140:255:40:255]ALT + клик ПКМ[COLOR_REVERT] в пункте назначения.</Russian>
+		<Russian>Вы можете сгруппировать перемещение всех юнитов на одной клетке с помощью [COLOR:140:255:40:255]ALT + ПКМ[COLOR_REVERT] в пункте назначения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_51</Tag>
@@ -1362,7 +1362,7 @@ Viel Spass![NEWLINE]
 		<German>Halten Sie [UMSCHALTEN] gedrückt und klicken Sie auf die Siedlungsleiste, wenn Sie mehrere Siedlungen auswählen möchten. Mit [UMSCHALTEN + RECHTSKLICK] können Sie Sammelpunkte bestimmen.</German>
 		<Italian>Se tieni premuto il tasto [MAIUSC] mentre clicchi sulla barra degli insediamenti, puoi "selezionare" più insediamenti. Puoi anche usare [MAIUSC + PULSANTE DESTRO] per impostare un punto di raduno...</Italian>
 		<Spanish>Si se mantiene pulsada la tecla [MAYÚS] mientras se hace clic en la barra del asentamiento, se pueden "seleccionar" varios asentamientos. También se puede usar [MAYÚS] + [CLIC DERECHO] para establecer un punto de concentración.</Spanish>
-		<Russian>Если удерживать клавишу [COLOR:140:255:40:255]SHIFT[COLOR_REVERT] и нажимать на панель поселения в круге строительства, можно не заходя в поселение изменять строительство. Также вы можете "выбрать" несколько поселений (зачем?). А выделив колонию и применив комбинацию [COLOR:140:255:40:255]SHIFT + клик ПКМ[COLOR_REVERT] на какой-либо клетке, можно установить точку сбора для юнитов.</Russian>
+		<Russian>Если удерживать клавишу [COLOR:140:255:40:255]SHIFT[COLOR_REVERT] и нажимать на панель поселения в круге строительства, можно не заходя в поселение изменять строительство. Также вы можете "выбрать" несколько поселений (зачем?). А выделив колонию и применив комбинацию [COLOR:140:255:40:255]SHIFT + ПКМ[COLOR_REVERT] на какой-либо клетке, можно установить точку сбора для юнитов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_58</Tag>

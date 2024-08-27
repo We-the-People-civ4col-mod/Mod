@@ -294,6 +294,7 @@
 		<German>[COLOR_WARNING_TEXT]Wird die Modernisierung %s1_ImpName zerstören[COLOR_REVERT]</German>
 		<Italian>[COLOR_WARNING_TEXT]Il miglioramento %s1_ImpName[COLOR_REVERT] verrà distrutto.</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]Destruirá [NUM1:el:la:los:las] %s1_ImpName[COLOR_REVERT]</Spanish>
+		<Russian>[COLOR_WARNING_TEXT]Уничтожит %s1_ImpName[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CONSUME_UNIT</Tag>
@@ -3313,7 +3314,7 @@
 		<German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] übernimmt die Staatsform [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT]!</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] adotta la forma di governo [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT]!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha adoptado [NUM2:el:la:los:las] [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT].</Spanish>
-		<Russian>>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] принимает [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT]!</Russian>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] принимает [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT]!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ENEMY_TROOPS_SPOTTED</Tag>

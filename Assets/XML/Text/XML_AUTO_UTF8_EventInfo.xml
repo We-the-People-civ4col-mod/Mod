@@ -830,7 +830,7 @@
 		<English>He lived like a savage? He shall help us to open up the wilderness.</English>
 		<French>Il a vécu comme un sauvage ? Ils devraient nous aider à rendre l'arrière-pays plus accessible.</French>
 		<German>Wie ein Wilder hat dieser Mann gelebt? Dann soll er zur Buße helfen, die Wildnis urbar zu machen.</German>
-		<Russian>Жил, как дикарь? Он поможет нам освоить пустыню.</Russian>
+		<Russian>Жил с местными дикарями? Пусть помогает нам осваивать пустоши.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_CATHEDRAL_3</Tag>
@@ -2703,7 +2703,7 @@
 		<Tag>TXT_KEY_EVENTTRIGGER_COLONY_GROWTH</Tag>
 		<English>Our colony has grown a lot. Naturally our rivals are striving to do the same. We need to reach a population of 20 to increase our production and strengthen our borders.</English>
 		<French>Votre colonie a beaucoup grandi. Mais nous ne pouvons que nous attendre à ce que nos rivaux fassent de même. Nous devons atteindre une population de 20 pour augmenter notre production et renforcer nos frontières.</French>
-		<German>> Ihre Kolonie ist stark gewachsen. Aber wir können nur erwarten, dass unsere Konkurrenten dasselbe tun. Wir müssen eine Bevölkerungszahl von 20 erreichen, um unsere Produktion zu steigern und unsere Grenzen zu stärken.</German>
+		<German>Ihre Kolonie ist stark gewachsen. Aber wir können nur erwarten, dass unsere Konkurrenten dasselbe tun. Wir müssen eine Bevölkerungszahl von 20 erreichen, um unsere Produktion zu steigern und unsere Grenzen zu stärken.</German>
 		<Russian>Наша колония сильно выросла. Однако и у наших соперников дела могут пойти также хорошо. Нам нужно достичь населения в 20 человек, чтобы увеличить производство и укрепить наши границы.</Russian>
 	</TEXT>
 	<TEXT>
@@ -2744,7 +2744,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_COLONY_GROWTH_DONE_2</Tag>
 		<English>Thefts, shakedowns and other shady business are taking place in broad daylight. We need a judge to restore order!</English>
-		<French>> Les vols et autres affaires louches ont lieu en plein jour. Il nous faut un juge pour rétablir l'ordre!</French>
+		<French>Les vols et autres affaires louches ont lieu en plein jour. Il nous faut un juge pour rétablir l'ordre!</French>
 		<German>Diebstähle und andere dubiose Geschäfte geschehen am helllichten Tag. Wir brauchen einen Richter, der die Ordnung wiederherstellt!</German>
 		<Russian>Кражи и другие тёмные дела происходят средь бела дня! Нам срочно нужен судья, чтобы восстановить порядок!</Russian>
 	</TEXT>
