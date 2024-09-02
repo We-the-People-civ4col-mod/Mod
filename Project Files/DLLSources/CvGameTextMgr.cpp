@@ -2477,7 +2477,7 @@ bool CvGameTextMgr::setCombatPlotHelp(CvWStringBuffer &szString, CvPlot* pPlot)
 void createTestFontString(CvWStringBuffer& szString)
 {
 	szString.assign(L"!\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[?]^_`abcdefghijklmnopqrstuvwxyz\n");
-	szString.append(L"{}~\\????G????T??????????S??F?O????????a??de??????µ???p??st?f???????????«»°???????©®?£??????");
+	szString.append(L"{}~\\????G????T??????????S??F?O????????a??de??????ï¿½???p??st?f???????????ï¿½ï¿½ï¿½???????ï¿½ï¿½?ï¿½??????");
 	szString.append(L"\n");
 	for (YieldTypes iI = FIRST_YIELD;iI<NUM_YIELD_TYPES;++iI)
 		szString.append(CvWString::format(L"%c", GC.getYieldInfo(iI).getChar()));
@@ -6489,6 +6489,23 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szTempBuffer.Format( SETCOLR L"<link=literal>%s</link>" ENDCOLR , TEXT_COLOR("COLOR_BUILDING_TEXT"), kBuilding.getDescription());
 		szBuffer.append(szTempBuffer);
 		// R&R, ray , fix conflict MYCP and MYPB
+		int aiYields[NUM_YIELD_TYPES];
+		for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
+		{
+			aiYields[iI] = kBuilding.getYieldChange(iI);
+
+			if (NULL != pCity)
+			{
+				aiYields[iI] += pCity->getBuildingYieldChange((BuildingClassTypes)kBuilding.getBuildingClassType(), (YieldTypes)iI);
+			}
+
+			if (ePlayer != NO_PLAYER)
+			{
+				aiYields[iI] += GET_PLAYER(ePlayer).getBuildingYieldChange((BuildingClassTypes)kBuilding.getBuildingClassType(), (YieldTypes)iI);
+			}
+		}
+		setYieldChangeHelp(szBuffer, L", ", L"", L"", aiYields, false, false);
+		setYieldChangeHelp(szBuffer, L", ", L"", L"", kBuilding.getYieldModifierArray(), true, bCivilopediaText);
 		// std::vector<YieldTypes> eBuildingYieldsConversion;
 		if(kBuilding.getProfessionOutput() != 0)
 		{
@@ -6542,23 +6559,6 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 			}
 		}
 		// R&R, ray , MYCP partially based on code of Aymerick - END
-		int aiYields[NUM_YIELD_TYPES];
-		for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
-		{
-			aiYields[iI] = kBuilding.getYieldChange(iI);
-
-			if (NULL != pCity)
-			{
-				aiYields[iI] += pCity->getBuildingYieldChange((BuildingClassTypes)kBuilding.getBuildingClassType(), (YieldTypes)iI);
-			}
-
-			if (ePlayer != NO_PLAYER)
-			{
-				aiYields[iI] += GET_PLAYER(ePlayer).getBuildingYieldChange((BuildingClassTypes)kBuilding.getBuildingClassType(), (YieldTypes)iI);
-			}
-		}
-		setYieldChangeHelp(szBuffer, L", ", L"", L"", aiYields, false, false);
-		setYieldChangeHelp(szBuffer, L", ", L"", L"", kBuilding.getYieldModifierArray(), true, bCivilopediaText);
 	}
 
 	// test for unique building
