@@ -6464,7 +6464,6 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	bool bFirst;
 	int iProduction;
 	int iLast;
-	int iI;
 
 	if (NO_BUILDING == eBuilding || eBuilding >= NUM_BUILDING_TYPES)
 	{
@@ -6490,16 +6489,16 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		szBuffer.append(szTempBuffer);
 		// R&R, ray , fix conflict MYCP and MYPB
 		// std::vector<YieldTypes> eBuildingYieldsConversion;
-		if(kBuilding.getProfessionOutput() != 0)
+		if (kBuilding.getProfessionOutput() != 0)
 		{
-			for (iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
+			for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
 			{
 				// R&R, ray , fix conflict MYCP and MYPB
 				std::vector<YieldTypes> eBuildingYieldsConversion;
 
-				if (ePlayer == NO_PLAYER || GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).isValidProfession(iI))
+				if (ePlayer == NO_PLAYER || GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).isValidProfession(eProfession))
 				{
-					CvProfessionInfo& kProfession = GC.getProfessionInfo((ProfessionTypes) iI);
+					const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 					if (kProfession.getSpecialBuilding() == kBuilding.getSpecialBuildingType())
 					{
 						if (kProfession.getYieldsProduced(0) != NO_YIELD)
@@ -6509,7 +6508,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 								YieldTypes eYieldConsumed = (YieldTypes) kProfession.getYieldsConsumed(j);
 								if (eYieldConsumed != NO_YIELD)
 								{
-									eBuildingYieldsConversion.push_back((YieldTypes) eYieldConsumed);
+									eBuildingYieldsConversion.push_back(eYieldConsumed);
 								}
 							}
 							if (!eBuildingYieldsConversion.empty())
@@ -6543,18 +6542,18 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		}
 		// R&R, ray , MYCP partially based on code of Aymerick - END
 		int aiYields[NUM_YIELD_TYPES];
-		for (iI = 0; iI < NUM_YIELD_TYPES; ++iI)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			aiYields[iI] = kBuilding.getYieldChange(iI);
+			aiYields[eYield] = kBuilding.getYieldChange(eYield);
 
 			if (NULL != pCity)
 			{
-				aiYields[iI] += pCity->getBuildingYieldChange((BuildingClassTypes)kBuilding.getBuildingClassType(), (YieldTypes)iI);
+				aiYields[eYield] += pCity->getBuildingYieldChange((BuildingClassTypes)kBuilding.getBuildingClassType(), eYield);
 			}
 
 			if (ePlayer != NO_PLAYER)
 			{
-				aiYields[iI] += GET_PLAYER(ePlayer).getBuildingYieldChange((BuildingClassTypes)kBuilding.getBuildingClassType(), (YieldTypes)iI);
+				aiYields[eYield] += GET_PLAYER(ePlayer).getBuildingYieldChange((BuildingClassTypes)kBuilding.getBuildingClassType(), eYield);
 			}
 		}
 		setYieldChangeHelp(szBuffer, L", ", L"", L"", aiYields, false, false);
@@ -6567,13 +6566,13 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 
 	if (NO_BUILDING != eDefaultBuilding && eDefaultBuilding != eBuilding)
 	{
-		for (int iI  = 0; iI < GC.getNumCivilizationInfos(); ++iI)
+		for (CivilizationTypes eCiv  = FIRST_CIVILIZATION; eCiv < NUM_CIVILIZATION_TYPES; ++eCiv)
 		{
-			BuildingTypes eUniqueBuilding = (BuildingTypes)GC.getCivilizationInfo((CivilizationTypes)iI).getCivilizationBuildings((int)eBuildingClass);
+			const BuildingTypes eUniqueBuilding = (BuildingTypes)GC.getCivilizationInfo(eCiv).getCivilizationBuildings(eBuildingClass);
 			if (eUniqueBuilding == eBuilding)
 			{
 				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_UNIQUE_BUILDING", GC.getCivilizationInfo((CivilizationTypes)iI).getTextKeyWide()));
+				szBuffer.append(gDLL->getText("TXT_KEY_UNIQUE_BUILDING", GC.getCivilizationInfo(eCiv).getTextKeyWide()));
 			}
 		}
 
@@ -6584,7 +6583,7 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 	BuildingTypes eNextBuilding = kBuilding.getIndexOf_NextBuildingType_In_SpecialBuilding();
 	while (eNextBuilding != eBuilding)
 	{
-		CvBuildingInfo& kNextBuilding = GC.getBuildingInfo(eNextBuilding);
+		const CvBuildingInfo& kNextBuilding = GC.getBuildingInfo(eNextBuilding);
 
 		if (kBuilding.getSpecialBuildingPriority() > kNextBuilding.getSpecialBuildingPriority())
 		{
@@ -6861,9 +6860,8 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		{
 			if (pCity == NULL)
 			{
-				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					YieldTypes eYield = (YieldTypes) iYield;
 					if (kBuilding.getYieldCost(eYield) > 0)
 					{
 						szTempBuffer.Format(L"\n%d%c", (ePlayer != NO_PLAYER ? GET_PLAYER(ePlayer).getYieldProductionNeeded(eBuilding, eYield) : kBuilding.getYieldCost(eYield)), GC.getYieldInfo(eYield).getChar());
@@ -6890,11 +6888,10 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 					szBuffer.append(szTempBuffer);
 				}
 
-				for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+				for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 				{
-					if (GC.getBuildingInfo(eBuilding).getYieldCost(iYield) > 0)
+					if (GC.getBuildingInfo(eBuilding).getYieldCost(eYield) > 0)
 					{
-						YieldTypes eYield = (YieldTypes) iYield;
 						if (GC.getYieldInfo(eYield).isCargo())
 						{
 							int iCost = GET_PLAYER(pCity->getOwnerINLINE()).getYieldProductionNeeded(eBuilding, eYield);
@@ -7057,14 +7054,13 @@ void CvGameTextMgr::buildBuildingRequiresString(CvWStringBuffer& szBuffer, Build
 
 		if (!bCivilopediaText)
 		{
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+			for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 			{
-				if (kBuilding.getYieldCost(iYield) > 0)
+				if (kBuilding.getYieldCost(eYield) > 0)
 				{
-					YieldTypes eYield = (YieldTypes) iYield;
 					if (GC.getYieldInfo(eYield).isCargo())
 					{
-						int iCost = (NO_PLAYER == ePlayer ? GC.getBuildingInfo(eBuilding).getYieldCost(iYield) : GET_PLAYER(ePlayer).getYieldProductionNeeded(eBuilding, eYield));
+						int iCost = (NO_PLAYER == ePlayer ? GC.getBuildingInfo(eBuilding).getYieldCost(eYield) : GET_PLAYER(ePlayer).getYieldProductionNeeded(eBuilding, eYield));
 						if (NULL == pCity || pCity->getYieldStored(eYield) + pCity->getYieldRushed(eYield) < iCost)
 						{
 							szBuffer.append(NEWLINE);
