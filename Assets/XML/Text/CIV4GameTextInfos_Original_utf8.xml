@@ -9977,7 +9977,7 @@
 		<German>[ICON_BULLET]Gebäude [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT] erhalten</German>
 		<Italian>[ICON_BULLET]Ricevere [NUM1:un:una] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Recibir [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Spanish>
-		<Russian>[ICON_BULLET]Получена [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Russian>
+		<Russian>[ICON_BULLET]Построено здание: [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REMOVE_BUILDING</Tag>

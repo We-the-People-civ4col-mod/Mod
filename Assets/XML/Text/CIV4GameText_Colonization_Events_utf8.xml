@@ -2550,14 +2550,14 @@
 		<English>A major military conflict in Europe has ended.</English>
 		<French>Un conflit militaire d'importance a pris fin en Europe.</French>
 		<German>Ein bedeutender militärischer Konflikt wurde in Europa beendet.</German>
-		<Russian>Крупный военный конфликт в Европе закончился.</Russian>
+		<Russian>В Европе завершился крупный военный конфликт.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_CONFLICT_ENDED</Tag>
 		<English>A large-scale military conflict in Europe has ended. Many troops are no longer needed and have been sent home. Maybe we could hire some of them.</English>
 		<French>Un conflit militaire d'importance a pris fin en Europe. De nombreuses troupes n'y sont plus nécessaires et ont été renvoyées à leur maison. Peut-être pourrions-nous en engager quelques-unes.</French>
 		<German>Ein bedeutender militärischer Konflikt wurde in Europa beendet. Viele Soldaten sind schon entlassen worden. Vielleicht können wir einige davon anheuern.</German>
-		<Russian>Крупномасштабный военный конфликт в Европе завершился. Многие войска больше не нужны и их отправили по домам. Может быть, мы могли бы нанять некоторых из этих бравых солдат.</Russian>
+		<Russian>Крупномасштабный военный конфликт в Европе закончился. Содержать многотысячные армии больше нет нужды и войска распустили по домам. У нас есть возможность завербовать в колониальную армию опытных солдат.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DRUNKEN_FISHER</Tag>

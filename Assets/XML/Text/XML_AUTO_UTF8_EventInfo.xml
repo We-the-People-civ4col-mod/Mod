@@ -443,7 +443,7 @@
 		<English>Maybe we can hire some elite troops.</English>
 		<French>Peut-être devrions-nous engager quelques troupes d'élite.</French>
 		<German>Vielleicht gelingt es uns, einige Elitetruppen zu rekrutieren.</German>
-		<Russian>Может быть, мы сможем нанять несколько элитных солдат.</Russian>
+		<Russian>Если кого и нанимать, то только самых лучших!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CONFLICT_HIRE_GENERAL</Tag>
@@ -457,14 +457,14 @@
 		<English>A few more veterans to strengthen our forces would not hurt.</English>
 		<French>Quelques vétérans pour renforcer nos troupes ne feront pas de mal.</French>
 		<German>Einige Veteranen, um unsere Truppen zu verstärken, wären sicherlich nicht verkehrt.</German>
-		<Russian>Еще несколько ветеранов не помешали бы для усиления наших войск.</Russian>
+		<Russian>Ветераны сражений помогут нашим новобранцам набраться опыта.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CONFLICT_IGNORE</Tag>
 		<English>We currently cannot afford to invest into more military.</English>
 		<French>Nous ne pouvons pas nous permettre d'investir dans notre armée en ce moment.</French>
 		<German>Wir können es uns momentan nicht leisten, für mehr Truppen Geld auszugeben.</German>
-		<Russian>В настоящее время мы не можем позволить себе вкладывать больше средств в армию.</Russian>
+		<Russian>В настоящее время мы не можем позволить себе дополнительные вложения средств в армию.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CONIFEROUS_FIRE_1</Tag>
@@ -473,7 +473,7 @@
 		<German>Schickt den Köhlern je einen Batzen Gold und mein Versprechen, den Liebenden das Hochzeitsbankett zu spendieren. Mammon macht missvergnügte Männer mürbe.</German>
 		<Italian>Organizza un rimboschimento.</Italian>
 		<Spanish>Que empiecen las tareas de repoblación forestal.</Spanish>
-		<Russian>Организуйте пересадку.</Russian>
+		<Russian>Организуйте высадку новых саженцев.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CONIFEROUS_FIRE_2</Tag>
@@ -498,7 +498,7 @@
 		<English>That is bad news, but at this time we cannot afford to help.</English>
 		<French>C'est une mauvaise nouvelle, mais nous ne disposons pas des moyens pour aider.</French>
 		<German>Das sind wahrhaft schlechte Nachrichten, aber im Moment können wir nicht helfen.</German>
-		<Russian>Это плохая новость, но сейчас мы не можем позволить себе траты.</Russian>
+		<Russian>Ужасная новость, но сейчас мы не можем позволить себе такие траты.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CONTAMINATED_WELL_2</Tag>

@@ -427,7 +427,7 @@
 		<German>[COLOR_REVERT]Ein [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] wünscht, in die Kolonien auszuwandern.</German>
 		<Italian>[COLOR_REVERT][COLOR_UNIT_TEXT]%s2[COLOR_REVERT] attende in Europa.</Italian>
 		<Spanish>[COLOR_REVERT][NUM2:Un:Una] [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] aguarda en Europa.</Spanish>
-		<Russian>[COLOR_REVERT][COLOR_UNIT_TEXT]%s2[COLOR_REVERT] хочет эмигрировать в колонии.</Russian>
+		<Russian>[COLOR_REVERT][COLOR_UNIT_TEXT]%s2[COLOR_REVERT] готов к переезду в колонии.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMMIGRATION_BAR</Tag>
