@@ -178,6 +178,7 @@ public:
 	int extraPopulation() const;
 
 	int foodConsumption(int iExtra = 0) const;
+	int getFoodConsumptionPerCitizenAtSize(int iPopulation) const;
 	int foodDifference() const;
 	int growthThreshold() const;
 

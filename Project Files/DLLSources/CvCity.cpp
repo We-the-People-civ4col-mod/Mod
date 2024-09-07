@@ -2897,8 +2897,23 @@ int CvCity::extraPopulation() const
 
 int CvCity::foodConsumption(int iExtra) const
 {
-	return ((getPopulation() + iExtra) * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
+	const int iBaseConsumption = ((getPopulation() + iExtra) * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION);
+	const int iAdditionFoodDueToCitySize = ((getPopulation() + iExtra) * GLOBAL_DEFINE_CITY_EXTRA_FOOD_CONSUMPTION_PER_CITIZEN) / 100;
+	return iBaseConsumption + iAdditionFoodDueToCitySize;
 }
+
+int CvCity::getFoodConsumptionPerCitizenAtSize(int iPopulation) const
+{
+	// Base food consumption per citizen, scaled by 100
+	const int iBaseConsumptionPerCitizen = GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION * 100;
+	// Additional food consumption per citizen, already in hundredths
+	const int iAdditionalFoodPerCitizen = GLOBAL_DEFINE_CITY_EXTRA_FOOD_CONSUMPTION_PER_CITIZEN;
+	// Total food consumption per citizen, scaled by 100
+	const int iTotalFoodPerCitizen = iBaseConsumptionPerCitizen + iAdditionalFoodPerCitizen;
+	// Return total food per citizen for the population size
+	return iTotalFoodPerCitizen;
+}
+
 
 int CvCity::foodDifference() const
 {
@@ -4278,7 +4293,7 @@ int CvCity::getRawYieldConsumed(YieldTypes eYieldType) const
 	int iYieldConsumed = 0;
 	if (eYieldType == YIELD_FOOD)
 	{
-		iYieldConsumed = getPopulation() * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
+		iYieldConsumed = foodConsumption();
 	}
 
 	for (int i = 0; i < getPopulation(); ++i)

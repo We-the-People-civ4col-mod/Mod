@@ -7784,7 +7784,7 @@ bool CvUnit::canJoinCity(const CvPlot* pPlot, bool bTestVisible, bool bIgnoreFoo
 
 	if (!bTestVisible)
 	{
-		if (pCity->getRawYieldProduced(YIELD_FOOD) < pCity->getPopulation() * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION)
+		if (pCity->getRawYieldProduced(YIELD_FOOD) < pCity->foodConsumption())
 		{
 			// TAC - Clear Specialty Fix - koma13 - START
 			//if (!canJoinStarvingCity(*pCity))
@@ -7841,7 +7841,7 @@ bool CvUnit::canJoinStarvingCity(const CvCity& kCity) const
 	}
 
 	int iNewPop = kCity.getPopulation() + 1;
-	if (kCity.AI_getFoodGatherable(iNewPop, 0) >= iNewPop * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION)
+	if (kCity.AI_getFoodGatherable(iNewPop, 0) >= kCity.foodConsumption(1))
 	{
 		return true;
 	}

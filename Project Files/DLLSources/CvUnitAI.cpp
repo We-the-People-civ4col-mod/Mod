@@ -15180,7 +15180,7 @@ bool CvUnitAI::AI_joinCityBrave()
 	int iProduction = pCity->getRawYieldProduced(YIELD_FOOD);
 	int iConsumption = pCity->getRawYieldConsumed(YIELD_FOOD);
 
-	if (((iProduction / 2) + 1) >= (iConsumption + GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION))
+	if (((iProduction / 2) + 1) >= pCity->foodConsumption(1))
 	{
 		if (canJoinCity(plot()))
 		{
