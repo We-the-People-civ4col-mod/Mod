@@ -963,6 +963,14 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		break;
 	// auto traderoute - end - Nightinggale
 
+	// bobisback import changes
+	case TASK_IMPORT_CHANGES:
+		if(bOption)
+			handleDemandedImport();
+		if(bAlt)
+			handleConstructionImport();
+		break;
+
 	case TASK_CLEAR_SPECIALTY:
 		{
 			CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).getUnit(iData1);
@@ -12620,17 +12628,6 @@ void CvCity::setAutoExport(YieldTypes eYield, bool bExport)
 
 void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoExportAll)
 {
-	// reset import/export for any yields that cannot be transported
-	// they might have been accidentally added to import/exports if XML settings were changed inbetween
-	// they cannot be added/removed manually
-	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
-	{
-		if (!GC.getYieldInfo(eYield).isCargo() || !GC.getYieldInfo(eYield).isExportYield())
-		{
-			doTask(TASK_YIELD_TRADEROUTE, eYield, 0, false, false, false, false);
-		}
-	}
-
 	if (bReset)
 	{
 		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
@@ -12666,6 +12663,85 @@ void CvCity::handleAutoTraderouteSetup(bool bReset, bool bImportAll, bool bAutoE
 
 				doTask(TASK_YIELD_TRADEROUTE, eYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
 			}
+		}
+	}
+}
+
+void CvCity::handleConstructionImport()
+{
+	bool bImport = true;
+	bool bExport = isExport(YIELD_LUMBER);
+	bool bMaintainImport = getImportsMaintain(YIELD_LUMBER);
+	bool bAutoExport = isAutoExport(YIELD_LUMBER);
+	int iMaintainLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_LUMBER_IMPORT_LIMIT_AMOUNT;
+	int iImportLimitLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_LUMBER_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_LUMBER, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+
+	bImport = true;
+	bExport = isExport(YIELD_STONE);
+	bMaintainImport = getImportsMaintain(YIELD_STONE);
+	bAutoExport = isAutoExport(YIELD_STONE);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_STONE_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_STONE_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_STONE, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+
+	bImport = true;
+	bExport = isExport(YIELD_CLAY);
+	bMaintainImport = getImportsMaintain(YIELD_CLAY);
+	bAutoExport = isAutoExport(YIELD_CLAY);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_CLAY_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_CLAY_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_CLAY, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+
+	bImport = true;
+	bExport = isExport(YIELD_TOOLS);
+	bMaintainImport = getImportsMaintain(YIELD_TOOLS);
+	bAutoExport = isAutoExport(YIELD_TOOLS);
+	iMaintainLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_TOOLS_IMPORT_LIMIT_AMOUNT;
+	iImportLimitLevel = GLOBAL_DEFINE_IMPORT_CONSTRUCTION_TOOLS_IMPORT_LIMIT_AMOUNT * 1.5;
+
+	iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+	iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+	doTask(TASK_YIELD_TRADEROUTE, YIELD_TOOLS, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
+}
+
+void CvCity::handleDemandedImport()
+{
+	YieldCargoArray<int> aYields;
+	getYieldDemands(aYields);
+	const InfoArray<YieldTypes>& kYieldArray = GC.getDomesticDemandYieldTypes();
+	for (int i = 0; i < kYieldArray.getLength(); ++i)
+	{
+		const YieldTypes eYield = kYieldArray.get(i);
+
+		FAssert(validEnumRange(eYield));
+		int iAmount = aYields.get(eYield);
+		if (iAmount > 0 && !isExport(eYield)) //if there is demand but if it is an export ignore it. We do not want  to change levels on exports.
+		{
+			bool bImport = true;
+			bool bExport = isExport(eYield);
+			bool bMaintainImport = getImportsMaintain(eYield);
+			bool bAutoExport = isAutoExport(eYield);
+			int iMaintainLevel = iAmount * GLOBAL_DEFINE_IMPORT_DEMANDED_GOODS_MAINTAIN_AMOUNT;
+			int iImportLimitLevel = iAmount * GLOBAL_DEFINE_IMPORT_DEMANDED_GOODS_IMPORT_LIMIT_AMOUNT;
+
+			int iBuffer = iMaintainLevel & 0xFFFF; // lowest 16 bits
+			iBuffer |= (iImportLimitLevel & 0xFFFF) << 16; // next 16 bits
+
+			doTask(TASK_YIELD_TRADEROUTE, eYield, iBuffer, bImport, bExport, bMaintainImport, bAutoExport);
 		}
 	}
 }
