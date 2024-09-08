@@ -2445,13 +2445,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_PEDIA</Tag>
 		<English>Prisoners of war, especially officers, are often ransomed. The rank and file are more likely to be released during a prisoner exchange.[NEWLINE]Taking prisoners is a relatively recent idea. During the Trojan War defeated fighters were killed. More recently knights counted on the value of their armour and horse to show that ransoming would be worthwhile. By colonial times capturing a prisoner meant the price his conquerors could expect to receive was the value of his life.</English>
-		<German>tbd</German>
+		<German>Für Kriegsgefangene, insbesondere für Offiziere, wird oft Lösegeld verlangt. Bei einem Gefangenenaustausch werden eher die einfachen Soldaten freigelassen.[NEWLINE]Die Idee, Gefangene zu nehmen, ist relativ neu. Während des Trojanischen Krieges wurden besiegte Kämpfer getötet. In jüngerer Zeit rechneten Ritter mit dem Wert ihrer Rüstung und ihres Pferdes, um zu zeigen, dass sich ein Lösegeld lohnen würde. In der Kolonialzeit bedeutete die Gefangennahme eines Gefangenen, dass der Preis, den seine Eroberer erwarten konnten, der Wert seines Lebens war.</German>
 		<Russian>когда-нибудь здесь появится описание</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT][NEWLINE]Defeated soldiers usually die in battle, but a few are captured to become prisoners of war. They may be ransomed or transferred in a prisoner exchange if the enemy commander is willing to make a deal.</English>
-		<German>[COLOR_HIGHLIGHT_TEXT]Kriegsgefangene[COLOR_REVERT] tbd</German>
+		<German>[COLOR_HIGHLIGHT_TEXT]Kriegsgefangene[COLOR_REVERT][NEWLINE]Besiegte Soldaten sterben in der Regel in der Schlacht, aber einige wenige werden gefangen genommen und geraten in Kriegsgefangenschaft. Sie können freigekauft oder im Rahmen eines Gefangenenaustauschs übergeben werden, wenn der feindliche Befehlshaber zu einem Deal bereit ist.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
 	</TEXT>
 	<!-- REVOLTING_PRISONER_OF_WAR -->
@@ -2480,13 +2480,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_PEDIA</Tag>
 		<English>Once captured, prisoners of war have a duty as soldiers to escape. The best opportunity is during a riot. While the guards are distracted a few prisoners try to sneak away into the forest.[NEWLINE]If the guards manage to suppress the riot without too much trouble the remaining prisoners may survive, but punishment usually follows.</English>
-		<German>tbd</German>
+		<German>Nach der Gefangennahme haben Kriegsgefangene als Soldaten die Pflicht, zu fliehen. Die beste Gelegenheit dazu bietet sich während eines Aufstandes. Während die Wachen abgelenkt sind, versuchen einige Gefangene, sich in den Wald zu schleichen.[NEWLINE]Wenn es den Wachen gelingt, den Aufstand ohne größere Schwierigkeiten niederzuschlagen, können die übrigen Gefangenen überleben, aber in der Regel folgt eine Bestrafung.</German>
 		<Russian>когда-нибудь здесь появится описание</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT][NEWLINE]If the conditions of their captivity are bad, or if they see an opportunity to escape, prisoners of war will riot. Once they get away they hide in the woods and fight with greater strength than petty criminals, but not as much power as when they were soldiers.</English>
-		<German>[COLOR_HIGHLIGHT_TEXT]Revoltierende Kriegsgefangene[COLOR_REVERT] tbd</German>
+		<German>[COLOR_HIGHLIGHT_TEXT]Revoltierende Kriegsgefangene[COLOR_REVERT][NEWLINE]Wenn die Bedingungen ihrer Gefangenschaft schlecht sind oder wenn sie eine Gelegenheit zur Flucht sehen, werden Kriegsgefangene randalieren. Sobald sie entkommen sind, verstecken sie sich in den Wäldern und kämpfen mit mehr Kraft als Kleinkriminelle, aber nicht mit so viel Kraft wie als Soldaten.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
 	</TEXT>
 	<!-- ECCENTRIC ARCHITECT -->

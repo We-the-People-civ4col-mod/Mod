@@ -144,7 +144,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HARDWOOD_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Hardwood[COLOR_REVERT] is found in broad-leaved temperate and tropical forests. Tropical hardwoods like mahogany, are valued for furniture. Teak, while not native, can be grown in the Caribbean and is important in ship-building.</English>
-		<!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Hartholz[COLOR_REVERT]tbd</German>-->
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Hartholz[COLOR_REVERT] kommt in den Laubwäldern der gemäßigten und tropischen Zonen vor. Tropische Harthölzer wie Mahagoni werden für Möbel geschätzt. Teakholz ist zwar nicht heimisch, kann aber in der Karibik angebaut werden und ist für den Schiffsbau wichtig.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CATTLE</Tag>
@@ -973,7 +973,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_OLIVES_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Olive trees[COLOR_REVERT] grow on[COLOR_REVERT] [LINK=TERRAIN_GRASS]grass[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]The olive is a small tree originating in the Mediterranean basin. Olives are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.</English>
-		<!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Olivenbäume[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>-->
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Olivenbäume[COLOR_REVERT] wachsen auf [COLOR_REVERT] [LINK=TERRAIN_GRASS]Gras[\LINK] Gelände.[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]Die Olive ist ein kleiner Baum, der aus dem Mittelmeerraum stammt. Oliven sind eine der wichtigsten Zutaten der mediterranen Küche. Der Olivenbaum hat Tausende von Sorten.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_RAPE</Tag>
@@ -989,7 +989,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_RAPE_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rapeseed[COLOR_REVERT] grows on [LINK=TERRAIN_GRASS]grass[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.</English>
-		<!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rapspflanzen[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>-->
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rapspflanzen[COLOR_REVERT] wächst auf [LINK=TERRAIN_GRASS]Gras[\LINK]-Gelände.[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]Raps mit seinen leuchtend gelben Blüten wird hauptsächlich wegen seiner ölreichen Samen angebaut, die beträchtliche Mengen an Erucasäure enthalten. Rapsschrot, das nach der Ölgewinnung übrig bleibt, ist ein proteinreiches Futtermittel.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HEMP</Tag>
@@ -1083,7 +1083,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HIGH_SEA_FISH2_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Mackerel[COLOR_REVERT] live in the deep [LINK=TERRAIN_OCEAN]ocean[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Mackerel are widely distributed in both temperate and tropical seas. Flocks of seabirds, whales, dolphins, sharks, and schools of larger fish such as tuna and marlin follow mackerel schools and attack them in sophisticated and cooperative ways. Mackerel flesh is high in omega-3 oils and is intensively harvested by humans. Salting and smoking are the principal preservation methods.</English>
-		<German>[BOLD]Strategie :[\BOLD][NEWLINE]Vorkommen von [COLOR_HIGHLIGHT_TEXT]Makrelen[COLOR_REVERT] sind gelegentlich im tiefen [LINK=TERRAIN_OCEAN]Ozean[\LINK] zu finden.[NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][NEWLINE]tbd</German>
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE]Vorkommen von [COLOR_HIGHLIGHT_TEXT]Makrelen[COLOR_REVERT] sind gelegentlich im tiefen [LINK=TERRAIN_OCEAN]Ozean[\LINK] zu finden.[NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][NEWLINE]Makrelen sind sowohl in gemäßigten als auch in tropischen Meeren weit verbreitet. Schwärme von Seevögeln, Walen, Delfinen, Haien und Schwärmen größerer Fische wie Thunfisch und Marlin folgen Makrelenschwärmen und greifen sie auf raffinierte und kooperative Weise an. Makrelenfleisch ist reich an Omega-3-Fettsäuren und wird vom Menschen intensiv geerntet. Salzen und Räuchern sind die wichtigsten Konservierungsmethoden.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HIGH_SEA_FISH3</Tag>
@@ -1099,7 +1099,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HIGH_SEA_FISH3_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Blue marlin[COLOR_REVERT] live in the deep [LINK=TERRAIN_OCEAN]ocean[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]The Atlantic blue marlin can reach 5 meters (16 feet) in length and 800 kg (1,800 lb) in weight. Marlins are among the fastest marine swimmers, reaching 110 km/h (68 mph) in short bursts. They are popular sporting fish in tropical areas. Like tuna they can be caught using hook and line - a large hook and a strong line!</English>
-		<German>[BOLD]Strategie :[\BOLD][NEWLINE]Vorkommen von [COLOR_HIGHLIGHT_TEXT]Blauer Marlin[COLOR_REVERT] sind gelegentlich im tiefen [LINK=TERRAIN_OCEAN]Ozean[\LINK] zu finden.[NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][NEWLINE]tbd</German>
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE]Vorkommen von [COLOR_HIGHLIGHT_TEXT]Blauer Marlin[COLOR_REVERT] sind gelegentlich im tiefen [LINK=TERRAIN_OCEAN]Ozean[\LINK] zu finden.[NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][NEWLINE]Der Atlantische Blaue Marlin kann bis zu 5 Meter lang und 800 kg schwer werden. Marline gehören zu den schnellsten Meeresschwimmern und erreichen in kurzen Stößen bis zu 110 km/h (68 mph). Sie sind beliebte Sportfische in tropischen Gebieten. Wie Thunfische können sie mit Haken und Leine gefangen werden - mit einem großen Haken und einer starken Leine!</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HIGH_SEA_FISH4</Tag>
@@ -1115,7 +1115,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HIGH_SEA_FISH4_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Tuna[COLOR_REVERT] live in the deep [LINK=TERRAIN_OCEAN]ocean[\LINK]. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]The Atlantic bluefin tuna is a sleek and streamlined fish, adapted for speed. It can be over 4 meters long (15 feet)and weigh almost 700 kg (1,500 lb), but the average fish is closer to 2 meters. Tuna are believed to live up to 50 years. Like marlin, tuna are mainly caught using hook and line.</English>
-		<German>[BOLD]Strategie :[\BOLD][NEWLINE]Vorkommen von [COLOR_HIGHLIGHT_TEXT]Thunfisch[COLOR_REVERT] sind gelegentlich im tiefen [LINK=TERRAIN_OCEAN]Ozean[\LINK] zu finden.[NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][NEWLINE]tbd</German>
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE]Vorkommen von [COLOR_HIGHLIGHT_TEXT]Thunfisch[COLOR_REVERT] sind gelegentlich im tiefen [LINK=TERRAIN_OCEAN]Ozean[\LINK] zu finden.[NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][NEWLINE]Der Atlantische Blauflossenthunfisch ist ein schlanker und stromlinienförmiger Fisch, der auf Geschwindigkeit ausgelegt ist. Er kann über 4 Meter lang werden und fast 700 kg wiegen, aber der durchschnittliche Fisch ist eher 2 Meter lang. Man glaubt, dass Thunfische bis zu 50 Jahre alt werden können. Wie der Marlin wird auch der Thunfisch hauptsächlich mit Haken und Leine gefangen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HORSES</Tag>
@@ -1197,7 +1197,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_BLOODWOOD_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Logwood trees[COLOR_REVERT] produce a versatile dye, used for both textiles and paper. It can also be used as a pH indicator, yellow-reddish under acidic conditions and purple when alkaline. The bark and leaves are also used in various medical applications.</English>
-		<!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Blauholzbäume[COLOR_REVERT]tbd</German>-->
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Blauholzbäume[COLOR_REVERT] produzieren einen vielseitigen Farbstoff, der sowohl für Textilien als auch für Papier verwendet wird. Er kann auch als pH-Indikator verwendet werden, der unter sauren Bedingungen gelb-rot und unter alkalischen Bedingungen violett ist. Die Rinde und die Blätter werden auch für verschiedene medizinische Zwecke verwendet.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_IRON</Tag>
@@ -1530,7 +1530,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_MAPLE_TREES_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE]Maple syrup comes from [COLOR_HIGHLIGHT_TEXT]maple trees[COLOR_REVERT] which grow in north temperate regions. In spring when sap starts to flow in the maple forests, tappers hammer spouts through the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. It can also be poured on snow to make maple sugar.</English>
-		<!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Ahornbäume[COLOR_REVERT]tbd</German>-->
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE]Ahornsirup wird von [COLOR_HIGHLIGHT_TEXT]Ahornbäumen[COLOR_REVERT] gewonnen, die in nördlichen gemäßigten Regionen wachsen. Im Frühjahr, wenn der Saft in den Ahornwäldern zu fließen beginnt, schlagen die Pflücker mit dem Hammer Tüllen durch die Rinde und sammeln eine dünne Flüssigkeit, die dann über einem langsamen Feuer zu einem reichen, dicken Sirup destilliert wird. Er kann auch auf Schnee gegossen werden, um Ahornzucker herzustellen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KAUTSCHUK</Tag>
@@ -1546,7 +1546,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_KAUTSCHUK_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rubber trees[COLOR_REVERT] grow in [LINK=FEATURE_JUNGLE]jungle[\LINK] terrain. Rubber has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.</English>
-		<!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Kautschukbäume[COLOR_REVERT]tbd</German>-->
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Kautschukbäume[COLOR_REVERT] wachsen im [LINK=FEATURE_JUNGLE]Dschungel[\LINK] Gelände. Kautschuk hat ein großes Dehnungsverhältnis, eine hohe Elastizität und ist außerdem wasserfest. Er wird zu den Elastomeren gezählt.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SALT</Tag>
@@ -1805,7 +1805,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CLAY_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Clay[COLOR_REVERT] develops plasticity when wet, due to a molecular film of water surrounding the clay particles, but becomes hard, brittle and non-plastic upon drying or firing. Clay can be used as a building material, providing smooth interior walls for the town hall and its upgrades.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Clay is the oldest known ceramic material. Prehistoric humans used it for making pottery. Early pottery shards have been dated to 14,000 BC, and clay tablets are the first known writing medium.</English>
-		<!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Lehm[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>-->
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Lehm[COLOR_REVERT] entwickelt im feuchten Zustand aufgrund eines molekularen Wasserfilms, der die Tonpartikel umgibt, Plastizität, wird aber beim Trocknen oder Brennen hart, spröde und nicht plastisch. Lehm kann als Baumaterial verwendet werden, um glatte Innenwände für das Rathaus und seine Erweiterungen zu erhalten.[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]Lehm ist das älteste bekannte keramische Material. Prähistorische Menschen nutzten ihn zur Herstellung von Töpferwaren. Frühe Tonscherben wurden auf 14.000 v. Chr. datiert, und Tontafeln sind das erste bekannte Schreibmedium.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_COAL</Tag>
@@ -1821,7 +1821,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_COAL_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Coal[COLOR_REVERT] is formed when dead plant matter decays into peat and is converted by the heat and pressure of deep burial over millions of years. For most of colonial times coal is used for heating, not for industry.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]In 1709 in Coalbrookdale, England, Adam Darby begins using coal instead of charcoal as a way to smelt pig iron cheaply because of coal's much greater energy intensity. It's the start of the Industrial Revolution.</English>
-		<!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Kohle[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>-->
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Kohle[COLOR_REVERT] entsteht, wenn abgestorbenes Pflanzenmaterial zu Torf zerfällt und durch die Hitze und den Druck der tiefen Vergrabung über Millionen von Jahren umgewandelt wird. Die meiste Zeit der Kolonialzeit wurde Kohle zum Heizen und nicht für die Industrie verwendet.[NEWLINE][NEWLINE][BOLD]Hintergrund:[\BOLD][NEWLINE]Im Jahr 1709 beginnt Adam Darby in Coalbrookdale, England, damit, Kohle anstelle von Holzkohle zu verwenden, um Roheisen wegen der viel höheren Energieintensität von Kohle billiger zu schmelzen. Das ist der Beginn der industriellen Revolution.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PEAT</Tag>
@@ -1837,7 +1837,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_PEAT_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE]A swamp dries and over centuries turns into a [COLOR_HIGHLIGHT_TEXT]peat[COLOR_REVERT] bog, which offers cheap fuel where wood and coal aren't available. Peat cutters don't need much equipment to do their work, just a cutter and a hod to carry chunks of peat on their back.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Peat is a peasant fuel, warming the poor and slaves at low or no cost. Peat is the world's most efficient carbon sink, storing 42% of all soil carbon, more than all other vegetation types, including the world's forests. It's not renewable.</English>
-		<!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Torf[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>-->
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Torf[COLOR_REVERT]Ein Sumpf trocknet aus und verwandelt sich im Laufe der Jahrhunderte in ein [COLOR_HIGHLIGHT_TEXT]Torfmoor[COLOR_REVERT], das billigen Brennstoff liefert, wenn Holz und Kohle nicht verfügbar sind. Torfstecher brauchen für ihre Arbeit nicht viel Ausrüstung, nur einen Stecher und eine Hacke, mit der sie die Torfstücke auf dem Rücken tragen können.[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]Torf ist ein bäuerlicher Brennstoff, der die Armen und Sklaven zu geringen oder gar keinen Kosten wärmt. Torf ist die effizienteste Kohlenstoffsenke der Welt und speichert 42 % des gesamten Bodenkohlenstoffs, mehr als alle anderen Vegetationsarten, einschließlich der Wälder der Welt. Er ist nicht erneuerbar.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_VANILLA</Tag>
@@ -1853,7 +1853,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_VANILLA_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Vanilla[COLOR_REVERT] is a spice derived from orchids. There are three major species, all derived from the original Mexican plant. It can be pollinated by hand to produce the vanilla bean.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Vanilla is one of the two most popular flavours for sweet treats, the other being chocolate. It's used in candy, baking and liqueurs, all of which would be familiar to monks in colonial missions.</English>
-		<!--<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Vanille[COLOR_REVERT]tbd[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]xxx</German>-->
+		<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Vanille[COLOR_REVERT] ist ein aus Orchideen gewonnenes Gewürz. Es gibt drei Hauptarten, die alle von der ursprünglichen mexikanischen Pflanze abstammen. Sie kann von Hand bestäubt werden, um die Vanilleschote zu erzeugen.[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]Vanille ist neben Schokolade eine der beiden beliebtesten Geschmacksrichtungen für Süßigkeiten. Sie wird in Süßigkeiten, zum Backen und für Liköre verwendet - alles Dinge, die den Mönchen in den kolonialen Missionen vertraut waren.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_SUGAR</Tag>
