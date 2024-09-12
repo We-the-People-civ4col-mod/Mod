@@ -16451,9 +16451,9 @@ bool CvPlayerAI::AI_shouldHurryUnit() const
 	int iEuropeMinHurryCost = INT_MAX;
 
 	// Find the cost of hurrying the cheapest unit suitable for any profession that cannot escape
-	for (int iIndex = 0; iIndex < GC.getDefineINT("DOCKS_NEXT_UNITS"); ++iIndex)
+	for (unsigned int iIndex = 0; iIndex < CivEffect().getNumUnitsOnDock(); ++iIndex)
 	{
-		const int iHurryCost = getHurryGold((HurryTypes)1, iIndex);
+		const int iHurryCost = getHurryGold(HURRY_IMMIGRANT, iIndex);
 		if (iHurryCost < iEuropeMinHurryCost)
 		{
 			iEuropeMinHurryCost = iHurryCost;
@@ -16469,17 +16469,17 @@ int CvPlayerAI::AI_getBestDockUnit() const
 {
 	int iBestIndex = 0;
 	int iBestAdvantage = 0;
-	const int iDockCount = GC.getDefineINT("DOCKS_NEXT_UNITS");
+	const int iDockCount = CivEffect().getNumUnitsOnDock();
 
 	// TODO: This needs to be a while loop since the indices are not stable
 	for (int iIndex = 0; iIndex < iDockCount; ++iIndex)
 	{
-		const UnitTypes eLoopUnit = (UnitTypes)getDocksNextUnit(iIndex);
+		const UnitTypes eLoopUnit = getDocksNextUnit(iIndex);
 
 		// At this point there should always be a unit available
 		FAssert(eLoopUnit != NO_UNIT);
 
-		const int iHurryCost = getHurryGold((HurryTypes)1, iIndex);
+		const int iHurryCost = getHurryGold(HURRY_IMMIGRANT, iIndex);
 
 		const int iUnitCost = getEuropeUnitBuyPrice(eLoopUnit);
 
@@ -16508,11 +16508,11 @@ void CvPlayerAI::AI_hurryBestDockUnits(int iHurryCount)
 			const int index = AI_getBestDockUnit();
 
 			// Note: Will be false if we can't afford it
-			const bool bCanHurry = canHurry((HurryTypes)1, iIndex);
+			const bool bCanHurry = canHurry(HURRY_IMMIGRANT, iIndex);
 
 			if (bCanHurry)
 			{
-				hurry((HurryTypes)1, iIndex);
+				hurry(HURRY_IMMIGRANT, iIndex);
 			}
 			else
 			{

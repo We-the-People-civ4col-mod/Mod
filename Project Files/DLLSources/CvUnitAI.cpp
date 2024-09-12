@@ -6653,7 +6653,7 @@ bool CvUnitAI::AI_europe()
 
 		if (iPotentialColonistsToHurry > 0)
 		{
-			kOwner.AI_hurryBestDockUnits(std::min(GLOBAL_DEFINE_DOCKS_NEXT_UNITS, iPotentialColonistsToHurry));
+			kOwner.AI_hurryBestDockUnits(std::min(kOwner.CivEffect().getNumUnitsOnDock(), (unsigned int)iPotentialColonistsToHurry));
 		}
 	}
 	// Erik: Pick up the most valuable units first (e.g. statesmen)

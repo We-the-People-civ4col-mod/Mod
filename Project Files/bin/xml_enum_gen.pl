@@ -637,7 +637,6 @@ sub addVanillaValues
 	addVanillaSingleValue(\%valueContainer, "KING_BUY_UNIT_PRICE_MODIFIER", 50);
 	addVanillaSingleValue(\%valueContainer, "KING_TRANSPORT_TREASURE_COMISSION", 50);
 	addVanillaSingleValue(\%valueContainer, "EDUCATION_BASE_TUITION", 1000);
-	addVanillaSingleValue(\%valueContainer, "DOCKS_NEXT_UNITS", 3);
 	addVanillaSingleValue(\%valueContainer, "CONSUME_EQUIPMENT_ON_FOUND", 0);
 	addVanillaSingleValue(\%valueContainer, "FEATURE_PRODUCTION_YIELD_MAX_DISTANCE", 6);
 	addVanillaSingleValue(\%valueContainer, "NATIVE_GOODS_RAID_PERCENT", 50);
