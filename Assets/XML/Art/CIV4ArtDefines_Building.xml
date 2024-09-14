@@ -2305,7 +2305,7 @@
 			<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,8,5</CityTexture>
 			<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
 			<fScale>1.6</fScale>
-			<fInterfaceScale>0.55</fInterfaceScale>
+			<fInterfaceScale>0.25</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/tavern/tavern.nif</NIF>
 			<KFM/>
 			<Button>,Art/colonization_atlas_buildings.dds,2,5</Button>
