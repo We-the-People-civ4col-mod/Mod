@@ -968,11 +968,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TOWN_MARKET</Type>
-			<LSystem>LSYSTEM_2x1</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,3,6</CityTexture>
 			<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-			<fScale>0.55</fScale>
+			<fScale>0.65</fScale>
 			<fInterfaceScale>0.45</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/market/town_market.nif</NIF>
 			<KFM/>
@@ -980,11 +980,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_CENTRAL_CITY_MARKET</Type>
-			<LSystem>LSYSTEM_2x1</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,2,6</CityTexture>
 			<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-			<fScale>0.55</fScale>
+			<fScale>0.65</fScale>
 			<fInterfaceScale>0.45</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/market/central_city_market.nif</NIF>
 			<KFM/>
@@ -2300,11 +2300,11 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_TAVERN</Type>
-			<LSystem>LSYSTEM_1x1</LSystem>
+			<LSystem>LSYSTEM_1x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR1.dds,8,5</CityTexture>
 			<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
-			<fScale>1.5</fScale>
+			<fScale>1.6</fScale>
 			<fInterfaceScale>0.55</fInterfaceScale>
 			<NIF>Art/Structures/Buildings/tavern/tavern.nif</NIF>
 			<KFM/>
@@ -2312,7 +2312,7 @@
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_SALOON</Type>
-			<LSystem>LSYSTEM_2x1</LSystem>
+			<LSystem>LSYSTEM_2x2</LSystem>
 			<bAnimated>0</bAnimated>
 			<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR2.dds,4,6</CityTexture>
 			<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
