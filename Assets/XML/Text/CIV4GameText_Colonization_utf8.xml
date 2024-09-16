@@ -440,11 +440,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EUROPE_UNIT_BUY_PRICE</Tag>
-		<English>	   %d2[ICON_GOLD][TAB]  %s1_unit</English>
-		<French>	   %d2[ICON_GOLD][TAB]  %s1_unit</French>
-		<German>	   %d2[ICON_GOLD][TAB]  %s1_unit</German>
-		<Italian>	   %d2[ICON_GOLD][TAB]  %s1_unit</Italian>
-		<Spanish>	   %d2[ICON_GOLD][TAB]  %s1_unit</Spanish>
+		<English>%d2[ICON_GOLD][TAB] %s1_unit</English>
+		<French>%d2[ICON_GOLD][TAB] %s1_unit</French>
+		<German>%d2[ICON_GOLD][TAB] %s1_unit</German>
+		<Italian>%d2[ICON_GOLD][TAB] %s1_unit</Italian>
+		<Spanish>%d2[ICON_GOLD][TAB] %s1_unit</Spanish>
+		<Russian>%d2[ICON_GOLD][TAB] %s1_unit</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_LEARN_HELP_1</Tag>
