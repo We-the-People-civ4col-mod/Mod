@@ -81,7 +81,7 @@
 		<German>%s1 hat das Spiel unterbrochen</German>
 		<Italian>%s1 ha messo in pausa la partita.</Italian>
 		<Spanish>%s1 ha detenido la partida.</Spanish>
-		<Russian>Игра приостановлена игроком %s1</Russian>
+		<Russian>[COLOR_SELECTED_TEXT]Игра приостановлена игроком[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>SYSTEM_WAITING_FOR_PLAYER</Tag>
@@ -4451,6 +4451,7 @@
 		<German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] hat das Spiel fortgesetzt</German>
 		<Italian>Partita ripresa da [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT]</Italian>
 		<Spanish>Partida reanudada por [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT]</Spanish>
+		<Russian>Игра возобновлена игроком [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_CHAT_STRING</Tag>
