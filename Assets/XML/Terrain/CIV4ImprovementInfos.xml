@@ -6785,7 +6785,7 @@
 			<bGoodyForSpawningHostileNatives>0</bGoodyForSpawningHostileNatives>
 			<bGoodyForSpawningHostileCriminals>0</bGoodyForSpawningHostileCriminals>
 			<bPermanent>0</bPermanent>
-			<bUseLSystem>1</bUseLSystem>
+			<bUseLSystem>0</bUseLSystem>
 			<iAdvancedStartCost>30</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iTilesPerGoody>0</iTilesPerGoody>

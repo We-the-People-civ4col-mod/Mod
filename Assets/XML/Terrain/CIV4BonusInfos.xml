@@ -5655,7 +5655,6 @@
 					<bFeatureTerrain>1</bFeatureTerrain>
 				</FeatureTerrainBoolean>
 			</FeatureTerrainBooleans>
-			<bUseLSystem>1</bUseLSystem>
 			<bFishingboatWorkable>1</bFishingboatWorkable>
 		</BonusInfo>
 		<BonusInfo>
