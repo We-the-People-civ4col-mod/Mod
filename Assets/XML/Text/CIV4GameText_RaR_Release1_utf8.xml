@@ -57,7 +57,7 @@
 		<German>Das Volk der [COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] möchte zur Zeit nicht mit euch handeln.</German>
 		<Italian>Questa città attualmente non vuole commerciare con voi.</Italian>
 		<Spanish>Esta ciudad actualmente no quiere negociar con usted.</Spanish>
-		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] в настоящее время отказываются торговать с вами.</Russian>
+		<Russian>В данный момент [COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] отказываются торговать с вами. Возвращайтесь, когда их обида пройдёт.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>Debug</Tag>

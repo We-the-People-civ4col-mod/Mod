@@ -3642,7 +3642,7 @@
 		<English>A Native slave has saved the life of one of our colonists who fell beneath the hooves of wild horses. The colonist now asks that this slave be set free for his bravery.</English>
 		<French>Un esclave indigène a sauvé la vie de l'un de nos colons lorsque des chevaux sont devenus fous et allaient le piétiner. Le colon demande que l'esclave recouvre sa liberté pour le remercier de son courage.</French>
 		<German>Ein Ureinwohnersklave hat das Leben eines unserer Siedler gerettet, als einige Pferde durchgingen und den Siedler beinahe überrannten. Der Siedler bittet nun, dass der Ureinwohnersklave aufgrund seines Mutes die Freiheit bekommt.</German>
-		<Russian>Раб-абориген спас жизнь одному из наших колонистов, который попал под копыта диких лошадей. Теперь спасённый колонист просит, чтобы этого раба освободили за его храбрость.</Russian>
+		<Russian>Туземный раб спас жизнь одному из наших колонистов, который попал под копыта диких лошадей. Теперь спасённый колонист просит, чтобы этого раба освободили за его храбрость.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DIPLOMATIC_CONNECTIONS</Tag>
@@ -5351,7 +5351,7 @@
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_ATTACKED</Tag>
 		<English>There's a rumour that a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] expedition has been attacked and murdered by hostile Natives.</English>
 		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Expedition wurde von Ureinwohnern angegriffen und abgeschlachtet.</German>
-		<Russian>Ходят слухи, что экспедиция [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] подверглась нападению враждебно настроенными туземцами.</Russian>
+		<Russian>Ходят слухи, что экспедиция [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] подверглась нападению враждебно настроенных туземцев.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_ATTACKED_1</Tag>
