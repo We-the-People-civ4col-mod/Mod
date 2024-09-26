@@ -10005,7 +10005,7 @@
 		<German>[ICON_BULLET]Die Einheit [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] ist %d1 [NUM1:Runde:Runden] lang beschäftigt und für keine andere Aufgabe außer Selbstverteidigung verfügbar</German>
 		<Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] sarà occupata per %d1 [NUM1:turno:turni], e non farà altro eccetto difendersi.</Italian>
 		<Spanish>[ICON_BULLET][NUM2:El:La:Los:Las] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] [NUM2:no estará disponible:no estará disponible:no estarán disponibles:no estarán disponibles] durante %d1 [NUM1:turno:turnos], para ningún cometido que no sea su propia defensa</Spanish>
-		<Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] будет занят %d1 [NUM1:ход:ходов] и не сможет выполнять никаких распоряжений, кроме самообороны.</Russian>
+		<Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] будет занят %d1 [NUM1:ход:хода] и не сможет выполнять никаких распоряжений, кроме самообороны.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_RIVER_PLOTS</Tag>
@@ -10636,7 +10636,7 @@
 		<English>In the recent battle a young soldier fell upon his enemies like a wolf among the lambs. He is now known everywhere as a truly brave lieutenant.</English>
 		<French>Lors des derniers combats un jeune soldat s'est distingué par sa bravoure face à l'ennemi. Il est maintenant reconnu comme un lieutenant courageux. </French>
 		<German>In der jüngsten Schlacht fiel ein junger Soldat über seine Feinde her wie der Wolf über die Lämmer. Er gilt nun allerorten als mutiger Leutnant.</German>
-		<Russian>В недавнем сражении молодой воин, бросался на своих врагов, как волк на ягнят. Теперь повсюду он известен как поистине храбрый лейтенант.</Russian>
+		<Russian>В недавнем сражении молодой воин бросался на своих врагов, как волк на ягнят. Теперь повсюду он известен как поистине храбрый лейтенант.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CC_BORN</Tag>

@@ -57,7 +57,7 @@
 		<German>Das Volk der [COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] möchte zur Zeit nicht mit euch handeln.</German>
 		<Italian>Questa città attualmente non vuole commerciare con voi.</Italian>
 		<Spanish>Esta ciudad actualmente no quiere negociar con usted.</Spanish>
-		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] в настоящее время отказываются торговать с вами.</Russian>
+		<Russian>В данный момент [COLOR_HIGHLIGHT_TEXT]%s1_Civ[COLOR_REVERT] отказываются торговать с вами. Возвращайтесь, когда их обида пройдёт.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>Debug</Tag>
@@ -1374,14 +1374,14 @@
 		<English>[NEWLINE]A missionary hearing those words has spontaneously decided to join your cause.</English>
 		<French>[NEWLINE]Un missionnaire ayant eu échos de la nouvelle a décidé de se joindre à votre cause.</French>
 		<German>[NEWLINE]Ein Missionar, der diese Worte hörte, hat spontan entschieden, sich Eurer Sache anzuschliessen.</German>
-		<Russian>[NEWLINE]Услышав эти слова, миссионер решил присоединиться к нашему делу.</Russian>
+		<Russian>[NEWLINE]Услышав об этом, миссионер решил присоединиться к нашему делу.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PAYED_CHURCH_REWARD_PREACHER</Tag>
 		<English>[NEWLINE]A preacher hearing those words has spontaneously decided to join your cause.</English>
 		<French>[NEWLINE]Un prêtre ayant eu échos de la nouvelle a décidé de se joindre à votre cause.</French>
 		<German>[NEWLINE]Ein Prediger, der diese Worte hörte, hat spontan entschieden, sich Eurer Sache anzuschliessen.</German>
-		<Russian>[NEWLINE]Услышав эти слова, проповедник решил присоединиться к нашему делу.</Russian>
+		<Russian>[NEWLINE]Услышав об этом, проповедник решил присоединиться к нашему делу.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REFUSED_CHURCH_DEMAND</Tag>

@@ -351,7 +351,7 @@
 			<Type>ART_DEF_BONUS_BOOBY</Type>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art\terrain\resources\booby\Booby_FX.nif</NIF>
+			<NIF>Art/terrain/resources/booby/Booby_FX.nif</NIF>
 			<KFM>Art/Terrain/Resources/Sheep_NO_SOUND/Sheep_NO_SOUND.kfm</KFM>
 			<Button>Art/Interface/Buttons/booby.dds</Button>
 			<FontButtonIndex>81</FontButtonIndex>
@@ -561,7 +561,7 @@
 			<fScale>1.0</fScale>
 			<fInterfaceScale>1.1</fInterfaceScale>
 			<NIF>Art/Terrain/Resources/HighSeaFish/Fish.nif</NIF>
-			<KFM>Art/Terrain/Resources/HighSeaFish/Fish.kfm</KFM>
+			<KFM>Art/Terrain/Resources/Fish/Fish.kfm</KFM>
 			<Button>Art\interface\buttons\cod.dds</Button>
 			<FontButtonIndex>15</FontButtonIndex>
 			<bShadowCastor>1</bShadowCastor>
