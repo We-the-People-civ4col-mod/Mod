@@ -4,7 +4,7 @@
 		<Tag>TXT_KEY_CIVICOPTION_ELECTION</Tag>
 		<English>Stance on Elections</English>
 		<French>
-			<Text>Position sur les élections</Text>
+			<Text>Position au sujet des élections</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -25,7 +25,7 @@
 		<Tag>TXT_KEY_CIVICOPTION_NATIVES</Tag>
 		<English>Stance on Natives</English>
 		<French>
-			<Text>Position sur les indigènes</Text>
+			<Text>Position au sujet des indigènes</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -46,7 +46,7 @@
 		<Tag>TXT_KEY_CIVICOPTION_RELIGION</Tag>
 		<English>Stance on Religion</English>
 		<French>
-			<Text>Position sur la religion</Text>
+			<Text>Position au sujet de la religion</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -67,7 +67,7 @@
 		<Tag>TXT_KEY_CIVICOPTION_SECURITY</Tag>
 		<English>Stance on Land Security</English>
 		<French>
-			<Text>Position sur la sécurité du territoire</Text>
+			<Text>Position au sujet de la sécurité du territoire</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -88,7 +88,7 @@
 		<Tag>TXT_KEY_CIVICOPTION_SLAVERY</Tag>
 		<English>Stance on Slavery</English>
 		<French>
-			<Text>Position sur l'esclavage</Text>
+			<Text>Position au sujet de l'esclavage</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>

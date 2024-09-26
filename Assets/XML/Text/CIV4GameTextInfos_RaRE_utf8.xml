@@ -8,7 +8,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DLL_FLAG_ERROR</Tag>
 		<English>DLL incompatible with the savegame. The DLL needs to be recompiled with the same flags as was used when the game was saved.[NEWLINE]Required Flags:</English>
-		<French>DLL incompatible avec cette sauvegarde. La DLL nécessite d'être recompilée avec les mêmes flags utilisés quand cette partie a été sauvée.[NEWLINE]Flags requis :</French>
+		<French>DLL incompatible avec cette sauvegarde. La DLL nécessite d'être recompilée avec les mêmes flags que lors de la sauvegarde de cette partie.[NEWLINE]Flags requis :</French>
 		<Russian>DLL несовместима с сохраненной игрой. DLL необходимо перекомпилировать с теми же флагами, которые использовались при сохранении игры.[NEWLINE]Обязательные флаги:</Russian>
 	</TEXT>
 	<TEXT>
@@ -19,7 +19,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAN_MOVE_PEAK</Tag>
 		<English>[ICON_BULLET]Can move on mountain peaks</English>
-		<French>[ICON_BULLET]Peut se déplacer au sommet des montagnes</French>
+		<French>[ICON_BULLET]Peut traverser les montagnes.</French>
 		<German>[ICON_BULLET]Kann Berge überqueren</German>
 		<Russian>[ICON_BULLET]Может передвигаться по клеткам гор</Russian>
 	</TEXT>

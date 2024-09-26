@@ -30,7 +30,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_FULLSCREEN_HELP</Tag>
 		<English>The game will run in a window when not set.</English>
-		<French>Désactivez cette option pour que le jeu s'affiche dans une fenêtre.</French>
+		<French>À désactiver pour que le jeu s'affiche dans une fenêtre.</French>
 		<German>Wenn dieser nicht eingestellt ist, läuft das Spiel in einem Fenster.</German>
 		<Italian>Se non selezionata, il gioco verrà avviato in una finestra.</Italian>
 		<Spanish>El juego se ejecutará en una ventana cuando no se indique lo contrario.</Spanish>
@@ -39,7 +39,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_GLOBE_VIEW_BUILDINGS_DISABLED</Tag>
 		<English>Globe View Buildings Disabled</English>
-		<French>Bâtiments de la vue du globe désactivés</French>
+		<French>Bâtiments de la Vue du globe désactivés</French>
 		<German>Globusansicht Gebäude deaktiviert</German>
 		<Italian>Edifici disattivati nella visuale globale</Italian>
 		<Spanish>Edificios desactivados en vista global</Spanish>
@@ -48,7 +48,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_GLOBE_VIEW_BUILDINGS_DISABLED_HELP</Tag>
 		<English>Building models won't be displayed in Globe View</English>
-		<French>Les modèles des bâtiments ne s'affichent pas en vue du globe.</French>
+		<French>Les modèles des bâtiments ne s'affichent pas en Vue du globe.</French>
 		<German>Gebäudemodelle erscheinen nicht in Globusansicht</German>
 		<Italian>I modelli degli edifici non verranno mostrati nella visuale globale</Italian>
 		<Spanish>Los modelos de los edificios no se mostrarán en la vista global.</Spanish>
@@ -57,7 +57,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_HIRES_TERRAIN</Tag>
 		<English>High Detail Terrain</English>
-		<French>Détail terrains haut</French>
+		<French>Détails de terrain élevés</French>
 		<German>Hohe Geländedetails</German>
 		<Italian>Dettaglio alto del terreno</Italian>
 		<Spanish>Detalle del terreno alto</Spanish>
@@ -66,7 +66,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_HIRES_TERRAIN_HELP</Tag>
 		<English>A high detail terrain will be used</English>
-		<French>Le niveau de détail utilisé pour les terrains sera plus haut.</French>
+		<French>Le niveau de détail utilisé pour les terrains sera plus élevé.</French>
 		<German>Es werden hohe Geländedetails verwendet</German>
 		<Italian>Verrà utilizzato un dettaglio alto del terreno</Italian>
 		<Spanish>Se usará un nivel de detalle del terreno más alto</Spanish>
@@ -102,7 +102,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_NO_MOVIES_HELP</Tag>
 		<English>Skips Introduction, Revolution, and Victory Movies</English>
-		<French>Pour passer les cinématiques d'introduction, de révolution et de victoire.</French>
+		<French>Pour éviter les cinématiques d'introduction, de révolution et de victoire.</French>
 		<German>Einleitung, Revolution und Siegesszenen überspringen</German>
 		<Italian>Salta i filmati di introduzione, rivoluzione e vittoria</Italian>
 		<Spanish>Se salta las películas de introducción, revolución y victoria</Spanish>
@@ -156,7 +156,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYER_OPTION_NO_ENEMY_GLOW_HELP</Tag>
 		<English>Enemy units in your territory are not highlighted on the map</English>
-		<French>Les unités ennemies sur votre territoire n'apparaissent pas sur la carte.</French>
+		<French>Les unités ennemies sur votre territoire ne seront pas surlignées sur la carte.</French>
 		<German>Feindliche Einheiten auf Ihrem Territorium werden nicht auf der Karte gekennzeichnet</German>
 		<Italian>Le unità nemiche nel tuo territorio non vengono segnalate sulla mappa.</Italian>
 		<Spanish>Las unidades enemigas en vuestro territorio no aparecen resaltadas en el mapa</Spanish>
@@ -165,7 +165,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYER_OPTION_SHOW_HEALTH_BARS</Tag>
 		<English>Show Health Bars</English>
-		<French>Afficher barres de santé</French>
+		<French>Afficher les barres de santé</French>
 		<German>Lebensbalken einblenden</German>
 		<Italian>Mostra le barre della salute</Italian>
 		<Spanish>Mostrar barras de salud</Spanish>
@@ -174,7 +174,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYER_OPTION_SHOW_HEALTH_BARS_HELP</Tag>
 		<English>Show unit health bars</English>
-		<French>Voir les barres de santé des unités.</French>
+		<French>Montrer les barres de santé des unités.</French>
 		<German>Lebensbalken der Einheiten einblenden</German>
 		<Italian>Mostra la barra dell'energia delle unità</Italian>
 		<Spanish>Mostrar barras de Salud de las unidades.</Spanish>

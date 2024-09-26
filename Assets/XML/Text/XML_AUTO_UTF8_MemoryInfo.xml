@@ -21,7 +21,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MEMORY_ACCEPT_DEMAND</Tag>
 		<English>"You gave us tribute."</English>
-		<French>"Vous nous avez versé un tribut !"</French>
+		<French>"Vous nous avez versé un tribut."</French>
 		<German>"Ihr habt uns Tribut gezollt."</German>
 		<Italian>"Ci hai donato dei tributi."</Italian>
 		<Spanish>"Nos disteis un tributo."</Spanish>
@@ -75,7 +75,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MEMORY_EVENT_BAD_TO_US</Tag>
 		<English>"Past events have proven your bad nature to us."</English>
-		<French>"Les événements passés prouvent votre méchanceté."</French>
+		<French>"Les événements passés prouvent votre méchanceté à notre endroit."</French>
 		<German>"Frühere Geschehnisse haben gezeigt, dass Ihr uns nicht wohl gesonnen seid."</German>
 		<Italian>"Gli eventi passati ci hanno dimostrato la tua buona natura."</Italian>
 		<Spanish>"Los acontecimientos pasados nos han demostrado vuestra maldad."</Spanish>
@@ -84,7 +84,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MEMORY_EVENT_GOOD_TO_US</Tag>
 		<English>"Past events have proven your good nature to us."</English>
-		<French>"Les événements passés prouvent votre bonté."</French>
+		<French>"Les événements passés prouvent votre bonté envers nous."</French>
 		<German>"Frühere Geschehnisse haben gezeigt, dass Ihr uns wohl gesonnen seid."</German>
 		<Italian>"Gli eventi passati ci hanno dimostrato la tua buona natura."</Italian>
 		<Spanish>"Los acontecimientos pasados nos han demostrado vuestra bondad."</Spanish>
@@ -111,7 +111,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MEMORY_HIRED_WAR_ALLY</Tag>
 		<English>"You brought in a war ally against us!"</English>
-		<French>"Vous avez soulevé un de nos alliés militaires contre nous !"</French>
+		<French>"Vous avez soulevé un allié militaire contre nous !"</French>
 		<German>"Ihr habt einen Kriegsverbündeten gegen uns aufgebracht!"</German>
 		<Italian>"Hai portato in guerra un alleato contro di noi!"</Italian>
 		<Spanish>"¡Habéis traído a un aliado de guerra contra nosotros!"</Spanish>

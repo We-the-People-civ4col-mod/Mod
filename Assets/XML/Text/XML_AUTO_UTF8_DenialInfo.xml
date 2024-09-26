@@ -12,7 +12,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_ATTITUDE_THEM</Tag>
 		<English>"We couldn't betray our close friends!"</English>
-		<French>"Nous ne trahirons pas nos plus fidèles amis !"</French>
+		<French>"Nous ne trahirons pas d'aussi proches amis !"</French>
 		<German>"Es würde uns nie in den Sinn kommen, enge Freunde zu hintergehen!"</German>
 		<Italian>"Non potremmo mai tradire i nostri più cari amici!"</Italian>
 		<Spanish>"¡No podríamos traicionar a nuestros amigos del alma!"</Spanish>
@@ -21,7 +21,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_CONTACT_THEM</Tag>
 		<English>"We'd love to, but you'll have to contact them."</English>
-		<French>"Ce serait avec plaisir, mais vous devez les contacter..."</French>
+		<French>"Ce serait avec plaisir, mais ce sera à vous de les contacter."</French>
 		<German>"Das würden wir gern tun, aber Ihr müsst Kontakt zu ihnen aufnehmen ..."</German>
 		<Italian>"Ci piacerebbe, ma non li abbiamo mai incontrati..."</Italian>
 		<Spanish>"Nos encantaría, pero tendréis que contactar con ellos..."</Spanish>
@@ -74,7 +74,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_NO_GAIN</Tag>
 		<English>"We would have nothing to gain."</English>
-		<French>"Nous n'avons rien à y gagner."</French>
+		<French>"Nous n'aurions rien à y gagner."</French>
 		<German>"Davon hätten wir nichts."</German>
 		<Italian>"Non avremmo niente da guadagnarci."</Italian>
 		<Spanish>"No tenemos nada que ganar."</Spanish>
@@ -83,7 +83,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_PEACE_NOT_POSSIBLE_US</Tag>
 		<English>Making peace with our enemies is out of the question</English>
-		<French>Il est hors de question de faire la paix avec nos ennemis</French>
+		<French>"Il est hors de question de faire la paix avec nos ennemis."</French>
 		<German>Eine Versöhnung mit unseren Feinden ist völlig ausgeschlossen</German>
 		<Italian>Fare pace coi nostri nemici è fuori questione</Italian>
 		<Spanish>Firmar la paz con nuestros enemigos es inconcebible</Spanish>
@@ -92,7 +92,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_PEACE_NOT_POSSIBLE_YOU</Tag>
 		<English>Making peace with your enemies is not possible for you</English>
-		<French>Il vous est impossible de faire la paix avec vos ennemis</French>
+		<French>"Il vous est impossible de faire la paix avec vos ennemis."</French>
 		<German>Ihr könnt mit Euren Feinden nicht Frieden schließen</German>
 		<Italian>Non ti è possibile fare pace coi tuoi nemici</Italian>
 		<Spanish>Firmar la paz con vuestros enemigos no es posible para vos</Spanish>
@@ -128,7 +128,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_POWER_YOUR_ENEMIES</Tag>
 		<English>We are afraid of your enemies!</English>
-		<French>Nous avons peur de vos ennemis !</French>
+		<French>"Nous craignons vos ennemis !"</French>
 		<German>Wir fürchten Eure Feinde!</German>
 		<Italian>I tuoi nemici ci fanno paura!</Italian>
 		<Spanish>Tememos a vuestros enemigos.</Spanish>
@@ -137,7 +137,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_RECENT_CANCEL</Tag>
 		<English>"Not right now. Maybe we'll change our mind in a few years."</English>
-		<French>"Pas pour l'instant... mais nous pourrions changer d'avis dans quelques années...'"</French>
+		<French>"Pas pour l'instant... mais nous pourrions changer d'avis dans quelques années.'"</French>
 		<German>"Das ist ein schlechter Zeitpunkt ... Vielleicht ändern wir unsere Meinung ja in ein paar Jahren."</German>
 		<Italian>"Non ora... Forse cambieremo idea tra qualche anno."</Italian>
 		<Spanish>"Ahora no... Quizá cambiemos de idea en unos años."</Spanish>
@@ -146,7 +146,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_TOO_FAR</Tag>
 		<English>Your land is too far away</English>
-		<French>Votre territoire est trop éloigné</French>
+		<French>"Votre territoire est trop éloigné."</French>
 		<German>Euer Reich ist zu weit entfernt.</German>
 		<Italian>Il tuo territorio è troppo lontano</Italian>
 		<Spanish>Vuestra tierra está demasiado lejos.</Spanish>
@@ -155,7 +155,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_TOO_MANY_WARS</Tag>
 		<English>"We have enough on our hands right now."</English>
-		<French>"Nous avons déjà suffisamment à faire."</French>
+		<French>"Nous avons déjà suffisamment à faire actuellement."</French>
 		<German>"Zurzeit haben wir genug andere Sorgen."</German>
 		<Italian>"Stiamo già affrontando troppi conflitti."</Italian>
 		<Spanish>"Ya tenemos demasiado entre manos."</Spanish>
@@ -173,7 +173,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_UNKNOWN</Tag>
 		<English>"Sorry, we're not willing to trade this."</English>
-		<French>"Je regrette... nous ne souhaitons pas échanger ceci."</French>
+		<French>"Je regrette... Nous ne souhaitons pas échanger ceci."</French>
 		<German>"Wir haben leider kein Interesse, damit zu handeln."</German>
 		<Italian>"Ci spiace, ma non vogliamo commerciare."</Italian>
 		<Spanish>"Lo sentimos... No deseamos intercambiar esto."</Spanish>
@@ -182,7 +182,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_VICTORY</Tag>
 		<English>"We'd rather win the game, thank you very much."</English>
-		<French>"Nous préférons être vainqueurs, merci..."</French>
+		<French>"Nous préférons gagner la partie, merci beaucoup."</French>
 		<German>"Wir haben eigentlich vor zu gewinnen! Besten Dank ..."</German>
 		<Italian>"Ci piacerebbe vincere la partita, grazie lo stesso..."</Italian>
 		<Spanish>"Preferimos ganar la partida, muchas gracias..."</Spanish>
@@ -191,7 +191,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_WAR_NOT_POSSIBLE_US</Tag>
 		<English>Joining the war on your side is not possible for us</English>
-		<French>Nous ne pouvons pas nous battre à vos côtés</French>
+		<French>"Nous sommes dans l'incapacité de nous battre à vos côtés."</French>
 		<German>Wir können in diesem Krieg nicht auf Eurer Seite kämpfen.</German>
 		<Italian>Non possiamo scendere in guerra al tuo fianco</Italian>
 		<Spanish>No nos es posible unirnos a la guerra en vuestro bando.</Spanish>
@@ -200,7 +200,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_WAR_NOT_POSSIBLE_YOU</Tag>
 		<English>Joining the war on our side is not possible for you</English>
-		<French>Vous ne pouvez pas vous battre à nos côtés</French>
+		<French>"Vous ne pouvez pas vous battre à nos côtés."</French>
 		<German>Ihr könnt in diesem Krieg nicht auf unserer Seite kämpfen.</German>
 		<Italian>Non puoi scendere in guerra al nostro fianco</Italian>
 		<Spanish>No es posible que os unáis a la guerra en nuestro bando.</Spanish>

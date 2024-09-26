@@ -3,7 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FORCE_ADVANCED_START</Tag>
 		<English>Force Advanced Start</English>
-		<French>Forcer le démarrage avancé</French>
+		<French>Forcer le démarrage avancé.</French>
 		<German>Fortgeschrittenen Start erzwingen</German>
 		<Italian>Forza Avvio avanzato</Italian>
 		<Spanish>Forzar Inicio avanzado</Spanish>
@@ -11,7 +11,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FORCE_CONTROL_HANDICAP</Tag>
 		<English>Force Handicap</English>
-		<French>Forcer handicap</French>
+		<French>Forcer le handicap.</French>
 		<German>Handicap erzwingen</German>
 		<Italian>Forza handicap</Italian>
 		<Spanish>Forzar hándicap</Spanish>
@@ -23,7 +23,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FORCE_CONTROL_MAX_CITY_ELIMINATION</Tag>
 		<English>Force Max Settlement Elimination</English>
-		<French>Forcer le nombre maximum d'élimination de colonies</French>
+		<French>Forcer le nombre maximum d'élimination de colonies.</French>
 		<German>Max. Siedlungseliminierung erzwingen</German>
 		<Italian>Forza la massima eliminazione insediamento</Italian>
 		<Spanish>Forzar límite de eliminación de asentamientos</Spanish>
@@ -35,7 +35,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FORCE_CONTROL_MAX_TURNS</Tag>
 		<English>Force Max Turns</English>
-		<French>Forcer tours maxi</French>
+		<French>Forcer le nombre de tours maximum.</French>
 		<German>Max. Runden erzwingen</German>
 		<Italian>Forza il numero massimo di turni</Italian>
 		<Spanish>Forzar límite de turnos</Spanish>
@@ -47,7 +47,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FORCE_CONTROL_OPTIONS</Tag>
 		<English>Force Game Options</English>
-		<French>Forcer options de jeu</French>
+		<French>Forcer les options de jeu.</French>
 		<German>Spieloptionen erzwingen</German>
 		<Italian>Forza opzioni di gioco</Italian>
 		<Spanish>Forzar opciones de partida</Spanish>
@@ -59,7 +59,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FORCE_CONTROL_SPEED</Tag>
 		<English>Force Game Speed</English>
-		<French>Forcer vitesse du jeu</French>
+		<French>Forcer la vitesse du jeu.</French>
 		<German>Spielgeschwindigkeit erzwingen</German>
 		<Italian>Forza velocità di gioco</Italian>
 		<Spanish>Forzar velocidad de juego</Spanish>
@@ -71,7 +71,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FORCE_CONTROL_VICTORIES</Tag>
 		<English>Force Victories</English>
-		<French>Forcer victoires</French>
+		<French>Forcer les conditions de victoire.</French>
 		<German>Siegbedingungen erzwingen</German>
 		<Italian>Forza le vittorie</Italian>
 		<Spanish>Forzar victorias</Spanish>

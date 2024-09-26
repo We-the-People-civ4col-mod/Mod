@@ -24,7 +24,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_ALL</Tag>
 		<English>Go To Mode (All Units)</English>
-		<French>Aller à (toutes unités)</French>
+		<French>Aller à (toutes les unités)</French>
 		<German>Gehe-zu-Modus (Alle Einheiten)</German>
 		<Italian>Modalità 'Vai' (tutte le unità)</Italian>
 		<Spanish>Modo Ir a (todas las unidades)</Spanish>
@@ -33,7 +33,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_ALL_HELP</Tag>
 		<English>Order all units on the currently selected unit's tile to move</English>
-		<French>Ordonner à toutes les unités sur la case de l'unité sélectionnée de se déplacer.</French>
+		<French>Déplacer toutes les unités de cette case.</French>
 		<German>Allen Einheiten auf diesem Feld einen Marschbefehl erteilen</German>
 		<Italian>Ordina a tutte le unità attualmente sulla casella selezionata di muoversi</Italian>
 		<Spanish>Ordena moverse a todas las unidades de la casilla seleccionada actualmente.</Spanish>
@@ -42,7 +42,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_HELP</Tag>
 		<English>Order the selected unit to move to a tile</English>
-		<French>Ordonner à l'unité sélectionnée de se déplacer vers une case.</French>
+		<French>Déplacer cette unité vers une case</French>.
 		<German>Einheit auf ein bestimmtes Geländefeld schicken</German>
 		<Italian>Ordina all'unità selezionata di muoversi su una casella</Italian>
 		<Spanish>Ordena a la unidad seleccionada que se mueva hasta una casilla.</Spanish>
@@ -60,7 +60,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_TYPE_HELP</Tag>
 		<English>Orders all units of the currently selected unit's type to move</English>
-		<French>Ordonner à toutes les unités du type sélectionné de se déplacer.</French>
+		<French>Déplacer toutes les unités du type sélectionné.</French>
 		<German>Allen Einheiten dieses gewählten Typs einen Marschbefehl erteilen</German>
 		<Italian>Ordina a tutte le unità dello stesso tipo di quella selezionata di muoversi</Italian>
 		<Spanish>Ordena moverse a todas las unidades del tipo seleccionado actualmente.</Spanish>
@@ -81,7 +81,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_PING</Tag>
 		<English>Ping Teammates</English>
-		<French>Placer balise pour équipe</French>
+		<French>Envoyer un signal aux équipiers.</French>
 		<German>Mitspieler anpingen</German>
 		<Italian>Lascia un segnale ai compagni di squadra</Italian>
 		<Spanish>Señalar a los compañeros</Spanish>
@@ -101,36 +101,42 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO</Tag>
 		<English>Route To Mode (best available)</English>
+        <French>Mode Route vers... (meilleure version disponible)</French>
 		<German>Straße nach-Modus (Bester verfügbarer Straßentyp)</German>
 		<Russian>Строить дорогу до точки ([COLOR_HIGHLIGHT_TEXT]вымощенная камнем дорога[COLOR_REVERT])</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_HELP</Tag>
 		<English>Order the unit to build the highest level of roads to the selected tile</English>
+        <French>Construire la route la plus évoluée jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, Straßen (des besten verfügbaren Straßentyps) bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]вымощенную камнем дорогу[COLOR_REVERT] к выбранной клетке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD</Tag>
 		<English>Route To Mode (simple road)</English>
+        <French>Mode Route vers... (basique)</French>
 		<German>Straße nach-Modus (einfache Straße)</German>
 		<Russian>Строить дорогу до точки ([COLOR_HIGHLIGHT_TEXT]обычная дорога[COLOR_REVERT])</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD_HELP</Tag>
 		<English>Order the unit to build simple roads to the selected tile</English>
+        <French>Construire la route la plus élémentaire jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, einfache Straßen bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]обычную дорогу[COLOR_REVERT] к выбранной клетке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_COUNTRY_ROAD</Tag>
 		<English>Route To Mode (country road)</English>
+        <French>Mode Route vers... (route de gravier)</French>
 		<German>Straße nach-Modus (Landstraße)</German>
 		<Russian>Строить дорогу до точки ([COLOR_HIGHLIGHT_TEXT]гравийная дорога[COLOR_REVERT])</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_COUNTRY_ROAD_HELP</Tag>
 		<English>Order the unit to build country roads to the selected tile</English>
+        <French>Construire une route de gravier jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, Landstraßen bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]гравийную дорогу[COLOR_REVERT] к выбранной клетке</Russian>
 	</TEXT>

@@ -120,7 +120,7 @@
 		</French>
 		<German>Nez Perce</German>
 		<Italian>
-			<Text>Nez Perce</Text>
+			<Text>Nez Percés</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Italian>
@@ -198,7 +198,7 @@
 		<Tag>TXT_KEY_CIV_ZAPOTEC_DESC</Tag>
 		<English>Zapotec</English>
 		<French>
-			<Text>Zapotecs</Text>
+			<Text>Zapotèques</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -218,7 +218,11 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_GUARANI_DESC</Tag>
 		<English>Guarani</English>
-		<French>Guaranis</French>
+		<French>
+			<Text>Guaranis</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
 		<German>Guarani</German>
 		<Italian>
 			<Text>Guarani</Text>
@@ -320,7 +324,7 @@
 		<Tag>TXT_KEY_CIV_MIXTEC_DESC</Tag>
 		<English>Mixtec</English>
 		<French>
-			<Text>Mixtecs</Text>
+			<Text>Mixtèques</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -446,7 +450,7 @@
 		<Tag>TXT_KEY_CIV_BLACKFOOT_DESC</Tag>
 		<English>Blackfoot</English>
 		<French>
-			<Text>Niitsitapi</Text>
+			<Text>Niitsítapi</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -467,7 +471,7 @@
 		<Tag>TXT_KEY_CIV_GUAYMI_DESC</Tag>
 		<English>Ngabe</English>
 		<French>
-			<Text>Guaymís</Text>
+			<Text>Guaymí</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>

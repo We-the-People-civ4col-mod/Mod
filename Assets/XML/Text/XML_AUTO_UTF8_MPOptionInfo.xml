@@ -27,7 +27,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_SHUFFLE_TEAMS_HELP</Tag>
 		<English>The human members of each team will be randomly reassigned upon game launch</English>
-		<French>Les joueurs humains de chaque équipe seront aléatoirement réassignés lors du lancement de la partie.</French>
+		<French>À chaque lancement de partie, la répartition par équipe des joueurs humains sera tirée au sort.</French>
 		<German>Bei jedem Spielstart erfolgt eine zufällige Teamzuweisung der menschlichen Spieler.</German>
 		<Italian>I membri umani delle squadre verranno riassegnati casualmente all'avvio della partita</Italian>
 		<Spanish>Al iniciar la partida se asignarán al azar los integrantes humanos de los equipos.</Spanish>
@@ -51,7 +51,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_TAKEOVER_AI</Tag>
 		<English>Take over AI</English>
-		<French>Prendre contrôle IA</French>
+		<French>Prendre le contrôle d'une IA</French>
 		<German>KI übernehmen</German>
 		<Italian>Prendi il controllo della IA</Italian>
 		<Spanish>IA de relevo</Spanish>
@@ -59,7 +59,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_TAKEOVER_AI_HELP</Tag>
 		<English>Players can "hot-join" into an AI player's slot at any time</English>
-		<French>Les joueurs peuvent rejoindre une partie à la volée et prendre la place d'un joueur géré par l'IA.</French>
+		<French>Les joueurs peuvent rejoindre une partie à la volée à la place d'un joueur géré par l'IA.</French>
 		<German>Spieler können sich jederzeit im Schnellverfahren einem KI-Spieler anschließen</German>
 		<Italian>I giocatori possono "prendere il posto" di quelli gestiti dall'IA in qualsiasi momento</Italian>
 		<Spanish>Los jugadores pueden "tomar las riendas" de un jugador de la IA en cualquier momento.</Spanish>
@@ -75,7 +75,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_TURN_TIMER_HELP</Tag>
 		<English>Turns are limited by a timer which scales based on the size of the largest colony</English>
-		<French>Le temps de chaque tour est limité et cette limite dépend de la taille du plus grand territoire.</French>
+		<French>Le temps de chaque tour est limité en fonction de la taille de la plus grande colonie.</French>
 		<German>Die Rundenzeit wird durch einen Timer bestimmt, der sich an der Ausdehnung der größten Kolonie orientiert</German>
 		<Italian>I turni sono limitati da un conto alla rovescia basato sulla dimensione della colonia più grossa</Italian>
 		<Spanish>Los turnos quedan limitados por un contador cuya escala se basa en el tamaño de la mayor colonia.</Spanish>

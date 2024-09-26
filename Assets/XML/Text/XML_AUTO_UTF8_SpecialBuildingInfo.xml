@@ -32,7 +32,7 @@
 		<Tag>TXT_KEY_SPECIALBUILDING_CIGARS</Tag>
 		<English>Cigar Buildings</English>
 		<French>
-			<Text>Bâtiments dédiés aux cigares</Text>
+			<Text>Bâtiments dédiés aux Cigares</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -52,7 +52,7 @@
 		<Tag>TXT_KEY_SPECIALBUILDING_CLOTH</Tag>
 		<English>Cloth Buildings</English>
 		<French>
-			<Text>Bâtiments dédiés aux tissus</Text>
+			<Text>Bâtiments dédiés aux Tissus</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -72,9 +72,9 @@
 		<Tag>TXT_KEY_SPECIALBUILDING_COATS</Tag>
 		<English>Coat Buildings</English>
 		<French>
-			<Text>Bâtiments dédiés aux manteaux</Text>
+			<Text>Bâtiments dédiés aux Manteaux</Text>
 			<Gender>Male</Gender>
-			<Plural>0</Plural>
+			<Plural>1</Plural>
 		</French>
 		<German>Mantelgebäude</German>
 		<Italian>
@@ -99,7 +99,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CORN</Tag>
 		<English>Corn Chamber</English>
-		<French>Maïs</French>
+		<French>Grenier à maïs</French>
 		<German>Getreidekammer</German>
 		<Italian>Corn</Italian>
 		<Spanish>Corn</Spanish>
@@ -108,9 +108,9 @@
 		<Tag>TXT_KEY_SPECIALBUILDING_CROSSES</Tag>
 		<English>Religious Buildings</English>
 		<French>
-			<Text>Bâtiments dédiés à la religion</Text>
+			<Text>Bâtiments religieux</Text>
 			<Gender>Male</Gender>
-			<Plural>0</Plural>
+			<Plural>1</Plural>
 		</French>
 		<German>Kirchen</German>
 		<Italian>
@@ -127,7 +127,11 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_DEFENSE</Tag>
 		<English>Fortress</English>
-		<French>Forteresses</French>
+		<French>
+			<Text>Forteresse</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</French>
 		<German>
 			<Text>Festung</Text>
 			<Gender>Female</Gender>
@@ -158,7 +162,7 @@
 		<Tag>TXT_KEY_SPECIALBUILDING_EDUCATION</Tag>
 		<English>Education Buildings</English>
 		<French>
-			<Text>Bâtiments dédiés à l'éducation</Text>
+			<Text>Bâtiments éducatifs</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -177,7 +181,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_FURNITURE</Tag>
 		<English>Furniture Production</English>
-		<French>Fabrication des meubles</French>
+		<French>Fabrication des Meubles</French>
 		<German>Möbelherstellung</German>
 		<Italian>Furnitureproduction</Italian>
 		<Spanish>Furnitureproduction</Spanish>
@@ -186,7 +190,7 @@
 		<Tag>TXT_KEY_SPECIALBUILDING_HAMMERS</Tag>
 		<English>Carpentry Buildings</English>
 		<French>
-			<Text>Bâtiments dédiés à la charpente</Text>
+			<Text>Bâtiments de charpenterie</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</French>
@@ -214,9 +218,9 @@
 		<Tag>TXT_KEY_SPECIALBUILDING_HORSES</Tag>
 		<English>Horse Buildings</English>
 		<French>
-			<Text>Bâtiments dédiés aux chevaux</Text>
+			<Text>Bâtiments d'élevage de chevaux</Text>
 			<Gender>Male</Gender>
-			<Plural>0</Plural>
+			<Plural>1</Plural>
 		</French>
 		<German>Pferdezuchten</German>
 		<Italian>
@@ -241,7 +245,11 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_MEAT</Tag>
 		<English>Slaughterhouse</English>
-		<French>Abattage</French>
+		<French>
+			<Text>Abattoirs</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</French>
 		<German>Schlachtereien</German>
 		<Italian>Slaughtery</Italian>
 		<Spanish>Slaughtery</Spanish>
@@ -258,7 +266,7 @@
 		<Tag>TXT_KEY_SPECIALBUILDING_MUSKETS</Tag>
 		<English>Armoury Buildings</English>
 		<French>
-			<Text>Bâtiments dédiés aux armes</Text>
+			<Text>Bâtiments d'armurerie</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -322,7 +330,7 @@
 		<Tag>TXT_KEY_SPECIALBUILDING_TOOLS</Tag>
 		<English>Tools Buildings</English>
 		<French>
-			<Text>Bâtiments dédiés aux outils</Text>
+			<Text>Bâtiments dédiés aux Outils</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -405,7 +413,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_WHALE_OIL</Tag>
 		<English>Train Oil Production</English>
-		<French>Production d'huile de baleine</French>
+		<French>Production d'Huile de baleine</French>
 		<German>Walfettverarbeitung</German>
 		<Italian>Whaleoilproduction</Italian>
 		<Spanish>Whaleoilproduction</Spanish>
@@ -413,7 +421,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_WINE</Tag>
 		<English>Wine Production</English>
-		<French>Production de vin</French>
+		<French>Production de Vin</French>
 		<German>Kellereien</German>
 		<Italian>Wineproduction</Italian>
 		<Spanish>Wineproduction</Spanish>

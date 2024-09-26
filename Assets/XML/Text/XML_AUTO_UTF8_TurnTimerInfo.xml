@@ -52,7 +52,7 @@
 		<Tag>TXT_KEY_TURNTIMER_MEDIUM</Tag>
 		<English>Medium</English>
 		<French>
-			<Text>Normale</Text>
+			<Text>Normal</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -76,7 +76,7 @@
 		<Tag>TXT_KEY_TURNTIMER_SLOW</Tag>
 		<English>Slow</English>
 		<French>
-			<Text>Lente</Text>
+			<Text>Lent</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -100,7 +100,7 @@
 		<Tag>TXT_KEY_TURNTIMER_SNAIL</Tag>
 		<English>Snail</English>
 		<French>
-			<Text>Escargot</Text>
+			<Text>Escargot !</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -124,7 +124,7 @@
 		<Tag>TXT_KEY_TURNTIMER_STATIC</Tag>
 		<English>Static</English>
 		<French>
-			<Text>Static</Text>
+			<Text>Statique</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>

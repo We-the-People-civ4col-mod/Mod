@@ -84,8 +84,8 @@
 		</English>
 		<French>
 			<Text>Navires de guerre</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
 		</French>
 		<German>
 			<Text>Kriegsschiffe</Text>
@@ -143,7 +143,7 @@
 		<French>
 			<Text>Navires de commerce</Text>
 			<Gender>Male</Gender>
-			<Plural>0</Plural>
+			<Plural>1</Plural>
 		</French>
 		<German>
 			<Text>Handelsschiffe</Text>

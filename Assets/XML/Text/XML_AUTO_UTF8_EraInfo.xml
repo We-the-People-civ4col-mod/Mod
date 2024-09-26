@@ -4,9 +4,9 @@
 		<Tag>TXT_KEY_ERA_COLONIAL</Tag>
 		<English>Colonial (not implemented)</English>
 		<French>
-			<Text>Coloniale (ne pas utiliser)</Text>
+			<Text>Coloniale (non disponible)</Text>
 			<Gender>Female</Gender>
-			<Plural>0:0:1:1</Plural>
+			<Plural>0</Plural>
 		</French>
 		<German>Kolonial (nicht verfügbar)</German>
 		<Italian>
@@ -58,7 +58,7 @@
 		<Tag>TXT_KEY_ERA_EXPANSION</Tag>
 		<English>Expansion (not implemented)</English>
 		<French>
-			<Text>Expansion (ne pas utiliser)</Text>
+			<Text>Expansion (non disponible)</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -87,7 +87,7 @@
 		<Tag>TXT_KEY_ERA_INDEPENDENCE</Tag>
 		<English>Independence (not implemented)</English>
 		<French>
-			<Text>Indépendance (ne pas utiliser)</Text>
+			<Text>Indépendance (non disponible)</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</French>

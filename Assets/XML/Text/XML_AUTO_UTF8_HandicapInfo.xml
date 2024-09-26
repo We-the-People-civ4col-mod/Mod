@@ -12,7 +12,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_HANDICAP_PILGRIM_HELP</Tag>
 		<English>Pilgrim difficulty is the perfect place for a new player to start learning.</English>
-		<French>Le niveau de difficulté Pèlerin est idéal pour un joueur débutant, il permet d'apprendre les ficelles du jeu.</French>
+		<French>Le niveau de difficulté Pèlerin est idéal pour un joueur débutant : il permet d'apprendre les ficelles du jeu.</French>
 		<German>Der Pilger-Schwierigkeitsgrad eignet sich perfekt für neue Spieler zum Einstieg.</German>
 		<Italian>Il livello di difficoltà "pellegrino" è l'ideale per imparare a giocare.</Italian>
 		<Spanish>La dificultad Peregrino es el lugar perfecto para que un jugador nuevo empiece a aprender.</Spanish>
@@ -29,7 +29,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_HANDICAP_PIONEER_HELP</Tag>
 		<English>Pioneer difficulty is a good place for a new player familiar with the original Colonization to start.</English>
-		<French>Le niveau Pionner est à conseiller au joueur débutant, mais qui connaît déjà le premier Colonization.</French>
+		<French>Le niveau Pionner est à conseiller au joueur débutant qui connaît déjà le Colonization original.</French>
 		<German>Der Pionier-Schwierigkeitsgrad eignet sich gut für neue Spieler zum Einstieg, die bereits mit dem ursprünglichen Colonization vertraut sind.</German>
 		<Italian>Il livello "pioniere" è un buon punto di partenza per un nuovo giocatore che comunque conosce Colonization.</Italian>
 		<Spanish>El ajuste Pionero es un buen lugar para que empiece un jugador familiarizado con el Colonization original.</Spanish>
@@ -114,7 +114,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_HANDICAP_REVOLUTIONARY_HELP</Tag>
 		<English>Revolutionary difficulty is not remotely fair, but neither is life. Good Luck!</English>
-		<French>En hommage à la vie, ce niveau de difficulté est franchement injuste. Bonne chance !</French>
+		<French>Ce niveau de difficulté est franchement injuste. La vie aussi. Bonne chance !</French>
 		<German>Der Revolutionär-Schwierigkeitsgrad ist nicht einmal annähernd fair, aber so ist das Leben. Viel Glück!</German>
 		<Italian>Questo livello di difficoltà è davvero ingiusto, ma del resto lo è anche la vita. Buona fortuna!</Italian>
 		<Spanish>Esta dificultad no es justa ni por asomo, como la vida misma. Buena suerte.</Spanish>

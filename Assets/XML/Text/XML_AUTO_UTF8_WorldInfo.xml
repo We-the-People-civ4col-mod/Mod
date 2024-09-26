@@ -16,7 +16,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_SMALL</Tag>
 		<English>Small</English>
-		<French>Petit</French>
+		<French>Petite</French>
 		<German>Klein</German>
 		<Italian>Piccolo</Italian>
 		<Spanish>Pequeño</Spanish>
@@ -29,7 +29,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_STANDARD</Tag>
 		<English>Standard</English>
-		<French>Normal</French>
+		<French>Normale</French>
 		<German>Standard</German>
 		<Italian>Normale</Italian>
 		<Spanish>Estándar</Spanish>
@@ -42,7 +42,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_LARGE</Tag>
 		<English>Large</English>
-		<French>Grand</French>
+		<French>Grande</French>
 		<German>Groß</German>
 		<Italian>Grande</Italian>
 		<Spanish>Grande</Spanish>
