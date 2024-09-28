@@ -324,7 +324,7 @@
 		<ImprovementArtInfo>
 			<Type>ART_DEF_IMPROVEMENT_FORT</Type>
 			<bExtraAnimations>0</bExtraAnimations>
-			<fScale>1.0</fScale>
+			<fScale>0.7</fScale>
 			<fInterfaceScale>0.7</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/forts/fort.nif</NIF>
 			<KFM/>
@@ -333,7 +333,7 @@
 		<ImprovementArtInfo>
 			<Type>ART_DEF_IMPROVEMENT_LARGE_FORT</Type>
 			<bExtraAnimations>0</bExtraAnimations>
-			<fScale>0.7</fScale>
+			<fScale>0.45</fScale>
 			<fInterfaceScale>0.5</fInterfaceScale>
 			<NIF>Art/Structures/Improvements/forts/fortress.nif</NIF>
 			<KFM/>
