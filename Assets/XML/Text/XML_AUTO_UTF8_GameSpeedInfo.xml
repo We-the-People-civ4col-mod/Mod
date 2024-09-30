@@ -71,14 +71,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_BUILDUP_MODE</Tag>
 		<English>Buildup mode</English>
-        <French>Mode bâtisseur</French>
+		<French>Mode bâtisseur</French>
 		<German>Aufbauspiel</German>
 		<Russian>Строитель (1 месяц/ход)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_BUILDUP_MODE_HELP</Tag>
 		<English>(1 month/turn) - Extremely slow game speed for buildup player: The game data is balanced to significantly extend the game duration. However, not everything is simply scaled up. The speed is intended to give builders much more time to build the perfect colony. However, construction, training and growth go faster.</English>
-        <French>(1 mois/tour) - Vitesse de jeu extrêmement lente. Certains paramètres de jeu sont rééquilibrés afin de prolonger énormément la durée de la partie - cependant tout n'est pas rééchelonné. Ce mode de jeu vise à laisser un temps important pour bâtir la colonie parfaite, alors que la construction, la formation et la croissance vont plus vite.</French>
+		<French>(1 mois/tour) - Vitesse de jeu extrêmement lente. Certains paramètres de jeu sont rééquilibrés afin de prolonger énormément la durée de la partie - cependant tout n'est pas rééchelonné. Ce mode de jeu vise à laisser un temps important pour bâtir la colonie parfaite, alors que la construction, la formation et la croissance vont plus vite.</French>
 		<German>(1 Monate/Zug) - Extrem langsames Spieltempo für Aufbauspieler: Die Spieldaten werden ausbalanciert, um die Spieldauer deutlich zu verlängern. Allerdings werden nicht alle Modifier einfach hochskaliert. Die Geschwindigkeit ist dazu vorgesehen, Aufbauspielern viel mehr Zeit für die perfekte Kolonie zu geben. Aufbau, Ausbildung und Wachstum gehen aber schneller.</German>
 	</TEXT>
 </Civ4GameText>

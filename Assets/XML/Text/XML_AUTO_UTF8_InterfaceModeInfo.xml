@@ -101,42 +101,42 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO</Tag>
 		<English>Route To Mode (best available)</English>
-        <French>Mode Route vers... (meilleure version disponible)</French>
+		<French>Mode Route vers... (meilleure version disponible)</French>
 		<German>Straße nach-Modus (Bester verfügbarer Straßentyp)</German>
 		<Russian>Строить дорогу до точки ([COLOR_HIGHLIGHT_TEXT]вымощенная камнем дорога[COLOR_REVERT])</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_HELP</Tag>
 		<English>Order the unit to build the highest level of roads to the selected tile</English>
-        <French>Construire la route la plus évoluée jusqu'à la case choisie.</French>
+		<French>Construire la route la plus évoluée jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, Straßen (des besten verfügbaren Straßentyps) bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]вымощенную камнем дорогу[COLOR_REVERT] к выбранной клетке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD</Tag>
 		<English>Route To Mode (simple road)</English>
-        <French>Mode Route vers... (basique)</French>
+		<French>Mode Route vers... (basique)</French>
 		<German>Straße nach-Modus (einfache Straße)</German>
 		<Russian>Строить дорогу до точки ([COLOR_HIGHLIGHT_TEXT]обычная дорога[COLOR_REVERT])</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD_HELP</Tag>
 		<English>Order the unit to build simple roads to the selected tile</English>
-        <French>Construire la route la plus élémentaire jusqu'à la case choisie.</French>
+		<French>Construire la route la plus élémentaire jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, einfache Straßen bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]обычную дорогу[COLOR_REVERT] к выбранной клетке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_COUNTRY_ROAD</Tag>
 		<English>Route To Mode (country road)</English>
-        <French>Mode Route vers... (route de gravier)</French>
+		<French>Mode Route vers... (route de gravier)</French>
 		<German>Straße nach-Modus (Landstraße)</German>
 		<Russian>Строить дорогу до точки ([COLOR_HIGHLIGHT_TEXT]гравийная дорога[COLOR_REVERT])</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_COUNTRY_ROAD_HELP</Tag>
 		<English>Order the unit to build country roads to the selected tile</English>
-        <French>Construire une route de gravier jusqu'à la case choisie.</French>
+		<French>Construire une route de gravier jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, Landstraßen bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]гравийную дорогу[COLOR_REVERT] к выбранной клетке</Russian>
 	</TEXT>
