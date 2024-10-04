@@ -559,10 +559,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAPE_PLANTER_PEDIA</Tag>
 		<English>Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.</English>
+		<German>Raps mit seinen leuchtend gelben Blüten wird hauptsächlich wegen seiner ölreichen Samen angebaut, die einen nennenswerten Anteil an Erucasäure enthalten. Rapsschrot, das nach der Ölgewinnung übrig bleibt, ist ein proteinreiches Tierfutter.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAPE_PLANTER_STRATEGY</Tag>
 		<English>Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.[NEWLINE]When assigned to the Rapeseed Planter profession, the expert can harvest double the [LINK=YIELD_RAPE]rapeseed[\LINK] in the same time as a regular colonist.</English>
+		<German>Raps ist eine wertvolle Ölpflanze. Nach der Ölgewinnung wird der Rest als Futter für Haustiere verwendet, hauptsächlich für Rinder, aber auch für Schweine und Geflügel. Raps gehört zur Familie der Kohlgewächse. [NEWLINE] Wenn der Beruf des Rapsbauern zugewiesen wird, kann der Experte in der gleichen Zeit wie ein normaler Kolonist die doppelte Menge an Raps ernten.</German>
 	</TEXT>
 	<!-- RICE_FARMER -->
 	<TEXT>
@@ -618,10 +620,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RICE_FARMER_PEDIA</Tag>
 		<English>In tropical areas rice can survive as a perennial. It grows in water. Rice seeds are milled with a huller to remove the chaff, producing brown rice. Removing the bran creates white rice.</English>
+		<German>In tropischen Gebieten kann Reis als Staude überleben. Er wächst im Wasser. Reissamen werden mit einer Schälmaschine gemahlen, um die Spreu zu entfernen, wodurch brauner Reis entsteht. Durch das Entfernen der Kleie entsteht weißer Reis.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RICE_FARMER_STRATEGY</Tag>
 		<English>[LINK=YIELD_RICE]Rice[\LINK] is nutritious and light to carry. Scouts may have a loaf of bread for their first day on the trail but it's the bag of dried rice that feeds them for the rest of the trip.[NEWLINE]When assigned to the Rice Farmer profession, the expert can grow double the rice in the same time as a regular colonist.</English>
+		<German>[LINK=YIELD_RICE]Reis[\LINK] ist nahrhaft und leicht zu transportieren. Pfadfinder haben vielleicht einen Laib Brot für ihren ersten Tag auf dem Pfad, aber es ist der Beutel mit getrocknetem Reis, der sie für den Rest der Reise ernährt.[NEWLINE]Wenn er dem Beruf des Reisbauern zugewiesen wird, kann der Experte doppelt so viel Reis in der gleichen Zeit anbauen wie ein normaler Kolonist.</German>
 	</TEXT>
 	<!-- VANILLA_COLLECTOR -->
 	<TEXT>
@@ -941,10 +945,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_PEDIA</Tag>
 		<English>Rubber is harvested by making incisions in the bark of rubber trees. The latex is heated to create rubber that can be dried into waterproof sheets, along with other industrial products.</English>
+		<German>Kautschuk wird durch Einschnitte in die Rinde von Kautschukbäumen geerntet. Der Latex wird erhitzt, um Kautschuk zu gewinnen, der zusammen mit anderen Industrieprodukten zu wasserdichten Platten getrocknet werden kann.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
 		<English>[LINK=YIELD_KAUTSCHUK]Rubber[\LINK] has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.[NEWLINE]When assigned to the Rubber Collector profession, the expert can get twice as much rubber in the same time as a regular colonist.</English>
+		<German>[LINK=YIELD_KAUTSCHUK]Kautschuk[\LINK] hat ein großes Dehnungsverhältnis, eine hohe Elastizität und ist außerdem wasserfest. Wenn er dem Beruf des Kautschuksammlers zugewiesen wird, kann der Experte in der gleichen Zeit doppelt so viel Kautschuk gewinnen wie ein normaler Kolonist.</German>
 	</TEXT>
 	<!-- CONFECTIONER -->
 	<TEXT>
@@ -1008,6 +1014,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONFECTIONER_STRATEGY</Tag>
 		<English>The confectioner creates variety, candy for every taste, alongside traditional sweets that remind people of home. Flavouring is done with [LINK=YIELD_VANILLA]vanilla[\LINK] or [LINK=YIELD_COCOA]cocoa[\LINK]. The business can become a social destination, with tables and beverages to accompany the treats.[NEWLINE]When assigned to the Confectioner profession, the master can make twice as much candy in the time a regular colonist would take to do the job.</English>
+		<German>Der Konditor schafft Abwechslung, Süßigkeiten für jeden Geschmack, aber auch traditionelle Süßigkeiten, die die Menschen an ihre Heimat erinnern. Die Aromatisierung erfolgt mit [LINK=YIELD_VANILLA]Vanille[\LINK] oder [LINK=YIELD_COCOA]Kakao[\LINK]. Das Geschäft kann zu einem sozialen Treffpunkt werden, mit Tischen und Getränken, die die Leckereien begleiten.[NEWLINE]Wenn der Meister dem Beruf des Zuckerbäckers zugeordnet ist, kann er doppelt so viel Süßigkeiten in der Zeit herstellen, die ein normaler Kolonist für die Arbeit benötigen würde.</German>
 	</TEXT>
 	<!-- HOUSEHOLD_TRADER -->
 	<TEXT>
@@ -1063,10 +1070,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_PEDIA</Tag>
 		<English>Housewares encompass everything that makes life comfortable, extending from basic necessities to rare luxuries. At first everything comes from Europe but clever artisans soon learn to make, and sometimes improve, familiar items.</English>
+		<German>Haushaltswaren umfassen alles, was das Leben angenehm macht, vom Grundbedarf bis hin zu seltenen Luxusgütern. Zunächst kommt alles aus Europa, aber geschickte Kunsthandwerker lernen bald, vertraute Dinge herzustellen und manchmal zu verbessern.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_STRATEGY</Tag>
 		<English>The houseware trader is expected to have all the necessities in stock at a fair price. Raw materials to make furniture include [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK] and [LINK=YIELD_GOAT_HIDES]goatskins[\LINK]. [NEWLINE]When assigned to the Household Trader profession, the master can handle twice the goods in the same time as a regular colonist.</English>
+		<German>Von einem Haushaltswarenhändler wird erwartet, dass er alles Notwendige zu einem fairen Preis auf Lager hat. Zu den Rohstoffen für die Herstellung von Möbeln gehören [LINK=YIELD_VALUABLE_WOOD]exotisches Holz[\LINK] und [LINK=YIELD_GOAT_HIDES]Ziegenfelle[\LINK]. [NEWLINE]Wenn der Meister den Beruf des Haushaltwarenhändlers ausübt, kann er in der gleichen Zeit doppelt so viele Waren umschlagen wie ein normaler Kolonist.</German>
 	</TEXT>
 	<!-- YERBA_TRADER -->
 	<TEXT>
@@ -1122,10 +1131,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_YERBA_TRADER_PEDIA</Tag>
 		<English>Getting started in the yerba-maté trade meant dealing with two especially dangerous Indigenous nations: the Guaraní and Tupí. To add to the challenge, yerba was found in only two regions, Amambay and Alto Paraná.</English>
+		<German>Der Einstieg in den Yerba-Maté-Handel bedeutete, sich mit zwei besonders gefährlichen indigenen Völkern auseinanderzusetzen: den Guaraní und den Tupí. Erschwerend kam hinzu, dass Yerba nur in zwei Regionen, Amambay und Alto Paraná, zu finden war.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_YERBA_TRADER_STRATEGY</Tag>
 		<English>[LINK=YIELD_YERBA_LEAVES]Yerba leaves[\LINK] are steeped in hot water to make a caffeinated beverage: yerba-maté. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the yerba-maté trader profession, the master can market twice the quantity of yerba leaves in the same time as a regular colonist.</English>
+		<German>[LINK=YIELD_YERBA_LEAVES]Yerba-Blätter[\LINK] werden in heißem Wasser eingeweicht, um ein koffeinhaltiges Getränk herzustellen: Yerba-maté. Wenn der Meister den Beruf des Yerba-Maté-Händlers ausübt, kann er die doppelte Menge an Yerba-Blättern in derselben Zeit vermarkten wie ein normaler Kolonist.</German>
 	</TEXT>
 	<!-- OIL_TRADER -->
 	<TEXT>
@@ -1181,10 +1192,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OIL_TRADER_PEDIA</Tag>
 		<English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Olives are crushed for their oil. Once rapeseed oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry.</English>
+		<German>Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den mediterranen Kulturen. Zur Gewinnung des Öls werden die Oliven gepresst. Nach der Gewinnung des Rapsöls wird der Rest als Futtermittel für Haustiere, vor allem Rinder, aber auch Schweine und Geflügel, verwendet.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OIL_TRADER_STRATEGY</Tag>
 		<English>Cooking oil is used in most households almost every day. Because the market is so widespread it's a good cover for smuggling. Nostalgic settlers often prefer the taste of oil from their home country. [LINK=YIELD_OLIVES]Olives[\LINK] and [LINK=YIELD_RAPE]rapeseed[\LINK] are pressed to create two popular cooking oils.[NEWLINE]When assigned to the Cooking Oil Trader profession, the master presser can sell twice as much cooking oil in the same time as a regular colonist.</English>
+		<German>Speiseöl wird in den meisten Haushalten fast jeden Tag verwendet. Da der Markt so weit verbreitet ist, bietet er eine gute Tarnung für den Schmuggel. Nostalgische Siedler bevorzugen oft den Geschmack von Öl aus ihrem Heimatland. Aus [LINK=YIELD_OLIVES]Oliven[\LINK] und [LINK=YIELD_RAPE]Raps[\LINK] werden zwei beliebte Speiseöle gepresst.[NEWLINE]Mit dem Beruf des Speiseölhändlers kann der Pressmeister in der gleichen Zeit doppelt so viel Speiseöl verkaufen wie ein normaler Kolonist.</German>
 	</TEXT>
 	<!-- FRUITS_PICKER -->
 	<TEXT>
@@ -1366,7 +1379,6 @@
 		<German>Kohle entsteht, wenn abgestorbenes Pflanzenmaterial zu Torf zerfällt und durch die Hitze und den Druck der oberen Erdschichten über Millionen von Jahren in Kohle umgewandelt wird. In der Kolonialzeit wurde Kohle zum Heizen verwendet, nicht für die Industrie.</German>
 		<Italian>Il carbone si forma quando la materia vegetale morta si decompone in torba e viene convertita in carbone dal calore e dalla pressione della sepoltura profonda per milioni di anni. Durante l'epoca coloniale il carbone viene utilizzato per il riscaldamento, non per l'industria.</Italian>
 		<Spanish>El carbón se forma cuando la materia vegetal muerta se descompone en turba y se convierte en carbón por el calor y la presión del enterramiento profundo durante millones de años. En la época colonial, el carbón se utiliza para calefacción, no para la industria.</Spanish>
-
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COAL_MINER_STRATEGY</Tag>
@@ -1626,6 +1638,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POTTER_STRATEGY</Tag>
 		<English>Pottery lets villages store their surplus grain to get them through the hungry winter. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements. The raw materials the potter needs are [LINK=YIELD_CLAY]clay[\LINK], and [LINK=YIELD_PEAT]peat[\LINK] to fire the pots.[NEWLINE]When assigned to the Potter profession, the master can make twice as many pots in the same time as a regular colonist.</English>
+		<German>Töpferwaren ermöglichen es den Dörfern, ihr überschüssiges Getreide zu lagern, um den hungrigen Winter zu überstehen. Das Beladen von Wagen mit robusten Töpfen ist eine praktische Methode, um Getreide zu transportieren und neue Siedlungen mit Lebensmitteln zu versorgen. Die Rohstoffe, die der Töpfer benötigt, sind [LINK=YIELD_CLAY]Ton[\LINK] und [LINK=YIELD_PEAT]Torf[\LINK], um die Töpfe zu brennen.[NEWLINE]Wenn er dem Beruf des Töpfers zugewiesen ist, kann der Meister doppelt so viele Töpfe in der gleichen Zeit herstellen wie ein normaler Siedler.</German>
 	</TEXT>
 	<!-- MILK_MAID -->
 	<TEXT>
@@ -1748,11 +1761,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHEESE_MAKER_PEDIA</Tag>
 		<English>Cheese is produced by coagulation of the milk protein casein. Milk is usually acidified and the enzymes of either rennet or bacterial enzymes are added so the casein coagulates. Curds are then separated from the liquid whey and pressed into finished cheese.</English>
+		<German>Käse wird durch Gerinnung des Milcheiweißes Kasein hergestellt. Die Milch wird in der Regel gesäuert und die Enzyme des Labs oder bakterielle Enzyme werden hinzugefügt, damit das Kasein gerinnt. Der Käsebruch wird dann von der flüssigen Molke getrennt und zu fertigem Käse gepresst.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHEESE_MAKER_STRATEGY</Tag>
 		<English>Cheese is valued for its transportability, long shelf life, and high content of fat, protein, calcium, and phosphorus. It's made from [LINK=YIELD_MILK]milk[\LINK]. The long storage life of some cheeses, especially when encased in a protective rind, allows selling when markets are favourable.[NEWLINE]When assigned to the [LINK=PROFESSION_CHEESE_MAKER]cheese maker[\LINK] profession, the master can get twice the weight of [LINK=YIELD_CHEESE]cheese[\LINK] in the same time as a regular colonist.</English>
-		<German>Wenn der [COLOR_HIGHLIGHT_TEXT]Meister Käsemacher[COLOR_REVERT] den Beruf des [LINK=PROFESSION_CHEESE_MAKER]Käsemachers[\LINK] ausübt, kann er in derselben Zeit doppelt so viel [LINK=YIELD_CHEESE]Käse[\LINK] herstellen, wie ein normaler Kolonist.</German>
+		<German>Käse wird wegen seiner Transportfähigkeit, seiner langen Haltbarkeit und seines hohen Gehalts an Fett, Eiweiß, Kalzium und Phosphor geschätzt. Er wird aus [LINK=YIELD_MILK]Milch[\LINK] hergestellt. Die lange Haltbarkeit einiger Käsesorten, vor allem wenn sie von einer schützenden Rinde umhüllt sind, ermöglicht den Verkauf zu günstigen Marktzeiten.[NEWLINE]Wenn der Meister den Beruf [LINK=PROFESSION_CHEESE_MAKER]Käsemacher[\LINK] ausübt, kann er in der gleichen Zeit die doppelte Menge an [LINK=YIELD_CHEESE]Käse[\LINK] herstellen wie ein normaler Kolonist.</German>
 	</TEXT>
 	<!-- CHARCOAL_BURNER -->
 	<TEXT>
@@ -1923,6 +1937,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIREWORKER_STRATEGY</Tag>
 		<English>The powder maker uses [LINK=YIELD_CHAR_COAL]charcoal[\LINK] to produce enough black powder for the soldiers' guns. Even more is needed for miners and the pioneers building roads. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.[NEWLINE]When assigned to the Powder Maker profession, the master can mix twice as much gunpowder in the same time as a regular colonist.</English>
+		<German>Der Pulvermacher verwendet [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK], um genügend Schwarzpulver für die Gewehre der Soldaten herzustellen. Noch mehr wird für die Bergleute und die Pioniere beim Straßenbau benötigt. Schwarzpulver mag gefährlich sein, aber es ist nicht so gefährlich wie eine schwache Armee ohne genügend Munition.[NEWLINE]Wenn der Meister den Beruf des Pulvermachers ausübt, kann er in der gleichen Zeit doppelt so viel Schießpulver mischen wie ein normaler Kolonist.</German>
 	</TEXT>
 	<!-- MESTIZZO -->
 	<TEXT>
@@ -1978,10 +1993,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MESTIZZO_PEDIA</Tag>
 		<English>The mestizo is the child of a European and an Indigenous parent. Mestizo children are often rejected by both communities.[NEWLINE]Further north Metis means the same thing. Louis Riel, a Metis, is one of Canada's Fathers of Confederation, though he was hanged for treason before his contribution was recognized.</English>
+		<German>Der Mestize ist das Kind eines europäischen und eines indigenen Elternteils. Mestizo-Kinder werden oft von beiden Gemeinschaften abgelehnt.[NEWLINE]Weiter nördlich bedeutet Metis das Gleiche. Louis Riel, ein Metis, ist einer der Väter der kanadischen Konföderation, obwohl er wegen Hochverrats gehängt wurde, bevor sein Beitrag anerkannt wurde.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MESTIZZO_STRATEGY</Tag>
-		<English>Sometimes mestizos advance in spite of of the prejudice. Quanah Parker, a mestizo born to a European mother, was known as the most terrifying Comanche leader because of his devastating raids on white settlements.</English>
+		<English>Sometimes mestizos advance in spite of the prejudice. Quanah Parker, a mestizo born to a European mother, was known as the most terrifying Comanche leader because of his devastating raids on white settlements.</English>
+		<German>Manchmal können Mestizen trotz ihrer Benachteiligung etwas großes leisten. Quanah Parker, ein Mestize mit einer europäischen Mutter, war wegen seiner verheerenden Überfälle auf weiße Siedlungen als der furchterregendste Comanchen-Anführer bekannt.</German>
 	</TEXT>
 	<!-- MULATTO -->
 	<TEXT>
@@ -2037,11 +2054,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MULATTO_PEDIA</Tag>
 		<English>The mulatto is the child of a European and an African parent, often a slave woman. The child grows up as part of the slave population. To maintain cultural separation Europeans create artificial distinctions, such as being repelled by the idea of touching Black people.</English>
+		<German>Der Mulatte ist das Kind eines europäischen und eines afrikanischen Elternteils, häufig einer Sklavin. Das Kind wächst als Teil der Sklavenbevölkerung auf. Um die kulturelle Trennung aufrechtzuerhalten, schaffen die Europäer künstliche Unterscheidungen, wie zum Beispiel die Abneigung gegen den Gedanken, Schwarze zu berühren.</German>
 		<French>Un mulâtre est l'enfant d'un parent Européen et d'un parent africain, le plus souvent une femme esclave. L'enfant grandit parmi les esclaves. Pour maintenir une séparation culturelle, les Européeens créent des coutumes artificielles, comme en faisant mine d'être dégouté à l'idée de toucher un Noir.</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MULATTO_STRATEGY</Tag>
 		<English>Mulattos add to the slave population but they also create cultural confusion. European women are not happy to see their husbands fathering Black babies.[NEWLINE]Because slave life expectancy on sugar plantations is three years, or twenty-one for mulattos born into slavery, plantation owners develop a racial justification for the deaths of their children.</English>
+		<German>Mulatten erhöhen die Sklavenpopulation, aber sie sorgen auch für kulturelle Verwirrung. Da die Lebenserwartung der Sklaven auf den Zuckerplantagen drei Jahre und die der in die Sklaverei hineingeborenen Mulatten einundzwanzig Jahre beträgt, entwickeln die Plantagenbesitzer eine rassistische Rechtfertigung für den Tod ihrer Kinder.</German>
 		<French>Les mulâtres comptent parmi les esclaves mais ils contribuent au mélange des cultures. Les femmes européennes ne sont pas ravies de voir leur maris procréer des enfants blancs.[NEWLINE] Comme l'espérance de vie des esclaves ne dépasse pas les trois ans dans les plantations de sucre, ou vingt et un ans pour les mulâtres nés en servitude, les propriétaires de plantation ont mis en oeuvre une justification raciale pour la mort de leurs enfants.</French>
 	</TEXT>
 	<!-- CONSTRUCTION_SUPPLIES -->
@@ -2161,11 +2180,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_PEDIA</Tag>
 		<English>Like the great general, the brave lieutenant contributes experience points to one or more military units, just not as much experience.[NEWLINE]When younger sons aren't smart enough for the priesthood, and their father's rich enough to buy them an army commission, they start as junior officers, charging into battle at the head of their troops. Bravery gives them a fighting chance.</English>
+		<German>Wie der große General steuert auch der tapfere Leutnant Erfahrungspunkte zu einer oder mehreren Militäreinheiten bei, nur eben nicht so viel Erfahrung.[NEWLINE]Wenn jüngere Söhne nicht klug genug für das Priesteramt sind und ihr Vater reich genug ist, um ihnen ein Offizierspatent zu kaufen, beginnen sie als Nachwuchsoffiziere und stürmen an der Spitze ihrer Truppen in die Schlacht. Tapferkeit gibt ihnen eine Chance im Kampf.</German>
 		<French>Tout comme un [LINK=UNIT_GREAT_GENERAL]général illustre[\LINK], le lieutenant courageux fournit des points d'expériences aux unités présentes sur sa case, en quantité moindre que le général. Quand les fils cadets ne sont pas assez scolaires pour la prêtrise, et que leur père est assez richje pour leur acheter une commission dans l'armée, chargeant dans la bataille à la tête de leur troupe. La bravoure leur donne la chance de l'emporter.</French>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_STRATEGY</Tag>
 		<English>Brave lieutenants are rare, appearing perhaps once out of every ten battles.</English>
+		<German>Tapfere Leutnants sind selten, sie tauchen vielleicht einmal pro zehn Schlachten auf.</German>
 		<French>Les lieutenants courageux sont peu communs, apparaissant environ une fois toutes les dix batailles</French>
 	</TEXT>
 	<!-- CAPABLE_CAPTAIN -->
