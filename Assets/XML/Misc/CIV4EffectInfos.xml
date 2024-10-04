@@ -82,10 +82,10 @@
 		</EffectInfo>
 		<EffectInfo>
 			<Type>EFFECT_HORSEARCHERARROW</Type>
-			<Description>Tomahawk Projectile</Description>
+			<Description>Arrow Projectile</Description>
 			<fScale>1.0</fScale>
 			<fUpdateRate>1.0</fUpdateRate>
-			<Path>Art/Effects/Tomahawk_Thrown/Tomahawk_Thrown.kfm</Path>
+			<Path>Art/Units/Native_Nations/native_animations/native_warrior/ArcherArrow.nif</Path>
 			<bIsProjectile>1</bIsProjectile>
 			<fSpeed>350.0</fSpeed>
 			<fArcValue>0.0</fArcValue>
@@ -441,17 +441,17 @@
 			<Description>ArcherArrow</Description>
 			<fScale>1.0</fScale>
 			<fUpdateRate>1.0</fUpdateRate>
-			<Path>Art/Effects/ArcherArrow.nif</Path>
+			<Path>Art/Units/Native_Nations/native_animations/native_warrior/ArcherArrow.nif</Path>
 			<bIsProjectile>1</bIsProjectile>
 			<fSpeed>500.0</fSpeed>
 			<fArcValue>0.0</fArcValue>
 		</EffectInfo>
 		<EffectInfo>
 			<Type>EFFECT_EGYPTIANARROW</Type>
-			<Description>EgyptianArcherArrow</Description>
+			<Description>ArcherArrow</Description>
 			<fScale>1.0</fScale>
 			<fUpdateRate>1.0</fUpdateRate>
-			<Path>Art/Units/Native_Nations/navajo/navajo_warrior/Archer_Egyptian_Arrow.nif</Path>
+			<Path>Art/Units/Native_Nations/native_animations/archer/Archer_Egyptian_Arrow.nif</Path>
 			<bIsProjectile>1</bIsProjectile>
 			<fSpeed>500.0</fSpeed>
 			<fArcValue>0.0</fArcValue>

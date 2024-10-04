@@ -3852,8 +3852,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/NativeScout.dds</FullLengthIcon>
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
-			<NIF>Art/Units/Native_Warrior/Native_Warrior.nif</NIF>
-			<KFM>Art/Units/Native_Warrior/Native_Warrior.kfm</KFM>
+			<NIF>Art/Units/Native_Nations/native_animations/native_warrior/native_warrior.nif</NIF>
+			<KFM>Art/Units/Native_Nations/native_animations/native_warrior/native_warrior.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -3869,8 +3869,8 @@
 			<FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
-			<NIF>Art/Units/Native_Scout/Native_Scout.nif</NIF>
-			<KFM>Art/Units/Native_Scout/Native_Scout.kfm</KFM>
+			<NIF>Art/Units/Native_Nations/native_animations/Native_Scout/Native_Scout.nif</NIF>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Scout/Native_Scout.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -3886,8 +3886,8 @@
 			<FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Units/Native_Mounted_Warrior/Native_Mounted_Warrior.nif</NIF>
-			<KFM>Art/Units/Native_Mounted_Warrior/Native_Mounted_Warrior.kfm</KFM>
+			<NIF>Art/Units/Native_Nations/native_animations/Native_Mounted_Warrior/Native_Mounted_Warrior.nif</NIF>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Mounted_Warrior/Native_Mounted_Warrior.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -3903,8 +3903,8 @@
 			<FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
 			<fScale>0.42</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Units/Native_Musketman/Native_Musketman.nif</NIF>
-			<KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
+			<NIF>Art/Units/Native_Nations/native_animations/Native_Musketman/Native_Musketman.nif</NIF>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Musketman/Native_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -3938,7 +3938,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/blackfoot/blackfoot_Warrior/native_warrior.nif</NIF>
-			<KFM>Art/Units/native_warrior/native_warrior.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/native_warrior/native_warrior.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -3955,7 +3955,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/blackfoot/blackfoot_armed/Native_Musketman.nif</NIF>
-			<KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Musketman/Native_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -3972,7 +3972,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/blackfoot/blackfoot_mounted_Warrior/Native_Scout.nif</NIF>
-			<KFM>Art/Units/Native_Scout/Native_Scout.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Mounted_Warrior/Native_Mounted_Warrior.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -3989,7 +3989,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/blackfoot/blackfoot_armed_mounted/Native_Mounted_Warrior.nif</NIF>
-			<KFM>Art/Units/Native_Mounted_Warrior/Native_Mounted_Warrior.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Mounted_Warrior/Native_Mounted_Warrior.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -4043,7 +4043,7 @@
 			<KFM>Art/Units/Native_Nations/Native_animations/cavalry/companion_cavalry.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -4689,7 +4689,7 @@
 			<KFM>Art/Units/Native_Nations/native_animations/archer/Archer_Egyptian.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -4703,7 +4703,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/Nez_Perce/Nez_Perce_Armed/Native_Musketman.nif</NIF>
-			<KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Musketman/Native_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -4720,7 +4720,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/Nez_Perce/Nez_Perce_mounted/Native_Scout.nif</NIF>
-			<KFM>Art/Units/Native_Scout/Native_Scout.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Scout/Native_Scout.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -5179,7 +5179,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/Inuit/Inuit_armed/Native_Musketman.nif</NIF>
-			<KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Musketman/Native_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -5230,7 +5230,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/Huron/Huron_Warrior/Native_Warrior.nif</NIF>
-			<KFM>Art/Units/Native_Warrior/Native_Warrior.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Warrior/Native_Warrior.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -5502,7 +5502,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/navajo/navajo_Warrior/Archer_Egyptian.nif</NIF>
-			<KFM>Art/Units/Native_Nations/navajo/navajo_Warrior/Archer_Egyptian.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/archer/Archer_Egyptian.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -5573,7 +5573,7 @@
 			<KFM>Art/Units/Native_Nations/native_animations/dogsoldier/DogSoldier.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>1</bActAsRanged>
+			<bActAsRanged>0</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -5587,7 +5587,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/algonquian/algonquian_armed/Native_Musketman.nif</NIF>
-			<KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Musketman/Native_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -5604,7 +5604,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/algonquian/algonquian_mounted_Warrior/Native_Scout.nif</NIF>
-			<KFM>Art/Units/Native_Scout/Native_Scout.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Scout/Native_Scout.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -5621,7 +5621,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/algonquian/algonquian_armed_mounted/Native_Mounted_Warrior.nif</NIF>
-			<KFM>Art/Units/Native_Mounted_Warrior/Native_Mounted_Warrior.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/Native_Mounted_Warrior/Native_Mounted_Warrior.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -5978,7 +5978,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Native_Nations/toromona/toromona_Warrior/Archer_Egyptian.nif</NIF>
-			<KFM>Art/Units/Native_Nations/navajo/navajo_Warrior/Archer_Egyptian.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/native_animations/archer/Archer_Egyptian.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -12741,23 +12741,6 @@
 			</AudioRunSounds>
 		</UnitArtInfo>
 		<UnitArtInfo>
-			<Type>ART_DEF_UNIT_CONVERT_SCOUT</Type>
-			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,6,3</Button>
-			<FullLengthIcon>,Art/Interface/Screens/City_Management/Scout_Seasoned.dds</FullLengthIcon>
-			<fScale>0.55</fScale>
-			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/units/Native_Nations/ConvertScout/Native_Scout.nif</NIF>
-			<KFM>Art/units/Native_Nations/ConvertScout/Native_Scout.kfm</KFM>
-			<fBattleDistance>0.35</fBattleDistance>
-			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
-			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
-			<AudioRunSounds>
-				<AudioRunTypeLoop/>
-				<AudioRunTypeEnd/>
-			</AudioRunSounds>
-		</UnitArtInfo>
-		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_PROFESSION_SCOUT</Type>
 			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,7,12</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/Scout.dds</FullLengthIcon>
@@ -13002,7 +12985,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Special_Military/settler_militia/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/england/Infantry/england_colonial_militia_vet/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -13675,7 +13658,7 @@
 			<KFM>Art/Units/England/Infantry/England_colonial_militia/veteran_musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13744,7 +13727,7 @@
 			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13758,10 +13741,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/England/Infantry/england_colonial_militia_vet/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/imperial_musketman/imperial_musketman.kfm</KFM>
+			<KFM>Art/Units/England/Infantry/england_colonial_militia_vet/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13912,7 +13895,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/England/Infantry/england_line_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_musketman/Imperial_musketman.kfm</KFM>
+			<KFM>Art/Units/England/Infantry/england_colonial_militia_vet/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -14066,7 +14049,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/England/Infantry/england_line_infantry_vet/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_musketman/Imperial_musketman.kfm</KFM>
+			<KFM>Art/Units/England/Infantry/england_colonial_militia_vet/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -14220,7 +14203,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/England/Infantry/england_royal_light_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_musketman/Imperial_musketman.kfm</KFM>
+			<KFM>Art/Units/England/Infantry/england_colonial_militia_vet/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -14477,8 +14460,8 @@
 			<FullLengthIcon>,Art/Interface/Game Hud/Actions/need_button.dds</FullLengthIcon>
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/units/Native_Nations/ConvertDragoon/Native_Mounted_Warrior.nif</NIF>
-			<KFM>Art/units/Native_Nations/ConvertDragoon/Native_Mounted_Warrior.kfm</KFM>
+			<NIF>Art/units/Native_Nations/native_animations/Native_Mounted_Warrior/Native_Mounted_Warrior.nif</NIF>
+			<KFM>Art/units/Native_Nations/native_animations/Native_Mounted_Warrior/Native_Mounted_Warrior.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>

@@ -5152,7 +5152,7 @@
 					<iRangedWaveSize>0</iRangedWaveSize>
 					<UnitMeshGroup>
 						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_CONVERT_SCOUT</ArtDefineTag>
+						<ArtDefineTag>ART_DEF_UNIT_SCOUT_BRAVE</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
@@ -5941,7 +5941,7 @@
 					<iRangedWaveSize>0</iRangedWaveSize>
 					<UnitMeshGroup>
 						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_CONVERT_SCOUT</ArtDefineTag>
+						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_SCOUT</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
@@ -5985,7 +5985,7 @@
 					<iRangedWaveSize>0</iRangedWaveSize>
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_CONVERT_MUSKETMAN</ArtDefineTag>
+						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_LINE_INFANTRY</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
@@ -5996,7 +5996,7 @@
 					<iRangedWaveSize>0</iRangedWaveSize>
 					<UnitMeshGroup>
 						<iRequired>2</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_CONVERT_DRAGOON</ArtDefineTag>
+						<ArtDefineTag>ART_DEF_UNIT_PROFESSION_DRAGOON</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
 				<UnitMeshGroups>
@@ -55674,8 +55674,8 @@
 					<ProfessionType>NONE</ProfessionType>
 					<fMaxSpeed>1.75</fMaxSpeed>
 					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>4</iMeleeWaveSize>
-					<iRangedWaveSize>0</iRangedWaveSize>
+					<iMeleeWaveSize>2</iMeleeWaveSize>
+					<iRangedWaveSize>2</iRangedWaveSize>
 					<UnitMeshGroup>
 						<iRequired>3</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_MILITIA</ArtDefineTag>
@@ -61102,7 +61102,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_LEADERSHIP</PromotionType>
+					<PromotionType>PROMOTION_CANNISTER_SHOT</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
@@ -61627,7 +61627,7 @@
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 				<FreePromotion>
-					<PromotionType>PROMOTION_LEADERSHIP</PromotionType>
+					<PromotionType>PROMOTION_SOLID_SHOTI</PromotionType>
 					<bFreePromotion>1</bFreePromotion>
 				</FreePromotion>
 			</FreePromotions>
