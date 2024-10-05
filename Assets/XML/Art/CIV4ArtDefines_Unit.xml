@@ -12815,7 +12815,7 @@
 			<fScale>0.48</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Special_Military/native_merc/Native_Musketman.nif</NIF>
-			<KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/Native_animations/Native_Musketman/Native_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -12831,8 +12831,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/Ranger.dds</FullLengthIcon>
 			<fScale>0.48</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/Ranger/Native_Musketman.nif</NIF>
-			<KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
+			<NIF>Art/Units/Special_Military/Ranger/Ranger.nif</NIF>
+			<KFM>Art/Units/Native_Nations/Native_animations/Native_Musketman/Native_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -12866,7 +12866,7 @@
 			<fScale>0.51</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Special_Military/Conquistador2/Native_Musketman.nif</NIF>
-			<KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/Native_animations/Native_Musketman/Native_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -12883,7 +12883,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Special_Military/Mounted_Conquistador/MountedConquistador.nif</NIF>
-			<KFM>Art/Units/Imperial_Dragoon/Imperial_Dragoon.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Dragoon/Imperial_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -12950,8 +12950,8 @@
 			<FullLengthIcon>Art/Interface/Screens/City_Management/Slave_Hunter.dds</FullLengthIcon>
 			<fScale>0.55</fScale>
 			<fInterfaceScale>0.86</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/Slave_Hunter/Indentured_Servant.nif</NIF>
-			<KFM>Art/Units/Special_Military/Slave_Hunter/Indentured_Servant.kfm</KFM>
+			<NIF>Art/Units/Special_Military/Slave_Hunter/Slave_Hunter.nif</NIF>
+			<KFM>Art/Units/Special_Military/Slave_Hunter/Slave_Hunter.kfm</KFM>
 			<fBattleDistance>0.5</fBattleDistance>
 			<fRangedDeathTime>0.77</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -12984,7 +12984,7 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/settler_militia.dds</FullLengthIcon>
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/settler_militia/Imperial_Musketman.nif</NIF>
+			<NIF>Art/Units/Special_Military/settler_militia/settler_militia.nif</NIF>
 			<KFM>Art/Units/england/Infantry/england_colonial_militia_vet/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
@@ -13155,7 +13155,7 @@
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
 			<NIF>Art/Units/Special_Military/continental_guard/rifleman/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -13327,7 +13327,7 @@
 			<fScale>0.48</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Special_Military/Specialists/Dragoon/Native_Musketman.nif</NIF>
-			<KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/Native_animations/Native_Musketman/Native_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -13344,7 +13344,7 @@
 			<fScale>0.48</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Special_Military/Specialists/Dragoon_Royal/Native_Musketman.nif</NIF>
-			<KFM>Art/Units/Native_Musketman/Native_Musketman.kfm</KFM>
+			<KFM>Art/Units/Native_Nations/Native_animations/Native_Musketman/Native_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -13447,8 +13447,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/town_guard_ordinary.dds</FullLengthIcon>
 			<fScale>0.48</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/town_guard/town_guard_ordinary/pikeman.nif</NIF>
-			<KFM>Art/Units/Special_Military/town_guard/town_guard_ordinary/pikeman.kfm</KFM>
+			<NIF>Art/Units/Special_Military/town_guard/town_guard_ordinary/town_guard.nif</NIF>
+			<KFM>Art/Units/Special_Military/town_guard/town_guard_ordinary/town_guard.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -13465,8 +13465,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/town_guard_veteran.dds</FullLengthIcon>
 			<fScale>0.48</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/town_guard/town_guard_veteran/pikeman.nif</NIF>
-			<KFM>Art/Units/Special_Military/town_guard/town_guard_veteran/pikeman.kfm</KFM>
+			<NIF>Art/Units/Special_Military/town_guard/town_guard_veteran/town_guard_veteran.nif</NIF>
+			<KFM>Art/Units/Special_Military/town_guard/town_guard_ordinary/town_guard.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -13483,8 +13483,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/town_guard_veteran.dds</FullLengthIcon>
 			<fScale>0.48</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Special_Military/town_guard/town_guard_royal/pikeman.nif</NIF>
-			<KFM>Art/Units/Special_Military/town_guard/town_guard_royal/pikeman.kfm</KFM>
+			<NIF>Art/Units/Special_Military/town_guard/town_guard_royal/town_guard_royal.nif</NIF>
+			<KFM>Art/Units/Special_Military/town_guard/town_guard_ordinary/town_guard.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -13501,8 +13501,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/colonial_militia.dds</FullLengthIcon>
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Musketman/Musketman.nif</NIF>
-			<KFM>Art/Units/Musketman/Musketman.kfm</KFM>
+			<NIF>Art/Units/Special_Military/professions/Musketman/Musketman.nif</NIF>
+			<KFM>Art/Units/Special_Military/professions/Musketman/Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -13536,10 +13536,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Spain/Infantry/spain_colonial_militia/veteran_musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13553,10 +13553,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/France/Infantry/France_colonial_militia/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13570,10 +13570,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Dutch/Infantry/Dutch_colonial_militia/veteran_musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13587,10 +13587,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Denmark/Infantry/denmark_colonial_militia/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13604,10 +13604,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Sweden/Infantry/Sweden_colonial_militia/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13621,10 +13621,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/russia/Infantry/Russia_colonial_militia/veteran_musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13638,10 +13638,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Portugal/Infantry/Portugal_colonial_militia/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13672,8 +13672,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/colonial_veteran_militia.dds</FullLengthIcon>
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Veteran_Musketman/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<NIF>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.nif</NIF>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -13690,10 +13690,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Spain/Infantry/spain_colonial_militia_vet/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13707,10 +13707,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/France/Infantry/france_colonial_militia_vet/veteran_musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13724,7 +13724,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Portugal/Infantry/portugal_colonial_militia_vet/veteran_musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -13758,10 +13758,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Dutch/Infantry/dutch_colonial_militia_vet/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/imperial_musketman/imperial_musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_musketman/Imperial_musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13775,10 +13775,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Denmark/Infantry/denmark_colonial_militia_vet/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13792,10 +13792,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Sweden/Infantry/sweden_colonial_militia_vet/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13809,10 +13809,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/russia/Infantry/russia_colonial_militia_vet/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/imperial_musketman/imperial_musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_musketman/Imperial_musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13826,8 +13826,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/lineinfantry.dds</FullLengthIcon>
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Imperial_Musketman/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<NIF>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.nif</NIF>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -13844,10 +13844,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Spain/Infantry/spain_line_infantry/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13861,10 +13861,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/France/Infantry/france_line_infantry/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13878,10 +13878,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Portugal/Infantry/portugal_line_infantry/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13898,7 +13898,7 @@
 			<KFM>Art/Units/England/Infantry/england_colonial_militia_vet/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13912,10 +13912,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Dutch/Infantry/dutch_line_infantry/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13929,10 +13929,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Denmark/Infantry/denmark_line_infantry/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13946,10 +13946,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Sweden/Infantry/sweden_line_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13966,7 +13966,7 @@
 			<KFM>Art/Units/england/Infantry/england_colonial_militia/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -13980,8 +13980,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/lineinfantry_vet.dds</FullLengthIcon>
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Imperial_Musketman/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<NIF>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.nif</NIF>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -13998,10 +13998,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Spain/Infantry/spain_line_infantry_vet/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14015,10 +14015,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/France/Infantry/france_line_infantry_vet/Musketman.nif</NIF>
-			<KFM>Art/Units/Musketman/Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Musketman/Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14032,10 +14032,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Portugal/Infantry/portugal_line_infantry_vet/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14052,7 +14052,7 @@
 			<KFM>Art/Units/England/Infantry/england_colonial_militia_vet/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14066,10 +14066,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Dutch/Infantry/dutch_line_infantry_vet/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14083,10 +14083,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Denmark/Infantry/denmark_line_infantry_vet/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14100,10 +14100,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Sweden/Infantry/sweden_line_infantry_vet/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14117,10 +14117,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/russia/Infantry/russia_line_infantry_vet/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14134,8 +14134,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_infantry.dds</FullLengthIcon>
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Imperial_Musketman/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<NIF>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.nif</NIF>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -14152,10 +14152,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Spain/Infantry/spain_royal_light_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14169,10 +14169,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/France/Infantry/france_royal_light_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14186,10 +14186,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Portugal/Infantry/portugal_royal_light_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14206,7 +14206,7 @@
 			<KFM>Art/Units/England/Infantry/england_colonial_militia_vet/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14220,10 +14220,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Dutch/Infantry/dutch_royal_light_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14237,10 +14237,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Denmark/Infantry/denmark_royal_light_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14254,10 +14254,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Sweden/Infantry/sweden_royal_light_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14271,10 +14271,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/russia/Infantry/russia_royal_light_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14288,8 +14288,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_infantry.dds</FullLengthIcon>
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Imperial_Musketman/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<NIF>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.nif</NIF>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.05</fRangedDeathTime>
 			<bActAsRanged>1</bActAsRanged>
@@ -14306,10 +14306,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Spain/Infantry/spain_royal_line_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14323,10 +14323,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/France/Infantry/france_royal_line_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14340,10 +14340,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Portugal/Infantry/portugal_royal_line_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14360,7 +14360,7 @@
 			<KFM>Art/Units/England/Infantry/england_colonial_militia/Veteran_musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14374,10 +14374,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Dutch/Infantry/dutch_royal_line_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14391,10 +14391,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Denmark/Infantry/denmark_royal_line_infantry/Veteran_Musketman.nif</NIF>
-			<KFM>Art/Units/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Veteran_Musketman/Veteran_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14408,10 +14408,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Sweden/Infantry/sweden_royal_line_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -14425,10 +14425,10 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/russia/Infantry/russia_royal_line_infantry/Imperial_Musketman.nif</NIF>
-			<KFM>Art/Units/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Musketman/Imperial_Musketman.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
-			<bActAsRanged>0</bActAsRanged>
+			<bActAsRanged>1</bActAsRanged>
 			<TrainSound>AS2D_UNIT_BUILD_UNIT</TrainSound>
 			<AudioRunSounds>
 				<AudioRunTypeLoop/>
@@ -15042,7 +15042,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Denmark/Cavalry/denmark_cavalry/dragoon.nif</NIF>
-			<KFM>Art/Units/dragoon/dragoon.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Cavalry/Veteran_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -15128,7 +15128,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/russia/Cavalry/russia_cavalry_vet/hussar.nif</NIF>
-			<KFM>Art/Units/russia/Cavalry/russia_cavalry_vet/hussar.kfm</KFM>
+			<KFM>Art/Units/russia/Cavalry/russia_cavalry/hussar.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -15162,7 +15162,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/England/Cavalry/England_cavalry_vet/Dragoon.nif</NIF>
-			<KFM>Art/Units/dragoon/dragoon.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Cavalry/Veteran_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -15196,7 +15196,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Denmark/Cavalry/denmark_cavalry_vet/dragoon.nif</NIF>
-			<KFM>Art/Units/dragoon/dragoon.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Cavalry/Veteran_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -15230,8 +15230,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/royal_cavalry.dds</FullLengthIcon>
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Imperial_Dragoon/Imperial_Dragoon.nif</NIF>
-			<KFM>Art/Units/Imperial_Dragoon/Imperial_Dragoon.kfm</KFM>
+			<NIF>Art/Units/Special_Military/Professions/Imperial_Dragoon/Imperial_Dragoon.nif</NIF>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Dragoon/Imperial_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -15248,7 +15248,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Spain/Cavalry/Spain_Royal_cavalry/Dragoon.nif</NIF>
-			<KFM>Art/Units/dragoon/dragoon.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Cavalry/Veteran_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -15265,7 +15265,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/France/Cavalry/France_Royal_cavalry/Dragoon.nif</NIF>
-			<KFM>Art/Units/dragoon/dragoon.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Cavalry/Veteran_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -15282,7 +15282,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/russia/Cavalry/russia_Royal_cavalry/dragoon.nif</NIF>
-			<KFM>Art/Units/dragoon/dragoon.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Cavalry/Veteran_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -15299,7 +15299,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Portugal/Cavalry/Portugal_Royal_cavalry/Dragoon.nif</NIF>
-			<KFM>Art/Units/dragoon/dragoon.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Cavalry/Veteran_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -15316,7 +15316,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/England/Cavalry/England_Royal_cavalry/Dragoon.nif</NIF>
-			<KFM>Art/Units/dragoon/dragoon.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Cavalry/Veteran_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -15333,7 +15333,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Dutch/Cavalry/Dutch_Royal_cavalry/Dragoon.nif</NIF>
-			<KFM>Art/Units/dragoon/dragoon.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Cavalry/Veteran_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -15350,7 +15350,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Denmark/Cavalry/denmark_Royal_cavalry/dragoon.nif</NIF>
-			<KFM>Art/Units/dragoon/dragoon.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Cavalry/Veteran_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -15367,7 +15367,7 @@
 			<fScale>0.50</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Sweden/Cavalry/Sweden_Royal_cavalry/Imperial_Dragoon.nif</NIF>
-			<KFM>Art/Units/Imperial_Dragoon/Imperial_Dragoon.kfm</KFM>
+			<KFM>Art/Units/Special_Military/Professions/Imperial_Dragoon/Imperial_Dragoon.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -16741,8 +16741,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/Convict.dds</FullLengthIcon>
 			<fScale>0.54</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/Special_military/revolting_criminal/Indentured_Servant.nif</NIF>
-			<KFM>Art/Units/Special_military/revolting_criminal/Indentured_Servant.kfm</KFM>
+			<NIF>Art/Units/Special_military/revolting_criminal/revolting_criminal.nif</NIF>
+			<KFM>Art/Units/Special_military/revolting_criminal/revolting_criminal.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -16775,8 +16775,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/CM_revolting_slave.dds</FullLengthIcon>
 			<fScale>0.54</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
-			<NIF>Art/Units/special_military/revolting_Slave/infantry.nif</NIF>
-			<KFM>Art/Units/special_military/revolting_slave/infantry.kfm</KFM>
+			<NIF>Art/Units/special_military/revolting_Slave/revolting_slave.nif</NIF>
+			<KFM>Art/Units/special_military/revolting_slave/revolting_slave.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
@@ -16827,7 +16827,7 @@
 			<fScale>0.54</fScale>
 			<fInterfaceScale>0.88</fInterfaceScale>
 			<NIF>Art/Units/Special_Military/PoW/PoW_Revolting/Prisoner.nif</NIF>
-			<KFM>Art/Units/special_military/revolting_slave/infantry.kfm</KFM>
+			<KFM>Art/Units/special_military/revolting_slave/revolting_slave.kfm</KFM>
 			<fBattleDistance>0.35</fBattleDistance>
 			<fRangedDeathTime>0.31</fRangedDeathTime>
 			<bActAsRanged>0</bActAsRanged>
