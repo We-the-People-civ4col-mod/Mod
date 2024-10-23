@@ -5773,7 +5773,7 @@
 		<German>Ihr seid von weit her gekommen, Weißer Mann. Eure Kleidung ist schmutzig, Ihr seht ausgezehrt aus, und Euer Atem riecht wie faulender Fisch. Baut Eure Zelte auf und seid unsere Gäste. Kommt wieder zu Kräften. Doch vergesst nicht: Die Erde, auf der Ihr steht, ist nicht Euer Eigen. Wir sind die Kinder dieser Welt, und Ihr seid Fremde hier.</German>
 		<Italian>Hai fatto molta strada, uomo bianco. I tuoi vestiti sono sporchi, hai l'aria sofferente e il tuo alito puzza di pesce in decomposizione. Piantate le vostre tende e siate nostri ospiti. Ritrova la tua forza. Ma ricordate, la terra su cui vi trovate non è vostra. Noi siamo i figli di questo mondo e voi siete stranieri qui.</Italian>
 		<Spanish>Has recorrido un largo camino, hombre blanco. Tu ropa está sucia, tienes un aspecto demacrado y tu aliento huele a pescado podrido. Monta tus tiendas y sé nuestro invitado. Recupera tu fuerza. Pero recuerda que la tierra sobre la que estás no es tuya. Nosotros somos los hijos de este mundo, y ustedes son extraños aquí.</Spanish>
-		<Russian>Вы проделали долгий путь, путники. Грязная одежда, изможденные лица и от вас пахнет морем. Ставьте палатки, будьте нашими гостями. Восстановите свою силу. Но никогда не забывайте: эта земля, на которой вы стоите, не ваша. Мы дети этого мира, а вы здесь чужие.</Russian>
+		<Russian>Вы проделали долгий путь, незнакомцы. Изможденные лица, грязная одежда, от которой пахнет морем. Будьте нашими гостями - разбейте лагерь и отдохните. Но никогда не забывайте: эта земля, на которой вы стоите, не ваша. Мы - дети этого мира, а вы здесь чужие.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_FOUND_FIRST_CITY_1</Tag>
@@ -5782,7 +5782,7 @@
 		<German>Wir danken als Fremde für die Gastfreundschaft, die man uns erweist.</German>
 		<Italian>Come stranieri, rendiamo grazie per l'ospitalità che ci è stata mostrata.</Italian>
 		<Spanish>Como extranjeros, damos las gracias por la hospitalidad que se nos ha brindado.</Spanish>
-		<Russian>Как чужестранцы, мы благодарим за оказанное нам гостеприимство.</Russian>
+		<Russian>Мы благодарим вождя за оказанное нам гостеприимство.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FOUND_CITY_1</Tag>

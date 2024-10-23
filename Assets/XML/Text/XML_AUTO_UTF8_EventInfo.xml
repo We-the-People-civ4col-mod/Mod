@@ -631,7 +631,7 @@
 		<English>Send them some food. It's probably just the flu. They should recover.</English>
 		<French>Envoyez leur de la nourriture. Il s'agit probablement d'une mauvaise grippe contre laquelle les indigènes ne sont pas immunisés.</French>
 		<German>Schickt ihnen etwas Nahrung. Es ist sicherlich nur eine kleine Erkältung und es geht ihnen bald besser.</German>
-		<Russian>Отправьте им немного еды. Это, наверное, просто грипп. Они должны выздороветь.</Russian>
+		<Russian>Отправьте им немного еды. Наверняка это обычная простуда. Они поправятся.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISEASED_NATIVES_2</Tag>
@@ -645,7 +645,7 @@
 		<English>We are deeply sorry, but there is nothing we can do to help.</English>
 		<French>Nous sommes vraiment désolé, mais nous ne pouvons rien faire pour les aider.</French>
 		<German>Wir bedauern zutiefst, aber es gibt nichts, was wir für sie tun können.</German>
-		<Russian>Нам очень жаль, но мы ничем не можем помочь.</Russian>
+		<Russian>Очень жаль, но мы ничем не можем помочь.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISEASED_NATIVES_FOLLOW_UP_1</Tag>
@@ -1850,21 +1850,21 @@
 		<English>Researchers at the Royal Court expect more information about the savages in our region. Let the men search for the legacy of the Natives! Our researchers are particularly taken with the mysterious knot writing.</English>
 		<French>Des chercheurs de la cour du Roi souhaitent en savoir davantager sur les sauvages de notre région. Demandons à nos hommes de chercher à propos de l'héritage de nos indigènes! En particulier, l'écriture mystérieuse des nœuds a retenu l'attention de nos chercheurs.</French>
 		<German>Bei Hofe erwartet man sich weitere Erkenntnisse über die Wilden. Lasst nach ihren Hinterlassenschaften suchen! Insbesondere die geheimnisvolle Knotenschrift hat es unseren Forschern angetan.</German>
-		<Russian>Исследователи Королевского двора ожидают больше информации о дикарях нашего региона. Пусть люди ищут наследие туземцев! Наших исследователей особенно интересует таинственная узелковая письменность.</Russian>
+		<Russian>Летописцы Королевского двора ожидают больше информации о дикарях этого региона. Прикажите разведчикам заняться поиском любых вещей из жизни индейцев! Особенно интересно было бы выяснить хоть что-нибудь про таинственную узелковую письменность.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RUINS_DONE_2</Tag>
 		<English>Let them search the junk and see if they can get something useful.</English>
 		<French>Qu'ils cherchent dans le bazar pour voir s'ils y trouvent quelque chose d'utile.</French>
 		<German>Lasst sie die Schrotthaufen nach etwas Verwertbarem durchsuchen.</German>
-		<Russian>Пусть они обыщут этот хлам. Может и найдут что-нибудь полезное.</Russian>
+		<Russian>Некоторые торговцы утверждают, что видели у туземцев что-то похожее на повозку. Интересно было бы на неё взглянуть.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RUINS_DONE_3</Tag>
 		<English>My palace needs renovation. Let them search for treasures!</English>
 		<French>Mon palais a besoin d'une petite restauration. Qu'ils recherchent un trésor !</French>
 		<German>Mein Palast müsste dringend renoviert werden. Lasst sie nach Schätzen suchen!</German>
-		<Russian>Мой дворец нуждается в ремонте. Пусть ищут сокровища!</Russian>
+		<Russian>Мой особняк нуждается в ремонте. Пусть ищут сокровища!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RUINS_DONE_4</Tag>
