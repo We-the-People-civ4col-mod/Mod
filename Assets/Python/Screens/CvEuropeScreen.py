@@ -289,7 +289,7 @@ class CvEuropeScreen:
 	
 		# show background
 		if not self.iThisWinter:
-			if self.iVideo > 0 and iCurrentTurn % self.iVideo == 0 and not iCurrentTurn == 0 and not CyUserProfile().getGraphicOption(GraphicOptionTypes.GRAPHICOPTION_NO_MOVIES):
+			if self.iVideo > 0 and iCurrentTurn % self.iVideo == 0 and not CyUserProfile().getGraphicOption(GraphicOptionTypes.GRAPHICOPTION_NO_MOVIES):
 				screen.playMovie("Art/Interface/Screens/Europe/intro.bik", 0, 0, self.XResolution, self.YResolution * 23 / 100, 0)
 				screen.addDDSGFC("EuropeScreenBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_EUROPE_BACKGROUND").getPath(), 0, 0, self.XResolution, self.YResolution, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 			else:
