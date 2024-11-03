@@ -4,6 +4,7 @@
 *.pdb
 *.dll
 /Project Files/.vs/
+/Project Files/Autogenerate/.vs/
 /Project Files/temp_files/
 *.vcxproj.user
 *.settings
