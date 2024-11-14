@@ -16,10 +16,22 @@ void OutputHandler::addStartBracket()
 	changeIndent(1);
 }
 
-void OutputHandler::addEndBracket()
+void OutputHandler::addEndBracket(bool bAddSemicolon)
 {
 	changeIndent(-1);
-	printLine("}");
+	if (bAddSemicolon)
+	{
+		printLine("};");
+	}
+	else
+	{
+		printLine("}");
+	}
+}
+
+void OutputHandler::printLine()
+{
+	m_text.append("\n");
 }
 
 void OutputHandler::printLine(const char* A)
@@ -43,6 +55,39 @@ void OutputHandler::printLine(const char* A, const char* B, const char* C)
 	m_text.append(A);
 	m_text.append(B);
 	m_text.append(C);
+	m_text.append("\n");
+}
+
+void OutputHandler::printLine(const char* A, const char* B, const char* C, const char* D)
+{
+	addIndent();
+	m_text.append(A);
+	m_text.append(B);
+	m_text.append(C);
+	m_text.append(D);
+	m_text.append("\n");
+}
+
+void OutputHandler::printLine(const char* A, const char* B, const char* C, const char* D, const char* E)
+{
+	addIndent();
+	m_text.append(A);
+	m_text.append(B);
+	m_text.append(C);
+	m_text.append(D);
+	m_text.append(E);
+	m_text.append("\n");
+}
+
+void OutputHandler::printLine(const char* A, const char* B, const char* C, const char* D, const char* E, const char* F)
+{
+	addIndent();
+	m_text.append(A);
+	m_text.append(B);
+	m_text.append(C);
+	m_text.append(D);
+	m_text.append(E);
+	m_text.append(F);
 	m_text.append("\n");
 }
 
@@ -71,8 +116,7 @@ void OutputHandler::addIndent()
 {
 	switch (m_indent)
 	{
-		// no breaks. Fall through as this way it will add one for each number
-		// this causes less overhead than a loop
+		// switch case as it executes faster than a loop. 
 	case 0: return;
 	case 1: m_text.append("\t"); return;
 	case 2: m_text.append("\t\t"); return;

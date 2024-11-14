@@ -8,11 +8,15 @@ public:
 	OutputHandler();
 	
 	void addStartBracket();
-	void addEndBracket();
+	void addEndBracket(bool bAddSemicolon = false);
 
+	void printLine();
 	void printLine(const char* A);
 	void printLine(const char* A, const char* B);
 	void printLine(const char* A, const char* B, const char* C);
+	void printLine(const char* A, const char* B, const char* C, const char* D);
+	void printLine(const char* A, const char* B, const char* C, const char* D, const char* E);
+	void printLine(const char* A, const char* B, const char* C, const char* D, const char* E, const char* F);
 
 	void printLineRemoveLastChar(const char* A, const char* B);
 

@@ -90,6 +90,7 @@
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Source\EnumGen.cpp" />
     <ClCompile Include="Source\FileAccess.cpp" />
     <ClCompile Include="Source\LineString.cpp" />
     <ClCompile Include="Source\Main.cpp" />
@@ -99,6 +100,7 @@
   <ItemGroup>
     <ClInclude Include="Source\assert.h" />
     <ClInclude Include="Source\Constants.h" />
+    <ClInclude Include="Source\EnumGen.h" />
     <ClInclude Include="Source\FileAccess.h" />
     <ClInclude Include="Source\LineString.h" />
     <ClInclude Include="Source\OutputHandler.h" />

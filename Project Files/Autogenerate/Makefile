@@ -54,6 +54,7 @@ AUTO_ALL: $(AUTO_EXE)
 AUTO_HEADER = \
 	$(AUTO_SOURCE)\assert.h \
 	$(AUTO_SOURCE)\Constants.h \
+	$(AUTO_SOURCE)\EnumGen.h \
 	$(AUTO_SOURCE)\FileAccess.h \
 	$(AUTO_SOURCE)\LineString.h \
 	$(AUTO_SOURCE)\OutputHandler.h \
@@ -64,6 +65,7 @@ AUTO_HEADER = \
 
 AUTO_OBJ = \
 	$(TEMP_AUTO_TARGET)\Main.obj \
+	$(TEMP_AUTO_TARGET)\EnumGen.obj \
 	$(TEMP_AUTO_TARGET)\FileAccess.obj \
 	$(TEMP_AUTO_TARGET)\LineString.obj \
 	$(TEMP_AUTO_TARGET)\OutputHandler.obj \

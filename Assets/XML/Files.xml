@@ -24,6 +24,13 @@
 		<Files>
 			<File>BasicInfos/CIV4DomainInfos.xml</File>
 		</Files>
+		<AlwaysStatic>1</AlwaysStatic>
+		<Types>
+			<Type>DOMAIN_SEA</Type>
+			<Type>DOMAIN_LAND</Type>
+			<Type>DOMAIN_IMMOBILE</Type>
+		</Types>
+		
 	</DomainTypes>
 	<UnitAITypes>
 		<Files>

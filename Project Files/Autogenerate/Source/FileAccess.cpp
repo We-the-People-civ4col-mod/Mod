@@ -54,6 +54,12 @@ Element Element::NextSibling(const char* name)
 	return Element(m_pElement->NextSiblingElement(name));
 }
 
+bool Element::getBool() const
+{
+	assert(isValid());
+	return m_pElement->BoolText();
+}
+
 const char* Element::getText() const
 {
 	assert(isValid());
@@ -122,7 +128,7 @@ FileAccessXML::FileAccessXML(const char* FileName)
 	{
 		// try opening vanilla instead
 		file = getDir(FileLocation::FILE_LOCATION_ROOT);
-		file.append("../");
+		file.append("../../");
 		file.append(XML_DIR);
 		file.append(m_Filename);
 		m_Doc.LoadFile(file.c_str());

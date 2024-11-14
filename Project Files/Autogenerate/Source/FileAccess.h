@@ -29,6 +29,7 @@ public:
 	Element FirstChild(const char* name = NULL);
 	Element NextSibling(const char* name = NULL);
 
+	bool getBool() const;
 	const char* getText() const;
 
 private:
