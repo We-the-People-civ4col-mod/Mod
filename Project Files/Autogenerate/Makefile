@@ -55,9 +55,11 @@ AUTO_HEADER = \
 	$(AUTO_SOURCE)\assert.h \
 	$(AUTO_SOURCE)\Constants.h \
 	$(AUTO_SOURCE)\EnumGen.h \
+	$(AUTO_SOURCE)\EnumMap.h \
 	$(AUTO_SOURCE)\FileAccess.h \
 	$(AUTO_SOURCE)\LineString.h \
 	$(AUTO_SOURCE)\OutputHandler.h \
+	$(AUTO_SOURCE)\SourceReader.h \
 	$(AUTO_SOURCE)\tinyxml2.h \
 	Makefile \
 
@@ -66,9 +68,11 @@ AUTO_HEADER = \
 AUTO_OBJ = \
 	$(TEMP_AUTO_TARGET)\Main.obj \
 	$(TEMP_AUTO_TARGET)\EnumGen.obj \
+	$(TEMP_AUTO_TARGET)\EnumMap.obj \
 	$(TEMP_AUTO_TARGET)\FileAccess.obj \
 	$(TEMP_AUTO_TARGET)\LineString.obj \
 	$(TEMP_AUTO_TARGET)\OutputHandler.obj \
+	$(TEMP_AUTO_TARGET)\SourceReader.obj \
 	$(TEMP_AUTO_TARGET)\tinyxml2.obj \
 
 

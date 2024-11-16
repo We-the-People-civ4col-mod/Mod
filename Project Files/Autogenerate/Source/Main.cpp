@@ -1,6 +1,7 @@
 //#include <stdio.h>
 
 #include "EnumGen.h"
+#include "EnumMap.h"
 #include "FileAccess.h"
 
 
@@ -20,6 +21,7 @@ void readXMLFiles()
 int main()
 {
 	TextFile::setup();
+	EnumMapGen EnumMaps;
 
 	readXMLFiles();
 

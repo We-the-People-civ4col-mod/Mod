@@ -91,19 +91,23 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source\EnumGen.cpp" />
+    <ClCompile Include="Source\EnumMap.cpp" />
     <ClCompile Include="Source\FileAccess.cpp" />
     <ClCompile Include="Source\LineString.cpp" />
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\OutputHandler.cpp" />
+    <ClCompile Include="Source\SourceReader.cpp" />
     <ClCompile Include="Source\tinyxml2.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Source\assert.h" />
     <ClInclude Include="Source\Constants.h" />
     <ClInclude Include="Source\EnumGen.h" />
+    <ClInclude Include="Source\EnumMap.h" />
     <ClInclude Include="Source\FileAccess.h" />
     <ClInclude Include="Source\LineString.h" />
     <ClInclude Include="Source\OutputHandler.h" />
+    <ClInclude Include="Source\SourceReader.h" />
     <ClInclude Include="Source\tinyxml2.h" />
   </ItemGroup>
   <ItemGroup>

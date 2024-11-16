@@ -9,5 +9,7 @@ public:
 	LineString(std::string);
 
 	void killLeadingWhitespace();
+	void killTrailingWhitespace();
+	void trim();
 	void killFirstChar(char character);
 };
