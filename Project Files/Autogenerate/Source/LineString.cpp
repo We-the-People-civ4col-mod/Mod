@@ -47,3 +47,8 @@ void LineString::killFirstChar(char character)
 		erase(0, 1);
 	}
 }
+
+LineString::operator const char*() const
+{
+	return c_str();
+}

@@ -5,21 +5,51 @@
   Type: error messages will report the text in the child tag of this name. Defaults to Type
 -->
 <Files>
+	<BonusTypes>
+		<Files>
+			<File>Terrain/CIV4BonusInfos.xml</File>
+		</Files>
+	</BonusTypes>
 	<BuildTypes>
 		<Files>
 			<File>Units/CIV4BuildInfos.xml</File>
 		</Files>
 	</BuildTypes>
+	<BuildingTypes>
+		<Files>
+			<File>Buildings/CIV4BuildingInfos.xml</File>
+		</Files>
+	</BuildingTypes>
+	<BuildingClassTypes>
+		<Files>
+			<File>Buildings/CIV4BuildingClassInfos.xml</File>
+		</Files>
+	</BuildingClassTypes>
 	<CivCategoryTypes>
 		<Files>
 			<File>Civilizations/CivCategoryInfos.xml</File>
 		</Files>
 	</CivCategoryTypes>
+	<CivicTypes>
+		<Files>
+			<File>GameInfo/CIV4CivicInfos.xml</File>
+		</Files>
+	</CivicTypes>
+	<CivicOptionTypes>
+		<Files>
+			<File>GameInfo/CIV4CivicOptionInfos.xml</File>
+		</Files>
+	</CivicOptionTypes>
 	<CivilizationTypes>
 		<Files>
 			<File>Civilizations/CIV4CivilizationInfos.xml</File>
 		</Files>
 	</CivilizationTypes>
+	<CultureLevelTypes>
+		<Files>
+			<File>GameInfo/CIV4CultureLevelInfo.xml</File>
+		</Files>
+	</CultureLevelTypes>
 	<DomainTypes>
 		<Files>
 			<File>BasicInfos/CIV4DomainInfos.xml</File>
@@ -30,11 +60,121 @@
 			<Type>DOMAIN_LAND</Type>
 			<Type>DOMAIN_IMMOBILE</Type>
 		</Types>
-		
 	</DomainTypes>
+	<EmphasizeTypes>
+		<Files>
+			<File>GameInfo/CIV4EmphasizeInfo.xml</File>
+		</Files>
+	</EmphasizeTypes>
+	<FatherTypes>
+		<Files>
+			<File>GameInfo/CIV4FatherInfos.xml</File>
+		</Files>
+	</FatherTypes>
+	<FatherPointTypes>
+		<Files>
+			<File>GameInfo/CIV4FatherPointInfos.xml</File>
+		</Files>
+	</FatherPointTypes>
+	<FeatureTypes>
+		<Files>
+			<File>Terrain/CIV4FeatureInfos.xml</File>
+		</Files>
+	</FeatureTypes>
+	<GoodyTypes>
+		<Files>
+			<File>GameInfo/CIV4GoodyInfo.xml</File>
+		</Files>
+	</GoodyTypes>
+	<HurryTypes>
+		<Files>
+			<File>GameInfo/CIV4HurryInfo.xml</File>
+		</Files>
+		<AlwaysStatic>1</AlwaysStatic>
+		<Types>
+			<Type>HURRY_GOLD</Type>
+			<Type>HURRY_IMMIGRANT</Type>
+		</Types>
+	</HurryTypes>
+	<ImprovementTypes>
+		<Files>
+			<File>Terrain/CIV4ImprovementInfos.xml</File>
+		</Files>
+	</ImprovementTypes>
+	<InvisibleTypes>
+		<Files>
+			<File>BasicInfos/CIV4InvisibleInfos.xml</File>
+		</Files>
+	</InvisibleTypes>
+	<MemoryTypes>
+		<Files>
+			<File>BasicInfos/CIV4MemoryInfos.xml</File>
+		</Files>
+	</MemoryTypes>
+	<PlayerOptionTypes>
+		<Files>
+			<File>GameInfo/CIV4PlayerOptionInfos.xml</File>
+		</Files>
+	</PlayerOptionTypes>
+	<ProfessionTypes>
+		<Files>
+			<File>Units/CIV4ProfessionInfos.xml</File>
+		</Files>
+	</ProfessionTypes>
+	<PromotionTypes>
+		<Files>
+			<File>Units/CIV4PromotionInfos.xml</File>
+		</Files>
+	</PromotionTypes>
+	<RouteTypes>
+		<Files>
+			<File>Misc/CIV4RouteInfos.xml</File>
+		</Files>
+	</RouteTypes>
+	<SpecialBuildingTypes>
+		<Files>
+			<File>Buildings/CIV4SpecialBuildingInfos.xml</File>
+		</Files>
+	</SpecialBuildingTypes>
+	<SpecialUnitTypes>
+		<Files>
+			<File>Units/CIV4SpecialUnitInfos.xml</File>
+		</Files>
+	</SpecialUnitTypes>
+	<TerrainTypes>
+		<Files>
+			<File>Terrain/CIV4TerrainInfos.xml</File>
+		</Files>
+	</TerrainTypes>
+	<TraitTypes>
+		<Files>
+			<File>Civilizations/CIV4TraitInfos.xml</File>
+		</Files>
+	</TraitTypes>
+	<UnitTypes>
+		<Files>
+			<File>Units/CIV4UnitInfos.xml</File>
+		</Files>
+	</UnitTypes>
+	<UnitClassTypes>
+		<Files>
+			<File>Units/CIV4UnitClassInfos.xml</File>
+		</Files>
+	</UnitClassTypes>
 	<UnitAITypes>
 		<Files>
 			<File>BasicInfos/CIV4UnitAIInfos.xml</File>
 		</Files>
 	</UnitAITypes>
+	<UnitCombatTypes>
+		<Files>
+			<File>BasicInfos/CIV4UnitCombatInfos.xml</File>
+		</Files>
+	</UnitCombatTypes>
+	<YieldTypes>
+		<Files>
+			<File>Terrain/CIV4YieldInfos.xml</File>
+		</Files>
+		<AlwaysStatic>1</AlwaysStatic>
+	</YieldTypes>
 </Files>

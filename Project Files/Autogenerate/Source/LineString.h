@@ -12,4 +12,6 @@ public:
 	void killTrailingWhitespace();
 	void trim();
 	void killFirstChar(char character);
+
+	operator const char*() const;
 };

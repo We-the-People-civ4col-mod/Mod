@@ -1,12 +1,42 @@
 #include <stdio.h>
 
+#include "assert.h"
 #include "EnumGen.h"
 #include "FileAccess.h"
 #include "OutputHandler.h"
 
+std::vector<EnumGen> EnumVec;
+
+const std::vector<EnumGen>& EnumGen::getVector()
+{
+	return EnumVec;
+}
+
+const EnumGen* EnumGen::getEntry(std::string name)
+{
+	for (std::vector<EnumGen>::iterator it = EnumVec.begin(); it != EnumVec.end(); it++)
+	{
+		if (it->name() == name)
+		{
+			return &(*it);
+		}
+	}
+	assert(false);
+	return NULL;
+}
+
+EnumGen::EnumGen(const char* name, int ilength)
+	: m_bAlwaysStatic(true)
+	, m_bHasFile(false)
+	, m_iLength(ilength)
+	, m_name(name)
+{
+	EnumVec.push_back(*this);
+}
 
 EnumGen::EnumGen(class Element file)
 	: m_bAlwaysStatic(false)
+	, m_bHasFile(true)
 {
 	m_name = file.name();
 	m_name.erase(m_name.size()-5, 5);
@@ -16,8 +46,6 @@ EnumGen::EnumGen(class Element file)
 	{
 		m_bAlwaysStatic = AlwaysStatic.getBool();
 	}
-
-	// = false;
 
 	Element current_file = file.FirstChild("Files");
 	for (current_file = current_file.FirstChild("File"); current_file.isValid(); current_file = current_file.NextSibling("File"))
@@ -52,6 +80,26 @@ EnumGen::EnumGen(class Element file)
 			}
 		}
 	}
+
+	m_iLength = m_types.size();
+
+	EnumVec.push_back(*this);
+}
+
+
+bool EnumGen::isStatic() const
+{
+	return m_bAlwaysStatic;
+}
+
+const std::string EnumGen::name() const
+{
+	return m_name;
+}
+
+int EnumGen::length() const
+{
+	return m_iLength;
 }
 
 void EnumGen::writeFile()

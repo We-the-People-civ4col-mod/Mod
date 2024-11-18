@@ -1,8 +1,7 @@
-//#include <stdio.h>
-
 #include "EnumGen.h"
 #include "EnumMap.h"
 #include "FileAccess.h"
+#include "EnumGen.h"
 
 
 void readXMLFiles()
@@ -21,9 +20,21 @@ void readXMLFiles()
 int main()
 {
 	TextFile::setup();
-	EnumMapGen EnumMaps;
-
 	readXMLFiles();
+
+	{
+		EnumGen("AreaAI", 7);
+		EnumGen("CityPlot", 25);
+		EnumGen("Contact", 12);
+		EnumGen("Emotion", 5);
+		EnumGen("Feat", 10);
+		EnumGen("Player", 60);
+		EnumGen("Strategy", 13);
+		EnumGen("Team", 60);
+		EnumGen("WarPlan", 8);
+	}
+
+	EnumMapGen EnumMaps;
 
 	return 0;
 }

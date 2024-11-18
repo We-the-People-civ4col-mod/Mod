@@ -17,6 +17,9 @@ public:
 	void printLine(const char* A, const char* B, const char* C, const char* D);
 	void printLine(const char* A, const char* B, const char* C, const char* D, const char* E);
 	void printLine(const char* A, const char* B, const char* C, const char* D, const char* E, const char* F);
+	void printLine(const char* A, const char* B, const char* C, const char* D, const char* E, const char* F, const char* G);
+	void printLine(const char* A, const char* B, const char* C, const char* D, const char* E, const char* F, const char* G, const char* H);
+	void printLine(const char* A, const char* B, const char* C, const char* D, const char* E, const char* F, const char* G, const char* H, const char* I);
 
 	void printLineRemoveLastChar(const char* A, const char* B);
 
