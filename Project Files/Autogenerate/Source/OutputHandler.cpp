@@ -104,6 +104,19 @@ void OutputHandler::printLine(const char* A, const char* B, const char* C, const
 	m_text.append("\n");
 }
 
+void OutputHandler::printLine(const char* A, const char* B, const char* C, const char* D, const char* E, const char* F, const char* G, const char* H)
+{
+	addIndent();
+	m_text.append(A);
+	m_text.append(B);
+	m_text.append(C);
+	m_text.append(D);
+	m_text.append(E);
+	m_text.append(F);
+	m_text.append(G);
+	m_text.append(H);
+	m_text.append("\n");
+}
 void OutputHandler::printLine(const char* A, const char* B, const char* C, const char* D, const char* E, const char* F, const char* G, const char* H, const char* I)
 {
 	addIndent();

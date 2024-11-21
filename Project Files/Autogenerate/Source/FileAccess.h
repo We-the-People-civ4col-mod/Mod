@@ -30,6 +30,7 @@ public:
 	Element NextSibling(const char* name = NULL);
 
 	bool getBool() const;
+	int getInt() const;
 	const char* getText() const;
 
 private:

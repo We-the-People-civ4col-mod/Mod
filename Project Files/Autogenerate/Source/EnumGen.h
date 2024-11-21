@@ -28,6 +28,7 @@ private:
 
 	std::vector<std::string> m_types;
 	std::string m_name;
+	std::string m_num;
 	bool m_bAlwaysStatic;
 	bool m_bHasFile;
 	int m_iLength;

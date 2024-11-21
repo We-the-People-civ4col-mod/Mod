@@ -60,6 +60,12 @@ bool Element::getBool() const
 	return m_pElement->BoolText();
 }
 
+int Element::getInt() const
+{
+	assert(isValid());
+	return m_pElement->IntText();
+}
+
 const char* Element::getText() const
 {
 	assert(isValid());

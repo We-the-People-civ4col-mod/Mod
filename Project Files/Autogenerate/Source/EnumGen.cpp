@@ -47,23 +47,37 @@ EnumGen::EnumGen(class Element file)
 		m_bAlwaysStatic = AlwaysStatic.getBool();
 	}
 
-	Element current_file = file.FirstChild("Files");
-	for (current_file = current_file.FirstChild("File"); current_file.isValid(); current_file = current_file.NextSibling("File"))
+	Element NumName = file.FirstChild("NumName");
+	if (NumName.isValid())
 	{
-		const char* filename = current_file.getText();
-		FileAccessXML xml_file(filename);
+		m_num = NumName.getText();
+	}
 
-		Element tag = xml_file.getRoot();
-
-		while (tag.isValid() && !tag.FirstChild("Type").isValid())
+	Element current_file = file.FirstChild("Files");
+	if (!current_file.isValid())
+	{
+		m_bAlwaysStatic = true;
+		m_bHasFile = false;
+	}
+	else
+	{
+		for (current_file = current_file.FirstChild("File"); current_file.isValid(); current_file = current_file.NextSibling("File"))
 		{
-			tag = tag.FirstChild();
-		}
+			const char* filename = current_file.getText();
+			FileAccessXML xml_file(filename);
 
-		for (; tag.isValid(); tag = tag.NextSibling())
-		{
-			const char* type = tag.FirstChild("Type").getText();
-			m_types.push_back(type);
+			Element tag = xml_file.getRoot();
+
+			while (tag.isValid() && !tag.FirstChild("Type").isValid())
+			{
+				tag = tag.FirstChild();
+			}
+
+			for (; tag.isValid(); tag = tag.NextSibling())
+			{
+				const char* type = tag.FirstChild("Type").getText();
+				m_types.push_back(type);
+			}
 		}
 	}
 
@@ -81,7 +95,18 @@ EnumGen::EnumGen(class Element file)
 		}
 	}
 
-	m_iLength = m_types.size();
+	if (m_types.size() > 0)
+	{
+		m_iLength = m_types.size();
+	}
+	else
+	{
+		Element lengthTag = file.FirstChild("iLength");
+		if (lengthTag.isValid())
+		{
+			m_iLength = lengthTag.getInt();
+		}
+	}
 
 	EnumVec.push_back(*this);
 }
