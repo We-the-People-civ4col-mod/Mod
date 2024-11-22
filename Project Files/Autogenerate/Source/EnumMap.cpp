@@ -9,16 +9,20 @@
 EnumMapGen::EnumMapTypes::EnumMapTypes()
 	: m_EnumDataIndex(NULL)
 	, m_EnumDataVar(NULL)
+	, m_file_inline(NULL)
 	, m_ArrayType(EnumMapArray_Standard)
 	, m_bDefaultZero(true)
+	, m_bIsEnumMap(false)
 {
 }
 
 EnumMapGen::EnumMapTypes::EnumMapTypes(std::string input)
 	: m_EnumDataIndex(NULL)
 	, m_EnumDataVar(NULL)
+	, m_file_inline(NULL)
 	, m_ArrayType(EnumMapArray_Standard)
 	, m_bDefaultZero(true)
+	, m_bIsEnumMap(false)
 {
 	m_default.assign("0");
 
@@ -30,6 +34,7 @@ EnumMapGen::EnumMapTypes::EnumMapTypes(std::string input)
 
 	if (m_varable.compare(0, 7, "EnumMap") == 0)
 	{
+		m_bIsEnumMap = true;
 		m_varable.trim();
 		m_varable.append(">");
 	}
@@ -47,13 +52,21 @@ EnumMapGen::EnumMapTypes::EnumMapTypes(std::string input)
 	}
 }
 
-void EnumMapGen::EnumMapTypes::setup(OutputHandler* header, OutputHandler* cpp)
+void EnumMapGen::EnumMapTypes::setup(OutputHandler* header, OutputHandler* cpp, OutputHandler* inlineFile)
 {
 	m_file_header = header;
 	m_file_cpp = cpp;
+	m_file_inline = inlineFile;
 
 	m_typesIndex = getType(m_index);
 	m_typesVariable = getType(m_varable);
+
+	if (m_typesVariable == EnumMap_Class && m_varable.size() > 7 && m_varable.substr(0, 7).compare("EnumMap") == 0)
+	{
+		LineString temp = m_varable.substr(7);
+		m_varable.assign(ENUMMAP_NAME);
+		m_varable.append(temp);
+	}
 
 	switch (m_typesIndex)
 	{
@@ -78,24 +91,34 @@ void EnumMapGen::EnumMapTypes::setup(OutputHandler* header, OutputHandler* cpp)
 	switch (m_typesVariable)
 	{
 	case EnumMap_Bool:
+		m_varableDec = m_varable;
+		m_varName.assign("bValue");
+		break;
 	case EnumMap_Variable:
 		m_varableDec = m_varable;
+		m_varName.assign("iValue");
 		break;
 	case EnumMap_Type:
 		m_EnumDataVar = EnumGen::getEntry(m_varable.substr(0, m_varable.size() - 4));
-		// fallthrough
-	case EnumMap_Class:
 		m_varableDec.assign("class ");
 		m_varableDec.append(m_varable);
+		m_varName.assign("eValue");
+		break;
+	case EnumMap_Class:
+		m_varableDec.assign("class ");
+		m_varableDec.append(classAddDec(m_varable));
+		m_varName.assign("value");
 		break;
 	case EnumMap_Types:
 	case EnumMap_Special:
 		m_varableDec.assign("enum ");
 		m_varableDec.append(m_varable);
+		m_varName.assign("eValue");
 		m_EnumDataVar = EnumGen::getEntry(m_varable.substr(0, m_varable.size() - 5));
 	};
 
-	m_fullname.assign("EnumMap<");
+	m_fullname.assign(ENUMMAP_NAME);
+	m_fullname.append("<");
 	m_fullname.append(m_index);
 	m_fullname.append(", ");
 	m_fullname.append(m_varable);
@@ -104,7 +127,8 @@ void EnumMapGen::EnumMapTypes::setup(OutputHandler* header, OutputHandler* cpp)
 	m_fullname.append(">");
 
 
-	m_fullnameDec.assign("EnumMap<");
+	m_fullnameDec.assign(ENUMMAP_NAME);
+	m_fullnameDec.append("<");
 	m_fullnameDec.append(m_indexDec);
 	m_fullnameDec.append(", ");
 	m_fullnameDec.append(m_varableDec);
@@ -139,14 +163,25 @@ void EnumMapGen::EnumMapTypes::setup(OutputHandler* header, OutputHandler* cpp)
 	case EnumMap_Types:
 	case EnumMap_Special:
 	{
-		std::string name = m_EnumDataIndex->name();
-		std::transform(name.begin(), name.end(), name.begin(), ::toupper);
-		m_NUM.assign("NUM_");
-		m_NUM.append(name);
-		m_NUM.append("_TYPES");
+		const std::string num = m_EnumDataIndex->num();
+
+		if (num.size() > 0)
+		{
+			m_NUM = num;
+		}
+		else
+		{
+			std::string name = m_EnumDataIndex->name();
+			std::transform(name.begin(), name.end(), name.begin(), ::toupper);
+			m_NUM.assign("NUM_");
+			m_NUM.append(name);
+			m_NUM.append("_TYPES");
+		}
 		break;
 	}
 	}
+
+	m_BoolDefault.assign(m_bDefaultZero ? "0" : "0xFFFFFFFF");
 }
 
 const char* EnumMapGen::EnumMapTypes::index() const
@@ -217,11 +252,12 @@ void EnumMapGen::EnumMapTypes::printFile()
 
 	if (m_typesVariable != EnumMap_Class)
 	{
-		func_toVector();
-		func_fromVector();
+	//	func_toVector();
+	//	func_fromVector();
 	}
 	
 	m_file_header->printLineNoIndent("private:");
+	func_allocateInternal();
 	addArrayVar();
 
 	m_file_header->addEndBracket(true);
@@ -232,7 +268,6 @@ void EnumMapGen::EnumMapTypes::func_constructor()
 {
 	m_file_header->printLine(ENUMMAP_NAME, "();");
 
-	m_file_cpp->printLine("template <>");
 	m_file_cpp->printLine(m_fullname, "::", ENUMMAP_NAME, "()");
 	switch (m_ArrayType)
 	{
@@ -248,29 +283,23 @@ void EnumMapGen::EnumMapTypes::func_constructor()
 		break;
 	case EnumMapArray_Bool_static_1:
 		m_file_cpp->addStartBracket();
-		if (!m_bDefaultZero)
-		{
-			m_file_cpp->printLine("m_Array.setAll(true);");
-		}
+		m_file_cpp->printLine("m_Array.m_iVar = ", m_BoolDefault, ";");
 		m_file_cpp->addEndBracket();
 		break;
 	case EnumMapArray_Bool_static_2:
 		m_file_cpp->addStartBracket();
-		if (!m_bDefaultZero)
-		{
-			m_file_cpp->printLine("m_Array[0].setAll(true);");
-			m_file_cpp->printLine("m_Array[1].setAll(true);");
-		}
+		m_file_cpp->printLine("m_Array[0].m_iVar = ", m_BoolDefault, ";");
+		m_file_cpp->printLine("m_Array[1].m_iVar = ", m_BoolDefault, ";");
 		m_file_cpp->addEndBracket();
 		break;
 	case EnumMapArray_Bool_dynamic_1:
 		m_file_cpp->addStartBracket();
 		m_file_cpp->printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
-		m_file_cpp->printLine("m_Array.setAll(", m_default, ");");
+		m_file_cpp->printLine("m_Array.m_iVar = ", m_BoolDefault, ";");
 		m_file_cpp->printLineNoIndent("#else");
 		m_file_cpp->printLine("if (", m_NUM, " <= 32)");
 		m_file_cpp->addStartBracket();
-		m_file_cpp->printLine("m_Array.setAll(", m_default, ");");
+		m_file_cpp->printLine("m_Array.m_iVar = ", m_default, ";");
 		m_file_cpp->addEndBracket();
 		m_file_cpp->printLine("else");
 		m_file_cpp->addStartBracket();
@@ -282,7 +311,8 @@ void EnumMapGen::EnumMapTypes::func_constructor()
 	case EnumMapArray_Bool_dynamic_2:
 		m_file_cpp->addStartBracket();
 		m_file_cpp->printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
-		m_file_cpp->printLine("m_Array.setAll(", m_default, ");");
+		m_file_cpp->printLine("m_Array[0].m_iVar = ", m_BoolDefault, ";");
+		m_file_cpp->printLine("m_Array[1].m_iVar = ", m_BoolDefault, ";");
 		m_file_cpp->printLineNoIndent("#else");
 		m_file_cpp->printLine("m_pArray = NULL;");
 		m_file_cpp->printLineNoIndent("#endif");
@@ -296,7 +326,6 @@ void EnumMapGen::EnumMapTypes::func_deconstructor()
 {
 	m_file_header->printLine("~", ENUMMAP_NAME, "();");
 
-	m_file_cpp->printLine("template <>");
 	m_file_cpp->printLine(m_fullname, "::~", ENUMMAP_NAME, "()");
 
 	m_file_cpp->addStartBracket();
@@ -331,50 +360,84 @@ void EnumMapGen::EnumMapTypes::func_isAllocated()
 {
 	m_file_header->printLine("bool isAllocated() const;");
 
-	m_file_cpp->printLine("template <>");
-	m_file_cpp->printLine("bool ", m_fullname, "::isAllocated() const");
-	m_file_cpp->addStartBracket();
-
 	switch (m_ArrayType)
 	{
 	case EnumMapArray_Standard:
 	case EnumMapArray_Bool:
-		m_file_cpp->printLine("return m_pArray != NULL;");
+		m_file_inline->printLine("inline bool ", m_fullnameDec, "::isAllocated() const");
+		m_file_inline->addStartBracket();
+		m_file_inline->printLine("return m_pArray != NULL;");
+		m_file_inline->addEndBracket();
+		m_file_inline->printLine();
 		break;
 	case EnumMapArray_Bool_static_1:
 	case EnumMapArray_Bool_static_2:
-		m_file_cpp->printLine("return true;");
+		m_file_inline->printLine("inline bool ", m_fullnameDec, "::isAllocated() const");
+		m_file_inline->addStartBracket();
+		m_file_inline->printLine("return true;");
+		m_file_inline->addEndBracket();
+		m_file_inline->printLine();
 		break;
 	case EnumMapArray_Bool_dynamic_1:
-		m_file_cpp->printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
-		m_file_cpp->printLine("return true;");
-		m_file_cpp->printLineNoIndent("#else");
+		m_file_inline->printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
+		m_file_inline->printLine("inline bool ", m_fullnameDec, "::isAllocated() const");
+		m_file_inline->addStartBracket();
+		m_file_inline->printLine("return true;");
+		m_file_inline->addEndBracket();
+		m_file_inline->printLineNoIndent("#endif");
+		m_file_inline->printLine();
+
+		m_file_cpp->printLineNoIndent("#ifndef HARDCODE_XML_VALUES");
+		m_file_cpp->printLine("bool ", m_fullname, "::isAllocated() const");
+		m_file_cpp->addStartBracket();
 		m_file_cpp->printLine("return ", m_NUM, " <= 32 || m_pArray != NULL;");
+		m_file_cpp->addEndBracket();
 		m_file_cpp->printLineNoIndent("#endif");
+		m_file_cpp->printLine();
 		break;
 	case EnumMapArray_Bool_dynamic_2:
-		m_file_cpp->printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
-		m_file_cpp->printLine("return true;");
-		m_file_cpp->printLineNoIndent("#else");
-		m_file_cpp->printLine("return m_pArray != NULL;");
-		m_file_cpp->printLineNoIndent("#endif");
+		m_file_inline->printLine("inline bool ", m_fullnameDec, "::isAllocated() const");
+		m_file_inline->addStartBracket();
+		m_file_inline->printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
+		m_file_inline->printLine("return true;");
+		m_file_inline->printLineNoIndent("#else");
+		m_file_inline->printLine("return m_pArray != NULL;");
+		m_file_inline->printLineNoIndent("#endif");
+		m_file_inline->addEndBracket();
+		m_file_inline->printLine();
 		break;
 	}
-	m_file_cpp->addEndBracket();
-	m_file_cpp->printLine();
+}
+
+void EnumMapGen::EnumMapTypes::func_allocateInternal()
+{
+	if (m_ArrayType != EnumMapArray_Bool_static_1 && m_ArrayType != EnumMapArray_Bool_static_2)
+	{
+		m_file_header->printLine("void _allocate();");
+	}
 }
 
 void EnumMapGen::EnumMapTypes::func_allocate()
 {
 	m_file_header->printLine("void allocate();");
 
-	m_file_cpp->printLine("template <>");
-	m_file_cpp->printLine("void ", m_fullname, "::allocate()");
-	m_file_cpp->addStartBracket();
+	m_file_inline->printLine("inline void ", m_fullnameDec, "::allocate()");
+	m_file_inline->addStartBracket();
+	if (m_ArrayType != EnumMapArray_Bool_static_1 && m_ArrayType != EnumMapArray_Bool_static_2)
+	{
+		if (m_ArrayType == EnumMapArray_Bool_dynamic_1 || m_ArrayType == EnumMapArray_Bool_dynamic_2) m_file_inline->printLineNoIndent("#ifndef HARDCODE_XML_VALUES");
+		m_file_inline->printLine("if (!isAllocated()) _allocate();");
+		if (m_ArrayType == EnumMapArray_Bool_dynamic_1 || m_ArrayType == EnumMapArray_Bool_dynamic_2) m_file_inline->printLineNoIndent("#endif");
+	}
+	m_file_inline->addEndBracket();
+	m_file_inline->printLine();
+
 
 	switch (m_ArrayType)
 	{
 	case EnumMapArray_Standard:
+		m_file_cpp->printLine("void ", m_fullname, "::_allocate()");
+		m_file_cpp->addStartBracket();
 		m_file_cpp->printLine("if (m_pArray != NULL)");
 		m_file_cpp->addStartBracket();
 		m_file_cpp->printLine("m_pArray = new ", var(), "[", m_NUM, "];");
@@ -397,8 +460,12 @@ void EnumMapGen::EnumMapTypes::func_allocate()
 			}
 		}
 		m_file_cpp->addEndBracket();
+		m_file_cpp->addEndBracket();
+		m_file_cpp->printLine();
 		break;
 	case EnumMapArray_Bool:
+		m_file_cpp->printLine("void ", m_fullname, "::_allocate()");
+		m_file_cpp->addStartBracket();
 		m_file_cpp->printLine("if (m_pArray != NULL)");
 		m_file_cpp->addStartBracket();
 		m_file_cpp->printLine("const int size = (", m_NUM, " + 31)/32;");
@@ -407,16 +474,20 @@ void EnumMapGen::EnumMapTypes::func_allocate()
 		{
 			m_file_cpp->printLine("for (int i = 0; i < size; ++i)");
 			m_file_cpp->addStartBracket();
-			m_file_cpp->printLine("m_pArray[i].setAll(true);");
+			m_file_cpp->printLine("m_pArray[i].m_iVar = ", m_BoolDefault, ";");
 			m_file_cpp->addEndBracket();
 		}
 		m_file_cpp->addEndBracket();
+		m_file_cpp->addEndBracket();
+		m_file_cpp->printLine();
 		break;
 	case EnumMapArray_Bool_static_1:
 	case EnumMapArray_Bool_static_2:
 		break;
 	case EnumMapArray_Bool_dynamic_1:
 		m_file_cpp->printLineNoIndent("#ifndef HARDCODE_XML_VALUES");
+		m_file_cpp->printLine("void ", m_fullname, "::_allocate()");
+		m_file_cpp->addStartBracket();
 		m_file_cpp->printLine("if (", m_NUM, " > 32 && m_pArray == NULL)");
 		m_file_cpp->addStartBracket();
 		m_file_cpp->printLine("const int size = (", m_NUM, " + 31)/32;");
@@ -425,37 +496,38 @@ void EnumMapGen::EnumMapTypes::func_allocate()
 		{
 			m_file_cpp->printLine("for (int i = 0; i < size; ++i)");
 			m_file_cpp->addStartBracket();
-			m_file_cpp->printLine("m_pArray[i].setAll(true);");
+			m_file_cpp->printLine("m_pArray[i].m_iVar = ", m_BoolDefault, ";");
 			m_file_cpp->addEndBracket();
 		}
 		m_file_cpp->addEndBracket();
-
-		m_file_cpp->printLine("return ", m_NUM, " <= 32 || m_pArray != NULL;");
+		m_file_cpp->addEndBracket();
 		m_file_cpp->printLineNoIndent("#endif");
+		m_file_cpp->printLine();
 		break;
 	case EnumMapArray_Bool_dynamic_2:
 		m_file_cpp->printLineNoIndent("#ifndef HARDCODE_XML_VALUES");
+		m_file_cpp->printLine("void ", m_fullname, "::_allocate()");
+		m_file_cpp->addStartBracket();
 		m_file_cpp->printLine("const int size = (", m_NUM, " + 31)/32;");
 		m_file_cpp->printLine("m_pArray = new EnumArrayToken[size];");
 		if (!m_bDefaultZero)
 		{
 			m_file_cpp->printLine("for (int i = 0; i < size; ++i)");
 			m_file_cpp->addStartBracket();
-			m_file_cpp->printLine("m_pArray[i].setAll(true);");
+			m_file_cpp->printLine("m_pArray[i].m_iVar = ", m_BoolDefault, ";");
 			m_file_cpp->addEndBracket();
 		}
+		m_file_cpp->addEndBracket();
 		m_file_cpp->printLineNoIndent("#endif");
+		m_file_cpp->printLine();
 		break;
 	}
-	m_file_cpp->addEndBracket();
-	m_file_cpp->printLine();
 }
 
 void EnumMapGen::EnumMapTypes::func_reset()
 {
 	m_file_header->printLine("void reset();");
 
-	m_file_cpp->printLine("template <>");
 	m_file_cpp->printLine("void ", m_fullname, "::reset()");
 	m_file_cpp->addStartBracket();
 
@@ -466,15 +538,15 @@ void EnumMapGen::EnumMapTypes::func_reset()
 		m_file_cpp->printLine("SAFE_DELETE_ARRAY(m_pArray);");
 		break;
 	case EnumMapArray_Bool_static_1:
-		m_file_cpp->printLine("m_Array.setAll(", m_default, ");");
+		m_file_cpp->printLine("m_Array.m_iVar = ", m_BoolDefault, ";");
 		break;
 	case EnumMapArray_Bool_static_2:
-		m_file_cpp->printLine("m_Array[0].setAll(", m_default, ");");
-		m_file_cpp->printLine("m_Array[1].setAll(", m_default, ");");
+		m_file_cpp->printLine("m_Array[0].m_iVar = ", m_BoolDefault, ";");
+		m_file_cpp->printLine("m_Array[1].m_iVar = ", m_BoolDefault, ";");
 		break;
 	case EnumMapArray_Bool_dynamic_1:
 		m_file_cpp->printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
-		m_file_cpp->printLine("m_Array.setAll(", m_default, ");");
+		m_file_cpp->printLine("m_Array.m_iVar = ", m_BoolDefault, ";");
 		m_file_cpp->printLineNoIndent("#else");
 		m_file_cpp->printLine("if (", m_NUM, " > 32)");
 		m_file_cpp->addStartBracket();
@@ -482,14 +554,14 @@ void EnumMapGen::EnumMapTypes::func_reset()
 		m_file_cpp->addEndBracket();
 		m_file_cpp->printLine("else");
 		m_file_cpp->addStartBracket();
-		m_file_cpp->printLine("m_Array.setAll(", m_default, ");");
+		m_file_cpp->printLine("m_Array.m_iVar = ", m_BoolDefault, ";");
 		m_file_cpp->addEndBracket();
 		m_file_cpp->printLineNoIndent("#endif");
 		break;
 	case EnumMapArray_Bool_dynamic_2:
 		m_file_cpp->printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
-		m_file_cpp->printLine("m_Array[0].setAll(", m_default, ");");
-		m_file_cpp->printLine("m_Array[1].setAll(", m_default, ");");
+		m_file_cpp->printLine("m_Array[0].m_iVar = ", m_BoolDefault, ";");
+		m_file_cpp->printLine("m_Array[1].m_iVar = ", m_BoolDefault, ";");
 		m_file_cpp->printLineNoIndent("#else");
 		m_file_cpp->printLine("SAFE_DELETE_ARRAY(m_pArray);");
 		m_file_cpp->printLineNoIndent("#endif");
@@ -503,45 +575,51 @@ void EnumMapGen::EnumMapTypes::func_hasContent()
 {
 	m_file_header->printLine("bool hasContent() const;");
 
-	m_file_cpp->printLine("template <>");
 	m_file_cpp->printLine("bool ", m_fullname, "::hasContent() const");
 	m_file_cpp->addStartBracket();
-
-	const LineString szDefault(m_bDefaultZero ? "0" : "0xFFFFFFFF");
 
 	switch (m_ArrayType)
 	{
 	case EnumMapArray_Standard:
-		m_file_cpp->printLine("if (m_pArray == NULL) return false;");
-		m_file_cpp->printLine("for (int i = 0; i < ", m_NUM, "; ++i)");
-		m_file_cpp->addStartBracket();
-		if (m_typesVariable == EnumMap_Class)
+		if (m_typesVariable == EnumMap_Class && !m_bIsEnumMap)
 		{
-			m_file_cpp->printLine("if (!m_pArray[i].hasContent()) return false;");
+			m_file_cpp->printLine("return m_pArray != NULL;");
 		}
 		else
 		{
-			m_file_cpp->printLine("if (m_pArray[i] != static_cast<", var(), ">(", m_default, ") return false;");
+			m_file_cpp->printLine("if (m_pArray == NULL) return false;");
+			m_file_cpp->printLine("for (int i = 0; i < static_cast<int>(", m_NUM, "); ++i)");
+			m_file_cpp->addStartBracket();
+			if (m_typesVariable == EnumMap_Class)
+			{
+				m_file_cpp->printLine("if (m_pArray[i].hasContent()) return true;");
+			}
+			else
+			{
+				m_file_cpp->printLine("if (m_pArray[i] != static_cast<", var(), ">(", m_default, ")) return true;");
+			}
+			m_file_cpp->addEndBracket();
+			m_file_cpp->printLine("return false;");
 		}
-		m_file_cpp->addEndBracket();
 		break;
 	case EnumMapArray_Bool:
 		m_file_cpp->printLine("if (m_pArray == NULL) return false;");
 		m_file_cpp->printLine("const int size = (", m_NUM, " + 31)/32;");
 		m_file_cpp->printLine("for (int i = 0; i < size; ++i)");
 		m_file_cpp->addStartBracket();
-		m_file_cpp->printLine("if (m_pArray[i].getInt() != ", szDefault, ") return false;");
+		m_file_cpp->printLine("if (m_pArray[i].m_iVar != ", m_BoolDefault, ") return true;");
 		m_file_cpp->addEndBracket();
+		m_file_cpp->printLine("return false;");
 		break;
 	case EnumMapArray_Bool_static_1:
-		m_file_cpp->printLine("return m_Array.getInt() != ", szDefault, ";");
+		m_file_cpp->printLine("return m_Array.m_iVar != ", m_BoolDefault, ";");
 		break;
 	case EnumMapArray_Bool_static_2:
-		m_file_cpp->printLine("return m_pArray[0].getInt() != ", szDefault, " || m_pArray[1].getInt() != ", szDefault, ";");
+		m_file_cpp->printLine("return m_Array[0].m_iVar != ", m_BoolDefault, " || m_Array[1].m_iVar != ", m_BoolDefault, ";");
 		break;
 	case EnumMapArray_Bool_dynamic_1:
 		m_file_cpp->printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
-		m_file_cpp->printLine("return m_Array.getInt() != ", szDefault, ";");
+		m_file_cpp->printLine("return m_Array.m_iVar != ", m_BoolDefault, ";");
 		m_file_cpp->printLineNoIndent("#else");
 		m_file_cpp->printLine("if (", m_NUM, " > 32)");
 		m_file_cpp->addStartBracket();
@@ -549,38 +627,38 @@ void EnumMapGen::EnumMapTypes::func_hasContent()
 		m_file_cpp->printLine("const int size = (", m_NUM, " + 31)/32;");
 		m_file_cpp->printLine("for (int i = 0; i < size; ++i)");
 		m_file_cpp->addStartBracket();
-		m_file_cpp->printLine("if (m_pArray[i].getInt() != ", szDefault, ") return false;");
+		m_file_cpp->printLine("if (m_pArray[i].m_iVar != ", m_BoolDefault, ") return true;");
 		m_file_cpp->addEndBracket();
+		m_file_cpp->printLine("return false;");
 		m_file_cpp->addEndBracket();
 		m_file_cpp->printLine("else");
 		m_file_cpp->addStartBracket();
-		m_file_cpp->printLine("return m_Array.getInt() != ", szDefault, ";");
+		m_file_cpp->printLine("return m_Array.m_iVar != ", m_BoolDefault, ";");
 		m_file_cpp->addEndBracket();
 		m_file_cpp->printLineNoIndent("#endif");
 		break;
 	case EnumMapArray_Bool_dynamic_2:
 		m_file_cpp->printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
-		m_file_cpp->printLine("return m_pArray[0].getInt() != ", szDefault, " || m_pArray[1].getInt() != ", szDefault, ";");
+		m_file_cpp->printLine("return m_Array[0].m_iVar != ", m_BoolDefault, " || m_Array[1].m_iVar != ", m_BoolDefault, ";");
 		m_file_cpp->printLineNoIndent("#else");
 		m_file_cpp->printLine("if (m_pArray == NULL) return false;");
 		m_file_cpp->printLine("const int size = (", m_NUM, " + 31)/32;");
 		m_file_cpp->printLine("for (int i = 0; i < size; ++i)");
 		m_file_cpp->addStartBracket();
-		m_file_cpp->printLine("if (m_pArray[i].getInt() != ", szDefault, ") return false;");
+		m_file_cpp->printLine("if (m_pArray[i].m_iVar != ", m_BoolDefault, ") return true;");
 		m_file_cpp->addEndBracket();
+		m_file_cpp->printLine("return false;");
 		m_file_cpp->printLineNoIndent("#endif");
 		break;
 	}
-	m_file_cpp->printLine("return true;");
 	m_file_cpp->addEndBracket();
 	m_file_cpp->printLine();
 }
 
 void EnumMapGen::EnumMapTypes::func_get()
 {
-	m_file_header->printLine(varDec(), " get(", indexDec(), "eIndex) const;");
+	m_file_header->printLine(varDec(), " get(", indexDec(), " eIndex) const;");
 
-	m_file_cpp->printLine("template <>");
 	m_file_cpp->printLine(var(), " ", m_fullname, "::get(", index(), " eIndex) const");
 	m_file_cpp->addStartBracket();
 	printRangeCheck("eIndex");
@@ -589,7 +667,7 @@ void EnumMapGen::EnumMapTypes::func_get()
 	{
 	case EnumMapArray_Standard:
 		m_file_cpp->printLine("if (m_pArray == NULL) return static_cast<", var(), ">(", m_default, ");");
-		m_file_cpp->printLine("return m_pArray[eIndex]);");
+		m_file_cpp->printLine("return m_pArray[eIndex];");
 		break;
 	case EnumMapArray_Bool:
 		m_file_cpp->printLine("if (m_pArray == NULL) return ", m_default, ";");
@@ -608,7 +686,7 @@ void EnumMapGen::EnumMapTypes::func_get()
 		m_file_cpp->printLine("if (", m_NUM, " > 32)");
 		m_file_cpp->addStartBracket();
 		m_file_cpp->printLine("if (m_pArray == NULL) return ", m_default, ";");
-		m_file_cpp->printLine("return m_pArray[eIndex]);");
+		m_file_cpp->printLine("return m_pArray[eIndex & 0x1F].get(eIndex);");
 		m_file_cpp->addEndBracket();
 		m_file_cpp->printLine("else");
 		m_file_cpp->addStartBracket();
@@ -621,7 +699,7 @@ void EnumMapGen::EnumMapTypes::func_get()
 		m_file_cpp->printLine("return m_Array[eIndex >> 5].get(eIndex);");
 		m_file_cpp->printLineNoIndent("#else");
 		m_file_cpp->printLine("if (m_pArray == NULL) return ", m_default, ";");
-		m_file_cpp->printLine("return m_Array[eIndex >> 5].get(eIndex);");
+		m_file_cpp->printLine("return m_pArray[eIndex >> 5].get(eIndex);");
 		m_file_cpp->printLineNoIndent("#endif");
 		break;
 	}
@@ -631,36 +709,35 @@ void EnumMapGen::EnumMapTypes::func_get()
 
 void EnumMapGen::EnumMapTypes::func_set()
 {
-	m_file_header->printLine("void set(", indexDec(), " eIndex, ", varDec(), " bValue);");
+	m_file_header->printLine("void set(", indexDec(), " eIndex, ", varDec(), " ", m_varName, ");");
 
 
-	m_file_cpp->printLine("template <>");
-	m_file_cpp->printLine(var(), " ", m_fullname, "::set(", index(), " eIndex, ", var(), "bvalue) const");
+	m_file_cpp->printLine("void ", m_fullname, "::set(", index(), " eIndex, ", var(), " ", m_varName, ")");
 	m_file_cpp->addStartBracket();
 	printRangeCheck("eIndex");
 
 	switch (m_ArrayType)
 	{
 	case EnumMapArray_Standard:
-		m_file_cpp->printLine("if (!isAllocated() && bValue == ", m_default, ") return;");
+		m_file_cpp->printLine("if (!isAllocated() && ", m_varName, " == ", m_default, ") return;");
 		m_file_cpp->printLine("allocate();");
 		break;
 	case EnumMapArray_Bool:
-		m_file_cpp->printLine("if (!isAllocated() && ", m_bDefaultZero ? "!" : "", "bValue) return;");
+		m_file_cpp->printLine("if (!isAllocated() && ", m_bDefaultZero ? "!" : "", "", m_varName, ") return;");
 		m_file_cpp->printLine("allocate();");
 		break;
 	case EnumMapArray_Bool_dynamic_1:
 		m_file_cpp->printLineNoIndent("#ifndef HARDCODE_XML_VALUES");
 		m_file_cpp->printLine("if (", m_NUM, " > 32)");
 		m_file_cpp->addStartBracket();
-		m_file_cpp->printLine("if (!isAllocated() && ", m_bDefaultZero ? "!" : "", "bValue) return;");
+		m_file_cpp->printLine("if (!isAllocated() && ", m_bDefaultZero ? "!" : "", "", m_varName, ") return;");
 		m_file_cpp->printLine("allocate();");
 		m_file_cpp->addEndBracket();
 		m_file_cpp->printLineNoIndent("#endif");
 		break;
 	case EnumMapArray_Bool_dynamic_2:
 		m_file_cpp->printLineNoIndent("#ifndef HARDCODE_XML_VALUES");
-		m_file_cpp->printLine("if (!isAllocated() && ", m_bDefaultZero ? "!" : "", "bValue) return;");
+		m_file_cpp->printLine("if (!isAllocated() && ", m_bDefaultZero ? "!" : "", "", m_varName, ") return;");
 		m_file_cpp->printLine("allocate();");
 		m_file_cpp->printLineNoIndent("#endif");
 		break;
@@ -671,36 +748,36 @@ void EnumMapGen::EnumMapTypes::func_set()
 	{
 	case EnumMapArray_Standard:
 		
-		m_file_cpp->printLine("m_pArray[eIndex] = bValue;");
+		m_file_cpp->printLine("m_pArray[eIndex] = ", m_varName, ";");
 		break;
 	case EnumMapArray_Bool:
-		m_file_cpp->printLine("m_pArray[eIndex >> 5].set(eIndex, bValue);");
+		m_file_cpp->printLine("m_pArray[eIndex >> 5].set(eIndex, ", m_varName, ");");
 		break;
 	case EnumMapArray_Bool_static_1:
-		m_file_cpp->printLine("m_Array.set(eIndex, bValue);");
+		m_file_cpp->printLine("m_Array.set(eIndex, ", m_varName, ");");
 		break;
 	case EnumMapArray_Bool_static_2:
-		m_file_cpp->printLine("m_Array[eIndex >> 5].set(eIndex, bValue);");
+		m_file_cpp->printLine("m_Array[eIndex >> 5].set(eIndex, ", m_varName, ");");
 		break;
 	case EnumMapArray_Bool_dynamic_1:
 		m_file_cpp->printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
-		m_file_cpp->printLine("m_Array[eIndex >> 5].set(eIndex, bValue);");
+		m_file_cpp->printLine("m_Array.set(eIndex, ", m_varName, ");");
 		m_file_cpp->printLineNoIndent("#else");
 		m_file_cpp->printLine("if (", m_NUM, " > 32)");
 		m_file_cpp->addStartBracket();
-		m_file_cpp->printLine("m_pArray[eIndex >> 5].set(eIndex, bValue);");
+		m_file_cpp->printLine("m_pArray[eIndex >> 5].set(eIndex, ", m_varName, ");");
 		m_file_cpp->addEndBracket();
 		m_file_cpp->printLine("else");
 		m_file_cpp->addStartBracket();
-		m_file_cpp->printLine("m_Array[eIndex >> 5].set(eIndex, bValue);");
+		m_file_cpp->printLine("m_Array.set(eIndex, ", m_varName, ");");
 		m_file_cpp->addEndBracket();
 		m_file_cpp->printLineNoIndent("#endif");
 		break;
 	case EnumMapArray_Bool_dynamic_2:
 		m_file_cpp->printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
-		m_file_cpp->printLine("m_Array[eIndex >> 5].set(eIndex, bValue);");
+		m_file_cpp->printLine("m_Array[eIndex >> 5].set(eIndex, ", m_varName, ");");
 		m_file_cpp->printLineNoIndent("#else");
-		m_file_cpp->printLine("m_Array.set(eIndex, bValue);");
+		m_file_cpp->printLine("m_pArray[eIndex >> 5].set(eIndex, ", m_varName, ");");
 		m_file_cpp->printLineNoIndent("#endif");
 		break;
 	}
@@ -710,18 +787,17 @@ void EnumMapGen::EnumMapTypes::func_set()
 
 void EnumMapGen::EnumMapTypes::func_add()
 {
-	m_file_header->printLine("void add(", indexDec(), " eIndex, ", varDec(), " bValue);");
+	m_file_header->printLine("void add(", indexDec(), " eIndex, ", varDec(), " ", m_varName, ");");
 
-	m_file_cpp->printLine("template <>");
-	m_file_cpp->printLine(var(), " ", m_fullname, "::set(", index(), " eIndex, ", var(), "bvalue)");
+	m_file_cpp->printLine("void ", m_fullname, "::add(", index(), " eIndex, ", var(), " ", m_varName, ")");
 	m_file_cpp->addStartBracket();
 	printRangeCheck("eIndex");
 	assert(m_ArrayType == EnumMapArray_Standard);
 
 	
-	m_file_cpp->printLine("if ( bValue == 0) return;");
+	m_file_cpp->printLine("if (", m_varName, " == 0) return;");
 	m_file_cpp->printLine("allocate();");
-	m_file_cpp->printLine("m_pArray[eIndex] += bValue;");
+	m_file_cpp->printLine("m_pArray[eIndex] += ", m_varName, ";");
 
 	m_file_cpp->addEndBracket();
 	m_file_cpp->printLine();
@@ -729,25 +805,23 @@ void EnumMapGen::EnumMapTypes::func_add()
 
 void EnumMapGen::EnumMapTypes::func_setAll()
 {
-	m_file_header->printLine("void setAll(", varDec(), " bValue);");
+	m_file_header->printLine("void setAll(", varDec(), " ", m_varName, ");");
 }
 
 void EnumMapGen::EnumMapTypes::func_addAll()
 {
-	m_file_header->printLine("void addAll(", varDec(), " Value);");
+	m_file_header->printLine("void addAll(", varDec(), " ", m_varName, ");");
 
-	m_file_cpp->printLine("template <>");
-	m_file_cpp->printLine(var(), " ", m_fullname, "::addAll(", var(), "value)");
+	m_file_cpp->printLine("void ", m_fullname, "::addAll(", var(), " ", m_varName, ")");
 	m_file_cpp->addStartBracket();
-	printRangeCheck("eIndex");
 	assert(m_ArrayType == EnumMapArray_Standard);
 
 
-	m_file_cpp->printLine("if ( bValue == 0) return;");
+	m_file_cpp->printLine("if (", m_varName, " == 0) return;");
 	m_file_cpp->printLine("allocate();");
-	m_file_cpp->printLine("for (int i = 0; i < ", m_NUM, "; ++i)");
+	m_file_cpp->printLine("for (int i = 0; i < static_cast<int>(", m_NUM, "); ++i)");
 	m_file_cpp->addStartBracket();
-	m_file_cpp->printLine("m_pArray[i] += Value;");
+	m_file_cpp->printLine("m_pArray[i] += ", m_varName, ";");
 	m_file_cpp->addEndBracket();
 
 	m_file_cpp->addEndBracket();
@@ -756,17 +830,16 @@ void EnumMapGen::EnumMapTypes::func_addAll()
 
 void EnumMapGen::EnumMapTypes::func_keepMin()
 {
-	m_file_header->printLine("void keepMin(", indexDec(), " eIndex, ", varDec(), " Value);");
+	m_file_header->printLine("void keepMin(", indexDec(), " eIndex, ", varDec(), " ", m_varName, ");");
 
-	m_file_cpp->printLine("template <>");
-	m_file_cpp->printLine("void ", m_fullname, "::keepMin(", index(), " eIndex, ", var(), "value)");
+	m_file_cpp->printLine("void ", m_fullname, "::keepMin(", index(), " eIndex, ", var(), " ", m_varName, ")");
 	m_file_cpp->addStartBracket();
 	printRangeCheck("eIndex");
 	assert(m_ArrayType == EnumMapArray_Standard);
 
 	m_file_cpp->printLine("allocate();");
 	m_file_cpp->printLine("const ", var(), " temp = m_pArray[eIndex];");
-	m_file_cpp->printLine("m_pArray[eIndex] = Value < temp ? Value : temp;");
+	m_file_cpp->printLine("m_pArray[eIndex] = ", m_varName, " < temp ? ", m_varName, " : temp;");
 
 	m_file_cpp->addEndBracket();
 	m_file_cpp->printLine();
@@ -776,15 +849,14 @@ void EnumMapGen::EnumMapTypes::func_keepMax()
 {
 	m_file_header->printLine("void keepMax(", indexDec(), " eIndex, ", varDec(), " Value);");
 
-	m_file_cpp->printLine("template <>");
-	m_file_cpp->printLine("void ", m_fullname, "::keepMax(", index(), " eIndex, ", var(), "value)");
+	m_file_cpp->printLine("void ", m_fullname, "::keepMax(", index(), " eIndex, ", var(), " ", m_varName, ")");
 	m_file_cpp->addStartBracket();
 	printRangeCheck("eIndex");
 	assert(m_ArrayType == EnumMapArray_Standard);
 
 	m_file_cpp->printLine("allocate();");
 	m_file_cpp->printLine("const ", var(), " temp = m_pArray[eIndex];");
-	m_file_cpp->printLine("m_pArray[eIndex] = Value > temp ? Value : temp;");
+	m_file_cpp->printLine("m_pArray[eIndex] = ", m_varName, " > temp ? ", m_varName, " : temp;");
 
 	m_file_cpp->addEndBracket();
 	m_file_cpp->printLine();
@@ -794,14 +866,13 @@ void EnumMapGen::EnumMapTypes::func_getMin()
 {
 	m_file_header->printLine(varDec(), " getMin() const;");
 
-	m_file_cpp->printLine("template <>");
-	m_file_cpp->printLine(var(), " ", m_fullname, "::getMin()");
+	m_file_cpp->printLine(var(), " ", m_fullname, "::getMin() const");
 	m_file_cpp->addStartBracket();
 	assert(m_ArrayType == EnumMapArray_Standard);
 
 	m_file_cpp->printLine("if (!isAllocated()) return ", m_default, ";");
 	m_file_cpp->printLine(var(), " iMin = m_pArray[0];");
-	m_file_cpp->printLine("for (int i = 1; i < ", m_NUM, "; ++i)");
+	m_file_cpp->printLine("for (int i = 1; i < static_cast<int>(", m_NUM, "); ++i)");
 	m_file_cpp->addStartBracket();
 	m_file_cpp->printLine("const ", var(), " iTemp = m_pArray[i];");
 	m_file_cpp->printLine("if (iMin > iTemp) iMin = iTemp;");
@@ -816,14 +887,13 @@ void EnumMapGen::EnumMapTypes::func_getMax()
 {
 	m_file_header->printLine(varDec(), " getMax() const;");
 
-	m_file_cpp->printLine("template <>");
-	m_file_cpp->printLine(var(), " ", m_fullname, "::getMax()");
+	m_file_cpp->printLine(var(), " ", m_fullname, "::getMax() const");
 	m_file_cpp->addStartBracket();
 	assert(m_ArrayType == EnumMapArray_Standard);
 
 	m_file_cpp->printLine("if (!isAllocated()) return ", m_default, ";");
 	m_file_cpp->printLine(var(), " iMax = m_pArray[0];");
-	m_file_cpp->printLine("for (int i = 1; i < ", m_NUM, "; ++i)");
+	m_file_cpp->printLine("for (int i = 1; i < static_cast<int>(", m_NUM, "); ++i)");
 	m_file_cpp->addStartBracket();
 	m_file_cpp->printLine("const ", var(), " iTemp = m_pArray[i];");
 	m_file_cpp->printLine("if (iMax < iTemp) iMax = iTemp;");
@@ -838,14 +908,13 @@ void EnumMapGen::EnumMapTypes::func_getTotal()
 {
 	m_file_header->printLine("int getTotal() const;");
 
-	m_file_cpp->printLine("template <>");
-	m_file_cpp->printLine("int ", m_fullname, "::getTotal()");
+	m_file_cpp->printLine("int ", m_fullname, "::getTotal() const");
 	m_file_cpp->addStartBracket();
 	assert(m_ArrayType == EnumMapArray_Standard);
 
 	m_file_cpp->printLine("if (!isAllocated()) return ", m_default, " * ", m_NUM, ";");
 	m_file_cpp->printLine("int iSum = 0;");
-	m_file_cpp->printLine("for (int i = 1; i < ", m_NUM, "; ++i)");
+	m_file_cpp->printLine("for (int i = 1; i < static_cast<int>(", m_NUM, "); ++i)");
 	m_file_cpp->addStartBracket();
 	m_file_cpp->printLine("iSum += m_pArray[i];");
 	m_file_cpp->addEndBracket();
@@ -859,17 +928,16 @@ void EnumMapGen::EnumMapTypes::func_getTotalBool()
 {
 	m_file_header->printLine("int getTotal() const;");
 
-	m_file_cpp->printLine("template <>");
-	m_file_cpp->printLine("int ", m_fullname, "::getTotal()");
+	m_file_cpp->printLine("int ", m_fullname, "::getTotal() const");
 	m_file_cpp->addStartBracket();
 	m_file_cpp->printLine("if (!isAllocated())");
 	m_file_cpp->addStartBracket();
 	m_file_cpp->printLine("return ", m_bDefaultZero ? "0" : m_NUM, ";");
 	m_file_cpp->addEndBracket();
 	m_file_cpp->printLine("int iSum = 0;");
-	m_file_cpp->printLine("for (int i = 0; i < ", m_NUM, "; ++i)");
+	m_file_cpp->printLine("for (int i = 0; i < static_cast<int>(", m_NUM, "); ++i)");
 	m_file_cpp->addStartBracket();
-	m_file_cpp->printLine("if (get(static_cast<", index(), ">(i)) ++iSum;");
+	m_file_cpp->printLine("if (get(static_cast<", index(), ">(i))) ++iSum;");
 	m_file_cpp->addEndBracket();
 	m_file_cpp->printLine("return iSum;");
 	m_file_cpp->addEndBracket();
@@ -979,6 +1047,37 @@ EnumMapGen::EnumMapTypes::EnumMapTypeEnum EnumMapGen::EnumMapTypes::getType(cons
 	return EnumMap_Bool;
 }
 
+LineString EnumMapGen::EnumMapTypes::classAddDec(const std::string& str)
+{
+	std::size_t start = str.find("<");
+
+	if (start == std::string::npos) return str;
+	++start;
+
+	LineString output;
+
+	output.assign(str.substr(0, start));
+	
+	LineString temp = str.substr(start);
+	std::size_t pos = temp.find(",");
+	LineString temp2 = temp.substr(0, pos);
+	temp2.trim();
+	EnumMapTypeEnum type = getType(temp2);
+
+	switch (type)
+	{
+	case EnumMap_Types:
+		output.append("enum ");
+		break;
+	case EnumMap_Class:
+	case EnumMap_Type:
+		output.append("class ");
+		break;
+	}
+	output.append(temp);
+	return output;
+}
+
 bool EnumMapGen::EnumMapTypes::isValid() const
 {
 	if (m_index.size() < 3)
@@ -1060,19 +1159,33 @@ EnumMapGen::EnumMapGen()
 
 	// m_types now contains all EnumMap types mentioned in the source code without dublicates
 
+
+	m_file_inline.printLine("/*");
+	m_file_inline.printLine("////////////////////////////");
+	m_file_inline.printLine("////////////////////////////");
+	m_file_inline.printLine("      inline functions");
+	m_file_inline.printLine("////////////////////////////");
+	m_file_inline.printLine("////////////////////////////");
+	m_file_inline.printLine(" */");
+	m_file_inline.printLine();
+
 	m_file_header.printLine("#pragma once");
+	m_file_header.printLine();
+	m_file_header.printLine("#ifndef NULL");
+	m_file_header.printLine("#define NULL (0)");
+	m_file_header.printLine("#endif");
+	m_file_header.printLine();
+	m_file_header.printLineNoIndent("#include \"../BitFunctions.h\"");
 	m_file_header.printLine();
 	m_file_header.printLine("class EnumArrayToken");
 	m_file_header.addStartBracket();
 	m_file_header.printLineNoIndent("public:");
 	m_file_header.printLine("void set(int iIndex, bool bValue);");
 	m_file_header.printLine("bool get(int iIndex) const;");
-	m_file_header.printLine("void setAll(bool bValue);");
-	m_file_header.printLine("bool hasNonDefault(bool bDefault) const;");
-	m_file_header.printLineNoIndent("private:");
 	m_file_header.printLine("union");
 	m_file_header.addStartBracket();
 	m_file_header.printLine("unsigned int m_iVar;");
+	m_file_header.printLineNoIndent("#ifdef DEBUG");
 	m_file_header.printLine("struct");
 	m_file_header.addStartBracket();
 
@@ -1080,29 +1193,50 @@ EnumMapGen::EnumMapGen()
 	for (int i = 0; i < 32; i++)
 	{
 		sprintf(int_buffer, "%i", i);
-		m_file_header.printLine("bool var_", int_buffer, ";");
+		m_file_header.printLine("bool var_", int_buffer, ":1;");
 	}
 	m_file_header.addEndBracket(true);
+	m_file_header.printLineNoIndent("#endif");
 	m_file_header.addEndBracket(true);
 	m_file_header.addEndBracket(true);
-	m_file_header.printLine("BOOST_STATIC_ASSERT(sizeof(EnumArrayToken) == 4);");
+
+	m_file_inline.printLine("inline void EnumArrayToken::set(int iIndex, bool bValue)");
+	m_file_inline.addStartBracket();
+	m_file_inline.printLine("SetBit(m_iVar, iIndex & 0x1F, bValue);");
+	m_file_inline.addEndBracket();
+	m_file_inline.printLine();
+
+	m_file_inline.printLine("inline bool EnumArrayToken::get(int iIndex) const");
+	m_file_inline.addStartBracket();
+	m_file_inline.printLine("return GETBIT(m_iVar, iIndex & 0x1F);");
+	m_file_inline.addEndBracket();
+	m_file_inline.printLine();
+
+
+	m_file_cpp.printLine("#include \"../CvGameCoreDLL.h\"");
+	m_file_cpp.printLine("#include \"../Infos.h\"");
+	m_file_cpp.printLine("#include \"AUTO_EnumMap.h\"");
+
+
+	m_file_cpp.printLine("BOOST_STATIC_ASSERT(sizeof(EnumArrayToken) == 4);");
 
 
 
 	m_file_header.printLine();
 	m_file_header.printLine("template <class IndexType, class T, int DEFAULT = 0>");
-	m_file_header.printLine("class EnumMap");
+	m_file_header.printLine("class ", ENUMMAP_NAME);
 	m_file_header.addStartBracket();
-	m_file_header.printLine("BOOST_STATIC_ASSERT(false);");
-	m_file_header.addEndBracket();
+	//m_file_header.printLine("BOOST_STATIC_ASSERT(false);");
+	m_file_header.addEndBracket(true);
 	m_file_header.printLine();
 
 
 	for (it_cutoff = m_types.begin(); it_cutoff != m_types.end(); it_cutoff++)
 	{
-		it_cutoff->setup(&m_file_header, &m_file_cpp);
+		it_cutoff->setup(&m_file_header, &m_file_cpp, &m_file_inline);
 		it_cutoff->printFile();
 	}
+	m_file_header.printLine(m_file_inline.getText());
 	m_file_header.saveFile("EnumMap.h");
 	m_file_cpp.saveFile("EnumMap.cpp");
 }

@@ -79,7 +79,12 @@ AUTO_OBJ = \
 
 
 $(TEMP_AUTO_TARGET)\Main.obj: $(AUTO_SOURCE)\Main.cpp $(AUTO_HEADER)
+$(TEMP_AUTO_TARGET)\EnumGen.obj: $(AUTO_SOURCE)\EnumGen.cpp $(AUTO_HEADER)
+$(TEMP_AUTO_TARGET)\EnumMap.obj: $(AUTO_SOURCE)\EnumMap.cpp $(AUTO_HEADER)
 $(TEMP_AUTO_TARGET)\FileAccess.obj: $(AUTO_SOURCE)\FileAccess.cpp $(AUTO_HEADER)
+$(TEMP_AUTO_TARGET)\LineString.obj: $(AUTO_SOURCE)\LineString.cpp $(AUTO_HEADER)
+$(TEMP_AUTO_TARGET)\OutputHandler.obj: $(AUTO_SOURCE)\OutputHandler.cpp $(AUTO_HEADER)
+$(TEMP_AUTO_TARGET)\SourceReader.obj: $(AUTO_SOURCE)\SourceReader.cpp $(AUTO_HEADER)
 $(TEMP_AUTO_TARGET)\tinyxml2.obj: $(AUTO_SOURCE)\tinyxml2.cpp $(AUTO_HEADER)
 
 

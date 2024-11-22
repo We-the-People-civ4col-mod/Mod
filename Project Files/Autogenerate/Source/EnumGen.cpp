@@ -25,12 +25,17 @@ const EnumGen* EnumGen::getEntry(std::string name)
 	return NULL;
 }
 
-EnumGen::EnumGen(const char* name, int ilength)
+EnumGen::EnumGen(const char* name, int ilength, const char* num)
 	: m_bAlwaysStatic(true)
 	, m_bHasFile(false)
 	, m_iLength(ilength)
 	, m_name(name)
 {
+	if (num != NULL)
+	{
+		m_num.assign(num);
+	}
+
 	EnumVec.push_back(*this);
 }
 
@@ -120,6 +125,11 @@ bool EnumGen::isStatic() const
 const std::string EnumGen::name() const
 {
 	return m_name;
+}
+
+const std::string EnumGen::num() const
+{
+	return m_num;
 }
 
 int EnumGen::length() const
@@ -234,7 +244,7 @@ void EnumGen::writeEnum(class OutputHandler& text, bool bHardcoded)
 	text.printLine("");
 	if (!bHardcoded)
 	{
-		text.printLine("extern const types& NUM;");
+		text.printLine("static const types& NUM;");
 	}
 }
 

@@ -200,3 +200,8 @@ void OutputHandler::saveFile(const char* filenameA, const char* filenameB, const
 	out << m_text;
 	out.close();
 }
+
+const char* OutputHandler::getText() const
+{
+	return m_text.c_str();
+}

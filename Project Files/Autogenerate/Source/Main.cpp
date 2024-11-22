@@ -24,7 +24,7 @@ int main()
 
 	{
 		EnumGen("AreaAI", 7);
-		EnumGen("CityPlot", 25);
+		EnumGen("CityPlot", 25, "NUM_CITY_PLOTS");
 		EnumGen("Contact", 12);
 		EnumGen("Emotion", 5);
 		EnumGen("Feat", 10);

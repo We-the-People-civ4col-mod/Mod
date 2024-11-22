@@ -27,6 +27,8 @@ public:
 
 	void saveFile(const char* filenameA, const char* filenameB = "", const char* filenameC = "");
 
+	const char* getText() const;
+
 private:
 	void changeIndent(int iChange);
 	void addIndent();

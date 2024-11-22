@@ -29,6 +29,8 @@
 		<Files>
 			<File>Civilizations/CivCategoryInfos.xml</File>
 		</Files>
+		<AlwaysStatic>1</AlwaysStatic>
+		<NumName>NUM_CIV_CATEGORY_TYPES</NumName>
 	</CivCategoryTypes>
 	<CivicTypes>
 		<Files>
@@ -75,6 +77,8 @@
 		<Files>
 			<File>GameInfo/CIV4FatherPointInfos.xml</File>
 		</Files>
+		<AlwaysStatic>1</AlwaysStatic>
+		<NumName>NUM_FATHER_POINT_TYPES</NumName>
 	</FatherPointTypes>
 	<FeatureTypes>
 		<Files>

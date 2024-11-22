@@ -5,7 +5,7 @@
 class EnumGen
 {
 public:
-	EnumGen(const char* name, int ilength);
+	EnumGen(const char* name, int ilength, const char* num = NULL);
 	EnumGen(class Element);
 
 	static const std::vector<EnumGen>& getVector();
@@ -13,6 +13,7 @@ public:
 
 	bool isStatic() const;
 	const std::string name() const;
+	const std::string num() const;
 	int length() const;
 
 	void writeFile();

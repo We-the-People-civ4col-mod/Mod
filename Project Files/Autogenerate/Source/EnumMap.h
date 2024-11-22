@@ -35,7 +35,7 @@ class EnumMapGen
 		EnumMapTypes(std::string input);
 		bool isValid() const;
 
-		void setup(OutputHandler* header, OutputHandler* cpp);
+		void setup(OutputHandler* header, OutputHandler* cpp, OutputHandler* inlineFile);
 		void printFile();
 
 		const char* index() const;
@@ -51,6 +51,7 @@ class EnumMapGen
 		void func_deconstructor();
 		void func_isAllocated();
 		void func_allocate();
+		void func_allocateInternal();
 		void func_reset();
 		void func_hasContent();
 		void func_get();
@@ -75,6 +76,7 @@ class EnumMapGen
 
 
 		static EnumMapTypeEnum getType(const std::string&);
+		LineString classAddDec(const std::string&);
 
 		EnumMapTypeEnum m_typesIndex;
 		EnumMapTypeEnum m_typesVariable;
@@ -83,9 +85,11 @@ class EnumMapGen
 		LineString m_varable;
 		LineString m_varableDec;
 		LineString m_default;
+		LineString m_BoolDefault;
 		bool m_bDefaultZero;
 		OutputHandler* m_file_header;
 		OutputHandler* m_file_cpp;
+		OutputHandler* m_file_inline;
 
 		LineString m_fullname;
 		LineString m_fullnameDec;
@@ -96,6 +100,8 @@ class EnumMapGen
 		EnumMapArrayType m_ArrayType;
 
 		LineString m_NUM;
+		LineString m_varName;
+		bool m_bIsEnumMap;
 	};
 
 
@@ -106,4 +112,5 @@ private:
 	std::vector<EnumMapTypes> m_types;
 	OutputHandler m_file_header;
 	OutputHandler m_file_cpp;
+	OutputHandler m_file_inline;
 };
