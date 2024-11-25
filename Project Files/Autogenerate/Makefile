@@ -55,6 +55,7 @@ AUTO_HEADER = \
 	$(AUTO_SOURCE)\assert.h \
 	$(AUTO_SOURCE)\Constants.h \
 	$(AUTO_SOURCE)\EnumGen.h \
+	$(AUTO_SOURCE)\EnumLengthSetupGen.h \
 	$(AUTO_SOURCE)\EnumMap.h \
 	$(AUTO_SOURCE)\FileAccess.h \
 	$(AUTO_SOURCE)\LineString.h \
@@ -68,6 +69,7 @@ AUTO_HEADER = \
 AUTO_OBJ = \
 	$(TEMP_AUTO_TARGET)\Main.obj \
 	$(TEMP_AUTO_TARGET)\EnumGen.obj \
+	$(TEMP_AUTO_TARGET)\EnumLengthSetupGen.obj \
 	$(TEMP_AUTO_TARGET)\EnumMap.obj \
 	$(TEMP_AUTO_TARGET)\FileAccess.obj \
 	$(TEMP_AUTO_TARGET)\LineString.obj \
@@ -80,6 +82,7 @@ AUTO_OBJ = \
 
 $(TEMP_AUTO_TARGET)\Main.obj: $(AUTO_SOURCE)\Main.cpp $(AUTO_HEADER)
 $(TEMP_AUTO_TARGET)\EnumGen.obj: $(AUTO_SOURCE)\EnumGen.cpp $(AUTO_HEADER)
+$(TEMP_AUTO_TARGET)\EnumGen.obj: $(AUTO_SOURCE)\EnumLengthSetupGen.cpp $(AUTO_HEADER)
 $(TEMP_AUTO_TARGET)\EnumMap.obj: $(AUTO_SOURCE)\EnumMap.cpp $(AUTO_HEADER)
 $(TEMP_AUTO_TARGET)\FileAccess.obj: $(AUTO_SOURCE)\FileAccess.cpp $(AUTO_HEADER)
 $(TEMP_AUTO_TARGET)\LineString.obj: $(AUTO_SOURCE)\LineString.cpp $(AUTO_HEADER)

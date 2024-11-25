@@ -1,8 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   List of files to be loaded into which enum type
-  Files: the file paths (max one file per enum at the time of writing)
-  Type: error messages will report the text in the child tag of this name. Defaults to Type
+      This is used both for xml reading at startup and by autogenerate to set headers
+      Be aware that this file has no schema and as such tags can appear in any order. Try to keep the file clean anyway.
+  
+  Files:
+    the file paths (max one file per enum at the time of writing)
+  Type:
+    error messages will report the text in the child tag of this name. Defaults to Type
+  Types:
+    list of vanilla types. Fallback in case autogenerate.exe can't locate the vanilla files
+  HardcodingType:
+    Enum to set how to generate the header files. Valid options:
+     - TYPE_STANDARD:  uses hardcoded/dynamic set at compile time (default)
+     - TYPE_DYNAMIC:   enums will never be hardcoded, not even in hardcoded dll files
+     - TYPE_HARDCODED: only uses hardcoded enums even in dynamic dlls (switch case can only be used on hardcoded enums)
+     - TYPE_NO_INFO:   hardcoded and Type class will not be able to provide xml info
+     - TYPE_NO_FILE:   hardcoded and DLL will not read the xml at runtime. (default if the Files tag is obmitted)
+
+         Main difference between TYPE_NO_INFO and TYPE_NO_FILE is that only TYPE_NO_INFO will test hardcoded length against xml length at startup.
+         Both are useful for setting enums in xml, but nothing is needed other than the Type for the enums
+
+         NOTE: all types can be used in tags in xml files regardless of HardcodingType setting
 -->
 <Files>
 	<BonusTypes>
@@ -29,7 +48,7 @@
 		<Files>
 			<File>Civilizations/CivCategoryInfos.xml</File>
 		</Files>
-		<AlwaysStatic>1</AlwaysStatic>
+		<HardcodingType>TYPE_HARDCODED</HardcodingType>
 		<NumName>NUM_CIV_CATEGORY_TYPES</NumName>
 	</CivCategoryTypes>
 	<CivicTypes>
@@ -56,7 +75,7 @@
 		<Files>
 			<File>BasicInfos/CIV4DomainInfos.xml</File>
 		</Files>
-		<AlwaysStatic>1</AlwaysStatic>
+		<HardcodingType>TYPE_NO_FILE</HardcodingType>
 		<Types>
 			<Type>DOMAIN_SEA</Type>
 			<Type>DOMAIN_LAND</Type>
@@ -77,7 +96,7 @@
 		<Files>
 			<File>GameInfo/CIV4FatherPointInfos.xml</File>
 		</Files>
-		<AlwaysStatic>1</AlwaysStatic>
+		<HardcodingType>TYPE_HARDCODED</HardcodingType>
 		<NumName>NUM_FATHER_POINT_TYPES</NumName>
 	</FatherPointTypes>
 	<FeatureTypes>
@@ -94,7 +113,7 @@
 		<Files>
 			<File>GameInfo/CIV4HurryInfo.xml</File>
 		</Files>
-		<AlwaysStatic>1</AlwaysStatic>
+		<HardcodingType>TYPE_HARDCODED</HardcodingType>
 		<Types>
 			<Type>HURRY_GOLD</Type>
 			<Type>HURRY_IMMIGRANT</Type>

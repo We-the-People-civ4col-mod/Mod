@@ -5,6 +5,8 @@
 #include "StartupErrorChecking.h"
 #include "GlobalsInfoContainer.h"
 
+#include "EnumLengthSet.h"
+
 // small class where the constructor reads XML lengths
 // this way xml reading can take place prior to calling the CvGlobals constructor
 struct loadXML
@@ -83,6 +85,8 @@ void setupVARINFO();
 loadXML::loadXML()
 {
 	const std::string basePath = GetCurrentDirectory(true);
+
+	EnumLengthSet temp(basePath);
 
 	setXmlLengthsAuto(basePath);
 	setupVARINFO();

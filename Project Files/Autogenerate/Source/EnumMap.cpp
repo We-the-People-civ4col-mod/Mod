@@ -142,11 +142,11 @@ void EnumMapGen::EnumMapTypes::setup(OutputHandler* header, OutputHandler* cpp, 
 
 		if (iLength <= 32)
 		{
-			m_ArrayType = m_EnumDataIndex->isStatic() ? EnumMapArray_Bool_static_1 : EnumMapArray_Bool_dynamic_1;
+			m_ArrayType = m_EnumDataIndex->type().isAlwaysHardcoded() ? EnumMapArray_Bool_static_1 : EnumMapArray_Bool_dynamic_1;
 		}
 		else if (iLength <= 64)
 		{
-			m_ArrayType = m_EnumDataIndex->isStatic() ? EnumMapArray_Bool_static_2 : EnumMapArray_Bool_dynamic_2;
+			m_ArrayType = m_EnumDataIndex->type().isAlwaysHardcoded() ? EnumMapArray_Bool_static_2 : EnumMapArray_Bool_dynamic_2;
 		}
 		else
 		{

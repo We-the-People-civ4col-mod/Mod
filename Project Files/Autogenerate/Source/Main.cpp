@@ -2,6 +2,7 @@
 #include "EnumMap.h"
 #include "FileAccess.h"
 #include "EnumGen.h"
+#include "EnumLengthSetupGen.h"
 
 
 void readXMLFiles()
@@ -35,6 +36,7 @@ int main()
 	}
 
 	EnumMapGen EnumMaps;
+	EnumLengthSetupGen LengthSetup;
 
 	return 0;
 }

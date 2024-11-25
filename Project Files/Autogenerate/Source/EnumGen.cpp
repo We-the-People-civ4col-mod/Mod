@@ -5,6 +5,90 @@
 #include "FileAccess.h"
 #include "OutputHandler.h"
 
+EnumGen::HardcodingClass::HardcodingClass()
+	: value(TYPE_STANDARD)
+{
+}
+
+EnumGen::HardcodingClass::HardcodingClass(var initValue)
+	: value(initValue)
+{
+}
+
+void EnumGen::HardcodingClass::assign(const char* newType)
+{
+	if (strcmp(newType, "TYPE_STANDARD") == 0)
+	{
+		value = TYPE_STANDARD;
+	}
+	else if (strcmp(newType, "TYPE_HARDCODED") == 0)
+	{
+		value = TYPE_HARDCODED;
+	}
+	else if (strcmp(newType, "TYPE_DYNAMIC") == 0)
+	{
+		value = TYPE_DYNAMIC;
+	}
+	else if (strcmp(newType, "TYPE_NO_INFO") == 0)
+	{
+		value = TYPE_NO_INFO;
+	}
+	else if (strcmp(newType, "TYPE_NO_FILE") == 0)
+	{
+		value = TYPE_NO_FILE;
+	}
+	else
+	{
+		assert(false);
+	}
+}
+
+bool EnumGen::HardcodingClass::isAlwaysHardcoded() const
+{
+	switch (value)
+	{
+	case TYPE_STANDARD:
+		return false;
+	case TYPE_HARDCODED:
+		return true;
+	case TYPE_DYNAMIC:
+		return false;
+	case TYPE_NO_INFO:
+	case TYPE_NO_FILE:
+		return true;
+	default:
+		assert(0);
+		return false;
+	}
+}
+
+EnumGen::HardcodingClass::var EnumGen::HardcodingClass::getVar() const
+{
+	return value;
+}
+
+EnumGen::HardcodingClass& EnumGen::HardcodingClass::operator = (const HardcodingClass::var rhs)
+{
+	value = rhs;
+	return *this;
+}
+
+EnumGen::HardcodingClass& EnumGen::HardcodingClass::operator = (const HardcodingClass rhs)
+{
+	value = rhs.value;
+	return *this;
+}
+
+bool EnumGen::HardcodingClass::operator == (const var rhs) const
+{
+	return value == rhs;
+}
+
+bool EnumGen::HardcodingClass::operator == (const HardcodingClass rhs) const
+{
+	return value == rhs.value;
+}
+
 std::vector<EnumGen> EnumVec;
 
 const std::vector<EnumGen>& EnumGen::getVector()
@@ -25,11 +109,15 @@ const EnumGen* EnumGen::getEntry(std::string name)
 	return NULL;
 }
 
+const EnumGen::HardcodingClass EnumGen::type() const
+{
+	return m_type;
+}
+
 EnumGen::EnumGen(const char* name, int ilength, const char* num)
-	: m_bAlwaysStatic(true)
-	, m_bHasFile(false)
-	, m_iLength(ilength)
+	: m_iLength(ilength)
 	, m_name(name)
+	, m_type(HardcodingClass::TYPE_NO_FILE)
 {
 	if (num != NULL)
 	{
@@ -40,16 +128,14 @@ EnumGen::EnumGen(const char* name, int ilength, const char* num)
 }
 
 EnumGen::EnumGen(class Element file)
-	: m_bAlwaysStatic(false)
-	, m_bHasFile(true)
 {
 	m_name = file.name();
 	m_name.erase(m_name.size()-5, 5);
 
-	Element AlwaysStatic = file.FirstChild("AlwaysStatic");
-	if (AlwaysStatic.isValid())
+	Element TypeElement = file.FirstChild("Type");
+	if (TypeElement.isValid())
 	{
-		m_bAlwaysStatic = AlwaysStatic.getBool();
+		m_type.assign(TypeElement.getText());
 	}
 
 	Element NumName = file.FirstChild("NumName");
@@ -61,8 +147,7 @@ EnumGen::EnumGen(class Element file)
 	Element current_file = file.FirstChild("Files");
 	if (!current_file.isValid())
 	{
-		m_bAlwaysStatic = true;
-		m_bHasFile = false;
+		m_type = HardcodingClass::TYPE_NO_FILE;
 	}
 	else
 	{
@@ -116,20 +201,14 @@ EnumGen::EnumGen(class Element file)
 	EnumVec.push_back(*this);
 }
 
-
-bool EnumGen::isStatic() const
+const char* EnumGen::name() const
 {
-	return m_bAlwaysStatic;
+	return m_name.c_str();
 }
 
-const std::string EnumGen::name() const
+const char* EnumGen::num() const
 {
-	return m_name;
-}
-
-const std::string EnumGen::num() const
-{
-	return m_num;
+	return m_num.c_str();
 }
 
 int EnumGen::length() const
@@ -140,7 +219,7 @@ int EnumGen::length() const
 void EnumGen::writeFile()
 {
 	writeFile(false);
-	if (!m_bAlwaysStatic)
+	if (type() == HardcodingClass::TYPE_STANDARD)
 	{
 		writeFile(true);
 	}
@@ -152,23 +231,29 @@ void EnumGen::writeFile(bool bHardcoded)
 	std::string nameType = m_name;
 	nameType.append("Type");
 
-	bool bDynamic = !bHardcoded && !m_bAlwaysStatic;
-
 	OutputHandler text;
 
 	text.printLineNoIndent("#pragma once\n");
 
-	writeDefinesStart(text, bDynamic, bHardcoded);
+	writeDefinesStart(text, bHardcoded);
 
 	text.printLine("class ", nameType.c_str());
 	text.addStartBracket();
 	text.printLine("friend class CvXMLLoadUtility;");
 	text.printLineNoIndent("public:");
+
+	writeEnum(text, bHardcoded);
+
 	text.printLine(nameType.c_str(), "();");
 	text.printLine(nameType.c_str(), "(enum ", nameType.c_str(), "s);");
 	text.printLine();
-	
-	writeEnum(text, bHardcoded);
+	text.printLine("void assignFromInt(int iNewValue);");
+	text.printLine("int getInt() const;");
+	text.printLine("const types value() const;");
+	text.printLine();
+	text.printLine("operator const types() const;");
+	text.printLine("operator const ", nameType.c_str(), "s() const;");
+	text.printLine();
 
 	text.printLineNoIndent("private:");
 	text.printLine("void setup();");
@@ -179,7 +264,7 @@ void EnumGen::writeFile(bool bHardcoded)
 
 	text.addEndBracket(true);
 
-	writeDefinesEnd(text, bDynamic, bHardcoded);
+	writeDefinesEnd(text, bHardcoded);
 
 	// fill in file name
 	std::string name = m_name;
@@ -194,29 +279,30 @@ void EnumGen::writeFile(bool bHardcoded)
 	text.saveFile(name.c_str());
 }
 
-void EnumGen::writeDefinesStart(class OutputHandler& text, bool bDynamic, bool bHardcoded)
+void EnumGen::writeDefinesStart(class OutputHandler& text, bool bHardcoded)
 {
-	if (bDynamic)
+	if (m_type == HardcodingClass::TYPE_STANDARD && !bHardcoded)
 	{
-		std::string name = m_name;
-		name.append("Type");
+		if (!bHardcoded)
+		{
+			std::string name = m_name;
+			name.append("Type");
 
-		text.printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
-		text.printLine("#include \"AUTO_", name.c_str(), "_HARDCODED.h\"");
-		text.printLineNoIndent("#else // HARDCODE_XML_VALUES");
-		text.printLine();
-
-	}
-	else if (bHardcoded)
-	{
-		text.printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
+			text.printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
+			text.printLine("#include \"AUTO_", name.c_str(), "_HARDCODED.h\"");
+			text.printLineNoIndent("#else // HARDCODE_XML_VALUES");
+		}
+		else
+		{
+			text.printLineNoIndent("#ifdef HARDCODE_XML_VALUES");
+		}
 		text.printLine();
 	}
 }
 
-void EnumGen::writeDefinesEnd(class OutputHandler& text, bool bDynamic, bool bHardcoded)
+void EnumGen::writeDefinesEnd(class OutputHandler& text, bool bHardcoded)
 {
-	if (bDynamic || bHardcoded)
+	if (m_type == HardcodingClass::TYPE_STANDARD && !bHardcoded)
 	{
 		text.printLine();
 		text.printLineNoIndent("#endif // HARDCODE_XML_VALUES");
@@ -225,7 +311,7 @@ void EnumGen::writeDefinesEnd(class OutputHandler& text, bool bDynamic, bool bHa
 
 void EnumGen::writeEnum(class OutputHandler& text, bool bHardcoded)
 {
-	bHardcoded |= m_bAlwaysStatic;
+	bHardcoded |= m_type.isAlwaysHardcoded();
 
 	text.printLine("enum types");
 	text.addStartBracket();
@@ -260,7 +346,8 @@ void EnumGen::writeCPP()
 	text.printLine("#include \"AUTO_", type, ".h\"");
 	text.printLine();
 
-	if (!m_bAlwaysStatic)
+	/*
+	if (m_type == HardcodingClass::TYPE_STANDARD)
 	{
 		text.printLineNoIndent("#ifndef HARDCODE_XML_VALUES");
 		text.printLine(type, "::types LOCAL_NUM;");
@@ -268,6 +355,7 @@ void EnumGen::writeCPP()
 		text.printLineNoIndent("#endif // HARDCODE_XML_VALUES");
 		text.printLine();
 	}
+	*/
 
 	text.printLine(type, "::", type, "()");
 	text.printLine("\t: m_Value(", type, "::NONE)");
@@ -289,6 +377,24 @@ void EnumGen::writeCPP()
 
 	text.printLine("void ", type, "::setupLength()");
 	text.addStartBracket();
+	text.addEndBracket();
+	text.printLine();
+
+	text.printLine("const ", type, "::types ", type, "::value() const");
+	text.addStartBracket();
+	text.printLine("return m_Value;");
+	text.addEndBracket();
+	text.printLine();
+
+	text.printLine(type, "::operator const ", type, "::types() const");
+	text.addStartBracket();
+	text.printLine("return m_Value;");
+	text.addEndBracket();
+	text.printLine();
+
+	text.printLine(type, "::operator const ", type, "s() const");
+	text.addStartBracket();
+	text.printLine("return static_cast<", type, "s>(m_Value);");
 	text.addEndBracket();
 	text.printLine();
 

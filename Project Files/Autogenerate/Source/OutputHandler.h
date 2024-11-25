@@ -29,8 +29,9 @@ public:
 
 	const char* getText() const;
 
-private:
 	void changeIndent(int iChange);
+
+private:
 	void addIndent();
 
 	std::string m_text;
