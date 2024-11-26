@@ -13,7 +13,7 @@ void readXMLFiles()
 	for (file = file.FirstChild(); file.isValid(); file = file.NextSibling())
 	{
 		EnumGen test(file);
-		test.writeFile();
+		test.generateFiles();
 	}
 }
 

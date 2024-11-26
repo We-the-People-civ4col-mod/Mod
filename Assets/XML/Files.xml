@@ -10,6 +10,12 @@
     error messages will report the text in the child tag of this name. Defaults to Type
   Types:
     list of vanilla types. Fallback in case autogenerate.exe can't locate the vanilla files
+  InfoSource:
+    Enum to set where the info array is stored. Valid values GC, INFO and ENUMMAP. Auto configured values should work in most cases
+  GetInfo:
+    Name of the function to get info from GC (mostly self configuring)
+  InfoClass:
+    Name of the class storing the info (mostly self configuring)
   HardcodingType:
     Enum to set how to generate the header files. Valid options:
      - TYPE_STANDARD:  uses hardcoded/dynamic set at compile time (default)
@@ -33,6 +39,7 @@
 		<Files>
 			<File>Units/CIV4BuildInfos.xml</File>
 		</Files>
+		<InfoSource>INFO</InfoSource>
 	</BuildTypes>
 	<BuildingTypes>
 		<Files>
@@ -49,6 +56,8 @@
 			<File>Civilizations/CivCategoryInfos.xml</File>
 		</Files>
 		<HardcodingType>TYPE_HARDCODED</HardcodingType>
+		<InfoSource>INFO</InfoSource>
+		<InfoClass>CivCategoryInfo</InfoClass>
 		<NumName>NUM_CIV_CATEGORY_TYPES</NumName>
 	</CivCategoryTypes>
 	<CivicTypes>
@@ -60,6 +69,7 @@
 		<Files>
 			<File>GameInfo/CIV4CivicOptionInfos.xml</File>
 		</Files>
+		<InfoClass>CvInfoBase</InfoClass>
 	</CivicOptionTypes>
 	<CivilizationTypes>
 		<Files>
@@ -128,11 +138,13 @@
 		<Files>
 			<File>BasicInfos/CIV4InvisibleInfos.xml</File>
 		</Files>
+		<InfoClass>CvInfoBase</InfoClass>
 	</InvisibleTypes>
 	<MemoryTypes>
 		<Files>
 			<File>BasicInfos/CIV4MemoryInfos.xml</File>
 		</Files>
+		<InfoClass>CvInfoBase</InfoClass>
 	</MemoryTypes>
 	<PlayerOptionTypes>
 		<Files>
@@ -188,11 +200,13 @@
 		<Files>
 			<File>BasicInfos/CIV4UnitAIInfos.xml</File>
 		</Files>
+		<InfoClass>CvInfoBase</InfoClass>
 	</UnitAITypes>
 	<UnitCombatTypes>
 		<Files>
 			<File>BasicInfos/CIV4UnitCombatInfos.xml</File>
 		</Files>
+		<InfoClass>CvInfoBase</InfoClass>
 	</UnitCombatTypes>
 	<YieldTypes>
 		<Files>

@@ -1,10 +1,28 @@
 #pragma once
 
 #include <vector>
+#include "OutputHandler.h"
+#include "LineString.h"
 
 class EnumGen
 {
 public:
+	class InfoSource
+	{
+	public:
+		enum var
+		{
+			GC,
+			INFO,
+			ENUMMAP,
+		};
+		InfoSource();
+		void assign(const char* newType);
+		var getVar() const;
+	private:
+		var value;
+	};
+
 	class HardcodingClass
 	{
 	public:
@@ -20,6 +38,8 @@ public:
 		HardcodingClass(var);
 
 		bool isAlwaysHardcoded() const;
+		bool hasInfo() const;
+
 		var getVar() const;
 
 		void assign(const char* newType);
@@ -45,20 +65,42 @@ public:
 	const char* num() const;
 	int length() const;
 
-	void writeFile();
+	void generateFiles();
 
 private:
-	void writeFile(bool bHardcoded);
+	void writeFile();
 
+	void writeCPPStart();
 	void writeCPP();
-	void writeDefinesStart(class OutputHandler&, bool bHardcoded);
-	void writeDefinesEnd(class OutputHandler&, bool bHardcoded);
-	void writeEnum(class OutputHandler&, bool bHardcoded);
+	void writeDefinesStart();
+	void writeDefinesEnd();
+	void writeEnum();
 	
+	void func_constructor();
+	void func_constructor_type();
+	void func_fromInt();
+	void func_toInt();
+	void func_conversion_operator_value();
+	void func_conversion_operator_enum();
+	void func_conversion_operator_types();
+	void func_range_static();
+	void func_range();
+
+	void func_info_static();
+	void func_info();
+
 
 	std::vector<std::string> m_types;
-	std::string m_name;
-	std::string m_num;
+	LineString m_name;
+	LineString m_nameType;
+	LineString m_num;
+	LineString m_InfoClass;
+	LineString m_GetInfo;
 	int m_iLength;
 	HardcodingClass m_type;
+	InfoSource m_InfoSource;
+	bool m_bSecondRun;
+
+	OutputHandler file_cpp;
+	OutputHandler file_header;
 };

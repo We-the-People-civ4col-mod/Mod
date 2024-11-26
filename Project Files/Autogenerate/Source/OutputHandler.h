@@ -31,6 +31,8 @@ public:
 
 	void changeIndent(int iChange);
 
+	void reset();
+
 private:
 	void addIndent();
 

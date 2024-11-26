@@ -153,6 +153,11 @@ void OutputHandler::changeIndent(int iChange)
 	m_indent += iChange;
 }
 
+void OutputHandler::reset()
+{
+	m_text.clear();
+}
+
 void OutputHandler::addIndent()
 {
 	switch (m_indent)
