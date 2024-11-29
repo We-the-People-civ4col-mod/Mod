@@ -824,22 +824,22 @@
 		<element type="EuropeInfos"/>
 	</ElementType>
 	<ElementType name="Civ4Hints" content="eltOnly">
-		<element type="HintInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="HintInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4GameTurnInfo" content="eltOnly">
-		<element type="GameTurnInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="GameTurnInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4GoodyInfo" content="eltOnly">
-		<element type="GoodyInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="GoodyInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4HandicapInfo" content="eltOnly">
-		<element type="HandicapInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="HandicapInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4VictoryInfo" content="eltOnly">
-		<element type="VictoryInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="VictoryInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4HurryInfo" content="eltOnly">
-		<element type="HurryInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="HurryInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4CivicOptionInfos" content="eltOnly">
 		<element type="CivicOptionInfos" minOccurs="0" maxOccurs="1"/>
@@ -848,22 +848,22 @@
 		<element type="CivicInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4GameSpeedInfo" content="eltOnly">
-		<element type="GameSpeedInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="GameSpeedInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4TurnTimerInfo" content="eltOnly">
-		<element type="TurnTimerInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="TurnTimerInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4CursorInfo" content="eltOnly">
-		<element type="CursorInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="CursorInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4EmphasizeInfo" content="eltOnly">
-		<element type="EmphasizeInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="EmphasizeInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4CultureLevelInfo" content="eltOnly">
-		<element type="CultureLevelInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="CultureLevelInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4DiplomacyInfos" content="eltOnly">
-		<element type="DiplomacyInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="DiplomacyInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4GameOptionInfos" content="eltOnly">
 		<element type="GameOptionInfos" minOccurs="0" maxOccurs="1"/>

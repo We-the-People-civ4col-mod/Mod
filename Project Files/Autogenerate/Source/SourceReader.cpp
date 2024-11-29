@@ -5,6 +5,7 @@
 
 #include "SourceReader.h"
 #include "Constants.h"
+#include "assert.h"
 
 
 SourceFileContainer::SourceFileContainer(std::string fileWName)
@@ -54,6 +55,19 @@ const SourceFileList& SourceFileList::getInstance()
 const std::vector<SourceFileContainer>& SourceFileList::getFiles() const
 {
 	return m_files;
+}
+
+const SourceFileContainer& SourceFileList::getFile(const char* fileName) const
+{
+	for (std::vector<SourceFileContainer>::const_iterator it = m_files.begin(); it != m_files.end(); it++)
+	{
+		if (it->m_filename.compare(fileName) == 0)
+		{
+			return *it;
+		}
+	}
+	assert(0);
+	return m_files[0];
 }
 
 void SourceFileList::readDir(std::string path)

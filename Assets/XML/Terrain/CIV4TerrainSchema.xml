@@ -343,16 +343,16 @@
 		<element type="BonusInfo" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="Civ4TerrainInfos" content="eltOnly">
-		<element type="TerrainInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="TerrainInfos" minOccurs="0"/>
 	</ElementType>
 	<ElementType name="Civ4YieldInfos" content="eltOnly">
-		<element type="YieldInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="YieldInfos" minOccurs="0" />
 	</ElementType>
 	<ElementType name="Civ4FeatureInfos" content="eltOnly">
-		<element type="FeatureInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="FeatureInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4BonusInfos" content="eltOnly">
-		<element type="BonusInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="BonusInfos" minOccurs="0" />
 	</ElementType>
 	<ElementType name="Civ4Terrain" content="eltOnly">
 		<element type="TerrainInfos" minOccurs="0" maxOccurs="*"/>
@@ -546,6 +546,6 @@
 		<element type="LandscapeInfos" minOccurs="1" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4ImprovementInfos" content="eltOnly">
-		<element type="ImprovementInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="ImprovementInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 </Schema>

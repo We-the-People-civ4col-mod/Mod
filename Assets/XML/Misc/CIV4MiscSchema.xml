@@ -144,16 +144,16 @@
 		<element type="Path"/>
 	</ElementType>
 	<ElementType name="WaterPlaneInfos" content="eltOnly">
-		<element type="WaterPlaneInfo" minOccurs="1" maxOccurs="*"/>
+		<element type="WaterPlaneInfo" minOccurs="1" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="TerrainPlaneInfos" content="eltOnly">
-		<element type="TerrainPlaneInfo" minOccurs="1" maxOccurs="*"/>
+		<element type="TerrainPlaneInfo" minOccurs="1" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="CameraOverlayInfos" content="eltOnly">
-		<element type="CameraOverlayInfo" minOccurs="1" maxOccurs="*"/>
+		<element type="CameraOverlayInfo" minOccurs="1" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4RouteInfos" content="eltOnly">
-		<element type="RouteInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="RouteInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4WaterPlaneInfos" content="eltOnly">
 		<element type="WaterPlaneInfos" minOccurs="0" maxOccurs="1"/>
@@ -165,13 +165,13 @@
 		<element type="CameraOverlayInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4EffectInfos" content="eltOnly">
-		<element type="EffectInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="EffectInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="EffectInfos" content="eltOnly">
 		<element type="EffectInfo" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="Civ4AttachableInfos" content="eltOnly">
-		<element type="AttachableInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="AttachableInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="AttachableInfos" content="eltOnly">
 		<element type="AttachableInfo" minOccurs="0" maxOccurs="*"/>

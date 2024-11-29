@@ -342,6 +342,9 @@ private:
 	void PreUpdateProgressCB(const char* szMessage);
 	void readXMLfiles(XMLReadStage eStage);
 	/// XML type preloading - end - Nightinggale
+
+	void EnumSetupAuto();
+	void EnumSetupCustom();
 };
 
 //

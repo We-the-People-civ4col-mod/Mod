@@ -1,9 +1,11 @@
+#include <algorithm>
 #include <stdio.h>
 
 #include "assert.h"
 #include "EnumGen.h"
 #include "FileAccess.h"
 #include "OutputHandler.h"
+#include "SourceReader.h"
 
 EnumGen::InfoSource::InfoSource()
 	: value(GC)
@@ -165,6 +167,7 @@ EnumGen::EnumGen(const char* name, int ilength, const char* num)
 	, m_name(name)
 	, m_type(HardcodingClass::TYPE_NO_FILE)
 	, m_bSecondRun(false)
+	, m_bHasOverrideFunctions(false)
 {
 	if (num != NULL)
 	{
@@ -176,6 +179,7 @@ EnumGen::EnumGen(const char* name, int ilength, const char* num)
 
 EnumGen::EnumGen(class Element file)
 	: m_bSecondRun(false)
+	, m_bHasOverrideFunctions(false)
 {
 	m_name.assign(file.name());
 	m_name.erase(m_name.size()-5, 5);
@@ -282,7 +286,55 @@ EnumGen::EnumGen(class Element file)
 		}
 	}
 
+	scanSourceFiles();
+
 	EnumVec.push_back(*this);
+}
+
+void EnumGen::scanSourceFiles()
+{
+	std::string searchPattern = m_nameType;
+	searchPattern.append("::");
+
+	// cache if the type is mentioned in the override file. Cache is used to skip scanning the file for each function later
+	m_bHasOverrideFunctions = getOverrideFile().find(searchPattern) != std::string::npos;
+
+	if (m_type.getVar() != HardcodingClass::TYPE_STANDARD)
+	{
+		// we are only interested in which enum values are in use if the enum can be both hardcoded and dynamic
+		return;
+	}
+
+	const char* const SEARCH_CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ_";
+
+	const std::vector<SourceFileContainer>& files = SourceFileList::getInstance().getFiles();
+
+	for (std::vector<SourceFileContainer>::const_iterator it = files.begin(); it != files.end(); it++)
+	{
+		const std::string& text = it->getText();
+
+		for (size_t pos = text.find(searchPattern); pos != std::string::npos; pos = text.find(searchPattern, pos + 1))
+		{
+			pos += searchPattern.size();
+			size_t pos_end = text.find_first_not_of(SEARCH_CHARS, pos);
+			unsigned int iLength = pos_end - pos;
+			if (iLength > 1)
+			{
+				std::string buffer = text.substr(pos, iLength);
+				if (iLength != 4 || buffer.compare("NONE") != 0) // filter out NONE as there likely is a lot of those
+				{
+					m_used_enum_values.push_back(buffer);
+				}
+			}
+		}
+	}
+	if (m_used_enum_values.size() > 1)
+	{
+		// sort and remove dublicates
+		std::sort(m_used_enum_values.begin(), m_used_enum_values.end());
+		std::vector<std::string>::iterator it = std::unique(m_used_enum_values.begin(), m_used_enum_values.end());
+		m_used_enum_values.resize(std::distance(m_used_enum_values.begin(), it));
+	}
 }
 
 const char* EnumGen::name() const
@@ -328,6 +380,7 @@ void EnumGen::writeFile()
 
 	func_constructor();
 	func_constructor_type();
+	func_constructor_types();
 	file_header.printLine();
 
 	func_fromInt();
@@ -343,11 +396,16 @@ void EnumGen::writeFile()
 	func_range_static();
 	func_range();
 	file_header.printLine();
+	func_getString_static();
+	func_getString();
+	func_assignFromString();
+	func_next();
+	file_header.printLine();
 
 
 	file_header.printLineNoIndent("private:");
-	//text.printLine("void setup();");
-	//text.printLine("void setupLength();");
+	func_setupAuto();
+	func_setupCustom();
 	file_header.printLine();
 	file_header.printLine("types m_Value;");
 
@@ -420,6 +478,11 @@ void EnumGen::writeEnum()
 	file_header.printLine("");
 	if (!bHardcoded)
 	{
+		for (std::vector<std::string>::iterator it = m_used_enum_values.begin(); it != m_used_enum_values.end(); ++it)
+		{
+			file_header.printLine("static const types& ", it->c_str(), ";");
+		}
+
 		file_header.printLine("static const types& NUM_ENTRIES;");
 	}
 }
@@ -435,6 +498,7 @@ void EnumGen::writeCPPStart()
 	case InfoSource::INFO:
 		file_cpp.printLine("#include \"../CvGameCoreDLL.h\"");
 		file_cpp.printLine("#include \"../GlobalInfos.h\"");
+		file_cpp.printLine("#include \"../Infos.h\"");
 		break;
 	case InfoSource::ENUMMAP:
 		assert(0);
@@ -446,6 +510,19 @@ void EnumGen::writeCPPStart()
 	
 	file_cpp.printLine("#include \"AUTO_", m_nameType, ".h\"");
 	file_cpp.printLine();
+
+	if (m_used_enum_values.size() > 0)
+	{
+		file_cpp.printLineNoIndent("#ifndef HARDCODE_XML_VALUES");
+		for (unsigned int i = 0; i < m_used_enum_values.size(); ++i)
+		{
+			LineString temp = m_used_enum_values[i];
+			file_cpp.printLine(m_nameType, "::types LOCAL_", temp, " = ", m_nameType, "::NONE;");
+			file_cpp.printLine("const ", m_nameType, "::types& ", m_nameType, "::", temp, " = LOCAL_", temp, ";");
+		}
+
+		file_cpp.printLineNoIndent("#endif");
+	}
 }
 
 void EnumGen::writeCPP()
@@ -464,20 +541,43 @@ void EnumGen::func_constructor()
 
 	if (m_bSecondRun) return;
 
-	file_cpp.printLine(m_nameType, "::", m_nameType, "()");
+	if (hasOverride_PrintIfNot(m_nameType, "::", m_nameType, "()"))
+	{
+		return;
+	}
 	file_cpp.printLine("\t: m_Value(", m_nameType, "::NONE)");
 	file_cpp.addStartBracket();
 	file_cpp.addEndBracket();
 	file_cpp.printLine();
 
 }
+
 void EnumGen::func_constructor_type()
+{
+	file_header.printLine(m_nameType, "(types);");
+
+	if (m_bSecondRun) return;
+
+	if (hasOverride_PrintIfNot(m_nameType, "::", m_nameType, "(", m_nameType, "::types val)"))
+	{
+		return;
+	}
+	file_cpp.printLine("\t: m_Value(val)");
+	file_cpp.addStartBracket();
+	file_cpp.addEndBracket();
+	file_cpp.printLine();
+}
+
+void EnumGen::func_constructor_types()
 {
 	file_header.printLine(m_nameType, "(enum ", m_nameType, "s);");
 
 	if (m_bSecondRun) return;
 
-	file_cpp.printLine(m_nameType, "::", m_nameType, "(", m_nameType, "s val)");
+	if (hasOverride_PrintIfNot(m_nameType, "::", m_nameType, "(", m_nameType, "s val)"))
+	{
+		return;
+	}
 	file_cpp.printLine("\t: m_Value(static_cast<", m_nameType, "::types>(val))");
 	file_cpp.addStartBracket();
 	file_cpp.addEndBracket();
@@ -490,7 +590,10 @@ void EnumGen::func_fromInt()
 
 	if (m_bSecondRun) return;
 
-	file_cpp.printLine("void ", m_nameType, "::assignFromInt(int iNewValue)");
+	if (hasOverride_PrintIfNot("void ", m_nameType, "::assignFromInt(int iNewValue)"))
+	{
+		return;
+	}
 	file_cpp.addStartBracket();
 	file_cpp.printLine("m_Value = static_cast<types>(iNewValue);");
 	file_cpp.addEndBracket();
@@ -503,7 +606,10 @@ void EnumGen::func_toInt()
 
 	if (m_bSecondRun) return;
 
-	file_cpp.printLine("int ", m_nameType, "::toInt() const");
+	if (hasOverride_PrintIfNot("int ", m_nameType, "::toInt() const"))
+	{
+		return;
+	}
 	file_cpp.addStartBracket();
 	file_cpp.printLine("return m_Value;");
 	file_cpp.addEndBracket();
@@ -516,7 +622,10 @@ void EnumGen::func_conversion_operator_value()
 
 	if (m_bSecondRun) return;
 
-	file_cpp.printLine("const ", m_nameType, "::types ", m_nameType, "::value() const");
+	if (hasOverride_PrintIfNot("const ", m_nameType, "::types ", m_nameType, "::value() const"))
+	{
+		return;
+	}
 	file_cpp.addStartBracket();
 	file_cpp.printLine("return m_Value;");
 	file_cpp.addEndBracket();
@@ -529,7 +638,10 @@ void EnumGen::func_conversion_operator_enum()
 
 	if (m_bSecondRun) return;
 
-	file_cpp.printLine(m_nameType, "::operator const ", m_nameType, "::types() const");
+	if (hasOverride_PrintIfNot(m_nameType, "::operator const ", m_nameType, "::types() const"))
+	{
+		return;
+	}
 	file_cpp.addStartBracket();
 	file_cpp.printLine("return m_Value;");
 	file_cpp.addEndBracket();
@@ -543,7 +655,10 @@ void EnumGen::func_conversion_operator_types()
 
 	if (m_bSecondRun) return;
 
-	file_cpp.printLine(m_nameType, "::operator const ", m_nameType, "s() const");
+	if (hasOverride_PrintIfNot(m_nameType, "::operator const ", m_nameType, "s() const"))
+	{
+		return;
+	}
 	file_cpp.addStartBracket();
 	file_cpp.printLine("return static_cast<", m_nameType, "s>(m_Value);");
 	file_cpp.addEndBracket();
@@ -558,7 +673,10 @@ void EnumGen::func_info_static()
 
 	if (m_bSecondRun) return;
 
-	file_cpp.printLine("const ", m_InfoClass, "& ", m_nameType, "::info(", m_nameType, " eIndex)");
+	if (hasOverride_PrintIfNot("const ", m_InfoClass, "& ", m_nameType, "::info(", m_nameType, " eIndex)"))
+	{
+		return;
+	}
 	file_cpp.addStartBracket();
 	file_cpp.printLine("FAssert(eIndex.isInRange());");
 
@@ -588,7 +706,10 @@ void EnumGen::func_info()
 
 	if (m_bSecondRun) return;
 
-	file_cpp.printLine("const ", m_InfoClass, "& ", m_nameType, "::info() const");
+	if (hasOverride_PrintIfNot("const ", m_InfoClass, "& ", m_nameType, "::info() const"))
+	{
+		return;
+	}
 	file_cpp.addStartBracket();
 	file_cpp.printLine("FAssert(isInRange());");
 	switch (m_InfoSource.getVar())
@@ -615,7 +736,10 @@ void EnumGen::func_range_static()
 
 	if (m_bSecondRun) return;
 
-	file_cpp.printLine("bool ", m_nameType, "::isInRange(types eValue)");
+	if (hasOverride_PrintIfNot("bool ", m_nameType, "::isInRange(types eValue)"))
+	{
+		return;
+	}
 	file_cpp.addStartBracket();
 	file_cpp.printLine("return eValue > NONE && eValue < NUM_ENTRIES;");
 	file_cpp.addEndBracket();
@@ -628,10 +752,275 @@ void EnumGen::func_range()
 
 	if (m_bSecondRun) return;
 
-	file_cpp.printLine("bool ", m_nameType, "::isInRange() const");
+	if (hasOverride_PrintIfNot("bool ", m_nameType, "::isInRange() const"))
+	{
+		return;
+	}
 	file_cpp.addStartBracket();
 	file_cpp.printLine("return m_Value > NONE && m_Value < NUM_ENTRIES;");
 	file_cpp.addEndBracket();
 	file_cpp.printLine();
 }
 
+void EnumGen::func_getString_static()
+{
+	file_header.printLine("static const char* getString(", m_nameType, " eIndex);");
+
+	if (m_bSecondRun) return;
+
+	if (hasOverride_PrintIfNot("const char* ", m_nameType, "::getString(", m_nameType, " eIndex)"))
+	{
+		return;
+	}
+	file_cpp.addStartBracket();
+	
+	if (m_type.hasInfo())
+	{
+		file_cpp.printLine("if (eIndex.isInRange())");
+		file_cpp.addStartBracket();
+		file_cpp.printLine("return eIndex.info().getType();");
+		file_cpp.addEndBracket();
+		file_cpp.printLine("else");
+		file_cpp.addStartBracket();
+		file_cpp.printLine("return \"\";");
+		file_cpp.addEndBracket();
+	}
+	else
+	{
+		file_cpp.printLine("switch (eIndex.value())");
+		file_cpp.addStartBracket();
+		for (unsigned i = 0; i < m_types.size(); ++i)
+		{
+			const char* tempType = m_types[i].c_str();
+			file_cpp.printLine("case ", tempType, ": return \"", tempType, "\";");
+		}
+		file_cpp.printLine("default: return \"\";");
+		file_cpp.addEndBracket();
+	}
+
+	file_cpp.addEndBracket();
+	file_cpp.printLine();
+}
+
+void EnumGen::func_getString()
+{
+	file_header.printLine("const char* getString() const;");
+
+	if (m_bSecondRun) return;
+
+	if (hasOverride_PrintIfNot("const char* ", m_nameType, "::getString() const"))
+	{
+		return;
+	}
+	file_cpp.addStartBracket();
+	file_cpp.printLine("return getString(m_Value);");
+	file_cpp.addEndBracket();
+	file_cpp.printLine();
+}
+
+void EnumGen::func_assignFromString()
+{
+	file_header.printLine("void assignFromString(const char* szType);");
+
+	if (m_bSecondRun) return;
+
+	if (hasOverride_PrintIfNot("void ", m_nameType, "::assignFromString(const char* szType)"))
+	{
+		return;
+	}
+	file_cpp.addStartBracket();
+	file_cpp.printLine("m_Value = NONE;");
+	file_cpp.printLine("for (; next();)");
+	file_cpp.addStartBracket();
+	file_cpp.printLine("if (strcmp(szType, getString()) == 0) return;");
+	file_cpp.addEndBracket();
+	file_cpp.printLine("m_Value = NONE;");
+	file_cpp.addEndBracket();
+	file_cpp.printLine();
+}
+
+void EnumGen::func_next()
+{
+	file_header.printLine("bool next();");
+
+	if (m_bSecondRun) return;
+
+	if (hasOverride_PrintIfNot("bool ", m_nameType, "::next()"))
+	{
+		return;
+	}
+	file_cpp.addStartBracket();
+	file_cpp.printLine("m_Value = static_cast<types>(m_Value+1);");
+	file_cpp.printLine("return m_Value < NUM_ENTRIES;");
+	file_cpp.addEndBracket();
+	file_cpp.printLine();
+}
+
+
+void EnumGen::func_setupAuto()
+{
+	file_header.printLine("static void setupAuto();");
+
+	if (m_bSecondRun) return;
+
+	if (hasOverride_PrintIfNot("void ", m_nameType, "::setupAuto()"))
+	{
+		return;
+	}
+	file_cpp.addStartBracket();
+	if (m_used_enum_values.size() > 0)
+	{
+		file_cpp.printLine("#ifndef HARDCODE_XML_VALUES");
+		file_cpp.printLine(m_nameType, " buffer;");
+		for (unsigned int i = 0; i < m_used_enum_values.size(); ++i)
+		{
+			const char* enumTypeName = m_used_enum_values[i].c_str();
+			file_cpp.printLine("buffer.assignFromString(\"", enumTypeName, "\");");
+			file_cpp.printLine("LOCAL_", enumTypeName, " = buffer;");
+		}
+		file_cpp.printLine("#endif");
+	}
+	file_cpp.addEndBracket();
+	file_cpp.printLine();
+}
+
+void EnumGen::func_setupCustom()
+{
+	file_header.printLine("static void setupCustom();");
+
+	if (m_bSecondRun) return;
+
+	if (hasOverride_PrintIfNot("void ", m_nameType, "::setupCustom()"))
+	{
+		return;
+	}
+	file_cpp.addStartBracket();
+	file_cpp.addEndBracket();
+	file_cpp.printLine();
+}
+
+bool EnumGen::hasOverride_PrintIfNot(const char* arg)
+{
+	if (m_bHasOverrideFunctions)
+	{
+		if (getOverrideFile().find(arg) != std::string::npos)
+		{
+			return true;
+		}
+	}
+	file_cpp.printLine(arg);
+	return false;
+}
+
+bool EnumGen::hasOverride_PrintIfNot(const char* arg_1, const char* arg_2)
+{
+	LineString buffer = arg_1;
+	buffer.append(arg_2);
+	return hasOverride_PrintIfNot(buffer);
+}
+
+bool EnumGen::hasOverride_PrintIfNot(const char* arg_1, const char* arg_2, const char* arg_3)
+{
+	LineString buffer = arg_1;
+	buffer.append(arg_2);
+	buffer.append(arg_3);
+	return hasOverride_PrintIfNot(buffer);
+}
+
+bool EnumGen::hasOverride_PrintIfNot(const char* arg_1, const char* arg_2, const char* arg_3, const char* arg_4)
+{
+	LineString buffer = arg_1;
+	buffer.append(arg_2);
+	buffer.append(arg_3);
+	buffer.append(arg_4);
+	return hasOverride_PrintIfNot(buffer);
+}
+
+bool EnumGen::hasOverride_PrintIfNot(const char* arg_1, const char* arg_2, const char* arg_3, const char* arg_4, const char* arg_5)
+{
+	LineString buffer = arg_1;
+	buffer.append(arg_2);
+	buffer.append(arg_3);
+	buffer.append(arg_4);
+	buffer.append(arg_5);
+	return hasOverride_PrintIfNot(buffer);
+}
+
+bool EnumGen::hasOverride_PrintIfNot(const char* arg_1, const char* arg_2, const char* arg_3, const char* arg_4, const char* arg_5, const char* arg_6)
+{
+	LineString buffer = arg_1;
+	buffer.append(arg_2);
+	buffer.append(arg_3);
+	buffer.append(arg_4);
+	buffer.append(arg_5);
+	buffer.append(arg_6);
+	return hasOverride_PrintIfNot(buffer);
+}
+
+bool EnumGen::hasOverride_PrintIfNot(const char* arg_1, const char* arg_2, const char* arg_3, const char* arg_4, const char* arg_5, const char* arg_6, const char* arg_7)
+{
+	LineString buffer = arg_1;
+	buffer.append(arg_2);
+	buffer.append(arg_3);
+	buffer.append(arg_4);
+	buffer.append(arg_5);
+	buffer.append(arg_6);
+	buffer.append(arg_7);
+	return hasOverride_PrintIfNot(buffer);
+}
+
+bool EnumGen::hasOverride_PrintIfNot(const char* arg_1, const char* arg_2, const char* arg_3, const char* arg_4, const char* arg_5, const char* arg_6, const char* arg_7, const char* arg_8)
+{
+	LineString buffer = arg_1;
+	buffer.append(arg_2);
+	buffer.append(arg_3);
+	buffer.append(arg_4);
+	buffer.append(arg_5);
+	buffer.append(arg_6);
+	buffer.append(arg_7);
+	buffer.append(arg_8);
+	return hasOverride_PrintIfNot(buffer);
+}
+
+
+
+void EnumGen::createInitFunction()
+{
+	const std::vector<EnumGen>& vec = getVector();
+
+	OutputHandler includes;
+	OutputHandler setupAuto;
+	OutputHandler setupCustom;
+
+	includes.printLine("#include \"../CvGameCoreDLL.h\"");
+	includes.printLine("#include \"../CvXMLLoadUtility.h\"");
+	includes.printLine();
+
+	setupAuto.printLine("void CvXMLLoadUtility::EnumSetupAuto()");
+	setupAuto.addStartBracket();
+
+	setupCustom.printLine("void CvXMLLoadUtility::EnumSetupCustom()");
+	setupCustom.addStartBracket();
+
+	for (std::vector<EnumGen>::const_iterator it = vec.begin(); it != vec.end(); ++it)
+	{
+		includes.printLine("#include \"AUTO_", it->m_nameType, ".h\"");
+		setupAuto.printLine(it->m_nameType, "::setupAuto();");
+		setupCustom.printLine(it->m_nameType, "::setupCustom();");
+	}
+	includes.printLine();
+	setupAuto.addEndBracket();
+	setupAuto.printLine();
+	setupCustom.addEndBracket();
+
+	includes.printLine(setupAuto.getText());
+	includes.printLine(setupCustom.getText());
+
+	includes.saveFile("CvXMLLoadUtility.cpp");
+}
+
+const std::string& EnumGen::getOverrideFile()
+{
+	static const std::string& file = SourceFileList::getInstance().getFile("DLLSources/Types/EnumTypeOverride.cpp").getText();
+	return file;
+}

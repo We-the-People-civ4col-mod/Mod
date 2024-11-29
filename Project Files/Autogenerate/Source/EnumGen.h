@@ -67,7 +67,13 @@ public:
 
 	void generateFiles();
 
+	static const std::string& getOverrideFile();
+	static void createInitFunction();
+
 private:
+	void scanSourceFiles();
+
+
 	void writeFile();
 
 	void writeCPPStart();
@@ -78,6 +84,7 @@ private:
 	
 	void func_constructor();
 	void func_constructor_type();
+	void func_constructor_types();
 	void func_fromInt();
 	void func_toInt();
 	void func_conversion_operator_value();
@@ -89,6 +96,23 @@ private:
 	void func_info_static();
 	void func_info();
 
+	void func_getString_static();
+	void func_getString();
+	void func_assignFromString();
+	void func_next();
+
+	void func_setupAuto();
+	void func_setupCustom();
+
+
+	bool hasOverride_PrintIfNot(const char*);
+	bool hasOverride_PrintIfNot(const char*, const char*);
+	bool hasOverride_PrintIfNot(const char*, const char*, const char*);
+	bool hasOverride_PrintIfNot(const char*, const char*, const char*, const char*);
+	bool hasOverride_PrintIfNot(const char*, const char*, const char*, const char*, const char*);
+	bool hasOverride_PrintIfNot(const char*, const char*, const char*, const char*, const char*, const char*);
+	bool hasOverride_PrintIfNot(const char*, const char*, const char*, const char*, const char*, const char*, const char*);
+	bool hasOverride_PrintIfNot(const char*, const char*, const char*, const char*, const char*, const char*, const char*, const char*);
 
 	std::vector<std::string> m_types;
 	LineString m_name;
@@ -100,7 +124,10 @@ private:
 	HardcodingClass m_type;
 	InfoSource m_InfoSource;
 	bool m_bSecondRun;
+	bool m_bHasOverrideFunctions;
 
 	OutputHandler file_cpp;
 	OutputHandler file_header;
+
+	std::vector<std::string> m_used_enum_values;
 };

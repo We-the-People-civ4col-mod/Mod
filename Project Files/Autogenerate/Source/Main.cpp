@@ -15,6 +15,7 @@ void readXMLFiles()
 		EnumGen test(file);
 		test.generateFiles();
 	}
+	EnumGen::createInitFunction();
 }
 
 

@@ -947,37 +947,37 @@
 		<element type="BuildInfos" />
 	</ElementType>
 	<ElementType name="Civ4UnitCombatInfos" content="eltOnly">
-		<element type="UnitCombatInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="UnitCombatInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4UnitClassInfos" content="eltOnly">
-		<element type="UnitClassInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="UnitClassInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4UnitInfos" content="eltOnly">
-		<element type="UnitInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="UnitInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4MissionInfos" content="eltOnly">
-		<element type="MissionInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="MissionInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4ControlInfos" content="eltOnly">
-		<element type="ControlInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="ControlInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4CommandInfos" content="eltOnly">
-		<element type="CommandInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="CommandInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4AutomateInfos" content="eltOnly">
-		<element type="AutomateInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="AutomateInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4PromotionInfos" content="eltOnly">
-		<element type="PromotionInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="PromotionInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4ProfessionInfos" content="eltOnly">
-		<element type="ProfessionInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="ProfessionInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4DomainInfos" content="eltOnly">
-		<element type="DomainInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="DomainInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4SpecialUnitInfos" content="eltOnly">
-		<element type="SpecialUnitInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="SpecialUnitInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4EntityEventInfos" content="eltOnly">
 		<element type="EntityEventInfos" minOccurs="1" maxOccurs="1"/>

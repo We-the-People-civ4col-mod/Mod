@@ -346,10 +346,10 @@
 		<element type="GenericBuildingInfos" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="Civ4BuildingInfos" content="eltOnly">
-		<element type="BuildingInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="BuildingInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4SpecialBuildingInfos" content="eltOnly">
-		<element type="SpecialBuildingInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="SpecialBuildingInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
 	<ElementType name="Civ4Buildings" content="eltOnly">
 		<element type="BuildingClassInfos" minOccurs="0"/>

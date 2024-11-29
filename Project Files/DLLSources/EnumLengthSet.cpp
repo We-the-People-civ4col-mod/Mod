@@ -121,5 +121,5 @@ void EnumLengthSet::openFile(tinyxml2::XMLDocument& doc, const char* file) const
 
 void EnumLengthSet::verifyTypeLength(const char* type, int iLength) const
 {
-	FAssert(iLength == getTypeLength(type));
+	FAssertMsg(iLength == getTypeLength(type), type);
 }

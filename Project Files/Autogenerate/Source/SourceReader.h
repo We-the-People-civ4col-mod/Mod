@@ -24,6 +24,7 @@ public:
 
 	static const SourceFileList& getInstance();
 
+	const SourceFileContainer& getFile(const char* fileName) const;
 	const std::vector<SourceFileContainer>& getFiles() const;
 
 private:

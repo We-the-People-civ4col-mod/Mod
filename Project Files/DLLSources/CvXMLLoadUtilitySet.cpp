@@ -1451,6 +1451,7 @@ bool CvXMLLoadUtility::LoadPreMenuGlobals()
 	/// XML type preloading - start - Nightinggale
 	readXMLfiles(XML_STAGE_FULL);
 	readXMLfiles(XML_STAGE_POST_SETUP);
+	EnumSetupCustom();
 	GC.postXMLLoad(false);
 	XMLFileReader::clearCache(); // we are done reading xml files now
 	/// XML type preloading - end - Nightinggale
@@ -2762,6 +2763,7 @@ DllExport bool CvXMLLoadUtility::LoadPlayerOptions()
 
 	/// XML type preloading - start - Nightinggale
 	readXMLfiles(XML_STAGE_BASIC);
+	EnumSetupAuto();
 	GC.postXMLLoad(true);
 	/// XML type preloading - end - Nightinggale
 
