@@ -7,11 +7,16 @@ class LineString : public std::string
 public:
 	LineString();
 	LineString(std::string);
+	LineString(int i);
 
 	void killLeadingWhitespace();
 	void killTrailingWhitespace();
 	void trim();
 	void killFirstChar(char character);
+
+	LineString& append(int i);
+	LineString& append(const char*);
+	LineString& append(std::string);
 
 	operator const char*() const;
 };

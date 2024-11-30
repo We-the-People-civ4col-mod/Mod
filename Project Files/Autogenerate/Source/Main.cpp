@@ -30,9 +30,7 @@ int main()
 		EnumGen("Contact", 12);
 		EnumGen("Emotion", 5);
 		EnumGen("Feat", 10);
-		EnumGen("Player", 60);
 		EnumGen("Strategy", 13);
-		EnumGen("Team", 60);
 		EnumGen("WarPlan", 8);
 	}
 

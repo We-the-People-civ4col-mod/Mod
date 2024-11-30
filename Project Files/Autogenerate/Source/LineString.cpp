@@ -4,6 +4,7 @@
 #include <functional> 
 #include <cctype>
 #include <locale>
+#include <sstream>
 
 // trim from start (in place)
 inline void ltrim(std::string &s) {
@@ -24,6 +25,11 @@ LineString::LineString()
 LineString::LineString(std::string str)
 	: std::string(str)
 {}
+
+LineString::LineString(int i)
+{
+	append(i);
+}
 
 void LineString::killLeadingWhitespace()
 {
@@ -46,6 +52,26 @@ void LineString::killFirstChar(char character)
 	{
 		erase(0, 1);
 	}
+}
+
+LineString& LineString::append(int i)
+{
+	std::ostringstream buffer;
+	buffer << i;
+
+	return append(buffer.str());
+}
+
+LineString& LineString::append(const char* str)
+{
+	std::string::append(str);
+	return *this;
+}
+
+LineString& LineString::append(std::string str)
+{
+	std::string::append(str);
+	return *this;
 }
 
 LineString::operator const char*() const

@@ -33,6 +33,7 @@ public:
 			TYPE_DYNAMIC,
 			TYPE_NO_INFO,
 			TYPE_NO_FILE,
+			TYPE_PLAYER,
 		};
 		HardcodingClass();
 		HardcodingClass(var);
@@ -125,6 +126,7 @@ private:
 	InfoSource m_InfoSource;
 	bool m_bSecondRun;
 	bool m_bHasOverrideFunctions;
+	bool m_bHasNamedValues;
 
 	OutputHandler file_cpp;
 	OutputHandler file_header;

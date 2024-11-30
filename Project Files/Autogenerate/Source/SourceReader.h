@@ -27,8 +27,12 @@ public:
 	const SourceFileContainer& getFile(const char* fileName) const;
 	const std::vector<SourceFileContainer>& getFiles() const;
 
+	int getMaxPlayers() const;
+
 private:
 	void readDir(std::string path);
 
 	std::vector<SourceFileContainer> m_files;
+
+	int m_iMAX_PLAYERS;
 };

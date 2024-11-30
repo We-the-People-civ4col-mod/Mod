@@ -23,6 +23,7 @@
      - TYPE_HARDCODED: only uses hardcoded enums even in dynamic dlls (switch case can only be used on hardcoded enums)
      - TYPE_NO_INFO:   hardcoded and Type class will not be able to provide xml info
      - TYPE_NO_FILE:   hardcoded and DLL will not read the xml at runtime. (default if the Files tag is obmitted)
+     - TYPE_PLAYER:    used for player and team. Sets length to MAX_PLAYERS. No xml file linking
 
          Main difference between TYPE_NO_INFO and TYPE_NO_FILE is that only TYPE_NO_INFO will test hardcoded length against xml length at startup.
          Both are useful for setting enums in xml, but nothing is needed other than the Type for the enums
@@ -146,6 +147,9 @@
 		</Files>
 		<InfoClass>CvInfoBase</InfoClass>
 	</MemoryTypes>
+	<PlayerTypes>
+		<HardcodingType>TYPE_PLAYER</HardcodingType>
+	</PlayerTypes>
 	<PlayerOptionTypes>
 		<Files>
 			<File>GameInfo/CIV4PlayerOptionInfos.xml</File>
@@ -176,6 +180,9 @@
 			<File>Units/CIV4SpecialUnitInfos.xml</File>
 		</Files>
 	</SpecialUnitTypes>
+	<TeamTypes>
+		<HardcodingType>TYPE_PLAYER</HardcodingType>
+	</TeamTypes>
 	<TerrainTypes>
 		<Files>
 			<File>Terrain/CIV4TerrainInfos.xml</File>

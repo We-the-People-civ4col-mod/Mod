@@ -6,6 +6,7 @@
 #include "SourceReader.h"
 #include "Constants.h"
 #include "assert.h"
+#include "LineString.h"
 
 
 SourceFileContainer::SourceFileContainer(std::string fileWName)
@@ -45,6 +46,16 @@ SourceFileList::SourceFileList()
 	{
 		it->setup();
 	}
+
+	{
+		const std::string& file = getFile("CvDefines.h").getText();
+		size_t offset = file.find("#define MAX_PLAYERS");
+		offset = file.find("(", offset);
+		++offset;
+		size_t end = file.find(")", offset);
+		std::string number = file.substr(offset, end - offset);
+		m_iMAX_PLAYERS = atoi(number.c_str());
+	}
 }
 
 const SourceFileList& SourceFileList::getInstance()
@@ -57,11 +68,19 @@ const std::vector<SourceFileContainer>& SourceFileList::getFiles() const
 	return m_files;
 }
 
+int SourceFileList::getMaxPlayers() const
+{
+	return m_iMAX_PLAYERS;
+}
+
 const SourceFileContainer& SourceFileList::getFile(const char* fileName) const
 {
+	LineString searchStr(SOURCE_DIR);
+	searchStr.append(fileName);
+
 	for (std::vector<SourceFileContainer>::const_iterator it = m_files.begin(); it != m_files.end(); it++)
 	{
-		if (it->m_filename.compare(fileName) == 0)
+		if (it->m_filename.compare(searchStr) == 0)
 		{
 			return *it;
 		}
