@@ -322,4 +322,8 @@
 	<ElementType name="Civ4EventInfos" content="eltOnly">
 		<element type="EventInfos" minOccurs="1" maxOccurs="1"/>
 	</ElementType>
+	<ElementType name="Feat" content="textOnly"/>
+	<ElementType name="Feats" content="eltOnly">
+		<element type="Feat" maxOccurs="*"/>
+	</ElementType>
 </Schema>

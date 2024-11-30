@@ -1,0 +1,23 @@
+
+<Schema xmlns="urn:schemas-microsoft-com:xml-data" xmlns:dt="urn:schemas-microsoft-com:datatypes">
+	<ElementType name="AreaAI" content="textOnly"/>
+	<ElementType name="AreaAIs" content="eltOnly">
+		<element type="AreaAI" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Contact" content="textOnly"/>
+	<ElementType name="Contacts" content="eltOnly">
+		<element type="Contact" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Emotion" content="textOnly"/>
+	<ElementType name="Emotions" content="eltOnly">
+		<element type="Emotion" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="Strategy" content="textOnly"/>
+	<ElementType name="Strategies" content="eltOnly">
+		<element type="Strategy" maxOccurs="*"/>
+	</ElementType>
+	<ElementType name="WarPlan" content="textOnly"/>
+	<ElementType name="WarPlans" content="eltOnly">
+		<element type="WarPlan" maxOccurs="*"/>
+	</ElementType>
+</Schema>

@@ -48,7 +48,19 @@ Element Element::FirstChild(const char* name)
 	return Element(m_pElement->FirstChildElement(name));
 }
 
+const Element Element::FirstChild(const char* name) const
+{
+	assert(isValid());
+	return Element(m_pElement->FirstChildElement(name));
+}
+
 Element Element::NextSibling(const char* name)
+{
+	assert(isValid());
+	return Element(m_pElement->NextSiblingElement(name));
+}
+
+const Element Element::NextSibling(const char* name) const
 {
 	assert(isValid());
 	return Element(m_pElement->NextSiblingElement(name));
@@ -72,6 +84,10 @@ const char* Element::getText() const
 	return m_pElement->GetText();
 }
 
+const char* Element::Attribute(const char* name)
+{
+	return m_pElement->Attribute(name);
+}
 
 LineString sourcePath;
 

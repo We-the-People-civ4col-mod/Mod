@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<AreaAIs xmlns="x-schema:AISchema.xml">
+	<AreaAI>AREAAI_OFFENSIVE</AreaAI>
+	<AreaAI>AREAAI_BALANCED</AreaAI>
+	<AreaAI>AREAAI_DEFENSIVE</AreaAI>
+	<AreaAI>AREAAI_MASSING</AreaAI>
+	<AreaAI>AREAAI_ASSAULT</AreaAI>
+	<AreaAI>AREAAI_ASSAULT_MASSING</AreaAI>
+	<AreaAI>AREAAI_NEUTRAL</AreaAI>
+</AreaAIs>

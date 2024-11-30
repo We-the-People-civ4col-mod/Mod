@@ -175,6 +175,7 @@ EnumGen::EnumGen(const char* name, int ilength, const char* num)
 	, m_bSecondRun(false)
 	, m_bHasOverrideFunctions(false)
 	, m_bHasNamedValues(false)
+	, m_typeTagName("")
 {
 	if (num != NULL)
 	{
@@ -188,6 +189,7 @@ EnumGen::EnumGen(class Element file)
 	: m_bSecondRun(false)
 	, m_bHasOverrideFunctions(false)
 	, m_bHasNamedValues(true)
+	, m_typeTagName("Type")
 
 {
 	m_name.assign(file.name());
@@ -196,6 +198,18 @@ EnumGen::EnumGen(class Element file)
 	m_nameType.append("Type");
 
 	bool bTypeSpecified = false;
+
+	Element TypeTagNameElement = file.FirstChild("Type");
+	if (TypeTagNameElement.isValid())
+	{
+		m_typeTagName = TypeTagNameElement.getText();
+	}
+
+	Element RedirectElement = file.FirstChild("Redirect");
+	if (RedirectElement.isValid())
+	{
+		m_RedirectPath.assign(RedirectElement.getText());
+	}
 
 	Element TypeElement = file.FirstChild("HardcodingType");
 	if (TypeElement.isValid())
@@ -260,21 +274,28 @@ EnumGen::EnumGen(class Element file)
 	{
 		for (current_file = current_file.FirstChild("File"); current_file.isValid(); current_file = current_file.NextSibling("File"))
 		{
-			const char* filename = current_file.getText();
+			LineString filename = current_file.getText();
 			FileAccessXML xml_file(filename);
+			Element root = xml_file.getRoot();
 
-			Element tag = xml_file.getRoot();
-
-			while (tag.isValid() && !tag.FirstChild("Type").isValid())
+			int iOffset = filename.find_last_of("/");
+			if (iOffset == -1)
 			{
-				tag = tag.FirstChild();
+				filename.empty();
 			}
-
-			for (; tag.isValid(); tag = tag.NextSibling())
+			else
 			{
-				const char* type = tag.FirstChild("Type").getText();
-				m_types.push_back(type);
+				filename = filename.substr(0, iOffset + 1);
 			}
+			std::string schemaPath = root.Attribute("xmlns");
+			schemaPath = schemaPath.substr(schemaPath.find(":") + 1);
+			filename.append(schemaPath.c_str());
+			FileAccessXML xml_schema(filename);
+
+			Element schema_root = xml_schema.getRoot();
+			schema_root = schema_root.FirstChild();
+
+			readFile(root, schema_root);
 		}
 	}
 
@@ -328,6 +349,41 @@ EnumGen::EnumGen(class Element file)
 	scanSourceFiles();
 
 	EnumVec.push_back(*this);
+}
+
+void EnumGen::readFile(const Element xml_file, const Element schema_parent)
+{
+	const char* name = xml_file.name();
+
+	Element schema = schema_parent;
+	for (; schema.isValid() && strcmp(schema.Attribute("name"), name) != 0; schema = schema.NextSibling())
+	{
+	}
+
+	Element child = xml_file.FirstChild();
+	Element schema_child = schema.FirstChild();
+	const char* maxOccurs = schema_child.Attribute("maxOccurs");
+
+	if (maxOccurs == NULL || maxOccurs[0] != '*')
+	{
+		readFile(child, schema_parent);
+		return;
+	}
+
+	const bool bChildType = m_typeTagName != NULL && strlen(m_typeTagName) > 0;
+
+	const bool bHasTypes = !bChildType || child.FirstChild(m_typeTagName).isValid();
+
+	for (; child.isValid(); child = child.NextSibling())
+	{
+		++m_iLength;
+
+		if (!bHasTypes) continue;
+
+		const char* tag = bChildType ? child.FirstChild(m_typeTagName).getText() : child.getText();
+
+		m_types.push_back(tag);
+	}
 }
 
 void EnumGen::scanSourceFiles()
@@ -393,6 +449,16 @@ int EnumGen::length() const
 
 void EnumGen::generateFiles()
 {
+	if (!m_RedirectPath.empty())
+	{
+		file_header.printLine("#pragma once");
+		file_header.printLine("#include \"", m_RedirectPath, "\"");
+		std::string name = m_name;
+		name.append("Type.h");
+		file_header.saveFile(name.c_str());
+		return;
+	}
+
 	writeCPPStart();
 	writeFile();
 	writeCPP();

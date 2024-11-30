@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Emotions xmlns="x-schema:AISchema.xml">
+	<Emotion>EMOTION_GREED</Emotion>
+	<Emotion>EMOTION_ANGER</Emotion>
+	<Emotion>EMOTION_ENVY</Emotion>
+	<Emotion>EMOTION_ANXIETY</Emotion>
+	<Emotion>EMOTION_SUBMISSION</Emotion>
+</Emotions>

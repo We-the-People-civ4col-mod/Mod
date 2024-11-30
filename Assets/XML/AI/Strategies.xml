@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<Strategies xmlns="x-schema:AISchema.xml">
+	<Strategy>STRATEGY_SMALL_WAVES</Strategy>
+	<Strategy>STRATEGY_BUILDUP</Strategy>
+	<Strategy>STRATEGY_CONCENTRATED_ATTACK</Strategy>
+	<Strategy>STRATEGY_DISTRIBUTED_ATTACK</Strategy>
+	<Strategy>STRATEGY_DIE_FIGHTING</Strategy>
+	<Strategy>STRATEGY_FAST_BELLS</Strategy>
+	<Strategy>STRATEGY_CASH_FOCUS</Strategy>
+	<Strategy>STRATEGY_SELL_TO_NATIVES</Strategy>
+	<Strategy>STRATEGY_DENSE_CITY_SPACING</Strategy>
+	<Strategy>STRATEGY_MILITARY_BUILDUP</Strategy>
+	<Strategy>STRATEGY_REVOLUTION_PREPARING</Strategy>
+	<Strategy>STRATEGY_REVOLUTION_DECLARING</Strategy>
+	<Strategy>STRATEGY_REVOLUTION</Strategy>
+</Strategies>

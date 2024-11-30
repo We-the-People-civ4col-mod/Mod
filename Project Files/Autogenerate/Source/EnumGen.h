@@ -74,6 +74,7 @@ public:
 private:
 	void scanSourceFiles();
 
+	void readFile(const Element xml_file, const Element schema);
 
 	void writeFile();
 
@@ -132,4 +133,7 @@ private:
 	OutputHandler file_header;
 
 	std::vector<std::string> m_used_enum_values;
+
+	const char* m_typeTagName;
+	LineString m_RedirectPath;
 };

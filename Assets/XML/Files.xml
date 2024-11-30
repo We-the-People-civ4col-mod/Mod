@@ -31,6 +31,13 @@
          NOTE: all types can be used in tags in xml files regardless of HardcodingType setting
 -->
 <Files>
+	<AreaAITypes>
+		<Files>
+			<File>AI/AreaAIs.xml</File>
+		</Files>
+		<HardcodingType>TYPE_NO_FILE</HardcodingType>
+		<Type></Type>
+	</AreaAITypes>
 	<BonusTypes>
 		<Files>
 			<File>Terrain/CIV4BonusInfos.xml</File>
@@ -52,6 +59,14 @@
 			<File>Buildings/CIV4BuildingClassInfos.xml</File>
 		</Files>
 	</BuildingClassTypes>
+	<CityPlotTypes>
+		<!-- This doesn't generate code, but it does tell EnumMap how to handle this type
+		as well as where the human written code is located -->
+		<HardcodingType>TYPE_NO_FILE</HardcodingType>
+		<iLength>25</iLength>
+		<Redirect>../Types/CityPlotType.h</Redirect>
+		<NumName>NUM_CITY_PLOTS</NumName>
+	</CityPlotTypes>
 	<CivCategoryTypes>
 		<Files>
 			<File>Civilizations/CivCategoryInfos.xml</File>
@@ -82,6 +97,13 @@
 			<File>GameInfo/CIV4CultureLevelInfo.xml</File>
 		</Files>
 	</CultureLevelTypes>
+	<ContactTypes>
+		<Files>
+			<File>AI/Contacts.xml</File>
+		</Files>
+		<HardcodingType>TYPE_NO_FILE</HardcodingType>
+		<Type></Type>
+	</ContactTypes>
 	<DomainTypes>
 		<Files>
 			<File>BasicInfos/CIV4DomainInfos.xml</File>
@@ -93,6 +115,13 @@
 			<Type>DOMAIN_IMMOBILE</Type>
 		</Types>
 	</DomainTypes>
+	<EmotionTypes>
+		<Files>
+			<File>AI/Emotions.xml</File>
+		</Files>
+		<HardcodingType>TYPE_NO_FILE</HardcodingType>
+		<Type></Type>
+	</EmotionTypes>
 	<EmphasizeTypes>
 		<Files>
 			<File>GameInfo/CIV4EmphasizeInfo.xml</File>
@@ -110,6 +139,13 @@
 		<HardcodingType>TYPE_HARDCODED</HardcodingType>
 		<NumName>NUM_FATHER_POINT_TYPES</NumName>
 	</FatherPointTypes>
+	<FeatTypes>
+		<Files>
+			<File>Events/Feats.xml</File>
+		</Files>
+		<HardcodingType>TYPE_NO_FILE</HardcodingType>
+		<Type></Type>
+	</FeatTypes>
 	<FeatureTypes>
 		<Files>
 			<File>Terrain/CIV4FeatureInfos.xml</File>
@@ -180,6 +216,13 @@
 			<File>Units/CIV4SpecialUnitInfos.xml</File>
 		</Files>
 	</SpecialUnitTypes>
+	<StrategyTypes>
+		<Files>
+			<File>AI/Strategies.xml</File>
+		</Files>
+		<HardcodingType>TYPE_NO_FILE</HardcodingType>
+		<Type></Type>
+	</StrategyTypes>
 	<TeamTypes>
 		<HardcodingType>TYPE_PLAYER</HardcodingType>
 	</TeamTypes>
@@ -215,6 +258,13 @@
 		</Files>
 		<InfoClass>CvInfoBase</InfoClass>
 	</UnitCombatTypes>
+	<WarPlanTypes>
+		<Files>
+			<File>AI/WarPlans.xml</File>
+		</Files>
+		<HardcodingType>TYPE_NO_FILE</HardcodingType>
+		<Type></Type>
+	</WarPlanTypes>
 	<YieldTypes>
 		<Files>
 			<File>Terrain/CIV4YieldInfos.xml</File>

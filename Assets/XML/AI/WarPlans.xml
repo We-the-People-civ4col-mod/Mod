@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<WarPlans xmlns="x-schema:AISchema.xml">
+	<WarPlan>WARPLAN_ATTACKED_RECENT</WarPlan>
+	<WarPlan>WARPLAN_ATTACKED</WarPlan>
+	<WarPlan>WARPLAN_PREPARING_LIMITED</WarPlan>
+	<WarPlan>WARPLAN_PREPARING_TOTAL</WarPlan>
+	<WarPlan>WARPLAN_LIMITED</WarPlan>
+	<WarPlan>WARPLAN_TOTAL</WarPlan>
+	<WarPlan>WARPLAN_DOGPILE</WarPlan>
+	<WarPlan>WARPLAN_EXTORTION</WarPlan>
+</WarPlans>

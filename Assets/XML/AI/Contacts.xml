@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<Contacts xmlns="x-schema:AISchema.xml">
+	<Contact>CONTACT_JOIN_WAR</Contact>
+	<Contact>CONTACT_STOP_TRADING</Contact>
+	<Contact>CONTACT_GIVE_HELP</Contact>
+	<Contact>CONTACT_ASK_FOR_HELP</Contact>
+	<Contact>CONTACT_DEMAND_TRIBUTE</Contact>
+	<Contact>CONTACT_OPEN_BORDERS</Contact>
+	<Contact>CONTACT_DEFENSIVE_PACT</Contact>
+	<Contact>CONTACT_PERMANENT_ALLIANCE</Contact>
+	<Contact>CONTACT_PEACE_TREATY</Contact>
+	<Contact>CONTACT_TRADE_MAP</Contact>
+	<Contact>CONTACT_YIELD_GIFT</Contact>
+	<Contact>CONTACT_NATIVE_RAID</Contact>
+</Contacts>

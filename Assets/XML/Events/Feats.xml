@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Feats xmlns="x-schema:CIV4EventSchema.xml">
+	<Feat>FEAT_TREASURE</Feat>
+	<Feat>FEAT_TREASURE_IN_PORT</Feat>
+	<Feat>FEAT_CITY_MISSING_YIELD</Feat>
+	<Feat>FEAT_CITY_NO_FOOD</Feat>
+	<Feat>FEAT_CITY_INLAND</Feat>
+	<Feat>FEAT_EUROPE_SHIPS</Feat>
+	<Feat>FEAT_GOTO_EUROPE</Feat>
+	<Feat>FEAT_TALK_NATIVES</Feat>
+	<Feat>FEAT_CITY_SCREEN</Feat>
+	<Feat>FEAT_PAD</Feat>
+</Feats>

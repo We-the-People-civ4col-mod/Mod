@@ -27,11 +27,15 @@ public:
 	bool hasMultipleChildren() const; // faster than full count
 
 	Element FirstChild(const char* name = NULL);
+	const Element FirstChild(const char* name = NULL) const;
 	Element NextSibling(const char* name = NULL);
+	const Element NextSibling(const char* name = NULL) const;
 
 	bool getBool() const;
 	int getInt() const;
 	const char* getText() const;
+
+	const char* Attribute(const char* name);
 
 private:
 	Element(const tinyxml2::XMLElement *pElement);
