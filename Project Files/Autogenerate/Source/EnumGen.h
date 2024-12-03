@@ -92,8 +92,8 @@ private:
 	void func_conversion_operator_value();
 	void func_conversion_operator_enum();
 	void func_conversion_operator_types();
-	void func_range_static();
-	void func_range();
+	void func_idValid_static();
+	void func_isValid();
 
 	void func_info_static();
 	void func_info();
@@ -103,10 +103,15 @@ private:
 	void func_assignFromString();
 	void func_next();
 
+	void func_operator_compare_type();
+	void func_operator_compare_types();
+	void func_operator_assign_type();
+	void func_operator_assign_types();
+
 	void func_setupAuto();
 	void func_setupCustom();
 
-
+	bool hasOverride(const char*) const;
 	bool hasOverride_PrintIfNot(const char*);
 	bool hasOverride_PrintIfNot(const char*, const char*);
 	bool hasOverride_PrintIfNot(const char*, const char*, const char*);
@@ -131,6 +136,7 @@ private:
 
 	OutputHandler file_cpp;
 	OutputHandler file_header;
+	OutputHandler file_inline;
 
 	std::vector<std::string> m_used_enum_values;
 

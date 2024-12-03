@@ -9,6 +9,15 @@ public:
 	LineString(std::string);
 	LineString(int i);
 
+	LineString(const char*);
+	LineString(const char*, const char*);
+	LineString(const char*, const char*, const char*);
+	LineString(const char*, const char*, const char*, const char*);
+	LineString(const char*, const char*, const char*, const char*, const char*);
+	LineString(const char*, const char*, const char*, const char*, const char*, const char*);
+	LineString(const char*, const char*, const char*, const char*, const char*, const char*, const char*);
+	LineString(const char*, const char*, const char*, const char*, const char*, const char*, const char*, const char*);
+
 	void killLeadingWhitespace();
 	void killTrailingWhitespace();
 	void trim();

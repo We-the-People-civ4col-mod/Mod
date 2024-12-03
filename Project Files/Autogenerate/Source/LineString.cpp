@@ -31,6 +31,75 @@ LineString::LineString(int i)
 	append(i);
 }
 
+
+LineString::LineString(const char* A)
+{
+	assign(A);
+}
+
+LineString::LineString(const char* A, const char* B)
+{
+	assign(A);
+	append(B);
+}
+
+LineString::LineString(const char* A, const char* B, const char* C)
+{
+	assign(A);
+	append(B);
+	append(C);
+}
+
+LineString::LineString(const char* A, const char* B, const char* C, const char* D)
+{
+	assign(A);
+	append(B);
+	append(C);
+	append(D);
+}
+
+LineString::LineString(const char* A, const char* B, const char* C, const char* D, const char* E)
+{
+	assign(A);
+	append(B);
+	append(C);
+	append(D);
+	append(E);
+}
+
+LineString::LineString(const char* A, const char* B, const char* C, const char* D, const char* E, const char* F)
+{
+	assign(A);
+	append(B);
+	append(C);
+	append(D);
+	append(E);
+	append(F);
+}
+
+LineString::LineString(const char* A, const char* B, const char* C, const char* D, const char* E, const char* F, const char* G)
+{
+	assign(A);
+	append(B);
+	append(C);
+	append(D);
+	append(E);
+	append(F);
+	append(G);
+}
+
+LineString::LineString(const char* A, const char* B, const char* C, const char* D, const char* E, const char* F, const char* G, const char* H)
+{
+	assign(A);
+	append(B);
+	append(C);
+	append(D);
+	append(E);
+	append(F);
+	append(G);
+	append(H);
+}
+
 void LineString::killLeadingWhitespace()
 {
 	ltrim(*this);
