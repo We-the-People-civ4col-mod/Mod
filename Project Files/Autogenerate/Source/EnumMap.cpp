@@ -419,6 +419,8 @@ void EnumMapGen::EnumMapTypes::func_allocateInternal()
 
 void EnumMapGen::EnumMapTypes::func_allocate()
 {
+	m_file_header->printLine();
+	m_file_header->printLine("// ensures memory is allocated. Does nothing if already allocated or array is static. No need to check for this first.");
 	m_file_header->printLine("void allocate();");
 
 	m_file_inline->printLine("inline void ", m_fullnameDec, "::allocate()");
@@ -438,7 +440,7 @@ void EnumMapGen::EnumMapTypes::func_allocate()
 	case EnumMapArray_Standard:
 		m_file_cpp->printLine("void ", m_fullname, "::_allocate()");
 		m_file_cpp->addStartBracket();
-		m_file_cpp->printLine("if (m_pArray != NULL)");
+		m_file_cpp->printLine("if (m_pArray == NULL)");
 		m_file_cpp->addStartBracket();
 		m_file_cpp->printLine("m_pArray = new ", var(), "[", m_NUM, "];");
 		if (m_typesVariable != EnumMap_Class) // class constructor already called
@@ -466,7 +468,7 @@ void EnumMapGen::EnumMapTypes::func_allocate()
 	case EnumMapArray_Bool:
 		m_file_cpp->printLine("void ", m_fullname, "::_allocate()");
 		m_file_cpp->addStartBracket();
-		m_file_cpp->printLine("if (m_pArray != NULL)");
+		m_file_cpp->printLine("if (m_pArray == NULL)");
 		m_file_cpp->addStartBracket();
 		m_file_cpp->printLine("const int size = (", m_NUM, " + 31)/32;");
 		m_file_cpp->printLine("m_pArray = new EnumArrayToken[size];");
@@ -946,12 +948,32 @@ void EnumMapGen::EnumMapTypes::func_getTotalBool()
 
 void EnumMapGen::EnumMapTypes::func_arrayAccess()
 {
+	m_file_header->printLine();
+	m_file_header->printLine("// only use if already allocated. Call allocate() first if unsure");
 	m_file_header->printLine(varDec(), "& operator[](", indexDec(), " eIndex);");
+
+	m_file_cpp->printLine(var(), "& ", m_fullname, "::operator[](", m_index, " eIndex)");
+	m_file_cpp->addStartBracket();
+	m_file_cpp->printLine("FAssert(isAllocated());");
+	printRangeCheck("eIndex");
+	m_file_cpp->printLine("return m_pArray[eIndex];");
+	m_file_cpp->addEndBracket();
+	m_file_cpp->printLine();
 }
 
 void EnumMapGen::EnumMapTypes::func_arrayAccessConst()
 {
+	m_file_header->printLine();
+	m_file_header->printLine("// only use if already allocated. Call allocate() first if unsure");
 	m_file_header->printLine("const ", varDec(), "& operator[](", indexDec(), " eIndex) const;");
+
+	m_file_cpp->printLine("const ", var(), "& ", m_fullname, "::operator[](", m_index, " eIndex) const");
+	m_file_cpp->addStartBracket();
+	m_file_cpp->printLine("FAssert(isAllocated());");
+	printRangeCheck("eIndex");
+	m_file_cpp->printLine("return m_pArray[eIndex];");
+	m_file_cpp->addEndBracket();
+	m_file_cpp->printLine();
 }
 
 void EnumMapGen::EnumMapTypes::func_toVector()
