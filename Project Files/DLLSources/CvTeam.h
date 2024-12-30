@@ -13,6 +13,10 @@ class CvTeam
 {
 
 public:
+
+	__forceinline CvTeamAI& AI() { return (CvTeamAI&)*this; }
+	__forceinline const CvTeamAI& AI() const { return (CvTeamAI&)*this; }
+
 	CvTeam();
 	virtual ~CvTeam();
 

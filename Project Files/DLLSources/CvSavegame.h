@@ -126,6 +126,7 @@ public:
 
 	void Read(CvTurnScoreMap& vec);
 	void Read(CvEventMap& vec);
+	void Read(std::deque<int>& deq);
 
 	// workaround because we can't use references on bitfields
 	template<typename T>
@@ -367,6 +368,9 @@ public:
 
 	template<class T>
 	void Write(SavegameVariableTypes eType, const CLinkList<T>& lList);
+
+	template<class T>
+	void Write(SavegameVariableTypes eType, const std::deque<T>& deq);
 
 	// Add all enums used in savegames (single byte)
 	void Write(ActivityTypes          variable) { WriteEnum(variable); }
@@ -843,6 +847,19 @@ inline void CvSavegameWriter::Write(SavegameVariableTypes eType, const CLinkList
 	{
 		Write(eType);
 		lList.Write(*this);
+	}
+}
+
+template<typename T>
+inline void CvSavegameWriter::Write(SavegameVariableTypes eType, const std::deque<T>& deq) {
+	const int iLength = static_cast<unsigned short>(deq.size());
+	if (iLength > 0)
+	{ 
+		Write(eType);
+		Write(iLength);
+		for (typename std::deque<T>::const_iterator it = deq.begin(); it != deq.end(); ++it) {
+			Write(*it);
+		}
 	}
 }
 

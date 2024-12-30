@@ -19,6 +19,8 @@
 #include "BetterBTSAI.h"
 #include "CvGameTextMgr.h" // GAMETEXT singleton access
 
+#include "CvFatherAI.h"
+
 // statics
 
 CvTeamAI* CvTeamAI::m_aTeams = NULL;
@@ -46,7 +48,7 @@ DllExport CvTeamAI& CvTeamAI::getTeamNonInl(TeamTypes eTeam)
 
 // Public Functions...
 
-CvTeamAI::CvTeamAI()
+CvTeamAI::CvTeamAI() : m_FatherAI(*this)
 {
 	AI_reset();
 }
@@ -98,6 +100,9 @@ void CvTeamAI::AI_doTurnPost()
 	}
 
 	AI_doWar();
+
+	AI_updateFatherPointHistory();
+	AI_updateFatherEvaluation();
 }
 
 
@@ -3316,5 +3321,82 @@ bool CvTeamAI::AI_isKing() const
 {
 	return hasEuropePlayer();
 }
+
+namespace {
+
+static const std::size_t MAX_HISTORY_SIZE = 50;
+
+void updateHistory(std::deque<int>& history, int newValue)
+{
+	history.push_back(newValue);
+	if (history.size() > MAX_HISTORY_SIZE)
+	{
+		history.pop_front(); // Remove the oldest element
+	}
+}
+}
+
+void CvTeamAI::AI_updateFatherPointHistory()
+{
+	updateHistory(m_pointHistoryPolitical, getFatherPoints(FATHER_POINT_POLITICAL));
+	updateHistory(m_pointHistoryExploration, getFatherPoints(FATHER_POINT_EXPLORATION));
+	updateHistory(m_pointHistoryTrade, getFatherPoints(FATHER_POINT_TRADE));
+	updateHistory(m_pointHistoryReligion, getFatherPoints(FATHER_POINT_RELIGION));
+	updateHistory(m_pointHistoryMilitary, getFatherPoints(FATHER_POINT_MILITARY));
+}
+
+std::deque<int>& CvTeamAI::getPointHistory(FatherPointTypes ePointType)
+{
+	switch (ePointType)
+	{
+	case FATHER_POINT_POLITICAL:
+		return m_pointHistoryPolitical;
+	case FATHER_POINT_EXPLORATION:
+		return m_pointHistoryExploration;
+	case FATHER_POINT_TRADE:
+		return m_pointHistoryTrade;
+	case FATHER_POINT_RELIGION:
+		return m_pointHistoryReligion;
+	case FATHER_POINT_MILITARY:
+		return m_pointHistoryMilitary;
+	default:
+		FAssert(false); // Invalid point type
+		// Return a default value to prevent undefined behavior (you may consider handling this differently)
+		static std::deque<int> dummyHistory;
+		return dummyHistory;
+	}
+}
+
+const std::deque<int>& CvTeamAI::getPointHistory(FatherPointTypes ePointType) const
+{
+	switch (ePointType)
+	{
+	case FATHER_POINT_POLITICAL:
+		return m_pointHistoryPolitical;
+	case FATHER_POINT_EXPLORATION:
+		return m_pointHistoryExploration;
+	case FATHER_POINT_TRADE:
+		return m_pointHistoryTrade;
+	case FATHER_POINT_RELIGION:
+		return m_pointHistoryReligion;
+	case FATHER_POINT_MILITARY:
+		return m_pointHistoryMilitary;
+	default:
+		FAssert(false); // Invalid point type
+		static const std::deque<int> dummyHistory;
+		return dummyHistory;
+	}
+}
+
+void CvTeamAI::AI_updateFatherEvaluation()
+{
+	m_FatherAI.AI_updateFatherEvaluation(*this);
+}
+
+void CvTeamAI::AI_evaluateFoundingFathers(const std::vector<FatherTypes>& fatherCandidates)
+{
+	m_FatherAI.AI_evaluateFoundingFathers(fatherCandidates, *this);
+}
+
 
 // Private Functions...

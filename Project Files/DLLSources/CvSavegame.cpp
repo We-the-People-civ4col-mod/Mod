@@ -381,6 +381,24 @@ void CvSavegameReader::Read(CvEventMap& Map)
 	}
 }
 
+void CvSavegameReader::Read(std::deque<int>& deq)
+{
+	int iSize;
+	Read(iSize);
+	if (iSize < 0)
+	{
+		deq.clear();
+		return;
+	}
+
+	deq.clear();
+	for (int i = 0; i < iSize; ++i)
+	{
+		int value;
+		Read(value);
+		deq.push_back(value);
+	}
+}
 void CvSavegameReader::ReadXmlEnum(int& iVariable, JITarrayTypes eType)
 {
 	FAssert(eType >= 0 && eType < NUM_JITarrayTypes);

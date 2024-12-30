@@ -6,6 +6,7 @@
 #define CIV4_TEAM_AI_H
 
 #include "CvTeam.h"
+#include "CvFatherAI.h"
 
 class CvTeamAI : public CvTeam
 {
@@ -14,6 +15,9 @@ public:
 
 	CvTeamAI();
 	virtual ~CvTeamAI();
+
+	const CvFatherAI& getFatherAI() const;
+	CvFatherAI& getFatherAI();
 
 	// inlined for performance reasons, only in the dll
 	static CvTeamAI& getTeam(TeamTypes eTeam)
@@ -166,7 +170,12 @@ public:
 
 	int AI_plotDefense(CvPlot const& kPlot, bool bIgnoreBuilding = false,
 		bool bGarrisonStrength = false) const; // advc.500b
+
+	void AI_evaluateFoundingFathers(const std::vector<FatherTypes>& fatherCandidates);
+
 protected:
+
+	CvFatherAI m_FatherAI;
 
 	static CvTeamAI* m_aTeams;
 
@@ -186,8 +195,16 @@ protected:
 	EnumMap<TeamTypes, int> m_em_iEnemyPeacetimeTradeValue;
 	EnumMap<TeamTypes, int> m_em_iEnemyPeacetimeGrantValue;
 	EnumMap<TeamTypes, int> m_em_iDamages;
-
 	EnumMap<TeamTypes, WarPlanTypes> m_em_eWarPlan;
+
+	// Founding father points history
+	std::deque<int> m_pointHistoryPolitical;
+	std::deque<int> m_pointHistoryExploration;
+	std::deque<int> m_pointHistoryTrade;
+	std::deque<int> m_pointHistoryReligion;
+	std::deque<int> m_pointHistoryMilitary;
+	std::vector<int> m_fatherValues;
+
 	int AI_maxWarRand() const;
 	int AI_maxWarNearbyPowerRatio() const;
 	int AI_maxWarDistantPowerRatio() const;
@@ -201,12 +218,16 @@ protected:
 	void AI_doCounter();
 	void AI_doWar();
     void AI_doTactics();
-
-
+	
+	void AI_updateFatherPointHistory();
+	void AI_updateFatherEvaluation();
+	std::deque<int>& CvTeamAI::getPointHistory(FatherPointTypes ePointType);
+	const std::deque<int>& CvTeamAI::getPointHistory(FatherPointTypes ePointType) const;
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;
 	friend class CvDLLWidgetData;
+	friend class CvFatherAI;
 };
 
 // helper for accessing static functions

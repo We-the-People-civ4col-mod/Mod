@@ -12,7 +12,6 @@ enum SavegameVariableTypes
 	TeamAISave_END,
 	TeamAISave_EnemyCityDistance,
 	TeamAISave_EnemyUnitDistance,
-
 	TeamAISave_WarPlanStateCounter,
 	TeamAISave_AtWarCounter,
 	TeamAISave_AtPeaceCounter,
@@ -24,9 +23,14 @@ enum SavegameVariableTypes
 	TeamAISave_EnemyPeacetimeTradeValue,
 	TeamAISave_EnemyPeacetimeGrantValue,
 	TeamAISave_Damages,
-
 	TeamAISave_WarPlan,
 	TeamAISave_WorstEnemy,
+	TeamAISave_PointHistoryPolitical,
+	TeamAISave_PointHistoryExploration,
+	TeamAISave_PointHistoryTrade,
+	TeamAISave_PointHistoryReligion,
+	TeamAISave_PointHistoryMilitary,
+	TeamAISave_FatherValues,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -37,7 +41,6 @@ const char* getSavedEnumNameTeamAI(SavegameVariableTypes eType)
 	case TeamAISave_END: return "TeamAISave_END";
 	case TeamAISave_EnemyCityDistance: return "TeamAISave_EnemyCityDistance";
 	case TeamAISave_EnemyUnitDistance: return "TeamAISave_EnemyUnitDistance";
-
 	case TeamAISave_WarPlanStateCounter: return "TeamAISave_WarPlanStateCounter";
 	case TeamAISave_AtWarCounter: return "TeamAISave_AtWarCounter";
 	case TeamAISave_AtPeaceCounter: return "TeamAISave_AtPeaceCounter";
@@ -49,9 +52,14 @@ const char* getSavedEnumNameTeamAI(SavegameVariableTypes eType)
 	case TeamAISave_EnemyPeacetimeTradeValue: return "TeamAISave_EnemyPeacetimeTradeValue";
 	case TeamAISave_EnemyPeacetimeGrantValue: return "TeamAISave_EnemyPeacetimeGrantValue";
 	case TeamAISave_Damages: return "TeamAISave_Damages";
-
 	case TeamAISave_WarPlan: return "TeamAISave_WarPlan";
 	case TeamAISave_WorstEnemy: return "TeamAISave_WorstEnemy";
+	case TeamAISave_PointHistoryPolitical: return "TeamAISave_PointHistoryPolitical";
+	case TeamAISave_PointHistoryExploration: return "TeamAISave_PointHistoryExploration";
+	case TeamAISave_PointHistoryTrade: return "TeamAISave_PointHistoryTrade";
+	case TeamAISave_PointHistoryReligion: return "TeamAISave_PointHistoryReligion";
+	case TeamAISave_PointHistoryMilitary: return "TeamAISave_PointHistoryMilitary";
+	case TeamAISave_FatherValues: return "TeamAISave_FatherValues";
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -67,7 +75,6 @@ void CvTeamAI::AI_resetSavedData()
 {
 	m_aiEnemyCityDistance.clear();
 	m_aiEnemyUnitDistance.clear();
-
 	m_em_iWarPlanStateCounter.reset();
 	m_em_iAtWarCounter.reset();
 	m_em_iAtPeaceCounter.reset();
@@ -79,9 +86,14 @@ void CvTeamAI::AI_resetSavedData()
 	m_em_iEnemyPeacetimeTradeValue.reset();
 	m_em_iEnemyPeacetimeGrantValue.reset();
 	m_em_iDamages.reset();
-
 	m_em_eWarPlan.reset();
-	m_eWorstEnemy=defaultWorstEnemy;
+	m_eWorstEnemy = defaultWorstEnemy;
+	m_pointHistoryPolitical.clear();
+	m_pointHistoryExploration.clear();
+	m_pointHistoryTrade.clear();
+	m_pointHistoryReligion.clear();
+	m_pointHistoryMilitary.clear();
+	m_fatherValues.clear();
 }
 
 void CvTeamAI::read(CvSavegameReader reader)
@@ -89,15 +101,12 @@ void CvTeamAI::read(CvSavegameReader reader)
 	reader.AssignClassType(SAVEGAME_CLASS_TEAM_AI);
 
 	// Init data before load
-	// This will ensure that all variables not included in the savegame will have default values
 	AI_resetSavedData();
 
 	// read base class. It's always placed first
 	CvTeam::read(reader);
 
 	// loop read all the variables
-	// As long as each variable has a UnitSavegameVariables "header", order doesn't matter.
-	// Variables can be read in any order and any number of variables can be skipped.
 	bool bContinue = true;
 	while (bContinue)
 	{
@@ -109,7 +118,6 @@ void CvTeamAI::read(CvSavegameReader reader)
 		case TeamAISave_END: bContinue = false; break;
 		case TeamAISave_EnemyCityDistance: reader.Read(m_aiEnemyCityDistance); break;
 		case TeamAISave_EnemyUnitDistance: reader.Read(m_aiEnemyUnitDistance); break;
-
 		case TeamAISave_WarPlanStateCounter: reader.Read(m_em_iWarPlanStateCounter); break;
 		case TeamAISave_AtWarCounter: reader.Read(m_em_iAtWarCounter); break;
 		case TeamAISave_AtPeaceCounter: reader.Read(m_em_iAtPeaceCounter); break;
@@ -121,12 +129,16 @@ void CvTeamAI::read(CvSavegameReader reader)
 		case TeamAISave_EnemyPeacetimeTradeValue: reader.Read(m_em_iEnemyPeacetimeTradeValue); break;
 		case TeamAISave_EnemyPeacetimeGrantValue: reader.Read(m_em_iEnemyPeacetimeGrantValue); break;
 		case TeamAISave_Damages: reader.Read(m_em_iDamages); break;
-
 		case TeamAISave_WarPlan: reader.Read(m_em_eWarPlan); break;
 		case TeamAISave_WorstEnemy: reader.Read(m_eWorstEnemy); break;
+		case TeamAISave_PointHistoryPolitical: reader.Read(m_pointHistoryPolitical); break;
+		case TeamAISave_PointHistoryExploration: reader.Read(m_pointHistoryExploration); break;
+		case TeamAISave_PointHistoryTrade: reader.Read(m_pointHistoryTrade); break;
+		case TeamAISave_PointHistoryReligion: reader.Read(m_pointHistoryReligion); break;
+		case TeamAISave_PointHistoryMilitary: reader.Read(m_pointHistoryMilitary); break;
+		case TeamAISave_FatherValues: reader.Read(m_fatherValues); break;
 		}
 	}
-	
 }
 
 void CvTeamAI::write(CvSavegameWriter writer)
@@ -134,15 +146,9 @@ void CvTeamAI::write(CvSavegameWriter writer)
 	writer.AssignClassType(SAVEGAME_CLASS_TEAM_AI);
 
 	// Write the data.
-	// Use WriteSwitch since it will automatically include WriteSwitch in the savegame.
-	// Also it will not save anything if the variable and the default values are identical.
-	// If nothing is saved, the loading code will use the default values.
-	// Less data saved/loaded means smaller savegames.
-	// write base class first
 	CvTeam::write(writer);
 	writer.Write(TeamAISave_EnemyCityDistance, m_aiEnemyCityDistance);
 	writer.Write(TeamAISave_EnemyUnitDistance, m_aiEnemyUnitDistance);
-
 	writer.Write(TeamAISave_WarPlanStateCounter, m_em_iWarPlanStateCounter);
 	writer.Write(TeamAISave_AtWarCounter, m_em_iAtWarCounter);
 	writer.Write(TeamAISave_AtPeaceCounter, m_em_iAtPeaceCounter);
@@ -154,8 +160,13 @@ void CvTeamAI::write(CvSavegameWriter writer)
 	writer.Write(TeamAISave_EnemyPeacetimeTradeValue, m_em_iEnemyPeacetimeTradeValue);
 	writer.Write(TeamAISave_EnemyPeacetimeGrantValue, m_em_iEnemyPeacetimeGrantValue);
 	writer.Write(TeamAISave_Damages, m_em_iDamages);
-
 	writer.Write(TeamAISave_WarPlan, m_em_eWarPlan);
 	writer.Write(TeamAISave_WorstEnemy, m_eWorstEnemy, defaultWorstEnemy);
+	writer.Write(TeamAISave_PointHistoryPolitical, m_pointHistoryPolitical);
+	writer.Write(TeamAISave_PointHistoryExploration, m_pointHistoryExploration);
+	writer.Write(TeamAISave_PointHistoryTrade, m_pointHistoryTrade);
+	writer.Write(TeamAISave_PointHistoryReligion, m_pointHistoryReligion);
+	writer.Write(TeamAISave_PointHistoryMilitary, m_pointHistoryMilitary);
+	writer.Write(TeamAISave_FatherValues, m_fatherValues);
 	writer.Write(TeamAISave_END);
 }

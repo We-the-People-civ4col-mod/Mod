@@ -2529,8 +2529,9 @@ void CvTeam::offerFoundingFather(FatherTypes eFather)
 	}
 	else
 	{
-		// AI code just accepts anything
-		convinceFather(eFather, true);
+		std::vector<FatherTypes> father;
+		father.push_back(eFather);
+		AI().AI_evaluateFoundingFathers(father);
 	}
 }
 
@@ -2647,10 +2648,6 @@ void CvTeam::testFoundingFather()
 						}
 					}
 				}
-				else //This is an AI only team, convince the father immediately during AI movements while humans are frozen.
-				{
-					convinceFather(eFather, true);
-				}
 			}
 		}
 	}
@@ -2660,22 +2657,30 @@ void CvTeam::testFoundingFather()
 	//game not to commit suicide otherwise in some weird situations.
 	if (vFathersToCourt.size() != 0)
 	{
-		for (int i = 0; i < (int)vFathersToCourt.size(); i++)
-		{
-			eFather = vFathersToCourt.at(i);
-
-			if (canConvinceFather(eFather))
+		if (isHuman())
+		{ 
+			for (int i = 0; i < (int)vFathersToCourt.size(); i++)
 			{
-				for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+				eFather = vFathersToCourt.at(i);
+
+				if (canConvinceFather(eFather))
 				{
-					CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
-					if (kPlayer.isAlive() && kPlayer.getTeam() == getID() && kPlayer.isHuman())
+					for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
 					{
-						CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_FOUNDING_FATHER, eFather); //This line seems to wait for input from the player before moving on.
-						gDLL->getInterfaceIFace()->addPopup(pInfo, (PlayerTypes)iPlayer);
+						CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+						if (kPlayer.isAlive() && kPlayer.getTeam() == getID() && kPlayer.isHuman())
+						{
+							CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_FOUNDING_FATHER, eFather); //This line seems to wait for input from the player before moving on.
+							gDLL->getInterfaceIFace()->addPopup(pInfo, (PlayerTypes)iPlayer);
+						}
 					}
 				}
 			}
+		}
+		else
+		{
+			// Let the AI pick its preferred father (if any)
+			AI().AI_evaluateFoundingFathers(vFathersToCourt);
 		}
 	}
 }
