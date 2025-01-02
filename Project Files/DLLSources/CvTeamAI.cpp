@@ -45,14 +45,16 @@ DllExport CvTeamAI& CvTeamAI::getTeamNonInl(TeamTypes eTeam)
 	return getTeam(eTeam);
 }
 
+#pragma warning(push)
+#pragma warning(disable: 4355) // Disable 'this' used in initializer list warning
 
 // Public Functions...
-
 CvTeamAI::CvTeamAI() : m_FatherAI(*this)
 {
 	AI_reset();
 }
 
+#pragma warning(pop) // Restore warning state
 
 CvTeamAI::~CvTeamAI()
 {
@@ -3393,9 +3395,9 @@ void CvTeamAI::AI_updateFatherEvaluation()
 	m_FatherAI.AI_updateFatherEvaluation(*this);
 }
 
-void CvTeamAI::AI_evaluateFoundingFathers(const std::vector<FatherTypes>& fatherCandidates)
+FatherTypes CvTeamAI::evaluateBestFoundingFatherDecision(const std::vector<FatherTypes>& fatherCandidates) const
 {
-	m_FatherAI.AI_evaluateFoundingFathers(fatherCandidates, *this);
+	return m_FatherAI.evaluateBestFoundingFatherDecision(fatherCandidates, *this);
 }
 
 

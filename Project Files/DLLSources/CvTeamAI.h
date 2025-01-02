@@ -171,7 +171,8 @@ public:
 	int AI_plotDefense(CvPlot const& kPlot, bool bIgnoreBuilding = false,
 		bool bGarrisonStrength = false) const; // advc.500b
 
-	void AI_evaluateFoundingFathers(const std::vector<FatherTypes>& fatherCandidates);
+	void AI_updateFatherEvaluation();
+	FatherTypes evaluateBestFoundingFatherDecision(const std::vector<FatherTypes>& fatherCandidates) const;
 
 protected:
 
@@ -220,7 +221,6 @@ protected:
     void AI_doTactics();
 	
 	void AI_updateFatherPointHistory();
-	void AI_updateFatherEvaluation();
 	std::deque<int>& CvTeamAI::getPointHistory(FatherPointTypes ePointType);
 	const std::deque<int>& CvTeamAI::getPointHistory(FatherPointTypes ePointType) const;
 

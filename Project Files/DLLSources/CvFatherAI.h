@@ -22,8 +22,11 @@ public:
 
     CvFatherAI(CvTeamAI& teamAI);
 
+    // Must be called once per turn
     void AI_updateFatherEvaluation(CvTeamAI& teamAI);
-    void AI_evaluateFoundingFathers(const std::vector<FatherTypes>& fatherCandidates, CvTeamAI& teamAI);
+    
+    // To be called whenever we need to test for a father becoming available. At least once per turn
+    FatherTypes evaluateBestFoundingFatherDecision(const std::vector<FatherTypes>& availableFathers, const CvTeamAI& teamAI) const;
 
 protected:
 
@@ -41,12 +44,9 @@ protected:
         int turnsElapsed) const;
 
 
-    //int getTotalPoints(FatherPointTypes ePointType, const CvTeamAI& teamAI) const;
-    bool evaluateFoundingFatherDecision(FatherTypes eFather, const CvTeamAI& teamAI) const;
     FatherPointTypes getPrimaryPointType(FatherTypes eFather) const;
     FatherPointTypes getSecondaryPointType(FatherTypes eFather) const;
-    bool evaluateFutureFoundingFathers(FatherTypes currentFather, const CvTeamAI& teamAI, int currentFatherValue) const;
-    TraitValue evaluateTraitModifiers(const CvTraitInfo& kTraitInfo, const CvTeamAI& teamAI);
+    TraitValue evaluateTrait(const CvTraitInfo& kTraitInfo, const CvTeamAI& teamAI) const;
 
     CvTeamAI& m_teamAI;
 

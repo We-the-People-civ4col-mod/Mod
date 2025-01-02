@@ -7018,6 +7018,7 @@ int CvPlot::calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, Impr
 		{
 			if (iYield >= GET_PLAYER(ePlayer).getExtraYieldThreshold(eYield))
 			{
+				// BUG! This is not correct!
 				iYield += GC.getDefineINT("EXTRA_YIELD");
 			}
 		}

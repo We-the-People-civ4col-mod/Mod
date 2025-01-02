@@ -1,10 +1,15 @@
 
 #include "CvGameCoreDLL.h"
 #include "CvGlobals.h"
+#include "CvGameCoreUtils.h"
+#include "CvPlayer.h"
+#include "CvPlayerAI.h"
+#include "CvTeam.h"
 
 #include "CvFatherAI.h"
 
-#include "CvEnums.h"
+//#include "CvEnums.h"
+#include "BetterBTSAI.h"
 
 CvFatherAI::CvFatherAI(CvTeamAI& teamAI)
     : m_teamAI(teamAI)
@@ -68,26 +73,12 @@ namespace
             return 1.0; // No discount
 
         double remainingTurns = maxTurns - currentTurn;
-        return 1.0 - (static_cast<double>(turnsUntilAffordable) / remainingTurns);  
-    }
-}
+        if (remainingTurns <= 0)
+            return 0.0; // No remaining turns, discount factor becomes 0
 
-bool CvFatherAI::evaluateFutureFoundingFathers(FatherTypes currentFather, const CvTeamAI& teamAI, int currentFatherValue) const
-{
-    for (int i = 0; i < GC.getNumFatherInfos(); ++i)
-    {
-        FatherTypes futureFather = static_cast<FatherTypes>(i);
-        if (futureFather == currentFather || !teamAI.canConvinceFather(futureFather))
-            continue;
-
-        int futureValue = fatherValue(futureFather, teamAI);
-        if (futureValue > currentFatherValue)
-        {
-            return true; // There's a better Father worth waiting for
-        }
+        return 1.0 - (static_cast<double>(turnsUntilAffordable) / remainingTurns);
     }
-    return false; // No better Fathers available
-}
+} // end anon namespace
 
 int CvFatherAI::estimateTurnsUntilAffordable(
     int requiredPoliticalPoints,
@@ -151,8 +142,8 @@ void CvFatherAI::AI_updateFatherEvaluation(CvTeamAI& teamAI)
         int value = fatherValue(eFather, teamAI);
 
         // Get the primary and secondary point types for this Father
-        FatherPointTypes ePrimaryPointType = getPrimaryPointType(eFather);
-        FatherPointTypes eSecondaryPointType = getSecondaryPointType(eFather);
+        const FatherPointTypes ePrimaryPointType = getPrimaryPointType(eFather);
+        const FatherPointTypes eSecondaryPointType = getSecondaryPointType(eFather);
 
         // Retrieve the point costs
         int requiredPrimaryPoints = teamAI.getFatherPointCost(eFather, ePrimaryPointType);
@@ -202,77 +193,130 @@ void CvFatherAI::AI_updateFatherEvaluation(CvTeamAI& teamAI)
     }
 }
 
-void CvFatherAI::AI_evaluateFoundingFathers(const std::vector<FatherTypes>& fatherCandidates, CvTeamAI& teamAI)
+FatherTypes CvFatherAI::evaluateBestFoundingFatherDecision(const std::vector<FatherTypes>& availableFathers, const CvTeamAI& teamAI) const
 {
+    // Define constants
+    const int MINIMUM_THRESHOLD = 2000; // Minimum value to consider a Father
     FatherTypes bestFather = NO_FATHER;
-    double bestValuePerPoint = 0.0;
+    int bestValue = 0;
 
-    for (std::vector<FatherTypes>::const_iterator it = fatherCandidates.begin(); it != fatherCandidates.end(); ++it)
+    // Iterate through all available Fathers
+    for (std::vector<FatherTypes>::const_iterator it = availableFathers.begin(); it != availableFathers.end(); ++it)
     {
         FatherTypes eFather = *it;
 
-        // Evaluate this father's total value
-        int totalValue = fatherValue(eFather, teamAI);
-        if (totalValue <= 0)
+        // Retrieve the precomputed value for the Father
+        int fatherValue = teamAI.m_fatherValues[eFather];
+
+        // Skip if the value is below the threshold
+        if (fatherValue < MINIMUM_THRESHOLD)
         {
-            continue; // Skip fathers with non-positive value
-        }
-
-        // Calculate cost (primary + secondary points required)
-        int requiredPrimaryPoints = teamAI.getFatherPointCost(eFather, FATHER_POINT_POLITICAL);
-        FatherPointTypes eSecondaryType = getSecondaryPointType(eFather);
-        int requiredSecondaryPoints = (eSecondaryType != NO_FATHER_POINT_TYPE) ? teamAI.getFatherPointCost(eFather, eSecondaryType) : 0;
-
-        int totalPointsRequired = requiredPrimaryPoints + requiredSecondaryPoints;
-
-        // Avoid division by zero
-        if (totalPointsRequired <= 0)
-        {
+            if (gTeamLogLevel >= 1)
+            {
+                logBBAI("   CvFatherAI::evaluateBestFoundingFatherDecision Team %d skips Father %d due to low value (%d)",
+                    teamAI.getID(), eFather, fatherValue);
+            }
             continue;
         }
 
-        // Compute value per point
-        double valuePerPoint = static_cast<double>(totalValue) / totalPointsRequired;
+        // Get point costs and histories
+        const FatherPointTypes ePrimaryPointType = getPrimaryPointType(eFather);
+        const FatherPointTypes eSecondaryPointType = getSecondaryPointType(eFather);
 
-        // Track the best candidate
-        if (valuePerPoint > bestValuePerPoint)
+        int requiredPrimaryPoints = teamAI.getFatherPointCost(eFather, ePrimaryPointType);
+        int requiredSecondaryPoints = (eSecondaryPointType != NO_FATHER_POINT_TYPE)
+            ? teamAI.getFatherPointCost(eFather, eSecondaryPointType)
+            : 0;
+
+        int totalPrimaryPoints = teamAI.getFatherPoints(ePrimaryPointType);
+        int totalSecondaryPoints = (eSecondaryPointType != NO_FATHER_POINT_TYPE)
+            ? teamAI.getFatherPoints(eSecondaryPointType)
+            : 0;
+
+        const std::deque<int>& primaryHistory = teamAI.getPointHistory(ePrimaryPointType);
+        const std::deque<int>& secondaryHistory = (eSecondaryPointType != NO_FATHER_POINT_TYPE)
+            ? teamAI.getPointHistory(eSecondaryPointType)
+            : std::deque<int>();
+
+        // Estimate turns until affordable
+        int turnsUntilAffordable = estimateTurnsUntilAffordable(
+            requiredPrimaryPoints,
+            requiredSecondaryPoints,
+            primaryHistory,
+            secondaryHistory,
+            totalPrimaryPoints,
+            totalSecondaryPoints,
+            GC.getGameINLINE().getGameTurn());
+
+        if (turnsUntilAffordable == -1)
         {
-            bestValuePerPoint = valuePerPoint;
+            if (gTeamLogLevel >= 1)
+            {
+                logBBAI("   CvFatherAI::evaluateBestFoundingFatherDecision Team %d skips Father %d due to affordability issues",
+                    teamAI.getID(), eFather);
+            }
+            continue;
+        }
+
+        // Discount the Father's value based on time to afford
+        double discountFactor = calculateDiscountFactor(
+            turnsUntilAffordable,
+            GC.getGameINLINE().getMaxTurns(),
+            GC.getGameINLINE().getGameTurn());
+
+        int discountedValue = static_cast<int>(fatherValue * discountFactor);
+
+        // Check against opportunity cost: see if waiting for a better Father is worth it
+        bool shouldWait = false;
+        for (int i = 0; i < GC.getNumFatherInfos(); ++i)
+        {
+            FatherTypes futureFather = static_cast<FatherTypes>(i);
+            if (futureFather == eFather || !teamAI.canConvinceFather(futureFather))
+                continue;
+
+            int futureValue = this->fatherValue(futureFather, teamAI);
+            if (futureValue > discountedValue)
+            {
+                shouldWait = true;
+                if (gTeamLogLevel >= 1)
+                {
+                    logBBAI("   CvFatherAI::evaluateBestFoundingFatherDecision Team %d waits for better Father %d (value: %d > %d)",
+                        teamAI.getID(), futureFather, futureValue, discountedValue);
+                }
+                break;
+            }
+        }
+
+        if (shouldWait)
+        {
+            continue; // Skip this Father in favor of a better future option
+        }
+
+        // Update the best Father if this one is better
+        if (discountedValue > bestValue)
+        {
+            bestValue = discountedValue;
             bestFather = eFather;
         }
     }
 
-    // If a best father is found, convince it
-    if (bestFather != NO_FATHER)
+    // Log the decision
+    if (gTeamLogLevel >= 1)
     {
-        teamAI.convinceFather(bestFather, true);
+        if (bestFather != NO_FATHER)
+        {
+            logBBAI("   CvFatherAI::evaluateBestFoundingFatherDecision Team %d selects Father %d with value %d",
+                teamAI.getID(), bestFather, bestValue);
+        }
+        else
+        {
+            logBBAI("   CvFatherAI::evaluateBestFoundingFatherDecision Team %d finds no suitable Father",
+                teamAI.getID());
+        }
     }
+
+    return bestFather;
 }
-
-bool CvFatherAI::evaluateFoundingFatherDecision(FatherTypes eFather, const CvTeamAI& teamAI) const
-{
-    // Validate the input
-    if (eFather == NO_FATHER)
-    {
-        return false; // Invalid father type
-    }
-
-    // Retrieve the precomputed value for the father
-    int fatherValue = teamAI.m_fatherValues[eFather];
-
-    // If the value is zero or negative, we do not accept this father
-    if (fatherValue <= 0)
-    {
-        return false;
-    }
-
-    // Check if there are significantly better fathers available in the near future
-    bool shouldWaitForBetterFather = evaluateFutureFoundingFathers(eFather, teamAI, fatherValue);
-
-    // Accept the current father if no significantly better option is available
-    return !shouldWaitForBetterFather;
-}
-
 
 FatherPointTypes CvFatherAI::getPrimaryPointType(FatherTypes eFather) const
 {
@@ -301,7 +345,6 @@ FatherPointTypes CvFatherAI::getSecondaryPointType(FatherTypes eFather) const
 
 namespace
 {
-
     // Evaluate the value of free units provided by a Founding Father
     int evaluateFreeUnits(const CvFatherInfo& kFatherInfo, const CvTeamAI& teamAI, bool bMilitary) {
         int iValue = 0;
@@ -405,155 +448,384 @@ int evaluateRevealImprovements(const CvFatherInfo& kFatherInfo) {
     return iValue;
 }
 
-CvFatherAI::TraitValue CvFatherAI::evaluateTraitModifiers(const CvTraitInfo& kTraitInfo, const CvTeamAI& teamAI)
+// TODO: Many of the evaluations should be relative!
+CvFatherAI::TraitValue CvFatherAI::evaluateTrait(const CvTraitInfo& kTraitInfo, const CvTeamAI& teamAI) const
 {
-    int iValue = 0;
     int iEconomicValue = 0;
     int iMilitaryValue = 0;
 
+    for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+    {
+        const CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+        if (kPlayer.isAlive() && kPlayer.getTeam() == teamAI.getID())
+        {
+            for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+            {
+                const int iYieldModifier = kTraitInfo.getYieldModifier(eYield);
+                const int iExtraYieldThreshold = kTraitInfo.getExtraYieldThreshold(eYield);
+                const int iCityExtraYield = kTraitInfo.getCityExtraYield(eYield);
+                const int iTaxYieldModifier = kTraitInfo.isTaxYieldModifier(eYield);
+                int iLoop;
+                for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
+                {
+                    const int iRawYield = pLoopCity->yields().getBaseRawYieldProduced(eYield); // Base raw yield for this city
 
-    // Economic Modifiers
-    for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++) {
-        int iYieldModifier = kTraitInfo.getYieldModifier(iYield);
-        if (iYieldModifier > 0) {
-            int iCurrentYield = 0; // teamAI.getTotalYieldOutput((YieldTypes)iYield);
-            iValue += (iCurrentYield * iYieldModifier) / 100; // Scale by current output
-        }
+                    if (iYieldModifier != 0)
+                    {
+                        // Calculate the additional yield provided by the modifier
+                        const int iAdditionalYield = (iRawYield * iYieldModifier) / 100;
+                        // Estimate the value added by the additional yield
+                        iEconomicValue += pLoopCity->AI_estimateYieldValue(eYield, iAdditionalYield);
+                    }
 
-        int iExtraYieldThreshold = kTraitInfo.getExtraYieldThreshold(iYield);
-        if (iExtraYieldThreshold > 0) {
-            iValue += iExtraYieldThreshold * 2; // Boost value for extra yield thresholds
-        }
+                    // Evaluate extra yield threshold (additive)
+                    if (iExtraYieldThreshold > 0 && iRawYield >= iExtraYieldThreshold)
+                    {
+                        int iExtraYield = iRawYield - iExtraYieldThreshold; // Yields beyond the threshold
+                        iEconomicValue += pLoopCity->AI_estimateYieldValue(eYield, iExtraYield);
+                    }
 
-        int iCityExtraYield = kTraitInfo.getCityExtraYield(iYield);
-        if (iCityExtraYield > 0) {
-            int iNumCities = teamAI.getNumCities();
-            iValue += iCityExtraYield * iNumCities * 5; // Add per-city extra yields
-        }
+                    if (iCityExtraYield != 0)
+                    {
+                        iEconomicValue += pLoopCity->AI_estimateYieldValue(eYield, iCityExtraYield);
+                    }
+                
+                    if (iTaxYieldModifier != 0)
+                    {
+                        const int iTaxRate = kPlayer.getTaxRate();
+                        int iTaxYieldExtra = (iRawYield * iTaxRate) / 100;
+                        iEconomicValue += pLoopCity->AI_estimateYieldValue(eYield, iTaxYieldExtra);
+                    }
 
-        if (kTraitInfo.isTaxYieldModifier(iYield)) {
-            iValue += 20; // Flat value for tax yield modifiers
-        }
+                    for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); iBuildingClass++)
+                    {
+                        const BuildingTypes eBuilding = static_cast<BuildingTypes>(kPlayer.getCivilizationInfo().getCivilizationBuildings(iBuildingClass));
 
-        int iBuildingRequiredYieldModifier = kTraitInfo.getBuildingRequiredYieldModifier(iYield);
-        if (iBuildingRequiredYieldModifier != 0) {
-            iValue += iBuildingRequiredYieldModifier * 2; // Adjust based on building requirements
-        }
-    }
+                        if (pLoopCity->isHasBuilding(eBuilding))
+                        {
+                            int iBuildingYieldChange = kTraitInfo.getBuildingYieldChange(iBuildingClass, eYield);
+                            if (iBuildingYieldChange != 0)
+                            {              
+                                // TODO: Check for building actually producing something!
+                                iEconomicValue += pLoopCity->AI_estimateYieldValue(eYield, iBuildingYieldChange);
+                            }
+                        }
+                    }
 
-#if 0
-    for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); iBuildingClass++) {
-        int iBuildingYieldChange = kTraitInfo.getBuildingYieldChange(iBuildingClass, 0); // First yield type
-        if (iBuildingYieldChange > 0) {
-            int iNumBuildings = teamAI.getBuildingCount((BuildingClassTypes)iBuildingClass);
-            iValue += iBuildingYieldChange * iNumBuildings * 10; // 10 points per yield change
-        }
+                } // End city loop
+            
+                // XML range: -25. Difficult to evaluate, yield discount for future buildings
+                int iBuildingRequiredYieldModifier = kTraitInfo.getBuildingRequiredYieldModifier(eYield);
+                if (iBuildingRequiredYieldModifier != 0) 
+                {
+                    iEconomicValue += iBuildingRequiredYieldModifier * -40;
+                }
+            } // End yield loop
 
-        if (kTraitInfo.isFreeBuildingClass(iBuildingClass)) {
-            iValue += 100; // Flat value for free buildings
-        }
 
-        int iProductionModifier = kTraitInfo.getBuildingProductionModifier(iBuildingClass);
-        if (iProductionModifier > 0) {
-            int iNumBuildings = teamAI.getBuildingCount((BuildingClassTypes)iBuildingClass);
-            iValue += iProductionModifier * iNumBuildings * 5; // Points per production modifier
-        }
+            for (int iBuildingClass = 0; iBuildingClass < GC.getNumBuildingClassInfos(); iBuildingClass++)
+            {
+                const BuildingTypes eBuilding = static_cast<BuildingTypes>(kPlayer.getCivilizationInfo().getCivilizationBuildings(iBuildingClass));
+                const int iProductionModifier = kTraitInfo.getBuildingProductionModifier(iBuildingClass);
+
+                // XML range: 100 (i.e. doubles hammer production for city for this particular building)
+                if (iProductionModifier != 0)
+                {
+                    int iLoop;
+                    for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
+                    {
+                        if (pLoopCity->isHasBuilding(eBuilding))
+                        {
+                            // TODO: Use actual yield cost of building and likelihood of making use of it
+                            iEconomicValue += 10 * iProductionModifier;
+                        }
+                    }
+                }
+
+                if (kTraitInfo.isFreeBuildingClass(iBuildingClass))
+                {
+                    int iCitiesWithoutBulding = 0;
+                    int iLoop;
+                    for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
+                    {
+                        if (!pLoopCity->isHasBuilding(eBuilding))
+                        {
+                            iCitiesWithoutBulding++;
+                        }
+
+                    }
+
+                    // TODO: Use actual yield cost  making use of it
+                    iEconomicValue += 200 * iCitiesWithoutBulding;
+                }
+            }
+        } // End player loop
     }
 
     // Exploration Modifiers
+    
+    // XML range: 100
     int iGoodUniqueLand = kTraitInfo.getGoodUniqueGoodyChanceModifierLand();
     int iGoodUniqueWater = kTraitInfo.getGoodUniqueGoodyChanceModifierWater();
-    int iExpectedGoodies = teamAI.getExpectedRemainingGoodies();
-    iValue += ((iGoodUniqueLand + iGoodUniqueWater) * iExpectedGoodies) / 100;
 
-    for (int iGoody = 0; iGoody < GC.getNumGoodyInfos(); iGoody++) {
-        int iGoodyFactor = kTraitInfo.getGoodyFactor(iGoody);
-        if (iGoodyFactor > 0) {
-            iValue += iGoodyFactor * 10; // Scale goody factors
-        }
+    if (iGoodUniqueLand != 0 || iGoodUniqueWater != 0) {
+        int iCurrentTurn = GC.getGame().getGameTurn();
+        int iGameSpeedModifier = GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getGrowthPercent();
+        int iMapSizeModifier = GC.getMap().getWorldSize();
+
+        const int INITIAL_GOODIES_COUNT = 50 * iMapSizeModifier / 100; // Scale goodies count by map size
+        const int BASE_VALUE_PER_GOODY = 50; // Base value for each goody
+        const int GAME_LENGTH = GC.getGame().getEstimateEndTurn();
+
+        double fTurnScalingFactor = static_cast<double>(GAME_LENGTH - iCurrentTurn) / GAME_LENGTH;
+        int iExpectedRemainingGoodies = static_cast<int>(INITIAL_GOODIES_COUNT * fTurnScalingFactor);
+
+        int iGoodieLandValue = (iGoodUniqueLand * iExpectedRemainingGoodies * BASE_VALUE_PER_GOODY) / 100;
+        int iGoodieWaterValue = (iGoodUniqueWater * iExpectedRemainingGoodies * BASE_VALUE_PER_GOODY) / 100;
+
+        iEconomicValue += iGoodieLandValue + iGoodieWaterValue;
     }
-#endif
-
+    
     // Military Modifiers
-    for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); iUnitClass++) {
-        int iMoveChange = kTraitInfo.getUnitMoveChange(iUnitClass);
-        int iStrengthModifier = kTraitInfo.getUnitStrengthModifier(iUnitClass);
-        int iUnitCount = teamAI.getUnitClassCount((UnitClassTypes)iUnitClass);
+    for (int iUnitClass = 0; iUnitClass < GC.getNumUnitClassInfos(); iUnitClass++) 
+    {
+        const int iMoveChange = kTraitInfo.getUnitMoveChange(iUnitClass);
+        const int iStrengthModifier = kTraitInfo.getUnitStrengthModifier(iUnitClass);
+        const int iUnitCount = teamAI.getUnitClassCount((UnitClassTypes)iUnitClass);
 
-        iValue += iUnitCount * (iMoveChange * 5 + iStrengthModifier * 10); // Weight movement and combat
+        // TODO: Check for valid unit!
+        const UnitClassTypes eUnitClass = (UnitClassTypes)iUnitClass;
+        const UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(GC.getGameINLINE().getActiveCivilizationType()).getCivilizationUnits(eUnitClass);
+        const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eUnit);
 
-        if (kTraitInfo.isFreePromotionUnitCombat(iUnitClass)) {
-            iValue += 50; // Flat value for free promotions
+        // TODO: We should only consider the units we already have!
+        if (iMoveChange != 0)
+        {
+            if (!kUnitInfo.isOnlyDefensive() && kUnitInfo.getCombat() > 0)
+            {
+                iMilitaryValue += (2000 * iMoveChange);
+            }
+            else
+            {
+                iEconomicValue += (2000 * iMoveChange);
+            }
+        }
+
+        if (iStrengthModifier != 0)
+        {
+            if (!kUnitInfo.isOnlyDefensive() && kUnitInfo.getCombat() > 0)
+            {
+                iMilitaryValue += (1000 * iStrengthModifier);
+            }
+            else
+            {
+                // Strength upgrade for non-combat units is not very useful
+                iEconomicValue += (100 * iStrengthModifier);
+            }
+        }
+       
+        if (kTraitInfo.isFreePromotionUnitCombat(iUnitClass)) 
+        {
+            for (int iPromotion = 0; iPromotion < GC.getNumPromotionInfos(); iPromotion++)
+            {
+                if (kTraitInfo.isFreePromotion(iPromotion))
+                {
+                    // TODO: Check that we don't already have it
+                    iMilitaryValue += 500;
+                }
+            }
         }
     }
 
-#if 0
-    for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); iProfession++) {
-        int iMoveChange = kTraitInfo.getProfessionMoveChange(iProfession);
-        if (iMoveChange != 0) {
-            int iRelevantUnits = teamAI.getProfessionCount((ProfessionTypes)iProfession);
-            iValue += iRelevantUnits * iMoveChange * 5;
+    for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+    {
+        const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+        const int iMoveChange = kTraitInfo.getProfessionMoveChange(eProfession);
+        if (iMoveChange != 0) 
+        {
+            
+            if (kProfession.isCitizen())
+                continue;
+
+            if (!kProfession.isScout() && kProfession.getCombatChange() > 0)
+            {
+                iMilitaryValue += 2000;
+            }
+            else if (kProfession.isScout() || kProfession.getWorkRate() > 0 || kProfession.getMissionaryRate() > 0 ||
+                kProfession.getNativeTradeRate() > 0)
+            {
+                iEconomicValue += 2000;
+            }
         }
 
-        int iEquipmentModifier = kTraitInfo.getProfessionEquipmentModifier(iProfession);
-        if (iEquipmentModifier < 0) {
-            int iRelevantUnits = teamAI.getProfessionCount((ProfessionTypes)iProfession);
-            iValue += -iEquipmentModifier * iRelevantUnits; // Convert negative modifier to positive value
+        // XML range: -25, -50
+        int iEquipmentModifier = kTraitInfo.getProfessionEquipmentModifier(eProfession);
+        if (iEquipmentModifier != 0) 
+        {
+            for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+            {
+                CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+                if (kPlayer.isAlive() && kPlayer.getTeam() == teamAI.getID())
+                {
+                    for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+                    {
+                        // TODO: Determine if this is a civilian or military profession!
+                        const int iEquipmentCost = kPlayer.getYieldEquipmentAmount(eProfession, eYield);
+                        if (iEquipmentCost > 0) 
+                        {
+                            // Note: modifier is negative for discounts
+                            const int iDiscount = (iEquipmentCost * -iEquipmentModifier) / 100;
+                            
+                            // TODO: Attempt to estimate the future number of these professions
+                            const int iEstimatedFutureProfessionCount = 5;
+                            if (!kProfession.isScout() && kProfession.getCombatChange() > 0)
+                            {
+                                // Why is AI_yieldValue not const ?
+                                iMilitaryValue += kPlayer.AI().AI_yieldValue(eYield) * iDiscount * iEstimatedFutureProfessionCount;
+                            }
+                            else if (kProfession.isScout() || kProfession.getWorkRate() > 0 || kProfession.getMissionaryRate() > 0 ||
+                                kProfession.getNativeTradeRate() > 0)
+                            {
+                                iEconomicValue += kPlayer.AI().AI_yieldValue(eYield) * iDiscount * iEstimatedFutureProfessionCount;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-#endif
 
-    for (int iPromotion = 0; iPromotion < GC.getNumPromotionInfos(); iPromotion++) {
-        if (kTraitInfo.isFreePromotion(iPromotion)) {
-            iValue += 100; // Flat value for free promotions
-        }
-    }
-
-    // Happiness Modifiers
-    iValue += kTraitInfo.getUnhappinessFromSlavesModifier() * -2; // Unhappiness reduces value
+    // XML range: 50, 10
+    iEconomicValue += kTraitInfo.getPioneerSpeedModifier() * 200; // Work rate modifier
+     
+    // XML range: 25. AI mostly ingores happiness
+    iEconomicValue += kTraitInfo.getUnhappinessFromSlavesModifier() * 0; // Unhappiness reduces value
 
     // Strategic and Miscellaneous Modifiers
-    iValue += kTraitInfo.getMercantileFactor() * 5; // Trade profit adjustment
+    
+    // XML range: -50
+    iEconomicValue += kTraitInfo.getMercantileFactor() * -40; // Reduced impact of sales in any port
     
     // AI ignores native anger
-    iValue += kTraitInfo.getNativeAngerModifier() * 0; // Negative impact for native anger
+    iEconomicValue += kTraitInfo.getNativeAngerModifier() * 0; // Negative impact for native anger
     
-    iValue += kTraitInfo.getChiefGoldModifier() / 2; // Scale chief gold rewards
+    // XML range: 30
+    iEconomicValue += kTraitInfo.getChiefGoldModifier() * 50; // Scale chief gold rewards
     
-    // AI does not currently trade with the natives
-    iValue += kTraitInfo.getNativeTradeModifier() * 0; // Value for native trade adjustment
+    // XML range: 10,25,30
+    iEconomicValue += kTraitInfo.getNativeTradeModifier() * 50; // Native trading post income modifier 
 
-    // Known values: 100
+    // XML range: 100
     iMilitaryValue += kTraitInfo.getGreatGeneralRateModifier() * 40; // Great general creation rate
     
-    // Known values: 50-100
+    // XML range: 50-100
     iMilitaryValue += kTraitInfo.getDomesticGreatGeneralRateModifier() * 20; // Domestic great general creation rate
     
-    // Known values: 100
+    // XML range: 100. Very strong, wins the game! (but only if the AI gets there)
     iMilitaryValue += kTraitInfo.getRebelCombatModifier() * 50; // Rebel combat bonus
 
-    iValue += kTraitInfo.getCultureLevelModifier() * -10; // Adjust culture growth impact
-    iValue += kTraitInfo.getEuropeTravelTimeModifier() * -10; // Adjust Europe travel time
-    iValue += kTraitInfo.getSpecialistPriceModifier() * -4; // Adjust cost of specialists
-    iValue += kTraitInfo.getStorageCapacityModifier() * 2; // Adjust storage impact
+    // XML range: -20
+    iEconomicValue += kTraitInfo.getCultureLevelModifier() * -50; // Lowers culture threshold, easier border-pop
+    
+    // XML range: -50
+    iEconomicValue += kTraitInfo.getEuropeTravelTimeModifier() * -50; // Reduces Europe (and other ports) travel time
+    
+    // XML range: -50
+    iEconomicValue += kTraitInfo.getSpecialistPriceModifier() * -10; // Reduces graduation (education) price
+    
+    // XML range: 25
+    iEconomicValue += kTraitInfo.getStorageCapacityModifier() * 40; // Adjust storage impact
 
-    iValue += kTraitInfo.getMaxTaxRateThresholdDecrease() * -5; // Reduce max tax rate threshold
-    iValue += kTraitInfo.getTaxRateThresholdModifier() * -5; // Tax rate threshold adjustment
-    iValue += kTraitInfo.getNativeAttitudeChange() * 10; // Native attitude adjustment
-    iValue += kTraitInfo.getEuropeanAttitudeChange() * 10; // European attitude adjustment
-    iValue += kTraitInfo.getKingAttitudeChange() * 10; // King attitude adjustment
-    iValue += kTraitInfo.getImprovementPriceModifier() * -3; // Improvement price adjustment
+    // XML range: 5. AI pays low taxes to begin with, not very impacful
+    iEconomicValue += kTraitInfo.getMaxTaxRateThresholdDecrease() * 10; // Reduce max tax rate threshold
+    
+    // XML range: 5
+    iEconomicValue += kTraitInfo.getTaxRateThresholdModifier() * 10; // Tax rate threshold adjustment
+    
+    // TODO: Need to check for chosen war and war success for these
+    // XML range: 2,4. Note that this forces peace with natives so it could be very negative!
+    iMilitaryValue += kTraitInfo.getNativeAttitudeChange() * 0; // Native attitude adjustment
+
+    // XML range: 2,4. Note that this forces peace with Europeans so it could be very negative!
+    iMilitaryValue += kTraitInfo.getEuropeanAttitudeChange() * 0; // European attitude adjustment
+
+    // XML range: 2,5
+    iEconomicValue += kTraitInfo.getKingAttitudeChange() * 100; // King attitude adjustment
+    
+    // XML range: -50 (TODO: do these stack?)
+    iEconomicValue += kTraitInfo.getImprovementPriceModifier() * -50; // Improvement price adjustment
+
+    // XML range: -25,-50 (TODO: do these stack?)
+    iEconomicValue += kTraitInfo.getImprovementGrowthTimeModifier() * -40; // Improvement price adjustment
 
     // AI does not suffer from runaway / revolts
-    iValue += kTraitInfo.getLearningByDoingRunawayModifier() * 0; // LBD runaway modifier
-    iValue += kTraitInfo.getLearningByDoingRevoltModifier() * 0; // LBD revolt modifier
+    iEconomicValue += kTraitInfo.getLearningByDoingRunawayModifier() * 0; // LBD runaway modifier
+    iEconomicValue += kTraitInfo.getLearningByDoingRevoltModifier() * 0; // LBD revolt modifier
+
+    // XML range: -50
+    iEconomicValue += kTraitInfo.getLearningByDoingFreeModifier() * -10; // Free LBD modifier
+
+    // XML range: 25. Less impactful than Europe but still strong
+    iEconomicValue += kTraitInfo.getAfricaSellProfitModifierInPercent() * 40; // Africa sale price modifier
     
-    iValue += kTraitInfo.getLearningByDoingFreeModifier() * 3; // Free LBD modifier
+    // XML range: 25. PR is not implemented for the AI
+    iEconomicValue += kTraitInfo.getPortRoyalSellProfitModifierInPercent() * 0; // PR sale price modiifer
+
+    // XML range: 25
+    iEconomicValue += kTraitInfo.getDomesticMarketProfitModifierInPercent() * 20;
+
+    // XML range: -20,-25,-50. AI never buys land
+    iEconomicValue += kTraitInfo.getLandPriceDiscount() * 0; // Owned land (natives) price modifier
+
+    // XML range: 20. Very impactful for both kinds of purchases
+    iEconomicValue += kTraitInfo.getRecruitPriceDiscount() * 100; // Europe unit discount
+    iMilitaryValue += kTraitInfo.getRecruitPriceDiscount() * 100;
+
+    // XML range: 25.
+    iEconomicValue += kTraitInfo.getRecruitPriceDiscountAfrica() * 50; // Africa unit discount
+    iMilitaryValue += kTraitInfo.getRecruitPriceDiscountAfrica() * 0; // No military available (TODO: check!)
+
+    // XML range: 25. PR is not implemented for the AI
+    iEconomicValue += kTraitInfo.getRecruitPriceDiscountPortRoyal() * 0; // Port Royal unit discount
+    iMilitaryValue += kTraitInfo.getRecruitPriceDiscountPortRoyal() * 0;
+
+    // XML range: -10,-20,-30
+    iMilitaryValue += kTraitInfo.getLevelExperienceModifier() * -100;
+    
+    // XML range: -25,-50
+    iEconomicValue += kTraitInfo.getLearnTimeModifier() * -50;
+
+    // XML range: 25
+    iMilitaryValue += kTraitInfo.getNativeCombatModifier() * 50;
+    
+    // XML range: 50,100,150
+    iEconomicValue += kTraitInfo.getMissionaryModifier() * 10;
+    
+    // XML range: 20,25,100
+    iEconomicValue += kTraitInfo.getTreasureModifier() * 20;
+    
+    // XML range: -10,-25
+    // TODO: Should depend on city count/size and need for more pop
+    iEconomicValue += kTraitInfo.getPopGrowthThresholdModifier() * -50;
+
+    // XML range: 10,25
+    iMilitaryValue += kTraitInfo.getCityDefense() * 50;
+
+    // XML range: 2
+    for (int iGoody = 0; iGoody < GC.getNumGoodyInfos(); ++iGoody)
+    {
+        // TODO: Differntiate bases on type
+        iEconomicValue += kTraitInfo.getGoodyFactor(iGoody) * 1000;
+    }
+    
+    // XML range: -10,-33
+    iEconomicValue += kTraitInfo.getImmigrationThresholdModifier() * -200;
 
     return TraitValue(iEconomicValue, iMilitaryValue);
 }
 
-int CvFatherAI::fatherValue(FatherTypes eFather, const CvTeamAI& teamAI) const {
+int CvFatherAI::fatherValue(FatherTypes eFather, const CvTeamAI& teamAI) const 
+{
     // Initialize total value
     int iTotalValue = 0;
 
@@ -574,5 +846,15 @@ int CvFatherAI::fatherValue(FatherTypes eFather, const CvTeamAI& teamAI) const {
     // Combine values (equal weighting for now)
     iTotalValue = iEconomicValue + iMilitaryValue;
 
+    const TraitTypes eTrait = kFatherInfo.getTrait();
+
+    if (eTrait != NO_TRAIT)
+    {
+        const CvTraitInfo& kTrait = GC.getTraitInfo(kFatherInfo.getTrait());
+        TraitValue tv = evaluateTrait(kTrait, teamAI);
+        iTotalValue += tv.economicValue + tv.militaryValue;
+
+    }    
+    
     return iTotalValue;
 }

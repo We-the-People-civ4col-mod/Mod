@@ -2529,9 +2529,16 @@ void CvTeam::offerFoundingFather(FatherTypes eFather)
 	}
 	else
 	{
+		// Even though we're only going to accept a single father we need a vector...
 		std::vector<FatherTypes> father;
 		father.push_back(eFather);
-		AI().AI_evaluateFoundingFathers(father);
+		const FatherTypes selectedFather = AI().evaluateBestFoundingFatherDecision(father);
+
+		if (selectedFather != NO_FATHER)
+		{
+			// Select and convince the best Father
+			convinceFather(selectedFather, true);
+		}
 	}
 }
 
@@ -2566,8 +2573,12 @@ void CvTeam::testFoundingFather()
 			}
 
 			//Search through any points required that aren't Political Points. If any are non-zero, the highest of these will be the primary type.
-			for (FatherPointTypes ePointType = FIRST_FATHER_POINT; ePointType < NUM_FATHER_POINT_TYPES - 1; ++ePointType)
+			for (FatherPointTypes ePointType = FIRST_FATHER_POINT; ePointType < NUM_FATHER_POINT_TYPES; ++ePointType)
 			{
+				// Ensure that we don't depend on the relative position in xml
+				if (ePointType == FATHER_POINT_POLITICAL)
+					continue;
+
 				if (getFatherPointCost(eFather, ePointType) > getFatherPointCost(eFather, ePrimaryPointType))
 				{
 					ePrimaryPointType = ePointType;
@@ -2679,8 +2690,24 @@ void CvTeam::testFoundingFather()
 		}
 		else
 		{
-			// Let the AI pick its preferred father (if any)
-			AI().AI_evaluateFoundingFathers(vFathersToCourt);
+			// Let the AI pick its preferred father(s) (if any)
+			while (!vFathersToCourt.empty())
+			{
+				const FatherTypes selectedFather = AI().evaluateBestFoundingFatherDecision(vFathersToCourt);
+
+				if (selectedFather != NO_FATHER)
+				{
+					// Select and convince the best Father
+					convinceFather(selectedFather, true);
+					// Remove the selected Father from the list
+					vFathersToCourt.erase(std::remove(vFathersToCourt.begin(), vFathersToCourt.end(), selectedFather), vFathersToCourt.end());
+				}
+				else
+				{
+					// No more valid Fathers to select
+					break;
+				}
+			}
 		}
 	}
 }
