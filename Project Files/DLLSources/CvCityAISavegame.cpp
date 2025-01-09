@@ -1,6 +1,7 @@
 #include "CvGameCoreDLL.h"
 
 #include "CvSavegame.h"
+#include "CvEnums.h"
 
 // set the default values
 const int defaultGiftTimer = 0;
@@ -21,6 +22,7 @@ const int defaultNeededFloatingDefenders = -1;
 const int defaultNeededFloatingDefendersCacheTurn = -1;
 const int defaultWorkersNeeded = 0;
 const int defaultWorkersHave = 0;
+const CitySafety defaultSafety = CITYSAFETY_SAFE;
 
 enum SavegameVariableTypes
 {
@@ -54,6 +56,7 @@ enum SavegameVariableTypes
 	CitySaveAi_routeToCity,
 	CitySaveAi_BestBuildValue,
 	CitySaveAi_BestBuild,
+	CitySaveAi_Safety,
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -91,6 +94,7 @@ const char* getSavedEnumNameCityAi(SavegameVariableTypes eType)
 
 	case CitySaveAi_BestBuildValue: return "CitySaveAi_BestBuildValue";
 	case CitySaveAi_BestBuild: return "CitySaveAi_BestBuild";
+	case CitySaveAi_Safety: return "CitySaveAi_Safety";
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -134,6 +138,7 @@ m_routeToCity.reset();
 
 m_em_iBestBuildValue.reset();
 m_em_eBestBuild.reset();
+m_eSafety = defaultSafety;
 
 }
 
@@ -156,7 +161,6 @@ void CvCityAI::read(CvSavegameReader reader)
 	{
 		SavegameVariableTypes eType;
 		reader.Read(eType);
-
 		switch (eType)
 		{
 		case Save_END:
@@ -191,10 +195,17 @@ void CvCityAI::read(CvSavegameReader reader)
 			case CitySaveAi_routeToCity                         : reader.Read(m_routeToCity)                                     ; break;
 			case CitySaveAi_BestBuildValue                      : reader.Read(m_em_iBestBuildValue)                              ; break;
 			case CitySaveAi_BestBuild                           : reader.Read(m_em_eBestBuild)                                   ; break; 
-
+			case CitySaveAi_Safety: 
+			{
+				int safety;
+				reader.Read(safety);
+				m_eSafety = (CitySafety)safety;
+				break;
+			}
 			default: FAssert(false);
 		}
 	}
+	
 	
 	// Loading done. Set up the cache (if any).
 
@@ -244,6 +255,7 @@ void CvCityAI::write(CvSavegameWriter writer)
 
 	writer.Write(CitySaveAi_BestBuildValue, m_em_iBestBuildValue);
 	writer.Write(CitySaveAi_BestBuild, m_em_eBestBuild);
+	writer.Write(CitySaveAi_Safety, (int)m_eSafety);
 
 	writer.Write(Save_END);
 }

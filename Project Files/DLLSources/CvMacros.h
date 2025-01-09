@@ -15,6 +15,11 @@ for (TYPE##Types eLoop##TYPE = (TYPE##Types)0; \
 eLoop##TYPE < NUM_##TYPE##_TYPES; \
 eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
 
+#define FOREACH_CARGO_YIELD(TYPE) \
+    for (TYPE##Types eLoop##TYPE = (TYPE##Types)0; \
+    eLoop##TYPE < NUM_CARGO_YIELD_TYPES; \
+    eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
+
 // Note: Requires a class that provides getX_INLINE() / getY_INLINE()
 #define FOR_EACH_PLOT_IN_RANGE(iSearchRange, ACTION) \
     for (int iDX = -(iSearchRange); iDX <= (iSearchRange); iDX++) \
@@ -118,6 +123,10 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
     for (const CvUnit* pLoopUnit = (kOwner).firstUnit(&UNIQUE_VAR(iLoop)); \
          pLoopUnit != NULL; pLoopUnit = (kOwner).nextUnit(&UNIQUE_VAR(iLoop)))
 
+#define FOREACH_UNIT(pLoopUnit) \
+    for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
+    for (CvUnit* pLoopUnit = firstUnit(&UNIQUE_VAR(iLoop)); pLoopUnit != NULL; pLoopUnit = nextUnit(&UNIQUE_VAR(iLoop)))
+
 #define FOR_EACH_UNIT_IN(pLoopUnit, kGroup) \
     for (CLLNode<IDInfo>* pUnitNode = (kGroup).headUnitNode(); pUnitNode != NULL; pUnitNode = (kGroup).nextUnitNode(pUnitNode)) \
         if (CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data)) \
@@ -198,6 +207,10 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
 #define FOR_EACH_CITYAI(pLoopCity, kOwner) \
     for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
     for (CvCityAI* pLoopCity = static_cast<CvCityAI*>((kOwner).firstCity(&UNIQUE_VAR(iLoop))); pLoopCity != NULL; pLoopCity = static_cast<CvCityAI*>((kOwner).nextCity(&UNIQUE_VAR(iLoop)))) 
+
+#define FOREACH_CITY(pLoopCity) \
+    for (int UNIQUE_VAR(iLoop) = 0, _dummy_flag_ = 1; _dummy_flag_ && ((_dummy_flag_ = 0) || true);) \
+    for (CvCity* pLoopCity = firstCity(&UNIQUE_VAR(iLoop)); pLoopCity != NULL; pLoopCity = nextCity(&UNIQUE_VAR(iLoop)))
 
 #define FOR_EACH_ADJ_PLOT(pCenterPlot, ACTION) \
     for (int iI = 0; iI < NUM_DIRECTION_TYPES; iI++) \

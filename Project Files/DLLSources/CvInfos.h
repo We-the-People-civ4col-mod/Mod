@@ -850,7 +850,9 @@ public:
 	bool getNotUnitAIType(int i) const;
 	bool getBuilds(int i) const;
 	bool getTerrainImpassable(int i) const;
+	bool isAnyTerrainImpassable() const { return (m_abTerrainImpassable != NULL); } // advc.003t
 	bool getFeatureImpassable(int i) const;
+	bool isAnyFeatureImpassable() const { return (m_abFeatureImpassable != NULL); } // advc.003t
 	// < JAnimals Mod Start >
 	bool getTerrainNative(int iIndex) const;
 	// < JAnimals Mod End >

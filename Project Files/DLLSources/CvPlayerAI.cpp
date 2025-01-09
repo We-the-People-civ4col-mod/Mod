@@ -5697,79 +5697,29 @@ int CvPlayerAI::AI_cargoSpaceToEurope_(CvSelectionGroup* pSkipSelectionGroup) co
 }
 // TAC - AI Improved Naval AI - koma13 - END
 
-// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
-/*
-int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup)
-{
-	return AI_unitTargetMissionAIs(pUnit, &eMissionAI, 1, pSkipSelectionGroup);
-}
-
-int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup)
-{
-	PROFILE_FUNC();
-
-	CvSelectionGroup* pLoopSelectionGroup;
-	int iCount;
-	int iLoop;
-
-	CvSelectionGroup* pTransportSelectionGroup = NULL;
-	if (pSkipSelectionGroup != NULL)
-	{
-		CvUnit* pHeadUnit = pSkipSelectionGroup->getHeadUnit();
-		if (pHeadUnit->getTransportUnit() != NULL)
-		{
-			pTransportSelectionGroup = pHeadUnit->getTransportUnit()->getGroup();
-		}
-	}
-
-	iCount = 0;
-	for(pLoopSelectionGroup = firstSelectionGroup(&iLoop); pLoopSelectionGroup; pLoopSelectionGroup = nextSelectionGroup(&iLoop))
-	{
-		if ((pSkipSelectionGroup == NULL) || ((pLoopSelectionGroup != pSkipSelectionGroup) && (pLoopSelectionGroup != pTransportSelectionGroup)))
-		{
-			if (pLoopSelectionGroup->AI_getMissionAIUnit() == pUnit)
-			{
-				MissionAITypes eGroupMissionAI = pLoopSelectionGroup->AI_getMissionAIType();
-				for (int iMissionAIIndex = 0; iMissionAIIndex < iMissionAICount; iMissionAIIndex++)
-				{
-					if (eGroupMissionAI == aeMissionAI[iMissionAIIndex] || NO_MISSIONAI == aeMissionAI[iMissionAIIndex])
-					{
-						iCount += pLoopSelectionGroup->getNumUnits();
-					}
-				}
-			}
-		}
-	}
-
-	return iCount;
-}
-*/
 
 // TAC - AI Attack City - koma13 - START
-int CvPlayerAI::AI_unitTargetMissionAIsInternal(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup) const
+int CvPlayerAI::AI_unitTargetMissionAIsInternal(const CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup) const
 {
-	//return AI_unitTargetMissionAIs(pUnit, &eMissionAI, 1, pSkipSelectionGroup, -1);
 	return AI_unitTargetMissionAIs(pUnit, &eMissionAI, 1, pSkipSelectionGroup, -1, NO_UNITAI);
 }
 
-int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI)
+int CvPlayerAI::AI_unitTargetMissionAIs(const CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI) const
 {
 	return AI_unitTargetMissionAIs(pUnit, &eMissionAI, 1, pSkipSelectionGroup, -1, eUnitAI);
 }
 
-int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup) const
+int CvPlayerAI::AI_unitTargetMissionAIs(const CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup) const
 {
-	//return AI_unitTargetMissionAIs(pUnit, aeMissionAI, iMissionAICount, pSkipSelectionGroup, -1);
 	return AI_unitTargetMissionAIs(pUnit, aeMissionAI, iMissionAICount, pSkipSelectionGroup, -1, NO_UNITAI);
 }
 
-int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const
+int CvPlayerAI::AI_unitTargetMissionAIs(const CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const
 {
 	return AI_unitTargetMissionAIs(pUnit, aeMissionAI, iMissionAICount, pSkipSelectionGroup, iMaxPathTurns, NO_UNITAI);
 }
 
-//int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const
-int CvPlayerAI::AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns, UnitAITypes eUnitAI) const
+int CvPlayerAI::AI_unitTargetMissionAIs(const CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns, UnitAITypes eUnitAI) const
 // TAC - AI Attack City - koma13 - END
 {
 	PROFILE_FUNC();
@@ -9940,35 +9890,27 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 	return iValue;
 }
 
-int CvPlayerAI::AI_countYieldWaiting() const
+int CvPlayerAI::AI_countYieldWaiting(bool bCoastalOnly) const
 {
-	int iCount = 0;
-	int iLoop;
-	CvCity* pLoopCity;
-
-	int iUnitSize = GC.getGameINLINE().getCargoYieldCapacity();
-	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	const int iCargoSize = GC.getGameINLINE().getCargoYieldCapacity();
+	int iCargoUnitsCount = 0;
+	FOREACH_CITY(pLoopCity)
 	{
-		// Custom_House_Mod Start
-		if (pLoopCity->isBestPortCity())
-		// Custom_House_Mod End
+		if (bCoastalOnly && !pLoopCity->isCoastal(GC.getMIN_WATER_SIZE_FOR_OCEAN()))
+			continue;
+		
+		FOREACH_CARGO_YIELD(Yield) 
 		{
-			for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
-			{
-				YieldTypes eLoopYield = (YieldTypes)iYield;
-				int iTotal = pLoopCity->getYieldStored(eLoopYield);
-				if (iTotal > 0)
-				{
-					if (pLoopCity->AI_shouldExportYield(eLoopYield))
-					{
-						iCount += (iTotal + iUnitSize / 2) / iUnitSize;
-					}
-				}
-			}
+			if (!pLoopCity->AI_shouldExportYield(eLoopYield))
+				continue; 
+
+			const int iAvailableCargoUnits = std::max(0,
+				pLoopCity->getYieldStored(eLoopYield) - pLoopCity->getMaintainLevel(eLoopYield)) / iCargoSize;
+			iCargoUnitsCount += iAvailableCargoUnits;
 		}
 	}
 
-	return iCount;
+	return iCargoUnitsCount = 0;;
 }
 
 int CvPlayerAI::AI_highestYieldAdvantage(YieldTypes eYield)
@@ -16871,15 +16813,20 @@ int CvPlayerAI::AI_cityTargetStrengthByPath(/* advc: */CvCity const* pCity,
 	return iTotalStrength;
 }
 
+// TODO: Land units: check allowsMoveIntoPeak. Ability to cross LARGE_RIVER also varies
+
+
+
 // advc.057: Renamed from "AI_unitImpassableCount"; return type was int.
-uint CvPlayerAI::AI_unitImpassables(UnitTypes eUnit) const
+UnitImpassables  CvPlayerAI::AI_unitImpassables(UnitTypes eUnit) const
 {	// <advc.003t>
-#if 0
-	if (!GC.getInfo(eUnit).isAnyTerrainImpassable() &&
-		!GC.getInfo(eUnit).isAnyFeatureImpassable())
+	/*
+	if (!GC.getUnitInfo(eUnit).isAnyTerrainImpassable() &&
+		!GC.getUnitInfo(eUnit).isAnyFeatureImpassable())
 	{
 		return 0; // </advc.003t>
 	}
+	*/
 	uint uiCount = 0;
 	// <advc.057>
 	uint const uiCountBits = 3;
@@ -16888,12 +16835,18 @@ uint CvPlayerAI::AI_unitImpassables(UnitTypes eUnit) const
 	FAssert(uiTerrains + ((uint)GC.getNumFeatureInfos()) <= uiFlagBits);
 	uint uiFlags = 0; // </advc.057>
 	
-	FOR_EACH_ENUM(Terrain)
+	// TODO: add peak impassable check!
+
+	FOREACH(Terrain)
 	{
-		if (GC.getInfo(eUnit).getTerrainImpassable(eLoopTerrain))
+		const CvUnitInfo& kUnit = GC.getUnitInfo(eLoopUnit);
+
+		kUnit.getDomainType();
+
+		if (GC.getUnitInfo(eUnit).getTerrainImpassable(eLoopTerrain))
 		{
-			TechTypes eTech = GC.getInfo(eUnit).getTerrainPassableTech(eLoopTerrain);
-			if (eTech == NO_TECH || !GET_TEAM(getTeam()).isHasTech(eTech))
+			//TechTypes eTech = GC.getInfo(eUnit).getTerrainPassableTech(eLoopTerrain);
+			//if (eTech == NO_TECH || !GET_TEAM(getTeam()).isHasTech(eTech))
 			{
 				uiCount++;
 				// advc.057:
@@ -16901,12 +16854,12 @@ uint CvPlayerAI::AI_unitImpassables(UnitTypes eUnit) const
 			}
 		}
 	}
-	FOR_EACH_ENUM(Feature)
+	FOREACH(Feature)
 	{
-		if (GC.getInfo(eUnit).getFeatureImpassable(eLoopFeature))
+		if (GC.getUnitInfo(eUnit).getFeatureImpassable(eLoopFeature))
 		{
-			TechTypes eTech = GC.getInfo(eUnit).getFeaturePassableTech(eLoopFeature);
-			if (eTech == NO_TECH || !GET_TEAM(getTeam()).isHasTech(eTech))
+			//TechTypes eTech = GC.getInfo(eUnit).getFeaturePassableTech(eLoopFeature);
+			//if (eTech == NO_TECH || !GET_TEAM(getTeam()).isHasTech(eTech))
 			{
 				uiCount++;
 				// advc.057:
@@ -16921,8 +16874,6 @@ uint CvPlayerAI::AI_unitImpassables(UnitTypes eUnit) const
 	uiCount = std::min(uiCount, (1u << uiCountBits) - 1);
 	uiFlags |= (uiCount << uiFlagBits);
 	return uiFlags; // </advc.057>
-#endif
-	return 0;
 }
 
 // just a stub for now

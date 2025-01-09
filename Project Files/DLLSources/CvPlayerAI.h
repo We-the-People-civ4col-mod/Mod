@@ -13,6 +13,12 @@
 
 class CvEventTriggerInfo;
 
+struct UnitImpassables
+{
+	unsigned int iCount;
+	unsigned long long iFlags;
+};
+
 class CvPlayerAI : public CvPlayerCivEffect
 {
 
@@ -257,14 +263,19 @@ public:
 		return (AI_plotTargetMissionAIsInternal(&kPlot, eMissionAI, pSkipSelectionGroup, iRange) >= 1);
 	}
 
-	// Note: First overload is a pure virtual and must be preserved as non-const
+	// Note: Pure virtual from CvPlayer.h and must be preserved as non-const
 	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL)
 	{
 		return AI_unitTargetMissionAIsInternal(pUnit, eMissionAI, pSkipSelectionGroup);
 	}
-	int AI_unitTargetMissionAIsInternal(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI);	// TAC - AI Attack City - koma13
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
+	int AI_unitTargetMissionAIsInternal(const CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
+	
+	int AI_unitTargetMissionAIs(const CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI) const;	// TAC - AI Attack City - koma13
+	int AI_unitTargetMissionAIs(const CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
+	int AI_unitTargetMissionAIs(const CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const;	// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
+	int AI_unitTargetMissionAIs(const CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns, UnitAITypes eUnitAI) const;	// TAC - AI Attack City - koma13
+
+	
 	bool AI_isAnyUnitTargetMissionAI(CvUnit const& kUnit, MissionAITypes eMissionAI,
 		CvSelectionGroup* pSkipSelectionGroup = NULL) const
 	{
@@ -288,10 +299,6 @@ public:
 
 	int AI_cargoSpaceToEurope(CvSelectionGroup* pSkipSelectionGroup = NULL) { return AI_cargoSpaceToEurope_(pSkipSelectionGroup); }
 	int AI_cargoSpaceToEurope_(CvSelectionGroup* pSkipSelectionGroup = NULL) const;	// TAC - AI Improved Navel AI - koma13
-
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const;	// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
-
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns, UnitAITypes eUnitAI) const;	// TAC - AI Attack City - koma13
 
 	CivicTypes AI_bestCivic(CivicOptionTypes eCivicOption);
 	int AI_civicValue(CivicTypes eCivic);
@@ -425,7 +432,7 @@ public:
 	void AI_updateYieldValues();
 	int AI_transferYieldValue(const IDInfo target, YieldTypes eYield, int iAmount);
 
-	int AI_countYieldWaiting() const;
+	int AI_countYieldWaiting(bool bCoastalOnly = true) const;
 	int AI_highestYieldAdvantage(YieldTypes eYield);
 
 	void AI_manageEconomy();
@@ -594,13 +601,17 @@ public:
 	int AI_cityTargetStrengthByPath(CvCity const* pCity, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const;
 	// K-Mod end
 
-	uint AI_unitImpassables(UnitTypes eUnit) const;
+	// WTP: impassables are not treated on a per domain basis
+	UnitImpassables AI_unitImpassables(UnitTypes eUnit) const;
 	// advc.057:
 	bool AI_isAnyImpassable(UnitTypes eUnit) const
 	{
 		/*	BBAI note [moved from some call location]: For galleys, triremes, ironclads ...
 			unit types which are limited in what terrain they can operate in. */
-		return (AI_unitImpassables(eUnit) != 0u);
+		
+		const UnitImpassables ui = AI_unitImpassables(eUnit);
+
+		return (ui.iCount != 0u);
 	}
 
 	bool AI_isDoStrategy(AIStrategy eStrategy, /* advc.007: */ bool bDebug = false) const;

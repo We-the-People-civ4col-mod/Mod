@@ -3218,7 +3218,9 @@ void CvUnitAI::AI_transportMoveFull()
 
 	const CvPlayerAI& kOwner = GET_PLAYER(getOwner());
 
-	if (kOwner.getNumCities() == 1)
+	// Wagons spawned by goodies should retreat to our only city
+	// if there are not other trade targets
+	if (!isHuman() && kOwner.getNumCities() == 1)
 	{
 		if (AI_retreatToCity())
 			return;
@@ -4295,6 +4297,8 @@ void CvUnitAI::AI_transportSeaMove()
 // if this is the case, we travel there
 bool CvUnitAI::AI_joinGreatAdmiral()
 {
+	FAssert(getLeaderUnitType() == NO_UNIT);
+
 	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
 	int iLoop;
@@ -5041,7 +5045,7 @@ void CvUnitAI::AI_combatSeaMove()
 	}
 
 	// Erik: Check if there's an admiral waiting
-	if (AI_joinGreatAdmiral())
+	if (getLeaderUnitType() != NO_UNIT && AI_joinGreatAdmiral())
 		return;
 
 	// TAC - AI Improved Naval AI - koma13 - START
@@ -7464,62 +7468,49 @@ int CvUnitAI::AI_promotionValue(PromotionTypes ePromotion) const
 	return iValue;
 }
 
-
-// Returns true if a mission was pushed...
-bool CvUnitAI::AI_shadow(UnitAITypes eUnitAI, int iMax, int iMaxRatio, bool bWithCargoOnly)
+bool CvUnitAI::AI_shadow(UnitAITypes eUnitAI, int iMax, int iMaxRatio,
+	bool bWithCargoOnly, bool bOutsideCityOnly, int iMaxPath)
 {
 	PROFILE_FUNC();
 
-	CvUnit* pLoopUnit;
-	CvUnit* pBestUnit;
-	int iPathTurns;
-	int iValue;
-	int iBestValue;
-	int iLoop;
-
-	iBestValue = 0;
-	pBestUnit = NULL;
-
-	for(pLoopUnit = GET_PLAYER(getOwnerINLINE()).firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = GET_PLAYER(getOwnerINLINE()).nextUnit(&iLoop))
-	{
-		if (pLoopUnit != this)
+	int iBestValue = 0;
+	CvUnit const* pBestUnit = NULL;
+	FOR_EACH_UNIT(pLoopUnit, GET_PLAYER(getOwner()))
+	{	// advc: Reduce indentation
+		if (pLoopUnit != this && AI_plotValid(pLoopUnit->plot()) &&
+			pLoopUnit->isGroupHead() && !pLoopUnit->isCargo() &&
+			pLoopUnit->AI_getUnitAIType() == eUnitAI &&
+			pLoopUnit->getGroup()->baseMoves() <= getGroup()->baseMoves())
 		{
-			if (AI_plotValid(pLoopUnit->plot()))
+			if (!bWithCargoOnly || pLoopUnit->getGroup()->hasCargo())
 			{
-				if (pLoopUnit->isGroupHead())
+				// BETTER_BTS_AI_MOD, Naval AI, 12/08/08, jdog5000: START
+				if (bOutsideCityOnly && pLoopUnit->getPlot().isCity())
+					continue;
+				// BETTER_BTS_AI_MOD: END
+				int iShadowerCount = GET_PLAYER(getOwner()).AI_unitTargetMissionAIsInternal(
+					pLoopUnit, MISSIONAI_SHADOW, getGroup());
+				if ((iMax == -1 || iShadowerCount < iMax) &&
+					(iMaxRatio == -1 || iShadowerCount == 0 ||
+						iMaxRatio >= (100 * iShadowerCount) /
+						std::max(1, pLoopUnit->getGroup()->countNumUnitAIType(eUnitAI))))
 				{
-					if (!(pLoopUnit->isCargo()))
+					//if (!pLoopUnit->getPlot().isVisibleEnemyUnit(this)) { // advc.opt: pLoopUnit is our unit; can't coexist with any enemies.
+					int iPathTurns;
+					if (generatePath(pLoopUnit->plot(), NO_MOVEMENT_FLAGS,
+						true, &iPathTurns, iMaxPath))
 					{
-						if (pLoopUnit->AI_getUnitAIType() == eUnitAI)
+						//if (iPathTurns <= iMaxPath) //XXX
+						// BETTER_BTS_AI_MOD, Naval AI, 12/08/08, jdog5000: (uncommented)
+						if (iPathTurns <= iMaxPath)
 						{
-							if (pLoopUnit->getGroup()->baseMoves() <= getGroup()->baseMoves())
+							int iValue = 1 + pLoopUnit->getGroup()->getCargo();
+							iValue *= 1000;
+							iValue /= 1 + iPathTurns;
+							if (iValue > iBestValue)
 							{
-								if (!bWithCargoOnly || pLoopUnit->getGroup()->hasCargo())
-								{
-									int iShadowerCount = GET_PLAYER(getOwnerINLINE()).AI_unitTargetMissionAIs(pLoopUnit, MISSIONAI_SHADOW, getGroup());
-									if (((-1 == iMax) || (iShadowerCount < iMax)) &&
-										 ((-1 == iMaxRatio) || (iShadowerCount == 0) || (((100 * iShadowerCount) / std::max(1, pLoopUnit->getGroup()->countNumUnitAIType(eUnitAI))) <= iMaxRatio)))
-									{
-										if (!(pLoopUnit->plot()->isVisibleEnemyUnit(this)))
-										{
-											if (generatePath(pLoopUnit->plot(), 0, true, &iPathTurns))
-											{
-												//if (iPathTurns <= iMaxPath) XXX
-												{
-													iValue = 1 + pLoopUnit->getGroup()->getCargo();
-													iValue *= 1000;
-													iValue /= 1 + iPathTurns;
-
-													if (iValue > iBestValue)
-													{
-														iBestValue = iValue;
-														pBestUnit = pLoopUnit;
-													}
-												}
-											}
-										}
-									}
-								}
+								iBestValue = iValue;
+								pBestUnit = pLoopUnit;
 							}
 						}
 					}
@@ -7532,12 +7523,15 @@ bool CvUnitAI::AI_shadow(UnitAITypes eUnitAI, int iMax, int iMaxRatio, bool bWit
 	{
 		if (atPlot(pBestUnit->plot()))
 		{
-			getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_SHADOW, NULL, pBestUnit);
+			getGroup()->pushMission(MISSION_SKIP, -1, -1, NO_MOVEMENT_FLAGS,
+				false, false, MISSIONAI_SHADOW, NULL, (CvUnit*)pBestUnit);
 			return true;
 		}
 		else
 		{
-			getGroup()->pushMission(MISSION_MOVE_TO_UNIT, pBestUnit->getOwnerINLINE(), pBestUnit->getID(), 0, false, false, MISSIONAI_SHADOW, NULL, pBestUnit);
+			getGroup()->pushMission(MISSION_MOVE_TO_UNIT, pBestUnit->getOwner(),
+				pBestUnit->getID(), NO_MOVEMENT_FLAGS, false, false,
+				MISSIONAI_SHADOW, NULL, (CvUnit*)pBestUnit);
 			return true;
 		}
 	}
@@ -7545,13 +7539,54 @@ bool CvUnitAI::AI_shadow(UnitAITypes eUnitAI, int iMax, int iMaxRatio, bool bWit
 	return false;
 }
 
+namespace 
+{	
+	// Will push a mission for our transport or a move for ourselves if we're adajcent to the destination
+	void pushBestTransportOrUnitMission(CvPlot& pEndTurnPlot, CvPlot& pDestinationPlot,
+		CvUnit& pTransportUnit, CvUnit& pUnit)
+	{
+		FAssert(!pEndTurnPlot.isImpassable() || pUnit.canMoveImpassable());
+
+		// Check if we can reach the destination plot on this turn
+		if (&pEndTurnPlot == &pDestinationPlot || ::stepDistance(&pEndTurnPlot, &pDestinationPlot) == 1)
+		{
+			if (pUnit.at(pDestinationPlot))
+			{
+				FAssert(pEndTurnPlot.isCity());
+				// We're in a city, unload so the cargo can take its turn (unload will set the transported units priority above 
+				// the transport so they can move this turn)
+				pTransportUnit.getGroup()->unloadAll();
+			}
+			else if (pUnit.at(pEndTurnPlot) && !pTransportUnit.canMove() && pUnit.canMove())
+			{
+				// We're adjacent to the destination plot so let's disembark if we can move. Note: MOVE_IGNORE_DANGER will ensure that the move does not get cancelled
+				// once the automission starts
+				pUnit.getGroup()->pushMission(MISSION_MOVE_TO, pDestinationPlot.getX_INLINE(), pDestinationPlot.getY_INLINE(),
+					MOVE_IGNORE_DANGER, false, false, MISSIONAI_JOIN, &pDestinationPlot);
+			}
+			else
+			{
+				// We can reach the destination with an amphibious move this turn
+				pTransportUnit.getGroup()->pushMission(MISSION_MOVE_TO, pDestinationPlot.getX_INLINE(), pDestinationPlot.getY_INLINE(),
+					NO_MOVEMENT_FLAGS, false, false, MISSIONAI_JOIN, &pDestinationPlot);
+				pUnit.getGroup()->pushMission(MISSION_SKIP);
+			}
+		}
+		else
+		{
+			pTransportUnit.getGroup()->pushMission(MISSION_MOVE_TO, pEndTurnPlot.getX_INLINE(), pEndTurnPlot.getY_INLINE(),
+				NO_MOVEMENT_FLAGS, false, false, MISSIONAI_JOIN, &pDestinationPlot);
+			pUnit.getGroup()->pushMission(MISSION_SKIP);
+		}
+	}
+}
+
 bool CvUnitAI::AI_unloadWhereNeeded(int iMaxPath, MissionAITypes eMissionAI)
 {
 	FAssert(isCargo());
 
 	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
-
-	CvUnit* pTransportUnit = getTransportUnit();
+	CvUnit* const pTransportUnit = getTransportUnit();
 
 	// TAC - AI Assault Sea - koma13 - START
 	if (pTransportUnit->AI_getUnitAIType() == UNITAI_ASSAULT_SEA)
@@ -7645,62 +7680,10 @@ bool CvUnitAI::AI_unloadWhereNeeded(int iMaxPath, MissionAITypes eMissionAI)
 
 	if (pEndTurnPlot != NULL && pDestinationPlot != NULL)
 	{
-		FAssert(!pEndTurnPlot->isImpassable() || canMoveImpassable());
-
-		// Check if we can reach the destination plot on this turn
-		if (pEndTurnPlot == pDestinationPlot || ::stepDistance(pEndTurnPlot, pDestinationPlot) == 1)
-		{
-			if (at(*pDestinationPlot))
-			{
-				FAssert(pEndTurnPlot->isCity());
-				// We're in a city, unload so the cargo can take its turn (unload will set the transported units priority above 
-				// the transport so they can move this turn)
-				pTransportUnit->getGroup()->unloadAll();
-				return true;
-			}
-			else if (at(*pEndTurnPlot) && !pTransportUnit->canMove() && canMove())
-			{
-				// We're adjacent to the destination plot so let's disembark if we can move. Note: MOVE_IGNORE_DANGER will ensure that the move does not get cancelled
-				// once the automission starts
-				getGroup()->pushMission(MISSION_MOVE_TO, pDestinationPlot->getX_INLINE(), pDestinationPlot->getY_INLINE(),
-					MOVE_IGNORE_DANGER, false, false, MISSIONAI_JOIN, pDestinationPlot);
-			}
-			else
-			{
-				// We can reach the destination with an amfib move this turn
-				pTransportUnit->getGroup()->pushMission(MISSION_MOVE_TO, pDestinationPlot->getX_INLINE(), pDestinationPlot->getY_INLINE(),
-					NO_MOVEMENT_FLAGS, false, false, MISSIONAI_JOIN, pDestinationPlot);
-				getGroup()->pushMission(MISSION_SKIP);
-				return true;
-			}
-		}
-		else
-		{
-			pTransportUnit->getGroup()->pushMission(MISSION_MOVE_TO, pEndTurnPlot->getX_INLINE(), pEndTurnPlot->getY_INLINE(),
-				NO_MOVEMENT_FLAGS, false, false, MISSIONAI_JOIN, pDestinationPlot);
-			getGroup()->pushMission(MISSION_SKIP);
-			return true;
-		}
+		pushBestTransportOrUnitMission(*pEndTurnPlot, *pDestinationPlot, *pTransportUnit, *this);
+		return true;
 	}
 	return false;
-
-	/*
-	if ((pBestPlot != NULL) && (pBestJoinPlot != NULL))
-	{
-		if (atPlot(pBestJoinPlot))
-		{
-			unload();
-			return true;
-		}
-		else
-		{ 
-			getGroup()->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_UNLOAD);
-			AI_setMovePriority(1);
-			return true;
-		}
-	}
-	return false;
-	*/
 }
 
 bool CvUnitAI::AI_betterJob()
@@ -7746,6 +7729,8 @@ bool CvUnitAI::AI_betterJob()
 		}
 	}
 
+// Don't consider swapping with unit outside the city
+#if 0
 	CvPlot* const pPlot = plot();
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 	while (pUnitNode != NULL)
@@ -7771,6 +7756,7 @@ bool CvUnitAI::AI_betterJob()
 			}
 		}
 	}
+#endif
 
 	for (int i = 0; i < pCity->getPopulation(); ++i)
 	{
@@ -9125,20 +9111,35 @@ bool CvUnitAI::AI_breakAutomation()
 	return false;
 }
 
-// Added new options to aid transport grouping
 // Returns true if a group was joined or a mission was pushed...
-bool CvUnitAI::AI_group(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitAI, int iMinUnitAI, bool bIgnoreFaster, bool bIgnoreOwnUnitType, bool bStackOfDoom, int iMaxPath, bool bAllowRegrouping, bool bWithCargoOnly, bool bInCityOnly, MissionAITypes eIgnoreMissionAIType)
+bool CvUnitAI::AI_group(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitAI,
+	int iMinUnitAI, bool bIgnoreFaster, bool bIgnoreOwnUnitType, bool bStackOfDoom,
+	int iMaxPath, bool bAllowRegrouping,
+	/*  BETTER_BTS_AI_MOD, Unit AI, 02/22/10, jdog5000:
+		Added new options to aid transport grouping */
+	bool bWithCargoOnly, bool bInCityOnly, MissionAITypes eIgnoreMissionAIType)
 {
-	PROFILE_FUNC();
+	// K-Mod. I've completely gutted this function. It's now basically just a wrapper for AI_omniGroup.
+	// This is part of the process of phasing the function out.
 
-	CvUnit* pLoopUnit;
-	CvUnit* pBestUnit;
-	int iPathTurns;
-	int iValue;
-	int iBestValue;
-	int iLoop;
+	// unsupported features:
+	FAssert(!bInCityOnly);
+	FAssert(eIgnoreMissionAIType == NO_MISSIONAI || (eUnitAI == UNITAI_ASSAULT_SEA && eIgnoreMissionAIType == MISSIONAI_ASSAULT));
+	// .. and now the function.
 
-	// if we are on a transport, then do not regroup
+	if (!bAllowRegrouping && getGroup()->getNumUnits() > 1)
+		return false;
+
+	return AI_omniGroup(eUnitAI, iMaxGroup, iMaxOwnUnitAI, bStackOfDoom, NO_MOVEMENT_FLAGS,
+		iMaxPath, true, true, bIgnoreFaster, bIgnoreOwnUnitType, false, iMinUnitAI,
+		bWithCargoOnly, eIgnoreMissionAIType == MISSIONAI_ASSAULT);
+}
+
+bool CvUnitAI::AI_groupMergeRange(UnitAITypes eUnitAI, int iMaxRange, bool bBiggerOnly, bool bAllowRegrouping, bool bIgnoreFaster)
+{
+	// K-Mod. I've completely gutted this function. It's now basically just a wrapper for AI_omniGroup.
+	// This is part of the process of phasing the function out.
+
 	if (isCargo())
 	{
 		return false;
@@ -9152,243 +9153,13 @@ bool CvUnitAI::AI_group(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitAI, i
 		}
 	}
 
-	if (getDomainType() == DOMAIN_LAND)
-	{
-		if (area()->getNumAIUnits(getOwnerINLINE(), eUnitAI) == 0)
-		{
-			return false;
-		}
-	}
+	// approximate max path based on range.
+	int iMaxPath = 1;
+	while (AI_searchRange(iMaxPath) < iMaxRange)
+		iMaxPath++;
 
-	if (!AI_canGroupWithAIType(eUnitAI))
-	{
-		return false;
-	}
-
-	int iOurImpassableCount = 0;
-	CLLNode<IDInfo>* pUnitNode = getGroup()->headUnitNode();
-	while (pUnitNode != NULL)
-	{
-		CvUnit* pImpassUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = getGroup()->nextUnitNode(pUnitNode);
-
-		if (pImpassUnit != NULL)
-		{
-			iOurImpassableCount = std::max(iOurImpassableCount, GET_PLAYER(getOwnerINLINE()).AI_unitImpassableCount(pImpassUnit->getUnitType()));
-		}
-	}
-
-	iBestValue = MAX_INT;
-	pBestUnit = NULL;
-
-	// Loop over groups, ai_allowgroup blocks non-head units anyway
-	CvSelectionGroup* pLoopGroup = NULL;
-	for(pLoopGroup = GET_PLAYER(getOwnerINLINE()).firstSelectionGroup(&iLoop); pLoopGroup != NULL; pLoopGroup = GET_PLAYER(getOwnerINLINE()).nextSelectionGroup(&iLoop))
-	{
-		pLoopUnit = pLoopGroup->getHeadUnit();
-		if( pLoopUnit == NULL )
-		{
-			continue;
-		}
-
-		CvPlot* pPlot = pLoopUnit->plot();
-		if (AI_plotValid(pPlot))
-		{
-			if (iMaxPath > 0 || pPlot == plot())
-			{
-				if (!isEnemy(pPlot->getTeam()))
-				{
-					if (AI_allowGroup(pLoopUnit, eUnitAI))
-					{
-						if ((iMaxGroup == -1) || ((pLoopGroup->getNumUnits() + GET_PLAYER(getOwnerINLINE()).AI_unitTargetMissionAIs(pLoopUnit, MISSIONAI_GROUP, getGroup())) <= (iMaxGroup + ((bStackOfDoom) ? AI_stackOfDoomExtra() : 0))))
-						{
-							// TAC - AI Attack City - koma13 - START
-							//if ((iMaxOwnUnitAI == -1) || (pLoopGroup->countNumUnitAIType(AI_getUnitAIType()) <= (iMaxOwnUnitAI + ((bStackOfDoom) ? AI_stackOfDoomExtra() : 0))))
-							if ((iMaxOwnUnitAI == -1) || ((pLoopGroup->countNumUnitAIType(AI_getUnitAIType()) + GET_PLAYER(getOwnerINLINE()).AI_unitTargetMissionAIs(pLoopUnit, MISSIONAI_GROUP, getGroup(), AI_getUnitAIType())) <= (iMaxOwnUnitAI + ((bStackOfDoom) ? AI_stackOfDoomExtra() : 0))))
-							// TAC - AI Attack City - koma13 - END
-							{
-								if ((iMinUnitAI == -1) || (pLoopGroup->countNumUnitAIType(eUnitAI) >= iMinUnitAI))
-								{
-									if (!bIgnoreFaster || (pLoopGroup->baseMoves() <= baseMoves()))
-									{
-										if (!bIgnoreOwnUnitType || (pLoopUnit->getUnitType() != getUnitType()))
-										{
-											if (!bWithCargoOnly || pLoopUnit->getGroup()->hasCargo())
-											{
-												if( !bInCityOnly || pLoopUnit->plot()->isCity() )
-												{
-													if( (eIgnoreMissionAIType == NO_MISSIONAI) || (eIgnoreMissionAIType != pLoopUnit->getGroup()->AI_getMissionAIType()) )
-													{
-														if (!(pPlot->isVisibleEnemyUnit(this)))
-														{
-															if( iOurImpassableCount > 0 || AI_getUnitAIType() == UNITAI_ASSAULT_SEA )
-															{
-																int iTheirImpassableCount = 0;
-																pUnitNode = pLoopGroup->headUnitNode();
-																while (pUnitNode != NULL)
-																{
-																	CvUnit* pImpassUnit = ::getUnit(pUnitNode->m_data);
-																	pUnitNode = pLoopGroup->nextUnitNode(pUnitNode);
-
-																	if (pLoopUnit != NULL)
-																	{
-																		iTheirImpassableCount = std::max(iTheirImpassableCount, GET_PLAYER(getOwnerINLINE()).AI_unitImpassableCount(pImpassUnit->getUnitType()));
-																	}
-																}
-
-																if( iOurImpassableCount != iTheirImpassableCount )
-																{
-																	continue;
-																}
-															}
-
-															if (generatePath(pPlot, 0, true, &iPathTurns, iMaxPath))
-															{
-																iValue = 1000 * (iPathTurns + 1);
-																iValue *= 4 + pLoopGroup->getCargo();
-																iValue /= pLoopGroup->getNumUnits();
-
-																if (iValue < iBestValue)
-																{
-																	iBestValue = iValue;
-																	pBestUnit = pLoopUnit;
-																}
-															}
-														}
-													}
-												}
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	if (pBestUnit != NULL)
-	{
-		if (atPlot(pBestUnit->plot()))
-		{
-			joinGroup(pBestUnit->getGroup());
-			return true;
-		}
-		else
-		{
-			getGroup()->pushMission(MISSION_MOVE_TO_UNIT, pBestUnit->getOwnerINLINE(), pBestUnit->getID(), 0, false, false, MISSIONAI_GROUP, NULL, pBestUnit);
-			return true;
-		}
-	}
-
-	return false;
-}
-// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - END
-
-bool CvUnitAI::AI_groupMergeRange(UnitAITypes eUnitAI, int iMaxRange, bool bBiggerOnly, bool bAllowRegrouping, bool bIgnoreFaster)
-{
-	PROFILE_FUNC();
-
-
- 	// if we are on a transport, then do not regroup
-	if (isCargo())
-	{
-		return false;
-	}
-
-   if (!bAllowRegrouping)
-	{
-		if (getGroup()->getNumUnits() > 1)
-		{
-			return false;
-		}
-	}
-
-	if ((getDomainType() == DOMAIN_LAND) && !m_pUnitInfo->isCanMoveAllTerrain())
-	{
-		if (area()->getNumAIUnits(getOwnerINLINE(), eUnitAI) == 0)
-		{
-			return false;
-		}
-	}
-
-	if (!AI_canGroupWithAIType(eUnitAI))
-	{
-		return false;
-	}
-
-	// cached values
-	CvPlot* pPlot = plot();
-	CvSelectionGroup* pGroup = getGroup();
-
-	// best match
-	CvUnit* pBestUnit = NULL;
-	int iBestValue = MAX_INT;
-	// iterate over plots at each range
-	for (int iDX = -(iMaxRange); iDX <= iMaxRange; iDX++)
-	{
-		for (int iDY = -(iMaxRange); iDY <= iMaxRange; iDY++)
-		{
-			CvPlot* pLoopPlot = plotXY(pPlot->getX_INLINE(), pPlot->getY_INLINE(), iDX, iDY);
-
-			if (pLoopPlot != NULL && pLoopPlot->getArea() == pPlot->getArea())
-			{
-				CLLNode<IDInfo>* pUnitNode = pLoopPlot->headUnitNode();
-				while (pUnitNode != NULL)
-				{
-					CvUnit* pLoopUnit = pLoopPlot->getUnitNodeLoop(pUnitNode);
-
-					if (pLoopUnit != NULL)
-					{
-						CvSelectionGroup* pLoopGroup = pLoopUnit->getGroup();
-
-						if (AI_allowGroup(pLoopUnit, eUnitAI))
-						{
-							if (!bIgnoreFaster || (pLoopUnit->getGroup()->baseMoves() <= baseMoves()))
-							{
-								if (!bBiggerOnly || (pLoopGroup->getNumUnits() >= pGroup->getNumUnits()))
-								{
-									int iPathTurns;
-									if (generatePath(pLoopPlot, 0, true, &iPathTurns))
-									{
-										if (iPathTurns <= (iMaxRange + 2))
-										{
-											int iValue = 1000 * (iPathTurns + 1);
-											iValue /= pLoopGroup->getNumUnits();
-
-											if (iValue < iBestValue)
-											{
-												iBestValue = iValue;
-												pBestUnit = pLoopUnit;
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-
-	if (pBestUnit != NULL)
-	{
-		if (atPlot(pBestUnit->plot()))
-		{
-			pGroup->mergeIntoGroup(pBestUnit->getGroup());
-			return true;
-		}
-		else
-		{
-			pGroup->pushMission(MISSION_MOVE_TO_UNIT, pBestUnit->getOwnerINLINE(), pBestUnit->getID(), 0, false, false, MISSIONAI_GROUP, NULL, pBestUnit);
-			return true;
-		}
-	}
-
-	return false;
+	return AI_omniGroup(eUnitAI, -1, -1, false, NO_MOVEMENT_FLAGS,
+		iMaxPath, true, false, bIgnoreFaster, false, bBiggerOnly);
 }
 
 // Returns true if we loaded onto a transport or a mission was pushed...
@@ -11396,42 +11167,8 @@ bool CvUnitAI::AI_exploreFromShip(int iMaxPath)
 
 	if (pEndTurnPlot != NULL && pDestinationPlot != NULL)
 	{
-		FAssert(!pEndTurnPlot->isImpassable() || canMoveImpassable());
-
-		// Check if we can reach the destination plot on this turn
-		if (pEndTurnPlot == pDestinationPlot || ::stepDistance(pEndTurnPlot, pDestinationPlot) == 1)
-		{
-			if (at(*pDestinationPlot))
-			{
-				FAssert(pEndTurnPlot->isCity());
-				// We're in a city, unload so the cargo can take its turn (unload will set the transported units priority above 
-				// the transport so they can move this turn)
-				pTransportUnit->getGroup()->unloadAll();
-				return true;
-			}
-			else if (at(*pEndTurnPlot) && !pTransportUnit->canMove() && canMove())
-			{
-				// We're adjacent to the destination plot so let's disembark if we can move. Note: MOVE_IGNORE_DANGER will ensure that the move does not get cancelled
-				// once the automission starts
-				getGroup()->pushMission(MISSION_MOVE_TO, pDestinationPlot->getX_INLINE(), pDestinationPlot->getY_INLINE(),
-					MOVE_IGNORE_DANGER, false, false, MISSIONAI_EXPLORE, pDestinationPlot);
-			}
-			else
-			{
-				// We can reach the destination with an amfib move this turn
-				pTransportUnit->getGroup()->pushMission(MISSION_MOVE_TO, pDestinationPlot->getX_INLINE(), pDestinationPlot->getY_INLINE(),
-					NO_MOVEMENT_FLAGS, false, false, MISSIONAI_EXPLORE, pDestinationPlot);
-				getGroup()->pushMission(MISSION_SKIP);
-				return true;
-			}
-		}
-		else
-		{
-			pTransportUnit->getGroup()->pushMission(MISSION_MOVE_TO, pEndTurnPlot->getX_INLINE(), pEndTurnPlot->getY_INLINE(),
-				NO_MOVEMENT_FLAGS, false, false, MISSIONAI_EXPLORE, pDestinationPlot);
-			getGroup()->pushMission(MISSION_SKIP);
-			return true;
-		}
+		pushBestTransportOrUnitMission(*pEndTurnPlot, *pDestinationPlot, *pTransportUnit, *this);
+		return true;
 	}
 	return false;
 }
@@ -16586,7 +16323,7 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, int iMaxPath)
 	int iShortestPath = MAX_INT;
 	// <advc.139>
 	//bool bEvac = (pCity != NULL && pCity->AI_isEvacuating());
-	//bool bSafe = (pCity != NULL && pCity->AI_isSafe());
+	bool bSafe = (pCity != NULL && pCity->AI_isSafe());
 	// </advc.139>
 	// <advc>
 	int iPass = 0; // Used after the loop
@@ -16611,10 +16348,10 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, int iMaxPath)
 			//	continue;
 			/*  Avoid path and danger computation if we already know that we're safer
 				where we are. */
-			if (/*!pLoopCity->AI_isSafe() && (bSafe || */iCurrentDanger <= 0 ||
+			if (!pLoopCity->AI_isSafe() && (bSafe || iCurrentDanger <= 0 ||
 				/*  Even when threatened at sea, a ship won't seek refuge in
 					an unsafe city. */
-				getDomainType() != DOMAIN_LAND)//)
+				getDomainType() != DOMAIN_LAND))
 			{
 				continue;
 			} // </advc.139>
@@ -16696,6 +16433,8 @@ bool CvUnitAI::AI_retreatToCity(bool bPrimary, int iMaxPath)
 // TAC - AI Improved Naval AI - koma13 - START
 bool CvUnitAI::AI_retreatFromDanger()
 {
+	FAssert(getDomainType() == DOMAIN_SEA);
+
 	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
 	if (kOwner.isHuman())
@@ -18215,31 +17954,23 @@ bool CvUnitAI::AI_isOnMission()
 	return false;
 }
 
+// TODO: Consider defensive strength, movement and cargo slots!
 bool CvUnitAI::AI_isObsoleteTradeShip() const
 {
-	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	FAssert(AI_getUnitAIType() == UNITAI_TRANSPORT_SEA);
 
-	int iLoop;
-	CvUnit* pLoopUnit;
-	for (pLoopUnit = kOwner.firstUnit(&iLoop); pLoopUnit; pLoopUnit = kOwner.nextUnit(&iLoop))
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	int iBetterTransportCount = 0;
+
+	FOR_EACH_UNIT(pLoopUnit, kOwner)
 	{
-		if (pLoopUnit->AI_getUnitAIType() == AI_getUnitAIType())
-		{
-			if (cargoSpace() < pLoopUnit->cargoSpace())
-			{
-				return true;
-			}
-			else if (cargoSpace() == pLoopUnit->cargoSpace())
-			{
-				if (getGameTurnCreated() > pLoopUnit->getGameTurnCreated())
-				{
-					return true;
-				}
-			}
+		if (pLoopUnit->AI_getUnitAIType() != AI_getUnitAIType())
+			continue;
 
-		}
+		if (cargoSpace() < pLoopUnit->cargoSpace())
+			iBetterTransportCount++;
 	}
-	return false;
+	return iBetterTransportCount > 1;
 }
 
 bool CvUnitAI::AI_loadAdjacent(CvPlot* pPlot, bool bTestCity)
@@ -18932,7 +18663,9 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 		most restrictive impassable types. */
 	int const iOurGroupFirstVal = AI_groupFirstValInternal();
 	
-	uint uiOurMaxImpassables = kOwner.AI_unitImpassables(getUnitType());
+	//uint uiOurMaxImpassables = kOwner.AI_unitImpassables(getUnitType());
+	uint uiOurMaxImpassables = kOwner.AI_unitImpassables(getUnitType()).iCount;
+
 	if (AI_getUnitAIType() == UNITAI_ASSAULT_SEA)
 	{
 		for (CLLNode<IDInfo> const* pUnitNode = // We're the head; already done.
@@ -18941,7 +18674,7 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 		{
 			CvUnit const& kImpassUnit = *::getUnit(pUnitNode->m_data);
 			uiOurMaxImpassables = std::max(uiOurMaxImpassables,
-				kOwner.AI_unitImpassables(kImpassUnit.getUnitType()));
+				kOwner.AI_unitImpassables(kImpassUnit.getUnitType()).iCount);
 		}
 	}
 	
@@ -19027,7 +18760,10 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 					kHeadUnit.getUnitType());
 				/*	Assault groups aren't always formed through this function;
 					can't rely on head having the most impassable types. */
-				if (kHeadUnit.AI_getUnitAIType() == UNITAI_ASSAULT_SEA)
+				// WTP: Also checking offensive units since rangers/native mercenaries are able to traverse peaks
+				// and should thus not lead groups that include units with impassables
+				if (kHeadUnit.AI_getUnitAIType() == UNITAI_ASSAULT_SEA || kHeadUnit.AI_getUnitAIType() == UNITAI_ATTACK_CITY || 
+					kHeadUnit.AI_getUnitAIType() == UNITAI_OFFENSIVE || kHeadUnit.AI_getUnitAIType() == UNITAI_COUNTER)
 				{
 					for (pUnitNode = getGroup()->nextUnitNode(pUnitNode);
 						pUnitNode != NULL; pUnitNode = getGroup()->nextUnitNode(pUnitNode))
@@ -21335,42 +21071,8 @@ bool CvUnitAI::AI_settlerSeaTransport(int iMinFoundValue)
 
 	if (pEndTurnPlot != NULL && pDestinationPlot != NULL)
 	{
-		FAssert(!pEndTurnPlot->isImpassable() || canMoveImpassable());
-
-		// Check if we can reach the destination plot on this turn
-		if (pEndTurnPlot == pDestinationPlot || ::stepDistance(pEndTurnPlot, pDestinationPlot) == 1)
-		{
-			if (at(*pDestinationPlot))
-			{	
-				FAssert(pEndTurnPlot->isCity());
-				// We're in a city, unload so the cargo can take its turn (unload will set the transported units priority above 
-				// the transport so they can move this turn)
-				pTransportUnit->getGroup()->unloadAll();
-				return true;
-			}
-			else if (at(*pEndTurnPlot) && !pTransportUnit->canMove() && canMove())
-			{
-				// We're adjacent to the destination plot so let's disembark if we can move. Note: MOVE_IGNORE_DANGER will ensure that the move does not get cancelled
-				// once the automission starts
-				getGroup()->pushMission(MISSION_MOVE_TO, pDestinationPlot->getX_INLINE(), pDestinationPlot->getY_INLINE(),
-					MOVE_IGNORE_DANGER, false, false, MISSIONAI_FOUND, pDestinationPlot);
-			}
-			else
-			{	
-				// We can reach the destination with an amfib move this turn
-				pTransportUnit->getGroup()->pushMission(MISSION_MOVE_TO, pDestinationPlot->getX_INLINE(), pDestinationPlot->getY_INLINE(),
-					NO_MOVEMENT_FLAGS, false, false, MISSIONAI_FOUND, pDestinationPlot);
-				getGroup()->pushMission(MISSION_SKIP);
-				return true;
-			}
-		}
-		else
-		{
-			pTransportUnit->getGroup()->pushMission(MISSION_MOVE_TO, pEndTurnPlot->getX_INLINE(), pEndTurnPlot->getY_INLINE(),
-				NO_MOVEMENT_FLAGS, false, false, MISSIONAI_FOUND, pDestinationPlot);
-			getGroup()->pushMission(MISSION_SKIP);
-			return true;
-		}
+		pushBestTransportOrUnitMission(*pEndTurnPlot, *pDestinationPlot, *pTransportUnit, *this);
+		return true;
 	}
 	return false;
 }
@@ -21379,6 +21081,220 @@ bool CvUnitAI::AI_colonistSeaTransport()
 {
 	return false;
 }
+
+void CvUnitAI::AI_attackSeaMove()
+{
+	// TODO: add support for substates
+	const UnitAITypes UNITAI_ATTACK_SEA = UNITAI_COMBAT_SEA;
+
+	PROFILE_FUNC();
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwner()); // K-Mod
+	// BETTER_BTS_AI_MOD, Naval AI, 06/14/09, Solver & jdog5000: START
+	if (AI_isThreatenedFromLand() >= PROBABILITY_REAL) // advc.139: Moved into subroutine
+	{
+		if (AI_anyAttack(2, 50))
+		{
+			return;
+		}
+		if (AI_shadow(UNITAI_ASSAULT_SEA, 4, 34, false, true, baseMoves()))
+		{
+			return;
+		}
+		//if (AI_protect(35, 0, 3))
+		if (AI_defendTerritory(45, NO_MOVEMENT_FLAGS, 3, true)) // K-Mod
+		{
+			return;
+		}
+		// <advc.017b>
+		/*
+		CvArea* pWaterArea = getPlot().waterArea();
+		if (pWaterArea != NULL)
+		{
+			if (getUnitInfo().getDefaultUnitAIType() == UNITAI_EXPLORE_SEA &&
+				kOwner.AI_totalWaterAreaUnitAIs(*pWaterArea, UNITAI_EXPLORE_SEA) <
+				kOwner.AI_neededExplorers(*pWaterArea))
+			{
+				AI_setUnitAIType(UNITAI_EXPLORE_SEA);
+			}
+		} // </advc.017b>
+		*/
+		if (AI_retreatToCity())
+		{
+			return;
+		}
+		if (AI_safety())
+		{
+			return;
+		}
+	} // BETTER_BTS_AI_MOD: END
+
+	if (AI_heal(30, 1))
+	{
+		return;
+	}
+
+	if (AI_anyAttack(1, 35))
+	{
+		return;
+	}
+
+	if (AI_anyAttack(2, 40))
+	{
+		return;
+	}
+
+	if (AI_seaBombardRange(6))
+	{
+		return;
+	}
+
+	if (AI_heal(50, 3))
+	{
+		return;
+	}
+
+	if (AI_heal())
+	{
+		return;
+	}
+	// BETTER_BTS_AI_MOD, Naval AI, 08/10/09, jdog5000: START
+	// BBAI TODO: Turn this into a function, have docked escort ships do it too
+	CvCity* const pCity = getPlot().getPlotCity();
+
+	if (AI_group(UNITAI_ATTACK_SEA, /*iMaxGroup*/ 1, -1, -1, true, false, false, /*iMaxPath*/ 3))
+	{
+		return;
+	}
+
+	if (!getPlot().isOwned() || !isEnemy(getPlot()))
+	{
+		if (AI_shadow(UNITAI_ASSAULT_SEA, 4, 34))
+			return;
+		
+		if (AI_group(UNITAI_ASSAULT_SEA, -1, 4, -1, false, false, false))
+			return;
+
+		// K-Mod / BBAI. I've changed the order of group / shadow.
+		// What I'd really like is to join the assault group if the group needs escorts, but shadow if it doesn't.
+
+		// Get at least one shadow per assault group.
+		if (AI_shadow(UNITAI_ASSAULT_SEA, 1, -1, true, false, 4))
+		{
+			return;
+		}
+
+		// Allow several attack_sea with large flotillas
+		if (AI_group(UNITAI_ASSAULT_SEA, -1, 4, 4, false, false, false, 4, false, true, false))
+		{
+			return;
+		}
+
+		// allow just a couple with small asault teams
+		if (AI_group(UNITAI_ASSAULT_SEA, -1, 2, -1, false, false, false, 5, false, true, false))
+		{
+			return;
+		}
+
+		// Otherwise, try to shadow.
+		if (AI_shadow(UNITAI_ASSAULT_SEA, 4, 34, true, false, 4))
+		{
+			return;
+		}
+	}
+	// K-Mod / BBAI end
+
+#if 0
+	if (getPlot().isOwned() && isEnemy(getPlot()) &&
+		// advc.033: Don't blockade Barbarian cities
+		getPlot().getTeam() != BARBARIAN_TEAM)
+	{
+		if (AI_blockade())
+		{
+			return;
+		}
+	}
+#endif
+
+	if (AI_pillageRange(4))
+	{
+		return;
+	}
+
+	//if (AI_protect(35))
+	if (AI_defendTerritory(40, NO_MOVEMENT_FLAGS, 8)) // K-Mod
+	{
+		return;
+	}
+
+	// K-Mod
+	/*
+	if (AI_guardBonus(10))
+		return;
+	/*
+	/*
+	if (AI_getBirthmark() % 2 == 0 && AI_guardCoast()) // I want some attackSea units to just patrol the area.
+		return;
+	// K-Mod end
+	*/
+
+	if (AI_patrol())
+	{
+		return;
+	}
+
+	if (AI_retreatToCity())
+	{
+		return;
+	}
+
+	if (AI_safety())
+	{
+		return;
+	}
+
+	getGroup()->pushMission(MISSION_SKIP);
+}
+
+/*  advc.139: Mostly cut and pasted from AI_assaultSeaMove, AI_pirateSeaMove,
+	AI_escortSeaMove, AI_attackSeaMove, AI_reserveSeaMove, AI_exploreSeaMove,
+	AI_settlerSeaMove, AI_missionarySeaMove, AI_spySeaMove and
+	AI_missileCarrierSeaMove (duplicate code).
+	AI_attackAirMove, AI_defenseAirMove and AI_missileAirMove
+	still contain similar code. */
+ProbabilityTypes CvUnitAI::AI_isThreatenedFromLand() const
+{
+	PROFILE_FUNC(); // advc: Not called frequently at all (currently)
+	FAssert(getDomainType() != DOMAIN_LAND);
+	if (getPlot().isWater())
+		return NO_PROBABILITY;
+	bool const bDamaged = (getDamage() > 0);
+	CvCityAI const* pPlotCity = getPlot().AI_getPlotCity();
+	if (pPlotCity != NULL)
+	{
+		if (pPlotCity->AI_isEvacuating())
+			return PROBABILITY_HIGH;
+		if (pPlotCity->AI_isSafe())
+			return NO_PROBABILITY;
+		return (bDamaged ? PROBABILITY_LOW : PROBABILITY_REAL);
+	}
+	// BETTER_BTS_AI_MOD, Naval AI, 06/14/09, Solver & jdog5000: START
+	// (with K-Mod adjustments)
+	CvPlayerAI const& kOwner = GET_PLAYER(getOwner());
+	int iOurDefense = kOwner.AI_localDefenceStrength(plot(), getTeam(), DOMAIN_LAND, 0);
+	int iEnemyOffense = kOwner.AI_localAttackStrength(plot(), NO_TEAM, DOMAIN_LAND, 2);
+	// (was based on AI_getOurPlotStrength in BBAI)
+	if (bDamaged) // extra risk to leaving when wounded
+		iOurDefense *= 2;
+	if (iEnemyOffense * 4 > iOurDefense) // (was 8 vs 1 in BBAI)
+	{
+		if (iEnemyOffense * 2 > iOurDefense) // (was 4 vs 1 in BBAI)
+			return PROBABILITY_REAL;
+		return PROBABILITY_LOW;
+	}
+	return NO_PROBABILITY;
+	// BETTER_BTS_AI_MOD: END
+}
+
 
 #if 0
 // advc.040:

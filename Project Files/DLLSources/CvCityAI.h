@@ -6,6 +6,7 @@
 #define CIV4_CITY_AI_H
 
 #include "CvCity.h"
+#include "CvEnums.h"
 
 typedef std::vector<std::pair<UnitAITypes, int> > UnitTypeWeightArray;
 
@@ -182,8 +183,8 @@ public:
 	void AI_doHurry(bool bForce = false);
 	bool canHaveCitizenProfession(const CvUnit& kUnit, ProfessionTypes eProfession, bool bBumpOther) const;
 
-	// TODO: Port this feature
-	bool AI_isEvacuating() const { return false; }
+	bool AI_isEvacuating() const { return (m_eSafety == CITYSAFETY_EVACUATING); }
+	bool AI_isSafe() const { return (m_eSafety == CITYSAFETY_SAFE || m_eSafety == CITYSAFETY_PERFECT); }
 
 protected:
 
@@ -229,6 +230,8 @@ protected:
 
 	int m_iWorkersNeeded;
 	int m_iWorkersHave;
+
+	CitySafety m_eSafety; // advc.139
 
 	void AI_doEmphasize();
 	void AI_doNativeTrade();

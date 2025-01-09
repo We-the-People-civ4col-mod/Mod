@@ -6,6 +6,7 @@
 #define CIV4_UNIT_AI_H
 
 #include "CvUnit.h"
+#include "CvEnums.h"
 
 namespace
 {
@@ -257,7 +258,9 @@ protected:
 	bool AI_counter(int iTether);
 	bool AI_shouldRun();
 
-	bool AI_shadow(UnitAITypes eUnitAI, int iMax = -1, int iMaxRatio = -1, bool bWithCargoOnly = true);
+	bool AI_shadow(UnitAITypes eUnitAI, int iMax = -1, int iMaxRatio = -1, bool bWithCargoOnly = true,
+		// BETTER_BTS_AI_MOD (Unit AI), 04/01/10, jdog5000:
+		bool bOutsideCityOnly = false, int iMaxPath = MAX_INT);
 
 	// TAC - AI Assault Sea - koma13, jdog5000(BBAI) - START
 	//bool AI_group(UnitAITypes eUnitAI, int iMaxGroup = -1, int iMaxOwnUnitAI = -1, int iMinUnitAI = -1, bool bIgnoreFaster = false, bool bIgnoreOwnUnitType = false, bool bStackOfDoom = false, int iMaxPath = MAX_INT, bool bAllowRegrouping = false);
@@ -489,6 +492,8 @@ protected:
 	void AI_handleEmbarkedMilitary();
 	bool AI_settlerSeaTransport(int iMinFoundValue);
 	bool AI_colonistSeaTransport();
+	ProbabilityTypes AI_isThreatenedFromLand() const; // advc.139
+	void AI_attackSeaMove();
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;
