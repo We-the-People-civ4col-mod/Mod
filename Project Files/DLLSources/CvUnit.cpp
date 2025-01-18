@@ -17072,3 +17072,26 @@ int CvUnit::damageToBombardTarget(CvPlot const& kFrom) const
 	}
 	return (rDamage + 99) / 100; // Rounding equivalent to rDamage.round() in scaled
 }
+
+/*
+ * Determines whether this unit can move into peak tiles.
+ *
+ * This function checks both the unit's inherent ability and its current profession.
+ * If the unit has a profession, the profession's ability to move into peaks takes precedence.
+ * If no profession is assigned, the unit's inherent ability is used.
+ *
+ * Returns:
+ * - true if the unit or its profession allows moving into peak tiles.
+ * - false otherwise.
+ */
+bool CvUnit::canMoveIntoPeak() const
+{
+	if (getProfession() != NO_PROFESSION) {
+		// Check if the profession explicitly allows moving into peaks
+		if (GC.getProfessionInfo(getProfession()).allowsMoveIntoPeak()) {
+			return true;
+		}
+	}
+	// Check the unit's inherent ability if no overriding profession exists
+	return m_pUnitInfo->allowsMoveIntoPeak();
+}

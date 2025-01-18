@@ -882,6 +882,7 @@ public:
 	CargoCount getCargoCount() const;
 	bool hasAnyUnitInCargo() const;
 	bool hasAnyYieldInCargo() const;
+	bool canMoveIntoPeak() const;
 
 protected:
 

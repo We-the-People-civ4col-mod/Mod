@@ -16813,67 +16813,91 @@ int CvPlayerAI::AI_cityTargetStrengthByPath(/* advc: */CvCity const* pCity,
 	return iTotalStrength;
 }
 
-// TODO: Land units: check allowsMoveIntoPeak. Ability to cross LARGE_RIVER also varies
+// TODO: Cache the impassable bitset and update when unit is created and profession changes
+UnitImpassables CvPlayerAI::AI_unitImpassables(const CvUnit& pUnit) const
+{
+	// WTP: Passable abilities are unfortunately scattered across
+	// several attributes:
 
+	// Unit: 
+	// bCanMoveImpassable, bMoveIntoPeak, bCanMoveAllTerrain, TerrainImpassables, FeatureImpassables
 
+	// Profession (note that these properties supercede the underlying abilities on the unit):
+	// bCanCrossLargeRivers (instead of using TerrainImpassables for units), bMoveIntoPeak, bCanMoveAllTerrain
 
-// advc.057: Renamed from "AI_unitImpassableCount"; return type was int.
-UnitImpassables  CvPlayerAI::AI_unitImpassables(UnitTypes eUnit) const
-{	// <advc.003t>
-	/*
-	if (!GC.getUnitInfo(eUnit).isAnyTerrainImpassable() &&
-		!GC.getUnitInfo(eUnit).isAnyFeatureImpassable())
-	{
-		return 0; // </advc.003t>
-	}
-	*/
-	uint uiCount = 0;
-	// <advc.057>
-	uint const uiCountBits = 3;
-	uint const uiFlagBits = std::numeric_limits<uint>::digits - uiCountBits;
-	uint const uiTerrains = (uint)GC.getNumTerrainInfos();
-	FAssert(uiTerrains + ((uint)GC.getNumFeatureInfos()) <= uiFlagBits);
-	uint uiFlags = 0; // </advc.057>
-	
-	// TODO: add peak impassable check!
+	// Note: bCanMoveImpassable and bCanMoveAllTerrain are currently not used in the xml
+	// Example: A free colonist has bMoveIntoPeak=0 but the scout profession has bMoveIntoPeak=1 and
+	// thus a free colonist scout can cross peaks
 
+	// Note: as of WTP 4.x there are 50-ish features and 20-ish terrains in total
+
+	// Dynamically calculate the number of terrains and features
+	uint const numTerrains = (uint)GC.getNumTerrainInfos();
+	uint const numFeatures = (uint)GC.getNumFeatureInfos();
+	uint const PEAK_BIT = numTerrains + numFeatures;
+	uint const RIVER_BIT = PEAK_BIT + 1;
+	uint const totalBits = RIVER_BIT + 1;
+
+	// Ensure the total number of bits fits within the defined bitset size
+	FAssert(totalBits <= UNIT_IMPASSABLES_BITS);
+
+	UnitImpassables impassables;
+
+	// Retrieve unit info
+	const CvUnitInfo& kUnitInfo = pUnit.getUnitInfo();
+	const ProfessionTypes eProfession = pUnit.getProfession();
+
+	// Process all terrains
 	FOREACH(Terrain)
 	{
-		const CvUnitInfo& kUnit = GC.getUnitInfo(eLoopUnit);
+		if (eLoopTerrain == TERRAIN_LARGE_RIVERS)
+			continue; // Special case handled separately
 
-		kUnit.getDomainType();
+		const bool impassable = kUnitInfo.getTerrainImpassable(eLoopTerrain);
 
-		if (GC.getUnitInfo(eUnit).getTerrainImpassable(eLoopTerrain))
+		if (impassable)
 		{
-			//TechTypes eTech = GC.getInfo(eUnit).getTerrainPassableTech(eLoopTerrain);
-			//if (eTech == NO_TECH || !GET_TEAM(getTeam()).isHasTech(eTech))
-			{
-				uiCount++;
-				// advc.057:
-				uiFlags += 1u << std::min<uint>(uiFlagBits - 1, eLoopTerrain);
-			}
+			impassables.iFlags.set(eLoopTerrain);
+			impassables.iCount++;
 		}
 	}
+
+	// Process all features
 	FOREACH(Feature)
 	{
-		if (GC.getUnitInfo(eUnit).getFeatureImpassable(eLoopFeature))
+		const bool impassable = kUnitInfo.getFeatureImpassable(eLoopFeature);
+
+		if (impassable)
 		{
-			//TechTypes eTech = GC.getInfo(eUnit).getFeaturePassableTech(eLoopFeature);
-			//if (eTech == NO_TECH || !GET_TEAM(getTeam()).isHasTech(eTech))
-			{
-				uiCount++;
-				// advc.057:
-				uiFlags += 1u << std::min<uint>(uiFlagBits - 1,
-					uiTerrains + eLoopFeature);
-			}
+			impassables.iFlags.set(numTerrains + eLoopFeature);
+			impassables.iCount++;
 		}
 	}
-	//return iCount;
-	/*	<advc.057> Put the count in the most significant bits so that the return values
-		can be used for ordering units by count */
-	uiCount = std::min(uiCount, (1u << uiCountBits) - 1);
-	uiFlags |= (uiCount << uiFlagBits);
-	return uiFlags; // </advc.057>
+
+	// Handle peaks
+	if ((eProfession != NO_PROFESSION && GC.getProfessionInfo(eProfession).allowsMoveIntoPeak())
+		|| kUnitInfo.allowsMoveIntoPeak())
+	{
+		impassables.iFlags.set(PEAK_BIT); // Peak bit
+		impassables.iCount++;
+	}
+
+	// Handle large rivers separately
+	bool canCrossRivers = !kUnitInfo.getTerrainImpassable(TERRAIN_LARGE_RIVERS);
+	if (eProfession != NO_PROFESSION &&
+		GC.getProfessionInfo(eProfession).isCanCrossLargeRivers())
+	{
+		canCrossRivers = true; // Profession overrides unit impassability
+	}
+
+	// Set the river bit if the unit cannot cross rivers (after considering profession)
+	if (!canCrossRivers)
+	{
+		impassables.iFlags.set(RIVER_BIT); // River bit
+		impassables.iCount++;
+	}
+
+	return impassables;
 }
 
 // just a stub for now

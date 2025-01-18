@@ -18637,15 +18637,15 @@ bool CvUnitAI::AI_stackVsStack(int iSearchRange, int iAttackThreshold, int iRisk
 	return false;
 } // K-Mod end
 
-// K-Mod. One group function to rule them all.
+
 bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitAI,
-	bool bStackOfDoom, int iFlags, int iMaxPath, bool bMergeGroups, bool bSafeOnly,
+	bool bStackOfDoom, int eFlags, int iMaxPath, bool bMergeGroups, bool bSafeOnly,
 	bool bIgnoreFaster, bool bIgnoreOwnUnitType, bool bBiggerOnly, int iMinUnitAI,
 	bool bWithCargoOnly, bool bIgnoreBusyTransports)
 {
 	PROFILE_FUNC();
 
-	iFlags &= ~MOVE_DECLARE_WAR; // Don't consider war when we just want to group
+	eFlags &= ~MOVE_DECLARE_WAR; // Don't consider war when we just want to group
 
 	if (isCargo())
 		return false;
@@ -18653,31 +18653,16 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 	if (!AI_canGroupWithAIType(eUnitAI))
 		return false;
 
-	if (getDomainType() == DOMAIN_LAND && /*!canMoveAllTerrain() &&*/
-		area()->getNumAIUnits(getOwner(), eUnitAI) <= 0)
+	if (getDomainType() == DOMAIN_LAND && area()->getNumAIUnits(getOwner(), eUnitAI) <= 0)
 	{
 		return false;
 	}
-	CvPlayerAI const& kOwner = GET_PLAYER(getOwner());
-	/*	<advc.057> Except for assault groups, the head unit should have the
-		most restrictive impassable types. */
-	int const iOurGroupFirstVal = AI_groupFirstValInternal();
-	
-	//uint uiOurMaxImpassables = kOwner.AI_unitImpassables(getUnitType());
-	uint uiOurMaxImpassables = kOwner.AI_unitImpassables(getUnitType()).iCount;
 
-	if (AI_getUnitAIType() == UNITAI_ASSAULT_SEA)
-	{
-		for (CLLNode<IDInfo> const* pUnitNode = // We're the head; already done.
-			getGroup()->nextUnitNode(getGroup()->headUnitNode()); // </advc.057>
-			pUnitNode != NULL; pUnitNode = getGroup()->nextUnitNode(pUnitNode))
-		{
-			CvUnit const& kImpassUnit = *::getUnit(pUnitNode->m_data);
-			uiOurMaxImpassables = std::max(uiOurMaxImpassables,
-				kOwner.AI_unitImpassables(kImpassUnit.getUnitType()).iCount);
-		}
-	}
-	
+	CvPlayerAI const& kOwner = GET_PLAYER(getOwner());
+
+	// Get the impassables for our unit
+	const UnitImpassables ourImpassables = kOwner.AI_unitImpassables(*this);
+
 	CvUnit* pBestUnit = NULL;
 	int iBestValue = MAX_INT;
 	FOR_EACH_GROUPAI_VAR(pLoopGroup, kOwner)
@@ -18685,21 +18670,25 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 		CvUnitAI* pLoopUnit = pLoopGroup->AI_getHeadUnit();
 		if (pLoopUnit == NULL)
 			continue;
+
 		CvPlot const& kLoopPlot = pLoopUnit->getPlot();
 		if (!AI_plotValid(&kLoopPlot))
 			continue;
-		if (iMaxPath == 0 && !atPlot(&kLoopPlot)) // advc.opt (tbd.): Should arguably treat iMaxPath==0 upfront
+
+		if (iMaxPath == 0 && !at(kLoopPlot))
 			continue;
-		/*if (getDomainType() != DOMAIN_LAND || canMoveAllTerrain() ||
-			kPlot.isArea(getArea())) {*/ // advc.opt: Redundant after AI_plotValid
+
 		if (!AI_allowGroup(pLoopUnit, eUnitAI))
 			continue;
 
-		// K-Mod. I've restructed this wad of conditions so that it is easier for me to read. // advc: Made a few more edits - parts of it were still off-screen ...
-		/*	((removed ((heaps) of parentheses) (etc)).)
-			also, I've rearranged the order to be slightly faster for failed checks.
-			Note: the iMaxGroups & OwnUnitAI check is apparently off-by-one.
-			This is for backwards compatibility for the original code. */
+		// Get the impassables for the loop unit
+		const UnitImpassables theirImpassables = kOwner.AI_unitImpassables(*pLoopUnit);
+
+		// Impassables must be an exact match
+		if (ourImpassables != theirImpassables)
+			continue;
+
+		// All other conditions remain as originally implemented
 		if ((!bSafeOnly || !isEnemy(kLoopPlot))
 			&&
 			(!bWithCargoOnly || pLoopUnit->getGroup()->hasCargo())
@@ -18730,73 +18719,16 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 			(pLoopGroup->AI_getMissionAIType() != MISSIONAI_GUARD_CITY ||
 				!pLoopGroup->getPlot().isCity() ||
 				pLoopGroup->getPlot().plotCount(PUF_isMissionAIType, MISSIONAI_GUARD_CITY, -1, getOwner()) >
-				pLoopGroup->getPlot().getPlotCity()->AI().AI_minDefenders())
+				pLoopGroup->getPlot().AI_getPlotCity()->AI_minDefenders())
 			)
 		{
-			FAssert(!kLoopPlot.isVisibleEnemyUnit(this));
-			#ifdef FASSERT_ENABLE
-			if (kLoopPlot.isVisibleEnemyUnit(this))
-			{
-				if (this != NULL)
-				{ 
-					CvUnit& kDefender = *kLoopPlot.getVisibleEnemyDefender(this->getOwnerINLINE());
-
-					logBBAI("	WARNING CvUnitAI::AI_omniGroup Unit %d %S %S on Plot [%d, %d], visible enemy: %d %S kLoopPlot [%d, %d]",
-						getID(), getName().GetCString(), GET_PLAYER(pLoopUnit->getOwnerINLINE()).getName(),
-						getX_INLINE(), getY_INLINE(), kDefender.getID(), kDefender.getName().GetCString(), 
-						pLoopUnit->getX_INLINE(), pLoopUnit->getY_INLINE());
-				}
-				else
-				{
-					FErrorMsg("this is NULL!");
-				}
-			}
-			#endif
-			//if (iOurMaxImpassableCount > 0 || AI_getUnitAIType() == UNITAI_ASSAULT_SEA) { ...
-			{	// <advc.057> Check their impassable count even if ours is 0
-				CLLNode<IDInfo> const* pUnitNode = pLoopGroup->headUnitNode();
-				CvUnitAI const& kHeadUnit = (::getUnit(pUnitNode->m_data))->AI();
-				uint uiTheirMaxImpassables = kOwner.AI_unitImpassables(
-					kHeadUnit.getUnitType());
-				/*	Assault groups aren't always formed through this function;
-					can't rely on head having the most impassable types. */
-				// WTP: Also checking offensive units since rangers/native mercenaries are able to traverse peaks
-				// and should thus not lead groups that include units with impassables
-				if (kHeadUnit.AI_getUnitAIType() == UNITAI_ASSAULT_SEA || kHeadUnit.AI_getUnitAIType() == UNITAI_ATTACK_CITY || 
-					kHeadUnit.AI_getUnitAIType() == UNITAI_OFFENSIVE || kHeadUnit.AI_getUnitAIType() == UNITAI_COUNTER)
-				{
-					for (pUnitNode = getGroup()->nextUnitNode(pUnitNode);
-						pUnitNode != NULL; pUnitNode = getGroup()->nextUnitNode(pUnitNode))
-					{
-						CvUnit const& kUnit = *::getUnit(pUnitNode->m_data);
-						uiTheirMaxImpassables = std::max(uiTheirMaxImpassables,
-							kOwner.AI_unitImpassables(kUnit.getUnitType()));
-					}
-				}
-				int const iTheirGroupFirstValue = kHeadUnit.AI_groupFirstValInternal();
-				/*	Disallow the group if we can't rule out that the impassable count
-					of the head will decrease. (Should really check for set inclusion,
-					i.e. the set of impassables of the leader needs to include all
-					impassables of the group.) */
-				if ((iTheirGroupFirstValue >= iOurGroupFirstVal &&
-					uiTheirMaxImpassables < uiOurMaxImpassables) ||
-					(iTheirGroupFirstValue <= iOurGroupFirstVal &&
-						uiTheirMaxImpassables > uiOurMaxImpassables))
-				{
-					continue;
-				}
-			} // </advc.057>
 			int iPathTurns = 0;
-			if (atPlot(&kLoopPlot) ||
-				generatePath(&kLoopPlot, iFlags, true, &iPathTurns, iMaxPath))
+			if (at(kLoopPlot) ||
+				generatePath(&kLoopPlot, eFlags, true, &iPathTurns, iMaxPath))
 			{
 				int iCost = 100 * (iPathTurns * iPathTurns + 1);
 				iCost *= 4 + pLoopGroup->getCargo();
 				iCost /= 2 + pLoopGroup->getNumUnits();
-				/*int iSizeMod = 10*std::max(getGroup()->getNumUnits(), pLoopGroup->getNumUnits());
-				iSizeMod /= std::min(getGroup()->getNumUnits(), pLoopGroup->getNumUnits());
-				iCost *= iSizeMod * iSizeMod;
-				iCost /= 1000; */
 				if (iCost < iBestValue)
 				{
 					iBestValue = iCost;
@@ -18805,18 +18737,18 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 			}
 		}
 	}
+
 	if (pBestUnit == NULL)
-		return false; // advc
+		return false;
 
 	if (!atPlot(pBestUnit->plot()))
 	{
 		if (!bMergeGroups && getGroup()->getNumUnits() > 1)
-		{	/*	might as well leave our current group behind
-				since they won't be merging anyway. */
+		{
 			joinGroup(NULL);
 		}
 		getGroup()->pushMission(MISSION_MOVE_TO_UNIT, pBestUnit->getOwner(),
-			pBestUnit->getID(), iFlags, false, false, MISSIONAI_GROUP, NULL, pBestUnit);
+			pBestUnit->getID(), eFlags, false, false, MISSIONAI_GROUP, NULL, pBestUnit);
 	}
 	if (atPlot(pBestUnit->plot()))
 	{
@@ -18825,7 +18757,7 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 		else joinGroup(pBestUnit->getGroup());
 	}
 	return true;
-} // K-Mod end
+}
 
 // This function has been heavily edited by K-Mod and by BBAI
 void CvUnitAI::AI_attackCityMove()

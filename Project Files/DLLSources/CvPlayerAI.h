@@ -11,16 +11,37 @@
 #include "AIStrategies.h" // advc.enum
 #include "CvEnums.h"
 
-class CvEventTriggerInfo;
+#include <bitset>
+
+#define UNIT_IMPASSABLES_BITS 80 // Define the total number of bits
 
 struct UnitImpassables
 {
-	unsigned int iCount;
-	unsigned long long iFlags;
+	int iCount;                               // Count of impassable terrains/features
+	std::bitset<UNIT_IMPASSABLES_BITS> iFlags; // Bitset for impassable types
+
+	UnitImpassables()
+		: iCount(0), iFlags(0) // Initialize count and bitset
+	{
+	}
+
+	// Equality operator
+	bool operator==(const UnitImpassables& other) const
+	{
+		return (iCount == other.iCount && iFlags == other.iFlags);
+	}
+
+	// Inequality operator
+	bool operator!=(const UnitImpassables& other) const
+	{
+		return !(*this == other);
+	}
 };
 
+class CvEventTriggerInfo;
+
 class CvPlayerAI : public CvPlayerCivEffect
-{
+{	
 
 public:
 
@@ -601,8 +622,9 @@ public:
 	int AI_cityTargetStrengthByPath(CvCity const* pCity, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const;
 	// K-Mod end
 
-	// WTP: impassables are not treated on a per domain basis
-	UnitImpassables AI_unitImpassables(UnitTypes eUnit) const;
+	UnitImpassables AI_unitImpassables(const CvUnit& pUnit) const;
+	
+#if 0
 	// advc.057:
 	bool AI_isAnyImpassable(UnitTypes eUnit) const
 	{
@@ -613,6 +635,7 @@ public:
 
 		return (ui.iCount != 0u);
 	}
+#endif
 
 	bool AI_isDoStrategy(AIStrategy eStrategy, /* advc.007: */ bool bDebug = false) const;
 	bool AI_isLandWar(CvArea const& kArea) const; // K-Mod
