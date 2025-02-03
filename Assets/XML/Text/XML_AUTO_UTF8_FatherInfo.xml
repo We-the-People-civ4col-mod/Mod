@@ -18,7 +18,7 @@
 			<Plural>0</Plural>
 		</German>
 		<Italian>
-			<Text>Adam Smith</Text>
+			<Text>Adamo Smith</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Italian>
@@ -98,7 +98,7 @@
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Alexander von Humboldt</Text>
+			<Text>Alexandre de Humboldt</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
@@ -138,27 +138,27 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_ALEXIS_DE_TOCQUEVILLE</Tag>
 		<English>
-			<Text>Comte de Tocqueville</Text>
+			<Text>Alexis de Tocqueville</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</English>
 		<French>
-			<Text>Comte de Tocqueville</Text>
+			<Text>Alexis de Tocqueville</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</French>
 		<German>
-			<Text>Comte de Tocqueville</Text>
+			<Text>Alexis de Tocqueville</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</German>
 		<Italian>
-			<Text>Comte de Tocqueville</Text>
+			<Text>Alexis de Tocqueville</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Comte de Tocqueville</Text>
+			<Text>Alexis de Tocqueville</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Spanish>
@@ -196,12 +196,12 @@
 			<Plural>0</Plural>
 		</German>
 		<Italian>
-			<Text>Bartolomé de Las Casas</Text>
+			<Text>Bartolomeo de Las Casas</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Fray Bartolomé de Las Casas</Text>
+			<Text>Bartolomé de Las Casas</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Spanish>
@@ -213,7 +213,7 @@
 		<French>[H1]Bartolomé de Las Casas[\H1][NEWLINE][BOLD]Dates : [\BOLD]1484 - 1566[NEWLINE][NEWLINE][BOLD]Biographie :[\BOLD][PARAGRAPH:1:1]Bartolomé de Las Casas commence sa carrière au Nouveau Monde comme conquistador au début du XVIe siècle. Là, il est témoin des atrocités commises par les gouverneurs espagnols contre les citoyens indigènes, avant de rentrer en Espagne pour achever ses études religieuses. Il rejoint l'ordre dominicain et regagne le Nouveau Monde, en demandant la fin de l'encomienda : un système d'esclavage complexe entraînant la fin des sociétés indigènes. Ses propos virulents finissent par attirer l'attention des puissants espagnols, qui organisent un débat présidé par le roi Charles V d'Espagne. Les arguments que Las Casas avance avec véhémence lui permettent de remporter le débat, mais pas de sauver la population indigène déjà décimée.</French>
 		<German>[H1]Bartolomé de Las Casas[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1484 - 1566[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]Bartolomé de Las Casas begann seine Karriere in der Neuen Welt, die er zu Anfang des 16. Jahrhunderts besuchte, als Konquistador. Dort wurde er Zeuge der Gräueltaten, welche die spanischen Gouverneure an der einheimischen Bevölkerung verübten. Er kehrte zurück nach Spanien und schloss dort seine religiösen Studien ab. Er trat dem Dominikanerorden bei und reiste erneut in die Neue Welt, wo er das Ende der Encomienda forderte, eines komplexen Systems der Sklaverei, das die einheimische Gesellschaft allmählich auslöschte. Er schlug solchen Krach, dass die Mächtigen in Spanien auf ihn aufmerksam wurden und unter Vorsitz des spanischen Königs Karl V. eine Debatte organisierten. Mit leidenschaftlich vorgetragenen Argumenten gewann er die Debatte, konnte aber die bereits stark dezimierte eingeborene Bevölkerung dennoch nicht retten.</German>
 		<Italian>[H1]Bartolomé de Las Casas[\H1][NEWLINE][BOLD]Vita : [\BOLD]1484 - 1566[NEWLINE][NEWLINE][BOLD]Informazioni :[\BOLD][PARAGRAPH:1:1]Bartolomé de Las Casas cominciò la propria carriera nel Nuovo Mondo come conquistador, arrivandovi all'inizio del XVI secolo. Nel Nuovo Mondo assistette alle atrocità perpetrate dai governatori spagnoli ai danni dei nativi, prima di tornare in Spagna per completare gli studi religiosi. Entrò nell'ordine dei domenicani e tornò nel Nuovo Mondo, domandando che venisse posta fine all'encomienda: un complesso sistema di schiavitù che stava completamente eliminando la società dei nativi. Le sue prediche attirarono l'attenzione dei potenti di Spagna, che organizzarono un dibattito presieduto dal re spagnolo, Carlo V. Le sue fervide argomentazioni gli fecero vincere il confronto, anche se non furono in grado di salvare la popolazione nativa, già decimata.</Italian>
-		<Spanish>[H1]Fray Bartolomé de Las Casas[\H1][NEWLINE][BOLD]Vivió : [\BOLD]1484 - 1566[NEWLINE][NEWLINE][BOLD]Biografía :[\BOLD][PARAGRAPH:1:1]Bartolomé de Las Casas empezó su carrera en el Nuevo Mundo como conquistador, visitándolo a inicios del s. XVI. Allí presenció las atrocidades cometidas por los gobernadores españoles con los ciudadanos indígenas, antes de volver a España a completar su formación religiosa. Entró en la Orden de los Dominicos y regresó al Nuevo Mundo para exigir que se pusiera fin al sistema de las encomiendas (un intrincado sistema esclavista que estaba acabando con la sociedad indígena). Sus arengas llamaron la atención de los poderosos en España, que organizarían un debate que presidiría el mismísimo rey español, Carlos V. Sus apasionados argumentos le dieron la victoria en éste, pero con ello no consiguió salvar a una población nativa que ya estaba diezmada.</Spanish>
+		<Spanish>[H1]Bartolomé de Las Casas[\H1][NEWLINE][BOLD]Vivió : [\BOLD]1484 - 1566[NEWLINE][NEWLINE][BOLD]Biografía :[\BOLD][PARAGRAPH:1:1]Bartolomé de Las Casas empezó su carrera en el Nuevo Mundo como conquistador, visitándolo a inicios del s. XVI. Allí presenció las atrocidades cometidas por los gobernadores españoles con los ciudadanos indígenas, antes de volver a España a completar su formación religiosa. Entró en la Orden de los Dominicos y regresó al Nuevo Mundo para exigir que se pusiera fin al sistema de las encomiendas (un intrincado sistema esclavista que estaba acabando con la sociedad indígena). Sus arengas llamaron la atención de los poderosos en España, que organizarían un debate que presidiría el mismísimo rey español, Carlos V. Sus apasionados argumentos le dieron la victoria en éste, pero con ello no consiguió salvar a una población nativa que ya estaba diezmada.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_BARTOLOME_DE_LAS_CASAS_STRATEGY</Tag>
