@@ -921,11 +921,11 @@ namespace
 			const int turns;
 		};
 
-		typedef stdext::hash_map<size_t, Result> PathCacheHashMap;
+		typedef stdext::hash_map<unsigned long long, Result> PathCacheHashMap;
 
-		Result findPath(CvSelectionGroup& kGroup, CvPlot& kSourcePlot, CvPlot& kDestinationPlot, int moveFlags)
+		Result findPath(CvSelectionGroup& kGroup, CvPlot& kSourcePlot, CvPlot& kDestinationPlot, int moveFlags) const
 		{
-			const size_t key = generateUniqueKey(kSourcePlot, kDestinationPlot);
+			const unsigned long long key = generateUniqueKey(kSourcePlot, kDestinationPlot, moveFlags);
 			const PathCacheHashMap::const_iterator it = pathCache.find(key);
 
 			if (it != pathCache.end())
@@ -941,13 +941,25 @@ namespace
 				return result;
 			}
 		}
+		
 	private:
-		size_t generateUniqueKey(const CvPlot& kPlot1, const CvPlot& kPlot2) const {
-			const int W = 256;
-			return kPlot1.getX() + (kPlot1.getY() * W) + (kPlot2.getX() * W * W) + (kPlot2.getY() * W * W * W);
+		unsigned long long generateUniqueKey(const CvPlot& kPlot1, const CvPlot& kPlot2, int moveFlags) const
+		{
+			unsigned long long key = 0;
+
+			// Encode source (x, y) and destination (x, y). This assumes that map width and height is less than 256
+			key |= static_cast<unsigned long long>(kPlot1.getX()) & 0xFF;
+			key |= (static_cast<unsigned long long>(kPlot1.getY()) & 0xFF) << 8;
+			key |= (static_cast<unsigned long long>(kPlot2.getX()) & 0xFF) << 16;
+			key |= (static_cast<unsigned long long>(kPlot2.getY()) & 0xFF) << 24;
+
+			// MoveFlags (store in upper 32 bits)
+			key |= (static_cast<unsigned long long>(moveFlags) & 0xFFFFFFFF) << 32;
+
+			return key;
 		}
 
-		PathCacheHashMap pathCache;
+		mutable PathCacheHashMap pathCache; // Just a cache, thus mutable
 	};
 }
 
@@ -1151,8 +1163,8 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				int yieldsToUnload = aiYieldsLoaded[eYield];
 				if(pDestinationCity != NULL && pDestinationCity->getMaxImportAmount(eYield) > 0)
 				{
-					const PathCache::Result res = pathCache.findPath(*this, *plot(), *pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
-					yieldsToUnload = std::min(yieldsToUnload, estimateYieldsToLoad(pDestinationCity, 9999, eYield, res.turns, 0));
+					const PathCache::Result route = pathCache.findPath(*this, *plot(), *pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
+					yieldsToUnload = std::min(yieldsToUnload, estimateYieldsToLoad(pDestinationCity, 9999, eYield, route.turns, 0));
 				}
 				//int iRouteValue = kOwner.AI_transferYieldValue(routes[i]->getDestinationCity(), routes[i]->getYield(), aiYieldsLoaded[routes[i]->getYield()]);
 				int iRouteValue = kOwner.AI_transferYieldValue(routes[i]->getDestinationCity(), routes[i]->getYield(), yieldsToUnload);
@@ -1279,8 +1291,8 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 
 				CvPlot* pDestinationCityPlot = pCity->plot();
 
-				const PathCache::Result res = pathCache.findPath(*this, *plot(), *pDestinationCityPlot, (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
-				if (res.exists)
+				const PathCache::Result route = pathCache.findPath(*this, *plot(), *pDestinationCityPlot, (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
+				if (route.exists)
 				// TAC - Trade Routes Advisor - koma13 - END
 				{
 					iValue /= 1 + kOwner.AI_plotTargetMissionAIs(pDestinationCityPlot, MISSIONAI_TRANSPORT, this, 0);
@@ -1304,14 +1316,14 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 							// Erik: Double the value of the route. Even if we encourage transportion between areas we don't want to sail around the world!
 							// so we make that less attractive
 							iValue *= CoastalTransportDifferentAreaMultiplier;
-							iValue /=  std::max(1, res.turns - (CoastalTransportRangeThreshold * CoastalTransportDifferentAreaMultiplier));
+							iValue /=  std::max(1, route.turns - (CoastalTransportRangeThreshold * CoastalTransportDifferentAreaMultiplier));
 						}
 						else
 						{
 							if (pPlotArea->getNumAIUnits(getOwnerINLINE(), UNITAI_WAGON) > 0)
 							{
 								// Erik: Longer routes are less attractive for coastal transports
-								iValue /= std::max(1, res.turns - CoastalTransportRangeThreshold);
+								iValue /= std::max(1, route.turns - CoastalTransportRangeThreshold);
 							}
 						}
 					}
@@ -1369,10 +1381,10 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 					if (bDestinationHasImportLimit)
 					{
 						iOriginalAmount = iAmount = std::min(GC.getGameINLINE().getCargoYieldCapacity(), iAmount);
-						const PathCache::Result res = pathCache.findPath(*this, *pSourceCity->plot(), *pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
-						FAssertMsg(res.exists, "Path must be valid!");
+						const PathCache::Result route = pathCache.findPath(*this, *pSourceCity->plot(), *pDestinationCity->plot(), (bIgnoreDanger ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY));
+						FAssertMsg(route.exists, "Path must be valid!");
 						// Erik: If the destination can be reached in the same turn, subtract a turn
-						const int turnsToReach = std::max(0, res.turns - 1);
+						const int turnsToReach = std::max(0, route.turns - 1);
 						iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsToReach, aiYieldsLoaded[eYield]);
 					}
 
