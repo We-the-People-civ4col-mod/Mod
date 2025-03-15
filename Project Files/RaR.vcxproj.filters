@@ -517,6 +517,9 @@
     <ClCompile Include="DLLSources\StaticVariables.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
+    <ClCompile Include="DLLSources\GUI\GUI_python_interface.cpp">
+      <Filter>Classes\GUI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DLLSources\CvArea.h">
@@ -996,6 +999,9 @@
     <ClInclude Include="DLLSources\Info\InfoHelpers.h">
       <Filter>Classes\Info\Header</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\GUI\GUI_python_interface.h">
+      <Filter>Classes\GUI</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">
@@ -1128,6 +1134,9 @@
     </Filter>
     <Filter Include="Classes\Info\Header">
       <UniqueIdentifier>{2fc681f6-d297-43c9-9bc0-b8c82b2c1540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\GUI">
+      <UniqueIdentifier>{00a1c83c-593a-4204-94c3-146366b00dda}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
