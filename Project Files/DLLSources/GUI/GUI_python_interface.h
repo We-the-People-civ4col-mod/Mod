@@ -18,9 +18,9 @@ class GUI_python_interface
 	public:
 		GUI_python_interface(std::string ScreenName, int iScreenEnum);
 
-		void addBonusGraphicGFC(std::string szName, BonusTypes eBonus, int iX, int iY, int iWidth, int iHeight, enum WidgetTypes eWidgetType, int iData1, int iData2, float fxRotation, float fzRotation, float fScale, bool bShowBackground);
+		void addBonusGraphicGFC(std::string szName, enum BonusTypes eBonus, int iX, int iY, int iWidth, int iHeight, enum WidgetTypes eWidgetType, int iData1, int iData2, float fxRotation, float fzRotation, float fScale, bool bShowBackground);
 
-		void addBuildingGraphicGFC(std::string szName, BuildingTypes eBuilding, int iX, int iY, int iWidth, int iHeight, enum WidgetTypes eWidgetType, int iData1, int iData2, float fxRotation, float fzRotation, float fScale, bool bShowBackground);
+		void addBuildingGraphicGFC(std::string szName, enum BuildingTypes eBuilding, int iX, int iY, int iWidth, int iHeight, enum WidgetTypes eWidgetType, int iData1, int iData2, float fxRotation, float fzRotation, float fScale, bool bShowBackground);
 
 		void addCheckBoxGFC(std::string szName, std::string szTexture, std::string szHiliteTexture, int iX, int iY, int iWidth, int iHeight, enum WidgetTypes eWidgetType, int iData1, int iData2, enum ButtonStyles eStyle);
 
@@ -44,13 +44,13 @@ class GUI_python_interface
 
 		void addFlagWidgetGFC(std::string szName, int iX, int iY, int iWidth, int iHeight, int iOwner, enum WidgetTypes eWidgetType, int iData1, int iData2);
 
-		void addImprovementGraphicGFC(std::string szName, ImprovementTypes eImprovement, int iX, int iY, int iWidth, int iHeight, enum WidgetTypes eWidgetType, int iData1, int iData2, float fxRotation, float fzRotation, float fScale, bool bShowBackground);
+		void addImprovementGraphicGFC(std::string szName, enum ImprovementTypes eImprovement, int iX, int iY, int iWidth, int iHeight, enum WidgetTypes eWidgetType, int iData1, int iData2, float fxRotation, float fzRotation, float fScale, bool bShowBackground);
 
 		void addItemToTableGFC(std::string szAttachTo, std::wstring szText, enum WidgetTypes eWidgetType, int iData1, int iData2);
 
 		void addLeaderheadGFC(std::string szName, int eWho, int eInitAttitude, int iX, int iY, int iWidth, int iHeight, enum WidgetTypes eWidget, int iData1, int iData2);
 
-		void addLineGFC(std::string szDrawCtrlName, std::string szName, int iStartX, int iStartY, int iEndX, int iEndY, ColorTypes eColor);
+		void addLineGFC(std::string szDrawCtrlName, std::string szName, int iStartX, int iStartY, int iEndX, int iEndY, enum ColorTypes eColor);
 
 		void addListBoxGFC(std::string szName, std::wstring helpText, int iX, int iY, int iWidth, int iHeight, enum TableStyles eStyle);
 
@@ -84,7 +84,7 @@ class GUI_python_interface
 
 		void addTableHeaderGFC(std::string szAttachTo, std::wstring szText, int iCol, enum WidgetTypes eWidgetType, int iData1, int iData2);
 
-		void addUnitGraphicGFC(std::string szName, UnitTypes eUnit, ProfessionTypes eProfession, int iX, int iY, int iWidth, int iHeight, enum WidgetTypes eWidgetType, int iData1, int iData2, float fxRotation, float fzRotation, float fScale, bool bShowBackground); 
+		void addUnitGraphicGFC(std::string szName, enum UnitTypes eUnit, enum ProfessionTypes eProfession, int iX, int iY, int iWidth, int iHeight, enum WidgetTypes eWidgetType, int iData1, int iData2, float fxRotation, float fzRotation, float fScale, bool bShowBackground); 
 
 		void appendListBoxString(std::string szAttachTo, std::wstring item, enum WidgetTypes eType, int iData1, int iData2, int iJustify);
 

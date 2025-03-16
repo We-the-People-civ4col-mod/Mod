@@ -103,6 +103,7 @@
     <ClCompile Include="DLLSources\CyXMLObject.cpp" />
     <ClCompile Include="DLLSources\EXE_interface.cpp" />
     <ClCompile Include="DLLSources\GUI\GUI_python_interface.cpp" />
+    <ClCompile Include="DLLSources\GUI\GUI_widgets.cpp" />
     <ClCompile Include="DLLSources\Info\EventTriggerInfo.cpp" />
     <ClCompile Include="DLLSources\KmodPathFinder.cpp" />
     <ClCompile Include="DLLSources\OpenURL.cpp" />
@@ -273,6 +274,7 @@
     <ClInclude Include="DLLSources\EnumMapSpecialization.h" />
     <ClInclude Include="DLLSources\EnumMapSpecializationClass.h" />
     <ClInclude Include="DLLSources\GUI\GUI_python_interface.h" />
+    <ClInclude Include="DLLSources\GUI\GUI_widgets.h" />
     <ClInclude Include="DLLSources\HardcodedEnumSetup.h" />
     <ClInclude Include="DLLSources\Info\EventTriggerInfo.h" />
     <ClInclude Include="DLLSources\Info\InfoHelpers.h" />
