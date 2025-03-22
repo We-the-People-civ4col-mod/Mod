@@ -102,6 +102,7 @@
     <ClCompile Include="DLLSources\CyXMLEditorInterface1.cpp" />
     <ClCompile Include="DLLSources\CyXMLObject.cpp" />
     <ClCompile Include="DLLSources\EXE_interface.cpp" />
+    <ClCompile Include="DLLSources\GUI\GUI_input.cpp" />
     <ClCompile Include="DLLSources\GUI\GUI_python_interface.cpp" />
     <ClCompile Include="DLLSources\GUI\GUI_widgets.cpp" />
     <ClCompile Include="DLLSources\Info\EventTriggerInfo.cpp" />
@@ -273,6 +274,7 @@
     <ClInclude Include="DLLSources\EnumMapSpecializationInt.h" />
     <ClInclude Include="DLLSources\EnumMapSpecialization.h" />
     <ClInclude Include="DLLSources\EnumMapSpecializationClass.h" />
+    <ClInclude Include="DLLSources\GUI\GUI_input.h" />
     <ClInclude Include="DLLSources\GUI\GUI_python_interface.h" />
     <ClInclude Include="DLLSources\GUI\GUI_widgets.h" />
     <ClInclude Include="DLLSources\HardcodedEnumSetup.h" />

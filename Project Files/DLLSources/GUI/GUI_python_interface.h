@@ -2,7 +2,6 @@
 
 class NiColorA;
 class CyReplayInfo;
-class CyPlot;
 
 namespace boost
 {
@@ -64,7 +63,7 @@ class GUI_python_interface
 
 		void addPanel(std::string szName, std::wstring title, std::wstring helpText, bool bVerticalLayout, bool bScrollable, int iX, int iY, int iWidth, int iHeight, enum PanelStyles eStyle, enum WidgetTypes eWidgetType, int iData1, int iData2);
 
-		void addPlotGraphicGFC(std::string szName, int iX, int iY, int iWidth, int iHeight, CyPlot kPlot, int iDistance, bool renderUnits, enum WidgetTypes eWidgetType, int iData1, int iData2);
+		void addPlotGraphicGFC(std::string szName, int iX, int iY, int iWidth, int iHeight, const class CvPlot& kPlot, int iDistance, bool renderUnits, enum WidgetTypes eWidgetType, int iData1, int iData2);
 
 		void addPullDownString(std::string szName, std::wstring szString, int iType, int iData, bool bSelected);
 
@@ -354,6 +353,9 @@ class GUI_python_interface
 		void setState(std::string szName, bool /*FxCheckBox::CheckBoxState*/ eState);
  
 		void setStyle(std::string szName, std::string szStyle);
+		void setStyle(std::string szName, enum ButtonStyles eStyle);
+		void setStyle(std::string szName, enum PanelStyles eStyle);
+		void setStyle(std::string szName, enum TableStyles eStyle);
      
 		void setTableColumnHeader(std::string szName, int iColumn, std::wstring header, int iWidth);
    

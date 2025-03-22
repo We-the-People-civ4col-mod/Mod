@@ -71,7 +71,8 @@ def addPanel(argsList):
 	return CyGInterfaceScreen( argsList[0], argsList[1] ).addPanel(argsList[2], argsList[3], argsList[4], argsList[5], argsList[6], argsList[7], argsList[8], argsList[9], argsList[10], argsList[11], argsList[12], argsList[13], argsList[14])
 
 def addPlotGraphicGFC(argsList):
-	return CyGInterfaceScreen( argsList[0], argsList[1] ).addPlotGraphicGFC(argsList[2], argsList[3], argsList[4], argsList[5], argsList[6], argsList[7], argsList[8], argsList[9], argsList[10], argsList[11], argsList[12])
+	plot = gc.getMap.plotByIndex(argsList[7])
+	return CyGInterfaceScreen( argsList[0], argsList[1] ).addPlotGraphicGFC(argsList[2], argsList[3], argsList[4], argsList[5], argsList[6], plot, argsList[8], argsList[9], argsList[10], argsList[11], argsList[12])
 
 def addPullDownString(argsList):
 	return CyGInterfaceScreen( argsList[0], argsList[1] ).addPullDownString(argsList[2], argsList[3], argsList[4], argsList[5], argsList[6])

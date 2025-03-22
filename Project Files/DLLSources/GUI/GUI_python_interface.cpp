@@ -495,7 +495,7 @@ void GUI_python_interface::addPanel(std::string szName, std::wstring title, std:
 }
 
 
-void GUI_python_interface::addPlotGraphicGFC(std::string szName, int iX, int iY, int iWidth, int iHeight, CyPlot kPlot, int iDistance, bool renderUnits, enum WidgetTypes eWidgetType, int iData1, int iData2)
+void GUI_python_interface::addPlotGraphicGFC(std::string szName, int iX, int iY, int iWidth, int iHeight, const CvPlot& kPlot, int iDistance, bool renderUnits, enum WidgetTypes eWidgetType, int iData1, int iData2)
 {
 	CyArgsList argsList;
 
@@ -506,7 +506,7 @@ void GUI_python_interface::addPlotGraphicGFC(std::string szName, int iX, int iY,
 	argsList.add(iY);
 	argsList.add(iWidth);
 	argsList.add(iHeight);
-	argsList.add(gDLL->getPythonIFace()->makePythonObject(&kPlot));
+	argsList.add(kPlot.getIndex());
 	argsList.add(iDistance);
 	argsList.add(renderUnits);
 	argsList.add(eWidgetType);
@@ -2537,6 +2537,297 @@ void GUI_python_interface::setStyle(std::string szName, std::string szStyle)
 	argsList.add(szStyle.c_str());
 
 	gDLL->getPythonIFace()->callFunction(PY_MODULE, "setStyle", argsList.makeFunctionArgs());
+}
+
+void GUI_python_interface::setStyle(std::string szName, ButtonStyles eStyle)
+{
+	std::string szStyle;
+
+	switch (eStyle)
+	{
+	case BUTTON_STYLE_STANDARD:
+		szStyle = "BUTTON_STYLE_STANDARD";
+		break;
+	case BUTTON_STYLE_ETCHED:
+		szStyle = "BUTTON_STYLE_ETCHED";
+		break;
+	case BUTTON_STYLE_FLAT:
+		szStyle = "BUTTON_STYLE_FLAT";
+		break;
+	case BUTTON_STYLE_IMAGE:
+		szStyle = "BUTTON_STYLE_IMAGE";
+		break;
+	case BUTTON_STYLE_LABEL:
+		szStyle = "BUTTON_STYLE_LABEL";
+		break;
+	case BUTTON_STYLE_LINK:
+		szStyle = "BUTTON_STYLE_LINK";
+		break;
+	case BUTTON_STYLE_SQUARE:
+		szStyle = "BUTTON_STYLE_SQUARE";
+		break;
+	case BUTTON_STYLE_TOOL:
+		szStyle = "BUTTON_STYLE_TOOL";
+		break;
+	case BUTTON_STYLE_DEFAULT:
+		szStyle = "BUTTON_STYLE_DEFAULT";
+		break;
+	case BUTTON_STYLE_CIRCLE:
+		szStyle = "BUTTON_STYLE_CIRCLE";
+		break;
+	case BUTTON_STYLE_CITY_B01:
+		szStyle = "BUTTON_STYLE_CITY_B01";
+		break;
+	case BUTTON_STYLE_CITY_B02TL:
+		szStyle = "BUTTON_STYLE_CITY_B02TL";
+		break;
+	case BUTTON_STYLE_CITY_B02TR:
+		szStyle = "BUTTON_STYLE_CITY_B02TR";
+		break;
+	case BUTTON_STYLE_CITY_B02BL:
+		szStyle = "BUTTON_STYLE_CITY_B02BL";
+		break;
+	case BUTTON_STYLE_CITY_B02BR:
+		szStyle = "BUTTON_STYLE_CITY_B02BR";
+		break;
+	case BUTTON_STYLE_CITY_B03TL:
+		szStyle = "BUTTON_STYLE_CITY_B03TL";
+		break;
+	case BUTTON_STYLE_CITY_B03TC:
+		szStyle = "BUTTON_STYLE_CITY_B03TC";
+		break;
+	case BUTTON_STYLE_CITY_B03TR:
+		szStyle = "BUTTON_STYLE_CITY_B03TR";
+		break;
+	case BUTTON_STYLE_CITY_B03BL:
+		szStyle = "BUTTON_STYLE_CITY_B03BL";
+		break;
+	case BUTTON_STYLE_CITY_B03BC:
+		szStyle = "BUTTON_STYLE_CITY_B03BC";
+		break;
+	case BUTTON_STYLE_CITY_B03BR:
+		szStyle = "BUTTON_STYLE_CITY_B03BR";
+		break;
+	case BUTTON_STYLE_CITY_FLAT:
+		szStyle = "BUTTON_STYLE_CITY_FLAT";
+		break;
+	case BUTTON_STYLE_CITY_PLUS:
+		szStyle = "BUTTON_STYLE_CITY_PLUS";
+		break;
+	case BUTTON_STYLE_CITY_MINUS:
+		szStyle = "BUTTON_STYLE_CITY_MINUS";
+		break;
+	case BUTTON_STYLE_ARROW_LEFT:
+		szStyle = "BUTTON_STYLE_ARROW_LEFT";
+		break;
+	case BUTTON_STYLE_ARROW_RIGHT:
+		szStyle = "BUTTON_STYLE_ARROW_RIGHT";
+		break;
+	case BUTTON_STYLE_ARROW_UP:
+		szStyle = "BUTTON_STYLE_ARROW_UP";
+		break;
+	case BUTTON_STYLE_ARROW_DOWN:
+		szStyle = "BUTTON_STYLE_ARROW_DOWN";
+		break;
+	default:
+		FAssert(false);
+	}
+	setStyle(szName, szStyle);
+}
+
+void GUI_python_interface::setStyle(std::string szName, PanelStyles eStyle)
+{
+	std::string szStyle;
+
+	switch (eStyle)
+	{
+	case PANEL_STYLE_STANDARD:
+		szStyle = "PANEL_STYLE_STANDARD";
+		break;
+	case PANEL_STYLE_SOLID:
+		szStyle = "PANEL_STYLE_SOLID";
+		break;
+	case PANEL_STYLE_EMPTY:
+		szStyle = "PANEL_STYLE_EMPTY";
+		break;
+	case PANEL_STYLE_FLAT:
+		szStyle = "PANEL_STYLE_FLAT";
+		break;
+	case PANEL_STYLE_IN:
+		szStyle = "PANEL_STYLE_IN";
+		break;
+	case PANEL_STYLE_OUT:
+		szStyle = "PANEL_STYLE_OUT";
+		break;
+	case PANEL_STYLE_EXTERNAL:
+		szStyle = "PANEL_STYLE_EXTERNAL";
+		break;
+	case PANEL_STYLE_DEFAULT:
+		szStyle = "PANEL_STYLE_DEFAULT";
+		break;
+	case PANEL_STYLE_CIVILPEDIA:
+		szStyle = "PANEL_STYLE_CIVILPEDIA";
+		break;
+	case PANEL_STYLE_STONE:
+		szStyle = "PANEL_STYLE_STONE";
+		break;
+	case PANEL_STYLE_UNITSTAT:
+		szStyle = "PANEL_STYLE_UNITSTAT";
+		break;
+	case PANEL_STYLE_BLUELARGE:
+		szStyle = "PANEL_STYLE_BLUELARGE";
+		break;
+	case PANEL_STYLE_BLUE50:
+		szStyle = "PANEL_STYLE_BLUE50";
+		break;
+	case PANEL_STYLE_TOPBAR:
+		szStyle = "PANEL_STYLE_TOPBAR";
+		break;
+	case PANEL_STYLE_BOTTOMBAR:
+		szStyle = "PANEL_STYLE_BOTTOMBAR";
+		break;
+	case PANEL_STYLE_TECH:
+		szStyle = "PANEL_STYLE_TECH";
+		break;
+	case PANEL_STYLE_GAMEHUD_LEFT:
+		szStyle = "PANEL_STYLE_GAMEHUD_LEFT";
+		break;
+	case PANEL_STYLE_GAMEHUD_RIGHT:
+		szStyle = "PANEL_STYLE_GAMEHUD_RIGHT";
+		break;
+	case PANEL_STYLE_GAMEHUD_CENTER:
+		szStyle = "PANEL_STYLE_GAMEHUD_CENTER";
+		break;
+	case PANEL_STYLE_GAMEHUD_STATS:
+		szStyle = "PANEL_STYLE_GAMEHUD_STATS";
+		break;
+	case PANEL_STYLE_GAME_MAP:
+		szStyle = "PANEL_STYLE_GAME_MAP";
+		break;
+	case PANEL_STYLE_GAME_TOPBAR:
+		szStyle = "PANEL_STYLE_GAME_TOPBAR";
+		break;
+	case PANEL_STYLE_HUD_HELP:
+		szStyle = "PANEL_STYLE_HUD_HELP";
+		break;
+	case PANEL_STYLE_CITY_LEFT:
+		szStyle = "PANEL_STYLE_CITY_LEFT";
+		break;
+	case PANEL_STYLE_CITY_RIGHT:
+		szStyle = "PANEL_STYLE_CITY_RIGHT";
+		break;
+	case PANEL_STYLE_CITY_TOP:
+		szStyle = "PANEL_STYLE_CITY_TOP";
+		break;
+	case PANEL_STYLE_CITY_TANSHADE:
+		szStyle = "PANEL_STYLE_CITY_TANSHADE";
+		break;
+	case PANEL_STYLE_CITY_INFO:
+		szStyle = "PANEL_STYLE_CITY_INFO";
+		break;
+	case PANEL_STYLE_CITY_TANTL:
+		szStyle = "PANEL_STYLE_CITY_TANTL";
+		break;
+	case PANEL_STYLE_CITY_TANTR:
+		szStyle = "PANEL_STYLE_CITY_TANTR";
+		break;
+	case PANEL_STYLE_CITY_COLUMNL:
+		szStyle = "PANEL_STYLE_CITY_COLUMNL";
+		break;
+	case PANEL_STYLE_CITY_COLUMNC:
+		szStyle = "PANEL_STYLE_CITY_COLUMNC";
+		break;
+	case PANEL_STYLE_CITY_COLUMNR:
+		szStyle = "PANEL_STYLE_CITY_COLUMNR";
+		break;
+	case PANEL_STYLE_CITY_TITLE:
+		szStyle = "PANEL_STYLE_CITY_TITLE";
+		break;
+	case PANEL_STYLE_DAWN:
+		szStyle = "PANEL_STYLE_DAWN";
+		break;
+	case PANEL_STYLE_DAWNTOP:
+		szStyle = "PANEL_STYLE_DAWNTOP";
+		break;
+	case PANEL_STYLE_DAWNBOTTOM:
+		szStyle = "PANEL_STYLE_DAWNBOTTOM";
+		break;
+	case PANEL_STYLE_MAIN:
+		szStyle = "PANEL_STYLE_MAIN";
+		break;
+	case PANEL_STYLE_MAIN_BLACK25:
+		szStyle = "PANEL_STYLE_MAIN_BLACK25";
+		break;
+	case PANEL_STYLE_MAIN_BLACK50:
+		szStyle = "PANEL_STYLE_MAIN_BLACK50";
+		break;
+	case PANEL_STYLE_MAIN_WHITE:
+		szStyle = "PANEL_STYLE_MAIN_WHITE";
+		break;
+	case PANEL_STYLE_MAIN_WHITETAB:
+		szStyle = "PANEL_STYLE_MAIN_WHITETAB";
+		break;
+	case PANEL_STYLE_MAIN_TAN:
+		szStyle = "PANEL_STYLE_MAIN_TAN";
+		break;
+	case PANEL_STYLE_MAIN_TAN15:
+		szStyle = "PANEL_STYLE_MAIN_TAN15";
+		break;
+	case PANEL_STYLE_MAIN_TANL:
+		szStyle = "PANEL_STYLE_MAIN_TANL";
+		break;
+	case PANEL_STYLE_MAIN_TANR:
+		szStyle = "PANEL_STYLE_MAIN_TANR";
+		break;
+	case PANEL_STYLE_MAIN_TANT:
+		szStyle = "PANEL_STYLE_MAIN_TANT";
+		break;
+	case PANEL_STYLE_MAIN_TANB:
+		szStyle = "PANEL_STYLE_MAIN_TANB";
+		break;
+	case PANEL_STYLE_MAIN_BOTTOMBAR:
+		szStyle = "PANEL_STYLE_MAIN_BOTTOMBAR";
+		break;
+	case PANEL_STYLE_MAIN_SELECT:
+		szStyle = "PANEL_STYLE_MAIN_SELECT";
+		break;
+	default:
+		FAssert(false);
+	}
+	setStyle(szName, szStyle);
+}
+
+void GUI_python_interface::setStyle(std::string szName, TableStyles eStyle)
+{
+	std::string szStyle;
+
+	switch (eStyle)
+	{
+	case TABLE_STYLE_STANDARD:
+		szStyle = "TABLE_STYLE_STANDARD";
+		break;
+	case TABLE_STYLE_EMPTY:
+		szStyle = "TABLE_STYLE_EMPTY";
+		break;
+	case TABLE_STYLE_ALTEMPTY:
+		szStyle = "TABLE_STYLE_ALTEMPTY";
+		break;
+	case TABLE_STYLE_CITY:
+		szStyle = "TABLE_STYLE_CITY";
+		break;
+	case TABLE_STYLE_EMPTYSELECTINACTIVE:
+		szStyle = "TABLE_STYLE_EMPTYSELECTINACTIVE";
+		break;
+	case TABLE_STYLE_ALTDEFAULT:
+		szStyle = "TABLE_STYLE_ALTDEFAULT";
+		break;
+	case TABLE_STYLE_STAGINGROOM:
+		szStyle = "TABLE_STYLE_STAGINGROOM";
+		break;
+	default:
+		FAssert(false);
+	}
+	setStyle(szName, szStyle);
 }
 
 void GUI_python_interface::setTableColumnHeader(std::string szName, int iColumn, std::wstring header, int iWidth)
