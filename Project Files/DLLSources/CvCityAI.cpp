@@ -4822,6 +4822,7 @@ const int YIELD_TOOLS_BASE_VALUE = 10;
 int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 {
 	int iValue = iAmount * GET_PLAYER(getOwnerINLINE()).AI_yieldValue(eYield);
+	int iEmphasizedYield = AI_getEmphasizeYieldCount(eYield);
 
 	switch (eYield)
 	{
@@ -5025,12 +5026,26 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			// Erik: Since the AI cannot use this yield for military purposes, I've decided to
 			// block it so that production is not diverted to it. (cannons are usually just sold in Europe
 			// without this fix)
-			iValue = 0;
+			//abmpicoli change: only set iValue = 0 if it is not emphasized.
+			if (iEmphasizedYield <=0) {
+				iValue = 0;
+			}
 			break;
 		default:
 			FAssert(false);
 	}
-
+	// abmpicoli change: use emphasize yield as a multiplier for yield value.
+	// This assumes that the yield defined at CIV4EmphasizeInfo.xml is always 1, as it is defined currently.
+	// This won't affect AI players because yield emphasis in AI players is always set to 0 if the player is not human.
+	
+	if (iEmphasizedYield > 0) {
+		iValue *=(100 + 50 * iEmphasizedYield); // * 1,5
+		iValue /=100;
+	} else if (iEmphasizedYield < 0) {
+		iValue *= 100; 
+		iValue /=(100 - 50 * iEmphasizedYield);
+	}
+	
 	return iValue;
 }
 
