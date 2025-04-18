@@ -21,3 +21,18 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
             } \
         }
 #endif
+
+#define FOREACH_PROFESSION(VAR, INFO)                                            \
+for (ProfessionTypes VAR = FIRST_PROFESSION;                                     \
+    VAR < NUM_PROFESSION_TYPES;                                                  \
+    ++VAR)                                                                       \
+    for (bool _once = true; _once; _once = false)                                \
+        for (const CvProfessionInfo& INFO = GC.getProfessionInfo(VAR); _once; _once = false)
+
+#define FOREACH_CITIZEN_PROFESSION(VAR,INFO)                                     \
+for (ProfessionTypes VAR = FIRST_PROFESSION;                                     \
+     VAR < NUM_PROFESSION_TYPES;                                                 \
+     ++VAR)                                                                      \
+    if (!GC.getProfessionInfo(VAR).isCitizen()) {} else                          \
+        for (bool _once = true; _once; _once = false)                            \
+            for (const CvProfessionInfo& INFO = GC.getProfessionInfo(VAR); _once; _once = false)

@@ -2890,19 +2890,17 @@ bool CvDLLButtonPopup::launchFreeColonyPopup(CvPopup* pPopup, CvPopupInfo &info)
 	return true;
 }
 
-bool CvDLLButtonPopup::launchChooseProfessionPopup(CvPopup* pPopup, CvPopupInfo &info)
+bool CvDLLButtonPopup::launchChooseProfessionPopup(CvPopup* pPopup, CvPopupInfo& info)
 {
-	PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
+	const PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
 	if (ePlayer == NO_PLAYER)
-	{
 		return false;
-	}
 
-	CvCity* pCity = GET_PLAYER(ePlayer).getCity(info.getData1());
-
+	CvCity* const pCity = GET_PLAYER(ePlayer).getCity(info.getData1());
 	bool bEuropeUnit = false;
 	CvUnit* pUnit = NULL;
-	if (pCity != NULL)
+
+	if (pCity)
 	{
 		pUnit = pCity->getPopulationUnitById(info.getData2());
 	}
@@ -2911,268 +2909,222 @@ bool CvDLLButtonPopup::launchChooseProfessionPopup(CvPopup* pPopup, CvPopupInfo 
 		pUnit = GET_PLAYER(ePlayer).getEuropeUnitById(info.getData2());
 		bEuropeUnit = (pUnit != NULL);
 	}
-	if (NULL == pUnit)
-	{
+	if (!pUnit)
 		pUnit = GET_PLAYER(ePlayer).getUnit(info.getData2());
-	}
-	if (NULL == pUnit)
-	{
+
+	if (!pUnit || pUnit->getProfession() == NO_PROFESSION)
 		return false;
-	}
 
-	// Erik: If we have no valid profession to assign, we bail out
-	if (pUnit->getProfession() == NO_PROFESSION)
+	const bool showNon = (info.getData3() == 0);
+	const bool showPlot = (info.getData3() == 1);
+	const bool showBuild = (info.getData3() == 2);
+
+	if (showNon && !pUnit->canLeaveCity())
 	{
-		return false;
-	}
-
-	bool bShowOnlyNonCitizens = (info.getData3() == 0);
-	bool bShowOnlyPlotCitizens = (info.getData3() == 1);
-	//Androrc Multiple Professions per Building
-	bool bShowOnlyBuildingCitizens = (info.getData3() == 2);
-	//Androrc End
-
-
-	if (bShowOnlyNonCitizens && !pUnit->canLeaveCity())
-	{
-		// unrest in city. Show a menu telling nothing can be done.
-		// change button type to avoid having code when ok button is clicked
 		info.setButtonPopupType(BUTTONPOPUP_NO_EVENT_ON_OK_CLICKED);
-		gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_POPUP_CHOOSE_PROFESSION_UNREST"));
+		gDLL->getInterfaceIFace()->popupSetBodyString(
+			pPopup,
+			gDLL->getText("TXT_KEY_POPUP_CHOOSE_PROFESSION_UNREST"));
 		gDLL->getInterfaceIFace()->popupLaunch(pPopup, true, POPUPSTATE_IMMEDIATE);
 		return true;
 	}
 
-
-	CvPlot* pWorkingPlot = NULL;
-	if (pCity != NULL)
+	CvPlot* const pWorkingPlot = (pCity ? pCity->getPlotWorkedByUnit(pUnit) : NULL);
+	BuildingTypes workBuilding = NO_BUILDING;
+	if (pCity)
 	{
-		pWorkingPlot = pCity->getPlotWorkedByUnit(pUnit);
+		workBuilding = pCity->getYieldBuilding(
+			(YieldTypes)GC.getProfessionInfo(pUnit->getProfession()).getYieldsProduced(0));
 	}
 
-	//Androrc Multiple Professions per Building
-	BuildingTypes eWorkingBuilding = NO_BUILDING;
-	if (pCity != NULL)
+	// Keep separate counters for the single / multi output cases
+	// to avoid comparing the (secondary) food output of a hunter with the single output of a farmer
+	const int NUM_YIELDS = NUM_YIELD_TYPES;
+	std::vector<int> singleMax(NUM_YIELDS, 0);
+	std::vector<int> multiMax(NUM_YIELDS, 0);
+
+	FOREACH_CITIZEN_PROFESSION(eLoopProfession, kProfessionInfo)
 	{
-		// R&R, ray , MYCP partially based on code of Aymerick - START
-		eWorkingBuilding = pCity->getYieldBuilding((YieldTypes) GC.getProfessionInfo(pUnit->getProfession()).getYieldsProduced(0));
-		// R&R, ray , MYCP partially based on code of Aymerick - END
-	}
-	//Androrc End
+		if (eLoopProfession == NO_PROFESSION || !pUnit->canHaveProfession(eLoopProfession, false))
+			continue;
 
-	ProfessionTypes eProfession = pUnit->getProfession();
-	FAssert(NULL == pWorkingPlot || (NO_PROFESSION != eProfession && GC.getProfessionInfo(eProfession).isWorkPlot()));
-
-	CvWString szProfession;
-	if (NO_PROFESSION == eProfession)
-	{
-		szProfession = L"TXT_KEY_PROFESSION_IDLE_CITIZEN";
-	}
-	else
-	{
-		szProfession = GC.getProfessionInfo(eProfession).getTextKeyWide();
-	}
-
-	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_CHOOSE_PROFESSION", pUnit->getNameKey(), szProfession.GetCString()));
-
-//Androrc Multiple Professions per Building
-//	if (!bShowOnlyPlotCitizens)
-	if (!bShowOnlyPlotCitizens && !bShowOnlyBuildingCitizens)
-	//Androrc End
-	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_NEVER_MIND"), ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL")->getPath(), GC.getNumProfessionInfos(), WIDGET_GENERAL);
-
-		if(pUnit->isColonistLocked() && !bShowOnlyNonCitizens)
+		std::vector<YieldTypes> yields;
+		for (int iy = 0; iy < kProfessionInfo.getNumYieldsProduced(); ++iy)
 		{
-			FAssert(pCity != NULL);
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_AUTOMATE_CITIZEN"), ARTFILEMGR.getInterfaceArtInfo("INTERFACE_CITY_AUTOMATE_CITIZENS")->getPath(), -1, WIDGET_GENERAL);
+			YieldTypes y = (YieldTypes)kProfessionInfo.getYieldsProduced(iy);
+			if (y != NO_YIELD) yields.push_back(y);
+		}
+		if (yields.empty()) continue;
+
+		std::vector<int> bestAmt(yields.size(), 0);
+		for (size_t k = 0; k < yields.size(); ++k)
+			bestAmt[k] = pCity->getBestYieldsAmountAvailable(yields[k], eLoopProfession, pUnit);
+
+		if (yields.size() == 1)
+		{
+			int idx = yields[0];
+			singleMax[idx] = std::max(singleMax[idx], bestAmt[0]);
+		}
+		else
+		{
+			for (size_t k = 0; k < yields.size(); ++k)
+			{
+				int idx = yields[k];
+				multiMax[idx] = std::max(multiMax[idx], bestAmt[k]);
+			}
 		}
 	}
 
-	int iNumButtons = 0;
-	for (int iProfession = 0; iProfession < GC.getNumProfessionInfos(); ++iProfession)
+	const CvWString head = gDLL->getText("TXT_KEY_CHOOSE_PROFESSION",
+		pUnit->getNameKey(),
+		GC.getProfessionInfo(pUnit->getProfession()).getTextKeyWide());
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, head);
+
+	// Cancel and automate
+	if (!showPlot && !showBuild)
 	{
-		ProfessionTypes eLoopProfession = (ProfessionTypes) iProfession;
-		CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
+		gDLL->getInterfaceIFace()->popupAddGenericButton(
+			pPopup,
+			gDLL->getText("TXT_KEY_NEVER_MIND"),
+			ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL")->getPath(),
+			GC.getNumProfessionInfos(), WIDGET_GENERAL);
 
-		//Androrc Multiple Professions per Building
-//		if ((iProfession != pUnit->getProfession() || bShowOnlyPlotCitizens) && pUnit->canHaveProfession(eLoopProfession, false))
-		if ((iProfession != pUnit->getProfession() || bShowOnlyPlotCitizens || bShowOnlyBuildingCitizens) && pUnit->canHaveProfession(eLoopProfession, false))
-		//Androrc End
+		if (pUnit->isColonistLocked() && !showNon)
 		{
-			//inside or outside city
-			// R&R, ray , MYCP partially based on code of Aymerick - START
-			if (kProfession.isCitizen() && pCity != NULL)
+			FAssert(pCity);
+			gDLL->getInterfaceIFace()->popupAddGenericButton(
+				pPopup,
+				gDLL->getText("TXT_KEY_AUTOMATE_CITIZEN"),
+				ARTFILEMGR.getInterfaceArtInfo("INTERFACE_CITY_AUTOMATE_CITIZENS")->getPath(),
+				-1, WIDGET_GENERAL);
+		}
+	}
+
+	int buttonCount = 0;
+	FOREACH_PROFESSION(eLoopProfession, kProfessionInfo)
+	{
+		bool allowCurrent = (eLoopProfession != pUnit->getProfession() || showPlot || showBuild);
+		if (!allowCurrent || !pUnit->canHaveProfession(eLoopProfession, false))
+			continue;
+
+		if (kProfessionInfo.isCitizen() && pCity)
+		{
+			if (showNon) continue;
+
+			std::vector<YieldTypes> yields;
+			std::vector<int> chars;
+			std::vector<int> bestAmt;
+			std::vector<int> plotAmt(kProfessionInfo.getNumYieldsProduced(), 0);
+
+			for (int iy = 0; iy < kProfessionInfo.getNumYieldsProduced(); ++iy)
 			{
-				if (!bShowOnlyNonCitizens)
+				YieldTypes y = (YieldTypes)kProfessionInfo.getYieldsProduced(iy);
+				if (y == NO_YIELD) 
+					continue;
+				yields.push_back(y);
+				chars.push_back(GC.getYieldInfo(y).getChar());
+				bestAmt.push_back(pCity->getBestYieldsAmountAvailable(y, eLoopProfession, pUnit));
+				if (kProfessionInfo.isWorkPlot() && pWorkingPlot)
+					plotAmt[iy] = pWorkingPlot->calculatePotentialProfessionYieldsAmount(
+						y, eLoopProfession, pUnit, false);
+			}
+			if (yields.empty()) 
+				continue;
+
+			CvWString list = kProfessionInfo.getDescription();
+			list += L" ";
+			bool isSingle = (yields.size() == 1);
+
+			// Curren plot only
+			if (kProfessionInfo.isWorkPlot() && pWorkingPlot && !showBuild)
+			{
+				const int totalPlot = pWorkingPlot->calculatePotentialProfessionYieldAmount(
+					eLoopProfession, pUnit, false);
+				if (totalPlot > 0)
 				{
-					std::vector<YieldTypes> eProfessionYields;
-					std::vector<int> aiProfessionYieldChar;
-					std::vector<int> aiBestYieldAmount;
-					std::vector<int> aiYieldAmount(kProfession.getNumYieldsProduced(), 0);
-					for (int i = 0; i < kProfession.getNumYieldsProduced(); i++)
+					++buttonCount;
+					for (size_t i = 0; i < yields.size(); ++i)
 					{
-						YieldTypes eYieldProduced = (YieldTypes) kProfession.getYieldsProduced(i);
-						if (eYieldProduced != NO_YIELD)
-						{
-							eProfessionYields.push_back((YieldTypes) eYieldProduced);
-							aiProfessionYieldChar.push_back(GC.getYieldInfo(eYieldProduced).getChar());
-							aiBestYieldAmount.push_back(pCity->getBestYieldsAmountAvailable(eYieldProduced, eLoopProfession, pUnit));
-
-							if (kProfession.isWorkPlot() && NULL != pWorkingPlot)
-							{
-								aiYieldAmount[i] = pWorkingPlot->calculatePotentialProfessionYieldsAmount(eYieldProduced, eLoopProfession, pUnit, false);
-							}
-						}
+						if (i > 0) list += L", ";
+						// TODO: Yield output adjustment for the secondary yield should not be here!
+						int shown =
+							(i == 0) ? plotAmt[0]
+							: plotAmt[0] / 2;
+						int peerMax = isSingle ? singleMax[yields[i]] : multiMax[yields[i]];
+						list += CvWString::format(L"(%d/%d %c)", shown, peerMax, chars[i]);
 					}
+					CvWString label = gDLL->getText("TXT_KEY_CHOOSE_PROFESSION_ITEMS", list.GetCString());
+					gDLL->getInterfaceIFace()->popupAddGenericButton(
+						pPopup, label, kProfessionInfo.getButton(), eLoopProfession, WIDGET_GENERAL);
+				}
+				continue;
+			}
 
-					if (!eProfessionYields.empty())
+			// General colony variant (lists all profession when considering to join while being outside)
+			if (!showPlot)
+			{
+				if (showBuild)
+				{
+					if (!(workBuilding != NO_BUILDING &&
+						kProfessionInfo.getSpecialBuilding() ==
+						GC.getBuildingInfo(workBuilding).getSpecialBuildingType()))
+						continue;
+				}
+				const int bestCity = pCity->getBestYieldAmountAvailable(eLoopProfession, pUnit);
+				if (bestCity > 0)
+				{
+					++buttonCount;
+					for (size_t i = 0; i < yields.size(); ++i)
 					{
-						CvWString szTempBuffer;
-						CvWString szYieldsProducedList = kProfession.getDescription();
-						szYieldsProducedList += L" ";
-						int iBestYieldAmount = pCity->getBestYieldAmountAvailable(eLoopProfession, pUnit);
-						//Androrc Multiple Professions per Building
-//						if (kProfession.isWorkPlot() && NULL != pWorkingPlot)
-						if (kProfession.isWorkPlot() && NULL != pWorkingPlot && !bShowOnlyBuildingCitizens)
-						//Androrc End
-						{
-							int iYieldAmount = pWorkingPlot->calculatePotentialProfessionYieldAmount(eLoopProfession, pUnit, false);
-							if(iYieldAmount > 0)
-							{
-								++iNumButtons;
-								if (bShowOnlyPlotCitizens)
-								{
-									for (uint iI = 0; iI < eProfessionYields.size(); iI++)
-									{
-										// R&R, ray modification
-										if (iI > 0)
-										{
-											szYieldsProducedList += L", ";
-											szYieldsProducedList += CvWString::format(L"(%d %c)", aiYieldAmount[0] / 2, aiProfessionYieldChar[iI]);
-										}
-										else
-										{
-											szYieldsProducedList += CvWString::format(L"(%d %c)", aiYieldAmount[iI], aiProfessionYieldChar[iI]);
-										}
-										// R&R, ray modification, end
-									}
-									szTempBuffer.Format(gDLL->getText("TXT_KEY_CHOOSE_PROFESSION_ITEMS", szYieldsProducedList.GetCString()));
-								}
-								else
-								{
-
-									for (uint iI = 0; iI < eProfessionYields.size(); iI++)
-									{
-										// R&R, ray modification
-										if (iI > 0)
-										{
-											szYieldsProducedList += L", ";
-											szYieldsProducedList += CvWString::format(L"(%d/%d %c)", aiYieldAmount[iI], aiBestYieldAmount[iI], aiProfessionYieldChar[iI]);
-										}
-										else
-										{
-											szYieldsProducedList += CvWString::format(L"(%d/%d %c)", aiYieldAmount[iI], aiBestYieldAmount[iI], aiProfessionYieldChar[iI]);
-										}
-										// R&R, ray modification, end
-									}
-									szTempBuffer.Format(gDLL->getText("TXT_KEY_CHOOSE_PROFESSION_ITEMS", szYieldsProducedList.GetCString()));
-								}
-
-								gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szTempBuffer, kProfession.getButton(), iProfession, WIDGET_GENERAL);
-							}
-						}
-						else if (!bShowOnlyPlotCitizens)
-						{
-							if(iBestYieldAmount > 0)
-							{
-								//Androrc Multiple Professions per Building
-//								++iNumButtons;
-//								szText = gDLL->getText("TXT_KEY_CHOOSE_PROFESSION_ITEM", kProfession.getTextKeyWide(), iBestYieldAmount, iProfessionYieldChar);
-//								gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szText, kProfession.getButton(), iProfession, WIDGET_GENERAL);
-								if(!bShowOnlyBuildingCitizens || (eWorkingBuilding != NO_BUILDING && kProfession.getSpecialBuilding() == GC.getBuildingInfo(eWorkingBuilding).getSpecialBuildingType()))
-								{
-									++iNumButtons;
-									for (uint iI = 0; iI < eProfessionYields.size(); iI++)
-									{
-										// R&R, ray modification
-										if (iI > 0)
-										{
-											szYieldsProducedList += L", ";
-										}
-										if (iI > 0 && kProfession.isWorkPlot())
-										{
-											szYieldsProducedList += CvWString::format(L"(%d %c)", aiBestYieldAmount[0] / 2, aiProfessionYieldChar[iI]);
-										}
-										else
-										{
-											szYieldsProducedList += CvWString::format(L"(%d %c)", aiBestYieldAmount[iI], aiProfessionYieldChar[iI]);
-										}
-										// R&R, ray modification, end
-									}
-									szTempBuffer.Format(gDLL->getText("TXT_KEY_CHOOSE_PROFESSION_ITEMS", szYieldsProducedList.GetCString()));
-									gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szTempBuffer, kProfession.getButton(), iProfession, WIDGET_GENERAL);
-								}
-								//Androrc End
-							}
-						}
+						if (i > 0) list += L", ";
+						// TODO: Yield output adjustment for the secondary yield should not be here!
+						int shown =
+							(kProfessionInfo.isWorkPlot() && i > 0) ? bestAmt[0] / 2
+							: bestAmt[i];
+						int peerMax = isSingle ? singleMax[yields[i]] : multiMax[yields[i]];
+						list += CvWString::format(L"(%d/%d %c)", shown, peerMax, chars[i]);
 					}
+					CvWString label = gDLL->getText("TXT_KEY_CHOOSE_PROFESSION_ITEMS", list.GetCString());
+					gDLL->getInterfaceIFace()->popupAddGenericButton(
+						pPopup, label, kProfessionInfo.getButton(), eLoopProfession, WIDGET_GENERAL);
 				}
 			}
-			// R&R, ray , MYCP partially based on code of Aymerick - END
+		}
+		// Non citizen / Europe
+		else if (!showPlot && !showBuild)
+		{
+			CvWString txt = kProfessionInfo.getDescription();
+			if (bEuropeUnit)
+			{
+				int cost = pUnit->getEuropeProfessionChangeCost(eLoopProfession);
+				if (cost > 0)
+					txt += gDLL->getText("TXT_KEY_EUROPE_CHANGE_PROFESSION_COST", cost);
+				else if (cost < 0)
+					txt += gDLL->getText("TXT_KEY_EUROPE_CHANGE_PROFESSION_REFUND", -cost);
+			}
 			else
 			{
-				//Androrc Multiple Professions per Building
-//				if (!bShowOnlyPlotCitizens)
-				if (!bShowOnlyPlotCitizens && !bShowOnlyBuildingCitizens)
-				//Androrc End
-				{
-					CvWString szText = kProfession.getDescription();
-					if (bEuropeUnit)
-					{
-						int iCost = pUnit->getEuropeProfessionChangeCost(eLoopProfession);
-						if (iCost > 0)
-						{
-							szText += gDLL->getText("TXT_KEY_EUROPE_CHANGE_PROFESSION_COST", iCost);
-						}
-						else if (iCost < 0)
-						{
-							szText += gDLL->getText("TXT_KEY_EUROPE_CHANGE_PROFESSION_REFUND", -iCost);
-						}
-					}
-					else
-					{
-						szText += gDLL->getText("TXT_KEY_PROFESSION_NON_CITIZEN");
-					}
-
-					++iNumButtons;
-					gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szText, kProfession.getButton(), iProfession, WIDGET_GENERAL);
-				}
+				txt += gDLL->getText("TXT_KEY_PROFESSION_NON_CITIZEN");
 			}
+			++buttonCount;
+			gDLL->getInterfaceIFace()->popupAddGenericButton(
+				pPopup, txt, kProfessionInfo.getButton(), eLoopProfession, WIDGET_GENERAL);
 		}
 	}
 
-	//Androrc Multiple Professions per Building
-//	if (bShowOnlyPlotCitizens)
-	if (bShowOnlyPlotCitizens || bShowOnlyBuildingCitizens)
-	//Androrc End
-	{
-		if (iNumButtons <= 1)
-		{
-			return false;
-		}
-	}
+	if ((showPlot || showBuild) && buttonCount <= 1)
+		return false;
 
-	//Androrc Multiple Professions per Building
-//	if (pUnit->canClearSpecialty() && !bShowOnlyPlotCitizens && !bShowOnlyNonCitizens)
-	if (pUnit->canClearSpecialty() && !bShowOnlyPlotCitizens && !bShowOnlyBuildingCitizens && !bShowOnlyNonCitizens)
-	//Androrc End
+	if (pUnit->canClearSpecialty() && !showPlot && !showBuild && !showNon)
 	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, GC.getCommandInfo(COMMAND_CLEAR_SPECIALTY).getDescription(), GC.getCommandInfo(COMMAND_CLEAR_SPECIALTY).getButton(), -2, WIDGET_GENERAL);
+		gDLL->getInterfaceIFace()->popupAddGenericButton(
+			pPopup,
+			GC.getCommandInfo(COMMAND_CLEAR_SPECIALTY).getDescription(),
+			GC.getCommandInfo(COMMAND_CLEAR_SPECIALTY).getButton(),
+			-2, WIDGET_GENERAL);
 	}
 
 	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
-
 	return true;
 }
 
