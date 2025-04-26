@@ -1,4 +1,4 @@
-// plot.cpp
+﻿// plot.cpp
 
 #include "CvGameCoreDLL.h"
 #include "CvPlot.h"
@@ -7143,44 +7143,52 @@ int CvPlot::calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, Impr
 	return std::max(0, (iYield * iModifier) / 100);
 }
 // R&R, ray , MYCP partially based on code of Aymerick - START
-int CvPlot::calculatePotentialProfessionYieldAmount(ProfessionTypes eProfession, const CvUnit* pUnit, bool bDisplay) const
-{
-	int iYieldAmount = 0;
 
-	if (NO_PROFESSION != eProfession)
+ProfessionYieldList CvPlot::calculatePotentialProfessionYieldAmount(
+	ProfessionTypes eProfession,
+	const CvUnit* pUnit,
+	bool            bDisplay) const
+{
+	ProfessionYieldList out;  // out.count == 0, out.yields default‑inited
+
+	if (eProfession == NO_PROFESSION || pUnit == NULL)
+		return out;
+
+	const CvProfessionInfo& kProf = GC.getProfessionInfo(eProfession);
+
+	// must match land/water
+	if (isWater() != kProf.isWater())
+		return out;
+
+	int primaryAmt = 0;
+
+	// loop over all yields; any after the first get half of primaryAmt
+	for (int i = 0;
+		i < kProf.getNumYieldsProduced() && out.count < MAX_PROFESSION_YIELDS;
+		++i)
 	{
-		CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-		if (kProfession.getYieldsProduced(0) != NO_YIELD)
+		YieldTypes eY = (YieldTypes)kProf.getYieldsProduced(i);
+		if (eY == NO_YIELD)
+			continue;
+
+		if (i == 0)
 		{
-			if (isWater() == GC.getProfessionInfo(eProfession).isWater())
-			{
-				iYieldAmount = calculatePotentialYield((YieldTypes) kProfession.getYieldsProduced(0), pUnit, bDisplay);
-			}
+			// first yield: compute full amount
+			primaryAmt = calculatePotentialYield(eY, pUnit, bDisplay);
+			if (primaryAmt <= 0)
+				break;   // if primary is zero, no yields at all
+			out.yields[out.count++] = YieldAmount(eY, primaryAmt);
+		}
+		else
+		{
+			// every subsequent yield is half of primary
+			int secAmt = primaryAmt / 2;
+			out.yields[out.count++] = YieldAmount(eY, secAmt);
 		}
 	}
 
-	return iYieldAmount;
+	return out;
 }
-
-int CvPlot::calculatePotentialProfessionYieldsAmount(YieldTypes eYield, ProfessionTypes eProfession, const CvUnit* pUnit, bool bDisplay) const
-{
-	int iYieldAmount = 0;
-
-	if (NO_PROFESSION != eProfession)
-	{
-		CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-		if (eYield != NO_YIELD)
-		{
-			if (isWater() == GC.getProfessionInfo(eProfession).isWater())
-			{
-				iYieldAmount = calculatePotentialYield((YieldTypes) eYield, pUnit, bDisplay);
-			}
-		}
-	}
-
-	return iYieldAmount;
-}
-// R&R, ray , MYCP partially based on code of Aymerick - END
 
 int CvPlot::calculatePotentialCityYield(YieldTypes eYield, const CvCity *pCity) const
 {

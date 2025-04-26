@@ -1207,6 +1207,7 @@ int CvPlayerAI::AI_yieldWeight(YieldTypes eYield) const
 	return GC.getYieldInfo(eYield).getAIWeightPercent();
 }
 
+#if 0
 int CvPlayerAI::AI_estimatedColonistIncome(CvPlot* pPlot, CvUnit* pColonist)
 {
 	FAssert(pPlot != NULL);
@@ -1318,6 +1319,7 @@ int CvPlayerAI::AI_estimatedColonistIncome(CvPlot* pPlot, CvUnit* pColonist)
 
 	return iTotal;
 }
+#endif
 
 int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStartingLoc)
 {

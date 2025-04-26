@@ -1,4 +1,4 @@
-// buttonPopup.cpp
+﻿// buttonPopup.cpp
 
 #include "CvGameCoreDLL.h"
 #include "CvDLLButtonPopup.h"
@@ -2890,243 +2890,6 @@ bool CvDLLButtonPopup::launchFreeColonyPopup(CvPopup* pPopup, CvPopupInfo &info)
 	return true;
 }
 
-bool CvDLLButtonPopup::launchChooseProfessionPopup(CvPopup* pPopup, CvPopupInfo& info)
-{
-	const PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
-	if (ePlayer == NO_PLAYER)
-		return false;
-
-	CvCity* const pCity = GET_PLAYER(ePlayer).getCity(info.getData1());
-	bool bEuropeUnit = false;
-	CvUnit* pUnit = NULL;
-
-	if (pCity)
-	{
-		pUnit = pCity->getPopulationUnitById(info.getData2());
-	}
-	else
-	{
-		pUnit = GET_PLAYER(ePlayer).getEuropeUnitById(info.getData2());
-		bEuropeUnit = (pUnit != NULL);
-	}
-	if (!pUnit)
-		pUnit = GET_PLAYER(ePlayer).getUnit(info.getData2());
-
-	if (!pUnit || pUnit->getProfession() == NO_PROFESSION)
-		return false;
-
-	const bool showNon = (info.getData3() == 0);
-	const bool showPlot = (info.getData3() == 1);
-	const bool showBuild = (info.getData3() == 2);
-
-	if (showNon && !pUnit->canLeaveCity())
-	{
-		info.setButtonPopupType(BUTTONPOPUP_NO_EVENT_ON_OK_CLICKED);
-		gDLL->getInterfaceIFace()->popupSetBodyString(
-			pPopup,
-			gDLL->getText("TXT_KEY_POPUP_CHOOSE_PROFESSION_UNREST"));
-		gDLL->getInterfaceIFace()->popupLaunch(pPopup, true, POPUPSTATE_IMMEDIATE);
-		return true;
-	}
-
-	CvPlot* const pWorkingPlot = (pCity ? pCity->getPlotWorkedByUnit(pUnit) : NULL);
-	BuildingTypes workBuilding = NO_BUILDING;
-	if (pCity)
-	{
-		workBuilding = pCity->getYieldBuilding(
-			(YieldTypes)GC.getProfessionInfo(pUnit->getProfession()).getYieldsProduced(0));
-	}
-
-	// Keep separate counters for the single / multi output cases
-	// to avoid comparing the (secondary) food output of a hunter with the single output of a farmer
-	const int NUM_YIELDS = NUM_YIELD_TYPES;
-	std::vector<int> singleMax(NUM_YIELDS, 0);
-	std::vector<int> multiMax(NUM_YIELDS, 0);
-
-	FOREACH_CITIZEN_PROFESSION(eLoopProfession, kProfessionInfo)
-	{
-		if (eLoopProfession == NO_PROFESSION || !pUnit->canHaveProfession(eLoopProfession, false))
-			continue;
-
-		std::vector<YieldTypes> yields;
-		for (int iy = 0; iy < kProfessionInfo.getNumYieldsProduced(); ++iy)
-		{
-			YieldTypes y = (YieldTypes)kProfessionInfo.getYieldsProduced(iy);
-			if (y != NO_YIELD) yields.push_back(y);
-		}
-		if (yields.empty()) continue;
-
-		std::vector<int> bestAmt(yields.size(), 0);
-		for (size_t k = 0; k < yields.size(); ++k)
-			bestAmt[k] = pCity->getBestYieldsAmountAvailable(yields[k], eLoopProfession, pUnit);
-
-		if (yields.size() == 1)
-		{
-			int idx = yields[0];
-			singleMax[idx] = std::max(singleMax[idx], bestAmt[0]);
-		}
-		else
-		{
-			for (size_t k = 0; k < yields.size(); ++k)
-			{
-				int idx = yields[k];
-				multiMax[idx] = std::max(multiMax[idx], bestAmt[k]);
-			}
-		}
-	}
-
-	const CvWString head = gDLL->getText("TXT_KEY_CHOOSE_PROFESSION",
-		pUnit->getNameKey(),
-		GC.getProfessionInfo(pUnit->getProfession()).getTextKeyWide());
-	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, head);
-
-	// Cancel and automate
-	if (!showPlot && !showBuild)
-	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(
-			pPopup,
-			gDLL->getText("TXT_KEY_NEVER_MIND"),
-			ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL")->getPath(),
-			GC.getNumProfessionInfos(), WIDGET_GENERAL);
-
-		if (pUnit->isColonistLocked() && !showNon)
-		{
-			FAssert(pCity);
-			gDLL->getInterfaceIFace()->popupAddGenericButton(
-				pPopup,
-				gDLL->getText("TXT_KEY_AUTOMATE_CITIZEN"),
-				ARTFILEMGR.getInterfaceArtInfo("INTERFACE_CITY_AUTOMATE_CITIZENS")->getPath(),
-				-1, WIDGET_GENERAL);
-		}
-	}
-
-	int buttonCount = 0;
-	FOREACH_PROFESSION(eLoopProfession, kProfessionInfo)
-	{
-		bool allowCurrent = (eLoopProfession != pUnit->getProfession() || showPlot || showBuild);
-		if (!allowCurrent || !pUnit->canHaveProfession(eLoopProfession, false))
-			continue;
-
-		if (kProfessionInfo.isCitizen() && pCity)
-		{
-			if (showNon) continue;
-
-			std::vector<YieldTypes> yields;
-			std::vector<int> chars;
-			std::vector<int> bestAmt;
-			std::vector<int> plotAmt(kProfessionInfo.getNumYieldsProduced(), 0);
-
-			for (int iy = 0; iy < kProfessionInfo.getNumYieldsProduced(); ++iy)
-			{
-				YieldTypes y = (YieldTypes)kProfessionInfo.getYieldsProduced(iy);
-				if (y == NO_YIELD) 
-					continue;
-				yields.push_back(y);
-				chars.push_back(GC.getYieldInfo(y).getChar());
-				bestAmt.push_back(pCity->getBestYieldsAmountAvailable(y, eLoopProfession, pUnit));
-				if (kProfessionInfo.isWorkPlot() && pWorkingPlot)
-					plotAmt[iy] = pWorkingPlot->calculatePotentialProfessionYieldsAmount(
-						y, eLoopProfession, pUnit, false);
-			}
-			if (yields.empty()) 
-				continue;
-
-			CvWString list = kProfessionInfo.getDescription();
-			list += L" ";
-			bool isSingle = (yields.size() == 1);
-
-			// Curren plot only
-			if (kProfessionInfo.isWorkPlot() && pWorkingPlot && !showBuild)
-			{
-				const int totalPlot = pWorkingPlot->calculatePotentialProfessionYieldAmount(
-					eLoopProfession, pUnit, false);
-				if (totalPlot > 0)
-				{
-					++buttonCount;
-					for (size_t i = 0; i < yields.size(); ++i)
-					{
-						if (i > 0) list += L", ";
-						// TODO: Yield output adjustment for the secondary yield should not be here!
-						int shown =
-							(i == 0) ? plotAmt[0]
-							: plotAmt[0] / 2;
-						int peerMax = isSingle ? singleMax[yields[i]] : multiMax[yields[i]];
-						list += CvWString::format(L"(%d/%d %c)", shown, peerMax, chars[i]);
-					}
-					CvWString label = gDLL->getText("TXT_KEY_CHOOSE_PROFESSION_ITEMS", list.GetCString());
-					gDLL->getInterfaceIFace()->popupAddGenericButton(
-						pPopup, label, kProfessionInfo.getButton(), eLoopProfession, WIDGET_GENERAL);
-				}
-				continue;
-			}
-
-			// General colony variant (lists all profession when considering to join while being outside)
-			if (!showPlot)
-			{
-				if (showBuild)
-				{
-					if (!(workBuilding != NO_BUILDING &&
-						kProfessionInfo.getSpecialBuilding() ==
-						GC.getBuildingInfo(workBuilding).getSpecialBuildingType()))
-						continue;
-				}
-				const int bestCity = pCity->getBestYieldAmountAvailable(eLoopProfession, pUnit);
-				if (bestCity > 0)
-				{
-					++buttonCount;
-					for (size_t i = 0; i < yields.size(); ++i)
-					{
-						if (i > 0) list += L", ";
-						// TODO: Yield output adjustment for the secondary yield should not be here!
-						int shown =
-							(kProfessionInfo.isWorkPlot() && i > 0) ? bestAmt[0] / 2
-							: bestAmt[i];
-						int peerMax = isSingle ? singleMax[yields[i]] : multiMax[yields[i]];
-						list += CvWString::format(L"(%d/%d %c)", shown, peerMax, chars[i]);
-					}
-					CvWString label = gDLL->getText("TXT_KEY_CHOOSE_PROFESSION_ITEMS", list.GetCString());
-					gDLL->getInterfaceIFace()->popupAddGenericButton(
-						pPopup, label, kProfessionInfo.getButton(), eLoopProfession, WIDGET_GENERAL);
-				}
-			}
-		}
-		// Non citizen / Europe
-		else if (!showPlot && !showBuild)
-		{
-			CvWString txt = kProfessionInfo.getDescription();
-			if (bEuropeUnit)
-			{
-				int cost = pUnit->getEuropeProfessionChangeCost(eLoopProfession);
-				if (cost > 0)
-					txt += gDLL->getText("TXT_KEY_EUROPE_CHANGE_PROFESSION_COST", cost);
-				else if (cost < 0)
-					txt += gDLL->getText("TXT_KEY_EUROPE_CHANGE_PROFESSION_REFUND", -cost);
-			}
-			else
-			{
-				txt += gDLL->getText("TXT_KEY_PROFESSION_NON_CITIZEN");
-			}
-			++buttonCount;
-			gDLL->getInterfaceIFace()->popupAddGenericButton(
-				pPopup, txt, kProfessionInfo.getButton(), eLoopProfession, WIDGET_GENERAL);
-		}
-	}
-
-	if ((showPlot || showBuild) && buttonCount <= 1)
-		return false;
-
-	if (pUnit->canClearSpecialty() && !showPlot && !showBuild && !showNon)
-	{
-		gDLL->getInterfaceIFace()->popupAddGenericButton(
-			pPopup,
-			GC.getCommandInfo(COMMAND_CLEAR_SPECIALTY).getDescription(),
-			GC.getCommandInfo(COMMAND_CLEAR_SPECIALTY).getButton(),
-			-2, WIDGET_GENERAL);
-	}
-
-	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
-	return true;
-}
 
 bool CvDLLButtonPopup::launchPurchaseEuropeUnitPopup(CvPopup* pPopup, CvPopupInfo &info)
 {
@@ -3167,6 +2930,7 @@ bool CvDLLButtonPopup::launchPurchaseEuropeUnitPopup(CvPopup* pPopup, CvPopupInf
 	return true;
 }
 
+
 bool CvDLLButtonPopup::launchFoundingFatherPopup(CvPopup* pPopup, CvPopupInfo &info)
 {
 	FatherTypes eFather = (FatherTypes) info.getData1();
@@ -3197,6 +2961,285 @@ bool CvDLLButtonPopup::launchFoundingFatherPopup(CvPopup* pPopup, CvPopupInfo &i
 
 	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
 
+	return true;
+}
+
+bool CvDLLButtonPopup::launchChooseProfessionPopup(CvPopup* pPopup, CvPopupInfo& info)
+{
+	// ------------------------------------------------------------------
+	// Resolve player, city and unit
+	// ------------------------------------------------------------------
+	const PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
+	if (ePlayer == NO_PLAYER) return false;
+
+	CvCity* const pCity = GET_PLAYER(ePlayer).getCity(info.getData1());
+	bool bEuropeUnit = false;
+	CvUnit* pUnit = NULL;
+
+	if (pCity)
+	{
+		pUnit = pCity->getPopulationUnitById(info.getData2());
+	}
+	else
+	{
+		pUnit = GET_PLAYER(ePlayer).getEuropeUnitById(info.getData2());
+		bEuropeUnit = (pUnit != NULL);
+	}
+	if (!pUnit) pUnit = GET_PLAYER(ePlayer).getUnit(info.getData2());
+	if (!pUnit || pUnit->getProfession() == NO_PROFESSION) return false;
+
+	// Decode filter flags
+	const bool showNon = (info.getData3() == 0);
+	const bool showPlot = (info.getData3() == 1);
+	const bool showBuild = (info.getData3() == 2);
+
+	// ------------------------------------------------------------------
+	// Unrest shortcut
+	// ------------------------------------------------------------------
+	if (showNon && !pUnit->canLeaveCity())
+	{
+		info.setButtonPopupType(BUTTONPOPUP_NO_EVENT_ON_OK_CLICKED);
+		gDLL->getInterfaceIFace()->popupSetBodyString(
+			pPopup,
+			gDLL->getText("TXT_KEY_POPUP_CHOOSE_PROFESSION_UNREST"));
+		gDLL->getInterfaceIFace()->popupLaunch(
+			pPopup, true, POPUPSTATE_IMMEDIATE);
+		return true;
+	}
+
+	// Determine working plot and building
+	CvPlot* pWorkingPlot = pCity ? pCity->getPlotWorkedByUnit(pUnit) : NULL;
+	BuildingTypes workBuilding = NO_BUILDING;
+	if (pCity)
+	{
+		const CvProfessionInfo& initInfo =
+			GC.getProfessionInfo(pUnit->getProfession());
+		workBuilding = pCity->getYieldBuilding(
+			static_cast<YieldTypes>(initInfo.getYieldsProduced(0)));
+	}
+
+	// ------------------------------------------------------------------
+	// Pre-pass: per-yield maxima for single vs multi output
+	// ------------------------------------------------------------------
+	const int NUM_YIELDS = NUM_YIELD_TYPES;
+	std::vector<int> singleMax(NUM_YIELDS, 0);
+	std::vector<int> multiMax(NUM_YIELD_TYPES, 0);
+
+	FOREACH_CITIZEN_PROFESSION(eLoopProfession, kProfessionInfo)
+	{
+		if (!pUnit->canHaveProfession(eLoopProfession, false))
+			continue;
+
+		// collect all yields produced
+		std::vector<YieldTypes> yields;
+		for (int i = 0; i < kProfessionInfo.getNumYieldsProduced(); ++i)
+		{
+			YieldTypes y = static_cast<YieldTypes>(kProfessionInfo.getYieldsProduced(i));
+			if (y != NO_YIELD) yields.push_back(y);
+		}
+		if (yields.empty()) continue;
+
+		bool isSingle = (yields.size() == 1);
+		for (size_t k = 0; k < yields.size(); ++k)
+		{
+			int best = pCity->getBestYieldsAmountAvailable(
+				yields[k], eLoopProfession, pUnit);
+			if (isSingle)
+				singleMax[yields[k]] = std::max(singleMax[yields[k]], best);
+			else
+				multiMax[yields[k]] = std::max(multiMax[yields[k]], best);
+		}
+	}
+
+	// ------------------------------------------------------------------
+	// Popup header
+	// ------------------------------------------------------------------
+	CvWString header = gDLL->getText(
+		"TXT_KEY_CHOOSE_PROFESSION",
+		pUnit->getNameKey(),
+		GC.getProfessionInfo(pUnit->getProfession()).getTextKeyWide());
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, header);
+
+	// Cancel and automate (non-citizen mode)
+	if (!showPlot && !showBuild)
+	{
+		gDLL->getInterfaceIFace()->popupAddGenericButton(
+			pPopup,
+			gDLL->getText("TXT_KEY_NEVER_MIND"),
+			ARTFILEMGR.getInterfaceArtInfo("INTERFACE_BUTTONS_CANCEL")->getPath(),
+			GC.getNumProfessionInfos(),
+			WIDGET_GENERAL);
+
+		if (pUnit->isColonistLocked() && !showNon)
+		{
+			FAssert(pCity);
+			gDLL->getInterfaceIFace()->popupAddGenericButton(
+				pPopup,
+				gDLL->getText("TXT_KEY_AUTOMATE_CITIZEN"),
+				ARTFILEMGR.getInterfaceArtInfo("INTERFACE_CITY_AUTOMATE_CITIZENS")->getPath(),
+				-1,
+				WIDGET_GENERAL);
+		}
+	}
+
+	// ------------------------------------------------------------------
+	// Main loop over professions
+	// ------------------------------------------------------------------
+	int buttonCount = 0;
+	FOREACH_PROFESSION(eLoopProfession, kProfessionInfo)
+	{
+		bool allowCurrent =
+			(eLoopProfession != pUnit->getProfession()) ||
+			showPlot || showBuild;
+		if (!allowCurrent ||
+			!pUnit->canHaveProfession(eLoopProfession, false))
+			continue;
+
+		// Citizen professions inside a city
+		if (kProfessionInfo.isCitizen() && pCity)
+		{
+			if (showNon) continue;
+
+			// gather yields & chars, skip if none
+			std::vector<YieldTypes> yields;
+			std::vector<int>        chars;
+			for (int i = 0; i < kProfessionInfo.getNumYieldsProduced(); ++i)
+			{
+				YieldTypes y = static_cast<YieldTypes>(kProfessionInfo.getYieldsProduced(i));
+				if (y != NO_YIELD)
+				{
+					yields.push_back(y);
+					chars.push_back(GC.getYieldInfo(y).getChar());
+				}
+			}
+			if (yields.empty()) continue;
+			bool isSingle = (yields.size() == 1);
+
+			// A) plot-only view
+			if (kProfessionInfo.isWorkPlot() && pWorkingPlot && !showBuild)
+			{
+				ProfessionYieldList pyl =
+					pWorkingPlot->calculatePotentialProfessionYieldAmount(
+						eLoopProfession, pUnit, false);
+				if (pyl.count > 0 && pyl.yields[0].iAmount > 0)
+				{
+					++buttonCount;
+					CvWString label = kProfessionInfo.getDescription();
+					label += L" ";
+					for (int i = 0; i < pyl.count; ++i)
+					{
+						if (i > 0) label += L", ";
+						YieldTypes y = pyl.yields[i].eYield;
+						int shown = pyl.yields[i].iAmount;
+						int peerMax = isSingle
+							? singleMax[y]
+							: multiMax[y];
+						int ch = GC.getYieldInfo(y).getChar();
+						label += CvWString::format(L"(%d/%d %c)",
+							shown, peerMax, ch);
+					}
+					gDLL->getInterfaceIFace()->popupAddGenericButton(
+						pPopup, label,
+						kProfessionInfo.getButton(),
+						eLoopProfession,
+						WIDGET_GENERAL);
+				}
+				continue;
+			}
+
+			// B) building-only view
+			if (showBuild)
+			{
+				if (workBuilding == NO_BUILDING ||
+					kProfessionInfo.getSpecialBuilding() !=
+					GC.getBuildingInfo(workBuilding).getSpecialBuildingType())
+				{
+					continue;
+				}
+			}
+
+			// C) general-colony view (including free colonist)
+			if (!showPlot)
+			{
+				// collect best amounts city-wide
+				std::vector<int> bestAmt(yields.size());
+				for (size_t i = 0; i < yields.size(); ++i)
+				{
+					bestAmt[i] = pCity->getBestYieldsAmountAvailable(
+						yields[i], eLoopProfession, pUnit);
+				}
+
+				// show only if primary yield > 0
+				if (bestAmt[0] > 0)
+				{
+					++buttonCount;
+					CvWString label = kProfessionInfo.getDescription();
+					label += L" ";
+					for (size_t i = 0; i < yields.size(); ++i)
+					{
+						if (i > 0) label += L", ";
+						int shown = bestAmt[i];
+						int peerMax = isSingle
+							? singleMax[yields[i]]
+							: multiMax[yields[i]];
+						int ch = chars[i];
+						label += CvWString::format(L"(%d/%d %c)",
+							shown, peerMax, ch);
+					}
+					gDLL->getInterfaceIFace()->popupAddGenericButton(
+						pPopup, label,
+						kProfessionInfo.getButton(),
+						eLoopProfession,
+						WIDGET_GENERAL);
+				}
+			}
+		}
+		// Non-citizen / Europe professions (and “leave city” → PROFESSION_COLONIST)
+		else if (!showPlot && !showBuild)
+		{
+			CvWString txt = kProfessionInfo.getDescription();
+			if (bEuropeUnit)
+			{
+				int cost = pUnit->getEuropeProfessionChangeCost(eLoopProfession);
+				if (cost > 0)
+					txt += gDLL->getText(
+						"TXT_KEY_EUROPE_CHANGE_PROFESSION_COST", cost);
+				else if (cost < 0)
+					txt += gDLL->getText(
+						"TXT_KEY_EUROPE_CHANGE_PROFESSION_REFUND", -cost);
+			}
+			else
+			{
+				txt += gDLL->getText("TXT_KEY_PROFESSION_NON_CITIZEN");
+			}
+			++buttonCount;
+			gDLL->getInterfaceIFace()->popupAddGenericButton(
+				pPopup, txt,
+				kProfessionInfo.getButton(),
+				eLoopProfession,
+				WIDGET_GENERAL);
+		}
+	}
+
+	// ------------------------------------------------------------------
+	// Footer: bail if no choices
+	// ------------------------------------------------------------------
+	if ((showPlot || showBuild) && buttonCount <= 1)
+		return false;
+
+	if (pUnit->canClearSpecialty() &&
+		!showPlot && !showBuild && !showNon)
+	{
+		gDLL->getInterfaceIFace()->popupAddGenericButton(
+			pPopup,
+			GC.getCommandInfo(COMMAND_CLEAR_SPECIALTY).getDescription(),
+			GC.getCommandInfo(COMMAND_CLEAR_SPECIALTY).getButton(),
+			-2,
+			WIDGET_GENERAL);
+	}
+
+	gDLL->getInterfaceIFace()->popupLaunch(
+		pPopup, false, POPUPSTATE_IMMEDIATE);
 	return true;
 }
 

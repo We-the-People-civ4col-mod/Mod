@@ -213,6 +213,8 @@ public:
 	DllExport bool isHasBuilding(BuildingTypes eIndex) const;
 	int getProfessionOutput(ProfessionTypes eProfession, const CvUnit* pUnit, BuildingTypes* peBuilding = NULL) const;
 	int getProfessionInput(ProfessionTypes eProfession, const CvUnit* pUnit) const;
+	int getProfessionActualOutput(ProfessionTypes eProfession,
+		const CvUnit& kUnit) const;
 	BuildingTypes getYieldBuilding(YieldTypes eYield) const;
 	DllExport int getID() const;
 	int getIndex() const;
@@ -736,7 +738,7 @@ public:
 
 	void invalidatePopulationRankCache();
 	void invalidateYieldRankCache(YieldTypes eYield = NO_YIELD);
-	int getBestYieldAmountAvailable(ProfessionTypes eProfession, const CvUnit* pUnit) const;
+	//int getBestYieldAmountAvailable(ProfessionTypes eProfession, const CvUnit* pUnit) const;
 	// R&R, ray , MYCP partially based on code of Aymerick - START
 	int getBestYieldsAmountAvailable(YieldTypes eYield, ProfessionTypes eProfession, const CvUnit* pUnit) const;
 	// R&R, ray , MYCP partially based on code of Aymerick - END

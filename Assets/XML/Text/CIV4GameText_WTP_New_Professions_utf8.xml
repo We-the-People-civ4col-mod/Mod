@@ -2451,7 +2451,7 @@
 		<Russian>Сапожник (пух):Сапожники (пух)</Russian>
 	</TEXT>	
 	<TEXT>
-	<Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_BOOTS_WILD_FEATHERS</Tag>
+		<Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_BOOTS_WILD_FEATHERS</Tag>
 		<English>
 			<Text>Bootmaker (Wild Bird Feathers):Bootmakers (Wild Bird Feathers)</Text>
 			<Gender>Male</Gender>

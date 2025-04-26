@@ -10,6 +10,7 @@
 #include <bitset>
 #include <boost/utility/enable_if.hpp>
 #include <boost/type_traits/is_enum.hpp>
+#include <boost/array.hpp>
 
 #include "CvPlotFunctions.h"
 
@@ -28,6 +29,36 @@ class CvFlagEntity;
 
 typedef bool (*ConstPlotUnitFunc)( const CvUnit* pUnit, int iData1, int iData2);
 typedef bool (*PlotUnitFunc)(CvUnit* pUnit, int iData1, int iData2);
+
+struct YieldAmount
+{
+	YieldTypes eYield;
+	int        iAmount;
+
+	YieldAmount(YieldTypes y = NO_YIELD, int amt = 0)
+		: eYield(y), iAmount(amt) {}
+};
+
+// max two outputs per profession
+static const int MAX_PROFESSION_YIELDS = 2;
+typedef boost::array<YieldAmount, MAX_PROFESSION_YIELDS> YieldAmountArray;
+
+struct ProfessionYieldList {
+	YieldAmountArray yields;
+	int count;
+	ProfessionYieldList()
+		: yields(), count(0) {}
+
+
+	// returns true if any slot has a strictly positive amount
+	bool hasAnyYield() const {
+		for (int i = 0; i < count; ++i) {
+			if (yields[i].iAmount > 0)
+				return true;
+		}
+		return false;
+	}
+};
 
 class CvPlot
 {
@@ -395,10 +426,7 @@ public:
 	int calculateYield(YieldTypes eIndex, bool bDisplay) const;
 	int calculatePotentialYield(YieldTypes eIndex, const CvUnit* pUnit, bool bDisplay) const;
 	int calculatePotentialYield(YieldTypes eYield, PlayerTypes ePlayer, ImprovementTypes eImprovement, bool bIgnoreFeature, RouteTypes eRoute, UnitTypes eUnit, bool bDisplay) const;
-	int calculatePotentialProfessionYieldAmount(ProfessionTypes eProfession, const CvUnit* pUnit, bool bDisplay) const;
-	// R&R, ray , MYCP partially based on code of Aymerick - START
-	int calculatePotentialProfessionYieldsAmount(YieldTypes eYield, ProfessionTypes eProfession, const CvUnit* pUnit, bool bDisplay) const;
-	// R&R, ray , MYCP partially based on code of Aymerick - END
+	ProfessionYieldList calculatePotentialProfessionYieldAmount(ProfessionTypes eProfession, const CvUnit* pUnit, bool bDisplay) const;
 	int calculatePotentialCityYield(YieldTypes eYield, const CvCity *pCity) const;
 	bool hasYield() const;
 	void updateYield(bool bUpdateCity);

@@ -3238,6 +3238,50 @@ int CvCity::getProfessionInputs(ProfessionTypes eProfession, const CvUnit* pUnit
 
 	return iProfessionInput;
 }
+
+int CvCity::getProfessionActualOutput(ProfessionTypes eProfession,
+	const CvUnit& kUnit) const
+{
+	if (eProfession == NO_PROFESSION)
+		return 0;
+
+	// Output of a single slot, ignoring restrictions
+	const int baseOutput = getProfessionOutput(eProfession, &kUnit, NULL);
+	if (baseOutput <= 0)
+		return 0;
+
+	const CvProfessionInfo& kProf = GC.getProfessionInfo(eProfession);
+	const int numConsumed = kProf.getNumYieldsConsumed();
+
+	// No inputs consumed? use the standard output
+	if (numConsumed == 0)
+		return baseOutput;
+
+	// Otherwise, compute availability for each required input and track the minimum
+	int minAvail = INT_MAX;
+	for (int i = 0; i < numConsumed; ++i)
+	{
+		const YieldTypes y = static_cast<YieldTypes>(kProf.getYieldsConsumed(i));
+		if (y == NO_YIELD)
+			continue;
+
+		const int netProduced = getRawYieldProduced(y)
+			- getRawYieldConsumed(y);
+		const int stored = getYieldStored(y);
+		const int avail = netProduced + stored;
+
+		// if any input is missing entirely, output = 0
+		if (avail <= 0)
+			return 0;
+
+		if (avail < minAvail)
+			minAvail = avail;
+	}
+
+	// Cannot exceed baseOutput
+	return (minAvail < baseOutput ? minAvail : baseOutput);
+}
+
 // R&R, ray , MYCP partially based on code of Aymerick - END
 BuildingTypes CvCity::getYieldBuilding(YieldTypes eYield) const
 {
@@ -4895,8 +4939,8 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 
 					if (pCurrentWorkedPlot != NULL)
 					{
-						int availableAmountOfYield = pCurrentWorkedPlot->calculatePotentialProfessionYieldAmount(pUnit->getProfession(), pUnit, false);
-						if (availableAmountOfYield == 0 && bPrintWarning)
+						const ProfessionYieldList pyl = pCurrentWorkedPlot->calculatePotentialProfessionYieldAmount(pUnit->getProfession(), pUnit, false);
+						if (!pyl.hasAnyYield() && bPrintWarning)
 						{
 							CvWString szBuffer = gDLL->getText("TXT_KEY_NO_RAW_ON_FIELD", getNameKey(),GC.getYieldInfo(eYieldProduced).getChar());
 							gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GC.getYieldInfo(eYieldProduced).getButton(), COLOR_RED, true, true);
@@ -5732,27 +5776,40 @@ void CvCity::setUnitWorkingPlot(int iPlotIndex, int iUnitId)
 		if (pUnit->isColonistLocked())
 		{
 			//assign profession that produces yields
-			if((NO_PROFESSION == eUnitProfession) || !GC.getProfessionInfo(eUnitProfession).isWorkPlot() || pPlot->calculatePotentialProfessionYieldAmount(eUnitProfession, pUnit, false) == 0)
+			const ProfessionYieldList pyl = pPlot->calculatePotentialProfessionYieldAmount(eUnitProfession, pUnit, false);
+			if((NO_PROFESSION == eUnitProfession) || !GC.getProfessionInfo(eUnitProfession).isWorkPlot() || !pyl.hasAnyYield())
 			{
 				ProfessionTypes eBestProfession = NO_PROFESSION;
 				int iBestYieldAmount = 0;
 				for(int i=0;i<GC.getNumProfessionInfos();i++)
 				{
-					ProfessionTypes eLoopProfession = (ProfessionTypes) i;
-					if (GET_PLAYER(getOwnerINLINE()).isProfessionValid(eLoopProfession, pUnit->getUnitType()))
+					ProfessionTypes eLoopProfession = (ProfessionTypes)i;
+					if (!GET_PLAYER(getOwnerINLINE())
+						.isProfessionValid(eLoopProfession, pUnit->getUnitType()))
+						continue;
+					if (!GC.getProfessionInfo(eLoopProfession).isWorkPlot())
+						continue;
+
+					// get all yields for this candidate profession
+					const ProfessionYieldList pylLoop =
+						pPlot->calculatePotentialProfessionYieldAmount(
+							eLoopProfession, pUnit, false);
+
+					// compute a single “score” by summing every slot’s amount
+					int iLoopYieldAmount = 0;
+					for (int j = 0; j < pylLoop.count; ++j)
 					{
-						if(GC.getProfessionInfo(eLoopProfession).isWorkPlot())
-						{
-							int iLoopYieldAmount = pPlot->calculatePotentialProfessionYieldAmount(eLoopProfession, pUnit, false);
-							if(iLoopYieldAmount > iBestYieldAmount)
-							{
-								eBestProfession = eLoopProfession;
-								iBestYieldAmount = iLoopYieldAmount;
-							}
-						}
+						iLoopYieldAmount += pylLoop.yields[j].iAmount;
+					}
+
+					// pick the profession with the highest total
+					if (iLoopYieldAmount > iBestYieldAmount)
+					{
+						eBestProfession = eLoopProfession;
+						iBestYieldAmount = iLoopYieldAmount;
 					}
 				}
-
+			
 				// Erik: No assert since it is possible that a unit would produce 0 yield in any plot profession
 				//FAssert(eBestProfession != NO_PROFESSION);
 				if(eBestProfession != NO_PROFESSION)
@@ -8794,102 +8851,104 @@ PlayerTypes CvCity::getLiberationPlayer(bool bConquest) const
 	return eBestPlayer;
 }
 
-int CvCity::getBestYieldAmountAvailable(ProfessionTypes eProfession, const CvUnit* pUnit) const
+int CvCity::getBestYieldsAmountAvailable(YieldTypes eYield,
+	ProfessionTypes eProfession,
+	const CvUnit* pUnit) const
 {
 	if (eProfession == NO_PROFESSION)
-	{
 		return 0;
-	}
 
-	// R&R, ray , MYCP partially based on code of Aymerick - START
-	FAssert(GC.getProfessionInfo(eProfession).getYieldsProduced(0) != NO_YIELD);
-	// R&R, ray , MYCP partially based on code of Aymerick - END
-	int iBestYieldAvailable = 0;
+	// Primary yield for this profession
+	const CvProfessionInfo& kProf = GC.getProfessionInfo(eProfession);
+	FAssert(kProf.getYieldsProduced(0) != NO_YIELD);
+	YieldTypes ePrimary = static_cast<YieldTypes>(kProf.getYieldsProduced(0));
 
-	if(pUnit != NULL)
+	// Find index of the requested yield in the profession's list
+	int secondaryIndex = -1;
+	int numYields = kProf.getNumYieldsProduced();
+	for (int i = 0; i < numYields; ++i)
 	{
-		CvPlot* pWorkingPlot = getPlotWorkedByUnit(pUnit);
-		if(pWorkingPlot != NULL)
+		if (static_cast<YieldTypes>(kProf.getYieldsProduced(i)) == eYield)
 		{
-			iBestYieldAvailable = pWorkingPlot->calculatePotentialProfessionYieldAmount(eProfession, pUnit, false);
+			secondaryIndex = i;
+			break;
 		}
 	}
 
-	FOREACH(CityPlot)
-	{
-		if (eLoopCityPlot != CITY_HOME_PLOT)
-		{
-			if (!isPlotProducingYields(eLoopCityPlot))
-			{
-				CvPlot* pPlot = getCityIndexPlot(eLoopCityPlot);
+	bool bWildcard = (eYield == NO_YIELD);
+	int iBest = 0;
 
-				if (NULL != pPlot && canWork(pPlot))
+	// 1) Current working plot
+	if (pUnit != NULL)
+	{
+		CvPlot* pWorking = getPlotWorkedByUnit(pUnit);
+		if (pWorking != NULL && canWork(pWorking))
+		{
+			ProfessionYieldList pyl =
+				pWorking->calculatePotentialProfessionYieldAmount(
+					eProfession, pUnit, false);
+
+			// If asking for a secondary yield, but primary <= 0, skip
+			if (!(!bWildcard && secondaryIndex > 0 &&
+				(pyl.count == 0 || pyl.yields[0].iAmount <= 0)))
+			{
+				for (int i = 0; i < pyl.count; ++i)
 				{
-					int iYieldAmount = pPlot->calculatePotentialProfessionYieldAmount(eProfession, pUnit, false);
-					if (iYieldAmount > iBestYieldAvailable)
+					if (bWildcard || pyl.yields[i].eYield == eYield)
 					{
-						iBestYieldAvailable = iYieldAmount;
+						iBest = std::max(iBest, pyl.yields[i].iAmount);
 					}
 				}
 			}
 		}
 	}
 
-	if (pUnit->canHaveProfession(eProfession, false))
-	{
-		iBestYieldAvailable = std::max(iBestYieldAvailable, getProfessionOutput(eProfession, pUnit));
-	}
-
-	return iBestYieldAvailable;
-}
-// R&R, ray , MYCP partially based on code of Aymerick - START
-int CvCity::getBestYieldsAmountAvailable(YieldTypes eYield, ProfessionTypes eProfession, const CvUnit* pUnit) const
-{
-	if (eProfession == NO_PROFESSION)
-	{
-		return 0;
-	}
-
-	FAssert(eYield != NO_YIELD);
-
-	int iBestYieldAvailable = 0;
-
-	if(pUnit != NULL)
-	{
-		CvPlot* pWorkingPlot = getPlotWorkedByUnit(pUnit);
-		if(pWorkingPlot != NULL)
-		{
-			iBestYieldAvailable = pWorkingPlot->calculatePotentialProfessionYieldsAmount(eYield, eProfession, pUnit, false);
-		}
-	}
-
+	// 2) Every other city plot
 	FOREACH(CityPlot)
 	{
-		if (eLoopCityPlot != CITY_HOME_PLOT)
-		{
-			if (!isPlotProducingYields(eLoopCityPlot))
-			{
-				CvPlot* pPlot = getCityIndexPlot(eLoopCityPlot);
+		if (eLoopCityPlot == CITY_HOME_PLOT)   continue;
+		if (isPlotProducingYields(eLoopCityPlot)) continue;
 
-				if (NULL != pPlot && canWork(pPlot))
+		CvPlot* pPlot = getCityIndexPlot(eLoopCityPlot);
+		if (pPlot != NULL && canWork(pPlot))
+		{
+			ProfessionYieldList pyl =
+				pPlot->calculatePotentialProfessionYieldAmount(
+					eProfession, pUnit, false);
+
+			if (!(!bWildcard && secondaryIndex > 0 &&
+				(pyl.count == 0 || pyl.yields[0].iAmount <= 0)))
+			{
+				for (int i = 0; i < pyl.count; ++i)
 				{
-					int iYieldAmount = pPlot->calculatePotentialProfessionYieldsAmount(eYield, eProfession, pUnit, false);
-					if (iYieldAmount > iBestYieldAvailable)
+					if (bWildcard || pyl.yields[i].eYield == eYield)
 					{
-						iBestYieldAvailable = iYieldAmount;
+						iBest = std::max(iBest, pyl.yields[i].iAmount);
 					}
 				}
 			}
 		}
 	}
 
-	if (pUnit->canHaveProfession(eProfession, false))
+	// 3) Indoor (flat) output
+	if (pUnit != NULL && pUnit->canHaveProfession(eProfession, false))
 	{
-		iBestYieldAvailable = std::max(iBestYieldAvailable, getProfessionOutput(eProfession, pUnit));
+		int indoorOut = getProfessionOutput(eProfession, pUnit);
+
+		if (bWildcard)
+		{
+			iBest = std::max(iBest, indoorOut);
+		}
+		else if (!kProf.isWorkPlot() &&
+			ePrimary == eYield)
+		{
+			iBest = std::max(iBest, indoorOut);
+		}
 	}
 
-	return iBestYieldAvailable;
+	return iBest;
 }
+
 // R&R, ray , MYCP partially based on code of Aymerick - END
 void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 {

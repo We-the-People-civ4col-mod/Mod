@@ -7403,6 +7403,7 @@ bool CvUnitAI::AI_wakeCargo(UnitAITypes eUnitAI, int iPriority)
 //The mission MUST be one with a plot destination.
 CvPlot* CvUnitAI::AI_determineDestination(CvPlot** ppMissionPlot, MissionTypes* peMission, MissionAITypes* peMissionAI)
 {
+#if 0
 	int iBestValue = 0;
 	CvPlot* pBestPlot = NULL;
 
@@ -7549,6 +7550,8 @@ CvPlot* CvUnitAI::AI_determineDestination(CvPlot** ppMissionPlot, MissionTypes* 
 	}
 
 	return pBestPlot;
+#endif
+	return NULL;
 }
 
 bool CvUnitAI::AI_moveFromTransport(CvPlot* pHintPlot)

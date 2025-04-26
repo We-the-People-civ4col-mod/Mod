@@ -242,5 +242,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLOT_DEFENSIVE_BONUS_OWNED_PLOT</Tag>
 		<English>Potential defense bonus (only if owned): %D1_Mod%%</English>
+		<Russian>Бонус защиты (для игрока): %D1_Mod%%</Russian>
 	</TEXT>
 </Civ4GameText>
