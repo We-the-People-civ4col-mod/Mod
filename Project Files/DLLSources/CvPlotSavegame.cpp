@@ -180,7 +180,7 @@ const char* getSavedEnumNamePlot(SavegameVariableTypes eType)
 	case Save_RevealedOwner: return "Save_RevealedOwner";
 
 	case Save_CultureRangeCities: return "Save_CultureRangeCities";
-	case Save_InvisibleVisibilityCount: "Save_InvisibleVisibilityCount";
+	case Save_InvisibleVisibilityCount: return "Save_InvisibleVisibilityCount";
 
 	case Save_ScriptData: return "Save_ScriptData";
 

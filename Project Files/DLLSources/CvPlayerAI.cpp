@@ -6629,61 +6629,57 @@ void CvPlayerAI::AI_doTradeRoutes()
 
 void CvPlayerAI::AI_doCounter()
 {
-	const CvLeaderHeadInfo& kLeaderHeadInfo = GC.getLeaderHeadInfo(getPersonalityType());
+	const CvLeaderHeadInfo& kLeader = GC.getLeaderHeadInfo(getPersonalityType());
 
-	// R&R, ray, small code change from Commander Bello, united 2 for loops - START
-	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+	// Decay contacts & memories
+	for (PlayerTypes eP = FIRST_PLAYER; eP < NUM_PLAYER_TYPES; ++eP)
 	{
-		if (GET_PLAYER(ePlayer).isAlive())
+		if (GET_PLAYER(eP).isAlive())
 		{
-			for (ContactTypes eContact = FIRST_CONTACT; eContact < NUM_CONTACT_TYPES; ++eContact)
+			for (ContactTypes eC = FIRST_CONTACT; eC < NUM_CONTACT_TYPES; ++eC)
 			{
-				if (AI_getContactTimer(ePlayer, eContact) > 0)
-				{
-					AI_changeContactTimer(ePlayer, eContact, -1);
-				}
+				if (AI_getContactTimer(eP, eC) > 0)
+					AI_changeContactTimer(eP, eC, -1);
 			}
-
-			for (MemoryTypes eMemory = FIRST_MEMORY; eMemory < NUM_MEMORY_TYPES; ++eMemory)
-			{
-				if (AI_getMemoryCount(ePlayer, eMemory) > 0)
+			for (MemoryTypes eM = FIRST_MEMORY; eM < NUM_MEMORY_TYPES; ++eM)
 				{
-					const int iMemoryDecayRand = kLeaderHeadInfo.getMemoryDecayRand(eMemory);
-					if (iMemoryDecayRand > 0)
+				int iCnt = AI_getMemoryCount(eP, eM);
+				if (iCnt > 0)
 					{
-						if (GC.getGameINLINE().getSorenRandNum(iMemoryDecayRand, "Memory Decay") == 0)
+					int iRand = kLeader.getMemoryDecayRand(eM);
+					if (iRand > 0 &&
+						GC.getGameINLINE().getSorenRandNum(iRand, "Memory Decay") == 0)
 						{
-							AI_changeMemoryCount(ePlayer, eMemory, -1);
-						}
+						AI_changeMemoryCount(eP, eM, -1);
 					}
 				}
 			}
 		}
 	}
-	// R&R, ray, small code change from Commander Bello, united 2 for loops - END
 
-	// TAC - AI Improved Navel AI - koma13 - START
+	// Decay naval danger maps
 	for (int i = 0; i < GC.getMap().numPlotsINLINE(); ++i)
 	{
-		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(i);
-
-		int iDanger = pLoopPlot->getDangerMap(getID());
-
-		if (iDanger > 0)
-		{
-			pLoopPlot->setDangerMap(getID(), --iDanger);
-		}
+		CvPlot* p = GC.getMap().plotByIndexINLINE(i);
+		int d = p->getDangerMap(getID());
+		if (d > 0)
+			p->setDangerMap(getID(), d - 1);
 	}
-	// TAC - AI Improved Navel AI - koma13 - END
-	// TAC - AI Revolution - koma13 - START
-	int iLastWave = AI_getLastWave();
-	if (iLastWave > -1)
+
+	// Revolution timer: increment only while waves remain
+	const HandicapTypes eHandicap = GC.getGameINLINE().getHandicapType();
+	const int iNumWaves = GC.getHandicapInfo(eHandicap).getNumWaves();
+	const int iWaveIndex = AI_getWaveIndex();
+	if (iWaveIndex < iNumWaves)
 	{
-		AI_setLastWave(iLastWave + 1);
+		int iLast = AI_getLastWave();
+		if (iLast > -1)
+		{
+			int iNext = std::min(iLast + 1, GC.getHandicapInfo(eHandicap).getWaveTurns());
+			AI_setLastWave(iNext);
 	}
-	// TAC - AI Revolution - koma13 - END
+	}
 }
-
 
 void CvPlayerAI::AI_doMilitary()
 {
@@ -12816,303 +12812,191 @@ void CvPlayerAI::AI_doMilitaryStrategy()
 
 void CvPlayerAI::AI_doSuppressRevolution()
 {
-	bool bContinue = false;
-	PlayerTypes eColony = NO_PLAYER;
-	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
-	{
-		CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes)iPlayer);
-		if (kLoopPlayer.isAlive())
-		{
-			if (GET_TEAM(getTeam()).isParentOf(kLoopPlayer.getTeam()))
-			{
-				if (atWar(getTeam(), kLoopPlayer.getTeam()))
-				{
-					eColony = (PlayerTypes)iPlayer;
-					bContinue = true;
-					break;
-				}
-			}
-		}
-	}
+	const HandicapTypes eHandicap = GC.getGameINLINE().getHandicapType();
 
-	if (!bContinue)
-	{
-		return;
-	}
-
-	CvPlayerAI& kColony = GET_PLAYER(eColony);
-
-	if (!AI_isAnyStrategy())
-	{
-		AI_setStrategy(STRATEGY_SMALL_WAVES);
-
-		int iTactics = GC.getGameINLINE().getSorenRandNum(5, "AI Choose Strategy");
-		switch (iTactics)
-		{
-			case 0:
-			case 1:
-			case 2:
-				AI_setStrategy(STRATEGY_CONCENTRATED_ATTACK);
-				break;
-			case 3:
-			case 4:
-				AI_setStrategy(STRATEGY_DISTRIBUTED_ATTACK);
-				break;
-			default:
-				break;
-		}
-	}
-
-	if (GC.getGameINLINE().getSorenRandNum(100, "AI change King Strategy") < 33)
-	{
-		if (AI_isStrategy(STRATEGY_CONCENTRATED_ATTACK) && (AI_getStrategyDuration(STRATEGY_CONCENTRATED_ATTACK) > 7))
-		{
-			AI_clearStrategy(STRATEGY_CONCENTRATED_ATTACK);
-
-			AI_setStrategy(STRATEGY_DISTRIBUTED_ATTACK);
-		}
-		else if (AI_isStrategy(STRATEGY_DISTRIBUTED_ATTACK) && (AI_getStrategyDuration(STRATEGY_DISTRIBUTED_ATTACK) > 4))
-		{
-			AI_clearStrategy(STRATEGY_DISTRIBUTED_ATTACK);
-
-			AI_setStrategy(STRATEGY_CONCENTRATED_ATTACK);
-		}
-	}
-
-	if (AI_isStrategy(STRATEGY_CONCENTRATED_ATTACK) && AI_getStrategyData(STRATEGY_CONCENTRATED_ATTACK) == -1)
-	{
-		int iBestValue = 0;
-		CvPlot* pBestPlot = NULL;
-		//Select a target city.
-		int iLoop;
-		CvCity* pLoopCity;
-		for (pLoopCity = kColony.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kColony.nextCity(&iLoop))
-		{
-			if (pLoopCity->plot()->getNearestEurope() != NO_EUROPE)
-			{
-				int iValue = pLoopCity->getHighestPopulation() * 50 + pLoopCity->plot()->getCrumbs();
-
-				iValue *= 25 + GC.getGameINLINE().getSorenRandNum(75, "AI choose target for concentrated attack");
-				if (iValue > iBestValue)
-				{
-					iBestValue = iValue;
-					pBestPlot = pLoopCity->plot();
-				}
-			}
-		}
-		if (pBestPlot != NULL)
-		{
-			AI_setStrategy(STRATEGY_CONCENTRATED_ATTACK, GC.getMap().plotNum(pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE()));
-		}
-	}
-
-	int iShipCount = 0;
-	int iSoldierCount = 0;
-	int iCargoSpace = 0;
-
-	std::vector<CvUnit*> ships;
-	std::vector<CvUnit*> soldiers;
-
-	int iLoop;
-	for (CvUnit* pLoopUnit = firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = nextUnit(&iLoop))
-	{
-		if (pLoopUnit->getDomainType() == DOMAIN_SEA)
-		{
-			if (pLoopUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
-			{
-				ships.push_back(pLoopUnit);
-				iShipCount++;
-				iCargoSpace += pLoopUnit->cargoSpace();
-			}
-	    }
-	}
-
-	std::vector<int> shuffle(getNumEuropeUnits());
-	for (int i = 0; i < getNumEuropeUnits(); ++i)
-	{
-		shuffle[i] = i;
-	}
-	GC.getGameINLINE().getSorenRand().shuffleArray(shuffle, NULL);
-
-	for (int i = 0; i < getNumEuropeUnits(); ++i)
-	{
-		CvUnit* pLoopUnit = getEuropeUnit(shuffle[i]);
-		FAssert(pLoopUnit != NULL);
-        if (pLoopUnit->getDomainType() == DOMAIN_LAND)
-		{
-			soldiers.push_back(pLoopUnit);
-			iSoldierCount++;
-		}
-	}
-
-	if (iShipCount == 0)
-	{
-		//FAssertMsg(iSoldierCount == 0, "Uh oh, soldiers stuck in europe");
-		return;
-	}
-
-	// TAC - AI Revolution - koma13 - START
+	// First‐time init: set counters and reveal map
 	if (AI_getLastWave() == -1)
 	{
 		AI_setLastWave(0);
 		AI_setWaveIndex(0);
-
-		for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
+		for (int i = 0; i < GC.getMap().numPlotsINLINE(); ++i)
 		{
-			CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
-			if (pLoopPlot != NULL)
+			CvPlot* pPlot = GC.getMap().plotByIndexINLINE(i);
+			if (pPlot)
 			{
-				pLoopPlot->setRevealed(getTeam(), true, false, NO_TEAM);
+				pPlot->setRevealed(getTeam(), true, false, NO_TEAM);
 			}
+				}
+			}
+
+	// Early exit if all waves sent
+	const int iNumWaves = GC.getHandicapInfo(eHandicap).getNumWaves();
+	const int iWaveIndex = AI_getWaveIndex();
+	if (iWaveIndex >= iNumWaves)
+	{
+		if (AI_isStrategy(STRATEGY_SMALL_WAVES))
+		{
+			AI_clearStrategy(STRATEGY_SMALL_WAVES);
+		}
+		return;
+	}
+
+	// Find our target colony that we're at war with
+	bool bFound = false;
+	PlayerTypes eColony = NO_PLAYER;
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		const CvPlayer& kLoop = GET_PLAYER((PlayerTypes)iPlayer);
+		if (kLoop.isAlive() &&
+			GET_TEAM(getTeam()).isParentOf(kLoop.getTeam()) &&
+			atWar(getTeam(), kLoop.getTeam()))
+	{
+			eColony = (PlayerTypes)iPlayer;
+			bFound = true;
+			break;
+		}
+	}
+	if (!bFound) return;
+
+	const CvPlayerAI& kColony = GET_PLAYER(eColony);
+
+	// Pick strategy
+	if (!AI_isAnyStrategy())
+	{
+		AI_setStrategy(STRATEGY_SMALL_WAVES);
+		int iT = GC.getGameINLINE().getSorenRandNum(5, "Choose");
+		if (iT < 3)
+				AI_setStrategy(STRATEGY_CONCENTRATED_ATTACK);
+		else
+				AI_setStrategy(STRATEGY_DISTRIBUTED_ATTACK);
+	}
+
+	// Occasional swap between attack srategies
+	if (GC.getGameINLINE().getSorenRandNum(100, "Swap") < 33)
+	{
+		if (AI_isStrategy(STRATEGY_CONCENTRATED_ATTACK) &&
+			AI_getStrategyDuration(STRATEGY_CONCENTRATED_ATTACK) > 7)
+		{
+			AI_clearStrategy(STRATEGY_CONCENTRATED_ATTACK);
+			AI_setStrategy(STRATEGY_DISTRIBUTED_ATTACK);
+		}
+		else if (AI_isStrategy(STRATEGY_DISTRIBUTED_ATTACK) &&
+			AI_getStrategyDuration(STRATEGY_DISTRIBUTED_ATTACK) > 4)
+		{
+			AI_clearStrategy(STRATEGY_DISTRIBUTED_ATTACK);
+			AI_setStrategy(STRATEGY_CONCENTRATED_ATTACK);
 		}
 	}
 
-	int iWaveIndex = AI_getWaveIndex();
-	int iWaveTurns = GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getWaveTurns();
-
-	if (AI_getLastWave() > 0)
+	// If concentrated, choose a target once
+	if (AI_isStrategy(STRATEGY_CONCENTRATED_ATTACK) &&
+		AI_getStrategyData(STRATEGY_CONCENTRATED_ATTACK) == -1)
 	{
-		if (AI_getLastWave() < iWaveTurns)
+		int iBest = 0;
+		CvPlot* pBest = NULL;
+		int iIter = 0;
+		for (const CvCity* pCity = kColony.firstCity(&iIter); pCity; pCity = kColony.nextCity(&iIter))
+		{
+			if (pCity->plot()->getNearestEurope() != NO_EUROPE)
+			{
+				int iVal = pCity->getHighestPopulation() * 50 + pCity->plot()->getCrumbs();
+				iVal *= 25 + GC.getGameINLINE().getSorenRandNum(75, "Pick");
+				if (iVal > iBest)
+				{
+					iBest = iVal;
+					pBest = pCity->plot();
+				}
+			}
+		}
+		if (pBest)
+		{
+			AI_setStrategy(STRATEGY_CONCENTRATED_ATTACK,
+				GC.getMap().plotNum(pBest->getX_INLINE(), pBest->getY_INLINE()));
+		}
+	}
+
+	// Count ships & soldiers in Europe
+	std::vector<CvUnit*> ships, soldiers;
+	int iShipCount = 0, iSoldierCount = 0, iCargo = 0;
+	int iLoop = 0;
+	for (CvUnit* pU = firstUnit(&iLoop); pU; pU = nextUnit(&iLoop))
+		{
+		if (pU->getDomainType() == DOMAIN_SEA &&
+			pU->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
+			{
+			ships.push_back(pU);
+			++iShipCount;
+			iCargo += pU->cargoSpace();
+			}
+	    }
+	std::vector<int> shuffle(getNumEuropeUnits());
+	for (int i = 0; i < getNumEuropeUnits(); ++i)
+		shuffle[i] = i;
+	GC.getGameINLINE().getSorenRand().shuffleArray(shuffle, NULL);
+	for (int i = 0; i < getNumEuropeUnits(); ++i)
+	{
+		CvUnit* pU = getEuropeUnit(shuffle[i]);
+		if (pU && pU->getDomainType() == DOMAIN_LAND)
+		{
+			soldiers.push_back(pU);
+			++iSoldierCount;
+		}
+	}
+	if (iShipCount == 0)
+		return;
+
+	// Delay logic: first wave fires immediately; later only after iWaveTurns
+	const int iWaveTurns = GC.getHandicapInfo(eHandicap).getWaveTurns();
+	const int iLast = AI_getLastWave();
+	if (iLast > 0 && iLast < iWaveTurns)
 		{
 			return;
 		}
-	}
-	// TAC - AI Revolution - koma13 - END
 
-	int iTotalShipCount = AI_getNumAIUnits(UNITAI_COMBAT_SEA);
-
+	// Compute how many to send this wave
 	int iShipsToLaunch = 0;
-
-	if (AI_isStrategy(STRATEGY_SMALL_WAVES))//Set at start of revolution.
+	if (AI_isStrategy(STRATEGY_SMALL_WAVES))
 	{
-		// TAC - AI Revolution - koma13 - START
-		//iShipsToLaunch = (iTotalShipCount + 9) / 10;
-
-		int iShipsLaunchedPercent = 0;
-
+		int pctSent = 0;
 		for (int i = 0; i < iWaveIndex; ++i)
-		{
-			iShipsLaunchedPercent += GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getWaves(i);
-		}
+			pctSent += GC.getHandicapInfo(eHandicap).getWaves(i);
 
-		// R&R, ray fix for CTD
-		if(iWaveIndex + 1 == GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getNumWaves() || iShipsLaunchedPercent > 99)
+		if (iWaveIndex + 1 == iNumWaves || pctSent > 99)
 		{
 			iShipsToLaunch = iShipCount;
 		}
 		else
 		{
-			int iShipCount100Percent = iShipCount * 100 / (100 - iShipsLaunchedPercent);
-			int iWave = GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getWaves(iWaveIndex);
-
-			iShipsToLaunch = (iShipCount100Percent * iWave / 100);
-		}
-		// TAC - AI Revolution - koma13 - END
-	}
-
-	// TAC - AI Revolution - koma13 - START
-	AI_setWaveIndex(iWaveIndex + 1);
-	AI_setLastWave(0);
-
-	/*
-	else if (AI_isStrategy(STRATEGY_BUILDUP))//Set when first ship gets back.
-	{
-		if (iShipCount > (iTotalShipCount / 2))
-		{
-			iShipsToLaunch = (iTotalShipCount + 2) / 3;
-
-			AI_clearStrategy(STRATEGY_BUILDUP);
-			AI_setStrategy(STRATEGY_SMALL_WAVES);
+			const int base = (iShipCount * 100) / std::max(1, 100 - pctSent);
+			iShipsToLaunch = (base * GC.getHandicapInfo(eHandicap).getWaves(iWaveIndex)) / 100;
 		}
 	}
-
-	int iMinWaveSize = 3;
-
-	if (iShipCount < iMinWaveSize)
-	{
-		if (iTotalShipCount >= iMinWaveSize)
-		{
-			return;
-		}
-	}
-
-	iShipsToLaunch = std::max(iShipsToLaunch, iMinWaveSize);
-	*/
-	// TAC - AI Revolution - koma13 - END
 	iShipsToLaunch = std::min(iShipsToLaunch, iShipCount);
 
-
 	int iSoldiersToLoad = 0;
+	int iMaxCargo = (iShipsToLaunch * iCargo) / iShipCount;
+	iSoldiersToLoad = std::min(iSoldierCount, iMaxCargo);
 
-	int iMaxCargo = iCargoSpace * iShipsToLaunch / iShipCount;
-	if (iSoldierCount < iMaxCargo)
+	// Load & dispatch
+	int iLoaded = 0;
+	for (int i = 0; i < iShipsToLaunch; ++i)
 	{
-		iSoldiersToLoad = iSoldierCount;
+		CvUnit* const pShip = ships[i];
+		while (iLoaded < iSoldiersToLoad && !pShip->isFull())
+	{
+			loadUnitFromEurope(soldiers[iLoaded++], pShip);
 	}
-//	TAC - AI Revolution - koma13
-//	else if (iSoldierCount < iMaxCargo * 2)
-//	{
-//		iSoldiersToLoad = iSoldierCount / 2;
-//	}
-//	TAC - AI Revolution - koma13
-	else
-	{
-		iSoldiersToLoad = iMaxCargo;
-	}
-
-	if (iSoldiersToLoad > 0)
-	{
-		int iSoldiersLoaded = 0;
-		for (int i = 0; i < iShipCount; ++i)
+		CvPlot* const pTarget = AI_getImperialShipSpawnPlot();
+		if (!pShip->atPlot(pTarget))
 		{
-			CvUnit* pLoopUnit = ships[i];
-			FAssert(pLoopUnit != NULL);
-			if (i < iShipsToLaunch)
-			{
-				while (iSoldiersLoaded < iSoldiersToLoad)
-				{
-					CvUnit* pSoldier = soldiers[iSoldiersLoaded];
-					FAssert(pSoldier != NULL);
-
-					iSoldiersLoaded++;
-					loadUnitFromEurope(pSoldier, pLoopUnit);
-					if (pLoopUnit->isFull())
-					{
-						break;
-					}
-				}
-
-				CvPlot* pTargetPlot = AI_getImperialShipSpawnPlot();
-
-				if (!pLoopUnit->atPlot(pTargetPlot))
-				{
-					pLoopUnit->setXY(pTargetPlot->getX_INLINE(), pTargetPlot->getY_INLINE(), false, false, false);
-				}
-
-
-				pLoopUnit->crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
-			}
+			pShip->setXY(pTarget->getX_INLINE(), pTarget->getY_INLINE(), false, false, false);
 		}
-	}
-	else if (iSoldierCount == 0)
-	{
-		//Lets wander around the New World!
-		for (int i = 0; i < iShipCount; ++i)
-		{
-			CvUnit* pLoopUnit = ships[i];
-			FAssert(pLoopUnit != NULL);
-
-			CvPlot* pTargetPlot = AI_getImperialShipSpawnPlot();
-
-			if (!pLoopUnit->atPlot(pTargetPlot))
-			{
-				pLoopUnit->setXY(pTargetPlot->getX_INLINE(), pTargetPlot->getY_INLINE(), false, false, false);
-			}
-
-			pLoopUnit->crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
-		}
+		pShip->crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
 	}
 
+	// Advance to next wave & reset counter
+	AI_setWaveIndex(std::min(iWaveIndex + 1, iNumWaves));
+	AI_setLastWave(0);
 }
 
 void CvPlayerAI::AI_doUnitAIWeights()
