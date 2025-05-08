@@ -5038,7 +5038,7 @@
 			<bUnarmed>1</bUnarmed>
 			<bNoDefensiveBonus>0</bNoDefensiveBonus>
 			<iCombatChange>1</iCombatChange>
-			<iMovesChange>0</iMovesChange>
+			<iMovesChange>1</iMovesChange>
 			<bMoveIntoPeak>1</bMoveIntoPeak>
 			<iWorkRate>100</iWorkRate>
 			<iMissionaryRate>0</iMissionaryRate>

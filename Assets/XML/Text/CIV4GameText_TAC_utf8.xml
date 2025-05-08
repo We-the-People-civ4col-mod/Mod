@@ -846,6 +846,13 @@
 		<German>Zufallsgenerierte Karte mit großen zusammenhängenden Klimazonen und Gebirgszügen</German>
 		<Russian>Случайная карта, которая имитирует земную тектонику плит, геострофические и муссонные ветры и осадки.</Russian>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MAP_SCRIPT_FW_DESCR_ABMPICOLI_TWEAKS</Tag>
+		<English>Random map that simulates earth-like plate tectonics, geostrophic and monsoon winds and rainfall. Extra tweaks to get less uniform terrain</English>
+		<French>Carte aléatoire qui simule la tectonique terrestre, la géostrophie, la mousson et la pluie. Ajustements supplémentaires pour obtenir un terrain moins uniforme</French>
+		<German>Zufallsgenerierte Karte mit großen zusammenhängenden Klimazonen und Gebirgszügen. Zusätzliche Anpassungen, um weniger einheitliches Terrain zu erhalten.</German>
+		<Russian>Случайная карта, которая имитирует земную тектонику плит, геострофические и муссонные ветры и осадки. Дополнительные настройки для получения менее однородного рельефа.</Russian>
+	</TEXT>
 	<!--<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_MARATHON_Old</Tag>
 		<English>Marathon, 2 Phasen</English>

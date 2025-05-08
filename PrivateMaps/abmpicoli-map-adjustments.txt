@@ -1,0 +1,68 @@
+        # Abmpicoli change: this break should not be "sequential": it generates 
+        # This step does two things:
+        # It breaks hills and peaks into smaller units.
+        # It 
+        
+        
+        limit = mc.width * mc.height
+        print "abmpicoli change v2025-05-02 213100"
+        max_score= 5*mc.PEAK*mc.PEAK + 2*mc.HILLS*mc.HILLS + 2*mc.LAND*mc.LAND
+        print "abmpicoli peak="+str(mc.PEAK)+": hills=" + str(mc.HILLS) + ": land=" + str(mc.LAND) +": ocean = " + str(mc.OCEAN)
+        min_score= 0.5*mc.PEAK*mc.PEAK + 0.5*mc.HILLS*mc.HILLS + 2*mc.LAND*mc.LAND
+        prime=PRand.randint(5,17)*2+1
+        while limit % prime == 0 or limit % 3 == 0:
+            prime += 2
+        print "abmpicoli prime="+str(prime) + "; min_score="+str(min_score)+", max_score="+str(max_score) + ", width="+str(mc.width)+"; height="+str(mc.height)
+        
+        for index in range(limit):
+            i = ( index * prime ) % limit
+            x = i % mc.width
+            y = i // mc.width
+            issue_score=0
+            this_plot=self.plotMap[i]
+            if this_plot != mc.OCEAN:
+                issue_score = this_plot * this_plot
+                for direction in range(1,9,1):
+                    xx,yy = GetXYFromDirection(x,y,direction)
+                    if xx < 0 or xx >= mc.width or yy < 0 or yy >= mc.height:
+                        continue
+                    ii = GetIndex(xx,yy)
+                    the_plot=self.plotMap[ii]
+                    if the_plot >= 0 :
+                        issue_score=issue_score + the_plot*the_plot
+                attempts=0
+                while ( issue_score < min_score or issue_score > max_score ) and attempts < 18:
+                    attempts=attempts + 1
+                    operation=1
+                    if issue_score > max_score:
+                        operation = -1
+                        print "abmpicoli too high region at " + str(x)+","+str(y)+": issue score="+str(issue_score) + " attempts="+str(attempts)
+                    else:
+                        operation = 1
+                        print "abmpicoli too flat region at " + str(x)+","+str(y)+": issue score="+str(issue_score)
+
+                    direction=PRand.randint(0,8)
+                    
+                    ii=0
+                    if direction == 0:
+                        ii = i
+                        xx=x
+                        yy=y
+                    else:
+                        xx,yy = GetXYFromDirection(x,y,direction)
+                        if xx < 0 or xx >= mc.width or yy < 0 or yy >= mc.height:
+                            continue
+                        ii=GetIndex(xx,yy)
+                    old_plot = self.plotMap[ii]
+                    new_plot = old_plot + operation
+                    if PRand.random() < 0.1:
+                        new_plot = new_plot + operation
+                    if new_plot < mc.OCEAN: 
+                        continue
+                    if new_plot > mc.PEAK:
+                        continue
+                    issue_score=issue_score - old_plot*old_plot + new_plot*new_plot
+                    self.plotMap[ii] = new_plot
+                    print "abmpicoli changing plot at " + str(xx)+","+str(yy)+"("+str(ii)+") from " + str(old_plot) + " to " + str(self.plotMap[ii]) + " new score=" + str(issue_score)
+                
+                

@@ -60,6 +60,8 @@
 			</Waves>
 			<iWaveTurns>5</iWaveTurns>
 			<Goodies>
+				<GoodyType>GOODY_LOW_GOLD2</GoodyType>
+				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
@@ -232,6 +234,7 @@
 			</Waves>
 			<iWaveTurns>5</iWaveTurns>
 			<Goodies>
+				<GoodyType>GOODY_LOW_GOLD2</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
@@ -404,6 +407,7 @@
 			</Waves>
 			<iWaveTurns>5</iWaveTurns>
 			<Goodies>
+				<GoodyType>GOODY_LOW_GOLD2</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
@@ -576,6 +580,7 @@
 			</Waves>
 			<iWaveTurns>5</iWaveTurns>
 			<Goodies>
+				<GoodyType>GOODY_LOW_GOLD2</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
@@ -748,6 +753,7 @@
 			</Waves>
 			<iWaveTurns>5</iWaveTurns>
 			<Goodies>
+				<GoodyType>GOODY_LOW_GOLD2</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
@@ -920,6 +926,7 @@
 			</Waves>
 			<iWaveTurns>5</iWaveTurns>
 			<Goodies>
+				<GoodyType>GOODY_LOW_GOLD2</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
@@ -1092,6 +1099,7 @@
 			</Waves>
 			<iWaveTurns>5</iWaveTurns>
 			<Goodies>
+				<GoodyType>GOODY_LOW_GOLD2</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>
 				<GoodyType>GOODY_SCOUT</GoodyType>

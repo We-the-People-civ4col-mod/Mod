@@ -19,6 +19,37 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
+			<iExperience>2</iExperience>
+			<iHealing>0</iHealing>
+			<iDamagePrereq>0</iDamagePrereq>
+			<bBad>0</bBad>
+			<bWar>0</bWar>
+			<UnitClass>NONE</UnitClass>
+			<TeachUnitClass>NONE</TeachUnitClass>
+			<iCityGoodyWeight>1000</iCityGoodyWeight>
+			<bWaterGoody>0</bWaterGoody>
+			<bUnique>0</bUnique>
+			<iMinTurnValid>0</iMinTurnValid>
+			<iRandNumHostilesSpawned>0</iRandNumHostilesSpawned>
+			<bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
+			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
+			<bSpawnHostileNatives>0</bSpawnHostileNatives>
+			<bSpawnHostileCriminals>0</bSpawnHostileCriminals>
+			<GoodyWeights/>
+		</GoodyInfo>
+		<GoodyInfo>
+			<Type>GOODY_LOW_GOLD2</Type>
+			<Description>TXT_KEY_GOODY_LOW_GOLD</Description>
+			<Sound>AS2D_GOODY_GOLD</Sound>
+			<AnnounceText>TXT_KEY_GOODY_ANNOUNCE_GOLD</AnnounceText>
+			<ChiefText>TXT_KEY_CHIEF_GOODY_SOME_GOLD</ChiefText>
+			<iGold>50</iGold>
+			<iGoldRand1>574</iGoldRand1>
+			<iGoldRand2>1028</iGoldRand2>
+			<iImmigration>0</iImmigration>
+			<iMapOffset>0</iMapOffset>
+			<iMapRange>0</iMapRange>
+			<iMapProb>0</iMapProb>
 			<iExperience>0</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
@@ -50,7 +81,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -81,7 +112,7 @@
 			<iMapOffset>3</iMapOffset>
 			<iMapRange>3</iMapRange>
 			<iMapProb>80</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -112,7 +143,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>5</iExperience>
+			<iExperience>7</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -143,7 +174,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>100</iHealing>
 			<iDamagePrereq>60</iDamagePrereq>
 			<bBad>0</bBad>
@@ -174,7 +205,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>-50</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>1</bBad>
@@ -205,7 +236,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>-50</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>1</bBad>
@@ -236,7 +267,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -267,7 +298,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>-50</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>1</bBad>
@@ -298,7 +329,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -329,7 +360,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -369,7 +400,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -400,7 +431,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -431,7 +462,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -462,7 +493,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -493,7 +524,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -524,7 +555,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -555,7 +586,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -586,7 +617,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -617,7 +648,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -648,7 +679,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -679,7 +710,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -710,7 +741,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -741,7 +772,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -772,7 +803,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -803,7 +834,7 @@
 			<iMapOffset>3</iMapOffset>
 			<iMapRange>3</iMapRange>
 			<iMapProb>80</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -834,7 +865,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>5</iExperience>
+			<iExperience>7</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -865,7 +896,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -896,7 +927,7 @@
 			<iMapOffset>3</iMapOffset>
 			<iMapRange>3</iMapRange>
 			<iMapProb>80</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -927,7 +958,7 @@
 			<iMapOffset>3</iMapOffset>
 			<iMapRange>3</iMapRange>
 			<iMapProb>80</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -958,7 +989,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -989,7 +1020,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -1020,7 +1051,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -1051,7 +1082,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>0</iExperience>
+			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -1268,7 +1299,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>5</iExperience>
+			<iExperience>7</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -1299,7 +1330,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>5</iExperience>
+			<iExperience>7</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -1485,7 +1516,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>5</iExperience>
+			<iExperience>7</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -1733,7 +1764,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>5</iExperience>
+			<iExperience>7</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -1764,7 +1795,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>5</iExperience>
+			<iExperience>7</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -1795,7 +1826,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>5</iExperience>
+			<iExperience>7</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>
@@ -1826,7 +1857,7 @@
 			<iMapOffset>0</iMapOffset>
 			<iMapRange>0</iMapRange>
 			<iMapProb>0</iMapProb>
-			<iExperience>5</iExperience>
+			<iExperience>7</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
 			<bBad>0</bBad>

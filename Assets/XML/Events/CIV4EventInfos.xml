@@ -88537,8 +88537,8 @@
 			<PythonHelp>getHelpDiscoveryMutiny</PythonHelp>
 			<Button>,Art/Interface/Buttons/Beyond_the_Sword_Atlas.dds,8,5</Button>
 			<iAIValue>500</iAIValue>
-			<iGenericParameter1>UNITCLASS_CONQUISTADOR</iGenericParameter1>
-			<iGenericParameter2>1</iGenericParameter2>
+			<iGenericParameter1>UNITCLASS_REVOLTING_CRIMINAL</iGenericParameter1>
+			<iGenericParameter2>2</iGenericParameter2>
 			<iGenericParameter3>100</iGenericParameter3>
 			<iGenericParameter4>0</iGenericParameter4>
 		</EventInfo>
