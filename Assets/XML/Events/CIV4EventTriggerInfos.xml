@@ -42592,6 +42592,13 @@
 			<iNumPlotsRequired>1</iNumPlotsRequired>
 			<bOwnPlot>0</bOwnPlot>
 			<ePlotType>NONE</ePlotType>
+			<PlotRequirements>
+				<PlotTypes>
+					<ePlotType>PLOT_PEAK</ePlotType>
+					<ePlotType>PLOT_HILLS</ePlotType>
+					<ePlotType>PLOT_LAND</ePlotType>
+				</PlotTypes>
+			</PlotRequirements>
 			<FeaturesRequired/>
 			<TerrainsRequired/>
 			<ImprovementsRequired/>
