@@ -30,6 +30,7 @@ public:
 	void doCommand(CommandTypes eCommand, int iData1, int iData2);
 	CyPlot* getPathEndTurnPlot();
 	bool generatePath(CyPlot* pToPlot, int iFlags = 0, bool bReuse = false, int* piPathTurns = NULL);
+	int  getPathTurns(CyPlot* pToPlot, int iFlags = 0, bool bReuse = false);
 	bool canEnterTerritory(int /*PlayerTypes*/ ePlayer, bool bIgnoreRightOfPassage);
 	bool canEnterArea(int /*PlayerTypes*/ ePlayer, CyArea* pArea, bool bIgnoreRightOfPassage);
 	bool canMoveInto(CyPlot* pPlot, bool bAttack, bool bDeclareWar, bool bIgnoreLoad);

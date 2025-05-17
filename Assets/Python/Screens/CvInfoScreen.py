@@ -7,6 +7,7 @@ from CvPythonExtensions import *
 import CvScreenEnums
 import CvUtil
 import ScreenInput
+import abmpicoliTurnReport
 
 import string
 import time
@@ -59,13 +60,15 @@ class CvInfoScreen:
 
 		self.graphEnd		= CyGame().getGameTurn() - 1
 		self.graphZoom		= self.graphEnd - CyGame().getStartTurn()
-		self.nWidgetCount   = 0
+		self.nWidgetCount	= 0
 		self.nLineCount		= 0
 
 		self.iGraphID		=	0
 		self.iDemographicsID	=	1
 		self.iTopCitiesID	=	2
 		self.iStatsID		=	3
+		self.abmpicoliTurnReportID=4
+		self.abmpicoliReportData=[]
 
 		self.iActiveTab = self.iGraphID
 
@@ -90,6 +93,7 @@ class CvInfoScreen:
 
 		self.graphLeftButtonID = ""
 		self.graphRightButtonID = ""
+		self.abmpicoliReportButtonID = ""
 
 
 ################################################## GRAPH ###################################################
@@ -115,18 +119,18 @@ class CvInfoScreen:
 		self.W_GRAPH = self.W_SCREEN - self.X_GRAPH - self.X_MARGIN
 		self.H_GRAPH = self.H_SCREEN - 170
 
-		self.W_LEFT_BUTTON  = 20
-		self.H_LEFT_BUTTON  = 20
-		self.X_LEFT_BUTTON  = self.X_GRAPH
-		self.Y_LEFT_BUTTON  = self.Y_GRAPH + self.H_GRAPH
+		self.W_LEFT_BUTTON	= 20
+		self.H_LEFT_BUTTON	= 20
+		self.X_LEFT_BUTTON	= self.X_GRAPH
+		self.Y_LEFT_BUTTON	= self.Y_GRAPH + self.H_GRAPH
 
-		self.W_RIGHT_BUTTON  = self.W_LEFT_BUTTON
-		self.H_RIGHT_BUTTON  = self.H_LEFT_BUTTON
-		self.X_RIGHT_BUTTON  = self.X_GRAPH + self.W_GRAPH - self.W_RIGHT_BUTTON
-		self.Y_RIGHT_BUTTON  = self.Y_LEFT_BUTTON
+		self.W_RIGHT_BUTTON	 = self.W_LEFT_BUTTON
+		self.H_RIGHT_BUTTON	 = self.H_LEFT_BUTTON
+		self.X_RIGHT_BUTTON	 = self.X_GRAPH + self.W_GRAPH - self.W_RIGHT_BUTTON
+		self.Y_RIGHT_BUTTON	 = self.Y_LEFT_BUTTON
 
-		self.X_LEFT_LABEL   = self.X_LEFT_BUTTON + self.W_LEFT_BUTTON + 10
-		self.X_RIGHT_LABEL  = self.X_RIGHT_BUTTON - 10
+		self.X_LEFT_LABEL	= self.X_LEFT_BUTTON + self.W_LEFT_BUTTON + 10
+		self.X_RIGHT_LABEL	= self.X_RIGHT_BUTTON - 10
 		self.Y_LABEL		= self.Y_GRAPH + self.H_GRAPH + 3
 
 		self.H_LEGEND = 0
@@ -286,6 +290,7 @@ class CvInfoScreen:
 		self.TEXT_DEMOGRAPHICS_SMALL = localText.getText("TXT_KEY_DEMO_SCREEN_TITLE", ())
 		self.TEXT_TOP_CITIES = localText.getText("TXT_KEY_WONDERS_SCREEN_TOP_CITIES_TEXT", ())
 		self.TEXT_STATS = localText.getText("TXT_KEY_INFO_SCREEN_STATISTICS_TITLE", ())
+		self.ABMPICOLI_REPORT = "REPORT"
 
 		self.TEXT_SHOW_ALL_PLAYERS =  localText.getText("TXT_KEY_SHOW_ALL_PLAYERS", ())
 		self.TEXT_SHOW_ALL_PLAYERS_GRAY = localText.getColorText("TXT_KEY_SHOW_ALL_PLAYERS", (), ColorTypes.COLOR_PLAYER_GRAY).upper()
@@ -309,9 +314,9 @@ class CvInfoScreen:
 		self.TEXT_LAND_AREA = localText.getText("TXT_KEY_DEMO_SCREEN_LAND_AREA_TEXT", ())
 		self.TEXT_POPULATION = localText.getText("TXT_KEY_DEMO_SCREEN_POPULATION_TEXT", ())
 
-		self.TEXT_ECONOMY_MEASURE = (u"  %c" % CyGame().getSymbolID(FontSymbols.BULLET_CHAR)) + localText.getText("TXT_KEY_DEMO_SCREEN_ECONOMY_MEASURE", ())
+		self.TEXT_ECONOMY_MEASURE = (u"	 %c" % CyGame().getSymbolID(FontSymbols.BULLET_CHAR)) + localText.getText("TXT_KEY_DEMO_SCREEN_ECONOMY_MEASURE", ())
 		self.TEXT_INDUSTRY_MEASURE = (u"  %c" % CyGame().getSymbolID(FontSymbols.BULLET_CHAR)) + localText.getText("TXT_KEY_DEMO_SCREEN_INDUSTRY_MEASURE", ())
-		self.TEXT_AGRICULTURE_MEASURE = (u"  %c" % CyGame().getSymbolID(FontSymbols.BULLET_CHAR)) + localText.getText("TXT_KEY_DEMO_SCREEN_AGRICULTURE_MEASURE", ())
+		self.TEXT_AGRICULTURE_MEASURE = (u"	 %c" % CyGame().getSymbolID(FontSymbols.BULLET_CHAR)) + localText.getText("TXT_KEY_DEMO_SCREEN_AGRICULTURE_MEASURE", ())
 		self.TEXT_MILITARY_MEASURE = ""
 		self.TEXT_LAND_AREA_MEASURE = (u"  %c" % CyGame().getSymbolID(FontSymbols.BULLET_CHAR)) + localText.getText("TXT_KEY_DEMO_SCREEN_LAND_AREA_MEASURE", ())
 		self.TEXT_POPULATION_MEASURE = ""
@@ -355,13 +360,13 @@ class CvInfoScreen:
 					[-1, -1],
 					[-1, -1]]
 
-		self.iCityValues =   [  0,
+		self.iCityValues =	 [	0,
 					0,
 					0,
 					0,
 					0]
 
-		self.pCityPointers = [  0,
+		self.pCityPointers = [	0,
 					0,
 					0,
 					0,
@@ -481,7 +486,7 @@ class CvInfoScreen:
 	def placeTabs (self):
 		screen = self.getScreen()
 
-		Tabs = [self.TEXT_GRAPH, self.TEXT_DEMOGRAPHICS, self.TEXT_TOP_CITIES, self.TEXT_STATS]
+		Tabs = [self.TEXT_GRAPH, self.TEXT_DEMOGRAPHICS, self.TEXT_TOP_CITIES, self.TEXT_STATS,self.ABMPICOLI_REPORT]
 		ExitTabWidth = 120
 		NumTabs = len(Tabs)
 		TabWidth = (self.W_SCREEN - ExitTabWidth) / NumTabs
@@ -555,14 +560,32 @@ class CvInfoScreen:
 
 		elif(self.iActiveTab == self.iStatsID):
 			self.drawStatsTab()
-			
-		for i in range(4):
+		elif(self.iActiveTab == self.abmpicoliTurnReportID):
+			self.drawAbmpicoliReportTab()
+		
+		for i in range(5):
 			if (i != self.iActiveTab):
 				self.setTab(i, False)
 			else:
 				self.setTab(i, True)
 
 #################################################### GRAPH ##################################################
+
+
+	def drawAbmpicoliReportTab(self):
+		screen=self.getScreen()
+		self.abmpicoliReportButtonID=self.getNextWidgetName()
+		self.abmpicoliReportTextID=self.getNextWidgetName()
+		szText="EMPTY?"
+		print "abmpicoli draw report tab abmpicoliReportButtonID="+str(self.abmpicoliReportButtonID) + "; abmpicoliReportTextID="+str(self.abmpicoliReportTextID)
+		if len(self.abmpicoliReportData) > 0:
+			szText="\n".join(self.abmpicoliReportData)
+		screen.addPanel(self.abmpicoliReportButtonID, "CLICK ME", "CLICK ME", True, True, 10, 10, 300, 300, PanelStyles.PANEL_STYLE_IN, WidgetTypes.WIDGET_GENERAL, -1, -1)
+		screen.enable(self.abmpicoliReportButtonID,True)
+		
+		
+		screen.addMultilineText( self.abmpicoliReportTextID, szText, 40, 40, 800, 600, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+		
 
 	def drawGraphTab(self):
 
@@ -607,7 +630,7 @@ class CvInfoScreen:
 		self.szTurnsDropdownWidget = self.getNextWidgetName()
 		screen.addDropDownBoxGFC(self.szTurnsDropdownWidget, self.X_ZOOM_DROPDOWN, self.Y_ZOOM_DROPDOWN, self.W_ZOOM_DROPDOWN, WidgetTypes.WIDGET_GENERAL, -1, -1, FontTypes.GAME_FONT)
 		start = CyGame().getStartTurn()
-		now   = CyGame().getGameTurn()
+		now	  = CyGame().getGameTurn()
 		nTurns = now - start - 1
 		screen.addPullDownString(self.szTurnsDropdownWidget, self.TEXT_ENTIRE_HISTORY, 0, 0, False)
 		self.dropDownTurns.append(nTurns)
@@ -628,7 +651,7 @@ class CvInfoScreen:
 
 	def checkGraphBounds(self):
 		start = CyGame().getStartTurn()
-		end   = CyGame().getGameTurn() - 1
+		end	  = CyGame().getGameTurn() - 1
 		if (self.graphEnd - self.graphZoom < start):
 			self.graphEnd = start + self.graphZoom
 		if (self.graphEnd > end):
@@ -744,8 +767,8 @@ class CvInfoScreen:
 		self.drawGraphLines()
 
 		# Draw x-labels
-		self.drawXLabel( screen, firstTurn, self.X_LEFT_LABEL,  CvUtil.FONT_LEFT_JUSTIFY  )
-		self.drawXLabel( screen, lastTurn,  self.X_RIGHT_LABEL, CvUtil.FONT_RIGHT_JUSTIFY )
+		self.drawXLabel( screen, firstTurn, self.X_LEFT_LABEL,	CvUtil.FONT_LEFT_JUSTIFY  )
+		self.drawXLabel( screen, lastTurn,	self.X_RIGHT_LABEL, CvUtil.FONT_RIGHT_JUSTIFY )
 
 		# Don't draw anything the first turn
 		if (firstTurn >= lastTurn):
@@ -1113,7 +1136,7 @@ class CvInfoScreen:
 			if (iDistance > 350):
 				iDistance = 350
 
-			#print "City # " + str(iWidgetLoop) + "  " + pCity.getName()
+			#print "City # " + str(iWidgetLoop) + "	 " + pCity.getName()
 
 			self.szCityAnimWidgets.append(self.getNextWidgetName())
 			if (pCity.isRevealed(gc.getGame().getActiveTeam(), False)):
@@ -1492,7 +1515,11 @@ class CvInfoScreen:
 		screen = self.getScreen()
 		szWidgetName = inputClass.getFunctionName() + str(inputClass.getID())
 		code = inputClass.getNotifyCode()
-
+		if code == NotifyCode.NOTIFY_CLICKED:
+			print "abmpicoli event="+str(szWidgetName)+":code="+str(code)
+			if szWidgetName == "OnTabTitle4":
+				self.abmpicoliReportData=abmpicoliTurnReport.report()
+			
 		# Slide graph
 		if (szWidgetName == self.graphLeftButtonID and code == NotifyCode.NOTIFY_CLICKED):
 			self.slideGraph(- 2 * self.graphZoom / 5)

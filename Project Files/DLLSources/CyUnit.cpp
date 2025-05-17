@@ -65,6 +65,14 @@ bool CyUnit::generatePath(CyPlot* pToPlot, int iFlags, bool bReuse, int* piPathT
 	return m_pUnit ? m_pUnit->generatePath(pToPlot->getPlot(), iFlags, bReuse, piPathTurns, -1, /*bUseTempFinder*/true, /*bCalledFromPython*/true) : false;
 }
 
+int CyUnit::getPathTurns(CyPlot* pToPlot, int iFlags, bool bReuse)
+{
+	int result=-1;
+	m_pUnit->generatePath(pToPlot->getPlot(), iFlags, bReuse, &result, -1, /*bUseTempFinder*/true, /*bCalledFromPython*/true);
+	return result;
+	
+}
+
 bool CyUnit::canEnterTerritory(int /*PlayerTypes*/ ePlayer, bool bIgnoreRightOfPassage)
 {
 	return m_pUnit ? (int) m_pUnit->canEnterTerritory((PlayerTypes) ePlayer, bIgnoreRightOfPassage) : false;
