@@ -3128,7 +3128,7 @@
 			<FreePromotion>NONE</FreePromotion>
 			<bGraphicalOnly>0</bGraphicalOnly>
 			<bWorksWater>0</bWorksWater>
-			<bWater>1</bWater>
+			<bWater>0</bWater>
 			<bRiver>0</bRiver>
 			<bCapital>0</bCapital>
 			<bNationalWonder>0</bNationalWonder>
@@ -3227,7 +3227,7 @@
 			<FreePromotion>NONE</FreePromotion>
 			<bGraphicalOnly>0</bGraphicalOnly>
 			<bWorksWater>0</bWorksWater>
-			<bWater>1</bWater>
+			<bWater>0</bWater>
 			<bRiver>0</bRiver>
 			<bCapital>0</bCapital>
 			<bNationalWonder>0</bNationalWonder>
