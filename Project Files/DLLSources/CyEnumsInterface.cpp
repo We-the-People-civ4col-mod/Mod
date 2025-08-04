@@ -1259,7 +1259,7 @@ void CyEnumsPythonInterface()
 		.value("WBPOPUP_GAME", WBPOPUP_GAME)
 		.value("NUM_WBPOPUP", NUM_WBPOPUP)
 		;
-	python::enum_<EventType>("EventType")
+	python::enum_<MouseKeyboardEventType>("EventType")
 		.value("EVT_LBUTTONDOWN", EVT_LBUTTONDOWN)
 		.value("EVT_LBUTTONDBLCLICK", EVT_LBUTTONDBLCLICK)
 		.value("EVT_RBUTTONDOWN", EVT_RBUTTONDOWN)

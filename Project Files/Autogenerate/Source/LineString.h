@@ -23,8 +23,11 @@ public:
 	void trim();
 	void killFirstChar(char character);
 
+	LineString& assign(int i);
 	LineString& append(int i);
+	LineString& assign(const char*);
 	LineString& append(const char*);
+	LineString& assign(std::string);
 	LineString& append(std::string);
 
 	operator const char*() const;

@@ -94,6 +94,7 @@
     <ClCompile Include="Source\EnumLengthSetupGen.cpp" />
     <ClCompile Include="Source\EnumMap.cpp" />
     <ClCompile Include="Source\FileAccess.cpp" />
+    <ClCompile Include="Source\InfoArray.cpp" />
     <ClCompile Include="Source\LineString.cpp" />
     <ClCompile Include="Source\Main.cpp" />
     <ClCompile Include="Source\OutputHandler.cpp" />
@@ -107,6 +108,7 @@
     <ClInclude Include="Source\EnumLengthSetupGen.h" />
     <ClInclude Include="Source\EnumMap.h" />
     <ClInclude Include="Source\FileAccess.h" />
+    <ClInclude Include="Source\InfoArray.h" />
     <ClInclude Include="Source\LineString.h" />
     <ClInclude Include="Source\OutputHandler.h" />
     <ClInclude Include="Source\SourceReader.h" />

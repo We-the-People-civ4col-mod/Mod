@@ -1592,7 +1592,7 @@ enum WorldBuilderPopupTypes
 	NUM_WBPOPUP
 };
 
-enum EventType
+enum MouseKeyboardEventType
 {
 	// mouseEvent
 	EVT_LBUTTONDOWN = 1,

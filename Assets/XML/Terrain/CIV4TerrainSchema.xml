@@ -548,4 +548,8 @@
 	<ElementType name="Civ4ImprovementInfos" content="eltOnly">
 		<element type="ImprovementInfos" minOccurs="0" maxOccurs="1"/>
 	</ElementType>
+	<ElementType name="PlotType" content="textOnly"/>
+	<ElementType name="PlotTypeInfos" content="eltOnly">
+		<element type="PlotType" maxOccurs="*"/>
+	</ElementType>
 </Schema>

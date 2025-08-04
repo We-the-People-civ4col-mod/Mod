@@ -579,7 +579,7 @@
 		<element type="CivilizationInfo" maxOccurs="*"/>
 	</ElementType>
 	<ElementType name="Civ4LeaderHeadInfos" content="eltOnly">
-		<element type="LeaderHeadInfos" minOccurs="0" maxOccurs="*"/>
+		<element type="LeaderHeadInfos" />
 	</ElementType>
 	<ElementType name="Civ4TraitInfos" content="eltOnly">
 		<element type="TraitInfos"/>

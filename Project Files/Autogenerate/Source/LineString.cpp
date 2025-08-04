@@ -131,9 +131,29 @@ LineString& LineString::append(int i)
 	return append(buffer.str());
 }
 
+LineString& LineString::assign(int i)
+{
+	std::ostringstream buffer;
+	buffer << i;
+
+	return assign(buffer.str());
+}
+
+LineString& LineString::assign(const char* str)
+{
+	std::string::assign(str);
+	return *this;
+}
+
 LineString& LineString::append(const char* str)
 {
 	std::string::append(str);
+	return *this;
+}
+
+LineString& LineString::assign(std::string str)
+{
+	std::string::assign(str);
 	return *this;
 }
 

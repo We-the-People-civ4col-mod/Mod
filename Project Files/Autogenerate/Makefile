@@ -58,6 +58,7 @@ AUTO_HEADER = \
 	$(AUTO_SOURCE)\EnumLengthSetupGen.h \
 	$(AUTO_SOURCE)\EnumMap.h \
 	$(AUTO_SOURCE)\FileAccess.h \
+	$(AUTO_SOURCE)\InfoArray.h \
 	$(AUTO_SOURCE)\LineString.h \
 	$(AUTO_SOURCE)\OutputHandler.h \
 	$(AUTO_SOURCE)\SourceReader.h \
@@ -72,6 +73,7 @@ AUTO_OBJ = \
 	$(TEMP_AUTO_TARGET)\EnumLengthSetupGen.obj \
 	$(TEMP_AUTO_TARGET)\EnumMap.obj \
 	$(TEMP_AUTO_TARGET)\FileAccess.obj \
+	$(TEMP_AUTO_TARGET)\InfoArray.obj \
 	$(TEMP_AUTO_TARGET)\LineString.obj \
 	$(TEMP_AUTO_TARGET)\OutputHandler.obj \
 	$(TEMP_AUTO_TARGET)\SourceReader.obj \
@@ -85,6 +87,7 @@ $(TEMP_AUTO_TARGET)\EnumGen.obj: $(AUTO_SOURCE)\EnumGen.cpp $(AUTO_HEADER)
 $(TEMP_AUTO_TARGET)\EnumGen.obj: $(AUTO_SOURCE)\EnumLengthSetupGen.cpp $(AUTO_HEADER)
 $(TEMP_AUTO_TARGET)\EnumMap.obj: $(AUTO_SOURCE)\EnumMap.cpp $(AUTO_HEADER)
 $(TEMP_AUTO_TARGET)\FileAccess.obj: $(AUTO_SOURCE)\FileAccess.cpp $(AUTO_HEADER)
+$(TEMP_AUTO_TARGET)\InfoArray.obj: $(AUTO_SOURCE)\InfoArray.cpp $(AUTO_HEADER)
 $(TEMP_AUTO_TARGET)\LineString.obj: $(AUTO_SOURCE)\LineString.cpp $(AUTO_HEADER)
 $(TEMP_AUTO_TARGET)\OutputHandler.obj: $(AUTO_SOURCE)\OutputHandler.cpp $(AUTO_HEADER)
 $(TEMP_AUTO_TARGET)\SourceReader.obj: $(AUTO_SOURCE)\SourceReader.cpp $(AUTO_HEADER)

@@ -3,6 +3,7 @@
 #include "FileAccess.h"
 #include "EnumGen.h"
 #include "EnumLengthSetupGen.h"
+#include "InfoArray.h"
 
 
 void readXMLFiles()
@@ -24,18 +25,9 @@ int main()
 	TextFile::setup();
 	readXMLFiles();
 
-	{
-		//EnumGen("AreaAI", 7);
-		//EnumGen("CityPlot", 25, "NUM_CITY_PLOTS");
-		//EnumGen("Contact", 12);
-		//EnumGen("Emotion", 5);
-		//EnumGen("Feat", 10);
-		//EnumGen("Strategy", 13);
-		//EnumGen("WarPlan", 8);
-	}
-
 	EnumMapGen EnumMaps;
 	EnumLengthSetupGen LengthSetup;
+	InfoArray info;
 
 	return 0;
 }

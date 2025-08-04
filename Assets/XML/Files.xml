@@ -127,6 +127,11 @@
 			<File>GameInfo/CIV4EmphasizeInfo.xml</File>
 		</Files>
 	</EmphasizeTypes>
+	<EventTypes>
+		<Files>
+			<File>Events/CIV4EventInfos.xml</File>
+		</Files>
+	</EventTypes>
 	<FatherTypes>
 		<Files>
 			<File>GameInfo/CIV4FatherInfos.xml</File>
@@ -177,6 +182,11 @@
 		</Files>
 		<InfoClass>CvInfoBase</InfoClass>
 	</InvisibleTypes>
+	<LeaderHeadTypes>
+		<Files>
+			<File>Civilizations/CIV4LeaderHeadInfos.xml</File>
+		</Files>
+	</LeaderHeadTypes>
 	<MemoryTypes>
 		<Files>
 			<File>BasicInfos/CIV4MemoryInfos.xml</File>
@@ -191,6 +201,12 @@
 			<File>GameInfo/CIV4PlayerOptionInfos.xml</File>
 		</Files>
 	</PlayerOptionTypes>
+	<PlotTypes>
+		<Files>
+			<File>Terrain/PlotTypeInfos.xml</File>
+		</Files>
+		<HardcodingType>TYPE_NO_FILE</HardcodingType>
+	</PlotTypes>
 	<ProfessionTypes>
 		<Files>
 			<File>Units/CIV4ProfessionInfos.xml</File>
