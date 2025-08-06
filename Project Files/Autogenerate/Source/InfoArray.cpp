@@ -76,6 +76,14 @@ void InfoArray::InfoArrayVars::setup()
 			m_types.push_back(TYPE_VAR);
 		}
 	}
+
+	m_className.assign(INFOARRAY_NAME).append("<").append(getType(0));
+	for (int i = 1; i < size(); ++i)
+	{
+		m_className.append(", ").append(getType(i));
+	}
+
+	m_className.append(">");
 }
 
 InfoArray::InfoArrayVars::InfoArrayVars(const std::string& file, const std::size_t offset)
@@ -158,6 +166,11 @@ LineString InfoArray::InfoArrayVars::getName(int iIndex) const
 	return "value";
 }
 
+LineString InfoArray::InfoArrayVars::getClassName() const
+{
+	return m_className;
+}
+
 LineString InfoArray::InfoArrayVars::getBitSize(int iIndex, bool bHardcoded) const
 {
 	switch (m_types[iIndex])
@@ -189,8 +202,26 @@ LineString InfoArray::InfoArrayVars::getBitSize(int iIndex, bool bHardcoded) con
 	return "16";
 }
 
+LineString InfoArray::InfoArrayVars::getCast(int iIndex, LineString variable) const
+{
+	switch (m_types[iIndex])
+	{
+	case TYPE_TYPES:
+		return LineString("static_cast<").append(m_variables[iIndex]).append(">(").append(variable).append(")");
+
+	case TYPE_TYPE:
+		return LineString(m_variables[iIndex]).append("().assignFromInt(").append(variable).append(")");
+
+	case TYPE_VAR:
+		return variable;
+	}
+
+	return LineString("NOT WORKING CORRECTLY");
+}
+
 InfoArray::InfoArray()
 	: m_MaxLength(0)
+	, VARIABLES(NULL)
 {
 	const std::vector<SourceFileContainer>& files = SourceFileList::getInstance().getFiles();
 
@@ -243,6 +274,16 @@ InfoArray::InfoArray()
 		}
 	}
 
+	m_cpp.printLine("#include \"../CvGameCoreDLL.h\"");
+	m_cpp.printLine("#include \"AUTO_InfoArray.h\"");
+	m_cpp.printLine("#include \"../CvEnums.h\"");
+	m_cpp.printLine("#include \"../CvInfoArrayInit.h\"");
+	m_cpp.printLine();
+
+
+	m_header.printLine("#pragma once");
+	m_header.printLine();
+	m_header.printLine("#include <vector>");
 	m_header.printLine();
 	m_header.printLine("namespace InfoArrayTypes");
 	m_header.addStartBracket();
@@ -252,15 +293,11 @@ InfoArray::InfoArray()
 	m_header.printLine("TYPE_CHAR,");
 	m_header.printLine("TYPE_UCHAR,");
 	m_header.printLine("TYPE_SHORT,");
-	//m_header.printLine("TYPE_USHORT,");
+	m_header.printLine("TYPE_OFFSET_UCHAR,");
 	m_header.printLine("TYPE_POINTER_CHAR,");
 	m_header.printLine("TYPE_POINTER_UCHAR,");
 	m_header.printLine("TYPE_POINTER_SHORT,");
-	//m_header.printLine("TYPE_POINTER_USHORT,");
-	//m_header.printLine("TYPE_EXTRA_CHAR,");
-	//m_header.printLine("TYPE_EXTRA_UCHAR,");
-	//m_header.printLine("TYPE_EXTRA_SHORT,");
-	//m_header.printLine("TYPE_EXTRA_USHORT,");
+	m_header.printLine("TYPE_POINTER_OFFSET_UCHAR,");
 	m_header.addEndBracket(true);
 	m_header.addEndBracket();
 	m_header.printLine();
@@ -307,26 +344,28 @@ InfoArray::InfoArray()
 
 	for (unsigned int i = 0; i < arrayTypes.size(); ++i)
 	{
-		addClass(arrayTypes[i]);
+		VARIABLES = &arrayTypes[i];
+		addClass();
 	}
 
 
 
 	m_header.saveFile("InfoArray.h");
+	m_cpp.saveFile("InfoArray.cpp");
 }
 
-void InfoArray::addClass(const InfoArray::InfoArrayVars& variables)
+void InfoArray::addClass()
 {
-	const unsigned int NUM_VARIABLES = variables.size();
+	const unsigned int NUM_VARIABLES = VARIABLES->size();
 
 	m_header.printLine("template <>");
 
 	LineString className;
-	className.assign(INFOARRAY_NAME).append("<").append(variables.getTypeWithPrefix(0));
-	//for (int i = 1; i < m_MaxLength; ++i)
+	className.assign(INFOARRAY_NAME).append("<").append(VARIABLES->getTypeWithPrefix(0));
+
 	for (unsigned int i = 1; i < NUM_VARIABLES; ++i)
 	{
-		className.append(", ").append(variables.getTypeWithPrefix(i));
+		className.append(", ").append(VARIABLES->getTypeWithPrefix(i));
 	}
 
 	className.append(">");
@@ -371,23 +410,43 @@ void InfoArray::addClass(const InfoArray::InfoArrayVars& variables)
 
 	func_constructor();
 	func_deconstructor();
-	func_length();
+	
+	m_header.printLine();
 
-	for (unsigned int i = 0; i < NUM_VARIABLES; ++i)
+	if (NUM_VARIABLES == 1)
 	{
-		func_get(i);
+		func_get();
+	}
+	else
+	{
+		for (unsigned int i = 0; i < NUM_VARIABLES; ++i)
+		{
+			func_get(i);
+		}
 	}
 
 	m_header.printLine();
+	func_length();
+
+	m_header.printLine();
+	
+	func_assignFrom();
+
+	m_header.printLine();
+	
 	m_header.printLineNoIndent("private:");
+	func_reset();
 	m_header.printLine("union");
 	m_header.addStartBracket();
+	
+	/*
 	if (NUM_VARIABLES == 3)
 	{
 		m_header.printLine("char m_Array_char[4];");
 		m_header.printLine("unsigned char m_Array_uchar[4];");
 	}
 	else if (NUM_VARIABLES <= 4)
+	*/
 	{
 		m_header.printLine("char m_Array_char[4];");
 		m_header.printLine("unsigned char m_Array_uchar[4];");
@@ -412,18 +471,189 @@ void InfoArray::addClass(const InfoArray::InfoArrayVars& variables)
 void InfoArray::func_constructor()
 {
 	m_header.printLine(INFOARRAY_NAME, "();");
+
+	m_cpp.printLine(VARIABLES->getClassName(), "::", INFOARRAY_NAME, "()");
+	m_cpp.printLine("\t: m_pArray_short(NULL)");
+	m_cpp.printLine("\t, m_iLength(0)");
+	m_cpp.printLine("\t, m_ArrayType(InfoArrayTypes::TYPE_CHAR)");
+	m_cpp.printLine("\t, m_iExtra(0)");
+	m_cpp.addStartBracket();
+	m_cpp.addEndBracket();
+	m_cpp.printLine();
 }
 
 void InfoArray::func_deconstructor()
 {
 	m_header.printLine("~", INFOARRAY_NAME, "();");
+
+	m_cpp.printLine(VARIABLES->getClassName(), "::~", INFOARRAY_NAME, "()");
+	m_cpp.addStartBracket();
+	m_cpp.printLine("reset();");
+	m_cpp.addEndBracket();
+	m_cpp.printLine();
 }
 
 void InfoArray::func_length()
 {
 	m_header.printLine("unsigned int length() const;");
+
+	m_cpp.printLine("unsigned int ", VARIABLES->getClassName(), "::length() const");
+	m_cpp.addStartBracket();
+	m_cpp.printLine("return m_iLength;");
+	m_cpp.addEndBracket();
+	m_cpp.printLine();
+}
+
+void InfoArray::func_get()
+{
+	m_header.printLine(VARIABLES->getTypeWithPrefix(0), " get(int iIndex) const;");
+
+	m_cpp.printLine(VARIABLES->getType(0), " ", VARIABLES->getClassName(), "::get(int iIndex) const");
+	m_cpp.addStartBracket();
+	m_cpp.printLine("FAssert(iIndex >= 0 && iIndex < (int)m_iLength);");
+	m_cpp.printLine("switch (m_ArrayType)");
+	m_cpp.addStartBracket();
+	m_cpp.printLine("case InfoArrayTypes::TYPE_CHAR:");
+	m_cpp.printLine("\tif (iIndex < 4)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(0, "m_Array_char[iIndex]"), ";");
+	m_cpp.printLine("\tif (iIndex == 4)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(0, "(char)(m_iExtra & 0xFF)"), ";");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(0, "(char)(m_iExtra >> 8)"), ";");
+	
+	m_cpp.printLine("case InfoArrayTypes::TYPE_UCHAR:");
+	m_cpp.printLine("\tif (iIndex < 4)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(0, "m_Array_uchar[iIndex]"), ";");
+	m_cpp.printLine("\tif (iIndex == 4)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(0, "(unsigned char)(m_iExtra & 0xFF)"), ";");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(0, "(unsigned char)(m_iExtra >> 8)"), ";");
+
+	m_cpp.printLine("case InfoArrayTypes::TYPE_SHORT:");
+	m_cpp.printLine("\tif (iIndex < 2)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(0, "m_Array_short[iIndex]"), ";");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(0, "(short)m_iExtra"), ";");
+
+	m_cpp.printLine("case InfoArrayTypes::TYPE_OFFSET_UCHAR:");
+	m_cpp.printLine("\tif (iIndex < 4)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(0, "(int)m_Array_uchar[iIndex] - 1"), ";");
+	m_cpp.printLine("\tif (iIndex == 4)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(0, "(int)((unsigned char)(m_iExtra & 0xFF)) - 1"), ";");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(0, "(int)((unsigned char)(m_iExtra >> 8)) - 1"), ";");
+	
+	m_cpp.printLine("case InfoArrayTypes::TYPE_POINTER_CHAR:");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(0, "m_pArray_char[iIndex]"), ";");
+	
+	m_cpp.printLine("case InfoArrayTypes::TYPE_POINTER_UCHAR:");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(0, "m_pArray_uchar[iIndex]"), ";");
+	
+	m_cpp.printLine("case InfoArrayTypes::TYPE_POINTER_SHORT:");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(0, "m_pArray_short[iIndex]"), ";");
+
+	m_cpp.printLine("case InfoArrayTypes::TYPE_POINTER_OFFSET_UCHAR:");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(0, "m_pArray_uchar[iIndex] - 1"), ";");
+	m_cpp.addEndBracket();
+	m_cpp.printLine("FAssertMsg(false, \"Unreachable condition\");");
+	m_cpp.printLine("return ", VARIABLES->getCast(0, "0"), "; ");
+	m_cpp.addEndBracket();
+	m_cpp.printLine();
 }
 
 void InfoArray::func_get(unsigned int iVarIndex)
 {
+	m_header.printLine(VARIABLES->getTypeWithPrefix(iVarIndex), " get", VARIABLES->getName(iVarIndex), "(int iIndex) const;");
+
+	m_cpp.printLine(VARIABLES->getType(iVarIndex), " ", VARIABLES->getClassName(), "::get", VARIABLES->getName(iVarIndex), "(int iIndex) const");
+	m_cpp.addStartBracket();
+	m_cpp.printLine("FAssert(iIndex >= 0 && iIndex < (int)m_iLength);");
+
+	LineString InternalIndex("const unsigned int iIndexInternal = (iIndex * ");
+	InternalIndex.append(VARIABLES->size()).append(")");
+	if (iVarIndex > 0)
+	{
+		InternalIndex.append(" + ").append(iVarIndex);
+	}
+	InternalIndex.append(";");
+	m_cpp.printLine(InternalIndex);
+
+	m_cpp.printLine("switch (m_ArrayType)");
+	m_cpp.addStartBracket();
+	m_cpp.printLine("case InfoArrayTypes::TYPE_CHAR:");
+	m_cpp.printLine("\tif (iIndexInternal < 4)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(iVarIndex, "m_Array_char[iIndexInternal]"), ";");
+	m_cpp.printLine("\tif (iIndexInternal == 4)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(iVarIndex, "(char)(m_iExtra & 0xFF)"), ";");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(iVarIndex, "(char)(m_iExtra >> 8)"), ";");
+
+	m_cpp.printLine("case InfoArrayTypes::TYPE_UCHAR:");
+	m_cpp.printLine("\tif (iIndexInternal < 4)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(iVarIndex, "m_Array_uchar[iIndexInternal]"), ";");
+	m_cpp.printLine("\tif (iIndexInternal == 4)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(iVarIndex, "(unsigned char)(m_iExtra & 0xFF)"), ";");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(iVarIndex, "(unsigned char)(m_iExtra >> 8)"), ";");
+
+	m_cpp.printLine("case InfoArrayTypes::TYPE_SHORT:");
+	m_cpp.printLine("\tif (iIndexInternal < 2)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(iVarIndex, "m_Array_short[iIndex]"), ";");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(iVarIndex, "(short)m_iExtra"), ";");
+
+	m_cpp.printLine("case InfoArrayTypes::TYPE_OFFSET_UCHAR:");
+	m_cpp.printLine("\tif (iIndexInternal < 4)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(iVarIndex, "(int)m_Array_uchar[iIndexInternal] - 1"), ";");
+	m_cpp.printLine("\tif (iIndexInternal == 4)");
+	m_cpp.printLine("\t\t return ", VARIABLES->getCast(iVarIndex, "(int)((unsigned char)(m_iExtra & 0xFF)) - 1"), ";");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(iVarIndex, "(int)((unsigned char)(m_iExtra >> 8)) - 1"), ";");
+
+	m_cpp.printLine("case InfoArrayTypes::TYPE_POINTER_CHAR:");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(iVarIndex, "m_pArray_char[iIndexInternal]"), ";");
+
+	m_cpp.printLine("case InfoArrayTypes::TYPE_POINTER_UCHAR:");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(iVarIndex, "m_pArray_uchar[iIndexInternal]"), ";");
+
+	m_cpp.printLine("case InfoArrayTypes::TYPE_POINTER_SHORT:");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(iVarIndex, "m_pArray_short[iIndexInternal]"), ";");
+
+	m_cpp.printLine("case InfoArrayTypes::TYPE_POINTER_OFFSET_UCHAR:");
+	m_cpp.printLine("\t return ", VARIABLES->getCast(iVarIndex, "m_pArray_uchar[iIndexInternal] - 1"), ";");
+	m_cpp.addEndBracket();
+	m_cpp.printLine("FAssertMsg(false, \"Unreachable condition\");");
+	m_cpp.printLine("return ", VARIABLES->getCast(iVarIndex, "0"), "; ");
+	m_cpp.addEndBracket();
+	m_cpp.printLine();
+}
+
+void InfoArray::func_assignFrom()
+{
+	LineString variableNames;
+
+	m_header.printLine("void assignFrom(const std::vector<int>& vec);");
+
+	m_cpp.printLine("void ", VARIABLES->getClassName(), "::assignFrom(const std::vector<int>& vec)");
+	m_cpp.addStartBracket();
+	m_cpp.printLine("reset();");
+	m_cpp.printLine("m_iLength = vec.size() / ", LineString(VARIABLES->size()), ";");
+	m_cpp.printLine("CvInfoArrayInit init(vec, m_Array_char, m_Array_uchar, m_Array_short, m_pArray_char, m_pArray_uchar, m_pArray_short);");
+	m_cpp.printLine("m_ArrayType = init.getType();");
+	m_cpp.printLine("m_iExtra = init.getExtra();");
+
+	m_cpp.addEndBracket();
+	m_cpp.printLine();
+}
+
+void InfoArray::func_reset()
+{
+	m_header.printLine("void reset();");
+
+	m_cpp.printLine("void ", VARIABLES->getClassName(), "::reset()");
+	m_cpp.addStartBracket();
+	m_cpp.printLine("if (m_ArrayType == InfoArrayTypes::TYPE_POINTER_CHAR || m_ArrayType == InfoArrayTypes::TYPE_POINTER_UCHAR || m_ArrayType == InfoArrayTypes::TYPE_POINTER_SHORT || m_ArrayType == InfoArrayTypes::TYPE_POINTER_OFFSET_UCHAR)");
+	m_cpp.addStartBracket();
+	m_cpp.printLine("SAFE_DELETE_ARRAY(m_pArray_short);");
+	m_cpp.addEndBracket();
+
+	m_cpp.printLine("m_pArray_short = NULL;");
+	m_cpp.printLine("m_iLength = 0;");
+	m_cpp.printLine("m_ArrayType = InfoArrayTypes::TYPE_CHAR;");
+	m_cpp.printLine("m_iExtra = 0;");
+		
+	m_cpp.addEndBracket();
+	m_cpp.printLine();
 }
