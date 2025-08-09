@@ -1440,6 +1440,9 @@
     <ClInclude Include="DLLSources\CvInfoArrayInit.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\Constants.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">

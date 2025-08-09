@@ -1,23 +1,7 @@
 #include "CvInfoArrayInit.h"
-//#include "CvGameCoreDLL.h"
+#include "Constants.h"
 #include <algorithm>
 
-// DllExport and those constants comes from the same header
-// this is the easiest way to ensure they are defined even without the header
-#ifndef DllExport
-const          int MAX_CHAR = 0x7f;
-const          int MIN_CHAR = (char)0x80;
-const          int MAX_SHORT = 0x7fff;
-const          int MIN_SHORT = (short)0x8000;
-const          int MAX_INT = 0x7fffffff;
-const          int MIN_INT = 0x80000000;
-const unsigned int MAX_UNSIGNED_CHAR = 0xff;
-const unsigned int MIN_UNSIGNED_CHAR = 0x00;
-const unsigned int MAX_UNSIGNED_SHORT = 0xffff;
-const unsigned int MIN_UNSIGNED_SHORT = 0x0000;
-const unsigned int MAX_UNSIGNED_INT = 0xffffffff;
-const unsigned int MIN_UNSIGNED_INT = 0x00000000;
-#endif
 
 CvInfoArrayInit::CvInfoArrayInit(const std::vector<int>& vec, char(&m_Array_char)[4], unsigned char(&m_Array_uchar)[4], short(&m_Array_short)[2], char*& m_pArray_char, unsigned char*& m_pArray_uchar, short*& m_pArray_short)
 	: m_vec(vec)

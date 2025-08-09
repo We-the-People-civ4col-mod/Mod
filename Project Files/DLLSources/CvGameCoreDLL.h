@@ -34,42 +34,14 @@
 
 #define DllExport   __declspec( dllexport )
 
+#include "Constants.h"
+
 // The makefile use version 1310 to compile
-// VC use never versions for IntelliSense
+// VC use newer versions for IntelliSense
 // Used to avoid IntelliSense spamming bogus errors
 #if _MSC_VER == 1310
 # define MakefileCompilation
 #endif
-
-typedef unsigned char    byte;
-typedef unsigned short   word;
-typedef unsigned int     uint;
-typedef unsigned long    dword;
-typedef unsigned __int64 qword;
-typedef wchar_t          wchar;
-
-const          int MAX_CHAR           = 0x7f;
-const          int MIN_CHAR           = (char)0x80;
-const          int MAX_SHORT          = 0x7fff;
-const          int MIN_SHORT          = (short)0x8000;
-const          int MAX_INT            = 0x7fffffff;
-const          int MIN_INT            = 0x80000000;
-const unsigned int MAX_UNSIGNED_CHAR  = 0xff;
-const unsigned int MIN_UNSIGNED_CHAR  = 0x00;
-const unsigned int MAX_UNSIGNED_SHORT = 0xffff;
-const unsigned int MIN_UNSIGNED_SHORT = 0x0000;
-const unsigned int MAX_UNSIGNED_INT   = 0xffffffff;
-const unsigned int MIN_UNSIGNED_INT   = 0x00000000;
-
-#define SAFE_DELETE(p)       { if(p) { delete (p);     (p)=NULL; } }
-#define SAFE_DELETE_ARRAY(p) { if(p) { delete[] (p);   (p)=NULL; } }
-#define SAFE_RELEASE(p)      { if(p) { (p)->Release(); (p)=NULL; } }
-
-#define SQR(x)      ( (x) * (x) )
-#define DEGTORAD(x) ( (float)( (x) * (M_PI / 180) ))
-#define LIMIT_RANGE(low, value, high) value = (value < low ? low : (value > high ? high : value));
-#define M_PI       3.14159265358979323846
-#define fM_PI		3.141592654f		//!< Pi (float)
 
 // Unused and disabled for now to avoid cppcheck complaining
 /*
