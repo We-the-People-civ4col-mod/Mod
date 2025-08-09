@@ -27,6 +27,13 @@ EnumMapGen::EnumMapTypes::EnumMapTypes(std::string input)
 	m_default.assign("0");
 
 	std::size_t offset = input.find(",");
+	if (offset > input.length())
+	{
+		// no commas means something went wrong and it's likely triggering on ReadEnumMap
+		// return and let isValid kill this one
+		return;
+	}
+
 	m_index = input.substr(0, offset);
 	m_index.trim();
 	m_varable = input.substr(offset + 1);
@@ -1127,6 +1134,11 @@ bool EnumMapGen::EnumMapTypes::isValid() const
 	}
 
 	if (m_varable.substr(0, 8).compare("VARIABLE") == 0)
+	{
+		return false;
+	}
+
+	if (m_index.compare("IndexType") == 0)
 	{
 		return false;
 	}
