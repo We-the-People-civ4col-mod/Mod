@@ -501,8 +501,8 @@ public:
 	bool isAlwaysHeal() const;
 	void changeAlwaysHealCount(int iChange);
 
-	int getHillsDoubleMoveCount() const;
-	bool isHillsDoubleMove() const;
+	int getHillOrPeakDoubleMoveCount() const;
+	bool isHillOrPeakDoubleMove() const;
 	void changeHillsDoubleMoveCount(int iChange);
 
 	int getExtraVisibilityRange() const;
@@ -854,11 +854,32 @@ public:
 
 	void writeDesyncLog(FILE* f) const;
 	std::string CvUnit::debugString() const;
+	bool canMoveIntoPeak() const;
+
+	// Unit movement abilities that may change due to traits, promotions etc.
+	struct UnitVariableMovementAbility
+	{
+		// Modifiers that may allow faster movement
+		// Note that none of these toggle impassables
+		int m_iEnemyRouteCount;
+		int m_iHillOrPeakDoubleMoveCount;
+		int m_iExtraMoves;
+		int m_iExtraMoveDiscount;
+		TerrainArray<int> m_ja_iTerrainDoubleMoveCount;
+		FeatureArray<int> m_ja_iFeatureDoubleMoveCount;
+
+		void reset()
+		{
+			m_iEnemyRouteCount = 0;
+			m_iHillOrPeakDoubleMoveCount = 0;
+			m_iExtraMoves = 0;
+			m_iExtraMoveDiscount = 0;
+			m_ja_iTerrainDoubleMoveCount.reset();
+			m_ja_iFeatureDoubleMoveCount.reset();
+		}
+	};
 
 protected:
-
-	void updateVisibilityCache(int iNewRange);
-
 
 	int m_iID;
 	int m_iGroupID;
@@ -882,12 +903,8 @@ protected:
 	int m_iBlitzCount;
 	int m_iAmphibCount;
 	int m_iRiverCount;
-	int m_iEnemyRouteCount;
 	int m_iAlwaysHealCount;
-	int m_iHillsDoubleMoveCount;
 	int m_iVisibilityRange;
-	int m_iExtraMoves;
-	int m_iExtraMoveDiscount;
 	int m_iExtraWithdrawal;
 	int m_iExtraBombardRate;
 	int m_iExtraEnemyHeal;
@@ -977,8 +994,6 @@ protected:
 
 	EnumMap<PromotionTypes, bool> m_embHasRealPromotion;
 	PromotionArray<int> m_ja_iFreePromotionCount;
-	TerrainArray<int> m_ja_iTerrainDoubleMoveCount;
-	FeatureArray<int> m_ja_iFeatureDoubleMoveCount;
 	TerrainArray<int> m_ja_iExtraTerrainAttackPercent;
 	TerrainArray<int> m_ja_iExtraTerrainDefensePercent;
 	FeatureArray<int> m_ja_iExtraFeatureAttackPercent;
@@ -986,6 +1001,8 @@ protected:
 	UnitClassArray<int> m_ja_iExtraUnitClassAttackModifier;
 	UnitClassArray<int> m_ja_iExtraUnitClassDefenseModifier;
 	UnitCombatArray<int> m_ja_iExtraUnitCombatModifier;
+
+	UnitVariableMovementAbility m_movementAbility;
 
 	bool canAdvance(const CvPlot* pPlot, int iThreshold) const;
 
@@ -1007,13 +1024,13 @@ protected:
 	void doUnloadYield(int iAmount);
 	bool raidWeapons(std::vector<int>& aYields);
 	bool isPrisonerOrSlave() const;
+	void updateVisibilityCache(int iNewRange);
 
-// unit yield cache - start - Nightinggale
-protected:
+	// unit yield cache - start - Nightinggale
 	void updateYieldCache();
 	YieldTypes getYieldUncached() const;
 	YieldTypes m_eCachedYield;
-// unit yield cache - end - Nightinggale
+	// unit yield cache - end - Nightinggale
 	int getCargoValue(TradeLocationTypes eLocation) const;
 	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO - START
 	//int canCrossCoastOnly() const;

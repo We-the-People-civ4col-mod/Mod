@@ -8168,7 +8168,7 @@ int CvUnitAI::AI_promotionValue(PromotionTypes ePromotion)
 		}
 	}
 
-	if (isHillsDoubleMove())
+	if (isHillOrPeakDoubleMove())
 	{
 		if (eUnitAI == UNITAI_COUNTER)
 		{

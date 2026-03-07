@@ -2860,15 +2860,10 @@ m_bNoBadGoodies(false),
 m_bOnlyDefensive(false),
 m_bNoCapture(false),
 m_bQuickCombat(false),
-m_bRivalTerritory(false),
 m_bMilitaryProduction(false),
 m_bFound(false),
 m_bInvisible(false),
 m_bNoDefensiveBonus(false),
-m_bCanMoveImpassable(false),
-m_bCanMoveAllTerrain(false),
-m_bFlatMovementCost(false),
-m_bIgnoreTerrainCost(false),
 m_bMechanized(false),
 m_bLineOfSight(false),
 m_bHiddenNationality(false),
@@ -2904,15 +2899,10 @@ m_bGatherBoat(false),
 m_bAnimal(false),
 // < JAnimals Mod End >
 m_eLeaderPromotion(NO_PROMOTION),
-/// Move Into Peak - start - Nightinggale
-m_bMoveIntoPeak(false),
-/// Move Into Peak - end - Nightinggale
 m_abUpgradeUnitClass(NULL),
 m_abUnitAIType(NULL),
 m_abNotUnitAIType(NULL),
 m_abBuilds(NULL),
-m_abTerrainImpassable(NULL),
-m_abFeatureImpassable(NULL),
 // < JAnimals Mod Start >
 m_abTerrainNative(NULL),
 // < JAnimals Mod End >
@@ -2940,6 +2930,7 @@ m_abProfessionsNotAllowed(NULL),
 m_abPrereqOrBuilding(NULL),
 m_paszUnitNames(NULL)
 {
+	m_baseMovementAbility.reset();
 }
 //------------------------------------------------------------------------------------------------------
 //
@@ -2954,8 +2945,8 @@ CvUnitInfo::~CvUnitInfo()
 	SAFE_DELETE_ARRAY(m_abUnitAIType);
 	SAFE_DELETE_ARRAY(m_abNotUnitAIType);
 	SAFE_DELETE_ARRAY(m_abBuilds);
-	SAFE_DELETE_ARRAY(m_abTerrainImpassable);
-	SAFE_DELETE_ARRAY(m_abFeatureImpassable);
+	SAFE_DELETE_ARRAY(m_baseMovementAbility.m_abTerrainImpassable);
+	SAFE_DELETE_ARRAY(m_baseMovementAbility.m_abFeatureImpassable);
 	// < JAnimals Mod Start >
 	SAFE_DELETE_ARRAY(m_abTerrainNative);
 	// < JAnimals Mod End >
@@ -3256,7 +3247,7 @@ bool CvUnitInfo::isQuickCombat() const
 }
 bool CvUnitInfo::isRivalTerritory() const
 {
-	return m_bRivalTerritory;
+	return m_baseMovementAbility.m_bRivalTerritory;
 }
 bool CvUnitInfo::isMilitaryProduction() const
 {
@@ -3280,19 +3271,19 @@ bool CvUnitInfo::isNoDefensiveBonus() const
 }
 bool CvUnitInfo::isCanMoveImpassable() const
 {
-	return m_bCanMoveImpassable;
+	return m_baseMovementAbility.m_bCanMoveImpassable;
 }
 bool CvUnitInfo::isCanMoveAllTerrain() const
 {
-	return m_bCanMoveAllTerrain;
+	return m_baseMovementAbility.m_bCanMoveAllTerrain;
 }
 bool CvUnitInfo::isFlatMovementCost() const
 {
-	return m_bFlatMovementCost;
+	return m_baseMovementAbility.m_bFlatMovementCost;
 }
 bool CvUnitInfo::isIgnoreTerrainCost() const
 {
-	return m_bIgnoreTerrainCost;
+	return m_baseMovementAbility.m_bIgnoreTerrainCost;
 }
 bool CvUnitInfo::isMechUnit() const
 {
@@ -3553,13 +3544,13 @@ bool CvUnitInfo::getTerrainImpassable(int i) const
 {
 	FAssertMsg(i < GC.getNumTerrainInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_abTerrainImpassable ? m_abTerrainImpassable[i] : false;
+	return m_baseMovementAbility.m_abTerrainImpassable ? m_baseMovementAbility.m_abTerrainImpassable[i] : false;
 }
 bool CvUnitInfo::getFeatureImpassable(int i) const
 {
 	FAssertMsg(i < GC.getNumFeatureInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_abFeatureImpassable ? m_abFeatureImpassable[i] : false;
+	return m_baseMovementAbility.m_abFeatureImpassable ? m_baseMovementAbility.m_abFeatureImpassable[i] : false;
 }
 
 // < JAnimals Mod Start >
@@ -3803,15 +3794,15 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bOnlyDefensive);
 	stream->Read(&m_bNoCapture);
 	stream->Read(&m_bQuickCombat);
-	stream->Read(&m_bRivalTerritory);
+	stream->Read(&m_baseMovementAbility.m_bRivalTerritory);
 	stream->Read(&m_bMilitaryProduction);
 	stream->Read(&m_bFound);
 	stream->Read(&m_bInvisible);
 	stream->Read(&m_bNoDefensiveBonus);
-	stream->Read(&m_bCanMoveImpassable);
-	stream->Read(&m_bCanMoveAllTerrain);
-	stream->Read(&m_bFlatMovementCost);
-	stream->Read(&m_bIgnoreTerrainCost);
+	stream->Read(&m_baseMovementAbility.m_bCanMoveImpassable);
+	stream->Read(&m_baseMovementAbility.m_bCanMoveAllTerrain);
+	stream->Read(&m_baseMovementAbility.m_bFlatMovementCost);
+	stream->Read(&m_baseMovementAbility.m_bIgnoreTerrainCost);
 	stream->Read(&m_bMechanized);
 	stream->Read(&m_bLineOfSight);
 	stream->Read(&m_bHiddenNationality);
@@ -3909,12 +3900,12 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_abBuilds);
 	m_abBuilds = new bool[GC.getNumBuildInfos()];
 	stream->Read(GC.getNumBuildInfos(), m_abBuilds);
-	SAFE_DELETE_ARRAY(m_abTerrainImpassable);
-	m_abTerrainImpassable = new bool[GC.getNumTerrainInfos()];
-	stream->Read(GC.getNumTerrainInfos(), m_abTerrainImpassable);
-	SAFE_DELETE_ARRAY(m_abFeatureImpassable);
-	m_abFeatureImpassable = new bool[GC.getNumFeatureInfos()];
-	stream->Read(GC.getNumFeatureInfos(), m_abFeatureImpassable);
+	SAFE_DELETE_ARRAY(m_baseMovementAbility.m_abTerrainImpassable);
+	m_baseMovementAbility.m_abTerrainImpassable = new bool[GC.getNumTerrainInfos()];
+	stream->Read(GC.getNumTerrainInfos(), m_baseMovementAbility.m_abTerrainImpassable);
+	SAFE_DELETE_ARRAY(m_baseMovementAbility.m_abFeatureImpassable);
+	m_baseMovementAbility.m_abFeatureImpassable = new bool[GC.getNumFeatureInfos()];
+	stream->Read(GC.getNumFeatureInfos(), m_baseMovementAbility.m_abFeatureImpassable);
 	// < JAnimals Mod Start >
 	SAFE_DELETE_ARRAY(m_abTerrainNative);
 	m_abTerrainNative = new bool[GC.getNumTerrainInfos()];
@@ -4030,15 +4021,15 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bOnlyDefensive);
 	stream->Write(m_bNoCapture);
 	stream->Write(m_bQuickCombat);
-	stream->Write(m_bRivalTerritory);
+	stream->Write(m_baseMovementAbility.m_bRivalTerritory);
 	stream->Write(m_bMilitaryProduction);
 	stream->Write(m_bFound);
 	stream->Write(m_bInvisible);
 	stream->Write(m_bNoDefensiveBonus);
-	stream->Write(m_bCanMoveImpassable);
-	stream->Write(m_bCanMoveAllTerrain);
-	stream->Write(m_bFlatMovementCost);
-	stream->Write(m_bIgnoreTerrainCost);
+	stream->Write(m_baseMovementAbility.m_bCanMoveImpassable);
+	stream->Write(m_baseMovementAbility.m_bCanMoveAllTerrain);
+	stream->Write(m_baseMovementAbility.m_bFlatMovementCost);
+	stream->Write(m_baseMovementAbility.m_bIgnoreTerrainCost);
 	stream->Write(m_bMechanized);
 	stream->Write(m_bLineOfSight);
 	stream->Write(m_bHiddenNationality);
@@ -4096,8 +4087,8 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(NUM_UNITAI_TYPES, m_abUnitAIType);
 	stream->Write(NUM_UNITAI_TYPES, m_abNotUnitAIType);
 	stream->Write(GC.getNumBuildInfos(), m_abBuilds);
-	stream->Write(GC.getNumTerrainInfos(), m_abTerrainImpassable);
-	stream->Write(GC.getNumFeatureInfos(), m_abFeatureImpassable);
+	stream->Write(GC.getNumTerrainInfos(), m_baseMovementAbility.m_abTerrainImpassable);
+	stream->Write(GC.getNumFeatureInfos(), m_baseMovementAbility.m_abFeatureImpassable);
 	// < JAnimals Mod Start >
 	stream->Write(GC.getNumTerrainInfos(), m_abTerrainNative);
 	// < JAnimals Mod End >
@@ -4172,15 +4163,15 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bOnlyDefensive, "bOnlyDefensive");
 	pXML->GetChildXmlValByName(&m_bNoCapture, "bNoCapture");
 	pXML->GetChildXmlValByName(&m_bQuickCombat, "bQuickCombat");
-	pXML->GetChildXmlValByName(&m_bRivalTerritory, "bRivalTerritory");
+	pXML->GetChildXmlValByName(&m_baseMovementAbility.m_bRivalTerritory, "bRivalTerritory");
 	pXML->GetChildXmlValByName(&m_bMilitaryProduction, "bMilitaryProduction");
 	pXML->GetChildXmlValByName(&m_bFound, "bFound");
 	pXML->GetChildXmlValByName(&m_bInvisible, "bInvisible");
 	pXML->GetChildXmlValByName(&m_bNoDefensiveBonus, "bNoDefensiveBonus");
-	pXML->GetChildXmlValByName(&m_bCanMoveImpassable, "bCanMoveImpassable");
-	pXML->GetChildXmlValByName(&m_bCanMoveAllTerrain, "bCanMoveAllTerrain");
-	pXML->GetChildXmlValByName(&m_bFlatMovementCost, "bFlatMovementCost");
-	pXML->GetChildXmlValByName(&m_bIgnoreTerrainCost, "bIgnoreTerrainCost");
+	pXML->GetChildXmlValByName(&m_baseMovementAbility.m_bCanMoveImpassable, "bCanMoveImpassable");
+	pXML->GetChildXmlValByName(&m_baseMovementAbility.m_bCanMoveAllTerrain, "bCanMoveAllTerrain");
+	pXML->GetChildXmlValByName(&m_baseMovementAbility.m_bFlatMovementCost, "bFlatMovementCost");
+	pXML->GetChildXmlValByName(&m_baseMovementAbility.m_bIgnoreTerrainCost, "bIgnoreTerrainCost");
 	pXML->GetChildXmlValByName(&m_bMechanized,"bMechanized",false);
 	pXML->GetChildXmlValByName(&m_bLineOfSight,"bLineOfSight",false);
 	pXML->GetChildXmlValByName(&m_bHiddenNationality,"bHiddenNationality",false);
@@ -4219,7 +4210,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bAnimal, "bAnimal", false);
 	// < JAnimals Mod End >
 	/// Move Into Peak - start - Nightinggale
-	pXML->GetChildXmlValByName(&m_bMoveIntoPeak, "bMoveIntoPeak");
+	pXML->GetChildXmlValByName(&m_baseMovementAbility.m_bMoveIntoPeak, "bMoveIntoPeak");
 	/// Move Into Peak - end - Nightinggale
 	pXML->SetVariableListTagPair(&m_abUpgradeUnitClass, "UnitClassUpgrades", GC.getNumUnitClassInfos(), false);
 	pXML->SetVariableListTagPair(&m_abUnitAIType, "UnitAIs", NUM_UNITAI_TYPES, false);
@@ -4253,8 +4244,8 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iGoldFromGoodiesAndChiefsModifier, "iGoldFromGoodiesAndChiefsModifier"); // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 	pXML->GetChildXmlValByName(&m_iMissionaryRateModifier, "iMissionaryRateModifier");
 	pXML->GetChildXmlValByName(&m_iNativeTradeRateModifier, "iNativeTradeRateModifier"); // WTP, ray, Native Trade Posts - START
-	pXML->SetVariableListTagPair(&m_abTerrainImpassable, "TerrainImpassables", GC.getNumTerrainInfos(), false);
-	pXML->SetVariableListTagPair(&m_abFeatureImpassable, "FeatureImpassables", GC.getNumFeatureInfos(), false);
+	pXML->SetVariableListTagPair(&m_baseMovementAbility.m_abTerrainImpassable, "TerrainImpassables", GC.getNumTerrainInfos(), false);
+	pXML->SetVariableListTagPair(&m_baseMovementAbility.m_abFeatureImpassable, "FeatureImpassables", GC.getNumFeatureInfos(), false);
 	// < JAnimals Mod Start >
 	pXML->SetVariableListTagPair(&m_abTerrainNative, "TerrainNatives", GC.getNumTerrainInfos(), false);
 	// < JAnimals Mod End >

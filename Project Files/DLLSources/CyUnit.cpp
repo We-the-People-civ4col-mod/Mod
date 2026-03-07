@@ -753,7 +753,7 @@ bool CyUnit::isAlwaysHeal()
 }
 bool CyUnit::isHillsDoubleMove()
 {
-	return m_pUnit ? m_pUnit->isHillsDoubleMove(): false;
+	return m_pUnit ? m_pUnit->isHillOrPeakDoubleMove(): false;
 }
 int CyUnit::getExtraVisibilityRange()
 {

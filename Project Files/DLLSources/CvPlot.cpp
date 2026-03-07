@@ -3554,7 +3554,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 	if (bHasTerrainCost)
 	{
 		if (((getFeatureType() == NO_FEATURE) ? pUnit->isTerrainDoubleMove(getTerrainType()) : pUnit->isFeatureDoubleMove(getFeatureType())) ||
-			((isHills() || isPeak()) && pUnit->isHillsDoubleMove()))
+			((isHills() || isPeak()) && pUnit->isHillOrPeakDoubleMove()))
 		{
 			iRegularCost /= 2;
 		}

@@ -837,7 +837,7 @@ public:
 	DllExport float getUnitPadTime(int iProfession) const;
 
 	/// Move Into Peak - start - Nightinggale
-	bool allowsMoveIntoPeak() const {return m_bMoveIntoPeak;}
+	bool allowsMoveIntoPeak() const {return m_baseMovementAbility.m_bMoveIntoPeak;}
 	/// Move Into Peak - end - Nightinggale
 
 	// Arrays
@@ -897,6 +897,38 @@ public:
 	bool read(CvXMLLoadUtility* pXML);
 
 	int PYgetYieldCost(int i) const;
+
+	// Unit movement abilities that are fixed by xml.
+	// Note that some of these abilities can be overridden by the profession,
+	//  which can toggle the ability to enter large rivers terrain or the peak plot type
+	struct UnitBaseMovementAbility
+	{
+		// Modifiers that may allow faster movement
+		bool m_bFlatMovementCost;
+		bool m_bIgnoreTerrainCost;
+
+		// Binary "impassable" switches that allow certain plot/terrain/features to be entered
+		bool m_bRivalTerritory;
+		bool m_bCanMoveImpassable;
+		bool m_bCanMoveAllTerrain;
+		/// Move Into Peak - start - Nightinggale
+		bool m_bMoveIntoPeak;
+		/// Move Into Peak - end - Nightinggale
+		bool* m_abTerrainImpassable;
+		bool* m_abFeatureImpassable;
+
+		void reset()
+		{
+			m_bRivalTerritory = false;
+			m_bCanMoveImpassable = false;
+			m_bCanMoveAllTerrain = false;
+			m_bFlatMovementCost = false;
+			m_bIgnoreTerrainCost = false;
+			m_bMoveIntoPeak = false;
+			m_abTerrainImpassable = NULL;
+			m_abFeatureImpassable = NULL;
+		}
+	};
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
@@ -973,16 +1005,11 @@ protected:
 	bool m_bOnlyDefensive;
 	bool m_bNoCapture;
 	bool m_bQuickCombat;
-	bool m_bRivalTerritory;
 	bool m_bMilitaryProduction;
 	bool m_bPillage;
 	bool m_bFound;
 	bool m_bInvisible;
 	bool m_bNoDefensiveBonus;
-	bool m_bCanMoveImpassable;
-	bool m_bCanMoveAllTerrain;
-	bool m_bFlatMovementCost;
-	bool m_bIgnoreTerrainCost;
 	bool m_bMechanized;
 	bool m_bLineOfSight;
 	bool m_bHiddenNationality;
@@ -1020,9 +1047,6 @@ protected:
 	// < JAnimals Mod End >
 	PromotionTypes m_eLeaderPromotion;
 
-	/// Move Into Peak - start - Nightinggale
-	bool m_bMoveIntoPeak;
-	/// Move Into Peak - end - Nightinggale
 
 	// Arrays
 	int* m_aiProductionTraits;
@@ -1045,8 +1069,6 @@ protected:
 	bool* m_abUnitAIType;
 	bool* m_abNotUnitAIType;
 	bool* m_abBuilds;
-	bool* m_abTerrainImpassable;
-	bool* m_abFeatureImpassable;
 	// < JAnimals Mod Start >
 	bool* m_abTerrainNative;
 	// < JAnimals Mod End >
@@ -1064,6 +1086,7 @@ protected:
 	CvString m_szArtDefineButton;
 	std::vector<CvUnitMeshGroups> m_aProfessionGroups;
 	std::vector<int> m_aiSeeInvisibleTypes;
+	UnitBaseMovementAbility m_baseMovementAbility;
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -3651,23 +3651,8 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 
 	case DOMAIN_LAND:
 
-		// R&R, ray, Start Logik for Peaks
-		if (kPlot.isPeak() && kPlot.getRouteType() == NO_ROUTE)
-		{
-			// Anything else than Natives, Animals, Pioneers, Scouts, Native Mercenaries and Ranges cannot pass Peaks without Roads
-			/*
-			if (!isNative() && !m_pUnitInfo->isAnimal() && !(getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).getWorkRate() != 0) && !m_pUnitInfo->isNoBadGoodies() && m_pUnitInfo->getUnitClassType() != GC.getDefineINT("UNITCLASS_NATIVE_MERC") && m_pUnitInfo->getUnitClassType() != GC.getDefineINT("UNITCLASS_RANGER"))
-			*/
-			/// Move Into Peak - start - Nightinggale
-			// replaced DLL hardcoding with pure XML setup
-			// it's more friendly to xml modders and it's actually faster at runtime because less data will have to be checked
-			if (!(m_pUnitInfo->allowsMoveIntoPeak() || (getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).allowsMoveIntoPeak())))
-			/// Move Into Peak - end - Nightinggale
-			{
-				return false;
-			}
-		}
-		// R&R, ray, End Logik for Peaks
+		if (kPlot.isPeak() && kPlot.getRouteType() == NO_ROUTE && !canMoveIntoPeak())
+			return false;
 
 		// R&R, ray, Changes for Treasures, START
 		if (m_pUnitInfo->isTreasure() && kPlot.isGoody())
@@ -11675,7 +11660,7 @@ void CvUnit::changeRiverCount(int iChange)
 
 int CvUnit::getEnemyRouteCount() const
 {
-	return m_iEnemyRouteCount;
+	return m_movementAbility.m_iEnemyRouteCount;
 }
 
 
@@ -11687,7 +11672,7 @@ bool CvUnit::isEnemyRoute() const
 
 void CvUnit::changeEnemyRouteCount(int iChange)
 {
-	m_iEnemyRouteCount = (m_iEnemyRouteCount + iChange);
+	m_movementAbility.m_iEnemyRouteCount = (m_movementAbility.m_iEnemyRouteCount + iChange);
 	FAssert(getEnemyRouteCount() >= 0);
 }
 
@@ -11711,22 +11696,22 @@ void CvUnit::changeAlwaysHealCount(int iChange)
 }
 
 
-int CvUnit::getHillsDoubleMoveCount() const
+int CvUnit::getHillOrPeakDoubleMoveCount() const
 {
-	return m_iHillsDoubleMoveCount;
+	return m_movementAbility.m_iHillOrPeakDoubleMoveCount;
 }
 
 
-bool CvUnit::isHillsDoubleMove() const
+bool CvUnit::isHillOrPeakDoubleMove() const
 {
-	return (getHillsDoubleMoveCount() > 0);
+	return (getHillOrPeakDoubleMoveCount() > 0);
 }
 
 
 void CvUnit::changeHillsDoubleMoveCount(int iChange)
 {
-	m_iHillsDoubleMoveCount = (m_iHillsDoubleMoveCount + iChange);
-	FAssert(getHillsDoubleMoveCount() >= 0);
+	m_movementAbility.m_iHillOrPeakDoubleMoveCount = (m_movementAbility.m_iHillOrPeakDoubleMoveCount + iChange);
+	FAssert(getHillOrPeakDoubleMoveCount() >= 0);
 }
 
 int CvUnit::getExtraVisibilityRange() const
@@ -11746,13 +11731,13 @@ void CvUnit::changeVisibilityRange(int iChange)
 
 int CvUnit::getExtraMoves() const
 {
-	return m_iExtraMoves;
+	return m_movementAbility.m_iExtraMoves;
 }
 
 
 void CvUnit::changeExtraMoves(int iChange)
 {
-	m_iExtraMoves += iChange;
+	m_movementAbility.m_iExtraMoves += iChange;
 	// Sanity check: unit should not end up completely immobile
 	FAssert(baseMoves() > 0);
 }
@@ -11760,13 +11745,13 @@ void CvUnit::changeExtraMoves(int iChange)
 
 int CvUnit::getExtraMoveDiscount() const
 {
-	return m_iExtraMoveDiscount;
+	return m_movementAbility.m_iExtraMoveDiscount;
 }
 
 
 void CvUnit::changeExtraMoveDiscount(int iChange)
 {
-	m_iExtraMoveDiscount = (m_iExtraMoveDiscount + iChange);
+	m_movementAbility.m_iExtraMoveDiscount = (m_movementAbility.m_iExtraMoveDiscount + iChange);
 	FAssert(getExtraMoveDiscount() >= 0);
 }
 
@@ -13316,7 +13301,7 @@ int CvUnit::getTerrainDoubleMoveCount(TerrainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_ja_iTerrainDoubleMoveCount.get(eIndex);
+	return m_movementAbility.m_ja_iTerrainDoubleMoveCount.get(eIndex);
 }
 
 
@@ -13332,7 +13317,7 @@ void CvUnit::changeTerrainDoubleMoveCount(TerrainTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_ja_iTerrainDoubleMoveCount.add(iChange, eIndex);
+	m_movementAbility.m_ja_iTerrainDoubleMoveCount.add(iChange, eIndex);
 	FAssert(getTerrainDoubleMoveCount(eIndex) >= 0);
 }
 
@@ -13341,7 +13326,7 @@ int CvUnit::getFeatureDoubleMoveCount(FeatureTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_ja_iFeatureDoubleMoveCount.get(eIndex);
+	return m_movementAbility.m_ja_iFeatureDoubleMoveCount.get(eIndex);
 }
 
 
@@ -13357,7 +13342,7 @@ void CvUnit::changeFeatureDoubleMoveCount(FeatureTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_ja_iFeatureDoubleMoveCount.add(iChange, eIndex);
+	m_movementAbility.m_ja_iFeatureDoubleMoveCount.add(iChange, eIndex);
 	FAssert(getFeatureDoubleMoveCount(eIndex) >= 0);
 }
 
@@ -13846,13 +13831,9 @@ void CvUnit::resetPromotions()
 	m_iBlitzCount = 0;
 	m_iAmphibCount = 0;
 	m_iRiverCount = 0;
-	m_iEnemyRouteCount = 0;
 	m_iAlwaysHealCount = 0;
-	m_iHillsDoubleMoveCount = 0;
-
+	
 	updateVisibilityCache(GC.getUNIT_VISIBILITY_RANGE());
-	m_iExtraMoves = 0;
-	m_iExtraMoveDiscount = 0;
 	m_iExtraWithdrawal = 0;
 	m_iExtraBombardRate = 0;
 	m_iExtraEnemyHeal = 0;
@@ -13879,17 +13860,17 @@ void CvUnit::resetPromotions()
 
 	m_ja_iExtraTerrainAttackPercent.reset();
 	m_ja_iExtraTerrainDefensePercent.reset();
-	m_ja_iTerrainDoubleMoveCount.reset();
-
+	
 	m_ja_iExtraFeatureAttackPercent.reset();
 	m_ja_iExtraFeatureDefensePercent.reset();
-	m_ja_iFeatureDoubleMoveCount.reset();
-
+	
 	m_ja_iExtraUnitClassAttackModifier.reset();
 	m_ja_iExtraUnitClassDefenseModifier.reset();
 
 	m_ja_iExtraUnitCombatModifier.reset();
 	m_ja_iExtraDomainModifier.reset();
+
+	m_movementAbility.reset();
 
 	if (getOwnerINLINE() != NO_PLAYER)
 	{
@@ -17135,3 +17116,10 @@ std::string CvUnit::debugString() const
 
 	return oss.str();
 }
+
+bool CvUnit::canMoveIntoPeak() const
+{
+	return (m_pUnitInfo->allowsMoveIntoPeak() ||
+		(getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).allowsMoveIntoPeak()));
+}
+
