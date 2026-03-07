@@ -399,7 +399,19 @@ class CvDomesticAdvisor:
 			elif (pLoopCity.getCityHealth() < 0):
 				screen.setTableInt(szState + "ListBackground", 16, i, "<font=2>" + "<color=255,0,0>" +unicode(pLoopCity.getCityHealth()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			# Producing
-			screen.setTableText(szState + "ListBackground", 17, i, "<font=2>" + pLoopCity.getProductionName() + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")" + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Ellestar, Not enough resources to finish building with red color - START
+			szText = "<font=2>" + pLoopCity.getProductionName() + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")" + "</font>"
+			if (pLoopCity.isProductionBuilding()):
+				building = pLoopCity.getProductionBuilding()
+				pPlayer = gc.getPlayer(CyGame().getActivePlayer())
+				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
+					if gc.getYieldInfo(iYield).isCargo():
+						yieldNeeded = pPlayer.getBuildingYieldProductionNeeded(building, iYield)
+						if yieldNeeded > pLoopCity.getYieldStored(iYield):
+							szText = "<color=255,0,0>" + szText + "</color>"
+							break
+			screen.setTableText(szState + "ListBackground", 17, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			# Ellestar, Not enough resources to finish building with red color - END
 
 		elif(self.CurrentState == self.PRODUCTION_STATE):
 			start = self.YieldStart()
