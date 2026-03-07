@@ -399,7 +399,7 @@ class CvDomesticAdvisor:
 			elif (pLoopCity.getCityHealth() < 0):
 				screen.setTableInt(szState + "ListBackground", 16, i, "<font=2>" + "<color=255,0,0>" +unicode(pLoopCity.getCityHealth()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			# Producing
-			# Ellestar, Not enough resources to finish building with red color - START
+			# Ellestar, Display in red if there are not enough resources to finish the building. - START
 			szText = "<font=2>" + pLoopCity.getProductionName() + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")" + "</font>"
 			if (pLoopCity.isProductionBuilding()):
 				building = pLoopCity.getProductionBuilding()
@@ -411,7 +411,7 @@ class CvDomesticAdvisor:
 							szText = "<color=255,0,0>" + szText + "</color>"
 							break
 			screen.setTableText(szState + "ListBackground", 17, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			# Ellestar, Not enough resources to finish building with red color - END
+			# Ellestar, Display in red if there are not enough resources to finish the building. - END
 
 		elif(self.CurrentState == self.PRODUCTION_STATE):
 			start = self.YieldStart()
