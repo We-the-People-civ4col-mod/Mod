@@ -411,11 +411,11 @@ class CvDomesticAdvisor:
 							szText = "<color=255,0,0>" + szText + "</color>"
 							break
 			elif (pLoopCity.isProductionUnit()):
-				building = pLoopCity.getProductionUnit()
+				unit = pLoopCity.getProductionUnit()
 				pPlayer = gc.getPlayer(CyGame().getActivePlayer())
 				for iYield in range(YieldTypes.NUM_YIELD_TYPES):
 					if gc.getYieldInfo(iYield).isCargo():
-						yieldNeeded = pPlayer.getUnitYieldProductionNeeded(building, iYield)
+						yieldNeeded = pPlayer.getUnitYieldProductionNeeded(unit, iYield)
 						if yieldNeeded > pLoopCity.getYieldStored(iYield):
 							szText = "<color=255,0,0>" + szText + "</color>"
 							break
