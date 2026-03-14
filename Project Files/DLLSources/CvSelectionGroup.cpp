@@ -4427,6 +4427,11 @@ void CvSelectionGroup::clearTradeRoutes()
 	gDLL->getInterfaceIFace()->setDirty(Domestic_Advisor_DIRTY_BIT, true);
 }
 
+const std::set<int>& CvSelectionGroup::getTradeRoutes() const
+{
+	return m_aTradeRoutes;
+}
+
 void CvSelectionGroup::speakWithChief()
 {
 	CvUnit* pBestUnit = NULL;

@@ -23,6 +23,7 @@
 #include "CvDLLFAStarIFaceBase.h"
 
 #include "CvSavegame.h"
+#include "CvTradeRoute.h"
 #include "BetterBTSAI.h"
 
 #define FOUND_RANGE				(7)
@@ -101,7 +102,7 @@ bool CvUnitAI::AI_update()
 		}
 	}
 
-	if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE || getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
+	if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE || getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA || getUnitTravelState() == UNIT_TRAVEL_STATE_IN_PORT_ROYAL)
 	{
 		AI_europeUpdate();
 		return false;
@@ -410,6 +411,30 @@ bool CvUnitAI::AI_europeUpdate()
 			if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
 			{
 				AI_africa();
+				return false;
+			}
+		}
+
+		// Handle automated trade route ships at off-map locations:
+		// sell cargo and cross back to the Americas
+		if (getGroup()->isAutomated() && (getGroup()->getAutomateType() == AUTOMATE_TRANSPORT_ROUTES))
+		{
+			if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
+			{
+				AI_sellYieldUnits(TRADE_LOCATION_EUROPE);
+				crossOcean(UNIT_TRAVEL_STATE_FROM_EUROPE);
+				return false;
+			}
+			if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
+			{
+				AI_sellYieldUnits(TRADE_LOCATION_AFRICA);
+				crossOcean(UNIT_TRAVEL_STATE_FROM_AFRICA);
+				return false;
+			}
+			if (getUnitTravelState() == UNIT_TRAVEL_STATE_IN_PORT_ROYAL)
+			{
+				AI_sellYieldUnits(TRADE_LOCATION_PORT_ROYAL);
+				crossOcean(UNIT_TRAVEL_STATE_FROM_PORT_ROYAL);
 				return false;
 			}
 		}
@@ -3969,7 +3994,7 @@ void CvUnitAI::AI_transportMoveRoutes()
 
 	if (AI_getUnitAIState() == UNITAI_STATE_SAIL)
 	{
-		if (AI_sailToEurope())
+		if (AI_sailToOffMapTradeDestination())
 		{
 			return;
 		}
@@ -3982,7 +4007,7 @@ void CvUnitAI::AI_transportMoveRoutes()
 
 	if (AI_getUnitAIState() == UNITAI_STATE_SAIL)
 	{
-		if (AI_sailToEurope())
+		if (AI_sailToOffMapTradeDestination())
 		{
 			return;
 		}
@@ -6901,6 +6926,35 @@ bool CvUnitAI::AI_sailToPortRoyal(bool bMove)
 	return AI_sailTo(kSailToPortRoyal, bMove);
 }
 // R&R, ray, Port Royal - END
+
+bool CvUnitAI::AI_sailToOffMapTradeDestination(bool bMove)
+{
+	// Determine the correct off-map destination from the group's trade routes
+	CvSelectionGroup* pGroup = getGroup();
+	if (pGroup != NULL)
+	{
+		CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+		const std::set<int>& tradeRoutes = pGroup->getTradeRoutes();
+		for (std::set<int>::const_iterator it = tradeRoutes.begin(); it != tradeRoutes.end(); ++it)
+		{
+			CvTradeRoute* pRoute = kOwner.getTradeRoute(*it);
+			if (pRoute != NULL)
+			{
+				int iDestID = pRoute->getDestinationCity().iID;
+				if (iDestID == CvTradeRoute::AFRICA_CITY_ID)
+				{
+					return AI_sailToAfrica(bMove);
+				}
+				if (iDestID == CvTradeRoute::PORT_ROYAL_CITY_ID)
+				{
+					return AI_sailToPortRoyal(bMove);
+				}
+			}
+		}
+	}
+	// Default to Europe if no Africa/Port Royal route found
+	return AI_sailToEurope(bMove);
+}
 
 /// <summary> Attempts to sail (off the map) to the specified port.
 /// <param name="sth">A helper struct that contains port travel constants required by the AI</param>

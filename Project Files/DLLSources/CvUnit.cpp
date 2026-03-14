@@ -14901,6 +14901,15 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 
 		if (getGroup() != NULL)
 		{
+			// Save automation state before splitting, as splitGroup -> deleteUnitNode
+			// clears automation and trade routes on the old group
+			const AutomateTypes eAutomateType = getGroup()->getAutomateType();
+			std::set<int> savedTradeRoutes;
+			if (eAutomateType == AUTOMATE_TRANSPORT_ROUTES)
+			{
+				savedTradeRoutes = getGroup()->getTradeRoutes();
+			}
+
 			if (!isHuman())
 			{
 				// Erik: Unconditionally separate all units (all units will be re-assigned to a group with the unit as its single member)
@@ -14911,6 +14920,16 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 				// Yield units are intentionally grouped so don't split them up
 				if (!getGroup()->getHeadUnit()->isYield())
 					getGroup()->splitGroup(1, this);
+			}
+
+			// Restore trade route automation on the new group after split
+			if (eAutomateType == AUTOMATE_TRANSPORT_ROUTES && getGroup() != NULL)
+			{
+				getGroup()->setAutomateType(AUTOMATE_TRANSPORT_ROUTES);
+				for (std::set<int>::const_iterator it = savedTradeRoutes.begin(); it != savedTradeRoutes.end(); ++it)
+				{
+					getGroup()->assignTradeRoute(*it, true);
+				}
 			}
 		}
 
