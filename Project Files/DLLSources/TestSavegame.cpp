@@ -431,28 +431,23 @@ WTP_TEST(Savegame, IDInfoTradeRouteSentinelRoundTrip)
 	MemoryStream stream;
 
 	IDInfo europeInfo(FIRST_PLAYER, CvTradeRoute::EUROPE_CITY_ID);
-	IDInfo africaInfo(FIRST_PLAYER, CvTradeRoute::AFRICA_CITY_ID);
-	IDInfo portRoyalInfo(FIRST_PLAYER, CvTradeRoute::PORT_ROYAL_CITY_ID);
+	IDInfo anywhereInfo(FIRST_PLAYER, CvTradeRoute::ANYWHERE_CITY_ID);
 
 	europeInfo.write(&stream);
-	africaInfo.write(&stream);
-	portRoyalInfo.write(&stream);
+	anywhereInfo.write(&stream);
 
 	stream.Rewind();
 
-	IDInfo loadedEurope, loadedAfrica, loadedPortRoyal;
+	IDInfo loadedEurope, loadedAnywhere;
 	loadedEurope.read(&stream);
-	loadedAfrica.read(&stream);
-	loadedPortRoyal.read(&stream);
+	loadedAnywhere.read(&stream);
 
 	WTP_ASSERT(loadedEurope == europeInfo);
-	WTP_ASSERT(loadedAfrica == africaInfo);
-	WTP_ASSERT(loadedPortRoyal == portRoyalInfo);
+	WTP_ASSERT(loadedAnywhere == anywhereInfo);
 
-	// Verify sentinels are correctly recognized after round-trip
-	WTP_ASSERT(CvTradeRoute::isOffMapTradeLocation(loadedEurope.iID));
-	WTP_ASSERT(CvTradeRoute::isOffMapTradeLocation(loadedAfrica.iID));
-	WTP_ASSERT(CvTradeRoute::isOffMapTradeLocation(loadedPortRoyal.iID));
+	// Verify sentinel values survived round-trip
+	WTP_ASSERT_EQ(CvTradeRoute::EUROPE_CITY_ID, loadedEurope.iID);
+	WTP_ASSERT_EQ(CvTradeRoute::ANYWHERE_CITY_ID, loadedAnywhere.iID);
 }
 
 // ============================================================================

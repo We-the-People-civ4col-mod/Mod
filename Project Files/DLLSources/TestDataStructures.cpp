@@ -363,38 +363,11 @@ WTP_TEST(Coordinates, EqualityInvalidCoords)
 WTP_TEST(TradeRoute, SentinelConstants)
 {
 	// Verify sentinel values are distinct
-	WTP_ASSERT(CvTradeRoute::EUROPE_CITY_ID != CvTradeRoute::AFRICA_CITY_ID);
-	WTP_ASSERT(CvTradeRoute::EUROPE_CITY_ID != CvTradeRoute::PORT_ROYAL_CITY_ID);
-	WTP_ASSERT(CvTradeRoute::AFRICA_CITY_ID != CvTradeRoute::PORT_ROYAL_CITY_ID);
 	WTP_ASSERT(CvTradeRoute::EUROPE_CITY_ID != CvTradeRoute::ANYWHERE_CITY_ID);
-	WTP_ASSERT(CvTradeRoute::AFRICA_CITY_ID != CvTradeRoute::ANYWHERE_CITY_ID);
-	WTP_ASSERT(CvTradeRoute::PORT_ROYAL_CITY_ID != CvTradeRoute::ANYWHERE_CITY_ID);
 
 	// All sentinels are negative
 	WTP_ASSERT(CvTradeRoute::EUROPE_CITY_ID < 0);
-	WTP_ASSERT(CvTradeRoute::AFRICA_CITY_ID < 0);
-	WTP_ASSERT(CvTradeRoute::PORT_ROYAL_CITY_ID < 0);
 	WTP_ASSERT(CvTradeRoute::ANYWHERE_CITY_ID < 0);
-}
-
-WTP_TEST(TradeRoute, IsOffMapTradeLocation)
-{
-	// These three should be recognized as off-map
-	WTP_ASSERT(CvTradeRoute::isOffMapTradeLocation(CvTradeRoute::EUROPE_CITY_ID));
-	WTP_ASSERT(CvTradeRoute::isOffMapTradeLocation(CvTradeRoute::AFRICA_CITY_ID));
-	WTP_ASSERT(CvTradeRoute::isOffMapTradeLocation(CvTradeRoute::PORT_ROYAL_CITY_ID));
-
-	// ANYWHERE is NOT an off-map trade location (by design)
-	WTP_ASSERT(!CvTradeRoute::isOffMapTradeLocation(CvTradeRoute::ANYWHERE_CITY_ID));
-
-	// Regular city IDs (>= 0) are not off-map
-	WTP_ASSERT(!CvTradeRoute::isOffMapTradeLocation(0));
-	WTP_ASSERT(!CvTradeRoute::isOffMapTradeLocation(1));
-	WTP_ASSERT(!CvTradeRoute::isOffMapTradeLocation(100));
-
-	// Arbitrary negative values that aren't sentinels
-	WTP_ASSERT(!CvTradeRoute::isOffMapTradeLocation(-5));
-	WTP_ASSERT(!CvTradeRoute::isOffMapTradeLocation(-100));
 }
 
 WTP_TEST(TradeRoute, DefaultConstruction)
@@ -568,7 +541,6 @@ void RunDataStructureTests()
 	// CvTradeRoute sentinel tests
 	WTP_RUN_SUITE_BEGIN();
 	WTP_RUN_TEST(TradeRoute, SentinelConstants);
-	WTP_RUN_TEST(TradeRoute, IsOffMapTradeLocation);
 	WTP_RUN_TEST(TradeRoute, DefaultConstruction);
 	WTP_RUN_SUITE_END("TradeRoute");
 

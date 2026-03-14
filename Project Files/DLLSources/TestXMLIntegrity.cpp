@@ -4,8 +4,6 @@
 
 #ifdef FASSERT_ENABLE
 
-#include "CvTradeRoute.h"
-
 // ============================================================================
 // Profession Yield Validity
 // ============================================================================
@@ -182,23 +180,6 @@ WTP_TEST(XMLIntegrity, TerrainBonusesValid)
 }
 
 // ============================================================================
-// Trade Location Consistency
-// ============================================================================
-
-WTP_TEST(XMLIntegrity, TradeLocationSentinelConsistency)
-{
-	// Verify EUROPE sentinel is valid for isOffMapTradeLocation
-	WTP_ASSERT(CvTradeRoute::isOffMapTradeLocation(CvTradeRoute::EUROPE_CITY_ID));
-	WTP_ASSERT(CvTradeRoute::isOffMapTradeLocation(CvTradeRoute::AFRICA_CITY_ID));
-	WTP_ASSERT(CvTradeRoute::isOffMapTradeLocation(CvTradeRoute::PORT_ROYAL_CITY_ID));
-
-	// Sentinels must not collide with valid city IDs (which start at 0)
-	WTP_ASSERT(CvTradeRoute::EUROPE_CITY_ID < 0);
-	WTP_ASSERT(CvTradeRoute::AFRICA_CITY_ID < 0);
-	WTP_ASSERT(CvTradeRoute::PORT_ROYAL_CITY_ID < 0);
-}
-
-// ============================================================================
 // Test Runner
 // ============================================================================
 
@@ -214,7 +195,6 @@ void RunXMLIntegrityTests()
 	WTP_RUN_TEST(XMLIntegrity, ProfessionEquipmentYieldsValid);
 	WTP_RUN_TEST(XMLIntegrity, BuildingYieldDemandsValid);
 	WTP_RUN_TEST(XMLIntegrity, TerrainBonusesValid);
-	WTP_RUN_TEST(XMLIntegrity, TradeLocationSentinelConsistency);
 	WTP_RUN_SUITE_END("XMLIntegrity");
 }
 
