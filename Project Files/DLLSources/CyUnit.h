@@ -276,6 +276,8 @@ public:
 	int /*UnitTravelStates*/ getUnitTravelState();
 	void setUnitTravelState(int /*UnitTravelStates*/ eState, bool bShowEuropeScreen);
 	bool canSailEurope(int iEurope);
+	bool canSailToAfrica();
+	bool canSailToPortRoyal();
 	bool isColonistLocked();
 	// < JAnimals Mod Start >
 	bool isBarbarian();

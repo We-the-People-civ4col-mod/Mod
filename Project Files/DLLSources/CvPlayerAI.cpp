@@ -9889,7 +9889,6 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 	FAssertMsg(eYield > NO_YIELD, "Index out of bounds");
 	FAssertMsg(eYield < NUM_YIELD_TYPES, "Index out of bounds");
 
-	const IDInfo kEurope(getID(), CvTradeRoute::EUROPE_CITY_ID);
 	CvCity* pCity = ::getCity(target);
 
 	int iValue = 0;
@@ -10021,7 +10020,7 @@ int CvPlayerAI::AI_transferYieldValue(const IDInfo target, YieldTypes eYield, in
 			// transport feeder - end - Nightinggale
 		}
 	}
-	else if (target == kEurope)
+	else if (CvTradeRoute::isOffMapTradeLocation(target.iID))
 	{
 		if (iAmount < 0) //Loading
 		{

@@ -10418,17 +10418,36 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 	if (!pf.GeneratePath(pSource->plot()))
 		return false;
 
-	// Europe destination special case (no map city)
-	if (kDst.iID == CvTradeRoute::EUROPE_CITY_ID)
+	// Off-map destination special case (Europe, Africa, Port Royal)
+	if (CvTradeRoute::isOffMapTradeLocation(kDst.iID))
 	{
 		if (canCrossCoastOnly())
 			return false;
 		if (getDomainType() != DOMAIN_SEA)
 			return false;
-		if (!kPlayer.isYieldEuropeTradable(pRoute->getYield()))
-			return false;
 
-		// TODO: Perform actual pathfinding to a reachable Europe plot
+		if (kDst.iID == CvTradeRoute::EUROPE_CITY_ID)
+		{
+			if (!kPlayer.isYieldEuropeTradable(pRoute->getYield()))
+				return false;
+		}
+		else if (kDst.iID == CvTradeRoute::AFRICA_CITY_ID)
+		{
+			if (!kPlayer.isYieldAfricaTradable(pRoute->getYield()))
+				return false;
+			if (!kPlayer.canTradeWithAfrica())
+				return false;
+		}
+		else if (kDst.iID == CvTradeRoute::PORT_ROYAL_CITY_ID)
+		{
+			if (!kPlayer.isYieldPortRoyalTradable(pRoute->getYield()))
+				return false;
+			if (!kPlayer.canTradeWithPortRoyal())
+				return false;
+			if (!canSailToPortRoyal(plot()))
+				return false;
+		}
+
 		return true;
 	}
 

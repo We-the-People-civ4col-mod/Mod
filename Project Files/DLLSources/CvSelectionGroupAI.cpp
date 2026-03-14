@@ -910,8 +910,6 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 {
 	PROFILE_FUNC();
 
-	const IDInfo kEurope(getOwnerINLINE(), CvTradeRoute::EUROPE_CITY_ID);
-
 	CvCity* pPlotCity = plot()->getPlotCity();
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	std::set<int>::iterator it;
@@ -967,16 +965,16 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 			// transport feeder - end - Nightinggale
 
 			// traderoute fix - start - Nightinggale
-			if (isHuman() && (pRoute->getDestinationCity().eOwner != getOwnerINLINE() || (pRoute->getDestinationCity() == kEurope)))
+			if (isHuman() && (pRoute->getDestinationCity().eOwner != getOwnerINLINE() || CvTradeRoute::isOffMapTradeLocation(pRoute->getDestinationCity().iID)))
 			{
 				// humans can't transport to allied cities with fully automated transports
-				// human transport can't go to Europe automatically
+				// human transport can't go to off-map destinations automatically
 				continue;
 			}
 			// traderoute fix - end - Nightinggale
 
-			// Erik: Coastal transports cannot have europe as their destination
-			if (bCoastalTransport && (pRoute->getDestinationCity().eOwner != getOwnerINLINE() || (pRoute->getDestinationCity() == kEurope)))
+			// Erik: Coastal transports cannot have off-map destinations
+			if (bCoastalTransport && (pRoute->getDestinationCity().eOwner != getOwnerINLINE() || CvTradeRoute::isOffMapTradeLocation(pRoute->getDestinationCity().iID)))
 				continue;
 
 			CvCity* pSourceCity = ::getCity(pRoute->getSourceCity());
@@ -991,7 +989,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 				if (domainType == DOMAIN_SEA ? plot()->isAdjacentToArea(iSourceArea) : (iSourceArea == getArea()) ||
 					domainType == DOMAIN_LAND && plot()->getTerrainType() == TERRAIN_LARGE_RIVERS && plot()->isAdjacentToArea(pSourceCity->getArea()))
 				{
-					if ((domainType == DOMAIN_SEA) || (pRoute->getDestinationCity() != kEurope))
+					if ((domainType == DOMAIN_SEA) || !CvTradeRoute::isOffMapTradeLocation(pRoute->getDestinationCity().iID))
 					{
 						processTradeRoute(pRoute, cityValues, routes, routeValues, yieldsDelivered, yieldsToUnload);
 					}
@@ -1017,7 +1015,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 					if (domainType == DOMAIN_SEA ? plot()->isAdjacentToArea(iSourceArea) : (iSourceArea == getArea()) ||
 						domainType == DOMAIN_LAND && plot()->getTerrainType() == TERRAIN_LARGE_RIVERS && plot()->isAdjacentToArea(pSourceCity->getArea()))
 					{
-						if ((domainType == DOMAIN_SEA) || (pRoute->getDestinationCity() != kEurope))
+						if ((domainType == DOMAIN_SEA) || !CvTradeRoute::isOffMapTradeLocation(pRoute->getDestinationCity().iID))
 						{
 							processTradeRoute(pRoute, cityValues, routes, routeValues, yieldsDelivered, yieldsToUnload);
 						}
@@ -1174,11 +1172,11 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 
 				iAmount = estimateYieldsToLoad(pDestinationCity, iAmount, eYield, turnsRequired, aiYieldsLoaded[eYield]);
 			}
-			// Note that Europe has no import limit!
-			else if (pDestinationCity == NULL && routes[i]->getDestinationCity() == kEurope)
+			// Off-map trade locations have no import limit!
+			else if (pDestinationCity == NULL && CvTradeRoute::isOffMapTradeLocation(routes[i]->getDestinationCity().iID))
 			{
-				// This is a Europe trade-route, exempt it from the reachability criteria
-				// TODO: Check that there is actually a route to Europe!
+				// This is an off-map trade route, exempt it from the reachability criteria
+				// TODO: Check that there is actually a route to the destination!
 				bNoRoute = false;
 			}
 
@@ -1406,7 +1404,7 @@ bool CvSelectionGroupAI::AI_tradeRoutes()
 	}
 
 	//As a final step, we could consider loading yields which would be useful as parts of delivery runs...
-	if (kBestDestination != kEurope)
+	if (!CvTradeRoute::isOffMapTradeLocation(kBestDestination.iID))
 	{
 		CvCity* pBestDestinationCity = ::getCity(kBestDestination);
 		if (pBestDestinationCity != NULL)

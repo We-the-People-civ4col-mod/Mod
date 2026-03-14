@@ -1091,6 +1091,14 @@ bool CyUnit::canSailEurope(int iEurope)
 {
 	return m_pUnit ? m_pUnit->canSailEurope((EuropeTypes) iEurope) : false;
 }
+bool CyUnit::canSailToAfrica()
+{
+	return m_pUnit ? m_pUnit->canSailToAfrica(m_pUnit->plot()) : false;
+}
+bool CyUnit::canSailToPortRoyal()
+{
+	return m_pUnit ? m_pUnit->canSailToPortRoyal(m_pUnit->plot()) : false;
+}
 bool CyUnit::isColonistLocked()
 {
 	return m_pUnit ? m_pUnit->isColonistLocked() : false;

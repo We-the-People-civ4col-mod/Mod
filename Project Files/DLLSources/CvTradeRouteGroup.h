@@ -26,9 +26,6 @@ public:
 	void write(CvSavegameWriter writer);
 
 	void resetSavedData();
-	
-	static const int EUROPE_CITY_ID = -1;
-	static const int ANYWHERE_CITY_ID = -2;
 
 protected:	
 	int m_iId;	

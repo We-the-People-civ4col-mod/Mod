@@ -10,6 +10,13 @@ class CvTradeRoute
 public:
 	static const int EUROPE_CITY_ID = -1;
 	static const int ANYWHERE_CITY_ID = -2;
+	static const int AFRICA_CITY_ID = -3;
+	static const int PORT_ROYAL_CITY_ID = -4;
+
+	static bool isOffMapTradeLocation(int iID)
+	{
+		return iID == EUROPE_CITY_ID || iID == AFRICA_CITY_ID || iID == PORT_ROYAL_CITY_ID;
+	}
 
 	CvTradeRoute();
 	~CvTradeRoute();

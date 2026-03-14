@@ -10922,7 +10922,7 @@ int CvPlayer::addTradeRoute(const IDInfo& kSource, const IDInfo& kDestination, Y
 	FAssert(pSourceCity->getTeam() == getTeam());
 
 	CvCity* pDestinationCity = ::getCity(kDestination);
-	FAssert(pDestinationCity != NULL || (kDestination.eOwner == getID() && kDestination.iID == CvTradeRoute::EUROPE_CITY_ID));
+	FAssert(pDestinationCity != NULL || (kDestination.eOwner == getID() && CvTradeRoute::isOffMapTradeLocation(kDestination.iID)));
 	FAssert(pDestinationCity == NULL || pDestinationCity->getTeam() == getTeam());
 
 	if (kSource == kDestination)
@@ -11049,7 +11049,7 @@ void CvPlayer::validateTradeRoutes()
 		}
 	}
 
-	//re-add missing europe destination routes
+	//re-add missing off-map destination routes (Europe, Africa, Port Royal)
 	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
 	{
 		CvPlayer& kLoopPlayer = GET_PLAYER((PlayerTypes) iPlayer);
@@ -11058,18 +11058,28 @@ void CvPlayer::validateTradeRoutes()
 			for (int iYield = 0; iYield < NUM_YIELD_TYPES; iYield++)
 			{
 				YieldTypes eYield = (YieldTypes) iYield;
-				if (isYieldEuropeTradable(eYield))
+				int iLoop;
+				for (CvCity* pLoopCity = kLoopPlayer.firstCity(&iLoop); NULL != pLoopCity; pLoopCity = kLoopPlayer.nextCity(&iLoop))
 				{
-					int iLoop;
-					for (CvCity* pLoopCity = kLoopPlayer.firstCity(&iLoop); NULL != pLoopCity; pLoopCity = kLoopPlayer.nextCity(&iLoop))
+					// TAC - AI Economy - koma13 - START
+					//if (pLoopCity->isExport(eYield))
+					if (!(pLoopCity->isExport(eYield) && pLoopCity->isBestPortCity()))
+					// TAC - AI Economy - koma13 - END
 					{
-						// TAC - AI Economy - koma13 - START
-						//if (pLoopCity->isExport(eYield))
-						if (pLoopCity->isExport(eYield) && pLoopCity->isBestPortCity())
-						// TAC - AI Economy - koma13 - END
-						{
-							addTradeRoute(pLoopCity->getIDInfo(), IDInfo(getID(), CvTradeRoute::EUROPE_CITY_ID), eYield);
-						}
+						continue;
+					}
+
+					if (isYieldEuropeTradable(eYield))
+					{
+						addTradeRoute(pLoopCity->getIDInfo(), IDInfo(getID(), CvTradeRoute::EUROPE_CITY_ID), eYield);
+					}
+					if (isYieldAfricaTradable(eYield) && canTradeWithAfrica())
+					{
+						addTradeRoute(pLoopCity->getIDInfo(), IDInfo(getID(), CvTradeRoute::AFRICA_CITY_ID), eYield);
+					}
+					if (isYieldPortRoyalTradable(eYield) && canTradeWithPortRoyal())
+					{
+						addTradeRoute(pLoopCity->getIDInfo(), IDInfo(getID(), CvTradeRoute::PORT_ROYAL_CITY_ID), eYield);
 					}
 				}
 			}
@@ -11135,9 +11145,8 @@ namespace
 	void canonicalizePair(const IDInfo& s, const IDInfo& d,
 		IDInfo& outFirst, IDInfo& outSecond)
 	{
-		// Preserve direction whenever Europe is involved.
-		// Europe uses the special city id: CvTradeRoute::EUROPE_CITY_ID.
-		if (s.iID == CvTradeRoute::EUROPE_CITY_ID || d.iID == CvTradeRoute::EUROPE_CITY_ID)
+		// Preserve direction whenever an off-map trade location is involved.
+		if (CvTradeRoute::isOffMapTradeLocation(s.iID) || CvTradeRoute::isOffMapTradeLocation(d.iID))
 		{
 			outFirst = s;   // keep as (source, destination)
 			outSecond = d;
@@ -11205,13 +11214,13 @@ std::vector<CvTradeRoute*> CvPlayer::getViableTradeRoutesForUnit(const CvUnit& k
 		if (b == buckets.end() || b->second.empty())
 			continue;
 
-		const bool bEurope = (ok->second.iID == CvTradeRoute::EUROPE_CITY_ID);
+		const bool bOffMap = CvTradeRoute::isOffMapTradeLocation(ok->second.iID);
 
 		// Build the list we will emit from this bucket (and the representative ID for the single check)
 		int repId = -1;
 		std::vector<CvTradeRoute*> emit;
 
-		if (!bEurope)
+		if (!bOffMap)
 		{
 			// City↔city: use the first route as representative (yield-independent checks)
 			repId = b->second.front()->getID();
@@ -11219,18 +11228,29 @@ std::vector<CvTradeRoute*> CvPlayer::getViableTradeRoutesForUnit(const CvUnit& k
 		}
 		else
 		{
-			// Europe: only yields tradable to Europe are candidates.
+			// Off-map destination: only yields tradable at that location are candidates.
 			emit.reserve(b->second.size());
 			for (size_t i = 0; i < b->second.size(); ++i)
 			{
 				CvTradeRoute* const r = b->second[i];
-				if (r && kPlayer.isYieldEuropeTradable(r->getYield()))
+				if (r == NULL)
+					continue;
+
+				bool bTradable = false;
+				if (ok->second.iID == CvTradeRoute::EUROPE_CITY_ID)
+					bTradable = kPlayer.isYieldEuropeTradable(r->getYield());
+				else if (ok->second.iID == CvTradeRoute::AFRICA_CITY_ID)
+					bTradable = kPlayer.isYieldAfricaTradable(r->getYield());
+				else if (ok->second.iID == CvTradeRoute::PORT_ROYAL_CITY_ID)
+					bTradable = kPlayer.isYieldPortRoyalTradable(r->getYield());
+
+				if (bTradable)
 					emit.push_back(r);
 			}
 			if (emit.empty())
-				continue; // nothing tradable in this (src→Europe) bucket
+				continue; // nothing tradable in this off-map bucket
 
-			// Representative route must use a tradable yield (so canAssign passes Europe checks)
+			// Representative route must use a tradable yield (so canAssign passes checks)
 			repId = emit.front()->getID();
 		}
 

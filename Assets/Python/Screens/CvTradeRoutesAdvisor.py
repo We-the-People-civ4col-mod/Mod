@@ -55,6 +55,9 @@ class CvTradeRoutesAdvisor:
 		self.NO_YIELD = -1
 		self.EUROPE_CITY = -1
 		self.NO_CITY = -2
+		self.AFRICA_CITY = -3
+		self.PORT_ROYAL_CITY = -4
+		self.OFF_MAP_CITIES = [self.EUROPE_CITY, self.AFRICA_CITY, self.PORT_ROYAL_CITY]
 		
 		# Button ids
 		self.YIELD_TABLE_ID = 0
@@ -79,6 +82,21 @@ class CvTradeRoutesAdvisor:
 		#R&R mod, vetiarvind, trade groups - END
 		
 		
+	def isOffMapCity(self, iCityId):
+		return iCityId in self.OFF_MAP_CITIES
+
+	def isRealCity(self, iCityId):
+		return iCityId != self.NO_CITY and not self.isOffMapCity(iCityId)
+
+	def getOffMapCityName(self, iCityId):
+		if iCityId == self.EUROPE_CITY:
+			return localText.getText("TXT_KEY_CONCEPT_EUROPE", ())
+		elif iCityId == self.AFRICA_CITY:
+			return localText.getText("TXT_KEY_CONCEPT_AFRICA", ())
+		elif iCityId == self.PORT_ROYAL_CITY:
+			return localText.getText("TXT_KEY_CONCEPT_PORT_ROYAL", ())
+		return u""
+
 	def interfaceScreen (self):
 		screen = self.getScreen()
 		if screen.isActive():
@@ -346,9 +364,9 @@ class CvTradeRoutesAdvisor:
 				
 	def getColor(self, pRoute):
 		szColor = u"<color=255,255,255>"
-		if pRoute.getDestinationCity().iID == self.EUROPE_CITY:
+		if self.isOffMapCity(pRoute.getDestinationCity().iID):
 			szColor = u"<color=170,170,170>"
-		
+
 		return szColor
 
 	def updateRoutes(self):
@@ -384,10 +402,10 @@ class CvTradeRoutesAdvisor:
 		if self.iExport != self.NO_CITY:
 			szExport = u"%s" % self.player.getCity(self.iExport).getName()
 		szImport = localText.getText("TXT_KEY_TRADE_ROUTES_MISSING_CITY", ())
-		if self.iImport > self.EUROPE_CITY:
+		if self.isRealCity(self.iImport):
 			szImport = u"%s" % self.player.getCity(self.iImport).getName()
-		elif self.iImport == self.EUROPE_CITY:
-			szImport = localText.getText("TXT_KEY_CONCEPT_EUROPE", ())
+		elif self.isOffMapCity(self.iImport):
+			szImport = self.getOffMapCityName(self.iImport)
 							
 		szTable = self.TableNames[self.CURRENT_TABLE]
 		szColor = u"<color=255,200,50>"
@@ -493,13 +511,34 @@ class CvTradeRoutesAdvisor:
 			#Europe
 			screen.appendTableRow(szTable)
 			screen.setTableRowHeight(szTable, iI, self.ROW_HIGHT)
-			screen.setTableText(szTable, 0, iI, u"-1", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
+			screen.setTableText(szTable, 0, iI, u"%d" % self.EUROPE_CITY, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
 			screen.setTableText(szTable, 1, iI, u"%c" % CyGame().getSymbolID(FontSymbols.ANCHOR_EUROPE_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
 			screen.setTableText(szTable, 2, iI, localText.getText("TXT_KEY_CONCEPT_EUROPE", ()), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 			screen.setTableText(szTable, 3, iI, u"-", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
 			screen.setTableText(szTable, 4, iI, u"%c" % CyGame().getSymbolID(FontSymbols.IMPORT_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
-			
 			iI += 1
+
+			#Africa
+			if self.pTransport.canSailToAfrica():
+				screen.appendTableRow(szTable)
+				screen.setTableRowHeight(szTable, iI, self.ROW_HIGHT)
+				screen.setTableText(szTable, 0, iI, u"%d" % self.AFRICA_CITY, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
+				screen.setTableText(szTable, 1, iI, u"%c" % CyGame().getSymbolID(FontSymbols.ANCHOR_EUROPE_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
+				screen.setTableText(szTable, 2, iI, localText.getText("TXT_KEY_CONCEPT_AFRICA", ()), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+				screen.setTableText(szTable, 3, iI, u"-", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
+				screen.setTableText(szTable, 4, iI, u"%c" % CyGame().getSymbolID(FontSymbols.IMPORT_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
+				iI += 1
+
+			#Port Royal
+			if self.pTransport.canSailToPortRoyal():
+				screen.appendTableRow(szTable)
+				screen.setTableRowHeight(szTable, iI, self.ROW_HIGHT)
+				screen.setTableText(szTable, 0, iI, u"%d" % self.PORT_ROYAL_CITY, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
+				screen.setTableText(szTable, 1, iI, u"%c" % CyGame().getSymbolID(FontSymbols.ANCHOR_EUROPE_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
+				screen.setTableText(szTable, 2, iI, localText.getText("TXT_KEY_CONCEPT_PORT_ROYAL", ()), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
+				screen.setTableText(szTable, 3, iI, u"-", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
+				screen.setTableText(szTable, 4, iI, u"%c" % CyGame().getSymbolID(FontSymbols.IMPORT_CHAR), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_CENTER_JUSTIFY)
+				iI += 1
 		
 		for city in self.CityList:
 			screen.appendTableRow(szTable)
@@ -723,7 +762,7 @@ class CvTradeRoutesAdvisor:
 					
 		CURRENT_X += self.PREVIEW_WIDTH + self.STANDARD_MARGIN / 2
 		
-		if self.iImport > self.EUROPE_CITY:
+		if self.isRealCity(self.iImport):
 			if self.iImport != self.iImportPreview:
 				self.iImportPreview = self.iImport
 				screen.show(self.szPreviewImport + "Banner")
@@ -735,11 +774,13 @@ class CvTradeRoutesAdvisor:
 					screen.setLabelAt(self.szPreviewImport + "Label", self.szPreviewImport + "Banner", u"<font=2>" + u"%s" % self.player.getCity(self.iImport).getName() + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.PREVIEW_WIDTH - 20) / 2, 10, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				screen.addPlotGraphicGFC(self.szPreviewImport, CURRENT_X + 6, self.PREVIEW_Y + 6, self.PREVIEW_WIDTH - 12, self.PREVIEW_HEIGHT - 12, self.player.getCity(self.iImport).plot(), 350, True, WidgetTypes.WIDGET_GENERAL, -1, -1)
 				screen.moveToFront(self.szPreviewImport + "Border" + str(0))
-		elif self.iImport == self.EUROPE_CITY:
+		elif self.isOffMapCity(self.iImport):
 			screen.show(self.szPreviewImport + "Banner")
 			screen.show(self.szPreviewImport + "Cancel")
-			screen.setLabelAt(self.szPreviewImport + "Label", self.szPreviewImport + "Banner", u"<font=2>" + localText.getText("TXT_KEY_CONCEPT_EUROPE", ()) + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.PREVIEW_WIDTH - 10) / 2, 10, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
-			screen.addDDSGFC(self.szPreviewImport, "Art/Interface/Screens/TradeRoutes/EuropePreview.dds", CURRENT_X + 6, self.PREVIEW_Y + 6, self.PREVIEW_WIDTH - 12, self.PREVIEW_HEIGHT - 12, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+			szLocationName = self.getOffMapCityName(self.iImport)
+			szPreviewArt = "Art/Interface/Screens/TradeRoutes/EuropePreview.dds"
+			screen.setLabelAt(self.szPreviewImport + "Label", self.szPreviewImport + "Banner", u"<font=2>" + szLocationName + u"</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.PREVIEW_WIDTH - 10) / 2, 10, 0, FontTypes.GAME_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			screen.addDDSGFC(self.szPreviewImport, szPreviewArt, CURRENT_X + 6, self.PREVIEW_Y + 6, self.PREVIEW_WIDTH - 12, self.PREVIEW_HEIGHT - 12, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 			screen.moveToFront(self.szPreviewImport + "Border" + str(0))
 		else:
 			screen.hide(self.szPreviewImport)
@@ -797,7 +838,7 @@ class CvTradeRoutesAdvisor:
 			return
 			
 		CyMessageControl().sendDoTask(self.iExport, TaskTypes.TASK_YIELD_EXPORT, self.iYields, True, False, False, False, False)
-		if self.iImport > self.EUROPE_CITY:
+		if self.isRealCity(self.iImport):
 			CyMessageControl().sendDoTask(self.iImport, TaskTypes.TASK_YIELD_IMPORT, self.iYields, True, False, False, False, False)
 				
 	

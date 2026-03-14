@@ -178,6 +178,8 @@ void CyUnitPythonInterface2(python::class_<CyUnit>& x)
 		.def("getUnitTravelState", &CyUnit::getUnitTravelState, "int /*UnitTravelStates*/ ()")
 		.def("setUnitTravelState", &CyUnit::setUnitTravelState, "void (int /*UnitTravelStates*/, bool bShowEuropeScreen)")
 		.def("canSailEurope", &CyUnit::canSailEurope)
+		.def("canSailToAfrica", &CyUnit::canSailToAfrica, "bool ()")
+		.def("canSailToPortRoyal", &CyUnit::canSailToPortRoyal, "bool ()")
 		.def("isColonistLocked", &CyUnit::isColonistLocked, "bool ()")
 		// < JAnimals Mod Start >
 		.def("isBarbarian", &CyUnit::isBarbarian, "bool ()")

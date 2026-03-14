@@ -12234,6 +12234,22 @@ void CvCity::addExport(YieldTypes eYield, bool bUpdateRoutes)
 						kRoutePlayer.addTradeRoute(getIDInfo(), IDInfo((PlayerTypes) iRoutePlayer, CvTradeRoute::EUROPE_CITY_ID), eYield);
 					}
 				}
+
+				if (kRoutePlayer.isYieldAfricaTradable(eYield) && kRoutePlayer.canTradeWithAfrica())
+				{
+					if (isHuman() || isBestPortCity())
+					{
+						kRoutePlayer.addTradeRoute(getIDInfo(), IDInfo((PlayerTypes) iRoutePlayer, CvTradeRoute::AFRICA_CITY_ID), eYield);
+					}
+				}
+
+				if (kRoutePlayer.isYieldPortRoyalTradable(eYield) && kRoutePlayer.canTradeWithPortRoyal())
+				{
+					if (isHuman() || isBestPortCity())
+					{
+						kRoutePlayer.addTradeRoute(getIDInfo(), IDInfo((PlayerTypes) iRoutePlayer, CvTradeRoute::PORT_ROYAL_CITY_ID), eYield);
+					}
+				}
 			}
 		}
 	}

@@ -1087,11 +1087,14 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				std::vector<std::string> routeDetails = split(tradeRouteStr, ' ');
 				int srcId = atoi(routeDetails[0].c_str());
 				int destId = atoi(routeDetails[1].c_str());
-				IDInfo europeCity((PlayerTypes)GC.getGameINLINE().getActivePlayer(),CvTradeRoute::EUROPE_CITY_ID);
+				PlayerTypes eActivePlayer = (PlayerTypes)GC.getGameINLINE().getActivePlayer();
 
-				addedTradeGroup->addRoute(
-					srcId != CvTradeRoute::EUROPE_CITY_ID ?	player.getCity(srcId)->getIDInfo() : europeCity,
-					destId != CvTradeRoute::EUROPE_CITY_ID ?  player.getCity(destId)->getIDInfo() : europeCity,
+				IDInfo srcInfo = CvTradeRoute::isOffMapTradeLocation(srcId) ?
+					IDInfo(eActivePlayer, srcId) : player.getCity(srcId)->getIDInfo();
+				IDInfo destInfo = CvTradeRoute::isOffMapTradeLocation(destId) ?
+					IDInfo(eActivePlayer, destId) : player.getCity(destId)->getIDInfo();
+
+				addedTradeGroup->addRoute(srcInfo, destInfo,
 					(YieldTypes) atoi(routeDetails[2].c_str()));
 			}
 

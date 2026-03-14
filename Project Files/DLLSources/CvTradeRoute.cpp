@@ -72,6 +72,14 @@ const wchar* CvTradeRoute::getSourceCityNameKey() const
 	{
 		return L"TXT_KEY_CONCEPT_EUROPE";
 	}
+	if (getSourceCity().iID == AFRICA_CITY_ID)
+	{
+		return L"TXT_KEY_CONCEPT_AFRICA";
+	}
+	if (getSourceCity().iID == PORT_ROYAL_CITY_ID)
+	{
+		return L"TXT_KEY_CONCEPT_PORT_ROYAL";
+	}
 
 	CvCity* pCity = ::getCity(getSourceCity());
 	FAssert(pCity != NULL);
@@ -98,14 +106,14 @@ void CvTradeRoute::setDestinationCity(const IDInfo& kCity)
 		m_kDestinationCity = kCity;
 
 		CvCity* pCity = ::getCity(getDestinationCity());
-		FAssert(pCity != NULL || getDestinationCity().iID == EUROPE_CITY_ID);
+		FAssert(pCity != NULL || isOffMapTradeLocation(getDestinationCity().iID));
 		if (pCity != NULL)
 		{
 			pCity->updateImport(getYield());
 		}
 
 		pCity = ::getCity(kOldCity);
-		FAssert(pCity != NULL || getDestinationCity().iID == EUROPE_CITY_ID);
+		FAssert(pCity != NULL || isOffMapTradeLocation(kOldCity.iID));
 		if (pCity != NULL)
 		{
 			pCity->updateImport(getYield());
@@ -120,6 +128,14 @@ const wchar* CvTradeRoute::getDestinationCityNameKey() const
 	if (getDestinationCity().iID == EUROPE_CITY_ID)
 	{
 		return L"TXT_KEY_CONCEPT_EUROPE";
+	}
+	if (getDestinationCity().iID == AFRICA_CITY_ID)
+	{
+		return L"TXT_KEY_CONCEPT_AFRICA";
+	}
+	if (getDestinationCity().iID == PORT_ROYAL_CITY_ID)
+	{
+		return L"TXT_KEY_CONCEPT_PORT_ROYAL";
 	}
 
 	CvCity* pCity = ::getCity(getDestinationCity());
@@ -183,6 +199,20 @@ bool CvTradeRoute::checkValid(PlayerTypes ePlayer) const
 	if (getDestinationCity().iID == EUROPE_CITY_ID)
 	{
 		if (!kPlayer.isYieldEuropeTradable(getYield()))
+		{
+			return false;
+		}
+	}
+	else if (getDestinationCity().iID == AFRICA_CITY_ID)
+	{
+		if (!kPlayer.isYieldAfricaTradable(getYield()) || !kPlayer.canTradeWithAfrica())
+		{
+			return false;
+		}
+	}
+	else if (getDestinationCity().iID == PORT_ROYAL_CITY_ID)
+	{
+		if (!kPlayer.isYieldPortRoyalTradable(getYield()) || !kPlayer.canTradeWithPortRoyal())
 		{
 			return false;
 		}
