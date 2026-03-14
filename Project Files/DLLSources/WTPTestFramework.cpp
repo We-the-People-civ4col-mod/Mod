@@ -6,7 +6,7 @@
 
 WTPTestResult g_wtpTestResult;
 
-static const char* LOG_FILE = "Logs\\WTPTests.log";
+static const char* LOG_FILE = "WTPTests.log";
 
 void WTPTestReport(const char* suiteName, const WTPTestResult& result)
 {
@@ -36,6 +36,7 @@ void WTPTestReport(const char* suiteName, const WTPTestResult& result)
 void RunDataStructureTests();
 void RunXMLIntegrityTests();
 void RunSavegameTests();
+void RunDeterminismTests();
 
 void RunAllWTPTests()
 {
@@ -44,6 +45,7 @@ void RunAllWTPTests()
 	RunDataStructureTests();
 	RunXMLIntegrityTests();
 	RunSavegameTests();
+	RunDeterminismTests();
 
 	gDLL->logMsg(LOG_FILE, "=== WTP Test Suite Complete ===");
 }

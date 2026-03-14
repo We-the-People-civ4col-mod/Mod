@@ -123,6 +123,7 @@
     <ClCompile Include="DLLSources\TestDataStructures.cpp" />
     <ClCompile Include="DLLSources\TestXMLIntegrity.cpp" />
     <ClCompile Include="DLLSources\TestSavegame.cpp" />
+    <ClCompile Include="DLLSources\TestDeterminism.cpp" />
     <ClCompile Include="DLLSources\CvPlotFunctions.cpp" />
     <ClCompile Include="DLLSources\CvAreaSavegame.cpp" />
     <ClCompile Include="DLLSources\CvMapSavegame.cpp" />
