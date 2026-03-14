@@ -34,12 +34,14 @@ void WTPTestReport(const char* suiteName, const WTPTestResult& result)
 
 // forward declarations for test suites
 void RunDataStructureTests();
+void RunXMLIntegrityTests();
 
 void RunAllWTPTests()
 {
 	gDLL->logMsg(LOG_FILE, "=== WTP Test Suite Starting ===");
 
 	RunDataStructureTests();
+	RunXMLIntegrityTests();
 
 	gDLL->logMsg(LOG_FILE, "=== WTP Test Suite Complete ===");
 }
