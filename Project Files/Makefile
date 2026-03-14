@@ -284,6 +284,11 @@ build: $(Target_BIN)
 	-xcopy "..\PrivateMaps\*" "$(YOURMOD)\PrivateMaps\*" /e /y /f /d
 !ENDIF
 !ENDIF
+!IFDEF GAME_MODS_PATH
+	@ECHO Installing mod to $(GAME_MODS_PATH)
+	-xcopy "$(YOURMOD)\Assets\*" "$(GAME_MODS_PATH)\Assets\*" /e /y /d /q
+	-xcopy "$(YOURMOD)\PrivateMaps\*" "$(GAME_MODS_PATH)\PrivateMaps\*" /e /y /d /q
+!ENDIF
 
 
 precompile: Target_unfinished $(Target_PCH)
