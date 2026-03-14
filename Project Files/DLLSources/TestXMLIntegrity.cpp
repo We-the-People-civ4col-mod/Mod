@@ -19,14 +19,16 @@ WTP_TEST(XMLIntegrity, ProfessionYieldsValid)
 		for (int i = 0; i < kProfession.getNumYieldsProduced(); ++i)
 		{
 			int eYield = kProfession.getYieldsProduced(i);
-			WTP_ASSERT_MSG(eYield >= 0 && eYield < NUM_YIELD_TYPES,
+			// NO_YIELD (-1) is valid — game code checks and skips it
+			WTP_ASSERT_MSG(eYield == NO_YIELD || (eYield >= 0 && eYield < NUM_YIELD_TYPES),
 				"Profession has invalid produced yield");
 		}
 
 		for (int i = 0; i < kProfession.getNumYieldsConsumed(); ++i)
 		{
 			int eYield = kProfession.getYieldsConsumed(i);
-			WTP_ASSERT_MSG(eYield >= 0 && eYield < NUM_YIELD_TYPES,
+			// NO_YIELD (-1) is valid — game code checks and skips it
+			WTP_ASSERT_MSG(eYield == NO_YIELD || (eYield >= 0 && eYield < NUM_YIELD_TYPES),
 				"Profession has invalid consumed yield");
 		}
 	}
@@ -113,9 +115,9 @@ WTP_TEST(XMLIntegrity, UnitYieldCostsNonNegative)
 	{
 		const CvUnitInfo& kUnit = GC.getUnitInfo(eUnit);
 
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
-			int iCost = kUnit.getYieldCost(iYield);
+			int iCost = kUnit.getYieldCost(eYield);
 			// Yield costs should never be negative
 			WTP_ASSERT_MSG(iCost >= 0,
 				"Unit has negative yield cost");
@@ -170,10 +172,10 @@ WTP_TEST(XMLIntegrity, TerrainBonusesValid)
 	{
 		const CvTerrainInfo& kTerrain = GC.getTerrainInfo(eTerrain);
 
-		for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 		{
 			// Accessing yield info for each terrain should not crash
-			int iValue = kTerrain.getYield(iYield);
+			int iValue = kTerrain.getYield(eYield);
 			(void)iValue;
 		}
 	}

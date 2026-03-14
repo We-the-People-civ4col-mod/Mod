@@ -35,6 +35,7 @@ void WTPTestReport(const char* suiteName, const WTPTestResult& result)
 // forward declarations for test suites
 void RunDataStructureTests();
 void RunXMLIntegrityTests();
+void RunSavegameTests();
 
 void RunAllWTPTests()
 {
@@ -42,6 +43,7 @@ void RunAllWTPTests()
 
 	RunDataStructureTests();
 	RunXMLIntegrityTests();
+	RunSavegameTests();
 
 	gDLL->logMsg(LOG_FILE, "=== WTP Test Suite Complete ===");
 }
