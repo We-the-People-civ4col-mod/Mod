@@ -1264,6 +1264,14 @@
 		<German>[COLOR_HIGHLIGHT_TEXT]Fischernetze[COLOR_REVERT] werden genutzt um einen Fischschwarm zu fangen, oder mit sogenannten Kiemennetzen auch nur Fische einer bestimmten Größe. Daneben gibt es noch ein anderes Hauptsystem, das von Fischern verwendet wird: das Schleppnetz, welches mit einem Haken hinter dem Schiff hergezogen wird.</German>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_ICE_HUT</Tag>
+		<English>Ice Hut</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_IMPROVEMENT_ICE_HUT_PEDIA</Tag>
+		<English>[COLOR_HIGHLIGHT_TEXT]Ice huts[COLOR_REVERT] are small shelters built on frozen lakes for ice fishing. A hole is cut through the ice, and the hut provides protection from the harsh winter winds while fishermen harvest the lake's bounty below.</English>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE</Tag>
 		<English>Hunters' Blind</English>
 		<French>Affût de chasseur</French>

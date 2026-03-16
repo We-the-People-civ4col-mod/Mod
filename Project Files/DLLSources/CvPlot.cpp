@@ -4650,7 +4650,7 @@ bool CvPlot::isValidDomainForAction(UnitTypes eUnit) const
 		//WTP, ray, Large Rivers - START
 		// fixing Valid Domain for Large Rivers
 		//return (!isWater() || kUnitInfo.isCanMoveAllTerrain());
-		return (!isWater() || getTerrainType() == TERRAIN_LARGE_RIVERS || kUnitInfo.isCanMoveAllTerrain());
+		return (!isWater() || getTerrainType() == TERRAIN_LARGE_RIVERS || getTerrainType() == TERRAIN_ICE_LAKE || kUnitInfo.isCanMoveAllTerrain());
 		//WTP, ray, Large Rivers - START
 		break;
 

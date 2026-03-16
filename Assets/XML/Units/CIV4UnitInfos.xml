@@ -64729,6 +64729,10 @@
 					<BuildType>BUILD_SALINA</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
+				<Build>
+					<BuildType>BUILD_ICE_HUT</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
 			</Builds>
 			<PrereqBuilding>NONE</PrereqBuilding>
 			<PrereqOrBuildings/>

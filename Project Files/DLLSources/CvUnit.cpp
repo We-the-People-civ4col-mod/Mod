@@ -3704,7 +3704,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 				// allowing all Land Units to enter Large Rivers
 				// further below we will code exceptions - Maybe also configure in XML
 				//return false;
-				if(kPlot.getTerrainType() != TERRAIN_LARGE_RIVERS)
+				if(kPlot.getTerrainType() != TERRAIN_LARGE_RIVERS && kPlot.getTerrainType() != TERRAIN_ICE_LAKE)
 				{
 					return false;
 				}

@@ -509,6 +509,14 @@
 		<Russian>Увеличивает продуктивность добычи ресурсов</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILD_ICE_HUT</Tag>
+		<English>Build [LINK=IMPROVEMENT_ICE_HUT]ice hut[\LINK]</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILD_ICE_HUT_HELP</Tag>
+		<English>Builds an ice fishing hut on a frozen lake</English>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILD_HUNTERS_STAGE</Tag>
 		<English>Build [LINK=IMPROVEMENT_HUNTERS_STAGE]hunters' blind[\LINK]</English>
 		<French>Construire des postes de chasses</French>
