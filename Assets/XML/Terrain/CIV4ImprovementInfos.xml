@@ -7388,7 +7388,7 @@
 			<HillsYieldChanges/>
 			<bActsAsCity>0</bActsAsCity>
 			<bCanal>1</bCanal>
-			<bNotAllowedNextToSameAsItself>1</bNotAllowedNextToSameAsItself>
+			<bNotAllowedNextToSameAsItself>0</bNotAllowedNextToSameAsItself>
 			<bHillsMakesValid>0</bHillsMakesValid>
 			<bRiverSideMakesValid>0</bRiverSideMakesValid>
 			<bRequiresFlatlands>1</bRequiresFlatlands>

@@ -2191,12 +2191,25 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	// WTP, ray, small adjustment for Goodies spwawning hostile Units - END
 
 	// WTP, ray, Canal - START
+	// Enhanced canals: allow building adjacent to water OR adjacent to an existing canal (chain rule)
 	if (GC.getImprovementInfo(eImprovement).isCanal())
 	{
-		// we do not want to allow endless long canals, only next to Water Plots
 		if (isCoastalLand())
 		{
 			bValid = true;
+		}
+		else
+		{
+			// Canal chains: allow building adjacent to an existing canal
+			for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+			{
+				const CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+				if (pAdjacentPlot != NULL && pAdjacentPlot->isCanal())
+				{
+					bValid = true;
+					break;
+				}
+			}
 		}
 	}
 	// WTP, ray, Canal - END
@@ -2646,6 +2659,17 @@ int CvPlot::getBuildTime(BuildTypes eBuild) const
 
 	iTime *= std::max(0, (GC.getTerrainInfo(getTerrainType()).getBuildModifier() + 100));
 	iTime /= 100;
+
+	// Canal chain cost escalation: each additional tile in the chain doubles the build time
+	if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT
+		&& GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).isCanal())
+	{
+		int iChainSize = countAdjacentConnectedCanals();
+		for (int i = 0; i < iChainSize; ++i)
+		{
+			iTime *= 2;
+		}
+	}
 
 	iTime *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
 	iTime /= 100;
@@ -4324,6 +4348,49 @@ bool CvPlot::isCanal() const
 
 	return false;
 }
+
+int CvPlot::countAdjacentConnectedCanals() const
+{
+	// BFS through adjacent canal chain, bounded
+	static const int MAX_CANAL_CHAIN = 20;
+	const CvPlot* queue[MAX_CANAL_CHAIN];
+	int iHead = 0;
+	int iTail = 0;
+
+	// Seed with adjacent canals (not self - self may not be a canal yet)
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+	{
+		const CvPlot* pAdj = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+		if (pAdj != NULL && pAdj->isCanal() && iTail < MAX_CANAL_CHAIN)
+		{
+			queue[iTail++] = pAdj;
+		}
+	}
+
+	// Expand BFS
+	while (iHead < iTail)
+	{
+		const CvPlot* pCurrent = queue[iHead++];
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+		{
+			const CvPlot* pAdj = plotDirection(pCurrent->getX_INLINE(), pCurrent->getY_INLINE(), ((DirectionTypes)iI));
+			if (pAdj == NULL || pAdj == this || !pAdj->isCanal() || iTail >= MAX_CANAL_CHAIN)
+			{
+				continue;
+			}
+			bool bSeen = false;
+			for (int j = 0; j < iTail; ++j)
+			{
+				if (queue[j] == pAdj) { bSeen = true; break; }
+			}
+			if (!bSeen)
+			{
+				queue[iTail++] = pAdj;
+			}
+		}
+	}
+	return iTail; // total connected canals (not counting self)
+}
 // R&R, ray, Monasteries and Forts - END
 
 
@@ -4890,10 +4957,11 @@ CvArea* CvPlot::getAdjacentSeaArea() const
 	CvMap& kMap = GC.getMap();
 	const int iPlotX = getX_INLINE();
 	const int iPlotY = getY_INLINE();
-	int iRange = 1;
 
 	CvArea* pArea = area();
+	CvArea* pLakeArea = NULL;
 
+	// Fast path: check directly adjacent plots for water
 	LOOP_ADJACENT_PLOTS(iPlotX, iPlotY, 1)
 	{
 		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
@@ -4904,6 +4972,81 @@ CvArea* CvPlot::getAdjacentSeaArea() const
 			{
 				return pArea;
 			}
+			if (pLakeArea == NULL)
+			{
+				pLakeArea = pArea;
+			}
+		}
+	}
+
+	if (pLakeArea != NULL)
+	{
+		return pLakeArea;
+	}
+
+	// Canal BFS: if this is a canal with no adjacent water, follow canal chain to find reachable water
+	if (isCanal())
+	{
+		static const int MAX_CANAL_BFS = 20;
+		const CvPlot* queue[MAX_CANAL_BFS];
+		int iHead = 0;
+		int iTail = 0;
+
+		// Seed with adjacent canals
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+		{
+			const CvPlot* pAdj = plotDirection(iPlotX, iPlotY, ((DirectionTypes)iI));
+			if (pAdj != NULL && pAdj->isCanal() && iTail < MAX_CANAL_BFS)
+			{
+				queue[iTail++] = pAdj;
+			}
+		}
+
+		CvArea* pBfsLakeArea = NULL;
+
+		while (iHead < iTail)
+		{
+			const CvPlot* pCurrent = queue[iHead++];
+
+			// Check this canal's adjacent plots for water
+			for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+			{
+				const CvPlot* pAdj = plotDirection(pCurrent->getX_INLINE(), pCurrent->getY_INLINE(), ((DirectionTypes)iI));
+				if (pAdj == NULL)
+				{
+					continue;
+				}
+				if (pAdj->isWater())
+				{
+					CvArea* pWaterArea = pAdj->area();
+					if (!pWaterArea->isLake())
+					{
+						return pWaterArea; // ocean - best result
+					}
+					if (pBfsLakeArea == NULL)
+					{
+						pBfsLakeArea = pWaterArea;
+					}
+				}
+				else if (pAdj->isCanal() && pAdj != this && iTail < MAX_CANAL_BFS)
+				{
+					// Enqueue unseen canals
+					bool bSeen = false;
+					for (int j = 0; j < iTail; ++j)
+					{
+						if (queue[j] == pAdj) { bSeen = true; break; }
+					}
+					if (!bSeen)
+					{
+						queue[iTail++] = pAdj;
+					}
+				}
+			}
+		}
+
+		if (pBfsLakeArea != NULL)
+		{
+			return pBfsLakeArea;
 		}
 	}
 
