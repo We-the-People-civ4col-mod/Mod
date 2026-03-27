@@ -71,6 +71,7 @@ void EventTriggeredData::setRandomNumbers()
 			RandomContainer container;
 			container.event = eEvent;
 			container.number = GC.getGameINLINE().getSorenRandNum(1000, "Event random number");
+			m_RandomNumbers.push_back(container);
 		}
 	}
 }
