@@ -426,6 +426,7 @@
 	<ElementType name="bFort" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bMonastery" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bCanal" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bDeepCanal" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bNotAllowedNextToSameAsItself" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bHillsMakesValid" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bRiverSideMakesValid" content="textOnly" dt:type="boolean"/>
@@ -487,6 +488,7 @@
 		<element type="bFort" minOccurs="0"/>
 		<element type="bMonastery" minOccurs="0"/>
 		<element type="bCanal" minOccurs="0"/>
+		<element type="bDeepCanal" minOccurs="0"/>
 		<element type="bNotAllowedNextToSameAsItself" minOccurs="0"/>
 		<element type="bHillsMakesValid"/>
 		<element type="bRiverSideMakesValid"/>

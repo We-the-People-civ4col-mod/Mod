@@ -225,6 +225,7 @@ public:
 	bool isFort() const;
 	bool isMonastery() const;
 	bool isCanal() const;
+	bool isDeepCanal() const;
 	int countAdjacentConnectedCanals() const;
 	// R&R, ray, Monasteries and Forts - END
 

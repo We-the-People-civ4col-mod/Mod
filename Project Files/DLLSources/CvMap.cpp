@@ -1315,6 +1315,242 @@ void CvMap::calculateCanalAndChokePoints()
 }
 // Super Forts end
 
+// Deep canal water area bridge connectivity
+//
+// This subsystem tracks which water areas (oceans, lakes) are connected
+// via deep canal chains, enabling Europe-to-lake routing for lake-capable ships.
+//
+// Implementation notes (VC++ 2003 / C++03 constraints):
+// - No range-for, auto, or lambdas: all loops use explicit index or iterator variables
+// - No unordered_map: uses std::map for union-find (O(log n) instead of O(1), acceptable for small N)
+// - No std::set: duplicate checks done via linear scan of small vectors
+// - std::vector<bool> is used for the visited bitmap; in C++03 this is a specialization that
+//   stores bits in packed form (not a real vector of bools), but operator[] and size() work fine
+// - BFS uses a fixed-size C array on the stack (int queue[MAX_BFS]) instead of std::queue
+//   to avoid heap allocation in a potentially hot path; MAX_BFS=40 limits the max chain length
+// - size_t is used for vector iteration (return type of std::vector::size()); this is safe in VC++ 2003
+// - Struct initialization uses member-by-member assignment (no brace initialization in C++03)
+// - No move semantics: push_back copies the struct, which is fine for small POD structs
+//
+int CvMap::findWaterAreaRoot(int iAreaID) const
+{
+	// Union-find "find" with path following (no path compression since this is const)
+	// Uses std::map::find which is O(log n) per lookup; the chain is typically very short (1-3 hops)
+	std::map<int, int>::const_iterator it = m_waterAreaEquivalence.find(iAreaID);
+	if (it == m_waterAreaEquivalence.end())
+	{
+		return iAreaID;
+	}
+	int iRoot = iAreaID;
+	while (true)
+	{
+		it = m_waterAreaEquivalence.find(iRoot);
+		if (it == m_waterAreaEquivalence.end() || it->second == iRoot)
+		{
+			return iRoot;
+		}
+		iRoot = it->second;
+	}
+}
+
+bool CvMap::areWaterAreasConnected(int iAreaA, int iAreaB) const
+{
+	if (iAreaA == iAreaB)
+	{
+		return true;
+	}
+	return findWaterAreaRoot(iAreaA) == findWaterAreaRoot(iAreaB);
+}
+
+CvPlot* CvMap::getBridgeLocation(int iFromArea, int iToArea) const
+{
+	// Find a bridge that connects these areas (or areas in the same equivalence class)
+	int iFromRoot = findWaterAreaRoot(iFromArea);
+	int iToRoot = findWaterAreaRoot(iToArea);
+
+	if (iFromRoot != iToRoot)
+	{
+		return NULL; // not connected
+	}
+
+	// Find the bridge closest to iFromArea
+	for (size_t i = 0; i < m_waterAreaBridges.size(); ++i)
+	{
+		int iA = m_waterAreaBridges[i].iAreaA;
+		int iB = m_waterAreaBridges[i].iAreaB;
+		if ((findWaterAreaRoot(iA) == iFromRoot) &&
+			(iA == iFromArea || iB == iFromArea || iA == iToArea || iB == iToArea))
+		{
+			return plotByIndexINLINE(m_waterAreaBridges[i].iPlotIndex);
+		}
+	}
+
+	// Fallback: return first bridge in the equivalence class
+	for (size_t i = 0; i < m_waterAreaBridges.size(); ++i)
+	{
+		if (findWaterAreaRoot(m_waterAreaBridges[i].iAreaA) == iFromRoot)
+		{
+			return plotByIndexINLINE(m_waterAreaBridges[i].iPlotIndex);
+		}
+	}
+
+	return NULL;
+}
+
+void CvMap::rebuildWaterAreaBridges()
+{
+	m_waterAreaBridges.clear();
+	m_waterAreaEquivalence.clear();
+
+	// Max deep canal chain length for BFS; uses stack array to avoid heap allocation
+	// C++03: static const int is fine for array sizes in VC++ 2003
+	static const int MAX_BFS = 40;
+
+	// C++03 note: std::vector<bool> is a packed bitfield specialization, not a true vector
+	// of bools. However, operator[] and size() work correctly for our usage pattern.
+	// We use it here instead of a raw bool array because the map size is runtime-determined.
+	std::vector<bool> bVisited(numPlotsINLINE(), false);
+
+	for (int iPlot = 0; iPlot < numPlotsINLINE(); ++iPlot)
+	{
+		CvPlot* pPlot = plotByIndexINLINE(iPlot);
+		if (pPlot == NULL || !pPlot->isDeepCanal() || bVisited[iPlot])
+		{
+			continue;
+		}
+
+		// BFS through connected deep canal chain
+		// C++03: using C-style stack array instead of std::queue to avoid heap allocation
+		int queue[MAX_BFS];
+		int iHead = 0;
+		int iTail = 0;
+		queue[iTail++] = iPlot;
+		bVisited[iPlot] = true;
+
+		// Collect all distinct water area IDs adjacent to this chain
+		// C++03: no std::set available, so we use vectors with linear duplicate checks
+		// This is efficient because the number of distinct water areas per chain is tiny (typically 2-3)
+		std::vector<int> adjacentWaterAreas;
+		std::vector<int> adjacentWaterBridgePlots; // corresponding plot indices
+
+		while (iHead < iTail)
+		{
+			int iCurrent = queue[iHead++];
+			CvPlot* pCurrent = plotByIndexINLINE(iCurrent);
+
+			// Check all neighbors for water or more deep canals
+			for (int iDir = 0; iDir < NUM_DIRECTION_TYPES; ++iDir)
+			{
+				CvPlot* pAdj = plotDirection(pCurrent->getX_INLINE(), pCurrent->getY_INLINE(), (DirectionTypes)iDir);
+				if (pAdj == NULL)
+				{
+					continue;
+				}
+
+				if (pAdj->isWater())
+				{
+					int iWaterAreaID = pAdj->area()->getID();
+					// Check if we already recorded this area
+					bool bFound = false;
+					for (size_t j = 0; j < adjacentWaterAreas.size(); ++j)
+					{
+						if (adjacentWaterAreas[j] == iWaterAreaID)
+						{
+							bFound = true;
+							break;
+						}
+					}
+					if (!bFound)
+					{
+						adjacentWaterAreas.push_back(iWaterAreaID);
+						adjacentWaterBridgePlots.push_back(iCurrent);
+					}
+				}
+				else if (pAdj->isDeepCanal())
+				{
+					int iAdjIdx = plotNumINLINE(pAdj->getX_INLINE(), pAdj->getY_INLINE());
+					if (!bVisited[iAdjIdx] && iTail < MAX_BFS)
+					{
+						bVisited[iAdjIdx] = true;
+						queue[iTail++] = iAdjIdx;
+					}
+				}
+			}
+		}
+
+		// Create bridges between all pairs of adjacent water areas
+		// C++03: size_t used for vector index iteration (return type of std::vector::size())
+		// C++03: WaterAreaBridge initialized member-by-member (no brace initialization)
+		for (size_t a = 0; a < adjacentWaterAreas.size(); ++a)
+		{
+			for (size_t b = a + 1; b < adjacentWaterAreas.size(); ++b)
+			{
+				WaterAreaBridge bridge;
+				bridge.iAreaA = adjacentWaterAreas[a];
+				bridge.iAreaB = adjacentWaterAreas[b];
+				bridge.iPlotIndex = adjacentWaterBridgePlots[a];
+				m_waterAreaBridges.push_back(bridge);
+			}
+		}
+	}
+
+	// Also create bridges for cities adjacent to 2+ distinct water areas
+	for (int iPlot = 0; iPlot < numPlotsINLINE(); ++iPlot)
+	{
+		CvPlot* pPlot = plotByIndexINLINE(iPlot);
+		if (pPlot == NULL || !pPlot->isCity())
+		{
+			continue;
+		}
+
+		std::vector<int> cityWaterAreas;
+		for (int iDir = 0; iDir < NUM_DIRECTION_TYPES; ++iDir)
+		{
+			CvPlot* pAdj = plotDirection(pPlot->getX_INLINE(), pPlot->getY_INLINE(), (DirectionTypes)iDir);
+			if (pAdj != NULL && pAdj->isWater())
+			{
+				int iWaterAreaID = pAdj->area()->getID();
+				bool bFound = false;
+				for (size_t j = 0; j < cityWaterAreas.size(); ++j)
+				{
+					if (cityWaterAreas[j] == iWaterAreaID)
+					{
+						bFound = true;
+						break;
+					}
+				}
+				if (!bFound)
+				{
+					cityWaterAreas.push_back(iWaterAreaID);
+				}
+			}
+		}
+
+		for (size_t a = 0; a < cityWaterAreas.size(); ++a)
+		{
+			for (size_t b = a + 1; b < cityWaterAreas.size(); ++b)
+			{
+				WaterAreaBridge bridge;
+				bridge.iAreaA = cityWaterAreas[a];
+				bridge.iAreaB = cityWaterAreas[b];
+				bridge.iPlotIndex = iPlot;
+				m_waterAreaBridges.push_back(bridge);
+			}
+		}
+	}
+
+	// Build union-find from bridges (transitive closure)
+	for (size_t i = 0; i < m_waterAreaBridges.size(); ++i)
+	{
+		int iRootA = findWaterAreaRoot(m_waterAreaBridges[i].iAreaA);
+		int iRootB = findWaterAreaRoot(m_waterAreaBridges[i].iAreaB);
+		if (iRootA != iRootB)
+		{
+			m_waterAreaEquivalence[iRootB] = iRootA;
+		}
+	}
+}
+
 // autodetect lakes - start
 void CvMap::updateWaterPlotTerrainTypes()
 {

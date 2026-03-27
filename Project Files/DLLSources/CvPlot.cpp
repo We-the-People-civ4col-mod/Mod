@@ -2191,8 +2191,16 @@ bool CvPlot::canHaveImprovement(ImprovementTypes eImprovement, TeamTypes eTeam, 
 	// WTP, ray, small adjustment for Goodies spwawning hostile Units - END
 
 	// WTP, ray, Canal - START
+	// Deep canal: must be built on an existing regular canal tile
+	if (GC.getImprovementInfo(eImprovement).isDeepCanal())
+	{
+		if (isCanal() && !isDeepCanal())
+		{
+			bValid = true;
+		}
+	}
 	// Enhanced canals: allow building adjacent to water OR adjacent to an existing canal (chain rule)
-	if (GC.getImprovementInfo(eImprovement).isCanal())
+	else if (GC.getImprovementInfo(eImprovement).isCanal())
 	{
 		if (isCoastalLand())
 		{
@@ -2370,11 +2378,19 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 
 			// Super Forts begin *AI_worker* - prevent forts from being built over when outside culture range
 			// WTP, ray, Canal -- also adjust here to prevent canals destroying other Improvements
+			// Exception: allow upgrading a regular canal to a deep canal
 			if (GC.getImprovementInfo(getImprovementType()).isActsAsCity() || GC.getImprovementInfo(getImprovementType()).isCanal())
 			{
-				if (!isWithinCultureRange(ePlayer) && !(getCultureRangeForts(ePlayer) > 1))
+				bool bIsDeepCanalUpgrade = (GC.getImprovementInfo(getImprovementType()).isCanal()
+					&& !GC.getImprovementInfo(getImprovementType()).isDeepCanal()
+					&& GC.getImprovementInfo(eImprovement).isDeepCanal());
+
+				if (!bIsDeepCanalUpgrade)
 				{
-					return false;
+					if (!isWithinCultureRange(ePlayer) && !(getCultureRangeForts(ePlayer) > 1))
+					{
+						return false;
+					}
 				}
 			}
 			// Super Forts end
@@ -2660,12 +2676,13 @@ int CvPlot::getBuildTime(BuildTypes eBuild) const
 	iTime *= std::max(0, (GC.getTerrainInfo(getTerrainType()).getBuildModifier() + 100));
 	iTime /= 100;
 
-	// Canal chain cost escalation: each additional tile in the chain doubles the build time
+	// Canal chain cost escalation: each additional tile in the chain doubles the build time (capped at 4x)
 	if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT
 		&& GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).isCanal())
 	{
 		int iChainSize = countAdjacentConnectedCanals();
-		for (int i = 0; i < iChainSize; ++i)
+		int iMultiplier = std::min(iChainSize, 2);
+		for (int i = 0; i < iMultiplier; ++i)
 		{
 			iTime *= 2;
 		}
@@ -4349,6 +4366,16 @@ bool CvPlot::isCanal() const
 	return false;
 }
 
+bool CvPlot::isDeepCanal() const
+{
+	if (getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(getImprovementType()).isDeepCanal())
+	{
+		return true;
+	}
+
+	return false;
+}
+
 int CvPlot::countAdjacentConnectedCanals() const
 {
 	// BFS through adjacent canal chain, bounded
@@ -4635,10 +4662,26 @@ bool CvPlot::isValidDomainForAction(UnitTypes eUnit) const
 	case DOMAIN_SEA:
 
 		// WTP, ray, Canal - START
-		// in Canals, which are actually on land plots, we do not want to have any Ships bigger than Coastal Ships or Fishing Boats
-		if (!isWater() && !kUnitInfo.getTerrainImpassable(TERRAIN_OCEAN) && !(kUnitInfo.isGatherBoat() && kUnitInfo.getHarbourSpaceNeeded() == 1) && getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(getImprovementType()).isCanal())
+		// Canal ship filtering: regular canals allow coastal ships + gather boats; deep canals allow lake-capable ships
+		if (!isWater() && isCanal())
 		{
-			return false;
+			if (isDeepCanal())
+			{
+				// Deep canal: block ships that cannot traverse lakes
+				if (kUnitInfo.getTerrainImpassable(TERRAIN_LAKE))
+				{
+					return false;
+				}
+			}
+			else
+			{
+				// Regular canal: block ships that can traverse ocean (except gather boats with harbour space 1)
+				if (!kUnitInfo.getTerrainImpassable(TERRAIN_OCEAN)
+					&& !(kUnitInfo.isGatherBoat() && kUnitInfo.getHarbourSpaceNeeded() == 1))
+				{
+					return false;
+				}
+			}
 		}
 		// WTP, ray, Canal - END
 
@@ -6511,6 +6554,17 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 		// CvPlot::hasYield cache - start - Nightinggale
 		setYieldCache();
 		// CvPlot::hasYield cache - end - Nightinggale
+
+		// Rebuild water area bridge graph when deep canals change (skip during load)
+		if (GC.getGameINLINE().isFinalInitialized())
+		{
+			bool bOldDeepCanal = (eOldImprovement != NO_IMPROVEMENT && GC.getImprovementInfo(eOldImprovement).isDeepCanal());
+			bool bNewDeepCanal = (eNewValue != NO_IMPROVEMENT && GC.getImprovementInfo(eNewValue).isDeepCanal());
+			if (bOldDeepCanal != bNewDeepCanal)
+			{
+				GC.getMap().rebuildWaterAreaBridges();
+			}
+		}
 	}
 }
 
