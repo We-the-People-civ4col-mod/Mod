@@ -14422,7 +14422,7 @@ EventTriggeredData* CvPlayer::initTriggeredData(EventTriggerTypes eEventTrigger,
 				return NULL;
 			}
 
-			Coordinates coord (pTriggerData->m_iPlotX, pTriggerData->m_iPlotX);
+			Coordinates coord (pTriggerData->m_iPlotX, pTriggerData->m_iPlotY);
 
 			// python may change pTriggerData
 			pCity = getCity(pTriggerData->m_iCityId);
