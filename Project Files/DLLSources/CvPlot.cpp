@@ -2648,7 +2648,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 
 		// make sure the terrain in question can have the wanted feature
 		// ray, RaR, we additionally check for "needs River" here
-		if (!GC.getFeatureInfo(eResultFeature).isTerrain(getTerrainType()) || (GC.getFeatureInfo(eResultFeature).isRequiresRiver() && !isRiver()))
+		if (!GC.getFeatureInfo(eResultFeature).isTerrain(getTerrainType()) || (GC.getFeatureInfo(eResultFeature).isRequiresRiver() && !isRiver() && !isAdjacentToCanal()))
 		{
 			return false;
 		}
@@ -4418,6 +4418,70 @@ int CvPlot::countAdjacentConnectedCanals() const
 	}
 	return iTail; // total connected canals (not counting self)
 }
+bool CvPlot::isAdjacentToCanal() const
+{
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), (DirectionTypes)iI);
+		if (pAdjacentPlot != NULL && pAdjacentPlot->isCanal())
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
+bool CvPlot::isCanalChainConnectedToFreshwater() const
+{
+	static const int MAX_CANAL_CHAIN = 20;
+	const CvPlot* queue[MAX_CANAL_CHAIN];
+	int iHead = 0;
+	int iTail = 0;
+
+	// Seed: this plot itself (must be a canal)
+	if (!isCanal())
+	{
+		return false;
+	}
+	queue[iTail++] = this;
+
+	// BFS through canal chain
+	while (iHead < iTail)
+	{
+		const CvPlot* pCurrent = queue[iHead++];
+
+		// Check all neighbors of current canal for freshwater or more canals
+		for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+		{
+			const CvPlot* pAdj = plotDirection(pCurrent->getX_INLINE(), pCurrent->getY_INLINE(), (DirectionTypes)iI);
+			if (pAdj == NULL)
+			{
+				continue;
+			}
+
+			// Freshwater found?
+			if (pAdj->isLake() || pAdj->getTerrainType() == TERRAIN_LARGE_RIVERS || pAdj->isRiver())
+			{
+				return true;
+			}
+
+			// Expand BFS to connected canals
+			if (pAdj->isCanal() && iTail < MAX_CANAL_CHAIN)
+			{
+				bool bSeen = false;
+				for (int j = 0; j < iTail; ++j)
+				{
+					if (queue[j] == pAdj) { bSeen = true; break; }
+				}
+				if (!bSeen)
+				{
+					queue[iTail++] = pAdj;
+				}
+			}
+		}
+	}
+	return false;
+}
 // R&R, ray, Monasteries and Forts - END
 
 
@@ -4600,7 +4664,7 @@ bool CvPlot::canHaveFeature(FeatureTypes eFeature) const
 		}
 	}
 
-	if (GC.getFeatureInfo(eFeature).isRequiresRiver() && !isRiver())
+	if (GC.getFeatureInfo(eFeature).isRequiresRiver() && !isRiver() && !isAdjacentToCanal())
 	{
 		return false;
 	}
@@ -6563,6 +6627,30 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 			if (bOldDeepCanal != bNewDeepCanal)
 			{
 				GC.getMap().rebuildWaterAreaBridges();
+			}
+		}
+
+		// Canals connected to freshwater irrigate adjacent desert — create flood plains
+		if (GC.getGameINLINE().isFinalInitialized())
+		{
+			bool bNewCanal = (eNewValue != NO_IMPROVEMENT && GC.getImprovementInfo(eNewValue).isCanal());
+			bool bOldCanal = (eOldImprovement != NO_IMPROVEMENT && GC.getImprovementInfo(eOldImprovement).isCanal());
+			if (bNewCanal && !bOldCanal && isCanalChainConnectedToFreshwater())
+			{
+				FeatureTypes eFloodPlains = (FeatureTypes)GC.getInfoTypeForString("FEATURE_FLOOD_PLAINS");
+				if (eFloodPlains != NO_FEATURE)
+				{
+					for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+					{
+						CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), (DirectionTypes)iI);
+						if (pAdjacentPlot != NULL
+							&& pAdjacentPlot->getFeatureType() == NO_FEATURE
+							&& pAdjacentPlot->canHaveFeature(eFloodPlains))
+						{
+							pAdjacentPlot->setFeatureType(eFloodPlains);
+						}
+					}
+				}
 			}
 		}
 	}
