@@ -1,7 +1,8 @@
-Enhanced Canals + Deep Canals - Test Package
-=============================================
+Enhanced Canals + Deep Canals + Canal Irrigation - Test Package
+================================================================
 
-This package adds deep canals and caps canal cost scaling at 4x.
+This package adds deep canals, caps canal cost scaling at 4x, and
+adds canal irrigation (freshwater canals create flood plains on desert).
 Apply on top of a stock WTP 4.2.1 build.
 
 CHANGES:
@@ -9,6 +10,9 @@ CHANGES:
 - New "Deep Canal" improvement: upgrade an existing canal to allow
   lake-capable ships (sloops, schooners, smuggling ships, etc.)
 - Water area bridge graph connects lakes to oceans via deep canals
+- Canal irrigation: canals connected to freshwater (lake, large river,
+  or river) create flood plains on adjacent desert tiles
+- Sea-only canals do NOT irrigate
 - Updated Civilopedia text for canals and deep canals (EN/FR/DE/RU)
 
 INSTALLATION:
@@ -28,6 +32,9 @@ TESTING:
 - Verify coastal ships still work on regular canals
 - Build a canal chain (3+ tiles) and verify cost caps at 4x
 - Connect a lake to the ocean via deep canals; verify routing works
+- Build a canal from a lake adjacent to desert -> flood plains appear
+- Build a multi-tile canal chain from lake through desert -> both sides irrigated
+- Build a canal from ocean adjacent to desert -> NO flood plains
 - Check Civilopedia entries for both canal types
 
 Built from branch: feature/enhanced-canals (Assert/debug build)
