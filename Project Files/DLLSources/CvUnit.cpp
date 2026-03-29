@@ -5024,6 +5024,12 @@ bool CvUnit::canAutoCrossOcean(const CvPlot* pPlot) const
 
 bool CvUnit::canCrossOcean(const CvPlot* pPlot, UnitTravelStates eNewState) const
 {
+	// Natives have no Europe/Africa/Port Royal — prevent crash when they acquire ocean ships
+	if (isNative())
+	{
+		return false;
+	}
+
 	if (getTransportUnit() != NULL)
 	{
 		return false;
@@ -5105,6 +5111,11 @@ void CvUnit::crossOcean(UnitTravelStates eNewState)
 /*** TRIANGLETRADE 10/28/08 by DPII ***/
 bool CvUnit::canSailToAfrica(const CvPlot* pPlot, UnitTravelStates eNewState) const
 {
+	if (isNative())
+	{
+		return false;
+	}
+
 	if (getTransportUnit() != NULL)
 	{
 		return false;
@@ -5191,6 +5202,11 @@ void CvUnit::sailToAfrica(UnitTravelStates eNewState)
 // R&R, ray, Port Royal
 bool CvUnit::canSailToPortRoyal(const CvPlot* pPlot, UnitTravelStates eNewState) const
 {
+	if (isNative())
+	{
+		return false;
+	}
+
 	// only Ships with hidden nationality can sail to Port Royal
 	// WTP, ray Slave Ship
 	// we allow Slave Ships to sail to Port Royal as well
