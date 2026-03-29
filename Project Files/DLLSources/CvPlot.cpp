@@ -4732,19 +4732,13 @@ bool CvPlot::isValidDomainForAction(UnitTypes eUnit) const
 			if (isDeepCanal())
 			{
 				// Deep canal: block ships that cannot traverse lakes
-				if (kUnitInfo.getTerrainImpassable(TERRAIN_LAKE))
-				{
-					return false;
-				}
+				return !kUnitInfo.getTerrainImpassable(TERRAIN_LAKE);
 			}
 			else
 			{
 				// Regular canal: block ships that can traverse ocean (except gather boats with harbour space 1)
-				if (!kUnitInfo.getTerrainImpassable(TERRAIN_OCEAN)
-					&& !(kUnitInfo.isGatherBoat() && kUnitInfo.getHarbourSpaceNeeded() == 1))
-				{
-					return false;
-				}
+				return (kUnitInfo.getTerrainImpassable(TERRAIN_OCEAN)
+					|| (kUnitInfo.isGatherBoat() && kUnitInfo.getHarbourSpaceNeeded() == 1));
 			}
 		}
 		// WTP, ray, Canal - END
