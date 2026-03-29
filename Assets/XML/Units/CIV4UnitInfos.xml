@@ -97,6 +97,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -668,6 +672,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -1423,6 +1431,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -2187,6 +2199,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -2945,6 +2961,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -3778,6 +3798,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -4604,6 +4628,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -5385,6 +5413,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -6825,6 +6857,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -7646,6 +7682,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -8252,6 +8292,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -8839,6 +8883,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -9448,6 +9496,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -10054,6 +10106,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -10641,6 +10697,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -11234,6 +11294,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -11824,6 +11888,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -12395,6 +12463,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -12982,6 +13054,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -13563,6 +13639,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -14148,6 +14228,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -14727,6 +14811,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -15314,6 +15402,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -15895,6 +15987,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -16490,6 +16586,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -17071,6 +17171,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -17658,6 +17762,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -18239,6 +18347,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -18826,6 +18938,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -19407,6 +19523,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -19994,6 +20114,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -20575,6 +20699,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -21162,6 +21290,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -21746,6 +21878,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -22327,6 +22463,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -22928,6 +23068,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -23505,6 +23649,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -24092,6 +24240,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -24671,6 +24823,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -25256,6 +25412,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -25835,6 +25995,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -26420,6 +26584,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -26999,6 +27167,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -27586,6 +27758,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -28168,6 +28344,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -28731,6 +28911,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -29300,6 +29484,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -29858,6 +30046,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -30471,6 +30663,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -31078,6 +31274,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -31691,6 +31891,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -32298,6 +32502,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -32915,6 +33123,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -33522,6 +33734,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -34135,6 +34351,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -34742,6 +34962,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -35355,6 +35579,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -35965,6 +36193,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -36564,6 +36796,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -37804,6 +38040,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -38410,6 +38650,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -39013,6 +39257,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -39626,6 +39874,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -40236,6 +40488,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -40839,6 +41095,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -41452,6 +41712,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -42059,6 +42323,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -42672,6 +42940,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -43273,6 +43545,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -43836,6 +44112,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -44429,6 +44709,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -45031,6 +45315,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -45637,6 +45925,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -46250,6 +46542,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -46857,6 +47153,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -47470,6 +47770,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -48069,6 +48373,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -48674,6 +48982,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -49276,6 +49588,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -49875,6 +50191,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -50496,6 +50816,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -51106,6 +51430,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -51677,6 +52005,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -52259,6 +52591,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -52876,6 +53212,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -53490,6 +53830,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -58645,6 +58989,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -59171,6 +59519,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -59735,6 +60087,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -60243,6 +60599,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -60775,6 +61135,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -61301,6 +61665,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -61834,6 +62202,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -64042,6 +64414,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -64590,6 +64966,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -65107,6 +65487,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -65628,6 +66012,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -66214,6 +66602,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -66787,6 +67179,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -67366,6 +67762,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -67939,6 +68339,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -69660,6 +70064,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -70253,6 +70661,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -70833,6 +71245,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -71406,6 +71822,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -71989,6 +72409,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -72509,6 +72933,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -73026,6 +73454,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -74216,6 +74648,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
@@ -75800,6 +76236,10 @@
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
 					<BuildType>BUILD_PLANTATION</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
@@ -76269,6 +76709,10 @@
 				</Build>
 				<Build>
 					<BuildType>BUILD_CANAL</BuildType>
+					<bBuild>1</bBuild>
+				</Build>
+				<Build>
+					<BuildType>BUILD_DEEP_CANAL</BuildType>
 					<bBuild>1</bBuild>
 				</Build>
 				<Build>
