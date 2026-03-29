@@ -23,6 +23,7 @@ INSTALLATION:
    - CIV4ImprovementInfos.xml           -> Assets/XML/Terrain/CIV4ImprovementInfos.xml
    - CIV4TerrainSchema.xml              -> Assets/XML/Terrain/CIV4TerrainSchema.xml
    - CIV4BuildInfos.xml                 -> Assets/XML/Units/CIV4BuildInfos.xml
+   - CIV4UnitInfos.xml                  -> Assets/XML/Units/CIV4UnitInfos.xml
    - XML_AUTO_UTF8_BuildInfo.xml        -> Assets/XML/Text/XML_AUTO_UTF8_BuildInfo.xml
    - XML_AUTO_UTF8_ImprovementInfo.xml  -> Assets/XML/Text/XML_AUTO_UTF8_ImprovementInfo.xml
 
