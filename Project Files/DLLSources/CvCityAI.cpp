@@ -3807,30 +3807,39 @@ void CvCityAI::AI_swapUnits(CvUnit* pUnitA, CvUnit* pUnitB)
 	pUnitA->setProfession(NO_PROFESSION);
 	pUnitB->setProfession(NO_PROFESSION);
 
-	const bool bResA = pUnitA->setProfession(eProfessionB);
-	if (pPlotB != NULL)
+	// Validate before swapping — after clearing both professions the game state
+	// has changed (equipment released, slots freed) so re-check eligibility
+	const bool bCanA = pUnitA->canHaveProfession(eProfessionB, false);
+	const bool bCanB = pUnitB->canHaveProfession(eProfessionA, false);
+
+	if (bCanA && bCanB)
 	{
-		setUnitWorkingPlot(pPlotB, pUnitA->getID());
+		pUnitA->setProfession(eProfessionB);
+		if (pPlotB != NULL)
+		{
+			setUnitWorkingPlot(pPlotB, pUnitA->getID());
+		}
+
+		pUnitB->setProfession(eProfessionA);
+		if (pPlotA != NULL)
+		{
+			setUnitWorkingPlot(pPlotA, pUnitB->getID());
+		}
 	}
-
-	const bool bResB = pUnitB->setProfession(eProfessionA);
-
-	while (!bResB)
+	else
 	{
-		const bool bRes = pUnitB->setProfession(eProfessionA);
-	}
-
-	if (pPlotA != NULL)
-	{
-		setUnitWorkingPlot(pPlotA, pUnitB->getID());
-	}
-
-	if (!(bResA && bResB))
-	{
-		CvWString szTempBuffer;
-		szTempBuffer.Format(L"Units: %s and %s in city: %s failed to swap!", pUnitA->getNameAndProfession().GetCString(), pUnitB->getNameAndProfession().GetCString(), getName().GetCString());
-		std::string s(szTempBuffer.begin(), szTempBuffer.end());
-		FAssertMsg(false, s.c_str());
+		// Swap failed — restore original professions
+		FAssertMsg(false, "AI_swapUnits: units cannot swap professions, restoring originals");
+		pUnitA->setProfession(eProfessionA);
+		if (pPlotA != NULL)
+		{
+			setUnitWorkingPlot(pPlotA, pUnitA->getID());
+		}
+		pUnitB->setProfession(eProfessionB);
+		if (pPlotB != NULL)
+		{
+			setUnitWorkingPlot(pPlotB, pUnitB->getID());
+		}
 	}
 }
 

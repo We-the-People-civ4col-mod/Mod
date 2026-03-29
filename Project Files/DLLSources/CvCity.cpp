@@ -5973,6 +5973,8 @@ void CvCity::setUnitWorkingPlot(int iPlotIndex, int iUnitId)
 						continue;
 					if (!GC.getProfessionInfo(eLoopProfession).isWorkPlot())
 						continue;
+					if (!pUnit->canHaveProfession(eLoopProfession, false))
+						continue;
 
 					// get all yields for this candidate profession
 					const ProfessionYieldList pylLoop =
