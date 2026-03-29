@@ -2648,7 +2648,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 
 		// make sure the terrain in question can have the wanted feature
 		// ray, RaR, we additionally check for "needs River" here
-		if (!GC.getFeatureInfo(eResultFeature).isTerrain(getTerrainType()) || (GC.getFeatureInfo(eResultFeature).isRequiresRiver() && !isRiver() && !isAdjacentToCanal()))
+		if (!GC.getFeatureInfo(eResultFeature).isTerrain(getTerrainType()) || (GC.getFeatureInfo(eResultFeature).isRequiresRiver() && !isRiver() && !isAdjacentToFreshwaterCanal()))
 		{
 			return false;
 		}
@@ -4431,6 +4431,19 @@ bool CvPlot::isAdjacentToCanal() const
 	return false;
 }
 
+bool CvPlot::isAdjacentToFreshwaterCanal() const
+{
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+	{
+		CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), (DirectionTypes)iI);
+		if (pAdjacentPlot != NULL && pAdjacentPlot->isCanal() && pAdjacentPlot->isCanalChainConnectedToFreshwater())
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
 bool CvPlot::isCanalChainConnectedToFreshwater() const
 {
 	static const int MAX_CANAL_CHAIN = 20;
@@ -4664,7 +4677,7 @@ bool CvPlot::canHaveFeature(FeatureTypes eFeature) const
 		}
 	}
 
-	if (GC.getFeatureInfo(eFeature).isRequiresRiver() && !isRiver() && !isAdjacentToCanal())
+	if (GC.getFeatureInfo(eFeature).isRequiresRiver() && !isRiver() && !isAdjacentToFreshwaterCanal())
 	{
 		return false;
 	}
@@ -6624,29 +6637,6 @@ void CvPlot::setImprovementType(ImprovementTypes eNewValue)
 			}
 		}
 
-		// Canals connected to freshwater irrigate adjacent desert — create flood plains
-		if (GC.getGameINLINE().isFinalInitialized())
-		{
-			bool bNewCanal = (eNewValue != NO_IMPROVEMENT && GC.getImprovementInfo(eNewValue).isCanal());
-			bool bOldCanal = (eOldImprovement != NO_IMPROVEMENT && GC.getImprovementInfo(eOldImprovement).isCanal());
-			if (bNewCanal && !bOldCanal && isCanalChainConnectedToFreshwater())
-			{
-				FeatureTypes eFloodPlains = (FeatureTypes)GC.getInfoTypeForString("FEATURE_FLOOD_PLAINS");
-				if (eFloodPlains != NO_FEATURE)
-				{
-					for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
-					{
-						CvPlot* pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), (DirectionTypes)iI);
-						if (pAdjacentPlot != NULL
-							&& pAdjacentPlot->getFeatureType() == NO_FEATURE
-							&& pAdjacentPlot->canHaveFeature(eFloodPlains))
-						{
-							pAdjacentPlot->setFeatureType(eFloodPlains);
-						}
-					}
-				}
-			}
-		}
 	}
 }
 

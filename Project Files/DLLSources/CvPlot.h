@@ -228,6 +228,7 @@ public:
 	bool isDeepCanal() const;
 	int countAdjacentConnectedCanals() const;
 	bool isAdjacentToCanal() const;
+	bool isAdjacentToFreshwaterCanal() const;
 	bool isCanalChainConnectedToFreshwater() const;
 	// R&R, ray, Monasteries and Forts - END
 
