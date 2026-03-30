@@ -3499,7 +3499,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 						// we only count Land Units that can attack, civil Units are not considered
 						// we also not consider Units loaded on Ships
 						// we also not consider Units of other Nations
-						if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_SEA)
+						if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->isOnMap())
 						{
 							iImprovementHarbourSpaceUsed += pLoopUnit->getUnitInfo().getHarbourSpaceNeeded();
 						}
@@ -3588,7 +3588,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 						// we only count Land Units that can attack, civil Units are not considered
 						// we also not consider Units loaded on Ships
 						// we also not consider Units of other Nations
-						if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack() && pLoopUnit->getTransportUnit() == NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+						if (pLoopUnit != NULL && pLoopUnit->isOnMap() && pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack() && pLoopUnit->getTransportUnit() == NULL && pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 						{
 							iImprovementBarracksSpaceUsed += pLoopUnit->getUnitInfo().getBarracksSpaceNeeded();
 							// we also need to consider Professions
@@ -9739,6 +9739,12 @@ bool CvUnit::canDefend(const CvPlot* pPlot) const
 	if (pPlot == NULL)
 	{
 		pPlot = plot();
+	}
+
+	// Units traveling to/from Europe/Africa/Port Royal cannot defend
+	if (!isOnMap())
+	{
+		return false;
 	}
 
 	if (!canFight())
