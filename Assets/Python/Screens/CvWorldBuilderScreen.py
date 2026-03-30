@@ -447,7 +447,7 @@ class CvWorldBuilderScreen:
 
 	def handleCityEditGoldCB (self, argsList) :
 		iNewGold = int(argsList[0])
-		gc.getPlayer(self.m_iCurrentPlayer).setGold(iNewGold)
+		gc.getPlayer(self.m_pActivePlot.getPlotCity().getOwner()).setGold(iNewGold)
 		return 1
 
 	def handleCityOccupationTimerCB (self, argsList) :
@@ -1342,7 +1342,7 @@ class CvWorldBuilderScreen:
 			-1000.0,
 			5000.0,
 			1.0,
-			gc.getPlayer(self.m_iCurrentPlayer).getGold(),
+			gc.getPlayer(self.m_pActivePlot.getPlotCity().getOwner()).getGold(),
 			0,
 			0)
 		self.m_tabCtrlEdit.addSectionLabel("Occupation timer",  0)
