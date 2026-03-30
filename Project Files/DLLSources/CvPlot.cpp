@@ -8796,6 +8796,13 @@ void CvPlot::addUnit(CvUnit* pUnit, bool bUpdate)
 	{
 		pLoopUnit = ::getUnit(pUnitNode->m_data);
 
+		// Guard against double-adding the same unit (see bug #923)
+		if (pLoopUnit == pUnit)
+		{
+			FAssertMsg(false, "CvPlot::addUnit: unit already on this plot");
+			return;
+		}
+
 		if (pLoopUnit != NULL && !isBeforeUnitCycle(pLoopUnit, pUnit))
 		{
 			break;

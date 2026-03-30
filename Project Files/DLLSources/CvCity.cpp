@@ -9141,6 +9141,13 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 	}
 
 	CvUnit* pTransferUnit = GET_PLAYER(pUnit->getOwnerINLINE()).getAndRemoveUnit(pUnit->getID());
+	if (pTransferUnit == NULL)
+	{
+		// Unit not in player's unit list — it may already be in a city.
+		// Bail out to avoid pushing NULL into the population list (bug #923).
+		FAssertMsg(false, "addPopulationUnit: unit not found in player unit list");
+		return;
+	}
 	FAssert(pTransferUnit == pUnit);
 
 	int iOldPopulation = getPopulation();
@@ -9199,7 +9206,17 @@ bool CvCity::removePopulationUnit(AssertCallerData assertData, CvUnit* pUnit, bo
 	{
 		//transfer back to player
 		GET_PLAYER(getOwnerINLINE()).addExistingUnit(pUnit);
-		pUnit->addToMap(coord());
+		// Unit should have invalid coordinates at this point (removed from map
+		// when it joined the city). If it somehow has valid coordinates, it's
+		// already on a plot — skip addToMap to prevent double-add (bug #923).
+		if (pUnit->plot() != NULL)
+		{
+			FAssertMsg(false, "removePopulationUnit: unit already on map, skipping addToMap");
+		}
+		else
+		{
+			pUnit->addToMap(coord());
+		}
 		pUnit->setProfession(eProfession);
 
 		if (pUnit->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
