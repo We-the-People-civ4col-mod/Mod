@@ -5024,8 +5024,9 @@ bool CvUnit::canAutoCrossOcean(const CvPlot* pPlot) const
 
 bool CvUnit::canCrossOcean(const CvPlot* pPlot, UnitTravelStates eNewState) const
 {
-	// Natives have no Europe/Africa/Port Royal — prevent crash when they acquire ocean ships
-	if (isNative())
+	// Only colonial nations (have a parent/king) and kings can sail to Europe/Africa/Port Royal
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	if (kOwner.getParent() == NO_PLAYER && !kOwner.isEurope())
 	{
 		return false;
 	}
@@ -5111,7 +5112,8 @@ void CvUnit::crossOcean(UnitTravelStates eNewState)
 /*** TRIANGLETRADE 10/28/08 by DPII ***/
 bool CvUnit::canSailToAfrica(const CvPlot* pPlot, UnitTravelStates eNewState) const
 {
-	if (isNative())
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	if (kOwner.getParent() == NO_PLAYER && !kOwner.isEurope())
 	{
 		return false;
 	}
@@ -5202,7 +5204,8 @@ void CvUnit::sailToAfrica(UnitTravelStates eNewState)
 // R&R, ray, Port Royal
 bool CvUnit::canSailToPortRoyal(const CvPlot* pPlot, UnitTravelStates eNewState) const
 {
-	if (isNative())
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	if (kOwner.getParent() == NO_PLAYER && !kOwner.isEurope())
 	{
 		return false;
 	}
