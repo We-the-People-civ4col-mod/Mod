@@ -55,6 +55,11 @@ void CvNetwork::addToVector(const int (&data)[CvNetwork::iPacketSize])
 // upon receipt of a packet by the exe.
 void CvNetwork::receive(PlayerTypes ePlayer, const int (&data)[CvNetwork::iPacketSize])
 {
+	if (ePlayer < 0 || ePlayer >= MAX_PLAYERS)
+	{
+		return;
+	}
+
 	if (ePlayer < receiving_vector.size() && receiving_vector[ePlayer] != NULL)
 	{
 		// already receiving a multi part message
