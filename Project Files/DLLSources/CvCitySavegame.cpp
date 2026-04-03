@@ -592,6 +592,10 @@ void CvCity::read(CvSavegameReader reader)
 
 		case CitySave_Oppressometer                              : reader.Discard<int>()                                    ; break;
 		case CitySave_OppressometerGrowthModifier                : reader.Discard<int>()                                    ; break;
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 

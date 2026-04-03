@@ -120,7 +120,10 @@ void CvTalkingHeadMessage::read(CvSavegameReader reader)
 		case TalkingHeadMessageSave_FromPlayer: reader.Read(m_eFromPlayer); break;
 		case TalkingHeadMessageSave_Target: reader.Read(m_eTarget); break;
 		case TalkingHeadMessageSave_Shown: reader.Read(m_bShown); break;
-
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 	

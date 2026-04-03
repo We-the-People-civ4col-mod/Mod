@@ -117,7 +117,10 @@ void CvPopupInfo::read(CvSavegameReader reader)
 		case PopupInfoSave_OnClickedPythonCallback: reader.Read(m_szOnClickedPythonCallback); break;
 		case PopupInfoSave_PythonModule: reader.Read(m_szPythonModule); break;
 		case PopupInfoSave_PythonButtons: reader.Read(m_aPythonButtons); break;
-		
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 	
