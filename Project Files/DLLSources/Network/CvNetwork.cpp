@@ -75,7 +75,7 @@ void CvNetwork::receive(PlayerTypes ePlayer, const int (&data)[CvNetwork::iPacke
 		// single part message
 		// execute and release memory
 		receiving_vector[ePlayer]->unpack();
-		SAFE_DELETE_ARRAY(receiving_vector[ePlayer]);
+		SAFE_DELETE(receiving_vector[ePlayer]);
 	}
 }
 
@@ -93,7 +93,7 @@ void CvNetwork::reset()
 {
 	for (unsigned int i = 0; i < receiving_vector.size(); ++i)
 	{
-		SAFE_DELETE_ARRAY(receiving_vector[i]);
+		SAFE_DELETE(receiving_vector[i]);
 	}
 }
 
