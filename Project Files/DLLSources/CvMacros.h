@@ -233,9 +233,12 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
     }
 
 #define FOR_EACH_TEAM_PLAYER_MEMBER(kTeam, kPlayer) \
-    for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < MAX_PLAYERS; ++ePlayer) \
-        if (GET_PLAYER(ePlayer).getTeam() == (kTeam).getID()) \
-            for (const CvPlayerAI& kPlayer = GET_PLAYER(ePlayer); true; )
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < MAX_PLAYERS; ePlayer = (PlayerTypes)(ePlayer + 1)) \
+		for (bool _continue_outer = true; _continue_outer;) \
+			for (CvPlayerAI& kPlayer = GET_PLAYER(ePlayer); _continue_outer; _continue_outer = false) \
+				if (!(kPlayer).isAlive() || (kPlayer).getTeam() != (kTeam).getID()) \
+					continue; \
+				else
 
  // TODO: What about the king as a potential enemy
 
@@ -301,6 +304,7 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
                             continue; \
                         else
 
+// Requires an actual war against kOtherTeam
 #define FOR_EACH_MAJOR_CIV_THAT_IS_ENEMY_OF_TEAM(eTeam, kOtherTeam) \
     for (TeamTypes eTeamIter = FIRST_TEAM; eTeamIter < NUM_TEAM_TYPES; ++eTeamIter) \
         for (bool _continue_outer = true; _continue_outer;) \

@@ -629,6 +629,8 @@ void CvPlayerAI::AI_unitUpdate()
 {
 	PROFILE_FUNC();
 
+	FAssert(m_groupCycle.getLength() == m_selectionGroups.getCount());
+
 	CLLNode<int>* pCurrUnitNode;
 	CvSelectionGroup* pLoopSelectionGroup;
 	CLinkList<int> tempGroupCycle;
@@ -752,6 +754,11 @@ void CvPlayerAI::AI_unitUpdate()
 			pLoopSelectionGroup = getSelectionGroup(pCurrUnitNode->m_data);
 			pCurrUnitNode = nextGroupCycleNode(pCurrUnitNode);
 
+			FAssertMsg(pLoopSelectionGroup != NULL, "Stale group cycle entry in CvPlayerAI::AI_unitUpdate");
+			if (pLoopSelectionGroup == NULL)
+			{
+				continue;
+			}
 			if (pLoopSelectionGroup->AI_isForceSeparate())
 			{
 				if (pLoopSelectionGroup->isForceUpdate() || 
@@ -783,7 +790,7 @@ void CvPlayerAI::AI_unitUpdate()
 						int iOriginalPriority = pUnit->AI_getMovePriority();
 						if (iOriginalPriority > 0)
 						{
-							if (!pGroup->autoMissionInternal())
+							if (!pGroup->autoMission_())
 							{
 								if (!pGroup->isBusy() && !pGroup->isCargoBusy())
 								{

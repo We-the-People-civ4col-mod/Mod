@@ -542,13 +542,14 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 		}
 	}
 
+	finishMoves();
+
 	if (bDelay)
 	{
 		startDelayedDeath();
 		return;
 	}
 
-	finishMoves();
 	const int iYieldStored = getYieldStored();
 	setYieldStored(0);
 	removeFromMap();
@@ -11126,31 +11127,33 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 		}
 	}
 
-	if (pOldPlot != NULL)
+	if (pOldPlot != NULL && hasCargo())
 	{
-		if (hasCargo())
+		pUnitNode = pOldPlot->headUnitNode();
+
+		while (pUnitNode != NULL)
 		{
-			pUnitNode = pOldPlot->headUnitNode();
+			pLoopUnit = pOldPlot->getUnitNodeLoop(pUnitNode);
 
-			while (pUnitNode != NULL)
+			if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
 			{
-				pLoopUnit = pOldPlot->getUnitNodeLoop(pUnitNode);
-
-				if (pLoopUnit != NULL && pLoopUnit->getTransportUnit() == this)
+				pLoopUnit->jumpTo(toCoord, bGroup, bUpdate);
+				if (pLoopUnit->getYield() != NO_YIELD)
 				{
-					pLoopUnit->jumpTo(toCoord, bGroup, bUpdate);
-					if (pLoopUnit->getYield() != NO_YIELD)
-					{
-						pNewPlot->addCrumbs(10);
-					}
+					pNewPlot->addCrumbs(10);
 				}
 			}
 		}
 	}
 
 	FAssert(pOldPlot != pNewPlot || pNewPlot == NULL);
-	GET_PLAYER(getOwnerINLINE()).updateGroupCycle(this);
-
+	GET_PLAYER(getOwner()).updateGroupCycle(this);
+	
+	// K-Mod. Only update the group cycle here if we are placing this unit on the map for the first time.
+	//if (!pOldPlot)
+	//	GET_PLAYER(getOwner()).updateGroupCycle(*getGroup());
+	// K-Mod end
+	
 	setInfoBarDirty(true);
 
 	if (IsSelected())

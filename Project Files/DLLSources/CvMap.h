@@ -155,11 +155,11 @@ public:
 	bool findWater(CvPlot* pPlot, int iRange, bool bFreshWater);
 
 	DllExport bool isPlot(int iX, int iY) const;
-	inline int isPlotINLINE(int iX, int iY) const
+	inline bool isPlotINLINE(int iX, int iY) const
 	{
 		return ((iX >= 0) && (iX < getGridWidthINLINE()) && (iY >= 0) && (iY < getGridHeightINLINE()));
 	}
-	inline int isPlotINLINE(Coordinates coord) const
+	inline bool isPlotINLINE(Coordinates coord) const
 	{
 		return coord.isOnMap();
 	}
@@ -283,8 +283,12 @@ public:
 	{
 		if (iX == INVALID_PLOT_COORD || iY == INVALID_PLOT_COORD)
 			return NULL;
+		const bool bIsPlot = isPlot(iX, iY);
 		FAssert(isPlot(iX, iY)); // advc: Assertion added
-		return &(m_pMapPlots[plotNum(iX, iY)]);
+		if (bIsPlot)
+			return &(m_pMapPlots[plotNum(iX, iY)]);
+		else
+			return NULL;
 	} // <advc.inl> Even faster and less confusingly named; replacing the above in most places.
 
 	__forceinline CvPlot* plotSoren(Coordinates coord) const

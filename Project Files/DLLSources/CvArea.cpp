@@ -457,6 +457,7 @@ bool CvArea::isEuropePlayer() const
 
 /*  Replacement for the BtS area()==area() checks. Mostly used for
 	performance reasons before costlier more specific checks. */
+// WTP TODO: Needs to support large rivers at least
 bool CvArea::canBeEntered(CvArea const& kFrom, CvUnit const* u) const
 {
 	// Called very often. Mostly from the various plot danger functions.

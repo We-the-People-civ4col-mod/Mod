@@ -177,6 +177,7 @@ public:
 	bool isInRevolution() const;
 	void doRevolution();
 	bool isParentOf(TeamTypes eChildTeam) const;
+	TeamTypes getParentTeam(TeamTypes eChildTeam) const;
 	bool checkIndependence() const;
 
 	void offerFoundingFather(FatherTypes eFather);

@@ -36,6 +36,7 @@ public:
 	DllExport void reset(int iID = 0, PlayerTypes eOwner = NO_PLAYER, bool bConstructorCall = false);
 
 	void kill();
+	void invalidateGroupPaths(); // advc.pf
 
 	void doTurn();
 
@@ -49,7 +50,7 @@ public:
 	DllExport void pushMission(MissionTypes eMission, int iData1 = -1, int iData2 = -1, int iFlags = 0, bool bAppend = false, bool bManual = false, MissionAITypes eMissionAI = NO_MISSIONAI, CvPlot* pMissionAIPlot = NULL, CvUnit* pMissionAIUnit = NULL);
 	void popMission();
 	DllExport void autoMission();
-	bool autoMissionInternal();
+	bool autoMission_();
 	void updateMission();
 	DllExport CvPlot* lastMissionPlot();
 

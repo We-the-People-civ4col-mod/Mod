@@ -2977,6 +2977,28 @@ bool CvTeam::isParentOf(TeamTypes eChildTeam) const
 	return false;
 }
 
+TeamTypes CvTeam::getParentTeam(TeamTypes eChildTeam) const
+{
+	for (int i = 0; i < MAX_PLAYERS; ++i)
+	{
+		CvPlayer& kChildPlayer = GET_PLAYER((PlayerTypes)i);
+		if (kChildPlayer.isEverAlive() && (kChildPlayer.getTeam() == eChildTeam))
+		{
+			PlayerTypes eParent = kChildPlayer.getParent();
+			if (eParent != NO_PLAYER)
+			{
+				CvPlayer& kParentPlayer = GET_PLAYER(eParent);
+				if (kParentPlayer.getTeam() == getID())
+				{
+					return kParentPlayer.getTeam();
+				}
+			}
+		}
+	}
+
+	return NO_TEAM;
+}
+
 bool CvTeam::checkIndependence() const
 {
 	for (int i = 0; i < MAX_PLAYERS; ++i)

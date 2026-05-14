@@ -268,7 +268,7 @@ bool CvSelectionGroupAI::AI_update()
 				// AI_update returns true when we should abort the loop and wait until next slice
 				// WTP: AdvCiv seems to trigger delayed death immediately for most AI actions that kills the unit
 				// We need to determine if we should follow suit before enabling this assert
-				//FAssert(!pHeadUnit->isDelayedDeath());
+				FAssert(!pHeadUnit->isDelayedDeath());
 				break;
 			}
 		}

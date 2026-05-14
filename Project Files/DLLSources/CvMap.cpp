@@ -937,9 +937,9 @@ bool CvMap::findWater(CvPlot* pPlot, int iRange, bool bFreshWater)
 
 bool CvMap::isPlot(int iX, int iY) const
 {
-	//return isPlotINLINE(iX, iY);
-	Coordinates coord(iX, iY);
-	return isPlotINLINE(coord);
+	return isPlotINLINE(iX, iY);
+	//Coordinates coord(iX, iY);
+	//return isPlotINLINE(coord);
 }
 
 

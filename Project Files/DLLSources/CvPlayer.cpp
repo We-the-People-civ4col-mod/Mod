@@ -10631,7 +10631,13 @@ CvSelectionGroup* CvPlayer::getSelectionGroup(int iID) const
 
 CvSelectionGroup* CvPlayer::addSelectionGroup()
 {
-	return ((CvSelectionGroup *)(m_selectionGroups.add()));
+	CvSelectionGroupAI* pGroup = (CvSelectionGroupAI*)m_selectionGroups.add();
+	/*	K-Mod. Make sure that group gets added to the group cycle list.
+		(we can update the specific position in the cycle list later;
+		but it's important to get it into the list.) */
+	m_groupCycle.insertAtEnd(pGroup->getID());
+	return pGroup;
+
 }
 
 

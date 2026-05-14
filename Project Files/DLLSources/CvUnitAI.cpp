@@ -383,10 +383,12 @@ bool CvUnitAI::AI_update()
 		}
 	}
 
+	/*
 	if (isDead() || isDelayedDeath() || getGroup() == NULL)
 	{
 		return true;
 	}
+	*/
 
 	/*
 	if (!isHuman())
@@ -434,7 +436,7 @@ bool CvUnitAI::AI_europeUpdate()
 	const bShoulHeal = (isHurt() && (healRate(plot()) > 0));
 	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
-	if (UNITAI_TRANSPORT_SEA && getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
+	if (AI_getUnitAIType() == UNITAI_TRANSPORT_SEA && getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE)
 	{
 		AI_europe();
 		kOwner.AI_determineNextTransportSeaState(*this);
@@ -442,7 +444,7 @@ bool CvUnitAI::AI_europeUpdate()
 		return false;
 
 	}
-	else if (UNITAI_TRANSPORT_SEA && getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
+	else if (AI_getUnitAIType() == UNITAI_TRANSPORT_SEA && getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)
 	{
 		AI_africa();
 		const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
@@ -615,16 +617,8 @@ bool CvUnitAI::AI_follow(bool bFirst)
 		}
 	}
 
-	if (canFound(NULL))
-	{
-		if (area()->getBestFoundValue(getOwnerINLINE()) > 0)
-		{
-			if (AI_foundRange(FOUND_RANGE, true))
-			{
-				return true;
-			}
-		}
-	}
+	if (AI_foundFollow())
+		return true;
 
 	return false;
 }
@@ -2005,8 +1999,10 @@ void CvUnitAI::AI_missionaryMove()
 
 	if (AI_retreatToCity())
 	{
+		/*
 		AI_setUnitAIType(UNITAI_COLONIST);
 		GET_PLAYER(getOwnerINLINE()).AI_changeNumRetiredAIUnits(UNITAI_MISSIONARY, 1);
+		*/
 		return;
 	}
 
@@ -2112,8 +2108,10 @@ void CvUnitAI::AI_nativeTraderMove()
 
 	if (AI_retreatToCity())
 	{
+		/*
 		AI_setUnitAIType(UNITAI_COLONIST);
 		GET_PLAYER(getOwnerINLINE()).AI_changeNumRetiredAIUnits(UNITAI_MISSIONARY, 1);
+		*/
 		return;
 	}
 
@@ -5045,7 +5043,7 @@ void CvUnitAI::AI_combatSeaMove()
 	}
 
 	// Erik: Check if there's an admiral waiting
-	if (getLeaderUnitType() != NO_UNIT && AI_joinGreatAdmiral())
+	if (getLeaderUnitType() == NO_UNIT && AI_joinGreatAdmiral())
 		return;
 
 	// TAC - AI Improved Naval AI - koma13 - START
@@ -7004,6 +7002,8 @@ void CvUnitAI::AI_doInitialMovePriority()
 
 	if (getGroup()->getActivityType() == ACTIVITY_MISSION)
 	{
+		// Workaround to prevent auto missions from not being scheduled due to being assigned 0 as priority
+		AI_setMovePriority(MOVE_PRIORITY_MEDIUM);
 		return;
 	}
 
@@ -7302,7 +7302,7 @@ int CvUnitAI::AI_promotionValue(PromotionTypes ePromotion) const
 	*/
 	if (kPromotion.getExperiencePercent() != 0)
 	{
-		if (eUnitAI == UNITAI_ATTACK_CITY || UNITAI_OFFENSIVE || eUnitAI == UNITAI_DEFENSIVE)
+		if (eUnitAI == UNITAI_ATTACK_CITY || eUnitAI == UNITAI_OFFENSIVE || eUnitAI == UNITAI_DEFENSIVE)
 		{
 			iValue += kPromotion.getExperiencePercent() / 4;
 		}
@@ -10456,7 +10456,7 @@ bool CvUnitAI::AI_defend()
 	CvPlot* pBestPlot = NULL;
 	int iBestValue = 0;
 	//for (SquareIter it(*this, AI_searchRange(1), false); it.hasNext(); ++it)
-	FOR_EACH_NON_CENTER_PLOT_IN_RANGE_OF(this, AI_searchRange(1),
+	FOR_EACH_NON_CENTER_PLOT_IN_RANGE_OF(plot(), AI_searchRange(1),
 	{
 		CvPlot& p = *pLoopPlot;
 		if (!AI_plotValid(&p) || !AI_defendPlot(&p) || p.isVisibleEnemyUnit(this))
@@ -14012,7 +14012,6 @@ bool CvUnitAI::AI_found(int iMinValue, MovementFlags eFlags)
 	return false;
 }
 
-
 // Returns true if a mission was pushed...
 bool CvUnitAI::AI_foundRange(int iRange, bool bFollow)
 {
@@ -14087,6 +14086,23 @@ bool CvUnitAI::AI_foundRange(int iRange, bool bFollow)
 
 	return false;
 }
+
+/*	K-Mod: this function simply checks if we are standing at our target destination
+	and if we are, we issue the found command and return true.
+	I've disabled (badly flawed) AI_foundRange, which was previously used for 'follow' AI. */
+bool CvUnitAI::AI_foundFollow()
+{
+	if (canFound(plot()) && atPlot(AI_getGroup()->AI_getMissionAIPlot()) &&
+		AI_getGroup()->AI_getMissionAIType() == MISSIONAI_FOUND)
+	{
+		if (gUnitLogLevel >= 2) logBBAI("    Settler founding at plot %d, %d (follow)", getX(), getY());
+		getGroup()->pushMission(MISSION_FOUND);
+		return true;
+	}
+
+	return false;
+}
+
 bool CvUnitAI::AI_joinCityBrave()
 {
 	CvCity* pCity = plot()->getPlotCity();
@@ -17267,72 +17283,56 @@ int CvUnitAI::AI_stackOfDoomExtra()
 	// TAC - AI Attack City - koma13 - END
 }
 
-// REplace with advciv version, probavly causes assert!
+// advc (comment): into a non-hostile city
 bool CvUnitAI::AI_moveIntoCity(int iRange)
 {
-    PROFILE_FUNC();
-
-	CvPlot* pLoopPlot;
-	CvPlot* pBestPlot;
-	int iSearchRange = iRange;
-	int iPathTurns;
-	int iValue;
-	int iBestValue;
-	int iDX, iDY;
-
+	PROFILE_FUNC();
 	FAssert(canMove());
+	if (getPlot().isCity())
+		return false;
 
-	iBestValue = 0;
-	pBestPlot = NULL;
-
-	if (plot()->isCity())
+	CvPlot* pBestPlot = NULL;
+	int iBestValue = 0;
+	
+	//for (SquareIter it(*this, AI_searchRange(iRange), false); it.hasNext(); ++it)
+	FOR_EACH_NON_CENTER_PLOT_IN_RANGE_OF(plot(), AI_searchRange(iRange),
 	{
-	    return false;
-	}
+		const CvPlot& p = *pLoopPlot;
 
-	iSearchRange = AI_searchRange(iRange);
-
-	for (iDX = -(iSearchRange); iDX <= iSearchRange; iDX++)
-	{
-		for (iDY = -(iSearchRange); iDY <= iSearchRange; iDY++)
+		if (!p.isOwned() || // advc.opt
+			!AI_plotValid(&p) || isEnemy(p))
 		{
-			pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+			continue;
+		}
+		if (!p.isCity() && !p.isCity(true))
+		//if (!GET_TEAM(getTeam()).isRevealedBase(p)) // advc
+			continue;
 
-			if (pLoopPlot != NULL)
+		int iPathTurns;
+		if (canMoveInto(p, false) &&
+			generatePath(&p, NO_MOVEMENT_FLAGS, true, &iPathTurns, 1) &&
+			iPathTurns <= 1)
+		{
+			int iValue = 1;
+			if (p.isCity())
+				iValue += p.getPlotCity()->getPopulation();
+			if (iValue > iBestValue)
 			{
-				if (AI_plotValid(pLoopPlot) && (!isEnemy(pLoopPlot->getTeam(), pLoopPlot)))
-				{
-					if (pLoopPlot->isCity() || (pLoopPlot->isCity(true)))
-					{
-						if (canMoveInto(*pLoopPlot, false) && (generatePath(pLoopPlot, 0, true, &iPathTurns) && (iPathTurns <= 1)))
-						{
-							iValue = 1;
-							if (pLoopPlot->getPlotCity() != NULL)
-							{
-								iValue += pLoopPlot->getPlotCity()->getPopulation();
-							}
-							if (iValue > iBestValue)
-							{
-								iBestValue = iValue;
-								pBestPlot = getPathEndTurnPlot();
-								FAssert(!atPlot(pBestPlot));
-							}
-						}
-					}
-				}
+				iBestValue = iValue;
+				pBestPlot = getPathEndTurnPlot();
 			}
 		}
-	}
+	}) // FOR_EACH
 
 	if (pBestPlot != NULL)
 	{
-		FAssert(!atPlot(pBestPlot));
-		getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE());
+		pushGroupMoveTo(*pBestPlot, NO_MOVEMENT_FLAGS);
 		return true;
 	}
 
 	return false;
 }
+
 
 // R&R, ray, Natives raiding party - START
 bool CvUnitAI::AI_nativeRaidTreasureUnit()
@@ -18317,9 +18317,11 @@ int CvUnitAI::AI_currEffectiveStr(CvPlot const* pPlot, CvUnit const* pOther,
 		evaluating imminent stack-on-stack combat. When we already know that
 		a stack of stronger units is facing a larger stack of weaker units
 		we need to assume a high chance of having to fight multiple enemies in a row. */
+
 #if 0
+	// TODO: Add POWER_CORRECTION to XML
 	static scaled const rExponent = scaled::max(1,
-		fixp(3 / 4.) * per100(GC.getDefineINT(CvGlobals::POWER_CORRECTION)));
+		fixp(3 / 4.) * per100(GC.getDefineINT(166/*CvGlobals::POWER_CORRECTION*/)));
 	static scaled const rNormalizationFactor = (rExponent < fixp(1.05) ? 1 :
 		// Pretty arbitrary; only need to weigh rounding errors against the danger of overflow.
 		25000 / scaled(10000).pow(rExponent));

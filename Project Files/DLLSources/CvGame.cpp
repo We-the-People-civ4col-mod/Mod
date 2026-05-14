@@ -5859,7 +5859,7 @@ void CvGame::updateMoves()
 						FErrorMsg("Unit was not added to the movement queue");
 						if (pHeadUnit != NULL)
 						{
-							logBBAI("CvGame::updateMoves() WARNING iMaxUnitUpdateAttempts reached fpr Player %S Unit %d. %S(%S)[%d, %d] %s,%s,%s",
+							logBBAI("CvGame::updateMoves() WARNING iMaxUnitUpdateAttempts reached for Player %S Unit %d. %S(%S)[%d, %d] %s,%s,%s",
 								GET_PLAYER(pHeadUnit->getOwnerINLINE()).getCivilizationDescription(), pHeadUnit->getID(),
 								pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
 								pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->isOnMap() ? "isOnMap:true" : "isOnMap:false",
@@ -5901,7 +5901,7 @@ void CvGame::updateMoves()
 		if (kPlayer.isAutoMoves())
 		{
 			FOR_EACH_GROUP_VAR(pGroup, kPlayer)
-				pGroup->autoMission();
+				pGroup->autoMission_();
 
 			/*	K-Mod. Here's where we do the AI for automated units.
 				Note, we can't do AI_update and autoMission in the same loop, because

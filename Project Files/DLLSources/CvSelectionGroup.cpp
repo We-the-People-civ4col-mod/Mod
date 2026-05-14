@@ -96,10 +96,19 @@ void CvSelectionGroup::kill()
 	FAssert(getOwnerINLINE() != NO_PLAYER);
 	FAssertMsg(getID() != FFreeList::INVALID_INDEX, "getID() is not expected to be equal with FFreeList::INVALID_INDEX");
 	FAssertMsg(getNumUnits() == 0, "The number of units is expected to be 0");
-
+	invalidateGroupPaths(); // advc.pf
 	GET_PLAYER(getOwnerINLINE()).removeGroupCycle(getID());
-
 	GET_PLAYER(getOwnerINLINE()).deleteSelectionGroup(getID());
+}
+
+// advc.pf:
+void CvSelectionGroup::invalidateGroupPaths()
+{
+	path_finder.Reset();
+	/* WTP: Enable these when we port the patfinder
+	m_pPathFinder->invalidateGroup(*this);
+	m_pAltPathFinder->invalidateGroup(*this);
+	*/
 }
 
 bool CvSelectionGroup::sentryAlert() const
@@ -188,6 +197,13 @@ void CvSelectionGroup::doTurn()
 
 	FAssert(getOwnerINLINE() != NO_PLAYER);
 
+	// <advc>
+	if (getNumUnits() <= 0)
+	{
+		doDelayedDeath();
+		return;
+	} // </advc>
+
 	if (getNumUnits() > 0)
 	{
 		bool bHurt = false;
@@ -245,14 +261,18 @@ void CvSelectionGroup::doTurn()
 
 			if (getActivityType() == ACTIVITY_MISSION)
 			{
+				// K-Mod
+				const bool bBrave = (headMissionQueueNode() != NULL &&
+					(headMissionQueueNode()->m_data.iFlags & MOVE_IGNORE_DANGER));
+
 				if (getDomainType() == DOMAIN_LAND)
 				{ 
-					if (GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 1) > 0)
+					if (GET_PLAYER(getOwnerINLINE()).AI_isAnyPlotDanger(*plot(), bBrave ? 1 : 2))
 						clearMissionQueue();
 				}
 				else if (getDomainType() == DOMAIN_SEA)
 				{
-					if (GET_PLAYER(getOwnerINLINE()).AI_isAnyWaterDanger(*plot(), *getHeadUnit(), 1))
+					if (GET_PLAYER(getOwnerINLINE()).AI_isAnyWaterDanger(*plot(), *getHeadUnit(), bBrave ? 1 : 2))
 						clearMissionQueue();
 				}
 			}
@@ -559,10 +579,10 @@ void CvSelectionGroup::popMission()
 
 void CvSelectionGroup::autoMission()
 {
-	autoMissionInternal();
+	autoMission_();
 }
 
-bool CvSelectionGroup::autoMissionInternal() // K-Mod changed this from void to bool.
+bool CvSelectionGroup::autoMission_() // K-Mod changed this from void to bool.
 {
 	FAssert(getOwnerINLINE() != NO_PLAYER);
 

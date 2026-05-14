@@ -362,6 +362,7 @@ protected:
 	int AI_foundValue(CvPlot* pPlot);
 	bool AI_found(int iMinValue = 1, MovementFlags eFlags = NO_MOVEMENT_FLAGS);
 	bool AI_foundRange(int iRange, bool bFollow = false);
+	bool AI_foundFollow(); // K-Mod
 	bool AI_joinCityBrave();
 	bool AI_joinCity(int iMaxPath = MAX_INT, bool bRequireJoinable = true);
 	bool AI_joinOptimalCity();

@@ -490,7 +490,7 @@ AreaAITypes CvTeamAI::AI_calculateAreaAIType(CvArea const& kArea, bool bPreparin
 		for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 		{
 			const CvPlayerAI& kPlayer = GET_PLAYER(ePlayer);
-			if (!kPlayer.isAlive() && TEAMID(ePlayer) != getID())
+			if (!kPlayer.isAlive() || TEAMID(ePlayer) != getID())
 				continue;
 
 			CvPlayerAI* itMember = &GET_PLAYER(ePlayer);
@@ -3468,20 +3468,22 @@ bool CvTeamAI::AI_mayAttack(CvPlot const& kPlot) const
 // Returns true if eTeam is an actual colonial power that we can be in a real war with
 // other Europeans, natives and our king (after DOI) qualify
 // the church, barbarians/animals and other kings do not (and ofc our own team!)
-// eTeam must be passed to check if at war with the king. 
+// No check is performed against a native or european player on our team, that is
+// the responsibility of the caller.
 // TODO: result should be cached!
 bool CvTeamAI::AI_isColonialPower() const
 {
 	// TODO: AI_isNative seems to be a duplicate of hasNativePlayer?
 	// TODO: Merge these loops!	
-	return (AI_isNative() || hasColonialPlayer());
+	return (AI_isNative() || hasColonialPlayer()) || isAtWar(getParentTeam(getID()));
 }
 
+// Live above but also includes barbarians/animals.
 bool CvTeamAI::AI_isColonialOrBarbarianPower() const
 {
 	// TODO: AI_isNative seems to be a duplicate of hasNativePlayer?
 	// TODO: Merge these loops!	
-	return (AI_isNative() || hasColonialPlayer() || isBarbarian());
+	return (AI_isNative() || hasColonialPlayer() || isBarbarian()) || isAtWar(getParentTeam(getID()));
 }
 
 // Private Functions...
