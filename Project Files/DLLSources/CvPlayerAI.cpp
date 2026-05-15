@@ -629,7 +629,7 @@ void CvPlayerAI::AI_unitUpdate()
 {
 	PROFILE_FUNC();
 
-	FAssert(m_groupCycle.getLength() == m_selectionGroups.getCount());
+	FAssert(m_groupCycle.getLength() == getNumSelectionGroups());
 
 	CLLNode<int>* pCurrUnitNode;
 	CvSelectionGroup* pLoopSelectionGroup;
@@ -730,13 +730,14 @@ void CvPlayerAI::AI_unitUpdate()
 				CvUnitAI* const pHeadUnit = static_cast<CvUnitAI*>(pGroup->getHeadUnit());
 				if (pHeadUnit == NULL)
 					continue;
+				
 				if (pHeadUnit->AI_getMovePriority() == 0)
 				{
 					pHeadUnit->AI_doInitialMovePriority();
 				}
-				else
+				else if (std::find(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), pHeadUnit->getID()) == m_unitPriorityHeap.end())
 				{
-					FAssert(std::find(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), pHeadUnit->getID()) != m_unitPriorityHeap.end());
+					AI_addUnitToMoveQueue(pHeadUnit);
 				}
 			}
 			m_iTurnLastManagedPop = GC.getGameINLINE().getGameTurn();
@@ -773,6 +774,35 @@ void CvPlayerAI::AI_unitUpdate()
 		if (!isHuman()) /*  K-Mod - automated actions are no longer done from this function.
 				Instead, they are done in CvGame::updateMoves */
 		{
+			FOR_EACH_GROUPAI_VAR(pQueueGroup, *this)
+			{
+				CvUnitAI* const pQueueHeadUnit = static_cast<CvUnitAI*>(pQueueGroup->getHeadUnit());
+
+				if (pQueueHeadUnit == NULL)
+				{
+					continue;
+				}
+
+				if (!pQueueGroup->isOnMap() || pQueueGroup->isAutomated())
+				{
+					continue;
+				}
+
+				if (!pQueueGroup->readyToMove(true))
+				{
+					continue;
+				}
+
+				if (pQueueHeadUnit->AI_getMovePriority() <= 0)
+				{
+					pQueueHeadUnit->AI_doInitialMovePriority();
+				}
+				else if (std::find(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), pQueueHeadUnit->getID()) == m_unitPriorityHeap.end())
+				{
+					AI_addUnitToMoveQueue(pQueueHeadUnit);
+				}
+			}
+
 			while (!m_unitPriorityHeap.empty())
 			{
 				AI_verifyMoveQueue();
@@ -784,8 +814,21 @@ void CvPlayerAI::AI_unitUpdate()
 					if ((pGroup != NULL) && shouldUnitMove(pUnit))
 					{
 						// Port units can act but units on the map without remaining moves cannot
-						if (pUnit->isOnMap() && !pUnit->canMove()) // what about the head not able to move but another member can ?
+						if (pUnit->isOnMap() && !pUnit->canMove())
+						{
+							pUnit->AI_setMovePriority(0);
+
+							if (pGroup->readyToMove(true))
+							{
+								pGroup->pushMission(MISSION_SKIP);
+
+								if (pGroup->readyToMove(true))
+								{
+									pGroup->setActivityType(ACTIVITY_HOLD);
+								}
+							}
 							continue;
+						}
 
 						int iOriginalPriority = pUnit->AI_getMovePriority();
 						if (iOriginalPriority > 0)

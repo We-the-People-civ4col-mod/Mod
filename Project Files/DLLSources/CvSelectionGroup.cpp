@@ -1975,22 +1975,39 @@ bool CvSelectionGroup::canAllMoveInternal() const
 	return true;
 }
 
-
 bool CvSelectionGroup::canAnyMove() const
 {
 	FOR_EACH_UNIT_IN(pUnit, *this)
 	{
-		if (pUnit->canMoveInternal())
-			return true;
+		if (pUnit == NULL)
+		{
+			continue;
+		}
 
-		/*
-		if (pUnit->canMoveInternal(true) ||
-			// WTP: Need this to allow AI_europeUpdate to be called for ships waiting in Europe / Africa
-			pUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE || 
-			pUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA) && 
-			return true;
-		*/
+		if (pUnit->isOnMap())
+		{
+			if (pUnit->canMove())
+			{
+				return true;
+			}
+		}
+		else
+		{
+			const UnitTravelStates eTravelState = pUnit->getUnitTravelState();
+
+			if (eTravelState == UNIT_TRAVEL_STATE_IN_EUROPE ||
+				eTravelState == UNIT_TRAVEL_STATE_IN_AFRICA)
+			{
+				return true;
+			}
+
+			if (pUnit->canMoveInternal())
+			{
+				return true;
+			}
+		}
 	}
+
 	return false;
 }
 

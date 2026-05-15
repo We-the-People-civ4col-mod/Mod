@@ -5838,6 +5838,10 @@ void CvGame::updateMoves()
 		if (!kPlayer.isAutoMoves())
 		{
 			kPlayer.AI_unitUpdate();
+			if (!kPlayer.isHuman() && kPlayer.hasBusyUnit())
+			{
+				m_iUnitUpdateAttempts = 0;
+			}
 			if (!kPlayer.isHuman() && !kPlayer.hasBusyUnit())
 			{
 				/*	advc.001y: Safety measure against infinite loop
@@ -5847,6 +5851,7 @@ void CvGame::updateMoves()
 				if (m_iUnitUpdateAttempts > iMaxUnitUpdateAttempts ||
 					!kPlayer.hasReadyUnit(true))
 				{
+					m_iUnitUpdateAttempts = 0;
 					kPlayer.setAutoMoves(true);
 				}
 				else
@@ -5865,7 +5870,8 @@ void CvGame::updateMoves()
 								pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->isOnMap() ? "isOnMap:true" : "isOnMap:false",
 								pHeadUnit->isCargo() ? "isCargo:true" : "isCargo:false", pHeadUnit->canMove() ? "canMove:true" : "canMove:false");
 						}
-						if (pHeadUnit->hasCargo())
+
+						if (pHeadUnit != NULL && pHeadUnit->hasCargo())
 						{
 							CLinkList<IDInfo> listCargo;
 							pHeadUnit->getGroup()->buildCargoUnitList(listCargo);

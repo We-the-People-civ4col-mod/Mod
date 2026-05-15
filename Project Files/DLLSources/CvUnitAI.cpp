@@ -130,7 +130,7 @@ bool CvUnitAI::AI_update()
 	}
 	*/
 
-	int iOldMovePriority = AI_getMovePriority();
+	const int iOldMovePriority = AI_getMovePriority();
 
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	if (!AI_afterAttack())
@@ -406,6 +406,43 @@ bool CvUnitAI::AI_update()
 		}
 	}
 	*/
+
+
+	if (!isHuman())
+	{
+		if (AI_getMovePriority() == iOldMovePriority)
+		{
+			if (canMove() &&
+				(getGroup()->getActivityType() == ACTIVITY_MISSION ||
+					getGroup()->getActivityType() == ACTIVITY_AWAKE))
+			{
+				int iPriorityDecrease = MOVE_PRIORITY_MAX / 10;
+				if (iPriorityDecrease < 1)
+				{
+					iPriorityDecrease = 1;
+				}
+
+				if (AI_getMovePriority() > iPriorityDecrease)
+				{
+					AI_setMovePriority(AI_getMovePriority() - iPriorityDecrease);
+				}
+				else
+				{
+					AI_setMovePriority(0);
+
+					if (getGroup()->getActivityType() == ACTIVITY_AWAKE)
+					{
+						getGroup()->pushMission(MISSION_SKIP);
+						m_bHasYielded = true;
+					}
+				}
+			}
+			else
+			{
+				AI_setMovePriority(0);
+			}
+		}
+	}
 
 	if (m_bHasYielded)
 		return true;
