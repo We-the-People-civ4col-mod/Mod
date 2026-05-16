@@ -129,7 +129,7 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
 
 #define FOR_EACH_UNIT_IN(pLoopUnit, kGroup) \
     for (CLLNode<IDInfo>* pUnitNode = (kGroup).headUnitNode(); pUnitNode != NULL; pUnitNode = (kGroup).nextUnitNode(pUnitNode)) \
-        if (CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data)) \
+        if (const CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data)) \
             if (pLoopUnit != NULL)
 
 #define FOR_EACH_UNITAI_IN(pLoopUnit, kGroup) \
@@ -137,16 +137,21 @@ eLoop##TYPE=(TYPE##Types)(eLoop##TYPE + 1))
         if (const CvUnitAI* pLoopUnit = static_cast<const CvUnitAI*>(::getUnit(pUnitNode->m_data))) \
             if (pLoopUnit != NULL)
 
+// Mutation safe
 #define FOR_EACH_UNIT_VAR_IN(pLoopUnit, kGroup) \
-    for (CLLNode<IDInfo>* pUnitNode = (kGroup).headUnitNode(); pUnitNode != NULL; pUnitNode = (kGroup).nextUnitNode(pUnitNode)) \
-        if (CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data)) \
-            if (pLoopUnit != NULL)
+	for (CLLNode<IDInfo>* pUnitNode = (kGroup).headUnitNode(), *UNIQUE_VAR(pNextUnitNode) = NULL; \
+		pUnitNode != NULL && ((UNIQUE_VAR(pNextUnitNode) = CLinkList<IDInfo>::static_next(pUnitNode)), true); \
+		pUnitNode = UNIQUE_VAR(pNextUnitNode)) \
+	if (CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data)) \
+	if (pLoopUnit != NULL)
 
+// Mutation safe
 #define FOR_EACH_UNITAI_VAR_IN(pLoopUnit, kGroup) \
-    for (CLLNode<IDInfo>* pUnitNode = (kGroup).headUnitNode(); pUnitNode != NULL; pUnitNode = (kGroup).nextUnitNode(pUnitNode)) \
-        if (CvUnitAI* pLoopUnit = static_cast<CvUnitAI*>(::getUnit(pUnitNode->m_data))) \
-            if (pLoopUnit != NULL)
-
+	for (CLLNode<IDInfo>* pUnitNode = (kGroup).headUnitNode(), *UNIQUE_VAR(pNextUnitNode) = NULL; \
+		pUnitNode != NULL && ((UNIQUE_VAR(pNextUnitNode) = CLinkList<IDInfo>::static_next(pUnitNode)), true); \
+		pUnitNode = UNIQUE_VAR(pNextUnitNode)) \
+	if (CvUnitAI* pLoopUnit = static_cast<CvUnitAI*>(::getUnit(pUnitNode->m_data))) \
+	if (pLoopUnit != NULL)
 
 #define FOR_EACH_NON_CENTER_CITY_PLOT(pLoopPlot, targetCity) \
     for (CityPlotTypes eCityPlot = FIRST_CITY_PLOT; eCityPlot < NUM_CITY_PLOTS; ++eCityPlot) \

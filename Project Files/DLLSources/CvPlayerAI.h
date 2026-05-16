@@ -17,11 +17,12 @@
 
 struct UnitImpassables
 {
-	int iCount;                               // Count of impassable terrains/features
+	int iCount;                                // Count of impassable terrains/features
+#define UNIT_IMPASSABLES_BITS 80		   // Max bitset size
 	std::bitset<UNIT_IMPASSABLES_BITS> iFlags; // Bitset for impassable types
 
 	UnitImpassables()
-		: iCount(0), iFlags(0) // Initialize count and bitset
+		: iCount(0), iFlags(0)
 	{
 	}
 

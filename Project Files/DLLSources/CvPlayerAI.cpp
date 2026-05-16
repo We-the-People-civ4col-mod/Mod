@@ -131,7 +131,7 @@ void CvPlayerAI::AI_doTurnPre()
 		return;
 	}
 
-	m_unitPriorityHeap.clear();
+	//m_unitPriorityHeap.clear();
 	int iLoop;
 	for (CvUnit* pUnit = firstUnit(&iLoop); pUnit != NULL; pUnit = nextUnit(&iLoop))
 	{
@@ -625,26 +625,82 @@ int CvPlayerAI::AI_movementPriority(CvSelectionGroupAI const& kGroup) const // a
 	return 200;
 }
 
+namespace
+{
+	static int AI_getBestStoredMovePriority(CvSelectionGroupAI* pGroup)
+	{
+		int iBestPriority = 0;
+
+		if (pGroup == NULL)
+		{
+			return 0;
+		}
+
+		FOR_EACH_UNITAI_IN(pLoopUnit, *pGroup)
+		{
+			if (pLoopUnit != NULL)
+			{
+				iBestPriority = std::max(iBestPriority, pLoopUnit->AI_getMovePriority());
+			}
+		}
+
+		return iBestPriority;
+	}
+
+
+	static int AI_getMoveGroupSortKey(CvPlayerAI& kPlayer, CvSelectionGroupAI* pGroup)
+	{
+		if (pGroup == NULL)
+		{
+			return MAX_INT;
+		}
+
+		CvUnitAI* const pHeadUnit = static_cast<CvUnitAI*>(pGroup->getHeadUnit());
+
+		if (pHeadUnit == NULL)
+		{
+			return MAX_INT;
+		}
+
+		int iMovePriority = AI_getBestStoredMovePriority(pGroup);
+
+		if (iMovePriority <= 0)
+		{
+			pHeadUnit->AI_doInitialMovePriority();
+			iMovePriority = AI_getBestStoredMovePriority(pGroup);
+		}
+
+		if (iMovePriority > 0)
+		{
+			return -iMovePriority;
+		}
+
+		const int iAdvcPriority = kPlayer.AI_movementPriority(*pGroup);
+
+		if (iAdvcPriority >= MAX_INT - 100000)
+		{
+			return MAX_INT;
+		}
+
+		return 100000 + iAdvcPriority;
+	}
+}
+
 void CvPlayerAI::AI_unitUpdate()
 {
 	PROFILE_FUNC();
 
 	FAssert(m_groupCycle.getLength() == getNumSelectionGroups());
 
-	CLLNode<int>* pCurrUnitNode;
-	CvSelectionGroup* pLoopSelectionGroup;
-	CLinkList<int> tempGroupCycle;
-	CLinkList<int> finalGroupCycle;
-
-
 	if (GC.getGameINLINE().getGameTurn() != m_iTurnLastManagedPop)
 	{
-		//This should only be done once a turn, but must be done right before
-		//units are moved else it's unfair on the AI.
+		// This should only be done once a turn, but must be done right before
+		// units are moved else it is unfair on the AI.
 		if (!isHuman())
 		{
 			int iLoop;
 			CvCity* pLoopCity;
+
 			for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 			{
 				if (isNative())
@@ -654,6 +710,7 @@ void CvPlayerAI::AI_unitUpdate()
 				else if (pLoopCity->getPopulation() > 1)
 				{
 					int iValue = std::max(1, 11 / (1 + pLoopCity->getPopulation()));
+
 					if (((GC.getGameINLINE().getGameTurn() + iLoop) % iValue) == 0)
 					{
 						bool bRemove = true;
@@ -662,9 +719,10 @@ void CvPlayerAI::AI_unitUpdate()
 						if (pRemoveUnit->getProfession() != NO_PROFESSION)
 						{
 							CvProfessionInfo& kProfession = GC.getProfessionInfo(pRemoveUnit->getProfession());
-							// R&R, ray , MYCP partially based on code of Aymerick - START
+
+							// R&R, ray, MYCP partially based on code of Aymerick - START
 							YieldTypes eYieldProducedType = (YieldTypes)kProfession.getYieldsProduced(0);
-							// R&R, ray , MYCP partially based on code of Aymerick - END
+							// R&R, ray, MYCP partially based on code of Aymerick - END
 
 							if (eYieldProducedType == YIELD_EDUCATION)
 							{
@@ -674,12 +732,15 @@ void CvPlayerAI::AI_unitUpdate()
 							if (bRemove && (pRemoveUnit->AI_getIdealProfession() != NO_PROFESSION) && (pRemoveUnit->getProfession() == pRemoveUnit->AI_getIdealProfession()))
 							{
 								bRemove = false;
-								// R&R, ray , MYCP partially based on code of Aymerick - START
+
+								// R&R, ray, MYCP partially based on code of Aymerick - START
 								YieldTypes eYieldProducedType = (YieldTypes)kProfession.getYieldsProduced(0);
-								// R&R, ray , MYCP partially based on code of Aymerick - END
+								// R&R, ray, MYCP partially based on code of Aymerick - END
+
 								if (kProfession.isWorkPlot())
 								{
 									CvPlot* pWorkedPlot = pLoopCity->getPlotWorkedByUnit(pRemoveUnit);
+
 									if (pWorkedPlot == NULL)
 									{
 										bRemove = true;
@@ -693,6 +754,7 @@ void CvPlayerAI::AI_unitUpdate()
 										else
 										{
 											CvPlot* pBestWorkedPlot = AI_getBestWorkedYieldPlot(eYieldProducedType);
+
 											if ((pBestWorkedPlot == NULL) || (pWorkedPlot->calculateBestNatureYield(eYieldProducedType, getTeam()) < pBestWorkedPlot->calculateBestNatureYield(eYieldProducedType, getTeam())))
 											{
 												bRemove = true;
@@ -709,12 +771,13 @@ void CvPlayerAI::AI_unitUpdate()
 								}
 							}
 						}
+
 						if (bRemove)
 						{
-							// make sure the unit can have the default profession
-							// this fails even if it can if leaving is blocked by disorder
-							//    Nightinggale
+							// Make sure the unit can have the default profession.
+							// This fails even if it can if leaving is blocked by disorder.
 							ProfessionTypes eDefaultProfession = GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
+
 							if (pRemoveUnit->canHaveProfession(eDefaultProfession, false))
 							{
 								pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pRemoveUnit, false, eDefaultProfession);
@@ -725,171 +788,117 @@ void CvPlayerAI::AI_unitUpdate()
 				}
 			}
 
-			FOR_EACH_GROUPAI_VAR(pGroup, *this)
-			{
-				CvUnitAI* const pHeadUnit = static_cast<CvUnitAI*>(pGroup->getHeadUnit());
-				if (pHeadUnit == NULL)
-					continue;
-				
-				if (pHeadUnit->AI_getMovePriority() == 0)
-				{
-					pHeadUnit->AI_doInitialMovePriority();
-				}
-				else if (std::find(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), pHeadUnit->getID()) == m_unitPriorityHeap.end())
-				{
-					AI_addUnitToMoveQueue(pHeadUnit);
-				}
-			}
 			m_iTurnLastManagedPop = GC.getGameINLINE().getGameTurn();
-			m_iMoveQueuePasses = 0;
-
 		}
 	}
 
 	if (!hasBusyUnit())
 	{
-		pCurrUnitNode = headGroupCycleNode();
+		CLLNode<int>* pCurrUnitNode = headGroupCycleNode();
 
 		while (pCurrUnitNode != NULL)
 		{
-			pLoopSelectionGroup = getSelectionGroup(pCurrUnitNode->m_data);
+			CvSelectionGroupAI* pLoopSelectionGroup = static_cast<CvSelectionGroupAI*>(getSelectionGroup(pCurrUnitNode->m_data));
 			pCurrUnitNode = nextGroupCycleNode(pCurrUnitNode);
 
 			FAssertMsg(pLoopSelectionGroup != NULL, "Stale group cycle entry in CvPlayerAI::AI_unitUpdate");
+
 			if (pLoopSelectionGroup == NULL)
 			{
 				continue;
 			}
+
 			if (pLoopSelectionGroup->AI_isForceSeparate())
 			{
-				if (pLoopSelectionGroup->isForceUpdate() || 
-					// do not split groups that are in the midst of attacking
+				if (pLoopSelectionGroup->isForceUpdate() ||
 					!pLoopSelectionGroup->AI_isGroupAttack())
 				{
-					pLoopSelectionGroup->AI_separate();	// pointers could become invalid...
+					pLoopSelectionGroup->AI_separate();
 				}
 			}
 		}
 
-		if (!isHuman()) /*  K-Mod - automated actions are no longer done from this function.
-				Instead, they are done in CvGame::updateMoves */
+		if (!isHuman())
 		{
-			FOR_EACH_GROUPAI_VAR(pQueueGroup, *this)
+			bool bRepeat = true;
+
+			do
 			{
-				CvUnitAI* const pQueueHeadUnit = static_cast<CvUnitAI*>(pQueueGroup->getHeadUnit());
+				std::vector<std::pair<int, int> > aMoveGroups;
 
-				if (pQueueHeadUnit == NULL)
-				{
-					continue;
-				}
+				pCurrUnitNode = headGroupCycleNode();
 
-				if (!pQueueGroup->isOnMap() || pQueueGroup->isAutomated())
+				while (pCurrUnitNode != NULL)
 				{
-					continue;
-				}
+					const int iGroupID = pCurrUnitNode->m_data;
+					CvSelectionGroupAI* pLoopSelectionGroup = static_cast<CvSelectionGroupAI*>(getSelectionGroup(iGroupID));
 
-				if (!pQueueGroup->readyToMove(true))
-				{
-					continue;
-				}
-
-				if (pQueueHeadUnit->AI_getMovePriority() <= 0)
-				{
-					pQueueHeadUnit->AI_doInitialMovePriority();
-				}
-				else if (std::find(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), pQueueHeadUnit->getID()) == m_unitPriorityHeap.end())
-				{
-					AI_addUnitToMoveQueue(pQueueHeadUnit);
-				}
-			}
-
-			while (!m_unitPriorityHeap.empty())
-			{
-				AI_verifyMoveQueue();
-				CvUnit* const pUnit = AI_getNextMoveUnit();
-				if (pUnit != NULL)
-				{
-					CvSelectionGroupAI* const pGroup = static_cast<CvSelectionGroupAI*>(pUnit->getGroup());
-
-					if ((pGroup != NULL) && shouldUnitMove(pUnit))
+					if (pLoopSelectionGroup != NULL)
 					{
-						// Port units can act but units on the map without remaining moves cannot
-						if (pUnit->isOnMap() && !pUnit->canMove())
+						aMoveGroups.push_back(std::make_pair(AI_getMoveGroupSortKey(*this, pLoopSelectionGroup), iGroupID));
+					}
+
+					pCurrUnitNode = nextGroupCycleNode(pCurrUnitNode);
+				}
+
+				const int iGroupListSize = (int)aMoveGroups.size();
+
+				std::sort(aMoveGroups.begin(), aMoveGroups.end());
+
+				for (int i = 0; i < (int)aMoveGroups.size(); ++i)
+				{
+					const int iGroupID = aMoveGroups[i].second;
+					CvSelectionGroupAI* pLoopSelectionGroup = static_cast<CvSelectionGroupAI*>(getSelectionGroup(iGroupID));
+
+					if (pLoopSelectionGroup == NULL)
+					{
+						continue;
+					}
+
+					if (pLoopSelectionGroup->autoMission_())
+					{
+						pLoopSelectionGroup = static_cast<CvSelectionGroupAI*>(getSelectionGroup(iGroupID));
+
+						if (pLoopSelectionGroup != NULL && (pLoopSelectionGroup->isBusy() || pLoopSelectionGroup->isCargoBusy()))
 						{
-							pUnit->AI_setMovePriority(0);
-
-							if (pGroup->readyToMove(true))
-							{
-								pGroup->pushMission(MISSION_SKIP);
-
-								if (pGroup->readyToMove(true))
-								{
-									pGroup->setActivityType(ACTIVITY_HOLD);
-								}
-							}
-							continue;
+							return;
 						}
 
-						int iOriginalPriority = pUnit->AI_getMovePriority();
-						if (iOriginalPriority > 0)
-						{
-							if (!pGroup->autoMission_())
-							{
-								if (!pGroup->isBusy() && !pGroup->isCargoBusy())
-								{
-									int iGroupsAfter = -1;
-									int iGroupsBefore = getNumSelectionGroups();
-									if (pGroup->AI_update())
-									{
-										iGroupsAfter = getNumSelectionGroups();
-										if (iGroupsAfter - iGroupsBefore)
-										{
-											logBBAI("CvPlayerAI::AI_unitUpdate() Number of groups have changed %d", iGroupsAfter - iGroupsBefore);
-										}
+						continue;
+					}
 
-										//static_cast<CvUnitAI*>(pUnit)->m_bHasYielded = false;
-										CvUnit* const pUnit2 = pUnit; // Debugging
-										return;
-									}
-									else
-									{
-										iGroupsAfter = getNumSelectionGroups();
-										if (iGroupsAfter - iGroupsBefore)
-										{
-											logBBAI("CvPlayerAI::AI_unitUpdate() Number of groups have changed %d", iGroupsAfter - iGroupsBefore);
-										}
-									}
+					if (pLoopSelectionGroup->isBusy() || pLoopSelectionGroup->isCargoBusy())
+					{
+						return;
+					}
 
-								}
-								else
-								{
-									m_iMoveQueuePasses++;
-									if (m_iMoveQueuePasses > 100)
-									{
-										// TODO: can this ever happen?
-										FAssertMsg(false, "Forcing AI to abort turn");
-										return;
-									}
-									/*
-									logBBAI("WARNING CvPlayerAI::AI_unitUpdate() AI_addUnitToMoveQueue Player %S Unit %d. %S(%S)[%d, %d] %s,%s",
-										GET_PLAYER(pHeadUnit->getOwnerINLINE()).getCivilizationDescription(), pHeadUnit->getID(),
-										pHeadUnit->getName().GetCString(), GET_PLAYER(pHeadUnit->getOwnerINLINE()).getName(),
-										pHeadUnit->getX_INLINE(), pHeadUnit->getY_INLINE(), pHeadUnit->isOnMap() ? "isOnMap:true" : "isOnMap:false",
-										pHeadUnit->isCargo() ? "isCargo:true" : "isCargo:false");
-									*/
-									if (!pUnit->isDead())
-										AI_addUnitToMoveQueue(pUnit);
-									return;
-								}
-							}
-						}
+					const int iGroupsBefore = getNumSelectionGroups();
+					const bool bAbortUpdate = pLoopSelectionGroup->AI_update();
+					const int iGroupsAfter = getNumSelectionGroups();
+
+					if (iGroupsAfter - iGroupsBefore)
+					{
+						logBBAI("CvPlayerAI::AI_unitUpdate() Number of groups have changed %d", iGroupsAfter - iGroupsBefore);
+					}
+
+					if (bAbortUpdate)
+					{
+						return;
+					}
+
+					pLoopSelectionGroup = static_cast<CvSelectionGroupAI*>(getSelectionGroup(iGroupID));
+
+					if (pLoopSelectionGroup != NULL && (pLoopSelectionGroup->isBusy() || pLoopSelectionGroup->isCargoBusy()))
+					{
+						return;
 					}
 				}
-			}
+
+				bRepeat = (m_groupCycle.getLength() > iGroupListSize);
+			} while (bRepeat);
 		}
 	}
 }
-
 void CvPlayerAI::AI_makeAssignWorkDirty()
 {
 	int iLoop;
@@ -10490,41 +10499,24 @@ CvPlot* CvPlayerAI::AI_getImperialShipSpawnPlot()
 
 void CvPlayerAI::AI_addUnitToMoveQueue(CvUnit* pUnit)
 {
-	if (std::find(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), pUnit->getID()) == m_unitPriorityHeap.end())
-	{
-		m_unitPriorityHeap.push_back(pUnit->getID());
-		std::push_heap(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), CvShouldMoveBefore(getID()));
-	}
-	else
-	{
-		std::make_heap(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), CvShouldMoveBefore(getID()));
-	}
+	FAssert(pUnit == NULL || pUnit->getOwnerINLINE() == getID());
 }
+
 
 void CvPlayerAI::AI_removeUnitFromMoveQueue(CvUnit* pUnit)
 {
-	std::vector<int>::iterator it;
-	it = std::find(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), pUnit->getID());
-	if (it != m_unitPriorityHeap.end())
-	{
-		m_unitPriorityHeap.erase(it);
-		std::make_heap(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), CvShouldMoveBefore(getID()));
-	}
+	FAssert(pUnit == NULL || pUnit->getOwnerINLINE() == getID());
 }
+
 
 void CvPlayerAI::AI_verifyMoveQueue()
 {
-	std::vector<int>::iterator it = std::partition(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), CvShouldUnitMove(getID()));
-	m_unitPriorityHeap.erase(it, m_unitPriorityHeap.end());
-	std::make_heap(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), CvShouldMoveBefore(getID()));
 }
+
 
 CvUnit* CvPlayerAI::AI_getNextMoveUnit()
 {
-	CvUnit* pUnit = getUnit(m_unitPriorityHeap.front());
-	std::pop_heap(m_unitPriorityHeap.begin(), m_unitPriorityHeap.end(), CvShouldMoveBefore(getID()));
-	m_unitPriorityHeap.pop_back();
-	return pUnit;
+	return NULL;
 }
 
 int CvPlayerAI::AI_highestProfessionOutput(ProfessionTypes eProfession, const CvCity* pIgnoreCity)
@@ -16864,90 +16856,87 @@ int CvPlayerAI::AI_cityTargetStrengthByPath(/* advc: */CvCity const* pCity,
 }
 
 // TODO: Cache the impassable bitset and update when unit is created and profession changes
-UnitImpassables CvPlayerAI::AI_unitImpassables(const CvUnit& pUnit) const
+// Encodes binary movement abilities (i.e. passability)  into a bitset. The bit is set when the unit CANNOT enter
+// the corresponding feature/terrain/plot/rival
+UnitImpassables CvPlayerAI::AI_unitImpassables(const CvUnit& kUnit) const
 {
-	// WTP: Passable abilities are unfortunately scattered across
-	// several attributes:
+	const unsigned int numTerrains = (unsigned int)GC.getNumTerrainInfos();
+	const unsigned int numFeatures = (unsigned int)GC.getNumFeatureInfos();
+	const unsigned int PEAK_BIT = numTerrains + numFeatures;
+	const unsigned int RIVAL_TERRITORY_BIT = PEAK_BIT + 1;
+	const unsigned int totalBits = RIVAL_TERRITORY_BIT + 1;
 
-	// Unit: 
-	// bCanMoveImpassable, bMoveIntoPeak, bCanMoveAllTerrain, TerrainImpassables, FeatureImpassables
-
-	// Profession (note that these properties supercede the underlying abilities on the unit):
-	// bCanCrossLargeRivers (instead of using TerrainImpassables for units), bMoveIntoPeak, bCanMoveAllTerrain
-
-	// Note: bCanMoveImpassable and bCanMoveAllTerrain are currently not used in the xml
-	// Example: A free colonist has bMoveIntoPeak=0 but the scout profession has bMoveIntoPeak=1 and
-	// thus a free colonist scout can cross peaks
-
-	// Note: as of WTP 4.x there are 50-ish features and 20-ish terrains in total
-
-	// Dynamically calculate the number of terrains and features
-	uint const numTerrains = (uint)GC.getNumTerrainInfos();
-	uint const numFeatures = (uint)GC.getNumFeatureInfos();
-	uint const PEAK_BIT = numTerrains + numFeatures;
-	uint const RIVER_BIT = PEAK_BIT + 1;
-	uint const totalBits = RIVER_BIT + 1;
-
-	// Ensure the total number of bits fits within the defined bitset size
 	FAssert(totalBits <= UNIT_IMPASSABLES_BITS);
 
-	UnitImpassables impassables;
+	UnitImpassables kResult;
+	kResult.iFlags.reset();
+	kResult.iCount = 0;
 
-	// Retrieve unit info
-	const CvUnitInfo& kUnitInfo = pUnit.getUnitInfo();
-	const ProfessionTypes eProfession = pUnit.getProfession();
+	const CvUnitInfo& kUnitInfo = kUnit.getUnitInfo();
+	const ProfessionTypes eProfession = kUnit.getProfession();
 
-	// Process all terrains
-	FOREACH(Terrain)
+	// Base unit abilities
+	bool bCanMoveIntoPeak = kUnitInfo.allowsMoveIntoPeak();
+	bool bCanCrossLargeRivers = !kUnitInfo.getTerrainImpassable(TERRAIN_LARGE_RIVERS);
+
+	// Profession overrides the base unit abilities for these cases
+	if (eProfession != NO_PROFESSION)
 	{
-		if (eLoopTerrain == TERRAIN_LARGE_RIVERS)
-			continue; // Special case handled separately
+		const CvProfessionInfo& kProfessionInfo = GC.getProfessionInfo(eProfession);
 
-		const bool impassable = kUnitInfo.getTerrainImpassable(eLoopTerrain);
+		bCanMoveIntoPeak = kProfessionInfo.allowsMoveIntoPeak();
+		bCanCrossLargeRivers = kProfessionInfo.isCanCrossLargeRivers();
+	}
 
-		if (impassable)
+	// Terrain impassables
+	for (int i = 0; i < (int)numTerrains; ++i)
+	{
+		const TerrainTypes eTerrain = (TerrainTypes)i;
+		bool bImpassable = false;
+
+		if (eTerrain == TERRAIN_LARGE_RIVERS)
 		{
-			impassables.iFlags.set(eLoopTerrain);
-			impassables.iCount++;
+			// Large rivers crossing ability that is enabled by the profession is coalesced into the terrain bitset
+			bImpassable = !bCanCrossLargeRivers;
+		}
+		else
+		{
+			bImpassable = kUnitInfo.getTerrainImpassable(eTerrain);
+		}
+
+		if (bImpassable)
+		{
+			kResult.iFlags.set((unsigned int)i);
+			kResult.iCount++;
 		}
 	}
 
-	// Process all features
-	FOREACH(Feature)
+	// Feature impassables
+	for (int i = 0; i < (int)numFeatures; ++i)
 	{
-		const bool impassable = kUnitInfo.getFeatureImpassable(eLoopFeature);
-
-		if (impassable)
+		if (kUnitInfo.getFeatureImpassable((FeatureTypes)i))
 		{
-			impassables.iFlags.set(numTerrains + eLoopFeature);
-			impassables.iCount++;
+			kResult.iFlags.set(numTerrains + (unsigned int)i);
+			kResult.iCount++;
 		}
 	}
 
-	// Handle peaks
-	if ((eProfession != NO_PROFESSION && GC.getProfessionInfo(eProfession).allowsMoveIntoPeak())
-		|| kUnitInfo.allowsMoveIntoPeak())
+	// Peaks need their own bit because they are plot type, not terrain/feature.
+	if (!bCanMoveIntoPeak)
 	{
-		impassables.iFlags.set(PEAK_BIT); // Peak bit
-		impassables.iCount++;
+		// Note that this ability is only on the profession level
+		kResult.iFlags.set(PEAK_BIT);
+		kResult.iCount++;
 	}
 
-	// Handle large rivers separately
-	bool canCrossRivers = !kUnitInfo.getTerrainImpassable(TERRAIN_LARGE_RIVERS);
-	if (eProfession != NO_PROFESSION &&
-		GC.getProfessionInfo(eProfession).isCanCrossLargeRivers())
+	// Rival territory is a separate binary enterability rule.
+	if (!kUnit.isRivalTerritory())
 	{
-		canCrossRivers = true; // Profession overrides unit impassability
+		kResult.iFlags.set(RIVAL_TERRITORY_BIT);
+		kResult.iCount++;
 	}
 
-	// Set the river bit if the unit cannot cross rivers (after considering profession)
-	if (!canCrossRivers)
-	{
-		impassables.iFlags.set(RIVER_BIT); // River bit
-		impassables.iCount++;
-	}
-
-	return impassables;
+	return kResult;
 }
 
 // just a stub for now

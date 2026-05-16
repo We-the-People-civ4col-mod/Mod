@@ -6987,27 +6987,30 @@ int CvUnitAI::AI_getMovePriority() const
 
 void CvUnitAI::AI_setMovePriority(int iNewValue)
 {
-	//FAssert(isOnMap());
-	// Set priority only if group head
-	//getGroup()
+	FAssert(iNewValue >= 0);
+
+	if (iNewValue < 0)
+	{
+		iNewValue = 0;
+	}
+
+	if (isDelayedDeath())
+	{
+		iNewValue = 0;
+	}
 
 	m_iMovePriority = iNewValue;
 
 	logBBAI("CvUnitAI::AI_setMovePriority Player %S Unit %d Priority %d. %S(%S)[%d, %d] %s,%s",
-		GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), getID(), iNewValue,
-		getName().GetCString(), GET_PLAYER(getOwnerINLINE()).getName(),
-		getX_INLINE(), getY_INLINE(), isOnMap() ? "isOnMap:true" : "isOnMap:false",
+		GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(),
+		getID(),
+		iNewValue,
+		getName().GetCString(),
+		GET_PLAYER(getOwnerINLINE()).getName(),
+		getX_INLINE(),
+		getY_INLINE(),
+		isOnMap() ? "isOnMap:true" : "isOnMap:false",
 		isCargo() ? "isCargo:true" : "isCargo:false");
-
-
-	if (AI_getMovePriority() <= 0)
-	{
-		GET_PLAYER(getOwnerINLINE()).AI_removeUnitFromMoveQueue(this);
-	}
-	else
-	{
-		GET_PLAYER(getOwnerINLINE()).AI_addUnitToMoveQueue(this);
-	}
 }
 
 bool CvUnitAI::AI_hasAIChanged(int iNumTurns) const
@@ -7031,15 +7034,24 @@ int CvUnitAI::AI_getLastAIChangeTurn() const
 
 void CvUnitAI::AI_doInitialMovePriority()
 {
-	if (!shouldUnitMove(this))
+	if (getGroup() == NULL)
 	{
+		AI_setMovePriority(0);
 		return;
 	}
+
+	if (!shouldUnitMove(this))
+	{
+		AI_setMovePriority(0);
+		return;
+	}
+
 	int iMovePriority = 0;
 
 	if (getGroup()->getActivityType() == ACTIVITY_MISSION)
 	{
-		// Workaround to prevent auto missions from not being scheduled due to being assigned 0 as priority
+		// Workaround to prevent auto missions from not being scheduled due to
+		// being assigned 0 as priority.
 		AI_setMovePriority(MOVE_PRIORITY_MEDIUM);
 		return;
 	}
@@ -7056,11 +7068,11 @@ void CvUnitAI::AI_doInitialMovePriority()
 			{
 				iMovePriority = 700;
 
-
 				if (!isCargo())
 				{
 					iMovePriority += 50;
 				}
+
 				if (canBombard(plot()))
 				{
 					iMovePriority += 100;
@@ -7075,11 +7087,15 @@ void CvUnitAI::AI_doInitialMovePriority()
 			{
 				if (canMove())
 				{
-					// Cargo units must move before their transport
+					// Cargo units must move before their transport.
 					if (AI_getUnitAIType() == UNITAI_SETTLER)
+					{
 						iMovePriority = MOVE_PRIORITY_MAX + 1;
+					}
 					else
+					{
 						iMovePriority = MOVE_PRIORITY_MAX;
+					}
 				}
 				else if (getYield() != NO_YIELD)
 				{
@@ -18740,8 +18756,8 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 			(!bIgnoreOwnUnitType || pLoopUnit->getUnitType() != getUnitType())
 			&&
 			(!bIgnoreBusyTransports || !pLoopGroup->hasCargo() ||
-				(pLoopGroup->AI_getMissionAIType() != MISSIONAI_ASSAULT &&
-					pLoopGroup->AI_getMissionAIType() != MISSIONAI_REINFORCE))
+				(pLoopGroup->AI_getMissionAIType() != MISSIONAI_ASSAULT /*&&
+					pLoopGroup->AI_getMissionAIType() != MISSIONAI_REINFORCE*/))
 			&&
 			(iMinUnitAI == -1 || pLoopGroup->countNumUnitAIType(eUnitAI) >= iMinUnitAI)
 			&&

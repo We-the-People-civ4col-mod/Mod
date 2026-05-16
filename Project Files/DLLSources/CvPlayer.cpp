@@ -10151,19 +10151,11 @@ void CvPlayer::deleteCity(int iID)
 CvUnit* CvPlayer::firstUnit(int *pIterIdx) const
 {
 	CvUnit* pUnit = firstUnitInternal(pIterIdx);
-
-	if (pUnit != NULL)
+	// Loop until a non-temp unit is found or we run out of units.
+	while (pUnit != NULL && isTempUnit(pUnit))
 	{
-		if (isTempUnit(pUnit))
-		{
-			pUnit = firstUnitInternal(pIterIdx);
-		}
-		else
-		{
-			return pUnit;
-		}
+		pUnit = nextUnitInternal(pIterIdx);
 	}
-
 	return pUnit;
 }
 
@@ -10190,22 +10182,14 @@ CvUnit* CvPlayer::firstUnitInternal(int* pIterIdx) const
 	return pUnit;
 }
 
-CvUnit* CvPlayer::nextUnit(int *pIterIdx) const
+CvUnit* CvPlayer::nextUnit(int* pIterIdx) const
 {
 	CvUnit* pUnit = nextUnitInternal(pIterIdx);
-
-	if (pUnit != NULL)
+	// Loop until a non-temp unit is found or we run out of units.
+	while (pUnit != NULL && isTempUnit(pUnit))
 	{
-		if (isTempUnit(pUnit))
-		{ 
-			pUnit = nextUnitInternal(pIterIdx);
-		}
-		else
-		{
-			return pUnit;
-		}
+		pUnit = nextUnitInternal(pIterIdx);
 	}
-
 	return pUnit;
 }
 
