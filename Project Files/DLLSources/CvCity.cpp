@@ -681,7 +681,6 @@ void CvCity::doTurn()
 			for (unsigned int i = 0; i < stuckUnits.size(); ++i)
 			{
 				removePopulationUnit(CREATE_ASSERT_DATA, stuckUnits[i], false, eDefaultProfession);
-				stuckUnits[i]->AI_setMovePriority(1);
 			}
 		}
 	}

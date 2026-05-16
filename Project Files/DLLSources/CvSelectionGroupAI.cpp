@@ -945,8 +945,8 @@ bool CvSelectionGroupAI::AI_launchAssault(CvPlot* pTargetCityPlot)
 //			{
 //			    bAction = true;
 //			}
-            int iPriority = 41;
-            pLoopUnit->AI_setMovePriority(iPriority);
+            //int iPriority = 41;
+            //pLoopUnit->AI_setMovePriority(iPriority);
 		}
     }
 //    for (units_it = units.begin(); units_it != units.end(); ++units_it)

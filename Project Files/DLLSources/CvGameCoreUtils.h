@@ -371,36 +371,7 @@ void getUnitAIString(CvWString& szString, UnitAITypes eUnitAI);
 CvWString getUnitAIStateString(UnitAIStates eUnitAIState);
 CvWString getStrategyString(StrategyTypes eStrategy);
 
-bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB);
 bool shouldUnitMove(const CvUnit* pUnit);
-
-
-class CvShouldMoveBefore
-{
-public:
-	CvShouldMoveBefore(PlayerTypes ePlayer) : m_ePlayer(ePlayer) {}
-
-	bool operator()(int iUnitIdA, int iUnitIdB) const
-	{
-		return shouldMoveBefore(getUnit(IDInfo(m_ePlayer, iUnitIdA)), getUnit(IDInfo(m_ePlayer, iUnitIdB)));
-	}
-private:
-	PlayerTypes m_ePlayer;
-};
-
-class CvShouldUnitMove
-{
-public:
-	CvShouldUnitMove(PlayerTypes ePlayer) : m_ePlayer(ePlayer) {}
-
-	bool operator()(int iUnitId) const
-	{
-		return shouldUnitMove(getUnit(IDInfo(m_ePlayer, iUnitId)));
-	}
-private:
-	PlayerTypes m_ePlayer;
-};
-
 
 /// one/two city plot radius
 int getDefineFlagsForDLL();

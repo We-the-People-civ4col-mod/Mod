@@ -198,7 +198,6 @@ void CvPlayerAI::AI_resetSavedData()
 	m_iUpgradeUnitsCachedGold = defaultUpgradeUnitsCachedGold;
 	m_iTurnLastProductionDirty = defaultTurnLastProductionDirty;
 	m_iTurnLastManagedPop = defaultTurnLastManagedPop;
-	m_iMoveQueuePasses = defaultMoveQueuePasses;
 	m_iLastWave = defaultLastWave;
 	m_iWaveIndex = defaultWaveIndex;
 
@@ -224,7 +223,7 @@ void CvPlayerAI::read(CvSavegameReader reader)
 
 	// read base class. It's always placed first
 	CvPlayer::read(reader);
-
+	int iDummy; // To support redundant save fields
 	// loop read all the variables
 	// As long as each variable has a PlayerSavegameVariables "header", order doesn't matter.
 	// Variables can be read in any order and any number of variables can be skipped.
@@ -275,7 +274,7 @@ void CvPlayerAI::read(CvSavegameReader reader)
 		case PlayerSaveAI_UpgradeUnitsCachedGold: reader.Read(m_iUpgradeUnitsCachedGold); break;
 		case PlayerSaveAI_TurnLastProductionDirty: reader.Read(m_iTurnLastProductionDirty); break;
 		case PlayerSaveAI_TurnLastManagedPop: reader.Read(m_iTurnLastManagedPop); break;
-		case PlayerSaveAI_MoveQueuePasses: reader.Read(m_iMoveQueuePasses); break;
+		case PlayerSaveAI_MoveQueuePasses: reader.Read(iDummy); break;
 		case PlayerSaveAI_LastWave: reader.Read(m_iLastWave); break;
 		case PlayerSaveAI_WaveIndex: reader.Read(m_iWaveIndex); break;
 
@@ -347,7 +346,7 @@ void CvPlayerAI::write(CvSavegameWriter writer)
 	writer.Write(PlayerSaveAI_UpgradeUnitsCachedGold, m_iUpgradeUnitsCachedGold, defaultUpgradeUnitsCachedGold);
 	writer.Write(PlayerSaveAI_TurnLastProductionDirty, m_iTurnLastProductionDirty, defaultTurnLastProductionDirty);
 	writer.Write(PlayerSaveAI_TurnLastManagedPop, m_iTurnLastManagedPop, defaultTurnLastManagedPop);
-	writer.Write(PlayerSaveAI_MoveQueuePasses, m_iMoveQueuePasses, defaultMoveQueuePasses);
+	//writer.Write(PlayerSaveAI_MoveQueuePasses, m_iMoveQueuePasses, defaultMoveQueuePasses);
 	writer.Write(PlayerSaveAI_LastWave, m_iLastWave, defaultLastWave);
 	writer.Write(PlayerSaveAI_WaveIndex, m_iWaveIndex, defaultWaveIndex);
 

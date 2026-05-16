@@ -1758,7 +1758,6 @@ void CvPlayer::killUnits()
 			pLoopUnit->finishMoves();
 			pLoopUnit->setYieldStored(0);
 			gDLL->getEventReporterIFace()->unitLost(pLoopUnit);
-			//AI().AI_removeUnitFromMoveQueue(pLoopUnit);
 			const bool bUnitDeleted = deleteUnit(getID());
 			FAssert(bUnitDeleted);
 			FAssert(checkPopulation());
@@ -10028,11 +10027,6 @@ void CvPlayer::removeGroupCycle(int iID)
 		if (pSelectionGroupNode->m_data == iID)
 		{
 			CvSelectionGroup const& kGroup = *getSelectionGroup(pSelectionGroupNode->m_data);
-			/*
-			CvUnit* const pHeadUnit = kGroup.getHeadUnit();
-			if (pHeadUnit != NULL)
-				pHeadUnit->AI_setMovePriority(0);
-			*/
 			pSelectionGroupNode = deleteGroupCycleNode(pSelectionGroupNode);
 			break;
 		}

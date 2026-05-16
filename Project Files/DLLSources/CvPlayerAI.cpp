@@ -781,7 +781,6 @@ void CvPlayerAI::AI_unitUpdate()
 							if (pRemoveUnit->canHaveProfession(eDefaultProfession, false))
 							{
 								pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pRemoveUnit, false, eDefaultProfession);
-								pRemoveUnit->AI_setMovePriority(1);
 							}
 						}
 					}
@@ -8083,7 +8082,6 @@ void CvPlayerAI::AI_doProfessions()
 											{
 												pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnit, false, eProfession);
 												pUnit->AI_setUnitAIType(eUnitAI);
-												pUnit->AI_setMovePriority(1);
 												bDone = true;
 
 												if (gPlayerLogLevel >= 1)
@@ -8179,7 +8177,6 @@ void CvPlayerAI::AI_doProfessions()
 					{
 						pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pBestUnit, false, eProfession);
 						pBestUnit->AI_setUnitAIType(eUnitAI);
-						pBestUnit->AI_setMovePriority(1);
 
 						if (gPlayerLogLevel >= 1)
 						{
@@ -8252,7 +8249,6 @@ void CvPlayerAI::AI_doProfessions()
 						{
 							pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pBestUnit, false, eProfession);
 							pBestUnit->AI_setUnitAIType(UNITAI_DEFENSIVE);
-							pBestUnit->AI_setMovePriority(1);
 							if (gPlayerLogLevel >= 1) logBBAI(" Player (%S)'s City (%S) emits military Unit %d (%S)",
 								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getID(), pBestUnit->getNameAndProfession().GetCString());
 						}
@@ -10497,28 +10493,6 @@ CvPlot* CvPlayerAI::AI_getImperialShipSpawnPlot()
 	return pBestPlot;
 }
 
-void CvPlayerAI::AI_addUnitToMoveQueue(CvUnit* pUnit)
-{
-	FAssert(pUnit == NULL || pUnit->getOwnerINLINE() == getID());
-}
-
-
-void CvPlayerAI::AI_removeUnitFromMoveQueue(CvUnit* pUnit)
-{
-	FAssert(pUnit == NULL || pUnit->getOwnerINLINE() == getID());
-}
-
-
-void CvPlayerAI::AI_verifyMoveQueue()
-{
-}
-
-
-CvUnit* CvPlayerAI::AI_getNextMoveUnit()
-{
-	return NULL;
-}
-
 int CvPlayerAI::AI_highestProfessionOutput(ProfessionTypes eProfession, const CvCity* pIgnoreCity)
 {
 	int iLoop;
@@ -11976,7 +11950,6 @@ void CvPlayerAI::AI_swapUnitJobs(CvUnit* pUnitA, CvUnit* pUnitB)
 	{
 		pCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnitB, false, eProfession_A);
 		pUnitB->AI_setUnitAIType(eUnitAI_A);
-		pUnitB->AI_setMovePriority(iMovePriorityA);
 	}
 
 	if (kProfessionB.isCitizen())
@@ -11986,7 +11959,6 @@ void CvPlayerAI::AI_swapUnitJobs(CvUnit* pUnitA, CvUnit* pUnitB)
 	else
 	{
 		pCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnitA, false, eProfession_B);
-		pUnitA->AI_setMovePriority(iMovePriorityB);
 		pUnitA->AI_setUnitAIType(eUnitAI_B);
 	}
 

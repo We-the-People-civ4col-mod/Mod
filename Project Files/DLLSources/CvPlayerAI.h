@@ -469,11 +469,6 @@ public:
 
 	CvPlot* AI_getImperialShipSpawnPlot();
 
-	void AI_addUnitToMoveQueue(CvUnit* pUnit);
-	void AI_removeUnitFromMoveQueue(CvUnit* pUnit);
-	void AI_verifyMoveQueue();
-	CvUnit* AI_getNextMoveUnit();
-
 	int AI_highestProfessionOutput(ProfessionTypes eProfession, const CvCity* pIgnoreCity = NULL);
 
 	CvCity* AI_bestCityForBuilding(BuildingTypes eBuilding);
@@ -737,8 +732,7 @@ protected:
 
 	int m_iTurnLastProductionDirty;
 	int m_iTurnLastManagedPop;
-	int m_iMoveQueuePasses;
-
+	
 	void AI_doTradeRoutes();
 	void AI_doCounter();
 	void AI_doMilitary();

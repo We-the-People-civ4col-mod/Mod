@@ -351,28 +351,6 @@ bool isBeforeUnitCycle(const CvUnit* pFirstUnit, const CvUnit* pSecondUnit)
 	return (pFirstUnit->getID() < pSecondUnit->getID());
 }
 
-bool shouldMoveBefore(const CvUnit* pUnitA, const CvUnit* pUnitB)
-{
-	// Apparently it's possible for one of the pointer to be NULL so I've added
-	// some extra protection
-	FAssert(pUnitA);
-	FAssert(pUnitB);
-
-	const int iMovePriorityA = (pUnitA != NULL) ? pUnitA->AI_getMovePriority() : 0;
-	const int iMovePriorityB = (pUnitB != NULL) ? pUnitB->AI_getMovePriority() : 0;
-
-	const int iDiff = iMovePriorityA - iMovePriorityB;
-	if (iDiff > 0)
-	{
-		return false;
-	}
-	else if (iDiff == 0)
-	{
-		return (pUnitA->getID() < pUnitB->getID());
-	}
-	return true;
-}
-
 bool shouldUnitMove(const CvUnit* pUnit)
 {
 	if (pUnit->isTempUnit())

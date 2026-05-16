@@ -108,7 +108,6 @@ void CvUnit::reloadEntity()
 	if (bSelected)
 	{
 		gDLL->getInterfaceIFace()->insertIntoSelectionList(this, false, false);
-		AI_setMovePriority(1);
 	}
 }
 
@@ -437,7 +436,6 @@ void CvUnit::convert(CvUnit* pUnit, bool bKill)
 		if (pUnit->IsSelected() && isOnMap() && getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
 			gDLL->getInterfaceIFace()->insertIntoSelectionList(this, true, false);
-			AI_setMovePriority(1);
 		}
 	}
 
@@ -570,7 +568,6 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 
 	gDLL->getEventReporterIFace()->unitLost(this);
 
-	//GET_PLAYER(getOwnerINLINE()).AI_removeUnitFromMoveQueue(this);
 	GET_PLAYER(getOwnerINLINE()).deleteUnit(getID());
 
 	FAssert(GET_PLAYER(eOwner).checkPopulation());
@@ -677,8 +674,6 @@ void CvUnit::removeFromMap()
 		{
 			setTransportUnit(NULL);
 		}
-
-		AI_setMovePriority(0);
 
 		FAssertMsg(getAttackPlot() == NULL, "The current unit instance's attack plot is expected to be NULL");
 		FAssertMsg(getCombatUnit() == NULL, "The current unit instance's combat unit is expected to be NULL");
@@ -10923,7 +10918,6 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 	else
 	{
 		m_coord.resetInvalid();
-		AI_setMovePriority(0);
 	}
 
 	FAssertMsg(plot() == pNewPlot, "plot is expected to equal pNewPlot");

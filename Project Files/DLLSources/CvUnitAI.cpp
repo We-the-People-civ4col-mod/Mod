@@ -383,31 +383,6 @@ bool CvUnitAI::AI_update()
 		}
 	}
 
-	/*
-	if (isDead() || isDelayedDeath() || getGroup() == NULL)
-	{
-		return true;
-	}
-	*/
-
-	/*
-	if (!isHuman())
-	{
-		if (AI_getMovePriority() == iOldMovePriority)
-		{
-			if (canMove() && (getGroup()->getActivityType() == ACTIVITY_MISSION || getGroup()->getActivityType() == ACTIVITY_AWAKE))
-			{
-				AI_setMovePriority(AI_getMovePriority() - (MOVE_PRIORITY_MAX / 10));
-			}
-			else
-			{
-				AI_setMovePriority(0);
-			}
-		}
-	}
-	*/
-
-
 	if (!isHuman())
 	{
 		if (AI_getMovePriority() == iOldMovePriority)
@@ -443,7 +418,7 @@ bool CvUnitAI::AI_update()
 			}
 		}
 	}
-
+	
 	if (m_bHasYielded)
 		return true;
 	else
@@ -582,8 +557,6 @@ bool CvUnitAI::AI_europeUpdate()
 		break;
 	}
 	
-	// TODO: what if we return false higher up!
-	AI_setMovePriority(0);
 	getGroup()->pushMission(MISSION_SKIP);
 	return false;
 }
@@ -1726,7 +1699,6 @@ void CvUnitAI::AI_settlerMove()
 					FAssert(getGroup()->getNumUnits() > 1);
 					FAssert(getGroup()->getHeadUnitAIType() == UNITAI_SETTLER);
 					logBBAI("CvUnitAI::AI_settlerMove() mergeIntoGroup");
-					AI_setMovePriority(1); // Yield may be needed since groups may have changed ?
 				}
 				else
 				{
@@ -1745,7 +1717,6 @@ void CvUnitAI::AI_settlerMove()
 							MISSIONAI_GROUP, NULL, pLoopGroup->getHeadUnit());
 					}
 				}
-				//AI_setMovePriority(0); // Yield may be needed since groups may have changed ?
 				return;
 			}
 		}
@@ -2382,7 +2353,6 @@ void CvUnitAI::AI_treasureMove()
 			GET_PLAYER(getOwnerINLINE()).getCivilizationDescription(), getID(),
 			getName().GetCString(), GET_PLAYER(getOwnerINLINE()).getName(),
 			getX_INLINE(), getY_INLINE());
-		AI_setMovePriority(0);
 		return;
 	}
 	// WTP, merge Treasures, of Raubwuerger - END
@@ -2472,17 +2442,13 @@ void CvUnitAI::AI_yieldUhMove()
 		}
 		else
 		{
-			AI_setMovePriority(0);
 			return;
 		}
 	}
 	if (AI_yieldDestination())
 	{
-		AI_setMovePriority(MOVE_PRIORITY_MIN);
 		return;
 	}
-
-	AI_setMovePriority(0);
 	return;
 }
 
@@ -6697,13 +6663,6 @@ bool CvUnitAI::AI_loadUnits(UnitAITypes eUnitAI, MissionAITypes eMissionAI)
 						pLoopUnit->loadUnit(this);
 						pLoopUnit->jumpTo(this->plot());
 						iCount++;
-
-						/*
-						if (!isHuman())
-						{
-							GET_PLAYER(getOwnerINLINE()).AI_removeUnitFromMoveQueue(pLoopUnit);
-						}
-						*/
 					}
 				}
 			}
@@ -7863,9 +7822,7 @@ bool CvUnitAI::AI_betterJob()
 	if (bJoined)
 	{
 		pCity->removePopulationUnit(CREATE_ASSERT_DATA, this, false, eOriginalProfession);
-		AI_setUnitAIType(eOriginalAI);
-		AI_setMovePriority(iOriginalMovePriority);
-
+		
 		if (gUnitLogLevel >= 1)
 		{
 			CvWString szTempString;
@@ -14173,7 +14130,6 @@ bool CvUnitAI::AI_joinCityBrave()
 		{
 			joinCity();
 			pCity->AI_setTargetSize(pCity->getPopulation());
-			AI_setMovePriority(0);
 			return true;
 		}
 	}
@@ -14309,8 +14265,6 @@ bool CvUnitAI::AI_joinCity(int iMaxPath, bool bRequireJoinable)
 				getGroup()->pushMission(MISSION_SKIP);
 				return true;
 			}
-
-			AI_setMovePriority(0);
 			plot()->getPlotCity()->addPopulationUnit(this, eBestProfession);
 			return true;
 		}
@@ -14462,7 +14416,6 @@ bool CvUnitAI::AI_joinOptimalCity()
 		{
 			if (canJoinCity(plot()))
 			{
-				AI_setMovePriority(0);
 				joinCity();
 				return true;
 			}
@@ -14528,8 +14481,6 @@ bool CvUnitAI::AI_joinCityDefender()
 	}
 
 	const bool bJoined = joinCity();
-	if (bJoined)
-		AI_setMovePriority(0);
 	return bJoined;
 }
 
@@ -14540,7 +14491,6 @@ bool CvUnitAI::AI_yieldDestination(int iMaxPath)
 	CvCity* pPlotCity = plot()->getPlotCity();
 	if (pPlotCity != NULL)
 	{
-		AI_setMovePriority(0);
 		unload();
 		return true;
 	}
