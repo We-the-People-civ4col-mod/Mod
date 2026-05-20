@@ -3146,7 +3146,7 @@
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iProfessionOutput>0</iProfessionOutput>
 			<iMaxWorkers>0</iMaxWorkers>
-			<iMinAreaSize>10</iMinAreaSize>
+			<iMinAreaSize>1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iCitiesPrereq>0</iCitiesPrereq>
 			<iTeamsPrereq>0</iTeamsPrereq>
@@ -3245,7 +3245,7 @@
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iProfessionOutput>3</iProfessionOutput>
 			<iMaxWorkers>2</iMaxWorkers>
-			<iMinAreaSize>10</iMinAreaSize>
+			<iMinAreaSize>1</iMinAreaSize>
 			<iConquestProb>100</iConquestProb>
 			<iCitiesPrereq>0</iCitiesPrereq>
 			<iTeamsPrereq>0</iTeamsPrereq>

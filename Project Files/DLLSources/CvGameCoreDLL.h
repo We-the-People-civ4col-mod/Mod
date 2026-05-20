@@ -17,6 +17,14 @@
 #pragma warning( 3: 4701 ) // local variable used without being initialized
 
 #define WIN32_LEAN_AND_MEAN
+// <advc.fract> Otherwise, classes in the PCH can't have members named "max" and "min".
+#ifndef NOMINMAX
+	#define NOMINMAX
+#endif // </advc.fract>
+/*	<advc.make> That's Windows 2000, which is what Civ 4 requires anyway
+	(according to the publisher's website). Enables some more macros;
+	who knows, maybe also more optimized code. */
+#define _WIN32_WINNT 0x0500
 #include <Windows.h>
 #include <MMSystem.h>
 #if defined _DEBUG && !defined USE_MEMMANAGER
@@ -31,6 +39,9 @@
 #include <hash_map>
 #include <set>
 #include <deque>
+#include <queue>
+#include <limits>
+#include <sstream>
 
 #define DllExport   __declspec( dllexport )
 
@@ -48,24 +59,10 @@ typedef unsigned long    dword;
 typedef unsigned __int64 qword;
 typedef wchar_t          wchar;
 
-#define MAX_CHAR                            (0x7f)
-#define MIN_CHAR                            (0x80)
-#define MAX_SHORT                           (0x7fff)
-#define MIN_SHORT                           (0x8000)
-#define MAX_INT                             (0x7fffffff)
-#define MIN_INT                             (0x80000000)
-#define MAX_UNSIGNED_CHAR                   (0xff)
-#define MIN_UNSIGNED_CHAR                   (0x00)
-#define MAX_UNSIGNED_SHORT                  (0xffff)
-#define MIN_UNSIGNED_SHORT                  (0x0000)
-#define MAX_UNSIGNED_INT                    (0xffffffff)
-#define MIN_UNSIGNED_INT                    (0x00000000)
-
 #define SAFE_DELETE(p)       { if(p) { delete (p);     (p)=NULL; } }
 #define SAFE_DELETE_ARRAY(p) { if(p) { delete[] (p);   (p)=NULL; } }
 #define SAFE_RELEASE(p)      { if(p) { (p)->Release(); (p)=NULL; } }
 
-#define SQR(x)      ( (x) * (x) )
 #define DEGTORAD(x) ( (float)( (x) * (M_PI / 180) ))
 #define LIMIT_RANGE(low, value, high) value = (value < low ? low : (value > high ? high : value));
 #define M_PI       3.14159265358979323846
@@ -93,6 +90,7 @@ __forceinline float MaxFloat() { return DWtoF(0x7f7fffff); }
 #define BOOST_STATIC_ASSERT(x)
 namespace python
 {
+	class list;
 	class tuple;
 }
 class PyObject;
@@ -124,16 +122,21 @@ namespace boost
 // this is usually not needed as it's the working directory
 std::string GetDLLPath(bool bLoadDLLPath = true);
 
-
 #include "NiColorA.h"
 #include "NiPoint2.h"
 #include "NiPoint3.h"
 #include "NiAnimationKey.h"
 
+// ScaledNum port from AdvCiv
+//   These are included before other DLL includes since they replace MIN macros and defs etc.
+#include "TypeChoice.h"
+#include "IntegerTraits.h" // </advc>
+
 #include "BitFunctions.h"
 
 #include "CvMacros.h"
 #include "FAssert.h"
+#include "ArithmeticUtils.h" // advc
 #include "CvGameCoreDLLDefNew.h"
 #include "FDataStreamBase.h"
 #include "FFreeListArrayBase.h"
@@ -181,6 +184,11 @@ std::string GetDLLPath(bool bLoadDLLPath = true);
 #include "CvCityAI.h"
 #include "CvSelectionGroupAI.h"
 #include "CvUnitAI.h"
+
+// ScaledNum port from AdvCiv
+#include "IntegerConversion.h" // advc
+#include "ScaledNum.h"
+//#include "ArithmeticTraits.h"
 
 #ifdef FINAL_RELEASE
 // Undefine OutputDebugString in final release builds

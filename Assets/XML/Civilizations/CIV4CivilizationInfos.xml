@@ -544,7 +544,7 @@
 					<FreeUnitProfession>PROFESSION_SCOUT</FreeUnitProfession>
 				</FreeUnitClass>
 				<FreeUnitClass>
-					<UnitClassType>UNIT_FISHERMAN</UnitClassType>
+					<UnitClassType>UNITCLASS_FISHERMAN</UnitClassType>
 					<FreeUnitProfession>PROFESSION_SETTLER</FreeUnitProfession>
 				</FreeUnitClass>
 			</FreeUnitClasses>

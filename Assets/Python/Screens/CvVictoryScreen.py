@@ -54,9 +54,9 @@ class CvVictoryScreen:
 		self.DX_LINK = 220
 		self.Y_LINK = 726
 		self.MARGIN = 20
-		
+
 		self.SETTINGS_PANEL_Y = 150
-		
+
 		self.SETTINGS_PANEL_WIDTH = 300
 		self.SETTINGS_PANEL_HEIGHT = 500
 
@@ -78,7 +78,7 @@ class CvVictoryScreen:
 		screen = self.getScreen()
 		if screen.isActive():
 			return
-			
+
 		screen = self.getScreen()
 		self.W_SCREEN = screen.getXResolution()
 		self.H_SCREEN = screen.getYResolution()
@@ -166,6 +166,40 @@ class CvVictoryScreen:
 			screen.hide(OnTabName + "Right")
 			screen.show("OffTab" + str(iTab))
 
+	def formatTraitsInline(self, eLeader, eCiv):
+		s = CyGameTextMgr().parseLeaderTraits(eLeader, eCiv, True, False).replace("[NEWLINE]", "\n")
+
+		civ_hdr	 = localText.getText("TXT_KEY_CIVILIZATION_TRAITS", ())
+		lead_hdr = localText.getText("TXT_KEY_LEADER_TRAITS", ())
+
+		# collect trait names in order, deduped
+		traits = []
+		cur = None
+		for raw in s.splitlines():
+			line = raw.strip()
+			if not line:
+				continue
+			if line.startswith(civ_hdr):
+				cur = "civ"
+				line = line[len(civ_hdr):].lstrip(":, ").strip()
+			elif line.startswith(lead_hdr):
+				cur = "lead"
+				line = line[len(lead_hdr):].lstrip(":, ").strip()
+			if line:
+				for t in line.split(","):
+					t = t.strip()
+					if t and t not in traits:
+						traits.append(t)
+
+		if not traits:
+			return u""
+
+		bullet = u"%c" % CyGame().getSymbolID(FontSymbols.BULLET_CHAR)
+
+		# indent every line uniformly to avoid caller-added prefix mismatch
+		lines = [bullet + u" " + t for t in traits]
+		return localText.changeTextColor(u"\t" + (u"\n\t").join(lines), ColorTypes.COLOR_YELLOW)
+
 	def showGameSettingsScreen(self):
 
 		self.deleteAllWidgets()
@@ -180,7 +214,7 @@ class CvVictoryScreen:
 		screen.enableSelect(szSettingsTable, False)
 
 		screen.appendListBoxStringNoUpdate(szSettingsTable, localText.getText("TXT_KEY_LEADER_CIV_DESCRIPTION", (activePlayer.getNameKey(), activePlayer.getCivilizationShortDescriptionKey())), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		screen.appendListBoxStringNoUpdate(szSettingsTable, u"     (" + CyGameTextMgr().parseLeaderTraits(activePlayer.getLeaderType(), activePlayer.getCivilizationType(), True, False) + ")", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+		screen.appendListBoxStringNoUpdate(szSettingsTable, self.formatTraitsInline(activePlayer.getLeaderType(), activePlayer.getCivilizationType()), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		screen.appendListBoxStringNoUpdate(szSettingsTable, " ", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		screen.appendListBoxStringNoUpdate(szSettingsTable, localText.getText("TXT_KEY_SETTINGS_DIFFICULTY", (gc.getHandicapInfo(activePlayer.getHandicapType()).getTextKey(), )), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		screen.appendListBoxStringNoUpdate(szSettingsTable, " ", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
@@ -234,16 +268,16 @@ class CvVictoryScreen:
 
 		for iLoopPlayer in range(gc.getMAX_CIV_PLAYERS()):
 			player = gc.getPlayer(iLoopPlayer)
-			if (player.isEverAlive() and iLoopPlayer != self.iActivePlayer and not player.isEurope() and (gc.getTeam(player.getTeam()).isHasMet(activePlayer.getTeam()) or gc.getGame().isDebugMode())):
+			if (player.isEverAlive() and iLoopPlayer != self.iActivePlayer and not player.isEurope()
+				and not gc.getGame().isChurchPlayer(iLoopPlayer) and not gc.getGame().isBarbarianPlayer(iLoopPlayer)
+				and (gc.getTeam(player.getTeam()).isHasMet(activePlayer.getTeam()) or gc.getGame().isDebugMode())):
 				screen.appendListBoxStringNoUpdate(szCivsTable, localText.getText("TXT_KEY_LEADER_CIV_DESCRIPTION", (player.getNameKey(), player.getCivilizationShortDescriptionKey())), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-				screen.appendListBoxStringNoUpdate(szCivsTable, u"     (" + CyGameTextMgr().parseLeaderTraits(player.getLeaderType(), player.getCivilizationType(), True, False) + ")", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+				screen.appendListBoxStringNoUpdate(szCivsTable, self.formatTraitsInline(player.getLeaderType(), player.getCivilizationType()), WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 				screen.appendListBoxStringNoUpdate(szCivsTable, " ", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-
-		screen.updateListBox(szCivsTable)
+				screen.updateListBox(szCivsTable)
 
 		self.drawTabs()
 		self.setTab(GAME_SETTINGS_SCREEN, True)
-
 
 	def showVictoryConditionScreen(self):
 
@@ -318,7 +352,7 @@ class CvVictoryScreen:
 					if (teamCulture > bestCulture):
 						bestCulture = teamCulture
 						iBestCultureTeam = iLoopTeam
-		
+
 		# Rebel Sentiment
 		ourRebel = activeTeam.getRebelPercent()
 
@@ -354,8 +388,8 @@ class CvVictoryScreen:
 				iNumRows = screen.getTableNumRows(szTable)
 				szVictoryType = u"<font=4b>" + victory.getDescription().upper() + u"</font>"
 				if ((victory.isEndScore() or victory.isEndEurope()) and (gc.getGame().getMaxTurns() > gc.getGame().getElapsedGameTurns())):
-					szVictoryType += "    (" + localText.getText("TXT_KEY_MISC_TURNS_LEFT", (gc.getGame().getMaxTurns() - gc.getGame().getElapsedGameTurns(), )) + ")"
-					
+					szVictoryType += "	   (" + localText.getText("TXT_KEY_MISC_TURNS_LEFT", (gc.getGame().getMaxTurns() - gc.getGame().getElapsedGameTurns(), )) + ")"
+
 				iVictoryTitleRow = iNumRows - 1
 				screen.setTableText(szTable, 0, iVictoryTitleRow, szVictoryType, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
@@ -388,9 +422,9 @@ class CvVictoryScreen:
 						screen.setTableText(szTable, 5, iRow, (u"%d" % bestScore), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 
 					bEntriesFound = True
-					
+
 				if (victory.isEndEurope()):
-				
+
 					bEntriesFound = True
 
 				if (victory.isConquest()):
@@ -409,7 +443,6 @@ class CvVictoryScreen:
 						screen.setTableText(szTable, 4, iRow, gc.getTeam(iBestPopTeam).getName() + ":", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 						screen.setTableText(szTable, 5, iRow, (u"%.2f%%" % (bestPop * 100 / totalPop)), "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY)
 					bEntriesFound = True
-
 
 				if (gc.getGame().getAdjustedLandPercent(iLoopVC) > 0):
 					iRow = screen.appendTableRow(szTable)
@@ -604,7 +637,7 @@ class CvVictoryScreen:
 					self.showVictoryConditionScreen()
 				elif(self.iScreen == GAME_SETTINGS_SCREEN):
 					self.showGameSettingsScreen()
-		
+
 				for x in range(2):
 					if (x == self.iScreen):
 						self.setTab(x, True)

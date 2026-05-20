@@ -892,6 +892,10 @@ class CvDiplomacy:
 		if DebugLogging:
 			print "CvDiplomacy.handleUserResponse: %s" %(eComment,)
 
+		# tell the DLL that we are in async mode (for OOS detection)
+		# this will automatically declare leaving async mode when the instance goes out of scope
+		DesyncDetectorInstance = gc.startDesyncMonitor()
+
 		diploScreen = CyDiplomacy()
 
 		# If we accept peace
@@ -948,7 +952,7 @@ class CvDiplomacy:
 			if (iRandomUsedShip != -1):
 				iPrice = gc.getPlayer(gc.getGame().getActivePlayer()).getUsedShipPrice(iRandomUsedShip)
 				if (gc.getPlayer(gc.getGame().getActivePlayer()).isKingWillingToTradeUsedShips() and gc.getPlayer(gc.getGame().getActivePlayer()).getGold() >= iPrice):
-					gc.getPlayer(gc.getGame().getActivePlayer()).resetCounterForUsedShipDeals()
+					diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_USED_SHIPS_COUNTER_RESET, -1, -1)
 					szName = gc.getUnitClassInfo(iRandomUsedShip).getTextKey()
 					self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_KING_OFFERS_USED_SHIP"), iPrice, iRandomUsedShip, szName)
 				else:
@@ -968,7 +972,7 @@ class CvDiplomacy:
 			if (iRandomImmigrant != -1):
 				iPrice = gc.getPlayer(gc.getGame().getActivePlayer()).getForeignImmigrantPrice(iRandomImmigrant, self.diploScreen.getWhoTradingWith())
 				if (gc.getPlayer(gc.getGame().getActivePlayer()).isForeignKingWillingToTradeImmigrants(self.diploScreen.getWhoTradingWith()) and gc.getPlayer(gc.getGame().getActivePlayer()).getGold() >= iPrice):
-					gc.getPlayer(self.diploScreen.getWhoTradingWith()).resetCounterForForeignImmigrantsDeals()
+					diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_ACQUIRE_FOREIGN_IMMIGRANTS_COUNTER_RESET, -1, -1)
 					szName = gc.getUnitClassInfo(iRandomImmigrant).getTextKey()
 					self.setAIComment(self.getCommentID("AI_DIPLOCOMMENT_FOREIGN_KING_OFFERS_IMMIGRANTS"), iPrice, iRandomImmigrant, szName)
 				else:

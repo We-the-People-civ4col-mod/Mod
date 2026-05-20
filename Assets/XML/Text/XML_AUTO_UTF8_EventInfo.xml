@@ -8,6 +8,12 @@
 		<Russian>Каждый заслуживает второго шанса. Пусть работает по своей профессии, а мы уладим его проблему с властями.</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_HIDE_BUTCHER</Tag>
+		<English>We could really do with any worker. But he should change jobs so that the bailiffs can't track him down so easily.</English>
+		<German>Wir können jeden Handwerker gut gebrauchen. Aber er sollte den Beruf wechseln, damit ihn die Büttel nicht so schnell aufspüren können.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_ADMIRAL_1_1</Tag>
 		<English>Ah, what the heck! He was at sea for a such a long time. He needs to enjoy his time onshore. Our storage is absolutely full. However, we need to keep an eye on him.</English>
 		<French>Ah, peu importe ! Il était en mer pendant si longtemps, qu'il profite de sa permission. Nos entrepôts en débordent. Toutrefois, nous allons le garder à l'oeil, il vaut mieux.</French>
@@ -145,6 +151,13 @@
 		<Russian>Мы знаем этого человека и он действительно достоин стать нашим духовным лидером. Скажите церковным властям, что мы оплатим все необходимые расходы, чтобы назначить его.</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_BISHOP_APPOINTMENT_HELP_1</Tag>
+		<English>[ICON_BULLET]One[COLOR_HIGHLIGHT_TEXT] Preacher [COLOR_REVERT]in this city will be appointed [COLOR_HIGHLIGHT_TEXT]Bishop[COLOR_REVERT].</English>
+		<French>[ICON_BULLET]One[COLOR_HIGHLIGHT_TEXT] Preacher [COLOR_REVERT]in this city will be appointed [COLOR_HIGHLIGHT_TEXT]Bishop[COLOR_REVERT].</French>
+		<German>[ICON_BULLET]Ein[COLOR_HIGHLIGHT_TEXT] Prediger [COLOR_REVERT]in dieser Stadt wird zum [COLOR_HIGHLIGHT_TEXT]Bischof [COLOR_REVERT]ernannt.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_BISHOP_APPOINTMENT_2</Tag>
 		<English>That is a lot of money for our colonies to pay. Although having a bishop will one day become necessary, we are too few right now to afford it.</English>
 		<French>Cela représente beaucoup d'argent à payer pour nos colonies. Bien qu'un évêque nous sera forcément un jour nécessaire, nous sommes encore peu nombreux et ne pouvons pas nous le permettre pour le moment.</French>
@@ -192,6 +205,12 @@
 		<French>Hallelujah, nous vivons dans la Patrie du Seigneur ! Soutenons notre prophète autant que nous le pouvons. Je vois déjà le désert fleurir.</French>
 		<German>Halleluja, wir leben wahrhaft in Gottes Reich auf Erden! Unterstützt diesen Propheten, so gut es geht. Ich sehe schon blühende Landschaften in der Wüste entstehen.</German>
 		<Russian>Аллилуйя, мы действительно живем в Божьей стране! Поддержите этого пророка, насколько это возможно. Я уже вижу, как пустыня цветет.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_BOOK_MORMON_HELP</Tag>
+		<English>[ICON_BULLET]A [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] will be built.</English>
+		<German>[ICON_BULLET]Eine [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] wird errichtet.</German>
+		<Russian/>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BRAVE_NATIVE_SLAVE_1</Tag>
@@ -388,6 +407,12 @@
 		<French>C'est malheureusement impossible, l'éclaireur doit poursuivre sa mission.</French>
 		<German>Das ist leider nicht möglich. Der Kundschafter hat einen Auftrag zu erledigen.</German>
 		<Russian>Это невозможно. Разведчик должен выполнить свой долг.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CHIEF_DAUGHTER_HELP</Tag>
+		<English>[ICON_BULLET]Some Indians will join you.</English>
+		<German>[ICON_BULLET]Einige Indianer schließen sich Euch an.</German>
+		<Russian/>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_COCA_PROBLEM_1</Tag>
@@ -696,10 +721,15 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EXPERIENCED_SAILORS_2</Tag>
-		<English>The crews of our ship are experienced enough. We don't need to hire such scum.</English>
-		<French>Les équipages de nos navires disposent de suffisamment d'expérience. Nous n'avons pas besoin d'embaucher ces brigands.</French>
-		<German>Die Mannschaften unserer Schiffe sind erfahren genug. Wir brauchen solchen Abschaum nicht auf unseren Schiffen.</German>
-		<Russian>Экипаж нашего корабля достаточно опытный. А это отребье может завербоваться хоть к пиратам.</Russian>
+		<English>Hire them – but not as sailors, rather as shipyard workers. They are to help clean the hull of the ship and remove the fouling.</English>
+		<German>Heuert sie an - aber nicht als Seeleute, sondern als Werftarbeiter. Sie sollen helfen bei dem Schiff den Rumpf zu säubern und den Bewuchs entfernen.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_EXPERIENCED_SAILORS_2_HELP</Tag>
+		<English>[ICON_BULLET]The ship gains the [COLOR_HIGHLIGHT_TEXT]promotion %s1[COLOR_REVERT].</English>
+		<German>[ICON_BULLET]Das Schiff erhält die [COLOR_HIGHLIGHT_TEXT]Beförderung %s1[COLOR_REVERT].</German>
+		<Russian/>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAMINE_1</Tag>
@@ -1250,7 +1280,7 @@
 		<Tag>TXT_KEY_EVENT_HORSETHIEF_1</Tag>
 		<English>Their threats be damned! Send a raiding party to recover the beasts and put the ruffians to justice!</English>
 		<French>Qu'ils aillent au diable ! Envoyez un raid pour récupérer les bêtes et remettre les bandits à la justice !</French>
-		<German>Wir geben nichts auf solche Drohungen! Entsenden eine Truppe um diese Verbrecher der Gerechtigkeit zuzuführen und die Pferde zurückzubringen!</German>
+		<German>Wir geben nichts auf solche Drohungen! Entsendet eine Truppe um diese Verbrecher der Gerechtigkeit zuzuführen und die Pferde zurückzubringen!</German>
 		<Russian>К чёрту их угрозы! Отправьте отряд, чтобы вернуть зверей и предать преступников правосудию!</Russian>
 	</TEXT>
 	<TEXT>
@@ -1566,6 +1596,30 @@
 		<Russian>Это невозможно. Этот индейский наемник срочно нужен в другом месте.</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_NATIVE_TRAINING_PROGRESS_1</Tag>
+		<English>A native mercenary has learned much of value in a native village and can still learn in two more villages.</English>
+		<German>Ein indianischer Söldner hat in einem Dorf viel Wissenswertes gelernt und kann noch in zwei weiteren Dörfern etwas lernen.</German>
+		<Russian>Индейский наёмник, получивший много ценной информации в одной деревне, может ещё многому научиться в двух других.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_NATIVE_TRAINING_PROGRESS_2</Tag>
+		<English>A native mercenary has once more learned from the natives and can still learn in one more village.</English>
+		<German>Ein indianischer Söldner hat erneut von den Einheimischen gelernt und kann noch in einem weiteren Dorf etwas lernen.</German>
+		<Russian>Индейский наёмник в очередной раз получил знания у местных жителей и может продолжить обучение ещё в одной деревне туземцев.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_NATIVE_TRAINING_PROGRESS_3</Tag>
+		<English>A native mercenary has learned all that the natives are willing to teach.</English>
+		<German>Ein indianischer Söldner hat alles gelernt, was die Einheimischen ihm beibringen können.</German>
+		<Russian>Индейский наёмник выучил всё, чему его могли научить местные жители.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_NATIVE_TRAINING_PROGRESS_VISITED_ONLY</Tag>
+		<English>A native mercenary was welcomed in this village, but gained no new knowledge.</English>
+		<German>Ein indianischer Söldner wurde in diesem Dorf freundlich empfangen, konnte jedoch nichts Neues lernen.</German>
+		<Russian>Индейского наёмника радушно приняли в этой деревне, но он не получил никаких новых знаний.</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_NO_SMOKING_1</Tag>
 		<English>Our ladies won't become arsonists. Ignore them.</English>
 		<French>Nos dames ne deviendront pas des incendiaires. Ignorez-les.</French>
@@ -1672,10 +1726,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_3</Tag>
-		<English>Gather the people together! Let it be proclaimed at every market that the wealth of the land is immeasurable and that anyone who ventures into its depths with desire and will can pick up gold with his bare hands! Far from our houses and churches lies earthly fortune, far, far behind the hills. Give a horse to every cutthroat whose greed has gone to his head, and do not let him out of your sight until he disappears over the hills. Then peace should return.</English>
-		<French>Rassemblez les gens ! Que l'on proclame sur tous les marchés que les richesses de la terre sont incommensurables, et que quiconque s'aventure dans ses profondeurs avec désir et volonté peut ramasser l'or à mains nues ! Surtout, loin de nos maisons et de nos églises se trouve la fortune terrestre, loin, très loin au-delà des collines. Donnez un cheval à chaque égorgeur dont la cupidité lui est montée à la tête, et ne le perdez pas de vue jusqu'à ce qu'il soit au-delà des collines. Ensuite, tout devrait redevenir calme.</French>
-		<German>Trommelt die Leute zusammen! Lasst auf jedem Markte verkünden, dass der Reichtum des Landes unermesslich sei und jeder, der mit Lust und Wille in seine Tiefen vorstöße, das Gold mit bloßen Händen aufklauben könne! Vor allem fern unserer Häuser und Kirchen liegt das irdische Glück, weit, weit hinter den Hügeln. Gebt darauf jedem Halsabschneider, dem die Gier zu Kopfe gestiegen ist, ein Pferd und lasst ihn nicht aus den Augen, bis er hinter den Hügeln ist. Dann sollte wieder Ruhe einkehren.</German>
-		<Russian>Соберите людей на городской площади. Попробуем убедить их, что богатства этой земли неисчислимы и что всякий, кто не испугается трудностей, сможет добыть золото! Земное счастье не здесь, оно ждёт их вдали от наших домов и церквей, за далёкими горами. И каждому безумцу, которому жадность вскружит голову, дайте лошадь и не выпускайте из виду, пока он не скроется за холмами. И тогда в колонии снова наступит покой.</Russian>
+		<English>Gather the townsmen together! Let it be proclaimed in every street that idle rabble shall no longer lurk about our harbour and warehouses. Let every fellow whose greed has overcome his wits be handed a pike and set to honest watch and ward. March them before the gates, place them under stern officers, and make them earn their bread as guards of the town. Then peace should return.</English>
+		<German>Trommelt die Bürger zusammen! Lasst in allen Gassen verkünden, dass müßiges Gesindel fortan nicht länger um Hafen und Lagerhäuser lungern soll. Jedem Burschen, dem die Gier den Verstand benommen hat, reiche man eine Pike und stelle ihn in ehrliche Wach- und Wehrdienste. Führt sie vor die Tore, setzt sie unter strenge Aufsicht und lasst sie ihr Brot fortan als Wächter der Stadt verdienen. Dann sollte wieder Ruhe einkehren.</German>
+		<Russian>Соберите горожан! Пусть на каждой улице провозгласят, что праздная толпа больше не будет слоняться вокруг гавани и складов. Каждому, чей разум затуманен жадностью, следует выдать пику и отправить нести службу в охране. Отправьте их к воротам, поставьте под строгий надзор офицеров и пусть отныне они зарабатывают себе на хлеб, будучи стражами города. Тогда спокойствие вновь воцарится в городе.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_4</Tag>
@@ -2057,6 +2110,12 @@
 		<Russian>Гоните их прочь! Мы не можем рисковать распространением болезней в наших колониях.</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_CITY_HEALTH_PENALTY</Tag>
+		<English>[ICON_BULLET]%s2 suffers [COLOR_NEGATIVE_TEXT]-%d1[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]Health[COLOR_REVERT].</English>
+		<German>[ICON_BULLET]In %s2 sinkt die [COLOR_HIGHLIGHT_TEXT]Gesundheit[COLOR_REVERT] um [COLOR_NEGATIVE_TEXT]-%d1[COLOR_REVERT].</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_SMUGGLERS_CAUGHT_1</Tag>
 		<English>Confiscate the ship and hand over these criminals to the officials in Europe.</English>
 		<French>Confisquez le navire et renvoyez les criminels pour qu'ils soient jugés en Europe.</French>
@@ -2065,9 +2124,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SMUGGLERS_CAUGHT_2</Tag>
-		<English>Offer them a deal. As long as they regularly give us a small share of the salt they buy, they shall not be bothered any more.</English>
-		<French>Proposez leur un marché. Tant qu'ils nous offrent une partie du sel qu'ils achètent, ils n'auront pas d'ennuis.</French>
-		<German>Bietet ihnen einen Handel an. Solange sie uns regelmässig einen kleinen Teil des Salzes geben, welches sie erwerben, sollen sie von uns unbehelligt bleiben.</German>
+		<English>Offer them a deal. As long as they regularly give us a small share of the goods they buy, they shall not be bothered any more.</English>
+		<French>Proposez leur un marché. Tant qu'ils nous cèdent une partie des marchandises qu'ils achètent, ils n'auront aucun problème.</French>
+		<German>Bietet ihnen einen Handel an. Solange sie uns regelmässig einen kleinen Teil ihrer Waren übergeben, welche sie erwerben, sollen sie von uns unbehelligt bleiben.</German>
 		<Russian>Предложите им сделку. Пока они регулярно отдают нам небольшую долю соли, которую они покупают, их никто не будет беспокоить.</Russian>
 	</TEXT>
 	<TEXT>
@@ -2087,6 +2146,12 @@
 		<Italian>Paga affinché il grano perduto sia sostituito.</Italian>
 		<Spanish>Que se pague la reposición de los cereales perdidos.</Spanish>
 		<Russian>Оплатите замену потерянного зерна.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_CITY_FOOD_PERCENT_LOST</Tag>
+		<English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] loses %d2%% of its stored Food (%d1).</English>
+		<German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] verliert %d2%% seiner eingelagerten Nahrung (%d1).</German>
+		<Russian/>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TAILWIND_1</Tag>
@@ -2574,6 +2639,12 @@
 		<Russian>Это не просто шалость, это кража! Пошлите солдат, чтобы поймать этих преступников. Они будут строго наказаны!</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_WINE_THEFT_2_HELP</Tag>
+		<English>[ICON_BULLET]%d1 %s2 appear near the settlement.</English>
+		<German>[ICON_BULLET]%d1 %s2 erscheinen nahe der Siedlung.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_WINTER_1</Tag>
 		<English>Send as many furs and coats to Europe as we can spare.</English>
 		<French>Envoyez autant de fourrures et de manteaux vers l'Europe que nous sommes en mesure d'offrir.</French>
@@ -2589,9 +2660,9 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WITCHTRIAL_2</Tag>
-		<English>A grave accusation that must be taken seriously! Impound them, and send for a learned expert from Europe to deliberate the matter.</English>
+		<English>A grave accusation that must be taken seriously! Impound them, and send for a cleric to deliberate the matter.</English>
 		<French>Une accusation aussi grave doit être prise sérieusement ! Gardez les à vue, et envoyez un expert d'Europe pour délibérer sur le sujet.</French>
-		<German>Eine schwere Anschuldigung, die aber ernst genommen werden muss. Nehmt sie vorläufig fest und schickt nach einem Experten aus Europa um den Sachverhalt zu klären.</German>
+		<German>Eine schwere Anschuldigung, die aber ernst genommen werden muss. Nehmt sie vorläufig fest und schickt nach einem Geistlichen um den Sachverhalt zu klären.</German>
 		<Russian>Серьезное обвинение, к которому следует отнестись серьезно! Арестуйте их и пошлите за образованным экспертом из Европы для обсуждения этого вопроса.</Russian>
 	</TEXT>
 	<TEXT>

@@ -24,6 +24,8 @@ A clear and concise description of what you expected to happen.
 **Screenshots and savegames**
 Savegames often helps a lot when reproducing issues as well as testing fixes, so provide one if a savegame can make it easier to reproduce the problem. Screenshots can be used as well if it helps explaining something on the screen, which isn't obvious with text.
 
+Do note that GitHub does not like the file extensions of savegames, so you need to zip the file first.
+
 **Personal modifications**
 Did you change anything in the mod or game, like changing xml data or using world builder?
 

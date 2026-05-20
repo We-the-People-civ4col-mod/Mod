@@ -7,6 +7,7 @@
 		<French>Afficher la colonie.</French>
 		<German>Siedlung anzeigen</German>
 		<Russian>Перейти к поселению</Russian>
+		<Hungarian>Ugrás a településhez</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_JUMP_TO_SETTLEMENT_CITY</Tag>
@@ -14,6 +15,7 @@
 		<French>Afficher [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</French>
 		<German>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] anzeigen</German>
 		<Russian>Перейти к [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Russian>
+		<Hungarian>Ugrás [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] településhez</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_HELP_POPUP</Tag>
@@ -21,5 +23,6 @@
 		<German>%s1 %s2[NEWLINE]Auf Lager: %d3[NEWLINE]Bedarf: %d4[NEWLINE]Preis: %d5</German>
 		<French>%s1 %s2[NEWLINE]En stock : %d3[NEWLINE]Demande : %d4[NEWLINE]Prix : %d5</French>
 		<Russian>%s1 %s2[NEWLINE]Хранится: %d3[NEWLINE]Требуется: %d4[NEWLINE]Цена: %d5</Russian>
+		<Hungarian>%s1 %s2[NEWLINE]Eltárolva: %d3[NEWLINE]Kereslet: %d4[NEWLINE]Ár: %d5</Hungarian>
 	</TEXT>
 </Civ4GameText>

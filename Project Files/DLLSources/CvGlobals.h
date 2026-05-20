@@ -450,7 +450,16 @@ public:
 
 	DllExport int getNumGameSpeedInfos();
 	std::vector<CvGameSpeedInfo*>& getGameSpeedInfo();
-	DllExport CvGameSpeedInfo& getGameSpeedInfo(GameSpeedTypes eGameSpeedNum);
+	DllExport CvGameSpeedInfo& getGameSpeedInfo(GameSpeedTypes eGameSpeedNum)
+	{
+		return getGameSpeedInfoInternal(eGameSpeedNum);
+	}
+	CvGameSpeedInfo& getGameSpeedInfoInternal(GameSpeedTypes eGameSpeedNum) const
+	{
+		FAssert(eGameSpeedNum > -1);
+		FAssert(eGameSpeedNum < CvGlobals::getInstance().getNumGameSpeedInfos());
+		return *(m_paGameSpeedInfo[eGameSpeedNum]);
+	}
 
 	int getNumAlarmInfos();
 	std::vector<CvAlarmInfo*>& getAlarmInfo();
@@ -503,7 +512,7 @@ public:
 	DllExport std::vector<CvProfessionInfo*>& getProfessionInfo();
 	CvProfessionInfo& getProfessionInfo(ProfessionTypes eProfessionNum);
 
-	DllExport int getNumCivicOptionInfos();
+	int getNumCivicOptionInfos();
 	std::vector<CvInfoBase*>& getCivicOptionInfo();
 	CvInfoBase& getCivicOptionInfo(CivicOptionTypes eCivicOptionNum);
 
@@ -985,6 +994,7 @@ public:
 	void setUseNewMovementSystem(bool bNewSetting);
 
 	bool isMainThread() const;
+	int scaleByGamespeed(int iValue) const;
 
 	ProfilerManager& getProfiler() { return m_ProfileManager; }
 

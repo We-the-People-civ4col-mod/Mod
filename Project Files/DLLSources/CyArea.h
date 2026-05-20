@@ -15,7 +15,7 @@ public:
 
 	CyArea();
 	CyArea(CvArea* pArea);					// Call from C++
-	CvArea* getArea() { return m_pArea;	}	// Call from C++
+	CvArea* getArea() { return (CvArea*)m_pArea;	}	// Call from C++
 	bool isNone() { return (m_pArea==NULL); }
 
 	int calculateTotalBestNatureYield();
@@ -53,7 +53,7 @@ public:
 
 protected:
 
-	CvArea* m_pArea;
+	const CvArea* const m_pArea;
 };
 
 #endif	// #ifndef CyArea

@@ -14,10 +14,17 @@
 #include "CvMapGenerator.h"
 #include "CvInitCore.h"
 #include "CyData.h"
+#include "DesyncMonitor.h"
 
-CyMap::CyMap() : m_pMap(NULL)
+CvMap* CyMap::pointer(AssertCallerData data)
 {
-	m_pMap = &GC.getMap();
+	FAssertWithCaller(data, CxDesyncMonitor::isAlwaysSync());
+	FAssertWithCaller(data, m_pMap != NULL);
+	return (CvMap*)m_pMap;
+}
+
+CyMap::CyMap() : m_pMap(&GC.getMap())
+{
 }
 
 CyMap::CyMap(CvMap* pMap) : m_pMap(pMap)
@@ -28,25 +35,25 @@ CyMap::CyMap(CvMap* pMap) : m_pMap(pMap)
 void CyMap::erasePlots()
 {
 	if (m_pMap)
-		m_pMap->erasePlots();
+		pointer(CREATE_ASSERT_DATA)->erasePlots();
 }
 
 void CyMap::setRevealedPlots(int /*TeamTypes*/ eTeam, bool bNewValue, bool bTerrainOnly)
 {
 	if (m_pMap)
-		m_pMap->setRevealedPlots((TeamTypes) eTeam, bNewValue, bTerrainOnly);
+		pointer(CREATE_ASSERT_DATA)->setRevealedPlots((TeamTypes) eTeam, bNewValue, bTerrainOnly);
 }
 
 void CyMap::setAllPlotTypes(int /*PlotTypes*/ ePlotType)
 {
 	if (m_pMap)
-		m_pMap->setAllPlotTypes((PlotTypes) ePlotType);
+		pointer(CREATE_ASSERT_DATA)->setAllPlotTypes((PlotTypes) ePlotType);
 }
 
 void CyMap::updateVisibility()
 {
 	if (m_pMap)
-		m_pMap->updateVisibility();
+		pointer(CREATE_ASSERT_DATA)->updateVisibility();
 }
 
 CyPlot* CyMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTimeout)
@@ -56,27 +63,27 @@ CyPlot* CyMap::syncRandPlot(int iFlags, int iArea, int iMinUnitDistance, int iTi
 
 CyCity* CyMap::findCity(int iX, int iY, int /*PlayerTypes*/ eOwner, int /*TeamTypes*/ eTeam, bool bSameArea, bool bCoastalOnly, int /*TeamTypes*/ eTeamAtWarWith, int /*DirectionTypes*/ eDirection, CyCity* pSkipCity)
 {
-	return m_pMap ? new CyCity(m_pMap->findCity(iX, iY, (PlayerTypes)eOwner, (TeamTypes)eTeam, bSameArea, bCoastalOnly, ((TeamTypes)eTeamAtWarWith), (DirectionTypes)eDirection, pSkipCity->getCity())) : NULL;
+	return m_pMap ? new CyCity(pointer(CREATE_ASSERT_DATA)->findCity(iX, iY, (PlayerTypes)eOwner, (TeamTypes)eTeam, bSameArea, bCoastalOnly, ((TeamTypes)eTeamAtWarWith), (DirectionTypes)eDirection, pSkipCity->getCity())) : NULL;
 }
 
 CySelectionGroup* CyMap::findSelectionGroup(int iX, int iY, int /*PlayerTypes*/ eOwner, bool bReadyToSelect)
 {
-	return m_pMap ? new CySelectionGroup(m_pMap->findSelectionGroup(iX, iY, (PlayerTypes)eOwner, bReadyToSelect)) : NULL;
+	return m_pMap ? new CySelectionGroup(pointer(CREATE_ASSERT_DATA)->findSelectionGroup(iX, iY, (PlayerTypes)eOwner, bReadyToSelect)) : NULL;
 }
 
 CyArea* CyMap::findBiggestArea(bool bWater)
 {
-	return m_pMap ? new CyArea(m_pMap->findBiggestArea(bWater)) : NULL;
+	return m_pMap ? new CyArea(pointer(CREATE_ASSERT_DATA)->findBiggestArea(bWater)) : NULL;
 }
 
 int CyMap::getMapFractalFlags()
 {
-	return m_pMap ? m_pMap->getMapFractalFlags() : -1;
+	return m_pMap ? pointer(CREATE_ASSERT_DATA)->getMapFractalFlags() : -1;
 }
 
 bool CyMap::findWater(CyPlot* pPlot, int iRange, bool bFreshWater)
 {
-	return m_pMap ? m_pMap->findWater(pPlot->getPlot(), iRange, bFreshWater) : false;
+	return m_pMap ? pointer(CREATE_ASSERT_DATA)->findWater(pPlot->getPlot(), iRange, bFreshWater) : false;
 }
 
 bool CyMap::isPlot(int iX, int iY)
@@ -142,7 +149,7 @@ int CyMap::getNextRiverID()
 void CyMap::incrementNextRiverID()
 {
 	if (m_pMap)
-		m_pMap->incrementNextRiverID();
+		pointer(CREATE_ASSERT_DATA)->incrementNextRiverID();
 }
 
 bool CyMap::isWrapX()
@@ -198,7 +205,7 @@ int CyMap::getNumBonusesOnLand(int /* BonusTypes */ eIndex)
 void CyMap::updateWaterPlotTerrainTypes()
 {
 	if (m_pMap)
-		m_pMap->updateWaterPlotTerrainTypes();
+		pointer(CREATE_ASSERT_DATA)->updateWaterPlotTerrainTypes();
 }
 
 CyPlot* CyMap::plotByIndex(int iIndex)
@@ -237,7 +244,7 @@ CyPlot* CyMap::sPlot(int iX, int iY)
 
 CyPlot* CyMap::pointToPlot(float fX, float fY)
 {
-	return m_pMap ? new CyPlot(m_pMap->pointToPlot(fX, fY)) : NULL;
+	return m_pMap ? new CyPlot(pointer(CREATE_ASSERT_DATA)->pointToPlot(fX, fY)) : NULL;
 }
 
 int CyMap::getIndexAfterLastArea()
@@ -257,25 +264,25 @@ int CyMap::getNumLandAreas()
 
 CyArea* CyMap::getArea(int iID)
 {
-	return m_pMap ? new CyArea(m_pMap->getArea(iID)) : NULL;
+	return m_pMap ? new CyArea(pointer(CREATE_ASSERT_DATA)->getArea(iID)) : NULL;
 }
 
 void CyMap::recalculateAreas()
 {
 	if (m_pMap)
-		m_pMap->recalculateAreas();
+		pointer(CREATE_ASSERT_DATA)->recalculateAreas();
 }
 
 void CyMap::resetPathDistance()
 {
 	if (m_pMap)
-		m_pMap->resetPathDistance();
+		pointer(CREATE_ASSERT_DATA)->resetPathDistance();
 }
 
 int CyMap::calculatePathDistance(CyPlot* pSource, CyPlot* pDest)
 {
 	if (m_pMap)
-		return m_pMap->calculatePathDistance(pSource->getPlot(), pDest->getPlot());
+		return pointer(CREATE_ASSERT_DATA)->calculatePathDistance(pSource->getPlot(), pDest->getPlot());
 	return -1;
 }
 
@@ -283,7 +290,7 @@ void CyMap::rebuild(int iGridW, int iGridH, int iTopLatitude, int iBottomLatitud
 {
 	if (m_pMap)
 	{
-		m_pMap->rebuild(iGridW, iGridH, iTopLatitude, iBottomLatitude, bWrapX, bWrapY, eWorldSize, eClimate, eSeaLevel, iNumCustomMapOptions, aeCustomMapOptions);
+		pointer(CREATE_ASSERT_DATA)->rebuild(iGridW, iGridH, iTopLatitude, iBottomLatitude, bWrapX, bWrapY, eWorldSize, eClimate, eSeaLevel, iNumCustomMapOptions, aeCustomMapOptions);
 	}
 }
 
@@ -305,7 +312,7 @@ void CyMap::updateFog()
 {
 	if (m_pMap)
 	{
-		m_pMap->updateFog();
+		pointer(CREATE_ASSERT_DATA)->updateFog();
 	}
 }
 
@@ -313,7 +320,7 @@ void CyMap::updateMinimapColor()
 {
 	if (m_pMap)
 	{
-		m_pMap->updateMinimapColor();
+		pointer(CREATE_ASSERT_DATA)->updateMinimapColor();
 	}
 }
 
@@ -321,7 +328,7 @@ void CyMap::updateMinOriginalStartDist(CyArea* pArea)
 {
 	if (m_pMap)
 	{
-		m_pMap->updateMinOriginalStartDist(pArea->getArea());
+		pointer(CREATE_ASSERT_DATA)->updateMinOriginalStartDist(pArea->getArea());
 	}
 }
 
@@ -330,7 +337,7 @@ void CyMap::calculateCanalAndChokePoints()
 {
 	if(m_pMap)
 	{
-		m_pMap->calculateCanalAndChokePoints();
+		pointer(CREATE_ASSERT_DATA)->calculateCanalAndChokePoints();
 	}
 }
 // Super Forts end
@@ -356,7 +363,7 @@ void CyMap::setCityCatchmentRadiusMapMaker(int iSetting)
 {
 	if (m_pMap)
 	{
-		m_pMap->setCityCatchmentRadius(iSetting + 1);
+		pointer(CREATE_ASSERT_DATA)->setCityCatchmentRadius(iSetting + 1);
 	}
 }
 
@@ -364,7 +371,7 @@ void CyMap::setCityCatchmentRadiusNoMapMaker(int iSetting)
 {
 	if (m_pMap)
 	{
-		m_pMap->setCityCatchmentRadius(iSetting);
+		pointer(CREATE_ASSERT_DATA)->setCityCatchmentRadius(iSetting);
 	}
 }
 

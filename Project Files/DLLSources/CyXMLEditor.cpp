@@ -1395,11 +1395,11 @@ void CyXMLEditor::setActiveFile(int iIndex)
 					tinyxml2::XMLElement* prevElement = loopElement->PreviousSiblingElement();
 					if (prevElement != NULL)
 					{
-						m_Info->InsertAfterChild(prevElement, m_pFileInfoRoot);
+						prevElement->Parent()->InsertAfterChild(prevElement, m_pFileInfoRoot);
 					}
 					else
 					{
-						m_Info->InsertFirstChild(m_pFileInfoRoot);
+						m_Info->FirstChildElement("root")->InsertFirstChild(m_pFileInfoRoot);
 					}
 					break;
 				}

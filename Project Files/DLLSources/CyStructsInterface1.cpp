@@ -93,6 +93,7 @@ void CyStructsPythonInterface1()
 		.def_readwrite("eOtherPlayer", &EventTriggeredData::m_eOtherPlayer)
 		.def_readwrite("iOtherPlayerCityId", &EventTriggeredData::m_iOtherPlayerCityId)
 		.def_readwrite("eBuilding", &EventTriggeredData::m_eBuilding)
+		.def("getRandomNumberForIndex", &EventTriggeredData::getRandomNumberForIndex, "get the random number for event at this index (range 0-999)")
 		;
 
 	python::class_<EventMessage>("EventMessage")

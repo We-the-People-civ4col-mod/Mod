@@ -852,6 +852,7 @@
 		<element type="iNativeTradeRate"/>
 		<element type="iPower"/>
 		<element type="iAsset"/>
+		<element type="YieldDemands" minOccurs="0"/>
 		<element type="YieldEquipedNums"/>
 		<element type="FreePromotions"/>
 		<element type="YieldsProduced"/>

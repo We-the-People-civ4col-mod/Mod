@@ -229,50 +229,6 @@ void TradeData::write(CvSavegameWriter& writer) const
 	writer.Write(m_bHidden);
 }
 
-int EventTriggeredData::getID() const
-{
-	return m_iId;
-}
-
-void EventTriggeredData::setID(int iID)
-{
-	m_iId = iID;
-}
-
-void EventTriggeredData::read(CvSavegameReader& reader)
-{
-	reader.Read(m_iId);
-	reader.Read(m_eTrigger);
-	reader.Read(m_iTurn);
-	reader.Read(m_ePlayer);
-	reader.Read(m_iCityId);
-	reader.Read(m_iPlotX);
-	reader.Read(m_iPlotY);
-	reader.Read(m_iUnitId);
-	reader.Read(m_eOtherPlayer);
-	reader.Read(m_iOtherPlayerCityId);
-	reader.Read(m_eBuilding);
-	reader.Read(m_szText);
-	reader.Read(m_szGlobalText);
-}
-
-void EventTriggeredData::write(CvSavegameWriter& writer) const
-{
-	writer.Write(m_iId);
-	writer.Write(m_eTrigger);
-	writer.Write(m_iTurn);
-	writer.Write(m_ePlayer);
-	writer.Write(m_iCityId);
-	writer.Write(m_iPlotX);
-	writer.Write(m_iPlotY);
-	writer.Write(m_iUnitId);
-	writer.Write(m_eOtherPlayer);
-	writer.Write(m_iOtherPlayerCityId);
-	writer.Write(m_eBuilding);
-	writer.Write(m_szText);
-	writer.Write(m_szGlobalText);
-}
-
 void PlotExtraYield::read(CvSavegameReader& reader)
 {
 	reader.Read(m_iX);

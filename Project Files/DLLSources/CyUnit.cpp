@@ -14,6 +14,15 @@
 #include "CySelectionGroup.h"
 #include "CvDLLInterfaceIFaceBase.h"
 #include "CvGlobals.h"
+#include "DesyncMonitor.h"
+
+CvUnit* CyUnit::pointer(AssertCallerData data)
+{
+	FAssertWithCaller(data, CxDesyncMonitor::isAlwaysSync());
+	FAssertWithCaller(data, m_pUnit != NULL);
+	return (CvUnit*)m_pUnit;
+}
+
 CyUnit::CyUnit() : m_pUnit(NULL)
 {
 }
@@ -23,17 +32,17 @@ CyUnit::CyUnit(CvUnit* pUnit) : m_pUnit(pUnit)
 void CyUnit::convert(CyUnit* pUnit)
 {
 	if (m_pUnit)
-		m_pUnit->convert(pUnit->getUnit(), true);
+		pointer(CREATE_ASSERT_DATA)->convert(pUnit->getUnit(), true);
 }
 void CyUnit::kill(bool bDelay)
 {
 	if (m_pUnit)
-		m_pUnit->kill(bDelay);
+		pointer(CREATE_ASSERT_DATA)->kill(bDelay);
 }
 void CyUnit::NotifyEntity(int /*MissionTypes*/ eEvent)
 {
 	if (m_pUnit)
-		m_pUnit->NotifyEntity((MissionTypes)eEvent);
+		pointer(CREATE_ASSERT_DATA)->NotifyEntity((MissionTypes)eEvent);
 }
 bool CyUnit::isActionRecommended(int i)
 {
@@ -50,7 +59,7 @@ bool CyUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 void CyUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 {
 	if (m_pUnit)
-		m_pUnit->doCommand(eCommand, iData1, iData2);
+		pointer(CREATE_ASSERT_DATA)->doCommand(eCommand, iData1, iData2);
 }
 CyPlot* CyUnit::getPathEndTurnPlot()
 {
@@ -85,9 +94,16 @@ bool CyUnit::canMoveThrough(CyPlot* pPlot)
 {
 	return m_pUnit ? m_pUnit->canMoveThrough(pPlot->getPlot()) : false;
 }
+void CyUnit::attack(CyPlot* pPlot, bool bQuick)
+{
+	if (m_pUnit && pPlot != NULL)
+	{
+		pointer(CREATE_ASSERT_DATA)->attack(pPlot->getPlot(), bQuick);
+	}
+}
 bool CyUnit::jumpToNearestValidPlot()
 {
-	return m_pUnit ? m_pUnit->jumpToNearestValidPlot() : false;
+	return m_pUnit ? pointer(CREATE_ASSERT_DATA)->jumpToNearestValidPlot() : false;
 }
 bool CyUnit::canAutomate(AutomateTypes eAutomate)
 {
@@ -112,7 +128,7 @@ bool CyUnit::canLoad(CyPlot* pPlot, bool bCheckCity)
 void CyUnit::load(bool bCheckCity)
 {
 	if (m_pUnit)
-		m_pUnit->load(bCheckCity);
+		pointer(CREATE_ASSERT_DATA)->load(bCheckCity);
 }
 bool CyUnit::canUnload()
 {
@@ -168,7 +184,7 @@ int CyUnit::canLead(CyPlot* pPlot, int iUnitId) const
 }
 bool CyUnit::lead(int iUnitId)
 {
-	return m_pUnit ? m_pUnit->lead(iUnitId) : false;
+	return m_pUnit ? pointer(CREATE_ASSERT_DATA)->lead(iUnitId) : false;
 }
 int CyUnit::canGiveExperience(CyPlot* pPlot) const
 {
@@ -176,7 +192,7 @@ int CyUnit::canGiveExperience(CyPlot* pPlot) const
 }
 bool CyUnit::giveExperience()
 {
-	return m_pUnit ? m_pUnit->giveExperience() : false;
+	return m_pUnit ? pointer(CREATE_ASSERT_DATA)->giveExperience() : false;
 }
 bool CyUnit::canPromote(int /*PromotionTypes*/ ePromotion, int iLeaderUnitId)
 {
@@ -185,7 +201,7 @@ bool CyUnit::canPromote(int /*PromotionTypes*/ ePromotion, int iLeaderUnitId)
 void CyUnit::promote(int /*PromotionTypes*/ ePromotion, int iLeaderUnitId)
 {
 	if (m_pUnit)
-		m_pUnit->promote((PromotionTypes) ePromotion, iLeaderUnitId);
+		pointer(CREATE_ASSERT_DATA)->promote((PromotionTypes) ePromotion, iLeaderUnitId);
 }
 bool CyUnit::canKingTransport()
 {
@@ -359,7 +375,7 @@ void CyUnit::setBaseCombatStr(int iCombat)
 {
 	if (m_pUnit)
 	{
-		m_pUnit->setBaseCombatStr(iCombat);
+		pointer(CREATE_ASSERT_DATA)->setBaseCombatStr(iCombat);
 	}
 }
 int CyUnit::baseCombatStr()
@@ -589,7 +605,7 @@ int CyUnit::getHotKeyNumber()
 void CyUnit::setHotKeyNumber(int iNewValue)
 {
 	if (m_pUnit)
-		m_pUnit->setHotKeyNumber(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setHotKeyNumber(iNewValue);
 }
 int CyUnit::getX()
 {
@@ -602,7 +618,7 @@ int CyUnit::getY()
 void CyUnit::setXY(int iX, int iY, bool bGroup, bool bUpdate, bool bShow)
 {
 	if (m_pUnit)
-		return m_pUnit->setXY(iX, iY, bGroup, bUpdate, bShow);
+		return pointer(CREATE_ASSERT_DATA)->setXY(iX, iY, bGroup, bUpdate, bShow);
 }
 bool CyUnit::at(int iX, int iY)
 {
@@ -631,12 +647,12 @@ int CyUnit::getDamage()
 void CyUnit::setDamage(int iNewValue)
 {
 	if (m_pUnit)
-		m_pUnit->setDamage(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setDamage(iNewValue);
 }
 void CyUnit::changeDamage(int iChange)
 {
 	if (m_pUnit)
-		m_pUnit->changeDamage(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeDamage(iChange);
 }
 int CyUnit::getMoves()
 {
@@ -645,17 +661,17 @@ int CyUnit::getMoves()
 void CyUnit::setMoves(int iNewValue)
 {
 	if (m_pUnit)
-		m_pUnit->setMoves(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setMoves(iNewValue);
 }
 void CyUnit::changeMoves(int iChange)
 {
 	if (m_pUnit)
-		m_pUnit->changeMoves(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeMoves(iChange);
 }
 void CyUnit::finishMoves()
 {
 	if (m_pUnit)
-		m_pUnit->finishMoves();
+		pointer(CREATE_ASSERT_DATA)->finishMoves();
 }
 int CyUnit::getExperience()
 {
@@ -664,12 +680,12 @@ int CyUnit::getExperience()
 void CyUnit::setExperience(int iNewValue, int iMax)
 {
 	if (m_pUnit)
-		m_pUnit->setExperience(iNewValue, iMax);
+		pointer(CREATE_ASSERT_DATA)->setExperience(iNewValue, iMax);
 }
 void CyUnit::changeExperience(int iChange, int iMax, bool bFromCombat, bool bInBorders, bool bUpdateGlobal)
 {
 	if (m_pUnit)
-		m_pUnit->changeExperience(iChange, iMax, bFromCombat, bInBorders, bUpdateGlobal);
+		pointer(CREATE_ASSERT_DATA)->changeExperience(iChange, iMax, bFromCombat, bInBorders, bUpdateGlobal);
 }
 int CyUnit::getLevel()
 {
@@ -678,12 +694,12 @@ int CyUnit::getLevel()
 void CyUnit::setLevel(int iNewLevel)
 {
 	if (m_pUnit)
-		m_pUnit->setLevel(iNewLevel);
+		pointer(CREATE_ASSERT_DATA)->setLevel(iNewLevel);
 }
 void CyUnit::changeLevel(int iChange)
 {
 	if (m_pUnit)
-		m_pUnit->changeLevel(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeLevel(iChange);
 }
 int CyUnit::getFacingDirection()
 {
@@ -695,12 +711,12 @@ int CyUnit::getFacingDirection()
 void CyUnit::rotateFacingDirectionClockwise()
 {
 	if(m_pUnit)
-		return m_pUnit->rotateFacingDirectionClockwise();
+		return pointer(CREATE_ASSERT_DATA)->rotateFacingDirectionClockwise();
 }
 void CyUnit::rotateFacingDirectionCounterClockwise()
 {
 	if(m_pUnit)
-		return m_pUnit->rotateFacingDirectionCounterClockwise();
+		return pointer(CREATE_ASSERT_DATA)->rotateFacingDirectionCounterClockwise();
 }
 int CyUnit::getCargo()
 {
@@ -744,7 +760,7 @@ bool CyUnit::isAlwaysHeal()
 }
 bool CyUnit::isHillsDoubleMove()
 {
-	return m_pUnit ? m_pUnit->isHillsDoubleMove(): false;
+	return m_pUnit ? m_pUnit->isHillOrPeakDoubleMove(): false;
 }
 int CyUnit::getExtraVisibilityRange()
 {
@@ -845,7 +861,7 @@ void CyUnit::setImmobileTimer(int iNewValue)
 {
 	if (m_pUnit)
 	{
-		m_pUnit->setImmobileTimer(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setImmobileTimer(iNewValue);
 	}
 }
 bool CyUnit::isMadeAttack()
@@ -855,7 +871,7 @@ bool CyUnit::isMadeAttack()
 void CyUnit::setMadeAttack(bool bNewValue)
 {
 	if (m_pUnit)
-		m_pUnit->setMadeAttack(bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setMadeAttack(bNewValue);
 }
 bool CyUnit::isPromotionReady()
 {
@@ -864,7 +880,7 @@ bool CyUnit::isPromotionReady()
 void CyUnit::setPromotionReady(bool bNewValue)
 {
 	if (m_pUnit)
-		m_pUnit->setPromotionReady(bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setPromotionReady(bNewValue);
 }
 bool CyUnit::isDelayedDeath()
 {
@@ -902,7 +918,7 @@ int /*UnitTypes*/ CyUnit::getLeaderUnitType()
 void CyUnit::setLeaderUnitType(int leaderUnitType)
 {
 	if (m_pUnit)
-		m_pUnit->setLeaderUnitType((UnitTypes) leaderUnitType);
+		pointer(CREATE_ASSERT_DATA)->setLeaderUnitType((UnitTypes) leaderUnitType);
 }
 CyUnit* CyUnit::getTransportUnit() const
 {
@@ -943,7 +959,7 @@ std::wstring CyUnit::getNameOrProfessionKey()
 void CyUnit::setName(std::wstring szNewValue)
 {
 	if (m_pUnit)
-		m_pUnit->setName(szNewValue);
+		pointer(CREATE_ASSERT_DATA)->setName(szNewValue);
 }
 std::string CyUnit::getScriptData() const
 {
@@ -952,7 +968,7 @@ std::string CyUnit::getScriptData() const
 void CyUnit::setScriptData(std::string szNewValue)
 {
 	if (m_pUnit)
-		m_pUnit->setScriptData(szNewValue.c_str());
+		pointer(CREATE_ASSERT_DATA)->setScriptData(szNewValue.c_str());
 }
 bool CyUnit:: isTerrainDoubleMove(int /*TerrainTypes*/ eIndex)
 {
@@ -1005,12 +1021,12 @@ bool CyUnit::isHasRealPromotion(int /*PromotionTypes*/eIndex)
 void CyUnit::changeFreePromotionCount(int /*PromotionTypes*/ eIndex, int iChange)
 {
 	if (m_pUnit)
-		m_pUnit->changeFreePromotionCount((PromotionTypes) eIndex, iChange);
+		pointer(CREATE_ASSERT_DATA)->changeFreePromotionCount((PromotionTypes) eIndex, iChange);
 }
 void CyUnit::setHasRealPromotion(int /*PromotionTypes*/ eIndex, bool bValue)
 {
 	if (m_pUnit)
-		m_pUnit->setHasRealPromotion((PromotionTypes) eIndex, bValue);
+		pointer(CREATE_ASSERT_DATA)->setHasRealPromotion((PromotionTypes) eIndex, bValue);
 }
 int CyUnit::getProfession()
 {
@@ -1019,7 +1035,7 @@ int CyUnit::getProfession()
 void CyUnit::setProfession(int /*ProfessionTypes*/eProfession)
 {
 	if (m_pUnit)
-		m_pUnit->setProfession((ProfessionTypes) eProfession, true);
+		pointer(CREATE_ASSERT_DATA)->setProfession((ProfessionTypes) eProfession, true);
 }
 bool CyUnit::canHaveProfession(int /*ProfessionTypes*/eProfession)
 {
@@ -1033,7 +1049,7 @@ void CyUnit::setUnitAIType(int /*UnitAITypes*/ iNewValue)
 {
 	if (m_pUnit)
 	{
-		m_pUnit->AI_setUnitAIType((UnitAITypes)iNewValue);
+		pointer(CREATE_ASSERT_DATA)->AI_setUnitAIType((UnitAITypes)iNewValue);
 	}
 }
 int CyUnit::getYieldStored()
@@ -1044,7 +1060,7 @@ void CyUnit::setYieldStored(int iAmount)
 {
 	if (m_pUnit)
 	{
-		m_pUnit->setYieldStored(iAmount);
+		pointer(CREATE_ASSERT_DATA)->setYieldStored(iAmount);
 	}
 }
 int /*YieldTypes*/ CyUnit::getYield()
@@ -1067,7 +1083,7 @@ int CyUnit::getUnitTravelTimer() const
 void CyUnit::setUnitTravelTimer(int iValue)
 {
 	if (m_pUnit)
-		m_pUnit->setUnitTravelTimer(iValue);
+		pointer(CREATE_ASSERT_DATA)->setUnitTravelTimer(iValue);
 }
 int /*UnitTravelStates*/ CyUnit::getUnitTravelState()
 {
@@ -1076,7 +1092,7 @@ int /*UnitTravelStates*/ CyUnit::getUnitTravelState()
 void CyUnit::setUnitTravelState(int /*UnitTravelStates*/ eState, bool bShowEuropeScreen)
 {
 	if (m_pUnit)
-		m_pUnit->setUnitTravelState((UnitTravelStates) eState, bShowEuropeScreen);
+		pointer(CREATE_ASSERT_DATA)->setUnitTravelState((UnitTravelStates) eState, bShowEuropeScreen);
 }
 bool CyUnit::canSailEurope(int iEurope)
 {
@@ -1096,7 +1112,7 @@ bool CyUnit::isBarbarian()
 void CyUnit::setBarbarian(bool bNewValue)
 {
 	if (m_pUnit)
-		m_pUnit->setBarbarian(bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setBarbarian(bNewValue);
 }
 // < JAnimals Mod End >
 // TAC - Trade Routes Advisor - koma13 - START
@@ -1175,7 +1191,7 @@ void CyUnit::centerCamera()
 {
 	if (m_pUnit)
 	{
-		gDLL->getInterfaceIFace()->centerCamera(m_pUnit);
+		gDLL->getInterfaceIFace()->centerCamera((CvUnit*)m_pUnit);
 	}
 }
 const CvArtInfoUnit* CyUnit::getArtInfo(int i) const

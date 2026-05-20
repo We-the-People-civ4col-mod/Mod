@@ -2108,7 +2108,7 @@ int CvTeamAI::AI_plotDefense(CvPlot const& kPlot, bool bIgnoreBuilding,
 	/*  We could also be attacked in p by a second war enemy that doesn't own the
 	plot; impossible to predict. An attack by the plot owner is far more likely
 	though. */
-	if (kPlot.getOwner() != NO_PLAYER && GET_TEAM(getID()).isAtWar(kPlot.getTeam()))
+	if (kPlot.getOwnerINLINE() != NO_PLAYER && GET_TEAM(getID()).isAtWar(kPlot.getTeam()))
 		eAttacker = kPlot.getTeam();
 	/* WTP: Not supported yet
 	return kPlot.defenseModifier(getID(), bIgnoreBuilding, eAttacker,

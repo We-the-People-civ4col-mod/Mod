@@ -11,6 +11,31 @@
 
 class CvEventTriggerInfo;
 
+#include <bitset>
+
+struct UnitImpassables
+{
+	int iCount;                                // Count of impassable terrains/features
+	#define UNIT_IMPASSABLES_BITS 80		   // Max bitset size
+	std::bitset<UNIT_IMPASSABLES_BITS> iFlags; // Bitset for impassable types
+
+	UnitImpassables()
+		: iCount(0), iFlags(0)
+	{
+	}
+
+	// Equality operator
+	bool operator==(const UnitImpassables& other) const
+	{
+		return (iCount == other.iCount && iFlags == other.iFlags);
+	}
+
+	// Inequality operator
+	bool operator!=(const UnitImpassables& other) const
+	{
+		return !(*this == other);
+	}
+};
 class CvPlayerAI : public CvPlayerCivEffect
 {
 
@@ -62,7 +87,7 @@ public:
 
 	void AI_conquerCity(CvCity* pCity);
 
-	bool AI_acceptUnit(CvUnit* pUnit);
+	bool AI_acceptUnit(const CvUnit* pUnit);
 	bool AI_captureUnit(UnitTypes eUnit, CvPlot* pPlot);
 
 	DomainTypes AI_unitAIDomainType(UnitAITypes eUnitAI) const;
@@ -138,7 +163,7 @@ public:
 
 	int AI_calculateDamages(TeamTypes eTeam);
 
-	int AI_unitImpassableCount(UnitTypes eUnit);
+	UnitImpassables AI_unitImpassables(const CvUnit& kUnit) const;
 	int AI_unitEconomicValue(UnitTypes eUnit, UnitAITypes* peUnitAI, CvCity* pCity);
 	int AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea);
 	int AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea) const;
@@ -163,11 +188,19 @@ public:
 	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
 	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
 	int AI_plotTargetMissionAIs(CvPlot* pPlot, MissionAITypes* aeMissionAI, int iMissionAICount, int& iClosestTargetRange, CvSelectionGroup* pSkipSelectionGroup = NULL, int iRange = 0);
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI);	// TAC - AI Attack City - koma13
+	// Note: Pure virtual from CvPlayer.h and must be preserved as non-const
+	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL)
+	{
+		return AI_unitTargetMissionAIs_(pUnit, eMissionAI, pSkipSelectionGroup);
+	}
+	int AI_unitTargetMissionAIs_(const CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
 
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL);
+	int AI_unitTargetMissionAIs(const CvUnit* pUnit, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup, UnitAITypes eUnitAI) const;	// TAC - AI Attack City - koma13
+	int AI_unitTargetMissionAIs(const CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL) const;
+	int AI_unitTargetMissionAIs(const CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const;	// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
+	int AI_unitTargetMissionAIs(const CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns, UnitAITypes eUnitAI) const;	// TAC - AI Attack City - koma13
+
 	int AI_enemyTargetMissionAIs(MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_enemyTargetMissionAIs(MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup = NULL);
 	int AI_wakePlotTargetMissionAIs(CvPlot* pPlot, MissionAITypes eMissionAI, CvSelectionGroup* pSkipSelectionGroup = NULL);
@@ -175,10 +208,7 @@ public:
 	int AI_cargoSpaceToEurope(CvSelectionGroup* pSkipSelectionGroup = NULL);	// TAC - AI Improved Navel AI - koma13
 
 	int AI_cityTargetUnitsByPath(CvCity* pCity, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const;	// TAC - AI Attack City - koma13, jdog5000(BBAI)
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns) const;	// TAC - AI Assault Sea - koma13, jdog5000(BBAI)
-
-	int AI_unitTargetMissionAIs(CvUnit* pUnit, MissionAITypes* aeMissionAI, int iMissionAICount, CvSelectionGroup* pSkipSelectionGroup, int iMaxPathTurns, UnitAITypes eUnitAI) const;	// TAC - AI Attack City - koma13
-
+	
 	CivicTypes AI_bestCivic(CivicOptionTypes eCivicOption);
 	int AI_civicValue(CivicTypes eCivic);
 
@@ -302,7 +332,7 @@ public:
 
 	// TAC - AI More food - koma13 - START
 	//int AI_yieldValue(YieldTypes eYield, bool bProduce = true, int iAmount = 1);
-	int AI_yieldValue(YieldTypes eYield, bool bProduce = true, int iAmount = 1, bool bFood = false);
+	int AI_yieldValue(YieldTypes eYield, bool bProduce = true, int iAmount = 1, bool bFood = false) const;
 	// TAC - AI More food - koma13 - END
 
 	void AI_updateYieldValues();
@@ -465,6 +495,7 @@ public:
 	int AI_getColonialMilitaryModifier() const;
 	bool AI_shouldHurryUnit() const;
 	int AI_estimateUnemploymentCount() const;
+	int AI_firstCityFoundValue(const CvPlot& cityPlot);
 
 protected:
 

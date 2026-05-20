@@ -61,6 +61,7 @@ const char* getSavedEnumNameCityAi(SavegameVariableTypes eType)
 {
 	switch (eType)
 	{
+	case Save_END: return "END";
 	case CitySaveAi_GiftTimer: return "CitySaveAi_GiftTimer";
 	case CitySaveAi_TradeTimer: return "CitySaveAi_TradeTimer";
 	case CitySaveAi_DesiredYield: return "CitySaveAi_DesiredYield";

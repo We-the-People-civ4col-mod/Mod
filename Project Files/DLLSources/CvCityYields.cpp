@@ -2,7 +2,7 @@
 
 #include "CvCityYields.h"
 
-CvCityYields::CvCityYields(CvCity& city)
+CvCityYields::CvCityYields(const CvCity& city)
 	: m_city(city)
 {
 	// WARNING: m_city can't be used in the constructor as the CvCity constructor is still running

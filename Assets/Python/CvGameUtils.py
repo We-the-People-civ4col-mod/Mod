@@ -152,6 +152,7 @@ class CvGameUtils:
 		ePlayer = argsList[0]
 		return False
 
+# Unused, replaced by a DLL version
 	def calculateScore(self,argsList):
 		ePlayer = argsList[0]
 		bFinal = argsList[1]
@@ -289,4 +290,3 @@ class CvGameUtils:
 			iExperienceNeeded += (iExperienceNeeded * iModifier + 99) / 100   # ROUND UP
 
 		return iExperienceNeeded
-		

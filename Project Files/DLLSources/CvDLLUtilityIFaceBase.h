@@ -112,9 +112,9 @@ public:
 	virtual void sendPlayerOption(PlayerOptionTypes eOption, bool bValue) = 0;
 	virtual void sendExtendedGame() = 0;
 	virtual void sendJoinGroup(int iUnitID, int iHeadID) = 0;
-	virtual void sendPushMission(int iUnitID, MissionTypes eMission, int iData1, int iData2, int iFlags, bool bShift) = 0;
+	virtual void sendPushMission(int iUnitID, MissionTypes eMission, int iData1, int iData2, int iFlags, bool bShift) = 0; // calls the selection group the unit is in
 	virtual void sendAutoMission(int iUnitID) = 0;
-	virtual void sendDoCommand(int iUnitID, CommandTypes eCommand, int iData1, int iData2, bool bAlt) = 0;
+	virtual void sendDoCommand(int iUnitID, CommandTypes eCommand, int iData1, int iData2, bool bAlt) = 0; // calls the unit itself
 	virtual void sendPushOrder(int iCityID, OrderTypes eOrder, int iData, bool bAlt, bool bShift, bool bCtrl) = 0;
 	virtual void sendPopOrder(int iCity, int iNum) = 0;
 	virtual void sendDoTask(int iCity, TaskTypes eTask, int iData1, int iData2, bool bOption, bool bAlt, bool bShift, bool bCtrl) = 0;

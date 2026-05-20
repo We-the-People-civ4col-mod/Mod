@@ -18,10 +18,10 @@ class TradeCountAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 
 	def getString(self, iRow, iYield, bCompact):
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
-		
+
 		iBought = 0
 		iSold = 0
-		
+
 		if iRow == 0:
 			iBought = player.getYieldBoughtTotal(TradeLocationTypes.TRADE_LOCATION_EUROPE, iYield)
 			iSold = player.getYieldSoldTotal(TradeLocationTypes.TRADE_LOCATION_EUROPE, iYield)
@@ -31,23 +31,23 @@ class TradeCountAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 		elif iRow == 2:
 			iBought = player.getYieldBoughtTotal(TradeLocationTypes.TRADE_LOCATION_PORT_ROYAL, iYield)
 			iSold = player.getYieldSoldTotal(TradeLocationTypes.TRADE_LOCATION_PORT_ROYAL, iYield)
-			
+
 		if bCompact:
 			return unicode(iSold) + "/" + unicode(iBought)
 		else:
 			return localText.getText("TXT_KEY_DOMESTIC_ADVISOR_TRADE_STATE_HELP", (iSold, iBought))
 
 	def drawColonyCell(self, iRow, pCity, iYield, pYieldInfo):
-		output = self.getString(iRow, iYield, true)
-		
+		output = self.getString(iRow, iYield, True)
+
 		self.tableManager.addText(output, iRow, iYield, WidgetTypes.WIDGET_HELP_DOMESTIC_TRADED_COUNT)
 
 	def getWidgetHelp(self, argsList):
 		iScreen, eWidgetType, iData1, iData2, bOption = argsList
-		
+
 		if eWidgetType == WidgetTypes.WIDGET_HELP_DOMESTIC_TRADED_COUNT:
-			return self.getString(iData1, iData2, false)
-		
+			return self.getString(iData1, iData2, False)
+
 		return None
 
 	def getRowName(self, iRow):
@@ -61,7 +61,7 @@ class TradeCountAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 	def drawEachColonyLine(self):
 		self.tableManager.clearRows()
 		iNumRows = 3
-		
+
 		self.tableManager.setNumRows(iNumRows)
 		for iRow in range(iNumRows):
 			self.tableManager.skipCell()

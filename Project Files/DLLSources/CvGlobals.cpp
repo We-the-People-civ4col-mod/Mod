@@ -1920,13 +1920,6 @@ std::vector<CvGameSpeedInfo*>& CvGlobals::getGameSpeedInfo()	// Do NOT export ou
 	return m_paGameSpeedInfo;
 }
 
-CvGameSpeedInfo& CvGlobals::getGameSpeedInfo(GameSpeedTypes eGameSpeedNum)
-{
-	FAssert(eGameSpeedNum > -1);
-	FAssert(eGameSpeedNum < GC.getNumGameSpeedInfos());
-	return *(m_paGameSpeedInfo[eGameSpeedNum]);
-}
-
 int CvGlobals::getNumAlarmInfos()
 {
 	return (int)m_paAlarmInfo.size();
@@ -3145,4 +3138,10 @@ int CvGlobals::getSymbolID(FontSymbols eSymbol) const
 bool CvGlobals::isMainThread() const
 {
 	return m_iThreadID == GetCurrentThreadId();
+}
+
+// Scales iValue by the appropriate game speed modifier
+int CvGlobals::scaleByGamespeed(int iValue) const
+{
+	return (iValue * getGameSpeedInfoInternal(getGameConst().getGameSpeedType()).getTrainPercent()) / 100;
 }

@@ -42,11 +42,13 @@ public:
 	DllExport void shuffleSequence(std::vector<int>& aNumbers, char const* pszLog);
 
 	void reseed(unsigned long ulNewValue);
-	unsigned long getSeed();
+	unsigned long getSeed() const;
 
 	unsigned long peek() const;
 
 	void setSyncedStatus(bool bNewSetting);
+
+	bool hasContent() const { return true; } // for EnumMap savegame compatibility
 
 	// for serialization
 	void read(FDataStreamBase* pStream);

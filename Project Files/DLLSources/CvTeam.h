@@ -5,8 +5,6 @@
 #ifndef CIV4_TEAM_H
 #define CIV4_TEAM_H
 
-//#include "CvEnums.h"
-
 class CvArea;
 
 class CvTeam
@@ -25,6 +23,21 @@ public:
 protected:
 
 	void uninit();
+
+	// <kekm.26>
+	static std::queue<TeamTypes> attacking_queue;
+	static std::queue<TeamTypes> defending_queue;
+	static std::queue<bool> newdiplo_queue;
+	static std::queue<WarPlanTypes> warplan_queue;
+	static bool bTriggeringWars;
+	// </kekm.26>
+
+	// <kekm.26>
+	static void queueWar(TeamTypes eAttackingTeam, TeamTypes eDefendingTeam,
+	bool bNewDiplo, WarPlanTypes eWarPlan, bool bPrimaryDOW = true);
+	static void triggerWars();
+	// </kekm.26>
+	void triggerDefensivePacts(TeamTypes eTarget, bool bNewDiplo); // advc
 
 public:
 	void addTeam(TeamTypes eTeam);

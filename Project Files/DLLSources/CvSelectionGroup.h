@@ -44,43 +44,43 @@ public:
 	bool doDelayedDeath();
 
 	void playActionSound();
-	DllExport void pushMission(MissionTypes eMission, int iData1 = -1, int iData2 = -1, int iFlags = 0, bool bAppend = false, bool bManual = false, MissionAITypes eMissionAI = NO_MISSIONAI, CvPlot* pMissionAIPlot = NULL, CvUnit* pMissionAIUnit = NULL);
+	void pushMission(MissionTypes eMission, int iData1 = -1, int iData2 = -1, int iFlags = 0, bool bAppend = false, bool bManual = false, MissionAITypes eMissionAI = NO_MISSIONAI, CvPlot* pMissionAIPlot = NULL, CvUnit* pMissionAIUnit = NULL);
 	void popMission();
 	DllExport void autoMission();
 	void updateMission();
-	DllExport CvPlot* lastMissionPlot();
+	CvPlot* lastMissionPlot() const;
 
-	bool canStartMission(int iMission, int iData1, int iData2, CvPlot* pPlot = NULL, bool bTestVisible = false, bool bUseCache = false);
+	bool canStartMission(int iMission, int iData1, int iData2, CvPlot* pPlot = NULL, bool bTestVisible = false, bool bUseCache = false) const;
 	void startMission();
 	void continueMission(int iSteps = 0);
-	DllExport bool canDoInterfaceMode(InterfaceModeTypes eInterfaceMode);
-	DllExport bool canDoInterfaceModeAt(InterfaceModeTypes eInterfaceMode, CvPlot* pPlot);
+	bool canDoInterfaceMode(InterfaceModeTypes eInterfaceMode) const;
+	bool canDoInterfaceModeAt(InterfaceModeTypes eInterfaceMode, CvPlot* pPlot) const;
 
-	bool canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible = false, bool bUseCache = false);
-	bool canEverDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible, bool bUseCache);
+	bool canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible = false, bool bUseCache = false) const;
+	bool canEverDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible, bool bUseCache) const;
 	void setupActionCache();
 	bool isHuman() const;
-	DllExport bool isBusy();
-	bool isCargoBusy();
-	int baseMoves();
+	bool isBusy() const;
+	bool isCargoBusy() const;
+	int baseMoves() const;
 	bool isWaiting() const;
-	bool isFull();
+	bool isFull() const;
 	bool hasCargo() const;
 	int getCargo() const;
 	bool buildCargoUnitList(CLinkList<IDInfo>& unitList) const;
-	DllExport bool canAllMove();
-	bool canAnyMove();
-	bool hasMoved();
+	bool canAllMove() const;
+	bool canAnyMove() const;
+	bool hasMoved() const;
 	bool canEnterTerritory(PlayerTypes ePlayer, bool bIgnoreRightOfPassage = false) const;
 	bool canEnterArea(PlayerTypes ePlayer, const CvArea* pArea, bool bIgnoreRightOfPassage = false) const;
-	DllExport bool canMoveInto(CvPlot* pPlot, bool bAttack = false);
-	DllExport bool canMoveOrAttackInto(CvPlot* pPlot, bool bDeclareWar = false);
+	bool canMoveInto(CvPlot* pPlot, bool bAttack = false) const;
+	bool canMoveOrAttackInto(CvPlot* pPlot, bool bDeclareWar = false) const;
 	bool canMoveOrAttackInto(CvPlot const& kPlot, bool bDeclareWar = false, bool bCheckMoves = false, bool bAssumeVisible = true) const;
 	bool canMoveThrough(CvPlot const& kPlot, bool bDeclareWar = false, bool bAssumeVisible = true) const; // Exposed to Python, K-Mod added bDeclareWar and bAssumeVisible; advc: CvPlot const&
-	bool canFight();
-	bool canDefend();
-	bool canBombard(const CvPlot* pPlot);
-	bool visibilityRange();
+	bool canFight() const;
+	bool canDefend() const;
+	bool canBombard(const CvPlot* pPlot) const;
+	int visibilityRange() const;
 
 	int getBombardTurns( CvCity* pCity );	// TAC - AI Attack City - koma13, jdog5000(BBAI)
 
@@ -90,8 +90,8 @@ public:
 	void unloadAll();
 	bool alwaysInvisible() const;
 	bool isInvisible(TeamTypes eTeam) const;
-	int countNumUnitAIType(UnitAITypes eUnitAI);
-	bool IsSelected();
+	int countNumUnitAIType(UnitAITypes eUnitAI) const;
+	bool IsSelected() const;
 	DllExport void NotifyEntity(MissionTypes eMission);
 
 	int getX() const;
@@ -99,6 +99,7 @@ public:
 	bool at(int iX, int iY) const;
 	bool atPlot(const CvPlot* pPlot) const;
 	DllExport CvPlot* plot() const;
+	CvPlot& getPlot() const { return *plot(); } // advc
 	int getArea() const;
 	CvArea* area() const;
 	DomainTypes getDomainType() const;
@@ -115,9 +116,9 @@ public:
 	void setTransportUnit(CvUnit* pTransportUnit);
 	bool isAmphibPlot(const CvPlot* pPlot) const;
 	bool groupAmphibMove(CvPlot* pPlot, int iFlags);
-	DllExport bool readyToSelect(bool bAny = false);
-	bool readyToMove(bool bAny = false);
-	bool readyToAuto();
+	bool readyToSelect(bool bAny = false) const;
+	bool readyToMove(bool bAny = false) const;
+	bool readyToAuto() const;
 	bool isOnMap() const;
 	int getID() const;
 	void setID(int iID);
@@ -208,6 +209,9 @@ public:
 
 	int maxMoves() const; // K-Mod
 	int movesLeft() const; // K-Mod
+
+	int dangerDetectionRange() const;
+	std::string CvSelectionGroup::debugString() const;
 
 	// for serialization
 	virtual void read(FDataStreamBase* pStream);

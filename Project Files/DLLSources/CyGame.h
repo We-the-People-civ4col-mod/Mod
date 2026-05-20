@@ -15,11 +15,11 @@ class CyReplayInfo;
 class CyPlot;
 class CyGame
 {
+	CvGame* pointer(AssertCallerData);
 public:
 	CyGame();
 	CyGame(CvGame* pGame);			// Call from C++
 	CyGame(CvGameAI* pGame);			// Call from C++;
-	CvGame* getGame() { return m_pGame;	}	// Call from C++
 
 	// R&R, ray, Correct Geographical Placement of Natives - START
 	bool isWBNorthAmericanNative();
@@ -194,6 +194,6 @@ public:
 	// R&R, ray, the Church - END
 
 protected:
-	CvGame* m_pGame;
+	const CvGame* const m_pGame;
 };
 #endif	// #ifndef CyGame

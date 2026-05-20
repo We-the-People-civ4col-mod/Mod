@@ -35,6 +35,10 @@ struct AssertCallerData {};
 
 #ifdef WIN32
 
+#ifndef NULL
+#define NULL 0
+#endif
+
 bool FAssertDlg(const char*, const char*, const char*, unsigned int,
 	/*  advc.006f (from C2C): const char* param added. And changed the
 	two locations below so that __FUNCTION__ is passed. */
@@ -119,5 +123,8 @@ bool FAssertDlg(const char*, const char*, const char*, unsigned int,
 #define FAssertWithCaller( data, expr )
 #define FAssertMsgWithCaller( data, expr, msg )
 #endif
+
+#define FErrorMsg(msg) FAssertMsg(false, msg) // advc.006i (from C2C)
+#define FErrorMsgWithCaller(data, msg) FAssertMsgWithCaller(data, false, msg)
 
 #endif // FASSERT_H

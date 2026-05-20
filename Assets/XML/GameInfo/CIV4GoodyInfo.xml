@@ -1092,7 +1092,7 @@
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>10</iMinTurnValid>
+			<iMinTurnValid>20</iMinTurnValid>
 			<iRandNumHostilesSpawned>3</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>1</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1116,14 +1116,14 @@
 			<iExperience>2</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_RANGER</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>10</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>1</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>1</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1154,7 +1154,7 @@
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>20</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>3</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1185,7 +1185,7 @@
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>20</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>1</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>1</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1216,7 +1216,7 @@
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>25</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>3</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1247,7 +1247,7 @@
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>20</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>3</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>1</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1271,14 +1271,14 @@
 			<iExperience>5</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_REVOLTING_CRIMINAL</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>20</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>3</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1302,14 +1302,14 @@
 			<iExperience>5</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_MILITIA</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>20</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>1</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>1</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1340,7 +1340,7 @@
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>20</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>3</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1371,7 +1371,7 @@
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>20</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>3</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1402,7 +1402,7 @@
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>10</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>1</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>1</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1426,14 +1426,14 @@
 			<iExperience>10</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_REVOLTING_NATIVE_SLAVE</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>20</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>3</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1457,14 +1457,14 @@
 			<iExperience>10</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_REVOLTING_SLAVE</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>20</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>3</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>0</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1488,14 +1488,14 @@
 			<iExperience>5</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_NATIVE_MERC</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>0</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>20</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>1</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>1</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1526,7 +1526,7 @@
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>1</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>20</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>1</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>1</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1550,14 +1550,14 @@
 			<iExperience>10</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_PIRATE_FRIGATE</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
 			<iCityGoodyWeight>0</iCityGoodyWeight>
 			<bWaterGoody>1</bWaterGoody>
 			<bUnique>1</bUnique>
-			<iMinTurnValid>30</iMinTurnValid>
+			<iMinTurnValid>50</iMinTurnValid>
 			<iRandNumHostilesSpawned>1</iRandNumHostilesSpawned>
 			<bSpawnHostileUnitsAsXML>1</bSpawnHostileUnitsAsXML>
 			<bSpawnHostileAnimals>0</bSpawnHostileAnimals>
@@ -1581,7 +1581,7 @@
 			<iExperience>10</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_WOLF</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
@@ -1612,7 +1612,7 @@
 			<iExperience>10</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_GRIZZLY</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
@@ -1643,7 +1643,7 @@
 			<iExperience>10</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_ALLIGATOR</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
@@ -1674,7 +1674,7 @@
 			<iExperience>20</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_BEAR_BLACK</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
@@ -1705,7 +1705,7 @@
 			<iExperience>10</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_BEAR_POLAR</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
@@ -1736,7 +1736,7 @@
 			<iExperience>5</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_LYNX</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
@@ -1767,7 +1767,7 @@
 			<iExperience>5</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_JAGUAR</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
@@ -1798,7 +1798,7 @@
 			<iExperience>5</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_COUGAR</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
@@ -1829,7 +1829,7 @@
 			<iExperience>5</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_GREATWHITE</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
@@ -1860,7 +1860,7 @@
 			<iExperience>10</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_HUMPBACK_WHALE</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
@@ -1891,7 +1891,7 @@
 			<iExperience>10</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_KRAKEN</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>
@@ -1922,7 +1922,7 @@
 			<iExperience>10</iExperience>
 			<iHealing>0</iHealing>
 			<iDamagePrereq>0</iDamagePrereq>
-			<bBad>0</bBad>
+			<bBad>1</bBad>
 			<bWar>0</bWar>
 			<UnitClass>UNITCLASS_ORCA</UnitClass>
 			<TeachUnitClass>NONE</TeachUnitClass>

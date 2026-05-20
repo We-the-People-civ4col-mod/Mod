@@ -216,7 +216,8 @@ void CvSelectionGroup::doTurn()
 
 		if (AI_isControlled())
 		{
-			if ((getActivityType() != ACTIVITY_MISSION) || (!canFight() && (GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 1) > 0)))
+			// TODO: Consider using visbilityRange (but how should we deal with the plot bonus range?)
+			if ((getActivityType() != ACTIVITY_MISSION) || (!canFight() && (GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), dangerDetectionRange()) > 0)))
 			{
 				setForceUpdate(true);
 			}
@@ -225,7 +226,7 @@ void CvSelectionGroup::doTurn()
 		{
 			if (getActivityType() == ACTIVITY_MISSION)
 			{
-				if (GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 1) > 0)
+				if (GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), dangerDetectionRange()) > 0)
 				{
 					clearMissionQueue();
 				}
@@ -496,7 +497,7 @@ void CvSelectionGroup::autoMission()
 		{
 			if (!isBusy())
 			{
-				if (isHuman() && GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 1) > 0)
+				if (isHuman() && GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), dangerDetectionRange()) > 0)
 				{
 					clearMissionQueue();
 				}
@@ -548,7 +549,7 @@ void CvSelectionGroup::updateMission()
 }
 
 
-CvPlot* CvSelectionGroup::lastMissionPlot()
+CvPlot* CvSelectionGroup::lastMissionPlot() const
 {
 	CLLNode<MissionData>* pMissionNode;
 	CvUnit* pTargetUnit;
@@ -603,7 +604,7 @@ CvPlot* CvSelectionGroup::lastMissionPlot()
 }
 
 
-bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvPlot* pPlot, bool bTestVisible, bool bUseCache)
+bool CvSelectionGroup::canStartMission(int iMission, int iData1, int iData2, CvPlot* pPlot, bool bTestVisible, bool bUseCache) const
 {
 	PROFILE_FUNC();
 
@@ -1402,7 +1403,7 @@ void CvSelectionGroup::continueMission(int iSteps)
 }
 
 
-bool CvSelectionGroup::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible, bool bUseCache)
+bool CvSelectionGroup::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible, bool bUseCache) const
 {
 	PROFILE_FUNC();
 
@@ -1440,7 +1441,7 @@ bool CvSelectionGroup::canDoCommand(CommandTypes eCommand, int iData1, int iData
 	return false;
 }
 
-bool CvSelectionGroup::canEverDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible, bool bUseCache)
+bool CvSelectionGroup::canEverDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible, bool bUseCache) const
 {
 	if(eCommand == COMMAND_LOAD)
 	{
@@ -1543,7 +1544,7 @@ void CvSelectionGroup::setupActionCache()
 }
 
 // Returns true if one of the units can support the interface mode...
-bool CvSelectionGroup::canDoInterfaceMode(InterfaceModeTypes eInterfaceMode)
+bool CvSelectionGroup::canDoInterfaceMode(InterfaceModeTypes eInterfaceMode) const
 {
 	PROFILE_FUNC();
 
@@ -1633,7 +1634,7 @@ bool CvSelectionGroup::canDoInterfaceMode(InterfaceModeTypes eInterfaceMode)
 
 
 // Returns true if one of the units can execute the interface mode at the specified plot...
-bool CvSelectionGroup::canDoInterfaceModeAt(InterfaceModeTypes eInterfaceMode, CvPlot* pPlot)
+bool CvSelectionGroup::canDoInterfaceModeAt(InterfaceModeTypes eInterfaceMode, CvPlot* pPlot) const
 {
 	FAssertMsg(eInterfaceMode != NO_INTERFACEMODE, "InterfaceMode is not assigned a valid value");
 
@@ -1659,7 +1660,7 @@ bool CvSelectionGroup::isHuman() const
 }
 
 
-bool CvSelectionGroup::isBusy()
+bool CvSelectionGroup::isBusy() const
 {
 	if (getNumUnits() == 0)
 	{
@@ -1692,7 +1693,7 @@ bool CvSelectionGroup::isBusy()
 }
 
 
-bool CvSelectionGroup::isCargoBusy()
+bool CvSelectionGroup::isCargoBusy() const
 {
 	if (getNumUnits() == 0)
 	{
@@ -1733,7 +1734,7 @@ bool CvSelectionGroup::isCargoBusy()
 }
 
 
-int CvSelectionGroup::baseMoves()
+int CvSelectionGroup::baseMoves() const
 {
 	int iBestValue = MAX_INT;
 
@@ -1777,7 +1778,7 @@ bool CvSelectionGroup::isWaiting() const
 }
 
 
-bool CvSelectionGroup::isFull()
+bool CvSelectionGroup::isFull() const
 {
 	CLLNode<IDInfo>* pUnitNode;
 
@@ -1907,7 +1908,7 @@ bool CvSelectionGroup::buildCargoUnitList(CLinkList<IDInfo>& unitList) const
 	return bUnitAdded;
 }
 
-bool CvSelectionGroup::canAllMove()
+bool CvSelectionGroup::canAllMove() const
 {
 
 	if (getNumUnits() > 0)
@@ -1933,7 +1934,7 @@ bool CvSelectionGroup::canAllMove()
 }
 
 
-bool CvSelectionGroup::canAnyMove()
+bool CvSelectionGroup::canAnyMove() const
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;
@@ -1954,7 +1955,7 @@ bool CvSelectionGroup::canAnyMove()
 	return false;
 }
 
-bool CvSelectionGroup::hasMoved()
+bool CvSelectionGroup::hasMoved() const
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;
@@ -2028,8 +2029,7 @@ bool CvSelectionGroup::canEnterArea(PlayerTypes ePlayer, const CvArea* pArea, bo
 	return false;
 }
 
-
-bool CvSelectionGroup::canMoveInto(CvPlot* pPlot, bool bAttack)
+bool CvSelectionGroup::canMoveInto(CvPlot* pPlot, bool bAttack) const
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;
@@ -2053,7 +2053,7 @@ bool CvSelectionGroup::canMoveInto(CvPlot* pPlot, bool bAttack)
 	return false;
 }
 
-bool CvSelectionGroup::canMoveOrAttackInto(CvPlot* pPlot, bool bDeclareWar)
+bool CvSelectionGroup::canMoveOrAttackInto(CvPlot* pPlot, bool bDeclareWar) const
 {
 	// K-Mod. (hack to avoid breaking the DllExport) advc: 2x const, CvPlot&
 	return canMoveOrAttackInto(*pPlot, bDeclareWar, false);
@@ -2102,7 +2102,7 @@ bool CvSelectionGroup::canMoveThrough(CvPlot const& kPlot, bool bDeclareWar, boo
 }
 
 
-bool CvSelectionGroup::canFight()
+bool CvSelectionGroup::canFight() const
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;
@@ -2124,7 +2124,7 @@ bool CvSelectionGroup::canFight()
 }
 
 
-bool CvSelectionGroup::canDefend()
+bool CvSelectionGroup::canDefend() const
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;
@@ -2145,7 +2145,7 @@ bool CvSelectionGroup::canDefend()
 	return false;
 }
 
-bool CvSelectionGroup::canBombard(const CvPlot* pPlot)
+bool CvSelectionGroup::canBombard(const CvPlot* pPlot) const
 {
 	CLLNode<IDInfo>* pUnitNode = headUnitNode();
 	while (pUnitNode != NULL)
@@ -2162,7 +2162,7 @@ bool CvSelectionGroup::canBombard(const CvPlot* pPlot)
 	return false;
 }
 
-bool CvSelectionGroup::visibilityRange()
+int CvSelectionGroup::visibilityRange() const
 {
 	int iMaxRange = 0;
 
@@ -2354,7 +2354,7 @@ bool CvSelectionGroup::isInvisible(TeamTypes eTeam) const
 }
 
 
-int CvSelectionGroup::countNumUnitAIType(UnitAITypes eUnitAI)
+int CvSelectionGroup::countNumUnitAIType(UnitAITypes eUnitAI) const
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;
@@ -2386,7 +2386,7 @@ int CvSelectionGroup::countNumUnitAIType(UnitAITypes eUnitAI)
 	return iCount;
 }
 
-bool CvSelectionGroup::IsSelected()
+bool CvSelectionGroup::IsSelected() const
 {
 	CLLNode<IDInfo>* pUnitNode;
 	CvUnit* pLoopUnit;
@@ -2687,9 +2687,18 @@ bool CvSelectionGroup::groupDeclareWar(CvPlot* pPlot, bool bForce)
 // Returns true if attack was made...
 bool CvSelectionGroup::groupAttack(AssertCallerData assertData, int iX, int iY, int iFlags, bool& bFailedAlreadyFighting)
 {
-	FAssertWithCaller(assertData, !isBusy()); // K-Mod
-
-	CvPlot* pDestPlot = GC.getMap().plot(iX, iY);
+	if (isBusy())
+	{
+		std::ostringstream oss;
+		oss << "groupAttack !isBusy() failed: "
+			<< "from=(" << getX() << "," << getY() << ")"
+			<< " target=(" << iX << "," << iY << ")"
+			<< " flags=" << iFlags
+			<< "\n"
+			<< debugString();
+		FErrorMsgWithCaller(assertData, oss.str().c_str()); // K-Mod
+	}
+	CvPlot* pDestPlot = GC.getMap().plotINLINE(iX, iY);
 
 	// K-Mod. Rather than clearing the existing path data; use a temporary pathfinder.
 	KmodPathFinder final_path;
@@ -3259,19 +3268,19 @@ bool CvSelectionGroup::groupAmphibMove(CvPlot* pPlot, int iFlags)
 }
 
 
-bool CvSelectionGroup::readyToSelect(bool bAny)
+bool CvSelectionGroup::readyToSelect(bool bAny) const
 {
 	return (readyToMove(bAny) && !isAutomated() && isOnMap());
 }
 
 
-bool CvSelectionGroup::readyToMove(bool bAny)
+bool CvSelectionGroup::readyToMove(bool bAny) const
 {
 	return (((bAny) ? canAnyMove() : canAllMove()) && (headMissionQueueNode() == NULL) && (getActivityType() == ACTIVITY_AWAKE) && !isBusy() && !isCargoBusy());
 }
 
 
-bool CvSelectionGroup::readyToAuto()
+bool CvSelectionGroup::readyToAuto() const
 {
 	return (canAllMove() && (headMissionQueueNode() != NULL));
 }
@@ -3281,7 +3290,7 @@ bool CvSelectionGroup::isOnMap() const
 	CvUnit* pUnit = getHeadUnit();
 	if (pUnit != NULL)
 	{
-		return (pUnit->isOnMap());
+		return (pUnit->isOnMap_());
 	}
 
 	return false;
@@ -3542,23 +3551,15 @@ CvPlot* CvSelectionGroup::getPathEndTurnPlot() const
 	return path_finder.GetPathEndTurnPlot();
 }
 
-//This number is fairly large
-//1 plot = 100
-int CvSelectionGroup::getPathCost() const
+int CvSelectionGroup::getPathCost() const 
 {
-	FAStarNode* pNode;
-	//pNode = getPathEndTurnPlot();
+	FAStarNode* const pNode = path_finder.GetEndNode();
 
-	pNode = path_finder.GetEndNode();
-
-	if (pNode != NULL)
-	{
-		int iCost = pNode->m_iTotalCost;
-		iCost *= 100;
-		iCost /= (1000 * GLOBAL_DEFINE_MOVE_DENOMINATOR);
-
-		return iCost;
+	if (pNode != NULL) {
+		FAssertMsg(pNode->m_iTotalCost >= 0, "Path cost cannot be negative");
+		return pNode->m_iTotalCost / (10 * GLOBAL_DEFINE_MOVE_DENOMINATOR);
 	}
+	FAssertMsg(false, "getPathCost() called on null node");
 	return MAX_INT;
 }
 
@@ -4501,3 +4502,91 @@ int CvSelectionGroup::movesLeft() const
 	}
 	return iMoves;
 } // K-Mod end
+
+// Helper function to return an appropriate visibility range
+// We'd prefer to the the group's visibility range, but that may be problematic on land
+// due to some plots having a very large bonus range and hence units travelling through such plots
+// may be "spooked" by enemies that could not possibly attack this turn
+int CvSelectionGroup::dangerDetectionRange() const
+{
+	if (getDomainType() == DOMAIN_SEA)
+	{
+		return visibilityRange() + 1; // Units can see enemies one plot further away. For a group without any visibility
+		// promotions that translates to the standard 2 range danger check
+	}
+	else
+	{
+		return 2;
+	}
+}
+
+std::string CvSelectionGroup::debugString() const
+{
+	std::ostringstream oss;
+
+	// Basic group identity
+	oss << "Group id=" << getID()
+		<< " owner=" << getOwner()
+		<< " team=" << GET_PLAYER(getOwner()).getTeam()
+		<< " domain=" << getDomainType();
+
+	// Position
+	oss << " plot=(" << getX() << "," << getY() << ")";
+
+	// Core state
+	oss << " numUnits=" << getNumUnits()
+		<< " isBusy=" << (isBusy() ? 1 : 0)
+		<< " missionTimer=" << getMissionTimer()
+		<< " activity=" << getActivityType();
+
+	// Head mission in queue (if any)
+	const CLLNode<MissionData>* pMissionNode = headMissionQueueNode();
+	if (pMissionNode != NULL)
+	{
+		const MissionData& kData = pMissionNode->m_data;
+		oss << " headMissionType=" << kData.eMissionType
+			<< " headFlags=" << kData.iFlags
+			<< " headData=(" << kData.iData1
+			<< "," << kData.iData2 << ")";
+	}
+
+	// AI mission info
+	const CvPlot* pMissionPlot = AI().AI_getMissionAIPlot_();
+	oss << " missionAIType=" << AI().AI_getMissionAIType_();
+	if (pMissionPlot != NULL)
+	{
+		oss << " missionAIPlot=("
+			<< pMissionPlot->getX_INLINE() << ","
+			<< pMissionPlot->getY_INLINE() << ")";
+	}
+
+	// Units in the group (limit to first N for readability)
+	int iIndex = 0;
+	const int iMaxUnitsToPrint = 50; // avoid overly long strings
+
+	for (CLLNode<IDInfo>* pNode = headUnitNode();
+		pNode != NULL;
+		pNode = nextUnitNode(pNode))
+	{
+		const CvUnit* pUnit = ::getUnit(pNode->m_data);
+		if (pUnit == NULL)
+		{
+			continue;
+		}
+
+		oss << "\n  [" << iIndex << "] " << pUnit->debugString();
+		++iIndex;
+
+		if (iIndex >= iMaxUnitsToPrint)
+		{
+			if (getNumUnits() > iIndex)
+			{
+				oss << "\n  ... (" << (getNumUnits() - iIndex)
+					<< " more units not shown)";
+			}
+			break;
+		}
+	}
+
+	return oss.str();
+}

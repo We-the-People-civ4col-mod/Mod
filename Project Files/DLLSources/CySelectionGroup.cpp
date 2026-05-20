@@ -12,6 +12,15 @@
 #include "CyUnit.h"
 //#include "CvStructs.h"
 
+#include "DesyncMonitor.h"
+
+CvSelectionGroup* CySelectionGroup::pointer(AssertCallerData data)
+{
+	FAssertWithCaller(data, CxDesyncMonitor::isAlwaysSync());
+	FAssertWithCaller(data, m_pSelectionGroup != NULL);
+	return (CvSelectionGroup*)m_pSelectionGroup;
+}
+
 CySelectionGroup::CySelectionGroup() : m_pSelectionGroup(NULL)
 {
 
@@ -25,19 +34,19 @@ CySelectionGroup::CySelectionGroup(CvSelectionGroup* pSelectionGroup) : m_pSelec
 void CySelectionGroup::pushMission(MissionTypes eMission, int iData1, int iData2, int iFlags, bool bAppend, bool bManual, MissionAITypes eMissionAI, CyPlot* pMissionAIPlot, CyUnit* pMissionAIUnit)
 {
 	if (m_pSelectionGroup)
-		return m_pSelectionGroup->pushMission(eMission, iData1, iData2, iFlags, bAppend, bManual, eMissionAI, pMissionAIPlot->getPlot(), pMissionAIUnit->getUnit());
+		return pointer(CREATE_ASSERT_DATA)->pushMission(eMission, iData1, iData2, iFlags, bAppend, bManual, eMissionAI, pMissionAIPlot->getPlot(), pMissionAIUnit->getUnit());
 }
 
 void CySelectionGroup::pushMoveToMission(int iX, int iY)
 {
 	if (m_pSelectionGroup)
-		return m_pSelectionGroup->pushMission(MISSION_MOVE_TO, iX, iY);
+		return pointer(CREATE_ASSERT_DATA)->pushMission(MISSION_MOVE_TO, iX, iY);
 }
 
 void CySelectionGroup::popMission()
 {
 	if (m_pSelectionGroup)
-		return m_pSelectionGroup->popMission();
+		return pointer(CREATE_ASSERT_DATA)->popMission();
 }
 
 CyPlot* CySelectionGroup::lastMissionPlot()
@@ -222,12 +231,12 @@ int /*ActivityTypes*/ CySelectionGroup::getActivityType()
 void CySelectionGroup::setActivityType(int /*ActivityTypes*/ eNewValue)
 {
 	if (m_pSelectionGroup)
-		m_pSelectionGroup->setActivityType((ActivityTypes) eNewValue);
+		pointer(CREATE_ASSERT_DATA)->setActivityType((ActivityTypes) eNewValue);
 }
 
 int /*AutomateTypes*/ CySelectionGroup::getAutomateType()
 {
-	return m_pSelectionGroup ? (AutomateTypes) m_pSelectionGroup->getAutomateType() : -1;
+	return m_pSelectionGroup ? m_pSelectionGroup->getAutomateType() : NO_AUTOMATE;
 }
 
 bool CySelectionGroup::isAutomated()
@@ -238,7 +247,7 @@ bool CySelectionGroup::isAutomated()
 void CySelectionGroup::setAutomateType(int /*AutomateTypes*/ eNewValue)
 {
 	if (m_pSelectionGroup)
-		m_pSelectionGroup->setAutomateType((AutomateTypes) eNewValue);
+		pointer(CREATE_ASSERT_DATA)->setAutomateType((AutomateTypes) eNewValue);
 }
 
 CyPlot* CySelectionGroup::getPathFirstPlot()
@@ -286,7 +295,7 @@ int CySelectionGroup::getNumUnits()
 void CySelectionGroup::clearMissionQueue()
 {
 	if (m_pSelectionGroup)
-		m_pSelectionGroup->clearMissionQueue();
+		pointer(CREATE_ASSERT_DATA)->clearMissionQueue();
 }
 
 int CySelectionGroup::getLengthMissionQueue()

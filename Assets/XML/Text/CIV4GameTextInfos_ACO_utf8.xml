@@ -83,6 +83,15 @@
 		<Russian>[COLOR_UNIT_TEXT]Отступить[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_ACO_Unresolved</Tag>
+		<English>[COLOR_UNIT_TEXT]Unresolved[COLOR_REVERT]</English>
+		<French>[COLOR_UNIT_TEXT]Non résolu[COLOR_REVERT]</French>
+		<German>[COLOR_UNIT_TEXT]Unentschieden[COLOR_REVERT]</German>
+		<Italian>[COLOR_UNIT_TEXT]Non risolto[COLOR_REVERT]</Italian>
+		<Spanish>[COLOR_UNIT_TEXT]No resuelto[COLOR_REVERT]</Spanish>
+		<Russian>[COLOR_UNIT_TEXT]Без результата[COLOR_REVERT]</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_ACO_AverageHP</Tag>
 		<English>[NEWLINE]Average HP :[SPACE]</English>
 		<French>[NEWLINE]PV moyen :[SPACE]</French>
@@ -169,7 +178,7 @@
 		<German>[COLOR_UNIT_TEXT]TP[COLOR_REVERT]</German>
 		<Italian>[COLOR_UNIT_TEXT]PV[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_UNIT_TEXT]PG[COLOR_REVERT]</Spanish>
-	</TEXT>	
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_XP</Tag>
 		<English>XP</English>

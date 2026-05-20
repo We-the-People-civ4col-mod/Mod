@@ -69,6 +69,7 @@ def toggleSetScreenOn(argsList):
 
 mainInterface = CvMainInterface.CvMainInterface()
 def showMainInterface():
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	mainInterface.interfaceScreen()
 
 def numPlotListButtons():
@@ -76,30 +77,36 @@ def numPlotListButtons():
 
 fatherScreen = CvFoundingFatherScreen.CvFoundingFatherScreen()
 def showFoundingFatherScreen(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		fatherScreen.interfaceScreen(argsList[0])
 
 hallOfFameScreen = CvHallOfFameScreen.CvHallOfFameScreen(HALL_OF_FAME)
 def showHallOfFame(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	hallOfFameScreen.interfaceScreen(argsList[0])
 
 optionsScreen = CvOptionsScreen.CvOptionsScreen()
 def showOptionsScreen():
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	optionsScreen.interfaceScreen()
 
 foreignAdvisor = CvForeignAdvisor.CvForeignAdvisor()
 def showForeignAdvisorScreen(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		foreignAdvisor.interfaceScreen(argsList[0])
 
 congressAdvisor = CvCongressAdvisor.CvCongressAdvisor()
 def showCongressAdvisorScreen(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		congressAdvisor.interfaceScreen()
 
 # Achievements START
 achieveAdvisor = CvAchieveAdvisor.CvAchieveAdvisor()
 def showAchieveAdvisorScreen():
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		achieveAdvisor.interfaceScreen()
 # Achievements END
@@ -107,23 +114,27 @@ def showAchieveAdvisorScreen():
 # TAC - Trade Routes Advisor - koma13 - START
 tradeRoutesAdvisor = CvTradeRoutesAdvisor.CvTradeRoutesAdvisor()
 def showTradeRoutesAdvisor(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		tradeRoutesAdvisor.interfaceScreen()
 # TAC - Trade Routes Advisor - koma13 - END
 
 revolutionAdvisor = CvRevolutionAdvisor.CvRevolutionAdvisor()
 def showRevolutionAdvisorScreen(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		revolutionAdvisor.interfaceScreen()
 
 europeScreen = CvEuropeScreen.CvEuropeScreen()
 def showEuropeScreen(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		europeScreen.interfaceScreen()
 
 ##TRIANGLETRADE 10/24/08 by DPII
 africaScreen = CvAfricaScreen.CvAfricaScreen()
 def showAfricaScreen(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		africaScreen.interfaceScreen()
 ##TRIANGLETRADE END
@@ -131,44 +142,53 @@ def showAfricaScreen(argsList):
 #R&R, ray, Port Royal
 portroyalScreen = CvPortRoyalScreen.CvPortRoyalScreen()
 def showPortRoyalScreen(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		portroyalScreen.interfaceScreen()
 #R&R, ray, Port Royal- END
 
 domesticAdvisor = CvDomesticAdvisor.CvDomesticAdvisor()
 def showDomesticAdvisor(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		domesticAdvisor.interfaceScreen()
 
 militaryAdvisor = CvMilitaryAdvisor.CvMilitaryAdvisor(MILITARY_ADVISOR)
 def showMilitaryAdvisor(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		militaryAdvisor.interfaceScreen()
 
 dawnOfMan = CvDawnOfMan.CvDawnOfMan(DAWN_OF_MAN)
 def showDawnOfMan(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	dawnOfMan.interfaceScreen()
 
 introMovie = CvIntroMovieScreen.CvIntroMovieScreen()
 def showIntroMovie(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	introMovie.interfaceScreen()
 
 victoryMovie = CvVictoryMovieScreen.CvVictoryMovieScreen()
 def showVictoryMovie(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	victoryMovie.interfaceScreen(argsList[0])
 
 wonderMovie = CvWonderMovieScreen.CvWonderMovieScreen()
 def showWonderMovie(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	wonderMovie.interfaceScreen(argsList[0], argsList[1])
 
 replayScreen = CvReplayScreen.CvReplayScreen(REPLAY_SCREEN)
 def showReplay(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if argsList[0] > -1:
 		CyGame().saveReplay(argsList[0])
 	replayScreen.showScreen(argsList[4])
 
 infoScreen = CvInfoScreen.CvInfoScreen(INFO_SCREEN)
 def showInfoScreen(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		iTabID = argsList[0]
 		iEndGame = argsList[1]
@@ -176,6 +196,7 @@ def showInfoScreen(argsList):
 
 victoryScreen = CvVictoryScreen.CvVictoryScreen()
 def showVictoryScreen(argsList):
+	DesyncDetectorInstance = gc.startDesyncMonitor()
 	if (-1 != CyGame().getActivePlayer()):
 		victoryScreen.interfaceScreen()
 

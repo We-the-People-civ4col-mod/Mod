@@ -208,6 +208,37 @@
 		<iAICitySize/>
 		<iOrderPriority/>
 	</BuildingInfo>
+	<CivicInfo class="Dir" child="Button">
+		<CivicOptionType class="Type" type="CivicOptionInfo" none="false"/>
+		<Type/>
+		<Description/>
+		<Civilopedia/>
+		<Strategy/>
+		<Help/>
+		<Button class="Button"/>
+		<iAIWeight/>
+		<eCivEffect class="Type" type="CivEffectInfo" none="true"/>
+		<iGreatGeneralRateModifier/>
+		<iDomesticGreatGeneralRateModifier/>
+		<iFreeExperience/>
+		<iWorkerSpeedModifier/>
+		<iImprovementUpgradeRateModifier/>
+		<iMilitaryProductionModifier/>
+		<iExpInBorderModifier/>
+		<iNativeAttitudeChange/>
+		<iNativeCombatModifier/>
+		<iFatherPointModifier/>
+		<bDominateNativeBorders/>
+		<bRevolutionEuropeTrade/>
+		<YieldModifiers/>
+		<CapitalYieldModifiers/>
+		<Hurrys/>
+		<SpecialBuildingNotRequireds/>
+		<ImprovementYieldChanges/>
+		<FreeUnitClasses/>
+		<ProfessionCombatChanges/>
+		<ImmigrationConversion class="Type" type="YieldInfo" none="true"/>
+	</CivicInfo>
 	<CivilizationArtInfo class="Dir" child="Button">
 		<Type/>
 		<Button class="Button"/>
@@ -273,12 +304,68 @@
 		<CivilizationSelectionSound class="Type" type="Script3DSound" none="false"/>
 		<CivilizationActionSound class="Type" type="Script3DSound" none="false"/>
 	</CivilizationInfo>
+	<ClimateInfo>
+		<Type/>
+		<Description/>
+		<iDesertPercentChange/>
+		<iJungleLatitude/>
+		<iHillRange/>
+		<iPeakPercent/>
+		<fSnowLatitudeChange/>
+		<fTundraLatitudeChange/>
+		<fGrassLatitudeChange/>
+		<fDesertBottomLatitudeChange/>
+		<fDesertTopLatitudeChange/>
+		<fRandIceLatitude/>
+	</ClimateInfo>
 	<DefineName>
 		<iDefineIntVal/>
 		<fDefineFloatVal/>
 		<DefineTextVal/>
 	</DefineName>
+	<DiplomacyInfo>
+		<Type/>
+		<Responses/>
+	</DiplomacyInfo>
 	<EntityEventInfo/>
+	<EraInfo>
+		<Type/>
+		<Description/>
+		<Strategy/>
+		<bNoGoodies/>
+		<eCivEffect class="Type" type="CivEffectInfo" none="true"/>
+		<bRevolution/>
+		<iGameTurn/>
+		<iAdvancedStartPoints/>
+		<iStartingUnitMultiplier/>
+		<iStartingDefenseUnits/>
+		<iStartingWorkerUnits/>
+		<iStartingExploreUnits/>
+		<iStartingGold/>
+		<iFreePopulation/>
+		<iStartPercent/>
+		<iGrowthPercent/>
+		<iTrainPercent/>
+		<iConstructPercent/>
+		<iFatherPercent/>
+		<iGreatGeneralPercent/>
+		<iEventChancePerTurn/>
+		<iSoundtrackSpace/>
+		<bFirstSoundtrackFirst/>
+		<EraInfoSoundtracks/>
+		<CitySoundscapes/>
+		<AudioUnitVictoryScript/>
+		<AudioUnitDefeatScript/>
+	</EraInfo>
+	<EuropeInfo>
+		<Type/>
+		<Description/>
+		<Direction/>
+		<bStart/>
+		<iTripLength/>
+		<iMinLandDistance/>
+		<iWidthPercent/>
+	</EuropeInfo>
 	<EventInfo>
 		<Type/>
 		<Description/>
@@ -345,6 +432,95 @@
 		<iGenericParameter3/>
 		<iGenericParameter4/>
 	</EventInfo>
+	<EventTriggerInfo>
+		<Type/>
+		<WorldNewsTexts/>
+		<TriggerTexts/>
+		<bTutorial/>
+		<bSinglePlayer/>
+		<CivCategoriesRequired/>
+		<EventArt/>
+		<iPercentGamesActive/>
+		<iWeight/>
+		<bProbabilityUnitMultiply/>
+		<bProbabilityBuildingMultiply/>
+		<eCivic class="Type" type="CivicInfo" none="true"/>
+		<iMinTreasury/>
+		<iMinPopulation/>
+		<iMaxPopulation/>
+		<iMinMapLandmass/>
+		<iMinOurLandmass/>
+		<iMaxOurLandmass/>
+		<eMinDifficulty class="Type" type="HandicapInfo" none="true"/>
+		<UnitTriggerConditions>
+			<UnitsRequired/>
+			<iNumUnits/>
+			<iNumUnitsGlobal/>
+			<bTrackUnit/>
+			<bUnitsOnPlot/>
+			<iUnitDamagedWeight/>
+			<iUnitDistanceWeight/>
+			<iUnitExperienceWeight/>
+		</UnitTriggerConditions>
+		<BuildingsRequired class="Dir" child="BuildingClass">
+			<BuildingClass class="Type" type="BuildingClassInfo" none="false"/>
+		</BuildingsRequired>
+		<iNumBuildings/>
+		<iNumBuildingsGlobal/>
+		<RequirementLists>
+			<RequiredUnitList>
+				<RequiredUnit/>
+			</RequiredUnitList>
+		</RequirementLists>
+		<iNumPlotsRequired/>
+		<bOwnPlot/>
+		<ePlotType class="Type" type="PlotType" none="true"/>
+		<PlotRequirements>
+			<PlotTypes class="Dir">
+				<ePlotType class="Type" type="PlotType" none="false"/>
+			</PlotTypes>
+			<eCanBuildImprovement class="Type" type="ImprovementInfo" help="The randomly selected plot has to be able to build this improvement" none="true"/>
+			<bHasNoImprovement class="Bool" help="Random plot has to not have an improvement"/>
+		</PlotRequirements>
+		<FeaturesRequired class="Dir" child="FeatureType">
+			<FeatureType class="Type" type="FeatureInfo" none="false"/>
+		</FeaturesRequired>
+		<TerrainsRequired class="Dir" child="TerrainType">
+			<TerrainType class="Type" type="TerrainInfo" none="false"/>
+		</TerrainsRequired>
+		<ImprovementsRequired class="Dir" child="ImprovementType">
+			<ImprovementType class="Type" type="ImprovementInfo" none="false"/>
+		</ImprovementsRequired>
+		<RoutesRequired class="Dir" child="RouteType">
+			<RouteType class="Type" type="RouteInfo" none="false"/>
+		</RoutesRequired>
+		<Events>
+			<Event class="Type" type="EventInfo" none="false"/>
+		</Events>
+		<PrereqEvents>
+			<Event class="Type" type="EventInfo" none="false"/>
+		</PrereqEvents>
+		<bPrereqEventPlot/>
+		<bRecurring/>
+		<bTeam/>
+		<bGlobal/>
+		<bPickPlayer/>
+		<bOtherPlayerWar/>
+		<bOtherPlayerAI/>
+		<bOtherPlayerNative/>
+		<bOtherPlayerPlayable/>
+		<iOtherPlayerShareBorders/>
+		<bPickCity/>
+		<bPickOtherPlayerCity/>
+		<bShowPlot/>
+		<bFrontPopup/>
+		<iCityFoodWeight/>
+		<PythonCanDo/>
+		<PythonCanDoCity/>
+		<PythonCanDoUnit/>
+		<PythonCallback/>
+		<iMinTurn/>
+	</EventTriggerInfo>
 	<FeatureArtInfo class="Dir" child="Button">
 		<Type/>
 		<bAnimated/>
@@ -417,6 +593,37 @@
 		<iEffectProbability/>
 		<iAdvancedStartRemoveCost/>
 	</FeatureInfo>
+	<GoodyInfo>
+		<Type/>
+		<Description/>
+		<Sound/>
+		<AnnounceText/>
+		<ChiefText/>
+		<iGold/>
+		<iGoldRand1/>
+		<iGoldRand2/>
+		<iImmigration/>
+		<iMapOffset/>
+		<iMapRange/>
+		<iMapProb/>
+		<iExperience/>
+		<iHealing/>
+		<iDamagePrereq/>
+		<bBad/>
+		<bWar/>
+		<UnitClass class="Type" type="UnitClassInfo" none="true"/>
+		<TeachUnitClass class="Type" type="UnitClassInfo" none="true"/>
+		<iCityGoodyWeight/>
+		<bWaterGoody/>
+		<bUnique/>
+		<iMinTurnValid/>
+		<iRandNumHostilesSpawned/>
+		<bSpawnHostileUnitsAsXML/>
+		<bSpawnHostileAnimals/>
+		<bSpawnHostileNatives/>
+		<bSpawnHostileCriminals/>
+		<GoodyWeights/>
+	</GoodyInfo>
 	<ImprovementArtInfo>
 		<Type/>
 		<bExtraAnimations/>

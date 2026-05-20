@@ -11,10 +11,11 @@ class CyUnit;
 class CyCity;
 class CyPlot
 {
+	CvPlot* pointer(AssertCallerData);
 public:
 	DllExport CyPlot();
 	DllExport CyPlot(CvPlot*);			// Call from C++
-	CvPlot* getPlot() { return m_pPlot; }	// Call from C++
+	CvPlot* getPlot() { return (CvPlot*)m_pPlot; }	// Call from C++
 	void setPlot(CvPlot* p) { m_pPlot=p; }	// Call from C++
 	bool isNone() { return (m_pPlot==NULL); }
 	void erase();
@@ -202,7 +203,7 @@ public:
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 
 private:
-	CvPlot* m_pPlot;
+	const CvPlot* m_pPlot;
 };
 #endif	// CyPlot_h
 

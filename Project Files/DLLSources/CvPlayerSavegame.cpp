@@ -62,8 +62,6 @@ const int defaultTimerConquistador = 0;
 const int defaultTimerPirates = 0;
 const int defaultTimerContinentalGuard = 0;
 const int defaultTimerMortar = 0;
-const int defaultTimerUsedShips = 0; //WTP, ray Kings Used Ship - START
-const int defaultTimerForeignImmigrants = 0; // WTP, ray, Foreign Kings, buy Immigrants - START
 const int defaultTimerNativeSlave = 0;
 const int defaultTimerAfricanSlaves = 0;
 const int defaultTimerStealingImmigrant = 0;
@@ -310,6 +308,13 @@ enum SavegameVariableTypes
 
 	PlayerSave_TempUnitId,
 
+	PlayerSave_WillingToBargain_Enummap,
+	PlayerSave_TimeNoTrade_Enummap,
+	PlayerSave_TimerUsedShipsAndImmigrants,
+	// WTP, Schmiddie, persistent quest log texts - START
+	PlayerSave_mapQuestMessages,
+	// WTP, Schmiddie, persistent quest log texts - END
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -508,6 +513,13 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 
 	case PlayerSave_OppressometerDiscriminationModifier: return "PlayerSave_OppressometerDiscriminationModifier";
 	case PlayerSave_OppressometerForcedLaborModifier: return "PlayerSave_OppressometerForcedLaborModifier";
+
+	case PlayerSave_WillingToBargain_Enummap: return "PlayerSave_WillingToBargain_Enummap";
+	case PlayerSave_TimeNoTrade_Enummap: return "PlayerSave_TimeNoTrade_Enummap";
+	case PlayerSave_TimerUsedShipsAndImmigrants: return "PlayerSave_TimerUsedShipsAndImmigrants";
+	// WTP, Schmiddie, persistent quest log texts - START
+	case PlayerSave_mapQuestMessages: return "PlayerSave_mapQuestMessages";
+	// WTP, Schmiddie, persistent quest log texts - END
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -577,7 +589,6 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iTimerPirates = defaultTimerPirates;
 	m_iTimerContinentalGuard = defaultTimerContinentalGuard;
 	m_iTimerMortar = defaultTimerMortar;
-	m_iTimerUsedShips = defaultTimerUsedShips; //WTP, ray Kings Used Ship
 	m_iTimerNativeSlave = defaultTimerNativeSlave;
 	m_iTimerAfricanSlaves = defaultTimerAfricanSlaves;
 	m_iTimerStealingImmigrant = defaultTimerStealingImmigrant;
@@ -586,12 +597,10 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iKingNumUnitMultiplier = defaultKingNumUnitMultiplier;
 	m_iMissionarySuccessPercent = defaultMissionarySuccessPercent;
 	m_iNativeTradePostSuccessPercent = defaultNativeTradePostSuccessPercent; // WTP, ray, Native Trade Posts - START
-	m_iTimeNoTrade = defaultTimeNoTrade;
 
 	m_iDSecondPlayerFrenchNativeWar = defaultIDSecondPlayerFrenchNativeWar; //WTP, ray, Colonial Intervention In Native War - START
 
 	m_bAlive = defaultAlive;
-	m_bWillingToBargain = defaultWillingToBargain;
 	m_bEverAlive = defaultEverAlive;
 	m_bTurnActive = defaultTurnActive;
 	m_bAutoMoves = defaultAutoMoves;
@@ -708,7 +717,9 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_mapCultureHistory.clear();
 	m_mapEventsOccured.clear();
 	m_mapEventCountdown.clear();
-
+	// WTP, Schmiddie, persistent quest log texts - START
+	m_mapQuestMessages.clear();
+	// WTP, Schmiddie, persistent quest log texts - END
 	m_aFreeUnitCombatPromotions.clear();
 	m_aFreeUnitClassPromotions.clear();
 	m_aEuropeRevolutionUnits.clear();
@@ -718,8 +729,8 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_triggersFired.clear();
 
 	// R&R, ray, Bargaining - START
-	m_bWillingToBargain = false;
-	m_iTimeNoTrade = 0;
+	m_em_bWillingToBargain.reset();
+	m_em_iTimeNoTrade.reset();
 	// R&R, ray, Bargaining - END
 
 	m_iDSecondPlayerFrenchNativeWar = 0; //WTP, ray, Colonial Intervention In Native War - START
@@ -751,12 +762,8 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iChurchFavoursReceived = 0; // R&R, ray, Church Favours
 
 	//WTP, ray Kings Used Ship - START
-	m_iTimerUsedShips = 0;
+	m_em_TimerUsedShipsAndImmigrants.reset();
 	//WTP, ray Kings Used Ship - END
-
-	// WTP, ray, Foreign Kings, buy Immigrants - START
-	m_iTimerForeignImmigrants = 0;
-	// WTP, ray, Foreign Kings, buy Immigrants - END
 }
 
 void CvPlayer::read(CvSavegameReader reader)
@@ -837,8 +844,8 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_TimerPirates: reader.Read(m_iTimerPirates); break;
 		case PlayerSave_TimerContinentalGuard: reader.Read(m_iTimerContinentalGuard); break;
 		case PlayerSave_TimerMortar: reader.Read(m_iTimerMortar); break;
-		case PlayerSave_TimerUsedShips: reader.Read(m_iTimerUsedShips); break;	//WTP, ray Kings Used Ship - START
-		case PlayerSave_TimerForeignImmigrants: reader.Read(m_iTimerForeignImmigrants); break;	// WTP, ray, Foreign Kings, buy Immigrants - START
+		case PlayerSave_TimerUsedShips: reader.Discard<int>(); break;	//WTP, ray Kings Used Ship - START
+		case PlayerSave_TimerForeignImmigrants: reader.Discard<int>(); break;	// WTP, ray, Foreign Kings, buy Immigrants - START
 		case PlayerSave_TimerNativeSlave: reader.Read(m_iTimerNativeSlave); break;
 		case PlayerSave_TimerAfricanSlaves: reader.Read(m_iTimerAfricanSlaves); break;
 		case PlayerSave_TimerStealingImmigrant: reader.Read(m_iTimerStealingImmigrant); break;
@@ -848,12 +855,12 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_KingNumUnitMultiplier: reader.Read(m_iKingNumUnitMultiplier); break;
 		case PlayerSave_MissionarySuccessPercent: reader.Read(m_iMissionarySuccessPercent); break;
 		case PlayerSave_NativeTradePostSuccessPercent: reader.Read(m_iNativeTradePostSuccessPercent); break; // WTP, ray, Native Trade Posts - START)
-		case PlayerSave_TimeNoTrade: reader.Read(m_iTimeNoTrade); break;
+		case PlayerSave_TimeNoTrade: reader.Discard<int>(); break;
 
 		case PlayerSave_iDSecondPlayerFrenchNativeWar: reader.Read(m_iDSecondPlayerFrenchNativeWar); break;	// WTP, ray, Big Colonies and Native Allies War - START
 
 		case PlayerSave_Alive: reader.Read(m_bAlive); break;
-		case PlayerSave_WillingToBargain: reader.Read(m_bWillingToBargain); break;
+		case PlayerSave_WillingToBargain: reader.Discard<bool>(); break;
 		case PlayerSave_EverAlive: reader.Read(m_bEverAlive); break;
 		case PlayerSave_TurnActive: reader.Read(m_bTurnActive); break;
 		case PlayerSave_AutoMoves: reader.Read(m_bAutoMoves); break;
@@ -962,7 +969,25 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_mapCultureHistory: reader.Read(m_mapCultureHistory); break;
 		case PlayerSave_mapEventsOccured: reader.Read(m_mapEventsOccured); break;
 		case PlayerSave_mapEventCountdown: reader.Read(m_mapEventCountdown); break;
+		// WTP, Schmiddie, persistent quest log texts - START
+		case PlayerSave_mapQuestMessages:
+		{
+			int iSize;
+			reader.Read(iSize);
 
+			for (int i = 0; i < iSize; ++i)
+			{
+				int iTriggeredId;
+				CvWString szMessage;
+
+				reader.Read(iTriggeredId);
+				reader.Read(szMessage);
+
+				m_mapQuestMessages[iTriggeredId] = szMessage;
+			}
+			break;
+		}
+		// WTP, Schmiddie, persistent quest log texts - END
 		case PlayerSave_FreeUnitCombatPromotions: reader.Read(m_aFreeUnitCombatPromotions); break;
 		case PlayerSave_FreeUnitClassPromotions: reader.Read(m_aFreeUnitClassPromotions); break;
 		case PlayerSave_EuropeRevolutionUnits: reader.Read(m_aEuropeRevolutionUnits); break;
@@ -973,6 +998,10 @@ void CvPlayer::read(CvSavegameReader reader)
 
 		case PlayerSave_OppressometerDiscriminationModifier: reader.Discard<int>(); break;
 		case PlayerSave_OppressometerForcedLaborModifier: reader.Discard<int>(); break;
+
+		case PlayerSave_WillingToBargain_Enummap: reader.Read(m_em_bWillingToBargain); break;
+		case PlayerSave_TimeNoTrade_Enummap: reader.Read(m_em_iTimeNoTrade); break;
+		case PlayerSave_TimerUsedShipsAndImmigrants: reader.Read(m_em_TimerUsedShipsAndImmigrants); break;
 
 		case PlayerSave_CacheUpdate:
 			// Updating cache prior to reading anything, which relies on cache to load properly or set other caches
@@ -1076,8 +1105,6 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_TimerPirates, m_iTimerPirates, defaultTimerPirates);
 	writer.Write(PlayerSave_TimerContinentalGuard, m_iTimerContinentalGuard, defaultTimerContinentalGuard);
 	writer.Write(PlayerSave_TimerMortar, m_iTimerMortar, defaultTimerMortar);
-	writer.Write(PlayerSave_TimerUsedShips, m_iTimerUsedShips, defaultTimerUsedShips); //WTP, ray Kings Used Ship - START
-	writer.Write(PlayerSave_TimerForeignImmigrants, m_iTimerForeignImmigrants , defaultTimerForeignImmigrants); // WTP, ray, Foreign Kings, buy Immigrants - START
 	writer.Write(PlayerSave_TimerNativeSlave, m_iTimerNativeSlave, defaultTimerNativeSlave);
 	writer.Write(PlayerSave_TimerAfricanSlaves, m_iTimerAfricanSlaves, defaultTimerAfricanSlaves);
 	writer.Write(PlayerSave_TimerStealingImmigrant, m_iTimerStealingImmigrant, defaultTimerStealingImmigrant);
@@ -1088,12 +1115,10 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_KingNumUnitMultiplier, m_iKingNumUnitMultiplier, defaultKingNumUnitMultiplier);
 	writer.Write(PlayerSave_MissionarySuccessPercent, m_iMissionarySuccessPercent, defaultMissionarySuccessPercent);
 	writer.Write(PlayerSave_NativeTradePostSuccessPercent, m_iNativeTradePostSuccessPercent, defaultNativeTradePostSuccessPercent); // WTP, ray, Native Trade Posts - START
-	writer.Write(PlayerSave_TimeNoTrade, m_iTimeNoTrade, defaultTimeNoTrade);
 
 	writer.Write(PlayerSave_iDSecondPlayerFrenchNativeWar, m_iDSecondPlayerFrenchNativeWar, defaultIDSecondPlayerFrenchNativeWar); //WTP, ray, Colonial Intervention In Native War - START
 
 	writer.Write(PlayerSave_Alive, m_bAlive, defaultAlive);
-	writer.Write(PlayerSave_WillingToBargain, m_bWillingToBargain, defaultWillingToBargain);
 	writer.Write(PlayerSave_EverAlive, m_bEverAlive, defaultEverAlive);
 	writer.Write(PlayerSave_TurnActive, m_bTurnActive, defaultTurnActive);
 	writer.Write(PlayerSave_AutoMoves, m_bAutoMoves, defaultAutoMoves);
@@ -1224,7 +1249,19 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_mapCultureHistory, m_mapCultureHistory);
 	writer.Write(PlayerSave_mapEventsOccured, m_mapEventsOccured);
 	writer.Write(PlayerSave_mapEventCountdown, m_mapEventCountdown);
+	// WTP, Schmiddie, persistent quest log texts - START
+	if (!m_mapQuestMessages.empty())
+	{
+		writer.Write(PlayerSave_mapQuestMessages);
+		writer.Write((int)m_mapQuestMessages.size());
 
+		for (std::map<int, CvWString>::const_iterator it = m_mapQuestMessages.begin(); it != m_mapQuestMessages.end(); ++it)
+		{
+			writer.Write(it->first);
+			writer.Write(it->second);
+		}
+	}
+	// WTP, Schmiddie, persistent quest log texts - END
 	writer.Write(PlayerSave_FreeUnitCombatPromotions, m_aFreeUnitCombatPromotions);
 	writer.Write(PlayerSave_FreeUnitClassPromotions, m_aFreeUnitClassPromotions);
 	writer.Write(PlayerSave_EuropeRevolutionUnits, m_aEuropeRevolutionUnits);
@@ -1245,6 +1282,10 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_EuropeUnits, m_aEuropeUnits);
 	writer.Write(PlayerSave_AfricaUnits, m_aAfricaUnits);
 	writer.Write(PlayerSave_PortRoyalUnits, m_aPortRoyalUnits);
+
+	writer.Write(PlayerSave_WillingToBargain_Enummap, m_em_bWillingToBargain);
+	writer.Write(PlayerSave_TimeNoTrade_Enummap, m_em_iTimeNoTrade);
+	writer.Write(PlayerSave_TimerUsedShipsAndImmigrants, m_em_TimerUsedShipsAndImmigrants);
 
 	writer.Write(PlayerSave_END);
 }

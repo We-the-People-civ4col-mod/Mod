@@ -13,6 +13,7 @@
 
 class CvPlot;
 class CvArea;
+class CvUnitAI;
 class CvUnitInfo;
 class CvSelectionGroup;
 class FAStarNode;
@@ -77,6 +78,9 @@ class CvUnit : public CvDLLEntity
 
 public:
 
+	__forceinline CvUnitAI& AI() { return (CvUnitAI&)*this; }
+	__forceinline const CvUnitAI& AI() const { return (CvUnitAI&)*this; }
+
     /** NBMOD REF **/
 
     float NBMOD_GetShipStrength() const;
@@ -105,11 +109,11 @@ public:
 
 	void updateCombat(bool bQuick = false);
 
-	bool isActionRecommended(int iAction);
+	bool isActionRecommended(int iAction) const;
 	bool isBetterDefenderThan(const CvUnit* pDefender, const CvUnit* pAttacker, bool bBreakTies) const;
 
-	bool canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible = false, bool bTestBusy = true);
-	DllExport void doCommand(CommandTypes eCommand, int iData1, int iData2);
+	bool canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible = false, bool bTestBusy = true) const;
+	void doCommand(CommandTypes eCommand, int iData1, int iData2);
 
 	//FAStarNode* getPathLastNode() const; // disabled by K-Mod
 	CvPlot* getPathEndTurnPlot() const;
@@ -140,7 +144,7 @@ public:
 	void automate(AutomateTypes eAutomate);
 	bool canScrap() const;
 	void scrap();
-	bool canGift(bool bTestVisible = false, bool bTestTransport = true);
+	bool canGift(bool bTestVisible = false, bool bTestTransport = true) const;
 	void gift(bool bTestTransport = true);
 	bool canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCheckCity) const;
 	void loadUnit(CvUnit* pTransport);
@@ -401,7 +405,7 @@ public:
 	DllExport CvSelectionGroup* getGroup() const;
 	bool canJoinGroup(const CvPlot* pPlot, CvSelectionGroup* pSelectionGroup) const;
 	DllExport void joinGroup(CvSelectionGroup* pSelectionGroup, bool bRemoveSelected = false, bool bRejoin = true);
-	DllExport int getHotKeyNumber();
+	int getHotKeyNumber() const;
 	void setHotKeyNumber(int iNewValue);
 	//TAC Whaling, ray
 	bool isFullToBrim() const;
@@ -438,8 +442,10 @@ public:
 	void jumpTo(CvPlot *plot, bool bGroup = false, bool bUpdate = true, bool bShow = false, bool bCheckPlotVisible = false);
 	bool at(int iX, int iY) const;
 	bool at(Coordinates testCoord) const;
+	bool at(CvPlot const& kPlot) const { return atPlot(&kPlot); }
 	DllExport bool atPlot(const CvPlot* pPlot) const;
 	DllExport CvPlot* plot() const;
+	CvPlot& getPlot() const { return *plot(); } // advc
 	CvCity* getCity() const;
 	int getArea() const;
 	int getLandArea() const;
@@ -501,8 +507,8 @@ public:
 	bool isAlwaysHeal() const;
 	void changeAlwaysHealCount(int iChange);
 
-	int getHillsDoubleMoveCount() const;
-	bool isHillsDoubleMove() const;
+	int getHillOrPeakDoubleMoveCount() const;
+	bool isHillOrPeakDoubleMove() const;
 	void changeHillsDoubleMoveCount(int iChange);
 
 	int getExtraVisibilityRange() const;
@@ -623,6 +629,11 @@ public:
 	UnitTypes getUnitType() const;
 	DllExport CvUnitInfo &getUnitInfo() const;
 	UnitClassTypes getUnitClassType() const;
+	// WTP, Schmiddie: units that cannot capture cities
+	bool isNoCityCaptureUnit() const;
+	bool raidCityByRebels(CvCity* pCity);
+	UnitClassTypes getRaidCaptureUnitClass() const;
+
 
 	DllExport UnitTypes getLeaderUnitType() const;
 	void setLeaderUnitType(UnitTypes leaderUnitType);
@@ -691,6 +702,7 @@ public:
 	int getSubUnitsAlive(int iDamage) const;
 
 	DllExport bool isEnemy(TeamTypes eTeam, const CvPlot* pPlot = NULL) const;
+	bool isEnemy(CvPlot const& kPlot) const;
 	bool isPotentialEnemy(TeamTypes eTeam, const CvPlot* pPlot = NULL) const;
 
 	int getTriggerValue(EventTriggerTypes eTrigger, const CvPlot* pPlot, bool bCheckPlot) const;
@@ -730,12 +742,27 @@ public:
 	void setHomeCity(CvCity* pNewValue);
 	CvCity* getHomeCity() const;
 
-	DllExport bool isOnMap() const;
+	DllExport bool isOnMap() const
+	{
+		return isOnMap_(); 
+	}
+	
+	bool isOnMap_() const
+	{
+		if (getUnitTravelState() != NO_UNIT_TRAVEL_STATE) 
+			return false;
+		if ((getX_INLINE() == INVALID_PLOT_COORD) || (getY_INLINE() == INVALID_PLOT_COORD))
+			return false;
+		if (isTempUnit())
+			return false;
+		return true;
+	}
+
 	const CvArtInfoUnit* getArtInfo(int i) const;
 	DllExport char const* getButton() const;
 	char const* getFullLengthIcon() const;
 
-	bool isColonistLocked();
+	bool isColonistLocked() const;
 	void setColonistLocked(bool bNewValue);
 
 	// < JAnimals Mod Start >
@@ -832,10 +859,39 @@ public:
 	
 	bool canChangeProfession() const;
 
+	bool isAllowDirectPath() const;
+	void setAllowDirectPath(bool bNewValue, bool bRefreshUi = false);
+	
+	int getRemainingMovesAfterPFMoves(int iPFMoves) const;
+
+	void writeDesyncLog(FILE* f) const;
+	std::string CvUnit::debugString() const;
+	bool canMoveIntoPeak() const;
+
+	// Unit movement abilities that may change due to traits, promotions etc.
+	struct UnitVariableMovementAbility
+	{
+		// Modifiers that may allow faster movement
+		// Note that none of these toggle impassables
+		int m_iEnemyRouteCount;
+		int m_iHillOrPeakDoubleMoveCount;
+		int m_iExtraMoves;
+		int m_iExtraMoveDiscount;
+		TerrainArray<int> m_ja_iTerrainDoubleMoveCount;
+		FeatureArray<int> m_ja_iFeatureDoubleMoveCount;
+
+		void reset()
+		{
+			m_iEnemyRouteCount = 0;
+			m_iHillOrPeakDoubleMoveCount = 0;
+			m_iExtraMoves = 0;
+			m_iExtraMoveDiscount = 0;
+			m_ja_iTerrainDoubleMoveCount.reset();
+			m_ja_iFeatureDoubleMoveCount.reset();
+		}
+	};
+
 protected:
-
-	void updateVisibilityCache(int iNewRange);
-
 
 	int m_iID;
 	int m_iGroupID;
@@ -859,12 +915,8 @@ protected:
 	int m_iBlitzCount;
 	int m_iAmphibCount;
 	int m_iRiverCount;
-	int m_iEnemyRouteCount;
 	int m_iAlwaysHealCount;
-	int m_iHillsDoubleMoveCount;
 	int m_iVisibilityRange;
-	int m_iExtraMoves;
-	int m_iExtraMoveDiscount;
 	int m_iExtraWithdrawal;
 	int m_iExtraBombardRate;
 	int m_iExtraEnemyHeal;
@@ -938,6 +990,7 @@ protected:
 	// R&R, ray, Natives Trading - END
 
 	bool m_bAllowDangerousPath;
+	bool m_bAllowDirectPath;
 
 	UnitTravelStates m_eUnitTravelState;
 
@@ -953,8 +1006,6 @@ protected:
 
 	EnumMap<PromotionTypes, bool> m_embHasRealPromotion;
 	PromotionArray<int> m_ja_iFreePromotionCount;
-	TerrainArray<int> m_ja_iTerrainDoubleMoveCount;
-	FeatureArray<int> m_ja_iFeatureDoubleMoveCount;
 	TerrainArray<int> m_ja_iExtraTerrainAttackPercent;
 	TerrainArray<int> m_ja_iExtraTerrainDefensePercent;
 	FeatureArray<int> m_ja_iExtraFeatureAttackPercent;
@@ -962,6 +1013,8 @@ protected:
 	UnitClassArray<int> m_ja_iExtraUnitClassAttackModifier;
 	UnitClassArray<int> m_ja_iExtraUnitClassDefenseModifier;
 	UnitCombatArray<int> m_ja_iExtraUnitCombatModifier;
+
+	UnitVariableMovementAbility m_movementAbility;
 
 	bool canAdvance(const CvPlot* pPlot, int iThreshold) const;
 
@@ -971,8 +1024,7 @@ protected:
 	void increaseBattleRounds( CvBattleDefinition & battleDefinition ) const;
 	int computeWaveSize( bool bRangedRound, int iAttackerMax, int iDefenderMax ) const;
 
-	void getDefenderCombatValues(CvUnit& kDefender, const CvPlot* pPlot, int iOurStrength, int iOurFirepower, int& iTheirOdds, int& iTheirStrength, int& iOurDamage, int& iTheirDamage, CombatDetails* pTheirDetails = NULL) const;
-
+	
 	bool isCombatVisible(const CvUnit* pDefender) const;
 	void resolveCombat(CvUnit* pDefender, CvPlot* pPlot, CvBattleDefinition& kBattle);
 
@@ -983,13 +1035,13 @@ protected:
 	void doUnloadYield(int iAmount);
 	bool raidWeapons(std::vector<int>& aYields);
 	bool isPrisonerOrSlave() const;
+	void updateVisibilityCache(int iNewRange);
 
-// unit yield cache - start - Nightinggale
-protected:
+	// unit yield cache - start - Nightinggale
 	void updateYieldCache();
 	YieldTypes getYieldUncached() const;
 	YieldTypes m_eCachedYield;
-// unit yield cache - end - Nightinggale
+	// unit yield cache - end - Nightinggale
 	int getCargoValue(TradeLocationTypes eLocation) const;
 	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO - START
 	//int canCrossCoastOnly() const;
@@ -998,6 +1050,7 @@ protected:
 	EnumMap<PromotionTypes, bool> m_embisPromotionApplied;
 
 public:
+	void getDefenderCombatValues(CvUnit& kDefender, const CvPlot* pPlot, int iOurStrength, int iOurFirepower, int& iTheirOdds, int& iTheirStrength, int& iOurDamage, int& iTheirDamage, CombatDetails* pTheirDetails = NULL) const;
 	int getForcedLaborFactor() const;
 	int getDiscriminationFactor() const;
 

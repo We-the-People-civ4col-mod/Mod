@@ -51,6 +51,9 @@ public:
 
 	DllExport void update();
 	void updateScore(bool bForce = false);
+	// <advc.003y>
+	int getScoreComponent(int iRawScore, int iInitial, int iMax, int iMultiplier,
+		bool bExponential, bool bFinal, bool bVictory) const; // </advc.003y>
 
 	DllExport void updateColoredPlots();
 
@@ -88,7 +91,7 @@ public:
 
 	DllExport void getGlobeviewConfigurationParameters(TeamTypes eTeam, bool& bStarsVisible, bool& bWorldIsRound);
 
-	int getProductionPerPopulation(HurryTypes eHurry);
+	int getProductionPerPopulation(HurryTypes eHurry) const;
 
 	int getAdjustedPopulationPercent(VictoryTypes eVictory) const;
 	int getAdjustedLandPercent(VictoryTypes eVictory) const;
@@ -102,34 +105,34 @@ public:
 
 	static int countCivPlayerEuropeanAI();
 
-	int countTotalCivPower();
+	int countTotalCivPower() const;
 
 	int getImprovementUpgradeTime(ImprovementTypes eImprovement) const;
 
 	EraTypes getCurrentEra() const;
 
-	DllExport TeamTypes getActiveTeam();
-	DllExport CivilizationTypes getActiveCivilizationType();
+	TeamTypes getActiveTeam() const;
+	CivilizationTypes getActiveCivilizationType() const;
 
 	unsigned int getLastEndTurnMessageSentTime();
 	DllExport bool isNetworkMultiPlayer() const;
 	DllExport bool isGameMultiPlayer() const;
 	DllExport bool isTeamGame() const;
 
-	bool isModem();
+	bool isModem() const;
 	void setModem(bool bModem);
 	DllExport void reviveActivePlayer();
 
-	DllExport int getNumHumanPlayers();
+	int getNumHumanPlayers() const;
 
 	int getEndTurnMessagesSent();
 	DllExport void incrementEndTurnMessagesSent();
 
-	DllExport int getGameTurn();
+	int getGameTurn() const;
 	void setGameTurn(int iNewValue);
 	void incrementGameTurn();
-	int getTurnYear(int iGameTurn);
-	int getGameTurnYear();
+	int getTurnYear(int iGameTurn) const;
+	int getGameTurnYear() const;
 
 	int getElapsedGameTurns() const;
 	void incrementElapsedGameTurns();
@@ -171,8 +174,8 @@ public:
 	int getMaxTurnLen();
 	int getTargetScore() const;
 
-	int getNumGameTurnActive();
-	DllExport int countNumHumanGameTurnActive();
+	int getNumGameTurnActive() const;
+	int countNumHumanGameTurnActive() const;
 	void changeNumGameTurnActive(int iChange);
 	int getNumCities() const;
 	void changeNumCities(int iChange);
@@ -184,7 +187,7 @@ public:
 	int getInitLand() const;
 	int getInitFather() const;
 	DllExport void initScoreCalculation();
-	int getAIAutoPlay();
+	int getAIAutoPlay() const;
 	DllExport void setAIAutoPlay(int iNewValue);
 	void changeAIAutoPlay(int iChange);
 	unsigned int getInitialTime();
@@ -214,16 +217,16 @@ public:
 
 	bool isPlayerOptionsSent() const;
 	void sendPlayerOptions(bool bForce = false);
-	DllExport PlayerTypes getActivePlayer() const;
+	PlayerTypes getActivePlayer() const;
 	DllExport void setActivePlayer(PlayerTypes eNewValue, bool bForceHotSeat = false);
 	DllExport void updateUnitEnemyGlow();
 
 	HandicapTypes getHandicapType() const;
 	void setHandicapType(HandicapTypes eHandicap);
-	DllExport PlayerTypes getPausePlayer();
-	DllExport bool isPaused();
+	PlayerTypes getPausePlayer() const;
+	bool isPaused() const;
 	DllExport void setPausePlayer(PlayerTypes eNewValue);
-	DllExport int getBestLandUnitCombat();
+	int getBestLandUnitCombat() const;
 	void setBestLandUnitCombat(int iNewValue);
 	DllExport TeamTypes getWinner() const;
 	DllExport VictoryTypes getVictory() const;
@@ -239,13 +242,13 @@ public:
 	int getCultureLevelThreshold(CultureLevelTypes eCultureLevel, PlayerTypes ePlayer) const;
 	int getCargoYieldCapacity() const;
 
-	PlayerTypes getRankPlayer(int iRank);
+	PlayerTypes getRankPlayer(int iRank) const;
 	void setRankPlayer(int iRank, PlayerTypes ePlayer);
-	DllExport int getPlayerScore(PlayerTypes ePlayer);
+	int getPlayerScore(PlayerTypes ePlayer) const;
 	void setPlayerScore(PlayerTypes ePlayer, int iScore);
-	TeamTypes getRankTeam(int iRank);
+	TeamTypes getRankTeam(int iRank) const;
 	void setRankTeam(int iRank, TeamTypes eTeam);
-	int getTeamRank(TeamTypes eTeam);
+	int getTeamRank(TeamTypes eTeam) const;
 	void setTeamRank(TeamTypes eTeam, int iRank);
 	int getTeamScore(TeamTypes eTeam) const;
 	void setTeamScore(TeamTypes eTeam, int iScore);
@@ -255,25 +258,25 @@ public:
 	void setMPOption(MultiplayerOptionTypes eIndex, bool bEnabled);
 	bool isForcedControl(ForceControlTypes eIndex) const;
 	void setForceControl(ForceControlTypes eIndex, bool bEnabled);
-	int getUnitCreatedCount(UnitTypes eIndex);
+	int getUnitCreatedCount(UnitTypes eIndex) const;
 	void incrementUnitCreatedCount(UnitTypes eIndex);
-	int getUnitClassCreatedCount(UnitClassTypes eIndex);
+	int getUnitClassCreatedCount(UnitClassTypes eIndex) const;
 	void incrementUnitClassCreatedCount(UnitClassTypes eIndex);
-	int getBuildingClassCreatedCount(BuildingClassTypes eIndex);
+	int getBuildingClassCreatedCount(BuildingClassTypes eIndex) const;
 	void incrementBuildingClassCreatedCount(BuildingClassTypes eIndex);
 	bool isVictoryValid(VictoryTypes eIndex) const;
-	bool isSpecialUnitValid(SpecialUnitTypes eIndex);
+	bool isSpecialUnitValid(SpecialUnitTypes eIndex) const;
 	void makeSpecialUnitValid(SpecialUnitTypes eIndex);
 
-	bool isSpecialBuildingValid(SpecialBuildingTypes eIndex);
+	bool isSpecialBuildingValid(SpecialBuildingTypes eIndex) const;
 	void makeSpecialBuildingValid(SpecialBuildingTypes eIndex, bool bAnnounce = false);
 
-	bool isUniqueGoodyValid(GoodyTypes eIndex); // R&R, ray, Goody Enhancement
+	bool isUniqueGoodyValid(GoodyTypes eIndex) const; // R&R, ray, Goody Enhancement
 	void setUniqueGoodyValid(GoodyTypes eIndex, bool bValid); // R&R, ray, Goody Enhancement
 
 	bool isInAdvancedStart() const;
 
-	DllExport const CvWString & getName();
+	const CvWString & getName() const;
 	void setName(char const* szName);
 
 	// Script data needs to be a narrow string for pickling in Python
@@ -296,8 +299,8 @@ public:
 	void addShipName(const CvWString& szName);
 	// TAC - Ship Names - Ray - END
 
-	DllExport int getIndexAfterLastDeal();
-	int getNumDeals();
+	int getIndexAfterLastDeal() const;
+	int getNumDeals() const;
 	DllExport CvDeal* getDeal(int iID);
 	CvDeal* addDeal();
 	void deleteDeal(int iID);
@@ -312,9 +315,13 @@ public:
 	CvRandom& getSorenRand();
 	const CvRandom& getSorenRand() const;
 	int getSorenRandNum(int iNum, const char* pszLog);
+	
+	int getAsyncRandom(int iNum);
 
-	DllExport int calculateSyncChecksum(CvString* pLogString);
-	DllExport int calculateOptionsChecksum();
+	void applyNetworkRandomAsync(PlayerTypes ePlayer);
+
+	int calculateSyncChecksum(CvString* pLogString) const;
+	int calculateOptionsChecksum() const;
 
 	void addReplayMessage(ReplayMessageTypes eType = NO_REPLAY_MESSAGE, PlayerTypes ePlayer = NO_PLAYER, CvWString pszText = L"",
 		int iPlotX = -1, int iPlotY = -1, ColorTypes eColor = NO_COLOR)
@@ -379,18 +386,18 @@ public:
 	void changeYieldBoughtTotal(TradeLocationTypes eLocation, PlayerTypes eMainEurope, YieldTypes eYield, int iChange) const;
 
 	// < JAnimals Mod Start >
-	PlayerTypes getBarbarianPlayer();
-    bool hasBarbarianPlayer();
+	PlayerTypes getBarbarianPlayer() const;
+    bool hasBarbarianPlayer() const;
     void setBarbarianPlayer(PlayerTypes eNewValue);
-    bool isBarbarianPlayer(PlayerTypes ePlayer);
+    bool isBarbarianPlayer(PlayerTypes ePlayer) const;
 	PlayerTypes getNextPlayerType() const;
 	// < JAnimals Mod End >
 
 	// R&R, ray, the Church - START
-	PlayerTypes getChurchPlayer();
-    bool hasChurchPlayer();
+	PlayerTypes getChurchPlayer() const;
+    bool hasChurchPlayer() const;
     void setChurchPlayer(PlayerTypes eNewValue);
-    bool isChurchPlayer(PlayerTypes ePlayer);
+    bool isChurchPlayer(PlayerTypes ePlayer) const;
 	// R&R, ray, the Church - END
 
 	// R&R, ray, Correct Geographical Placement of Natives - START
@@ -411,6 +418,17 @@ public:
 
 	// tells if an OOS has been detected this turn
 	bool isNetworkOOSActive() const;
+
+	void initPassthroughYieldCache();
+
+	// Yields which are passthrough in at least one profession (consumed and produced).
+	std::vector<YieldTypes> g_aePassthroughYields;
+	// Outputs which are gated by one or more passthrough yields (capacity-based).
+	std::vector<YieldTypes> g_aeGatedOutputs;
+	// For each output E: passthrough yields Y that provide capacity for producing E.
+	std::vector<YieldTypes> g_aeCapacityYieldsForOutput[NUM_YIELD_TYPES];
+	// For each yield Y: professions that passthrough Y (consume Y and produce Y).
+	std::vector<ProfessionTypes> g_aPassthroughProfsForYield[NUM_YIELD_TYPES];
 
 	static const int PLOT_OCEAN_DISTANCE_IMPASSABLE_THRESHOLD = 1000;
 
@@ -491,6 +509,7 @@ protected:
 
 	CvRandom m_mapRand;
 	CvRandom m_sorenRand;
+	EnumMap<PlayerTypes, CvRandom> m_em_AsyncRand;
 	ReplayMessageList m_listReplayMessages;
 	CvReplayInfo* m_pReplayInfo;
 

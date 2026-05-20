@@ -1,5 +1,278 @@
 We the People Changelog
 
+Version 4.2.1
+
+Fixes:
+- goodies outcome set to have a minimum turn for appearing will no longer appear from the start
+- Founding Father Jacques Marquette is no longer offered 117 times, resulting in 116 extra FF offered sounds
+- Units off map will no longer take damage if a storm appears on the last plot they were on before leaving for Europe etc
+- Fixed potiential crash in CvCityAI::AI_assignWorkingPlots
+- #1147 Quest to build a monastery will no longer pick a plot where monasteries can't be build
+- The mod no longer writes CvPythonExtensions.hlp.txt in the game dir when starting, potientially resulting in errors due to write permission
+- promotions with negative movement will no longer cause units to become completely unable to move
+- negative promotions can now be repaired in forts (matching what colopedia has said from the start)
+- marked more goodie outcomes as bad (for no bad outcome feature)
+- #1152 tooltip for production in colony screen now applies production loss from lack of input (like doesn't show hammers if there is no lumber)
+- #1163 opening the domestic advisor is now faster due to rewritten code to get an overview of trade routes
+- added unit help popup when choosing which expert a student will become
+- native raids will no longer destroy buildings, which are added for free due to trait or founding father (as those buildings wouldn't disappear)
+- #1161 declaring war on somebody you have a defensive pact with will no longer cause you to declare war on yourself, which would result in a crash
+- AI is now way more determined to found a colony quickly and in a better location, avoiding the AI spending 100 turns and then settle in a location far from Europe
+- disabled events, which triggered over and over and caused scouts to get stuck forever. They will return once the trigger frequency has been balanced
+- fixed vanilla issue where AI_updateAssignWork() got called for each main loop iteration, which caused framerate stuttering in late game
+- loading 4.1 savegames will no longer corrupt game options, resulting in players being unable to found more than one colony (can't fix games already broken by being loaded in 4.2)
+- fixed possible python error when random events check if Port Royal can be accessed
+- scenarios running out of valid natives to add will no longer add a George Washington for each native failing to be placed
+- boost startup time by not looking for packed assets (we don't use packed assets). Starting the mod will set this setting for the following startup
+- #1180 completed quests will no longer keep running the timer and tell that it failed once it runs out
+
+AI
+- CvUnitAI::AI_travelToPort no longer enters undefined behavior if called by a player other than colonial players
+- CvCityAI::AI_assignWorkingPlots is now less likely to fail to employ a citizen
+
+New pathfinding
+- CvSelectionGroup::getPathCost() can no longer overflow and result in negative movement cost
+- #1099 fixed pathfinding sometimes displaying one path while moving on another
+- some cases where the chosen path isn't the fastest path
+
+Network sync fixes:
+- #1151 opening the choose production popup window
+- #1079 nargaining with natives
+- randomness in countless random events
+- all 17 singleplayer only random events can now trigger in multiplayer without causing sync issues
+- buying used ships and foreign immigrants cooldown wasn't synced (never triggered displaying OOS through)
+- savegames now saves cooldown for used ships and foreign immigrants for all players, not just host
+- #1179 clicking dangerous and direct path buttons will now sync the new setting
+
+Changes for mod creators
+- XML editor can once again save meta data
+- Added desync monitor internal tool for tracking network sync issues
+- new exe interface for plot related functions
+- new exe interface for popup window creation
+- added XMLUpdater to batch update xml files
+
+
+
+Version 4.2
+
+
+Hotkey changes (to avoid clashes)
+Load remains L
+Load Goods is now Shift+L
+
+Build Road is still R
+Build Country Road is still R (same as Road, but they will never overlap since Road is a requirement for this upgrade)
+Build Paved Country Road is now Alt+R
+
+Route To (Best available) is now Shift+Alt+R
+Route To (country road) is now Shift+Ctrl+R)
+Route to (simple road) is now Shift+R
+
+Build Hunter's Stage is now Ctrl+R
+Build Salina is now Ctrl+R (Salina is currently not available ingame)
+
+
+
+Changes:
+- 44 new events
+- countless adjustments of events
+- Switching between new and classic movement system can now be set at game start rather than at compile time
+- Events can now have help popup
+- Domestic demands now has a mouseover help to explain the numbers
+- UNIT_SEASONED_TRADER no longer has hidden nationality
+- If multiple players/teams tries to get the same founding father the same turn, the winner is now determined by most FF points stored. This eliminates unfairness due to turn play order
+- Seal hunters can now also be bought in Africa
+- New art for multiple Founding Fathers
+- Colony crime events now have a dedicated crime sound effect
+- New buttons to allow units to turn on/off if they should be allowed to use dangerous movement paths
+- Ships arriving from Europe or other offmap locations will no longer spawn inside storms and take damage right away
+- Goats can now breed on taiga
+- Becalm event will now not trigger until colonial population is at least 3
+- Colony growth unit now depends on the population without adding weight to the randomness. This means if a colony has 20% of a specific etnicity, there is a 20% chance the new unit will have that one.
+- Fruit plantation no longer requires flatlands
+- Hardwood can now show up on grassland and plains
+- Civic slavery adjusted (independence choice)
+- Down and Wild Bird Feathers can now be used interchangably for furniture, coats and boots
+- Scenarios can now pick colony catchment radius (game no longer use the txt file for this setting)
+- Custom houses can now sell to both Europe and Africa (auto picks whatever has the highest price)
+- Domestic advisor now has an export advisor, which shows how much is bought and sold in Europe/Africa/Port Royal
+- Colony rename popup now allows 42 characters rather than the vanilla 15 (the vanilla window size has room for 42 characters)
+- Unit help will now inform if the unit can only defend
+- UnitCombatType is now reported in Colopedia (useful information related to promotions. For instance +X% vs mounted makes you want to know which units are mounted)
+- Trade route advisor now has two more columns: distance and import amount at destination
+- Colopedia: unit page now has yield icons, which are clickable links to yield pages (like yields demands). Professions now print names of yields next to the icons
+- Domestic market prices now follows prices in Europe rather than calculating a semi random price for each colony. There are still modifiers to prevent the prices from being the same as in Europe
+
+Translations:
+- Too many updates to count properly
+- Updated languages: English, French, German, Russian
+- Baked goods have been renamed to provisions
+
+Balance:
+- Adjusted prices for bargaining with natives
+- Industrialist trait is now more powerful
+- Timmerman now has the same education level as Carpenter (as intended)
+- Events can now have a minimum turn requirement, which should help against being wiped out by a random event early on
+- #1011 Units stopping at danger now view danger at a longer range (2 for land, based on visibility for ships)
+
+New Balancing for buildup game speed:
+- 200 turns: 2 per year (one per half year)
+- 200 turns: 4 per year (one per quarter)
+- 300 turns: 6 per year (one per 3 months)
+=> 700 turns until 1692
+- rest: 12 turns per year (one per month)
+
+Maps:
+- Polar ice is now generated more randomly
+- Reduced the number of hills on random maps
+- Americas - Random maps no longer spawn all Europeans in Southern Ice
+
+AI:
+- AI now properly detects Schooner for use with trade and unit transport
+- #933 AI is now more likely to consider ship access when planning where to found colonies
+- AI will found first colony with direct deep water access (it will no longer get water access through a settlement and then destroy the settlement)
+- AI will no longer remove goodies (ruins) by any other mean than exploration
+- AI will now seek out land early on instead of sometimes randomly sail around on the ocean for multiple turns because it didn't know which direction to explore
+- All native units can now found new settlements
+- AI will now buy fewer mulattoes
+- AI is no longer banned from entering plots with turn damage (like storms). Pathfinding will however strongly try to avoid damage if possible.
+- When hurring a unit in Europe, the AI will now pick from all units available instead of just the first 3 (probably overlooked when units increased from 3 to 4)
+- Natives now have Wild Animal Hunter Promotions as Free Promotions. The AI is unaware that natives won't fight animals, which makes those promotions useless.
+- AI code for finding suitable locations for new colonies now handles colonies on the edge of the map correctly
+- AI stopped buying slaves in Africa (it did it way too much)
+- #610 CvUnitAI::AI_sailTo now picks the shortest route in turns rather than lowest path cost
+- #779 New movement system: AI now prefers paths with arrival the same turn if possible
+- #610 Sail to Europe will now try to leave movement points to allow leaving the map the same turn
+- Sailing to Europe now takes the off map travel time into account rather than always aiming for the closest plot to leave the map regardless of travel time from said plot
+
+Fixes:
+- Järnsmed's production bonus is now 135% (up from 133%) to get around an int rounding issue, which in some cases nerfed output to be the same as Master Blacksmith
+- Carriages can now use ferries to cross large rivers
+- Fixed many bugs related to selling in Europe/Africa/Port Royal regarding display of sales, tax changes, price changes, trade counters
+- #1031 Counters for exports for quests (first to sell X something) will no longer reset on tax changes
+- #49 Barbarians (animals) and church players will no longer be added if they are already in the game (rare scenario issue when scenario creator and player used different languages)
+- #928 Taxes are now completely capped from increasing if max tax rate has been reached
+- Automated whaling boat will no longer ignore humpback whales
+- Prisoner of war unit is now correctly identified as a prisoner by the code internals
+- Tundra will no longer prevent building mines on plots, which would otherwise allow it
+- #921 Getting attacked by a pirate and then defeating it will no longer reveal the owner of the pirate
+- 12 terrain features no longer blocks visibility (such as lush grass, meadows etc)
+- #519 Automated ships heading for Europe/Africa/Port Royal will now stop if an enemy is spotted within 2 plots
+- #948 CvUnit::canLead now agrees on its condition with CvUnit::canGiveExperience (allows admiral to lead more ship types)
+- Domestic Advisor: goto colony now works for all colonies (used to not work on all if the list became too long)
+- #953 negative promotions can now only be removed in colonies
+- Names of ships, cities and generals and admirals can now be translated
+- Americas Huge premade maps now have east and west Europe access set correctly (west end is supposed to take longer)
+- #959 Filling the cross bar will no longer prevent hurrying units on the dock for the rest of the turn
+- Rivers will no longer cause hardwood, logwood or valuable wood to be produced if the plot can't already produce those
+- #971 EVENTTRIGGER_PIRATEATTACK1 will now spawn pirate ships if the player refuse to pay ransom
+- #974 Defensive only units now have no withdrawal change because they can't use it anyway
+- Monasteries no longer display harbor values since they don't actually function as canals
+- #923: Citizens can now leave colonies as colonists even if they have no movement points left
+- Fixed missing logwood icon
+- #997 Quests requireing exports of certain amounts will now complete when the announced amount has been reached (printed value and trigger went out of sync for some of them)
+- #994 Ships entering cities will now remain in the water area next to the city rather than letting the AI area evaluation assume it has become a land unit
+- Fixed incorrect AI cache values, such as military strength (cached total power)
+- Fixed a number of Network Sync (OOS) issues
+- Screen for first turn will no longer have units overlapping text if the player starts with more than 3 units
+- Events, which causes a unit to be unable to move will no longer trigger on units already unable to move
+- Fixed missing unit popup
+- Blitz promotion has been removed from gunpowder units as attacking multiple times per turn is useless for units with just one movement point
+- Capturing prisoners of war will no longer be able to capture the defending plot (like colony on it) if there are still other defending units on that plot
+- Captured ships now spawns at the attacker's plot if there are more defenders
+- Vanilla bug: plots will no longer remember owner city as one, which used to be there, but got destroyed. This caused issues if a new city is founded elsewhere, which gets assigned the same now free ID.
+- Founding father names now show correctly (fixed xml setup issue)
+- Fishing nets now have the intended requirements when build on freshwater (large rivers and lakes)
+- The option to declare war due to pirates will no longer be available if peace is forced like just after signing a peace treaty
+- Civilians inside ships can no longer be captured if the ship is in a colony and the colony is attacked
+- Building fishing nets will no longer freeze the fish animation on the plot
+- #1006 Transports will no longer be able to load more cargo than a colony has (triggered when destination was overflowing). This is believed to be the cause of the negative storage bug.
+- #1006 Import limits are no longer ignored when target colony is overflowing
+- Fixed vanilla bug where plots would get marked as accessible from Europe even if ice blocks the path
+- Selling ships now depends on the local price rather than the price in Europe. This allows selling ships, which can't be bought in Europe.
+- #893 Units in ships inside colonies will no longer display help popup for the wrong unit
+- Random used ship for sale now uses the intended formula for randomness bias and will always exclude non-ocean going ships as it will spawn in Europe (no reports of coastal ships being offered through)
+- #993 Founding Fathers can no longer spawn coastal ships in Europe. Code now tries a lot harder to find suitable spawn locations in the new world
+- If a Founding Father makes use of the "spawn in Europe" fallback (that's extremely unlikely), units will now spawn in Port Royal if war of independence is ongoing
+- Starting a new game or loading a game will now reset diplomacy timers correctly. Various timers would not get loaded correctly if they were 0 when saving, like turns until king offers unit for sale
+- #1037 killing, converting or clearing specialty of a unit will now force redraw the colony screen (prevents leaving a ghost unit behind)
+- #767 CvUnitInfo::getArtInfo now uses unit owner rather than active player in more (all?) cases
+- #877 Units with hidden nationality can no longer board ships without hidden nationality (solves issues where such land units could attack ships in certain cases)
+- #898 Removing a fort will no longer cause plots to be visible when they should be covered in fog of war
+- Visibility cache (fog of war) is now recalculated when starting/loading a game and when closing world builder (fixes some edge cases where plots were incorrectly visible)
+- #1044 Building tooltips will now show building yield changes at the building instead of at a profession
+- Unit help popup no longer shows "Can only defend" twice
+- CvCity::getUnhappinessFromTaxRate will no longer try to calculate this for non-colonial players, which could result in undefined outcomes due to not having a king to ask about taxes
+- #1091 ship to ship transfers of yields works again
+- When an OOS occurs, the generate OOS log button will no longer toggle on/off. Instead it will stay visible for the rest of the turn
+- Fixed ships becoming stuck in Port Royal after the "withdraw all privateers" event has triggered
+- #1073: certain quests no longer fails if a unit leaves the map, like joining a colony
+- Fix minor cheat that allowed players to determine whether a plot had fresh water access, even though the adjacent fresh-water plot was unrevealed.
+- Water terrain is now set correctly (coast, lakes etc) before adding features and bonuses. Hopefully this will prevent whales in lakes.
+- #1111 citizens should no longer vanish if the work assignment fails to give them a profession. Instead the code will try harder and anybody, which still fails to get a job will be kicked out of the colony
+- #1114 water workers (e.g. fishing boat) will no longer show recommended plot builds
+- #1103 Correct display of secondary yield actual/max amounts for professions with multiple outputs (e.g. hunter profession)
+- #1118: Implemented proper support for professions with a second yield output (and a truckload of other issues)
+- Native raids will now only burn visible buildings, like they will not burn the pier if a dock is present
+
+Graphics:
+- Seaguls in Europe now works as intended even during the first turn
+- 10 professions no longer shows a native unit in Colopedia
+- Rice bonus graphics fixed
+- Eccentric Architect updated
+- Updated Founding Father Art: Admiral William Penn, Carl von Linnes, Eusebio Francisco Kino, Otto Friedrich von der Groeben, Robert Carter I, Robert Blackwell, Sir John Harvey
+- Forts on the map rescaled
+- Swedish Heavy Artillery bugfix (hitbox) and added team color
+- New warning button for city crime
+- Tavern and saloon now has new graphics
+- Visual changes for farms
+- Added missing animation for a bunch of units (lost count around 25)
+- Added blood spatter combat effect
+
+Crash and freeze fixes:
+- Fixed crash in edge case when loading yields into a transport unit and the yield merges with existing cargo rather than taking up a new slot
+- Fixed crash when a text xml fails to read correctly (now has a proper error message about playing with missing text)
+- Fixed crash if killing a unit if said unit lost which plot it is on
+- Fixed crash/freeze when looping units in a group if that group contains a NULL unit (multiple cases of this. All loops reviewed)
+- #979 Rewritten text xml loading in order to fix vanilla problems reading the files when the computer is using a language with 2 byte locales (mainly East Asian languages like Japanese, Chinese, Thai etc)
+- Fixed infinite loop (freezing bug) in CvSelectionGroup::canStartMission
+- #1005 Running out of unit group IDs crashes the game, so we merged a number of one unit groups in a number of cases
+- Fixed crash when applying a timed event, which isn't in the event trigger queue
+- Calling CvPlot::isVisibleEnemyUnit no longer crashes the game if the unit isn't on the map (say is on the dock in Europe)
+- #1072 Saving scenario files will now skip non-ASCII characters in signs rather than crashing (solution from AdvCiv)
+- CvUnit::getTriggerValue will no longer crash if used on a unit, which isn't on a plot
+
+Performance boosts:
+- pathfinding
+- spawn sea animals
+- animal pathfinding
+- reduced lag when selecting a unit (from K-mod). Most noticable on big maps.
+- Removed calls to python where the python code then does nothing
+- Many improvements too minor to mention individually (provides sum of many effect through)
+- Unit selection is now less laggy
+
+XML editor:
+- Added support for editing xml files in an external mod, including BTS mods
+- Closing and reopening the editor will no longer cause a CTD
+- Fixed various small bugs uncovered after it started being used for real
+- Performance boosting related to skipping unneeded screen redraws
+
+Internals/modding:
+- Stop loading vanilla text xml files. This forces the mod to contain all used text, hence providing access for translators
+- Lots of tweaks to avoid the code from having undefined behavior (by modern standards)
+- Compiler now complains if python uses an xml enum value, which doesn't exist in xml anymore
+- Countless minor performance boosts
+- Makefile overhead reduced. Compiling when no file needs recompiling now takes 33% less time
+- Mod now contains all python files from vanilla (modded or otherwise). This makes it way easier to get an overview of the code and search all files for specific function calls
+- Assert failures can report top two levels of call stack (easier to spot where bugs might be)
+- Start year is now in the mod, so it can be changed by xml alone (we didn't change the value through)
+- Re-implementation for WTP of the C2C generatePathForHypotheticalUnit feature
+- Event triggers can now require a number of units
+- Savegames now tells how many times WB has been opened. It's useful information when examining bugs.
+- Changed/added TradeLocationTypes xml/enum to merge Europe/Africa/Port Royal functions and started the merge process
+- Widget code now has const access to widget data to prevent future bugs where code accidentally modifies a widget when displaying help, is clicked or similar
+
+
 Version 4.1
 
 Changes:

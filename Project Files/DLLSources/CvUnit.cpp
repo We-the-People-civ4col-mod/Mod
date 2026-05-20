@@ -1,6 +1,7 @@
 // unit.cpp
 
 #include "CvGameCoreDLL.h"
+#include "CombatOdds.h"
 #include "CvUnit.h"
 #include "CvArea.h"
 #include "CvPlot.h"
@@ -12,7 +13,6 @@
 #include "CvPlayerAI.h"
 #include "CvRandom.h"
 #include "CvTeamAI.h"
-#include "CvGameCoreUtils.h"
 #include "CyUnit.h"
 #include "CyArgsList.h"
 #include "CyPlot.h"
@@ -435,7 +435,7 @@ void CvUnit::convert(CvUnit* pUnit, bool bKill)
 
 	if (bAlive)
 	{
-		if (pUnit->IsSelected() && isOnMap() && getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
+		if (pUnit->IsSelected() && isOnMap_() && getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
 		{
 			gDLL->getInterfaceIFace()->insertIntoSelectionList(this, true, false);
 		}
@@ -805,16 +805,17 @@ void CvUnit::doTurn()
 	// R&R, Robert Surcouf, Damage on Storm plots, Start
 	// R&R, bugfix: we only damage ships on Sea and not the transported units, ray, START
 	// WTP, ray, we also add logic to damage Units on Land by Land Storms like e.g. Blizzard and Sandstorm
-	if (getDomainType() == DOMAIN_SEA || (getDomainType() == DOMAIN_LAND && !plot()->isWater()))
+	// Off map units are immune from turn damage
+	if (isOnMap_() && (getDomainType() == DOMAIN_SEA || (getDomainType() == DOMAIN_LAND && !plot()->isWater())))
 	{
-		FeatureTypes eFeature = plot()->getFeatureType();
+		const FeatureTypes eFeature = plot()->getFeatureType();
 		if (NO_FEATURE != eFeature)
 		{
-			int iPotentialDamageFromFeaturePercent = GC.getFeatureInfo(eFeature).getTurnDamage();
+			const int iPotentialDamageFromFeaturePercent = GC.getFeatureInfo(eFeature).getTurnDamage();
 			if (0 != iPotentialDamageFromFeaturePercent)
 			{
 				// R&R, bugfix: we never destroy a unit from feature damage, ray, START
-				int iPotentialDamage = (maxHitPoints() * iPotentialDamageFromFeaturePercent) / 100;
+				const int iPotentialDamage = (maxHitPoints() * iPotentialDamageFromFeaturePercent) / 100;
 				if (currHitPoints() > iPotentialDamage)
 				{
 					//changeDamage(GC.getFeatureInfo(eFeature).getTurnDamage(), NO_PLAYER); Version Beyond The Sword
@@ -836,9 +837,9 @@ void CvUnit::doTurn()
 	else
 	{
 		//WTP, ray Negative Promotions - START
-		if(isHuman())
+		if (isHuman())
 		{
-			if (plot()->isCity())
+			if (plot()->isCity(true))
 			{
 				cleanseAllNegativePromotions();
 			}
@@ -1217,6 +1218,18 @@ void CvUnit::updateCombat(bool bQuick)
 		setAttackPlot(NULL);
 		setCombatUnit(NULL);
 
+		if (isNoCityCaptureUnit() && pPlot->isCity())
+		{
+			CvCity* pCity = pPlot->getPlotCity();
+			if (pCity != NULL)
+			{
+				raidCityByRebels(pCity);
+			}
+
+			getGroup()->clearMissionQueue();
+			return;
+		}
+
 		getGroup()->groupMove(pPlot, true, ((canAdvance(pPlot, 0)) ? this : NULL));
 
 		getGroup()->clearMissionQueue();
@@ -1480,20 +1493,31 @@ void CvUnit::updateCombat(bool bQuick)
 				GET_TEAM(pDefender->getTeam()).AI_changeWarSuccess(getTeam(), GLOBAL_DEFINE_WAR_SUCCESS_DEFENDING);
 			}
 
-			// R&R, ray, Natives raiding party - START
-			CvCity* pCity = pPlot->getPlotCity();
-			if (pCity != NULL)
+			if (isNoCityCaptureUnit())
 			{
-				if (bIsNativeRaid)
+				CvCity* pCity = pPlot->getPlotCity();
+				if (pCity != NULL)
 				{
-					raidCity(pCity);
-				}
-				else
-				{
-					raidGoods(pCity);
+					raidCityByRebels(pCity);
 				}
 			}
-			// R&R, ray, Natives raiding party - END
+			else
+			{
+				// R&R, ray, Natives raiding party - START
+				CvCity* pCity = pPlot->getPlotCity();
+				if (pCity != NULL)
+				{
+					if (bIsNativeRaid)
+					{
+						raidCity(pCity);
+					}
+					else
+					{
+						raidGoods(pCity);
+					}
+				}
+				// R&R, ray, Natives raiding party - END
+			}
 
 			// R&R, ray, Monasteries and Forts - START
 			if (bIsNativeRaid && pPlot->isFort())
@@ -1526,7 +1550,7 @@ void CvUnit::updateCombat(bool bQuick)
 			}
 			// TAC - AI purchases military units - koma13 - END
 		}
-
+		
 		// case: Attacker won, defender died
 		else if (pDefender->isDead())
 		{
@@ -1573,7 +1597,7 @@ void CvUnit::updateCombat(bool bQuick)
 
 			// We only want to have this for Military Combat between Europeans and Kings, and only during War
 			bool bAttackingPlayerInvalid = !kOwner.isPlayable(); // only playable Civs will capture Prisoners of War, to prevent future issues
-			bool bDefendingPlayerInvalid = GET_PLAYER(pDefender->getOwner()).isNative() || GC.getGameINLINE().isBarbarianPlayer(pDefender->getOwner());
+			bool bDefendingPlayerInvalid = GET_PLAYER(pDefender->getOwnerINLINE()).isNative() || GC.getGameINLINE().isBarbarianPlayer(pDefender->getOwnerINLINE());
 			bool bAttackingUnitInvalid = getDomainType() == DOMAIN_SEA || getUnitInfo().isAnimal() || getUnitInfo().isHiddenNationality();
 			bool bDefendingUnitInvalid = pDefender->getDomainType() == DOMAIN_SEA || pDefender->getUnitInfo().isAnimal() || pDefender->isCapturableLandUnit() || pDefender->getUnitInfo().isHiddenNationality();
 			bool bAtWar = GET_TEAM(getTeam()).isAtWar(pDefender->getTeam());
@@ -1724,7 +1748,12 @@ void CvUnit::updateCombat(bool bQuick)
 			gDLL->getEventReporterIFace()->combatResult(this, pDefender);
 
 			bool bAdvance = false;
-			const bool bRaided = raidWeapons(pDefender);
+			bool bRaided = false;
+
+			if (!isNoCityCaptureUnit())
+			{
+				bRaided = raidWeapons(pDefender);
+			}
 
 			// WTP, ray, prevent Barbarian Civs to eject all the unarmed Units to defend a City it just conquered - START
 			// if (!pDefender->isUnarmed() || GET_PLAYER(getOwnerINLINE()).isNative())
@@ -1809,7 +1838,12 @@ void CvUnit::updateCombat(bool bQuick)
 			}
 
 			bAdvance = canAdvance(pPlot, ((pDefender->canDefend()) ? 1 : 0));
-
+			// WTP, Schmiddie, cities raided by criminals
+			if (isNoCityCaptureUnit() && pPlot->isCity())
+			{
+				bAdvance = false;
+			}
+			// WTO, Schmiddie, cities raided by criminals
 			if (!bAdvance)
 			{
 				changeMoves(pPlot->movementCost(this, plot()));
@@ -1930,13 +1964,17 @@ void CvUnit::updateCombat(bool bQuick)
 
 			if (!bRaided)
 			{
-				// R&R, ray, Natives raiding party - START
+				// R&R, ray, Natives raiding party // WTP, Schmiddie cities raided by criminals - START 
 				CvCity* pCity = pPlot->getPlotCity();
 				if (pCity != NULL)
 				{
 					if (bIsNativeRaid)
 					{
 						raidCity(pCity);
+					}
+					else if (isNoCityCaptureUnit())
+					{
+						raidCityByRebels(pCity);
 					}
 					else
 					{
@@ -1946,7 +1984,7 @@ void CvUnit::updateCombat(bool bQuick)
 						}
 					}
 				}
-				// R&R, ray, Natives raiding party - END
+				// R&R, ray, Natives raiding party // WTP, Schmiddie cities raided by criminals - END
 			}
 
 			if (pPlot->getNumVisibleEnemyDefenders(this) == 0)
@@ -2131,7 +2169,7 @@ void CvUnit::updateCombat(bool bQuick)
 }
 
 
-bool CvUnit::isActionRecommended(int iAction)
+bool CvUnit::isActionRecommended(int iAction) const
 {
 	CvCity* pWorkingCity;
 	ImprovementTypes eImprovement;
@@ -2151,7 +2189,7 @@ bool CvUnit::isActionRecommended(int iAction)
 		return false;
 	}
 
-	CyUnit* pyUnit = new CyUnit(this);
+	CyUnit* pyUnit = new CyUnit((CvUnit*)this);
 	CyArgsList argsList;
 	argsList.add(gDLL->getPythonIFace()->makePythonObject(pyUnit));	// pass in unit class
 	argsList.add(iAction);
@@ -2215,7 +2253,7 @@ bool CvUnit::isActionRecommended(int iAction)
 		break;
 
 	case MISSION_BUILD:
-		if (pPlot->getOwner() == getOwnerINLINE())
+		if (pPlot->getOwnerINLINE() == getOwnerINLINE())
 		{
 			eBuild = ((BuildTypes)(GC.getActionInfo(iAction).getMissionData()));
 			FAssert(eBuild != NO_BUILD);
@@ -2424,11 +2462,11 @@ bool CvUnit::isBetterDefenderThan(const CvUnit* pDefender, const CvUnit* pAttack
 
 	if (iOurDefense == iTheirDefense)
 	{
-		if (isOnMap() && !pDefender->isOnMap())
+		if (isOnMap_() && !pDefender->isOnMap_())
 		{
 			++iOurDefense;
 		}
-		else if (!isOnMap() && pDefender->isOnMap())
+		else if (!isOnMap_() && pDefender->isOnMap_())
 		{
 			++iTheirDefense;
 		}
@@ -2450,7 +2488,7 @@ bool CvUnit::isBetterDefenderThan(const CvUnit* pDefender, const CvUnit* pAttack
 }
 
 
-bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible, bool bTestBusy)
+bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bTestVisible, bool bTestBusy) const
 {
 	CvUnit* pUnit;
 
@@ -2777,6 +2815,20 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 		}
 		break;
 
+	case COMMAND_ALLOW_DIRECT_PATH:
+		if (!USE_CLASSIC_MOVEMENT_SYSTEM && isGroupHead() && !isAllowDirectPath())
+		{
+			return true;
+		}
+		break;
+
+	case COMMAND_DISALLOW_DIRECT_PATH:
+		if (!USE_CLASSIC_MOVEMENT_SYSTEM && isGroupHead() && isAllowDirectPath())
+		{
+			return true;
+		}
+		break;
+
 	default:
 		FAssert(false);
 		break;
@@ -2905,12 +2957,16 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 			}
 			crossOcean((UnitTravelStates) iData1);
 			break;
+
 		/*** TRIANGLETRADE 10/25/08 by DPII ***/
 		case COMMAND_SAIL_TO_AFRICA:
 			sailToAfrica();
+			break;
+
 		// R&R, ray, Port Royal
 		case COMMAND_SAIL_TO_PORT_ROYAL:
 			sailToPortRoyal();
+			break;
 
 		case COMMAND_CHOOSE_TRADE_ROUTES:
 			// TAC - Trade Routes Advisor - koma13 - START
@@ -3025,7 +3081,7 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 
 		// R&R, ray , Stirring Up Natives - START
 		case COMMAND_STIR_UP_NATIVES:
-			if(isGroupHead())
+			if (isGroupHead())
 			{
 				stirUpNatives();
 			}
@@ -3034,7 +3090,7 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 		// R&R, ray , Stirring Up Natives - END
 
 		case COMMAND_SPEAK_WITH_CHIEF:
-			if(isGroupHead())
+			if (isGroupHead())
 			{
 				getGroup()->speakWithChief();
 			}
@@ -3046,7 +3102,7 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 
 		// TAC - Goto Menu - koma13 - START
 		case COMMAND_GOTO_MENU:
-			if (gDLL->getInterfaceIFace()->getHeadSelectedUnit() == this)
+			if (getOwnerINLINE() == GC.getGameINLINE().getActivePlayer() && gDLL->getInterfaceIFace()->getHeadSelectedUnit() == this)
 			{
 				CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_GOTO_MENU);
 				pInfo->setData1(getID());
@@ -3071,7 +3127,7 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 		// WTP, merge Treasures, of Raubwuerger - START
 		// ray, small improvement
 		case COMMAND_MERGE_TREASURES:
-			if(isGroupHead())
+			if (isGroupHead())
 			{
 				mergeTreasures();
 			}
@@ -3080,7 +3136,7 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 
 		// WTP, ray, Construction Supplies - START
 		case COMMAND_USE_CONSTRUCTION_SUPPLIES:
-			if(isGroupHead())
+			if (isGroupHead())
 			{
 				useProductionSupplies();
 			}
@@ -3088,16 +3144,30 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 		// WTP, ray, Construction Supplies - END
 
 		case COMMAND_ALLOW_DANGEROUS_PATH:
-			if (gDLL->getInterfaceIFace()->getHeadSelectedUnit() == this)
+			if (isGroupHead())
 			{
 				setAllowDangerousPath(true, /*bRefreshUi*/true);
 			}
 			break;
 
 		case COMMAND_DISALLOW_DANGEROUS_PATH:
-			if (gDLL->getInterfaceIFace()->getHeadSelectedUnit() == this)
+			if (isGroupHead())
 			{
 				setAllowDangerousPath(false, /*bRefreshUi*/true);
+			}
+			break;
+
+		case COMMAND_ALLOW_DIRECT_PATH:
+			if (isGroupHead())
+			{
+				setAllowDirectPath(true, /*bRefreshUi*/true);
+			}
+			break;
+
+		case COMMAND_DISALLOW_DIRECT_PATH:
+			if (isGroupHead())
+			{
+				setAllowDirectPath(false, /*bRefreshUi*/true);
 			}
 			break;
 
@@ -3618,23 +3688,8 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 
 	case DOMAIN_LAND:
 
-		// R&R, ray, Start Logik for Peaks
-		if (kPlot.isPeak() && kPlot.getRouteType() == NO_ROUTE)
-		{
-			// Anything else than Natives, Animals, Pioneers, Scouts, Native Mercenaries and Ranges cannot pass Peaks without Roads
-			/*
-			if (!isNative() && !m_pUnitInfo->isAnimal() && !(getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).getWorkRate() != 0) && !m_pUnitInfo->isNoBadGoodies() && m_pUnitInfo->getUnitClassType() != GC.getDefineINT("UNITCLASS_NATIVE_MERC") && m_pUnitInfo->getUnitClassType() != GC.getDefineINT("UNITCLASS_RANGER"))
-			*/
-			/// Move Into Peak - start - Nightinggale
-			// replaced DLL hardcoding with pure XML setup
-			// it's more friendly to xml modders and it's actually faster at runtime because less data will have to be checked
-			if (!(m_pUnitInfo->allowsMoveIntoPeak() || (getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).allowsMoveIntoPeak())))
-			/// Move Into Peak - end - Nightinggale
-			{
-				return false;
-			}
-		}
-		// R&R, ray, End Logik for Peaks
+		if (kPlot.isPeak() && kPlot.getRouteType() == NO_ROUTE && !canMoveIntoPeak())
+			return false;
 
 		// R&R, ray, Changes for Treasures, START
 		if (m_pUnitInfo->isTreasure() && kPlot.isGoody())
@@ -4213,7 +4268,7 @@ void CvUnit::scrap()
 }
 
 
-bool CvUnit::canGift(bool bTestVisible, bool bTestTransport)
+bool CvUnit::canGift(bool bTestVisible, bool bTestTransport) const
 {
 	CvPlot* pPlot = plot();
 	CvUnit* pTransport = getTransportUnit();
@@ -4416,7 +4471,7 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 
 	// WTP, ray, let us not have Land Transports transport other Land Transports, it feels stupid and might allow exploits - START
 	bool bTransportedUnitIsLandTransport = (getDomainType() == DOMAIN_LAND && getUnitInfo().getCargoSpace() > 0);
-	bool bTransportingUnitIsLandTransport = (pTransport->getDomainType() == DOMAIN_LAND && getUnitInfo().getCargoSpace() > 0);
+	bool bTransportingUnitIsLandTransport = (pTransport->getDomainType() == DOMAIN_LAND && pTransport->getUnitInfo().getCargoSpace() > 0);
 	if (bTransportedUnitIsLandTransport && bTransportingUnitIsLandTransport)
 	{
 		return false;
@@ -4752,40 +4807,28 @@ int CvUnit::loadYieldAmount(YieldTypes eYield, int iAmount, bool bTrade)
 	return iAmount; //R&R mod, vetiarvind, max yield import limit
 }
 
+// Returns how much of eYield the city can safely export (stored minus auto-maintain threshold, clamped to zero).
 int CvUnit::getMaxLoadYieldAmount(YieldTypes eYield) const
 {
-	int iMaxAmount = GC.getGameINLINE().getCargoYieldCapacity();
-	iMaxAmount = std::min(iMaxAmount, getLoadYieldAmount(eYield));
-	CvCity* pCity = plot()->getPlotCity();
+	// How much this unit can take at all (remaining space)
+	int iMaxAmount = getLoadYieldAmount(eYield);
+
+	const CvCity* const pCity = plot()->getPlotCity();
 	if (pCity != NULL)
 	{
-		int iMaxAvailable = pCity->getYieldStored(eYield);
-		if (!isHuman() || isAutomated())
-		{
-			// R&R, ray, improvement
-			if (!isHuman() && (pCity->getTotalYieldStored() > pCity->getMaxYieldCapacity() / 2))
-			{
-				// ray, making special storage capacity rules for Yields XML configurable
-				int iCargoYields = 0;
-				// for (YieldTypes eLoopYield = YIELD_HEMP; eLoopYield < NUM_YIELD_TYPES; ++eLoopYield)// without YIELD_FOOD, YIELD_LUMBER, YIELD_STONE
-				for (YieldTypes eLoopYield = FIRST_YIELD; eLoopYield < NUM_YIELD_TYPES; ++eLoopYield)
-				{
-					// ray, making special storage capacity rules for Yields XML configurable
-					if ((pCity->getYieldStored(eLoopYield) > 0) && (GC.getYieldInfo(eLoopYield).isCargo()) && !(GC.getYieldInfo(eLoopYield).isIgnoredForStorageCapacity()))
-						{iCargoYields++;}
-				}
+		int iMaxAvailable;
 
-				if(iCargoYields > 0)//R&R mod, vetiarvind, max yield import limit
-					iMaxAvailable -= (pCity->getMaintainLevel(eYield) / iCargoYields);
-			}
-			else
-				{
-					//iMaxAvailable -= pCity->getMaintainLevel(eYield);
-					// transport feeder - start - Nightinggale
-					iMaxAvailable -= pCity->getAutoMaintainThreshold(eYield);
-					// transport feeder - end - Nightinggale
-				}
+		if (isHuman() && !isAutomated())
+		{
+			// Manual human: no export limit, player decides
+			iMaxAvailable = pCity->getYieldStored(eYield);
 		}
+		else
+		{
+			// AI or automated human: respect auto-maintain threshold
+			iMaxAvailable = pCity->getExportAvailable(eYield);
+		}
+
 		iMaxAmount = std::min(iMaxAmount, iMaxAvailable);
 	}
 
@@ -4898,7 +4941,7 @@ void CvUnit::tradeYield()
 		pDiplo->setTransport(getIDInfo());
 		pDiplo->setCity(plot()->getPlotCity()->getIDInfo());
 		// R&R, ray, Bargaining - Start
-		if (GET_PLAYER(getOwnerINLINE()).isHuman() && GET_PLAYER(eOtherPlayer).getTimeNoTrade() > 0)
+		if (GET_PLAYER(getOwnerINLINE()).isHuman() && GET_PLAYER(eOtherPlayer).getTimeNoTrade(getOwnerINLINE()) > 0)
 		{
 			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_TEXT);
 			pInfo->setText(gDLL->getText("NO_TRADE_BECAUSE_BAD_BARGAIN", GET_PLAYER(eOtherPlayer).getCivilizationDescription()));
@@ -5081,20 +5124,7 @@ void CvUnit::crossOcean(UnitTravelStates eNewState)
 		return;
 	}
 
-	int iTravelTime = GC.getEuropeInfo(plot()->getEurope()).getTripLength();
-
-	iTravelTime *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
-	iTravelTime /= 100;
-
-	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
-	{
-		TraitTypes eTrait = (TraitTypes) iTrait;
-		if (GET_PLAYER(getOwnerINLINE()).hasTrait(eTrait))
-		{
-			iTravelTime *= 100 + GC.getTraitInfo(eTrait).getEuropeTravelTimeModifier();
-			iTravelTime /= 100;
-		}
-	}
+	const int iTravelTime = GET_PLAYER(getOwnerINLINE()).calculateEuropeTravelTime(plot()->getEurope());
 
 	setUnitTravelState(eNewState, false);
 	if (iTravelTime > 0)
@@ -5165,20 +5195,8 @@ void CvUnit::sailToAfrica(UnitTravelStates eNewState)
 		return;
 	}
 
-	int iTravelTime = GC.getEuropeInfo(plot()->getEurope()).getTripLength();
-
-	iTravelTime *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
-	iTravelTime /= 100;
-
-	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
-	{
-		TraitTypes eTrait = (TraitTypes) iTrait;
-		if (GET_PLAYER(getOwnerINLINE()).hasTrait(eTrait))
-		{
-			iTravelTime *= 100 + GC.getTraitInfo(eTrait).getEuropeTravelTimeModifier();
-			iTravelTime /= 100;
-		}
-	}
+	const int iTravelTime = GET_PLAYER(getOwnerINLINE()).calculateEuropeTravelTime(plot()->getEurope());
+	
 	if (eNewState == NO_UNIT_TRAVEL_STATE)
 	{
 		switch (getUnitTravelState())
@@ -5295,20 +5313,8 @@ void CvUnit::sailToPortRoyal(UnitTravelStates eNewState)
 		return;
 	}
 
-	int iTravelTime = GC.getEuropeInfo(plot()->getEurope()).getTripLength();
+	const int iTravelTime = GET_PLAYER(getOwnerINLINE()).calculateEuropeTravelTime(plot()->getEurope());
 
-	iTravelTime *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
-	iTravelTime /= 100;
-
-	for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
-	{
-		TraitTypes eTrait = (TraitTypes) iTrait;
-		if (GET_PLAYER(getOwnerINLINE()).hasTrait(eTrait))
-		{
-			iTravelTime *= 100 + GC.getTraitInfo(eTrait).getEuropeTravelTimeModifier();
-			iTravelTime /= 100;
-		}
-	}
 	if (eNewState == NO_UNIT_TRAVEL_STATE)
 	{
 		switch (getUnitTravelState())
@@ -5419,15 +5425,18 @@ bool CvUnit::canUnload() const
 		return false;
 	}
 
-	YieldTypes eYield = getYield();
+	const YieldTypes eYield = getYield();
 	if (eYield != NO_YIELD)
 	{
-		CvCity* pCity = plot()->getPlotCity();
+		CvCity* const pCity = plot()->getPlotCity();
 		FAssert(pCity != NULL);
 		if (pCity == NULL || !GET_PLAYER(getOwnerINLINE()).canUnloadYield(pCity->getOwnerINLINE()))
 		{
 			return false;
 		}
+	
+		// No need to check the space/capacity logic below for yields
+		return true;
 	}
 
 	// WTP, ray, Barracks System, check if there is still enough Barracks Space - START
@@ -5687,7 +5696,7 @@ bool CvUnit::canLearn() const
 
 	// R&R, ray, Natives do not talk when furious - START
 	// Erik: natives will not teach if a they are still angry due to bargaining
-	if (isHuman() && isAutomated())
+	if (isHuman())
 	{
 		const CvCity *const pCity = plot()->getPlotCity();
 		const PlayerTypes eNativePlayer = pCity->getOwnerINLINE();
@@ -5696,7 +5705,7 @@ bool CvUnit::canLearn() const
 		if (!nativePlayer.isHuman())
 		{
 			int currentPlayerAttitude = nativePlayer.AI_getAttitude(getOwnerINLINE(), false);
-			if (currentPlayerAttitude == ATTITUDE_FURIOUS || nativePlayer.getTimeNoTrade() > 0)
+			if (currentPlayerAttitude == ATTITUDE_FURIOUS || nativePlayer.getTimeNoTrade(getOwnerINLINE()) > 0)
 			{
 				return false;
 			}
@@ -6620,7 +6629,7 @@ void CvUnit::stirUpNatives()
 		{
 			CvUnit* pUnit = kCityOwner.initUnit(DefaultUnitType, GC.getCivilizationInfo(kCityOwner.getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());
 
-			CvPlayerAI& kNativeAI = GET_PLAYER(pCity->getOwner());
+			CvPlayerAI& kNativeAI = GET_PLAYER(pCity->getOwnerINLINE());
 			if (kNativeAI.AI_hasPotentialRaidTarget())
 			{
 				if (kNativeAI.AI_findTargetCity(pCity->area()) != NULL)
@@ -7426,12 +7435,6 @@ bool CvUnit::canFound(const CvPlot* pPlot, bool bTestVisible) const
 	}
 	// R&R, ray, changes to Wild Animals - END
 
-	// Erik: Eventually we'll check against a XML tag, but this'll have to do for now
-	if (isPrisonerOrSlave())
-	{
-		return false;
-	}
-
 	if (!m_pUnitInfo->isFound())
 	{
 		return false;
@@ -8021,7 +8024,7 @@ bool CvUnit::build(BuildTypes eBuild)
 		{
 			if(GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).isActsAsCity())
 			{
-				if(plot()->getOwner() == NO_PLAYER)
+				if(plot()->getOwnerINLINE() == NO_PLAYER)
 				{
 					plot()->setOwner(getOwnerINLINE(),true);
 				}
@@ -8403,7 +8406,7 @@ int CvUnit::upgradePrice(UnitTypes eUnit) const
 	int iPrice;
 
 	CyArgsList argsList;
-	argsList.add(getOwner());
+	argsList.add(getOwnerINLINE());
 	argsList.add(getID());
 	argsList.add((int) eUnit);
 	long lResult=0;
@@ -8983,7 +8986,7 @@ bool CvUnit::canMove() const
 		return false;
 	}
 
-	if (!isOnMap())
+	if (!isOnMap_())
 	{
 		return false;
 	}
@@ -9149,6 +9152,16 @@ bool CvUnit::isNoCityCapture() const
 
 bool CvUnit::isRivalTerritory() const
 {
+	// Gameplay rule: before a player has founded their first city, a unit in a
+	// founding profession may enter rival cultural borders
+	// as if it had the RivalTerritory ability. This helps the AI recover
+	// when it loses the settling race and would otherwise get bumped (i.e. teleported somewhere) by rival culture
+	if (getProfession() != NO_PROFESSION)
+	{
+		if (GC.getProfessionInfo(getProfession()).canFound() && GET_PLAYER(getOwnerINLINE()).getNumCities() == 0)
+			return true;
+	}
+
 	return m_pUnitInfo->isRivalTerritory();
 }
 
@@ -9425,7 +9438,7 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 			}
 		}
 
-			if (pPlot->getOwner() == getOwner())
+			if (pPlot->getOwnerINLINE() == getOwnerINLINE())
 		{
 			iExtraModifier = DomesticBonusModifier();
 			iModifier += iExtraModifier;
@@ -9487,7 +9500,7 @@ int CvUnit::maxCombatStr(const CvPlot* pPlot, const CvUnit* pAttacker, CombatDet
 			}
 		}
 
-		if (pAttackedPlot->getOwner() == pAttacker->getOwner())
+		if (pAttackedPlot->getOwnerINLINE() == pAttacker->getOwnerINLINE())
 		{
 			iExtraModifier = -pAttacker->DomesticBonusModifier();
 			iTempModifier += iExtraModifier;
@@ -9826,7 +9839,7 @@ bool CvUnit::isFortifyable() const
 		return false;
 	}
 
-	if (!isOnMap())
+	if (!isOnMap_())
 	{
 		return false;
 	}
@@ -9865,7 +9878,7 @@ int CvUnit::experienceNeeded() const
 
 		CyArgsList argsList;
 		argsList.add(getLevel());	// pass in the units level
-		argsList.add(getOwner());	// pass in the units
+		argsList.add(getOwnerINLINE());	// pass in the units
 
 		gDLL->getPythonIFace()->callFunction(PYGameModule, "getExperienceNeeded", argsList.makeFunctionArgs(), &lExperienceNeeded);
 
@@ -9937,7 +9950,7 @@ bool CvUnit::isRanged() const
 
 bool CvUnit::alwaysInvisible() const
 {
-	if (!isOnMap())
+	if (!isOnMap_())
 	{
 		return true;
 	}
@@ -9986,7 +9999,7 @@ bool CvUnit::isNeverInvisible() const
 
 bool CvUnit::isInvisible(TeamTypes eTeam, bool bDebug, bool bCheckCargo) const
 {
-	if (!isOnMap())
+	if (!isOnMap_())
 	{
 		return true;
 	}
@@ -10048,7 +10061,7 @@ int CvUnit::getEvasionProbability(const CvUnit& kAttacker) const
 
 CvCity* CvUnit::getEvasionCity() const
 {
-	if (!isOnMap())
+	if (!isOnMap_())
 	{
 		return NULL;
 	}
@@ -10395,101 +10408,80 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 {
 	PROFILE_FUNC();
 
-	// TAC - Trade Routes Advisor - koma13 - START
-	//if (cargoSpace() < 1 || GET_PLAYER(getOwnerINLINE()).getNumTradeRoutes() < 1)
 	if (cargoSpace() < 1)
-	// TAC - Trade Routes Advisor - koma13 - END
-	{
 		return false;
-	}
 
 	CvSelectionGroup* const pGroup = getGroup();
 	if (pGroup == NULL)
-	{
 		return false;
-	}
 
-	// TAC - Trade Routes Advisor - koma13 - START
-	/*
-	if (iRouteID == -1)
-	{
-		return true;
-	}
-	*/
-
+	// Cargo must be yields
 	CLinkList<IDInfo> listCargo;
 	pGroup->buildCargoUnitList(listCargo);
-	CLLNode<IDInfo>* pUnitNode = listCargo.head();
-	while (pUnitNode != NULL)
+	for (CLLNode<IDInfo>* pNode = listCargo.head(); pNode != NULL; pNode = listCargo.next(pNode))
 	{
-		CvUnit* const pLoopUnit = ::getUnit(pUnitNode->m_data);
-		pUnitNode = listCargo.next(pUnitNode);
-
-		if (pLoopUnit != NULL && pLoopUnit->getYield() == NO_YIELD)
+		if (CvUnit* const pCargo = ::getUnit(pNode->m_data))
 		{
-			return false;
+			if (pCargo->getYield() == NO_YIELD)
+				return false;
 		}
 	}
 
+	// “Any route” probe
 	if (iRouteID == -1)
-	{
 		return true;
-	}
-	// TAC - Trade Routes Advisor - koma13 - END
 
+	// Pull route
 	const PlayerTypes ePlayer = getOwnerINLINE();
 	FAssert(ePlayer != NO_PLAYER);
 	const CvPlayer& kPlayer = GET_PLAYER(ePlayer);
-	const CvTradeRoute* pTradeRoute = kPlayer.getTradeRoute(iRouteID);
-	
-	if (pTradeRoute == NULL)
-	{
+	const CvTradeRoute* const pRoute = kPlayer.getTradeRoute(iRouteID);
+	if (pRoute == NULL || pRoute->getYield() == NO_YIELD)
 		return false;
-	}
 
-	if (pTradeRoute->getYield() == NO_YIELD)
-	{
+	const IDInfo& kSrc = pRoute->getSourceCity();
+	const IDInfo& kDst = pRoute->getDestinationCity();
+
+	// Source city must exist
+	const CvCity* const pSource = ::getCity(kSrc);
+	if (pSource == NULL)
 		return false;
-	}
 
-	if (pTradeRoute->getDestinationCity() == IDInfo(ePlayer, CvTradeRoute::EUROPE_CITY_ID))
-	{
-		// Erik: Coastal transports cannot trade with Europe
-		if (canCrossCoastOnly())
-		{
-			return false;
-		}
-
-		if (getDomainType() != DOMAIN_SEA)
-		{
-			return false;
-		}
-
-		if (!kPlayer.isYieldEuropeTradable(pTradeRoute->getYield()))
-		{
-			return false;
-		}
-	}
-
-	CvCity* const pSource = ::getCity(pTradeRoute->getSourceCity());
-	// TAC - Trade Routes Advisor - koma13 - START
-	KmodPathFinder alt_finder;
+	KmodPathFinder pf;
 	const int iFlags = isIgnoreDanger() ? MOVE_IGNORE_DANGER : MOVE_NO_ENEMY_TERRITORY;
-	alt_finder.SetSettings(getGroup(), iFlags);
-	
-	if (pSource == NULL || !alt_finder.GeneratePath(pSource->plot()))
-	// TAC - Trade Routes Advisor - koma13 - END
-	{
+	pf.SetSettings(getGroup(), iFlags);
+
+	// Must be able to reach source
+	if (!pf.GeneratePath(pSource->plot()))
 		return false;
+
+	// Europe destination special case (no map city)
+	if (kDst.iID == CvTradeRoute::EUROPE_CITY_ID)
+	{
+		if (canCrossCoastOnly())
+			return false;
+		if (getDomainType() != DOMAIN_SEA)
+			return false;
+		if (!kPlayer.isYieldEuropeTradable(pRoute->getYield()))
+			return false;
+
+		// TODO: Perform actual pathfinding to a reachable Europe plot
+		return true;
 	}
 
-	CvCity* const pDestination = ::getCity(pTradeRoute->getDestinationCity());
-	// TAC - Trade Routes Advisor - koma13 - START
-	if (pDestination != NULL && !alt_finder.GeneratePath(pDestination->plot()))
-	// TAC - Trade Routes Advisor - koma13 - END
-	{
+	// Normal city to city (i.e. non-Europe dest) case below
+	const CvCity* const pDestination = ::getCity(kDst);
+	if (pDestination == NULL)
 		return false;
-	}
+
+	// Land units can’t cross areas directly. Note that we can't do a similar
+	// optimization for ships since they could potentially cross multiple areas (cities,forts,rivers,lakes etc)
+	if (getDomainType() == DOMAIN_LAND && pSource->getArea() != pDestination->getArea())
+		return false;
+
+	// Check actual reachability to destination
+	if (!pf.GeneratePath(pDestination->plot()))
+		return false;
 
 	return true;
 }
@@ -10695,7 +10687,7 @@ void CvUnit::joinGroup(CvSelectionGroup* pSelectionGroup, bool bRemoveSelected, 
 				}
 			}
 
-			if ((pNewSelectionGroup != NULL) && pNewSelectionGroup->addUnit(this, !isOnMap()))
+			if ((pNewSelectionGroup != NULL) && pNewSelectionGroup->addUnit(this, !isOnMap_()))
 			{
 				m_iGroupID = pNewSelectionGroup->getID();
 			}
@@ -10741,7 +10733,7 @@ void CvUnit::joinGroup(CvSelectionGroup* pSelectionGroup, bool bRemoveSelected, 
 }
 
 
-int CvUnit::getHotKeyNumber()
+int CvUnit::getHotKeyNumber() const
 {
 	return m_iHotKeyNumber;
 }
@@ -10989,12 +10981,12 @@ void CvUnit::jumpTo(Coordinates toCoord, bool bGroup, bool bUpdate, bool bShow, 
 		{
 			if(GC.getImprovementInfo(eImprovement).isActsAsCity() && !isNoUnitCapture())
 			{
-				if(pNewPlot->getOwner() != NO_PLAYER)
+				if(pNewPlot->getOwnerINLINE() != NO_PLAYER)
 				{
 					if(isEnemy(pNewPlot->getTeam()) && !canCoexistWithEnemyUnit(pNewPlot->getTeam()) && canFight())
 					{
 						CvWString szBuffer = gDLL->getText("TXT_KEY_MISC_CITY_CAPTURED_BY", GC.getImprovementInfo(eImprovement).getText(), GET_PLAYER(getOwnerINLINE()).getCivilizationDescriptionKey());
-						gDLL->UI().addPlayerMessage(pNewPlot->getOwner(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, GC.getImprovementInfo(eImprovement).getButton(), COLOR_RED, pNewPlot->getX_INLINE(), pNewPlot->getY_INLINE(), true, true);
+						gDLL->UI().addPlayerMessage(pNewPlot->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_CITYCAPTURED", MESSAGE_TYPE_MAJOR_EVENT, GC.getImprovementInfo(eImprovement).getButton(), COLOR_RED, pNewPlot->getX_INLINE(), pNewPlot->getY_INLINE(), true, true);
 						pNewPlot->setOwner(getOwnerINLINE(),true);
 					}
 				}
@@ -11360,7 +11352,7 @@ void CvUnit::setDamage(int iNewValue, CvUnit* pAttacker, bool bNotifyEntity)
 
 	FAssertMsg(currHitPoints() >= 0, "currHitPoints() is expected to be non-negative (invalid Index)");
 
-	if ((iOldValue != getDamage()) && isOnMap())
+	if ((iOldValue != getDamage()) && isOnMap_())
 	{
 		if (GC.getGameINLINE().isFinalInitialized() && bNotifyEntity)
 		{
@@ -11705,7 +11697,7 @@ void CvUnit::changeRiverCount(int iChange)
 
 int CvUnit::getEnemyRouteCount() const
 {
-	return m_iEnemyRouteCount;
+	return m_movementAbility.m_iEnemyRouteCount;
 }
 
 
@@ -11717,7 +11709,7 @@ bool CvUnit::isEnemyRoute() const
 
 void CvUnit::changeEnemyRouteCount(int iChange)
 {
-	m_iEnemyRouteCount = (m_iEnemyRouteCount + iChange);
+	m_movementAbility.m_iEnemyRouteCount = (m_movementAbility.m_iEnemyRouteCount + iChange);
 	FAssert(getEnemyRouteCount() >= 0);
 }
 
@@ -11741,22 +11733,22 @@ void CvUnit::changeAlwaysHealCount(int iChange)
 }
 
 
-int CvUnit::getHillsDoubleMoveCount() const
+int CvUnit::getHillOrPeakDoubleMoveCount() const
 {
-	return m_iHillsDoubleMoveCount;
+	return m_movementAbility.m_iHillOrPeakDoubleMoveCount;
 }
 
 
-bool CvUnit::isHillsDoubleMove() const
+bool CvUnit::isHillOrPeakDoubleMove() const
 {
-	return (getHillsDoubleMoveCount() > 0);
+	return (getHillOrPeakDoubleMoveCount() > 0);
 }
 
 
 void CvUnit::changeHillsDoubleMoveCount(int iChange)
 {
-	m_iHillsDoubleMoveCount = (m_iHillsDoubleMoveCount + iChange);
-	FAssert(getHillsDoubleMoveCount() >= 0);
+	m_movementAbility.m_iHillOrPeakDoubleMoveCount = (m_movementAbility.m_iHillOrPeakDoubleMoveCount + iChange);
+	FAssert(getHillOrPeakDoubleMoveCount() >= 0);
 }
 
 int CvUnit::getExtraVisibilityRange() const
@@ -11776,26 +11768,32 @@ void CvUnit::changeVisibilityRange(int iChange)
 
 int CvUnit::getExtraMoves() const
 {
-	return m_iExtraMoves;
+	return m_movementAbility.m_iExtraMoves;
 }
 
 
 void CvUnit::changeExtraMoves(int iChange)
 {
-	m_iExtraMoves += iChange;
-	FAssert(getExtraMoves() >= 0 || hasNegativePromotion());
+	m_movementAbility.m_iExtraMoves += iChange;
+	// Sanity check: unit should not end up completely immobile when on the map
+	// Note that basemoves can be temporarily set to 0 during the addPopulationUnit -> processPromotion
+	// call chain (for example when processing PROMOTION_FORCED_MARCH2)
+	if (isOnMap_())
+	{
+		FAssert(baseMoves() > 0);
+	}
 }
 
 
 int CvUnit::getExtraMoveDiscount() const
 {
-	return m_iExtraMoveDiscount;
+	return m_movementAbility.m_iExtraMoveDiscount;
 }
 
 
 void CvUnit::changeExtraMoveDiscount(int iChange)
 {
-	m_iExtraMoveDiscount = (m_iExtraMoveDiscount + iChange);
+	m_movementAbility.m_iExtraMoveDiscount = (m_movementAbility.m_iExtraMoveDiscount + iChange);
 	FAssert(getExtraMoveDiscount() >= 0);
 }
 
@@ -12147,7 +12145,7 @@ void CvUnit::setFacingDirection(DirectionTypes eFacingDirection)
 			m_eFacingDirection = eFacingDirection;
 		}
 
-		if (isOnMap())
+		if (isOnMap_())
 		{
 			//update formation
 			NotifyEntity(NO_MISSION);
@@ -12206,9 +12204,9 @@ bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce, bool bRemov
 				AI_setOldProfession(getProfession());
 			}
 		}
-		if (isOnMap() && eProfession != NO_PROFESSION && GC.getProfessionInfo(eProfession).isCitizen())
+		if (isOnMap_() && eProfession != NO_PROFESSION && GC.getProfessionInfo(eProfession).isCitizen())
 		{
-			CvCity* pCity = plot()->getPlotCity();
+			CvCity* const pCity = plot()->getPlotCity();
 			if (pCity != NULL)
 			{
 				if (canJoinCity(plot()))
@@ -12217,7 +12215,7 @@ bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce, bool bRemov
 					bool bLock = true;
 					if (GC.getProfessionInfo(eProfession).isWorkPlot())
 					{
-						int iPlotIndex = pCity->AI_bestProfessionPlot(eProfession, this);
+						const int iPlotIndex = pCity->AI_bestProfessionPlot(eProfession, this);
 						if (iPlotIndex != -1)
 						{
 							pCity->alterUnitWorkingPlot(iPlotIndex, getID(), false);
@@ -12236,7 +12234,7 @@ bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce, bool bRemov
 
 		// clean up from old profession
 		processProfession(getProfession(), -1, false, bRemoveYieldsFromCity);
-		ProfessionTypes eOldProfession = getProfession();
+		const ProfessionTypes eOldProfession = getProfession();
 
 		// actually change profession
 		m_eProfession = eProfession;
@@ -12248,14 +12246,29 @@ bool CvUnit::setProfession(ProfessionTypes eProfession, bool bForce, bool bRemov
 		}
 		processProfession(getProfession(), 1, true, bRemoveYieldsFromCity);
 
-		//reload unit model
-		reloadEntity();
+		bool shouldReloadEntity = true;
+		if (eOldProfession != NO_PROFESSION && m_eProfession != NO_PROFESSION)
+		{
+			const CvProfessionInfo& kOldProfessionInfo = GC.getProfessionInfo(eOldProfession);
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+
+			// Reloading the unit entity is not necessary when changing citizen profession since the
+			// unit is not visible on the map while working inside the city 
+			if (kOldProfessionInfo.isCitizen() && kProfession.isCitizen())
+				shouldReloadEntity = false;
+		}
+		
+		if (shouldReloadEntity)
+		{ 
+			//reload unit model
+			reloadEntity();
+		}
 		gDLL->getInterfaceIFace()->setDirty(Domestic_Advisor_DIRTY_BIT, true);
 	}
 
 	if (eProfession != NO_PROFESSION)
 	{
-		CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
 		if (!kProfession.isCitizen())
 		{
 			if (kProfession.getDefaultUnitAIType() != NO_UNITAI)
@@ -12446,7 +12459,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 			}
 
 			//do not allow leaving empty city
-			if (!kNewProfession.isCitizen() && !isOnMap())
+			if (!kNewProfession.isCitizen() && !isOnMap_())
 			{
 				// R&R, ray, Abandon City, START
 				if (pCity->getPopulation() <= 1)
@@ -12498,7 +12511,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 				// R&R, ray, Abandon City,  END
 			}
 
-			if (kNewProfession.isCitizen() && isOnMap())
+			if (kNewProfession.isCitizen() && isOnMap_())
 			{
 				if (!canJoinCity(pPlot))
 				{
@@ -12514,7 +12527,7 @@ bool CvUnit::canHaveProfession(ProfessionTypes eProfession, bool bBumpOther, con
 			return false;
 		}
 
-		if (isOnMap())
+		if (isOnMap_())
 		{
 			//TAC Whaling, ray
 			if (!getUnitInfo().isGatherBoat() && !gDLL->GetWorldBuilderMode())
@@ -12973,6 +12986,53 @@ UnitClassTypes CvUnit::getUnitClassType() const
 	return m_pUnitInfo->getUnitClassType();
 }
 
+// >>> WTP Schmiddie city attack for criminals <<<
+bool CvUnit::isNoCityCaptureUnit() const
+{
+	const UnitClassTypes eClass = (UnitClassTypes)getUnitInfo().getUnitClassType();
+
+	if (eClass == GC.getInfoTypeForString("UNITCLASS_REVOLTING_CRIMINAL"))
+		return true;
+
+	if (eClass == GC.getInfoTypeForString("UNITCLASS_REVOLTING_SLAVE"))
+		return true;
+
+	if (eClass == GC.getInfoTypeForString("UNITCLASS_REVOLTING_NATIVE_SLAVE"))
+		return true;
+
+	if (eClass == GC.getInfoTypeForString("UNITCLASS_REVOLTING_PRISONER_OF_WAR"))
+		return true;
+
+	return false;
+}
+
+UnitClassTypes CvUnit::getRaidCaptureUnitClass() const
+{
+	const UnitClassTypes eClass = (UnitClassTypes)getUnitInfo().getUnitClassType();
+
+	if (eClass == GC.getInfoTypeForString("UNITCLASS_REVOLTING_CRIMINAL"))
+	{
+		return (UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_CRIMINAL");
+	}
+
+	if (eClass == GC.getInfoTypeForString("UNITCLASS_REVOLTING_SLAVE"))
+	{
+		return (UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_AFRICAN_SLAVE");
+	}
+
+	if (eClass == GC.getInfoTypeForString("UNITCLASS_REVOLTING_NATIVE_SLAVE"))
+	{
+		return (UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_NATIVE_SLAVE");
+	}
+
+	if (eClass == GC.getInfoTypeForString("UNITCLASS_REVOLTING_PRISONER_OF_WAR"))
+	{
+		return (UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_PRISONER_OF_WAR");
+	}
+
+	return NO_UNITCLASS;
+}
+
 UnitTypes CvUnit::getLeaderUnitType() const
 {
 	return m_eLeaderUnitType;
@@ -13330,7 +13390,7 @@ int CvUnit::getTerrainDoubleMoveCount(TerrainTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_ja_iTerrainDoubleMoveCount.get(eIndex);
+	return m_movementAbility.m_ja_iTerrainDoubleMoveCount.get(eIndex);
 }
 
 
@@ -13346,7 +13406,7 @@ void CvUnit::changeTerrainDoubleMoveCount(TerrainTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumTerrainInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_ja_iTerrainDoubleMoveCount.add(iChange, eIndex);
+	m_movementAbility.m_ja_iTerrainDoubleMoveCount.add(iChange, eIndex);
 	FAssert(getTerrainDoubleMoveCount(eIndex) >= 0);
 }
 
@@ -13355,7 +13415,7 @@ int CvUnit::getFeatureDoubleMoveCount(FeatureTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	return m_ja_iFeatureDoubleMoveCount.get(eIndex);
+	return m_movementAbility.m_ja_iFeatureDoubleMoveCount.get(eIndex);
 }
 
 
@@ -13371,7 +13431,7 @@ void CvUnit::changeFeatureDoubleMoveCount(FeatureTypes eIndex, int iChange)
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumFeatureInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
-	m_ja_iFeatureDoubleMoveCount.add(iChange, eIndex);
+	m_movementAbility.m_ja_iFeatureDoubleMoveCount.add(iChange, eIndex);
 	FAssert(getFeatureDoubleMoveCount(eIndex) >= 0);
 }
 
@@ -13860,13 +13920,9 @@ void CvUnit::resetPromotions()
 	m_iBlitzCount = 0;
 	m_iAmphibCount = 0;
 	m_iRiverCount = 0;
-	m_iEnemyRouteCount = 0;
 	m_iAlwaysHealCount = 0;
-	m_iHillsDoubleMoveCount = 0;
-
+	
 	updateVisibilityCache(GC.getUNIT_VISIBILITY_RANGE());
-	m_iExtraMoves = 0;
-	m_iExtraMoveDiscount = 0;
 	m_iExtraWithdrawal = 0;
 	m_iExtraBombardRate = 0;
 	m_iExtraEnemyHeal = 0;
@@ -13893,17 +13949,17 @@ void CvUnit::resetPromotions()
 
 	m_ja_iExtraTerrainAttackPercent.reset();
 	m_ja_iExtraTerrainDefensePercent.reset();
-	m_ja_iTerrainDoubleMoveCount.reset();
-
+	
 	m_ja_iExtraFeatureAttackPercent.reset();
 	m_ja_iExtraFeatureDefensePercent.reset();
-	m_ja_iFeatureDoubleMoveCount.reset();
-
+	
 	m_ja_iExtraUnitClassAttackModifier.reset();
 	m_ja_iExtraUnitClassDefenseModifier.reset();
 
 	m_ja_iExtraUnitCombatModifier.reset();
 	m_ja_iExtraDomainModifier.reset();
+
+	m_movementAbility.reset();
 
 	if (getOwnerINLINE() != NO_PLAYER)
 	{
@@ -14330,6 +14386,13 @@ int CvUnit::computeWaveSize( bool bRangedRound, int iAttackerMax, int iDefenderM
 		iDefenderMax) );
 }
 
+// advc.opt: Separate function for potentially unowned plot
+bool CvUnit::isEnemy(CvPlot const& kPlot) const
+{
+	TeamTypes const ePlotTeam = kPlot.getTeam();
+	return (ePlotTeam != NO_TEAM && isEnemy(ePlotTeam, &kPlot));
+}
+
 bool CvUnit::isEnemy(TeamTypes eTeam, const CvPlot* pPlot) const
 {
 	if (NULL == pPlot)
@@ -14586,6 +14649,8 @@ bool CvUnit::isAlwaysHostile(const CvPlot* pPlot) const
 
 bool CvUnit::verifyStackValid()
 {
+	FAssertMsg(getGroup() != NULL, "Unit must be in a group!");
+
 	if (plot()->isVisibleEnemyUnit(this))
 	{
 		return jumpToNearestValidPlot();
@@ -14636,12 +14701,11 @@ void CvUnit::setYieldStored(int iYieldAmount)
 							CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
 							std::vector<UnitTypes> ordered_units;
 							// make a list of ordered units, where the owner can affort training them.
-							for (int iI = 0; iI < GC.getNumUnitInfos(); iI++)
+							for (UnitTypes eUnitType = FIRST_UNIT; eUnitType < NUM_UNIT_TYPES; ++eUnitType)
 							{
-								int iPrice = pCity->getSpecialistTuition((UnitTypes) iI);
+								int iPrice = pCity->getSpecialistTuition(eUnitType);
 								if (iPrice >= 0 && iPrice <= kPlayer.getGold())
 								{
-									UnitTypes eUnitType = (UnitTypes) iI;
 									for(int count = 0; count <	pCity->getOrderedStudents(eUnitType); count++)
 									{
 										// add one for each unit ordered, not just one for each type as a random one is selected in the end.
@@ -14929,7 +14993,7 @@ void CvUnit::setUnitTravelState(UnitTravelStates eState, bool bShowEuropeScreen)
 			}
 		}
 
-		if (!isOnMap())
+		if (!isOnMap_())
 		{
 			if (IsSelected())
 			{
@@ -15154,27 +15218,6 @@ CvCity* CvUnit::getHomeCity() const
 	return ::getCity(m_homeCity);
 }
 
-bool CvUnit::isOnMap() const
-{
-	if (getUnitTravelState() != NO_UNIT_TRAVEL_STATE)
-	{
-		return false;
-	}
-
-	if((getX_INLINE() == INVALID_PLOT_COORD) || (getY_INLINE() == INVALID_PLOT_COORD))
-	{
-		return false;
-	}
-
-	if (isTempUnit())
-	{
-		return false;
-	}
-
-	return true;
-}
-
-
 void CvUnit::doUnitTravelTimer()
 {
 	if (getUnitTravelTimer() > 0)
@@ -15219,7 +15262,7 @@ void CvUnit::doUnitTravelTimer()
 	}
 }
 
-bool CvUnit::isColonistLocked()
+bool CvUnit::isColonistLocked() const
 {
 	return m_bColonistLocked;
 }
@@ -15531,10 +15574,33 @@ bool CvUnit::raidBuilding(CvCity* pCity)
 	// WTP, ray, refactored according to advice of Nightinggale
 	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; eBuilding++)
 	{
-		CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
+		if (!pCity->isHasRealBuilding(eBuilding))
+		{
+			continue;
+		}
+
+		if (pCity->isHasFreeBuilding(eBuilding))
+		{
+			// no point in destroying a building, which will stay because it is free
+			continue;
+		}
+
+		if (!pCity->isDominantSpecialBuilding(eBuilding))
+		{
+			// skip buildings if the city has a higher tier of the same building class
+			// removing a pier if the city has docks results in buggy behavior
+			continue;
+		}
+
+		const CvBuildingInfo& kBuilding = GC.getBuildingInfo(eBuilding);
 		// R&R, ray fix for Buildings with workers destoryed
 		// only buildings without workers possible will be destroyed
-		if (pCity->isHasRealBuilding(eBuilding) && kBuilding.getMaxWorkers() == 0)
+
+		// TODO: add code to handle losing buildings with workers without causing new issues.
+		//  - needs to handle what workers should do if their slots vanishes
+		//  - needs to prevent the last carpenter slot from vanishing because without hammers, no hammer producing building can be constructed
+		// For the time being, skipping buildings with worker slots avoids those issues
+		if (kBuilding.getMaxWorkers() == 0)
 		{
 			aBuildings.push_back(eBuilding);
 		}
@@ -15545,7 +15611,10 @@ bool CvUnit::raidBuilding(CvCity* pCity)
 		return false;
 	}
 
-	BuildingTypes eTargetBuilding = aBuildings[GC.getGameINLINE().getSorenRandNum(aBuildings.size(), "Choose raid building")];
+	BuildingTypes eTargetBuilding = aBuildings.size() == 1
+		? aBuildings[0] // skip using random if there is only one candidate
+		: aBuildings[GC.getGameINLINE().getSorenRandNum(aBuildings.size(), "Choose raid building")];
+
 	pCity->setHasRealBuilding(eTargetBuilding, false);
 
 	GET_TEAM(getTeam()).AI_changeDamages(pCity->getTeam(), -GC.getBuildingInfo(eTargetBuilding).getAssetValue());
@@ -15780,7 +15849,7 @@ bool CvUnit::raidHarbor(CvCity* pCity)
 
 		if (pLoopUnit != NULL && pLoopUnit->getDomainType() == DOMAIN_SEA)
 		{
-			if (pLoopUnit->getOwner() == pCity->getOwner())
+			if (pLoopUnit->getOwnerINLINE() == pCity->getOwnerINLINE())
 			{
 				aShipUnits.push_back(pLoopUnit);
 			}
@@ -15931,6 +16000,194 @@ bool CvUnit::raidCity(CvCity* pCity)
 	return bRaided;
 }
 // R&R, ray, Natives raiding party - END
+// WTP, Schmiddie, Cities raided by criminals START
+bool CvUnit::raidCityByRebels(CvCity* pCity)
+{
+	FAssertMsg(isNoCityCaptureUnit(), "Only no-city-capture rebel units can use raidCityByRebels");
+
+	if (pCity == NULL)
+	{
+		return false;
+	}
+
+	bool bRaidingUnitDefeated = isDead();
+	bool bRaided = false;
+
+	for (int iPass = 0; iPass < 3; iPass++)
+	{
+		int iRaidStrength = GC.getGameINLINE().getSorenRandNum(1000, "Choose rebel raid resolve");
+
+		// If the raider was defeated, either capture the raider or nothing happens
+		if (bRaidingUnitDefeated)
+		{
+			if (iRaidStrength > 700)
+			{
+				CvPlayer& kPlayer = GET_PLAYER(pCity->getOwnerINLINE());
+
+				const UnitClassTypes eCapturedUnitClass = getRaidCaptureUnitClass();
+				if (eCapturedUnitClass != NO_UNITCLASS)
+				{
+					const UnitTypes eCapturedUnitType = kPlayer.getUnitType(eCapturedUnitClass);
+					if (eCapturedUnitType != NO_UNIT)
+					{
+						CvUnit* pCapturedUnit = kPlayer.initUnit(
+							eCapturedUnitType,
+							GC.getUnitInfo(eCapturedUnitType).getDefaultProfession(),
+							pCity->getX_INLINE(),
+							pCity->getY_INLINE(),
+							NO_UNITAI
+						);
+
+						if (pCapturedUnit != NULL)
+						{
+							CvWString szString;
+
+							if (eCapturedUnitClass == GC.getInfoTypeForString("UNITCLASS_CRIMINAL"))
+							{
+								szString = gDLL->getText("TXT_KEY_REBEL_RAID_CAPTURED_CRIMINAL", pCity->getNameKey());
+							}
+							else if (eCapturedUnitClass == GC.getInfoTypeForString("UNITCLASS_AFRICAN_SLAVE"))
+							{
+								szString = gDLL->getText("TXT_KEY_REBEL_RAID_CAPTURED_AFRICAN_SLAVE", pCity->getNameKey());
+							}
+							else if (eCapturedUnitClass == GC.getInfoTypeForString("UNITCLASS_NATIVE_SLAVE"))
+							{
+								szString = gDLL->getText("TXT_KEY_REBEL_RAID_CAPTURED_NATIVE_SLAVE", pCity->getNameKey());
+							}
+							else if (eCapturedUnitClass == GC.getInfoTypeForString("UNITCLASS_PRISONER_OF_WAR"))
+							{
+								szString = gDLL->getText("TXT_KEY_REBEL_RAID_CAPTURED_PRISONER_OF_WAR", pCity->getNameKey());
+							}
+							else
+							{
+								szString = gDLL->getText("TXT_KEY_REBEL_RAID_NOTHING", pCity->getNameKey());
+							}
+
+							gDLL->UI().addPlayerMessage(
+								pCity->getOwnerINLINE(),
+								true,
+								GC.getEVENT_MESSAGE_TIME(),
+								szString,
+								"AS2D_UNITCAPTURE",
+								MESSAGE_TYPE_INFO,
+								pCapturedUnit->getButton(),
+								COLOR_GREEN,
+								pCity->getX_INLINE(),
+								pCity->getY_INLINE()
+							);
+
+							bRaided = true;
+						}
+					}
+				}
+			}
+			else
+			{
+				CvWString szString = gDLL->getText("TXT_KEY_REBEL_RAID_NOTHING", pCity->getNameKey());
+				gDLL->UI().addPlayerMessage(
+					pCity->getOwnerINLINE(),
+					true,
+					GC.getEVENT_MESSAGE_TIME(),
+					szString,
+					"AS2D_REVOLTEND",
+					MESSAGE_TYPE_MINOR_EVENT,
+					NULL,
+					COLOR_GREEN
+				);
+				bRaided = true;
+			}
+		}
+		// If the raider succeeded, only gold / goods / weapons can be stolen
+		else
+		{
+			if (iRaidStrength > 666)
+			{
+				bRaided = raidTreasury(pCity);
+				if (bRaided)
+				{
+					CvWString szString = gDLL->getText("TXT_KEY_REBEL_RAID_GOLD", pCity->getNameKey());
+					gDLL->UI().addPlayerMessage(
+						pCity->getOwnerINLINE(),
+						true,
+						GC.getEVENT_MESSAGE_TIME(),
+						szString,
+						"AS2D_CITYRAID",
+						MESSAGE_TYPE_MINOR_EVENT,
+						NULL,
+						COLOR_RED,
+						pCity->getX_INLINE(),
+						pCity->getY_INLINE()
+					);
+				}
+			}
+			else if (iRaidStrength > 333)
+			{
+				bRaided = raidGoods(pCity);
+				if (bRaided)
+				{
+					CvWString szString = gDLL->getText("TXT_KEY_REBEL_RAID_GOODS", pCity->getNameKey());
+					gDLL->UI().addPlayerMessage(
+						pCity->getOwnerINLINE(),
+						true,
+						GC.getEVENT_MESSAGE_TIME(),
+						szString,
+						"AS2D_CITYRAID",
+						MESSAGE_TYPE_MINOR_EVENT,
+						NULL,
+						COLOR_RED,
+						pCity->getX_INLINE(),
+						pCity->getY_INLINE()
+					);
+				}
+			}
+			else
+			{
+				bRaided = raidWeapons(pCity);
+				if (bRaided)
+				{
+					CvWString szString = gDLL->getText("TXT_KEY_REBEL_RAID_WEAPONS", pCity->getNameKey());
+					gDLL->UI().addPlayerMessage(
+						pCity->getOwnerINLINE(),
+						true,
+						GC.getEVENT_MESSAGE_TIME(),
+						szString,
+						"AS2D_CITYRAID",
+						MESSAGE_TYPE_MINOR_EVENT,
+						NULL,
+						COLOR_RED,
+						pCity->getX_INLINE(),
+						pCity->getY_INLINE()
+					);
+				}
+			}
+		}
+
+		if (bRaided)
+		{
+			break;
+		}
+	}
+
+	if (!bRaided)
+	{
+		CvWString szString = gDLL->getText("TXT_KEY_REBEL_RAID_NOTHING", pCity->getNameKey());
+		gDLL->UI().addPlayerMessage(
+			pCity->getOwnerINLINE(),
+			true,
+			GC.getEVENT_MESSAGE_TIME(),
+			szString,
+			"AS2D_REVOLTEND",
+			MESSAGE_TYPE_MINOR_EVENT,
+			NULL,
+			COLOR_GREEN
+		);
+
+		bRaided = true;
+	}
+
+	return bRaided;
+}
+// WTP, Schmiddie, Cities raided by criminals - END
 
 bool CvUnit::raidGoods(CvCity* pCity)
 {
@@ -16061,7 +16318,7 @@ bool CvUnit::canGatherResource(const CvPlot* ePlot, bool bTestVisible) const
 	}
 	else
 	{
-		pPlot = GC.getMap().plot(ePlot->getX_INLINE(), ePlot->getY_INLINE());
+		pPlot = GC.getMap().plotINLINE(ePlot->getX_INLINE(), ePlot->getY_INLINE());
 	}
 
 	if (pPlot == NULL)
@@ -16095,7 +16352,7 @@ bool CvUnit::canGatherResource(const CvPlot* ePlot, bool bTestVisible) const
 
 		if (pPlot->isCityRadius())
 		{
-			CvCity* pNearestCity = GC.getMap().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getOwner(), pPlot->getTeam(), false, true);
+			CvCity* pNearestCity = GC.getMap().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getOwnerINLINE(), pPlot->getTeam(), false, true);
 
 			if (pNearestCity != NULL)
 			{
@@ -16401,13 +16658,18 @@ int CvUnit::getAmountForNativeTrade() const
 // Returns 0 if there are no yield units on the transport to evaluate
 int CvUnit::getCargoValue(TradeLocationTypes eLocation) const
 {
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+
+	// Sanity check in case the caller does not have a parent
+	if (kOwner.getParent() == NO_PLAYER)
+		return 0;
+
 	CvPlot const* const pPlot = plot();
 
 	// TODO: Determine if the plot can  ever be NULL
 	FAssert(pPlot != NULL);
 
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
-	CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 	CvPlayerAI& kEuropePlayer = GET_PLAYER(kOwner.getParent());
 
 	int sellValue = 0;
@@ -16473,7 +16735,7 @@ bool CvUnit::canMergeTreasures() const
 		pLoopUnit = plot()->getUnitNodeLoop(pUnitNode);
 
 		// we only count our own treasuers and only the ones that are smaller than max gold amount
-		if (pLoopUnit != NULL && pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner() && pLoopUnit->getYieldStored() < maxTreasureGold)
+		if (pLoopUnit != NULL && pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwnerINLINE() == getOwnerINLINE() && pLoopUnit->getYieldStored() < maxTreasureGold)
 		{
 			validTreasuresCounter++;
 		}
@@ -16507,7 +16769,7 @@ void CvUnit::mergeTreasures()
 		// WTP, ray, small improvements
 		// we only count gold of our own treasuers and those that are not yet at max
 		// after that we can directly kill them, so no extra loop is needed
-		if (pLoopUnit != NULL && pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwner() == getOwner() && pLoopUnit->getYieldStored() < maxTreasureGold)
+		if (pLoopUnit != NULL && pLoopUnit->getUnitInfo().isTreasure() && pLoopUnit->getOwnerINLINE() == getOwnerINLINE() && pLoopUnit->getYieldStored() < maxTreasureGold)
 		{
 			overallAmount += pLoopUnit->getYieldStored();
 			pLoopUnit->kill(true);
@@ -16792,6 +17054,7 @@ bool CvUnit::isBarbarianUnitOnAdjacentPlotOfUnit(int /*UnitClassTypes*/ iIndex) 
 // WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - END
 
 // Erik: We should come up with a XML tag (e.g. bJoin vs. bFound) so that we don't need to hard-code this
+// TODO: Currently unused - delete if not useful ?
 bool CvUnit::isPrisonerOrSlave() const
 {
 	const UnitClassTypes unitClassIntToBeChecked = m_pUnitInfo->getUnitClassType();
@@ -16928,6 +17191,7 @@ void CvUnit::setAllowDangerousPath(bool bNewValue, bool bRefreshUi)
 			// we may invalidate with this setting 
 			gDLL->getFAStarIFace()->ForceReset(&GC.getInterfacePathFinder());
 			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
+			gDLL->getInterfaceIFace()->setDirty(Waypoints_DIRTY_BIT, true);
 		}
 	}
 }
@@ -16954,12 +17218,12 @@ void CvUnit::groupTransportedYieldUnits(CvUnit* pYieldUnit)
 
 void CvUnit::changeIdentity(UnitTypes eUnit)
 {
-	reset(getID(), eUnit, getOwner(), false, true);
+	reset(getID(), eUnit, getOwnerINLINE(), false, true);
 }
 
 bool CvUnit::isTempUnit() const
 {
-	return GET_PLAYER(getOwner()).isTempUnit(this);
+	return GET_PLAYER(getOwnerINLINE()).isTempUnit(this);
 }
 
 namespace 
@@ -17002,3 +17266,146 @@ bool CvUnit::canChangeProfession() const
 
 	return found;
 }
+
+bool CvUnit::isAllowDirectPath() const
+{
+	return m_bAllowDirectPath;
+}
+
+void CvUnit::setAllowDirectPath(bool bNewValue, bool bRefreshUi)
+{
+	if (m_bAllowDirectPath != bNewValue)
+	{
+		m_bAllowDirectPath = bNewValue;
+		if (bRefreshUi)
+		{
+			// UI path finder needs a reset since it may be caching a path that 
+			// we may invalidate with this setting 
+			gDLL->getFAStarIFace()->ForceReset(&GC.getInterfacePathFinder());
+			gDLL->getInterfaceIFace()->setDirty(SelectionButtons_DIRTY_BIT, true);
+			gDLL->getInterfaceIFace()->setDirty(Waypoints_DIRTY_BIT, true);
+		}
+	}
+}
+
+// Returns remaining moves after subtracting the PF’s moves expenditure
+// Note: iPFMoves should be provided by the PF's GetFinalMoves()
+int CvUnit::getRemainingMovesAfterPFMoves(int iPFMoves) const
+{
+	const int iCurrentMovesLeft = movesLeft();
+	const int iRemainingMoves = iCurrentMovesLeft - iPFMoves;
+	return USE_CLASSIC_MOVEMENT_SYSTEM ? std::max(0, iRemainingMoves) : iRemainingMoves;
+}
+
+void CvUnit::writeDesyncLog(FILE* f) const
+{
+	fprintf(f, "\tUnit %d (%d,%d) %S\n", getID(), plot()->getX_INLINE(), plot()->getY_INLINE(), getName().c_str());
+	if (m_bAllowDangerousPath)
+	{
+		fprintf(f, "\t\t%Dangerous paths allowed\n");
+	}
+}
+
+std::string CvUnit::debugString() const
+{
+	std::ostringstream oss;
+
+	// Basic identity
+	oss << "Unit id=" << getID()
+		<< " owner=" << getOwnerINLINE()
+		<< " team=" << GET_PLAYER(getOwnerINLINE()).getTeam()
+		<< " type=";
+
+	// XML type tag, if available (ASCII)
+	const CvUnitInfo& kInfo = getUnitInfo();
+	if (kInfo.getType() != NULL)
+	{
+		oss << kInfo.getType();
+	}
+	else
+	{
+		oss << "(unknown)";
+	}
+
+	// Position
+	oss << " plot=(" << getX_INLINE() << "," << getY_INLINE() << ")";
+
+	const CvPlot* pPlot = plot();
+	if (pPlot != NULL)
+	{
+		oss << " area=" << pPlot->getArea();
+		if (pPlot->isCity())
+		{
+			const CvCity* pCity = pPlot->getPlotCity();
+			if (pCity != NULL)
+			{
+				oss << " cityOwner=" << pCity->getOwnerINLINE()
+					<< " cityID=" << pCity->getID();
+			}
+		}
+	}
+
+	// Movement
+	oss << " movesLeft=" << movesLeft()
+		<< " maxMoves=" << maxMoves()
+		<< " domain=" << getDomainType()
+		<< " damage=" << getDamage();
+
+	// Group and mission info
+	const CvSelectionGroupAI& kGroup = getGroup()->AI();
+
+	{
+		oss << " groupID=" << kGroup.getID()
+			<< " groupSize=" << kGroup.getNumUnits();
+
+		const CvPlot* pMissionPlot = kGroup.AI_getMissionAIPlot_();
+		if (pMissionPlot != NULL)
+		{
+			oss << " missionAIPlot=("
+				<< pMissionPlot->getX_INLINE() << ","
+				<< pMissionPlot->getY_INLINE() << ")";
+		}
+	}
+
+	// Cargo / yield
+	if (isYield())
+	{
+		oss << " yieldType=" << getYield()
+			<< " yieldStored=" << getYieldStored();
+
+		const CvUnit* pTransport = getTransportUnit();
+		if (pTransport != NULL)
+		{
+			oss << " transportID=" << pTransport->getID();
+		}
+		else
+		{
+			oss << " transportID=(none)";
+		}
+	}
+	else if (cargoSpace() > 0)
+	{
+		oss << " cargoSpace=" << cargoSpace()
+			<< " cargoUsed=" << getCargo();
+	}
+
+	// Profession / travel
+	if (getProfession() != NO_PROFESSION)
+	{
+		oss << " profession=" << getProfession();
+	}
+
+	oss << " travelState=" << getUnitTravelState();
+
+	// Basic AI info
+	oss << " unitAIType=" << AI_getUnitAIType();
+
+	return oss.str();
+}
+
+bool CvUnit::canMoveIntoPeak() const
+{
+	return (m_pUnitInfo->allowsMoveIntoPeak() ||
+		(getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).allowsMoveIntoPeak()));
+}
+

@@ -18,7 +18,14 @@
 #include "CyTradeRoute.h"
 #include "CyTradeRouteGroup.h" // R&R mod, vetiarvind, trade groups
 #include "CyData.h"
+#include "DesyncMonitor.h"
 
+CvPlayer* CyPlayer::pointer(AssertCallerData data)
+{
+	FAssertWithCaller(data, CxDesyncMonitor::isAlwaysSync());
+	FAssertWithCaller(data, m_pPlayer != NULL);
+	return (CvPlayer*)m_pPlayer;
+}
 
 CyPlayer::CyPlayer() : m_pPlayer(NULL)
 {
@@ -32,21 +39,21 @@ int CyPlayer::startingPlotRange()
 }
 CyPlot* CyPlayer::findStartingPlot(bool bRandomize)
 {
-	return m_pPlayer ? new CyPlot(m_pPlayer->findStartingPlot(bRandomize)) : NULL;
+	return m_pPlayer ? new CyPlot(pointer(CREATE_ASSERT_DATA)->findStartingPlot(bRandomize)) : NULL;
 }
 CyCity* CyPlayer::initCity(int x, int y)
 {
-	return m_pPlayer ? new CyCity(m_pPlayer->initCity(Coordinates(x, y), true)) : NULL;
+	return m_pPlayer ? new CyCity(pointer(CREATE_ASSERT_DATA)->initCity(Coordinates(x, y), true)) : NULL;
 }
 void CyPlayer::acquireCity(CyCity* pCity, bool bConquest, bool bTrade)
 {
 	if (m_pPlayer)
-		m_pPlayer->acquireCity(pCity->getCity(), bConquest, bTrade);
+		pointer(CREATE_ASSERT_DATA)->acquireCity(pCity->getCity(), bConquest, bTrade);
 }
 void CyPlayer::killCities()
 {
 	if (m_pPlayer)
-		m_pPlayer->killCities();
+		pointer(CREATE_ASSERT_DATA)->killCities();
 }
 std::wstring CyPlayer::getNewCityName()
 {
@@ -54,16 +61,16 @@ std::wstring CyPlayer::getNewCityName()
 }
 CyUnit* CyPlayer::initUnit(int /*UnitTypes*/ iIndex, int iProfession, int iX, int iY, UnitAITypes eUnitAI, DirectionTypes eFacingDirection, int iYieldStored)
 {
-	return m_pPlayer ? new CyUnit(m_pPlayer->initUnit((UnitTypes) iIndex, (ProfessionTypes) iProfession, iX, iY, eUnitAI, eFacingDirection, iYieldStored)) : NULL;
+	return m_pPlayer ? new CyUnit(pointer(CREATE_ASSERT_DATA)->initUnit((UnitTypes) iIndex, (ProfessionTypes) iProfession, iX, iY, eUnitAI, eFacingDirection, iYieldStored)) : NULL;
 }
 CyUnit* CyPlayer::initEuropeUnit(int /*UnitTypes*/ eUnit, UnitAITypes eUnitAI, DirectionTypes eFacingDirection)
 {
-	return m_pPlayer ? new CyUnit(m_pPlayer->initEuropeUnit((UnitTypes) eUnit, eUnitAI, eFacingDirection)) : NULL;
+	return m_pPlayer ? new CyUnit(pointer(CREATE_ASSERT_DATA)->initEuropeUnit((UnitTypes) eUnit, eUnitAI, eFacingDirection)) : NULL;
 }
 void CyPlayer::killUnits()
 {
 	if (m_pPlayer)
-		m_pPlayer->killUnits();
+		pointer(CREATE_ASSERT_DATA)->killUnits();
 }
 bool CyPlayer::hasTrait(int /*TraitTypes*/ iIndex)
 {
@@ -181,12 +188,12 @@ bool CyPlayer::canStopTradingWithTeam(int /*TeamTypes*/ eTeam)
 void CyPlayer::stopTradingWithTeam(int /*TeamTypes*/ eTeam)
 {
 	if (m_pPlayer)
-		m_pPlayer->stopTradingWithTeam((TeamTypes) eTeam);
+		pointer(CREATE_ASSERT_DATA)->stopTradingWithTeam((TeamTypes) eTeam);
 }
 void CyPlayer::killAllDeals()
 {
 	if (m_pPlayer)
-		m_pPlayer->killAllDeals();
+		pointer(CREATE_ASSERT_DATA)->killAllDeals();
 }
 bool CyPlayer::isTurnActive()
 {
@@ -195,7 +202,7 @@ bool CyPlayer::isTurnActive()
 void CyPlayer::findNewCapital()
 {
 	if (m_pPlayer)
-		m_pPlayer->findNewCapital();
+		pointer(CREATE_ASSERT_DATA)->findNewCapital();
 }
 bool CyPlayer::canRaze(CyCity* pCity)
 {
@@ -204,12 +211,12 @@ bool CyPlayer::canRaze(CyCity* pCity)
 void CyPlayer::raze(CyCity* pCity)
 {
 	if (m_pPlayer)
-		m_pPlayer->raze(pCity->getCity());
+		pointer(CREATE_ASSERT_DATA)->raze(pCity->getCity());
 }
 void CyPlayer::disband(CyCity* pCity)
 {
 	if (m_pPlayer)
-		m_pPlayer->disband(pCity->getCity());
+		pointer(CREATE_ASSERT_DATA)->disband(pCity->getCity());
 }
 bool CyPlayer::canReceiveGoody(CyPlot* pPlot, int /*GoodyTypes*/ iIndex, CyUnit* pUnit)
 {
@@ -218,12 +225,12 @@ bool CyPlayer::canReceiveGoody(CyPlot* pPlot, int /*GoodyTypes*/ iIndex, CyUnit*
 void CyPlayer::receiveGoody(CyPlot* pPlot, int /*GoodyTypes*/ iIndex, CyUnit* pUnit)
 {
 	if (m_pPlayer)
-		m_pPlayer->receiveGoody(pPlot->getPlot(), (GoodyTypes) iIndex, pUnit->getUnit());
+		pointer(CREATE_ASSERT_DATA)->receiveGoody(pPlot->getPlot(), (GoodyTypes) iIndex, pUnit->getUnit());
 }
 void CyPlayer::doGoody(CyPlot* pPlot, CyUnit* pUnit)
 {
 	if (m_pPlayer)
-		m_pPlayer->doGoody(pPlot->getPlot(), pUnit->getUnit());
+		pointer(CREATE_ASSERT_DATA)->doGoody(pPlot->getPlot(), pUnit->getUnit());
 }
 bool CyPlayer::canFound(int iX, int iY)
 {
@@ -232,7 +239,7 @@ bool CyPlayer::canFound(int iX, int iY)
 void CyPlayer::found(int x, int y)
 {
 	if (m_pPlayer)
-		m_pPlayer->found(Coordinates(x,y));
+		pointer(CREATE_ASSERT_DATA)->found(Coordinates(x,y));
 }
 bool CyPlayer::canTrain(int /*UnitTypes*/ eUnit, bool bContinue, bool bTestVisible)
 {
@@ -257,7 +264,7 @@ int CyPlayer::getBuildingClassPrereqBuilding(int /*BuildingTypes*/ eBuilding, in
 void CyPlayer::removeBuildingClass(int /*BuildingClassTypes*/ eBuildingClass)
 {
 	if (m_pPlayer)
-		m_pPlayer->removeBuildingClass((BuildingClassTypes)eBuildingClass);
+		pointer(CREATE_ASSERT_DATA)->removeBuildingClass((BuildingClassTypes)eBuildingClass);
 }
 bool CyPlayer::canBuild(CyPlot* pPlot, int /*BuildTypes*/ eBuild, bool bTestEra, bool bTestVisible)
 {
@@ -323,7 +330,7 @@ void CyPlayer::setStartingPlot(CyPlot* pPlot, bool bUpdateStartDist)
 	{
 		return;
 	}
-	m_pPlayer->setStartingPlot(NULL != pPlot ? pPlot->getPlot() : NULL, bUpdateStartDist);
+	pointer(CREATE_ASSERT_DATA)->setStartingPlot(NULL != pPlot ? pPlot->getPlot() : NULL, bUpdateStartDist);
 }
 int CyPlayer::getTotalPopulation()
 {
@@ -352,14 +359,14 @@ int CyPlayer::getGold()
 void CyPlayer::setGold(int iNewValue)
 {
 	if (m_pPlayer)
-		m_pPlayer->setGold(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setGold(iNewValue);
 }
 void CyPlayer::changeGold(int iChange)
 {
 	if (m_pPlayer)
 	{
 		OOS_LOG_3("Python change gold", m_pPlayer->getID(), iChange);
-		m_pPlayer->changeGold(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeGold(iChange);
 	}
 }
 int CyPlayer::getAdvancedStartPoints()
@@ -369,50 +376,50 @@ int CyPlayer::getAdvancedStartPoints()
 void CyPlayer::setAdvancedStartPoints(int iNewValue)
 {
 	if (m_pPlayer)
-		m_pPlayer->setAdvancedStartPoints(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setAdvancedStartPoints(iNewValue);
 }
 void CyPlayer::changeAdvancedStartPoints(int iChange)
 {
 	if (m_pPlayer)
-		m_pPlayer->changeAdvancedStartPoints(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeAdvancedStartPoints(iChange);
 }
 int CyPlayer::getAdvancedStartUnitCost(int /*UnitTypes*/ eUnit, bool bAdd, CyPlot* pPlot)
 {
-	return m_pPlayer ? m_pPlayer->getAdvancedStartUnitCost((UnitTypes) eUnit, bAdd, NULL != pPlot ? pPlot->getPlot() : NULL) : -1;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->getAdvancedStartUnitCost((UnitTypes) eUnit, bAdd, NULL != pPlot ? pPlot->getPlot() : NULL) : -1;
 }
 int CyPlayer::getAdvancedStartCityCost(bool bAdd, CyPlot* pPlot)
 {
-	return m_pPlayer ? m_pPlayer->getAdvancedStartCityCost(bAdd, NULL != pPlot ? pPlot->getPlot() : NULL) : -1;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->getAdvancedStartCityCost(bAdd, NULL != pPlot ? pPlot->getPlot() : NULL) : -1;
 }
 int CyPlayer::getAdvancedStartPopCost(bool bAdd, CyCity* pCity)
 {
-	return m_pPlayer ? m_pPlayer->getAdvancedStartPopCost(bAdd, pCity->getCity()) : -1;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->getAdvancedStartPopCost(bAdd, pCity->getCity()) : -1;
 }
 int CyPlayer::getAdvancedStartCultureCost(bool bAdd, CyCity* pCity)
 {
-	return m_pPlayer ? m_pPlayer->getAdvancedStartCultureCost(bAdd, pCity->getCity()) : -1;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->getAdvancedStartCultureCost(bAdd, pCity->getCity()) : -1;
 }
 int CyPlayer::getAdvancedStartBuildingCost(int /*BuildingTypes*/ eBuilding, bool bAdd, CyCity* pCity)
 {
-	return m_pPlayer ? m_pPlayer->getAdvancedStartBuildingCost((BuildingTypes) eBuilding, bAdd, pCity->getCity()) : -1;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->getAdvancedStartBuildingCost((BuildingTypes) eBuilding, bAdd, pCity->getCity()) : -1;
 }
 int CyPlayer::getAdvancedStartImprovementCost(int /*ImprovementTypes*/ eImprovement, bool bAdd, CyPlot* pPlot)
 {
-	return m_pPlayer ? m_pPlayer->getAdvancedStartImprovementCost((ImprovementTypes) eImprovement, bAdd, NULL != pPlot ? pPlot->getPlot() : NULL) : -1;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->getAdvancedStartImprovementCost((ImprovementTypes) eImprovement, bAdd, NULL != pPlot ? pPlot->getPlot() : NULL) : -1;
 }
 int CyPlayer::getAdvancedStartRouteCost(int /*RouteTypes*/ eRoute, bool bAdd, CyPlot* pPlot)
 {
-	return m_pPlayer ? m_pPlayer->getAdvancedStartRouteCost((RouteTypes) eRoute, bAdd, NULL != pPlot ? pPlot->getPlot() : NULL) : -1;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->getAdvancedStartRouteCost((RouteTypes) eRoute, bAdd, NULL != pPlot ? pPlot->getPlot() : NULL) : -1;
 }
 int CyPlayer::getAdvancedStartVisibilityCost(bool bAdd, CyPlot* pPlot)
 {
-	return m_pPlayer ? m_pPlayer->getAdvancedStartVisibilityCost(bAdd, NULL != pPlot ? pPlot->getPlot() : NULL) : -1;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->getAdvancedStartVisibilityCost(bAdd, NULL != pPlot ? pPlot->getPlot() : NULL) : -1;
 }
 void CyPlayer::createGreatGeneral(int eGreatGeneralUnit, bool bIncrementExperience, int iX, int iY)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createGreatGeneral((UnitTypes)eGreatGeneralUnit, bIncrementExperience, Coordinates(iX, iY));
+		pointer(CREATE_ASSERT_DATA)->createGreatGeneral((UnitTypes)eGreatGeneralUnit, bIncrementExperience, Coordinates(iX, iY));
 	}
 }
 int CyPlayer::getGreatGeneralsCreated()
@@ -429,7 +436,7 @@ void CyPlayer::createGreatAdmiral(int eGreatAdmiralUnit, bool bIncrementExperien
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createGreatAdmiral((UnitTypes)eGreatAdmiralUnit, bIncrementExperience, Coordinates(iX, iY));
+		pointer(CREATE_ASSERT_DATA)->createGreatAdmiral((UnitTypes)eGreatAdmiralUnit, bIncrementExperience, Coordinates(iX, iY));
 	}
 }
 int CyPlayer::getGreatAdmiralsCreated()
@@ -447,14 +454,14 @@ void CyPlayer::createBraveLieutenant(int eBraveLieutenantUnit, int iX, int iY)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createBraveLieutenant((UnitTypes)eBraveLieutenantUnit, Coordinates(iX, iY));
+		pointer(CREATE_ASSERT_DATA)->createBraveLieutenant((UnitTypes)eBraveLieutenantUnit, Coordinates(iX, iY));
 	}
 }
 void CyPlayer::createCapableCaptain(int eCapableCaptainUnit, int iX, int iY)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->createCapableCaptain((UnitTypes)eCapableCaptainUnit, Coordinates(iX, iY));
+		pointer(CREATE_ASSERT_DATA)->createCapableCaptain((UnitTypes)eCapableCaptainUnit, Coordinates(iX, iY));
 	}
 }
 // WTP, ray, Lieutenants and Captains - END
@@ -516,7 +523,7 @@ void CyPlayer::changeAssets(int iChange)
 	if (m_pPlayer)
 	{
 		OOS_LOG("python change assets", iChange);
-		m_pPlayer->changeAssets(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeAssets(iChange);
 	}
 }
 int CyPlayer::getPower()
@@ -586,7 +593,7 @@ int /*LeaderHeadTypes*/ CyPlayer::getPersonalityType()
 void CyPlayer::setPersonalityType(int /*LeaderHeadTypes*/ eNewValue)
 {
 	if (m_pPlayer)
-		m_pPlayer->setPersonalityType((LeaderHeadTypes) eNewValue);
+		pointer(CREATE_ASSERT_DATA)->setPersonalityType((LeaderHeadTypes) eNewValue);
 }
 int /*ErasTypes*/ CyPlayer::getCurrentEra()
 {
@@ -595,7 +602,7 @@ int /*ErasTypes*/ CyPlayer::getCurrentEra()
 void CyPlayer::setCurrentEra(int /*EraTypes*/ iNewValue)
 {
 	if (m_pPlayer)
-		m_pPlayer->setCurrentEra((EraTypes) iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setCurrentEra((EraTypes) iNewValue);
 }
 int /*PlayerTypes*/ CyPlayer::getParent()
 {
@@ -689,7 +696,7 @@ bool CyPlayer::isYieldEuropeTradable(int /*YieldTypes*/ eIndex)
 void CyPlayer::setYieldEuropeTradable(int /*YieldTypes*/ eIndex, bool bTradeable)
 {
 	if (m_pPlayer)
-		m_pPlayer->setYieldEuropeTradable((YieldTypes)eIndex, bTradeable);
+		pointer(CREATE_ASSERT_DATA)->setYieldEuropeTradable((YieldTypes)eIndex, bTradeable);
 }
 bool CyPlayer::isFeatAccomplished(int /*FeatTypes*/ eIndex)
 {
@@ -698,7 +705,7 @@ bool CyPlayer::isFeatAccomplished(int /*FeatTypes*/ eIndex)
 void CyPlayer::setFeatAccomplished(int /*FeatTypes*/ eIndex, bool bNewValue)
 {
 	if (m_pPlayer)
-		m_pPlayer->setFeatAccomplished((FeatTypes)eIndex, bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setFeatAccomplished((FeatTypes)eIndex, bNewValue);
 }
 bool CyPlayer::shouldDisplayFeatPopup(int /*FeatTypes*/ eIndex)
 {
@@ -711,7 +718,7 @@ bool CyPlayer::isOption(int /*PlayerOptionTypes*/ eIndex)
 void CyPlayer::setOption(int /*PlayerOptionTypes*/ eIndex, bool bNewValue)
 {
 	if (m_pPlayer)
-		m_pPlayer->setOption((PlayerOptionTypes)eIndex, bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setOption((PlayerOptionTypes)eIndex, bNewValue);
 }
 bool CyPlayer::isPlayable()
 {
@@ -720,7 +727,7 @@ bool CyPlayer::isPlayable()
 void CyPlayer::setPlayable(bool bNewValue)
 {
 	if (m_pPlayer)
-		m_pPlayer->setPlayable(bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setPlayable(bNewValue);
 }
 int CyPlayer::getImprovementCount(int /*ImprovementTypes*/ iIndex)
 {
@@ -781,7 +788,7 @@ int /* CivicTypes */ CyPlayer::getCivic(int /*CivicOptionTypes*/ iIndex)
 void CyPlayer::setCivic(int /*CivicOptionTypes*/ eIndex, int /*CivicTypes*/ eNewValue)
 {
 	if (m_pPlayer)
-		m_pPlayer->setCivic((CivicOptionTypes) eIndex, (CivicTypes) eNewValue);
+		pointer(CREATE_ASSERT_DATA)->setCivic((CivicOptionTypes) eIndex, (CivicTypes) eNewValue);
 }
 int CyPlayer::getCombatExperience() const
 {
@@ -795,14 +802,14 @@ void CyPlayer::changeCombatExperience(int iChange)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->changeCombatExperience(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeCombatExperience(iChange);
 	}
 }
 void CyPlayer::setCombatExperience(int iExperience)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->setCombatExperience(iExperience);
+		pointer(CREATE_ASSERT_DATA)->setCombatExperience(iExperience);
 	}
 }
 
@@ -819,14 +826,14 @@ void CyPlayer::changeSeaCombatExperience(int iChange)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->changeSeaCombatExperience(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeSeaCombatExperience(iChange);
 	}
 }
 void CyPlayer::setSeaCombatExperience(int iExperience)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->setSeaCombatExperience(iExperience);
+		pointer(CREATE_ASSERT_DATA)->setSeaCombatExperience(iExperience);
 	}
 }
 // R&R, ray, Great Admirals - END
@@ -834,7 +841,7 @@ void CyPlayer::setSeaCombatExperience(int iExperience)
 void CyPlayer::addCityName(std::wstring szName)
 {
 	if (m_pPlayer)
-		m_pPlayer->addCityName(szName);
+		pointer(CREATE_ASSERT_DATA)->addCityName(szName);
 }
 int CyPlayer::getNumCityNames()
 {
@@ -922,14 +929,14 @@ void CyPlayer::loadUnitFromEurope(CyUnit* pUnit, CyUnit* pTransport)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->loadUnitFromEurope(pUnit->getUnit(), pTransport->getUnit());
+		pointer(CREATE_ASSERT_DATA)->loadUnitFromEurope(pUnit->getUnit(), pTransport->getUnit());
 	}
 }
 void CyPlayer::unloadUnitToEurope(CyUnit* pUnit)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->unloadUnitToEurope(pUnit->getUnit());
+		pointer(CREATE_ASSERT_DATA)->unloadUnitToEurope(pUnit->getUnit());
 	}
 }
 
@@ -969,7 +976,7 @@ void CyPlayer::trigger(/*EventTriggerTypes*/int eEventTrigger)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->trigger((EventTriggerTypes)eEventTrigger);
+		pointer(CREATE_ASSERT_DATA)->trigger((EventTriggerTypes)eEventTrigger);
 	}
 }
 const EventTriggeredData* CyPlayer::getEventOccured(int /*EventTypes*/ eEvent) const
@@ -980,7 +987,7 @@ void CyPlayer::resetEventOccured(int /*EventTypes*/ eEvent)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->resetEventOccured((EventTypes)eEvent);
+		pointer(CREATE_ASSERT_DATA)->resetEventOccured((EventTypes)eEvent);
 	}
 }
 EventTriggeredData* CyPlayer::getEventTriggered(int iID) const
@@ -989,7 +996,7 @@ EventTriggeredData* CyPlayer::getEventTriggered(int iID) const
 }
 EventTriggeredData* CyPlayer::initTriggeredData(int /*EventTriggerTypes*/ eEventTrigger, bool bFire, int iCityId, int iPlotX, int iPlotY, int /*PlayerTypes*/ eOtherPlayer, int iOtherPlayerCityId, int iUnitId, int /*BuildingTypes*/ eBuilding)
 {
-	return m_pPlayer ? m_pPlayer->initTriggeredData((EventTriggerTypes)eEventTrigger, bFire, iCityId, iPlotX, iPlotY, (PlayerTypes)eOtherPlayer, iOtherPlayerCityId, iUnitId, (BuildingTypes)eBuilding) : NULL;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->initTriggeredData((EventTriggerTypes)eEventTrigger, bFire, iCityId, iPlotX, iPlotY, (PlayerTypes)eOtherPlayer, iOtherPlayerCityId, iUnitId, (BuildingTypes)eBuilding) : NULL;
 }
 int CyPlayer::getEventTriggerWeight(int /*EventTriggerTypes*/ eTrigger)
 {
@@ -998,19 +1005,20 @@ int CyPlayer::getEventTriggerWeight(int /*EventTriggerTypes*/ eTrigger)
 void CyPlayer::AI_updateFoundValues(bool bStartingLoc)
 {
 	if (m_pPlayer)
-		m_pPlayer->AI_updateFoundValues(bStartingLoc);
+		pointer(CREATE_ASSERT_DATA)->AI_updateFoundValues(bStartingLoc);
 }
 int CyPlayer::AI_foundValue(int iX, int iY, int iMinUnitRange/* = -1*/, bool bStartingLoc/* = false*/)
 {
-	return m_pPlayer ? m_pPlayer->AI_foundValue(iX, iY, iMinUnitRange, bStartingLoc) : -1;
+	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_foundValue(iX, iY, iMinUnitRange, bStartingLoc) : -1;
 }
 bool CyPlayer::AI_demandRebukedWar(int /*PlayerTypes*/ ePlayer)
 {
-	return m_pPlayer ? m_pPlayer->AI_demandRebukedWar((PlayerTypes)ePlayer) : false;
+	// function should be const, but it's a virtual function in CvPlayer, so it's better to not touch it
+	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_demandRebukedWar((PlayerTypes)ePlayer) : false;
 }
 AttitudeTypes CyPlayer::AI_getAttitude(int /*PlayerTypes*/ ePlayer)
 {
-	return m_pPlayer ? m_pPlayer->AI_getAttitude((PlayerTypes)ePlayer) : NO_ATTITUDE;
+	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_getAttitude((PlayerTypes)ePlayer) : NO_ATTITUDE;
 }
 // R&R, Robert Surcouf, No More Variables Hidden game option START
 int CyPlayer::AI_getAttitudeVal(int /*PlayerTypes*/ ePlayer)
@@ -1020,50 +1028,50 @@ int CyPlayer::AI_getAttitudeVal(int /*PlayerTypes*/ ePlayer)
 // R&R, Robert Surcouf, No More Variables Hidden game option END
 int CyPlayer::AI_unitValue(int /*UnitTypes*/ eUnit, int /*UnitAITypes*/ eUnitAI, CyArea* pArea)
 {
-	return m_pPlayer ? m_pPlayer->AI_unitValue((UnitTypes)eUnit, (UnitAITypes)eUnitAI, pArea->getArea()) : -1;
+	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_unitValue((UnitTypes)eUnit, (UnitAITypes)eUnitAI, pArea->getArea()) : -1;
 }
 int CyPlayer::AI_civicValue(int /*CivicTypes*/ eCivic)
 {
-	return m_pPlayer ? m_pPlayer->AI_civicValue((CivicTypes)eCivic) : -1;
+	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_civicValue((CivicTypes)eCivic) : -1;
 }
 int CyPlayer::AI_totalUnitAIs(int /*UnitAITypes*/ eUnitAI)
 {
-	return m_pPlayer ? m_pPlayer->AI_totalUnitAIs((UnitAITypes)eUnitAI) : -1;
+	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_totalUnitAIs((UnitAITypes)eUnitAI) : -1;
 }
 int CyPlayer::AI_totalAreaUnitAIs(CyArea* pArea, int /*UnitAITypes*/ eUnitAI)
 {
-	return m_pPlayer ? m_pPlayer->AI_totalAreaUnitAIs(pArea->getArea(), (UnitAITypes)eUnitAI) : -1;
+	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_totalAreaUnitAIs(pArea->getArea(), (UnitAITypes)eUnitAI) : -1;
 }
 int CyPlayer::AI_totalWaterAreaUnitAIs(CyArea* pArea, int /*UnitAITypes*/ eUnitAI)
 {
-	return m_pPlayer ? m_pPlayer->AI_totalWaterAreaUnitAIs(pArea->getArea(), (UnitAITypes)eUnitAI) : -1;
+	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_totalWaterAreaUnitAIs(pArea->getArea(), (UnitAITypes)eUnitAI) : -1;
 }
 int CyPlayer::AI_getNumAIUnits(int /*UnitAITypes*/ eIndex)
 {
-	return m_pPlayer ? m_pPlayer->AI_getNumAIUnits((UnitAITypes)eIndex) : NO_UNITAI;
+	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_getNumAIUnits((UnitAITypes)eIndex) : NO_UNITAI;
 }
 int CyPlayer::AI_getAttitudeExtra(int /*PlayerTypes*/ eIndex)
 {
-	return m_pPlayer ? m_pPlayer->AI_getAttitudeExtra((PlayerTypes)eIndex) : -1;
+	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_getAttitudeExtra((PlayerTypes)eIndex) : -1;
 }
 void CyPlayer::AI_setAttitudeExtra(int /*PlayerTypes*/ eIndex, int iNewValue)
 {
 	if (m_pPlayer)
-		m_pPlayer->AI_setAttitudeExtra((PlayerTypes)eIndex, iNewValue);
+		pointer(CREATE_ASSERT_DATA)->AI_setAttitudeExtra((PlayerTypes)eIndex, iNewValue);
 }
 void CyPlayer::AI_changeAttitudeExtra(int /*PlayerTypes*/ eIndex, int iChange)
 {
 	if (m_pPlayer)
-		m_pPlayer->AI_changeAttitudeExtra((PlayerTypes)eIndex, iChange);
+		pointer(CREATE_ASSERT_DATA)->AI_changeAttitudeExtra((PlayerTypes)eIndex, iChange);
 }
 int CyPlayer::AI_getMemoryCount(int /*PlayerTypes*/ eIndex1, int /*MemoryTypes*/ eIndex2)
 {
-	return m_pPlayer ? m_pPlayer->AI_getMemoryCount((PlayerTypes)eIndex1, (MemoryTypes)eIndex2) : -1;
+	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_getMemoryCount((PlayerTypes)eIndex1, (MemoryTypes)eIndex2) : -1;
 }
 void CyPlayer::AI_changeMemoryCount(int /*PlayerTypes*/ eIndex1, int /*MemoryTypes*/ eIndex2, int iChange)
 {
 	if (m_pPlayer)
-		m_pPlayer->AI_changeMemoryCount((PlayerTypes)eIndex1, (MemoryTypes)eIndex2, iChange);
+		pointer(CREATE_ASSERT_DATA)->AI_changeMemoryCount((PlayerTypes)eIndex1, (MemoryTypes)eIndex2, iChange);
 }
 int CyPlayer::AI_getExtraGoldTarget() const
 {
@@ -1073,7 +1081,7 @@ void CyPlayer::AI_setExtraGoldTarget(int iNewValue)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->AI_setExtraGoldTarget(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->AI_setExtraGoldTarget(iNewValue);
 	}
 }
 
@@ -1104,12 +1112,12 @@ int CyPlayer::getCultureHistory(int iTurn) const
 
 int CyPlayer::addTradeRoute(int iSourceCityOwner, int iSourceCityId, int iDestinationCityOwner, int iDestinationCityId, int /*YieldTypes*/ eYield)
 {
-	return m_pPlayer ? m_pPlayer->addTradeRoute(IDInfo((PlayerTypes)iSourceCityOwner, iSourceCityId), IDInfo((PlayerTypes)iDestinationCityOwner, iDestinationCityId), (YieldTypes) eYield) : -1;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->addTradeRoute(IDInfo((PlayerTypes)iSourceCityOwner, iSourceCityId), IDInfo((PlayerTypes)iDestinationCityOwner, iDestinationCityId), (YieldTypes) eYield) : -1;
 }
 
 bool CyPlayer::removeTradeRoute(int iId)
 {
-	return m_pPlayer ? m_pPlayer->removeTradeRoute(iId) : false;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->removeTradeRoute(iId) : false;
 }
 
 CyTradeRoute* CyPlayer::getTradeRoute(int iId) const
@@ -1129,7 +1137,7 @@ CyTradeRoute* CyPlayer::getTradeRouteByIndex(int iIndex) const
 
 bool CyPlayer::editTradeRoute(int iId, int iSourceCityOwner, int iSourceCityId, int iDestinationCityOwner, int iDestinationCityId, int /*YieldTypes*/ eYield)
 {
-	return m_pPlayer ? m_pPlayer->editTradeRoute(iId, IDInfo((PlayerTypes)iSourceCityOwner, iSourceCityId), IDInfo((PlayerTypes)iDestinationCityOwner, iDestinationCityId), (YieldTypes) eYield) : false;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->editTradeRoute(iId, IDInfo((PlayerTypes)iSourceCityOwner, iSourceCityId), IDInfo((PlayerTypes)iDestinationCityOwner, iDestinationCityId), (YieldTypes) eYield) : false;
 }
 
 bool CyPlayer::canLoadYield(int /*PlayerTypes*/ eCityPlayer) const
@@ -1154,11 +1162,11 @@ std::string CyPlayer::getScriptData() const
 void CyPlayer::setScriptData(std::string szNewValue)
 {
 	if (m_pPlayer)
-		m_pPlayer->setScriptData(szNewValue);
+		pointer(CREATE_ASSERT_DATA)->setScriptData(szNewValue);
 }
 int CyPlayer::AI_maxGoldTrade(int iPlayer)
 {
-	CvPlayerAI* pPlayer = dynamic_cast<CvPlayerAI*>(m_pPlayer);
+	CvPlayerAI* pPlayer = (CvPlayerAI*)(m_pPlayer);
 	if (pPlayer)
 	{
 		return (pPlayer->AI_maxGoldTrade((PlayerTypes)iPlayer));
@@ -1168,7 +1176,7 @@ int CyPlayer::AI_maxGoldTrade(int iPlayer)
 void CyPlayer::forcePeace(int iPlayer)
 {
 	if (m_pPlayer)
-		m_pPlayer->forcePeace((PlayerTypes)iPlayer);
+		pointer(CREATE_ASSERT_DATA)->forcePeace((PlayerTypes)iPlayer);
 }
 int CyPlayer::getHighestTradedYield()
 {
@@ -1216,39 +1224,23 @@ bool CyPlayer::isKingWillingToTradeUsedShips() const
 {
 	return m_pPlayer ? m_pPlayer->isKingWillingToTradeUsedShips() : false;
 }
-
-void CyPlayer::resetCounterForUsedShipDeals()
-{
-	if (m_pPlayer)
-	{
-		m_pPlayer->resetCounterForUsedShipDeals();
-	}
-}
 //WTP, ray Kings Used Ship - END
 
 
 // WTP, ray, Foreign Kings, buy Immigrants - START
 int CyPlayer::getRandomForeignImmigrantClassTypeID(int iKingID) const
 {
-	return m_pPlayer ? m_pPlayer->getRandomForeignImmigrantClassTypeID(iKingID) : -1;
+	return m_pPlayer ? m_pPlayer->getRandomForeignImmigrantClassTypeID((PlayerTypes)iKingID) : -1;
 }
 
 int CyPlayer::getForeignImmigrantPrice(int /*UnitClassTypes*/ iForeignImmigrantClassType, int iEuropeKingID) const
 {
-	return m_pPlayer ? m_pPlayer->getForeignImmigrantPrice((UnitClassTypes)iForeignImmigrantClassType, iEuropeKingID) : -1;
+	return m_pPlayer ? m_pPlayer->getForeignImmigrantPrice((UnitClassTypes)iForeignImmigrantClassType, (PlayerTypes)iEuropeKingID) : -1;
 }
 
 bool CyPlayer::isForeignKingWillingToTradeImmigrants(int iEuropeKingID) const
 {
-	return m_pPlayer ? m_pPlayer->isForeignKingWillingToTradeImmigrants(iEuropeKingID) : false;
-}
-
-void CyPlayer::resetCounterForForeignImmigrantsDeals()
-{
-	if (m_pPlayer)
-	{
-		m_pPlayer->resetCounterForForeignImmigrantsDeals();
-	}
+	return m_pPlayer ? m_pPlayer->isForeignKingWillingToTradeImmigrants((PlayerTypes)iEuropeKingID) : false;
 }
 // WTP, ray, Foreign Kings, buy Immigrants - END
 
@@ -1269,12 +1261,12 @@ int CyPlayer::NBMOD_GetMaxTaxRate() const
 // R&R, ray, Bargaining - Start
 bool CyPlayer::tryGetNewBargainPriceSell()
 {
-	return m_pPlayer ? m_pPlayer->tryGetNewBargainPriceSell() : false;
+	return m_pPlayer ? ((CvPlayer*)m_pPlayer)->tryGetNewBargainPriceSell() : false;
 }
 
 bool CyPlayer::tryGetNewBargainPriceBuy()
 {
-	return m_pPlayer ? m_pPlayer->tryGetNewBargainPriceBuy() : false;
+	return m_pPlayer ? ((CvPlayer*)m_pPlayer)->tryGetNewBargainPriceBuy() : false;
 }
 // R&R, ray, Bargaining - End
 
@@ -1282,13 +1274,13 @@ bool CyPlayer::tryGetNewBargainPriceBuy()
 void CyPlayer::NBMOD_IncreaseMaxTaxRate()
 {
 	if (m_pPlayer)
-		m_pPlayer->NBMOD_IncreaseMaxTaxRate();
+		pointer(CREATE_ASSERT_DATA)->NBMOD_IncreaseMaxTaxRate();
 }
 
 void CyPlayer::NBMOD_DecreaseMaxTaxRate()
 {
 	if (m_pPlayer)
-		m_pPlayer->NBMOD_DecreaseMaxTaxRate();
+		pointer(CREATE_ASSERT_DATA)->NBMOD_DecreaseMaxTaxRate();
 }
 // TAC - Python Export - Ray - END
 
@@ -1300,7 +1292,7 @@ int CyPlayer::getTaxRate()
 void CyPlayer::changeTaxRate(int iChange)
 {
 	if (m_pPlayer)
-		m_pPlayer->changeTaxRate(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeTaxRate(iChange);
 }
 bool CyPlayer::canTradeWithEurope()
 {
@@ -1321,7 +1313,7 @@ int CyPlayer::getYieldBuyPrice(int /*YieldTypes*/ eYield)
 void CyPlayer::setYieldBuyPrice(int /*YieldTypes*/ eYield, int iPrice, bool bMessage)
 {
 	if (m_pPlayer)
-		m_pPlayer->setYieldBuyPrice((YieldTypes)eYield, iPrice, bMessage);
+		pointer(CREATE_ASSERT_DATA)->setYieldBuyPrice((YieldTypes)eYield, iPrice, bMessage);
 }
 // R&R, ray, Africa
 int CyPlayer::getYieldAfricaSellPrice(int /*YieldTypes*/ eYield)
@@ -1340,11 +1332,11 @@ int CyPlayer::getYieldAfricaBuyPriceNoModifier(int /*YieldTypes*/ eYield)
 void CyPlayer::setYieldAfricaBuyPrice(int /*YieldTypes*/ eYield, int iPrice, bool bMessage)
 {
 	if (m_pPlayer)
-		m_pPlayer->setYieldAfricaBuyPrice((YieldTypes)eYield, iPrice, bMessage);
+		pointer(CREATE_ASSERT_DATA)->setYieldAfricaBuyPrice((YieldTypes)eYield, iPrice, bMessage);
 }
 CyUnit* CyPlayer::buyYieldUnitFromAfrica(int /*YieldTypes*/ eYield, int iAmount, CyUnit* pTransport)
 {
-	return m_pPlayer ? (new CyUnit(m_pPlayer->buyYieldUnitFromAfrica((YieldTypes) eYield, iAmount, pTransport->getUnit()))) : NULL;
+	return m_pPlayer ? (new CyUnit(pointer(CREATE_ASSERT_DATA)->buyYieldUnitFromAfrica((YieldTypes) eYield, iAmount, pTransport->getUnit()))) : NULL;
 }
 // R&R, ray, Africa - END
 // R&R, ray, Port Royal
@@ -1363,21 +1355,21 @@ int CyPlayer::getYieldPortRoyalBuyPriceNoModifier(int /*YieldTypes*/ eYield)
 void CyPlayer::setYieldPortRoyalBuyPrice(int /*YieldTypes*/ eYield, int iPrice, bool bMessage)
 {
 	if (m_pPlayer)
-		m_pPlayer->setYieldPortRoyalBuyPrice((YieldTypes)eYield, iPrice, bMessage);
+		pointer(CREATE_ASSERT_DATA)->setYieldPortRoyalBuyPrice((YieldTypes)eYield, iPrice, bMessage);
 }
 CyUnit* CyPlayer::buyYieldUnitFromPortRoyal(int /*YieldTypes*/ eYield, int iAmount, CyUnit* pTransport)
 {
-	return m_pPlayer ? (new CyUnit(m_pPlayer->buyYieldUnitFromPortRoyal((YieldTypes) eYield, iAmount, pTransport->getUnit()))) : NULL;
+	return m_pPlayer ? (new CyUnit(pointer(CREATE_ASSERT_DATA)->buyYieldUnitFromPortRoyal((YieldTypes) eYield, iAmount, pTransport->getUnit()))) : NULL;
 }
 // R&R, ray, Port Royal - END
 void CyPlayer::sellYieldUnitToEurope(CyUnit* pUnit, int iAmount, int iCommission)
 {
 	if (m_pPlayer)
-		m_pPlayer->sellYieldUnitToEurope(pUnit->getUnit(), iAmount, iCommission);
+		pointer(CREATE_ASSERT_DATA)->sellYieldUnitToEurope(pUnit->getUnit(), iAmount, iCommission);
 }
 CyUnit* CyPlayer::buyYieldUnitFromEurope(int /*YieldTypes*/ eYield, int iAmount, CyUnit* pTransport)
 {
-	return m_pPlayer ? (new CyUnit(m_pPlayer->buyYieldUnitFromEurope((YieldTypes) eYield, iAmount, pTransport->getUnit()))) : NULL;
+	return m_pPlayer ? (new CyUnit(pointer(CREATE_ASSERT_DATA)->buyYieldUnitFromEurope((YieldTypes) eYield, iAmount, pTransport->getUnit()))) : NULL;
 }
 int CyPlayer::getEuropeUnitBuyPrice(int /*UnitTypes*/ eUnit)
 {
@@ -1385,7 +1377,7 @@ int CyPlayer::getEuropeUnitBuyPrice(int /*UnitTypes*/ eUnit)
 }
 CyUnit* CyPlayer::buyEuropeUnit(int /*UnitTypes*/ eUnit)
 {
-	return m_pPlayer ? (new CyUnit(m_pPlayer->buyEuropeUnit((UnitTypes) eUnit, 100))) : NULL;
+	return m_pPlayer ? (new CyUnit(pointer(CREATE_ASSERT_DATA)->buyEuropeUnit((UnitTypes) eUnit, 100))) : NULL;
 }
 int CyPlayer::getYieldBoughtTotal(TradeLocationTypes eLocation, int /*YieldTypes*/ eYield) const
 {
@@ -1428,7 +1420,7 @@ void CyPlayer::addRevolutionEuropeUnit(int /*UnitTypes*/ eUnit, int /*Profession
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->addRevolutionEuropeUnit((UnitTypes) eUnit, (ProfessionTypes) eProfession);
+		pointer(CREATE_ASSERT_DATA)->addRevolutionEuropeUnit((UnitTypes) eUnit, (ProfessionTypes) eProfession);
 	}
 }
 int CyPlayer::getNumTradeMessages() const
@@ -1495,14 +1487,14 @@ void CyPlayer::loadUnitFromAfrica(CyUnit* pUnit, CyUnit* pTransport)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->loadUnitFromAfrica(pUnit->getUnit(), pTransport->getUnit());
+		pointer(CREATE_ASSERT_DATA)->loadUnitFromAfrica(pUnit->getUnit(), pTransport->getUnit());
 	}
 }
 void CyPlayer::unloadUnitToAfrica(CyUnit* pUnit)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->unloadUnitToAfrica(pUnit->getUnit());
+		pointer(CREATE_ASSERT_DATA)->unloadUnitToAfrica(pUnit->getUnit());
 	}
 }
 int CyPlayer::getAfricaUnitBuyPrice(int /*UnitTypes*/ eUnit)
@@ -1511,7 +1503,7 @@ int CyPlayer::getAfricaUnitBuyPrice(int /*UnitTypes*/ eUnit)
 }
 CyUnit* CyPlayer::buyAfricaUnit(int /*UnitTypes*/ eUnit)
 {
-	return m_pPlayer ? (new CyUnit(m_pPlayer->buyAfricaUnit((UnitTypes) eUnit, 100))) : NULL;
+	return m_pPlayer ? (new CyUnit(pointer(CREATE_ASSERT_DATA)->buyAfricaUnit((UnitTypes) eUnit, 100))) : NULL;
 }
 bool CyPlayer::canTradeWithAfrica()
 {
@@ -1552,14 +1544,14 @@ void CyPlayer::loadUnitFromPortRoyal(CyUnit* pUnit, CyUnit* pTransport)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->loadUnitFromPortRoyal(pUnit->getUnit(), pTransport->getUnit());
+		pointer(CREATE_ASSERT_DATA)->loadUnitFromPortRoyal(pUnit->getUnit(), pTransport->getUnit());
 	}
 }
 void CyPlayer::unloadUnitToPortRoyal(CyUnit* pUnit)
 {
 	if (m_pPlayer)
 	{
-		m_pPlayer->unloadUnitToPortRoyal(pUnit->getUnit());
+		pointer(CREATE_ASSERT_DATA)->unloadUnitToPortRoyal(pUnit->getUnit());
 	}
 }
 int CyPlayer::getPortRoyalUnitBuyPrice(int /*UnitTypes*/ eUnit)
@@ -1568,7 +1560,7 @@ int CyPlayer::getPortRoyalUnitBuyPrice(int /*UnitTypes*/ eUnit)
 }
 CyUnit* CyPlayer::buyPortRoyalUnit(int /*UnitTypes*/ eUnit)
 {
-	return m_pPlayer ? (new CyUnit(m_pPlayer->buyPortRoyalUnit((UnitTypes) eUnit, 100))) : NULL;
+	return m_pPlayer ? (new CyUnit(pointer(CREATE_ASSERT_DATA)->buyPortRoyalUnit((UnitTypes) eUnit, 100))) : NULL;
 }
 bool CyPlayer::canTradeWithPortRoyal()
 {
@@ -1601,15 +1593,15 @@ int CyPlayer::getLastUpdatedTradeGroup()
 
 int CyPlayer::addTradeRouteGroup(const std::wstring groupName)
 {
-	return m_pPlayer ? m_lastUpdatedTradegroup = m_pPlayer->addTradeRouteGroup(groupName) : -1;
+	return m_pPlayer ? m_lastUpdatedTradegroup = pointer(CREATE_ASSERT_DATA)->addTradeRouteGroup(groupName) : -1;
 }
 bool CyPlayer::editTradeRouteGroup(int iId, const std::wstring groupName)
 {
-	return m_pPlayer ? m_pPlayer->editTradeRouteGroup(iId, groupName) : false;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->editTradeRouteGroup(iId, groupName) : false;
 }
 bool CyPlayer::removeTradeRouteGroup(int iId)
 {
-	return m_pPlayer ? m_pPlayer->removeTradeRouteGroup(iId) : false;
+	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->removeTradeRouteGroup(iId) : false;
 }
 
 int CyPlayer::getNumTradeGroups() const
@@ -1718,4 +1710,28 @@ int CyPlayer::getCivEffectCount(CivEffectTypes eCivEffect) const
 unsigned int CyPlayer::getNumUnitsOnDock() const
 {
 	return m_pPlayer ? m_pPlayer->CivEffect().getNumUnitsOnDock() : 0;
+}
+
+python::list CyPlayer::getViableTradeRoutesForUnit(CyUnit* pUnit) const
+{
+	python::list py;
+	if (!m_pPlayer || !pUnit) return py;
+
+	const CvUnit* pCvUnit = pUnit->getUnit();
+	if (!pCvUnit) return py;
+
+	const std::vector<CvTradeRoute*> routes =
+		m_pPlayer->getViableTradeRoutesForUnit(*pCvUnit);
+
+	for (size_t i = 0; i < routes.size(); ++i)
+	{
+		// Sanity: pointer is never expected to be NULL
+		if (routes[i])
+		{
+			// Note: Python owns & deletes the wrapper
+			// (The underlying CvTradeRoute is not affected)
+		   py.append(python::ptr(new CyTradeRoute(routes[i])));
+		}
+	}
+	return py;
 }

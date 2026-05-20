@@ -8,6 +8,7 @@
 
 //#include "CvEnums.h"
 #include <string>
+#include <boost/python/list.hpp>
 #include <boost/python/tuple.hpp>
 namespace python = boost::python;
 
@@ -18,10 +19,11 @@ class CyArea;
 class CyUnit;
 class CyCity
 {
+	CvCity* pointer(AssertCallerData);
 public:
 	CyCity();
 	DllExport CyCity(CvCity* pCity);		// Call from C++
-	CvCity* getCity() { return m_pCity;	}	// Call from C++
+	CvCity* getCity() { return (CvCity*)m_pCity;	}	// Call from C++
 	bool isNone() { return (m_pCity==NULL); }
 	void kill();
 
@@ -199,7 +201,8 @@ public:
 	void setYieldStored(int /*YieldTypes*/ eYield, int iValue);
 	void changeYieldStored(int /*YieldTypes*/ eYield, int iChange);
 	int getYieldRushed(int /*YieldTypes*/ eYield) const;
-	int calculateNetYield(int /*YieldTypes*/ eYield);
+	int calculateNetYield(int /*YieldTypes*/ eYield) const;
+	python::list calculateNetYieldList() const;
 	int calculateActualYieldProduced(int /*YieldTypes*/ eYield) const;
 	int calculateActualYieldConsumed(int /*YieldTypes*/ eYield) const;
 
@@ -379,7 +382,7 @@ public:
 	// WTP, ray, Center Plot specific Backgrounds - END
 
 private:
-	CvCity* m_pCity;
+	const CvCity* const m_pCity;
 };
 
 #endif	// CyCity_h

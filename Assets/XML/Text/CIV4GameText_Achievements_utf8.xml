@@ -13,6 +13,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Cronaca[COLOR_REVERT] [COLOR:140:255:40:255]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Crónica[COLOR_REVERT] [COLOR:140:255:40:255]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Летопись[COLOR_REVERT] [COLOR:140:255:40:255]%s1_ModKey[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Krónika[COLOR_REVERT] [COLOR:140:255:40:255]&lt; %s1_ModKey &gt;[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ADVISOR_TITLE</Tag>
@@ -22,6 +23,7 @@
 		<Italian>Cronaca</Italian>
 		<Spanish>Crónica</Spanish>
 		<Russian>Летопись</Russian>
+		<Hungarian>Krónika</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONGRESS_ADVISOR_TITLE</Tag>
@@ -31,6 +33,7 @@
 		<Italian>Congresso continentale</Italian>
 		<Spanish>Congreso Continental</Spanish>
 		<Russian>Континентальный конгресс</Russian>
+		<Hungarian>Kontinentális Kongresszus</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_SCREEN</Tag>
@@ -40,6 +43,7 @@
 		<Italian>Schermata delle informazioni</Italian>
 		<Spanish>Pantalla de información</Spanish>
 		<Russian>Статистика</Russian>
+		<Hungarian>Információk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_SCREEN_TITLE</Tag>
@@ -49,6 +53,7 @@
 		<Italian>Condizioni di vittoria</Italian>
 		<Spanish>Condiciones para la victoria</Spanish>
 		<Russian>Условия победы</Russian>
+		<Hungarian>Győzelmi Feltételek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_TITLE</Tag>
@@ -58,6 +63,7 @@
 		<Italian>Consigliere interno</Italian>
 		<Spanish>Consejero de Interior</Spanish>
 		<Russian>Советник по внутренним делам</Russian>
+		<Hungarian>Belföldi Tanácsadó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REVOLUTION_ADVISOR_TITLE</Tag>
@@ -67,6 +73,7 @@
 		<Italian>Consigliere per la rivoluzione</Italian>
 		<Spanish>Consejero de la Revolución</Spanish>
 		<Russian>Революционный советник</Russian>
+		<Hungarian>Forradalmi Tanácsadó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FOREIGN_ADVISOR_TITLE</Tag>
@@ -76,6 +83,7 @@
 		<Italian>Consigliere estero</Italian>
 		<Spanish>Consejero de Asuntos Exteriores</Spanish>
 		<Russian>Советник по иностранным делам</Russian>
+		<Hungarian>Külföldi Tanácsadó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MILITARY_ADVISOR_TITLE</Tag>
@@ -85,6 +93,7 @@
 		<Italian>Consigliere militare</Italian>
 		<Spanish>Consejero militar</Spanish>
 		<Russian>Военный советник</Russian>
+		<Hungarian>Katonai Tanácsadó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_SCREEN_TITLE</Tag>
@@ -94,6 +103,7 @@
 		<Italian>Padri Fondatori</Italian>
 		<Spanish>Padres fundadores</Spanish>
 		<Russian>Отцы основатели</Russian>
+		<Hungarian>Alapító Atyák</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVES</Tag>
@@ -103,24 +113,28 @@
 		<Italian>%s1 - %d2 [NUM2:Realizzazione:Realizzazioni]</Italian>
 		<Spanish>%s1 - %d2 [NUM2:Logro:Logros]</Spanish>
 		<Russian>%s1 - %d2 [NUM2:Достижение:Достижений]</Russian>
+		<Hungarian>%s1 - %d2 [NUM2:Eredmény:Eredmény]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_DEFAULT</Tag>
 		<English>Default Achievement</English>
 		<French>Réalisation (par défaut)</French>
 		<German>Standard-Errungenschaft</German>
+		<Hungarian>Alapértelmezett Eredmény</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_DEFAULT_HEAD</Tag>
 		<English>Main Achievements</English>
 		<French>En-tête de réalisation (par défaut)</French>
 		<German>Haupterrungenschaften</German>
+		<Hungarian>Fő Eredmények</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_DEFAULT_TEXT</Tag>
 		<English>Default Achievement Text</English>
 		<French>Corps de réalisation (par défaut)</French>
 		<German>Text für Standard-Errungenschaft</German>
+		<Hungarian>Alapértelmezett Eredmény Szöveg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_PACIFIC</Tag>
@@ -128,6 +142,7 @@
 		<French>Découverte du Pacifique</French>
 		<German>Pazifik entdeckt</German>
 		<Russian>Открытие Тихого океана</Russian>
+		<Hungarian>Csendes-óceán Felfedezése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_PACIFIC_HEAD</Tag>
@@ -135,6 +150,7 @@
 		<French>Une mer aussi calme et sereine que le ciel</French>
 		<German>Ein Meer, so still und friedlich wie der Himmel</German>
 		<Russian>Продолжаем плыть на Запад</Russian>
+		<Hungarian>Olyan csendes és békés tenger, mint az égbolt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_PACIFIC_TEXT</Tag>
@@ -338,21 +354,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH</Tag>
-		<English>Your first house of God</English>
+		<English>Your first House of God</English>
 		<French>La première demeure de Dieu</French>
 		<German>Euer erstes Gotteshaus</German>
 		<Russian>Ваша первая церковь</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH_HEAD</Tag>
-		<English>The house of God</English>
+		<English>The House of God</English>
 		<French>La demeure de Dieu</French>
 		<German>Das Haus Gottes</German>
 		<Russian>Божий дом</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH_TEXT</Tag>
-		<English>Windows that float high up under the ceiling. Windows through which a ray of sunlight falls at the first devotion, onto your face.[NEWLINE][NEWLINE]The faithful murmur. The Lord God may watch over his heavenly kingdom and over the hereafter but here, in the New World, you are His representative. And you have given this house to your subjects.[NEWLINE][NEWLINE]The first house of God in this half of the earth. May it bring glory to God and glory to you![NEWLINE][NEWLINE]</English>
+		<English>Windows that float high up under the ceiling. Windows through which a ray of sunlight falls at the first devotion, onto your face.[NEWLINE][NEWLINE]The faithful murmur. The Lord God may watch over his heavenly kingdom and over the hereafter but here, in the New World, you are His representative. And you have given this House to your subjects.[NEWLINE][NEWLINE]The first house of God in this half of the earth. May it bring glory to God and glory to you![NEWLINE][NEWLINE]</English>
 		<French>De hauts vitraux qui s'accrochent haut sous le plafond; vitraux qui laissent passer un rai de lumière sur votre visage, lors des matines.[NEWLINE][NEWLINE]
 		Les fidèles chuchotent. Le Seigneur-Dieu règne en son royaume céleste et pour l'éternité, mais ici bas, dans le Nouveau Monde, vous êtes Son représntant. Et vous avez donné cette demeure de Dieu à vos sujets.[NEWLINE][NEWLINE]La première dans cette partie du monde. Qu'elle rendre gloire à Dieu, et aussi gloire à vous ![NEWLINE][NEWLINE]  </French>
 		<German>Fenster, die hoch oben unter der Decke schweben. Fenster, durch die bei der ersten Andacht ein Sonnenstrahl herabfällt, Euch direkt ins Gesicht.[NEWLINE][NEWLINE]Die Gläubigen raunen. Gott, der Herr, mag über sein Himmelsreich wachen und über das Jenseits. Doch hier, in der Neuen Welt, seid Ihr sein Stellvertreter. Und Ihr habt Euren Schutzbefohlenen dieses Haus geschenkt.[NEWLINE][NEWLINE]Das erste Gotteshaus in diesem Teil des Erdkreises. Möge es Gott zur Ehre und Euch zum Ruhme gereichen![NEWLINE][NEWLINE]</German>
@@ -360,7 +376,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES</Tag>
-		<English>Two houses of God</English>
+		<English>Two Houses of God</English>
 		<French>Votre deuxième église</French>
 		<German>Zwei Gotteshäuser</German>
 		<Russian>Две церкви</Russian>
@@ -381,7 +397,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES</Tag>
-		<English>Three houses of God</English>
+		<English>Three Houses of God</English>
 		<French>Votre troisième église</French>
 		<German>Drei Gotteshäuser</German>
 		<Russian>Три церкви</Russian>
@@ -416,7 +432,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CATHEDRAL_TEXT</Tag>
-		<English>The Governor's fear of God made it a reality! Or was it instead the secular influence of Mother Church? The good citizens will never know.[NEWLINE][NEWLINE]The huge cathedral, however... High above the rooftops of the city, its white towers reflect the sunshine and cast their shadows far across the New World.[NEWLINE][NEWLINE]The bishop has come to celebrate the new place of worship with a mass and is already saying the first solemn words to his flock before they, the missionaries and the nuns of the local monastery, leave again to free the heathen children from the devil and lead them into the bosom of the church.[NEWLINE][NEWLINE]The towers of the huge cathedral will show them the way...[NEWLINE][NEWLINE]</English>
+		<English>The Governor's fear of God made it a reality! Or was it instead the secular influence of Mother Church? The good citizens will never know.[NEWLINE][NEWLINE]The huge cathedral, however... High above the rooftops of the city, its white towers reflect the sunshine and cast their shadows far across the New World.[NEWLINE][NEWLINE]The bishop has come to celebrate the new place of worship with a mass and is already saying the first solemn words to his flock before they, the missionaries and the nuns of the local monastery, leave again to free the heathen children from the devil and lead them into the bosom of the Church.[NEWLINE][NEWLINE]The towers of the huge cathedral will show them the way...[NEWLINE][NEWLINE]</English>
 		<French>La ferveur du gouverneur a déplacé des montagnes! Ou peut-être ce sont les tailleurs de pierres inspirés par notre Sainte Mère l(Église ? Les braves citoyens ne le saurant jamais.[NEWLINE][NEWLINE]Cette immense cathérale, pourtant ... très haut audessus des toits de la ville, ses tours blanches brillent sous le soleil tels des miroirs et lancent leurs ombres loind ans le Nouveau monde.[NEWLINE][NEWLINE]L'évêque est venu pour célébrer la messe dans cette nouveau lieu de prière et il prononce solannellement son prêche devant ses ouailles, les missionnaires et les soeurs du monastère local, partent de nouveau pour délivrer les jeunes incroyants du diable et les ramener dans le giron de l'église.[NEWLINE][NEWLINE]Les tours de cette cathédrale grandiose les guideront comme un phare.[NEWLINE][NEWLINE]</French>
 		<German>Die Gottesfurcht des Gouverneurs hat es Wirklichkeit werden lassen! Oder war es doch eher der weltliche Einfluss von Mutter Kirche? Dies werden die braven Bürger wohl nie erfahren.[NEWLINE][NEWLINE]Die riesige Kathedrale jedoch... Hoch über den Dächern der Stadt strahlen ihre weißen Türme im Sonnenschein und werfen Ihre Schatten bis weit in die Neue Welt hinein.[NEWLINE][NEWLINE]Der Bischof ist gekommen, um das neue Gotteshaus mit einer Messe zu feiern und spricht bereits die ersten feierlichen Worte zu seinen Schäfchen, bevor diese, d.h. die Missionare und die Nonnen des örtlichen Klosters, wieder aufbrechen, um die Heidenkinder vom Teufel zu befreien und in den Schoß der Kirche zu führen.[NEWLINE][NEWLINE]Die Türme der riesigen Kathedrale werden ihnen den Weg weisen...[NEWLINE][NEWLINE]</German>
 		<Russian>Набожность губернатора сделала это реальностью! Или это было влияние Святой Церкви? Добропорядочные граждане никогда этого не узнают.[NEWLINE][NEWLINE]Однако огромный собор... Его белые башни, возвышаясь над крышами домов, отражают солнечный свет и отбрасывают свои тени далеко-далеко.[NEWLINE][NEWLINE]Епископ приехал отпраздновать открытие нового места богослужения мессой и уже говорит первые торжественные слова своей пастве перед тем, как миссионеры и монахини местного монастыря вновь отправятся в далёкие земли нести Слово Божье язычникам, спасать их от Дьявола и вести их в лоно Святой Церкви.[NEWLINE][NEWLINE]Башни огромного собора укажут им путь...[NEWLINE][NEWLINE]</Russian>
@@ -3303,7 +3319,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_HUNTER_TEXT</Tag>
-		<English>You have hired a slave hunter to bring back runaway slaves. Now that you're fully committed to this business and are running your plantations with slaves, there's really nothing more to say about it. May the Lord forgive you for your deeds.[NEWLINE][NEWLINE]</English>
+		<English>You've hired a slave hunter to bring back runaway slaves. Some slave hunters choose a distinctive tartan so the owner's slaves can be identified by their clothing. Slaves get the bright tartan. The slave hunter wears hunting plaid to blend into the forest.[NEWLINE][NEWLINE]</English>
 		<German>Ihr habt einen Sklavenjäger angeheuert, der Euch entlaufene Sklaven zurückbringt. Da ihr nun offensichtlich ganz und gar in dieses Geschäft eingestiegen seid und Eure Plantagen mit Sklaven betreibt, gibt es dazu eigentlich nichts mehr zu sagen. Möge der Herr Euch Eure Taten vergeben.[NEWLINE][NEWLINE]</German>
 		<Russian>Вы наняли охотника за рабами, чтобы вернуть сбежавших наглецов. Теперь, когда вы полностью посвятили себя этому делу и поручили работу на плантациях рабам, больше нечего сказать об этом. Господь милосердный да простит вас за дела неправедные.[NEWLINE][NEWLINE]</Russian>
 	</TEXT>	
@@ -3663,7 +3679,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS_TEXT</Tag>
-		<English>Milord, you've certainly noticed the variety of religious nonconformists who have settled in the colonies. Settling here is open to everyone as long as they work hard for the good of all of us.[NEWLINE][NEWLINE]The only problem is that these people ended up in the New World for a reason. That reason is that Europe didn't want them. They can easily make trouble when they preach their differing interpretations of the word of God. If they decide to force their beliefs on other colonists, you might have to send them on their way again.[NEWLINE][NEWLINE]</English>
+		<English>Milord, you've certainly noticed the variety of religious nonconformists who have settled in the colonies. Settling here is open to everyone as long as they work hard for the good of all of us.[NEWLINE][NEWLINE]The only problem is that these people ended up in the New World for a reason. That reason is that Europe didn't want them. They can easily make trouble when they preach their differing interpretations of the Word of God. If they decide to force their beliefs on other colonists, you might have to send them on their way again.[NEWLINE][NEWLINE]</English>
 		<German>Mylord, mittlerweile haben sich in den Kolonien verschiedenste religiöse Vertriebene niedergelassen. Grundsätzlich stehen die Kolonien allen offen, solange sie hart für das Wohl der Kolonien arbeiten und keinen Ärger machen.[NEWLINE][NEWLINE]Das Problem ist nur, dass diese Leute aus gutem Grund hier in die neue Welt gekommen sind und man sie in Europa nicht mehr haben wollte. Achtet darauf, dass sie keinen Unfrieden stiften und nichts weiter tun als das Wort Gottes zu predigen. Sollten sie das Wohl der Kolonien gefährden, solltet Ihr Euch vielleicht wieder von Ihnen trennen. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, вы наверняка заметили, что в колониях поселились самые разные религиозные нонконформисты. По сути, колонии открыты для всех, если они усердно трудятся на благо колоний и не создают проблем.[NEWLINE][NEWLINE]Единственная проблема в том, что эти люди оказались здесь, в Новом Свете, не просто так. Причина в том, что в Европе они стали кому-то неугодны. Следите за тем, чтобы они не создавали проблем, когда проповедуют слово Божье. Если они угрожают благополучию колоний, возможно, нам придется снова отправить их в путь...[NEWLINE][NEWLINE]</Russian>
 	</TEXT>
@@ -3683,7 +3699,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP_TEXT</Tag>
-		<English>Milord, the Church obviously feels that its flock in the New World needs more discipline and order. They have sent you a bishop to take command.[NEWLINE][NEWLINE]"The word is credible: whoever aspires to the office of a bishop aspires to a great task. Therefore, let the bishop be blameless, the husband of one wife, sober, prudent, of dignified bearing, hospitable, able to teach; let him not be a drunkard or a violent man, but considerate; let him not be quarrelsome or greedy for money.[NEWLINE][NEWLINE]He must preside well over his own house, educate his children in obedience and all decency. If one cannot preside over his own house, how can he take care of God's church? He must not be a new convert, lest he become haughty and fall into the devil's judgment. But he must also have a good reputation among outsiders, lest he come into ill repute and fall into the devil's trap." [NEWLINE][NEWLINE]</English>
+		<English>Milord, the Church obviously feels that its flock in the New World needs more discipline and order. They have sent you a bishop to take command.[NEWLINE][NEWLINE]"The Word is credible: whoever aspires to the office of a bishop aspires to a great task. Therefore, let the bishop be blameless, the husband of one wife, sober, prudent, of dignified bearing, hospitable, able to teach; let him not be a drunkard or a violent man, but considerate; let him not be quarrelsome or greedy for money.[NEWLINE][NEWLINE]He must preside well over his own house, educate his children in obedience and all decency. If one cannot preside over his own house, how can he take care of God's Church? He must not be a new convert, lest he become haughty and fall into the devil's judgment. But he must also have a good reputation among outsiders, lest he come into ill repute and fall into the devil's trap." [NEWLINE][NEWLINE]</English>
 		<German>Mylord, die Kirche ist offensichtlich der Meinung, dass ihre Schäfchen in der Neuen Welt ein wenig mehr Zucht und Ordnung benötigen. Man hat Euch einen Bischof geschickt, der das übernehmen soll. [NEWLINE][NEWLINE]"Das Wort ist glaubwürdig: Wer das Amt eines Bischofs anstrebt, der strebt nach einer großen Aufgabe. Deshalb soll der Bischof untadelig, Mann einer einzigen Frau, nüchtern, besonnen sein, von würdiger Haltung, gastfreundlich, fähig zu lehren; er sei kein Trinker und kein gewalttätiger Mensch, sondern rücksichtsvoll; er sei nicht streitsüchtig und nicht geldgierig.[NEWLINE][NEWLINE]Er muss seinem eigenen Haus gut vorstehen, seine Kinder in Gehorsam und allem Anstand erziehen. Wenn einer seinem eigenen Haus nicht vorstehen kann, wie soll der für die Kirche Gottes sorgen? Er darf kein Neubekehrter sein, damit er nicht hochmütig wird und dem Gericht des Teufels verfällt. Er muss aber auch bei den Außenstehenden einen guten Ruf haben, damit er nicht in üble Nachrede kommt und in die Falle des Teufels gerät. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, Церковь явно считает, что ее паства в Новом Свете нуждается в большей дисциплине и порядке. Они прислали к нам епископа для управления делами Церкви.[NEWLINE][NEWLINE]"Верно слово: кто стремится к сану епископа, тот стремится к великому делу. Итак, да будет епископ непорочен, муж одной жены, трезвый, благоразумный, с достоинством, гостеприимный, способный к обучению, не пьяница и не буйный человек, но рассудительный, не сварливый и не жадный до денег.[NEWLINE][NEWLINE]Он должен хорошо руководить своим домом, воспитывать своих детей в послушании и приличиях. Если кто не может руководить своим домом, как может он заботиться о Божьей церкви? Он не должен быть новообращенным, чтобы не возгордиться и не попасть на суд дьявола. Он также должен иметь хорошую репутацию среди страждущих, чтобы он не приобрел дурной славы и не попал в ловушку дьявола".[NEWLINE][NEWLINE]</Russian>
 	</TEXT>
@@ -3883,7 +3899,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_CHARCOAL_POWDER_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]How can you stand this heat? Sweat is dripping off my beard[COLOR_REVERT]," the powder maker gasps. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]At least I'm not in a workshop surrounded by a ton of gunpowder[COLOR_REVERT]," the charcoal burner answers back. "[COLOR_SELECTED_TEXT]This little bit of smoke doesn't bother me, as long as I don't have to worry about blowing up half the city." [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Think when you choose your career, that's all I'm saying. Enough yakking, let's get back to work. The militia needs more supplies. It's like they eat it for supper instead of shooting it from their guns.[COLOR_REVERT]" [NEWLINE][NEWLINE]"</English>
+		<English>"[COLOR_SELECTED_TEXT]How can you stand this heat? Sweat is dripping off my beard[COLOR_REVERT]," the powder maker gasps. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]At least I'm not in a workshop surrounded by a ton of gunpowder[COLOR_REVERT]," the charcoal burner answers back. "[COLOR_SELECTED_TEXT]This little bit of smoke doesn't bother me, as long as I don't have to worry about blowing up half the city." [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Think when you choose your career, that's all I'm saying. Let's get back to work. With lots of powder for target practice, the militia can do serious damage when it's time to face the enemy.[COLOR_REVERT]" [NEWLINE][NEWLINE]"</English>
 		<German>"[COLOR_SELECTED_TEXT]Wie hältst Du diese Hitze blos immer aus, mir tropft schon wieder der Schweiß den Bart runter[COLOR_REVERT]", wirft der Feuerwerker keuchend ein.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Naja, ich hocke ja auch nicht den ganzen Tag in der Werkstatt mit einer Tonne Schießpulver um mich rum[COLOR_REVERT]," gibt der Köhlermeister höhnisch grinsend zurück. "[COLOR_SELECTED_TEXT]Das bisschen Rauch macht mir nichts. Außerdem muss ich mir auch nicht ständig Gedanken machen, vielleicht gleich die halbe Stadt in die Luft zu jagen."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wohl war, Augen auf bei der Berufswahl sag ich da nur. Aber genug palavert, zurück an die Arbeit. Die Miliz hat schon wieder Nachschub bestellt. Man könnte fast meinen die Essen das Zeug, statt es zu verschießen.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Soll mir recht sein, solange ich anständig bezahlt werde..."[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Как вы можете выносить эту жару? С моей бороды уже снова капает[COLOR_REVERT]" — задыхаясь, вставляет производитель пороха.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну, я же не сижу весь день в мастерской с кучей пороха вокруг меня[COLOR_REVERT]" — с ухмылкой отвечает мастер-угольщик. "[COLOR_SELECTED_TEXT]А небольшой дым меня не беспокоит. Кроме того, мне не нужно постоянно беспокоиться о том, что я взорву полгорода."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что ж, выбирать профессию надо с открытыми глазами, вот и все, что я хочу сказать. Но хватит болтовни, вернемся к работе. Ополчение уже заказало дополнительные припасы. Можно подумать, что они едят эту дрянь, а не используют для стрельбы.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Меня это устраивает, пока мне прилично платят..."[NEWLINE][NEWLINE]</Russian>
 	</TEXT>
@@ -4467,3 +4483,4 @@
 		<Russian>Милорд, наши тюрьмы заполняются военнопленными. Несомненно, мы могли бы использовать их на плантациях. Однако военнопленные — плохие работники. Кроме того, их ннужно постоянно охранять.[NEWLINE][NEWLINE]Вам следует рассмотреть возможность отправки их обратно врагу в обмен на золото. И, конечно, под честное слово, что они никогда больше не будут воевать на этом континенте и против нас.[NEWLINE][NEWLINE]</Russian>
 	</TEXT>
 </Civ4GameText>
+

@@ -6,6 +6,9 @@
 class CyAchieveInfo : public CvAchieveInfo
 {
 public:
+	const char* getPictureFileName() const;
+	const wchar* getHeaderTextKey() const;
+	const wchar* getBodyTextKey() const;
 };
 BOOST_STATIC_ASSERT(sizeof(CyAchieveInfo) == sizeof(CvAchieveInfo));
 
@@ -195,6 +198,11 @@ BOOST_STATIC_ASSERT(sizeof(CyAutomateInfo) == sizeof(CvAutomateInfo));
 class CyActionInfo : public CvActionInfo
 {
 public:
+	int getAutomateType() const;
+	int getInterfaceModeType() const;
+	int getMissionType() const;
+	int getCommandType() const;
+	int getControlType() const;
 };
 BOOST_STATIC_ASSERT(sizeof(CyActionInfo) == sizeof(CvActionInfo));
 

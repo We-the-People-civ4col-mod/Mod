@@ -76,10 +76,10 @@ bool KmodPathFinder::ValidateNodeMap()
 	if (!GC.getGame().isFinalInitialized())
 		return false;
 
-	if (map_width != GC.getMap().getGridWidth() || map_height != GC.getMap().getGridHeight())
+	if (map_width != GC.getMap().getGridWidthINLINE() || map_height != GC.getMap().getGridHeightINLINE())
 	{
-		map_width = GC.getMap().getGridWidth();
-		map_height = GC.getMap().getGridHeight();
+		map_width = GC.getMap().getGridWidthINLINE();
+		map_height = GC.getMap().getGridHeightINLINE();
 		//node_data = (FAStarNode*)
 		// <advc> According to cppcheck, the above is a "common realloc mistake".
 		FAStarNode* new_node_data = static_cast<FAStarNode*>(
@@ -386,8 +386,9 @@ void ResetProcesNodesOutput()
 struct ProcessNodesInternal
 {
 	ProcessNodesInternal(FAStarNode* parent_node_, std::vector<FAStarNode*>& child_nodes_, CvPathSettings& settings_, 
-		int dest_x_, int dest_y_, ProcesNodesOutputVec& pno_) :
-		parent_node(parent_node_), child_nodes(child_nodes_), settings(settings_), dest_x(dest_x_), dest_y(dest_y_), pno(pno_) 
+		int start_x_, int start_y_, int dest_x_, int dest_y_, ProcesNodesOutputVec& pno_) :
+		parent_node(parent_node_), child_nodes(child_nodes_), settings(settings_), start_x(start_x_), start_y(start_y_),
+		dest_x(dest_x_), dest_y(dest_y_), pno(pno_)
 		{}
 	
 	void operator()(const tbb::blocked_range<size_t>& r) const
@@ -446,7 +447,17 @@ struct ProcessNodesInternal
 		
 				if (parent_node->m_iKnownCost < child_node->m_iKnownCost)
 				{
-					pno[i].iNewCost = parent_node->m_iKnownCost + pathCost(parent_node, child_node, 666, &settings, 0);
+					int nodeFlags = NF_NONE;
+					if (child_node->m_iX == dest_x && child_node->m_iY == dest_y)
+						nodeFlags |= NF_DESTINATION_NODE;
+
+					// “first edge from start” means parent is the start node (no parent)
+					if (parent_node->m_pParent == NULL && (nodeFlags & NF_DESTINATION_NODE)) {
+						// only treat as “adjacent click” if the dest is actually adjacent
+						if (abs(child_node->m_iX - start_x) <= 1 && abs(child_node->m_iY - start_y) <= 1)
+							nodeFlags |= NF_ADJACENT_TO_START;
+					}
+					pno[i].iNewCost = parent_node->m_iKnownCost + pathCost(parent_node, child_node, nodeFlags, &settings, 0);
 					FAssert(pno[i].iNewCost > 0);
 				}
 			}
@@ -459,6 +470,8 @@ struct ProcessNodesInternal
 	FAStarNode* parent_node;
 	std::vector<FAStarNode*>& child_nodes;
 	CvPathSettings& settings;
+	int start_x;
+	int start_y;
 	int dest_x;
 	int dest_y;
 	ProcesNodesOutputVec &pno;
@@ -484,7 +497,7 @@ bool KmodPathFinder::ProcessNode()
 	if (best_it == open_list.end())
 		return false;
 
-	FAStarNode* parent_node = (*best_it);
+	FAStarNode* const parent_node = (*best_it);
 
 	// erase the node from the open_list.
 	// Note: this needs to be done before pushing new entries, otherwise the iterator will be invalid.
@@ -499,7 +512,7 @@ bool KmodPathFinder::ProcessNode()
 	// open a new node for each direction coming off the chosen node.
 	for (int i = 0; i < NUM_DIRECTION_TYPES; i++)
 	{
-		CvPlot* const pAdjacentPlot = plotDirection(parent_node->m_iX, parent_node->m_iY, (DirectionTypes)i);
+		const CvPlot* const pAdjacentPlot = plotDirection(parent_node->m_iX, parent_node->m_iY, (DirectionTypes)i);
 		if (!pAdjacentPlot)
 			continue;
 
@@ -519,8 +532,8 @@ bool KmodPathFinder::ProcessNode()
 	}
 
 	// Execute parallel work
-	ProcessNodesInternal pni(parent_node, child_nodes, settings, dest_x, dest_y, pno);
-	const int grainSize = 2; // 1 seems to result in too little work per task
+	ProcessNodesInternal pni(parent_node, child_nodes, settings, start_x, start_y, dest_x, dest_y, pno);
+	const int grainSize = 3; // 1 seems to result in too little work per task
 	const tbb::blocked_range<size_t> range = tbb::blocked_range<size_t>(0, child_nodes.size(), grainSize);
 	Threads::parallel_for(range, pni, tbb::auto_partitioner());
 
@@ -612,6 +625,7 @@ void KmodPathFinder::ForwardPropagate(FAStarNode* head, int cost_delta)
 	// change the known cost of all children by cost_delta, recursively
 	for (int i = 0; i < head->m_iNumChildren; i++)
 	{
+		FAStarNode* const child = head->m_apChildren[i];
 		FAssert(head->m_apChildren[i]->m_pParent == head);
 
 		// recalculate movement points.
@@ -626,7 +640,23 @@ void KmodPathFinder::ForwardPropagate(FAStarNode* head, int cost_delta)
 			// Strictly, the cost shouldn't depend on our path history, but it does - because I wanted to use
 			// the path history for path symmetry breaking.
 			// But anyway, according to the profiler, this is only going to cost us about a milisecond per turn.
-			int iPathCost = pathCost(head, head->m_apChildren[i], 666, &settings, 0);
+			
+			// Always recompute the edge step-cost — symmetry breaking and “GUI hints”
+			// may change the step-cost even if moves/turns didn’t.
+			int nodeFlags = NF_NONE;
+
+			// Destination?
+			if (child->m_iX == dest_x && child->m_iY == dest_y)
+				nodeFlags |= NF_DESTINATION_NODE;
+
+			// “First edge from start” -> prefer exact adjacent goal step
+			if (head->m_pParent == NULL && (nodeFlags & NF_DESTINATION_NODE))
+			{
+				if (std::abs(child->m_iX - start_x) <= 1 && std::abs(child->m_iY - start_y) <= 1)
+					nodeFlags |= NF_ADJACENT_TO_START;
+			}
+			
+			int iPathCost = pathCost(head, head->m_apChildren[i], nodeFlags, &settings, 0);
 			iNewDelta = head->m_iKnownCost + iPathCost - head->m_apChildren[i]->m_iKnownCost;
 			//FAssert(iNewDelta <= 0);
 		}

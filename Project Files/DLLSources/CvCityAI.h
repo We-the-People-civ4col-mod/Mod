@@ -307,6 +307,7 @@ protected:
 	bool AI_hasCoastalRoute() const;
 
 	void AI_assignCityPlot();
+	int AI_getTransportMaxTurns(UnitClassTypes eUnitClassType) const;
 
 	// added so under cheat mode we can call protected functions for testing
 	friend class CvGameTextMgr;

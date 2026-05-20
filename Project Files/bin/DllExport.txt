@@ -431,7 +431,7 @@ CvGlobals.h
 	DllExport std::vector<CvHandicapInfo*>& getHandicapInfo();
 	DllExport CvHandicapInfo& getHandicapInfo(HandicapTypes eHandicapNum);
 	DllExport int getNumGameSpeedInfos();
-	DllExport CvGameSpeedInfo& getGameSpeedInfo(GameSpeedTypes eGameSpeedNum);
+	DllExport CvGameSpeedInfo& getGameSpeedInfo(GameSpeedTypes eGameSpeedNum)
 	DllExport int getNumTurnTimerInfos();
 	DllExport CvTurnTimerInfo& getTurnTimerInfo(TurnTimerTypes eTurnTimerNum);
 	DllExport int getNumBuildingClassInfos();
@@ -1306,7 +1306,7 @@ CvUnit.h
 	DllExport const CvWString getName(uint uiForm = 0) const;
 	DllExport int getSubUnitsAlive() const;
 	DllExport bool isEnemy(TeamTypes eTeam, const CvPlot* pPlot = NULL) const;
-	DllExport bool isOnMap() const;
+	DllExport bool isOnMap() const
 	DllExport const CvArtInfoUnit* getArtInfo(int i) const;
 	DllExport char const* getButton() const;
 CvXMLLoadUtility.h

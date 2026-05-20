@@ -92,6 +92,11 @@ void CvGlobals::postXMLLoad(bool bFirst)
 				CvUnitInfo &kUnit = GC.getUnitInfo(eUnit);
 				kUnit.getYieldDemands().addTo(aYields);
 			}
+			for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+			{
+				CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+				kProfession.getYieldDemands().addTo(aYields);
+			}
 			m_iaDomesticDemandYieldTypes.assignFrom(aYields);
 		}
 

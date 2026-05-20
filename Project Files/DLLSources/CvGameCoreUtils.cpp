@@ -36,7 +36,6 @@
 #define PATH_DAMAGE_WEIGHT								(500)
 // R&R, Robert Surcouf, Damage on Storm plots, End
 #define PATH_COMBAT_WEIGHT								(300) // K-Mod. penalty for having to fight along the way.
-#define TURN_PENALTY_WEIGHT								(10000)
 
 CvPlot* plotCity(int iX, int iY, int iIndex)
 {
@@ -386,7 +385,7 @@ bool shouldUnitMove(const CvUnit* pUnit)
 	{
 		return false;
 	}
-	if (!pUnit->isOnMap())
+	if (!pUnit->isOnMap_())
 	{
 		if (!((pUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_EUROPE) || (pUnit->getUnitTravelState() == UNIT_TRAVEL_STATE_IN_AFRICA)))
 		{
@@ -417,164 +416,6 @@ ImprovementTypes finalImprovementUpgrade(ImprovementTypes eImprovement, int iCou
 	{
 		return eImprovement;
 	}
-}
-
-// FUNCTION: getBinomialCoefficient
-// Needed for getCombatOdds
-// Returns int value, being the possible number of combinations
-// of k draws out of a population of n
-// Written by DeepO
-__int64 getBinomialCoefficient(int iN, int iK)
-{
-	__int64 iTemp = 1;
-	//take advantage of symmetry in combination, eg. 15C12 = 15C3
-	iK = std::min(iK, iN - iK);
-
-	//eg. 15C3 = (15 * 14 * 13) / (1 * 2 * 3) = 15 / 1 * 14 / 2 * 13 / 3 = 455
-	for(int i=1;i<=iK;i++)
-		iTemp = (iTemp * (iN - i + 1)) / i;
-
-	// Make sure iTemp fits in an integer (and thus doesn't overflow)
-	FAssert(iTemp < MAX_INT);
-
-	return iTemp;
-}
-
-
-// FUNCTION: getCombatOdds
-// Calculates combat odds, given two units
-// Returns value from 0-1000
-// Written by DeepO
-int getCombatOdds(CvUnit* pAttacker, CvUnit* pDefender)
-{
-	// setup battle, calculate strengths and odds
-	//////
-
-	int iAttackerStrength = pAttacker->currCombatStr(NULL, NULL);
-	int iAttackerFirepower = pAttacker->currFirepower(NULL, NULL);
-
-	int iDefenderStrength = pDefender->currCombatStr(pDefender->plot(), pAttacker);
-	int iDefenderFirepower = pDefender->currFirepower(pDefender->plot(), pAttacker);
-
-	FAssert((iAttackerStrength + iDefenderStrength) > 0);
-	FAssert((iAttackerFirepower + iDefenderFirepower) > 0);
-
-	int iDefenderOdds = ((GC.getDefineINT("COMBAT_DIE_SIDES") * iDefenderStrength) / (iAttackerStrength + iDefenderStrength));
-	if (iDefenderOdds == 0)
-	{
-		return 1000;
-	}
-	int iAttackerOdds = GC.getDefineINT("COMBAT_DIE_SIDES") - iDefenderOdds;
-	if (iAttackerOdds == 0)
-	{
-		return 0;
-	}
-
-	int iStrengthFactor = ((iAttackerFirepower + iDefenderFirepower + 1) / 2);
-
-	// calculate damage done in one round
-	//////
-
-	int iDamageToAttacker = std::max(1,((GC.getDefineINT("COMBAT_DAMAGE") * (iDefenderFirepower + iStrengthFactor)) / (iAttackerFirepower + iStrengthFactor)));
-	int iDamageToDefender = std::max(1,((GC.getDefineINT("COMBAT_DAMAGE") * (iAttackerFirepower + iStrengthFactor)) / (iDefenderFirepower + iStrengthFactor)));
-
-	// calculate needed rounds.
-	// Needed rounds = round_up(health/damage)
-	//////
-
-	int iNeededRoundsAttacker = (std::max(0, pDefender->currHitPoints()) + iDamageToDefender - 1 ) / iDamageToDefender;
-	int iNeededRoundsDefender = (pAttacker->currHitPoints() + iDamageToAttacker - 1 ) / iDamageToAttacker;
-	int iMaxRounds = iNeededRoundsAttacker + iNeededRoundsDefender - 1;
-
-	// Erik: This number should be in XML!
-	int iMaxCombatRounds = 7;
-
-	int iLastCombatRound = std::min(iMaxRounds, iMaxCombatRounds);
-
-	float fOdds = 0;
-
-	// Erik: I've modified this so we only compute the odds until the last round
-	for (int iI4 = iNeededRoundsAttacker; iI4 <= iLastCombatRound; iI4++)
-	{
-		// Erik: Old comment was totally wrong LOL
-		// odds of exactly iI4 out of iLastCombatRound draws.
-		// f(k;n,p)=C(n,k)*(p^k)*((1-p)^(n-k))
-		// this needs to be in floating point math
-		//////
-
-		fOdds += ((float)getBinomialCoefficient(iLastCombatRound, iI4)) * pow((((float)iAttackerOdds) / GC.getDefineINT("COMBAT_DIE_SIDES")), iI4) * pow((1.0f - (((float)iAttackerOdds) / GC.getDefineINT("COMBAT_DIE_SIDES"))), (iLastCombatRound - iI4));
-	}
-
-	return ((int)(1000.0 * (fOdds + 0.0005f)));
-}
-
-int getCombatOddsDraw(CvUnit* pAttacker, CvUnit* pDefender)
-{
-	// setup battle, calculate strengths and odds
-	//////
-
-
-	// Erik: TODO, Cache this variable
-	const int iCombatDieSides = GC.getDefineINT("COMBAT_DIE_SIDES");
-
-	int iAttackerStrength = pAttacker->currCombatStr(NULL, NULL);
-	int iAttackerFirepower = pAttacker->currFirepower(NULL, NULL);
-
-	int iDefenderStrength = pDefender->currCombatStr(pDefender->plot(), pAttacker);
-	int iDefenderFirepower = pDefender->currFirepower(pDefender->plot(), pAttacker);
-
-	FAssert((iAttackerStrength + iDefenderStrength) > 0);
-	FAssert((iAttackerFirepower + iDefenderFirepower) > 0);
-
-	int iDefenderOdds = ((GC.getDefineINT("COMBAT_DIE_SIDES") * iDefenderStrength) / (iAttackerStrength + iDefenderStrength));
-	if (iDefenderOdds == 0)
-	{
-		return 1000;
-	}
-	int iAttackerOdds = GC.getDefineINT("COMBAT_DIE_SIDES") - iDefenderOdds;
-	if (iAttackerOdds == 0)
-	{
-		return 0;
-	}
-
-	int iStrengthFactor = ((iAttackerFirepower + iDefenderFirepower + 1) / 2);
-
-	// calculate damage done in one round
-	//////
-
-	int iDamageToAttacker = std::max(1, ((GC.getDefineINT("COMBAT_DAMAGE") * (iDefenderFirepower + iStrengthFactor)) / (iAttackerFirepower + iStrengthFactor)));
-	int iDamageToDefender = std::max(1, ((GC.getDefineINT("COMBAT_DAMAGE") * (iAttackerFirepower + iStrengthFactor)) / (iDefenderFirepower + iStrengthFactor)));
-
-	// calculate needed rounds.
-	// Needed rounds = round_up(health/damage)
-	//////
-
-	int iNeededRoundsAttacker = (std::max(0, pDefender->currHitPoints()) + iDamageToDefender - 1) / iDamageToDefender;
-	int iNeededRoundsDefender = (pAttacker->currHitPoints() + iDamageToAttacker - 1) / iDamageToAttacker;
-
-	// Erik: This is not true anymore since the limited combat rounds feature was introduced
-	int iMaxRounds = iNeededRoundsAttacker + iNeededRoundsDefender - 1;
-
-	// Erik: This number should be in XML!
-	int iMaxCombatRounds = 7;
-
-	int iLastCombatRound = std::min(iMaxRounds, iMaxCombatRounds);
-
-	// Now we determine the chance of a draw
-	// The number of combat rounds must be equal to the combat limit (currently 7) and there cannot have been a winner
-	// during this round.
-	// The interval for draw outcomes is one less than iNeededRoundsAttacker for victory and iLastCombatRound - iNeededRoundsDefender + 1 turns for victory (Inclusive)
-	// Other outcomes need not be considered
-
-	float fDrawOdds = 0;
-
-	for (int i = (iLastCombatRound - iNeededRoundsDefender + 1); i < iNeededRoundsAttacker; i++)
-	{
-		// odds of no winner during the last round
-		fDrawOdds += ((float)getBinomialCoefficient(iLastCombatRound, i)) * pow((((float)iAttackerOdds) / GC.getDefineINT("COMBAT_DIE_SIDES")), i) * pow((1.0f - (((float)iAttackerOdds) / GC.getDefineINT("COMBAT_DIE_SIDES"))), (iLastCombatRound - i));
-	}
-
-	return ((int)(1000.0 * (fDrawOdds + 0.0005f)));
 }
 
 void setTradeItem(TradeData* pItem, TradeableItems eItemType, int iData1, const IDInfo* pTransport)
@@ -957,6 +798,15 @@ bool PUF_isUnitAITypeGroupie(const CvUnit* pUnit, int iData1, int iData2)
 }
 // TAC - AI Assault Sea - koma13, jdog5000(BBAI) - END
 
+// K-Mod:
+bool PUF_isMissionAIType(CvUnit const* pUnit, int iMissionAI, int iDummy)
+{
+	FAssert(iDummy == -1);
+	MissionAITypes eMissionAI = (MissionAITypes)iMissionAI;
+	//FAssertEnumBounds(eMissionAI);
+	return (pUnit->AI().AI_getGroup()->AI_getMissionAIType_() == eMissionAI);
+}
+
 namespace
 {
 	// Returns true if no enemy was found near the kGroup's potential target plot x,y. False otherwise
@@ -1004,6 +854,19 @@ namespace
 		}
 
 		return true;
+	}
+
+	bool isAdjacent(const FAStarNode& node1, const FAStarNode& node2)
+	{
+		int dx = abs(node1.m_iX - node2.m_iX);
+		int dy = abs(node1.m_iY - node2.m_iY);
+		return (dx <= 1 && dy <= 1);
+	}
+	
+	// Helper function to reduce repetition
+	bool allowDirectPath(const CvSelectionGroup& kSelectionGroup, const FAStarNode& node1, const FAStarNode& node2)
+	{
+		return kSelectionGroup.getHeadUnit()->isAllowDirectPath() && isAdjacent(node1, node2);
 	}
 }
 
@@ -1099,6 +962,15 @@ int pathDestValid(int iToX, int iToY, const void* pointer, FAStar* finder)
 		}
 	}
 
+	if (!USE_CLASSIC_MOVEMENT_SYSTEM && pSelectionGroup->getHeadUnit()->isAllowDirectPath())
+	{
+		const CvPlot& kCurrentPlot = *pSelectionGroup->plot();
+		int dx = abs(kToPlot.getX_INLINE() - kCurrentPlot.getX_INLINE());
+		int dy = abs(kToPlot.getY_INLINE() - kCurrentPlot.getY_INLINE());
+		if (dx > 1 || dy > 1)
+			return FALSE;
+	}
+
 	return TRUE;
 }
 
@@ -1111,22 +983,48 @@ int pathHeuristic(int iFromX, int iFromY, int iToX, int iToY)
 // This function has been completely rewritten for K-Mod. (the rewrite includes some bug fixes as well as some new features)
 int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer, FAStar* finder)
 {
+	// Note: The UI PF passes a non-NULL finder, so when it is NULL we're called by the K-Mod PF
+	const int hints = (finder == 0 ? data : 0);
+	const bool hintIsGoal = (hints & NF_DESTINATION_NODE) != 0;
+	const bool hintAdjStart = (hints & NF_ADJACENT_TO_START) != 0;
+
 	//PROFILE_FUNC(); // advc.003o
+
+	// K-Mod
+	CvSelectionGroup* const pSelectionGroup = finder ? (CvSelectionGroup*)pointer : ((CvPathSettings*)pointer)->pGroup;
+	const int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) : ((CvPathSettings*)pointer)->iFlags;
+	// K-Mod end
+
+	// Prefer exact adjacent goal step for human GUI paths
+	if ((finder != 0 || hints != 0) &&
+		!USE_CLASSIC_MOVEMENT_SYSTEM &&
+		!pSelectionGroup->AI_isControlled())
+	{
+		// UI case (finder!=0): use finder’s dest.
+		// K-Mod case (finder==0): rely on hint passed in data arg 
+		const bool isFirstEdge = (parent->m_pParent == NULL);
+		const bool isGoalEdge = (finder != 0
+			? (node->m_iX == gDLL->getFAStarIFace()->GetDestX(finder)
+				&& node->m_iY == gDLL->getFAStarIFace()->GetDestY(finder))
+			: hintIsGoal);
+
+		if (isFirstEdge && isGoalEdge)
+		{
+			if (finder != 0 || hintAdjStart)
+				return PATH_STEP_WEIGHT;
+		}
+	}
 
 	CvMap const& m = GC.getMap(); // advc: ... and use CvPlot references:
 	CvPlot const& kFromPlot = m.getPlot(parent->m_iX, parent->m_iY);
 	CvPlot const& kToPlot = m.getPlot(node->m_iX, node->m_iY);
 
-	//CvSelectionGroup* pSelectionGroup = ((CvSelectionGroup *)pointer);
-	// K-Mod
-	CvSelectionGroup* pSelectionGroup = finder ? (CvSelectionGroup*)pointer : ((CvPathSettings*)pointer)->pGroup;
-	int iFlags = finder ? gDLL->getFAStarIFace()->GetInfo(finder) : ((CvPathSettings*)pointer)->iFlags;
-	// K-Mod end
-
-
 	int iWorstCost = 0;
-	int iWorstMovesLeft = MAX_INT;
-	//int iWorstMaxMoves = MAX_INT; // advc: unused
+	// Track both clamped and raw "moves left" after this edge.
+	//  - afterRaw lets us detect NMS turn-breaks (afterRaw < 0)
+	//  - afterClamp is used by original cost formula (0 when exhausted)
+	int iWorstMovesLeftClamped = MAX_INT;
+	int iWorstAfterRaw = MAX_INT; // min across units of (iMaxMoves - iMoveCost), unclamped
 
 	const TeamTypes eTeam = pSelectionGroup->getHeadTeam();
 	// <advc.035>
@@ -1184,55 +1082,45 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 		}
 	} // </advc.035>
 #endif
+
+	// Per-unit edge cost, take the worst across the group
+	for (CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
+		pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
 	{
-		for (CLLNode<IDInfo> const* pUnitNode = pSelectionGroup->headUnitNode();
-			pUnitNode != NULL; pUnitNode = pSelectionGroup->nextUnitNode(pUnitNode))
+		const CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+		if (!pLoopUnit) continue;
+
+		const int iMoveCost = kToPlot.movementCost(pLoopUnit, &kFromPlot, false);
+
+		// iMaxMoves for this edge comes from parent state; fallback to unit's max.
+		const int iMaxMoves = (parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves());
+		const int afterRaw = iMaxMoves - iMoveCost;     // can be negative in NMS
+		const int afterClamp = std::max(0, afterRaw);     // classic-visible moves left
+
+		// Track mins across group for later gates/tie-breakers
+		if (afterClamp < iWorstMovesLeftClamped) iWorstMovesLeftClamped = afterClamp;
+		if (afterRaw < iWorstAfterRaw)         iWorstAfterRaw = afterRaw;
+
+		int iCost;
+		if (USE_CLASSIC_MOVEMENT_SYSTEM)
 		{
-			CvUnit const* pLoopUnit = ::getUnit(pUnitNode->m_data);
-
-			if (pLoopUnit == NULL)
-				continue;
-
-			const int iMoveCost = kToPlot.movementCost(pLoopUnit, &kFromPlot,
-				false); // advc.001i
-			//FAssert(pLoopUnit->getDomainType() != DOMAIN_AIR);
-			
-			const int iMaxMoves = parent->m_iData1 > 0 ? parent->m_iData1 : pLoopUnit->maxMoves();
-			const int iMovesLeft = std::max(0, (iMaxMoves - iMoveCost));
-
-			iWorstMovesLeft = std::min(iWorstMovesLeft, iMovesLeft);
-			//iWorstMaxMoves = std::min(iWorstMaxMoves, iMaxMoves);
-
-			int iCost;
-			if (USE_CLASSIC_MOVEMENT_SYSTEM)
-			{
-				iCost = PATH_MOVEMENT_WEIGHT * (iMovesLeft == 0 ? iMaxMoves : iMoveCost);
-			}
-			else
-			{
-				iCost = PATH_MOVEMENT_WEIGHT * iMoveCost;
-				// For non-classical movement, add extra penalty for additional turns.
-				int baseTurnCost = pLoopUnit->maxMoves() * GLOBAL_DEFINE_MOVE_DENOMINATOR;
-				// Note: iMoveCost here has been scaled by PATH_MOVEMENT_WEIGHT already.
-				// If the cost exceeds what can be paid in one turn, add a penalty.
-				if (iCost > baseTurnCost)
-				{
-					int extraTurns = (iCost - baseTurnCost + baseTurnCost - 1) / baseTurnCost;
-					iCost += extraTurns * TURN_PENALTY_WEIGHT;
-				}
-			}
-
-			iCost = (iCost * iExploreModifier) / 3;
-			//iCost = (iCost * iFlipModifier) / iFlipModifierDiv; // advc.035
-			if (iCost > iWorstCost)
-			{
-				iWorstCost = iCost;
-				iWorstMovesLeft = iMovesLeft;
-				//iWorstMaxMoves = iMaxMoves;
-			}
+			// EXACT classic behavior:
+			iCost = PATH_MOVEMENT_WEIGHT * (afterClamp == 0 ? iMaxMoves : iMoveCost);
 		}
+		else
+		{
+			// NMS: pay the actual step cost; turn-break handling is added elsewhere
+			iCost = PATH_MOVEMENT_WEIGHT * iMoveCost;
+		}
+
+		// Exploration modifier (unchanged)
+		iCost = (iCost * iExploreModifier) / 3;
+
+		if (iCost > iWorstCost)
+			iWorstCost = iCost;
 	}
 
+	// Base step tie-breaker (original)
 	iWorstCost += PATH_STEP_WEIGHT;
 
 	// symmetry breaking. This is meant to prevent two paths from having equal cost.
@@ -1377,7 +1265,7 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 		}
 	}
 
-	if (iWorstMovesLeft <= 0)
+	if (iWorstMovesLeftClamped <= 0)
 	{
 		if (eToPlotTeam != eTeam)
 		{
@@ -1496,8 +1384,30 @@ int pathCost(FAStarNode* parent, FAStarNode* node, int data, const void* pointer
 		}
 	}
 
-	FAssert(iWorstCost > 0);
+	// "Rest debt" penalty for arriving at the destination while having negative moves
+	if (!USE_CLASSIC_MOVEMENT_SYSTEM)
+	{
+		const bool isGoal = (finder != 0
+			? (node->m_iX == gDLL->getFAStarIFace()->GetDestX(finder)
+				&& node->m_iY == gDLL->getFAStarIFace()->GetDestY(finder))
+			: hintIsGoal);
 
+		if (isGoal && iWorstAfterRaw <= 0)
+		{
+			// Use group-min per-turn budget to align with iMaxMoves/afterRaw logic.
+			const int PT = pSelectionGroup->maxMoves();
+			if (PT > 0)
+			{
+				// full turns we must wait before we can act (>0 MP)
+				const int waitTurns = (1 - iWorstAfterRaw + PT - 1) / PT; // ceil((1 - afterRaw)/PT)
+
+				// Keep this light so it never dominates path length or terrain.
+				// One PATH_STEP_WEIGHT per turn of waiting tends to be enough to break ties sanely.
+				iWorstCost += waitTurns * PATH_STEP_WEIGHT;
+			}
+		}
+	}	
+	FAssert(iWorstCost > 0);
 	return iWorstCost;
 }
 
@@ -1545,7 +1455,7 @@ int pathValid_source(FAStarNode* parent, CvSelectionGroup* pSelectionGroup, int 
 		if (kFromPlot.getRevealedRouteType(pSelectionGroup->getHeadTeam(), false) == NO_ROUTE &&
 			!pSelectionGroup->isHuman())
 		{
-			PlayerTypes eOwner = kFromPlot.getOwner();
+			PlayerTypes eOwner = kFromPlot.getOwnerINLINE();
 			if (eOwner != NO_PLAYER && GET_PLAYER(eOwner).isHuman())
 				return FALSE;
 		}
@@ -1683,7 +1593,14 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 		// K-Mod. I've moved the code from here into separate functions.
 		iMoves = bMoveMaxMoves ? pSelectionGroup->maxMoves() : pSelectionGroup->movesLeft();
 
-		if (!USE_CLASSIC_MOVEMENT_SYSTEM)
+		// The parent check excepts the start node (whose parent is null) from being assigned any other
+		// iTurns than 1 when added. This prevents an assert when using NMS in GetPathEndTurnPlot that triggers 
+		// if a group is out of movement points while resting off movement debt AND it attempts to pathfind to its current plot
+		// Note: These conditions are a bit contrived and it's likely that this is just a symptom of something
+		// that should be addressed elsewhere. Finally, it makes more sense that we should never require more than 1 turn 
+		// to reach the start plot, regardless of debt (Do note that this change does NOT change any pathing calculation,
+		// the debt is fully accounted  for, the init debt (if any) is rather processed on the first child instead
+		if (parent != NULL && !USE_CLASSIC_MOVEMENT_SYSTEM)
 		{
 			while (iMoves <= 0)
 			{
@@ -1723,7 +1640,7 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 				iMoves = pSelectionGroup->maxMoves();
 			}
 		}
-		else // GLOBAL_DEFINE_USE_CLASSIC_MOVEMENT_SYSTEM == 0
+		else
 		{
 			// add how many turns it takes before the unit can move again
 			while (iMoves <= 0)
@@ -1806,7 +1723,7 @@ int pathAdd(FAStarNode* parent, FAStarNode* node, int data, const void* pointer,
 					else
 					{
 						// TODO: Get the most costly terrain/feature combo path cost from xml and use it as the threshold
-						FAssert(iUnitMoves >= -500); // Note: does not have to be accurate, just enough to detect corruption etc.
+						FAssert(iUnitMoves >= -600); // Note: does not have to be accurate, just enough to detect corruption etc.
 					}
 				}
 				if (USE_CLASSIC_MOVEMENT_SYSTEM)
@@ -2402,6 +2319,8 @@ void postLoadGameFixes()
 
 #endif
 	GC.getGameINLINE().postLoadFixes();
+
+	GC.getGameINLINE().initPassthroughYieldCache();
 }
 /// post load function - end - Nightinggale
 

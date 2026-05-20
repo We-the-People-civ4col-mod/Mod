@@ -17,10 +17,10 @@ class CyUnit;
 class CvSelectionGroup;
 class CySelectionGroup
 {
+	CvSelectionGroup* pointer(AssertCallerData);
 public:
 	CySelectionGroup();
 	CySelectionGroup(CvSelectionGroup* pSelectionGroup);		// Call from C++
-	CvSelectionGroup* getSelectionGroup() { return m_pSelectionGroup;	}	// Call from C++
 
 	bool isNone() { return (m_pSelectionGroup==NULL); }
 	void pushMission(MissionTypes eMission, int iData1, int iData2, int iFlags, bool bAppend, bool bManual, MissionAITypes eMissionAI, CyPlot* pMissionAIPlot, CyUnit* pMissionAIUnit);
@@ -90,7 +90,7 @@ public:
 	CyUnit* getUnitAt(int index);
 
 protected:
-	CvSelectionGroup* m_pSelectionGroup;
+	const CvSelectionGroup* const m_pSelectionGroup;
 };
 
 #endif	// #ifndef CySelectionGroup_h

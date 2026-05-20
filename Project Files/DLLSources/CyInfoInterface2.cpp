@@ -311,4 +311,9 @@ void CyInfoPythonInterface2()
 		.def("isTerrain", &CyFeatureInfo::isTerrain, "bool (int i)")
 		.def("getNumVarieties", &CvFeatureInfo::getNumVarieties, "int ()")
 		;
+	python::class_<CyAchieveInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvAchieveInfo")
+		.def("getPictureFileName", &CyAchieveInfo::getPictureFileName, python::return_value_policy<python::return_by_value>())
+		.def("getHeaderTextKey", &CyAchieveInfo::getHeaderTextKey, python::return_value_policy<python::return_by_value>())
+		.def("getBodyTextKey", &CyAchieveInfo::getBodyTextKey, python::return_value_policy<python::return_by_value>())
+	;
 }

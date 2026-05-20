@@ -20,10 +20,10 @@ class CvMapGenerator;
 class CyPlot;
 class CyMapGenerator
 {
+	CvMapGenerator* pointer(AssertCallerData);
 public:
 	CyMapGenerator();
 	CyMapGenerator(CvMapGenerator* pMapGenerator);		// Call from C++
-	CvMapGenerator* getMapGenerator() { return m_pMapGenerator;	}	// Call from C++
 	bool isNone() { return (m_pMapGenerator==NULL); }
 
 
@@ -61,7 +61,7 @@ public:
 	void setPlotTypes(boost::python::list& listPlotTypes);
 
 protected:
-	CvMapGenerator* m_pMapGenerator;
+	const CvMapGenerator* const m_pMapGenerator;
 };
 
 #endif	// CyMapGenerator_h

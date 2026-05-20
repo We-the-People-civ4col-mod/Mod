@@ -1031,9 +1031,9 @@ void CvCity::chooseProduction(UnitTypes eTrainUnit, BuildingTypes eConstructBuil
 }
 
 
-int CvCity::getCityPlotIndex(const CvPlot* pPlot) const
+CityPlotTypes CvCity::getCityPlotIndex(const CvPlot* pPlot) const
 {
-	return plotCityXY(this, pPlot);
+	return (CityPlotTypes)plotCityXY(this, pPlot);
 }
 
 
@@ -4904,6 +4904,73 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 		aiYields[iYield] = getYieldStored(eYield) - aiConsumedYields[iYield] + aiProducedYields[iYield] * getBaseYieldRateModifier(eYield) / 100;
 	}
 
+	CvGame& game = GC.getGameINLINE();
+
+	// This section handles the special-case: "pass through yields" i.e. YIELD_MILK whose profession
+	// produce the same output yield as the input yield e.g. YIELD_CATTLE etc.
+	// gate outputs like MILK by available passthrough capacity.
+	int iOut;
+	for (iOut = 0; iOut < (int)game.g_aeGatedOutputs.size(); ++iOut)
+	{
+		YieldTypes eOutput = game.g_aeGatedOutputs[iOut];
+		const int iOutIndex = (int)eOutput;
+		if (iOutIndex < 0 || iOutIndex >= NUM_YIELD_TYPES)
+		{
+			continue;
+		}
+
+		if (aiProducedYields[iOutIndex] <= 0)
+		{
+			continue;
+		}
+
+		const std::vector<YieldTypes>& vCap = game.g_aeCapacityYieldsForOutput[iOutIndex];
+		if (vCap.empty())
+		{
+			continue;
+		}
+
+		// Capacity = sum(max(0, netProduced_raw(Y) + stored(Y))) for all capacity yields Y.
+		int iCapacityUnits = 0;
+		int iCap;
+		for (iCap = 0; iCap < (int)vCap.size(); ++iCap)
+		{
+			YieldTypes eCap = vCap[iCap];
+			const int iCapIndex = (int)eCap;
+			if (iCapIndex < 0 || iCapIndex >= NUM_YIELD_TYPES)
+			{
+				continue;
+			}
+
+			const int iNetProduced = aiProducedYields[iCapIndex] - aiConsumedYields[iCapIndex];
+			const int iAvail = iNetProduced + getYieldStored(eCap);
+			if (iAvail > 0)
+			{
+				iCapacityUnits += iAvail;
+			}
+		}
+
+		const int iMod = getBaseYieldRateModifier(eOutput);
+
+		if (iCapacityUnits <= 0)
+		{
+			// No animals at all -> no new production of this output.
+			aiProducedYields[iOutIndex] = 0;
+			aiYields[iOutIndex] = getYieldStored(eOutput) - aiConsumedYields[iOutIndex];
+		}
+		else
+		{
+			// Enforce: raw produced output cannot exceed raw capacity from animals.
+			if (aiProducedYields[iOutIndex] > iCapacityUnits)
+			{
+				aiProducedYields[iOutIndex] = iCapacityUnits;
+				aiYields[iOutIndex] = getYieldStored(eOutput)
+					- aiConsumedYields[iOutIndex]
+					+ aiProducedYields[iOutIndex] * iMod / 100;
+			}
+		}
+	}
+
 	std::set<ProfessionTypes> setUnsatisfiedProfessions;
 	// TAC - Messages - Ray - START
 	std::set<ProfessionTypes> setAlmostUnsatisfiedProfessions;
@@ -5104,6 +5171,123 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 	{
 		FAssertMsg((eYield == YIELD_FOOD) || (aiYields[eYield] >= 0), CvString::format("%s=%d", GC.getYieldInfo(eYield).getType(), aiYields[eYield]).c_str());
 		aiYields[eYield] -= getYieldStored(eYield);
+	}
+
+	// This section ensures that pass-through yields like cattle does not get the output multiplier
+	// applied, otherwise the milkmaid would produce additional cattle in addition to the milk
+	// Details:
+	// aiYields[Y] is this turn's net delta: produced_raw*mod/100 - consumed_raw.
+	// For passthrough yields, remove the extra net created by applying mod to the
+	// passthrough slice (so passthrough can't grow stock from multipliers).
+	// (I.e. neutralize the multiplier for the passthrough portion only.)
+	int iPt;
+	for (iPt = 0; iPt < (int)game.g_aePassthroughYields.size(); ++iPt)
+	{
+		YieldTypes eY = game.g_aePassthroughYields[iPt];
+		const int iYIndex = (int)eY;
+		if (iYIndex < 0 || iYIndex >= NUM_YIELD_TYPES)
+		{
+			continue;
+		}
+
+		// Only adjust if the herd is actually growing.
+		if (aiYields[iYIndex] <= 0)
+		{
+			continue;
+		}
+
+		const std::vector<ProfessionTypes>& aProfs = game.g_aPassthroughProfsForYield[iYIndex];
+		if (aProfs.empty())
+		{
+			continue;
+		}
+
+		// Raw passthrough production of Y in this city from actual passthrough professions.
+		int iPassRaw = 0;
+
+		int iUnitIndex;
+		for (iUnitIndex = 0; iUnitIndex < (int)m_aPopulationUnits.size(); ++iUnitIndex)
+		{
+			CvUnit* pUnit = m_aPopulationUnits[iUnitIndex];
+			if (pUnit == NULL)
+			{
+				continue;
+			}
+
+			ProfessionTypes eProf = pUnit->getProfession();
+			if (eProf == NO_PROFESSION)
+			{
+				continue;
+			}
+
+			// Is this profession a passthrough profession for yield eY?
+			bool bIsPassProf = false;
+			int iProfIdx;
+			for (iProfIdx = 0; iProfIdx < (int)aProfs.size(); ++iProfIdx)
+			{
+				if (aProfs[iProfIdx] == eProf)
+				{
+					bIsPassProf = true;
+					break;
+				}
+			}
+			if (!bIsPassProf)
+			{
+				continue;
+			}
+
+			// This unit uses a passthrough profession for eY.
+			// getProfessionOutput returns the raw per-slot output, which
+			// for milkmaids is the amount they both consume and produce
+			// for the passthrough yield (cattle/sheep/goats).
+			const CvProfessionInfo& kProf = GC.getProfessionInfo(eProf);
+
+			// Only count this unit if it actually produces eY in this profession.
+			int iNumProduced = kProf.getNumYieldsProduced();
+			bool bProducesY = false;
+			int iP;
+			for (iP = 0; iP < iNumProduced; ++iP)
+			{
+				if ((YieldTypes)kProf.getYieldsProduced(iP) == eY)
+				{
+					bProducesY = true;
+					break;
+				}
+			}
+			if (!bProducesY)
+			{
+				continue;
+			}
+
+			iPassRaw += getProfessionOutput(eProf, pUnit);
+		}
+
+		if (iPassRaw <= 0)
+		{
+			continue; // no passthrough production of this yield in this city
+		}
+
+		const int iModY = getBaseYieldRateModifier(eY);
+		if (iModY <= 100)
+		{
+			continue; // cannot create positive extra on passthrough
+		}
+
+		// Extra from applying modifier on the passthrough slice.
+		const int iPassWithMod = (iPassRaw * iModY) / 100;
+		const int iExtra = iPassWithMod - iPassRaw;
+		if (iExtra <= 0)
+		{
+			continue;
+		}
+
+		// aiYields[iYIndex] is the net delta. We only reduce the positive part,
+		// and by at most the extra from passthrough.
+		const int iReduce = (aiYields[iYIndex] < iExtra) ? aiYields[iYIndex] : iExtra;
+		if (iReduce > 0)
+		{
+			aiYields[iYIndex] -= iReduce;
+		}
 	}
 
 	// Immigration
@@ -6522,9 +6706,9 @@ void CvCity::pushOrder(OrderData order, bool bPop, bool bAppend, bool bForce)
 				order.unitAI() = (UnitAITypes)GC.getUnitInfo(order.unit()).getDefaultUnitAIType();
 			}
 
-			GET_PLAYER(getOwner()).changeUnitClassMaking(GC.getUnitInfo(order.unit()).getUnitClassType(), 1);
-			area()->changeNumTrainAIUnits(getOwner(), order.unitAI(), 1);
-			GET_PLAYER(getOwner()).AI_changeNumTrainAIUnits(order.unitAI(), 1);
+			GET_PLAYER(getOwnerINLINE()).changeUnitClassMaking(GC.getUnitInfo(order.unit()).getUnitClassType(), 1);
+			area()->changeNumTrainAIUnits(getOwnerINLINE(), order.unitAI(), 1);
+			GET_PLAYER(getOwnerINLINE()).AI_changeNumTrainAIUnits(order.unitAI(), 1);
 
 			bValid = true;
 			gDLL->getEventReporterIFace()->cityBuildingUnit(this, order.unit());
@@ -7071,7 +7255,7 @@ int CvCity::getOrderQueueLength() const
 }
 
 
-OrderData* CvCity::getOrderFromQueue(int iIndex)
+OrderData* CvCity::getOrderFromQueue(int iIndex) const
 {
 	CLLNode<OrderData>* pOrderNode;
 
@@ -7307,20 +7491,18 @@ void CvCity::doYields()
 				{
 					iAmount = iAmountForSale;
 				}
-				int iProfit = iAmount * getYieldBuyPrice(eYield);
+				scaled rProfit(iAmount* getYieldBuyPrice(eYield));
+				
+				if (iCityHappinessDomesticMarketGoldModifiers != 0)
+					rProfit *= per100(100 + iCityHappinessDomesticMarketGoldModifiers);
+				
+				if (iCityLawDomesticMarketGoldModifiers != 0)
+					rProfit *= per100(100 + iCityLawDomesticMarketGoldModifiers);
 
-				// WTP, ray, Happiness - START
-				iProfit = iProfit * (100 + iCityHappinessDomesticMarketGoldModifiers) / 100;
-				// WTP, ray, Happiness - END
+				if (iDomesticMarketProfitModifierInPercent != 0)
+					rProfit *= per100(100 + iDomesticMarketProfitModifierInPercent);
 
-				// WTP, ray, Crime and Law - START
-				iProfit = iProfit * (100 + iCityLawDomesticMarketGoldModifiers) / 100;
-				// WTP, ray, Crime and Law - END
-
-				// WTP, ray, Domestic Market Profit Modifier - START
-				iProfit = iProfit * (100 + iDomesticMarketProfitModifierInPercent) / 100;
-				// WTP, ray, Domestic Market Profit Modifier - END
-
+				const int iProfit = rProfit.round();
 				aiYields[eYield] -= iAmount;
 				GET_PLAYER(getOwnerINLINE()).changeGold(iProfit);
 				iTotalProfitFromDomesticMarket = iTotalProfitFromDomesticMarket + iProfit;
@@ -10710,9 +10892,10 @@ int CvCity::getUnhappinessFromTaxRate() const
 {
 	const CvPlayer& owner = GET_PLAYER(getOwnerINLINE());
 
-	if (!owner.is(CIV_CATEGORY_COLONIAL))
+	if (!owner.is(CIV_CATEGORY_COLONIAL) || owner.isInRevolution())
 	{
 		// only colonial players pay tax and as such has settings for taxes
+		// Dyllin: Colonies involved in Revolution should not experience Tax Rate anger either.
 		return 0;
 	}
 
@@ -13589,6 +13772,12 @@ void CvCity::getYieldDemands(YieldCargoArray<int> &aYields) const
 		CvUnit* pLoopUnit = m_aPopulationUnits[i];
 		// reuse CivEffect cache code as it's essentially we same we need here: add a bunch of InfoArrays into one JIT array.
 		aYields.addCache(1, GC.getUnitInfo(pLoopUnit->getUnitType()).getYieldDemands());
+
+		const ProfessionTypes eProfession = pLoopUnit->getProfession();
+		if (eProfession != NO_PROFESSION)
+		{
+			aYields.addCache(1, GC.getProfessionInfo(eProfession).getYieldDemands());
+		}
 	}
 
 	// WTP, ray, adjustments to Domestic Market to also consider Defenders on City Plot - START
@@ -14129,6 +14318,16 @@ void CvCity::writeDesyncLog(FILE *f) const
 		}
 	}
 
+	fprintf(f, "\t\tBuildings:\n");
+
+	for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
+	{
+		if (isHasBuilding(eBuilding))
+		{
+			fprintf(f, "\t\t\t%s\n", GC.getBuildingInfo(eBuilding).getType());
+		}
+	}
+
 	fprintf(f, "\t\tWarehouse capacity: %d\n", getMaxYieldCapacity());
 
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
@@ -14156,3 +14355,14 @@ TerrainTypes CvCity::getCenterPlotTerrainType() const
 }
 // WTP, ray, Center Plot specific Backgrounds - END
 
+// Returns the maximum amount of eYield that the city can export,
+// respecting the auto maintain threshold (and thus indirectly the maintain threshold)
+// AI code should use this function do determine how much of a yield can be picked up
+int CvCity::getExportAvailable(YieldTypes eYield) const
+{
+	if (!GC.getYieldInfo(eYield).isCargo())
+		return 0;
+
+	return std::max(0, getYieldStored(eYield)
+		- getAutoMaintainThreshold(eYield));
+}

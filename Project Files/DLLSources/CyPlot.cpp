@@ -8,6 +8,15 @@
 #include "CyArea.h"
 #include "CyUnit.h"
 #include "CvPlot.h"
+#include "DesyncMonitor.h"
+
+CvPlot* CyPlot::pointer(AssertCallerData data)
+{
+	FAssertWithCaller(data, CxDesyncMonitor::isAlwaysSync());
+	FAssertWithCaller(data, m_pPlot != NULL);
+	return (CvPlot*)m_pPlot;
+}
+
 CyPlot::CyPlot(CvPlot* pPlot) : m_pPlot(pPlot)
 {
 }
@@ -17,7 +26,7 @@ CyPlot::CyPlot() : m_pPlot(NULL)
 void CyPlot::erase()
 {
 	if (m_pPlot)
-		m_pPlot->erase();
+		pointer(CREATE_ASSERT_DATA)->erase();
 }
 NiPoint3 CyPlot::getPoint()
 {
@@ -31,7 +40,7 @@ void CyPlot::updateVisibility()
 {
 	if (m_pPlot)
 	{
-		m_pPlot->updateVisibility();
+		pointer(CREATE_ASSERT_DATA)->updateVisibility();
 	}
 }
 bool CyPlot::isAdjacentToArea(CyArea* pArea)
@@ -231,7 +240,7 @@ void CyPlot::removeGoody()
 {
 	if (m_pPlot)
 	{
-		m_pPlot->removeGoody();
+		pointer(CREATE_ASSERT_DATA)->removeGoody();
 	}
 }
 bool CyPlot::isGoody()
@@ -357,12 +366,12 @@ int CyPlot::getUpgradeTimeLeft(int /*ImprovementTypes*/ eImprovement, int /*Play
 void CyPlot::setUpgradeProgress(int iNewValue)
 {
 	if (m_pPlot)
-		m_pPlot->setUpgradeProgress(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setUpgradeProgress(iNewValue);
 }
 void CyPlot::changeUpgradeProgress(int iChange)
 {
 	if (m_pPlot)
-		m_pPlot->changeUpgradeProgress(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeUpgradeProgress(iChange);
 }
 int CyPlot::getForceUnownedTimer()
 {
@@ -375,12 +384,12 @@ bool CyPlot::isForceUnowned()
 void CyPlot::setForceUnownedTimer(int iNewValue)
 {
 	if (m_pPlot)
-		m_pPlot->setForceUnownedTimer(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setForceUnownedTimer(iNewValue);
 }
 void CyPlot::changeForceUnownedTimer(int iChange)
 {
 	if (m_pPlot)
-		m_pPlot->changeForceUnownedTimer(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeForceUnownedTimer(iChange);
 }
 int CyPlot::getCityRadiusCount()
 {
@@ -403,7 +412,7 @@ bool CyPlot::isEuropeAccessable()
 void CyPlot::setStartingPlot(bool bNewValue)
 {
 	if (m_pPlot)
-		m_pPlot->setStartingPlot(bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setStartingPlot(bNewValue);
 }
 bool CyPlot::isNOfRiver()
 {
@@ -413,7 +422,7 @@ void CyPlot::setNOfRiver(bool bNewValue, CardinalDirectionTypes eRiverDir)
 {
 	if (m_pPlot)
 	{
-		m_pPlot->setNOfRiver(bNewValue, eRiverDir);
+		pointer(CREATE_ASSERT_DATA)->setNOfRiver(bNewValue, eRiverDir);
 	}
 }
 bool CyPlot::isWOfRiver()
@@ -424,7 +433,7 @@ void CyPlot::setWOfRiver(bool bNewValue, CardinalDirectionTypes eRiverDir)
 {
 	if (m_pPlot)
 	{
-		m_pPlot->setWOfRiver(bNewValue, eRiverDir);
+		pointer(CREATE_ASSERT_DATA)->setWOfRiver(bNewValue, eRiverDir);
 	}
 }
 CardinalDirectionTypes CyPlot::getRiverWEDirection()
@@ -451,7 +460,7 @@ void CyPlot::setFlagDirty(bool bNewValue)
 {
 	if (m_pPlot)
 	{
-		m_pPlot->setFlagDirty(bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setFlagDirty(bNewValue);
 	}
 }
 int CyPlot::getOwner()
@@ -461,7 +470,7 @@ int CyPlot::getOwner()
 void CyPlot::setOwner(int /*PlayerTypes*/ eNewValue)
 {
 	if (m_pPlot)
-		m_pPlot->setOwner((PlayerTypes) eNewValue, true);
+		pointer(CREATE_ASSERT_DATA)->setOwner((PlayerTypes) eNewValue, true);
 }
 PlotTypes CyPlot::getPlotType()
 {
@@ -483,7 +492,7 @@ void CyPlot::setEurope(int iEurope)
 {
 	if (m_pPlot)
 	{
-		m_pPlot->setEurope((EuropeTypes) iEurope);
+		pointer(CREATE_ASSERT_DATA)->setEurope((EuropeTypes) iEurope);
 	}
 }
 bool CyPlot::isFlatlands()
@@ -501,7 +510,7 @@ bool CyPlot::isPeak()
 void CyPlot::setPlotType(PlotTypes eNewValue, bool bRecalculate, bool bRebuildGraphics)
 {
 	if (m_pPlot)
-		m_pPlot->setPlotType(eNewValue, bRecalculate, bRebuildGraphics);
+		pointer(CREATE_ASSERT_DATA)->setPlotType(eNewValue, bRecalculate, bRebuildGraphics);
 }
 int /*TerrainTypes*/ CyPlot::getTerrainType()
 {
@@ -510,7 +519,7 @@ int /*TerrainTypes*/ CyPlot::getTerrainType()
 void CyPlot::setTerrainType(int /*TerrainTypes*/ eNewValue, bool bRecalculate, bool bRebuildGraphics)
 {
 	if (m_pPlot)
-		m_pPlot->setTerrainType((TerrainTypes)eNewValue, bRecalculate, bRebuildGraphics);
+		pointer(CREATE_ASSERT_DATA)->setTerrainType((TerrainTypes)eNewValue, bRecalculate, bRebuildGraphics);
 }
 int /*FeatureTypes*/ CyPlot::getFeatureType()
 {
@@ -519,7 +528,7 @@ int /*FeatureTypes*/ CyPlot::getFeatureType()
 void CyPlot::setFeatureType(int /*FeatureTypes*/ eNewValue, int iVariety)
 {
 	if (m_pPlot)
-		m_pPlot->setFeatureType((FeatureTypes)eNewValue, iVariety);
+		pointer(CREATE_ASSERT_DATA)->setFeatureType((FeatureTypes)eNewValue, iVariety);
 }
 int CyPlot::getFeatureVariety()
 {
@@ -536,12 +545,12 @@ bool CyPlot::isOwnershipScore()
 void CyPlot::setOwnershipDuration(int iNewValue)
 {
 	if (m_pPlot)
-		m_pPlot->setOwnershipDuration(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setOwnershipDuration(iNewValue);
 }
 void CyPlot::changeOwnershipDuration(int iChange)
 {
 	if (m_pPlot)
-		m_pPlot->changeOwnershipDuration(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeOwnershipDuration(iChange);
 }
 int CyPlot::getImprovementDuration()
 {
@@ -550,12 +559,12 @@ int CyPlot::getImprovementDuration()
 void CyPlot::setImprovementDuration(int iNewValue)
 {
 	if (m_pPlot)
-		m_pPlot->setImprovementDuration(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setImprovementDuration(iNewValue);
 }
 void CyPlot::changeImprovementDuration(int iChange)
 {
 	if (m_pPlot)
-		m_pPlot->changeImprovementDuration(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeImprovementDuration(iChange);
 }
 int /* BonusTypes */ CyPlot::getBonusType()
 {
@@ -564,7 +573,7 @@ int /* BonusTypes */ CyPlot::getBonusType()
 void CyPlot::setBonusType(int /* BonusTypes */ eNewValue)
 {
 	if (m_pPlot)
-		m_pPlot->setBonusType((BonusTypes)eNewValue);
+		pointer(CREATE_ASSERT_DATA)->setBonusType((BonusTypes)eNewValue);
 }
 int /* ImprovementTypes */ CyPlot::getImprovementType()
 {
@@ -573,7 +582,7 @@ int /* ImprovementTypes */ CyPlot::getImprovementType()
 void CyPlot::setImprovementType(int /* ImprovementTypes */ eNewValue)
 {
 	if (m_pPlot)
-		m_pPlot->setImprovementType((ImprovementTypes)eNewValue);
+		pointer(CREATE_ASSERT_DATA)->setImprovementType((ImprovementTypes)eNewValue);
 }
 int /* RouteTypes */ CyPlot::getRouteType()
 {
@@ -582,7 +591,7 @@ int /* RouteTypes */ CyPlot::getRouteType()
 void CyPlot::setRouteType(int /*RouteTypes*/ eNewValue)
 {
 	if (m_pPlot)
-		m_pPlot->setRouteType((RouteTypes) eNewValue);
+		pointer(CREATE_ASSERT_DATA)->setRouteType((RouteTypes) eNewValue);
 }
 CyCity* CyPlot::getPlotCity()
 {
@@ -603,7 +612,7 @@ int CyPlot::getRiverID() const
 void CyPlot::setRiverID(int iNewValue)
 {
 	if (m_pPlot)
-		m_pPlot->setRiverID(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setRiverID(iNewValue);
 }
 int CyPlot::getMinOriginalStartDist()
 {
@@ -664,16 +673,16 @@ int CyPlot::calculateTeamCulturePercent(int /*TeamTypes*/ eIndex)
 void CyPlot::setCulture(int /*PlayerTypes*/ eIndex, int iChange, bool bUpdate)
 {
 	if (m_pPlot)
-		m_pPlot->setCulture((PlayerTypes)eIndex, iChange, bUpdate);
+		pointer(CREATE_ASSERT_DATA)->setCulture((PlayerTypes)eIndex, iChange, bUpdate);
 }
 void CyPlot::changeCulture(int /*PlayerTypes*/ eIndex, int iChange, bool bUpdate)
 {
 	if (m_pPlot)
-		m_pPlot->changeCulture((PlayerTypes)eIndex, iChange, bUpdate);
+		pointer(CREATE_ASSERT_DATA)->changeCulture((PlayerTypes)eIndex, iChange, bUpdate);
 }
 int CyPlot::getFoundValue(int /*PlayerTypes*/ eIndex)
 {
-	return m_pPlot ? m_pPlot->getFoundValue((PlayerTypes)eIndex) : -1;
+	return m_pPlot ? pointer(CREATE_ASSERT_DATA)->getFoundValue((PlayerTypes)eIndex) : -1;
 }
 bool CyPlot::isBestAdjacentFound(int /*PlayerTypes*/ eIndex)
 {
@@ -710,7 +719,7 @@ bool CyPlot::isRevealed(int /*TeamTypes*/ eTeam, bool bDebug)
 void CyPlot::setRevealed(int /*TeamTypes*/ eTeam, bool bNewValue, bool bTerrainOnly, int /*TeamTypes*/ eFromTeam)
 {
 	if (m_pPlot)
-		m_pPlot->setRevealed((TeamTypes)eTeam, bNewValue, bTerrainOnly, (TeamTypes)eFromTeam);
+		pointer(CREATE_ASSERT_DATA)->setRevealed((TeamTypes)eTeam, bNewValue, bTerrainOnly, (TeamTypes)eFromTeam);
 }
 int /* ImprovementTypes */ CyPlot::getRevealedImprovementType(int /*TeamTypes*/ eTeam, bool bDebug)
 {
@@ -726,7 +735,7 @@ int CyPlot::getBuildProgress(int /*BuildTypes*/ eBuild)
 }
 bool CyPlot::changeBuildProgress(int /*BuildTypes*/ eBuild, int iChange, int /*TeamTypes*/ eTeam)
 {
-	return m_pPlot ? m_pPlot->changeBuildProgress((BuildTypes)eBuild, iChange, (TeamTypes)eTeam) : false;
+	return m_pPlot ? pointer(CREATE_ASSERT_DATA)->changeBuildProgress((BuildTypes)eBuild, iChange, (TeamTypes)eTeam) : false;
 }
 int CyPlot::getCultureRangeCities(int /*PlayerTypes*/ eOwnerIndex, int iRangeIndex)
 {
@@ -747,7 +756,7 @@ bool CyPlot::isInvisibleVisible(int /*TeamTypes*/ eTeam, int /*InvisibleTypes*/ 
 void CyPlot::changeInvisibleVisibilityCount(int /*TeamTypes*/ eTeam, int /*InvisibleTypes*/ eInvisible, int iChange)
 {
 	if (m_pPlot)
-		m_pPlot->changeInvisibleVisibilityCount((TeamTypes) eTeam, (InvisibleTypes) eInvisible, iChange);
+		pointer(CREATE_ASSERT_DATA)->changeInvisibleVisibilityCount((TeamTypes) eTeam, (InvisibleTypes) eInvisible, iChange);
 }
 int CyPlot::getNumUnits()
 {
@@ -764,7 +773,7 @@ std::string CyPlot::getScriptData() const
 void CyPlot::setScriptData(std::string szNewValue)
 {
 	if (m_pPlot)
-		m_pPlot->setScriptData(szNewValue.c_str());
+		pointer(CREATE_ASSERT_DATA)->setScriptData(szNewValue.c_str());
 }
 // Super Forts begin *canal* *choke*
 int CyPlot::getCanalValue()
@@ -775,7 +784,7 @@ int CyPlot::getCanalValue()
 void CyPlot::calculateCanalValue()
 {
 	if (m_pPlot)
-		m_pPlot->calculateCanalValue();
+		pointer(CREATE_ASSERT_DATA)->calculateCanalValue();
 }
 
 int CyPlot::getChokeValue()
@@ -786,6 +795,6 @@ int CyPlot::getChokeValue()
 void CyPlot::calculateChokeValue()
 {
 	if (m_pPlot)
-		m_pPlot->calculateChokeValue();
+		pointer(CREATE_ASSERT_DATA)->calculateChokeValue();
 }
 // Super Forts end

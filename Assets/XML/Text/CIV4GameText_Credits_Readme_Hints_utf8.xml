@@ -1265,7 +1265,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_36</Tag>
-		<English>Press [COLOR:140:255:40:255]&lt; COMMA &gt;[COLOR_REVERT] and [COLOR:140:255:40:255]&lt; PERIOD &gt;[COLOR_REVERT] to scroll though units on the same square.</English>
+		<English>Press [COLOR:140:255:40:255]&lt; COMMA &gt;[COLOR_REVERT] and [COLOR:140:255:40:255]&lt; PERIOD &gt;[COLOR_REVERT] to scroll through units on the same square.</English>
 		<French>Appuyez sur [COLOR:140:255:40:255]&lt; POINT-VIRGULE &gt;[COLOR_REVERT] et [COLOR:140:255:40:255]&lt; DEUX POINTS &gt;[COLOR_REVERT] pour parcourir les unités sur la même case.</French>
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; KOMMA &gt;[COLOR_REVERT] und [COLOR:140:255:40:255]&lt; PUNKT &gt;[COLOR_REVERT], um durch die Einheiten auf einem Geländefeld zu schalten.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; , &gt;[COLOR_REVERT] e [COLOR:140:255:40:255]&lt; . &gt;[COLOR_REVERT] per scorrere tra le unità che si trovano nella stessa casella.</Italian>
@@ -1337,7 +1337,7 @@ Viel Spass![NEWLINE]
 	</TEXT>
 	<!--<TEXT>  duplicate HINT_INTERFACE_1
 		<Tag>TXT_KEY_HINT_INTERFACE_44</Tag>
-		<English>Hold down the [ALT] key to have a Settlement build an item indefinitely.</English>
+		<English>Hold down the [ALT] key to have a settlement build an item indefinitely.</English>
 		<French>Maintenez la touche [ALT] enfoncée pour que la colonie construise indéfiniment l'élément choisi.</French>
 		<German>Halten Sie [ALT] gedrückt, um das gewünschte Objekt unbegrenzt zu bauen.</German>
 		<Italian>Tieni premuto [ALT] per fare in modo che un insediamento costruisca un oggetto all'infinito...</Italian>

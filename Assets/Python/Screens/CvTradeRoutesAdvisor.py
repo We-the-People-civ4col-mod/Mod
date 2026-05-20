@@ -13,8 +13,6 @@ import CvPopupInterface
 import CvEventInterface 
 #R&R mod, vetiarvind, trade groups - end
 
-#import time
-
 ##
 ## New Trade Routes Advisor
 ## Version 1.02
@@ -86,17 +84,12 @@ class CvTradeRoutesAdvisor:
 		if screen.isActive():
 			return
 		
-		self.player = gc.getPlayer(gc.getGame().getActivePlayer())
-		
 		# Transport Unit
 		self.pTransport = CyInterface().getHeadSelectedUnit()
 		if self.pTransport == None:
 			return
 		
-		self.player_id = gc.getGame().getActivePlayer()
-		self.player = gc.getPlayer(self.player_id)
-##		player = gc.getPlayer(gc.getGame().getActivePlayer())
-
+		self.player = gc.getPlayer(gc.getGame().getActivePlayer())
 		
 		# City list
 		self.CityList = []
@@ -122,14 +115,10 @@ class CvTradeRoutesAdvisor:
 		
 		# Trade routes
 		self.ExistingRoutes, self.AssignedRoutes = [], {}
-		for iRoute in range(self.player.getNumTradeRoutes()):
-			pRoute = self.player.getTradeRouteByIndex(iRoute)
-			if self.pTransport.canAssignTradeRoute(pRoute.getID(), True):
-				self.ExistingRoutes.append(pRoute)
-				self.AssignedRoutes[pRoute.getID()] = self.pTransport.getGroup().isAssignedTradeRoute(pRoute.getID())
-		
-		#if len(self.ExistingRoutes) == 0:
-		#	return
+		self.ExistingRoutes = list(self.player.getViableTradeRoutes(self.pTransport))
+		for pRoute in self.ExistingRoutes:
+ 			rid = pRoute.getID()
+			self.AssignedRoutes[rid] = self.pTransport.getGroup().isAssignedTradeRoute(rid)
 		
 		self.iYields = self.NO_YIELD
 		self.iExport, self.iImport = self.NO_CITY, self.NO_CITY
@@ -317,11 +306,8 @@ class CvTradeRoutesAdvisor:
 			return pRoute.getYield()
 		def sortByDestinationCities(pRoute):
 			return pRoute.getDestinationCityName()
-	
-		self.CurrentList = sorted(self.CurrentList, key = sortByDestinationCities)
-		self.CurrentList = sorted(self.CurrentList, key = sortByYields)
-		self.CurrentList = sorted(self.CurrentList, key = sortBySourceCities)
 		
+		self.CurrentList.sort(key=lambda r: (r.getSourceCityName(), r.getYield(), r.getDestinationCityName()))
 		szTable = self.TableNames[self.CURRENT_TABLE]
 		
 		screen.modifyLabel(self.szTitle, u"<font=3b>" + self.TableLabel[self.CURRENT_TABLE] + u"</font>", CvUtil.FONT_LEFT_JUSTIFY)
@@ -366,18 +352,18 @@ class CvTradeRoutesAdvisor:
 		return szColor
 
 	def updateRoutes(self):
-		self.ExistingRoutes = []
-		for iRoute in range(self.player.getNumTradeRoutes()):
-			pRoute = self.player.getTradeRouteByIndex(iRoute)
-			if self.pTransport.canAssignTradeRoute(pRoute.getID(), True):
-				self.ExistingRoutes.append(pRoute)
-				if not pRoute.getID() in self.AssignedRoutes:
-					self.AssignedRoutes[pRoute.getID()] = False
-					if self.iYields == pRoute.getYield():
-						if self.iExport == pRoute.getSourceCity().iID:
-							if self.iImport == pRoute.getDestinationCity().iID:
-								self.AssignedRoutes[pRoute.getID()] = self.bAssigned
-					
+		self.ExistingRoutes = list(self.player.getViableTradeRoutes(self.pTransport))
+	# Initialize assignment state for newly-seen routes (preserve existing entries)
+		for pRoute in self.ExistingRoutes:
+			rid = pRoute.getID()
+			if rid not in self.AssignedRoutes:
+				assigned = False
+				if self.iYields == pRoute.getYield():
+					if self.iExport == pRoute.getSourceCity().iID:
+						if self.iImport == pRoute.getDestinationCity().iID:
+							assigned = self.bAssigned
+				self.AssignedRoutes[rid] = assigned
+		
 		self.bAssigned = False
 		
 		self.iYields = self.NO_YIELD
@@ -633,14 +619,9 @@ class CvTradeRoutesAdvisor:
 		
 	#"deletes selected row"		
 	def deleteSelectedGroup(self, iRow):		
-		
-			
 		tableCellValue = str(self.getScreen().getTableText(self.TableNames[self.CURRENT_TABLE], 0, iRow))
-		
 		self.player.removeTradeRouteGroup(int(tableCellValue))
-		
 		self.routesTable(False)
-		
 		return
 		
 	#R&R mod, vetiarvind, trade groups - end

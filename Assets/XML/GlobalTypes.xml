@@ -317,6 +317,12 @@
 		<FontSymbol>NEGATIVE_DOMESTIC_MARKET_EVENT_CHAR</FontSymbol>
 		<FontSymbol>OVERFLOW_CHAR</FontSymbol>
 	</FontSymbols>
+	<PlotTypes>
+		<PlotType>PLOT_PEAK</PlotType>
+		<PlotType>PLOT_HILLS</PlotType>
+		<PlotType>PLOT_LAND</PlotType>
+		<PlotType>PLOT_OCEAN</PlotType>
+	</PlotTypes>
 	<EthnicityTypes>
 		<EthnicityType>ETHNICITY_EUROPEAN</EthnicityType>
 		<EthnicityType>ETHNICITY_INDIO</EthnicityType>

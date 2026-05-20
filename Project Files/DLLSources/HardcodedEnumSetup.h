@@ -31,6 +31,12 @@ enum BonusTypes
 	BONUS_WHALE,
 };
 
+
+enum BuildTypes
+{
+	BUILD_REMOVE_ROAD,
+};
+
 enum BuildingTypes
 {
 	BUILDING_CHICKEE,

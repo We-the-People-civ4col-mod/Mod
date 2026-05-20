@@ -1342,6 +1342,11 @@
 			<DefaultUnit>UNIT_HUMPBACK_WHALE</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_HUMPBACK_WHALE_COMBAT</Type>
+			<Description>TXT_KEY_UNITCLASS_HUMPBACK_WHALE</Description>
+			<DefaultUnit>UNIT_HUMPBACK_WHALE_COMBAT</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_KRAKEN</Type>
 			<Description>TXT_KEY_UNITCLASS_KRAKEN</Description>
 			<DefaultUnit>UNIT_KRAKEN</DefaultUnit>
@@ -1382,9 +1387,19 @@
 			<DefaultUnit>UNIT_WOLF</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
+			<Type>UNITCLASS_WOLF_COMBAT</Type>
+			<Description>TXT_KEY_UNITCLASS_WOLF</Description>
+			<DefaultUnit>UNIT_WOLF_COMBAT</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
 			<Type>UNITCLASS_GRIZZLY</Type>
 			<Description>TXT_KEY_UNITCLASS_GRIZZLY</Description>
 			<DefaultUnit>UNIT_GRIZZLY</DefaultUnit>
+		</UnitClassInfo>
+		<UnitClassInfo>
+			<Type>UNITCLASS_GRIZZLY_COMBAT</Type>
+			<Description>TXT_KEY_UNITCLASS_GRIZZLY</Description>
+			<DefaultUnit>UNIT_GRIZZLY_COMBAT</DefaultUnit>
 		</UnitClassInfo>
 		<UnitClassInfo>
 			<Type>UNITCLASS_BEAR_POLAR</Type>

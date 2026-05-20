@@ -19,7 +19,7 @@ public:
 	}
 
 private:
-	bool m_bMultithreaded;
+	const bool m_bMultithreaded;
 };
 
 

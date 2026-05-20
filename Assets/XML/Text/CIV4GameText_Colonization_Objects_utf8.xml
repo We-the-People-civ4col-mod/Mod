@@ -25,6 +25,7 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Милитарист</Russian>
+		<Hungarian>Militarista</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_SHORT_DESC</Tag>
@@ -46,6 +47,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Новая Англия</Russian>
+		<Hungarian>Új-Anglia</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_EUROPE_SHORT_DESC</Tag>
@@ -67,10 +69,11 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Англии</Russian>
+		<Hungarian>Anglia</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_SHORT_DESC</Tag>
-		<English>Nouvelle France</English>
+		<English>New France</English>
 		<French>
 			<Text>Nouvelle France</Text>
 			<Gender>Female</Gender>
@@ -88,6 +91,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Новая Франция</Russian>
+		<Hungarian>Új-Franciaország</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_EUROPE_SHORT_DESC</Tag>
@@ -109,10 +113,11 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Франции</Russian>
+		<Hungarian>Franciaország</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SPAIN_SHORT_DESC</Tag>
-		<English>Nueva España</English>
+		<English>New Spain</English>
 		<French>
 			<Text>Nouvelle Espagne</Text>
 			<Gender>Female</Gender>
@@ -130,6 +135,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Новая Испания</Russian>
+		<Hungarian>Új-Spanyolország</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SPAIN_EUROPE_SHORT_DESC</Tag>
@@ -151,10 +157,11 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Испании</Russian>
+		<Hungarian>Spanyolország</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DUTCH_SHORT_DESC</Tag>
-		<English>Nieuw Nederland</English>
+		<English>New Holland</English>
 		<French>
 			<Text>Nouvelle Néerlande</Text>
 			<Gender>Male</Gender>
@@ -172,6 +179,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Новые Нидерланды</Russian>
+		<Hungarian>Új-Hollandia</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DUTCH_EUROPE_SHORT_DESC</Tag>
@@ -193,11 +201,12 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Нидерландов</Russian>
+		<Hungarian>Hollandia</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_IDLE_CITIZEN</Tag>
 		<English>
-			<Text>Idle Citizen:Idle Citizens</Text>
+			<Text>Citizen:Citizens</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
@@ -222,6 +231,7 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Безработный:Безработные</Russian>
+		<Hungarian>Tétlen Polgár</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARAWAK_SHORT_DESC</Tag>
@@ -243,6 +253,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Араваки</Russian>
+		<Hungarian>Aravakok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TUPI_SHORT_DESC</Tag>
@@ -264,6 +275,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Тупи</Russian>
+		<Hungarian>Tupik</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHEROKEE_SHORT_DESC</Tag>
@@ -285,6 +297,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Чероки</Russian>
+		<Hungarian>Cserokik</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_IROQUOIS_SHORT_DESC</Tag>
@@ -306,6 +319,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Ирокезы</Russian>
+		<Hungarian>Irokézek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SIOUX_SHORT_DESC</Tag>
@@ -327,6 +341,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Сиу</Russian>
+		<Hungarian>Sziúk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NEZ_PERCE_SHORT_DESC</Tag>
@@ -348,6 +363,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Не-Персе</Russian>
+		<Hungarian>Sziúk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_APACHE_SHORT_DESC</Tag>
@@ -369,6 +385,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Апачи</Russian>
+		<Hungarian>Apacsok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_JAMESTOWN</Tag>
@@ -2625,6 +2642,7 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Spanish>
+		<Hungarian>Új-Amszterdam</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_FORT_ORANGE</Tag>
@@ -4589,6 +4607,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 			<Plural>1</Plural>
 		</Spanish>
 		<Russian>Древние руины</Russian>
+		<Hungarian>Ősi Romváros</Hungarian>
 	</TEXT> -->
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_CITIES</Tag>
@@ -4610,6 +4629,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 			<Plural>1</Plural>
 		</Spanish>
 		<Russian>Города</Russian>
+		<Hungarian>Települések</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GREAT_PERSON_LANGLADE</Tag>
@@ -4715,6 +4735,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Король Филипп</Russian>
+		<Hungarian>Fülöp Király</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GREAT_PERSON_BELLECOMBE</Tag>
@@ -6515,5 +6536,6 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Королем</Russian>
+		<Hungarian>A Király</Hungarian>
 	</TEXT>
 </Civ4GameText>

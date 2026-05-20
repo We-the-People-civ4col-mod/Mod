@@ -62,6 +62,7 @@ void CyTradeRoutePythonInterface();
 void CyTradeRouteGroupPythonInterface();//R&R mod,vetiarvind, trade groups
 void CyUserSettingsPythonInterface(); // WTP
 void CyDataPythonInterface(); // WTP
+void CySmallClassesPythonInterface(); // WTP
 
 
 //
@@ -88,6 +89,7 @@ DllExport void DLLPublishToPython()
 	CyTradeRouteGroupPythonInterface();//R&R mod,vetiarvind, trade groups
 	CyUserSettingsPythonInterface(); // WTP
 	CyDataPythonInterface(); // WTP
+	CySmallClassesPythonInterface(); // WTP
 
 	/// xml Editor - start - Nightinggale
 	//python::class_<CyXMLTextString> xmlTextString("CyXMLTextString");

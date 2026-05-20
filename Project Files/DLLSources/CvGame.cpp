@@ -23,6 +23,7 @@
 #include "CvReplayInfo.h"
 #include "CyPlot.h"
 #include "CvGameTextMgr.h"
+#include "DesyncMonitor.h"
 
 // interface uses
 #include "CvDLLInterfaceIFaceBase.h"
@@ -39,6 +40,9 @@ CvGame::CvGame()
 	m_sorenRand.setSorenRand();
 	m_sorenRand.setSyncedStatus(true);
 	m_mapRand.setSyncedStatus(true);
+
+	// the async randoms should be allocated at all times
+	m_em_AsyncRand.allocate();
 
 	m_pReplayInfo = NULL;
 
@@ -71,6 +75,11 @@ void CvGame::init(HandicapTypes eHandicap)
 
 	m_mapRand.init(GC.getInitCore().getMapRandSeed() % 73637381);
 	m_sorenRand.init(GC.getInitCore().getSyncRandSeed() % 52319761);
+
+	for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+	{
+		m_em_AsyncRand[ePlayer].init(GC.getInitCore().getSyncRandSeed() % (52319761 + (ePlayer * ePlayer)));
+	}
 
 	//--------------------------------
 	// Init non-saved data
@@ -285,6 +294,11 @@ void CvGame::setInitialItems(bool bScenario)
 			for (CivilizationTypes eCiv = FIRST_CIVILIZATION; eCiv < NUM_CIVILIZATION_TYPES; ++eCiv)
 			{
 				CvCivilizationInfo& kCiv = GC.getCivilizationInfo(eCiv);
+
+				// only consider native civs when placing natives
+				if (kCiv.getCivCategoryTypes() != CIV_CATEGORY_NATIVE)
+					continue;
+
 				//Check if it would fit to Scenario
 				if (kCiv.isNorthAmericanNative() && !GC.getGame().isWBNorthAmericanNative())
 					continue;
@@ -359,6 +373,7 @@ void CvGame::setInitialItems(bool bScenario)
 		if (!kPlayer.isAlive())
 			continue;
 		kPlayer.AI_updateFoundValues();
+		kPlayer.initCounterForUsedShipAndForeignImmigrants();
 	}
 
 	doNewGameErrorTesting();
@@ -1369,6 +1384,46 @@ void CvGame::updateScore(bool bForce)
 	}
 }
 
+// advc.003y: Ported from CvUtil.py
+int CvGame::getScoreComponent(int iRawScore, int iInitial, int iMax,
+	int iMultiplier, bool bExponential, bool bFinal, bool bVictory) const
+{
+	if (getEstimateEndTurn() <= 0)
+		return 0;
+
+	static scaled const rSCORE_FREE_PERCENT = per100(GC.getDefineINT(
+		"SCORE_FREE_PERCENT"));
+	static scaled const rSCORE_VICTORY_PERCENT = per100(GC.getDefineINT(
+		"SCORE_VICTORY_PERCENT"));
+	static scaled const rSCORE_HANDICAP_PERCENT_OFFSET = per100(GC.getDefineINT(
+		"SCORE_HANDICAP_PERCENT_OFFSET"));
+	static scaled const rSCORE_HANDICAP_PERCENT_PER = per100(GC.getDefineINT(
+		"SCORE_HANDICAP_PERCENT_PER"));
+
+	scaled rMax = iMax;
+	if (bFinal && bVictory) // Not synchronized; floating point math is fine here.
+	{
+		scaled rTurnRatio(getGameTurn(), getEstimateEndTurn());
+		if (bExponential && iInitial > 0)
+			rMax = iInitial * (rMax / iInitial).pow(rTurnRatio);
+		else rMax = iInitial + rTurnRatio * (rMax - iInitial);
+	}
+	scaled rFreeScore = rSCORE_FREE_PERCENT * rMax;
+	scaled rScore = iMultiplier;
+	scaled rDiv = rFreeScore + rMax;
+	if (rDiv >= 1)
+		rScore = (iRawScore + rFreeScore) * (iMultiplier / rDiv);
+	if (!bVictory && !bFinal)
+		return rScore.round();
+	if (bVictory)
+		rScore *= 1 + rSCORE_VICTORY_PERCENT;
+	if (bFinal)
+	{
+		rScore *= 1 + rSCORE_HANDICAP_PERCENT_OFFSET +
+			scaled((int)getHandicapType()) * rSCORE_HANDICAP_PERCENT_PER;
+	}
+	return rScore.round();
+}
 
 void CvGame::updateColoredPlots()
 {
@@ -1411,9 +1466,9 @@ void CvGame::updateColoredPlots()
 	// City circles when in Advanced Start
 	if (gDLL->getInterfaceIFace()->isInAdvancedStart())
 	{
-		for (int iPlotLoop = 0; iPlotLoop < GC.getMap().numPlots(); iPlotLoop++)
+		for (int iPlotLoop = 0; iPlotLoop < GC.getMap().numPlotsINLINE(); iPlotLoop++)
 		{
-			CvPlot* pLoopPlot = GC.getMap().plotByIndex(iPlotLoop);
+			CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iPlotLoop);
 
 			if (pLoopPlot != NULL)
 			{
@@ -1451,9 +1506,9 @@ void CvGame::updateColoredPlots()
 	// WTP, ray, Game Option Goodies always display coloured circle - START
 	if (isOption(GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE))
 	{
-		for (int iPlotLoop = 0; iPlotLoop < GC.getMap().numPlots(); iPlotLoop++)
+		for (int iPlotLoop = 0; iPlotLoop < GC.getMap().numPlotsINLINE(); iPlotLoop++)
 		{
-			CvPlot* pLoopPlot = GC.getMap().plotByIndex(iPlotLoop);
+			CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iPlotLoop);
 			if (pLoopPlot != NULL)
 			{
 				if (pLoopPlot->isGoody() && pLoopPlot->isRevealed(getActiveTeam(), false))
@@ -2508,7 +2563,7 @@ bool CvGame::canHandleAction(int iAction, CvPlot* pPlot, bool bTestVisible, bool
 
 	if (GC.getActionInfo(iAction).getControlType() != NO_CONTROL)
 	{
-		if (canDoControl((ControlTypes)(GC.getActionInfo(iAction).getControlType())))
+		if (canDoControl(GC.getActionInfo(iAction).getControlType()))
 		{
 			return true;
 		}
@@ -2567,13 +2622,13 @@ bool CvGame::canHandleAction(int iAction, CvPlot* pPlot, bool bTestVisible, bool
 
 				if (GC.getActionInfo(iAction).getCommandType() != NO_COMMAND)
 				{
-					if (pSelectedInterfaceList->canDoCommand(((CommandTypes)(GC.getActionInfo(iAction).getCommandType())), GC.getActionInfo(iAction).getCommandData(), -1, bTestVisible, bUseCache))
+					if (pSelectedInterfaceList->canDoCommand(GC.getActionInfo(iAction).getCommandType(), GC.getActionInfo(iAction).getCommandData(), -1, bTestVisible, bUseCache))
 					{
 						return true;
 					}
 				}
 
-				if (gDLL->getInterfaceIFace()->canDoInterfaceMode(((InterfaceModeTypes)GC.getActionInfo(iAction).getInterfaceModeType()), pSelectedInterfaceList))
+				if (gDLL->getInterfaceIFace()->canDoInterfaceMode(GC.getActionInfo(iAction).getInterfaceModeType(), pSelectedInterfaceList))
 				{
 					return true;
 				}
@@ -2589,9 +2644,10 @@ void CvGame::setupActionCache()
 	gDLL->getInterfaceIFace()->getSelectionList()->setupActionCache();
 }
 
-// WARNING: function is not networked synced
 void CvGame::handleAction(int iAction)
 {
+	CxDesyncMonitor StartMonitoring;
+
 	CvUnit* pHeadSelectedUnit;
 	bool bAlt;
 	bool bShift;
@@ -2615,27 +2671,27 @@ void CvGame::handleAction(int iAction)
 		}
 		else
 		{
-			doControl((ControlTypes)(GC.getActionInfo(iAction).getControlType()));
+			doControl(GC.getActionInfo(iAction).getControlType());
 		}
 	}
 
-	if (gDLL->getInterfaceIFace()->canDoInterfaceMode((InterfaceModeTypes)GC.getActionInfo(iAction).getInterfaceModeType(), gDLL->getInterfaceIFace()->getSelectionList()))
+	if (gDLL->getInterfaceIFace()->canDoInterfaceMode(GC.getActionInfo(iAction).getInterfaceModeType(), gDLL->getInterfaceIFace()->getSelectionList()))
 	{
 		pHeadSelectedUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
 
 		if (pHeadSelectedUnit != NULL)
 		{
-			if (GC.getInterfaceModeInfo((InterfaceModeTypes)GC.getActionInfo(iAction).getInterfaceModeType()).getSelectAll())
+			if (GC.getInterfaceModeInfo(GC.getActionInfo(iAction).getInterfaceModeType()).getSelectAll())
 			{
 				gDLL->getInterfaceIFace()->selectGroup(pHeadSelectedUnit, false, false, true);
 			}
-			else if (GC.getInterfaceModeInfo((InterfaceModeTypes)GC.getActionInfo(iAction).getInterfaceModeType()).getSelectType())
+			else if (GC.getInterfaceModeInfo(GC.getActionInfo(iAction).getInterfaceModeType()).getSelectType())
 			{
 				gDLL->getInterfaceIFace()->selectGroup(pHeadSelectedUnit, false, true, false);
 			}
 		}
 
-		gDLL->getInterfaceIFace()->setInterfaceMode((InterfaceModeTypes)GC.getActionInfo(iAction).getInterfaceModeType());
+		gDLL->getInterfaceIFace()->setInterfaceMode(GC.getActionInfo(iAction).getInterfaceModeType());
 	}
 
 	if (GC.getActionInfo(iAction).getMissionType() != NO_MISSION)
@@ -3435,7 +3491,7 @@ int CvGame::getAdjustedPopulationPercent(VictoryTypes eVictory) const
 }
 
 
-int CvGame::getProductionPerPopulation(HurryTypes eHurry)
+int CvGame::getProductionPerPopulation(HurryTypes eHurry) const
 {
 	if (NO_HURRY == eHurry)
 	{
@@ -3601,7 +3657,7 @@ int CvGame::countCivPlayerEuropeanAI()
 }
 
 
-int CvGame::countTotalCivPower()
+int CvGame::countTotalCivPower() const
 {
 	int iCount;
 	int iI;
@@ -3661,7 +3717,7 @@ EraTypes CvGame::getCurrentEra() const
 }
 
 
-TeamTypes CvGame::getActiveTeam()
+TeamTypes CvGame::getActiveTeam() const
 {
 	if (getActivePlayer() == NO_PLAYER)
 	{
@@ -3669,12 +3725,12 @@ TeamTypes CvGame::getActiveTeam()
 	}
 	else
 	{
-		return (TeamTypes)GET_PLAYER(getActivePlayer()).getTeam();
+		return GET_PLAYER(getActivePlayer()).getTeam();
 	}
 }
 
 
-CivilizationTypes CvGame::getActiveCivilizationType()
+CivilizationTypes CvGame::getActiveCivilizationType() const
 {
 	if (getActivePlayer() == NO_PLAYER)
 	{
@@ -3712,7 +3768,7 @@ bool CvGame::isTeamGame() const
 }
 
 
-bool CvGame::isModem()
+bool CvGame::isModem() const
 {
 	return gDLL->IsModem();
 }
@@ -3756,7 +3812,7 @@ void CvGame::reviveActivePlayer()
 }
 
 
-int CvGame::getNumHumanPlayers()
+int CvGame::getNumHumanPlayers() const
 {
 	return GC.getInitCore().getNumHumans();
 }
@@ -3774,7 +3830,7 @@ void CvGame::incrementEndTurnMessagesSent()
 }
 
 
-int CvGame::getGameTurn()
+int CvGame::getGameTurn() const
 {
 	return GC.getInitCore().getGameTurn();
 }
@@ -3801,14 +3857,14 @@ void CvGame::incrementGameTurn()
 }
 
 
-int CvGame::getTurnYear(int iGameTurn)
+int CvGame::getTurnYear(int iGameTurn) const
 {
 	// moved the body of this method to Game Core Utils so we have access for other games than the current one (replay screen in HOF)
 	return getTurnYearForGame(iGameTurn, getStartYear(), getCalendar(), getGameSpeedType());
 }
 
 
-int CvGame::getGameTurnYear()
+int CvGame::getGameTurnYear() const
 {
 	return getTurnYear(getGameTurn());
 }
@@ -4112,12 +4168,12 @@ int CvGame::getTargetScore() const
 	return GC.getInitCore().getTargetScore();
 }
 
-int CvGame::getNumGameTurnActive()
+int CvGame::getNumGameTurnActive() const
 {
 	return m_iNumGameTurnActive;
 }
 
-int CvGame::countNumHumanGameTurnActive()
+int CvGame::countNumHumanGameTurnActive() const
 {
 	int iCount;
 	int iI;
@@ -4247,7 +4303,7 @@ void CvGame::initScoreCalculation()
 }
 
 
-int CvGame::getAIAutoPlay()
+int CvGame::getAIAutoPlay() const
 {
 	return m_iAIAutoPlay;
 }
@@ -4414,6 +4470,135 @@ bool CvGame::isFinalInitialized() const
 	return m_bFinalInitialized;
 }
 
+// Setup caches to support "passthrough yields". Shared by all players
+void CvGame::initPassthroughYieldCache()
+{
+	int i;
+	g_aePassthroughYields.clear();
+	g_aeGatedOutputs.clear();
+
+	for (i = 0; i < NUM_YIELD_TYPES; ++i)
+	{
+		g_aeCapacityYieldsForOutput[i].clear();
+		g_aPassthroughProfsForYield[i].clear();
+	}
+
+	bool abPassthrough[NUM_YIELD_TYPES];
+	bool abOutputRegistered[NUM_YIELD_TYPES];
+	for (i = 0; i < NUM_YIELD_TYPES; ++i)
+	{
+		abPassthrough[i] = false;
+		abOutputRegistered[i] = false;
+	}
+
+	const int iNumProf = GC.getNumProfessionInfos();
+	for (int iProf = 0; iProf < iNumProf; ++iProf)
+	{
+		const CvProfessionInfo& kProf = GC.getProfessionInfo((ProfessionTypes)iProf);
+
+		const int iNumProduced = kProf.getNumYieldsProduced();
+		const int iNumConsumed = kProf.getNumYieldsConsumed();
+		if (iNumProduced <= 0 || iNumConsumed <= 0)
+		{
+			continue;
+		}
+
+		// For each consumed yield, check if it is also produced (passthrough).
+		for (int iC = 0; iC < iNumConsumed; ++iC)
+		{
+			YieldTypes eConsumed = (YieldTypes)kProf.getYieldsConsumed(iC);
+			if (eConsumed == NO_YIELD)
+			{
+				continue;
+			}
+
+			bool bProducedAlso = false;
+			for (int iP = 0; iP < iNumProduced; ++iP)
+			{
+				YieldTypes eProd = (YieldTypes)kProf.getYieldsProduced(iP);
+				if (eProd == eConsumed)
+				{
+					bProducedAlso = true;
+					break;
+				}
+			}
+
+			if (!bProducedAlso)
+			{
+				continue;
+			}
+
+			const int iYIndex = (int)eConsumed;
+			if (iYIndex < 0 || iYIndex >= NUM_YIELD_TYPES)
+			{
+				continue;
+			}
+
+			// Mark global passthrough yield once.
+			if (!abPassthrough[iYIndex])
+			{
+				abPassthrough[iYIndex] = true;
+				g_aePassthroughYields.push_back(eConsumed);
+			}
+
+			// Add this profession as a passthrough profession for this yield.
+			std::vector<ProfessionTypes>& kProfList = g_aPassthroughProfsForYield[iYIndex];
+			bool bHaveProf = false;
+			int iProfIdx;
+			for (iProfIdx = 0; iProfIdx < (int)kProfList.size(); ++iProfIdx)
+			{
+				if (kProfList[iProfIdx] == (ProfessionTypes)iProf)
+				{
+					bHaveProf = true;
+					break;
+				}
+			}
+			if (!bHaveProf)
+			{
+				kProfList.push_back((ProfessionTypes)iProf);
+			}
+
+			// eConsumed is also a capacity yield for other outputs of this profession.
+			for (int iPOut = 0; iPOut < iNumProduced; ++iPOut)
+			{
+				YieldTypes eOutput = (YieldTypes)kProf.getYieldsProduced(iPOut);
+				if (eOutput == NO_YIELD || eOutput == eConsumed)
+				{
+					continue;
+				}
+
+				const int iOutIndex = (int)eOutput;
+				if (iOutIndex < 0 || iOutIndex >= NUM_YIELD_TYPES)
+				{
+					continue;
+				}
+
+				std::vector<YieldTypes>& vCapList = g_aeCapacityYieldsForOutput[iOutIndex];
+
+				bool bHaveCap = false;
+				int iCapIdx;
+				for (iCapIdx = 0; iCapIdx < (int)vCapList.size(); ++iCapIdx)
+				{
+					if (vCapList[iCapIdx] == eConsumed)
+					{
+						bHaveCap = true;
+						break;
+					}
+				}
+				if (!bHaveCap)
+				{
+					vCapList.push_back(eConsumed);
+				}
+
+				if (!abOutputRegistered[iOutIndex])
+				{
+					abOutputRegistered[iOutIndex] = true;
+					g_aeGatedOutputs.push_back(eOutput);
+				}
+			}
+		}
+	}
+}
 
 void CvGame::setFinalInitialized(bool bNewValue)
 {
@@ -4584,13 +4769,13 @@ void CvGame::setHandicapType(HandicapTypes eHandicap)
 	m_eHandicap = eHandicap;
 }
 
-PlayerTypes CvGame::getPausePlayer()
+PlayerTypes CvGame::getPausePlayer() const
 {
 	return m_ePausePlayer;
 }
 
 
-bool CvGame::isPaused()
+bool CvGame::isPaused() const
 {
 	return (getPausePlayer() != NO_PLAYER);
 }
@@ -4602,7 +4787,7 @@ void CvGame::setPausePlayer(PlayerTypes eNewValue)
 }
 
 
-int CvGame::getBestLandUnitCombat()
+int CvGame::getBestLandUnitCombat() const
 {
 	return m_iBestLandUnitCombat;
 }
@@ -4772,7 +4957,7 @@ CalendarTypes CvGame::getCalendar() const
 }
 
 
-PlayerTypes CvGame::getRankPlayer(int iRank)
+PlayerTypes CvGame::getRankPlayer(int iRank) const
 {
 	FAssertMsg(iRank >= 0, "iRank is expected to be non-negative (invalid Rank)");
 	FAssertMsg(iRank < MAX_PLAYERS, "iRank is expected to be within maximum bounds (invalid Rank)");
@@ -4793,7 +4978,7 @@ void CvGame::setRankPlayer(int iRank, PlayerTypes ePlayer)
 	}
 }
 
-int CvGame::getPlayerScore(PlayerTypes ePlayer)
+int CvGame::getPlayerScore(PlayerTypes ePlayer) const
 {
 	FAssertMsg(ePlayer >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(ePlayer < MAX_PLAYERS, "ePlayer is expected to be within maximum bounds (invalid Index)");
@@ -4816,7 +5001,7 @@ void CvGame::setPlayerScore(PlayerTypes ePlayer, int iScore)
 }
 
 
-TeamTypes CvGame::getRankTeam(int iRank)
+TeamTypes CvGame::getRankTeam(int iRank) const
 {
 	FAssertMsg(iRank >= 0, "iRank is expected to be non-negative (invalid Rank)");
 	FAssertMsg(iRank < MAX_TEAMS, "iRank is expected to be within maximum bounds (invalid Index)");
@@ -4838,7 +5023,7 @@ void CvGame::setRankTeam(int iRank, TeamTypes eTeam)
 }
 
 
-int CvGame::getTeamRank(TeamTypes eTeam)
+int CvGame::getTeamRank(TeamTypes eTeam) const
 {
 	FAssertMsg(eTeam >= 0, "eTeam is expected to be non-negative (invalid Index)");
 	FAssertMsg(eTeam < MAX_TEAMS, "eTeam is expected to be within maximum bounds (invalid Index)");
@@ -4908,7 +5093,7 @@ void CvGame::setForceControl(ForceControlTypes eIndex, bool bEnabled)
 }
 
 
-int CvGame::getUnitCreatedCount(UnitTypes eIndex)
+int CvGame::getUnitCreatedCount(UnitTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
@@ -4924,7 +5109,7 @@ void CvGame::incrementUnitCreatedCount(UnitTypes eIndex)
 }
 
 
-int CvGame::getUnitClassCreatedCount(UnitClassTypes eIndex)
+int CvGame::getUnitClassCreatedCount(UnitClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumUnitClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
@@ -4938,7 +5123,7 @@ void CvGame::incrementUnitClassCreatedCount(UnitClassTypes eIndex)
 	m_em_iUnitClassCreatedCount.add(eIndex, 1);
 }
 
-int CvGame::getBuildingClassCreatedCount(BuildingClassTypes eIndex)
+int CvGame::getBuildingClassCreatedCount(BuildingClassTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumBuildingClassInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
@@ -4959,7 +5144,7 @@ bool CvGame::isVictoryValid(VictoryTypes eIndex) const
 	return GC.getInitCore().getVictory(eIndex);
 }
 
-bool CvGame::isSpecialUnitValid(SpecialUnitTypes eIndex)
+bool CvGame::isSpecialUnitValid(SpecialUnitTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialUnitInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
@@ -4975,7 +5160,7 @@ void CvGame::makeSpecialUnitValid(SpecialUnitTypes eIndex)
 }
 
 
-bool CvGame::isSpecialBuildingValid(SpecialBuildingTypes eIndex)
+bool CvGame::isSpecialBuildingValid(SpecialBuildingTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumSpecialBuildingInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
@@ -5010,7 +5195,7 @@ void CvGame::makeSpecialBuildingValid(SpecialBuildingTypes eIndex, bool bAnnounc
 
 
 // R&R, ray, Goody Enhancement - START
-bool CvGame::isUniqueGoodyValid(GoodyTypes eIndex)
+bool CvGame::isUniqueGoodyValid(GoodyTypes eIndex) const
 {
 	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
 	FAssertMsg(eIndex < GC.getNumGoodyInfos(), "eIndex is expected to be within maximum bounds (invalid Index)");
@@ -5050,7 +5235,7 @@ void CvGame::setScriptData(std::string szNewValue)
 	m_szScriptData = szNewValue;
 }
 
-const CvWString & CvGame::getName()
+const CvWString & CvGame::getName() const
 {
 	return GC.getInitCore().getGameName();
 }
@@ -5126,12 +5311,12 @@ void CvGame::addGreatAdmiralBornName(const CvWString& szName)
 
 
 // < JAnimals Mod Start >
-PlayerTypes CvGame::getBarbarianPlayer()
+PlayerTypes CvGame::getBarbarianPlayer() const
 {
 	return m_eBarbarianPlayer;
 }
 
-bool CvGame::hasBarbarianPlayer()
+bool CvGame::hasBarbarianPlayer() const
 {
 	return (getBarbarianPlayer() != NO_PLAYER);
 }
@@ -5141,7 +5326,7 @@ void CvGame::setBarbarianPlayer(PlayerTypes eNewValue)
 	m_eBarbarianPlayer = eNewValue;
 }
 
-bool CvGame::isBarbarianPlayer(PlayerTypes ePlayer)
+bool CvGame::isBarbarianPlayer(PlayerTypes ePlayer) const
 {
 	return (getBarbarianPlayer() == ePlayer);
 }
@@ -5183,12 +5368,12 @@ PlayerTypes CvGame::getNextPlayerType() const
 
 
 // R&R, ray, the Church - START
-PlayerTypes CvGame::getChurchPlayer()
+PlayerTypes CvGame::getChurchPlayer() const
 {
 	return m_eChurchPlayer;
 }
 
-bool CvGame::hasChurchPlayer()
+bool CvGame::hasChurchPlayer() const
 {
 	return (getChurchPlayer() != NO_PLAYER);
 }
@@ -5198,7 +5383,7 @@ void CvGame::setChurchPlayer(PlayerTypes eNewValue)
 	m_eChurchPlayer = eNewValue;
 }
 
-bool CvGame::isChurchPlayer(PlayerTypes ePlayer)
+bool CvGame::isChurchPlayer(PlayerTypes ePlayer) const
 {
 	return (getChurchPlayer() == ePlayer);
 }
@@ -6351,13 +6536,13 @@ void CvGame::testVictory()
 }
 
 
-int CvGame::getIndexAfterLastDeal()
+int CvGame::getIndexAfterLastDeal() const
 {
 	return m_deals.getIndexAfterLast();
 }
 
 
-int CvGame::getNumDeals()
+int CvGame::getNumDeals() const
 {
 	return m_deals.getCount();
 }
@@ -6395,6 +6580,7 @@ CvDeal* CvGame::nextDeal(int *pIterIdx, bool bRev)
 
 CvRandom& CvGame::getMapRand()
 {
+	FAssertMsg(CxDesyncMonitor::isAlwaysSync(), "CvGame::getMapRand called from async code execution");
 	FAssertMsg(GC.isMainThread(), "Using non-const random while multi threaded (causes OOS)");
 	return m_mapRand;
 }
@@ -6407,6 +6593,7 @@ const CvRandom& CvGame::getMapRand() const
 
 int CvGame::getMapRandNum(int iNum, const char* pszLog)
 {
+	FAssertMsg(CxDesyncMonitor::isAlwaysSync(), "CvGame::getMapRandNum called from async code execution");
 	FAssertMsg(GC.isMainThread(), "Using non-const random while multi threaded (causes OOS)");
 	return m_mapRand.get(iNum, pszLog);
 }
@@ -6414,6 +6601,7 @@ int CvGame::getMapRandNum(int iNum, const char* pszLog)
 
 CvRandom& CvGame::getSorenRand()
 {
+	FAssertMsg(CxDesyncMonitor::isAlwaysSync(), "CvGame::getSorenRand called from async code execution");
 	FAssertMsg(GC.isMainThread(), "Using non-const random while multi threaded (causes OOS)");
 	return m_sorenRand;
 }
@@ -6425,10 +6613,30 @@ const CvRandom& CvGame::getSorenRand() const
 
 int CvGame::getSorenRandNum(int iNum, const char* pszLog)
 {
+	FAssertMsg(CxDesyncMonitor::isAlwaysSync(), "CvGame::getSorenRandNum called from async code execution");
 	return m_sorenRand.get(iNum, pszLog);
 }
 
-int CvGame::calculateSyncChecksum(CvString* pLogString)
+
+int CvGame::getAsyncRandom(int iNum)
+{
+	FAssertMsg(CxDesyncMonitor::isNeverSync(), "CvGame::getAsyncRandom called from synced code execution");
+	gDLL->sendPlayerAction(getActivePlayer(), PLAYER_ACTION_ASYNC_RANDOM, -1, -1, -1);
+	return m_em_AsyncRand[getActivePlayer()].get(iNum);
+}
+
+void CvGame::applyNetworkRandomAsync(PlayerTypes ePlayer)
+{
+	if (ePlayer == getActivePlayer())
+	{
+		// player already advanced in async
+		// now everybody else will have to do it to get the seed back in sync
+		return;
+	}
+	m_em_AsyncRand[ePlayer].get(1);
+}
+
+int CvGame::calculateSyncChecksum(CvString* pLogString) const
 {
 	// Don't bother with any checksum in a SP game!
 	if (!GC.getGameINLINE().isGameMultiPlayer())
@@ -6564,23 +6772,56 @@ int CvGame::calculateSyncChecksum(CvString* pLogString)
 				kPlayer.calculateTotalYields(aiYields);
 				for (iJ = 0; iJ < NUM_YIELD_TYPES; iJ++)
 				{
+					if (aiYields[iJ] == 0)
+					{
+						continue;
+					}
+
 					*pLogString += CvString::format("%s = %d\n", CvString(GC.getYieldInfo((YieldTypes) iJ).getDescription()).GetCString(), aiYields[iJ]);
 				}
 				for (iJ = 0; iJ < GC.getNumImprovementInfos(); iJ++)
 				{
-					*pLogString += CvString::format("%s = %d\n", CvString(GC.getImprovementInfo((ImprovementTypes) iJ).getDescription()).GetCString(), kPlayer.getImprovementCount((ImprovementTypes)iJ));
+					const int iNumImprovements = kPlayer.getImprovementCount((ImprovementTypes)iJ);
+
+					if (iNumImprovements == 0)
+					{
+						continue;
+					}
+
+					*pLogString += CvString::format("%s = %d\n", CvString(GC.getImprovementInfo((ImprovementTypes) iJ).getDescription()).GetCString(), iNumImprovements);
 				}
 				for (iJ = 0; iJ < GC.getNumBuildingClassInfos(); iJ++)
 				{
-					*pLogString += CvString::format("%s = %d\n", CvString(GC.getBuildingClassInfo((BuildingClassTypes) iJ).getDescription()).GetCString(), kPlayer.getBuildingClassCountPlusMaking((BuildingClassTypes)iJ));
+					const int iNumBuildings = kPlayer.getBuildingClassCountPlusMaking((BuildingClassTypes)iJ);
+
+					if (iNumBuildings == 0)
+					{
+						continue;
+					}
+
+					*pLogString += CvString::format("%s = %d\n", CvString(GC.getBuildingClassInfo((BuildingClassTypes) iJ).getDescription()).GetCString(), iNumBuildings);
 				}
 				for (iJ = 0; iJ < GC.getNumUnitClassInfos(); iJ++)
 				{
-					*pLogString += CvString::format("%s = %d\n", CvString(GC.getUnitClassInfo((UnitClassTypes) iJ).getDescription()).GetCString(), kPlayer.getUnitClassCountPlusMaking((UnitClassTypes)iJ));
+					const int iNumUnits = kPlayer.getUnitClassCountPlusMaking((UnitClassTypes)iJ);
+
+					if (iNumUnits == 0)
+					{
+						continue;
+					}
+
+					*pLogString += CvString::format("%s = %d\n", CvString(GC.getUnitClassInfo((UnitClassTypes) iJ).getDescription()).GetCString(), iNumUnits);
 				}
 				for (iJ = 0; iJ < NUM_UNITAI_TYPES; iJ++)
 				{
-					*pLogString += CvString::format("%s = %d\n", CvString(GC.getUnitAIInfo((UnitAITypes) iJ).getDescription()).GetCString(), kPlayer.AI_totalUnitAIs((UnitAITypes)iJ));
+					const int iNumUnits = kPlayer.AI_totalUnitAIs((UnitAITypes)iJ);
+
+					if (iNumUnits == 0)
+					{
+						continue;
+					}
+
+					*pLogString += CvString::format("%s = %d\n", CvString(GC.getUnitAIInfo((UnitAITypes) iJ).getDescription()).GetCString(), iNumUnits);
 				}
 				for (pLoopUnit = kPlayer.firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = kPlayer.nextUnit(&iLoop))
 				{
@@ -6594,7 +6835,7 @@ int CvGame::calculateSyncChecksum(CvString* pLogString)
 }
 
 
-int CvGame::calculateOptionsChecksum()
+int CvGame::calculateOptionsChecksum() const
 {
 	PROFILE_FUNC();
 
@@ -6943,7 +7184,7 @@ void CvGame::setPlotExtraYield(int iX, int iY, YieldTypes eYield, int iExtraYiel
 		m_aPlotExtraYields.push_back(kExtraYield);
 	}
 
-	CvPlot* pPlot = GC.getMap().plot(iX, iY);
+	CvPlot* const pPlot = GC.getMap().plotINLINE(iX, iY);
 	if (NULL != pPlot)
 	{
 		pPlot->updateYield(true);
@@ -6961,7 +7202,7 @@ void CvGame::removePlotExtraYield(int iX, int iY)
 		}
 	}
 
-	CvPlot* pPlot = GC.getMap().plot(iX, iY);
+	CvPlot* pPlot = GC.getMap().plotINLINE(iX, iY);
 	if (NULL != pPlot)
 	{
 		pPlot->updateYield(true);

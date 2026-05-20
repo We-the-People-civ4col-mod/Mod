@@ -27,7 +27,7 @@ class CvRevolutionAdvisor:
 
 		self.XResolution = 0
 		self.YResolution = 0
-		
+
 	def interfaceScreen (self):
 
 		self.player = gc.getPlayer(gc.getGame().getActivePlayer())
@@ -36,17 +36,17 @@ class CvRevolutionAdvisor:
 		self.parent = gc.getPlayer(self.player.getParent())
 		if self.parent == PlayerTypes.NO_PLAYER:
 			return
-	
+
 		screen = self.getScreen()
 		if screen.isActive():
 			return
-	
+
 		self.XResolution = self.getScreen().getXResolution()
 		self.YResolution = self.getScreen().getYResolution()
 
 		screen.setRenderInterfaceOnly(True);
 		screen.showScreen(PopupStates.POPUPSTATE_IMMEDIATE, False)
-	
+
 		# Set the background and exit button, and show the screen
 		screen.setDimensions(0, 0, self.XResolution, self.YResolution)
 		screen.addDDSGFC(self.BACKGROUND_ID, ArtFileMgr.getInterfaceArtInfo("INTERFACE_REVOLUTION_BG").getPath(), 0, 0, self.XResolution, self.YResolution, WidgetTypes.WIDGET_GENERAL, -1, -1 )
@@ -63,17 +63,17 @@ class CvRevolutionAdvisor:
 
 		self.Y_REVOLUTION = self.YResolution / 17
 		self.W_REVOLUTION = self.XResolution * 2 / 5
-		
+
 		self.Y_REBEL_BAR = self.YResolution / 7
-		
+
 		self.Y_UNITS_LISTS = self.YResolution * 35 / 100
 		self.X_ROYAL_UNITS = self.XResolution * 58 / 100
 		self.X_COLONIAL_UNITS = self.XResolution  * 3 / 20
-		
+
 		self.BAR_SIDE_MARGIN = self.YResolution / 15
 		self.BAR_END_ICON_SIZE = self.YResolution / 14
 		self.ICON_BUTTON_SIZE = self.YResolution / 21
-		
+
 		self.REVOLUTION_BUTTON = 1776
 		self.AMENDMENT_BUTTON = 1778
 
@@ -95,24 +95,24 @@ class CvRevolutionAdvisor:
 		self.drawColonialTroops()
 		self.drawWarMaterials()
 		self.drawCivics()
-		
+
 		return 0
 
 	def getScreen(self):
 		return CyGInterfaceScreen(self.SCREEN_NAME, CvScreenEnums.REVOLUTION_ADVISOR)
 
 	def drawBar(self):
-		screen = self.getScreen()	
+		screen = self.getScreen()
 
 		if not self.player.isInRevolution() and gc.getGame().getGameState() == GameStateTypes.GAMESTATE_ON:
 			screen.setImageButton("RevolutionButton", ArtFileMgr.getInterfaceArtInfo("SCREEN_DATE_BOX").getPath(), (self.XResolution - self.W_REVOLUTION) / 2, self.Y_REVOLUTION, self.W_REVOLUTION, self.BAR_END_ICON_SIZE * 3 / 2, WidgetTypes.WIDGET_GENERAL, self.REVOLUTION_BUTTON, -1)
 			screen.setTextAt( "RevolutionButtonText", "RevolutionButton", "<font=4>" + localText.getText("INTERFACE_REVOLUTION", ()) + "</font>", CvUtil.FONT_CENTER_JUSTIFY, self.W_REVOLUTION / 2, self.BAR_END_ICON_SIZE * 3 / 4, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, self.REVOLUTION_BUTTON, -1 )
-		
+
 			screen.enable("RevolutionButton", gc.getTeam(self.player.getTeam()).canDoRevolution())
 			screen.enable("RevolutionButtonText", gc.getTeam(self.player.getTeam()).canDoRevolution())
-			
+
 		self.BarHight = self.BAR_END_ICON_SIZE / 2
-		
+
 		screen.addDDSGFC( "RebelIcon", ArtFileMgr.getCivilizationArtInfo(gc.getCivilizationInfo(self.player.getCivilizationType()).getArtDefineTag()).getButton(), self.BAR_SIDE_MARGIN, self.Y_REBEL_BAR, self.BAR_END_ICON_SIZE, self.BAR_END_ICON_SIZE, WidgetTypes.WIDGET_HELP_REBEL, 0, -1)
 		screen.addDDSGFC( "LoyalIcon", gc.getYieldInfo(YieldTypes.YIELD_BELLS).getButton(), self.XResolution - (self.BAR_SIDE_MARGIN + self.BAR_END_ICON_SIZE), self.Y_REBEL_BAR, self.BAR_END_ICON_SIZE, self.BAR_END_ICON_SIZE, WidgetTypes.WIDGET_HELP_REBEL,  0, -1)
 
@@ -129,7 +129,7 @@ class CvRevolutionAdvisor:
 		screen.addDDSGFC( "Medalion",ArtFileMgr.getInterfaceArtInfo("INTERFACE_REVOLUTION_BROWN_BUTTON").getPath(), self.BAR_SIDE_MARGIN + self.BAR_END_ICON_SIZE + int(RebelPercentage * BarWidth) - (self.BAR_END_ICON_SIZE / 2), self.Y_REBEL_BAR, self.BAR_END_ICON_SIZE, self.BAR_END_ICON_SIZE, WidgetTypes.WIDGET_HELP_REBEL, 0, -1)
 
 		screen.setLabelAt( "RebelBarText", "Medalion", "<font=3>" + str(gc.getTeam(self.player.getTeam()).getRebelPercent()) + " %</font>", CvUtil.FONT_CENTER_JUSTIFY, self.BAR_END_ICON_SIZE / 2, self.BAR_END_ICON_SIZE / 2, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-		
+
 		return 0
 
 	def drawWarMaterials(self):
@@ -151,31 +151,31 @@ class CvRevolutionAdvisor:
 		HorseText = str(iHorses)
 		HorseText = localText.changeTextColor(HorseText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Horse Count", "Background", u"<font=4>" + HorseText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 5 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-	
+
 		screen.addDDSGFC( "MusketIcon", gc.getYieldInfo(YieldTypes.YIELD_MUSKETS).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 9 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		GunText = str(iMuskets) 
+		GunText = str(iMuskets)
 		GunText = localText.changeTextColor(GunText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Musket Count", "Background", u"<font=4>" + GunText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 9 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 
 		screen.addDDSGFC( "CannonIcon", gc.getYieldInfo(YieldTypes.YIELD_CANNONS).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 7 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		CannonText = str(iCannons) 
+		CannonText = str(iCannons)
 		CannonText = localText.changeTextColor(CannonText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Cannon Count", "Background", u"<font=4>" + CannonText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 7 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-		
+
 		screen.addDDSGFC( "BlackPowderIcon", gc.getYieldInfo(YieldTypes.YIELD_BLACK_POWDER).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 8 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		BlackPowderText = str(iBlackpowder) 
+		BlackPowderText = str(iBlackpowder)
 		BlackPowderText = localText.changeTextColor(BlackPowderText, ColorTypes.COLOR_FONT_GOLD)
-		screen.setLabel( "Cannon Count", "Background", u"<font=4>" + BlackPowderText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 8 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-		
+		screen.setLabel( "BlackPowder Count", "Background", u"<font=4>" + BlackPowderText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 8 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+
 		screen.addDDSGFC( "BladesIcon", gc.getYieldInfo(YieldTypes.YIELD_BLADES).getIcon(), (self.XResolution * 40 / 100) - self.ICON_BUTTON_SIZE / 2, (self.YResolution * 6 / 12), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1)
-		BladesText = str(iBlades) 
+		BladesText = str(iBlades)
 		BladesText = localText.changeTextColor(BladesText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Blades Count", "Background", u"<font=4>" + BladesText + "</font>", CvUtil.FONT_CENTER_JUSTIFY, (self.XResolution * 40 / 100), (self.YResolution * 6 / 12) + self.ICON_BUTTON_SIZE, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		## R&R, Robert Surcouf,  Revolution Advisor Screen, Cannons, End
 
 	def drawCivics(self):
 		screen = self.getScreen()
-	
+
 		for iType in range(gc.getNumCivicOptionInfos()):
 			for iCivic in range(gc.getNumCivicInfos()):
 				if (gc.getCivicInfo(iCivic).getCivicOptionType() == iType):
@@ -183,96 +183,96 @@ class CvRevolutionAdvisor:
 						screen.addDDSGFC("ArcticleBox" + str(iType), gc.getCivicInfo(iCivic).getButton(), (self.XResolution / 2) - (self.ICON_BUTTON_SIZE * gc.getNumCivicOptionInfos() ) + (self.ICON_BUTTON_SIZE * iType * 2) + (self.ICON_BUTTON_SIZE / 2), self.Y_REVOLUTION, self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, self.AMENDMENT_BUTTON, iCivic)
 						screen.hide("GoldButton")
 						break
-						
+
 	def drawRoyalTroops(self):
 		screen = self.getScreen()
 #TAC -->
 		RoyalText = localText.getText("INTERFACE_ROYAL_EXPEDITIONARY_FORCES", ())
 		RoyalText = localText.changeTextColor(RoyalText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Royal Troops", "Background", u"<font=4>" + RoyalText + "</font>", CvUtil.FONT_LEFT_JUSTIFY, self.X_ROYAL_UNITS, self.Y_UNITS_LISTS, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-	
+
 		UnitList = []
 		iUnitIndex = 0
-				
+
 		iParent = self.player.getParent()
 		if iParent != -1:
 			parent = gc.getPlayer(iParent)
 			(unit, iter) = parent.firstUnit()
 			while(unit):
-				if (not unit.isNone()) and (unit.canAttack()) and (unit.getOwner() == iParent):			
+				if (not unit.isNone()) and (unit.canAttack()) and (unit.getOwner() == iParent):
 					iProfession = unit.getProfession()
 					iUnitType = unit.getUnitType()
 					UnitList = self.calculateTroops(UnitList, iUnitIndex, iUnitType, iProfession)
-						
+
 				(unit, iter) = parent.nextUnit(iter)
-									
+
 			for i in range(parent.getNumEuropeUnits()):
 				unit = parent.getEuropeUnit(i)
-				if (not unit.isNone()) and (unit.canAttack()) and (unit.getOwner() == iParent):			
+				if (not unit.isNone()) and (unit.canAttack()) and (unit.getOwner() == iParent):
 					iProfession = unit.getProfession()
 					iUnitType = unit.getUnitType()
 					UnitList = self.calculateTroops(UnitList, iUnitIndex, iUnitType, iProfession)
-				
+
 			for iUnit in range(self.player.getNumRevolutionEuropeUnits()):
 				iProfession = self.player.getRevolutionEuropeProfession(iUnit)
-				iUnitType = self.player.getRevolutionEuropeUnit(iUnit)			
+				iUnitType = self.player.getRevolutionEuropeUnit(iUnit)
 				UnitList = self.calculateTroops(UnitList, iUnitIndex, iUnitType, iProfession)
-				
+
 		screen.addScrollPanel("royalTroopsList", u"", self.X_ROYAL_UNITS, self.Y_UNITS_LISTS + self.YResolution / 20, self.XResolution * 35 / 112, self.YResolution  * 2 / 5, PanelStyles.PANEL_STYLE_MAIN, True, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		self.displayTroops(UnitList, "royalTroops")
-		
 
-		
+
+
 	def drawColonialTroops(self):
 		screen = self.getScreen()
 		RebelText = localText.getText("INTERFACE_COLONIAL_FORCES", ())
 		RebelText = localText.changeTextColor(RebelText, ColorTypes.COLOR_FONT_GOLD)
 		screen.setLabel( "Colonial Troops", "Background", u"<font=4>" + RebelText + "</font>", CvUtil.FONT_LEFT_JUSTIFY, self.X_COLONIAL_UNITS - self.XResolution / 60, self.Y_UNITS_LISTS, 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-	
+
 		UnitList = []
 		iUnitIndex = 0
-		
+
 		# Then Sea Units
 		for i in range(self.player.getNumEuropeUnits()):
 			unit = self.player.getEuropeUnit(i)
-			if (not unit.isNone()) and (unit.canAttack()) and (unit.getDomainType() == DomainTypes.DOMAIN_SEA) and (unit.getOwner() == self.player.getID()):			
+			if (not unit.isNone()) and (unit.canAttack()) and (unit.getDomainType() == DomainTypes.DOMAIN_SEA) and (unit.getOwner() == self.player.getID()):
 				iUnitType = self.player.getEuropeUnit(i).getUnitType()
 				iProfession = self.player.getEuropeUnit(i).getProfession()
 				UnitList = self.calculateTroops(UnitList, iUnitIndex, iUnitType, iProfession)
-			
+
 		(unit, iter) = self.player.firstUnit()
 		while(unit):
-			if (not unit.isNone()) and (unit.canAttack()) and (unit.getDomainType() == DomainTypes.DOMAIN_SEA) and (unit.getOwner() == self.player.getID()):			
+			if (not unit.isNone()) and (unit.canAttack()) and (unit.getDomainType() == DomainTypes.DOMAIN_SEA) and (unit.getOwner() == self.player.getID()):
 				iUnitType = unit.getUnitType()
 				iProfession = unit.getProfession()
 				UnitList = self.calculateTroops(UnitList, iUnitIndex, iUnitType, iProfession)
-					
+
 			(unit, iter) = self.player.nextUnit(iter)
-		
+
 		# First Land Units
 		for i in range(self.player.getNumEuropeUnits()):
 			unit = self.player.getEuropeUnit(i)
-			if (not unit.isNone()) and (unit.canAttack()) and (unit.getDomainType() == DomainTypes.DOMAIN_LAND) and (unit.getOwner() == self.player.getID()):			
+			if (not unit.isNone()) and (unit.canAttack()) and (unit.getDomainType() == DomainTypes.DOMAIN_LAND) and (unit.getOwner() == self.player.getID()):
 				iUnitType = self.player.getEuropeUnit(i).getUnitType()
 				iProfession = self.player.getEuropeUnit(i).getProfession()
 				UnitList = self.calculateTroops(UnitList, iUnitIndex, iUnitType, iProfession)
-			
+
 		(unit, iter) = self.player.firstUnit()
 		while(unit):
-			if (not unit.isNone()) and (unit.canAttack()) and (unit.getDomainType() == DomainTypes.DOMAIN_LAND) and (unit.getOwner() == self.player.getID()):			
+			if (not unit.isNone()) and (unit.canAttack()) and (unit.getDomainType() == DomainTypes.DOMAIN_LAND) and (unit.getOwner() == self.player.getID()):
 				iUnitType = unit.getUnitType()
 				iProfession = unit.getProfession()
 				UnitList = self.calculateTroops(UnitList, iUnitIndex, iUnitType, iProfession)
-					
+
 			(unit, iter) = self.player.nextUnit(iter)
-		
+
 		screen.addScrollPanel("rebelTroopsList", u"", self.X_COLONIAL_UNITS - self.XResolution / 60, self.Y_UNITS_LISTS + self.YResolution / 20, self.XResolution * 35 / 112, self.YResolution * 2 / 5,  PanelStyles.PANEL_STYLE_MAIN, True, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		self.displayTroops(UnitList, "rebelTroops")
-		
+
 # <-- TAC
 
 	def handleInput(self, inputClass):
-	
+
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_LISTBOX_ITEM_SELECTED):
 			self.CivDropDown(inputClass)
 			return 1
@@ -281,12 +281,12 @@ class CvRevolutionAdvisor:
 			if (inputClass.getData1() == self.REVOLUTION_BUTTON):
 				CyMessageControl().sendChangeWar(gc.getPlayer(self.player.getParent()).getTeam(), True)
 				self.getScreen().hideScreen()
-			
+
 		return 0
 
 	def update(self, fDelta):
 		return 0
-		
+
 	def getWidgetHelp(self, argsList):
 		iScreen, eWidgetType, iData1, iData2, bOption = argsList
 
@@ -297,15 +297,15 @@ class CvRevolutionAdvisor:
 			return szColoredName + szHelp
 
 		return u""
-	
+
 		szSpecialText = CyGameTextMgr().parseCivicInfo(self.iCivic, True, False, True)
-		
+
 	def CivDropDown( self, inputClass ):
 		if ( inputClass.getNotifyCode() == NotifyCode.NOTIFY_LISTBOX_ITEM_SELECTED ):
 			screen = self.getScreen()
 			iIndex = screen.getSelectedPullDownID("CivDropDown")
 			self.player = gc.getPlayer(screen.getPullDownData("CivDropDown", iIndex))
-			
+
 			self.drawBar()
 			self.drawRoyalTroops()
 			self.drawColonialTroops()
@@ -313,14 +313,14 @@ class CvRevolutionAdvisor:
 			self.drawCivics()
 
 
-# TAC --->			
+# TAC --->
 	def calculateTroops(self, UnitList, iUnitIndex, iUnitType, iProfession):
 
 		if (not iProfession == -1):
 			szUnitName = gc.getProfessionInfo(iProfession).getDescription()
 		else:
 			szUnitName = gc.getUnitInfo(iUnitType).getDescription()
-								
+
 		if (not szUnitName in UnitList):
 			UnitList.insert(iUnitIndex, szUnitName)
 			iUnitIndex += 1
@@ -332,36 +332,36 @@ class CvRevolutionAdvisor:
 			del UnitList[iIndex]
 			UnitList.insert(iIndex, [iUnitType, iProfession, iNumUnit])
 			iUnitIndex += 1
-											
+
 		return UnitList
-	
+
 	def displayTroops(self, UnitList, szAttachPanel):
 		screen = self.getScreen()
 		YMultiplier = int(self.ICON_BUTTON_SIZE * 1.3)
-				
+
 		for iIndex in range(len(UnitList)):
 			if (iIndex%2 == 0):
 				iUnitType = UnitList[iIndex + 1][0]
 				iProfession = UnitList[iIndex + 1][1]
 				iNumUnit = UnitList[iIndex + 1][2]
-				
+
 				i = 0
 				if iNumUnit >> 1:
 					i = 1
-											
+
 				if (iProfession == -1):
 					szUnitName = gc.getUnitInfo(iUnitType).getDescriptionForm(i)
 					szUnitIcon = gc.getUnitInfo(iUnitType).getButton()
 				else:
 					szUnitName = gc.getProfessionInfo(iProfession).getDescriptionForm(i)
 					szUnitIcon = gc.getProfessionInfo(iProfession).getButton()
-					
+
 				screen.addDDSGFCAt(szAttachPanel + "Icon" + str(iIndex / 2), szAttachPanel + "List", szUnitIcon, 0, (self.ICON_BUTTON_SIZE + 20) * (iIndex / 2), self.ICON_BUTTON_SIZE, self.ICON_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, -1, -1, False)
 				szUnitText = localText.getText("[COLOR_BROWN_TEXT] %d1 %s2", (iNumUnit, szUnitName))
 				screen.setLabelAt(szAttachPanel + "Count" + str(iIndex / 2), szAttachPanel + "List", u"<font=3>" + szUnitText + "</font>", CvUtil.FONT_LEFT_JUSTIFY, (self.ICON_BUTTON_SIZE * 5 / 4), (self.ICON_BUTTON_SIZE + 20) * (iIndex / 2) + self.ICON_BUTTON_SIZE / 2 , 0, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-		
+
 		return 0
-		
+
 # <-- TAC
 def isSoldier(eProfession):
 	if eProfession == ProfessionTypes.NO_PROFESSION:
@@ -371,7 +371,7 @@ def isSoldier(eProfession):
 	if (gc.getProfessionInfo(eProfession).isUnarmed()):
 		return False
 	return (getProfessionYieldsRequired(eProfession) == 1)
-	
+
 def isDragoon(eProfession):
 	if eProfession == ProfessionTypes.NO_PROFESSION:
 		return False

@@ -105,15 +105,15 @@ def convertToStr(s):
 
 class Profile:
 	def __init__(self):
-		self.timeStack = []		
-	
+		self.timeStack = []
+
 	def reset(self):
 		self.timeStack = []
 
 	def startTime(self):
 		fTime = time.clock()
 		self.timeStack.append(fTime)
-	
+
 	def endTime(self, text):
 		fEndTime = time.clock()
 		fStartTime = self.timeStack.pop(len(self.timeStack) - 1)
@@ -121,7 +121,7 @@ class Profile:
 		for i in range(len(self.timeStack) - 1):
 			strIndent += "  "
 		print "%s%s: %.3fs" % (strIndent, text, fEndTime - fStartTime)
-		
+
 class RedirectDebug:
 	"""Send Debug Messages to Civ Engine"""
 	def __init__(self):
@@ -165,6 +165,7 @@ def pyAssert(cond, msg):
 		sys.stderr.write(string(msg))
 	assert(cond, msg)
 
+# Unused, replaced by a DLL version
 def getScoreComponent(iRawScore, iInitial, iMax, iFactor, bExponential, bFinal, bVictory):
 
 	if gc.getGame().getEstimateEndTurn() == 0:

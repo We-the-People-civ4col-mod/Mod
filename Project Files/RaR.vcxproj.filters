@@ -115,192 +115,6 @@
     <ClCompile Include="DLLSources\CvUnitAI.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\CyArea.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyAreaInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyArgsList.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyArtFileMgr.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyArtFileMgrInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyCity.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyCityInterface1.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyCityInterface2.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyCityInterface3.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyCityInterface4.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyCityInterface5.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyDeal.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyDealInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyEnumsInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGame.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGameCoreUtils.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGameCoreUtilsInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGameInterface1.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGameInterface2.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGameInterface3.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGameTextMgr.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGameTextMgrInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGlobalContext.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGlobalContextInterface1.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGlobalContextInterface2.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGlobalContextInterface3.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGlobalContextInterface4.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGlobalContextInterface5.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGlobalContextInterface6.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyGlobalContextInterface7.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyHallOfFameInfo.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyHallOfFameInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyInfoInterface1.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyInfoInterface2.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyInfoInterface3.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyMap.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyMapGenerator.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyMapGeneratorInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyMapInterface1.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyMapInterface2.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyPlayer.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyPlayerInterface1.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyPlayerInterface2.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyPlayerInterface3.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyPlayerInterface4.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyPlot.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyPlotInterface1.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyPlotInterface2.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyRandomInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyReplayInfo.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CySelectionGroup.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CySelectionGroupInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyStructsInterface1.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyTeam.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyTeamInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyTradeRoute.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyTradeRouteGroup.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyTradeRouteGroupInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyTradeRouteInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyUnit.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyUnitInterface1.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyUnitInterface2.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\_precompile.cpp">
       <Filter>Misc\CPP</Filter>
     </ClCompile>
@@ -394,18 +208,6 @@
     <ClCompile Include="DLLSources\UserSettings.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\CyUserSettings.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyUserSettingsInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyData.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
-    <ClCompile Include="DLLSources\CyDataInterface.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\BetterBTSAI.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
@@ -418,11 +220,8 @@
     <ClCompile Include="DLLSources\CvDLLInterfaceIFaceBase.cpp">
       <Filter>CV\CPP</Filter>
     </ClCompile>
-    <ClCompile Include="DLLSources\CyInfos.cpp">
-      <Filter>Python\CPP</Filter>
-    </ClCompile>
     <ClCompile Include="DLLSources\EXE_interface.cpp">
-      <Filter>Misc\EXE interface</Filter>
+      <Filter>Classes\EXE\EXE interface</Filter>
     </ClCompile>
     <ClCompile Include="DLLSources\CvDLLEngineIFaceBase.cpp">
       <Filter>CV\CPP</Filter>
@@ -516,6 +315,241 @@
     </ClCompile>
     <ClCompile Include="DLLSources\StaticVariables.cpp">
       <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\DesyncMonitor.cpp">
+      <Filter>CV\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\python\CySmallClasses\CySmallClassesInterface.cpp">
+      <Filter>Python\Misc\Small Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyArea.cpp">
+      <Filter>Python\Map\Area</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyAreaInterface.cpp">
+      <Filter>Python\Map\Area</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyCityInterface5.cpp">
+      <Filter>Python\City</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyCity.cpp">
+      <Filter>Python\City</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyCityInterface1.cpp">
+      <Filter>Python\City</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyCityInterface2.cpp">
+      <Filter>Python\City</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyCityInterface3.cpp">
+      <Filter>Python\City</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyCityInterface4.cpp">
+      <Filter>Python\City</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface7.cpp">
+      <Filter>Python\Global\GlobalContext</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContext.cpp">
+      <Filter>Python\Global\GlobalContext</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface1.cpp">
+      <Filter>Python\Global\GlobalContext</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface2.cpp">
+      <Filter>Python\Global\GlobalContext</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface3.cpp">
+      <Filter>Python\Global\GlobalContext</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface4.cpp">
+      <Filter>Python\Global\GlobalContext</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface5.cpp">
+      <Filter>Python\Global\GlobalContext</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGlobalContextInterface6.cpp">
+      <Filter>Python\Global\GlobalContext</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyInfoInterface3.cpp">
+      <Filter>Python\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyInfoInterface1.cpp">
+      <Filter>Python\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyInfoInterface2.cpp">
+      <Filter>Python\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyInfos.cpp">
+      <Filter>Python\Info</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyTeam.cpp">
+      <Filter>Python\Player\Team</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyTeamInterface.cpp">
+      <Filter>Python\Player\Team</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlotInterface2.cpp">
+      <Filter>Python\Map\Plot</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlot.cpp">
+      <Filter>Python\Map\Plot</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlotInterface1.cpp">
+      <Filter>Python\Map\Plot</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyMapGenerator.cpp">
+      <Filter>Python\Map\MapGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyMapGeneratorInterface.cpp">
+      <Filter>Python\Map\MapGenerator</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameInterface3.cpp">
+      <Filter>Python\Global\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameInterface1.cpp">
+      <Filter>Python\Global\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameInterface2.cpp">
+      <Filter>Python\Global\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGame.cpp">
+      <Filter>Python\Global\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyTradeRouteInterface.cpp">
+      <Filter>Python\Unit\TradeRoute</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyTradeRoute.cpp">
+      <Filter>Python\Unit\TradeRoute</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyTradeRouteGroup.cpp">
+      <Filter>Python\Unit\TradeRouteGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyTradeRouteGroupInterface.cpp">
+      <Filter>Python\Unit\TradeRouteGroup</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyData.cpp">
+      <Filter>Python\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyDataInterface.cpp">
+      <Filter>Python\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyEnumsInterface.cpp">
+      <Filter>Python\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyStructsInterface1.cpp">
+      <Filter>Python\Data</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CySelectionGroupInterface.cpp">
+      <Filter>Python\Unit\Selection Group</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CySelectionGroup.cpp">
+      <Filter>Python\Unit\Selection Group</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyDeal.cpp">
+      <Filter>Python\Misc\Deal</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyDealInterface.cpp">
+      <Filter>Python\Misc\Deal</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameTextMgr.cpp">
+      <Filter>Python\Misc\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameTextMgrInterface.cpp">
+      <Filter>Python\Misc\Text</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyHallOfFameInterface.cpp">
+      <Filter>Python\Misc\Hall of fame</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyHallOfFameInfo.cpp">
+      <Filter>Python\Misc\Hall of fame</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameCoreUtilsInterface.cpp">
+      <Filter>Python\Global\Game Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyGameCoreUtils.cpp">
+      <Filter>Python\Global\Game Core</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyMap.cpp">
+      <Filter>Python\Map\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyMapInterface1.cpp">
+      <Filter>Python\Map\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyMapInterface2.cpp">
+      <Filter>Python\Map\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyUnit.cpp">
+      <Filter>Python\Unit\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyUnitInterface1.cpp">
+      <Filter>Python\Unit\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyUnitInterface2.cpp">
+      <Filter>Python\Unit\Unit</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlayer.cpp">
+      <Filter>Python\Player\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlayerInterface1.cpp">
+      <Filter>Python\Player\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlayerInterface2.cpp">
+      <Filter>Python\Player\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlayerInterface3.cpp">
+      <Filter>Python\Player\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyPlayerInterface4.cpp">
+      <Filter>Python\Player\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyUserSettingsInterface.cpp">
+      <Filter>Python\Misc\User Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyReplayInfo.cpp">
+      <Filter>Python\Misc\Replay Info</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyArtFileMgrInterface.cpp">
+      <Filter>Python\Misc\ArtFileMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyArtFileMgr.cpp">
+      <Filter>Python\Misc\ArtFileMgr</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyRandomInterface.cpp">
+      <Filter>Python\Misc\Random</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\Events\EventTrigger.cpp">
+      <Filter>Classes\Event\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\Events\EventTriggerSavegame.cpp">
+      <Filter>Classes\Event\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyUserSettings.cpp">
+      <Filter>Python\Misc\User Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CyArgsList.cpp">
+      <Filter>Python\CvPythonCaller\ArgList</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\EXE\Network.cpp">
+      <Filter>Classes\EXE\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\EXE\EXE_Plot.cpp">
+      <Filter>EXE\Plot</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\XML\XMLupdate.cpp">
+      <Filter>Classes\XML\Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\XML\XMLUpdateEngine.cpp">
+      <Filter>Classes\XML\Updater</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\EXE\PopupHandler.cpp" />
+    <ClCompile Include="DLLSources\Network\CvNetwork.cpp">
+      <Filter>Classes\Network\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\Network\CvNetworkMessage.cpp">
+      <Filter>Classes\Network\CPP</Filter>
+    </ClCompile>
+    <ClCompile Include="DLLSources\CombatOdds.cpp">
+      <Filter>Combat\CPP</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -618,9 +652,6 @@
     <ClInclude Include="DLLSources\CvIdVector.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
-    <ClInclude Include="DLLSources\CvInfos.h">
-      <Filter>CV\Header</Filter>
-    </ClInclude>
     <ClInclude Include="DLLSources\CvInfoWater.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
@@ -680,66 +711,6 @@
     </ClInclude>
     <ClInclude Include="DLLSources\CvUnitAI.h">
       <Filter>CV\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyUnit.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyTradeRouteGroup.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyTeam.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyTradeRoute.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CySelectionGroup.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyReplayInfo.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyPlot.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyPlayer.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyMapGenerator.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyMap.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyHallOfFameInfo.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyGlobalContext.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyGameTextMgr.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyGameCoreUtils.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyGame.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyDeal.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyCity.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyArea.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyArgsList.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyArtFileMgr.h">
-      <Filter>Python\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\iconv\converters.h">
       <Filter>Misc\Header</Filter>
@@ -855,12 +826,6 @@
     <ClInclude Include="DLLSources\autogenerated\AutoGitVersion.h">
       <Filter>Autogenerated</Filter>
     </ClInclude>
-    <ClInclude Include="DLLSources\CyUserSettings.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyData.h">
-      <Filter>Python\Header</Filter>
-    </ClInclude>
     <ClInclude Include="DLLSources\NetworkDataPacking.h">
       <Filter>CV\Header</Filter>
     </ClInclude>
@@ -917,9 +882,6 @@
     </ClInclude>
     <ClInclude Include="DLLSources\HardcodedEnumSetup.h">
       <Filter>CV\Header</Filter>
-    </ClInclude>
-    <ClInclude Include="DLLSources\CyInfos.h">
-      <Filter>Python\Header</Filter>
     </ClInclude>
     <ClInclude Include="DLLSources\CvCityAI.h">
       <Filter>Classes\City\Header</Filter>
@@ -996,6 +958,116 @@
     <ClInclude Include="DLLSources\Info\InfoHelpers.h">
       <Filter>Classes\Info\Header</Filter>
     </ClInclude>
+    <ClInclude Include="DLLSources\DesyncMonitor.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyArea.h">
+      <Filter>Python\Map\Area</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyCity.h">
+      <Filter>Python\City</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyGlobalContext.h">
+      <Filter>Python\Global\GlobalContext</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyTeam.h">
+      <Filter>Python\Player\Team</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyInfos.h">
+      <Filter>Python\Info</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CvInfos.h">
+      <Filter>CV\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyPlot.h">
+      <Filter>Python\Map\Plot</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyMapGenerator.h">
+      <Filter>Python\Map\MapGenerator</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyGame.h">
+      <Filter>Python\Global\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyTradeRoute.h">
+      <Filter>Python\Unit\TradeRoute</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyTradeRouteGroup.h">
+      <Filter>Python\Unit\TradeRouteGroup</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyData.h">
+      <Filter>Python\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CySelectionGroup.h">
+      <Filter>Python\Unit\Selection Group</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyDeal.h">
+      <Filter>Python\Misc\Deal</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyGameTextMgr.h">
+      <Filter>Python\Misc\Text</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyHallOfFameInfo.h">
+      <Filter>Python\Misc\Hall of fame</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyGameCoreUtils.h">
+      <Filter>Python\Global\Game Core</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyMap.h">
+      <Filter>Python\Map\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyUnit.h">
+      <Filter>Python\Unit\Unit</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyPlayer.h">
+      <Filter>Python\Player\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyUserSettings.h">
+      <Filter>Python\Misc\User Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyReplayInfo.h">
+      <Filter>Python\Misc\Replay Info</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyArtFileMgr.h">
+      <Filter>Python\Misc\ArtFileMgr</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\Events\EventTrigger.h">
+      <Filter>Classes\Event\header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CyArgsList.h">
+      <Filter>Python\CvPythonCaller\ArgList</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\EXE\Network.h">
+      <Filter>Classes\EXE\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\EXE\EXE_Plot.h">
+      <Filter>EXE\Plot</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\EXE\Vanilla_CvDLLInterfaceIFaceBase.h">
+      <Filter>EXE\Vanilla headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\EXE\Vanilla_CvDLLEngineIFaceBase.h">
+      <Filter>EXE\Vanilla headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\EXE\Vanilla_CvDLLEventReporterIFaceBase.h">
+      <Filter>EXE\Vanilla headers</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\XML\XMLUpdateEngine.h">
+      <Filter>Classes\XML\Updater</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\EXE\PopupHandler.h" />
+    <ClInclude Include="DLLSources\EXE\Vanilla_CvDLLUtilityIFaceBase.h" />
+    <ClInclude Include="DLLSources\Network\CvNetwork.h">
+      <Filter>Classes\Network\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\Network\CvNetworkMessage.h">
+      <Filter>Classes\Network\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\DeferredPopEject.h">
+      <Filter>Misc\Header</Filter>
+    </ClInclude>
+    <ClInclude Include="DLLSources\CombatOdds.h">
+      <Filter>Combat\Header</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="DLLSources\FVariableSystem.inl">
@@ -1008,12 +1080,6 @@
   <ItemGroup>
     <Filter Include="Python">
       <UniqueIdentifier>{b465ac7b-0bcb-4d33-a7bc-763d252e2838}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Python\CPP">
-      <UniqueIdentifier>{0fbbd870-4943-4aba-99f6-2fe5609f3fb6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Python\Header">
-      <UniqueIdentifier>{37ce27a3-11ff-4f9d-abfa-4ca0cbc152ef}</UniqueIdentifier>
     </Filter>
     <Filter Include="Misc">
       <UniqueIdentifier>{fb095557-01b9-4392-b315-8e2c7d636e35}</UniqueIdentifier>
@@ -1059,9 +1125,6 @@
     </Filter>
     <Filter Include="Data\Header\EnumMap Internals">
       <UniqueIdentifier>{c674827b-abee-4556-946d-8c81b9471504}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Misc\EXE interface">
-      <UniqueIdentifier>{f2e98b89-d8ca-4626-9e7e-5468e1bccaad}</UniqueIdentifier>
     </Filter>
     <Filter Include="Classes">
       <UniqueIdentifier>{73ba73ed-d43d-422d-9d9f-c63bdeb96d1c}</UniqueIdentifier>
@@ -1128,6 +1191,147 @@
     </Filter>
     <Filter Include="Classes\Info\Header">
       <UniqueIdentifier>{2fc681f6-d297-43c9-9bc0-b8c82b2c1540}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\City">
+      <UniqueIdentifier>{f5e15976-3101-4244-9712-7e4d88814563}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Unit">
+      <UniqueIdentifier>{cf3cc480-b023-4226-9772-6d7b8b3c55a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Info">
+      <UniqueIdentifier>{09e4aad7-3b36-4380-98ca-434aa640533b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Map">
+      <UniqueIdentifier>{bd38d7a9-4161-4b0c-b906-b700889019f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Map\Map">
+      <UniqueIdentifier>{a8cbe061-7f6a-45d9-a2cc-1dee2fef9828}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Map\Plot">
+      <UniqueIdentifier>{ed1c90a5-e6ff-4032-8226-70916ae9490d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Unit\Unit">
+      <UniqueIdentifier>{bbbae366-1eb3-48bb-bbfe-19fd3f35ec8d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Unit\Selection Group">
+      <UniqueIdentifier>{06899c53-267e-4ebc-bf1c-73b5eae94182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Unit\TradeRouteGroup">
+      <UniqueIdentifier>{b8296a2e-ee38-4810-9e9d-284b5a1ef32a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Unit\TradeRoute">
+      <UniqueIdentifier>{00dd7eba-445a-450e-8d12-d7a6cab5796f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Map\Area">
+      <UniqueIdentifier>{b397edcd-91d6-44c8-ad53-e0503e522cc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Map\MapGenerator">
+      <UniqueIdentifier>{c7a4cdce-cd09-4d68-b594-4f9d32369703}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Player">
+      <UniqueIdentifier>{6a81ab7b-1ba9-4f2e-b8ac-28adb3fdab5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Player\Player">
+      <UniqueIdentifier>{5f487b29-f697-4ddd-9687-2f15ffb119ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Player\Team">
+      <UniqueIdentifier>{acb9fa65-bb68-4452-9c55-e9579f0f8ddf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Global">
+      <UniqueIdentifier>{f57ef72a-1cd3-4cd1-b562-89491efeeb46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Global\GlobalContext">
+      <UniqueIdentifier>{ea33722a-0b93-4721-b737-3496f6b7607c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Global\Game Core">
+      <UniqueIdentifier>{8a9e961f-c3c4-42ab-812d-656c1590dc02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Global\Game">
+      <UniqueIdentifier>{ef9d6034-5fc5-49c8-b853-6415bc663ab0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Misc">
+      <UniqueIdentifier>{f5a59dbd-90a3-4557-97b5-88c096aa86bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Misc\Text">
+      <UniqueIdentifier>{7a54a9d3-39f1-4bc0-8e3f-f5575a196afe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Misc\Deal">
+      <UniqueIdentifier>{4bc77af6-f6b7-434d-b1ed-0d66b5f63527}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Misc\Hall of fame">
+      <UniqueIdentifier>{324d774c-581e-4a34-8203-51174a6c8ce5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Misc\Small Classes">
+      <UniqueIdentifier>{f7ae036b-916a-48c6-a5c5-b22b65930dc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Misc\User Settings">
+      <UniqueIdentifier>{04efe525-6bfa-4a58-8128-633c5632b3c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Misc\Replay Info">
+      <UniqueIdentifier>{1438a5a2-9ebb-44b2-9328-8d7a1841828a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Misc\ArtFileMgr">
+      <UniqueIdentifier>{e2158a78-e42f-46a4-a589-7b6777c47271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Misc\Random">
+      <UniqueIdentifier>{ad0d33e8-c343-459e-b2d6-80ca26127d3e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Event">
+      <UniqueIdentifier>{ec58df68-e418-4a68-8d9e-99fb18133f63}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Event\CPP">
+      <UniqueIdentifier>{4d1f112c-8d30-4f78-9860-b65bc8a9319e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Event\header">
+      <UniqueIdentifier>{ab5e143c-138b-47df-81ea-fa1ea43db7ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\Data">
+      <UniqueIdentifier>{9d9312ef-a8b8-4fdc-9b85-e4de22a8a1e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Python\CvPythonCaller\ArgList">
+      <UniqueIdentifier>{5faa2112-43d9-448e-9762-95844185c718}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\EXE">
+      <UniqueIdentifier>{ca0830de-108c-4feb-9b96-51fd4cbb77da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\EXE\EXE interface">
+      <UniqueIdentifier>{f2e98b89-d8ca-4626-9e7e-5468e1bccaad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\EXE\Interface">
+      <UniqueIdentifier>{bc0df941-f166-45d4-9255-7277567292f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\EXE\CPP">
+      <UniqueIdentifier>{47caa9d8-a1f3-4d6f-b747-f9e6d872a80b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EXE">
+      <UniqueIdentifier>{2a5de3be-921c-4a52-9d33-5bb3b1fb3d41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EXE\Plot">
+      <UniqueIdentifier>{a73f9fd7-4572-4d60-b79b-5d79842f663d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="EXE\Vanilla headers">
+      <UniqueIdentifier>{57dff39f-fba3-427d-9926-baaa2529b868}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\XML\Updater">
+      <UniqueIdentifier>{7d29d687-f99d-4a37-b524-1206599f146d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Network">
+      <UniqueIdentifier>{81d20f21-4852-45f7-bb35-ed9928cc7e98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Network\CPP">
+      <UniqueIdentifier>{2fd5b449-7af8-4038-9f36-a58a8ded2547}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Network\Header">
+      <UniqueIdentifier>{c2126a81-fbcc-440a-8977-48882c9f7e47}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Combat">
+      <UniqueIdentifier>{948b7319-e4f3-4a69-abbb-0252dc159665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Combat\CPP">
+      <UniqueIdentifier>{02ca1357-7f2e-4e0b-8a01-dfa1cb28f063}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Combat\Header">
+      <UniqueIdentifier>{9de6045c-b49c-4e6a-a46b-3d6ca6df57df}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

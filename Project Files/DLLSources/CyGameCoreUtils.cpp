@@ -1,6 +1,6 @@
 #include "CvGameCoreDLL.h"
 #include "CyGameCoreUtils.h"
-#include "CvGameCoreUtils.h"
+#include "CombatOdds.h"
 #include "CyPlot.h"
 #include "CyCity.h"
 #include "CyUnit.h"

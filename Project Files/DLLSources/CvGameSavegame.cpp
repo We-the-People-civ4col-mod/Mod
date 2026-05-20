@@ -109,6 +109,7 @@ enum SavegameVariableTypes
 	GameSave_NumCultureVictoryCities,
 	GameSave_CultureVictoryCultureLevel,
 	GameSave_WorldBuilderUseCount,
+	GameSave_AsyncRand,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -179,7 +180,7 @@ const char* getSavedEnumNameGame(SavegameVariableTypes eType)
 	case GameSave_NumCultureVictoryCities: return "GameSave_NumCultureVictoryCities";
 	case GameSave_CultureVictoryCultureLevel: return "GameSave_CultureVictoryCultureLevel";
 	case GameSave_WorldBuilderUseCount: return "GameSave_WorldBuilderUseCount";
-
+	case GameSave_AsyncRand: return "GameSave_AsyncRand";
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -338,6 +339,7 @@ void CvGame::read(CvSavegameReader reader)
 		case GameSave_NumCultureVictoryCities: reader.Read(m_iNumCultureVictoryCities); break;
 		case GameSave_CultureVictoryCultureLevel: reader.Read(m_eCultureVictoryCultureLevel); break;
 		case GameSave_WorldBuilderUseCount: reader.Read(m_uiWorldBuilderUseCount); break;
+		case GameSave_AsyncRand: reader.Read(m_em_AsyncRand); break;
 		}
 		
 	}
@@ -360,11 +362,18 @@ void CvGame::read(CvSavegameReader reader)
 		}
 		addReplayMessage(REPLAY_MESSAGE_MAJOR_EVENT, getActivePlayer(), gDLL->getText("TXT_KEY_MISC_RELOAD", m_iNumSessions));
 	}
-		if (isOption(GAMEOPTION_NEW_RANDOM_SEED))
+
+	if (isOption(GAMEOPTION_NEW_RANDOM_SEED))
 	{
 		if (!isNetworkMultiPlayer())
 		{
 			m_sorenRand.reseed(timeGetTime());
+
+			// most likely not really needed, but it should be updated just in case
+			for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+			{
+				m_em_AsyncRand[ePlayer].init(timeGetTime() % (52319761 + (ePlayer * ePlayer)));
+			}
 		}
 	}
 
@@ -444,6 +453,7 @@ void CvGame::write(CvSavegameWriter writer)
 	writer.Write(GameSave_NumCultureVictoryCities, m_iNumCultureVictoryCities, defaultNumCultureVictoryCities);
 	writer.Write(GameSave_CultureVictoryCultureLevel, m_eCultureVictoryCultureLevel, defaultCultureVictoryCultureLevel);
 	writer.Write(GameSave_WorldBuilderUseCount, m_uiWorldBuilderUseCount, defaultWorldBuilderUseCount);
+	writer.Write(GameSave_AsyncRand, m_em_AsyncRand);
 
 	writer.Write(GameSave_END);
 }

@@ -6,9 +6,9 @@ class CvCity;
 
 class CvCityYields
 {
-	CvCity& m_city;
+	const CvCity& m_city;
 public:
-	CvCityYields(CvCity& city);
+	CvCityYields(const CvCity& city);
 
 	int getBaseRawYieldProduced         (YieldTypes eYieldType) const;
 	int getBaseRawYieldProducedIndoor   (YieldTypes eYieldType) const;

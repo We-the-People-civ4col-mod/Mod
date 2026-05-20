@@ -12,6 +12,7 @@
 		<German>Ein [COLOR_UNIT_TEXT]Erfahrener Schürfer[COLOR_REVERT] verdoppelt die [COLOR_HIGHLIGHT_TEXT]Silber[COLOR_REVERT]produktion des Geländefeldes, auf dem er arbeitet.</German>
 		<Italian>Per sfruttare al massimo una ricca vena d'argento, chiama un [COLOR_UNIT_TEXT]minatore d'argento esperto[COLOR_REVERT]. I minatori d'argento esperti sono in grado di raddoppiare la quantità di [COLOR_HIGHLIGHT_TEXT]argento[COLOR_REVERT] ottenuta dalla casella!</Italian>
 		<Spanish>Para sacar el mejor partido de una vena de plata, llamad a un [COLOR_UNIT_TEXT]Minero de plata experto[COLOR_REVERT]. Los Mineros de plata expertos son capaces de extraer el doble de [COLOR_HIGHLIGHT_TEXT]Plata[COLOR_REVERT] de una casilla en la que haya este metal.</Spanish>
+		<Hungarian>Ha dúskálni akarsz [LINK=YIELD_SILVER]Ezüstben[\LINK], [LINK=YIELD_GOLD]Aranyban[\LINK] vagy [LINK=YIELD_GEMS]Drágakőben[\LINK] küldj bányád mélyére egy [COLOR_UNIT_TEXT]Tapasztalt Aranyásót[COLOR_REVERT]. Az általa megművelt területen megduplázódik a kitermelt nemesfémek mennyisége, ha [LINK=PROFESSION_SILVER_MINER]Ezüstbányász[\LINK] vagy [LINK=PROFESSION_GOLD_MINER]Aranybányász[\LINK] munkát végez, és 3 extra Drágakövet termel, ha [LINK=PROFESSION_GEMSTONES_MINER]Drágakőbányászként[\LINK] dolgozik.[PARAGRAPH:1]A Tapasztalt Aranyásók egyaránt felfogadhatók [LINK=CONCEPT_EUROPE]Európában[\LINK] és kiképezhetik őket az [LINK=CONCEPT_NATIVES]Indiánok[\LINK], és [LINK=CONCEPT_TRAINING]Kiképezhetők[\LINK] egy olyan kolóniában, ahol van [LINK=BUILDING_SCHOOLHOUSE]Iskola[\LINK] vagy annak egyik fejlesztése.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AI_WAGON_TRAIN</Tag>
@@ -36,6 +37,7 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
+		<Hungarian>Ekhós Szekér</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AI_WAGON_TRAIN_STRATEGY</Tag>
@@ -44,6 +46,7 @@
 		<German>Die preiswerten [COLOR_UNIT_TEXT]Wagenkarren[COLOR_REVERT] ersetzen bei den konkurrierenden Kolonialmächten die [COLOR_UNIT_TEXT]Planwagen[COLOR_REVERT].[PARAGRAPH:2]Wagen können Güter quer durch das Land von einer Siedlung zu einer anderen befördern und damit Ortschaften an das Handelsnetz anschließen, die nicht an der Küste liegen. Planwagen und Wagenkarren können in 2 Transportplätzen jeweils bis zu 100 Güter transportieren. [COLOR_UNIT_TEXT]Trecks[COLOR_REVERT] sind genauso teuer wie Planwagen, können aber sogar bis zu 5 Transportplätze nutzen. Allerdings haben sie im Gegensatz zu den Planwagen nicht zwei, sondern nur einen einzigen Bewegungspunkt. Sie können erst dann gebaut werden, wenn eine Stadt über ein [COLOR_BUILDING_TEXT]Sägewerk[COLOR_REVERT] verfügt.[PARAGRAPH:2]Tipp: Trecks sind insbesondere für Massentransporte zwischen zwei nahegelegenen Städten in der mittleren und späten Spielphase geeignet.[PARAGRAPH:2]Tipp: Bei gedrückter Shift-Taste können die Wagen auch mit Teilmengen beladen werden.[PARAGRAPH:2]Hinweise: Wagen können nicht auf Schiffe geladen werden. Greift man einen Planwagen, Wagenkarren oder einen Treck an, erobert man ihn mitsamt aller Waren.</German>
 		<Italian>Le [COLOR_UNIT_TEXT]colonne di carovane[COLOR_REVERT] sono preziosi strumenti per il commercio terrestre. Le [COLOR_UNIT_TEXT]colonne di carovane[COLOR_REVERT] possono trasportare i beni tra gli insediamenti via terra, il che significa che possono raggiungere gli insediamenti che non si trovano sulla costa. Sono la chiave per l'espansione verso l'interno del continente.</Italian>
 		<Spanish>Las [COLOR_UNIT_TEXT]Caravanas de carromatos[COLOR_REVERT] son unas herramientas para el comercio terrestre que no tienen precio. Las [COLOR_UNIT_TEXT]Caravanas de carromatos[COLOR_REVERT] pueden transportar mercancías de un asentamiento a otro por tierra, lo cual comporta que no pueden llegar a los que se encuentren en la costa. Son la clave para la expansión hacia el interior del continente.</Spanish>
+		<Hungarian>Az [COLOR_UNIT_TEXT]Ekhós Szekerek[COLOR_REVERT] a szárazföldi kereskedelem felbecsülhetetlen eszközei, amelyek segítségével a nem part mentén épült településeket is könnyen elérheted áruiddal. A kontinens belseje felé terjeszkedés kulcsát tehát az [COLOR_UNIT_TEXT]Ekhós Szekerek[COLOR_REVERT] jelentik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_GENERAL</Tag>
@@ -72,6 +75,7 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
+		<Hungarian>Nagy Harcos</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_GENERAL_PEDIA</Tag>
@@ -80,6 +84,7 @@
 		<German>Die Entdeckung der Neuen Welt durch die Europäer wurde in der Alten Welt gefeiert, doch in der Neuen Welt betrauert. Die Eroberer massakrierten oder versklavten ganze Völker. Auch wenn der verzweifelte Kampf der Ureinwohnernationen letztlich vergeblich blieb, brachte er doch einige Große Krieger hervor: heldenhafte Männer, an deren Tatkraft und Mut sich viele aufrichteten.</German>
 		<Italian>I molti conflitti nati nelle colonie del Nuovo Mondo crearono tantissimi Grandi Generali. La marcia di José de San Martín attraverso le Ande, la traversata furtiva del fiume Delaware di George Washington, il ribaltamento delle sorti della Nuova Francia grazie a Frontenac durante la guerra di Re Guglielmo... Queste imprese definirono i paesi creati da questi uomini. Senza i loro Grandi Generali Cile, Argentina, Canada e Stati Uniti sarebbero probabilmente ancora proprietà ognuno della rispettiva madrepatria.</Italian>
 		<Spanish>Los diversos conflictos que afloraron en el Nuevo Mundo dieron lugar a numerosos grandes generales. La marcha de José de San Martín a través de los Andes, el sigiloso cruce de George Washington por el río Delaware, el cambio de tornas radical de Nueva Francia durante la Guerra del Rey Guillermo gracias a Frontenac... gestas así ayudaron a definir los países a los que estos hombres pertenecieron. Sin sus grandes generales, Chile, Argentina, Canadá y los Estados Unidos aún no serían más que dominios de sus países colonizadores.</Spanish>
+		<Hungarian>Az Újvilág gyarmatain kialakult számos konfliktus számos Nagy Tábornokot kovácsolt. José de San Martín Andokon átívelő hadjárata, George Washington lopakodó átkelése a Delaware folyón, Frontenac teljes fordulatot hozott Új-Franciaország sorsában a Vilmos király háborúja során - ezek a hőstettek határozták meg azokat az országokat, amelyeket ezek a férfiak formáltak. Nagy Tábornokaik nélkül Chile, Argentína, Kanada és az Egyesült Államok valószínűleg még mindig az anyaországaik uralma alatt lennének.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_GENERAL_STRATEGY</Tag>
@@ -88,6 +93,7 @@
 		<German>Wenn ein Ureinwohnervolk viele Schlachten bestreitet, bringt es im Laufe der Zeit einen [COLOR_UNIT_TEXT]Großen Krieger[COLOR_REVERT] hervor. Er vermag selber nicht zu kämpfen, aber er kann sich einer anderen Einheit im Feld anschließen und dabei dieser und allen anderen Einheiten auf demselben Geländefeld einen einmaligen Erfahrungsbonus sowie die Möglichkeit besonderer Beförderungen gewähren. Für jeden weiteren Großen Krieger braucht ein Volk mehr militärische Erfahrung.</German>
 		<Italian>Un [COLOR_UNIT_TEXT]Great Warrior[COLOR_REVERT] puó unirsi a un'altra unità sul campo, dando alle unità presenti nella stessa casella un bonus di esperienza da combattimento una tantum, e assicurando all'unità a cui si è unito accesso a promozioni uniche.</Italian>
 		<Spanish>Un [COLOR_UNIT_TEXT]Great Warrior[COLOR_REVERT] puede unirse a otra unidad que haya en el campo, con lo que aportará una bonificación única a las unidades de la misma casilla y garantizará a su unidad acceder a ascensos especiales.</Spanish>
+		<Hungarian>A [COLOR_UNIT_TEXT]Nagy Harcos[COLOR_REVERT] az [LINK=CONCEPT_NATIVES]Indián[COLOR_REVERT] megfelelője a [LINK=UNIT_GREAT_GENERAL]Nagy Tábornoknak[\LINK]. Csatlakozhat egy másik egységhez a csatatéren, ami egyszeri tapasztalati bónuszt ad az ugyanazon a területen lévő egységeknek, és az egységnek egyedi előléptetésekhez biztosít hozzáférést.[PARAGRAPH:1]A Nagy Harcosok működéséről lásd: [LINK=CONCEPT_GREAT_GENERALS]Nagy Tábornokok és Admirálisok[\LINK].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AI_LIGHT_ARTILLERY</Tag>
@@ -116,12 +122,14 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
+		<Hungarian>Könnyű Tüzérség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LIGHT_ARTILLERY_PEDIA</Tag>
 		<English>Cannons of light construction were used especially during the 17th century for the defense of small boats or ships. Such cannons were extensively used by both the British and the colonists during the American Revolutionary War.</English>
 		<French>Des canons construits à partir de matériaux relativement légers ont été particulièrement utilisés au XVIIe siècle pour la défense des navires - en particulier par les Britanniques et les colons pendant la Guerre d'Indépendance américaine.</French>
 		<German>Leichte Geschütze können bei der Verteidigung von Siedlungen auf Häuserdächern oder Wällen stationiert werden und mit ihren kleinkalibrigen Geschossen den Angreifern gefährlich werden.</German>
+		<Hungarian>A könnyű szerkezetű ágyúkat különösen a 17. században használták a könnyű csónakok és hajók védelmére. Ezeket az ágyúkat a Britek és a Gyarmatosítók is nagy számban használták az Amerikai Függetlenségi Háborúban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HEAVY_ARTILLERY_PEDIA</Tag>
@@ -130,11 +138,13 @@
 		<German>Die Kanone war eine der ersten Erfindungen, in denen Schießpulver zum Einsatz kam. Bis ins 19. Jahrhundert hinein zählten sie zu den wichtigsten Waffen. Gegen Ende des 16. Jahrhunderts war die Kanone zu einer leichten und mächtigen Waffe geworden, die schnell die Position wechseln konnten, um jedes Ziel ins Visier zu nehmen, das sich während der Schlacht bot. Solche Kanonen erwiesen sich als besonders effektiv gegen eingeborene Gegner, die noch nie mit den verheerenden Auswirkungen dieser Waffen in Berührung gekommen waren und keine taktische Kontermöglichkeit hatten.</German>
 		<Italian>I cannoni furono tra le prime invenzioni a utilizzare la polvere da sparo e rimasero tra le più importanti fino al XIX secolo. Nel tardo XVI secolo, i cannoni erano più leggeri ma potenti che potevano essere facilmente spostate e regolate per prendere di mira i bersagli offerti durante la battaglia. Tali cannoni si dimostrarono estremamente utili contro gli avversari nativi, che non avevano mai provato i devastanti effetti di questo tipo di armi e non avevano tattiche per contrastarle.</Italian>
 		<Spanish>Entre los primeros inventos que hicieron uso de la pólvora, los Cañones siguieron siendo los más importantes hasta el s. XIX. A finales del s. XVI, los Cañones se habían convertido en armas ligeras pero potentes que podían moverse fácilmente para apuntar a cualquier objetivo en la batalla. Estos Cañones demostraron ser extremadamente útiles contra los indígenas enemigos, que nunca habían experimentado los efectos devastadores de tales armas y carecían de tácticas para contrarrestarlas.</Spanish>
+		<Hungarian>A legkorábbi, puskaport használó találmányok közül az ágyúk a 19. századig a legfontosabbak közé tartoztak. Az 1500-as évek végére az ágyúk könnyű, de erős fegyverekké váltak, amelyeket könnyen lehetett mozgatni és beállítani, hogy a csata során bármit megcélozhassanak. Az ilyen ágyúk rendkívül hasznosnak bizonyultak az Indiánok ellen, akik még soha nem tapasztalták meg az ilyen fegyverek pusztító hatását, és nem rendelkeztek olyan taktikával, amellyel ellensúlyozni tudták volna őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_HALBERDIER_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]The Royal Halberdiers[COLOR_REVERT], specialists of the profession [LINK=PROFESSION_ROYAL_HALBERDIER]Royal Halberdiers[\LINK], are the weakest members of the elite ground forces of the Royal Expeditionary Force. However, the Royal Halberdiers get a bonus of 25% when attacking cavalry units (dragoons and heavy cavalry). The Royal Halberdiers are the Royal counterpart of the colonial Town Guard and get the free promotions, Veteran I and Veteran II, so that they make good defensive units. Attack them with infantry, not with cavalry.</English>
 		<French>Les [COLOR_UNIT_TEXT]Piquiers royaux[COLOR_REVERT], spécialistes de la profession [LINK=PROFESSION_ROYAL_HALBERDIER]Piquier royal[\LINK], sont les unités les plus faibles du corps expéditionnaire royal. Cependant, ils bénéficient d'un bonus de 25% contre les unités montées (dragons et cavaleries). Les bridgadiers royaux sont l'équivalent royal du Piquier vétéran et bénéficient des promotions "Vétéran I" et "Vétéran II", ce qui leur accorde une certaine puissance défensive. Elles sont plus facilement vaincues avec des unités d'infanterie qu'avec des unités montées.</French>
 		<German>Die Landtruppen des Königs verfügen mit den [COLOR_UNIT_TEXT]Königlichen Hellebardenträgern[COLOR_REVERT] (entspricht der Stadtwache) über einen ähnlichen Militärberuf wie die Kolonienationen. Allerdings sind die Einheiten, die diese Berufe ausüben, stärker: Die [COLOR_UNIT_TEXT]Königlichen Hellebardenträger[COLOR_REVERT] verfügt automatisch über die Beförderungen Veteran I, Veteran II und Stadtwache (und damit insgesamt einem Bonus von 20% auf die Kampfstärke und einen Kampfbonus von 25% gegen Berittene). Aufgrund ihrer Stärke gegen berittene Einheiten bekämpft man sie am besten mit Infanterie wie der Kolonialmiliz und der Linieninfanterie.</German>
+		<Hungarian>A [COLOR_UNIT_TEXT]Királyi Alabárdosok[COLOR_REVERT], a [LINK=PROFESSION_ROYAL_HALBERDIER]Királyi Alabárdos[\LINK] szakma szakértői, a Királyi Expedíciós Hadsereg elit szárazföldi erőinek leggyengébb tagjai. A Királyi Alabárdosok azonban 25%-os bónuszt kapnak a lovas egységek (Dragonyosok és Nehézlovasság) támadásakor. A Királyi Alabárdosok a gyarmati "Városőr" Királyi megfelelője, és megkapják a "Veterán I" és "Veterán II" előléptetéseket, így erős védekező egységként nagyon hatékonyak. Gyalogos egységekkel támadhatod őket, de lovas egységekkel nem érdemes.</Hungarian>
 	</TEXT>
 </Civ4GameText>

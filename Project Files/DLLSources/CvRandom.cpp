@@ -344,7 +344,7 @@ void CvRandom::reseed(unsigned long ulNewValue)
 }
 
 
-unsigned long CvRandom::getSeed()
+unsigned long CvRandom::getSeed() const
 {
 	return m_ulRandomSeed;
 }

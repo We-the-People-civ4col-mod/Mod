@@ -18,7 +18,7 @@ localText = CyTranslator()
 class WarehouseAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 	def __init__(self, parent):
 		BaseAdvisorWindow.BaseAdvisorWindow.__init__(self, parent, "WarehouseStateClass")
-	
+
 	def drawColonyRow(self, iCity, pCity):
 		# a whole lot of code, but all it does is calculating the warehouse column
 		iMaxYield = pCity.getMaxYieldCapacity()
@@ -58,10 +58,10 @@ class WarehouseAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 		elif iProdusedYield < 0:
 			szText += str(iProdusedYield)
 		szText += u"/" + str(iMaxYield) + u"</color></font>"
-		
+
 		# print the text
 		self.tableManager.addTextRight(szText)
-		
+
 		# fill all the yield columns
 		self.tableManager.autofillRow(iCity, pCity)
 
@@ -70,21 +70,13 @@ class WarehouseAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 		if iNetYield == 0:
 			self.tableManager.skipCell()
 		else:
-			self.tableManager.addTextRight("<color=0,255,0>" + unicode(iNetYield) + u"</color>",
-										   iCity, iYield, WidgetTypes.WIDGET_HELP_DOMESTIC_DEMAND_ADVISOR)
-		
+			self.tableManager.addTextIntRight("<color=0,255,0>" + unicode(iNetYield) + u"</color>",
+				iYield, iCity, WidgetTypes.WIDGET_HELP_YIELD)
+
+
 	def createTableHeader(self):
 		# create table headers
 		self.tableManager.addHeaderButton()
 		self.tableManager.addHeaderCityName()
 		self.tableManager.addHeaderTxt("MAX", self.parent.iWareHouseW)
 		self.tableManager.addHeaderArrayYields()
-
-	def getWidgetHelp(self, argsList):
-		iScreen, eWidgetType, iCity, iYield, bOption = argsList
-
-		if eWidgetType != WidgetTypes.WIDGET_HELP_DOMESTIC_DEMAND_ADVISOR:
-			return ""
-
-		yieldInfo = gc.getYieldInfo(iYield)
-		return yieldInfo.getDescription()

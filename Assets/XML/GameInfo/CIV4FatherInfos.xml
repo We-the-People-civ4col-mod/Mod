@@ -515,7 +515,7 @@
 			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
 			<Sound>AS2D_FUTURE</Sound>
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
-			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,8,7</Button>
+			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,5,8</Button>
 		</FatherInfo>
 		<FatherInfo>
 			<Type>FATHER_WILLIAM_DAMPIER</Type>
@@ -579,7 +579,7 @@
 			<Quote>TXT_KEY_FUTURE_QUOTE</Quote>
 			<Sound>AS2D_FUTURE</Sound>
 			<SoundMP>AS2D_MP_FUTURE</SoundMP>
-			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,5,8</Button>
+			<Button>,Art/Interface/Screens/Founding_Fathers/Founding_Fathers_Atlas.dds,8,7</Button>
 		</FatherInfo>
 		<FatherInfo>
 			<Type>FATHER_JACQUES_CARTIER</Type>

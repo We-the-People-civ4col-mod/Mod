@@ -15,11 +15,12 @@ class CvArtInfoUnit;
 //class CyUnitEntity;
 class CyUnit
 {
+	CvUnit* pointer(AssertCallerData);
 public:
 	CyUnit();
 
 	DllExport CyUnit(CvUnit* pUnit);		// Call from C++
-	CvUnit* getUnit() { return m_pUnit;	};	// Call from C++
+	CvUnit* getUnit() { return (CvUnit*)m_pUnit;	};	// Call from C++
 	const CvUnit* getUnit() const { return m_pUnit;	};	// Call from C++
 	bool isNone() { return (m_pUnit==NULL); }
 	void convert(CyUnit* pUnit);
@@ -35,6 +36,7 @@ public:
 	bool canMoveInto(CyPlot* pPlot, bool bAttack, bool bDeclareWar, bool bIgnoreLoad);
 	bool canMoveOrAttackInto(CyPlot* pPlot, bool bDeclareWar);
 	bool canMoveThrough(CyPlot* pPlot);
+	void attack(CyPlot* pPlot, bool bQuick);
 	bool jumpToNearestValidPlot();
 	bool canAutomate(AutomateTypes eAutomate);
 	bool canScrap();
@@ -307,6 +309,6 @@ public:
 	// Python Helper Functions
 	void centerCamera();
 protected:
-	CvUnit* m_pUnit;
+	const CvUnit* const m_pUnit;
 };
 #endif	// #ifndef CyUnit

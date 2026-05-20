@@ -178,7 +178,7 @@ class Coordinates
 	friend class CvSavegameReader;
 	friend class CvSavegameWriter;
 public:
-	explicit Coordinates(int iX = 0, int iY = 0)
+	explicit Coordinates(int iX = INVALID_PLOT_COORD, int iY = INVALID_PLOT_COORD)
 	{
 		set(iX, iY);
 	}

@@ -18,16 +18,17 @@ localText = CyTranslator()
 class HappinessAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 	def __init__(self, parent):
 		BaseAdvisorWindow.BaseAdvisorWindow.__init__(self, parent, "HappinessStateClass")
-		
+
 	def drawColonyCell(self, iCity, pCity, iColumn, noInfo):
 		#  0 Total Happiness
 		if (iColumn == 0):
-			if (pCity.getCityHappiness() > pCity.getCityUnHappiness() ):
-				self.tableManager.addText("<color=0,255,0>" + unicode(pCity.getCityHappiness() - pCity.getCityUnHappiness()) + "</font>")
-			elif (pCity.getCityHappiness() < pCity.getCityUnHappiness() ):
-				self.tableManager.addText("<color=255,0,0>" + unicode(pCity.getCityHappiness() - pCity.getCityUnHappiness()) + "</font>")
-			elif (pCity.getCityHappiness() == pCity.getCityUnHappiness() ):
-				self.tableManager.addText(unicode(pCity.getCityHappiness() - pCity.getCityUnHappiness()))
+			iDiff = pCity.getCityHappiness() - pCity.getCityUnHappiness()
+			if (iDiff > 0):
+				self.tableManager.addTextInt("<color=0,255,0>" + unicode(iDiff) + "</color>")
+			elif (iDiff < 0):
+				self.tableManager.addTextInt("<color=255,0,0>" + unicode(iDiff) + "</color>")
+			else:
+				self.tableManager.addTextInt("0")
 		#  1 Happiness from Crosses
 		elif (iColumn == 1):
 			self.tableManager.addIntLeft(pCity.getHappinessFromCrosses())
@@ -74,28 +75,28 @@ class HappinessAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 		else:
 			# shouldn't be needed, but in case of errors, empty cells are better than columns and column headers going out of sync
 			self.tableManager.addText("")
-		
-		
+
+
 	def setDirty(self):
 		self.dirty = True
-		
+
 	def __addTableHeader(self, char):
 		self.tableManager.addHeaderName((u" %c" % gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + (u" %c" % char), 65)
-		
+
 	def __addTableHeaderSymbol(self, iSymbol):
 		self.__addTableHeader(CyGame().getSymbolID(iSymbol))
-		
+
 	def __addTableHeaderYield(self, iYield):
 		self.__addTableHeader(gc.getYieldInfo(iYield).getChar())
-		
+
 	def createTableHeader(self):
 		# create table headers
 		self.tableManager.addHeaderButton()
 		self.tableManager.addHeaderCityName()
-		
+
 		# the list of columns
 		# note that drawColonyCell will have iColumn set according to the list here
-		
+
 		#  0 Total Happiness
 		self.tableManager.addHeaderName((u" %c" % gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) +"(TOTAL)")
 		#  1 Happiness from Crosses
@@ -126,7 +127,7 @@ class HappinessAdvisor(BaseAdvisorWindow.BaseAdvisorWindow):
 		self.__addTableHeaderSymbol  (FontSymbols.DEFENSE_CHAR)
 		# 14 Unhappiness from Tax Rate
 		self.__addTableHeaderSymbol  (FontSymbols.GOLD_CHAR)
-		
-		
+
+
 		self.tableManager.buildHeaderArray()
 		self.tableManager.expandColumnsToFillTableWidth()

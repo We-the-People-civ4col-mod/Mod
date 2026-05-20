@@ -9,6 +9,14 @@
 #include "CyUnit.h"
 #include "CvDLLPythonIFaceBase.h"
 #include "CvGlobals.h"
+#include "DesyncMonitor.h"
+
+CvCity* CyCity::pointer(AssertCallerData data)
+{
+	FAssertWithCaller(data, CxDesyncMonitor::isAlwaysSync());
+	FAssertWithCaller(data, m_pCity != NULL);
+	return (CvCity*)m_pCity;
+}
 
 CyCity::CyCity() : m_pCity(NULL)
 {
@@ -23,20 +31,20 @@ CyCity::CyCity(CvCity* pCity) : m_pCity(pCity)
 void CyCity::kill()
 {
 	if (m_pCity)
-		m_pCity->kill();
+		pointer(CREATE_ASSERT_DATA)->kill();
 }
 
 void CyCity::createGreatGeneral(int /*UnitTypes*/ eGreatGeneralUnit, bool bIncrementExperience)
 {
 	if (m_pCity)
-		m_pCity->createGreatGeneral((UnitTypes) eGreatGeneralUnit, bIncrementExperience);
+		pointer(CREATE_ASSERT_DATA)->createGreatGeneral((UnitTypes) eGreatGeneralUnit, bIncrementExperience);
 }
 
 // R&R, ray, Great Admirals - START
 void CyCity::createGreatAdmiral(int /*UnitTypes*/ eGreatAdmiralUnit, bool bIncrementExperience)
 {
 	if (m_pCity)
-		m_pCity->createGreatAdmiral((UnitTypes) eGreatAdmiralUnit, bIncrementExperience);
+		pointer(CREATE_ASSERT_DATA)->createGreatAdmiral((UnitTypes) eGreatAdmiralUnit, bIncrementExperience);
 }
 // R&R, ray, Great Admirals - END
 
@@ -44,25 +52,25 @@ void CyCity::createGreatAdmiral(int /*UnitTypes*/ eGreatAdmiralUnit, bool bIncre
 void CyCity::createBraveLieutenant(int /*UnitTypes*/ eBraveLieutenantUnit)
 {
 	if (m_pCity)
-		m_pCity->createBraveLieutenant((UnitTypes) eBraveLieutenantUnit);
+		pointer(CREATE_ASSERT_DATA)->createBraveLieutenant((UnitTypes) eBraveLieutenantUnit);
 }
 void CyCity::createCapableCaptain(int /*UnitTypes*/ eCapableCaptainUnit)
 {
 	if (m_pCity)
-		m_pCity->createCapableCaptain((UnitTypes) eCapableCaptainUnit);
+		pointer(CREATE_ASSERT_DATA)->createCapableCaptain((UnitTypes) eCapableCaptainUnit);
 }
 // WTP, ray, Lieutenants and Captains - END
 
 void CyCity::doTask(int /*TaskTypes*/ eTask, int iData1, int iData2, bool bOption)
 {
 	if (m_pCity)
-		m_pCity->doTask((TaskTypes)eTask, iData1, iData2, bOption);
+		pointer(CREATE_ASSERT_DATA)->doTask((TaskTypes)eTask, iData1, iData2, bOption);
 }
 
 void CyCity::chooseProduction(int /*UnitTypes*/ eTrainUnit, int /*BuildingTypes*/ eConstructBuilding, bool bFinish, bool bFront)
 {
 	if (m_pCity)
-		m_pCity->chooseProduction((UnitTypes) eTrainUnit, (BuildingTypes) eConstructBuilding, bFinish, bFront);
+		pointer(CREATE_ASSERT_DATA)->chooseProduction((UnitTypes) eTrainUnit, (BuildingTypes) eConstructBuilding, bFinish, bFront);
 }
 
 int CyCity::getCityPlotIndex(CyPlot* pPlot)
@@ -83,7 +91,7 @@ bool CyCity::canWork(CyPlot* pPlot)
 void CyCity::clearWorkingOverride(int iIndex)
 {
 	if (m_pCity)
-		m_pCity->clearWorkingOverride(iIndex);
+		pointer(CREATE_ASSERT_DATA)->clearWorkingOverride(iIndex);
 }
 
 int CyCity::countNumImprovedPlots()
@@ -169,7 +177,7 @@ int CyCity::getProductionExperience(int /*UnitTypes*/ eUnit)
 void CyCity::addProductionExperience(CyUnit* pUnit)
 {
 	if (m_pCity)
-		m_pCity->addProductionExperience(pUnit->getUnit());
+		pointer(CREATE_ASSERT_DATA)->addProductionExperience(pUnit->getUnit());
 }
 
 int /*UnitTypes*/ CyCity::getProductionUnit()
@@ -245,13 +253,13 @@ int CyCity::getBuildingProductionTurnsLeft(int /*BuildingTypes*/ iBuilding, int 
 void CyCity::setProduction(int iNewValue)
 {
 	if (m_pCity)
-		m_pCity->setProduction(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setProduction(iNewValue);
 }
 
 void CyCity::changeProduction(int iChange)
 {
 	if (m_pCity)
-		m_pCity->changeProduction(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeProduction(iChange);
 }
 
 int CyCity::getProductionModifier()
@@ -282,7 +290,7 @@ bool CyCity::canHurry(int /*HurryTypes*/ iHurry, bool bTestVisible)
 void CyCity::hurry(int /*HurryTypes*/ iHurry)
 {
 	if (m_pCity)
-		m_pCity->hurry((HurryTypes)iHurry);
+		pointer(CREATE_ASSERT_DATA)->hurry((HurryTypes)iHurry);
 }
 
 int /* HandicapTypes */ CyCity::getHandicapType()
@@ -468,13 +476,13 @@ int CyCity::getPopulation()
 void CyCity::setPopulation(int iNewValue)
 {
 	if (m_pCity)
-		m_pCity->setPopulation(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setPopulation(iNewValue);
 }
 
 void CyCity::changePopulation(int iChange)
 {
 	if (m_pCity)
-		m_pCity->changePopulation(iChange);
+		pointer(CREATE_ASSERT_DATA)->changePopulation(iChange);
 }
 
 long CyCity::getRealPopulation()
@@ -490,7 +498,7 @@ int CyCity::getHighestPopulation()
 void CyCity::setHighestPopulation(int iNewValue)
 {
 	if (m_pCity)
-		m_pCity->setHighestPopulation(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setHighestPopulation(iNewValue);
 }
 
 bool CyCity::isWorksWater()
@@ -501,7 +509,7 @@ bool CyCity::isWorksWater()
 void CyCity::changeHealRate(int iChange)
 {
 	if (m_pCity)
-		m_pCity->changeHealRate(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeHealRate(iChange);
 }
 
 int CyCity::getFood()
@@ -512,13 +520,13 @@ int CyCity::getFood()
 void CyCity::setFood(int iNewValue)
 {
 	if (m_pCity)
-		m_pCity->setFood(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setFood(iNewValue);
 }
 
 void CyCity::changeFood(int iChange)
 {
 	if (m_pCity)
-		m_pCity->changeFood(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeFood(iChange);
 }
 
 int CyCity::getFoodKept()
@@ -539,7 +547,7 @@ int CyCity::getOverflowProduction()
 void CyCity::setOverflowProduction(int iNewValue)
 {
 	if (m_pCity)
-		m_pCity->setOverflowProduction(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setOverflowProduction(iNewValue);
 }
 
 int CyCity::getMilitaryProductionModifier()
@@ -570,7 +578,7 @@ int CyCity::getDefenseDamage()
 void CyCity::changeDefenseDamage(int iChange)
 {
 	if (m_pCity)
-		m_pCity->changeDefenseDamage(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeDefenseDamage(iChange);
 }
 
 bool CyCity::isBombardable(CyUnit* pUnit)
@@ -601,13 +609,13 @@ bool CyCity::isOccupation()
 void CyCity::setOccupationTimer(int iNewValue)
 {
 	if (m_pCity)
-		m_pCity->setOccupationTimer(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setOccupationTimer(iNewValue);
 }
 
 void CyCity::changeOccupationTimer(int iChange)
 {
 	if (m_pCity)
-		m_pCity->changeOccupationTimer(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeOccupationTimer(iChange);
 }
 
 int CyCity::getCultureUpdateTimer()
@@ -618,7 +626,7 @@ int CyCity::getCultureUpdateTimer()
 void CyCity::changeCultureUpdateTimer(int iChange)
 {
 	if (m_pCity)
-		m_pCity->changeCultureUpdateTimer(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeCultureUpdateTimer(iChange);
 }
 
 bool CyCity::isNeverLost()
@@ -629,7 +637,7 @@ bool CyCity::isNeverLost()
 void CyCity::setNeverLost(int iNewValue)
 {
 	if (m_pCity)
-		m_pCity->setNeverLost(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setNeverLost(iNewValue);
 }
 
 bool CyCity::isBombarded()
@@ -640,13 +648,13 @@ bool CyCity::isBombarded()
 void CyCity::setBombarded(int iNewValue)
 {
 	if (m_pCity)
-		m_pCity->setBombarded(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setBombarded(iNewValue);
 }
 
 void CyCity::setAllCitizensAutomated(bool bAutomated)
 {
 	if (m_pCity)
-		m_pCity->setAllCitizensAutomated(bAutomated);
+		pointer(CREATE_ASSERT_DATA)->setAllCitizensAutomated(bAutomated);
 }
 
 bool CyCity::isProductionAutomated()
@@ -658,7 +666,7 @@ void CyCity::setProductionAutomated(bool bNewValue)
 {
 	if (m_pCity)
 	{
-		m_pCity->setProductionAutomated(bNewValue, false);
+		pointer(CREATE_ASSERT_DATA)->setProductionAutomated(bNewValue, false);
 	}
 }
 
@@ -670,13 +678,13 @@ bool CyCity::isWallOverride() const
 void CyCity::setWallOverride(bool bOverride)
 {
 	if (m_pCity)
-		m_pCity->setWallOverride(bOverride);
+		pointer(CREATE_ASSERT_DATA)->setWallOverride(bOverride);
 }
 
 void CyCity::setCitySizeBoost(int iBoost)
 {
 	if (m_pCity)
-		m_pCity->setCitySizeBoost(iBoost);
+		pointer(CREATE_ASSERT_DATA)->setCitySizeBoost(iBoost);
 }
 
 int /*PlayerTypes*/ CyCity::getOwner()
@@ -792,13 +800,13 @@ int CyCity::calculateTeamCulturePercent(int /*TeamTypes*/ eIndex)
 void CyCity::setCulture(int /*PlayerTypes*/ eIndex, int iNewValue, bool bPlots)
 {
 	if (m_pCity)
-		m_pCity->setCulture((PlayerTypes)eIndex, iNewValue, bPlots);
+		pointer(CREATE_ASSERT_DATA)->setCulture((PlayerTypes)eIndex, iNewValue, bPlots);
 }
 
 void CyCity::changeCulture(int /*PlayerTypes*/ eIndex, int iChange, bool bPlots)
 {
 	if (m_pCity)
-		m_pCity->changeCulture((PlayerTypes)eIndex, iChange, bPlots);
+		pointer(CREATE_ASSERT_DATA)->changeCulture((PlayerTypes)eIndex, iChange, bPlots);
 }
 
 int CyCity::getTotalYieldStored() const
@@ -814,13 +822,13 @@ int CyCity::getYieldStored(int /*YieldTypes*/ eYield) const
 void CyCity::setYieldStored(int /*YieldTypes*/ eYield, int iValue)
 {
 	if (m_pCity)
-		m_pCity->setYieldStored((YieldTypes)eYield, iValue);
+		pointer(CREATE_ASSERT_DATA)->setYieldStored((YieldTypes)eYield, iValue);
 }
 
 void CyCity::changeYieldStored(int /*YieldTypes*/ eYield, int iChange)
 {
 	if (m_pCity)
-		m_pCity->changeYieldStored((YieldTypes)eYield, iChange);
+		pointer(CREATE_ASSERT_DATA)->changeYieldStored((YieldTypes)eYield, iChange);
 }
 
 int CyCity::getYieldRushed(int /*YieldTypes*/ eYield) const
@@ -828,9 +836,30 @@ int CyCity::getYieldRushed(int /*YieldTypes*/ eYield) const
 	return m_pCity ? m_pCity->getYieldRushed((YieldTypes)eYield) : -1;
 }
 
-int CyCity::calculateNetYield(int /*YieldTypes*/ eYield)
+int CyCity::calculateNetYield(int /*YieldTypes*/ eYield) const
 {
 	return m_pCity ? m_pCity->calculateNetYield((YieldTypes)eYield) : -1;
+}
+
+boost::python::list CyCity::calculateNetYieldList() const
+{
+	boost::python::list result;
+
+	if (m_pCity == NULL)
+	{
+		// Return an empty list
+		return result;
+	}
+
+	int aiYields[NUM_YIELD_TYPES];
+	m_pCity->calculateNetYields(aiYields);
+
+	for (int i = 0; i < NUM_YIELD_TYPES; ++i)
+	{
+		result.append(aiYields[i]);
+	}
+
+	return result;
 }
 
 int CyCity::calculateActualYieldProduced(int /*YieldTypes*/ eYield) const
@@ -892,7 +921,7 @@ bool CyCity::isRevealed(int /*TeamTypes */eIndex, bool bDebug)
 void CyCity::setRevealed(int /*TeamTypes*/ eIndex, bool bNewValue)
 {
 	if (m_pCity)
-		m_pCity->setRevealed((TeamTypes)eIndex, bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setRevealed((TeamTypes)eIndex, bNewValue);
 }
 
 std::wstring CyCity::getName()
@@ -913,7 +942,7 @@ std::wstring CyCity::getNameKey()
 void CyCity::setName(std::wstring szNewValue, bool bFound)
 {
 	if (m_pCity)
-		m_pCity->setName(CvWString(szNewValue), bFound);
+		pointer(CREATE_ASSERT_DATA)->setName(CvWString(szNewValue), bFound);
 }
 
 int CyCity::getBuildingProduction(int /*BuildingTypes*/ iIndex)
@@ -924,13 +953,13 @@ int CyCity::getBuildingProduction(int /*BuildingTypes*/ iIndex)
 void CyCity::setBuildingProduction(int /*BuildingTypes*/ iIndex, int iNewValue)
 {
 	if (m_pCity)
-		m_pCity->setBuildingProduction((BuildingTypes) iIndex, iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setBuildingProduction((BuildingTypes) iIndex, iNewValue);
 }
 
 void CyCity::changeBuildingProduction(int /*BuildingTypes*/ iIndex, int iChange)
 {
 	if (m_pCity)
-		m_pCity->changeBuildingProduction((BuildingTypes) iIndex, iChange);
+		pointer(CREATE_ASSERT_DATA)->changeBuildingProduction((BuildingTypes) iIndex, iChange);
 }
 
 int CyCity::getBuildingProductionTime(int /*BuildingTypes*/ eIndex)
@@ -941,13 +970,13 @@ int CyCity::getBuildingProductionTime(int /*BuildingTypes*/ eIndex)
 void CyCity::setBuildingProductionTime(int /*BuildingTypes*/ eIndex, int iNewValue)
 {
 	if (m_pCity)
-		m_pCity->setBuildingProductionTime((BuildingTypes)eIndex, iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setBuildingProductionTime((BuildingTypes)eIndex, iNewValue);
 }
 
 void CyCity::changeBuildingProductionTime(int /*BuildingTypes*/ eIndex, int iChange)
 {
 	if (m_pCity)
-		m_pCity->changeBuildingProductionTime((BuildingTypes) eIndex, iChange);
+		pointer(CREATE_ASSERT_DATA)->changeBuildingProductionTime((BuildingTypes) eIndex, iChange);
 }
 
 int CyCity::getBuildingOriginalOwner(int /*BuildingTypes*/ iIndex)
@@ -968,13 +997,13 @@ int CyCity::getUnitProduction(int iIndex)
 void CyCity::setUnitProduction(int iIndex, int iNewValue)
 {
 	if (m_pCity)
-		m_pCity->setUnitProduction((UnitTypes)iIndex, iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setUnitProduction((UnitTypes)iIndex, iNewValue);
 }
 
 void CyCity::changeUnitProduction(int /*UnitTypes*/ iIndex, int iChange)
 {
 	if (m_pCity)
-		m_pCity->changeUnitProduction((UnitTypes) iIndex, iChange);
+		pointer(CREATE_ASSERT_DATA)->changeUnitProduction((UnitTypes) iIndex, iChange);
 }
 
 int CyCity::getUnitCombatFreeExperience(int /*UnitCombatTypes*/ eIndex)
@@ -1005,7 +1034,7 @@ bool CyCity::isHasRealBuilding(int /*BuildingTypes*/ iIndex)
 void CyCity::setHasRealBuilding(int /*BuildingTypes*/ iIndex, bool bNewValue)
 {
 	if (m_pCity)
-		m_pCity->setHasRealBuilding((BuildingTypes) iIndex, bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setHasRealBuilding((BuildingTypes) iIndex, bNewValue);
 }
 
 bool CyCity::isHasFreeBuilding(int /*BuildingTypes*/ iIndex)
@@ -1021,19 +1050,19 @@ int CyCity::getDominantBuilding(int /*SpecialBuildingTypes*/ iSpecialBuilding) c
 void CyCity::clearOrderQueue()
 {
 	if (m_pCity)
-		m_pCity->clearOrderQueue();
+		pointer(CREATE_ASSERT_DATA)->clearOrderQueue();
 }
 
 void CyCity::pushOrder(OrderTypes eOrder, int iData1, int iData2, bool bSave, bool bPop, bool bAppend, bool bForce)
 {
 	if (m_pCity)
-		m_pCity->pushOrder(eOrder, iData1, iData2, bSave, bPop, bAppend, bForce);
+		pointer(CREATE_ASSERT_DATA)->pushOrder(eOrder, iData1, iData2, bSave, bPop, bAppend, bForce);
 }
 
 void CyCity::popOrder(int iNum, bool bFinish, bool bChoose)
 {
 	if (m_pCity)
-		m_pCity->popOrder(iNum, bFinish, bChoose);
+		pointer(CREATE_ASSERT_DATA)->popOrder(iNum, bFinish, bChoose);
 }
 
 int CyCity::getOrderQueueLength()
@@ -1064,7 +1093,7 @@ void CyCity::setWallOverridePoints(const python::tuple& kPoints)
 		pointsVec.push_back(pr);
 	}
 
-	m_pCity->setWallOverridePoints(pointsVec);
+	pointer(CREATE_ASSERT_DATA)->setWallOverridePoints(pointsVec);
 
 	delete [] pPointsData;
 
@@ -1123,7 +1152,7 @@ std::string CyCity::getScriptData() const
 void CyCity::setScriptData(std::string szNewValue)
 {
 	if (m_pCity)
-		m_pCity->setScriptData(szNewValue);
+		pointer(CREATE_ASSERT_DATA)->setScriptData(szNewValue);
 }
 
 int CyCity::getBuildingYieldChange(int /*BuildingClassTypes*/ eBuildingClass, int /*YieldTypes*/ eYield) const
@@ -1135,7 +1164,7 @@ void CyCity::setBuildingYieldChange(int /*BuildingClassTypes*/ eBuildingClass, i
 {
 	if (m_pCity)
 	{
-		m_pCity->setBuildingYieldChange((BuildingClassTypes)eBuildingClass, (YieldTypes)eYield, iChange);
+		pointer(CREATE_ASSERT_DATA)->setBuildingYieldChange((BuildingClassTypes)eBuildingClass, (YieldTypes)eYield, iChange);
 	}
 }
 
@@ -1148,7 +1177,7 @@ void CyCity::liberate(bool bConquest)
 {
 	if (m_pCity)
 	{
-		m_pCity->liberate(bConquest);
+		pointer(CREATE_ASSERT_DATA)->liberate(bConquest);
 	}
 }
 
@@ -1218,7 +1247,7 @@ void CyCity::setRebelSentiment(int iValue)
 {
 	if (m_pCity)
 	{
-		m_pCity->setRebelSentiment(iValue);
+		pointer(CREATE_ASSERT_DATA)->setRebelSentiment(iValue);
 	}
 }
 
@@ -1272,7 +1301,7 @@ void CyCity::setCityHealth(int iValue)
 {
 	if (m_pCity)
 	{
-		m_pCity->setCityHealth(iValue);
+		pointer(CREATE_ASSERT_DATA)->setCityHealth(iValue);
 	}
 }
 
@@ -1280,7 +1309,7 @@ void CyCity::changeCityHealth(int iValue)
 {
 	if (m_pCity)
 	{
-		m_pCity->changeCityHealth(iValue);
+		pointer(CREATE_ASSERT_DATA)->changeCityHealth(iValue);
 	}
 }
 // R&R, ray, Health - END
@@ -1333,7 +1362,7 @@ void CyCity::setCityHappiness(int iValue)
 {
 	if (m_pCity)
 	{
-		m_pCity->setCityHappiness(iValue);
+		pointer(CREATE_ASSERT_DATA)->setCityHappiness(iValue);
 	}
 }
 
@@ -1341,7 +1370,7 @@ void CyCity::updateCityHappiness()
 {
 	if (m_pCity)
 	{
-		m_pCity->updateCityHappiness();
+		pointer(CREATE_ASSERT_DATA)->updateCityHappiness();
 	}
 }
 
@@ -1354,7 +1383,7 @@ void CyCity::setCityUnHappiness(int iValue)
 {
 	if (m_pCity)
 	{
-		m_pCity->setCityUnHappiness(iValue);
+		pointer(CREATE_ASSERT_DATA)->setCityUnHappiness(iValue);
 	}
 }
 
@@ -1362,7 +1391,7 @@ void CyCity::updateCityUnHappiness()
 {
 	if (m_pCity)
 	{
-		m_pCity->updateCityUnHappiness();
+		pointer(CREATE_ASSERT_DATA)->updateCityUnHappiness();
 	}
 }
 
@@ -1447,7 +1476,7 @@ void CyCity::setCityLaw(int iValue)
 {
 	if (m_pCity)
 	{
-		m_pCity->setCityLaw(iValue);
+		pointer(CREATE_ASSERT_DATA)->setCityLaw(iValue);
 	}
 }
 
@@ -1455,7 +1484,7 @@ void CyCity::updateCityLaw()
 {
 	if (m_pCity)
 	{
-		m_pCity->updateCityLaw();
+		pointer(CREATE_ASSERT_DATA)->updateCityLaw();
 	}
 }
 
@@ -1468,7 +1497,7 @@ void CyCity::setCityCrime(int iValue)
 {
 	if (m_pCity)
 	{
-		m_pCity->setCityCrime(iValue);
+		pointer(CREATE_ASSERT_DATA)->setCityCrime(iValue);
 	}
 }
 
@@ -1476,7 +1505,7 @@ void CyCity::updateCityCrime()
 {
 	if (m_pCity)
 	{
-		m_pCity->updateCityCrime();
+		pointer(CREATE_ASSERT_DATA)->updateCityCrime();
 	}
 }
 
@@ -1527,13 +1556,13 @@ void CyCity::addPopulationUnit(CyUnit* pUnit, int /*ProfessionTypes*/ eProfessio
 {
 	if (m_pCity)
 	{
-		m_pCity->addPopulationUnit(pUnit->getUnit(), (ProfessionTypes) eProfession);
+		pointer(CREATE_ASSERT_DATA)->addPopulationUnit(pUnit->getUnit(), (ProfessionTypes) eProfession);
 	}
 }
 
 bool CyCity::removePopulationUnit(CyUnit* pUnit, bool bDelete, int /*ProfessionTypes*/ eProfession)
 {
-	return m_pCity ? m_pCity->removePopulationUnit(CREATE_ASSERT_DATA, pUnit->getUnit(), bDelete, (ProfessionTypes) eProfession) : false;
+	return m_pCity ? pointer(CREATE_ASSERT_DATA)->removePopulationUnit(CREATE_ASSERT_DATA, pUnit->getUnit(), bDelete, (ProfessionTypes) eProfession) : false;
 }
 
 bool CyCity::isExport(int /*YieldTypes*/ eYield) const
@@ -1545,7 +1574,7 @@ void CyCity::addExport(int /*YieldTypes*/ eYield)
 {
 	if (m_pCity != NULL)
 	{
-		m_pCity->addExport((YieldTypes) eYield);
+		pointer(CREATE_ASSERT_DATA)->addExport((YieldTypes) eYield);
 	}
 }
 
@@ -1553,7 +1582,7 @@ void CyCity::removeExport(int /*YieldTypes*/ eYield)
 {
 	if (m_pCity != NULL)
 	{
-		m_pCity->removeExport((YieldTypes) eYield);
+		pointer(CREATE_ASSERT_DATA)->removeExport((YieldTypes) eYield);
 	}
 }
 
@@ -1566,7 +1595,7 @@ void CyCity::addImport(int /*YieldTypes*/ eYield)
 {
 	if (m_pCity != NULL)
 	{
-		m_pCity->addImport((YieldTypes) eYield);
+		pointer(CREATE_ASSERT_DATA)->addImport((YieldTypes) eYield);
 	}
 }
 
@@ -1574,7 +1603,7 @@ void CyCity::removeImport(int /*YieldTypes*/ eYield)
 {
 	if (m_pCity != NULL)
 	{
-		m_pCity->removeImport((YieldTypes) eYield);
+		pointer(CREATE_ASSERT_DATA)->removeImport((YieldTypes) eYield);
 	}
 }
 

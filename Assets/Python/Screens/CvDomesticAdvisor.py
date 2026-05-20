@@ -30,7 +30,7 @@ import TradeCountAdvisor
 ##
 ## Buttons are added at # Button generation
 ## They appear in the order they are entered
-## 
+##
 ## Subpages (left/right arrow accessible) are added with createSubpage(iState, iPage)
 ##   It adds pages to iState until iPage is the highest INDEX for a page (iPage = 2 gives pages 0,1,2)
 ##   Nothing happens if the page already exist meaning a loop can easily call it every time it writes to a page
@@ -50,7 +50,7 @@ class CvDomesticAdvisor:
 	def __init__(self):
 		self.listSelectedCities = []
 		self.selectedSelectionGroupHeadUnitID = -1
-		
+
 	# Screen construction function
 	def interfaceScreen(self):
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
@@ -60,10 +60,10 @@ class CvDomesticAdvisor:
 
 		self.nScreenWidth = screen.getXResolution()
 		self.nScreenHeight = (screen.getYResolution() - (screen.getYResolution() * 31 / 100))
-		
+
 		# widget setup of widget types, which only applies to this file
 		self.WIDGET_MISSION = WidgetTypes(WidgetTypes.NUM_WIDGET_TYPES)
-		
+
 #VET NewCapacity - begin 1/4
 		# WTP ray, careful this does not exist anymore, we set it to true
 		# self.bNewCapacity = (gc.getDefineINT("NEW_CAPACITY") > 0)
@@ -75,7 +75,7 @@ class CvDomesticAdvisor:
 		## R&R, Robert Surcouf,  Domestic Advisor Screen - END
 		self.nTableHeight = self.nScreenHeight - 150
 		self.nNormalizedTableWidth = self.nTableWidth
-		
+
 		self.iButtonSpacing = 80
 		self.iButtonSize = 60
 		self.iCityButtonSize = 48
@@ -88,7 +88,7 @@ class CvDomesticAdvisor:
 #VET NewCapacity - begin 2/4
 		#self.WAREHOUSE_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH - 60) / len(range(YieldTypes.YIELD_FOOD, YieldTypes.YIELD_LUXURY_GOODS+ 1))
 		if self.bNewCapacity:
-			##VET 
+			##VET
 			##self.iWareHouseW = 120
 			self.iWareHouseW = 100
 		else:
@@ -102,9 +102,9 @@ class CvDomesticAdvisor:
 
 		self.Y_EXIT = self.nScreenHeight - 36
 		self.X_EXIT = self.nScreenWidth - 30
-		
+
 		self.DEFAULT_COLUMN_WIDTH = 50
-		
+
 		self.iCurrentBuildingSubPage = 0
 		self.iCurrentYieldSubPage = 0
 
@@ -125,12 +125,12 @@ class CvDomesticAdvisor:
 		self.StateButtons = []
 		self.StatePages = []
 		self.StateWindow = []
-		
+
 		# Button generation
-		
+
 		self.GAME_FONT_STATE = -1
 		self.TERRAIN_STATE = -1
-		
+
 		self.GENERAL_STATE            = self.addButton("GeneralState",           "INTERFACE_CITY_MAP_BUTTON")
 		self.DOMESTIC_DEMAND_STATE    = self.addButton("DomesticDemandState",    "INTERFACE_DOMESTIC_DEMAND_BUTTON"  , DomesticDemandAdvisor.DomesticDemandAdvisor(self))
 		self.HAPPINESS_STATE          = self.addButton("HappinessState",         "INTERFACE_HAPPINESS_BUTTON"        , HappinessAdvisor.HappinessAdvisor(self))
@@ -144,28 +144,28 @@ class CvDomesticAdvisor:
 		self.TRADEROUTE_STATE         = self.addButton("TradeRouteState",        "INTERFACE_IMPORT_EXPORT_BUTTON")
 		self.TEACHER_STATE            = self.addButton("TeacherState",           "INTERFACE_TEACHER_LIST"            , TeacherAdvisor.TeacherAdvisor(self))
 		self.NATIVE_STATE             = self.addButton("NativeState",            "INTERFACE_NATIVE_BUTTON"           , NativeAdvisor.NativeAdvisor(self))
-		
+
 		# WTP, ray, just putting the 3 new button references in here so nobdy has to search.
 		# Domestic Demand Advisor Button: INTERFACE_DOMESTIC_DEMAND_BUTTON
 		# Happiness Advisor Button: INTERFACE_HAPPINESS_BUTTON
 		# Crime and Law Advisor Button: INTERFACE_LAW_BUTTON
-		
+
 		if (gc.getUserSettings().getDebugMaxGameFont() > 0):
 			self.GAME_FONT_STATE      = self.addButton("GameFontState",          "INTERFACE_CITY_MAP_BUTTON")
 			self.TERRAIN_STATE        = self.addButton("TerrainState",           "INTERFACE_NET_YIELD_BUTTON"        , DebugTerrainAdvisor.DebugTerrainAdvisor(self))
 			self.GameFontSet = False
-		
+
 		self.YieldPages = set([self.WAREHOUSE_STATE])
-		
-		
+
+
 		spaceForButtons = self.nScreenWidth - (self.X_EXIT - self.nScreenWidth)
 		spaceForButtons -= 150 # making room for the exit text as it's right aligned
 		spaceForEachButton = spaceForButtons // len(self.StateButtons)
 		if spaceForEachButton < self.iButtonSpacing:
 			self.iButtonSpacing = spaceForEachButton
-		
+
 		## R&R, Robert Surcouf,  Domestic Advisor Screen START
-		
+
 		# Exra left/right arrow buttons (big ones)... (2)
 		self.StateButtons.append("INTERFACE_CITY_LEFT_ARROW")
 		self.StateButtons.append("INTERFACE_CITY_RIGHT_ARROW")
@@ -174,7 +174,7 @@ class CvDomesticAdvisor:
 		#self.MAX_YIELDS_IN_A_PAGE = 19
 		#self.MAX_BUILDINGS_IN_A_PAGE = 26
 		self.MAX_BUILDINGS_IN_A_PAGE = 18
-		
+
 		self.WAREHOUSE_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH - self.iWareHouseW) / self.MAX_YIELDS_IN_A_PAGE
 		self.PRODUCTION_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / self.MAX_YIELDS_IN_A_PAGE
 		self.BUILDING_COLUMN_SIZE = (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / self.MAX_BUILDINGS_IN_A_PAGE
@@ -188,7 +188,7 @@ class CvDomesticAdvisor:
 			# set a different page to recover
 			self.CurrentState = 0
 		self.CurrentPage = 0
-		
+
 		self.RebuildArrays()
 
 		#Initialize the Lists
@@ -197,7 +197,7 @@ class CvDomesticAdvisor:
 				self.initPage(iState, 0)
 
 		self.createSubpage(self.GENERAL_STATE, 1)
-		
+
 		#GeneralState Headers
 		szListName = self.StatePages[self.GENERAL_STATE][0] + "ListBackground"
 		# Population Column
@@ -237,7 +237,7 @@ class CvDomesticAdvisor:
 #VET NewCapacity - begin 3/4
 		#screen.setTableColumnHeader( "WareHouseStateListBackground", 2, "<font=3>" + "MAX" + "</font>", 60 )
 		## R&R, Robert Surcouf,  Domestic Advisor Screen START
-		#### old VET 
+		#### old VET
 		####screen.setTableColumnHeader( "WareHouseStateListBackground", 2, "<font=3>" + "MAX" + "</font>", self.iWareHouseW )
 		## R&R, Robert Surcouf,  Domestic Advisor Screen END
 #VET NewCapacity - begin 3/4
@@ -246,10 +246,10 @@ class CvDomesticAdvisor:
 			iPage = iYield // self.MAX_YIELDS_IN_A_PAGE
 			self.createSubpage(self.WAREHOUSE_STATE, iPage)
 			screen.setTableColumnHeader( self.StatePages[self.WAREHOUSE_STATE][iPage] + "ListBackground", iYieldOnPage + 3, "<font=2> " + (u" %c" % gc.getYieldInfo(iYield).getChar()) + "</font>", (self.WAREHOUSE_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )
-		
+
 		for PageName in self.StatePages[self.WAREHOUSE_STATE]:
 			screen.setTableColumnHeader( PageName + "ListBackground", 2, "<font=2>" + "MAX" + "</font>", self.iWareHouseW)
-		
+
 		# Headers for pages showing yields
 		for iState in [self.PRODUCTION_STATE, self.IMPORTEXPORT_STATE, self.TOTAL_PRODUCTION_STATE]: # total production page - Nightinggale
 			self.YieldPages.add(iState)
@@ -265,19 +265,19 @@ class CvDomesticAdvisor:
 				iBuildingOnPage = (iSpecial-1) % self.MAX_BUILDINGS_IN_A_PAGE
 				iPage = (iSpecial-1) // self.MAX_BUILDINGS_IN_A_PAGE
 				self.createSubpage(self.BUILDING_STATE, iPage)
-				
+
 				if iSpecial == SpecialBuildingTypes.SPECIALBUILDING_WHALE_OIL:
-					screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getYieldInfo(YieldTypes.YIELD_WHALE_OIL).getChar()) + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )				
+					screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getYieldInfo(YieldTypes.YIELD_WHALE_OIL).getChar()) + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )
 				else:
 					screen.setTableColumnHeader( self.StatePages[self.BUILDING_STATE][iPage] + "ListBackground", iBuildingOnPage + 2, "<font=2> " + (u" %c" %  gc.getSpecialBuildingInfo(iSpecial).getChar())         + "</font>", (self.BUILDING_COLUMN_SIZE * self.nTableWidth) / self.nNormalizedTableWidth )
-	
+
 		# Citizen Headers
 		screen.setTableColumnHeader( self.StatePages[self.CITIZEN_STATE][0] + "ListBackground", 2, "<font=2>" +  localText.getText("TXT_KEY_DOMESTIC_ADVISOR_STATE_CITIZEN", ()).upper() + "</font>", self.nTableWidth * 3 / 4 )
-			
-		
+
+
 		# Draw the city list...
 		self.drawContents()
-		
+
 	def drawButtons(self):
 		screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 
@@ -295,8 +295,8 @@ class CvDomesticAdvisor:
 					## R&R, Robert Surcouf,  Domestic Advisor Screen START
 					#if (iState < len(self.StatePages)):
 					screen.setImageButton("HighlightButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_HIGHLIGHTED_BUTTON").getPath(), (self.iButtonSpacing * iState) + (self.iButtonSpacing / 2) - ((self.iButtonSize * RelativeButtonSize / 100) / 2) + (self.iButtonSize / 2), self.Y_LOWER_ROW - ((self.iButtonSize * RelativeButtonSize / 100) / 2) + (self.iButtonSize / 2), self.iButtonSize * RelativeButtonSize / 100, self.iButtonSize * RelativeButtonSize / 100, WidgetTypes.WIDGET_GENERAL, iState, -1 )
-				
-				
+
+
 		# auto-generated list creation - Nightinggale
 		# Added hardcoded button values 100 and 102
 		screen.setImageButton("MainLeftButton", ArtFileMgr.getInterfaceArtInfo(self.StateButtons[len(self.StateButtons)-2]).getPath(), 15, 20, 2*self.iButtonSize/3, 2*self.iButtonSize/3, WidgetTypes.WIDGET_GENERAL, 100, -1 )
@@ -309,7 +309,7 @@ class CvDomesticAdvisor:
 		screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 		player = gc.getPlayer(CyGame().getActivePlayer())
 		screen.moveToFront( "Background" )
-		
+
 		if self.StateWindow[self.CurrentState] != None:
 			self.StateWindow[self.CurrentState].draw()
 
@@ -341,7 +341,7 @@ class CvDomesticAdvisor:
 			self.BuildAllTransportsRow(BonusRow)
 		elif self.CurrentState == self.GAME_FONT_STATE:
 			self.drawGameFont()
-		
+
 		self.drawButtons()
 		if self.StateWindow[self.CurrentState] == None:
 			screen.show(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")
@@ -357,7 +357,7 @@ class CvDomesticAdvisor:
 		#screen.setTableText(szState + "ListBackground", 1, i, "<font=4>" + pLoopCity.getName() + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		screen.setTableText(szState + "ListBackground", 1, i, "<font=2>" + pLoopCity.getName() + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 		## R&R, Robert Surcouf,  Domestic Advisor Screen - End
-		
+
 		if(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 0):
 			# Population
 			screen.setTableInt(szState + "ListBackground", 2, i, "<font=2>" + unicode(pLoopCity.getPopulation()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
@@ -413,7 +413,7 @@ class CvDomesticAdvisor:
 				elif iNetYield == 0:
 					szText = ""
 				screen.setTableInt(szState + "ListBackground", iYield - start + 2, i, "<font=1>" + szText + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-				
+
 		elif(self.CurrentState == self.WAREHOUSE_STATE):
 #VET NewCapacity - begin 4/4
 			#screen.setTableInt("WareHouseStateListBackground", 2, i, u"<font=3><color=255,255,255>" + str(pLoopCity.getMaxYieldCapacity()) + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
@@ -456,7 +456,7 @@ class CvDomesticAdvisor:
 					if gc.getYieldInfo(iYield).isCargo() and not gc.getYieldInfo(iYield).isIgnoredForStorageCapacity(): # R&R, ray, small fix for Display
 						iProdusedYield += aiProducedYields[iYield]
 
-				#szText = u"<font=3><color=" 
+				#szText = u"<font=3><color="
 				szText = u"<font=2><color=" ## R&R, Robert Surcouf,  Domestic Advisor Screen
 				if iNetYield > iMaxYield:
 					szText += u"255,0,0"
@@ -471,7 +471,7 @@ class CvDomesticAdvisor:
 					szText += str(iProdusedYield)
 				szText += u"/" + str(iMaxYield) + u"</color></font>"
 				screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][self.CurrentPage] + "ListBackground", 2, i, szText, "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-				
+
 				for iYield in range(self.YieldStart(), self.YieldEnd()):
 					iNetYield = pLoopCity.getYieldStored(iYield)
 					szText = unicode(iNetYield)
@@ -493,7 +493,7 @@ class CvDomesticAdvisor:
 						#if (pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity() or iYield == YieldTypes.YIELD_FOOD or iYield == YieldTypes.YIELD_LUMBER or iYield == YieldTypes.YIELD_STONE):  # R&R, ray, small fix for Display
 						if ((pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity()) or bIgnoredForStorageCapacity):
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][0] + "ListBackground", iYield + 3, i, u"<font=1><color=0,255,255>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-						elif (pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity()):			
+						elif (pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity()):
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][0] + "ListBackground", iYield + 3, i, u"<font=1><color=255,255,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 						else:
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][0] + "ListBackground", iYield + 3, i, u"<font=1><color=255,0,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
@@ -501,18 +501,18 @@ class CvDomesticAdvisor:
 						#if (pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity() or iYield == YieldTypes.YIELD_FOOD or iYield == YieldTypes.YIELD_LUMBER or iYield == YieldTypes.YIELD_STONE):  # R&R, ray, small fix for Display
 						if ((pLoopCity.calculateNetYield(iYield) * 5 + pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity()) or bIgnoredForStorageCapacity):
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][1] + "ListBackground", iYield - self.MAX_YIELDS_IN_A_PAGE + 3, i, u"<font=1><color=0,255,255>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-						elif (pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity()):			
+						elif (pLoopCity.getYieldStored(iYield) <= pLoopCity.getMaxYieldCapacity()):
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][1] + "ListBackground", iYield - self.MAX_YIELDS_IN_A_PAGE + 3, i, u"<font=1><color=255,255,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 						else:
 							screen.setTableInt(self.StatePages[self.WAREHOUSE_STATE][1] + "ListBackground", iYield - self.MAX_YIELDS_IN_A_PAGE + 3, i, u"<font=1><color=255,0,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 							#screen.setTableText("WareHouseStatePage2ListBackground", iYield - self.MAX_YIELDS_IN_A_PAGE + 3, i, u"<font=1><color=255,0,0>" + szText + u"</color></font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 					## R&R, Robert Surcouf,  Domestic Advisor Screen - End
 #VET NewCapacity - end 4/4
-				
+
 		elif(self.CurrentState == self.BUILDING_STATE):
 			start = (self.MAX_BUILDINGS_IN_A_PAGE * self.CurrentPage) + 1
 			end = min((self.MAX_BUILDINGS_IN_A_PAGE * (self.CurrentPage + 1)) + 1, gc.getNumSpecialBuildingInfos()-1)
-		
+
 			for iSpecial in range(start, end):
 				if (iSpecial != SpecialBuildingTypes.SPECIALBUILDING_BELLS):
 					iIconBuilding = -1
@@ -523,7 +523,7 @@ class CvDomesticAdvisor:
 								break
 					if iIconBuilding != -1:
 						screen.setTableInt(szState + "ListBackground", iSpecial - start  + 2, i, "", gc.getBuildingInfo(iBuilding).getButton(), WidgetTypes.WIDGET_PEDIA_JUMP_TO_BUILDING, iBuilding, -1, CvUtil.FONT_LEFT_JUSTIFY )
-						
+
 		elif(self.CurrentState == self.IMPORTEXPORT_STATE):
 			start = self.YieldStart()
 			for iYield in range(start, self.YieldEnd()):
@@ -539,26 +539,26 @@ class CvDomesticAdvisor:
 
 			screen.setTableText(szState + "ListBackground", 1, i, "<font=2>" + pLoopCity.getName() + "</font>", "", WidgetTypes.WIDGET_YIELD_IMPORT_EXPORT, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			# RR - Domestic Advisor Screen - END
-			
+
 		## R&R, Robert Surcouf,  Domestic Advisor Screen START
-		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 1): 
+		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 1):
 			#Culture rate
 			screen.setTableInt(szState + "ListBackground", 2, i, "<font=3>" + unicode(pLoopCity.calculateNetYield(YieldTypes.YIELD_BELLS)) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			# Culture Level
-			
+
 			#screen.setTableText(szState + "ListBackground", 3, i, "<font=3>" + localText.getText("TXT_KEY_IMMIGRATION_BAR", (pLoopCity.getCultureLevel(),pLoopCity.getCultureThreshold(), gc.getYieldInfo(YieldTypes.YIELD_BELLS).getChar())) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			#screen.setTableText(szState + "ListBackground", 3, i, "<font=3>" + gc.getCultureLevelInfo(pLoopCity.getCultureLevel()).getTextKey()+"</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			###screen.setTableText(szState + "ListBackground", 3, i, "<font=3>" + gc.getCultureLevelInfo(pLoopCity.getCultureLevel()).getText()+"</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			screen.setTableText(szState + "ListBackground", 3, i, "<font=2>" + localText.getText("TXT_KEY_CITY_BAR_CULTURE", (pLoopCity.getCulture(pLoopCity.getOwner()),pLoopCity.getCultureThreshold(), gc.getCultureLevelInfo(pLoopCity.getCultureLevel()).getText()))+"</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-			
+
 		## R&R, Robert Surcouf,  Domestic Advisor Screen END
-		
+
 		## R&R, Robert Surcouf, Domestic Market display START
-		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 2): 
+		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 2):
 			iStartYield=1 #gc.getDefineINT("DOMESTIC_MARKET_SCREEN_START_YIELD_ID")
 			for iYield in range(iStartYield, YieldTypes.YIELD_LUXURY_GOODS + 1):
 				#screen.setTableInt("GeneralStatePage3ListBackground", iYield-iStartYield + 2, i, "<font=2>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "/"+ "<color=0,255,0>" +  unicode(pLoopCity.getYieldDemand(iYield)) + "</color>" "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-				# CBM 0.8.020 display of quantity available in city - start 
+				# CBM 0.8.020 display of quantity available in city - start
 				if (pLoopCity.getYieldStored(iYield)<pLoopCity.getYieldDemand(iYield)):
 					# CBM - screen.setTableInt(szState + "ListBackground", iYield-iStartYield + 2, i, "<font=2>" + unicode(pLoopCity.getYieldBuyPrice(iYield)) + "/"+ "<color=255,0,0>" +  unicode(pLoopCity.getYieldDemand(iYield)) + "</color>" "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 					# CBM added differentiation between no stock and not enough stock - start
@@ -576,7 +576,7 @@ class CvDomesticAdvisor:
 				# CBM 0.8.020 display of quantity available in city - end
 		## R&R, Robert Surcouf, Domestic Market display End
 
-		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 3): 
+		elif(self.CurrentState == self.GENERAL_STATE and self.CurrentPage == 3):
 			# Total Happiness
 			if (pLoopCity.getCityHappiness() > pLoopCity.getCityUnHappiness() ):
 				screen.setTableInt(szState + "ListBackground", 2, i, "<font=2>" + "<color=0,255,0>" +unicode(pLoopCity.getCityHappiness() - pLoopCity.getCityUnHappiness()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
@@ -613,7 +613,7 @@ class CvDomesticAdvisor:
 			screen.setTableInt(szState + "ListBackground", 17, i, "<font=2>" + unicode(pLoopCity.getUnhappinessFromMissingDefense()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			# Unhappiness from Tax Rate
 			screen.setTableInt(szState + "ListBackground", 18, i, "<font=2>" + unicode(pLoopCity.getUnhappinessFromTaxRate()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-		
+
 	def updateCitizenTable(self, pCity, iRow):
 		screen = CyGInterfaceScreen("DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR)
 
@@ -640,7 +640,7 @@ class CvDomesticAdvisor:
 					#screen.setTextAt( szButtonName, "CitizenPanel" + str(iRow),  u"<font=2>" + u"%c" %(CyGame().getSymbolID(FontSymbols.ANGRY_POP_CHAR))+ "</font>", CvUtil.FONT_RIGHT_JUSTIFY, iCitizen * iSpace, self.iCityButtonSize / 5, -0.3, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 					screen.setImageButtonAt(szButtonName, "CitizenPanel" + str(iRow), gc.getUnitInfo(iType).getButton(), iCitizen * iSpace, self.iCityButtonSize / 5, self.iCityButtonSize * 4 / 5, self.iCityButtonSize * 4 / 5, WidgetTypes.WIDGET_GENERAL, -1, -1)
 					screen.setTextAt("CitizenProfession" + str(iRow) + "-" + str(iCitizen), "CitizenPanel" + str(iRow), u"<font=2>" + u"%c" %(CyGame().getSymbolID(FontSymbols.ANGRY_POP_CHAR))+ "</font>", CvUtil.FONT_RIGHT_JUSTIFY, iCitizen * iSpace +  (self.iCityButtonSize * 2 / 4) + self.iCityButtonSize/2, self.iCityButtonSize / 5, -0.3, FontTypes.TITLE_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1 )#(iCitizen * iSpace) + (self.iCityButtonSize * 2 / 4), 0, WidgetTypes.WIDGET_GENERAL, -1, -1 )
-				
+
 				# R&R, Robert Surcouf, Rebellion Fix END
 	def updateRouteTable(self, pRoute, iRoute, iRow):
 		screen = CyGInterfaceScreen("DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR)
@@ -665,7 +665,7 @@ class CvDomesticAdvisor:
 				iSpace = (self.nTableWidth - 390) / len(self.Transports)
 				if iSpace > self.iCityButtonSize:
 					iSpace = self.iCityButtonSize
-						
+
 			for iSelectionGroupIndex in range(len(self.Transports) -1, -1, -1):
 				SelectionGroup = self.Transports[iSelectionGroupIndex]
 
@@ -681,7 +681,7 @@ class CvDomesticAdvisor:
 					SelectedTransportID = self.selectedSelectionGroupHeadUnitID
 					if (SelectedTransportID != -1):
 						if (SelectedTransportID == SelectionGroup.getHeadUnit().getID()):
-						
+
 							if (self.RouteValidity[iSelectionGroupIndex][iRow]):
 								if (SelectionGroup.isAssignedTradeRoute(pRoute.getID())):
 									screen.setState(szButtonName, True)
@@ -689,17 +689,17 @@ class CvDomesticAdvisor:
 								else:
 									screen.setButtonGFC("RouteToggle" + str(iRow), "+", "", 0, 0, 60, 30, WidgetTypes.WIDGET_ASSIGN_TRADE_ROUTE, self.selectedSelectionGroupHeadUnitID, iRoute, ButtonStyles.BUTTON_STYLE_STANDARD )
 								screen.attachControlToTableCell("RouteToggle" + str(iRow), szState + "ListBackground", iRow, 3 )
-	
+
 	# total production page - start - Nightinggale
 	def updateTotalProduction(self):
 		screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 
 		if self.CurrentState != self.TOTAL_PRODUCTION_STATE:
 			return
-		
+
 		szState = self.StatePages[self.CurrentState][self.CurrentPage]
 		start = self.YieldStart()
-		
+
 		for i in range(0,2):
 			sign = ""
 			line_name = "Warehouse"
@@ -723,7 +723,7 @@ class CvDomesticAdvisor:
 					szText = localText.getText("TXT_KEY_COLOR_NEGATIVE", ()) + szText + localText.getText("TXT_KEY_COLOR_REVERT", ())
 				elif iNetYield == 0:
 					szText = ""
-				
+
 				screen.setTableInt(szState + "ListBackground", iYield - start + 2, i, "<font=1>" + szText + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 	# total production page - end - Nightinggale
 
@@ -761,45 +761,55 @@ class CvDomesticAdvisor:
 						if (SelectedTransportID == SelectionGroup.getHeadUnit().getID()):
 							screen.setState(szButtonName, True)
 							SelectionState = True
-							
+
 	def RebuildArrays (self):
 		self.NativeCities = []
-		
+
 		if 'stateWindow' in dir(self):
-			for i in len(self.StateWindow):
+			for i in range(len(self.StateWindow)):
 				if self.StateWindow[i] != None:
 					self.StateWindow[i].setDirty()
-		
-		#Get a list of the Players Cities
+
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		self.Cities = []
 		(pLoopCity, iter) = player.firstCity(False)
-		while(pLoopCity):
+		while (pLoopCity):
 			self.Cities.append(pLoopCity)
 			(pLoopCity, iter) = player.nextCity(iter, False)
 
+		# All possible trade routes
 		self.Routes = []
 		for iRoute in range(player.getNumTradeRoutes()):
 			self.Routes.append(player.getTradeRouteByIndex(iRoute))
 
+		# Transports (selection groups that can assign trade routes)
 		self.Transports = []
 		SelectionGroup, Iterator = player.firstSelectionGroup(False)
+		# Note: This is just a check for being able to service a trade route, no pathfinding at this stage
 		while (SelectionGroup != None):
 			if (SelectionGroup.canAssignTradeRoute(-1, False)):
 				self.Transports.append(SelectionGroup)
 			SelectionGroup, Iterator = player.nextSelectionGroup(Iterator, False)
 
+		# Route validity matrix
 		self.RouteValidity = []
 		for iTransport in range(len(self.Transports)):
 			Transport = self.Transports[iTransport]
+
+			# Build a fast lookup of viable route IDs for this transport
+			viable_ids = {}
+
+			pHeadUnit = Transport.getHeadUnit()
+			if pHeadUnit != None:
+				viable_routes = player.getViableTradeRoutes(pHeadUnit)
+				for r in viable_routes:
+					viable_ids[r.getID()] = 1
+
 			RouteValidArray = []
-			bReusePath = False
 			for Route in self.Routes:
-				RouteValidArray.append(Transport.canAssignTradeRoute(Route.getID(), bReusePath))
-				bReusePath = True
+				RouteValidArray.append(Route.getID() in viable_ids)
 			self.RouteValidity.append(RouteValidArray)
-		
-		
+
 	def GetNativeCities(self):
 		# R&R, Robert Surcouf,  Domestic Advisor Screen - Start
 		if len(self.NativeCities) > 0:
@@ -814,7 +824,7 @@ class CvDomesticAdvisor:
 					(pLoopCity, iter) = ePlayer.nextCity(iter, False)
 		## R&R, Robert Surcouf,  Domestic Advisor Screen - End
 		return self.NativeCities
-		
+
 	def RebuildTransportTable (self):
 		if self.CurrentState != self.TRADEROUTE_STATE:
 			return
@@ -823,7 +833,7 @@ class CvDomesticAdvisor:
 
 		szStateName = self.StatePages[self.TRADEROUTE_STATE][0]
 		screen.setImageButton( szStateName + "Button", ArtFileMgr.getInterfaceArtInfo(self.StateButtons[self.TRADEROUTE_STATE]).getPath(), (self.iButtonSpacing * 5) + (self.iButtonSpacing / 2), self.Y_LOWER_ROW, self.iButtonSize, self.iButtonSize, WidgetTypes.WIDGET_GENERAL, 5, -1 )
-		
+
 		screen.addTableControlGFC( szStateName + "ListBackground", 19, (self.nScreenWidth - self.nTableWidth) / 2, 60, self.nTableWidth, self.nTableHeight, True, False, self.iCityButtonSize, self.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
 		screen.enableSelect( szStateName + "ListBackground", True )
 		screen.enableSort( szStateName + "ListBackground" )
@@ -831,12 +841,12 @@ class CvDomesticAdvisor:
 		screen.hide( szStateName + "ListBackground")
 		screen.setTableColumnHeader( szStateName + "ListBackground", 0, "", (30 * self.nTableWidth) / self.nNormalizedTableWidth )
 		screen.setTableColumnHeader( szStateName + "ListBackground", 1, "<font=2>" + localText.getText("TXT_KEY_DOMESTIC_ADVISOR_NAME", ()) + "</font>", (221 * self.nTableWidth) / self.nNormalizedTableWidth )
-		
-		
+
+
 	def RebuildRouteTable (self):
 		if self.CurrentState != self.TRADEROUTE_STATE:
 			return
-	
+
 		player = gc.getPlayer(gc.getGame().getActivePlayer())
 		screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 
@@ -861,17 +871,17 @@ class CvDomesticAdvisor:
 
 		screen.appendTableRow( szTableName )
 		screen.setTableRowHeight(szTableName, len(self.Routes), self.ROW_HIGHT)
-	
-	
+
+
 	# Will handle the input for this screen...
 	def handleInput (self, inputClass):
 		' Calls function mapped in DomesticAdvisorInputMap'
-		
+
 		if self.StateWindow[self.CurrentState] != None:
 			returnVal = self.StateWindow[self.CurrentState].handleInput(inputClass)
 			if returnVal != -1:
 				return returnVal
-		
+
 		screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 		if ( inputClass.getNotifyCode() == NotifyCode.NOTIFY_LISTBOX_ITEM_SELECTED ):
 			## R&R, Robert Surcouf,  Domestic Advisor Screen START
@@ -917,7 +927,7 @@ class CvDomesticAdvisor:
 							self.StateWindow[self.CurrentState].nextPage()
 					else:
 						new_page = self.CurrentPage + iData - 101
-						
+
 						if (new_page >= 0 and new_page < len(self.StatePages[self.CurrentState])):
 							screen.hide(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")
 							self.CurrentPage = new_page
@@ -947,7 +957,7 @@ class CvDomesticAdvisor:
 			player = gc.getPlayer(gc.getGame().getActivePlayer())
 
 			self.RebuildArrays()
-			
+
 			for iCity in range(len(self.Cities)):
 				self.updateCityTable(self.Cities[iCity], iCity)
 
@@ -956,13 +966,13 @@ class CvDomesticAdvisor:
 			self.RebuildTransportTable()
 
 			self.drawContents()
-			
+
 	def getWidgetHelp(self, argsList):
 		if self.StateWindow[self.CurrentState] != None:
 			returnVal = self.StateWindow[self.CurrentState].getWidgetHelp(argsList)
 			if returnVal != None:
 				return returnVal
-	
+
 		iScreen, eWidgetType, iData1, iData2, bOption = argsList
 
 		if eWidgetType == WidgetTypes.WIDGET_GENERAL:
@@ -1007,20 +1017,20 @@ class CvDomesticAdvisor:
 				return "DEBUG: terrain count"
 		if eWidgetType == WidgetTypes.WIDGET_MISSION_CHAR:
 			return gc.getPlayer(iData1).getCivilizationAdjective(0)
-			
+
 	## R&R, Robert Surcouf,  Domestic Advisor Screen - Start
 	def getGeneralStateColumnSize(self, iNum):
-		return (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / iNum 
+		return (self.nTableWidth - self.CITY_NAME_COLUMN_WIDTH) / iNum
 	## R&R, Robert Surcouf,  Domestic Advisor Screen - End
-	
+
 	# two small functions to get the yields on the current page - Nightinggale
 	def YieldStart(self):
 		return self.MAX_YIELDS_IN_A_PAGE * self.CurrentPage
-		
+
 	def YieldEnd(self):
 		#return min((self.MAX_YIELDS_IN_A_PAGE * (self.CurrentPage + 1)) - 1, YieldTypes.YIELD_LUXURY_GOODS + 1)
 		return min((self.MAX_YIELDS_IN_A_PAGE * (self.CurrentPage + 1)), YieldTypes.YIELD_LUXURY_GOODS + 1)
-	
+
 	# auto-generated list creation - start - Nightinggale
 	def addButton(self, state_type, state_button, state_class = None):
 		index = len(self.StatePages)
@@ -1028,14 +1038,14 @@ class CvDomesticAdvisor:
 		self.StatePages.append([state_type])
 		self.StateWindow.append(state_class)
 		return index
-		
+
 	def createSubpage(self, iState, iPage):
 		length = len(self.StatePages[iState])
 		if (length <= iPage):
 			self.StatePages[iState].append(self.StatePages[iState][0] + "Page" + str(length))
 			self.initPage(iState, length)
 			self.createSubpage(iState, iPage)
-			
+
 	def initPage(self, iState, iPage):
 		if iState != self.TRADEROUTE_STATE and iState != self.NATIVE_STATE:
 			screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
@@ -1052,22 +1062,22 @@ class CvDomesticAdvisor:
 
 			# total production page - start - Nightinggale
 			num_cities = 2
-			
+
 			if iState != self.TOTAL_PRODUCTION_STATE:
 				num_cities = len(self.Cities)
 				screen.enableSelect(szStateName, True)
 				screen.enableSort(szStateName)
-			
+
 			for iCity in range(num_cities):
 			# for iCity in range(len(self.Cities)):
 			# total production page - end - Nightinggale
 				screen.appendTableRow(szStateName)
 				screen.setTableRowHeight(szStateName, iCity, self.ROW_HIGHT)
-	# auto-generated list creation - end - Nightinggale 
-	
+	# auto-generated list creation - end - Nightinggale
+
 	def drawGameFont(self):
 		szStateName = self.StatePages[self.GAME_FONT_STATE][0] + "ListBackground"
-		
+
 		if self.GameFontSet == False:
 			screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 			screen.addTableControlGFC(szStateName, 5, (self.nScreenWidth - self.nTableWidth) / 2, 60, self.nTableWidth, self.nTableHeight, True, False, self.iCityButtonSize, self.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
@@ -1076,7 +1086,7 @@ class CvDomesticAdvisor:
 			screen.setTableColumnHeader( szStateName, 2, "<font=2>Big</font>", 56)
 			screen.setTableColumnHeader( szStateName, 3, "<font=2>Button</font>", 56)
 			screen.setTableColumnHeader( szStateName, 4, "<font=2>Type</font>", 500)
-			
+
 			# load the max value from UserSettings
 			iMax = gc.getUserSettings().getDebugMaxGameFont() - 8483 + 1
 			if iMax <= 0:
@@ -1090,7 +1100,7 @@ class CvDomesticAdvisor:
 				screen.setTableInt(szStateName, 2, iLine , "<font=4>" + (u" %c" %  (iID)) + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 				infoPointer = self.getInfoPointerFromGameFont(iID)
-				
+
 				if infoPointer != None:
 					if isinstance(infoPointer, str):
 						screen.setTableInt(szStateName, 4, iLine , "<font=2>" + infoPointer + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
@@ -1100,24 +1110,24 @@ class CvDomesticAdvisor:
 							screen.setTableRowHeight(szStateName, iLine, self.ROW_HIGHT)
 							screen.setTableText(szStateName, 3, iLine, "", szButton, WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY);
 						screen.setTableInt(szStateName, 4, iLine , "<font=2>" + infoPointer.getType() + "<font/>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
-					
-				
+
+
 	def getInfoPointerFromGameFont(self, iIndex):
 		for iYieldIndex in range(gc.getNumYieldInfos()):
 			infoPointer = gc.getYieldInfo(iYieldIndex)
 			if infoPointer.getChar() == iIndex:
 				return infoPointer
-		
+
 		for iBuildingIndex in range(gc.getNumSpecialBuildingInfos()):
 			infoPointer = gc.getSpecialBuildingInfo(iBuildingIndex)
 			if infoPointer.getChar() == iIndex:
 				return infoPointer
-		
+
 		for iBonusIndex in range(gc.getNumBonusInfos()):
 			infoPointer = gc.getBonusInfo(iBonusIndex)
 			if infoPointer.getChar() == iIndex:
 				return infoPointer
-			
+
 		for iFatherIndex in range(gc.getNumFatherPointInfos()):
 			infoPointer = gc.getFatherPointInfo(iFatherIndex)
 			if infoPointer.getChar() == iIndex:
@@ -1127,31 +1137,31 @@ class CvDomesticAdvisor:
 			infoPointer = gc.getCivilizationInfo(iCiv)
 			if infoPointer.getMissionaryChar() == iIndex:
 				return infoPointer
-			
+
 		for iSymbol in range(FontSymbols.MAX_NUM_SYMBOLS):
 			if iIndex == gc.getSymbolID(iSymbol):
 				return gc.getSymbolName(iSymbol)
-		
+
 		return None
-	
+
 	def maxNumGameFontID(self):
 		iMax = FontSymbols.MAX_NUM_SYMBOLS + CyGame().getSymbolID(FontSymbols.HAPPY_CHAR) + 5
-		
+
 		for iYieldIndex in range(gc.getNumYieldInfos()):
 			infoPointer = gc.getYieldInfo(iYieldIndex)
 			if infoPointer.getChar() > iMax:
 				iMax = infoPointer.getChar()
-		
+
 		for iBuildingIndex in range(gc.getNumSpecialBuildingInfos()):
 			infoPointer = gc.getSpecialBuildingInfo(iBuildingIndex)
 			if infoPointer.getChar() > iMax:
 				iMax = infoPointer.getChar()
-		
+
 		for iBonusIndex in range(gc.getNumBonusInfos()):
 			infoPointer = gc.getBonusInfo(iBonusIndex)
 			if infoPointer.getChar() > iMax:
 				iMax = infoPointer.getChar()
-			
+
 		for iFatherIndex in range(gc.getNumFatherPointInfos()):
 			infoPointer = gc.getFatherPointInfo(iFatherIndex)
 			if infoPointer.getChar() > iMax:
@@ -1162,14 +1172,14 @@ class CvDomesticAdvisor:
 			if infoPointer.getMissionaryChar() > iMax:
 				iMax = infoPointer.getMissionaryChar()
 		return iMax
-		
-	
+
+
 	def createTable(self, szName):
 		self.getScreen().addTableControlGFC( szName, 7, (self.nScreenWidth - self.nTableWidth) / 2, 60, self.nTableWidth, self.nTableHeight, True, False, self.iCityButtonSize, self.iCityButtonSize, TableStyles.TABLE_STYLE_STANDARD )
 		self.getScreen().setStyle( szName, "Table_StandardCiv_Style" )
 
 	def getPlayer(self):
 		return gc.getPlayer(gc.getGame().getActivePlayer())
-	
+
 	def getScreen(self):
 		return CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )

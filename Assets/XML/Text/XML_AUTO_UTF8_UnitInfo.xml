@@ -82,6 +82,12 @@
 		<Russian>Анаконда</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_UNIT_ANACONDA_PEDIA</Tag>
+		<English>The anaconda, native to South America, is the world's largest snake. Females average 32 kg with males a quarter that size.[NEWLINE]A strong swimmer, it preys on other aquatic animals.[NEWLINE]In 1684 it was described by Andreas Cleyer as a gigantic snake that kills large animals by coiling around their bodies and crushing their bones.</English>
+		<French></French>
+		<German></German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNIT_BARLEY</Tag>
 		<English>Barley</English>
 		<French>
@@ -236,11 +242,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BIG_COASTAL_SHIP_PEDIA</Tag>
-		<English>TXT_KEY_UNIT_COASTAL_SHIPS_PEDIA</English>
+		<English>A ship can carry a boat, but not vice versa. That's the simplest way to define a ship. (though modern submarines are called boats.)[NEWLINE]In the 18th century ships began to be classified by sail rigging rather than by hull type. Smaller ships, often clinker built with overlapping planks, were cheaper to build for coastal and river trading. Carvel construction, where planks attach directly to the frame, was better for blue water sailing. For one thing, it was strong enough to let ships mount cannons.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BIG_COASTAL_SHIP_STRATEGY</Tag>
-		<English>TXT_KEY_UNIT_COASTAL_TRANSPORT_STRATEGY</English>
+		<English>The big coastal ship has three cargo slots for goods or units. Small coastal ships are cheaper to build but have only two cargo slots. Both can navigate rivers and lakes.</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BISHOP</Tag>
@@ -273,7 +279,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BISHOP_PEDIA</Tag>
-		<English>It is the responsibility of a bishop to act as spiritual leader of a colony, guiding and supporting other preachers and priests to bring true Christian beliefs to the citizens, converting the savages and ensuring that no soul abandons the righteous path of enlightment. Bringing a bishop to your colonies will dramatically increase immigration from the Old World.</English>
+		<English>It is the responsibility of a bishop to act as spiritual leader of a colony, guiding and supporting other preachers and priests to bring true Christian beliefs to the citizens, converting the savages and ensuring that no soul abandons the righteous path of enlightment. Bringing a bishop to your colonies will dramatically increase immigration from the Old World. The Archbishop will naturally expect you to make a generous donation to the Church.</English>
 		<French>Un évêque est celui qui a autorité apostolique sur une Église chrétienne particulière. Les évêques assument à ce titre la succession des apôtres qui les ont établis à la tête d'une communauté chrétienne d'un territoire défini. Dans le langage juridique du droit canonique il est appelé ordinaire local. Chaque évêque d'aujourd'hui a été ordonné par un ou plusieurs évêques issus d'une chaîne d'ordonnateurs qui, théoriquement, remonte dans le temps jusqu'à un des apôtres du Christ. C'est ce qu'on appelle la succession apostolique.</French>
 		<German>Es ist die Aufgabe und die Verantwortung des Bischofs als geistige Führung in den Kolonien, die Prediger anzuleiten und in ihrer Aufgabe zu unterstützen, die Gläubigen zu führen, die Heiden zu bekehren und sicherzustellen, dass niemand vom Pfad der Gerechten abkommt. Einen Bischof in die Kolonien zu bringen, ist eine sichere Methode, dauerhaft die Zahl der Auswanderer wesentlich zu erhöhen.</German>
 	</TEXT>
@@ -7160,3 +7166,4 @@
 		<German>[COLOR_UNIT_TEXT]Feindselige Ureinwohner[COLOR_REVERT] können nicht erworben werden.[NEWLINE]Sie sind dem Spieler gegenüber feindlich gesonnen und meist nur in [COLOR_HIGHLIGHT_TEXT]feindseligen Ureinwohnerdörfern[COLOR_REVERT] zu finden.[NEWLINE]Sie werden ihr Dorf bis zum Tod verteidigen und greifen den Spieler an, wenn dieses zerstört wird.</German>
 	</TEXT>
 </Civ4GameText>
+

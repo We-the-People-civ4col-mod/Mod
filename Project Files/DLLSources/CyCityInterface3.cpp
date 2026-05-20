@@ -66,6 +66,7 @@ void CyCityPythonInterface3(python::class_<CyCity>& x)
 		.def("changeYieldStored", &CyCity::changeYieldStored, "void (int YieldTypes, int)")
 		.def("getYieldRushed", &CyCity::getYieldRushed, "int /*YieldTypes*/ ()")
 		.def("calculateNetYield", &CyCity::calculateNetYield, "int (int /*YieldTypes*/)")
+		.def("calculateNetYieldList", &CyCity::calculateNetYieldList, "list ()")
 		.def("calculateActualYieldProduced", &CyCity::calculateActualYieldProduced, "int (int /*YieldTypes*/)")
 		.def("calculateActualYieldConsumed", &CyCity::calculateActualYieldConsumed, "int (int /*YieldTypes*/)")
 		

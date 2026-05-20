@@ -195,7 +195,7 @@
 		<German>Laden</German>
 		<Italian>Imbarca</Italian>
 		<Spanish>Embarcar</Spanish>
-		<Russian>Загрузить (где?)</Russian>
+		<Russian>Загрузить</Russian> <!--World Builder-->
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_BUILD</Tag>
@@ -437,6 +437,11 @@
 		<Italian>[ICON_BULLET]Le unità che difendono ottengono il %D1%% di forza</Italian>
 		<Spanish>[ICON_BULLET]Las unidades defensoras obtienen un %D1%% de fuerza</Spanish>
 		<Russian>[ICON_BULLET]Обороняющиеся юниты получают %D1%% к силе</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_DAMAGE</Tag>
+		<English>[ICON_BULLET]Units takes [COLOR_RED]%d1%% damage[COLOR_REVERT] each turn</English>
+		<Russian>[ICON_BULLET]Каждый ход получает [COLOR_RED]урон[COLOR_REVERT] в [COLOR_RED]%d1%%[COLOR_REVERT] от общего здоровья</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_IMPASSABLE</Tag>
@@ -925,7 +930,7 @@
 		<Spanish>[ICON_BULLET]Empieza con[SPACE]</Spanish>
 		<Russian>[ICON_BULLET]Начинает с[SPACE]</Russian>
 	</TEXT>
-<!-- ZorG. colopedia. which building is required to build a unit. START --> 
+<!-- ZorG. colopedia. which building is required to build a unit. START -->
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REQUIRES_STRING</Tag>
 		<English>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Text[COLOR_REVERT]</English>
@@ -935,7 +940,7 @@
 		<Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Requiere %s1_Text[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET][COLOR_WARNING_TEXT]Требует наличия : %s1_Text[COLOR_REVERT]</Russian>
 	</TEXT>
-<!-- ZorG. colopedia. which building is required to build a unit. END --> 
+<!-- ZorG. colopedia. which building is required to build a unit. END -->
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TURNS</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turn:turns][COLOR_REVERT]</English>
@@ -3134,7 +3139,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WINS_VICTORY</Tag>
-		<!-- WARNING: the exe crashes when displaying victory if this line has non-Latin characters, such as Russian. No known workaround known at this time --> 
+		<!-- WARNING: the exe crashes when displaying victory if this line has non-Latin characters, such as Russian. No known workaround known at this time -->
 		<English>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] wins by %s2_VctryName Victory!!!!</English>
 		<French>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] remporte une victoire de type : %s2_VctryName !</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] trägt den Sieg in der Kategorie %s2_VctryName davon!!!!</German>
@@ -9261,6 +9266,7 @@
 		<German>Speichern</German>
 		<Italian>Salva</Italian>
 		<Spanish>Guardar</Spanish>
+		<Russian>Сохранить</Russian><!--World Builder-->
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DECLARE_WAR_YES</Tag>

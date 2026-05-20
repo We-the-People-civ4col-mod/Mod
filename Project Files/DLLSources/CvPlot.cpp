@@ -1,4 +1,4 @@
-﻿// plot.cpp
+// plot.cpp
 
 #include "CvGameCoreDLL.h"
 #include "CvPlot.h"
@@ -26,6 +26,7 @@
 #include "CyArgsList.h"
 #include "CvDLLPythonIFaceBase.h"
 #include "CvGameTextMgr.h"
+#include "EXE/EXE_Plot.h"
 
 #define STANDARD_MINIMAP_ALPHA		(0.6f)
 
@@ -316,7 +317,7 @@ void CvPlot::doTurn()
 		PlayerTypes BarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
 
 		//remove Animal Goodies in Native Territory
-		if (getOwner() != NO_PLAYER)
+		if (getOwnerINLINE() != NO_PLAYER)
 		{
 			removeGoody();
 		}
@@ -385,7 +386,7 @@ void CvPlot::doTurn()
 		PlayerTypes BarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
 
 		//remove Hostile Native Goodies in Native Territory
-		if (getOwner() != NO_PLAYER)
+		if (getOwnerINLINE() != NO_PLAYER)
 		{
 			removeGoody();
 		}
@@ -416,7 +417,7 @@ void CvPlot::doTurn()
 		PlayerTypes BarbarianPlayerType = GC.getGameINLINE().getBarbarianPlayer();
 
 		//remove Raider Goodies in Native Territory
-		if (getOwner() != NO_PLAYER)
+		if (getOwnerINLINE() != NO_PLAYER)
 		{
 			removeGoody();
 		}
@@ -1588,7 +1589,7 @@ void CvPlot::changeAdjacentSight(TeamTypes eTeam, int iRange, bool bIncrement, C
 
 	if(pUnit != NULL)
 	{
-		if(!pUnit->isOnMap())
+		if(!pUnit->isOnMap_())
 		{
 			return;
 		}
@@ -1847,7 +1848,7 @@ void CvPlot::updateSight(bool bIncrement)
 	for (CLLNode<IDInfo>* pUnitNode = headUnitNode(); pUnitNode != NULL; pUnitNode = nextUnitNode(pUnitNode))
 	{
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-		if (pLoopUnit != NULL && pLoopUnit->isOnMap())
+		if (pLoopUnit != NULL && pLoopUnit->isOnMap_())
 		{
 			changeAdjacentSight(pLoopUnit->getTeam(), pLoopUnit->visibilityRange(), bIncrement, pLoopUnit);
 		}
@@ -2402,32 +2403,35 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 					return false;
 				}
 			}
-			//R&R, ray, preventing exploit to build Monasteries or Forts directly next to a Native Village in own culture - START
-			//still allowing to build Monasteries and Forts next to own cities
+			// R&R, ray, preventing exploit to build Monasteries or Forts directly next to a Native Village in own culture - START
+			// WTP: allow Monasteries next to Native Villages, but keep blocking Forts and other OutsideBorders improvements
 			else
 			{
 				if (GC.getImprovementInfo(eImprovement).isOutsideBorders())
 				{
-					bool bFoundNeighbourCity = false;
-					for (int i = 0; i < NUM_DIRECTION_TYPES; ++i)
+					if (eImprovement != GC.getInfoTypeForString("IMPROVEMENT_MONASTERY"))
 					{
-						const CvPlot* const pLoopPlot = ::plotDirection(getX_INLINE(), getY_INLINE(), (DirectionTypes) i);
-						if (pLoopPlot != NULL && pLoopPlot->getTeam() != GET_PLAYER(ePlayer).getTeam())
+						bool bFoundNeighbourCity = false;
+						for (int i = 0; i < NUM_DIRECTION_TYPES; ++i)
 						{
-							if (pLoopPlot->isCity())
+							const CvPlot* const pLoopPlot = ::plotDirection(getX_INLINE(), getY_INLINE(), (DirectionTypes) i);
+							if (pLoopPlot != NULL && pLoopPlot->getTeam() != GET_PLAYER(ePlayer).getTeam())
 							{
-								bFoundNeighbourCity = true;
-								break;
+								if (pLoopPlot->isCity())
+								{
+									bFoundNeighbourCity = true;
+									break;
+								}
 							}
 						}
-					}
-					if (bFoundNeighbourCity)
-					{
-						return false;
+						if (bFoundNeighbourCity)
+						{
+							return false;
+						}
 					}
 				}
 			}
-			//R&R, ray, preventing exploit to build directly next to a Native Village in own culture - END
+			// R&R, ray, preventing exploit to build directly next to a Native Village in own culture - END
 
 
 			//R&R, vetiarvind, Super Forts begin *AI_worker* - prevent workers from two different players from building a fort in the same plot
@@ -2439,7 +2443,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 				while (pUnitNode != NULL)
 				{
 					CvUnit* const pLoopUnit = getUnitNodeLoop(pUnitNode);
-					if (pLoopUnit != NULL && pLoopUnit->getOwner() != ePlayer)
+					if (pLoopUnit != NULL && pLoopUnit->getOwnerINLINE() != ePlayer)
 					{
 						if(pLoopUnit->getBuildType() != NO_BUILD)
 						{
@@ -2468,7 +2472,7 @@ bool CvPlot::canBuild(BuildTypes eBuild, PlayerTypes ePlayer, bool bTestVisible)
 	// for now I additionally also hardcode eBuild (safest)
 	// or can I safely use NO_Route from eRoute
 	// BuildTypes BuildTypesToCompare = (BuildTypes) BUILD_REMOVE_ROAD;
-	if (eRoute == NO_ROUTE && eBuild == 3)
+	if (eRoute == NO_ROUTE && eBuild == BUILD_REMOVE_ROAD)
 	{
 		// never allow this to AI
 		if (!GET_PLAYER(ePlayer).isHuman())
@@ -2765,7 +2769,7 @@ CvUnit* CvPlot::getBestDefender(PlayerTypes eOwner, PlayerTypes eAttackingPlayer
 	{
 		pLoopUnit = getUnitNodeLoop(pUnitNode);
 
-		if (pLoopUnit != NULL && pLoopUnit->isOnMap() && !pLoopUnit->isCargo())
+		if (pLoopUnit != NULL && pLoopUnit->isOnMap_() && !pLoopUnit->isCargo())
 		{
 			if ((eOwner == NO_PLAYER) || (pLoopUnit->getOwnerINLINE() == eOwner))
 			{
@@ -2807,7 +2811,7 @@ bool CvPlot::hasDefender(bool bCheckCanAttack, PlayerTypes eOwner, PlayerTypes e
 	{
 		pLoopUnit = getUnitNodeLoop(pUnitNode);
 
-		if (pLoopUnit != NULL && pLoopUnit->isOnMap() && !pLoopUnit->isCargo())
+		if (pLoopUnit != NULL && pLoopUnit->isOnMap_() && !pLoopUnit->isCargo())
 		{
 			if ((eOwner == NO_PLAYER) || (pLoopUnit->getOwnerINLINE() == eOwner))
 			{
@@ -3475,15 +3479,29 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 
 	if (!bAssumeRevealed && !isRevealed(pUnit->getTeam(), false))
 	{
-		if (pUnit->getDomainType() == DOMAIN_SEA)
-		{
-			// Note: Not strictly true due to the introduction of storms which can
-			// "drain" all movement points
-			return GLOBAL_DEFINE_MOVE_DENOMINATOR;
+		// For unrevealed plots we have to return the worst case movement cost
+		if (USE_CLASSIC_MOVEMENT_SYSTEM)
+		{ 
+			if (pUnit->getDomainType() == DOMAIN_SEA)
+			{
+				return GLOBAL_DEFINE_MOVE_DENOMINATOR;
+			}
+			else
+			{
+				return pUnit->maxMoves();	
+			}
 		}
 		else
 		{
-			return pUnit->maxMoves();
+			// TODO: Replace hard-coded constants with the highest movement cost in terms of plot/terrain/feature combination
+			if (pUnit->getDomainType() == DOMAIN_SEA)
+			{
+				return 500;
+			}
+			else
+			{
+				return 500;
+			}
 		}
 	}
 
@@ -3539,7 +3557,7 @@ int CvPlot::movementCost(const CvUnit* pUnit, const CvPlot* pFromPlot,
 	if (bHasTerrainCost)
 	{
 		if (((getFeatureType() == NO_FEATURE) ? pUnit->isTerrainDoubleMove(getTerrainType()) : pUnit->isFeatureDoubleMove(getFeatureType())) ||
-			((isHills() || isPeak()) && pUnit->isHillsDoubleMove()))
+			((isHills() || isPeak()) && pUnit->isHillOrPeakDoubleMove()))
 		{
 			iRegularCost /= 2;
 		}
@@ -4663,7 +4681,7 @@ bool CvPlot::isNorthernHemisphere() const
 
 int CvPlot::getFOWIndex() const
 {
-	return ((((GC.getMap().getGridHeight() - 1) - getY_INLINE()) * GC.getMap().getGridWidth() * LANDSCAPE_FOW_RESOLUTION * LANDSCAPE_FOW_RESOLUTION) + (getX_INLINE() * LANDSCAPE_FOW_RESOLUTION));
+	return ((((GC.getMap().getGridHeightINLINE() - 1) - getY_INLINE()) * GC.getMap().getGridWidthINLINE() * LANDSCAPE_FOW_RESOLUTION * LANDSCAPE_FOW_RESOLUTION) + (getX_INLINE() * LANDSCAPE_FOW_RESOLUTION));
 }
 
 
@@ -7581,7 +7599,7 @@ int CvPlot::getFoundValue(PlayerTypes eIndex)
 }
 
 
-bool CvPlot::isBestAdjacentFound(PlayerTypes eIndex)
+bool CvPlot::isBestAdjacentFound(PlayerTypes eIndex) const
 {
 	CvPlot* pAdjacentPlot;
 	int iI;
@@ -9021,7 +9039,7 @@ void CvPlot::doCulture()
 						CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
 						if (pLoopUnit != NULL && pLoopUnit->canDefend(this)) //R&R mod, vetiarvind, super forts merge, added null check
 						{
-							if (pLoopUnit->getOwner() == getOwnerINLINE())
+							if (pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
 							{
 								bDefenderFound = true;
 								break;
@@ -9484,6 +9502,10 @@ bool CvPlot::canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const
 {
 	FAssert(::isPlotEventTrigger(eTrigger));
 
+	FAssert(ePlayer != NO_PLAYER); // this shouldn't happen, but just to be safe
+
+	const TeamTypes eTeam = ePlayer != NO_PLAYER ? GET_PLAYER(ePlayer).getTeam() : NO_TEAM;
+
 	CvEventTriggerInfo& kTrigger = GC.getEventTriggerInfo(eTrigger);
 
 	if (kTrigger.isOwnPlot() && getOwnerINLINE() != ePlayer)
@@ -9497,6 +9519,19 @@ bool CvPlot::canTrigger(EventTriggerTypes eTrigger, PlayerTypes ePlayer) const
 		{
 			return false;
 		}
+	}
+
+	if (kTrigger.plotTriggers().CanBuildImprovement != NO_IMPROVEMENT)
+	{
+		if (!canHaveImprovement(kTrigger.plotTriggers().CanBuildImprovement, eTeam))
+		{
+			return false;
+		}
+	}
+
+	if (kTrigger.plotTriggers().HasNoImprovement && getImprovementType() != NO_IMPROVEMENT)
+	{
+		return false;
 	}
 
 	const InfoArray<FeatureTypes>& Features = kTrigger.getFeaturesRequired();
@@ -10156,7 +10191,7 @@ void CvPlot::doFort()
 	CvUnit* pDefenseUnit = getFortDefender();
 	if(pDefenseUnit == NULL)
 		return;
-	PlayerTypes FortOwner = pDefenseUnit->getOwner();
+	PlayerTypes FortOwner = pDefenseUnit->getOwnerINLINE();
 
 	bool alreadyFired = false;
 
@@ -10321,11 +10356,11 @@ void CvPlot::doMonastery()
 		return;
 
 	bool hasExpertMissionary = missionaryUnit->getUnitInfo().getMissionaryRateModifier() > 0;
-	PlayerTypes MonasteryOwner = missionaryUnit->getOwner();
+	PlayerTypes MonasteryOwner = missionaryUnit->getOwnerINLINE();
 
 	//WTP, ray, fix for Monasteries not Growing by giving them Culture - START
 	//if(getOwner() == NO_PLAYER)
-	if(getOwner() != MonasteryOwner)
+	if(getOwnerINLINE() != MonasteryOwner)
 	{
 		if (getCulture(MonasteryOwner) < GC.getDefineINT("FREE_CITY_CULTURE"))
 		{
@@ -10711,3 +10746,13 @@ int CvPlot::getTurnDamage() const
 	
 	return 0;
 }
+
+EXE_Plot CvPlot::EXE()
+{
+	return EXE_Plot(*this);
+}
+
+CvCityAI * CvPlot::AI_getPlotCity() const
+{
+	return static_cast<CvCityAI*>(getPlotCity());
+} // </advc.003u>

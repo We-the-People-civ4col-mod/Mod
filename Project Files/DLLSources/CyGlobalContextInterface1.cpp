@@ -13,7 +13,10 @@
 #include "CvInfos.h"
 #include "CyTeam.h"
 
+#include "DesyncMonitor.h"
+
 #include <boost/python/class.hpp>
+#include <boost/python/manage_new_object.hpp>
 
 void CyGlobalContextPythonInterface1(python::class_<CyGlobalContext>& x)
 {
@@ -28,6 +31,6 @@ void CyGlobalContextPythonInterface1(python::class_<CyGlobalContext>& x)
 		.def("getASyncRand", &CyGlobalContext::getCyASyncRand, python::return_value_policy<python::reference_existing_object>(), "Non-Synch'd random #")
 		.def("getTeam", &CyGlobalContext::getCyTeam, python::return_value_policy<python::reference_existing_object>(), "(iTeam) - iTeam instance")
 
-		
+		.def("startDesyncMonitor", &CyGlobalContext::startDesyncMonitor, python::return_value_policy<python::manage_new_object>(), "DesyncMonitor* () - used for OOS detection, see CxDesyncMonitor.h")
 	;
 }

@@ -41,7 +41,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_TUGLAWINA_1</Tag>
-		<English>Stranger, I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chief and Angakkuq of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people. Be our guest for tonight, for our seal hunters could return any moment now.</English>
+		<English>Stranger, I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chief and Angakkuq of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people. Can you trade us wooden boats? Caribou hide kayaks have to be on scaffolds or else our sled dogs eat them.</English>
 		<French>Bonjour. Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], chef et Angakkuq du peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ:3][COLOR_REVERT]. Soyez notre invité pour ce soir, nos chasseurs de phoques seront bientôt de retour.</French>
 		<German>Fremder, ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Häuptling und Angakkuq des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]-Volkes. Seid unser Gast für heute Nacht, denn unsere Robbenjäger könnten jeden Moment zurückkehren.</German>
 		<Russian>Незнакомец, я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], вождь и знахарь [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]. Будь нашим гостем сегодня вечером, наши охотники на тюленей могут вернуться в любой момент и мы устроим пышный пир.</Russian>
@@ -2114,3 +2114,4 @@
 		<Russian>Я мог бы стереть племя [CT_EMPIRE] с этой земли в любой момент. Дай мне то, что я требую и я позволю тебе пожить еще немного.</Russian>
 	</TEXT>
 </Civ4GameText>
+

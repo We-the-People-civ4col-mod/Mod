@@ -9,7 +9,7 @@ const int SAVEGAME_VERSION_EXE = 2;
 // WARNING: if a savegame fails to read because of it fails one of the following conditions, the game will quit.
 // SAVEGAME_VERSION is always used when saving and the mod rejects any savegame using a higher version that this number.
 // SAVEGAME_OLDEST_COMPATIBLE_VERSION is used to reject savegames, which uses an older verison than this.
-const unsigned int SAVEGAME_VERSION = 2;
+const unsigned int SAVEGAME_VERSION = 3;
 const unsigned int SAVEGAME_OLDEST_COMPATIBLE_VERSION = 1;
 
 // The exe saves an array of building and unit infos. Adding one will cause the exe to read a different number of bytes.

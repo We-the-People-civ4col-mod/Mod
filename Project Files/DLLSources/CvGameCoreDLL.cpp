@@ -82,6 +82,8 @@ unsigned int memSize(void* a)
 	return gDLL->memSize(a);
 }
 
+void StartXMLUpdate();
+
 BOOL APIENTRY DllMain(HANDLE hModule,
 					  DWORD  ul_reason_for_call,
 					  LPVOID lpReserved)
@@ -95,6 +97,7 @@ BOOL APIENTRY DllMain(HANDLE hModule,
 		// set timer precision
 		MMRESULT iTimeSet = timeBeginPeriod(1);		// set timeGetTime and sleep resolution to 1 ms, otherwise it's 10-16ms
 		FAssertMsg(iTimeSet==TIMERR_NOERROR, "failed setting timer resolution to 1 ms");
+		StartXMLUpdate();
 		}
 		break;
 	case DLL_THREAD_ATTACH:

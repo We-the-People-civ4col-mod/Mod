@@ -17,10 +17,11 @@ class CyUnit;
 class CyArea;
 class CyMap
 {
+	CvMap* pointer(AssertCallerData);
 public:
 	DllExport CyMap();
 	CyMap(CvMap* pMap);		// Call from C++
-	CvMap* getMap() { return m_pMap;	}	// Call from C++
+	CvMap* getMap() { return (CvMap*)m_pMap;	}	// Call from C++
 	bool isNone() { return (m_pMap==NULL); }
 
 	void erasePlots();
@@ -101,7 +102,7 @@ public:
 	CyInfoArray* getTerrainCount(bool bHills) const;
 
 protected:
-	CvMap* m_pMap;
+	const CvMap* const m_pMap;
 };
 
 #endif	// CyMap_h

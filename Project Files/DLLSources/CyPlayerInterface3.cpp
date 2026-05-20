@@ -116,14 +116,12 @@ void CyPlayerPythonInterface3(python::class_<CyPlayer>& x)
 		.def("getRandomUsedShipClassTypeID", &CyPlayer::getRandomUsedShipClassTypeID, "int ()") 
 		.def("getUsedShipPrice", &CyPlayer::getUsedShipPrice, "int (int iUsedShipClassType)") 
 		.def("isKingWillingToTradeUsedShips", &CyPlayer::isKingWillingToTradeUsedShips, "bool ()")
-		.def("resetCounterForUsedShipDeals", &CyPlayer::resetCounterForUsedShipDeals, "void ()")
 		//WTP, ray Kings Used Ship - END
 
 		// WTP, ray, Foreign Kings, buy Immigrants - START
 		.def("getRandomForeignImmigrantClassTypeID", &CyPlayer::getRandomForeignImmigrantClassTypeID, "int ()") 
 		.def("getForeignImmigrantPrice", &CyPlayer::getForeignImmigrantPrice, "int (int iForeignImmigrantClassType, int iEuropeKingID)") 
 		.def("isForeignKingWillingToTradeImmigrants", &CyPlayer::isForeignKingWillingToTradeImmigrants, "bool (int iEuropeKingID)")
-		.def("resetCounterForForeignImmigrantsDeals", &CyPlayer::resetCounterForForeignImmigrantsDeals, "void ()")
 		// WTP, ray, Foreign Kings, buy Immigrants - END
 
 		// R&R, Robert Surcouf, No More Variables Hidden game option END		

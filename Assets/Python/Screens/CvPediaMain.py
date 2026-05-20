@@ -20,6 +20,7 @@ import CvPediaCivilization
 import CvPediaLeader
 import CvPediaHistory
 import CvPediaYields
+import CvPediaAchieve                    
 
 # globals
 gc = CyGlobalContext()
@@ -64,6 +65,23 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		self.pediaCivilization = CvPediaCivilization.CvPediaCivilization(self)
 		self.pediaLeader = CvPediaLeader.CvPediaLeader(self)
 		self.pediaHistorical = CvPediaHistory.CvPediaHistory(self)
+		self.pediaAchieve = CvPediaAchieve.CvPediaAchieve(self)
+
+		# used for search function
+		self.ACHIEVE_SEARCH_CATEGORY_WIDGET = 9951
+		self.ACHIEVE_SEARCH_VALUE_WIDGET = 9952
+
+		self.achieveSearchCategory = "ALL"
+		self.achieveSearchValue = ""
+
+		self.achieveSearchCategories = [
+			("ALL", "TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL", "All"),
+			("UNITS", "TXT_KEY_PEDIA_ACHIEVE_FILTER_UNITS", "Units"),
+			("BUILDINGS", "TXT_KEY_PEDIA_ACHIEVE_FILTER_BUILDINGS", "Buildings"),
+			("PROFESSIONS", "TXT_KEY_PEDIA_ACHIEVE_FILTER_PROFESSIONS", "Professions"),
+			("GOODS", "TXT_KEY_PEDIA_ACHIEVE_FILTER_GOODS", "Goods"),
+			("MISC", "TXT_KEY_PEDIA_ACHIEVE_FILTER_MISC", "Miscellaneous"),
+		]                                                         
 
 		# used for navigating "forward" and "back" in civilopedia
 		self.pediaHistory = []
@@ -74,6 +92,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		self.iCategory = -1
 		self.iLastScreen = -1
 		self.iActivePlayer = -1
+		self.CATEGORY_ACHIEVEMENTS = CivilopediaPageTypes.CIVILOPEDIA_PAGE_HINTS + 1
 		self.mapCategories = {
 			CivilopediaPageTypes.CIVILOPEDIA_PAGE_UNIT	: self.placeUnits,
 			CivilopediaPageTypes.CIVILOPEDIA_PAGE_PROFESSION	: self.placeProfessions,
@@ -90,6 +109,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 			CivilopediaPageTypes.CIVILOPEDIA_PAGE_CIVIC	: self.placeCivics,
 			CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT	: self.placeConcepts,
 			CivilopediaPageTypes.CIVILOPEDIA_PAGE_HINTS	: self.placeHints,
+			self.CATEGORY_ACHIEVEMENTS	: self.placeAchievements,
 			}
 
 	def getScreen(self):
@@ -127,7 +147,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		self.szCategoryCivic = localText.getText("TXT_KEY_PEDIA_CATEGORY_CIVIC", ())
 		self.szCategoryConcept = localText.getText("TXT_KEY_PEDIA_CATEGORY_CONCEPT", ())
 		self.szCategoryHints = localText.getText("TXT_KEY_PEDIA_CATEGORY_HINTS", ())
-		
+		self.szCategoryAchievements = localText.getText("TXT_KEY_PEDIA_CATEGORY_ACHIEVEMENTS", ())			
 		
 		self.listCategories = [ self.szCategoryUnit,
 								self.szCategoryProfession,
@@ -143,7 +163,8 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 								self.szCategoryLeader,
 								self.szCategoryCivic,
 								self.szCategoryConcept,
-								self.szCategoryHints, ]
+								self.szCategoryHints, 
+								self.szCategoryAchievements]                                    
 		
 								
 		screen = self.getScreen()
@@ -217,6 +238,375 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 		screen.addListBoxGFC(self.LIST_ID, "", self.X_LINKS, self.Y_LINKS, self.W_LINKS, self.H_LINKS, TableStyles.TABLE_STYLE_STANDARD)
 		screen.enableSelect(self.LIST_ID, True)
 		screen.setStyle(self.LIST_ID, "Table_StandardCiv_Style")
+# Achieve Search function start
+	def _getAchieveSearchLabel(self, szCategory):
+		for item in self.achieveSearchCategories:
+			if item[0] == szCategory:
+				try:
+					szText = localText.getText(item[1], ())
+					if szText != "" and szText != item[1]:
+						return szText
+				except:
+					pass
+				return item[2]
+		return szCategory
+
+	def _findTextBetween(self, text, startTag, endTag, startPos=0):
+		iStart = text.find(startTag, startPos)
+		if iStart == -1:
+			return "", -1
+
+		iStart += len(startTag)
+		iEnd = text.find(endTag, iStart)
+		if iEnd == -1:
+			return "", -1
+
+		return text[iStart:iEnd], iEnd + len(endTag)
+
+	def _getSimpleTagValue(self, blockText, tagName, defaultValue=""):
+		startTag = "<%s>" % tagName
+		endTag = "</%s>" % tagName
+		value, dummy = self._findTextBetween(blockText, startTag, endTag, 0)
+		if value == "":
+			return defaultValue
+		return value.strip()
+
+	def _getNestedBlocks(self, parentText, childTag):
+		results = []
+		startTag = "<%s>" % childTag
+		endTag = "</%s>" % childTag
+		pos = 0
+
+		while True:
+			iStart = parentText.find(startTag, pos)
+			if iStart == -1:
+				break
+
+			iStart += len(startTag)
+			iEnd = parentText.find(endTag, iStart)
+			if iEnd == -1:
+				break
+
+			results.append(parentText[iStart:iEnd])
+			pos = iEnd + len(endTag)
+
+		return results
+
+	def _getUnitRequirementBlocks(self, blockText):
+		results = []
+		pos = 0
+
+		while True:
+			iUnitType = blockText.find("<UnitType>", pos)
+			if iUnitType == -1:
+				break
+
+			iStart = blockText.rfind("<NumUnits>", 0, iUnitType)
+			if iStart == -1:
+				break
+
+			iStart += len("<NumUnits>")
+			iEnd = blockText.find("</NumUnits>", iUnitType)
+			if iEnd == -1:
+				break
+
+			results.append(blockText[iStart:iEnd])
+			pos = iEnd + len("</NumUnits>")
+
+		return results
+
+	def _getAchieveXmlBlockText(self, szBaseKey):
+		try:
+			import os
+
+			gameRoot = os.path.normpath(
+				os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "..")
+			)
+
+			modsRoot = os.path.join(gameRoot, "Mods")
+			if not os.path.isdir(modsRoot):
+				return ""
+
+			xmlText = ""
+			searchTag = "<Description>%s</Description>" % szBaseKey
+
+			for modName in os.listdir(modsRoot):
+				try:
+					candidates = [
+						os.path.join(modsRoot, modName, "Assets", "XML", "Events", "CIV4AchieveInfos.xml"),
+					]   
+
+					foundCandidate = ""
+					for candidate in candidates:
+						if os.path.isfile(candidate):
+							foundCandidate = candidate
+							break
+
+					if foundCandidate == "":
+						continue
+
+					f = open(foundCandidate, "r")
+					candidateText = f.read()
+					f.close()
+
+					if candidateText.find(searchTag) != -1:
+						xmlText = candidateText
+						break
+				except:
+					pass
+
+			if xmlText == "":
+				return ""
+
+			iDesc = xmlText.find(searchTag)
+			if iDesc == -1:
+				return ""
+
+			iAchieveStart = xmlText.rfind("<AchieveInfo>", 0, iDesc)
+			iAchieveEnd = xmlText.find("</AchieveInfo>", iDesc)
+			if iAchieveStart == -1 or iAchieveEnd == -1:
+				return ""
+
+			return xmlText[iAchieveStart:iAchieveEnd]
+
+		except:
+			return ""
+
+	def _getAchieveSearchData(self, iAchieve):
+		data = {
+			"units": [],
+			"buildings": [],
+			"professions": [],
+			"goods": [],
+			"misc": []
+		}
+
+		try:
+			info = gc.getAchieveInfo(iAchieve)
+			szBaseKey = info.getTextKey()
+		except:
+			return data
+
+		if szBaseKey == "":
+			return data
+
+		blockText = self._getAchieveXmlBlockText(szBaseKey)
+		if blockText == "":
+			return data
+
+		unitBlocks = self._getUnitRequirementBlocks(blockText)
+		for entry in unitBlocks:
+			unitType = self._getSimpleTagValue(entry, "UnitType", "")
+			if unitType != "":
+				data["units"].append(unitType)
+
+		numBuildingsBlock = self._getSimpleTagValue(blockText, "NumBuildings", "")
+		if numBuildingsBlock != "":
+			buildingBlocks = self._getNestedBlocks(numBuildingsBlock, "NumBuilding")
+			for entry in buildingBlocks:
+				buildingType = self._getSimpleTagValue(entry, "BuildingType", "")
+				if buildingType != "":
+					data["buildings"].append(buildingType)
+
+		numProfessionsBlock = self._getSimpleTagValue(blockText, "NumProfessions", "")
+		if numProfessionsBlock != "":
+			profBlocks = self._getNestedBlocks(numProfessionsBlock, "NumProfession")
+			for entry in profBlocks:
+				profType = self._getSimpleTagValue(entry, "ProfessionType", "")
+				if profType != "":
+					data["professions"].append(profType)
+
+		yieldBlock = self._getSimpleTagValue(blockText, "YieldProduced", "")
+		if yieldBlock != "":
+			yieldEntries = self._getNestedBlocks(yieldBlock, "YieldProduce")
+			for entry in yieldEntries:
+				yieldType = self._getSimpleTagValue(entry, "YieldType", "")
+				if yieldType != "":
+					data["goods"].append(yieldType)
+
+		iGoodsTraded = -1
+		try:
+			iGoodsTraded = int(self._getSimpleTagValue(blockText, "iNumGoodsTraded", "-1"))
+		except:
+			iGoodsTraded = -1
+
+		if iGoodsTraded > 0:
+			if "TRADED_GOODS" not in data["goods"]:
+				data["goods"].append("TRADED_GOODS")
+
+		if self._getSimpleTagValue(blockText, "bLandDiscovered", "0") == "1":
+			data["misc"].append("LAND_DISCOVERED")
+
+		if self._getSimpleTagValue(blockText, "bDiscoverEast", "0") == "1":
+			data["misc"].append("DISCOVER_EAST")
+
+		if self._getSimpleTagValue(blockText, "bDiscoverWest", "0") == "1":
+			data["misc"].append("DISCOVER_WEST")
+
+		if self._getSimpleTagValue(blockText, "iNumColonies", "0") != "0":
+			try:
+				if int(self._getSimpleTagValue(blockText, "iNumColonies", "0")) > 0:
+					data["misc"].append("NUM_COLONIES")
+			except:
+				pass
+
+		if self._getSimpleTagValue(blockText, "iNumEuroContacts", "0") != "0":
+			try:
+				if int(self._getSimpleTagValue(blockText, "iNumEuroContacts", "0")) > 0:
+					data["misc"].append("EURO_CONTACTS")
+			except:
+				pass
+
+		if self._getSimpleTagValue(blockText, "iNumNativeContacts", "0") != "0":
+			try:
+				if int(self._getSimpleTagValue(blockText, "iNumNativeContacts", "0")) > 0:
+					data["misc"].append("NATIVE_CONTACTS")
+			except:
+				pass
+
+		try:
+			if int(self._getSimpleTagValue(blockText, "iNumCombatsWonNeeded", "-1")) > 0:
+				data["misc"].append("COMBATS_WON")
+		except:
+			pass
+
+		try:
+			if int(self._getSimpleTagValue(blockText, "iNumSeaCombatsWonNeeded", "-1")) > 0:
+				data["misc"].append("SEA_COMBATS_WON")
+		except:
+			pass
+
+		return data
+
+	def _getAchieveSearchValueDisplayName(self, szCategory, szValue):
+		try:
+			if szCategory == "UNITS":
+				for i in range(gc.getNumUnitInfos()):
+					info = gc.getUnitInfo(i)
+					if info.getType() == szValue:
+						return info.getDescription()
+
+			elif szCategory == "BUILDINGS":
+				for i in range(gc.getNumBuildingInfos()):
+					info = gc.getBuildingInfo(i)
+					if info.getType() == szValue:
+						return info.getDescription()
+
+			elif szCategory == "PROFESSIONS":
+				for i in range(gc.getNumProfessionInfos()):
+					info = gc.getProfessionInfo(i)
+					if info.getType() == szValue:
+						return info.getDescription()
+
+			elif szCategory == "GOODS":
+				if szValue == "TRADED_GOODS":
+					szText = localText.getText("TXT_KEY_PEDIA_ACHIEVE_FILTER_TRADED_GOODS", ())
+					if szText != "" and szText != "TXT_KEY_PEDIA_ACHIEVE_FILTER_TRADED_GOODS":
+						return szText
+					return u"Traded goods"
+
+				for i in range(gc.getNumYieldInfos()):
+					info = gc.getYieldInfo(i)
+					if info.getType() == szValue:
+						return info.getDescription()
+
+			elif szCategory == "MISC":
+				miscMap = {
+					"LAND_DISCOVERED": "TXT_KEY_PEDIA_ACHIEVE_MISC_LAND_DISCOVERED",
+					"DISCOVER_EAST": "TXT_KEY_PEDIA_ACHIEVE_MISC_DISCOVER_EAST",
+					"DISCOVER_WEST": "TXT_KEY_PEDIA_ACHIEVE_MISC_DISCOVER_WEST",
+					"NUM_COLONIES": "TXT_KEY_PEDIA_ACHIEVE_MISC_NUM_COLONIES",
+					"EURO_CONTACTS": "TXT_KEY_PEDIA_ACHIEVE_MISC_EURO_CONTACTS",
+					"NATIVE_CONTACTS": "TXT_KEY_PEDIA_ACHIEVE_MISC_NATIVE_CONTACTS",
+					"COMBATS_WON": "TXT_KEY_PEDIA_ACHIEVE_MISC_COMBATS_WON",
+					"SEA_COMBATS_WON": "TXT_KEY_PEDIA_ACHIEVE_MISC_SEA_COMBATS_WON",
+				}
+
+				if miscMap.has_key(szValue):
+					szText = localText.getText(miscMap[szValue], ())
+					if szText != "" and szText != miscMap[szValue]:
+						return szText
+		except:
+			pass
+
+		return szValue
+
+	def _getAvailableAchieveSearchValues(self):
+		if self.achieveSearchCategory == "ALL":
+			return []
+
+		values = []
+
+		for iAchieve in range(gc.getNumAchieveInfos()):
+			data = self._getAchieveSearchData(iAchieve)
+
+			if self.achieveSearchCategory == "UNITS":
+				for value in data["units"]:
+					if value not in values:
+						values.append(value)
+
+			elif self.achieveSearchCategory == "BUILDINGS":
+				for value in data["buildings"]:
+					if value not in values:
+						values.append(value)
+
+			elif self.achieveSearchCategory == "PROFESSIONS":
+				for value in data["professions"]:
+					if value not in values:
+						values.append(value)
+
+			elif self.achieveSearchCategory == "GOODS":
+				for value in data["goods"]:
+					if value not in values:
+						values.append(value)
+
+			elif self.achieveSearchCategory == "MISC":
+				for value in data["misc"]:
+					if value not in values:
+						values.append(value)
+
+		values.sort()
+		return values
+
+	def _matchesAchieveSearchFilter(self, iAchieve):
+		data = self._getAchieveSearchData(iAchieve)
+
+		# Global: alles anzeigen
+		if self.achieveSearchCategory == "ALL":
+			return True
+
+		# Units
+		if self.achieveSearchCategory == "UNITS":
+			if self.achieveSearchValue == "":
+				return len(data["units"]) > 0
+			return self.achieveSearchValue in data["units"]
+
+		# Buildings
+		if self.achieveSearchCategory == "BUILDINGS":
+			if self.achieveSearchValue == "":
+				return len(data["buildings"]) > 0
+			return self.achieveSearchValue in data["buildings"]
+
+		# Professions
+		if self.achieveSearchCategory == "PROFESSIONS":
+			if self.achieveSearchValue == "":
+				return len(data["professions"]) > 0
+			return self.achieveSearchValue in data["professions"]
+
+		# Goods (inkl. Trade!)
+		if self.achieveSearchCategory == "GOODS":
+			if self.achieveSearchValue == "":
+				return len(data["goods"]) > 0
+			return self.achieveSearchValue in data["goods"]
+
+		# Misc (Discovery etc.)
+		if self.achieveSearchCategory == "MISC":
+			if self.achieveSearchValue == "":
+				return len(data["misc"]) > 0
+			return self.achieveSearchValue in data["misc"]
+
+		return True
+# Achieve Search function end                               
 
 	# Screen construction function
 	def showScreen(self, iCategory):
@@ -695,6 +1085,182 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 			screen.setTableText(tableName, iColumn, iRow, u"<font=3>" + item[0] + u"</font>", gc.getConceptInfo(item[1]).getButton(), WidgetTypes.WIDGET_PEDIA_DESCRIPTION, CivilopediaPageTypes.CIVILOPEDIA_PAGE_CONCEPT, item[1], CvUtil.FONT_LEFT_JUSTIFY)
 			iCounter += 1
 
+	def placeAchievements(self):
+		screen = self.getScreen()
+
+		list = self.getSortedList(gc.getNumAchieveInfos(), gc.getAchieveInfo)
+
+		filterPanelX = self.X_ITEMS_PANE + 10
+		filterPanelY = self.Y_ITEMS_PANE + 10
+		filterPanelW = self.W_ITEMS_PANE - 20
+		filterPanelH = 140
+
+		categoryListX = filterPanelX + 10
+		categoryListY = filterPanelY + 28
+		categoryListW = 260
+		categoryListH = 96
+
+		valueListX = categoryListX + categoryListW + 15
+		valueListY = categoryListY
+		valueListW = 420
+		valueListH = 96
+
+		screen.addPanel(self.getNextWidgetName(),
+			"", "", True, True,
+			filterPanelX, filterPanelY, filterPanelW, filterPanelH,
+			PanelStyles.PANEL_STYLE_BLUE50,
+			WidgetTypes.WIDGET_GENERAL, -1, -1)
+
+		szCategoryTitle = localText.getText("TXT_KEY_PEDIA_ACHIEVE_FILTER_CATEGORY", ())
+		if szCategoryTitle == "TXT_KEY_PEDIA_ACHIEVE_FILTER_CATEGORY":
+			szCategoryTitle = u"Category"
+
+		szValueTitle = localText.getText("TXT_KEY_PEDIA_ACHIEVE_FILTER_VALUE", ())
+		if szValueTitle == "TXT_KEY_PEDIA_ACHIEVE_FILTER_VALUE":
+			szValueTitle = u"Entry"
+
+		screen.setLabel(self.getNextWidgetName(), "Background",
+			u"<font=3b>" + szCategoryTitle + u"</font>",
+			CvUtil.FONT_LEFT_JUSTIFY,
+			categoryListX, filterPanelY + 8, 0,
+			FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+
+		screen.setLabel(self.getNextWidgetName(), "Background",
+			u"<font=3b>" + szValueTitle + u"</font>",
+			CvUtil.FONT_LEFT_JUSTIFY,
+			valueListX, filterPanelY + 8, 0,
+			FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, -1, -1)
+
+		categoryListName = self.getNextWidgetName()
+		screen.addListBoxGFC(categoryListName, "", categoryListX, categoryListY, categoryListW, categoryListH, TableStyles.TABLE_STYLE_STANDARD)
+		screen.enableSelect(categoryListName, True)
+		screen.setStyle(categoryListName, "Table_StandardCiv_Style")
+
+		iSelectedCategory = 0
+		for iIndex, item in enumerate(self.achieveSearchCategories):
+			szCode = item[0]
+			szText = self._getAchieveSearchLabel(szCode)
+
+			screen.appendListBoxStringNoUpdate(
+				categoryListName,
+				u"<font=3>" + szText + u"</font>",
+				WidgetTypes.WIDGET_GENERAL,
+				self.ACHIEVE_SEARCH_CATEGORY_WIDGET,
+				iIndex,
+				CvUtil.FONT_LEFT_JUSTIFY)
+
+			if szCode == self.achieveSearchCategory:
+				iSelectedCategory = iIndex
+
+		screen.updateListBox(categoryListName)
+		screen.setSelectedListBoxStringGFC(categoryListName, iSelectedCategory)
+
+		valueListName = self.getNextWidgetName()
+		screen.addListBoxGFC(valueListName, "", valueListX, valueListY, valueListW, valueListH, TableStyles.TABLE_STYLE_STANDARD)
+		screen.enableSelect(valueListName, True)
+		screen.setStyle(valueListName, "Table_StandardCiv_Style")
+
+		values = self._getAvailableAchieveSearchValues()
+
+		# Dynamic "All" label depending on category
+		if self.achieveSearchCategory == "UNITS":
+			szAll = localText.getText("TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL_UNITS", ())
+
+		elif self.achieveSearchCategory == "BUILDINGS":
+			szAll = localText.getText("TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL_BUILDINGS", ())
+
+		elif self.achieveSearchCategory == "PROFESSIONS":
+			szAll = localText.getText("TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL_PROFESSIONS", ())
+
+		elif self.achieveSearchCategory == "GOODS":
+			szAll = localText.getText("TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL_GOODS", ())
+
+		elif self.achieveSearchCategory == "MISC":
+			szAll = localText.getText("TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL_MISC", ())
+
+		else:
+			szAll = localText.getText("TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL", ())
+
+		screen.appendListBoxStringNoUpdate(
+			valueListName,
+			u"<font=3>" + szAll + u"</font>",
+			WidgetTypes.WIDGET_GENERAL,
+			self.ACHIEVE_SEARCH_VALUE_WIDGET,
+			-1,
+			CvUtil.FONT_LEFT_JUSTIFY)
+
+		iSelectedValue = 0
+		for iIndex, value in enumerate(values):
+			szDisplay = self._getAchieveSearchValueDisplayName(self.achieveSearchCategory, value)
+
+			screen.appendListBoxStringNoUpdate(
+				valueListName,
+				u"<font=3>" + szDisplay + u"</font>",
+				WidgetTypes.WIDGET_GENERAL,
+				self.ACHIEVE_SEARCH_VALUE_WIDGET,
+				iIndex,
+				CvUtil.FONT_LEFT_JUSTIFY)
+
+			if value == self.achieveSearchValue:
+				iSelectedValue = iIndex + 1
+
+		screen.updateListBox(valueListName)
+		screen.setSelectedListBoxStringGFC(valueListName, iSelectedValue)
+
+		filteredList = []
+		for item in list:
+			if self._matchesAchieveSearchFilter(item[1]):
+				filteredList.append(item)
+
+		nColumns = 3
+		nEntries = len(filteredList)
+		nRows = nEntries // nColumns
+		if (nEntries % nColumns):
+			nRows += 1
+
+		colSpacing = 10
+		totalW = self.W_ITEMS_PANE - 20
+		colW = (totalW - (colSpacing * (nColumns - 1))) / nColumns
+		colH = self.H_ITEMS_PANE - 20 - filterPanelH - 10
+		startX = self.X_ITEMS_PANE + 10
+		startY = self.Y_ITEMS_PANE + 10 + filterPanelH + 10
+
+		listNames = []
+		for i in range(nColumns):
+			colX = startX + i * (colW + colSpacing)
+			listName = self.getNextWidgetName()
+			listNames.append(listName)
+
+			screen.addListBoxGFC(
+				listName,
+				"",
+				colX,
+				startY,
+				colW,
+				colH,
+				TableStyles.TABLE_STYLE_STANDARD)
+
+			screen.enableSelect(listName, True)
+			screen.setStyle(listName, "Table_StandardCiv_Style")
+
+		iIndex = 0
+		for iColumn in range(nColumns):
+			for iRow in range(nRows):
+				if iIndex >= nEntries:
+					break
+
+				item = filteredList[iIndex]
+				screen.appendListBoxStringNoUpdate(
+					listNames[iColumn],
+					u"<font=3>" + item[0] + u"</font>",
+					WidgetTypes.WIDGET_GENERAL,
+					CvScreenEnums.PEDIA_ACHIEVE,
+					item[1],
+					CvUtil.FONT_LEFT_JUSTIFY)
+
+				iIndex += 1
+
+			screen.updateListBox(listNames[iColumn])
 
 	def placeHints(self):
 		screen = self.getScreen()
@@ -777,7 +1343,8 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 			self.pediaLeader.interfaceScreen(iEntry, self.X_ITEMS_PANE, self.Y_ITEMS_PANE, self.H_ITEMS_PANE, self.W_ITEMS_PANE)
 		elif (iScreen == CvScreenEnums.PEDIA_HISTORY):
 			self.pediaHistorical.interfaceScreen(iEntry, self.X_ITEMS_PANE, self.Y_ITEMS_PANE, self.H_ITEMS_PANE, self.W_ITEMS_PANE)
-
+		elif (iScreen == CvScreenEnums.PEDIA_ACHIEVE):
+			self.pediaAchieve.interfaceScreen(iEntry, self.X_ITEMS_PANE, self.Y_ITEMS_PANE, self.H_ITEMS_PANE, self.W_ITEMS_PANE)                                                
 	def back(self):
 		if (len(self.pediaHistory) > 1):
 			self.pediaFuture.append(self.pediaHistory.pop())
@@ -808,6 +1375,8 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 	def link(self, szLink):
 		if (szLink == "PEDIA_MAIN_UNIT"):
 			return self.pediaJump(CvScreenEnums.PEDIA_MAIN, int(CivilopediaPageTypes.CIVILOPEDIA_PAGE_UNIT), True)
+		if (szLink == "PEDIA_MAIN_ACHIEVEMENTS"):
+			return self.pediaJump(CvScreenEnums.PEDIA_MAIN, self.CATEGORY_ACHIEVEMENTS, True)
 		if (szLink == "PEDIA_MAIN_PROFESSION"):
 			return self.pediaJump(CvScreenEnums.PEDIA_MAIN, int(CivilopediaPageTypes.CIVILOPEDIA_PAGE_PROFESSION), True)
 		if (szLink == "PEDIA_MAIN_BUILDING"):
@@ -892,7 +1461,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 
 	# Will handle the input for this screen...
 	def handleInput (self, inputClass):
-		
+        
 # TAC Start
 		screen = self.getScreen()			
 		TextExit_ID = 13
@@ -1095,7 +1664,33 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 					screen.hide("TextBackgroundImage")
 # TAC Ende
 
+		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED or inputClass.getNotifyCode() == NotifyCode.NOTIFY_LISTBOX_ITEM_SELECTED):
+			if (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL):
 
+				if (inputClass.getData1() == self.ACHIEVE_SEARCH_CATEGORY_WIDGET):
+					iIndex = inputClass.getData2()
+
+					if iIndex >= 0 and iIndex < len(self.achieveSearchCategories):
+						self.achieveSearchCategory = self.achieveSearchCategories[iIndex][0]
+						self.achieveSearchValue = ""
+						self.showScreen(self.CATEGORY_ACHIEVEMENTS)
+						return 1
+
+				elif (inputClass.getData1() == self.ACHIEVE_SEARCH_VALUE_WIDGET):
+					iIndex = inputClass.getData2()
+
+					if iIndex == -1:
+						self.achieveSearchValue = ""
+					else:
+						values = self._getAvailableAchieveSearchValues()
+						if iIndex >= 0 and iIndex < len(values):
+							self.achieveSearchValue = values[iIndex]
+
+					self.showScreen(self.CATEGORY_ACHIEVEMENTS)
+					return 1
+
+				elif (inputClass.getData1() == CvScreenEnums.PEDIA_ACHIEVE):
+					return self.pediaJump(CvScreenEnums.PEDIA_ACHIEVE, inputClass.getData2(), True)
 		# redirect to proper screen if necessary
 		if (self.iLastScreen == CvScreenEnums.PEDIA_UNIT):
 			return self.pediaUnitScreen.handleInput(inputClass)
@@ -1125,5 +1720,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 			return self.pediaLeader.handleInput(inputClass)
 		if (self.iLastScreen == CvScreenEnums.PEDIA_HISTORY):
 			return self.pediaHistorical.handleInput(inputClass)
+		if (self.iLastScreen == CvScreenEnums.PEDIA_ACHIEVE):
+			return self.pediaAchieve.handleInput(inputClass)                                                      
 		return 0
 

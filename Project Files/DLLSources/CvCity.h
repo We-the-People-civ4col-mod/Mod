@@ -96,11 +96,11 @@ public:
 	void createCapableCaptain(UnitTypes eGreatAdmiralUnit);
 	// WTP, ray, Lieutenants and Captains - END
 
-	DllExport void doTask(TaskTypes eTask, int iData1 = -1, int iData2 = -1, bool bOption = false, bool bAlt = false, bool bShift = false, bool bCtrl = false);
+	void doTask(TaskTypes eTask, int iData1 = -1, int iData2 = -1, bool bOption = false, bool bAlt = false, bool bShift = false, bool bCtrl = false);
 
-	DllExport void chooseProduction(UnitTypes eTrainUnit = NO_UNIT, BuildingTypes eConstructBuilding = NO_BUILDING, bool bFinish = false, bool bFront = false);
+	void chooseProduction(UnitTypes eTrainUnit = NO_UNIT, BuildingTypes eConstructBuilding = NO_BUILDING, bool bFinish = false, bool bFront = false);
 
-	DllExport int getCityPlotIndex(const CvPlot* pPlot) const;
+	CityPlotTypes getCityPlotIndex(const CvPlot* pPlot) const;
 	CvPlot* getCityIndexPlot(CityPlotTypes eCityPlot) const;
 
 	bool canWork(const CvPlot* pPlot) const;
@@ -474,7 +474,7 @@ public:
 	void startHeadOrder();
 	void stopHeadOrder();
 	int getOrderQueueLength() const;
-	OrderData* getOrderFromQueue(int iIndex);
+	OrderData* getOrderFromQueue(int iIndex) const;
 	DllExport CLLNode<OrderData>* nextOrderQueueNode(CLLNode<OrderData>* pNode) const;
 	DllExport CLLNode<OrderData>* headOrderQueueNode() const;
 	CLLNode<OrderData>* tailOrderQueueNode() const;
@@ -495,8 +495,8 @@ public:
 	void setWallOverridePoints(const std::vector< std::pair<float, float> >& kPoints); /* points are given in world space ... i.e. PlotXToPointX, etc */
 	DllExport const std::vector< std::pair<float, float> >& getWallOverridePoints() const;
 	int getTriggerValue(EventTriggerTypes eTrigger) const;
-	bool canApplyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData) const;
-	void applyEvent(EventTypes eEvent, const EventTriggeredData& kTriggeredData, bool bClear);
+	bool canApplyEvent(EventTypes eEvent, const class EventTriggeredData& kTriggeredData) const;
+	void applyEvent(EventTypes eEvent, const class EventTriggeredData& kTriggeredData, bool bClear);
 	bool isEventOccured(EventTypes eEvent) const;
 	void setEventOccured(EventTypes eEvent, bool bOccured);
 	int getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield) const;
@@ -1004,6 +1004,7 @@ public:
 	int getSlaveWorkerProductionBonus() const;
 	//WTP, ray, Slave Hunter and Slave Master
 	void updateSlaveWorkerProductionBonus(int iBonus = 0);
+	int getExportAvailable(YieldTypes eYield) const;
 
 protected:
 	// traderoute popup arrays

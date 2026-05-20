@@ -15,10 +15,17 @@
 #include "CvDLLPythonIFaceBase.h"
 #include "CvMapGenerator.h"
 #include "CyPlot.h"
+#include "DesyncMonitor.h"
 
-CyMapGenerator::CyMapGenerator() : m_pMapGenerator(NULL)
+CvMapGenerator* CyMapGenerator::pointer(AssertCallerData data)
 {
-	m_pMapGenerator = &CvMapGenerator::GetInstance();
+	FAssertWithCaller(data, CxDesyncMonitor::isAlwaysSync());
+	FAssertWithCaller(data, m_pMapGenerator != NULL);
+	return (CvMapGenerator*)m_pMapGenerator;
+}
+
+CyMapGenerator::CyMapGenerator() : m_pMapGenerator(&CvMapGenerator::GetInstance())
+{
 }
 
 CyMapGenerator::CyMapGenerator(CvMapGenerator* pMapGenerator) : m_pMapGenerator(pMapGenerator)
@@ -27,148 +34,148 @@ CyMapGenerator::CyMapGenerator(CvMapGenerator* pMapGenerator) : m_pMapGenerator(
 
 bool CyMapGenerator::canPlaceBonusAt(int /*BonusTypes*/ eBonus, int iX, int iY, bool bIgnoreLatitude)
 {
-	return m_pMapGenerator ? m_pMapGenerator->canPlaceBonusAt((BonusTypes)eBonus, iX, iY, bIgnoreLatitude) : false;
+	return m_pMapGenerator ? pointer(CREATE_ASSERT_DATA)->canPlaceBonusAt((BonusTypes)eBonus, iX, iY, bIgnoreLatitude) : false;
 }
 
 bool CyMapGenerator::canPlaceGoodyAt(int /*ImprovementTypes*/ eImprovement, int iX, int iY)
 {
-	return m_pMapGenerator ? m_pMapGenerator->canPlaceGoodyAt((ImprovementTypes)eImprovement, iX, iY) : false;
+	return m_pMapGenerator ? pointer(CREATE_ASSERT_DATA)->canPlaceGoodyAt((ImprovementTypes)eImprovement, iX, iY) : false;
 }
 
 void CyMapGenerator::addGameElements()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->addGameElements();
+		pointer(CREATE_ASSERT_DATA)->addGameElements();
 }
 
 void CyMapGenerator::addLakes()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->addLakes();
+		pointer(CREATE_ASSERT_DATA)->addLakes();
 }
 
 void CyMapGenerator::addRivers()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->addRivers();
+		pointer(CREATE_ASSERT_DATA)->addRivers();
 }
 
 void CyMapGenerator::doRiver(CyPlot* pStartPlot, CardinalDirectionTypes eCardinalDirection)
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->doRiver(pStartPlot->getPlot(), eCardinalDirection);
+		pointer(CREATE_ASSERT_DATA)->doRiver(pStartPlot->getPlot(), eCardinalDirection);
 }
 
 void CyMapGenerator::addFeatures()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->addFeatures();
+		pointer(CREATE_ASSERT_DATA)->addFeatures();
 }
 
 //WTP, ray, Randomize Features Map Option - START
 void CyMapGenerator::addFeaturesOnLand()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->addFeaturesOnLand();
+		pointer(CREATE_ASSERT_DATA)->addFeaturesOnLand();
 }
 //WTP, ray, Randomize Features Map Option - END
 
 void CyMapGenerator::addFeaturesOnWater()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->addFeaturesOnWater();
+		pointer(CREATE_ASSERT_DATA)->addFeaturesOnWater();
 }
 
 void CyMapGenerator::addBonuses()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->addBonuses();
+		pointer(CREATE_ASSERT_DATA)->addBonuses();
 }
 
 void CyMapGenerator::addUniqueBonusType(int /*BonusTypes*/ eBonusType)
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->addUniqueBonusType((BonusTypes)eBonusType);
+		pointer(CREATE_ASSERT_DATA)->addUniqueBonusType((BonusTypes)eBonusType);
 }
 
 void CyMapGenerator::addNonUniqueBonusType(int /*BonusTypes*/ eBonusType)
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->addNonUniqueBonusType((BonusTypes)eBonusType);
+		pointer(CREATE_ASSERT_DATA)->addNonUniqueBonusType((BonusTypes)eBonusType);
 }
 
 void CyMapGenerator::addGoodies()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->addGoodies();
+		pointer(CREATE_ASSERT_DATA)->addGoodies();
 }
 
 void CyMapGenerator::addEurope()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->addEurope();
+		pointer(CREATE_ASSERT_DATA)->addEurope();
 }
 
 void CyMapGenerator::eraseRivers()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->eraseRivers();
+		pointer(CREATE_ASSERT_DATA)->eraseRivers();
 }
 
 void CyMapGenerator::eraseFeatures()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->eraseFeatures();
+		pointer(CREATE_ASSERT_DATA)->eraseFeatures();
 }
 
 //WTP, ray, Randomize Features Map Option - START
 void CyMapGenerator::eraseFeaturesOnLand()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->eraseFeaturesOnLand();
+		pointer(CREATE_ASSERT_DATA)->eraseFeaturesOnLand();
 }
 //WTP, ray, Randomize Features Map Option - END
 
 void CyMapGenerator::eraseBonuses()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->eraseBonuses();
+		pointer(CREATE_ASSERT_DATA)->eraseBonuses();
 }
 
 void CyMapGenerator::eraseGoodies()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->eraseGoodies();
+		pointer(CREATE_ASSERT_DATA)->eraseGoodies();
 }
 
 void CyMapGenerator::eraseEurope()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->eraseEurope();
+		pointer(CREATE_ASSERT_DATA)->eraseEurope();
 }
 
 void CyMapGenerator::generateRandomMap()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->generateRandomMap();
+		pointer(CREATE_ASSERT_DATA)->generateRandomMap();
 }
 
 void CyMapGenerator::generatePlotTypes()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->generatePlotTypes();
+		pointer(CREATE_ASSERT_DATA)->generatePlotTypes();
 }
 
 void CyMapGenerator::generateTerrain()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->generateTerrain();
+		pointer(CREATE_ASSERT_DATA)->generateTerrain();
 }
 
 void CyMapGenerator::afterGeneration()
 {
 	if (m_pMapGenerator)
-		m_pMapGenerator->afterGeneration();
+		pointer(CREATE_ASSERT_DATA)->afterGeneration();
 }
 
 void CyMapGenerator::setPlotTypes(boost::python::list& listPlotTypes)
@@ -180,7 +187,7 @@ void CyMapGenerator::setPlotTypes(boost::python::list& listPlotTypes)
 
 	int* paiPlotTypes = NULL;
 	gDLL->getPythonIFace()->putSeqInArray(listPlotTypes.ptr() /*src*/, &paiPlotTypes /*dst*/);
-	m_pMapGenerator->setPlotTypes(paiPlotTypes);
+	pointer(CREATE_ASSERT_DATA)->setPlotTypes(paiPlotTypes);
 	delete [] paiPlotTypes;
 }
 

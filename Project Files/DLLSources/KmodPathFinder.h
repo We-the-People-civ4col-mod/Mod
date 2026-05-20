@@ -20,6 +20,12 @@ struct CvPathSettings
 
 class FAStarNode;
 
+enum NodeFlags {
+	NF_NONE,
+	NF_DESTINATION_NODE = 1 << 0,  // node == dest
+	NF_ADJACENT_TO_START = 1 << 1,  // parent == start && node == dest (adjacent UI click)
+};
+
 class KmodPathFinder
 {
 public:

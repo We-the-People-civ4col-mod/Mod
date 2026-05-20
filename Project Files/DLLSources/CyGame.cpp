@@ -13,9 +13,17 @@
 #include "CyReplayInfo.h"
 #include "CvReplayInfo.h"
 #include "CyPlot.h"
-CyGame::CyGame() : m_pGame(NULL)
+#include "DesyncMonitor.h"
+
+CvGame* CyGame::pointer(AssertCallerData data)
 {
-	m_pGame = &GC.getGameINLINE();
+	FAssertWithCaller(data, CxDesyncMonitor::isAlwaysSync());
+	FAssertWithCaller(data, m_pGame != NULL);
+	return (CvGame*)m_pGame;
+}
+
+CyGame::CyGame() : m_pGame(&GC.getGameINLINE())
+{
 }
 CyGame::CyGame(CvGame* pGame) : m_pGame(pGame)
 {
@@ -27,22 +35,22 @@ void CyGame::updateScore(bool bForce)
 {
 	if (m_pGame)
 	{
-		m_pGame->updateScore(bForce);
+		pointer(CREATE_ASSERT_DATA)->updateScore(bForce);
 	}
 }
 void CyGame::cycleCities(bool bForward, bool bAdd)
 {
 	if (m_pGame)
-		m_pGame->cycleCities(bForward, bAdd);
+		pointer(CREATE_ASSERT_DATA)->cycleCities(bForward, bAdd);
 }
 void CyGame::cycleSelectionGroups(bool bClear, bool bForward)
 {
 	if (m_pGame)
-		m_pGame->cycleSelectionGroups(bClear, bForward);
+		pointer(CREATE_ASSERT_DATA)->cycleSelectionGroups(bClear, bForward);
 }
 bool CyGame::cyclePlotUnits(CyPlot* pPlot, bool bForward, bool bAuto, int iCount)
 {
-	return m_pGame ? m_pGame->cyclePlotUnits(pPlot->getPlot(), bForward, bAuto, iCount) : false;
+	return m_pGame ? pointer(CREATE_ASSERT_DATA)->cyclePlotUnits(pPlot->getPlot(), bForward, bAuto, iCount) : false;
 }
 void CyGame::selectionListMove(CyPlot* pPlot, bool bAlt, bool bShift, bool bCtrl)
 {
@@ -143,12 +151,12 @@ bool CyGame::isModem()
 void CyGame::setModem(bool bModem)
 {
 	if (m_pGame)
-		m_pGame->setModem(bModem);
+		pointer(CREATE_ASSERT_DATA)->setModem(bModem);
 }
 void CyGame::reviveActivePlayer()
 {
 	if (m_pGame)
-		m_pGame->reviveActivePlayer();
+		pointer(CREATE_ASSERT_DATA)->reviveActivePlayer();
 }
 int CyGame::getNumHumanPlayers()
 {
@@ -161,7 +169,7 @@ int CyGame::getGameTurn()
 void CyGame::setGameTurn(int iNewValue)
 {
 	if (m_pGame)
-		m_pGame->setGameTurn(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setGameTurn(iNewValue);
 }
 int CyGame::getTurnYear(int iGameTurn)
 {
@@ -183,14 +191,14 @@ void CyGame::setMaxTurns(int iNewValue)
 {
 	if (NULL != m_pGame)
 	{
-		m_pGame->setMaxTurns(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setMaxTurns(iNewValue);
 	}
 }
 void CyGame::changeMaxTurns(int iChange)
 {
 	if (NULL != m_pGame)
 	{
-		m_pGame->changeMaxTurns(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeMaxTurns(iChange);
 	}
 }
 int CyGame::getMaxCityElimination() const
@@ -201,7 +209,7 @@ void CyGame::setMaxCityElimination(int iNewValue)
 {
 	if (NULL != m_pGame)
 	{
-		m_pGame->setMaxCityElimination(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setMaxCityElimination(iNewValue);
 	}
 }
 int CyGame::getNumAdvancedStartPoints() const
@@ -212,7 +220,7 @@ void CyGame::setNumAdvancedStartPoints(int iNewValue)
 {
 	if (NULL != m_pGame)
 	{
-		m_pGame->setNumAdvancedStartPoints(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setNumAdvancedStartPoints(iNewValue);
 	}
 }
 int CyGame::getStartTurn() const
@@ -227,7 +235,7 @@ void CyGame::setStartYear(int iNewValue)
 {
 	if (NULL != m_pGame)
 	{
-		m_pGame->setStartYear(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setStartYear(iNewValue);
 	}
 }
 int CyGame::getEstimateEndTurn() const
@@ -238,7 +246,7 @@ void CyGame::setEstimateEndTurn(int iNewValue)
 {
 	if (NULL != m_pGame)
 	{
-		m_pGame->setEstimateEndTurn(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setEstimateEndTurn(iNewValue);
 	}
 }
 int CyGame::getTurnSlice() const
@@ -304,7 +312,7 @@ int CyGame::getAIAutoPlay() const
 void CyGame::setAIAutoPlay(int iNewValue)
 {
 	if (m_pGame)
-		m_pGame->setAIAutoPlay(iNewValue);
+		pointer(CREATE_ASSERT_DATA)->setAIAutoPlay(iNewValue);
 }
 bool CyGame::isScoreDirty() const
 {
@@ -313,7 +321,7 @@ bool CyGame::isScoreDirty() const
 void CyGame::setScoreDirty(bool bNewValue)
 {
 	if (m_pGame)
-		m_pGame->setScoreDirty(bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setScoreDirty(bNewValue);
 }
 bool CyGame::isDebugMode() const
 {
@@ -322,7 +330,7 @@ bool CyGame::isDebugMode() const
 void CyGame::toggleDebugMode()
 {
 	if (m_pGame)
-		m_pGame->toggleDebugMode();
+		pointer(CREATE_ASSERT_DATA)->toggleDebugMode();
 }
 int CyGame::getPitbossTurnTime()
 {
@@ -331,7 +339,7 @@ int CyGame::getPitbossTurnTime()
 void CyGame::setPitbossTurnTime(int iHours)
 {
 	if (m_pGame)
-		m_pGame->setPitbossTurnTime(iHours);
+		pointer(CREATE_ASSERT_DATA)->setPitbossTurnTime(iHours);
 }
 bool CyGame::isHotSeat()
 {
@@ -360,7 +368,7 @@ int /*PlayerTypes*/ CyGame::getActivePlayer()
 void CyGame::setActivePlayer(int /*PlayerTypes*/ eNewValue, bool bForceHotSeat)
 {
 	if (m_pGame)
-		m_pGame->setActivePlayer((PlayerTypes)eNewValue, bForceHotSeat);
+		pointer(CREATE_ASSERT_DATA)->setActivePlayer((PlayerTypes)eNewValue, bForceHotSeat);
 }
 int CyGame::getPausePlayer()
 {
@@ -385,7 +393,7 @@ int /*VictoryTypes*/ CyGame::getVictory()
 void CyGame::setWinner(int /*TeamTypes*/ eNewWinner, int /*VictoryTypes*/ eNewVictory)
 {
 	if (m_pGame)
-		m_pGame->setWinner((TeamTypes) eNewWinner, (VictoryTypes) eNewVictory);
+		pointer(CREATE_ASSERT_DATA)->setWinner((TeamTypes) eNewWinner, (VictoryTypes) eNewVictory);
 }
 int /*GameStateTypes*/ CyGame::getGameState()
 {
@@ -438,7 +446,7 @@ bool CyGame::isOption(int /*GameOptionTypes*/ eIndex)
 void CyGame::setOption(int /*GameOptionTypes*/ eIndex, bool bEnabled)
 {
 	if (m_pGame)
-		m_pGame->setOption((GameOptionTypes)eIndex, bEnabled);
+		pointer(CREATE_ASSERT_DATA)->setOption((GameOptionTypes)eIndex, bEnabled);
 }
 bool CyGame::isMPOption(int /*MultiplayerOptionTypes*/ eIndex)
 {
@@ -471,7 +479,7 @@ bool CyGame::isSpecialUnitValid(int /*SpecialUnitTypes*/ eSpecialUnitType)
 void CyGame::makeSpecialUnitValid(int /*SpecialUnitTypes*/ eSpecialUnitType)
 {
 	if (m_pGame)
-		m_pGame->makeSpecialUnitValid((SpecialUnitTypes) eSpecialUnitType);
+		pointer(CREATE_ASSERT_DATA)->makeSpecialUnitValid((SpecialUnitTypes) eSpecialUnitType);
 }
 bool CyGame::isSpecialBuildingValid(int /*SpecialBuildingTypes*/ eIndex)
 {
@@ -480,7 +488,7 @@ bool CyGame::isSpecialBuildingValid(int /*SpecialBuildingTypes*/ eIndex)
 void CyGame::makeSpecialBuildingValid(int /*SpecialBuildingTypes*/ eIndex)
 {
 	if (m_pGame)
-		m_pGame->makeSpecialBuildingValid((SpecialBuildingTypes) eIndex);
+		pointer(CREATE_ASSERT_DATA)->makeSpecialBuildingValid((SpecialBuildingTypes) eIndex);
 }
 
 // R&R, ray, Goody Enhancement - START
@@ -491,7 +499,7 @@ bool CyGame::isUniqueGoodyValid(int /*GoodyTypes*/ eIndex)
 void CyGame::setUniqueGoodyValid(int /*GoodyTypes*/ eIndex, bool bValid)
 {
 	if (m_pGame)
-		m_pGame->setUniqueGoodyValid((GoodyTypes) eIndex, bValid);
+		pointer(CREATE_ASSERT_DATA)->setUniqueGoodyValid((GoodyTypes) eIndex, bValid);
 }
 // R&R, ray, Goody Enhancement
 
@@ -506,12 +514,12 @@ std::string CyGame::getScriptData() const
 void CyGame::setScriptData(std::string szNewValue)
 {
 	if (m_pGame)
-		m_pGame->setScriptData(szNewValue);
+		((CvGame*)m_pGame)->setScriptData(szNewValue);
 }
 void CyGame::setName(char const* szNewValue)
 {
 	if (m_pGame)
-		m_pGame->setName(szNewValue);
+		pointer(CREATE_ASSERT_DATA)->setName(szNewValue);
 }
 std::wstring CyGame::getName()
 {
@@ -529,7 +537,7 @@ CyDeal* CyGame::getDeal(int iID)
 {
 	if (m_pGame)
 	{
-		return new CyDeal(m_pGame->getDeal(iID));
+		return new CyDeal(pointer(CREATE_ASSERT_DATA)->getDeal(iID));
 	}
 	else
 	{
@@ -540,7 +548,7 @@ CyDeal* CyGame::addDeal()
 {
 	if (m_pGame)
 	{
-		return new CyDeal(m_pGame->addDeal());
+		return new CyDeal(pointer(CREATE_ASSERT_DATA)->addDeal());
 	}
 	else
 	{
@@ -551,26 +559,26 @@ void CyGame::deleteDeal(int iID)
 {
 	if (m_pGame)
 	{
-		m_pGame->deleteDeal(iID);
+		pointer(CREATE_ASSERT_DATA)->deleteDeal(iID);
 	}
 }
 CvRandom& CyGame::getMapRand()
 {
 	FAssert(m_pGame);
-	return (m_pGame->getMapRand());
+	return (pointer(CREATE_ASSERT_DATA)->getMapRand());
 }
 int CyGame::getMapRandNum(int iNum, char const* pszLog)
 {
-	return m_pGame ? m_pGame->getMapRandNum(iNum, pszLog) : -1;
+	return m_pGame ? pointer(CREATE_ASSERT_DATA)->getMapRandNum(iNum, pszLog) : -1;
 }
 CvRandom& CyGame::getSorenRand()
 {
 	FAssert(m_pGame);
-	return (m_pGame->getSorenRand());
+	return (pointer(CREATE_ASSERT_DATA)->getSorenRand());
 }
 int CyGame::getSorenRandNum(int iNum, char const* pszLog)
 {
-	return m_pGame ? m_pGame->getSorenRandNum(iNum, pszLog) : -1;
+	return m_pGame ? pointer(CREATE_ASSERT_DATA)->getSorenRandNum(iNum, pszLog) : -1;
 }
 int CyGame::calculateSyncChecksum()
 {
@@ -658,21 +666,21 @@ void CyGame::saveReplay(int iPlayer)
 {
 	if (m_pGame)
 	{
-		m_pGame->saveReplay((PlayerTypes)iPlayer);
+		pointer(CREATE_ASSERT_DATA)->saveReplay((PlayerTypes)iPlayer);
 	}
 }
 void CyGame::addPlayer(int eNewPlayer, int eLeader, int eCiv)
 {
 	if (m_pGame)
 	{
-		m_pGame->addPlayer((PlayerTypes)eNewPlayer, (LeaderHeadTypes)eLeader, (CivilizationTypes)eCiv);
+		pointer(CREATE_ASSERT_DATA)->addPlayer((PlayerTypes)eNewPlayer, (LeaderHeadTypes)eLeader, (CivilizationTypes)eCiv);
 	}
 }
 void CyGame::setPlotExtraYield(int iX, int iY, int /*YieldTypes*/ eYield, int iExtraYield)
 {
 	if (m_pGame)
 	{
-		m_pGame->setPlotExtraYield(iX, iY, (YieldTypes)eYield, iExtraYield);
+		pointer(CREATE_ASSERT_DATA)->setPlotExtraYield(iX, iY, (YieldTypes)eYield, iExtraYield);
 	}
 }
 bool CyGame::isCivEverActive(int /*CivilizationTypes*/ eCivilization)
@@ -707,7 +715,7 @@ void CyGame::setFatherTeam(int /*FatherTypes*/ eFather, int /*TeamTypes*/ eTeam)
 {
 	if (m_pGame)
 	{
-		m_pGame->setFatherTeam(CREATE_ASSERT_DATA, (FatherTypes) eFather, (TeamTypes) eTeam);
+		pointer(CREATE_ASSERT_DATA)->setFatherTeam(CREATE_ASSERT_DATA, (FatherTypes) eFather, (TeamTypes) eTeam);
 	}
 }
 int CyGame::getFatherCategoryPosition(int /*FatherTypes*/ eFather)
@@ -725,7 +733,7 @@ void CyGame::setWBNorthAmericanNative(bool bValue)
 {
 	if (m_pGame)
 	{
-		m_pGame->setWBNorthAmericanNative(bValue);
+		pointer(CREATE_ASSERT_DATA)->setWBNorthAmericanNative(bValue);
 	}
 }
 
@@ -738,7 +746,7 @@ void CyGame::setWBSouthAmericanNative(bool bValue)
 {
 	if (m_pGame)
 	{
-		m_pGame->setWBSouthAmericanNative(bValue);
+		pointer(CREATE_ASSERT_DATA)->setWBSouthAmericanNative(bValue);
 	}
 }
 
@@ -751,7 +759,7 @@ void CyGame::setWBCentralAmericanNative(bool bValue)
 {
 	if (m_pGame)
 	{
-		m_pGame->setWBCentralAmericanNative(bValue);
+		pointer(CREATE_ASSERT_DATA)->setWBCentralAmericanNative(bValue);
 	}
 }
 // R&R, ray, Correct Geographical Placement of Natives - END
@@ -771,7 +779,7 @@ void CyGame::setBarbarianPlayer(int /*PlayerTypes*/ eNewValue)
 {
 	if (m_pGame)
 	{
-		m_pGame->setBarbarianPlayer((PlayerTypes) eNewValue);
+		pointer(CREATE_ASSERT_DATA)->setBarbarianPlayer((PlayerTypes) eNewValue);
 	}
 }
 
@@ -802,7 +810,7 @@ void CyGame::setChurchPlayer(int /*PlayerTypes*/ eNewValue)
 {
 	if (m_pGame)
 	{
-		m_pGame->setChurchPlayer((PlayerTypes) eNewValue);
+		pointer(CREATE_ASSERT_DATA)->setChurchPlayer((PlayerTypes) eNewValue);
 	}
 }
 

@@ -244,4 +244,14 @@
 		<English>Potential defense bonus (only if owned): %D1_Mod%%</English>
 		<Russian>Бонус защиты (для игрока): %D1_Mod%%</Russian>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_ALLOW_DIRECT_PATH</Tag>
+		<English>Allow unit to use a direct path</English>
+		<Russian>Разрешить юниту использовать прямой путь</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DISALLOW_DIRECT_PATH</Tag>
+		<English>Disallow unit from using a direct path</English>
+		<Russian>Запретить юниту использовать прямой путь</Russian>
+	</TEXT>
 </Civ4GameText>

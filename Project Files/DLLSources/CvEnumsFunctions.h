@@ -95,6 +95,18 @@ static bool isInRange(T var)
 	return VARINFO<T>::isInRange(var);
 }
 
+template <>
+static bool isInRange<AreaBorderLayers>(AreaBorderLayers var)
+{
+	return var >= FIRST_AREA_BORDER && var < NUM_AREA_BORDER_LAYERS;
+}
+
+template <>
+static bool isInRange<PlotStyles>(PlotStyles var)
+{
+	return var >= FIRST_PLOT_STYLE && var < NUM_PLOT_STYLE_TYPES;
+}
+
 // overloaded ++ for enum types
 
 // copied concept from AdvCiv

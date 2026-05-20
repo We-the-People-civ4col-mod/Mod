@@ -1,4 +1,4 @@
-﻿// buttonPopup.cpp
+// buttonPopup.cpp
 
 #include "CvGameCoreDLL.h"
 #include "CvDLLButtonPopup.h"
@@ -23,6 +23,7 @@
 #include "CvDLLEngineIFaceBase.h"
 #include "CvDLLEventReporterIFaceBase.h"
 #include "CvPythonCaller.h"
+#include "DesyncMonitor.h"
 
 // Public Functions...
 
@@ -124,7 +125,7 @@ public:
 
 			if (bShow)
 			{
-				for (int i = 0; i < GC.getMap().numPlots(); ++i)
+				for (int i = 0; i < GC.getMap().numPlotsINLINE(); ++i)
 				{
 					CvPlot* pPlot = GC.getMap().plotByIndexINLINE(i);
 					if (!pPlot->getScriptData().empty())
@@ -426,6 +427,8 @@ CvDLLButtonPopup::~CvDLLButtonPopup()
 
 void CvDLLButtonPopup::OnAltExecute(CvPopup& popup, const PopupReturn& popupReturn, CvPopupInfo &info)
 {
+	CxDesyncMonitor StartAsyncExecution;
+
 	PopupButtonContainerBase* container = PopupButtonContainerBase::getNew(info.getButtonPopupType());
 	if (container != NULL)
 	{
@@ -454,6 +457,8 @@ void CvDLLButtonPopup::OnAltExecute(CvPopup& popup, const PopupReturn& popupRetu
 
 void CvDLLButtonPopup::OnEscape(CvPopup& popup, CvPopupInfo &info)
 {
+	CxDesyncMonitor StartAsyncExecution;
+
 	PopupButtonContainerBase* container = PopupButtonContainerBase::getNew(info.getButtonPopupType());
 	if (container != NULL)
 	{
@@ -495,6 +500,8 @@ void CvDLLButtonPopup::OnEscape(CvPopup& popup, CvPopupInfo &info)
 
 void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, CvPopupInfo &info)
 {
+	CxDesyncMonitor StartAsyncExecution;
+
 	PopupButtonContainerBase* container = PopupButtonContainerBase::getNew(info.getButtonPopupType());
 	if (container != NULL)
 	{
@@ -992,6 +999,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 			{
 				if (NULL != pTriggeredData && GC.getEventTriggerInfo(pTriggeredData->m_eTrigger).isSinglePlayer())
 				{
+					CxDesyncMonitor SyncMonitor(CxDesyncMonitor::TYPE_RESET); // avoid triggering sync asserts due to being triggered from GUI
 					GET_PLAYER(GC.getGameINLINE().getActivePlayer()).doAction(PLAYER_ACTION_APPLY_EVENT, pPopupReturn->getButtonClicked(), info.getData1(), -1);
 				}
 				else
@@ -1470,6 +1478,8 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 
 void CvDLLButtonPopup::OnFocus(CvPopup* pPopup, CvPopupInfo &info)
 {
+	CxDesyncMonitor StartAsyncExecution;
+
 	if (gDLL->getInterfaceIFace()->popupIsDying(pPopup))
 	{
 		return;
@@ -1566,6 +1576,8 @@ void CvDLLButtonPopup::OnFocus(CvPopup* pPopup, CvPopupInfo &info)
 // returns false if popup is not launched
 bool CvDLLButtonPopup::launchButtonPopup(CvPopup* pPopup, CvPopupInfo &info)
 {
+	CxDesyncMonitor StartAsyncExecution;
+
 	bool bLaunched = false;
 
 	PopupButtonContainerBase* container = PopupButtonContainerBase::getNew(info.getButtonPopupType());
@@ -2188,10 +2200,10 @@ bool CvDLLButtonPopup::launchEducationPopup(CvPopup* pPopup, CvPopupInfo &info)
 
 	int iNumUnits = 0;
 	UnitTypes eLastUnit = NO_UNIT;
-	for (int iI = 0; iI < GC.getNumUnitInfos(); iI++)
+	for (UnitTypes eUnitType = FIRST_UNIT; eUnitType < NUM_UNIT_TYPES; ++eUnitType)
 	{
-		CvUnitInfo& kUnit = GC.getUnitInfo((UnitTypes) iI);
-		int iPrice = pCity->getSpecialistTuition((UnitTypes) iI);
+		CvUnitInfo& kUnit = GC.getUnitInfo(eUnitType);
+		int iPrice = pCity->getSpecialistTuition(eUnitType);
 		if (iPrice >= 0 && iPrice <= kPlayer.getGold())
 		{
 			szText.Format(L"%s", kUnit.getDescription());
@@ -2199,9 +2211,9 @@ bool CvDLLButtonPopup::launchEducationPopup(CvPopup* pPopup, CvPopupInfo &info)
 			{
 				szText += CvWString::format(L" (%d%c)", iPrice, GC.getSymbolID(GOLD_CHAR));
 			}
-			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szText, kUnit.getButton(), iI, WIDGET_GENERAL, -1, -1, true, POPUP_LAYOUT_STRETCH, DLL_FONT_LEFT_JUSTIFY);
+			gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, szText, kUnit.getButton(), eUnitType, WIDGET_PEDIA_JUMP_TO_UNIT, eUnitType, 1, true, POPUP_LAYOUT_STRETCH, DLL_FONT_LEFT_JUSTIFY);
 			++iNumUnits;
-			eLastUnit = (UnitTypes) iI;
+			eLastUnit = eUnitType;
 		}
 	}
 
@@ -2849,7 +2861,7 @@ bool CvDLLButtonPopup::launchEventPopup(CvPopup* pPopup, CvPopupInfo &info)
 
 	if (kTrigger.isShowPlot())
 	{
-		CvPlot* pPlot = GC.getMap().plot(pTriggeredData->m_iPlotX, pTriggeredData->m_iPlotY);
+		CvPlot* pPlot = GC.getMap().plotINLINE(pTriggeredData->m_iPlotX, pTriggeredData->m_iPlotY);
 		if (NULL != pPlot)
 		{
 			gDLL->getEngineIFace()->addColoredPlot(pPlot->getX_INLINE(), pPlot->getY_INLINE(), GC.getColorInfo(COLOR_WARNING_TEXT).getColor(), PLOT_STYLE_CIRCLE, PLOT_LANDSCAPE_LAYER_RECOMMENDED_PLOTS);
@@ -3449,6 +3461,8 @@ bool CvDLLButtonPopup::launchTeacherListPopup(CvPopup* pPopup, CvPopupInfo &info
 			CvUnitInfo& kUnit = GC.getUnitInfo(eUnit);
 
 			if (kUnit.NBMOD_GetTeachLevel() < 1 || kUnit.NBMOD_GetTeachLevel() > pCity->NBMOD_GetCityTeachLevel()) continue;
+			// Skip units which are not intended to be meaningful teachable professions
+			if (kUnit.getTeacherWeight() <= 0) continue;
 
 			int iPrice = pCity->getSpecialistTuition(eUnit);
 
@@ -4067,7 +4081,7 @@ bool CvDLLButtonPopup::launchChooseCityPlotYieldPopup(CvPopup* pPopup, CvPopupIn
 bool CvDLLButtonPopup::launchDesyncLogCompletePopup(CvPopup* pPopup, CvPopupInfo &info)
 {
 	int iPlayer = GC.getGameINLINE().getActivePlayer();
-	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_DEBUG_DESYNC_LOG_COMPLETE", iPlayer, iPlayer, iPlayer));
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_DEBUG_DESYNC_LOG_COMPLETE", iPlayer));
 
 	gDLL->getInterfaceIFace()->popupLaunch(pPopup, true, POPUPSTATE_IMMEDIATE);
 

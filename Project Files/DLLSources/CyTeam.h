@@ -11,10 +11,10 @@ class CyArea;
 class CyUnit;
 class CyTeam
 {
+	CvTeam* pointer(AssertCallerData);
 public:
 	CyTeam();
 	CyTeam(CvTeam* pTeam);		// Call from C++
-	CvTeam* getTeam() { return m_pTeam;	}	// Call from C++
 
 	// PatchMod: Victorys START
 	int getTotalProductionRate();
@@ -108,6 +108,6 @@ public:
 	bool isParentOf(int /*TeamTypes*/ eChildTeam);
 
 protected:
-	CvTeam* m_pTeam;
+	const CvTeam* m_pTeam;
 };
 #endif	// #ifndef CyTeam

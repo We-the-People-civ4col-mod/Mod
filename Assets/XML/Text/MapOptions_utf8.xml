@@ -47,7 +47,7 @@
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE</Tag>
 		<English>River Prevalence:</English>
 		<French>Abondance des rivières:</French>
-		<Russian>Распространенность больших рек</Russian>
+		<Russian>Наличие больших рек</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_0</Tag>
@@ -59,7 +59,7 @@
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_1</Tag>
 		<English>Balanced Odds of Large River Formation (default)</English>
 		<French>Probabilité moyenne de grandes rivières (par défaut)</French>
-		<Russian>Сбалансированные шансы образования (по умолчанию)</Russian>
+		<Russian>Сбалансированные шансы появления (по умолчанию)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_2</Tag>

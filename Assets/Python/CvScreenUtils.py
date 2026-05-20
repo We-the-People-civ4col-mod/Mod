@@ -11,6 +11,10 @@
 ##        4) Change normalScreenUtils to use your mod ScreenUtils ' normalScreenUtils = <Mod>ScreenUtils.<Mod>ScreenUtils '
 
 import ScreenInput as PyScreenInput
+from CvPythonExtensions import *
+import CvUtil
+
+gc = CyGlobalContext()
 
 class CvScreenUtils:
     # Place any screens that you would like to handle input in HandleInputMap
@@ -44,6 +48,11 @@ class CvScreenUtils:
     def handleInput (self, argsList):
         ' handle input is called when a screen is up '
         screenEnum, inputClass = argsList
+        
+        # tell the DLL that we are in async mode (for OOS detection)
+        # this will automatically declare leaving async mode when the instance goes out of scope
+        DesyncDetectorInstance = gc.startDesyncMonitor()
+        
         if (self.HandleInputMap and inputClass and self.HandleInputMap.has_key(screenEnum)):
             # get the screen that is active from the HandleInputMap Dictionary
             screen = self.HandleInputMap.get( inputClass.getPythonFile() )

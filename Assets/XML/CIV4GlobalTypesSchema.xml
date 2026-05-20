@@ -85,6 +85,10 @@
 	<ElementType name="FontSymbols" content="eltOnly">
 		<element type="FontSymbol" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="PlotType" content="textOnly"/>
+	<ElementType name="PlotTypes" content="eltOnly">
+		<element type="PlotType" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="EthnicityType" content="textOnly"/>
 	<ElementType name="EthnicityTypes" content="eltOnly">
 		<element type="EthnicityType" maxOccurs="*"/>

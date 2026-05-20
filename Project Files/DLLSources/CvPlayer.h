@@ -13,6 +13,7 @@
 #include "CvTalkingHeadMessage.h"
 #include "CvTradeRouteGroup.h" //R&R mod, vetiarvind, trade groups
 #include "PlayerHelperFunctions.h"
+#include "Events/EventTrigger.h"
 
 #define	UNIT_BIRTHMARK_TEMP_UNIT	20000
 
@@ -61,7 +62,7 @@ protected:
 	int m_iNumSeaCombatsWon;
 public:
 	bool isAchieveGained(AchieveTypes eAchieve) const;
-	int getAchieveYear(AchieveTypes eAchieve);
+	int getAchieveYear(AchieveTypes eAchieve) const;
 	void gainAchievement(AchieveTypes eAchieve, bool bAnnounce, CvPlot* pPlot, PlayerTypes iPlayer);
 	void doAchievements(bool afterMove);
 	void changeNumCombatsWon(int iChange);
@@ -130,37 +131,40 @@ public:
 	void withDrawAllPrivateersToPortRoyal(); // WTP, ray, Privateers DLL Diplo Event - START
 
 	// R&R, ray, Church Favours - START
-	int getNumChurchFavoursReceived();
+	int getNumChurchFavoursReceived() const;
 	void increaseNumChurchFavoursReceived();
-	int getChurchFavourPrice();
+	int getChurchFavourPrice() const;
 	// R&R, ray, Church Favours - END
 
 	//WTP, ray Kings Used Ship - START
 	int getUsedShipPrice(UnitClassTypes iUsedShipClassType) const;
 	UnitClassTypes getRandomUsedShipClassTypeID() const;
-	bool isKingWillingToTradeUsedShips();
-	void decreaseCounterForUsedShipDeals();
+	bool isKingWillingToTradeUsedShips() const;
+	void decreaseCounterForUsedShipAndForeignImmigrants();
+	void initCounterForUsedShipAndForeignImmigrants();
 	void doAILogicforUsedShipDeals();
-	void resetCounterForUsedShipDeals();
+	void resetCounterForUsedShipDeals(PlayerTypes eKing);
 	void acquireUsedShip(UnitClassTypes iUsedShipClassType, int iPrice);
 	//WTP, ray Kings Used Ship - END
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
-	int getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType, int iKingID) const;
-	UnitClassTypes getRandomForeignImmigrantClassTypeID(int iKingID) const;
-	bool isForeignKingWillingToTradeImmigrants(int iKingID);
-	void decreaseCounterForForeignKingImmigrantsDeals();
+	int getForeignImmigrantPrice(UnitClassTypes iForeignImmigrantClassType, PlayerTypes eKing) const;
+	UnitClassTypes getRandomForeignImmigrantClassTypeID(PlayerTypes eKing) const;
+	bool isForeignKingWillingToTradeImmigrants(PlayerTypes eKing) const;
 	void doAILogicforForeignImmigrants();
-	void resetCounterForForeignImmigrantsDeals();
+	void resetCounterForForeignImmigrantsDeals(PlayerTypes eKing);
 	void acquireForeignImmigrant(UnitClassTypes iForeignImmigrantClassType, int iPrice);
 	// WTP, ray, Foreign Kings, buy Immigrants - START
 
 	// R&R, ray, Bargaining - Start
 	bool tryGetNewBargainPriceSell();
 	bool tryGetNewBargainPriceBuy();
+protected:
+	void applyBargainOutcome(PlayerTypes eColonialPlayer, int iTradeBanTimer, bool bWillingToTrade);
+public:
 	// R&R, ray, Bargaining - End
 
-	void toggleMultiRowPlotList(); // TAC - TAC Interface - koma13 - START
+	void toggleMultiRowPlotList() const; // TAC - TAC Interface - koma13 - START
 
 	DllExport void init(PlayerTypes eID);
 	DllExport void setupGraphical();
@@ -284,8 +288,8 @@ public:
 	int countCityFeatures(FeatureTypes eFeature) const;
 	int countNumBuildings(BuildingTypes eBuilding) const;
 	DllExport bool canContact(PlayerTypes ePlayer) const;
-	void contact(PlayerTypes ePlayer);
-	DllExport void handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer, int iData1, int iData2);
+	void contact(PlayerTypes ePlayer) const;
+	void handleDiploEvent(DiploEventTypes eDiploEvent, PlayerTypes ePlayer, int iData1, int iData2);
 	bool canTradeWith(PlayerTypes eWhoTo) const;
 	bool canReceiveTradeCity(PlayerTypes eFromPlayer) const;
 	DllExport bool canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial = false) const;
@@ -348,7 +352,6 @@ public:
 	DllExport int getAdvancedStartPoints() const;
 	void setAdvancedStartPoints(int iNewValue);
 	void changeAdvancedStartPoints(int iChange);
-	DllExport void doAdvancedStartAction(AdvancedStartActionTypes eAction, int iX, int iY, int iData, bool bAdd);
 	void doAdvancedStartAction(AdvancedStartActionTypes eAction, Coordinates coord, int iData, bool bAdd);
 	DllExport int getAdvancedStartUnitCost(UnitTypes eUnit, bool bAdd, CvPlot* pPlot = NULL);
 	DllExport int getAdvancedStartCityCost(bool bAdd, CvPlot* pPlot = NULL);
@@ -445,10 +448,8 @@ public:
 	void setAlive(bool bNewValue);
 
 	// R&R, ray, Bargaining - Start
-	bool isWillingToBargain() const;
-	void setWillingToBargain(bool bNewValue);
-	int getTimeNoTrade() const;
-	void setTimeNoTrade(int bNewValue);
+	bool isWillingToBargain(PlayerTypes eColonialPlayer) const;
+	int getTimeNoTrade(PlayerTypes eColonialPlayer) const;
 	void decreaseTimeNoTrade();
 	// R&R, ray, Bargaining - End
 
@@ -559,7 +560,7 @@ public:
 	bool isSpecialBuildingNotRequired(SpecialBuildingTypes eIndex) const;
 	void changeSpecialBuildingNotRequiredCount(SpecialBuildingTypes eIndex, int iChange);
 	CivicTypes getCivic(CivicOptionTypes eIndex) const;
-	DllExport void setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue);
+	void setCivic(CivicOptionTypes eIndex, CivicTypes eNewValue);
 	int getImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes eIndex2) const;
 	void changeImprovementYieldChange(ImprovementTypes eIndex1, YieldTypes eIndex2, int iChange);
 	int getBuildingYieldChange(BuildingClassTypes eBuildingClass, YieldTypes eYield) const;
@@ -745,7 +746,7 @@ public:
 	bool canTradeWithEurope() const;
 	void interceptEuropeUnits();
 
-    int AI_getAttitudeValue(PlayerTypes ePlayer); // R&R, Robert Surcouf, No More Variables Hidden game option START
+    int AI_getAttitudeValue(PlayerTypes ePlayer) const; // R&R, Robert Surcouf, No More Variables Hidden game option START
 	void createEnemyPirates(); // R&R, ray, Pirates - START
 	int getSellToEuropeProfit(YieldTypes eYield, int iAmount) const;
 	int getYieldSellPrice(YieldTypes eYield) const;
@@ -810,7 +811,7 @@ public:
 	YieldTypes getHighestTradedYield(bool bCalledFrom_hasHighestTradedYield = false) const;
 	int getHighestStoredYieldCityId(YieldTypes eYield) const;
 
-	DllExport void doAction(PlayerActionTypes eAction, int iData1, int iData2, int iData3);
+	void doAction(PlayerActionTypes eAction, int iData1, int iData2, int iData3);
 	int getTradeYieldAmount(YieldTypes eYield, CvUnit* pTransport) const;
 	void setCityBillboardDirty(bool bNewValue);
 	bool isEurope() const;
@@ -971,6 +972,8 @@ public:
 	CvUnit* buyYieldUnit(YieldTypes eYield, int iAmount, CvUnit* pTransport, TradeLocationTypes eLocation);
 
 	bool is(CivCategoryTypes eCivCategory) const;
+	int calculateEuropeTravelTime(EuropeTypes eEurope) const;
+	std::vector<CvTradeRoute*> getViableTradeRoutesForUnit(const CvUnit& kUnit) const;
 
 protected:
 
@@ -1057,8 +1060,8 @@ protected:
 	bool m_bStrike;
 	bool m_bHuman;
 	// R&R, ray, Bargaining - START
-	bool m_bWillingToBargain;
-	int m_iTimeNoTrade;
+	EnumMap<PlayerTypes, bool> m_em_bWillingToBargain;
+	EnumMap<PlayerTypes, char>  m_em_iTimeNoTrade;
 	// R&R, ray, Bargaining - END
 
 	// R&R, ray, Timers Diplo Events - START
@@ -1088,12 +1091,8 @@ protected:
 	int m_iDSecondPlayerFrenchNativeWar; //WTP, ray, Colonial Intervention In Native War - START
 
 	//WTP, ray Kings Used Ship - START
-	int m_iTimerUsedShips;
+	EnumMap<PlayerTypes, char> m_em_TimerUsedShipsAndImmigrants;
 	//WTP, ray Kings Used Ship - END
-
-	// WTP, ray, Foreign Kings, buy Immigrants - START
-	int m_iTimerForeignImmigrants;
-	// WTP, ray, Foreign Kings, buy Immigrants - END
 
 	int m_iChurchFavoursReceived; // R&R, ray, Church Favours
 
@@ -1170,6 +1169,9 @@ protected:
 	std::vector<CvUnit*> m_aPortRoyalUnits; // R&R, ray, Port Royal
 	FFreeListTrashArray<CvSelectionGroupAI> m_selectionGroups;
 	FFreeListTrashArray<EventTriggeredData> m_eventsTriggered;
+
+	// === NEW: Persistent quest log texts ===
+	std::map<int, CvWString> m_mapQuestMessages;
 	CvEventMap m_mapEventsOccured;
 	CvEventMap m_mapEventCountdown;
 	UnitCombatPromotionArray m_aFreeUnitCombatPromotions;

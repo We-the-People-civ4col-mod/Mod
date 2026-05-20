@@ -2,6 +2,7 @@
 #ifndef TBB_COLO_H
 #define TBB_COLO_H
 
+#include <deque>
 #include "ThreadOverview.h"
 
 // MULTICORE can be defined or undefined in ThreadOverview.h
@@ -15,23 +16,67 @@
 #include "lib/tbb/atomic.h"
 #include "lib/tbb/blocked_range.h"
 #include "lib/tbb/cache_aligned_allocator.h"
+#include "lib/tbb/concurrent_queue.h"
 #include "lib/tbb/parallel_for.h"
 #include "lib/tbb/parallel_reduce.h"
 #include "lib/tbb/mutex.h"
 #include "lib/tbb/partitioner.h"
+#include "lib/tbb/task_group.h"
 #include "lib/tbb/task_scheduler_init.h"
 #pragma pop_macro("new")
 #pragma pop_macro("free")
 
 #else
-// singlecore wrappers to allow TBB syntax
 
+// singlecore wrappers to allow TBB syntax
 namespace tbb
 {
 	struct mutex
 	{
 		inline void lock() const {}
 		inline void unlock() const {}
+
+		class scoped_lock
+		{
+		public:
+			scoped_lock() : m_pMutex(NULL) {}
+
+			explicit scoped_lock(const mutex& m) : m_pMutex(NULL)
+			{
+				acquire(m);
+			}
+
+			~scoped_lock()
+			{
+				release();
+			}
+
+			void acquire(const mutex& m)
+			{
+				// no-op lock, but keep state for symmetry
+				m_pMutex = &m;
+				// const_cast is fine here because lock() is const anyway
+				const_cast<mutex*>(m_pMutex)->lock();
+			}
+
+			bool try_acquire(const mutex& m)
+			{
+				acquire(m);
+				return true;
+			}
+
+			void release()
+			{
+				if (m_pMutex != NULL)
+				{
+					const_cast<mutex*>(m_pMutex)->unlock();
+					m_pMutex = NULL;
+				}
+			}
+
+		private:
+			const mutex* m_pMutex;
+		};
 	};
 
 	template<typename T>
@@ -77,6 +122,25 @@ namespace tbb
 	private:
 		T m_value;
 	};
+
+	template<typename T>
+	class concurrent_queue
+	{
+	public:
+		void push(const T& v) { m_q.push_back(v); }
+
+		bool try_pop(T& out)
+		{
+			if (m_q.empty())
+				return false;
+			out = m_q.front();
+			m_q.pop_front();
+			return true;
+		}
+
+	private:
+		std::deque<T> m_q;
+	};
 }
 #endif
 
@@ -86,9 +150,7 @@ struct Threads
 	static void parallel_reduce(const Range& range, Body& body, const Partitioner& partitioner)
 	{
 #ifdef MULTICORE
-		ThreadOverview.m_bMultithreaded = true;
 		tbb::parallel_reduce(range, body, partitioner);
-		ThreadOverview.m_bMultithreaded = false;
 #else
 		body(range);
 #endif
@@ -97,9 +159,7 @@ struct Threads
 	static void parallel_for(const Range& range, Body& body, const Partitioner& partitioner)
 	{
 #ifdef MULTICORE
-		ThreadOverview.m_bMultithreaded = true;
 		tbb::parallel_for(range, body, partitioner);
-		ThreadOverview.m_bMultithreaded = false;
 #else
 		body(range);
 #endif

@@ -25,6 +25,14 @@
 #include "BetterBTSAI.h"
 // Public Functions...
 
+// <kekm.26>
+std::queue<TeamTypes> CvTeam::attacking_queue;
+std::queue<TeamTypes> CvTeam::defending_queue;
+std::queue<bool> CvTeam::newdiplo_queue;
+std::queue<WarPlanTypes> CvTeam::warplan_queue;
+bool CvTeam::bTriggeringWars = false;
+// </kekm.26>
+
 CvTeam::CvTeam()
 {
 	reset(FIRST_TEAM, true);
@@ -865,24 +873,73 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 		if (gTeamLogLevel >= 1)
 			logBBAI(" Team %d (%S) declares war on team %d", getID(), GET_PLAYER(getLeaderID()).getCivilizationDescription(0), eTeam); // BETTER_BTS_AI_MOD (10/02/09, jdog5000): AI logging
 
-		cancelDefensivePacts(getID());
-
-		for (iI = 0; iI < MAX_TEAMS; iI++)
-		{
-			if (GET_TEAM((TeamTypes)iI).isAlive())
-			{
-				if (GET_TEAM((TeamTypes)iI).isDefensivePact(eTeam))
-				{
-					GET_TEAM((TeamTypes)iI).declareWar(getID(), bNewDiplo, WARPLAN_DOGPILE);
-				}
-			}
-		}
-
-		GET_TEAM(eTeam).cancelDefensivePacts(getID());
+		// Defensive alliances are now handled by the below which avoids the issues with recursive war declarations
+		triggerDefensivePacts(eTeam, bNewDiplo); // advc: Moved into subroutine
+		// <kekm.26> The above is "updated when the war queue is emptied."
+		triggerWars();
 	}
 }
 
+// advc: Cut from declareWar
+void CvTeam::triggerDefensivePacts(TeamTypes eTarget, bool bNewDiplo)
+{
+	cancelDefensivePacts(getID());
+	CvTeamAI& kTarget = GET_TEAM(eTarget);
+	
+	for (TeamTypes eTeam = FIRST_TEAM; eTeam < NUM_TEAM_TYPES; ++eTeam)
+	{
+		CvTeam& kThirdTeam = GET_TEAM(eTeam);
 
+		if (!kThirdTeam.isAlive())
+			continue;
+
+		// Exclude ourselves and the actual target (war is already being declared at this point)
+		if (kThirdTeam.getID() == getID() || kThirdTeam.getID() == eTarget) 
+			continue;
+		// <kekm.3> Ally can already be at war with the aggressor
+		if (kThirdTeam.isAtWar(eTarget))
+			continue; // </kekm.3>
+		// Queueing ensures that cascades of defensive pacts are handled correctly,
+		// because the old recursive approach is no longer used.
+		if (kThirdTeam.isDefensivePact(eTarget))
+		{
+			// kekm.26:
+			queueWar(kThirdTeam.getID(), getID(), bNewDiplo, WARPLAN_DOGPILE, false);
+		}
+	}
+	kTarget.cancelDefensivePacts(getID());
+	// K-Mod / BBAI end.
+}
+
+/*  <kekm.26> "Changed how multiple war declarations work. declareWar used to
+	nest war declarations, now they are queued to trigger defensive pacts and
+	everything else in the correct order." */
+void CvTeam::queueWar(TeamTypes eAttackingTeam, TeamTypes eDefendingTeam,
+	bool bNewDiplo, WarPlanTypes eWarPlan, bool bPrimaryDOW)
+{
+	attacking_queue.push(eAttackingTeam);
+	defending_queue.push(eDefendingTeam);
+	newdiplo_queue.push(bNewDiplo);
+	warplan_queue.push(eWarPlan);
+}
+
+void CvTeam::triggerWars()
+{
+	if (bTriggeringWars)
+		return;
+	else bTriggeringWars = true;
+	while (!attacking_queue.empty())
+	{
+		GET_TEAM(attacking_queue.front()).declareWar(
+			defending_queue.front(), newdiplo_queue.front(),
+			warplan_queue.front());
+		attacking_queue.pop();
+		defending_queue.pop();
+		newdiplo_queue.pop();
+		warplan_queue.pop();
+	}
+	bTriggeringWars = false;
+} // </kekm.26>
 
 void CvTeam::declareWar(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan)
 {
@@ -2546,7 +2603,7 @@ void CvTeam::offerFoundingFather(FatherTypes eFather)
 //Further modified later in Jan 2024 to avoid OOS problems.
 void CvTeam::testFoundingFather()
 {
-	std::vector<FatherTypes> vFathersToCourt(NUM_FATHER_TYPES);
+	std::vector<FatherTypes> vFathersToCourt;
 	FatherTypes eFather = FIRST_FATHER;	//Reused in second loop.
 
 	//First loop, iterate through all FFs to see who will get the opportunity to hire them THIS turn.

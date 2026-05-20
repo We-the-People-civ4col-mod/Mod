@@ -20,6 +20,7 @@
 #include "FProfiler.h"
 
 #include "CvPythonCaller.h"
+#include "DesyncMonitor.h"
 
 
 class WidgetData
@@ -226,6 +227,8 @@ void CvDLLWidgetData::freeInstance()
 
 void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, const CvWidgetDataStruct &widgetDataStruct)
 {
+	CxDesyncMonitor StartAsyncExecution;
+
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
@@ -624,6 +627,8 @@ void CvDLLWidgetData::parseHelp(CvWStringBuffer &szBuffer, const CvWidgetDataStr
 // Protected Functions...
 bool CvDLLWidgetData::executeAction(const CvWidgetDataStruct &widgetDataStruct)
 {
+	CxDesyncMonitor StartAsyncExecution;
+
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
@@ -901,6 +906,8 @@ bool CvDLLWidgetData::executeAction(const CvWidgetDataStruct &widgetDataStruct)
 //	right clicking action
 bool CvDLLWidgetData::executeAltAction(const CvWidgetDataStruct &widgetDataStruct)
 {
+	CxDesyncMonitor StartAsyncExecution;
+
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
@@ -946,6 +953,8 @@ bool CvDLLWidgetData::executeAltAction(const CvWidgetDataStruct &widgetDataStruc
 
 bool CvDLLWidgetData::executeDropOn(const CvWidgetDataStruct& destinationWidgetData, const CvWidgetDataStruct& sourceWidgetData)
 {
+	CxDesyncMonitor StartAsyncExecution;
+
 	WidgetData* data = WidgetData::getNew(sourceWidgetData);
 	if (data != NULL)
 	{
@@ -1016,6 +1025,8 @@ bool CvDLLWidgetData::executeDropOn(const CvWidgetDataStruct& destinationWidgetD
 //	right clicking action
 bool CvDLLWidgetData::executeDoubleClick(const CvWidgetDataStruct& widgetDataStruct)
 {
+	CxDesyncMonitor StartAsyncExecution;
+
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
@@ -1076,6 +1087,8 @@ bool CvDLLWidgetData::executeDoubleClick(const CvWidgetDataStruct& widgetDataStr
 
 bool CvDLLWidgetData::isLink(const CvWidgetDataStruct &widgetDataStruct) const
 {
+	CxDesyncMonitor StartAsyncExecution;
+
 	WidgetData* data = WidgetData::getNew(widgetDataStruct);
 	if (data != NULL)
 	{
@@ -2336,7 +2349,7 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 
 					if (pPlot->isCityRadius())
 					{
-						CvCity* pNearestCity = GC.getMap().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getOwner(), pPlot->getTeam(), false, true);
+						CvCity* pNearestCity = GC.getMap().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getOwnerINLINE(), pPlot->getTeam(), false, true);
 						if (pNearestCity != NULL)
 						{
 							if (pPlot->isBeingWorked())
@@ -2429,7 +2442,7 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 
 					if (pPlot->isCityRadius())
 					{
-						CvCity* pNearestCity = GC.getMap().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getOwner(), pPlot->getTeam(), false, true);
+						CvCity* pNearestCity = GC.getMap().findCity(pPlot->getX_INLINE(), pPlot->getY_INLINE(), pPlot->getOwnerINLINE(), pPlot->getTeam(), false, true);
 						if (pNearestCity != NULL)
 						{
 							if (pPlot->isBeingWorked())
@@ -2473,9 +2486,9 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 			}
 			// R&R, ray, High Sea Fishing - END
 
-			if (!isEmpty(GC.getMissionInfo((MissionTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType())).getHelp()))
+			if (!isEmpty(GC.getMissionInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType()).getHelp()))
 			{
-				szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getMissionInfo((MissionTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType())).getHelp()).c_str());
+				szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getMissionInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType()).getHelp()).c_str());
 			}
 		}
 
@@ -2489,7 +2502,7 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 			{
 				GAMETEXT.setBasicUnitHelp(szBuffer, ((UnitTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandData())));
 
-				if (bAlt && GC.getCommandInfo((CommandTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType())).getAll())
+				if (bAlt && GC.getCommandInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType()).getAll())
 				{
 					iPrice = GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).upgradeAllPrice(((UnitTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandData())), pHeadSelectedUnit->getUnitType());
 				}
@@ -2631,39 +2644,39 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 			}
 			// R&R, ray , Stirring Up Natives - END
 
-			if (GC.getCommandInfo((CommandTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType())).getAll())
+			if (GC.getCommandInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType()).getAll())
 			{
 				szBuffer.append(gDLL->getText("TXT_KEY_ACTION_ALL_UNITS"));
 			}
 
-			if (!isEmpty(GC.getCommandInfo((CommandTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType())).getHelp()))
+			if (!isEmpty(GC.getCommandInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType()).getHelp()))
 			{
-				szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getCommandInfo((CommandTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType())).getHelp()).c_str());
+				szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getCommandInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType()).getHelp()).c_str());
 			}
 		}
 
 		if (GC.getActionInfo(widgetDataStruct.m_iData1).getAutomateType() != NO_AUTOMATE)
 		{
-			if (!isEmpty(GC.getAutomateInfo((ControlTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getAutomateType())).getHelp()))
+			if (!isEmpty(GC.getAutomateInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getAutomateType()).getHelp()))
 			{
-				szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getAutomateInfo((ControlTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getAutomateType())).getHelp()).c_str());
+				szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getAutomateInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getAutomateType()).getHelp()).c_str());
 			}
 		}
 	}
 
 	if (GC.getActionInfo(widgetDataStruct.m_iData1).getControlType() != NO_CONTROL)
 	{
-		if (!isEmpty(GC.getControlInfo((ControlTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getControlType())).getHelp()))
+		if (!isEmpty(GC.getControlInfo((GC.getActionInfo(widgetDataStruct.m_iData1).getControlType())).getHelp()))
 		{
-			szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getControlInfo((ControlTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getControlType())).getHelp()).c_str());
+			szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getControlInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getControlType()).getHelp()).c_str());
 		}
 	}
 
 	if (GC.getActionInfo(widgetDataStruct.m_iData1).getInterfaceModeType() != NO_INTERFACEMODE)
 	{
-		if (!isEmpty(GC.getInterfaceModeInfo((InterfaceModeTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getInterfaceModeType())).getHelp()))
+		if (!isEmpty(GC.getInterfaceModeInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getInterfaceModeType()).getHelp()))
 		{
-			szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getInterfaceModeInfo((InterfaceModeTypes)(GC.getActionInfo(widgetDataStruct.m_iData1).getInterfaceModeType())).getHelp()).c_str());
+			szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getInterfaceModeInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getInterfaceModeType()).getHelp()).c_str());
 		}
 	}
 }

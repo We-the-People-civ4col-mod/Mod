@@ -45,6 +45,7 @@ const bool defaultGatheringResource = false;
 const bool defaultIgnoreDanger = false;
 const bool defaultAllowDangerousPath = false;
 const bool defaultBarbarian = false;
+const bool defaultAllowDirectPath = false;
 
 const ProfessionTypes defaultProfession = NO_PROFESSION;
 const ProfessionTypes defaultLastProfession = NO_PROFESSION;
@@ -124,6 +125,7 @@ enum SavegameVariableTypes
 	UnitSave_LastProfessionBefore,
 
 	UnitSave_AllowDangerousPath,
+	UnitSave_AllowDirectPath,
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -192,7 +194,8 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 	case UnitSave_HasRealPromotion: return "UnitSave_HasRealPromotion";
 	case UnitSave_FreePromotionCount: return "UnitSave_FreePromotionCount";
 	case UnitSave_AllowDangerousPath: return "UnitSave_AllowDangerousPath";
-}
+	case UnitSave_AllowDirectPath: return "UnitSave_AllowDirectPath";
+	}
 	FAssertMsg(0, "Missing case");
 	return "";
 }
@@ -249,6 +252,7 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_bGatheringResource = defaultGatheringResource;
 	m_bIgnoreDanger = defaultIgnoreDanger;
 	m_bAllowDangerousPath = defaultAllowDangerousPath;
+	m_bAllowDirectPath = defaultAllowDirectPath;
 
 	m_bBarbarian = defaultBarbarian;
 
@@ -364,6 +368,7 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_FreePromotionCount: reader.Read(m_ja_iFreePromotionCount); break;
 
 		case UnitSave_AllowDangerousPath: reader.Read(m_bAllowDangerousPath); break;
+		case UnitSave_AllowDirectPath: reader.Read(m_bAllowDirectPath); break;
 		}
 	}
 
@@ -463,6 +468,7 @@ void CvUnit::write(CvSavegameWriter writer)
 	writer.Write(UnitSave_HasRealPromotion, m_embHasRealPromotion);
 	writer.Write(UnitSave_FreePromotionCount, m_ja_iFreePromotionCount);
 	writer.Write(UnitSave_AllowDangerousPath, m_bAllowDangerousPath, defaultAllowDangerousPath);
+	writer.Write(UnitSave_AllowDirectPath, m_bAllowDirectPath, defaultAllowDirectPath);
 
 	writer.Write(UnitSave_END);
 }

@@ -20,6 +20,7 @@
 #include "CvPopupInfo.h"
 #include "CvDLLInterfaceIFaceBase.h"
 #include "OpenURL.h"
+#include "DesyncMonitor.h"
 
 /// xml Editor - start - Nightinggale
 #include "CyXMLEditor.h"
@@ -96,6 +97,11 @@ CyTeam* CyGlobalContext::getCyTeam(int i)
 		bInit = true;
 	}
 	return i<MAX_TEAMS ? &cyTeams[i] : NULL;
+}
+
+CxDesyncMonitor* CyGlobalContext::startDesyncMonitor() const
+{
+	return new CxDesyncMonitor();
 }
 
 CyEffectInfo* CyGlobalContext::getEffectInfo(int /*EffectTypes*/ i) const

@@ -140,6 +140,54 @@
 		<Russian>[COLOR_POSITIVE_TEXT]%s2_city : [COLOR_REVERT]группа индейцев [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], пытавшихся утроить [COLOR_WARNING_TEXT]набег[COLOR_REVERT], схвачена! Отправьте их на плантации, Милорд! Пусть расплачиваются за свои преступления.</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_REBEL_RAID_CAPTURED_CRIMINAL</Tag>
+		<English>During the attack on %s1_city, one of the blackmailers was seized and clapped in irons.</English>
+		<German>Bei dem Angriff auf %s1_city wurde einer der Übeltäter überwältigt und in Ketten gelegt.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REBEL_RAID_CAPTURED_AFRICAN_SLAVE</Tag>
+		<English>During the attack on %s1_city, one of the revolting slaves was captured alive.</English>
+		<German>Bei dem Angriff auf %s1_city wurde einer der aufständischen Sklaven lebend gefangen genommen.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REBEL_RAID_CAPTURED_NATIVE_SLAVE</Tag>
+		<English>During the attack on %s1_city, one of the revolting native slaves was captured alive.</English>
+		<German>Bei dem Angriff auf %s1_city wurde einer der aufständischen eingeborenen Sklaven lebend gefangen genommen.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REBEL_RAID_CAPTURED_PRISONER_OF_WAR</Tag>
+		<English>During the attack on %s1_city, one of the revolting prisoners was taken back into custody.</English>
+		<German>Bei dem Angriff auf %s1_city wurde einer der aufständischen Gefangenen wieder in Gewahrsam genommen.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REBEL_RAID_GOLD</Tag>
+		<English>After the attack on %s1_city, the raiders made off with gold from the treasury.</English>
+		<German>Nach dem Angriff auf %s1_city entkamen die Plünderer mit Gold aus der Stadtkasse.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REBEL_RAID_GOODS</Tag>
+		<English>After the attack on %s1_city, the raiders looted goods and provisions.</English>
+		<German>Nach dem Angriff auf %s1_city plünderten die Aufständischen Waren und Vorräte.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REBEL_RAID_WEAPONS</Tag>
+		<English>After the attack on %s1_city, the raiders seized weapons from the stores.</English>
+		<German>Nach dem Angriff auf %s1_city brachten die Aufständischen Waffen an sich.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_REBEL_RAID_NOTHING</Tag>
+		<English>The attack on %s1_city was put down before lasting harm was done.</English>
+		<German>Der Angriff auf %s1_city wurden niedergeschlagen, bevor bleibender Schaden entstand.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_FORTBOMB_SUNK_GOOD</Tag>
 		<English>[COLOR_POSITIVE_TEXT]Victory, Milord! [COLOR_REVERT]The citadel of [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has targeted an enemy ship with its cannons, sinking it!</English>
 		<French>[COLOR_POSITIVE_TEXT]Victoire, Sire ! [COLOR_REVERT]La citadelle de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] a tiré ses canons sur un navire ennemi et l'a coulé !</French>

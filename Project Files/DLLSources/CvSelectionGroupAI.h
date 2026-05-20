@@ -41,12 +41,21 @@ public:
 	bool AI_isControlled() const;
 	bool AI_isDeclareWar(const CvPlot* pPlot = NULL);
 
-	CvPlot* AI_getMissionAIPlot();
+	CvPlot* AI_getMissionAIPlot()
+	{
+		return AI_getMissionAIPlot_();
+	}
+	CvPlot* AI_getMissionAIPlot_() const;
 
 	bool AI_isForceSeparate();
 	void AI_makeForceSeparate();
 
-	MissionAITypes AI_getMissionAIType();
+	MissionAITypes AI_getMissionAIType()
+	{
+		return AI_getMissionAIType_();
+	}
+	MissionAITypes AI_getMissionAIType_() const;
+
 	void AI_setMissionAI(MissionAITypes eNewMissionAI, CvPlot* pNewPlot, CvUnit* pNewUnit);
 	CvUnit* AI_ejectBestDefender(CvPlot* pTargetPlot);
 
@@ -68,6 +77,10 @@ public:
 
 	bool AI_isControlled() { return AI_isControlledInternal(); }
 	bool AI_isControlledInternal() const { return (!isHuman() || isAutomated()); }
+
+	// <advc.003u> Counterparts to CvSelectionGroup::getHeadUnit
+	CvUnitAI const* AI_getHeadUnit() const;
+	CvUnitAI* AI_getHeadUnit(); // </advc.003u>
 
 	enum UnloadMode
 	{

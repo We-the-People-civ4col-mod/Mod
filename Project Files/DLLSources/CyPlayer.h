@@ -8,7 +8,9 @@
 //#include "CvEnums.h"
 //#include "CvStructs.h"
 
+#include <boost/python/list.hpp>
 #include <boost/python/tuple.hpp>
+
 namespace python = boost::python;
 
 class CyUnit;
@@ -22,6 +24,7 @@ class CyTradeRouteGroup;
 
 class CyPlayer
 {
+	CvPlayer* pointer(AssertCallerData);
 public:
 
 /** NBMOD TAX **/
@@ -38,7 +41,6 @@ public:
 	// R&R, ray, Bargaining - End
 	CyPlayer();
 	CyPlayer(CvPlayer* pPlayer);		// Call from C++
-	CvPlayer* getPlayer() { return m_pPlayer;	}	// Call from C++
 	// PatchMod: Achievements START
 	bool isAchieveGained(int /*AchieveTypes*/ eAchieve);
 	int getAchieveYear(int /*AchieveTypes*/ eAchieve);
@@ -350,14 +352,12 @@ public:
 	int getRandomUsedShipClassTypeID() const;
 	int getUsedShipPrice(int iUsedShipClassType) const;
 	bool isKingWillingToTradeUsedShips() const;
-	void resetCounterForUsedShipDeals();
 	// R&R, ray, Church Favours - START
 
 	// WTP, ray, Foreign Kings, buy Immigrants - START
 	int getRandomForeignImmigrantClassTypeID(int iKingID) const;
 	int getForeignImmigrantPrice(int iForeignImmigrantClassType, int iKingID) const;
 	bool isForeignKingWillingToTradeImmigrants(int iKingID) const;
-	void resetCounterForForeignImmigrantsDeals();
 	// WTP, ray, Foreign Kings, buy Immigrants - END
 
 	int getNumTradeMessages() const;
@@ -432,8 +432,10 @@ public:
 	void setScriptData(std::string szNewValue);
 	int AI_maxGoldTrade(int iPlayer);
 	void forcePeace(int iPlayer);
+	python::list getViableTradeRoutesForUnit(CyUnit* pUnit) const;
+
 private:
-	CvPlayer* m_pPlayer;
+	const CvPlayer* m_pPlayer;
 	// R&R mod, vetiarvind, trade groups - start
 	int m_lastUpdatedTradegroup; 
 	int m_loadedTradeGroup;

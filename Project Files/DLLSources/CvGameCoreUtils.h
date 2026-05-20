@@ -21,52 +21,11 @@ class FAStarNode;
 class FAStar;
 class CvInfoBase;
 
-
-#ifndef SQR
-#define SQR(x) ( (x)*(x))
-#endif
-
 #undef max
 #undef min
 
 //sign function taken from FirePlace - JW
 template<class T> __forceinline T getSign( T x ) { return (( x < 0 ) ? T(-1) : x > 0 ? T(1) : T(0)); };
-
-inline int range(int iNum, int iLow, int iHigh)
-{
-	FAssertMsg(iHigh >= iLow, "High should be higher than low");
-
-	if (iNum < iLow)
-	{
-		return iLow;
-	}
-	else if (iNum > iHigh)
-	{
-		return iHigh;
-	}
-	else
-	{
-		return iNum;
-	}
-}
-
-inline float range(float fNum, float fLow, float fHigh)
-{
-	FAssertMsg(fHigh >= fLow, "High should be higher than low");
-
-	if (fNum < fLow)
-	{
-		return fLow;
-	}
-	else if (fNum > fHigh)
-	{
-		return fHigh;
-	}
-	else
-	{
-		return fNum;
-	}
-}
 
 inline int coordDistance(int iFrom, int iTo, int iRange, bool bWrap)
 {
@@ -172,7 +131,7 @@ inline int plotDistance(CvPlot *p1, CvPlot *p2)
 // Returns the distance between plots according to the pattern above...
 inline int stepDistance(int iX1, int iY1, int iX2, int iY2)
 {
-	return std::max(xDistance(iX1, iX2), yDistance(iY1, iY2));
+	return branchless::max(xDistance(iX1, iX2), yDistance(iY1, iY2));
 }
 
 inline int stepDistance(const Coordinates c1, const Coordinates c2)
@@ -263,9 +222,6 @@ bool isBeforeUnitCycle(const CvUnit* pFirstUnit, const CvUnit* pSecondUnit);
 
 ImprovementTypes finalImprovementUpgrade(ImprovementTypes eImprovement, int iCount = 0);
 
-__int64 getBinomialCoefficient(int iN, int iK);
-int getCombatOdds(CvUnit* pAttacker, CvUnit* pDefender);
-int getCombatOddsDraw(CvUnit* pAttacker, CvUnit* pDefender);
 
 
 DllExport void setTradeItem(TradeData* pItem, TradeableItems eItemType, int iData1, const IDInfo* pTransport);
@@ -319,6 +275,7 @@ bool PUF_isNoMission(const CvUnit* pUnit, int iData1 = -1, int iData2 = -1);
 bool PUF_isAvailableUnitAITypeGroupie(const CvUnit* pUnit, int iData1, int iData2);
 bool PUF_isUnitAITypeGroupie(const CvUnit* pUnit, int iData1, int iData2);
 // TAC - AI Assault Sea - koma13, jdog5000(BBAI) - END
+bool PUF_isMissionAIType(CvUnit const* pUnit, int iMissionAI, int iDummy = -1); // K-Mod
 
 /// post load function - start - Nightinggale
 void postLoadGameFixes();

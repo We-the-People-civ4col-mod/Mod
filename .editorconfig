@@ -1,0 +1,59 @@
+
+
+# EditorConfig info https://editorconfig.org
+
+# for notepad++ support, go to Plugins->Plugins Admin... and install EditorConfig
+
+
+# top-most EditorConfig file
+root = true
+
+# Standard for all files
+[*]
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+charset = utf-8
+
+# individual files are below this
+# even if they are often alike, they are still grouped logically in case we need to add settings specific to one group later.
+# if anything is mentioned, which is also in the standard for all files, the file specific part takes priority.
+
+# python
+[*.py]
+# exe expects windows style eol in python files
+# python coding guidelines says use 4 spaces as indentation
+end_of_line = crlf
+indent_style = space
+indent_size = 4
+
+# Makefile
+[Makefile]
+indent_style = tab
+indent_size = 4
+
+# xml
+[*.xml]
+indent_style = tab
+indent_size = 4
+
+# C++
+[*.{c,cpp,h,hpp}]
+indent_style = tab
+indent_size = 4
+
+# perl
+[*.{pl, pm}]
+indent_style = tab
+indent_size = 4
+
+# premade maps
+[*.ColonizationWBSave]
+end_of_line = crlf
+indent_style = tab
+indent_size = 4
+
+# premade maps
+[*.html]
+indent_style = tab
+indent_size = 4

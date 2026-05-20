@@ -171,7 +171,7 @@ sub processCPP
 		$line = substr($line, $index);
 		$line = substr($line, index($line, "(",)+1);
 		my @arguments = getArguments($line);
-		if (substr($arguments[0], 0, 8) eq "\"TXT_KEY")
+		if (exists $arguments[0] and length($arguments[0]) > 8 and substr($arguments[0], 0, 8) eq "\"TXT_KEY")
 		{
 			my $found_mandatory = 0;
 			my $key = substr($arguments[0], 1, -1);

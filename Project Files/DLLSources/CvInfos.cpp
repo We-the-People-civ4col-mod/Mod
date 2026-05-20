@@ -1075,11 +1075,11 @@ int CvPromotionInfo::getDomesticBonusPercent() const
 {
 	return m_iDomesticBonusPercent;
 }
-int CvPromotionInfo::getCommandType() const
+CommandTypes CvPromotionInfo::getCommandType() const
 {
 	return m_iCommandType;
 }
-void CvPromotionInfo::setCommandType(int iNewType)
+void CvPromotionInfo::setCommandType(CommandTypes iNewType)
 {
 	m_iCommandType = iNewType;
 }
@@ -1748,6 +1748,11 @@ int CvProfessionInfo::getDefaultUnitAIType() const
     return m_iDefaultUnitAIType;
 }
 
+const InfoArray<YieldTypes, int>& CvProfessionInfo::getYieldDemands() const
+{
+	return m_info_YieldDemands;
+}
+
 bool CvProfessionInfo::isWorkSlot() const
 {
 	return (m_bCitizen && !m_bWorkPlot);
@@ -1938,6 +1943,8 @@ bool CvProfessionInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->GetChildXmlValByName(&m_bUnarmed, "bUnarmed");
 	pXML->GetChildXmlValByName(&m_bNoDefensiveBonus, "bNoDefensiveBonus");
+
+	readXML(m_info_YieldDemands, "YieldDemands");
 
 	m_aYieldEquipments.clear();
 	int *aiYieldAmounts;
@@ -2214,19 +2221,19 @@ m_bVisible(false)
 CvAutomateInfo::~CvAutomateInfo()
 {
 }
-int CvAutomateInfo::getCommand() const
+CommandTypes CvAutomateInfo::getCommand() const
 {
 	return m_iCommand;
 }
-void CvAutomateInfo::setCommand(int i)
+void CvAutomateInfo::setCommand(CommandTypes i)
 {
 	m_iCommand = i;
 }
-int CvAutomateInfo::getAutomate() const
+AutomateTypes CvAutomateInfo::getAutomate() const
 {
 	return m_iAutomate;
 }
-void CvAutomateInfo::setAutomate(int i)
+void CvAutomateInfo::setAutomate(AutomateTypes i)
 {
 	m_iAutomate = i;
 }
@@ -2246,9 +2253,9 @@ bool CvAutomateInfo::read(CvXMLLoadUtility* pXML)
 		return false;
 	}
 	pXML->GetChildXmlValByName(szTextVal, "Command");
-	setCommand(pXML->FindInInfoClass(szTextVal));
+	setCommand((CommandTypes)pXML->FindInInfoClass(szTextVal));
 	pXML->GetChildXmlValByName(szTextVal, "Automate");
-	setAutomate(GC.getInfoTypeForString(szTextVal));
+	setAutomate((AutomateTypes)GC.getInfoTypeForString(szTextVal));
 	pXML->GetChildXmlValByName(&m_bConfirmCommand, "bConfirmCommand");
 	pXML->GetChildXmlValByName(&m_bVisible, "bVisible");
 	return true;
@@ -2309,7 +2316,7 @@ int CvActionInfo::getCommandData() const
 	}
 	return iData;
 }
-int CvActionInfo::getAutomateType() const
+AutomateTypes CvActionInfo::getAutomateType() const
 {
 	if (ACTIONSUBTYPE_AUTOMATE == m_eSubType)
 	{
@@ -2317,31 +2324,31 @@ int CvActionInfo::getAutomateType() const
 	}
 	return NO_AUTOMATE;
 }
-int CvActionInfo::getInterfaceModeType() const
+InterfaceModeTypes CvActionInfo::getInterfaceModeType() const
 {
 	if (ACTIONSUBTYPE_INTERFACEMODE == m_eSubType)
 	{
-		return m_iOriginalIndex;
+		return static_cast<InterfaceModeTypes>(m_iOriginalIndex);
 	}
 	return NO_INTERFACEMODE;
 }
-int CvActionInfo::getMissionType() const
+MissionTypes CvActionInfo::getMissionType() const
 {
 	if (ACTIONSUBTYPE_BUILD == m_eSubType)
 	{
-		return GC.getBuildInfo((BuildTypes)m_iOriginalIndex).getMissionType();
+		return (MissionTypes)GC.getBuildInfo((BuildTypes)m_iOriginalIndex).getMissionType();
 	}
 	else if (ACTIONSUBTYPE_MISSION == m_eSubType)
 	{
-		return m_iOriginalIndex;
+		return static_cast<MissionTypes>(m_iOriginalIndex);
 	}
 	return NO_MISSION;
 }
-int CvActionInfo::getCommandType() const
+CommandTypes CvActionInfo::getCommandType() const
 {
 	if (ACTIONSUBTYPE_COMMAND == m_eSubType)
 	{
-		return m_iOriginalIndex;
+		return static_cast<CommandTypes>(m_iOriginalIndex);
 	}
 	else if (ACTIONSUBTYPE_PROMOTION == m_eSubType)
 	{
@@ -2357,13 +2364,13 @@ int CvActionInfo::getCommandType() const
 	}
 	return NO_COMMAND;
 }
-int CvActionInfo::getControlType() const
+ControlTypes CvActionInfo::getControlType() const
 {
 	if (ACTIONSUBTYPE_CONTROL == m_eSubType)
 	{
-		return m_iOriginalIndex;
+		return static_cast<ControlTypes>(m_iOriginalIndex);
 	}
-	return -1;
+	return NO_CONTROL;
 }
 int CvActionInfo::getOriginalIndex() const
 {
@@ -2853,15 +2860,10 @@ m_bNoBadGoodies(false),
 m_bOnlyDefensive(false),
 m_bNoCapture(false),
 m_bQuickCombat(false),
-m_bRivalTerritory(false),
 m_bMilitaryProduction(false),
 m_bFound(false),
 m_bInvisible(false),
 m_bNoDefensiveBonus(false),
-m_bCanMoveImpassable(false),
-m_bCanMoveAllTerrain(false),
-m_bFlatMovementCost(false),
-m_bIgnoreTerrainCost(false),
 m_bMechanized(false),
 m_bLineOfSight(false),
 m_bHiddenNationality(false),
@@ -2897,15 +2899,10 @@ m_bGatherBoat(false),
 m_bAnimal(false),
 // < JAnimals Mod End >
 m_eLeaderPromotion(NO_PROMOTION),
-/// Move Into Peak - start - Nightinggale
-m_bMoveIntoPeak(false),
-/// Move Into Peak - end - Nightinggale
 m_abUpgradeUnitClass(NULL),
 m_abUnitAIType(NULL),
 m_abNotUnitAIType(NULL),
 m_abBuilds(NULL),
-m_abTerrainImpassable(NULL),
-m_abFeatureImpassable(NULL),
 // < JAnimals Mod Start >
 m_abTerrainNative(NULL),
 // < JAnimals Mod End >
@@ -2933,6 +2930,7 @@ m_abProfessionsNotAllowed(NULL),
 m_abPrereqOrBuilding(NULL),
 m_paszUnitNames(NULL)
 {
+	m_baseMovementAbility.reset();
 }
 //------------------------------------------------------------------------------------------------------
 //
@@ -2947,8 +2945,8 @@ CvUnitInfo::~CvUnitInfo()
 	SAFE_DELETE_ARRAY(m_abUnitAIType);
 	SAFE_DELETE_ARRAY(m_abNotUnitAIType);
 	SAFE_DELETE_ARRAY(m_abBuilds);
-	SAFE_DELETE_ARRAY(m_abTerrainImpassable);
-	SAFE_DELETE_ARRAY(m_abFeatureImpassable);
+	SAFE_DELETE_ARRAY(m_baseMovementAbility.m_abTerrainImpassable);
+	SAFE_DELETE_ARRAY(m_baseMovementAbility.m_abFeatureImpassable);
 	// < JAnimals Mod Start >
 	SAFE_DELETE_ARRAY(m_abTerrainNative);
 	// < JAnimals Mod End >
@@ -3249,7 +3247,7 @@ bool CvUnitInfo::isQuickCombat() const
 }
 bool CvUnitInfo::isRivalTerritory() const
 {
-	return m_bRivalTerritory;
+	return m_baseMovementAbility.m_bRivalTerritory;
 }
 bool CvUnitInfo::isMilitaryProduction() const
 {
@@ -3273,19 +3271,19 @@ bool CvUnitInfo::isNoDefensiveBonus() const
 }
 bool CvUnitInfo::isCanMoveImpassable() const
 {
-	return m_bCanMoveImpassable;
+	return m_baseMovementAbility.m_bCanMoveImpassable;
 }
 bool CvUnitInfo::isCanMoveAllTerrain() const
 {
-	return m_bCanMoveAllTerrain;
+	return m_baseMovementAbility.m_bCanMoveAllTerrain;
 }
 bool CvUnitInfo::isFlatMovementCost() const
 {
-	return m_bFlatMovementCost;
+	return m_baseMovementAbility.m_bFlatMovementCost;
 }
 bool CvUnitInfo::isIgnoreTerrainCost() const
 {
-	return m_bIgnoreTerrainCost;
+	return m_baseMovementAbility.m_bIgnoreTerrainCost;
 }
 bool CvUnitInfo::isMechUnit() const
 {
@@ -3421,11 +3419,11 @@ float CvUnitInfo::getUnitPadTime(int iProfession) const
 {
 	return getProfessionMeshGroup(iProfession).getPadTime();
 }
-int CvUnitInfo::getCommandType() const
+CommandTypes CvUnitInfo::getCommandType() const
 {
 	return m_iCommandType;
 }
-void CvUnitInfo::setCommandType(int iNewType)
+void CvUnitInfo::setCommandType(CommandTypes iNewType)
 {
 	m_iCommandType = iNewType;
 }
@@ -3546,13 +3544,13 @@ bool CvUnitInfo::getTerrainImpassable(int i) const
 {
 	FAssertMsg(i < GC.getNumTerrainInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_abTerrainImpassable ? m_abTerrainImpassable[i] : false;
+	return m_baseMovementAbility.m_abTerrainImpassable ? m_baseMovementAbility.m_abTerrainImpassable[i] : false;
 }
 bool CvUnitInfo::getFeatureImpassable(int i) const
 {
 	FAssertMsg(i < GC.getNumFeatureInfos(), "Index out of bounds");
 	FAssertMsg(i > -1, "Index out of bounds");
-	return m_abFeatureImpassable ? m_abFeatureImpassable[i] : false;
+	return m_baseMovementAbility.m_abFeatureImpassable ? m_baseMovementAbility.m_abFeatureImpassable[i] : false;
 }
 
 // < JAnimals Mod Start >
@@ -3796,15 +3794,15 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bOnlyDefensive);
 	stream->Read(&m_bNoCapture);
 	stream->Read(&m_bQuickCombat);
-	stream->Read(&m_bRivalTerritory);
+	stream->Read(&m_baseMovementAbility.m_bRivalTerritory);
 	stream->Read(&m_bMilitaryProduction);
 	stream->Read(&m_bFound);
 	stream->Read(&m_bInvisible);
 	stream->Read(&m_bNoDefensiveBonus);
-	stream->Read(&m_bCanMoveImpassable);
-	stream->Read(&m_bCanMoveAllTerrain);
-	stream->Read(&m_bFlatMovementCost);
-	stream->Read(&m_bIgnoreTerrainCost);
+	stream->Read(&m_baseMovementAbility.m_bCanMoveImpassable);
+	stream->Read(&m_baseMovementAbility.m_bCanMoveAllTerrain);
+	stream->Read(&m_baseMovementAbility.m_bFlatMovementCost);
+	stream->Read(&m_baseMovementAbility.m_bIgnoreTerrainCost);
 	stream->Read(&m_bMechanized);
 	stream->Read(&m_bLineOfSight);
 	stream->Read(&m_bHiddenNationality);
@@ -3902,12 +3900,12 @@ void CvUnitInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_abBuilds);
 	m_abBuilds = new bool[GC.getNumBuildInfos()];
 	stream->Read(GC.getNumBuildInfos(), m_abBuilds);
-	SAFE_DELETE_ARRAY(m_abTerrainImpassable);
-	m_abTerrainImpassable = new bool[GC.getNumTerrainInfos()];
-	stream->Read(GC.getNumTerrainInfos(), m_abTerrainImpassable);
-	SAFE_DELETE_ARRAY(m_abFeatureImpassable);
-	m_abFeatureImpassable = new bool[GC.getNumFeatureInfos()];
-	stream->Read(GC.getNumFeatureInfos(), m_abFeatureImpassable);
+	SAFE_DELETE_ARRAY(m_baseMovementAbility.m_abTerrainImpassable);
+	m_baseMovementAbility.m_abTerrainImpassable = new bool[GC.getNumTerrainInfos()];
+	stream->Read(GC.getNumTerrainInfos(), m_baseMovementAbility.m_abTerrainImpassable);
+	SAFE_DELETE_ARRAY(m_baseMovementAbility.m_abFeatureImpassable);
+	m_baseMovementAbility.m_abFeatureImpassable = new bool[GC.getNumFeatureInfos()];
+	stream->Read(GC.getNumFeatureInfos(), m_baseMovementAbility.m_abFeatureImpassable);
 	// < JAnimals Mod Start >
 	SAFE_DELETE_ARRAY(m_abTerrainNative);
 	m_abTerrainNative = new bool[GC.getNumTerrainInfos()];
@@ -4023,15 +4021,15 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bOnlyDefensive);
 	stream->Write(m_bNoCapture);
 	stream->Write(m_bQuickCombat);
-	stream->Write(m_bRivalTerritory);
+	stream->Write(m_baseMovementAbility.m_bRivalTerritory);
 	stream->Write(m_bMilitaryProduction);
 	stream->Write(m_bFound);
 	stream->Write(m_bInvisible);
 	stream->Write(m_bNoDefensiveBonus);
-	stream->Write(m_bCanMoveImpassable);
-	stream->Write(m_bCanMoveAllTerrain);
-	stream->Write(m_bFlatMovementCost);
-	stream->Write(m_bIgnoreTerrainCost);
+	stream->Write(m_baseMovementAbility.m_bCanMoveImpassable);
+	stream->Write(m_baseMovementAbility.m_bCanMoveAllTerrain);
+	stream->Write(m_baseMovementAbility.m_bFlatMovementCost);
+	stream->Write(m_baseMovementAbility.m_bIgnoreTerrainCost);
 	stream->Write(m_bMechanized);
 	stream->Write(m_bLineOfSight);
 	stream->Write(m_bHiddenNationality);
@@ -4089,8 +4087,8 @@ void CvUnitInfo::write(FDataStreamBase* stream)
 	stream->Write(NUM_UNITAI_TYPES, m_abUnitAIType);
 	stream->Write(NUM_UNITAI_TYPES, m_abNotUnitAIType);
 	stream->Write(GC.getNumBuildInfos(), m_abBuilds);
-	stream->Write(GC.getNumTerrainInfos(), m_abTerrainImpassable);
-	stream->Write(GC.getNumFeatureInfos(), m_abFeatureImpassable);
+	stream->Write(GC.getNumTerrainInfos(), m_baseMovementAbility.m_abTerrainImpassable);
+	stream->Write(GC.getNumFeatureInfos(), m_baseMovementAbility.m_abFeatureImpassable);
 	// < JAnimals Mod Start >
 	stream->Write(GC.getNumTerrainInfos(), m_abTerrainNative);
 	// < JAnimals Mod End >
@@ -4165,15 +4163,15 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bOnlyDefensive, "bOnlyDefensive");
 	pXML->GetChildXmlValByName(&m_bNoCapture, "bNoCapture");
 	pXML->GetChildXmlValByName(&m_bQuickCombat, "bQuickCombat");
-	pXML->GetChildXmlValByName(&m_bRivalTerritory, "bRivalTerritory");
+	pXML->GetChildXmlValByName(&m_baseMovementAbility.m_bRivalTerritory, "bRivalTerritory");
 	pXML->GetChildXmlValByName(&m_bMilitaryProduction, "bMilitaryProduction");
 	pXML->GetChildXmlValByName(&m_bFound, "bFound");
 	pXML->GetChildXmlValByName(&m_bInvisible, "bInvisible");
 	pXML->GetChildXmlValByName(&m_bNoDefensiveBonus, "bNoDefensiveBonus");
-	pXML->GetChildXmlValByName(&m_bCanMoveImpassable, "bCanMoveImpassable");
-	pXML->GetChildXmlValByName(&m_bCanMoveAllTerrain, "bCanMoveAllTerrain");
-	pXML->GetChildXmlValByName(&m_bFlatMovementCost, "bFlatMovementCost");
-	pXML->GetChildXmlValByName(&m_bIgnoreTerrainCost, "bIgnoreTerrainCost");
+	pXML->GetChildXmlValByName(&m_baseMovementAbility.m_bCanMoveImpassable, "bCanMoveImpassable");
+	pXML->GetChildXmlValByName(&m_baseMovementAbility.m_bCanMoveAllTerrain, "bCanMoveAllTerrain");
+	pXML->GetChildXmlValByName(&m_baseMovementAbility.m_bFlatMovementCost, "bFlatMovementCost");
+	pXML->GetChildXmlValByName(&m_baseMovementAbility.m_bIgnoreTerrainCost, "bIgnoreTerrainCost");
 	pXML->GetChildXmlValByName(&m_bMechanized,"bMechanized",false);
 	pXML->GetChildXmlValByName(&m_bLineOfSight,"bLineOfSight",false);
 	pXML->GetChildXmlValByName(&m_bHiddenNationality,"bHiddenNationality",false);
@@ -4212,7 +4210,7 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bAnimal, "bAnimal", false);
 	// < JAnimals Mod End >
 	/// Move Into Peak - start - Nightinggale
-	pXML->GetChildXmlValByName(&m_bMoveIntoPeak, "bMoveIntoPeak");
+	pXML->GetChildXmlValByName(&m_baseMovementAbility.m_bMoveIntoPeak, "bMoveIntoPeak");
 	/// Move Into Peak - end - Nightinggale
 	pXML->SetVariableListTagPair(&m_abUpgradeUnitClass, "UnitClassUpgrades", GC.getNumUnitClassInfos(), false);
 	pXML->SetVariableListTagPair(&m_abUnitAIType, "UnitAIs", NUM_UNITAI_TYPES, false);
@@ -4246,8 +4244,8 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iGoldFromGoodiesAndChiefsModifier, "iGoldFromGoodiesAndChiefsModifier"); // WTP, ray, Scout Gold Modifier for Goodies and Chiefs at Unit - START
 	pXML->GetChildXmlValByName(&m_iMissionaryRateModifier, "iMissionaryRateModifier");
 	pXML->GetChildXmlValByName(&m_iNativeTradeRateModifier, "iNativeTradeRateModifier"); // WTP, ray, Native Trade Posts - START
-	pXML->SetVariableListTagPair(&m_abTerrainImpassable, "TerrainImpassables", GC.getNumTerrainInfos(), false);
-	pXML->SetVariableListTagPair(&m_abFeatureImpassable, "FeatureImpassables", GC.getNumFeatureInfos(), false);
+	pXML->SetVariableListTagPair(&m_baseMovementAbility.m_abTerrainImpassable, "TerrainImpassables", GC.getNumTerrainInfos(), false);
+	pXML->SetVariableListTagPair(&m_baseMovementAbility.m_abFeatureImpassable, "FeatureImpassables", GC.getNumFeatureInfos(), false);
 	// < JAnimals Mod Start >
 	pXML->SetVariableListTagPair(&m_abTerrainNative, "TerrainNatives", GC.getNumTerrainInfos(), false);
 	// < JAnimals Mod End >
@@ -8230,8 +8228,8 @@ bool CvGoodyInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_iCityGoodyWeight, "iCityGoodyWeight");
 	pXML->GetChildXmlValByName(&m_bWaterGoody, "bWaterGoody"); // R&R, ray, Goodies on Water
 	pXML->GetChildXmlValByName(&m_bUnique, "bUnique"); // // R&R, ray, Goody Enhancement
-	// WTP, ray, Unit spawning Goodies and Goody Huts - START
 	pXML->GetChildXmlValByName(&m_iMinTurnValid, "iMinTurnValid");
+	// WTP, ray, Unit spawning Goodies and Goody Huts - START
 	pXML->GetChildXmlValByName(&m_iRandNumHostilesSpawned, "iRandNumHostilesSpawned");
 	pXML->GetChildXmlValByName(&m_bSpawnHostileUnitsAsXML, "bSpawnHostileUnitsAsXML");
 	pXML->GetChildXmlValByName(&m_bSpawnHostileAnimals, "bSpawnHostileAnimals");
@@ -14628,6 +14626,12 @@ bool CvGraphicOptionInfo::read(CvXMLLoadUtility* pXML)
 //
 //
 
+CvEventTriggerInfo::PlotTriggers::PlotTriggers()
+	: CanBuildImprovement(NO_IMPROVEMENT)
+	, HasNoImprovement(false)
+{
+}
+
 CvEventTriggerInfo::UnitTriggers::UnitTriggers()
 	: Tracked(false)
 	, OnPlot(false)
@@ -14647,6 +14651,7 @@ CvEventTriggerInfo::CvEventTriggerInfo() :
 	m_iNumPlotsRequired(0),
 	m_iOtherPlayerShareBorders(0),
 	m_eCivic(NO_CIVIC),
+	m_eRequiredColonialStatus(COLONIAL_STATUS_ANY),
 	m_iMinPopulation(0),
 	m_iMaxPopulation(0),
 	m_iMinMapLandmass(0),
@@ -14660,6 +14665,7 @@ CvEventTriggerInfo::CvEventTriggerInfo() :
 	m_bRecurring(false),
 	m_bGlobal(false),
 	m_bPickPlayer(false),
+	m_bOtherPlayerPlotOwner(false),
 	m_bOtherPlayerWar(false),
 	m_bOtherPlayerAI(false),
 	m_bOtherPlayerNative(false),
@@ -14672,11 +14678,17 @@ CvEventTriggerInfo::CvEventTriggerInfo() :
 	m_bProbabilityUnitMultiply(false),
 	m_bProbabilityBuildingMultiply(false),
 	m_bPrereqEventCity(false),
-	m_bFrontPopup(false)
+	m_bFrontPopup(false),
+	m_iMinTurn(0)
 {
 }
 CvEventTriggerInfo::~CvEventTriggerInfo()
 {
+}
+
+const CvEventTriggerInfo::PlotTriggers& CvEventTriggerInfo::plotTriggers() const
+{
+	return m_PlotTrigger;
 }
 
 const CvEventTriggerInfo::UnitTriggers& CvEventTriggerInfo::unitTriggers() const
@@ -14731,6 +14743,10 @@ int CvEventTriggerInfo::getOtherPlayerShareBorders() const
 CivicTypes CvEventTriggerInfo::getCivic() const
 {
 	return m_eCivic;
+}
+ColonialStatusTypes CvEventTriggerInfo::getRequiredColonialStatus() const
+{
+	return m_eRequiredColonialStatus;
 }
 int CvEventTriggerInfo::PY_getCivic() const
 {
@@ -14905,6 +14921,10 @@ bool CvEventTriggerInfo::isGlobal() const
 {
 	return m_bGlobal;
 }
+bool CvEventTriggerInfo::isOtherPlayerPlotOwner() const
+{
+	return m_bOtherPlayerPlotOwner;
+}
 bool CvEventTriggerInfo::isPickPlayer() const
 {
 	return m_bPickPlayer;
@@ -14983,6 +15003,11 @@ const char* CvEventTriggerInfo::getPythonCanDoUnit() const
 {
 	return m_szPythonCanDoUnit;
 }
+int CvEventTriggerInfo::getMinTurn() const
+{
+	FAssert(m_iMinTurn >= 0);
+	return m_iMinTurn;
+}
 void CvEventTriggerInfo::read(FDataStreamBase* stream)
 {
 	int iNumElements;
@@ -14998,6 +15023,7 @@ void CvEventTriggerInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_iNumPlotsRequired);
 	stream->Read(&m_iOtherPlayerShareBorders);
 	stream->Read(&m_eCivic);
+	stream->Read(&m_eRequiredColonialStatus);
 	stream->Read(&m_iMinPopulation);
 	stream->Read(&m_iMaxPopulation);
 	stream->Read(&m_iMinMapLandmass);
@@ -15028,6 +15054,10 @@ void CvEventTriggerInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bProbabilityBuildingMultiply);
 	stream->Read(&m_bPrereqEventCity);
 	stream->Read(&m_bFrontPopup);
+	if (uiFlag > 1)
+	{
+		stream->Read(&m_bOtherPlayerPlotOwner);
+	}
 	stream->Read(&iNumElements);
 	m_aszText.clear();
 	for (int i = 0; i < iNumElements; ++i)
@@ -15052,11 +15082,14 @@ void CvEventTriggerInfo::read(FDataStreamBase* stream)
 	stream->ReadString(m_szPythonCanDo);
 	stream->ReadString(m_szPythonCanDoCity);
 	stream->ReadString(m_szPythonCanDoUnit);
+	if (uiFlag > 0)
+		stream->Read(&m_iMinTurn);
 }
+
 void CvEventTriggerInfo::write(FDataStreamBase* stream)
 {
 	CvInfoBase::write(stream);
-	uint uiFlag=0;
+	uint uiFlag=2; // Added iMinTurn and bOtherPlayerPlotOwner
 	stream->Write(uiFlag);		// flag for expansion
 	stream->Write(m_iPercentGamesActive);
 	stream->Write(m_iProbability);
@@ -15065,6 +15098,7 @@ void CvEventTriggerInfo::write(FDataStreamBase* stream)
 	stream->Write(m_iNumPlotsRequired);
 	stream->Write(m_iOtherPlayerShareBorders);
 	stream->Write(m_eCivic);
+	stream->Write(m_eRequiredColonialStatus);
 	stream->Write(m_iMinPopulation);
 	stream->Write(m_iMaxPopulation);
 	stream->Write(m_iMinMapLandmass);
@@ -15094,6 +15128,7 @@ void CvEventTriggerInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bProbabilityBuildingMultiply);
 	stream->Write(m_bPrereqEventCity);
 	stream->Write(m_bFrontPopup);
+	stream->Write(m_bOtherPlayerPlotOwner);
 	stream->Write(m_aszText.size());
 	for (std::vector<CvWString>::iterator it = m_aszText.begin(); it != m_aszText.end(); ++it)
 	{
@@ -15112,6 +15147,7 @@ void CvEventTriggerInfo::write(FDataStreamBase* stream)
 	stream->WriteString(m_szPythonCanDo);
 	stream->WriteString(m_szPythonCanDoCity);
 	stream->WriteString(m_szPythonCanDoUnit);
+	stream->Write(m_iMinTurn);
 }
 bool CvEventTriggerInfo::read(CvXMLLoadUtility* pXML)
 {
@@ -15147,18 +15183,34 @@ bool CvEventTriggerInfo::read(CvXMLLoadUtility* pXML)
 		InfoArray<PlotTypes> ia;
 		readXML(ia, "PlotTypes");
 		ia.addTo(m_em_PlotTypes);
+
+		pXML->GetEnum(getType(), m_PlotTrigger.CanBuildImprovement, "eCanBuildImprovement", false);
+		pXML->GetChildXmlValByName(&m_PlotTrigger.HasNoImprovement, "bHasNoImprovement");
+
 		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
 	}
 
+	pXML->GetEnum(getType(), m_eCivic, "eCivic", false);
+	CvString szRequiredColonialStatus;
+	if (pXML->GetChildXmlValByName(szRequiredColonialStatus, "RequiredColonialStatus"))
 	{
-		PlotTypes ePlot;
-		pXML->GetEnum(getType(), ePlot, "ePlotType", false); 
-		if (ePlot != NO_PLOT)
+		if (szRequiredColonialStatus == "COLONIAL_STATUS_COLONIAL")
 		{
-			m_em_PlotTypes.set(ePlot, true);
+			m_eRequiredColonialStatus = COLONIAL_STATUS_COLONIAL;
+		}
+		else if (szRequiredColonialStatus == "COLONIAL_STATUS_IN_REVOLUTION")
+		{
+			m_eRequiredColonialStatus = COLONIAL_STATUS_IN_REVOLUTION;
+		}
+		else if (szRequiredColonialStatus == "COLONIAL_STATUS_INDEPENDENT")
+		{
+			m_eRequiredColonialStatus = COLONIAL_STATUS_INDEPENDENT;
+		}
+		else
+		{
+			m_eRequiredColonialStatus = COLONIAL_STATUS_ANY;
 		}
 	}
-	pXML->GetEnum(getType(), m_eCivic, "eCivic", false);
 	pXML->GetChildXmlValByName(&m_iOtherPlayerShareBorders, "iOtherPlayerShareBorders");
 	pXML->GetChildXmlValByName(&m_iMinPopulation, "iMinPopulation");
 	pXML->GetChildXmlValByName(&m_iMaxPopulation, "iMaxPopulation");
@@ -15269,6 +15321,7 @@ bool CvEventTriggerInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bRecurring, "bRecurring");
 	pXML->GetChildXmlValByName(&m_bGlobal, "bGlobal");
 	pXML->GetChildXmlValByName(&m_bPickPlayer, "bPickPlayer");
+	pXML->GetChildXmlValByName(&m_bOtherPlayerPlotOwner, "bOtherPlayerPlotOwner");
 	pXML->GetChildXmlValByName(&m_bOtherPlayerWar, "bOtherPlayerWar");
 	pXML->GetChildXmlValByName(&m_bOtherPlayerAI, "bOtherPlayerAI");
 	pXML->GetChildXmlValByName(&m_bOtherPlayerNative, "bOtherPlayerNative");
@@ -15286,6 +15339,13 @@ bool CvEventTriggerInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(m_szPythonCanDo, "PythonCanDo");
 	pXML->GetChildXmlValByName(m_szPythonCanDoCity, "PythonCanDoCity");
 	pXML->GetChildXmlValByName(m_szPythonCanDoUnit, "PythonCanDoUnit");
+		
+	 // iMinTurn is optional
+	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(), "iMinTurn"))
+	{
+		pXML->GetXmlVal(&m_iMinTurn, 0);
+		gDLL->getXMLIFace()->SetToParent(pXML->GetXML());
+	}
 	return true;
 }
 

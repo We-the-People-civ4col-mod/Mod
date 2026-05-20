@@ -39,6 +39,9 @@ public:
 	CyPlayer* getCyActivePlayer();
 	CvRandom& getCyASyncRand() const;
 	CyTeam* getCyTeam(int i);
+
+	class CxDesyncMonitor* startDesyncMonitor() const;
+
 	CvArtFileMgr* getCvArtFileMgr() const;
 	CyEffectInfo* getEffectInfo(int i) const;
 	CyTerrainInfo* getTerrainInfo(int i) const;

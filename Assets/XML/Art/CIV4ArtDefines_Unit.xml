@@ -1608,8 +1608,8 @@
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/Treasure.dds</FullLengthIcon>
 			<fScale>0.48</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Units/Treasure/Treasure.nif</NIF>
-			<KFM>Art/Units/Treasure/Treasure.kfm</KFM>
+			<NIF>Art/Units/Ships_Transport/Treasure/Treasure.nif</NIF>
+			<KFM>Art/Units/Ships_Transport/Treasure/Treasure.kfm</KFM>
 			<TrailDefinition>
 				<Texture>Art/Shared/wheeltread.dds</Texture>
 				<fWidth>1.2</fWidth>

@@ -26,6 +26,7 @@ class CvFeature;
 class CvUnit;
 class CvSymbol;
 class CvFlagEntity;
+class EXE_Plot;
 
 typedef bool (*ConstPlotUnitFunc)( const CvUnit* pUnit, int iData1, int iData2);
 typedef bool (*PlotUnitFunc)(CvUnit* pUnit, int iData1, int iData2);
@@ -392,6 +393,7 @@ public:
 	void setRouteType(RouteTypes eNewValue);
 	void updateCityRoute();
 	DllExport CvCity* getPlotCity() const;
+	CvCityAI* AI_getPlotCity() const;
 	void setPlotCity(CvCity* pNewValue);
 	CvCity* getWorkingCity() const;
 	void updateWorkingCity();
@@ -444,7 +446,7 @@ public:
 	int getBuyCultureAmount(PlayerTypes ePlayer) const;
 	int getBuyPrice(PlayerTypes ePlayer) const;
 	int getFoundValue(PlayerTypes eIndex);
-	bool isBestAdjacentFound(PlayerTypes eIndex);
+	bool isBestAdjacentFound(PlayerTypes eIndex) const;
 	void setFoundValue(PlayerTypes eIndex, int iNewValue);
 	int getPlayerCityRadiusCount(PlayerTypes eIndex) const;
 	bool isPlayerCityRadius(PlayerTypes eIndex) const;
@@ -550,6 +552,8 @@ public:
 	void writeDesyncLog(FILE *f);
 
 	int getTurnDamage() const;
+
+	EXE_Plot EXE();
 
 protected:
 

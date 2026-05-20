@@ -28,6 +28,7 @@ my @enumsToSkip =
 	"ContactTypes",
 	"CitySizeTypes",
 	"FootstepAudioTypes",
+	"PlotTypes",
 );
 
 my @enumsToNotUseEnumCounter =

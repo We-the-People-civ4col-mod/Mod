@@ -7,6 +7,15 @@
 #include "CyArea.h"
 #include "CvTeam.h"
 #include "CyUnit.h"
+#include "DesyncMonitor.h"
+
+CvTeam* CyTeam::pointer(AssertCallerData data)
+{
+	FAssertWithCaller(data, CxDesyncMonitor::isAlwaysSync());
+	FAssertWithCaller(data, m_pTeam != NULL);
+	return (CvTeam*)m_pTeam;
+}
+
 CyTeam::CyTeam() : m_pTeam(NULL)
 {
 }
@@ -16,7 +25,7 @@ CyTeam::CyTeam(CvTeam* pTeam) : m_pTeam(pTeam)
 void CyTeam::addTeam(int /*TeamTypes*/ eTeam)
 {
 	if (m_pTeam)
-		m_pTeam->addTeam((TeamTypes)eTeam);
+		pointer(CREATE_ASSERT_DATA)->addTeam((TeamTypes)eTeam);
 }
 bool CyTeam::canChangeWarPeace(int /*TeamTypes*/ eTeam)
 {
@@ -29,12 +38,12 @@ bool CyTeam::canDeclareWar(int /*TeamTypes*/ eTeam)
 void CyTeam::declareWar(int /*TeamTypes*/ eTeam, bool bNewDiplo, int /*WarPlanTypes*/ eWarPlan)
 {
 	if (m_pTeam)
-		m_pTeam->declareWar((TeamTypes)eTeam, bNewDiplo, (WarPlanTypes)eWarPlan);
+		pointer(CREATE_ASSERT_DATA)->declareWar((TeamTypes)eTeam, bNewDiplo, (WarPlanTypes)eWarPlan);
 }
 void CyTeam::makePeace(int /*TeamTypes*/ eTeam)
 {
 	if (m_pTeam)
-		m_pTeam->makePeace((TeamTypes)eTeam);
+		pointer(CREATE_ASSERT_DATA)->makePeace((TeamTypes)eTeam);
 }
 bool CyTeam::canContact(int /*TeamTypes*/ eTeam)
 {
@@ -43,17 +52,17 @@ bool CyTeam::canContact(int /*TeamTypes*/ eTeam)
 void CyTeam::meet(int /*TeamTypes*/ eTeam, bool bNewDiplo)
 {
 	if (m_pTeam)
-		m_pTeam->meet((TeamTypes)eTeam, bNewDiplo);
+		pointer(CREATE_ASSERT_DATA)->meet((TeamTypes)eTeam, bNewDiplo);
 }
 void CyTeam::signOpenBorders(int /*TeamTypes*/ eTeam)
 {
 	if (m_pTeam)
-		m_pTeam->signOpenBorders((TeamTypes)eTeam);
+		pointer(CREATE_ASSERT_DATA)->signOpenBorders((TeamTypes)eTeam);
 }
 void CyTeam::signDefensivePact(int /*TeamTypes*/ eTeam)
 {
 	if (m_pTeam)
-		m_pTeam->signDefensivePact((TeamTypes)eTeam);
+		pointer(CREATE_ASSERT_DATA)->signDefensivePact((TeamTypes)eTeam);
 }
 int CyTeam::getAssets()
 {
@@ -166,7 +175,7 @@ bool CyTeam::canConvinceFather(int /*FatherTypes*/ eFather) const
 void CyTeam::changeFatherPoints(int /*FatherPointTypes*/ ePointType, int iChange)
 {
 	if (m_pTeam)
-		m_pTeam->changeFatherPoints((FatherPointTypes) ePointType, iChange);
+		pointer(CREATE_ASSERT_DATA)->changeFatherPoints((FatherPointTypes) ePointType, iChange);
 }
 bool CyTeam::isHuman()
 {
@@ -219,7 +228,7 @@ bool CyTeam::isMapTrading()
 void CyTeam::changeMapTradingCount(int iChange)
 {
 	if (m_pTeam)
-		m_pTeam->changeMapTradingCount(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeMapTradingCount(iChange);
 }
 int CyTeam::getGoldTradingCount()
 {
@@ -232,7 +241,7 @@ bool CyTeam::isGoldTrading()
 void CyTeam::changeGoldTradingCount(int iChange)
 {
 	if (m_pTeam)
-		m_pTeam->changeGoldTradingCount(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeGoldTradingCount(iChange);
 }
 int CyTeam::getOpenBordersTradingCount()
 {
@@ -245,7 +254,7 @@ bool CyTeam::isOpenBordersTrading()
 void CyTeam::changeOpenBordersTradingCount(int iChange)
 {
 	if (m_pTeam)
-		m_pTeam->changeOpenBordersTradingCount(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeOpenBordersTradingCount(iChange);
 }
 int CyTeam::getDefensivePactTradingCount()
 {
@@ -258,7 +267,7 @@ bool CyTeam::isDefensivePactTrading()
 void CyTeam::changeDefensivePactTradingCount(int iChange)
 {
 	if (m_pTeam)
-		m_pTeam->changeDefensivePactTradingCount(iChange);
+		pointer(CREATE_ASSERT_DATA)->changeDefensivePactTradingCount(iChange);
 }
 int CyTeam::getPermanentAllianceTradingCount()
 {
@@ -271,7 +280,7 @@ bool CyTeam::isPermanentAllianceTrading()
 void CyTeam::changePermanentAllianceTradingCount(int iChange)
 {
 	if (m_pTeam)
-		m_pTeam->changePermanentAllianceTradingCount(iChange);
+		pointer(CREATE_ASSERT_DATA)->changePermanentAllianceTradingCount(iChange);
 }
 bool CyTeam::isMapCentering()
 {
@@ -280,7 +289,7 @@ bool CyTeam::isMapCentering()
 void CyTeam::setMapCentering(bool bNewValue)
 {
 	if (m_pTeam)
-		m_pTeam->setMapCentering(bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setMapCentering(bNewValue);
 }
 int CyTeam::getID()
 {
@@ -302,7 +311,7 @@ bool CyTeam::isPermanentWarPeace(int /*TeamTypes*/ eIndex)
 void CyTeam::setPermanentWarPeace(int /*TeamTypes*/ eIndex, bool bNewValue)
 {
 	if (m_pTeam)
-		m_pTeam->setPermanentWarPeace((TeamTypes)eIndex, bNewValue);
+		pointer(CREATE_ASSERT_DATA)->setPermanentWarPeace((TeamTypes)eIndex, bNewValue);
 }
 bool CyTeam::isOpenBorders(int /*TeamTypes*/ eIndex)
 {
@@ -332,7 +341,7 @@ void CyTeam::AI_setWarPlan(int /*TeamTypes*/ eIndex, int /*WarPlanTypes*/ eNewVa
 {
 	if (m_pTeam)
 	{
-		m_pTeam->AI_setWarPlan((TeamTypes)eIndex, (WarPlanTypes)eNewValue);
+		pointer(CREATE_ASSERT_DATA)->AI_setWarPlan((TeamTypes)eIndex, (WarPlanTypes)eNewValue);
 	}
 }
 int CyTeam::AI_getAtWarCounter(int /*TeamTypes*/ eTeam) const
@@ -355,7 +364,7 @@ void CyTeam::doRevolution()
 {
 	if (m_pTeam)
 	{
-		m_pTeam->doRevolution();
+		pointer(CREATE_ASSERT_DATA)->doRevolution();
 	}
 }
 bool CyTeam::canDoRevolution() const

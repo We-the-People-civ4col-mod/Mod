@@ -250,8 +250,8 @@ public:
 	int getHillsAttackPercent() const;
 	int getHillsDefensePercent() const;
 	int getDomesticBonusPercent() const;
-	int getCommandType() const;
-	void setCommandType(int iNewType);
+	CommandTypes getCommandType() const;
+	void setCommandType(CommandTypes iNewType);
 	int getPillageChange() const;
 	int getAnimalGoldChange() const; //WTP, ray, Animal Promotions increase gold from Animals
 	int getSlaveRevoltReductionBonus() const; //WTP, ray, Slave Hunter and Slave Master
@@ -316,7 +316,7 @@ protected:
 	int m_iHillsAttackPercent;
 	int m_iHillsDefensePercent;
 	int m_iDomesticBonusPercent;
-	int m_iCommandType;
+	CommandTypes m_iCommandType;
 	int m_iPillageChange;
 	int m_iAnimalGoldChange; //WTP, ray, Animal Promotions increase gold from Animals
 	int m_iSlaveRevoltReductionBonus; //WTP, ray, Slave Hunter and Slave Master
@@ -406,6 +406,8 @@ public:
 	int getNumYieldsConsumed() const;
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 
+	const InfoArray<YieldTypes, int>& getYieldDemands() const;
+
 	bool isWorkSlot() const;
 
 	/// Move Into Peak - start - Nightinggale
@@ -457,6 +459,8 @@ protected:
 	int m_expert;
 	int m_learnLevel;
 	// TAC - LbD - Ray - END
+
+	InfoArray<YieldTypes, int> m_info_YieldDemands;
 
 	struct YieldEquipment
 	{
@@ -560,10 +564,10 @@ class CvAutomateInfo : public CvHotkeyInfo
 public:
 	CvAutomateInfo();
 	virtual ~CvAutomateInfo();
-	int getCommand() const;
-	void setCommand(int i);
-	int getAutomate() const;
-	void setAutomate(int i);
+	CommandTypes getCommand() const;
+	void setCommand(CommandTypes i);
+	AutomateTypes getAutomate() const;
+	void setAutomate(AutomateTypes i);
 	bool getConfirmCommand() const;
 	void setConfirmCommand(bool bVal);
 	bool getVisible() const;
@@ -571,8 +575,8 @@ public:
 	bool read(CvXMLLoadUtility* pXML);
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
-	int m_iCommand;
-	int m_iAutomate;
+	CommandTypes m_iCommand;
+	AutomateTypes m_iAutomate;
 	bool m_bConfirmCommand;
 	bool m_bVisible;
 };
@@ -593,11 +597,11 @@ public:
 	int getMissionData() const;
 	int getCommandData() const;
 
-	int getAutomateType() const;
-	int getInterfaceModeType() const;
-	int getMissionType() const;
-	int getCommandType() const;
-	int getControlType() const;
+	AutomateTypes getAutomateType() const;
+	InterfaceModeTypes getInterfaceModeType() const;
+	MissionTypes getMissionType() const;
+	CommandTypes getCommandType() const;
+	ControlTypes getControlType() const;
 	int getOriginalIndex() const;
 	void setOriginalIndex(int i);
 	bool isConfirmCommand() const;
@@ -631,7 +635,17 @@ public:
 
 //---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
-	int m_iOriginalIndex;
+	union
+	{
+		int m_iOriginalIndex;
+#ifdef _DEBUG
+		AutomateTypes m_Automate;
+		CommandTypes m_Command;
+		ControlTypes m_Control;
+		InterfaceModeTypes m_InterfaceMode;
+		MissionTypes m_Mission;
+#endif
+	};
 	ActionSubTypes m_eSubType;
 private:
 	CvHotkeyInfo* getHotkeyInfo() const;
@@ -758,8 +772,8 @@ public:
 	int getMeleeWaveSize(int iProfession) const;
 	int getRangedWaveSize(int iProfession) const;
 	int getNumUnitNames() const;
-	int getCommandType() const;
-	void setCommandType(int iNewType);
+	CommandTypes getCommandType() const;
+	void setCommandType(CommandTypes iNewType);
 	int getLearnTime() const;
 	int getStudentWeight() const;
 	int getTeacherWeight() const;
@@ -823,7 +837,7 @@ public:
 	DllExport float getUnitPadTime(int iProfession) const;
 
 	/// Move Into Peak - start - Nightinggale
-	bool allowsMoveIntoPeak() const {return m_bMoveIntoPeak;}
+	bool allowsMoveIntoPeak() const {return m_baseMovementAbility.m_bMoveIntoPeak;}
 	/// Move Into Peak - end - Nightinggale
 
 	// Arrays
@@ -883,6 +897,38 @@ public:
 	bool read(CvXMLLoadUtility* pXML);
 
 	int PYgetYieldCost(int i) const;
+
+	// Unit movement abilities that are fixed by xml.
+	// Note that some of these abilities can be overridden by the profession,
+	//  which can toggle the ability to enter large rivers terrain or the peak plot type
+	struct UnitBaseMovementAbility
+	{
+		// Modifiers that may allow faster movement
+		bool m_bFlatMovementCost;
+		bool m_bIgnoreTerrainCost;
+
+		// Binary "impassable" switches that allow certain plot/terrain/features to be entered
+		bool m_bRivalTerritory;
+		bool m_bCanMoveImpassable;
+		bool m_bCanMoveAllTerrain;
+		/// Move Into Peak - start - Nightinggale
+		bool m_bMoveIntoPeak;
+		/// Move Into Peak - end - Nightinggale
+		bool* m_abTerrainImpassable;
+		bool* m_abFeatureImpassable;
+
+		void reset()
+		{
+			m_bRivalTerritory = false;
+			m_bCanMoveImpassable = false;
+			m_bCanMoveAllTerrain = false;
+			m_bFlatMovementCost = false;
+			m_bIgnoreTerrainCost = false;
+			m_bMoveIntoPeak = false;
+			m_abTerrainImpassable = NULL;
+			m_abFeatureImpassable = NULL;
+		}
+	};
 
 	//---------------------------------------PROTECTED MEMBER VARIABLES---------------------------------
 protected:
@@ -946,7 +992,7 @@ protected:
 	int m_iInvisibleType;
 	int m_iPrereqBuilding;
 	int m_iNumUnitNames;
-	int m_iCommandType;
+	CommandTypes m_iCommandType;
 	int m_iLeaderExperience;
 	int m_iLearnTime;
 	int m_iStudentWeight;
@@ -959,16 +1005,11 @@ protected:
 	bool m_bOnlyDefensive;
 	bool m_bNoCapture;
 	bool m_bQuickCombat;
-	bool m_bRivalTerritory;
 	bool m_bMilitaryProduction;
 	bool m_bPillage;
 	bool m_bFound;
 	bool m_bInvisible;
 	bool m_bNoDefensiveBonus;
-	bool m_bCanMoveImpassable;
-	bool m_bCanMoveAllTerrain;
-	bool m_bFlatMovementCost;
-	bool m_bIgnoreTerrainCost;
 	bool m_bMechanized;
 	bool m_bLineOfSight;
 	bool m_bHiddenNationality;
@@ -1006,9 +1047,6 @@ protected:
 	// < JAnimals Mod End >
 	PromotionTypes m_eLeaderPromotion;
 
-	/// Move Into Peak - start - Nightinggale
-	bool m_bMoveIntoPeak;
-	/// Move Into Peak - end - Nightinggale
 
 	// Arrays
 	int* m_aiProductionTraits;
@@ -1031,8 +1069,6 @@ protected:
 	bool* m_abUnitAIType;
 	bool* m_abNotUnitAIType;
 	bool* m_abBuilds;
-	bool* m_abTerrainImpassable;
-	bool* m_abFeatureImpassable;
 	// < JAnimals Mod Start >
 	bool* m_abTerrainNative;
 	// < JAnimals Mod End >
@@ -1050,6 +1086,7 @@ protected:
 	CvString m_szArtDefineButton;
 	std::vector<CvUnitMeshGroups> m_aProfessionGroups;
 	std::vector<int> m_aiSeeInvisibleTypes;
+	UnitBaseMovementAbility m_baseMovementAbility;
 };
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -4410,6 +4447,14 @@ class CvEventTriggerInfo : public CvInfoBase
 	friend class CvXMLLoadUtility;
 public:
 
+	struct PlotTriggers
+	{
+		PlotTriggers();
+
+		ImprovementTypes CanBuildImprovement;
+		bool HasNoImprovement;
+	};
+
 	struct UnitTriggers
 	{
 		UnitTriggers();
@@ -4427,6 +4472,7 @@ public:
 	DllExport CvEventTriggerInfo();
 	virtual ~CvEventTriggerInfo();
 
+	const PlotTriggers& plotTriggers() const;
 	const UnitTriggers& unitTriggers() const;
 
 	int getPercentGamesActive() const;
@@ -4438,6 +4484,7 @@ public:
 	int getOtherPlayerShareBorders() const;
 	int getCityFoodWeight() const;
 	CivicTypes getCivic() const;
+	ColonialStatusTypes getRequiredColonialStatus() const;
 	int getMinPopulation() const;
 	int getMaxPopulation() const;
 	int getMinMapLandmass() const;
@@ -4461,6 +4508,8 @@ public:
 	const CvWString& getWorldNews(int i) const;
 	int getNumWorldNews() const;
 
+	int getMinTurn() const;
+
 	// Start EmperorFool: Events with Images
 	char const* getEventArt() const;				// Exposed to Python
 	// End EmperorFool: Events with Images
@@ -4470,6 +4519,7 @@ public:
 	bool isRecurring() const;
 	bool isGlobal() const;
 	bool isPickPlayer() const;
+	bool isOtherPlayerPlotOwner() const;
 	bool isOtherPlayerWar() const;
 	bool isOtherPlayerAI() const;
 	bool isOtherPlayerNative() const;
@@ -4512,6 +4562,7 @@ private:
 	int m_iOtherPlayerShareBorders;
 	int m_iCityFoodWeight;
 	CivicTypes m_eCivic;
+	ColonialStatusTypes m_eRequiredColonialStatus;
 	int m_iMinPopulation;
 	int m_iMaxPopulation;
 	int m_iMinMapLandmass;
@@ -4533,6 +4584,7 @@ private:
 
 	InfoHelperVector<EventTriggerUnitCount> m_vector_UnitCount;
 
+	PlotTriggers m_PlotTrigger;
 	UnitTriggers m_UnitTrigger;
 
 	// Start EmperorFool: Events with Images
@@ -4544,6 +4596,7 @@ private:
 	bool m_bRecurring;
 	bool m_bGlobal;
 	bool m_bPickPlayer;
+	bool m_bOtherPlayerPlotOwner;
 	bool m_bOtherPlayerWar;
 	bool m_bOtherPlayerAI;
 	bool m_bOtherPlayerNative;
@@ -4560,6 +4613,7 @@ private:
 	CvString m_szPythonCanDo;
 	CvString m_szPythonCanDoCity;
 	CvString m_szPythonCanDoUnit;
+	int m_iMinTurn;
 
 public:
 	// functions purely for the python interface
