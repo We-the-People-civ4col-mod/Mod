@@ -1078,7 +1078,7 @@
 		<Tag>TXT_KEY_UNIT_CONFECTIONER_STRATEGY</Tag>
 		<English>The confectioner creates variety, candy for every taste, alongside traditional sweets that remind people of home. Flavouring is done with [LINK=YIELD_VANILLA]vanilla[\LINK] or [LINK=YIELD_COCOA]cocoa[\LINK]. The business can become a social destination, with tables and beverages to accompany the treats.[NEWLINE]When assigned to the Confectioner profession, the master can make twice as much candy in the time a regular colonist would take to do the job.</English>
 		<German>Der Konditor schafft Abwechslung, Süßigkeiten für jeden Geschmack, aber auch traditionelle Süßigkeiten, die die Menschen an ihre Heimat erinnern. Die Aromatisierung erfolgt mit [LINK=YIELD_VANILLA]Vanille[\LINK] oder [LINK=YIELD_COCOA]Kakao[\LINK]. Das Geschäft kann zu einem sozialen Treffpunkt werden, mit Tischen und Getränken, die die Leckereien begleiten.[NEWLINE]Wenn der Meister dem Beruf des Zuckerbäckers zugeordnet ist, kann er doppelt so viel Süßigkeiten in der Zeit herstellen, die ein normaler Kolonist für die Arbeit benötigen würde.</German>
-<Hungarian>A cukrász sokféle, minden ízlésnek megfelelő édességet készít, valamint hagyományos édességeket, amelyek az otthonra emlékeztetik az embereket. Az ízesítés [LINK=YIELD_VANILLA]vaníliával[\LINK] vagy [LINK=YIELD_COCOA]kakaóval[\LINK] történik. Az üzlet társasági helyszínné válhat, asztalokkal és italokkal, amelyek a finomságokat kísérik.[NEWLINE]A Cukrászmester ugyanannyi idő alatt kétszer  annyi édességet tud készíteni, mint amennyit egy átlagos lakos.</Hungarian>
+		<Hungarian>A cukrász sokféle, minden ízlésnek megfelelő édességet készít, valamint hagyományos édességeket, amelyek az otthonra emlékeztetik az embereket. Az ízesítés [LINK=YIELD_VANILLA]vaníliával[\LINK] vagy [LINK=YIELD_COCOA]kakaóval[\LINK] történik. Az üzlet társasági helyszínné válhat, asztalokkal és italokkal, amelyek a finomságokat kísérik.[NEWLINE]A Cukrászmester ugyanannyi idő alatt kétszer  annyi édességet tud készíteni, mint amennyit egy átlagos lakos.</Hungarian>
 	</TEXT>
 	<!-- HOUSEHOLD_TRADER -->
 	<TEXT>
@@ -1536,7 +1536,7 @@
 		<Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Master leatherworkers[COLOR_REVERT] are trained for the professions of [LINK=PROFESSION_LEATHER_PADDER_COATS]coat maker[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker[\LINK] in the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK]. They make lined [LINK=YIELD_PADDED_LEATHER_COATS]leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK], or insulated [LINK=YIELD_GOAT_HIDE_BOOTS] boots[\LINK] out of [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]wool[\LINK]. They work much faster than than free colonists.</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Meister-Lederschneider[COLOR_REVERT] produzieren als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher[\LINK] im [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK] mehr gefütterte [LINK=YIELD_PADDED_LEATHER_COATS]Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] bzw. mehr gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] als freie Kolonisten.</German>
-		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Mester Bőrműves[COLOR_REVERT [LINK=PROFESSION_LEATHER_PADDER_COATS]kabátkészítőként[\LINK] vagy [LINK=PROFESSION_LEATHER_PADDER_BOOTS]csizmadiaként[\LINK] a [LINK=BUILDING_LEATHER_PADDER_HOUSE]bőrműves boltban[\LINK] [LINK=YIELD_PADDED_LEATHER_COATS]bélelt bőrkabátot[\LINK] készít [LINK=YIELD_HIDES]marhabőrből[\LINK] és [LINK=YIELD_DOWNS]pehelytollból[\LINK], illetve [LINK=YIELD_GOAT_HIDE_BOOTS]bélelt kecskebőr csizmát[\LINK] készít [LINK=YIELD_GOAT_HIDES]kecskebőrből[\LINK] és [LINK=YIELD_WOOL]gyapjúból[\LINK]. Sokkal gyorsabban dolgozik, mint az szabad gyarmatosítók.</Hungarian>enledersstiefel[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] als freie Kolonisten.</German>
+		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Mester Bőrműves[COLOR_REVERT [LINK=PROFESSION_LEATHER_PADDER_COATS]kabátkészítőként[\LINK] vagy [LINK=PROFESSION_LEATHER_PADDER_BOOTS]csizmadiaként[\LINK] a [LINK=BUILDING_LEATHER_PADDER_HOUSE]bőrműves boltban[\LINK] [LINK=YIELD_PADDED_LEATHER_COATS]bélelt bőrkabátot[\LINK] készít [LINK=YIELD_HIDES]marhabőrből[\LINK] és [LINK=YIELD_DOWNS]pehelytollból[\LINK], illetve [LINK=YIELD_GOAT_HIDE_BOOTS]bélelt kecskebőr csizmát[\LINK] készít [LINK=YIELD_GOAT_HIDES]kecskebőrből[\LINK] és [LINK=YIELD_WOOL]gyapjúból[\LINK]. Sokkal gyorsabban dolgozik, mint az szabad gyarmatosítók.</Hungarian>
 	</TEXT>
 	<!-- CLOTH_TAYLOR -->
 	<TEXT>
@@ -2563,7 +2563,8 @@
 		</German>
 		<Italian>Onorevole giudice:Onorevoli giudici</Italian>
 		<Spanish>Honorable juez:Honorables jueces</Spanish>
-		<Russian>Заслуженный судья:Заслуженные судьи</Russian>
+		<Russian>Заслуженный судья:Заслуженные судьи</Russian
+		<Hungarian>Méltóságos Bíró:Méltóságos Bíró</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JUDGE</Tag>
