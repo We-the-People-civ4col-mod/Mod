@@ -1736,13 +1736,11 @@
 		<German>Töpferwaren sind eine uralte Methode zur Lagerung von Getreide. In der regnerischen, von Insekten heimgesuchten Neuen Welt enthielten die Töpfe genug Getreide, um die Siedler über den Winter am Leben zu erhalten, bis sie im Frühjahr endlich ihre neue Ernte einpflanzen konnten. Einige kreative Typen formen phantasievolle Gefäße mit dekorativen Mustern, andere nur zum Ausstellen. Töpfern wird zu einer Kunstform im Landhausstil.</German>
 		<Italian>La ceramica è un modo antico di conservare il grano. Nel Nuovo Mondo, caratterizzato da piogge e insetti, i vasi contengono abbastanza grano per mantenere i coloni in vita durante l'inverno, fino a quando non possono piantare le nuove colture in primavera. Alcuni tipi creativi modellano vasi fantasiosi con motivi decorativi, altri solo per esposizione. La ceramica diventa una forma d'arte domestica.</Italian>
 		<Spanish>La cerámica es una forma antigua de almacenar grano. En el lluvioso Nuevo Mundo, plagado de insectos, las vasijas contienen grano suficiente para mantener vivos a los colonos durante el invierno, hasta que por fin pueden plantar sus nuevas cosechas en primavera. Algunos tipos creativos dan forma a imaginativas vasijas con motivos decorativos, otros simplemente para exhibirlas. La alfarería se convierte en un arte artesanal.</Spanish>
-		<Hungarian>A fazekasság egy ősi módszer a gabona tárolására. Az esős, rovarokkal teli Újvilágban a cserépedényekben elegendő gabona tárolható ahhoz, hogy a telepesek átvészeljék a telet, amíg tavasszal végre elvethetik az új vetést. Néhány kreatív ember fantáziadús, díszes mintákkal ellátott edényeket készít, amelyek közül néhány csupán díszítésként szolgál. A fazekasság egyfajta házi kézművességgé válik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POTTER_STRATEGY</Tag>
 		<English>Pottery lets villages store their surplus grain to get them through the hungry winter. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements. The raw materials the potter needs are [LINK=YIELD_CLAY]clay[\LINK], and [LINK=YIELD_PEAT]peat[\LINK] to fire the pots.[NEWLINE]When assigned to the Potter profession, the master can make twice as many pots in the same time as a regular colonist.</English>
 		<German>Töpferwaren ermöglichen es den Dörfern, ihr überschüssiges Getreide zu lagern, um den hungrigen Winter zu überstehen. Das Beladen von Wagen mit robusten Töpfen ist eine praktische Methode, um Getreide zu transportieren und neue Siedlungen mit Lebensmitteln zu versorgen. Die Rohstoffe, die der Töpfer benötigt, sind [LINK=YIELD_CLAY]Ton[\LINK] und [LINK=YIELD_PEAT]Torf[\LINK], um die Töpfe zu brennen.[NEWLINE]Wenn er dem Beruf des Töpfers zugewiesen ist, kann der Meister doppelt so viele Töpfe in der gleichen Zeit herstellen wie ein normaler Siedler.</German>
-		<Hungarian>A fazekasság lehetővé teszi a falvaknak a felesleges gabona tárolását, hogy átvészeljék az éhínséges telet. A szilárd edényeket szekerekre rakni praktikus módja a gabona szállításának és az új települések élelemmel való ellátásának. A fazekasnak szüksége van [LINK=YIELD_CLAY]agyagra[\LINK] és [LINK=YIELD_PEAT]tőzegre[\LINK] a kerámiák égetéséhez. [NEWLINE]A Fazekasmester kétszer annyi kerámiaedényt tud készíteni ugyanannyi idő alatt, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
 	<!-- MILK_MAID -->
 	<TEXT>
@@ -1769,7 +1767,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Опытная доярка:Опытные доярки</Russian>
-		<Hungarian>Szakképzett Fejőnő:Szakképzett Fejőnő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MILK_MAID</Tag>
@@ -1795,7 +1792,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Опытная доярка:Опытные доярки</Russian>
-		<Hungarian>Szakképzett Fejőnő:Szakképzett Fejőnő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MILK_MAID_PEDIA</Tag>
@@ -1804,7 +1800,6 @@
 		<German>Milchmädchen holen die Milch von Kühen, Ziegen, Schafen und anderen genossenschaftlichen Säugetieren. Ihre Arbeit ernährt die Kinder der Stadt, verbessert den Geschmack von Tee oder Kaffee und liefert den Rohstoff für Käsereien.</German>
 		<Italian>Le lattaie ricavano il latte da mucche, capre, pecore e qualsiasi altro mammifero in cooperazione. Il loro lavoro nutre i bambini della città, migliora il sapore del tè o del caffè e fornisce la materia prima ai casari.</Italian>
 		<Spanish>Las lecheras obtienen leche de vacas, cabras, ovejas y cualquier otro mamífero cooperativo. Su trabajo alimenta a los niños del pueblo, mejora el sabor del té o el café y proporciona la materia prima a los queseros.</Spanish>
-		<Hungarian>A fejőnők tejet fejnek tehenekből, kecskékből, juhokból és bármely más együttműködő emlősből. Munkájukkal a városi gyerekeket etetik, javítják a tea vagy kávé ízét és nyersanyagot biztosítanak a sajtkészítőknek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MILK_MAID_STRATEGY</Tag>
@@ -1813,7 +1808,6 @@
 		<German>Milchmädchen arbeiten hart, um die Siedler, ob jung oder alt, mit dem dringend benötigten Eiweiß zu versorgen. Wer glaubt, dass die Arbeit leicht ist, war noch nicht nah genug am Hinterteil einer Kuh. Milchmädchen sind auch immun gegen Pocken, ein seltener Vorteil in der Kolonialzeit.[NEWLINE]Wenn ein fleißiges Milchmädchen den Beruf des Milchmädchens ausübt, kann sie in der gleichen Zeit doppelt so viel Milch wie ein normaler Kolonist produzieren.</German>
 		<Italian>Le lattaie lavorano duramente per fornire le proteine tanto necessarie ai coloni giovani e anziani. Chiunque pensi che il lavoro sia facile non è stato abbastanza vicino alla parte commerciale di una mucca. Le lattaie sono anche immuni al vaiolo, un vantaggio raro in epoca coloniale.[NEWLINE]Se assegnata alla professione di lattaio, la lattaia esperta può ottenere il doppio del latte nello stesso tempo di un normale colono.</Italian>
 		<Spanish>Las lecheras trabajan duro para suministrar las proteínas que tanto necesitan los colonos jóvenes y viejos. Cualquiera que piense que el trabajo es fácil no se ha acercado lo suficiente al negocio de una vaca. Las lecheras también son inmunes a la viruela, una ventaja poco común en la época colonial.[NEWLINE]Cuando se le asigna la profesión de lechera, la lechera experta puede obtener el doble de leche en el mismo tiempo que un colono normal.</Spanish>
-		<Hungarian>A fejőnők tejet fejnek tehenekből, kecskékből, juhokból és bármely más együttműködő emlősből. Munkájukkal a városi gyerekeket etetik, javítják a tea vagy kávé ízét és nyersanyagot biztosítanak a sajtkészítőknek.</Hungarian>
 	</TEXT>
 	<!-- CHEESE_MAKER -->
 	<TEXT>
@@ -1840,7 +1834,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Мастер сыровар:Мастера сыровары</Russian>
-		<Hungarian>Sajtkészítő Mester:Sajtkészítő Mester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHEESE_MAKER</Tag>
@@ -1866,19 +1859,16 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Мастер сыровар:Мастера сыровары</Russian>
-		<Hungarian>Sajtkészítő Mester:Sajtkészítő Mester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHEESE_MAKER_PEDIA</Tag>
 		<English>Cheese is produced by coagulation of the milk protein casein. Milk is usually acidified and the enzymes of either rennet or bacterial enzymes are added so the casein coagulates. Curds are then separated from the liquid whey and pressed into finished cheese.</English>
 		<German>Käse wird durch Gerinnung des Milcheiweißes Kasein hergestellt. Die Milch wird in der Regel gesäuert und die Enzyme des Labs oder bakterielle Enzyme werden hinzugefügt, damit das Kasein gerinnt. Der Käsebruch wird dann von der flüssigen Molke getrennt und zu fertigem Käse gepresst.</German>
-		<Hungarian>A sajtot a tejfehérje, a kazein alvasztásával állítják elő. A tejet általában megsavanyítják, majd rennin vagy baktériumok enzimjeit adják hozzá, hogy a kazein megalvadjon. Ezután a túrót elválasztják a folyékony savótól, majd préselik, hogy elkészüljön a sajt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHEESE_MAKER_STRATEGY</Tag>
 		<English>Cheese is valued for its transportability, long shelf life, and high content of fat, protein, calcium, and phosphorus. It's made from [LINK=YIELD_MILK]milk[\LINK]. The long storage life of some cheeses, especially when encased in a protective rind, allows selling when markets are favourable.[NEWLINE]When assigned to the [LINK=PROFESSION_CHEESE_MAKER]cheese maker[\LINK] profession, the master can get twice the weight of [LINK=YIELD_CHEESE]cheese[\LINK] in the same time as a regular colonist.</English>
 		<German>Käse wird wegen seiner Transportfähigkeit, seiner langen Haltbarkeit und seines hohen Gehalts an Fett, Eiweiß, Kalzium und Phosphor geschätzt. Er wird aus [LINK=YIELD_MILK]Milch[\LINK] hergestellt. Die lange Haltbarkeit einiger Käsesorten, vor allem wenn sie von einer schützenden Rinde umhüllt sind, ermöglicht den Verkauf zu günstigen Marktzeiten.[NEWLINE]Wenn der Meister den Beruf [LINK=PROFESSION_CHEESE_MAKER]Käsemacher[\LINK] ausübt, kann er in der gleichen Zeit die doppelte Menge an [LINK=YIELD_CHEESE]Käse[\LINK] herstellen wie ein normaler Kolonist.</German>
-		<Hungarian>A sajtot szállíthatósága, hosszú eltarthatósága, valamint magas zsírtartalma, fehérjetartalma, kalcium- és foszfortartalma miatt becsülik. [LINK=YIELD_MILK]Tejből[\LINK] készül. Egyes sajtok hosszú tárolási ideje, különösen ha védőhéjjal vannak bevonva, lehetővé teszi azok értékesítését, amikor a piac kedvező. [NEWLINE]A [LINK=PROFESSION_CHEESE_MAKER]sajtkészítő mester[\LINK] ugyanannyi idő alatt kétszer annyi [LINK=YIELD_CHEESE]sajtot[\LINK] tud előállítani, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
 	<!-- CHARCOAL_BURNER -->
 	<TEXT>
@@ -1905,7 +1895,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Мастер обжига древесного угля:Мастера обжига древесного угля</Russian>
-		<Hungarian>Szénégető Mester:Szénégető Mester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHARCOAL_BURNER</Tag>
@@ -1931,7 +1920,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Мастер обжига древесного угля:Мастера обжига древесного угля</Russian>
-		<Hungarian>Szénégető Mester:Szénégető Mester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHARCOAL_BURNER_PEDIA</Tag>
@@ -1940,7 +1928,6 @@
 		<German>Holzkohle wird aus Holz hergestellt, das sechs bis acht Tage lang, manchmal auch länger, in einem Ofen gebrannt wurde. Holzkohle brennt bei 1.100 Grad Celsius. Der Schmelzpunkt von Eisen liegt bei 1.200 Grad. Mit einem Blasebalg auf einem Holzkohlefeuer kann ein Schmied seine Arbeit aufnehmen.</German>
 		<Italian>Il carbone di legna proviene da legna cotta in una fornace per sei-otto giorni, a volte anche di più. Il carbone di legna brucia a 1.100 gradi Celsius. Il punto di fusione del ferro è di 1.200 gradi. Utilizzando un soffietto su un fuoco di carbone, il fabbro può mettersi al lavoro.</Italian>
 		<Spanish>El carbón vegetal procede de madera cocida en un horno durante seis u ocho días, a veces más. El carbón arde a 1.100 grados Celsius. El punto de fusión del hierro es de 1.200 grados. </Spanish>
-		<Hungarian>A faszén hat-nyolc napig, néha még hosszabb ideig kemencében égetett fából készül. A faszén 1100 Celsius-fokon ég. A vas olvadáspontja 1200 fok. A faszén tűzén fújtatóval a kovács megkezdheti a munkát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHARCOAL_BURNER_STRATEGY</Tag>
@@ -1949,7 +1936,6 @@
 		<German>Der Köhler beobachtet den Rauch, der den Ofen verlässt. Wenn der Rauch dick und grau ist, ist das Holz noch roh; dünner, blauer Rauch deutet auf eine gute Verkohlung hin.[NEWLINE]Wenn ein Experte den Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] ausübt, kann er in derselben Zeit doppelt so viel [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] herstellen wie ein normaler Kolonist.</German>
 		<Italian>Il carbonaio osserva il fumo che esce dal forno. Se il fumo è denso e grigio, il legno è ancora grezzo; un fumo sottile e blu indica una buona carbonizzazione.[NEWLINE]Se assegnato alla professione di [LINK=PROFESSION_CHARCOAL_BURNER]carbonaro[\LINK], l'esperto può ottenere il doppio del [LINK=YIELD_CHAR_COAL]carbone[\LINK] nello stesso tempo di un normale colono.</Italian>
 		<Spanish>El carbonero observa el humo que sale del horno. Si el humo es espeso y gris, la madera aún está cruda; un humo fino y azul indica una buena carbonización.[NEWLINE]Cuando se le asigna la profesión [LINK=PROFESSION_CHARCOAL_BURNER]carbonero[\LINK], el experto puede conseguir el doble de [LINK=YIELD_CHAR_COAL]carbón[\LINK] en el mismo tiempo que un colono normal.</Spanish>
-		<Hungarian>A faszénégető figyeli a kemencéből kijövő füstöt. Ha a füst sűrű és szürke, akkor a fa még nyers; a ritkás, kék füst jó szenesedést jelez. [NEWLINE]A [LINK=PROFESSION_CHARCOAL_BURNER]faszénégető mester[\LINK] kétszer annyi [LINK=YIELD_CHAR_COAL]faszenet[\LINK] tud előállítani ugyanannyi idő alatt, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
 	<!-- BAKER -->
 	<TEXT>
@@ -1964,7 +1950,6 @@
 		<Italian>Mastro panettiere:Mastri panettieri</Italian>
 		<Spanish>Maestro panadero:Maestros panaderos</Spanish>
 		<Russian>Мастер пекарь:Мастера пекари</Russian>
-		<Hungarian>Pékmester:Pékmester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BAKER</Tag>
@@ -1978,7 +1963,6 @@
 		<Italian>Mastro panettiere:Mastri panettieri</Italian>
 		<Spanish>Maestro panadero:Maestros panaderos</Spanish>
 		<Russian>Мастер пекарь:Мастера пекари</Russian>
-		<Hungarian>Pékmester:Pékmester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BAKER_PEDIA</Tag>
@@ -1987,13 +1971,11 @@
 		<German>Der Bäcker beginnt seine Arbeit lange vor der Morgendämmerung, damit die Haushalte ihr tägliches Brot bekommen können. Wenn die Bäckerei wächst und Kekse und Gebäck anbietet, wird sie zu einem sozialen Zentrum. Einige Bäcker stellen sogar Tische auf, an denen Tee zu den Leckereien serviert wird.</German>
 		<Italian>Il panettiere inizia a lavorare ben prima dell'alba, in modo che le famiglie possano avere il pane quotidiano. Man mano che il panificio cresce, offrendo biscotti e pasticcini, diventa un centro sociale. Alcuni panettieri allestiscono persino dei tavoli dove viene servito il tè per accompagnare le prelibatezze.</Italian>
 		<Spanish>El panadero empieza a trabajar mucho antes del amanecer para que los hogares puedan tener el pan de cada día. A medida que la panadería crece, ofreciendo galletas y pasteles, se convierte en un centro social. Algunos panaderos incluso instalan mesas donde se sirve té para acompañar los dulces.</Spanish>
-		<Hungarian>A pék hajnal előtt kezdi meg a munkát, hogy a háztartásoknak legyen napi kenyerük. Ahogy a pékség növekszik, süteményeket és péksüteményeket is kínál, társadalmi központtá válik. Néhány pék még asztalokat is felállít, ahol teát szolgálnak fel a finomságok mellé. A hatékony pék a méretgazdaságosságnak köszönhetően alacsonyan tudja tartani az árakat. Emellett páratlanul széles választékot kínálhat péksüteményekből, pitékből és tortákból különleges alkalmakra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BAKER_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] may be employed in the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] or one of its extensions supplying provisions made from ([LINK=PROFESSION_BAKER_BARLEY]barley[\LINK], [LINK=PROFESSION_BAKER_RICE]rice[\LINK] or [LINK=PROFESSION_BAKER_CASSAVA]cassava[\LINK]). The master baker will produce twice as many [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] in the same time as a typical colonist.</English>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]Bäckermeister[COLOR_REVERT] kann im [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK] bzw. einer seiner Erweiterungen als [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] ([LINK=PROFESSION_BAKER_BARLEY]Gerste[\LINK], [LINK=PROFESSION_BAKER_RICE]Reis[\LINK], [LINK=PROFESSION_BAKER_CASSAVA]Maniok[\LINK]) in der gleichen Zeit doppelt so viel [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] herstellen, wie ein normaler Kolonist.</German>
-		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]pék[COLOR_REVERT] a [LINK=BUILDING_BAKER_HOUSE]pékségben[\LINK] vagy annak egyik továbbfejlesztésében dolgozhat, ahol ([LINK=PROFESSION_BAKER_BARLEY]árpából[\LINK], [LINK=PROFESSION_BAKER_RICE]rizsből[\LINK] vagy [LINK=PROFESSION_BAKER_CASSAVA]maniókából[\LINK]) ellátmányt süt. A pékmester kétszer annyi [LINK=YIELD_BAKERY_GOODS] ellátmányt[\LINK] állít elő ugyanannyi idő alatt, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
 	<!-- FIREWORKER -->
 	<TEXT>
@@ -2020,7 +2002,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Мастер производства пороха:Мастера производства пороха</Russian>
-		<Hungarian>Puskaporkeverő Mester:Puskaporkeverő Mester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIREWORKER</Tag>
@@ -2046,7 +2027,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Мастер производства пороха:Мастера производства пороха</Russian>
-		<Hungarian>Puskaporkeverő Mester:Puskaporkeverő Mester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIREWORKER_PEDIA</Tag>
@@ -2055,13 +2035,11 @@
 		<German>Weit entfernt von anderen Gebäuden mischt der Pulvermacher Schießpulver aus Schwefel, Holzkohle und Salpeter für die Gewehre der Soldaten. Während der Kolonialzeit ist es der einzige verfügbare Sprengstoff (Dynamit wird erst 1867 erfunden) und wird auch für die Artillerie, den Bergbau und den Straßenbau verwendet.</German>
 		<Italian>Ben lontano da altri edifici, il fabbricante di polvere da sparo mescola la polvere da sparo con zolfo, carbone e salnitro: munizioni per i cannoni dei soldati. In epoca coloniale è l'unico esplosivo disponibile (la dinamite sarà inventata nel 1867), quindi viene utilizzato anche per l'artiglieria, le miniere e la costruzione di strade.</Italian>
 		<Spanish>Alejado de otros edificios, el polvorero mezcla pólvora a partir de azufre, carbón vegetal y salitre: munición para las armas de los soldados. En la época colonial es el único explosivo disponible (la dinamita se inventará en 1867), por lo que también se utiliza para la artillería, la minería y la construcción de carreteras.</Spanish>
-		<Hungarian>Távol más épületektől a puskaporkeverő kénből, faszénből és salétromból keveri össze a puskaport: a katonák fegyvereinek lőszerét. A gyarmati időkben ez az egyetlen rendelkezésre álló robbanóanyag (a dinamitot 1867-ben találják fel), ezért tüzérségi célokra, bányászatban és útépítésben is használják.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIREWORKER_STRATEGY</Tag>
 		<English>The powder maker uses [LINK=YIELD_CHAR_COAL]charcoal[\LINK] to produce enough black powder for the soldiers' guns. Even more is needed for miners and the pioneers building roads. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.[NEWLINE]When assigned to the Powder Maker profession, the master can mix twice as much gunpowder in the same time as a regular colonist.</English>
 		<German>Der Pulvermacher verwendet [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK], um genügend Schwarzpulver für die Gewehre der Soldaten herzustellen. Noch mehr wird für die Bergleute und die Pioniere beim Straßenbau benötigt. Schwarzpulver mag gefährlich sein, aber es ist nicht so gefährlich wie eine schwache Armee ohne genügend Munition.[NEWLINE]Wenn der Meister den Beruf des Pulvermachers ausübt, kann er in der gleichen Zeit doppelt so viel Schießpulver mischen wie ein normaler Kolonist.</German>
-<Hungarian>A puskaporkeverő [LINK=YIELD_CHAR_COAL]faszenet[\LINK] használ puskapor előállítására, ami a katonák fegyvereihez szükséges. Még több puskaporra van szükség a bányászok és az utakat építő utászok számára. A puskapor veszélyes lehet, de nem annyira, mint egy gyenge hadsereg, amelynek nincs elegendő lőszere.[NEWLINE]A puskaporkeverő mester kétszer annyi puskaport keverhet össze, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
 	<!-- MESTIZZO -->
 	<TEXT>
@@ -2088,7 +2066,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Метис:Метисы</Russian>
-		<Hungarian>Mesztic:Mesztic</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MESTIZZO</Tag>
@@ -2114,19 +2091,16 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Метис:Метисы</Russian>
-		<Hungarian>Mesztic:Mesztic</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MESTIZZO_PEDIA</Tag>
 		<English>The mestizo is the child of a European and an Indigenous parent. Mestizo children are often rejected by both communities.[NEWLINE]Further north Metis means the same thing. Louis Riel, a Metis, is one of Canada's Fathers of Confederation, though he was hanged for treason before his contribution was recognized.</English>
 		<German>Der Mestize ist das Kind eines europäischen und eines indigenen Elternteils. Mestizo-Kinder werden oft von beiden Gemeinschaften abgelehnt.[NEWLINE]Weiter nördlich bedeutet Metis das Gleiche. Louis Riel, ein Metis, ist einer der Väter der kanadischen Konföderation, obwohl er wegen Hochverrats gehängt wurde, bevor sein Beitrag anerkannt wurde.</German>
-		<Hungarian>A mesztic egy Európai és egy Indián szülő gyermeke. A mesztic gyermekeket gyakran mindkét közösség elutasítja. [NEWLINE]Északabbra a metis ugyanazt jelenti. Louis Riel, egy metis, Kanada konföderációjának egyik atyja, bár árulásért felakasztották, mielőtt hozzájárulását elismerték volna.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MESTIZZO_STRATEGY</Tag>
 		<English>Sometimes mestizos advance in spite of the prejudice. Quanah Parker, a mestizo born to a European mother, was known as the most terrifying Comanche leader because of his devastating raids on white settlements.</English>
 		<German>Manchmal können Mestizen trotz ihrer Benachteiligung etwas großes leisten. Quanah Parker, ein Mestize mit einer europäischen Mutter, war wegen seiner verheerenden Überfälle auf weiße Siedlungen als der furchterregendste Comanchen-Anführer bekannt.</German>
-		<Hungarian>Néha a meszticek az előítéletek ellenére is előrelépnek. Quanah Parker, egy európai anyától született mesztic, a fehér települések elleni rajtaütések legfélelmetesebb komancs vezetőjeként volt ismert.</Hungarian>
 	</TEXT>
 	<!-- MULATTO -->
 	<TEXT>
@@ -2153,7 +2127,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Мулат:Мулаты</Russian>
-		<Hungarian>Mulatt:Mulatt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MULATTO</Tag>
@@ -2179,21 +2152,18 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Мулат:Мулаты</Russian>
-		<Hungarian>Mulatt:Mulatt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MULATTO_PEDIA</Tag>
 		<English>The mulatto is the child of a European and an African parent, often a slave woman. The child grows up as part of the slave population. To maintain cultural separation Europeans create artificial distinctions, such as being repelled by the idea of touching Black people.</English>
 		<German>Der Mulatte ist das Kind eines europäischen und eines afrikanischen Elternteils, häufig einer Sklavin. Das Kind wächst als Teil der Sklavenbevölkerung auf. Um die kulturelle Trennung aufrechtzuerhalten, schaffen die Europäer künstliche Unterscheidungen, wie zum Beispiel die Abneigung gegen den Gedanken, Schwarze zu berühren.</German>
 		<French>Un mulâtre est l'enfant d'un parent Européen et d'un parent africain, le plus souvent une femme esclave. L'enfant grandit parmi les esclaves. Pour maintenir une séparation culturelle, les Européeens créent des coutumes artificielles, comme en faisant mine d'être dégouté à l'idée de toucher un Noir.</French>
-		<Hungarian>A mulatt egy Európai és egy Afrikai szülő, gyakran egy rabszolga nő gyermeke. A gyermek a rabszolgák közösségében nő fel. A kulturális elkülönültség fenntartása érdekében az európaiak mesterséges különbségeket hoznak létre, például azt, hogy visszataszítónak tartják a fekete emberek megérintését.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MULATTO_STRATEGY</Tag>
 		<English>Mulattos add to the slave population but they also create cultural confusion. European women are not happy to see their husbands fathering Black babies.[NEWLINE]Because slave life expectancy on sugar plantations is three years, or twenty-one for mulattos born into slavery, plantation owners develop a racial justification for the deaths of their children.</English>
 		<German>Mulatten erhöhen die Sklavenpopulation, aber sie sorgen auch für kulturelle Verwirrung. Da die Lebenserwartung der Sklaven auf den Zuckerplantagen drei Jahre und die der in die Sklaverei hineingeborenen Mulatten einundzwanzig Jahre beträgt, entwickeln die Plantagenbesitzer eine rassistische Rechtfertigung für den Tod ihrer Kinder.</German>
 		<French>Les mulâtres comptent parmi les esclaves mais ils contribuent au mélange des cultures. Les femmes européennes ne sont pas ravies de voir leur maris procréer des enfants blancs.[NEWLINE] Comme l'espérance de vie des esclaves ne dépasse pas les trois ans dans les plantations de sucre, ou vingt et un ans pour les mulâtres nés en servitude, les propriétaires de plantation ont mis en oeuvre une justification raciale pour la mort de leurs enfants.</French>
-		<Hungarian>A mulattok növelik a rabszolgák számát, de kulturális zavart is okoznak. Az európai nők nem örülnek annak, hogy férjeik fekete gyermekeket nemzenek. Mivel a cukornádültetvényeken a rabszolgák átlagos élettartama három év, a rabszolgaságba született mulattoké pedig huszonegy év, az ültetvénytulajdonosok faji indokokat találtak ki gyermekeik halálának igazolására.</Hungarian>
 	</TEXT>
 	<!-- CONSTRUCTION_SUPPLIES -->
 	<TEXT>
@@ -2220,7 +2190,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Строительные материалы</Russian>
-		<Hungarian>Építőanyag:Építőanyag</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES</Tag>
@@ -2246,21 +2215,18 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Строительные материалы</Russian>
-		<Hungarian>Építőanyag:Építőanyag</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_PEDIA</Tag>
 		<English>Construction supplies is a vast category, ranging from wood and bricks to nails and forged hardware. The carpenter needs construction supplies to work.</English>
 		<French>Les matériaux de constructions sont une vaste catégorie, comprenant le bois, les briques, les clous et les pièces métalliques. Le charpentier a besoin de ces matériaux pour travailler.</French>
 		<German>Baubedarf ist eine große Kategorie, die von Holz und Ziegeln bis zu Nägeln und Schmiedeeisen reicht. Der Zimmermann braucht Baumaterial für seine Arbeit.</German>
-		<Hungarian>Az építőanyagok széles kategóriát alkotnak, a fától és tégláktól kezdve a szögeken át a kovácsolt vasalatokig. Az ácsoknak építőanyagokra van szükségük a munkájukhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Construction supplies[COLOR_REVERT] can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK] or produced in a settlement for 50 [LINK=YIELD_HAMMERS]hammers[\LINK]. They add 40 hammers once to a building project. Construction supplies behave like an immobile unit which can be [LINK=CONCEPT_TRANSPORT]transported[\LINK]. By doing this buildings in new settlements go up faster.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Construction supplies[COLOR_REVERT] can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK] or produced in a settlement for 50 [LINK=YIELD_HAMMERS]hammers[\LINK] and support a building project with 40 hammers once. The construction suplies behaves like an immobile unit, which can be [LINK=CONCEPT_TRANSPORT]transported[\LINK], however, so that new settlements can be supported by this with the building construction.</English>
 		<French>[COLOR_HIGHLIGHT_TEXT]Les matériaux de construction[COLOR_REVERT] peuvent être achetés en [LINK=CONCEPT_EUROPE]Europe[\LINK] ou produits dans une colonie pour 50 [LINK=YIELD_HAMMERS]marteaux[\LINK] et donne une contribution ponctuelle de 40 production aux projets de la colonie. Les matériaux de contructions sont immoblies mais peuvent être [LINK=CONCEPT_TRANSPORT]transportés[\LINK], pour aider à établir les premiers bâtiments indispensables des nouvelles colonies.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Baumaterial[COLOR_REVERT] kann in [LINK=CONCEPT_EUROPE]Europa[\LINK] gekauft oder in einer Siedlung für 50 [LINK=YIELD_HAMMERS]Hämmer[\LINK] produziert werden und einmalig ein Bauprojekt mit 40 Hämmern unterstützen. Das Baumaterial verhält sich wie eine unbewegliche Einheit, welche jedoch [LINK=CONCEPT_TRANSPORT]transportiert[\LINK] werden kann, sodass hierdurch neue Siedlungen beim Gebäudebau unterstützt werden können.</German>
-		<Hungarian>Az [COLOR_HIGHLIGHT_TEXT]Építőanyagok[COLOR_REVERT] [LINK=CONCEPT_EUROPE]Európában[\LINK] vásárolhatók meg, vagy egy településen 50 [LINK=YIELD_HAMMERS] kalapácsért[\LINK] előállíthatók, és 40 kalapáccsal egy alkalommal támogathatnak egy építési projektet. Az építőanyagok olyanok, mint egy mozdíthatatlan egység, amely azonban [LINK=CONCEPT_TRANSPORT]szállítható[\LINK], így új településeket lehet ezzel támogatni az építkezés során.</Hungarian>
 	</TEXT>
 	<!-- BRAVE_LIEUTENANT -->
 	<TEXT>
@@ -2287,7 +2253,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Храбрый Лейтенант:Храбрые Лейтенанты</Russian>
-		<Hungarian>Bátor Hadnagy:Bátor Hadnagy</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT</Tag>
@@ -2313,21 +2278,18 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Храбрый Лейтенант:Храбрые Лейтенанты</Russian>
-		<Hungarian>Bátor Hadnagy:Bátor Hadnagy</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_PEDIA</Tag>
-		<English>Like the great general, the brave lieutenant contributes experience points to one or more military units, just not as much experience.[NEWLINE]Whenever younger sons aren't smart enough for the priesthood, their father might be rich enough to buy them an army commission. They start as junior officers, charging into battle at the head of their troops. Bravery gives them a fighting chance.</English>
+		<English>Like the great general, the brave lieutenant contributes experience points to one or more military units, just not as much experience.[NEWLINE]When younger sons aren't smart enough for the priesthood, and their father's rich enough to buy them an army commission, they start as junior officers, charging into battle at the head of their troops. Bravery gives them a fighting chance.</English>
 		<German>Wie der große General steuert auch der tapfere Leutnant Erfahrungspunkte zu einer oder mehreren Militäreinheiten bei, nur eben nicht so viel Erfahrung.[NEWLINE]Wenn jüngere Söhne nicht klug genug für das Priesteramt sind und ihr Vater reich genug ist, um ihnen ein Offizierspatent zu kaufen, beginnen sie als Nachwuchsoffiziere und stürmen an der Spitze ihrer Truppen in die Schlacht. Tapferkeit gibt ihnen eine Chance im Kampf.</German>
 		<French>Tout comme un [LINK=UNIT_GREAT_GENERAL]général illustre[\LINK], le lieutenant courageux fournit des points d'expériences aux unités présentes sur sa case, en quantité moindre que le général. Quand les fils cadets ne sont pas assez scolaires pour la prêtrise, et que leur père est assez richje pour leur acheter une commission dans l'armée, chargeant dans la bataille à la tête de leur troupe. La bravoure leur donne la chance de l'emporter.</French>
-		<Hungarian>A nagy tábornokhoz hasonlóan a bátor hadnagy is tapasztalati pontokat ad egy vagy több katonai egységnek, csak nem annyit. [NEWLINE]Amikor a fiatalabb fiúk nem elég okosak a papsághoz és apjuk elég gazdag ahhoz, hogy katonai tisztséget vásároljon nekik, akkor alacsonyabb rangú tisztként vágnak bele a csatába, csapataik élén. A bátorság lehetőséget ad nekik a harcra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_STRATEGY</Tag>
 		<English>Brave lieutenants are rare, appearing perhaps once out of every ten battles.</English>
 		<German>Tapfere Leutnants sind selten, sie tauchen vielleicht einmal pro zehn Schlachten auf.</German>
 		<French>Les lieutenants courageux sont peu communs, apparaissant environ une fois toutes les dix batailles</French>
-		<Hungarian>A bátor hadnagyok ritkák, talán tíz csatából egyszer bukkannak fel.</Hungarian>
 	</TEXT>
 	<!-- CAPABLE_CAPTAIN -->
 	<TEXT>
@@ -2354,7 +2316,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Умелый Капитан:Умелые Капитаны</Russian>
-		<Hungarian>Remek Kapitány:Remek Kapitány</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN</Tag>
@@ -2380,21 +2341,18 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Умелый Капитан:Умелые Капитаны</Russian>
-		<Hungarian>Remek Kapitány:Remek Kapitány</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_PEDIA</Tag>
 		<English>Like the great admiral, the capable captain adds experience points to one or more military units, just not as much experience.[NEWLINE]To attain command a capable captain needs the ability to win a fight. In the American Revolutionary War naval battles were fought on inland lakes and rivers, as well as on the open ocean. Seaports were also a common target.</English>
 		<German>Im Amerikanischen Revolutionskrieg wurden Seeschlachten sowohl auf Binnenseen und Flüssen als auch auf dem offenen Meer ausgetragen. Auch Seehäfen waren ein häufiges Ziel.</German>
 		<French>Tout comme un [LINK=UNIT_GREAT_ADMIRAL]amiral illustre[\LINK], un capitaine compétent donne des points d'expérience aux unités navales présentes sur sa case, en quantité moindre que l'amiral.[NEWLINE]Pour se démarquer, un capitaine compétent doit gagner un combat. Pendant la guerre d'indépendance des États Unis, les batailles navales ont eu lieu sur les lacs et les rivières, ainsi qu'en haute mere. Les ports maritimes étaient eux aussi des cibles fréquentes.</French>
-		<Hungarian>A nagy admirálishoz hasonlóan a remek kapitány is tapasztalati pontokat ad egy vagy több katonai egységnek, csak nem annyit. [NEWLINE]Ahhoz, hogy parancsnoki pozícióba kerülhessen, egy remek kapitánynak képesnek kell lennie a harc megnyerésére. Az amerikai függetlenségi háborúban a tengeri csatákat a nyílt tengeren, valamint a belvízi tavakon és folyókon vívták. A tengeri kikötők is gyakori célpontok voltak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_STRATEGY</Tag>
 		<English>Capable captains are front line leaders. They are rare, occurring perhaps once out of every ten battles.</English>
 		<German>Wie der große Admiral fügt der fähige Kapitän einer oder mehreren Militäreinheiten Erfahrungspunkte hinzu, jedoch deutlich weniger.[NEWLINE]Um einen fähigen Kapitän zu erhalten, ist es notwendig einen Kampf zu gewinnen. Fähige Kapitäne sind Anführer an vorderster Front. Sie sind selten und kommen vielleicht einmal in jeder zehnten Schlacht vor.</German>
 		<French>Les capitaines compétents mènent en première ligne. Ils sont peu communs, se démarquant du rang environ une fois toutes les dix batailles.</French>
-		<Hungarian>A remek kapitányok az első vonalban harcoló vezetők. Ritkák, talán tíz csatából egyben bukkanak elő.</Hungarian>
 	</TEXT>
 	<!-- ENTERTAINER -->
 	<TEXT>
@@ -2425,7 +2383,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Известная актриса:Известные актрисы</Russian>
-		<Hungarian>Híres Színésznő:Híres Színésznő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ENTERTAINER</Tag>
@@ -2455,7 +2412,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Известная актриса:Известные актрисы</Russian>
-		<Hungarian>Híres Színésznő:Híres Színésznő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ENTERTAINER_PEDIA</Tag>
@@ -2463,14 +2419,12 @@
 		<French>L'homme est un animal social, la célébrité rassemble les gens pour se divertir, pour voir et être vu. Le spectacle d'une célébrité attire toute la campagne. La présence d'une actrice célèbre améliore la réputation de toute communauté. Laissant derrière elle une traînée de cœurs brisés, sa légende grandit.</French>
 		<German>Der Mensch ist ein Gesellschaftstier. Ruhm ist ein gutes Zugpferd Menschen zusammenzubringen, ihnen Unterhaltung zu bieten, damit sie sehen und gesehen werden können. Der Auftritt einer Berühmtheit zieht die ganze Stadt und das Umland in ihren Bann. Die Anwesenheit einer berühmten Schauspielerin verbessert den Ruf einer Stadt. Je mehr gebrochene Herzen sie hinter sich lässt, desto mehr wächst ihre Legende.</German>
 		<Italian>Gli esseri umani sono animali sociali, la fama riunisce le persone per essere intrattenute, per vedere ed essere viste. Un'esibizione di una celebrità attira l'intera campagna. Avere un'attrice famosa residente migliora la reputazione di qualsiasi comunità. Lasciando dietro di sé una scia di cuori infranti, la sua leggenda cresce.</Italian>
-        <Spanish>Los humanos somos animales sociales, la Fama reúne a la gente para entretenerse, para ver y ser vistos. La actuación de una celebridad atrae a todo el campo. Tener una actriz famosa residente mejora la reputación de cualquier comunidad. Dejando tras de sí un rastro de corazones rotos, su leyenda crece.</Spanish>
-		<Hungarian>A hírességek először Európából érkeznek, de végül a tehetség mindenhol felszínre kerül. Mindazonáltal a színdarabok és felolvasások a gyarmati időszak alatt továbbra is az óhazai szövegekre támaszkodnak, mind a klasszikusokra, mind a szentimentálisakra. Az emberek társas lények, a hírességek összehozzák őket, hogy szórakozzanak, lássanak és lássák őket. Egy híresség fellépése az egész vidéket vonzza. Ha egy híres színésznő letelepedik egy közösségben, az javítja annak hírnevét. Maga mögött törött szívek sorát hagyva, legendája egyre növekszik.</Hungarian>jora la reputación de cualquier comunidad. Dejando tras de sí un rastro de corazones rotos, su leyenda crece.</Spanish>
+		<Spanish>Los humanos somos animales sociales, la Fama reúne a la gente para entretenerse, para ver y ser vistos. La actuación de una celebridad atrae a todo el campo. Tener una actriz famosa residente mejora la reputación de cualquier comunidad. Dejando tras de sí un rastro de corazones rotos, su leyenda crece.</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ENTERTAINER_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Famous actresses[COLOR_REVERT] are in the profession of [LINK=PROFESSION_ENTERTAINER]entertainer[\LINK]. They excel at creating [LINK=YIELD_CULTURE]culture[\LINK] in a city.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Famous actresses[COLOR_REVERT] are in the profession of [LINK=PROFESSION_ENTERTAINER]entertainer[\LINK] excellent at providing [LINK=YIELD_CULTURE]culture[\LINK] in a city.</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Berühmte Schauspielerinen[COLOR_REVERT] sind als [LINK=PROFESSION_ENTERTAINER]Unterhalter[\LINK] ausgezeichnet darin für [LINK=YIELD_CULTURE]Kultur[\LINK] in einer Stadt zu sorgen.</German>
-		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Híres Színésznők[COLOR_REVERT] [LINK=PROFESSION_ENTERTAINER] előadóművészként[\LINK]  kiválóan tudják biztosítani a [LINK=YIELD_CULTURE]kultúrát[\LINK] egy városban.</Hungarian>
 	</TEXT>
 	<!-- HARLOT -->
 	<TEXT>
@@ -2501,7 +2455,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Соблазнительная блудница:Соблазнительные блудницы</Russian>
-		<Hungarian>Csábító Szajha:Csábító Szajha</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HARLOT</Tag>
@@ -2531,7 +2484,6 @@
 			<Plural>0:1</Plural>
 		</Spanish>
 		<Russian>Соблазнительная блудница:Соблазнительные блудницы</Russian>
-		<Hungarian>Csábító Szajha:Csábító Szajha</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HARLOT_PEDIA</Tag>
@@ -2540,7 +2492,6 @@
 		<German>Frömmlerische Damen mögen auf eine ehrliche Hure herabblicken, aber Huren haben oft Einfluß bei den Mächtigen, auch in der Kirche. Die Prostitution ist so vielfältig wie die Gesellschaft selbst. Eine verführerische Hure mag eine lukrative Karriere haben, aber sie ist nur kurz. Manche, denen das Leben gefällt, eröffnen nach den Jahren, in denen sie am meisten Geld verdient haben, ein eigenes Etablissement auf.</German>
 		<Italian>Le signore che frequentano la chiesa possono guardare dall'alto in basso una prostituta onesta, ma le prostitute hanno spesso influenza sui potenti, compresi quelli della chiesa. La prostituzione è varia come la società stessa. La prostituta seducente può avere una carriera redditizia, ma breve. Alcune che amano questa vita si dedicano all'amministrazione dopo gli anni di massimo guadagno personale.</Italian>
 		<Spanish>Las señoras que van a la iglesia pueden despreciar a una puta honesta, pero las rameras suelen tener influencia con los altos y poderosos, incluidos los de la iglesia. La prostitución es tan diversa como la propia sociedad. La prostituta seductora puede tener una carrera lucrativa, pero corta. Algunas, a las que les gusta la vida, se dedican a la administración después de sus mejores años de ganancias personales.</Spanish>
-		<Hungarian>A templomba járó hölgyek lenézhetik az igaz  szajhákat, de azok gyakran befolyással bírnak a hatalmasságokra, beleértve a templomban lévőket is. A prostitúció ugyanolyan sokszínű, mint maga a társadalom. A csábító szajháknak jövedelmező karrierjük lehet, de az rövid. Néhányan, akik szeretik ezt az életet, a legmagasabb jövedelmű évek után menedzsmentbe lépnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HARLOT_STRATEGY</Tag>
@@ -2549,7 +2500,6 @@
 		<German>Eine [COLOR_HIGHLIGHT_TEXT]Verführerische Dirne[COLOR_REVERT] verdoppelt die Produktion von [LINK=YIELD_HAPPINESS]Zufriedenheit[\LINK], wenn sie als [LINK=PROFESSION_PROSTITUTE]Prostituierte[\LINK] in der [LINK=BUILDING_TAVERN]Taverne[\LINK] oder einer ihrer Erweiterungen arbeitet.[NEWLINE]Einsame Männer finden oft ihr Glück bei einer Hure, die auch ein guter Zuhörer ist. Für die Hure selbst bedeutet die Tatsache, dass in dieser Welt auf eine Frau fünf Männer kommen, die Chance, ihren eigenen Ehemann zu finden, anstatt von ihren Eltern verheiratet zu werden.</German>
 		<Italian>Gli uomini soli spesso trovano la felicità con una prostituta che sa anche essere una buona ascoltatrice. Per la prostituta stessa, trovarsi in un mondo con cinque uomini per ogni donna significa avere la possibilità di trovarsi un marito da sola, invece di avere un matrimonio combinato dai genitori.</Italian>
 		<Spanish>Los hombres solitarios suelen encontrar la felicidad con una ramera que también sabe escuchar bien. Para la propia ramera, estar en un mundo con cinco hombres por cada mujer significa tener la oportunidad de encontrar su propio marido en lugar de que sus padres le arreglen el matrimonio.</Spanish>
-		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]csábító szajha[COLOR_REVERT] megduplázza a [LINK=YIELD_HAPPINESS]boldogság[\LINK] termelését, amikor [LINK=PROFESSION_PROSTITUTE]prostituáltként [\LINK] dolgozik a [LINK=BUILDING_TAVERN]kocsmában[\LINK] vagy annak egyik továbbfejlesztésében. A magányos férfiak gyakran találnak boldogságot egy szajhánál, aki azt is tudja, hogyan kell jól hallgatni. A szajha számára az, hogy egy olyan világban él, ahol öt férfi jut minden nőre, azt jelenti, hogy esélye van saját férjet találni, ahelyett, hogy szülei intéznék el a házasságát.</Hungarian>
 	</TEXT>
 	<!-- JUDGE -->
 	<TEXT>
@@ -2564,7 +2514,6 @@
 		<Italian>Onorevole giudice:Onorevoli giudici</Italian>
 		<Spanish>Honorable juez:Honorables jueces</Spanish>
 		<Russian>Заслуженный судья:Заслуженные судьи</Russian>
-		<Hungarian>Méltóságos Bíró:Méltóságos Bíró</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JUDGE</Tag>
@@ -2578,7 +2527,6 @@
 		<Italian>Onorevole giudice:Onorevoli giudici</Italian>
 		<Spanish>Honorable juez:Honorables jueces</Spanish>
 		<Russian>Заслуженный судья:Заслуженные судьи</Russian>
-		<Hungarian>Méltóságos Bíró:Méltóságos Bíró</Hungarian>an>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JUDGE_PEDIA</Tag>
@@ -2587,14 +2535,12 @@
 		<German>Ein Richter leitet die Verhandlung, hört alle Zeugen und alle anderen von den Anwälten vorgelegten Beweise an, beurteilt die Glaubwürdigkeit und die Argumente der Parteien und fällt dann auf der Grundlage seiner Rechtsauffassung und seines persönlichen Urteils eine Entscheidung in der Sache. Von einem Richter wird erwartet, dass er die Verhandlung unparteiisch und in öffentlicher Sitzung führt.</German>
 		<Italian>Un giudice presiede il procedimento giudiziario, ascolta tutti i testimoni e qualsiasi altra prova presentata dagli avvocati o dai legali della causa, valuta la credibilità e le argomentazioni delle parti, quindi emette una sentenza sulla base della sua interpretazione della legge e del suo giudizio personale. Il giudice è tenuto a condurre il processo in modo imparziale in un'aula aperta.</Italian>
 		<Spanish>El juez preside los procedimientos judiciales, escucha a todos los testigos y cualquier otra prueba presentada por los abogados o procuradores del caso, evalúa la credibilidad y los argumentos de las partes y, a continuación, dicta sentencia en el caso basándose en su interpretación de la ley y en su propio criterio personal. El juez debe dirigir el juicio con imparcialidad en audiencia pública.</Spanish>
-		<Hungarian>A bíró elnököl a bírósági eljárásokon, meghallgatja az összes tanút és az ügyvéd vagy jogtanácsos által bemutatott egyéb bizonyítékokat, értékeli a felek hitelességét és érveit, majd a törvény értelmezése és saját személyes ítélete alapján hoz döntést az ügyben. A bírótól elvárják, hogy a tárgyalást pártatlanul, nyílt bíróságon folytassa le.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JUDGE_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Honourable judges[COLOR_REVERT] are experts at dispensing justice and therefore, as [LINK=PROFESSION_JUDGE]judges[\LINK], generate twice as much [LINK=YIELD_LAW]justice[\LINK] as free colonists.</English>
 		<French>Les [COLOR_HIGHLIGHT_TEXT]juges équitables[COLOR_REVERT] sont experts à dispenser la justice et de ce fait contribuent deux fois plus au maintien de l'[LINK=YIELD_LAW]ordre[\LINK] en tant que [LINK=PROFESSION_JUDGE]juges[\LINK] qu'un colon libre au même poste.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Ehrenwerte Richter[COLOR_REVERT] sind Experten im Sprechen von Recht und erzeugen daher als [LINK=PROFESSION_JUDGE]Richter[\LINK] doppelt so viel [LINK=YIELD_LAW]Justiz[\LINK] wie freie Kolonisten.</German>
-		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]méltóságos bírók[COLOR_REVERT] az igazságszolgáltatás szakértői, ezért [LINK=PROFESSION_JUDGE]bíróként[\LINK] kétszer annyi [LINK=YIELD_LAW]törvényt[\LINK] állítanak elő, mint a szabad lakosok.</Hungarian>
 	</TEXT>
 	<!-- PRISONER_OF_WAR -->
 	<TEXT>
@@ -2607,7 +2553,6 @@
 			<Plural>0:1</Plural>
 		</German>
 		<Russian>Военнопленный:Военнопленные</Russian>
-		<Hungarian>Hadifogoly:Hadifogoly</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRISONER_OF_WAR</Tag>
@@ -2619,21 +2564,18 @@
 			<Plural>0:1</Plural>
 		</German>
 		<Russian>Военнопленный:Военнопленные</Russian>
-		<Hungarian>Hadifogoly:Hadifogoly</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_PEDIA</Tag>
 		<English>Prisoners of war, especially officers, are often ransomed. The rank and file are more likely to be released during a prisoner exchange.[NEWLINE]Taking prisoners is a relatively recent idea. During the Trojan War defeated fighters were killed. More recently knights counted on the value of their armour and horse to show that ransoming would be worthwhile. By colonial times capturing a prisoner meant the price his conquerors could expect to receive was the value of his life.</English>
 		<German>Für Kriegsgefangene, insbesondere für Offiziere, wird oft Lösegeld verlangt. Bei einem Gefangenenaustausch werden eher die einfachen Soldaten freigelassen.[NEWLINE]Die Idee, Gefangene zu nehmen, ist relativ neu. Während des Trojanischen Krieges wurden besiegte Kämpfer getötet. In jüngerer Zeit rechneten Ritter mit dem Wert ihrer Rüstung und ihres Pferdes, um zu zeigen, dass sich ein Lösegeld lohnen würde. In der Kolonialzeit bedeutete die Gefangennahme eines Gefangenen, dass der Preis, den seine Eroberer erwarten konnten, der Wert seines Lebens war.</German>
 		<Russian>когда-нибудь здесь появится описание</Russian>
-		<Hungarian>A hadifoglyokat, különösen a tiszteket, gyakran váltságdíjért engedik szabadon. A közkatonákat inkább fogolycserék során engedik szabadon.[NEWLINE]A foglyok ejtése viszonylag új keletű ötlet. A trójai háborúban a legyőzött harcosokat megölték. Újabban a lovagok a páncéljuk és lovuk értékére támaszkodtak, hogy megmutassák, érdemes váltságdíjat fizetni értük. A gyarmati időkben a fogoly ejtése azt jelentette, hogy a legyőzők az ő életének értékét kaphatták váltságdíjként.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT][NEWLINE]Defeated soldiers usually die in battle, but a few are captured to become prisoners of war. They may be ransomed or transferred in a prisoner exchange if the enemy commander is willing to make a deal.</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Kriegsgefangene[COLOR_REVERT][NEWLINE]Besiegte Soldaten sterben in der Regel in der Schlacht, aber einige wenige werden gefangen genommen und geraten in Kriegsgefangenschaft. Sie können freigekauft oder im Rahmen eines Gefangenenaustauschs übergeben werden, wenn der feindliche Befehlshaber zu einem Deal bereit ist.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
-		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Hadifogoly[COLOR_REVERT][NEWLINE]A legyőzött katonák általában meghalnak a csatában, de néhányukat fogságba ejtik. Választhatnak, hogy váltságdíjat fizetnek értük, vagy fogolycserében átadják őket, ha az ellenséges parancsnok hajlandó megállapodni.</Hungarian>
 	</TEXT>
 	<!-- REVOLTING_PRISONER_OF_WAR -->
 	<TEXT>
@@ -2646,7 +2588,6 @@
 			<Plural>0:1</Plural>
 		</German>
 		<Russian>Восставший военнопленный:Восставшие военнопленные</Russian>
-		<Hungarian>Lázadó Hadifogoly:Lázadó Hadifogoly</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR</Tag>
@@ -2658,21 +2599,18 @@
 			<Plural>0:1</Plural>
 		</German>
 		<Russian>Восставший военнопленный:Восставшие военнопленные</Russian>
-		<Hungarian>Lázadó Hadifogoly:Lázadó Hadifogoly</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_PEDIA</Tag>
 		<English>Once captured, prisoners of war have a duty as soldiers to escape. The best opportunity is during a riot. While the guards are distracted a few prisoners try to sneak away into the forest.[NEWLINE]If the guards manage to suppress the riot without too much trouble the remaining prisoners may survive, but punishment usually follows.</English>
 		<German>Nach der Gefangennahme haben Kriegsgefangene als Soldaten die Pflicht, zu fliehen. Die beste Gelegenheit dazu bietet sich während eines Aufstandes. Während die Wachen abgelenkt sind, versuchen einige Gefangene, sich in den Wald zu schleichen.[NEWLINE]Wenn es den Wachen gelingt, den Aufstand ohne größere Schwierigkeiten niederzuschlagen, können die übrigen Gefangenen überleben, aber in der Regel folgt eine Bestrafung.</German>
 		<Russian>когда-нибудь здесь появится описание</Russian>
-		<Hungarian>A hadifoglyok elfogásuk után katonaként kötelesek megszökni. A legjobb alkalom erre egy lázadás során adódik. Amíg az őrök figyelmét eltereli a lázadás, néhány fogoly megpróbál elmenekülni az erdőbe.[NEWLINE]Ha az őröknek sikerül a lázadást túl nagy nehézségek nélkül elfojtani, a megmaradt foglyok túlélhetik, de általában büntetés következik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT][NEWLINE]If the conditions of their captivity are bad, or if they see an opportunity to escape, prisoners of war will riot. Once they get away they hide in the woods and fight with greater strength than petty criminals, but not as much power as when they were soldiers.</English>
 		<German>[COLOR_HIGHLIGHT_TEXT]Revoltierende Kriegsgefangene[COLOR_REVERT][NEWLINE]Wenn die Bedingungen ihrer Gefangenschaft schlecht sind oder wenn sie eine Gelegenheit zur Flucht sehen, werden Kriegsgefangene randalieren. Sobald sie entkommen sind, verstecken sie sich in den Wäldern und kämpfen mit mehr Kraft als Kleinkriminelle, aber nicht mit so viel Kraft wie als Soldaten.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
-		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Lázadó Hadifogoly[COLOR_REVERT][NEWLINE]Ha fogságuk körülményei rosszak, vagy ha lehetőséget látnak a szökésre, a hadifoglyok lázadnak. Miután megszöktek, az erdőben rejtőznek el, és nagyobb erővel harcolnak, mint a kisstílű bűnözők, de nem annyira, mint amikor katonák voltak.</Hungarian>
 	</TEXT>
 	<!-- ECCENTRIC ARCHITECT -->
 	<TEXT>
@@ -2685,7 +2623,6 @@
 			<Plural>0:1</Plural>
 		</German>
 		<Russian>Эксцентричный архитектор:Эксцентричные архитекторы</Russian>
-		<Hungarian>Különc Építész:Különc Építész</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT_PEDIA</Tag>
@@ -2693,7 +2630,6 @@
 		<French>L'architecte est un maître en construction qui excellera dans l'édification des bâtiments de la colonie - dès lors qu'il est affecté à la construction dans un atelier de charpentier, une scierie, ou mieux. Il est inapte à toute autre profession.</French>
 		<German>Der Architekt ist ein Meister der Baukunst, der den Aufbau einer Kolonie wahre Wunder vollbringen wird - solange er in dem Beruf des Zimmermanns arbeitet und ordentlich Hämmer produziert. Für andere Berufe ist er ungeeignet. </German>
 		<Russian>[NEWLINE]Архитектор — мастер-строитель, который отлично подойдет для строительных работ в колонии. Под его началом плотники будут работать лучше, чем после благословения Папы (да простит Господь мне эти слова). Другую профессию назначить ему нельзя.</Russian>
-		<Hungarian>[NEWLINE]Az építész egy olyan építőmester, aki felgyorsítja egy kolónia építési munkáit. Ácsként a legjobb szakember, de más szakmákra nem alkalmas.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT_STRATEGY</Tag>
@@ -2701,6 +2637,5 @@
 		<French>L'architecte excentrique est un véritable expert dans l'art de la construction - doué et avec du métier, c'est l'un des visionnaires de sa guilde, mais aussi un bon vivant et un rêveur. Dès que vous avez construits cinq scieries ou mieux, vous disposez de 5.000[ICON_GOLD], et que vos colonies ont plus de 15 habitants le roi songera à vous envoyer un architecte excentrique dans ses colonies pour accélérer leur construction.[PARAGRAPH:1]The [COLOR_UNIT_TEXT]L'architecte excentrique[COLOR_REVERT] est le meilleur fabricant de [LINK=YIELD_HAMMERS]marteaux[\LINK] disponible. [NEWLINE]Affecter l'architecte excentrique à la profession de [LINK=PROFESSION_CARPENTER]charpentier[\LINK] quadruple la nombre de [COLOR_HIGHLIGHT_TEXT] marteaux[COLOR_REVERT] produit chaque tour comparé à un colon moyen.[NEWLINE]L'architecte excenrique ne peut être embauché en  [LINK=CONCEPT_EUROPE]Europe[\LINK], et ne peut être formé dans votre système éducatif, même dans l'université la plus prestigieuse.[NEWLINE]Dans toutes les autres professions, il souffrira de malus de production très sévères.[NEWLINE]Il est de plus phyisiquement faible, et le faire servir dans l'armée est une mauvaise idée.[NEWLINE]Toutefois, sa nature bonhomme et joviale lui permet de se faire des amis en se montrant généreux dans la vie. Il rendra la colonie plus heureuse par sa présence. Toutefois ceci s'est retourné contre lui; ce pourrait même être la raison pour laquelle le roi l'a envoyé loin, dans le Nouveau Monde. Vous devriez le garder à l'oeil.</French>
 		<German>Der [COLOR_UNIT_TEXT]Exzentrische Architekt[COLOR_REVERT] ist ein wahrer Experte der Baukunst - erfahren, gestählt und begabt ist er ein Visionär seiner Zunft; aber auch ein Lebemann und Träumer. Sobald Ihr 5 Sägewerke oder höhere Gebäudestufen errichtet habt, sich wenigstens 15 Bewohner in den Kolonien befinden und sich 5000[ICON_GOLD] in Eurer Schatzkammer befinden, wird der König darüber nachdenken, diesen Mann in seine Kolonien zu schicken, um den Aufbau der Kolonien zu unterstützen.[PARAGRAPH:1]Der [COLOR_HIGHLIGHT_TEXT]Exzentrische Architekt[COLOR_REVERT] vervierfacht die Anzahl der produzierten [LINK=YIELD_HAMMERS]Hämmer[\LINK] gegenüber einem normalen Bürger, der im Beruf [LINK=PROFESSION_CARPENTER]Zimmermann[\LINK] arbeitet.[PARAGRAPH:2]Für alle anderen Arbeiten ist er jedoch nicht zu gebrauchen und erhält hohe Produktionsmali. Außerdem ist er schwach, so dass er nicht zum Soldaten taugt. [NEWLINE]Er ist jedoch auch eine Frohnatur und Lebenmann, der sich in der Kolonie durch seinen freigebigen Lebensstil schnell Freunde machen wird. Er hebt daher die Stimmung in der Kolonie. Allerdings bringt ihm genau das auch Schwierigkeiten ein. Es könnte ein Grund sein, warum der König gerade diesen Mann loswerden und in die neue Welt abschieben wollte. Ihr solltet ihn im Auge behalten.</German>
 		<Russian>[NEWLINE][COLOR_UNIT_TEXT]Эксцентричный архитектор[COLOR_REVERT] — настоящий эксперт в строительном искусстве: опытный и одаренный, он суровый руководитель своей гильдии; но в то же время весельчак и мечтатель. Как только вы построите несколько [LINK=BUILDING_LUMBER_MILL]плотницких цехов[\LINK] или зданий более высокого класса, в казне будет достаточно [ICON_GOLD], а в колониях соберётся большое количество жителей, Король подумает о том, чтобы отправить лучшего из своих архитекторов в Новый Свет для поддержки строительных работ.[NEWLINE][COLOR_UNIT_TEXT]Эксцентричный архитектор[COLOR_REVERT] – лучший из доступных [LINK=YIELD_HAMMERS]строителей[\LINK].[NEWLINE][NEWLINE]Назначение Эксцентричному архитектору профессии [LINK=PROFESSION_CARPENTER]плотник[\LINK] в четыре раза увеличит количество [COLOR_HIGHLIGHT_TEXT]молотков[COLOR_REVERT], которые производит средний колонист.[NEWLINE][NEWLINE]Эксцентричного архитектора нельзя нанять в [LINK=CONCEPT_EUROPE]Европе[\LINK], его нельзя [LINK=CONCEPT_TRAINING]обучить[\LINK] даже в [LINK=BUILDING_UNIVERSITY]университете[\LINK], не говоря уже о более низших учебных заведениях.[NEWLINE]Во всех остальных профессиях он подвергается серьезным производственным штрафам.[NEWLINE][NEWLINE]Кроме того, он довольно слаб для несения военной службы, поэтому использовать его в качестве солдата — не лучшая идея.[NEWLINE][NEWLINE]Однако это жизнерадостный человек с веселой натурой, который благодаря своему щедрому образу жизни быстро найдет друзей в колониях. Одним словом, он точно поднимет уровень счастья там, где вы прикажете ему поселиться. Однако именно эта черта и доставляет ему большинство неприятностей. Возможно, это могло стать причиной того, что Король захотел избавиться от этого человека и депортировать его в Новый Мир. Нам следует приглядывать за ним.</Russian>
-		<Hungarian>A [COLOR_UNIT_TEXT]Különc Építész[COLOR_REVERT] az építészet igazi szakértője – tapasztalt és tehetséges, egy zseni, de egyben élvhajhász és álmodozó is. Amint 5 fűrészmalmot vagy annak egyik továbbfejlesztését, 5000[ICON_GOLD] van a kincstárban, és a kolóniáidban legalább 15 lakos él, a Király fontolóra veheti, hogy egy Különc Építészt küldjön a kolóniákra, hogy támogassa az ott folyó építkezéseket.[PARAGRAPH:1]A [COLOR_UNIT_TEXT]Különc Építész[COLOR_REVERT] a legjobb [LINK=YIELD_HAMMERS]kalapács[\LINK] előállító.[NEWLINE]Ha a Különc Építész [LINK=PROFESSION_CARPENTER]ácsként[\LINK] dolgozik, akkor négyszer annyi [COLOR_HIGHLIGHT_TEXT]kalapácsot[COLOR_REVERT] állít elő, mint egy átlagos gyarmatosító.[NEWLINE]A Különc Építész nem fogadható fel [LINK=CONCEPT_EUROPE]Európában[\LINK], és nem [LINK=CONCEPT_TRAINING]képzhető[\LINK] [LINK=BUILDING_UNIVERSITY]egyetemen[\LINK] vagy annak bármelyik továbbfejlesztésén.[NEWLINE]Minden más szakmában súlyos termelési hátrányokkal küzd.[NEWLINE]Ráadásul gyenge, ezért katonaként sem érdemes alkalmazni.[NEWLINE]Ugyanakkor vidám természetű, életrevaló ember, aki nagylelkű életmódjával gyorsan barátokat szerez a kolónián. Ezért növeli a kolónia boldogságát. Azonban ez okozta a baját is. Lehet, hogy éppen ez volt az oka annak, hogy a Király a kolóniákra küldte ezt az embert. Tartsd rajta a szemed!</Hungarian>
 	</TEXT>
 </Civ4GameText>
