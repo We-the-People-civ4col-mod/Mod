@@ -3182,7 +3182,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GIFT_NATIVE_KNOWLEDGE_PLANTATION_HELP</Tag>
-		<English>[ICON_BULLET]COLOR_POSITIVE_TEXT]+%d1 yield[COLOR_REVERT] on Plantations worked by this settlement.</English>
+		<English>[ICON_BULLET][COLOR_POSITIVE_TEXT]+%d1 yield[COLOR_REVERT] on Plantations worked by this settlement.</English>
 		<German>[ICON_BULLET][COLOR_POSITIVE_TEXT]+%d1 Ertrag [COLOR_REVERT]auf Plantagen, die von dieser Siedlung bewirtschaftet werden.</German>
 	</TEXT>
 	<TEXT>
