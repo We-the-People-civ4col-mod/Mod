@@ -7,14 +7,16 @@
 <Civ4GameText xmlns="http://www.firaxis.com">
 	<TEXT>
 		<Tag>TXT_KEY_DLL_FLAG_ERROR</Tag>
-		<English>DLL incompatible with the savegame. The DLL needs to be recompiled with the same flags as was used when the game was saved.[NEWLINE]Required Flags:</English>
+		<English>DLL incompatible with the savegame. The DLL needs to be recompiled with the same flags as were used when the game was saved.[NEWLINE]Required Flags:</English>
 		<French>DLL incompatible avec cette sauvegarde. La DLL nécessite d'être recompilée avec les mêmes flags que lors de la sauvegarde de cette partie.[NEWLINE]Flags requis :</French>
 		<Russian>DLL несовместима с сохраненной игрой. DLL необходимо перекомпилировать с теми же флагами, которые использовались при сохранении игры.[NEWLINE]Обязательные флаги:</Russian>
+		<Hungarian>A DLL nem kompatibilis a mentett játékkal. A DLL-t újra kell fordítani ugyanazokkal a beállításokkal, amelyeket a játék mentésekor használtak.[NEWLINE]Kötelező Beállítások:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_BECOMES_STRING</Tag>
 		<English>[ICON_BULLET]Becomes [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</English>
 		<French>[ICON_BULLET]Devient [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</French>
+		<Hungarian>[ICON_BULLET][COLOR_BUILDING_TEXT]%s1[COLOR_REVERT] lesz belőle</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAN_MOVE_PEAK</Tag>
@@ -22,5 +24,6 @@
 		<French>[ICON_BULLET]Peut traverser les montagnes.</French>
 		<German>[ICON_BULLET]Kann Berge überqueren</German>
 		<Russian>[ICON_BULLET]Может передвигаться по клеткам гор</Russian>
+		<Hungarian>[ICON_BULLET]Mozoghat Hegységben</Hungarian>
 	</TEXT>
 </Civ4GameText>
