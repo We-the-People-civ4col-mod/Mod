@@ -4551,6 +4551,7 @@
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
+			<RequiredColonialStatus>COLONIAL_STATUS_COLONIAL</RequiredColonialStatus>
 			<iMinTreasury>0</iMinTreasury>
 			<iMinPopulation>1</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
@@ -4626,6 +4627,7 @@
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
+			<RequiredColonialStatus>COLONIAL_STATUS_COLONIAL</RequiredColonialStatus>
 			<iMinTreasury>0</iMinTreasury>
 			<iMinPopulation>1</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
@@ -4703,6 +4705,7 @@
 			<bProbabilityUnitMultiply>0</bProbabilityUnitMultiply>
 			<bProbabilityBuildingMultiply>0</bProbabilityBuildingMultiply>
 			<eCivic>NONE</eCivic>
+			<RequiredColonialStatus>COLONIAL_STATUS_COLONIAL</RequiredColonialStatus>
 			<iMinTreasury>0</iMinTreasury>
 			<iMinPopulation>1</iMinPopulation>
 			<iMaxPopulation>0</iMaxPopulation>
@@ -13147,8 +13150,8 @@
 			<bShowPlot>1</bShowPlot>
 			<bFrontPopup>0</bFrontPopup>
 			<iCityFoodWeight>0</iCityFoodWeight>
-			<PythonCanDo>isPlayable</PythonCanDo>
-			<PythonCanDoCity/>
+			<PythonCanDo/>
+			<PythonCanDoCity>canTriggerWhaling</PythonCanDoCity>
 			<PythonCanDoUnit/>
 			<PythonCallback/>
 		</EventTriggerInfo>

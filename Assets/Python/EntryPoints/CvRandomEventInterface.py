@@ -719,38 +719,118 @@ def getHelpCounterblaste2(argsList):
 		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_RELATION_KING_DECREASE", (event.getGenericParameter(3), king.getCivilizationAdjectiveKey()))
 	return szHelp
 
+def canTriggerWhaling(argsList):
+	eTrigger = argsList[0]
+	ePlayer = argsList[1]
+	iCityId = argsList[2]
+
+	player = gc.getPlayer(ePlayer)
+
+	if player.isNone():
+		return False
+
+	if not player.isPlayable():
+		return False
+
+	if player.isNative():
+		return False
+
+	city = player.getCity(iCityId)
+
+	if city.isNone():
+		return False
+
+	if city.getOwner() != player.getID():
+		return False
+
+	iBuildingClass = gc.getInfoTypeForString("BUILDINGCLASS_WHALE_OIL_FACTORY")
+
+	if iBuildingClass == -1:
+		return False
+
+	iBuilding = gc.getCivilizationInfo(
+		player.getCivilizationType()
+	).getCivilizationBuildings(iBuildingClass)
+
+	if iBuilding != BuildingTypes.NO_BUILDING:
+		if city.isHasBuilding(iBuilding):
+			return False
+
+	return True
+
 def CanDoWhaling1(argsList):
 	eEvent = argsList[1]
 	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[0]
 	iYield = gc.getInfoTypeForString("YIELD_WHALE_OIL")
 	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if player.isNone():
+		return False
+
 	city = player.getCity(kTriggeredData.iCityId)
+
+	if city.isNone():
+		return False
+
+	iBuildingClass = gc.getInfoTypeForString("BUILDINGCLASS_WHALE_OIL_FACTORY")
+	iBuilding = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationBuildings(iBuildingClass)
+
+	if iBuilding != BuildingTypes.NO_BUILDING:
+		if city.isHasBuilding(iBuilding):
+			return False
+
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
-	if city.isNone():
+
+	if city.getYieldStored(iYield) < -quantity:
 		return False
-	if city.getYieldStored(iYield) < -quantity :
-		return False
+
 	return True
+
 
 def applyWhaling1(argsList):
 	eEvent = argsList[1]
 	event = gc.getEventInfo(eEvent)
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if player.isNone():
+		return
+
+	city = player.getCity(kTriggeredData.iCityId)
+
+	if city.isNone():
+		return
+
+	iBuildingClass = gc.getInfoTypeForString("BUILDINGCLASS_WHALE_OIL_FACTORY")
+	iBuilding = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationBuildings(iBuildingClass)
+
+	if iBuilding != BuildingTypes.NO_BUILDING:
+		if city.isHasBuilding(iBuilding):
+			return
+
 	eking = player.getParent()
 	king = gc.getPlayer(eking)
-	city = player.getCity(kTriggeredData.iCityId)
+
+	if king.isNone():
+		return
+
 	iYield = gc.getInfoTypeForString("YIELD_WHALE_OIL")
 	iPrice = king.getYieldBuyPrice(iYield)
 	quantity = event.getGenericParameter(1)
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 	quantity = quantity * Speed.getStoragePercent()/100
+
+	if quantity < 0:
+		if city.getYieldStored(iYield) < -quantity:
+			return
+
 	king.setYieldBuyPrice(iYield, iPrice+event.getGenericParameter(2), 1)
 	city.changeYieldStored(iYield, quantity)
-	if event.getGenericParameter(4) == 1 :
+
+	if event.getGenericParameter(4) == 1:
 		player.NBMOD_DecreaseMaxTaxRate()
 
 def getHelpWhaling1(argsList):
@@ -1721,11 +1801,17 @@ def _spawnDiscoveryAttackedHostileAdjacent(plot):
 		return None
 
 	iBarbarian = gc.getGame().getBarbarianPlayer()
+	if iBarbarian < 0:
+		return None
+
 	barbPlayer = gc.getPlayer(iBarbarian)
-	if barbPlayer.isNone():
+	if barbPlayer is None or barbPlayer.isNone():
 		return None
 
 	barbCiv = gc.getCivilizationInfo(barbPlayer.getCivilizationType())
+	if barbCiv is None:
+		return None
+
 	iUnitType = barbCiv.getCivilizationUnits(iHostileUnitClass)
 	if iUnitType == UnitTypes.NO_UNIT:
 		return None
@@ -3925,9 +4011,6 @@ def canTriggerAntiPirate(argsList):
 		return False
 
 	if not player.isPlayable():
-		return False
-
-	if player.isInRevolution():
 		return False
 
 	iKilledTradeships = 0
@@ -17864,7 +17947,10 @@ def _startCriminalsBlackmailCityCooldown(player, iTurns):
 	if player.isNone():
 		return
 
-	iReadyTurn = CyGame().getGameTurn() + iTurns
+	gameSpeed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	iScaledTurns = max(1, iTurns * gameSpeed.getGrowthPercent() / 100)
+
+	iReadyTurn = CyGame().getGameTurn() + iScaledTurns
 	_setCriminalsBlackmailCityCooldownReadyTurn(player, iReadyTurn)
 
 
@@ -17877,6 +17963,12 @@ def canTriggerCriminalsBlackmailCity(argsList):
 		return False
 
 	if not player.isPlayable():
+		return False
+
+	if player.isNative():
+		return False
+
+	if _isCriminalsBlackmailCityCooldownActive(player):
 		return False
 
 	city = player.getCity(iCity)
@@ -17895,14 +17987,10 @@ def canTriggerCriminalsBlackmailCity(argsList):
 	if iUnhappiness <= iHappiness:
 		return False
 
-	if city.getPopulation() < 3:
+	if city.getPopulation() < 5:
 		return False
 
-	iChance = 20
-	if _isCriminalsBlackmailCityCooldownActive(player):
-		iChance = 1
-
-	if CyGame().getSorenRandNum(100, "Criminals Blackmail City trigger chance") >= iChance:
+	if CyGame().getSorenRandNum(100, "Criminals Blackmail City trigger chance") >= 3:
 		return False
 
 	return True
@@ -18923,32 +19011,6 @@ def applyTreasureAttack(argsList):
 
 def getHelpDiscoveryTreasureAttack(argsList):
 	return localText.getText("TXT_KEY_EVENT_DISCOVERY_EVENTS_TREASURE_ATTACK_HELP", ())
-
-######## Slave Hunter Offers Service ###########
-
-def checkRunawaySlavesOnAdjacentPlotOfCity(argsList): ### When you copy rename specically for your actuall EventTrigger
-	eEvent = gc.getInfoTypeForString("EVENT_SLAVE_HUNTER_SERVICE_ACCEPT") ### When you copy put in actual Event to read parameters
-	event = gc.getEventInfo(eEvent)
-	ePlayer = argsList[1]
-	iCityIdThatTriggered = argsList[2]
-	player = gc.getPlayer(ePlayer)
-	city = player.getCity(iCityIdThatTriggered)
-
-	iBarbarianUnitClassTypeToCheck = event.getGenericParameter(1)
-	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck)
-	if (found):
-		return True
-
-	iBarbarianUnitClassTypeToCheck2 = event.getGenericParameter(2)
-	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck2)
-	if (found):
-		return True
-
-	iBarbarianUnitClassTypeToCheck3 = event.getGenericParameter(2)
-	found = city.isBarbarianUnitOnAdjacentPlotOfCity(iBarbarianUnitClassTypeToCheck3)
-	if (found):
-		return True
-	return False
 
 ######## General Attack Function ###########
 
@@ -23592,16 +23654,29 @@ def checkRunawaySlavesOnAdjacentPlotOfCity(argsList):
 
 	player = gc.getPlayer(ePlayer)
 
-	if player.isNone() or not player.isPlayable() or player.isNative():
+	if player is None or player.isNone():
+		return False
+
+	if not player.isPlayable() or player.isNative():
 		return False
 
 	city = player.getCity(iCityId)
 
-	if city.isNone() or city.getOwner() != player.getID():
+	if city is None or city.isNone():
+		return False
+
+	if city.getOwner() != player.getID():
 		return False
 
 	eEvent = gc.getInfoTypeForString("EVENT_SLAVE_HUNTER_SERVICE_ACCEPT")
+
+	if eEvent == -1:
+		return False
+
 	event = gc.getEventInfo(eEvent)
+
+	if event is None:
+		return False
 
 	aUnitClasses = (
 		event.getGenericParameter(1),
@@ -23609,18 +23684,25 @@ def checkRunawaySlavesOnAdjacentPlotOfCity(argsList):
 		event.getGenericParameter(3),
 	)
 
-	barbarianPlayer = gc.getPlayer(gc.getGame().getBarbarianPlayer())
+	iBarbarianPlayer = gc.getGame().getBarbarianPlayer()
+
+	if iBarbarianPlayer < 0:
+		return False
+
+	barbarianPlayer = gc.getPlayer(iBarbarianPlayer)
+
+	if barbarianPlayer is None or barbarianPlayer.isNone():
+		return False
 
 	(unit, iter) = barbarianPlayer.firstUnit()
 
 	while unit:
-
 		if unit.getUnitClassType() in aUnitClasses:
-
 			plot = unit.plot()
 
-			if _isPlotAdjacentToCityCulture(city, plot):
-				return True
+			if plot is not None and not plot.isNone():
+				if _isPlotAdjacentToCityCulture(city, plot):
+					return True
 
 		(unit, iter) = barbarianPlayer.nextUnit(iter)
 
