@@ -20,6 +20,7 @@
 		<German>[COLOR_HIGHLIGHT_TEXT]Übrige sichere Siege gegen Barbaren :[SPACE][COLOR_REVERT]</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Vittorie barbariche garantite rimaste :[SPACE][COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Número de victorias garantizadas contra los bárbaros :[SPACE][COLOR_REVERT]</Spanish>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Barbárok elleni biztos győzelem :[SPACE][COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_PressSHIFT</Tag>
@@ -28,6 +29,7 @@
 		<German>[COLOR:140:255:40:255]&lt; Umschalten &gt;[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]drücken für mehr Einzelheiten[COLOR_REVERT]</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Tieni premuto [COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT] per maggiori dettagli[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Oprima [COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT] para más detalles[COLOR_REVERT]</Spanish>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Nyomd meg a [COLOR:140:255:40:255]&lt; SHIFT-t &gt;[COLOR_REVERT] a részletekért[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_SurvivalOdds</Tag>
@@ -37,6 +39,7 @@
 		<Italian>Probabilità di sopravvivenza :[SPACE]</Italian>
 		<Spanish>Probabilidad de sobrevivencia :[SPACE]</Spanish>
 		<Russian>Шансы на выживание :[SPACE]</Russian>
+		<Hungarian>Túlélés esélye :[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_SurvivalGuaranteed</Tag>
@@ -45,6 +48,7 @@
 		<German>[COLOR_HIGHLIGHT_TEXT]Sicheres Überleben![COLOR_REVERT]</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Sopravvivenza certa![COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]¡Sobrevivencia garantizada![COLOR_REVERT]</Spanish>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Biztos Túlélés![COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_Victory</Tag>
@@ -54,6 +58,7 @@
 		<Italian>[COLOR_POSITIVE_TEXT]Vittoria[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_POSITIVE_TEXT]Victoria[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_POSITIVE_TEXT]Победить[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_POSITIVE_TEXT]Győzelem[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_Defeat</Tag>
@@ -63,6 +68,7 @@
 		<Italian>[COLOR_NEGATIVE_TEXT]Sconfitta[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_NEGATIVE_TEXT]Derrota[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_NEGATIVE_TEXT]Проиграть[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_NEGATIVE_TEXT]Vereség[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_Withdraw</Tag>
@@ -72,6 +78,7 @@
 		<Italian>[COLOR_POSITIVE_TEXT]Fuga[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_POSITIVE_TEXT]Repliegue[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_POSITIVE_TEXT]Уклониться[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_POSITIVE_TEXT]Visszavonulás[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_Retreat</Tag>
@@ -81,6 +88,7 @@
 		<Italian>[COLOR_UNIT_TEXT]Ritirata[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_UNIT_TEXT]Retirada[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_UNIT_TEXT]Отступить[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_UNIT_TEXT]Meghátrálás[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_Unresolved</Tag>
@@ -98,6 +106,7 @@
 		<German>[NEWLINE]Mittlere TP :[SPACE]</German>
 		<Italian>[NEWLINE]PV medi :[SPACE]</Italian>
 		<Spanish>[NEWLINE]PG promedio :[SPACE]</Spanish>
+		<Hungarian>[NEWLINE]Átlagos ÉP :[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_Unharmed</Tag>
@@ -106,6 +115,7 @@
 		<German>[NEWLINE]Unverletzt :[SPACE]</German>
 		<Italian>[NEWLINE]Disarmato :[SPACE]</Italian>
 		<Spanish>[NEWLINE]Ileso :[SPACE]</Spanish>
+		<Hungarian>[NEWLINE]Sértetlen :[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_UnroundedXP</Tag>
@@ -114,6 +124,7 @@
 		<German>[NEWLINE]Ungerundete EP :[SPACE]</German>
 		<Italian>[NEWLINE]PE non arrotondati :[SPACE]</Italian>
 		<Spanish>[NEWLINE]PX no redondeados :[SPACE]</Spanish>
+		<Hungarian>[NEWLINE]Kerekítetlen TP :[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_TotalDefenseModifier</Tag>
@@ -122,6 +133,7 @@
 		<German>[NEWLINE]Verteidigungsmodifikator gesamt :[SPACE]</German>
 		<Italian>[NEWLINE]Modificatore difensivo totale :[SPACE]</Italian>
 		<Spanish>[NEWLINE]Modificador defensivo total :[SPACE]</Spanish>
+		<Hungarian>[NEWLINE]Teljes védelmi módosító :[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_AttackModifiers</Tag>
@@ -130,6 +142,7 @@
 		<German>[NEWLINE][COLOR_POSITIVE_TEXT]Angriffsmodifikatoren :[COLOR_REVERT]</German>
 		<Italian>[NEWLINE][COLOR_POSITIVE_TEXT]Modificatori offensivi :[COLOR_REVERT]</Italian>
 		<Spanish>[NEWLINE][COLOR_POSITIVE_TEXT]Modificadores de ataque :[COLOR_REVERT]</Spanish>
+		<Hungarian>[NEWLINE][COLOR_POSITIVE_TEXT]Támadási módosító :[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_DefenseModifiers</Tag>
@@ -138,6 +151,7 @@
 		<German>[NEWLINE][COLOR_NEGATIVE_TEXT]Verteidigungsmodifikatoren :[COLOR_REVERT]</German>
 		<Italian>[NEWLINE][COLOR_NEGATIVE_TEXT]Modificatori difensivi :[COLOR_REVERT]</Italian>
 		<Spanish>[NEWLINE][COLOR_NEGATIVE_TEXT]Modificadores defensivos :[COLOR_REVERT]</Spanish>
+		<Hungarian>[NEWLINE][COLOR_NEGATIVE_TEXT]Védelmi módosító :[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_GuaranteedNoDefenderHit</Tag>
@@ -146,6 +160,7 @@
 		<German>[NEWLINE][COLOR_HIGHLIGHT_TEXT]Sicher! Verteidiger wird keinen Treffer landen.[COLOR_REVERT]</German>
 		<Italian>[NEWLINE][COLOR_HIGHLIGHT_TEXT]Certa! I difensori non possono colpire neppure una volta.[COLOR_REVERT]</Italian>
 		<Spanish>[NEWLINE][COLOR_HIGHLIGHT_TEXT]¡Garantizado! El defensor no puede dar en el blanco.[COLOR_REVERT]</Spanish>
+		<Hungarian>[NEWLINE][COLOR_HIGHLIGHT_TEXT]Garantált! A védő nem tudja eltalálni.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_HitsAt</Tag>
@@ -154,6 +169,7 @@
 		<German>trifft</German>
 		<Italian>colpisce a</Italian>
 		<Spanish>golpea a</Spanish>
+		<Hungarian>eltalálja</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_HP</Tag>
@@ -162,6 +178,7 @@
 		<German>TP</German>
 		<Italian>PV</Italian>
 		<Spanish>PG</Spanish>
+		<Hungarian>ÉP</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_INJURED_HP</Tag>
@@ -170,6 +187,7 @@
 		<German>%d1/%d2 TP</German>
 		<Italian>%d1/%d2 PV</Italian>
 		<Spanish>%d1/%d2 PG</Spanish>
+		<Hungarian>%d1/%d2 ÉP</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_HP_NEUTRAL</Tag>
@@ -178,6 +196,7 @@
 		<German>[COLOR_UNIT_TEXT]TP[COLOR_REVERT]</German>
 		<Italian>[COLOR_UNIT_TEXT]PV[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_UNIT_TEXT]PG[COLOR_REVERT]</Spanish>
+		<Hungarian>[COLOR_UNIT_TEXT]ÉP[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_XP</Tag>
@@ -186,10 +205,12 @@
 		<German>EP</German>
 		<Italian>PE</Italian>
 		<Spanish>PX</Spanish>
+		<Hungarian>TP</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_ACO_MULTIPLY</Tag>
 		<English>×</English>
 		<Default>*</Default>
+		<Hungarian>*</Hungarian>
 	</TEXT>
 </Civ4GameText>
