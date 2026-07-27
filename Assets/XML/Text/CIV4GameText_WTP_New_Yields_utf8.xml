@@ -1769,6 +1769,7 @@
 		<Italian>Articoli per la casa</Italian>
 		<Spanish>Artículos domésticos</Spanish>
 		<Russian>Товары для домашнего хозяйства</Russian>
+		<Hungarian>Háztartási Áru</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HOUSEHOLD_GOODS</Tag>
@@ -1782,6 +1783,7 @@
 		<Italian>Articoli per la casa</Italian>
 		<Spanish>Artículos domésticos</Spanish>
 		<Russian>Товары для домашнего хозяйства</Russian>
+		<Hungarian>Háztartási Áru</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOUSEHOLD_GOODS</Tag>
@@ -1795,6 +1797,7 @@
 		<Italian>Articoli per la casa</Italian>
 		<Spanish>Artículos domésticos</Spanish>
 		<Russian>Товары для домашнего хозяйства</Russian>
+		<Hungarian>Háztartási Áru</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_HOUSEHOLD_GOODS_PEDIA</Tag>
@@ -1825,6 +1828,7 @@
 		<Italian>Attrezzi da lavoro</Italian>
 		<Spanish>Herramientas de campo</Spanish>
 		<Russian>Товары для полевых работ</Russian>
+		<Hungarian>Mezőgazdasági Szerszám</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FIELD_WORKER_TOOLS</Tag>
@@ -1838,6 +1842,7 @@
 		<Italian>Attrezzi da lavoro</Italian>
 		<Spanish>Herramientas de campo</Spanish>
 		<Russian>Товары для полевых работ</Russian>
+		<Hungarian>Mezőgazdasági Szerszám</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIELD_WORKER_TOOLS</Tag>
@@ -1851,6 +1856,7 @@
 		<Italian>Attrezzi da lavoro</Italian>
 		<Spanish>Herramientas de campo</Spanish>
 		<Russian>Товары для полевых работ</Russian>
+		<Hungarian>Mezőgazdasági Szerszám</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_FIELD_WORKER_TOOLS_PEDIA</Tag>
@@ -1881,6 +1887,7 @@
 		<Italian>Riso</Italian>
 		<Spanish>Arroz</Spanish>
 		<Russian>Рис</Russian>
+		<Hungarian>Rizs</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_RICE_PEDIA</Tag>
@@ -1911,6 +1918,7 @@
 		<Italian>Cassava</Italian>
 		<Spanish>Yuca</Spanish>
 		<Russian>Маниока</Russian>
+		<Hungarian>Manióka</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_CASSAVA_PEDIA</Tag>
@@ -1941,6 +1949,7 @@
 		<Italian>Cocciniglia del carminio</Italian>
 		<Spanish>Cochinilla del carmín</Spanish>
 		<Russian>Кошениль</Russian>
+		<Hungarian>Bíbortetű</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCHINEAL</Tag>
@@ -1954,6 +1963,7 @@
 		<Italian>Cocciniglia del carminio</Italian>
 		<Spanish>Cochinilla del carmín</Spanish>
 		<Russian>Кошениль</Russian>
+		<Hungarian>Bíbortetű</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCHINEAL</Tag>
@@ -1967,6 +1977,7 @@
 		<Italian>Cocciniglia del carminio</Italian>
 		<Spanish>Cochinilla del carmín</Spanish>
 		<Russian>Кошениль</Russian>
+		<Hungarian>Bíbortetű</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_COCHINEAL_PEDIA</Tag>
@@ -1997,6 +2008,7 @@
 		<Italian>Cioccolatini</Italian>
 		<Spanish>Chocolates</Spanish>
 		<Russian>Шоколад</Russian>
+		<Hungarian>Csokoládé</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CHOCOLATE</Tag>
@@ -2010,6 +2022,7 @@
 		<Italian>Cioccolatini</Italian>
 		<Spanish>Chocolates</Spanish>
 		<Russian>Шоколад</Russian>
+		<Hungarian>Csokoládé</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHOCOLATE</Tag>
@@ -2023,6 +2036,7 @@
 		<Italian>Cioccolatini</Italian>
 		<Spanish>Chocolates</Spanish>
 		<Russian>Шоколад</Russian>
+		<Hungarian>Csokoládé</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_CHOCOLATE_PEDIA</Tag>
@@ -2053,6 +2067,7 @@
 		<Italian>Cappotti di pelle foderati</Italian>
 		<Spanish>Abrigos de cuero forrados</Spanish>
 		<Russian>Утепленные куртки</Russian>
+		<Hungarian>Bélelt Bőrkabát</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PADDED_LEATHER_COATS</Tag>
@@ -2066,6 +2081,7 @@
 		<Italian>Cappotti di pelle foderati</Italian>
 		<Spanish>Abrigos de cuero forrados</Spanish>
 		<Russian>Утепленные куртки</Russian>
+		<Hungarian>Bélelt Bőrkabát</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PADDED_LEATHER_COATS</Tag>
@@ -2079,6 +2095,7 @@
 		<Italian>Cappotti di pelle foderati</Italian>
 		<Spanish>Abrigos de cuero forrados</Spanish>
 		<Russian>Утепленные куртки</Russian>
+		<Hungarian>Bélelt Bőrkabát</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_PADDED_LEATHER_COATS_PEDIA</Tag>
@@ -2109,6 +2126,7 @@
 		<Italian>Latte</Italian>
 		<Spanish>Leche</Spanish>
 		<Russian>Молоко</Russian>
+		<Hungarian>Tej</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MILK</Tag>
@@ -2122,6 +2140,7 @@
 		<Italian>Latte</Italian>
 		<Spanish>Leche</Spanish>
 		<Russian>Молоко</Russian>
+		<Hungarian>Tej</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MILK</Tag>
@@ -2135,6 +2154,7 @@
 		<Italian>Latte</Italian>
 		<Spanish>Leche</Spanish>
 		<Russian>Молоко</Russian>
+		<Hungarian>Tej</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_MILK_PEDIA</Tag>
@@ -2165,6 +2185,7 @@
 		<Italian>Gomma</Italian>
 		<Spanish>Caucho</Spanish>
 		<Russian>Каучук</Russian>
+		<Hungarian>Kaucsuk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_KAUTSCHUK</Tag>
@@ -2178,6 +2199,7 @@
 		<Italian>Gomma</Italian>
 		<Spanish>Caucho</Spanish>
 		<Russian>Каучук</Russian>
+		<Hungarian>Kaucsuk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KAUTSCHUK</Tag>
@@ -2191,6 +2213,7 @@
 		<Italian>Gomma</Italian>
 		<Spanish>Caucho</Spanish>
 		<Russian>Каучук</Russian>
+		<Hungarian>Kaucsuk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_KAUTSCHUK_PEDIA</Tag>
@@ -2221,6 +2244,7 @@
 		<Italian>Formaggio</Italian>
 		<Spanish>Queso</Spanish>
 		<Russian>Сыр</Russian>
+		<Hungarian>Sajt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CHEESE</Tag>
@@ -2234,6 +2258,7 @@
 		<Italian>Formaggio</Italian>
 		<Spanish>Queso</Spanish>
 		<Russian>Сыр</Russian>
+		<Hungarian>Sajt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHEESE</Tag>
@@ -2247,6 +2272,7 @@
 		<Italian>Formaggio</Italian>
 		<Spanish>Queso</Spanish>
 		<Russian>Сыр</Russian>
+		<Hungarian>Sajt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_CHEESE_PEDIA</Tag>
@@ -2277,6 +2303,7 @@
 		<Italian>Ceramica</Italian>
 		<Spanish>Cerámica</Spanish>
 		<Russian>Керамика</Russian>
+		<Hungarian>Kerámia</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_POTTERY</Tag>
@@ -2290,6 +2317,7 @@
 		<Italian>Ceramica</Italian>
 		<Spanish>Cerámica</Spanish>
 		<Russian>Керамика</Russian>
+		<Hungarian>Kerámia</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POTTERY</Tag>
@@ -2303,6 +2331,7 @@
 		<Italian>Ceramica</Italian>
 		<Spanish>Cerámica</Spanish>
 		<Russian>Керамика</Russian>
+		<Hungarian>Kerámia</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_POTTERY_PEDIA</Tag>
@@ -2333,6 +2362,7 @@
 		<Italian>Abbigliamento per tutti i giorni</Italian>
 		<Spanish>Ropa de trabajo</Spanish>
 		<Russian>Повседневная одежда</Russian>
+		<Hungarian>Hétköznapi Ruha</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_EVERYDAY_CLOTHES</Tag>
@@ -2346,6 +2376,7 @@
 		<Italian>Abbigliamento per tutti i giorni</Italian>
 		<Spanish>Ropa de trabajo</Spanish>
 		<Russian>Повседневная одежда</Russian>
+		<Hungarian>Hétköznapi Ruha</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EVERYDAY_CLOTHES</Tag>
@@ -2359,6 +2390,7 @@
 		<Italian>Abbigliamento per tutti i giorni</Italian>
 		<Spanish>Ropa de trabajo</Spanish>
 		<Russian>Повседневная одежда</Russian>
+		<Hungarian>Hétköznapi Ruha</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_EVERYDAY_CLOTHES_PEDIA</Tag>
@@ -2389,6 +2421,7 @@
 		<Italian>Abiti da cerimonia</Italian>
 		<Spanish>Ropa formal</Spanish>
 		<Russian>Праздничная одежда</Russian>
+		<Hungarian>Ünnepi Ruha</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FESTIVE_CLOTHES</Tag>
@@ -2402,6 +2435,7 @@
 		<Italian>Abiti da cerimonia</Italian>
 		<Spanish>Ropa formal</Spanish>
 		<Russian>Праздничная одежда</Russian>
+		<Hungarian>Ünnepi Ruha</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FESTIVE_CLOTHES</Tag>
@@ -2415,6 +2449,7 @@
 		<Italian>Abiti da cerimonia</Italian>
 		<Spanish>Ropa formal</Spanish>
 		<Russian>Праздничная одежда</Russian>
+		<Hungarian>Ünnepi Ruha</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_FESTIVE_CLOTHES_PEDIA</Tag>
