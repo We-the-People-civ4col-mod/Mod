@@ -719,6 +719,7 @@
 		<Italian>[ICON_BULLET]Cura le unità nelle caselle adiacenti del %d1_Heals%%[SPACE]</Italian>
 		<Spanish>[ICON_BULLET]Cura a las unidades en casillas adyacentes un %d1_Amount%% más de[SPACE]</Spanish>
 		<Russian>[ICON_BULLET]Дополнительно исцеляет юнитам на соседних клетках %d1_Heals%%[SPACE]</Russian>
+		<Hungarian>[ICON_BULLET]A szomszédos területen lévő egységenek Gyógyulást ad +%d1_Heals%%[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ATTACK</Tag>
@@ -728,6 +729,7 @@
 		<Italian>[ICON_BULLET]%D1_Change%% all'attacco in %s2_TerrOrFeat</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% a ataque a %s2:2_TerrOrFeat</Spanish>
 		<Russian>[ICON_BULLET]%D1_Change%% к атаке в %s2_TerrOrFeat</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat Támadás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_ATTACK_TEXT</Tag>
@@ -737,6 +739,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% di attacco in %s2_TerrFeat</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% a ataque a %s2:2_TerrFeat</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% к атаке в %s2_TerrFeat</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% %s2_TerrFeat Támadás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STRENGTH</Tag>
@@ -746,6 +749,7 @@
 		<Italian>[ICON_BULLET]%D1_Change%% alla forza in %s2_TerrOrFeat</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% a fuerza en %s2:2_TerrOrFeat</Spanish>
 		<Russian>[ICON_BULLET]%D1_Change%% к силе в %s2_TerrOrFeat</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat Erő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_STRENGTH_TEXT</Tag>
@@ -755,6 +759,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% di forza</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% a la fuerza</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% к силе</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% Erő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HILLS_DEFENSE</Tag>
@@ -764,6 +769,7 @@
 		<Italian>[ICON_BULLET]%D1_Change%% di difesa in collina</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% a defender colinas</Spanish>
 		<Russian>[ICON_BULLET]%D1_Change%% к защите на холмах</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Change%% védelem Dombokon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_HILLS_DEFENSE_TEXT</Tag>
@@ -773,6 +779,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% di difesa in collina</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% a defender colinas</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% к защите на холмах</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% védelem Dombokon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DOMESTIC_BONUS</Tag>
@@ -782,6 +789,7 @@
 		<Italian>[ICON_BULLET]%D1_Change%% di forza all'interno dei confini culturali</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% de fuerza dentro de las fronteras culturales</Spanish>
 		<Russian>[ICON_BULLET]%D1_Change%% к силе внутри культурных границ</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Change%% Erő saját területen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_DOMESTIC_BONUS_TEXT</Tag>
@@ -791,6 +799,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% di forza all'interno dei confini culturali</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% de fuerza dentro de las fronteras culturales</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% к силе внутри культурных границ</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% Erő saját területen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DEFENSE</Tag>
@@ -800,6 +809,7 @@
 		<Italian>[ICON_BULLET]%D1_Change%% di difesa nella %s2:2_TerrOrFeat</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% a defender %s2:2_TerrOrFeat</Spanish>
 		<Russian>[ICON_BULLET]%D1_Change%% к защите в %s2_TerrOrFeat</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Change%% %s2_TerrOrFeat Védelem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_DEFENSE_TEXT</Tag>
@@ -809,6 +819,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% difensivo nelle caselle di %s2:1_TerrFeat</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% a defender %s2:2_TerrFeat</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% к защите в %s2_TerrFeat</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% %s2_TerrFeat Védelem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARGO_SPACE</Tag>
@@ -818,6 +829,7 @@
 		<Italian>[ICON_BULLET]Spazio di carico : %d1_Num</Italian>
 		<Spanish>[ICON_BULLET]Bodega : %d1_Num</Spanish>
 		<Russian>[ICON_BULLET]Места для груза : %d1_Num</Russian>
+		<Hungarian>[ICON_BULLET]Raktér: %d1_Num</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HARBOR_SPACE_NEEDED</Tag>
@@ -825,6 +837,7 @@
 		<French>[ICON_BULLET] Espace d'amarrage nécessaire : %d1_Num%F2_Icon</French>
 		<German>[ICON_BULLET]Braucht zum Andocken : %d1_Num%F2_Icon</German>
 		<Russian>[ICON_BULLET]Требуется места в гавани : %d1_Num%F2_Icon</Russian>
+		<Hungarian>[ICON_BULLET]Szükséges Dokkterület : %d1_Num%F2_Icon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BARRACKS_SPACE_NEEDED</Tag>
@@ -832,6 +845,7 @@
 		<French>[ICON_BULLET]Baraquement nécessaire :  %d1_Num%F2_Icon</French>
 		<German>[ICON_BULLET]Braucht Kasernenplatz : %d1_Num%F2_Icon</German>
 		<Russian>[ICON_BULLET]Требуется места в казармах : %d1_Num%F2_Icon</Russian>
+		<Hungarian>[ICON_BULLET]Szükséges Barakkterület : %d1_Num%F2_Icon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ADDITIONAL_LAW_TO_CITY</Tag>
@@ -839,6 +853,7 @@
 		<French>[ICON_BULLET]Ordre apporté: +%d1_Num%F2_Icon (si la population n'est pas trop basse) </French>
 		<German>[ICON_BULLET]Zusätzliches Gesetz: +%d1_Num%F2_Icon (falls Bevölkerung nicht zu niedrig)</German>
 		<Russian>[ICON_BULLET]Прибавка к закону: +%d1_Num%F2_Icon (если размер колонии больше 9)</Russian>
+		<Hungarian>[ICON_BULLET]További Törvény: +%d1_Num%F2_Icon (ha a népesség nem túl alacsony)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_BOMBARD_RATE_CHANGE</Tag>
@@ -848,6 +863,7 @@
 		<Italian>[ICON_BULLET]%D1_DmgChange%%%F2_Icon di danno da bombardamento sull'insediamento</Italian>
 		<Spanish>[ICON_BULLET]%D1_DmgChange%%%F2_Icon al daño al cañonear asentamientos</Spanish>
 		<Russian>[ICON_BULLET]%D1_DmgChange%%%F2_Icon к бомбардировке поселений</Russian>
+		<Hungarian>[ICON_BULLET]%D1_DmgChange%%%F2_Icon település bombázás sebzés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARRIES</Tag>
@@ -857,6 +873,7 @@
 		<Italian>[SPACE](trasporta %s1_Name)</Italian>
 		<Spanish>[SPACE](%s1_Name)</Spanish>
 		<Russian>[SPACE](перевозит [COLOR_SELECTED_TEXT]%s1_Name[COLOR_REVERT])</Russian>
+		<Hungarian>[SPACE](szállítmány: [COLOR_SELECTED_TEXT]%s1_Name[COLOR_REVERT])</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CANNOT_ENTER</Tag>
@@ -866,6 +883,7 @@
 		<Italian>[ICON_BULLET]Non può entrare nell'</Italian>
 		<Spanish>[ICON_BULLET]No puede entrar en</Spanish>
 		<Russian>[ICON_BULLET]Не может заходить в</Russian>
+		<Hungarian>[ICON_BULLET]Nem léphet be</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INVISIBLE_ALL</Tag>
@@ -874,6 +892,7 @@
 		<German>[ICON_BULLET]Für alle Einheiten unsichtbar</German>
 		<Italian>[ICON_BULLET]Invisibile a tutte le unità</Italian>
 		<Spanish>[ICON_BULLET]Invisible para todas las unidades</Spanish>
+		<Hungarian>[ICON_BULLET]Láthatatlan minden egység számára</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INVISIBLE_MOST</Tag>
@@ -882,6 +901,7 @@
 		<German>[ICON_BULLET]Für die meisten Einheiten unsichtbar</German>
 		<Italian>[ICON_BULLET]Invisibile alla maggior parte delle unità</Italian>
 		<Spanish>[ICON_BULLET]Invisible para la mayoría de las unidades</Spanish>
+		<Hungarian>[ICON_BULLET]Láthatatlan a legtöbb egység számára</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SEE_INVISIBLE</Tag>
@@ -890,6 +910,7 @@
 		<German>[ICON_BULLET]Kann %s1_Name sehen</German>
 		<Italian>[ICON_BULLET]Può vedere [NUM1:il:la:i:le] %s1_Name </Italian>
 		<Spanish>[ICON_BULLET]Puede ver %s1:2_Name</Spanish>
+		<Hungarian>[ICON_BULLET]Láthatja %s1_Name egységet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ONLY_DEFENSIVE</Tag>
@@ -899,6 +920,7 @@
 		<Italian>[ICON_BULLET]Può solo difendere</Italian>
 		<Spanish>[ICON_BULLET]Sólo puede defender</Spanish>
 		<Russian>[ICON_BULLET]Только обороняется</Russian>
+		<Hungarian>[ICON_BULLET]Csak védekezhet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EXPLORE_RIVAL</Tag>
@@ -908,6 +930,7 @@
 		<Italian>[ICON_BULLET]Può esplorare il territorio rivale</Italian>
 		<Spanish>[ICON_BULLET]Puede explorar el territorio enemigo</Spanish>
 		<Russian>[ICON_BULLET]Может исследовать чужие территории</Russian>
+		<Hungarian>[ICON_BULLET]Felderítheti a rivális területet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_IMPROVE_PLOTS</Tag>
@@ -917,6 +940,7 @@
 		<Italian>[ICON_BULLET]Può migliorare le caselle</Italian>
 		<Spanish>[ICON_BULLET]Puede mejorar casillas</Spanish>
 		<Russian>[ICON_BULLET]Может строить улучшения</Russian>
+		<Hungarian>[ICON_BULLET]Fejlesztheti a területet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAN</Tag>
@@ -926,6 +950,7 @@
 		<Italian>[ICON_BULLET]Può[SPACE]</Italian>
 		<Spanish>[ICON_BULLET]Puede[SPACE]</Spanish>
 		<Russian>[ICON_BULLET]Может[SPACE]</Russian>
+		<Hungarian>[ICON_BULLET]Képes rá:[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NO_DEFENSE_BONUSES</Tag>
@@ -935,6 +960,7 @@
 		<Italian>[ICON_BULLET]Non riceve bonus difensivi</Italian>
 		<Spanish>[ICON_BULLET]No recibe bonificaciones defensivas</Spanish>
 		<Russian>[ICON_BULLET]Не получает бонусы к защите</Russian>
+		<Hungarian>[ICON_BULLET]Nem kap védelmi bónuszt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY_SHORT</Tag>
@@ -944,6 +970,7 @@
 		<Italian>[ICON_BULLET]Probabilità di ritirata in attacco: %d1_Amount%%</Italian>
 		<Spanish>[ICON_BULLET]Probabilidad de retirarse en ataque: %d1_Amount%%</Spanish>
 		<Russian>[ICON_BULLET]Шанс отступить при атаке: %d1_Amount%%</Russian>
+		<Hungarian>[ICON_BULLET]Visszavonulási Esély Támadáskor: %d1_Amount%%</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WITHDRAWL_PROBABILITY</Tag>
@@ -953,6 +980,7 @@
 		<Italian>[ICON_BULLET]Può ritirarsi dal combattimento in attacco(%d1_Amount%% di probabilità)</Italian>
 		<Spanish>[ICON_BULLET]Puede retirarse del combate en ataque(probabilidad del %d1_Amount%%)</Spanish>
 		<Russian>[ICON_BULLET]Может выйти из боя при атаке (шанс %d1_Amount%%)</Russian>
+		<Hungarian>[ICON_BULLET]Visszavonulhat csatából támadáskor (%d1_Amount%% esély)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MOD_VS_TYPE</Tag>
@@ -961,6 +989,7 @@
 		<German>[ICON_BULLET]%D1_Change%% gegen [LINK=literal]%s2_Type[\LINK]</German>
 		<Italian>[ICON_BULLET]%D1_Change%% contro [LINK=literal]%s2:2_Type[\LINK]</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% contra [LINK=literal]%s2:2_Type[\LINK]</Spanish>
+		<Hungarian>[ICON_BULLET]%D1_Change%% [LINK=literal]%s2_Type[\LINK] ellen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MOD_VS_TYPE_NO_LINK</Tag>
@@ -969,6 +998,7 @@
 		<German>[ICON_BULLET]%D1_Change%% gegen %s2_Type</German>
 		<Italian>[ICON_BULLET]%D1_Change%% contro %s2:2_Type</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% contra %s2:2_Type</Spanish>
+		<Hungarian>[ICON_BULLET]%D1_Change%% %s2_Type ellen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ATTACK_MOD_VS_CLASS</Tag>
@@ -978,6 +1008,7 @@
 		<Italian>[ICON_BULLET]%D1_Change%% di attacco contro [LINK=literal]%s2:2_Class[\LINK]</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% al ataque contra [LINK=literal]%s2:2_Class[\LINK]</Spanish>
 		<Russian>[ICON_BULLET]%D1_Change%% к атаке vs. [LINK=literal]%s2_Class[\LINK]</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Change%% támadás [LINK=literal]%s2_Class[\LINK] ellen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DEFENSE_MOD_VS_CLASS</Tag>
@@ -987,6 +1018,7 @@
 		<Italian>[ICON_BULLET]%D1_Change%% quando difende contro [LINK=literal]%s2:2_Class[\LINK]</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% al defender contra [LINK=literal]%s2:2_Type[\LINK]</Spanish>
 		<Russian>[ICON_BULLET]%D1_Change%% к обороне vs. [LINK=literal]%s2_Type[\LINK]</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Change%% védelem [LINK=literal]%s2_Type[\LINK] egységgel szemben</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STARTS_WITH</Tag>
@@ -996,6 +1028,7 @@
 		<Italian>[ICON_BULLET]Inizia con[SPACE]</Italian>
 		<Spanish>[ICON_BULLET]Empieza con[SPACE]</Spanish>
 		<Russian>[ICON_BULLET]Начинает с[SPACE]</Russian>
+		<Hungarian>[ICON_BULLET]Ezzel kezd:[SPACE]</Hungarian>
 	</TEXT>
 <!-- ZorG. colopedia. which building is required to build a unit. START -->
 	<TEXT>
@@ -1006,6 +1039,7 @@
 		<Italian>[ICON_BULLET][COLOR_WARNING_TEXT]Richiede %s1_Text[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET][COLOR_WARNING_TEXT]Requiere %s1_Text[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET][COLOR_WARNING_TEXT]Требует наличия : %s1_Text[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_WARNING_TEXT]Szükséges: %s1_Text[COLOR_REVERT]</Hungarian>
 	</TEXT>
 <!-- ZorG. colopedia. which building is required to build a unit. END -->
 	<TEXT>
@@ -1016,6 +1050,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turni][COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turnos][COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:ход:ходов][COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%d1_Num kör[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HELP_CARGO_SPACE</Tag>
@@ -1025,6 +1060,7 @@
 		<Italian>Spazio di carico : %d1_Curr / %d2_Max</Italian>
 		<Spanish>Bodega : %d1_Curr / %d2_Max</Spanish>
 		<Russian>Место для груза : %d1_Curr / %d2_Max</Russian>
+		<Hungarian>Raktér: %d1_Curr / %d2_Max</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HELP_LEVEL</Tag>
@@ -1034,6 +1070,7 @@
 		<Italian>, PE: (%d1_Curr/%d2_Needed)</Italian>
 		<Spanish>, PX: (%d1_Curr/%d2_Needed)</Spanish>
 		<Russian>, EXP: (%d1_Curr/%d2_Needed)</Russian>
+		<Hungarian>, TP: (%d1_Curr/%d2_Needed)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HELP_FORTIFY_BONUS</Tag>
@@ -1043,6 +1080,7 @@
 		<Italian>Bonus per la fortificazione : %d1_Mod%%</Italian>
 		<Spanish>Bonif. a fortif. : %d1_Mod%%</Spanish>
 		<Russian>Бонус укрепленного отряда : %d1_Mod%%</Russian>
+		<Hungarian>Beásás bónusz: %d1_Mod%%</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FUTURE_QUOTE</Tag>
@@ -1052,6 +1090,7 @@
 		<Italian>"Domani, il futuro sarà migliore." - Dan Quayle</Italian>
 		<Spanish>"El futuro será mejor mañana." - Dan Quayle</Spanish>
 		<Russian>"Будущее будет лучше завтра". - Дэн Куэйл</Russian>
+		<Hungarian>"A jövő szebb lesz holnap!" - Dan Quayle</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FREE_XP_UNITS</Tag>
@@ -1061,6 +1100,7 @@
 		<Italian>[ICON_BULLET]Le nuove unità ricevono %D1_Change [NUM1:punto esperienza:punti esperienza]</Italian>
 		<Spanish>[ICON_BULLET]Las nuevas unidades reciben %D1_Change [NUM1:punto de experiencia:puntos de experiencia]</Spanish>
 		<Russian>[ICON_BULLET]Новые юниты получают %D1_Change [NUM1:очко опыта:очков опыта]</Russian>
+		<Hungarian>[ICON_BULLET]Az új egységek %D1_Change Tapasztalati Pontot kapnak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_STORES_FOOD</Tag>
@@ -1070,6 +1110,7 @@
 		<Italian>[ICON_BULLET]Immagazzina %d1_Mod%% di [ICON_FOOD] dopo la crescita</Italian>
 		<Spanish>[ICON_BULLET]Almacena el %d1_Mod%% de los [ICON_FOOD] tras el crecimiento</Spanish>
 		<Russian>[ICON_BULLET]Сохраняет %d1_Mod%% [ICON_FOOD] после роста города</Russian>
+		<Hungarian>[ICON_BULLET]%d1_Mod%% [ICON_FOOD] tárolása a növekedés után</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MAX_HARBOUR_SPACE_PROVIDED</Tag>
@@ -1077,6 +1118,7 @@
 		<French>[ICON_BULLET]Ajoute +%d1_HarbourSpace%F2_Icon</French>
 		<German>[ICON_BULLET]Bietet +%d1_HarbourSpace%F2_Icon</German>
 		<Russian>[ICON_BULLET]Максимальная вместимость +%d1_HarbourSpace%F2_Icon</Russian>
+		<Hungarian>[ICON_BULLET]Ad +%d1_HarbourSpace%F2_Icon -t</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MAX_BARRACKS_SPACE_PROVIDED</Tag>
@@ -1084,6 +1126,7 @@
 		<French>[ICON_BULLET]Ajoute +%d1_HarbourSpace%F2_Icon</French>
 		<German>[ICON_BULLET]Bietet +%d1_HarbourSpace%F2_Icon</German>
 		<Russian>[ICON_BULLET]Максимальная вместимость +%d1_HarbourSpace%F2_Icon</Russian>
+		<Hungarian>[ICON_BULLET]Ad +%d1_HarbourSpace%F2_Icon -t</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PLOT_HELP_IMPROVEMENT_STORAGE</Tag>
@@ -1091,6 +1134,7 @@
 		<French>[ICON_BULLET]Ajoute %d1_StorageCapacity [COLOR_CYAN]capacité d'entrepôt[COLOR_REVERT] à la ville si travaillée</French>
 		<German>[ICON_BULLET]Gibt Stadt %d1_StorageCapacity [COLOR_CYAN]Lagerkapazität[COLOR_REVERT] wenn bearbeitet</German>
 		<Russian>[ICON_BULLET]Добавляет %d1_StorageCapacity к [COLOR_CYAN]объему хранилища[COLOR_REVERT] в городе, если на клетке работает горожанин</Russian>
+		<Hungarian>[ICON_BULLET]Ad %d1_StorageCapacity [COLOR_CYAN]Raktárkapacitást[COLOR_REVERT] a Városnak, ha egy lakos dolgozik a területen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_HEAL_MOD</Tag>
@@ -1100,6 +1144,7 @@
 		<Italian>[ICON_BULLET]Cura le unità del %d1_Mod%% di danno extra per turno.</Italian>
 		<Spanish>[ICON_BULLET]Cura a las unidades un %d1_Mod%% de daño extra por turno</Spanish>
 		<Russian>[ICON_BULLET]Дополнительно исцеляет %d1_Mod%% здоровья юнитов/ход</Russian>
+		<Hungarian>[ICON_BULLET]Egységek gyógyítása: +%d1_Mod%% sebesülés/kör</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MILITARY_MOD</Tag>
@@ -1109,6 +1154,7 @@
 		<Italian>[ICON_BULLET]%D1_Mod%% di produzione nelle unità militari</Italian>
 		<Spanish>[ICON_BULLET]%D1_Mod%% a la producción de unidades militares</Spanish>
 		<Russian>[ICON_BULLET]%D1_Mod%% к производству военных юнитов</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Mod%% katonai egység előállítás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_WATER_PLOTS</Tag>
@@ -1118,6 +1164,7 @@
 		<Italian>Caselle d'acqua</Italian>
 		<Spanish>Casillas de agua</Spanish>
 		<Russian>Клетки воды</Russian>
+		<Hungarian>Vízi Területek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LAND_PLOTS</Tag>
@@ -1127,6 +1174,7 @@
 		<Italian>Caselle di terra</Italian>
 		<Spanish>Casillas de tierra</Spanish>
 		<Russian>Клетки земли</Russian>
+		<Hungarian>Szárazföldi Területek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FREE_XP</Tag>
@@ -1136,6 +1184,7 @@
 		<Italian>[ICON_BULLET]Le nuove %s1:2_UnitName ricevono %D2_Change [NUM1:punto esperienza:punti esperienza]</Italian>
 		<Spanish>[ICON_BULLET]Cada %s1_UnitName [NUM1:nuevo:nueva:nuevos:nuevas] recibe %D2_Change [NUM1:punto de experiencia:puntos de experiencia]</Spanish>
 		<Russian>[ICON_BULLET]Новые %s1_UnitName получают %D2_Change очков опыта</Russian>
+		<Hungarian>[ICON_BULLET]Az új %s1_UnitName egységek %D2_Change Tapasztalati Pontot kapnak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BUILDS_FASTER_DOMAIN</Tag>
@@ -1145,6 +1194,7 @@
 		<Italian>[ICON_BULLET]Costruisce %s1_UnitName %D2_Mod%% più velocemente</Italian>
 		<Spanish>[ICON_BULLET]Construye %s1:2_UnitName un %D2_Mod%% más rápido</Spanish>
 		<Russian>[ICON_BULLET]Строит %s1_UnitName на %D2_Mod%% быстрее</Russian>
+		<Hungarian>[ICON_BULLET]%s1_UnitName előállítása %D2_Mod%%-kal gyorsabb</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_REQUIRED_TO_TRAIN</Tag>
@@ -1154,6 +1204,7 @@
 		<Italian>[ICON_BULLET]Necessario per addestrare[SPACE]</Italian>
 		<Spanish>[ICON_BULLET]Se requiere para entrenar[SPACE]</Spanish>
 		<Russian>[ICON_BULLET]Требуется для обучения :[SPACE]</Russian>
+		<Hungarian>[ICON_BULLET]Szükséges a megépítéséhez:[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_REQUIRED_TO_BUILD</Tag>
@@ -1163,6 +1214,7 @@
 		<Italian>[ICON_BULLET]Necessario per costruire[SPACE]</Italian>
 		<Spanish>[ICON_BULLET]Se requiere para construir[SPACE]</Spanish>
 		<Russian>[ICON_BULLET]Требуется для постройки :[SPACE]</Russian>
+		<Hungarian>[ICON_BULLET]Szükséges a megépítéséhez:[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FREE_START_ERA</Tag>
@@ -1171,6 +1223,7 @@
 		<German>[ICON_BULLET]Frei verfügbar im Zeitalter %s1_EraName und später</German>
 		<Italian>[ICON_BULLET]Disponibile gratuitamente al raggiungimento di %s1_EraName</Italian>
 		<Spanish>[ICON_BULLET]Disponible gratis a partir [NUM1:del:de la:de los:de las] %s1_EraName e inicios posteriores</Spanish>
+		<Hungarian>[ICON_BULLET]%s1_EraName, illetve az azt követő korszakok elején ingyen elérhető</Hungarian>
 	</TEXT>
 <!-- ZorG. I can find where it is used. START -->
 	<TEXT>
@@ -1180,6 +1233,7 @@
 		<German>[COLOR_WARNING_TEXT]Erfordert : %s1_Name (%d2_NumCurr/%d3_NumTotal gesamt)[COLOR_REVERT]</German>
 		<Italian>[COLOR_WARNING_TEXT]Richiede %s1_Name (%d2_NumCurr/%d3_NumTotal totali)[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]Requiere %s1_Name (%d2_NumCurr de un total de %d3_NumTotal)[COLOR_REVERT]</Spanish>
+		<Hungarian>[COLOR_WARNING_TEXT]Szükséges: %s1_Name (%d2_NumCurr/%d3_NumTotal összesen)[COLOR_REVERT]</Hungarian>
 	</TEXT>
 <!-- ZorG. I can find where it is used. END -->
 <!-- ZorG. colopedia. which building is required to construct a building. START -->
@@ -1191,6 +1245,7 @@
 		<Italian>[COLOR_WARNING_TEXT]Richiede %s1_Name (%d2_NumTotal ogni)[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]Requiere %s1_Name (%d2_NumTotal de cada)[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]Требуется : [LINK=literal]%s1_Name[\LINK] (%d2_NumTotal на каждую постройку)[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]Szükséges: %s1_Name (%d2_NumTotal mindegyikhez)[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_REQUIRES_STRING</Tag>
@@ -1200,6 +1255,7 @@
 		<Italian>[COLOR_WARNING_TEXT]Richiede [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]Requiere [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]Требует наличия : [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]Szükséges: [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Hungarian>
 	</TEXT>
 <!-- ZorG. colopedia. which building is required to construct a building. END -->
 <!-- ZorG. I can find where it is used. START -->
@@ -1210,6 +1266,7 @@
 		<German>[COLOR_WARNING_TEXT]Erfordert eine Einheit mit Erfahrungsstufe %d1_Num[COLOR_REVERT]</German>
 		<Italian>[COLOR_WARNING_TEXT]Richiede un'unità di livello d'esperienza %d1_Num[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]Requiere una unidad de nivel %d1_Num de experiencia[COLOR_REVERT]</Spanish>
+		<Hungarian>[COLOR_WARNING_TEXT]Egy %d1_Num tapasztalati szintű egység szükséges[COLOR_REVERT]</Hungarian>
 	</TEXT>
 <!-- ZorG. I can find where it is used. END -->
 	<TEXT>
@@ -1219,6 +1276,7 @@
 		<German>[ICON_BULLET]Erfordert Siegvariante %s1_Name</German>
 		<Italian>[ICON_BULLET]Richiede la vittoria %s1_Name</Italian>
 		<Spanish>[ICON_BULLET]Requiere una victoria %s1_Name</Spanish>
+		<Hungarian>[ICON_BULLET]%s1_Name "Győzelemnek" engedélyezve kell lennie</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MAX_START_ERA</Tag>
@@ -1227,6 +1285,7 @@
 		<German>[ICON_BULLET]Kann nur im Zeitalter %s1_Name und früher errichtet werden</German>
 		<Italian>[ICON_BULLET]Può essere costruito soltanto durante l'era %s1_Name o prima</Italian>
 		<Spanish>[ICON_BULLET]Solo se puede construir en [NUM1:el:la:los:las] %s1_Name e inicios anteriores</Spanish>
+		<Hungarian>[ICON_BULLET]Kizárólag %s1_Name korszakban és az azt megelőzőekben építhető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_REQUIRES_NUM_TEAMS</Tag>
@@ -1235,6 +1294,7 @@
 		<German>[ICON_BULLET]Erfordert mindestens %d1_Num Teams</German>
 		<Italian>[ICON_BULLET]Richiede almeno %d1_Num [NUM1:squadra:squadre]</Italian>
 		<Spanish>[ICON_BULLET]Requiere al menos %d1_Num [NUM1:equipo:equipos]</Spanish>
+		<Hungarian>[ICON_BULLET]Legalább %d1_Num Csapat szükséges</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_NUM_TURNS</Tag>
@@ -1244,6 +1304,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turni][COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turnos][COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:ход:ходов][COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%d1_Num kör[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BOMBARD_DEFENSE_MOD</Tag>
@@ -1252,6 +1313,7 @@
 		<German>[ICON_BULLET]%D1_Mod%% Bombardierungsschaden gegen Defensivanlagen (außer gegen Schießpulver-Einheiten)</German>
 		<Italian>[ICON_BULLET]%D1_Mod%% di danni alle difese a causa del bombardamento (tranne contro unità che utilizzano la povere da sparo)</Italian>
 		<Spanish>[ICON_BULLET]%D1_Mod%% de daño a las defensas por cañoneo (excepto contra unidades con armas de pólvora)</Spanish>
+		<Hungarian>[ICON_BULLET]%D1_Mod%%-kal kisebb védelem sérülés a bombázásoktól (kivéve puskaporos egységekkel szemben)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DOUBLE_SPEED</Tag>
@@ -1261,6 +1323,7 @@
 		<Italian>[ICON_BULLET]Raddoppia la velocità di produzione di[SPACE]</Italian>
 		<Spanish>[ICON_BULLET]Dobla la velocidad de producción de[SPACE]</Spanish>
 		<Russian>[ICON_BULLET]Двойная скорость строительства[SPACE]</Russian>
+		<Hungarian>[ICON_BULLET]Dupla előállítási sebesség:[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PRODUCTION_MODIFIER</Tag>
@@ -1269,6 +1332,7 @@
 		<German>[ICON_BULLET]%d1%% mehr erzeugte Hämmer beim Bau von[SPACE]</German>
 		<Italian>[ICON_BULLET]Produzione più veloce del %d1%% per[SPACE]</Italian>
 		<Spanish>[ICON_BULLET]Acelera un %d1%% la producción de[SPACE]</Spanish>
+		<Hungarian>[ICON_BULLET]%d1%%-kal gyorsabb előállítás:[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_EXTRA_YIELD_THRESHOLDS</Tag>
@@ -1278,6 +1342,7 @@
 		<Italian>[ICON_BULLET]+1%F1_yield su caselle con %d2%F3_yield</Italian>
 		<Spanish>[ICON_BULLET]+1%F1_yield en las casillas con %d2%F3_yield</Spanish>
 		<Russian>[ICON_BULLET]+1%F1_yield на клетках с %d2%F3_yield</Russian>
+		<Hungarian>[ICON_BULLET]+1%F1_yield a %d2%F3_yield hozamú helyeken</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FREE_PROMOTIONS</Tag>
@@ -1287,6 +1352,7 @@
 		<Italian>[ICON_BULLET]Promozione gratuita (%s1)</Italian>
 		<Spanish>[ICON_BULLET]Ascenso gratis (%s1)</Spanish>
 		<Russian>[ICON_BULLET]Бесплатное повышение (%s1)</Russian>
+		<Hungarian>[ICON_BULLET]Ingyen Előléptetés (%s1)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PLAYER_UNKNOWN</Tag>
@@ -1295,6 +1361,7 @@
 		<German>Unbekannt</German>
 		<Italian>Sconosciuto</Italian>
 		<Spanish>Desconocido</Spanish>
+		<Hungarian>Ismeretlen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FREE_UNITS</Tag>
@@ -1304,6 +1371,7 @@
 		<Italian>Unità uniche</Italian>
 		<Spanish>Unidades exclusivas</Spanish>
 		<Russian>Уникальный юнит</Russian>
+		<Hungarian>Különleges Egységek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_SCREEN_EXIT</Tag>
@@ -1313,6 +1381,7 @@
 		<Italian>Esci</Italian>
 		<Spanish>Salir</Spanish>
 		<Russian>Выход</Russian>
+		<Hungarian>Kilépés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_SCREEN_LOAD_GROUP</Tag> <!-- setting up trade routes -->
@@ -1322,6 +1391,7 @@
 		<Italian>Carico</Italian>
 		<Spanish>Carga</Spanish>
 		<Russian>Загрузить</Russian>
+		<Hungarian>Betöltés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_SCREEN_BACK</Tag>
@@ -1331,6 +1401,7 @@
 		<Italian>Indietro</Italian>
 		<Spanish>Atrás</Spanish>
 		<Russian>Назад</Russian>
+		<Hungarian>Vissza</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_SCREEN_FORWARD</Tag>
@@ -1340,6 +1411,7 @@
 		<Italian>Successivo</Italian>
 		<Spanish>Siguiente</Spanish>
 		<Russian>Дальше</Russian>
+		<Hungarian>Következő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_SCREEN_TOP</Tag>
@@ -1349,6 +1421,7 @@
 		<Italian>Torna a colonizopedia</Italian>
 		<Spanish>Inicio</Spanish>
 		<Russian>Вверх</Russian>
+		<Hungarian>Index</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_COST</Tag>
@@ -1358,6 +1431,7 @@
 		<Italian>Costo : %d1_Num</Italian>
 		<Spanish>Coste : %d1_Num</Spanish>
 		<Russian>Расходы : %d1_Num</Russian>
+		<Hungarian>Költség: %d1_Num</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_STRENGTH</Tag>
@@ -1367,6 +1441,7 @@
 		<Italian>Forza : %d1_Num</Italian>
 		<Spanish>Fuerza : %d1_Num</Spanish>
 		<Russian>Сила : %d1_Num</Russian>
+		<Hungarian>Erő: %d1_Num</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TIMELINE_AVAILABLE_FROM</Tag>
@@ -1392,6 +1467,7 @@
 		<Italian>Movimento : %d1_Num</Italian>
 		<Spanish>Movimiento : %d1_Num</Spanish>
 		<Russian>Количество ходов : %d1_Num</Russian>
+		<Hungarian>Mozgás: %d1_Num</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_LEADS_TO</Tag>
@@ -1401,6 +1477,7 @@
 		<Italian>Conduce a</Italian>
 		<Spanish>Lleva a</Spanish>
 		<Russian>Ведет к</Russian>
+		<Hungarian>Következő Szint</Hungarian>
 	</TEXT>
 <!-- ZorG. colony screen. lack of materials for the construction of the building. START -->
 	<TEXT>
@@ -1411,6 +1488,7 @@
 		<Italian>Richiede</Italian>
 		<Spanish>Requiere</Spanish>
 		<Russian>Требуется</Russian>
+		<Hungarian>Szükséges</Hungarian>
 	</TEXT>
 <!-- ZorG. colony screen. lack of materials for the construction of the building. END -->
 	<TEXT>
@@ -1421,6 +1499,7 @@
 		<Italian>Abilità speciali</Italian>
 		<Spanish>Capacidades especiales</Spanish>
 		<Russian>Особенности</Russian>
+		<Hungarian>Különleges Képességek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_PROMOTION_UNITS</Tag>
@@ -1430,6 +1509,7 @@
 		<Italian>Disponibile a</Italian>
 		<Spanish>Disponible para</Spanish>
 		<Russian>Доступно для</Russian>
+		<Hungarian>Elérhető a következőknek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_EFFECTS</Tag>
@@ -1439,6 +1519,7 @@
 		<Italian>Effetti</Italian>
 		<Spanish>Efectos</Spanish>
 		<Russian>Эффекты</Russian>
+		<Hungarian>Hatások</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_HILLS_YIELD</Tag>
@@ -1448,6 +1529,7 @@
 		<Italian>%s1 : %D2%F3 (sulle colline)</Italian>
 		<Spanish>%s1 : %D2%F3 (en colinas)</Spanish>
 		<Russian>%s1 : %D2%F3 (на холмах)</Russian>
+		<Hungarian>%s1 : %D2%F3 (Dombságon)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_RIVER_YIELD</Tag>
@@ -1457,6 +1539,7 @@
 		<Italian>%s1 : %D2%F3 (vicino a un fiume)</Italian>
 		<Spanish>%s1 : %D2%F3 (junto a un río)</Spanish>
 		<Russian>%s1 : %D2%F3 (рядом с рекой)</Russian>
+		<Hungarian>%s1 : %D2%F3 (Folyó Mellett)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CIVIC_YIELD</Tag>
@@ -1466,6 +1549,7 @@
 		<Italian>%s1 : %D2%F3 (con [LINK=literal]%s4[\LINK])</Italian>
 		<Spanish>%s1 : %D2%F3 (con [LINK=literal]%s4[\LINK])</Spanish>
 		<Russian>Улучшение %s1 : %D2%F3 (с бонусным ресурсом [LINK=literal]%s4[\LINK])</Russian>
+		<Hungarian>%s1 Fejlesztés : %D2%F3 ([LINK=literal]%s4[\LINK] erőforrással)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ROUTE_YIELD</Tag>
@@ -1475,6 +1559,7 @@
 		<Italian>%s1 : %D2%F3 (con %s4)</Italian>
 		<Spanish>%s1 : %D2%F3 (con %s4)</Spanish>
 		<Russian>Улучшение %s1 : %D2%F3 (с бонусным ресурсом %s4)</Russian>
+		<Hungarian>%s1 Fejlesztés : %D2%F3 (%s4 erőforrással)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ALL_UNITS</Tag>
@@ -1484,6 +1569,7 @@
 		<Italian>Tutte le unità</Italian>
 		<Spanish>Todas las unidades</Spanish>
 		<Russian>Все юниты</Russian>
+		<Hungarian>Minden egység</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_TRAITS</Tag>
