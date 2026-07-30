@@ -1014,6 +1014,20 @@ void CvPlayer::read(CvSavegameReader reader)
 		}
 	}
 
+	// remove NO_UNIT from revolutionary units
+	// They are no longer possible to add, but savegames might still hold on to them
+	for (unsigned int i = 0; i < m_aEuropeRevolutionUnits.size();)
+	{
+		if (m_aEuropeRevolutionUnits[i].first == NO_UNIT)
+		{
+			m_aEuropeRevolutionUnits.erase(m_aEuropeRevolutionUnits.begin() + i);
+		}
+		else
+		{
+			// only iterate when nothing was removed
+			++i;
+		}
+	}
 
 	// We need to defer this until we have loaded the actual m_units
 	if (iTempUnitId != -1)

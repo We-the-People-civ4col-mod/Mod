@@ -19997,6 +19997,12 @@ ProfessionTypes CvPlayer::getRevolutionEuropeProfession(int i) const
 // WTP, Schmiddie, Availability Change Project START
 void CvPlayer::addRevolutionEuropeUnit(UnitTypes eUnit, ProfessionTypes eProfession)
 {
+	if (eUnit == NO_UNIT)
+	{
+		FAssertMsg(eUnit != NO_UNIT, "Trying to add NO_UNIT as a revolutionary unit");
+		return;
+	}
+
 	if (!isUnitWithinGameYearWindow(eUnit))
 	{
 		return;
