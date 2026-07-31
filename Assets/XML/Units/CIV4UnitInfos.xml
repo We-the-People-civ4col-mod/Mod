@@ -81034,40 +81034,11 @@
 			</UnitAIs>
 			<NotUnitAIs/>
 			<Builds/>
-			<PrereqBuilding>BUILDINGCLASS_SHIPYARD</PrereqBuilding>
+			<PrereqBuilding>NONE</PrereqBuilding>
 			<PrereqOrBuildings/>
 			<ProductionTraits/>
 			<iAIWeight>0</iAIWeight>
-			<YieldCosts>
-				<YieldCost>
-					<YieldType>YIELD_SAILCLOTH</YieldType>
-					<iCost>70</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_ROPE</YieldType>
-					<iCost>70</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HARDWOOD</YieldType>
-					<iCost>70</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_TOOLS</YieldType>
-					<iCost>100</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_CANNONS</YieldType>
-					<iCost>40</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_BLACK_POWDER</YieldType>
-					<iCost>40</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>200</iCost>
-				</YieldCost>
-			</YieldCosts>
+			<YieldCosts/>
 			<iGameYearAvailable>1650</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
