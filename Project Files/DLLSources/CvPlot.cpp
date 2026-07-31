@@ -109,7 +109,15 @@ int CvPlot::navalControlMovementCost(const CvUnit* pMovingUnit) const
 					continue;
 				}
 
-				if (!pControlUnit->isAlwaysHostile(pControlPlot) && !pMovingUnit->isEnemy(pControlUnit->getTeam(), pControlPlot))
+				// Own and allied ships never exert Naval Control against each other.
+				if (pControlUnit->getTeam() == pMovingUnit->getTeam())
+				{
+					continue;
+				}
+
+				// Non-hostile foreign units have no Naval Control effect.
+				if (!pControlUnit->isAlwaysHostile(pControlPlot) &&
+					!pMovingUnit->isEnemy(pControlUnit->getTeam(), pControlPlot))
 				{
 					continue;
 				}
