@@ -1579,6 +1579,7 @@
 		<Italian>Punti di forza</Italian>
 		<Spanish>Rasgos</Spanish>
 		<Russian>Черты характера</Russian>
+		<Hungarian>Jellemvonások</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_TITLE</Tag>
@@ -1588,6 +1589,7 @@
 		<Italian>Demographics</Italian>
 		<Spanish>Estadísticas</Spanish>
 		<Russian>Демография</Russian>
+		<Hungarian>Összesítés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_VALUE_TEXT</Tag>
@@ -1597,6 +1599,7 @@
 		<Italian>Valore :</Italian>
 		<Spanish>Valor :</Spanish>
 		<Russian>Величина :</Russian>
+		<Hungarian>Érték :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_VALUE_TEXT_COLOURED</Tag>
@@ -1606,6 +1609,7 @@
 		<Italian>[COLOR_FONT_CREAM]Valore[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_FONT_CREAM]Valor[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_FONT_CREAM]Есть у вас[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_CREAM]Érték[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_RIVAL_BEST</Tag>
@@ -1615,6 +1619,7 @@
 		<Italian>[COLOR_FONT_CREAM]Migliore rivale[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_FONT_CREAM]Mejor rival[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_FONT_CREAM]Лучший результат[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_CREAM]Legjobb Európaiak[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMOGRAPHICS_SCREEN_RIVAL_AVERAGE</Tag>
@@ -1624,6 +1629,7 @@
 		<Italian>[COLOR_FONT_CREAM]Media dei rivali[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_FONT_CREAM]Promedio del rival[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_FONT_CREAM]Средний результат[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_CREAM]Európaiak átlagosan[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_RIVAL_WORST</Tag>
@@ -1633,6 +1639,7 @@
 		<Italian>[COLOR_FONT_CREAM]Peggiore rivale[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_FONT_CREAM]Peor rival[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_FONT_CREAM]Худший результат[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_CREAM]Legrosszabb Európaiak[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_RANK_TEXT</Tag>
@@ -1642,6 +1649,7 @@
 		<Italian>[COLOR_FONT_CREAM]Grado[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_FONT_CREAM]Rango[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_FONT_CREAM]Ваше место[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_CREAM]Helyezés[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_ECONOMY_TEXT</Tag>
@@ -1651,6 +1659,7 @@
 		<Italian>PIL (oro)</Italian>
 		<Spanish>PNB (oro)</Spanish>
 		<Russian>Казна</Russian>
+		<Hungarian>Kincstár</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_ECONOMY_MEASURE</Tag>
@@ -1668,6 +1677,7 @@
 		<Italian>Beni (Prod.)</Italian>
 		<Spanish>Producción</Spanish>
 		<Russian>Производство (в молотках)</Russian>
+		<Hungarian>Termelés (Kalapács)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_INDUSTRY_MEASURE</Tag>
@@ -1677,6 +1687,7 @@
 		<Italian> tonnellate</Italian>
 		<Spanish> toneladas</Spanish>
 		<Russian> тонн</Russian>
+		<Hungarian> tonna</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_AGRICULTURE_TEXT</Tag>
@@ -1686,6 +1697,7 @@
 		<Italian>Prod. raccol. (cibo)</Italian>
 		<Spanish>Alimentos</Spanish>
 		<Russian>Урожайность (еда)</Russian>
+		<Hungarian>Terményhozam (Élelem)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_AGRICULTURE_MEASURE</Tag>
@@ -1703,6 +1715,7 @@
 		<Italian>Soldati</Italian>
 		<Spanish>Soldados</Spanish>
 		<Russian>Солдаты</Russian>
+		<Hungarian>Katonák</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_LAND_AREA_TEXT</Tag>
@@ -1712,6 +1725,7 @@
 		<Italian>Superficie</Italian>
 		<Spanish>Área terrestre</Spanish>
 		<Russian>Площадь земли</Russian>
+		<Hungarian>Szárazföldi Terület</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_LAND_AREA_MEASURE</Tag>
@@ -1721,6 +1735,7 @@
 		<Italian> Km quadrati</Italian>
 		<Spanish> Km cuad.</Spanish>
 		<Russian> кв.км.</Russian>
+		<Hungarian> km2</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_POPULATION_TEXT</Tag>
@@ -1730,6 +1745,7 @@
 		<Italian>Popolazione</Italian>
 		<Spanish>Población</Spanish>
 		<Russian>Население</Russian>
+		<Hungarian>Népesség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_IMPORTS_TEXT</Tag>
@@ -1739,6 +1755,7 @@
 		<Italian>Importazioni</Italian>
 		<Spanish>Importaciones</Spanish>
 		<Russian>Импорт</Russian>
+		<Hungarian>Import</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEMO_SCREEN_EXPORTS_TEXT</Tag>
@@ -1748,6 +1765,7 @@
 		<Italian>Esportazioni</Italian>
 		<Spanish>Exportaciones</Spanish>
 		<Russian>Экспорт</Russian>
+		<Hungarian>Export</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>UNUSED_TXT_KEY_DEMO_SCREEN_CONDENSED_IMPEXP_TEXT</Tag>
@@ -1756,6 +1774,7 @@
 		<German>Exporte (kondensiert)</German>
 		<Italian>Esportazioni (Condensato)</Italian>
 		<Spanish>Exportaciones (Condensada)</Spanish>
+		<Hungarian>Export (Összesített)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SCREEN_CANCEL</Tag>
@@ -1765,6 +1784,7 @@
 		<Italian>Annulla</Italian>
 		<Spanish>Cancelar</Spanish>
 		<Russian>Отмена</Russian>
+		<Hungarian>Mégsem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SCREEN_CONTINUE</Tag>
@@ -1774,6 +1794,7 @@
 		<Italian>Continua</Italian>
 		<Spanish>Continuar</Spanish>
 		<Russian>Продолжить</Russian>
+		<Hungarian>Folytatás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_NAME</Tag>
@@ -1783,6 +1804,7 @@
 		<Italian>Nome</Italian>
 		<Spanish>Nombre</Spanish>
 		<Russian>Поселение</Russian>
+		<Hungarian>Név</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_PRODUCING</Tag>
@@ -1792,6 +1814,7 @@
 		<Italian>Realizzando</Italian>
 		<Spanish>Produce</Spanish>
 		<Russian>Производство</Russian>
+		<Hungarian>Építés alatt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FOREIGN_ADVISOR_RELATIONS</Tag>
@@ -1801,6 +1824,7 @@
 		<Italian>Relazioni</Italian>
 		<Spanish>Relaciones</Spanish>
 		<Russian>Связи</Russian>
+		<Hungarian>Kapcsolatok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FOREIGN_ADVISOR_ACTIVE</Tag>
@@ -1810,6 +1834,7 @@
 		<Italian>Attivo</Italian>
 		<Spanish>Activo</Spanish>
 		<Russian>Активно</Russian>
+		<Hungarian>Aktív</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REPLAY_SCREEN_TITLE</Tag>
@@ -1818,6 +1843,7 @@
 		<German>Wiederholen</German>
 		<Italian>Replay</Italian>
 		<Spanish>Repetición</Spanish>
+		<Hungarian>Visszajátszás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REPLAY_SCREEN_PLAY</Tag>
@@ -1826,6 +1852,7 @@
 		<German>Abspielen</German>
 		<Italian>Avvia</Italian>
 		<Spanish>Reproducir</Spanish>
+		<Hungarian>Indítás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REPLAY_SCREEN_NEXT</Tag>
@@ -1834,6 +1861,7 @@
 		<German>Weiter</German>
 		<Italian>Successivo</Italian>
 		<Spanish>Adelante</Spanish>
+		<Hungarian>Következő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REPLAY_SCREEN_STOP</Tag>
@@ -1842,6 +1870,7 @@
 		<German>Stopp</German>
 		<Italian>Ferma</Italian>
 		<Spanish>Detener</Spanish>
+		<Hungarian>Állj</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REPLAY_SCREEN_SPEED</Tag>
@@ -1850,6 +1879,7 @@
 		<German>Geschwindigkeit</German>
 		<Italian>Velocità</Italian>
 		<Spanish>Velocidad</Spanish>
+		<Hungarian>Sebesség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_SCREEN_TARGET_SCORE</Tag>
@@ -1858,6 +1888,7 @@
 		<German>Zielpunktzahl : %d1</German>
 		<Italian>Punteggio da raggiungere : %d1</Italian>
 		<Spanish>Puntuación objetivo : %d1</Spanish>
+		<Hungarian>Célpontszám : %d1</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_SCREEN_HIGHEST_SCORE</Tag>
@@ -1866,6 +1897,7 @@
 		<German>Höchste Punktzahl : %s1</German>
 		<Italian>Maggior punteggio nel %s1</Italian>
 		<Spanish>Mayor puntuación en %s1</Spanish>
+		<Hungarian>Legmagasabb pontszám : %s1</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_SCREEN_ELIMINATE_ALL</Tag>
@@ -1875,6 +1907,7 @@
 		<Italian>Elimina tutti i rivali</Italian>
 		<Spanish>Eliminar a todos los rivales</Spanish>
 		<Russian>Устранить всех соперников</Russian>
+		<Hungarian>Semmisítsd meg minden riválisodat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_SCREEN_RIVALS_LEFT</Tag>
@@ -1884,6 +1917,7 @@
 		<Italian>Rivali rimasti :</Italian>
 		<Spanish>Rivales restantes :</Spanish>
 		<Russian>Соперников осталось :</Russian>
+		<Hungarian>Megmaradt riválisok :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_SCREEN_PERCENT_POP</Tag>
@@ -1893,6 +1927,7 @@
 		<Italian>%d1%% della popolazione mondiale</Italian>
 		<Spanish>%d1%% de la población mundial</Spanish>
 		<Russian>%d1%% от мирового населения</Russian>
+		<Hungarian>A Világ Népességének %d1%%-a</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_SCREEN_PERCENT_LAND</Tag>
@@ -1902,6 +1937,7 @@
 		<Italian>%d1%% della superficie</Italian>
 		<Spanish>%d1%% del área terrestre</Spanish>
 		<Russian>%d1%% от площади земли</Russian>
+		<Hungarian>A Szárazföldi Terület %d1%%-a</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_SCREEN_PERCENT_CULTURE</Tag>
@@ -1911,6 +1947,7 @@
 		<Italian>%d1%% di cultura</Italian>
 		<Spanish>%d1%% de cultura</Spanish>
 		<Russian>%d1%% от культуры</Russian>
+		<Hungarian>A Kultúrák %d1%%-a</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WIDGET_CREATE_GROUP</Tag>
@@ -1920,6 +1957,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Crea un gruppo[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Crea un grupo[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Создать группу[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Csoport létrehozása[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WIDGET_DELETE_GROUP</Tag>
@@ -1929,6 +1967,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Separa il gruppo[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Separa el grupo[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Распустить группу[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Csoport szétválasztása[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FINANCIAL_ADVISOR_TREASURY</Tag>
@@ -1938,6 +1977,7 @@
 		<Italian>Tesoro : %d1[ICON_GOLD]</Italian>
 		<Spanish>Tesoro : %d1[ICON_GOLD]</Spanish>
 		<Russian>Казна : %d1[ICON_GOLD]</Russian>
+		<Hungarian>Kincstár: %d1 [ICON_GOLD]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ECON_GOLD_RESERVE</Tag>
@@ -1947,6 +1987,7 @@
 		<Italian>Quantitativo di denaro che si trova nelle tue riserve d'oro</Italian>
 		<Spanish>Cantidad de dinero en las reservas de oro</Spanish>
 		<Russian>Ваш золотой запас</Russian>
+		<Hungarian>Az aranytartalékodban lévő pénzösszeg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_MAKE_PEACE</Tag>
@@ -1956,6 +1997,7 @@
 		<Italian>Farà in modo che %s1_You faccia pace con %s2_Them.</Italian>
 		<Spanish>Hará que %s1_You firme la paz con %s2_Them.</Spanish>
 		<Russian>Заставить %s1_You заключить мир с %s2_Them.</Russian>
+		<Hungarian>Ennek hatására %s1_You és %s2_Them békét köt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_MAKE_WAR</Tag>
@@ -1965,6 +2007,7 @@
 		<Italian>Farà in modo che %s1_You dichiari guerra a %s2_Them.</Italian>
 		<Spanish>Hará que %s1_You le declare la guerra a %s2_Them.</Spanish>
 		<Russian>Заставить %s1_You объявить войну %s2_Them</Russian>
+		<Hungarian>Ennek hatására %s1_You háborút indít %s2_Them ellen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_STOP_TRADING</Tag>
@@ -1974,6 +2017,7 @@
 		<Italian>Farà in modo che %s1_You interrompa il commercio con %s2_Them.</Italian>
 		<Spanish>Hará que %s1_You deje de comerciar con %s2_Them.</Spanish>
 		<Russian>Заставить %s1_You прекратить торговлю с %s2_Them</Russian>
+		<Hungarian>Ennek hatására %s1_You nem adhatja el áruit %s2_Them számára, és nem vásárolhat tőle.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_GOLD</Tag>
@@ -1983,6 +2027,7 @@
 		<Italian>Somma unica d'oro da specificare.</Italian>
 		<Spanish>Suma de oro total a especificar.</Spanish>
 		<Russian>Общая сумма золота в казне</Russian>
+		<Hungarian>Meg kell határozni a pontos összeget (Aranyban)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_MAPS</Tag>
@@ -1992,6 +2037,7 @@
 		<Italian>Rivelerà la mappa al destinatario.</Italian>
 		<Spanish>Mostrará el mapa al receptor.</Spanish>
 		<Russian>Покажет исследованную часть карты получателю</Russian>
+		<Hungarian>Megmutatja a térképet a fogadó partnernek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_CLEAR_TABLE</Tag>
@@ -2001,6 +2047,7 @@
 		<Italian>PULISCI TABELLA</Italian>
 		<Spanish>LIMPIAR TABLA</Spanish>
 		<Russian>ОЧИСТИТЬ ТАБЛИЦУ</Russian>
+		<Hungarian>LISTA TÖRLÉSE</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_MAKE_PEACE_WITH</Tag>
@@ -2010,6 +2057,7 @@
 		<Italian>Fai la pace con</Italian>
 		<Spanish>Firmar la paz con</Spanish>
 		<Russian>Заключить мир с</Russian>
+		<Hungarian>Békekötés...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_DECLARE_WAR_ON</Tag>
@@ -2019,6 +2067,7 @@
 		<Italian>Dichiara guerra a</Italian>
 		<Spanish>Declararle la guerra a</Spanish>
 		<Russian>Объявить войну</Russian>
+		<Hungarian>Hadüzenet...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_STOP_TRADING_WITH</Tag>
@@ -2028,6 +2077,7 @@
 		<Italian>Interrompi il commercio con</Italian>
 		<Spanish>Dejar de comerciar con</Spanish>
 		<Russian>Прекратить торговлю с</Russian>
+		<Hungarian>Kereskedés felfüggesztése...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_PLAYER_HAS</Tag>
@@ -2037,6 +2087,7 @@
 		<Italian>%s1_PlName HA</Italian>
 		<Spanish>%s1_PlName TIENE</Spanish>
 		<Russian>%s1_PlName ИМЕЕТ</Russian>
+		<Hungarian>%s1_PlName KÍNÁLATA</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_YOU_HAVE</Tag>
@@ -2046,6 +2097,7 @@
 		<Italian>TU HAI</Italian>
 		<Spanish>TENÉIS</Spanish>
 		<Russian>У ВАС ЕСТЬ</Russian>
+		<Hungarian>AMIVEL TE RENDELKEZEL</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_PLAYER_OFFERS</Tag>
@@ -2055,6 +2107,7 @@
 		<Italian>%s1_PlName OFFRE</Italian>
 		<Spanish>%s1_PlName OFRECE</Spanish>
 		<Russian>%s1_PlName ПРЕДЛАГАЕТ</Russian>
+		<Hungarian>%s1_PlName AJÁNLATA</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_YOU_OFFER</Tag>
@@ -2064,6 +2117,7 @@
 		<Italian>TU OFFRI</Italian>
 		<Spanish>OFRECÉIS</Spanish>
 		<Russian>ВАШЕ ПРЕДЛОЖЕНИЕ</Russian>
+		<Hungarian>A TE AJÁNLATOD</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_GOLD_NUM</Tag>
@@ -2073,6 +2127,7 @@
 		<Italian>Oro (%d1_Num)</Italian>
 		<Spanish>Oro (%d1_Num)</Spanish>
 		<Russian>Золото (%d1_Num)</Russian>
+		<Hungarian>Arany (%d1_Num)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_PEACE_TREATY_STRING</Tag>
@@ -2082,6 +2137,7 @@
 		<Italian>Trattato di pace (%d1_Num [NUM1:turno:turni])</Italian>
 		<Spanish>Tratado de paz (%d1_Num [NUM1:turno:turnos])</Spanish>
 		<Russian>Мирный договр (%d1_Num [NUM1:ход:ходов])</Russian>
+		<Hungarian>Békeszerződés (%d1_Num kör)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_PEACE_WITH</Tag>
@@ -2091,6 +2147,7 @@
 		<Italian>Pace con[SPACE]</Italian>
 		<Spanish>Paz con[SPACE]</Spanish>
 		<Russian>Мир с[SPACE]</Russian>
+		<Hungarian>Békekötés vele:[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_WAR_WITH</Tag>
@@ -2100,6 +2157,7 @@
 		<Italian>Guerra con[SPACE]</Italian>
 		<Spanish>Guerra con[SPACE]</Spanish>
 		<Russian>Война с[SPACE]</Russian>
+		<Hungarian>Háború vele:[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_GOLD_TO_OFFER</Tag>
@@ -2109,6 +2167,7 @@
 		<Italian>Quanto oro vuoi offrire?</Italian>
 		<Spanish>¿Cuánto oro queréis ofrecer?</Spanish>
 		<Russian>Сколько золота вы хотите предложить?</Russian>
+		<Hungarian>Mennyi aranyat szeretnél felajánlani?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_GOLD_FROM_THEM</Tag>
@@ -2118,6 +2177,7 @@
 		<Italian>Quanto oro vuoi richiedere?</Italian>
 		<Spanish>¿Cuánto oro queréis que os den?</Spanish>
 		<Russian>Сколько золота вы хотите потребовать?</Russian>
+		<Hungarian>Mennyi aranyat szeretnél kérni tőlük?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SELECT_NETWORK</Tag>
@@ -2126,6 +2186,7 @@
 		<German>Netzwerk auswählen</German>
 		<Italian>Seleziona la rete</Italian>
 		<Spanish>Seleccionar red</Spanish>
+		<Hungarian>Válassz hálózatot</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SELECT_NETWORK_HELP</Tag>
@@ -2134,14 +2195,17 @@
 		<German>Wählt das Netzwerk, auf dem der Pitboss gestartet werden soll</German>
 		<Italian>Scegli la rete sulla quale avviare il Pitboss</Italian>
 		<Spanish>Selecciona la red en la que te gustaría ejecutar el Pitboss</Spanish>
+		<Hungarian>Válaszd ki a hálózatot, amin a Pitbosst szeretnéd futtatni</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_LOGIN</Tag>
 		<English>Please log in to host an Internet Pitboss</English>
 		<French>Connectez-vous pour ouvrir un Pitboss Internet</French>
 		<German>Loggt Euch bitte ein, um einen Internet Pitboss zu hosten</German>
+		<Hungarian>Kérlek, jelentkezz be, ha internetes Pitbosst akarsz hosztolni</Hungarian>
 		<Italian>Effettua il login per avviare un Pitboss via Internet</Italian>
 		<Spanish>Inicia sesión para alojar Pitboss en Internet</Spanish>
+		<Hungarian>Kérlek, jelentkezz be, ha internetes Pitbosst akarsz hosztolni</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_USERNAME</Tag>
@@ -2150,6 +2214,7 @@
 		<German>Benutzername :</German>
 		<Italian>Nome utente :</Italian>
 		<Spanish>Nombre de usuario :</Spanish>
+		<Hungarian>Felhasználónév:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_USERNAME_HELP</Tag>
@@ -2158,6 +2223,7 @@
 		<German>Gebt hier Euren Benutzernamen an</German>
 		<Italian>Inserisci qui il tuo nome utente</Italian>
 		<Spanish>Introduce aquí tu nombre de usuario</Spanish>
+		<Hungarian>Írd be a felhasználónevedet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PASSWORD</Tag>
@@ -2166,6 +2232,7 @@
 		<German>Kennwort :</German>
 		<Italian>Password :</Italian>
 		<Spanish>Contraseña :</Spanish>
+		<Hungarian>Jelszó :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PASSWORD_HELP</Tag>
@@ -2174,6 +2241,7 @@
 		<German>Gebt hier Euer Kennwort an</German>
 		<Italian>Inserisci qui la tua password</Italian>
 		<Spanish>Introduce aquí tu contraseña</Spanish>
+		<Hungarian>Írd be a jelszavadat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_LOGIN_FAILED</Tag>
@@ -2182,6 +2250,7 @@
 		<German>Login fehlgeschlagen - Benutzername und Kennwort prüfen</German>
 		<Italian>Login fallito - Verifica il nome utente e la password</Italian>
 		<Spanish>Fallo al iniciar sesión: revisa el nombre de usuario y la contraseña</Spanish>
+		<Hungarian>Sikertelen bejelentkezés -- ellenőrizd a felh. nevet és jelszót</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_LOGIN_ERROR</Tag>
@@ -2190,6 +2259,7 @@
 		<German>Login-Fehler</German>
 		<Italian>Errore di login</Italian>
 		<Spanish>Error de inicio de sesión</Spanish>
+		<Hungarian>Bejelentkezési hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SELECT_INIT</Tag>
@@ -2198,6 +2268,7 @@
 		<German>Init Type wählen</German>
 		<Italian>Seleziona tipo di init</Italian>
 		<Spanish>Seleccionar tipo de inicio</Spanish>
+		<Hungarian>Válaszd ki az inicializálás típusát</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SELECT_INIT_HELP</Tag>
@@ -2206,6 +2277,7 @@
 		<German>Neues Spiel starten oder Spielstand laden</German>
 		<Italian>Avvia una nuova partita o caricane una salvata</Italian>
 		<Spanish>Empieza una partida nueva o carga una guardada</Spanish>
+		<Hungarian>Indíts új játékot, vagy tölts be egy elmentett állást</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_ERROR_HOSTING</Tag>
