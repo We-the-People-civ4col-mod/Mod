@@ -3048,6 +3048,7 @@
 		<Italian>Opzioni</Italian>
 		<Spanish>Opciones</Spanish>
 		<Russian>Настройки</Russian>
+		<Hungarian>Beállítások</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_ENTER_WB</Tag>
@@ -3057,6 +3058,7 @@
 		<Italian>Entra nell'editor</Italian>
 		<Spanish>Entrar en el Creador de mundos</Spanish>
 		<Russian>Открыть Строитель мира</Russian>
+		<Hungarian>Belépés a Szerkesztőbe</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_GAME_DETAILS</Tag>
@@ -3066,6 +3068,7 @@
 		<Italian>Dettagli partita</Italian>
 		<Spanish>Detalles de la partida</Spanish>
 		<Russian>Данные игры</Russian>
+		<Hungarian>Játék Részletei</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_DETAILS_TITLE</Tag>
@@ -3075,6 +3078,7 @@
 		<Italian>I tuoi dettagli</Italian>
 		<Spanish>Detalles</Spanish>
 		<Russian>Ваши данные</Russian>
+		<Hungarian>Adataid</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_CANCEL</Tag>
@@ -3084,6 +3088,7 @@
 		<Italian>Annulla</Italian>
 		<Spanish>Cancelar</Spanish>
 		<Russian>Отменить</Russian>
+		<Hungarian>Mégsem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PLOT_BONUS</Tag>
@@ -3093,6 +3098,7 @@
 		<Italian>Bonus difensivo : %D1_Mod%%</Italian>
 		<Spanish>Bonificación de defensa : %D1_Mod%%</Spanish>
 		<Russian>Бонус к защите : %D1_Mod%%</Russian>
+		<Hungarian>Védelmi Bónusz : %D1_Mod%%</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PLOT_BONUS_CITY</Tag>
@@ -3102,6 +3108,7 @@
 		<Italian>Bonus difensivo : %D1_Mod%%%F2_Icon</Italian>
 		<Spanish>Bonificación de defensa : %D1_Mod%%%F2_Icon</Spanish>
 		<Russian>Бонус к защите : %D1_Mod%%%F2_Icon</Russian>
+		<Hungarian>Védelmi Bónusz : %D1_Mod%%%F2_Icon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_BUILDING_DEFENSE_MODIFIER</Tag>
@@ -3109,6 +3116,7 @@
 		<French>Des bâtiments :  %D1_Mod%%%F2_Icon</French>
 		<German>Durch Gebäude : %D1_Mod%%%F2_Icon</German>
 		<Russian>От строений : %D1_Mod%%%F2_Icon</Russian>
+		<Hungarian>Épületekből : %D1_Mod%%%F2_Icon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_FORT_DEFENSE_MODIFIER</Tag>
@@ -3116,6 +3124,7 @@
 		<French>Des forts proches : %D1_Mod%%%F2_Icon</French>
 		<German>Von Forts im Umland : %D1_Mod%%%F2_Icon</German>
 		<Russian>От фортов поблизости : %D1_Mod%%%F2_Icon</Russian>
+		<Hungarian>Közeli Erődökből : %D1_Mod%%%F2_Icon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_HILL_DEFENSE_MODIFIER</Tag>
@@ -3123,6 +3132,7 @@
 		<French>De la colline  : %D1_Mod%%%F2_Icon</French>
 		<German>Durch Standort auf Hügeln : +%D1_Mod%%%F2_Icon</German>
 		<Russian>От расположения на холме : %D1_Mod%%%F2_Icon</Russian>
+		<Hungarian>Dombsági fekvésből : %D1_Mod%%%F2_Icon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_PLAYER_TRAITS_DEFENSE_MODIFIER</Tag>
@@ -3139,6 +3149,7 @@
 		<Italian>Montagna</Italian>
 		<Spanish>Pico</Spanish>
 		<Russian>Горы</Russian>
+		<Hungarian>Hegység</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PLOT_HILLS</Tag>
@@ -3148,6 +3159,7 @@
 		<Italian>Colline/</Italian>
 		<Spanish>Colina/</Spanish>
 		<Russian>Холмы/</Russian>
+		<Hungarian>Dombság/</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PLOT_FRESH_WATER_LAKE</Tag>
@@ -3157,6 +3169,7 @@
 		<Italian>Lago d'acqua dolce</Italian>
 		<Spanish>Lago de agua dulce</Spanish>
 		<Russian>Пресноводное озеро</Russian>
+		<Hungarian>Édesvizű Tó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PLOT_IMPASSABLE</Tag>
@@ -3166,6 +3179,7 @@
 		<Italian>[COLOR_WARNING_TEXT]INVALICABILE[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]INFRANQUEABLE[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]НЕПРОХОДИМЫЙ[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]ÁTHATOLHATATLAN[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PLOT_IMP_UPGRADE</Tag>
@@ -3175,6 +3189,7 @@
 		<Italian>[SPACE](%d1_Num [NUM1:turno:turni] per %s2_ImpName)</Italian>
 		<Spanish>[SPACE](%d1_Num [NUM1:turno:turnos] para [NUM2:un:una:unos:unas] %s2:1_ImpName)</Spanish>
 		<Russian>[SPACE](%d1_Num [NUM1:ход:ходов] в %s2_ImpName)</Russian>
+		<Hungarian>[SPACE](%d1_Num kör %s2_ImpName befejezéséig)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WATER_WORK</Tag>
@@ -3184,6 +3199,7 @@
 		<Italian>[ICON_BULLET]Permette di usare le caselle d'acqua</Italian>
 		<Spanish>[ICON_BULLET]Se puede trabajar en casillas de agua</Spanish>
 		<Russian>[ICON_BULLET]Может работать на водных клетках</Russian>
+		<Hungarian>[ICON_BULLET]Vízen is dolgozhat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ON_HILLS</Tag>
@@ -3193,6 +3209,7 @@
 		<Italian>[SPACE]sulle colline</Italian>
 		<Spanish>[SPACE]en una colina</Spanish>
 		<Russian>[SPACE]на холмах</Russian>
+		<Hungarian>[SPACE]Dombokon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ALONG_RIVER</Tag>
@@ -3202,6 +3219,7 @@
 		<Italian>[SPACE]lungo il fiume</Italian>
 		<Spanish>[SPACE]junto a un río</Spanish>
 		<Russian>[SPACE]вдоль реки</Russian>
+		<Hungarian>[SPACE]Folyó mentén</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_GOLD</Tag>
@@ -3211,6 +3229,7 @@
 		<Italian>Oro (%d1_Num)</Italian>
 		<Spanish>Oro (%d1_Num)</Spanish>
 		<Russian>Золото (%d1_Num)</Russian>
+		<Hungarian>Arany (%d1_Num)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_OPEN_BORDERS</Tag>
@@ -3220,6 +3239,7 @@
 		<Italian>Diritto di passaggio</Italian>
 		<Spanish>Apertura de fronteras</Spanish>
 		<Russian>Открытые границы</Russian>
+		<Hungarian>Nyitott Határok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_DEFENSIVE_PACT</Tag>
@@ -3229,6 +3249,7 @@
 		<Italian>Alleanza difensiva</Italian>
 		<Spanish>Acuerdo de protección</Spanish>
 		<Russian>Оборонительный пакт</Russian>
+		<Hungarian>Védelmi Szerződés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_PERMANENT_ALLIANCE</Tag>
@@ -3238,6 +3259,7 @@
 		<Italian>Alleanza permanente</Italian>
 		<Spanish>Alianza permanente</Spanish>
 		<Russian>Постоянный союз</Russian>
+		<Hungarian>Örökös Szövetség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_PEACE_TREATY</Tag>
@@ -3247,6 +3269,7 @@
 		<Italian>Trattato di pace (%d1_Num [NUM1:turno:turni])</Italian>
 		<Spanish>Tratado de paz (%d1_Num [NUM1:turno:turnos])</Spanish>
 		<Russian>Мирный договор (%d1_Num [NUM1:ход:ходов])</Russian>
+		<Hungarian>Békeszerződés  (%d1_Num kör)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HURRY_PROD</Tag>
@@ -3256,6 +3279,7 @@
 		<Italian>Accelera [COLOR_UNIT_TEXT]%s1_ProdName[COLOR_REVERT]</Italian>
 		<Spanish>Acelerar [COLOR_UNIT_TEXT]%s1_ProdName[COLOR_REVERT]</Spanish>
 		<Russian>Ускорить [COLOR_UNIT_TEXT]%s1_ProdName[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_UNIT_TEXT]%s1_ProdName[COLOR_REVERT] előállításának felgyorsítása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HURRY_GOLD</Tag>
@@ -3265,6 +3289,7 @@
 		<Italian>[ICON_BULLET]Costa %d1_Num[ICON_GOLD]</Italian>
 		<Spanish>[ICON_BULLET]Cuesta %d1_Num[ICON_GOLD]</Spanish>
 		<Russian>[ICON_BULLET]Стоимость %d1_Num[ICON_GOLD]</Russian>
+		<Hungarian>[ICON_BULLET]Ára: %d1_Num[ICON_GOLD]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HURRY_POP</Tag>
@@ -3274,6 +3299,7 @@
 		<Italian>[ICON_BULLET]Costa %d1_Num abitanti</Italian>
 		<Spanish>[ICON_BULLET]Cuesta %d1_Num de población</Spanish>
 		<Russian>[ICON_BULLET]Расходы %d1_Num population</Russian>
+		<Hungarian>[ICON_BULLET]Ára: %d1_Num Lakos</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_MAX_POP_HURRY</Tag>
@@ -3282,6 +3308,7 @@
 		<German>[SPACE][COLOR_WARNING_TEXT](Max. : %d1_Num)[COLOR_REVERT]</German>
 		<Italian>[SPACE][COLOR_WARNING_TEXT](Max : %d1_Num)[COLOR_REVERT]</Italian>
 		<Spanish>[SPACE][COLOR_WARNING_TEXT](Máx. : %d1_Num)[COLOR_REVERT]</Spanish>
+		<Hungarian>[SPACE][COLOR_WARNING_TEXT](Elérhető max.: %d1_Num)[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_TURN_OR_TURNS</Tag>
@@ -3291,6 +3318,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turni][COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turno:turnos][COLOR_REVERT] </Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:хода:ходов][COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%d1_Num kör[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CONTACT_LEADER</Tag>
@@ -3300,6 +3328,7 @@
 		<Italian>Contatta il giocatore [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] della civiltà %s2:2_CivName</Italian>
 		<Spanish>Contactar con [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] del %s2_CivName</Spanish>
 		<Russian>Связаться с [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] %s2_CivName</Russian>
+		<Hungarian>Kapcsolatfelvétel: %s1_PlyrName, %s2_CivName</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_SHIFT_SEND_CHAT</Tag>
@@ -3308,6 +3337,7 @@
 		<German>([COLOR:140:255:40:255]&lt; UMSCHALTEN &gt;[COLOR_REVERT] zum Senden einer Chat-Nachricht)</German>
 		<Italian>([COLOR:140:255:40:255]&lt; MAIUSC &gt;[COLOR_REVERT] per spedire i messaggi di chat)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; Mayús &gt;[COLOR_REVERT] para enviar mensaje de chat)</Spanish>
+		<Hungarian>([COLOR:140:255:40:255]Üzenetküldés: &lt; SHIFT &gt;[COLOR_REVERT])</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_REFUSES_TO_TALK</Tag>
@@ -3317,6 +3347,7 @@
 		<Italian>[COLOR_WARNING_TEXT]Rifiuta di parlare[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]Se niega a hablar[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]Отказывается говорить[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]Visszautasította a beszélgetést[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CANNOT_DECLARE_WAR</Tag>
@@ -3326,6 +3357,7 @@
 		<Italian>[COLOR_WARNING_TEXT]Impossibile dichiarare guerra[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]No se puede declarar la guerra[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]Нельзя объявлять войну[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]A hadüzenet nem lehetséges[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ALT_DECLARE_WAR</Tag>
@@ -3335,6 +3367,7 @@
 		<Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per dichiarare guerra)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para declarar la guerra)</Spanish>
 		<Russian>([COLOR:140:255:40:255]ALT[COLOR_REVERT] для объявления войны)</Russian>
+		<Hungarian>([COLOR:140:255:40:255]Hadüzenet: &lt; ALT &gt;[COLOR_REVERT])</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WARNING</Tag>
@@ -3344,6 +3377,7 @@
 		<Italian>Attenzione!</Italian>
 		<Spanish>¡Aviso!</Spanish>
 		<Russian>Внимание!</Russian>
+		<Hungarian>Figyelem!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ON_CITIZEN_AUTO</Tag>
@@ -3353,6 +3387,7 @@
 		<Italian>Attiva l'automazione dei cittadini</Italian>
 		<Spanish>Activar la automatización de los ciudadanos</Spanish>
 		<Russian>Включить автоматическое распределение горожан на работы</Russian>
+		<Hungarian>Lakosok Automatizálása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_OFF_PROD_AUTO</Tag>
@@ -3362,6 +3397,7 @@
 		<Italian>Disattiva la produzione automatica</Italian>
 		<Spanish>Desactivar la automatización de la producción</Spanish>
 		<Russian>Выключить автоматическое строительство зданий</Russian>
+		<Hungarian>Termelés Automatizmusának Leállítása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ON_PROD_AUTO</Tag>
@@ -3371,6 +3407,7 @@
 		<Italian>Attiva la produzione automatica</Italian>
 		<Spanish>Activar la automatización de la producción</Spanish>
 		<Russian>Включить автоматическое строительство зданий</Russian>
+		<Hungarian>Termelés Automatizálása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CULTURE</Tag>
@@ -3380,6 +3417,7 @@
 		<Italian>Cultura : %d1_Curr/%d2_Need %F3</Italian>
 		<Spanish>Cultura : %d1_Curr/%d2_Need %F3</Spanish>
 		<Russian>Культура : %d1_Curr/%d2_Need %F3</Russian>
+		<Hungarian>Kultúra: %d1_Curr/%d2_Need %F3</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_PEDIA_BACK</Tag>
@@ -3389,6 +3427,7 @@
 		<Italian>Indietro</Italian>
 		<Spanish>Atrás</Spanish>
 		<Russian>Назад</Russian>
+		<Hungarian>Vissza</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_PEDIA_FORWARD</Tag>
@@ -3398,6 +3437,7 @@
 		<Italian>Avanti</Italian>
 		<Spanish>Adelante</Spanish>
 		<Russian>Вперед</Russian>
+		<Hungarian>Előre</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CLOSE_SCREEN</Tag>
@@ -3407,6 +3447,7 @@
 		<Italian>Chiudi schermata</Italian>
 		<Spanish>Cerrar la pantalla</Spanish>
 		<Russian>Закрыть окно</Russian>
+		<Hungarian>Képernyő Bezárása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HISTORICAL_INFO</Tag>
@@ -3415,6 +3456,7 @@
 		<German>Historische Informationen über %s1:2_Name abfragen</German>
 		<Italian>Scopri le informazioni storiche di %s1_Name</Italian>
 		<Spanish>Obtener información histórica [NUM1:del:de la:de los:de las] %s1_Name</Spanish>
+		<Hungarian>%s1_Name történelmi hátterének megtekintése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CLICK_TO_CANCEL</Tag>
@@ -3424,6 +3466,7 @@
 		<Italian>Clicca per annullare</Italian>
 		<Spanish>Hacer clic para cancelar</Spanish>
 		<Russian>Нажмите для отмены</Russian>
+		<Hungarian>Ha meggondoltad magad, kattints</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_SAY_TO_TEAM</Tag>
@@ -3432,6 +3475,7 @@
 		<German>Team ansprechen :[SPACE]</German>
 		<Italian>Parla alla squadra :[SPACE]</Italian>
 		<Spanish>Decirle al equipo :[SPACE]</Spanish>
+		<Hungarian>Üzenet a csapatnak:[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_SAY_TO_ALL</Tag>
@@ -3440,6 +3484,7 @@
 		<German>Alle ansprechen :[SPACE]</German>
 		<Italian>Parla a tutti :[SPACE]</Italian>
 		<Spanish>Decirles a todos :[SPACE]</Spanish>
+		<Hungarian>Üzenet mindenkinek:[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_SAY_TO_PLAYER</Tag>
@@ -3448,6 +3493,7 @@
 		<German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ansprechen</German>
 		<Italian>Parla a [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT]</Italian>
 		<Spanish>Decirle a [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT]</Spanish>
+		<Hungarian>Üzenet [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] részére</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_TRYING_TO_CONTACT</Tag>
@@ -3456,6 +3502,7 @@
 		<German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] versucht Sie zu kontaktieren!</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] sta cercando di contattarti!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] quiere contactar contigo</Spanish>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] fel akarja veled venni a kapcsolatot!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WINS_VICTORY</Tag>
@@ -3466,6 +3513,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] conquista una vittoria %s2_VctryName!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha obtenido una victoria %s2_VctryName</Spanish>
 		<!--<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] одерживает победу в категории : %s2_VctryName!!!!</Russian>-->
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] %s2_VctryName Győzelmet aratott!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_OUT_OF_SYNC</Tag>
@@ -3490,6 +3538,7 @@
 		<German>[SPACE][Unterbrochen]</German>
 		<Italian>[SPACE][Disconnesso]</Italian>
 		<Spanish>[SPACE][Desconectado]</Spanish>
+		<Hungarian>[SPACE][Szétkapcsolódva]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_AI</Tag>
@@ -3498,6 +3547,7 @@
 		<German>[SPACE][KI]</German>
 		<Italian>[SPACE][IA]</Italian>
 		<Spanish>[SPACE][IA]</Spanish>
+		<Hungarian>SPACE][MI]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_BORDERS_EXPANDED</Tag>
@@ -3507,6 +3557,7 @@
 		<Italian>I confini di %s1_CityName si sono espansi!</Italian>
 		<Spanish>Las fronteras de %s1_CityName se han ampliado.</Spanish>
 		<Russian>[COLOR_POSITIVE_TEXT]%s1_CityName : [COLOR_REVERT]Границы города расширились!</Russian>
+		<Hungarian>[COLOR_POSITIVE_TEXT]%s1_CityName : [COLOR_REVERT]A határok kiterjedtek!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CULTURE_LEVEL</Tag>
@@ -3515,6 +3566,7 @@
 		<German>[COLOR_POSITIVE_TEXT]%s1_CityName : [COLOR_REVERT]Kulturstufe %s2_LevelName erreicht !</German>
 		<Italian>%s1_CityName ha raggiunto il livello culturale %s2_LevelName!</Italian>
 		<Spanish>%s1_CityName ya tiene cultura %s2_LevelName.</Spanish>
+		<Hungarian>[COLOR_POSITIVE_TEXT]%s1_CityName : [COLOR_REVERT]%s2_LevelName Kulturális Szintre lépett!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CULTURE_LEVEL_UNKNOWN</Tag>
@@ -3523,6 +3575,7 @@
 		<German>Eine unbekannte Stadt hat die Kulturstufe %s1_LevelName erreicht!</German>
 		<Italian>Una città sconosciuta ha raggiunto il livello culturale %s1_LevelName!</Italian>
 		<Spanish>Una ciudad desconocida ya tiene cultura %s1_LevelName.</Spanish>
+		<Hungarian>Egy ismeretlen város %s1_LevelName Kulturális Szintre lépett!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CITY_HAS_BEEN_FOUNDED</Tag>
@@ -3532,6 +3585,7 @@
 		<Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] è stata fondata.</Italian>
 		<Spanish>Se ha fundado [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</Spanish>
 		<Russian>Был основан город [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</Russian>
+		<Hungarian>Megalapításra került [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CITY_IS_FOUNDED</Tag>
@@ -3541,6 +3595,7 @@
 		<Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] fondata.</Italian>
 		<Spanish>Se funda [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] основан.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] megalapítva.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_TRAINED_UNIT_IN</Tag>
@@ -3550,6 +3605,7 @@
 		<Italian>Hai addestrato [NUM1:un:una:dei:delle] %s1_UnitName a %s2_CityName.</Italian>
 		<Spanish>Habéis entrenado a [NUM1:un:una:unos:unas] %s1_UnitName en %s2_CityName.</Spanish>
 		<Russian>[COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] : Был создан юнит [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT].</Russian>
+		<Hungarian>%s2_CityName : [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] kiképezve.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CONSTRUCTED_BUILD_IN</Tag>
@@ -3559,6 +3615,7 @@
 		<Italian>Hai costruito l'edificio %s1_BldgName a %s2_CityName.</Italian>
 		<Spanish>Habéis construido [NUM1:un:una:unos:unas] %s1_BldgName en %s2_CityName.</Spanish>
 		<Russian>[COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] : Было построено здание [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT].</Russian>
+		<Hungarian>%s2_CityName : Elkészült egy [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WORK_HAS_BEGUN</Tag>
@@ -3568,6 +3625,7 @@
 		<Italian>[SPACE]Sono iniziati i lavori per: [COLOR_BUILDING_TEXT]%s1_ProdName[COLOR_REVERT].</Italian>
 		<Spanish>[SPACE]Ya se ha empezado a trabajar en: [COLOR_BUILDING_TEXT]%s1_ProdName[COLOR_REVERT].</Spanish>
 		<Russian>[SPACE]Сейчас начаты работы над [COLOR_BUILDING_TEXT]%s1_ProdName[COLOR_REVERT].</Russian>
+		<Hungarian>[SPACE]Megkezdődött egy [COLOR_BUILDING_TEXT]%s1_ProdName[COLOR_REVERT] építése.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_PILLAGED_CITY</Tag>
@@ -3577,6 +3635,7 @@
 		<Italian>Hai saccheggiato %d1_Num[ICON_GOLD] dalla distruzione di [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!</Italian>
 		<Spanish>Habéis saqueado %d1_Num[ICON_GOLD] con la destrucción de [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
 		<Russian>Милорд, ваши люди награбили для вас %d1_Num[ICON_GOLD] в [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, az embereid [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] kifosztásával %d1_Num[ICON_GOLD] Aranyat zsákmányoltak számodra!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CITY_HAS_BEEN_RAZED_BY</Tag>
@@ -3586,6 +3645,7 @@
 		<Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] è stata razziata dall'[COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!</Italian>
 		<Spanish>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] ha sido arrasada por el [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] был разрушен [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!!!</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT] lerombolták [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] települést!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CITY_RAZED_BY</Tag>
@@ -3595,6 +3655,7 @@
 		<Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] è stata razziata dall'[COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!!!</Italian>
 		<Spanish>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT], arrasada por el [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] разрушен [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!!!</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT] lerombolták [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] települést!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CAPTURED_CITY</Tag>
@@ -3604,6 +3665,7 @@
 		<Italian>Hai conquistato %s1_CityName!!!</Italian>
 		<Spanish>Habéis capturado %s1_CityName.</Spanish>
 		<Russian>[COLOR_POSITIVE_TEXT]Триумф, Милорд! [COLOR_REVERT]Ваши храбрые солдаты взяли под контроль [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT].</Russian>
+		<Hungarian>[COLOR_POSITIVE_TEXT]Diadal, Uram! [COLOR_REVERT]Bátor katonáid átvették az irányítást [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] felett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CITY_CAPTURED_BY</Tag>
@@ -3613,6 +3675,7 @@
 		<Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] è stata conquistata dall'[COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!!!</Italian>
 		<Spanish>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] ha sido capturada por el [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] сейчас находится под властью [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] mostantól [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT] uralma alatt áll!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CITY_WAS_CAPTURED_BY</Tag>
@@ -3622,6 +3685,7 @@
 		<Italian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] è stata conquistata dall'[COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!!!</Italian>
 		<Spanish>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT], capturada por el [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] был захвачен [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT]!</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] mostantól [COLOR_HIGHLIGHT_TEXT]%s2_CivName[COLOR_REVERT] uralma alatt áll!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_RECEIVED_GOLD</Tag>
@@ -3631,6 +3695,7 @@
 		<Italian>[SPACE]Hai ricevuto %d1_Num[ICON_GOLD]!</Italian>
 		<Spanish>[SPACE]Habéis recibido %d1_Num[ICON_GOLD].</Spanish>
 		<Russian>[SPACE]Вы получили %d1_Num[ICON_GOLD]!</Russian>
+		<Hungarian>[SPACE]Szert tettél %d1_Num [ICON_GOLD]-ra!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_PLAYER_ADOPTED_CIVIC</Tag>
@@ -3640,6 +3705,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] adotta la forma di governo [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT]!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha adoptado [NUM2:el:la:los:las] [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] принимает [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT]!</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] által bevezetett Államforma: [COLOR_HIGHLIGHT_TEXT]%s2_CvcName[COLOR_REVERT]!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ENEMY_TROOPS_SPOTTED</Tag>
@@ -3649,6 +3715,7 @@
 		<Italian>Truppe nemiche avvistate nei pressi di %s1_CityName!</Italian>
 		<Spanish>Se han avistado tropas enemigas cerca de %s1_CityName.</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]В окрестностях были замечены вражеские войска!</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]%s1_CityName : [COLOR_REVERT]Ellenséget észleltünk a közelben!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CLEARING_FEATURE_BONUS</Tag>
@@ -3658,6 +3725,7 @@
 		<Italian>Sgombrando una casella di %s1_FeatName si è creata %d2_Num%F4 per %s3_CityName.</Italian>
 		<Spanish>Despejar [NUM1:el:la:los:las] %s1_FeatName ha generado %d2_Num%F4 para %s3_CityName.</Spanish>
 		<Russian>[COLOR_SELECTED_TEXT]%s3_CityName[COLOR_REVERT] : Ваш первопроходец очистил %s1_FeatName. %d2_Num%F4 было передано на склад.</Russian>
+		<Hungarian>%s3_CityName : %s1_FeatName kiírtásából %d2_Num%F4 betárolásra került.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_FEATURE_GROWN_NEAR_CITY</Tag>
@@ -3667,6 +3735,7 @@
 		<Italian>Vicino a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] [NUM1:è sorto:è sorta] %s1_FeatName</Italian>
 		<Spanish>Ha aparecido [NUM1:un:una:unos:unas] %s1_FeatName cerca de [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_FONT_CREAM]%s1_FeatName[COLOR_REVERT] вырос рядом c [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Russian>
+		<Hungarian>%s1_FeatName nőtt [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] közelében!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_DISCOVERED_NEW_RESOURCE</Tag>
@@ -3676,6 +3745,7 @@
 		<Italian>Hai scoperto una risorsa di [COLOR_HIGHLIGHT_TEXT]%s1_BonusName[COLOR_REVERT] vicino a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!</Italian>
 		<Spanish>Habéis descubierto una fuente de [COLOR_HIGHLIGHT_TEXT]%s1_BonusName[COLOR_REVERT] cerca de [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
 		<Russian>Вы обнаружили источник [COLOR_HIGHLIGHT_TEXT]%s1_BonusName[COLOR_REVERT] рядом с [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_BonusName[COLOR_REVERT] lelőhelyre bukkantál [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] közelében!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_PLAYER_PERMANENT_ALLIANCE</Tag>
@@ -3685,6 +3755,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha siglato un'alleanza permanente con la squadra [COLOR_HIGHLIGHT_TEXT]%s2_TeamName[COLOR_REVERT]!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha firmado una alianza permanente con [COLOR_HIGHLIGHT_TEXT]%s2_TeamName[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] заключил постоянный союз с [COLOR_HIGHLIGHT_TEXT]%s2_TeamName[COLOR_REVERT]!</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] és [COLOR_HIGHLIGHT_TEXT]%s2_TeamName[COLOR_REVERT] Örökös Szövetséget kötött!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_DECLARED_WAR_ON_YOU</Tag>
@@ -3694,6 +3765,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ti ha dichiarato guerra!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] os han declarado la guerra.</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] объявил нам войну!!!</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] Hadat Üzent neked!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_SOMEONE_DECLARED_WAR</Tag>
@@ -3703,6 +3775,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha dichiarato guerra a [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] le ha declarado la guerra a [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] объявил войну [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] és [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT] Háborúba léptek!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_SOMEONE_DECLARES_WAR</Tag>
@@ -3712,6 +3785,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] dichiara guerra a [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] le declara la guerra a [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] объявляет войу [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] és [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT] Háborúba léptek!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_SOMEONE_MADE_PEACE</Tag>
@@ -3721,6 +3795,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha siglato la pace con [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha firmado la paz con [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] заключил мир с [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] és [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT] Békét kötött!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_UNITS_UNDER_ATTACK</Tag>
@@ -3730,6 +3805,7 @@
 		<Italian>Le tue forze sono sotto attacco (%s1_player)!</Italian>
 		<Spanish>Atacan a vuestras fuerzas (%s1_player).</Spanish>
 		<Russian>Наши войска атакованы %s1_player!</Russian>
+		<Hungarian>%s1_player megtámadta haderőidet!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_GIFTED_UNIT_TO_YOU</Tag>
@@ -3739,6 +3815,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ti ha donato un'unità %s2_UnitName!</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] os ha regalado [NUM2:un:una:unos:unas] %s2_UnitName.</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] подарил вам a %s2_UnitName!</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] egy %s2_UnitName egységet ajándékozott neked!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_PLUNDERED_GOLD_FROM_IMP</Tag>
@@ -3748,6 +3825,7 @@
 		<Italian>Hai saccheggiato %d1_Num[ICON_GOLD] da %s2_ImpName!</Italian>
 		<Spanish>Habéis saqueado %d1_Num[ICON_GOLD] [NUM2:del:de la:de los:de las] %s2_ImpName.</Spanish>
 		<Russian>Милорд, мы нашли %d1_Num[ICON_GOLD] при разграблении %s2_ImpName!</Russian>
+		<Hungarian>Uram, %s2_ImpName kifosztásával %d1_Num[ICON_GOLD] Aranyat zsákmányoltál!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_IMP_DESTROYED</Tag>
@@ -3757,6 +3835,7 @@
 		<Italian>[NUM1:Un:Una] %s1_ImpName è [NUM1:stato sabotato:stata sabotata] - %s2_UnitName ([COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT])!</Italian>
 		<Spanish>[NUM1:Un:Una:Unos:Unas] %s1_ImpName [NUM1:ha sido destruido:ha sido destruida:han sido destruidos:han sido destruidas] - %s2_UnitName ([COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT]).</Spanish>
 		<Russian>%s1_ImpName уничтожена [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT] %s2_UnitName!</Russian>
+		<Hungarian>Egy fosztogató [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT] %s2_UnitName egység megsemmisítette: %s1_ImpName!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ALARM_GOES_OFF</Tag>
@@ -3766,6 +3845,7 @@
 		<Italian>DRIIIIIIIIIN! Sono le %s1_TimeStr.</Italian>
 		<Spanish>¡RIIIIIIIIING! Hora: %s1_TimeStr.</Spanish>
 		<Russian>АЛЯРМА!!! На часы давно смотрел??? %s1_TimeStr.</Russian>
+		<Hungarian>CSÖRRRRRR! Az idő: %s1_TimeStr!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ALARM_WILL_GO_OFF</Tag>
@@ -3774,6 +3854,7 @@
 		<German>Der Alarm wird um %s1_TimeStr ausgelöst.</German>
 		<Italian>L'allarme suonerà tra %s1_TimeStr.</Italian>
 		<Spanish>La alarma se apagará a la/s %s1_TimeStr.</Spanish>
+		<Hungarian>Riasztás vége: %s1_TimeStr.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_PM_AFTERNOON</Tag>
@@ -3782,6 +3863,7 @@
 		<German>[SPACE]p.m.</German>
 		<Italian>[SPACE]PM</Italian>
 		<Spanish>[SPACE]PM</Spanish>
+		<Hungarian>[SPACE]du.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_AM_MORNING</Tag>
@@ -3790,6 +3872,7 @@
 		<German>[SPACE]a.m.</German>
 		<Italian>[SPACE]AM</Italian>
 		<Spanish>[SPACE]AM</Spanish>
+		<Hungarian>[SPACE]de.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TIME_BC_SAVE</Tag>
@@ -3798,6 +3881,7 @@
 		<German>v. Chr.-%s1_Date</German>
 		<Italian>a. C. - %s1_Date</Italian>
 		<Spanish>%s1_Date a. C.</Spanish>
+		<Hungarian>Kr.e. %s1_Date</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TIME_BC</Tag>
@@ -3806,6 +3890,7 @@
 		<German>%d1_Date v. Chr.</German>
 		<Italian>%d1_Date a. C.</Italian>
 		<Spanish>%d1_Date a. C.</Spanish>
+		<Hungarian>Kre-%d1_Date</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TIME_AD_SAVE</Tag>
@@ -3814,6 +3899,7 @@
 		<German>n. Chr.-%s1_Date</German>
 		<Italian>d.C. - %s1_Date</Italian>
 		<Spanish>%s1_Date d. C.</Spanish>
+		<Hungarian>%s1_Date</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TIME_TURN</Tag>
@@ -3823,6 +3909,7 @@
 		<Italian>Turno : %d1_TurnNum</Italian>
 		<Spanish>Turno : %d1_TurnNum</Spanish>
 		<Russian>Ход : %d1_TurnNum</Russian>
+		<Hungarian>Kör: %d1_TurnNum</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TIME_WEEK</Tag>
@@ -3832,6 +3919,7 @@
 		<Italian>Settimana %d1_WeekNum</Italian>
 		<Spanish>Semana : %d1_WeekNum</Spanish>
 		<Russian>Неделя %d1_WeekNum</Russian>
+		<Hungarian>%d1_WeekNum. hét</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PLAY_NOW</Tag>
@@ -3841,6 +3929,7 @@
 		<Italian>Gioca ora!</Italian>
 		<Spanish>Jugar ya</Spanish>
 		<Russian>Играть сейчас</Russian>
+		<Hungarian>Induljon a Játék!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOAD_GAME</Tag>
@@ -3850,6 +3939,7 @@
 		<Italian>Carica partita</Italian>
 		<Spanish>Cargar partida</Spanish>
 		<Russian>Загрузить игру</Russian>
+		<Hungarian>Játék Betöltése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CUSTOM_GAME</Tag>
@@ -3859,6 +3949,7 @@
 		<Italian>Partita personalizzata</Italian>
 		<Spanish>Personalizar partida</Spanish>
 		<Russian>Игра с настройками пользователя</Russian>
+		<Hungarian>Személyre Szabott Játék</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SCENARIO</Tag>
@@ -3868,6 +3959,7 @@
 		<Italian>Gioca uno scenario</Italian>
 		<Spanish>Jugar un escenario</Spanish>
 		<Russian>Выбрать Сценарий</Russian>
+		<Hungarian>Szcenárió Indítása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_UPDATES</Tag>
@@ -3877,6 +3969,7 @@
 		<Italian>Verifica aggiornamenti</Italian>
 		<Spanish>Comprobar actualizaciones</Spanish>
 		<Russian>Проверить обновления</Russian>
+		<Hungarian>Frissítések keresése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOAD_MOD</Tag>
@@ -3886,6 +3979,7 @@
 		<Italian>Carica un mod</Italian>
 		<Spanish>Cargar un mod</Spanish>
 		<Russian>Загрузить модификацию</Russian>
+		<Hungarian>Mod betöltése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CIVILOPEDIA</Tag>
@@ -3904,6 +3998,7 @@
 		<Italian>Colopedia</Italian>
 		<Spanish>Colopedia</Spanish>
 		<Russian>Колонопедия</Russian>
+		<Hungarian>Kolopédia</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_OPTIONS</Tag>
@@ -3913,6 +4008,7 @@
 		<Italian>Opzioni</Italian>
 		<Spanish>Opciones</Spanish>
 		<Russian>Настройки</Russian>
+		<Hungarian>Beállítások</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SELECT_GAME_SPEED</Tag>
@@ -3922,6 +4018,7 @@
 		<Italian>Quanto veloce deve essere il gioco?</Italian>
 		<Spanish>¿A qué velocidad ha de ir el juego?</Spanish>
 		<Russian>Насколько быстрой должна быть игра?</Russian>
+		<Hungarian>Milyen gyors legyen a játék?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PLAYERS</Tag>
@@ -3931,6 +4028,7 @@
 		<Italian>Giocatori</Italian>
 		<Spanish>Jugadores</Spanish>
 		<Russian>Игроки</Russian>
+		<Hungarian>Játékosok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CUSTOM_SETUP_OPTIONS</Tag>
@@ -3940,6 +4038,7 @@
 		<Italian>Opzioni</Italian>
 		<Spanish>Opciones</Spanish>
 		<Russian>Настройки</Russian>
+		<Hungarian>Beállítások</Hungarian>>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LAUNCH</Tag>
@@ -3949,6 +4048,7 @@
 		<Italian>Avvia!</Italian>
 		<Spanish>Iniciar</Spanish>
 		<Russian>Поднять паруса!</Russian>
+		<Hungarian>Gyerünk!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SAVE_GAME_TITLE</Tag>
@@ -3958,6 +4058,7 @@
 		<Italian>Salva partita</Italian>
 		<Spanish>Guardar partida</Spanish>
 		<Russian>Сохранить игру</Russian>
+		<Hungarian>Játék Mentése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOADSAVE_GAME_FOLDER</Tag>
