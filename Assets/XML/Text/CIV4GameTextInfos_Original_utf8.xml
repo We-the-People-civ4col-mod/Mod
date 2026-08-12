@@ -2286,6 +2286,7 @@
 		<German>Interner Fehler beim Hosten des Spiels</German>
 		<Italian>Errore interno durante il tentativo di ospitare una partita</Italian>
 		<Spanish>Error interno al alojar la partida</Spanish>
+		<Hungarian>Belső hiba a játék hosztolása közben</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_HOST_ERROR</Tag>
@@ -2294,6 +2295,7 @@
 		<German>Host-Fehler</German>
 		<Italian>Errore host</Italian>
 		<Spanish>Error de anfitrión</Spanish>
+		<Hungarian>Hoszt hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_CHOOSE_SAVE</Tag>
@@ -2302,6 +2304,7 @@
 		<German>Wählt einen Spielstand</German>
 		<Italian>Scegli una partita salvata</Italian>
 		<Spanish>Elegir una partida guardada</Spanish>
+		<Hungarian>Válassz ki egy mentett állást</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SAVE_FILES</Tag>
@@ -2310,6 +2313,7 @@
 		<German>Civ-Spielstände %s1</German>
 		<Italian>File di salvataggio Civ %s1</Italian>
 		<Spanish>Archivos de guardado de Civilization: %s1</Spanish>
+		<Hungarian>Civ mentésfájlok: %s1</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_ERROR_LOADING</Tag>
@@ -2318,6 +2322,7 @@
 		<German>Interner Fehler beim Laden des Spiels</German>
 		<Italian>Errore interno durante il caricamento della partita</Italian>
 		<Spanish>Error interno al cargar la partida</Spanish>
+		<Hungarian>Belső hiba a játék betöltésekor</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_LOAD_ERROR</Tag>
@@ -2326,6 +2331,7 @@
 		<German>Ladefehler</German>
 		<Italian>Errore di caricamento</Italian>
 		<Spanish>Error de carga</Spanish>
+		<Hungarian>Betöltési hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_GAME_OPTIONS</Tag>
@@ -2334,6 +2340,7 @@
 		<German>Spieloptionen</German>
 		<Italian>Opzioni di gioco</Italian>
 		<Spanish>Opciones de partida</Spanish>
+		<Hungarian>Játékbeállítások</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_MAP</Tag>
@@ -2342,6 +2349,7 @@
 		<German>Karte :</German>
 		<Italian>Mappa :</Italian>
 		<Spanish>Mapa :</Spanish>
+		<Hungarian>Térkép :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SIZE</Tag>
@@ -2350,6 +2358,7 @@
 		<German>Größe :</German>
 		<Italian>Dimensione :</Italian>
 		<Spanish>Tamaño :</Spanish>
+		<Hungarian>Méret :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_ERA</Tag>
@@ -2358,6 +2367,7 @@
 		<German>Zeitalter :</German>
 		<Italian>Era :</Italian>
 		<Spanish>Época :</Spanish>
+		<Hungarian>Korszak :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SPEED</Tag>
@@ -2367,6 +2377,7 @@
 		<Italian>Velocità :</Italian>
 		<Spanish>Velocidad :</Spanish>
 		<Russian>Скорость :</Russian>
+		<Hungarian>Sebesség :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_TITLE</Tag>
@@ -2375,6 +2386,7 @@
 		<German>Civ IV Pitboss-Installationsassistent</German>
 		<Italian>Wizard di impostazione del Pitboss di Civilization IV</Italian>
 		<Spanish>Asistente de configuración de Pitboss de Civilization IV</Spanish>
+		<Hungarian>Civ IV Pitboss beállítás varázsló</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_RANDOM</Tag>
@@ -2383,6 +2395,7 @@
 		<German>Zufällig</German>
 		<Italian>Casuale</Italian>
 		<Spanish>Al azar</Spanish>
+		<Hungarian>Véletlenszerű</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PLAYER</Tag>
@@ -2391,6 +2404,7 @@
 		<German>Spieler %d1</German>
 		<Italian>Giocatore %d1</Italian>
 		<Spanish>Jugador %d1</Spanish>
+		<Hungarian>Játékos: %d1</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_WHO</Tag>
@@ -2399,6 +2413,7 @@
 		<German>Wer</German>
 		<Italian>Chi</Italian>
 		<Spanish>Quién</Spanish>
+		<Hungarian>Ki</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_CIV</Tag>
@@ -2407,6 +2422,7 @@
 		<German>Ziv</German>
 		<Italian>Civiltà</Italian>
 		<Spanish>Civilización</Spanish>
+		<Hungarian>Civ</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_LEADER</Tag>
@@ -2415,6 +2431,7 @@
 		<German>Anführer</German>
 		<Italian>Leader</Italian>
 		<Spanish>Líder</Spanish>
+		<Hungarian>Vezető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_DIFFICULTY</Tag>
@@ -2423,6 +2440,7 @@
 		<German>Schwierigkeit</German>
 		<Italian>Difficoltà</Italian>
 		<Spanish>Dificultad</Spanish>
+		<Hungarian>Nehézség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_STATUS</Tag>
@@ -2431,6 +2449,7 @@
 		<German>Spielerstatus</German>
 		<Italian>Stato giocatore</Italian>
 		<Spanish>Estado del jugador</Spanish>
+		<Hungarian>Játékos státusza</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_ABOUT</Tag>
@@ -2439,6 +2458,7 @@
 		<German>Über</German>
 		<Italian>Informazioni</Italian>
 		<Spanish>Acerca de</Spanish>
+		<Hungarian>Névjegy</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_ABOUT_TEXT</Tag>
@@ -2447,6 +2467,7 @@
 		<German>Civ IV Pitboss - Firaxis Games</German>
 		<Italian>Pitboss di Civ IV - Firaxis Games</Italian>
 		<Spanish>Pitboss para Civilization IV - Firaxis Games</Spanish>
+		<Hungarian>Civ IV Pitboss - Firaxis Games</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SAVE</Tag> <!-- setting up trade routes -->
@@ -2456,6 +2477,7 @@
 		<Italian>Salva</Italian>
 		<Spanish>Guardar</Spanish>
 		<Russian>Сохранить</Russian>
+		<Hungarian>Mentés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SAVE_TEXT</Tag>
@@ -2464,6 +2486,7 @@
 		<German>Spiel speichern</German>
 		<Italian>Salva la partita</Italian>
 		<Spanish>Guarda la partida</Spanish>
+		<Hungarian>A játék elmentése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_EXIT</Tag>
@@ -2472,6 +2495,7 @@
 		<German>Beenden</German>
 		<Italian>Uscita</Italian>
 		<Spanish>Salir</Spanish>
+		<Hungarian>Kilépés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_EXIT_TEXT</Tag>
@@ -2480,6 +2504,7 @@
 		<German>Pitboss schließen</German>
 		<Italian>Termina il Pitboss</Italian>
 		<Spanish>Pone fin al Pitboss</Spanish>
+		<Hungarian>A Pitboss befejezése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_FILE</Tag>
@@ -2488,6 +2513,7 @@
 		<German>&amp;Datei</German>
 		<Italian>&amp;File</Italian>
 		<Spanish>&amp;Archivo</Spanish>
+		<Hungarian>&amp;fájl</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PING</Tag>
@@ -2504,6 +2530,7 @@
 		<German>Punkte</German>
 		<Italian>Punteggio</Italian>
 		<Spanish>Puntuación</Spanish>
+		<Hungarian>Pontszám</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_KICK</Tag>
@@ -2512,6 +2539,7 @@
 		<German>Ausschließen</German>
 		<Italian>Espelli</Italian>
 		<Spanish>Expulsar</Spanish>
+		<Hungarian>Kirúgás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SAVE_GAME</Tag>
@@ -2520,6 +2548,7 @@
 		<German>Spiel speichern</German>
 		<Italian>Salva partita</Italian>
 		<Spanish>Guardar partida</Spanish>
+		<Hungarian>Játék mentése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_KICK_VERIFY</Tag>
@@ -2528,6 +2557,7 @@
 		<German>Wollt Ihr %s1 wirklich vom Spiel ausschließen?</German>
 		<Italian>Sei sicuro di voler espellere %s1 dalla partita?</Italian>
 		<Spanish>¿Seguro que quieres expulsar a %s1 de la partida?</Spanish>
+		<Hungarian>%s1 kirúgása a játékból; biztos vagy benne?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_KICK_VERIFY_TITLE</Tag>
@@ -2536,6 +2566,7 @@
 		<German>Überprüfe ...</German>
 		<Italian>Controllo doppio...</Italian>
 		<Spanish>Comprobando...</Spanish>
+		<Hungarian>Hogy egyértelmű legyen...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_ABOUT_BOX_TITLE</Tag>
@@ -2544,6 +2575,7 @@
 		<German>Über Pitboss</German>
 		<Italian>Informazioni sul Pitboss</Italian>
 		<Spanish>Acerca de Pitboss</Spanish>
+		<Hungarian>A Pitboss névjegye</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SAVE_AS</Tag>
@@ -2552,6 +2584,7 @@
 		<German>Spiel speichern unter</German>
 		<Italian>Salva partita come</Italian>
 		<Spanish>Guardar partida como</Spanish>
+		<Hungarian>Mentés másként</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SAVE_AS_TEXT</Tag>
@@ -2560,6 +2593,7 @@
 		<German>Ziv-Spielstände</German>
 		<Italian>File di salvataggio di Civ</Italian>
 		<Spanish>Archivos de guardado de Civilization</Spanish>
+		<Hungarian>Civ mentési fájlok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_ERROR_SAVING</Tag>
@@ -2568,6 +2602,7 @@
 		<German>Interner Fehler beim Speichern des Spiels</German>
 		<Italian>Errore interno durante il salvataggio della partita</Italian>
 		<Spanish>Error interno al guardar la partida</Spanish>
+		<Hungarian>Belső hiba a játék mentése közben</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SAVE_ERROR</Tag>
@@ -2576,6 +2611,7 @@
 		<German>Speicherfehler</German>
 		<Italian>Errore di salvataggio</Italian>
 		<Spanish>Error de guardado</Spanish>
+		<Hungarian>Mentési hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SAVED</Tag>
@@ -2584,6 +2620,7 @@
 		<German>Gespeichert!</German>
 		<Italian>Salvataggio riuscito!</Italian>
 		<Spanish>Guardado</Spanish>
+		<Hungarian>Elmentve!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SAVE_SUCCESS</Tag>
@@ -2592,6 +2629,7 @@
 		<German>'%s1' erfolgreich gespeichert"</German>
 		<Italian>'%s1' è stato salvato con successo"</Italian>
 		<Spanish>Se ha conseguido guardar "%s1"</Spanish>
+		<Hungarian>'%s1' sikeresen elmentve</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_TITLE</Tag>
@@ -2601,6 +2639,7 @@
 		<Italian>Opzioni</Italian>
 		<Spanish>Opciones</Spanish>
 		<Russian>Настройки</Russian>
+		<Hungarian>Beállítások</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_GAME</Tag>
@@ -2610,6 +2649,7 @@
 		<Italian>Partita</Italian>
 		<Spanish>Juego</Spanish>
 		<Russian>Игра</Russian>
+		<Hungarian>Játék</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_GRAPHICS</Tag>
@@ -2619,6 +2659,7 @@
 		<Italian>Grafica</Italian>
 		<Spanish>Gráficos</Spanish>
 		<Russian>Графика</Russian>
+		<Hungarian>Grafika</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_AUDIO</Tag>
@@ -2628,6 +2669,7 @@
 		<Italian>Sonoro</Italian>
 		<Spanish>Sonido</Spanish>
 		<Russian>Звук</Russian>
+		<Hungarian>Hangok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_CLOCK</Tag>
@@ -2637,6 +2679,7 @@
 		<Italian>Orologio</Italian>
 		<Spanish>Reloj</Spanish>
 		<Russian>Часы</Russian>
+		<Hungarian>Óra</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_NEW_PROFILE</Tag>
@@ -2646,6 +2689,7 @@
 		<Italian>Crea un nuovo profilo</Italian>
 		<Spanish>Crear nuevo perfil</Spanish>
 		<Russian>Создать новый профиль</Russian>
+		<Hungarian>Új profil létrehozása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_DELETE_PROFILE</Tag>
@@ -2655,6 +2699,7 @@
 		<Italian>Elimina profilo</Italian>
 		<Spanish>Borrar perfil</Spanish>
 		<Russian>Удалить профиль</Russian>
+		<Hungarian>Profil törlése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_LOADED_PROFILE</Tag>
@@ -2664,6 +2709,7 @@
 		<Italian>%s1_Profile caricato!</Italian>
 		<Spanish>Se ha cargado "%s1_Profile"</Spanish>
 		<Russian>%s1_Profile загружен!</Russian>
+		<Hungarian>%s1_Profile betöltve!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_SAVED_PROFILE</Tag>
@@ -2673,6 +2719,7 @@
 		<Italian>%s1_Profile salvato!</Italian>
 		<Spanish>Se ha guardado "%s1_Profile"</Spanish>
 		<Russian>%s1_Profile сохранен!</Russian>
+		<Hungarian>%s1_Profile elmentve!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_DELETED_PROFILE</Tag>
@@ -2682,6 +2729,7 @@
 		<Italian>%s1_Profile eliminato!</Italian>
 		<Spanish>Se ha borrado "%s1_Profile"</Spanish>
 		<Russian>%s1_Profile удалён!</Russian>
+		<Hungarian>%s1_Profile törölve!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_LOAD_PROFILE_FAIL</Tag>
@@ -2690,6 +2738,7 @@
 		<German>Laden gescheitert. Möglicherweise passt die Profilversion nicht zum aktuellen System.</German>
 		<Italian>Caricamento fallito. La versione del profilo non corrisponde al sistema attuale.</Italian>
 		<Spanish>Fallo al cargar. Puede que la versión del perfil no se corresponda con el sistema actual.</Spanish>
+		<Hungarian>A betöltés sikertelen. Lehet, hogy a profil verziója nem passzol a jelenlegi rendszerhez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_SCREEN_RES</Tag>
@@ -2699,6 +2748,7 @@
 		<Italian>Risoluzione video</Italian>
 		<Spanish>Resolución de pantalla</Spanish>
 		<Russian>Разрешение экрана</Russian>
+		<Hungarian>Képernyőfelbontás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_ANTIALIAS</Tag>
@@ -2708,6 +2758,7 @@
 		<Italian>Multi Sample di Antialias</Italian>
 		<Spanish>Anti-Aliasing MultiSamples</Spanish>
 		<Russian>Сглаживание мульти-сэмплов</Russian>
+		<Hungarian>Élsimítás (Többlépcsős)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_MASTERVOLUME</Tag>
@@ -2717,6 +2768,7 @@
 		<Italian>Volume principale</Italian>
 		<Spanish>General</Spanish>
 		<Russian>Основная громкость</Russian>
+		<Hungarian>Fő Hangerő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_CUSTOM_MUSIC</Tag>
@@ -2726,6 +2778,7 @@
 		<Italian>Musica personalizzata</Italian>
 		<Spanish>Carpeta de música personalizada</Spanish>
 		<Russian>Выбрать папку с музыкой</Russian>
+		<Hungarian>Saját zenemappa</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_BROWSE</Tag>
@@ -2735,6 +2788,7 @@
 		<Italian>Esplora...</Italian>
 		<Spanish>Examinar...</Spanish>
 		<Russian>Смотреть...</Russian>
+		<Hungarian>Tallózás...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_RESET</Tag>
@@ -2744,6 +2798,7 @@
 		<Italian>Ripristina predefiniti</Italian>
 		<Spanish>Restablecer valores predeterminados</Spanish>
 		<Russian>Восстановить исходные настройки</Russian>
+		<Hungarian>Alapértékek visszaállítása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_SPEAKERS</Tag>
@@ -2753,6 +2808,7 @@
 		<Italian>Altoparlanti</Italian>
 		<Spanish>Altavoces</Spanish>
 		<Russian>Динамики</Russian>
+		<Hungarian>Hangszórók</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_CLOCK_ON</Tag>
@@ -2762,6 +2818,7 @@
 		<Italian>Orologio attivo</Italian>
 		<Spanish>Reloj activado</Spanish>
 		<Russian>Включить часы</Russian>
+		<Hungarian>Óra bekapcsolása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_24CLOCK</Tag>
@@ -2771,6 +2828,7 @@
 		<Italian>Orologio a 24 ore</Italian>
 		<Spanish>Reloj de 24 horas</Spanish>
 		<Russian>24 часовой формат</Russian>
+		<Hungarian>24 órás kijelzés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_ALARMON</Tag>
@@ -2780,6 +2838,7 @@
 		<Italian>Allarme attivo</Italian>
 		<Spanish>Alarma activada</Spanish>
 		<Russian>Включить сигнал</Russian>
+		<Hungarian>Riasztás bekapcsolása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_HOURS</Tag>
@@ -2789,6 +2848,7 @@
 		<Italian>Ore :</Italian>
 		<Spanish>Horas :</Spanish>
 		<Russian>Часы сигнала :</Russian>
+		<Hungarian>Riasztás, óra:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_MINS</Tag>
@@ -2798,6 +2858,7 @@
 		<Italian>Minuti :</Italian>
 		<Spanish>Minutos</Spanish>
 		<Russian>Минуты сигнала :</Russian>
+		<Hungarian>Riasztás, perc:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_NEED_TO_RESTART</Tag>
@@ -2807,6 +2868,7 @@
 		<Italian>Il programma deve essere riavviato prima che i cambiamenti abbiano effetto</Italian>
 		<Spanish>Hay que reiniciar el programa para que los cambios surtan efecto</Spanish>
 		<Russian>Чтобы изменения вступили в силу, необходимо перезапустить программу (не относится к смене языка).</Russian>
+		<Hungarian>A változtatások érvényesítéséhez újra kell indítani a játékot!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_CONSTRUCTED_WORK_ON_NEXT</Tag>
@@ -2816,6 +2878,7 @@
 		<Italian>Hai costruito l'edificio [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]. Cosa vuoi realizzare adesso?</Italian>
 		<Spanish>Habéis construido [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] en [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]. ¿Qué queréis hacer a continuación?</Spanish>
 		<Russian>[COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT][NEWLINE][NEWLINE]Горожане докладывают: "Строительство [COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] закончено!" Над чем будем работать дальше?</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT][NEWLINE][NEWLINE]A lakosaid jelentik, hogy "[COLOR_BUILDING_TEXT]%s1_BldgName[COLOR_REVERT] megépült!" Mi legyen a következő?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_RECOMMENDED</Tag>
@@ -2825,6 +2888,7 @@
 		<Italian>%s1_ProdName (%d2_NumTurns) [COLOR_HIGHLIGHT_TEXT]Consigliato[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Se recomienda crear:[COLOR_REVERT] %s1_ProdName (%d2_NumTurns [NUM2:turno:turnos])</Spanish>
 		<Russian>%s1_ProdName (%d2_NumTurns) [COLOR_HIGHLIGHT_TEXT]Рекомендовано[COLOR_REVERT]</Russian>
+		<Hungarian>%s1_ProdName (%d2_NumTurns) [COLOR_HIGHLIGHT_TEXT]Javasolt[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_GOLD_CITY_CAPTURE</Tag>
@@ -2834,6 +2898,7 @@
 		<Italian>Hai saccheggiato %d1_Num[ICON_GOLD] dalla conquista di [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!!! Vuoi mantenerla?</Italian>
 		<Spanish>Habéis saqueado %d1_Num[ICON_GOLD] con la captura de [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]. ¿Deseáis conservarla?</Spanish>
 		<Russian>Милорд! При захвате [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] мы награбили %d1_Num[ICON_GOLD]!!! Стоит ли нам оставить его себе?</Russian>
+		<Hungarian>Uram, %d1_Num[ICON_GOLD] Aranyat zsákmányoltál [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] elfoglalásából!!! Szeretnéd megtartani a várost?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_CITY_CAPTURE_KEEP</Tag>
@@ -2843,6 +2908,7 @@
 		<Italian>Hai conquistato [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]! Vuoi tenerla?</Italian>
 		<Spanish>Habéis capturado [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. ¿Deseáis conservarla?</Spanish>
 		<Russian>Милорд, мы захватили город [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]!!! Стоит ли нам оставить его себе?</Russian>
+		<Hungarian>Uram, elfoglaltad [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] települést! Megtartod?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_KEEP_CAPTURED_CITY</Tag>
@@ -2852,6 +2918,7 @@
 		<Italian>Sì! Instaura un nuovo governatore...</Italian>
 		<Spanish>Sí. Que tome posesión un nuevo gobernante.</Spanish>
 		<Russian>Да! Этот городишко нам еще пригодится.</Russian>
+		<Hungarian>Igen! Kinevezek egy új kormányzót.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_RAZE_CAPTURED_CITY</Tag>
@@ -2861,6 +2928,7 @@
 		<Italian>No! BRUCIAMO TUTTO!</Italian>
 		<Spanish>¡No! ¡REDUCIDLA A CENIZAS!</Spanish>
 		<Russian>Нет! Сожгите здесь все дотла!!!</Russian>
+		<Hungarian>Nem. ÉGJEN PORIG!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_RETURN_ALLIED_CITY</Tag>
@@ -2870,6 +2938,7 @@
 		<Italian>No, restituisci il controllo all'[COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT].</Italian>
 		<Spanish>No, devolvedle el control al [COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT].</Spanish>
 		<Russian>Нет, верните контроль над ним [COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT].</Russian>
+		<Hungarian>Nem, visszaadom [COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] tulajdonába.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_ALARM_TITLE</Tag>
@@ -2879,6 +2948,7 @@
 		<Italian>Allarme</Italian>
 		<Spanish>Alarma</Spanish>
 		<Russian>АЛЯРМА</Russian>
+		<Hungarian>Riasztás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_YES</Tag>
@@ -2888,6 +2958,7 @@
 		<Italian>Sì, che questa sia la mia decisione.</Italian>
 		<Spanish>Sí, que sea mi decisión.</Spanish>
 		<Russian>Да, это мой выбор.</Russian>
+		<Hungarian>Igen, ez a döntésem.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_NO</Tag>
@@ -2897,6 +2968,7 @@
 		<Italian>No, certo che no.</Italian>
 		<Spanish>No, por supuesto que no.</Spanish>
 		<Russian>Нет, я передумал.</Russian>
+		<Hungarian>Nem, természetesen nem.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_ENTER_LANDS_WAR</Tag>
@@ -2906,6 +2978,7 @@
 		<Italian>Entrando nel territorio [COLOR_HIGHLIGHT_TEXT]%s1_CivAdj[COLOR_REVERT] scatenerai una GUERRA! Sei sicuro?</Italian>
 		<Spanish>¡Entrar en las tierras de los [COLOR_HIGHLIGHT_TEXT]%s1:3_CivAdj[COLOR_REVERT] significará la GUERRA! ¿Seguro que eso es lo que queréis?</Spanish>
 		<Russian>Милорд, если вы отправите своих людей на территорию [COLOR_HIGHLIGHT_TEXT]%s1_CivAdj[COLOR_REVERT], вы начнете войну. Ваше безрассудство сделает многих женщин вдовами. Вы уверены, что нам это нужно?</Russian>
+		<Hungarian>Uram, ha az embereiddel [COLOR_HIGHLIGHT_TEXT]%s1_CivAdj[COLOR_REVERT] területre mész, háborút fogsz kirobbantani. Ostobaságod sok nőt özveggyé fog tenni. Úgy gondolod, hogy a támadásod erényes és igazságos?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_ENTER_WITH_OPEN_BORDERS</Tag>
@@ -2915,6 +2988,7 @@
 		<Italian>[SPACE](Puoi entrare pacificamente se decidi di siglare un accordo di diritto di passaggio.)</Italian>
 		<Spanish>[SPACE](Podéis entrar pacíficamente si firmáis un tratado de apertura de fronteras.)</Spanish>
 		<Russian>[SPACE](Вы можете войти мирным путем, если подпишете договор об открытых границах.)</Russian>
+		<Hungarian>[SPACE](Szabadon beléphetsz, ha Nyitott Határok Szerződést kötsz.)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_DOES_THIS_MEAN_WAR</Tag>
@@ -2924,6 +2998,7 @@
 		<Italian>Ciò vuol dire GUERRA? (contro [COLOR_HIGHLIGHT_TEXT]%s1_Team [COLOR_REVERT])</Italian>
 		<Spanish>¿Esto es la GUERRA? (contra [COLOR_HIGHLIGHT_TEXT]%s1_Team[COLOR_REVERT])</Spanish>
 		<Russian>Вы действительно хотите объявить ВОЙНУ [COLOR_HIGHLIGHT_TEXT]%s1_Team[COLOR_REVERT]?!</Russian>
+		<Hungarian>Ez azt jelenti, hogy HÁBORÚ?! ([COLOR_HIGHLIGHT_TEXT]%s1_Team[COLOR_REVERT] ellen)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_EXIT_TO_DESKTOP</Tag>
@@ -2933,6 +3008,7 @@
 		<Italian>Vai al desktop</Italian>
 		<Spanish>Salir al escritorio</Spanish>
 		<Russian>Выход в Windows</Russian>
+		<Hungarian>Kilépés az Asztalra</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_EXIT_TO_MAIN_MENU</Tag>
@@ -2942,6 +3018,7 @@
 		<Italian>Vai al menu principale</Italian>
 		<Spanish>Salir al menú principal</Spanish>
 		<Russian>Выход в Основное меню</Russian>
+		<Hungarian>Kilépés a Főmenübe</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_LOAD_GAME</Tag>
@@ -2951,6 +3028,7 @@
 		<Italian>Carica partita</Italian>
 		<Spanish>Cargar partida</Spanish>
 		<Russian>Загрузить игру</Russian>
+		<Hungarian>Játék betöltése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_SAVE_GAME</Tag>
@@ -2960,6 +3038,7 @@
 		<Italian>Salva partita</Italian>
 		<Spanish>Guardar partida</Spanish>
 		<Russian>Сохранить игру</Russian>
+		<Hungarian>Játék mentése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_OPTIONS</Tag>
