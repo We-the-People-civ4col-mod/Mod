@@ -4068,6 +4068,7 @@
 		<Italian>Directory</Italian>
 		<Spanish>Carpeta</Spanish>
 		<Russian>Папка</Russian>
+		<Hungarian>Mappa</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOADSAVE_FILE_NAME</Tag>
@@ -4077,6 +4078,7 @@
 		<Italian>Nome del file</Italian>
 		<Spanish>Nombre del archivo</Spanish>
 		<Russian>Имя файла</Russian>
+		<Hungarian>Fájlnév</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOADSAVE_SIZE</Tag>
@@ -4086,6 +4088,7 @@
 		<Italian>Dimensione</Italian>
 		<Spanish>Tamaño</Spanish>
 		<Russian>Размер</Russian>
+		<Hungarian>Méret</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOADSAVE_MODIFIED</Tag>
@@ -4095,6 +4098,7 @@
 		<Italian>Modificato</Italian>
 		<Spanish>Modificada</Spanish>
 		<Russian>Изменен</Russian>
+		<Hungarian>Változtatva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOADSAVE_CANCEL</Tag>
@@ -4104,6 +4108,7 @@
 		<Italian>Annulla</Italian>
 		<Spanish>Cancelar</Spanish>
 		<Russian>Отмена</Russian>
+		<Hungarian>Mégsem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOADSAVE_FILETYPE</Tag>
@@ -4113,6 +4118,7 @@
 		<Italian>Tipo di file</Italian>
 		<Spanish>Tipo de archivo</Spanish>
 		<Russian>Тип файла</Russian>
+		<Hungarian>Fájltípus</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_OK</Tag>
@@ -4122,6 +4128,7 @@
 		<Italian>OK</Italian>
 		<Spanish>Aceptar</Spanish>
 		<Russian>ОК</Russian>
+		<Hungarian>Rendben</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_GO_BACK</Tag>
@@ -4131,6 +4138,7 @@
 		<Italian>Torna indietro</Italian>
 		<Spanish>Volver</Spanish>
 		<Russian>Вернуться</Russian>
+		<Hungarian>Rendben</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_RANDOM</Tag>
@@ -4140,6 +4148,7 @@
 		<Italian>Casuale</Italian>
 		<Spanish>Al azar</Spanish>
 		<Russian>Случайно</Russian>
+		<Hungarian>Véletlenszerű</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_MULTIPLAYER_LAN</Tag>
@@ -4149,6 +4158,7 @@
 		<Italian>Partite in LAN</Italian>
 		<Spanish>Partidas en red local</Spanish>
 		<Russian>Игра по локальной сети</Russian>
+		<Hungarian>Játék helyi hálón (LAN)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_MULTIPLAYER_INTERNET_GAMES</Tag>
@@ -4167,6 +4177,7 @@
 		<Italian>Connessione diretta IP</Italian>
 		<Spanish>Conexión directa con IP</Spanish>
 		<Russian>Прямое IP-соединение</Russian>
+		<Hungarian>Játék az interneten</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PLAYER_NAME</Tag>
@@ -4176,6 +4187,7 @@
 		<Italian>Nome giocatore</Italian>
 		<Spanish>Nombre del jugador</Spanish>
 		<Russian>Имя игрока</Russian>
+		<Hungarian>Játékos neve</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_GAME_NAME</Tag>
@@ -4185,6 +4197,7 @@
 		<Italian>Nome della partita</Italian>
 		<Spanish>Nombre de la partida</Spanish>
 		<Russian>Название игры</Russian>
+		<Hungarian>Játék neve</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NETWORK_ADDRESS</Tag>
@@ -4194,6 +4207,7 @@
 		<Italian>Indirizzo di rete</Italian>
 		<Spanish>Dirección de red</Spanish>
 		<Russian>Сетевой адрес</Russian>
+		<Hungarian>Hálózati cím</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CONNECT</Tag>
@@ -4202,6 +4216,7 @@
 		<German>Verbinden</German>
 		<Italian>Connetti</Italian>
 		<Spanish>Conectar</Spanish>
+		<Hungarian>Kapcsolódás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_HOST</Tag>
@@ -4210,6 +4225,7 @@
 		<German>Host</German>
 		<Italian>Host</Italian>
 		<Spanish>Anfitrión</Spanish>
+		<Hungarian>Kiszolgáló</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_JOIN_GAME</Tag>
@@ -4219,6 +4235,7 @@
 		<Italian>Partecipa alla partita</Italian>
 		<Spanish>Unirse a partida</Spanish>
 		<Russian>Присоединиться к игре</Russian>
+		<Hungarian>Csatlakozás játékhoz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CREATE_A_GAME</Tag>
@@ -4228,6 +4245,7 @@
 		<Italian>Crea una partita!</Italian>
 		<Spanish>Crear una partida</Spanish>
 		<Russian>Создать игру!</Russian>
+		<Hungarian>Játék létrehozása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_JOIN</Tag>
@@ -4237,6 +4255,7 @@
 		<Italian>Partecipa</Italian>
 		<Spanish>Unirse</Spanish>
 		<Russian>Присоединиться</Russian>
+		<Hungarian>Csatlakozás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NEW_GAME</Tag>
@@ -4246,6 +4265,7 @@
 		<Italian>Nuova partita</Italian>
 		<Spanish>Nueva partida</Spanish>
 		<Russian>Новая игра</Russian>
+		<Hungarian>Új játék</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NEW_SCENARIO</Tag>
@@ -4255,6 +4275,7 @@
 		<Italian>Nuovo scenario</Italian>
 		<Spanish>Nuevo escenario</Spanish>
 		<Russian>Новый Сценарий</Russian>
+		<Hungarian>Új szcenárió</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_REFRESH_LIST</Tag>
@@ -4264,6 +4285,7 @@
 		<Italian>Aggiorna elenco</Italian>
 		<Spanish>Actualizar lista</Spanish>
 		<Russian>Обновить список</Russian>
+		<Hungarian>Lista frissítése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_HOST_PING</Tag>
@@ -4272,6 +4294,7 @@
 		<German>Host anpingen</German>
 		<Italian>Ping dell'host</Italian>
 		<Spanish>Señalar (anfitrión)</Spanish>
+		<Hungarian>Kiszolgáló pingelése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPY_LOGIN</Tag>
@@ -4280,6 +4303,7 @@
 		<German>Login</German>
 		<Italian>Login</Italian>
 		<Spanish>Iniciar sesión</Spanish>
+		<Hungarian>Bejelentkezés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPY_NEW_ACCOUNT</Tag>
@@ -4297,6 +4321,7 @@
 		<German>Account anlegen</German>
 		<Italian>Crea account</Italian>
 		<Spanish>Crear cuenta</Spanish>
+		<Hungarian>Új felhasználói fiók létrehozása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPY_EMAIL_ADDRESS</Tag>
@@ -4305,6 +4330,7 @@
 		<German>E-Mail-Adresse</German>
 		<Italian>Indirizzo e-mail</Italian>
 		<Spanish>Dirección de e-mail</Spanish>
+		<Hungarian>E-mail cím</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PASSWORD_TITLE</Tag>
@@ -4313,6 +4339,7 @@
 		<German>Gebt Euer Kennwort ein</German>
 		<Italian>Inserisci la tua password</Italian>
 		<Spanish>Introducir la contraseña</Spanish>
+		<Hungarian>Írd be a jelszavadat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PASSWORD</Tag>
@@ -4321,6 +4348,7 @@
 		<German>Kennwort</German>
 		<Italian>Password</Italian>
 		<Spanish>Contraseña</Spanish>
+		<Hungarian>Jelszó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_REPEAT_PASSWORD</Tag>
@@ -4329,6 +4357,7 @@
 		<German>Wiederholen</German>
 		<Italian>Ripeti</Italian>
 		<Spanish>Repetir</Spanish>
+		<Hungarian>Jelszó újra</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPY_LOGIN_TITLE</Tag>
@@ -4337,6 +4366,7 @@
 		<German>Login mit bestehendem Account</German>
 		<Italian>Login con un account già esistente</Italian>
 		<Spanish>Identificarse con una cuenta existente</Spanish>
+		<Hungarian>Belépés létező fiókkal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PROTECT_CIV</Tag>
@@ -4345,6 +4375,7 @@
 		<German>Schützt Eure Ziv!</German>
 		<Italian>Proteggi la tua civiltà!</Italian>
 		<Spanish>¡Protege tu civilización!</Spanish>
+		<Hungarian>Ez a Civ a tiéd, védd meg!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_ABOUT_THIS_BUILD</Tag>
@@ -4354,6 +4385,7 @@
 		<Italian>Informazioni su questa build</Italian>
 		<Spanish>Acerca de esta versión</Spanish>
 		<Russian>Об этой сборке</Russian>
+		<Hungarian>Erről a verzióról</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SAVE_VERSION</Tag>
@@ -4362,6 +4394,7 @@
 		<German>Spielstandversion :</German>
 		<Italian>Versione del salvataggio :</Italian>
 		<Spanish>Guardar versión :</Spanish>
+		<Hungarian>Mentés verziója:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_BUILD_VERSION</Tag>
@@ -4371,6 +4404,7 @@
 		<Italian>Versione della build :</Italian>
 		<Spanish>Versión de la build :</Spanish>
 		<Russian>Версия сборки</Russian>
+		<Hungarian>Verzió száma :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_BUILD_DATE</Tag>
@@ -4379,6 +4413,7 @@
 		<German>Versionsdatum :</German>
 		<Italian>Data della build :</Italian>
 		<Spanish>Fecha de la build :</Spanish>
+		<Hungarian>Verzió dátuma :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_MOD_NAME</Tag>
@@ -4388,6 +4423,7 @@
 		<Italian>Nome del mod :</Italian>
 		<Spanish>Nombre del mod :</Spanish>
 		<Russian>Имя модификации</Russian>
+		<Hungarian>Mod neve:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_ERROR_TITLE</Tag>
@@ -4397,6 +4433,7 @@
 		<Italian>ERRORE DI SISTEMA</Italian>
 		<Spanish>ERROR DEL SISTEMA</Spanish>
 		<Russian>СИСТЕМНЫЙ ЕРРОР</Russian>
+		<Hungarian>RENDSZERHIBA</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_ERROR_GAME_SETUP_FAILED</Tag>
@@ -4405,6 +4442,7 @@
 		<German>Spielinitialisierung fehlgeschlagen!</German>
 		<Italian>Inizializzazione dell'impostazione della partita fallita!</Italian>
 		<Spanish>No se ha podido iniciar la configuración de la partida.</Spanish>
+		<Hungarian>A játékbeállítás inicializálása sikertelen!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_ERROR_LOAD_SETUP_FAILED</Tag>
@@ -4413,6 +4451,7 @@
 		<German>Laden des Spielsetups fehlgeschlagen!</German>
 		<Italian>Caricamento delle informazioni delle impostazioni fallito!</Italian>
 		<Spanish>No se ha podido cargar la información de configuración.</Spanish>
+		<Hungarian>A beállítási információk betöltése sikertelen!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_ERROR_PASSWORD_MISMATCH</Tag>
@@ -4421,6 +4460,7 @@
 		<German>Die Kennwörter müssen übereinstimmen!</German>
 		<Italian>Le password devono essere uguali!</Italian>
 		<Spanish>Las contraseñas tienen que coincidir.</Spanish>
+		<Hungarian>A két jelszónak egyeznie kell!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_DEAL</Tag>
@@ -4429,6 +4469,7 @@
 		<German>%s1 übergibt %s2 an %s3 und erhält dafür %s4</German>
 		<Italian>%s1 dà %s2 a %s3 per %s4</Italian>
 		<Spanish>%s1 le da %s2 a %s3 a cambio de %s4</Spanish>
+		<Hungarian>Üzlet! %s1 eladott %s3 részére %s2t- %s4-ért</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_DEAL_ONESIDED</Tag>
@@ -4437,6 +4478,7 @@
 		<German>%s1 übergibt %s2 an %s3</German>
 		<Italian>%s1 dà %s2 a %s3</Italian>
 		<Spanish>%s1 le da %s2 a %s3</Spanish>
+		<Hungarian>Átadás! %s1 átadott %s3 részére %s2-t</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_DEAL_CANCEL</Tag>
@@ -4446,6 +4488,7 @@
 		<Italian>Affare annullato</Italian>
 		<Spanish>Trato cancelado</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]Сделка отменена [COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]Üzlet megszűntetve [COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_OUR_DEAL</Tag>
@@ -4455,6 +4498,7 @@
 		<Italian>[COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] a [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] per [COLOR_SELECTED_TEXT]%s3[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] a [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] a cambio de [COLOR_SELECTED_TEXT]%s3[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] с [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] за [COLOR_SELECTED_TEXT]%s3[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]-t [COLOR_SELECTED_TEXT]%s3[COLOR_REVERT]-ért</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_DEAL_ONESIDED_OURS</Tag>
@@ -4463,6 +4507,7 @@
 		<German>%s1 an %s2</German>
 		<Italian>%s1 a %s2</Italian>
 		<Spanish>%s1 a %s2</Spanish>
+		<Hungarian>%s1 %s2 részére</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_DEAL_ONESIDED_THEIRS</Tag>
@@ -4471,6 +4516,7 @@
 		<German>%s1 von %s2</German>
 		<Italian>%s1 da %s2</Italian>
 		<Spanish>%s1 de %s2</Spanish>
+		<Hungarian>%s1 %s2 részéről</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_DEAL_NO_CANCEL</Tag>
@@ -4480,6 +4526,7 @@
 		<Italian>Questo affare può essere annullato tra %d1 [NUM1:turno:turni]</Italian>
 		<Spanish>Este trato puede cancelarse en %d1 [NUM1:turno:turnos]</Spanish>
 		<Russian>Эта сделка может быть отменена через %d1 [NUM1:ход:ходов]</Russian>
+		<Hungarian>Ezt az üzletet %d1 kör múlva lehet megszűntetni</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_PROD_DOMAIN</Tag>
@@ -4488,6 +4535,7 @@
 		<German>[ICON_BULLET]%D1%%%F3_Icon für %s2_domain</German>
 		<Italian>[ICON_BULLET]%D1%%%F3_Icon per %s2_domain</Italian>
 		<Spanish>[ICON_BULLET]%D1%% a la %F3_Icon de %s2_domain</Spanish>
+		<Hungarian>[ICON_BULLET]%D1%%%F3_Icon %s2_domain számára</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_PROD_MILITARY</Tag>
@@ -4496,6 +4544,7 @@
 		<German>[ICON_BULLET]%D1%%%F2_Icon für Militäreinheiten</German>
 		<Italian>[ICON_BULLET]%D1%%%F2_Icon per le unità militari</Italian>
 		<Spanish>[ICON_BULLET]%D1%% a la %F2_Icon de unidades militares</Spanish>
+		<Hungarian>[ICON_BULLET]%D1%%%F2_Icon katonai egységek számára</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_YIELD_BUILDINGS</Tag>
@@ -4505,6 +4554,7 @@
 		<Italian>[ICON_BULLET]%D1%%%F2[TAB]dagli edifici</Italian>
 		<Spanish>[ICON_BULLET]%D1%%%F2[TAB]por edificios</Spanish>
 		<Russian>[ICON_BULLET]%D1%%%F2[TAB]от строений</Russian>
+		<Hungarian>[ICON_BULLET]%D1%%%F2[TAB]épületekből</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_YIELD_CIVICS</Tag>
@@ -4513,6 +4563,7 @@
 		<German>[ICON_BULLET]%D1%%%F2[TAB]durch Staatsformen</German>
 		<Italian>[ICON_BULLET]%D1%%%F2[TAB]dalle forme di governo</Italian>
 		<Spanish>[ICON_BULLET]%D1%%%F2[TAB]por principios</Spanish>
+		<Hungarian>[ICON_BULLET]%D1%%%F2[TAB]Államformákból</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_YIELD_CAPITAL</Tag>
@@ -4521,6 +4572,7 @@
 		<German>[ICON_BULLET]%D1%%%F2[TAB][TAB]für Hauptstadt</German>
 		<Italian>[ICON_BULLET]%D1%%%F2[TAB][TAB]dalla capitale</Italian>
 		<Spanish>[ICON_BULLET]%D1%%%F2[TAB][TAB]por capital</Spanish>
+		<Hungarian>[ICON_BULLET]%D1%%%F2[TAB][TAB]a Fővárosnak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_BUILDING_YIELD</Tag>
@@ -4530,6 +4582,7 @@
 		<Italian>[ICON_BULLET]%d1%F2[TAB]dagli edifici</Italian>
 		<Spanish>[ICON_BULLET]%d1%F2[TAB]por edificios</Spanish>
 		<Russian>[ICON_BULLET]%d1%F2[TAB]от строений</Russian>
+		<Hungarian>[ICON_BULLET]%d1%F2[TAB]Épületekből</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_PROD_OVERFLOW</Tag>
@@ -4547,6 +4600,7 @@
 		<German>Ihr seid am Zug!</German>
 		<Italian>È iniziato il tuo turno!</Italian>
 		<Spanish>Ha empezado vuestro turno</Spanish>
+		<Hungarian>A köröd elkezdődött!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CTRL_SELECT</Tag>
@@ -4556,6 +4610,7 @@
 		<Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per selezionare %s1)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para seleccionar [NUM1:todos los:todas las:todos los:todas las] %s1:2)</Spanish>
 		<Russian>([COLOR:140:255:40:255]CTRL[COLOR_REVERT] чтобы выделить все %s1)</Russian>
+		<Hungarian>(Minden %s1 kiválasztása: [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT])</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ALT_SELECT</Tag>
@@ -4565,6 +4620,7 @@
 		<Italian>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] per selezionare tutte le unità)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] para seleccionar todas las unidades)</Spanish>
 		<Russian>([COLOR:140:255:40:255]ALT[COLOR_REVERT] для выбора всех юнитов)</Russian>
+		<Hungarian>(Minden egység kiválasztása: [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT])</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CTRL_SHIFT</Tag>
@@ -4573,6 +4629,7 @@
 		<German>([COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] zum Durchschalten je %d1 [NUM1:Einheit:Einheiten])</German>
 		<Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per spostarsi di %d1 unità</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para cambiar %d1 [NUM1:unidad:unidades])</Spanish>
+		<Hungarian>(Léptetés %d1 egységgel: [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT])</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CTRL_TRADE</Tag>
@@ -4581,6 +4638,7 @@
 		<German>([COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] für Verhandlungstisch)</German>
 		<Italian>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] per la tabella commerciale)</Italian>
 		<Spanish>([COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] para ir a la tabla de intercambios)</Spanish>
+		<Hungarian>(Kereskedelmi tábla: [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT])</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_HOT_SEAT</Tag>
