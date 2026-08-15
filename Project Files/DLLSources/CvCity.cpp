@@ -11571,6 +11571,7 @@ namespace
 	const int NATIVE_TEACH_SCAN_RANGE = 2;
 	const int NATIVE_TEACH_BONUS_SCORE = 10000;
 	const int NATIVE_TEACH_FEATURE_SCORE = 1000;
+	const int NATIVE_TEACH_LARGE_RIVER_SCORE = 1000;
 
 	void stripPrefix(CvString& szText, const char* szPrefix)
 	{
@@ -11729,6 +11730,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			int iYieldAmount = 0;
 			int iFeatureMatches = 0;
 			int iBonusMatches = 0;
+			int iLargeRiverMatches = 0;
 
 			LOOP_ADJACENT_PLOTS(getX_INLINE(), getY_INLINE(), NATIVE_TEACH_SCAN_RANGE)
 			{
@@ -11758,6 +11760,11 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 					++iFeatureMatches;
 				}
 
+				if (kProfession.isWater() && eWantedYield == YIELD_FOOD && pLoopPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)
+				{
+					++iLargeRiverMatches;
+				}
+
 				const BonusTypes eBonus = pLoopPlot->getBonusType();
 				if (eBonus == NO_BONUS)
 				{
@@ -11774,12 +11781,12 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 				}
 			}
 
-			if (iYieldAmount <= 0 && iFeatureMatches <= 0 && iBonusMatches <= 0)
+			if (iYieldAmount <= 0 && iFeatureMatches <= 0 && iBonusMatches <= 0 && iLargeRiverMatches <= 0)
 			{
 				continue;
 			}
 
-			const int iProfessionValue = (iYieldAmount + iFeatureMatches * NATIVE_TEACH_FEATURE_SCORE + iBonusMatches * NATIVE_TEACH_BONUS_SCORE) * iWeight;
+			const int iProfessionValue = (iYieldAmount + iFeatureMatches * NATIVE_TEACH_FEATURE_SCORE + iLargeRiverMatches * NATIVE_TEACH_LARGE_RIVER_SCORE + iBonusMatches * NATIVE_TEACH_BONUS_SCORE) * iWeight;
 			if (iProfessionValue > iBestProfessionValue)
 			{
 				iBestProfessionValue = iProfessionValue;
