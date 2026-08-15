@@ -5259,6 +5259,7 @@
 		<Italian>Qual è il grande piano?</Italian>
 		<Spanish>¿Cuál es la visión de conjunto?</Spanish>
 		<Russian>Показать всех кандидатов</Russian>
+		<Hungarian>Tulajdonképpen miről is van szó?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMAIL_SENT</Tag>
@@ -5267,6 +5268,7 @@
 		<German>E-Mail erfolgreich an %s1 gesendet.</German>
 		<Italian>E-mail a %s1 inviata con successo.</Italian>
 		<Spanish>Se ha enviado sin problemas el e-mail a %s1.</Spanish>
+		<Hungarian>%s1 számára az e-mail sikeresen elküldve.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMAIL_NOT_SENT</Tag>
@@ -5275,6 +5277,7 @@
 		<German>E-Mail-Versand fehlgeschlagen[NEWLINE]SMTP-Host : %s1[NEWLINE]An : %s2[NEWLINE]Von : %s3</German>
 		<Italian>Invio dell'e-mail fallito.[NEWLINE]Host SMTP: %s1[NEWLINE]A: %s2[NEWLINE]Da: %s3</Italian>
 		<Spanish>No se ha conseguido enviar el e-mail.[NEWLINE]Anfitrión SMTP: %s1[NEWLINE]Para: %s2[NEWLINE]De: %s3</Spanish>
+		<Hungarian>E-mail küldése sikertelen.[NEWLINE]SMTP kiszolgáló : %s1[NEWLINE]Címzett : %s2[NEWLINE]Feladó : %s3</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_VICTORIES</Tag>
@@ -5284,6 +5287,7 @@
 		<Italian>Vittorie</Italian>
 		<Spanish>Victorias</Spanish>
 		<Russian>Условия победы</Russian>
+		<Hungarian>Győzelmek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VISIT_GAMESPYID</Tag>
@@ -5292,6 +5296,7 @@
 		<German>Besuchen Sie www.gamespyid.com, um Ihren Account zu verwalten.</German>
 		<Italian>Mostra informazioni dettagliate sul mondo di gioco (www.gamespyid.com).</Italian>
 		<Spanish>Visita www.gamespyid.com para gestionar tu cuenta.</Spanish>
+		<Hungarian>A felhasználói fiókod adminisztrálásához látogasd meg a www.gamespyid.com címet!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SETTINGS_DIFFICULTY</Tag>
@@ -5301,6 +5306,7 @@
 		<Italian>Difficoltà %s1</Italian>
 		<Spanish>Dificultad : %s1</Spanish>
 		<Russian>Сложность : %s1</Russian>
+		<Hungarian>Nehézségi Szint: %s1</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SETTINGS_CLIMATE</Tag>
@@ -5310,6 +5316,7 @@
 		<Italian>Clima %s1</Italian>
 		<Spanish>Clima : %s1</Spanish>
 		<Russian>%s1 климат</Russian>
+		<Hungarian>Éghajlat : %s1</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HOF_SCREEN_SIZE</Tag>
@@ -5319,6 +5326,7 @@
 		<Italian>Dimensione</Italian>
 		<Spanish>Tamaño</Spanish>
 		<Russian>Размер</Russian>
+		<Hungarian>Méret</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SETTINGS_SEA_LEVEL</Tag>
@@ -5328,6 +5336,7 @@
 		<Italian>Livello del mare %s1</Italian>
 		<Spanish>Nivel del mar : %s1</Spanish>
 		<Russian>%s1 уровень моря</Russian>
+		<Hungarian>Tenger Aránya: %s1</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SETTINGS_STARTING_ERA</Tag>
@@ -5337,6 +5346,7 @@
 		<Italian>Era iniziale %s1</Italian>
 		<Spanish>Época de inicio : %s1</Spanish>
 		<Russian>%s1 начальная эра</Russian>
+		<Hungarian>Kezdő Korszak : %s1</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HOF_SCREEN_STARTING_ERA</Tag>
@@ -5345,6 +5355,7 @@
 		<German>Startzeitalter</German>
 		<Italian>Iniziale</Italian>
 		<Spanish>Inicio</Spanish>
+		<Hungarian>Kezdés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SETTINGS_GAME_SPEED</Tag>
@@ -5354,6 +5365,7 @@
 		<Italian>Velocità di gioco %s1</Italian>
 		<Spanish>Velocidad de juego : %s1</Spanish>
 		<Russian>%s1 скорость игры</Russian>
+		<Hungarian>Játéksebesség : %s1</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HOF_SCREEN_GAME_SPEED</Tag>
@@ -5363,6 +5375,7 @@
 		<Italian>Velocità</Italian>
 		<Spanish>Velocidad</Spanish>
 		<Russian>Скорость игры</Russian>
+		<Hungarian>Sebesség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RIVALS_MET</Tag>
@@ -5372,6 +5385,7 @@
 		<Italian>Rivali incontrati</Italian>
 		<Spanish>Rivales encontrados</Spanish>
 		<Russian>Встреченные соперники</Russian>
+		<Hungarian>Megismert riválisok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALL_LEADERS</Tag>
@@ -5381,6 +5395,7 @@
 		<Italian>Tutti i leader</Italian>
 		<Spanish>Todos los líderes</Spanish>
 		<Russian>Все лидеры</Russian>
+		<Hungarian>Minden Vezető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALL_DIFFICULTIES</Tag>
@@ -5390,6 +5405,7 @@
 		<Italian>Tutte le difficoltà</Italian>
 		<Spanish>Todas las dificultades</Spanish>
 		<Russian>Все сложности</Russian>
+		<Hungarian>Minden Nehézségi Szint</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALL_ERAS</Tag>
@@ -5399,6 +5415,7 @@
 		<Italian>Tutte le ere iniziali</Italian>
 		<Spanish>Todas las épocas</Spanish>
 		<Russian>Все начальные эпохи</Russian>
+		<Hungarian>Minden Kezdő Korszak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALL_GAME_SPEEDS</Tag>
@@ -5408,6 +5425,7 @@
 		<Italian>Tutte le velocità di gioco</Italian>
 		<Spanish>Velocidad de juego</Spanish>
 		<Russian>Все скорости игры</Russian>
+		<Hungarian>Minden Játéksebesség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALL_VICTORIES</Tag>
@@ -5417,6 +5435,7 @@
 		<Italian>Tutte le vittorie</Italian>
 		<Spanish>Todas las victorias</Spanish>
 		<Russian>Все победы</Russian>
+		<Hungarian>Minden Győzelem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ATTITUDE_TOWARDS</Tag>
@@ -5426,6 +5445,7 @@
 		<Italian>%s1_attitude nei confronti di %s2_leader</Italian>
 		<Spanish>Actitud hacia %s2_leader: %s1_attitude</Spanish>
 		<Russian>%s1_attitude по отношению к %s2_leader</Russian>
+		<Hungarian>%s1_attitude %s2_leader irányába</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CIV_DESCRIPTION</Tag>
@@ -5435,6 +5455,7 @@
 		<Italian>%s1_leader della civiltà %s2:2_civ_short_name</Italian>
 		<Spanish>%s1_leader de %s2_civ_short_name</Spanish>
 		<Russian>%s1_leader %s2_civ_short_name</Russian>
+		<Hungarian>%s1_leader, %s2_civ_short_name</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_CULTURE</Tag>
@@ -5444,6 +5465,7 @@
 		<Italian>Attiva/disattiva la visualizzazione della cultura</Italian>
 		<Spanish>Activa el visor de cultura</Spanish>
 		<Russian>Переключение отображения культуры</Russian>
+		<Hungarian>Kultúra megjelenítése ki/be</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_STRATEGY</Tag>
@@ -5452,6 +5474,7 @@
 		<German>Linien und Textsymbole erstellen und bearbeiten</German>
 		<Italian>Mostra il filtro strategico</Italian>
 		<Spanish>Muestra la capa de estrategia</Spanish>
+		<Hungarian>Stratégiai réteg megjelenítése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_UNITS_ALLMILITARY</Tag>
@@ -5460,6 +5483,7 @@
 		<German>Alle Einheiten außer neutralen</German>
 		<Italian>Tutti gli eserciti</Italian>
 		<Spanish>Todos los ejércitos</Spanish>
+		<Hungarian>Minden katonai egység kivéve semlegesek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_UNITS_TEAMMILITARY</Tag>
@@ -5469,6 +5493,7 @@
 		<Italian>Eserciti della squadra</Italian>
 		<Spanish>Ejércitos del equipo</Spanish>
 		<Russian>Ваши военные юниты</Russian>
+		<Hungarian>Saját csapat katonai egységei</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_UNITS_ENEMYMILITARY</Tag>
@@ -5478,6 +5503,7 @@
 		<Italian>Eserciti nemici</Italian>
 		<Spanish>Ejércitos enemigos</Spanish>
 		<Russian>Военные юниты противника</Russian>
+		<Hungarian>Ellenséges katonai egységek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_UNITS_DOMESTICS</Tag>
@@ -5486,6 +5512,7 @@
 		<German>Alle Einheiten</German>
 		<Italian>Unità locali</Italian>
 		<Spanish>Unidades nacionales</Spanish>
+		<Hungarian>Belföldiek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_STRATEGY_VIEW</Tag>
@@ -5494,6 +5521,7 @@
 		<German>Ansicht</German>
 		<Italian>Visuale</Italian>
 		<Spanish>Vista</Spanish>
+		<Hungarian>Megtekintés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_STRATEGY_NEW_LINE</Tag>
@@ -5503,6 +5531,7 @@
 		<Italian>Nuova linea</Italian>
 		<Spanish>Nueva línea</Spanish>
 		<Russian>Новая линия</Russian>
+		<Hungarian>Új vonal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_STRATEGY_NEW_SIGN</Tag>
@@ -5511,6 +5540,7 @@
 		<German>Neues Textsymbol</German>
 		<Italian>Nuova nota</Italian>
 		<Spanish>Nueva señal</Spanish>
+		<Hungarian>Új címke</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_STRATEGY_DELETE</Tag>
@@ -5520,6 +5550,7 @@
 		<Italian>Elimina</Italian>
 		<Spanish>Borrar</Spanish>
 		<Russian>Удалить</Russian>
+		<Hungarian>Törlés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_SCREEN_STATISTICS_TITLE</Tag>
@@ -5529,6 +5560,7 @@
 		<Italian>Statistiche</Italian>
 		<Spanish>Estadísticas</Spanish>
 		<Russian>Статистика</Russian>
+		<Hungarian>Statisztikák</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_SCREEN_TIME_PLAYED</Tag>
@@ -5538,6 +5570,7 @@
 		<Italian>Tempo di gioco</Italian>
 		<Spanish>Tiempo jugado</Spanish>
 		<Russian>Время игры</Russian>
+		<Hungarian>Játékidő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_SCREEN_KILLED</Tag>
@@ -5547,6 +5580,7 @@
 		<Italian>Uccisi</Italian>
 		<Spanish>Bajas</Spanish>
 		<Russian>Убито</Russian>
+		<Hungarian>Játékidő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_SCREEN_LOST</Tag>
@@ -5556,6 +5590,7 @@
 		<Italian>Persi</Italian>
 		<Spanish>Pérdidas</Spanish>
 		<Russian>Потеряно</Russian>
+		<Hungarian>Elvesztett</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_SCREEN_BUILT</Tag>
@@ -5565,6 +5600,7 @@
 		<Italian>Realizzati</Italian>
 		<Spanish>Construido</Spanish>
 		<Russian>Построено</Russian>
+		<Hungarian>Épített</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_SCREEN_PROFILES</Tag>
@@ -5582,6 +5618,7 @@
 		<German>Profilname</German>
 		<Italian>Nome profilo</Italian>
 		<Spanish>Nombre del perfil</Spanish>
+		<Hungarian>Profilok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFILES_SELECT_MUSIC_PATH</Tag>
@@ -5591,6 +5628,7 @@
 		<Italian>Scegli la cartella contenente la musica desiderata</Italian>
 		<Spanish>Escoge una carpeta desde donde reproducir la música</Spanish>
 		<Russian>Выберите папку, из которой будет воспроизводиться музыка</Russian>
+		<Hungarian>Válaszd ki a zenét tartalmazó mappát</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_VOICE</Tag>
@@ -5600,6 +5638,7 @@
 		<Italian>Attiva chat vocale</Italian>
 		<Spanish>Activar conversaciones de voz</Spanish>
 		<Russian>Активировать голосовую связь</Russian>
+		<Hungarian>Hangüzenetek Engedélyezése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_CAPTURE_DEVICE</Tag>
@@ -5609,6 +5648,7 @@
 		<Italian>Periferica di registrazione vocale</Italian>
 		<Spanish>Dispositivo de captura de la voz</Spanish>
 		<Russian>Устройство захвата голоса</Russian>
+		<Hungarian>Hangrögzítő eszköz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_PLAYBACK_DEVICE</Tag>
@@ -5618,6 +5658,7 @@
 		<Italian>Periferica di riproduzione vocale</Italian>
 		<Spanish>Dispositivo de reproducción de la voz</Spanish>
 		<Russian>Устройство воспроизведения голоса</Russian>
+		<Hungarian>Hangvisszajátszó eszköz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_CAPTUREVOLUME</Tag>
@@ -5627,6 +5668,7 @@
 		<Italian>Volume di registrazione vocale</Italian>
 		<Spanish>Volumen de captura de la voz</Spanish>
 		<Russian>Громкость голосового захвата</Russian>
+		<Hungarian>Hangrögzítés jelerőssége</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NORMALIZED_SCORE</Tag>
@@ -5635,6 +5677,7 @@
 		<German>Normalisiertes</German>
 		<Italian>Normalizzato</Italian>
 		<Spanish>Normalizada</Spanish>
+		<Hungarian>Normalizált</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAME_SCORE</Tag>
@@ -5644,6 +5687,7 @@
 		<Italian>Punteggio</Italian>
 		<Spanish>Puntuación</Spanish>
 		<Russian>Очки</Russian>
+		<Hungarian>Pontszám</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_STOP_SLIDESHOW</Tag>
@@ -5652,6 +5696,7 @@
 		<German>Bildershow anhalten</German>
 		<Italian>Blocca le immagini</Italian>
 		<Spanish>Saltar</Spanish>
+		<Hungarian>Játék Elindítása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POWER</Tag>
@@ -5661,6 +5706,7 @@
 		<Italian>Energia</Italian>
 		<Spanish>Energía</Spanish>
 		<Russian>Сила</Russian>
+		<Hungarian>Hatalom</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SIDS_TIPS</Tag>
@@ -5670,6 +5716,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Il suggerimento di Sid: [COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]Consejo de Sid: [COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Подсказки Сида: [COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Sid Tippjei: [COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HALL_OF_FAME_SORT_BY_NORMALIZED_SCORE</Tag>
@@ -5678,6 +5725,7 @@
 		<German>Endpunktestand</German>
 		<Italian>Punteggio normalizzato</Italian>
 		<Spanish>Puntuación normalizada</Spanish>
+		<Hungarian>Normalizált Pontszám</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HALL_OF_FAME_SORT_BY_GAME_SCORE</Tag>
@@ -5686,6 +5734,7 @@
 		<German>Spiel-Punktestand</German>
 		<Italian>Punteggio in partita</Italian>
 		<Spanish>Puntuación en el juego</Spanish>
+		<Hungarian>Játékbeli Pontszám</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HALL_OF_FAME_SORT_BY_DATE</Tag>
@@ -5694,6 +5743,7 @@
 		<German>Enddatum</German>
 		<Italian>Conclusione</Italian>
 		<Spanish>Término</Spanish>
+		<Hungarian>Befejezés Dátuma</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PBEM_ENTER_PASSWORD</Tag>
@@ -5702,6 +5752,7 @@
 		<German>Kennwort für %s1_leader eingeben</German>
 		<Italian>Inserisci una password per %s1_leader</Italian>
 		<Spanish>Introduce la contraseña de %s1_leader</Spanish>
+		<Hungarian>Add meg %s1_leader jelszavát</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PBEM_NEXT_PLAYER</Tag>
@@ -5711,6 +5762,7 @@
 		<Italian>%s1_leader, è il tuo turno!</Italian>
 		<Spanish>¡Es vuestro turno, %s1_leader!</Spanish>
 		<Russian>%s1_leader, Ваш ход!</Russian>
+		<Hungarian>%s1_leader, a te köröd következik!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SHOW_ALL_PLAYERS</Tag>
@@ -5720,6 +5772,7 @@
 		<Italian>Mostra tutti i giocatori</Italian>
 		<Spanish>Mostrar a todos</Spanish>
 		<Russian>Показать всех игроков</Russian>
+		<Hungarian>Minden játékos megjelenítése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LEADERS_TITLE</Tag>
@@ -5729,6 +5782,7 @@
 		<Italian>LEADER</Italian>
 		<Spanish>LÍDERES</Spanish>
 		<Russian>ЛИДЕРЫ</Russian>
+		<Hungarian>VEZETŐK</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SELECT_WORLD_SETUP</Tag>
@@ -5738,6 +5792,7 @@
 		<Italian>DIMENSIONI DEL MONDO</Italian>
 		<Spanish>TAMAÑO DEL MUNDO</Spanish>
 		<Russian>РАЗМЕР МИРА</Russian>
+		<Hungarian>TÉRKÉP MÉRETE</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SELECT_WORLD_SIZE_TITLE</Tag>
@@ -5756,6 +5811,7 @@
 		<Italian>Il tuo leader verrà scelto casualmente.</Italian>
 		<Spanish>Tu líder se elegirá al azar.</Spanish>
 		<Russian>Ваш лидер будет выбран случайным образом</Russian>
+		<Hungarian>Vezetőd véletlenszerűen lesz kiválasztva.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_FINAL_SETUP</Tag>
@@ -5764,6 +5820,7 @@
 		<German>SPIEL-SCHNAPPSCHUSS</German>
 		<Italian>RIASSUNTO PARTITA</Italian>
 		<Spanish>RESUMEN DE LA PARTIDA</Spanish>
+		<Hungarian>PILLANATFELVÉTEL</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SELECT_DIFFICULTY_TITLE</Tag>
@@ -5773,6 +5830,7 @@
 		<Italian>DIFFICOLTà</Italian>
 		<Spanish>DIFICULTAD</Spanish>
 		<Russian>СЛОЖНОСТЬ</Russian>
+		<Hungarian>NEHÉZSÉGI SZINT</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SELECT_GAME_SPEED_TITLE</Tag>
@@ -5782,6 +5840,7 @@
 		<Italian>VEL. DI GIOCO</Italian>
 		<Spanish>VELOCID. DE JUEGO</Spanish>
 		<Russian>СКОРОСТЬ ИГРЫ</Russian>
+		<Hungarian>JÁTÉKSEBESSÉG</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_MAP</Tag>
@@ -5791,6 +5850,7 @@
 		<Italian>Mappa :</Italian>
 		<Spanish>Mapa :</Spanish>
 		<Russian>Карта :</Russian>
+		<Hungarian>Térkép :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_SIZE</Tag>
@@ -5800,6 +5860,7 @@
 		<Italian>Dimensione :</Italian>
 		<Spanish>Tamaño :</Spanish>
 		<Russian>Размер :</Russian>
+		<Hungarian>Méret :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_CLIMATE</Tag>
@@ -5809,6 +5870,7 @@
 		<Italian>Clima :</Italian>
 		<Spanish>Clima :</Spanish>
 		<Russian>Климат :</Russian>
+		<Hungarian>Éghajlat :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_SEALEVEL</Tag>
@@ -5818,6 +5880,7 @@
 		<Italian>Livello del mare :</Italian>
 		<Spanish>Nivel del mar :</Spanish>
 		<Russian>Уровень моря :</Russian>
+		<Hungarian>Tenger Aránya </Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_ERA</Tag>
@@ -5827,6 +5890,7 @@
 		<Italian>Era :</Italian>
 		<Spanish>Época :</Spanish>
 		<Russian>Эпоха :</Russian>
+		<Hungarian>Korszak :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_SPEED</Tag>
@@ -5836,6 +5900,7 @@
 		<Italian>Velocità di gioco:</Italian>
 		<Spanish>Velocidad de juego:</Spanish>
 		<Russian>Скорость :</Russian>
+		<Hungarian>Játéksebesség :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_LEADER_TYPE</Tag>
@@ -5845,6 +5910,7 @@
 		<Italian>Tipo di leader :</Italian>
 		<Spanish>Tipo de líder :</Spanish>
 		<Russian>Тип лидера :</Russian>
+		<Hungarian>Vezető Típusa :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DIPLOMACY_TITLE</Tag>
@@ -5854,6 +5920,7 @@
 		<Italian>Chi vuoi contattare?</Italian>
 		<Spanish>¿Con quién quieres contactar?</Spanish>
 		<Russian>С кем вы хотите связаться?</Russian>
+		<Hungarian>Kivel akarod felvenni a kapcsolatot?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NEVER_MIND</Tag>
@@ -5863,6 +5930,7 @@
 		<Italian>Non importa...</Italian>
 		<Spanish>No importa...</Spanish>
 		<Russian>Ничего не нужно</Russian>
+		<Hungarian>Nem érdekes.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_UPDATE_HOST_ATTEMPT</Tag>
@@ -5871,6 +5939,7 @@
 		<German>Verbindungsversuch zum Host ...</German>
 		<Italian>Connessione con l'host...</Italian>
 		<Spanish>Contactando con el anfitrión...</Spanish>
+		<Hungarian>Kapcsolódás a kiszolgálóhoz...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_UPDATE_HOST_CONNECTED</Tag>
@@ -5879,6 +5948,7 @@
 		<German>Verbindung zum Host hergestellt ...</German>
 		<Italian>Connesso all'host...</Italian>
 		<Spanish>Se ha conectado con el anfitrión...</Spanish>
+		<Hungarian>Kapcsolódva a kiszolgálóhoz...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_UPDATE_PEER_ATTEMPT</Tag>
@@ -5887,6 +5957,7 @@
 		<German>Verbindungsaufbau mit Gegenstelle ...</German>
 		<Italian>Connessione al peer...</Italian>
 		<Spanish>Contactando con un interlocutor...</Spanish>
+		<Hungarian>Kapcsolódás a peerhez...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_UPDATE_PEER_CONNECTED</Tag>
@@ -5895,6 +5966,7 @@
 		<German>Verbindung zur Gegenstelle hergestellt ...</German>
 		<Italian>Connesso al peer...</Italian>
 		<Spanish>Se ha contactado con un interlocutor...</Spanish>
+		<Hungarian>Kapcsolódva a peerhez...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OUTPUT_NOT_FOUND</Tag>
@@ -5903,6 +5975,7 @@
 		<German>Kein lokalisierter Text vorhanden ...</German>
 		<Italian>Dati localizzati non trovati...</Italian>
 		<Spanish>No se ha encontrado salida localizada...</Spanish>
+		<Hungarian>Lokalizált kimenet nem található.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SOCKET_ERROR_TITLE</Tag>
@@ -5911,6 +5984,7 @@
 		<German>Verbindung getrennt</German>
 		<Italian>Disconnesso</Italian>
 		<Spanish>Desconectado</Spanish>
+		<Hungarian>Kapcsolat bontva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SOCKET_ERROR_DESC</Tag>
@@ -5919,6 +5993,7 @@
 		<German>Es ist ein Fehler im Netzwerk-Socket aufgetreten. Das Socket wurde geschlossen und die Verbindung getrennt.</German>
 		<Italian>Il socket di rete ha rilevato un errore ed è stato chiuso. Disconnesso.</Italian>
 		<Spanish>El socket de red ha encontrado un problema y se ha cerrado. Desconectado.</Spanish>
+		<Hungarian>A kommunikációs csatorna ismeretlen hiba miatt lezárásra került.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SOCKET_CREATE_FAILURE_TITLE</Tag>
@@ -5927,6 +6002,7 @@
 		<German>Netzwerkfehler</German>
 		<Italian>Errore di rete</Italian>
 		<Spanish>Error de red</Spanish>
+		<Hungarian>Hálózati hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SOCKET_CREATE_FAILURE_DESC</Tag>
@@ -5935,6 +6011,7 @@
 		<German>Das Netzwerk-Socket konnte nicht erstellt werden.</German>
 		<Italian>Impossibile creare il socket di rete.</Italian>
 		<Spanish>No se ha podido crear el socket de red.</Spanish>
+		<Hungarian>A kommunikációs csatorna nem hozható létre.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_UNAVAILABLE_TITLE</Tag>
@@ -5943,6 +6020,7 @@
 		<German>Server nicht verfügbar</German>
 		<Italian>Server non disponibile</Italian>
 		<Spanish>Servidor no disponible</Spanish>
+		<Hungarian>A szerver nem elérhető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_UNAVAILABLE_DESC</Tag>
@@ -5951,6 +6029,7 @@
 		<German>Der Spiele-Server ist nicht verfügbar.</German>
 		<Italian>Il server Internet per la ricerca delle partite non è disponibile.</Italian>
 		<Spanish>El servidor de búsqueda de partidas en Internet no está disponible.</Spanish>
+		<Hungarian>Az internetesjáték-kereső szerver nem elérhető.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_SOCKET_ERROR_TITLE</Tag>
