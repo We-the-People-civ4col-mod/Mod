@@ -545,6 +545,12 @@ class CvMainInterface:
 			size = 4
 		return "<font=" + str(size) + ">" + Text + "</font>"
 
+	def setTitleBarHelpText( self, screen, name, szBuffer, x, widgetType, data1, data2 = -1 ):
+		# setText + stone style matches PopulationText. Use only at X positions outside the 3D city view.
+		screen.setText(name, "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, x, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, widgetType, data1, data2)
+		screen.setStyle(name, "Button_Stone_Style")
+		screen.show(name)
+
 	# Will Initialize the majority of Background panels and Widgets
 	def interfaceScreen ( self ):
 		if (CyGame().isPitbossHost()):
@@ -572,6 +578,8 @@ class CvMainInterface:
 	# CITY BURLAP BACKGROUND PANELS
 		screen.addPanel("CityTopBackground", u"", u"", True, False, 0, 0, xResolution, CITY_TITLE_BAR_HEIGHT, PanelStyles.PANEL_STYLE_STANDARD, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.addDrawControl("CityTopBackground", ArtFileMgr.getInterfaceArtInfo("INTERFACE_CITY_BG_TOP").getPath(), 0, 0, xResolution, CITY_TITLE_BAR_HEIGHT, WidgetTypes.WIDGET_GENERAL, -1, -1 )
+		# Title-bar art is transparent over the 3D city view, so default hit-test lets terrain steal hover.
+		screen.setHitTest("CityTopBackground", HitTestTypes.HITTEST_SOLID)
 		self.appendtoHideState(screen, "CityTopBackground", HIDE_TYPE_CITY, HIDE_LEVEL_ALL)
 
 		screen.addPanel("CityLeftBackground", u"", u"", True, False, 0, CITY_TITLE_BAR_HEIGHT, CITIZEN_BAR_WIDTH, yResolution, PanelStyles.PANEL_STYLE_STANDARD, WidgetTypes.WIDGET_GENERAL, -1, -1 )
@@ -1136,13 +1144,13 @@ class CvMainInterface:
 
 	# CITY AND PLOT SCROLL BUTTONS
 		ScrollButtonSize = MEDIUM_BUTTON_SIZE
-		# R&R, Robert Surcouf Screen Resolution/Ratio - Start
-		#iXmodifier = xResolution * 5 / 100 - (xResolution - 1000)/200 					# More or less: 1024 -> 5% 1280 -> 4% / 1600 -> 2% / 1980 -> 0%
-		#screen.setImageButton("CityScrollMinus",ArtFileMgr.getInterfaceArtInfo("INTERFACE_CITY_LEFT_ARROW").getPath(), (xResolution * 35 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_CITY_SCROLL, -1, -1)
-		screen.setImageButton("CityScrollMinus",ArtFileMgr.getInterfaceArtInfo("INTERFACE_CITY_LEFT_ARROW").getPath(), (xResolution * 35 / 100) - (ScrollButtonSize / 2) +xResolution * 5 / 100 - (xResolution - 1000)/200 , (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_CITY_SCROLL, -1, -1)
+		# Sit next to the city name so the left title-bar stats have room.
+		iNameCenter = xResolution / 2
+		iNameHalfWidth = max(70, xResolution * 5 / 100)
+		iArrowY = (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3)
+		screen.setImageButton("CityScrollMinus", ArtFileMgr.getInterfaceArtInfo("INTERFACE_CITY_LEFT_ARROW").getPath(), iNameCenter - iNameHalfWidth - ScrollButtonSize - 6, iArrowY, ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_CITY_SCROLL, -1, -1)
 		self.appendtoHideState(screen, "CityScrollMinus", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
-		#screen.setImageButton("CityScrollPlus",ArtFileMgr.getInterfaceArtInfo("INTERFACE_CITY_RIGHT_ARROW").getPath(), (xResolution * 65 / 100) - (ScrollButtonSize / 2), (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_CITY_SCROLL, 1, -1)
-		screen.setImageButton("CityScrollPlus",ArtFileMgr.getInterfaceArtInfo("INTERFACE_CITY_RIGHT_ARROW").getPath(), (xResolution * 65 / 100) - (ScrollButtonSize / 2)-xResolution * 5 / 100 - (xResolution - 1000)/200 , (STACK_BAR_HEIGHT / 2) - (ScrollButtonSize / 3), ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_CITY_SCROLL, 1, -1)
+		screen.setImageButton("CityScrollPlus", ArtFileMgr.getInterfaceArtInfo("INTERFACE_CITY_RIGHT_ARROW").getPath(), iNameCenter + iNameHalfWidth + 6, iArrowY, ScrollButtonSize, ScrollButtonSize, WidgetTypes.WIDGET_CITY_SCROLL, 1, -1)
 		self.appendtoHideState(screen, "CityScrollPlus", HIDE_TYPE_CITY, HIDE_LEVEL_HIDE)
 		# R&R, Robert Surcouf Screen Resolution/Ratio - End
 
@@ -2515,6 +2523,28 @@ class CvMainInterface:
 						screen.hide("CityScrollMinus")
 						screen.hide("CityScrollPlus")
 
+			# Title-bar columns. Do not place widgets over the 3D city view (it steals hover).
+				iMapRight = CITIZEN_BAR_WIDTH + CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2)
+				iPopX = MEDIUM_BUTTON_SIZE + 8
+				iPopWidth = max(155, xResolution * 9 / 100)
+				iStep = max(46, xResolution * 26 / 1000)
+				iHammerX = iPopX + iPopWidth
+				iLibertyX = iHammerX + iStep
+				iCrossesX = iLibertyX + iStep
+				iEducationX = iCrossesX + iStep
+				iCultureX = iEducationX + iStep + 62
+				iTotalLawX = iCultureX + 128
+				iLawX = iTotalLawX + ((iStep * 2) / 3)
+				iCrimeX = iLawX + ((iStep * 2) / 3)
+				iTotalHappinessX = iCrimeX + 48
+				iHappinessX = iTotalHappinessX + 36
+				iUnhappinessX = iHappinessX + 26
+				iHealthX = iMapRight + 24
+				iHarbourX = iHealthX + 50
+				iBarracksX = iHarbourX + 28
+				iDefenseX = iBarracksX + 36
+				iStorageX = xResolution - 58
+
 			# CITY NAME HEADER
 				szBuffer = u"<font=4>"
 				if (pHeadSelectedCity.isCapital()):
@@ -2541,7 +2571,7 @@ class CvMainInterface:
 				else:
 					szBuffer = localText.getText("INTERFACE_CITY_STAGNANT", ())
 				szBuffer += u"</font>"
-				screen.setText("PopulationText", "Background", szBuffer, CvUtil.FONT_LEFT_JUSTIFY, xResolution * 4 / 100, CITY_TITLE_BAR_HEIGHT / 8, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_HELP_POPULATION, -1, -1 )
+				screen.setText("PopulationText", "Background", szBuffer, CvUtil.FONT_LEFT_JUSTIFY, iPopX, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_HELP_POPULATION, -1, -1 )
 				screen.setStyle("PopulationText", "Button_Stone_Style")
 
 			# CURRENT PRODUCTION BAR FILL
@@ -2614,9 +2644,6 @@ class CvMainInterface:
 						screen.changeImageButton("CityBuildingGraphic" + str(iSpecial), szTexture)
 						screen.show("CityBuildingGraphic" + str(iSpecial))
 
-				# More or less: 1024 -> 5% 1280 -> 4% / 1600 -> 2% / 1980 -> 0%
-				iXmodifier = max(xResolution * 5 / 100 - (xResolution - 1000)/200 , 0)
-
 			# CITIY DEFENSE MODIFIER
 				iDefenseModifier = pHeadSelectedCity.getDefenseModifier()
 				if (iDefenseModifier != 0):
@@ -2625,34 +2652,41 @@ class CvMainInterface:
 						szTempBuffer = u" (%d%%)" %(( ( gc.getMAX_CITY_DEFENSE_DAMAGE() - pHeadSelectedCity.getDefenseDamage() ) * 100 ) / gc.getMAX_CITY_DEFENSE_DAMAGE() )
 						szBuffer = szBuffer + szTempBuffer
 					szBuffer = "<font=3>" + szBuffer + "</font>"
-					screen.setLabel("DefenseText", "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, xResolution * 89 / 100 -iXmodifier , CITY_TITLE_BAR_HEIGHT / 8, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_DEFENSE, -1, -1 )
-					screen.show("DefenseText")
+					self.setTitleBarHelpText(screen, "DefenseText", szBuffer, iDefenseX, WidgetTypes.WIDGET_HELP_DEFENSE, -1)
 
 			# CITY HAMMER PRODUCTION
 				iHammers = pHeadSelectedCity.getCurrentProductionDifference(True)
 				szBuffer = u"<font=3>" + u"%i%c" % (iHammers, gc.getYieldInfo(YieldTypes.YIELD_HAMMERS).getChar()) + u"</font>"
-				screen.setLabel("HammerText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 11 / 100 +iXmodifier , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PRODUCTION_MOD_HELP, -1, -1 )
+				screen.setLabel("HammerText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, iHammerX, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_PRODUCTION_MOD_HELP, -1, -1 )
 
 				netYields = list(pHeadSelectedCity.calculateNetYieldList())
 			# CITY LIBERTYBELL PRODUCTION
 				iLiberty = netYields[YieldTypes.YIELD_BELLS]
 				szBuffer = u"<font=3>" + u"%i%c" % (iLiberty, gc.getYieldInfo(YieldTypes.YIELD_BELLS).getChar()) + u"</font>"
-				screen.setLabel("LibertyText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 14 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_BELLS, -1 )
+				screen.setLabel("LibertyText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, iLibertyX, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_BELLS, -1 )
 
 			# CITY CROSS PRODUCTION
 				iCrosses = netYields[YieldTypes.YIELD_CROSSES]
 				szBuffer = u"<font=3>" + u"%i%c" % (iCrosses, gc.getYieldInfo(YieldTypes.YIELD_CROSSES).getChar()) + u"</font>"
-				screen.setLabel("CrossesText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 17 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CROSSES, -1 )
+				screen.setLabel("CrossesText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, iCrossesX, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CROSSES, -1 )
 
 			# CITY EDUCATION PRODUCTION
 				iBooks = netYields[YieldTypes.YIELD_EDUCATION]
 				szBuffer = u"<font=3>" + u"%i%c" % (iBooks, gc.getYieldInfo(YieldTypes.YIELD_EDUCATION).getChar()) + u"</font>"
-				screen.setLabel("EducationText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 20 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_EDUCATION, -1 )
+				screen.setLabel("EducationText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, iEducationX, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_EDUCATION, -1 )
 
 			# CITY Culture PRODUCTION
-				iCulture = pHeadSelectedCity.getCultureRate() # RaR, ray, small correction
-				szBuffer = u"<font=3>" + u"%i%c" % (iCulture, gc.getYieldInfo(YieldTypes.YIELD_CULTURE).getChar()) + u"</font>"
-				screen.setLabel("CultureText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 23 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CULTURE, -1 )
+				iCultureRate = pHeadSelectedCity.getCultureRate()
+				iCultureStored = pHeadSelectedCity.getCulture(pHeadSelectedCity.getOwner())
+				iCultureThreshold = pHeadSelectedCity.getCultureThreshold()
+				szBuffer = u"<font=3>%d%c %d/%d" % (iCultureRate, gc.getYieldInfo(YieldTypes.YIELD_CULTURE).getChar(), iCultureStored, iCultureThreshold)
+				if iCultureRate > 0 and iCultureThreshold > iCultureStored:
+					iCultureTurns = (iCultureThreshold - iCultureStored + iCultureRate - 1) / iCultureRate
+					if iCultureTurns < 1:
+						iCultureTurns = 1
+					szBuffer += u" " + localText.getText("INTERFACE_CITY_TURNS", (iCultureTurns, ))
+				szBuffer += u"</font>"
+				screen.setLabel("CultureText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, iCultureX, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CULTURE, -1 )
 
 			# CITY HEALTH PRODUCTION
 				#get the coloured string for current City Health
@@ -2682,7 +2716,7 @@ class CvMainInterface:
 
 				#now add them all together and display on top of the Screen
 				szBuffer = szBufferCurrentHealth + szBufferHealthChange +szBufferHealthIcon
-				screen.setLabel("HealthText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 68 / 100 +iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HEALTH, -1 )
+				self.setTitleBarHelpText(screen, "HealthText", szBuffer, iHealthX, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HEALTH)
 
 			# CITY HAPPINESS vs UNHAPPINESS
 				pHeadSelectedCity.updateCityHappiness()
@@ -2690,31 +2724,34 @@ class CvMainInterface:
 				iHappiness = pHeadSelectedCity.getCityHappiness()
 				iUnhappiness = pHeadSelectedCity.getCityUnHappiness()
 
+				eTotalHappinessHelp = HELP_TOTAL_HAPPINESS_ZERO
+
 				if iHappiness > iUnhappiness: # Green and we use Icon Happiness
 					iTotalHap = iHappiness - iUnhappiness
 					szBufferTotal = u"<font=3>" + u"<color="u"0,255,0" + u">"+str(iTotalHap) + u"</color>" + u"</font>"
 					szBufferTotal += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
 					szBufferTotal += u"<font=3>" + u"=" + u"</font>"
-					screen.setLabel("TotalHappinessText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 69 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_HAPPINESS_POSITIVE, -1 )
+					eTotalHappinessHelp = HELP_TOTAL_HAPPINESS_POSITIVE
 				elif iUnhappiness > iHappiness: # Red and we use Icon Unhappiness
 					iTotalUnhap = iUnhappiness - iHappiness
 					szBufferTotal = u"<font=3>" + u"<color="u"255,0,0" + u">"+str(iTotalUnhap) + u"</color>" + u"</font>"
 					szBufferTotal += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar()) + u"</font>"
 					szBufferTotal += u"<font=3>" + u"=" + u"</font>"
-					screen.setLabel("TotalHappinessText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 69 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_HAPPINESS_NEGATIVE, -1 )
+					eTotalHappinessHelp = HELP_TOTAL_HAPPINESS_NEGATIVE
 				else: # Yellow and we use Icon Happiness
 					iTotalZeroHap = 0
 					szBufferTotal = u"<font=3>" + u"<color="u"255,255,0" + u">" + str(iTotalZeroHap) + u"</color>" + u"</font>"
 					szBufferTotal += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
 					szBufferTotal += u"<font=3>" + u"=" + u"</font>"
-					screen.setLabel("TotalHappinessText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 69 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_HAPPINESS_ZERO, -1 )
+					eTotalHappinessHelp = HELP_TOTAL_HAPPINESS_ZERO
+				self.setTitleBarHelpText(screen, "TotalHappinessText", szBufferTotal, iTotalHappinessX, WidgetTypes.WIDGET_GENERAL, eTotalHappinessHelp)
 
 				szBufferHappiness = u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_HAPPINESS).getChar()) + u"</font>"
 				szBufferHappiness += u"<font=3>" + u"-" + u"</font>"
-				screen.setLabel("HappinessText", "Background", szBufferHappiness, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 72 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HAPPINESS, -1 )
+				self.setTitleBarHelpText(screen, "HappinessText", szBufferHappiness, iHappinessX, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_HAPPINESS)
 
 				szBufferUnHappiness = u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_UNHAPPINESS).getChar()) + u" </font>"
-				screen.setLabel("UnhappinessText", "Background", szBufferUnHappiness, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 74 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_UNHAPPINESS, -1 )
+				self.setTitleBarHelpText(screen, "UnhappinessText", szBufferUnHappiness, iUnhappinessX, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_UNHAPPINESS)
 
 			# CITY LAW vs CRIME
 				pHeadSelectedCity.updateCityLaw()
@@ -2727,26 +2764,26 @@ class CvMainInterface:
 					szBufferTotal = u"<font=3>" + u"<color="u"0,255,0" + u">"+str(iTotalLaw) + u"</color>" + u"</font>"
 					szBufferTotal += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_LAW).getChar()) + u"</font>"
 					szBufferTotal += u"<font=3>" + u"=" + u"</font>"
-					screen.setLabel("TotalLawText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 37 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_LAW_POSITIVE, -1 )
+					screen.setLabel("TotalLawText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, iTotalLawX, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_LAW_POSITIVE, -1 )
 				elif iCrime > iLaw: # Red and we use CRIME Icon
 					iTotalCrime = iCrime - iLaw
 					szBufferTotal = u"<font=3>" + u"<color="u"255,0,0" + u">"+str(iTotalCrime) + u"</color>" + u"</font>"
 					szBufferTotal += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_CRIME).getChar()) + u"</font>"
 					szBufferTotal += u"<font=3>" + u"=" + u"</font>"
-					screen.setLabel("TotalLawText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 37 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_LAW_NEGATIVE, -1 )
+					screen.setLabel("TotalLawText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, iTotalLawX, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_LAW_NEGATIVE, -1 )
 				else: # Yellow and we use LAW Icon
 					iTotalZeroLaw = 0
 					szBufferTotal = u"<font=3>" + u"<color="u"255,255,0" + u">" + str(iTotalZeroLaw) + u"</color>" + u"</font>"
 					szBufferTotal += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_LAW).getChar()) + u"</font>"
 					szBufferTotal += u"<font=3>" + u"=" + u"</font>"
-					screen.setLabel("TotalLawText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 37 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_LAW_ZERO, -1 )
+					screen.setLabel("TotalLawText", "Background", szBufferTotal, CvUtil.FONT_CENTER_JUSTIFY, iTotalLawX, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, HELP_TOTAL_LAW_ZERO, -1 )
 
 				szBufferLaw = u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_LAW).getChar()) + u"</font>"
 				szBufferLaw += u"<font=3>" + u"-" + u"</font>"
-				screen.setLabel("LawText", "Background", szBufferLaw, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 40 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_LAW, -1 )
+				screen.setLabel("LawText", "Background", szBufferLaw, CvUtil.FONT_CENTER_JUSTIFY, iLawX, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_LAW, -1 )
 
 				szBufferCrime = u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_CRIME).getChar()) + u" </font>"
-				screen.setLabel("CrimeText", "Background", szBufferCrime, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 42 / 100-iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CRIME, -1 )
+				screen.setLabel("CrimeText", "Background", szBufferCrime, CvUtil.FONT_CENTER_JUSTIFY, iCrimeX, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_YIELD, YieldTypes.YIELD_CRIME, -1 )
 
 			# WTP, ray, new Harbour System - START
 				if (pHeadSelectedCity.bShouldShowCityHarbourSystem()):
@@ -2761,19 +2798,13 @@ class CvMainInterface:
 					if (iUsedHarbourSpace <= iHalfMaxHarbourSpace):
 						#szBuffer = u"<font=3>" + u" <color="u"0,255,0" + u">"+ str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
 						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.ANCHOR_CHAR)) + "</font>"
-						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 81 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_HARBOUR_SYSTEM, NEW_HARBOUR_SYSTEM, -1 )
-
-					# red: the harbour is completely full
 					elif (iUsedHarbourSpace >= iMaxHarbourSpace):
 						#szBuffer = u"<font=3>" + u" <color="u"255,0,0" + u">"+ str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
 						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.NO_ANCHOR_CHAR)) + "</font>"
-						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 81 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_HARBOUR_SYSTEM, NEW_HARBOUR_SYSTEM, -1 )
-
-					# yellow: more than half is full, but not completely
 					else:
 						#szBuffer = u"<font=3>" + u" <color="u"255,255,0" + u">" + str(iUsedHarbourSpace) + u"(" + str(iMaxHarbourSpace) + u")" + u"</color>" + u"</font>"
 						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.ANCHOR_CHAR)) + "</font>"
-						screen.setLabel("HarbourText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 81 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_HARBOUR_SYSTEM, NEW_HARBOUR_SYSTEM, -1 )
+					self.setTitleBarHelpText(screen, "HarbourText", szBuffer, iHarbourX, WidgetTypes.WIDGET_HELP_HARBOUR_SYSTEM, NEW_HARBOUR_SYSTEM)
 
 			# WTP, ray, new Barracks System - START
 				if (pHeadSelectedCity.bShouldShowCityBarracksSystem()):
@@ -2788,19 +2819,13 @@ class CvMainInterface:
 					if (iUsedBarracksSpace <= iHalfMaxBarracksSpace):
 						#szBuffer = u"<font=3>" + u" <color="u"0,255,0" + u">"+ str(iUsedBarracksSpace) + u"(" + str(iMaxBarracksSpace) + u")" + u"</color>" + u"</font>"
 						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.BARRACKS_CHAR)) + "</font>"
-						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 83 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
-
-					# red: the barracks are completely full
 					elif (iUsedBarracksSpace >= iMaxBarracksSpace):
 						#szBuffer = u"<font=3>" + u" <color="u"255,0,0" + u">"+ str(iUsedBarracksSpace) + u"(" + str(iMaxBarracksSpace) + u")" + u"</color>" + u"</font>"
 						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.NO_BARRACKS_CHAR)) + "</font>"
-						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 83 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
-
-					# yellow: more than half is full, but not completely
 					else:
 						#szBuffer = u"<font=3>" + u" <color="u"255,255,0" + u">" + str(iUsedBarracksSpace) + u"(" + str(iMaxBarracksSpace) + u")" + u"</color>" + u"</font>"
 						szBuffer = u"<font=3>" + (u" %c" % CyGame().getSymbolID(FontSymbols.BARRACKS_CHAR)) + "</font>"
-						screen.setLabel("BarracksText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 83 / 100 -iXmodifier, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM, -1 )
+					self.setTitleBarHelpText(screen, "BarracksText", szBuffer, iBarracksX, WidgetTypes.WIDGET_HELP_BARRACKS_SYSTEM, NEW_BARRACKS_SYSTEM)
 
 			# REBEL BAR FILL PERCENTAGE
 				fPercentage = float(pHeadSelectedCity.getRebelPercent() / 100.0)
@@ -2855,7 +2880,9 @@ class CvMainInterface:
 
 				# WTP, ray, adding the Yield Icon for Trade Goods to Storage Capacity
 				szBuffer += u"<font=3>" + u"%c" % (gc.getYieldInfo(YieldTypes.YIELD_TRADE_GOODS).getChar()) + u"</font>"
-				screen.setLabel("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_CENTER_JUSTIFY, xResolution * 90 / 100 , CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, VET_NEW_CAPACITY, -1 )
+				screen.setText("StorageCapacityText", "Background", szBuffer, CvUtil.FONT_RIGHT_JUSTIFY, iStorageX, CITY_TITLE_BAR_HEIGHT / 12, -0.3, FontTypes.SMALL_FONT, WidgetTypes.WIDGET_GENERAL, VET_NEW_CAPACITY, -1 )
+				screen.setStyle("StorageCapacityText", "Button_Stone_Style")
+				screen.show("StorageCapacityText")
 
 			screen.hide("TimeText")
 			screen.hide("GoldText")

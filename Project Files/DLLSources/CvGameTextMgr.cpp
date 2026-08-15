@@ -8829,7 +8829,9 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	// unproduced is lost production due to lack of input yields
 	iModifiedProduction -= iUnproduced;
 
-	if (iBaseProduction != 0)
+	// iBaseProduction is plot-only after the loops above. Buildings and indoor
+	// workers (carpenter, preacher, statesman) still need the % breakdown.
+	if (iModifiedProduction != 0)
 	{
 		int iModifier = setCityYieldModifierString(szBuffer, eYieldType, city);
 		if (iModifier != 100)
@@ -8940,8 +8942,52 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	if (eYieldType == YIELD_HEALTH)
 	{
 		// WTP, ray, Health Overhaul - START
-		int iCityHealthChangeFromCentralPlot = city.getCityHealthChangeFromCentralPlot();
-		szBuffer.append(gDLL->getText("TXT_KEY_YIELD_HEALTH_CITY_PLOT_CHANGE", info.getTextKeyWide(), iCityHealthChangeFromCentralPlot, info.getChar()));
+		const CvPlot* pCityCenterPlot = city.plot();
+		bool bLocationBreakdown = false;
+		if (pCityCenterPlot != NULL)
+		{
+			if (pCityCenterPlot->isFreshWater())
+			{
+				szBuffer.append(gDLL->getText("TXT_KEY_YIELD_HEALTH_CITY_PLOT_FRESH_WATER", info.getTextKeyWide(), GC.getSWEET_WATER_CITY_LOCATION_HEALTH_BONUS(), info.getChar()));
+				bLocationBreakdown = true;
+			}
+
+			if (pCityCenterPlot->isCoastalLand())
+			{
+				if (bLocationBreakdown)
+				{
+					szBuffer.append(NEWLINE);
+				}
+				szBuffer.append(gDLL->getText("TXT_KEY_YIELD_HEALTH_CITY_PLOT_COAST", info.getTextKeyWide(), GC.getCOASTAL_CITY_LOCATION_HEALTH_BONUS(), info.getChar()));
+				bLocationBreakdown = true;
+			}
+
+			if (pCityCenterPlot->isHills())
+			{
+				if (bLocationBreakdown)
+				{
+					szBuffer.append(NEWLINE);
+				}
+				szBuffer.append(gDLL->getText("TXT_KEY_YIELD_HEALTH_CITY_PLOT_HILLS", info.getTextKeyWide(), GC.getHILL_CITY_LOCATION_HEALTH_BONUS(), info.getChar()));
+				bLocationBreakdown = true;
+			}
+
+			if (GC.getTerrainInfo(pCityCenterPlot->getTerrainType()).isBadCityLocation())
+			{
+				if (bLocationBreakdown)
+				{
+					szBuffer.append(NEWLINE);
+				}
+				szBuffer.append(gDLL->getText("TXT_KEY_YIELD_HEALTH_CITY_PLOT_BAD_TERRAIN", info.getTextKeyWide(), -GC.getBAD_CITY_LOCATION_HEALTH_MALUS(), info.getChar(), GC.getTerrainInfo(pCityCenterPlot->getTerrainType()).getTextKeyWide()));
+				bLocationBreakdown = true;
+			}
+		}
+
+		if (!bLocationBreakdown)
+		{
+			int iCityHealthChangeFromCentralPlot = city.getCityHealthChangeFromCentralPlot();
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_HEALTH_CITY_PLOT_CHANGE", info.getTextKeyWide(), iCityHealthChangeFromCentralPlot, info.getChar()));
+		}
 
 		szBuffer.append(SEPARATOR);
 		szBuffer.append(NEWLINE);
@@ -9252,6 +9298,22 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_BUILDINGS", iBuildingMod, info.getChar()));
 		iBaseModifier += iBuildingMod;
+	}
+
+	int iPlayerMod = kOwner.getYieldRateModifier(eYieldType);
+	if (0 != iPlayerMod)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_PLAYER", iPlayerMod, info.getChar()));
+		iBaseModifier += iPlayerMod;
+	}
+
+	int iTaxMod = kOwner.getTaxYieldRateModifier(eYieldType);
+	if (0 != iTaxMod)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_TAX", iTaxMod, info.getChar()));
+		iBaseModifier += iTaxMod;
 	}
 
 	// Capital

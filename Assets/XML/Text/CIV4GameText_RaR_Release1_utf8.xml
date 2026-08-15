@@ -1723,6 +1723,26 @@
 		<Hungarian>a Városnak, ha művelve van : %d1%F2_Icon</Hungarian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_YIELD_PLAYER</Tag>
+		<English>[ICON_BULLET]%D1%%%F2[TAB]from civilization</English>
+		<French>[ICON_BULLET]%D1%%%F2[TAB]de la civilisation</French>
+		<German>[ICON_BULLET]%D1%%%F2[TAB]durch die Zivilisation</German>
+		<Italian>[ICON_BULLET]%D1%%%F2[TAB]dalla civiltà</Italian>
+		<Spanish>[ICON_BULLET]%D1%%%F2[TAB]de la civilización</Spanish>
+		<Russian>[ICON_BULLET]%D1%%%F2[TAB]от цивилизации</Russian>
+		<Hungarian>[ICON_BULLET]%D1%%%F2[TAB]a civilizációból</Hungarian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_HELP_YIELD_TAX</Tag>
+		<English>[ICON_BULLET]%D1%%%F2[TAB]from tax rate</English>
+		<French>[ICON_BULLET]%D1%%%F2[TAB]du taux d'imposition</French>
+		<German>[ICON_BULLET]%D1%%%F2[TAB]durch den Steuersatz</German>
+		<Italian>[ICON_BULLET]%D1%%%F2[TAB]dalle tasse</Italian>
+		<Spanish>[ICON_BULLET]%D1%%%F2[TAB]del tipo impositivo</Spanish>
+		<Russian>[ICON_BULLET]%D1%%%F2[TAB]от налоговой ставки</Russian>
+		<Hungarian>[ICON_BULLET]%D1%%%F2[TAB]az adókulcsból</Hungarian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_YIELD_HEALTH</Tag>
 		<English>[ICON_BULLET]%D1%%%F2[TAB]from city health</English>
 		<French>[ICON_BULLET]%D1%%%F2[TAB]par la santé de la ville</French>
@@ -1749,6 +1769,46 @@
 		<German>%s1 durch Standort = %d2%F3</German>
 		<Russian>%s1 от расположения города = %d2%F3</Russian>
 		<Hungarian>%s1 a Város Elhelyezkedéséből = %d2%F3</Hungarian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_HEALTH_CITY_PLOT_FRESH_WATER</Tag>
+		<English>%s1 from fresh water = %D2%F3</English>
+		<French>%s1 de l'eau douce = %D2%F3</French>
+		<German>%s1 durch Süßwasser = %D2%F3</German>
+		<Italian>%s1 dall'acqua dolce = %D2%F3</Italian>
+		<Spanish>%s1 de agua dulce = %D2%F3</Spanish>
+		<Russian>%s1 от пресной воды = %D2%F3</Russian>
+		<Hungarian>%s1 édesvízből = %D2%F3</Hungarian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_HEALTH_CITY_PLOT_COAST</Tag>
+		<English>%s1 from coast = %D2%F3</English>
+		<French>%s1 de la côte = %D2%F3</French>
+		<German>%s1 durch Küste = %D2%F3</German>
+		<Italian>%s1 dalla costa = %D2%F3</Italian>
+		<Spanish>%s1 de la costa = %D2%F3</Spanish>
+		<Russian>%s1 от побережья = %D2%F3</Russian>
+		<Hungarian>%s1 tengerpartból = %D2%F3</Hungarian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_HEALTH_CITY_PLOT_HILLS</Tag>
+		<English>%s1 from hills = %D2%F3</English>
+		<French>%s1 des collines = %D2%F3</French>
+		<German>%s1 durch Hügel = %D2%F3</German>
+		<Italian>%s1 dalle colline = %D2%F3</Italian>
+		<Spanish>%s1 de las colinas = %D2%F3</Spanish>
+		<Russian>%s1 от холмов = %D2%F3</Russian>
+		<Hungarian>%s1 dombokból = %D2%F3</Hungarian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_HEALTH_CITY_PLOT_BAD_TERRAIN</Tag>
+		<English>%s1 from %s4 = %D2%F3</English>
+		<French>%s1 de %s4 = %D2%F3</French>
+		<German>%s1 durch %s4 = %D2%F3</German>
+		<Italian>%s1 da %s4 = %D2%F3</Italian>
+		<Spanish>%s1 de %s4 = %D2%F3</Spanish>
+		<Russian>%s1 от %s4 = %D2%F3</Russian>
+		<Hungarian>%s1 %s4 terepből = %D2%F3</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_HEALTH_RESSOURCE_CHANGE</Tag>
