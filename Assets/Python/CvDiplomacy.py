@@ -758,10 +758,19 @@ class CvDiplomacy:
 				self.isComment(eComment, "AI_DIPLOCOMMENT_CHIEF_GOODY")):
 			szGiftInfo = self.getNativeGiftInfoText()
 			if szGiftInfo:
-				AIString = AIString + szGiftInfo
+				# getDiplomacyComment returns a text KEY. Resolve it first so
+				# setAIString is not asked to look up "KEY + gift line".
+				translator = CyTranslator()
+				if isinstance(AIString, unicode):
+					szKey = AIString.encode("ascii", "replace")
+				else:
+					szKey = str(AIString)
+				szResolved = translator.getText(szKey, args)
+				if isinstance(szResolved, unicode):
+					szResolved = szResolved.encode("ascii", "replace")
+				AIString = szResolved + szGiftInfo
+				args = ()
 
-		if isinstance(AIString, unicode):
-			AIString = AIString.encode("ascii", "replace")
 		self.diploScreen.setAIString(AIString, args)
 		self.diploScreen.setAIComment(eComment)
 		self.determineResponses(eComment, args)
