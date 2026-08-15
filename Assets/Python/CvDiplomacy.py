@@ -721,7 +721,7 @@ class CvDiplomacy:
 		eOther = self.diploScreen.getWhoTradingWith()
 		pOther = gc.getPlayer(eOther)
 		if pOther is None or pOther.isNone() or not pOther.isNative():
-			return u""
+			return ""
 
 		eActive = gc.getGame().getActivePlayer()
 		iBonus = pOther.AI_getTradeAttitude(eActive)
@@ -731,10 +731,16 @@ class CvDiplomacy:
 		translator = CyTranslator()
 
 		if iBonus >= 4:
-			return translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_CAP", (iGiftValue, iTurnsUntilDecay))
-		if iBonus > 0:
-			return translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_INFO", (iBonus, iGoldForPlusOne, iBonus - 1, iTurnsUntilDecay, iGiftValue))
-		return translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_NONE", (iGoldForPlusOne,))
+			szText = translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_CAP", (iGiftValue, iTurnsUntilDecay))
+		elif iBonus > 0:
+			szText = translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_INFO", (iBonus, iGoldForPlusOne, iBonus - 1, iTurnsUntilDecay, iGiftValue))
+		else:
+			szText = translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_NONE", (iGoldForPlusOne,))
+
+		# setAIString takes a C char*, not unicode
+		if isinstance(szText, unicode):
+			szText = szText.encode("ascii", "replace")
+		return szText
 
 	def setAIComment (self, eComment, *args):
 		" Handles the determining the AI comments"
@@ -754,6 +760,8 @@ class CvDiplomacy:
 			if szGiftInfo:
 				AIString = AIString + szGiftInfo
 
+		if isinstance(AIString, unicode):
+			AIString = AIString.encode("ascii", "replace")
 		self.diploScreen.setAIString(AIString, args)
 		self.diploScreen.setAIComment(eComment)
 		self.determineResponses(eComment, args)
