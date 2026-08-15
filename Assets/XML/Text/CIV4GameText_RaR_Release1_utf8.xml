@@ -970,7 +970,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_GIVEN</Tag>
-		<English>Gifts given: %d1</English>
+		<English>Gift bonus: %d1</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_NEXT</Tag>
@@ -982,7 +982,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_GIVEN</Tag>
-		<English>[NEWLINE][NEWLINE]Gifts given: %d1</English>
+		<English>[NEWLINE][NEWLINE]Gift bonus: %d1</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_NEXT</Tag>
