@@ -11566,153 +11566,266 @@ void CvCity::setRebelSentiment(int iValue)
 	FAssert(getRebelSentiment() >= 0);
 }
 //WTP, Schmiddie, code against negativ yield_storage bug end
+namespace
+{
+	const int NATIVE_TEACH_SCAN_RANGE = 2;
+	const int NATIVE_TEACH_BONUS_SCORE = 10000;
+	const int NATIVE_TEACH_FEATURE_SCORE = 1000;
+
+	void stripPrefix(CvString& szText, const char* szPrefix)
+	{
+		const unsigned int iPrefixLen = (unsigned int)strlen(szPrefix);
+		if (szText.size() >= iPrefixLen && strncmp(szText.c_str(), szPrefix, iPrefixLen) == 0)
+		{
+			szText = szText.substr(iPrefixLen);
+		}
+	}
+
+	void stripTrailingDigitTag(CvString& szText)
+	{
+		const int iUnderscore = (int)szText.rfind('_');
+		if (iUnderscore == (int)std::string::npos || iUnderscore + 1 >= (int)szText.size())
+		{
+			return;
+		}
+
+		for (int i = iUnderscore + 1; i < (int)szText.size(); ++i)
+		{
+			if (szText[i] < '0' || szText[i] > '9')
+			{
+				return;
+			}
+		}
+
+		szText = szText.substr(0, iUnderscore);
+	}
+
+	void stripJobSuffix(CvString& szText)
+	{
+		static const char* const apszSuffixes[] =
+		{
+			"_PLANTER",
+			"_COLLECTOR",
+			"_HUNTER",
+			"_PICKER",
+			"_FARMER",
+			"_CUTTER"
+		};
+
+		const unsigned int iCount = sizeof(apszSuffixes) / sizeof(apszSuffixes[0]);
+		for (unsigned int i = 0; i < iCount; ++i)
+		{
+			const unsigned int iSuffixLen = (unsigned int)strlen(apszSuffixes[i]);
+			if (szText.size() > iSuffixLen &&
+				szText.compare(szText.size() - iSuffixLen, iSuffixLen, apszSuffixes[i]) == 0)
+			{
+				szText = szText.substr(0, szText.size() - iSuffixLen);
+				return;
+			}
+		}
+	}
+
+	// BONUS_PEARLS / UNITCLASS_PEARLS_HUNTER, BONUS_FISH / UNITCLASS_FISHERMAN
+	bool isBonusNamedForUnitClass(BonusTypes eBonus, UnitClassTypes eUnitClass)
+	{
+		if (eBonus == NO_BONUS || eUnitClass == NO_UNITCLASS)
+		{
+			return false;
+		}
+
+		CvString szBonus = GC.getBonusInfo(eBonus).getType();
+		CvString szClass = GC.getUnitClassInfo(eUnitClass).getType();
+
+		stripPrefix(szBonus, "BONUS_");
+		stripTrailingDigitTag(szBonus);
+		stripPrefix(szClass, "UNITCLASS_");
+		stripJobSuffix(szClass);
+
+		if (szBonus.size() < 4 || szClass.empty())
+		{
+			return false;
+		}
+
+		return szClass.find(szBonus) != std::string::npos || szBonus.find(szClass) != std::string::npos;
+	}
+
+	bool bonusGivesYield(BonusTypes eBonus, YieldTypes eYield)
+	{
+		return eBonus != NO_BONUS && eYield != NO_YIELD && GC.getBonusInfo(eBonus).getYieldChange(eYield) > 0;
+	}
+
+	bool anyTeachUnitClaimsBonusByName(BonusTypes eBonus, const CvCivilizationInfo& kCiv)
+	{
+		if (eBonus == NO_BONUS)
+		{
+			return false;
+		}
+
+		for (UnitClassTypes eUnitClass = FIRST_UNITCLASS; eUnitClass < NUM_UNITCLASS_TYPES; ++eUnitClass)
+		{
+			if (kCiv.getTeachUnitClassWeight(eUnitClass) > 0 && isBonusNamedForUnitClass(eBonus, eUnitClass))
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+}
+
+// Native village specialty: pick a local yield within 2 plots.
+// Only yields that actually exist are eligible. Bonus resources outrank
+// uncommon features, which outrank common terrain. No random roll.
 UnitClassTypes CvCity::bestTeachUnitClass()
 {
 	PROFILE_FUNC();
-	int iBestValue = 0;
+
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	const CvCivilizationInfo& kCiv = GC.getCivilizationInfo(kOwner.getCivilizationType());
+	CvMap& kMap = GC.getMap();
+
+	UnitClassTypes eFallbackUnitClass = NO_UNITCLASS;
 	UnitClassTypes eBestUnitClass = NO_UNITCLASS;
+	int iBestValue = 0;
+	bool bBestAlreadyTaught = false;
 
-	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
-
-	std::vector<int> values(GC.getNumUnitClassInfos(), 0);
 	for (UnitClassTypes eUnitClass = FIRST_UNITCLASS; eUnitClass < NUM_UNITCLASS_TYPES; ++eUnitClass)
 	{
-		if (GC.getCivilizationInfo(kOwner.getCivilizationType()).getTeachUnitClassWeight(eUnitClass) > 0)
+		const int iWeight = kCiv.getTeachUnitClassWeight(eUnitClass);
+		if (iWeight <= 0)
 		{
-			UnitTypes eLoopUnit = (UnitTypes)GC.getUnitClassInfo(eUnitClass).getDefaultUnitIndex();
-			if (eLoopUnit != NO_UNIT)
+			continue;
+		}
+
+		const UnitTypes eLoopUnit = (UnitTypes)GC.getUnitClassInfo(eUnitClass).getDefaultUnitIndex();
+		if (eLoopUnit == NO_UNIT)
+		{
+			continue;
+		}
+
+		int iBestProfessionValue = 0;
+		bool bHasTeachProfession = false;
+
+		for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+		{
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+			if (!kProfession.isCitizen() || kProfession.LbD_getExpert() != eUnitClass)
 			{
-				int iValue = 0;
-				ProfessionTypes eIdealProfession = kOwner.AI_idealProfessionForUnit(eLoopUnit);
+				continue;
+			}
 
-				if (eIdealProfession == NO_PROFESSION)
+			bHasTeachProfession = true;
+
+			YieldTypes eWantedYield = (YieldTypes)kProfession.getYieldsProduced(0);
+			if (!kProfession.isWorkPlot())
+			{
+				eWantedYield = (YieldTypes)kProfession.getYieldsConsumed(0);
+			}
+			if (eWantedYield == NO_YIELD)
+			{
+				continue;
+			}
+
+			int iYieldAmount = 0;
+			int iFeatureMatches = 0;
+			int iBonusMatches = 0;
+
+			LOOP_ADJACENT_PLOTS(getX_INLINE(), getY_INLINE(), NATIVE_TEACH_SCAN_RANGE)
+			{
+				CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+				if (pLoopPlot == NULL)
 				{
-					iValue += 100;
+					continue;
 				}
-				else
+				if (!pLoopPlot->isValidYieldChanges(eLoopUnit))
 				{
-					CvProfessionInfo& kIdealProfession = GC.getProfessionInfo(eIdealProfession);
-
-					if (!kIdealProfession.isCitizen())
-					{
-						iValue += 100;
-					}
-					else
-					{
-						// R&R, ray , MYCP partially based on code of Aymerick - START
-						YieldTypes eWantedYield = (YieldTypes)kIdealProfession.getYieldsProduced(0);
-						if (!kIdealProfession.isWorkPlot())
-						{
-							eWantedYield = (YieldTypes)kIdealProfession.getYieldsConsumed(0);
-						}
-
-						// R&R, ray , MYCP partially based on code of Aymerick - END
-
-						if (eWantedYield == NO_YIELD)
-						{
-							iValue += 100;
-						}
-						else
-						{
-
-							int iPlotValue = 0;
-							for (int j = 0; j < NUM_CITY_PLOTS; ++j)
-							{
-								CvPlot* pLoopPlot = plotCity(getX_INLINE(), getY_INLINE(), j);
-								if (pLoopPlot != NULL)
-								{
-									if (pLoopPlot->isValidYieldChanges(eLoopUnit) && !(eWantedYield == YIELD_FOOD && pLoopPlot->isHills()))
-									{
-										int iBaseYield = pLoopPlot->calculateNatureYield(eWantedYield, getTeam(), true);
-										if (iBaseYield > 0)
-										{
-											iPlotValue += 2;
-										}
-
-										if (pLoopPlot->getFeatureType() != NO_FEATURE)
-										{
-											int iChange = GC.getFeatureInfo(pLoopPlot->getFeatureType()).getYieldChange(eWantedYield);
-											if (iChange > 0 && iBaseYield == 0)
-											{
-												iPlotValue ++; //R&R, ray, changes from agnat86
-											}
-											if (iChange < 0 && iBaseYield > 0)
-											{
-												iPlotValue --; //R&R, ray, changes from agnat86
-											}
-										}
-
-										if (pLoopPlot->getBonusType() != NO_BONUS)
-										{
-											if (GC.getBonusInfo(pLoopPlot->getBonusType()).getYieldChange(eWantedYield) > 0)
-											{
-												iPlotValue += 8; //R&R, ray, changes from agnat86
-											}
-										}
-									}
-								}
-							}
-
-							iValue = 25 + 125 * iPlotValue / NUM_CITY_PLOTS;
-						}
-					}
+					continue;
+				}
+				if (eWantedYield == YIELD_FOOD && pLoopPlot->isHills())
+				{
+					continue;
 				}
 
-				iValue *= GC.getCivilizationInfo(kOwner.getCivilizationType()).getTeachUnitClassWeight(eUnitClass);
-				values[eUnitClass] = iValue;
+				const int iNatureYield = pLoopPlot->calculateNatureYield(eWantedYield, getTeam(), false);
+				if (iNatureYield > 0)
+				{
+					iYieldAmount += iNatureYield;
+				}
+
+				const FeatureTypes eFeature = pLoopPlot->getFeatureType();
+				if (eFeature != NO_FEATURE && GC.getFeatureInfo(eFeature).getYieldChange(eWantedYield) > 0)
+				{
+					++iFeatureMatches;
+				}
+
+				const BonusTypes eBonus = pLoopPlot->getBonusType();
+				if (eBonus == NO_BONUS)
+				{
+					continue;
+				}
+
+				if (isBonusNamedForUnitClass(eBonus, eUnitClass))
+				{
+					++iBonusMatches;
+				}
+				else if (bonusGivesYield(eBonus, eWantedYield) && !anyTeachUnitClaimsBonusByName(eBonus, kCiv))
+				{
+					++iBonusMatches;
+				}
 			}
-		}
-	}
 
-	int iTotal = 0;
-	int iCount = 0;
-	for (int i = 0; i < GC.getNumUnitClassInfos(); ++i)
-	{
-		if (values[i] != 0)
-		{
-			iTotal += values[i];
-			iCount ++;
-		}
-	}
-
-	if (iCount == 0)
-	{
-		return NO_UNITCLASS;
-	}
-
-	int iLoop = 0;
-	CvCity* pLoopCity;
-	for (pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
-	{
-		if (pLoopCity->getTeachUnitClass() != NO_UNITCLASS)
-		{
-			values[pLoopCity->getTeachUnitClass()] ++;
-			values[pLoopCity->getTeachUnitClass()] /= 2;
-		}
-	}
-
-	//This dampens the favortism towards the most abundant yields.
-	int iAverage = iTotal / iCount;
-	for (int i = 0; i < GC.getNumUnitClassInfos(); ++i)
-	{
-		int iValue = values[i];
-		if (iValue > 0)
-		{
-			if (iValue > iAverage)
+			if (iYieldAmount <= 0 && iFeatureMatches <= 0 && iBonusMatches <= 0)
 			{
-				iValue = ((iValue - iAverage) / 4) + iAverage;
+				continue;
 			}
-			iValue = 1 + GC.getGameINLINE().getSorenRandNum(iValue, "Pick City Training");
 
-			if (iValue > iBestValue)
+			const int iProfessionValue = (iYieldAmount + iFeatureMatches * NATIVE_TEACH_FEATURE_SCORE + iBonusMatches * NATIVE_TEACH_BONUS_SCORE) * iWeight;
+			if (iProfessionValue > iBestProfessionValue)
 			{
-				iBestValue = iValue;
-				eBestUnitClass = (UnitClassTypes)i;
+				iBestProfessionValue = iProfessionValue;
 			}
+		}
+
+		if (!bHasTeachProfession)
+		{
+			if (eFallbackUnitClass == NO_UNITCLASS)
+			{
+				eFallbackUnitClass = eUnitClass;
+			}
+			continue;
+		}
+
+		if (iBestProfessionValue <= 0)
+		{
+			continue;
+		}
+
+		bool bAlreadyTaught = false;
+		int iLoop = 0;
+		for (const CvCity* pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
+		{
+			if (pLoopCity != this && pLoopCity->getTeachUnitClass() == eUnitClass)
+			{
+				bAlreadyTaught = true;
+				break;
+			}
+		}
+
+		if (iBestProfessionValue > iBestValue ||
+			(iBestProfessionValue == iBestValue && bBestAlreadyTaught && !bAlreadyTaught))
+		{
+			iBestValue = iBestProfessionValue;
+			eBestUnitClass = eUnitClass;
+			bBestAlreadyTaught = bAlreadyTaught;
 		}
 	}
 
-	return eBestUnitClass;
+	if (eBestUnitClass != NO_UNITCLASS)
+	{
+		return eBestUnitClass;
+	}
+
+	return eFallbackUnitClass;
 }
 
 // WTP, ray, Ethnically correct Population Growth - START
