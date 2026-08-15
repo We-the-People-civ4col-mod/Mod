@@ -504,7 +504,7 @@ void CvCityAI::AI_chooseProduction()
 
 	if (!isNative())
 	{
-		if ((GC.getGame().getGameTurn() - getGameTurnAcquired()) > 5)	// TAC - AI Training - koma13
+		if ((GC.getGame().getGameTurn() - getGameTurnAcquired()) > GC.getGameINLINE().AI_adjustedTurn(5))	// TAC - AI Training - koma13
 		{
 			int iAreaCities = pArea->getCitiesPerPlayer(getOwnerINLINE());
 			if (iAreaCities > 1)

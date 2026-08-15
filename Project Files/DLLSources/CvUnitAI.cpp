@@ -1513,7 +1513,7 @@ void CvUnitAI::AI_settlerMove()
 	PROFILE_FUNC();
 
 	const bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getUnitDanger(this, 2, false, false);
-	const int iMinFoundValue = (GC.getGame().getGameTurn() > 20) ? 1 : 2;
+	const int iMinFoundValue = (GC.getGame().getGameTurn() > GC.getGameINLINE().AI_adjustedTurn(20)) ? 1 : 2;
 	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	const bool bFirstCityPhase = (kOwner.getNumCities() == 0);
 
@@ -1527,7 +1527,7 @@ void CvUnitAI::AI_settlerMove()
 		{
 			return;
 		}
-		if (GC.getGame().getGameTurn() - AI_getLastAIChangeTurn() > 10)
+		if (GC.getGame().getGameTurn() - AI_getLastAIChangeTurn() > GC.getGameINLINE().AI_adjustedTurn(10))
 		{
 			AI_setUnitAIType(UNITAI_DEFENSIVE);
 			return;
@@ -2276,7 +2276,7 @@ void CvUnitAI::AI_yieldUhMove()
 		{
 			return;
 		}
-		if (GC.getGameINLINE().getGameTurn() - getGameTurnCreated() > 6)
+		if (GC.getGameINLINE().getGameTurn() - getGameTurnCreated() > GC.getGameINLINE().AI_adjustedTurn(6))
 		{
 			GET_PLAYER(getOwnerINLINE()).AI_clearStrategy(STRATEGY_SELL_TO_NATIVES);
 			AI_setUnitAIState(UNITAI_STATE_PURCHASED);
@@ -2478,7 +2478,7 @@ void CvUnitAI::AI_defensiveMove()
 		return;
 	}
 
-	if ((GC.getGame().getGameTurn() < 10) && (area()->getNumAIUnits(getOwnerINLINE(), UNITAI_SCOUT) == 0))
+	if ((GC.getGame().getGameTurn() < GC.getGameINLINE().AI_adjustedTurn(10)) && (area()->getNumAIUnits(getOwnerINLINE(), UNITAI_SCOUT) == 0))
 	{
 		if (bDanger)
 		{
@@ -3451,7 +3451,7 @@ void CvUnitAI::AI_defensiveBraveMove()
 				// R&R, ray, Natives raiding party - START
 				if (kOwner.AI_hasPotentialRaidTarget())
 				{
-					if (GC.getGameINLINE().getGameTurn() > 30)
+					if (GC.getGameINLINE().getGameTurn() > GC.getGameINLINE().AI_adjustedTurn(30))
 					{
 						if (kOwner.AI_findTargetCity(pCity->area()) != NULL)
 						{
@@ -3462,7 +3462,7 @@ void CvUnitAI::AI_defensiveBraveMove()
 							{
 								AI_setUnitAIState(UNITAI_STATE_RAIDING_PARTY);
 							}
-							else if (GC.getGame().getSorenRandNum(100, "AI native start raiding party") < GC.getRANDOM_NATIVE_RAID_BASECHANCE())
+							else if (GC.getGame().getSorenRandNum(100, "AI native start raiding party") < GC.getGameINLINE().AI_speedChance(GC.getRANDOM_NATIVE_RAID_BASECHANCE()))
 							{
 								int iRand = GC.getLeaderHeadInfo(GET_PLAYER(getOwnerINLINE()).getPersonalityType()).getContactRand(CONTACT_NATIVE_RAID);
 								//iRand += std::max(0, 40 - GC.getGameINLINE().getGameTurn());
@@ -3484,11 +3484,11 @@ void CvUnitAI::AI_defensiveBraveMove()
 						if (pCity->AI_canMakeGift())
 						{
 							int iRand = GC.getLeaderHeadInfo(GET_PLAYER(getOwnerINLINE()).getPersonalityType()).getContactRand(CONTACT_YIELD_GIFT);
-							iRand += std::max(0, 40 - GC.getGameINLINE().getGameTurn());
+							iRand += std::max(0, GC.getGameINLINE().AI_adjustedTurn(40) - GC.getGameINLINE().getGameTurn());
 							if (iRand > GC.getGame().getSorenRandNum(100 * plot()->plotCount(PUF_isUnitAIType, UNITAI_DEFENSIVE, -1, getOwnerINLINE()), "AI native bear gifts"))
 							{
 								AI_setUnitAIState(UNITAI_STATE_BEARING_GIFTS);
-								pCity->AI_setGiftTimer(GC.getLeaderHeadInfo(GET_PLAYER(getOwnerINLINE()).getPersonalityType()).getContactDelay(CONTACT_YIELD_GIFT));
+								pCity->AI_setGiftTimer(GC.getGameINLINE().AI_adjustedTurn(GC.getLeaderHeadInfo(GET_PLAYER(getOwnerINLINE()).getPersonalityType()).getContactDelay(CONTACT_YIELD_GIFT)));
 							}
 						}
 
@@ -3499,12 +3499,12 @@ void CvUnitAI::AI_defensiveBraveMove()
 							if (iRandTrade > GC.getGame().getSorenRandNum(100 * plot()->plotCount(PUF_isUnitAIType, UNITAI_DEFENSIVE, -1, getOwnerINLINE()), "AI native trade"))
 							{
 								AI_setUnitAIState(UNITAI_STATE_BEARING_TRADE);
-								pCity->AI_setTradeTimer(GC.getLeaderHeadInfo(GET_PLAYER(getOwnerINLINE()).getPersonalityType()).getContactDelay(CONTACT_YIELD_GIFT) / 2);
+								pCity->AI_setTradeTimer(GC.getGameINLINE().AI_adjustedTurn(GC.getLeaderHeadInfo(GET_PLAYER(getOwnerINLINE()).getPersonalityType()).getContactDelay(CONTACT_YIELD_GIFT) / 2));
 							}
 						}
 					}
 					// R&R, ray, Natives Trading - END
-					else if (GC.getGame().getSorenRandNum(10, "AI native start wandering") == 0)
+					else if (GC.getGame().getSorenRandNum(GC.getGameINLINE().AI_adjustedTurn(10), "AI native start wandering") == 0)
 					{
 						if (kOwner.AI_countNumHomedUnits(pCity, NO_UNITAI, UNITAI_STATE_WANDER) < 2)
 						{
@@ -3590,7 +3590,7 @@ void CvUnitAI::AI_defensiveBraveMove()
 		{
 			return;
 		}
-		if ((kOwner.AI_cityDistance(plot()) > 6) || (GC.getGameINLINE().getGameTurn() - AI_getLastAIChangeTurn() > 8))
+		if ((kOwner.AI_cityDistance(plot()) > 6) || (GC.getGameINLINE().getGameTurn() - AI_getLastAIChangeTurn() > GC.getGameINLINE().AI_adjustedTurn(8)))
 		{
 			AI_setUnitAIState(UNITAI_STATE_RETURN_HOME);
 		}
@@ -3642,7 +3642,7 @@ void CvUnitAI::AI_defensiveBraveMove()
 			return;
 		}
 
-		if ((kOwner.AI_cityDistance(plot()) > 12) || (GC.getGameINLINE().getGameTurn() - AI_getLastAIChangeTurn() > 30))
+		if ((kOwner.AI_cityDistance(plot()) > 12) || (GC.getGameINLINE().getGameTurn() - AI_getLastAIChangeTurn() > GC.getGameINLINE().AI_adjustedTurn(30)))
 		{
 			AI_setUnitAIState(UNITAI_STATE_RETURN_HOME);
 		}
@@ -5305,7 +5305,7 @@ void CvUnitAI::AI_assaultSeaMove()
 		{
 			if( pCity != NULL )
 			{
-				if( (GC.getGameINLINE().getGameTurn() - pCity->getGameTurnAcquired()) <= 1 )
+				if( (GC.getGameINLINE().getGameTurn() - pCity->getGameTurnAcquired()) <= GC.getGameINLINE().AI_adjustedTurn(1) )
 				{
 					if( pCity->getPreviousOwner() != NO_PLAYER )
 					{
@@ -5466,7 +5466,7 @@ void CvUnitAI::AI_assaultSeaMove()
 			else if (plot()->getTeam() == getTeam() && getGroup()->getNumUnits() > 1)
 			{
 				CvCity* pCity = plot()->getPlotCity();
-				if( pCity != NULL && (GC.getGameINLINE().getGameTurn() - pCity->getGameTurnAcquired()) > 10 )
+				if( pCity != NULL && (GC.getGameINLINE().getGameTurn() - pCity->getGameTurnAcquired()) > GC.getGameINLINE().AI_adjustedTurn(10) )
 				{
 					if( pCity->plot()->plotCount(PUF_isAvailableUnitAITypeGroupie, UNITAI_OFFENSIVE, -1, getOwnerINLINE()) < iTargetReinforcementSize )
 					{
@@ -5501,7 +5501,7 @@ void CvUnitAI::AI_assaultSeaMove()
 					CvCity* pAdjacentCity = pAdjacentPlot->getPlotCity();
 					if( pAdjacentCity != NULL && pAdjacentCity->getOwnerINLINE() == getOwnerINLINE() && pAdjacentCity->getPreviousOwner() != NO_PLAYER )
 					{
-						if( (GC.getGameINLINE().getGameTurn() - pAdjacentCity->getGameTurnAcquired()) < 5 )
+						if( (GC.getGameINLINE().getGameTurn() - pAdjacentCity->getGameTurnAcquired()) < GC.getGameINLINE().AI_adjustedTurn(5) )
 						{
 							// If just captured city and we have some cargo, dump units in city
 							getGroup()->pushMission(MISSION_MOVE_TO, pAdjacentPlot->getX_INLINE(), pAdjacentPlot->getY_INLINE(), 0, false, false, MISSIONAI_ASSAULT, pAdjacentPlot);
@@ -7830,7 +7830,7 @@ bool CvUnitAI::AI_hasAIChanged(int iNumTurns) const
 		return false;
 	}
 
-	if (GC.getGameINLINE().getGameTurn() - AI_getLastAIChangeTurn() < iNumTurns)
+	if (GC.getGameINLINE().getGameTurn() - AI_getLastAIChangeTurn() < GC.getGameINLINE().AI_adjustedTurn(iNumTurns))
 	{
 		return true;
 	}
@@ -10330,7 +10330,7 @@ bool CvUnitAI::AI_guardCity(bool bAll, int iMaxPath)
 					bool bLandWar = !isNative() && ((eAreaAIType == AREAAI_OFFENSIVE) || (eAreaAIType == AREAAI_BALANCED) || (eAreaAIType == AREAAI_DEFENSIVE) || (eAreaAIType == AREAAI_MASSING));
 					if (bLandWar)
 					{
-						if (GC.getGame().getGameTurn() - pCity->getGameTurnAcquired() < 10)
+						if (GC.getGame().getGameTurn() - pCity->getGameTurnAcquired() < GC.getGameINLINE().AI_adjustedTurn(10))
 						{
 							CvSelectionGroup* pSplitGroup = getGroup()->splitGroup(iMinDefenders);
 							pSplitGroup->pushMission(MISSION_SKIP, -1, -1, 0, false, false, MISSIONAI_GUARD_CITY, NULL);
@@ -10383,7 +10383,7 @@ bool CvUnitAI::AI_guardCity(bool bAll, int iMaxPath)
 			{
 				if (!(pLoopPlot->isVisibleEnemyUnit(this)))
 				{
-					if ((GC.getGame().getGameTurn() - pLoopCity->getGameTurnAcquired() < 10) || iIncoming < 3)
+					if ((GC.getGame().getGameTurn() - pLoopCity->getGameTurnAcquired() < GC.getGameINLINE().AI_adjustedTurn(10)) || iIncoming < 3)
 					{
 						int iPathTurns = 0;
 						if (atPlot(pLoopPlot) || generatePath(pLoopPlot, 0, true, &iPathTurns, iMaxPath))
@@ -12389,7 +12389,7 @@ bool CvUnitAI::AI_exploreOcean(int iRange)
 						iValue /= 1 + iEuropeCount;
 					}
 
-					if (GC.getGameINLINE().getGameTurn() < 10)
+					if (GC.getGameINLINE().getGameTurn() < GC.getGameINLINE().AI_adjustedTurn(10))
 					{
 						DirectionTypes currentDirection = getDirectionFrom_dX_dY(iDX, iDY);
 
@@ -16308,7 +16308,7 @@ bool CvUnitAI::AI_assaultSeaReinforce(bool bNative)
 				if( iValue > 0 )
 				{
 					bool bCityDanger = pLoopCity->AI_isDanger();
-					if( (bCity && pLoopCity->area() != area()) || bCityDanger || ((GC.getGameINLINE().getGameTurn() - pLoopCity->getGameTurnAcquired()) < 10 && pLoopCity->getPreviousOwner() != NO_PLAYER) )
+					if( (bCity && pLoopCity->area() != area()) || bCityDanger || ((GC.getGameINLINE().getGameTurn() - pLoopCity->getGameTurnAcquired()) < GC.getGameINLINE().AI_adjustedTurn(10) && pLoopCity->getPreviousOwner() != NO_PLAYER) )
 					{
 						int iOurPower = std::max(1, pLoopCity->area()->getPower(getOwnerINLINE()));
 						// Enemy power includes barb power

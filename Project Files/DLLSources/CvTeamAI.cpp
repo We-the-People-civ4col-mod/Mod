@@ -2517,7 +2517,7 @@ void CvTeamAI::AI_doWar()
 				{
 					FAssert(isAtWar((TeamTypes)iI));
 
-					if (AI_getAtWarCounter((TeamTypes)iI) > ((GET_TEAM((TeamTypes)iI).AI_isLandTarget(getID())) ? 9 : 3))
+					if (AI_getAtWarCounter((TeamTypes)iI) > GC.getGameINLINE().AI_adjustedTurn((GET_TEAM((TeamTypes)iI).AI_isLandTarget(getID())) ? 9 : 3))
 					{
 						AI_setWarPlan(((TeamTypes)iI), WARPLAN_ATTACKED);
 					}

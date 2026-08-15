@@ -96,6 +96,28 @@ int CvGameAI::AI_adjustedTurn(int iTurn)
 	
 }
 
+int CvGameAI::AI_effectiveTurns(int iRawTurns) const
+{
+	int iGrowthPercent = GC.getGameSpeedInfo(getGameSpeedType()).getGrowthPercent();
+	if (iGrowthPercent < 1)
+	{
+		iGrowthPercent = 100;
+	}
+
+	return (iRawTurns * 100) / iGrowthPercent;
+}
+
+int CvGameAI::AI_speedChance(int iPercent) const
+{
+	int iGrowthPercent = GC.getGameSpeedInfo(getGameSpeedType()).getGrowthPercent();
+	if (iGrowthPercent < 1)
+	{
+		iGrowthPercent = 100;
+	}
+
+	return std::max(1, (iPercent * 100) / iGrowthPercent);
+}
+
 
 int CvGameAI::AI_turnsPercent(int iTurns, int iPercent)
 {

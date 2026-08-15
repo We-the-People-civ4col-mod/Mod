@@ -3943,14 +3943,14 @@ void CvGame::getTurnTimerText(CvWString& szBuffer) const
 
 	if (getGameState() == GAMESTATE_ON)
 	{
-		if (isOption(GAMEOPTION_ADVANCED_START) && !isOption(GAMEOPTION_ALWAYS_WAR) && getElapsedGameTurns() <= GC.getDefineINT("PEACE_TREATY_LENGTH"))
+		if (isOption(GAMEOPTION_ADVANCED_START) && !isOption(GAMEOPTION_ALWAYS_WAR) && getElapsedGameTurns() <= GC.getGameINLINE().AI_adjustedTurn(GC.getDefineINT("PEACE_TREATY_LENGTH")))
 		{
 			if (!szBuffer.empty())
 			{
 				szBuffer += L" -- ";
 			}
 
-			szBuffer += gDLL->getText("TXT_KEY_MISC_ADVANCED_START_PEACE_REMAINING", GC.getDefineINT("PEACE_TREATY_LENGTH") - getElapsedGameTurns());
+			szBuffer += gDLL->getText("TXT_KEY_MISC_ADVANCED_START_PEACE_REMAINING", GC.getGameINLINE().AI_adjustedTurn(GC.getDefineINT("PEACE_TREATY_LENGTH")) - getElapsedGameTurns());
 		}
 		else if (getMaxTurns() > 0)
 		{
