@@ -730,12 +730,11 @@ class CvDiplomacy:
 		iGiftValue = pOther.AI_getTradeAttitudeValue(eActive)
 		translator = CyTranslator()
 
-		if iBonus >= 4:
-			szText = translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_CAP", (iGiftValue, iTurnsUntilDecay))
-		elif iBonus > 0:
-			szText = translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_INFO", (iBonus, iGoldForPlusOne, iBonus - 1, iTurnsUntilDecay, iGiftValue))
-		else:
-			szText = translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_NONE", (iGoldForPlusOne,))
+		szText = translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_GIVEN", (iGiftValue,))
+		if iBonus < 4 and iGoldForPlusOne > 0:
+			szText = szText + translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_NEXT", (iGoldForPlusOne,))
+		if iTurnsUntilDecay > 0:
+			szText = szText + translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_DECAY", (iTurnsUntilDecay,))
 
 		# setAIString takes a C char*, not unicode
 		if isinstance(szText, unicode):

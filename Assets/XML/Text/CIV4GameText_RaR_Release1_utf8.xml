@@ -969,28 +969,28 @@
 		<Hungarian>%D1: "A kereskedelmi kapcsolataink kielégítőek."</Hungarian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_INFO</Tag>
-		<English>Gifts: +%d1 (value %d5)[NEWLINE]%d2 gold for +1[NEWLINE]This bonus drops to +%d3 in %d4 turns.</English>
+		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_GIVEN</Tag>
+		<English>Gifts given: %d1</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_CAP</Tag>
-		<English>Gifts: +4 (maximum, value %d1)[NEWLINE]This bonus drops to +3 in %d2 turns.</English>
+		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_NEXT</Tag>
+		<English>%d1 gold for +1</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_NONE</Tag>
-		<English>Gifts: +0[NEWLINE]%d1 gold for +1</English>
+		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_DECAY</Tag>
+		<English>Decays in %d1 turns</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_INFO</Tag>
-		<English>[NEWLINE][NEWLINE]Gifts: +%d1 (value %d5)[NEWLINE]%d2 gold for +1[NEWLINE]This bonus drops to +%d3 in %d4 turns.</English>
+		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_GIVEN</Tag>
+		<English>[NEWLINE][NEWLINE]Gifts given: %d1</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_CAP</Tag>
-		<English>[NEWLINE][NEWLINE]Gifts: +4 (maximum, value %d1)[NEWLINE]This bonus drops to +3 in %d2 turns.</English>
+		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_NEXT</Tag>
+		<English>[NEWLINE]%d1 gold for +1</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_NONE</Tag>
-		<English>[NEWLINE][NEWLINE]Gifts: +0[NEWLINE]%d1 gold for +1</English>
+		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_DECAY</Tag>
+		<English>[NEWLINE]Decays in %d1 turns</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ATTITUDE_RIVAL_TRADE</Tag>
