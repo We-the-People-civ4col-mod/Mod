@@ -8833,7 +8833,10 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 	// workers (carpenter, preacher, statesman) still need the % breakdown.
 	if (iModifiedProduction != 0)
 	{
-		int iModifier = setCityYieldModifierString(szBuffer, eYieldType, city);
+		setCityYieldModifierString(szBuffer, eYieldType, city);
+		// Use the same modifier the city applies to yields. The help string is
+		// only the breakdown; a reconstructed sum can drift from the real value.
+		int iModifier = city.getBaseYieldRateModifier(eYieldType);
 		if (iModifier != 100)
 		{
 			iModifiedProduction *= iModifier;
@@ -9300,22 +9303,6 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 		iBaseModifier += iBuildingMod;
 	}
 
-	int iPlayerMod = kOwner.getYieldRateModifier(eYieldType);
-	if (0 != iPlayerMod)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_PLAYER", iPlayerMod, info.getChar()));
-		iBaseModifier += iPlayerMod;
-	}
-
-	int iTaxMod = kOwner.getTaxYieldRateModifier(eYieldType);
-	if (0 != iTaxMod)
-	{
-		szBuffer.append(NEWLINE);
-		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_TAX", iTaxMod, info.getChar()));
-		iBaseModifier += iTaxMod;
-	}
-
 	// Capital
 	if (kCity.isCapital())
 	{
@@ -9327,6 +9314,12 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 			iBaseModifier += iCapitalMod;
 		}
 	}
+
+	// Civics and founding fathers are already stored in the player yield/tax
+	// caches. List them by name here, then only add any leftover cache that
+	// those XML loops did not cover (do not add the caches themselves or they
+	// are counted twice and Total Production exceeds Final Production).
+	int iListedPlayerMod = 0;
 
 	// Civics
 	int iCivicMod = 0;
@@ -9342,6 +9335,7 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 		szBuffer.append(NEWLINE);
 		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_CIVICS", iCivicMod, info.getChar()));
 		iBaseModifier += iCivicMod;
+		iListedPlayerMod += iCivicMod;
 	}
 
 	// Founding Fathers
@@ -9360,10 +9354,20 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 			if (0 != iTraitMod)
 			{
 				iBaseModifier += iTraitMod;
+				iListedPlayerMod += iTraitMod;
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_FATHER", iTraitMod, info.getChar(), kTraitInfo.getTextKeyWide()));
 			}
 		}
+	}
+
+	int iPlayerCacheMod = kOwner.getYieldRateModifier(eYieldType) + kOwner.getTaxYieldRateModifier(eYieldType);
+	int iUnlistedPlayerMod = iPlayerCacheMod - iListedPlayerMod;
+	if (0 != iUnlistedPlayerMod)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_PLAYER", iUnlistedPlayerMod, info.getChar()));
+		iBaseModifier += iUnlistedPlayerMod;
 	}
 
 	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - START
