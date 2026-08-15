@@ -4648,6 +4648,7 @@
 		<Italian>Stesso computer</Italian>
 		<Spanish>De uno en uno</Spanish>
 		<Russian>Hot Seat - Несколько игроков на одном компьютере</Russian>
+		<Hungarian>Többen egy gépen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SELECT_A_DIFFICULTY</Tag>
@@ -4657,6 +4658,7 @@
 		<Italian>Seleziona la difficoltà</Italian>
 		<Spanish>Seleccionar una dificultad</Spanish>
 		<Russian>Выбрать сложность</Russian>
+		<Hungarian>Válassz nehézségi szintet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SELECT_A_MAP</Tag>
@@ -4666,6 +4668,7 @@
 		<Italian>Seleziona una mappa</Italian>
 		<Spanish>Seleccionar un mapa</Spanish>
 		<Russian>Выберите карту</Russian>
+		<Hungarian>Válassz térképet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SELECT_A</Tag>
@@ -4675,6 +4678,7 @@
 		<Italian>Seleziona [SPACE]</Italian>
 		<Spanish>Seleccionar [SPACE]</Spanish>
 		<Russian>Выберите [SPACE]</Russian>
+		<Hungarian>Válassz:[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SINGLE_PLAYER</Tag>
@@ -4684,6 +4688,7 @@
 		<Italian>Giocatore singolo</Italian>
 		<Spanish>Un jugador</Spanish>
 		<Russian>Одиночная игра</Russian>
+		<Hungarian>Egyszemélyes játék</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_MULTIPLAYER</Tag>
@@ -4693,6 +4698,7 @@
 		<Italian>Multigiocatore</Italian>
 		<Spanish>Multijugador</Spanish>
 		<Russian>Многопользовательская игра</Russian>
+		<Hungarian>Többszemélyes játék</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_EXIT_GAME</Tag>
@@ -4702,6 +4708,7 @@
 		<Italian>Esci dalla partita</Italian>
 		<Spanish>Salir del juego</Spanish>
 		<Russian>Выйти из игры</Russian>
+		<Hungarian>Kilépés a játékból</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_HUMAN</Tag>
@@ -4711,6 +4718,7 @@
 		<Italian>Umano</Italian>
 		<Spanish>Humano</Spanish>
 		<Russian>Человек</Russian>
+		<Hungarian>Emberi</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CHOOSE_GAME_LOAD</Tag>
@@ -4720,6 +4728,7 @@
 		<Italian>Scegli una partita da caricare!</Italian>
 		<Spanish>Elegir la partida a cargar</Spanish>
 		<Russian>Выберите игру для загрузки</Russian>
+		<Hungarian>Válaszd ki a betöltendő játékállást</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_OPEN</Tag>
@@ -4729,6 +4738,7 @@
 		<Italian>Aperto</Italian>
 		<Spanish>Abierto</Spanish>
 		<Russian>Открыть</Russian>
+		<Hungarian>Nyílt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_AI</Tag>
@@ -4738,6 +4748,7 @@
 		<Italian>IA</Italian>
 		<Spanish>IA</Spanish>
 		<Russian>ИИ</Russian>
+		<Hungarian>MI</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CLOSED</Tag>
@@ -4747,6 +4758,7 @@
 		<Italian>Chiuso</Italian>
 		<Spanish>Cerrado</Spanish>
 		<Russian>Закрыть</Russian>
+		<Hungarian>Zárt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_READY</Tag>
@@ -4756,6 +4768,7 @@
 		<Italian>Pronto</Italian>
 		<Spanish>Listo</Spanish>
 		<Russian>Готов</Russian>
+		<Hungarian>Kész</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NOT_READY</Tag>
@@ -4765,6 +4778,7 @@
 		<Italian>Non pronto</Italian>
 		<Spanish>No está listo</Spanish>
 		<Russian>Не готов</Russian>
+		<Hungarian>Még nincs kész</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_ERROR</Tag>
@@ -4773,6 +4787,7 @@
 		<German>FEHLER</German>
 		<Italian>ERRORE</Italian>
 		<Spanish>ERROR</Spanish>
+		<Hungarian>HIBA</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_DISCONNECTED</Tag>
@@ -4781,6 +4796,7 @@
 		<German>Unterbrochen</German>
 		<Italian>Disconnesso</Italian>
 		<Spanish>Desconectado</Spanish>
+		<Hungarian>Szétkapcsolódott</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_UNCLAIMED</Tag>
@@ -4789,6 +4805,7 @@
 		<German>Leer</German>
 		<Italian>Vuoto</Italian>
 		<Spanish>Sin dueño</Spanish>
+		<Hungarian>Gazdátlan</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_IGNORE_TERRAIN</Tag>
@@ -4797,6 +4814,7 @@
 		<German>[ICON_BULLET]Ignoriert Extra-Fortbewegungskosten durch Gelände</German>
 		<Italian>[ICON_BULLET]Ignora i costi di movimento sul terreno</Italian>
 		<Spanish>[ICON_BULLET]No le afectan los costes de movimiento por terreno</Spanish>
+		<Hungarian>[ICON_BULLET]Figyelmen kívül hagyja a terepen való mozgás költségeit</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_BAR_GROWTH</Tag>
@@ -4806,6 +4824,7 @@
 		<Italian>Crescita : %d1 / %d2[ICON_FOOD]</Italian>
 		<Spanish>Crecimiento : %d1 / %d2[ICON_FOOD]</Spanish>
 		<Russian>Еды для роста : %d1 / %d2[ICON_FOOD]</Russian>
+		<Hungarian>Növekedés : %d1 / %d2[ICON_FOOD]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_BAR_FOOD_GROWTH</Tag>
@@ -4815,6 +4834,7 @@
 		<Italian>Crescita : %d1 / %d2[ICON_FOOD] (%d3 [NUM3:turno:turni])</Italian>
 		<Spanish>Crecimiento : %d1 / %d2[ICON_FOOD] (%d3 [NUM3:turno:turnos])</Spanish>
 		<Russian>Рост : %d1 / %d2[ICON_FOOD] (%d3 [NUM3:ход:ходов])</Russian>
+		<Hungarian>Növekedés : %d1 / %d2[ICON_FOOD] (%d3 kör)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_BAR_PRODUCTION</Tag>
@@ -4831,6 +4851,7 @@
 		<German>%s1 : %d2 / %d3%F5_Icon (%d4 [NUM4:Runde:Runden])</German>
 		<Italian>%s1 : %d2 / %d3%F5_Icon (%d4 [NUM4:turno:turni])</Italian>
 		<Spanish>%s1 : %d2 / %d3%F5_Icon (%d4 [NUM4:turno:turnos])</Spanish>
+		<Hungarian>%s1 : %d2 / %d3%F5_Icon (%d4 [NUM4:kör:kör])</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_BAR_CULTURE</Tag>
@@ -4840,6 +4861,7 @@
 		<Italian>Cultura : %d1 / %d2[ICON_CULTURE] (%s3)</Italian>
 		<Spanish>Cultura : %d1 / %d2[ICON_CULTURE] (%s3)</Spanish>
 		<Russian>Культура : %d1 / %d2[ICON_CULTURE] (%s3)</Russian>
+		<Hungarian>Kultúra : %d1 / %d2[ICON_CULTURE] (%s3)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_BAR_SELECT</Tag>
@@ -4849,6 +4871,7 @@
 		<Italian>[COLOR:140:255:40:255]&lt;Clicca con il tasto sinistro &gt;[COLOR_REVERT] [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Italian>
 		<Spanish>Hacer [COLOR:140:255:40:255]&lt;clic izquierdo &gt;[COLOR_REVERT] para seleccionar [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR:140:255:40:255]Клик ЛКМ[COLOR_REVERT] чтобы выбрать [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Russian>
+		<Hungarian>Kattints [COLOR:140:255:40:255]&lt; Ballal &gt;[COLOR_REVERT] [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] kiválasztásához</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_FOOD_THRESHOLD</Tag>
@@ -4858,6 +4881,7 @@
 		<Italian>Cibo : %d1_Num / %d2_Threshold[ICON_FOOD]</Italian>
 		<Spanish>Alimentos : %d1_Num / %d2_Threshold[ICON_FOOD]</Spanish>
 		<Russian>Еды для роста : %d1_Num / %d2_Threshold[ICON_FOOD]</Russian>
+		<Hungarian>Élelem: %d1_Num / %d2_Threshold[ICON_FOOD]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_TURNS_LEFT</Tag>
@@ -4866,6 +4890,7 @@
 		<German>Noch %d1 [NUM1:Runde:Runden]!</German>
 		<Italian>%d1 [NUM1:turno rimasto:turni rimasti]!</Italian>
 		<Spanish>[NUM1:Queda:Quedan] %d1 [NUM1:turno:turnos]</Spanish>
+		<Hungarian>%d1 kör a Győzelemig!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_YOUR_DETAILS</Tag>
@@ -4875,6 +4900,7 @@
 		<Italian>I tuoi dettagli :</Italian>
 		<Spanish>Detalles :</Spanish>
 		<Russian>Ваши данные :</Russian>
+		<Hungarian>Adatlapod :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_LEADER_NAME</Tag>
@@ -4884,6 +4910,7 @@
 		<Italian>Nome leader :</Italian>
 		<Spanish>Nombre del líder :</Spanish>
 		<Russian>Имя лидера</Russian>
+		<Hungarian>Vezető Neve :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_CIV_DESC</Tag>
@@ -4893,6 +4920,7 @@
 		<Italian>Descriz. civiltà :</Italian>
 		<Spanish>Civilización :</Spanish>
 		<Russian>Описание цивилизации</Russian>
+		<Hungarian>Civilizáció :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_CIV_SHORT_DESC</Tag>
@@ -4902,6 +4930,7 @@
 		<Italian>Br. descriz. civ. :</Italian>
 		<Spanish>Descripción :</Spanish>
 		<Russian>Краткое описание</Russian>
+		<Hungarian>Civilizáció :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_CIV_ADJ</Tag>
@@ -4911,6 +4940,7 @@
 		<Italian>Aggettivo :</Italian>
 		<Spanish>Adjetivo :</Spanish>
 		<Russian>Характеристика цивилизации</Russian>
+		<Hungarian>Civilizáció Jelzője :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_BUDDY_REQUEST_TITLE</Tag>
@@ -4919,6 +4949,7 @@
 		<German>Freund-Anfrage</German>
 		<Italian>Richiesta amico</Italian>
 		<Spanish>Solicitud de amigo</Spanish>
+		<Hungarian>Barátkozási Kérés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_ADD_BUDDY</Tag>
@@ -4927,6 +4958,7 @@
 		<German>%s1_Name möchte Euch als Freund aufnehmen</German>
 		<Italian>%s1_Name vorrebbe aggiungerti come amico</Italian>
 		<Spanish>A %s1_Name le gustaría agregarte como amigo</Spanish>
+		<Hungarian>%s1_Name fel szeretne venni a barátai közé</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_GAME_RESUMED</Tag>
@@ -4936,6 +4968,7 @@
 		<Italian>Partita ripresa da [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT]</Italian>
 		<Spanish>Partida reanudada por [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT]</Spanish>
 		<Russian>Игра возобновлена игроком [COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] a játék folytatása mellett döntött</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_CHAT_STRING</Tag>
@@ -4944,6 +4977,7 @@
 		<German>[%s1_Plyr1 an %s2_Plyr2] : %s3_ChatMsg</German>
 		<Italian>[%s1_Plyr1 a %s2_Plyr2] : %s3_ChatMsg</Italian>
 		<Spanish>[%s1_Plyr1 a %s2_Plyr2] : %s3_ChatMsg</Spanish>
+		<Hungarian>[%s1_Plyr1 %s2_Plyr2 számára] : %s3_ChatMsg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FLYOUT_MENU_MOVE_TO</Tag>
@@ -4953,6 +4987,7 @@
 		<Italian>Muovi a (%d1_NumTurns)</Italian>
 		<Spanish>Mover a (%d1_NumTurns [NUM1:turno:turnos])</Spanish>
 		<Russian>Двигаться к (%d1_NumTurns)</Russian>
+		<Hungarian>Mozgás (%d1_NumTurns)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FLYOUT_MENU_SELECT_ALL</Tag>
@@ -4962,6 +4997,7 @@
 		<Italian>Seleziona tutto</Italian>
 		<Spanish>Seleccionar todo</Spanish>
 		<Russian>Выбрать всех</Russian>
+		<Hungarian>Összes kiválasztása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FLYOUT_MENU_WAKE_ALL</Tag>
@@ -4970,6 +5006,7 @@
 		<German>Alle wecken</German>
 		<Italian>Sveglia tutte le unità</Italian>
 		<Spanish>Despertar a todas</Spanish>
+		<Hungarian>Összes felébresztése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FLYOUT_MENU_FORTIFY_ALL</Tag>
@@ -4978,6 +5015,7 @@
 		<German>Alle verschanzen</German>
 		<Italian>Fortifica tutte le unità</Italian>
 		<Spanish>Fortificar a todas</Spanish>
+		<Hungarian>Összes beásása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FLYOUT_MENU_SLEEP_ALL</Tag>
@@ -4986,6 +5024,7 @@
 		<German>Alle ausruhen</German>
 		<Italian>Fai dormire tutte le unità</Italian>
 		<Spanish>Dormir a todas</Spanish>
+		<Hungarian>Összes altatása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIQUE_UNIT</Tag>
@@ -4995,6 +5034,7 @@
 		<Italian>[ICON_BULLET]Unità unica per la civiltà %s1_civ</Italian>
 		<Spanish>[ICON_BULLET]Unidad exclusiva de %s1_civ</Spanish>
 		<Russian>[ICON_BULLET]Уникальный юнит для %s1_civ</Russian>
+		<Hungarian>[ICON_BULLET]%s1_civ különleges egysége</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REPLACES_UNIT</Tag>
@@ -5004,6 +5044,7 @@
 		<Italian>[ICON_BULLET]Sostituisce l'unità [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Reemplaza a la unidad de [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Замещает [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Lecseréli : [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_UNIT_BUILDING_HURRY</Tag>
@@ -5013,6 +5054,7 @@
 		<Italian>[COLOR_WARNING_TEXT]Puoi solamente accelerare la produzione di un'unità o un edificio.[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]Solo se puede acelerar la producción de una unidad o un edificio.[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]Ускорить можно только строительство юнита или здания.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]Csak egy egység vagy épület előállítását lehet felgyorsítani.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_CANCEL_DEAL</Tag>
@@ -5022,6 +5064,7 @@
 		<Italian>Sei sicuro di voler annullare questo affare?</Italian>
 		<Spanish>¿Seguro que queréis cancelar este trato?</Spanish>
 		<Russian>Вы уверены, что хотите отменить эту сделку?</Russian>
+		<Hungarian>Biztos, hogy felbontod ezt a megállapodást?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_CANCEL_DEAL_YES</Tag>
@@ -5031,6 +5074,7 @@
 		<Italian>Certamente, annulla l'affare.</Italian>
 		<Spanish>Por supuesto, cancelémoslo.</Spanish>
 		<Russian>Конечно, отменить сделку</Russian>
+		<Hungarian>Abszolút, bontsuk fel!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_CANCEL_DEAL_NO</Tag>
@@ -5040,6 +5084,7 @@
 		<Italian>Uhm, forse dovremmo ripensarci?</Italian>
 		<Spanish>Quizá debamos replanteárnoslo.</Spanish>
 		<Russian>Хммм.. Нет, я передумал.</Russian>
+		<Hungarian>Hm, talán ezt át kellene gondolnom.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_CANNOT_CANCEL_DEAL</Tag>
@@ -5049,6 +5094,7 @@
 		<Italian>L'accordo non può essere annullato in questo momento.</Italian>
 		<Spanish>Este trato no puede cancelarse ahora mismo.</Spanish>
 		<Russian>В настоящее время эта сделка не может быть отменена.</Russian>
+		<Hungarian>Ez a megállapodás jelenleg nem bontható fel.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PBEM</Tag>
@@ -5058,6 +5104,7 @@
 		<Italian>Gioca tramite e-mail</Italian>
 		<Spanish>Juego por e-mail</Spanish>
 		<Russian>Играть через e-mail</Russian>
+		<Hungarian>Játék e-mailben</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PBEM_ENTER_ADDRESS</Tag>
@@ -5066,6 +5113,7 @@
 		<German>E-Mail-Adresse für %s1_player eingeben :</German>
 		<Italian>Inserisci l'indirizzo e-mail di %s1_player :</Italian>
 		<Spanish>Escribe la dirección de e-mail de %s1_player :</Spanish>
+		<Hungarian>%s1_player e-mail címe :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PBEM_DONT_SEND</Tag>
@@ -5074,6 +5122,7 @@
 		<German>Nicht senden</German>
 		<Italian>Non spedire</Italian>
 		<Spanish>No enviar</Spanish>
+		<Hungarian>Ne küldd el</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_BUILDING_DEFENSE_DEMAND</Tag>
@@ -5083,6 +5132,7 @@
 		<Italian>Signore, le difese della città [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] sono deboli e siamo un bersaglio invitante! Ricorda, una buona difesa crea un buon vicinato, La costruzione dell'edificio [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] metterebbe al sicuro la nostra gente!</Italian>
 		<Spanish>Excelencia, las defensas de [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] son muy débiles, por lo que estamos invitando a que la invadan. Recordad que las verjas altas hacen buenos a los vecinos. La construcción de [NUM2:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] le daría a nuestro pueblo una merecida seguridad.</Spanish>
 		<Russian>Милорд, защита [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] очеь слаба, что делает нас очень привлекательной целью! Строительство [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] позволит обеспечить безопасность нашим людям!</Russian>
+		<Hungarian>Uram, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] védelme gyenge, könnyű célpont vagyunk. Ne feledd, a jó kerítés a jó szomszédság titka! Egy [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] megépítése után végre biztonságban érezhetnék magukat a lakosaink.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_CULTURE_DEMAND</Tag>
@@ -5092,6 +5142,7 @@
 		<Italian>Signore, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] non sta producendo cultura che invece ci servirebbe per espandere i nostri confini e controllare il mondo! La costruzione di [NUM2:un:una] [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] aumenterà la cultura!</Italian>
 		<Spanish>Excelencia, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] no está generando cultura alguna, cosa que serviría para expandir nuestras fronteras y apoderarnos de una mayor parte del mundo. Si construyéramos [NUM2:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] permitiríamos que fluyese la cultura.</Spanish>
 		<Russian>Милорд, в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] очень низкий уровень культуры. Строительство [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] поможет нашей культуре процветать! Это расширит наши границы, подчинив нашему влиянию больше территорий Нового Света!</Russian>
+		<Hungarian>Uram, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] nem termel Kultúrát -- pedig ez kiterjesztené határainkat, és még nagyobb területek felett uralkodhatnánk. Egy [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] megépítése szabad folyást engedne Kultúránknak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_DEMAND_AGREE</Tag>
@@ -5101,6 +5152,7 @@
 		<Italian>Bene, fallo alla prossima opportunità.</Italian>
 		<Spanish>Bien, hacedlo en cuanto se presente la oportunidad.</Spanish>
 		<Russian>Ладно, сделай это при первой же возможности.</Russian>
+		<Hungarian>Rendben van, tegyünk így a következő alkalommal!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_DEMAND_REFUSE</Tag>
@@ -5110,6 +5162,7 @@
 		<Italian>Scordatelo, qui comando io!</Italian>
 		<Spanish>Olvidadlo, ¡aquí soy yo quien manda!</Spanish>
 		<Russian>Забудь об этом!</Russian>
+		<Hungarian>Felejtsd el, én vagyok itt a főnök!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_DETAILS_EMAIL</Tag>
@@ -5118,6 +5171,7 @@
 		<German>E-Mail-Adresse</German>
 		<Italian>Indirizzo e-mail</Italian>
 		<Spanish>Dirección de e-mail</Spanish>
+		<Hungarian>E-mail cím</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_DETAILS_SMTP</Tag>
@@ -5126,6 +5180,7 @@
 		<German>SMTP-Server</German>
 		<Italian>Server SMTP</Italian>
 		<Spanish>Servidor SMTP</Spanish>
+		<Hungarian>SMTP szerver</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_DEFEAT</Tag>
@@ -5135,6 +5190,7 @@
 		<Italian>Sei stato sconfitto!</Italian>
 		<Spanish>¡Os han derrotado!</Spanish>
 		<Russian>Вы потерпели поражение!</Russian>
+		<Hungarian>Legyőzettél!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAME_WON</Tag>
@@ -5144,6 +5200,7 @@
 		<Italian>%s1 ha ottenuto una vittoria %s2!</Italian>
 		<Spanish>¡%s1 ha conseguido una victoria %s2!</Spanish>
 		<Russian>%s1 одержал победу - %s2!</Russian>
+		<Hungarian>%s1 %s2 győzelmet aratott!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_MOVEMENT_COST</Tag>
@@ -5153,6 +5210,7 @@
 		<Italian>[ICON_BULLET]Il viaggio costa 1/%d1 punto movimento</Italian>
 		<Spanish>[ICON_BULLET]Viajar cuesta 1/%d1 de los puntos de movimiento.</Spanish>
 		<Russian>[ICON_BULLET]Стоимость перемещения равна 1/%d1 очков движения</Russian>
+		<Hungarian>[ICON_BULLET]A lépés 1/%d1 mozgáspontba kerül</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_FLAT_MOVEMENT_COST</Tag>
@@ -5161,6 +5219,7 @@
 		<German>[ICON_BULLET]Alle Einheiten können sich %d1 Geländefelder/Runde fortbewegen</German>
 		<Italian>[ICON_BULLET]Tutte le unità possono muovere %d1 caselle/turno</Italian>
 		<Spanish>[ICON_BULLET]Todas las unidades se pueden mover %d1 casillas/turno.</Spanish>
+		<Hungarian>[ICON_BULLET]Minden Egység %d1 Mezőt Léphet Körönként</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EXTENDED_GAME_YES</Tag>
@@ -5170,6 +5229,7 @@
 		<Italian>Aspetta! Ancora... un... turno... soltanto...</Italian>
 		<Spanish>¡Espera! Solo... un... turno... más...</Spanish>
 		<Russian>Подождите! Ещё... один... ход...</Russian>
+		<Hungarian>Várj! Csak... még... egy... kör...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EXTENDED_GAME_NO_MENU</Tag>
@@ -5179,6 +5239,7 @@
 		<Italian>Vai al menu principale</Italian>
 		<Spanish>Salir al menú principal</Spanish>
 		<Russian>Выйти в основное меню</Russian>
+		<Hungarian>Kilépés a Főmenübe</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEAT_ACCOMPLISHED_OK</Tag>
@@ -5188,6 +5249,7 @@
 		<Italian>Molto bene, continua pure...</Italian>
 		<Spanish>Muy bien, seguid así...</Spanish>
 		<Russian>Ну что же, давайте продолжим</Russian>
+		<Hungarian>Rendben, akkor folytassuk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEAT_ACCOMPLISHED_MORE</Tag>
