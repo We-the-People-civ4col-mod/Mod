@@ -969,6 +969,30 @@
 		<Hungarian>%D1: "A kereskedelmi kapcsolataink kielégítőek."</Hungarian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_INFO</Tag>
+		<English>Gifts: +%d1 (value %d5). %d2 gold for +1. This bonus drops to +%d3 in %d4 turns.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_CAP</Tag>
+		<English>Gifts: +4 (maximum, value %d1). This bonus drops to +3 in %d2 turns.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_NONE</Tag>
+		<English>Gifts: +0. %d1 gold for +1.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_INFO</Tag>
+		<English>[NEWLINE][NEWLINE]Gifts: +%d1 (value %d5). %d2 gold for +1. This bonus drops to +%d3 in %d4 turns.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_CAP</Tag>
+		<English>[NEWLINE][NEWLINE]Gifts: +4 (maximum, value %d1). This bonus drops to +3 in %d2 turns.</English>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_NONE</Tag>
+		<English>[NEWLINE][NEWLINE]Gifts: +0. %d1 gold for +1.</English>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISC_ATTITUDE_RIVAL_TRADE</Tag>
 		<English>%D1: "You have traded with our worst enemies!"</English>
 		<French>%D1 : "Vous avez commercé avec nos ennemis jurés !"</French>

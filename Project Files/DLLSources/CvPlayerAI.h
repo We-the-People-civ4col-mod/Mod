@@ -143,6 +143,10 @@ public:
 	int AI_getShareWarAttitude(PlayerTypes ePlayer);
 	int AI_getTradeAttitude(PlayerTypes ePlayer);
 	int AI_getRivalTradeAttitude(PlayerTypes ePlayer);
+	int AI_getTradeAttitudeValue(PlayerTypes ePlayer);
+	int AI_getTradeAttitudeDivisor(PlayerTypes ePlayer);
+	int AI_getTradeAttitudeGoldForNextLevel(PlayerTypes ePlayer);
+	int AI_getTradeAttitudeTurnsUntilDecay(PlayerTypes ePlayer);
 	int AI_getMemoryAttitude(PlayerTypes ePlayer, MemoryTypes eMemory);
 
 	int AI_dealVal(PlayerTypes ePlayer, const CLinkList<TradeData>* pList, bool bIgnoreAnnual = false, int iExtra = 1);

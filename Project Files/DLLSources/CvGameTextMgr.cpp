@@ -7999,6 +7999,33 @@ void CvGameTextMgr::getAttitudeString(CvWStringBuffer& szBuffer, PlayerTypes ePl
 			szBuffer.append(NEWLINE);
 			szBuffer.append(szTempBuffer);
 		}
+		if (iPass == 0 && kPlayer.isNative())
+		{
+			const int iGoldForPlusOne = kPlayer.AI_getTradeAttitudeGoldForNextLevel(eTargetPlayer);
+			const int iTurnsUntilDecay = kPlayer.AI_getTradeAttitudeTurnsUntilDecay(eTargetPlayer);
+			const int iGiftValue = kPlayer.AI_getTradeAttitudeValue(eTargetPlayer);
+			if (iAttitudeChange >= 4)
+			{
+				szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_POSITIVE_TEXT"),
+					gDLL->getText("TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_CAP", iGiftValue, iTurnsUntilDecay).GetCString());
+				szBuffer.append(NEWLINE);
+				szBuffer.append(szTempBuffer);
+			}
+			else if (iAttitudeChange > 0)
+			{
+				szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_POSITIVE_TEXT"),
+					gDLL->getText("TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_INFO", iAttitudeChange, iGoldForPlusOne, iAttitudeChange - 1, iTurnsUntilDecay, iGiftValue).GetCString());
+				szBuffer.append(NEWLINE);
+				szBuffer.append(szTempBuffer);
+			}
+			else if (iGoldForPlusOne > 0)
+			{
+				szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_POSITIVE_TEXT"),
+					gDLL->getText("TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_NONE", iGoldForPlusOne).GetCString());
+				szBuffer.append(NEWLINE);
+				szBuffer.append(szTempBuffer);
+			}
+		}
 
 		iAttitudeChange = kPlayer.AI_getRivalTradeAttitude(eTargetPlayer);
 		if ((iPass == 0) ? (iAttitudeChange > 0) : (iAttitudeChange < 0))

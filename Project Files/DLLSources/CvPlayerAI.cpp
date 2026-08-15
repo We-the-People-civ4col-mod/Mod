@@ -3733,16 +3733,99 @@ int CvPlayerAI::AI_getShareWarAttitude(PlayerTypes ePlayer)
 	return iAttitude;
 }
 
+int CvPlayerAI::AI_getTradeAttitudeValue(PlayerTypes ePlayer)
+{
+	return AI_getPeacetimeGrantValue(ePlayer) + std::max(0, (AI_getPeacetimeTradeValue(ePlayer) - GET_PLAYER(ePlayer).AI_getPeacetimeTradeValue(getID())));
+}
+
+int CvPlayerAI::AI_getTradeAttitudeDivisor(PlayerTypes ePlayer)
+{
+	int iSpeedPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+	if (iSpeedPercent < 1)
+	{
+		iSpeedPercent = 100;
+	}
+
+	const int iHasMetTurns = GET_TEAM(getTeam()).AI_getHasMetCounter(GET_PLAYER(ePlayer).getTeam());
+	const int iEffectiveTurns = (iHasMetTurns * 100) / iSpeedPercent;
+	return (iEffectiveTurns + 1) * 5;
+}
+
 int CvPlayerAI::AI_getTradeAttitude(PlayerTypes ePlayer)
 {
-	// XXX human only?
-	return range(((AI_getPeacetimeGrantValue(ePlayer) + std::max(0, (AI_getPeacetimeTradeValue(ePlayer) - GET_PLAYER(ePlayer).AI_getPeacetimeTradeValue(getID())))) / ((GET_TEAM(getTeam()).AI_getHasMetCounter(GET_PLAYER(ePlayer).getTeam()) + 1) * 5)), 0, 4);
+	const int iDivisor = AI_getTradeAttitudeDivisor(ePlayer);
+	if (iDivisor < 1)
+	{
+		return 0;
+	}
+
+	return range(AI_getTradeAttitudeValue(ePlayer) / iDivisor, 0, 4);
+}
+
+int CvPlayerAI::AI_getTradeAttitudeGoldForNextLevel(PlayerTypes ePlayer)
+{
+	const int iCurrent = AI_getTradeAttitude(ePlayer);
+	if (iCurrent >= 4)
+	{
+		return 0;
+	}
+
+	const int iDivisor = AI_getTradeAttitudeDivisor(ePlayer);
+	if (iDivisor < 1)
+	{
+		return 0;
+	}
+
+	const int iNeededValue = ((iCurrent + 1) * iDivisor) - AI_getTradeAttitudeValue(ePlayer);
+	int iGoldPercent = AI_goldTradeValuePercent();
+	if (iGoldPercent < 1)
+	{
+		iGoldPercent = 100;
+	}
+
+	return std::max(0, (iNeededValue * 100 + iGoldPercent - 1) / iGoldPercent);
+}
+
+int CvPlayerAI::AI_getTradeAttitudeTurnsUntilDecay(PlayerTypes ePlayer)
+{
+	const int iCurrent = AI_getTradeAttitude(ePlayer);
+	if (iCurrent <= 0)
+	{
+		return -1;
+	}
+
+	const int iValue = AI_getTradeAttitudeValue(ePlayer);
+	int iSpeedPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+	if (iSpeedPercent < 1)
+	{
+		iSpeedPercent = 100;
+	}
+
+	const int iHasMetTurns = GET_TEAM(getTeam()).AI_getHasMetCounter(GET_PLAYER(ePlayer).getTeam());
+	for (int iExtraTurns = 1; iExtraTurns <= 10000; ++iExtraTurns)
+	{
+		const int iEffectiveTurns = ((iHasMetTurns + iExtraTurns) * 100) / iSpeedPercent;
+		const int iDivisor = (iEffectiveTurns + 1) * 5;
+		if (iDivisor > 0 && (iValue / iDivisor) < iCurrent)
+		{
+			return iExtraTurns;
+		}
+	}
+
+	return -1;
 }
 
 int CvPlayerAI::AI_getRivalTradeAttitude(PlayerTypes ePlayer)
 {
-	// XXX human only?
-	return -(range(((GET_TEAM(getTeam()).AI_getEnemyPeacetimeGrantValue(GET_PLAYER(ePlayer).getTeam()) + (GET_TEAM(getTeam()).AI_getEnemyPeacetimeTradeValue(GET_PLAYER(ePlayer).getTeam()) / 3)) / ((GET_TEAM(getTeam()).AI_getHasMetCounter(GET_PLAYER(ePlayer).getTeam()) + 1) * 10)), 0, 4));
+	const int iDivisor = AI_getTradeAttitudeDivisor(ePlayer) * 2;
+	if (iDivisor < 1)
+	{
+		return 0;
+	}
+
+	const int iRivalValue = GET_TEAM(getTeam()).AI_getEnemyPeacetimeGrantValue(GET_PLAYER(ePlayer).getTeam())
+		+ (GET_TEAM(getTeam()).AI_getEnemyPeacetimeTradeValue(GET_PLAYER(ePlayer).getTeam()) / 3);
+	return -(range(iRivalValue / iDivisor, 0, 4));
 }
 
 

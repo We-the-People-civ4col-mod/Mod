@@ -717,6 +717,25 @@ class CvDiplomacy:
 		iComment = self.getCommentID( eComment )
 		self.diploScreen.addUserComment( iComment, iData1, iData2, self.getDiplomacyComment(iComment), args)
 
+	def getNativeGiftInfoText(self):
+		eOther = self.diploScreen.getWhoTradingWith()
+		pOther = gc.getPlayer(eOther)
+		if pOther is None or pOther.isNone() or not pOther.isNative():
+			return u""
+
+		eActive = gc.getGame().getActivePlayer()
+		iBonus = pOther.AI_getTradeAttitude(eActive)
+		iGoldForPlusOne = pOther.AI_getTradeAttitudeGoldForNextLevel(eActive)
+		iTurnsUntilDecay = pOther.AI_getTradeAttitudeTurnsUntilDecay(eActive)
+		iGiftValue = pOther.AI_getTradeAttitudeValue(eActive)
+		translator = CyTranslator()
+
+		if iBonus >= 4:
+			return translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_CAP", (iGiftValue, iTurnsUntilDecay))
+		if iBonus > 0:
+			return translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_INFO", (iBonus, iGoldForPlusOne, iBonus - 1, iTurnsUntilDecay, iGiftValue))
+		return translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_NONE", (iGoldForPlusOne,))
+
 	def setAIComment (self, eComment, *args):
 		" Handles the determining the AI comments"
 		AIString = self.getDiplomacyComment(eComment)
@@ -726,6 +745,14 @@ class CvDiplomacy:
 			if (len(args)):
 				print "args", args
 			AIString = "(%d) - %s" %(self.getLastResponseID(), AIString)
+
+		if (self.isComment(eComment, "AI_DIPLOCOMMENT_GREETINGS") or
+				self.isComment(eComment, "AI_DIPLOCOMMENT_FIRST_CONTACT") or
+				self.isComment(eComment, "AI_DIPLOCOMMENT_THANKS") or
+				self.isComment(eComment, "AI_DIPLOCOMMENT_CHIEF_GOODY")):
+			szGiftInfo = self.getNativeGiftInfoText()
+			if szGiftInfo:
+				AIString = AIString + szGiftInfo
 
 		self.diploScreen.setAIString(AIString, args)
 		self.diploScreen.setAIComment(eComment)
