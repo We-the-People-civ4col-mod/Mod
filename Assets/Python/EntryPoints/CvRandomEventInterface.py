@@ -3208,9 +3208,18 @@ def canTriggerPacificDone(argsList):
 	player = gc.getPlayer(kTriggeredData.ePlayer)
 	iAchieve = gc.getInfoTypeForString("ACHIEVE_PACIFIC")
 	#CyInterface().addImmediateMessage("iAchieve "+str(iAchieve), "")
-	if player.isAchieveGained(iAchieve):
-		return True
-	return False
+	if not player.isAchieveGained(iAchieve):
+		return False
+
+	# Same start-side rule as canTriggerPacific: west-starting civs must not complete this.
+	city = player.getCity(kTriggeredData.iCityId)
+	if city is None or city.isNone():
+		(city, iter) = player.firstCity(True)
+	if city is None or city.isNone():
+		return False
+	if city.getX() <= CyMap().getGridWidth() / 2:
+		return False
+	return True
 
 ######## Atlantic Quest ###########
 
@@ -3251,10 +3260,18 @@ def canTriggerAtlanticDone(argsList):
 
 	iAchieve = gc.getInfoTypeForString("ACHIEVE_ATLANTIC")
 
-	if player.isAchieveGained(iAchieve):
-		return True
+	if not player.isAchieveGained(iAchieve):
+		return False
 
-	return False
+	# Same start-side rule as canTriggerAtlantic: east-starting civs must not complete this.
+	city = player.getCity(kTriggeredData.iCityId)
+	if city is None or city.isNone():
+		(city, iter) = player.firstCity(True)
+	if city is None or city.isNone():
+		return False
+	if city.getX() > CyMap().getGridWidth() / 2:
+		return False
+	return True
 
 ######## VOLCANO ###########
 

@@ -21235,38 +21235,35 @@ void CvPlayer::doAchievements(bool afterMove)
 							}
 						}
 					}
-					if (GC.getAchieveInfo((AchieveTypes)iI).isDiscoverEast())
+					if (GC.getAchieveInfo((AchieveTypes)iI).isDiscoverEast() || GC.getAchieveInfo((AchieveTypes)iI).isDiscoverWest())
 					{
-						for (iJ = 0; iJ < GC.getMap().numPlotsINLINE(); iJ++)
+						// Passage quests are "cross the continent". A civ whose colony is
+						// already on that ocean must not get the achievement from start vision.
+						const CvCity* pHomeCity = getCapitalCity();
+						if (pHomeCity == NULL)
 						{
-							pPlot = GC.getMap().plotByIndexINLINE(iJ);
-							if (pPlot->isRevealed(getTeam(), false))
-							{
-								// WTP, ray, fixing issue for Europe East / West Achievement
-								// we only trigger if there is no Improvement on it to prevent Reveal Goody Bug
-								// I have no idea why I cannot use EUROPE_EAST
-								if (pPlot->isEurope() && pPlot->getEurope() == EUROPE_EAST && pPlot->getImprovementType() == NO_IMPROVEMENT)
-								{
-									bGained = true;
-									iJ = GC.getMap().numPlotsINLINE();
-								}
-							}
+							int iHomeLoop = 0;
+							pHomeCity = firstCity(&iHomeLoop);
 						}
-					}
-					if (GC.getAchieveInfo((AchieveTypes)iI).isDiscoverWest())
-					{
-						for (iJ = 0; iJ < GC.getMap().numPlotsINLINE(); iJ++)
+						const bool bHomeOnEastHalf = (pHomeCity != NULL && pHomeCity->getX_INLINE() > GC.getMap().getGridWidthINLINE() / 2);
+						const bool bMayDiscoverEast = (pHomeCity != NULL && !bHomeOnEastHalf);
+						const bool bMayDiscoverWest = bHomeOnEastHalf;
+
+						if ((GC.getAchieveInfo((AchieveTypes)iI).isDiscoverEast() && bMayDiscoverEast) ||
+							(GC.getAchieveInfo((AchieveTypes)iI).isDiscoverWest() && bMayDiscoverWest))
 						{
-							pPlot = GC.getMap().plotByIndexINLINE(iJ);
-							if (pPlot->isRevealed(getTeam(), false))
+							const EuropeTypes eWantedEurope = GC.getAchieveInfo((AchieveTypes)iI).isDiscoverWest() ? EUROPE_WEST : EUROPE_EAST;
+							for (iJ = 0; iJ < GC.getMap().numPlotsINLINE(); iJ++)
 							{
-								// WTP, ray, fixing issue for Europe East / West Achievement
-								// we only trigger if there is no Improvement on it to prevent Reveal Goody Bug
-								// I have no idea why I cannot use EUROPE_WEST
-								if (pPlot->isEurope() && pPlot->getEurope() == EUROPE_WEST && pPlot->getImprovementType() == NO_IMPROVEMENT)
+								pPlot = GC.getMap().plotByIndexINLINE(iJ);
+								if (pPlot->isRevealed(getTeam(), false))
 								{
-									bGained = true;
-									iJ = GC.getMap().numPlotsINLINE();
+									// Skip goody-revealed tiles (improvement present) to avoid the reveal-goody bug.
+									if (pPlot->isEurope() && pPlot->getEurope() == eWantedEurope && pPlot->getImprovementType() == NO_IMPROVEMENT)
+									{
+										bGained = true;
+										iJ = GC.getMap().numPlotsINLINE();
+									}
 								}
 							}
 						}
