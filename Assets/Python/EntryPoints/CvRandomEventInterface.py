@@ -5482,9 +5482,36 @@ def _cityHasEuropeAccess(city):
 	if city is None or city.isNone():
 		return False
 
-	# Real ocean/coast only. Lakes and great rivers can be water, but ships
-	# cannot sail from them to Europe.
-	return city.isEuropeAccessable()
+	if city.isCoastal(gc.getMIN_WATER_SIZE_FOR_OCEAN()):
+		return True
+
+	if _plotHasAdjacentSeaWater(city.plot()):
+		return True
+
+	return False
+
+def _cityHasAdjacentOceanPlot(city):
+	if city is None or city.isNone():
+		return False
+
+	iOcean = gc.getInfoTypeForString("TERRAIN_OCEAN")
+	if iOcean == -1:
+		return False
+
+	for iDirection in range(DirectionTypes.NUM_DIRECTION_TYPES):
+		pAdjacentPlot = plotDirection(
+			city.getX(),
+			city.getY(),
+			DirectionTypes(iDirection)
+		)
+
+		if pAdjacentPlot is None or pAdjacentPlot.isNone():
+			continue
+
+		if pAdjacentPlot.getTerrainType() == iOcean:
+			return True
+
+	return False
 
 def _unitClassIsNaval(player, iUnitClass):
 	if player is None or player.isNone() or iUnitClass == -1:
@@ -5496,15 +5523,31 @@ def _unitClassIsNaval(player, iUnitClass):
 
 	return gc.getUnitInfo(iUnitType).getDomainType() == DomainTypes.DOMAIN_SEA
 
+def _initOwnPlayerUnit(player, iUnitClass, iX, iY):
+	iUnitType = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iUnitClass)
+	if iUnitType == -1:
+		return None
+
+	# spawnOwnPlayerUnitOnPlotOfCity is void; initUnit returns the created unit
+	# so callers can name Queen Anne's Revenge / Black Pearl in both spawn paths.
+	return player.initUnit(
+		iUnitType,
+		gc.getUnitInfo(iUnitType).getDefaultProfession(),
+		iX,
+		iY,
+		UnitAITypes.NO_UNITAI,
+		DirectionTypes.NO_DIRECTION,
+		0
+	)
+
 def _spawnRewardedShip(player, iUnitClass, city=None):
-	# Spawn a rewarded ship on the destination city only if that city has
-	# ocean access. Otherwise send it to Europe.
+	# Spawn a rewarded ship on a city with an adjacent ocean plot.
+	# Otherwise send it to Europe. Returns the created unit in both cases.
 	if player is None or player.isNone() or iUnitClass == -1:
 		return None
 
-	if city is not None and not city.isNone() and _cityHasEuropeAccess(city):
-		city.spawnOwnPlayerUnitOnPlotOfCity(iUnitClass)
-		return None
+	if city is not None and not city.isNone() and _cityHasAdjacentOceanPlot(city):
+		return _initOwnPlayerUnit(player, iUnitClass, city.getX(), city.getY())
 
 	iUnitType = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iUnitClass)
 	if iUnitType == -1:
@@ -27920,7 +27963,7 @@ def getFirstOceanAccessCity(player):
 
 	while city:
 		if not city.isNone():
-			if _cityHasEuropeAccess(city):
+			if _cityHasAdjacentOceanPlot(city):
 				return city
 
 		(city, iter) = player.nextCity(iter, True)
@@ -28307,7 +28350,12 @@ def applyCommandeeredReturn(argsList):
 	if iUnitClass == -1:
 		return
 
-	_spawnRewardedShip(player, iUnitClass, getFirstOceanAccessCity(player))
+	city = getFirstOceanAccessCity(player)
+
+	if city is None or city.isNone():
+		return
+
+	city.spawnOwnPlayerUnitOnPlotOfCity(iUnitClass)
 
 	_clearCommandeeredShipClass(player)
 
