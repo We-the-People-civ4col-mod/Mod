@@ -11572,6 +11572,19 @@ namespace
 	const int NATIVE_TEACH_BONUS_SCORE = 10000;
 	const int NATIVE_TEACH_FEATURE_SCORE = 1000;
 	const int NATIVE_TEACH_LARGE_RIVER_SCORE = 1000;
+	// Arctic coastal villages: fisherman must beat generic tundra/snow fur.
+	const int NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_SCORE = 8000;
+	const int NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_WEIGHT = 4;
+
+	bool isArcticTerrain(TerrainTypes eTerrain)
+	{
+		return eTerrain == TERRAIN_TUNDRA || eTerrain == TERRAIN_SNOW;
+	}
+
+	bool isSeaCoastTerrain(TerrainTypes eTerrain)
+	{
+		return eTerrain == TERRAIN_COAST || eTerrain == TERRAIN_SHALLOW_COAST || eTerrain == TERRAIN_OCEAN;
+	}
 
 	void stripPrefix(CvString& szText, const char* szPrefix)
 	{
@@ -11672,11 +11685,32 @@ namespace
 
 		return false;
 	}
+
+	bool bonusMatchesProfession(BonusTypes eBonus, UnitClassTypes eUnitClass, const CvProfessionInfo& kProfession, YieldTypes eWantedYield, const CvCivilizationInfo& kCiv)
+	{
+		if (eBonus == NO_BONUS)
+		{
+			return false;
+		}
+
+		if (isBonusNamedForUnitClass(eBonus, eUnitClass))
+		{
+			return true;
+		}
+
+		if (anyTeachUnitClaimsBonusByName(eBonus, kCiv))
+		{
+			return false;
+		}
+
+		return bonusGivesYield(eBonus, eWantedYield);
+	}
 }
 
-// Native village specialty: pick a local yield within 2 plots.
-// Only yields that actually exist are eligible. Bonus resources outrank
-// uncommon features, which outrank common terrain. No random roll.
+// Native village specialty: pick a local yield within 2 plots (Chebyshev).
+// Only yields that actually exist are eligible. Map bonuses outrank
+// uncommon features, which outrank common terrain. Arctic coastal
+// villages give fisherman extra weight. No random roll.
 UnitClassTypes CvCity::bestTeachUnitClass()
 {
 	PROFILE_FUNC();
@@ -11684,6 +11718,37 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 	const CvCivilizationInfo& kCiv = GC.getCivilizationInfo(kOwner.getCivilizationType());
 	CvMap& kMap = GC.getMap();
+
+	int iArcticLandPlots = 0;
+	int iLandPlots = 0;
+	bool bHasSeaCoast = false;
+	LOOP_ADJACENT_PLOTS(getX_INLINE(), getY_INLINE(), NATIVE_TEACH_SCAN_RANGE)
+	{
+		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+		if (pLoopPlot == NULL)
+		{
+			continue;
+		}
+
+		if (pLoopPlot->isWater())
+		{
+			if (isSeaCoastTerrain(pLoopPlot->getTerrainType()))
+			{
+				bHasSeaCoast = true;
+			}
+		}
+		else
+		{
+			++iLandPlots;
+			if (isArcticTerrain(pLoopPlot->getTerrainType()))
+			{
+				++iArcticLandPlots;
+			}
+		}
+	}
+
+	const bool bArcticVillage = isArcticTerrain(plot()->getTerrainType()) || (iLandPlots > 0 && iArcticLandPlots * 2 >= iLandPlots);
+	const bool bArcticCoast = bArcticVillage && (bHasSeaCoast || plot()->isCoastalLand());
 
 	UnitClassTypes eFallbackUnitClass = NO_UNITCLASS;
 	UnitClassTypes eBestUnitClass = NO_UNITCLASS;
@@ -11771,14 +11836,18 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 					continue;
 				}
 
-				if (isBonusNamedForUnitClass(eBonus, eUnitClass))
+				if (bonusMatchesProfession(eBonus, eUnitClass, kProfession, eWantedYield, kCiv))
 				{
 					++iBonusMatches;
 				}
-				else if (bonusGivesYield(eBonus, eWantedYield) && !anyTeachUnitClaimsBonusByName(eBonus, kCiv))
-				{
-					++iBonusMatches;
-				}
+			}
+
+			const bool bFurSpecialist =
+				(0 == strcmp(GC.getUnitClassInfo(eUnitClass).getType(), "UNITCLASS_HUNTER") ||
+				 0 == strcmp(GC.getUnitClassInfo(eUnitClass).getType(), "UNITCLASS_TRAPPER"));
+			if (bFurSpecialist && iBonusMatches == 0)
+			{
+				iFeatureMatches = 0;
 			}
 
 			if (iYieldAmount <= 0 && iFeatureMatches <= 0 && iBonusMatches <= 0 && iLargeRiverMatches <= 0)
@@ -11786,7 +11855,15 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 				continue;
 			}
 
-			const int iProfessionValue = (iYieldAmount + iFeatureMatches * NATIVE_TEACH_FEATURE_SCORE + iLargeRiverMatches * NATIVE_TEACH_LARGE_RIVER_SCORE + iBonusMatches * NATIVE_TEACH_BONUS_SCORE) * iWeight;
+			int iUsedWeight = iWeight;
+			int iArcticCoastScore = 0;
+			if (bArcticCoast && 0 == strcmp(GC.getUnitClassInfo(eUnitClass).getType(), "UNITCLASS_FISHERMAN"))
+			{
+				iUsedWeight = std::max(iWeight, 1) * NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_WEIGHT;
+				iArcticCoastScore = NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_SCORE;
+			}
+
+			const int iProfessionValue = (iYieldAmount + iFeatureMatches * NATIVE_TEACH_FEATURE_SCORE + iLargeRiverMatches * NATIVE_TEACH_LARGE_RIVER_SCORE + iBonusMatches * NATIVE_TEACH_BONUS_SCORE) * iUsedWeight + iArcticCoastScore;
 			if (iProfessionValue > iBestProfessionValue)
 			{
 				iBestProfessionValue = iProfessionValue;
