@@ -23,6 +23,12 @@ def getPlayer(idx):
 		return gc.getPlayer(idx)
 	return None
 
+def isWbFlagTrue(value):
+	# WB files write False/True; applyMap used to compare only to "false".
+	if value is None:
+		return False
+	return str(value).strip().lower() in ("true", "1", "yes")
+
 #############
 class CvWBParser:
 	"parser functions for WB desc"
@@ -1191,8 +1197,9 @@ class CvMapDesc:
 		f.write("\tsealevel=%s\n" %(gc.getSeaLevelInfo(map.getSeaLevel()).getType(),))
 		f.write("\tnum plots written=%d\n" %(iNumPlots,))
 		f.write("\tnum signs written=%d\n" %(iNumSigns,))
-		f.write("\tRandomize Features=False\n") #WTP, ray, Randomize Features Map Option
-		f.write("\tRandomize Resources=False\n")
+		f.write("\tRandomize Features=false\n") #WTP, ray, Randomize Features Map Option
+		f.write("\tRandomize Resources=false\n")
+		f.write("\tRandomize Goodies=false\n")
 		f.write("\tCity Catchment Radius=%d\n" %(map.getCityCatchmentRadius(),))
 		f.write("EndMap\n")
 
@@ -1435,17 +1442,17 @@ class CvWBDesc:
 		# Before touching bonuses and features, we first need to ensure that the plots have coast, lake etc set correctly
 		CyMap().updateWaterPlotTerrainTypes()
 
-		if (self.mapDesc.bRandomizeFeatures != "false"): #WTP, ray, Randomize Features Map Option
+		if isWbFlagTrue(self.mapDesc.bRandomizeFeatures):
 			CyMapGenerator().eraseFeaturesOnLand()
 			CyMapGenerator().addFeaturesOnLand()
 			
-		if (self.mapDesc.bRandomizeResources != "false"):
+		if isWbFlagTrue(self.mapDesc.bRandomizeResources):
 			for iPlotLoop in range(CyMap().numPlots()):
 				pPlot = CyMap().plotByIndex(iPlotLoop)
 				pPlot.setBonusType(BonusTypes.NO_BONUS)
 			CyMapGenerator().addBonuses()
 			
-		if (self.mapDesc.bRandomizeGoodies != "false"):
+		if isWbFlagTrue(self.mapDesc.bRandomizeGoodies):
 			CyMapGenerator().eraseGoodies()
 			CyMapGenerator().addGoodies()
 
