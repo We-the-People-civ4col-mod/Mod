@@ -12397,6 +12397,54 @@ def CanDoEuropeTrade(argsList, iYieldID, iQuantity):
 		return False
 	return True
 
+def _appendTradeQuestStandings(szHelp, iYield, eLocation, eActivePlayer):
+	# Live race standings for first-to-ship-X quests. Sold totals for cargo exports;
+	# bought totals for trade/luxury goods imported from that market.
+	if iYield < 0:
+		return szHelp
+
+	iTradeGoods = gc.getInfoTypeForString("YIELD_TRADE_GOODS")
+	iLuxuryGoods = gc.getInfoTypeForString("YIELD_LUXURY_GOODS")
+	bBuy = (iYield == iTradeGoods or iYield == iLuxuryGoods)
+
+	standings = []
+	for iPlayer in range(gc.getMAX_PLAYERS()):
+		loopPlayer = gc.getPlayer(iPlayer)
+		if loopPlayer is None or loopPlayer.isNone() or not loopPlayer.isAlive():
+			continue
+		if not loopPlayer.isPlayable():
+			continue
+		if loopPlayer.isNative() or loopPlayer.isEurope():
+			continue
+		if gc.getGame().isBarbarianPlayer(iPlayer):
+			continue
+
+		if bBuy:
+			iAmount = loopPlayer.getYieldBoughtTotal(eLocation, iYield)
+		else:
+			iAmount = loopPlayer.getYieldSoldTotal(eLocation, iYield)
+		standings.append((iAmount, iPlayer, loopPlayer))
+
+	if len(standings) == 0:
+		return szHelp
+
+	standings.sort(key=lambda item: (-item[0], item[1]))
+	iLeadAmount = standings[0][0]
+
+	szHelp += localText.getText("TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_HEADER", ())
+	for iAmount, iPlayer, loopPlayer in standings:
+		bYou = (iPlayer == eActivePlayer)
+		bLead = (iAmount == iLeadAmount and iLeadAmount > 0)
+		if bYou and bLead:
+			szHelp += localText.getText("TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_YOU_LEAD", (iAmount,))
+		elif bYou:
+			szHelp += localText.getText("TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_YOU", (iAmount,))
+		elif bLead:
+			szHelp += localText.getText("TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_LEAD", (loopPlayer.getCivilizationShortDescription(0), iAmount))
+		else:
+			szHelp += localText.getText("TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_LINE", (loopPlayer.getCivilizationShortDescription(0), iAmount))
+	return szHelp
+
 # This is the Function for the Event Target Yield and Target Amount
 # This Function is only used for the "Quest Start"
 def getHelpQuestStartEuropeTradeYieldAndAmount(argsList):
@@ -12432,6 +12480,7 @@ def getHelpQuestStartEuropeTradeYieldAndAmount(argsList):
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP", (quantity, gc.getYieldInfo(iYield).getChar()))
 		elif iYield == gc.getInfoTypeForString("YIELD_TRADE_GOODS") or iYield == gc.getInfoTypeForString("YIELD_LUXURY_GOODS"):
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY", (quantity, gc.getYieldInfo(iYield).getChar()))
+	szHelp = _appendTradeQuestStandings(szHelp, iYield, TradeLocationTypes.TRADE_LOCATION_EUROPE, gc.getGame().getActivePlayer())
 	return szHelp
 
 # This is the Function for the Event Help Text for Price and Attitude
@@ -15190,6 +15239,7 @@ def getHelpQuestStartAfricaTradeYieldAndAmount(argsList):
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP", (quantity, gc.getYieldInfo(iYield).getChar()))
 		elif iYield == gc.getInfoTypeForString("YIELD_TRADE_GOODS") or iYield== event.getGenericParameter(2) != gc.getInfoTypeForString("YIELD_LUXURY_GOODS"):
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY", (quantity, gc.getYieldInfo(iYield).getChar()))
+	szHelp = _appendTradeQuestStandings(szHelp, iYield, TradeLocationTypes.TRADE_LOCATION_AFRICA, gc.getGame().getActivePlayer())
 	return szHelp
 
 # This is the Function for the Event Help Text for Price and Attitude
@@ -15345,6 +15395,7 @@ def getHelpQuestStartPortRoyalTradeYieldAndAmount(argsList):
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PORTROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP", (quantity, gc.getYieldInfo(iYield).getChar()))
 		elif iYield == gc.getInfoTypeForString("YIELD_TRADE_GOODS") or iYield == gc.getInfoTypeForString("YIELD_LUXURY_GOODS"):
 			szHelp += "\n" + localText.getText("TXT_KEY_EVENT_PORTROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY", (quantity, gc.getYieldInfo(iYield).getChar()))
+	szHelp = _appendTradeQuestStandings(szHelp, iYield, TradeLocationTypes.TRADE_LOCATION_PORT_ROYAL, gc.getGame().getActivePlayer())
 	return szHelp
 
 # This is the Function for the Event Help Text for Price and Attitude

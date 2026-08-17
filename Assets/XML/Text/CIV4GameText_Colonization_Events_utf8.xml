@@ -4835,6 +4835,41 @@
 		<Russian>Продайте товар в указанном количестве в Европе [COLOR_FONT_GOLD]прежде, чем другая нация сможет это [COLOR_REVERT]сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_HEADER</Tag>
+		<English>[NEWLINE]Shipments so far:</English>
+		<French>[NEWLINE]Livraisons jusqu'ici :</French>
+		<German>[NEWLINE]Bisher geliefert:</German>
+		<Russian>[NEWLINE]Поставки на данный момент:</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_YOU</Tag>
+		<English>[NEWLINE]You: %d1</English>
+		<French>[NEWLINE]Vous : %d1</French>
+		<German>[NEWLINE]Ihr: %d1</German>
+		<Russian>[NEWLINE]Вы: %d1</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_YOU_LEAD</Tag>
+		<English>[NEWLINE]You: %d1 [COLOR_FONT_GOLD](lead)[COLOR_REVERT]</English>
+		<French>[NEWLINE]Vous : %d1 [COLOR_FONT_GOLD](en tête)[COLOR_REVERT]</French>
+		<German>[NEWLINE]Ihr: %d1 [COLOR_FONT_GOLD](führt)[COLOR_REVERT]</German>
+		<Russian>[NEWLINE]Вы: %d1 [COLOR_FONT_GOLD](лидер)[COLOR_REVERT]</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_LINE</Tag>
+		<English>[NEWLINE]%s1: %d2</English>
+		<French>[NEWLINE]%s1 : %d2</French>
+		<German>[NEWLINE]%s1: %d2</German>
+		<Russian>[NEWLINE]%s1: %d2</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_LEAD</Tag>
+		<English>[NEWLINE]%s1: %d2 [COLOR_FONT_GOLD](lead)[COLOR_REVERT]</English>
+		<French>[NEWLINE]%s1 : %d2 [COLOR_FONT_GOLD](en tête)[COLOR_REVERT]</French>
+		<German>[NEWLINE]%s1: %d2 [COLOR_FONT_GOLD](führt)[COLOR_REVERT]</German>
+		<Russian>[NEWLINE]%s1: %d2 [COLOR_FONT_GOLD](лидер)[COLOR_REVERT]</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
 		<English>Trade the following quantity of goods from Europe to the colonies [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>
 		<French>Acheminez d'Europe vers vos colonies cette quantité de biens [COLOR_FONT_GOLD]avant toute autre nation [COLOR_REVERT]: %D1_amount %F2_yield</French>
