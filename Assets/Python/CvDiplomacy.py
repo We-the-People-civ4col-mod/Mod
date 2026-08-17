@@ -726,17 +726,10 @@ class CvDiplomacy:
 			return ""
 
 		eActive = gc.getGame().getActivePlayer()
-		iBonus = pOther.AI_getTradeAttitude(eActive)
-		iGoldForPlusOne = pOther.AI_getTradeAttitudeGoldForNextLevel(eActive)
-		iTurnsUntilDecay = pOther.AI_getTradeAttitudeTurnsUntilDecay(eActive)
 		iGiftValue = pOther.AI_getTradeAttitudeValue(eActive)
 		translator = CyTranslator()
 
 		szText = translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_GIVEN", (iGiftValue,))
-		if iBonus < 4 and iGoldForPlusOne > 0:
-			szText = szText + translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_NEXT", (iGoldForPlusOne,))
-		if iTurnsUntilDecay > 0:
-			szText = szText + translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_DECAY", (iTurnsUntilDecay,))
 
 		# setAIString takes a C char*, not unicode
 		if isinstance(szText, unicode):

@@ -970,27 +970,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_GIVEN</Tag>
-		<English>[COLOR_PLAYER_BLUE_TEXT]Gift bonus: %d1[COLOR_REVERT]</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_NEXT</Tag>
-		<English>%d1 gold for +1</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_DECAY</Tag>
-		<English>[COLOR_YELLOW]Decays in %d1 turns[COLOR_REVERT]</English>
+		<English>[COLOR_PLAYER_BLUE_TEXT]Total gift given: %d1[COLOR_REVERT]</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_GIVEN</Tag>
-		<English>[NEWLINE][NEWLINE][COLOR_PLAYER_BLUE_TEXT]Gift bonus: %d1[COLOR_REVERT]</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_NEXT</Tag>
-		<English>[NEWLINE]%d1 gold for +1</English>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_DECAY</Tag>
-		<English>[NEWLINE][COLOR_YELLOW]Decays in %d1 turns[COLOR_REVERT]</English>
+		<English>[NEWLINE][NEWLINE][COLOR_PLAYER_BLUE_TEXT]Total gift given: %d1[COLOR_REVERT]</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ATTITUDE_PEACE_TALK</Tag>

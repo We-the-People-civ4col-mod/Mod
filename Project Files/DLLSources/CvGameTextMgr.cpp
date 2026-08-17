@@ -8001,27 +8001,11 @@ void CvGameTextMgr::getAttitudeString(CvWStringBuffer& szBuffer, PlayerTypes ePl
 		}
 		if (iPass == 0)
 		{
-			const int iGoldForPlusOne = kPlayer.AI_getTradeAttitudeGoldForNextLevel(eTargetPlayer);
-			const int iTurnsUntilDecay = kPlayer.AI_getTradeAttitudeTurnsUntilDecay(eTargetPlayer);
 			const int iGiftValue = kPlayer.AI_getTradeAttitudeValue(eTargetPlayer);
 			szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_BLUE_TEXT"),
 				gDLL->getText("TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_GIVEN", iGiftValue).GetCString());
 			szBuffer.append(NEWLINE);
 			szBuffer.append(szTempBuffer);
-			if (iAttitudeChange < 4 && iGoldForPlusOne > 0)
-			{
-				szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_POSITIVE_TEXT"),
-					gDLL->getText("TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_NEXT", iGoldForPlusOne).GetCString());
-				szBuffer.append(NEWLINE);
-				szBuffer.append(szTempBuffer);
-			}
-			if (iTurnsUntilDecay > 0)
-			{
-				szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_YELLOW"),
-					gDLL->getText("TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_DECAY", iTurnsUntilDecay).GetCString());
-				szBuffer.append(NEWLINE);
-				szBuffer.append(szTempBuffer);
-			}
 			const int iPeaceTalkTurns = kPlayer.AI_getTurnsUntilWillingToTalk(eTargetPlayer);
 			if (iPeaceTalkTurns > 0)
 			{
