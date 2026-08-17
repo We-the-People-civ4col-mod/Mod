@@ -5513,16 +5513,6 @@ def _cityHasAdjacentOceanPlot(city):
 
 	return False
 
-def _unitClassIsNaval(player, iUnitClass):
-	if player is None or player.isNone() or iUnitClass == -1:
-		return False
-
-	iUnitType = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iUnitClass)
-	if iUnitType == -1:
-		return False
-
-	return gc.getUnitInfo(iUnitType).getDomainType() == DomainTypes.DOMAIN_SEA
-
 def _initOwnPlayerUnit(player, iUnitClass, iX, iY):
 	iUnitType = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iUnitClass)
 	if iUnitType == -1:
@@ -5541,13 +5531,24 @@ def _initOwnPlayerUnit(player, iUnitClass, iX, iY):
 	)
 
 def _spawnRewardedShip(player, iUnitClass, city=None):
-	# Spawn a rewarded ship on a city with an adjacent ocean plot.
-	# Otherwise send it to Europe. Returns the created unit in both cases.
+	# Normal rewarded ship:
+	#   preferred city if it has adjacent TERRAIN_OCEAN
+	#   else first city with adjacent TERRAIN_OCEAN
+	#   else Europe
+	# Returns the created unit in both the city and Europe paths.
+	# Do not use this for events that must wait for a colonial port
+	# (for example CommandeeredReturn).
 	if player is None or player.isNone() or iUnitClass == -1:
 		return None
 
+	pCity = None
 	if city is not None and not city.isNone() and _cityHasAdjacentOceanPlot(city):
-		return _initOwnPlayerUnit(player, iUnitClass, city.getX(), city.getY())
+		pCity = city
+	else:
+		pCity = getFirstOceanAccessCity(player)
+
+	if pCity is not None and not pCity.isNone():
+		return _initOwnPlayerUnit(player, iUnitClass, pCity.getX(), pCity.getY())
 
 	iUnitType = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iUnitClass)
 	if iUnitType == -1:
@@ -17145,10 +17146,7 @@ def spawnOwnPlayerUnitOnSamePlotAsCity(argsList):
 	iOwnUnitClassTypeToSpawn = event.getGenericParameter(1)
 	iNumOwnToSpawn = event.getGenericParameter(2)
 	for iX in range(iNumOwnToSpawn):
-		if _unitClassIsNaval(player, iOwnUnitClassTypeToSpawn):
-			_spawnRewardedShip(player, iOwnUnitClassTypeToSpawn, city)
-		else:
-			city.spawnOwnPlayerUnitOnPlotOfCity(iOwnUnitClassTypeToSpawn)
+		city.spawnOwnPlayerUnitOnPlotOfCity(iOwnUnitClassTypeToSpawn)
 
 # adjacent Plot
 def spawnOwnPlayerUnitAdjacentToCity(argsList):
