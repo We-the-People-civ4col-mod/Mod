@@ -2118,7 +2118,7 @@ class CvMainInterface:
 							CitizenHideList.append("PlotDragOn" + str(iPlotIndex))
 
 							# city plot mouse over help - inaiwae - START
-							screen.addDDSGFC("CityPlotInfo" + str(iPlotIndex), "", x-(size_x/32), y-(size_y/4), size_x, size_y, WidgetTypes.WIDGET_CITY_PLOT_INFO, iPlotIndex, -1)
+							screen.addDDSGFC("CityPlotInfo" + str(iPlotIndex), "", x-(size_x/32), y, size_x, size_y, WidgetTypes.WIDGET_CITY_PLOT_INFO, iPlotIndex, -1)
 							CitizenHideList.append("CityPlotInfo" + str(iPlotIndex))
 							# city plot mouse over help - inaiwae - END
 
