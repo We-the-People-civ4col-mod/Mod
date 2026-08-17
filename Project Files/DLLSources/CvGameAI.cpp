@@ -109,6 +109,11 @@ int CvGameAI::AI_effectiveTurns(int iRawTurns) const
 
 int CvGameAI::AI_speedChance(int iPercent) const
 {
+	if (iPercent <= 0)
+	{
+		return 0;
+	}
+
 	int iGrowthPercent = GC.getGameSpeedInfo(getGameSpeedType()).getGrowthPercent();
 	if (iGrowthPercent < 1)
 	{
