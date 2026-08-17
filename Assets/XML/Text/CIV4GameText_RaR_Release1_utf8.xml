@@ -970,11 +970,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_GIVEN</Tag>
-		<English>[COLOR_PLAYER_BLUE_TEXT]Total gift given: %d1[COLOR_REVERT]</English>
+		<English>[COLOR_PLAYER_BLUE_TEXT]Total gifts given: %d1[COLOR_REVERT]</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DIPLO_NATIVE_GIFT_GIVEN</Tag>
-		<English>[NEWLINE][NEWLINE][COLOR_PLAYER_BLUE_TEXT]Total gift given: %d1[COLOR_REVERT]</English>
+		<English>[NEWLINE][NEWLINE][COLOR_PLAYER_BLUE_TEXT]Total gifts given: %d1[COLOR_REVERT]</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ATTITUDE_PEACE_TALK</Tag>

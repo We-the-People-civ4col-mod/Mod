@@ -727,8 +727,10 @@ class CvDiplomacy:
 
 		eActive = gc.getGame().getActivePlayer()
 		iGiftValue = pOther.AI_getTradeAttitudeValue(eActive)
-		translator = CyTranslator()
+		if iGiftValue <= 0:
+			return ""
 
+		translator = CyTranslator()
 		szText = translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_GIVEN", (iGiftValue,))
 
 		# setAIString takes a C char*, not unicode
