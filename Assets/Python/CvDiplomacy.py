@@ -720,7 +720,9 @@ class CvDiplomacy:
 	def getNativeGiftInfoText(self):
 		eOther = self.diploScreen.getWhoTradingWith()
 		pOther = gc.getPlayer(eOther)
-		if pOther is None or pOther.isNone() or not pOther.isNative():
+		if pOther is None or pOther.isNone():
+			return ""
+		if gc.getGame().isBarbarianPlayer(eOther):
 			return ""
 
 		eActive = gc.getGame().getActivePlayer()
@@ -737,6 +739,23 @@ class CvDiplomacy:
 			szText = szText + translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_DECAY", (iTurnsUntilDecay,))
 
 		# setAIString takes a C char*, not unicode
+		if isinstance(szText, unicode):
+			szText = szText.encode("ascii", "replace")
+		return szText
+
+	def getPeaceTalkInfoText(self):
+		eOther = self.diploScreen.getWhoTradingWith()
+		pOther = gc.getPlayer(eOther)
+		if pOther is None or pOther.isNone():
+			return ""
+
+		eActive = gc.getGame().getActivePlayer()
+		iPeaceTalkTurns = pOther.AI_getTurnsUntilWillingToTalk(eActive)
+		if iPeaceTalkTurns <= 0:
+			return ""
+
+		translator = CyTranslator()
+		szText = translator.getText("TXT_KEY_DIPLO_PEACE_TALK", (iPeaceTalkTurns,))
 		if isinstance(szText, unicode):
 			szText = szText.encode("ascii", "replace")
 		return szText
@@ -768,6 +787,20 @@ class CvDiplomacy:
 				if isinstance(szResolved, unicode):
 					szResolved = szResolved.encode("ascii", "replace")
 				AIString = szResolved + szGiftInfo
+				args = ()
+
+		elif self.isComment(eComment, "AI_DIPLOCOMMENT_REFUSE_TO_TALK"):
+			szPeaceInfo = self.getPeaceTalkInfoText()
+			if szPeaceInfo:
+				translator = CyTranslator()
+				if isinstance(AIString, unicode):
+					szKey = AIString.encode("ascii", "replace")
+				else:
+					szKey = str(AIString)
+				szResolved = translator.getText(szKey, args)
+				if isinstance(szResolved, unicode):
+					szResolved = szResolved.encode("ascii", "replace")
+				AIString = szResolved + szPeaceInfo
 				args = ()
 
 		self.diploScreen.setAIString(AIString, args)

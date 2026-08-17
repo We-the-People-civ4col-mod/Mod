@@ -1101,6 +1101,10 @@ int CyPlayer::AI_getTradeAttitudeTurnsUntilDecay(int /*PlayerTypes*/ ePlayer)
 {
 	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_getTradeAttitudeTurnsUntilDecay((PlayerTypes)ePlayer) : -1;
 }
+int CyPlayer::AI_getTurnsUntilWillingToTalk(int /*PlayerTypes*/ ePlayer)
+{
+	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_getTurnsUntilWillingToTalk((PlayerTypes)ePlayer) : -1;
+}
 int CyPlayer::AI_getMemoryCount(int /*PlayerTypes*/ eIndex1, int /*MemoryTypes*/ eIndex2)
 {
 	return m_pPlayer ? ((CvPlayerAI*)m_pPlayer)->AI_getMemoryCount((PlayerTypes)eIndex1, (MemoryTypes)eIndex2) : -1;

@@ -121,6 +121,8 @@ public:
 	int AI_goldTarget();
 	DllExport DiploCommentTypes AI_getGreeting(PlayerTypes ePlayer);
 	bool AI_isWillingToTalk(PlayerTypes ePlayer);
+	int AI_getTurnsUntilWillingToTalk(PlayerTypes ePlayer);
+	int AI_getRefuseToTalkWarDuration(PlayerTypes ePlayer) const;
 	bool AI_demandRebukedSneak(PlayerTypes ePlayer);
 	bool AI_demandRebukedWar(PlayerTypes ePlayer);
 	bool AI_hasTradedWithTeam(TeamTypes eTeam);

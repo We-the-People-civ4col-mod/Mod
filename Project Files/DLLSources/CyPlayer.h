@@ -328,6 +328,7 @@ public:
 	int AI_getTradeAttitudeValue(int /*PlayerTypes*/ ePlayer);
 	int AI_getTradeAttitudeGoldForNextLevel(int /*PlayerTypes*/ ePlayer);
 	int AI_getTradeAttitudeTurnsUntilDecay(int /*PlayerTypes*/ ePlayer);
+	int AI_getTurnsUntilWillingToTalk(int /*PlayerTypes*/ ePlayer);
 	int AI_getMemoryCount(int /*PlayerTypes*/ eIndex1, int /*MemoryTypes*/ eIndex2);
 	void AI_changeMemoryCount(int /*PlayerTypes*/ eIndex1, int /*MemoryTypes*/ eIndex2, int iChange);
 	int AI_getExtraGoldTarget() const;

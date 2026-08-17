@@ -96,6 +96,21 @@ int CvGameAI::AI_adjustedTurn(int iTurn)
 	
 }
 
+int CvGameAI::AI_effectiveTurns(int iRawTurns) const
+{
+	return AI_effectiveTurns(iRawTurns, GC.getGameSpeedInfo(getGameSpeedType()).getGrowthPercent());
+}
+
+int CvGameAI::AI_effectiveTurns(int iRawTurns, int iSpeedPercent) const
+{
+	if (iSpeedPercent < 1)
+	{
+		iSpeedPercent = 100;
+	}
+
+	return (iRawTurns * 100) / iSpeedPercent;
+}
+
 
 int CvGameAI::AI_turnsPercent(int iTurns, int iPercent)
 {
