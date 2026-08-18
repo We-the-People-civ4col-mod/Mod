@@ -5498,6 +5498,41 @@ def _cityHasAdjacentOceanPlot(city):
 
 	return city.isEuropeAccessable()
 
+def _cityHasCoastOrOcean(city):
+	# Adjacent coast or ocean. Lake and great river do not count.
+	if city is None or city.isNone():
+		return False
+
+	iOcean = gc.getInfoTypeForString("TERRAIN_OCEAN")
+	iCoast = gc.getInfoTypeForString("TERRAIN_COAST")
+
+	for iDirection in range(DirectionTypes.NUM_DIRECTION_TYPES):
+		pAdjacentPlot = plotDirection(
+			city.getX(),
+			city.getY(),
+			DirectionTypes(iDirection)
+		)
+		if pAdjacentPlot is None or pAdjacentPlot.isNone():
+			continue
+		eTerrain = pAdjacentPlot.getTerrainType()
+		if eTerrain == iOcean or eTerrain == iCoast:
+			return True
+
+	return False
+
+def _getCapitalCity(player):
+	# Walk the city list. getCapitalCity() is manage_new_object and is easy to drop.
+	if player is None or player.isNone():
+		return None
+
+	(city, iter) = player.firstCity(False)
+	while city:
+		if not city.isNone() and city.isCapital():
+			return city
+		(city, iter) = player.nextCity(iter, False)
+
+	return None
+
 def _unitOnCityPlot(player, city, iUnitClass):
 	if player is None or player.isNone() or city is None or city.isNone():
 		return None
@@ -5543,14 +5578,14 @@ def _spawnRewardedShipInEurope(player, iUnitClass):
 	return unit
 
 def _getCapitalIfCanReceiveShip(player):
-	if player is None or player.isNone():
+	capital = _getCapitalCity(player)
+	if capital is None:
 		return None
 
-	capital = player.getCapitalCity()
-	if capital is None or capital.isNone():
-		return None
-
-	if _cityHasAdjacentOceanPlot(capital):
+	# Capital on real sea: Europe-access, or adjacent coast/ocean.
+	# Do not require isEuropeAccessable() alone; that check ignores
+	# a city that only touches TERRAIN_OCEAN.
+	if _cityHasAdjacentOceanPlot(capital) or _cityHasCoastOrOcean(capital):
 		return capital
 
 	return None
@@ -20974,11 +21009,7 @@ def applyFourTreasuresRewardShip(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = player.getCapitalCity()
-	if city is None or city.isNone():
-		(city, iter) = player.firstCity(True)
-
-	_spawnRewardedShip(player, iRewardUnitClass, city)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpFourTreasuresRewardShip(argsList):
@@ -27959,11 +27990,7 @@ def applyThreeGalleonsRewardShip(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = player.getCapitalCity()
-	if city is None or city.isNone():
-		(city, iter) = player.firstCity(True)
-
-	_spawnRewardedShip(player, iRewardUnitClass, city)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpThreeGalleonsRewardShip(argsList):
