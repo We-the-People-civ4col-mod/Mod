@@ -152,13 +152,22 @@ def myExceptHook(type, value, tb):
 	#total = pre+mid+post
 	total=mid
 	if SHOWEXCEPTIONS:
-		sys.stderr.write(total)
+		sys.stderr.write(_toAsciiLog(total))
 	else:
-		sys.stdout.write(total)
+		sys.stdout.write(_toAsciiLog(total))
+
+def _toAsciiLog(stuff):
+	if stuff is None:
+		return ""
+	if isinstance(stuff, unicode):
+		return stuff.encode("ascii", "replace")
+	try:
+		return str(stuff)
+	except Exception:
+		return repr(stuff)
 
 def pyPrint(stuff):
-	stuff = 'PY:' + stuff + "\n"
-	sys.stdout.write(stuff)
+	sys.stdout.write('PY:' + _toAsciiLog(stuff) + "\n")
 
 def pyAssert(cond, msg):
 	if (cond==False):
