@@ -42,6 +42,7 @@ protected:
 	void doAutomateCitizens(const CvWidgetDataStruct &widgetDataStruct);
 	void doAutomateProduction();
 	void doEmphasize(const CvWidgetDataStruct &widgetDataStruct);
+	void doTradeItem(const CvWidgetDataStruct &widgetDataStruct);
 	void doCancelCivics();
 	void applyCityEdit();
 	void doUnitModel();

@@ -436,6 +436,7 @@ public:
 	void setScriptData(std::string szNewValue);
 	int AI_maxGoldTrade(int iPlayer);
 	void forcePeace(int iPlayer);
+	void setDiploYieldAmount(int /*YieldTypes*/ eYield, int iAmount);
 	python::list getViableTradeRoutesForUnit(CyUnit* pUnit) const;
 
 private:

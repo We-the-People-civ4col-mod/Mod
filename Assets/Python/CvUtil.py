@@ -57,6 +57,7 @@ EventWBStartYearPopup = 5011
 EventShowWonder = 5012
 EventCreateTradeRoute = 5013
 EventEditTradeRoute = 5014
+EventDiploYieldAmount = 5015
 
 # Dale - AoD: AoDCheatMenu START
 EventAoDCheatMenu = 6000
@@ -76,7 +77,7 @@ EventKeyUp=7
 
 # List of unreported Events
 # Dale - AoD: AoDCheatMenu START
-SilentEvents = [EventEditCityName, EventEditUnitName, EventCreateTradeRoute, EventEditTradeRoute, EventAoDCheatMenu, EventDoEuropeScreen]
+SilentEvents = [EventEditCityName, EventEditUnitName, EventCreateTradeRoute, EventEditTradeRoute, EventDiploYieldAmount, EventAoDCheatMenu, EventDoEuropeScreen]
 # Dale - AoD: AoDCheatMenu END
 
 # Popup defines (TODO: Expose these from C++)

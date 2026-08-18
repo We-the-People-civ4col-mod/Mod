@@ -750,6 +750,7 @@ bool CvDLLWidgetData::executeAction(const CvWidgetDataStruct &widgetDataStruct)
 		break;
 
 	case WIDGET_TRADE_ITEM:
+		doTradeItem(widgetDataStruct);
 		break;
 
 	case WIDGET_UNIT_MODEL:
@@ -2958,6 +2959,64 @@ void CvDLLWidgetData::parseEmphasizeHelp(const CvWidgetDataStruct &widgetDataStr
 			}
 		}
 	}
+}
+
+void CvDLLWidgetData::doTradeItem(const CvWidgetDataStruct &widgetDataStruct)
+{
+	if (widgetDataStruct.m_iData1 != TRADE_YIELD)
+	{
+		return;
+	}
+
+	if (!gDLL->isDiplomacy() && !gDLL->isMPDiplomacyScreenUp())
+	{
+		return;
+	}
+
+	const PlayerTypes eActivePlayer = GC.getGameINLINE().getActivePlayer();
+	if (eActivePlayer == NO_PLAYER || !GET_PLAYER(eActivePlayer).isHuman())
+	{
+		return;
+	}
+
+	PlayerTypes eWhoFrom = NO_PLAYER;
+	IDInfo kTransport;
+	if (gDLL->isDiplomacy())
+	{
+		eWhoFrom = widgetDataStruct.m_bOption ? (PlayerTypes)gDLL->getDiplomacyPlayer() : eActivePlayer;
+		kTransport = gDLL->getDiplomacyTransport();
+	}
+	else
+	{
+		eWhoFrom = widgetDataStruct.m_bOption ? (PlayerTypes)gDLL->getMPDiplomacyPlayer() : eActivePlayer;
+		kTransport = gDLL->getMPDiplomacyTransport();
+	}
+
+	if (eWhoFrom == NO_PLAYER)
+	{
+		return;
+	}
+
+	const YieldTypes eYield = (YieldTypes)widgetDataStruct.m_iData2;
+	if (eYield == NO_YIELD || !GC.getYieldInfo(eYield).isCargo())
+	{
+		return;
+	}
+
+	CvUnit* pTransport = ::getUnit(kTransport);
+	if (pTransport == NULL)
+	{
+		return;
+	}
+
+	if (GET_PLAYER(eWhoFrom).getTradeYieldAmount(eYield, pTransport) <= 0)
+	{
+		return;
+	}
+
+	// Do not addPopup here. A popup during this click eats the exe trade-row add
+	// and the amount box sits behind diplomacy. Mark the yield; updateTradeList launches later.
+	GET_PLAYER(eWhoFrom).setDiploYieldAmount(eYield, DIPLO_YIELD_AMOUNT_ASK);
 }
 
 void CvDLLWidgetData::parseTradeItem(const CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)

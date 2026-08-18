@@ -1131,6 +1131,14 @@ int CyPlayer::getCultureHistory(int iTurn) const
 	return (NULL != m_pPlayer ? m_pPlayer->getCultureHistory(iTurn) : 0);
 }
 
+void CyPlayer::setDiploYieldAmount(int eYield, int iAmount)
+{
+	if (m_pPlayer != NULL)
+	{
+		pointer(CREATE_ASSERT_DATA)->setDiploYieldAmount((YieldTypes)eYield, iAmount);
+	}
+}
+
 int CyPlayer::addTradeRoute(int iSourceCityOwner, int iSourceCityId, int iDestinationCityOwner, int iDestinationCityId, int /*YieldTypes*/ eYield)
 {
 	return m_pPlayer ? pointer(CREATE_ASSERT_DATA)->addTradeRoute(IDInfo((PlayerTypes)iSourceCityOwner, iSourceCityId), IDInfo((PlayerTypes)iDestinationCityOwner, iDestinationCityId), (YieldTypes) eYield) : -1;
