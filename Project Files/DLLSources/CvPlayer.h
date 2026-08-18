@@ -17,6 +17,13 @@
 
 #define	UNIT_BIRTHMARK_TEMP_UNIT	20000
 
+enum DiploYieldAmountState
+{
+	DIPLO_YIELD_AMOUNT_UNSET = -1,
+	DIPLO_YIELD_AMOUNT_ASK = -2,
+	DIPLO_YIELD_AMOUNT_WAITING = -3
+};
+
 class CvDiploParameters;
 class CvPlayerAI;
 class CvPlayerCivEffect;
@@ -818,6 +825,11 @@ public:
 
 	void doAction(PlayerActionTypes eAction, int iData1, int iData2, int iData3);
 	int getTradeYieldAmount(YieldTypes eYield, CvUnit* pTransport) const;
+	int getTradeYieldCargoAmount(YieldTypes eYield, CvUnit* pTransport) const;
+	int getDiploYieldAmount(YieldTypes eYield) const;
+	void setDiploYieldAmount(YieldTypes eYield, int iAmount);
+	void clearDiploYieldAmounts();
+	void tryLaunchDiploYieldAmountPopup(YieldTypes eYield, const IDInfo& kTransport);
 	void setCityBillboardDirty(bool bNewValue);
 	bool isEurope() const;
 	bool isInRevolution() const;
@@ -1054,6 +1066,9 @@ protected:
 	int m_iNativeTradePostSuccessPercent; // WTP, ray, Native Trade Posts - START
 
 	uint m_uiStartTime;  // XXX save these?
+
+	// Unsaved: how many of each yield the human picked in the current native-trade popup
+	EnumMap<YieldTypes, int, -1> m_em_iDiploYieldAmount;
 
 	bool m_bAlive;
 	bool m_bEverAlive;
