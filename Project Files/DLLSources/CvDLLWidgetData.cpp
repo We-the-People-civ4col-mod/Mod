@@ -3014,9 +3014,12 @@ void CvDLLWidgetData::doTradeItem(const CvWidgetDataStruct &widgetDataStruct)
 		return;
 	}
 
-	// Do not addPopup here. A popup during this click eats the exe trade-row add
-	// and the amount box sits behind diplomacy. Mark the yield; updateTradeList launches later.
-	GET_PLAYER(eWhoFrom).setDiploYieldAmount(eYield, DIPLO_YIELD_AMOUNT_ASK);
+	// Shift-click asks how much. A normal click dumps the whole stack.
+	// Do not addPopup here: that eats the exe trade-row add.
+	if (gDLL->shiftKey())
+	{
+		GET_PLAYER(eWhoFrom).setDiploYieldAmount(eYield, DIPLO_YIELD_AMOUNT_ASK);
+	}
 }
 
 void CvDLLWidgetData::parseTradeItem(const CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
