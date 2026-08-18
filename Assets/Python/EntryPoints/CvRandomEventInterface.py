@@ -5491,28 +5491,12 @@ def _cityHasEuropeAccess(city):
 	return False
 
 def _cityHasAdjacentOceanPlot(city):
-	# Deep-water berth: ocean or coast. Lake, great river and shallow coast are not enough.
+	# True if the city can sail to Europe: adjacent coast that reaches the ocean.
+	# Closed lakes and inner seas fail this. Great river alone fails this.
 	if city is None or city.isNone():
 		return False
 
-	iOcean = gc.getInfoTypeForString("TERRAIN_OCEAN")
-	iCoast = gc.getInfoTypeForString("TERRAIN_COAST")
-
-	for iDirection in range(DirectionTypes.NUM_DIRECTION_TYPES):
-		pAdjacentPlot = plotDirection(
-			city.getX(),
-			city.getY(),
-			DirectionTypes(iDirection)
-		)
-
-		if pAdjacentPlot is None or pAdjacentPlot.isNone():
-			continue
-
-		eTerrain = pAdjacentPlot.getTerrainType()
-		if eTerrain == iOcean or eTerrain == iCoast:
-			return True
-
-	return False
+	return city.isEuropeAccessable()
 
 def _unitOnCityPlot(player, city, iUnitClass):
 	if player is None or player.isNone() or city is None or city.isNone():
@@ -5536,38 +5520,77 @@ def _unitOnCityPlot(player, city, iUnitClass):
 
 	return None
 
+def _spawnRewardedShipInEurope(player, iUnitClass):
+	# Ships bought in Europe are NOT initEuropeUnit (that is the colonist dock).
+	# They stay in the player unit list with IN_EUROPE so the harbor row can see them.
+	iUnitType = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iUnitClass)
+	if iUnitType == -1:
+		return None
+
+	unit = player.initUnit(
+		iUnitType,
+		gc.getUnitInfo(iUnitType).getDefaultProfession(),
+		-1,
+		-1,
+		UnitAITypes.NO_UNITAI,
+		DirectionTypes.NO_DIRECTION,
+		0
+	)
+	if unit is None or unit.isNone():
+		return None
+
+	unit.setUnitTravelState(UnitTravelStates.UNIT_TRAVEL_STATE_IN_EUROPE, False)
+	return unit
+
+def _getCapitalIfCanReceiveShip(player):
+	if player is None or player.isNone():
+		return None
+
+	capital = player.getCapitalCity()
+	if capital is None or capital.isNone():
+		return None
+
+	if _cityHasAdjacentOceanPlot(capital):
+		return capital
+
+	return None
+
 def _spawnRewardedShip(player, iUnitClass, city=None):
-	# Preferred city if it has adjacent ocean/coast.
-	# Else first city with adjacent ocean/coast.
-	# Else still spawn in the preferred/first city so the ship cannot vanish.
-	# Europe only if the player has no city at all.
-	# Returns the created unit when we can find it (for named ships).
+	# Capital first if it can sail to Europe.
+	# Else the preferred city, if it can.
+	# Else any other city that can sail to Europe.
+	# Else Europe harbor (same path as buying a ship there).
+	# Else last resort: any city so the unit cannot vanish.
 	# Do not use this for events that must wait for a colonial port
 	# (for example CommandeeredReturn).
 	if player is None or player.isNone() or iUnitClass == -1:
 		return None
 
-	pCity = None
-	if city is not None and not city.isNone() and _cityHasAdjacentOceanPlot(city):
-		pCity = city
-	else:
-		pCity = getFirstOceanAccessCity(player)
-
-	if pCity is None or pCity.isNone():
-		if city is not None and not city.isNone():
+	pCity = _getCapitalIfCanReceiveShip(player)
+	if pCity is None:
+		if city is not None and not city.isNone() and _cityHasAdjacentOceanPlot(city):
 			pCity = city
 		else:
-			(pCity, iter) = player.firstCity(False)
+			pCity = getFirstOceanAccessCity(player)
 
 	if pCity is not None and not pCity.isNone():
 		pCity.spawnOwnPlayerUnitOnPlotOfCity(iUnitClass)
 		return _unitOnCityPlot(player, pCity, iUnitClass)
 
-	iUnitType = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iUnitClass)
-	if iUnitType == -1:
-		return None
+	unit = _spawnRewardedShipInEurope(player, iUnitClass)
+	if unit is not None and not unit.isNone():
+		return unit
 
-	return player.initEuropeUnit(iUnitType, UnitAITypes.NO_UNITAI, DirectionTypes.NO_DIRECTION)
+	if city is not None and not city.isNone():
+		pCity = city
+	else:
+		(pCity, iter) = player.firstCity(False)
+
+	if pCity is not None and not pCity.isNone():
+		pCity.spawnOwnPlayerUnitOnPlotOfCity(iUnitClass)
+		return _unitOnCityPlot(player, pCity, iUnitClass)
+
+	return None
 
 def _countPiratesTreasureCities(player):
 	if player is None or player.isNone():
@@ -27967,17 +27990,20 @@ def getHelpThreeGalleonsRewardShip(argsList):
 ######## Event six war ships ###########
 
 def getFirstOceanAccessCity(player):
-	if player.isNone():
+	if player is None or player.isNone():
 		return None
 
-	(city, iter) = player.firstCity(True)
+	capital = _getCapitalIfCanReceiveShip(player)
+	if capital is not None:
+		return capital
+
+	(city, iter) = player.firstCity(False)
 
 	while city:
-		if not city.isNone():
-			if _cityHasAdjacentOceanPlot(city):
-				return city
+		if not city.isNone() and _cityHasAdjacentOceanPlot(city):
+			return city
 
-		(city, iter) = player.nextCity(iter, True)
+		(city, iter) = player.nextCity(iter, False)
 
 	return None
 
