@@ -19309,8 +19309,7 @@ void CvPlayer::tryLaunchDiploYieldAmountPopup(YieldTypes eYield, const IDInfo& k
 		return;
 	}
 
-	const int iState = getDiploYieldAmount(eYield);
-	if (iState >= 0 || iState == DIPLO_YIELD_AMOUNT_WAITING)
+	if (getDiploYieldAmount(eYield) != DIPLO_YIELD_AMOUNT_ASK)
 	{
 		return;
 	}
