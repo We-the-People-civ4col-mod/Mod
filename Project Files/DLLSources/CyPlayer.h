@@ -300,6 +300,7 @@ public:
 	CyUnit* buyYieldUnitFromEurope(int /*YieldTypes*/ eYield, int iAmount, CyUnit* pTransport);
 	int getEuropeUnitBuyPrice(int /*UnitTypes*/ eUnit);
 	CyUnit* buyEuropeUnit(int /*UnitTypes*/ eUnit);
+	CyUnit* grantEuropeUnit(int /*UnitTypes*/ eUnit);
 	int getYieldBoughtTotal(TradeLocationTypes eLocation, int /*YieldTypes*/ eYield) const;
 	int getNumRevolutionEuropeUnits() const;
 	int getRevolutionEuropeUnit(int iIndex) const;

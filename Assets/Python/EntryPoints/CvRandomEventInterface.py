@@ -28,6 +28,103 @@ def getFirstAvailableUnit(player, unitList):
 
 	return unitList[-1]
 
+def _cityCanSpawnRewardShip(player, city, iUnitClass):
+	if player is None or player.isNone():
+		return False
+	if city is None or city.isNone():
+		return False
+
+	# City must have at least one proper harbour building.
+	aHarbourBuildingClasses = (
+		gc.getInfoTypeForString("BUILDINGCLASS_LANDING_STAGE"),
+		gc.getInfoTypeForString("BUILDINGCLASS_DOCK"),
+		gc.getInfoTypeForString("BUILDINGCLASS_DRYDOCK"),
+		gc.getInfoTypeForString("BUILDINGCLASS_SHIPYARD"),
+		gc.getInfoTypeForString("BUILDINGCLASS_GREAT_SHIPYARD"),
+	)
+
+	bHasHarbour = False
+
+	for iBuildingClass in aHarbourBuildingClasses:
+		if iBuildingClass == -1:
+			continue
+
+		iBuilding = gc.getCivilizationInfo(
+			player.getCivilizationType()
+		).getCivilizationBuildings(iBuildingClass)
+
+		if iBuilding == BuildingTypes.NO_BUILDING:
+			continue
+
+		if city.isHasBuilding(iBuilding):
+			bHasHarbour = True
+			break
+
+	if not bHasHarbour:
+		return False
+
+	iUnit = gc.getCivilizationInfo(
+		player.getCivilizationType()
+	).getCivilizationUnits(iUnitClass)
+
+	if iUnit == -1:
+		return False
+
+	unitInfo = gc.getUnitInfo(iUnit)
+
+	for iDirection in range(DirectionTypes.NUM_DIRECTION_TYPES):
+		pPlot = plotDirection(
+			city.getX(),
+			city.getY(),
+			DirectionTypes(iDirection)
+		)
+
+		if pPlot is None or pPlot.isNone():
+			continue
+
+		if not pPlot.isWater():
+			continue
+
+		if not unitInfo.getTerrainImpassable(pPlot.getTerrainType()):
+			return True
+
+	return False
+
+def getFirstRewardShipAccessCity(player, iUnitClass):
+	if player is None or player.isNone():
+		return None
+
+	(city, iter) = player.firstCity(True)
+
+	while city:
+		if _cityCanSpawnRewardShip(player, city, iUnitClass):
+			return city
+
+		(city, iter) = player.nextCity(iter, True)
+
+	return None
+
+def _spawnRewardedShip(player, iUnitClass, preferredCity=None):
+	if player is None or player.isNone():
+		return None
+
+	iUnit = gc.getCivilizationInfo(
+		player.getCivilizationType()
+	).getCivilizationUnits(iUnitClass)
+
+	if iUnit == -1:
+		return None
+
+	city = preferredCity
+
+	if not _cityCanSpawnRewardShip(player, city, iUnitClass):
+		city = getFirstRewardShipAccessCity(player, iUnitClass)
+
+	if city is not None and not city.isNone():
+		return city.spawnOwnPlayerUnitOnPlotOfCity(iUnitClass)
+
+	return player.grantEuropeUnit(iUnit)
+
 def _scaleTurnsByGameSpeed(iBaseTurns):
 	iGameSpeedType = CyGame().getGameSpeedType()
 	iGrowthPercent = gc.getGameSpeedInfo(iGameSpeedType).getGrowthPercent()
@@ -4082,12 +4179,7 @@ def applyAntiPirateRewardShip(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpAntiPirateRewardShip(argsList):
@@ -20887,12 +20979,9 @@ def applyFourTreasuresRewardShip(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	(city, iter) = player.firstCity(True)
+	city = _getFourTreasuresCity(player, kTriggeredData.iCityId)
 
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass, city)
 
 
 def getHelpFourTreasuresRewardShip(argsList):
@@ -21081,7 +21170,7 @@ def applyFourTreasuresReturnBuy(argsList):
 
 	player.changeGold(-FOUR_TREASURES_RETURN_REQUIRED_GOLD)
 
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass, city)
 
 	_changeKingRelation(argsList, 1)
 	_clearFourTreasuresState(player)
@@ -27905,14 +27994,14 @@ def getHelpThreeGalleonsRewardShip(argsList):
 ######## Event six war ships ###########
 
 def getFirstOceanAccessCity(player):
-	if player.isNone():
+	if player is None or player.isNone():
 		return None
 
 	(city, iter) = player.firstCity(True)
 
 	while city:
-		if not city.isNone():
-			if _cityHasEuropeAccess(city):
+		if city is not None and not city.isNone():
+			if _plotHasAdjacentSeaWater(city.plot()):
 				return city
 
 		(city, iter) = player.nextCity(iter, True)
@@ -27976,12 +28065,7 @@ def applySixWarshipsRewardShip(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpSixWarshipsRewardShip(argsList):
@@ -28398,15 +28482,7 @@ def applyAfricaTradeQuestRewardShip(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = player.getCity(kTriggeredData.iCityId)
-
-	if city is None or city.isNone():
-		city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpAfricaTradeQuestRewardShip(argsList):
@@ -28506,13 +28582,61 @@ def applyPiratesRewardShip4a(argsList):
 
 	city = player.getCity(kTriggeredData.iCityId)
 
-	if city is None or city.isNone():
-		city = getFirstOceanAccessCity(player)
+	if not _cityCanSpawnRewardShip(player, city, iRewardUnitClass):
+		city = getFirstRewardShipAccessCity(player, iRewardUnitClass)
 
-	if city is None or city.isNone():
+	# Spawn in colony
+	if city is not None and not city.isNone():
+		pPlot = city.plot()
+
+		# Remember all matching units already on the plot
+		aOldUnitIds = []
+
+		for i in range(pPlot.getNumUnits()):
+			unit = pPlot.getUnit(i)
+
+			if unit is None or unit.isNone():
+				continue
+
+			if unit.getOwner() != player.getID():
+				continue
+
+			if unit.getUnitClassType() == iRewardUnitClass:
+				aOldUnitIds.append(unit.getID())
+
+		# Spawn reward ship
+		city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+
+		# Find the newly created ship
+		for i in range(pPlot.getNumUnits()):
+			unit = pPlot.getUnit(i)
+
+			if unit is None or unit.isNone():
+				continue
+
+			if unit.getOwner() != player.getID():
+				continue
+
+			if unit.getUnitClassType() != iRewardUnitClass:
+				continue
+
+			if unit.getID() in aOldUnitIds:
+				continue
+
+			unit.setName("Black Pearl")
+			return
+
 		return
 
-	unit = city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	# Fallback: Europe
+	iUnit = gc.getCivilizationInfo(
+		player.getCivilizationType()
+	).getCivilizationUnits(iRewardUnitClass)
+
+	if iUnit == -1:
+		return
+
+	unit = player.grantEuropeUnit(iUnit)
 
 	if unit is not None and not unit.isNone():
 		unit.setName("Black Pearl")
@@ -28568,15 +28692,7 @@ def applyEuropeTradeQuestRewardShip10(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = player.getCity(kTriggeredData.iCityId)
-
-	if city is None or city.isNone():
-		city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpEuropeTradeQuestRewardShip10(argsList):
@@ -28633,15 +28749,7 @@ def applyEuropeTradeQuestRewardShip11(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = player.getCity(kTriggeredData.iCityId)
-
-	if city is None or city.isNone():
-		city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpEuropeTradeQuestRewardShip11(argsList):
@@ -28698,15 +28806,7 @@ def applyEuropeTradeQuestRewardShipMuskets(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = player.getCity(kTriggeredData.iCityId)
-
-	if city is None or city.isNone():
-		city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpEuropeTradeQuestRewardShipMuskets(argsList):
@@ -28762,15 +28862,7 @@ def applyEuropeTradeQuestRewardShipRope(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = player.getCity(kTriggeredData.iCityId)
-
-	if city is None or city.isNone():
-		city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 def getHelpEuropeTradeQuestRewardShipRope(argsList):
 	kTriggeredData = argsList[0]
@@ -28826,15 +28918,7 @@ def applyEuropeTradeQuestRewardShipHardwood(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = player.getCity(kTriggeredData.iCityId)
-
-	if city is None or city.isNone():
-		city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpEuropeTradeQuestRewardShipHardwood(argsList):
@@ -28891,15 +28975,7 @@ def applyPortRoyalTradeQuestRewardShip3(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = player.getCity(kTriggeredData.iCityId)
-
-	if city is None or city.isNone():
-		city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpPortRoyalTradeQuestRewardShip3(argsList):
@@ -28956,15 +29032,7 @@ def applyPortRoyalTradeQuestRewardShip4(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = player.getCity(kTriggeredData.iCityId)
-
-	if city is None or city.isNone():
-		city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpPortRoyalTradeQuestRewardShip4(argsList):
@@ -29020,15 +29088,7 @@ def applyCibolaExpeditionArrival2RewardShip(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = player.getCity(kTriggeredData.iCityId)
-
-	if city is None or city.isNone():
-		city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpCibolaExpeditionArrival2RewardShip(argsList):
