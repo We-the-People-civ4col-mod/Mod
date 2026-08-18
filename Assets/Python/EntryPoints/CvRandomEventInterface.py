@@ -5491,12 +5491,12 @@ def _cityHasEuropeAccess(city):
 	return False
 
 def _cityHasAdjacentOceanPlot(city):
+	# Deep-water berth: ocean or coast. Lake, great river and shallow coast are not enough.
 	if city is None or city.isNone():
 		return False
 
 	iOcean = gc.getInfoTypeForString("TERRAIN_OCEAN")
-	if iOcean == -1:
-		return False
+	iCoast = gc.getInfoTypeForString("TERRAIN_COAST")
 
 	for iDirection in range(DirectionTypes.NUM_DIRECTION_TYPES):
 		pAdjacentPlot = plotDirection(
@@ -5508,34 +5508,40 @@ def _cityHasAdjacentOceanPlot(city):
 		if pAdjacentPlot is None or pAdjacentPlot.isNone():
 			continue
 
-		if pAdjacentPlot.getTerrainType() == iOcean:
+		eTerrain = pAdjacentPlot.getTerrainType()
+		if eTerrain == iOcean or eTerrain == iCoast:
 			return True
 
 	return False
 
-def _initOwnPlayerUnit(player, iUnitClass, iX, iY):
-	iUnitType = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iUnitClass)
-	if iUnitType == -1:
+def _unitOnCityPlot(player, city, iUnitClass):
+	if player is None or player.isNone() or city is None or city.isNone():
 		return None
 
-	# spawnOwnPlayerUnitOnPlotOfCity is void; initUnit returns the created unit
-	# so callers can name Queen Anne's Revenge / Black Pearl in both spawn paths.
-	return player.initUnit(
-		iUnitType,
-		gc.getUnitInfo(iUnitType).getDefaultProfession(),
-		iX,
-		iY,
-		UnitAITypes.NO_UNITAI,
-		DirectionTypes.NO_DIRECTION,
-		0
-	)
+	pPlot = city.plot()
+	if pPlot is None or pPlot.isNone():
+		return None
+
+	eOwner = player.getID()
+	i = 0
+	while i < pPlot.getNumUnits():
+		pUnit = pPlot.getUnit(i)
+		i += 1
+		if pUnit is None or pUnit.isNone():
+			continue
+		if pUnit.getOwner() != eOwner:
+			continue
+		if pUnit.getUnitClassType() == iUnitClass:
+			return pUnit
+
+	return None
 
 def _spawnRewardedShip(player, iUnitClass, city=None):
-	# Normal rewarded ship:
-	#   preferred city if it has adjacent TERRAIN_OCEAN
-	#   else first city with adjacent TERRAIN_OCEAN
-	#   else Europe
-	# Returns the created unit in both the city and Europe paths.
+	# Preferred city if it has adjacent ocean/coast.
+	# Else first city with adjacent ocean/coast.
+	# Else still spawn in the preferred/first city so the ship cannot vanish.
+	# Europe only if the player has no city at all.
+	# Returns the created unit when we can find it (for named ships).
 	# Do not use this for events that must wait for a colonial port
 	# (for example CommandeeredReturn).
 	if player is None or player.isNone() or iUnitClass == -1:
@@ -5547,8 +5553,15 @@ def _spawnRewardedShip(player, iUnitClass, city=None):
 	else:
 		pCity = getFirstOceanAccessCity(player)
 
+	if pCity is None or pCity.isNone():
+		if city is not None and not city.isNone():
+			pCity = city
+		else:
+			(pCity, iter) = player.firstCity(False)
+
 	if pCity is not None and not pCity.isNone():
-		return _initOwnPlayerUnit(player, iUnitClass, pCity.getX(), pCity.getY())
+		pCity.spawnOwnPlayerUnitOnPlotOfCity(iUnitClass)
+		return _unitOnCityPlot(player, pCity, iUnitClass)
 
 	iUnitType = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iUnitClass)
 	if iUnitType == -1:
