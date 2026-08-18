@@ -19338,9 +19338,14 @@ void CvPlayer::tryLaunchDiploYieldAmountPopup(YieldTypes eYield, const IDInfo& k
 		return;
 	}
 
-	if (getDiploYieldAmount(eYield) != DIPLO_YIELD_AMOUNT_ASK)
+	const int iState = getDiploYieldAmount(eYield);
+	if (iState != DIPLO_YIELD_AMOUNT_ASK)
 	{
-		return;
+		// Backup if the widget click never ran: still ask when shift is held as the row is added.
+		if (iState != DIPLO_YIELD_AMOUNT_UNSET || !GC.shiftKey())
+		{
+			return;
+		}
 	}
 
 	CvUnit* pTransport = ::getUnit(kTransport);

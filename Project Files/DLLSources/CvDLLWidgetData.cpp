@@ -3015,10 +3015,12 @@ void CvDLLWidgetData::doTradeItem(const CvWidgetDataStruct &widgetDataStruct)
 	}
 
 	// Shift-click asks how much. A normal click dumps the whole stack.
-	// Do not addPopup here: that eats the exe trade-row add.
-	if (gDLL->shiftKey())
+	// Use GC.shiftKey() (GetKeyState). gDLL->shiftKey() is often false during diplomacy.
+	if (GC.shiftKey())
 	{
-		GET_PLAYER(eWhoFrom).setDiploYieldAmount(eYield, DIPLO_YIELD_AMOUNT_ASK);
+		CvPlayer& kFrom = GET_PLAYER(eWhoFrom);
+		kFrom.setDiploYieldAmount(eYield, DIPLO_YIELD_AMOUNT_ASK);
+		kFrom.tryLaunchDiploYieldAmountPopup(eYield, kTransport);
 	}
 }
 
