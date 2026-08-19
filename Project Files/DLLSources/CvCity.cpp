@@ -11575,6 +11575,8 @@ namespace
 	// Arctic coastal villages: fisherman must beat generic tundra/snow fur.
 	const int NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_SCORE = 8000;
 	const int NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_WEIGHT = 4;
+	// Gold/silver/gems: prospector must beat a weight-3 crop bonus (10000 * 3).
+	const int NATIVE_TEACH_PRECIOUS_METAL_SCORE = 40000;
 
 	bool isArcticTerrain(TerrainTypes eTerrain)
 	{
@@ -11604,35 +11606,19 @@ namespace
 		return szType != NULL && strstr(szType, "SEAL") != NULL;
 	}
 
+	bool isUnitClassType(UnitClassTypes eUnitClass, const char* szType)
+	{
+		return eUnitClass != NO_UNITCLASS &&
+			0 == strcmp(GC.getUnitClassInfo(eUnitClass).getType(), szType);
+	}
+
 	bool isGenericTeachUnitClass(UnitClassTypes eUnitClass)
 	{
-		if (eUnitClass == NO_UNITCLASS)
-		{
-			return false;
-		}
-
-		const char* szType = GC.getUnitClassInfo(eUnitClass).getType();
-		static const char* const apszGeneric[] =
-		{
-			"UNITCLASS_FARMER",
-			"UNITCLASS_FISHERMAN",
-			"UNITCLASS_HUNTER",
-			"UNITCLASS_TRAPPER",
-			"UNITCLASS_MINER",
-			"UNITCLASS_SCOUT",
-			"UNITCLASS_PROSPECTOR"
-		};
-
-		const unsigned int iCount = sizeof(apszGeneric) / sizeof(apszGeneric[0]);
-		for (unsigned int i = 0; i < iCount; ++i)
-		{
-			if (0 == strcmp(szType, apszGeneric[i]))
-			{
-				return true;
-			}
-		}
-
-		return false;
+		// Hunter/trapper/miner may still use terrain. Miner gets a bonus
+		// match for ore but is not guaranteed to win.
+		return isUnitClassType(eUnitClass, "UNITCLASS_HUNTER") ||
+			isUnitClassType(eUnitClass, "UNITCLASS_TRAPPER") ||
+			isUnitClassType(eUnitClass, "UNITCLASS_MINER");
 	}
 
 	bool isSharedGenericYield(YieldTypes eYield)
@@ -11732,6 +11718,71 @@ namespace
 		return eBonus != NO_BONUS && eYield != NO_YIELD && GC.getBonusInfo(eBonus).getYieldChange(eYield) > 0;
 	}
 
+	bool isPreciousMetalBonus(BonusTypes eBonus)
+	{
+		if (eBonus == NO_BONUS)
+		{
+			return false;
+		}
+
+		CvString szBonus = GC.getBonusInfo(eBonus).getType();
+		stripPrefix(szBonus, "BONUS_");
+		stripTrailingDigitTag(szBonus);
+		return 0 == strcmp(szBonus.c_str(), "GOLD") ||
+			0 == strcmp(szBonus.c_str(), "SILVER") ||
+			0 == strcmp(szBonus.c_str(), "GEMS");
+	}
+
+	bool isFishBonus(BonusTypes eBonus)
+	{
+		if (eBonus == NO_BONUS)
+		{
+			return false;
+		}
+
+		const char* szType = GC.getBonusInfo(eBonus).getType();
+		if (szType == NULL || strstr(szType, "PEARL") != NULL ||
+			strstr(szType, "WHALE") != NULL || strstr(szType, "SEAL") != NULL)
+		{
+			return false;
+		}
+
+		if (GC.getBonusInfo(eBonus).isFishingboatWorkable())
+		{
+			return true;
+		}
+
+		return strstr(szType, "FISH") != NULL || strstr(szType, "CRAB") != NULL ||
+			strstr(szType, "SHRIMP") != NULL;
+	}
+
+	bool isLandFoodBonus(BonusTypes eBonus)
+	{
+		if (!bonusGivesYield(eBonus, YIELD_FOOD))
+		{
+			return false;
+		}
+
+		const CvBonusInfo& kBonus = GC.getBonusInfo(eBonus);
+		return kBonus.isHills() || kBonus.isFlatlands() || kBonus.isPeaks();
+	}
+
+	bool isHorseBonus(BonusTypes eBonus)
+	{
+		if (eBonus == NO_BONUS)
+		{
+			return false;
+		}
+
+		if (bonusGivesYield(eBonus, YIELD_HORSES))
+		{
+			return true;
+		}
+
+		const char* szType = GC.getBonusInfo(eBonus).getType();
+		return szType != NULL && strstr(szType, "HORSE") != NULL;
+	}
+
 	bool bonusBelongsToSpecialist(BonusTypes eBonus, UnitClassTypes eUnitClass)
 	{
 		if (eBonus == NO_BONUS || eUnitClass == NO_UNITCLASS)
@@ -11742,6 +11793,26 @@ namespace
 		if (isSealHunterUnitClass(eUnitClass))
 		{
 			return isSealBonus(eBonus);
+		}
+
+		if (isUnitClassType(eUnitClass, "UNITCLASS_PROSPECTOR"))
+		{
+			return isPreciousMetalBonus(eBonus);
+		}
+
+		if (isUnitClassType(eUnitClass, "UNITCLASS_FISHERMAN"))
+		{
+			return isFishBonus(eBonus);
+		}
+
+		if (isUnitClassType(eUnitClass, "UNITCLASS_FARMER"))
+		{
+			return isLandFoodBonus(eBonus);
+		}
+
+		if (isUnitClassType(eUnitClass, "UNITCLASS_SCOUT"))
+		{
+			return isHorseBonus(eBonus);
 		}
 
 		if (isBonusNamedForUnitClass(eBonus, eUnitClass))
@@ -11827,12 +11898,12 @@ namespace
 
 // Native village specialty: pick a local yield within 2 plots (Chebyshev).
 // Named crop/animal experts need a visible bonus that belongs to them
-// (taiga rapeseed or grassland tobacco is not enough). Generic jobs
-// (farmer, fisherman, hunter, trapper, miner, scout, prospector) may
-// still use terrain. Map bonuses outrank uncommon features, which
-// outrank common terrain. Arctic coastal villages give fisherman extra
-// weight. A tribe does not repeat a specialty already taught by another
-// of its villages, unless no other local option remains. No random roll.
+// (taiga rapeseed or grassland tobacco is not enough). Farmer needs a
+// land food bonus, fisherman a fish bonus, scout horses, prospector
+// gold/silver/gems (and then wins). Hunter/trapper/miner may still use
+// terrain; ore nearby gives miner a strong but not guaranteed score.
+// A tribe does not repeat a specialty already taught by another of its
+// villages, unless no other local option remains. No random roll.
 UnitClassTypes CvCity::bestTeachUnitClass()
 {
 	PROFILE_FUNC();
@@ -11985,13 +12056,18 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 
 			int iUsedWeight = iWeight;
 			int iArcticCoastScore = 0;
-			if (bArcticCoast && 0 == strcmp(GC.getUnitClassInfo(eUnitClass).getType(), "UNITCLASS_FISHERMAN"))
+			int iPreciousScore = 0;
+			if (bArcticCoast && isUnitClassType(eUnitClass, "UNITCLASS_FISHERMAN"))
 			{
 				iUsedWeight = std::max(iWeight, 1) * NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_WEIGHT;
 				iArcticCoastScore = NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_SCORE;
 			}
+			if (isUnitClassType(eUnitClass, "UNITCLASS_PROSPECTOR") && iBonusMatches > 0)
+			{
+				iPreciousScore = NATIVE_TEACH_PRECIOUS_METAL_SCORE;
+			}
 
-			const int iProfessionValue = (iYieldAmount + iFeatureMatches * NATIVE_TEACH_FEATURE_SCORE + iLargeRiverMatches * NATIVE_TEACH_LARGE_RIVER_SCORE + iBonusMatches * NATIVE_TEACH_BONUS_SCORE) * iUsedWeight + iArcticCoastScore;
+			const int iProfessionValue = (iYieldAmount + iFeatureMatches * NATIVE_TEACH_FEATURE_SCORE + iLargeRiverMatches * NATIVE_TEACH_LARGE_RIVER_SCORE + iBonusMatches * NATIVE_TEACH_BONUS_SCORE) * iUsedWeight + iArcticCoastScore + iPreciousScore;
 			if (iProfessionValue > iBestProfessionValue)
 			{
 				iBestProfessionValue = iProfessionValue;
@@ -12000,11 +12076,19 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 
 		if (!bHasTeachProfession)
 		{
-			if (eFallbackUnitClass == NO_UNITCLASS)
+			if (isUnitClassType(eUnitClass, "UNITCLASS_SCOUT") &&
+				hasNearbySpecialistBonus(eUnitClass, getX_INLINE(), getY_INLINE(), kMap))
 			{
-				eFallbackUnitClass = eUnitClass;
+				iBestProfessionValue = NATIVE_TEACH_BONUS_SCORE * std::max(iWeight, 1);
 			}
-			continue;
+			else
+			{
+				if (eFallbackUnitClass == NO_UNITCLASS)
+				{
+					eFallbackUnitClass = eUnitClass;
+				}
+				continue;
+			}
 		}
 
 		if (iBestProfessionValue <= 0)
