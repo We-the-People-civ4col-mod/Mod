@@ -11710,7 +11710,9 @@ namespace
 // Native village specialty: pick a local yield within 2 plots (Chebyshev).
 // Only yields that actually exist are eligible. Map bonuses outrank
 // uncommon features, which outrank common terrain. Arctic coastal
-// villages give fisherman extra weight. No random roll.
+// villages give fisherman extra weight. A tribe does not repeat a
+// specialty already taught by another of its villages, unless no other
+// local option remains. No random roll.
 UnitClassTypes CvCity::bestTeachUnitClass()
 {
 	PROFILE_FUNC();
@@ -11751,9 +11753,10 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 	const bool bArcticCoast = bArcticVillage && (bHasSeaCoast || plot()->isCoastalLand());
 
 	UnitClassTypes eFallbackUnitClass = NO_UNITCLASS;
-	UnitClassTypes eBestUnitClass = NO_UNITCLASS;
-	int iBestValue = 0;
-	bool bBestAlreadyTaught = false;
+	UnitClassTypes eBestUniqueUnitClass = NO_UNITCLASS;
+	int iBestUniqueValue = 0;
+	UnitClassTypes eBestAnyUnitClass = NO_UNITCLASS;
+	int iBestAnyValue = 0;
 
 	for (UnitClassTypes eUnitClass = FIRST_UNITCLASS; eUnitClass < NUM_UNITCLASS_TYPES; ++eUnitClass)
 	{
@@ -11884,6 +11887,12 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			continue;
 		}
 
+		if (iBestProfessionValue > iBestAnyValue)
+		{
+			iBestAnyValue = iBestProfessionValue;
+			eBestAnyUnitClass = eUnitClass;
+		}
+
 		bool bAlreadyTaught = false;
 		int iLoop = 0;
 		for (const CvCity* pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
@@ -11895,18 +11904,26 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			}
 		}
 
-		if (iBestProfessionValue > iBestValue ||
-			(iBestProfessionValue == iBestValue && bBestAlreadyTaught && !bAlreadyTaught))
+		if (bAlreadyTaught)
 		{
-			iBestValue = iBestProfessionValue;
-			eBestUnitClass = eUnitClass;
-			bBestAlreadyTaught = bAlreadyTaught;
+			continue;
+		}
+
+		if (iBestProfessionValue > iBestUniqueValue)
+		{
+			iBestUniqueValue = iBestProfessionValue;
+			eBestUniqueUnitClass = eUnitClass;
 		}
 	}
 
-	if (eBestUnitClass != NO_UNITCLASS)
+	if (eBestUniqueUnitClass != NO_UNITCLASS)
 	{
-		return eBestUnitClass;
+		return eBestUniqueUnitClass;
+	}
+
+	if (eBestAnyUnitClass != NO_UNITCLASS)
+	{
+		return eBestAnyUnitClass;
 	}
 
 	return eFallbackUnitClass;
