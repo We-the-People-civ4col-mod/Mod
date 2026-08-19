@@ -1012,10 +1012,36 @@ void CvSelectionGroup::continueMission(int iSteps)
 	{
 		if (headMissionQueueNode()->m_data.eMissionType == MISSION_MOVE_TO)
 		{
-			bool bFailedAlreadyFighting;
-			if (groupAttack(CREATE_ASSERT_DATA, headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags, bFailedAlreadyFighting))
+			CvPlot* pDestPlot = GC.getMap().plotINLINE(
+				headMissionQueueNode()->m_data.iData1,
+				headMissionQueueNode()->m_data.iData2
+			);
+
+			bool bBoarding = false;
+
+			if (pDestPlot != NULL && pDestPlot->isWater() && getDomainType() == DOMAIN_LAND)
 			{
-				bDone = true;
+				CLLNode<IDInfo>* pUnitNode = headUnitNode();
+
+				while (pUnitNode != NULL)
+				{
+					CvUnit* pLoopUnit = getUnitNodeLoop(pUnitNode);
+
+					if (pLoopUnit != NULL && pLoopUnit->canLoad(pDestPlot, false))
+					{
+						bBoarding = true;
+						break;
+					}
+				}
+			}
+
+			if (!bBoarding)
+			{
+				bool bFailedAlreadyFighting;
+				if (groupAttack(CREATE_ASSERT_DATA, headMissionQueueNode()->m_data.iData1, headMissionQueueNode()->m_data.iData2, headMissionQueueNode()->m_data.iFlags, bFailedAlreadyFighting))
+				{
+					bDone = true;
+				}
 			}
 		}
 	}

@@ -36,11 +36,11 @@ def _cityCanSpawnRewardShip(player, city, iUnitClass):
 
 	# City must have at least one proper harbour building.
 	aHarbourBuildingClasses = (
-		gc.getInfoTypeForString("BUILDINGCLASS_LANDING_STAGE"),
-		gc.getInfoTypeForString("BUILDINGCLASS_DOCK"),
-		gc.getInfoTypeForString("BUILDINGCLASS_DRYDOCK"),
-		gc.getInfoTypeForString("BUILDINGCLASS_SHIPYARD"),
-		gc.getInfoTypeForString("BUILDINGCLASS_GREAT_SHIPYARD"),
+		BuildingClassTypes.BUILDINGCLASS_LANDING_STAGE,
+		BuildingClassTypes.BUILDINGCLASS_DOCK,
+		BuildingClassTypes.BUILDINGCLASS_DRYDOCK,
+		BuildingClassTypes.BUILDINGCLASS_SHIPYARD,
+		BuildingClassTypes.BUILDINGCLASS_GREAT_SHIPYARD,
 	)
 
 	bHasHarbour = False

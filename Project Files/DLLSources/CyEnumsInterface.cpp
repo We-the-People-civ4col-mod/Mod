@@ -166,6 +166,7 @@ void CyEnumsPythonInterface()
 // python_enum_check.pl NEXT STATE
 	addEnumValues(NO_BUTTON_POPUP      , "ButtonPopupTypes"   , "NO_BUTTON_POPUP"  , "NUM_BUTTONPOPUP_TYPES"    );
 	addEnumValues(NO_COLOR             , "ColorTypes"         , "NO_COLOR"         , "NUM_COLOR_TYPES"          );
+	addEnumValues(NO_BUILDINGCLASS     , "BuildingClassTypes" , "NO_BUILDINGCLASS" , "NUM_BUILDINGCLASS_TYPES"  );
 	addEnumValues(NO_CONCEPT           , "ConceptTypes"       , "NO_CONCEPT"       , "NUM_CONCEPT_TYPES"        );
 	addEnumValues(NO_EUROPE            , "EuropeTypes"        , "NO_EUROPE"        , "NUM_EUROPE_TYPES"         );
 	addEnumValues(NO_FEATURE           , "FeatureTypes"       , "NO_FEATURE"       , "NUM_FEATURE_TYPES"        );
@@ -627,9 +628,6 @@ void CyEnumsPythonInterface()
 		.value("PLAYER_ACTION_UNLOAD_UNIT_TO_PORT_ROYAL", PLAYER_ACTION_UNLOAD_UNIT_TO_PORT_ROYAL)
 		.value("PLAYER_ACTION_TRANSFER_UNIT_IN_PORT_ROYAL", PLAYER_ACTION_TRANSFER_UNIT_IN_PORT_ROYAL)
 		.value("NUM_PLAYER_ACTION_TYPES", NUM_PLAYER_ACTION_TYPES)
-		;
-	python::enum_<BuildingClassTypes>("BuildingClassTypes")
-		.value("NO_BUILDINGCLASS", NO_BUILDINGCLASS)
 		;
 	python::enum_<BuildingTypes>("BuildingTypes")
 		.value("NO_BUILDING", NO_BUILDING)

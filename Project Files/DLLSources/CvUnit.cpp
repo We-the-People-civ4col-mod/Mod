@@ -3599,14 +3599,14 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 				// TODO: Maybe create a new XML tag "bAllowLargeRiverMovement in XML of Terrain Features instead - might be cleaner
 				bLandUnitMayPassLargeRiverDueToTerrainFeature = (kPlot.getFeatureType() != NO_FEATURE && GC.getFeatureInfo(kPlot.getFeatureType()).isTerrain(TERRAIN_LARGE_RIVERS) && GC.getFeatureInfo(kPlot.getFeatureType()).isNoImprovement());
 				bLandUnitMayPassLargeRiverDueToProfession = (getProfession() != NO_PROFESSION && GC.getProfessionInfo(getProfession()).isCanCrossLargeRivers());
-				bLandUnitMayBeLoaded = canLoad(&kPlot, false);
+				bLandUnitMayBeLoaded = !bAttack && canLoad(&kPlot, false);
 			}
 
 			// stop large ships from entering Large Rivers in own Terrain
 			// if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam()) // sea units can enter impassable in own cultural borders
 			if (DOMAIN_SEA != getDomainType() || ePlotTeam != getTeam() || kPlot.getTerrainType() == TERRAIN_LARGE_RIVERS || kPlot.getTerrainType() == TERRAIN_LAKE || kPlot.getTerrainType() == TERRAIN_ICE_LAKE || kPlot.getTerrainType() == TERRAIN_SHALLOW_COAST)
 			{
-				if (bIgnoreLoad || !canLoad(&kPlot, true))
+				if (bIgnoreLoad || bAttack || !canLoad(&kPlot, true))
 				{
 					if (bLandUnitMayPassLargeRiverDueToImprovement == false && bLandUnitMayPassLargeRiverDueToTerrainFeature == false && bLandUnitMayPassLargeRiverDueToProfession == false && bLandUnitMayBeLoaded == false)
 					{
@@ -3915,13 +3915,15 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 		}
 	}
 
+	const bool bBoarding = !bAttack && !bIgnoreLoad && canLoad(&kPlot, false);
+	
 	if (canAttack())
 	{
 		if (bAttack || !canCoexistWithEnemyUnit(NO_TEAM))
 		{
 			if (!isHuman() || (kPlot.isVisible(getTeam(), false)))
 			{
-				if (kPlot.isVisibleEnemyUnit(this) != bAttack)
+				if (!bBoarding && kPlot.isVisibleEnemyUnit(this) != bAttack)
 				{
 					//FAssertMsg(isHuman() || (!bDeclareWar || (pPlot->isVisibleOtherUnit(getOwnerINLINE()) != bAttack)), "hopefully not an issue, but tracking how often this is the case when we dont want to really declare war");
 					if (!bDeclareWar || (kPlot.isVisibleOtherUnit(getOwnerINLINE()) != bAttack && !(bAttack && kPlot.getPlotCity() && !isNoCityCapture())))
@@ -4675,16 +4677,6 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 
 	// check if the unit is trying to flee a city with unrest
 	if (!canLeaveCity())
-	{
-		return false;
-	}
-
-	// Prohibit a unit with hidden nationality from boarding a non-hidden nat. transport
-	// This also fixes the bug that allows buccanneers to attack a ship if a friendly ship is 
-	// present on the same plot (see #877)
-	if (m_pUnitInfo->getDefaultUnitAIType() != UNITAI_YIELD &&
-		m_pUnitInfo->isHiddenNationality() &&
-		!pTransport->getUnitInfo().isHiddenNationality())
 	{
 		return false;
 	}
