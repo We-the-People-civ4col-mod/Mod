@@ -18408,6 +18408,35 @@ CvUnit* CvPlayer::buyEuropeUnit(UnitTypes eUnit, int iPriceModifier)
 	return pUnit;
 }
 
+CvUnit* CvPlayer::grantEuropeUnit(UnitTypes eUnit)
+{
+	CvUnit* pUnit = NULL;
+	CvPlot* pStartingPlot = getStartingPlot();
+
+	if (GC.getUnitInfo(eUnit).getDomainType() == DOMAIN_SEA && pStartingPlot != NULL)
+	{
+		pUnit = initUnit(
+			eUnit,
+			GC.getUnitInfo(eUnit).getDefaultProfession(),
+			INVALID_PLOT_COORD,
+			INVALID_PLOT_COORD
+		);
+
+		if (pUnit != NULL)
+		{
+			pUnit->setUnitTravelState(UNIT_TRAVEL_STATE_IN_EUROPE, false);
+
+			// Add unit to map after setting Europe state so that it doesn't bump enemy units.
+			pUnit->addToMap(pStartingPlot->coord());
+		}
+	}
+	else
+	{
+		pUnit = initEuropeUnit(eUnit);
+	}
+
+	return pUnit;
+}
 /*** TRIANGLETRADE 10/23/08 by DPII ***/
 int CvPlayer::getAfricaUnitBuyPrice(UnitTypes eUnit) const
 {

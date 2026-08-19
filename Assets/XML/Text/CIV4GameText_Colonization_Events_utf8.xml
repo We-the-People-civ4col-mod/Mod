@@ -4500,6 +4500,11 @@
 		<Russian>Используйте небольшую часть вознаграждения торговцев, чтобы построить один большой прибрежный корабль. Остальное оставьте на текущие расходы.</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_THREE_SMALL_COASTAL_SHIPS_REWARD_SHIP_HELP</Tag>
+		<English>[ICON_BULLET]We will receive a %s1.</English>
+		<German>[ICON_BULLET]Wir erhalten ein %s1.</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SELL_NATIVE_SLAVE</Tag>
 		<English>A Native slave has been accused of neglecting his duties.</English>
 		<French>Un esclave autochtone a été accusé de négliger ses devoirs.</French>
@@ -4887,6 +4892,12 @@
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_REWARD_SHIP_HELP</Tag>
 		<English>We will receive a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] in one of our colonies.</English>
 		<German>Wir erhalten ein bzw. eine [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] in einer unserer Kolonien.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_REWARD_TWO_SHIPS_HELP</Tag>
+		<English>We will receive two units %s1.</English>
+		<German>Wir erhalten zwei Einheiten %s1.</German>
 		<Russian/>
 	</TEXT>
 	<TEXT>

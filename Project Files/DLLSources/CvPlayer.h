@@ -786,6 +786,7 @@ public:
 	int getEuropeUnitBuyPrice(UnitTypes eUnit, bool bIncrease = true) const;
 	// TAC - AI purchases military units - koma13 - END
 	CvUnit* buyEuropeUnit(UnitTypes eUnit, int iPriceModifier);
+	CvUnit* grantEuropeUnit(UnitTypes eUnit);
 	void buyUnitsFromKing();
 	int getYieldSoldTotal(TradeLocationTypes eLocation, YieldTypes eYield) const;
 	// R&R, vetiarvind, Price dependent tax rate change - Start

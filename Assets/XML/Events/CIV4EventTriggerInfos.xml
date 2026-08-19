@@ -13822,8 +13822,6 @@
 				<iUnitExperienceWeight>0</iUnitExperienceWeight>
 			</UnitTriggerConditions>
 			<BuildingsRequired>
-				<BuildingClass>BUILDINGCLASS_LANDING_STAGE</BuildingClass>
-				<BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
 				<BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>

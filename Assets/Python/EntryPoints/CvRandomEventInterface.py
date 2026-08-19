@@ -28452,6 +28452,43 @@ def canTriggerThreeSmallCoastalShipsQuest(argsList):
 	return player.isUnitWithinGameYearWindow(iBigCoastalShip)
 
 
+def applyThreeSmallCoastalShipsQuestRewardShip(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if player.isNone():
+		return
+
+	iRewardUnitClass = UnitClassTypes.UNITCLASS_BIG_COASTAL_SHIP
+
+	city = getFirstRewardShipAccessCity(player, iRewardUnitClass)
+
+	if city is None or city.isNone():
+		return
+
+	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+
+def getHelpThreeSmallCoastalShipsQuestRewardShip(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if player.isNone():
+		return u""
+
+	iRewardUnitClass = UnitClassTypes.UNITCLASS_BIG_COASTAL_SHIP
+	iRewardUnit = gc.getCivilizationInfo(
+		player.getCivilizationType()
+	).getCivilizationUnits(iRewardUnitClass)
+
+	if iRewardUnit == -1:
+		return u""
+
+	return localText.getText(
+		"TXT_KEY_EVENT_THREE_SMALL_COASTAL_SHIPS_REWARD_SHIP_HELP",
+		(gc.getUnitInfo(iRewardUnit).getDescription(),)
+	)
+
+
 ######## Further ship codes regarding availability change fixes ###########
 
 def getAfricaTradeQuestRewardUnitClass(player):
@@ -28947,6 +28984,49 @@ def getHelpEuropeTradeQuestRewardShipHardwood(argsList):
 
 	return szHelp
 
+
+def applyPortRoyalTradeQuestRewardSmugglingShips(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if player.isNone():
+		return
+
+	applyQuestDonePortRoyalTradePriceAndAttitude(argsList)
+
+	iRewardUnitClass = UnitClassTypes.UNITCLASS_SMUGGLING_SHIP
+
+	city = player.getCity(kTriggeredData.iCityId)
+
+	_spawnRewardedShip(player, iRewardUnitClass, city)
+	_spawnRewardedShip(player, iRewardUnitClass, city)
+
+
+def getHelpPortRoyalTradeQuestRewardSmugglingShips(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	szHelp = getHelpQuestDonePortRoyalTradePriceAndAttitude(argsList)
+
+	if player.isNone():
+		return szHelp
+
+	iRewardUnitClass = UnitClassTypes.UNITCLASS_SMUGGLING_SHIP
+	iRewardUnit = gc.getCivilizationInfo(
+		player.getCivilizationType()
+	).getCivilizationUnits(iRewardUnitClass)
+
+	if iRewardUnit == -1:
+		return szHelp
+
+	szHelp += u"\n" + localText.getText(
+		"TXT_KEY_EVENT_PORTROYAL_TRADE_REWARD_TWO_SHIPS_HELP",
+		(gc.getUnitInfo(iRewardUnit).getDescription(),)
+	)
+
+	return szHelp
+
+
 def getPortRoyalTradeQuestRewardUnitClass3(player):
 	aRewardUnits = [
 		(gc.getInfoTypeForString("UNIT_PRIVATEER"), gc.getInfoTypeForString("UNITCLASS_PRIVATEER")),
@@ -29178,4 +29258,3 @@ def applyREFNavyModernization(argsList):
     player.modernizeRevolutionEuropeNavy()
 
     return 1
-

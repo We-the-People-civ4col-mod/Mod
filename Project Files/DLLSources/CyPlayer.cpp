@@ -1402,7 +1402,7 @@ CyUnit* CyPlayer::buyEuropeUnit(int /*UnitTypes*/ eUnit)
 }
 CyUnit* CyPlayer::grantEuropeUnit(int /*UnitTypes*/ eUnit)
 {
-	return m_pPlayer ? (new CyUnit(pointer(CREATE_ASSERT_DATA)->buyEuropeUnit((UnitTypes) eUnit, 0))) : NULL;
+	return m_pPlayer ? (new CyUnit(pointer(CREATE_ASSERT_DATA)->grantEuropeUnit((UnitTypes) eUnit))) : NULL;
 }
 int CyPlayer::getYieldBoughtTotal(TradeLocationTypes eLocation, int /*YieldTypes*/ eYield) const
 {
