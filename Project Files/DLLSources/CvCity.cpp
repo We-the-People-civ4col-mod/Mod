@@ -11570,8 +11570,12 @@ namespace
 {
 	const int NATIVE_TEACH_SCAN_RANGE = 2;
 	const int NATIVE_TEACH_BONUS_SCORE = 10000;
+	const int NATIVE_TEACH_FUR_BONUS_SCORE = 2500;
+	const int NATIVE_TEACH_RARE_BONUS_SCORE = 20000;
 	const int NATIVE_TEACH_FEATURE_SCORE = 1000;
 	const int NATIVE_TEACH_LARGE_RIVER_SCORE = 1000;
+	const int NATIVE_TEACH_NEAR_DISTANCE_WEIGHT = 3;
+	const int NATIVE_TEACH_FAR_DISTANCE_WEIGHT = 1;
 	// Arctic coastal villages: fisherman must beat generic tundra/snow fur.
 	const int NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_SCORE = 8000;
 	const int NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_WEIGHT = 4;
@@ -11689,7 +11693,96 @@ namespace
 		}
 	}
 
-	// BONUS_PEARLS / UNITCLASS_PEARLS_HUNTER, BONUS_FISH / UNITCLASS_FISHERMAN
+	bool tokensMatchResource(const CvString& szLeft, const CvString& szRight)
+	{
+		if (szLeft == szRight)
+		{
+			return true;
+		}
+
+		if (szLeft.size() >= 4 && szRight.size() == szLeft.size() + 1 &&
+			szRight.find(szLeft) == 0 && szRight[(int)szRight.size() - 1] == 'S')
+		{
+			return true;
+		}
+
+		if (szRight.size() >= 4 && szLeft.size() == szRight.size() + 1 &&
+			szLeft.find(szRight) == 0 && szLeft[(int)szLeft.size() - 1] == 'S')
+		{
+			return true;
+		}
+
+		return false;
+	}
+
+	bool namesShareResourceToken(const CvString& szLeft, const CvString& szRight)
+	{
+		if (tokensMatchResource(szLeft, szRight))
+		{
+			return true;
+		}
+
+		std::vector<CvString> aLeft;
+		std::vector<CvString> aRight;
+		CvString szToken;
+		for (int iPass = 0; iPass < 2; ++iPass)
+		{
+			const CvString& szSrc = (iPass == 0) ? szLeft : szRight;
+			std::vector<CvString>& aOut = (iPass == 0) ? aLeft : aRight;
+			szToken.clear();
+			for (unsigned int i = 0; i <= szSrc.size(); ++i)
+			{
+				if (i == szSrc.size() || szSrc[(int)i] == '_')
+				{
+					if (szToken.size() >= 4)
+					{
+						aOut.push_back(szToken);
+					}
+					szToken.clear();
+				}
+				else
+				{
+					szToken += szSrc[(int)i];
+				}
+			}
+		}
+
+		for (unsigned int i = 0; i < aLeft.size(); ++i)
+		{
+			for (unsigned int j = 0; j < aRight.size(); ++j)
+			{
+				if (tokensMatchResource(aLeft[i], aRight[j]))
+				{
+					return true;
+				}
+			}
+		}
+
+		return false;
+	}
+
+	int teachPlotDistance(int iCityX, int iCityY, int iPlotX, int iPlotY)
+	{
+		int iDX = iPlotX - iCityX;
+		int iDY = iPlotY - iCityY;
+		if (iDX < 0)
+		{
+			iDX = -iDX;
+		}
+		if (iDY < 0)
+		{
+			iDY = -iDY;
+		}
+		return (iDX > iDY) ? iDX : iDY;
+	}
+
+	int teachDistanceWeight(int iDistance)
+	{
+		return (iDistance <= 1) ? NATIVE_TEACH_NEAR_DISTANCE_WEIGHT : NATIVE_TEACH_FAR_DISTANCE_WEIGHT;
+	}
+
+	// BONUS_PEARLS / UNITCLASS_PEARLS_HUNTER. Tokens, not substrings
+	// (GRAPES must not unlock RAPE_PLANTER).
 	bool isBonusNamedForUnitClass(BonusTypes eBonus, UnitClassTypes eUnitClass)
 	{
 		if (eBonus == NO_BONUS || eUnitClass == NO_UNITCLASS)
@@ -11710,7 +11803,7 @@ namespace
 			return false;
 		}
 
-		return szClass.find(szBonus) != std::string::npos || szBonus.find(szClass) != std::string::npos;
+		return namesShareResourceToken(szBonus, szClass);
 	}
 
 	bool bonusGivesYield(BonusTypes eBonus, YieldTypes eYield)
@@ -11793,6 +11886,12 @@ namespace
 		if (isSealHunterUnitClass(eUnitClass))
 		{
 			return isSealBonus(eBonus);
+		}
+
+		if (isUnitClassType(eUnitClass, "UNITCLASS_PEARLS_HUNTER"))
+		{
+			const char* szType = GC.getBonusInfo(eBonus).getType();
+			return szType != NULL && strstr(szType, "PEARL") != NULL;
 		}
 
 		if (isUnitClassType(eUnitClass, "UNITCLASS_PROSPECTOR"))
@@ -11897,13 +11996,12 @@ namespace
 }
 
 // Native village specialty: pick a local yield within 2 plots (Chebyshev).
-// Named crop/animal experts need a visible bonus that belongs to them
-// (taiga rapeseed or grassland tobacco is not enough). Farmer needs a
-// land food bonus, fisherman a fish bonus, scout horses, prospector
-// gold/silver/gems (and then wins). Hunter/trapper/miner may still use
-// terrain; ore nearby gives miner a strong but not guaranteed score.
-// A tribe does not repeat a specialty already taught by another of its
-// villages, unless no other local option remains. No random roll.
+// Named crop/animal experts need a visible bonus that belongs to them.
+// Name match is by tokens (GRAPES is not RAPE). Adjacent tiles outrank
+// range-2 tiles. Fur bonuses are scored low so rarer goods beat Hunter.
+// Horses are scored as a rare bonus so Scout beats common fur. A tribe
+// does not repeat a specialty already taught by another of its villages,
+// unless no other local option remains. No random roll.
 UnitClassTypes CvCity::bestTeachUnitClass()
 {
 	PROFILE_FUNC();
@@ -12012,21 +12110,23 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 					continue;
 				}
 
+				const int iDistWeight = teachDistanceWeight(teachPlotDistance(getX_INLINE(), getY_INLINE(), iLoopX, iLoopY));
+
 				const int iNatureYield = pLoopPlot->calculateNatureYield(eWantedYield, getTeam(), false);
 				if (iNatureYield > 0)
 				{
-					iYieldAmount += iNatureYield;
+					iYieldAmount += iNatureYield * iDistWeight;
 				}
 
 				const FeatureTypes eFeature = pLoopPlot->getFeatureType();
 				if (eFeature != NO_FEATURE && GC.getFeatureInfo(eFeature).getYieldChange(eWantedYield) > 0)
 				{
-					++iFeatureMatches;
+					iFeatureMatches += iDistWeight;
 				}
 
 				if (kProfession.isWater() && eWantedYield == YIELD_FOOD && pLoopPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)
 				{
-					++iLargeRiverMatches;
+					iLargeRiverMatches += iDistWeight;
 				}
 
 				const BonusTypes eBonus = pLoopPlot->getBonusType();
@@ -12037,13 +12137,13 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 
 				if (bonusMatchesProfession(eBonus, eUnitClass, kProfession, eWantedYield, kCiv))
 				{
-					++iBonusMatches;
+					iBonusMatches += iDistWeight;
 				}
 			}
 
 			const bool bFurSpecialist =
-				(0 == strcmp(GC.getUnitClassInfo(eUnitClass).getType(), "UNITCLASS_HUNTER") ||
-				 0 == strcmp(GC.getUnitClassInfo(eUnitClass).getType(), "UNITCLASS_TRAPPER"));
+				isUnitClassType(eUnitClass, "UNITCLASS_HUNTER") ||
+				isUnitClassType(eUnitClass, "UNITCLASS_TRAPPER");
 			if (bFurSpecialist && iBonusMatches == 0)
 			{
 				iFeatureMatches = 0;
@@ -12067,7 +12167,8 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 				iPreciousScore = NATIVE_TEACH_PRECIOUS_METAL_SCORE;
 			}
 
-			const int iProfessionValue = (iYieldAmount + iFeatureMatches * NATIVE_TEACH_FEATURE_SCORE + iLargeRiverMatches * NATIVE_TEACH_LARGE_RIVER_SCORE + iBonusMatches * NATIVE_TEACH_BONUS_SCORE) * iUsedWeight + iArcticCoastScore + iPreciousScore;
+			const int iBonusScore = bFurSpecialist ? NATIVE_TEACH_FUR_BONUS_SCORE : NATIVE_TEACH_BONUS_SCORE;
+			const int iProfessionValue = (iYieldAmount + iFeatureMatches * NATIVE_TEACH_FEATURE_SCORE + iLargeRiverMatches * NATIVE_TEACH_LARGE_RIVER_SCORE + iBonusMatches * iBonusScore) * iUsedWeight + iArcticCoastScore + iPreciousScore;
 			if (iProfessionValue > iBestProfessionValue)
 			{
 				iBestProfessionValue = iProfessionValue;
@@ -12079,7 +12180,20 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			if (isUnitClassType(eUnitClass, "UNITCLASS_SCOUT") &&
 				hasNearbySpecialistBonus(eUnitClass, getX_INLINE(), getY_INLINE(), kMap))
 			{
-				iBestProfessionValue = NATIVE_TEACH_BONUS_SCORE * std::max(iWeight, 1);
+				int iBestHorseDistance = NATIVE_TEACH_SCAN_RANGE;
+				LOOP_ADJACENT_PLOTS(getX_INLINE(), getY_INLINE(), NATIVE_TEACH_SCAN_RANGE)
+				{
+					CvPlot* pHorsePlot = kMap.plotINLINE(iLoopX, iLoopY);
+					if (pHorsePlot != NULL && isHorseBonus(pHorsePlot->getBonusType()))
+					{
+						const int iDistance = teachPlotDistance(getX_INLINE(), getY_INLINE(), iLoopX, iLoopY);
+						if (iDistance < iBestHorseDistance)
+						{
+							iBestHorseDistance = iDistance;
+						}
+					}
+				}
+				iBestProfessionValue = NATIVE_TEACH_RARE_BONUS_SCORE * teachDistanceWeight(iBestHorseDistance) * std::max(iWeight, 1);
 			}
 			else
 			{
