@@ -3883,7 +3883,7 @@ class RiverMap :
             (height,x,y,idx)=k.getLowestBorder()
             ii = GetIndex(x,y)
             
-            if height < k.waterH:
+            if height <= k.waterH:
                 # drainage pathway found! Lake finished
                 print("Drainage found at %i %i: %i" % (x,y, ii))
                 self.lakeMap[ii] = self.lakeExit
