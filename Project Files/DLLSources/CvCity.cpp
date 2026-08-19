@@ -11586,6 +11586,38 @@ namespace
 		return eTerrain == TERRAIN_COAST || eTerrain == TERRAIN_SHALLOW_COAST || eTerrain == TERRAIN_OCEAN;
 	}
 
+	bool isSealHunterUnitClass(UnitClassTypes eUnitClass)
+	{
+		return eUnitClass != NO_UNITCLASS &&
+			0 == strcmp(GC.getUnitClassInfo(eUnitClass).getType(), "UNITCLASS_SEALS_HUNTER");
+	}
+
+	// BONUS_SEALS / BONUS_FUR_SEAL. Generic fur (capybara, deer) is not a seal.
+	bool isSealBonus(BonusTypes eBonus)
+	{
+		if (eBonus == NO_BONUS)
+		{
+			return false;
+		}
+
+		const char* szType = GC.getBonusInfo(eBonus).getType();
+		return szType != NULL && strstr(szType, "SEAL") != NULL;
+	}
+
+	bool hasNearbySealBonus(int iX, int iY, CvMap& kMap)
+	{
+		LOOP_ADJACENT_PLOTS(iX, iY, NATIVE_TEACH_SCAN_RANGE)
+		{
+			CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+			if (pLoopPlot != NULL && isSealBonus(pLoopPlot->getBonusType()))
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+
 	void stripPrefix(CvString& szText, const char* szPrefix)
 	{
 		const unsigned int iPrefixLen = (unsigned int)strlen(szPrefix);
@@ -11693,6 +11725,11 @@ namespace
 			return false;
 		}
 
+		if (isSealHunterUnitClass(eUnitClass))
+		{
+			return isSealBonus(eBonus);
+		}
+
 		if (isBonusNamedForUnitClass(eBonus, eUnitClass))
 		{
 			return true;
@@ -11710,9 +11747,10 @@ namespace
 // Native village specialty: pick a local yield within 2 plots (Chebyshev).
 // Only yields that actually exist are eligible. Map bonuses outrank
 // uncommon features, which outrank common terrain. Arctic coastal
-// villages give fisherman extra weight. A tribe does not repeat a
-// specialty already taught by another of its villages, unless no other
-// local option remains. No random roll.
+// villages give fisherman extra weight. Seal hunter requires a seal
+// bonus, not generic fur. A tribe does not repeat a specialty already
+// taught by another of its villages, unless no other local option
+// remains. No random roll.
 UnitClassTypes CvCity::bestTeachUnitClass()
 {
 	PROFILE_FUNC();
@@ -11762,6 +11800,11 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 	{
 		const int iWeight = kCiv.getTeachUnitClassWeight(eUnitClass);
 		if (iWeight <= 0)
+		{
+			continue;
+		}
+
+		if (isSealHunterUnitClass(eUnitClass) && !hasNearbySealBonus(getX_INLINE(), getY_INLINE(), kMap))
 		{
 			continue;
 		}
