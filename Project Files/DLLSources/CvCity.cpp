@@ -11604,18 +11604,50 @@ namespace
 		return szType != NULL && strstr(szType, "SEAL") != NULL;
 	}
 
-	bool hasNearbySealBonus(int iX, int iY, CvMap& kMap)
+	bool isGenericTeachUnitClass(UnitClassTypes eUnitClass)
 	{
-		LOOP_ADJACENT_PLOTS(iX, iY, NATIVE_TEACH_SCAN_RANGE)
+		if (eUnitClass == NO_UNITCLASS)
 		{
-			CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
-			if (pLoopPlot != NULL && isSealBonus(pLoopPlot->getBonusType()))
+			return false;
+		}
+
+		const char* szType = GC.getUnitClassInfo(eUnitClass).getType();
+		static const char* const apszGeneric[] =
+		{
+			"UNITCLASS_FARMER",
+			"UNITCLASS_FISHERMAN",
+			"UNITCLASS_HUNTER",
+			"UNITCLASS_TRAPPER",
+			"UNITCLASS_MINER",
+			"UNITCLASS_SCOUT",
+			"UNITCLASS_PROSPECTOR"
+		};
+
+		const unsigned int iCount = sizeof(apszGeneric) / sizeof(apszGeneric[0]);
+		for (unsigned int i = 0; i < iCount; ++i)
+		{
+			if (0 == strcmp(szType, apszGeneric[i]))
 			{
 				return true;
 			}
 		}
 
 		return false;
+	}
+
+	bool isSharedGenericYield(YieldTypes eYield)
+	{
+		return eYield == YIELD_FOOD || eYield == YIELD_FUR || eYield == YIELD_PREMIUM_FUR;
+	}
+
+	YieldTypes teachProfessionYield(const CvProfessionInfo& kProfession)
+	{
+		YieldTypes eWantedYield = (YieldTypes)kProfession.getYieldsProduced(0);
+		if (!kProfession.isWorkPlot())
+		{
+			eWantedYield = (YieldTypes)kProfession.getYieldsConsumed(0);
+		}
+		return eWantedYield;
 	}
 
 	void stripPrefix(CvString& szText, const char* szPrefix)
@@ -11700,6 +11732,55 @@ namespace
 		return eBonus != NO_BONUS && eYield != NO_YIELD && GC.getBonusInfo(eBonus).getYieldChange(eYield) > 0;
 	}
 
+	bool bonusBelongsToSpecialist(BonusTypes eBonus, UnitClassTypes eUnitClass)
+	{
+		if (eBonus == NO_BONUS || eUnitClass == NO_UNITCLASS)
+		{
+			return false;
+		}
+
+		if (isSealHunterUnitClass(eUnitClass))
+		{
+			return isSealBonus(eBonus);
+		}
+
+		if (isBonusNamedForUnitClass(eBonus, eUnitClass))
+		{
+			return true;
+		}
+
+		for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+		{
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+			if (!kProfession.isCitizen() || kProfession.LbD_getExpert() != eUnitClass)
+			{
+				continue;
+			}
+
+			const YieldTypes eWantedYield = teachProfessionYield(kProfession);
+			if (!isSharedGenericYield(eWantedYield) && bonusGivesYield(eBonus, eWantedYield))
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+
+	bool hasNearbySpecialistBonus(UnitClassTypes eUnitClass, int iX, int iY, CvMap& kMap)
+	{
+		LOOP_ADJACENT_PLOTS(iX, iY, NATIVE_TEACH_SCAN_RANGE)
+		{
+			CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
+			if (pLoopPlot != NULL && bonusBelongsToSpecialist(pLoopPlot->getBonusType(), eUnitClass))
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+
 	bool anyTeachUnitClaimsBonusByName(BonusTypes eBonus, const CvCivilizationInfo& kCiv)
 	{
 		if (eBonus == NO_BONUS)
@@ -11725,9 +11806,9 @@ namespace
 			return false;
 		}
 
-		if (isSealHunterUnitClass(eUnitClass))
+		if (!isGenericTeachUnitClass(eUnitClass))
 		{
-			return isSealBonus(eBonus);
+			return bonusBelongsToSpecialist(eBonus, eUnitClass);
 		}
 
 		if (isBonusNamedForUnitClass(eBonus, eUnitClass))
@@ -11745,12 +11826,13 @@ namespace
 }
 
 // Native village specialty: pick a local yield within 2 plots (Chebyshev).
-// Only yields that actually exist are eligible. Map bonuses outrank
-// uncommon features, which outrank common terrain. Arctic coastal
-// villages give fisherman extra weight. Seal hunter requires a seal
-// bonus, not generic fur. A tribe does not repeat a specialty already
-// taught by another of its villages, unless no other local option
-// remains. No random roll.
+// Named crop/animal experts need a visible bonus that belongs to them
+// (taiga rapeseed or grassland tobacco is not enough). Generic jobs
+// (farmer, fisherman, hunter, trapper, miner, scout, prospector) may
+// still use terrain. Map bonuses outrank uncommon features, which
+// outrank common terrain. Arctic coastal villages give fisherman extra
+// weight. A tribe does not repeat a specialty already taught by another
+// of its villages, unless no other local option remains. No random roll.
 UnitClassTypes CvCity::bestTeachUnitClass()
 {
 	PROFILE_FUNC();
@@ -11804,7 +11886,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			continue;
 		}
 
-		if (isSealHunterUnitClass(eUnitClass) && !hasNearbySealBonus(getX_INLINE(), getY_INLINE(), kMap))
+		if (!isGenericTeachUnitClass(eUnitClass) && !hasNearbySpecialistBonus(eUnitClass, getX_INLINE(), getY_INLINE(), kMap))
 		{
 			continue;
 		}
