@@ -3919,14 +3919,20 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 	{
 		if (bAttack || !canCoexistWithEnemyUnit(NO_TEAM))
 		{
-			if (!isHuman() || (kPlot.isVisible(getTeam(), false)))
+			// Prefer boarding our own ship over attacking a rival on the
+			// same plot (issue #877).
+			const bool bBoarding = !bAttack && !bIgnoreLoad && canLoad(&kPlot, false);
+			if (!bBoarding)
 			{
-				if (kPlot.isVisibleEnemyUnit(this) != bAttack)
+				if (!isHuman() || (kPlot.isVisible(getTeam(), false)))
 				{
-					//FAssertMsg(isHuman() || (!bDeclareWar || (pPlot->isVisibleOtherUnit(getOwnerINLINE()) != bAttack)), "hopefully not an issue, but tracking how often this is the case when we dont want to really declare war");
-					if (!bDeclareWar || (kPlot.isVisibleOtherUnit(getOwnerINLINE()) != bAttack && !(bAttack && kPlot.getPlotCity() && !isNoCityCapture())))
+					if (kPlot.isVisibleEnemyUnit(this) != bAttack)
 					{
-						return false;
+						//FAssertMsg(isHuman() || (!bDeclareWar || (pPlot->isVisibleOtherUnit(getOwnerINLINE()) != bAttack)), "hopefully not an issue, but tracking how often this is the case when we dont want to really declare war");
+						if (!bDeclareWar || (kPlot.isVisibleOtherUnit(getOwnerINLINE()) != bAttack && !(bAttack && kPlot.getPlotCity() && !isNoCityCapture())))
+						{
+							return false;
+						}
 					}
 				}
 			}
@@ -4679,15 +4685,11 @@ bool CvUnit::canLoadUnit(const CvUnit* pTransport, const CvPlot* pPlot, bool bCh
 		return false;
 	}
 
-	// Prohibit a unit with hidden nationality from boarding a non-hidden nat. transport
-	// This also fixes the bug that allows buccanneers to attack a ship if a friendly ship is 
-	// present on the same plot (see #877)
-	if (m_pUnitInfo->getDefaultUnitAIType() != UNITAI_YIELD &&
-		m_pUnitInfo->isHiddenNationality() &&
-		!pTransport->getUnitInfo().isHiddenNationality())
-	{
-		return false;
-	}
+	// Hidden nationality is hidden from other civs, not from the owner.
+	// Same-team is already required above, so the owner's buccaneer may
+	// board any of their ships. The old ban on non-HN transports was a
+	// workaround for #877 (attacking a rival on the same coastal plot
+	// instead of boarding). That case is handled in canMoveInto.
 
 	return true;
 }
