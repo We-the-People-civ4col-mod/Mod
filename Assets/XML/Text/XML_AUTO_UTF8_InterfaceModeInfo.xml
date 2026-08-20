@@ -36,7 +36,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_ALL_HELP</Tag>
 		<English>Order all units on the currently selected unit's tile to move</English>
-		<Portuguese>Ordenar que todas as unidades na lote da unidade atualmente selecionada se movam</Portuguese>
+		<Portuguese>Ordenar que todas as unidades no lote da unidade atualmente selecionada se movam</Portuguese>
 		<French>Déplacer toutes les unités de cette case.</French>
 		<German>Allen Einheiten auf diesem Feld einen Marschbefehl erteilen</German>
 		<Italian>Ordina a tutte le unità attualmente sulla casella selezionata di muoversi</Italian>
