@@ -893,7 +893,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_MAGAZINE</Tag>
 		<English>Magazine</English>
-		<Portuguese>Revista</Portuguese>
+		<Portuguese>Paiol</Portuguese>
 		<French>
 			<Text>Magasin:Magasins</Text>
 			<Gender>Male</Gender>
@@ -1505,7 +1505,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_VILLAGEHALL</Tag>
 		<English>Village Hall</English>
-		<Portuguese>Câmara Municipal</Portuguese>
+		<Portuguese>Salão da Vila</Portuguese>
 		<French>
 			<Text>Salle communale:Salles communales</Text>
 			<Gender>Female</Gender>
@@ -1678,7 +1678,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_WHALE_OIL_FACTORY</Tag>
 		<English>Train Oil Rendering Plant</English>
-		<Portuguese>Planta de renderização de óleo de trem</Portuguese>
+		<Portuguese>Usina de óleo de baleia</Portuguese>
 		<French>
 			<Text>Usine de raffinage des baleines:Usines de raffinage des baleines</Text>
 			<Gender>Female</Gender>
@@ -1691,7 +1691,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_WHALE_OIL_HOUSE</Tag>
 		<English>Train Oil Manufactory</English>
-		<Portuguese>Fábrica de óleo de trem</Portuguese>
+		<Portuguese>Fábrica de óleo de baleia</Portuguese>
 		<French>
 			<Text>Maison du raffineur de baleine:Maison du raffineur de baleine</Text>
 			<Gender>Male</Gender>

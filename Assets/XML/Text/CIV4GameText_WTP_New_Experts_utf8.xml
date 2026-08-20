@@ -1996,7 +1996,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CHARCOAL_BURNER</Tag>
 		<English>Master Charcoal Burner:Master Charcoal Burners</English>
-		<Portuguese>Queimador de carvão mestre:Queimadores de carvão mestre</Portuguese>
+		<Portuguese>Mestre Carvoeiro:Mestres Carvoeiros</Portuguese>
 		<French>
 			<Text>Maître charbonnier:Maîtres charbonniers</Text>
 			<Gender>Male</Gender>
@@ -2023,7 +2023,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHARCOAL_BURNER</Tag>
 		<English>Master Charcoal Burner:Master Charcoal Burners</English>
-		<Portuguese>Queimador de carvão mestre:Queimadores de carvão mestre</Portuguese>
+		<Portuguese>Mestre Carvoeiro:Mestres Carvoeiros</Portuguese>
 		<French>
 			<Text>Maître charbonnier:Maîtres charbonniers</Text>
 			<Gender>Male</Gender>
@@ -2712,7 +2712,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HARLOT_STRATEGY</Tag>
 		<English>A [COLOR_HIGHLIGHT_TEXT]seductive harlot[COLOR_REVERT] doubles the production of [LINK=YIELD_HAPPINESS]happiness[\LINK], when she works as a [LINK=PROFESSION_PROSTITUTE]prostitute[\LINK] in the [LINK=BUILDING_TAVERN]tavern[\LINK] or one of its upgrades. Lonely men often find happiness with a whore who also knows how to be a good listener. For the harlot herself, being in a world with five men for every woman means the chance to find her own husband instead of having her marriage arranged by her parents.</English>
-		<Portuguese>Uma [COLOR_HIGHLIGHT_TEXT]prostituta sedutora[COLOR_REVERT] dobra a produção de [LINK=YIELD_HAPPINESS]felicidade[\LINK], quando trabalha como [LINK=PROFESSION_PROSTITUTE]prostituta[\LINK] na [LINK=BUILDING_TAVERN]taverna[\LINK] ou em um de seus upgrades. Homens solitários muitas vezes encontram a felicidade com uma prostituta que também sabe ser uma boa ouvinte. Para a própria prostituta, estar num mundo com cinco homens para cada mulher significa a oportunidade de encontrar o seu próprio marido em vez de ter o casamento arranjado pelos pais.</Portuguese>
+		<Portuguese>Uma [COLOR_HIGHLIGHT_TEXT]prostituta sedutora[COLOR_REVERT] dobra a produção de [LINK=YIELD_HAPPINESS]felicidade[\LINK], quando trabalha como [LINK=PROFESSION_PROSTITUTE]prostituta[\LINK] na [LINK=BUILDING_TAVERN]taverna[\LINK] ou em uma de suas atualizações. Homens solitários muitas vezes encontram a felicidade com uma prostituta que também sabe ser uma boa ouvinte. Para a própria prostituta, estar num mundo com cinco homens para cada mulher significa a oportunidade de encontrar o seu próprio marido em vez de ter o casamento arranjado pelos pais.</Portuguese>
 		<French>Les hommes solitaires trouvent souvent le bonheur auprès d'une prostituée qui sait aussi être à l'écoute. Pour la prostituée elle-même, le fait d'être dans un monde où il y a cinq hommes pour chaque femme signifie la possibilité de trouver son propre mari au lieu de voir son mariage arrangé par ses parents.</French>
 		<German>Eine [COLOR_HIGHLIGHT_TEXT]Verführerische Dirne[COLOR_REVERT] verdoppelt die Produktion von [LINK=YIELD_HAPPINESS]Zufriedenheit[\LINK], wenn sie als [LINK=PROFESSION_PROSTITUTE]Prostituierte[\LINK] in der [LINK=BUILDING_TAVERN]Taverne[\LINK] oder einer ihrer Erweiterungen arbeitet.[NEWLINE]Einsame Männer finden oft ihr Glück bei einer Hure, die auch ein guter Zuhörer ist. Für die Hure selbst bedeutet die Tatsache, dass in dieser Welt auf eine Frau fünf Männer kommen, die Chance, ihren eigenen Ehemann zu finden, anstatt von ihren Eltern verheiratet zu werden.</German>
 		<Italian>Gli uomini soli spesso trovano la felicità con una prostituta che sa anche essere una buona ascoltatrice. Per la prostituta stessa, trovarsi in un mondo con cinque uomini per ogni donna significa avere la possibilità di trovarsi un marito da sola, invece di avere un matrimonio combinato dai genitori.</Italian>

@@ -445,7 +445,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE</Tag>
 		<English>Only One Colonist Learning per Native Settlement</English>
-		<Portuguese>Apenas um colono aprendendo por colônia nativa</Portuguese>
+		<Portuguese>Apenas um colono aprendendo por aldeia nativa</Portuguese>
 		<French>Un seul élève à la fois par établissement autochtone</French>
 		<German>Nur 1 Schüler gleichzeitig je Siedlung der Ureinwohner</German>
 		<Italian>Solo 1 studente alla volta per insediamento nativo</Italian>
@@ -455,7 +455,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_ONLY_ONE_COLONIST_PER_VILLAGE_HELP</Tag>
 		<English>Only one colonist is allowed to live and learn in a Native settlement at any given time. After he's qualified, the next colonist can be trained.</English>
-		<Portuguese>Apenas um colono pode viver e aprender em uma colônia nativa a qualquer momento. Depois de qualificado, o próximo colono pode ser treinado.</Portuguese>
+		<Portuguese>Apenas um colono pode viver e aprender em uma aldeia nativa a qualquer momento. Depois de qualificado, o próximo colono pode ser treinado.</Portuguese>
 		<French>Un seul colon peut vivre dans une colonie indigène à la fois et apprendre d'eux. Le prochain doit attendre que celui-ci ait terminé ses études.</French>
 		<German>Nur 1 Kolonist darf zur selben Zeit in einer Siedlung der Ureinwohner leben und von ihnen lernen. Der nächste muss warten, bis dieser seine Ausbildung beendet hat.</German>
 		<Italian>Solo 1 colono può vivere in un insediamento nativo alla volta e imparare da loro. Il prossimo deve aspettare che questo abbia finito la sua educazione.</Italian>
