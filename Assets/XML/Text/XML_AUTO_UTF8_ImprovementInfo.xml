@@ -102,7 +102,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_POST</Tag>
 		<English>Collector's Post</English>
-		<Portuguese>Postagem de colecionador</Portuguese>
+		<Portuguese>Postagem de coletor</Portuguese>
 		<French>
 			<Text>Poste de Collection</Text>
 			<Gender>Male</Gender>
@@ -135,7 +135,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_DEPOT</Tag>
 		<English>Collector's Depot</English>
-		<Portuguese>Depósito de Colecionador</Portuguese>
+		<Portuguese>Depósito de Coletor</Portuguese>
 		<French>
 			<Text>Dépôt de collecte</Text>
 			<Gender>Female</Gender>
@@ -161,7 +161,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_DEPOT_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Collector's depots[COLOR_REVERT] are upgrades of [LINK=IMPROVEMENT_COLLECTORS_POST]collector's posts[\LINK]. The [LINK=YIELD_FOOD]food[\LINK] and [LINK=YIELD_RED_PEPPER]red pepper[\LINK] production on such tiles is increased.[PARAGRAPH:2][BOLD]Background :[\BOLD][PARAGRAPH:1]Posts start small, just a location indicated by a post, then a shed and, in time, as big as business justifies.</English>
-		<Portuguese>[BOLD]Estratégia:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Depósitos de colecionador[COLOR_REVERT] são atualizações de [LINK=IMPROVEMENT_COLLECTORS_POST]postos de colecionador[\LINK]. A produção de [LINK=YIELD_FOOD]comida[\LINK] e de [LINK=YIELD_RED_PEPPER]pimenta vermelha[\LINK] nesses quadrados aumenta.[PARAGRAPH:2][BOLD]Antecedentes:[\BOLD][PARAGRAPH:1]Os postos começam pequenos, apenas um local indicado por um poste, depois um galpão e, com o tempo, tão grandes quanto o negócio justificar.</Portuguese>
+		<Portuguese>[BOLD]Estratégia:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Depósitos de coletor[COLOR_REVERT] são atualizações de [LINK=IMPROVEMENT_COLLECTORS_POST]postos de coletor[\LINK]. A produção de [LINK=YIELD_FOOD]comida[\LINK] e de [LINK=YIELD_RED_PEPPER]pimenta vermelha[\LINK] nesses quadrados aumenta.[PARAGRAPH:2][BOLD]Antecedentes:[\BOLD][PARAGRAPH:1]Os postos começam pequenos, apenas um local indicado por um poste, depois um galpão e, com o tempo, tão grandes quanto o negócio justificar.</Portuguese>
 		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les piments font partie de l'alimentation des Amériques depuis au moins 9 500 ans. Des traces archéologiques de domestication ont été trouvées dans le sud-ouest de l'équateur il y a plus de 6 000 ans. Le piment semble avoir été une des premières plantes cultivées autogames en Amérique centrale et du Sud.</French>
 		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Sammeldepots[COLOR_REVERT] sind eine Erweiterung der [LINK=IMPROVEMENT_COLLECTORS_POST]Sammelstelle[\LINK]. Die Ausbeute an [LINK=YIELD_FOOD]Nahrung[\LINK] und [LINK=YIELD_RED_PEPPER]Rotem Pfeffer[\LINK] läßt sich damit steigern.[PARAGRAPH:2][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1]Eine Sammeldepot ist ein Gebäude, dass der Zwischenlagerung von Gütern für ihren Weitertransport dient.</German>
 	</TEXT>

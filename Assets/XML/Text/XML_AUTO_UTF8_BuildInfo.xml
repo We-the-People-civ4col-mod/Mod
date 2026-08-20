@@ -17,7 +17,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_COLLECTORS_POST</Tag>
 		<English>Build a [LINK=IMPROVEMENT_COLLECTORS_POST]collectors post[\LINK]</English>
-		<Portuguese>Crie uma [LINK=IMPROVEMENT_COLLECTORS_POST]postagem para colecionadores[\LINK]</Portuguese>
+		<Portuguese>Crie uma [LINK=IMPROVEMENT_COLLECTORS_POST]postagem para coletores[\LINK]</Portuguese>
 		<French>Construire un [LINK=IMPROVEMENT_COLLECTORS_POST]poste de collection[\LINK]</French>
 		<German>[LINK=IMPROVEMENT_COLLECTORS_POST]Sammelstelle[\LINK] bauen</German>
 		<Russian>Построить [COLOR_HIGHLIGHT_TEXT]лагерь сборщиков[COLOR_REVERT]</Russian>

@@ -1250,7 +1250,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCA_COLLECTOR</Tag>
 		<English>Expert Coca Collector:Expert Coca Collectors</English>
-		<Portuguese>Colecionador especialista em coca:colecionador especialista em coca</Portuguese>
+		<Portuguese>Coletor especialista em coca:coletor especialista em coca</Portuguese>
 		<French>
 			<Text>Expert planteur de coca:Experts planteurs de coca</Text>
 			<Gender>Male</Gender>
@@ -6612,7 +6612,7 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STONECUTTER_PEDIA</Tag>
 		<English>Stonecutters, known throughout history as stone masons or masons for short, are primarily responsible for dressing stone blocks for use in architecture, building and civil engineering. Early in the 18th century masons began meeting in lodges. The earliest known American lodges were in Pennsylvania. The collector for the port of Pennsylvania, John Moore, wrote of attending lodges there in 1715. Stonecutting continues to be a high skilled profession.</English>
-		<Portuguese>Os lapidários, conhecidos ao longo da história como pedreiros ou simplesmente pedreiros, são os principais responsáveis ​​pelo revestimento de blocos de pedra para uso em arquitetura, construção e engenharia civil. No início do século 18, os maçons começaram a se reunir em lojas. As primeiras lojas americanas conhecidas estavam na Pensilvânia. O colecionador do porto da Pensilvânia, John Moore, escreveu sobre frequentar lojas lá em 1715. O corte de pedras continua a ser uma profissão altamente qualificada.</Portuguese>
+		<Portuguese>Os lapidários, conhecidos ao longo da história como pedreiros ou simplesmente pedreiros, são os principais responsáveis ​​pelo revestimento de blocos de pedra para uso em arquitetura, construção e engenharia civil. No início do século 18, os maçons começaram a se reunir em lojas. As primeiras lojas americanas conhecidas estavam na Pensilvânia. O coletor do porto da Pensilvânia, John Moore, escreveu sobre frequentar lojas lá em 1715. O corte de pedras continua a ser uma profissão altamente qualificada.</Portuguese>
 		<French>Les tailleurs de pierre, connus à travers l'Histoire comme maçons de pierre ou simplement maçon, ont comme activité principale le dressage de bloc de pierre pour l'usage de bâtiment ou d'ingéniérie civile. Le travail de tailleur de pierre a de tout temps été une profession hautement qualifiée.</French>
 		<German>Das schiere Volumen des in der Neuen Welt verfügbaren Steins, macht den Steinabbau zu einem einfachen Geschäft. Im Allgemeinen werden Steinbrüche genutzt, um Stein abzubauen.</German>
 	</TEXT>

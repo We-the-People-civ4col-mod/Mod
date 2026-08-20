@@ -147,7 +147,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCHINEAL_COLLECTOR</Tag>
 		<English>Expert Cochineal Collector:Expert Cochineal Collectors</English>
-		<Portuguese>Coletor especialista em cochonilha:Colecionadores especialistas em cochonilha</Portuguese>
+		<Portuguese>Coletor especialista em cochonilha:Coletores especialistas em cochonilha</Portuguese>
 		<French>
 			<Text>Collecteur de cochenilles expert:Collecteurs de cochenilles expert</Text>
 			<Gender>Male</Gender>
@@ -174,7 +174,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR</Tag>
 		<English>Expert Cochineal Collector:Expert Cochineal Collectors</English>
-		<Portuguese>Coletor especialista em cochonilha:Colecionadores especialistas em cochonilha</Portuguese>
+		<Portuguese>Coletor especialista em cochonilha:Coletores especialistas em cochonilha</Portuguese>
 		<French>
 			<Text>Collecteur de cochenilles expert:Collecteurs de cochenilles expert</Text>
 			<Gender>Male</Gender>
@@ -201,7 +201,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_PEDIA</Tag>
 		<English>The cochineal insects found on prickly pear cactus pads produce carminic acid, a predator-deterring chemical. When mixed with aluminum or calcium salts dried cochineal becomes carmine dye. Collectors gather the bugs by brushing them off the cactus pads.[NEWLINE]Bright red carmine dye, used in the Americas for colouring fabrics, became an important export good in the 16th century. Cochineal insects are found in the areas now known as Peru, Mexico, Chile and Argentina.[NEWLINE]When assigned to the Cochineal Collector profession, the expert can gather double the quantity of cochineal in the same amount of time it would take a regular colonist.</English>
-		<Portuguese>Os insetos cochonilhas encontrados nas almofadas dos cactos espinhosos produzem ácido carmínico, um produto químico que dissuade predadores. Quando misturada com sais de alumínio ou cálcio, a cochonilha seca transforma-se em corante carmim. Os colecionadores coletam os insetos escovando-os das almofadas dos cactos.[NEWLINE]A tinta carmim vermelha brilhante, usada nas Américas para colorir tecidos, tornou-se um importante produto de exportação no século XVI. Os insetos cochonilhas são encontrados em áreas hoje conhecidas como Peru, México, Chile e Argentina.[NEWLINE]Quando designado para a profissão de Coletor de Cochonilha, o especialista pode coletar o dobro da quantidade de cochonilha no mesmo tempo que um colono normal levaria.</Portuguese>
+		<Portuguese>Os insetos cochonilhas encontrados nas almofadas dos cactos espinhosos produzem ácido carmínico, um produto químico que dissuade predadores. Quando misturada com sais de alumínio ou cálcio, a cochonilha seca transforma-se em corante carmim. Os coletores coletam os insetos escovando-os das almofadas dos cactos.[NEWLINE]A tinta carmim vermelha brilhante, usada nas Américas para colorir tecidos, tornou-se um importante produto de exportação no século XVI. Os insetos cochonilhas são encontrados em áreas hoje conhecidas como Peru, México, Chile e Argentina.[NEWLINE]Quando designado para a profissão de Coletor de Cochonilha, o especialista pode coletar o dobro da quantidade de cochonilha no mesmo tempo que um colono normal levaria.</Portuguese>
 		<German>Die Cochenille-Schildläuse, die auf den Blättern des Feigenkaktus zu finden sind, produzieren Karminsäure, eine Chemikalie, die Raubtiere abschreckt. In Verbindung mit Aluminium- oder Kalziumsalzen wird aus den getrockneten Cochenille-Schildläusen ein karminroter Farbstoff. Sammler sammeln die Schildläuse ein, indem sie sie von den Kaktusblättern abbürsten.[NEWLINE]Der leuchtend rote Karminfarbstoff, der in Amerika zum Färben von Stoffen verwendet wurde, wurde ab Mitte des 16. Jahrhunderts zu einem wichtigen Exportgut. Cochenille-Insekten kommen in den Gebieten vor, die heute als Peru, Mexiko, Chile und Argentinien bekannt sind.[NEWLINE]Wenn ein Experte den Beruf des Cochenille-Sammlers ausübt, kann er die doppelte Menge an Cochenille-Schildläusen in der gleichen Zeit sammeln, die ein normaler Kolonist benötigen würde.</German>
 		<Hungarian>A fügekaktusz levelein élő bíbortetűk karminsavat termelnek, amely egy ragadozókat elriasztó vegyi anyag. Alumínium- vagy kalciumsókkal keverve a szárított bíbortetű karminfestékké válik. A gyűjtők a kaktuszlevelekről lekefélve gyűjtik össze a rovarokat. [NEWLINE]Az Amerikában szövetek színezésére használt élénkpiros karminfesték a 16. században fontos exportcikké vált. A bíbortetűk a mai Peru, Mexikó, Chile és Argentína területén élnek. [NEWLINE]A Tapasztalt Bíbortetű Gyűjtő ugyanannyi idő alatt kétszer annyi bíbortetűt tud gyűjteni, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
@@ -285,7 +285,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_LOGWOOD_COLLECTOR</Tag>
 		<English>Expert Logwood Collector:Expert Logwood Collectors</English>
-		<Portuguese>Coletor especialista em madeira: Colecionador especialista em madeira</Portuguese>
+		<Portuguese>Coletor especialista em madeira: Coletor especialista em madeira</Portuguese>
 		<French>
 			<Text>Expert en coupe de bois de sang:Experts en coupe de bois de sang</Text>
 			<Gender>Male</Gender>
@@ -312,7 +312,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR</Tag>
 		<English>Expert Logwood Collector:Expert Logwood Collectors</English>
-		<Portuguese>Coletor especialista em madeira: Colecionador especialista em madeira</Portuguese>
+		<Portuguese>Coletor especialista em madeira: Coletor especialista em madeira</Portuguese>
 		<French>
 			<Text>Expert en coupe de bois de sang:Experts en coupe de bois de sang</Text>
 			<Gender>Male</Gender>
@@ -711,7 +711,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_VANILLA_COLLECTOR</Tag>
 		<English>Expert Vanilla Collector:Expert Vanilla Collectors</English>
-		<Portuguese>Colecionador especialista em baunilha:Colecionadores especialistas em baunilha</Portuguese>
+		<Portuguese>Coletor especialista em baunilha:Coletores especialistas em baunilha</Portuguese>
 		<French>
 			<Text>Collecteur de vanille expert:Collecteurs de vanille expert</Text>
 			<Gender>Male</Gender>
@@ -738,7 +738,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR</Tag>
 		<English>Expert Vanilla Collector:Expert Vanilla Collectors</English>
-		<Portuguese>Colecionador especialista em baunilha:Colecionadores especialistas em baunilha</Portuguese>
+		<Portuguese>Coletor especialista em baunilha:Coletores especialistas em baunilha</Portuguese>
 		<French>
 			<Text>Collecteur de vanille expert:Collecteurs de vanille expert</Text>
 			<Gender>Male</Gender>
@@ -1007,7 +1007,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_KAUTSCHUK_COLLECTOR</Tag>
 		<English>Expert Rubber Collector:Expert Rubber Collectors</English>
-		<Portuguese>Coletor de borracha especializado: Colecionadores de borracha especializados</Portuguese>
+		<Portuguese>Coletor de borracha especializado: Coletores de borracha especializados</Portuguese>
 		<French>
 			<Text>Collecteur de caoutchouc expert:Collecteurs de caoutchouc expert</Text>
 			<Gender>Male</Gender>
@@ -1034,7 +1034,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR</Tag>
 		<English>Expert Rubber Collector:Expert Rubber Collectors</English>
-		<Portuguese>Coletor de borracha especializado: Colecionadores de borracha especializados</Portuguese>
+		<Portuguese>Coletor de borracha especializado: Coletores de borracha especializados</Portuguese>
 		<French>
 			<Text>Collecteur de caoutchouc expert:Collecteurs de caoutchouc expert</Text>
 			<Gender>Male</Gender>
