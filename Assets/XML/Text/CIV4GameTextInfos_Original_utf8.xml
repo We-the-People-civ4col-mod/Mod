@@ -5755,7 +5755,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_FLAT_MOVEMENT_COST</Tag>
 		<English>[ICON_BULLET]All Units Can Move %d1 Tiles/Turn</English>
-		<Portuguese>[ICON_BULLET]Todas as unidades podem mover %d1 peças/girar</Portuguese>
+		<Portuguese>[ICON_BULLET]Todas as unidades podem mover %d1 lotes/turno</Portuguese>
 		<French>[ICON_BULLET]Toutes les unités peuvent se déplacer de %d1 cases par tour.</French>
 		<German>[ICON_BULLET]Alle Einheiten können sich %d1 Geländefelder/Runde fortbewegen</German>
 		<Italian>[ICON_BULLET]Tutte le unità possono muovere %d1 caselle/turno</Italian>
@@ -13129,7 +13129,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_PLOT_DEFENSE</Tag>
 		<English>(Plot defense : %D1%%)</English>
-		<Portuguese>(Defesa da peça: %D1%%)</Portuguese>
+		<Portuguese>(Defesa do lote: %D1%%)</Portuguese>
 		<French>(Défense case : %D1%%)</French>
 		<German>(Geländefeldverteidigung : %D1%%)</German>
 		<Italian>(Difesa territorio : %D1%%)</Italian>
