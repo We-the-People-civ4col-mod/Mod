@@ -10,8 +10,8 @@
 		<English>Inuit</English>
 		
 		<Portuguese>
-			<Text>inuítes</Text>
-			<Gender>Female</Gender>
+			<Text>Inuítes</Text>
+			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
 		<French>
@@ -38,7 +38,7 @@
 		<English>Inuit</English>
 		
 		<Portuguese>
-			<Text>inuítes:inuítes:inuítes:inuítes</Text>
+			<Text>Inuítes:Inuítes:Inuítes:Inuítes</Text>
 			<Gender>Male:Female:Male:Female</Gender>
 			<Plural>0:0:1:1</Plural>
 		</Portuguese>
@@ -382,7 +382,7 @@
 		<English>Guarani</English>
 		
 		<Portuguese>
-			<Text>guarani</Text>
+			<Text>Guarani</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -410,7 +410,7 @@
 		<English>Guarani</English>
 		
 		<Portuguese>
-			<Text>guarani:guarani</Text>
+			<Text>Guarani:Guarani</Text>
 			<Gender>Male:Female</Gender>
 			<Plural>0:0</Plural>
 		</Portuguese>
@@ -1220,7 +1220,7 @@
 		<English>Algonquian</English>
 		
 		<Portuguese>
-			<Text>algonquino</Text>
+			<Text>Algonquino</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2423,7 +2423,7 @@
 		<English>Tarascans</English>
 		
 		<Portuguese>
-			<Text>tarascos</Text>
+			<Text>Tarascos</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
