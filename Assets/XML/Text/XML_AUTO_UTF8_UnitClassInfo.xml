@@ -2409,7 +2409,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MERCHANTMAN</Tag>
 		<English>Merchantman:Merchantmen</English>
-		<Portuguese>Mercador: Mercadores</Portuguese>
+		<Portuguese>Navio mercante:Navios mercantes</Portuguese>
 		<French>
 			<Text>Navire marchand:Navires marchands</Text>
 			<Gender>Male</Gender>
