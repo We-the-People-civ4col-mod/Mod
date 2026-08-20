@@ -11570,7 +11570,9 @@ namespace
 {
 	const int NATIVE_TEACH_SCAN_RANGE = 2;
 	const int NATIVE_TEACH_BONUS_SCORE = 10000;
-	const int NATIVE_TEACH_FUR_BONUS_SCORE = 2500;
+	// Fur must beat generic Farmer food tiles, but stay below named crops (10000).
+	const int NATIVE_TEACH_FUR_BONUS_SCORE = 6000;
+	const int NATIVE_TEACH_FUR_FEATURE_SCORE = 400;
 	const int NATIVE_TEACH_RARE_BONUS_SCORE = 20000;
 	const int NATIVE_TEACH_FEATURE_SCORE = 1000;
 	const int NATIVE_TEACH_LARGE_RIVER_SCORE = 1000;
@@ -11998,7 +12000,8 @@ namespace
 // Native village specialty: pick a local yield within 2 plots (Chebyshev).
 // Named crop/animal experts need a visible bonus that belongs to them.
 // Name match is by tokens (GRAPES is not RAPE). Adjacent tiles outrank
-// range-2 tiles. Fur bonuses are scored low so rarer goods beat Hunter.
+// range-2 tiles. Fur is scored below named crops so pepper/tobacco still
+// beat Hunter, but forests and deer still beat generic Farmer food.
 // Horses are scored as a rare bonus so Scout beats common fur. A tribe
 // does not repeat a specialty already taught by another of its villages,
 // unless no other local option remains. No random roll.
@@ -12144,10 +12147,6 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			const bool bFurSpecialist =
 				isUnitClassType(eUnitClass, "UNITCLASS_HUNTER") ||
 				isUnitClassType(eUnitClass, "UNITCLASS_TRAPPER");
-			if (bFurSpecialist && iBonusMatches == 0)
-			{
-				iFeatureMatches = 0;
-			}
 
 			if (iYieldAmount <= 0 && iFeatureMatches <= 0 && iBonusMatches <= 0 && iLargeRiverMatches <= 0)
 			{
@@ -12168,7 +12167,8 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			}
 
 			const int iBonusScore = bFurSpecialist ? NATIVE_TEACH_FUR_BONUS_SCORE : NATIVE_TEACH_BONUS_SCORE;
-			const int iProfessionValue = (iYieldAmount + iFeatureMatches * NATIVE_TEACH_FEATURE_SCORE + iLargeRiverMatches * NATIVE_TEACH_LARGE_RIVER_SCORE + iBonusMatches * iBonusScore) * iUsedWeight + iArcticCoastScore + iPreciousScore;
+			const int iFeatureScore = bFurSpecialist ? NATIVE_TEACH_FUR_FEATURE_SCORE : NATIVE_TEACH_FEATURE_SCORE;
+			const int iProfessionValue = (iYieldAmount + iFeatureMatches * iFeatureScore + iLargeRiverMatches * NATIVE_TEACH_LARGE_RIVER_SCORE + iBonusMatches * iBonusScore) * iUsedWeight + iArcticCoastScore + iPreciousScore;
 			if (iProfessionValue > iBestProfessionValue)
 			{
 				iBestProfessionValue = iProfessionValue;
