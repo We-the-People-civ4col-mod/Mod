@@ -439,6 +439,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REMOVE_LIGHT_FOREST</Tag>
 		<English>Chop down the [LINK=FEATURE_FOREST]forest[\LINK]</English>
+		<Portuguese>Derrubar a [LINK=FEATURE_FOREST]floresta clara[\LINK]</Portuguese>
 		<Russian>Вырубить [COLOR_HIGHLIGHT_TEXT]редколесье[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>

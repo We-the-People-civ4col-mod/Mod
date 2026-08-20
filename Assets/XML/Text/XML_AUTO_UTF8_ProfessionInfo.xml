@@ -1972,6 +1972,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_HEAVY_CAVALRY_PEDIA</Tag>
 		<English>Heavy cavalry were the colonial equivalent of charging knights in medieval times. They used height, speed, and size to dominate opponents on foot. They also had a powerful psychological impact just before physical impact.</English>
+		<Portuguese>A cavalaria pesada era o equivalente colonial dos cavaleiros de carga da Idade Média. Usava altura, velocidade e tamanho para dominar oponentes a pé. Também tinha um poderoso impacto psicológico imediatamente antes do impacto físico.</Portuguese>
 		<Russian>Тяжёлая кавалерия — род ударных конных войск, в сухопутных войсках вооружённых сил многих государств мира ещё с античных времён. Единственный чёткий критерий отличия от других типов кавалерии — вес коней, значительно превышавший оный у средней, лёгкой и драгунской кавалерий. Благодаря весу своих коней тяжёлая кавалерия одной своей атакой могла смять вражескую пехоту или лёгкую конницу.</Russian>
 	</TEXT>
 	<TEXT>
@@ -2182,12 +2183,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_LINE_INFANTRY_PEDIA</Tag>
 		<English>Professional musketeers and riflemen, trained and disciplined, dominated European wars from the sixteenth century onward. In the New World, line infantry quickly captured settlements though in the wilderness they were vulnerable to guerrilla warfare.[NEWLINE]To win against infantry firing in ranks Native Nations needed overwhelming numerical superiority. In the interior of the continent they often had that, and the support of the people. The Comanche wiped out the Spanish and killed any new arrivals for over a century. Ultimately Spain sold land it no longer controlled to the United States.</English>
+		<Portuguese>Mosqueteiros e fuzileiros profissionais, treinados e disciplinados, dominaram as guerras europeias a partir do século XVI. No Novo Mundo, a infantaria de linha capturava colônias com rapidez, embora no interior fosse vulnerável à guerra de guerrilha.[NEWLINE]Para vencer uma infantaria que disparava em fileiras, as nações nativas precisavam de uma superioridade numérica esmagadora. No interior do continente, muitas vezes tinham isso, e o apoio do povo. Os comanches dizimaram os espanhóis e mataram qualquer recém-chegado por mais de um século. Por fim, a Espanha vendeu terra que já não controlava aos Estados Unidos.</Portuguese>
 		<Russian>Профессиональные мушкетёры и стрелки, обученные и дисциплинированные, доминировали в европейских войнах, начиная с шестнадцатого века. В Новом Свете линейная пехота быстро захватывала поселения, хотя в дикой местности они были уязвимы для партизанской войны.[NEWLINE]Чтобы победить такую пехоту, коренным народам Америки требовалось подавляющее численное превосходство. И во внутренних частях континента они часто пользовались этим. Команчи истребляли испанцев и многих пришельцев в их земли на протяжении столетий. В конечном итоге Испания продала землю, которую она не могла контролировать, Соединенным Штатам.</Russian>
 		<English>TXT_KEY_PROFESSION_SOLDIER_PEDIA</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_LINE_INFANTRY_STRATEGY</Tag>
 		<English>You can create [COLOR_UNIT_TEXT]line infantry[COLOR_REVERT] from the settlement screen or in [LINK=CONCEPT_EUROPE]Europe[\LINK] if you have enough [LINK=YIELD_MUSKETS]guns[\LINK], [LINK=YIELD_BLADES]blades[\LINK]  and [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] to equip them. They are powerful offensive troops, capable of attacking [LINK=CONCEPT_SETTLEMENTS]settlements[\LINK] or fortifying in terrain with defense bonuses. If an unspecialized colonist practices this profession long enough, he might eventually become a [LINK=UNIT_VETERAN_INFANTRY]veteran infantry soldier[\LINK].[PARAGRAPH:2]For more information, see [LINK=CONCEPT_MILITARY_UNITS]Military Units[\LINK].</English>
+		<Portuguese>Você pode criar [COLOR_UNIT_TEXT]infantaria de linha[COLOR_REVERT] na tela da colônia ou na [LINK=CONCEPT_EUROPE]Europa[\LINK] se tiver [LINK=YIELD_MUSKETS]armas[\LINK], [LINK=YIELD_BLADES]lâminas[\LINK] e [LINK=YIELD_BLACK_POWDER]pólvora[\LINK] suficientes para equipá-la. São tropas ofensivas poderosas, capazes de atacar [LINK=CONCEPT_SETTLEMENTS]colônias[\LINK] ou se fortificar em terrenos com bônus de defesa. Se um colono não especializado praticar esta profissão por tempo suficiente, ele poderá se tornar um [LINK=UNIT_VETERAN_INFANTRY]soldado de infantaria veterano[\LINK].[PARAGRAPH:2]Para obter mais informações, consulte [LINK=CONCEPT_MILITARY_UNITS]Unidades Militares[\LINK].</Portuguese>
 		<Russian>Вы можете создать [COLOR_UNIT_TEXT]линейную пехоту[COLOR_REVERT] на экране поселения или в [LINK=CONCEPT_EUROPE]Европе[\LINK], если у вас достаточно [LINK=YIELD_MUSKETS]мушкетов[\LINK], [LINK=YIELD_BLADES]клинков[\LINK] и [LINK=YIELD_BLACK_POWDER]пороха[\LINK] для их оснащения. Это мощные наступательные войска, способные атаковать [LINK=CONCEPT_SETTLEMENTS]поселения[\LINK]. Если обычный колонист достаточно долго участвует в сражениях, в конечном итоге он может стать [LINK=UNIT_VETERAN_INFANTRY]ветераном пехоты[\LINK].[PARAGRAPH:2]Для получения дополнительной информации смотрите концепцию [LINK=CONCEPT_MILITARY_UNITS]Военные отряды[\LINK].</Russian>
 		<English>TXT_KEY_PROFESSION_SOLDIER_STRATEGY</English>
 	</TEXT>
@@ -2842,6 +2845,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_CAVALRY_PEDIA</Tag>
 		<English>Heavy cavalry were the colonial equivalent of charging knights in medieval times. They used height, speed, and size to dominate opponents on foot. They also had a powerful psychological impact just before physical impact.</English>
+		<Portuguese>A cavalaria pesada era o equivalente colonial dos cavaleiros de carga da Idade Média. Usava altura, velocidade e tamanho para dominar oponentes a pé. Também tinha um poderoso impacto psicológico imediatamente antes do impacto físico.</Portuguese>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_CAVALRY_STRATEGY</Tag>
@@ -2888,6 +2892,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_DRAGOON_PEDIA</Tag>
 		<English>Dragoons are soldiers trained to shoot from horseback. The ability to fire a musket with any semblance of accuracy while galloping across a battlefield required intense training and the dragoons were rightly respected for their mastery of this skill. Nearly every power in Europe fielded dragoons - Napoleon Bonaparte was especially fond of their combination of force and maneuverability.</English>
+		<Portuguese>Dragões são soldados treinados para atirar a cavalo. A habilidade de disparar um mosquete com alguma precisão enquanto galopa pelo campo de batalha exigia treino intenso, e os dragões eram, com razão, respeitados por esse domínio. Quase todas as potências da Europa empregavam dragões — Napoleão Bonaparte apreciava especialmente a combinação de força e manobra.</Portuguese>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_DRAGOON_STRATEGY</Tag>
@@ -2935,6 +2940,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_LIGHT_INFANTRY_PEDIA</Tag>
 		<English>Professional musketeers and riflemen, trained and disciplined, dominated European wars from the sixteenth century onward. Light infantry could move quickly though in the wilderness they struggled to adapt to guerrilla warfare.[NEWLINE]Native Nations soon became skilled with captured European weapons and horses. The Comanche wiped out the Spanish and killed any new arrivals for over a century. Ultimately Spain sold land it no longer controlled to the United States.</English>
+		<Portuguese>Mosqueteiros e fuzileiros profissionais, treinados e disciplinados, dominaram as guerras europeias a partir do século XVI. A infantaria leve podia se mover com rapidez, embora no interior tivesse dificuldade para se adaptar à guerra de guerrilha.[NEWLINE]As nações nativas logo se tornaram hábeis com armas e cavalos europeus capturados. Os comanches dizimaram os espanhóis e mataram qualquer recém-chegado por mais de um século. Por fim, a Espanha vendeu terra que já não controlava aos Estados Unidos.</Portuguese>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_LIGHT_INFANTRY_STRATEGY</Tag>
@@ -2982,6 +2988,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_LINE_INFANTRY_PEDIA</Tag>
 		<English>Professional musketeers and riflemen, trained and disciplined, dominated European wars from the sixteenth century onward. In the New World, line infantry quickly captured settlements though in the wilderness they were vulnerable to guerrilla warfare.[NEWLINE]To win against infantry firing in ranks Native Nations needed overwhelming numerical superiority. In the interior of the continent they often had that, and the support of the people. The Comanche wiped out the Spanish and killed any new arrivals for over a century. Ultimately Spain sold land it no longer controlled to the United States.</English>
+		<Portuguese>Mosqueteiros e fuzileiros profissionais, treinados e disciplinados, dominaram as guerras europeias a partir do século XVI. No Novo Mundo, a infantaria de linha capturava colônias com rapidez, embora no interior fosse vulnerável à guerra de guerrilha.[NEWLINE]Para vencer uma infantaria que disparava em fileiras, as nações nativas precisavam de uma superioridade numérica esmagadora. No interior do continente, muitas vezes tinham isso, e o apoio do povo. Os comanches dizimaram os espanhóis e mataram qualquer recém-chegado por mais de um século. Por fim, a Espanha vendeu terra que já não controlava aos Estados Unidos.</Portuguese>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROYAL_LINE_INFANTRY_STRATEGY</Tag>
@@ -3820,6 +3827,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_VALUABLE_WOOD_LUMBERJACK_PEDIA</Tag>
 		<English>For the colonists of North America, lumber was a free resource. Exotic wood was especially valued for its beauty, strength and durability. Finishing carpenters demanded it for their best work. Skilled lumberjacks were able to fell trees with a rapidity that greatly outdistanced the amateurs. They were lumberjacks and they were okay.</English>
+		<Portuguese>Para os colonos da América do Norte, a madeira serrada era um recurso gratuito. A madeira exótica era especialmente valorizada por sua beleza, resistência e durabilidade. Os carpinteiros de acabamento a exigiam para seus melhores trabalhos. Lenhadores habilidosos conseguiam derrubar árvores com uma rapidez muito superior à dos amadores. Eram lenhadores, e estava tudo bem.</Portuguese>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_VALUABLE_WOOD_LUMBERJACK_STRATEGY</Tag>
@@ -3925,6 +3933,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_WEAVER_WOOL_PEDIA</Tag>
 		<English>Weaving is the process by which raw wool or cotton is turned into cloth.[NEWLINE]This is a slow, arduous and difficult task at best but, in the hands of a skilled weaver, the work can be quick and artful, creating a product far superior to anything a mere amateur could create.</English>
+		<Portuguese>Tecelagem é o processo pelo qual a lã ou o algodão cru são transformados em tecido.[NEWLINE]Esta é uma tarefa lenta, árdua e difícil, na melhor das hipóteses, mas, nas mãos de um tecelão habilidoso, o trabalho pode ser rápido e primoroso, criando um produto muito superior a qualquer coisa que um mero amador pudesse produzir.</Portuguese>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_WEAVER_WOOL_STRATEGY</Tag>

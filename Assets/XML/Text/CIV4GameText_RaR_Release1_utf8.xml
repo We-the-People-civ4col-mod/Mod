@@ -2041,7 +2041,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_CULTURE_RANGE</Tag>
 		<English>[ICON_BULLET]Influences plots within a distance of %d1_Num</English>
-		<Portuguese>[ICON_BULLET]Influencia parcelas a uma distância de %d1_Num</Portuguese>
+		<Portuguese>[ICON_BULLET]Influencia lotes a uma distância de %d1_Num</Portuguese>
 		<French>[ICON_BULLET]Influence des parcelles dans un rayon de %d1_Num</French>
 		<German>[ICON_BULLET]Beeinflusst Geländefelder im Radius von %d1_Num</German>
 		<Italian>[ICON_BULLET]Trame influenze entro una distanza di %d1_Num</Italian>

@@ -1208,7 +1208,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FREE_XP_UNITS</Tag>
 		<English>[ICON_BULLET]New units receive %D1_Change [NUM1:experience point:experience points]</English>
-		<Portuguese>[ICON_BULLET]Novas unidades recebem %D1_Change [NUM1:experience point:experience points]</Portuguese>
+		<Portuguese>[ICON_BULLET]Novas unidades recebem %D1_Change [NUM1:ponto de experiência:pontos de experiência]</Portuguese>
 		<French>[ICON_BULLET]Les nouvelles unités bénéficient de %D1_Change EXP</French>
 		<German>[ICON_BULLET]Neue Einheiten erhalten %D1_Change [NUM1:Erfahrungspunkt:Erfahrungspunkte]</German>
 		<Italian>[ICON_BULLET]Le nuove unità ricevono %D1_Change [NUM1:punto esperienza:punti esperienza]</Italian>
@@ -1301,7 +1301,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FREE_XP</Tag>
 		<English>[ICON_BULLET]New %s1_UnitName receive %D2_Change [NUM1:experience point:experience points]</English>
-		<Portuguese>[ICON_BULLET]Novo %s1_UnitName recebe %D2_Change [NUM1:experience point:experience points]</Portuguese>
+		<Portuguese>[ICON_BULLET]Novo %s1_UnitName recebe %D2_Change [NUM1:ponto de experiência:pontos de experiência]</Portuguese>
 		<French>[ICON_BULLET]Ces nouvelles unités (%s1_UnitName) bénéficient de %D2_Change EXP</French>
 		<German>[ICON_BULLET]Neue %s1_UnitName erhalten %D2_Change [NUM1:Erfahrungspunkt:Erfahrungspunkte]</German>
 		<Italian>[ICON_BULLET]Le nuove %s1:2_UnitName ricevono %D2_Change [NUM1:punto esperienza:punti esperienza]</Italian>
@@ -1475,7 +1475,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_EXTRA_YIELD_THRESHOLDS</Tag>
 		<English>[ICON_BULLET]+1%F1_yield on plots with %d2%F3_yield</English>
-		<Portuguese>[ICON_BULLET]+1%F1_yield em parcelas com %d2%F3_yield</Portuguese>
+		<Portuguese>[ICON_BULLET]+1%F1_yield em lotes com %d2%F3_yield</Portuguese>
 		<French>[ICON_BULLET]+1%F1_yield sur les cases avec : %d2%F3_yield</French>
 		<German>[ICON_BULLET]+1%F1_yield auf Geländefeldern mit %d2%F3_yield</German>
 		<Italian>[ICON_BULLET]+1%F1_yield su caselle con %d2%F3_yield</Italian>
@@ -3514,7 +3514,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLOT_IMP_UPGRADE</Tag>
 		<English>[SPACE](%d1_Num [NUM1:turn:turns] to %s2_ImpName)</English>
-		<Portuguese>[SPACE](%d1_Num [NUM1:turno:turnos] to %s2_ImpName)</Portuguese>
+		<Portuguese>[SPACE](%d1_Num [NUM1:turno:turnos] até %s2_ImpName)</Portuguese>
 		<French>[SPACE](%d1_Num [NUM1:tour:tours] pour : %s2_ImpName)</French>
 		<German>[SPACE](%d1_Num [NUM1:Runde:Runden] bis zur Modernisierung %s2_ImpName)</German>
 		<Italian>[SPACE](%d1_Num [NUM1:turno:turni] per %s2_ImpName)</Italian>
@@ -11583,7 +11583,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PILLAGE_CITY</Tag>
 		<English>[ICON_BULLET]%d1 terrain [NUM1:improvement:improvements] destroyed around [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</English>
-		<Portuguese>[ICON_BULLET]%d1 terreno [NUM1:improvement:improvements] destruído em torno de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Portuguese>
+		<Portuguese>[ICON_BULLET]%d1 terreno [NUM1:melhoria:melhorias] destruído em torno de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Portuguese>
 		<French>[ICON_BULLET]Destruction de %d1 [NUM1:aménagement:aménagements] près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]%d1 Gelände-[NUM1:Modernisierung:Modernisierungen] bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zerstört</German>
 		<Italian>[ICON_BULLET][NUM1:Distrutto:Distrutti] %d1 [NUM1:miglioramento:miglioramenti] del terreno nella zona di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Italian>
@@ -11603,7 +11603,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PILLAGE</Tag>
 		<English>[ICON_BULLET]%d1 terrain [NUM1:improvement:improvements] destroyed</English>
-		<Portuguese>[ICON_BULLET]%d1 terreno [NUM1:improvement:improvements] destruído</Portuguese>
+		<Portuguese>[ICON_BULLET]%d1 terreno [NUM1:melhoria:melhorias] destruído</Portuguese>
 		<French>[ICON_BULLET]Destruction de %d1 [NUM1:aménagement:aménagements]</French>
 		<German>[ICON_BULLET]%d1 Gelände-[NUM1:Modernisierung:Modernisierungen] zerstört</German>
 		<Italian>[ICON_BULLET][NUM1:Distrutto:Distrutti] %d1 [NUM1:miglioramento:miglioramenti] del terreno</Italian>
@@ -11633,7 +11633,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NUM_CITY_IMPROVEMENTS_DESTROYED</Tag>
 		<English>%d1 %s2_civ_adjective [NUM1:improvement has:improvements have] been destroyed</English>
-		<Portuguese>%d1 %s2_civ_adjective [NUM1:improvement has:improvements have] foi destruído</Portuguese>
+		<Portuguese>%d1 %s2_civ_adjective [NUM1:melhoria foi:melhorias foram] foi destruído</Portuguese>
 		<French>Destruction de %d1 [NUM1:aménagement:aménagements] %s2_civ_adjective</French>
 		<German>%d1 %s2:3_civ_adjective [NUM1:Modernisierung wurde:Modernisierungen wurden] zerstört</German>
 		<Italian>%d1 [NUM1:miglioramento:miglioramenti] della civiltà %s2:2_civ_adjective [NUM1:è stato distrutto:sono stati distrutti]</Italian>

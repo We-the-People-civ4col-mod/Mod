@@ -118,7 +118,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVES</Tag>
 		<English>%s1 - %d2 [NUM2:Achievement:Achievements]</English>
-		<Portuguese>%s1 - %d2 [NUM2:Achievement:Achievements]</Portuguese>
+		<Portuguese>%s1 - %d2 [NUM2:Conquista:Conquistas]</Portuguese>
 		<French>%s1 - %d2 [NUM2:haut-fait:hauts-faits]</French>
 		<German>%s1 - %d2 [NUM2:Leistung:Leistungen]</German>
 		<Italian>%s1 - %d2 [NUM2:Realizzazione:Realizzazioni]</Italian>

@@ -2529,7 +2529,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_CITY</Tag>
 		<English>Improve plots next to nearest settlement (Automated)</English>
-		<Portuguese>Melhorar parcelas próximas aa colônia mais próximo (Automatizado)</Portuguese>
+		<Portuguese>Melhorar lotes próximas aa colônia mais próximo (Automatizado)</Portuguese>
 		<French>Améliorer la colonie la plus proche (Automatisé)</French>
 		<German>Geländefelder rings um nächstgelegene Kolonie modernisieren (Automatisch)</German>
 		<Italian>Migliora l'insediamento più vicino (automaticamente)</Italian>
@@ -2796,7 +2796,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_PROVIDES_FRESHWATER</Tag>
 		<English>[ICON_BULLET]Provides fresh water access to adjacent plots[SPACE]</English>
-		<Portuguese>[ICON_BULLET]Fornece acesso de água doce a parcelas adjacentes[SPACE]</Portuguese>
+		<Portuguese>[ICON_BULLET]Fornece acesso de água doce a lotes adjacentes[SPACE]</Portuguese>
 		<French>[ICON_BULLET]Donne un accès à l'eau douce aux terrains adjacents[SPACE]</French>
 		<German>[ICON_BULLET]Gibt angrenzenden Geländefeldern Süßwasserzugang[SPACE]</German>
 		<Russian>[ICON_BULLET]Обеспечивает соседним участкам доступ к пресной воде[SPACE]</Russian>
@@ -4167,7 +4167,7 @@
 	<TEXT>
 		<Tag>INTERFACE_WARSHIPS</Tag>
 		<English>%d1 [NUM1:Warship:Warships]</English>
-		<Portuguese>%d1 [NUM1:Warship:Warships]</Portuguese>
+		<Portuguese>%d1 [NUM1:Navio de guerra:Navios de guerra]</Portuguese>
 		<French>%d1 [NUM1:Navire de guerre:Navires de guerre]</French>
 		<German>%d1 [NUM1:Kriegsschiff:Kriegsschiffe]</German>
 		<Italian>%d1 [NUM1:nave da guerra:navi da guerra]</Italian>
@@ -4178,7 +4178,7 @@
 	<TEXT>
 		<Tag>INTERFACE_REVOLUTION_SCREEN_SOLDIERS</Tag>
 		<English>%d1 [NUM1:Soldier:Soldiers]</English>
-		<Portuguese>%d1 [NUM1:Soldier:Soldiers]</Portuguese>
+		<Portuguese>%d1 [NUM1:Soldado:Soldados]</Portuguese>
 		<French>%d1 [NUM1:Soldat:Soldats]</French>
 		<German>%d1 [NUM1:Soldat:Soldaten]</German>
 		<Italian>%d1 [NUM1:soldato:soldati]</Italian>
@@ -4189,7 +4189,7 @@
 	<TEXT>
 		<Tag>INTERFACE_REVOLUTION_SCREEN_DRAGOONS</Tag>
 		<English>%d1 [NUM1:Dragoon:Dragoons]</English>
-		<Portuguese>%d1 [NUM1:Dragoon:Dragoons]</Portuguese>
+		<Portuguese>%d1 [NUM1:Dragão:Dragões]</Portuguese>
 		<French>%d1 [NUM1:Dragon:Dragons]</French>
 		<German>%d1 [NUM1:Dragoner:Dragoner]</German>
 		<Italian>%d1 [NUM1:dragone:dragoni]</Italian>
@@ -4200,7 +4200,7 @@
 	<TEXT>
 		<Tag>INTERFACE_REVOLUTION_SCREEN_REGULARS</Tag>
 		<English>%d1 [NUM1:Regular:Regulars]</English>
-		<Portuguese>%d1 [NUM1:Regular:Regulars]</Portuguese>
+		<Portuguese>%d1 [NUM1:Regular:Regulares]</Portuguese>
 		<French>%d1 [NUM1:Soldat de métier:Soldats de métier]</French>
 		<German>%d1 [NUM1:Soldat:Soldaten]</German>
 		<Italian>%d1 [NUM1:regolare:regolari]</Italian>
@@ -4210,7 +4210,7 @@
 	<TEXT>
 		<Tag>INTERFACE_REVOLUTION_SCREEN_REGULAR_DRAGOONS</Tag>
 		<English>%d1 [NUM1:Regular Dragoon:Regular Dragoons]</English>
-		<Portuguese>%d1 [NUM1:Regular Dragoon:Regular Dragoons]</Portuguese>
+		<Portuguese>%d1 [NUM1:Dragão regular:Dragões regulares]</Portuguese>
 		<French>%d1 [NUM1:Dragon de métier:Dragons de métier]</French>
 		<German>%d1 [NUM1:Dragoner:Dragoner]</German>
 		<Italian>%d1 [NUM1:dragone di carriera:dragoni di carriera]</Italian>
@@ -4220,7 +4220,7 @@
 	<TEXT>
 		<Tag>INTERFACE_REVOLUTION_SCREEN_CANNONS</Tag>
 		<English>%d1 [NUM1:Cannon:Cannons]</English>
-		<Portuguese>%d1 [NUM1:Cannon:Cannons]</Portuguese>
+		<Portuguese>%d1 [NUM1:Canhão:Canhões]</Portuguese>
 		<French>%d1 [NUM1:Canon:Canons]</French>
 		<German>%d1 [NUM1:Leichte Artillerie:Leichte Artillerien]</German>
 		<Italian>%d1 [NUM1:cannone:cannoni]</Italian>
@@ -4231,7 +4231,7 @@
 	<TEXT>
 		<Tag>INTERFACE_REVOLUTION_SCREEN_ARTY</Tag>
 		<English>%d1 [NUM1:Artillery:Artillery]</English>
-		<Portuguese>%d1 [NUM1:Artillery:Artillery]</Portuguese>
+		<Portuguese>%d1 [NUM1:Artilharia:Artilharia]</Portuguese>
 		<French>%d1 [NUM1:Artillerie lourde:Artilleries lourdes]</French>
 		<German>%d1 [NUM1:Schwere Artillerie:Schwere Artillerien]</German>
 		<Italian>%d1 [NUM1:unità d'artiglieria:unità d'artiglieria]</Italian>
@@ -4242,7 +4242,7 @@
 	<TEXT>
 		<Tag>INTERFACE_REVOLUTION_SCREEN_VETERAN_MILITIA</Tag>
 		<English>%d1 [NUM1:Veteran:Veterans] / %d2 Militia</English>
-		<Portuguese>%d1 [NUM1:Veteran:Veterans] / %d2 Milícia</Portuguese>
+		<Portuguese>%d1 [NUM1:Veterano:Veteranos] / %d2 Milícia</Portuguese>
 		<French>%d1 [NUM1:Vétéran:Vétérans] / %d2 Milice</French>
 		<German>%d1 [NUM1:Veteran:Veteranen] / %d2 Miliz</German>
 		<Italian>%d1 [NUM1:veterano:veterani] / %d2 milizia</Italian>
@@ -4263,7 +4263,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MEMBERS</Tag>
 		<English>%s1 - %d2 [NUM2:Member:Members]</English>
-		<Portuguese>%s1 - %d2 [NUM2:Member:Members]</Portuguese>
+		<Portuguese>%s1 - %d2 [NUM2:Membro:Membros]</Portuguese>
 		<French>%s1 - %d2 [NUM2:Membre:Membres]</French>
 		<German>%s1 - %d2 [NUM2:Mitglied:Mitglieder]</German>
 		<Italian>%s1 - %d2 [NUM2:membro:membri]</Italian>

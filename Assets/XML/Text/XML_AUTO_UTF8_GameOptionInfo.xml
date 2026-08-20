@@ -23,21 +23,25 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_TWO_PLOT_CITY_RADIUS</Tag>
 		<English>Two plot colony catchment radius</English>
+		<Portuguese>Raio de captação da colônia de dois lotes</Portuguese>
 		<Russian>Радиус колонии равен двум клеткам</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_TWO_PLOT_CITY_RADIUS_HELP</Tag>
 		<English>Enables colonies to use plots within a range of 2 plots instead of the 1 plot used in vanilla.</English>
+		<Portuguese>Permite que as colônias usem lotes num raio de 2 lotes em vez do 1 lote usado no jogo original.</Portuguese>
 		<Russian>Позволяет колониям использовать участки в диапазоне 2 клеток вокруг центра поселения вместо 1, как в оригинальной версии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_NEW_MOVEMENT_COST</Tag>
 		<English>New movement cost system</English>
+		<Portuguese>Novo sistema de custo de movimento</Portuguese>
 		<Russian>Новая система перемещения</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_NEW_MOVEMENT_COST_HELP</Tag>
 		<English>Units using more moves than they have will carry over the loss to the next turn. Like a unit with 2 moves using 3 will only have one move the following turn. 1 move units can spend multiple turns getting through rough terrain.</English>
+		<Portuguese>Unidades que gastam mais movimentos do que têm carregam a perda para o próximo turno. Por exemplo, uma unidade com 2 movimentos que gasta 3 terá apenas um movimento no turno seguinte. Unidades com 1 movimento podem gastar vários turnos para atravessar terreno difícil.</Portuguese>
 		<Russian>Юниты, использовавшие больше очков перемещения (ОП), чем у них есть, на следующий ход получат штраф. Например, подразделение с 2 ОП, переместившись на клетку со стоимостью перемещения 3, будет иметь только 1 ОП на следующем ходу. Подразделения с 1 ОП могут потратить несколько ходов, пробираясь по пересеченной местности.</Russian>
 	</TEXT>
 	<TEXT>

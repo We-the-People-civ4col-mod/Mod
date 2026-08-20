@@ -1678,11 +1678,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_SALTWATER</Tag>
 		<English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_SHALLOW_COAST]shallow coasts[\LINK], [LINK=TERRAIN_COAST]coasts[\LINK], or [LINK=TERRAIN_OCEAN]ocean[\LINK].</English>
+		<Portuguese>[ICON_BULLET]Só pode ser construído em [LINK=TERRAIN_SHALLOW_COAST]costas rasas[\LINK], [LINK=TERRAIN_COAST]costas[\LINK] ou [LINK=TERRAIN_OCEAN]oceano[\LINK].</Portuguese>
 		<Russian>[ICON_BULLET]Можно строить только на [LINK=TERRAIN_COAST]побережье[\LINK], [LINK=TERRAIN_SHALLOW_COAST]мелководье[\LINK] или в [LINK=TERRAIN_OCEAN]океане[\LINK].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_BUILD_ONLY_FRESHWATER</Tag>
 		<English>[ICON_BULLET]Can only be built on [LINK=TERRAIN_LAKE]fresh water lakes[\LINK], [LINK=TERRAIN_ICE_LAKE]ice lakes[\LINK], or [LINK=TERRAIN_LARGE_RIVERS]large rivers[\LINK].</English>
+		<Portuguese>[ICON_BULLET]Só pode ser construído em [LINK=TERRAIN_LAKE]lagos de água doce[\LINK], [LINK=TERRAIN_ICE_LAKE]lagos de gelo[\LINK] ou [LINK=TERRAIN_LARGE_RIVERS]rios grandes[\LINK].</Portuguese>
 		<Russian>[ICON_BULLET]Можно строить только на [LINK=TERRAIN_LAKE]пресноводном[\LINK] и [LINK=TERRAIN_ICE_LAKE]замёрзшем[\LINK] озёрах или на [LINK=TERRAIN_LARGE_RIVERS]больших реках[\LINK].</Russian>
 	</TEXT>
 	<TEXT>
