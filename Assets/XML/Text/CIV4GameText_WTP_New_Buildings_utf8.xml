@@ -100,7 +100,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_SHOP</Tag>
 		<English>Confectioner's Shop</English>
-		<Portuguese>Confeitaria</Portuguese>
+		<Portuguese>Loja do Confeiteiro</Portuguese>
 		<French>Atelier du confiseur</French>
 		<German>
 			<Text>Konditorladen</Text>
@@ -113,7 +113,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_FACTORY</Tag>
 		<English>Confectionery</English>
-		<Portuguese>Confeitaria</Portuguese>
+		<Portuguese>Fábrica de Doces</Portuguese>
 		<French>Confiserie</French>
 		<German>
 			<Text>Konditorei</Text>
@@ -139,7 +139,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP</Tag>
 		<English>Confectioner's Shop</English>
-		<Portuguese>Confeitaria</Portuguese>
+		<Portuguese>Loja do Confeiteiro</Portuguese>
 		<French>Atelier du confiseur</French>
 		<German>
 			<Text>Konditorladen</Text>
@@ -152,7 +152,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY</Tag>
 		<English>Confectionery</English>
-		<Portuguese>Confeitaria</Portuguese>
+		<Portuguese>Fábrica de Doces</Portuguese>
 		<French>Confiserie</French>
 		<German>
 			<Text>Konditorei</Text>
@@ -179,28 +179,28 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_PEDIA</Tag>
 		<English>The confectioner's shop adds extra variety, candy for every taste, along with traditional sweets that remind people of home. The bigger market helps to keep prices down.[NEWLINE]Extra production creates trading opportunities. Some confectioners even set up tables where tea is served to accompany the treats. A very few offer coffee, at first considered scandalous, because the drink is so stimulating.</English>
-		<Portuguese>A confeitaria acrescenta variedade extra, doces para todos os gostos, além de doces tradicionais que lembram a casa. O mercado maior ajuda a manter os preços baixos.[NEWLINE]A produção extra cria oportunidades comerciais. Alguns confeiteiros chegam a montar mesas onde é servido chá para acompanhar as guloseimas. Poucos oferecem café, a princípio considerado escandaloso, porque a bebida é muito estimulante.</Portuguese>
+		<Portuguese>A loja do confeiteiro acrescenta variedade extra, doces para todos os gostos, além de doces tradicionais que lembram a casa. O mercado maior ajuda a manter os preços baixos.[NEWLINE]A produção extra cria oportunidades comerciais. Alguns confeiteiros chegam a montar mesas onde é servido chá para acompanhar as guloseimas. Poucos oferecem café, a princípio considerado escandaloso, porque a bebida é muito estimulante.</Portuguese>
 		<German>Die Konditorei sorgt für zusätzliche Abwechslung, Süßigkeiten für jeden Geschmack und traditionelle Süßigkeiten, die die Menschen an ihre Heimat erinnern. Der größere Markt trägt dazu bei, die Preise niedrig zu halten.[NEWLINE]Die zusätzliche Produktion schafft Handelsmöglichkeiten. Einige Zuckerbäcker stellen sogar Tische auf, an denen Tee zu den Leckereien gereicht wird. Einige wenige bieten Kaffee an, was zunächst als skandalös galt, weil das Getränk so anregend ist.</German>
 		<Hungarian>A Cukrász  Üzlet további változatosságot, minden ízlésnek megfelelő édességeket kínál, valamint hagyományos édességeket, amelyek az otthonra emlékeztetik az embereket. A nagyobb piac segít az árak alacsonyan tartásában. A többlettermelés kereskedelmi lehetőségeket teremt. Néhány cukrász még asztalokat is felállít, ahol tea kíséretében szolgálják fel az édességeket. Nagyon kevesen kínálnak kávét, amit eleinte botrányosnak tartottak, mert az ital annyira élénkítő hatású.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]confectioners' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioners[\LINK] are particularly effective here.</English>
-		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]confeitaria[COLOR_REVERT] é a atualização da [LINK=BUILDING_CONFECTIONER_HOUSE]casa do confeiteiro[\LINK] onde um colono com a profissão de [LINK=PROFESSION_CONFECTIONER_VANILLA]confeiteiro de baunilha[\LINK] ou de [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]confeiteiro de chocolate[\LINK] transforma [LINK=YIELD_VANILLA_PODS]favas de baunilha[\LINK] em [LINK=YIELD_VANILLA]baunilha trata[\LINK] e [LINK=YIELD_COCOA]cacau[\LINK] com [LINK=YIELD_SUGAR]açúcar[\LINK] em [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Mestres confeiteiros[\LINK] são particularmente eficazes aqui.</Portuguese>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]loja do confeiteiro[COLOR_REVERT] é a atualização da [LINK=BUILDING_CONFECTIONER_HOUSE]casa do confeiteiro[\LINK] onde um colono com a profissão de [LINK=PROFESSION_CONFECTIONER_VANILLA]confeiteiro de baunilha[\LINK] ou de [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]confeiteiro de chocolate[\LINK] transforma [LINK=YIELD_VANILLA_PODS]favas de baunilha[\LINK] em [LINK=YIELD_VANILLA]baunilha trata[\LINK] e [LINK=YIELD_COCOA]cacau[\LINK] com [LINK=YIELD_SUGAR]açúcar[\LINK] em [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Mestres confeiteiros[\LINK] são particularmente eficazes aqui.</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Konditorladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Cukrász Üzlet[COLOR_REVERT] a [LINK=BUILDING_CONFECTIONER_HOUSE]Cukrász Bolt[\LINK] továbbfejlesztése, ahol egy [LINK=PROFESSION_CONFECTIONER_VANILLA]vanília cukrász [\LINK] vagy [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]csokoládé cukrász[\LINK] [LINK=YIELD_VANILLA_PODS]vaníliát[\LINK] [LINK=YIELD_VANILLA]vanília édességekké[\LINK] és [LINK=YIELD_COCOA]kakaót [\LINK] és [LINK=YIELD_SUGAR]cukorral[\LINK] [LINK=YIELD_CHOCOLATE]csokoládét[\LINK] készít. A [LINK=UNIT_CONFECTIONER]Cukrászmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_PEDIA</Tag>
 		<English>The candy factory can serve an entire region. For one group it offers cheap sweets thanks to economies of scale. For the well-to-do it delivers an unparalleled variety of exotic confections to impress guests on special occasions.[NEWLINE]A big confectionery makes an important contribution to the region it serves, increasing both trading income and the community's happiness.</English>
-		<Portuguese>A fábrica de doces pode atender uma região inteira. Para um grupo oferece doces baratos graças às economias de escala. Para os abastados, oferece uma variedade incomparável de confeitos exóticos para impressionar os hóspedes em ocasiões especiais.[NEWLINE]Uma grande confeitaria dá uma contribuição importante para a região que atende, aumentando tanto a receita comercial quanto a felicidade da comunidade.</Portuguese>
+		<Portuguese>A fábrica de doces pode atender uma região inteira. Para um grupo oferece doces baratos graças às economias de escala. Para os abastados, oferece uma variedade incomparável de confeitos exóticos para impressionar os hóspedes em ocasiões especiais.[NEWLINE]Uma grande fábrica de doces dá uma contribuição importante para a região que atende, aumentando tanto a receita comercial quanto a felicidade da comunidade.</Portuguese>
 		<German>Die Süßwarenfabrik kann dank Skalierungseffekten eine ganze Region mit billigen Süßigkeiten versorgen. Für die Wohlhabenden liefert sie eine unvergleichliche Vielfalt an exotischen Süßigkeiten, um Gäste bei besonderen Anlässen zu beeindrucken.[NEWLINE]Eine große Konditorei leistet einen wichtigen Beitrag für die Region, in der sie tätig ist, und steigert sowohl das Handelseinkommen als auch die Zufriedenheit der Bevölkerung.</German>
 		<Hungarian>A Cukrászda egy egész régiót képes ellátni. Az egyik csoport számára méretgazdaságosságának köszönhetően olcsó édességeket kínál. A jómódúak számára pedig páratlanul változatos egzotikus édességeket szállít, amelyekkel különleges alkalmakkor lenyűgözhetik vendégeiket. [NEWLINE] Egy nagy cukrászda fontos hozzájárulást jelent a régióhoz, amelyet ellát, növelve mind a kereskedelmi bevételeket, mind a közösség boldogságát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]confectioners' factory[COLOR_REVERT] is the top upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioners[\LINK] are particularly effective here.</English>
-		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]fábrica de confeiteiros[COLOR_REVERT] é a principal atualização da [LINK=BUILDING_CONFECTIONER_HOUSE]casa de confeiteiro[\LINK] onde um colono com a profissão de [LINK=PROFESSION_CONFECTIONER_VANILLA]confeiteiro de baunilha[\LINK] ou de [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]confeiteiro de chocolate[\LINK] transforma [LINK=YIELD_VANILLA_PODS]favas de baunilha[\LINK] em [LINK=YIELD_VANILLA]baunilha trata[\LINK] e [LINK=YIELD_COCOA]cacau[\LINK] com [LINK=YIELD_SUGAR]açúcar[\LINK] em [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Mestres confeiteiros[\LINK] são particularmente eficazes aqui.</Portuguese>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]fábrica de doces[COLOR_REVERT] é a principal atualização da [LINK=BUILDING_CONFECTIONER_HOUSE]casa de confeiteiro[\LINK] onde um colono com a profissão de [LINK=PROFESSION_CONFECTIONER_VANILLA]confeiteiro de baunilha[\LINK] ou de [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]confeiteiro de chocolate[\LINK] transforma [LINK=YIELD_VANILLA_PODS]favas de baunilha[\LINK] em [LINK=YIELD_VANILLA]baunilha trata[\LINK] e [LINK=YIELD_COCOA]cacau[\LINK] com [LINK=YIELD_SUGAR]açúcar[\LINK] em [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Mestres confeiteiros[\LINK] são particularmente eficazes aqui.</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Konditorei[COLOR_REVERT] ist die höchste Stufe des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Cukrászda[COLOR_REVERT] a [LINK=BUILDING_CONFECTIONER_HOUSE]Cukrász Bolt[\LINK] legmagasabb szintű továbbfejlesztése, ahol egy [LINK=PROFESSION_CONFECTIONER_VANILLA]vanília cukrász [\LINK] vagy [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]csokoládé cukrász[\LINK] telepes [LINK=YIELD_VANILLA_PODS]vaníliát[\LINK] [LINK=YIELD_VANILLA]vanília édességekké[\LINK] és [LINK=YIELD_COCOA]kakaót [\LINK] és [LINK=YIELD_SUGAR]cukorral[\LINK] [LINK=YIELD_CHOCOLATE]csokoládét[\LINK] készít. A [LINK=UNIT_CONFECTIONER]Cukrászmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>

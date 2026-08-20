@@ -12821,7 +12821,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WINDOW_RESTORE_UP</Tag>
 		<English>Restore up</English>
-		<Portuguese>Restaurar</Portuguese>
+		<Portuguese>Restaurar acima</Portuguese>
 		<French>Rétablir haut</French>
 		<German>Vergrößern</German>
 		<Italian>Ripristino in alto</Italian>
@@ -12830,7 +12830,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WINDOW_RESTORE_DOWN</Tag>
 		<English>Restore down</English>
-		<Portuguese>Restaurar</Portuguese>
+		<Portuguese>Restaurar abaixo</Portuguese>
 		<French>Rétablir bas</French>
 		<German>Verkleinern</German>
 		<Italian>Ripristino in basso</Italian>
