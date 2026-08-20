@@ -12,7 +12,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_1_PLOT</Tag>
 		<English>1 Plot Radius</English>
-		<Portuguese>1 raio do gráfico</Portuguese>
+		<Portuguese>Raio de 1 lote</Portuguese>
 		<French>1 case de rayon</French>
 		<Russian>1 клетка</Russian>
 		<Hungarian>1 Mező</Hungarian>
@@ -20,7 +20,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_2_PLOT</Tag>
 		<English>2 Plot Radius</English>
-		<Portuguese>2 Raio do gráfico</Portuguese>
+		<Portuguese>Raio de 2 lotes</Portuguese>
 		<French>2 cases de rayon</French>
 		<Russian>2 клетки</Russian>
 		<Hungarian>2 Mező</Hungarian>

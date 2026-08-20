@@ -290,7 +290,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ALLOW_DANGEROUS_PATH</Tag>
 		<English>Allow unit to pathfind through plots that inflict damage</English>
-		<Portuguese>Permitir que a unidade encontre caminhos através de tramas que infligem danos</Portuguese>
+		<Portuguese>Permitir que a unidade encontre caminhos através de lotes que infligem danos</Portuguese>
 		<German>Einen schnellen Weg wählen, der durch Gelände führen kann, welches auch Schaden an der Einheit verursachen kann.</German>
 		<Russian>Разрешить юниту пересекать клетки, наносящие урон</Russian>
 		<Hungarian>Az egység keresztülhaladhat a sérülést okozó területeken</Hungarian>
@@ -298,7 +298,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DISALLOW_DANGEROUS_PATH</Tag>
 		<English>Prevent unit from pathfinding through plots that inflict damage</English>
-		<Portuguese>Impedir que a unidade encontre caminhos através de tramas que infligem danos</Portuguese>
+		<Portuguese>Impedir que a unidade encontre caminhos através de lotes que infligem danos</Portuguese>
 		<German>Einen Weg wählen, der vielleicht langsamer ist, aber durch Gelände führt, welches keinen Schaden verursacht.</German>
 		<Russian>Запретить юниту пересекать клетки, наносящие урон</Russian>
 		<Hungarian>Megakadályozza, hogy az egység olyan területeken haladjon, amelyek sérülést okoznak.</Hungarian>

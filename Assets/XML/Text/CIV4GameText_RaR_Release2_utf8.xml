@@ -304,7 +304,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_FAIRE_WEATHER_4_FIELDS</Tag>
 		<English>4 plots (default) : </English>
-		<Portuguese>4 gráficos (padrão): </Portuguese>
+		<Portuguese>4 lotes (padrão): </Portuguese>
 		<French>4 cases (par défaut) : </French>
 		<German>4 Geländefelder (Standard) : </German>
 		<Italian>4 caselle (predefinita) : </Italian>
@@ -506,7 +506,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WB_PLOT_TYPE_HILL</Tag>
 		<English>Change plot to a hill</English>
-		<Portuguese>Mudar o terreno para uma colina</Portuguese>
+		<Portuguese>Mudar o lote para uma colina</Portuguese>
 		<French>Changer case en colline</French>
 		<German>Geländefeld zu Hügel ändern</German>
 		<Italian>Cambia la casella in una collina</Italian>
@@ -515,7 +515,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WB_PLOT_TYPE_PLAINS</Tag>
 		<English>Change plot to a plain</English>
-		<Portuguese>Alterar o gráfico para um plano</Portuguese>
+		<Portuguese>Mudar o lote para uma planície</Portuguese>
 		<French>Changer case en plaine</French>
 		<German>Geländefeld zu Ebene ändern</German>
 		<Italian>Cambia la casella in una pianura</Italian>
@@ -940,7 +940,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WB_CHANGE_ALL_PLOTS</Tag>
 		<English>Change all plots</English>
-		<Portuguese>Alterar todos os gráficos</Portuguese>
+		<Portuguese>Alterar todos os lotes</Portuguese>
 		<French>Changer cases</French>
 		<German>Alle Geländefelder ändern</German>
 		<Italian>Cambia tutti i terreni</Italian>
