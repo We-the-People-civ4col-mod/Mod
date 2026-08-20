@@ -4176,8 +4176,8 @@
 		<English>Elder Statesman:Elder Statesmen</English>
 		
 		<Portuguese>
-			<Text>Estadista Ancião:Estadistas Anciãos</Text>
-			<Gender>Female</Gender>
+			<Text>Estadista experiente:Estadistas experientes</Text>
+			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
