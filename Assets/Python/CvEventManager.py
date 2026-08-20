@@ -156,6 +156,7 @@ class CvEventManager:
 			CvUtil.EventShowWonder: ('ShowWonder', self.__eventShowWonderApply, self.__eventShowWonderBegin),
 			CvUtil.EventCreateTradeRoute: ('CreateTradeRoute', self.__eventCreateTradeRouteApply, self.__eventCreateTradeRouteBegin),
 			CvUtil.EventEditTradeRoute: ('EditTradeRoute', self.__eventEditTradeRouteApply, self.__eventEditTradeRouteBegin),
+			CvUtil.EventDiploYieldAmount: ('DiploYieldAmount', self.__eventDiploYieldAmountApply, self.__eventDiploYieldAmountBegin),
 
 # Dale - AoD: AoDCheatMenu START
 			CvUtil.EventAoDCheatMenu: ('AoDCheatMenu', self.AoDCheatMenuApply, self.AoDCheatMenuBegin),
@@ -911,6 +912,26 @@ class CvEventManager:
 		if (len(cityName) > 42):
 			cityName = cityName[:42]
 		city.setName(cityName, not bRename)
+
+	def __eventDiploYieldAmountBegin(self, argsList):
+		iFromPlayer = argsList[0]
+		iYield = argsList[1]
+		iMax = argsList[2]
+		if iMax <= 0:
+			return
+		popup = CyPopup(CvUtil.EventDiploYieldAmount, EventContextTypes.EVENTCONTEXT_ALL, True)
+		popup.setUserData((iFromPlayer, iYield))
+		popup.setBodyString(localText.getText("TXT_KEY_SELECT_YIELD_POPUP", (gc.getYieldInfo(iYield).getTextKey(),)), CvUtil.FONT_LEFT_JUSTIFY)
+		popup.createSpinBox(0, "", iMax, 1, iMax, 1)
+		popup.launch(True, PopupStates.POPUPSTATE_IMMEDIATE)
+
+	def __eventDiploYieldAmountApply(self, playerID, userData, popupReturn):
+		iFromPlayer = userData[0]
+		iYield = userData[1]
+		iAmount = popupReturn.getSpinnerWidgetValue(0)
+		if iAmount < 1:
+			iAmount = 1
+		gc.getPlayer(iFromPlayer).setDiploYieldAmount(iYield, iAmount)
 
 	def __eventCreateTradeRouteBegin(self, PlayerID):
 		popup = CyPopup(CvUtil.EventCreateTradeRoute, EventContextTypes.EVENTCONTEXT_ALL, 1)
