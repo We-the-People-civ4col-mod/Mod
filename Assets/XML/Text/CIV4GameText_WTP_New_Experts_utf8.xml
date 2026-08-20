@@ -1565,7 +1565,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_LEATHER_TAYLOR</Tag>
 		<English>Master Leatherworker:Master Leatherworkers</English>
-		<Portuguese>Mestre Couro:Mestre Couroleiro</Portuguese>
+		<Portuguese>Mestre Coureiro:Mestres Coureiros</Portuguese>
 		<French>
 			<Text>Maître maroquinier:Maîtres maroquiniers</Text>
 			<Gender>Male</Gender>
@@ -1592,7 +1592,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEATHER_TAYLOR</Tag>
 		<English>Master Leatherworker:Master Leatherworkers</English>
-		<Portuguese>Mestre Couro:Mestre Couroleiro</Portuguese>
+		<Portuguese>Mestre Coureiro:Mestres Coureiros</Portuguese>
 		<French>
 			<Text>Maître maroquinier:Maîtres maroquiniers</Text>
 			<Gender>Male</Gender>
