@@ -13014,7 +13014,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_TEAM</Tag>
 		<English>Team</English>
-		<Portuguese>Equipe</Portuguese>
+		
+		<Portuguese>
+			<Text>Equipe</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>équipe</Text>
 			<Gender>Female</Gender>

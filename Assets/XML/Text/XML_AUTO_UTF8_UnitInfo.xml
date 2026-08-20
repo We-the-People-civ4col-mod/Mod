@@ -67,7 +67,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ANACONDA</Tag>
 		<English>Anaconda</English>
-		<Portuguese>Anaconda</Portuguese>
+		
+		<Portuguese>
+			<Text>Anaconda</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Anaconda</Text>
 			<Gender>Male</Gender>
@@ -100,7 +105,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BARLEY</Tag>
 		<English>Barley</English>
-		<Portuguese>Cevada</Portuguese>
+		
+		<Portuguese>
+			<Text>Cevada</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Orge</Text>
 			<Gender>Male</Gender>
@@ -140,7 +150,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BEAR_BLACK</Tag>
 		<English>Black Bear</English>
-		<Portuguese>Urso Negro</Portuguese>
+		
+		<Portuguese>
+			<Text>Urso Negro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ours noir</Text>
 			<Gender>Male</Gender>
@@ -167,7 +182,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BEAR_POLAR</Tag>
 		<English>Polar Bear</English>
-		<Portuguese>Urso polar</Portuguese>
+		
+		<Portuguese>
+			<Text>Urso polar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ours blanc</Text>
 			<Gender>Male</Gender>
@@ -194,7 +214,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BEER</Tag>
 		<English>Beer</English>
-		<Portuguese>Cerveja</Portuguese>
+		
+		<Portuguese>
+			<Text>Cerveja</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bière</Text>
 			<Gender>Male</Gender>
@@ -331,7 +356,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BLACKSMITH</Tag>
 		<English>Master Blacksmith:Master Blacksmiths</English>
-		<Portuguese>Mestre Ferreiro: Mestre Ferreiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Ferreiro: Mestre Ferreiro</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître forgeron:Maitres forgerons</Text>
 			<Gender>Male</Gender>
@@ -375,7 +405,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JARNSMED</Tag>
 		<English>Järnsmed:Järnsmeder</English>
-		<Portuguese>Järnsmed:Järnsmeder</Portuguese>
+		
+		<Portuguese>
+			<Text>Järnsmed:Järnsmeder</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Järnsmed:Järnsmeder</Text>
 			<Gender>Male</Gender>
@@ -638,7 +673,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CANNONS</Tag>
 		<English>Cannons</English>
-		<Portuguese>Canhões</Portuguese>
+		
+		<Portuguese>
+			<Text>Canhões</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Canon</French>
 		<German>
 			<Text>Kanonen</Text>
@@ -666,7 +706,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARAVEL</Tag>
 		<English>Caravel:Caravels</English>
-		<Portuguese>Caravela: Caravelas</Portuguese>
+		
+		<Portuguese>
+			<Text>Caravela: Caravelas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Caravelle:Caravelles</Text>
 			<Gender>Female</Gender>
@@ -710,7 +755,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WAR_CARAVEL</Tag>
 		<English>War Caravel:War Caravels</English>
-		<Portuguese>Caravela de Guerra:Caravelas de Guerra</Portuguese>
+		
+		<Portuguese>
+			<Text>Caravela de Guerra:Caravelas de Guerra</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Caravelle de guerre:Caravelles de guerre</Text>
 			<Gender>Female</Gender>
@@ -781,7 +831,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARPENTER</Tag>
 		<English>Master Carpenter:Master Carpenters</English>
-		<Portuguese>Mestre Carpinteiro:Mestres Carpinteiros</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Carpinteiro:Mestres Carpinteiros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître charpentier:Maîtres charpentiers</Text>
 			<Gender>Male</Gender>
@@ -825,7 +880,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TIMMERMAN</Tag>
 		<English>Timmerman:Timmermannen</English>
-		<Portuguese>Timmerman:Timmermannen</Portuguese>
+		
+		<Portuguese>
+			<Text>Timmerman:Timmermannen</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Timmerman:Timmermannen</Text>
 			<Gender>Male</Gender>
@@ -871,7 +931,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NAO</Tag>
 		<English>Nao:Naos</English>
-		<Portuguese>Nao:Naos</Portuguese>
+		
+		<Portuguese>
+			<Text>Nao:Naos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Nao:Naos</Text>
 			<Gender>Male</Gender>
@@ -903,7 +968,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARRACK</Tag>
 		<English>Carrack:Carracks</English>
-		<Portuguese>Carraca:Carraca</Portuguese>
+		
+		<Portuguese>
+			<Text>Carraca:Carraca</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Caraque:Caraques</Text>
 			<Gender>Male</Gender>
@@ -933,7 +1003,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARRIER</Tag>
 		<English>Conestoga:Conestogas</English>
-		<Portuguese>Conestoga: Conestogas</Portuguese>
+		
+		<Portuguese>
+			<Text>Conestoga: Conestogas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Conestoga:Conestogas</Text>
 			<Gender>Male</Gender>
@@ -980,7 +1055,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY</Tag>
 		<English>Jesuit Missionary:Jesuit Missionaries</English>
-		<Portuguese>Missionário Jesuíta:Missionários Jesuítas</Portuguese>
+		
+		<Portuguese>
+			<Text>Missionário Jesuíta:Missionários Jesuítas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Missionnaire jésuite:Missionnaires jésuites</Text>
 			<Gender>Male</Gender>
@@ -1024,7 +1104,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY_PROT</Tag>
 		<English>Evangelist:Evangelists</English>
-		<Portuguese>Evangelista: Evangelistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Evangelista: Evangelistas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Evangéliste:Evangélistes</Text>
 			<Gender>Male</Gender>
@@ -1064,7 +1149,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RUSSIAN_MISSIONARY</Tag>
 		<English>Orthodox Missionary:Orthodox Missionaries</English>
-		<Portuguese>Missionário Ortodoxo:Missionários Ortodoxos</Portuguese>
+		
+		<Portuguese>
+			<Text>Missionário Ortodoxo:Missionários Ortodoxos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Missionnaire orthodoxe:Missionnaires orthodoxes</Text>
 			<Gender>Male</Gender>
@@ -1108,7 +1198,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FAILED_MISSIONARY</Tag>
 		<English>Disillusioned Missionary:Disilussioned Missionaries</English>
-		<Portuguese>Missionário Desiludido:Missionários Desiludidos</Portuguese>
+		
+		<Portuguese>
+			<Text>Missionário Desiludido:Missionários Desiludidos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Missionnaire désabusé:Missionnaires désabusés</French>
 		<German>
 			<Text>Desillusionierter Missionar:Desillusionierte Missionare</Text>
@@ -1136,7 +1231,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FAILED_TRADER</Tag>
 		<English>Failed Trader:Failed Traders</English>
-		<Portuguese>Trader fracassado: Traders fracassados</Portuguese>
+		
+		<Portuguese>
+			<Text>Trader fracassado: Traders fracassados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Marchand avec les indigènes ruiné:Marchands avec les indigènes ruinés</French>
 		<German>
 			<Text>Gescheiterter Ureinwohnerhändler:Gescheiterte Ureinwohnerhändler</Text>
@@ -1160,7 +1260,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CIGARS</Tag>
 		<English>Cigars</English>
-		<Portuguese>Charutos</Portuguese>
+		
+		<Portuguese>
+			<Text>Charutos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cigare:Cigares</Text>
 			<Gender>Male</Gender>
@@ -1190,7 +1295,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CLOTH</Tag>
 		<English>Cloth</English>
-		<Portuguese>Pano</Portuguese>
+		
+		<Portuguese>
+			<Text>Pano</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tissu:Tissus</Text>
 			<Gender>Male</Gender>
@@ -1220,7 +1330,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COATS</Tag>
 		<English>Coats</English>
-		<Portuguese>Casacos</Portuguese>
+		
+		<Portuguese>
+			<Text>Casacos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Manteau:Manteaux</Text>
 			<Gender>Male</Gender>
@@ -1250,7 +1365,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCA_COLLECTOR</Tag>
 		<English>Expert Coca Collector:Expert Coca Collectors</English>
-		<Portuguese>Coletor especialista em coca:coletor especialista em coca</Portuguese>
+		
+		<Portuguese>
+			<Text>Coletor especialista em coca:coletor especialista em coca</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de coca:Experts planteurs de coca</Text>
 			<Gender>Male</Gender>
@@ -1290,7 +1410,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCA_LEAVES</Tag>
 		<English>Coca Leaves</English>
-		<Portuguese>Folhas de coca</Portuguese>
+		
+		<Portuguese>
+			<Text>Folhas de coca</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Feuilles de coca</Text>
 			<Gender>Female</Gender>
@@ -1330,7 +1455,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCOA</Tag>
 		<English>Cocoa</English>
-		<Portuguese>Cacau</Portuguese>
+		
+		<Portuguese>
+			<Text>Cacau</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Cacao torréfié</French>
 		<German>
 			<Text>Kakao</Text>
@@ -1360,7 +1490,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCOA_FRUITS</Tag>
 		<English>Cocoa pods</English>
-		<Portuguese>Vagens de cacau</Portuguese>
+		
+		<Portuguese>
+			<Text>Vagens de cacau</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Cacao en cabosse</French>
 		<German>
 			<Text>Kakaofrüchte</Text>
@@ -1406,7 +1541,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COFFEE</Tag>
 		<English>Coffee</English>
-		<Portuguese>Café</Portuguese>
+		
+		<Portuguese>
+			<Text>Café</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Café torréfié</Text>
 			<Gender>Male</Gender>
@@ -1445,7 +1585,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COFFEE_BERRIES</Tag>
 		<English>Coffee Berries</English>
-		<Portuguese>Bagas de café</Portuguese>
+		
+		<Portuguese>
+			<Text>Bagas de café</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Cerises de café</French>
 		<German>
 			<Text>Kaffeebeeren</Text>
@@ -1472,7 +1617,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COFFEE_PLANTER</Tag>
 		<English>Expert Coffee Planter:Expert Coffee Planters</English>
-		<Portuguese>Plantador de café especializado: plantadores de café especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de café especializado: plantadores de café especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de café:Experts planteurs de café</Text>
 			<Gender>Male</Gender>
@@ -1514,7 +1664,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLONIST</Tag>
 		<English>Free Colonist:Free Colonists</English>
-		<Portuguese>Colono Livre: Colonos Livres</Portuguese>
+		
+		<Portuguese>
+			<Text>Colono Livre: Colonos Livres</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Colon libre:Colons libres</Text>
 			<Gender>Male</Gender>
@@ -1554,7 +1709,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLOURED_CLOTH</Tag>
 		<English>Coloured Cloth</English>
-		<Portuguese>Pano Colorido</Portuguese>
+		
+		<Portuguese>
+			<Text>Pano Colorido</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tissu teinté</Text>
 			<Gender>Male</Gender>
@@ -1774,7 +1934,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONVERTED_NATIVE</Tag>
 		<English>Converted Native:Converted Natives</English>
-		<Portuguese>Nativo Convertido:nativos convertidos</Portuguese>
+		
+		<Portuguese>
+			<Text>Nativo Convertido:nativos convertidos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Indigène converti:Indigènes convertis</Text>
 			<Gender>Male</Gender>
@@ -1898,7 +2063,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COTTON</Tag>
 		<English>Cotton</English>
-		<Portuguese>Algodão</Portuguese>
+		
+		<Portuguese>
+			<Text>Algodão</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Coton</Text>
 			<Gender>Male</Gender>
@@ -1932,7 +2102,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COTTON_PLANTER</Tag>
 		<English>Expert Cotton Planter:Expert Cotton Planters</English>
-		<Portuguese>Plantador de algodão especializado: Plantadores de algodão especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de algodão especializado: Plantadores de algodão especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de coton:Experts planteurs de coton</Text>
 			<Gender>Male</Gender>
@@ -1976,7 +2151,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COUGAR</Tag>
 		<English>Cougar</English>
-		<Portuguese>Puma</Portuguese>
+		
+		<Portuguese>
+			<Text>Puma</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cougar</Text>
 			<Gender>Male</Gender>
@@ -2013,7 +2193,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CRIMINAL</Tag>
 		<English>Petty Criminal:Petty Criminals</English>
-		<Portuguese>Criminoso Comum:Pequenos criminosos</Portuguese>
+		
+		<Portuguese>
+			<Text>Criminoso Comum:Pequenos criminosos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bagnard:Bagnards</Text>
 			<Gender>Male</Gender>
@@ -2053,7 +2238,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DISTILLER</Tag>
 		<English>Master Distiller:Master Distillers</English>
-		<Portuguese>Destilador Mestre: Destiladores Mestres</Portuguese>
+		
+		<Portuguese>
+			<Text>Destilador Mestre: Destiladores Mestres</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître distillateur:Maîtres distillateurs</Text>
 			<Gender>Male</Gender>
@@ -2097,7 +2287,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLONIAL_DISTILLER</Tag>
 		<English>Colonial Distiller:Colonial Distillers</English>
-		<Portuguese>Destilador Colonial: Destiladores Coloniais</Portuguese>
+		
+		<Portuguese>
+			<Text>Destilador Colonial: Destiladores Coloniais</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Distillateur colonial:Distillateurs coloniaux</Text>
 			<Gender>Male</Gender>
@@ -2143,7 +2338,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DOCTOR</Tag>
 		<English>Renowned Medic</English>
-		<Portuguese>Médico renomado</Portuguese>
+		
+		<Portuguese>
+			<Text>Médico renomado</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Médecin formé:Médecins formés</Text>
 			<Gender>Male</Gender>
@@ -2183,7 +2383,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DYER</Tag>
 		<English>Master Dyer:Master Dyers</English>
-		<Portuguese>Mestre Tintureiro:Mestre Tintureiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Tintureiro:Mestre Tintureiro</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître teinturier:Maîtres teinturiers</Text>
 			<Gender>Male</Gender>
@@ -2223,7 +2428,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EMIGRANT</Tag>
 		<English>Political Refugee:Political Refugees</English>
-		<Portuguese>Refugiado Político:Refugiados Políticos</Portuguese>
+		
+		<Portuguese>
+			<Text>Refugiado Político:Refugiados Políticos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Exilé politique:Exilés politiques</Text>
 			<Gender>Male</Gender>
@@ -2263,7 +2473,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EUROPEAN_LINE_INFANTRY</Tag>
 		<English>European Line Infantry:European Line Infantry</English>
-		<Portuguese>Infantaria de Linha Europeia:Infantaria de Linha Europeia</Portuguese>
+		
+		<Portuguese>
+			<Text>Infantaria de Linha Europeia:Infantaria de Linha Europeia</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Infanterie de ligne européenne:Infanterie de ligne européenne</Text>
 			<Gender>Male</Gender>
@@ -2299,7 +2514,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FARMER</Tag>
 		<English>Expert Farmer:Expert Farmers</English>
-		<Portuguese>Agricultor Especialista: Agricultores Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Agricultor Especialista: Agricultores Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert fermier:Experts fermiers</Text>
 			<Gender>Male</Gender>
@@ -2343,7 +2563,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FISHERMAN</Tag>
 		<English>Expert Fisherman:Expert Fishermen</English>
-		<Portuguese>Pescador Especialista: Pescadores Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Pescador Especialista: Pescadores Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert pêcheur:Experts pêcheurs</Text>
 			<Gender>Male</Gender>
@@ -2387,7 +2612,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DANSK_FISKER</Tag>
 		<English>Dansk Fisker:Dansk Fiskere</English>
-		<Portuguese>Fisker Dinamarquês: Fiskere Dinamarquês</Portuguese>
+		
+		<Portuguese>
+			<Text>Fisker Dinamarquês: Fiskere Dinamarquês</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Dansk Fisker:Dansk Fiskere</Text>
 			<Gender>Male</Gender>
@@ -2433,7 +2663,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FISHING_BOAT</Tag>
 		<English>Fishing Boat:Fishing Boats</English>
-		<Portuguese>Barco de pesca:barcos de pesca</Portuguese>
+		
+		<Portuguese>
+			<Text>Barco de pesca:barcos de pesca</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bateau de pêche:Bateaux de pêche</Text>
 			<Gender>Male</Gender>
@@ -2473,7 +2708,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FLUYT</Tag>
 		<English>Fluyt:Fluyts</English>
-		<Portuguese>Fluyt:Fluyts</Portuguese>
+		
+		<Portuguese>
+			<Text>Fluyt:Fluyts</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Flûte:Flûtes</Text>
 			<Gender>Female</Gender>
@@ -2511,7 +2751,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRIGATE</Tag>
 		<English>Frigate:Frigates</English>
-		<Portuguese>Fragata: Fragatas</Portuguese>
+		
+		<Portuguese>
+			<Text>Fragata: Fragatas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Frégate:Frégates</Text>
 			<Gender>Female</Gender>
@@ -2537,7 +2782,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_FRIGATE</Tag>
 		<English>Royal Frigate: Royal Frigates</English>
-		<Portuguese>Fragata Real: Fragatas Reais</Portuguese>
+		
+		<Portuguese>
+			<Text>Fragata Real: Fragatas Reais</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Frégate Royale:Frégates Royales</Text>
 			<Gender>Female</Gender>
@@ -2581,7 +2831,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HEAVY_FRIGATE</Tag>
 		<English>Heavy Frigate: Heavy Frigates</English>
-		<Portuguese>Fragata Pesada: Fragatas Pesadas</Portuguese>
+		
+		<Portuguese>
+			<Text>Fragata Pesada: Fragatas Pesadas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Frégate lourde: Frégates lourdes</Text>
 			<Gender>Female</Gender>
@@ -2618,7 +2873,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FUR</Tag>
 		<English>Fur</English>
-		<Portuguese>Pelagem</Portuguese>
+		
+		<Portuguese>
+			<Text>Pelagem</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Fourrure:Fourrures</Text>
 			<Gender>Female</Gender>
@@ -2648,7 +2908,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FURNITURE</Tag>
 		<English>Furniture</English>
-		<Portuguese>Móveis</Portuguese>
+		
+		<Portuguese>
+			<Text>Móveis</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Meubles</French>
 		<German>
 			<Text>Möbel</Text>
@@ -2721,7 +2986,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FUR_TRADER</Tag>
 		<English>Master Fur Trader:Master Fur Traders</English>
-		<Portuguese>Mestre Comerciante de Peles:Mestre Comerciante de Peles</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Comerciante de Peles:Mestre Comerciante de Peles</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître fourreur:Maîtres fourreurs</Text>
 			<Gender>Male</Gender>
@@ -2765,7 +3035,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_FURRIER</Tag>
 		<English>French Furrier:French Furriers</English>
-		<Portuguese>Furrier Francês: Furriers Franceses</Portuguese>
+		
+		<Portuguese>
+			<Text>Furrier Francês: Furriers Franceses</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Furrier Français:Furriers Français</Text>
 			<Gender>Male</Gender>
@@ -2811,7 +3086,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GALLEON</Tag>
 		<English>Galleon:Galleons</English>
-		<Portuguese>Galeão: Galeões</Portuguese>
+		
+		<Portuguese>
+			<Text>Galeão: Galeões</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Galion:Galions</Text>
 			<Gender>Male</Gender>
@@ -2852,7 +3132,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WAR_GALLEON</Tag>
 		<English>War Galleon:War Galleons</English>
-		<Portuguese>Galeão de Guerra: Galeões de Guerra</Portuguese>
+		
+		<Portuguese>
+			<Text>Galeão de Guerra: Galeões de Guerra</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Galion de guerre:Galions de guerre</Text>
 			<Gender>Male</Gender>
@@ -2915,7 +3200,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GOVERNOR</Tag>
 		<English>Governor:Governors</English>
-		<Portuguese>Governador: Governadores</Portuguese>
+		
+		<Portuguese>
+			<Text>Governador: Governadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Gouverneur:Gouverneurs</Text>
 			<Gender>Male</Gender>
@@ -2952,7 +3242,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GRAPES</Tag>
 		<English>Grapes</English>
-		<Portuguese>Uvas</Portuguese>
+		
+		<Portuguese>
+			<Text>Uvas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Raisins</Text>
 			<Gender>Male</Gender>
@@ -3041,7 +3336,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GREATWHITE</Tag>
 		<English>Great White Shark</English>
-		<Portuguese>Grande Tubarão Branco</Portuguese>
+		
+		<Portuguese>
+			<Text>Grande Tubarão Branco</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Grand requin blanc</Text>
 			<Gender>Male</Gender>
@@ -3230,7 +3530,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GRIZZLY</Tag>
 		<English>Grizzly</English>
-		<Portuguese>Pardo</Portuguese>
+		
+		<Portuguese>
+			<Text>Pardo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Grizzli</Text>
 			<Gender>Male</Gender>
@@ -3267,7 +3572,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GUNSMITH</Tag>
 		<English>Master Gunsmith:Master Gunsmiths</English>
-		<Portuguese>Mestre Armeiro: Mestre Armeiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Armeiro: Mestre Armeiro</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître armurier:Maîtres armuriers</Text>
 			<Gender>Male</Gender>
@@ -3315,9 +3625,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Artilharia Pesada: Artilharia Pesada</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -3399,7 +3710,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HEMP_PLANTER</Tag>
 		<English>Expert Hemp Planter:Expert Hemp Planters</English>
-		<Portuguese>Plantador de cânhamo especializado: plantadores de cânhamo especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de cânhamo especializado: plantadores de cânhamo especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de chanvre:Experts planteurs de chanvre</Text>
 			<Gender>Male</Gender>
@@ -3463,7 +3779,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HIDES</Tag>
 		<English>Cowhides</English>
-		<Portuguese>Couros bovinos</Portuguese>
+		
+		<Portuguese>
+			<Text>Couros bovinos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Peaux de vache</Text>
 			<Gender>Male</Gender>
@@ -3511,7 +3832,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HUMPBACK_WHALE</Tag>
 		<English>Humpback Whale</English>
-		<Portuguese>Baleia Jubarte</Portuguese>
+		
+		<Portuguese>
+			<Text>Baleia Jubarte</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Baleine à bosse</Text>
 			<Gender>Male</Gender>
@@ -3601,7 +3927,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INDENTURED_SERVANT</Tag>
 		<English>Indentured Servant:Indentured Servants</English>
-		<Portuguese>Servo Contratado:Servos contratados</Portuguese>
+		
+		<Portuguese>
+			<Text>Servo Contratado:Servos contratados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Domestique sous contrat:Domestiques sous contrat</Text>
 			<Gender>Male</Gender>
@@ -3641,7 +3972,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INDIGO</Tag>
 		<English>Indigo</English>
-		<Portuguese>Índigo</Portuguese>
+		
+		<Portuguese>
+			<Text>Índigo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Indigo</Text>
 			<Gender>Male</Gender>
@@ -3680,7 +4016,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INDIGO_PLANTER</Tag>
 		<English>Expert Indigo Planter:Expert Indigo Planters</English>
-		<Portuguese>Plantador especialista em índigo: plantadores especialistas em índigo</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador especialista em índigo: plantadores especialistas em índigo</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur d'indigo:Experts planteurs d'indigo</Text>
 			<Gender>Male</Gender>
@@ -3724,7 +4065,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JAGUAR</Tag>
 		<English>Jaguar</English>
-		<Portuguese>Jaguar</Portuguese>
+		
+		<Portuguese>
+			<Text>Jaguar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Jaguar</Text>
 			<Gender>Male</Gender>
@@ -3761,7 +4107,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KRAKEN</Tag>
 		<English>Kraken</English>
-		<Portuguese>Kraken</Portuguese>
+		
+		<Portuguese>
+			<Text>Kraken</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Kraken</Text>
 			<Gender>Female</Gender>
@@ -3798,7 +4149,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEATHER</Tag>
 		<English>Leather Goods</English>
-		<Portuguese>Artigos de couro</Portuguese>
+		
+		<Portuguese>
+			<Text>Artigos de couro</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cuir</Text>
 			<Gender>Male</Gender>
@@ -3844,9 +4200,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Artilharia Leve: Artilharia Leve</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -3912,7 +4269,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LUMBER</Tag>
 		<English>Lumber</English>
-		<Portuguese>Madeira serrada</Portuguese>
+		
+		<Portuguese>
+			<Text>Madeira serrada</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bois</Text>
 			<Gender>Male</Gender>
@@ -3942,7 +4304,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LUMBERJACK</Tag>
 		<English>Expert Lumberjack:Expert Lumberjacks</English>
-		<Portuguese>Lenhador Especialista:Lenhadores Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Lenhador Especialista:Lenhadores Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert bûcheron:Experts bûcherons</Text>
 			<Gender>Male</Gender>
@@ -3986,7 +4353,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SIBERIAN_LUMBERJACK</Tag>
 		<English>Siberian Lumberjack:Siberian Lumberjacks</English>
-		<Portuguese>Lenhador Siberiano:Lenhadores Siberianos</Portuguese>
+		
+		<Portuguese>
+			<Text>Lenhador Siberiano:Lenhadores Siberianos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bûcheron Sibérien:Bûcherons Sibériens</Text>
 			<Gender>Male</Gender>
@@ -4039,7 +4411,7 @@
 		<Portuguese>
 			<Text>Bens de luxo</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Biens de luxe</Text>
@@ -4080,7 +4452,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LYNX</Tag>
 		<English>Lynx</English>
-		<Portuguese>Lince</Portuguese>
+		
+		<Portuguese>
+			<Text>Lince</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Lynx</Text>
 			<Gender>Male</Gender>
@@ -4117,7 +4494,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_MAN_O_WAR</Tag>
 		<English>Royal Ship of the Line 1st rate:Royal Ships of the Line 1st rate</English>
-		<Portuguese>Navio Real da Linha 1ª tarifa:Navios Reais da Linha 1ª tarifa</Portuguese>
+		
+		<Portuguese>
+			<Text>Navio Real da Linha 1ª tarifa:Navios Reais da Linha 1ª tarifa</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Navire de ligne royal de 1er rang:Navires de ligne royaux de 1er rang</Text>
 			<Gender>Male</Gender>
@@ -4143,7 +4525,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLONIAL_MAN_O_WAR</Tag>
 		<English>Colonial Ship of the Line 1st rate:Colonial Ships of the Line 1st rate</English>
-		<Portuguese>Navio Colonial da Linha 1ª tarifa:Navios Coloniais da Linha 1ª tarifa</Portuguese>
+		
+		<Portuguese>
+			<Text>Navio Colonial da Linha 1ª tarifa:Navios Coloniais da Linha 1ª tarifa</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Navire de ligne colonial de 1re classe:navires de ligne coloniaux de 1re classe</Text>
 			<Gender>Male</Gender>
@@ -4171,7 +4558,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MERCHANTMAN</Tag>
 		<English>Merchantman:Merchantmen</English>
-		<Portuguese>Navio mercante:Navios mercantes</Portuguese>
+		
+		<Portuguese>
+			<Text>Navio mercante:Navios mercantes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Navire marchand:Navires marchands</Text>
 			<Gender>Male</Gender>
@@ -4219,9 +4611,10 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Milícia de Colonos:Milícias de Colonos</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -4263,7 +4656,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MINER</Tag>
 		<English>Expert Miner:Expert Miners</English>
-		<Portuguese>Mineiro Especialista:Mineiros Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Mineiro Especialista:Mineiros Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert mineur:Experts mineurs</Text>
 			<Gender>Male</Gender>
@@ -4408,7 +4806,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE</Tag>
 		<English>Native:Natives</English>
-		<Portuguese>Nativo: Nativos</Portuguese>
+		
+		<Portuguese>
+			<Text>Nativo: Nativos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Indigène:Indigènes</Text>
 			<Gender>Male</Gender>
@@ -4571,7 +4974,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ORCA</Tag>
 		<English>Orca</English>
-		<Portuguese>orca</Portuguese>
+		
+		<Portuguese>
+			<Text>orca</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Orque</Text>
 			<Gender>Male</Gender>
@@ -4664,7 +5072,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEARLS_HUNTER</Tag>
 		<English>Expert Pearl Diver:Expert Pearl Divers</English>
-		<Portuguese>Mergulhador Especialista em Pérolas: Mergulhadores Especialistas em Pérolas</Portuguese>
+		
+		<Portuguese>
+			<Text>Mergulhador Especialista em Pérolas: Mergulhadores Especialistas em Pérolas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert chasseur de perles</Text>
 			<Gender>Male</Gender>
@@ -4764,7 +5177,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PIONEER</Tag>
 		<English>Hardy Pioneer:Hardy Pioneers</English>
-		<Portuguese>Pioneiro Hardy:Pioneiros Hardy</Portuguese>
+		
+		<Portuguese>
+			<Text>Pioneiro Hardy:Pioneiros Hardy</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Pionnier endurci:Pionniers endurcis</Text>
 			<Gender>Male</Gender>
@@ -4812,9 +5230,10 @@ _ship_of
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Navio Pirata:Navios Piratas</Text>
-			<Gender>Female</Gender>
+			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -4909,9 +5328,10 @@ _ship_of
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Cortador pirata:Cortadores piratas</Text>
-			<Gender>Female</Gender>
+			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<German>
@@ -4939,7 +5359,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PREACHER</Tag>
 		<English>Firebrand Preacher:Firebrand Preachers</English>
-		<Portuguese>Pregador Incendiário:Pregadores Incendiários</Portuguese>
+		
+		<Portuguese>
+			<Text>Pregador Incendiário:Pregadores Incendiários</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Prédicateur exalté:Prédicateurs exaltés</Text>
 			<Gender>Male</Gender>
@@ -4983,7 +5408,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PREMIUM_COATS</Tag>
 		<English>Premium Coats</English>
-		<Portuguese>Casacos Premium</Portuguese>
+		
+		<Portuguese>
+			<Text>Casacos Premium</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Manteaux de qualité</Text>
 			<Gender>Male</Gender>
@@ -5022,7 +5452,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PREMIUM_FUR</Tag>
 		<English>Premium Fur</English>
-		<Portuguese>Pele Premium</Portuguese>
+		
+		<Portuguese>
+			<Text>Pele Premium</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Fourrure de qualité</Text>
 			<Gender>Male</Gender>
@@ -5061,7 +5496,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRIEST</Tag>
 		<English>Devout Priest:Devout Priests</English>
-		<Portuguese>Padre Devoto:Sacerdotes Devotos</Portuguese>
+		
+		<Portuguese>
+			<Text>Padre Devoto:Sacerdotes Devotos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Prêtre dévôt:Prêtres dévôts</Text>
 			<Gender>Male</Gender>
@@ -5105,7 +5545,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RUSSIAN_PRIEST</Tag>
 		<English>Orthodox Priest:Orthodox Priests</English>
-		<Portuguese>Padre Ortodoxo:Sacerdotes Ortodoxos</Portuguese>
+		
+		<Portuguese>
+			<Text>Padre Ortodoxo:Sacerdotes Ortodoxos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Prêtre orthodox:Prêtres orthodox</Text>
 			<Gender>Male</Gender>
@@ -5148,7 +5593,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRIVATEER</Tag>
 		<English>Privateer:Privateers</English>
-		<Portuguese>Corsário:Corsários</Portuguese>
+		
+		<Portuguese>
+			<Text>Corsário:Corsários</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Corsaire:Corsaires</Text>
 			<Gender>Male</Gender>
@@ -5292,7 +5742,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RANCHER</Tag>
 		<English>Expert Rancher:Expert Ranchers</English>
-		<Portuguese>Fazendeiro Especialista:Fazendeiros Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Fazendeiro Especialista:Fazendeiros Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert éleveur:Experts éleveurs</Text>
 			<Gender>Male</Gender>
@@ -5384,7 +5839,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAW_SALT</Tag>
 		<English>Rock Salt</English>
-		<Portuguese>Sal-gema</Portuguese>
+		
+		<Portuguese>
+			<Text>Sal-gema</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sel brut</Text>
 			<Gender>Male</Gender>
@@ -5423,7 +5883,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RED_PEPPER</Tag>
 		<English>Red Pepper</English>
-		<Portuguese>Pimentão vermelho</Portuguese>
+		
+		<Portuguese>
+			<Text>Pimentão vermelho</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Piment rouge</Text>
 			<Gender>Male</Gender>
@@ -5570,7 +6035,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_ARTILLERY</Tag>
 		<English>Royal Artillery:Royal Artilleries</English>
-		<Portuguese>Artilharia Real: Artilharias Reais</Portuguese>
+		
+		<Portuguese>
+			<Text>Artilharia Real: Artilharias Reais</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Artillerie royale:Artilleries royales</Text>
 			<Gender>Female</Gender>
@@ -5637,9 +6107,10 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Cavalaria Real: Cavalaria Real</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -5859,7 +6330,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RUM</Tag>
 		<English>Rum</English>
-		<Portuguese>Rum</Portuguese>
+		
+		<Portuguese>
+			<Text>Rum</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Rhum</Text>
 			<Gender>Male</Gender>
@@ -5955,7 +6431,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SALT</Tag>
 		<English>Salt</English>
-		<Portuguese>Sal</Portuguese>
+		
+		<Portuguese>
+			<Text>Sal</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sel alimentaire</Text>
 			<Gender>Male</Gender>
@@ -5997,7 +6478,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SCOUT</Tag>
 		<English>Seasoned Scout:Seasoned Scouts</English>
-		<Portuguese>Batedor Veterano:Batedores Veteranos</Portuguese>
+		
+		<Portuguese>
+			<Text>Batedor Veterano:Batedores Veteranos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Eclaireur aguerri:Eclaireurs aguerris</Text>
 			<Gender>Male</Gender>
@@ -6041,7 +6527,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EXPLORADOR</Tag>
 		<English>Explorador:Exploradores</English>
-		<Portuguese>Explorador:Exploradores</Portuguese>
+		
+		<Portuguese>
+			<Text>Explorador:Exploradores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Explorador:Exploradores</Text>
 			<Gender>Male</Gender>
@@ -6146,7 +6637,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SHIP_OF_THE_LINE</Tag>
 		<English>Ship of the Line 3rd rate:Ships of the Line 3rd rate</English>
-		<Portuguese>3ª tarifa do Navio da Linha: 3ª tarifa do Navio da Linha</Portuguese>
+		
+		<Portuguese>
+			<Text>3ª tarifa do Navio da Linha: 3ª tarifa do Navio da Linha</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Navire de ligne de 3e rang: Navires de ligne de 3e rang</Text>
 			<Gender>Male</Gender>
@@ -6172,7 +6668,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_SHIP_OF_THE_LINE</Tag>
 		<English>Royal Ship of the Line 2nd rate:Royal Ships of the Line 2nd rate</English>
-		<Portuguese>Navio Real da Linha 2ª tarifa:Navios Reais da Linha 2ª tarifa</Portuguese>
+		
+		<Portuguese>
+			<Text>Navio Real da Linha 2ª tarifa:Navios Reais da Linha 2ª tarifa</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Navire de ligne royal de 2e classe:Navires de ligne royaux de 2e classe</Text>
 			<Gender>Male</Gender>
@@ -6228,9 +6729,10 @@ _ship_of
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Saveiro: Saveiros</Text>
-			<Gender>Female</Gender>
+			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -6275,9 +6777,10 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Escuna:Escuna</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -6496,7 +6999,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STAGECOACH</Tag>
 		<English>Stagecoach:Stagecoaches</English>
-		<Portuguese>Diligência: diligências</Portuguese>
+		
+		<Portuguese>
+			<Text>Diligência: diligências</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Diligence:Diligences</Text>
 			<Gender>Female</Gender>
@@ -6528,7 +7036,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STATESMAN</Tag>
 		<English>Elder Statesman:Elder Statesmen</English>
-		<Portuguese>Estadista Ancião:Estadistas Anciãos</Portuguese>
+		
+		<Portuguese>
+			<Text>Estadista Ancião:Estadistas Anciãos</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Homme d'État émérite:Hommes d'Etat émérites</Text>
 			<Gender>Male</Gender>
@@ -6586,7 +7099,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STONECUTTER</Tag>
 		<English>Expert Stonecutter:Expert Stonecutters</English>
-		<Portuguese>Cortador de Pedras Especialista:Cortadores de Pedras Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Cortador de Pedras Especialista:Cortadores de Pedras Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert Tailleur de pierre:Experts Tailleurs de pierre</Text>
 			<Gender>Male</Gender>
@@ -6626,7 +7144,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SUGAR</Tag>
 		<English>Sugar</English>
-		<Portuguese>Açúcar</Portuguese>
+		
+		<Portuguese>
+			<Text>Açúcar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sucre</Text>
 			<Gender>Male</Gender>
@@ -6660,7 +7183,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SUGAR_PLANTER</Tag>
 		<English>Expert Sugar Planter:Expert Sugar Planters</English>
-		<Portuguese>Plantador de Açúcar Especialista: Plantadores de Açúcar Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de Açúcar Especialista: Plantadores de Açúcar Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de canne:Experts planteurs de canne</Text>
 			<Gender>Male</Gender>
@@ -6704,7 +7232,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TANNER</Tag>
 		<English>Master Tanner:Master Tanners</English>
-		<Portuguese>Mestre Curtidor:Mestre Curtidor</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Curtidor:Mestre Curtidor</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître tanneur:Maîtres tanneurs</Text>
 			<Gender>Male</Gender>
@@ -6786,7 +7319,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TOBACCONIST</Tag>
 		<English>Master Tobacconist:Master Tobacconists</English>
-		<Portuguese>Mestre Tabaqueiro:Mestres Tabaqueiros</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Tabaqueiro:Mestres Tabaqueiros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître cigarier:Maîtres cigariers</Text>
 			<Gender>Male</Gender>
@@ -6830,7 +7368,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TOBACCO_PLANTER</Tag>
 		<English>Expert Tobacco Planter:Expert Tobacco Planters</English>
-		<Portuguese>Plantador de tabaco especializado: Plantadores de tabaco especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de tabaco especializado: Plantadores de tabaco especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de tabac:Experts planteurs de tabac</Text>
 			<Gender>Male</Gender>
@@ -6889,7 +7432,7 @@ _ship_of
 		<Portuguese>
 			<Text>Bens comerciais</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Marchandise:Marchandises</Text>
@@ -6924,7 +7467,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRAIN</Tag>
 		<English>Carriage:Carriages</English>
-		<Portuguese>Transporte: Carruagens</Portuguese>
+		
+		<Portuguese>
+			<Text>Transporte: Carruagens</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Convoyeur:Convoyeurs</French>
 		<German>
 			<Text>Fuhrwerk:Fuhrwerke</Text>
@@ -6952,7 +7500,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRAPPER</Tag>
 		<English>Expert Trapper:Expert Trappers</English>
-		<Portuguese>Trampeiro Especialista:Trampeiros Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Trampeiro Especialista:Trampeiros Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert trappeur:Experts trappeurs</Text>
 			<Gender>Male</Gender>
@@ -6996,7 +7549,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TREASURE</Tag>
 		<English>Treasure</English>
-		<Portuguese>Tesouro</Portuguese>
+		
+		<Portuguese>
+			<Text>Tesouro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Trésor:Trésors</Text>
 			<Gender>Male</Gender>
@@ -7040,7 +7598,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TREK</Tag>
 		<English>Trek:Treks</English>
-		<Portuguese>Jornada: Caminhadas</Portuguese>
+		
+		<Portuguese>
+			<Text>Jornada: Caminhadas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Fourgon:Fourgons</Text>
 			<Gender>Male</Gender>
@@ -7089,9 +7652,10 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Cavalaria Veterana: Cavalaria Veterana</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -7228,9 +7792,10 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Guarda Municipal Veterana: Guardas Municipais Veteranos</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -7265,7 +7830,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WAGON_TRAIN</Tag>
 		<English>Wagon Train:Wagon Trains</English>
-		<Portuguese>Carroça:Carroças</Portuguese>
+		
+		<Portuguese>
+			<Text>Carroça:Carroças</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Chariot:Chariots</Text>
 			<Gender>Male</Gender>
@@ -7309,7 +7879,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WEAVER</Tag>
 		<English>Master Weaver:Master Weavers</English>
-		<Portuguese>Mestre Tecelão:Mestre Tecelão</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Tecelão:Mestre Tecelão</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître tisserand:Maîtres tisserands</Text>
 			<Gender>Male</Gender>
@@ -7446,7 +8021,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WHALE_BLUBBER</Tag>
 		<English>Whale Fat</English>
-		<Portuguese>Gordura de baleia</Portuguese>
+		
+		<Portuguese>
+			<Text>Gordura de baleia</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Graisse de baleine</Text>
 			<Gender>Male</Gender>
@@ -7480,7 +8060,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WHALE_OIL</Tag>
 		<English>Train Oil</English>
-		<Portuguese>Óleo de baleia</Portuguese>
+		
+		<Portuguese>
+			<Text>Óleo de baleia</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Huile de baleine</Text>
 			<Gender>Male</Gender>
@@ -7562,7 +8147,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WHALING_BOAT</Tag>
 		<English>Whaling Ship:Whaling Ships</English>
-		<Portuguese>Navio Baleeiro:Navios Baleeiros</Portuguese>
+		
+		<Portuguese>
+			<Text>Navio Baleeiro:Navios Baleeiros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Baleinier</Text>
 			<Gender>Male</Gender>
@@ -7604,7 +8194,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WINE</Tag>
 		<English>Wine</English>
-		<Portuguese>Vinho</Portuguese>
+		
+		<Portuguese>
+			<Text>Vinho</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Vin</Text>
 			<Gender>Male</Gender>
@@ -7694,7 +8289,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WOLF</Tag>
 		<English>Wolf</English>
-		<Portuguese>Lobo</Portuguese>
+		
+		<Portuguese>
+			<Text>Lobo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Loup</Text>
 			<Gender>Male</Gender>
@@ -7731,7 +8331,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WOOL</Tag>
 		<English>Wool</English>
-		<Portuguese>Lã</Portuguese>
+		
+		<Portuguese>
+			<Text>Lã</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Laine</Text>
 			<Gender>Female</Gender>
@@ -7771,7 +8376,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WOOL_CLOTH</Tag>
 		<English>Wool Cloth</English>
-		<Portuguese>Pano de lã</Portuguese>
+		
+		<Portuguese>
+			<Text>Pano de lã</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Draps de laine</Text>
 			<Gender>Male</Gender>
@@ -8083,7 +8693,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOSTILE_NATIVE</Tag>
 		<English>Hostile Native:Hostile Natives</English>
-		<Portuguese>Nativo Hostil:Nativos Hostis</Portuguese>
+		
+		<Portuguese>
+			<Text>Nativo Hostil:Nativos Hostis</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Indigène hostiles:Indigènes hostiles</Text>
 			<Gender>Male</Gender>

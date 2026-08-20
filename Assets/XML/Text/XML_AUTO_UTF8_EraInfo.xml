@@ -3,7 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_ERA_COLONIAL</Tag>
 		<English>Colonial (not implemented)</English>
-		<Portuguese>Colonial (não implementado)</Portuguese>
+		
+		<Portuguese>
+			<Text>Colonial (não implementado)</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Coloniale (non disponible)</Text>
 			<Gender>Female</Gender>
@@ -29,7 +34,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_ERA_DISCOVERY</Tag>
 		<English>Discovery</English>
-		<Portuguese>Descoberta</Portuguese>
+		
+		<Portuguese>
+			<Text>Descoberta</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Découverte</Text>
 			<Gender>Female</Gender>
@@ -59,7 +69,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_ERA_EXPANSION</Tag>
 		<English>Expansion (not implemented)</English>
-		<Portuguese>Expansão (não implementada)</Portuguese>
+		
+		<Portuguese>
+			<Text>Expansão (não implementada)</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expansion (non disponible)</Text>
 			<Gender>Female</Gender>
@@ -89,7 +104,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_ERA_INDEPENDENCE</Tag>
 		<English>Independence (not implemented)</English>
-		<Portuguese>Independência (não implementada)</Portuguese>
+		
+		<Portuguese>
+			<Text>Independência (não implementada)</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Indépendance (non disponible)</Text>
 			<Gender>Female</Gender>

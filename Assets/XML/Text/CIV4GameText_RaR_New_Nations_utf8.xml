@@ -8,7 +8,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_INUIT_SHORT_DESC</Tag>
 		<English>Inuit</English>
-		<Portuguese>inuítes</Portuguese>
+		
+		<Portuguese>
+			<Text>inuítes</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Inuit</Text>
 			<Gender>Male</Gender>
@@ -31,7 +36,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_INUIT_ADJECTIVE</Tag>
 		<English>Inuit</English>
-		<Portuguese>inuítes</Portuguese>
+		
+		<Portuguese>
+			<Text>inuítes:inuítes:inuítes:inuítes</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Inuit:Inuit:Inuits:Inuits</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -120,7 +130,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_HURON_SHORT_DESC</Tag>
 		<English>Huron</English>
-		<Portuguese>Hurão</Portuguese>
+		
+		<Portuguese>
+			<Text>Hurão</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Hurons</Text>
 			<Gender>Male</Gender>
@@ -143,7 +158,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_HURON_ADJECTIVE</Tag>
 		<English>Huron</English>
-		<Portuguese>Hurão</Portuguese>
+		
+		<Portuguese>
+			<Text>Hurão:Hurona</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>huron:huron:hurons:hurons</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -238,7 +258,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ZAPOTEC_SHORT_DESC</Tag>
 		<English>Zapotec</English>
-		<Portuguese>Zapoteca</Portuguese>
+		
+		<Portuguese>
+			<Text>Zapoteca</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Zapotecs</Text>
 			<Gender>Male</Gender>
@@ -261,7 +286,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ZAPOTEC_ADJECTIVE</Tag>
 		<English>Zapotec</English>
-		<Portuguese>Zapoteca</Portuguese>
+		
+		<Portuguese>
+			<Text>Zapoteca:Zapoteca:Zapotecas:Zapotecas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>zapotec:zapotèque:zapotecs:zapotèques</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -350,7 +380,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_GUARANI_SHORT_DESC</Tag>
 		<English>Guarani</English>
-		<Portuguese>guarani</Portuguese>
+		
+		<Portuguese>
+			<Text>guarani</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Guaranis</Text>
 			<Gender>Male</Gender>
@@ -373,7 +408,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_GUARANI_ADJECTIVE</Tag>
 		<English>Guarani</English>
-		<Portuguese>guarani</Portuguese>
+		
+		<Portuguese>
+			<Text>guarani:guarani</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>guarani:guarani:guaranis:guaranis</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -938,7 +978,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CARIBS_SHORT_DESC</Tag>
 		<English>Carib</English>
-		<Portuguese>Caribenho</Portuguese>
+		
+		<Portuguese>
+			<Text>Caribenho</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Caraïbes</Text>
 			<Gender>Male</Gender>
@@ -961,7 +1006,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CARIBS_ADJECTIVE</Tag>
 		<English>Carib</English>
-		<Portuguese>Caribenho</Portuguese>
+		
+		<Portuguese>
+			<Text>Caribenho:Caribenha:Caribenhos:Caribenhas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>caraïbe:caraïbe:caraïbes:caraïbes</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -1048,7 +1098,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NAVAJO_SHORT_DESC</Tag>
 		<English>Navajo</English>
-		<Portuguese>Navajo</Portuguese>
+		
+		<Portuguese>
+			<Text>Navajo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Navajos</Text>
 			<Gender>Male</Gender>
@@ -1071,7 +1126,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NAVAJO_ADJECTIVE</Tag>
 		<English>Navajo</English>
-		<Portuguese>Navajo</Portuguese>
+		
+		<Portuguese>
+			<Text>Navajo:Navaja:Navajos:Navajas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>navajo:navajo:navajos:navajos</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -1158,7 +1218,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ALGONQUIAN_SHORT_DESC</Tag>
 		<English>Algonquian</English>
-		<Portuguese>algonquino</Portuguese>
+		
+		<Portuguese>
+			<Text>algonquino</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Algonquins</Text>
 			<Gender>Male</Gender>
@@ -1181,7 +1246,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ALGONQUIAN_ADJECTIVE</Tag>
 		<English>Algonquian</English>
-		<Portuguese>algonquino</Portuguese>
+		
+		<Portuguese>
+			<Text>algonquino:algonquina:algonquinos:algonquinas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>algonquin:algonquine:algonquins:algonquines</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -1268,7 +1338,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MACHIPARO_SHORT_DESC</Tag>
 		<English>Machiparo</English>
-		<Portuguese>Machiparo</Portuguese>
+		
+		<Portuguese>
+			<Text>Machiparo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Machiparos</Text>
 			<Gender>Male</Gender>
@@ -1291,7 +1366,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MACHIPARO_ADJECTIVE</Tag>
 		<English>Machiparo</English>
-		<Portuguese>Machiparo</Portuguese>
+		
+		<Portuguese>
+			<Text>Machiparo:Machipara:Machiparos:Machiparas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>machiparo:machiparo:machiparos:machiparos</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -1378,7 +1458,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MIXTEC_SHORT_DESC</Tag>
 		<English>Mixtec</English>
-		<Portuguese>Mixteca</Portuguese>
+		
+		<Portuguese>
+			<Text>Mixteca</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mixtecs</Text>
 			<Gender>Male</Gender>
@@ -1401,7 +1486,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MIXTEC_ADJECTIVE</Tag>
 		<English>Mixtec</English>
-		<Portuguese>Mixteca</Portuguese>
+		
+		<Portuguese>
+			<Text>Mixteca:Mixteca:Mixtecas:Mixtecas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>mixtec:mixtèque:mixtecs:mixtèques</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -1488,7 +1578,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MUISCA_SHORT_DESC</Tag>
 		<English>Muisca</English>
-		<Portuguese>Música</Portuguese>
+		
+		<Portuguese>
+			<Text>Música</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Muiscas</Text>
 			<Gender>Male</Gender>
@@ -1511,7 +1606,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MUISCA_ADJECTIVE</Tag>
 		<English>Muisca</English>
-		<Portuguese>Música</Portuguese>
+		
+		<Portuguese>
+			<Text>Música</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>muisca:muisca:muiscas:muiscas</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -1598,7 +1698,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_COMANCHE_SHORT_DESC</Tag>
 		<English>Comanche</English>
-		<Portuguese>Comanche</Portuguese>
+		
+		<Portuguese>
+			<Text>Comanche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Comanches</Text>
 			<Gender>Male</Gender>
@@ -1621,7 +1726,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_COMANCHE_ADJECTIVE</Tag>
 		<English>Comanche</English>
-		<Portuguese>Comanche</Portuguese>
+		
+		<Portuguese>
+			<Text>Comanche:Comanche:Comanches:Comanches</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>comanche:comanche:comanches:comanches</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -1708,7 +1818,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SHOSHONE_SHORT_DESC</Tag>
 		<English>Shoshone</English>
-		<Portuguese>Shoshone</Portuguese>
+		
+		<Portuguese>
+			<Text>Shoshone</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Shoshones</Text>
 			<Gender>Male</Gender>
@@ -1731,7 +1846,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SHOSHONE_ADJECTIVE</Tag>
 		<English>Shoshone</English>
-		<Portuguese>Shoshone</Portuguese>
+		
+		<Portuguese>
+			<Text>Shoshone:Shoshone:Shoshones:Shoshones</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>shoshone:shoshone:shoshones:shoshones</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -1819,7 +1939,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TOROMONA_SHORT_DESC</Tag>
 		<English>Toromona</English>
-		<Portuguese>Toromona</Portuguese>
+		
+		<Portuguese>
+			<Text>Toromona</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Toromonas</Text>
 			<Gender>Male</Gender>
@@ -1842,7 +1967,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TOROMONA_ADJECTIVE</Tag>
 		<English>Toromona</English>
-		<Portuguese>Toromona</Portuguese>
+		
+		<Portuguese>
+			<Text>Toromona:Toromona:Toromonas:Toromonas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>toromona:toromona:toromonas:toromonas</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -1931,7 +2061,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CROW_SHORT_DESC</Tag>
 		<English>Crow</English>
-		<Portuguese>Corvo</Portuguese>
+		
+		<Portuguese>
+			<Text>Corvo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Crows</Text>
 			<Gender>Male</Gender>
@@ -1954,7 +2089,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CROW_ADJECTIVE</Tag>
 		<English>Crow</English>
-		<Portuguese>Corvo</Portuguese>
+		
+		<Portuguese>
+			<Text>Corvo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>crow:crow:crows:crows</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2041,7 +2181,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BLACKFOOT_SHORT_DESC</Tag>
 		<English>Blackfoot</English>
-		<Portuguese>Pé preto</Portuguese>
+		
+		<Portuguese>
+			<Text>Pé preto</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Niitsítapi</Text>
 			<Gender>Male</Gender>
@@ -2064,7 +2209,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BLACKFOOT_ADJECTIVE</Tag>
 		<English>Blackfoot</English>
-		<Portuguese>Pé preto</Portuguese>
+		
+		<Portuguese>
+			<Text>Pé preto</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>niitsítapi:niitsítapi:niitsítapi:niitsítapi</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2151,7 +2301,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_GUAYMI_SHORT_DESC</Tag>
 		<English>Ngabe</English>
-		<Portuguese>Ngabe</Portuguese>
+		
+		<Portuguese>
+			<Text>Ngabe</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ngabe</Text>
 			<Gender>Male</Gender>
@@ -2174,7 +2329,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_GUAYMI_ADJECTIVE</Tag>
 		<English>Ngabe</English>
-		<Portuguese>Ngabe</Portuguese>
+		
+		<Portuguese>
+			<Text>Ngabe:Ngabe:Ngabes:Ngabes</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ngabe:Ngabe:Ngabe:Ngabe</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2261,7 +2421,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TARASCANS_SHORT_DESC</Tag>
 		<English>Tarascans</English>
-		<Portuguese>tarascos</Portuguese>
+		
+		<Portuguese>
+			<Text>tarascos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tarasques</Text>
 			<Gender>Male</Gender>
@@ -2284,7 +2449,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TARASCANS_ADJECTIVE</Tag>
 		<English>Tarascan</English>
-		<Portuguese>Tarascano</Portuguese>
+		
+		<Portuguese>
+			<Text>Tarascano:Tarascana:Tarascanos:Tarascanas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>tarasque:tarasque:tarasques:tarasques</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2371,7 +2541,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_OMAGUA_SHORT_DESC</Tag>
 		<English>Omagua</English>
-		<Portuguese>Omágua</Portuguese>
+		
+		<Portuguese>
+			<Text>Omágua</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Omaguas</Text>
 			<Gender>Male</Gender>
@@ -2394,7 +2569,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_OMAGUA_ADJECTIVE</Tag>
 		<English>Omagua</English>
-		<Portuguese>Omágua</Portuguese>
+		
+		<Portuguese>
+			<Text>Omágua:Omágua:Omáguas:Omáguas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>omagua:omagua:omaguas:omaguas</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2481,7 +2661,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MAPUCHE_SHORT_DESC</Tag>
 		<English>Mapuche</English>
-		<Portuguese>Mapuche</Portuguese>
+		
+		<Portuguese>
+			<Text>Mapuche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mapuches</Text>
 			<Gender>Male</Gender>
@@ -2504,7 +2689,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MAPUCHE_ADJECTIVE</Tag>
 		<English>Mapuche</English>
-		<Portuguese>Mapuche</Portuguese>
+		
+		<Portuguese>
+			<Text>Mapuche:Mapuche:Mapuches:Mapuches</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>mapuche:mapuche:mapuches:mapuches</Text>
 			<Gender>Male:Female:Male:Female</Gender>

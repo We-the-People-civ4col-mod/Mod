@@ -343,9 +343,10 @@
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Barba Negra</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
 		<French>
@@ -373,7 +374,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CAPITALIST</Tag>
 		<English>Capitalist</English>
-		<Portuguese>Capitalista</Portuguese>
+		
+		<Portuguese>
+			<Text>Capitalista:Capitalista</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Capitaliste:Capitaliste</Text>
 			<Gender>Male:Female</Gender>
@@ -395,7 +401,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CHARISMATIC</Tag>
 		<English>Charismatic</English>
-		<Portuguese>Carismático</Portuguese>
+		
+		<Portuguese>
+			<Text>Carismático:Carismática</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Charismatique</Text>
 			<Gender>Male</Gender>
@@ -489,7 +500,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CITYBUILDER</Tag>
 		<English>Prosperous</English>
-		<Portuguese>Próspero</Portuguese>
+		
+		<Portuguese>
+			<Text>Próspero:Próspera</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Prospère:Prospère</Text>
 			<Gender>Male:Female</Gender>
@@ -511,7 +527,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CLIMBER</Tag>
 		<English>Rock Climber</English>
-		<Portuguese>Alpinista</Portuguese>
+		
+		<Portuguese>
+			<Text>Alpinista:Alpinista</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Montagnard:Montagnarde</Text>
 			<Gender>Male:Female</Gender>
@@ -533,7 +554,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_COASTALWARRIORS</Tag>
 		<English>Coastal Warriors</English>
-		<Portuguese>Guerreiros Costeiros</Portuguese>
+		
+		<Portuguese>
+			<Text>Guerreiros Costeiros:Guerreiros Costeiros</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Guerrier des côtes:Guerrière des côtes</Text>
 			<Gender>Male:Female</Gender>
@@ -589,7 +615,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CONQUEROR</Tag>
 		<English>Conquistador</English>
-		<Portuguese>Conquistador</Portuguese>
+		
+		<Portuguese>
+			<Text>Conquistador:Conquistador</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Conquistador:Conquistador</Text>
 			<Gender>Male:Female</Gender>
@@ -611,7 +642,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_COOPERATIVE</Tag>
 		<English>Cooperative</English>
-		<Portuguese>Cooperativa</Portuguese>
+		
+		<Portuguese>
+			<Text>Cooperativa:Cooperativa</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Coopératif:Coopérative</Text>
 			<Gender>Male:Female</Gender>
@@ -667,7 +703,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DETERMINED</Tag>
 		<English>Determined</English>
-		<Portuguese>Determinado</Portuguese>
+		
+		<Portuguese>
+			<Text>Determinado:Determinada</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Déterminé:Déterminée</Text>
 			<Gender>Male:Female</Gender>
@@ -723,7 +764,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DISCIPLINED</Tag>
 		<English>Disciplined</English>
-		<Portuguese>Disciplinado</Portuguese>
+		
+		<Portuguese>
+			<Text>Disciplinado:Disciplinada</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Discipliné:Disciplinée</Text>
 			<Gender>Male:Female</Gender>
@@ -813,7 +859,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ENTERPRISING</Tag>
 		<English>Enterprising</English>
-		<Portuguese>Empreendedor</Portuguese>
+		
+		<Portuguese>
+			<Text>Empreendedor:Empreendedor</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Entreprenant:Entreprenante</Text>
 			<Gender>Male:Female</Gender>
@@ -879,7 +930,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_EXPLORERS</Tag>
 		<English>Explorers</English>
-		<Portuguese>Exploradores</Portuguese>
+		
+		<Portuguese>
+			<Text>Exploradores:Exploradores</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Explorateur:Exploratrice</Text>
 			<Gender>Male:Female</Gender>
@@ -893,7 +949,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FARMERS</Tag>
 		<English>Farmers</English>
-		<Portuguese>Agricultores</Portuguese>
+		
+		<Portuguese>
+			<Text>Agricultores:Agricultores</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Fermier:Fermière</Text>
 			<Gender>Male:Female</Gender>
@@ -949,7 +1010,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FORESTWARRIORS</Tag>
 		<English>Forest Warriors</English>
-		<Portuguese>Guerreiros da Floresta</Portuguese>
+		
+		<Portuguese>
+			<Text>Guerreiros da Floresta:Guerreiros da Floresta</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Forestier:Forestière</Text>
 			<Gender>Male:Female</Gender>
@@ -1253,7 +1319,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GENERAL</Tag>
 		<English>Experienced General</English>
-		<Portuguese>Geral Experiente</Portuguese>
+		
+		<Portuguese>
+			<Text>Geral Experiente</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Général experimenté</Text>
 			<Gender>Male</Gender>
@@ -1777,7 +1848,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_HUNTERS</Tag>
 		<English>Hunters</English>
-		<Portuguese>Caçadores</Portuguese>
+		
+		<Portuguese>
+			<Text>Caçadores</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Chasseur:Chasseuse</Text>
 			<Gender>Male:Female</Gender>
@@ -1809,7 +1885,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_INDUSTRIOUS</Tag>
 		<English>Industrious</English>
-		<Portuguese>Trabalhador</Portuguese>
+		
+		<Portuguese>
+			<Text>Trabalhador:Trabalhador</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Travailleur:Travailleuse:Travailleurs:Travailleuses</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2556,7 +2637,7 @@
 		<Portuguese>
 			<Text>Lewis e Clark</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Lewis et Clark</Text>
@@ -2583,7 +2664,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_LIBERTARIAN</Tag>
 		<English>Rebel Mastermind</English>
-		<Portuguese>Cérebro Rebelde</Portuguese>
+		
+		<Portuguese>
+			<Text>Cérebro Rebelde:Cérebro Rebelde</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Libertaire:Libertaire</Text>
 			<Gender>Male:Female</Gender>
@@ -2673,7 +2759,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_MENTOR</Tag>
 		<English>Mentor</English>
-		<Portuguese>Mentor</Portuguese>
+		
+		<Portuguese>
+			<Text>Mentor:Mentor</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mentor:Mentor</Text>
 			<Gender>Male:Female</Gender>
@@ -2695,7 +2786,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_MERCANTILE</Tag>
 		<English>Mercantile</English>
-		<Portuguese>Mercantil</Portuguese>
+		
+		<Portuguese>
+			<Text>Mercantil:Mercantil</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Commerçant:Commerçante</Text>
 			<Gender>Male:Female</Gender>
@@ -2853,7 +2949,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_NOMADS</Tag>
 		<English>Nomads</English>
-		<Portuguese>Nômades</Portuguese>
+		
+		<Portuguese>
+			<Text>Nômades:Nômades</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Nomade:Nomade</Text>
 			<Gender>Male:Female</Gender>
@@ -3123,7 +3224,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PIONEER</Tag>
 		<English>Pioneer</English>
-		<Portuguese>Pioneiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Pioneiro:Pioneira</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Pionnier</Text>
 			<Gender>Male:Female</Gender>
@@ -3179,7 +3285,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PUPIL</Tag>
 		<English>Pupil</English>
-		<Portuguese>Aluno</Portuguese>
+		
+		<Portuguese>
+			<Text>Aluno:Aluna</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Elève:Elève</Text>
 			<Gender>Male:Female</Gender>
@@ -3201,7 +3312,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_RAIDERS</Tag>
 		<English>Raiders</English>
-		<Portuguese>Invasores</Portuguese>
+		
+		<Portuguese>
+			<Text>Invasores:Invasores</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Aventurier:Aventurière</Text>
 			<Gender>Male:Female</Gender>
@@ -3223,7 +3339,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_RESOURCEFUL</Tag>
 		<English>Resourceful</English>
-		<Portuguese>Engenhoso</Portuguese>
+		
+		<Portuguese>
+			<Text>Engenhoso:Engenhosa</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ingénieux:Ingénieuse</Text>
 			<Gender>Male:Female</Gender>
@@ -3425,7 +3546,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SOPHISTICATED</Tag>
 		<English>Sophisticated</English>
-		<Portuguese>Sofisticado</Portuguese>
+		
+		<Portuguese>
+			<Text>Sofisticado:Sofisticada</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sophistiqué</Text>
 			<Gender>Male:Female</Gender>
@@ -3451,9 +3577,10 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Sor Juana Inés de la Cruz</Text>
-			<Gender>Female</Gender>
+			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
 		<French>
@@ -3549,7 +3676,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_TOLERANT</Tag>
 		<English>Tolerant</English>
-		<Portuguese>Tolerante</Portuguese>
+		
+		<Portuguese>
+			<Text>Tolerante:Tolerante</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tolérant:Tolérante</Text>
 			<Gender>Male:Female</Gender>
@@ -3571,7 +3703,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_TRADER</Tag>
 		<English>Trader</English>
-		<Portuguese>Comerciante</Portuguese>
+		
+		<Portuguese>
+			<Text>Comerciante:Comerciante</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Commerçant:Commerçante</Text>
 			<Gender>Male:Female</Gender>

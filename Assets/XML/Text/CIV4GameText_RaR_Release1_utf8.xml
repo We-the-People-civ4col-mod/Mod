@@ -1325,7 +1325,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_WAREHOUSE</Tag>
 		<English>Storage House</English>
-		<Portuguese>Casa de armazenamento</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa de armazenamento</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Remise:Remises</Text>
 			<Gender>Female</Gender>

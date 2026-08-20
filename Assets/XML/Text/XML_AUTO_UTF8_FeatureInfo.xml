@@ -3,7 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_FOREST</Tag>
 		<English>Deciduous Forest</English>
-		<Portuguese>Floresta Decídua</Portuguese>
+		
+		<Portuguese>
+			<Text>Floresta Decídua</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Forêt de feuillus</French>
 		<German>
 			<Text>Laubwald</Text>
@@ -22,7 +27,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_FOREST_EVERGREEN</Tag>
 		<English>Coniferous Forest</English>
-		<Portuguese>Floresta de coníferas</Portuguese>
+		
+		<Portuguese>
+			<Text>Floresta de coníferas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Forêt de conifères</French>
 		<German>
 			<Text>Nadelwald</Text>
@@ -43,7 +53,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_DENSE_FOREST</Tag>
 		<English>Dense Forest</English>
-		<Portuguese>Floresta Densa</Portuguese>
+		
+		<Portuguese>
+			<Text>Floresta Densa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Forêt dense</French>
 		<German>
 			<Text>Dichter Wald</Text>
@@ -61,7 +76,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_FOREST_TUNDRA</Tag>
 		<English>Northern Forest</English>
-		<Portuguese>Floresta do Norte</Portuguese>
+		
+		<Portuguese>
+			<Text>Floresta do Norte</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Forêt boréale</French>
 		<German>
 			<Text>Nordwald</Text>
@@ -73,7 +93,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ANCIENT_FOREST</Tag>
 		<English>Ancient Northern Forest</English>
-		<Portuguese>Antiga Floresta do Norte</Portuguese>
+		
+		<Portuguese>
+			<Text>Antiga Floresta do Norte</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Forêt boréale primordiale</French>
 		<German>
 			<Text>Alter Nordwald</Text>
@@ -98,7 +123,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ICE</Tag>
 		<English>Polar Ice</English>
-		<Portuguese>Gelo polar</Portuguese>
+		
+		<Portuguese>
+			<Text>Gelo polar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Banquise</French>
 		<German>
 			<Text>Polareis</Text>
@@ -127,7 +157,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_JUNGLE</Tag>
 		<English>Jungle</English>
-		<Portuguese>Selva</Portuguese>
+		
+		<Portuguese>
+			<Text>Selva</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Jungle</Text>
 			<Gender>Female</Gender>
@@ -160,7 +195,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_MANGROVE</Tag>
 		<English>Mangroves</English>
-		<Portuguese>Manguezais</Portuguese>
+		
+		<Portuguese>
+			<Text>Manguezais</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Mangrove</French>
 		<German>
 			<Text>Mangroven</Text>
@@ -178,7 +218,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_TROPICAL_GROVES</Tag>
 		<English>Tropical Grove</English>
-		<Portuguese>Bosque Tropical</Portuguese>
+		
+		<Portuguese>
+			<Text>Bosque Tropical</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Bosquet tropical:Bosquets tropicaux</French>
 		<German>
 			<Text>Tropischer Hain</Text>
@@ -196,7 +241,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_TAR_PIT</Tag>
 		<English>Tar Pit</English>
-		<Portuguese>Poço de alcatrão</Portuguese>
+		
+		<Portuguese>
+			<Text>Poço de alcatrão</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Goudron</French>
 		<German>
 			<Text>Teergrube</Text>
@@ -214,7 +264,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_SALT_PAN</Tag>
 		<English>Salt Desert</English>
-		<Portuguese>Deserto de Sal</Portuguese>
+		
+		<Portuguese>
+			<Text>Deserto de Sal</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Désert salin</French>
 		<German>
 			<Text>Salzwüste</Text>
@@ -232,7 +287,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_SALT_DRAINAGE</Tag>
 		<English>Salt Water Pools</English>
-		<Portuguese>Piscinas de água salgada</Portuguese>
+		
+		<Portuguese>
+			<Text>Piscinas de água salgada</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Marais salant naturel</French>
 		<German>
 			<Text>Salzwassertümpel</Text>
@@ -250,7 +310,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_FLOOD_PLAINS</Tag>
 		<English>Fertile Flood Plains</English>
-		<Portuguese>Planícies inundáveis férteis</Portuguese>
+		
+		<Portuguese>
+			<Text>Planícies inundáveis férteis</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Plaine d'inondation</French>
 		<German>
 			<Text>Fruchtbares Schwemmland</Text>
@@ -268,7 +333,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_CRATER</Tag>
 		<English>Meteor Crater</English>
-		<Portuguese>Cratera do Meteoro</Portuguese>
+		
+		<Portuguese>
+			<Text>Cratera do Meteoro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Cartère de météorite</French>
 		<German>
 			<Text>Meteoritenkrater</Text>
@@ -286,7 +356,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN</Tag>
 		<English>Impassable Mountain</English>
-		<Portuguese>Montanha Intransponível</Portuguese>
+		
+		<Portuguese>
+			<Text>Montanha Intransponível</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Montagne infranchissable</French>
 		<German>
 			<Text>Unpassierbarer Berg</Text>
@@ -304,7 +379,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT</Tag>
 		<English>Rock Formation (Desert)</English>
-		<Portuguese>Formação Rochosa (Deserto)</Portuguese>
+		
+		<Portuguese>
+			<Text>Formação Rochosa (Deserto)</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Formation rocheuse (Désert)</French>
 		<German>
 			<Text>Felsenformation (Wüste)</Text>
@@ -322,7 +402,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_TEMPERATE</Tag>
 		<English>Rock Formation (Temperate)</English>
-		<Portuguese>Formação Rochosa (Temperada)</Portuguese>
+		
+		<Portuguese>
+			<Text>Formação Rochosa (Temperada)</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Formation rocheuse (tempérée)</French>
 		<German>
 			<Text>Felsenformation (Gemäßigt)</Text>
@@ -340,7 +425,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_POLAR</Tag>
 		<English>Rock Formation (Polar)</English>
-		<Portuguese>Formação Rochosa (Polar)</Portuguese>
+		
+		<Portuguese>
+			<Text>Formação Rochosa (Polar)</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Formation rocheuse (polaire)</French>
 		<German>
 			<Text>Felsenformation (Polar)</Text>
@@ -358,7 +448,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_LIGHT_FOREST</Tag>
 		<English>Light Forest</English>
-		<Portuguese>Floresta clara</Portuguese>
+		
+		<Portuguese>
+			<Text>Floresta clara</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Forêt clairsemée:Forêts clairsemées</Text>
 			<Gender>Female</Gender>
@@ -387,7 +482,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_SWAMP</Tag>
 		<English>Swamp</English>
-		<Portuguese>Pântano</Portuguese>
+		
+		<Portuguese>
+			<Text>Pântano</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Marais</French>
 		<German>
 			<Text>Sumpf</Text>
@@ -405,7 +505,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_BOG</Tag>
 		<English>Bog</English>
-		<Portuguese>Turfeira</Portuguese>
+		
+		<Portuguese>
+			<Text>Turfeira</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Fondrière</French>
 		<German>
 			<Text>Moorpflanzen</Text>
@@ -423,7 +528,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_BARREL_CACTUS</Tag>
 		<English>Barrel Cactus Field</English>
-		<Portuguese>Campo de cactos de barril</Portuguese>
+		
+		<Portuguese>
+			<Text>Campo de cactos de barril</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Champ de cactus</French>
 		<German>
 			<Text>Kugelkaktusfeld</Text>
@@ -441,7 +551,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_CACTUS_TREES</Tag>
 		<English>Cactus Trees</English>
-		<Portuguese>Cactos</Portuguese>
+		
+		<Portuguese>
+			<Text>Cactos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Cactus géant</French>
 		<German>
 			<Text>Kaktusbäume</Text>
@@ -459,7 +574,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_LICHEN</Tag>
 		<English>Lichen</English>
-		<Portuguese>Líquen</Portuguese>
+		
+		<Portuguese>
+			<Text>Líquen</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Lichen</French>
 		<German>
 			<Text>Flechten</Text>
@@ -477,7 +597,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_MOSS</Tag>
 		<English>Moss</English>
-		<Portuguese>Musgo</Portuguese>
+		
+		<Portuguese>
+			<Text>Musgo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Mousse</French>
 		<German>
 			<Text>Moos</Text>
@@ -495,7 +620,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_THICKET</Tag>
 		<English>Thicket</English>
-		<Portuguese>Arvoredo</Portuguese>
+		
+		<Portuguese>
+			<Text>Arvoredo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Bosquet</French>
 		<German>
 			<Text>Dickicht</Text>
@@ -513,7 +643,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_STORM</Tag>
 		<English>Storm</English>
-		<Portuguese>Tempestade</Portuguese>
+		
+		<Portuguese>
+			<Text>Tempestade</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tempête</Text>
 			<Gender>Female</Gender>
@@ -546,7 +681,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_SANDSTORM</Tag>
 		<English>Sandstorm</English>
-		<Portuguese>Tempestade de areia</Portuguese>
+		
+		<Portuguese>
+			<Text>Tempestade de areia</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Tempête de sable</French>
 		<German>
 			<Text>Sandsturm</Text>
@@ -564,7 +704,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_BLIZZARD</Tag>
 		<English>Blizzard</English>
-		<Portuguese>Nevasca</Portuguese>
+		
+		<Portuguese>
+			<Text>Nevasca</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Blizzard</Text>
 			<Gender>Male</Gender>
@@ -581,7 +726,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_FOG</Tag>
 		<English>Fog</English>
-		<Portuguese>Nevoeiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Nevoeiro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Brouillard</French>
 		<German>
 			<Text>Nebel</Text>
@@ -599,7 +749,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_REEF</Tag>
 		<English>Coral Reef</English>
-		<Portuguese>Recife de Coral</Portuguese>
+		
+		<Portuguese>
+			<Text>Recife de Coral</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Récif de coraux</French>
 		<German>
 			<Text>Korallenriff</Text>
@@ -617,7 +772,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_STONE_REEF</Tag>
 		<English>Rock Reef</English>
-		<Portuguese>Recife rochoso</Portuguese>
+		
+		<Portuguese>
+			<Text>Recife rochoso</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Récifs rocheux</French>
 		<German>
 			<Text>Felsenriff</Text>
@@ -635,7 +795,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_PEARL_REEF</Tag>
 		<English>Pearl Reef</English>
-		<Portuguese>Recife de Pérolas</Portuguese>
+		
+		<Portuguese>
+			<Text>Recife de Pérolas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Récif perlier</French>
 		<German>
 			<Text>Perlenriff</Text>
@@ -653,7 +818,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_KELP</Tag>
 		<English>Kelp</English>
-		<Portuguese>Alga marinha</Portuguese>
+		
+		<Portuguese>
+			<Text>Alga marinha</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Varech</French>
 		<German>
 			<Text>Seetang</Text>
@@ -671,7 +841,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_SEAGRASS</Tag>
 		<English>Seagrass</English>
-		<Portuguese>Ervas marinhas</Portuguese>
+		
+		<Portuguese>
+			<Text>Ervas marinhas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Sargasse</French>
 		<German>
 			<Text>Seegrass</Text>
@@ -689,7 +864,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_N</Tag>
 		<English>Northerly Current</English>
-		<Portuguese>Corrente Norte</Portuguese>
+		
+		<Portuguese>
+			<Text>Corrente Norte</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Courant vers le nord</French>
 		<German>
 			<Text>Nord Strömung</Text>
@@ -707,7 +887,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_S</Tag>
 		<English>Southerly Current</English>
-		<Portuguese>Corrente Sul</Portuguese>
+		
+		<Portuguese>
+			<Text>Corrente Sul</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Courant vers le sud</French>
 		<German>
 			<Text>Süd Strömung</Text>
@@ -725,7 +910,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_E</Tag>
 		<English>Easterly Current</English>
-		<Portuguese>Corrente Oriental</Portuguese>
+		
+		<Portuguese>
+			<Text>Corrente Oriental</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Courant vers l'est</French>
 		<German>
 			<Text>Ost Strömung</Text>
@@ -743,7 +933,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_W</Tag>
 		<English>Westerly Current</English>
-		<Portuguese>Corrente Oeste</Portuguese>
+		
+		<Portuguese>
+			<Text>Corrente Oeste</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Courant vers l'Ouest</French>
 		<German>
 			<Text>West Strömung</Text>
@@ -761,7 +956,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_NE</Tag>
 		<English>Nor'East Current</English>
-		<Portuguese>Corrente Nor'Leste</Portuguese>
+		
+		<Portuguese>
+			<Text>Corrente Nor'Leste</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Courant vers le Nord Est</French>
 		<German>
 			<Text>Nord-Ost Strömung</Text>
@@ -779,7 +979,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_NW</Tag>
 		<English>Nor'West Current</English>
-		<Portuguese>Corrente Noroeste</Portuguese>
+		
+		<Portuguese>
+			<Text>Corrente Noroeste</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Courant vers le Nord-Ouest</French>
 		<German>
 			<Text>Nord-West Strömung</Text>
@@ -797,7 +1002,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_SE</Tag>
 		<English>Sou'East Current</English>
-		<Portuguese>Corrente Sudeste</Portuguese>
+		
+		<Portuguese>
+			<Text>Corrente Sudeste</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Courant vers le Sud-Est</French>
 		<German>
 			<Text>Süd-Ost Strömung</Text>
@@ -815,7 +1025,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_SW</Tag>
 		<English>Sou'West Current</English>
-		<Portuguese>Corrente Sudoeste</Portuguese>
+		
+		<Portuguese>
+			<Text>Corrente Sudoeste</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Courant vers le Sud-Ouest</French>
 		<German>
 			<Text>Süd-West Strömung</Text>
@@ -833,7 +1048,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_LUSHGRASS</Tag>
 		<English>Lush Grass</English>
-		<Portuguese>Grama exuberante</Portuguese>
+		
+		<Portuguese>
+			<Text>Grama exuberante</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Herbes hautes</French>
 		<German>
 			<Text>Saftiges Gras</Text>
@@ -851,7 +1071,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_WILD_FLOWERS</Tag>
 		<English>Wild Flowers</English>
-		<Portuguese>Flores selvagens</Portuguese>
+		
+		<Portuguese>
+			<Text>Flores selvagens</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Fleurs sauvages</French>
 		<German>
 			<Text>Wilde Blumen</Text>
@@ -870,7 +1095,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_MEADOW</Tag>
 		<English>Hill Meadow</English>
-		<Portuguese>Prado da Colina</Portuguese>
+		
+		<Portuguese>
+			<Text>Prado da Colina</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Bocage de collines</French>
 		<German>
 			<Text>Weidelhügel</Text>
@@ -888,7 +1118,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_SHRUB</Tag>
 		<English>Shrubs</English>
-		<Portuguese>Arbustos</Portuguese>
+		
+		<Portuguese>
+			<Text>Arbustos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Buissons</French>
 		<German>
 			<Text>Sträuche</Text>
@@ -923,7 +1158,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_VENT_DEF</Tag>
 		<English>Unfavourable wind</English>
-		<Portuguese>Vento desfavorável</Portuguese>
+		
+		<Portuguese>
+			<Text>Vento desfavorável</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Vent défavorable</Text>
 			<Gender>Male</Gender>
@@ -956,7 +1196,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_VENT_FAV</Tag>
 		<English>Favourable wind</English>
-		<Portuguese>Vento favorável</Portuguese>
+		
+		<Portuguese>
+			<Text>Vento favorável</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Vent favorable</Text>
 			<Gender>Male</Gender>

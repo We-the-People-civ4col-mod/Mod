@@ -9,7 +9,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHURCH_SHORT_DESC</Tag>
 		<English>Church</English>
-		<Portuguese>Igreja</Portuguese>
+		
+		<Portuguese>
+			<Text>Igreja</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Eglise</Text>
 			<Gender>Male</Gender>
@@ -32,7 +37,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHURCH_ADJECTIVE</Tag>
 		<English>Church</English>
-		<Portuguese>Igreja</Portuguese>
+		
+		<Portuguese>
+			<Text>Igreja</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>ecclésiastique:ecclésiastique:ecclésiastiques:ecclésiastiques</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -47,7 +57,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARAWAK_ADJECTIVE</Tag>
 		<English>Arawak</English>
-		<Portuguese>Arawak</Portuguese>
+		
+		<Portuguese>
+			<Text>Arawak:Arawak</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>arawak:arawak:arawaks:arawaks</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -70,7 +85,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TUPI_ADJECTIVE</Tag>
 		<English>Tupi</English>
-		<Portuguese>Tupi</Portuguese>
+		
+		<Portuguese>
+			<Text>Tupi:Tupi</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>tupi:tupi:tupis:tupis</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -93,7 +113,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHEROKEE_ADJECTIVE</Tag>
 		<English>Cherokee</English>
-		<Portuguese>Cherokee</Portuguese>
+		
+		<Portuguese>
+			<Text>Cherokee:Cherokee</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>cherokee:cherokee:cherokees:cherokees</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -116,7 +141,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_IROQUOIS_ADJECTIVE</Tag>
 		<English>Iroquois</English>
-		<Portuguese>Iroqueses</Portuguese>
+		
+		<Portuguese>
+			<Text>Iroqueses:Iroqueses</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>iroquois:iroquois:iroquois:iroquois</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -139,7 +169,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SIOUX_ADJECTIVE</Tag>
 		<English>Sioux</English>
-		<Portuguese>Sioux</Portuguese>
+		
+		<Portuguese>
+			<Text>Sioux:Sioux</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>sioux:sioux:sioux:sioux</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -162,7 +197,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NEZ_PERCE_ADJECTIVE</Tag>
 		<English>Nez Perce</English>
-		<Portuguese>Nez Percé</Portuguese>
+		
+		<Portuguese>
+			<Text>Nez Percé:Nez Percé</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Nez Perce:Nez Perce:Nez Perce:Nez Perce</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -185,7 +225,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_APACHE_ADJECTIVE</Tag>
 		<English>Apache</English>
-		<Portuguese>Apache</Portuguese>
+		
+		<Portuguese>
+			<Text>Apache:Apache</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>apache:apache:apaches:apaches</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -212,10 +257,11 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
-			<Text>Asteca: Astecas</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
+			<Text>Asteca:Asteca:Astecas:Astecas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
 		</Portuguese>
 		<French>
 			<Text>aztec:aztèque:aztecs:aztèques</Text>
@@ -247,10 +293,11 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
-			<Text>Inca: Incas</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
+			<Text>Inca:Inca:Incas:Incas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
 		</Portuguese>
 		<French>
 			<Text>inca:inca:incas:incas</Text>
@@ -278,7 +325,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SHUAR_ADJECTIVE</Tag>
 		<English>Shuar</English>
-		<Portuguese>Shuar</Portuguese>
+		
+		<Portuguese>
+			<Text>Shuar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>shuar:shuar:shuars:shuars</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -301,7 +353,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SHUAR_SHORT_DESC</Tag>
 		<English>Shuar</English>
-		<Portuguese>Shuar</Portuguese>
+		
+		<Portuguese>
+			<Text>Shuar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Shuars</Text>
 			<Gender>Male</Gender>
@@ -324,7 +381,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SHUAR_DESC</Tag>
 		<English>Shuar</English>
-		<Portuguese>Shuar</Portuguese>
+		
+		<Portuguese>
+			<Text>Shuar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Shuars</Text>
 			<Gender>Male</Gender>
@@ -347,7 +409,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TEHUELCHE_ADJECTIVE</Tag>
 		<English>Tehuelche</English>
-		<Portuguese>Tehuelche</Portuguese>
+		
+		<Portuguese>
+			<Text>Tehuelche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>tehuelche:tehuelche:tehuelches:tehuelches</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -370,7 +437,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TEHUELCHE_SHORT_DESC</Tag>
 		<English>Tehuelche</English>
-		<Portuguese>Tehuelche</Portuguese>
+		
+		<Portuguese>
+			<Text>Tehuelche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tehuelche</Text>
 			<Gender>Male</Gender>
@@ -393,7 +465,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TEHUELCHE_DESC</Tag>
 		<English>Tehuelche</English>
-		<Portuguese>Tehuelche</Portuguese>
+		
+		<Portuguese>
+			<Text>Tehuelche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tehuelche</Text>
 			<Gender>Male</Gender>
@@ -416,7 +493,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MAYA_ADJECTIVE</Tag>
 		<English>Maya</English>
-		<Portuguese>Maia</Portuguese>
+		
+		<Portuguese>
+			<Text>Maia</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>maya:maya:mayas:mayas</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -439,7 +521,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MAYA_DESC</Tag>
 		<English>Maya Empire</English>
-		<Portuguese>Império Maia</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Maia</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire Maya</Text>
 			<Gender>Male</Gender>
@@ -462,7 +549,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MAYA_SHORT_DESC</Tag>
 		<English>Maya</English>
-		<Portuguese>Maia</Portuguese>
+		
+		<Portuguese>
+			<Text>Maia</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mayas</Text>
 			<Gender>Male</Gender>
@@ -485,7 +577,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_NORTH</Tag>
 		<English>Natives of North America</English>
-		<Portuguese>Nativos da América do Norte</Portuguese>
+		
+		<Portuguese>
+			<Text>Nativos da América do Norte</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Indigène:Indigènes</Text>
 			<Gender>Male</Gender>
@@ -906,7 +1003,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DEVOUT</Tag>
 		<English>Devout</English>
-		<Portuguese>Devoto</Portuguese>
+		
+		<Portuguese>
+			<Text>Devoto:Devota</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Dévôt:Dévote</Text>
 			<Gender>Male:Female</Gender>
@@ -985,7 +1087,12 @@
 	<!--<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_MARATHON_Old</Tag>
 		<English>Marathon, 2 Phasen</English>
-		<Portuguese>Maratona, 2 Fases</Portuguese>
+		
+		<Portuguese>
+			<Text>Maratona, 2 Fases</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Marathon, 2 phases</Text>
 			<Gender>Male</Gender>
@@ -1010,7 +1117,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_EPIC_Old</Tag>
 		<English>Epic, 2 Phasen</English>
-		<Portuguese>Épico, 2 fases</Portuguese>
+		
+		<Portuguese>
+			<Text>Épico, 2 fases</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Épique, 2 phases</Text>
 			<Gender>Male</Gender>
@@ -1035,7 +1147,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_NORMAL_Old</Tag>
 		<English>Normal, 2 Phasen</English>
-		<Portuguese>Normal, 2 fases</Portuguese>
+		
+		<Portuguese>
+			<Text>Normal, 2 fases</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Normale, 2 phases</Text>
 			<Gender>Male</Gender>
@@ -1060,7 +1177,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_QUICK_Old</Tag>
 		<English>Quick, 2 Phases</English>
-		<Portuguese>Rápido, 2 fases</Portuguese>
+		
+		<Portuguese>
+			<Text>Rápido, 2 fases</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Rapide, 2 phases</Text>
 			<Gender>Male</Gender>
@@ -1259,7 +1381,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_WORLD_MAP_STRING</Tag>
 		<English>New World Map</English>
-		<Portuguese>Novo Mapa Mundial</Portuguese>
+		
+		<Portuguese>
+			<Text>Novo Mapa Mundial</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Carte du Nouveau Monde</Text>
 			<Gender>Male</Gender>
@@ -1286,7 +1413,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WORLD_MAP</Tag>
 		<English>World Map</English>
-		<Portuguese>Mapa Mundial</Portuguese>
+		
+		<Portuguese>
+			<Text>Mapa Mundial</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Carte du monde</Text>
 			<Gender>Male</Gender>
@@ -1395,7 +1527,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_SWAMP</Tag>
 		<English>Swamp</English>
-		<Portuguese>Pântano</Portuguese>
+		
+		<Portuguese>
+			<Text>Pântano</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Marais:Marais</Text>
 			<Gender>Male:Male</Gender>
@@ -2561,7 +2698,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DENMARK_ADJECTIVE</Tag>
 		<English>Danish</English>
-		<Portuguese>dinamarquês</Portuguese>
+		
+		<Portuguese>
+			<Text>Dinamarquês:Dinamarquesa:Dinamarqueses:Dinamarquesas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>danois:danoise:danois:danoises</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2576,7 +2718,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DENMARK_EUROPE_ADJECTIVE</Tag>
 		<English>Royal Danish:Royal Danish</English>
-		<Portuguese>Dinamarquês Real: Dinamarquês Real</Portuguese>
+		
+		<Portuguese>
+			<Text>Dinamarquês Real:Dinamarquês Real:Dinamarquês Reais:Dinamarquês Reais</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>danois:danoise:danois:danoises</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2611,7 +2758,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DUTCH_ADJECTIVE</Tag>
 		<English>Dutch:Dutch</English>
-		<Portuguese>Holandês: Holandês</Portuguese>
+		
+		<Portuguese>
+			<Text>Holandês:Holandesa:Holandeses:Holandesas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>néerlandais:néerlandaise:néerlandais:néerlandaises</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2634,7 +2786,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DUTCH_DESC</Tag>
 		<English>Dutch Colonies</English>
-		<Portuguese>Colônias Holandesas</Portuguese>
+		
+		<Portuguese>
+			<Text>Colônias Holandesas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Colonies néerlandaises</Text>
 			<Gender>Female</Gender>
@@ -2657,7 +2814,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DUTCH_EUROPE_ADJECTIVE</Tag>
 		<English>Royal Dutch:Royal Dutch</English>
-		<Portuguese>Holandês Real: Holandês Real</Portuguese>
+		
+		<Portuguese>
+			<Text>Holandês Real:Holandês Real</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>néerlandais:néerlandaise:néerlandais:néerlandaises</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2684,10 +2846,11 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
-			<Text>Inglês:Inglês</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
+			<Text>Inglês:Inglesa:Ingleses:Inglesas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
 		</Portuguese>
 		<French>
 			<Text>anglais:anglaise:anglais:anglaises</Text>
@@ -2715,7 +2878,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_DESC</Tag>
 		<English>English Colonies</English>
-		<Portuguese>Colônias Inglesas</Portuguese>
+		
+		<Portuguese>
+			<Text>Colônias Inglesas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Colonies anglaises</Text>
 			<Gender>Female</Gender>
@@ -2738,7 +2906,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_EUROPE_ADJECTIVE</Tag>
 		<English>Royal English:Royal English</English>
-		<Portuguese>Inglês Real:Inglês Real</Portuguese>
+		
+		<Portuguese>
+			<Text>Inglês Real:Inglês Real</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>anglais:anglaise:anglais:anglaises</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2765,10 +2938,11 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
-			<Text>Francês: francês</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
+			<Text>Francês:Francesa:Franceses:Francesas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
 		</Portuguese>
 		<French>
 			<Text>français:française:français:françaises</Text>
@@ -2796,7 +2970,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_EUROPE_ADJECTIVE</Tag>
 		<English>Royal French:Royal French</English>
-		<Portuguese>Francês Real: Francês Real</Portuguese>
+		
+		<Portuguese>
+			<Text>Francês Real:Francês Real</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>français:française:français:françaises</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2819,7 +2998,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_DESC</Tag>
 		<English>French Colonies</English>
-		<Portuguese>Colônias Francesas</Portuguese>
+		
+		<Portuguese>
+			<Text>Colônias Francesas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Colonies françaises</Text>
 			<Gender>Female</Gender>
@@ -2864,7 +3048,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_ADJECTIVE</Tag>
 		<English>Portuguese</English>
-		<Portuguese>Português</Portuguese>
+		
+		<Portuguese>
+			<Text>Português:Portuguesa:Portugueses:Portuguesas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>portugais:portugaise:portugais:portugaises</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2883,7 +3072,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_PORTUGAL_EUROPE_ADJECTIVE</Tag>
 		<English>Royal Portuguese:Royal Portuguese</English>
-		<Portuguese>Português Real: Português Real</Portuguese>
+		
+		<Portuguese>
+			<Text>Português Real:Português Real:Português Reais:Português Reais</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>portugais:portugaise:portugais:portugaises</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2946,7 +3140,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SWEDEN_ADJECTIVE</Tag>
 		<English>Swedish</English>
-		<Portuguese>sueco</Portuguese>
+		
+		<Portuguese>
+			<Text>sueco:sueca:suecos:suecas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>suédois:suédoise:suédois:suédoises</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -2961,7 +3160,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SWEDEN_EUROPE_ADJECTIVE</Tag>
 		<English>Royal Swedish:Royal Swedish</English>
-		<Portuguese>Sueco Real: Sueco Real</Portuguese>
+		
+		<Portuguese>
+			<Text>Sueco Real:Sueco Real:Sueco Reais:Sueco Reais</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>suédois:suédoise:suédois:suédoises</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -3019,7 +3223,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_RUSSIA_ADJECTIVE</Tag>
 		<English>Russian</English>
-		<Portuguese>russo</Portuguese>
+		
+		<Portuguese>
+			<Text>russo:russa:russos:russas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>russe:russe:russes:russes</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -3034,7 +3243,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_RUSSIA_EUROPE_ADJECTIVE</Tag>
 		<English>Royal Russian:Royal Russian</English>
-		<Portuguese>Russo Real: Russo Real</Portuguese>
+		
+		<Portuguese>
+			<Text>Russo Real:Russo Real:Russo Reais:Russo Reais</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>russe:russe:russes:russes</Text>
 			<Gender>Male:Female:Male:Female</Gender>
@@ -3073,10 +3287,11 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
-			<Text>Espanhol:espanhol</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
+			<Text>Espanhol:Espanhola:Espanhóis:Espanholas</Text>
+			<Gender>Male:Female:Male:Female</Gender>
+			<Plural>0:0:1:1</Plural>
 		</Portuguese>
 		<French>
 			<Text>espagnol:espagnole:espagnols:espagnoles</Text>
@@ -3104,7 +3319,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SPAIN_DESC</Tag>
 		<English>Spanish Colonies</English>
-		<Portuguese>Colônias espanholas</Portuguese>
+		
+		<Portuguese>
+			<Text>Colônias espanholas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Colonies espagnoles</Text>
 			<Gender>Female</Gender>
@@ -3127,7 +3347,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SPAIN_EUROPE_ADJECTIVE</Tag>
 		<English>Royal Spanish:Royal Spanish</English>
-		<Portuguese>Espanhol Real:Espanhol Real</Portuguese>
+		
+		<Portuguese>
+			<Text>Espanhol Real:Espanhol Real</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>espagnol:espagnole:espagnols:espagnoles</Text>
 			<Gender>Male:Female:Male:Female</Gender>

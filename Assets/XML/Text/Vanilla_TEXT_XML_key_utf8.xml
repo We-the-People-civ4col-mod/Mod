@@ -7,7 +7,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCOMBAT_NAVAL</Tag>
 		<English>Naval Units</English>
-		<Portuguese>Unidades Navais</Portuguese>
+		
+		<Portuguese>
+			<Text>Unidades Navais</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Unités navales</Text>
 			<Gender>Female</Gender>
@@ -32,7 +37,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_MARATHON</Tag>
 		<English>Marathon</English>
-		<Portuguese>Maratona</Portuguese>
+		
+		<Portuguese>
+			<Text>Maratona</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Marathon</Text>
 			<Gender>Male</Gender>
@@ -57,7 +67,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_EPIC</Tag>
 		<English>Epic</English>
-		<Portuguese>Épico</Portuguese>
+		
+		<Portuguese>
+			<Text>Épico</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Épique</Text>
 			<Gender>Male</Gender>
@@ -82,7 +97,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_NORMAL</Tag>
 		<English>Normal</English>
-		<Portuguese>Normais</Portuguese>
+		
+		<Portuguese>
+			<Text>Normais</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Normale</Text>
 			<Gender>Male</Gender>
@@ -107,7 +127,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_QUICK</Tag>
 		<English>Quick</English>
-		<Portuguese>Rápido</Portuguese>
+		
+		<Portuguese>
+			<Text>Rápido</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Rapide</Text>
 			<Gender>Male</Gender>
@@ -132,7 +157,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_TINY</Tag>
 		<English>Tiny</English>
-		<Portuguese>Minúsculo</Portuguese>
+		
+		<Portuguese>
+			<Text>Minúsculo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Minuscule</Text>
 			<Gender>Male</Gender>
@@ -157,7 +187,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_SMALL</Tag>
 		<English>Small</English>
-		<Portuguese>Pequeno</Portuguese>
+		
+		<Portuguese>
+			<Text>Pequeno</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Petit</Text>
 			<Gender>Male</Gender>
@@ -182,7 +217,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_STANDARD</Tag>
 		<English>Standard</English>
-		<Portuguese>Padrão</Portuguese>
+		
+		<Portuguese>
+			<Text>Padrão</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Normal</Text>
 			<Gender>Male</Gender>
@@ -207,7 +247,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_LARGE</Tag>
 		<English>Large</English>
-		<Portuguese>Grande</Portuguese>
+		
+		<Portuguese>
+			<Text>Grande</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Grand</Text>
 			<Gender>Male</Gender>
@@ -232,7 +277,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_HUGE</Tag>
 		<English>Huge</English>
-		<Portuguese>Enorme</Portuguese>
+		
+		<Portuguese>
+			<Text>Enorme</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Immense</Text>
 			<Gender>Male</Gender>
@@ -257,7 +307,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_AZTEC_DESC</Tag>
 		<English>Aztec Empire</English>
-		<Portuguese>Império Asteca</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Asteca</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire aztèque</Text>
 			<Gender>Male</Gender>
@@ -282,7 +337,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_INCA_DESC</Tag>
 		<English>Incan Empire</English>
-		<Portuguese>Império Inca</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Inca</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire inca</Text>
 			<Gender>Male</Gender>
@@ -307,7 +367,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BARBARIAN_DESC</Tag>
 		<English>Barbarian State</English>
-		<Portuguese>Estado Bárbaro</Portuguese>
+		
+		<Portuguese>
+			<Text>Estado Bárbaro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire barbare</Text>
 			<Gender>Male</Gender>
@@ -332,7 +397,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_TITLE_GOLD</Tag>
 		<English>Gold</English>
-		<Portuguese>Ouro</Portuguese>
+		
+		<Portuguese>
+			<Text>Ouro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Or</Text>
 			<Gender>Male</Gender>
@@ -357,7 +427,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_MAP</Tag>
 		<English>Map</English>
-		<Portuguese>Mapa</Portuguese>
+		
+		<Portuguese>
+			<Text>Mapa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Carte</Text>
 			<Gender>Female</Gender>
@@ -2146,7 +2221,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SILVERMINER</Tag>
 		<English>Expert Silver Miner:Expert Silver Miners</English>
-		<Portuguese>Mineiro de prata especialista:Mineiros de prata especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Mineiro de prata especialista:Mineiros de prata especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mineur d'argent pro.:Mineurs d'argent pro.</Text>
 			<Gender>Male</Gender>
@@ -2167,7 +2247,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VETERAN</Tag>
 		<English>Veteran Soldier:Veteran Soldiers</English>
-		<Portuguese>Soldado Veterano:Soldados Veteranos</Portuguese>
+		
+		<Portuguese>
+			<Text>Soldado Veterano:Soldados Veteranos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Soldat vétéran:Soldats vétérans</Text>
 			<Gender>Male</Gender>
@@ -2188,7 +2273,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MAN_O_WAR</Tag>
 		<English>Man-o-War:Man-o-Wars</English>
-		<Portuguese>Man-o-War:Man-o-Wars</Portuguese>
+		
+		<Portuguese>
+			<Text>Man-o-War:Man-o-Wars</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Vaisseau de guerre:Vaisseaux de guerre</Text>
 			<Gender>Male</Gender>
@@ -2209,7 +2299,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CANNON</Tag>
 		<English>Cannon:Cannons</English>
-		<Portuguese>Canhão: Canhões</Portuguese>
+		
+		<Portuguese>
+			<Text>Canhão: Canhões</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Canon:Canons</Text>
 			<Gender>Male</Gender>
@@ -2230,7 +2325,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FOOD</Tag>
 		<English>Food</English>
-		<Portuguese>Comida</Portuguese>
+		
+		<Portuguese>
+			<Text>Comida</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Nourriture</Text>
 			<Gender>Female</Gender>
@@ -2251,7 +2351,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ORE</Tag>
 		<English>Ore</English>
-		<Portuguese>Minério</Portuguese>
+		
+		<Portuguese>
+			<Text>Minério</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Minerai de fer:Minerais de fer</Text>
 			<Gender>Male</Gender>
@@ -2272,7 +2377,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SILVER</Tag>
 		<English>Silver</English>
-		<Portuguese>Prata</Portuguese>
+		
+		<Portuguese>
+			<Text>Prata</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Argent</Text>
 			<Gender>Male</Gender>
@@ -2293,7 +2403,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TOOLS</Tag>
 		<English>Tools</English>
-		<Portuguese>Ferramentas</Portuguese>
+		
+		<Portuguese>
+			<Text>Ferramentas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Outil:Outils</Text>
 			<Gender>Male</Gender>
@@ -2314,7 +2429,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MUSKETS</Tag>
 		<English>Guns</English>
-		<Portuguese>Armas</Portuguese>
+		
+		<Portuguese>
+			<Text>Armas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mousquet:Mousquets</Text>
 			<Gender>Male</Gender>
@@ -2335,7 +2455,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HORSES</Tag>
 		<English>Horses</English>
-		<Portuguese>Cavalos</Portuguese>
+		
+		<Portuguese>
+			<Text>Cavalos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cheval:Chevaux</Text>
 			<Gender>Male</Gender>
@@ -2455,7 +2580,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ENGLAND_EUROPE_DESC</Tag>
 		<English>English Empire</English>
-		<Portuguese>Império Inglês</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Inglês</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire anglais</Text>
 			<Gender>Male</Gender>
@@ -2476,7 +2606,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_FRANCE_EUROPE_DESC</Tag>
 		<English>French Empire</English>
-		<Portuguese>Império Francês</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Francês</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>L'Empire français</Text>
 			<Gender>Male</Gender>
@@ -2497,7 +2632,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SPAIN_EUROPE_DESC</Tag>
 		<English>Spanish Empire</English>
-		<Portuguese>Império Espanhol</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Espanhol</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire espagnol</Text>
 			<Gender>Male</Gender>
@@ -2518,7 +2658,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_DUTCH_EUROPE_DESC</Tag>
 		<English>Dutch Empire</English>
-		<Portuguese>Império Holandês</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Holandês</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire néerlandais</Text>
 			<Gender>Male</Gender>
@@ -2539,7 +2684,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CONQUISTADORS</Tag>
 		<English>Conquistador</English>
-		<Portuguese>Conquistador</Portuguese>
+		
+		<Portuguese>
+			<Text>Conquistador:Conquistador</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Conquistador:Conquistador</Text>
 			<Gender>Male:Female</Gender>
@@ -2560,7 +2710,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_BATBADOS</Tag>
 		<English>Barbados</English>
-		<Portuguese>Barbados</Portuguese>
+		
+		<Portuguese>
+			<Text>Barbados</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>La Barbade</Text>
 			<Gender>Female</Gender>
@@ -2581,7 +2736,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_NEW_PORT</Tag>
 		<English>Newport</English>
-		<Portuguese>Newport</Portuguese>
+		
+		<Portuguese>
+			<Text>Newport</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Newport</Text>
 			<Gender>Female</Gender>
@@ -2602,7 +2762,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_HOSTILE_NATIVES</Tag>
 		<English>Hostile Natives</English>
-		<Portuguese>Nativos hostis</Portuguese>
+		
+		<Portuguese>
+			<Text>Nativos hostis</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Indigène hostile:Indigènes hostiles</Text>
 			<Gender>Male</Gender>
@@ -2623,7 +2788,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_LIBERTY</Tag>
 		<English>Liberty Bells, Revolution and Victory</English>
-		<Portuguese>Sinos da Liberdade, Revolução e Vitória</Portuguese>
+		
+		<Portuguese>
+			<Text>Sinos da Liberdade, Revolução e Vitória</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cloches de la liberté, Révolution et Victoire</Text>
 			<Gender>Female</Gender>
@@ -2644,7 +2814,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TREASURE</Tag>
 		<English>Treasury</English>
-		<Portuguese>Tesouro</Portuguese>
+		
+		<Portuguese>
+			<Text>Tesouro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Trésor</Text>
 			<Gender>Male</Gender>
@@ -2665,7 +2840,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PROSPEROUS</Tag>
 		<English>Prosperous</English>
-		<Portuguese>Próspero</Portuguese>
+		
+		<Portuguese>
+			<Text>Próspero:Próspera</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Prospère:Prospère</Text>
 			<Gender>Male:Female</Gender>
@@ -2686,7 +2866,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_IMPRESSIONABLE</Tag>
 		<English>Impressionable</English>
-		<Portuguese>Impressionável</Portuguese>
+		
+		<Portuguese>
+			<Text>Impressionável:Impressionável</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Impressionable:Impressionable</Text>
 			<Gender>Male:Female</Gender>
@@ -2707,7 +2892,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_INDULGENT</Tag>
 		<English>Indulgent</English>
-		<Portuguese>Indulgente</Portuguese>
+		
+		<Portuguese>
+			<Text>Indulgente:Indulgente</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Indulgent:Indulgente</Text>
 			<Gender>Male:Female</Gender>
@@ -2728,7 +2918,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GRACIOUS</Tag>
 		<English>Gracious</English>
-		<Portuguese>Gracioso</Portuguese>
+		
+		<Portuguese>
+			<Text>Gracioso:Graciosa</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>0:0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Courtois:Courtoise</Text>
 			<Gender>Male:Female</Gender>
@@ -2749,7 +2944,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GREAT_PERSON_RUYTER</Tag>
 		<English>Jose Miguel Carrera</English>
-		<Portuguese>José Miguel Carrera</Portuguese>
+		
+		<Portuguese>
+			<Text>José Miguel Carrera</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>José Miguel Carrera</Text>
 			<Gender>Male</Gender>
@@ -2770,7 +2970,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_NEW_WORLD</Tag>
 		<English>The New World</English>
-		<Portuguese>O Novo Mundo</Portuguese>
+		
+		<Portuguese>
+			<Text>O Novo Mundo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Le Nouveau Monde</Text>
 			<Gender>Male</Gender>
@@ -2791,7 +2996,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REGULAR</Tag>
 		<English>Regular:Regulars</English>
-		<Portuguese>Regular: Regulares</Portuguese>
+		
+		<Portuguese>
+			<Text>Regular: Regulares</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Soldat de métier:Soldats de métier</Text>
 			<Gender>Male</Gender>
@@ -2812,7 +3022,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ARTILLERY</Tag>
 		<English>Artillery:Artillery</English>
-		<Portuguese>Artilharia: Artilharia</Portuguese>
+		
+		<Portuguese>
+			<Text>Artilharia: Artilharia</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Artillerie:Artillerie</Text>
 			<Gender>Female</Gender>
@@ -2833,7 +3048,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_CANNISTER_SHOTI</Tag>
 		<English>Canister Shot I</English>
-		<Portuguese>Canister Shot I</Portuguese>
+		
+		<Portuguese>
+			<Text>Canister Shot I</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Boulet I</Text>
 			<Gender>Male</Gender>
@@ -2854,7 +3074,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_ST_JOHNS</Tag>
 		<English>St. John's</English>
-		<Portuguese>São João</Portuguese>
+		
+		<Portuguese>
+			<Text>São João</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Saint John's</Text>
 			<Gender>Female</Gender>
@@ -2875,7 +3100,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TS_LTAH</Tag>
 		<English>Ts L' tah</English>
-		<Portuguese>Ts L' tah</Portuguese>
+		
+		<Portuguese>
+			<Text>Ts L' tah</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ts L' tah</Text>
 			<Gender>Female</Gender>
@@ -2896,7 +3126,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_T_YADNLIN</Tag>
 		<English>T' Yadnlin</English>
-		<Portuguese>T' Yadnlin</Portuguese>
+		
+		<Portuguese>
+			<Text>T' Yadnlin</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>T' Yadnlin</Text>
 			<Gender>Female</Gender>

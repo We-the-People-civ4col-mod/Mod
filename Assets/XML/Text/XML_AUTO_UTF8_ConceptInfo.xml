@@ -41,7 +41,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_BORDERS</Tag>
 		<English>Borders and Culture</English>
-		<Portuguese>Fronteiras e Cultura</Portuguese>
+		
+		<Portuguese>
+			<Text>Fronteiras e Cultura</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Frontières et culture</Text>
 			<Gender>Female</Gender>
@@ -73,7 +78,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_BUILDINGS</Tag>
 		<English>Buildings</English>
-		<Portuguese>Edifícios</Portuguese>
+		
+		<Portuguese>
+			<Text>Edifícios</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiment:Bâtiments</Text>
 			<Gender>Male</Gender>
@@ -141,7 +151,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_CHURCH</Tag>
 		<English>The Church</English>
-		<Portuguese>A Igreja</Portuguese>
+		
+		<Portuguese>
+			<Text>A Igreja</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>L'Église</Text>
 			<Gender>Female</Gender>
@@ -174,7 +189,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_COMBAT</Tag>
 		<English>Combat</English>
-		<Portuguese>Combate</Portuguese>
+		
+		<Portuguese>
+			<Text>Combate</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Combat</Text>
 			<Gender>Male</Gender>
@@ -206,7 +226,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DIPLOMACY</Tag>
 		<English>Diplomacy</English>
-		<Portuguese>Diplomacia</Portuguese>
+		
+		<Portuguese>
+			<Text>Diplomacia</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Diplomatie</Text>
 			<Gender>Female</Gender>
@@ -256,7 +281,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_ECONOMY</Tag>
 		<English>Economy</English>
-		<Portuguese>Economia</Portuguese>
+		
+		<Portuguese>
+			<Text>Economia</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Economie</Text>
 			<Gender>Female</Gender>
@@ -288,7 +318,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_EUROPE</Tag>
 		<English>Europe</English>
-		<Portuguese>Europa</Portuguese>
+		
+		<Portuguese>
+			<Text>Europa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Europe</Text>
 			<Gender>Female</Gender>
@@ -338,7 +373,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_FATHERS</Tag>
 		<English>Founding Fathers</English>
-		<Portuguese>Pais Fundadores</Portuguese>
+		
+		<Portuguese>
+			<Text>Pais Fundadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Pères fondateurs</Text>
 			<Gender>Male</Gender>
@@ -370,7 +410,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_FOOD</Tag>
 		<English>Food</English>
-		<Portuguese>Comida</Portuguese>
+		
+		<Portuguese>
+			<Text>Comida</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Nourriture</Text>
 			<Gender>Female</Gender>
@@ -418,7 +463,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_GREAT_GENERALS</Tag>
 		<English>Great Generals and Admirals</English>
-		<Portuguese>Grandes generais e almirantes</Portuguese>
+		
+		<Portuguese>
+			<Text>Grandes generais e almirantes</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Généraux illustres</Text>
 			<Gender>Male</Gender>
@@ -486,7 +536,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_IMMIGRATION</Tag>
 		<English>Emigration</English>
-		<Portuguese>Emigração</Portuguese>
+		
+		<Portuguese>
+			<Text>Emigração</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Émigration</Text>
 			<Gender>Female</Gender>
@@ -517,7 +572,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_IMPROVEMENTS</Tag>
 		<English>Pioneers and Improvements</English>
-		<Portuguese>Pioneiros e melhorias</Portuguese>
+		
+		<Portuguese>
+			<Text>Pioneiros e melhorias</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Améliorations</Text>
 			<Gender>Female</Gender>
@@ -564,7 +624,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_LEADERS</Tag>
 		<English>Leaders</English>
-		<Portuguese>Líderes</Portuguese>
+		
+		<Portuguese>
+			<Text>Líderes</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Dirigeants</Text>
 			<Gender>Male</Gender>
@@ -612,7 +677,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_MISSIONARIES</Tag>
 		<English>Missionaries</English>
-		<Portuguese>Missionários</Portuguese>
+		
+		<Portuguese>
+			<Text>Missionários</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Missionaires</Text>
 			<Gender>Male</Gender>
@@ -676,7 +746,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_MOVEMENT</Tag>
 		<English>Movement</English>
-		<Portuguese>Movimento</Portuguese>
+		
+		<Portuguese>
+			<Text>Movimento</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mouvement</Text>
 			<Gender>Male</Gender>
@@ -708,7 +783,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_NATIVES</Tag>
 		<English>Natives</English>
-		<Portuguese>Nativos</Portuguese>
+		
+		<Portuguese>
+			<Text>Nativos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Indigènes</Text>
 			<Gender>Male</Gender>
@@ -806,7 +886,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_THE_NEW_WORLD</Tag>
 		<English>The New World</English>
-		<Portuguese>O Novo Mundo</Portuguese>
+		
+		<Portuguese>
+			<Text>O Novo Mundo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Le Nouveau Monde</Text>
 			<Gender>Male</Gender>
@@ -873,7 +958,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_PRODUCTION</Tag>
 		<English>Production</English>
-		<Portuguese>Produção</Portuguese>
+		
+		<Portuguese>
+			<Text>Produção</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Production</Text>
 			<Gender>Female</Gender>
@@ -904,7 +994,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_PROFESSIONS</Tag>
 		<English>Professions</English>
-		<Portuguese>Profissões</Portuguese>
+		
+		<Portuguese>
+			<Text>Profissões</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Profession:Professions</Text>
 			<Gender>Female</Gender>
@@ -935,7 +1030,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_PROMOTIONS</Tag>
 		<English>Promotions</English>
-		<Portuguese>Promoções</Portuguese>
+		
+		<Portuguese>
+			<Text>Promoções</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Promotion:Promotions</Text>
 			<Gender>Female</Gender>
@@ -1035,7 +1135,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_SETTLEMENTS</Tag>
 		<English>Settlements</English>
-		<Portuguese>Colônias</Portuguese>
+		
+		<Portuguese>
+			<Text>Colônias</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Colonie:Colonies</Text>
 			<Gender>Female</Gender>
@@ -1098,7 +1203,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_SPECIALISTS</Tag>
 		<English>Specialists</English>
-		<Portuguese>Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Spécialistes</Text>
 			<Gender>Male</Gender>
@@ -1164,7 +1274,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TRADE</Tag>
 		<English>Trade</English>
-		<Portuguese>Comércio</Portuguese>
+		
+		<Portuguese>
+			<Text>Comércio</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Commerce</Text>
 			<Gender>Male</Gender>
@@ -1195,7 +1310,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TRADE_ROUTE</Tag>
 		<English>Route Planning</English>
-		<Portuguese>Planejamento de rota</Portuguese>
+		
+		<Portuguese>
+			<Text>Planejamento de rota</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Routes commerciales</Text>
 			<Gender>Male</Gender>
@@ -1241,7 +1361,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TRAINING</Tag>
 		<English>Education</English>
-		<Portuguese>Educação</Portuguese>
+		
+		<Portuguese>
+			<Text>Educação</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ecoles, académies et universités</Text>
 			<Gender>Male</Gender>
@@ -1272,7 +1397,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TRANSPORT</Tag>
 		<English>Transport</English>
-		<Portuguese>Transporte</Portuguese>
+		
+		<Portuguese>
+			<Text>Transporte</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Transport</Text>
 			<Gender>Male</Gender>
@@ -1303,7 +1433,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_UNITS</Tag>
 		<English>Units</English>
-		<Portuguese>Unidades</Portuguese>
+		
+		<Portuguese>
+			<Text>Unidades</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Unité:Unités</Text>
 			<Gender>Female</Gender>
@@ -1334,7 +1469,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_VICTORY</Tag>
 		<English>Victory</English>
-		<Portuguese>Vitória</Portuguese>
+		
+		<Portuguese>
+			<Text>Vitória</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Victoire</Text>
 			<Gender>Female</Gender>
@@ -1365,7 +1505,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_VISIBILITY</Tag>
 		<English>Visibility and Exploration</English>
-		<Portuguese>Visibilidade e Exploração</Portuguese>
+		
+		<Portuguese>
+			<Text>Visibilidade e Exploração</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Visibilité et Exploration</Text>
 			<Gender>Female</Gender>
@@ -1396,7 +1541,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_WAR</Tag>
 		<English>War</English>
-		<Portuguese>Guerra</Portuguese>
+		
+		<Portuguese>
+			<Text>Guerra</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Guerre</Text>
 			<Gender>Female</Gender>
