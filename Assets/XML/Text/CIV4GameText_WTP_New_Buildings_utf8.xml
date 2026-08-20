@@ -75,7 +75,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CONFECTIONER</Tag>
 		<English>Confectioner</English>
-		<Portuguese>Confeiteiro</Portuguese>
+		<Portuguese>Confeitaria</Portuguese>
 		<French>Confiseur</French>
 		<German>
 			<Text>Konditor</Text>
@@ -208,7 +208,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_LEATHER_PADDER</Tag>
 		<English>Leatherworker</English>
-		<Portuguese>Couro</Portuguese>
+		<Portuguese>Marroquinaria</Portuguese>
 		<French>Maroquinier</French>
 		<German>
 			<Text>Lederpolsterei</Text>
@@ -344,7 +344,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_OIL_TRADER</Tag>
 		<English>Cooking Oil Trader</English>
-		<Portuguese>Comerciante de óleo de cozinha</Portuguese>
+		<Portuguese>Comércio de óleo</Portuguese>
 		<French>Marchand d'huile</French>
 		<German>
 			<Text>Speiseölhändler</Text>
@@ -750,7 +750,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_TAILOR</Tag>
 		<English>Tailor</English>
-		<Portuguese>Alfaiate</Portuguese>
+		<Portuguese>Alfaiataria</Portuguese>
 		<German>
 			<Text>Schneiderei</Text>
 			<Gender>Female</Gender>
@@ -879,7 +879,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_BLACK_POWDER</Tag>
 		<English>Powder Shed</English>
-		<Portuguese>Galpão de pólvora</Portuguese>
+		<Portuguese>Paiol de pólvora</Portuguese>
 		<German>
 			<Text>Pulvermühle</Text>
 			<Gender>Female</Gender>
@@ -1010,7 +1010,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_BAKER</Tag>
 		<English>Baker</English>
-		<Portuguese>Padeiro</Portuguese>
+		<Portuguese>Padaria</Portuguese>
 		<French>Boulanger</French>
 		<German>Bäcker</German>
 		<Italian>Fornaio</Italian>
