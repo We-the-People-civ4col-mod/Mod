@@ -11,7 +11,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_AUTOMATE</Tag>
 		<English>Automate the unit</English>
-		<Portuguese>Automatize a unidade</Portuguese>
+		<Portuguese>Automatizar unidade</Portuguese>
 		<French>Automatiser l'unité</French>
 		<German>Einheit automatisieren</German>
 		<Italian>Automatizza l'unità</Italian>
@@ -198,7 +198,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_IGNORE_DANGER</Tag>
 		<English>Ignore danger</English>
-		<Portuguese>Ignore o perigo</Portuguese>
+		<Portuguese>Ignorar perigo</Portuguese>
 		<French>Ignorer les ennemis en vue</French>
 		<German>Feinde in Sichtweite ignorieren</German>
 		<Italian>Ignora i nemici in vista</Italian>
@@ -238,7 +238,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_LEARN</Tag>
 		<English>Learn skill</English>
-		<Portuguese>Aprenda habilidade</Portuguese>
+		<Portuguese>Aprender habilidade</Portuguese>
 		<French>Apprendre une technique</French>
 		<German>Fähigkeit lernen</German>
 		<Italian>Impara abilità</Italian>
@@ -380,7 +380,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SAIL_TO_AFRICA</Tag>
 		<English>Sail to Africa</English>
-		<Portuguese>Navegue para a África</Portuguese>
+		<Portuguese>Navegar para a África</Portuguese>
 		<French>Naviguer vers l'Afrique</French>
 		<German>Nach Afrika segeln</German>
 		<Italian>Fai vela per l'Africa</Italian>
@@ -400,7 +400,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SAIL_TO_EUROPE</Tag>
 		<English>Sail to Europe</English>
-		<Portuguese>Navegue para a Europa</Portuguese>
+		<Portuguese>Navegar para a Europa</Portuguese>
 		<French>Naviguer vers l'Europe</French>
 		<German>Nach Europa segeln</German>
 		<Italian>Fai vela per l'Europa</Italian>
@@ -420,7 +420,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SAIL_TO_PORT_ROYAL</Tag>
 		<English>Sail to Port Royal</English>
-		<Portuguese>Navegue para Port Royal</Portuguese>
+		<Portuguese>Navegar para Port Royal</Portuguese>
 		<French>Naviguer vers Port Royal</French>
 		<German>Nach Port Royal segeln</German>
 		<Italian>Fai vela per Port Royal</Italian>
@@ -440,7 +440,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SPEAK_WITH_CHIEF</Tag>
 		<English>Speak with chief</English>
-		<Portuguese>Fale com o chefe</Portuguese>
+		<Portuguese>Falar com o chefe</Portuguese>
 		<French>Parler avec le chef</French>
 		<German>Mit dem Häuptling sprechen</German>
 		<Italian>Parla col capo</Italian>
@@ -460,7 +460,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_STIR_UP_NATIVES</Tag>
 		<English>Stir up Natives</English>
-		<Portuguese>Agite os nativos</Portuguese>
+		<Portuguese>Agitar nativos</Portuguese>
 		<French>Provoquer les indigènes</French>
 		<German>Ureinwohner aufstacheln</German>
 		<Italian>Incitare i nativi</Italian>
@@ -480,7 +480,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_STOP_AUTOMATION</Tag>
 		<English>Stop automation</English>
-		<Portuguese>Pare a automação</Portuguese>
+		<Portuguese>Parar automação</Portuguese>
 		<French>Annuler l'automatisation</French>
 		<German>Automatisierung stoppen</German>
 		<Italian>Interrompi l'automazione</Italian>
@@ -540,7 +540,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_UPGRADE</Tag>
 		<English>Upgrade unit</English>
-		<Portuguese>Unidade de atualização</Portuguese>
+		<Portuguese>Atualizar unidade</Portuguese>
 		<French>Améliorer l'unité</French>
 		<German>Einheit modernisieren</German>
 		<Italian>Migliora unità</Italian>
@@ -553,7 +553,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_WAKE</Tag>
 		<English>Wake the unit</English>
-		<Portuguese>Acorde a unidade</Portuguese>
+		<Portuguese>Acordar unidade</Portuguese>
 		<French>Réveiller l'unité</French>
 		<German>Einheit wecken</German>
 		<Italian>Sveglia l'unità</Italian>
@@ -573,7 +573,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_YIELD_TRADE</Tag>
 		<English>Trade with settlement</English>
-		<Portuguese>Negocie com colônia</Portuguese>
+		<Portuguese>Negociar com colônia</Portuguese>
 		<French>Commercer avec la colonie</French>
 		<German>Mit Siedlung Handel treiben</German>
 		<Italian>Commercia con l'insediamento</Italian>
@@ -633,7 +633,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_USE_CONSTRUCTION_SUPPLIES</Tag>
 		<English>Use Construction Supplies</English>
-		<Portuguese>Use materiais de construção</Portuguese>
+		<Portuguese>Usar materiais de construção</Portuguese>
 		<German>Baumaterial verwenden</German>
 		<Russian>Использовать Строительные материалы</Russian>
 	</TEXT>
