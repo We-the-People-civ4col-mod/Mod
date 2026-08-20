@@ -1485,7 +1485,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Master poultry butchers[COLOR_REVERT] achieve particularly high yields of [LINK=YIELD_FOOD]food[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] when [LINK=PROFESSION_BUTCHER_CHICKEN]slaughtering[\LINK] [LINK=YIELD_CHICKEN]chickens[\LINK] in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK].</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Mestres açougueiros[COLOR_REVERT] alcançam recursos particularmente altos de [LINK=YIELD_FOOD]comida[\LINK] e [LINK=YIELD_DOWNS]baixo[\LINK] quando [LINK=PROFESSION_BUTCHER_CHICKEN]abatem[\LINK] [LINK=YIELD_CHICKEN]frangos[\LINK] no [LINK=BUILDING_BUTCHERS_HOUSE]açougue[\LINK].</Portuguese>
+		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Mestres açougueiros[COLOR_REVERT] alcançam recursos particularmente altos de [LINK=YIELD_FOOD]comida[\LINK] e [LINK=YIELD_DOWNS]penugem[\LINK] quando [LINK=PROFESSION_BUTCHER_CHICKEN]abatem[\LINK] [LINK=YIELD_CHICKEN]frangos[\LINK] no [LINK=BUILDING_BUTCHERS_HOUSE]açougue[\LINK].</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Meister-Geflügelschlachter[COLOR_REVERT] erzielen beim [LINK=PROFESSION_BUTCHER_CHICKEN]Schlachten[\LINK] von [LINK=YIELD_CHICKEN]Hühnern[\LINK] im [LINK=BUILDING_BUTCHERS_HOUSE]Haus des Schlachters[\LINK] besonders hohe Erträge von [LINK=YIELD_FOOD]Nahrung[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK].</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Baromfihentes Mester[COLOR_REVERT] különösen magas hozamot ér el [LINK=YIELD_FOOD] élelem[\LINK] és [LINK=YIELD_DOWNS]pehelytoll[\LINK] előállításában, ha [LINK=YIELD_CHICKEN]csirkéket[\LINK] [LINK=PROFESSION_BUTCHER_CHICKEN] vág le[\LINK]  a [LINK=BUILDING_BUTCHERS_HOUSE]hentesboltban[\LINK].</Hungarian>
 	</TEXT>

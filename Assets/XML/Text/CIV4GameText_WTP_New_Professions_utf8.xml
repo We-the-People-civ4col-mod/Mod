@@ -1607,7 +1607,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Estofador (para baixo):Estofadores (para baixo)</Text>
+			<Text>Estofador (penugem):Estofadores (penugem)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2120,7 +2120,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_BUTCHER_CHICKEN_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Chicken butchers[COLOR_REVERT] can work in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK] or one of its upgrades to produce [LINK=YIELD_FOOD]chicken meat[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] from [LINK=YIELD_CHICKEN]chickens[\LINK]. [LINK=UNIT_POULTRY_BUTCHER]Master poultry butchers[\LINK] excel at this craft, and can greatly boost your production of chicken meat.</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Açougueiros de frango[COLOR_REVERT] podem trabalhar no [LINK=BUILDING_BUTCHERS_HOUSE]açougue[\LINK] ou em uma de suas atualizações para produzir [LINK=YIELD_FOOD]carne de frango[\LINK] e [LINK=YIELD_DOWNS]down[\LINK] de [LINK=YIELD_CHICKEN]frangos[\LINK]. [LINK=UNIT_POULTRY_BUTCHER]Mestres açougueiros[\LINK] são excelentes nesse ofício e podem aumentar muito sua produção de carne de frango.</Portuguese>
+		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Açougueiros de frango[COLOR_REVERT] podem trabalhar no [LINK=BUILDING_BUTCHERS_HOUSE]açougue[\LINK] ou em uma de suas atualizações para produzir [LINK=YIELD_FOOD]carne de frango[\LINK] e [LINK=YIELD_DOWNS]penugem[\LINK] de [LINK=YIELD_CHICKEN]frangos[\LINK]. [LINK=UNIT_POULTRY_BUTCHER]Mestres açougueiros[\LINK] são excelentes nesse ofício e podem aumentar muito sua produção de carne de frango.</Portuguese>
 		<French>Les [COLOR_HIGHLIGHT_TEXT]bouchers de poulets[COLOR_REVERT]peuvent travailler dans la [LINK=BUILDING_BUTCHERS_HOUSE]boucherie[\LINK] ou l'une de ses améliorations pour produire de la [LINK=YIELD_FOOD]viande de poulet[\LINK] et du [LINK=YIELD_DOWNS]duvet de poulets[\LINK] à partir de [LINK=YIELD_CHICKEN]poulets[\LINK]. Les [LINK=UNIT_POULTRY_BUTCHER]maîtres bouchers de volailles[\LINK] excellent dans ce domaine et peuvent considérablement augmenter votre production de viande de poulet.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Geflügelschlachter[COLOR_REVERT] können im [LINK=BUILDING_BUTCHERS_HOUSE]Haus des Schlachters[\LINK] oder einer seiner Erweiterungen arbeiten, um [LINK=YIELD_FOOD]Hühnerfleisch[\LINK] [LINK=YIELD_DOWNS]Hühnerfedern[\LINK] durch die Schlachtung von [LINK=YIELD_CHICKEN]Hühnern[\LINK] zu produzieren. [LINK=UNIT_POULTRY_BUTCHER]Meister-Geflügelschlachter[\LINK] beherrschen dieses Handwerk hervorragend und können die Produktion von Hühnerfleisch erheblich steigern.</German>
 		<Italian>I [COLOR_HIGHLIGHT_TEXT]Macellai di polli[COLOR_REVERT] possono lavorare nella [LINK=BUILDING_BUTCHERS_HOUSE]casa del macellaio[\LINK] o in uno dei suoi potenziamenti per produrre [LINK=YIELD_FOOD]carne di pollo[\LINK] e [LINK=YIELD_DOWNS]piuma di pollo[\LINK]dai [LINK=YIELD_CHICKEN]polli[\LINK]. I [LINK=UNIT_POULTRY_BUTCHER]mastri macellai di pollame[\LINK] eccellono in questo mestiere e possono aumentare notevolmente la produzione di carne di pollo.</Italian>
