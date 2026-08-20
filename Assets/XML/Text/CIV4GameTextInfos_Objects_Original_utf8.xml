@@ -827,7 +827,9 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_AMSTERDAM</Tag>
 		<English>Amsterdam</English>
-		<Portuguese>Amsterdã</Portuguese>
+		<Portuguese>
+			Amsterdam
+		</Portuguese>
 		<French>Amsterdam</French>
 		<German>Amsterdam</German>
 		<Italian>Amsterdam</Italian>
@@ -855,7 +857,9 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CHAN_CHAN</Tag>
 		<English>Chan Chan</English>
-		<Portuguese>Chan-chan</Portuguese>
+		<Portuguese>
+			Chan Chan
+		</Portuguese>
 		<French>Chan Chan</French>
 		<German>Chan Chan</German>
 		<Italian>Chan Chan</Italian>
@@ -864,7 +868,9 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_SIPAN</Tag>
 		<English>Sipan</English>
-		<Portuguese>Sipán</Portuguese>
+		<Portuguese>
+			Sipan
+		</Portuguese>
 		<French>Sipan</French>
 		<German>Sipan</German>
 		<Italian>Sipan</Italian>
@@ -968,7 +974,7 @@
 		<English>Tenochtitlan</English>
 		
 		<Portuguese>
-			<Text>Tenochtitlán</Text>
+			<Text>Tenochtitlan</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -999,7 +1005,7 @@
 		<English>Teotihuacan</English>
 		
 		<Portuguese>
-			<Text>Teotihuacán</Text>
+			<Text>Teotihuacan</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1059,7 +1065,7 @@
 		<English>Texcoco</English>
 		
 		<Portuguese>
-			<Text>Texas</Text>
+			<Text>Texcoco</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1329,7 +1335,7 @@
 		<English>Tamuin</English>
 		
 		<Portuguese>
-			<Text>Tamuín</Text>
+			<Text>Tamuin</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1599,7 +1605,7 @@
 		<English>Chiconautla</English>
 		
 		<Portuguese>
-			<Text>Chiconauta</Text>
+			<Text>Chiconautla</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1659,7 +1665,7 @@
 		<English>Coyotepec</English>
 		
 		<Portuguese>
-			<Text>Coiotepec</Text>
+			<Text>Coyotepec</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1779,7 +1785,7 @@
 		<English>Tultitan</English>
 		
 		<Portuguese>
-			<Text>Tultitã</Text>
+			<Text>Tultitan</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1869,7 +1875,7 @@
 		<English>Chalchiuites</English>
 		
 		<Portuguese>
-			<Text>Chalchiuitas</Text>
+			<Text>Chalchiuites</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2049,7 +2055,7 @@
 		<English>London</English>
 		
 		<Portuguese>
-			<Text>Londres</Text>
+			<Text>London</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2079,7 +2085,7 @@
 		<English>Reading</English>
 		
 		<Portuguese>
-			<Text>Leitura</Text>
+			<Text>Reading</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2139,7 +2145,7 @@
 		<English>Cuzco</English>
 		
 		<Portuguese>
-			<Text>Cusco</Text>
+			<Text>Cuzco</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2529,7 +2535,7 @@
 		<English>Atico</English>
 		
 		<Portuguese>
-			<Text>Ático</Text>
+			<Text>Atico</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2559,7 +2565,7 @@
 		<English>Juli</English>
 		
 		<Portuguese>
-			<Text>julho</Text>
+			<Text>Juli</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2619,7 +2625,7 @@
 		<English>Chuquiapo</English>
 		
 		<Portuguese>
-			<Text>Chuquiapó</Text>
+			<Text>Chuquiapo</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2649,7 +2655,7 @@
 		<English>Huanuco Pampa</English>
 		
 		<Portuguese>
-			<Text>Huánuco Pampa</Text>
+			<Text>Huanuco Pampa</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2799,7 +2805,7 @@
 		<English>Sausa</English>
 		
 		<Portuguese>
-			<Text>Salsicha</Text>
+			<Text>Sausa</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2859,7 +2865,7 @@
 		<English>Huaca</English>
 		
 		<Portuguese>
-			<Text>Huacá</Text>
+			<Text>Huaca</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2889,7 +2895,7 @@
 		<English>Seville</English>
 		
 		<Portuguese>
-			<Text>Sevilha</Text>
+			<Text>Seville</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>

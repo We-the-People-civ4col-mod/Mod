@@ -675,7 +675,7 @@
 		<English>Providence</English>
 		
 		<Portuguese>
-			<Text>Providência</Text>
+			<Text>Providence</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -727,7 +727,7 @@
 		<English>New Haven</English>
 		
 		<Portuguese>
-			<Text>Novo porto</Text>
+			<Text>New Haven</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -753,7 +753,7 @@
 		<English>New York</English>
 		
 		<Portuguese>
-			<Text>Nova Iorque</Text>
+			<Text>New York</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -805,7 +805,7 @@
 		<English>New Jersey</English>
 		
 		<Portuguese>
-			<Text>Nova Jersey</Text>
+			<Text>New Jersey</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -831,7 +831,7 @@
 		<English>Charleston</English>
 		
 		<Portuguese>
-			<Text>charleston</Text>
+			<Text>Charleston</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -857,7 +857,7 @@
 		<English>Philadelphia</English>
 		
 		<Portuguese>
-			<Text>Filadélfia</Text>
+			<Text>Philadelphia</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -935,7 +935,7 @@
 		<English>Annapolis</English>
 		
 		<Portuguese>
-			<Text>Anápolis</Text>
+			<Text>Annapolis</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1013,7 +1013,7 @@
 		<English>Savannah</English>
 		
 		<Portuguese>
-			<Text>Savana</Text>
+			<Text>Savannah</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1087,7 +1087,7 @@
 		<English>Concord</English>
 		
 		<Portuguese>
-			<Text>Concórdia</Text>
+			<Text>Concord</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1191,7 +1191,7 @@
 		<English>Newport News</English>
 		
 		<Portuguese>
-			<Text>Notícias de Newport</Text>
+			<Text>Newport News</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1217,7 +1217,7 @@
 		<English>Antigua</English>
 		
 		<Portuguese>
-			<Text>Antígua</Text>
+			<Text>Antigua</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1243,7 +1243,7 @@
 		<English>Rupert House</English>
 		
 		<Portuguese>
-			<Text>Casa Ruperto</Text>
+			<Text>Rupert House</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1295,7 +1295,7 @@
 		<English>Ottawa</English>
 		
 		<Portuguese>
-			<Text>Otava</Text>
+			<Text>Ottawa</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1321,7 +1321,7 @@
 		<English>Québec</English>
 		
 		<Portuguese>
-			<Text>Quebec</Text>
+			<Text>Québec</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1347,7 +1347,7 @@
 		<English>Montréal</English>
 		
 		<Portuguese>
-			<Text>Montreal</Text>
+			<Text>Montréal</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1373,7 +1373,7 @@
 		<English>Guadeloupe</English>
 		
 		<Portuguese>
-			<Text>Guadalupe</Text>
+			<Text>Guadeloupe</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1399,7 +1399,7 @@
 		<English>Cayenne</English>
 		
 		<Portuguese>
-			<Text>Caiena</Text>
+			<Text>Cayenne</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1425,7 +1425,7 @@
 		<English>St. Louis</English>
 		
 		<Portuguese>
-			<Text>São Luís</Text>
+			<Text>St. Louis</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1451,7 +1451,7 @@
 		<English>Martinique</English>
 		
 		<Portuguese>
-			<Text>Martinica</Text>
+			<Text>Martinique</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1477,7 +1477,7 @@
 		<English>Port Royal</English>
 		
 		<Portuguese>
-			<Text>Porto Real</Text>
+			<Text>Port Royal</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1503,7 +1503,7 @@
 		<English>Port au Prince</English>
 		
 		<Portuguese>
-			<Text>Porto Príncipe</Text>
+			<Text>Port au Prince</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1529,7 +1529,7 @@
 		<English>Trois Rivieres</English>
 		
 		<Portuguese>
-			<Text>Trois Rivières</Text>
+			<Text>Trois Rivieres</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1555,7 +1555,7 @@
 		<English>New Orleans</English>
 		
 		<Portuguese>
-			<Text>Nova Orleães</Text>
+			<Text>New Orleans</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1581,7 +1581,7 @@
 		<English>Fort Caroline</English>
 		
 		<Portuguese>
-			<Text>Forte Carolina</Text>
+			<Text>Fort Caroline</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1607,7 +1607,7 @@
 		<English>Fort Detroit</English>
 		
 		<Portuguese>
-			<Text>Forte Detroit</Text>
+			<Text>Fort Detroit</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1633,7 +1633,7 @@
 		<English>Fort Frontenac</English>
 		
 		<Portuguese>
-			<Text>Forte Frontenac</Text>
+			<Text>Fort Frontenac</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1659,7 +1659,7 @@
 		<English>Fort Pontchartain</English>
 		
 		<Portuguese>
-			<Text>Forte Pontchartain</Text>
+			<Text>Fort Pontchartain</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1685,7 +1685,7 @@
 		<English>Fort Tadoussac</English>
 		
 		<Portuguese>
-			<Text>Forte Tadoussac</Text>
+			<Text>Fort Tadoussac</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1711,7 +1711,7 @@
 		<English>Fort Canada</English>
 		
 		<Portuguese>
-			<Text>Forte Canadá</Text>
+			<Text>Fort Canada</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1737,7 +1737,7 @@
 		<English>Fort Niagara</English>
 		
 		<Portuguese>
-			<Text>Forte Niágara</Text>
+			<Text>Fort Niagara</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1763,7 +1763,7 @@
 		<English>Fort Crevecoeur</English>
 		
 		<Portuguese>
-			<Text>Forte Crevecoeur</Text>
+			<Text>Fort Crevecoeur</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1789,7 +1789,7 @@
 		<English>Fort Roquelai</English>
 		
 		<Portuguese>
-			<Text>Forte Roquelai</Text>
+			<Text>Fort Roquelai</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1815,7 +1815,7 @@
 		<English>Fort Laguille</English>
 		
 		<Portuguese>
-			<Text>Forte Laguille</Text>
+			<Text>Fort Laguille</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1841,7 +1841,7 @@
 		<English>Fort Brest</English>
 		
 		<Portuguese>
-			<Text>Forte Brest</Text>
+			<Text>Fort Brest</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1867,7 +1867,7 @@
 		<English>Fort Richelieu</English>
 		
 		<Portuguese>
-			<Text>Forte Richelieu</Text>
+			<Text>Fort Richelieu</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1893,7 +1893,7 @@
 		<English>Fort Louis</English>
 		
 		<Portuguese>
-			<Text>Forte Louis</Text>
+			<Text>Fort Louis</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1919,7 +1919,7 @@
 		<English>Fort Prudhome</English>
 		
 		<Portuguese>
-			<Text>Forte Prudhome</Text>
+			<Text>Fort Prudhome</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1945,7 +1945,7 @@
 		<English>Fort Sandouski</English>
 		
 		<Portuguese>
-			<Text>Forte Sandouski</Text>
+			<Text>Fort Sandouski</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1971,7 +1971,7 @@
 		<English>Fort du Quesne</English>
 		
 		<Portuguese>
-			<Text>Forte du Quesne</Text>
+			<Text>Fort du Quesne</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1997,7 +1997,7 @@
 		<English>Fort Erie</English>
 		
 		<Portuguese>
-			<Text>Forte Erie</Text>
+			<Text>Fort Erie</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2023,7 +2023,7 @@
 		<English>Fort Maurepas</English>
 		
 		<Portuguese>
-			<Text>Forte Maurepas</Text>
+			<Text>Fort Maurepas</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2049,7 +2049,7 @@
 		<English>Fort Francois Xavier</English>
 		
 		<Portuguese>
-			<Text>Forte François Xavier</Text>
+			<Text>Fort Francois Xavier</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2075,7 +2075,7 @@
 		<English>Fort St. Michel</English>
 		
 		<Portuguese>
-			<Text>Forte St.</Text>
+			<Text>Fort St. Michel</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2101,7 +2101,7 @@
 		<English>Fort Chicago</English>
 		
 		<Portuguese>
-			<Text>Forte Chicago</Text>
+			<Text>Fort Chicago</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2127,7 +2127,7 @@
 		<English>Fort-de-France</English>
 		
 		<Portuguese>
-			<Text>Forte de França</Text>
+			<Text>Fort-de-France</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2153,7 +2153,7 @@
 		<English>Fort Frances</English>
 		
 		<Portuguese>
-			<Text>Forte Francês</Text>
+			<Text>Fort Frances</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2179,7 +2179,7 @@
 		<English>Fort St. Joseph</English>
 		
 		<Portuguese>
-			<Text>Forte São José</Text>
+			<Text>Fort St. Joseph</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2205,7 +2205,7 @@
 		<English>Fort Miannis</English>
 		
 		<Portuguese>
-			<Text>Forte Miannis</Text>
+			<Text>Fort Miannis</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2231,7 +2231,7 @@
 		<English>Fort Orleans</English>
 		
 		<Portuguese>
-			<Text>Forte Orleans</Text>
+			<Text>Fort Orleans</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2257,7 +2257,7 @@
 		<English>Fort St. Ignace</English>
 		
 		<Portuguese>
-			<Text>Forte Santo Inácio</Text>
+			<Text>Fort St. Ignace</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2283,7 +2283,7 @@
 		<English>Fort Le Rocher</English>
 		
 		<Portuguese>
-			<Text>Forte Le Rocher</Text>
+			<Text>Fort Le Rocher</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2309,7 +2309,7 @@
 		<English>Fort Miyamis</English>
 		
 		<Portuguese>
-			<Text>Forte Miyamis</Text>
+			<Text>Fort Miyamis</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2335,7 +2335,7 @@
 		<English>Fort Rosalie</English>
 		
 		<Portuguese>
-			<Text>Forte Rosalie</Text>
+			<Text>Fort Rosalie</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2361,7 +2361,7 @@
 		<English>Fort Balise</English>
 		
 		<Portuguese>
-			<Text>Forte Balise</Text>
+			<Text>Fort Balise</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2387,7 +2387,7 @@
 		<English>Fort Conde</English>
 		
 		<Portuguese>
-			<Text>Forte Conde</Text>
+			<Text>Fort Conde</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2413,7 +2413,7 @@
 		<English>Fort Pensacola</English>
 		
 		<Portuguese>
-			<Text>Forte Pensacola</Text>
+			<Text>Fort Pensacola</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2439,7 +2439,7 @@
 		<English>Fort Toulouse</English>
 		
 		<Portuguese>
-			<Text>Forte Toulouse</Text>
+			<Text>Fort Toulouse</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2517,7 +2517,7 @@
 		<English>San Salvador</English>
 		
 		<Portuguese>
-			<Text>São Salvador</Text>
+			<Text>San Salvador</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2595,7 +2595,7 @@
 		<English>Trinidad</English>
 		
 		<Portuguese>
-			<Text>Trindade</Text>
+			<Text>Trinidad</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2621,7 +2621,7 @@
 		<English>San Juan</English>
 		
 		<Portuguese>
-			<Text>São João</Text>
+			<Text>San Juan</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2647,7 +2647,7 @@
 		<English>Panama</English>
 		
 		<Portuguese>
-			<Text>Panamá</Text>
+			<Text>Panama</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2673,7 +2673,7 @@
 		<English>Cartejena</English>
 		
 		<Portuguese>
-			<Text>Cartajena</Text>
+			<Text>Cartejena</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2699,7 +2699,7 @@
 		<English>St. Augustine</English>
 		
 		<Portuguese>
-			<Text>Santo Agostinho</Text>
+			<Text>St. Augustine</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2829,7 +2829,7 @@
 		<English>Potosi</English>
 		
 		<Portuguese>
-			<Text>Potosí</Text>
+			<Text>Potosi</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2881,7 +2881,7 @@
 		<English>Asunción</English>
 		
 		<Portuguese>
-			<Text>Assunção</Text>
+			<Text>Asunción</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2907,7 +2907,7 @@
 		<English>Managua</English>
 		
 		<Portuguese>
-			<Text>Manágua</Text>
+			<Text>Managua</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2959,7 +2959,7 @@
 		<English>Santa Fe</English>
 		
 		<Portuguese>
-			<Text>Santa Fé</Text>
+			<Text>Santa Fe</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3115,7 +3115,7 @@
 		<English>San Agostin</English>
 		
 		<Portuguese>
-			<Text>Santo Agostinho</Text>
+			<Text>San Agostin</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3193,7 +3193,7 @@
 		<English>San Francisco</English>
 		
 		<Portuguese>
-			<Text>São Francisco</Text>
+			<Text>San Francisco</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3219,7 +3219,7 @@
 		<English>San Diego</English>
 		
 		<Portuguese>
-			<Text>São Diego</Text>
+			<Text>San Diego</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3245,7 +3245,7 @@
 		<English>San Angelo</English>
 		
 		<Portuguese>
-			<Text>Santo Ângelo</Text>
+			<Text>San Angelo</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3297,7 +3297,7 @@
 		<English>Cancun</English>
 		
 		<Portuguese>
-			<Text>Cancún</Text>
+			<Text>Cancun</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3323,7 +3323,7 @@
 		<English>Valparaiso</English>
 		
 		<Portuguese>
-			<Text>Valparaíso</Text>
+			<Text>Valparaiso</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3349,7 +3349,7 @@
 		<English>Concepción</English>
 		
 		<Portuguese>
-			<Text>Conceição</Text>
+			<Text>Concepción</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3401,7 +3401,7 @@
 		<English>Nieuw Amsterdam</English>
 		
 		<Portuguese>
-			<Text>Nova Amsterdã</Text>
+			<Text>Nieuw Amsterdam</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3428,7 +3428,7 @@
 		<English>Fort Orange</English>
 		
 		<Portuguese>
-			<Text>Forte Laranja</Text>
+			<Text>Fort Orange</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3454,7 +3454,7 @@
 		<English>Fort Nassau</English>
 		
 		<Portuguese>
-			<Text>Forte Nassau</Text>
+			<Text>Fort Nassau</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3480,7 +3480,7 @@
 		<English>Nieuw Holland</English>
 		
 		<Portuguese>
-			<Text>Nova Holanda</Text>
+			<Text>Nieuw Holland</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3532,7 +3532,7 @@
 		<English>Curaçao</English>
 		
 		<Portuguese>
-			<Text>Curaçau</Text>
+			<Text>Curaçao</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3636,7 +3636,7 @@
 		<English>Pernambuco</English>
 		
 		<Portuguese>
-			<Text>Pernambucano</Text>
+			<Text>Pernambuco</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3662,7 +3662,7 @@
 		<English>St. Martin</English>
 		
 		<Portuguese>
-			<Text>São Martinho</Text>
+			<Text>St. Martin</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3688,7 +3688,7 @@
 		<English>St. Eustatius</English>
 		
 		<Portuguese>
-			<Text>Santo Eustáquio</Text>
+			<Text>St. Eustatius</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3766,7 +3766,7 @@
 		<English>Surinam</English>
 		
 		<Portuguese>
-			<Text>Suriname</Text>
+			<Text>Surinam</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3792,7 +3792,7 @@
 		<English>Paraiba</English>
 		
 		<Portuguese>
-			<Text>Paraíba</Text>
+			<Text>Paraiba</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3896,7 +3896,7 @@
 		<English>Santa Catharina</English>
 		
 		<Portuguese>
-			<Text>Santa Catarina</Text>
+			<Text>Santa Catharina</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3922,7 +3922,7 @@
 		<English>Saba</English>
 		
 		<Portuguese>
-			<Text>Sabá</Text>
+			<Text>Saba</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3948,7 +3948,7 @@
 		<English>Utrecht</English>
 		
 		<Portuguese>
-			<Text>Utreque</Text>
+			<Text>Utrecht</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3974,7 +3974,7 @@
 		<English>Haarlem</English>
 		
 		<Portuguese>
-			<Text>Harlem</Text>
+			<Text>Haarlem</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4104,7 +4104,7 @@
 		<English>Fort Cristina</English>
 		
 		<Portuguese>
-			<Text>Forte Cristina</Text>
+			<Text>Fort Cristina</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4130,7 +4130,7 @@
 		<English>Gottenburgh</English>
 		
 		<Portuguese>
-			<Text>Gotemburgo</Text>
+			<Text>Gottenburgh</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4156,7 +4156,7 @@
 		<English>Fort Kasimiris</English>
 		
 		<Portuguese>
-			<Text>Forte Kasimiris</Text>
+			<Text>Fort Kasimiris</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4182,7 +4182,7 @@
 		<English>Fort Elsenburgh</English>
 		
 		<Portuguese>
-			<Text>Forte Elsenburgh</Text>
+			<Text>Fort Elsenburgh</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4208,7 +4208,7 @@
 		<English>Naiack</English>
 		
 		<Portuguese>
-			<Text>Naiaco</Text>
+			<Text>Naiack</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4260,7 +4260,7 @@
 		<English>Para</English>
 		
 		<Portuguese>
-			<Text>Pára</Text>
+			<Text>Para</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4286,7 +4286,7 @@
 		<English>Taubate</English>
 		
 		<Portuguese>
-			<Text>Taubaté</Text>
+			<Text>Taubate</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4312,7 +4312,7 @@
 		<English>Parana</English>
 		
 		<Portuguese>
-			<Text>Paraná</Text>
+			<Text>Parana</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4364,7 +4364,7 @@
 		<English>Guapore</English>
 		
 		<Portuguese>
-			<Text>Guaporé</Text>
+			<Text>Guapore</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4390,7 +4390,7 @@
 		<English>Piauy</English>
 		
 		<Portuguese>
-			<Text>Piauí</Text>
+			<Text>Piauy</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4468,7 +4468,7 @@
 		<English>Cubanacan</English>
 		
 		<Portuguese>
-			<Text>Cubanacán</Text>
+			<Text>Cubanacan</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4910,7 +4910,7 @@
 		<English>Isanti</English>
 		
 		<Portuguese>
-			<Text>isanti</Text>
+			<Text>Isanti</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -5144,7 +5144,7 @@
 		<English>Assiniboine</English>
 		
 		<Portuguese>
-			<Text>Assiniboína</Text>
+			<Text>Assiniboine</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -5170,7 +5170,7 @@
 		<English>Stoney</English>
 		
 		<Portuguese>
-			<Text>Pedra</Text>
+			<Text>Stoney</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -5352,7 +5352,7 @@
 		<English>Great Hiwassee</English>
 		
 		<Portuguese>
-			<Text>Grande Hiwassee</Text>
+			<Text>Great Hiwassee</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -5404,7 +5404,7 @@
 		<English>Tellico</English>
 		
 		<Portuguese>
-			<Text>Télico</Text>
+			<Text>Tellico</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -5482,7 +5482,7 @@
 		<English>Nequassee</English>
 		
 		<Portuguese>
-			<Text>Nequassé</Text>
+			<Text>Nequassee</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -5846,7 +5846,7 @@
 		<English>Wahta</English>
 		
 		<Portuguese>
-			<Text>O que é</Text>
+			<Text>Wahta</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -5872,7 +5872,7 @@
 		<English>Schenectady</English>
 		
 		<Portuguese>
-			<Text>Schenectadia</Text>
+			<Text>Schenectady</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -6684,7 +6684,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 		<English>Tupinamba</English>
 		
 		<Portuguese>
-			<Text>Tupinambá</Text>
+			<Text>Tupinamba</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -6762,7 +6762,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 		<English>Tupiniquim</English>
 		
 		<Portuguese>
-			<Text>tupiniquim</Text>
+			<Text>Tupiniquim</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -6788,7 +6788,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 		<English>Tape Aviru</English>
 		
 		<Portuguese>
-			<Text>Fita Aviru</Text>
+			<Text>Tape Aviru</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -6814,7 +6814,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 		<English>Omagua</English>
 		
 		<Portuguese>
-			<Text>Omágua</Text>
+			<Text>Omagua</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -6918,7 +6918,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 		<English>Iere</English>
 		
 		<Portuguese>
-			<Text>Aqui</Text>
+			<Text>Iere</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -7464,7 +7464,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 		<English>T' Edn</English>
 		
 		<Portuguese>
-			<Text>Edn</Text>
+			<Text>T' Edn</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -7568,7 +7568,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 		<English>T' Nadidoh</English>
 		
 		<Portuguese>
-			<Text>T'Nadidoh</Text>
+			<Text>T' Nadidoh</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -7724,7 +7724,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 		<English>Washbidi Bit</English>
 		
 		<Portuguese>
-			<Text>Bit Washbidi</Text>
+			<Text>Washbidi Bit</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -7750,7 +7750,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 		<English>Ts Shid</English>
 		
 		<Portuguese>
-			<Text>Shid</Text>
+			<Text>Ts Shid</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -7776,7 +7776,7 @@ although the description was correct before. Ancient Ruins is GOODY_HUT2. this i
 		<English>Ch' Disch'ag</English>
 		
 		<Portuguese>
-			<Text>Ch'Disch'ag</Text>
+			<Text>Ch' Disch'ag</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
