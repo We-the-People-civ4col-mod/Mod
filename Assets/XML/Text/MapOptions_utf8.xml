@@ -4,6 +4,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS</Tag>
 		<English>Colony Land Size:</English>
+		<PortugueseBR>Tamanho do terreno da colônia:</PortugueseBR>
 		<French>Taille de la colonie</French>
 		<Russian>Радиус колонии</Russian>
 		<Hungarian>Kolónia Területe:</Hungarian>
@@ -11,6 +12,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_1_PLOT</Tag>
 		<English>1 Plot Radius</English>
+		<PortugueseBR>1 raio do gráfico</PortugueseBR>
 		<French>1 case de rayon</French>
 		<Russian>1 клетка</Russian>
 		<Hungarian>1 Mező</Hungarian>
@@ -18,6 +20,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_CITY_CATCHMENT_RADIUS_2_PLOT</Tag>
 		<English>2 Plot Radius</English>
+		<PortugueseBR>2 Raio do gráfico</PortugueseBR>
 		<French>2 cases de rayon</French>
 		<Russian>2 клетки</Russian>
 		<Hungarian>2 Mező</Hungarian>
@@ -25,6 +28,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY</Tag>
 		<English>Land Regularity:</English>
+		<PortugueseBR>Regularidade Fundiária:</PortugueseBR>
 		<French>Regularité des terres:</French>
 		<Russian>Кривизну береговой линии</Russian>
 		<Hungarian>Szárazföld Szabályossága:</Hungarian>
@@ -32,6 +36,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY_OPT_0</Tag>
 		<English>Very Irregular</English>
+		<PortugueseBR>Muito Irregular</PortugueseBR>
 		<French>Très irrégulière</French>
 		<Russian>Сильно искривлена</Russian>
 		<Hungarian>Nagyon Szabálytalan</Hungarian>
@@ -39,6 +44,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY_OPT_1</Tag>
 		<English>Irregular Land Shapes (default)</English>
+		<PortugueseBR>Formas de terreno irregulares (padrão)</PortugueseBR>
 		<French>Formes de terres irrégulières (par défaut)</French>
 		<Russian>Неправильные очертания (по умолчанию)</Russian>
 		<Hungarian>Szabálytalan (alapértelmezett)</Hungarian>
@@ -46,6 +52,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_REGULARITY_OPT_2</Tag>
 		<English>Regular</English>
+		<PortugueseBR>Normal</PortugueseBR>
 		<French>Irrégulière</French>
 		<Russian>Обычная</Russian>
 		<Hungarian>Szabályos</Hungarian>
@@ -53,6 +60,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE</Tag>
 		<English>River Prevalence:</English>
+		<PortugueseBR>Prevalência fluvial:</PortugueseBR>
 		<French>Abondance des rivières:</French>
 		<Russian>Наличие больших рек</Russian>
 		<Hungarian>Folyók Gyakorisága:</Hungarian>
@@ -60,6 +68,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_0</Tag>
 		<English>Lower Likelihood of Large Rivers</English>
+		<PortugueseBR>Menor probabilidade de grandes rios</PortugueseBR>
 		<French>Probabilité réduite de grandes rivières</French>
 		<Russian>Маленькая вероятность появления</Russian>
 		<Hungarian>Kis Valószínűség a Nagy Folyóknak</Hungarian>
@@ -67,6 +76,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_1</Tag>
 		<English>Balanced Odds of Large Rivers (default)</English>
+		<PortugueseBR>Probabilidades equilibradas de grandes rios (padrão)</PortugueseBR>
 		<French>Probabilité moyenne de grandes rivières (par défaut)</French>
 		<Russian>Сбалансированные шансы появления (по умолчанию)</Russian>
 		<Hungarian>Közepes Valószínűség a Nagy Folyóknak (alapértelmezett)</Hungarian>
@@ -74,6 +84,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LARGE_RIVER_PREVALENCE_OPT_2</Tag>
 		<English>Higher Likelihood of Large Rivers</English>
+		<PortugueseBR>Maior probabilidade de grandes rios</PortugueseBR>
 		<French>Probabilité élevée de grandes rivières</French>
 		<Russian>Высокая вероятность появления</Russian>
 		<Hungarian>Nagy Valószínűség a Nagy Folyóknak</Hungarian>
@@ -81,6 +92,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH</Tag>
 		<English>River Length:</English>
+		<PortugueseBR>Comprimento do rio:</PortugueseBR>
 		<French>Longueur des grandes rivières:</French>
 		<Russian>Длину больших рек</Russian>
 		<Hungarian>Folyók Hossza:</Hungarian>
@@ -98,6 +110,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_2</Tag>
 		<English>Minimum 7 Plots per Large River (default)</English>
+		<PortugueseBR>Mínimo de 7 parcelas por rio grande (padrão)</PortugueseBR>
 		<French>Minimum 7 cases par grande rivière (par défaut)</French>
 		<Russian>Минимум 7 клеток (по умолчанию)</Russian>
 		<Hungarian>Minimum 7 Mező Nagy Folyónként (alapértelmezett)</Hungarian>
@@ -120,6 +133,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT</Tag>
 		<English>Land Mass:</English>
+		<PortugueseBR>Massa Terrestre:</PortugueseBR>
 		<French>Proportions de terres :</French>
 		<Russian>Долю массива суши</Russian>
 		<Hungarian>Földterület:</Hungarian>
@@ -127,6 +141,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_0</Tag>
 		<English>25% Land</English>
+		<PortugueseBR>25% Terreno</PortugueseBR>
 		<French>25% de terres</French>
 		<Russian>25% земли</Russian>
 		<Hungarian>25% Föld</Hungarian>
@@ -134,6 +149,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_1</Tag>
 		<English>38% Land Size Ratio vs Ocean (default)</English>
+		<PortugueseBR>Proporção de tamanho de terreno de 38% versus oceano (padrão)</PortugueseBR>
 		<French>38% de terres (par défaut)</French>
 		<Russian>38% земли (по умолчанию)</Russian>
 		<Hungarian>38% Föld-Óceán arány (alapértelmezett)</Hungarian>
@@ -141,6 +157,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_2</Tag>
 		<English>45% Land</English>
+		<PortugueseBR>45% Terreno</PortugueseBR>
 		<French>45% de terres</French>
 		<Russian>45% земли</Russian>
 		<Hungarian>45% Föld</Hungarian>
@@ -148,6 +165,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_LAND_PERCENT_OPT_3</Tag>
 		<English>55% Land</English>
+		<PortugueseBR>55% Terreno</PortugueseBR>
 		<French>55% de terres</French>
 		<Russian>55% земли</Russian>
 		<Hungarian>55% Föld</Hungarian>
@@ -155,30 +173,35 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS</Tag>
 		<English>Terrain Roughness:</English>
+		<PortugueseBR>Rugosidade do terreno:</PortugueseBR>
 		<Russian>Неровность местности</Russian>
 		<Hungarian>Terep Egyenetlensége:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_0</Tag>
 		<English>Flat   80% Flat 10% Hill 10% Peak</English>
+		<PortugueseBR>Plano 80% Plano 10% Colina 10% Pico</PortugueseBR>
 		<Russian>Плоская</Russian>
 		<Hungarian>Lapos 80% Sík 10% Domb 10% Hegy</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_1</Tag>
 		<English>Rolling   67% Flat 16.5% Hill 16.5% Peak (default)</English>
+		<PortugueseBR>Rolamento 67% Plano 16,5% Colina 16,5% Pico (padrão)</PortugueseBR>
 		<Russian>Пологие холмы</Russian>
 		<Hungarian>Hepehupás 67%S 16,5%D 16,5%H (alapértelmezett)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_2</Tag>
 		<English>Hilly   54% Flat 23% Hill 23% Peak</English>
+		<PortugueseBR>Colina 54% Plana 23% Colina 23% Pico</PortugueseBR>
 		<Russian>Холмистая</Russian>
 		<Hungarian>Dombos 54%S 23%D 23%H</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_TERRAIN_ROUGHNESS_OPT_3</Tag>
 		<English>Mountainous   40% Flat 30% Hill 30% Peak</English>
+		<PortugueseBR>Montanhoso 40% Plano 30% Colina 30% Pico</PortugueseBR>
 		<Russian>Горная</Russian>
 		<Hungarian>Hegyes 40%S 30%D 30%H</Hungarian>
 	</TEXT>

@@ -8,6 +8,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ETHNICITY_EUROPEAN</Tag>
 		<English>[ICON_BULLET]Ethnicity : [COLOR_HIGHLIGHT_TEXT]European[COLOR_REVERT]</English>
+		<PortugueseBR>[ICON_BULLET]Etnia: [COLOR_HIGHLIGHT_TEXT]Europeia[COLOR_REVERT]</PortugueseBR>
 		<French>[ICON_BULLET]Ethnicité : [COLOR_HIGHLIGHT_TEXT]Européenne[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Abstammung : [COLOR_HIGHLIGHT_TEXT]Europäisch[COLOR_REVERT]</German>
 		<Italian>[ICON_BULLET]Etnia : [COLOR_HIGHLIGHT_TEXT]Europea[COLOR_REVERT]</Italian>
@@ -18,6 +19,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ETHNICITY_INDIO</Tag>
 		<English>[ICON_BULLET]Ethnicity : [COLOR_HIGHLIGHT_TEXT]Native[COLOR_REVERT]</English>
+		<PortugueseBR>[ICON_BULLET]Etnia: [COLOR_HIGHLIGHT_TEXT]Nativa[COLOR_REVERT]</PortugueseBR>
 		<French>[ICON_BULLET]Ethnicité : [COLOR_HIGHLIGHT_TEXT]Indigène[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Abstammung : [COLOR_HIGHLIGHT_TEXT]Indio[COLOR_REVERT]</German>
 		<Italian>[ICON_BULLET]Etnia : [COLOR_HIGHLIGHT_TEXT]Nativo[COLOR_REVERT]</Italian>
@@ -28,6 +30,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ETHNICITY_AFRICAN</Tag>
 		<English>[ICON_BULLET]Ethnicity : [COLOR_HIGHLIGHT_TEXT]African[COLOR_REVERT]</English>
+		<PortugueseBR>[ICON_BULLET]Etnia: [COLOR_HIGHLIGHT_TEXT]Africana[COLOR_REVERT]</PortugueseBR>
 		<French>[ICON_BULLET]Ethnicité : [COLOR_HIGHLIGHT_TEXT]Africaine[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Abstammung : [COLOR_HIGHLIGHT_TEXT]Afrikanisch[COLOR_REVERT]</German>
 		<Italian>[ICON_BULLET]Etnia : [COLOR_HIGHLIGHT_TEXT]Africano[COLOR_REVERT]</Italian>
@@ -38,6 +41,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ETHNICITY_MESTIZZO</Tag>
 		<English>[ICON_BULLET]Ethnicity : [COLOR_HIGHLIGHT_TEXT]Mestizo[COLOR_REVERT]</English>
+		<PortugueseBR>[ICON_BULLET]Etnia: [COLOR_HIGHLIGHT_TEXT]Mestiço[COLOR_REVERT]</PortugueseBR>
 		<French>[ICON_BULLET]Ethnicité : [COLOR_HIGHLIGHT_TEXT]Métis[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Abstammung : [COLOR_HIGHLIGHT_TEXT]Mestize[COLOR_REVERT]</German>
 		<Italian>[ICON_BULLET]Etnia : [COLOR_HIGHLIGHT_TEXT]Mestizo[COLOR_REVERT]</Italian>
@@ -48,6 +52,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ETHNICITY_MULATTO</Tag>
 		<English>[ICON_BULLET]Ethnicity : [COLOR_HIGHLIGHT_TEXT]Mulatto[COLOR_REVERT]</English>
+		<PortugueseBR>[ICON_BULLET]Etnia: [COLOR_HIGHLIGHT_TEXT]Mulato[COLOR_REVERT]</PortugueseBR>
 		<French>[ICON_BULLET]Ethnicité : [COLOR_HIGHLIGHT_TEXT]Mulâtre[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Abstammung : [COLOR_HIGHLIGHT_TEXT]Mulatte[COLOR_REVERT]</German>
 		<Italian>[ICON_BULLET]Etnia : [COLOR_HIGHLIGHT_TEXT]Mulatto[COLOR_REVERT]</Italian>
@@ -58,6 +63,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITIZEN_STATUS_ENSLAVED</Tag>
 		<English>[ICON_BULLET]Social Status : [COLOR_HIGHLIGHT_TEXT]Slave[COLOR_REVERT]</English>
+		<PortugueseBR>[ICON_BULLET]Status social: [COLOR_HIGHLIGHT_TEXT]Escravo[COLOR_REVERT]</PortugueseBR>
 		<French>[ICON_BULLET]Statut Social : [COLOR_HIGHLIGHT_TEXT]Esclave[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Sozialer Status : [COLOR_HIGHLIGHT_TEXT]Sklave[COLOR_REVERT]</German>
 		<Italian>[ICON_BULLET]Status Sociale : [COLOR_HIGHLIGHT_TEXT]Schiavo[COLOR_REVERT]</Italian>
@@ -68,6 +74,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITIZEN_STATUS_INDENTURED</Tag>
 		<English>[ICON_BULLET]Social Status : [COLOR_HIGHLIGHT_TEXT]Indentured Worker[COLOR_REVERT]</English>
+		<PortugueseBR>[ICON_BULLET]Status social: [COLOR_HIGHLIGHT_TEXT]Trabalhador contratado[COLOR_REVERT]</PortugueseBR>
 		<French>[ICON_BULLET]Statut Social : [COLOR_HIGHLIGHT_TEXT]Travailleur sous contrat[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Sozialer Status : [COLOR_HIGHLIGHT_TEXT]Schuldknecht[COLOR_REVERT]</German>
 		<Italian>[ICON_BULLET]Status Sociale : [COLOR_HIGHLIGHT_TEXT]Servo per contratto[COLOR_REVERT]</Italian>
@@ -78,6 +85,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITIZEN_STATUS_FREE</Tag>
 		<English>[ICON_BULLET]Social Status : [COLOR_HIGHLIGHT_TEXT]Free Citizen[COLOR_REVERT]</English>
+		<PortugueseBR>[ICON_BULLET]Status Social: [COLOR_HIGHLIGHT_TEXT]Cidadão Livre[COLOR_REVERT]</PortugueseBR>
 		<French>[ICON_BULLET]Statut Social : [COLOR_HIGHLIGHT_TEXT]Citoyen libre[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Sozialer Status : [COLOR_HIGHLIGHT_TEXT]Freier Bürger[COLOR_REVERT]</German>
 		<Italian>[ICON_BULLET]Status Sociale : [COLOR_HIGHLIGHT_TEXT]Cittadino libero[COLOR_REVERT]</Italian>
@@ -88,6 +96,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITIZEN_STATUS_ELITE</Tag>
 		<English>[ICON_BULLET]Social Status : [COLOR_HIGHLIGHT_TEXT]Privileged[COLOR_REVERT]</English>
+		<PortugueseBR>[ICON_BULLET]Status social: [COLOR_HIGHLIGHT_TEXT]Privilegiado[COLOR_REVERT]</PortugueseBR>
 		<French>[ICON_BULLET]Statut Social : [COLOR_HIGHLIGHT_TEXT]Privilégié[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Sozialer Status : [COLOR_HIGHLIGHT_TEXT]Privilegiert[COLOR_REVERT]</German>
 		<Italian>[ICON_BULLET]Status Sociale : [COLOR_HIGHLIGHT_TEXT]Privilegiato[COLOR_REVERT]</Italian>

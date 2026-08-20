@@ -734,6 +734,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCOA</Tag>
 		<English>Cocoa</English>
+		<PortugueseBR>Cacau</PortugueseBR>
 		<French>Cacao torréfié</French>
 		<German>
 			<Text>Kakao</Text>
@@ -772,6 +773,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCOA_PLANTER</Tag>
 		<English>Expert Cocoa Planter:Expert Cocoa Planters</English>
+		<PortugueseBR>Plantador de cacau especializado: plantadores de cacau especializados</PortugueseBR>
 		<French>Expert planteur de cacao:Experts planteurs de cacao</French>
 		<German>Erfahrener Kakaopflücker:Erfahrene Kakaopflücker</German>
 		<Italian>Expert Cocoa Planter:Expert Cocoa Planters</Italian>
@@ -806,6 +808,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COFFEE_BERRIES</Tag>
 		<English>Coffee Berries</English>
+		<PortugueseBR>Bagas de café</PortugueseBR>
 		<French>Cerises de café</French>
 		<German>
 			<Text>Kaffeebeeren</Text>
@@ -923,6 +926,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CONTINENTAL_GUARD</Tag>
 		<English>Continental Guard:Continental Guards</English>
+		<PortugueseBR>Guarda Continental: Guardas Continentais</PortugueseBR>
 		<French>Garde continentale:Gardes continentales</French>
 		<German>Kontinentalgarde:Kontinentalgarde</German>
 		<Italian>Continental Guard:Continental Guards</Italian>
@@ -1466,6 +1470,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FURNITURE</Tag>
 		<English>Furniture</English>
+		<PortugueseBR>Móveis</PortugueseBR>
 		<French>Meubles</French>
 		<German>
 			<Text>Möbel</Text>
@@ -1838,6 +1843,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HESSIAN</Tag>
 		<English>Hessian:Hessians</English>
+		<PortugueseBR>Hessiano: Hessianos</PortugueseBR>
 		<French>Hessien:Hessiens</French>
 		<German>Hessischer Söldner:Hessische Söldner</German>
 		<Italian>Hessian:Hessians</Italian>
@@ -3099,6 +3105,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_EXPERT_SETTLER</Tag>
 		<English>Prepared Settler:Prepared Settlers</English>
+		<PortugueseBR>Colono Preparado: Colonos Preparados</PortugueseBR>
 		<French>Fondateur préparé:Fondateurs Préparés</French>
 		<German>
 			<Text>Vorbereiteter Siedler:Vorbereitete Siedler</Text>
@@ -3628,6 +3635,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_TRAIN</Tag>
 		<English>Carriage:Carriages</English>
+		<PortugueseBR>Transporte: Carruagens</PortugueseBR>
 		<French>Convoyeur:Convoyeurs</French>
 		<German>
 			<Text>Fuhrwerk:Fuhrwerke</Text>
@@ -4289,6 +4297,7 @@
    <TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ECCENTRIC_ARCHITECT</Tag>
 		<English>Eccentric Architect:Eccentric Architects</English>
+		<PortugueseBR>Arquiteto Excêntrico:Arquitetos Excêntricos</PortugueseBR>
 		<French>Architecte excentrique:Architectes excentriques</French>
 		<German>
 			<Text>Exzentrischer Architekt:Exzentrische Architekten</Text>

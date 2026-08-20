@@ -8,6 +8,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_ICE</Tag>
 		<English>Polar Ice</English>
+		<PortugueseBR>Gelo polar</PortugueseBR>
 		<French>Banquise</French>
 		<German>
 			<Text>Polareis</Text>
@@ -412,6 +413,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_FATHERS</Tag>
 		<English>Founding Fathers</English>
+		<PortugueseBR>Pais Fundadores</PortugueseBR>
 		<French>Pères fondateurs</French>
 		<German>Gründerväter</German>
 		<Italian>Padri Fondatori</Italian>
@@ -526,6 +528,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_PROFESSION</Tag>
 		<English>Professions</English>
+		<PortugueseBR>Profissões</PortugueseBR>
 		<French>Professions</French>
 		<German>Berufe</German>
 		<Italian>Professioni</Italian>
@@ -614,6 +617,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_YIELDS</Tag>
 		<English>Goods and Materials</English>
+		<PortugueseBR>Bens e Materiais</PortugueseBR>
 		<French>Marchandises et matériaux</French>
 		<German>Rohstoffe und Waren</German>
 		<Italian>Beni e materiali</Italian>
@@ -674,6 +678,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_AMSTERDAM</Tag>
 		<English>Amsterdam</English>
+		<PortugueseBR>Amsterdã</PortugueseBR>
 		<French>Amsterdam</French>
 		<German>Amsterdam</German>
 		<Italian>Amsterdam</Italian>
@@ -683,6 +688,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_LA_ROCHELLE</Tag>
 		<English>La Rochelle</English>
+		<PortugueseBR>La Rochelle</PortugueseBR>
 		<French>La Rochelle</French>
 		<German>La Rochelle</German>
 		<Italian>La Rochelle</Italian>
@@ -699,6 +705,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CHAN_CHAN</Tag>
 		<English>Chan Chan</English>
+		<PortugueseBR>Chan-chan</PortugueseBR>
 		<French>Chan Chan</French>
 		<German>Chan Chan</German>
 		<Italian>Chan Chan</Italian>
@@ -707,6 +714,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_SIPAN</Tag>
 		<English>Sipan</English>
+		<PortugueseBR>Sipán</PortugueseBR>
 		<French>Sipan</French>
 		<German>Sipan</German>
 		<Italian>Sipan</Italian>
@@ -747,6 +755,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_PAJATEN</Tag>
 		<English>Pajaten</English>
+		<PortugueseBR>Pajaten</PortugueseBR>
 		<French>Pajaten</French>
 		<German>Pajaten</German>
 		<Italian>Pajaten</Italian>

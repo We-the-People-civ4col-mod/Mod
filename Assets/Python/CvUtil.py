@@ -368,7 +368,7 @@ def sortkey(word_and_number):
 
 	language = localText.getText("TXT_KEY_LANGUAGE_NAME_IN_ENGLISH", ())
 	word,_ = word_and_number
-	if language not in ["English", "German", "French", "Spanish", "Italian"]:
+	if language not in ["English", "German", "French", "Spanish", "Italian", "Portuguese"]:
 		return word
 
 	# accents     ="ÁÀÄáâäÉÊÈËéèêëÍÎÌíîìÑñÖÔöôÜÛÙúüûù" in cp1252
