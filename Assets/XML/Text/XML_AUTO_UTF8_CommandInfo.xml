@@ -85,7 +85,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_CLEAR_SPECIALTY</Tag>
 		<English>Clear specialty</English>
-		<Portuguese>Especialidade clara</Portuguese>
+		<Portuguese>Limpar especialidade</Portuguese>
 		<French>Effacer la spécialité</French>
 		<German>Expertenfähigkeit entfernen</German>
 		<Italian>Rimuovi specializzazione</Italian>
@@ -105,7 +105,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_DELETE</Tag>
 		<English>Delete the unit</English>
-		<Portuguese>Exclua a unidade</Portuguese>
+		<Portuguese>Deletar unidade</Portuguese>
 		<French>Supprimer l'unité</French>
 		<German>Einheit auflösen</German>
 		<Italian>Elimina l'unità</Italian>
@@ -145,7 +145,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GIFT</Tag>
 		<English>Gift the unit</English>
-		<Portuguese>Presenteie a unidade</Portuguese>
+		<Portuguese>Presentear unidade</Portuguese>
 		<French>Offrir l'unité</French>
 		<German>Einheit verschenken</German>
 		<Italian>Dona l'unità</Italian>
@@ -165,7 +165,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GOTO_MENU</Tag>
 		<English>Go to mode (city selection)</English>
-		<Portuguese>Vá para o modo (seleção de cidade)</Portuguese>
+		<Portuguese>Ir para (seleção de cidade)</Portuguese>
 		<French>Aller à (Choisir une ville)</French>
 		<German>Gehe-zu-Modus (Stadtliste)</German>
 		<Italian>Vai alla modalità (selezione della città)</Italian>
