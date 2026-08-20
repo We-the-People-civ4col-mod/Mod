@@ -3,7 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ATTITUDE_ANNOYED</Tag>
 		<English>Annoyed</English>
-		<PortugueseBR>Irritado</PortugueseBR>
+		<Portuguese>Irritado</Portuguese>
 		<French>Agacé:Agacée</French>
 		<German>Verärgert</German>
 		<Italian>Infastidito:Infastidita</Italian>
@@ -13,7 +13,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ATTITUDE_CAUTIOUS</Tag>
 		<English>Cautious</English>
-		<PortugueseBR>Cauteloso</PortugueseBR>
+		<Portuguese>Cauteloso</Portuguese>
 		<French>Prudent:Prudente</French>
 		<German>Vorsichtig</German>
 		<Italian>Cauto:Cauta</Italian>
@@ -23,7 +23,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ATTITUDE_FRIENDLY</Tag>
 		<English>Friendly</English>
-		<PortugueseBR>Amigável</PortugueseBR>
+		<Portuguese>Amigável</Portuguese>
 		<French>Enthousiaste</French>
 		<German>Liebevoll</German>
 		<Italian>Amichevole:Amichevole</Italian>
@@ -33,7 +33,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ATTITUDE_FURIOUS</Tag>
 		<English>Furious</English>
-		<PortugueseBR>Furioso</PortugueseBR>
+		<Portuguese>Furioso</Portuguese>
 		<French>Furieux:Furieuse</French>
 		<German>Wütend</German>
 		<Italian>Furioso:Furiosa</Italian>
@@ -43,7 +43,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ATTITUDE_PLEASED</Tag>
 		<English>Pleased</English>
-		<PortugueseBR>Satisfeito</PortugueseBR>
+		<Portuguese>Satisfeito</Portuguese>
 		<French>Favorable</French>
 		<German>Erfreut</German>
 		<Italian>Soddisfatto:Soddisfatta</Italian>

@@ -3,6 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_AMPHIBIOUS</Tag>
 		<English>Keen Swimmer</English>
+		<Portuguese>Nadador afiado</Portuguese>
 		<French>
 			<Text>Amphibie</Text>
 			<Gender>Male</Gender>
@@ -28,6 +29,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_ARTILLERY</Tag>
 		<English>Artillery</English>
+		<Portuguese>Artilharia</Portuguese>
 		<French>
 			<Text>Artillery</Text>
 			<Gender>Female</Gender>
@@ -52,6 +54,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_BAYONET</Tag>
 		<English>Bayonet</English>
+		<Portuguese>Baioneta</Portuguese>
 		<French>
 			<Text>Bayonette</Text>
 			<Gender>Female</Gender>
@@ -65,6 +68,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_BOMBI</Tag>
 		<English>Explosives I</English>
+		<Portuguese>Explosivos eu</Portuguese>
 		<French>
 			<Text>Bombe I</Text>
 			<Gender>Female</Gender>
@@ -86,6 +90,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_BOMBII</Tag>
 		<English>Explosives II</English>
+		<Portuguese>Explosivos II</Portuguese>
 		<French>
 			<Text>Bombe II</Text>
 			<Gender>Female</Gender>
@@ -107,6 +112,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_BOMBIII</Tag>
 		<English>Explosives III</English>
+		<Portuguese>Explosivos III</Portuguese>
 		<French>
 			<Text>Bombe III</Text>
 			<Gender>Female</Gender>
@@ -128,6 +134,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_BRAVE</Tag>
 		<English>Native</English>
+		<Portuguese>Nativo</Portuguese>
 		<French>
 			<Text>Native</Text>
 			<Gender>Male</Gender>
@@ -152,6 +159,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_BROADSIDE</Tag>
 		<English>Broadside</English>
+		<Portuguese>Lateral</Portuguese>
 		<French>
 			<Text>Bordée</Text>
 			<Gender>Male</Gender>
@@ -165,6 +173,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_CANNISTER_SHOT</Tag>
 		<English>Canister Shot I</English>
+		<Portuguese>Canister Shot I</Portuguese>
 		<French>
 			<Text>Boulet I</Text>
 			<Gender>Male</Gender>
@@ -186,6 +195,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_CANNISTER_SHOTII</Tag>
 		<English>Canister Shot II</English>
+		<Portuguese>Tiro de Canister II</Portuguese>
 		<French>
 			<Text>Boulet II</Text>
 			<Gender>Male</Gender>
@@ -207,6 +217,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_CANNISTER_SHOTIII</Tag>
 		<English>Canister Shot III</English>
+		<Portuguese>Tiro de Canister III</Portuguese>
 		<French>
 			<Text>Boulet III</Text>
 			<Gender>Male</Gender>
@@ -228,13 +239,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_EVENT_CARGOSPACE</Tag>
 		<English>Shipwright's Upgrade (Event)</English>
-		<PortugueseBR>Atualização do Construtor Naval (Evento)</PortugueseBR>
+		<Portuguese>Atualização do Construtor Naval (Evento)</Portuguese>
 		<French>Amélioration du charpentier de marine (Event)</French>
 		<Russian>Искусный корабел (Событие)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_CHARGE</Tag>
 		<English>Charge</English>
+		<Portuguese>Cobrar</Portuguese>
 		<French>
 			<Text>Charge</Text>
 			<Gender>Female</Gender>
@@ -260,7 +272,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_DISCOVERER</Tag>
 		<English>Great Discoverer</English>
-		<PortugueseBR>Grande descobridor</PortugueseBR>
+		<Portuguese>Grande descobridor</Portuguese>
 		<French>Grand découvreur</French>
 		<German>Großer Entdecker</German>
 		<Italian>Great Discoverer</Italian>
@@ -270,6 +282,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_DRAGOON</Tag>
 		<English>Dragoon</English>
+		<Portuguese>Dragão</Portuguese>
 		<French>
 			<Text>Dragon</Text>
 			<Gender>Male</Gender>
@@ -294,6 +307,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_DRILL_SERGEANT</Tag>
 		<English>Drill Sergeant</English>
+		<Portuguese>Sargento de treinamento</Portuguese>
 		<French>
 			<Text>Sergent instructeur</Text>
 			<Gender>Male</Gender>
@@ -319,6 +333,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_EXPLORER1</Tag>
 		<English>Explorer I</English>
+		<Portuguese>Explorador I</Portuguese>
 		<French>
 			<Text>Explorateur I</Text>
 			<Gender>Male</Gender>
@@ -340,6 +355,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_EXPLORER2</Tag>
 		<English>Explorer II</English>
+		<Portuguese>Explorador II</Portuguese>
 		<French>
 			<Text>Explorateur II</Text>
 			<Gender>Male</Gender>
@@ -361,6 +377,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_EXPLORER3</Tag>
 		<English>Explorer III</English>
+		<Portuguese>Explorador III</Portuguese>
 		<French>
 			<Text>Explorateur III</Text>
 			<Gender>Male</Gender>
@@ -382,6 +399,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FEINT</Tag>
 		<English>Feint I</English>
+		<Portuguese>Finja eu</Portuguese>
 		<French>
 			<Text>Feinte I</Text>
 			<Gender>Female</Gender>
@@ -407,6 +425,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FEINT2</Tag>
 		<English>Feint II</English>
+		<Portuguese>Finta II</Portuguese>
 		<French>
 			<Text>Feinte II</Text>
 			<Gender>Female</Gender>
@@ -432,6 +451,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FORCED_MARCH1</Tag>
 		<English>Forced March I</English>
+		<Portuguese>Marcha Forçada I</Portuguese>
 		<French>
 			<Text>Marche forcée I</Text>
 			<Gender>Female</Gender>
@@ -453,6 +473,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FORCED_MARCH2</Tag>
 		<English>Forced March II</English>
+		<Portuguese>Marcha Forçada II</Portuguese>
 		<French>
 			<Text>Marche forcée II</Text>
 			<Gender>Male</Gender>
@@ -474,6 +495,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FORMATION</Tag>
 		<English>Fearless</English>
+		<Portuguese>Destemido</Portuguese>
 		<French>
 			<Text>Intrépide</Text>
 			<Gender>Female</Gender>
@@ -499,6 +521,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_GRENADIER1</Tag>
 		<English>Close Combat I</English>
+		<Portuguese>Combate Fechado I</Portuguese>
 		<French>
 			<Text>Combat rapproché I</Text>
 			<Gender>Male</Gender>
@@ -520,6 +543,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_GRENADIER2</Tag>
 		<English>Close Combat II</English>
+		<Portuguese>Fechar Combate II</Portuguese>
 		<French>
 			<Text>Combat rapproché II</Text>
 			<Gender>Male</Gender>
@@ -541,6 +565,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_GRENADIER3</Tag>
 		<English>Close Combat III</English>
+		<Portuguese>Combate Próximo III</Portuguese>
 		<French>
 			<Text>Combat rapproché III</Text>
 			<Gender>Male</Gender>
@@ -562,6 +587,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_GUARD</Tag>
 		<English>Guard</English>
+		<Portuguese>Guarda</Portuguese>
 		<French>
 			<Text>Garde</Text>
 			<Gender>Female</Gender>
@@ -591,6 +617,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD1</Tag>
 		<English>Homeland Guard I</English>
+		<Portuguese>Guarda Nacional I</Portuguese>
 		<French>
 			<Text>Garde patriote I</Text>
 			<Gender>Female</Gender>
@@ -616,6 +643,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD2</Tag>
 		<English>Homeland Guard II</English>
+		<Portuguese>Guarda Nacional II</Portuguese>
 		<French>
 			<Text>Garde patriote  II</Text>
 			<Gender>Female</Gender>
@@ -641,6 +669,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_HOMELAND_GUARD3</Tag>
 		<English>Homeland Guard III</English>
+		<Portuguese>Guarda Nacional III</Portuguese>
 		<French>
 			<Text>Garde patriote III</Text>
 			<Gender>Female</Gender>
@@ -666,6 +695,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_HUNTER1</Tag>
 		<English>Wild Animal Hunter I</English>
+		<Portuguese>Caçador de animais selvagens I</Portuguese>
 		<French>
 			<Text>Chasseur de fauves I</Text>
 			<Gender>Female</Gender>
@@ -691,6 +721,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_HUNTER2</Tag>
 		<English>Wild Animal Hunter II</English>
+		<Portuguese>Caçador de animais selvagens II</Portuguese>
 		<French>
 			<Text>Chasseur de fauves II</Text>
 			<Gender>Female</Gender>
@@ -716,6 +747,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_INFANTRY</Tag>
 		<English>Infantry</English>
+		<Portuguese>Infantaria</Portuguese>
 		<French>
 			<Text>Infanterie</Text>
 			<Gender>Female</Gender>
@@ -741,7 +773,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LEADER</Tag>
 		<English>Led by Great General</English>
-		<PortugueseBR>Liderado por Grande General</PortugueseBR>
+		<Portuguese>Liderado por Grande General</Portuguese>
 		<French>Mené par un Général illustre</French>
 		<German>Angeführt von Großem General</German>
 		<Italian>Condotto da un Grande Generale</Italian>
@@ -751,7 +783,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LEADER2</Tag>
 		<English>Led by Great Admiral</English>
-		<PortugueseBR>Liderado pelo Grande Almirante</PortugueseBR>
+		<Portuguese>Liderado pelo Grande Almirante</Portuguese>
 		<French>Mené par un Amiral illustre</French>
 		<German>Angeführt von Großem Admiral</German>
 		<Italian>Condotto da un Grande Admirale</Italian>
@@ -761,7 +793,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LEADERSHIP</Tag>
 		<English>Leadership</English>
-		<PortugueseBR>Liderança</PortugueseBR>
+		<Portuguese>Liderança</Portuguese>
 		<French>Commandement</French>
 		<German>Führerschaft</German>
 		<Italian>Comando</Italian>
@@ -771,7 +803,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LEADERSHIP2</Tag>
 		<English>Leadership II</English>
-		<PortugueseBR>Liderança II</PortugueseBR>
+		<Portuguese>Liderança II</Portuguese>
 		<French>Commandement II</French>
 		<German>Führerschaft II</German>
 		<Italian>Comando II</Italian>
@@ -781,6 +813,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LIGHT_INFANTRY</Tag>
 		<English>Light Infantry</English>
+		<Portuguese>Infantaria Leve</Portuguese>
 		<French>
 			<Text>Infanterie légère</Text>
 			<Gender>Female</Gender>
@@ -805,7 +838,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LOOTER</Tag>
 		<English>Looter</English>
-		<PortugueseBR>Saqueador</PortugueseBR>
+		<Portuguese>Saqueador</Portuguese>
 		<French>Pillard</French>
 		<German>Plünderer</German>
 		<Italian>Saccheggiatore</Italian>
@@ -815,6 +848,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_MINUTEMAN1</Tag>
 		<English>Minuteman I</English>
+		<Portuguese>Minuto I</Portuguese>
 		<French>
 			<Text>Garde volontaire I</Text>
 			<Gender>Male</Gender>
@@ -836,6 +870,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_MINUTEMAN2</Tag>
 		<English>Minuteman II</English>
+		<Portuguese>Minuto II</Portuguese>
 		<French>
 			<Text>Garde volontaire II</Text>
 			<Gender>Male</Gender>
@@ -857,6 +892,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_MINUTEMAN3</Tag>
 		<English>Minuteman III</English>
+		<Portuguese>Minuto III</Portuguese>
 		<French>
 			<Text>Garde volontaire III</Text>
 			<Gender>Male</Gender>
@@ -878,6 +914,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_MOBILITY1</Tag>
 		<English>Mobility I</English>
+		<Portuguese>Mobilidade I</Portuguese>
 		<French>
 			<Text>Mobilité I</Text>
 			<Gender>Female</Gender>
@@ -903,6 +940,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_MOBILITY2</Tag>
 		<English>Mobility II</English>
+		<Portuguese>Mobilidade II</Portuguese>
 		<French>
 			<Text>Mobilité II</Text>
 			<Gender>Female</Gender>
@@ -928,6 +966,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_MOUNTAINEER1</Tag>
 		<English>Mountaineer I</English>
+		<Portuguese>Alpinista eu</Portuguese>
 		<French>
 			<Text>Alpiniste I</Text>
 			<Gender>Male</Gender>
@@ -949,6 +988,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_MOUNTAINEER2</Tag>
 		<English>Mountaineer II</English>
+		<Portuguese>Alpinista II</Portuguese>
 		<French>
 			<Text>Alpiniste II</Text>
 			<Gender>Male</Gender>
@@ -970,6 +1010,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_MOUNTAINEER3</Tag>
 		<English>Mountaineer III</English>
+		<Portuguese>Alpinista III</Portuguese>
 		<French>
 			<Text>Alpiniste III</Text>
 			<Gender>Male</Gender>
@@ -991,7 +1032,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NAVAL_TRADE1</Tag>
 		<English>Merchant Vessel I</English>
-		<PortugueseBR>Navio Mercante I</PortugueseBR>
+		<Portuguese>Navio Mercante I</Portuguese>
 		<French>Navire de commerce I</French>
 		<German>Handelsschiff I</German>
 		<Italian>Nave mercantile I</Italian>
@@ -1001,7 +1042,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NAVAL_TRADE2</Tag>
 		<English>Merchant Vessel II</English>
-		<PortugueseBR>Navio Mercante II</PortugueseBR>
+		<Portuguese>Navio Mercante II</Portuguese>
 		<French>Navire de commerce II</French>
 		<German>Handelsschiff II</German>
 		<Italian>Nave mercantile II</Italian>
@@ -1011,6 +1052,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NAVIGATION1</Tag>
 		<English>Navigation I</English>
+		<Portuguese>Navegação I</Portuguese>
 		<French>
 			<Text>Navigation I</Text>
 			<Gender>Female</Gender>
@@ -1036,6 +1078,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NAVIGATION2</Tag>
 		<English>Navigation II</English>
+		<Portuguese>Navegação II</Portuguese>
 		<French>
 			<Text>Navigation II</Text>
 			<Gender>Female</Gender>
@@ -1061,6 +1104,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NAVIGATION3</Tag>
 		<English>Navigation III</English>
+		<Portuguese>Navegação III</Portuguese>
 		<French>
 			<Text>Navigation III</Text>
 			<Gender>Male</Gender>
@@ -1082,6 +1126,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_PIRACY1</Tag>
 		<English>Piracy I</English>
+		<Portuguese>Pirataria eu</Portuguese>
 		<French>
 			<Text>Piraterie I</Text>
 			<Gender>Female</Gender>
@@ -1107,6 +1152,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_PIRACY2</Tag>
 		<English>Piracy II</English>
+		<Portuguese>Pirataria II</Portuguese>
 		<French>
 			<Text>Piraterie II</Text>
 			<Gender>Female</Gender>
@@ -1132,6 +1178,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_PIRACY3</Tag>
 		<English>Piracy III</English>
+		<Portuguese>Pirataria III</Portuguese>
 		<French>
 			<Text>Piraterie III</Text>
 			<Gender>Female</Gender>
@@ -1157,6 +1204,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_RANGER1</Tag>
 		<English>Ranger I</English>
+		<Portuguese>Ranger I</Portuguese>
 		<French>
 			<Text>Forestier I</Text>
 			<Gender>Male</Gender>
@@ -1178,6 +1226,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_RANGER2</Tag>
 		<English>Ranger II</English>
+		<Portuguese>Ranger II</Portuguese>
 		<French>
 			<Text>Forestier II</Text>
 			<Gender>Male</Gender>
@@ -1199,6 +1248,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_RANGER3</Tag>
 		<English>Ranger III</English>
+		<Portuguese>Ranger III</Portuguese>
 		<French>
 			<Text>Forestier III</Text>
 			<Gender>Male</Gender>
@@ -1220,7 +1270,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_RELIEF_BATTALION</Tag>
 		<English>Relief Battalion</English>
-		<PortugueseBR>Batalhão de Socorro</PortugueseBR>
+		<Portuguese>Batalhão de Socorro</Portuguese>
 		<French>Bataillon de secours</French>
 		<German>Reserve-Bataillon</German>
 		<Italian>Relief Battalion</Italian>
@@ -1230,7 +1280,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SAILING1</Tag>
 		<English>Naval Warfare I</English>
-		<PortugueseBR>Guerra Naval I</PortugueseBR>
+		<Portuguese>Guerra Naval I</Portuguese>
 		<French>Guerre Navale I</French>
 		<German>Seekrieg I</German>
 		<Italian>Guerra Marittima I</Italian>
@@ -1240,7 +1290,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SAILING2</Tag>
 		<English>Naval Warfare II</English>
-		<PortugueseBR>Guerra Naval II</PortugueseBR>
+		<Portuguese>Guerra Naval II</Portuguese>
 		<French>Guerre Navale II</French>
 		<German>Seekrieg II</German>
 		<Italian>Guerra Marittima II</Italian>
@@ -1250,7 +1300,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SAILING3</Tag>
 		<English>Naval Warfare III</English>
-		<PortugueseBR>Guerra Naval III</PortugueseBR>
+		<Portuguese>Guerra Naval III</Portuguese>
 		<French>Guerre Navale III</French>
 		<German>Seekrieg III</German>
 		<Italian>Guerra Marittima III</Italian>
@@ -1260,7 +1310,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SAILING4</Tag>
 		<English>Naval Warfare IV</English>
-		<PortugueseBR>Guerra Naval IV</PortugueseBR>
+		<Portuguese>Guerra Naval IV</Portuguese>
 		<French>Guerre Navale IV</French>
 		<German>Seekrieg IV</German>
 		<Italian>Guerra Marittima IV</Italian>
@@ -1270,7 +1320,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SAILING5</Tag>
 		<English>Naval Warfare V</English>
-		<PortugueseBR>Guerra Naval V</PortugueseBR>
+		<Portuguese>Guerra Naval V</Portuguese>
 		<French>Guerre Navale V</French>
 		<German>Seekrieg V</German>
 		<Italian>Guerra Marittima V</Italian>
@@ -1280,7 +1330,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SAILING6</Tag>
 		<English>Naval Warfare VI</English>
-		<PortugueseBR>Guerra Naval VI</PortugueseBR>
+		<Portuguese>Guerra Naval VI</Portuguese>
 		<French>Guerre Navale VI</French>
 		<German>Seekrieg VI</German>
 		<Italian>Guerra Marittima VI</Italian>
@@ -1290,7 +1340,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LARGE_RIVER_SAILING</Tag>
 		<English>River Sailor</English>
-		<PortugueseBR>Marinheiro do rio</PortugueseBR>
+		<Portuguese>Marinheiro do rio</Portuguese>
 		<French>Navigation de rivière</French>
 		<German>Flußsegler</German>
 		<Italian>Fiume Veloce</Italian>
@@ -1300,7 +1350,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LARGE_RIVER_SCOUT</Tag>
 		<English>River Scout</English>
-		<PortugueseBR>Rio Batedor</PortugueseBR>
+		<Portuguese>Rio Batedor</Portuguese>
 		<French>Traversée de rivière</French>
 		<German>Flußscout</German>
 		<Italian>Attraversamento del fiume</Italian>
@@ -1309,7 +1359,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LARGE_RIVER_RAIDER</Tag>
 		<English>River Fighter</English>
-		<PortugueseBR>Lutador do Rio</PortugueseBR>
+		<Portuguese>Lutador do Rio</Portuguese>
 		<French>Chasseur de rivière</French>
 		<German>Flußkämpfer</German>
 		<Italian>Combattente del fiume</Italian>
@@ -1319,7 +1369,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SEA_EXPLORER</Tag>
 		<English>Sea Explorer</English>
-		<PortugueseBR>Explorador do Mar</PortugueseBR>
+		<Portuguese>Explorador do Mar</Portuguese>
 		<French>Explorateur des mers</French>
 		<German>Entdecker der Meere</German>
 		<Italian>Sea Explorer</Italian>
@@ -1329,6 +1379,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SEEHUNTER1</Tag>
 		<English>High Sea Fisherman I</English>
+		<Portuguese>Pescador de Alto Mar I</Portuguese>
 		<French>
 			<Text>Pêcheur en haute mer I</Text>
 			<Gender>Male</Gender>
@@ -1354,6 +1405,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SEEHUNTER2</Tag>
 		<English>High Sea Fisherman II</English>
+		<Portuguese>Pescador de Alto Mar II</Portuguese>
 		<French>
 			<Text>Pêcheur en haute mer II</Text>
 			<Gender>Male</Gender>
@@ -1379,7 +1431,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SHIP_CARPENTER1</Tag>
 		<English>Ship Carpenter I</English>
-		<PortugueseBR>Carpinteiro de Navios I</PortugueseBR>
+		<Portuguese>Carpinteiro de Navios I</Portuguese>
 		<French>Charpentier naval I</French>
 		<German>Schiffszimmermann I</German>
 		<Italian>Ship Carpenter I</Italian>
@@ -1389,7 +1441,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SHIP_CARPENTER2</Tag>
 		<English>Ship Carpenter II</English>
-		<PortugueseBR>Carpinteiro de Navio II</PortugueseBR>
+		<Portuguese>Carpinteiro de Navio II</Portuguese>
 		<French>Charpentier naval II</French>
 		<German>Schiffszimmermann II</German>
 		<Italian>Ship Carpenter II</Italian>
@@ -1399,6 +1451,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SIEGE</Tag>
 		<English>Siege Guns</English>
+		<Portuguese>Armas de cerco</Portuguese>
 		<French>
 			<Text>Canons de siège</Text>
 			<Gender>Male</Gender>
@@ -1424,6 +1477,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SKIRMISHER1</Tag>
 		<English>Skirmisher I</English>
+		<Portuguese>Escaramuçador I</Portuguese>
 		<French>
 			<Text>Tirailleur I</Text>
 			<Gender>Male</Gender>
@@ -1445,6 +1499,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SKIRMISHER2</Tag>
 		<English>Skirmisher II</English>
+		<Portuguese>Escaramuçador II</Portuguese>
 		<French>
 			<Text>Tirailleur II</Text>
 			<Gender>Male</Gender>
@@ -1466,6 +1521,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SKIRMISHER3</Tag>
 		<English>Skirmisher III</English>
+		<Portuguese>Escaramuçador III</Portuguese>
 		<French>
 			<Text>Tirailleur III</Text>
 			<Gender>Male</Gender>
@@ -1487,6 +1543,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SOLID_SHOTI</Tag>
 		<English>Solid Shot I</English>
+		<Portuguese>Tiro Sólido I</Portuguese>
 		<French>
 			<Text>Projectile I</Text>
 			<Gender>Male</Gender>
@@ -1508,6 +1565,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SOLID_SHOTII</Tag>
 		<English>Solid Shot II</English>
+		<Portuguese>Tiro Sólido II</Portuguese>
 		<French>
 			<Text>Projectile II</Text>
 			<Gender>Male</Gender>
@@ -1529,6 +1587,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SOLID_SHOTIII</Tag>
 		<English>Solid Shot III</English>
+		<Portuguese>Tiro Sólido III</Portuguese>
 		<French>
 			<Text>Projectile III</Text>
 			<Gender>Male</Gender>
@@ -1550,6 +1609,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_STORM_ATTACK1</Tag>
 		<English>Storm Attack I</English>
+		<Portuguese>Ataque de Tempestade I</Portuguese>
 		<French>
 			<Text>Attaque foudroyante I</Text>
 			<Gender>Female</Gender>
@@ -1571,6 +1631,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_STORM_ATTACK2</Tag>
 		<English>Storm Attack II</English>
+		<Portuguese>Ataque Tempestuoso II</Portuguese>
 		<French>
 			<Text>Attaque foudroyante II</Text>
 			<Gender>Male</Gender>
@@ -1592,6 +1653,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_STORM_ATTACK3</Tag>
 		<English>Storm Attack III</English>
+		<Portuguese>Ataque Tempestuoso III</Portuguese>
 		<French>
 			<Text>Attaque foudroyante III</Text>
 			<Gender>Female</Gender>
@@ -1613,6 +1675,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SURGEON1</Tag>
 		<English>Surgeon I</English>
+		<Portuguese>Cirurgião eu</Portuguese>
 		<French>
 			<Text>Chirurgien I</Text>
 			<Gender>Male</Gender>
@@ -1634,6 +1697,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SURGEON2</Tag>
 		<English>Surgeon II</English>
+		<Portuguese>Cirurgião II</Portuguese>
 		<French>
 			<Text>Chirurgien II</Text>
 			<Gender>Male</Gender>
@@ -1655,6 +1719,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SURGEON3</Tag>
 		<English>Surgeon III</English>
+		<Portuguese>Cirurgião III</Portuguese>
 		<French>
 			<Text>Chirurgien III</Text>
 			<Gender>Male</Gender>
@@ -1676,6 +1741,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SWAMP_FOX1</Tag>
 		<English>Swamp Fox I</English>
+		<Portuguese>Raposa do Pântano I</Portuguese>
 		<French>
 			<Text>Renard des marais I</Text>
 			<Gender>Male</Gender>
@@ -1697,6 +1763,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SWAMP_FOX2</Tag>
 		<English>Swamp Fox II</English>
+		<Portuguese>Raposa do Pântano II</Portuguese>
 		<French>
 			<Text>Renard des marais II</Text>
 			<Gender>Male</Gender>
@@ -1718,6 +1785,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SWAMP_FOX3</Tag>
 		<English>Swamp Fox III</English>
+		<Portuguese>Raposa do Pântano III</Portuguese>
 		<French>
 			<Text>Renard des marais III</Text>
 			<Gender>Male</Gender>
@@ -1739,6 +1807,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_VETERAN1</Tag>
 		<English>Veteran I</English>
+		<Portuguese>Veterano I</Portuguese>
 		<French>
 			<Text>Vétéran I</Text>
 			<Gender>Male</Gender>
@@ -1760,6 +1829,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_VETERAN2</Tag>
 		<English>Veteran II</English>
+		<Portuguese>Veterano II</Portuguese>
 		<French>
 			<Text>Vétéran II</Text>
 			<Gender>Male</Gender>
@@ -1781,6 +1851,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_VETERAN3</Tag>
 		<English>Veteran III</English>
+		<Portuguese>Veterano III</Portuguese>
 		<French>
 			<Text>Vétéran III</Text>
 			<Gender>Male</Gender>
@@ -1802,6 +1873,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_VETERAN4</Tag>
 		<English>Veteran IV</English>
+		<Portuguese>Veterano IV</Portuguese>
 		<French>
 			<Text>Vétéran IV</Text>
 			<Gender>Male</Gender>
@@ -1823,6 +1895,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_VETERAN5</Tag>
 		<English>Veteran V</English>
+		<Portuguese>Veterano V</Portuguese>
 		<French>
 			<Text>Vétéran V</Text>
 			<Gender>Male</Gender>
@@ -1844,6 +1917,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_VETERAN6</Tag>
 		<English>Veteran VI</English>
+		<Portuguese>Veterano VI</Portuguese>
 		<French>
 			<Text>Vétéran VI</Text>
 			<Gender>Male</Gender>
@@ -1865,7 +1939,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_TOWN_GUARD</Tag>
 		<English>Town Defense</English>
-		<PortugueseBR>Defesa da Cidade</PortugueseBR>
+		<Portuguese>Defesa da Cidade</Portuguese>
 		<French>Defense de ville</French>
 		<German>Stadtverteidigung</German>
 		<Italian>Town Defense</Italian>
@@ -1874,7 +1948,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SLAVE_HUNTER_1</Tag>
 		<English>Slave Hunter I</English>
-		<PortugueseBR>Caçador de Escravos I</PortugueseBR>
+		<Portuguese>Caçador de Escravos I</Portuguese>
 		<French>Chasseur d'esclave I</French>
 		<German>Sklavenjäger I</German>
 		<Russian>Охотник за рабами I</Russian>
@@ -1882,7 +1956,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SLAVE_HUNTER_2</Tag>
 		<English>Slave Hunter II</English>
-		<PortugueseBR>Caçador de Escravos II</PortugueseBR>
+		<Portuguese>Caçador de Escravos II</Portuguese>
 		<French>Chasseur d'esclave II</French>
 		<German>Sklavenjäger II</German>
 		<Russian>Охотник за рабами II</Russian>
@@ -1890,7 +1964,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SLAVE_HUNTER_3</Tag>
 		<English>Slave Hunter III</English>
-		<PortugueseBR>Caçador de Escravos III</PortugueseBR>
+		<Portuguese>Caçador de Escravos III</Portuguese>
 		<French>Chasseur d'esclave III</French>
 		<German>Sklavenjäger III</German>
 		<Russian>Охотник за рабами III</Russian>
@@ -1898,7 +1972,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_1</Tag>
 		<English>Slave Overseer I</English>
-		<PortugueseBR>Supervisor de Escravos I</PortugueseBR>
+		<Portuguese>Supervisor de Escravos I</Portuguese>
 		<French>Maitre des esclaves I</French>
 		<German>Sklavenaufseher I</German>
 		<Russian>Надсмотрщик I</Russian>
@@ -1906,7 +1980,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_2</Tag>
 		<English>Slave Overseer II</English>
-		<PortugueseBR>Supervisor de Escravos II</PortugueseBR>
+		<Portuguese>Supervisor de Escravos II</Portuguese>
 		<French>Maitre des esclaves II</French>
 		<German>Sklavenaufseher II</German>
 		<Russian>Надсмотрщик II</Russian>
@@ -1914,7 +1988,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SLAVE_MASTER_3</Tag>
 		<English>Slave Overseer III</English>
-		<PortugueseBR>Supervisor de Escravos III</PortugueseBR>
+		<Portuguese>Supervisor de Escravos III</Portuguese>
 		<French>Maitre des esclaves III</French>
 		<German>Sklavenaufseher III</German>
 		<Russian>Надсмотрщик III</Russian>
@@ -1922,7 +1996,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LAW_KEEPER_1</Tag>
 		<English>Law Keeper I</English>
-		<PortugueseBR>Guardião da Lei I</PortugueseBR>
+		<Portuguese>Guardião da Lei I</Portuguese>
 		<French>Forces de l'ordre I</French>
 		<German>Gesetzeshüter I</German>
 		<Russian>Блюститель закона I</Russian>
@@ -1930,7 +2004,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LAW_KEEPER_2</Tag>
 		<English>Law Keeper II</English>
-		<PortugueseBR>Guardião da Lei II</PortugueseBR>
+		<Portuguese>Guardião da Lei II</Portuguese>
 		<French>Forces de l'ordre II</French>
 		<German>Gesetzeshüter II</German>
 		<Russian>Блюститель закона II</Russian>
@@ -1938,7 +2012,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LAW_KEEPER_3</Tag>
 		<English>Law Keeper III</English>
-		<PortugueseBR>Guardião da Lei III</PortugueseBR>
+		<Portuguese>Guardião da Lei III</Portuguese>
 		<French>Forces de l'ordre III</French>
 		<German>Gesetzeshüter III</German>
 		<Russian>Блюститель закона III</Russian>
@@ -1946,7 +2020,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_BRAVE_LIEUTENANT</Tag>
 		<English>Commanded by Brave Lieutenant</English>
-		<PortugueseBR>Comandado pelo Bravo Tenente</PortugueseBR>
+		<Portuguese>Comandado pelo Bravo Tenente</Portuguese>
 		<French>Mené par un lieutenant hardi</French>
 		<German>Befehligt durch Mutigen Leutnant</German>
 		<Russian>Под началом Храброго лейтенанта</Russian>
@@ -1954,7 +2028,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_CAPABLE_CAPTAIN</Tag>
 		<English>Commanded by Capable Captain</English>
-		<PortugueseBR>Comandado por Capitão Capaz</PortugueseBR>
+		<Portuguese>Comandado por Capitão Capaz</Portuguese>
 		<French>Commandé par un capitaine capable</French>
 		<German>Angeführt von fähigem Kapitän</German>
 		<Russian>Под началом Умелого капитана</Russian>
@@ -1962,7 +2036,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NEGATIVE_LEAKING_HULL</Tag>
 		<English>(Negative) Leaking Hull</English>
-		<PortugueseBR>(Negativo) Vazamento no casco</PortugueseBR>
+		<Portuguese>(Negativo) Vazamento no casco</Portuguese>
 		<French>(Négative) Voie d'eau</French>
 		<German>(Negativ) Undichter Rumpf</German>
 		<Russian>(Недостаток) Пробоина в корпусе</Russian>
@@ -1970,7 +2044,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NEGATIVE_TORN_SAILS</Tag>
 		<English>(Negative) Torn Sails</English>
-		<PortugueseBR>(Negativo) Velas rasgadas</PortugueseBR>
+		<Portuguese>(Negativo) Velas rasgadas</Portuguese>
 		<French>(Négative) Voiles déchirée</French>
 		<German>(Negativ) Gerissene Segel</German>
 		<Russian>(Недостаток) Порванный парус</Russian>
@@ -1978,7 +2052,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NEGATIVE_BROKEN_CANNONS</Tag>
 		<English>(Negative) Broken Cannons</English>
-		<PortugueseBR>(Negativo) Canhões Quebrados</PortugueseBR>
+		<Portuguese>(Negativo) Canhões Quebrados</Portuguese>
 		<French>(Négative) Canons brisés</French>
 		<German>(Negativ) Zerbrochene Kannonen</German>
 		<Russian>(Недостаток) Сломанные пушки</Russian>
@@ -1986,7 +2060,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NEGATIVE_INFECTED_WOUNDS</Tag>
 		<English>(Negative) Infected Wounds</English>
-		<PortugueseBR>(Negativo) Feridas Infectadas</PortugueseBR>
+		<Portuguese>(Negativo) Feridas Infectadas</Portuguese>
 		<French>(Négative) Blessure infectée</French>
 		<German>(Negativ) Infizierte Wunden</German>
 		<Russian>(Недостаток) Зараженные раны</Russian>
@@ -1994,7 +2068,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NEGATIVE_WOUNDED_HORSES</Tag>
 		<English>(Negative) Wounded Horses</English>
-		<PortugueseBR>(Negativo) Cavalos Feridos</PortugueseBR>
+		<Portuguese>(Negativo) Cavalos Feridos</Portuguese>
 		<French>(Négative) Chevaux blessés</French>
 		<German>(Negativ) Verletzte Pferde</German>
 		<Russian>(Недостаток) Раненые лошади</Russian>
@@ -2002,7 +2076,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NEGATIVE_BROKEN_BLADES</Tag>
 		<English>(Negative) Broken Blades</English>
-		<PortugueseBR>(Negativo) Lâminas Quebradas</PortugueseBR>
+		<Portuguese>(Negativo) Lâminas Quebradas</Portuguese>
 		<French>(Négative) Lames brisées</French>
 		<German>(Negativ) Zerbrochene Klingen</German>
 		<Russian>(Недостаток) Сломанные клинки</Russian>
@@ -2010,7 +2084,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NEGATIVE_BROKEN_GUNS</Tag>
 		<English>(Negative) Broken Guns</English>
-		<PortugueseBR>(Negativo) Armas Quebradas</PortugueseBR>
+		<Portuguese>(Negativo) Armas Quebradas</Portuguese>
 		<French>(Négative) Fusils brisés</French>
 		<German>(Negativ) Zerbrochene Gewehre</German>
 		<Russian>(Недостаток) Сломанные ружья</Russian>

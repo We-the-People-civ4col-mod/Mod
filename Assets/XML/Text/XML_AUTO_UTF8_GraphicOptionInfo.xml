@@ -3,7 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_EFFECTS_DISABLED</Tag>
 		<English>Effects Disabled</English>
-		<PortugueseBR>Efeitos desativados</PortugueseBR>
+		<Portuguese>Efeitos desativados</Portuguese>
 		<French>Effets désactivés</French>
 		<German>Effekte deaktiviert</German>
 		<Italian>Effetti disattivati</Italian>
@@ -13,7 +13,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_EFFECTS_DISABLED_HELP</Tag>
 		<English>Turns off particle effects</English>
-		<PortugueseBR>Desativa efeitos de partículas</PortugueseBR>
+		<Portuguese>Desativa efeitos de partículas</Portuguese>
 		<French>Désactive les effets de particule.</French>
 		<German>Schaltet Partikeleffekte aus</German>
 		<Italian>Disattiva effetti particellari</Italian>
@@ -23,7 +23,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_FULLSCREEN</Tag>
 		<English>Full-screen Mode</English>
-		<PortugueseBR>Modo de tela inteira</PortugueseBR>
+		<Portuguese>Modo de tela inteira</Portuguese>
 		<French>Mode Plein écran</French>
 		<German>Vollbild-Modus</German>
 		<Italian>Modalità a schermo intero</Italian>
@@ -33,7 +33,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_FULLSCREEN_HELP</Tag>
 		<English>The game will run in a window when not set.</English>
-		<PortugueseBR>O jogo será executado em uma janela quando não estiver definido.</PortugueseBR>
+		<Portuguese>O jogo será executado em uma janela quando não estiver definido.</Portuguese>
 		<French>À désactiver pour que le jeu s'affiche dans une fenêtre.</French>
 		<German>Wenn dieser nicht eingestellt ist, läuft das Spiel in einem Fenster.</German>
 		<Italian>Se non selezionata, il gioco verrà avviato in una finestra.</Italian>
@@ -43,7 +43,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_GLOBE_VIEW_BUILDINGS_DISABLED</Tag>
 		<English>Globe View Buildings Disabled</English>
-		<PortugueseBR>Edifícios com vista global desativados</PortugueseBR>
+		<Portuguese>Edifícios com vista global desativados</Portuguese>
 		<French>Bâtiments de la Vue du globe désactivés</French>
 		<German>Globusansicht Gebäude deaktiviert</German>
 		<Italian>Edifici disattivati nella visuale globale</Italian>
@@ -53,7 +53,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_GLOBE_VIEW_BUILDINGS_DISABLED_HELP</Tag>
 		<English>Building models won't be displayed in Globe View</English>
-		<PortugueseBR>Os modelos de construção não serão exibidos no Globe View</PortugueseBR>
+		<Portuguese>Os modelos de construção não serão exibidos no Globe View</Portuguese>
 		<French>Les modèles des bâtiments ne s'affichent pas en Vue du globe.</French>
 		<German>Gebäudemodelle erscheinen nicht in Globusansicht</German>
 		<Italian>I modelli degli edifici non verranno mostrati nella visuale globale</Italian>
@@ -63,7 +63,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_HIRES_TERRAIN</Tag>
 		<English>High Detail Terrain</English>
-		<PortugueseBR>Terreno de alto detalhe</PortugueseBR>
+		<Portuguese>Terreno de alto detalhe</Portuguese>
 		<French>Détails de terrain élevés</French>
 		<German>Hohe Geländedetails</German>
 		<Italian>Dettaglio alto del terreno</Italian>
@@ -73,7 +73,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_HIRES_TERRAIN_HELP</Tag>
 		<English>A high detail terrain will be used</English>
-		<PortugueseBR>Um terreno de alto detalhe será usado</PortugueseBR>
+		<Portuguese>Um terreno de alto detalhe será usado</Portuguese>
 		<French>Le niveau de détail utilisé pour les terrains sera plus élevé.</French>
 		<German>Es werden hohe Geländedetails verwendet</German>
 		<Italian>Verrà utilizzato un dettaglio alto del terreno</Italian>
@@ -83,7 +83,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_LOWRES_TEXTURES</Tag>
 		<English>Low Resolution Textures</English>
-		<PortugueseBR>Texturas de baixa resolução</PortugueseBR>
+		<Portuguese>Texturas de baixa resolução</Portuguese>
 		<French>Textures basse résolution</French>
 		<German>Texturen mit niedriger Auflösung</German>
 		<Italian>Texture a bassa risoluzione</Italian>
@@ -93,7 +93,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_LOWRES_TEXTURES_HELP</Tag>
 		<English>Lower resolution textures will be used</English>
-		<PortugueseBR>Texturas de resolução mais baixa serão usadas</PortugueseBR>
+		<Portuguese>Texturas de resolução mais baixa serão usadas</Portuguese>
 		<French>Des textures basse résolution seront utilisées.</French>
 		<German>Texturen mit geringerer Auflösung werden verwendet</German>
 		<Italian>Verranno utilizzate delle texture a risoluzione minore</Italian>
@@ -103,7 +103,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_NO_MOVIES</Tag>
 		<English>No Movies</English>
-		<PortugueseBR>Sem filmes</PortugueseBR>
+		<Portuguese>Sem filmes</Portuguese>
 		<French>Pas de film</French>
 		<German>Keine Filme</German>
 		<Italian>Nessun filmato</Italian>
@@ -113,7 +113,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHICOPTION_NO_MOVIES_HELP</Tag>
 		<English>Skips Introduction, Revolution, and Victory Movies</English>
-		<PortugueseBR>Pula filmes de introdução, revolução e vitória</PortugueseBR>
+		<Portuguese>Pula filmes de introdução, revolução e vitória</Portuguese>
 		<French>Pour éviter les cinématiques d'introduction, de révolution et de victoire.</French>
 		<German>Einleitung, Revolution und Siegesszenen überspringen</German>
 		<Italian>Salta i filmati di introduzione, rivoluzione e vittoria</Italian>
@@ -123,7 +123,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHIC_OPTION_FROZEN_ANIMATIONS</Tag>
 		<English>Animations Frozen</English>
-		<PortugueseBR>Animações congeladas</PortugueseBR>
+		<Portuguese>Animações congeladas</Portuguese>
 		<French>Animations gelées</French>
 		<German>Animationen gestoppt</German>
 		<Italian>Animazioni bloccate</Italian>
@@ -133,7 +133,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GRAPHIC_OPTION_FROZEN_ANIMATIONS_HELP</Tag>
 		<English>No unit or improvement animations</English>
-		<PortugueseBR>Nenhuma unidade ou animações de melhoria</PortugueseBR>
+		<Portuguese>Nenhuma unidade ou animações de melhoria</Portuguese>
 		<French>Pas d'animations pour les unités ou les améliorations.</French>
 		<German>Keine animierten Einheiten oder Modernisierungen</German>
 		<Italian>Nessuna animazione di unità e miglioramenti</Italian>
@@ -143,7 +143,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYER_OPTION_NO_COMBAT_ZOOM</Tag>
 		<English>No Combat Zoom</English>
-		<PortugueseBR>Sem Zoom de Combate</PortugueseBR>
+		<Portuguese>Sem Zoom de Combate</Portuguese>
 		<French>Aucun zoom de combat</French>
 		<German>Kein Kampfzoom</German>
 		<Italian>Nessuno zoom in combattimento</Italian>
@@ -153,7 +153,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYER_OPTION_NO_COMBAT_ZOOM_HELP</Tag>
 		<English>No camera zooming during combat</English>
-		<PortugueseBR>Sem zoom de câmera durante o combate</PortugueseBR>
+		<Portuguese>Sem zoom de câmera durante o combate</Portuguese>
 		<French>Pas de zoom caméra pendant les combats.</French>
 		<German>Kein Kamerazoom im Kampf</German>
 		<Italian>Disattiva lo zoom della visuale durante i combattimenti</Italian>
@@ -163,7 +163,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYER_OPTION_NO_ENEMY_GLOW</Tag>
 		<English>No Enemy Glow</English>
-		<PortugueseBR>Sem brilho inimigo</PortugueseBR>
+		<Portuguese>Sem brilho inimigo</Portuguese>
 		<French>Pas d'éclairage ennemi</French>
 		<German>Keine Feindkennzeichnung</German>
 		<Italian>Non evidenziare il nemico</Italian>
@@ -173,7 +173,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYER_OPTION_NO_ENEMY_GLOW_HELP</Tag>
 		<English>Enemy units in your territory are not highlighted on the map</English>
-		<PortugueseBR>As unidades inimigas no seu território não são destacadas no mapa</PortugueseBR>
+		<Portuguese>As unidades inimigas no seu território não são destacadas no mapa</Portuguese>
 		<French>Les unités ennemies sur votre territoire ne seront pas surlignées sur la carte.</French>
 		<German>Feindliche Einheiten auf Ihrem Territorium werden nicht auf der Karte gekennzeichnet</German>
 		<Italian>Le unità nemiche nel tuo territorio non vengono segnalate sulla mappa.</Italian>
@@ -183,7 +183,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYER_OPTION_SHOW_HEALTH_BARS</Tag>
 		<English>Show Health Bars</English>
-		<PortugueseBR>Mostrar barras de saúde</PortugueseBR>
+		<Portuguese>Mostrar barras de saúde</Portuguese>
 		<French>Afficher les barres de santé</French>
 		<German>Lebensbalken einblenden</German>
 		<Italian>Mostra le barre della salute</Italian>
@@ -193,7 +193,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYER_OPTION_SHOW_HEALTH_BARS_HELP</Tag>
 		<English>Show unit health bars</English>
-		<PortugueseBR>Mostrar barras de saúde da unidade</PortugueseBR>
+		<Portuguese>Mostrar barras de saúde da unidade</Portuguese>
 		<French>Montrer les barres de santé des unités.</French>
 		<German>Lebensbalken der Einheiten einblenden</German>
 		<Italian>Mostra la barra dell'energia delle unità</Italian>

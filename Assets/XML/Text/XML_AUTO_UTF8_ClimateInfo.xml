@@ -3,7 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CLIMATE_ROCKY</Tag>
 		<English>Rocky</English>
-		<PortugueseBR>Rochoso</PortugueseBR>
+		<Portuguese>Rochoso</Portuguese>
 		<French>Rocheux</French>
 		<German>Felsig</German>
 		<Italian>Continentale</Italian>
@@ -13,7 +13,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CLIMATE_TEMPERATE</Tag>
 		<English>Temperate</English>
-		<PortugueseBR>Temperado</PortugueseBR>
+		<Portuguese>Temperado</Portuguese>
 		<French>Tempéré</French>
 		<German>Gemäßigt</German>
 		<Italian>Temperato</Italian>
@@ -23,7 +23,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CLIMATE_TROPICAL</Tag>
 		<English>Tropical</English>
-		<PortugueseBR>Tropical</PortugueseBR>
+		<Portuguese>Tropical</Portuguese>
 		<French>Tropical</French>
 		<German>Tropisch</German>
 		<Italian>Tropicale</Italian>

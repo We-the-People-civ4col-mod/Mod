@@ -8,7 +8,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_BUTCHER_PEDIA</Tag>
 		<English>[TAB]Butchery is traditional work. Slaughterhouses use butchers to slaughter animals, performing steps repeatedly as specialists on an organized disassembly line. These include stunning (rendering the animal incapacitated), exsanguination (severing the carotid or brachial arteries to facilitate blood removal), skinning (removing the hide) or scalding and dehairing (pork), evisceration (removing the viscera) and splitting (dividing the carcass in half longitudinally).</English>
-		<PortugueseBR>[TAB]Açougue é um trabalho tradicional. Os matadouros utilizam açougueiros para abater os animais, executando etapas repetidamente como especialistas em uma linha de desmontagem organizada. Estes incluem atordoamento (tornando o animal incapacitado), exsanguinação (corte das artérias carótidas ou braquiais para facilitar a remoção do sangue), esfola (remoção da pele) ou escaldamento e depilação (carne de porco), evisceração (remoção das vísceras) e divisão (divisão da carcaça ao meio longitudinalmente).</PortugueseBR>
+		<Portuguese>[TAB]Açougue é um trabalho tradicional. Os matadouros utilizam açougueiros para abater os animais, executando etapas repetidamente como especialistas em uma linha de desmontagem organizada. Estes incluem atordoamento (tornando o animal incapacitado), exsanguinação (corte das artérias carótidas ou braquiais para facilitar a remoção do sangue), esfola (remoção da pele) ou escaldamento e depilação (carne de porco), evisceração (remoção das vísceras) e divisão (divisão da carcaça ao meio longitudinalmente).</Portuguese>
 		<French>[TAB]Une boucherie est un établissement commercial où l'on fait rassir et où l'on découpe et vend au détail de la viande d'animaux de boucherie. Son gérant est un artisan, le boucher. Les boucheries, lorsqu'elles ne prennent pas la forme d'un rayon dans une grande surface alimentaire, sont généralement un commerce de proximité.</French>
 		<German>[TAB]Der Fleischer, auch Metzger, Schlachter ist einer der älteren Handwerksberufe. Fleischer beschäftigen sich mit der Schlachtung und mit der Herstellung von Fleisch- und Wurstwaren, sie arbeiten in Schlachthöfen und in Fleischereien.</German>
 		<Hungarian>[TAB]A hentesmunka hagyományos foglalkozás. A vágóhidakon hentesek végzik az állatok levágását, szakemberekként ismétlődő mozdulatokat végrehajtva egy szervezett bontási soron. Ezek közé tartozik a kábítás (az állat mozgásképtelenné tétele), a kivérzés (a nyaki vagy felkari artériák elvágása a vér eltávolításának megkönnyítése érdekében), a nyúzás (a bőr eltávolítása) vagy a forrázás és szőrtelenítés (sertéshús), a belek eltávolítása (a zsigerek eltávolítása) és a hasítás (a tetem hosszirányban történő kettévágása).</Hungarian>
@@ -16,7 +16,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_WINEMAKER_PEDIA</Tag>
 		<English>[TAB]Wine, a beverage made from fermented grapes, was first produced as early as 6000 BC. Its use spread throughout the Middle East and Egypt, and it quickly became a popular beverage of the ancient world. Grapes used for the making of wine are grown in many different regions of the world. Most vineyards are located in hills and valleys of temperate regions. Wine making as an industry has been perfected over several centuries. Many regions such as the Rhine and Loire valleys of Europe are well known for their fine wines, and derive a significant portion of their economy from wine making.</English>
-		<PortugueseBR>[TAB]O vinho, uma bebida feita de uvas fermentadas, foi produzido pela primeira vez em 6.000 a.C. Seu uso se espalhou por todo o Oriente Médio e Egito, e rapidamente se tornou uma bebida popular no mundo antigo. As uvas utilizadas na produção de vinho são cultivadas em diversas regiões do mundo. A maioria dos vinhedos está localizada em colinas e vales de regiões temperadas. A produção de vinho como indústria foi aperfeiçoada ao longo de vários séculos. Muitas regiões, como os vales do Reno e do Loire, na Europa, são bem conhecidas pelos seus vinhos finos e obtêm uma parte significativa da sua economia da produção de vinho.</PortugueseBR>
+		<Portuguese>[TAB]O vinho, uma bebida feita de uvas fermentadas, foi produzido pela primeira vez em 6.000 a.C. Seu uso se espalhou por todo o Oriente Médio e Egito, e rapidamente se tornou uma bebida popular no mundo antigo. As uvas utilizadas na produção de vinho são cultivadas em diversas regiões do mundo. A maioria dos vinhedos está localizada em colinas e vales de regiões temperadas. A produção de vinho como indústria foi aperfeiçoada ao longo de vários séculos. Muitas regiões, como os vales do Reno e do Loire, na Europa, são bem conhecidas pelos seus vinhos finos e obtêm uma parte significativa da sua economia da produção de vinho.</Portuguese>
 		<French>[TAB]Le vin est une boisson obtenue par la fermentation du raisin. Sa production débute dès 6000 avant notre ère. Sa consommation se répand à travers tout le Moyen-Orient et l'Égypte, et il devient rapidement une boisson très populaire dans le monde antique. Le raisin utilisé dans la fabrication du vin est cultivé dans de nombreuses régions du monde. Les vignes sont généralement situées sur les coteaux et dans les vallées des régions tempérées. Les procédés de fabrication du vin ont été perfectionnés au cours des siècles. De nombreuses régions, comme les vallées du Rhin et de la Loire, sont réputées pour leurs bons vins, et une grande partie de leur économie est liée à la fabrication du vin.</French>
 		<German>[TAB]Der aus fermentierten Trauben hergestellte Wein wurde erstmals um 6000 vor Christus produziert und war im Nahen Osten und in Ägypten weit verbreitet. Das Getränk entwickelte sich schnell zu einem der beliebtesten kulinarischen Genüsse der Antike. Die für die Weinherstellung benötigten Trauben werden in vielen verschiedenen Gebieten der Welt angebaut, die meisten Weinhänge befinden sich jedoch in den Hügeln und Tälern von Regionen mit gemäßigtem Klima. Im Laufe mehrerer Jahrhunderte wurde die industrielle Weinherstellung immer weiter perfektioniert.[PARAGRAPH:1]Viele Anbaugebiete wie die Rhein- und Loiretäler in Europa sind für ihre feinen Weine bekannt und beziehen einen Großteil ihrer wirtschaftlichen Erträge aus der Weinproduktion.</German>
 		<Italian>[TAB]Realizzato dalla fermentazione dell'uva, il primo vino risale circa al 6000 a. C. e si diffuse rapirdamente attraverso il Medio Oriente e l'Egitto, diventando una delle bevande più popolari del mondo antico. Le qualità d'uva usate per la realizzazione del vino crescono in differenti zone del mondo; la maggior parte delle vigne si possono trovare sulle colline e nelle vallate di regioni dal clima temperato. L'industria del vino è andata perfezionandosi nel corso dei secoli: molte regioni europee, come le vallate del Reno e della Loira, sono rinomate per la produzione di ottimi vini, principale forma di economia della zona.</Italian>
@@ -26,7 +26,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GOLD_MINER_STRATEGY</Tag>
 		<English>To make the most of a bountiful gold vein, bring in an [COLOR_UNIT_TEXT]expert prospector[COLOR_REVERT]. Expert prospectors produce double the amount of [COLOR_HIGHLIGHT_TEXT]gold[COLOR_REVERT] from a gold-producing tile!</English>
-		<PortugueseBR>Para aproveitar ao máximo um veio de ouro abundante, contrate um [COLOR_UNIT_TEXT]garimpeiro especialista[COLOR_REVERT]. Garimpeiros experientes produzem o dobro da quantidade de [COLOR_HIGHLIGHT_TEXT]ouro[COLOR_REVERT] de uma peça produtora de ouro!</PortugueseBR>
+		<Portuguese>Para aproveitar ao máximo um veio de ouro abundante, contrate um [COLOR_UNIT_TEXT]garimpeiro especialista[COLOR_REVERT]. Garimpeiros experientes produzem o dobro da quantidade de [COLOR_HIGHLIGHT_TEXT]ouro[COLOR_REVERT] de uma peça produtora de ouro!</Portuguese>
 		<French>Pour exploiter au mieux une importante veine d'[COLOR_HIGHLIGHT_TEXT]Or[COLOR_REVERT], engagez un [COLOR_UNIT_TEXT]Expert prospecteur[COLOR_REVERT]. Les Experts prospecteurs sont capables d'extraire deux fois plus d'[COLOR_HIGHLIGHT_TEXT]Or[COLOR_REVERT] que la normale !</French>
 		<German>Um eine Goldader optimal zu nutzen, sollten Sie einen [COLOR_UNIT_TEXT]Erfahrenen Schürfer[COLOR_REVERT] daran arbeiten lassen. Erfahrene Goldminenarbeiter können doppelt so viel [COLOR_HIGHLIGHT_TEXT]Gold[COLOR_REVERT] von einem Gold produzierenden Geländefeld fördern!</German>
 		<Italian>Per sfruttare al massimo una ricca vena d'oro, chiama un [COLOR_UNIT_TEXT]minatore d'oro esperto[COLOR_REVERT]. I minatori d'oro esperti sono in grado di raddoppiare la quantità di [COLOR_HIGHLIGHT_TEXT]Oro[COLOR_REVERT] ottenuta dalla casella!</Italian>
@@ -36,7 +36,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GEMSTONES_MINER_STRATEGY</Tag>
 		<English>To make the most of a bountiful gemstone deposit, bring in an [COLOR_UNIT_TEXT]expert prospector[COLOR_REVERT]. Expert prospectors produce double the amount of [COLOR_HIGHLIGHT_TEXT]gems[COLOR_REVERT] from a gold-producing tile!</English>
-		<PortugueseBR>Para aproveitar ao máximo um depósito abundante de pedras preciosas, contrate um [COLOR_UNIT_TEXT]garimpeiro especialista[COLOR_REVERT]. Garimpeiros experientes produzem o dobro da quantidade de [COLOR_HIGHLIGHT_TEXT]joias[COLOR_REVERT] de uma peça de produção de ouro!</PortugueseBR>
+		<Portuguese>Para aproveitar ao máximo um depósito abundante de pedras preciosas, contrate um [COLOR_UNIT_TEXT]garimpeiro especialista[COLOR_REVERT]. Garimpeiros experientes produzem o dobro da quantidade de [COLOR_HIGHLIGHT_TEXT]joias[COLOR_REVERT] de uma peça de produção de ouro!</Portuguese>
         <French>Pour exploiter au mieux un important gisement de [COLOR_HIGHLIGHT_TEXT]Pierres précieuses[COLOR_REVERT], engagez un [COLOR_UNIT_TEXT]Expert prospecteur[COLOR_REVERT]. Les Experts prospecteurs sont capables d'extraire deux fois plus de [COLOR_HIGHLIGHT_TEXT]Pierres précieuses[COLOR_REVERT] que la normale !</French>
 		<German>Um ein Edelsteinvorkommen optimal zu nutzen, sollten Sie einen [COLOR_UNIT_TEXT]Erfahrenen Schürfer[COLOR_REVERT] daran arbeiten lassen. Erfahrene Schürfer können doppelt so viel [COLOR_HIGHLIGHT_TEXT]Edelsteine[COLOR_REVERT] von einem Geländefeld fördern!</German>
 		<Hungarian>Ahhoz, hogy a legjobban kihasználhasd a gazdag drágakő-lelőhelyeket, vegyél fel egy [COLOR_UNIT_TEXT]tapasztalt aranyásót[COLOR_REVERT]. A tapasztalt aranyásók kétszer annyi [COLOR_HIGHLIGHT_TEXT]drágakövet[COLOR_REVERT] gyűjtenek a drágakövet termelő mezőkről!</Hungarian>
@@ -44,7 +44,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GATHER_BOAT_FISHING</Tag>
 		<English>[ICON_BULLET]Can gather fish from sea resources</English>
-		<PortugueseBR>[ICON_BULLET]Pode coletar peixes de recursos marinhos</PortugueseBR>
+		<Portuguese>[ICON_BULLET]Pode coletar peixes de recursos marinhos</Portuguese>
 		<French>[ICON_BULLET]Peut pêcher du poisson à partir de ressources marines.</French>
 		<German>[ICON_BULLET]Kann Fisch auf Bonusressourcen gewinnen</German>
 		<Russian>[ICON_BULLET]Может ловить рыбу на определенных морских ресурсах</Russian>
@@ -53,7 +53,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_FISHING_UNLOAD</Tag>
 		<English>Automate fishing</English>
-		<PortugueseBR>Automatize a pesca</PortugueseBR>
+		<Portuguese>Automatize a pesca</Portuguese>
 		<French>Automatiser la pêche</French>
 		<German>Fischfang automatisieren</German>
 		<Russian>Автоматизировать рыбную ловлю</Russian>
@@ -62,7 +62,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_FISHING_UNLOAD_HELP</Tag>
 		<English>Will gather fish from sea resources until the ship is full, then unload cargo at the selected port.</English>
-		<PortugueseBR>Coletará peixes dos recursos marinhos até que o navio esteja cheio e depois descarregará a carga no porto selecionado.</PortugueseBR>
+		<Portuguese>Coletará peixes dos recursos marinhos até que o navio esteja cheio e depois descarregará a carga no porto selecionado.</Portuguese>
 		<French>Collecter de la Nouriture provenant de ressources marines jusqu'à ce que le bateau soit plein, puis vider la cargaison dans le port sélectionné.</French>
 		<German>Schiff geht vollautomatisch auf Fischfang und bringt diesen in eine Hafenstadt, wenn der Laderaum voll ist.</German>
 		<Italian>Colletta alimentare a partire dai pesci fino balena o la nave è piena</Italian>
@@ -73,7 +73,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CANNOT_FISH_CITY_RADIUS</Tag>
 		<English>[COLOR_PLAYER_RED]Must be outside city radius[COLOR_REVERT]</English>
-		<PortugueseBR>[COLOR_PLAYER_RED]Deve estar fora do raio da cidade[COLOR_REVERT]</PortugueseBR>
+		<Portuguese>[COLOR_PLAYER_RED]Deve estar fora do raio da cidade[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_PLAYER_RED]Doit être hors du rayon de la colonie.[COLOR_REVERT]</French>
 		<German>[COLOR_PLAYER_RED]Muss außerhalb des Stadtradius liegen[COLOR_REVERT]</German>
 		<Russian>[COLOR_PLAYER_RED]Должен быть за пределами радиуса колонии[COLOR_REVERT]</Russian>
@@ -82,7 +82,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CANNOT_FISH_CITY_RADIUS_PLOT_WORKED</Tag>
 		<English>[COLOR_PLAYER_RED]This spot is already being worked by the neighbouring city[COLOR_REVERT]</English>
-		<PortugueseBR>[COLOR_PLAYER_RED]Esse local já está sendo trabalhado pela cidade vizinha[COLOR_REVERT]</PortugueseBR>
+		<Portuguese>[COLOR_PLAYER_RED]Esse local já está sendo trabalhado pela cidade vizinha[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_PLAYER_RED]Cet emplacement est déjà exploité par une colonie environnante.[COLOR_REVERT]</French>
 		<German>[COLOR_PLAYER_RED]Dieser Platz wird bereits durch eine Stadt bewirtschaftet[COLOR_REVERT]</German>
 		<Russian>[COLOR_PLAYER_RED]Это место уже обрабатывается соседним городом[COLOR_REVERT]</Russian>
@@ -91,7 +91,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CANNOT_FISH_NO_FISH</Tag>
 		<English>[COLOR_PLAYER_RED]Fish bonus is required[COLOR_REVERT]</English>
-		<PortugueseBR>[COLOR_PLAYER_RED]O bônus de peixe é obrigatório[COLOR_REVERT]</PortugueseBR>
+		<Portuguese>[COLOR_PLAYER_RED]O bônus de peixe é obrigatório[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_PLAYER_RED]Nécessite une ressource bonus de Poisson.[COLOR_REVERT]</French>
 		<German>[COLOR_PLAYER_RED]Fischvorkommen wird benötigt[COLOR_REVERT]</German>
 		<Russian>[COLOR_PLAYER_RED]Требуется рыбный бонус[COLOR_REVERT]</Russian>
@@ -100,7 +100,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CANNOT_FISH_NEEDS_FISHING_BOAT</Tag>
 		<English>[COLOR_PLAYER_RED]Fishing boat required to gather resource[COLOR_REVERT]</English>
-		<PortugueseBR>[COLOR_PLAYER_RED]Barco de pesca necessário para coletar recursos[COLOR_REVERT]</PortugueseBR>
+		<Portuguese>[COLOR_PLAYER_RED]Barco de pesca necessário para coletar recursos[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_PLAYER_RED]Un bateau de pêche est nécessaire pour prélever des ressources.[COLOR_REVERT]</French>
 		<German>[COLOR_PLAYER_RED]Fischerboot wird benötigt[COLOR_REVERT]</German>
 		<Russian>[COLOR_PLAYER_RED]Для сбора ресурсов требуется рыбацкая лодка[COLOR_REVERT]</Russian>
@@ -109,7 +109,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CANNOT_FISH_FULL</Tag>
 		<English>[COLOR_PLAYER_RED]No more room in cargo for food[COLOR_REVERT]</English>
-		<PortugueseBR>[COLOR_PLAYER_RED]Não há mais espaço na carga para alimentos[COLOR_REVERT]</PortugueseBR>
+		<Portuguese>[COLOR_PLAYER_RED]Não há mais espaço na carga para alimentos[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_PLAYER_RED]Il n'y a plus de place pour de la Nourriture.[COLOR_REVERT]</French>
 		<German>[COLOR_PLAYER_RED]Der Frachtraum ist voll![COLOR_REVERT]</German>
 		<Russian>[COLOR_PLAYER_RED]В грузовом отсеке больше нет места для еды[COLOR_REVERT]</Russian>
@@ -118,7 +118,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CANNOT_FISH_TAKEN</Tag>
 		<English>[COLOR_PLAYER_RED]This spot is taken. Only one fishing boat per resource[COLOR_REVERT]</English>
-		<PortugueseBR>[COLOR_PLAYER_RED]Esta vaga está ocupada. Apenas um barco de pesca por recurso[COLOR_REVERT]</PortugueseBR>
+		<Portuguese>[COLOR_PLAYER_RED]Esta vaga está ocupada. Apenas um barco de pesca por recurso[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_PLAYER_RED]Cet emplacement est occupé : il ne peut y avoir qu'un Navire de pêche par ressource.[COLOR_REVERT]</French>
 		<German>[COLOR_PLAYER_RED]Hier geht bereits ein anderes Schiff auf die Fang![COLOR_REVERT]</German>
 		<Russian>[COLOR_PLAYER_RED]Это место занято, только одна рыбацкая лодка может обрабатывать один ресурс[COLOR_REVERT]</Russian>
@@ -127,7 +127,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FISHER_FULL</Tag>
 		<English>Your %s1_unit is filled to the brim with food from the sea.</English>
-		<PortugueseBR>Seu %s1_unit está cheio até a borda com comida do mar.</PortugueseBR>
+		<Portuguese>Seu %s1_unit está cheio até a borda com comida do mar.</Portuguese>
 		<French>Votre %s1_unit est rempli à ras bord de Nourriture de la mer.</French>
 		<German>Das Schiff %s1_unit hat jetzt so viel Fisch an Bord, wie es fassen kann.</German>
 		<Italian>Il vostro %s1_unit è riempito al bordo con il cibo dal mare.</Italian>
@@ -138,7 +138,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FISHER_HELP</Tag>
 		<English>(%s1_symbol_list per turn)</English>
-		<PortugueseBR>(%s1_symbol_list por turno)</PortugueseBR>
+		<Portuguese>(%s1_symbol_list por turno)</Portuguese>
 		<French>(%s1_symbol_list par tour)</French>
 		<German>(%s1_symbol_list pro Runde)</German>
 		<Italian>(%s1_symbol_list per turno)</Italian>

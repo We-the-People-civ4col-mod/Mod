@@ -3,7 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_DEVELOPING</Tag>
 		<English>Developing</English>
-		<PortugueseBR>Desenvolvendo</PortugueseBR>
+		<Portuguese>Desenvolvendo</Portuguese>
 		<French>grandissante</French>
 		<German>Wachsend</German>
 		<Italian>In sviluppo</Italian>
@@ -13,7 +13,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_FLEDGLING</Tag>
 		<English>Fledgling</English>
-		<PortugueseBR>Novato</PortugueseBR>
+		<Portuguese>Novato</Portuguese>
 		<French>naissante</French>
 		<German>Beginnend</German>
 		<Italian>Principiante</Italian>
@@ -23,7 +23,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_INFLUENTIAL</Tag>
 		<English>Influential</English>
-		<PortugueseBR>Influente</PortugueseBR>
+		<Portuguese>Influente</Portuguese>
 		<French>influente</French>
 		<German>Einflussreich</German>
 		<Italian>Influente</Italian>
@@ -33,7 +33,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_LEGENDARY</Tag>
 		<English>Legendary</English>
-		<PortugueseBR>Lendário</PortugueseBR>
+		<Portuguese>Lendário</Portuguese>
 		<French>légendaire</French>
 		<German>Legendär</German>
 		<Italian>Leggendaria</Italian>
@@ -43,7 +43,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_NONE</Tag>
 		<English>None</English>
-		<PortugueseBR>Nenhum</PortugueseBR>
+		<Portuguese>Nenhum</Portuguese>
 		<French>inexistante</French>
 		<German>Null</German>
 		<Italian>Nessuno</Italian>
@@ -53,7 +53,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_POOR</Tag>
 		<English>Poor</English>
-		<PortugueseBR>Pobre</PortugueseBR>
+		<Portuguese>Pobre</Portuguese>
 		<French>balbutiante</French>
 		<German>Gering</German>
 		<Italian>Povero</Italian>
@@ -63,7 +63,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_REFINED</Tag>
 		<English>Refined</English>
-		<PortugueseBR>Refinado</PortugueseBR>
+		<Portuguese>Refinado</Portuguese>
 		<French>raffinée</French>
 		<German>Fortgeschritten</German>
 		<Italian>Raffinato</Italian>

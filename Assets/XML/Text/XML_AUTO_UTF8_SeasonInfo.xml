@@ -3,6 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SEASON_SPRING</Tag>
 		<English>Spring</English>
+		<Portuguese>Primavera</Portuguese>
 		<French>
 			<Text>Printemps</Text>
 			<Gender>Male</Gender>
@@ -28,6 +29,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SEASON_SUMMER</Tag>
 		<English>Summer</English>
+		<Portuguese>Verão</Portuguese>
 		<French>
 			<Text>Été</Text>
 			<Gender>Male</Gender>
@@ -53,6 +55,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SEASON_FALL</Tag>
 		<English>Fall</English>
+		<Portuguese>Cair</Portuguese>
 		<French>
 			<Text>Automne</Text>
 			<Gender>Male</Gender>
@@ -78,6 +81,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SEASON_WINTER</Tag>
 		<English>Winter</English>
+		<Portuguese>Inverno</Portuguese>
 		<French>
 			<Text>Hiver</Text>
 			<Gender>Male</Gender>

@@ -3,6 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DOMAIN_IMMOBILE</Tag>
 		<English>Immobile Units</English>
+		<Portuguese>Unidades Imóveis</Portuguese>
 		<French>
 			<Text>Unités statiques</Text>
 			<Gender>Female</Gender>
@@ -28,6 +29,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DOMAIN_LAND</Tag>
 		<English>Land Units</English>
+		<Portuguese>Unidades Terrestres</Portuguese>
 		<French>
 			<Text>Unités terrestres</Text>
 			<Gender>Female</Gender>
@@ -53,6 +55,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DOMAIN_SEA</Tag>
 		<English>Water Units</English>
+		<Portuguese>Unidades de Água</Portuguese>
 		<French>
 			<Text>Unités navales</Text>
 			<Gender>Female</Gender>

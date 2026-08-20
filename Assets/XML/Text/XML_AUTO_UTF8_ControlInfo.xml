@@ -3,7 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_ACHIEVE_SCREEN</Tag>
 		<English>Chronicle</English>
-		<PortugueseBR>Crônica</PortugueseBR>
+		<Portuguese>Crônica</Portuguese>
 		<French>Chronique</French>
 		<German>Ereignischronik</German>
 		<Italian>Cronaca</Italian>
@@ -18,7 +18,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_DIPLOMACY</Tag>
 		<English>Start Diplomacy</English>
-		<PortugueseBR>Comece a Diplomacia</PortugueseBR>
+		<Portuguese>Comece a Diplomacia</Portuguese>
 		<French>Lancer diplomatie</French>
 		<German>Diplomatische Verhandlungen beginnen</German>
 		<Italian>Avvia diplomazia</Italian>
@@ -33,7 +33,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_TURN_LOG</Tag>
 		<English>Event Log</English>
-		<PortugueseBR>Registro de eventos</PortugueseBR>
+		<Portuguese>Registro de eventos</Portuguese>
 		<French>Journal des événements</French>
 		<German>Ereignis-Log</German>
 		<Italian>Registro degli eventi</Italian>
@@ -48,7 +48,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Open Main Menu[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</English>
-		<PortugueseBR>[COLOR_HIGHLIGHT_TEXT]Abrir menu principal[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</PortugueseBR>
+		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Abrir menu principal[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_HIGHLIGHT_TEXT]Ouvrir le menu principal[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Echap &gt;[COLOR_REVERT]</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Hauptmenü öffnen[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]Apri menu principale[COLOR_REVERT] [COLOR:140:255:40:255]&lt; Esc &gt;[COLOR_REVERT]</Italian>
@@ -58,7 +58,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_CIVILOPEDIA</Tag>
 		<English>Colopedia</English>
-		<PortugueseBR>Colopédia</PortugueseBR>
+		<Portuguese>Colopédia</Portuguese>
 		<French>Colopédie</French>
 		<German>Colopädie</German>
 		<Italian>Colopedia</Italian>
@@ -73,7 +73,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_DOMESTIC_SCREEN</Tag>
 		<English>Domestic Advisor</English>
-		<PortugueseBR>Conselheiro Doméstico</PortugueseBR>
+		<Portuguese>Conselheiro Doméstico</Portuguese>
 		<French>Conseiller aux affaires intérieures</French>
 		<German>Stadtliste</German>
 		<Italian>Consigliere interno</Italian>
@@ -88,7 +88,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_EUROPE_SCREEN</Tag>
 		<English>Europe</English>
-		<PortugueseBR>Europa</PortugueseBR>
+		<Portuguese>Europa</Portuguese>
 		<French>Europe</French>
 		<German>Europa</German>
 		<Italian>Europe</Italian>
@@ -103,7 +103,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_AFRICA_SCREEN</Tag>
 		<English>Africa</English>
-		<PortugueseBR>África</PortugueseBR>
+		<Portuguese>África</Portuguese>
 		<French>Afrique</French>
 		<German>Afrika</German>
 		<Italian>Africa</Italian>
@@ -118,6 +118,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_PORT_ROYAL_SCREEN</Tag>
 		<English>Port Royal</English>
+		<Portuguese>Porto Real</Portuguese>
 		<French>Port Royal</French>
 		<German>Port Royal</German>
 		<Italian>Port Royal</Italian>
@@ -132,7 +133,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_REVOLUTION_SCREEN</Tag>
 		<English>Revolution Advisor</English>
-		<PortugueseBR>Conselheiro da Revolução</PortugueseBR>
+		<Portuguese>Conselheiro da Revolução</Portuguese>
 		<French>Conseiller en révolution</French>
 		<German>Revolution</German>
 		<Italian>Consigliere per la rivoluzione</Italian>
@@ -147,7 +148,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_FOREIGN_SCREEN</Tag>
 		<English>Foreign Advisor</English>
-		<PortugueseBR>Conselheiro Estrangeiro</PortugueseBR>
+		<Portuguese>Conselheiro Estrangeiro</Portuguese>
 		<French>Conseiller diplomatique</French>
 		<German>Diplomatie</German>
 		<Italian>Consigliere estero</Italian>
@@ -162,7 +163,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_MILITARY_SCREEN</Tag>
 		<English>Military Advisor</English>
-		<PortugueseBR>Conselheiro Militar</PortugueseBR>
+		<Portuguese>Conselheiro Militar</Portuguese>
 		<French>Conseiller militaire</French>
 		<German>Einheitenliste</German>
 		<Italian>Consigliere militare</Italian>
@@ -176,7 +177,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_FATHER_SCREEN</Tag>
 		<English>Founding Fathers</English>
-		<PortugueseBR>Pais Fundadores</PortugueseBR>
+		<Portuguese>Pais Fundadores</Portuguese>
 		<French>Pères fondateurs</French>
 		<German>Gründerväter</German>
 		<Italian>Padri Fondatori</Italian>
@@ -191,7 +192,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_CONGRESS_SCREEN</Tag>
 		<English>Continental Congress</English>
-		<PortugueseBR>Congresso Continental</PortugueseBR>
+		<Portuguese>Congresso Continental</Portuguese>
 		<French>Congrès continental</French>
 		<German>Kontinentalkongress</German>
 		<Italian>Congresso continentale</Italian>
@@ -206,7 +207,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_VICTORY_SCREEN</Tag>
 		<English>Victory Conditions</English>
-		<PortugueseBR>Condições de Vitória</PortugueseBR>
+		<Portuguese>Condições de Vitória</Portuguese>
 		<French>Conditions de victoire</French>
 		<German>Siegbedingungen</German>
 		<Italian>Condizioni di vittoria</Italian>
@@ -220,7 +221,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_INFO</Tag>
 		<English>Info Screen</English>
-		<PortugueseBR>Tela de informações</PortugueseBR>
+		<Portuguese>Tela de informações</Portuguese>
 		<French>Ecran d'informations</French>
 		<German>Statistik</German>
 		<Italian>Schermata delle informazioni</Italian>
@@ -234,7 +235,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_LOAD_GAME</Tag>
 		<English>Load Game</English>
-		<PortugueseBR>Carregar jogo</PortugueseBR>
+		<Portuguese>Carregar jogo</Portuguese>
 		<French>Charger une partie</French>
 		<German>Spiel laden</German>
 		<Italian>Carica partita</Italian>
@@ -248,7 +249,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SAVE_NORMAL</Tag>
 		<English>Save Game</English>
-		<PortugueseBR>Salvar jogo</PortugueseBR>
+		<Portuguese>Salvar jogo</Portuguese>
 		<French>Sauvegarder</French>
 		<German>Spiel speichern</German>
 		<Italian>Salva partita</Italian>
@@ -262,7 +263,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_ADMIN_DETAILS</Tag>
 		<English>Game Details</English>
-		<PortugueseBR>Detalhes do jogo</PortugueseBR>
+		<Portuguese>Detalhes do jogo</Portuguese>
 		<French>Détails de la partie</French>
 		<German>Spieldetails</German>
 		<Italian>Dettagli partita</Italian>
@@ -276,7 +277,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_DETAILS</Tag>
 		<English>Your Details</English>
-		<PortugueseBR>Seus detalhes</PortugueseBR>
+		<Portuguese>Seus detalhes</Portuguese>
 		<French>Vos coordonnées</French>
 		<German>Euer Steckbrief</German>
 		<Italian>I tuoi dettagli</Italian>
@@ -290,7 +291,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_AUTOMOVES</Tag>
 		<English>Triggers all automated moves</English>
-		<PortugueseBR>Aciona todos os movimentos automatizados</PortugueseBR>
+		<Portuguese>Aciona todos os movimentos automatizados</Portuguese>
 		<French>Déclenche tous les mouvements automatisés</French>
 		<German>Alle automatisierten Züge auslösen</German>
 		<Italian>Attiva tutti i movimenti automatici</Italian>
@@ -304,7 +305,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_CENTERONSELECTION</Tag>
 		<English>Center on selection</English>
-		<PortugueseBR>Centralizar na seleção</PortugueseBR>
+		<Portuguese>Centralizar na seleção</Portuguese>
 		<French>Centrer sur la sélection</French>
 		<German>Auf Auswahl zentrieren</German>
 		<Italian>Centra sulla selezione</Italian>
@@ -319,7 +320,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_CHAT_ALL</Tag>
 		<English>Chat Log</English>
-		<PortugueseBR>Registro de bate-papo</PortugueseBR>
+		<Portuguese>Registro de bate-papo</Portuguese>
 		<French>Journal</French>
 		<German>Chat-Log</German>
 		<Italian>Registro chat</Italian>
@@ -341,7 +342,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_CYCLEUNIT</Tag>
 		<English>Cycle units</English>
-		<PortugueseBR>Unidades de ciclo</PortugueseBR>
+		<Portuguese>Unidades de ciclo</Portuguese>
 		<French>Faire défiler les unités</French>
 		<German>Durch Einheiten schalten</German>
 		<Italian>Scorri unità</Italian>
@@ -354,7 +355,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_CYCLEUNIT_ALT</Tag>
 		<English>Cycle units ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</English>
-		<PortugueseBR>Unidades de ciclo ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</PortugueseBR>
+		<Portuguese>Unidades de ciclo ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</Portuguese>
 		<French>Faire défiler les unités ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</French>
 		<German>Durch Einheiten schalten ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</German>
 		<Italian>Scorri unità ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</Italian>
@@ -367,7 +368,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_LASTUNIT</Tag>
 		<English>Cycle units (backwards)</English>
-		<PortugueseBR>Unidades de ciclo (para trás)</PortugueseBR>
+		<Portuguese>Unidades de ciclo (para trás)</Portuguese>
 		<French>Faire défiler unités (en arrière)</French>
 		<German>Durch Einheiten schalten (rückwärts)</German>
 		<Italian>Scorri unità (indietro)</Italian>
@@ -380,7 +381,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_CYCLE_CAMERA_FLYING_MODES</Tag>
 		<English>Cycle camera flying modes</English>
-		<PortugueseBR>Ciclo de modos de vôo da câmera</PortugueseBR>
+		<Portuguese>Ciclo de modos de vôo da câmera</Portuguese>
 		<French>Faire défiler modes de caméra libre</French>
 		<German>Durch Kameraflugmodi schalten</German>
 		<Italian>Scorri le visuali dall'alto</Italian>
@@ -393,7 +394,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_FLYING_CAMERA</Tag>
 		<English>Toggle flying camera</English>
-		<PortugueseBR>Alternar câmera voadora</PortugueseBR>
+		<Portuguese>Alternar câmera voadora</Portuguese>
 		<French>Activer/désactiver la caméra libre</French>
 		<German>Kameraflug umschalten</German>
 		<Italian>Abilita/disabilita la visuale dall'alto</Italian>
@@ -406,7 +407,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_ISOMETRIC_CAMERA_LEFT</Tag>
 		<English>Turn camera 45 degrees left</English>
-		<PortugueseBR>Gire a câmera 45 graus para a esquerda</PortugueseBR>
+		<Portuguese>Gire a câmera 45 graus para a esquerda</Portuguese>
 		<French>Faire pivoter la caméra de 45° à gauche</French>
 		<German>Kamera um 45 Grad nach links drehen</German>
 		<Italian>Sposta la visuale di 45° a sinistra</Italian>
@@ -419,7 +420,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_ISOMETRIC_CAMERA_RIGHT</Tag>
 		<English>Turn camera 45 degrees right</English>
-		<PortugueseBR>Vire a câmera 45 graus para a direita</PortugueseBR>
+		<Portuguese>Vire a câmera 45 graus para a direita</Portuguese>
 		<French>Faire pivoter la caméra de 45° à droite</French>
 		<German>Kamera um 45 Grad nach rechts drehen</German>
 		<Italian>Sposta la visuale di 45° a destra</Italian>
@@ -432,7 +433,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_ENDTURN</Tag>
 		<English>End of Turn</English>
-		<PortugueseBR>Fim do turno</PortugueseBR>
+		<Portuguese>Fim do turno</Portuguese>
 		<French>Fin du tour</French>
 		<German>Rundenende</German>
 		<Italian>Fine del turno</Italian>
@@ -446,7 +447,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_ENDTURN_ALT</Tag>
 		<English>End of Turn ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</English>
-		<PortugueseBR>Fim do Turno ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</PortugueseBR>
+		<Portuguese>Fim do Turno ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</Portuguese>
 		<French>Fin du tour ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</French>
 		<German>Rundenende ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</German>
 		<Italian>Fine del turno ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</Italian>
@@ -460,7 +461,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_FORCEENDTURN</Tag>
 		<English>Force End of Turn</English>
-		<PortugueseBR>Forçar fim do turno</PortugueseBR>
+		<Portuguese>Forçar fim do turno</Portuguese>
 		<French>Forcer la fin du tour</French>
 		<German>Rundenende erzwingen</German>
 		<Italian>Forza la fine del turno</Italian>
@@ -473,7 +474,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_FREE_COLONY</Tag>
 		<English>Select the colonies to which you wish to grant independence</English>
-		<PortugueseBR>Selecione as colônias às quais deseja conceder independência</PortugueseBR>
+		<Portuguese>Selecione as colônias às quais deseja conceder independência</Portuguese>
 		<French>Sélectionnez les colonies auxquelles vous souhaitez accorder l'indépendance</French>
 		<German>Wählt die Kolonien aus, denen Ihr Unabhängigkeit verleihen möchtet</German>
 		<Italian>Seleziona le colonie che vuoi rendere indipendenti</Italian>
@@ -494,7 +495,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_HALL_OF_FAME</Tag>
 		<English>View Hall of Fame</English>
-		<PortugueseBR>Ver Hall da Fama</PortugueseBR>
+		<Portuguese>Ver Hall da Fama</Portuguese>
 		<French>Voir le Panthéon</French>
 		<German>Annalen</German>
 		<Italian>Categoria Dei Migliori</Italian>
@@ -508,7 +509,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_MOUSE_FLYING_CAMERA</Tag>
 		<English>Unlock flying camera mouse</English>
-		<PortugueseBR>Desbloqueie o mouse da câmera voadora</PortugueseBR>
+		<Portuguese>Desbloqueie o mouse da câmera voadora</Portuguese>
 		<French>Débloquer caméra libre à la souris</French>
 		<German>Maus-Kameraflug aktivieren</German>
 		<Italian>Sblocca il movimento della visuale dall'alto con il mouse</Italian>
@@ -521,7 +522,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_NEXTCITY</Tag>
 		<English>Next settlement</English>
-		<PortugueseBR>Próxima liquidação</PortugueseBR>
+		<Portuguese>Próxima colônia</Portuguese>
 		<French>Colonie suivante</French>
 		<German>Nächste Siedlung</German>
 		<Italian>Insediamento successivo</Italian>
@@ -535,7 +536,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_PREVCITY</Tag>
 		<English>Previous settlement</English>
-		<PortugueseBR>Liquidação anterior</PortugueseBR>
+		<Portuguese>Colônia anterior</Portuguese>
 		<French>Colonie précédente</French>
 		<German>Vorherige Siedlung</German>
 		<Italian>Insediamento precedente</Italian>
@@ -565,7 +566,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_OPTIONS_SCREEN</Tag>
 		<English>Options Screen</English>
-		<PortugueseBR>Tela de opções</PortugueseBR>
+		<Portuguese>Tela de opções</Portuguese>
 		<French>Ecran des options</French>
 		<German>Optionen</German>
 		<Italian>Schermata delle opzioni</Italian>
@@ -579,7 +580,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_ORTHO_CAMERA</Tag>
 		<English>Orthographic camera</English>
-		<PortugueseBR>Câmera ortográfica</PortugueseBR>
+		<Portuguese>Câmera ortográfica</Portuguese>
 		<French>Caméra orthographique</French>
 		<German>Fixierte Kamera</German>
 		<Italian>Visuale ortografica</Italian>
@@ -592,7 +593,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_PING</Tag>
 		<English>Ping</English>
-		<PortugueseBR>Pingar</PortugueseBR>
+		<Portuguese>Pingar</Portuguese>
 		<French>Balise</French>
 		<German>Pingen</German>
 		<Italian>Segnala</Italian>
@@ -601,7 +602,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_PING_HELP</Tag>
 		<English>Ping a plot to bring it to the attention of your team mates</English>
-		<PortugueseBR>Faça ping em um enredo para chamar a atenção de seus companheiros de equipe</PortugueseBR>
+		<Portuguese>Faça ping em um enredo para chamar a atenção de seus companheiros de equipe</Portuguese>
 		<French>Désigner un terrain pour y attirer l'attention de vos coéquipiers</French>
 		<German>Pingen Sie ein Geländefeld an, um Ihre Mitstreiter darauf aufmerksam zu machen</German>
 		<Italian>Segnala un punto per richiamare l'attenzione dei tuoi compagni di squadra.</Italian>
@@ -610,7 +611,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_QUICK_LOAD</Tag>
 		<English>Quick Load Game</English>
-		<PortugueseBR>Jogo de carregamento rápido</PortugueseBR>
+		<Portuguese>Jogo de carregamento rápido</Portuguese>
 		<French>Chargement rapide</French>
 		<German>Schnell laden</German>
 		<Italian>Caricamento rapido</Italian>
@@ -624,7 +625,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_QUICK_SAVE</Tag>
 		<English>Quick Save Game</English>
-		<PortugueseBR>Jogo de salvamento rápido</PortugueseBR>
+		<Portuguese>Jogo de salvamento rápido</Portuguese>
 		<French>Sauvegarde rapide</French>
 		<German>Schnell speichern</German>
 		<Italian>Salvataggio rapido</Italian>
@@ -638,7 +639,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_RETIRE</Tag>
 		<English>Retire from the game</English>
-		<PortugueseBR>Retire-se do jogo</PortugueseBR>
+		<Portuguese>Retire-se do jogo</Portuguese>
 		<French>Abandonner la partie</French>
 		<German>Aus dem Spiel ausscheiden</German>
 		<Italian>Ritirati dalla partita</Italian>
@@ -651,7 +652,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SAVE_GROUP</Tag>
 		<English>Save Game (Group)</English>
-		<PortugueseBR>Salvar jogo (grupo)</PortugueseBR>
+		<Portuguese>Salvar jogo (grupo)</Portuguese>
 		<French>Sauvegarder (groupe)</French>
 		<German>Spiel speichern (Gruppe)</German>
 		<Italian>Salva partita (gruppo)</Italian>
@@ -664,7 +665,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SELECTCAPITAL</Tag>
 		<English>Select capital</English>
-		<PortugueseBR>Selecione capital</PortugueseBR>
+		<Portuguese>Selecione capital</Portuguese>
 		<French>Sélectionner capitale</French>
 		<German>Hauptstadt wählen</German>
 		<Italian>Seleziona città</Italian>
@@ -678,7 +679,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SELECTCITY</Tag>
 		<English>Select settlement</English>
-		<PortugueseBR>Selecione liquidação</PortugueseBR>
+		<Portuguese>Selecione colônia</Portuguese>
 		<French>Choisir une colonie</French>
 		<German>Siedlung wählen</German>
 		<Italian>Seleziona insediamento</Italian>
@@ -692,7 +693,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SELECTYUNITALL</Tag>
 		<English>Select all units</English>
-		<PortugueseBR>Selecione todas as unidades</PortugueseBR>
+		<Portuguese>Selecione todas as unidades</Portuguese>
 		<French>Sélectionner toutes les unités</French>
 		<German>Alle Einheiten auswählen</German>
 		<Italian>Seleziona tutte le unità</Italian>
@@ -706,7 +707,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SELECTYUNITTYPE</Tag>
 		<English>Select all units (same type)</English>
-		<PortugueseBR>Selecione todas as unidades (mesmo tipo)</PortugueseBR>
+		<Portuguese>Selecione todas as unidades (mesmo tipo)</Portuguese>
 		<French>Sélectionner toutes les unités (même type)</French>
 		<German>Alle Einheiten vom gleichen Typ auswählen</German>
 		<Italian>Seleziona tutte le unità (dello stesso tipo)</Italian>
@@ -728,7 +729,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SIGN</Tag>
 		<English>Sign</English>
-		<PortugueseBR>Assinar</PortugueseBR>
+		<Portuguese>Assinar</Portuguese>
 		<French>Panneau</French>
 		<German>Zeichen</German>
 		<Italian>Segnale</Italian>
@@ -737,7 +738,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SIGN_HELP</Tag>
 		<English>Adds a sign to a specific plot that you and your teammates can see.</English>
-		<PortugueseBR>Adiciona um sinal a um terreno específico que você e seus colegas de equipe podem ver.</PortugueseBR>
+		<Portuguese>Adiciona um sinal a um terreno específico que você e seus colegas de equipe podem ver.</Portuguese>
 		<French>Ajoutez un panneau à un endroit précis pour vous et vos coéquipiers.</French>
 		<German>Markieren Sie ein Geländefeld mit einem Zeichen, das nur Sie und Ihre Teammitglieder sehen können.</German>
 		<Italian>Aggiunge in una determinata casella un segnale visibile soltanto a te e ai tuoi alleati.</Italian>
@@ -746,7 +747,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_TOP_DOWN_CAMERA</Tag>
 		<English>Toggle camera top down view</English>
-		<PortugueseBR>Alternar visualização de cima para baixo da câmera</PortugueseBR>
+		<Portuguese>Alternar visualização de cima para baixo da câmera</Portuguese>
 		<French>Activer/désactiver vue inversée</French>
 		<German>Kamera-Draufsicht umschalten</German>
 		<Italian>Abilita la visuale sottosopra</Italian>
@@ -759,7 +760,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_WORLD_BUILDER</Tag>
 		<English>Toggles World Builder</English>
-		<PortugueseBR>Alterna o Construtor de Mundo</PortugueseBR>
+		<Portuguese>Alterna o Construtor de Mundo</Portuguese>
 		<French>Activer l'éditeur de mondes </French>
 		<German>Weltenbauer ein/aus</German>
 		<Italian>Attiva/disattiva l'editor</Italian>
@@ -772,7 +773,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WIDGET_END_TURN</Tag>
 		<English>End Turn [COLOR:140:255:40:255]&lt; SHIFT-ENTER &gt;[COLOR_REVERT]</English>
-		<PortugueseBR>Fim do turno [COLOR:140:255:40:255]&lt; SHIFT-ENTER &gt;[COLOR_REVERT]</PortugueseBR>
+		<Portuguese>Fim do turno [COLOR:140:255:40:255]&lt; SHIFT-ENTER &gt;[COLOR_REVERT]</Portuguese>
 		<French>Fin du tour [COLOR:140:255:40:255]&lt; MAJ-ENTREE &gt;[COLOR_REVERT]</French>
 		<German>Runde beenden [COLOR:140:255:40:255]&lt; UMSCHALTEN-EINGABETASTE &gt;[COLOR_REVERT]</German>
 		<Italian>Fine turno [COLOR:140:255:40:255]&lt; MAIUSC-INVIO &gt;[COLOR_REVERT]</Italian>
@@ -782,7 +783,7 @@
 	<TEXT>
 		<Tag>SYSTEM_END_TURN</Tag>
 		<English>Press [COLOR:140:255:40:255]&lt; ENTER &gt;[COLOR_REVERT] to end turn.</English>
-		<PortugueseBR>Pressione [COLOR:140:255:40:255]&lt; ENTER &gt;[COLOR_REVERT] para encerrar o turno.</PortugueseBR>
+		<Portuguese>Pressione [COLOR:140:255:40:255]&lt; ENTER &gt;[COLOR_REVERT] para encerrar o turno.</Portuguese>
 		<French>Appuyez sur [COLOR:140:255:40:255]&lt; ENTRER &gt;[COLOR_REVERT] pour finir votre tour...</French>
 		<German>Runde beenden mit [COLOR:140:255:40:255]&lt; EINGABETASTE &gt;[COLOR_REVERT] ...</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; INVIO &gt;[COLOR_REVERT] per terminare il turno...</Italian>
@@ -792,7 +793,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SCORES</Tag>
 		<English>Toggle scores display</English>
-		<PortugueseBR>Alternar exibição de pontuações</PortugueseBR>
+		<Portuguese>Alternar exibição de pontuações</Portuguese>
 		<French>Afficher/masquer les scores</French>
 		<German>Punkteanzeige ein/aus</German>
 		<Italian>Abilita/disabilita la 'Finestra dei punteggi'</Italian>
@@ -802,7 +803,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SCORES_HELP</Tag>
 		<English>Toggle score visibility</English>
-		<PortugueseBR>Alternar visibilidade da pontuação</PortugueseBR>
+		<Portuguese>Alternar visibilidade da pontuação</Portuguese>
 		<French>Afficher/masquer les scores.</French>
 		<German>Punktestand ein-/ausblenden</German>
 		<Italian>Attiva/disattiva la visibilità del punteggio.</Italian>
@@ -812,7 +813,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_YIELDS</Tag>
 		<English>Toggle yield display</English>
-		<PortugueseBR>Alternar exibição de rendimento</PortugueseBR>
+		<Portuguese>Alternar exibição de recurso</Portuguese>
 		<French>Afficher/masquer la production</French>
 		<German>Rohstoffsymbole ein/aus</German>
 		<Italian>Abilita/disabilita la visualizzazione della produzione</Italian>
@@ -822,7 +823,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_YIELDS_HELP</Tag>
 		<English>Toggle on-map terrain yield icons</English>
-		<PortugueseBR>Alternar ícones de rendimento de terreno no mapa</PortugueseBR>
+		<Portuguese>Alternar ícones de recurso de terreno no mapa</Portuguese>
 		<French>Afficher/masquer icônes de production du terrain</French>
 		<German>Symbole für Rohstoffe auf Karte ein-/ausblenden</German>
 		<Italian>Attiva/disattiva la visualizzazione delle icone della produzione sulla mappa</Italian>
@@ -832,7 +833,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_GLOBELAYER</Tag>
 		<English>Toggle globe view</English>
-		<PortugueseBR>Alternar visualização do globo</PortugueseBR>
+		<Portuguese>Alternar visualização do globo</Portuguese>
 		<French>Vue du globe</French>
 		<German>Vogelperspektive ein/aus</German>
 		<Italian>Visuale del pianeta</Italian>
@@ -842,7 +843,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_GLOBELAYER_HELP</Tag>
 		<English>Brings up detailed information about your game's world</English>
-		<PortugueseBR>Traz informações detalhadas sobre o mundo do seu jogo</PortugueseBR>
+		<Portuguese>Traz informações detalhadas sobre o mundo do seu jogo</Portuguese>
 		<French>Informations détaillées sur le monde du jeu</French>
 		<German>Zwischen Nahansicht und Fernsicht aus der Vogelperspektive umschalten</German>
 		<Italian>Informazioni dettagliate sul mondo della partita</Italian>
@@ -852,7 +853,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_RESOURCE_ALL</Tag>
 		<English>Toggle show all resource display</English>
-		<PortugueseBR>Alternar a exibição de todos os recursos</PortugueseBR>
+		<Portuguese>Alternar a exibição de todos os recursos</Portuguese>
 		<French>Afficher/masquer les ressources</French>
 		<German>Bonusressourcensymbole ein/aus</German>
 		<Italian>Abilita/disabilita la finestra 'Mostra tutte le risorse'</Italian>
@@ -862,7 +863,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_RESOURCE_ALL_HELP</Tag>
 		<English>Toggle bonus resources icons on / off</English>
-		<PortugueseBR>Ativar/desativar ícones de recursos de bônus</PortugueseBR>
+		<Portuguese>Ativar/desativar ícones de recursos de bônus</Portuguese>
 		<French>Afficher/masquer les symboles des ressources bonus sur la carte</French>
 		<German>Symbole für Bonusressourcen auf Karte ein-/ausblenden</German>
 		<Italian>Mostra/nascondi i simboli delle risorse bonus sulla mappa</Italian>
@@ -872,7 +873,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_BARE_MAP</Tag>
 		<English>Toggle bare map</English>
-		<PortugueseBR>Alternar mapa vazio</PortugueseBR>
+		<Portuguese>Alternar mapa vazio</Portuguese>
 		<French>Afficher/masquer la carte vierge</French>
 		<German>Leere Karte ein/aus</German>
 		<Italian>Abilita/disabilita la mappa semplificata</Italian>
@@ -882,7 +883,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_BARE_MAP_HELP</Tag>
 		<English>Makes it easier to see the landscape</English>
-		<PortugueseBR>Torna mais fácil ver a paisagem</PortugueseBR>
+		<Portuguese>Torna mais fácil ver a paisagem</Portuguese>
 		<French>Facilite l'inspection du terrain</French>
 		<German>Erleichtert die Sicht auf die Landschaft</German>
 		<Italian>Agevola la visione del panorama</Italian>
@@ -892,7 +893,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_GRID</Tag>
 		<English>Toggle show tiles</English>
-		<PortugueseBR>Alternar exibição de blocos</PortugueseBR>
+		<Portuguese>Alternar exibição de quadrados</Portuguese>
 		<French>Afficher/masquer la grille</French>
 		<German>Geländefelder anzeigen ein/aus</German>
 		<Italian>Abilita/disabilita le caselle</Italian>
@@ -902,7 +903,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_GRID_HELP</Tag>
 		<English>Toggle gridlines on / off</English>
-		<PortugueseBR>Ativar/desativar linhas de grade</PortugueseBR>
+		<Portuguese>Ativar/desativar linhas de grade</Portuguese>
 		<French>Afficher/masquer la grille</French>
 		<German>Rasterlinien ein-/ausblenden</German>
 		<Italian>Attiva/disattiva la griglia</Italian>
@@ -912,7 +913,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_UNIT_ICONS</Tag>
 		<English>Toggle enemy units display</English>
-		<PortugueseBR>Alternar exibição de unidades inimigas</PortugueseBR>
+		<Portuguese>Alternar exibição de unidades inimigas</Portuguese>
 		<French>Afficher/masquer les unités ennemies</French>
 		<German>Einheitensymbole ein/aus</German>
 		<Italian>Abilita/Disabilita la visualizzazione delle unità nemiche</Italian>
@@ -922,7 +923,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_UNIT_ICONS_HELP</Tag>
 		<English>Toggles display of unit positions</English>
-		<PortugueseBR>Alterna a exibição das posições das unidades</PortugueseBR>
+		<Portuguese>Alterna a exibição das posições das unidades</Portuguese>
 		<French>Affiche ou masque la position des unités.</French>
 		<German>Einheitensymbole ein-/ausblenden</German>
 		<Italian>Attiva/Disattiva la visualizzazione della posizione delle unità</Italian>
