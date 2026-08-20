@@ -3452,7 +3452,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_POINT_1_HELP</Tag>
 		<English>[ICON_BULLET]Ride further inland: Gather at least %d1 mounted conquistadors on the same tile, at least %d2 tiles away from your capital.</English>
-		<Portuguese>[ICON_BULLET]Cavalgue mais para o interior: reúna pelo menos %d1 conquistadores montados na mesma lote, a pelo menos %d2 lotes de distância de sua capital.</Portuguese>
+		<Portuguese>[ICON_BULLET]Cavalgue mais para o interior: reúna pelo menos %d1 conquistadores montados no mesmo lote, a pelo menos %d2 lotes de distância de sua capital.</Portuguese>
 		<German>[ICON_BULLET]Dringe tiefer ins Landesinnere vor: Versammle mindestens %d1 berittene Konquistadoren auf demselben Feld und mindestens %d2 Felder von deiner Hauptstadt entfernt.</German>
 		<Russian/>
 	</TEXT>
