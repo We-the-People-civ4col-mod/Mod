@@ -1393,7 +1393,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRAVEL_PLASTERED_ROAD_ONLY</Tag>
 		<English>[ICON_BULLET]Requires [COLOR_WARNING_TEXT]paved country roads[COLOR_REVERT] to travel</English>
-		<Portuguese>[ICON_BULLET]Requer [COLOR_WARNING_TEXT]estradas rurais pavimentadas[COLOR_REVERT] para viajar</Portuguese>
+		<Portuguese>[ICON_BULLET]Requer [COLOR_WARNING_TEXT]estradas de terra pavimentadas[COLOR_REVERT] para viajar</Portuguese>
 		<French>[ICON_BULLET]Nécessite [COLOR_WARNING_TEXT] une route pavée[COLOR_REVERT] pour voyager</French>
 		<German>[ICON_BULLET]Kann nur auf [COLOR_WARNING_TEXT]gepflasterten Landstraßen[COLOR_REVERT] fahren</German>
 		<Russian>[ICON_BULLET]Требует [COLOR_WARNING_TEXT]вымощенную камнем дорогу[COLOR_REVERT] для передвижения</Russian>

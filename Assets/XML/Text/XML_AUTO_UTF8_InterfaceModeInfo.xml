@@ -142,7 +142,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_COUNTRY_ROAD</Tag>
 		<English>Route To Mode (country road)</English>
-		<Portuguese>Modo Rota para (estrada secundária)</Portuguese>
+		<Portuguese>Modo Rota para (estrada de terra)</Portuguese>
 		<French>Mode Route vers... (route de gravier)</French>
 		<German>Straße nach-Modus (Landstraße)</German>
 		<Russian>Строить дорогу до точки ([COLOR_HIGHLIGHT_TEXT]гравийная дорога[COLOR_REVERT])</Russian>
@@ -150,7 +150,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_COUNTRY_ROAD_HELP</Tag>
 		<English>Order the unit to build country roads to the selected tile</English>
-		<Portuguese>Ordene à unidade que construa estradas rurais até o ladrilho selecionado</Portuguese>
+		<Portuguese>Ordene à unidade que construa estradas de terra até o quadrado selecionado</Portuguese>
 		<French>Construire une route de gravier jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, Landstraßen bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]гравийную дорогу[COLOR_REVERT] к выбранной клетке</Russian>
