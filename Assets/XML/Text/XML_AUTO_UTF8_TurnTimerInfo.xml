@@ -3,6 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TURNTIMER_BLAZING</Tag>
 		<English>Blazing!!!</English>
+		<Portuguese>Ardente!!!</Portuguese>
 		<French>
 			<Text>Très rapide !</Text>
 			<Gender>Male</Gender>
@@ -27,6 +28,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TURNTIMER_FAST</Tag>
 		<English>Fast</English>
+		<Portuguese>Rápido</Portuguese>
 		<French>
 			<Text>Rapide</Text>
 			<Gender>Male</Gender>
@@ -51,6 +53,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TURNTIMER_MEDIUM</Tag>
 		<English>Medium</English>
+		<Portuguese>Médio</Portuguese>
 		<French>
 			<Text>Normal</Text>
 			<Gender>Male</Gender>
@@ -75,6 +78,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TURNTIMER_SLOW</Tag>
 		<English>Slow</English>
+		<Portuguese>Lento</Portuguese>
 		<French>
 			<Text>Lent</Text>
 			<Gender>Male</Gender>
@@ -99,6 +103,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TURNTIMER_SNAIL</Tag>
 		<English>Snail</English>
+		<Portuguese>Lesma</Portuguese>
 		<French>
 			<Text>Escargot !</Text>
 			<Gender>Male</Gender>
@@ -123,6 +128,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TURNTIMER_STATIC</Tag>
 		<English>Static</English>
+		<Portuguese>Estático</Portuguese>
 		<French>
 			<Text>Statique</Text>
 			<Gender>Male</Gender>

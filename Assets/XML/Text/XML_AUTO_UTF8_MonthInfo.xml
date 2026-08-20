@@ -3,6 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_JANUARY</Tag>
 		<English>January</English>
+		<Portuguese>Janeiro</Portuguese>
 		<French>
 			<Text>Janvier</Text>
 			<Gender>Male</Gender>
@@ -28,6 +29,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_FEBRUARY</Tag>
 		<English>February</English>
+		<Portuguese>Fevereiro</Portuguese>
 		<French>
 			<Text>Février</Text>
 			<Gender>Male</Gender>
@@ -53,6 +55,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_MARCH</Tag>
 		<English>March</English>
+		<Portuguese>Marchar</Portuguese>
 		<French>
 			<Text>Mars</Text>
 			<Gender>Male</Gender>
@@ -78,6 +81,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_APRIL</Tag>
 		<English>April</English>
+		<Portuguese>abril</Portuguese>
 		<French>
 			<Text>Avril</Text>
 			<Gender>Male</Gender>
@@ -103,6 +107,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_MAY</Tag>
 		<English>May</English>
+		<Portuguese>Poderia</Portuguese>
 		<French>
 			<Text>Mai</Text>
 			<Gender>Male</Gender>
@@ -128,6 +133,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_JUNE</Tag>
 		<English>June</English>
+		<Portuguese>Junho</Portuguese>
 		<French>
 			<Text>Juin</Text>
 			<Gender>Male</Gender>
@@ -153,6 +159,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_JULY</Tag>
 		<English>July</English>
+		<Portuguese>Julho</Portuguese>
 		<French>
 			<Text>Juillet</Text>
 			<Gender>Male</Gender>
@@ -178,6 +185,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_AUGUST</Tag>
 		<English>August</English>
+		<Portuguese>Agosto</Portuguese>
 		<French>
 			<Text>Août</Text>
 			<Gender>Male</Gender>
@@ -203,6 +211,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_SEPTEMBER</Tag>
 		<English>September</English>
+		<Portuguese>Setembro</Portuguese>
 		<French>
 			<Text>Septembre</Text>
 			<Gender>Male</Gender>
@@ -228,6 +237,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_OCTOBER</Tag>
 		<English>October</English>
+		<Portuguese>outubro</Portuguese>
 		<French>
 			<Text>Octobre</Text>
 			<Gender>Male</Gender>
@@ -253,6 +263,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_NOVEMBER</Tag>
 		<English>November</English>
+		<Portuguese>novembro</Portuguese>
 		<French>
 			<Text>Novembre</Text>
 			<Gender>Male</Gender>
@@ -278,6 +289,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_DECEMBER</Tag>
 		<English>December</English>
+		<Portuguese>dezembro</Portuguese>
 		<French>
 			<Text>Décembre</Text>
 			<Gender>Male</Gender>

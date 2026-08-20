@@ -3,6 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ROUTE_ROAD</Tag>
 		<English>Road</English>
+		<Portuguese>Estrada</Portuguese>
 		<French>
 			<Text>Route</Text>
 			<Gender>Female</Gender>
@@ -28,7 +29,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ROUTE_COUNTRY_ROAD</Tag>
 		<English>Country Road</English>
-		<PortugueseBR>Estrada secundária</PortugueseBR>
+		<Portuguese>Estrada secundária</Portuguese>
 		<French>Route de gravier</French>
 		<German>Landstraße</German>
 		<Italian>Strada di campagna</Italian>
@@ -38,7 +39,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ROUTE_PLASTERED_ROAD</Tag>
 		<English>Paved Country Road</English>
-		<PortugueseBR>Estrada secundária pavimentada</PortugueseBR>
+		<Portuguese>Estrada secundária pavimentada</Portuguese>
 		<French>Route pavée</French>
 		<German>gepflasterte Landstraße</German>
 		<Italian>Strada di campagna intonacata</Italian>

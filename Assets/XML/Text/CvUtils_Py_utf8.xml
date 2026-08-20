@@ -8,7 +8,7 @@
 		<Italian>Italian</Italian>
 		<Spanish>Spanish</Spanish>
 		<Russian>Russian</Russian>
-		<PortugueseBR>Portuguese</PortugueseBR>
+		<Portuguese>Portuguese</Portuguese>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACCENT_SOUP</Tag><!--  Keep this resource in English only , see CvUtils.py sortkey method -->

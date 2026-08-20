@@ -8,7 +8,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DLL_FLAG_ERROR</Tag>
 		<English>DLL incompatible with the savegame. The DLL needs to be recompiled with the same flags as were used when the game was saved.[NEWLINE]Required Flags:</English>
-		<PortugueseBR>DLL incompatível com o savegame. A DLL precisa ser recompilada com os mesmos sinalizadores usados quando o jogo foi salvo.[NEWLINE]Sinalizadores necessários:</PortugueseBR>
+		<Portuguese>DLL incompatível com o save. A DLL precisa ser recompilada com os mesmos sinalizadores usados quando o jogo foi salvo.[NEWLINE]Sinalizadores necessários:</Portuguese>
 		<French>DLL incompatible avec cette sauvegarde. La DLL nécessite d'être recompilée avec les mêmes flags que lors de la sauvegarde de cette partie.[NEWLINE]Flags requis :</French>
 		<Russian>DLL несовместима с сохраненной игрой. DLL необходимо перекомпилировать с теми же флагами, которые использовались при сохранении игры.[NEWLINE]Обязательные флаги:</Russian>
 		<Hungarian>A DLL nem kompatibilis a mentett játékkal. A DLL-t újra kell fordítani ugyanazokkal a beállításokkal, amelyeket a játék mentésekor használtak.[NEWLINE]Kötelező Beállítások:</Hungarian>
@@ -16,14 +16,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_BECOMES_STRING</Tag>
 		<English>[ICON_BULLET]Becomes [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</English>
-		<PortugueseBR>[ICON_BULLET]Torna-se [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</PortugueseBR>
+		<Portuguese>[ICON_BULLET]Torna-se [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</Portuguese>
 		<French>[ICON_BULLET]Devient [COLOR_BUILDING_TEXT]%s1[COLOR_REVERT]</French>
 		<Hungarian>[ICON_BULLET][COLOR_BUILDING_TEXT]%s1[COLOR_REVERT] lesz belőle</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAN_MOVE_PEAK</Tag>
 		<English>[ICON_BULLET]Can move on mountain peaks</English>
-		<PortugueseBR>[ICON_BULLET]Pode se mover nos picos das montanhas</PortugueseBR>
+		<Portuguese>[ICON_BULLET]Pode se mover nos picos das montanhas</Portuguese>
 		<French>[ICON_BULLET]Peut traverser les montagnes.</French>
 		<German>[ICON_BULLET]Kann Berge überqueren</German>
 		<Russian>[ICON_BULLET]Может передвигаться по клеткам гор</Russian>

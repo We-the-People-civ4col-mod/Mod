@@ -9,6 +9,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_STATUE</Tag>
 		<English>Statue</English>
+		<Portuguese>Estátua</Portuguese>
 		<German>
 			<Text>Statue</Text>
 			<Gender>Female</Gender>
@@ -20,7 +21,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_GRAVEYARD</Tag>
 		<English>Graveyard</English>
-		<PortugueseBR>Cemitério</PortugueseBR>
+		<Portuguese>Cemitério</Portuguese>
 		<French>Cimetière</French>
 		<German>
 			<Text>Friedhof</Text>
@@ -33,7 +34,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_GRAVEYARD</Tag>
 		<English>Graveyard</English>
-		<PortugueseBR>Cemitério</PortugueseBR>
+		<Portuguese>Cemitério</Portuguese>
 		<French>Cimetière</French>
 		<German>
 			<Text>Friedhof</Text>
@@ -46,7 +47,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GRAVEYARD</Tag>
 		<English>Graveyard</English>
-		<PortugueseBR>Cemitério</PortugueseBR>
+		<Portuguese>Cemitério</Portuguese>
 		<French>Cimetière</French>
 		<German>
 			<Text>Friedhof</Text>
@@ -59,14 +60,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GRAVEYARD_PEDIA</Tag>
 		<English>In a strange land where religious immigrants look back fondly to medieval times, the graveyard often is a place of fear and superstition. On the other hand it's a place to visit lost loved ones for quiet contemplation. Emotional conflicts arise.[NEWLINE]The two certainties in life are death and taxes. The graveyard handles one. The King takes care of the other.</English>
-		<PortugueseBR>Numa terra estranha onde os imigrantes religiosos relembram com carinho os tempos medievais, o cemitério é muitas vezes um lugar de medo e superstição. Por outro lado, é um lugar para visitar entes queridos perdidos para uma contemplação tranquila. Surgem conflitos emocionais.[NEWLINE]As duas certezas na vida são a morte e os impostos. O cemitério cuida de um. O Rei cuida do outro.</PortugueseBR>
+		<Portuguese>Numa terra estranha onde os imigrantes religiosos relembram com carinho os tempos medievais, o cemitério é muitas vezes um lugar de medo e superstição. Por outro lado, é um lugar para visitar entes queridos perdidos para uma contemplação tranquila. Surgem conflitos emocionais.[NEWLINE]As duas certezas na vida são a morte e os impostos. O cemitério cuida de um. O Rei cuida do outro.</Portuguese>
 		<German>In einem fremden Land, in dem religiöse Einwanderer mit Vorliebe auf das Mittelalter zurückblicken, ist der Friedhof oft ein Ort der Angst und des Aberglaubens. Andererseits ist er ein Ort, an dem man verlorene Angehörige besucht, um in Ruhe darüber nachzudenken. Emotionale Konflikte entstehen.[NEWLINE]Die zwei Gewissheiten im Leben sind der Tod und die Steuern. Um das eine kümmert sich der Friedhof. Der König kümmert sich um das andere.</German>
 		<Hungarian>Egy idegen országban, ahol a vallásos bevándorlók nosztalgiával tekintenek vissza a középkorra, a temető gyakran a félelem és a babona helyszíne. Másrészt viszont ez az a hely, ahol az elhunyt szeretteinket meglátogathatjuk, és csendben elmélkedhetünk. Érzelmi konfliktusok keletkeznek. Az életben két dolog biztos: a halál és az adók. A temető az egyiket kezeli, a király pedig a másikat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GRAVEYARD_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]graveyard[COLOR_REVERT] contributes to [LINK=YIELD_HEALTH]health[\LINK] and crosses.</English>
-		<PortugueseBR>O [COLOR_HIGHLIGHT_TEXT]cemitério[COLOR_REVERT] contribui para a [LINK=YIELD_HEALTH]saúde[\LINK] e cruzamentos.</PortugueseBR>
+		<Portuguese>O [COLOR_HIGHLIGHT_TEXT]cemitério[COLOR_REVERT] contribui para a [LINK=YIELD_HEALTH]saúde[\LINK] e cruzamentos.</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]Friedhof[COLOR_REVERT] erhöht die [LINK=YIELD_HEALTH]Gesundheit[\LINK].</German>
 	</TEXT>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]temető[COLOR_REVERT] hozzájárul az [LINK=YIELD_HEALTH]egészséghez[\LINK] és a keresztek előállításához.</Hungarian>
@@ -74,7 +75,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CONFECTIONER</Tag>
 		<English>Confectioner</English>
-		<PortugueseBR>Confeiteiro</PortugueseBR>
+		<Portuguese>Confeiteiro</Portuguese>
 		<French>Confiseur</French>
 		<German>
 			<Text>Konditor</Text>
@@ -86,7 +87,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_HOUSE</Tag>
 		<English>Confectioner's House</English>
-		<PortugueseBR>Casa do Confeiteiro</PortugueseBR>
+		<Portuguese>Casa do Confeiteiro</Portuguese>
 		<French>Maison du confiseur</French>
 		<German>
 			<Text>Haus des Konditors</Text>
@@ -99,7 +100,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_SHOP</Tag>
 		<English>Confectioner's Shop</English>
-		<PortugueseBR>Confeitaria</PortugueseBR>
+		<Portuguese>Confeitaria</Portuguese>
 		<French>Atelier du confiseur</French>
 		<German>
 			<Text>Konditorladen</Text>
@@ -112,7 +113,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_FACTORY</Tag>
 		<English>Confectionery</English>
-		<PortugueseBR>Confeitaria</PortugueseBR>
+		<Portuguese>Confeitaria</Portuguese>
 		<French>Confiserie</French>
 		<German>
 			<Text>Konditorei</Text>
@@ -125,7 +126,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE</Tag>
 		<English>Confectioner's House</English>
-		<PortugueseBR>Casa do Confeiteiro</PortugueseBR>
+		<Portuguese>Casa do Confeiteiro</Portuguese>
 		<French>Maison du confiseur</French>
 		<German>
 			<Text>Haus des Konditors</Text>
@@ -138,7 +139,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP</Tag>
 		<English>Confectioner's Shop</English>
-		<PortugueseBR>Confeitaria</PortugueseBR>
+		<Portuguese>Confeitaria</Portuguese>
 		<French>Atelier du confiseur</French>
 		<German>
 			<Text>Konditorladen</Text>
@@ -151,7 +152,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY</Tag>
 		<English>Confectionery</English>
-		<PortugueseBR>Confeitaria</PortugueseBR>
+		<Portuguese>Confeitaria</Portuguese>
 		<French>Confiserie</French>
 		<German>
 			<Text>Konditorei</Text>
@@ -164,42 +165,42 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_PEDIA</Tag>
 		<English>At first settlers import candy from the home country but before long an enterprising confectioner realizes that sugar is growing right next door, and all that's needed is a way to flavour it - maybe chocolate or vanilla. There's one other trick; grinding the sugar so fine that the candy has a smooth consistency.[NEWLINE]Having a candy store means that the settlers and their children don't need to wait for the ship to come in from Europe to satisfy their sweet tooth. The local confectioner makes everybody happy, the dentist in particular.</English>
-		<PortugueseBR>No início, os colonos importam doces do país de origem, mas pouco tempo depois um confeiteiro empreendedor percebe que o açúcar está crescendo bem ao lado e tudo o que é necessário é uma maneira de dar sabor a ele - talvez chocolate ou baunilha. Há outro truque; moer o açúcar tão fino que o doce fica com uma consistência macia.[NEWLINE]Ter uma loja de doces significa que os colonos e seus filhos não precisam esperar o navio chegar da Europa para satisfazer sua vontade de comer doces. O confeiteiro local deixa todo mundo feliz, principalmente o dentista.</PortugueseBR>
+		<Portuguese>No início, os colonos importam doces do país de origem, mas pouco tempo depois um confeiteiro empreendedor percebe que o açúcar está crescendo bem ao lado e tudo o que é necessário é uma maneira de dar sabor a ele - talvez chocolate ou baunilha. Há outro truque; moer o açúcar tão fino que o doce fica com uma consistência macia.[NEWLINE]Ter uma loja de doces significa que os colonos e seus filhos não precisam esperar o navio chegar da Europa para satisfazer sua vontade de comer doces. O confeiteiro local deixa todo mundo feliz, principalmente o dentista.</Portuguese>
 		<German>Zunächst importieren die Siedler Süßigkeiten aus der Heimat, doch schon bald stellt ein geschäftstüchtiger Zuckerbäcker fest, dass der Zucker gleich nebenan wächst und man ihn nur noch aromatisieren muss - vielleicht mit Schokolade oder Vanille. Es gibt noch einen weiteren Trick: Man muss den Zucker so fein mahlen, dass die Bonbons eine glatte Konsistenz bekommen.[NEWLINE]Ein Süßwarenladen bedeutet, dass die Siedler und ihre Kinder nicht auf das Schiff aus Europa warten müssen, um ihren süßen Hunger zu stillen. Der örtliche Süßwarenhändler macht alle glücklich, vor allem den Zahnarzt.</German>
 		<Hungarian>Eleinte a telepesek cukorkát hozatnak be az anyaországból, de hamarosan egy vállalkozó szellemű cukrász rájön, hogy a cukor a szomszédban terem, és csak ízesíteni kell – például csokoládéval vagy vaníliával. Van még egy trükk: a cukrot olyan finomra őrölni, hogy a cukorka selymes állagú legyen. [NEWLINE]A Cukrász Bolt megnyitása azt jelenti, hogy a telepesek és gyermekeik nem kelljenek megvárni az Európából érkező hajót, hogy kielégítsék édesség iránti vágyukat. A helyi cukrász mindenkit boldoggá tesz, különösen a fogorvost.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]confectioner's house[COLOR_REVERT] is where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioners[\LINK] are particularly effective here.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]casa do confeiteiro[COLOR_REVERT] é onde um colono com a profissão de [LINK=PROFESSION_CONFECTIONER_VANILLA]confeiteiro de baunilha[\LINK] ou de [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]confeiteiro de chocolate[\LINK] transforma [LINK=YIELD_VANILLA_PODS]favas de baunilha[\LINK] em [LINK=YIELD_VANILLA]guloseimas de baunilha[\LINK] e [LINK=YIELD_COCOA]cacau[\LINK] com [LINK=YIELD_SUGAR]açúcar[\LINK] em [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Mestres confeiteiros[\LINK] são particularmente eficazes aqui.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]casa do confeiteiro[COLOR_REVERT] é onde um colono com a profissão de [LINK=PROFESSION_CONFECTIONER_VANILLA]confeiteiro de baunilha[\LINK] ou de [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]confeiteiro de chocolate[\LINK] transforma [LINK=YIELD_VANILLA_PODS]favas de baunilha[\LINK] em [LINK=YIELD_VANILLA]guloseimas de baunilha[\LINK] e [LINK=YIELD_COCOA]cacau[\LINK] com [LINK=YIELD_SUGAR]açúcar[\LINK] em [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Mestres confeiteiros[\LINK] são particularmente eficazes aqui.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Konditors[COLOR_REVERT] ist die niedrigste Ausbaustufe der Konditoreikette, in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Cukrász Bolt[COLOR_REVERT] az a hely, ahol a [LINK=PROFESSION_CONFECTIONER_VANILLA]vanília cukrász [\LINK] vagy a [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]csokoládé cukrász[\LINK] a [LINK=YIELD_VANILLA_PODS]vaníliát[\LINK] [LINK=YIELD_VANILLA]vanília édességekké[\LINK] és [LINK=YIELD_COCOA]kakaót [\LINK] és [LINK=YIELD_SUGAR]cukorral[\LINK] [LINK=YIELD_CHOCOLATE]csokoládét[\LINK] készít. A [LINK=UNIT_CONFECTIONER]cukrászmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_PEDIA</Tag>
 		<English>The confectioner's shop adds extra variety, candy for every taste, along with traditional sweets that remind people of home. The bigger market helps to keep prices down.[NEWLINE]Extra production creates trading opportunities. Some confectioners even set up tables where tea is served to accompany the treats. A very few offer coffee, at first considered scandalous, because the drink is so stimulating.</English>
-		<PortugueseBR>A confeitaria acrescenta variedade extra, doces para todos os gostos, além de doces tradicionais que lembram a casa. O mercado maior ajuda a manter os preços baixos.[NEWLINE]A produção extra cria oportunidades comerciais. Alguns confeiteiros chegam a montar mesas onde é servido chá para acompanhar as guloseimas. Poucos oferecem café, a princípio considerado escandaloso, porque a bebida é muito estimulante.</PortugueseBR>
+		<Portuguese>A confeitaria acrescenta variedade extra, doces para todos os gostos, além de doces tradicionais que lembram a casa. O mercado maior ajuda a manter os preços baixos.[NEWLINE]A produção extra cria oportunidades comerciais. Alguns confeiteiros chegam a montar mesas onde é servido chá para acompanhar as guloseimas. Poucos oferecem café, a princípio considerado escandaloso, porque a bebida é muito estimulante.</Portuguese>
 		<German>Die Konditorei sorgt für zusätzliche Abwechslung, Süßigkeiten für jeden Geschmack und traditionelle Süßigkeiten, die die Menschen an ihre Heimat erinnern. Der größere Markt trägt dazu bei, die Preise niedrig zu halten.[NEWLINE]Die zusätzliche Produktion schafft Handelsmöglichkeiten. Einige Zuckerbäcker stellen sogar Tische auf, an denen Tee zu den Leckereien gereicht wird. Einige wenige bieten Kaffee an, was zunächst als skandalös galt, weil das Getränk so anregend ist.</German>
 		<Hungarian>A Cukrász  Üzlet további változatosságot, minden ízlésnek megfelelő édességeket kínál, valamint hagyományos édességeket, amelyek az otthonra emlékeztetik az embereket. A nagyobb piac segít az árak alacsonyan tartásában. A többlettermelés kereskedelmi lehetőségeket teremt. Néhány cukrász még asztalokat is felállít, ahol tea kíséretében szolgálják fel az édességeket. Nagyon kevesen kínálnak kávét, amit eleinte botrányosnak tartottak, mert az ital annyira élénkítő hatású.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]confectioners' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioners[\LINK] are particularly effective here.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]confeitaria[COLOR_REVERT] é a atualização da [LINK=BUILDING_CONFECTIONER_HOUSE]casa do confeiteiro[\LINK] onde um colono com a profissão de [LINK=PROFESSION_CONFECTIONER_VANILLA]confeiteiro de baunilha[\LINK] ou de [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]confeiteiro de chocolate[\LINK] transforma [LINK=YIELD_VANILLA_PODS]favas de baunilha[\LINK] em [LINK=YIELD_VANILLA]baunilha trata[\LINK] e [LINK=YIELD_COCOA]cacau[\LINK] com [LINK=YIELD_SUGAR]açúcar[\LINK] em [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Mestres confeiteiros[\LINK] são particularmente eficazes aqui.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]confeitaria[COLOR_REVERT] é a atualização da [LINK=BUILDING_CONFECTIONER_HOUSE]casa do confeiteiro[\LINK] onde um colono com a profissão de [LINK=PROFESSION_CONFECTIONER_VANILLA]confeiteiro de baunilha[\LINK] ou de [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]confeiteiro de chocolate[\LINK] transforma [LINK=YIELD_VANILLA_PODS]favas de baunilha[\LINK] em [LINK=YIELD_VANILLA]baunilha trata[\LINK] e [LINK=YIELD_COCOA]cacau[\LINK] com [LINK=YIELD_SUGAR]açúcar[\LINK] em [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Mestres confeiteiros[\LINK] são particularmente eficazes aqui.</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Konditorladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Cukrász Üzlet[COLOR_REVERT] a [LINK=BUILDING_CONFECTIONER_HOUSE]Cukrász Bolt[\LINK] továbbfejlesztése, ahol egy [LINK=PROFESSION_CONFECTIONER_VANILLA]vanília cukrász [\LINK] vagy [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]csokoládé cukrász[\LINK] [LINK=YIELD_VANILLA_PODS]vaníliát[\LINK] [LINK=YIELD_VANILLA]vanília édességekké[\LINK] és [LINK=YIELD_COCOA]kakaót [\LINK] és [LINK=YIELD_SUGAR]cukorral[\LINK] [LINK=YIELD_CHOCOLATE]csokoládét[\LINK] készít. A [LINK=UNIT_CONFECTIONER]Cukrászmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_PEDIA</Tag>
 		<English>The candy factory can serve an entire region. For one group it offers cheap sweets thanks to economies of scale. For the well-to-do it delivers an unparalleled variety of exotic confections to impress guests on special occasions.[NEWLINE]A big confectionery makes an important contribution to the region it serves, increasing both trading income and the community's happiness.</English>
-		<PortugueseBR>A fábrica de doces pode atender uma região inteira. Para um grupo oferece doces baratos graças às economias de escala. Para os abastados, oferece uma variedade incomparável de confeitos exóticos para impressionar os hóspedes em ocasiões especiais.[NEWLINE]Uma grande confeitaria dá uma contribuição importante para a região que atende, aumentando tanto a receita comercial quanto a felicidade da comunidade.</PortugueseBR>
+		<Portuguese>A fábrica de doces pode atender uma região inteira. Para um grupo oferece doces baratos graças às economias de escala. Para os abastados, oferece uma variedade incomparável de confeitos exóticos para impressionar os hóspedes em ocasiões especiais.[NEWLINE]Uma grande confeitaria dá uma contribuição importante para a região que atende, aumentando tanto a receita comercial quanto a felicidade da comunidade.</Portuguese>
 		<German>Die Süßwarenfabrik kann dank Skalierungseffekten eine ganze Region mit billigen Süßigkeiten versorgen. Für die Wohlhabenden liefert sie eine unvergleichliche Vielfalt an exotischen Süßigkeiten, um Gäste bei besonderen Anlässen zu beeindrucken.[NEWLINE]Eine große Konditorei leistet einen wichtigen Beitrag für die Region, in der sie tätig ist, und steigert sowohl das Handelseinkommen als auch die Zufriedenheit der Bevölkerung.</German>
 		<Hungarian>A Cukrászda egy egész régiót képes ellátni. Az egyik csoport számára méretgazdaságosságának köszönhetően olcsó édességeket kínál. A jómódúak számára pedig páratlanul változatos egzotikus édességeket szállít, amelyekkel különleges alkalmakkor lenyűgözhetik vendégeiket. [NEWLINE] Egy nagy cukrászda fontos hozzájárulást jelent a régióhoz, amelyet ellát, növelve mind a kereskedelmi bevételeket, mind a közösség boldogságát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]confectioners' factory[COLOR_REVERT] is the top upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioners[\LINK] are particularly effective here.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]fábrica de confeiteiros[COLOR_REVERT] é a principal atualização da [LINK=BUILDING_CONFECTIONER_HOUSE]casa de confeiteiro[\LINK] onde um colono com a profissão de [LINK=PROFESSION_CONFECTIONER_VANILLA]confeiteiro de baunilha[\LINK] ou de [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]confeiteiro de chocolate[\LINK] transforma [LINK=YIELD_VANILLA_PODS]favas de baunilha[\LINK] em [LINK=YIELD_VANILLA]baunilha trata[\LINK] e [LINK=YIELD_COCOA]cacau[\LINK] com [LINK=YIELD_SUGAR]açúcar[\LINK] em [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Mestres confeiteiros[\LINK] são particularmente eficazes aqui.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]fábrica de confeiteiros[COLOR_REVERT] é a principal atualização da [LINK=BUILDING_CONFECTIONER_HOUSE]casa de confeiteiro[\LINK] onde um colono com a profissão de [LINK=PROFESSION_CONFECTIONER_VANILLA]confeiteiro de baunilha[\LINK] ou de [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]confeiteiro de chocolate[\LINK] transforma [LINK=YIELD_VANILLA_PODS]favas de baunilha[\LINK] em [LINK=YIELD_VANILLA]baunilha trata[\LINK] e [LINK=YIELD_COCOA]cacau[\LINK] com [LINK=YIELD_SUGAR]açúcar[\LINK] em [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Mestres confeiteiros[\LINK] são particularmente eficazes aqui.</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Konditorei[COLOR_REVERT] ist die höchste Stufe des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Cukrászda[COLOR_REVERT] a [LINK=BUILDING_CONFECTIONER_HOUSE]Cukrász Bolt[\LINK] legmagasabb szintű továbbfejlesztése, ahol egy [LINK=PROFESSION_CONFECTIONER_VANILLA]vanília cukrász [\LINK] vagy [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]csokoládé cukrász[\LINK] telepes [LINK=YIELD_VANILLA_PODS]vaníliát[\LINK] [LINK=YIELD_VANILLA]vanília édességekké[\LINK] és [LINK=YIELD_COCOA]kakaót [\LINK] és [LINK=YIELD_SUGAR]cukorral[\LINK] [LINK=YIELD_CHOCOLATE]csokoládét[\LINK] készít. A [LINK=UNIT_CONFECTIONER]Cukrászmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
@@ -207,7 +208,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_LEATHER_PADDER</Tag>
 		<English>Leatherworker</English>
-		<PortugueseBR>Couro</PortugueseBR>
+		<Portuguese>Couro</Portuguese>
 		<French>Maroquinier</French>
 		<German>
 			<Text>Lederpolsterei</Text>
@@ -219,7 +220,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_HOUSE</Tag>
 		<English>Leatherworker's House</English>
-		<PortugueseBR>Casa do Couro</PortugueseBR>
+		<Portuguese>Casa do Couro</Portuguese>
 		<French>Maison du maroquinier</French>
 		<German>
 			<Text>Haus des Lederschneiders</Text>
@@ -232,7 +233,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_SHOP</Tag>
 		<English>Leatherworker's Shop</English>
-		<PortugueseBR>Loja de Couro</PortugueseBR>
+		<Portuguese>Loja de Couro</Portuguese>
 		<French>Atelier du maroquinier</French>
 		<German>
 			<Text>Lederwarenladen</Text>
@@ -245,7 +246,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_FACTORY</Tag>
 		<English>Leather Coat Factory</English>
-		<PortugueseBR>Fábrica de casacos de couro</PortugueseBR>
+		<Portuguese>Fábrica de casacos de couro</Portuguese>
 		<French>Usine de maroquinerie</French>
 		<German>
 			<Text>Lederwarenfabrik</Text>
@@ -258,7 +259,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE</Tag>
 		<English>Leatherworker's House</English>
-		<PortugueseBR>Casa do Couro</PortugueseBR>
+		<Portuguese>Casa do Couro</Portuguese>
 		<French>Maison du maroquinier</French>
 		<German>
 			<Text>Haus des Lederschneiders</Text>
@@ -271,7 +272,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP</Tag>
 		<English>Leatherworker's Shop</English>
-		<PortugueseBR>Loja de Couro</PortugueseBR>
+		<Portuguese>Loja de Couro</Portuguese>
 		<French>Atelier du Maroquinier</French>
 		<German>
 			<Text>Lederwarenladen</Text>
@@ -284,7 +285,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY</Tag>
 		<English>Leather Coat Factory</English>
-		<PortugueseBR>Fábrica de casacos de couro</PortugueseBR>
+		<Portuguese>Fábrica de casacos de couro</Portuguese>
 		<French>Usine de maroquinerie</French>
 		<German>
 			<Text>Lederwarenfabrik</Text>
@@ -297,14 +298,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_PEDIA</Tag>
 		<English>Leather is good at keeping out the wind but when the temperature drops it still feels cold. Putting padding into leather coats keeps people warm when the snow flies.[NEWLINE]Sewing padding into leather doesn't just make the clothes more comfortable. By adding insulation the leather clothier improves health for those working outside, which can even save their lives.</English>
-		<PortugueseBR>O couro é bom para proteger do vento, mas quando a temperatura cai ainda parece frio. Colocar acolchoamento em casacos de couro mantém as pessoas aquecidas quando a neve cai.[NEWLINE]Costurar acolchoamento em couro não apenas torna as roupas mais confortáveis. Ao adicionar isolamento, o fabricante de couro melhora a saúde de quem trabalha ao ar livre, o que pode até salvar suas vidas.</PortugueseBR>
+		<Portuguese>O couro é bom para proteger do vento, mas quando a temperatura cai ainda parece frio. Colocar acolchoamento em casacos de couro mantém as pessoas aquecidas quando a neve cai.[NEWLINE]Costurar acolchoamento em couro não apenas torna as roupas mais confortáveis. Ao adicionar isolamento, o fabricante de couro melhora a saúde de quem trabalha ao ar livre, o que pode até salvar suas vidas.</Portuguese>
 		<German>Leder hält zwar gut den Wind ab, aber wenn die Temperatur sinkt, fühlt es sich trotzdem kalt an. Eine Polsterung in den Mänteln hält hingegen die Menschen warm, selbst wenn der Schnee kommt.[NEWLINE]Das Einnähen von Polstern und Futter in Leder macht das Kleidungsstück nicht nur bequemer. Durch die zusätzliche Isolierung wird auch die Gesundheit derjenigen verbessert, die im Freien arbeiten, und kann sogar ihr Leben retten.</German>
 		<Hungarian>A bőr jól véd a széltől, de ha a hőmérséklet csökken, akkor mégis hidegnek érezzük. A bőrkabátokba varrt bélés melegen tartja az embereket, amikor havazik. A bőrbe varrt bélés nem csak kényelmesebbé teszi a ruhákat. A szigetelés hozzáadásával a bőrruha-gyártók javítják a kültéren dolgozók egészségét, ami akár életeket is menthet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]leatherworker's house[COLOR_REVERT] is the lowest level of expansion of leather processing, where settlers work at the [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession to make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or as a [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker (lined)[\LINK] to make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WILD_FEATHERS]wild bird feathers[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Master leatherworkers[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]casa do marroquino[COLOR_REVERT] é o nível mais baixo de expansão do processamento de couro, onde os colonos trabalham na profissão de [LINK=PROFESSION_LEATHER_PADDER_COATS]fabricante de couro[\LINK] para fazer [LINK=YIELD_PADDED_LEATHER_COATS]casacos de couro forrados[\LINK] de [LINK=YIELD_HIDES]couro[\LINK] e [LINK=YIELD_DOWNS]penugem[\LINK] ou como [LINK=PROFESSION_LEATHER_PADDER_BOOTS]sapateiro (forrado)[\LINK] para fazer [LINK=YIELD_GOAT_HIDE_BOOTS]botas forradas de pele de cabra[\LINK] com [LINK=YIELD_GOAT_HIDES]pele de cabra[\LINK] e [LINK=YIELD_WILD_FEATHERS]penas de pássaros selvagens[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Mestres coureiros[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]casa do marroquino[COLOR_REVERT] é o nível mais baixo de expansão do processamento de couro, onde os colonos trabalham na profissão de [LINK=PROFESSION_LEATHER_PADDER_COATS]fabricante de couro[\LINK] para fazer [LINK=YIELD_PADDED_LEATHER_COATS]casacos de couro forrados[\LINK] de [LINK=YIELD_HIDES]couro[\LINK] e [LINK=YIELD_DOWNS]penugem[\LINK] ou como [LINK=PROFESSION_LEATHER_PADDER_BOOTS]sapateiro (forrado)[\LINK] para fazer [LINK=YIELD_GOAT_HIDE_BOOTS]botas forradas de pele de cabra[\LINK] com [LINK=YIELD_GOAT_HIDES]pele de cabra[\LINK] e [LINK=YIELD_WILD_FEATHERS]penas de pássaros selvagens[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Mestres coureiros[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<French>Coudre un rembourrage et une doublure dans le cuir ne rend pas seulement le vêtement plus confortable. En ajoutant de l'isolation, il améliore également la santé des personnes travaillant à l'extérieur, et peut même leur sauver la vie.</French>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Lederschneiders[COLOR_REVERT] ist die niedrigste Ausbaustufe der Lederverarbeitung, in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WILD_FEATHERS]Federn von Wildvögeln[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_LEATHER_TAYLOR]Meister-Lederschneider[\LINK] sind hierbei besonders effektiv.</German>
 		<Italian>Cucire un'imbottitura e una fodera nella pelle non rende solo l'indumento più confortevole. L'aggiunta di isolamento migliora anche la salute di chi lavora all'aperto e può addirittura salvargli la vita.</Italian>
@@ -314,28 +315,28 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_PEDIA</Tag>
 		<English>A bigger business can produce a little more for export, not just to Europe but also to the surrounding First Nations and outdoor workers who appreciate warm clothing. A fashionable leather clothier relies on word of mouth to increase business.[NEWLINE]Practical people see the advantage of insulated clothing in a cold climate. Devout settlers are obsessed with religious prohibitions, so women of easy virtue can earn extra money wearing leather in private to dominate the pious.</English>
-		<PortugueseBR>Uma empresa maior pode produzir um pouco mais para exportação, não apenas para a Europa, mas também para as Primeiras Nações vizinhas e para os trabalhadores ao ar livre que apreciam roupas quentes. Um fabricante de roupas de couro da moda depende do boca a boca para aumentar os negócios.[NEWLINE]Pessoas práticas veem a vantagem de roupas isoladas em climas frios. Os colonos devotos são obcecados por proibições religiosas, por isso as mulheres de virtudes fáceis podem ganhar dinheiro extra usando couro em particular para dominar os piedosos.</PortugueseBR>
+		<Portuguese>Uma empresa maior pode produzir um pouco mais para exportação, não apenas para a Europa, mas também para as Primeiras Nações vizinhas e para os trabalhadores ao ar livre que apreciam roupas quentes. Um fabricante de roupas de couro da moda depende do boca a boca para aumentar os negócios.[NEWLINE]Pessoas práticas veem a vantagem de roupas isoladas em climas frios. Os colonos devotos são obcecados por proibições religiosas, por isso as mulheres de virtudes fáceis podem ganhar dinheiro extra usando couro em particular para dominar os piedosos.</Portuguese>
 		<German>Ein größeres Unternehmen kann etwas mehr für den Export produzieren, nicht nur nach Europa, sondern auch für die umliegenden Ureinwohner und Outdoor-Arbeiter, die warme Kleidung schätzen. Ein modischer Lederwarenhersteller verlässt sich auf Mundpropaganda, um sein Geschäft zu steigern.[NEWLINE]Praktische Menschen sehen den Vorteil isolierender Kleidung bei kalter Witterung. Fromme Siedler sind von religiösen Verboten beeinflusst, so dass Frauen mit wenig Tugendhaftigkeit zusätzliches Geld verdienen können, indem sie sich in Leder kleiden, um die Frommen zu beherrschen.</German>
 		<Hungarian>Egy nagyobb vállalkozás kicsit többet tud exportra gyártani, nem csak Európába, hanem a környező indián népekhez és a meleg ruházatot értékelő szabadtéri munkásoknak is. Egy divatos bőrruha készítő a szájhagyományra támaszkodik, hogy növelje forgalmát. A gyakorlatias emberek látják a szigetelt ruházat előnyeit a hideg éghajlaton. A jámbor telepesek megszállottan ragaszkodnak a vallási tilalmakhoz, így a könnyűvérű nők extra pénzt kereshetnek azzal, hogy magánéletükben bőrruhát viselnek, hogy így uralkodjanak a jámborokon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]leatherworkers' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK] where settlers work at the [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession to make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or as [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmakers (lined)[\LINK] to make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WILD_FEATHERS]wild bird feathers[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Master leatherworker[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]loja de couro[COLOR_REVERT] é a atualização da [LINK=BUILDING_LEATHER_PADDER_HOUSE]casa do couro[\LINK] onde os colonos trabalham na profissão de [LINK=PROFESSION_LEATHER_PADDER_COATS]fabricante de couro[\LINK] para fazer [LINK=YIELD_PADDED_LEATHER_COATS]casacos de couro forrados[\LINK] de [LINK=YIELD_HIDES]couro de vaca[\LINK] e [LINK=YIELD_DOWNS]para baixo[\LINK] ou como [LINK=PROFESSION_LEATHER_PADDER_BOOTS]sapateiros (forrados)[\LINK] para fazer [LINK=YIELD_GOAT_HIDE_BOOTS]botas forradas de pele de cabra[\LINK] de [LINK=YIELD_GOAT_HIDES]pele de cabra[\LINK] e [LINK=YIELD_WILD_FEATHERS]penas de pássaros selvagens[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Mestre coureiro[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]loja de couro[COLOR_REVERT] é a atualização da [LINK=BUILDING_LEATHER_PADDER_HOUSE]casa do couro[\LINK] onde os colonos trabalham na profissão de [LINK=PROFESSION_LEATHER_PADDER_COATS]fabricante de couro[\LINK] para fazer [LINK=YIELD_PADDED_LEATHER_COATS]casacos de couro forrados[\LINK] de [LINK=YIELD_HIDES]couro de vaca[\LINK] e [LINK=YIELD_DOWNS]para baixo[\LINK] ou como [LINK=PROFESSION_LEATHER_PADDER_BOOTS]sapateiros (forrados)[\LINK] para fazer [LINK=YIELD_GOAT_HIDE_BOOTS]botas forradas de pele de cabra[\LINK] de [LINK=YIELD_GOAT_HIDES]pele de cabra[\LINK] e [LINK=YIELD_WILD_FEATHERS]penas de pássaros selvagens[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Mestre coureiro[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Lederwerkstatt[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WILD_FEATHERS]Federn von Wildvögeln[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_LEATHER_TAYLOR]Meister-Lederschneider[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Bőrműves Üzlet[COLOR_REVERT] a [LINK=BUILDING_LEATHER_PADDER_HOUSE]Bőrműves Bolt[\LINK] továbbfejlesztése, ahol a lakosok [LINK=PROFESSION_LEATHER_PADDER_COATS]bőrművesként[\LINK] dolgoznak és [LINK=YIELD_PADDED_LEATHER_COATS]bélelt bőrkabátokat [\LINK] készítenek [LINK=YIELD_HIDES]marhabőrből[\LINK] és [LINK=YIELD_DOWNS]pehelytollból[\LINK] illetve [LINK=PROFESSION_LEATHER_PADDER_BOOTS]csizmadiaként[\LINK] [LINK=YIELD_GOAT_HIDE_BOOTS]bélelt kecskebőr csizmát[\LINK] [LINK=YIELD_GOAT_HIDES]kecskebőrből[\LINK] és [LINK=YIELD_WILD_FEATHERS]vadmadár tollból[\LINK]. A [LINK=UNIT_LEATHER_TAYLOR]bőrműves mesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_PEDIA</Tag>
 		<English>A big business has efficiencies and economies of scale. A solitary leather clothier might spend days fitting a coat to a single customer but a factory can have enough sizes in stock for everyone to buy off the rack.[NEWLINE]Sturdy outdoor leather clothing that stands up to hard wear means more work gets done, people don't get cold, and health and happiness are the result.</English>
-		<PortugueseBR>Uma grande empresa tem eficiências e economias de escala. Um fabricante de roupas de couro solitário pode passar dias ajustando um casaco para um único cliente, mas uma fábrica pode ter tamanhos suficientes em estoque para que todos comprem na prateleira.[NEWLINE]Roupas de couro resistentes para atividades ao ar livre que resistem ao desgaste significam que mais trabalho é feito, as pessoas não ficam com frio e o resultado é saúde e felicidade.</PortugueseBR>
+		<Portuguese>Uma grande empresa tem eficiências e economias de escala. Um fabricante de roupas de couro solitário pode passar dias ajustando um casaco para um único cliente, mas uma fábrica pode ter tamanhos suficientes em estoque para que todos comprem na prateleira.[NEWLINE]Roupas de couro resistentes para atividades ao ar livre que resistem ao desgaste significam que mais trabalho é feito, as pessoas não ficam com frio e o resultado é saúde e felicidade.</Portuguese>
 		<German>Ein großes Unternehmen verfügt über Effizienz- und Größenvorteile. Ein einzelner Lederbekleidungshersteller verbringt vielleicht Tage damit, einen Mantel für einen einzigen Kunden anzupassen, aber eine Fabrik kann genügend Größen auf Lager haben, die jeder von der Stange kaufen kann.[NEWLINE]Dank robuster Outdoor-Lederkleidung, die harter Beanspruchung standhält, müssen die Menschen nicht frieren, was ihrer Gesundheit und Zufriedenheit zugutekommt, wodurch mehr Arbeit erledigt werden kann.</German>
 		<Hungarian>A nagyvállalatok hatékonysággal és méretgazdaságossággal rendelkeznek. Egy magányos bőrruha készítő napokig dolgozhat egy kabát elkészítésén egyetlen vevő számára, de egy gyárban mindenki számára elegendő méret áll rendelkezésre, hogy készruhákat vásárolhassanak. A strapabíró, kemény igénybevételnek is ellenálló, kültéri bőrruházat révén több munkát lehet elvégezni, az emberek nem fáznak, és ezáltal egészségesek és boldogok maradnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]leather coat factory[COLOR_REVERT] is the final upgrade of the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK], where settlers work at the [LINK=PROFESSION_LEATHER_PADDER_COATS]leather clothier[\LINK] profession to make [LINK=YIELD_PADDED_LEATHER_COATS]lined leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] or as [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmakers (lined)[\LINK] to make [LINK=YIELD_GOAT_HIDE_BOOTS]lined goatskin boots[\LINK] from [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WILD_FEATHERS]wild bird feathers[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Master leatherworker[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]fábrica de casacos de couro[COLOR_REVERT] é a atualização final da [LINK=BUILDING_LEATHER_PADDER_HOUSE]casa do coureiro[\LINK], onde os colonos trabalham na profissão de [LINK=PROFESSION_LEATHER_PADDER_COATS]confeccionador de couro[\LINK] para fazer [LINK=YIELD_PADDED_LEATHER_COATS]casacos de couro forrados[\LINK] com [LINK=YIELD_HIDES]couro de vaca[\LINK] e [LINK=YIELD_DOWNS]para baixo[\LINK] ou como [LINK=PROFESSION_LEATHER_PADDER_BOOTS]sapateiros (forrados)[\LINK] para fazer [LINK=YIELD_GOAT_HIDE_BOOTS]botas forradas de pele de cabra[\LINK] de [LINK=YIELD_GOAT_HIDES]pele de cabra[\LINK] e [LINK=YIELD_WILD_FEATHERS]penas de pássaros selvagens[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Mestre coureiro[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]fábrica de casacos de couro[COLOR_REVERT] é a atualização final da [LINK=BUILDING_LEATHER_PADDER_HOUSE]casa do coureiro[\LINK], onde os colonos trabalham na profissão de [LINK=PROFESSION_LEATHER_PADDER_COATS]confeccionador de couro[\LINK] para fazer [LINK=YIELD_PADDED_LEATHER_COATS]casacos de couro forrados[\LINK] com [LINK=YIELD_HIDES]couro de vaca[\LINK] e [LINK=YIELD_DOWNS]para baixo[\LINK] ou como [LINK=PROFESSION_LEATHER_PADDER_BOOTS]sapateiros (forrados)[\LINK] para fazer [LINK=YIELD_GOAT_HIDE_BOOTS]botas forradas de pele de cabra[\LINK] de [LINK=YIELD_GOAT_HIDES]pele de cabra[\LINK] e [LINK=YIELD_WILD_FEATHERS]penas de pássaros selvagens[\LINK]. [LINK=UNIT_LEATHER_TAYLOR]Mestre coureiro[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Lederwarenfabrik[COLOR_REVERT] ist die letzte Erweiterung des [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer (Ledermäntel)[\LINK] die [LINK=YIELD_PADDED_LEATHER_COATS]gefütterten Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher (gefüttert)[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WILD_FEATHERS]Federn von Wildvögeln[\LINK] gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_LEATHER_TAYLOR]Meister-Lederschneider[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Bőrműves Gyár[COLOR_REVERT] a [LINK=BUILDING_LEATHER_PADDER_HOUSE]Bőrműves Bolt[\LINK] végső továbbfejlesztése, ahol a lakosok [LINK=PROFESSION_LEATHER_PADDER_COATS]bőrművesként[\LINK] dolgoznak és [LINK=YIELD_PADDED_LEATHER_COATS]bélelt bőrkabátokat [\LINK] készítenek [LINK=YIELD_HIDES]marhabőrből[\LINK] és [LINK=YIELD_DOWNS]pehelytollból[\LINK] illetve [LINK=PROFESSION_LEATHER_PADDER_BOOTS]csizmadiaként[\LINK] [LINK=YIELD_GOAT_HIDE_BOOTS]bélelt kecskebőr csizmát[\LINK] [LINK=YIELD_GOAT_HIDES]kecskebőrből[\LINK] és [LINK=YIELD_WILD_FEATHERS]vadmadár tollból[\LINK]. A [LINK=UNIT_LEATHER_TAYLOR]bőrműves mesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
@@ -343,7 +344,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_OIL_TRADER</Tag>
 		<English>Cooking Oil Trader</English>
-		<PortugueseBR>Comerciante de óleo de cozinha</PortugueseBR>
+		<Portuguese>Comerciante de óleo de cozinha</Portuguese>
 		<French>Marchand d'huile</French>
 		<German>
 			<Text>Speiseölhändler</Text>
@@ -355,7 +356,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_HOUSE</Tag>
 		<English>Cooking Oil Trader's House</English>
-		<PortugueseBR>Casa do comerciante de óleo de cozinha</PortugueseBR>
+		<Portuguese>Casa do comerciante de óleo de cozinha</Portuguese>
 		<French>Maison du marchand d'huile</French>
 		<German>
 			<Text>Haus des Ölhändlers</Text>
@@ -368,7 +369,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_SHOP</Tag>
 		<English>Cooking Oil Trader's Shop</English>
-		<PortugueseBR>Loja do comerciante de óleo de cozinha</PortugueseBR>
+		<Portuguese>Loja do comerciante de óleo de cozinha</Portuguese>
 		<French>Atelier du marchand d'huile</French>
 		<German>
 			<Text>Speiseölladen</Text>
@@ -381,7 +382,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_FACTORY</Tag>
 		<English>Cooking Oil Trader Factory</English>
-		<PortugueseBR>Fábrica de comerciante de óleo de cozinha</PortugueseBR>
+		<Portuguese>Fábrica de comerciante de óleo de cozinha</Portuguese>
 		<French>Pressoir à huile industriel</French>
 		<German>
 			<Text>Speiseölfabrik</Text>
@@ -394,7 +395,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE</Tag>
 		<English>Cooking Oil Trader's House</English>
-		<PortugueseBR>Casa do comerciante de óleo de cozinha</PortugueseBR>
+		<Portuguese>Casa do comerciante de óleo de cozinha</Portuguese>
 		<French>Maison du marchand d'huile</French>
 		<German>
 			<Text>Haus des Ölhändlers</Text>
@@ -407,7 +408,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP</Tag>
 		<English>Cooking Oil Trader's Shop</English>
-		<PortugueseBR>Loja do comerciante de óleo de cozinha</PortugueseBR>
+		<Portuguese>Loja do comerciante de óleo de cozinha</Portuguese>
 		<French>Atelier du marchand d'huile</French>
 		<German>
 			<Text>Speiseölladen</Text>
@@ -420,7 +421,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY</Tag>
 		<English>Cooking Oil Factory</English>
-		<PortugueseBR>Fábrica de óleo de cozinha</PortugueseBR>
+		<Portuguese>Fábrica de óleo de cozinha</Portuguese>
 		<French>Pressoir à huile industriel</French>
 		<German>
 			<Text>Speiseölfabrik</Text>
@@ -433,7 +434,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_PEDIA</Tag>
 		<English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Oolichan oil from candlefish made up so much of Native commerce that the trade routes were called "grease trails".[NEWLINE]Settlers eating wild game soon realize that it has much less fat than they're used to from domestic animals. In a cold climate fat keeps workers warm outdoors. In the wilderness plant oils are a good path to a balanced diet.</English>
-		<PortugueseBR>A prensagem do óleo é uma arte antiga na Europa, especialmente nas culturas mediterrânicas. O equipamento que esmaga azeitonas para obter o seu azeite pode ser adaptado para trabalhar com colza.[NEWLINE]Antes do contacto europeu, o óleo de cozinha era essencial para as nações nativas do Noroeste do Pacífico. O óleo de oolichan do peixe-vela compunha tanto o comércio nativo que as rotas comerciais eram chamadas de "trilhas de gordura".[NEWLINE]Os colonos que comem caça selvagem logo percebem que ela contém muito menos gordura do que os animais domésticos estão acostumados. Num clima frio, a gordura mantém os trabalhadores aquecidos ao ar livre. No deserto, os óleos vegetais são um bom caminho para uma dieta equilibrada.</PortugueseBR>
+		<Portuguese>A prensagem do óleo é uma arte antiga na Europa, especialmente nas culturas mediterrânicas. O equipamento que esmaga azeitonas para obter o seu azeite pode ser adaptado para trabalhar com colza.[NEWLINE]Antes do contacto europeu, o óleo de cozinha era essencial para as nações nativas do Noroeste do Pacífico. O óleo de oolichan do peixe-vela compunha tanto o comércio nativo que as rotas comerciais eram chamadas de "trilhas de gordura".[NEWLINE]Os colonos que comem caça selvagem logo percebem que ela contém muito menos gordura do que os animais domésticos estão acostumados. Num clima frio, a gordura mantém os trabalhadores aquecidos ao ar livre. No deserto, os óleos vegetais são um bom caminho para uma dieta equilibrada.</Portuguese>
 		<French>Le pressage de l'huile est un artisanat ancien en Europe, notamment dans les cultures méditerranéennes. Les équipements qui écrasent les olives pour en extraire l'huile peuvent être adaptés au colza. Avant le contact avec les Européens, l'huile de cuisson était essentielle pour les nations autochtones du nord-ouest du Pacifique. L'huile d'oolichan provenant de la chandelle constituait une si grande partie du commerce amérindien que les routes commerciales étaient appelées "pistes de graisse".</French>
 		<German>Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den Mittelmeerkulturen. Die Geräte, mit denen Oliven zur Gewinnung von Öl gepresst werden, können auch für die Verarbeitung von Raps verwendet werden.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Oolichan-Öl aus Kerzenfisch machte einen so großen Teil des Handels der Ureinwohner aus, dass die Handelsrouten als "Fettstraßen" bezeichnet wurden.[NEWLINE]Siedler, die Wild essen, stellen bald fest, dass das Fleisch viel weniger Fettanteil hat, als sie es von ihren Nutztieren gewohnt sind. In einem kalten Klima trägt Fett jedoch erheblich dazu bei, die Arbeiter im Freien lange warmzuhalten. In der Wildnis sind Pflanzenöle entsprechend ein guter Weg zu einer ausgewogenen Ernährung.</German>
 		<Italian>La spremitura dell'olio è un'attività antica in Europa, in particolare nelle culture mediterranee. Le attrezzature che schiacciano le olive per ricavarne l'olio possono essere adattate alla colza.[NEWLINE]Prima del contatto europeo, l'olio da cucina era essenziale per i nativi del Pacifico nordoccidentale. L'olio di oolichan ricavato dal pesce candela costituiva una parte così importante del commercio dei nativi che le rotte commerciali venivano chiamate "vie del grasso".</Italian>
@@ -443,35 +444,35 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]oil trader's house[COLOR_REVERT] or one of its upgrades is where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]rapeseed oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]rapeseed oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil traders[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]casa do comerciante de azeite[COLOR_REVERT] ou uma de suas melhorias é onde o [LINK=PROFESSION_OLIVE_OIL_TRADER]comerciante de azeite[\LINK] fabrica [LINK=YIELD_OLIVE_OIL]azeite[\LINK] de [LINK=YIELD_OLIVES]azeitonas[\LINK] ou o [LINK=PROFESSION_RAPE_OIL_TRADER]comerciante de óleo de colza[\LINK] produz [LINK=YIELD_RAPE_OIL]óleo de colza[\LINK] de [LINK=YIELD_RAPE]colza[\LINK]. [LINK=UNIT_OIL_TRADER]Mestres comerciantes de óleo de cozinha[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]casa do comerciante de azeite[COLOR_REVERT] ou uma de suas melhorias é onde o [LINK=PROFESSION_OLIVE_OIL_TRADER]comerciante de azeite[\LINK] fabrica [LINK=YIELD_OLIVE_OIL]azeite[\LINK] de [LINK=YIELD_OLIVES]azeitonas[\LINK] ou o [LINK=PROFESSION_RAPE_OIL_TRADER]comerciante de óleo de colza[\LINK] produz [LINK=YIELD_RAPE_OIL]óleo de colza[\LINK] de [LINK=YIELD_RAPE]colza[\LINK]. [LINK=UNIT_OIL_TRADER]Mestres comerciantes de óleo de cozinha[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Ölhändlers[COLOR_REVERT] oder einer seiner Ausbaustufen stellen [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Ölivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] her.[PARAGRAPH:1][LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>Az [COLOR_HIGHLIGHT_TEXT]Étolaj Bolt[COLOR_REVERT] vagy annak egyik továbbfejlesztése az a hely, ahol az [LINK=PROFESSION_OLIVE_OIL_TRADER]Olívaolaj Készítő[\LINK] [LINK=YIELD_OLIVE_OIL]Olívaolajat[\LINK] állít elő [LINK=YIELD_OLIVES]Olajbogyóból [\LINK] vagy a [LINK=PROFESSION_RAPE_OIL_TRADER]Repceolaj Készítő[\LINK] [LINK=YIELD_RAPE_OIL]Repceolajat[\LINK] állít elő [LINK=YIELD_RAPE]Repcéből[\LINK]. Az [LINK=UNIT_OIL_TRADER]Étolajkészítő  Mesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_PEDIA</Tag>
 		<English>As the oil pressers refine their trade the quality of the oil attracts new customers. Oil traders can now separate their pressings into varying grades to be sold at different prices. As customers discuss which is better for different situations, sales increase.</English>
-		<PortugueseBR>À medida que os prensadores de óleo refinam o seu comércio, a qualidade do óleo atrai novos clientes. Os comerciantes de petróleo podem agora separar as suas prensas em diferentes qualidades para serem vendidas a preços diferentes. À medida que os clientes discutem o que é melhor para diferentes situações, as vendas aumentam.</PortugueseBR>
+		<Portuguese>À medida que os prensadores de óleo refinam o seu comércio, a qualidade do óleo atrai novos clientes. Os comerciantes de petróleo podem agora separar as suas prensas em diferentes qualidades para serem vendidas a preços diferentes. À medida que os clientes discutem o que é melhor para diferentes situações, as vendas aumentam.</Portuguese>
 		<German>In dem Maße, wie die Ölpresser ihr Handwerk verfeinern, zieht die Qualität des Öls neue Kunden an.[NEWLINE]Ölpresser können nun ihre Presslinge in verschiedene Qualitäten unterteilen, die zu unterschiedlichen Preisen verkauft werden. Wenn die Kunden darüber diskutieren, welche Qualität für die verschiedenen Situationen besser ist, steigt der Umsatz.</German>
 		<Hungarian>Ahogy az olajpréselők tökéletesítik mesterségüket, az olaj minősége új vásárlókat vonz. Az olajkészítők most már különböző minőségi osztályokba sorolhatják a préselt olajokat, hogy azokat különböző áron értékesítsék. Ahogy a vásárlók megvitatják, melyik olaj a legjobb a különböző helyzetekben, az eladások növekednek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]cooking oil shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]rapeseed oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]rapeseed oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil traders[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]loja de óleo de cozinha[COLOR_REVERT] é a atualização da [LINK=BUILDING_OIL_TRADER_HOUSE]casa do comerciante de azeite[\LINK] onde o [LINK=PROFESSION_OLIVE_OIL_TRADER]comerciante de azeite[\LINK] fabrica [LINK=YIELD_OLIVE_OIL]azeite[\LINK] de [LINK=YIELD_OLIVES]azeitonas[\LINK] ou o [LINK=PROFESSION_RAPE_OIL_TRADER]comerciante de óleo de colza[\LINK] fabrica [LINK=YIELD_RAPE_OIL]óleo de colza[\LINK] de [LINK=YIELD_RAPE]colza[\LINK]. [LINK=UNIT_OIL_TRADER]Mestres comerciantes de óleo de cozinha[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]loja de óleo de cozinha[COLOR_REVERT] é a atualização da [LINK=BUILDING_OIL_TRADER_HOUSE]casa do comerciante de azeite[\LINK] onde o [LINK=PROFESSION_OLIVE_OIL_TRADER]comerciante de azeite[\LINK] fabrica [LINK=YIELD_OLIVE_OIL]azeite[\LINK] de [LINK=YIELD_OLIVES]azeitonas[\LINK] ou o [LINK=PROFESSION_RAPE_OIL_TRADER]comerciante de óleo de colza[\LINK] fabrica [LINK=YIELD_RAPE_OIL]óleo de colza[\LINK] de [LINK=YIELD_RAPE]colza[\LINK]. [LINK=UNIT_OIL_TRADER]Mestres comerciantes de óleo de cozinha[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]Speiseölladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_OIL_TRADER_HOUSE]Haus des Ölhändlers[\LINK], wo der [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Olivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder der [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] herstellt.[PARAGRAPH:1][LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>Az [COLOR_HIGHLIGHT_TEXT]Étolaj Üzlet[COLOR_REVERT] az [LINK=BUILDING_OIL_TRADER_HOUSE]Étolaj Bolt[\LINK] továbbfejlesztett változata, ahol az [LINK=PROFESSION_OLIVE_OIL_TRADER]Olívaolaj Készítő[\LINK] [LINK=YIELD_OLIVE_OIL]Olívaolajat[\LINK] készít [LINK=YIELD_OLIVES]Olajbogyóból[\LINK], vagy a [LINK=PROFESSION_RAPE_OIL_TRADER]Repceolaj Készítő[\LINK] [LINK=YIELD_RAPE_OIL]Repceolajat[\LINK] állít elő [LINK=YIELD_RAPE]Repcéből[\LINK]. Az [LINK=UNIT_OIL_TRADER]Étolajkészítő Mesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_PEDIA</Tag>
 		<English>If there's a good supply of olives and rapeseed, the oil presses can be mechanized to generate exportable quantities. If surplus quantities of oil and rapeseed can be grown close to the factory, an ambitious manager might prove himself by exporting the very best olive oil to Italy.</English>
-		<PortugueseBR>Se houver uma boa oferta de azeitonas e colza, os lagares podem ser mecanizados para gerar quantidades exportáveis. Se quantidades excedentárias de azeite e colza puderem ser cultivadas perto da fábrica, um gestor ambicioso poderá provar o seu valor exportando o melhor azeite para Itália.</PortugueseBR>
+		<Portuguese>Se houver uma boa oferta de azeitonas e colza, os lagares podem ser mecanizados para gerar quantidades exportáveis. Se quantidades excedentárias de azeite e colza puderem ser cultivadas perto da fábrica, um gestor ambicioso poderá provar o seu valor exportando o melhor azeite para Itália.</Portuguese>
 		<German>Wenn es ein gutes Angebot an Oliven und Raps gibt, können die Ölpressen mechanisiert werden, um exportfähige Mengen zu erzeugen.[NEWLINE]Wenn in der Nähe der Fabrik überschüssige Öl- und Rapsmengen angebaut werden können, könnte sich ein ehrgeiziger Manager durch den Export von bestem Olivenöl nach Italien beweisen.</German>
 		<Hungarian>Ha elegendő mennyiségű olajbogyó és repce áll rendelkezésre, az olajprések gépesíthetők, hogy exportra alkalmas mennyiségeket állítsanak elő. Ha a gyár közelében többletmennyiségű olajbogyó és repce termeszthető, egy ambiciózus vezető bizonyíthatja rátermettségét azzal, hogy a legjobb minőségű olívaolajat Olaszországba exportálja.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]cooking oil factory[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK], where the [LINK=PROFESSION_OLIVE_OIL_TRADER]olive oil trader[\LINK] makes [LINK=YIELD_OLIVE_OIL]olive oil[\LINK] from [LINK=YIELD_OLIVES]olives[\LINK] or [LINK=PROFESSION_RAPE_OIL_TRADER]rapeseed oil trader[\LINK] makes [LINK=YIELD_RAPE_OIL]rapeseed oil[\LINK] from [LINK=YIELD_RAPE]rapeseed[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil traders[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]fábrica de óleo de cozinha[COLOR_REVERT] é a atualização definitiva da [LINK=BUILDING_OIL_TRADER_HOUSE]casa do comerciante de azeite[\LINK], onde o [LINK=PROFESSION_OLIVE_OIL_TRADER]comerciante de azeite[\LINK] produz [LINK=YIELD_OLIVE_OIL]azeite[\LINK] a partir de [LINK=YIELD_OLIVES]azeitonas[\LINK] ou o [LINK=PROFESSION_RAPE_OIL_TRADER]comerciante de óleo de colza[\LINK] fabrica [LINK=YIELD_RAPE_OIL]óleo de colza[\LINK] de [LINK=YIELD_RAPE]colza[\LINK]. [LINK=UNIT_OIL_TRADER]Mestres comerciantes de óleo de cozinha[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]fábrica de óleo de cozinha[COLOR_REVERT] é a atualização definitiva da [LINK=BUILDING_OIL_TRADER_HOUSE]casa do comerciante de azeite[\LINK], onde o [LINK=PROFESSION_OLIVE_OIL_TRADER]comerciante de azeite[\LINK] produz [LINK=YIELD_OLIVE_OIL]azeite[\LINK] a partir de [LINK=YIELD_OLIVES]azeitonas[\LINK] ou o [LINK=PROFESSION_RAPE_OIL_TRADER]comerciante de óleo de colza[\LINK] fabrica [LINK=YIELD_RAPE_OIL]óleo de colza[\LINK] de [LINK=YIELD_RAPE]colza[\LINK]. [LINK=UNIT_OIL_TRADER]Mestres comerciantes de óleo de cozinha[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Speiseölfabrik[COLOR_REVERT] ist das höchste Ausbaustufe des [LINK=BUILDING_OIL_TRADER_HOUSE]Haus des Ölhändlers[\LINK], wo der [LINK=PROFESSION_OLIVE_OIL_TRADER]Olivenölhändler[\LINK] das [LINK=YIELD_OLIVE_OIL]Olivenöl[\LINK] aus [LINK=YIELD_OLIVES]Oliven[\LINK] oder der [LINK=PROFESSION_RAPE_OIL_TRADER]Rapsölhändler[\LINK] das [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] aus [LINK=YIELD_RAPE]Raps[\LINK] herstellt.[PARAGRAPH:1][LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>Az [COLOR_HIGHLIGHT_TEXT]Étolaj Gyár[COLOR_REVERT] az [LINK=BUILDING_OIL_TRADER_HOUSE]Étolaj Bolt[\LINK] végső továbbfejlesztése, ahol az [LINK=PROFESSION_OLIVE_OIL_TRADER]Olívaolaj Készítő[\LINK] [LINK=YIELD_OLIVE_OIL]Olívaolajat[\LINK] készít [LINK=YIELD_OLIVES]Olajbogyóból[\LINK], vagy a [LINK=PROFESSION_RAPE_OIL_TRADER]Repceola Készítő[\LINK] [LINK=YIELD_RAPE_OIL]Repceolajat[\LINK] állít elő [LINK=YIELD_RAPE]Repcéből[\LINK]. Az [LINK=UNIT_OIL_TRADER]Étolajészítő Mesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
@@ -479,6 +480,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_ROASTER</Tag>
 		<English>Roastery</English>
+		<Portuguese>Torrefação</Portuguese>
 		<German>
 			<Text>Erdnussrösterei</Text>
 			<Gender>Female</Gender>
@@ -489,7 +491,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_ROASTER_HOUSE</Tag>
 		<English>Roaster's House</English>
-		<PortugueseBR>Casa do Torrador</PortugueseBR>
+		<Portuguese>Casa do Torrador</Portuguese>
 		<French>Maison de torréfaction</French>
 		<German>
 			<Text>Haus des Rösters</Text>
@@ -502,7 +504,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_ROASTER_SHOP</Tag>
 		<English>Roaster's Shop</English>
-		<PortugueseBR>Loja do Torrador</PortugueseBR>
+		<Portuguese>Loja do Torrador</Portuguese>
 		<French>Maison du rôtisseur de graines</French>
 		<German>
 			<Text>Röstwarenladen</Text>
@@ -515,7 +517,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_ROASTER_FACTORY</Tag>
 		<English>Roastery</English>
-		<PortugueseBR>Torrefação</PortugueseBR>
+		<Portuguese>Torrefação</Portuguese>
 		<French>Rôtisserie de graines</French>
 		<German>
 			<Text>Rösterei</Text>
@@ -528,7 +530,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROASTER_HOUSE</Tag>
 		<English>Roaster's House</English>
-		<PortugueseBR>Casa do Torrador</PortugueseBR>
+		<Portuguese>Casa do Torrador</Portuguese>
 		<French>Maison du rôtisseur de graines</French>
 		<German>
 			<Text>Haus des Rösters</Text>
@@ -541,7 +543,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROASTER_SHOP</Tag>
 		<English>Roaster's Shop</English>
-		<PortugueseBR>Loja do Torrador</PortugueseBR>
+		<Portuguese>Loja do Torrador</Portuguese>
 		<French>Atelier du rôtisseur de graines</French>
 		<German>
 			<Text>Röstwarenladen</Text>
@@ -554,7 +556,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROASTER_FACTORY</Tag>
 		<English>Roastery</English>
-		<PortugueseBR>Torrefação</PortugueseBR>
+		<Portuguese>Torrefação</Portuguese>
 		<French>Rôtisserie de graines industrielle </French>
 		<German>
 			<Text>Rösterei</Text>
@@ -567,7 +569,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_PEDIA</Tag>
 		<English>Peanuts are widely grown in the tropics and subtropics. Botanically they're a member of the bean family but in cooking they're used like a nut. Unlike most legumes peanut pods mature underground.[NEWLINE]Peanuts are an excellent source of protein and vitamins. They complement traditional European grains, contributing to workers' health and stamina.</English>
-		<PortugueseBR>O amendoim é amplamente cultivado nos trópicos e subtrópicos. Botanicamente, são membros da família do feijão, mas na culinária são usados ​​como uma noz. Ao contrário da maioria das leguminosas, as vagens de amendoim amadurecem no subsolo.[NEWLINE]Os amendoins são uma excelente fonte de proteínas e vitaminas. Complementam os cereais europeus tradicionais, contribuindo para a saúde e a resistência dos trabalhadores.</PortugueseBR>
+		<Portuguese>O amendoim é amplamente cultivado nos trópicos e subtrópicos. Botanicamente, são membros da família do feijão, mas na culinária são usados ​​como uma noz. Ao contrário da maioria das leguminosas, as vagens de amendoim amadurecem no subsolo.[NEWLINE]Os amendoins são uma excelente fonte de proteínas e vitaminas. Complementam os cereais europeus tradicionais, contribuindo para a saúde e a resistência dos trabalhadores.</Portuguese>
 		<French>Les cacahuètes sont largement cultivées dans les régions tropicales et subtropicales. Sur le plan botanique, elles font partie de la famille des haricots, mais en cuisine, elles sont utilisées comme des noix. Contrairement à la plupart des légumineuses, les gousses d'arachide mûrissent sous terre.</French>
 		<German>Erdnüsse werden in den Tropen und Subtropen weit verbreitet angebaut. Botanisch gesehen gehören sie zur Familie der Bohnengewächse, aber in der Küche werden sie wie eine Nuss verwendet. Im Gegensatz zu den meisten Hülsenfrüchten reifen Erdnussschoten unterirdisch.[NEWLINE]Erdnüsse sind eine hervorragende Quelle für Proteine und Vitamine. Sie ergänzen die traditionellen europäischen Getreidesorten und tragen zur Gesundheit und Ausdauer der Arbeitnehmer bei.</German>
 		<Italian>Le arachidi sono ampiamente coltivate nei tropici e nelle regioni subtropicali. Dal punto di vista botanico fanno parte della famiglia dei fagioli, ma in cucina vengono utilizzate come una noce. A differenza della maggior parte dei legumi, i baccelli delle arachidi maturano sottoterra.</Italian>
@@ -577,34 +579,34 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROASTER_HOUSE_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]roaster's house[COLOR_REVERT] is where various foods are roasted:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Peanut roasters[\LINK] roast [LINK=YIELD_PEANUTS]peanuts[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]cocoa roasters[\LINK] roast [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Coffee roasters[\LINK] roast [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COFFEE]coffee[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Master roasters[\LINK] are particularly effective in this regard.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]casa do torrador[COLOR_REVERT] é onde vários alimentos são torrados:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Torradores de amendoim[\LINK] torram [LINK=YIELD_PEANUTS]amendoins[\LINK] para fazer [LINK=YIELD_ROASTED_PEANUTS]amendoins torrados[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]torrefadores de cacau[\LINK] assam [LINK=YIELD_COCOA_FRUITS]vagens de cacau[\LINK] para fazer [LINK=YIELD_COCOA]cacau[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Torradeiras de café[\LINK] torram [LINK=YIELD_COFFEE_BERRIES]frutas de café[\LINK] para fazer [LINK=YIELD_COFFEE]café[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Torradeiras mestres[\LINK] são particularmente eficazes nesse aspecto.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]casa do torrador[COLOR_REVERT] é onde vários alimentos são torrados:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Torradores de amendoim[\LINK] torram [LINK=YIELD_PEANUTS]amendoins[\LINK] para fazer [LINK=YIELD_ROASTED_PEANUTS]amendoins torrados[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]torrefadores de cacau[\LINK] assam [LINK=YIELD_COCOA_FRUITS]vagens de cacau[\LINK] para fazer [LINK=YIELD_COCOA]cacau[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Torradeiras de café[\LINK] torram [LINK=YIELD_COFFEE_BERRIES]frutas de café[\LINK] para fazer [LINK=YIELD_COFFEE]café[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Torradeiras mestres[\LINK] são particularmente eficazes nesse aspecto.</Portuguese>
 		<German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Rösters[COLOR_REVERT] oder einer seiner Ausbaustufen können verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.[PARAGRAPH:1][LINK=UNIT_ROASTER]Röstmeister[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Pörkölő Boltban[COLOR_REVERT] különféle ételeket pörkölnek:[NEWLINE]A [LINK=PROFESSION_PEANUT_ROASTER]Mogyoró Pörkölők[\LINK] [LINK=YIELD_PEANUTS]Mogyorót[\LINK] pörkölnek, hogy [LINK=YIELD_ROASTED_PEANUTS]Pörkölt Mogyorót[\LINK] készítsenek.[NEWLINE]A [LINK=PROFESSION_COCOA_ROASTER]kakaóbab Pörkölők[\LINK] [LINK=YIELD_COCOA_FRUITS]Kakaóbabot[\LINK] pörkölnek, hogy [LINK=YIELD_COCOA]Kakaót[\LINK] készítsenek. [NEWLINE]A [LINK=PROFESSION_COFFEE_ROASTER]Kávépörkölők[\LINK] a  [LINK=YIELD_COFFEE_BERRIES]Kávébogyókat[\LINK] pörkölik, hogy [LINK=YIELD_COFFEE]kávét[\LINK] készítsenek.[NEWLINE]A [LINK=UNIT_ROASTER]Pörkölőmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROASTER_SHOP_PEDIA</Tag>
 		<English>Though they can be boiled, fresh harvested raw peanuts are usually roasted before being eaten. Enterprising roasters soon learn to add salt or grind the peanuts into peanut butter. Other nut butters soon follow.[NEWLINE]Once dried, peanuts last for a long time in a scout's saddlebags or in the barrels on a wagon. Peanut oil is also valuable for cooking.</English>
-		<PortugueseBR>Embora possam ser fervidos, os amendoins crus recém-colhidos geralmente são torrados antes de serem consumidos. Torrefadores empreendedores logo aprendem a adicionar sal ou a transformar os amendoins em manteiga de amendoim. Outras manteigas de nozes logo se seguirão.[NEWLINE]Depois de secos, os amendoins duram muito tempo nos alforjes de um batedor ou nos barris de uma carroça. O óleo de amendoim também é valioso para cozinhar.</PortugueseBR>
+		<Portuguese>Embora possam ser fervidos, os amendoins crus recém-colhidos geralmente são torrados antes de serem consumidos. Torrefadores empreendedores logo aprendem a adicionar sal ou a transformar os amendoins em manteiga de amendoim. Outras manteigas de nozes logo se seguirão.[NEWLINE]Depois de secos, os amendoins duram muito tempo nos alforjes de um batedor ou nos barris de uma carroça. O óleo de amendoim também é valioso para cozinhar.</Portuguese>
 		<German>Obwohl sie gekocht werden können, werden frisch geerntete, rohe Erdnüsse in der Regel geröstet, bevor sie verzehrt werden. Unternehmungslustige Röster lernten bald, Salz hinzuzufügen oder die Erdnüsse zu Erdnussbutter zu mahlen. Andere Nussbuttersorten folgten bald.[NEWLINE]Einmal getrocknet, halten sich Erdnüsse lange in den Satteltaschen der Pfadfinder oder in den Fässern auf dem Wagen. Erdnussöl ist auch zum Kochen wertvoll.</German>
 		<Hungarian>Bár meg lehet főzni őket, a frissen betakarított nyers mogyorót általában megpirítják, mielőtt megeszik. A vállalkozó szellemű pörkölők hamar megtanulják, hogy sózzák vagy őröljék a mogyorót mogyoróvajjá. Hamarosan más diófélékből készült vajak is megjelennek.[NEWLINE]A mogyoró szárítás után hosszú ideig eltartható a cserkészek nyeregtáskájában vagy a szekér hordóiban. A mogyoróolaj is értékes főzéshez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROASTER_SHOP_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]roaster shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK] where various foods are roasted:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Peanut roasters[\LINK] roast [LINK=YIELD_PEANUTS]peanuts[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]cocoa roasters[\LINK] roast [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Coffee roasters[\LINK] roast [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COFFEE]coffee[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Master roasters[\LINK] are particularly effective in this regard.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]loja de torradores[COLOR_REVERT] é a atualização da [LINK=BUILDING_ROASTER_HOUSE]casa do torrador[\LINK] onde vários alimentos são torrados:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Torradores de amendoim[\LINK] assam [LINK=YIELD_PEANUTS]amendoins[\LINK] para fazer [LINK=YIELD_ROASTED_PEANUTS]amendoins torrados[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]torrefadores de cacau[\LINK] assam [LINK=YIELD_COCOA_FRUITS]vagens de cacau[\LINK] para fazer [LINK=YIELD_COCOA]cacau[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Torradeiras de café[\LINK] torram [LINK=YIELD_COFFEE_BERRIES]frutas de café[\LINK] para fazer [LINK=YIELD_COFFEE]café[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Torradeiras mestres[\LINK] são particularmente eficazes nesse aspecto.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]loja de torradores[COLOR_REVERT] é a atualização da [LINK=BUILDING_ROASTER_HOUSE]casa do torrador[\LINK] onde vários alimentos são torrados:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Torradores de amendoim[\LINK] assam [LINK=YIELD_PEANUTS]amendoins[\LINK] para fazer [LINK=YIELD_ROASTED_PEANUTS]amendoins torrados[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]torrefadores de cacau[\LINK] assam [LINK=YIELD_COCOA_FRUITS]vagens de cacau[\LINK] para fazer [LINK=YIELD_COCOA]cacau[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Torradeiras de café[\LINK] torram [LINK=YIELD_COFFEE_BERRIES]frutas de café[\LINK] para fazer [LINK=YIELD_COFFEE]café[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Torradeiras mestres[\LINK] são particularmente eficazes nesse aspecto.</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]Röstwarenladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_ROASTER_HOUSE]Haus des Rösters[\LINK], wo verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.[PARAGRAPH:1][LINK=UNIT_ROASTER]Röstmeister[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Pörkölő Üzlet[COLOR_REVERT] a [LINK=BUILDING_ROASTER_HOUSE]Pörkölő Bolt[\LINK] továbbfejlesztése, ahol különböző ételeket pörkölnek:[NEWLINE]A [LINK=PROFESSION_PEANUT_ROASTER]Mogyoró Pörkölők[\LINK] [LINK=YIELD_PEANUTS]Mogyorót[\LINK] pörkölnek, hogy [LINK=YIELD_ROASTED_PEANUTS]Pörkölt Mogyorót[\LINK] készítsenek.[NEWLINE]A [LINK=PROFESSION_COCOA_ROASTER]kakaóbab Pörkölők[\LINK] [LINK=YIELD_COCOA_FRUITS]Kakaóbabot[\LINK] pörkölnek, hogy [LINK=YIELD_COCOA]Kakaót[\LINK] készítsenek. [NEWLINE]A [LINK=PROFESSION_COFFEE_ROASTER]Kávépörkölők[\LINK] a  [LINK=YIELD_COFFEE_BERRIES]Kávébogyókat[\LINK] pörkölik, hogy [LINK=YIELD_COFFEE]kávét[\LINK] készítsenek.[NEWLINE]A [LINK=UNIT_ROASTER]Pörkölőmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_PEDIA</Tag>
 		<English>As peanut growers start to deliver large crops, roasters extend the market beyond their own cities, promoting the peanut as an exotic delicacy in temperate regions where it won't grow, Europe for example.[NEWLINE]A region with a big peanut roasting factory helps keep workers healthy. Peanuts are especially important where slave populations need added protein. Their owners can afford to eat meat, increasing their risk of heart disease.</English>
-		<PortugueseBR>À medida que os produtores de amendoim começam a produzir grandes colheitas, os torrefadores estendem o mercado para além das suas próprias cidades, promovendo o amendoim como uma iguaria exótica em regiões temperadas onde não cresce, como na Europa, por exemplo.[NEWLINE]Uma região com uma grande fábrica de torrefação de amendoim ajuda a manter os trabalhadores saudáveis. Os amendoins são especialmente importantes onde as populações escravas necessitam de proteína adicional. Seus proprietários podem se dar ao luxo de comer carne, aumentando o risco de doenças cardíacas.</PortugueseBR>
+		<Portuguese>À medida que os produtores de amendoim começam a produzir grandes colheitas, os torrefadores estendem o mercado para além das suas próprias cidades, promovendo o amendoim como uma iguaria exótica em regiões temperadas onde não cresce, como na Europa, por exemplo.[NEWLINE]Uma região com uma grande fábrica de torrefação de amendoim ajuda a manter os trabalhadores saudáveis. Os amendoins são especialmente importantes onde as populações escravas necessitam de proteína adicional. Seus proprietários podem se dar ao luxo de comer carne, aumentando o risco de doenças cardíacas.</Portuguese>
 		<German>In dem Maße, in dem die Erdnussbauern beginnen, große Ernten zu liefern, dehnen die Röster den Markt über ihre eigenen Städte hinaus aus und werben für die Erdnuss als exotische Delikatesse in  Regionen, wie zum Beispiel Europa, in denen sie nicht wächst.[NEWLINE]Eine Region mit einer großen Erdnussrösterei trägt zur Gesunderhaltung der Arbeiter bei. Erdnüsse sind besonders wichtig, wenn Sklaven zusätzliche Proteine benötigen. Ihre Besitzer können es sich leisten, Fleisch zu essen, was ihr Risiko für Herzkrankheiten erhöht.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROASTER_FACTORY_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]roastery[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_ROASTER_HOUSE]roaster's house[\LINK] where various foods are roasted:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Peanut roasters[\LINK] roast [LINK=YIELD_PEANUTS]peanuts[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]cocoa roasters[\LINK] roast [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] to make [LINK=YIELD_COCOA]cocoa[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Coffee roasters[\LINK] roast [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_COFFEE]coffee[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Master roasters[\LINK] are particularly effective in this regard.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]torradeira[COLOR_REVERT] é a atualização definitiva da [LINK=BUILDING_ROASTER_HOUSE]casa do torrador[\LINK] onde vários alimentos são torrados:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]torradores de amendoim[\LINK] assam [LINK=YIELD_PEANUTS]amendoins[\LINK] para fazer [LINK=YIELD_ROASTED_PEANUTS]amendoins torrados[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]torrefadores de cacau[\LINK] assam [LINK=YIELD_COCOA_FRUITS]vagens de cacau[\LINK] para fazer [LINK=YIELD_COCOA]cacau[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Torradeiras de café[\LINK] torram [LINK=YIELD_COFFEE_BERRIES]frutas de café[\LINK] para fazer [LINK=YIELD_COFFEE]café[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Torradeiras mestres[\LINK] são particularmente eficazes nesse aspecto.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]torradeira[COLOR_REVERT] é a atualização definitiva da [LINK=BUILDING_ROASTER_HOUSE]casa do torrador[\LINK] onde vários alimentos são torrados:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]torradores de amendoim[\LINK] assam [LINK=YIELD_PEANUTS]amendoins[\LINK] para fazer [LINK=YIELD_ROASTED_PEANUTS]amendoins torrados[\LINK]. [NEWLINE][LINK=PROFESSION_COCOA_ROASTER]torrefadores de cacau[\LINK] assam [LINK=YIELD_COCOA_FRUITS]vagens de cacau[\LINK] para fazer [LINK=YIELD_COCOA]cacau[\LINK]. [NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Torradeiras de café[\LINK] torram [LINK=YIELD_COFFEE_BERRIES]frutas de café[\LINK] para fazer [LINK=YIELD_COFFEE]café[\LINK].[NEWLINE][LINK=UNIT_ROASTER]Torradeiras mestres[\LINK] são particularmente eficazes nesse aspecto.</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Rösterei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_ROASTER_HOUSE]Haus des Rösters[\LINK], wo verschiedene Lebensmittel geröstet werden:[NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Erdnussröster[\LINK] rösten [LINK=YIELD_PEANUTS]Erdnüsse[\LINK] um [LINK=YIELD_ROASTED_PEANUTS]geröstete Erdnüsse[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COCOA_ROASTER]Kakaoröster[\LINK] rösten [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] um [LINK=YIELD_COCOA]Kakao[\LINK] herzustellen.[NEWLINE][LINK=PROFESSION_COFFEE_ROASTER]Kaffeeröster[\LINK] rösten [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] um [LINK=YIELD_COFFEE]Kaffee[\LINK] herzustellen.[PARAGRAPH:1][LINK=UNIT_ROASTER]Röstmeister[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Pörkölőüzem[COLOR_REVERT] a [LINK=BUILDING_ROASTER_HOUSE]Pörkölő Bolt[\LINK] végső továbbfejlesztése, ahol különböző ételeket pörkölnek:[NEWLINE]A [LINK=PROFESSION_PEANUT_ROASTER]Mogyoró Pörkölők[\LINK] [LINK=YIELD_PEANUTS]Mogyorót[\LINK] pörkölnek, hogy [LINK=YIELD_ROASTED_PEANUTS]Pörkölt Mogyorót[\LINK] készítsenek.[NEWLINE]A [LINK=PROFESSION_COCOA_ROASTER]kakaóbab Pörkölők[\LINK] [LINK=YIELD_COCOA_FRUITS]Kakaóbabot[\LINK] pörkölnek, hogy [LINK=YIELD_COCOA]Kakaót[\LINK] készítsenek. [NEWLINE]A [LINK=PROFESSION_COFFEE_ROASTER]Kávépörkölők[\LINK] a  [LINK=YIELD_COFFEE_BERRIES]Kávébogyókat[\LINK] pörkölik, hogy [LINK=YIELD_COFFEE]kávét[\LINK] készítsenek.[NEWLINE]A [LINK=UNIT_ROASTER]Pörkölőmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
@@ -612,7 +614,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_POTTERY</Tag>
 		<English>Potter's House</English>
-		<PortugueseBR>Casa do Oleiro</PortugueseBR>
+		<Portuguese>Casa do Oleiro</Portuguese>
 		<French>Maison du potier</French>
 		<German>
 			<Text>Töpferei</Text>
@@ -624,7 +626,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_HOUSE</Tag>
 		<English>Potter's House</English>
-		<PortugueseBR>Casa do Oleiro</PortugueseBR>
+		<Portuguese>Casa do Oleiro</Portuguese>
 		<French>Maison du potier</French>
 		<German>
 			<Text>Haus des Töpfers</Text>
@@ -637,7 +639,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_SHOP</Tag>
 		<English>Potter's Shop</English>
-		<PortugueseBR>Loja do Oleiro</PortugueseBR>
+		<Portuguese>Loja do Oleiro</Portuguese>
 		<French>Atelier du potier</French>
 		<German>
 			<Text>Töpferladen</Text>
@@ -650,7 +652,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_FACTORY</Tag>
 		<English>Pottery Factory</English>
-		<PortugueseBR>Fábrica de Cerâmica</PortugueseBR>
+		<Portuguese>Fábrica de Cerâmica</Portuguese>
 		<French>Usine de poterie</French>
 		<German>
 			<Text>Töpferei</Text>
@@ -663,7 +665,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POTTERY_HOUSE</Tag>
 		<English>Potter's House</English>
-		<PortugueseBR>Casa do Oleiro</PortugueseBR>
+		<Portuguese>Casa do Oleiro</Portuguese>
 		<French>Maison du potier</French>
 		<German>
 			<Text>Haus des Töpfers</Text>
@@ -676,7 +678,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POTTERY_SHOP</Tag>
 		<English>Potter's Shop</English>
-		<PortugueseBR>Loja do Oleiro</PortugueseBR>
+		<Portuguese>Loja do Oleiro</Portuguese>
 		<French>Atelier du potier</French>
 		<German>
 			<Text>Töpferladen</Text>
@@ -689,7 +691,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POTTERY_FACTORY</Tag>
 		<English>Pottery Factory</English>
-		<PortugueseBR>Fábrica de Cerâmica</PortugueseBR>
+		<Portuguese>Fábrica de Cerâmica</Portuguese>
 		<French>Usine de poterie</French>
 		<German>
 			<Text>Töpferei</Text>
@@ -702,7 +704,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_PEDIA</Tag>
 		<English>Pottery is an ancient way to store grain. In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until they can finally plant their new crops in spring. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements.</English>
-		<PortugueseBR>A cerâmica é uma forma antiga de armazenar grãos. No Novo Mundo chuvoso e infestado de insectos, os vasos contêm cereais suficientes para manter os colonos vivos durante o Inverno, até que possam finalmente plantar as suas novas culturas na Primavera. Carregar potes resistentes em vagões é uma maneira prática de transportar grãos e fornecer alimentos para novos assentamentos.</PortugueseBR>
+		<Portuguese>A cerâmica é uma forma antiga de armazenar grãos. No Novo Mundo chuvoso e infestado de insectos, os vasos contêm cereais suficientes para manter os colonos vivos durante o Inverno, até que possam finalmente plantar as suas novas culturas na Primavera. Carregar potes resistentes em vagões é uma maneira prática de transportar grãos e fornecer alimentos para novas colônias.</Portuguese>
 		<French>La poterie est un moyen ancien de stocker le grain. Dans le Nouveau Monde pluvieux et infesté d'insectes, les pots contiennent suffisamment de céréales pour permettre aux colons de survivre pendant l'hiver jusqu'à ce qu'ils puissent enfin planter leurs nouvelles cultures au printemps.</French>
 		<German>Töpferwaren sind eine uralte Methode zur Lagerung von Getreide. In der regnerischen, von Insekten heimgesuchten Neuen Welt enthielten die Töpfe genug Getreide, um die Siedler über den Winter am Leben zu erhalten, bis sie im Frühjahr endlich ihre neue Ernte einpflanzen konnten.[NEWLINE]Töpferwaren ermöglichen es den Dörfern, ihr überschüssiges Getreide zu lagern, um den Winter zu überstehen. Das Beladen von Wagen mit robusten Töpfen ist eine praktische Methode, um Getreide zu transportieren und neue Siedlungen mit Lebensmitteln zu versorgen.</German>
 		<Italian>La ceramica è un modo antico di conservare il grano. Nel Nuovo Mondo, caratterizzato da piogge e insetti, i vasi contengono abbastanza grano per mantenere i coloni in vita durante l'inverno, fino a quando non possono piantare le nuove colture in primavera.</Italian>
@@ -712,35 +714,35 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POTTERY_HOUSE_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]potter's house[COLOR_REVERT] is where a colonist with the [LINK=PROFESSION_POTTER]potter[\LINK] profession uses [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are artists at this, and more productive as well.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]casa do oleiro[COLOR_REVERT] é onde um colono com a profissão de [LINK=PROFESSION_POTTER]oleiro[\LINK] usa [LINK=YIELD_PEAT]turfa[\LINK] para transformar [LINK=YIELD_CLAY]argila[\LINK] em [LINK=YIELD_POTTERY]cerâmica[\LINK]. [LINK=UNIT_POTTER]Mestres ceramistas[\LINK] são artistas nisso e também mais produtivos.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]casa do oleiro[COLOR_REVERT] é onde um colono com a profissão de [LINK=PROFESSION_POTTER]oleiro[\LINK] usa [LINK=YIELD_PEAT]turfa[\LINK] para transformar [LINK=YIELD_CLAY]argila[\LINK] em [LINK=YIELD_POTTERY]cerâmica[\LINK]. [LINK=UNIT_POTTER]Mestres ceramistas[\LINK] são artistas nisso e também mais produtivos.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Töpfers[COLOR_REVERT] ist der Ort, an dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK], mit Hilfe von [LINK=YIELD_PEAT]Torf[\LINK], zu [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verarbeitet.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Fazekas Bolt[COLOR_REVERT] az a hely, ahol a [LINK=PROFESSION_POTTER]Fazekas[\LINK] lakosok [LINK=YIELD_PEAT]Tőzeggel[\LINK] az [LINK=YIELD_CLAY]Agyagot[\LINK] [LINK=YIELD_POTTERY]Kerámiává[\LINK] alakítanak. A [LINK=UNIT_POTTER]Fazekasmesterek[\LINK] művészek ebben és termelékenyebbek is.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POTTERY_SHOP_PEDIA</Tag>
 		<English>As the pottery business grows employees specialize. Most of the money comes in for sturdy practical pots holding everything from rice to rum, but a few creative types form imaginative vessels with decorative patterns, some merely for display. The Puritans strongly object.[NEWLINE]With food and drink stored securely in pottery, life is now less precarious. Businesses feel safer taking risks and so the communities grow.</English>
-		<PortugueseBR>À medida que o negócio da cerâmica cresce, os funcionários se especializam. A maior parte do dinheiro vai para potes práticos e resistentes que contêm tudo, desde arroz até rum, mas alguns tipos criativos formam recipientes imaginativos com padrões decorativos, alguns apenas para exibição. Os puritanos opõem-se veementemente.[NEWLINE]Com alimentos e bebidas armazenados de forma segura em cerâmica, a vida é agora menos precária. As empresas sentem-se mais seguras ao assumir riscos e assim as comunidades crescem.</PortugueseBR>
+		<Portuguese>À medida que o negócio da cerâmica cresce, os funcionários se especializam. A maior parte do dinheiro vai para potes práticos e resistentes que contêm tudo, desde arroz até rum, mas alguns tipos criativos formam recipientes imaginativos com padrões decorativos, alguns apenas para exibição. Os puritanos opõem-se veementemente.[NEWLINE]Com alimentos e bebidas armazenados de forma segura em cerâmica, a vida é agora menos precária. As empresas sentem-se mais seguras ao assumir riscos e assim as comunidades crescem.</Portuguese>
 		<German>Während das Töpfergeschäft wächst, spezialisieren sich die Mitarbeiter. Das meiste Geld wird für robuste, praktische Töpfe ausgegeben, in denen alles von Reis bis Rum aufbewahrt wird, aber ein paar kreative Typen formen phantasievolle Gefäße mit dekorativen Mustern, einige davon nur zur Schau. Die Puritaner sind strikt dagegen.[NEWLINE]Durch die sichere Aufbewahrung von Lebensmitteln und Getränken in Töpferwaren ist das Leben nun weniger prekär. Die Unternehmen fühlen sich sicherer und somit risikobereiter, wodurch sich das Wachstum erhöht.</German>
 		<Hungarian>A fazekasság fejlődésével az alkalmazottak szakosodnak. A legtöbb bevétel a rizstől a rumig mindent tároló, strapabíró, praktikus edényekből származik, de néhány kreatív típus fantáziadús, díszes mintákkal ellátott edényeket készít, amelyek közül néhány csupán díszítésre szolgál. A puritánok ezt erőteljesen ellenzik. Az ételek és italok fazekas edényekben való biztonságos tárolásával az élet kevésbé bizonytalan. A vállalkozások biztonságosabban vállalnak kockázatot, így a közösségek növekednek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POTTERY_SHOP_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]pottery shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession use [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]loja de cerâmica[COLOR_REVERT] é a atualização da [LINK=BUILDING_POTTERY_HOUSE]casa do oleiro[\LINK] onde os colonos com a profissão de [LINK=PROFESSION_POTTER]oleiro[\LINK] usam [LINK=YIELD_PEAT]turfa[\LINK] para transformar [LINK=YIELD_CLAY]argila[\LINK] em [LINK=YIELD_POTTERY]cerâmica[\LINK]. [LINK=UNIT_POTTER]Mestres ceramistas[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]loja de cerâmica[COLOR_REVERT] é a atualização da [LINK=BUILDING_POTTERY_HOUSE]casa do oleiro[\LINK] onde os colonos com a profissão de [LINK=PROFESSION_POTTER]oleiro[\LINK] usam [LINK=YIELD_PEAT]turfa[\LINK] para transformar [LINK=YIELD_CLAY]argila[\LINK] em [LINK=YIELD_POTTERY]cerâmica[\LINK]. [LINK=UNIT_POTTER]Mestres ceramistas[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]Töpferladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK], mit Hilfe von [LINK=YIELD_PEAT]Torf[\LINK], zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Fazekas Üzlet[COLOR_REVERT] a [LINK=BUILDING_POTTERY_HOUSE]Fazekas Bolt[\LINK] továbbfejlesztése, ahol a [LINK=PROFESSION_POTTER]Fazekas[\LINK] lakosok [LINK=YIELD_PEAT]Tőzeggel[\LINK] az [LINK=YIELD_CLAY]Agyagot[\LINK] [LINK=YIELD_POTTERY]Kerámiává[\LINK] alakítanak. A [LINK=UNIT_POTTER]Fazekasmesterek[\LINK] művészek ebben és termelékenyebbek is.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_PEDIA</Tag>
 		<English>Pottery factories can be built near the best sources of clay, thus delivering high quality at a cheap price. With every type of pot in demand, the pottery factory owners are squirrelling away pots of money.</English>
-		<PortugueseBR>As fábricas de cerâmica podem ser construídas perto das melhores fontes de argila, proporcionando assim alta qualidade a um preço barato. Com cada tipo de panela em demanda, os proprietários das fábricas de cerâmica estão guardando potes de dinheiro.</PortugueseBR>
+		<Portuguese>As fábricas de cerâmica podem ser construídas perto das melhores fontes de argila, proporcionando assim alta qualidade a um preço barato. Com cada tipo de panela em demanda, os proprietários das fábricas de cerâmica estão guardando potes de dinheiro.</Portuguese>
 		<German>Töpferfabriken können in der Nähe der besten Tonvorkommen errichtet werden, so dass sie eine hohe Qualität zu einem günstigen Preis liefern.[NEWLINE]Da alle Arten von Töpfen gefragt sind, legen die Besitzer der Töpferfabriken einen Haufen Geld beiseite.</German>
 		<Hungarian>A Kerámiagyárak a legjobb agyagforrások közelében épülhetnek, így olcsó áron kiváló minőségű termékeket tudnak gyártani. Mivel minden típusú edényre van kereslet, a Kerámiagyárak tulajdonosai hatalmas pénzeket halmoznak fel.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POTTERY_FACTORY_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]pottery factory[COLOR_REVERT] is the final upgrade of the [LINK=BUILDING_POTTERY_HOUSE]potter's house[\LINK] where colonists with the [LINK=PROFESSION_POTTER]potter[\LINK] profession use [LINK=YIELD_PEAT]peat[\LINK] to transform [LINK=YIELD_CLAY]clay[\LINK] into [LINK=YIELD_POTTERY]pottery[\LINK]. [LINK=UNIT_POTTER]Master potters[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]fábrica de cerâmica[COLOR_REVERT] é a atualização final da [LINK=BUILDING_POTTERY_HOUSE]casa do oleiro[\LINK] onde os colonos com a profissão de [LINK=PROFESSION_POTTER]oleiro[\LINK] usam [LINK=YIELD_PEAT]turfa[\LINK] para transformar [LINK=YIELD_CLAY]argila[\LINK] em [LINK=YIELD_POTTERY]cerâmica[\LINK]. [LINK=UNIT_POTTER]Mestres ceramistas[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]fábrica de cerâmica[COLOR_REVERT] é a atualização final da [LINK=BUILDING_POTTERY_HOUSE]casa do oleiro[\LINK] onde os colonos com a profissão de [LINK=PROFESSION_POTTER]oleiro[\LINK] usam [LINK=YIELD_PEAT]turfa[\LINK] para transformar [LINK=YIELD_CLAY]argila[\LINK] em [LINK=YIELD_POTTERY]cerâmica[\LINK]. [LINK=UNIT_POTTER]Mestres ceramistas[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Töpferei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_POTTERY_HOUSE]Haus des Töpfers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] im Beruf des [LINK=PROFESSION_POTTER]Töpfers[\LINK] den [LINK=YIELD_CLAY]Lehm[\LINK], mit Hilfe von [LINK=YIELD_PEAT]Torf[\LINK], zur Herstellung von [LINK=YIELD_POTTERY]Töpferwaren[\LINK] verwenden.[PARAGRAPH:1][LINK=UNIT_POTTER]Töpfermeister[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXTKerámiagyár[COLOR_REVERT] a [LINK=BUILDING_POTTERY_HOUSE]Fazekas Bolt[\LINK] végső továbbfejlesztése, ahol a [LINK=PROFESSION_POTTER]Fazekas[\LINK] lakosok [LINK=YIELD_PEAT]Tőzeggel[\LINK] az [LINK=YIELD_CLAY]Agyagot[\LINK] [LINK=YIELD_POTTERY]Kerámiává[\LINK] alakítanak. A [LINK=UNIT_POTTER]Fazekasmesterek[\LINK] művészek ebben és termelékenyebbek is.</Hungarian>
 	</TEXT>
@@ -748,6 +750,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_TAILOR</Tag>
 		<English>Tailor</English>
+		<Portuguese>Alfaiate</Portuguese>
 		<German>
 			<Text>Schneiderei</Text>
 			<Gender>Female</Gender>
@@ -758,6 +761,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_HOUSE</Tag>
 		<English>Tailor's House</English>
+		<Portuguese>Casa do Alfaiate</Portuguese>
 		<German>
 			<Text>Haus des Schneiders</Text>
 			<Gender>Neuter</Gender>
@@ -769,6 +773,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_SHOP</Tag>
 		<English>Tailor's Shop</English>
+		<Portuguese>Alfaiataria</Portuguese>
 		<German>
 			<Text>Schneiderladen</Text>
 			<Gender>Male</Gender>
@@ -780,6 +785,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_FACTORY</Tag>
 		<English>Clothing Factory</English>
+		<Portuguese>Fábrica de roupas</Portuguese>
 		<German>
 			<Text>Schneiderei</Text>
 			<Gender>Female</Gender>
@@ -791,7 +797,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR_HOUSE</Tag>
 		<English>Tailor's House</English>
-		<PortugueseBR>Casa do Alfaiate</PortugueseBR>
+		<Portuguese>Casa do Alfaiate</Portuguese>
 		<French>Maison du tailleur de vêtements</French>
 		<German>
 			<Text>Haus des Schneiders</Text>
@@ -804,7 +810,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR_SHOP</Tag>
 		<English>Tailor's Shop</English>
-		<PortugueseBR>Alfaiataria</PortugueseBR>
+		<Portuguese>Alfaiataria</Portuguese>
 		<French>Atelier du tailleur de vêtements</French>
 		<German>
 			<Text>Schneiderladen</Text>
@@ -817,7 +823,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR_FACTORY</Tag>
 		<English>Clothing Factory</English>
-		<PortugueseBR>Fábrica de roupas</PortugueseBR>
+		<Portuguese>Fábrica de roupas</Portuguese>
 		<French>Usine de vêtements</French>
 		<German>
 			<Text>Schneiderei</Text>
@@ -830,42 +836,42 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_PEDIA</Tag>
 		<English>At first women prided themselves on sewing all their families' clothes, getting their cloth from the weaver. The tailor needs to show his garments are better, or hope that people assume they're better simply because he's a man.[NEWLINE]With time and talent the tailor is finally able to create the well-dressed man, stylish and ready to succeed at diplomacy, business or romance.</English>
-		<PortugueseBR>No início, as mulheres orgulhavam-se de costurar as roupas de todas as suas famílias, obtendo os tecidos do tecelão. O alfaiate precisa mostrar que suas roupas são melhores ou esperar que as pessoas presumam que são melhores simplesmente porque ele é um homem.[NEWLINE]Com tempo e talento o alfaiate finalmente consegue criar o homem bem vestido, estiloso e pronto para ter sucesso na diplomacia, nos negócios ou no romance.</PortugueseBR>
+		<Portuguese>No início, as mulheres orgulhavam-se de costurar as roupas de todas as suas famílias, obtendo os tecidos do tecelão. O alfaiate precisa mostrar que suas roupas são melhores ou esperar que as pessoas presumam que são melhores simplesmente porque ele é um homem.[NEWLINE]Com tempo e talento o alfaiate finalmente consegue criar o homem bem vestido, estiloso e pronto para ter sucesso na diplomacia, nos negócios ou no romance.</Portuguese>
 		<German>Anfangs waren die Frauen stolz darauf, die gesamte Kleidung ihrer Familien zu nähen und den Stoff von der Weberin zu beziehen. Der Schneider muss zeigen, dass seine Kleidung besser ist, oder darauf hoffen, dass die Leute annehmen, dass sie besser ist, nur weil er ein Mann ist.[NEWLINE]Der Schneider erschafft den gut gekleideten Mann, stilvoll und bereit, in der Diplomatie, im Geschäftsleben oder in der Liebe erfolgreich zu sein.</German>
 		<Hungarian>Eleinte a nők büszkék voltak arra, hogy a családjuk összes ruháját ők varrták, a szövetet pedig a takácsoktől szerezték be. A szabónak be kell bizonyítania, hogy az ő ruhái jobbak, vagy remélnie kell, hogy az emberek egyszerűen azért tartják őket jobbnak, mert ő férfi. Az idő és a tehetség segítségével a szabó végül képes megalkotni a jól öltözött férfit, aki stílusos és készen áll a diplomácia, az üzleti élet vagy a szerelem terén elért sikerekre.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR_HOUSE_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]tailor's house[COLOR_REVERT] is where the coloured fabrics from the [LINK=BUILDING_DYERS_HOUSE]dyer's house[\LINK], or one of its upgrades, are made into clothing.[NEWLINE]A settler with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession uses [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; or the [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailor[\LINK] uses [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK].  [LINK=UNIT_CLOTH_TAYLOR]Master tailors[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]casa do alfaiate[COLOR_REVERT] é onde os tecidos coloridos da [LINK=BUILDING_DYERS_HOUSE]casa do tintureiro[\LINK], ou uma de suas atualizações, são transformados em roupas.[NEWLINE]Um colono com a profissão de [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]alfaiate de roupas de trabalho[\LINK] usa [LINK=YIELD_COLOURED_WOOL_CLOTH]pano de lã colorido[\LINK] para fazer [LINK=YIELD_EVERYDAY_CLOTHES]todos os dias roupas[\LINK]; ou o [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]alfaiate de roupas formais[\LINK] usa [LINK=YIELD_COLOURED_CLOTH]tecidos coloridos[\LINK] para fazer mais [LINK=YIELD_FESTIVE_CLOTHES]roupas festivas[\LINK].  [LINK=UNIT_CLOTH_TAYLOR]Mestres alfaiates[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]casa do alfaiate[COLOR_REVERT] é onde os tecidos coloridos da [LINK=BUILDING_DYERS_HOUSE]casa do tintureiro[\LINK], ou uma de suas atualizações, são transformados em roupas.[NEWLINE]Um colono com a profissão de [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]alfaiate de roupas de trabalho[\LINK] usa [LINK=YIELD_COLOURED_WOOL_CLOTH]pano de lã colorido[\LINK] para fazer [LINK=YIELD_EVERYDAY_CLOTHES]todos os dias roupas[\LINK]; ou o [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]alfaiate de roupas formais[\LINK] usa [LINK=YIELD_COLOURED_CLOTH]tecidos coloridos[\LINK] para fazer mais [LINK=YIELD_FESTIVE_CLOTHES]roupas festivas[\LINK].  [LINK=UNIT_CLOTH_TAYLOR]Mestres alfaiates[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Schneiders[COLOR_REVERT] ist der Ort, an dem die gefärbten Stoffe aus dem [LINK=BUILDING_DYERS_HOUSE]Färberhaus[\LINK], oder einer seiner Erweiterungen, zu Kleidung verarbeitet werden.[NEWLINE]Ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf des [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneiders (Alltagskleider)[\LINK] stellt aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] schlichte [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder der [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] stellt aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK] dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] her.[PARAGRAPH:1][LINK=UNIT_CLOTH_TAYLOR]Schneidermeister[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Szabóműhely[COLOR_REVERT] az a hely, ahol a [LINK=BUILDING_DYERS_HOUSE]festőműhelyből[\LINK] vagy annak egyik továbbfejlesztéséből származó festett kelméből ruhákat készítenek. [NEWLINE]A [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Hétköznapi Ruha Szabó[\LINK] készítő lakos [LINK=YIELD_COLOURED_WOOL_CLOTH]Festett Gyapjúkelmét[\LINK] használ [LINK=YIELD_EVERYDAY_CLOTHES]Hétköznapi Ruhák[\LINK] készítéséhez; illetve az [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Ünnepi Ruha Szabó[\LINK] [LINK=YIELD_COLOURED_CLOTH]Festett Kelmét[\LINK] használ az [LINK=YIELD_FESTIVE_CLOTHES]Ünnepi Ruha[\LINK] készítéséhez. A [LINK=UNIT_CLOTH_TAYLOR]Szabómesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR_SHOP_PEDIA</Tag>
 		<English>The tailor's shop grows to include a variety of sub-trades. The cutter seldom sews the garment. A different specialist chooses the perfect fabric for every style.[NEWLINE]Having a tailor's shop is a sign of success for a growing town. If the shop has a tailor who's fashionable, everyone from the elder statesman to the firebrand preacher will buy there so they can look their best.</English>
-		<PortugueseBR>A alfaiataria cresce para incluir uma variedade de subcomércios. O cortador raramente costura a roupa. Um especialista diferente escolhe o tecido perfeito para cada estilo.[NEWLINE]Ter uma alfaiataria é um sinal de sucesso para uma cidade em crescimento. Se a loja tiver um alfaiate que esteja na moda, todos, desde o estadista mais velho até o pregador incendiário, comprarão lá para terem a melhor aparência.</PortugueseBR>
+		<Portuguese>A alfaiataria cresce para incluir uma variedade de subcomércios. O cortador raramente costura a roupa. Um especialista diferente escolhe o tecido perfeito para cada estilo.[NEWLINE]Ter uma alfaiataria é um sinal de sucesso para uma cidade em crescimento. Se a loja tiver um alfaiate que esteja na moda, todos, desde o estadista mais velho até o pregador incendiário, comprarão lá para terem a melhor aparência.</Portuguese>
 		<German>Die Schneiderei wächst und umfasst eine Vielzahl von Unterberufen. Selten näht der Schneider das Kleidungsstück. Für jeden Stil wählt ein anderer Spezialist den perfekten Stoff aus.[NEWLINE]Das Vorhandensein einer Schneiderei ist ein Zeichen für den Erfolg einer wachsenden Stadt. Wenn das Geschäft einen Schneider hat, der modisch ist, kauft jeder - vom älteren Staatsmann bis zum Brandprediger - dort ein, damit er gut aussieht.</German>
 		<Hungarian>A szabóság egyre bővül és számos alvállalkozót foglalkoztat. A szabó ritkán varrja meg a ruhadarabokat. Minden stílushoz egy másik szakember választja ki a tökéletes anyagot. [NEWLINE]A szabóság egy növekvő város sikereinek jelképe. Ha az üzletben divatos szabó dolgozik, akkor mindenki, a tapasztalt politikustól a papig, ott vásárol, hogy a legjobban nézzen ki.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR_SHOP_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]tailors' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK] where colonists with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession use [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; and where [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailors[\LINK] use [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK]. [LINK=UNIT_CLOTH_TAYLOR]Master tailors[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]alfaiataria[COLOR_REVERT] é a atualização da [LINK=BUILDING_TAILOR_HOUSE]casa do alfaiate[\LINK] onde os colonos com a profissão de [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]alfaiate de roupas de trabalho[\LINK] usam [LINK=YIELD_COLOURED_WOOL_CLOTH]tecidos de lã coloridos[\LINK] para fazer [LINK=YIELD_EVERYDAY_CLOTHES]roupas do dia a dia[\LINK]; e onde [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]alfaiates de roupas formais[\LINK] usam [LINK=YIELD_COLOURED_CLOTH]tecidos coloridos[\LINK] para fazer mais [LINK=YIELD_FESTIVE_CLOTHES]roupas festivas[\LINK]. [LINK=UNIT_CLOTH_TAYLOR]Mestres alfaiates[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]alfaiataria[COLOR_REVERT] é a atualização da [LINK=BUILDING_TAILOR_HOUSE]casa do alfaiate[\LINK] onde os colonos com a profissão de [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]alfaiate de roupas de trabalho[\LINK] usam [LINK=YIELD_COLOURED_WOOL_CLOTH]tecidos de lã coloridos[\LINK] para fazer [LINK=YIELD_EVERYDAY_CLOTHES]roupas do dia a dia[\LINK]; e onde [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]alfaiates de roupas formais[\LINK] usam [LINK=YIELD_COLOURED_CLOTH]tecidos coloridos[\LINK] para fazer mais [LINK=YIELD_FESTIVE_CLOTHES]roupas festivas[\LINK]. [LINK=UNIT_CLOTH_TAYLOR]Mestres alfaiates[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]Schneiderladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_TAILOR_HOUSE]Schneiderhauses[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneider (Alltagskleider)[\LINK] aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] einfache [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK], dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_CLOTH_TAYLOR]Schneidermeister[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Szabóság[COLOR_REVERT] a [LINK=BUILDING_TAILOR_HOUSE]Szabóműhely[\LINK] továbbfejlesztése, ahol a [LINK=BUILDING_WEAVERS_HOUSE]szövődéből[\LINK] származó kelméből ruhákat készítenek. [NEWLINE]A [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Hétköznapi Ruha Szabó[\LINK] készítő lakos [LINK=YIELD_COLOURED_WOOL_CLOTH]Festett Gyapjúkelmét[\LINK] használ [LINK=YIELD_EVERYDAY_CLOTHES]Hétköznapi Ruhák[\LINK] készítéséhez; illetve az [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Ünnepi Ruha Szabó[\LINK] [LINK=YIELD_COLOURED_CLOTH]Festett Kelmét[\LINK] használ az [LINK=YIELD_FESTIVE_CLOTHES]Ünnepi Ruha[\LINK] készítéséhez. A [LINK=UNIT_CLOTH_TAYLOR]Szabómesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_PEDIA</Tag>
 		<English>A tailors' factory offers less prestige than an exclusive shop but it makes up for that in output. Young workers with an eye on advancement can buy off the rack at a fraction of the cost of a personal fitting.[NEWLINE]The tailors' factory demonstrates that menswear and women's fashion are widely available. It's proof that a city has arrived socially.</English>
-		<PortugueseBR>Uma fábrica de alfaiates oferece menos prestígio do que uma loja exclusiva, mas compensa isso em produção. Jovens trabalhadores que desejam progredir podem comprar na prateleira por uma fração do custo de uma roupa pessoal.[NEWLINE]A fábrica de alfaiates demonstra que a moda masculina e a moda feminina estão amplamente disponíveis. É a prova de que uma cidade chegou socialmente.</PortugueseBR>
+		<Portuguese>Uma fábrica de alfaiates oferece menos prestígio do que uma loja exclusiva, mas compensa isso em produção. Jovens trabalhadores que desejam progredir podem comprar na prateleira por uma fração do custo de uma roupa pessoal.[NEWLINE]A fábrica de alfaiates demonstra que a moda masculina e a moda feminina estão amplamente disponíveis. É a prova de que uma cidade chegou socialmente.</Portuguese>
 		<German>Eine Schneiderei bietet weniger Prestige als ein exklusives Geschäft, macht dies aber durch die Produktion wieder wett. Junge, aufstiegsorientierte Arbeitnehmer können zu einem Bruchteil der Kosten einer persönlichen Anprobe von der Stange kaufen.[NEWLINE]Die Schneiderei zeigt, dass Herrenmode weithin verfügbar ist. Sie ist der Beweis dafür, dass eine Stadt gesellschaftlich angekommen ist.</German>
 		<Hungarian>A ruhagyár kevésbé tekintélyes, mint egy exkluzív üzlet, de ezt a termelékenységével kompenzálja. A karrierjükre törekvő fiatal munkavállalók a személyre szabott ruhák árának töredékéért vásárolhatnak kész ruhákat. [NEWLINE]A ruhagyár bizonyítja, hogy a férfi- és női divat széles körben elérhető. Ez annak a bizonyítéka, hogy egy város társadalmi szempontból elérte a fejlettséget.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR_FACTORY_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]tailors' factory[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_TAILOR_HOUSE]tailor's house[\LINK] where colonists with the [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]workwear tailor[\LINK] profession use [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK] to make [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothing[\LINK]; and where [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]formalwear tailors[\LINK] use [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] to make more [LINK=YIELD_FESTIVE_CLOTHES]festive outfits[\LINK]. [LINK=UNIT_CLOTH_TAYLOR]Master tailors[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]fábrica de alfaiates[COLOR_REVERT] é a atualização definitiva da [LINK=BUILDING_TAILOR_HOUSE]casa do alfaiate[\LINK] onde os colonos com a profissão de [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]alfaiate de roupas de trabalho[\LINK] usam [LINK=YIELD_COLOURED_WOOL_CLOTH]tecidos de lã coloridos[\LINK] para fazer [LINK=YIELD_EVERYDAY_CLOTHES]roupas do dia a dia[\LINK]; e onde [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]alfaiates de roupas formais[\LINK] usam [LINK=YIELD_COLOURED_CLOTH]tecidos coloridos[\LINK] para fazer mais [LINK=YIELD_FESTIVE_CLOTHES]roupas festivas[\LINK]. [LINK=UNIT_CLOTH_TAYLOR]Mestres alfaiates[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]fábrica de alfaiates[COLOR_REVERT] é a atualização definitiva da [LINK=BUILDING_TAILOR_HOUSE]casa do alfaiate[\LINK] onde os colonos com a profissão de [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]alfaiate de roupas de trabalho[\LINK] usam [LINK=YIELD_COLOURED_WOOL_CLOTH]tecidos de lã coloridos[\LINK] para fazer [LINK=YIELD_EVERYDAY_CLOTHES]roupas do dia a dia[\LINK]; e onde [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]alfaiates de roupas formais[\LINK] usam [LINK=YIELD_COLOURED_CLOTH]tecidos coloridos[\LINK] para fazer mais [LINK=YIELD_FESTIVE_CLOTHES]roupas festivas[\LINK]. [LINK=UNIT_CLOTH_TAYLOR]Mestres alfaiates[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Schneiderei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_TAILOR_HOUSE]Haus des Schneiders[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Schneider (Alltagskleider)[\LINK] aus [LINK=YIELD_COLOURED_WOOL_CLOTH]gefärbtem Wollstoff[\LINK] einfache [LINK=YIELD_EVERYDAY_CLOTHES]Alltagskleidung[\LINK] oder [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Schneider (Festtagskleider)[\LINK] aus [LINK=YIELD_COLOURED_CLOTH]gefärbtem Stoff[\LINK], dekorative [LINK=YIELD_FESTIVE_CLOTHES]festliche Kleidung[\LINK] herstellen.[PARAGRAPH:1][LINK=UNIT_CLOTH_TAYLOR]Schneidermeister[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Ruhagyár[COLOR_REVERT] a [LINK=BUILDING_TAILOR_HOUSE]Szabóműhely[\LINK] végső továbbfejlesztése, ahol a [LINK=BUILDING_WEAVERS_HOUSE]szövődéből[\LINK] származó kelméből ruhákat készítenek. [NEWLINE]A [LINK=PROFESSION_EVERYDAY_CLOTHES_TAILOR]Hétköznapi Ruha Szabó[\LINK] készítő lakos [LINK=YIELD_COLOURED_WOOL_CLOTH]Festett Gyapjúkelmét[\LINK] használ [LINK=YIELD_EVERYDAY_CLOTHES]Hétköznapi Ruhák[\LINK] készítéséhez; illetve az [LINK=PROFESSION_FESTIVE_CLOTHES_TAILOR]Ünnepi Ruha Szabó[\LINK] [LINK=YIELD_COLOURED_CLOTH]Festett Kelmét[\LINK] használ az [LINK=YIELD_FESTIVE_CLOTHES]Ünnepi Ruha[\LINK] készítéséhez. A [LINK=UNIT_CLOTH_TAYLOR]Szabómesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
@@ -873,6 +879,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_BLACK_POWDER</Tag>
 		<English>Powder Shed</English>
+		<Portuguese>Galpão de pólvora</Portuguese>
 		<German>
 			<Text>Pulvermühle</Text>
 			<Gender>Female</Gender>
@@ -883,7 +890,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_HOUSE</Tag>
 		<English>Powder Maker's House</English>
-		<PortugueseBR>Casa do Fabricante de Pólvora</PortugueseBR>
+		<Portuguese>Casa do Fabricante de Pólvora</Portuguese>
 		<French>Maison du fabricant de poudre</French>
 		<German>Haus des Pulvermachers</German>
 		<Italian>Casa del polveriere</Italian>
@@ -894,7 +901,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_SHOP</Tag>
 		<English>Powder Makers' Shop</English>
-		<PortugueseBR>Loja de fabricantes de pó</PortugueseBR>
+		<Portuguese>Loja de fabricantes de pó</Portuguese>
 		<French>Atelier du fabricant de poudre</French>
 		<German>
 			<Text>Pulverladen</Text>
@@ -907,7 +914,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_FACTORY</Tag>
 		<English>Powder Magazine</English>
-		<PortugueseBR>Revista Pó</PortugueseBR>
+		<Portuguese>Revista Pó</Portuguese>
 		<French>Usine poudrière</French>
 		<German>
 			<Text>Pulverfabrik</Text>
@@ -920,7 +927,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE</Tag>
 		<English>Powder Maker's House</English>
-		<PortugueseBR>Casa do Fabricante de Pólvora</PortugueseBR>
+		<Portuguese>Casa do Fabricante de Pólvora</Portuguese>
 		<French>Maison du fabricant de poudre</French>
 		<German>Haus des Pulvermachers</German>
 		<Italian>Casa del polveriere</Italian>
@@ -931,7 +938,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP</Tag>
 		<English>Powder Makers' Shop</English>
-		<PortugueseBR>Loja de fabricantes de pó</PortugueseBR>
+		<Portuguese>Loja de fabricantes de pó</Portuguese>
 		<French>Atelier du fabricant de poudre</French>
 		<German>
 			<Text>Pulverladen</Text>
@@ -944,7 +951,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY</Tag>
 		<English>Powder Magazine</English>
-		<PortugueseBR>Revista Pó</PortugueseBR>
+		<Portuguese>Revista Pó</Portuguese>
 		<French>Usine poudrière</French>
 		<German>
 			<Text>Pulverfabrik</Text>
@@ -957,7 +964,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_PEDIA</Tag>
 		<English>Well away from other buildings the powder maker prepares gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. In colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.[NEWLINE]The powder maker needs to produce enough black powder so that soldiers are well-supplied to defend their settlements. Even more is needed for miners and the pioneers building roads.</English>
-		<PortugueseBR>Bem longe de outros edifícios, o fabricante de pólvora prepara pólvora a partir de enxofre, carvão e salitre: munição para as armas dos soldados. Na época colonial, é o único explosivo disponível (a dinamite será inventada em 1867), por isso também é usado para artilharia, mineração e construção de estradas.[NEWLINE]O fabricante de pólvora precisa produzir pólvora negra suficiente para que os soldados estejam bem abastecidos para defender seus assentamentos. É necessário ainda mais para os mineiros e os pioneiros na construção de estradas.</PortugueseBR>
+		<Portuguese>Bem longe de outros edifícios, o fabricante de pólvora prepara pólvora a partir de enxofre, carvão e salitre: munição para as armas dos soldados. Na época colonial, é o único explosivo disponível (a dinamite será inventada em 1867), por isso também é usado para artilharia, mineração e construção de estradas.[NEWLINE]O fabricante de pólvora precisa produzir pólvora negra suficiente para que os soldados estejam bem abastecidos para defender suas colônias. É necessário ainda mais para os mineiros e os pioneiros na construção de estradas.</Portuguese>
 		<French>A l'écart des autres bâtiments, le poudrier mélange la poudre à canon à partir de soufre, de charbon de bois et de salpêtre : des munitions pour les fusils des soldats. À l'époque coloniale, c'est le seul explosif disponible (la dynamite sera inventée en 1867). Elle est donc également utilisée pour l'artillerie, l'exploitation minière et la construction de routes.</French>
 		<German>Weit entfernt von anderen Gebäuden mischt der Pulvermacher Schießpulver aus Schwefel, Holzkohle und Salpeter für die Gewehre der Soldaten. In der Kolonialzeit ist es der einzige verfügbare Sprengstoff (Dynamit wird erst 1867 erfunden) und wird auch für die Artillerie, den Bergbau und den Straßenbau verwendet.[NEWLINE]Der Pulvermacher muss genügend Schwarzpulver herstellen, damit die Soldaten gut ausgerüstet sind, um ihre Siedlungen zu verteidigen. Noch mehr wird für die Bergleute und die Pioniere zum Straßenbau benötigt.</German>
 		<Italian>Ben lontano da altri edifici, il polveriere mescola la polvere da sparo con zolfo, carbone e salnitro: munizioni per i cannoni dei soldati. In epoca coloniale è l'unico esplosivo disponibile (la dinamite sarà inventata nel 1867), quindi viene utilizzato anche per l'artiglieria, le miniere e la costruzione di strade.</Italian>
@@ -967,35 +974,35 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]powder maker's house[COLOR_REVERT] is where, first, [LINK=YIELD_CHAR_COAL]charcoal[\LINK] is made from [LINK=YIELD_LUMBER]lumber[\LINK] by a settler with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession; and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by another colonist with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]line infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]light artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]casa do fabricante de pólvora[COLOR_REVERT] é onde, primeiro, [LINK=YIELD_CHAR_COAL]carvão[\LINK] é feito de [LINK=YIELD_LUMBER]madeira[\LINK] por um colono com a profissão de [LINK=PROFESSION_CHARCOAL_BURNER]queimador de carvão[\LINK]; e depois transformada em [LINK=YIELD_BLACK_POWDER]pólvora[\LINK] por outro colono com a profissão de [LINK=PROFESSION_FIREWORKER]misturador de pólvora[\LINK]. [LINK=UNIT_FIREWORKER]Mestres fabricantes de pólvora[\LINK] são particularmente eficazes nisso.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pólvora[COLOR_REVERT] é necessária para treinar unidades de pólvora como [LINK=PROFESSION_LINE_INFANTRY]infantaria de linha[\LINK] ou unidades como a [LINK=PROFESSION_LIGHT_ARTILLERY]artilharia leve[\LINK] ou um navio equipado com canhões, como o [LINK=UNIT_SHIP_OF_THE_LINE]navio de linha[\LINK].</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]casa do fabricante de pólvora[COLOR_REVERT] é onde, primeiro, [LINK=YIELD_CHAR_COAL]carvão[\LINK] é feito de [LINK=YIELD_LUMBER]madeira[\LINK] por um colono com a profissão de [LINK=PROFESSION_CHARCOAL_BURNER]queimador de carvão[\LINK]; e depois transformada em [LINK=YIELD_BLACK_POWDER]pólvora[\LINK] por outro colono com a profissão de [LINK=PROFESSION_FIREWORKER]misturador de pólvora[\LINK]. [LINK=UNIT_FIREWORKER]Mestres fabricantes de pólvora[\LINK] são particularmente eficazes nisso.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pólvora[COLOR_REVERT] é necessária para treinar unidades de pólvora como [LINK=PROFESSION_LINE_INFANTRY]infantaria de linha[\LINK] ou unidades como a [LINK=PROFESSION_LIGHT_ARTILLERY]artilharia leve[\LINK] ou um navio equipado com canhões, como o [LINK=UNIT_SHIP_OF_THE_LINE]navio de linha[\LINK].</Portuguese>
 		<German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Pulvermachers[COLOR_REVERT] wird zunächst von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] hergestellt und dann daraus von einem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Pulvermacher[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Puskaporgyártó Műhely[COLOR_REVERT] az a hely, ahol először [LINK=YIELD_CHAR_COAL]faszén[\LINK] készül [LINK=YIELD_LUMBER]épületfából [\LINK] egy [LINK=PROFESSION_CHARCOAL_BURNER]szénégető[\LINK] szakmájú telepes által, majd [LINK=YIELD_BLACK_POWDER]puskaporrá[\LINK] alakítja át egy másik, [LINK=PROFESSION_FIREWORKER]puskaporkeverő[\LINK] szakmájú telepes. A [LINK=UNIT_FIREWORKER]Puskaporkeverő Mesterek[\LINK] különösen hatékonyak ebben.[NEWLINE][NEWLINE]A [COLOR_HIGHLIGHT_TEXT]Puskapor[COLOR_REVERT] az olyan egységek kiképzéséhez szükséges, mint a [LINK=PROFESSION_LINE_INFANTRY]gyalogság [\LINK] vagy a [LINK=PROFESSION_LIGHT_ARTILLERY]könnyű tüzérség[\LINK] illetve az ágyúkkal felszerelt hajók számára, mint a [LINK=UNIT_SHIP_OF_THE_LINE]sorhajó[\LINK].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_PEDIA</Tag>
 		<English>As the business gets bigger, the black powder is stored in kegs which represent a massive increase in explosive power, so much that "powder keg" becomes a metaphor for high risk. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.</English>
-		<PortugueseBR>À medida que o negócio cresce, a pólvora negra é armazenada em barris que representam um enorme aumento no poder explosivo, tanto que “barril de pólvora” se torna uma metáfora para alto risco. A pólvora negra pode ser perigosa, mas não é tão perigosa quanto ter um exército fraco e sem munição suficiente.</PortugueseBR>
+		<Portuguese>À medida que o negócio cresce, a pólvora negra é armazenada em barris que representam um enorme aumento no poder explosivo, tanto que “barril de pólvora” se torna uma metáfora para alto risco. A pólvora negra pode ser perigosa, mas não é tão perigosa quanto ter um exército fraco e sem munição suficiente.</Portuguese>
 		<German>Mit zunehmender Größe des Unternehmens wird das Schwarzpulver in Fässern gelagert, die eine so große Sprengkraft haben, dass "Pulverfass" zu einer Metapher für ein hohes Risiko wird.[NEWLINE]Schwarzpulver mag gefährlich sein, aber es ist nicht so gefährlich wie eine schwache Armee ohne genügend Munition.</German>
 		<Hungarian>Ahogy az üzlet növekszik, a puskaport hordókban tárolják, ami hatalmas robbanóerő-növekedést jelent, annyira, hogy a „puskaporos hordó” a nagy kockázat metaforájává válik. A puskapor veszélyes lehet, de nem annyira, mint egy gyenge hadsereg, amelynek nincs elegendő lőszere.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]powder makers' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] where charcoal is made from [LINK=YIELD_LUMBER]lumber[\LINK] by settlers with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession, and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by other colonists with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]line infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]light artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]loja dos fabricantes de pólvora[COLOR_REVERT] é a atualização da [LINK=BUILDING_FIREWORKERS_HOUSE]casa do fabricante de pólvora[\LINK] onde o carvão é feito de [LINK=YIELD_LUMBER]madeira[\LINK] por colonos com a profissão de [LINK=PROFESSION_CHARCOAL_BURNER]queimador de carvão[\LINK], e depois transformado em [LINK=YIELD_BLACK_POWDER]pólvora[\LINK] por outros colonos com o Profissão de [LINK=PROFESSION_FIREWORKER]misturador de pólvora[\LINK]. [LINK=UNIT_FIREWORKER]Mestres fabricantes de pólvora[\LINK] são particularmente eficazes nisso.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pólvora[COLOR_REVERT] é necessária para treinar unidades de pólvora como [LINK=PROFESSION_LINE_INFANTRY]infantaria de linha[\LINK] ou unidades como a [LINK=PROFESSION_LIGHT_ARTILLERY]artilharia leve[\LINK] ou um navio equipado com canhões, como o [LINK=UNIT_SHIP_OF_THE_LINE]navio de linha[\LINK].</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]loja dos fabricantes de pólvora[COLOR_REVERT] é a atualização da [LINK=BUILDING_FIREWORKERS_HOUSE]casa do fabricante de pólvora[\LINK] onde o carvão é feito de [LINK=YIELD_LUMBER]madeira[\LINK] por colonos com a profissão de [LINK=PROFESSION_CHARCOAL_BURNER]queimador de carvão[\LINK], e depois transformado em [LINK=YIELD_BLACK_POWDER]pólvora[\LINK] por outros colonos com o Profissão de [LINK=PROFESSION_FIREWORKER]misturador de pólvora[\LINK]. [LINK=UNIT_FIREWORKER]Mestres fabricantes de pólvora[\LINK] são particularmente eficazes nisso.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pólvora[COLOR_REVERT] é necessária para treinar unidades de pólvora como [LINK=PROFESSION_LINE_INFANTRY]infantaria de linha[\LINK] ou unidades como a [LINK=PROFESSION_LIGHT_ARTILLERY]artilharia leve[\LINK] ou um navio equipado com canhões, como o [LINK=UNIT_SHIP_OF_THE_LINE]navio de linha[\LINK].</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]Pulverladen[COLOR_REVERT] ist die mittlere Ausbaustufe des [LINK=BUILDING_FIREWORKERS_HOUSE]Haus des Pulvermachers[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] herstellt, und dann von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Pulvermacher[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet wird.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Puskaporgyártó Üzlet[COLOR_REVERT] a [LINK=BUILDING_FIREWORKERS_HOUSE]Puskaporgyártó Műhely[\LINK] továbbfejlesztése, ahol először [LINK=YIELD_CHAR_COAL]faszén[\LINK] készül [LINK=YIELD_LUMBER]épületfából [\LINK] egy [LINK=PROFESSION_CHARCOAL_BURNER]szénégető[\LINK] szakmájú telepes által, majd [LINK=YIELD_BLACK_POWDER]puskaporrá[\LINK] alakítja át egy másik, [LINK=PROFESSION_FIREWORKER]puskaporkeverő[\LINK] szakmájú telepes. A [LINK=UNIT_FIREWORKER]Puskaporkeverő Mesterek[\LINK] különösen hatékonyak ebben.[NEWLINE][NEWLINE]A [COLOR_HIGHLIGHT_TEXT]Puskapor[COLOR_REVERT] az olyan egységek kiképzéséhez szükséges, mint a [LINK=PROFESSION_LINE_INFANTRY]gyalogság [\LINK] vagy a [LINK=PROFESSION_LIGHT_ARTILLERY]könnyű tüzérség[\LINK] illetve az ágyúkkal felszerelt hajók számára, mint a [LINK=UNIT_SHIP_OF_THE_LINE]sorhajó[\LINK].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_PEDIA</Tag>
 		<English>The powder maker supplies propellant for guns and artillery, and explosives for mining and road building. For a big army so much has to be kept in kegs that an unlucky event in this building can blow up the entire town.[NEWLINE]Centralizing production of propellant for guns and artillery, and explosives for mining and road building, is efficient but it means powder trains of vulnerable wagons are now on the roads, open to attack.</English>
-		<PortugueseBR>O fabricante de pólvora fornece propelente para armas e artilharia e explosivos para mineração e construção de estradas. Para um grande exército, tanta coisa precisa ser mantida em barris que um evento infeliz neste edifício pode explodir a cidade inteira.[NEWLINE]Centralizar a produção de propulsores para armas e artilharia, e explosivos para mineração e construção de estradas, é eficiente, mas significa que trens de pólvora de vagões vulneráveis ​​estão agora nas estradas, abertos ao ataque.</PortugueseBR>
+		<Portuguese>O fabricante de pólvora fornece propelente para armas e artilharia e explosivos para mineração e construção de estradas. Para um grande exército, tanta coisa precisa ser mantida em barris que um evento infeliz neste edifício pode explodir a cidade inteira.[NEWLINE]Centralizar a produção de propulsores para armas e artilharia, e explosivos para mineração e construção de estradas, é eficiente, mas significa que trens de pólvora de vagões vulneráveis ​​estão agora nas estradas, abertos ao ataque.</Portuguese>
 		<German>Der Pulvermacher liefert Treibladungen für Geschütze und Artillerie sowie Sprengstoff für den Berg- und Straßenbau. Für eine große Armee muss so viel in Fässern gelagert werden, dass ein einziges Missgeschick in diesem Gebäude die ganze Stadt in die Luft jagen kann.[NEWLINE]Die Zentralisierung der Produktion von Treibstoff für Geschütze und Artillerie sowie von Sprengstoff für den Berg- und Straßenbau ist effizient, bedeutet aber auch, dass Pulverzüge mit anfälligen Wagen auf den Straßen unterwegs sind und angegriffen werden können.</German>
 		<Hungarian>A puskaport gyártó cég szállítja a lőfegyverekhez és tüzérségi fegyverekhez szükséges hajtóanyagot, valamint a bányászatban és útépítésben használt robbanóanyagokat. Egy nagy hadsereg számára olyan nagy mennyiséget kell hordókban tárolni, hogy egy szerencsétlen esemény ebben az épületben az egész város felrobbanását okozhatja. A lőfegyverekhez és tüzérségi fegyverekhez szükséges hajtóanyagok, valamint a bányászatban és útépítésben használt robbanóanyagok gyártásának központosítása hatékony, de ez azt jelenti, hogy a sebezhető kocsikból álló puskaporszállító kocsik most az utakon közlekednek, és támadásnak vannak kitéve.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]powder magazine[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] where charcoal is made from [LINK=YIELD_LUMBER]lumber[\LINK] by settlers with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession, and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by other colonists with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]line infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]light artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
-		<PortugueseBR>O [COLOR_HIGHLIGHT_TEXT]revista de pólvora[COLOR_REVERT] é a atualização definitiva da [LINK=BUILDING_FIREWORKERS_HOUSE]casa do fabricante de pólvora[\LINK] onde o carvão é feito de [LINK=YIELD_LUMBER]madeira[\LINK] por colonos com a profissão de [LINK=PROFESSION_CHARCOAL_BURNER]queimador de carvão[\LINK] e depois transformado em [LINK=YIELD_BLACK_POWDER]pólvora[\LINK] por outros colonos com o Profissão de [LINK=PROFESSION_FIREWORKER]misturador de pólvora[\LINK]. [LINK=UNIT_FIREWORKER]Mestres fabricantes de pólvora[\LINK] são particularmente eficazes nisso.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pólvora[COLOR_REVERT] é necessária para treinar unidades de pólvora como [LINK=PROFESSION_LINE_INFANTRY]infantaria de linha[\LINK] ou unidades como a [LINK=PROFESSION_LIGHT_ARTILLERY]artilharia leve[\LINK] ou um navio equipado com canhões, como o [LINK=UNIT_SHIP_OF_THE_LINE]navio de linha[\LINK].</PortugueseBR>
+		<Portuguese>O [COLOR_HIGHLIGHT_TEXT]revista de pólvora[COLOR_REVERT] é a atualização definitiva da [LINK=BUILDING_FIREWORKERS_HOUSE]casa do fabricante de pólvora[\LINK] onde o carvão é feito de [LINK=YIELD_LUMBER]madeira[\LINK] por colonos com a profissão de [LINK=PROFESSION_CHARCOAL_BURNER]queimador de carvão[\LINK] e depois transformado em [LINK=YIELD_BLACK_POWDER]pólvora[\LINK] por outros colonos com o Profissão de [LINK=PROFESSION_FIREWORKER]misturador de pólvora[\LINK]. [LINK=UNIT_FIREWORKER]Mestres fabricantes de pólvora[\LINK] são particularmente eficazes nisso.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pólvora[COLOR_REVERT] é necessária para treinar unidades de pólvora como [LINK=PROFESSION_LINE_INFANTRY]infantaria de linha[\LINK] ou unidades como a [LINK=PROFESSION_LIGHT_ARTILLERY]artilharia leve[\LINK] ou um navio equipado com canhões, como o [LINK=UNIT_SHIP_OF_THE_LINE]navio de linha[\LINK].</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Pulverfabrik[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_FIREWORKERS_HOUSE]Haus des Pulvermachers[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] herstellt, und dann von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Pulvermacher[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet wird.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Puskapor Gyár[COLOR_REVERT] a [LINK=BUILDING_FIREWORKERS_HOUSE]Puskaporgyártó Műhely[\LINK] végső továbbfejlesztése, ahol először [LINK=YIELD_CHAR_COAL]faszén[\LINK] készül [LINK=YIELD_LUMBER]épületfából [\LINK] egy [LINK=PROFESSION_CHARCOAL_BURNER]szénégető[\LINK] szakmájú telepes által, majd [LINK=YIELD_BLACK_POWDER]puskaporrá[\LINK] alakítja át egy másik, [LINK=PROFESSION_FIREWORKER]puskaporkeverő[\LINK] szakmájú telepes. A [LINK=UNIT_FIREWORKER]Puskaporkeverő Mesterek[\LINK] különösen hatékonyak ebben.[NEWLINE][NEWLINE]A [COLOR_HIGHLIGHT_TEXT]Puskapor[COLOR_REVERT] az olyan egységek kiképzéséhez szükséges, mint a [LINK=PROFESSION_LINE_INFANTRY]gyalogság [\LINK] vagy a [LINK=PROFESSION_LIGHT_ARTILLERY]könnyű tüzérség[\LINK] illetve az ágyúkkal felszerelt hajók számára, mint a [LINK=UNIT_SHIP_OF_THE_LINE]sorhajó[\LINK].</Hungarian>
 	</TEXT>
@@ -1003,7 +1010,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_BAKER</Tag>
 		<English>Baker</English>
-		<PortugueseBR>Padeiro</PortugueseBR>
+		<Portuguese>Padeiro</Portuguese>
 		<French>Boulanger</French>
 		<German>Bäcker</German>
 		<Italian>Fornaio</Italian>
@@ -1013,7 +1020,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_BAKER_HOUSE</Tag>
 		<English>Baker's House</English>
-		<PortugueseBR>Casa do Padeiro</PortugueseBR>
+		<Portuguese>Casa do Padeiro</Portuguese>
 		<French>Maison du boulanger</French>
 		<German>Haus des Bäckers</German>
 		<Italian>Casa del fornaio</Italian>
@@ -1024,6 +1031,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_BAKER_SHOP</Tag>
 		<English>Bakeshop</English>
+		<Portuguese>Padaria</Portuguese>
 		<German>
 			<Text>Bäckerladen</Text>
 			<Gender>Male</Gender>
@@ -1035,7 +1043,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_BAKERY</Tag>
 		<English>Bakery</English>
-		<PortugueseBR>Padaria</PortugueseBR>
+		<Portuguese>Padaria</Portuguese>
 		<French>Boulangerie</French>
 		<German>Bäckerei</German>
 		<Italian>Panificio</Italian>
@@ -1046,7 +1054,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BAKER_HOUSE</Tag>
 		<English>Baker's House</English>
-		<PortugueseBR>Casa do Padeiro</PortugueseBR>
+		<Portuguese>Casa do Padeiro</Portuguese>
 		<French>Maison du boulanger</French>
 		<German>Haus des Bäckers</German>
 		<Italian>Casa del fornaio</Italian>
@@ -1057,7 +1065,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BAKER_SHOP</Tag>
 		<English>Bakeshop</English>
-		<PortugueseBR>Padaria</PortugueseBR>
+		<Portuguese>Padaria</Portuguese>
 		<French>Atelier du boulanger</French>
 		<German>
 			<Text>Bäckerladen</Text>
@@ -1070,7 +1078,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BAKERY</Tag>
 		<English>Bakery</English>
-		<PortugueseBR>Padaria</PortugueseBR>
+		<Portuguese>Padaria</Portuguese>
 		<French>Boulangerie</French>
 		<German>Bäckerei</German>
 		<Italian>Panificio</Italian>
@@ -1081,7 +1089,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BAKER_HOUSE_PEDIA</Tag>
 		<English>At first every household bakes its own bread but soon the baker's house centralizes food production. The baker starts work well before dawn so that households can have their daily bread. Settlers who remember the early starvation days continue to grow squash, beans and corn but new arrivals prefer familiar food from the old country.[NEWLINE]Having a bakery means each household doesn't need to bake its own bread. That allows other colonists to spend time on what they do best. Specialization helps the economy to grow, a concept soon popularized in books by economists Adam Smith and David Ricardo.</English>
-		<PortugueseBR>No início, cada família cozinha o seu próprio pão, mas rapidamente a casa do padeiro centraliza a produção de alimentos. O padeiro começa a trabalhar bem antes do amanhecer para que as famílias possam ter o pão de cada dia. Os colonos que se lembram dos primeiros dias de fome continuam a cultivar abóbora, feijão e milho, mas os recém-chegados preferem comida familiar do velho país.[NEWLINE]Ter uma padaria significa que cada família não precisa de assar o seu próprio pão. Isso permite que outros colonos dediquem tempo ao que fazem de melhor. A especialização ajuda a economia a crescer, conceito logo popularizado nos livros dos economistas Adam Smith e David Ricardo.</PortugueseBR>
+		<Portuguese>No início, cada família cozinha o seu próprio pão, mas rapidamente a casa do padeiro centraliza a produção de alimentos. O padeiro começa a trabalhar bem antes do amanhecer para que as famílias possam ter o pão de cada dia. Os colonos que se lembram dos primeiros dias de fome continuam a cultivar abóbora, feijão e milho, mas os recém-chegados preferem comida familiar do velho país.[NEWLINE]Ter uma padaria significa que cada família não precisa de assar o seu próprio pão. Isso permite que outros colonos dediquem tempo ao que fazem de melhor. A especialização ajuda a economia a crescer, conceito logo popularizado nos livros dos economistas Adam Smith e David Ricardo.</Portuguese>
 		<French>Au début, chaque foyer cuit son propre pain, mais bientôt la maison du boulanger centralise la production alimentaire. Le boulanger commence à travailler bien avant l'aube pour que les ménages puissent avoir leur pain quotidien. Les colons qui se souviennent des premiers jours de famine continuent de cultiver des courges, des haricots et du maïs, mais les nouveaux arrivants préfèrent les aliments familiers du vieux pays.[NEWLINE]Le fait d'avoir une boulangerie signifie que chaque foyer n'a pas besoin de cuire son propre pain. Cela permet aux autres colons de consacrer du temps à ce qu'ils font le mieux. La spécialisation favorise la croissance de l'économie, un concept bientôt popularisé dans les livres des économistes Adam Smith et David Ricardo.</French>
 		<German>Zunächst bäckt jeder Haushalt sein eigenes Brot, doch schon bald wird die Lebensmittelproduktion durch die Bäckereien zentralisiert. Der Bäcker beginnt seine Arbeit lange vor dem Morgengrauen, damit die Haushalte ihr tägliches Brot bekommen. Siedler, die sich an die frühen Hungertage erinnern, bauen weiterhin Kürbisse, Bohnen und Mais an, aber Neuankömmlinge bevorzugen die vertrauten Lebensmittel aus dem alten Land.[NEWLINE]Mit einer Bäckerei muss nicht jeder Haushalt sein eigenes Brot backen. So können die anderen Kolonisten ihre Zeit mit dem verbringen, was sie am besten können. Spezialisierung hilft der Wirtschaft zu wachsen, ein Konzept, das schon bald in den Büchern der Ökonomen Adam Smith und David Ricardo popularisiert wurde.</German>
 		<Italian>All'inizio ogni famiglia prepara il proprio pane, ma presto la casa del fornaio centralizza la produzione di cibo. Il fornaio inizia a lavorare molto prima dell'alba, in modo che le famiglie possano avere il pane quotidiano. I coloni che ricordano i primi tempi di fame continuano a coltivare zucche, fagioli e mais, ma i nuovi arrivati preferiscono il cibo familiare del vecchio Paese.[NEWLINE]Avere un panificio significa che ogni famiglia non ha bisogno di cuocere il proprio pane. Questo permette agli altri coloni di dedicare il loro tempo a ciò che sanno fare meglio. La specializzazione aiuta l'economia a crescere, un concetto presto reso popolare nei libri degli economisti Adam Smith e David Ricardo.</Italian>
@@ -1091,35 +1099,35 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BAKER_HOUSE_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]baker's house[COLOR_REVERT] is where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]casa do padeiro[COLOR_REVERT] é onde os colonos com a profissão de [COLOR_HIGHLIGHT_TEXT]padeiro[COLOR_REVERT] fazem [LINK=YIELD_BAKERY_GOODS]provisões[\LINK] de [LINK=YIELD_BARLEY]cevada[\LINK], [LINK=YIELD_RICE]arroz[\LINK] ou [LINK=YIELD_CASSAVA]mandioca[\LINK]. [LINK=UNIT_BAKER]Mestres padeiros[\LINK] são particularmente eficazes aqui.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]casa do padeiro[COLOR_REVERT] é onde os colonos com a profissão de [COLOR_HIGHLIGHT_TEXT]padeiro[COLOR_REVERT] fazem [LINK=YIELD_BAKERY_GOODS]provisões[\LINK] de [LINK=YIELD_BARLEY]cevada[\LINK], [LINK=YIELD_RICE]arroz[\LINK] ou [LINK=YIELD_CASSAVA]mandioca[\LINK]. [LINK=UNIT_BAKER]Mestres padeiros[\LINK] são particularmente eficazes aqui.</Portuguese>
 		<German>Im [COLOR_HIGHLIGHT_TEXT]Haus des Bäckers[COLOR_REVERT] stellen [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] her. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Pékség[COLOR_REVERT] az a hely, ahol a [COLOR_HIGHLIGHT_TEXT]Pék[COLOR_REVERT] szakmát űző lakosok [LINK=YIELD_BAKERY_GOODS]Ellátmányt[\LINK] készítenek [LINK=YIELD_BARLEY]Árpából[\LINK], [LINK=YIELD_RICE]Rizsből[\LINK] vagy [LINK=YIELD_CASSAVA]Maniókából[\LINK]. A [LINK=UNIT_BAKER]Pékmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BAKER_SHOP_PEDIA</Tag>
 		<English>As the bakery gets more workers it might add a pastry chef who creates sweet treats that bring in business. The business also provides a variety of loaves so that new arrivals can buy the kind of bread that reminds them of home. The bakery also has cured meats for sandwiches, soon offering all the variety a hungry traveller might want.[NEWLINE]As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats. A few serve coffee which is considered scandalous because of the stimulating effect.</English>
-		<PortugueseBR>À medida que a padaria consegue mais trabalhadores, ela pode adicionar um chef confeiteiro que cria doces que geram negócios. A empresa também oferece uma variedade de pães para que os recém-chegados possam comprar o tipo de pão que os lembra de casa. A padaria também oferece carnes curadas para sanduíches, logo oferecendo toda a variedade que um viajante faminto pode desejar.[NEWLINE]À medida que a padaria cresce, oferecendo biscoitos e doces, ela se torna um centro social. Alguns padeiros até montam mesas onde é servido chá para acompanhar as guloseimas. Alguns servem café considerado escandaloso pelo efeito estimulante.</PortugueseBR>
+		<Portuguese>À medida que a padaria consegue mais trabalhadores, ela pode adicionar um chef confeiteiro que cria doces que geram negócios. A empresa também oferece uma variedade de pães para que os recém-chegados possam comprar o tipo de pão que os lembra de casa. A padaria também oferece carnes curadas para sanduíches, logo oferecendo toda a variedade que um viajante faminto pode desejar.[NEWLINE]À medida que a padaria cresce, oferecendo biscoitos e doces, ela se torna um centro social. Alguns padeiros até montam mesas onde é servido chá para acompanhar as guloseimas. Alguns servem café considerado escandaloso pelo efeito estimulante.</Portuguese>
 		<German>Wenn die Bäckerei mehr Mitarbeiter hat, kann sie einen Konditor einstellen, der süße Leckereien herstellt, die das Geschäft ankurbeln. Das Unternehmen bietet auch eine Vielzahl von Brotsorten an, damit Gäste das Brot kaufen können, das sie an ihre Heimat erinnert.[NEWLINE]Wenn die Bäckerei wächst und Kekse und Gebäck anbietet, wird sie zu einem sozialen Zentrum. Einige Bäcker stellen sogar Tische auf, an denen Tee zu den Leckereien serviert wird. Einige wenige servieren Kaffee, der wegen seiner anregenden Wirkung als skandalös gilt.</German>
 		<Hungarian>Ahogy a pékség egyre több munkavállalót foglalkoztat, felvehet egy cukrászt is, aki édességeket készít, amelyek vonzzák a vásárlókat. A vállalkozás különféle kenyérfajtákat is kínál, hogy az újonnan érkezők olyan kenyeret vásárolhassanak, amely emlékezteti őket otthonukra. A pékségben szendvicsekhez való pácolt húsok is kaphatók, és hamarosan mindenféle étel megtalálható lesz, amire egy éhes utazónak szüksége lehet. Ahogy a pékség növekszik, és süteményeket és péksüteményeket is kínál, társadalmi központtá válik. Néhány pék asztalokat is felállít, ahol tea is kapható a finomságok mellé. Néhányan kávét is kínálnak, ami a stimuláló hatása miatt botrányosnak számít.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BAKER_SHOP_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]bakeshop[COLOR_REVERT] is the upgrade of the[LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]padaria[COLOR_REVERT] é a atualização da[LINK=BUILDING_BAKER_HOUSE]casa do padeiro[\LINK] onde os colonos com a profissão de [COLOR_HIGHLIGHT_TEXT]padeiro[COLOR_REVERT] fazem [LINK=YIELD_BAKERY_GOODS]provisões[\LINK] de [LINK=YIELD_BARLEY]cevada[\LINK], [LINK=YIELD_RICE]arroz[\LINK] ou [LINK=YIELD_CASSAVA]mandioca[\LINK]. [LINK=UNIT_BAKER]Mestres padeiros[\LINK] são particularmente eficazes aqui.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]padaria[COLOR_REVERT] é a atualização da[LINK=BUILDING_BAKER_HOUSE]casa do padeiro[\LINK] onde os colonos com a profissão de [COLOR_HIGHLIGHT_TEXT]padeiro[COLOR_REVERT] fazem [LINK=YIELD_BAKERY_GOODS]provisões[\LINK] de [LINK=YIELD_BARLEY]cevada[\LINK], [LINK=YIELD_RICE]arroz[\LINK] ou [LINK=YIELD_CASSAVA]mandioca[\LINK]. [LINK=UNIT_BAKER]Mestres padeiros[\LINK] são particularmente eficazes aqui.</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]Bäckerladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Pék Üzlet[COLOR_REVERT] a [LINK=BUILDING_BAKER_HOUSE]Pékség[\LINK] továbbfejlesztése, ahol a [COLOR_HIGHLIGHT_TEXT]Pék[COLOR_REVERT] szakmát űző lakosok [LINK=YIELD_BAKERY_GOODS]Ellátmányt[\LINK] készítenek [LINK=YIELD_BARLEY]Árpából[\LINK], [LINK=YIELD_RICE]Rizsből[\LINK] vagy [LINK=YIELD_CASSAVA]Maniókából[\LINK]. A [LINK=UNIT_BAKER]Pékmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BAKERY_PEDIA</Tag>
 		<English>A large bakery serves a region. On the one hand it offers cheap food thanks to economies of sale. On the other it delivers an unparalleled variety of pastries, pies and cakes for special occasions.[NEWLINE]A big bakery makes an important contribution to the region it serves, increasing both the food supply and the community's happiness.</English>
-		<PortugueseBR>Uma grande padaria atende uma região. Por um lado, oferece alimentos baratos graças às economias de venda. Por outro lado, oferece uma variedade incomparável de doces, tortas e bolos para ocasiões especiais.[NEWLINE]Uma grande padaria dá uma contribuição importante para a região que atende, aumentando a oferta de alimentos e a felicidade da comunidade.</PortugueseBR>
+		<Portuguese>Uma grande padaria atende uma região. Por um lado, oferece alimentos baratos graças às economias de venda. Por outro lado, oferece uma variedade incomparável de doces, tortas e bolos para ocasiões especiais.[NEWLINE]Uma grande padaria dá uma contribuição importante para a região que atende, aumentando a oferta de alimentos e a felicidade da comunidade.</Portuguese>
 		<German>Eine Großbäckerei bedient eine Region. Einerseits bietet sie dank des günstigen Verkaufs günstige Lebensmittel an. Darüber hinaus liefert sie eine unvergleichliche Vielfalt an Backwaren, Torten und Kuchen für besondere Anlässe.[NEWLINE]Eine große Bäckerei leistet einen wichtigen Beitrag für die Region, in der sie tätig ist, indem sie sowohl die Lebensmittelversorgung als auch das Wohlbefinden der Bevölkerung verbessert.</German>
 		<Hungarian>Egy nagy kenyérgyár egy egész régiót ellát. Egyrészt az értékesítésből származó megtakarításoknak köszönhetően olcsó élelmiszereket kínál. Másrészt páratlanul széles választékkal rendelkezik sütemények, piték és torták terén, amelyek különleges alkalmakra készülnek. [NEWLINE]Egy nagy kenyérgyár fontos hozzájárulást nyújt a régióhoz, amelynek ellátását biztosítja, növelve ezzel mind az élelem ellátást, mind a közösség boldogságát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BAKERY_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]bakery[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] where colonists with the [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] profession make [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] from [LINK=YIELD_BARLEY]barley[\LINK], [LINK=YIELD_RICE]rice[\LINK] or [LINK=YIELD_CASSAVA]cassava[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] are particularly effective here.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]padaria[COLOR_REVERT] é a atualização definitiva da [LINK=BUILDING_BAKER_HOUSE]casa do padeiro[\LINK] onde os colonos com a profissão de [COLOR_HIGHLIGHT_TEXT]padeiro[COLOR_REVERT] fazem [LINK=YIELD_BAKERY_GOODS]provisões[\LINK] de [LINK=YIELD_BARLEY]cevada[\LINK], [LINK=YIELD_RICE]arroz[\LINK] ou [LINK=YIELD_CASSAVA]mandioca[\LINK]. [LINK=UNIT_BAKER]Mestres padeiros[\LINK] são particularmente eficazes aqui.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]padaria[COLOR_REVERT] é a atualização definitiva da [LINK=BUILDING_BAKER_HOUSE]casa do padeiro[\LINK] onde os colonos com a profissão de [COLOR_HIGHLIGHT_TEXT]padeiro[COLOR_REVERT] fazem [LINK=YIELD_BAKERY_GOODS]provisões[\LINK] de [LINK=YIELD_BARLEY]cevada[\LINK], [LINK=YIELD_RICE]arroz[\LINK] ou [LINK=YIELD_CASSAVA]mandioca[\LINK]. [LINK=UNIT_BAKER]Mestres padeiros[\LINK] são particularmente eficazes aqui.</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Bäckerei[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK], in dem [COLOR_UNIT_TEXT]Freie Kolonisten[COLOR_REVERT] mit dem Beruf [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] aus [LINK=YIELD_BARLEY]Gerste[\LINK], [LINK=YIELD_RICE]Reis[\LINK] oder [LINK=YIELD_CASSAVA]Maniok[\LINK] herstellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] sind hier besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Kenyérgyár[COLOR_REVERT] a [LINK=BUILDING_BAKER_HOUSE]Pékség[\LINK] végső továbbfejlesztése, ahol a [COLOR_HIGHLIGHT_TEXT]Pék[COLOR_REVERT] szakmát űző lakosok [LINK=YIELD_BAKERY_GOODS]Ellátmányt[\LINK] készítenek [LINK=YIELD_BARLEY]Árpából[\LINK], [LINK=YIELD_RICE]Rizsből[\LINK] vagy [LINK=YIELD_CASSAVA]Maniókából[\LINK]. A [LINK=UNIT_BAKER]Pékmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
@@ -1127,6 +1135,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_LAW</Tag>
 		<English>Courthouse</English>
+		<Portuguese>Tribunal</Portuguese>
 		<German>
 			<Text>Gerichtsgebäude</Text>
 			<Gender>Neuter</Gender>
@@ -1137,7 +1146,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_VILLAGE_COURT</Tag>
 		<English>Village Courthouse</English>
-		<PortugueseBR>Tribunal da Vila</PortugueseBR>
+		<Portuguese>Tribunal da Vila</Portuguese>
 		<French>Maison du juge</French>
 		<German>
 			<Text>Dorfgerichtshaus</Text>
@@ -1150,7 +1159,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TOWN_COURT</Tag>
 		<English>Town Courthouse</English>
-		<PortugueseBR>Tribunal da cidade</PortugueseBR>
+		<Portuguese>Tribunal da cidade</Portuguese>
 		<French>Tribunal de la ville</French>
 		<German>
 			<Text>Stadtgerichtshaus</Text>
@@ -1163,7 +1172,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_CITY_COURT</Tag>
 		<English>City Courthouse</English>
-		<PortugueseBR>Tribunal da cidade</PortugueseBR>
+		<Portuguese>Tribunal da cidade</Portuguese>
 		<French>Tribunal d'arrondissement</French>
 		<German>
 			<Text>Distriktsgerichthaus</Text>
@@ -1176,7 +1185,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_SUPREME_COURT</Tag>
 		<English>Supreme Court</English>
-		<PortugueseBR>Supremo Tribunal</PortugueseBR>
+		<Portuguese>Supremo Tribunal</Portuguese>
 		<French>Cour suprême</French>
 		<German>
 			<Text>Oberstes Gericht</Text>
@@ -1189,7 +1198,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_VILLAGE_COURT</Tag>
 		<English>Village Courthouse</English>
-		<PortugueseBR>Tribunal da Vila</PortugueseBR>
+		<Portuguese>Tribunal da Vila</Portuguese>
 		<French>Maison du juge de paix</French>
 		<German>
 			<Text>Dorfgerichtshaus</Text>
@@ -1202,7 +1211,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOWN_COURT</Tag>
 		<English>Town Courthouse</English>
-		<PortugueseBR>Tribunal da cidade</PortugueseBR>
+		<Portuguese>Tribunal da cidade</Portuguese>
 		<French>Tribunal de la ville</French>
 		<German>
 			<Text>Stadtgerichtshaus</Text>
@@ -1215,7 +1224,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CITY_COURT</Tag>
 		<English>City Courthouse</English>
-		<PortugueseBR>Tribunal da cidade</PortugueseBR>
+		<Portuguese>Tribunal da cidade</Portuguese>
 		<French>Tribunal d'arrondissement</French>
 		<German>
 			<Text>Distriktsgerichthaus</Text>
@@ -1228,7 +1237,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SUPREME_COURT</Tag>
 		<English>Supreme Court</English>
-		<PortugueseBR>Supremo Tribunal</PortugueseBR>
+		<Portuguese>Supremo Tribunal</Portuguese>
 		<French>Cour suprême</French>
 		<German>
 			<Text>Oberstes Gericht</Text>
@@ -1241,56 +1250,56 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_VILLAGE_COURT_PEDIA</Tag>
 		<English>Village courthouses handle small property disputes and local misbehaviour. Some use common law, where the judge recalls what was decided the last time that the cow broke through the fence and grazed in the neighbour's field. Others rely on written rules from the governor or the overseas monarch.</English>
-		<PortugueseBR>Os tribunais das aldeias lidam com disputas de pequenas propriedades e mau comportamento local. Alguns usam o direito consuetudinário, onde o juiz relembra o que foi decidido na última vez que a vaca rompeu a cerca e pastou no campo do vizinho. Outros baseiam-se em regras escritas do governador ou do monarca ultramarino.</PortugueseBR>
+		<Portuguese>Os tribunais das aldeias lidam com disputas de pequenas propriedades e mau comportamento local. Alguns usam o direito consuetudinário, onde o juiz relembra o que foi decidido na última vez que a vaca rompeu a cerca e pastou no campo do vizinho. Outros baseiam-se em regras escritas do governador ou do monarca ultramarino.</Portuguese>
 		<German>Die Dorfgerichte kümmern sich um kleine Eigentumsstreitigkeiten und lokales Fehlverhalten. Einige wenden das Gewohnheitsrecht an, wobei sich der Richter daran erinnert, was das letzte Mal entschieden wurde, als die Kuh den Zaun durchbrach und auf dem Feld des Nachbarn graste. Andere stützen sich auf schriftliche Vorschriften des Gouverneurs oder des Monarchen in Übersee.</German>
 		<Hungarian>A falusi bíróságok kisebb vagyoni vitákat és helyi szabálysértéseket kezelnek. Néhányan a szokásjogot alkalmazzák, ahol a bíró felidézi, hogy mi történt legutóbb, amikor a tehén áttörte a kerítést és a szomszéd mezőjén legelt. Mások a kormányzó vagy a tengerentúli uralkodó írásbeli szabályaira támaszkodnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_VILLAGE_COURT_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]village court[COLOR_REVERT] is the smallest justice building. A colonist assigned as a [LINK=PROFESSION_JUDGE]judge[\LINK] in the [COLOR_HIGHLIGHT_TEXT]village court[COLOR_REVERT] generates [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>O [COLOR_HIGHLIGHT_TEXT]tribunal da aldeia[COLOR_REVERT] é o menor edifício da justiça. Um colono designado como [LINK=PROFESSION_JUDGE]juiz[\LINK] no [COLOR_HIGHLIGHT_TEXT]tribunal da aldeia[COLOR_REVERT] gera [LINK=YIELD_LAW]lei[\LINK]. [LINK=UNIT_JUDGE]Juízes honrados[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>O [COLOR_HIGHLIGHT_TEXT]tribunal da aldeia[COLOR_REVERT] é o menor edifício da justiça. Um colono designado como [LINK=PROFESSION_JUDGE]juiz[\LINK] no [COLOR_HIGHLIGHT_TEXT]tribunal da aldeia[COLOR_REVERT] gera [LINK=YIELD_LAW]lei[\LINK]. [LINK=UNIT_JUDGE]Juízes honrados[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]Dorfgericht[COLOR_REVERT] ist das kleinste Justizgebäude. Ein im [COLOR_HIGHLIGHT_TEXT]Dorfgericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Falusi Bíróság[COLOR_REVERT] a legkisebb igazságszolgáltatási épület. Az itt [LINK=PROFESSION_JUDGE]Bíróként[\LINK] dolgozó lakos [LINK=YIELD_LAW]törvényeket[\LINK] hoz létre. A [LINK=UNIT_JUDGE]Méltóságos Bírák[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOWN_COURT_PEDIA</Tag>
 		<English>The town courthouse expands its purview to contracts and business law. It still hears criminal cases but they're a distraction from the decisions that really matter. There's a long list of hanging offences.</English>
-		<PortugueseBR>O tribunal da cidade expande seu alcance para contratos e direito empresarial. Ainda ouve casos criminais, mas eles são uma distração das decisões que realmente importam. Há uma longa lista de crimes por enforcamento.</PortugueseBR>
+		<Portuguese>O tribunal da cidade expande seu alcance para contratos e direito empresarial. Ainda ouve casos criminais, mas eles são uma distração das decisões que realmente importam. Há uma longa lista de crimes por enforcamento.</Portuguese>
 		<German>Das Stadtgericht weitet seinen Zuständigkeitsbereich auf Verträge und Wirtschaftsrecht aus. Es werden zwar immer noch Gewalttaten verhandelt, aber die lenken von den wirklich wichtigen Entscheidungen ab. Es gibt eine lange Liste von Hinrichtungsdelikten.</German>
 		<Hungarian>A városi bíróság hatásköre kiterjed a szerződésekre és az üzleti jogra is. Továbbra is büntetőügyeket tárgyal, de ezek elvonják a figyelmet a valóban fontos döntésekről. Hosszú a lista a halálbüntetéssel járó bűncselekményekről.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOWN_COURT_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]town courthouse[COLOR_REVERT] is the first expansion stage of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed in the [COLOR_HIGHLIGHT_TEXT]town courthouse[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>O [COLOR_HIGHLIGHT_TEXT]tribunal da cidade[COLOR_REVERT] é a primeira etapa de expansão do [LINK=BUILDING_VILLAGE_COURT]tribunal da aldeia[\LINK]. Um colono nomeado no [COLOR_HIGHLIGHT_TEXT]tribunal da cidade[COLOR_REVERT] como [LINK=PROFESSION_JUDGE]juiz[\LINK] gera [LINK=YIELD_LAW]lei[\LINK]. [LINK=UNIT_JUDGE]Juízes honrados[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>O [COLOR_HIGHLIGHT_TEXT]tribunal da cidade[COLOR_REVERT] é a primeira etapa de expansão do [LINK=BUILDING_VILLAGE_COURT]tribunal da aldeia[\LINK]. Um colono nomeado no [COLOR_HIGHLIGHT_TEXT]tribunal da cidade[COLOR_REVERT] como [LINK=PROFESSION_JUDGE]juiz[\LINK] gera [LINK=YIELD_LAW]lei[\LINK]. [LINK=UNIT_JUDGE]Juízes honrados[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]Stadtgericht[COLOR_REVERT] ist die erste Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Stadtgericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Városi Bíróság[COLOR_REVERT] a [LINK=BUILDING_VILLAGE_COURT]Falusi Bíróság[\LINK] első továbbfejlesztése. Az itt [LINK=PROFESSION_JUDGE]Bíróként[\LINK] dolgozó lakos [LINK=YIELD_LAW]törvényeket[\LINK] hoz létre. A [LINK=UNIT_JUDGE]Méltóságos Bírák[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CITY_COURT_PEDIA</Tag>
 		<English>The city courthouse still has to control violence and money, but dangerous ideas are increasingly subject to regulation. The jails have political prisoners alongside drunks and con artists. Sometimes all three are the same person.</English>
-		<PortugueseBR>O tribunal da cidade ainda tem de controlar a violência e o dinheiro, mas as ideias perigosas estão cada vez mais sujeitas a regulamentação. As prisões têm presos políticos ao lado de bêbados e vigaristas. Às vezes, os três são a mesma pessoa.</PortugueseBR>
+		<Portuguese>O tribunal da cidade ainda tem de controlar a violência e o dinheiro, mas as ideias perigosas estão cada vez mais sujeitas a regulamentação. As prisões têm presos políticos ao lado de bêbados e vigaristas. Às vezes, os três são a mesma pessoa.</Portuguese>
 		<German>Das Distriktsgericht muss nach wie vor Gewalt und Geld kontrollieren, aber gefährliche Ideen werden zunehmend einer Regulierung unterworfen. In den Gefängnissen sitzen politische Gefangene neben Säufern und Betrügern. Manchmal sind alle drei ein und dieselbe Person.</German>
 		<Hungarian>A törvényszéknek továbbra is az erőszakot és a pénzt kell ellenőriznie, de a veszélyes eszmék egyre inkább szabályozás alá kerülnek. A börtönökben politikai foglyok ülnek részegek és csalók mellett. Néha mindhárom ugyanaz a személy.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CITY_COURT_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]city courthouse[COLOR_REVERT] is the highest normal expansion level of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed to the [COLOR_HIGHLIGHT_TEXT]city courthouse[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>O [COLOR_HIGHLIGHT_TEXT]tribunal da cidade[COLOR_REVERT] é o nível de expansão normal mais alto do [LINK=BUILDING_VILLAGE_COURT]tribunal da aldeia[\LINK]. Um colono nomeado para o [COLOR_HIGHLIGHT_TEXT]tribunal da cidade[COLOR_REVERT] como [LINK=PROFESSION_JUDGE]juiz[\LINK] gera [LINK=YIELD_LAW]lei[\LINK]. [LINK=UNIT_JUDGE]Juízes honrados[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>O [COLOR_HIGHLIGHT_TEXT]tribunal da cidade[COLOR_REVERT] é o nível de expansão normal mais alto do [LINK=BUILDING_VILLAGE_COURT]tribunal da aldeia[\LINK]. Um colono nomeado para o [COLOR_HIGHLIGHT_TEXT]tribunal da cidade[COLOR_REVERT] como [LINK=PROFESSION_JUDGE]juiz[\LINK] gera [LINK=YIELD_LAW]lei[\LINK]. [LINK=UNIT_JUDGE]Juízes honrados[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]Distriktsgerichthaus[COLOR_REVERT] ist die höchste normale Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Distriktsgerichthaus[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Törvényszék[COLOR_REVERT] a [LINK=BUILDING_VILLAGE_COURT]Falusi Bíróság[\LINK] legmagasabb normál továbbfejlesztése. Az itt [LINK=PROFESSION_JUDGE]Bíróként[\LINK] dolgozó lakos [LINK=YIELD_LAW]törvényeket[\LINK] hoz létre. A [LINK=UNIT_JUDGE]Méltóságos Bírák[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SUPREME_COURT_PEDIA</Tag>
 		<English>The Supreme Court exists as a counterbalance to government. Rules are made consistent. Many laws have a strong religious component. Precedent remains important, so the Supreme Court is a force for social continuity.</English>
-		<PortugueseBR>A Suprema Corte existe como contrapeso ao governo. As regras são tornadas consistentes. Muitas leis têm um forte componente religioso. O precedente continua importante, por isso o Supremo Tribunal é uma força para a continuidade social.</PortugueseBR>
+		<Portuguese>A Suprema Corte existe como contrapeso ao governo. As regras são tornadas consistentes. Muitas leis têm um forte componente religioso. O precedente continua importante, por isso o Supremo Tribunal é uma força para a continuidade social.</Portuguese>
 		<German>Der Oberste Gerichtshof ist ein Gegengewicht zur Regierung. Regeln werden konsequent umgesetzt. Viele Gesetze haben eine starke religiöse Komponente. Präzedenzfälle bleiben wichtig, so dass der Oberste Gerichtshof eine Kraft für soziale Kontinuität ist.</German>
 		<Hungarian>A Legfelsőbb Bíróság a kormány ellensúlyaként működik. A szabályok következetesek. Sok törvénynek erős vallási vonatkozása van. A precedensek továbbra is fontosak, így a Legfelsőbb Bíróság a társadalmi folytonosság erőforrása.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SUPREME_COURT_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]supreme court[COLOR_REVERT] can only be built once and is the very highest expansion level of the [LINK=BUILDING_VILLAGE_COURT]village court[\LINK]. A colonist appointed in the [COLOR_HIGHLIGHT_TEXT]supreme court[COLOR_REVERT] as a [LINK=PROFESSION_JUDGE]judge[\LINK] generates a great deal of [LINK=YIELD_LAW]law[\LINK]. [LINK=UNIT_JUDGE]Honourable judges[\LINK] are particularly effective at this.</English>
-		<PortugueseBR>O [COLOR_HIGHLIGHT_TEXT]tribunal supremo[COLOR_REVERT] só pode ser construído uma vez e é o nível de expansão mais alto do [LINK=BUILDING_VILLAGE_COURT]tribunal da aldeia[\LINK]. Um colono nomeado na [COLOR_HIGHLIGHT_TEXT]suprema corte[COLOR_REVERT] como [LINK=PROFESSION_JUDGE]juiz[\LINK] gera uma grande quantidade de [LINK=YIELD_LAW]lei[\LINK]. [LINK=UNIT_JUDGE]Juízes honrados[\LINK] são particularmente eficazes nisso.</PortugueseBR>
+		<Portuguese>O [COLOR_HIGHLIGHT_TEXT]tribunal supremo[COLOR_REVERT] só pode ser construído uma vez e é o nível de expansão mais alto do [LINK=BUILDING_VILLAGE_COURT]tribunal da aldeia[\LINK]. Um colono nomeado na [COLOR_HIGHLIGHT_TEXT]suprema corte[COLOR_REVERT] como [LINK=PROFESSION_JUDGE]juiz[\LINK] gera uma grande quantidade de [LINK=YIELD_LAW]lei[\LINK]. [LINK=UNIT_JUDGE]Juízes honrados[\LINK] são particularmente eficazes nisso.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]Oberste Gericht[COLOR_REVERT] kann nur einmal errichtet werden und ist die allerhöchste Ausbaustufe des [LINK=BUILDING_VILLAGE_COURT]Dorfgerichts[\LINK]. Ein im [COLOR_HIGHLIGHT_TEXT]Obersten Gericht[COLOR_REVERT] als [LINK=PROFESSION_JUDGE]Richter[\LINK] eingesetzter [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] erzeugt sehr viel [LINK=YIELD_LAW]Justiz[\LINK].[PARAGRAPH:1][LINK=UNIT_JUDGE]Ehrenwerte Richter[\LINK] sind hierbei besonders effektiv.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Legfelsőbb Bíróság[COLOR_REVERT] csak egyszer építhető meg, és a [LINK=BUILDING_VILLAGE_COURT]falusi bíróság[\LINK] legmagasabb szintű továbbfejlesztése. Az itt [LINK=PROFESSION_JUDGE]Bíróként[\LINK] dolgozó lakos nagy mennyiségű [LINK=YIELD_LAW]törvényt[\LINK] hoz létre. A [LINK=UNIT_JUDGE]Méltóságos Bírák[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
@@ -1298,7 +1307,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_JAIL</Tag>
 		<English>Jail</English>
-		<PortugueseBR>Prisão</PortugueseBR>
+		<Portuguese>Prisão</Portuguese>
 		<French>Prison</French>
 		<German>
 			<Text>Gefängnis</Text>
@@ -1310,7 +1319,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_JAIL</Tag>
 		<English>Jail</English>
-		<PortugueseBR>Prisão</PortugueseBR>
+		<Portuguese>Prisão</Portuguese>
 		<French>Prison</French>
 		<German>
 			<Text>Gefängnis</Text>
@@ -1323,7 +1332,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_JAIL</Tag>
 		<English>Jail</English>
-		<PortugueseBR>Prisão</PortugueseBR>
+		<Portuguese>Prisão</Portuguese>
 		<French>Prison</French>
 		<German>
 			<Text>Gefängnis</Text>
@@ -1336,13 +1345,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_JAIL_PEDIA</Tag>
 		<English>Jail is how the settlement handles drunks, domestic disputes, witches and thieves. Murderers don't stay in jail for long because they're hanged right away. Thieves are hanged later.</English>
-		<PortugueseBR>A prisão é como o assentamento lida com bêbados, disputas domésticas, bruxas e ladrões. Os assassinos não ficam na prisão por muito tempo porque são enforcados imediatamente. Os ladrões são enforcados mais tarde.</PortugueseBR>
+		<Portuguese>A prisão é como a colônia lida com bêbados, disputas domésticas, bruxas e ladrões. Os assassinos não ficam na prisão por muito tempo porque são enforcados imediatamente. Os ladrões são enforcados mais tarde.</Portuguese>
 		<German>Das Gefängnis ist der Ort, an dem Betrunkene, häusliche Gewalttäter, Hexen und Dieben landen. Mörder bleiben nicht lange im Gefängnis, weil sie gehängt werden. Diebe werden später aufgehängt.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_JAIL_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]jail[COLOR_REVERT] increases the [LINK=YIELD_LAW]law[\LINK] without additional use of [LINK=PROFESSION_JUDGE]judges[\LINK] in the city.</English>
-		<PortugueseBR>A [COLOR_HIGHLIGHT_TEXT]prisão[COLOR_REVERT] aumenta a [LINK=YIELD_LAW]lei[\LINK] sem uso adicional de [LINK=PROFESSION_JUDGE]juízes[\LINK] na cidade.</PortugueseBR>
+		<Portuguese>A [COLOR_HIGHLIGHT_TEXT]prisão[COLOR_REVERT] aumenta a [LINK=YIELD_LAW]lei[\LINK] sem uso adicional de [LINK=PROFESSION_JUDGE]juízes[\LINK] na cidade.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]Gefängnis[COLOR_REVERT] erhöht die [LINK=YIELD_LAW]Justiz[\LINK] ohne zusätzlichen Einsatz von [LINK=PROFESSION_JUDGE]Richtern[\LINK] in der Stadt.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Börtön[COLOR_REVERT] növeli a [LINK=YIELD_LAW]Törvény[\LINK] hatályát anélkül, hogy további [LINK=PROFESSION_JUDGE]Bírókat[\LINK] kellene alkalmazni a városban.</Hungarian>
 	</TEXT>
