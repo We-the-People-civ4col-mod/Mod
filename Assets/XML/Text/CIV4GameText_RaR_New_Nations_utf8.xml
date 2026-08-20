@@ -980,7 +980,7 @@
 		<English>Carib</English>
 		
 		<Portuguese>
-			<Text>Caribenho</Text>
+			<Text>Carib</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1008,7 +1008,7 @@
 		<English>Carib</English>
 		
 		<Portuguese>
-			<Text>Caribenho:Caribenha:Caribenhos:Caribenhas</Text>
+			<Text>Carib:Carib:Carib:Carib</Text>
 			<Gender>Male:Female:Male:Female</Gender>
 			<Plural>0:0:1:1</Plural>
 		</Portuguese>
@@ -1580,8 +1580,8 @@
 		<English>Muisca</English>
 		
 		<Portuguese>
-			<Text>Música</Text>
-			<Gender>Female</Gender>
+			<Text>Muisca</Text>
+			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
 		<French>
@@ -1608,8 +1608,8 @@
 		<English>Muisca</English>
 		
 		<Portuguese>
-			<Text>Música</Text>
-			<Gender>Female</Gender>
+			<Text>Muisca</Text>
+			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
 		<French>
@@ -2063,7 +2063,7 @@
 		<English>Crow</English>
 		
 		<Portuguese>
-			<Text>Corvo</Text>
+			<Text>Crow</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2091,7 +2091,7 @@
 		<English>Crow</English>
 		
 		<Portuguese>
-			<Text>Corvo</Text>
+			<Text>Crow</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2183,8 +2183,8 @@
 		<English>Blackfoot</English>
 		
 		<Portuguese>
-			<Text>Pé preto</Text>
-			<Gender>Female</Gender>
+			<Text>Blackfoot</Text>
+			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
 		<French>
@@ -2211,7 +2211,7 @@
 		<English>Blackfoot</English>
 		
 		<Portuguese>
-			<Text>Pé preto</Text>
+			<Text>Blackfoot</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
