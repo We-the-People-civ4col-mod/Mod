@@ -4247,6 +4247,9 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 	const bool canCrossOcean = !canCrossCoastOnly();
 	CLLNode<IDInfo>* pUnitNode = NULL;
 
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	const bool bCanUseOffMapTravel = (kOwner.getParent() != NO_PLAYER || kOwner.isEurope());
+
 	if (eAutomate == NO_AUTOMATE)
 	{
 		return false;
@@ -4284,6 +4287,11 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 		break;
 
 	case AUTOMATE_SAIL_TO_EUROPE:
+		if (!bCanUseOffMapTravel)
+		{
+			return false;
+		}
+
 		if (!canCrossOcean || !canAutoCrossOcean(plot()))
 		{
 			return false;
@@ -4292,6 +4300,11 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 
 	/*** TRIANGLETRADE 10/28/08 by DPII ***/
 	case AUTOMATE_SAIL_TO_AFRICA:
+		if (!bCanUseOffMapTravel)
+		{
+			return false;
+		}
+
 		if (!canCrossOcean || !canAutoCrossOcean(plot()))
 		{
 			return false;
@@ -4300,6 +4313,11 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 
 	// R&R, ray, Port Royal
 	case AUTOMATE_SAIL_TO_PORT_ROYAL:
+		if (!bCanUseOffMapTravel)
+		{
+			return false;
+		}
+
 		//RaR, ray, fix for Port Royal during WOI - START
 		/*
 		if (!canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_PORT_ROYAL)) // need to check
@@ -5193,6 +5211,12 @@ bool CvUnit::canAutoCrossOcean(const CvPlot* pPlot) const
 
 bool CvUnit::canCrossOcean(const CvPlot* pPlot, UnitTravelStates eNewState) const
 {
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	if (kOwner.getParent() == NO_PLAYER && !kOwner.isEurope())
+	{
+		return false;
+	}
+
 	if (getTransportUnit() != NULL)
 	{
 		return false;
@@ -5274,6 +5298,12 @@ void CvUnit::crossOcean(UnitTravelStates eNewState)
 /*** TRIANGLETRADE 10/28/08 by DPII ***/
 bool CvUnit::canSailToAfrica(const CvPlot* pPlot, UnitTravelStates eNewState) const
 {
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	if (kOwner.getParent() == NO_PLAYER && !kOwner.isEurope())
+	{
+		return false;
+	}
+
 	if (getTransportUnit() != NULL)
 	{
 		return false;
@@ -5360,6 +5390,12 @@ void CvUnit::sailToAfrica(UnitTravelStates eNewState)
 // R&R, ray, Port Royal
 bool CvUnit::canSailToPortRoyal(const CvPlot* pPlot, UnitTravelStates eNewState) const
 {
+	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+	if (kOwner.getParent() == NO_PLAYER && !kOwner.isEurope())
+	{
+		return false;
+	}
+
 	// only Ships with hidden nationality can sail to Port Royal
 	// WTP, ray Slave Ship
 	// we allow Slave Ships to sail to Port Royal as well
