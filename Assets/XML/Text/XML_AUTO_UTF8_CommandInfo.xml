@@ -75,7 +75,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_CHOOSE_TRADE_ROUTES_HELP</Tag>
 		<English>Automate this transport by selecting the transport routes it should follow.</English>
-		<Portuguese>Automatize esse transporte selecionando as rotas de transporte que ele deverá seguir.</Portuguese>
+		<Portuguese>Automatizar esse transporte selecionando as rotas de transporte que ele deverá seguir.</Portuguese>
 		<French>Automatiser ce transport en sélectionnant les routes commerciales qu'il devrait suivre.</French>
 		<German>Routenverwaltung aufrufen, um Transportrouten einzurichten und zuzuweisen.</German>
 		<Italian>Automatizza questo trasporto scegliendo le rotte commerciali che dovrebbe seguire.</Italian>
@@ -115,7 +115,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_DELETE_HELP</Tag>
 		<English>Click on this order to remove the unit from play.</English>
-		<Portuguese>Clique nesta ordem para remover a unidade do jogo.</Portuguese>
+		<Portuguese>Clicar nesta ordem para remover a unidade do jogo.</Portuguese>
 		<French>Retirer l'unité de la partie.</French>
 		<German>Klicken Sie hier, um die Einheit aus dem Spiel zu entfernen.</German>
 		<Italian>Clicca su questo ordine per rimuovere l'unità dalla partita.</Italian>
@@ -135,7 +135,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_ESTABLISH_MISSION_HELP</Tag>
 		<English>Establish a mission in the village to gradually convert Natives to your faith.</English>
-		<Portuguese>Estabeleça uma missão na aldeia para converter gradualmente os nativos à sua fé.</Portuguese>
+		<Portuguese>Estabelecer uma missão na aldeia para converter gradualmente os nativos à sua fé.</Portuguese>
 		<French>Etablir une mission dans le village pour convertir peu à peu les indigènes à votre foi.</French>
 		<German>Eine Mission errichten, um Konvertierte Ureinwohner zu gewinnen.</German>
 		<Italian>Fonda una missione nel villaggio per convertire gradualmente i nativi alla tua fede.</Italian>
@@ -228,7 +228,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_KING_TRANSPORT_HELP</Tag>
 		<English>Contact King to transport this treasure for a fee.</English>
-		<Portuguese>Contate King para transportar este tesouro mediante o pagamento de uma taxa.</Portuguese>
+		<Portuguese>Contatar o rei para transportar este tesouro mediante o pagamento de uma taxa.</Portuguese>
 		<French>Contacter le roi afin qu'il vous facture un convoi pour le trésor.</French>
 		<German>König kontaktieren, um diesen Schatz gegen eine Gebühr zu transportieren.</German>
 		<Italian>Contatta il re per il trasporto del tesoro, in cambio di un onorario.</Italian>
@@ -583,7 +583,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_YIELD_TRADE_HELP</Tag>
 		<English>Use your transport to trade with the locals.</English>
-		<Portuguese>Use seu transporte para negociar com os habitantes locais.</Portuguese>
+		<Portuguese>Usar o transporte para negociar com os habitantes locais.</Portuguese>
 		<French>Utiliser votre transport pour commercer avec les indigènes.</French>
 		<German>Benutzen Sie Ihre Transporteinheiten, um mit den Einwohnern Handel zu treiben.</German>
 		<Italian>Usa il tuo trasporto per commerciare con i locali.</Italian>
@@ -603,7 +603,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_MERGE_TREASURES_HELP</Tag>
 		<English>Merge the treasures on plot to one unit.</English>
-		<Portuguese>Combine os tesouros do enredo em uma unidade.</Portuguese>
+		<Portuguese>Combinar os tesouros da peça em uma unidade.</Portuguese>
 		<French>Fusionner les trésors du Plot en une seule unité.</French>
 		<German>Vereine die Schätze auf dem Geländefeld zu einer Einheit.</German>
 		<Italian>Unire i tesori della trama in una sola unità.</Italian>
@@ -623,7 +623,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_ESTABLISH_TRADE_POST_HELP</Tag>
 		<English>Establish a trading post in the settlement to gradually generate treasures.</English>
-		<Portuguese>Estabeleça um entreposto comercial na colônia para gerar tesouros gradualmente.</Portuguese>
+		<Portuguese>Estabelecer um entreposto comercial na colônia para gerar tesouros gradualmente.</Portuguese>
 		<French>Établir un poste de traite dans le village pour générer progressivement des trésors.</French>
 		<German>Einen Handelsposten errichten, um mit den Ureinwohnern Handel zu treiben und Schätze zu erzeugen.</German>
 		<Italian>Stabilire un Trading Post nel villaggio per generare gradualmente dei tesori.</Italian>
@@ -640,7 +640,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_USE_CONSTRUCTION_SUPPLIES_HELP</Tag>
 		<English>Use the Construction Supply to transform it into Production of the City.</English>
-		<Portuguese>Use o Suprimento de Construção para transformá-lo em Produção da Cidade.</Portuguese>
+		<Portuguese>Usar os materiais de construção para transformá-los em produção da cidade.</Portuguese>
 		<German>Benutze das Baumaterial, um es in Produktion der Stadt umzuwandeln.</German>
 		<Russian>Используйте строительные материалы, чтобы ускорить производство в городе</Russian>
 	</TEXT>
