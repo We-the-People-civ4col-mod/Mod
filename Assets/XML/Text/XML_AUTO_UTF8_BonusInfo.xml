@@ -1069,7 +1069,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_RAPE</Tag>
 		<English>Rapeseed Plants</English>
-		<Portuguese>Plantas de Colza</Portuguese>
+		<Portuguese>Plantas de Canola</Portuguese>
 		<French>Plant de Colza</French>
 		<German>
 			<Text>Rapspflanzen</Text>
@@ -1081,7 +1081,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_RAPE_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rapeseed[COLOR_REVERT] grows on [LINK=TERRAIN_GRASS]grass[\LINK] terrain.[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.</English>
-		<Portuguese>[BOLD]Estratégia:[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]A colza[COLOR_REVERT] cresce em terreno de [LINK=TERRAIN_GRASS]grama[\LINK].[NEWLINE][NEWLINE][BOLD]Antecedentes:[\BOLD][NEWLINE]A colza com suas flores amarelas brilhantes é cultivada principalmente por sua semente rica em óleo, que possui quantidades apreciáveis de ácido erúcico. A farinha de colza, deixada após a extração do óleo, é uma ração animal rica em proteínas.</Portuguese>
+		<Portuguese>[BOLD]Estratégia:[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]A canola[COLOR_REVERT] cresce em terreno de [LINK=TERRAIN_GRASS]grama[\LINK].[NEWLINE][NEWLINE][BOLD]Antecedentes:[\BOLD][NEWLINE]A canola com suas flores amarelas brilhantes é cultivada principalmente por sua semente rica em óleo, que possui quantidades apreciáveis de ácido erúcico. A farinha de canola, deixada após a extração do óleo, é uma ração animal rica em proteínas.</Portuguese>
 		<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Rapspflanzen[COLOR_REVERT] wächst auf [LINK=TERRAIN_GRASS]Gras[\LINK]-Gelände.[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][NEWLINE]Raps mit seinen leuchtend gelben Blüten wird hauptsächlich wegen seiner ölreichen Samen angebaut, die beträchtliche Mengen an Erucasäure enthalten. Rapsschrot, das nach der Ölgewinnung übrig bleibt, ist ein proteinreiches Futtermittel.</German>
 	</TEXT>
 	<TEXT>

@@ -255,13 +255,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_RAPE</Tag>
 		<English>Emphasize Rapeseed</English>
-		<Portuguese>Enfatize a colza</Portuguese>
+		<Portuguese>Enfatize a canola</Portuguese>
 		<German>Schwerpunkt Raps</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_RAPE</Tag>
 		<English>Deemphasize Rapeseed</English>
-		<Portuguese>Diminuir a ênfase na colza</Portuguese>
+		<Portuguese>Diminuir a ênfase na canola</Portuguese>
 		<German>Schwerpunkt Raps aufheben</German>
 	</TEXT>
 	<TEXT>
@@ -507,13 +507,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_RAPE_OIL</Tag>
 		<English>Emphasize Rapeseed Oil</English>
-		<Portuguese>Enfatize o óleo de colza</Portuguese>
+		<Portuguese>Enfatize o óleo de canola</Portuguese>
 		<German>Schwerpunkt Rapsöl</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_RAPE_OIL</Tag>
 		<English>Deemphasize Rapeseed Oil</English>
-		<Portuguese>Diminuir a ênfase no óleo de colza</Portuguese>
+		<Portuguese>Diminuir a ênfase no óleo de canola</Portuguese>
 		<German>Schwerpunkt Rapsöl aufheben</German>
 	</TEXT>
 	<TEXT>
