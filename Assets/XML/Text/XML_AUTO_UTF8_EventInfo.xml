@@ -3445,14 +3445,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_POINT_1_DONE_HELP</Tag>
 		<English>[ICON_BULLET]You come across an old missionary and a confused trader.[NEWLINE][ICON_BULLET]Ride deeper into the interior: gather at least %d1 Mounted Conquistadors on the same plot, at least %d2 tiles away from your capital and at least %d tiles away from the ocean.</English>
-		<Portuguese>[ICON_BULLET]Você se depara com um velho missionário e um comerciante confuso.[NEWLINE][ICON_BULLET]Cavalgue mais fundo no interior: reúna pelo menos %d1 Conquistadores Montados no mesmo terreno, a pelo menos %d2 peças de distância de sua capital e pelo menos %d peças de distância do oceano.</Portuguese>
+		<Portuguese>[ICON_BULLET]Você se depara com um velho missionário e um comerciante confuso.[NEWLINE][ICON_BULLET]Cavalgue mais fundo no interior: reúna pelo menos %d1 Conquistadores Montados no mesmo terreno, a pelo menos %d2 lotes de distância de sua capital e pelo menos %d lotes de distância do oceano.</Portuguese>
 		<German>[ICON_BULLET]Ihr stoßt auf einen alten Missionar und einen verwirrten Händler.[NEWLINE][ICON_BULLET]Dringe tiefer ins Landesinnere vor: Versammle mindestens %d1 berittene Konquistadoren auf demselben Feld, mindestens %d2 Felder von deiner Hauptstadt entfernt.</German>
 		<Russian/>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_POINT_1_HELP</Tag>
 		<English>[ICON_BULLET]Ride further inland: Gather at least %d1 mounted conquistadors on the same tile, at least %d2 tiles away from your capital.</English>
-		<Portuguese>[ICON_BULLET]Cavalgue mais para o interior: reúna pelo menos %d1 conquistadores montados na mesma peça, a pelo menos %d2 peças de distância de sua capital.</Portuguese>
+		<Portuguese>[ICON_BULLET]Cavalgue mais para o interior: reúna pelo menos %d1 conquistadores montados na mesma lote, a pelo menos %d2 lotes de distância de sua capital.</Portuguese>
 		<German>[ICON_BULLET]Dringe tiefer ins Landesinnere vor: Versammle mindestens %d1 berittene Konquistadoren auf demselben Feld und mindestens %d2 Felder von deiner Hauptstadt entfernt.</German>
 		<Russian/>
 	</TEXT>
@@ -3466,7 +3466,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_POINT_2_DONE_HELP</Tag>
 		<English>[ICON_BULLET]You come across an old missionary and a confused trader.[NEWLINE][ICON_BULLET]Ride deeper into the interior: gather at least %d1 Mounted Conquistadors on the same plot, at least %d2 tiles away from your capital and at least %d tiles away from the ocean.</English>
-		<Portuguese>[ICON_BULLET]Você se depara com um velho missionário e um comerciante confuso.[NEWLINE][ICON_BULLET]Cavalgue mais fundo no interior: reúna pelo menos %d1 Conquistadores Montados no mesmo terreno, a pelo menos %d2 peças de distância de sua capital e pelo menos %d peças de distância do oceano.</Portuguese>
+		<Portuguese>[ICON_BULLET]Você se depara com um velho missionário e um comerciante confuso.[NEWLINE][ICON_BULLET]Cavalgue mais fundo no interior: reúna pelo menos %d1 Conquistadores Montados no mesmo terreno, a pelo menos %d2 lotes de distância de sua capital e pelo menos %d lotes de distância do oceano.</Portuguese>
 		<German>[ICON_BULLET]Ihr werdet von Ureinwohnern angegriffen, die euch beobachten[NEWLINE][ICON_BULLET]Kämpft und dringt tiefer ins Landesinnere vor: Versammle mindestens %d1 berittene Konquistadoren auf demselben Feld, mindestens %d2 Felder von deiner Hauptstadt entfernt.</German>
 		<Russian/>
 	</TEXT>

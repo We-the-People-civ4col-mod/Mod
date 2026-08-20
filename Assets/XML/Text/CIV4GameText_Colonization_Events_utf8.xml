@@ -134,7 +134,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_SPEAK_WITH_CHIEF</Tag>
 		<English>[BOLD]Speak to Chief[\BOLD][NEWLINE][TAB]Making contact with the chiefs of neighbouring Native villages can provide valuable resources to fledgling colonies. Contacted chiefs will tell you what product their village needs, what skill they can teach your colonists, and - if you are the first European to contact that village - they will often give you a gift.[PARAGRAPH:2]To speak to a chief, move a unit onto the village tile and select "Speak to Chief".</English>
-		<Portuguese>[BOLD]Fale com o Chefe[\BOLD][NEWLINE][TAB]Fazer contato com os chefes das aldeias nativas vizinhas pode fornecer recursos valiosos para colônias iniciantes. Os chefes contatados lhe dirão quais produtos suas aldeias precisam, quais habilidades eles podem ensinar aos seus colonos e - se você for o primeiro europeu a entrar em contato com aquela aldeia - eles frequentemente lhe darão um presente.[PARAGRAPH:2]Para falar com um chefe, mova uma unidade para a peça da aldeia e selecione "Falar com o Chefe".</Portuguese>
+		<Portuguese>[BOLD]Fale com o Chefe[\BOLD][NEWLINE][TAB]Fazer contato com os chefes das aldeias nativas vizinhas pode fornecer recursos valiosos para colônias iniciantes. Os chefes contatados lhe dirão quais produtos suas aldeias precisam, quais habilidades eles podem ensinar aos seus colonos e - se você for o primeiro europeu a entrar em contato com aquela aldeia - eles frequentemente lhe darão um presente.[PARAGRAPH:2]Para falar com um chefe, mova uma unidade para a lote da aldeia e selecione "Falar com o Chefe".</Portuguese>
 		<French>[BOLD]Parler au chef[\BOLD][NEWLINE][TAB]Rencontrer les chefs des villages indigènes voisins peut s'avérer une précieuse mine de ressources pour les colonies nouvellement créées. Les chefs que vous contactez vous diront quelles marchandises leur village souhaiterait pouvoir acheter, les compétences qu'ils peuvent enseigner à vos colons, et si vous êtes le premier Européen à entrer en contact avec eux, ils pourront même vous offrir un cadeau ![PARAGRAPH:2]Pour parler à un chef, envoyez une unité sur la case du village et sélectionnez l'ordre "Parler au chef".</French>
 		<German>[BOLD]Mit dem Häuptling sprechen[\BOLD][NEWLINE][TAB]Den Kontakt mit Häuptlingen benachbarter Dörfer von Eingeborenen herzustellen kann eine wertvolle Ressourcenquelle für junge Kolonien sein. Kontaktierte Häuptlinge werden Ihnen mitteilen, an welchen Gütern ihr Dorf interessiert ist, welche Fähigkeiten sie Ihren Kolonisten beibringen können, und - falls Sie der erste Europäer sind, der Kontakt zu dem Dorf aufnimmt - überreichen sie oft Geschenke.[PARAGRAPH:2]Um mit einem Häuptling zu sprechen, bewegen Sie eine Einheit auf das Geländefeld des Dorfes und wählen Sie den Befehl "Mit dem Häuptling sprechen!".</German>
 		<Italian>[BOLD]Parla con il capo[\BOLD][NEWLINE][TAB]Prendere contatti con i capi dei vicini villaggi nativi può rivelarsi una valida fonte di risorse per le neonate colonie. I capi che contatti ti diranno quali sono i beni che al loro villaggio interessa acquistare, quali abilità possono insegnare ai tuoi coloni e, se sarai il primo europeo a contattarli, spesso ti faranno un regalo.[PARAGRAPH:2]Per parlare con un capo, sposta un'unità sulla casella del villaggio e scegli l'ordine Parla con il capo.</Italian>
@@ -197,7 +197,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_FOUND_COLONY_2</Tag>
 		<English>[BOLD]Founding a Settlement[\BOLD][NEWLINE][TAB]The life of a colonist is a challenging one. In order to survive, you will need to find land and construct a settlement. When a unit that can build a settlement is selected, blue circles will appear on tiles that would be excellent locations. Once you've chosen the best location, move a unit to the appropriate tile and click the "Build Settlement" button.</English>
-		<Portuguese>[BOLD]Fundando uma colônia[\BOLD][NEWLINE][TAB]A vida de um colono é desafiadora. Para sobreviver, você precisará encontrar um terreno e construir uma colônia. Quando uma unidade que pode construir uma colônia é selecionada, círculos azuis aparecerão em peças que seriam locais excelentes. Depois de escolher o melhor local, mova uma unidade para o quadrado apropriado e clique no botão “Construir colônia”.</Portuguese>
+		<Portuguese>[BOLD]Fundando uma colônia[\BOLD][NEWLINE][TAB]A vida de um colono é desafiadora. Para sobreviver, você precisará encontrar um terreno e construir uma colônia. Quando uma unidade que pode construir uma colônia é selecionada, círculos azuis aparecerão em lotes que seriam locais excelentes. Depois de escolher o melhor local, mova uma unidade para o quadrado apropriado e clique no botão “Construir colônia”.</Portuguese>
 		<French>[BOLD]Fonder une colonie[\BOLD][NEWLINE][TAB]La vie d'un colon est loin d'être un long fleuve tranquille. Pour survivre, vous allez devoir trouver une terre à exploiter et y fonder une colonie. Quand une unité capable de bâtir une colonie est sélectionnée, des cercles bleus apparaissent sur les cases susceptibles de convenir à votre nouvelle colonie. Une fois que vous avez déterminé l'endroit approprié, déplacez-y une unité et sélectionnez "Fonder une colonie".</French>
 		<German>[BOLD]Eine Siedlung gründen[\BOLD][NEWLINE][TAB]Das Leben eines Kolonisten ist nicht leicht. Um zu überleben, müssen Sie Land finden und eine Siedlung errichten. Wenn eine Einheit ausgewählt ist, die eine Siedlung gründen kann, erscheinen blaue Kreise auf den zum Bau optimal geeigneten Geländefeldern. Wenn Sie einen geeigneten Ort gefunden haben, bewegen Sie die Einheit zu dem Geländefeld und klicken Sie auf "Siedlung gründen".</German>
 		<Italian>[BOLD]Fondazione di un insediamento[\BOLD][NEWLINE][TAB]La vita di un colono è piena di sfide. Per sopravvivere dovrai trovare una terra e fondare un insediamento. Quando selezioni un'unità che può costruire un insediamento, sulle caselle adatte alla fondazione di un insediamento appariranno dei cerchi blu. Dopo aver trovato la posizione adeguata, sposta un'unità su quella casella e clicca sul pulsante "Costruisci insediamento".</Italian>
@@ -1827,7 +1827,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_VOLCANO_1_HELP</Tag>
 		<English>[ICON_BULLET]Suffer loss of plot improvements near the eruption</English>
-		<Portuguese>[ICON_BULLET]Sofrer perda de melhorias na peça perto da erupção</Portuguese>
+		<Portuguese>[ICON_BULLET]Sofrer perda de melhorias no lote perto da erupção</Portuguese>
 		<French>[ICON_BULLET]Subir des pertes d'aménagements sur les cases proches de l'éruption</French>
 		<German>[ICON_BULLET]Verlust der Geländefeld-Modernisierungen in der Nähe der Eruption</German>
 		<Italian>[ICON_BULLET]Perdita dei miglioramenti delle caselle vicino all'eruzione</Italian>
@@ -2700,7 +2700,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1_HELP</Tag>
 		<English>If this treasure is still in the harbor after 5 turns, the pirates will steal it. If you move it away in time, a Pirate Cutter will appear off the coast instead.</English>
-		<Portuguese>Se este tesouro ainda estiver no porto após 5 turnos, os piratas irão roubá-lo. Se você afastá-lo a tempo, um Cúter pirata aparecerá na costa.</Portuguese>
+		<Portuguese>Se este tesouro ainda estiver no porto após 5 turnos, os piratas irão roubá-lo. Se você afastá-lo a tempo, um Cúter Pirata aparecerá na costa.</Portuguese>
 		<German>Wenn sich dieser Schatz nach 5 Runden noch immer im Hafen befindet, werden die Piraten ihn stehlen. Bringst du ihn rechtzeitig fort, werden die Piraten vor der Küste lauern.</German>
 		<Russian>Если через 5 ходов это Сокровище будет находиться в гавани, его украдут пираты. Если же вы успеете его убрать, у берегов появится Пиратский катер.</Russian>
 	</TEXT>
@@ -2721,7 +2721,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1A_CUTTER</Tag>
 		<English>A Pirate Cutter has appeared off the coast of %s1!</English>
-		<Portuguese>Um Cúter pirata apareceu na costa de %s1!</Portuguese>
+		<Portuguese>Um Cúter Pirata apareceu na costa de %s1!</Portuguese>
 		<German>Vor der Küste von %s1 ist ein Piratenkutter aufgetaucht!</German>
 		<Russian>У берегов города %s1 появился Пиратский катер!</Russian>
 	</TEXT>
@@ -6972,7 +6972,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_1</Tag>
 		<English>Yes, I've noticed that too. I've actually heard it myself. So what, as long as it's just talk and the drinking doesn't stop them from working. Let them talk! Speaking of which, why don't we go get a drink?</English>
-		<Portuguese>Sim, eu também notei isso. Na verdade, eu mesmo ouvi isso. E daí, desde que seja só conversa e a bebida não os impeça de trabalhar. Deixe-os falar! Falando nisso, por que não vamos tomar uma bebida?</Portuguese>
+		<Portuguese>Sim, eu também notei isso. Na verdade, eu mesmo ouvi isso. E daí, desde que seja só conversa e a bebida não os imlote de trabalhar. Deixe-os falar! Falando nisso, por que não vamos tomar uma bebida?</Portuguese>
 		<German>Ja, das ist mir auch schon aufgefallen, ähm ich meine, es ist mir zu Ohren gekommen. Na und, solange die Leute nur so daherreden und sie das Trinken nicht von der Arbeit abhält, lasst die Leute doch reden. Ich schlage vor, wir genehmigen uns auch erst mal einen guten Tropfen.</German>
 		<Russian>Да, я тоже это заметил, то есть даже сам слышал. Ничего страшного - пока подобные высказвания и выпивка им не мешает работать, пусть болтают. Надо же им где-то выпускать пар. Кстати, а почему бы и нам не опрокинуть по стаканчику?</Russian>
 	</TEXT>
@@ -7933,7 +7933,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_RETURN_HELP</Tag>
 		<English>[ICON_BULLET]One sacred plot is returned to the natives for [COLOR_HIGHLIGHT_TEXT]%d1 turns[COLOR_REVERT]. Relations improve and you gain [COLOR_HIGHLIGHT_TEXT]%d2 religious father points[COLOR_REVERT].</English>
-		<Portuguese>[ICON_BULLET]Uma peça sagrada é devolvido aos nativos por [COLOR_HIGHLIGHT_TEXT]%d1 turnos[COLOR_REVERT]. As relações melhoram e você ganha [COLOR_HIGHLIGHT_TEXT]%d2 pontos de pai religioso[COLOR_REVERT].</Portuguese>
+		<Portuguese>[ICON_BULLET]Um lote sagrado é devolvido aos nativos por [COLOR_HIGHLIGHT_TEXT]%d1 turnos[COLOR_REVERT]. As relações melhoram e você ganha [COLOR_HIGHLIGHT_TEXT]%d2 pontos de pai religioso[COLOR_REVERT].</Portuguese>
 		<German>[ICON_BULLET]Ein heiliger Plot wird für [COLOR_HIGHLIGHT_TEXT]%d1 Runden[COLOR_REVERT] an die Ureinwohner zurückgegeben. Die Beziehungen verbessern sich und Ihr erhaltet [COLOR_HIGHLIGHT_TEXT]%d2 Religions-Gründerväterpunkte[COLOR_REVERT].</German>
 		<Russian/>
 	</TEXT>

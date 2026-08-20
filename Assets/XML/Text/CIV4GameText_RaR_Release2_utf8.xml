@@ -497,7 +497,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WB_PLOT_TYPE_MOUNTAIN</Tag>
 		<English>Change plot to a mountain</English>
-		<Portuguese>Mudar a peça para uma montanha</Portuguese>
+		<Portuguese>Mudar o lote para uma montanha</Portuguese>
 		<French>Changer case en montagne</French>
 		<German>Geländefeld zu Gebirge ändern</German>
 		<Italian>Cambia la casella in una montagna</Italian>
@@ -524,7 +524,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WB_PLOT_TYPE_OCEAN</Tag>
 		<English>Change plot to an ocean</English>
-		<Portuguese>Mudar a peça para um oceano</Portuguese>
+		<Portuguese>Mudar o lote para um oceano</Portuguese>
 		<French>Changer case en océan</French>
 		<German>Geländefeld zu Ozean ändern</German>
 		<Italian>Cambia la casella in un oceano</Italian>
@@ -605,7 +605,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WB_REVEAL_ALL</Tag>
 		<English>Reveal all tiles</English>
-		<Portuguese>Revele todas as peças</Portuguese>
+		<Portuguese>Revele todos os lotes</Portuguese>
 		<French>Dévoiler toutes les cases</French>
 		<German>Alle Geländefelder einblenden</German>
 		<Italian>Rivela tutte le caselle</Italian>
@@ -614,7 +614,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WB_UNREVEAL_ALL</Tag>
 		<English>Unreveal all tiles</English>
-		<Portuguese>Desrevelar todas as peças</Portuguese>
+		<Portuguese>Desrevelar todos os lotes</Portuguese>
 		<French>Masquer toutes les cases</French>
 		<German>Alle Geländefelder ausblenden</German>
 		<Italian>Copri tutte le caselle</Italian>
@@ -767,7 +767,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WB_ADD_SCRIPT_TO_PLOT</Tag>
 		<English>Add script to plot</English>
-		<Portuguese>Adicionar script à peça</Portuguese>
+		<Portuguese>Adicionar script ao lote</Portuguese>
 		<French>Ajouter script à la case</French>
 		<German>Skript zum Geländefeld hinzufügen</German>
 		<Italian>Aggiungi script alla casella</Italian>
