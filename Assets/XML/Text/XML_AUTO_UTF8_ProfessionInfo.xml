@@ -2949,7 +2949,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER</Tag>
 		<English>Sailmaker (Flax):Sailmakers (Flax)</English>
-		<Portuguese>Veleiro (Linho):Fabricantes de Veleiro (Linho)</Portuguese>
+		<Portuguese>Fabricante de velas (Linho):Fabricantes de velas (Linho)</Portuguese>
 		<French>
 			<Text>Voilier (Lin):Voiliers (Lin)</Text>
 			<Gender>Male</Gender>
@@ -2992,7 +2992,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Sailmakers[COLOR_REVERT] produce [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] from [LINK=YIELD_HEMP]hemp[\LINK] or [LINK=YIELD_FLAX]flax[\LINK]. They do this in buildings like the [LINK=BUILDING_DOCK]dock[\LINK] or one of its upgrades. The most effective units for this craft are [LINK=UNIT_SAILCLOTH_MAKER]master sailmakers[\LINK].</English>
-		<Portuguese>[COLOR_UNIT_TEXT]Os velejadores[COLOR_REVERT] produzem [LINK=YIELD_SAILCLOTH]veleiras[\LINK] a partir de [LINK=YIELD_HEMP]cânhamo[\LINK] ou [LINK=YIELD_FLAX]linho[\LINK]. Eles fazem isso em edifícios como a [LINK=BUILDING_DOCK]doca[\LINK] ou uma de suas atualizações. As unidades mais eficazes para esta embarcação são os [LINK=UNIT_SAILCLOTH_MAKER]mestres velejadores[\LINK].</Portuguese>
+		<Portuguese>[COLOR_UNIT_TEXT]Os velejadores[COLOR_REVERT] produzem [LINK=YIELD_SAILCLOTH]lona[\LINK] a partir de [LINK=YIELD_HEMP]cânhamo[\LINK] ou [LINK=YIELD_FLAX]linho[\LINK]. Eles fazem isso em edifícios como a [LINK=BUILDING_DOCK]doca[\LINK] ou uma de suas atualizações. As unidades mais eficazes para esta embarcação são os [LINK=UNIT_SAILCLOTH_MAKER]mestres fabricantes de velas[\LINK].</Portuguese>
 		<French>Les [COLOR_UNIT_TEXT]voiliers[COLOR_REVERT] produisent des [LINK=YIELD_SAILCLOTH]voiles[\LINK] à partir de [LINK=YIELD_HEMP]chanvre[\LINK] ou [LINK=YIELD_FLAX]chanvre[\LINK]. Ils travaillent dans les docks et les ports, dans des bâtiments comme la [LINK=BUILDING_DOCK]docks[\LINK] ou l'une de ses améliorations. Les colons les plus efficaces pour cet engin sont les [LINK=UNIT_SAILCLOTH_MAKER]maîtres cordeliers[\LINK].</French>
 		<German>[COLOR_UNIT_TEXT]Segelmacher[COLOR_REVERT] verarbeiten [LINK=YIELD_HEMP]Hanf[\LINK] oder [LINK=YIELD_FLAX]Flachs[\LINK] zu [LINK=YIELD_SAILCLOTH]Segeltuch[\LINK]. Die Herstellung findet meist in Gebäuden des [LINK=BUILDING_DOCK]Hafens[\LINK] statt und ist noch effektiver, wenn Sie dem Beruf einen [LINK=UNIT_SAILCLOTH_MAKER]Meister-Segelmacher[\LINK] zuweisen.</German>
 	</TEXT>
