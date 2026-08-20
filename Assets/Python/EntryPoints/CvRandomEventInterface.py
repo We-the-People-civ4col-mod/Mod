@@ -12397,17 +12397,15 @@ def CanDoEuropeTrade(argsList, iYieldID, iQuantity):
 		return False
 	return True
 
-def _appendTradeQuestStandings(szHelp, iYield, eLocation, eActivePlayer):
-	# Live race standings for first-to-ship-X quests. Sold totals for cargo exports;
-	# bought totals for trade/luxury goods imported from that market.
+def _getTradeQuestStandings(iYield, eLocation):
+	standings = []
 	if iYield < 0:
-		return szHelp
+		return standings
 
 	iTradeGoods = gc.getInfoTypeForString("YIELD_TRADE_GOODS")
 	iLuxuryGoods = gc.getInfoTypeForString("YIELD_LUXURY_GOODS")
 	bBuy = (iYield == iTradeGoods or iYield == iLuxuryGoods)
 
-	standings = []
 	for iPlayer in range(gc.getMAX_PLAYERS()):
 		loopPlayer = gc.getPlayer(iPlayer)
 		if loopPlayer is None or loopPlayer.isNone() or not loopPlayer.isAlive():
@@ -12425,10 +12423,16 @@ def _appendTradeQuestStandings(szHelp, iYield, eLocation, eActivePlayer):
 			iAmount = loopPlayer.getYieldSoldTotal(eLocation, iYield)
 		standings.append((iAmount, iPlayer, loopPlayer))
 
+	standings.sort(key=lambda item: (-item[0], item[1]))
+	return standings
+
+def _appendTradeQuestStandings(szHelp, iYield, eLocation, eActivePlayer):
+	# Live race standings for first-to-ship-X quests. Sold totals for cargo exports;
+	# bought totals for trade/luxury goods imported from that market.
+	standings = _getTradeQuestStandings(iYield, eLocation)
 	if len(standings) == 0:
 		return szHelp
 
-	standings.sort(key=lambda item: (-item[0], item[1]))
 	iLeadAmount = standings[0][0]
 
 	szHelp += localText.getText("TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_HEADER", ())
@@ -12444,6 +12448,193 @@ def _appendTradeQuestStandings(szHelp, iYield, eLocation, eActivePlayer):
 		else:
 			szHelp += localText.getText("TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_LINE", (loopPlayer.getCivilizationShortDescription(0), iAmount))
 	return szHelp
+
+def _getTradeQuestLeader(iYield, eLocation):
+	standings = _getTradeQuestStandings(iYield, eLocation)
+	if len(standings) == 0:
+		return -1, 0, None
+	iAmount, iPlayer, loopPlayer = standings[0]
+	if iAmount <= 0:
+		return -1, 0, None
+	return iPlayer, iAmount, loopPlayer
+
+TRADE_QUEST_LEADER_PREFIX = "[[TQLEAD:"
+TRADE_QUEST_LEADER_SUFFIX = "]]"
+_TRADE_QUEST_START_CACHE = None
+
+def _getTradeQuestStartInfos():
+	global _TRADE_QUEST_START_CACHE
+	if _TRADE_QUEST_START_CACHE is not None:
+		return _TRADE_QUEST_START_CACHE
+
+	cache = []
+	for iEvent in range(gc.getNumEventInfos()):
+		event = gc.getEventInfo(iEvent)
+		if event is None:
+			continue
+		if not event.isQuest():
+			continue
+		szType = event.getType()
+		if szType is None:
+			continue
+		if szType.find("_TRADE_QUEST_") == -1:
+			continue
+		if len(szType) < 6 or szType[-6:] != "_START":
+			continue
+
+		if szType.find("EVENT_EUROPE_TRADE_QUEST_") == 0:
+			eLocation = TradeLocationTypes.TRADE_LOCATION_EUROPE
+			szLocationKey = "TXT_KEY_EVENT_TRADE_QUEST_LOCATION_EUROPE"
+		elif szType.find("EVENT_AFRICA_TRADE_QUEST_") == 0:
+			eLocation = TradeLocationTypes.TRADE_LOCATION_AFRICA
+			szLocationKey = "TXT_KEY_EVENT_TRADE_QUEST_LOCATION_AFRICA"
+		elif szType.find("EVENT_PORTROYAL_TRADE_QUEST_") == 0:
+			eLocation = TradeLocationTypes.TRADE_LOCATION_PORT_ROYAL
+			szLocationKey = "TXT_KEY_EVENT_TRADE_QUEST_LOCATION_PORT_ROYAL"
+		else:
+			continue
+
+		iYield = event.getGenericParameter(2)
+		if iYield < 0:
+			continue
+		cache.append((iEvent, szType, eLocation, iYield, szLocationKey))
+
+	_TRADE_QUEST_START_CACHE = cache
+	return cache
+
+def _readTradeQuestLeaderStore(player):
+	leaders = {}
+	szData = player.getScriptData()
+	if szData is None:
+		return leaders
+	iStart = szData.find(TRADE_QUEST_LEADER_PREFIX)
+	if iStart == -1:
+		return leaders
+	iStart = iStart + len(TRADE_QUEST_LEADER_PREFIX)
+	iEnd = szData.find(TRADE_QUEST_LEADER_SUFFIX, iStart)
+	if iEnd == -1:
+		return leaders
+	szBody = szData[iStart:iEnd]
+	if szBody == "":
+		return leaders
+	aParts = szBody.split(";")
+	for szPart in aParts:
+		iEq = szPart.find("=")
+		if iEq < 1:
+			continue
+		szKey = szPart[:iEq]
+		try:
+			leaders[szKey] = int(szPart[iEq + 1:])
+		except:
+			continue
+	return leaders
+
+def _writeTradeQuestLeaderStore(player, leaders):
+	aParts = []
+	for szKey in leaders.keys():
+		aParts.append("%s=%d" % (szKey, leaders[szKey]))
+	szNew = TRADE_QUEST_LEADER_PREFIX + ";".join(aParts) + TRADE_QUEST_LEADER_SUFFIX
+
+	szData = player.getScriptData()
+	if szData is None:
+		szData = ""
+	iStart = szData.find(TRADE_QUEST_LEADER_PREFIX)
+	if iStart == -1:
+		player.setScriptData(szData + szNew)
+		return
+	iEnd = szData.find(TRADE_QUEST_LEADER_SUFFIX, iStart)
+	if iEnd == -1:
+		player.setScriptData(szData + szNew)
+		return
+	iEnd = iEnd + len(TRADE_QUEST_LEADER_SUFFIX)
+	player.setScriptData(szData[:iStart] + szNew + szData[iEnd:])
+
+def checkTradeQuestLeadershipChanges(iPlayer):
+	# Event-log ping when someone takes the lead on a first-to-ship quest the human already has.
+	player = gc.getPlayer(iPlayer)
+	if player is None or player.isNone():
+		return
+	if not player.isHuman():
+		return
+	if not player.isAlive():
+		return
+	if not player.isPlayable():
+		return
+	if player.isNative() or player.isEurope():
+		return
+
+	leaders = _readTradeQuestLeaderStore(player)
+	bDirty = False
+	aActive = {}
+
+	for iEvent, szType, eLocation, iYield, szLocationKey in _getTradeQuestStartInfos():
+		kData = player.getEventOccured(iEvent)
+		if kData is None:
+			continue
+		aActive[szType] = 1
+
+		iLeader, iAmount, leaderPlayer = _getTradeQuestLeader(iYield, eLocation)
+
+		if not leaders.has_key(szType):
+			leaders[szType] = iLeader
+			bDirty = True
+			continue
+
+		iPrevious = leaders[szType]
+		if iPrevious == iLeader:
+			continue
+
+		leaders[szType] = iLeader
+		bDirty = True
+
+		if iLeader < 0 or leaderPlayer is None:
+			continue
+
+		szLocation = localText.getText(szLocationKey, ())
+		iYieldChar = gc.getYieldInfo(iYield).getChar()
+		szButton = gc.getYieldInfo(iYield).getButton()
+
+		if iLeader == iPlayer:
+			szText = localText.getText(
+				"TXT_KEY_EVENT_TRADE_QUEST_LEADER_YOU",
+				(iYieldChar, szLocation, iAmount)
+			)
+			iColor = gc.getInfoTypeForString("COLOR_GREEN")
+		else:
+			szText = localText.getText(
+				"TXT_KEY_EVENT_TRADE_QUEST_LEADER_OTHER",
+				(iYieldChar, szLocation, leaderPlayer.getCivilizationShortDescription(0), iAmount)
+			)
+			if iPrevious == iPlayer:
+				iColor = gc.getInfoTypeForString("COLOR_RED")
+			else:
+				iColor = gc.getInfoTypeForString("COLOR_YELLOW")
+
+		CyInterface().addMessage(
+			iPlayer,
+			True,
+			gc.getEVENT_MESSAGE_TIME(),
+			szText,
+			"",
+			InterfaceMessageTypes.MESSAGE_TYPE_INFO,
+			szButton,
+			iColor,
+			-1,
+			-1,
+			True,
+			True
+		)
+
+	aToDelete = []
+	for szKey in leaders.keys():
+		if not aActive.has_key(szKey):
+			aToDelete.append(szKey)
+	for szKey in aToDelete:
+		del leaders[szKey]
+		bDirty = True
+
+	if bDirty:
+		_writeTradeQuestLeaderStore(player, leaders)
 
 # This is the Function for the Event Target Yield and Target Amount
 # This Function is only used for the "Quest Start"
