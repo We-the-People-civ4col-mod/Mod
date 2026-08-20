@@ -303,13 +303,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_ROUTE_TO_COUNTRY_ROAD</Tag>
 		<English>Route to (country road)</English>
-		<Portuguese>Rota para (estrada secundária)</Portuguese>
+		<Portuguese>Rota para (estrada de terra)</Portuguese>
 		<German>Straße nach-Modus (Landstraße)</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_ROUTE_TO_COUNTRY_ROAD_HELP</Tag>
 		<English>This order causes the pioneer to build a country road to the location selected. The pioneer will follow the shortest path to the location. The pioneer wakes when it has completed the assignment.</English>
-		<Portuguese>Esta ordem faz com que o pioneiro construa uma estrada secundária até o local selecionado. O pioneiro seguirá o caminho mais curto até o local. O pioneiro acorda quando conclui a tarefa.</Portuguese>
+		<Portuguese>Esta ordem faz com que o pioneiro construa uma estrada de terra até o local selecionado. O pioneiro seguirá o caminho mais curto até o local. O pioneiro acorda quando conclui a tarefa.</Portuguese>
 		<German>Durch diesen Befehl wird der Pionier eine Landstraße zum angegebenen Ziel bauen. Er wird dabei den kürzesten Pfad nehmen. Wenn der Befehl ausgeführt ist wird er sich für neue Befehle melden.</German>
 	</TEXT>
 	<TEXT>

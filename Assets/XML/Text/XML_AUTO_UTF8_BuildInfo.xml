@@ -237,7 +237,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_COUNTRY_ROAD</Tag>
 		<English>Build a country road</English>
-		<Portuguese>Construa uma estrada secundária</Portuguese>
+		<Portuguese>Construa uma estrada de terra</Portuguese>
 		<French>Construire une route de gravier</French>
 		<German>Landstraße bauen</German>
 		<Russian>Построить [COLOR_HIGHLIGHT_TEXT]гравийную дорогу[COLOR_REVERT]</Russian>
@@ -287,7 +287,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_PLASTERED_ROAD</Tag>
 		<English>Build paved country roads</English>
-		<Portuguese>Construir estradas rurais pavimentadas</Portuguese>
+		<Portuguese>Construir estradas de terra pavimentadas</Portuguese>
 		<French>Construire une route pavée</French>
 		<German>gepflasterte Landstraße bauen</German>
 		<Russian>Построить [COLOR_HIGHLIGHT_TEXT]вымощенную камнем дорогу[COLOR_REVERT]</Russian>
