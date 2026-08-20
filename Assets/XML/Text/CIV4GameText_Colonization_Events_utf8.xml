@@ -2889,7 +2889,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_KINGFURIOUS</Tag>
 		<English>By solemn decree of His Royal Majesty's Privy Council, your treasonous and egregious perfidy has gone on long enough! As partial recompense for your countless misdeeds, a heavy fine must be paid at once into the royal coffers, or royal agents will be authorized to sack [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] and confiscate your undeserved wealth!</English>
-		<Portuguese>Por decreto solene do Conselho Privado de Sua Majestade Real, sua traiçoeira e flagrante perfídia já dura tempo suficiente! Como recompensa parcial por seus incontáveis ​​delitos, uma multa pesada deve ser paga imediatamente aos cofres reais, ou os agentes reais serão autorizados a saquear [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] e confiscar sua riqueza imerecida!</Portuguese>
+		<Portuguese>Por decreto solene do Conselho Privado de Sua Majestade Real, sua traiçoeira e flagrante perfídia já dura tempo suficiente! Como recompensa parcial por seus incontáveis delitos, uma multa pesada deve ser paga imediatamente aos cofres reais, ou os agentes reais serão autorizados a saquear [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] e confiscar sua riqueza imerecida!</Portuguese>
 		<French>Par décret solennel du Conseil privé du Roi, votre perfide  traîtrise éhontée n'a que trop longtemps ! En compensation de vos innombrables méfaits, le Roi vient d'autoriser la mise à sac de la colonie suivante: [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] pour y saisir votre insolente richesse ... à moins bien sûr que vous ne dédommagiez la Couronne comme il se doit.</French>
 		<German>Durch unumstösslichen Beschluss Seiner Majestät wird Euer verräterisches Handeln bestraft. Als teilweise Wiedergutmachung Eurer vielen Vergehen werdet Ihr sofort eine Strafe zahlen oder königliche Abgesandte werden dazu autorisiert, im Umland von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] alles zu konfiszieren, was rechtmässig Seiner Majestät gehört!</German>
 		<Russian>По указу Тайного Совета Его Королевского Величества ваше изменническое поведение и вопиющее вероломство продолжаются достаточно долго! В качестве частичного возмещения за ваши бесчисленные проступки, крупный штраф должен быть немедленно уплачен в королевскую казну, иначе королевские агенты получат право разграбить [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] и конфисковать ваше незаслуженное богатство!</Russian>
@@ -2921,7 +2921,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PIRATEATTACK2</Tag>
 		<English>The infamous pirate Roc Brasiliano has sent an emissary demanding a fortune in gold and silver. Otherwise he threatens to send our vulnerable merchantmen to Davy Jones' locker. How shall we respond, Milord?</English>
-		<Portuguese>O infame pirata Roc Brasiliano enviou um emissário exigindo uma fortuna em ouro e prata. Caso contrário, ele ameaça enviar nossos navios mercantes vulneráveis ​​para o armário de Davy Jones. Como devemos responder, Milorde?</Portuguese>
+		<Portuguese>O infame pirata Roc Brasiliano enviou um emissário exigindo uma fortuna em ouro e prata. Caso contrário, ele ameaça enviar nossos navios mercantes vulneráveis para o armário de Davy Jones. Como devemos responder, Milorde?</Portuguese>
 		<French>L'infâme chef pirate Roc Brasiliano a envoyé un émissaire pour nous demander une fortune princière en or et en argent, nous menaçant d'envoyer notre vulnérable flotte marchande par le fond. Comment devons nous répondre, Milord ?</French>
 		<German>Der berüchtigte Piratenführer Roc Brasiliano sendet uns einen Abgesandten, der eine königliche Summe Gold und Silber fordert. Andernfalls droht er damit, unsere verletzlichen Handelsschiffe auf den Grund von Davy Jones Reich zu schicken. Wie wollen wir reagieren, Milord?</German>
 		<Russian>Печально известный пират Рок Бразилиано прислал эмиссара, требуя целое состояние в золоте и серебре. В противном случае он угрожает отправить наших морских торговцев в шкафчик Дэви Джонса. Что нам ему ответить, милорд?</Russian>
@@ -4861,7 +4861,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_JUNGLE_FIRE_1</Tag>
 		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a couple of pranksters told the village idiot that a werewolf in the nearby forest was hunting him personally. The idiot of course set the forest on fire to incinerate the beast. There's an east wind fanning the flames, sending a wall of fire across the land, turning countless acres to sooty ash.</English>
-		<Portuguese>Em [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] alguns brincalhões disseram ao idiota da aldeia que um lobisomem na floresta próxima o estava caçando pessoalmente. O idiota, claro, colocou fogo na floresta para incinerar a fera. Há um vento leste que atiça as chamas, criando uma parede de fogo por toda a terra, transformando incontáveis ​​hectares em cinzas fuliginosas.</Portuguese>
+		<Portuguese>Em [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] alguns brincalhões disseram ao idiota da aldeia que um lobisomem na floresta próxima o estava caçando pessoalmente. O idiota, claro, colocou fogo na floresta para incinerar a fera. Há um vento leste que atiça as chamas, criando uma parede de fogo por toda a terra, transformando incontáveis hectares em cinzas fuliginosas.</Portuguese>
 		<French>Dans [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], quelques jeunes gens pleins d'entrain ont persuadé le fou du village qu'un loup-garou rôde dans la forêt voisine, avec l'intention de le tuer personnellement. Alors, le mufle effrayé a allumé un feu dans la forêt pour brûler la bête. Le vent d'est a attisé les flammes, et un rouleau de feu traverse le pays. La chaleur de la mort menace de transformer de nombreux hectares en cendres fuligineuses.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben ein paar übermütige Burschen dem Dorfnarren eingeredet, durch den nahen Forst streife ein Werwolf, der es auf ihn höchstpersönlich abgesehen habe. Daraufhin hat der verängstigte Tölpel im Wald ein Feuer gelegt, um die Bestie zu verbrennen. Der Ostwind hat die Flammen entfacht, und eine Feuerwalze rast durch das Land. Die Todeshitze droht viele Hektar in rußige Asche zu verwandeln.</German>
 		<Italian>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], alcuni ragazzi di grande spirito hanno convinto lo scemo del villaggio che un lupo mannaro si aggira nella foresta vicina, intenzionato a colpirlo personalmente. Allora l'idiota spaventato appiccò un fuoco nella foresta per bruciare la bestia. Il vento dell'est ha alimentato le fiamme, e un rullo infuocato sta correndo attraverso la terra. Il calore della morte minaccia di trasformare molti acri in cenere fuligginosa.</Italian>
@@ -6678,7 +6678,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_DESERT</Tag>
 		<English>Milord, our expedition has ventured deep into the barren wastes. The scorching sun, endless dunes, and lack of water are taking a heavy toll on the men. The expedition is making slow progress and the animals need to rest.</English>
-		<Portuguese>Milorde, nossa expedição se aventurou profundamente nas terras áridas. O sol escaldante, as dunas intermináveis ​​e a falta de água estão afetando fortemente os homens. A expedição avança lentamente e os animais precisam descansar.</Portuguese>
+		<Portuguese>Milorde, nossa expedição se aventurou profundamente nas terras áridas. O sol escaldante, as dunas intermináveis e a falta de água estão afetando fortemente os homens. A expedição avança lentamente e os animais precisam descansar.</Portuguese>
 		<German>Milord, unsere Expedition ist tief in die kargen Ödlande vorgedrungen. Die sengende Sonne, endlose Dünen und [COLOR_HIGHLIGHT_TEXT]Wassermangel [COLOR_REVERT]fordern ihren Tribut von den Männern und die Tiere müssen geschont werden.</German>
 		<Russian>Милорд, наша экспедиция углубилась в бесплодные пустоши. Палящее солнце, бескрайние дюны и нехватка воды сильно истощают силы. Нам нужно поберечь животных и сбавить темп.</Russian>
 	</TEXT>
@@ -6699,7 +6699,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_DESERT_RESULT</Tag>
 		<English>The unforgiving desert weakens %s1. The men suffer %d2%% damage and are delayed for %d3 turns.</English>
-		<Portuguese>O deserto implacável enfraquece %s1. Os homens sofrem %d2%% de dano e são atrasados ​​por %d3 turnos.</Portuguese>
+		<Portuguese>O deserto implacável enfraquece %s1. Os homens sofrem %d2%% de dano e são atrasados por %d3 turnos.</Portuguese>
 		<German>Die erbarmungslose Wüste schwächt %s1. Die Männer erleiden %d2%% Schaden und werden für %d3 Runden aufgehalten.</German>
 		<Russian>Юнит %s1 истощён пустыней. Он теряет %d2%% здоровья и будет обездвижен на %d3 хода.</Russian>
 	</TEXT>
