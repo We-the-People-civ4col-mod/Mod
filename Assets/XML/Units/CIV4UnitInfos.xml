@@ -78512,12 +78512,7 @@
 			<iWorkRateModifier>0</iWorkRateModifier>
 			<iMissionaryRateModifier>0</iMissionaryRateModifier>
 			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LAKE</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
+			<TerrainImpassables/>
 			<FeatureImpassables>
 				<FeatureImpassable>
 					<FeatureType>FEATURE_STONE_REEF</FeatureType>
