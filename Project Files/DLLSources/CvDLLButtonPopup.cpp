@@ -480,10 +480,6 @@ void CvDLLButtonPopup::OnEscape(CvPopup& popup, CvPopupInfo &info)
 	case BUTTONPOPUP_FREE_COLONY:
 	case BUTTONPOPUP_PROMOTE:
 	case BUTTONPOPUP_SELECT_YIELD_AMOUNT:
-		if ((PlayerActionTypes)info.getData3() == PLAYER_ACTION_SET_DIPLO_YIELD_AMOUNT)
-		{
-			break;
-		}
 	case BUTTONPOPUP_DETAILS:
 	case BUTTONPOPUP_ADMIN_PASSWORD:
 	case BUTTONPOPUP_ADMIN:
@@ -1351,17 +1347,6 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 
 	case BUTTONPOPUP_SELECT_YIELD_AMOUNT:
 		{
-			if ((PlayerActionTypes)info.getData3() == PLAYER_ACTION_SET_DIPLO_YIELD_AMOUNT)
-			{
-				const PlayerTypes eFromPlayer = (PlayerTypes)info.getFlags();
-				if (eFromPlayer != NO_PLAYER)
-				{
-					gDLL->sendPlayerAction(GC.getGameINLINE().getActivePlayer(), PLAYER_ACTION_SET_DIPLO_YIELD_AMOUNT, info.getData1(), pPopupReturn->getCurrentSpinBoxValue(0), eFromPlayer);
-				}
-				gDLL->updateDiplomacyAttitude(true);
-				break;
-			}
-
 			CvUnit* pUnit = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getUnit(info.getData2());
 			if (pUnit != NULL)
 			{
@@ -3715,37 +3700,22 @@ bool CvDLLButtonPopup::launchSelectYieldAmountPopup(CvPopup* pPopup, CvPopupInfo
 		return false;
 	}
 
-	int iMaxAmount = 0;
-	if ((PlayerActionTypes)info.getData3() == PLAYER_ACTION_SET_DIPLO_YIELD_AMOUNT)
+	//R&R, vetiarvind, bug fix for shift-key trading in africa and PR - start
+	UnitTravelStates uts = pUnit->getUnitTravelState();
+	// WTP, ray, refixing SHIFT-KEY
+	// if (uts != UNIT_TRAVEL_STATE_IN_EUROPE && uts != UNIT_TRAVEL_STATE_IN_AFRICA && uts != UNIT_TRAVEL_STATE_FROM_PORT_ROYAL)
+	if (uts != UNIT_TRAVEL_STATE_IN_EUROPE && uts != UNIT_TRAVEL_STATE_IN_AFRICA && uts != UNIT_TRAVEL_STATE_IN_PORT_ROYAL)
+	//if (pUnit->getUnitTravelState() != UNIT_TRAVEL_STATE_IN_EUROPE)
+	//R&R, vetiarvind, bug fix for shift-key trading in africa and PR - end
 	{
-		const PlayerTypes eFromPlayer = (PlayerTypes)info.getFlags();
-		if (eFromPlayer == NO_PLAYER)
+		FAssert(pUnit->getUnitTravelState() == NO_UNIT_TRAVEL_STATE);
+		if (!pUnit->canDoCommand((CommandTypes) info.getData3(), info.getData1(), -1))
 		{
 			return false;
 		}
-
-		iMaxAmount = GET_PLAYER(eFromPlayer).getTradeYieldAmount(eYield, pUnit);
-	}
-	else
-	{
-		//R&R, vetiarvind, bug fix for shift-key trading in africa and PR - start
-		UnitTravelStates uts = pUnit->getUnitTravelState();
-		// WTP, ray, refixing SHIFT-KEY
-		// if (uts != UNIT_TRAVEL_STATE_IN_EUROPE && uts != UNIT_TRAVEL_STATE_IN_AFRICA && uts != UNIT_TRAVEL_STATE_FROM_PORT_ROYAL)
-		if (uts != UNIT_TRAVEL_STATE_IN_EUROPE && uts != UNIT_TRAVEL_STATE_IN_AFRICA && uts != UNIT_TRAVEL_STATE_IN_PORT_ROYAL)
-		//if (pUnit->getUnitTravelState() != UNIT_TRAVEL_STATE_IN_EUROPE)
-		//R&R, vetiarvind, bug fix for shift-key trading in africa and PR - end
-		{
-			FAssert(pUnit->getUnitTravelState() == NO_UNIT_TRAVEL_STATE);
-			if (!pUnit->canDoCommand((CommandTypes) info.getData3(), info.getData1(), -1))
-			{
-				return false;
-			}
-		}
-
-		iMaxAmount = info.getOption1() ? pUnit->getMaxLoadYieldAmount(eYield) : pUnit->getYieldStored();
 	}
 
+	int iMaxAmount = info.getOption1() ? pUnit->getMaxLoadYieldAmount(eYield) : pUnit->getYieldStored();
 	if (iMaxAmount <= 0)
 	{
 		return false;

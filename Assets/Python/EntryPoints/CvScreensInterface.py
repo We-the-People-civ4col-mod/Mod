@@ -279,9 +279,6 @@ worldBuilderScreen = CvWorldBuilderScreen.CvWorldBuilderScreen()
 def getWorldBuilderScreen():
 	return worldBuilderScreen
 
-def showDiploYieldAmount(argsList):
-	CvEventInterface.beginEvent(CvUtil.EventDiploYieldAmount, argsList)
-
 def showWorldBuilderScreen():
 	worldBuilderScreen.interfaceScreen()
 
