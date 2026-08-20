@@ -3913,7 +3913,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_TOBACCONIST</Tag>
 		<English>Master Tobacconist:Master Tobacconists</English>
-		<Portuguese>Mestre Tabacaria:Mestre Tabacaria</Portuguese>
+		<Portuguese>Mestre Tabaqueiro:Mestres Tabaqueiros</Portuguese>
 		<French>
 			<Text>Maître cigarier:Maîtres cigariers</Text>
 			<Gender>Male</Gender>
@@ -4306,7 +4306,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WHALE_OIL</Tag>
 		<English>Train Oil</English>
-		<Portuguese>Óleo de trem</Portuguese>
+		<Portuguese>Óleo de baleia</Portuguese>
 		<French>
 			<Text>Huile de baleine</Text>
 			<Gender>Male</Gender>
@@ -4337,7 +4337,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Fogão a óleo Master Train:Fogões a óleo Master Train</Text>
+			<Text>Mestre refinador de óleo de baleia:Mestres refinadores de óleo de baleia</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>

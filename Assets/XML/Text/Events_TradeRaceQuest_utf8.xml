@@ -1862,35 +1862,35 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WHALE_OIL_START</Tag>
 		<English>The race is on to be the market leader for [COLOR_FONT_GOLD]train oil[COLOR_REVERT].</English>
-		<Portuguese>A corrida para ser líder de mercado em [COLOR_FONT_GOLD]óleo para trens[COLOR_REVERT] começou.</Portuguese>
+		<Portuguese>A corrida para ser líder de mercado em [COLOR_FONT_GOLD]óleo de baleia[COLOR_REVERT] começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Tran[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]ворвани[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WHALE_OIL_START</Tag>
 		<English>Nights are brighter for His Majesty and His subjects in Europe thanks to [COLOR_FONT_GOLD]train oil[COLOR_REVERT] from the colonies. His Majesty thus orders you to become the market leader in train oil.</English>
-		<Portuguese>As noites são mais claras para Sua Majestade e Seus súditos na Europa graças ao [COLOR_FONT_GOLD]óleo de trem[COLOR_REVERT] das colônias. Sua Majestade ordena que você se torne o líder de mercado em óleo para trens.</Portuguese>
+		<Portuguese>As noites são mais claras para Sua Majestade e Seus súditos na Europa graças ao [COLOR_FONT_GOLD]óleo de baleia[COLOR_REVERT] das colônias. Sua Majestade ordena que você se torne o líder de mercado em óleo de baleia.</Portuguese>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Tran[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальной [COLOR_FONT_GOLD]ворвани[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_WHALE_OIL_FAILED</Tag>
 		<English>Milord, another colonial nation now dominates the European market for [COLOR_FONT_GOLD]train oil[COLOR_REVERT].</English>
-		<Portuguese>Milorde, outra nação colonial domina agora o mercado europeu de [COLOR_FONT_GOLD]petróleo ferroviário[COLOR_REVERT].</Portuguese>
+		<Portuguese>Milorde, outra nação colonial domina agora o mercado europeu de [COLOR_FONT_GOLD]óleo de baleia[COLOR_REVERT].</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Tran[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке [COLOR_FONT_GOLD]ворвани[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WHALE_OIL_DONE</Tag>
 		<English>Milord, we now have the biggest share in the trade with [COLOR_FONT_GOLD]train oil[COLOR_REVERT].</English>
-		<Portuguese>Milorde, agora temos a maior participação no comércio com [COLOR_FONT_GOLD]óleo de trem[COLOR_REVERT].</Portuguese>
+		<Portuguese>Milorde, agora temos a maior participação no comércio com [COLOR_FONT_GOLD]óleo de baleia[COLOR_REVERT].</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Tran[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]ворвани[COLOR_REVERT]!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WHALE_OIL_DONE</Tag>
 		<English>Milord, in accordance with His Majesty's command we now dominate the market in [COLOR_FONT_GOLD]train oil[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
-		<Portuguese>Milorde, de acordo com o comando de Sua Majestade, agora dominamos o mercado de [COLOR_FONT_GOLD]óleo para trens[COLOR_REVERT]. Sua Majestade está de bom humor e quer nos recompensar.</Portuguese>
+		<Portuguese>Milorde, de acordo com o comando de Sua Majestade, agora dominamos o mercado de [COLOR_FONT_GOLD]óleo de baleia[COLOR_REVERT]. Sua Majestade está de bom humor e quer nos recompensar.</Portuguese>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Tran[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]ворвани[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
 	</TEXT>

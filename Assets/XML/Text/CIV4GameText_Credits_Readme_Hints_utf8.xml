@@ -1132,7 +1132,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_38</Tag>
 		<English>If you try to build a colony too close to a Native settlement, the local chief may require you to purchase the land you are claiming. You can refuse to pay, of course, but this will certainly worsen relations between you and the Natives already established there.</English>
-		<Portuguese>Se você tentar construir uma colônia muito perto de uma colônia nativa, o chefe local poderá exigir que você compre a terra que está reivindicando. Você pode se recusar a pagar, é claro, mas isso certamente piorará as relações entre você e os nativos já estabelecidos ali.</Portuguese>
+		<Portuguese>Se você tentar construir uma colônia muito perto de uma aldeia nativa, o chefe local poderá exigir que você compre a terra que está reivindicando. Você pode se recusar a pagar, é claro, mas isso certamente piorará as relações entre você e os nativos já estabelecidos ali.</Portuguese>
 		<French>Si vous tentez de fonder une ville trop près d'une colonie indigène, il se peut que le chef local vous demande d'acheter les terres que vous tentez de récupérer. Vous pouvez refuser de payer, bien entendu, mais cela entachera vos relations avec les indigènes concernés.</French>
 		<German>Wenn Sie versuchen, eine Kolonie zu nahe an einer Ureinwohner-Siedlung zu errichten, bietet Ihnen der einheimische Häuptling vielleicht das Land, das Sie beanspruchen, zum Kauf an. Wenn Sie sich weigern zu zahlen, so hat das eindeutig negative Auswirkungen auf Ihre Beziehung zu den Ureinwohnern.</German>
 		<Italian>Se provi a costruire una colonia troppo vicino a un insediamento di nativi, il capo potrebbe chiederti di acquistare la terra che rivendichi. Puoi naturalmente rifiutarti di pagare, ma ciò peggiorerà le relazioni con i nativi.</Italian>
@@ -1240,7 +1240,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_48</Tag>
 		<English>You cannot build a settlement directly next to another European settlement. You can, however, build directly next to a Native settlement. You will have to pay for any of their land you claim, or risk incurring their wrath.</English>
-		<Portuguese>Não se pode construir uma colônia directamente ao lado de outra colônia europeu. Você pode, no entanto, construir diretamente próximo a uma colônia nativa. Você terá que pagar por qualquer uma das terras que reivindicar ou correrá o risco de incorrer na ira deles.</Portuguese>
+		<Portuguese>Não se pode construir uma colônia directamente ao lado de outra colônia europeu. Você pode, no entanto, construir diretamente próximo a uma aldeia nativa. Você terá que pagar por qualquer uma das terras que reivindicar ou correrá o risco de incorrer na ira deles.</Portuguese>
 		<French>Il est impossible d'accoler une nouvelle colonie à une autre colonie européenne. Vous pouvez, en revanche, l'accoler à une colonie indigène. Vous devrez alors leur acheter toute case de terre que vous désirez saisir, ou risquer de subir leur courroux.</French>
 		<German>Sie können nicht direkt neben einer anderen europäischen Siedlung eine Siedlung errichten. Direkt neben einer Ureinwohner-Siedlung ist dies zwar möglich, Sie müssen jedoch entweder für das Land, das Sie beanspruchen, bezahlen oder das Risiko eingehen, sich den Zorn der Ureinwohner zuzuziehen.</German>
 		<Italian>Non puoi costruire un insediamento adiacente a un altro insediamento europeo. Però puoi costruirlo direttamente adiacente a un insediamento nativo. Dovrai pagare per la terra che occupi, oppure rischiare di scatenare le loro ire.</Italian>

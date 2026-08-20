@@ -742,7 +742,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_WHALE_OIL</Tag>
 		<English>Deemphasize Train Oil</English>
-		<Portuguese>Diminuir a ênfase no óleo de trem</Portuguese>
+		<Portuguese>Diminuir a ênfase no óleo de baleia</Portuguese>
 		<French>Minimiser l'Huile de baleine</French>
 		<German>Schwerpunkt Tran aufheben</German>
 		<Italian>De-accentuare olio di balena</Italian>
@@ -931,7 +931,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_WHALE_OIL</Tag>
 		<English>Emphasize Train Oil</English>
-		<Portuguese>Enfatize o óleo de trem</Portuguese>
+		<Portuguese>Enfatize o óleo de baleia</Portuguese>
 		<French>Privilégier l'Huile de baleine</French>
 		<German>Schwerpunkt Tran</German>
 		<Italian>Accentuare olio di balena</Italian>

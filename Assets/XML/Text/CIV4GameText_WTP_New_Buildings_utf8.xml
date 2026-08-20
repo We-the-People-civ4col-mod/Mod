@@ -451,7 +451,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP_PEDIA</Tag>
 		<English>As the oil pressers refine their trade the quality of the oil attracts new customers. Oil traders can now separate their pressings into varying grades to be sold at different prices. As customers discuss which is better for different situations, sales increase.</English>
-		<Portuguese>À medida que os prensadores de óleo refinam o seu comércio, a qualidade do óleo atrai novos clientes. Os comerciantes de petróleo podem agora separar as suas prensas em diferentes qualidades para serem vendidas a preços diferentes. À medida que os clientes discutem o que é melhor para diferentes situações, as vendas aumentam.</Portuguese>
+		<Portuguese>À medida que os prensadores de óleo refinam o seu comércio, a qualidade do óleo atrai novos clientes. Os comerciantes de óleo podem agora separar as suas prensas em diferentes qualidades para serem vendidas a preços diferentes. À medida que os clientes discutem o que é melhor para diferentes situações, as vendas aumentam.</Portuguese>
 		<German>In dem Maße, wie die Ölpresser ihr Handwerk verfeinern, zieht die Qualität des Öls neue Kunden an.[NEWLINE]Ölpresser können nun ihre Presslinge in verschiedene Qualitäten unterteilen, die zu unterschiedlichen Preisen verkauft werden. Wenn die Kunden darüber diskutieren, welche Qualität für die verschiedenen Situationen besser ist, steigt der Umsatz.</German>
 		<Hungarian>Ahogy az olajpréselők tökéletesítik mesterségüket, az olaj minősége új vásárlókat vonz. Az olajkészítők most már különböző minőségi osztályokba sorolhatják a préselt olajokat, hogy azokat különböző áron értékesítsék. Ahogy a vásárlók megvitatják, melyik olaj a legjobb a különböző helyzetekben, az eladások növekednek.</Hungarian>
 	</TEXT>
@@ -914,7 +914,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_FACTORY</Tag>
 		<English>Powder Magazine</English>
-		<Portuguese>Revista Pó</Portuguese>
+		<Portuguese>Paiol de pólvora</Portuguese>
 		<French>Usine poudrière</French>
 		<German>
 			<Text>Pulverfabrik</Text>
@@ -951,7 +951,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY</Tag>
 		<English>Powder Magazine</English>
-		<Portuguese>Revista Pó</Portuguese>
+		<Portuguese>Paiol de pólvora</Portuguese>
 		<French>Usine poudrière</French>
 		<German>
 			<Text>Pulverfabrik</Text>
@@ -1002,7 +1002,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]powder magazine[COLOR_REVERT] is the ultimate upgrade of the [LINK=BUILDING_FIREWORKERS_HOUSE]powder maker's house[\LINK] where charcoal is made from [LINK=YIELD_LUMBER]lumber[\LINK] by settlers with the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession, and then turned into [LINK=YIELD_BLACK_POWDER]gunpowder[\LINK] by other colonists with the [LINK=PROFESSION_FIREWORKER]gunpowder mixer[\LINK] profession. [LINK=UNIT_FIREWORKER]Master powder makers[\LINK] are particularly effective at this.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Gunpowder[COLOR_REVERT] is needed to train gunpowder units like [LINK=PROFESSION_LINE_INFANTRY]line infantry[\LINK] or units like the [LINK=PROFESSION_LIGHT_ARTILLERY]light artillery[\LINK] or a ship equipped with cannons, such as the [LINK=UNIT_SHIP_OF_THE_LINE]ship of the line[\LINK].</English>
-		<Portuguese>O [COLOR_HIGHLIGHT_TEXT]revista de pólvora[COLOR_REVERT] é a atualização definitiva da [LINK=BUILDING_FIREWORKERS_HOUSE]casa do fabricante de pólvora[\LINK] onde o carvão é feito de [LINK=YIELD_LUMBER]madeira[\LINK] por colonos com a profissão de [LINK=PROFESSION_CHARCOAL_BURNER]queimador de carvão[\LINK] e depois transformado em [LINK=YIELD_BLACK_POWDER]pólvora[\LINK] por outros colonos com o Profissão de [LINK=PROFESSION_FIREWORKER]misturador de pólvora[\LINK]. [LINK=UNIT_FIREWORKER]Mestres fabricantes de pólvora[\LINK] são particularmente eficazes nisso.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pólvora[COLOR_REVERT] é necessária para treinar unidades de pólvora como [LINK=PROFESSION_LINE_INFANTRY]infantaria de linha[\LINK] ou unidades como a [LINK=PROFESSION_LIGHT_ARTILLERY]artilharia leve[\LINK] ou um navio equipado com canhões, como o [LINK=UNIT_SHIP_OF_THE_LINE]navio de linha[\LINK].</Portuguese>
+		<Portuguese>O [COLOR_HIGHLIGHT_TEXT]paiol de pólvora[COLOR_REVERT] é a atualização definitiva da [LINK=BUILDING_FIREWORKERS_HOUSE]casa do fabricante de pólvora[\LINK] onde o carvão é feito de [LINK=YIELD_LUMBER]madeira[\LINK] por colonos com a profissão de [LINK=PROFESSION_CHARCOAL_BURNER]queimador de carvão[\LINK] e depois transformado em [LINK=YIELD_BLACK_POWDER]pólvora[\LINK] por outros colonos com o Profissão de [LINK=PROFESSION_FIREWORKER]misturador de pólvora[\LINK]. [LINK=UNIT_FIREWORKER]Mestres fabricantes de pólvora[\LINK] são particularmente eficazes nisso.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Pólvora[COLOR_REVERT] é necessária para treinar unidades de pólvora como [LINK=PROFESSION_LINE_INFANTRY]infantaria de linha[\LINK] ou unidades como a [LINK=PROFESSION_LIGHT_ARTILLERY]artilharia leve[\LINK] ou um navio equipado com canhões, como o [LINK=UNIT_SHIP_OF_THE_LINE]navio de linha[\LINK].</Portuguese>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Pulverfabrik[COLOR_REVERT] ist die höchste Ausbaustufe des [LINK=BUILDING_FIREWORKERS_HOUSE]Haus des Pulvermachers[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] aus [LINK=YIELD_LUMBER]Holz[\LINK] die [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] herstellt, und dann von einem [COLOR_UNIT_TEXT]Freien Kolonisten[COLOR_REVERT] mit dem Beruf [LINK=PROFESSION_FIREWORKER]Pulvermacher[\LINK] zu [LINK=YIELD_BLACK_POWDER]Schwarzpulver[\LINK] verarbeitet wird.[PARAGRAPH:1][LINK=UNIT_FIREWORKER]Meister Pulvermacher[\LINK] sind hierbei besonders effektiv.[NEWLINE][NEWLINE][COLOR_HIGHLIGHT_TEXT]Schwarzpulver[COLOR_REVERT] wird benötigt um Schießpulver-Einheiten wie [LINK=PROFESSION_LINE_INFANTRY]Linieninfanteristen[\LINK] auszubilden oder Einheiten wie die  [LINK=PROFESSION_LIGHT_ARTILLERY]leichte Artillerie[\LINK] oder ein mit Kanonen ausgerüstetes Schiff, wie das [LINK=UNIT_SHIP_OF_THE_LINE]Linienschiff[\LINK] zu bauen.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Puskapor Gyár[COLOR_REVERT] a [LINK=BUILDING_FIREWORKERS_HOUSE]Puskaporgyártó Műhely[\LINK] végső továbbfejlesztése, ahol először [LINK=YIELD_CHAR_COAL]faszén[\LINK] készül [LINK=YIELD_LUMBER]épületfából [\LINK] egy [LINK=PROFESSION_CHARCOAL_BURNER]szénégető[\LINK] szakmájú telepes által, majd [LINK=YIELD_BLACK_POWDER]puskaporrá[\LINK] alakítja át egy másik, [LINK=PROFESSION_FIREWORKER]puskaporkeverő[\LINK] szakmájú telepes. A [LINK=UNIT_FIREWORKER]Puskaporkeverő Mesterek[\LINK] különösen hatékonyak ebben.[NEWLINE][NEWLINE]A [COLOR_HIGHLIGHT_TEXT]Puskapor[COLOR_REVERT] az olyan egységek kiképzéséhez szükséges, mint a [LINK=PROFESSION_LINE_INFANTRY]gyalogság [\LINK] vagy a [LINK=PROFESSION_LIGHT_ARTILLERY]könnyű tüzérség[\LINK] illetve az ágyúkkal felszerelt hajók számára, mint a [LINK=UNIT_SHIP_OF_THE_LINE]sorhajó[\LINK].</Hungarian>
 	</TEXT>

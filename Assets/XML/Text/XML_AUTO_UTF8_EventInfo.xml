@@ -3339,7 +3339,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_DONE_4</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train successfully returns from the Native village far out in the wilderness.</English>
-		<Portuguese>O trem de carroções [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] retorna com sucesso da aldeia nativa, no deserto.</Portuguese>
+		<Portuguese>O carroça [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] retorna com sucesso da aldeia nativa, no deserto.</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug kehrt erfolgreich aus dem Indianer-Dorf in der Wildnis zurück!</German>
 		<Russian>Торговый обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] возвращается из индейской деревни после успешной торговли!</Russian>
 	</TEXT>

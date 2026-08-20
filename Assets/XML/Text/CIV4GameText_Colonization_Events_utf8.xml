@@ -49,7 +49,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_NATIVE_VILLAGES</Tag>
 		<English>[BOLD]Natives[\BOLD][NEWLINE][TAB]You can freely enter Native settlements. Native interaction is beneficial in many ways. When one of your units enters a Native village you can speak with the chief (and possibly receive a gift); live among the Natives to learn a specialty; trade goods (if your unit is a transport); build a trading post (if your unit is a trader) or establish a mission (if your unit is a missionary). You can also use combat units to attack and raze Native settlements.</English>
-		<Portuguese>[BOLD]Nativos[\BOLD][NEWLINE][TAB]Você pode entrar livremente em colônias nativos. A interação nativa é benéfica de várias maneiras. Quando uma de suas unidades entra em uma aldeia indígena você pode falar com o chefe (e possivelmente receber um presente); viver entre os nativos para aprender uma especialidade; comercializar mercadorias (se sua unidade for um transporte); construa um entreposto comercial (se sua unidade for um comerciante) ou estabeleça uma missão (se sua unidade for um missionário). Você também pode usar unidades de combate para atacar e arrasar colônias nativos.</Portuguese>
+		<Portuguese>[BOLD]Nativos[\BOLD][NEWLINE][TAB]Você pode entrar livremente em aldeias nativas. A interação nativa é benéfica de várias maneiras. Quando uma de suas unidades entra em uma aldeia indígena você pode falar com o chefe (e possivelmente receber um presente); viver entre os nativos para aprender uma especialidade; comercializar mercadorias (se sua unidade for um transporte); construa um entreposto comercial (se sua unidade for um comerciante) ou estabeleça uma missão (se sua unidade for um missionário). Você também pode usar unidades de combate para atacar e arrasar aldeias nativas.</Portuguese>
 		<French>[BOLD]Indigènes[\BOLD][NEWLINE][TAB]Interagir avec les indigènes peut offrir de nombreux avantages. Pour commencer, vous pouvez entrer librement dans leurs colonies. Lorsque l'une de vos unités s'y trouve, il vous est possible de parler à son chef et peut-être même de recevoir un présent. Il est également possible de vivre au sein de la colonie pour y apprendre une spécialité, d'y acheter ou vendre des marchandises aux autochtones, ou d'y établir une mission (si l'unité en question est un missionnaire). Il vous est également possible, grâce à vos unités de combat, de vous emparer des colonies indigènes.</French>
 		<German>[BOLD]Ureinwohner[\BOLD][NEWLINE][TAB]Interaktion mit den Ureinwohnern kann zahlreiche Vorteile bringen. Sie können Ureinwohner-Siedlungen uneingeschränkt betreten. Wenn sich eine Ihrer Einheiten in einer Ureinwohner-Siedlung befindet, können Sie mit dem Häuptling der Siedlung sprechen (und erhalten vielleicht ein Geschenk), bei den Ureinwohnern leben und eine Spezialfähigkeit erlernen, Handel mit den Ureinwohnern betreiben (wenn es sich um eine Transporteinheit handelt) oder eine Mission errichten (wenn die Einheit ein Missionar ist). Sie können Ureinwohner-Siedlungen mit Kampfeinheiten auch erobern.</German>
 		<Italian>[BOLD]Nativi[\BOLD][NEWLINE][TAB]L'interazione con i nativi può essere positiva in molti modi. Puoi entrare liberamente negli insediamenti dei nativi. Quando una delle tue unità è in un insediamento nativo puoi parlare col capo (e magari ricevere un regalo), vivere tra i nativi per imparare una specialità, vendere o acquistare beni (se è un'unità di trasporto) o fondare una missione (se l'unità è un missionario). Puoi anche conquistare gli insediamenti nativi con unità combattenti.</Italian>
@@ -1198,7 +1198,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_LANDTRANSPORT_ATTACK</Tag>
 		<English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train was attacked by hostile Native warriors. Can the settlers defend it?</English>
-		<Portuguese>Um boato está se espalhando: um vagão de trem [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] foi atacado por guerreiros nativos hostis. Os colonos podem defendê-lo?</Portuguese>
+		<Portuguese>Um boato está se espalhando: um carroça [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] foi atacado por guerreiros nativos hostis. Os colonos podem defendê-lo?</Portuguese>
 		<French>Une rumeur se répand : un chariot [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] s'est fait attquer par un guerrier indigène hostile. Les colons pourront-ils le défendre ? </French>
 		<German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Wagenzug wurde von einem feindlichen Indianer-Trupp angegriffen. Ob die Siedler ihn verteidigen können?</German>
 		<Russian>Ходят слухи, что индейцы напали на обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Смогут ли ли колонисты защитить его?</Russian>
@@ -2011,7 +2011,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HERBS_1</Tag>
 		<English>Milord, the midwife of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], a cranky, crazy old woman, cured the feverish chief of the nearby Native settlement with a tea she made for him. The tea as well as the woman stank terribly but the brew helped.[PARAGRAPH:2]Now all the Native villages want the woman to help them with their herbs, hoping she can take away every ache and pain. Do you agree with this, Milord?</English>
-		<Portuguese>Milord, a parteira de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], uma velha maluca e mal-humorada, curou o febril chefe da colônia nativa próximo com um chá que ela preparou para ele. O chá, assim como a mulher, fediam muito, mas a bebida ajudou.[PARAGRAPH:2]Agora todas as aldeias indígenas querem que a mulher os ajude com suas ervas, na esperança de que ela possa aliviar todas as dores. Você concorda com isso, Milorde?</Portuguese>
+		<Portuguese>Milord, a parteira de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], uma velha maluca e mal-humorada, curou o febril chefe da aldeia nativa próximo com um chá que ela preparou para ele. O chá, assim como a mulher, fediam muito, mas a bebida ajudou.[PARAGRAPH:2]Agora todas as aldeias indígenas querem que a mulher os ajude com suas ervas, na esperança de que ela possa aliviar todas as dores. Você concorda com isso, Milorde?</Portuguese>
 		<French>Sire, une sage-femme de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], une vieille folle acariâtre, a soigné le chef du village indigène voisin avec un thé médicinal. Aussi bien le thé que la vieille femme puaient horriblement, mais le breuvage a aidé. [PARAGRAPH:2]Par la suite, tous les villages indigènes veulent l'aide de cette femme pour leurs herbes, l'espérant capable de soigner tous les maux. Êtes vous d'accord, Sire ?</French>
 		<German>Milord, die Hebamme von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], eine hutzlige, verrückte Alte, hat den hitzig fiebernden Häuptling des nahen Ureinwohnerdorfes geheilt vermittels eines Tees, den sie ihm eingeflößt hatte. Sie stanken beide erbärmlich - der Tee wie das Weib -, doch der Sud half.[PARAGRAPH:2]Nun ersuchen die Wilden, die Frau möge ihnen mit ihren Kräutern zukünftig bei all ihren kleinen und großen Nöten beistehen, möge ihnen jedes Weh und jede Warze hinfortnehmen. Seid Ihr damit einverstanden, Milord?</German>
 		<Italian>Si è scoperto che un tè medicinale coltivato dalla gente del posto è efficace nel curare i malanni. Questo tè cresce solo in una specifica regione vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
@@ -3185,7 +3185,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DESPERATE_CONQUISTADORES</Tag>
 		<English>Some desperate conquistadores have raided a Native settlement.</English>
-		<Portuguese>Alguns conquistadores desesperados invadiram uma colônia indígena.</Portuguese>
+		<Portuguese>Alguns conquistadores desesperados invadiram uma aldeia indígena.</Portuguese>
 		<French>Des conquistadors désespérés ont pillé un village indigène.</French>
 		<German>Einige verzweifelte Konquistadoren haben eine Siedlung der Ureinwohner überfallen.</German>
 		<Russian>Несколько отчаянных конкистадоров совершили набег на поселение индейцев.</Russian>
@@ -4635,7 +4635,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_WHALE_OIL_COOKER</Tag>
 		<English>A master train oil cooker wants to join [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
-		<Portuguese>Um mestre fogão a óleo deseja ingressar em [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Portuguese>
+		<Portuguese>Um mestre refinador de óleo de baleia deseja ingressar em [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Portuguese>
 		<French>Un maître cuiseur d'huile de train veut rejoindre [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] möchte sich uns ein Meister-Trankocher anschließen.</German>
 		<Russian>Мастер вытопки ворвани хочет переехать в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
@@ -4659,7 +4659,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WHALING</Tag>
 		<English>Milord, a powerful trading company intends to use one of our towns as a whaling port. We would all profit from this deal. They promise ships, men and new buildings, in return for our protection. We can collect taxes for whale fat and train oil.</English>
-		<Portuguese>Milord, uma poderosa empresa comercial pretende usar uma de nossas cidades como porto baleeiro. Todos lucraríamos com este acordo. Eles prometem navios, homens e novos edifícios, em troca da nossa protecção. Podemos cobrar impostos sobre gordura de baleia e óleo de trem.</Portuguese>
+		<Portuguese>Milord, uma poderosa empresa comercial pretende usar uma de nossas cidades como porto baleeiro. Todos lucraríamos com este acordo. Eles prometem navios, homens e novos edifícios, em troca da nossa protecção. Podemos cobrar impostos sobre gordura de baleia e óleo de baleia.</Portuguese>
 		<French>Seigneur, une puissante société commerciale a l'intention d'utiliser une de nos villes comme port baleinier. Nous profiterions tous de cet accord. Ils promettent des navires, des hommes et de nouveaux bâtiments, en échange de notre protection. Nous pouvons collecter des taxes pour la graisse de baleine et l'huile de train.</French>
 		<German>Milord, eine mächtige Handelskompanie möchte eine unserer Kolonien als Basis für ihren Walfang ausbauen. Davon würden wir sicher profitieren. Sie versprechen uns Schiffe, Männer und Baumaterial für neue Gebäude zu liefern, wenn wir im Gegenzug für Ihren Schutz sorgen und die Zölle auf Walspeck sowie Tranöl eine Weile aussetzen.</German>
 		<Russian>Милорд, могущественная торговая компания намеревается использовать один из наших городов в качестве порта китобойных судов. Мы все выиграем от этой сделки. Они обещают корабли и новые здания в обмен на нашу защиту. Мы же сможем собирать налоги за китовый жир и ворвань.</Russian>
@@ -7533,7 +7533,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRADE_WITH_NATIVES_BETRAYAL_2</Tag>
 		<English>Milord, we have received word that our traders have arrived at the Native settlements. The convoy can depart now.</English>
-		<Portuguese>Milorde, recebemos a notícia de que nossos comerciantes chegaram aas colônias nativos. O comboio pode partir agora.</Portuguese>
+		<Portuguese>Milorde, recebemos a notícia de que nossos comerciantes chegaram aas aldeias nativas. O comboio pode partir agora.</Portuguese>
 		<German>Milord, wir erhielten Nachricht, dass unsere Händler die Dörfer der Ureinwohner erreicht haben. Die Wagenkolonne kann sich nun auf den Weg machen.</German>
 		<Russian>Милорд, мы получили известие, что наши торговцы добрались до поселений индейцев. Теперь мы можем отправить к ним большой обоз(?).</Russian>
 	</TEXT>
@@ -8458,7 +8458,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_3_DONE</Tag>
 		<English>My lord, it’s hard to believe – look there! That must be it! After all our hardships, we’ve actually found a huge Indian settlement. Let’s go and look for the gold!</English>
-		<Portuguese>Meu senhor, é difícil de acreditar – olhe lá! Deve ser isso! Depois de todas as nossas dificuldades, encontramos um enorme colônia indígena. Vamos procurar o ouro!</Portuguese>
+		<Portuguese>Meu senhor, é difícil de acreditar – olhe lá! Deve ser isso! Depois de todas as nossas dificuldades, encontramos um enorme aldeia indígena. Vamos procurar o ouro!</Portuguese>
 		<German>Milord, es ist kaum zu glauben - seht mal, da! Das muss sie sein! Wir haben doch wahrlich nach all diesen Strapazen und Verlusten an Mensch und Material eine riesige Stadt der Indianer gefunden. Lasst uns das Gold suchen!</German>
 		<Russian/>
 	</TEXT>
@@ -8507,7 +8507,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_PRESSED_NATIVE_VILLAGE</Tag>
 		<English>An native settlement is on the verge of collapsing under the cultural pressure exerted by its European neighbours.</English>
-		<Portuguese>Uma colônia nativa está à beira do colapso sob a pressão cultural exercida pelos seus vizinhos europeus.</Portuguese>
+		<Portuguese>Uma aldeia nativa está à beira do colapso sob a pressão cultural exercida pelos seus vizinhos europeus.</Portuguese>
 		<German>Eine Siedlung der Ureinwohner steht kurz davor, an dem kulturellen Druck europäischer Nachbarn zu zerbrechen.</German>
 		<Russian/>
 	</TEXT>
@@ -8528,7 +8528,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRESSED_NATIVE_VILLAGE_3</Tag>
 		<English>My lord, a nearby native settlement is about to be destroyed – our settlers have effectively taken over the entire area. The natives are demanding that we withdraw or compensate them.</English>
-		<Portuguese>Meu senhor, uma colônia nativa próximo está prestes a ser destruído – nossos colonos efetivamente assumiram o controle de toda a área. Os nativos exigem que os retiremos ou os compensemos.</Portuguese>
+		<Portuguese>Meu senhor, uma aldeia nativa próximo está prestes a ser destruído – nossos colonos efetivamente assumiram o controle de toda a área. Os nativos exigem que os retiremos ou os compensemos.</Portuguese>
 		<German>Milord, eine nahegelegene Siedlung der Ureinwohner wird bald zerstört werden - unsere Siedler haben praktisch das ganze Land in Besitz genommen. Die Ureinwohner verlangen, dass wir uns zurückziehen oder sie entschädigen.</German>
 		<Russian/>
 	</TEXT>

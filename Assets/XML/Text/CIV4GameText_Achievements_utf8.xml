@@ -2320,7 +2320,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_WHALE_OIL_HOUSE</Tag>
 		<English>Your first train oil manufactory</English>
-		<Portuguese>Sua primeira fábrica de óleo para trens</Portuguese>
+		<Portuguese>Sua primeira fábrica de óleo de baleia</Portuguese>
 		<French>Votre première raffinerie de blanc de baleine</French>
 		<German>Eure erste Trankocherei</German>
 		<Russian>Ваша первая фабрика ворвани</Russian>
@@ -2344,7 +2344,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_WHALE_OIL_HOUSE</Tag>
 		<English>More train oil manufactories (2)</English>
-		<Portuguese>Mais fábricas de óleo de trem (2)</Portuguese>
+		<Portuguese>Mais fábricas de óleo de baleia (2)</Portuguese>
 		<French>Deux raffineries de blanc de baleine</French>
 		<German>Mehr Trankochereien (2)</German>
 		<Russian>Две фабрики ворвани</Russian>
@@ -2671,7 +2671,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TOBACCONISTS</Tag>
 		<English>Three Master Tobacconists</English>
-		<Portuguese>Três Mestres Tabacarias</Portuguese>
+		<Portuguese>Três Mestres Tabaqueiros</Portuguese>
 		<French>Trois maîtres cigariers</French>
 		<German>Drei Meister-Zigarrendreher</German>
 		<Russian>Три мастер табачника</Russian>
@@ -2717,7 +2717,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WHALE_OIL_COOKERS</Tag>
 		<English>Two Train Oil Cookers</English>
-		<Portuguese>Dois fogões a óleo de trem</Portuguese>
+		<Portuguese>Dois refinadores de óleo de baleia</Portuguese>
 		<French>Deux raffineurs d'huile</French>
 		<German>Zwei Meister-Trankocher</German>
 		<Russian>Два мастера вытопки ворвани</Russian>
