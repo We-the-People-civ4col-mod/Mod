@@ -530,16 +530,11 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 				FAssert(pCity != NULL);
 				if (pCity != NULL)
 				{
-					const int iWantedAmount = GET_PLAYER(eFromPlayer).getTradeYieldAmount(eYield, pTransport);
-
 					//load yields from city onto transport
 					if(pCity->getOwnerINLINE() == eFromPlayer)
 					{
-						iAmount = std::min(iWantedAmount, pTransport->getMaxLoadYieldAmount(eYield));
-						if (iAmount > 0)
-						{
-							iAmount = pTransport->loadYieldAmount(eYield, iAmount, true);
-						}
+						iAmount = pTransport->getMaxLoadYieldAmount(eYield);
+						pTransport->loadYield(eYield, true);
 					}
 					else //unload yields from transport into city
 					{
@@ -552,30 +547,17 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 								if (pLoopUnit->getTransportUnit() == pTransport && pLoopUnit->getYield() == eYield)
 								{
 									aUnits.push_back(pLoopUnit);
+									iAmount += pLoopUnit->getYieldStored();
 								}
 							}
 						}
 
 						FAssert(aUnits.size() > 0);
-						int iRemaining = iWantedAmount;
-						for (uint i = 0; i < aUnits.size() && iRemaining > 0; ++i)
+						for (uint i = 0; i < aUnits.size(); ++i)
 						{
-							const int iStored = aUnits[i]->getYieldStored();
-							const int iUnload = std::min(iStored, iRemaining);
-							if (iUnload == iStored)
-							{
-								aUnits[i]->setTransportUnit(NULL);  // unloads goods into city and kills the unit
-							}
-							else
-							{
-								aUnits[i]->unloadStoredAmount(iUnload);
-							}
-							iRemaining -= iUnload;
-							iAmount += iUnload;
+							aUnits[i]->setTransportUnit(NULL);  // unloads goods into city and kills the unit
 						}
 					}
-
-					GET_PLAYER(eFromPlayer).setDiploYieldAmount(eYield, -1);
 
 					if (iAmount > 0)
 					{

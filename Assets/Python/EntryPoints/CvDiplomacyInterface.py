@@ -6,12 +6,6 @@ import CvDiplomacy
 
 gc = CyGlobalContext()
 
-def _clearDiploYieldAmounts():
-	for iPlayer in range(gc.getMAX_PLAYERS()):
-		player = gc.getPlayer(iPlayer)
-		if player is not None and player.isAlive():
-			player.clearDiploYieldAmounts()
-
 def beginDiplomacy (argsList):
 	"""
 	This is what gets called when you first begin diplomacy
@@ -25,7 +19,6 @@ def beginDiplomacy (argsList):
 		print "tuple size", len(commentArgs), ", commentArgsSize ", commentArgsSize
 	else:
 		commentArgs=[]
-	_clearDiploYieldAmounts()
 	diploClass = CvDiplomacy.CvDiplomacy()
 	diploClass.setAIComment(eComment, *commentArgs)	#unpack args tuple
 
@@ -40,7 +33,6 @@ def handleUserResponse (argsList):
 	diploClass.handleUserResponse(eComment, iData1, iData2)
 
 def dealCanceled ():
-	_clearDiploYieldAmounts()
 	diploClass = CvDiplomacy.CvDiplomacy()
 
 	diploClass.dealCanceled()

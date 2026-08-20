@@ -252,7 +252,6 @@ void CvPlayer::reset(PlayerTypes eID, bool bConstructorCall)
 	// Dale - AoD: AI Autoplay END
 
 	m_uiStartTime = 0;
-	m_em_iDiploYieldAmount.reset();
 
 	m_aszTradeMessages.clear();
 
@@ -4733,13 +4732,7 @@ bool CvPlayer::canTradeItem(PlayerTypes eWhoTo, TradeData item, bool bTestDenial
 		{
 			YieldTypes eYield = (YieldTypes) item.m_iData1;
 			CvUnit* pTransport = ::getUnit(item.m_kTransport);
-			const int iCargo = getTradeYieldCargoAmount(eYield, pTransport);
-			const int iDiploAmount = getDiploYieldAmount(eYield);
-			if (iDiploAmount >= 0)
-			{
-				return (iCargo - iDiploAmount) > 0;
-			}
-			return (iCargo > 0);
+			return (getTradeYieldAmount(eYield, pTransport) > 0);
 		}
 		break;
 
@@ -5329,20 +5322,6 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 		return false;
 	}
 	// R&R, ray, Goodies on Water - END
-
-	// Map reward from sea wreckage. GOODY_MAP_SEA and its reveal logic are unchanged; flip this to re-enable.
-	const bool bEnableSeaWreckageMap = false;
-	if (!bEnableSeaWreckageMap && 0 == strcmp(kGoody.getType(), "GOODY_MAP_SEA"))
-	{
-		return false;
-	}
-
-	// Map reward from land ruins. GOODY_MAP and its reveal logic are unchanged; flip this to re-enable.
-	const bool bEnableLandRuinMap = false;
-	if (!bEnableLandRuinMap && 0 == strcmp(kGoody.getType(), "GOODY_MAP"))
-	{
-		return false;
-	}
 
 	if (kGoody.isWar())
 	{
@@ -19230,16 +19209,13 @@ void CvPlayer::doAction(PlayerActionTypes eAction, int iData1, int iData2, int i
 	case PLAYER_ACTION_UPDATE_NATIVE_BARGAIN_EFFECT:
 		applyBargainOutcome((PlayerTypes)iData1, iData2, iData3);
 		break;
-	case PLAYER_ACTION_SET_DIPLO_YIELD_AMOUNT:
-		GET_PLAYER((PlayerTypes)iData3).setDiploYieldAmount((YieldTypes)iData1, iData2);
-		break;
 	default:
 		FAssertMsg(false, "Unknown action");
 		break;
 	}
 }
 
-int CvPlayer::getTradeYieldCargoAmount(YieldTypes eYield, CvUnit* pTransport) const
+int CvPlayer::getTradeYieldAmount(YieldTypes eYield, CvUnit* pTransport) const
 {
 	FAssert(pTransport != NULL);
 	if (pTransport == NULL)
@@ -19288,85 +19264,6 @@ int CvPlayer::getTradeYieldCargoAmount(YieldTypes eYield, CvUnit* pTransport) co
 	}
 
 	return iAmount;
-}
-
-int CvPlayer::getTradeYieldAmount(YieldTypes eYield, CvUnit* pTransport) const
-{
-	const int iAmount = getTradeYieldCargoAmount(eYield, pTransport);
-	const int iDiploAmount = getDiploYieldAmount(eYield);
-	if (iDiploAmount >= 0)
-	{
-		return std::min(iAmount, iDiploAmount);
-	}
-
-	return iAmount;
-}
-
-int CvPlayer::getDiploYieldAmount(YieldTypes eYield) const
-{
-	if (eYield == NO_YIELD)
-	{
-		return -1;
-	}
-
-	return m_em_iDiploYieldAmount.get(eYield);
-}
-
-void CvPlayer::setDiploYieldAmount(YieldTypes eYield, int iAmount)
-{
-	if (eYield == NO_YIELD)
-	{
-		return;
-	}
-
-	m_em_iDiploYieldAmount.set(eYield, iAmount);
-	if (iAmount >= 0)
-	{
-		gDLL->updateDiplomacyAttitude(true);
-	}
-}
-
-void CvPlayer::clearDiploYieldAmounts()
-{
-	m_em_iDiploYieldAmount.reset();
-}
-
-void CvPlayer::tryLaunchDiploYieldAmountPopup(YieldTypes eYield, const IDInfo& kTransport)
-{
-	if (eYield == NO_YIELD)
-	{
-		return;
-	}
-
-	const int iState = getDiploYieldAmount(eYield);
-	if (iState != DIPLO_YIELD_AMOUNT_ASK)
-	{
-		// Backup if the widget click never ran: still ask when shift is held as the row is added.
-		if (iState != DIPLO_YIELD_AMOUNT_UNSET || !GC.shiftKey())
-		{
-			return;
-		}
-	}
-
-	CvUnit* pTransport = ::getUnit(kTransport);
-	if (pTransport == NULL)
-	{
-		return;
-	}
-
-	const int iMaxAmount = getTradeYieldAmount(eYield, pTransport);
-	if (iMaxAmount <= 0)
-	{
-		return;
-	}
-
-	setDiploYieldAmount(eYield, DIPLO_YIELD_AMOUNT_WAITING);
-
-	CyArgsList argsList;
-	argsList.add(getID());
-	argsList.add(eYield);
-	argsList.add(iMaxAmount);
-	gDLL->getPythonIFace()->callFunction(PYScreensModule, "showDiploYieldAmount", argsList.makeFunctionArgs());
 }
 
 void CvPlayer::setCityBillboardDirty(bool bNewValue)
@@ -20805,22 +20702,7 @@ bool CvPlayer::getItemTradeString(PlayerTypes eOtherPlayer, bool bOffer, bool bS
 			FAssert(pTransport != NULL);
 			if (pTransport != NULL)
 			{
-				const CvPlayer* pOwner = bOffer ? &GET_PLAYER(eOtherPlayer) : this;
-				const int iCargo = pOwner->getTradeYieldCargoAmount(eYield, pTransport);
-				const int iDiploAmount = pOwner->getDiploYieldAmount(eYield);
-				int iAmount = iCargo;
-				if (iDiploAmount >= 0)
-				{
-					// Available list: leftover. Offer table: the amount they picked.
-					if (!bOffer && !bShowingCurrent)
-					{
-						iAmount = std::max(0, iCargo - iDiploAmount);
-					}
-					else
-					{
-						iAmount = std::min(iCargo, iDiploAmount);
-					}
-				}
+				int iAmount = bOffer ? GET_PLAYER(eOtherPlayer).getTradeYieldAmount(eYield, pTransport) : getTradeYieldAmount(eYield, pTransport);
 				szString.Format( L"%s (%d%c)", kYield.getDescription(), iAmount, kYield.getChar());
 			}
 		}
@@ -20935,85 +20817,6 @@ void CvPlayer::updateTradeList(PlayerTypes eOtherPlayer, CLinkList<TradeData>& o
 					}
 				}
 			}
-		}
-	}
-
-	const PlayerTypes eActivePlayer = GC.getGameINLINE().getActivePlayer();
-	if (eActivePlayer != NO_PLAYER && getID() == eActivePlayer && GET_PLAYER(eActivePlayer).isHuman())
-	{
-		CvPlayer* pThis = const_cast<CvPlayer*>(this);
-		for (CLLNode<TradeData>* pOfferNode = ourOffer.head(); pOfferNode != NULL; pOfferNode = ourOffer.next(pOfferNode))
-		{
-			if (pOfferNode->m_data.m_eItemType == TRADE_YIELD)
-			{
-				pThis->tryLaunchDiploYieldAmountPopup((YieldTypes)pOfferNode->m_data.m_iData1, kTransport);
-			}
-		}
-
-		CvPlayer& kOther = GET_PLAYER(eOtherPlayer);
-		for (CLLNode<TradeData>* pOfferNode = theirOffer.head(); pOfferNode != NULL; pOfferNode = theirOffer.next(pOfferNode))
-		{
-			if (pOfferNode->m_data.m_eItemType == TRADE_YIELD)
-			{
-				kOther.tryLaunchDiploYieldAmountPopup((YieldTypes)pOfferNode->m_data.m_iData1, kTransport);
-			}
-		}
-	}
-
-	CvPlayer* pThis = const_cast<CvPlayer*>(this);
-	CvUnit* pTransport = ::getUnit(kTransport);
-	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_CARGO_YIELD_TYPES; ++eYield)
-	{
-		bool bOffered = false;
-		for (CLLNode<TradeData>* pOfferNode = ourOffer.head(); pOfferNode != NULL; pOfferNode = ourOffer.next(pOfferNode))
-		{
-			if (pOfferNode->m_data.m_eItemType == TRADE_YIELD && (YieldTypes)pOfferNode->m_data.m_iData1 == eYield)
-			{
-				bOffered = true;
-				break;
-			}
-		}
-
-		if (!bOffered)
-		{
-			if (getDiploYieldAmount(eYield) != DIPLO_YIELD_AMOUNT_UNSET)
-			{
-				pThis->setDiploYieldAmount(eYield, DIPLO_YIELD_AMOUNT_UNSET);
-			}
-			continue;
-		}
-
-		const int iDiploAmount = getDiploYieldAmount(eYield);
-		if (iDiploAmount < 0 || pTransport == NULL)
-		{
-			continue;
-		}
-
-		const int iRemaining = getTradeYieldCargoAmount(eYield, pTransport) - iDiploAmount;
-		if (iRemaining <= 0)
-		{
-			continue;
-		}
-
-		CLLNode<TradeData>* pInventoryNode = NULL;
-		for (CLLNode<TradeData>* pNode = ourInventory.head(); pNode != NULL; pNode = ourInventory.next(pNode))
-		{
-			if (pNode->m_data.m_eItemType == TRADE_YIELD && (YieldTypes)pNode->m_data.m_iData1 == eYield)
-			{
-				pInventoryNode = pNode;
-				break;
-			}
-		}
-
-		if (pInventoryNode != NULL)
-		{
-			pInventoryNode->m_data.m_bHidden = false;
-		}
-		else
-		{
-			TradeData item;
-			setTradeItem(&item, TRADE_YIELD, eYield, &kTransport);
-			ourInventory.insertAtEnd(item);
 		}
 	}
 }
