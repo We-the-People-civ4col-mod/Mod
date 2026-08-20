@@ -573,7 +573,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_RAPE_PLANTER</Tag>
 		<English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
-		<Portuguese>Plantador de colza especializado:Plantadores de colza especializados</Portuguese>
+		<Portuguese>Plantador de canola especializado:Plantadores de canola especializados</Portuguese>
 		<French>
 			<Text>Expert planteur de colza:Experts planteurs de colza</Text>
 			<Gender>Male</Gender>
@@ -600,7 +600,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAPE_PLANTER</Tag>
 		<English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
-		<Portuguese>Plantador de colza especializado:Plantadores de colza especializados</Portuguese>
+		<Portuguese>Plantador de canola especializado:Plantadores de canola especializados</Portuguese>
 		<French>
 			<Text>Expert planteur de colza:Experts planteurs de colza</Text>
 			<Gender>Male</Gender>
@@ -627,14 +627,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAPE_PLANTER_PEDIA</Tag>
 		<English>Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.</English>
-		<Portuguese>A colza, com suas flores amarelas brilhantes, é cultivada principalmente por suas sementes ricas em óleo, que possuem quantidades apreciáveis de ácido erúcico. A farinha de colza, deixada após a extração do óleo, é uma ração animal rica em proteínas.</Portuguese>
+		<Portuguese>A canola, com suas flores amarelas brilhantes, é cultivada principalmente por suas sementes ricas em óleo, que possuem quantidades apreciáveis de ácido erúcico. A farinha de canola, deixada após a extração do óleo, é uma ração animal rica em proteínas.</Portuguese>
 		<German>Raps mit seinen leuchtend gelben Blüten wird hauptsächlich wegen seiner ölreichen Samen angebaut, die einen nennenswerten Anteil an Erucasäure enthalten. Rapsschrot, das nach der Ölgewinnung übrig bleibt, ist ein proteinreiches Tierfutter.</German>
 		<Hungarian>A ragyogó sárga virágú repcét elsősorban olajban gazdag magjáért termesztik, amely jelentős mennyiségű erukasavat tartalmaz. Az olaj kinyerése után visszamaradó repcemag-liszt magas fehérjetartalmú állati takarmány.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAPE_PLANTER_STRATEGY</Tag>
 		<English>Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.[NEWLINE]When assigned to the Rapeseed Planter profession, the expert can harvest double the [LINK=YIELD_RAPE]rapeseed[\LINK] in the same time as a regular colonist.</English>
-		<Portuguese>A colza é uma cultura oleaginosa valiosa. Uma vez extraído o óleo, o que sobra é utilizado como forragem para animais domésticos, principalmente bovinos, mas também suínos e aves. É um membro da família do repolho.[NEWLINE]Quando designado para a profissão de Plantador de Colza, o especialista pode colher o dobro da [LINK=YIELD_RAPE]colza[\LINK] no mesmo tempo que um colono normal.</Portuguese>
+		<Portuguese>A canola é uma cultura oleaginosa valiosa. Uma vez extraído o óleo, o que sobra é utilizado como forragem para animais domésticos, principalmente bovinos, mas também suínos e aves. É um membro da família do repolho.[NEWLINE]Quando designado para a profissão de Plantador de Canola, o especialista pode colher o dobro da [LINK=YIELD_RAPE]canola[\LINK] no mesmo tempo que um colono normal.</Portuguese>
 		<German>Raps ist eine wertvolle Ölpflanze. Nach der Ölgewinnung wird der Rest als Futter für Haustiere verwendet, hauptsächlich für Rinder, aber auch für Schweine und Geflügel. Raps gehört zur Familie der Kohlgewächse. [NEWLINE] Wenn der Beruf des Rapsbauern zugewiesen wird, kann der Experte in der gleichen Zeit wie ein normaler Kolonist die doppelte Menge an Raps ernten.</German>
 		<Hungarian>A repce értékes olajos növény. Az olaj kinyerése után a maradékot háziállatok, főként marhák, de disznók és baromfi takarmányozására használják. A káposztafélék családjába tartozik.[NEWLINE]A Tapasztalt Repce Termesztő ugyanannyi idő alatt kétszer annyi [LINK=YIELD_RAPE]repcét[\LINK] tud betakarítani, mint a többi lakos.</Hungarian>
 	</TEXT>
@@ -1340,14 +1340,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OIL_TRADER_PEDIA</Tag>
 		<English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Olives are crushed for their oil. Once rapeseed oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry.</English>
-		<Portuguese>A prensagem do óleo é uma arte antiga na Europa, especialmente nas culturas mediterrânicas. As azeitonas são esmagadas para obter o seu azeite. Uma vez extraído o óleo de colza, o que sobra é utilizado como forragem para animais domésticos, principalmente bovinos, mas também suínos e aves.</Portuguese>
+		<Portuguese>A prensagem do óleo é uma arte antiga na Europa, especialmente nas culturas mediterrânicas. As azeitonas são esmagadas para obter o seu azeite. Uma vez extraído o óleo de canola, o que sobra é utilizado como forragem para animais domésticos, principalmente bovinos, mas também suínos e aves.</Portuguese>
 		<German>Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den mediterranen Kulturen. Zur Gewinnung des Öls werden die Oliven gepresst. Nach der Gewinnung des Rapsöls wird der Rest als Futtermittel für Haustiere, vor allem Rinder, aber auch Schweine und Geflügel, verwendet.</German>
 		<Hungarian>Az olajpréselés ősi mesterség Európában, különösen a mediterrán kultúrákban. Az olajbogyókat étolaj kinyerése céljából préselik. A repceolaj kinyerése után a maradékot háziállatok, főként marhák, de disznók és baromfik takarmányozására is felhasználják.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OIL_TRADER_STRATEGY</Tag>
 		<English>Cooking oil is used in most households almost every day. Because the market is so widespread it's a good cover for smuggling. Nostalgic settlers often prefer the taste of oil from their home country. [LINK=YIELD_OLIVES]Olives[\LINK] and [LINK=YIELD_RAPE]rapeseed[\LINK] are pressed to create two popular cooking oils.[NEWLINE]When assigned to the Cooking Oil Trader profession, the master presser can sell twice as much cooking oil in the same time as a regular colonist.</English>
-		<Portuguese>O óleo de cozinha é usado na maioria das famílias quase todos os dias. Como o mercado é tão difundido, é uma boa cobertura para o contrabando. Os colonos nostálgicos muitas vezes preferem o sabor do azeite do seu país de origem. [LINK=YIELD_OLIVES]Azeitonas[\LINK] e [LINK=YIELD_RAPE]colza[\LINK] são prensadas para criar dois óleos de cozinha populares.[NEWLINE]Quando atribuído à profissão de Comerciante de Óleo de Cozinha, o prensador mestre pode vender o dobro de óleo de cozinha no mesmo tempo que um colono normal.</Portuguese>
+		<Portuguese>O óleo de cozinha é usado na maioria das famílias quase todos os dias. Como o mercado é tão difundido, é uma boa cobertura para o contrabando. Os colonos nostálgicos muitas vezes preferem o sabor do azeite do seu país de origem. [LINK=YIELD_OLIVES]Azeitonas[\LINK] e [LINK=YIELD_RAPE]canola[\LINK] são prensadas para criar dois óleos de cozinha populares.[NEWLINE]Quando atribuído à profissão de Comerciante de Óleo de Cozinha, o prensador mestre pode vender o dobro de óleo de cozinha no mesmo tempo que um colono normal.</Portuguese>
 		<German>Speiseöl wird in den meisten Haushalten fast jeden Tag verwendet. Da der Markt so weit verbreitet ist, bietet er eine gute Tarnung für den Schmuggel. Nostalgische Siedler bevorzugen oft den Geschmack von Öl aus ihrem Heimatland. Aus [LINK=YIELD_OLIVES]Oliven[\LINK] und [LINK=YIELD_RAPE]Raps[\LINK] werden zwei beliebte Speiseöle gepresst.[NEWLINE]Mit dem Beruf des Speiseölhändlers kann der Pressmeister in der gleichen Zeit doppelt so viel Speiseöl verkaufen wie ein normaler Kolonist.</German>
 		<Hungarian>Az étolajat a legtöbb háztartásban szinte minden nap használják. Mivel a piac annyira elterjedt, jó álca a csempészethez. A nosztalgikus bevándorlók gyakran kedvelik szülőhazájukból származó olaj ízét. Az [LINK=YIELD_OLIVES]olajbogyó[\LINK] és a [LINK=YIELD_RAPE]repce[\LINK] préselésével két népszerű étolaj készül.[NEWLINE]Az Étolajkészítő Mester ugyanannyi idő alatt kétszer annyi étolajat tud előállítani, mint egy átlagos lakos.</Hungarian>
 	</TEXT>

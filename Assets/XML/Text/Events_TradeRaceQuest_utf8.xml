@@ -2807,35 +2807,35 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RAPE_START</Tag>
 		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]rapeseed[COLOR_REVERT] with Europe has begun.</English>
-		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]colza[COLOR_REVERT] com a Europa já começou.</Portuguese>
+		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]canola[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Raps[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]рапса[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RAPE_DONE</Tag>
 		<English>Milord, we're now the top trader in [COLOR_FONT_GOLD]rapeseed[COLOR_REVERT] with Europe.</English>
-		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]colza[COLOR_REVERT] na Europa.</Portuguese>
+		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]canola[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Raps[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]рапса[COLOR_REVERT]!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RAPE_START</Tag>
 		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]rapeseed[COLOR_REVERT] with Europe.</English>
-		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]colza[COLOR_REVERT] com a Europa.</Portuguese>
+		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]canola[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Raps[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]рапса[COLOR_REVERT] на рынки.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_RAPE_FAILED</Tag>
 		<English>Milord, another colonial nation was the first to corner the market in the colonies for [COLOR_FONT_GOLD]rapeseed[COLOR_REVERT] with Europe.</English>
-		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado de [COLOR_FONT_GOLD]colza[COLOR_REVERT] nas colônias com a Europa.</Portuguese>
+		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado de [COLOR_FONT_GOLD]canola[COLOR_REVERT] nas colônias com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Raps[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]рапса[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RAPE_DONE</Tag>
 		<English>Milord, we're now the top trader in [COLOR_FONT_GOLD]rapeseed[COLOR_REVERT] with Europe.</English>
-		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]colza[COLOR_REVERT] na Europa.</Portuguese>
+		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]canola[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Raps[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]рапса[COLOR_REVERT]!</Russian>
 	</TEXT>
@@ -3262,35 +3262,35 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RAPE_OIL_START</Tag>
 		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]rapeseed oil[COLOR_REVERT] with Europe has begun.</English>
-		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]óleo de colza[COLOR_REVERT] com a Europa já começou.</Portuguese>
+		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]óleo de canola[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]рапсового масла[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RAPE_OIL_DONE</Tag>
 		<English>Milord, we're now the top trader in [COLOR_FONT_GOLD]rapeseed oil[COLOR_REVERT] with Europe.</English>
-		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]óleo de colza[COLOR_REVERT] com a Europa.</Portuguese>
+		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]óleo de canola[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]рапсового масла[COLOR_REVERT]!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RAPE_OIL_START</Tag>
 		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]rapeseed oil[COLOR_REVERT] with Europe.</English>
-		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]óleo de colza[COLOR_REVERT] com a Europa.</Portuguese>
+		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]óleo de canola[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители Европы в восторге от первых поставок [COLOR_FONT_GOLD]рапсового масла[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_RAPE_OIL_FAILED</Tag>
 		<English>Milord, another colonial nation was the first to corner the market in the colonies for [COLOR_FONT_GOLD]rapeseed oil[COLOR_REVERT] with Europe.</English>
-		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]óleo de colza[COLOR_REVERT] com a Europa.</Portuguese>
+		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]óleo de canola[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке поставок [COLOR_FONT_GOLD]рапсового масла[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RAPE_OIL_DONE</Tag>
 		<English>Milord, we're now the top trader in [COLOR_FONT_GOLD]rapeseed oil[COLOR_REVERT] with Europe.</English>
-		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]óleo de colza[COLOR_REVERT] com a Europa.</Portuguese>
+		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]óleo de canola[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]рапсового масла[COLOR_REVERT]!</Russian>
 	</TEXT>

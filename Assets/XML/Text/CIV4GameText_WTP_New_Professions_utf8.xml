@@ -839,7 +839,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Plantador (colza):Plantadores (colza)</Text>
+			<Text>Plantador (canola):Plantadores (canola)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -873,7 +873,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_RAPE_PLANTER_PEDIA</Tag>
 		<English>Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.[NEWLINE]Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.</English>
-		<Portuguese>A colza, com suas flores amarelas brilhantes, é cultivada principalmente por suas sementes ricas em óleo, que possuem quantidades apreciáveis de ácido erúcico. A farinha de colza, deixada após a extração do óleo, é uma ração animal rica em proteínas.[NEWLINE]A colza é uma cultura oleaginosa valiosa. Uma vez extraído o óleo, o que sobra é utilizado como forragem para animais domésticos, principalmente bovinos, mas também suínos e aves. É um membro da família do repolho.</Portuguese>
+		<Portuguese>A canola, com suas flores amarelas brilhantes, é cultivada principalmente por suas sementes ricas em óleo, que possuem quantidades apreciáveis de ácido erúcico. A farinha de canola, deixada após a extração do óleo, é uma ração animal rica em proteínas.[NEWLINE]A canola é uma cultura oleaginosa valiosa. Uma vez extraído o óleo, o que sobra é utilizado como forragem para animais domésticos, principalmente bovinos, mas também suínos e aves. É um membro da família do repolho.</Portuguese>
 		<French>Le colza, avec ses fleurs jaune vif, est cultivé principalement pour sa graine riche en huile, qui contient des quantités appréciables d'acide érucique. Le tourteau de colza, qui reste après l'extraction de l'huile, est un aliment pour animaux riche en protéines.[NEWLINE]Le colza est une culture oléagineuse précieuse. Une fois l'huile extraite, ce qui reste est utilisé comme fourrage pour les animaux domestiques, principalement les bovins, mais aussi les porcs et la volaille. C'est un membre de la famille des choux.</French>
 		<German>Der Raps mit seinen leuchtend gelben Blüten wird hauptsächlich wegen seiner ölhaltigen Samen angebaut, die beträchtliche Mengen an Erucasäure enthalten. Rapsschrot, der nach der Ölgewinnung übrig bleibt, ist ein proteinreiches Tierfutter.[NEWLINE]Raps ist eine wertvolle Ölpflanze. Nach der Extraktion des Öls wird der Rest als Futtermittel für Haustiere, vor allem Rinder, aber auch Schweine und Geflügel, verwendet. Er gehört zur Familie der Kohlgewächse.</German>
 		<Italian>La colza, con i suoi fiori gialli e brillanti, è coltivata principalmente per i suoi semi ricchi di olio, che contengono quantità apprezzabili di acido erucico. La farina di colza, che rimane dopo l'estrazione dell'olio, è un mangime per animali ad alto contenuto proteico.[NEWLINE]La colza è una coltura oleosa di grande valore. Una volta estratto l'olio, ciò che resta viene utilizzato come foraggio per gli animali domestici, soprattutto bovini, ma anche suini e pollame. È un membro della famiglia dei cavoli.</Italian>
@@ -883,7 +883,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_RAPE_PLANTER_STRATEGY</Tag>
 		<English>Flatlands on [LINK=TERRAIN_TAIGA]taiga[\LINK] tiles let you grow [LINK=YIELD_RAPE]rapeseed[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]rapeseed planter[COLOR_REVERT] profession. The rapeseed harvest can be increased by assigning an [LINK=UNIT_RAPE_PLANTER]expert rapeseed planter[\LINK] to the job.</English>
-		<Portuguese>Planícies em quadrados de [LINK=TERRAIN_TAIGA]taiga[\LINK] permitem que você cultive [LINK=YIELD_RAPE]colza[\LINK] se o colono que trabalha nelas for atribuído à profissão de [COLOR_HIGHLIGHT_TEXT]plantador de colza[COLOR_REVERT]. A colheita de colza pode ser aumentada designando um [LINK=UNIT_RAPE_PLANTER]plantador especializado em colza[\LINK] para o trabalho.</Portuguese>
+		<Portuguese>Planícies em quadrados de [LINK=TERRAIN_TAIGA]taiga[\LINK] permitem que você cultive [LINK=YIELD_RAPE]canola[\LINK] se o colono que trabalha nelas for atribuído à profissão de [COLOR_HIGHLIGHT_TEXT]plantador de canola[COLOR_REVERT]. A colheita de canola pode ser aumentada designando um [LINK=UNIT_RAPE_PLANTER]plantador especializado em canola[\LINK] para o trabalho.</Portuguese>
 		<French>Les tuiles de plaine vous permettent de cultiver du [LINK=YIELD_RAPE]colza[\LINK] si le colon qui les travaille est affecté à la profession de [COLOR_HIGHLIGHT_TEXT]planteur de colza[COLOR_REVERT]. La récolte de colza peut être augmentée en affectant un [LINK=UNIT_RAPE_PLANTER]planteur de colza expert[\LINK] à cette tâche.</French>
 		<German>Auf Flachland-Geländefeldern in der [LINK=TERRAIN_TAIGA]Taiga[\LINK] kann [LINK=YIELD_RAPE]Raps[\LINK] angebaut werden, wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Rapspflanzer[COLOR_REVERT] zugeordnet ist. Die Rapsernte kann erhöht werden, indem man einen [LINK=UNIT_RAPE_PLANTER]erfahrenen Rapspflanzer[\LINK] mit der Arbeit beauftragt.</German>
 		<Italian>Le piastrelle di pianura permettono di coltivare [LINK=YIELD_RAPE]colza[\LINK] se il colono che le lavora è assegnato alla professione [COLOR_HIGHLIGHT_TEXT]piantatore di colza[COLOR_REVERT]. Il raccolto di colza può essere aumentato assegnando al lavoro un [LINK=UNIT_RAPE_PLANTER]piantatore di colza esperto[\LINK].</Italian>
@@ -2446,7 +2446,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Comerciante de óleo (óleo de colza):Comerciantes de óleo (óleo de colza)</Text>
+			<Text>Comerciante de óleo (óleo de canola):Comerciantes de óleo (óleo de canola)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2480,7 +2480,7 @@
 		<TEXT>
 		<Tag>TXT_KEY_PROFESSION_RAPE_OIL_TRADER_PEDIA</Tag>
 		<English>During the Middle Ages farmers used rapeseed in crop rotation to keep weeds down and improve the soil. Rapeseed oil was rarely eaten by humans. The old strains were horribly bitter and contained high levels of toxic erucic acid. For centuries the oil was used in animal feed.</English>
-		<Portuguese>Durante a Idade Média, os agricultores utilizavam a colza na rotação de culturas para controlar as ervas daninhas e melhorar o solo. O óleo de colza raramente era consumido por humanos. As cepas antigas eram terrivelmente amargas e continham altos níveis de ácido erúcico tóxico. Durante séculos o óleo foi utilizado na alimentação animal.</Portuguese>
+		<Portuguese>Durante a Idade Média, os agricultores utilizavam a canola na rotação de culturas para controlar as ervas daninhas e melhorar o solo. O óleo de canola raramente era consumido por humanos. As cepas antigas eram terrivelmente amargas e continham altos níveis de ácido erúcico tóxico. Durante séculos o óleo foi utilizado na alimentação animal.</Portuguese>
 		<French>Au Moyen Âge, les agriculteurs utilisaient le colza dans la rotation des cultures pour limiter les mauvaises herbes et améliorer le sol. L'huile de colza était rarement consommée par les humains. Les anciennes souches étaient horriblement amères et contenaient des niveaux élevés d'acide érucique toxique. Pendant des siècles, l'huile a été utilisée dans l'alimentation animale.</French>
 		<German>Im Mittelalter nutzten die Bauern den Raps in der Fruchtfolge, um Unkraut einzudämmen und den Boden zu verbessern. Rapsöl wurde nur selten von Menschen gegessen. Die alten Sorten waren furchtbar bitter und enthielten einen hohen Gehalt an giftiger Erucasäure. Jahrhundertelang wurde das Öl als Tierfutter verwendet.</German>
 		<Italian>Nel Medioevo gli agricoltori utilizzavano la colza nella rotazione delle colture per contenere le erbacce e migliorare il terreno. L'olio di colza era raramente consumato dall'uomo. Le vecchie varietà erano terribilmente amare e contenevano alti livelli di acido erucico tossico. Per secoli l'olio è stato utilizzato per l'alimentazione degli animali.</Italian>
@@ -2490,7 +2490,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_RAPE_OIL_TRADER_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Rapeseed oil traders[COLOR_REVERT] can work in the [LINK=BUILDING_OIL_TRADER_HOUSE]oil trader's house[\LINK] or one of its upgrades to produce [LINK=YIELD_RAPE_OIL]rapeseed oil[\LINK]. [LINK=UNIT_OIL_TRADER]Master cooking oil traders[\LINK] excel at this craft. They dramatically boost your production of rapeseed oil.</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Comerciantes de óleo de colza[COLOR_REVERT] podem trabalhar na [LINK=BUILDING_OIL_TRADER_HOUSE]casa do comerciante de óleo[\LINK] ou em uma de suas atualizações para produzir [LINK=YIELD_RAPE_OIL]óleo de colza[\LINK]. [LINK=UNIT_OIL_TRADER]Mestres comerciantes de óleo de cozinha[\LINK] são excelentes nesse ofício. Eles aumentam drasticamente a produção de óleo de colza.</Portuguese>
+		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Comerciantes de óleo de canola[COLOR_REVERT] podem trabalhar na [LINK=BUILDING_OIL_TRADER_HOUSE]casa do comerciante de óleo[\LINK] ou em uma de suas atualizações para produzir [LINK=YIELD_RAPE_OIL]óleo de canola[\LINK]. [LINK=UNIT_OIL_TRADER]Mestres comerciantes de óleo de cozinha[\LINK] são excelentes nesse ofício. Eles aumentam drasticamente a produção de óleo de canola.</Portuguese>
 		<French>Les [COLOR_HIGHLIGHT_TEXT]marchands d'huile de colza[COLOR_REVERT] peuvent travailler dans la [LINK=BUILDING_OIL_TRADER_HOUSE]maison du marchand d'huile[\LINK] ou dans l'une de ses améliorations pour produire [LINK=YIELD_RAPE_OIL]de l'huile de colza[\LINK]. Les [LINK=UNIT_OIL_TRADER]maîtres huiliers[\LINK] excellent dans ce domaine. Ils augmentent considérablement votre production d'huile de colza.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Rapsölhändler[COLOR_REVERT] können im [LINK=BUILDING_OIL_TRADER_HOUSE]Haus des Ölhändlers[\LINK] oder einer seiner Erweiterungen arbeiten, um [LINK=YIELD_RAPE_OIL]Rapsöl[\LINK] herzustellen. [LINK=UNIT_OIL_TRADER]Meister-Speiseölhändler[\LINK] sind in diesem Handwerk hervorragend. Sie steigern Ihre Produktion von Rapsöl dramatisch.</German>
 		<Italian>I [COLOR_HIGHLIGHT_TEXT]commercianti di olio di colza[COLOR_REVERT] possono lavorare nella [LINK=BUILDING_OIL_TRADER_HOUSE]casa del commerciante di olio[\LINK] o in uno dei suoi potenziamenti per produrre [LINK=YIELD_RAPE_OIL]olio di colza[\LINK]. I [LINK=UNIT_OIL_TRADER]mastri oliatori[\LINK] eccellono in questo mestiere. Aumentano drasticamente la produzione di olio di colza.</Italian>
@@ -2539,7 +2539,7 @@
 		<TEXT>
 		<Tag>TXT_KEY_PROFESSION_OLIVE_OIL_TRADER_PEDIA</Tag>
 		<English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Equipment that crushes olives for their oil can be adapted to work with rapeseed.</English>
-		<Portuguese>A prensagem do óleo é uma arte antiga na Europa, especialmente nas culturas mediterrânicas. O equipamento que esmaga azeitonas para obter o azeite pode ser adaptado para trabalhar com colza.</Portuguese>
+		<Portuguese>A prensagem do óleo é uma arte antiga na Europa, especialmente nas culturas mediterrânicas. O equipamento que esmaga azeitonas para obter o azeite pode ser adaptado para trabalhar com canola.</Portuguese>
 		<French>Le pressage de l'huile est un artisanat ancien en Europe, notamment dans les cultures méditerranéennes. Les équipements qui écrasent les olives pour en extraire l'huile peuvent être adaptés au colza.</French>
 		<German>Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den Mittelmeerkulturen. Die Geräte, mit denen Oliven zur Gewinnung von Öl gepresst werden, können auch für die Verarbeitung von Raps verwendet werden.</German>
 		<Italian>La spremitura dell'olio è un'attività antica in Europa, in particolare nelle culture mediterranee. Le attrezzature che schiacciano le olive per ricavarne l'olio possono essere adattate alla colza.</Italian>
