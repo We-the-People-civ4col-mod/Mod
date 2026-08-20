@@ -3971,7 +3971,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_PIET_HEYN_STRATEGY</Tag>
 		<English>Increase your fleet by adding Admiral [COLOR_TECH_TEXT]Piet Hein[COLOR_REVERT] to your colony as a Founding Father. He will bring two [COLOR_HIGHLIGHT_TEXT]West Indiamen[COLOR_REVERT] with him.</English>
-		<Portuguese>Aumente sua frota adicionando o Almirante [COLOR_TECH_TEXT]Piet Hein[COLOR_REVERT] à sua colônia como um Pai Fundador. Ele trará dois [COLOR_HIGHLIGHT_TEXT]West Indiamen[COLOR_REVERT] com ele.</Portuguese>
+		<Portuguese>Aumente sua frota adicionando o Almirante [COLOR_TECH_TEXT]Piet Hein[COLOR_REVERT] à sua colônia como um Pai Fundador. Ele trará dois [COLOR_HIGHLIGHT_TEXT]Navios da Companhia das Índias Ocidentais[COLOR_REVERT] com ele.</Portuguese>
 		<French>Augmentez votre flotte en ajoutant l'Amiral [COLOR_TECH_TEXT]Piet Hein[COLOR_REVERT] à vos Pères Fondateurs. Il apportera avec lui [COLOR_HIGHLIGHT_TEXT]2 navires des Indes Occidentales[COLOR_REVERT].</French>
 		<German>Admiral [COLOR_TECH_TEXT]Piet Hein[COLOR_REVERT] kann sehr gelegen kommen, falls Ihr eine Erweiterung der Handelsflotte in Erwägung zieht. Als Gründervater rekrutiert Piet Hein [COLOR_HIGHLIGHT_TEXT]2 Westindienfahrer[COLOR_REVERT] für den Dienst in Eurer ruhmreichen Marine.</German>
 	</TEXT>
