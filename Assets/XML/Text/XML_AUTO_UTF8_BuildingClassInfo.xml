@@ -55,6 +55,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_BEER_FACTORY</Tag>
 		<English>Beer Factory</English>
+		<PortugueseBR>Fábrica de Cerveja</PortugueseBR>
 		<French>Brasserie industrielle</French>
 		<German>Bierfabrik</German>
 		<Italian>Beer Factory</Italian>
@@ -107,6 +108,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_BREWERS_HOUSE</Tag>
 		<English>Brewer's House</English>
+		<PortugueseBR>Casa do Cervejeiro</PortugueseBR>
 		<French>Maison du brasseur</French>
 		<German>Haus des Brauers</German>
 		<Italian>Brewers House</Italian>
@@ -115,6 +117,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_BREWERY</Tag>
 		<English>Brewery</English>
+		<PortugueseBR>Cervejaria</PortugueseBR>
 		<French>Brasserie</French>
 		<German>Brauerei</German>
 		<Italian>Brewery</Italian>
@@ -123,6 +126,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_BUTCHERS_HOUSE</Tag>
 		<English>Butcher's House</English>
+		<PortugueseBR>Casa do Açougue</PortugueseBR>
 		<French>Maison du Boucher</French>
 		<German>Haus des Schlachters</German>
 		<Italian>Butchers House</Italian>
@@ -131,6 +135,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_BUTCHERY</Tag>
 		<English>Butchery</English>
+		<PortugueseBR>Açougue</PortugueseBR>
 		<French>Boucherie</French>
 		<German>Schlachterei</German>
 		<Italian>Butchery</Italian>
@@ -295,6 +300,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_CITY_HOSPITAL</Tag>
 		<English>City Hospital</English>
+		<PortugueseBR>Hospital Municipal</PortugueseBR>
 		<French>Hôpital</French>
 		<German>Bezirkskrankenhaus</German>
 		<Italian>City Hospital</Italian>
@@ -497,6 +503,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_DYERS_HOUSE</Tag>
 		<English>Dyer's House</English>
+		<PortugueseBR>Casa do Tintureiro</PortugueseBR>
 		<French>Maison du teinturier</French>
 		<German>Haus des Färbers</German>
 		<Italian>Dyers House</Italian>
@@ -505,6 +512,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_DYERY</Tag>
 		<English>Dyery</English>
+		<PortugueseBR>Tinturaria</PortugueseBR>
 		<French>Teinturerie</French>
 		<German>Färberei</German>
 		<Italian>Dyery</Italian>
@@ -557,6 +565,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_FURNITURE_FACTORY</Tag>
 		<English>Furniture Factory</English>
+		<PortugueseBR>Fábrica de Móveis</PortugueseBR>
 		<French>Usine de meubles</French>
 		<German>Möbelfabrik</German>
 	</TEXT>
@@ -808,6 +817,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_LARGE_DYERY</Tag>
 		<English>Large Dyery</English>
+		<PortugueseBR>Tinturaria grande</PortugueseBR>
 		<French>Teinturerie industrielle</French>
 		<German>Große Färberei</German>
 		<Italian>Large Dyery</Italian>
@@ -816,6 +826,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_FACTORY</Tag>
 		<English>Leather Factory</English>
+		<PortugueseBR>Fábrica de couro</PortugueseBR>
 		<French>Tannerie industrielle</French>
 		<German>Lederfabrik</German>
 		<Italian>Leather Factory</Italian>
@@ -888,6 +899,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_MEDICAL_OFFICE</Tag>
 		<English>Medical Office</English>
+		<PortugueseBR>Consultório Médico</PortugueseBR>
 		<French>Cabinet médical</French>
 		<German>Arztpraxis</German>
 		<Italian>Medical Office</Italian>
@@ -1125,6 +1137,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_SLAUGHTERHOUSE</Tag>
 		<English>Slaughterhouse</English>
+		<PortugueseBR>Matadouro</PortugueseBR>
 		<French>Abattoir</French>
 		<German>Schlachthaus</German>
 		<Italian>Slaughterhouse</Italian>
@@ -1133,6 +1146,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_HALL</Tag>
 		<English>Spice Trader's Hall</English>
+		<PortugueseBR>Salão do Comerciante de Especiarias</PortugueseBR>
 		<French>Halle aux Épices</French>
 		<German>Gewürzhandelshalle</German>
 		<Italian>Spice Traders Hall</Italian>
@@ -1141,6 +1155,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_HOUSE</Tag>
 		<English>Spice Trader's House</English>
+		<PortugueseBR>Casa do comerciante de especiarias</PortugueseBR>
 		<French>Maison de l'épicier</French>
 		<German>Haus des Gewürzhändlers</German>
 		<Italian>Spice Trader's House</Italian>
@@ -1149,6 +1164,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_POST</Tag>
 		<English>Spice Trading Post</English>
+		<PortugueseBR>Entreposto Comercial de Especiarias</PortugueseBR>
 		<French>Épicerie</French>
 		<German>Gewürzhandelsposten</German>
 		<Italian>Spice Trading Post</Italian>
@@ -1221,6 +1237,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TANNERS_HOUSE</Tag>
 		<English>Tanner's House</English>
+		<PortugueseBR>Casa do Curtidor</PortugueseBR>
 		<French>Maison du Tanneur</French>
 		<German>Haus des Gerbers</German>
 		<Italian>Tanners House</Italian>
@@ -1229,6 +1246,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TANNERY</Tag>
 		<English>Tannery</English>
+		<PortugueseBR>Curtume</PortugueseBR>
 		<French>Tannerie</French>
 		<German>Gerberei</German>
 		<Italian>Tannery</Italian>
@@ -1237,6 +1255,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TAVERN</Tag>
 		<English>Tavern</English>
+		<PortugueseBR>Taberna</PortugueseBR>
 		<French>Taverne</French>
 		<German>Taverne</German>
 		<Italian>Tavern</Italian>
@@ -1361,6 +1380,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TOWN_HOSPITAL</Tag>
 		<English>Town Hospital</English>
+		<PortugueseBR>Hospital Municipal</PortugueseBR>
 		<French>Clinique</French>
 		<German>Stadtkrankenhaus</German>
 		<Italian>Town Hospital</Italian>
@@ -1393,6 +1413,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TRAIN_STATION</Tag>
 		<English>Waystation</English>
+		<PortugueseBR>Estação intermediária</PortugueseBR>
 		<French>Relais de poste</French>
 		<German>Postreiter- und Pferdewechselstation</German>
 		<Italian>Waystation</Italian>
@@ -1433,6 +1454,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_VILLAGE_WELL</Tag>
 		<English>Village Well</English>
+		<PortugueseBR>Aldeia Bem</PortugueseBR>
 		<French>Puits du village</French>
 		<German>Dorfbrunnen</German>
 		<Italian>Village Well</Italian>
@@ -1445,6 +1467,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_VINTAGERS_HOUSE</Tag>
 		<English>Vintager's House</English>
+		<PortugueseBR>Casa do Vintage</PortugueseBR>
 		<French>Maison du vigneron</French>
 		<German>Haus des Winzers</German>
 		<Italian>Vintager's House</Italian>
@@ -1645,6 +1668,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_WINERY</Tag>
 		<English>Winery</English>
+		<PortugueseBR>Vinícola</PortugueseBR>
 		<French>Chai à vin</French>
 		<German>Winzerei</German>
 		<Italian>Winery</Italian>
@@ -1653,6 +1677,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_WINE_FACTORY</Tag>
 		<English>Wine Factory</English>
+		<PortugueseBR>Fábrica de Vinhos</PortugueseBR>
 		<French>Domaine viticole</French>
 		<German>Weinfabrik</German>
 		<Italian>Wine Factory</Italian>

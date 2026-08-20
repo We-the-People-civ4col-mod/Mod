@@ -32,6 +32,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ADMINISTRATIVE</Tag>
 		<English>Administrative</English>
+		<PortugueseBR>Administrativo</PortugueseBR>
 		<French>Administratif</French>
 		<German>Administrativ</German>
 		<Italian>Amministrativo</Italian>
@@ -41,6 +42,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_ADMIRAL</Tag>
 		<English>Experienced Admiral</English>
+		<PortugueseBR>Almirante Experiente</PortugueseBR>
 		<French>Amiral expérimenté</French>
 		<German>Erfahrener Admiral</German>
 		<Italian>Experienced Admiral</Italian>
@@ -50,6 +52,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_AGRICULTURAL</Tag>
 		<English>Agricultural</English>
+		<PortugueseBR>Agrícola</PortugueseBR>
 		<French>Agricultural</French>
 		<German>Landwirtschaft</German>
 		<Italian>Agricultural</Italian>
@@ -766,6 +769,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_EXPANSIVE</Tag>
 		<English>Expansive</English>
+		<PortugueseBR>Expansivo</PortugueseBR>
 		<French>Expansionniste</French>
 		<German>Expansiv</German>
 		<Italian>Espansivo</Italian>
@@ -1091,6 +1095,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GATHERER</Tag>
 		<English>Gatherer</English>
+		<PortugueseBR>Coletor</PortugueseBR>
 		<French>Collecteur</French>
 		<German>Sammler</German>
 		<Italian>Gatherer</Italian>
@@ -1569,6 +1574,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_IMPERIALIST</Tag>
 		<English>Imperialist</English>
+		<PortugueseBR>Imperialista</PortugueseBR>
 		<French>Impérialiste</French>
 		<German>Imperialist</German>
 		<Italian>Imperialist</Italian>
@@ -2499,6 +2505,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PATRIARCH</Tag>
 		<English>Patriarch</English>
+		<PortugueseBR>Patriarca</PortugueseBR>
 		<French>Patriarche:Matriarche</French>
 		<German>Stammeshäuptling</German>
 		<Italian>Patriarch</Italian>
@@ -2969,6 +2976,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_SEAFARERS</Tag>
 		<English>Seafarers</English>
+		<PortugueseBR>Marinheiros</PortugueseBR>
 		<French>Navigateur</French>
 		<German>Seefahrer</German>
 		<Italian>Seafarers</Italian>
@@ -3128,6 +3136,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_UNDEMANDING</Tag>
 		<English>Undemanding</English>
+		<PortugueseBR>Pouco exigente</PortugueseBR>
 		<French>Peu exigeant</French>
 		<German>Genügsam</German>
 		<Italian>Undemanding</Italian>

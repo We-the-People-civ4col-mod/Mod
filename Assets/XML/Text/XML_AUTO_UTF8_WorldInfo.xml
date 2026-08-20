@@ -3,6 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_TINY</Tag>
 		<English>Tiny</English>
+		<PortugueseBR>Minúsculo</PortugueseBR>
 		<French>Minuscule</French>
 		<German>Winzig</German>
 		<Italian>Minuscolo</Italian>
@@ -16,6 +17,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_SMALL</Tag>
 		<English>Small</English>
+		<PortugueseBR>Pequeno</PortugueseBR>
 		<French>Petite</French>
 		<German>Klein</German>
 		<Italian>Piccolo</Italian>
@@ -29,6 +31,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_STANDARD</Tag>
 		<English>Standard</English>
+		<PortugueseBR>Padrão</PortugueseBR>
 		<French>Normale</French>
 		<German>Standard</German>
 		<Italian>Normale</Italian>
@@ -42,6 +45,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_LARGE</Tag>
 		<English>Large</English>
+		<PortugueseBR>Grande</PortugueseBR>
 		<French>Grande</French>
 		<German>Groß</German>
 		<Italian>Grande</Italian>
@@ -55,6 +59,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_HUGE</Tag>
 		<English>Huge</English>
+		<PortugueseBR>Enorme</PortugueseBR>
 		<French>Immense</French>
 		<German>Riesig</German>
 		<Italian>Enorme</Italian>
@@ -68,6 +73,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_MASSIVE</Tag>
 		<English>Massive</English>
+		<PortugueseBR>Enorme</PortugueseBR>
 		<French>Massive</French>
 		<German>Massiv</German>
 		<Italian>Massicce</Italian>
@@ -81,6 +87,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_GIGANTIC</Tag>
 		<English>Gigantic</English>
+		<PortugueseBR>Gigantesco</PortugueseBR>
 		<French>Gigantesque</French>
 		<German>Gigantisch</German>
 		<Italian>Gigantesco</Italian>

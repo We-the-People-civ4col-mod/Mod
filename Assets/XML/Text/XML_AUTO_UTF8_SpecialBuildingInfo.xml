@@ -3,6 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_BEER</Tag>
 		<English>Beer production</English>
+		<PortugueseBR>Produção de cerveja</PortugueseBR>
 		<French>Production de bière</French>
 		<German>Brauereien</German>
 		<Italian>Beerproduction</Italian>
@@ -91,6 +92,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_COLOURED_CLOTH</Tag>
 		<English>Dyery</English>
+		<PortugueseBR>Tinturaria</PortugueseBR>
 		<French>Teinturerie</French>
 		<German>Färbereien</German>
 		<Italian>Dyery</Italian>
@@ -99,6 +101,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CORN</Tag>
 		<English>Corn Chamber</English>
+		<PortugueseBR>Câmara de Milho</PortugueseBR>
 		<French>Grenier à maïs</French>
 		<German>Getreidekammer</German>
 		<Italian>Corn</Italian>
@@ -181,6 +184,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_FURNITURE</Tag>
 		<English>Furniture Production</English>
+		<PortugueseBR>Produção de Móveis</PortugueseBR>
 		<French>Fabrication des Meubles</French>
 		<German>Möbelherstellung</German>
 		<Italian>Furnitureproduction</Italian>
@@ -209,6 +213,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_HEALTH</Tag>
 		<English>Medical Care</English>
+		<PortugueseBR>Cuidados Médicos</PortugueseBR>
 		<French>Soins médicaux</French>
 		<German>Medizinische Versorgung</German>
 		<Italian>Medical Care</Italian>
@@ -237,6 +242,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_LEATHER</Tag>
 		<English>Leather Production</English>
+		<PortugueseBR>Produção de couro</PortugueseBR>
 		<French>Fabrique du Cuir</French>
 		<German>Lederproduktion</German>
 		<Italian>Leatherproduction</Italian>
@@ -257,6 +263,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_MILL</Tag>
 		<English>Mill</English>
+		<PortugueseBR>Moinho</PortugueseBR>
 		<French>Moulin</French>
 		<German>Mühle</German>
 		<Italian>Mill</Italian>
@@ -285,6 +292,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_PRINT</Tag>
 		<English>Printing Buildings</English>
+		<PortugueseBR>Impressão de edifícios</PortugueseBR>
 		<French>Bâtiments d'imprimerie</French>
 		<German>Druckereien</German>
 		<Italian>Edifici per la stampa</Italian>
@@ -313,6 +321,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_SPICES</Tag>
 		<English>Spice Trading</English>
+		<PortugueseBR>Comércio de especiarias</PortugueseBR>
 		<French>Commerce des Épices et du Sel</French>
 		<German>Gewürzhandel</German>
 		<Italian>Spicetrading</Italian>
@@ -321,6 +330,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_TAVERN</Tag>
 		<English>Tavern</English>
+		<PortugueseBR>Taberna</PortugueseBR>
 		<French>Taverne</French>
 		<German>Taverne</German>
 		<Italian>Tavern</Italian>
@@ -349,6 +359,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_TRADE</Tag>
 		<English>Trade</English>
+		<PortugueseBR>Comércio</PortugueseBR>
 		<French>Commerce</French>
 		<German>Handel</German>
 		<Italian>Trade</Italian>
@@ -357,6 +368,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_TRAIN_STATION</Tag>
 		<English>Waystation</English>
+		<PortugueseBR>Estação intermediária</PortugueseBR>
 		<French>Relais de poste</French>
 		<German>Postreiter- und Pferdewechselstation</German>
 		<Italian>Waystation</Italian>
@@ -405,6 +417,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_WELL</Tag>
 		<English>Water Well</English>
+		<PortugueseBR>Poço de água</PortugueseBR>
 		<French>Puits à eau</French>
 		<German>Brunnen</German>
 		<Italian>Water Well</Italian>
@@ -413,6 +426,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_WHALE_OIL</Tag>
 		<English>Train Oil Production</English>
+		<PortugueseBR>Treinar produção de petróleo</PortugueseBR>
 		<French>Production d'Huile de baleine</French>
 		<German>Walfettverarbeitung</German>
 		<Italian>Whaleoilproduction</Italian>
@@ -421,6 +435,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_WINE</Tag>
 		<English>Wine Production</English>
+		<PortugueseBR>Produção de Vinho</PortugueseBR>
 		<French>Production de Vin</French>
 		<German>Kellereien</German>
 		<Italian>Wineproduction</Italian>
