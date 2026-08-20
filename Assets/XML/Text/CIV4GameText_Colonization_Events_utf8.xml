@@ -2700,7 +2700,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1_HELP</Tag>
 		<English>If this treasure is still in the harbor after 5 turns, the pirates will steal it. If you move it away in time, a Pirate Cutter will appear off the coast instead.</English>
-		<Portuguese>Se este tesouro ainda estiver no porto após 5 turnos, os piratas irão roubá-lo. Se você afastá-lo a tempo, um Pirate Cutter aparecerá na costa.</Portuguese>
+		<Portuguese>Se este tesouro ainda estiver no porto após 5 turnos, os piratas irão roubá-lo. Se você afastá-lo a tempo, um Cúter pirata aparecerá na costa.</Portuguese>
 		<German>Wenn sich dieser Schatz nach 5 Runden noch immer im Hafen befindet, werden die Piraten ihn stehlen. Bringst du ihn rechtzeitig fort, werden die Piraten vor der Küste lauern.</German>
 		<Russian>Если через 5 ходов это Сокровище будет находиться в гавани, его украдут пираты. Если же вы успеете его убрать, у берегов появится Пиратский катер.</Russian>
 	</TEXT>
@@ -2721,7 +2721,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1A_CUTTER</Tag>
 		<English>A Pirate Cutter has appeared off the coast of %s1!</English>
-		<Portuguese>Um Pirate Cutter apareceu na costa de %s1!</Portuguese>
+		<Portuguese>Um Cúter pirata apareceu na costa de %s1!</Portuguese>
 		<German>Vor der Küste von %s1 ist ein Piratenkutter aufgetaucht!</German>
 		<Russian>У берегов города %s1 появился Пиратский катер!</Russian>
 	</TEXT>

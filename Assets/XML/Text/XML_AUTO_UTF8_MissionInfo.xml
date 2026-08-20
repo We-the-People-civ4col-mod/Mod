@@ -293,11 +293,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_ROUTE_TO_ROAD</Tag>
 		<English>Route to (country road)</English>
+		<Portuguese>Construir estrada de terra até</Portuguese>
 		<Russian>Построить проселочную дорогу к выбранной точке</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_ROUTE_TO_ROAD_HELP</Tag>
 		<English>This order causes the pioneer to build a country road to the location selected. The pioneer will follow the shortest path to the location. The pioneer wakes when it has completed the assignment.</English>
+		<Portuguese>Esta ordem faz com que o pioneiro construa uma estrada de terra até o local selecionado. O pioneiro seguirá o caminho mais curto até o local. O pioneiro acorda quando conclui a tarefa.</Portuguese>
 		<Russian>Этот приказ заставляет первопроходца построить проселочную дорогу к выбранной точке на карте. Первопроходец будет следовать кратчайшим путем к локации. Он станет активным для других приказов после выполнения текущего задания.</Russian>
 	</TEXT>
 	<TEXT>
