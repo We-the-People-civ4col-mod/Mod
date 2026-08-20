@@ -100,17 +100,19 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_0</Tag>
 		<English>Minimum 3</English>
+		<Portuguese>Mínimo 3</Portuguese>
 		<Russian>Минимум 3 клетки</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_1</Tag>
 		<English>Minimum 5</English>
+		<Portuguese>Mínimo 5</Portuguese>
 		<Russian>Минимум 5 клеток</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_2</Tag>
 		<English>Minimum 7 Plots per Large River (default)</English>
-		<Portuguese>Mínimo de 7 parcelas por rio grande (padrão)</Portuguese>
+		<Portuguese>Mínimo de 7 lotes por rio grande (padrão)</Portuguese>
 		<French>Minimum 7 cases par grande rivière (par défaut)</French>
 		<Russian>Минимум 7 клеток (по умолчанию)</Russian>
 		<Hungarian>Minimum 7 Mező Nagy Folyónként (alapértelmezett)</Hungarian>
@@ -118,16 +120,19 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_3</Tag>
 		<English>Minimum 9</English>
+		<Portuguese>Mínimo 9</Portuguese>
 		<Russian>Минимум 9 клеток</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_4</Tag>
 		<English>Minimum 11</English>
+		<Portuguese>Mínimo 11</Portuguese>
 		<Russian>Минимум 11 клеток</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_CUSTOM_OPTION_MIN_LARGE_RIVER_LENGTH_OPT_5</Tag>
 		<English>Minimum 13</English>
+		<Portuguese>Mínimo 13</Portuguese>
 		<Russian>Минимум 13 клеток</Russian>
 	</TEXT>
 	<TEXT>
