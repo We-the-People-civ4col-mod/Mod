@@ -9,7 +9,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_STATUE</Tag>
 		<English>Statue</English>
-		<Portuguese>Estátua</Portuguese>
+		
+		<Portuguese>
+			<Text>Estátua</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Statue</Text>
 			<Gender>Female</Gender>
@@ -21,7 +26,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_GRAVEYARD</Tag>
 		<English>Graveyard</English>
-		<Portuguese>Cemitério</Portuguese>
+		
+		<Portuguese>
+			<Text>Cemitério</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Cimetière</French>
 		<German>
 			<Text>Friedhof</Text>
@@ -34,7 +44,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_GRAVEYARD</Tag>
 		<English>Graveyard</English>
-		<Portuguese>Cemitério</Portuguese>
+		
+		<Portuguese>
+			<Text>Cemitério</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Cimetière</French>
 		<German>
 			<Text>Friedhof</Text>
@@ -47,7 +62,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GRAVEYARD</Tag>
 		<English>Graveyard</English>
-		<Portuguese>Cemitério</Portuguese>
+		
+		<Portuguese>
+			<Text>Cemitério</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Cimetière</French>
 		<German>
 			<Text>Friedhof</Text>
@@ -75,7 +95,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CONFECTIONER</Tag>
 		<English>Confectioner</English>
-		<Portuguese>Confeitaria</Portuguese>
+		
+		<Portuguese>
+			<Text>Confeitaria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Confiseur</French>
 		<German>
 			<Text>Konditor</Text>
@@ -87,7 +112,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_HOUSE</Tag>
 		<English>Confectioner's House</English>
-		<Portuguese>Casa do Confeiteiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do Confeiteiro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du confiseur</French>
 		<German>
 			<Text>Haus des Konditors</Text>
@@ -100,7 +130,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_SHOP</Tag>
 		<English>Confectioner's Shop</English>
-		<Portuguese>Loja do Confeiteiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Loja do Confeiteiro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du confiseur</French>
 		<German>
 			<Text>Konditorladen</Text>
@@ -113,7 +148,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_CONFECTIONER_FACTORY</Tag>
 		<English>Confectionery</English>
-		<Portuguese>Fábrica de Doces</Portuguese>
+		
+		<Portuguese>
+			<Text>Fábrica de Doces</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Confiserie</French>
 		<German>
 			<Text>Konditorei</Text>
@@ -126,7 +166,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE</Tag>
 		<English>Confectioner's House</English>
-		<Portuguese>Casa do Confeiteiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do Confeiteiro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du confiseur</French>
 		<German>
 			<Text>Haus des Konditors</Text>
@@ -139,7 +184,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP</Tag>
 		<English>Confectioner's Shop</English>
-		<Portuguese>Loja do Confeiteiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Loja do Confeiteiro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du confiseur</French>
 		<German>
 			<Text>Konditorladen</Text>
@@ -152,7 +202,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY</Tag>
 		<English>Confectionery</English>
-		<Portuguese>Fábrica de Doces</Portuguese>
+		
+		<Portuguese>
+			<Text>Fábrica de Doces</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Confiserie</French>
 		<German>
 			<Text>Konditorei</Text>
@@ -208,7 +263,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_LEATHER_PADDER</Tag>
 		<English>Leatherworker</English>
-		<Portuguese>Marroquinaria</Portuguese>
+		
+		<Portuguese>
+			<Text>Marroquinaria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maroquinier</French>
 		<German>
 			<Text>Lederpolsterei</Text>
@@ -220,7 +280,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_HOUSE</Tag>
 		<English>Leatherworker's House</English>
-		<Portuguese>Casa do Couro</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do Couro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du maroquinier</French>
 		<German>
 			<Text>Haus des Lederschneiders</Text>
@@ -233,7 +298,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_SHOP</Tag>
 		<English>Leatherworker's Shop</English>
-		<Portuguese>Loja de Couro</Portuguese>
+		
+		<Portuguese>
+			<Text>Loja de Couro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du maroquinier</French>
 		<German>
 			<Text>Lederwarenladen</Text>
@@ -246,7 +316,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_LEATHER_PADDER_FACTORY</Tag>
 		<English>Leather Coat Factory</English>
-		<Portuguese>Fábrica de casacos de couro</Portuguese>
+		
+		<Portuguese>
+			<Text>Fábrica de casacos de couro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Usine de maroquinerie</French>
 		<German>
 			<Text>Lederwarenfabrik</Text>
@@ -259,7 +334,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_HOUSE</Tag>
 		<English>Leatherworker's House</English>
-		<Portuguese>Casa do Couro</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do Couro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du maroquinier</French>
 		<German>
 			<Text>Haus des Lederschneiders</Text>
@@ -272,7 +352,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_SHOP</Tag>
 		<English>Leatherworker's Shop</English>
-		<Portuguese>Loja de Couro</Portuguese>
+		
+		<Portuguese>
+			<Text>Loja de Couro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du Maroquinier</French>
 		<German>
 			<Text>Lederwarenladen</Text>
@@ -285,7 +370,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_PADDER_FACTORY</Tag>
 		<English>Leather Coat Factory</English>
-		<Portuguese>Fábrica de casacos de couro</Portuguese>
+		
+		<Portuguese>
+			<Text>Fábrica de casacos de couro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Usine de maroquinerie</French>
 		<German>
 			<Text>Lederwarenfabrik</Text>
@@ -344,7 +434,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_OIL_TRADER</Tag>
 		<English>Cooking Oil Trader</English>
-		<Portuguese>Comércio de óleo</Portuguese>
+		
+		<Portuguese>
+			<Text>Comércio de óleo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Marchand d'huile</French>
 		<German>
 			<Text>Speiseölhändler</Text>
@@ -356,7 +451,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_HOUSE</Tag>
 		<English>Cooking Oil Trader's House</English>
-		<Portuguese>Casa do comerciante de óleo de cozinha</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do comerciante de óleo de cozinha</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du marchand d'huile</French>
 		<German>
 			<Text>Haus des Ölhändlers</Text>
@@ -369,7 +469,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_SHOP</Tag>
 		<English>Cooking Oil Trader's Shop</English>
-		<Portuguese>Loja do comerciante de óleo de cozinha</Portuguese>
+		
+		<Portuguese>
+			<Text>Loja do comerciante de óleo de cozinha</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du marchand d'huile</French>
 		<German>
 			<Text>Speiseölladen</Text>
@@ -382,7 +487,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_OIL_TRADER_FACTORY</Tag>
 		<English>Cooking Oil Trader Factory</English>
-		<Portuguese>Fábrica de comerciante de óleo de cozinha</Portuguese>
+		
+		<Portuguese>
+			<Text>Fábrica de comerciante de óleo de cozinha</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Pressoir à huile industriel</French>
 		<German>
 			<Text>Speiseölfabrik</Text>
@@ -395,7 +505,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_HOUSE</Tag>
 		<English>Cooking Oil Trader's House</English>
-		<Portuguese>Casa do comerciante de óleo de cozinha</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do comerciante de óleo de cozinha</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du marchand d'huile</French>
 		<German>
 			<Text>Haus des Ölhändlers</Text>
@@ -408,7 +523,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_SHOP</Tag>
 		<English>Cooking Oil Trader's Shop</English>
-		<Portuguese>Loja do comerciante de óleo de cozinha</Portuguese>
+		
+		<Portuguese>
+			<Text>Loja do comerciante de óleo de cozinha</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du marchand d'huile</French>
 		<German>
 			<Text>Speiseölladen</Text>
@@ -421,7 +541,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_OIL_TRADER_FACTORY</Tag>
 		<English>Cooking Oil Factory</English>
-		<Portuguese>Fábrica de óleo de cozinha</Portuguese>
+		
+		<Portuguese>
+			<Text>Fábrica de óleo de cozinha</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Pressoir à huile industriel</French>
 		<German>
 			<Text>Speiseölfabrik</Text>
@@ -480,7 +605,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_ROASTER</Tag>
 		<English>Roastery</English>
-		<Portuguese>Torrefação</Portuguese>
+		
+		<Portuguese>
+			<Text>Torrefação</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Erdnussrösterei</Text>
 			<Gender>Female</Gender>
@@ -491,7 +621,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_ROASTER_HOUSE</Tag>
 		<English>Roaster's House</English>
-		<Portuguese>Casa do Torrador</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do Torrador</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison de torréfaction</French>
 		<German>
 			<Text>Haus des Rösters</Text>
@@ -504,7 +639,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_ROASTER_SHOP</Tag>
 		<English>Roaster's Shop</English>
-		<Portuguese>Loja do Torrador</Portuguese>
+		
+		<Portuguese>
+			<Text>Loja do Torrador</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du rôtisseur de graines</French>
 		<German>
 			<Text>Röstwarenladen</Text>
@@ -517,7 +657,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_ROASTER_FACTORY</Tag>
 		<English>Roastery</English>
-		<Portuguese>Torrefação</Portuguese>
+		
+		<Portuguese>
+			<Text>Torrefação</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Rôtisserie de graines</French>
 		<German>
 			<Text>Rösterei</Text>
@@ -530,7 +675,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROASTER_HOUSE</Tag>
 		<English>Roaster's House</English>
-		<Portuguese>Casa do Torrador</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do Torrador</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du rôtisseur de graines</French>
 		<German>
 			<Text>Haus des Rösters</Text>
@@ -543,7 +693,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROASTER_SHOP</Tag>
 		<English>Roaster's Shop</English>
-		<Portuguese>Loja do Torrador</Portuguese>
+		
+		<Portuguese>
+			<Text>Loja do Torrador</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du rôtisseur de graines</French>
 		<German>
 			<Text>Röstwarenladen</Text>
@@ -556,7 +711,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_ROASTER_FACTORY</Tag>
 		<English>Roastery</English>
-		<Portuguese>Torrefação</Portuguese>
+		
+		<Portuguese>
+			<Text>Torrefação</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Rôtisserie de graines industrielle </French>
 		<German>
 			<Text>Rösterei</Text>
@@ -614,7 +774,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_POTTERY</Tag>
 		<English>Potter's House</English>
-		<Portuguese>Casa do Oleiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do Oleiro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du potier</French>
 		<German>
 			<Text>Töpferei</Text>
@@ -626,7 +791,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_HOUSE</Tag>
 		<English>Potter's House</English>
-		<Portuguese>Casa do Oleiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do Oleiro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du potier</French>
 		<German>
 			<Text>Haus des Töpfers</Text>
@@ -639,7 +809,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_SHOP</Tag>
 		<English>Potter's Shop</English>
-		<Portuguese>Loja do Oleiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Loja do Oleiro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du potier</French>
 		<German>
 			<Text>Töpferladen</Text>
@@ -652,7 +827,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_POTTERY_FACTORY</Tag>
 		<English>Pottery Factory</English>
-		<Portuguese>Fábrica de Cerâmica</Portuguese>
+		
+		<Portuguese>
+			<Text>Fábrica de Cerâmica</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Usine de poterie</French>
 		<German>
 			<Text>Töpferei</Text>
@@ -665,7 +845,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POTTERY_HOUSE</Tag>
 		<English>Potter's House</English>
-		<Portuguese>Casa do Oleiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do Oleiro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du potier</French>
 		<German>
 			<Text>Haus des Töpfers</Text>
@@ -678,7 +863,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POTTERY_SHOP</Tag>
 		<English>Potter's Shop</English>
-		<Portuguese>Loja do Oleiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Loja do Oleiro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du potier</French>
 		<German>
 			<Text>Töpferladen</Text>
@@ -691,7 +881,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_POTTERY_FACTORY</Tag>
 		<English>Pottery Factory</English>
-		<Portuguese>Fábrica de Cerâmica</Portuguese>
+		
+		<Portuguese>
+			<Text>Fábrica de Cerâmica</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Usine de poterie</French>
 		<German>
 			<Text>Töpferei</Text>
@@ -750,7 +945,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_TAILOR</Tag>
 		<English>Tailor</English>
-		<Portuguese>Alfaiataria</Portuguese>
+		
+		<Portuguese>
+			<Text>Alfaiataria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Schneiderei</Text>
 			<Gender>Female</Gender>
@@ -761,7 +961,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_HOUSE</Tag>
 		<English>Tailor's House</English>
-		<Portuguese>Casa do Alfaiate</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do Alfaiate</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Haus des Schneiders</Text>
 			<Gender>Neuter</Gender>
@@ -773,7 +978,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_SHOP</Tag>
 		<English>Tailor's Shop</English>
-		<Portuguese>Alfaiataria</Portuguese>
+		
+		<Portuguese>
+			<Text>Alfaiataria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Schneiderladen</Text>
 			<Gender>Male</Gender>
@@ -785,7 +995,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TAILOR_FACTORY</Tag>
 		<English>Clothing Factory</English>
-		<Portuguese>Fábrica de roupas</Portuguese>
+		
+		<Portuguese>
+			<Text>Fábrica de roupas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Schneiderei</Text>
 			<Gender>Female</Gender>
@@ -797,7 +1012,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR_HOUSE</Tag>
 		<English>Tailor's House</English>
-		<Portuguese>Casa do Alfaiate</Portuguese>
+		
+		<Portuguese>
+			<Text>Casa do Alfaiate</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du tailleur de vêtements</French>
 		<German>
 			<Text>Haus des Schneiders</Text>
@@ -810,7 +1030,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR_SHOP</Tag>
 		<English>Tailor's Shop</English>
-		<Portuguese>Alfaiataria</Portuguese>
+		
+		<Portuguese>
+			<Text>Alfaiataria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du tailleur de vêtements</French>
 		<German>
 			<Text>Schneiderladen</Text>
@@ -823,7 +1048,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TAILOR_FACTORY</Tag>
 		<English>Clothing Factory</English>
-		<Portuguese>Fábrica de roupas</Portuguese>
+		
+		<Portuguese>
+			<Text>Fábrica de roupas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Usine de vêtements</French>
 		<German>
 			<Text>Schneiderei</Text>
@@ -879,7 +1109,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_BLACK_POWDER</Tag>
 		<English>Powder Shed</English>
-		<Portuguese>Paiol de pólvora</Portuguese>
+		
+		<Portuguese>
+			<Text>Paiol de pólvora</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Pulvermühle</Text>
 			<Gender>Female</Gender>
@@ -901,7 +1136,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_SHOP</Tag>
 		<English>Powder Makers' Shop</English>
-		<Portuguese>Loja de fabricantes de pó</Portuguese>
+		
+		<Portuguese>
+			<Text>Loja de fabricantes de pó</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du fabricant de poudre</French>
 		<German>
 			<Text>Pulverladen</Text>
@@ -914,7 +1154,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_FACTORY</Tag>
 		<English>Powder Magazine</English>
-		<Portuguese>Paiol de pólvora</Portuguese>
+		
+		<Portuguese>
+			<Text>Paiol de pólvora</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Usine poudrière</French>
 		<German>
 			<Text>Pulverfabrik</Text>
@@ -938,7 +1183,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_SHOP</Tag>
 		<English>Powder Makers' Shop</English>
-		<Portuguese>Loja de fabricantes de pó</Portuguese>
+		
+		<Portuguese>
+			<Text>Loja de fabricantes de pó</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du fabricant de poudre</French>
 		<German>
 			<Text>Pulverladen</Text>
@@ -951,7 +1201,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_FACTORY</Tag>
 		<English>Powder Magazine</English>
-		<Portuguese>Paiol de pólvora</Portuguese>
+		
+		<Portuguese>
+			<Text>Paiol de pólvora</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Usine poudrière</French>
 		<German>
 			<Text>Pulverfabrik</Text>
@@ -1031,7 +1286,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_BAKER_SHOP</Tag>
 		<English>Bakeshop</English>
-		<Portuguese>Padaria</Portuguese>
+		
+		<Portuguese>
+			<Text>Padaria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Bäckerladen</Text>
 			<Gender>Male</Gender>
@@ -1065,7 +1325,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_BAKER_SHOP</Tag>
 		<English>Bakeshop</English>
-		<Portuguese>Padaria</Portuguese>
+		
+		<Portuguese>
+			<Text>Padaria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Atelier du boulanger</French>
 		<German>
 			<Text>Bäckerladen</Text>
@@ -1135,7 +1400,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_LAW</Tag>
 		<English>Courthouse</English>
-		<Portuguese>Tribunal</Portuguese>
+		
+		<Portuguese>
+			<Text>Tribunal</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Gerichtsgebäude</Text>
 			<Gender>Neuter</Gender>
@@ -1146,7 +1416,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_VILLAGE_COURT</Tag>
 		<English>Village Courthouse</English>
-		<Portuguese>Tribunal da Vila</Portuguese>
+		
+		<Portuguese>
+			<Text>Tribunal da Vila</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du juge</French>
 		<German>
 			<Text>Dorfgerichtshaus</Text>
@@ -1159,7 +1434,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TOWN_COURT</Tag>
 		<English>Town Courthouse</English>
-		<Portuguese>Tribunal da cidade</Portuguese>
+		
+		<Portuguese>
+			<Text>Tribunal da cidade</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Tribunal de la ville</French>
 		<German>
 			<Text>Stadtgerichtshaus</Text>
@@ -1172,7 +1452,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_CITY_COURT</Tag>
 		<English>City Courthouse</English>
-		<Portuguese>Tribunal da cidade</Portuguese>
+		
+		<Portuguese>
+			<Text>Tribunal da cidade</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Tribunal d'arrondissement</French>
 		<German>
 			<Text>Distriktsgerichthaus</Text>
@@ -1185,7 +1470,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_SUPREME_COURT</Tag>
 		<English>Supreme Court</English>
-		<Portuguese>Supremo Tribunal</Portuguese>
+		
+		<Portuguese>
+			<Text>Supremo Tribunal</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Cour suprême</French>
 		<German>
 			<Text>Oberstes Gericht</Text>
@@ -1198,7 +1488,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_VILLAGE_COURT</Tag>
 		<English>Village Courthouse</English>
-		<Portuguese>Tribunal da Vila</Portuguese>
+		
+		<Portuguese>
+			<Text>Tribunal da Vila</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Maison du juge de paix</French>
 		<German>
 			<Text>Dorfgerichtshaus</Text>
@@ -1211,7 +1506,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TOWN_COURT</Tag>
 		<English>Town Courthouse</English>
-		<Portuguese>Tribunal da cidade</Portuguese>
+		
+		<Portuguese>
+			<Text>Tribunal da cidade</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Tribunal de la ville</French>
 		<German>
 			<Text>Stadtgerichtshaus</Text>
@@ -1224,7 +1524,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CITY_COURT</Tag>
 		<English>City Courthouse</English>
-		<Portuguese>Tribunal da cidade</Portuguese>
+		
+		<Portuguese>
+			<Text>Tribunal da cidade</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Tribunal d'arrondissement</French>
 		<German>
 			<Text>Distriktsgerichthaus</Text>
@@ -1237,7 +1542,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SUPREME_COURT</Tag>
 		<English>Supreme Court</English>
-		<Portuguese>Supremo Tribunal</Portuguese>
+		
+		<Portuguese>
+			<Text>Supremo Tribunal</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Cour suprême</French>
 		<German>
 			<Text>Oberstes Gericht</Text>
@@ -1307,7 +1617,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_JAIL</Tag>
 		<English>Jail</English>
-		<Portuguese>Prisão</Portuguese>
+		
+		<Portuguese>
+			<Text>Prisão</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Prison</French>
 		<German>
 			<Text>Gefängnis</Text>
@@ -1319,7 +1634,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_JAIL</Tag>
 		<English>Jail</English>
-		<Portuguese>Prisão</Portuguese>
+		
+		<Portuguese>
+			<Text>Prisão</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Prison</French>
 		<German>
 			<Text>Gefängnis</Text>
@@ -1332,7 +1652,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_JAIL</Tag>
 		<English>Jail</English>
-		<Portuguese>Prisão</Portuguese>
+		
+		<Portuguese>
+			<Text>Prisão</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Prison</French>
 		<German>
 			<Text>Gefängnis</Text>

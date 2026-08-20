@@ -753,9 +753,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Torradeira (café): Torradeiras (café)</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -890,9 +891,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Milícia Colonial:Milícias Coloniais</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -1055,7 +1057,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_COWBOY</Tag>
 		<English>Cowboy:Cowboys</English>
-		<Portuguese>Cowboy: Cowboys</Portuguese>
+		
+		<Portuguese>
+			<Text>Cowboy: Cowboys</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Éleveur de bovins:Éleveurs de bovins</Text>
 			<Gender>Male</Gender>
@@ -1220,7 +1227,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_DYER</Tag>
 		<English>Cloth Dyer (Indigo):Cloth Dyers (Indigo)</English>
-		<Portuguese>Tintureiro de Tecido (Índigo):Tinturadores de Tecido (Índigo)</Portuguese>
+		
+		<Portuguese>
+			<Text>Tintureiro de Tecido (Índigo):Tinturadores de Tecido (Índigo)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Teinturier (Indigo):Teinturiers (Indigo)</Text>
 			<Gender>Male</Gender>
@@ -1266,7 +1278,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_WOOL_DYER</Tag>
 		<English>Wool Dyer (Indigo):Wool Dyers (Indigo)</English>
-		<Portuguese>Tintureiro de Lã (Índigo):Tinturadores de Lã (Índigo)</Portuguese>
+		
+		<Portuguese>
+			<Text>Tintureiro de Lã (Índigo):Tinturadores de Lã (Índigo)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Teinturier (Indigo):Teinturiers (Indigo)</Text>
 			<Gender>Male</Gender>
@@ -1404,7 +1421,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_FISHING_BOAT_WORKING</Tag>
 		<English>Fishing Boat:Fishing Boats</English>
-		<Portuguese>Barco de pesca:barcos de pesca</Portuguese>
+		
+		<Portuguese>
+			<Text>Barco de pesca:barcos de pesca</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bateau de pêche:Bateaux de pêche</Text>
 			<Gender>Male</Gender>
@@ -1915,9 +1937,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Cavalaria Pesada: Cavalaria Pesada</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -2124,7 +2147,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_LINE_INFANTRY</Tag>
 		<English>Line Infantry</English>
-		<Portuguese>Infantaria de linha</Portuguese>
+		
+		<Portuguese>
+			<Text>Infantaria de linha</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Infanterie de ligne:Infanteries de ligne</Text>
 			<Gender>Male</Gender>
@@ -2715,7 +2743,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROPES_MAKER</Tag>
 		<English>Roper (Hemp):Ropers (Hemp)</English>
-		<Portuguese>Roper (cânhamo):Ropers (cânhamo)</Portuguese>
+		
+		<Portuguese>
+			<Text>Roper (cânhamo):Ropers (cânhamo)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cordelier (Chanvre):Cordeliers (Chanvre)</Text>
 			<Gender>Male</Gender>
@@ -2731,7 +2764,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_ROPES_MAKER_FLAX</Tag>
 		<English>Roper (Flax):Ropers (Flax)</English>
-		<Portuguese>Roper (Linho):Ropers (Linho)</Portuguese>
+		
+		<Portuguese>
+			<Text>Roper (Linho):Ropers (Linho)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cordelier (Lin):Cordeliers (Lin)</Text>
 			<Gender>Male</Gender>
@@ -2769,9 +2807,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Cavalaria Real: Cavalaria Real</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -2861,9 +2900,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Infantaria Ligeira Real: Infantaria Ligeira Real</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -2907,9 +2947,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Infantaria da Linha Real:Infantaria da Linha Real</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -2949,7 +2990,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER</Tag>
 		<English>Sailmaker (Flax):Sailmakers (Flax)</English>
-		<Portuguese>Fabricante de velas (Linho):Fabricantes de velas (Linho)</Portuguese>
+		
+		<Portuguese>
+			<Text>Fabricante de velas (Linho):Fabricantes de velas (Linho)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Voilier (Lin):Voiliers (Lin)</Text>
 			<Gender>Male</Gender>
@@ -2965,7 +3011,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_HEMP</Tag>
 		<English>Sailmaker (Hemp):Sailmakers (Hemp)</English>
-		<Portuguese>Sailmaker (cânhamo): Sailmakers (cânhamo)</Portuguese>
+		
+		<Portuguese>
+			<Text>Sailmaker (cânhamo): Sailmakers (cânhamo)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Voilier (Chanvre):Voiliers (Chanvre)</Text>
 			<Gender>Male</Gender>
@@ -3208,7 +3259,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_SHEPHERD</Tag>
 		<English>Shepherd:Shepherds</English>
-		<Portuguese>Pastor: pastores</Portuguese>
+		
+		<Portuguese>
+			<Text>Pastor: pastores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Berger:Bergers</Text>
 			<Gender>Male</Gender>
@@ -3363,9 +3419,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Estadista:Estadistas</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -3579,7 +3636,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_TANNER</Tag>
 		<English>Tanner (Cowhides):Tanners (Cowhides)</English>
-		<Portuguese>Curtidor (couro de vaca): Curtidores (couro de vaca)</Portuguese>
+		
+		<Portuguese>
+			<Text>Curtidor (couro de vaca): Curtidores (couro de vaca)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<German>
 			<Text>Ledergerber (Rindshäute):Ledergerber (Rindshäute)</Text>
 			<Gender>Male</Gender>
@@ -3926,7 +3988,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_WHALING_BOAT_WORKING</Tag>
 		<English>Whaling Boat:Whaling Boats</English>
-		<Portuguese>Barco Baleeiro:Barcos Baleeiros</Portuguese>
+		
+		<Portuguese>
+			<Text>Barco Baleeiro:Barcos Baleeiros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Baleinier</Text>
 			<Gender>Male</Gender>
@@ -4030,9 +4097,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Guarda Municipal: Guardas Municipais</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -4153,7 +4221,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_SETTLER</Tag>
 		<English>Settler:Settlers</English>
-		<Portuguese>Fundador:Fundadores</Portuguese>
+		
+		<Portuguese>
+			<Text>Fundador:Fundadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Fondateur:Fondateurs</French>
 		<German>
 			<Text>Siedlungsgründer:Siedlungsgründer</Text>

@@ -12,7 +12,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_BELLS</Tag>
 		<English>Liberty Bell Buildings</English>
-		<Portuguese>Edifícios dos Sinos da Liberdade</Portuguese>
+		
+		<Portuguese>
+			<Text>Edifícios dos Sinos da Liberdade</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiments dédiés aux Cloches de la liberté</Text>
 			<Gender>Male</Gender>
@@ -33,7 +38,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CIGARS</Tag>
 		<English>Cigar Buildings</English>
-		<Portuguese>Tabacaria</Portuguese>
+		
+		<Portuguese>
+			<Text>Tabacaria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiments dédiés aux Cigares</Text>
 			<Gender>Male</Gender>
@@ -54,7 +64,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CLOTH</Tag>
 		<English>Cloth Buildings</English>
-		<Portuguese>Tecelagem</Portuguese>
+		
+		<Portuguese>
+			<Text>Tecelagem</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiments dédiés aux Tissus</Text>
 			<Gender>Male</Gender>
@@ -75,7 +90,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_COATS</Tag>
 		<English>Coat Buildings</English>
-		<Portuguese>Fábrica de casacos</Portuguese>
+		
+		<Portuguese>
+			<Text>Fábrica de casacos</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiments dédiés aux Manteaux</Text>
 			<Gender>Male</Gender>
@@ -114,7 +134,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CROSSES</Tag>
 		<English>Religious Buildings</English>
-		<Portuguese>Edifícios religiosos</Portuguese>
+		
+		<Portuguese>
+			<Text>Edifícios religiosos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiments religieux</Text>
 			<Gender>Male</Gender>
@@ -135,7 +160,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_DEFENSE</Tag>
 		<English>Fortress</English>
-		<Portuguese>Fortaleza</Portuguese>
+		
+		<Portuguese>
+			<Text>Fortaleza</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Forteresse</Text>
 			<Gender>Female</Gender>
@@ -150,7 +180,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_DOCK</Tag>
 		<English>Docks</English>
-		<Portuguese>Docas</Portuguese>
+		
+		<Portuguese>
+			<Text>Docas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Quais</Text>
 			<Gender>Male</Gender>
@@ -171,7 +206,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_EDUCATION</Tag>
 		<English>Education Buildings</English>
-		<Portuguese>Edifícios de educação</Portuguese>
+		
+		<Portuguese>
+			<Text>Edifícios de educação</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiments éducatifs</Text>
 			<Gender>Male</Gender>
@@ -201,7 +241,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_HAMMERS</Tag>
 		<English>Carpentry Buildings</English>
-		<Portuguese>Carpintarias</Portuguese>
+		
+		<Portuguese>
+			<Text>Carpintarias</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiments de charpenterie</Text>
 			<Gender>Male</Gender>
@@ -231,7 +276,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_HORSES</Tag>
 		<English>Horse Buildings</English>
-		<Portuguese>Estábulos</Portuguese>
+		
+		<Portuguese>
+			<Text>Estábulos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiments d'élevage de chevaux</Text>
 			<Gender>Male</Gender>
@@ -261,7 +311,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_MEAT</Tag>
 		<English>Slaughterhouse</English>
-		<Portuguese>Matadouro</Portuguese>
+		
+		<Portuguese>
+			<Text>Matadouro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Abattoirs</Text>
 			<Gender>Male</Gender>
@@ -283,7 +338,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_MUSKETS</Tag>
 		<English>Armoury Buildings</English>
-		<Portuguese>Armarias</Portuguese>
+		
+		<Portuguese>
+			<Text>Armarias</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiments d'armurerie</Text>
 			<Gender>Male</Gender>
@@ -313,7 +373,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_RUM</Tag>
 		<English>Rum Buildings</English>
-		<Portuguese>Destilarias</Portuguese>
+		
+		<Portuguese>
+			<Text>Destilarias</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiments des alcools distillés</Text>
 			<Gender>Male</Gender>
@@ -352,7 +417,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_TOOLS</Tag>
 		<English>Tools Buildings</English>
-		<Portuguese>Oficinas de ferramentas</Portuguese>
+		
+		<Portuguese>
+			<Text>Oficinas de ferramentas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiments dédiés aux Outils</Text>
 			<Gender>Male</Gender>
@@ -391,7 +461,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_WALLS</Tag>
 		<English>Fortifications</English>
-		<Portuguese>Fortificações</Portuguese>
+		
+		<Portuguese>
+			<Text>Fortificações</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Fortifications</Text>
 			<Gender>Female</Gender>
@@ -412,7 +487,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_WAREHOUSE</Tag>
 		<English>Warehouses</English>
-		<Portuguese>Armazéns</Portuguese>
+		
+		<Portuguese>
+			<Text>Armazéns</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Entrepôt:Entrepôts</Text>
 			<Gender>Male</Gender>

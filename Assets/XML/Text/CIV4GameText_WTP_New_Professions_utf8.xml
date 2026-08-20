@@ -9,7 +9,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_DYER_LOGWOOD</Tag>
 		<English>Cloth Dyer (Logwood):Cloth Dyers (Logwood)</English>
-		<Portuguese>Tintureiro de tecido (madeira em tora):Tinturadores de tecido (madeira em tora)</Portuguese>
+		
+		<Portuguese>
+			<Text>Tintureiro de tecido (madeira em tora):Tinturadores de tecido (madeira em tora)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Teinturier (Campêche):Teinturiers (Campêche)</Text>
 			<Gender>Male</Gender>
@@ -36,7 +41,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_DYER_COCHINEAL</Tag>
 		<English>Cloth Dyer (Cochineal):Cloth Dyers (Cochineal)</English>
-		<Portuguese>Tintureiro de Pano (Cochonilha):Tinturadores de Pano (Cochonilha)</Portuguese>
+		
+		<Portuguese>
+			<Text>Tintureiro de Pano (Cochonilha):Tinturadores de Pano (Cochonilha)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Teinturier (Cochenilles):Teinturiers (Cochenilles)</Text>
 			<Gender>Male</Gender>
@@ -63,7 +73,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_WOOL_DYER_LOGWOOD</Tag>
 		<English>Wool Dyer (Logwood):Wool Dyers (Logwood)</English>
-		<Portuguese>Tintureiro de lã (madeira em tora):Tinturadores de lã (madeira em tora)</Portuguese>
+		
+		<Portuguese>
+			<Text>Tintureiro de lã (madeira em tora):Tinturadores de lã (madeira em tora)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Teinturier (Campêche):Teinturiers (Campêche)</Text>
 			<Gender>Male</Gender>
@@ -90,7 +105,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_WOOL_DYER_COCHINEAL</Tag>
 		<English>Wool Dyer (Cochineal):Wool Dyers (Cochineal)</English>
-		<Portuguese>Tintureiro de Lã (Cochonilha):Tinturadores de Lã (Cochonilha)</Portuguese>
+		
+		<Portuguese>
+			<Text>Tintureiro de Lã (Cochonilha):Tinturadores de Lã (Cochonilha)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Teinturier (Cochenilles):Teinturiers (Cochenilles)</Text>
 			<Gender>Male</Gender>
@@ -1637,7 +1657,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_PADDED_FURNITURE_MAKER_WILD_FEATHERS</Tag>
 		<English>Upholsterer (Wild Bird Feathers):Upholsterers (Wild Bird Feathers)</English>
-		<Portuguese>Estofador (penas de pássaros selvagens):Estofadores (penas de pássaros selvagens)</Portuguese>
+		
+		<Portuguese>
+			<Text>Estofador (penas de pássaros selvagens):Estofadores (penas de pássaros selvagens)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tapissier (Plumes d'oiseaux sauvages):Tapissiers (Plumes d'oiseaux sauvages)</Text>
 			<Gender>Male</Gender>
@@ -1690,7 +1715,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_TANNER_PIG</Tag>
 		<English>Tanner (Pig Skins):Tanners (Pig Skins)</English>
-		<Portuguese>Curtidor (peles de porco): Curtidores (peles de porco)</Portuguese>
+		
+		<Portuguese>
+			<Text>Curtidor (peles de porco): Curtidores (peles de porco)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tanneur de peaux de porc:Tanneurs de peaux de porc</Text>
 			<Gender>Male</Gender>
@@ -1741,7 +1771,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_POTTER</Tag>
 		<English>Potter:Potters</English>
-		<Portuguese>Potter:Potters</Portuguese>
+		
+		<Portuguese>
+			<Text>Potter:Potters</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Potier:Potiers</Text>
 			<Gender>Male</Gender>
@@ -1792,7 +1827,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_FIELD_WORKER_TOOLS_TRADER</Tag>
 		<English>Trader (Field Worker Tools):Traders (Field Worker Tools)</English>
-		<Portuguese>Comerciante (Ferramentas de Trabalhador de Campo):Comerciantes (Ferramentas de Trabalhador de Campo)</Portuguese>
+		
+		<Portuguese>
+			<Text>Comerciante (Ferramentas de Trabalhador de Campo):Comerciantes (Ferramentas de Trabalhador de Campo)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Marchand d'outils de chantier:Marchands d'outils de chantier</Text>
 			<Gender>Male</Gender>
@@ -1843,7 +1883,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_HOUSEHOLD_GOODS_TRADER</Tag>
 		<English>Trader (Household Goods):Traders (Household Goods)</English>
-		<Portuguese>Comerciante (Produtos Domésticos):Comerciantes (Produtos Domésticos)</Portuguese>
+		
+		<Portuguese>
+			<Text>Comerciante (Produtos Domésticos):Comerciantes (Produtos Domésticos)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Marchand d'articles ménagers:Marchands d'articles ménagers</Text>
 			<Gender>Male</Gender>
@@ -2831,7 +2876,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_COATS_WILD_FEATHERS</Tag>
 		<English>Coat Maker (Lined Leather, Wild Bird Feathers):Coat Makers (Lined Leather, Wild Bird Feathers)</English>
-		<Portuguese>Fabricante de casacos (couro forrado, penas de pássaros selvagens):Fabricantes de casacos (couro forrado, penas de pássaros selvagens)</Portuguese>
+		
+		<Portuguese>
+			<Text>Fabricante de casacos (couro forrado, penas de pássaros selvagens):Fabricantes de casacos (couro forrado, penas de pássaros selvagens)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Manteau de cuir doublé (Plumes d'oiseaux sauvages):Manteaux en cuir doublés (Plumes d'oiseaux sauvages) </Text>
 			<Gender>Male</Gender>
@@ -2885,7 +2935,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_LEATHER_PADDER_BOOTS_DOWNS</Tag>
 		<English>Bootmaker (Downs): Bootmaker (Downs)</English>
-		<Portuguese>Bootmaker (Downs): Bootmaker (Downs)</Portuguese>
+		
+		<Portuguese>
+			<Text>Bootmaker (Downs): Bootmaker (Downs)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bottier (Duvet):Bottiers (Duvet) </Text>
 			<Gender>Male</Gender>
@@ -3103,9 +3158,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Artista: Artistas</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>

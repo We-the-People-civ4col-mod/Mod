@@ -3,7 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_BEAR_ARMS</Tag>
 		<English>Right to Bear Arms</English>
-		<Portuguese>Direito de portar armas</Portuguese>
+		
+		<Portuguese>
+			<Text>Direito de portar armas</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Droit de posséder des armes</Text>
 			<Gender>Male</Gender>
@@ -38,7 +43,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_CONTROLLED_ARMS</Tag>
 		<English>Controlled Arms</English>
-		<Portuguese>Armas Controladas</Portuguese>
+		
+		<Portuguese>
+			<Text>Armas Controladas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Armes contrôlées</Text>
 			<Gender>Female</Gender>
@@ -73,7 +83,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_ELECTIONS</Tag>
 		<English>Elections</English>
-		<Portuguese>Eleições</Portuguese>
+		
+		<Portuguese>
+			<Text>Eleições</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Elections</Text>
 			<Gender>Female</Gender>
@@ -108,7 +123,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_FREEDOM</Tag>
 		<English>All Men Are Free</English>
-		<Portuguese>Todos os homens são livres</Portuguese>
+		
+		<Portuguese>
+			<Text>Todos os homens são livres</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tous les hommes sont libres</Text>
 			<Gender>Male</Gender>
@@ -143,7 +163,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MANIFEST_DESTINY</Tag>
 		<English>Manifest Destiny</English>
-		<Portuguese>Destino Manifesto</Portuguese>
+		
+		<Portuguese>
+			<Text>Destino Manifesto</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Destinée manifeste</Text>
 			<Gender>Female</Gender>
@@ -178,7 +203,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_MONARCHY</Tag>
 		<English>Monarchy</English>
-		<Portuguese>Monarquia</Portuguese>
+		
+		<Portuguese>
+			<Text>Monarquia</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Monarchie</Text>
 			<Gender>Female</Gender>
@@ -213,7 +243,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_NATIVE_RIGHTS</Tag>
 		<English>Native Rights</English>
-		<Portuguese>Direitos Nativos</Portuguese>
+		
+		<Portuguese>
+			<Text>Direitos Nativos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Droits des indigènes</Text>
 			<Gender>Male</Gender>
@@ -248,7 +283,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SEPARATION_CHURCH_STATE</Tag>
 		<English>Separation of Church and State</English>
-		<Portuguese>Separação de estado e igreja</Portuguese>
+		
+		<Portuguese>
+			<Text>Separação de estado e igreja</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Séparation de l'Eglise et de l'Etat</Text>
 			<Gender>Female</Gender>
@@ -283,7 +323,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_SLAVERY</Tag>
 		<English>Slavery</English>
-		<Portuguese>Escravidão</Portuguese>
+		
+		<Portuguese>
+			<Text>Escravidão</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Esclavage</Text>
 			<Gender>Male</Gender>
@@ -318,7 +363,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_THEOCRACY</Tag>
 		<English>Theocracy</English>
-		<Portuguese>Teocracia</Portuguese>
+		
+		<Portuguese>
+			<Text>Teocracia</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Théocratie</Text>
 			<Gender>Female</Gender>

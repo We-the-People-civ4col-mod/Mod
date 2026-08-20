@@ -3,7 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_ROUTE_ROAD</Tag>
 		<English>Road</English>
-		<Portuguese>Estrada</Portuguese>
+		
+		<Portuguese>
+			<Text>Estrada</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Route</Text>
 			<Gender>Female</Gender>

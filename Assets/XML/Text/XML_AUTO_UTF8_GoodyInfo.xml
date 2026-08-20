@@ -3,7 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_BURIAL_GROUNDS</Tag>
 		<English>Burial Grounds</English>
-		<Portuguese>Cemitérios</Portuguese>
+		
+		<Portuguese>
+			<Text>Cemitérios</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cimetière indigène:Cimetières indigènes</Text>
 			<Gender>Male</Gender>
@@ -159,7 +164,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_HEALING</Tag>
 		<English>Ancient Medicine</English>
-		<Portuguese>Medicina Antiga</Portuguese>
+		
+		<Portuguese>
+			<Text>Medicina Antiga</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Médecine traditionnelle</Text>
 			<Gender>Female</Gender>
@@ -196,7 +206,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_LOW_GOLD</Tag> <!--The tag is not currently playing in the game. I'll try to figure this out later.-->
 		<English>GOLD!!!</English>
-		<Portuguese>OURO!!!</Portuguese>
+		
+		<Portuguese>
+			<Text>OURO!!!</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Or</Text>
 			<Gender>Male</Gender>
@@ -249,7 +264,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_HOSTILE_WEAK</Tag>
 		<English>Hostile Natives</English>
-		<Portuguese>Nativos hostis</Portuguese>
+		
+		<Portuguese>
+			<Text>Nativos hostis</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Indigène hostile:Indigènes hostiles</Text>
 			<Gender>Male</Gender>
@@ -281,7 +301,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_MAP</Tag>
 		<English>Map</English>
-		<Portuguese>Mapa</Portuguese>
+		
+		<Portuguese>
+			<Text>Mapa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Carte</Text>
 			<Gender>Female</Gender>
@@ -317,7 +342,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_MAP_SEA</Tag>
 		<English>Map</English>
-		<Portuguese>Mapa</Portuguese>
+		
+		<Portuguese>
+			<Text>Mapa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Carte</Text>
 			<Gender>Female</Gender>
@@ -437,7 +467,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_SCOUT</Tag>
 		<English>Seasoned Scout:Seasoned Scouts</English>
-		<Portuguese>Batedor Veterano:Batedores Veteranos</Portuguese>
+		
+		<Portuguese>
+			<Text>Batedor Veterano:Batedores Veteranos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Éclaireur aguerri:Éclaireurs aguerris</Text>
 			<Gender>Male</Gender>
@@ -481,7 +516,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_TREASURE</Tag>
 		<English>Treasure</English>
-		<Portuguese>Tesouro</Portuguese>
+		
+		<Portuguese>
+			<Text>Tesouro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Trésor:Trésors</Text>
 			<Gender>Male</Gender>

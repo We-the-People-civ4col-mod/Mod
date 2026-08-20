@@ -3,7 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_DESERT</Tag>
 		<English>Desert</English>
-		<Portuguese>Deserto</Portuguese>
+		
+		<Portuguese>
+			<Text>Deserto</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Désert</Text>
 			<Gender>Male</Gender>
@@ -57,7 +62,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_HILL</Tag>
 		<English>Hill</English>
-		<Portuguese>Colina</Portuguese>
+		
+		<Portuguese>
+			<Text>Colina</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Colline</Text>
 			<Gender>Female</Gender>
@@ -111,7 +121,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_PEAK</Tag>
 		<English>Peak</English>
-		<Portuguese>Pico</Portuguese>
+		
+		<Portuguese>
+			<Text>Pico</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Pic</Text>
 			<Gender>Male</Gender>
@@ -146,7 +161,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_PLAINS</Tag>
 		<English>Plains</English>
-		<Portuguese>Planícies</Portuguese>
+		
+		<Portuguese>
+			<Text>Planícies</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Plaines</Text>
 			<Gender>Female</Gender>
@@ -276,7 +296,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_TAIGA</Tag>
 		<English>Taiga</English>
-		<Portuguese>taiga</Portuguese>
+		
+		<Portuguese>
+			<Text>taiga</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Taïga</Text>
 			<Gender>Female</Gender>
@@ -311,7 +336,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_TUNDRA</Tag>
 		<English>Tundra</English>
-		<Portuguese>Tundra</Portuguese>
+		
+		<Portuguese>
+			<Text>Tundra</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Toundra</Text>
 			<Gender>Female</Gender>
@@ -422,7 +452,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_COAST</Tag>
 		<English>Coast</English>
-		<Portuguese>Costa</Portuguese>
+		
+		<Portuguese>
+			<Text>Costa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Côte</Text>
 			<Gender>Female</Gender>
@@ -476,7 +511,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_OCEAN</Tag>
 		<English>Ocean</English>
-		<Portuguese>Oceano</Portuguese>
+		
+		<Portuguese>
+			<Text>Oceano</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Océan</Text>
 			<Gender>Male</Gender>

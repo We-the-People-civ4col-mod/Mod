@@ -3,7 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_CITY_RUINS</Tag>
 		<English>Ruins</English>
-		<Portuguese>Ruínas</Portuguese>
+		
+		<Portuguese>
+			<Text>Ruínas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ruines</Text>
 			<Gender>Female</Gender>
@@ -36,7 +41,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_FRUIT_PLANTATION</Tag>
 		<English>Fruit Plantation</English>
-		<Portuguese>Plantação de frutas</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantação de frutas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Plantation de Fruits</Text>
 			<Gender>Female</Gender>
@@ -69,7 +79,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_FRUIT_PLANTATION</Tag>
 		<English>Large Fruit Plantation</English>
-		<Portuguese>Grande Plantação de Frutas</Portuguese>
+		
+		<Portuguese>
+			<Text>Grande Plantação de Frutas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Grande plantation de fruits</Text>
 			<Gender>Female</Gender>
@@ -102,7 +117,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_POST</Tag>
 		<English>Collector's Post</English>
-		<Portuguese>Postagem de coletor</Portuguese>
+		
+		<Portuguese>
+			<Text>Postagem de coletor</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Poste de Collection</Text>
 			<Gender>Male</Gender>
@@ -135,7 +155,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_DEPOT</Tag>
 		<English>Collector's Depot</English>
-		<Portuguese>Depósito de Coletor</Portuguese>
+		
+		<Portuguese>
+			<Text>Depósito de Coletor</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Dépôt de collecte</Text>
 			<Gender>Female</Gender>
@@ -168,7 +193,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_POST2</Tag>
 		<English>Planter's Post</English>
-		<Portuguese>Posto do plantador</Portuguese>
+		
+		<Portuguese>
+			<Text>Posto do plantador</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Poste de planation</Text>
 			<Gender>Male</Gender>
@@ -201,7 +231,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_COLLECTORS_DEPOT2</Tag>
 		<English>Planter's Depot:Planter's Depots</English>
-		<Portuguese>Depósito de plantadores:Depósitos de plantadores</Portuguese>
+		
+		<Portuguese>
+			<Text>Depósito de plantadores:Depósitos de plantadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Dépôt de coca:Dépôts de coca</Text>
 			<Gender>Male</Gender>
@@ -234,7 +269,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_FARM</Tag>
 		<English>Farm</English>
-		<Portuguese>Fazenda</Portuguese>
+		
+		<Portuguese>
+			<Text>Fazenda</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ferme</Text>
 			<Gender>Female</Gender>
@@ -267,7 +307,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_FARM</Tag>
 		<English>Large Farm</English>
-		<Portuguese>Fazenda Grande</Portuguese>
+		
+		<Portuguese>
+			<Text>Fazenda Grande</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Grande ferme</Text>
 			<Gender>Female</Gender>
@@ -300,7 +345,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_WIND_MILL</Tag>
 		<English>Windmill</English>
-		<Portuguese>Moinho de vento</Portuguese>
+		
+		<Portuguese>
+			<Text>Moinho de vento</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Windmühle</Text>
 			<Gender>Female</Gender>
@@ -319,7 +369,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_IRON_MILL</Tag>
 		<English>Iron Mill</English>
-		<Portuguese>Moinho de Ferro</Portuguese>
+		
+		<Portuguese>
+			<Text>Moinho de Ferro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Eisenmühle</Text>
 			<Gender>Female</Gender>
@@ -338,7 +393,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_SUPPLY_DEPOT</Tag>
 		<English>Supply Depot</English>
-		<Portuguese>Depósito de suprimentos</Portuguese>
+		
+		<Portuguese>
+			<Text>Depósito de suprimentos</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Versorgungslager</Text>
 			<Gender>Neuter</Gender>
@@ -357,7 +417,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_SUPPLY_DEPOT</Tag>
 		<English>Large Supply Depot</English>
-		<Portuguese>Grande depósito de suprimentos</Portuguese>
+		
+		<Portuguese>
+			<Text>Grande depósito de suprimentos</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Großes Versorgungslager</Text>
 			<Gender>Neuter</Gender>
@@ -376,7 +441,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_CANAL</Tag>
 		<English>Canal</English>
-		<Portuguese>Canal</Portuguese>
+		
+		<Portuguese>
+			<Text>Canal</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Kanal</Text>
 			<Gender>Male</Gender>
@@ -395,7 +465,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_FORT</Tag>
 		<English>Fort</English>
-		<Portuguese>Forte</Portuguese>
+		
+		<Portuguese>
+			<Text>Forte</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Fort</Text>
 			<Gender>Male</Gender>
@@ -428,7 +503,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_FORT</Tag>
 		<English>Large Fort</English>
-		<Portuguese>Grande Forte</Portuguese>
+		
+		<Portuguese>
+			<Text>Grande Forte</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Grand Fort</Text>
 			<Gender>Male</Gender>
@@ -472,7 +552,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT2</Tag>
 		<English>Ancient Ruins</English>
-		<Portuguese>Ruínas Antigas</Portuguese>
+		
+		<Portuguese>
+			<Text>Ruínas Antigas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ruines antiques</Text>
 			<Gender>Female</Gender>
@@ -501,7 +586,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT3</Tag>
 		<English>Ship Wreckage</English>
-		<Portuguese>Destroços do navio</Portuguese>
+		
+		<Portuguese>
+			<Text>Destroços do navio</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Débris d'épave</Text>
 			<Gender>Female</Gender>
@@ -534,7 +624,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT4</Tag>
 		<English>Ship Wreck</English>
-		<Portuguese>Naufrágio de navio</Portuguese>
+		
+		<Portuguese>
+			<Text>Naufrágio de navio</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Épave échouée</Text>
 			<Gender>Female</Gender>
@@ -567,7 +662,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT5</Tag>
 		<English>Campfire</English>
-		<Portuguese>Fogueira</Portuguese>
+		
+		<Portuguese>
+			<Text>Fogueira</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Feu de camp</Text>
 			<Gender>Neutral</Gender>
@@ -600,7 +700,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT6</Tag>
 		<English>Raiders' Camp</English>
-		<Portuguese>Acampamento dos Invasores</Portuguese>
+		
+		<Portuguese>
+			<Text>Acampamento dos Invasores</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<German>
 			<Text>Verbrecherversteck</Text>
 			<Gender>Neuter</Gender>
@@ -619,7 +724,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT7</Tag>
 		<English>Animal Lair</English>
-		<Portuguese>Covil de Animais</Portuguese>
+		
+		<Portuguese>
+			<Text>Covil de Animais</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Antre d'animaux</French>
 		<German>
 			<Text>Tierversteck</Text>
@@ -638,7 +748,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT8</Tag>
 		<English>Hostile Native Village</English>
-		<Portuguese>Aldeia Nativa Hostil</Portuguese>
+		
+		<Portuguese>
+			<Text>Aldeia Nativa Hostil</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Village indigène hostile</French>
 		<German>
 			<Text>Feindliches Ureinwohnerdorf</Text>
@@ -657,7 +772,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LAND_WORKED</Tag>
 		<English>Land worked</English>
-		<Portuguese>Terra trabalhada</Portuguese>
+		
+		<Portuguese>
+			<Text>Terra trabalhada</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Terre travaillée</Text>
 			<Gender>Male</Gender>
@@ -689,7 +809,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LODGE</Tag>
 		<English>Lodge</English>
-		<Portuguese>Apresentar</Portuguese>
+		
+		<Portuguese>
+			<Text>Apresentar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Abri:Abris</Text>
 			<Gender>Male</Gender>
@@ -718,7 +843,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LUMBERJACK_CAMP</Tag>
 		<English>Lumberjack Camp</English>
-		<Portuguese>Acampamento de lenhadores</Portuguese>
+		
+		<Portuguese>
+			<Text>Acampamento de lenhadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Camp de bûcherons</Text>
 			<Gender>Female</Gender>
@@ -751,7 +881,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LUMBERMILL</Tag>
 		<English>Sawmill</English>
-		<Portuguese>Serraria</Portuguese>
+		
+		<Portuguese>
+			<Text>Serraria</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Scierie en forêt</Text>
 			<Gender>Female</Gender>
@@ -784,7 +919,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_MINE</Tag>
 		<English>Mine</English>
-		<Portuguese>Meu</Portuguese>
+		
+		<Portuguese>
+			<Text>Meu</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mine</Text>
 			<Gender>Female</Gender>
@@ -817,7 +957,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_DEEP_MINE</Tag>
 		<English>Large Mine</English>
-		<Portuguese>Mina Grande</Portuguese>
+		
+		<Portuguese>
+			<Text>Mina Grande</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Grande mine</Text>
 			<Gender>Female</Gender>
@@ -850,7 +995,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_MONASTERY</Tag>
 		<English>Monastery</English>
-		<Portuguese>Mosteiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Mosteiro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Monastère</Text>
 			<Gender>Female</Gender>
@@ -883,7 +1033,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_MONASTERY</Tag>
 		<English>Large Monastery</English>
-		<Portuguese>Grande Mosteiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Grande Mosteiro</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Grand Monastère</Text>
 			<Gender>Female</Gender>
@@ -916,7 +1071,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_PASTURE</Tag>
 		<English>Pasture</English>
-		<Portuguese>Pasto</Portuguese>
+		
+		<Portuguese>
+			<Text>Pasto</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Pâturage</Text>
 			<Gender>Female</Gender>
@@ -949,7 +1109,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_PEN</Tag>
 		<English>Breeding Pen</English>
-		<Portuguese>Canil de Reprodução</Portuguese>
+		
+		<Portuguese>
+			<Text>Canil de Reprodução</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Basse-cour</French>
 		<German>
 			<Text>Zuchtstall</Text>
@@ -968,7 +1133,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_PEN</Tag>
 		<English>Large Breeding Pen</English>
-		<Portuguese>Canil de Reprodução Grande</Portuguese>
+		
+		<Portuguese>
+			<Text>Canil de Reprodução Grande</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Grande basse-cour:Grandes basses-cours</French>
 		<German>
 			<Text>Großer Zuchtbetrieb</Text>
@@ -987,7 +1157,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_PASTURE</Tag>
 		<English>Large Pasture</English>
-		<Portuguese>Pasto Grande</Portuguese>
+		
+		<Portuguese>
+			<Text>Pasto Grande</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Grand pâturage</Text>
 			<Gender>Female</Gender>
@@ -1020,7 +1195,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_PLANTATION</Tag>
 		<English>Plantation</English>
-		<Portuguese>Plantação</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantação</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Plantation</French>
 		<German>
 			<Text>Plantage</Text>
@@ -1041,7 +1221,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_PLANTATION</Tag>
 		<English>Large Plantation</English>
-		<Portuguese>Grande Plantação</Portuguese>
+		
+		<Portuguese>
+			<Text>Grande Plantação</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Grande plantation</Text>
 			<Gender>Female</Gender>
@@ -1074,7 +1259,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_QUARRY</Tag>
 		<English>Quarry</English>
-		<Portuguese>Pedreira</Portuguese>
+		
+		<Portuguese>
+			<Text>Pedreira</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Carrière</Text>
 			<Gender>Female</Gender>
@@ -1107,7 +1297,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_QUARRY</Tag>
 		<English>Large Quarry</English>
-		<Portuguese>Grande Pedreira</Portuguese>
+		
+		<Portuguese>
+			<Text>Grande Pedreira</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Grande carrière</Text>
 			<Gender>Female</Gender>
@@ -1140,7 +1335,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_TRAPPER_HUT</Tag>
 		<English>Trapper Hut</English>
-		<Portuguese>Cabana do Caçador</Portuguese>
+		
+		<Portuguese>
+			<Text>Cabana do Caçador</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Hutte du trappeur</Text>
 			<Gender>Female</Gender>
@@ -1173,7 +1373,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_TRAPPER_CAMP</Tag>
 		<English>Trapper Camp</English>
-		<Portuguese>Acampamento de caçadores</Portuguese>
+		
+		<Portuguese>
+			<Text>Acampamento de caçadores</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Camp de trappeurs</Text>
 			<Gender>Female</Gender>
@@ -1206,7 +1411,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_VINEYARD</Tag>
 		<English>Vineyard</English>
-		<Portuguese>Vinhedo</Portuguese>
+		
+		<Portuguese>
+			<Text>Vinhedo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Vigne</Text>
 			<Gender>Female</Gender>
@@ -1241,7 +1451,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_VINEYARD</Tag>
 		<English>Mature Vineyard</English>
-		<Portuguese>Vinha madura</Portuguese>
+		
+		<Portuguese>
+			<Text>Vinha madura</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Vigne mature</Text>
 			<Gender>Female</Gender>
@@ -1276,7 +1491,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_WATER_WORKED</Tag>
 		<English>Waterworks</English>
-		<Portuguese>Sistema hidráulico</Portuguese>
+		
+		<Portuguese>
+			<Text>Sistema hidráulico</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mer travaillée</Text>
 			<Gender>Male</Gender>
@@ -1308,7 +1528,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_RAFT_STATION</Tag>
 		<English>River Ferry Station</English>
-		<Portuguese>Estação de Balsas Fluviais</Portuguese>
+		
+		<Portuguese>
+			<Text>Estação de Balsas Fluviais</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Gare de River Ferry</French>
 		<German>
 			<Text>Flussfährenstation</Text>
@@ -1343,7 +1568,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_FISHING_NETS</Tag>
 		<English>Fishing Nets</English>
-		<Portuguese>Redes de pesca</Portuguese>
+		
+		<Portuguese>
+			<Text>Redes de pesca</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Filets de pêche</French>
 		<German>
 			<Text>Fischernetze</Text>
@@ -1361,7 +1591,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_HUNTERS_STAGE</Tag>
 		<English>Hunters' Blind</English>
-		<Portuguese>Cegos dos Caçadores</Portuguese>
+		
+		<Portuguese>
+			<Text>Cegos dos Caçadores</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Affût de chasseur</French>
 		<German>
 			<Text>Jagdpier</Text>
@@ -1379,7 +1614,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_SALINA</Tag>
 		<English>Salt Works</English>
-		<Portuguese>Salinas</Portuguese>
+		
+		<Portuguese>
+			<Text>Salinas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Salines</French>
 		<German>
 			<Text>Saline</Text>
@@ -1398,7 +1638,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_LARGE_SALINA</Tag>
 		<English>Large Salt Works</English>
-		<Portuguese>Grandes salinas</Portuguese>
+		
+		<Portuguese>
+			<Text>Grandes salinas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Grande saline</French>
 		<German>
 			<Text>Große Saline</Text>
@@ -1475,7 +1720,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_CLAY_PIT</Tag>
 		<English>Clay Pit</English>
-		<Portuguese>Poço de barro</Portuguese>
+		
+		<Portuguese>
+			<Text>Poço de barro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Fosse à argile</Text>
 			<Gender>Female</Gender>
@@ -1508,7 +1758,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_OPEN_CLAY_MINE</Tag>
 		<English>Open Clay Mine</English>
-		<Portuguese>Abrir mina de argila</Portuguese>
+		
+		<Portuguese>
+			<Text>Abrir mina de argila</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mine ouverte d'argile</Text>
 			<Gender>Female</Gender>
@@ -1541,7 +1796,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_PEAT_PIT</Tag>
 		<English>Peat Pit</English>
-		<Portuguese>Poço de turfa</Portuguese>
+		
+		<Portuguese>
+			<Text>Poço de turfa</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Fosse à tourbe</Text>
 			<Gender>Female</Gender>
@@ -1574,7 +1834,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_OPEN_PEAT_MINE</Tag>
 		<English>Open Peat Mine</English>
-		<Portuguese>Mina de turfa aberta</Portuguese>
+		
+		<Portuguese>
+			<Text>Mina de turfa aberta</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mine ouverte de tourbe</Text>
 			<Gender>Female</Gender>

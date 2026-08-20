@@ -46,7 +46,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_AOMAGUA</Tag>
 		<English>Aomagua</English>
-		<Portuguese>Aomagua</Portuguese>
+		
+		<Portuguese>
+			<Text>Aomagua</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Aomagua</Text>
 			<Gender>Male</Gender>
@@ -196,7 +201,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CHIEF_JOSEPH</Tag>
 		<English>Chief Joseph</English>
-		<Portuguese>Chefe José</Portuguese>
+		
+		<Portuguese>
+			<Text>Chefe José</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Chef Joseph</Text>
 			<Gender>Male</Gender>
@@ -229,7 +239,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_CHURCH</Tag>
 		<English>The Archbishop</English>
-		<Portuguese>O Arcebispo</Portuguese>
+		
+		<Portuguese>
+			<Text>O Arcebispo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>l'Archevêque</Text>
 			<Gender>Male</Gender>
@@ -259,7 +274,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_COCIJOEZA</Tag>
 		<English>Cocijoeza</English>
-		<Portuguese>Cocijoeza</Portuguese>
+		
+		<Portuguese>
+			<Text>Cocijoeza</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cocijoeza</Text>
 			<Gender>Male</Gender>
@@ -702,7 +722,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_HUAYNA_CAPAC</Tag>
 		<English>Huayna Cápac</English>
-		<Portuguese>Huayna Capac</Portuguese>
+		
+		<Portuguese>
+			<Text>Huayna Capac</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Huayna Cápac</Text>
 			<Gender>Male</Gender>
@@ -737,7 +762,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_IRON_JACKET</Tag>
 		<English>Iron Jacket</English>
-		<Portuguese>Jaqueta de Ferro</Portuguese>
+		
+		<Portuguese>
+			<Text>Jaqueta de Ferro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Iron Jacket</Text>
 			<Gender>Male</Gender>
@@ -770,7 +800,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_JAUREYBO</Tag>
 		<English>Jaureybo</English>
-		<Portuguese>Jaureybo</Portuguese>
+		
+		<Portuguese>
+			<Text>Jaureybo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Jaureybo</Text>
 			<Gender>Male</Gender>
@@ -803,7 +838,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_KONDIARONK</Tag>
 		<English>Kondiaronk</English>
-		<Portuguese>Kondiaronk</Portuguese>
+		
+		<Portuguese>
+			<Text>Kondiaronk</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Kondiaronk</Text>
 			<Gender>Male</Gender>
@@ -836,7 +876,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_LAUTARO</Tag>
 		<English>Lautaro</English>
-		<Portuguese>Lautaro</Portuguese>
+		
+		<Portuguese>
+			<Text>Lautaro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Lautaro</Text>
 			<Gender>Male</Gender>
@@ -912,7 +957,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MACHIPARA</Tag>
 		<English>Machipara</English>
-		<Portuguese>Machipara</Portuguese>
+		
+		<Portuguese>
+			<Text>Machipara</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Machipara</Text>
 			<Gender>Male</Gender>
@@ -988,7 +1038,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_MONTEZUMA</Tag>
 		<English>Montezuma</English>
-		<Portuguese>Montezuma</Portuguese>
+		
+		<Portuguese>
+			<Text>Montezuma</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Moctezuma II</Text>
 			<Gender>Male</Gender>
@@ -1040,7 +1095,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_NARBONA</Tag>
 		<English>Narbona</English>
-		<Portuguese>Narbona</Portuguese>
+		
+		<Portuguese>
+			<Text>Narbona</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Narbona</Text>
 			<Gender>Male</Gender>
@@ -1157,7 +1217,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_ORKEKE</Tag>
 		<English>Orkeke</English>
-		<Portuguese>Orkeke</Portuguese>
+		
+		<Portuguese>
+			<Text>Orkeke</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Orkeke</Text>
 			<Gender>Male</Gender>
@@ -1190,7 +1255,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_PACAL</Tag>
 		<English>Tecun Uman</English>
-		<Portuguese>Tecun Uman</Portuguese>
+		
+		<Portuguese>
+			<Text>Tecun Uman</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Pacal II</Text>
 			<Gender>Male</Gender>
@@ -1339,7 +1409,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_QUEMUENCHATOCHA</Tag>
 		<English>Quemuenchatocha</English>
-		<Portuguese>Quemuenchatocha</Portuguese>
+		
+		<Portuguese>
+			<Text>Quemuenchatocha</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Quemuenchatocha</Text>
 			<Gender>Male</Gender>
@@ -1447,7 +1522,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_SEPE_TIARAJU</Tag>
 		<English>Sepe Tiaraju</English>
-		<Portuguese>Sepé Tiaraju</Portuguese>
+		
+		<Portuguese>
+			<Text>Sepé Tiaraju</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sepé Tiaraju</Text>
 			<Gender>Male</Gender>
@@ -1562,7 +1642,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_SITTING_BULL</Tag>
 		<English>Sitting Bull</English>
-		<Portuguese>Touro Sentado</Portuguese>
+		
+		<Portuguese>
+			<Text>Touro Sentado</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sitting Bull</Text>
 			<Gender>Male</Gender>
@@ -1717,7 +1802,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TARANO</Tag>
 		<English>Tarano</English>
-		<Portuguese>Tarano</Portuguese>
+		
+		<Portuguese>
+			<Text>Tarano</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tarano</Text>
 			<Gender>Male</Gender>
@@ -1750,7 +1840,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_TUGLAWINA</Tag>
 		<English>Tuglawina</English>
-		<Portuguese>Tuglawina</Portuguese>
+		
+		<Portuguese>
+			<Text>Tuglawina</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tuglawina</Text>
 			<Gender>Male</Gender>
@@ -1783,7 +1878,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_URRACA</Tag>
 		<English>Urracá</English>
-		<Portuguese>Urracá</Portuguese>
+		
+		<Portuguese>
+			<Text>Urracá</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ourracá</Text>
 			<Gender>Male</Gender>
@@ -1816,7 +1916,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_WASHAKIE</Tag>
 		<English>Washakie</English>
-		<Portuguese>Washakie</Portuguese>
+		
+		<Portuguese>
+			<Text>Washakie</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Washakie</Text>
 			<Gender>Male</Gender>
@@ -1849,7 +1954,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_LEADER_WASHINGTON</Tag>
 		<English>George Washington</English>
-		<Portuguese>George Washington</Portuguese>
+		
+		<Portuguese>
+			<Text>George Washington</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>George Washington</Text>
 			<Gender>Male</Gender>

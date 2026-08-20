@@ -3,7 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCOMBAT_GUN</Tag>
 		<English>Gunpowder Units</English>
-		<Portuguese>Unidades de pólvora</Portuguese>
+		
+		<Portuguese>
+			<Text>Unidades de pólvora</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Unités équipées d'armes à feu</Text>
 			<Gender>Female</Gender>
@@ -29,7 +34,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCOMBAT_MELEE</Tag>
 		<English>Melee Units</English>
-		<Portuguese>Unidades corpo a corpo</Portuguese>
+		
+		<Portuguese>
+			<Text>Unidades corpo a corpo</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Unités de combat rapproché</Text>
 			<Gender>Female</Gender>
@@ -55,7 +65,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCOMBAT_MOUNTED</Tag>
 		<English>Mounted Units</English>
-		<Portuguese>Unidades montadas</Portuguese>
+		
+		<Portuguese>
+			<Text>Unidades montadas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Unités montées</Text>
 			<Gender>Female</Gender>
@@ -85,10 +100,11 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Navios de guerra</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
 		</Portuguese>
 		<French>
 			<Text>Navires de guerre</Text>
@@ -121,8 +137,8 @@
 		</English>
 		<Portuguese>
 			<Text>Corsários</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
 		</Portuguese>
 		<French>
 			<Text>Navires pirates</Text>
@@ -153,10 +169,11 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Navios Mercantes</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
 		</Portuguese>
 		<French>
 			<Text>Navires de commerce</Text>
@@ -183,7 +200,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCOMBAT_SIEGE</Tag>
 		<English>Siege Weapons</English>
-		<Portuguese>Armas de cerco</Portuguese>
+		
+		<Portuguese>
+			<Text>Armas de cerco</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Armes de siège</Text>
 			<Gender>Female</Gender>

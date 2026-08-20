@@ -18,7 +18,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_AI_WAGON_TRAIN</Tag>
 		<English>Wagon Train:Wagon Trains</English>
-		<Portuguese>Carroça:Carroças</Portuguese>
+		
+		<Portuguese>
+			<Text>Carroça:Carroças</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Chariot:Chariots</Text>
 			<Gender>Male</Gender>
@@ -112,9 +117,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Artilharia Leve: Artilharia Leve</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>

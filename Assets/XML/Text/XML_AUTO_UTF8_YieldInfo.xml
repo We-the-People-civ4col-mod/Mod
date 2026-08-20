@@ -3,7 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_BARLEY</Tag>
 		<English>Barley</English>
-		<Portuguese>Cevada</Portuguese>
+		
+		<Portuguese>
+			<Text>Cevada</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Orge</Text>
 			<Gender>Male</Gender>
@@ -39,7 +44,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_BEER</Tag>
 		<English>Beer</English>
-		<Portuguese>Cerveja</Portuguese>
+		
+		<Portuguese>
+			<Text>Cerveja</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bière</Text>
 			<Gender>Female</Gender>
@@ -75,7 +85,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_BELLS</Tag>
 		<English>Liberty Bells</English>
-		<Portuguese>Sinos da Liberdade</Portuguese>
+		
+		<Portuguese>
+			<Text>Sinos da Liberdade</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cloche de la liberté:Cloches de la liberté</Text>
 			<Gender>Female</Gender>
@@ -111,7 +126,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_BLADES</Tag>
 		<English>Blades</English>
-		<Portuguese>Lâminas</Portuguese>
+		
+		<Portuguese>
+			<Text>Lâminas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sabres</Text>
 			<Gender>Male</Gender>
@@ -147,7 +167,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_CANNONS</Tag>
 		<English>Cannons</English>
-		<Portuguese>Canhões</Portuguese>
+		
+		<Portuguese>
+			<Text>Canhões</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Canon</French>
 		<German>
 			<Text>Kanonen</Text>
@@ -171,7 +196,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_CATTLE</Tag>
 		<English>Cattle</English>
-		<Portuguese>Gado</Portuguese>
+		
+		<Portuguese>
+			<Text>Gado</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Bétail</French>
 		<German>
 			<Text>Rinder</Text>
@@ -195,7 +225,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_CIGARS</Tag>
 		<English>Cigars</English>
-		<Portuguese>Charutos</Portuguese>
+		
+		<Portuguese>
+			<Text>Charutos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cigare:Cigares</Text>
 			<Gender>Male</Gender>
@@ -227,7 +262,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_CLOTH</Tag>
 		<English>Cloth</English>
-		<Portuguese>Pano</Portuguese>
+		
+		<Portuguese>
+			<Text>Pano</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tissu:Tissus</Text>
 			<Gender>Male</Gender>
@@ -263,7 +303,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_COATS</Tag>
 		<English>Coats</English>
-		<Portuguese>Casacos</Portuguese>
+		
+		<Portuguese>
+			<Text>Casacos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Manteau:Manteaux</Text>
 			<Gender>Male</Gender>
@@ -295,7 +340,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_COCA_LEAVES</Tag>
 		<English>Coca Leaves</English>
-		<Portuguese>Folhas de coca</Portuguese>
+		
+		<Portuguese>
+			<Text>Folhas de coca</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Feuilles de coca</Text>
 			<Gender>Female</Gender>
@@ -331,7 +381,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_COCOA</Tag>
 		<English>Cocoa</English>
-		<Portuguese>Cacau</Portuguese>
+		
+		<Portuguese>
+			<Text>Cacau</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Cacao torréfié</French>
 		<German>
 			<Text>Kakao</Text>
@@ -363,7 +418,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_COCOA_FRUITS</Tag>
 		<English>Cocoa Pods</English>
-		<Portuguese>Vagens de cacau</Portuguese>
+		
+		<Portuguese>
+			<Text>Vagens de cacau</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Cabosses de cacaoyer</French>
 		<German>
 			<Text>Kakaofrüchte</Text>
@@ -387,7 +447,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_COFFEE</Tag>
 		<English>Coffee</English>
-		<Portuguese>Café</Portuguese>
+		
+		<Portuguese>
+			<Text>Café</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Café torréfié</Text>
 			<Gender>Male</Gender>
@@ -423,7 +488,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_COFFEE_BERRIES</Tag>
 		<English>Coffee Berries</English>
-		<Portuguese>Bagas de café</Portuguese>
+		
+		<Portuguese>
+			<Text>Bagas de café</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>Cerises de café</French>
 		<German>
 			<Text>Kaffeebeeren</Text>
@@ -447,7 +517,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_COLOURED_CLOTH</Tag>
 		<English>Coloured Cloth</English>
-		<Portuguese>Pano Colorido</Portuguese>
+		
+		<Portuguese>
+			<Text>Pano Colorido</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tissu teinté</Text>
 			<Gender>Male</Gender>
@@ -483,7 +558,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_COTTON</Tag>
 		<English>Cotton</English>
-		<Portuguese>Algodão</Portuguese>
+		
+		<Portuguese>
+			<Text>Algodão</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Coton</Text>
 			<Gender>Male</Gender>
@@ -519,7 +599,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_CROSSES</Tag>
 		<English>Crosses</English>
-		<Portuguese>Cruzes</Portuguese>
+		
+		<Portuguese>
+			<Text>Cruzes</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Croix:Croix</Text>
 			<Gender>Female</Gender>
@@ -551,7 +636,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_CULTURE</Tag>
 		<English>Culture</English>
-		<Portuguese>Cultura</Portuguese>
+		
+		<Portuguese>
+			<Text>Cultura</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Culture</Text>
 			<Gender>Female</Gender>
@@ -587,7 +677,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_EDUCATION</Tag>
 		<English>Education</English>
-		<Portuguese>Educação</Portuguese>
+		
+		<Portuguese>
+			<Text>Educação</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Éducation</Text>
 			<Gender>Female</Gender>
@@ -623,7 +718,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_FOOD</Tag>
 		<English>Food</English>
-		<Portuguese>Comida</Portuguese>
+		
+		<Portuguese>
+			<Text>Comida</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Nourriture</Text>
 			<Gender>Female</Gender>
@@ -659,7 +759,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_FUR</Tag>
 		<English>Fur</English>
-		<Portuguese>Pelagem</Portuguese>
+		
+		<Portuguese>
+			<Text>Pelagem</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Fourrure:Fourrures</Text>
 			<Gender>Female</Gender>
@@ -691,7 +796,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_FURNITURE</Tag>
 		<English>Furniture</English>
-		<Portuguese>Móveis</Portuguese>
+		
+		<Portuguese>
+			<Text>Móveis</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Meubles</French>
 		<German>
 			<Text>Möbel</Text>
@@ -715,7 +825,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_GEMS</Tag>
 		<English>Gems</English>
-		<Portuguese>Gemas</Portuguese>
+		
+		<Portuguese>
+			<Text>Gemas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Pierres précieuses</Text>
 			<Gender>Female</Gender>
@@ -751,7 +866,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_GOLD</Tag>
 		<English>Gold</English>
-		<Portuguese>Ouro</Portuguese>
+		
+		<Portuguese>
+			<Text>Ouro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Or</Text>
 			<Gender>Male</Gender>
@@ -787,7 +907,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_GRAPES</Tag>
 		<English>Grapes</English>
-		<Portuguese>Uvas</Portuguese>
+		
+		<Portuguese>
+			<Text>Uvas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Raisins</Text>
 			<Gender>Male</Gender>
@@ -823,7 +948,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_HAMMERS</Tag>
 		<English>Production</English>
-		<Portuguese>Produção</Portuguese>
+		
+		<Portuguese>
+			<Text>Produção</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Production</Text>
 			<Gender>Female</Gender>
@@ -879,7 +1009,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_HEMP</Tag>
 		<English>Hemp</English>
-		<Portuguese>Cânhamo</Portuguese>
+		
+		<Portuguese>
+			<Text>Cânhamo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Chanvre</Text>
 			<Gender>Male</Gender>
@@ -915,7 +1050,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_HIDES</Tag>
 		<English>Cowhides</English>
-		<Portuguese>Couros bovinos</Portuguese>
+		
+		<Portuguese>
+			<Text>Couros bovinos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Peaux de vache</Text>
 			<Gender>Female</Gender>
@@ -951,7 +1091,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_HORSES</Tag>
 		<English>Horses</English>
-		<Portuguese>Cavalos</Portuguese>
+		
+		<Portuguese>
+			<Text>Cavalos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cheval:Chevaux</Text>
 			<Gender>Male</Gender>
@@ -987,7 +1132,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_INDIGO</Tag>
 		<English>Indigo</English>
-		<Portuguese>Índigo</Portuguese>
+		
+		<Portuguese>
+			<Text>Índigo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Indigo</Text>
 			<Gender>Male</Gender>
@@ -1023,7 +1173,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_LEATHER</Tag>
 		<English>Leather Goods</English>
-		<Portuguese>Artigos de couro</Portuguese>
+		
+		<Portuguese>
+			<Text>Artigos de couro</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cuir tanné</Text>
 			<Gender>Male</Gender>
@@ -1059,7 +1214,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_LUMBER</Tag>
 		<English>Lumber</English>
-		<Portuguese>Madeira serrada</Portuguese>
+		
+		<Portuguese>
+			<Text>Madeira serrada</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bois</Text>
 			<Gender>Male</Gender>
@@ -1098,7 +1258,7 @@
 		<Portuguese>
 			<Text>Bens de luxo</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Biens de luxe</Text>
@@ -1139,9 +1299,10 @@
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Armas</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
 		<French>
@@ -1179,7 +1340,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_ORE</Tag>
 		<English>Ore</English>
-		<Portuguese>Minério</Portuguese>
+		
+		<Portuguese>
+			<Text>Minério</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Minerai de fer:Minerais de fer</Text>
 			<Gender>Male</Gender>
@@ -1211,7 +1377,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_PREMIUM_COATS</Tag>
 		<English>Luxury Coats</English>
-		<Portuguese>Casacos de luxo</Portuguese>
+		
+		<Portuguese>
+			<Text>Casacos de luxo</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Manteaux de qualité</Text>
 			<Gender>Male</Gender>
@@ -1247,7 +1418,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_PREMIUM_FUR</Tag>
 		<English>Premium Fur</English>
-		<Portuguese>Pele Premium</Portuguese>
+		
+		<Portuguese>
+			<Text>Pele Premium</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Fourrure de qualité</Text>
 			<Gender>Male</Gender>
@@ -1283,7 +1459,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_RAW_SALT</Tag>
 		<English>Rock Salt</English>
-		<Portuguese>Sal-gema</Portuguese>
+		
+		<Portuguese>
+			<Text>Sal-gema</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sel brut</Text>
 			<Gender>Male</Gender>
@@ -1319,7 +1500,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_RED_PEPPER</Tag>
 		<English>Red Pepper</English>
-		<Portuguese>Pimentão vermelho</Portuguese>
+		
+		<Portuguese>
+			<Text>Pimentão vermelho</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Piment rouge</Text>
 			<Gender>Male</Gender>
@@ -1355,7 +1541,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_ROPE</Tag>
 		<English>Ropes</English>
-		<Portuguese>Cordas</Portuguese>
+		
+		<Portuguese>
+			<Text>Cordas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cordage</Text>
 			<Gender>Male</Gender>
@@ -1391,7 +1582,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_RUM</Tag>
 		<English>Rum</English>
-		<Portuguese>Rum</Portuguese>
+		
+		<Portuguese>
+			<Text>Rum</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Rhum</Text>
 			<Gender>Male</Gender>
@@ -1431,9 +1627,10 @@
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Lona</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
 		<French>
@@ -1471,7 +1668,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_SALT</Tag>
 		<English>Salt</English>
-		<Portuguese>Sal</Portuguese>
+		
+		<Portuguese>
+			<Text>Sal</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sel alimentaire</Text>
 			<Gender>Male</Gender>
@@ -1507,7 +1709,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_SHEEP</Tag>
 		<English>Sheep</English>
-		<Portuguese>ovelha</Portuguese>
+		
+		<Portuguese>
+			<Text>ovelha</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Moutons</French>
 		<German>
 			<Text>Schafe</Text>
@@ -1531,7 +1738,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_SILVER</Tag>
 		<English>Silver</English>
-		<Portuguese>Prata</Portuguese>
+		
+		<Portuguese>
+			<Text>Prata</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Argent</Text>
 			<Gender>Male</Gender>
@@ -1611,9 +1823,10 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Pedra: Pedras</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -1651,7 +1864,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_SUGAR</Tag>
 		<English>Sugar</English>
-		<Portuguese>Açúcar</Portuguese>
+		
+		<Portuguese>
+			<Text>Açúcar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sucre</Text>
 			<Gender>Male</Gender>
@@ -1735,9 +1953,10 @@
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</English>
+		
 		<Portuguese>
 			<Text>Ferramentas</Text>
-			<Gender>Male</Gender>
+			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
 		<French>
@@ -1782,7 +2001,7 @@
 		<Portuguese>
 			<Text>Bens comerciais</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Marchandise:Marchandises</Text>
@@ -1819,7 +2038,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_VALUABLE_WOOD</Tag>
 		<English>Exotic Wood</English>
-		<Portuguese>Madeira Exótica</Portuguese>
+		
+		<Portuguese>
+			<Text>Madeira Exótica</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Bois précieux</French>
 		<German>
 			<Text>Edelholz</Text>
@@ -1843,7 +2067,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_WHALE_BLUBBER</Tag>
 		<English>Whale Fat</English>
-		<Portuguese>Gordura de baleia</Portuguese>
+		
+		<Portuguese>
+			<Text>Gordura de baleia</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Graisse de baleine</Text>
 			<Gender>Female</Gender>
@@ -1877,7 +2106,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_WHALE_OIL</Tag>
 		<English>Train Oil</English>
-		<Portuguese>Óleo de baleia</Portuguese>
+		
+		<Portuguese>
+			<Text>Óleo de baleia</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Huile de baleine</Text>
 			<Gender>Male</Gender>
@@ -1913,7 +2147,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_WINE</Tag>
 		<English>Wine</English>
-		<Portuguese>Vinho</Portuguese>
+		
+		<Portuguese>
+			<Text>Vinho</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Vin</Text>
 			<Gender>Male</Gender>
@@ -1949,7 +2188,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_WOOL</Tag>
 		<English>Wool</English>
-		<Portuguese>Lã</Portuguese>
+		
+		<Portuguese>
+			<Text>Lã</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Laine</Text>
 			<Gender>Female</Gender>
@@ -1985,7 +2229,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_WOOL_CLOTH</Tag>
 		<English>Wool Cloth</English>
-		<Portuguese>Pano de lã</Portuguese>
+		
+		<Portuguese>
+			<Text>Pano de lã</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Laine Tissée</Text>
 			<Gender>Male</Gender>

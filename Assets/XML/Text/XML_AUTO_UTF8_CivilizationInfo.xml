@@ -3,7 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ALGONQUIAN</Tag>
 		<English>Algonquian</English>
-		<Portuguese>algonquino</Portuguese>
+		
+		<Portuguese>
+			<Text>algonquino</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Algonquins</Text>
 			<Gender>Male</Gender>
@@ -32,7 +37,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_APACHE</Tag>
 		<English>Apache</English>
-		<Portuguese>Apache</Portuguese>
+		
+		<Portuguese>
+			<Text>Apache</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Apaches</Text>
 			<Gender>Male</Gender>
@@ -63,7 +73,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK</Tag>
 		<English>Arawak</English>
-		<Portuguese>Arawak</Portuguese>
+		
+		<Portuguese>
+			<Text>Arawak</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Arawaks</Text>
 			<Gender>Male</Gender>
@@ -94,7 +109,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_AZTEC</Tag>
 		<English>Aztec Empire</English>
-		<Portuguese>Império Asteca</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Asteca</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire aztèque</Text>
 			<Gender>Male</Gender>
@@ -129,7 +149,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BARBARIAN</Tag>
 		<English>Wild Animals</English>
-		<Portuguese>Animais selvagens</Portuguese>
+		
+		<Portuguese>
+			<Text>Animais selvagens</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Animaux sauvages</Text>
 			<Gender>Male</Gender>
@@ -162,7 +187,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT</Tag>
 		<English>Blackfoot</English>
-		<Portuguese>Pé preto</Portuguese>
+		
+		<Portuguese>
+			<Text>Pé preto</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Niitsitapi</Text>
 			<Gender>Male</Gender>
@@ -191,7 +221,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CARIBS</Tag>
 		<English>Carib</English>
-		<Portuguese>Caribenho</Portuguese>
+		
+		<Portuguese>
+			<Text>Caribenho</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Caraïbes</Text>
 			<Gender>Male</Gender>
@@ -220,7 +255,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE</Tag>
 		<English>Cherokee</English>
-		<Portuguese>Cherokee</Portuguese>
+		
+		<Portuguese>
+			<Text>Cherokee</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cherokees</Text>
 			<Gender>Male</Gender>
@@ -251,7 +291,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CHURCH</Tag>
 		<English>The Church</English>
-		<Portuguese>A Igreja</Portuguese>
+		
+		<Portuguese>
+			<Text>A Igreja</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>L'Église</Text>
 			<Gender>Female</Gender>
@@ -284,7 +329,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE</Tag>
 		<English>Comanche</English>
-		<Portuguese>Comanche</Portuguese>
+		
+		<Portuguese>
+			<Text>Comanche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Comanches</Text>
 			<Gender>Male</Gender>
@@ -313,7 +363,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CROW</Tag>
 		<English>Crow</English>
-		<Portuguese>Corvo</Portuguese>
+		
+		<Portuguese>
+			<Text>Corvo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Crows</Text>
 			<Gender>Male</Gender>
@@ -379,7 +434,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH</Tag>
 		<English>Dutch Colonies</English>
-		<Portuguese>Colônias Holandesas</Portuguese>
+		
+		<Portuguese>
+			<Text>Colônias Holandesas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Colonies néerlandaises</Text>
 			<Gender>Female</Gender>
@@ -401,7 +461,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DUTCH_EUROPE</Tag>
 		<English>Dutch Empire</English>
-		<Portuguese>Império Holandês</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Holandês</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire néerlandais</Text>
 			<Gender>Male</Gender>
@@ -436,7 +501,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND</Tag>
 		<English>English Colonies</English>
-		<Portuguese>Colônias Inglesas</Portuguese>
+		
+		<Portuguese>
+			<Text>Colônias Inglesas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Colonies anglaises</Text>
 			<Gender>Female</Gender>
@@ -458,7 +528,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE</Tag>
 		<English>English Empire</English>
-		<Portuguese>Império Inglês</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Inglês</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire anglais</Text>
 			<Gender>Male</Gender>
@@ -493,7 +568,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE</Tag>
 		<English>French Colonies</English>
-		<Portuguese>Colônias Francesas</Portuguese>
+		
+		<Portuguese>
+			<Text>Colônias Francesas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Colonies françaises</Text>
 			<Gender>Female</Gender>
@@ -515,7 +595,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_FRANCE_EUROPE</Tag>
 		<English>French Empire</English>
-		<Portuguese>Império Francês</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Francês</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire français</Text>
 			<Gender>Male</Gender>
@@ -550,7 +635,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUARANI</Tag>
 		<English>Guarani</English>
-		<Portuguese>guarani</Portuguese>
+		
+		<Portuguese>
+			<Text>guarani</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Guaranis</French>
 		<German>Guarani</German>
 		<Italian>
@@ -575,7 +665,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_GUAYMI</Tag>
 		<English>Ngabe</English>
-		<Portuguese>Ngabe</Portuguese>
+		
+		<Portuguese>
+			<Text>Ngabe</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Guaymís</Text>
 			<Gender>Male</Gender>
@@ -604,7 +699,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_HURON</Tag>
 		<English>Huron</English>
-		<Portuguese>Hurão</Portuguese>
+		
+		<Portuguese>
+			<Text>Hurão</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Hurons</Text>
 			<Gender>Male</Gender>
@@ -633,7 +733,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INCA</Tag>
 		<English>Incan Empire</English>
-		<Portuguese>Império Inca</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Inca</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire inca</Text>
 			<Gender>Male</Gender>
@@ -668,7 +773,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_INUIT</Tag>
 		<English>Inuit</English>
-		<Portuguese>inuítes</Portuguese>
+		
+		<Portuguese>
+			<Text>inuítes</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Inuits</Text>
 			<Gender>Male</Gender>
@@ -697,7 +807,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS</Tag>
 		<English>Iroquois</English>
-		<Portuguese>Iroqueses</Portuguese>
+		
+		<Portuguese>
+			<Text>Iroqueses</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Iroquois</Text>
 			<Gender>Male</Gender>
@@ -728,7 +843,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MACHIPARO</Tag>
 		<English>Machiparo</English>
-		<Portuguese>Machiparo</Portuguese>
+		
+		<Portuguese>
+			<Text>Machiparo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Machiparos</Text>
 			<Gender>Male</Gender>
@@ -757,7 +877,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAPUCHE</Tag>
 		<English>Mapuche</English>
-		<Portuguese>Mapuche</Portuguese>
+		
+		<Portuguese>
+			<Text>Mapuche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mapuches</Text>
 			<Gender>Male</Gender>
@@ -786,7 +911,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MAYA</Tag>
 		<English>Maya Empire</English>
-		<Portuguese>Império Maia</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Maia</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire Maya</Text>
 			<Gender>Male</Gender>
@@ -815,7 +945,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC</Tag>
 		<English>Mixtec</English>
-		<Portuguese>Mixteca</Portuguese>
+		
+		<Portuguese>
+			<Text>Mixteca</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mixtecs</Text>
 			<Gender>Male</Gender>
@@ -844,7 +979,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA</Tag>
 		<English>Muisca</English>
-		<Portuguese>Música</Portuguese>
+		
+		<Portuguese>
+			<Text>Música</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Muiscas</Text>
 			<Gender>Male</Gender>
@@ -873,7 +1013,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NAVAJO</Tag>
 		<English>Navajo</English>
-		<Portuguese>Navajo</Portuguese>
+		
+		<Portuguese>
+			<Text>Navajo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Navajos</Text>
 			<Gender>Male</Gender>
@@ -902,7 +1047,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE</Tag>
 		<English>Nez Perce</English>
-		<Portuguese>Nez Percé</Portuguese>
+		
+		<Portuguese>
+			<Text>Nez Percé</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Nez Perce</Text>
 			<Gender>Male</Gender>
@@ -931,7 +1081,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_OMAGUA</Tag>
 		<English>Omagua</English>
-		<Portuguese>Omágua</Portuguese>
+		
+		<Portuguese>
+			<Text>Omágua</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Omaguas</Text>
 			<Gender>Male</Gender>
@@ -1036,7 +1191,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE</Tag>
 		<English>Shoshone</English>
-		<Portuguese>Shoshone</Portuguese>
+		
+		<Portuguese>
+			<Text>Shoshone</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Shoshones</Text>
 			<Gender>Male</Gender>
@@ -1065,7 +1225,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHUAR</Tag>
 		<English>Shuar</English>
-		<Portuguese>Shuar</Portuguese>
+		
+		<Portuguese>
+			<Text>Shuar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Shuars</Text>
 			<Gender>Male</Gender>
@@ -1094,7 +1259,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX</Tag>
 		<English>Sioux</English>
-		<Portuguese>Sioux</Portuguese>
+		
+		<Portuguese>
+			<Text>Sioux</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sioux</Text>
 			<Gender>Male</Gender>
@@ -1125,7 +1295,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN</Tag>
 		<English>Spanish Colonies</English>
-		<Portuguese>Colônias espanholas</Portuguese>
+		
+		<Portuguese>
+			<Text>Colônias espanholas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Colonies espagnoles</Text>
 			<Gender>Female</Gender>
@@ -1147,7 +1322,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SPAIN_EUROPE</Tag>
 		<English>Spanish Empire</English>
-		<Portuguese>Império Espanhol</Portuguese>
+		
+		<Portuguese>
+			<Text>Império Espanhol</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Empire espagnol</Text>
 			<Gender>Male</Gender>
@@ -1219,7 +1399,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TARASCANS</Tag>
 		<English>Tarascans</English>
-		<Portuguese>tarascos</Portuguese>
+		
+		<Portuguese>
+			<Text>tarascos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tarasques</Text>
 			<Gender>Male</Gender>
@@ -1248,7 +1433,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TEHUELCHE</Tag>
 		<English>Tehuelche</English>
-		<Portuguese>Tehuelche</Portuguese>
+		
+		<Portuguese>
+			<Text>Tehuelche</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tehuelche</Text>
 			<Gender>Male</Gender>
@@ -1277,7 +1467,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TOROMONA</Tag>
 		<English>Toromona</English>
-		<Portuguese>Toromona</Portuguese>
+		
+		<Portuguese>
+			<Text>Toromona</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Toromonas</Text>
 			<Gender>Male</Gender>
@@ -1306,7 +1501,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI</Tag>
 		<English>Tupi</English>
-		<Portuguese>Tupi</Portuguese>
+		
+		<Portuguese>
+			<Text>Tupi</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tupis</Text>
 			<Gender>Male</Gender>
@@ -1337,7 +1537,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ZAPOTEC</Tag>
 		<English>Zapotec</English>
-		<Portuguese>Zapoteca</Portuguese>
+		
+		<Portuguese>
+			<Text>Zapoteca</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Zapotecs</Text>
 			<Gender>Male</Gender>

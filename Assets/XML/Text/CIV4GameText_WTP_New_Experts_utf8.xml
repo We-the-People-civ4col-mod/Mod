@@ -9,7 +9,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_BREEDER</Tag>
 		<English>Expert Poultry Breeder:Expert Poultry Breeders</English>
-		<Portuguese>Criador especialista em aves:Criadores especialistas em aves</Portuguese>
+		
+		<Portuguese>
+			<Text>Criador especialista em aves:Criadores especialistas em aves</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Éleveur de volailles expert:Éleveurs de volailles experts</Text>
 			<Gender>Male</Gender>
@@ -36,7 +41,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BREEDER</Tag>
 		<English>Expert Poultry Breeder:Expert Poultry Breeders</English>
-		<Portuguese>Criador especialista em aves:Criadores especialistas em aves</Portuguese>
+		
+		<Portuguese>
+			<Text>Criador especialista em aves:Criadores especialistas em aves</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Éleveur expert:Éleveurs experts</Text>
 			<Gender>Male</Gender>
@@ -78,7 +88,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CASSAVA_PLANTER</Tag>
 		<English>Expert Cassava Planter:Expert Cassava Planters</English>
-		<Portuguese>Plantador de mandioca especializado:Plantadores de mandioca especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de mandioca especializado:Plantadores de mandioca especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de manioc:Experts planteurs de manioc</Text>
 			<Gender>Male</Gender>
@@ -105,7 +120,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CASSAVA_PLANTER</Tag>
 		<English>Expert Cassava Planter:Expert Cassava Planters</English>
-		<Portuguese>Plantador de mandioca especializado:Plantadores de mandioca especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de mandioca especializado:Plantadores de mandioca especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de manioc:Experts planteurs de manioc</Text>
 			<Gender>Male</Gender>
@@ -147,7 +167,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCHINEAL_COLLECTOR</Tag>
 		<English>Expert Cochineal Collector:Expert Cochineal Collectors</English>
-		<Portuguese>Coletor especialista em cochonilha:Coletores especialistas em cochonilha</Portuguese>
+		
+		<Portuguese>
+			<Text>Coletor especialista em cochonilha:Coletores especialistas em cochonilha</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Collecteur de cochenilles expert:Collecteurs de cochenilles expert</Text>
 			<Gender>Male</Gender>
@@ -174,7 +199,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR</Tag>
 		<English>Expert Cochineal Collector:Expert Cochineal Collectors</English>
-		<Portuguese>Coletor especialista em cochonilha:Coletores especialistas em cochonilha</Portuguese>
+		
+		<Portuguese>
+			<Text>Coletor especialista em cochonilha:Coletores especialistas em cochonilha</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Collecteur de cochenilles expert:Collecteurs de cochenilles expert</Text>
 			<Gender>Male</Gender>
@@ -216,7 +246,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_LINEN_PLANTER</Tag>
 		<English>Expert Flax Planter:Expert Flax Planters</English>
-		<Portuguese>Plantador de linho especializado: plantadores de linho especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de linho especializado: plantadores de linho especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de lin:Experts planteurs de lin</Text>
 			<Gender>Male</Gender>
@@ -243,7 +278,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LINEN_PLANTER</Tag>
 		<English>Expert Flax Planter:Expert Flax Planters</English>
-		<Portuguese>Plantador de linho especializado: plantadores de linho especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de linho especializado: plantadores de linho especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de lin:Experts planteurs de lin</Text>
 			<Gender>Male</Gender>
@@ -285,7 +325,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_LOGWOOD_COLLECTOR</Tag>
 		<English>Expert Logwood Collector:Expert Logwood Collectors</English>
-		<Portuguese>Coletor especialista em madeira: Coletor especialista em madeira</Portuguese>
+		
+		<Portuguese>
+			<Text>Coletor especialista em madeira: Coletor especialista em madeira</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert en coupe de bois de sang:Experts en coupe de bois de sang</Text>
 			<Gender>Male</Gender>
@@ -312,7 +357,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR</Tag>
 		<English>Expert Logwood Collector:Expert Logwood Collectors</English>
-		<Portuguese>Coletor especialista em madeira: Coletor especialista em madeira</Portuguese>
+		
+		<Portuguese>
+			<Text>Coletor especialista em madeira: Coletor especialista em madeira</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert en coupe de bois de sang:Experts en coupe de bois de sang</Text>
 			<Gender>Male</Gender>
@@ -354,7 +404,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_OLIVES_PLANTER</Tag>
 		<English>Expert Olive Picker:Expert Olive Pickers</English>
-		<Portuguese>Colhedor de Azeitonas Especialista: Colhedores de Azeitonas Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Colhedor de Azeitonas Especialista: Colhedores de Azeitonas Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ramasseur d'olives expert:Ramasseurs d'olives expert</Text>
 			<Gender>Male</Gender>
@@ -381,7 +436,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OLIVES_PLANTER</Tag>
 		<English>Expert Olive Picker:Expert Olive Pickers</English>
-		<Portuguese>Colhedor de Azeitonas Especialista: Colhedores de Azeitonas Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Colhedor de Azeitonas Especialista: Colhedores de Azeitonas Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ramasseur d'olives expert:Ramasseurs d'olives expert</Text>
 			<Gender>Male</Gender>
@@ -429,7 +489,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PEANUT_PLANTER</Tag>
 		<English>Expert Peanut Planter:Expert Peanut Planters</English>
-		<Portuguese>Plantador de amendoim especializado: Plantadores de amendoim especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de amendoim especializado: Plantadores de amendoim especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de cacahuètes:Experts planteurs de cacahuètes</Text>
 			<Gender>Male</Gender>
@@ -456,7 +521,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEANUT_PLANTER</Tag>
 		<English>Expert Peanut Planter:Expert Peanut Planters</English>
-		<Portuguese>Plantador de amendoim especializado: Plantadores de amendoim especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de amendoim especializado: Plantadores de amendoim especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de cacahuètes:Experts planteurs de cacahuètes</Text>
 			<Gender>Male</Gender>
@@ -501,7 +571,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PEAT_CUTTER</Tag>
 		<English>Expert Peat and Clay Cutter:Expert Peat and Clay Cutters</English>
-		<Portuguese>Cortador especialista de turfa e argila:Cortadores especialistas de turfa e argila</Portuguese>
+		
+		<Portuguese>
+			<Text>Cortador especialista de turfa e argila:Cortadores especialistas de turfa e argila</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert en coupe de tourbe et d'argile:Experts en coupe de tourbe et d'argile</Text>
 			<Gender>Male</Gender>
@@ -528,7 +603,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEAT_CUTTER</Tag>
 		<English>Expert Peat and Clay Cutter:Expert Peat and Clay Cutters</English>
-		<Portuguese>Cortador especialista de turfa e argila:Cortadores especialistas de turfa e argila</Portuguese>
+		
+		<Portuguese>
+			<Text>Cortador especialista de turfa e argila:Cortadores especialistas de turfa e argila</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert en coupe de tourbe et d'argile:Experts en coupe de tourbe et d'argile</Text>
 			<Gender>Male</Gender>
@@ -573,7 +653,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_RAPE_PLANTER</Tag>
 		<English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
-		<Portuguese>Plantador de canola especializado:Plantadores de canola especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de canola especializado:Plantadores de canola especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de colza:Experts planteurs de colza</Text>
 			<Gender>Male</Gender>
@@ -600,7 +685,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAPE_PLANTER</Tag>
 		<English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
-		<Portuguese>Plantador de canola especializado:Plantadores de canola especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador de canola especializado:Plantadores de canola especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de colza:Experts planteurs de colza</Text>
 			<Gender>Male</Gender>
@@ -642,7 +732,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_RICE_FARMER</Tag>
 		<English>Expert Rice Farmer:Expert Rice Farmers</English>
-		<Portuguese>Agricultor especialista em arroz: Agricultor especialista em arroz</Portuguese>
+		
+		<Portuguese>
+			<Text>Agricultor especialista em arroz: Agricultor especialista em arroz</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Riziculteur expert:Riziculteurs experts</Text>
 			<Gender>Male</Gender>
@@ -669,7 +764,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RICE_FARMER</Tag>
 		<English>Expert Rice Farmer:Expert Rice Farmers</English>
-		<Portuguese>Agricultor especialista em arroz: Agricultor especialista em arroz</Portuguese>
+		
+		<Portuguese>
+			<Text>Agricultor especialista em arroz: Agricultor especialista em arroz</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Riziculteur expert:Riziculteurs experts</Text>
 			<Gender>Male</Gender>
@@ -711,7 +811,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_VANILLA_COLLECTOR</Tag>
 		<English>Expert Vanilla Collector:Expert Vanilla Collectors</English>
-		<Portuguese>Coletor especialista em baunilha:Coletores especialistas em baunilha</Portuguese>
+		
+		<Portuguese>
+			<Text>Coletor especialista em baunilha:Coletores especialistas em baunilha</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Collecteur de vanille expert:Collecteurs de vanille expert</Text>
 			<Gender>Male</Gender>
@@ -738,7 +843,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR</Tag>
 		<English>Expert Vanilla Collector:Expert Vanilla Collectors</English>
-		<Portuguese>Coletor especialista em baunilha:Coletores especialistas em baunilha</Portuguese>
+		
+		<Portuguese>
+			<Text>Coletor especialista em baunilha:Coletores especialistas em baunilha</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Collecteur de vanille expert:Collecteurs de vanille expert</Text>
 			<Gender>Male</Gender>
@@ -786,7 +896,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_YERBA_PLANTER</Tag>
 		<English>Expert Yerba Planter:Expert Yerba Planters</English>
-		<Portuguese>Plantador especialista em erva: plantadores especializados em erva</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador especialista em erva: plantadores especializados em erva</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de yerba:Experts planteurs de yerba</Text>
 			<Gender>Male</Gender>
@@ -817,7 +932,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_YERBA_PLANTER</Tag>
 		<English>Expert Yerba Planter:Expert Yerba Planters</English>
-		<Portuguese>Plantador especialista em erva: plantadores especializados em erva</Portuguese>
+		
+		<Portuguese>
+			<Text>Plantador especialista em erva: plantadores especializados em erva</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Expert planteur de yerba:Experts planteurs de yerba</Text>
 			<Gender>Male</Gender>
@@ -869,7 +989,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HERDER</Tag>
 		<English>Expert Herder:Expert Herders</English>
-		<Portuguese>Pastor Especialista: Pastores Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Pastor Especialista: Pastores Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Berger expérimenté:Bergers expérimentés</Text>
 			<Gender>Male</Gender>
@@ -896,7 +1021,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HERDER</Tag>
 		<English>Expert Herder:Expert Herders</English>
-		<Portuguese>Pastor Especialista: Pastores Especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Pastor Especialista: Pastores Especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Berger expérimenté:Bergers expérimentés</Text>
 			<Gender>Male</Gender>
@@ -938,7 +1068,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MAPLE_SIRUP_COLLECTOR</Tag>
 		<English>Expert Maple Tree Tapper:Expert Maple Tree Tappers</English>
-		<Portuguese>Serrilhador especialista em árvores de bordo:Sininheiros especialistas em árvores de bordo</Portuguese>
+		
+		<Portuguese>
+			<Text>Serrilhador especialista em árvores de bordo:Sininheiros especialistas em árvores de bordo</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Collecteur de sirop d'érable expert:Collecteurs de sirop d'érable expert</Text>
 			<Gender>Male</Gender>
@@ -965,7 +1100,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR</Tag>
 		<English>Expert Maple Tree Tapper:Expert Maple Tree Tappers</English>
-		<Portuguese>Serrilhador especialista em árvores de bordo:Sininheiros especialistas em árvores de bordo</Portuguese>
+		
+		<Portuguese>
+			<Text>Serrilhador especialista em árvores de bordo:Sininheiros especialistas em árvores de bordo</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Collecteur de sirop d'érable expert:Collecteurs de sirop d'érable expert</Text>
 			<Gender>Male</Gender>
@@ -1007,7 +1147,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_KAUTSCHUK_COLLECTOR</Tag>
 		<English>Expert Rubber Collector:Expert Rubber Collectors</English>
-		<Portuguese>Coletor de borracha especializado: Coletores de borracha especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Coletor de borracha especializado: Coletores de borracha especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Collecteur de caoutchouc expert:Collecteurs de caoutchouc expert</Text>
 			<Gender>Male</Gender>
@@ -1034,7 +1179,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR</Tag>
 		<English>Expert Rubber Collector:Expert Rubber Collectors</English>
-		<Portuguese>Coletor de borracha especializado: Coletores de borracha especializados</Portuguese>
+		
+		<Portuguese>
+			<Text>Coletor de borracha especializado: Coletores de borracha especializados</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Collecteur de caoutchouc expert:Collecteurs de caoutchouc expert</Text>
 			<Gender>Male</Gender>
@@ -1076,7 +1226,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CONFECTIONER</Tag>
 		<English>Master Confectioner:Master Confectioners</English>
-		<Portuguese>Mestre Confeiteiro: Mestre Confeiteiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Confeiteiro: Mestre Confeiteiro</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître chocolatier:Maîtres chocolatiers</Text>
 			<Gender>Male</Gender>
@@ -1103,7 +1258,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONFECTIONER</Tag>
 		<English>Master Confectioner:Master Confectioners</English>
-		<Portuguese>Mestre Confeiteiro: Mestre Confeiteiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Confeiteiro: Mestre Confeiteiro</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître chocolatier:Maîtres chocolatiers</Text>
 			<Gender>Male</Gender>
@@ -1148,7 +1308,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HOUSEHOLD_TRADER</Tag>
 		<English>Master Household Goods Trader:Master Household Goods Traders</English>
-		<Portuguese>Comerciante Mestre de Bens Domésticos:Mestre Comerciante de Bens Domésticos</Portuguese>
+		
+		<Portuguese>
+			<Text>Comerciante Mestre de Bens Domésticos:Mestre Comerciante de Bens Domésticos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître marchand d'articles ménagers:Maîtres marchands d'articles ménagers</Text>
 			<Gender>Male</Gender>
@@ -1175,7 +1340,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER</Tag>
 		<English>Master Household Goods Trader:Master Household Goods Traders</English>
-		<Portuguese>Comerciante Mestre de Bens Domésticos:Mestre Comerciante de Bens Domésticos</Portuguese>
+		
+		<Portuguese>
+			<Text>Comerciante Mestre de Bens Domésticos:Mestre Comerciante de Bens Domésticos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître marchand d'articles ménagers:Maîtres marchands d'articles ménagers</Text>
 			<Gender>Male</Gender>
@@ -1217,7 +1387,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_YERBA_TRADER</Tag>
 		<English>Master Yerba-Maté Trader:Master Yerba-Maté Traders</English>
-		<Portuguese>Mestre Comerciante de Erva-Maté:Mestre Comerciante de Erva-Maté</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Comerciante de Erva-Maté:Mestre Comerciante de Erva-Maté</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître marchand en maté:Maîtres marchands en maté</Text>
 			<Gender>Male</Gender>
@@ -1244,7 +1419,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_YERBA_TRADER</Tag>
 		<English>Master Yerba Maté Trader:Master Yerba Maté Traders</English>
-		<Portuguese>Mestre Comerciante de Erva Maté:Mestre Comerciante de Erva Maté</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Comerciante de Erva Maté:Mestre Comerciante de Erva Maté</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître marchand en maté:Maîtres marchands en maté</Text>
 			<Gender>Male</Gender>
@@ -1286,7 +1466,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_OIL_TRADER</Tag>
 		<English>Master Cooking Oil Trader:Master Cooking Oil Traders</English>
-		<Portuguese>Mestre Comerciante de Óleo de Cozinha:Mestre Comerciante de Óleo de Cozinha</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Comerciante de Óleo de Cozinha:Mestre Comerciante de Óleo de Cozinha</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître huilier:Maîtres huiliers</Text>
 			<Gender>Male</Gender>
@@ -1313,7 +1498,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OIL_TRADER</Tag>
 		<English>Master Cooking Oil Trader:Master Cooking Oil Traders</English>
-		<Portuguese>Mestre Comerciante de Óleo de Cozinha:Mestre Comerciante de Óleo de Cozinha</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Comerciante de Óleo de Cozinha:Mestre Comerciante de Óleo de Cozinha</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître huilier:Maîtres huiliers</Text>
 			<Gender>Male</Gender>
@@ -1355,7 +1545,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FRUITS_PICKER</Tag>
 		<English>Expert Fruit Picker:Expert Fruit Pickers</English>
-		<Portuguese>Selecionador de frutas especializado: selecionador de frutas especializado</Portuguese>
+		
+		<Portuguese>
+			<Text>Selecionador de frutas especializado: selecionador de frutas especializado</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cueilleur de fruits expert:Cueilleurs de fruits expert</Text>
 			<Gender>Male</Gender>
@@ -1382,7 +1577,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRUITS_PICKER</Tag>
 		<English>Expert Fruit Picker:Expert Fruit Pickers</English>
-		<Portuguese>Selecionador de frutas especializado: selecionador de frutas especializado</Portuguese>
+		
+		<Portuguese>
+			<Text>Selecionador de frutas especializado: selecionador de frutas especializado</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cueilleur de fruits expert:Cueilleurs de fruits expert</Text>
 			<Gender>Male</Gender>
@@ -1424,7 +1624,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_POULTRY_BUTCHER</Tag>
 		<English>Master Poultry Butcher:Master Poultry Butchers</English>
-		<Portuguese>Mestre Açougueiro de Aves:Mestre Açougueiro de Aves</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Açougueiro de Aves:Mestre Açougueiro de Aves</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître boucher de volailles:Maîtres bouchers de volailles</Text>
 			<Gender>Male</Gender>
@@ -1451,7 +1656,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POULTRY_BUTCHER</Tag>
 		<English>Master Poultry Butcher:Master Poultry Butchers</English>
-		<Portuguese>Mestre Açougueiro de Aves:Mestre Açougueiro de Aves</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Açougueiro de Aves:Mestre Açougueiro de Aves</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître boucher de volailles:Maîtres bouchers de volailles</Text>
 			<Gender>Male</Gender>
@@ -1493,7 +1703,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COAL_MINER</Tag>
 		<English>Expert Coal Miner:Expert Coal Miners</English>
-		<Portuguese>Mineiro de carvão especializado:Mineiros de carvão especialistas</Portuguese>
+		
+		<Portuguese>
+			<Text>Mineiro de carvão especializado:Mineiros de carvão especialistas</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mineur de charbon expert:Mineurs de charbon expert</Text>
 			<Gender>Male</Gender>
@@ -1520,7 +1735,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COAL_MINER</Tag>
 		<English>Expert Coal Miner:Expert Coal Miner</English>
-		<Portuguese>Mineiro de carvão especialista:Mineiro de carvão especialista</Portuguese>
+		
+		<Portuguese>
+			<Text>Mineiro de carvão especialista:Mineiro de carvão especialista</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mineur de charbon expert:Mineurs de charbon expert</Text>
 			<Gender>Male</Gender>
@@ -1565,7 +1785,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_LEATHER_TAYLOR</Tag>
 		<English>Master Leatherworker:Master Leatherworkers</English>
-		<Portuguese>Mestre Coureiro:Mestres Coureiros</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Coureiro:Mestres Coureiros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître maroquinier:Maîtres maroquiniers</Text>
 			<Gender>Male</Gender>
@@ -1592,7 +1817,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEATHER_TAYLOR</Tag>
 		<English>Master Leatherworker:Master Leatherworkers</English>
-		<Portuguese>Mestre Coureiro:Mestres Coureiros</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Coureiro:Mestres Coureiros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître maroquinier:Maîtres maroquiniers</Text>
 			<Gender>Male</Gender>
@@ -1634,7 +1864,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CLOTH_TAYLOR</Tag>
 		<English>Master Tailor:Master Tailors</English>
-		<Portuguese>Mestre Alfaiate: Mestre Alfaiate</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Alfaiate: Mestre Alfaiate</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître tailleur:Maîtres tailleurs</Text>
 			<Gender>Male</Gender>
@@ -1661,7 +1896,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CLOTH_TAYLOR</Tag>
 		<English>Master Tailor:Master Tailors</English>
-		<Portuguese>Mestre Alfaiate: Mestre Alfaiate</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Alfaiate: Mestre Alfaiate</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître tailleur:Maîtres tailleurs</Text>
 			<Gender>Male</Gender>
@@ -1709,7 +1949,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ROASTER</Tag>
 		<English>Master Roaster:Master Roasters</English>
-		<Portuguese>Mestre Torrador: Mestre Torrador</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Torrador: Mestre Torrador</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître torréfacteur:Maîtres torréfacteurs</Text>
 			<Gender>Male</Gender>
@@ -1736,7 +1981,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROASTER</Tag>
 		<English>Master Roaster:Master Roasters</English>
-		<Portuguese>Mestre Torrador: Mestre Torrador</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Torrador: Mestre Torrador</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître torréfacteur:Maîtres torréfacteurs</Text>
 			<Gender>Male</Gender>
@@ -1780,7 +2030,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_POTTER</Tag>
 		<English>Master Potter:Master Potters</English>
-		<Portuguese>Mestre Potter: Mestre Potter</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Potter: Mestre Potter</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître potier:Maîtres potiers</Text>
 			<Gender>Male</Gender>
@@ -1807,7 +2062,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POTTER</Tag>
 		<English>Master Potter:Master Potters</English>
-		<Portuguese>Mestre Potter: Mestre Potter</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Potter: Mestre Potter</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître potier:Maîtres potiers</Text>
 			<Gender>Male</Gender>
@@ -1852,7 +2112,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MILK_MAID</Tag>
 		<English>Skilled Milkmaid:Skilled Milkmaids</English>
-		<Portuguese>Leiteira Habilidosa: Leiteiras Habilidosas</Portuguese>
+		
+		<Portuguese>
+			<Text>Leiteira Habilidosa: Leiteiras Habilidosas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Laitière qualifiée:Laitières qualifiées</Text>
 			<Gender>Female</Gender>
@@ -1879,7 +2144,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MILK_MAID</Tag>
 		<English>Skilled Milkmaid:Skilled Milkmaids</English>
-		<Portuguese>Leiteira Habilidosa: Leiteiras Habilidosas</Portuguese>
+		
+		<Portuguese>
+			<Text>Leiteira Habilidosa: Leiteiras Habilidosas</Text>
+			<Gender>Female</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Laitière qualifiée:Laitières qualifiées</Text>
 			<Gender>Female</Gender>
@@ -1927,7 +2197,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CHEESE_MAKER</Tag>
 		<English>Master Cheese Maker:Master Cheese Makers</English>
-		<Portuguese>Mestre Fabricante de Queijos:Mestres Fabricantes de Queijos</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Fabricante de Queijos:Mestres Fabricantes de Queijos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître Fromager:Maîtres Fromagers</Text>
 			<Gender>Male</Gender>
@@ -1954,7 +2229,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHEESE_MAKER</Tag>
 		<English>Master Cheese Maker:Master Cheese Makers</English>
-		<Portuguese>Mestre Fabricante de Queijos:Mestres Fabricantes de Queijos</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Fabricante de Queijos:Mestres Fabricantes de Queijos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître Fromager:Maîtres Fromagers</Text>
 			<Gender>Male</Gender>
@@ -1996,7 +2276,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CHARCOAL_BURNER</Tag>
 		<English>Master Charcoal Burner:Master Charcoal Burners</English>
-		<Portuguese>Mestre Carvoeiro:Mestres Carvoeiros</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Carvoeiro:Mestres Carvoeiros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître charbonnier:Maîtres charbonniers</Text>
 			<Gender>Male</Gender>
@@ -2023,7 +2308,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHARCOAL_BURNER</Tag>
 		<English>Master Charcoal Burner:Master Charcoal Burners</English>
-		<Portuguese>Mestre Carvoeiro:Mestres Carvoeiros</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Carvoeiro:Mestres Carvoeiros</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître charbonnier:Maîtres charbonniers</Text>
 			<Gender>Male</Gender>
@@ -2071,7 +2361,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_BAKER</Tag>
 		<English>Master Baker:Master Bakers</English>
-		<Portuguese>Mestre Padeiro: Mestre Padeiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Padeiro: Mestre Padeiro</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Maître boulanger:Maîtres boulangers</French>
 		<German>
 			<Text>Bäckermeister:Bäckermeister</Text>
@@ -2086,7 +2381,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BAKER</Tag>
 		<English>Master Baker:Master Bakers</English>
-		<Portuguese>Mestre Padeiro: Mestre Padeiro</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre Padeiro: Mestre Padeiro</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Maître boulanger:Maîtres boulangers</French>
 		<German>
 			<Text>Bäckermeister:Bäckermeister</Text>
@@ -2119,7 +2419,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FIREWORKER</Tag>
 		<English>Master Powder Maker:Master Powder Makers</English>
-		<Portuguese>Mestre em pó: Mestre em pó</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre em pó: Mestre em pó</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître poudrier:Maîtres poudriers</Text>
 			<Gender>Male</Gender>
@@ -2146,7 +2451,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIREWORKER</Tag>
 		<English>Master Powder Maker:Master Powder Makers</English>
-		<Portuguese>Mestre em pó: Mestre em pó</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestre em pó: Mestre em pó</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Maître poudrier:Maîtres poudriers</Text>
 			<Gender>Male</Gender>
@@ -2191,7 +2501,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MESTIZZO</Tag>
 		<English>Mestizo:Mestizos</English>
-		<Portuguese>Mestiço:Mestiços</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestiço:Mestiços</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Métis:Métis</Text>
 			<Gender>Male</Gender>
@@ -2218,7 +2533,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MESTIZZO</Tag>
 		<English>Mestizo:Mestizos</English>
-		<Portuguese>Mestiço:Mestiços</Portuguese>
+		
+		<Portuguese>
+			<Text>Mestiço:Mestiços</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Métis:Métis</Text>
 			<Gender>Male</Gender>
@@ -2260,7 +2580,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MULATTO</Tag>
 		<English>Mulatto:Mulattos</English>
-		<Portuguese>Mulato: Mulatos</Portuguese>
+		
+		<Portuguese>
+			<Text>Mulato: Mulatos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mulâtre:Mulâtres</Text>
 			<Gender>Male</Gender>
@@ -2287,7 +2612,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MULATTO</Tag>
 		<English>Mulatto:Mulattos</English>
-		<Portuguese>Mulato: Mulatos</Portuguese>
+		
+		<Portuguese>
+			<Text>Mulato: Mulatos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mulâtre:Mulâtres</Text>
 			<Gender>Male</Gender>
@@ -2331,7 +2661,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CONSTRUCTION_SUPPLIES</Tag>
 		<English>Construction Supplies:Construction Supplies</English>
-		<Portuguese>Suprimentos de construção: Suprimentos de construção</Portuguese>
+		
+		<Portuguese>
+			<Text>Suprimentos de construção: Suprimentos de construção</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Matériel de construction:Matériel de construction</Text>
 			<Gender>Male</Gender>
@@ -2358,7 +2693,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES</Tag>
 		<English>Construction Supplies:Construction Supplies</English>
-		<Portuguese>Suprimentos de construção: Suprimentos de construção</Portuguese>
+		
+		<Portuguese>
+			<Text>Suprimentos de construção: Suprimentos de construção</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Matériau de construction:Matériaux de construction</Text>
 			<Gender>Male</Gender>
@@ -2402,7 +2742,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_BRAVE_LIEUTENANT</Tag>
 		<English>Brave Lieutenant:Brave Lieutenants</English>
-		<Portuguese>Bravo Tenente:Bravos Tenentes</Portuguese>
+		
+		<Portuguese>
+			<Text>Bravo Tenente:Bravos Tenentes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Lieutenant courageux:Lieutenants courageux</Text>
 			<Gender>Male</Gender>
@@ -2429,7 +2774,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT</Tag>
 		<English>Brave Lieutenant:Brave Lieutenants</English>
-		<Portuguese>Bravo Tenente:Bravos Tenentes</Portuguese>
+		
+		<Portuguese>
+			<Text>Bravo Tenente:Bravos Tenentes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Lieutenant courageux:Lieutenants courageux</Text>
 			<Gender>Male</Gender>
@@ -2473,7 +2823,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CAPABLE_CAPTAIN</Tag>
 		<English>Able Captain:Able Captains</English>
-		<Portuguese>Capitão Capaz: Capitães Capazes</Portuguese>
+		
+		<Portuguese>
+			<Text>Capitão Capaz: Capitães Capazes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Capitaine compétent:Capitaines compétents</Text>
 			<Gender>Male</Gender>
@@ -2500,7 +2855,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN</Tag>
 		<English>Able Captain:Able Captains</English>
-		<Portuguese>Capitão Capaz: Capitães Capazes</Portuguese>
+		
+		<Portuguese>
+			<Text>Capitão Capaz: Capitães Capazes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Capitaine compétent:Capitaines compétents</Text>
 			<Gender>Male</Gender>
@@ -2723,7 +3083,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_JUDGE</Tag>
 		<English>Honourable Judge:Honourable Judges</English>
-		<Portuguese>Honorável Juiz: Honoráveis Juízes</Portuguese>
+		
+		<Portuguese>
+			<Text>Honorável Juiz: Honoráveis Juízes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Juge équitable:Juges équitables</French>
 		<German>
 			<Text>Ehrenwerter Richter:Ehrenwerte Richter</Text>
@@ -2738,7 +3103,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JUDGE</Tag>
 		<English>Honourable Judge:Honourable Judges</English>
-		<Portuguese>Honorável Juiz: Honoráveis Juízes</Portuguese>
+		
+		<Portuguese>
+			<Text>Honorável Juiz: Honoráveis Juízes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Honorable juge:Honorables juges</French>
 		<German>
 			<Text>Ehrenwerter Richter:Ehrenwerte Richter</Text>
@@ -2772,7 +3142,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PRISONER_OF_WAR</Tag>
 		<English>Prisoner of War:Prisoners of War</English>
-		<Portuguese>Prisioneiro de Guerra:Prisioneiros de Guerra</Portuguese>
+		
+		<Portuguese>
+			<Text>Prisioneiro de Guerra:Prisioneiros de Guerra</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Prisonnier de Guerre:Prisonniers de guerre</French>
 		<German>
 			<Text>Kriegsgefangener:Kriegsgefangene</Text>
@@ -2785,7 +3160,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRISONER_OF_WAR</Tag>
 		<English>Prisoner of War:Prisoners of War</English>
-		<Portuguese>Prisioneiro de Guerra:Prisioneiros de Guerra</Portuguese>
+		
+		<Portuguese>
+			<Text>Prisioneiro de Guerra:Prisioneiros de Guerra</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Prisonnier de Guerre:Prisonniers de guerre</French>
 		<German>
 			<Text>Kriegsgefangener:Kriegsgefangene</Text>
@@ -2815,7 +3195,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_REVOLTING_PRISONER_OF_WAR</Tag>
 		<English>Rebelling Prisoner of War:Rebelling Prisoners of War</English>
-		<Portuguese>Prisioneiro de guerra rebelde:Prisioneiros de guerra rebeldes</Portuguese>
+		
+		<Portuguese>
+			<Text>Prisioneiro de guerra rebelde:Prisioneiros de guerra rebeldes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Prisonnier de guerre mutiné:Prisonniers de guerre mutinés</French>
 		<German>
 			<Text>Revoltierender Kriegsgefangener:Revoltierende Kriegsgefangene</Text>
@@ -2828,7 +3213,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR</Tag>
 		<English>Rebelling Prisoner of War:Rebelling Prisoners of War</English>
-		<Portuguese>Prisioneiro de guerra rebelde:Prisioneiros de guerra rebeldes</Portuguese>
+		
+		<Portuguese>
+			<Text>Prisioneiro de guerra rebelde:Prisioneiros de guerra rebeldes</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Prisonnier de guerre mutiné:Prisonniers de guerre mutinés</French>
 		<German>
 			<Text>Revoltierender Kriegsgefangener:Revoltierende Kriegsgefangene</Text>
@@ -2858,7 +3248,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT</Tag>
 		<English>Eccentric Architect:Eccentric Architects</English>
-		<Portuguese>Arquiteto Excêntrico:Arquitetos Excêntricos</Portuguese>
+		
+		<Portuguese>
+			<Text>Arquiteto Excêntrico:Arquitetos Excêntricos</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</Portuguese>
 		<French>Architecte excentrique:Architectes excentriques</French>
 		<German>
 			<Text>Exzentrischer Architekt:Exzentrische Architekten</Text>
