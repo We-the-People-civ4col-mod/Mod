@@ -539,7 +539,7 @@ int CvSavegameReader::ConvertIndex(JITarrayTypes eType, int iIndex) const
 		}
 	}
 
-	return -1;
+	return iIndex;
 }
 
 int CvSavegameReader::GetXmlSize(JITarrayTypes eType) const
