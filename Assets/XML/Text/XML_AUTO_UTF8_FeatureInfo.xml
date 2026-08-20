@@ -405,7 +405,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_BOG</Tag>
 		<English>Bog</English>
-		<Portuguese>Pântano</Portuguese>
+		<Portuguese>Turfeira</Portuguese>
 		<French>Fondrière</French>
 		<German>
 			<Text>Moorpflanzen</Text>
@@ -417,7 +417,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_BOG_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1]A [COLOR_HIGHLIGHT_TEXT]bog[COLOR_REVERT] is what happens when a swamp dries out. Plants turn into peat. There are still sinkholes to threaten the unwary traveller.</English>
-		<Portuguese>[BOLD]Estratégia:[\BOLD][PARAGRAPH:1]Um [COLOR_HIGHLIGHT_TEXT]pântano[COLOR_REVERT] é o que acontece quando um pântano seca. As plantas se transformam em turfa. Ainda existem buracos que ameaçam o viajante incauto.</Portuguese>
+		<Portuguese>[BOLD]Estratégia:[\BOLD][PARAGRAPH:1]Uma [COLOR_HIGHLIGHT_TEXT]turfeira[COLOR_REVERT] é o que acontece quando um pântano seca. As plantas se transformam em turfa. Ainda existem buracos que ameaçam o viajante incauto.</Portuguese>
 		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Moorpflanzen[COLOR_REVERT] sind das, was passiert, wenn ein Sumpf austrocknet. Die Pflanzen verwandeln sich in Torf. Es gibt immer noch Erdfälle, die den unvorsichtigen Reisenden bedrohen.</German>
 	</TEXT>
 	<TEXT>

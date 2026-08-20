@@ -3,7 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_ARMORY</Tag>
 		<English>Armoury</English>
-		<Portuguese>Arsenal</Portuguese>
+		<Portuguese>Armaria</Portuguese>
 		<French>
 			<Text>Armurerie:Armureries</Text>
 			<Gender>Female</Gender>
@@ -1420,7 +1420,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TOWNHALL</Tag>
 		<English>Town Hall</English>
-		<Portuguese>Prefeitura</Portuguese>
+		<Portuguese>Câmara</Portuguese>
 		<French>
 			<Text>Mairie:HôMairies</Text>
 			<Gender>Male</Gender>

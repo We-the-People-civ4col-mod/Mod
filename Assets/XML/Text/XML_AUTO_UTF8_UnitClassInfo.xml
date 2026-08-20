@@ -2090,7 +2090,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Caçador Especialista: Caçadores Especialistas</Text>
+			<Text>Caçador Especialista:Caçadores Especialistas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4013,7 +4013,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_TRAPPER</Tag>
 		<English>Expert Trapper:Expert Trappers</English>
-		<Portuguese>Caçador Especialista: Caçadores Especialistas</Portuguese>
+		<Portuguese>Trampeiro Especialista:Trampeiros Especialistas</Portuguese>
 		<French>
 			<Text>Expert trappeur:Experts trappeurs</Text>
 			<Gender>Male</Gender>
