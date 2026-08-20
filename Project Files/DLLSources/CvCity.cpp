@@ -9148,6 +9148,11 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 	CvUnit* pTransferUnit = GET_PLAYER(pUnit->getOwnerINLINE()).getAndRemoveUnit(pUnit->getID());
 	FAssert(pTransferUnit == pUnit);
 
+	if (pTransferUnit == NULL)
+	{
+		return;
+	}
+
 	int iOldPopulation = getPopulation();
 	m_aPopulationUnits.push_back(pTransferUnit);
 	area()->changePower(getOwnerINLINE(), pTransferUnit->getPower());
@@ -9204,7 +9209,13 @@ bool CvCity::removePopulationUnit(AssertCallerData assertData, CvUnit* pUnit, bo
 	{
 		//transfer back to player
 		GET_PLAYER(getOwnerINLINE()).addExistingUnit(pUnit);
-		pUnit->addToMap(coord());
+
+		if (pUnit->getX_INLINE() == INVALID_PLOT_COORD &&
+			pUnit->getY_INLINE() == INVALID_PLOT_COORD)
+		{
+			pUnit->addToMap(coord());
+		}
+
 		pUnit->setProfession(eProfession);
 
 		if (pUnit->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
