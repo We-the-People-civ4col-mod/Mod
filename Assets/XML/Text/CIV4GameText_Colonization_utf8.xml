@@ -658,7 +658,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CANNOT_FOUND</Tag>
 		<English>[COLOR_WARNING_TEXT]Cannot found within %d1_Num [NUM1:plot:plots] of Settlement[COLOR_REVERT]</English>
-		<Portuguese>[COLOR_WARNING_TEXT]Não é possível fundar a menos de %d1_Num [NUM1:quadrado:quadrados] de uma colônia[COLOR_REVERT]</Portuguese>
+		<Portuguese>[COLOR_WARNING_TEXT]Não é possível fundar a menos de %d1_Num [NUM1:lote:lotes] de uma colônia[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_WARNING_TEXT]Impossible de fonder une nouvelle colonie à moins de %d1_Num [NUM1:case:cases] de la colonie[COLOR_REVERT]</French>
 		<German>[COLOR_WARNING_TEXT]Kann nicht innerhalb eines Radius von %d1_Num [NUM1:Geländefeld:Geländefeldern] um die Siedlung herum gegründet werden.[COLOR_REVERT]</German>
 		<Italian>[COLOR_WARNING_TEXT]Non è stato trovato all'interno di %d1_Num [NUM1:spazio:spazi] dell'insediamento[COLOR_REVERT]</Italian>

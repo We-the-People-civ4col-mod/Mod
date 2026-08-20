@@ -1655,7 +1655,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_38</Tag>
 		<English>Hold down the [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] key while mousing-over a plot to view the combat odds for an attack.</English>
-		<Portuguese>Mantenha pressionada a tecla [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] enquanto passa o mouse sobre um gráfico para ver as probabilidades de combate de um ataque.</Portuguese>
+		<Portuguese>Mantenha pressionada a tecla [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] enquanto passa o mouse sobre um lote para ver as probabilidades de combate de um ataque.</Portuguese>
 		<French>Maintenez la touche [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] enfoncée quand le curseur est sur une case pour connaître les chances de réussite en cas d'attaque.</French>
 		<German>Halten Sie [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] gedrückt und bewegen Sie die Maus über eine Position, um Ihre Chancen im Falle eines Angriffs zu betrachten.</German>
 		<Italian>Tieni premuto [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] e punta con il mouse una casella per visualizzare le probabilità di vittoria in caso di attacco.</Italian>
@@ -1666,7 +1666,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_39</Tag>
 		<English>To view combat odds, hold down the right mouse button on the target tile.</English>
-		<Portuguese>Para visualizar as probabilidades de combate, mantenha pressionado o botão direito do mouse na lote alvo.</Portuguese>
+		<Portuguese>Para visualizar as probabilidades de combate, mantenha pressionado o botão direito do mouse no lote alvo.</Portuguese>
 		<French>Pour connaître vos chances en cas de combat, maintenez le bouton droit de la souris enfoncé sur la case visée.</French>
 		<German>Möchten Sie Ihre Kampfchancen betrachten, halten Sie die rechte Maustaste über dem gewünschten Geländefeld gedrückt.</German>
 		<Italian>Per visualizzare le probabilità di vittoria di uno scontro, tieni premuto il pulsante destro del mouse su una casella bersaglio.</Italian>
@@ -1732,7 +1732,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_45</Tag>
 		<English>Press the forward and back buttons on your mouse to cycle through units on the same plot.</English>
-		<Portuguese>Pressione os botões avançar e voltar do mouse para percorrer as unidades no mesmo gráfico.</Portuguese>
+		<Portuguese>Pressione os botões avançar e voltar do mouse para percorrer as unidades no mesmo lote.</Portuguese>
 		<French>Appuyez sur le bouton Suivant et Précédent de votre souris pour faire défiler les unités stationnées sur la même case.</French>
 		<German>Drücken Sie die Vorwärts-/Rückwärts-Tasten Ihrer Maus, um durch alle Einheiten auf einem Geländefeld zu schalten.</German>
 		<Hungarian>Az egér előre és vissza gombjaival válthatsz az ugyanazon a mezőn lévő egységek között.</Hungarian>
@@ -1744,7 +1744,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_46</Tag>
 		<English>Hold down the [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] key and spin the mouse-wheel to cycle through units on the same plot.</English>
-		<Portuguese>Mantenha pressionada a tecla [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] e gire a roda do mouse para percorrer as unidades no mesmo gráfico.</Portuguese>
+		<Portuguese>Mantenha pressionada a tecla [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] e gire a roda do mouse para percorrer as unidades no mesmo lote.</Portuguese>
 		<French>Maintenez la touche [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] enfoncée et utilisez la molette de la souris pour parcourir les unités sur la même case.</French>
 		<German>Halten Sie [COLOR:140:255:40:255]&lt; STRG &gt;[COLOR_REVERT] gedrückt und schalten Sie mit dem Mausrad durch alle Einheiten auf dem gewünschten Geländefeld.</German>
 		<Italian>Tieni premuto il tasto [COLOR:140:255:40:255]&lt; CTRL &gt;[COLOR_REVERT] e usa la rotellina del mouse per scorrere tra le unità sulla stessa casella.</Italian>

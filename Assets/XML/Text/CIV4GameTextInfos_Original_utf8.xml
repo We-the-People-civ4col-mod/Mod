@@ -11891,7 +11891,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NAVAL_CONTROL</Tag>
 		<English>[ICON_BULLET]Naval Control: Radius %d1_Num plots; Movement Cost deduction from other ships -%d2_Num</English>
-		<Portuguese>[ICON_BULLET]Controle Naval: Gráficos de raio %d1_Num; Dedução do custo de movimento de outros navios -%d2_Num</Portuguese>
+		<Portuguese>[ICON_BULLET]Controle Naval: Raio de %d1_Num lotes; Dedução do custo de movimento de outros navios -%d2_Num</Portuguese>
 		<German>[ICON_BULLET]Seekontrolle: Radius %d1_Num Felder; Bewegungskosten-Abzug bei anderen Schiffen -%d2_Num</German>
 	</TEXT>
 	<TEXT>
@@ -11981,7 +11981,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_YIELD_CHANGE_PLOT</Tag>
 		<English>[ICON_BULLET]%s1 in the plot</English>
-		<Portuguese>[ICON_BULLET]%s1 na trama</Portuguese>
+		<Portuguese>[ICON_BULLET]%s1 no lote</Portuguese>
 		<French>[ICON_BULLET]%s1 sur cette case</French>
 		<German>[ICON_BULLET]%s1 auf dem Geländefeld</German>
 		<Italian>[ICON_BULLET]%s1 nella casella</Italian>
@@ -13055,7 +13055,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_HEAL_MODIFIER</Tag>
 		<English>[ICON_BULLET]Units on plot [COLOR_HIGHLIGHT_TEXT]heal %d1_Num%% faster[COLOR_REVERT]</English>
-		<Portuguese>[ICON_BULLET]Unidades na trama [COLOR_HIGHLIGHT_TEXT]curam %d1_Num%% mais rápido[COLOR_REVERT]</Portuguese>
+		<Portuguese>[ICON_BULLET]Unidades no lote [COLOR_HIGHLIGHT_TEXT]curam %d1_Num%% mais rápido[COLOR_REVERT]</Portuguese>
 		<French>[ICON_BULLET]Les unités sur la case[COLOR_HIGHLIGHT_TEXT]guérissent plus vite de %d1_Num%%[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Einheiten auf Feld [COLOR_HIGHLIGHT_TEXT]heilen %d1_Num%% schneller[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]Отряды на участке [COLOR_HIGHLIGHT_TEXT]лечатся на %d1_Num%% быстрее[COLOR_REVERT]</Russian>
