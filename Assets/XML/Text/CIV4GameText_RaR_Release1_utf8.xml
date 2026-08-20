@@ -1496,7 +1496,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_MONASTERY_CROSS_MODIFIER_IF_WORKED</Tag>
 		<English>[ICON_BULLET]Adds additional %d1_crossesbonus%%%F2_Icon if the monastery has missionaries and its plot is worked by a citizen inside the city; generates religious Founding Father points.</English>
-		<Portuguese>[ICON_BULLET]Adiciona %d1_crossesbonus%%%F2_Icon adicional se o mosteiro tiver missionários e seu terreno for trabalhado por um cidadão dentro da cidade; gera pontos religiosos Pai Fundador.</Portuguese>
+		<Portuguese>[ICON_BULLET]Adiciona %d1_crossesbonus%%%F2_Icon adicional se o mosteiro tiver missionários e seu terreno for trabalhado por um cidadão dentro da cidade; gera pontos religiosos de Patrono.</Portuguese>
 		<French>[ICON_BULLET]Ajoute %d1_crossesbonus%%%F2_Icon si le monastère est occupé avec des missionnaires et si son emplacement est travaillé par un citoyen de la ville.</French>
 		<German>[ICON_BULLET]Gibt der Stadt einen zusätzliche %d1_crossesbonus%%%F2_Icon, wenn das Kloster durch Mönche besetzt ist und dessen Feld durch einen Arbeiter in der Stadt bearbeitet wird; erzeugt Religionspunkte für Gründerväter.</German>
 		<Russian>[ICON_BULLET]Дает дополнительный бонус %d1_crossesbonus%%%F2_Icon, если в нем находится миссионер, а его участок внутри города обрабатывается горожанином.</Russian>
