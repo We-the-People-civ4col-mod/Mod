@@ -11,7 +11,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_BOMBARD</Tag>
 		<English>Bombard</English>
-		<Portuguese>Bombardeio</Portuguese>
+		<Portuguese>Bombardear</Portuguese>
 		<French>Bombardement</French>
 		<German>Bombardierung</German>
 		<Italian>Bombarda</Italian>
@@ -31,7 +31,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_BUILD</Tag>
 		<English>Build Improvement</English>
-		<Portuguese>Melhoria de construção</Portuguese>
+		<Portuguese>Construir melhoria</Portuguese>
 		<French>Construire aménagement</French>
 		<German>Modernisierung errichten</German>
 		<Italian>Costruire miglioramento</Italian>
@@ -77,7 +77,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_FISHING</Tag>
 		<English>Fishing</English>
-		<Portuguese>Pesca</Portuguese>
+		<Portuguese>Pescar</Portuguese>
 		<French>Pêche</French>
 		<German>Fischfang</German>
 		<Italian>Pesca</Italian>
@@ -165,7 +165,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_JOIN_CITY</Tag>
 		<English>Join settlement</English>
-		<Portuguese>Junte-se aa colônia</Portuguese>
+		<Portuguese>Juntar-se à colônia</Portuguese>
 		<French>Rejoindre la colonie</French>
 		<German>Anschluss an Siedlung</German>
 		<Italian>Unisci all'insediamento</Italian>
@@ -253,7 +253,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_PILLAGE</Tag>
 		<English>Pillage</English>
-		<Portuguese>Pilhagem</Portuguese>
+		<Portuguese>Saquear</Portuguese>
 		<French>Pillage</French>
 		<German>Plünderung</German>
 		<Italian>Saccheggia</Italian>
@@ -273,7 +273,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_ROUTE_TO</Tag>
 		<English>Route to</English>
-		<Portuguese>Rota para</Portuguese>
+		<Portuguese>Construir estrada até</Portuguese>
 		<French>Route vers</French>
 		<German>Straße nach</German>
 		<Italian>Intinerario</Italian>
@@ -303,7 +303,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_ROUTE_TO_COUNTRY_ROAD</Tag>
 		<English>Route to (country road)</English>
-		<Portuguese>Rota para (estrada de terra)</Portuguese>
+		<Portuguese>Construir estrada de terra até</Portuguese>
 		<German>Straße nach-Modus (Landstraße)</German>
 	</TEXT>
 	<TEXT>
@@ -315,7 +315,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_SENTRY</Tag>
 		<English>Sentry</English>
-		<Portuguese>Sentinela</Portuguese>
+		<Portuguese>Vigiar</Portuguese>
 		<French>Sentinelle</French>
 		<German>Wache</German>
 		<Italian>Sentinella</Italian>
@@ -345,7 +345,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_SKIP_HELP</Tag>
 		<English>Do nothing. The unit will awake and ask again for orders the next turn.</English>
-		<Portuguese>Não faça nada. A unidade irá acordar e pedir ordens novamente no próximo turno.</Portuguese>
+		<Portuguese>Não fazer nada. A unidade acorda e pede ordens novamente no próximo turno.</Portuguese>
 		<French>Ne rien faire. L'unité attend le tour suivant pour demander de nouveaux ordres.</French>
 		<German>Tun Sie gar nichts, wartet die Einheit in der nächsten Runde auf weitere Befehle</German>
 		<Italian>Nessun ordine. L'unità si sveglierà e attenderà altri ordini al turno successivo.</Italian>
@@ -365,7 +365,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_SLEEP_HELP</Tag>
 		<English>Order the unit to sleep until activated by the player.</English>
-		<Portuguese>Ordene que a unidade durma até ser ativada pelo jogador.</Portuguese>
+		<Portuguese>Ordenar que a unidade durma até ser ativada pelo jogador.</Portuguese>
 		<French>Ordonner à l'unité de se mettre en sommeil tant qu'elle n'est pas réactivée par le joueur.</French>
 		<German>Einheit bleibt tatenlos an dieser Stelle, bis sie wieder angeklickt wird.</German>
 		<Italian>Ordina all'unità di riposare finché non viene attivata dal giocatore.</Italian>
@@ -383,7 +383,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_WHALING</Tag>
 		<English>Whaling</English>
-		<Portuguese>Baleeira</Portuguese>
+		<Portuguese>Caçar baleias</Portuguese>
 		<French>Chasse à la baleine</French>
 		<German>Waljagd</German>
 		<Italian>Caccia alle balene</Italian>

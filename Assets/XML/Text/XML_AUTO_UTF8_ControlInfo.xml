@@ -474,7 +474,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_FREE_COLONY</Tag>
 		<English>Select the colonies to which you wish to grant independence</English>
-		<Portuguese>Selecione as colônias às quais deseja conceder independência</Portuguese>
+		<Portuguese>Selecionar as colônias às quais deseja conceder independência</Portuguese>
 		<French>Sélectionnez les colonies auxquelles vous souhaitez accorder l'indépendance</French>
 		<German>Wählt die Kolonien aus, denen Ihr Unabhängigkeit verleihen möchtet</German>
 		<Italian>Seleziona le colonie che vuoi rendere indipendenti</Italian>
@@ -602,7 +602,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_PING_HELP</Tag>
 		<English>Ping a plot to bring it to the attention of your team mates</English>
-		<Portuguese>Faça ping em um enredo para chamar a atenção de seus companheiros de equipe</Portuguese>
+		<Portuguese>Fazer ping em uma peça para chamar a atenção dos companheiros de equipe</Portuguese>
 		<French>Désigner un terrain pour y attirer l'attention de vos coéquipiers</French>
 		<German>Pingen Sie ein Geländefeld an, um Ihre Mitstreiter darauf aufmerksam zu machen</German>
 		<Italian>Segnala un punto per richiamare l'attenzione dei tuoi compagni di squadra.</Italian>
@@ -665,7 +665,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SELECTCAPITAL</Tag>
 		<English>Select capital</English>
-		<Portuguese>Selecione capital</Portuguese>
+		<Portuguese>Selecionar capital</Portuguese>
 		<French>Sélectionner capitale</French>
 		<German>Hauptstadt wählen</German>
 		<Italian>Seleziona città</Italian>
@@ -679,7 +679,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SELECTCITY</Tag>
 		<English>Select settlement</English>
-		<Portuguese>Selecione colônia</Portuguese>
+		<Portuguese>Selecionar colônia</Portuguese>
 		<French>Choisir une colonie</French>
 		<German>Siedlung wählen</German>
 		<Italian>Seleziona insediamento</Italian>
@@ -693,7 +693,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SELECTYUNITALL</Tag>
 		<English>Select all units</English>
-		<Portuguese>Selecione todas as unidades</Portuguese>
+		<Portuguese>Selecionar todas as unidades</Portuguese>
 		<French>Sélectionner toutes les unités</French>
 		<German>Alle Einheiten auswählen</German>
 		<Italian>Seleziona tutte le unità</Italian>
@@ -707,7 +707,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SELECTYUNITTYPE</Tag>
 		<English>Select all units (same type)</English>
-		<Portuguese>Selecione todas as unidades (mesmo tipo)</Portuguese>
+		<Portuguese>Selecionar todas as unidades (mesmo tipo)</Portuguese>
 		<French>Sélectionner toutes les unités (même type)</French>
 		<German>Alle Einheiten vom gleichen Typ auswählen</German>
 		<Italian>Seleziona tutte le unità (dello stesso tipo)</Italian>

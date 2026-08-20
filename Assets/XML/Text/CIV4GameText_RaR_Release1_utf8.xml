@@ -1402,7 +1402,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ANIMAL</Tag>
 		<English>[ICON_BULLET]Wild animal</English>
-		<Portuguese>[ICON_BULLET]Animais selvagens</Portuguese>
+		<Portuguese>[ICON_BULLET]Animal selvagem</Portuguese>
 		<French>[ICON_BULLET]Animal sauvage</French>
 		<German>[ICON_BULLET]Wildes Tier</German>
 		<Italian>[ICON_BULLET]Animale selvatico</Italian>
@@ -1487,7 +1487,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_FORT_DEFENSE_MODIFIER_IF_WORKED</Tag>
 		<English>[ICON_BULLET]Adds additional %d1_defensebonus%%%F2_Icon to a city if the fort is defended by soldiers and its plot is worked by a citizen inside the city</English>
-		<Portuguese>[ICON_BULLET]Adiciona %d1_defensebonus%%%F2_Icon adicional a uma cidade se o forte for defendido por soldados e seu enredo for trabalhado por um cidadão dentro da cidade</Portuguese>
+		<Portuguese>[ICON_BULLET]Adiciona %d1_defensebonus%%%F2_Icon adicional a uma cidade se o forte for defendido por soldados e sua peça for trabalhada por um cidadão dentro da cidade</Portuguese>
 		<French>[ICON_BULLET]Ajoute %d1_defensebonus%%%F2_Icon à la ville si le fort est défendu par des soldats et si son emplacement est travaillé par un citoyen de la ville.</French>
 		<German>[ICON_BULLET]Gibt der Stadt zusätzliche %d1_defensebonus%%%F2_Icon wenn das Fort durch Soldaten bewacht ist und dessen Feld durch einen Arbeiter in der Stadt bearbeitet wird</German>
 		<Russian>[ICON_BULLET]Дает дополнительный бонус %d1_defensebonus%%%F2_Icon к защите города, если форт защищают солдаты, а его участок внутри города обрабатывается горожанином.</Russian>

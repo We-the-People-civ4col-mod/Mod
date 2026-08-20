@@ -16,7 +16,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO</Tag>
 		<English>Go To Mode</English>
-		<Portuguese>Vá para o modo</Portuguese>
+		<Portuguese>Ir para</Portuguese>
 		<French>Aller à</French>
 		<German>Gehe-zu-Modus</German>
 		<Italian>Modalità 'Vai'</Italian>
@@ -26,7 +26,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_ALL</Tag>
 		<English>Go To Mode (All Units)</English>
-		<Portuguese>Vá para o modo (todas as unidades)</Portuguese>
+		<Portuguese>Ir para (todas as unidades)</Portuguese>
 		<French>Aller à (toutes les unités)</French>
 		<German>Gehe-zu-Modus (Alle Einheiten)</German>
 		<Italian>Modalità 'Vai' (tutte le unità)</Italian>
@@ -36,7 +36,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_ALL_HELP</Tag>
 		<English>Order all units on the currently selected unit's tile to move</English>
-		<Portuguese>Ordene que todas as unidades na peça da unidade atualmente selecionada se movam</Portuguese>
+		<Portuguese>Ordenar que todas as unidades na peça da unidade atualmente selecionada se movam</Portuguese>
 		<French>Déplacer toutes les unités de cette case.</French>
 		<German>Allen Einheiten auf diesem Feld einen Marschbefehl erteilen</German>
 		<Italian>Ordina a tutte le unità attualmente sulla casella selezionata di muoversi</Italian>
@@ -46,7 +46,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_HELP</Tag>
 		<English>Order the selected unit to move to a tile</English>
-		<Portuguese>Ordene que a unidade selecionada se mova para um quadrado</Portuguese>
+		<Portuguese>Ordenar que a unidade selecionada se mova para uma peça</Portuguese>
 		<French>Déplacer cette unité vers une case</French>.
 		<German>Einheit auf ein bestimmtes Geländefeld schicken</German>
 		<Italian>Ordina all'unità selezionata di muoversi su una casella</Italian>
@@ -56,7 +56,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_TYPE</Tag>
 		<English>Go To Mode (Same Unit Type)</English>
-		<Portuguese>Vá para o modo (mesmo tipo de unidade)</Portuguese>
+		<Portuguese>Ir para (mesmo tipo de unidade)</Portuguese>
 		<French>Aller à (même type d'unité)</French>
 		<German>Gehe-zu-Modus (Gleiche Einheiten)</German>
 		<Italian>Modalità 'Vai' (unità dello stesso tipo)</Italian>

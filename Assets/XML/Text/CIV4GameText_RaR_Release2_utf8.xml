@@ -497,7 +497,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WB_PLOT_TYPE_MOUNTAIN</Tag>
 		<English>Change plot to a mountain</English>
-		<Portuguese>Mude o enredo para uma montanha</Portuguese>
+		<Portuguese>Mudar a peça para uma montanha</Portuguese>
 		<French>Changer case en montagne</French>
 		<German>Geländefeld zu Gebirge ändern</German>
 		<Italian>Cambia la casella in una montagna</Italian>
@@ -524,7 +524,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WB_PLOT_TYPE_OCEAN</Tag>
 		<English>Change plot to an ocean</English>
-		<Portuguese>Mude o enredo para um oceano</Portuguese>
+		<Portuguese>Mudar a peça para um oceano</Portuguese>
 		<French>Changer case en océan</French>
 		<German>Geländefeld zu Ozean ändern</German>
 		<Italian>Cambia la casella in un oceano</Italian>
@@ -767,7 +767,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WB_ADD_SCRIPT_TO_PLOT</Tag>
 		<English>Add script to plot</English>
-		<Portuguese>Adicionar script ao enredo</Portuguese>
+		<Portuguese>Adicionar script à peça</Portuguese>
 		<French>Ajouter script à la case</French>
 		<German>Skript zum Geländefeld hinzufügen</German>
 		<Italian>Aggiungi script alla casella</Italian>

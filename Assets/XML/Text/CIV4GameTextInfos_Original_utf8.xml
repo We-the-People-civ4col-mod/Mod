@@ -13129,7 +13129,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_PLOT_DEFENSE</Tag>
 		<English>(Plot defense : %D1%%)</English>
-		<Portuguese>(Defesa do enredo: %D1%%)</Portuguese>
+		<Portuguese>(Defesa da peça: %D1%%)</Portuguese>
 		<French>(Défense case : %D1%%)</French>
 		<German>(Geländefeldverteidigung : %D1%%)</German>
 		<Italian>(Difesa territorio : %D1%%)</Italian>

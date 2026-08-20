@@ -1827,7 +1827,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_VOLCANO_1_HELP</Tag>
 		<English>[ICON_BULLET]Suffer loss of plot improvements near the eruption</English>
-		<Portuguese>[ICON_BULLET]Sofrer perda de melhorias no enredo perto da erupção</Portuguese>
+		<Portuguese>[ICON_BULLET]Sofrer perda de melhorias na peça perto da erupção</Portuguese>
 		<French>[ICON_BULLET]Subir des pertes d'aménagements sur les cases proches de l'éruption</French>
 		<German>[ICON_BULLET]Verlust der Geländefeld-Modernisierungen in der Nähe der Eruption</German>
 		<Italian>[ICON_BULLET]Perdita dei miglioramenti delle caselle vicino all'eruzione</Italian>
@@ -8003,7 +8003,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_RETURN_HELP</Tag>
 		<English>[ICON_BULLET]One sacred plot is returned to the natives for [COLOR_HIGHLIGHT_TEXT]%d1 turns[COLOR_REVERT]. Relations improve and you gain [COLOR_HIGHLIGHT_TEXT]%d2 religious father points[COLOR_REVERT].</English>
-		<Portuguese>[ICON_BULLET]Um enredo sagrado é devolvido aos nativos por [COLOR_HIGHLIGHT_TEXT]%d1 turnos[COLOR_REVERT]. As relações melhoram e você ganha [COLOR_HIGHLIGHT_TEXT]%d2 pontos de pai religioso[COLOR_REVERT].</Portuguese>
+		<Portuguese>[ICON_BULLET]Uma peça sagrada é devolvido aos nativos por [COLOR_HIGHLIGHT_TEXT]%d1 turnos[COLOR_REVERT]. As relações melhoram e você ganha [COLOR_HIGHLIGHT_TEXT]%d2 pontos de pai religioso[COLOR_REVERT].</Portuguese>
 		<German>[ICON_BULLET]Ein heiliger Plot wird für [COLOR_HIGHLIGHT_TEXT]%d1 Runden[COLOR_REVERT] an die Ureinwohner zurückgegeben. Die Beziehungen verbessern sich und Ihr erhaltet [COLOR_HIGHLIGHT_TEXT]%d2 Religions-Gründerväterpunkte[COLOR_REVERT].</German>
 		<Russian/>
 	</TEXT>
