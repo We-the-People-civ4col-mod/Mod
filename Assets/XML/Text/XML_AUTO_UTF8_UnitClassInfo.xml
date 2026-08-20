@@ -771,7 +771,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCA_COLLECTOR</Tag>
 		<English>Expert Coca Collector:Expert Coca Collectors</English>
-		<Portuguese>Colecionador especialista em coca:colecionador especialista em coca</Portuguese>
+		<Portuguese>Coletor especialista em coca:coletor especialista em coca</Portuguese>
 		<French>
 			<Text>Expert planteur de coca:Experts planteurs de coca</Text>
 			<Gender>Male</Gender>
