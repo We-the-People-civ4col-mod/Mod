@@ -8826,30 +8826,6 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 			{
 				// WTP, Schmiddie: Fix for Quest log bug
 				refreshQuestMessages();
-				for (CvEventMap::const_iterator it = m_mapEventsOccured.begin(); it != m_mapEventsOccured.end(); ++it)
-				{
-					const EventTypes eEvent = (*it).first;
-					const EventTriggeredData& kTriggeredData = (*it).second;
-
-					if (GC.getEventInfo(eEvent).isQuest())
-					{
-						const int iID = kTriggeredData.getID();
-						std::map<int, CvWString>::const_iterator itMessage = m_mapQuestMessages.find(iID);
-
-						if (itMessage != m_mapQuestMessages.end())
-						{
-							CvTalkingHeadMessage questMessage(
-								kTriggeredData.m_iTurn + 1,
-								iID,
-								itMessage->second.GetCString(),
-								NULL,
-								MESSAGE_TYPE_QUEST);
-
-							addMessage(questMessage);
-							gDLL->getInterfaceIFace()->dirtyTurnLog(getID());
-						}
-					}
-				}
 			}
 
 			if (getID() == GC.getGameINLINE().getActivePlayer())
@@ -14012,31 +13988,57 @@ void CvPlayer::resetEventOccured(EventTypes eEvent, bool bAnnounce)
 
 void CvPlayer::refreshQuestMessages()
 {
-	for (CvEventMap::const_iterator it = m_mapEventsOccured.begin(); it != m_mapEventsOccured.end(); ++it)
+	CxDesyncMonitor StartAsyncExecution;
+
+	for (CvEventMap::iterator it = m_mapEventsOccured.begin(); it != m_mapEventsOccured.end(); ++it)
 	{
 		const EventTypes eEvent = (*it).first;
-		const EventTriggeredData& kTriggeredData = (*it).second;
-		if (!GC.getEventInfo(eEvent).isQuest())
+		EventTriggeredData& kTriggeredData = (*it).second;
+		CvEventInfo& kEvent = GC.getEventInfo(eEvent);
+		if (!kEvent.isQuest())
 		{
 			continue;
 		}
 
 		CvWStringBuffer szMessageBuffer;
-		szMessageBuffer.append(GC.getEventInfo(eEvent).getDescription());
-		GAMETEXT.setEventHelp(szMessageBuffer, eEvent, kTriggeredData.getID(), getID());
+		szMessageBuffer.append(kEvent.getDescription());
+
+		if (!isEmpty(kEvent.getPythonHelp()))
+		{
+			CvWString szHelp;
+			CyArgsList argsList;
+			argsList.add(gDLL->getPythonIFace()->makePythonObject(&kTriggeredData));
+			argsList.add(eEvent);
+			gDLL->getPythonIFace()->callFunction(PYRandomEventModule, kEvent.getPythonHelp(), argsList.makeFunctionArgs(), &szHelp);
+			szMessageBuffer.append(NEWLINE);
+			szMessageBuffer.append(szHelp);
+		}
 
 		const CvWString szNew = szMessageBuffer.getCString();
 		m_mapQuestMessages[kTriggeredData.getID()] = szNew;
 
 		gDLL->getInterfaceIFace()->addQuestMessage(getID(), szNew, kTriggeredData.getID());
 
-		for (CvMessageQueue::iterator itMessage = m_listGameMessages.begin(); itMessage != m_listGameMessages.end(); ++itMessage)
+		CvMessageQueue::iterator itMessage = m_listGameMessages.begin();
+		while (itMessage != m_listGameMessages.end())
 		{
 			if (itMessage->getLength() == kTriggeredData.getID() && itMessage->getMessageType() == MESSAGE_TYPE_QUEST)
 			{
-				itMessage->setDescription(szNew);
+				itMessage = m_listGameMessages.erase(itMessage);
+			}
+			else
+			{
+				++itMessage;
 			}
 		}
+
+		CvTalkingHeadMessage questMessage(
+			kTriggeredData.m_iTurn + 1,
+			kTriggeredData.getID(),
+			szNew,
+			NULL,
+			MESSAGE_TYPE_QUEST);
+		addMessage(questMessage);
 	}
 
 	gDLL->getInterfaceIFace()->dirtyTurnLog(getID());

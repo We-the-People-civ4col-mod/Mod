@@ -10153,17 +10153,15 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 
 	CvEventInfo& kEvent = GC.getEventInfo(eEvent);
 	CvPlayer& kActivePlayer = GET_PLAYER(ePlayer);
-	EventTriggeredData* pTriggeredData = kActivePlayer.getEventTriggered(iEventTriggeredId);
-
+	EventTriggeredData* pTriggeredData = NULL;
+	const EventTriggeredData* pOccured = kActivePlayer.getEventOccured(eEvent);
+	if (pOccured != NULL && pOccured->getID() == iEventTriggeredId)
+	{
+		pTriggeredData = const_cast<EventTriggeredData*>(pOccured);
+	}
 	if (NULL == pTriggeredData)
 	{
-		// Quest triggers are deleted after applyEvent. Fall back to the stored quest data
-		// so help/standings can be rebuilt later.
-		const EventTriggeredData* pOccured = kActivePlayer.getEventOccured(eEvent);
-		if (pOccured != NULL && pOccured->getID() == iEventTriggeredId)
-		{
-			pTriggeredData = const_cast<EventTriggeredData*>(pOccured);
-		}
+		pTriggeredData = kActivePlayer.getEventTriggered(iEventTriggeredId);
 	}
 
 	if (NULL == pTriggeredData)
