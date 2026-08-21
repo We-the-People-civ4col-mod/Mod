@@ -203,6 +203,11 @@ public:
     void CvPlayer::NBMOD_AddEuropeRandomUnit(bool bDisplay);
     void CvPlayer::NBMOD_AddEuropeShipUnit(bool bDisplay);
 
+	// WTP, Schmiddie, REF Minimum Fleet START
+	bool NBMOD_AddBestREFShip(int iREFShipClass, bool bDisplay);
+	bool NBMOD_MaintainMinimumREFNavy(bool bDisplay);
+	// WTP, Schmiddie, REF Minimum Fleet END
+
     int NBMOD_GetNumEuropeUnits() const;
     int NBMOD_GetNumEuropeTransporting() const;
     int NBMOD_GetEuropeShipStrength() const;

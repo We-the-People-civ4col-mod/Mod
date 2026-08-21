@@ -2183,6 +2183,13 @@ void CvPlayer::doTurn()
 
 	EXTRA_POWER_CHECK
 
+	// WTP, Schmiddie, REF Minimum Fleet START
+	if (GC.getNBMOD_REF_ENABLE() == 1 && getParent() != NO_PLAYER)
+	{
+		NBMOD_MaintainMinimumREFNavy(true);
+	}
+	// WTP, Schmiddie, REF Minimum Fleet END
+
 	// doCrosses(); CBM 0.7.020 - moved to player's nature check below
 
 	// PatchMod: Achievements START
@@ -11890,6 +11897,217 @@ void CvPlayer::NBMOD_AddEuropeShipUnit(bool bDisplay)
     return;
 }
 
+// WTP, Schmiddie, REF Minimum Fleet START
+bool CvPlayer::NBMOD_AddBestREFShip(int iREFShipClass, bool bDisplay)
+{
+	if (getParent() == NO_PLAYER)
+	{
+		return false;
+	}
+
+	CvPlayer& kParent = GET_PLAYER(getParent());
+
+	if (!kParent.isEurope())
+	{
+		return false;
+	}
+
+	UnitTypes eBestUnit = NO_UNIT;
+	int iBestValue = 0;
+
+	for (int iI = 0; iI < GC.getNumUnitInfos(); ++iI)
+	{
+		UnitTypes eLoopUnit = (UnitTypes)iI;
+
+		if (!isUnitWithinGameYearWindow(eLoopUnit))
+		{
+			continue;
+		}
+
+		const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
+
+		if (kUnitInfo.getDomainType() != DOMAIN_SEA)
+		{
+			continue;
+		}
+
+		if (kUnitInfo.isHiddenNationality())
+		{
+			continue;
+		}
+
+		if (kUnitInfo.getREFShipClass() != iREFShipClass)
+		{
+			continue;
+		}
+
+		int iValue = 0;
+
+		if (iREFShipClass == 1)
+		{
+			iValue = kUnitInfo.getGameYearAvailable() * 10000
+				+ kUnitInfo.getCargoSpace() * 100
+				+ kUnitInfo.getMoves() * 10
+				+ kUnitInfo.getCombat();
+		}
+		else
+		{
+			iValue = kUnitInfo.getGameYearAvailable() * 10000
+				+ kUnitInfo.getCombat() * 100
+				+ kUnitInfo.getMoves() * 10
+				+ kUnitInfo.getCargoSpace();
+		}
+
+		if (iValue > iBestValue)
+		{
+			iBestValue = iValue;
+			eBestUnit = eLoopUnit;
+		}
+	}
+
+	if (eBestUnit == NO_UNIT)
+	{
+		return false;
+	}
+
+	addRevolutionEuropeUnit(eBestUnit, NO_PROFESSION);
+
+	if (bDisplay && m_bNBMOD_REF_Display)
+	{
+		CvWString szBuffer = gDLL->getText(
+			"TXT_KEY_NEW_EUROPE_ARMY",
+			kParent.getCivilizationShortDescriptionKey(),
+			getCivilizationShortDescriptionKey(),
+			GC.getUnitInfo(eBestUnit).getTextKeyWide(),
+			kParent.getCivilizationAdjectiveKey());
+
+		gDLL->UI().addPlayerMessage(
+			getID(),
+			true,
+			GC.getEVENT_MESSAGE_TIME(),
+			szBuffer,
+			"AS2D_UNIT_GREATPEOPLE",
+			MESSAGE_TYPE_INFO,
+			GC.getUnitInfo(eBestUnit).getButton(),
+			COLOR_UNIT_TEXT);
+
+		m_bNBMOD_REF_Display = false;
+		m_iNBMOD_REF_DisplayTurn = 0;
+	}
+
+	return true;
+}
+
+
+bool CvPlayer::NBMOD_MaintainMinimumREFNavy(bool bDisplay)
+{
+	if (getParent() == NO_PLAYER)
+	{
+		return false;
+	}
+
+	CvPlayer& kParent = GET_PLAYER(getParent());
+
+	if (!kParent.isAlive() || !kParent.isEurope())
+	{
+		return false;
+	}
+
+	const int REF_SHIPCLASS_TRANSPORT = 1;
+	const int REF_SHIPCLASS_FRIGATE = 2;
+	const int REF_SHIPCLASS_LINE = 3;
+
+	const int MIN_REF_TRANSPORTS = 3;
+	const int MIN_REF_WARSHIPS = 5;
+
+	int iLandUnits = kParent.countNumDomainUnits(DOMAIN_LAND);
+	int iTransportShips = 0;
+	int iWarShips = 0;
+
+	// Count REF ships which have already been deployed by the King.
+	int iLoop;
+	for (CvUnit* pLoopUnit = kParent.firstUnit(&iLoop); pLoopUnit != NULL; pLoopUnit = kParent.nextUnit(&iLoop))
+	{
+		if (pLoopUnit->getDomainType() != DOMAIN_SEA)
+		{
+			continue;
+		}
+
+		const int iREFShipClass = pLoopUnit->getUnitInfo().getREFShipClass();
+
+		if (iREFShipClass == REF_SHIPCLASS_TRANSPORT)
+		{
+			++iTransportShips;
+		}
+		else if (iREFShipClass == REF_SHIPCLASS_FRIGATE || iREFShipClass == REF_SHIPCLASS_LINE)
+		{
+			++iWarShips;
+		}
+	}
+
+	// Count units which are still waiting in the REF Europe pool.
+	for (int iI = 0; iI < getNumRevolutionEuropeUnits(); ++iI)
+	{
+		UnitTypes eUnit = getRevolutionEuropeUnit(iI);
+
+		if (eUnit == NO_UNIT)
+		{
+			continue;
+		}
+
+		const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eUnit);
+
+		if (kUnitInfo.getDomainType() == DOMAIN_LAND)
+		{
+			++iLandUnits;
+			continue;
+		}
+
+		if (kUnitInfo.getDomainType() != DOMAIN_SEA)
+		{
+			continue;
+		}
+
+		const int iREFShipClass = kUnitInfo.getREFShipClass();
+
+		if (iREFShipClass == REF_SHIPCLASS_TRANSPORT)
+		{
+			++iTransportShips;
+		}
+		else if (iREFShipClass == REF_SHIPCLASS_FRIGATE || iREFShipClass == REF_SHIPCLASS_LINE)
+		{
+			++iWarShips;
+		}
+	}
+
+	// No land forces left: no more replacement ships are needed.
+	if (iLandUnits <= 0)
+	{
+		return false;
+	}
+
+	// Transporters have priority.
+	if (iTransportShips < MIN_REF_TRANSPORTS)
+	{
+		return NBMOD_AddBestREFShip(REF_SHIPCLASS_TRANSPORT, bDisplay);
+	}
+
+	// Then maintain at least five warships.
+	if (iWarShips < MIN_REF_WARSHIPS)
+	{
+		// Prefer the best available ship of the line.
+		if (NBMOD_AddBestREFShip(REF_SHIPCLASS_LINE, bDisplay))
+		{
+			return true;
+		}
+
+		// If no ship of the line is available yet, use the best available frigate.
+		return NBMOD_AddBestREFShip(REF_SHIPCLASS_FRIGATE, bDisplay);
+	}
+
+	return false;
+}
+// WTP, Schmiddie, REF Minimum Fleet END
 
 /***************************************************************************/
 /**                                                                       **/
