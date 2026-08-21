@@ -8825,6 +8825,7 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 			if (getID() == GC.getGameINLINE().getActivePlayer())
 			{
 				// WTP, Schmiddie: Fix for Quest log bug
+				refreshQuestMessages();
 				for (CvEventMap::const_iterator it = m_mapEventsOccured.begin(); it != m_mapEventsOccured.end(); ++it)
 				{
 					const EventTypes eEvent = (*it).first;
@@ -14009,6 +14010,38 @@ void CvPlayer::resetEventOccured(EventTypes eEvent, bool bAnnounce)
 	}
 }
 
+void CvPlayer::refreshQuestMessages()
+{
+	for (CvEventMap::const_iterator it = m_mapEventsOccured.begin(); it != m_mapEventsOccured.end(); ++it)
+	{
+		const EventTypes eEvent = (*it).first;
+		const EventTriggeredData& kTriggeredData = (*it).second;
+		if (!GC.getEventInfo(eEvent).isQuest())
+		{
+			continue;
+		}
+
+		CvWStringBuffer szMessageBuffer;
+		szMessageBuffer.append(GC.getEventInfo(eEvent).getDescription());
+		GAMETEXT.setEventHelp(szMessageBuffer, eEvent, kTriggeredData.getID(), getID());
+
+		const CvWString szNew = szMessageBuffer.getCString();
+		m_mapQuestMessages[kTriggeredData.getID()] = szNew;
+
+		gDLL->getInterfaceIFace()->addQuestMessage(getID(), szNew, kTriggeredData.getID());
+
+		for (CvMessageQueue::iterator itMessage = m_listGameMessages.begin(); itMessage != m_listGameMessages.end(); ++itMessage)
+		{
+			if (itMessage->getLength() == kTriggeredData.getID() && itMessage->getMessageType() == MESSAGE_TYPE_QUEST)
+			{
+				itMessage->setDescription(szNew);
+			}
+		}
+	}
+
+	gDLL->getInterfaceIFace()->dirtyTurnLog(getID());
+}
+
 void CvPlayer::setEventOccured(EventTypes eEvent, const EventTriggeredData& kEventTriggered, bool bOthers)
 {
 	FAssert(eEvent >= 0 && eEvent < GC.getNumEventInfos());
@@ -18897,6 +18930,15 @@ void CvPlayer::changeYieldTradedTaxCounter(TradeLocationTypes eLocation, YieldTy
 		else if (iCount < -MAX)
 		{
 			m_em_iYieldSoldTotal[eLocation].set(eYield, -MAX);
+		}
+	}
+
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+		if (kPlayer.isAlive() && kPlayer.isHuman())
+		{
+			kPlayer.refreshQuestMessages();
 		}
 	}
 }
