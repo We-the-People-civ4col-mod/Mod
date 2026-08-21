@@ -5728,6 +5728,21 @@ void CvUnit::unloadStoredAmount(int iAmount)
 	doUnloadYield(iAmount);
 }
 
+void CvUnit::unloadStoredAmountIntoCity(int iAmount)
+{
+	// Native villages fail canUnload() (different team). Diplomacy still has to
+	// drop a partial cargo stack into that city the same way a full stack does.
+	FAssert(iAmount > 0);
+	FAssert(iAmount <= getYieldStored());
+	if (iAmount <= 0 || iAmount > getYieldStored())
+	{
+		return;
+	}
+
+	FAssert(isGoods());
+	doUnloadYield(iAmount);
+}
+
 void CvUnit::doUnloadYield(int iAmount)
 {
 	YieldTypes eYield = getYield();

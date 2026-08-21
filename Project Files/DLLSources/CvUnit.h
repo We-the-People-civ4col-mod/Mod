@@ -176,6 +176,7 @@ public:
 	bool canUnload() const;
 	void unload();
 	void unloadStoredAmount(int iAmount);
+	void unloadStoredAmountIntoCity(int iAmount);
 	bool canUnloadAll() const;
 	void unloadAll();
 

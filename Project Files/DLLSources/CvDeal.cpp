@@ -568,7 +568,8 @@ bool CvDeal::startTrade(TradeData trade, PlayerTypes eFromPlayer, PlayerTypes eT
 							}
 							else
 							{
-								aUnits[i]->unloadStoredAmount(iUnload);
+								// unloadStoredAmount() uses canUnload(), which is false in native villages.
+								aUnits[i]->unloadStoredAmountIntoCity(iUnload);
 							}
 							iRemaining -= iUnload;
 							iAmount += iUnload;
