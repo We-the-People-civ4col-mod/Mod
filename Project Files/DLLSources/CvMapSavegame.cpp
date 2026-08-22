@@ -71,6 +71,8 @@ void CvMap::resetSavedData()
 	m_iTopLatitude      = defaultTopLatitude;
 	m_iBottomLatitude   = defaultBottomLatitude;
 	m_iNextRiverID      = defaultNextRiverID;
+	m_iGlobeviewPadX    = 0;
+	m_iGlobeviewPadY    = 0;
 	m_bWrapX            = defaultWrapX;
 	m_bWrapY            = defaultWrapY;
 	m_bHasStream		= defaultHasStream;

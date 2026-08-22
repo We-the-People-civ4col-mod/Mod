@@ -118,6 +118,9 @@ protected:
 
 	void uninit();
 	void setup();
+	void applyGlobeviewSafeDimensions();
+	void applyGlobeviewPadPlotDefaults();
+	void applyGlobeviewPadEurope();
 
 public:
 	DllExport void erasePlots();
@@ -351,6 +354,8 @@ protected:
 	int m_iTopLatitude;
 	int m_iBottomLatitude;
 	int m_iNextRiverID;
+	int m_iGlobeviewPadX;
+	int m_iGlobeviewPadY;
 
 	bool m_bWrapX;	
 	bool m_bWrapY;

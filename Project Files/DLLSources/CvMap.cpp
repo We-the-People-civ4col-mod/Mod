@@ -249,6 +249,7 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 			kPlot.init(iX, iY);
 		}
 	}
+	applyGlobeviewPadPlotDefaults();
 	calculateAreas();
 	gDLL->logMemState("CvMap after init plots");
 }
@@ -334,7 +335,116 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 		gDLL->getPythonIFace()->pythonGetWrapXY(&m_bWrapX, &m_bWrapY);
 	}
 
+	applyGlobeviewSafeDimensions();
+
 	m_areas.removeAll();
+}
+
+// 1. EXE globe texture goes black on tall maps (Americas Gigantic 136x256).
+//    Issue #723 and Don_Drochilla: keep height/width around 1.45 at gigantic Y
+//    (1.72 on huge). Pad ocean on the east/south so the user does not have to
+//    edit the map file. Existing x,y stay valid. Europe tiles stay where WB
+//    put them; extra ocean copies that Europe type after the map is filled.
+void CvMap::applyGlobeviewSafeDimensions()
+{
+	m_iGlobeviewPadX = 0;
+	m_iGlobeviewPadY = 0;
+
+	if (m_iGridWidth <= 0 || m_iGridHeight <= 0)
+	{
+		return;
+	}
+
+	const int iLong = std::max(m_iGridWidth, m_iGridHeight);
+	int iSafeRatio100 = 145;
+	if (iLong <= 100)
+	{
+		iSafeRatio100 = 172;
+	}
+	else if (iLong < 184)
+	{
+		iSafeRatio100 = 172 + (iLong - 100) * (145 - 172) / (184 - 100);
+	}
+
+	const int iNeededShort = (iLong * 100 + iSafeRatio100 - 1) / iSafeRatio100;
+
+	if (m_iGridHeight >= m_iGridWidth)
+	{
+		if (m_iGridWidth < iNeededShort)
+		{
+			m_iGlobeviewPadX = iNeededShort - m_iGridWidth;
+			m_iGridWidth = iNeededShort;
+		}
+	}
+	else if (m_iGridHeight < iNeededShort)
+	{
+		m_iGlobeviewPadY = iNeededShort - m_iGridHeight;
+		m_iGridHeight = iNeededShort;
+	}
+}
+
+void CvMap::applyGlobeviewPadPlotDefaults()
+{
+	if (m_pMapPlots == NULL || (m_iGlobeviewPadX <= 0 && m_iGlobeviewPadY <= 0))
+	{
+		return;
+	}
+
+	const int iOrigWidth = getGridWidthINLINE() - m_iGlobeviewPadX;
+	const int iOrigHeight = getGridHeightINLINE() - m_iGlobeviewPadY;
+
+	for (int iX = 0; iX < getGridWidthINLINE(); iX++)
+	{
+		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
+		{
+			if (iX >= iOrigWidth || iY >= iOrigHeight)
+			{
+				plotSoren(iX, iY)->setTerrainType(TERRAIN_OCEAN, false, false);
+			}
+		}
+	}
+}
+
+void CvMap::applyGlobeviewPadEurope()
+{
+	if (m_pMapPlots == NULL || (m_iGlobeviewPadX <= 0 && m_iGlobeviewPadY <= 0))
+	{
+		return;
+	}
+
+	const int iOrigWidth = getGridWidthINLINE() - m_iGlobeviewPadX;
+	const int iOrigHeight = getGridHeightINLINE() - m_iGlobeviewPadY;
+
+	for (int iX = 0; iX < getGridWidthINLINE(); iX++)
+	{
+		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
+		{
+			if (iX < iOrigWidth && iY < iOrigHeight)
+			{
+				continue;
+			}
+
+			CvPlot* pPlot = plotSoren(iX, iY);
+			if (pPlot == NULL || !pPlot->isWater() || pPlot->getEurope() != NO_EUROPE)
+			{
+				continue;
+			}
+
+			EuropeTypes eEurope = NO_EUROPE;
+			if (iX >= iOrigWidth && iOrigWidth > 0)
+			{
+				eEurope = plotSoren(iOrigWidth - 1, iY)->getEurope();
+			}
+			if (eEurope == NO_EUROPE && iY >= iOrigHeight && iOrigHeight > 0)
+			{
+				eEurope = plotSoren(iX, iOrigHeight - 1)->getEurope();
+			}
+			if (eEurope != NO_EUROPE)
+			{
+				pPlot->setEurope(eEurope);
+			}
+		}
+	}
 }
 
 
@@ -1375,6 +1485,8 @@ void CvMap::updateWaterPlotTerrainTypes()
 			}
 		}
 	}
+
+	applyGlobeviewPadEurope();
 }
 // autodetect lakes - end
 
