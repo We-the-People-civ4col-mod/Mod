@@ -3606,17 +3606,6 @@ class CvMainInterface:
 		global SHOW_ALL_YIELDS
 		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
 
-		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED) and CyInterface().isCityScreenUp():
-			iFlags = inputClass.getFlags()
-			bMiddle = False
-			if hasattr(MouseFlags, "MOUSE_MBUTTONUP") and (iFlags & MouseFlags.MOUSE_MBUTTONUP):
-				bMiddle = True
-			elif hasattr(MouseFlags, "MOUSE_MBUTTON") and (iFlags & MouseFlags.MOUSE_MBUTTON):
-				bMiddle = True
-			if bMiddle:
-				CyInterface().clearSelectedCities()
-				return 1
-
 		if (inputClass.getNotifyCode() == NotifyCode.NOTIFY_CLICKED):
 
 			if (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL and inputClass.getData1() == BUILDING_MANAGMENT_TOGGLE):
