@@ -296,27 +296,27 @@ class CvTeamDesc:
 		f.write("\tTeamID=%d\n" %(idx))
 		# write met other teams
 		for i in range(gc.getMAX_CIV_TEAMS()):
-			if (gc.getTeam(idx).isHasMet(i)):
+			if (i != idx and gc.getTeam(idx).isHasMet(i)):
 				f.write("\tContactWithTeam=%d\n" %(i))
 
 		# write warring teams
 		for i in range(gc.getMAX_CIV_TEAMS()):
-			if (gc.getTeam(idx).isAtWar(i)):
+			if (i != idx and gc.getTeam(idx).isAtWar(i)):
 				f.write("\tAtWar=%d\n" %(i))
 
 		# write permanent war/peace teams
 		for i in range(gc.getMAX_CIV_TEAMS()):
-			if (gc.getTeam(idx).isPermanentWarPeace(i)):
+			if (i != idx and gc.getTeam(idx).isPermanentWarPeace(i)):
 				f.write("\tPermanentWarPeace=%d\n" %(i))
 
 		# write open borders other teams
 		for i in range(gc.getMAX_CIV_TEAMS()):
-			if (gc.getTeam(idx).isOpenBorders(i)):
+			if (i != idx and gc.getTeam(idx).isOpenBorders(i)):
 				f.write("\tOpenBordersWithTeam=%d\n" %(i))
 
 		# write defensive pact other teams
 		for i in range(gc.getMAX_CIV_TEAMS()):
-			if (gc.getTeam(idx).isDefensivePact(i)):
+			if (i != idx and gc.getTeam(idx).isDefensivePact(i)):
 				f.write("\tDefensivePactWithTeam=%d\n" %(i))
 
 		f.write("\tRevealMap=%d\n" %(0))
@@ -1492,47 +1492,90 @@ class CvWBDesc:
 	def identifyValidPlayersAndTeams(self):
 		self.validPlayers = [0] * gc.getMAX_CIV_PLAYERS()
 		self.validTeams   = [0] * gc.getMAX_CIV_TEAMS()
-		
-		for iPlayerLoop in range(gc.getMAX_CIV_PLAYERS()):
+
+		if self.playersDesc is None:
+			return
+
+		iMaxPlayers = min(gc.getMAX_CIV_PLAYERS(), len(self.playersDesc))
+		iMaxTeams = len(self.validTeams)
+		for iPlayerLoop in range(iMaxPlayers):
 			if (self.playersDesc[iPlayerLoop]):
 				pWBPlayer = self.playersDesc[iPlayerLoop]
-				if (pWBPlayer.civType != 'NONE' and self.validTeams[pWBPlayer.team] != -1):
+				iTeam = pWBPlayer.team
+				if (pWBPlayer.civType != 'NONE' and iTeam >= 0 and iTeam < iMaxTeams):
 					self.validPlayers[iPlayerLoop] = 1
-					self.validTeams[pWBPlayer.team] = 1
+					self.validTeams[iTeam] = 1
+
+	def _isUsableTeam(self, iTeam, iSkipTeam=-1):
+		if iTeam is None:
+			return False
+		try:
+			iTeam = int(iTeam)
+		except:
+			return False
+		if iTeam < 0:
+			return False
+		if iSkipTeam != -1 and iTeam == iSkipTeam:
+			return False
+		if iTeam >= gc.getMAX_CIV_TEAMS():
+			return False
+		if self.validTeams is None or iTeam >= len(self.validTeams):
+			return False
+		if self.teamsDesc is None or iTeam >= len(self.teamsDesc):
+			return False
+		if not self.validTeams[iTeam]:
+			return False
+		if not self.teamsDesc[iTeam]:
+			return False
+		return True
 
 	def applyInitialTeams1(self):
 		# Team stuff
-		if (len(self.teamsDesc)) :
-			for iTeamLoop in range(gc.getMAX_CIV_TEAMS()):
+		if (not self.teamsDesc) :
+			return
 
-				if (self.validTeams[iTeamLoop] and self.teamsDesc[iTeamLoop]):
+		iLimit = gc.getMAX_CIV_TEAMS()
+		if iLimit > len(self.teamsDesc):
+			iLimit = len(self.teamsDesc)
+		if self.validTeams is not None and iLimit > len(self.validTeams):
+			iLimit = len(self.validTeams)
 
-					pTeam = gc.getTeam(iTeamLoop)
-					pWBTeam = self.teamsDesc[iTeamLoop]
-					# Contact with Other Teams
-					for meetTeam in self.teamsDesc[iTeamLoop].bContactWithTeamList:
-						if (self.validTeams[meetTeam]):
-							gc.getTeam(iTeamLoop).meet(meetTeam, False)
+		for iTeamLoop in range(iLimit):
 
-					# Wars
-					for warTeam in self.teamsDesc[iTeamLoop].bWarWithTeamList:
-						if (self.validTeams[warTeam]):
-							gc.getTeam(iTeamLoop).declareWar(warTeam, False, WarPlanTypes.NO_WARPLAN)
+			if (self._isUsableTeam(iTeamLoop)):
 
-					# Permanent War/Peace
-					for permanentWarPeaceTeam in self.teamsDesc[iTeamLoop].bPermanentWarPeaceList:
-						if (self.validTeams[permanentWarPeaceTeam]):
-							gc.getTeam(iTeamLoop).setPermanentWarPeace(permanentWarPeaceTeam, True)
+				pTeam = gc.getTeam(iTeamLoop)
+				pWBTeam = self.teamsDesc[iTeamLoop]
+				# Contact with Other Teams
+				for meetTeam in pWBTeam.bContactWithTeamList:
+					if (self._isUsableTeam(meetTeam, iTeamLoop)):
+						pTeam.meet(meetTeam, False)
 
-					# Open Borders
-					for openBordersTeam in self.teamsDesc[iTeamLoop].bOpenBordersWithTeamList:
-						if (self.validTeams[openBordersTeam]):
-							gc.getTeam(iTeamLoop).signOpenBorders(openBordersTeam)
+				# Wars
+				for warTeam in pWBTeam.bWarWithTeamList:
+					if (self._isUsableTeam(warTeam, iTeamLoop)):
+						pOtherTeam = gc.getTeam(warTeam)
+						# declareWar() vs a parent starts a revolution during scenario load
+						if pTeam.isParentOf(warTeam) or pOtherTeam.isParentOf(iTeamLoop):
+							continue
+						pTeam.declareWar(warTeam, False, WarPlanTypes.NO_WARPLAN)
 
-					# Defensive Pacts
-					for defensivePactTeam in self.teamsDesc[iTeamLoop].bDefensivePactWithTeamList:
-						if (self.validTeams[defensivePactTeam]):
-							gc.getTeam(iTeamLoop).signDefensivePact(defensivePactTeam)
+				# Permanent War/Peace
+				for permanentWarPeaceTeam in pWBTeam.bPermanentWarPeaceList:
+					if (self._isUsableTeam(permanentWarPeaceTeam, iTeamLoop)):
+						pTeam.setPermanentWarPeace(permanentWarPeaceTeam, True)
+
+				# Open Borders
+				for openBordersTeam in pWBTeam.bOpenBordersWithTeamList:
+					if (self._isUsableTeam(openBordersTeam, iTeamLoop)):
+						if pTeam.getLeaderID() >= 0 and gc.getTeam(openBordersTeam).getLeaderID() >= 0:
+							pTeam.signOpenBorders(openBordersTeam)
+
+				# Defensive Pacts
+				for defensivePactTeam in pWBTeam.bDefensivePactWithTeamList:
+					if (self._isUsableTeam(defensivePactTeam, iTeamLoop)):
+						if pTeam.getLeaderID() >= 0 and gc.getTeam(defensivePactTeam).getLeaderID() >= 0:
+							pTeam.signDefensivePact(defensivePactTeam)
 
 	def applyInitialPlayers(self):
 		# Player stuff
@@ -1571,7 +1614,8 @@ class CvWBDesc:
 					for iAttitudeLoop in range(len(pWBPlayer.aaiAttitudeExtras)):
 						iPlayer = pWBPlayer.aaiAttitudeExtras[iAttitudeLoop][0]
 						iExtra = pWBPlayer.aaiAttitudeExtras[iAttitudeLoop][1]
-						pPlayer.AI_setAttitudeExtra(iPlayer,iExtra)
+						if iPlayer >= 0 and iPlayer < gc.getMAX_CIV_PLAYERS() and self.validPlayers[iPlayer]:
+							pPlayer.AI_setAttitudeExtra(iPlayer,iExtra)
 
 					# City List
 					for iCityListLoop in range(len(pWBPlayer.aszCityList)):
@@ -1584,10 +1628,16 @@ class CvWBDesc:
 
 	def applyInitialTeams2(self):
 		# Team stuff
-		if (len(self.teamsDesc)) :
-			for iTeamLoop in range(gc.getMAX_CIV_TEAMS()):
+		if (not self.teamsDesc) :
+			return
+		iLimit = gc.getMAX_CIV_TEAMS()
+		if iLimit > len(self.teamsDesc):
+			iLimit = len(self.teamsDesc)
+		if self.validTeams is not None and iLimit > len(self.validTeams):
+			iLimit = len(self.validTeams)
+		for iTeamLoop in range(iLimit):
 
-				if (self.validTeams[iTeamLoop] and self.teamsDesc[iTeamLoop]):
+			if (self._isUsableTeam(iTeamLoop)):
 
 					pTeam = gc.getTeam(iTeamLoop)
 					pWBTeam = self.teamsDesc[iTeamLoop]
@@ -1602,13 +1652,19 @@ class CvWBDesc:
 
 	def applyInitialPlots(self):
 		# Per plot stuff
-		for iPlotLoop in range(self.mapDesc.numPlotsWritten):
+		iPlotLimit = self.mapDesc.numPlotsWritten
+		if self.plotDesc is not None and iPlotLimit > len(self.plotDesc):
+			iPlotLimit = len(self.plotDesc)
+		for iPlotLoop in range(iPlotLimit):
 
 			pWBPlot = self.plotDesc[iPlotLoop]
 
 			# Reveal Fog of War for teams
-			for iTeamLoop in range(gc.getMAX_CIV_TEAMS()):
-				if (self.validTeams[iTeamLoop]):
+			iTeamLimit = gc.getMAX_CIV_TEAMS()
+			if pWBPlot.abTeamPlotRevealed is not None and iTeamLimit > len(pWBPlot.abTeamPlotRevealed):
+				iTeamLimit = len(pWBPlot.abTeamPlotRevealed)
+			for iTeamLoop in range(iTeamLimit):
+				if (self._isUsableTeam(iTeamLoop)):
 					pTeam = gc.getTeam(iTeamLoop)
 					if (pWBPlot.abTeamPlotRevealed[iTeamLoop] == 1):
 						pPlot = CyMap().plot(pWBPlot.iX, pWBPlot.iY)
