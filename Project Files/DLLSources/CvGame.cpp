@@ -1232,9 +1232,33 @@ int CvGame::getTeamClosenessScore(int** aaiDistances, int* aiStartingLocs)
 }
 
 
+// The EXE mouseEvent enum has no middle button, so Python never sees wheel-click.
+// Read the button ourselves while the colony screen is up.
+static void closeCityScreenOnMiddleMouse()
+{
+	static bool bWasDown = false;
+	const bool bDown = (GetAsyncKeyState(VK_MBUTTON) & 0x8000) != 0;
+	const bool bClicked = bDown && !bWasDown;
+	bWasDown = bDown;
+	if (!bClicked)
+	{
+		return;
+	}
+	if (gDLL->isDiplomacy())
+	{
+		return;
+	}
+	if (!gDLL->getInterfaceIFace()->isCityScreenUp())
+	{
+		return;
+	}
+	gDLL->getInterfaceIFace()->clearSelectedCities();
+}
+
 void CvGame::update()
 {
 	MOD_PROFILE("CvGame::update");
+	closeCityScreenOnMiddleMouse();
 
 	if (!gDLL->GetWorldBuilderMode() || isInAdvancedStart())
 	{
