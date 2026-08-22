@@ -121,6 +121,7 @@ protected:
 	void applyGlobeviewSafeDimensions();
 	void applyGlobeviewPadPlotDefaults();
 	void applyGlobeviewPadEurope();
+	void applyGlobeviewPadAreas();
 
 public:
 	DllExport void erasePlots();

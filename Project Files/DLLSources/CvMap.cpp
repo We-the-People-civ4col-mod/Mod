@@ -342,9 +342,9 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 
 // 1. EXE globe texture goes black on tall maps (Americas Gigantic 136x256).
 //    Issue #723 and Don_Drochilla: keep height/width around 1.45 at gigantic Y
-//    (1.72 on huge). Pad ocean on the east/south so the user does not have to
-//    edit the map file. Existing x,y stay valid. Europe tiles stay where WB
-//    put them; extra ocean copies that Europe type after the map is filled.
+//    (1.72 on huge). Pad ocean on the east/south on new games AND on save load
+//    so the user does not have to edit the map file. Existing x,y stay valid.
+//    Extra ocean copies Europe from the old edge and joins the biggest water area.
 void CvMap::applyGlobeviewSafeDimensions()
 {
 	m_iGlobeviewPadX = 0;
@@ -399,7 +399,9 @@ void CvMap::applyGlobeviewPadPlotDefaults()
 		{
 			if (iX >= iOrigWidth || iY >= iOrigHeight)
 			{
-				plotSoren(iX, iY)->setTerrainType(TERRAIN_OCEAN, false, false);
+				CvPlot* pPlot = plotSoren(iX, iY);
+				pPlot->init(iX, iY);
+				pPlot->setTerrainType(TERRAIN_OCEAN, false, false);
 			}
 		}
 	}
@@ -442,6 +444,41 @@ void CvMap::applyGlobeviewPadEurope()
 			if (eEurope != NO_EUROPE)
 			{
 				pPlot->setEurope(eEurope);
+			}
+		}
+	}
+}
+
+void CvMap::applyGlobeviewPadAreas()
+{
+	if (m_pMapPlots == NULL || (m_iGlobeviewPadX <= 0 && m_iGlobeviewPadY <= 0))
+	{
+		return;
+	}
+
+	CvArea* pWaterArea = findBiggestArea(true);
+	if (pWaterArea == NULL)
+	{
+		return;
+	}
+
+	const int iArea = pWaterArea->getID();
+	const int iOrigWidth = getGridWidthINLINE() - m_iGlobeviewPadX;
+	const int iOrigHeight = getGridHeightINLINE() - m_iGlobeviewPadY;
+
+	for (int iX = 0; iX < getGridWidthINLINE(); iX++)
+	{
+		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
+		{
+			if (iX < iOrigWidth && iY < iOrigHeight)
+			{
+				continue;
+			}
+
+			CvPlot* pPlot = plotSoren(iX, iY);
+			if (pPlot != NULL && pPlot->isWater())
+			{
+				pPlot->setArea(iArea);
 			}
 		}
 	}

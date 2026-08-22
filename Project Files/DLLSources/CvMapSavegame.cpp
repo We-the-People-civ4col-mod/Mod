@@ -128,12 +128,18 @@ void CvMap::read(CvSavegameReader reader)
 		case Save_Plots:
 		{
 			FAssertMsg(m_pMapPlots == NULL, "Memory leak");
-			const int iNumPlots = numPlotsINLINE();
-			m_pMapPlots = new CvPlot[iNumPlots];
-			for (int iI = 0; iI < iNumPlots; ++iI)
+			const int iSavedWidth = m_iGridWidth;
+			const int iSavedHeight = m_iGridHeight;
+			applyGlobeviewSafeDimensions();
+			m_pMapPlots = new CvPlot[numPlotsINLINE()];
+			for (int iY = 0; iY < iSavedHeight; ++iY)
 			{
-				m_pMapPlots[iI].read(reader);
+				for (int iX = 0; iX < iSavedWidth; ++iX)
+				{
+					plotSoren(iX, iY)->read(reader);
+				}
 			}
+			applyGlobeviewPadPlotDefaults();
 			break;
 		}
 		case Save_Areas:
@@ -178,6 +184,9 @@ void CvMap::read(CvSavegameReader reader)
 			}
 		}
 	}
+
+	applyGlobeviewPadAreas();
+	applyGlobeviewPadEurope();
 }
 
 void CvMap::write(CvSavegameWriter writer)
