@@ -273,6 +273,17 @@ class CvEventManager:
 				CvScreensInterface.showAchieveAdvisorScreen()
 # Achievements END
 
+			# F2 Europe is the EXE control. Shift-F2 / Ctrl-F2 used to be eaten by
+			# the chipotle city-select cheat, so Africa never opened. Handle those
+			# chords here the same way F10 opens Achievements.
+			if (theKey == int(InputTypes.KB_F2)):
+				if self.bShift and not self.bCtrl:
+					CvScreensInterface.showAfricaScreen((-1,))
+					return 1
+				elif self.bCtrl and not self.bShift:
+					CvScreensInterface.showPortRoyalScreen((-1,))
+					return 1
+
 # TAC: EventTriggerMenu START
 # Shift+Ctrl+E im Cheatmodus
 			if( theKey == int(InputTypes.KB_E) and self.bShift and self.bCtrl and self.bAllowCheats) :
@@ -328,14 +339,6 @@ class CvEventManager:
 					if ( self.bShift ):
 						CvScreensInterface.replayScreen.showScreen(False)
 						return 1
-						
-				elif (theKey == int(InputTypes.KB_F2)):
-					if ( self.bShift ):
-						city = CyMap().plot(px, py).getPlotCity()
-						if (city != None):
-							CyInterface().selectCity(city, True)
-							return 1
-					# don't return 1 unless you want the input consumed
 
 
 		return 0
