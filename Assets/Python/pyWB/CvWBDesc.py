@@ -29,6 +29,15 @@ def isWbFlagTrue(value):
 		return False
 	return str(value).strip().lower() in ("true", "1", "yes")
 
+def isDllCreatedCiv(civType):
+	# Church and wild animals are spawned by the DLL in setInitialItems.
+	# Official maps leave those slots as NONE. A live-game WB save writes them,
+	# and Play Scenario then inits unplayable civs, which later hit
+	# initEuropeSettler / getCivilizationInfo(-1).
+	if civType is None:
+		return False
+	return str(civType) in ("CIVILIZATION_CHURCH", "CIVILIZATION_BARBARIAN")
+
 #############
 class CvWBParser:
 	"parser functions for WB desc"
@@ -403,14 +412,20 @@ class CvPlayerDesc:
 		f.write("\tTeam=%d\n" %(int(gc.getPlayer(idx).getTeam())))
 
 		# write leader and Civ Description info
-		if (gc.getPlayer(idx).getLeaderType() == LeaderHeadTypes.NO_LEADER):
+		eCiv = gc.getPlayer(idx).getCivilizationType()
+		bDllCreated = False
+		if eCiv != CivilizationTypes.NO_CIVILIZATION:
+			bDllCreated = isDllCreatedCiv(gc.getCivilizationInfo(eCiv).getType())
+
+		if (gc.getPlayer(idx).getLeaderType() == LeaderHeadTypes.NO_LEADER) or bDllCreated:
 			f.write("\tLeaderType=NONE\n")
 
 		else:
 			f.write("\tLeaderType=%s\n" %(gc.getLeaderHeadInfo(gc.getPlayer(idx).getLeaderType()).getType()))
 
 		# write civ, color, artStyle, isPlayableCiv, isMinorNation, StartingGold
-		if (gc.getPlayer(idx).getCivilizationType() == CivilizationTypes.NO_CIVILIZATION):
+		# Church / animals: write NONE so the DLL can create them on scenario start
+		if (eCiv == CivilizationTypes.NO_CIVILIZATION) or bDllCreated:
 			f.write("\tCivType=NONE\n")
 			f.write("\tColor=NONE\n")
 			f.write("\tArtStyle=NONE\n")
@@ -432,7 +447,7 @@ class CvPlayerDesc:
 
 			f.write("\tStartingEra=%s\n" %(gc.getEraInfo(gc.getPlayer(idx).getCurrentEra()).getType()))
 
-			f.write("\tRandomStartLocation=False\n")
+			f.write("\tRandomStartLocation=false\n")
 
 			# write Civics
 			for iCivicOptionLoop in range(gc.getNumCivicOptionInfos()):
@@ -1468,7 +1483,7 @@ class CvWBDesc:
 			pWBPlayer = self.playersDesc[iPlayerLoop]
 
 			# Random Start Location
-			if (pPlayer.getLeaderType() != -1 and pWBPlayer.bRandomStartLocation != "false"):
+			if (pPlayer.getLeaderType() != -1 and isWbFlagTrue(pWBPlayer.bRandomStartLocation)):
 				pPlayer.setStartingPlot(pPlayer.findStartingPlot(True), True)
 			else:
 
@@ -1502,7 +1517,7 @@ class CvWBDesc:
 			if (self.playersDesc[iPlayerLoop]):
 				pWBPlayer = self.playersDesc[iPlayerLoop]
 				iTeam = pWBPlayer.team
-				if (pWBPlayer.civType != 'NONE' and iTeam >= 0 and iTeam < iMaxTeams):
+				if (pWBPlayer.civType != 'NONE' and not isDllCreatedCiv(pWBPlayer.civType) and iTeam >= 0 and iTeam < iMaxTeams):
 					self.validPlayers[iPlayerLoop] = 1
 					self.validTeams[iTeam] = 1
 
@@ -1600,7 +1615,7 @@ class CvWBDesc:
 						pPlayer.setCurrentEra(iStartingEra)
 
 					# Random Start Location
-					if (pWBPlayer.bRandomStartLocation != "false"):
+					if isWbFlagTrue(pWBPlayer.bRandomStartLocation):
 						pPlayer.setStartingPlot(pPlayer.findStartingPlot(True), True)
 						print("Setting player %d starting location to (%d,%d)", pPlayer.getID(), pPlayer.getStartingPlot().getX(), pPlayer.getStartingPlot().getY())
 
