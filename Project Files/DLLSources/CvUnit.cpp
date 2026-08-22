@@ -9956,6 +9956,11 @@ bool CvUnit::canAttack() const
 
 bool CvUnit::canDefend(const CvPlot* pPlot) const
 {
+	if (!isOnMap_())
+	{
+		return false;
+	}
+	
 	if (pPlot == NULL)
 	{
 		pPlot = plot();
