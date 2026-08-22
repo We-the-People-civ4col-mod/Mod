@@ -276,8 +276,12 @@ class CvEventManager:
 			# F2 Europe is the EXE control. Shift-F2 / Ctrl-F2 used to be eaten by
 			# the chipotle city-select cheat, so Africa never opened. Handle those
 			# chords here the same way F10 opens Achievements.
+			# Chipotle peek at the hovered city is Ctrl-Shift-F2 (and map double-click).
 			if (theKey == int(InputTypes.KB_F2)):
-				if self.bShift and not self.bCtrl:
+				if self.bShift and self.bCtrl and self.bAllowCheats:
+					if self._peekCityAtPlot(px, py):
+						return 1
+				elif self.bShift and not self.bCtrl:
 					CvScreensInterface.showAfricaScreen((-1,))
 					return 1
 				elif self.bCtrl and not self.bShift:
@@ -870,6 +874,19 @@ class CvEventManager:
 		genericArgs = argsList[0][0]	# tuple of tuple of my args
 		turnSlice = genericArgs[0]
 
+	def _peekCityAtPlot(self, px, py):
+		# Chipotle: open the city under the cursor, including AI cities.
+		if px == -1 or py == -1:
+			return 0
+		plot = CyMap().plot(px, py)
+		if not plot.isCity():
+			return 0
+		city = plot.getPlotCity()
+		if city is None or city.isNone():
+			return 0
+		CyInterface().selectCity(city, True)
+		return 1
+
 	def onMouseEvent(self, argsList):
 		'mouse handler - returns 1 if the event was consumed'
 		eventType,mx,my,px,py,interfaceConsumed,screens = argsList
@@ -884,6 +901,12 @@ class CvEventManager:
 					# Launch Place Object Event
 					self.beginEvent( CvUtil.EventPlaceObject, (px, py) )
 					return 1
+
+			# EventLcButtonDblClick is sent by the EXE for map double-clicks.
+			elif ( eventType == self.EventLcButtonDblClick ):
+				if (self.bAllowCheats and not interfaceConsumed and not CyInterface().isCityScreenUp()):
+					if self._peekCityAtPlot(px, py):
+						return 1
 
 		if ( eventType == self.EventBack ):
 			return CvScreensInterface.handleBack(screens)
