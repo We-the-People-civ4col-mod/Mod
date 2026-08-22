@@ -1232,9 +1232,36 @@ int CvGame::getTeamClosenessScore(int** aaiDistances, int* aiStartingLocs)
 }
 
 
+// The EXE mouseEvent enum has no middle button, so Python never sees wheel-click.
+// Bit 0 of GetAsyncKeyState is set if the button went down since the last poll,
+// so a short click is not missed when update() skips frames.
+void CvGame::doCloseCityScreenOnMiddleMouse()
+{
+	static bool bWasDown = false;
+	const SHORT iState = GetAsyncKeyState(VK_MBUTTON);
+	const bool bDown = (iState < 0);
+	const bool bPressedSincePoll = (iState & 1) != 0;
+	const bool bClicked = bPressedSincePoll || (bDown && !bWasDown);
+	bWasDown = bDown;
+	if (!bClicked)
+	{
+		return;
+	}
+	if (gDLL->isDiplomacy() || gDLL->getInterfaceIFace()->isPopupUp())
+	{
+		return;
+	}
+	if (!gDLL->getInterfaceIFace()->isCityScreenUp())
+	{
+		return;
+	}
+	gDLL->getInterfaceIFace()->clearSelectedCities();
+}
+
 void CvGame::update()
 {
 	MOD_PROFILE("CvGame::update");
+	doCloseCityScreenOnMiddleMouse();
 
 	if (!gDLL->GetWorldBuilderMode() || isInAdvancedStart())
 	{

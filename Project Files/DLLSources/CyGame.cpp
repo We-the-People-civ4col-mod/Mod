@@ -31,6 +31,13 @@ CyGame::CyGame(CvGame* pGame) : m_pGame(pGame)
 CyGame::CyGame(CvGameAI* pGame) : m_pGame(pGame)
 {
 }
+void CyGame::doCloseCityScreenOnMiddleMouse()
+{
+	if (m_pGame)
+	{
+		pointer(CREATE_ASSERT_DATA)->doCloseCityScreenOnMiddleMouse();
+	}
+}
 void CyGame::updateScore(bool bForce)
 {
 	if (m_pGame)

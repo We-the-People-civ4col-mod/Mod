@@ -273,6 +273,21 @@ class CvEventManager:
 				CvScreensInterface.showAchieveAdvisorScreen()
 # Achievements END
 
+			# F2 Europe is the EXE control. Shift-F2 / Ctrl-F2 used to be eaten by
+			# the chipotle city-select cheat, so Africa never opened. Handle those
+			# chords here the same way F10 opens Achievements.
+			# Chipotle peek at the hovered city is Ctrl-Shift-F2 (and map double-click).
+			if (theKey == int(InputTypes.KB_F2)):
+				if self.bShift and self.bCtrl and self.bAllowCheats:
+					if self._peekCityAtPlot(px, py):
+						return 1
+				elif self.bShift and not self.bCtrl:
+					CvScreensInterface.showAfricaScreen((-1,))
+					return 1
+				elif self.bCtrl and not self.bShift:
+					CvScreensInterface.showPortRoyalScreen((-1,))
+					return 1
+
 # TAC: EventTriggerMenu START
 # Shift+Ctrl+E im Cheatmodus
 			if( theKey == int(InputTypes.KB_E) and self.bShift and self.bCtrl and self.bAllowCheats) :
@@ -328,14 +343,6 @@ class CvEventManager:
 					if ( self.bShift ):
 						CvScreensInterface.replayScreen.showScreen(False)
 						return 1
-						
-				elif (theKey == int(InputTypes.KB_F2)):
-					if ( self.bShift ):
-						city = CyMap().plot(px, py).getPlotCity()
-						if (city != None):
-							CyInterface().selectCity(city, True)
-							return 1
-					# don't return 1 unless you want the input consumed
 
 
 		return 0
@@ -359,6 +366,9 @@ class CvEventManager:
 
 		# allow camera to be updated
 		CvCameraControls.g_CameraControls.onUpdate( fDeltaTime )
+		# Wheel-click to leave the colony screen. Poll every frame; the EXE
+		# never sends a middle-button mouseEvent to Python.
+		gc.getGame().doCloseCityScreenOnMiddleMouse()
 
 	def onWindowActivation(self, argsList):
 		'Called when the game window activates or deactivates'
@@ -868,6 +878,22 @@ class CvEventManager:
 		genericArgs = argsList[0][0]	# tuple of tuple of my args
 		turnSlice = genericArgs[0]
 
+	def _peekCityAtPlot(self, px, py, bOtherPlayersOnly=False):
+		# Chipotle: open the city under the cursor. Own cities already open on
+		# a normal click; intercepting those fights the EXE and closes them.
+		if px == -1 or py == -1:
+			return 0
+		plot = CyMap().plot(px, py)
+		if not plot.isCity():
+			return 0
+		city = plot.getPlotCity()
+		if city is None or city.isNone():
+			return 0
+		if bOtherPlayersOnly and city.getOwner() == gc.getGame().getActivePlayer():
+			return 0
+		CyInterface().selectCity(city, True)
+		return 1
+
 	def onMouseEvent(self, argsList):
 		'mouse handler - returns 1 if the event was consumed'
 		eventType,mx,my,px,py,interfaceConsumed,screens = argsList
@@ -882,6 +908,12 @@ class CvEventManager:
 					# Launch Place Object Event
 					self.beginEvent( CvUtil.EventPlaceObject, (px, py) )
 					return 1
+
+			# EventLcButtonDblClick is sent by the EXE for map double-clicks.
+			elif ( eventType == self.EventLcButtonDblClick ):
+				if (self.bAllowCheats and not interfaceConsumed and not CyInterface().isCityScreenUp()):
+					if self._peekCityAtPlot(px, py, True):
+						return 1
 
 		if ( eventType == self.EventBack ):
 			return CvScreensInterface.handleBack(screens)

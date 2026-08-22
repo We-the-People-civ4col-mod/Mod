@@ -50,6 +50,7 @@ public:
 	void assignNativeTerritory();
 
 	DllExport void update();
+	void doCloseCityScreenOnMiddleMouse();
 	void updateScore(bool bForce = false);
 	// <advc.003y>
 	int getScoreComponent(int iRawScore, int iInitial, int iMax, int iMultiplier,

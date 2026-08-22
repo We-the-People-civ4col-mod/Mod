@@ -25,6 +25,7 @@ void CyGamePythonInterface1(python::class_<CyGame>& x)
 		.def("setWBCentralAmericanNative", &CyGame::setWBCentralAmericanNative)
 		// R&R, ray, Correct Geographical Placement of Natives - END
 		.def("isNone", &CyGame::isNone, "CyGame* () - is the instance valid?")
+		.def("doCloseCityScreenOnMiddleMouse", &CyGame::doCloseCityScreenOnMiddleMouse, "void ()")
 		.def("updateScore", &CyGame::updateScore, "void (bool bForce)")
 		.def("cycleCities", &CyGame::cycleCities, "void (bool bForward, bool bAdd)")
 		.def("cycleSelectionGroups", &CyGame::cycleSelectionGroups, "void (bool bClear, bool bForward)")

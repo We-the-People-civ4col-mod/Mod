@@ -31,6 +31,7 @@ public:
 	// R&R, ray, Correct Geographical Placement of Natives - END
 
 	bool isNone() { return (m_pGame==NULL); }
+	void doCloseCityScreenOnMiddleMouse();
 	void updateScore(bool bForce);
 	void cycleCities(bool bForward, bool bAdd);
 	void cycleSelectionGroups(bool bClear, bool bForward);
