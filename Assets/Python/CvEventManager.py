@@ -874,8 +874,9 @@ class CvEventManager:
 		genericArgs = argsList[0][0]	# tuple of tuple of my args
 		turnSlice = genericArgs[0]
 
-	def _peekCityAtPlot(self, px, py):
-		# Chipotle: open the city under the cursor, including AI cities.
+	def _peekCityAtPlot(self, px, py, bOtherPlayersOnly=False):
+		# Chipotle: open the city under the cursor. Own cities already open on
+		# a normal click; intercepting those fights the EXE and closes them.
 		if px == -1 or py == -1:
 			return 0
 		plot = CyMap().plot(px, py)
@@ -883,6 +884,8 @@ class CvEventManager:
 			return 0
 		city = plot.getPlotCity()
 		if city is None or city.isNone():
+			return 0
+		if bOtherPlayersOnly and city.getOwner() == gc.getGame().getActivePlayer():
 			return 0
 		CyInterface().selectCity(city, True)
 		return 1
@@ -905,7 +908,7 @@ class CvEventManager:
 			# EventLcButtonDblClick is sent by the EXE for map double-clicks.
 			elif ( eventType == self.EventLcButtonDblClick ):
 				if (self.bAllowCheats and not interfaceConsumed and not CyInterface().isCityScreenUp()):
-					if self._peekCityAtPlot(px, py):
+					if self._peekCityAtPlot(px, py, True):
 						return 1
 
 		if ( eventType == self.EventBack ):
