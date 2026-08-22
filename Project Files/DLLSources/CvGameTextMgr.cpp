@@ -7999,25 +7999,6 @@ void CvGameTextMgr::getAttitudeString(CvWStringBuffer& szBuffer, PlayerTypes ePl
 			szBuffer.append(NEWLINE);
 			szBuffer.append(szTempBuffer);
 		}
-		if (iPass == 0)
-		{
-			const int iGiftValue = kPlayer.AI_getTradeAttitudeValue(eTargetPlayer);
-			if (iGiftValue > 0)
-			{
-				szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_PLAYER_BLUE_TEXT"),
-					gDLL->getText("TXT_KEY_MISC_ATTITUDE_TRADE_GIFT_GIVEN", iGiftValue).GetCString());
-				szBuffer.append(NEWLINE);
-				szBuffer.append(szTempBuffer);
-			}
-			const int iPeaceTalkTurns = kPlayer.AI_getTurnsUntilWillingToTalk(eTargetPlayer);
-			if (iPeaceTalkTurns > 0)
-			{
-				szTempBuffer.Format(SETCOLR L"%s" ENDCOLR, TEXT_COLOR("COLOR_YELLOW"),
-					gDLL->getText("TXT_KEY_MISC_ATTITUDE_PEACE_TALK", iPeaceTalkTurns).GetCString());
-				szBuffer.append(NEWLINE);
-				szBuffer.append(szTempBuffer);
-			}
-		}
 
 		iAttitudeChange = kPlayer.AI_getRivalTradeAttitude(eTargetPlayer);
 		if ((iPass == 0) ? (iAttitudeChange > 0) : (iAttitudeChange < 0))

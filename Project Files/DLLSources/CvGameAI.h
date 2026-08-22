@@ -25,8 +25,6 @@ public:
 
 	int AI_turnsPercent(int iTurns, int iPercent);
 	int AI_adjustedTurn(int iTurn);
-	int AI_effectiveTurns(int iRawTurns) const;
-	int AI_effectiveTurns(int iRawTurns, int iSpeedPercent) const;
 	int AI_gameCompletePercent();
 
 	virtual void read(FDataStreamBase* pStream);

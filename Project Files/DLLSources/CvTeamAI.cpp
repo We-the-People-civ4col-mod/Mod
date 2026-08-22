@@ -1082,7 +1082,7 @@ int CvTeamAI::AI_makePeaceTradeVal(TeamTypes ePeaceTeam, TeamTypes eTeam) const
 	iValue /= 100;
 
 	iValue *= 40;
-	iValue /= (GC.getGameINLINE().AI_effectiveTurns(GET_TEAM(eTeam).AI_getAtWarCounter(ePeaceTeam), GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent()) + 10);
+	iValue /= (GET_TEAM(eTeam).AI_getAtWarCounter(ePeaceTeam) + 10);
 
 	iValue -= (iValue % GC.getDefineINT("DIPLOMACY_VALUE_REMAINDER"));
 
@@ -1539,7 +1539,7 @@ DenialTypes CvTeamAI::AI_permanentAllianceTrade(TeamTypes eTeam) const
 		}
 	}
 
-	if (GC.getGameINLINE().AI_effectiveTurns(AI_getDefensivePactCounter(eTeam) + AI_getShareWarCounter(eTeam)) < 40)
+	if ((AI_getDefensivePactCounter(eTeam) + AI_getShareWarCounter(eTeam)) < 40)
 	{
 		return DENIAL_NOT_ALLIED;
 	}
@@ -2625,18 +2625,20 @@ void CvTeamAI::AI_doWar()
 								{
 									if (AI_isChosenWar((TeamTypes)iI))
 									{
-										const int iWarTurns = GC.getGameINLINE().AI_effectiveTurns(AI_getAtWarCounter((TeamTypes)iI), GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent());
-										if (iWarTurns > 10)
+										if (AI_getAtWarCounter((TeamTypes)iI) > 10)
 										{
 											if (!AI_isLandTarget((TeamTypes)iI))
 											{
-												makePeace((TeamTypes)iI);
+												if (AI_getAtWarCounter((TeamTypes)iI) > 10)
+												{
+													makePeace((TeamTypes)iI);
+												}
 											}
 										}
-										if (iWarTurns > 20)
+										if (AI_getAtWarCounter((TeamTypes)iI) > 20)
 										{
 
-											if (iWarTurns > ((AI_getWarPlan((TeamTypes)iI) == WARPLAN_TOTAL) ? 30 : 20))
+											if (AI_getAtWarCounter((TeamTypes)iI) > ((AI_getWarPlan((TeamTypes)iI) == WARPLAN_TOTAL) ? 30 : 20))
 											{
 												int iOurValue = AI_endWarVal((TeamTypes)iI);
 												int iTheirValue = kLoopTeam.AI_endWarVal(getID());

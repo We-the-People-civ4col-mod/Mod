@@ -3248,51 +3248,6 @@ DiploCommentTypes CvPlayerAI::AI_getGreeting(PlayerTypes ePlayer)
 }
 
 
-int CvPlayerAI::AI_getRefuseToTalkWarDuration(PlayerTypes ePlayer) const
-{
-	int iRefuseDuration = (GC.getLeaderHeadInfo(getPersonalityType()).getRefuseToTalkWarThreshold());
-
-	if  (GET_TEAM(getTeam()).AI_isChosenWar(GET_PLAYER(ePlayer).getTeam()))
-	{
-		if (!isNative())
-		{
-			iRefuseDuration *= 2;
-		}
-	}
-	else
-	{
-		if (isNative())
-		{
-			iRefuseDuration *= 2;
-		}
-	}
-
-	int iOurSuccess = 1 + GET_TEAM(getTeam()).AI_getWarSuccess(GET_PLAYER(ePlayer).getTeam());
-	int iTheirSuccess = 1 + GET_TEAM(GET_PLAYER(ePlayer).getTeam()).AI_getWarSuccess(getTeam());
-	if (iTheirSuccess > iOurSuccess * 2)
-	{
-		iRefuseDuration *= 50 + ((50 * iOurSuccess * 2) / iTheirSuccess);
-		iRefuseDuration /= 100;
-	}
-
-	if (isNative())
-	{
-		iRefuseDuration *= 2;
-		int iGameTurns = GC.getGameINLINE().getEstimateEndTurn();
-		int iCurrentTurn = GC.getGameINLINE().getGameTurn();
-
-		if (!GET_TEAM(getTeam()).AI_isChosenWar((GET_PLAYER(ePlayer).getTeam())))
-		{
-			iCurrentTurn += iGameTurns / 2;
-		}
-
-		iRefuseDuration *= std::max(0, iCurrentTurn - iGameTurns / 12);
-		iRefuseDuration /= std::max(1, iGameTurns);
-	}
-
-	return iRefuseDuration;
-}
-
 bool CvPlayerAI::AI_isWillingToTalk(PlayerTypes ePlayer)
 {
 	FAssertMsg(getPersonalityType() != NO_LEADER, "getPersonalityType() is not expected to be equal with NO_LEADER");
@@ -3315,9 +3270,47 @@ bool CvPlayerAI::AI_isWillingToTalk(PlayerTypes ePlayer)
 			return false;
 		}
 
-		const int iRefuseDuration = AI_getRefuseToTalkWarDuration(ePlayer);
-		const int iTrainPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-		if (GC.getGameINLINE().AI_effectiveTurns(GET_TEAM(getTeam()).AI_getAtWarCounter(GET_PLAYER(ePlayer).getTeam()), iTrainPercent) < iRefuseDuration)
+		int iRefuseDuration = (GC.getLeaderHeadInfo(getPersonalityType()).getRefuseToTalkWarThreshold());
+
+		if  (GET_TEAM(getTeam()).AI_isChosenWar(GET_PLAYER(ePlayer).getTeam()))
+		{
+			if (!isNative())
+			{
+				iRefuseDuration *= 2;
+			}
+		}
+		else
+		{
+			if (isNative())
+			{
+				iRefuseDuration *= 2;
+			}
+		}
+
+		int iOurSuccess = 1 + GET_TEAM(getTeam()).AI_getWarSuccess(GET_PLAYER(ePlayer).getTeam());
+		int iTheirSuccess = 1 + GET_TEAM(GET_PLAYER(ePlayer).getTeam()).AI_getWarSuccess(getTeam());
+		if (iTheirSuccess > iOurSuccess * 2)
+		{
+			iRefuseDuration *= 50 + ((50 * iOurSuccess * 2) / iTheirSuccess);
+			iRefuseDuration /= 100;
+		}
+
+		if (isNative())
+		{
+			iRefuseDuration *= 2;
+			int iGameTurns = GC.getGameINLINE().getEstimateEndTurn();
+			int iCurrentTurn = GC.getGameINLINE().getGameTurn();
+
+			if (!GET_TEAM(getTeam()).AI_isChosenWar((GET_PLAYER(ePlayer).getTeam())))
+			{
+				iCurrentTurn += iGameTurns / 2;
+			}
+
+			iRefuseDuration *= std::max(0, iCurrentTurn - iGameTurns / 12);
+			iRefuseDuration /= iGameTurns;
+		}
+
+		if (GET_TEAM(getTeam()).AI_getAtWarCounter(GET_PLAYER(ePlayer).getTeam()) < iRefuseDuration)
 		{
 			return false;
 		}
@@ -3331,41 +3324,6 @@ bool CvPlayerAI::AI_isWillingToTalk(PlayerTypes ePlayer)
 	}
 
 	return true;
-}
-
-int CvPlayerAI::AI_getTurnsUntilWillingToTalk(PlayerTypes ePlayer)
-{
-	if (GET_PLAYER(ePlayer).getTeam() == getTeam())
-	{
-		return -1;
-	}
-
-	if (!atWar(getTeam(), GET_PLAYER(ePlayer).getTeam()))
-	{
-		return -1;
-	}
-
-	if (GET_TEAM(getTeam()).isParentOf(GET_PLAYER(ePlayer).getTeam()))
-	{
-		return -1;
-	}
-
-	const int iRefuseDuration = AI_getRefuseToTalkWarDuration(ePlayer);
-	const int iAtWarTurns = GET_TEAM(getTeam()).AI_getAtWarCounter(GET_PLAYER(ePlayer).getTeam());
-	int iTrainPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-	if (iTrainPercent < 1)
-	{
-		iTrainPercent = 100;
-	}
-
-	const int iNeededRawTurns = (iRefuseDuration * iTrainPercent + 99) / 100;
-	const int iRemaining = iNeededRawTurns - iAtWarTurns;
-	if (iRemaining < 1)
-	{
-		return -1;
-	}
-
-	return iRemaining;
 }
 
 
@@ -3775,86 +3733,16 @@ int CvPlayerAI::AI_getShareWarAttitude(PlayerTypes ePlayer)
 	return iAttitude;
 }
 
-int CvPlayerAI::AI_getTradeAttitudeValue(PlayerTypes ePlayer)
-{
-	return AI_getPeacetimeGrantValue(ePlayer) + std::max(0, (AI_getPeacetimeTradeValue(ePlayer) - GET_PLAYER(ePlayer).AI_getPeacetimeTradeValue(getID())));
-}
-
-int CvPlayerAI::AI_getTradeAttitudeDivisor(PlayerTypes ePlayer)
-{
-	const int iHasMetTurns = GET_TEAM(getTeam()).AI_getHasMetCounter(GET_PLAYER(ePlayer).getTeam());
-	return (GC.getGameINLINE().AI_effectiveTurns(iHasMetTurns) + 1) * 5;
-}
-
 int CvPlayerAI::AI_getTradeAttitude(PlayerTypes ePlayer)
 {
-	const int iDivisor = AI_getTradeAttitudeDivisor(ePlayer);
-	if (iDivisor < 1)
-	{
-		return 0;
-	}
-
-	return range(AI_getTradeAttitudeValue(ePlayer) / iDivisor, 0, 4);
-}
-
-int CvPlayerAI::AI_getTradeAttitudeGoldForNextLevel(PlayerTypes ePlayer)
-{
-	const int iCurrent = AI_getTradeAttitude(ePlayer);
-	if (iCurrent >= 4)
-	{
-		return 0;
-	}
-
-	const int iDivisor = AI_getTradeAttitudeDivisor(ePlayer);
-	if (iDivisor < 1)
-	{
-		return 0;
-	}
-
-	const int iNeededValue = ((iCurrent + 1) * iDivisor) - AI_getTradeAttitudeValue(ePlayer);
-	int iGoldPercent = AI_goldTradeValuePercent();
-	if (iGoldPercent < 1)
-	{
-		iGoldPercent = 100;
-	}
-
-	return std::max(0, (iNeededValue * 100 + iGoldPercent - 1) / iGoldPercent);
-}
-
-int CvPlayerAI::AI_getTradeAttitudeTurnsUntilDecay(PlayerTypes ePlayer)
-{
-	const int iCurrent = AI_getTradeAttitude(ePlayer);
-	if (iCurrent <= 0)
-	{
-		return -1;
-	}
-
-	const int iValue = AI_getTradeAttitudeValue(ePlayer);
-	const int iHasMetTurns = GET_TEAM(getTeam()).AI_getHasMetCounter(GET_PLAYER(ePlayer).getTeam());
-	for (int iExtraTurns = 1; iExtraTurns <= 10000; ++iExtraTurns)
-	{
-		const int iEffectiveTurns = GC.getGameINLINE().AI_effectiveTurns(iHasMetTurns + iExtraTurns);
-		const int iDivisor = (iEffectiveTurns + 1) * 5;
-		if (iDivisor > 0 && (iValue / iDivisor) < iCurrent)
-		{
-			return iExtraTurns;
-		}
-	}
-
-	return -1;
+	// XXX human only?
+	return range(((AI_getPeacetimeGrantValue(ePlayer) + std::max(0, (AI_getPeacetimeTradeValue(ePlayer) - GET_PLAYER(ePlayer).AI_getPeacetimeTradeValue(getID())))) / ((GET_TEAM(getTeam()).AI_getHasMetCounter(GET_PLAYER(ePlayer).getTeam()) + 1) * 5)), 0, 4);
 }
 
 int CvPlayerAI::AI_getRivalTradeAttitude(PlayerTypes ePlayer)
 {
-	const int iDivisor = AI_getTradeAttitudeDivisor(ePlayer) * 2;
-	if (iDivisor < 1)
-	{
-		return 0;
-	}
-
-	const int iRivalValue = GET_TEAM(getTeam()).AI_getEnemyPeacetimeGrantValue(GET_PLAYER(ePlayer).getTeam())
-		+ (GET_TEAM(getTeam()).AI_getEnemyPeacetimeTradeValue(GET_PLAYER(ePlayer).getTeam()) / 3);
-	return -(range(iRivalValue / iDivisor, 0, 4));
+	// XXX human only?
+	return -(range(((GET_TEAM(getTeam()).AI_getEnemyPeacetimeGrantValue(GET_PLAYER(ePlayer).getTeam()) + (GET_TEAM(getTeam()).AI_getEnemyPeacetimeTradeValue(GET_PLAYER(ePlayer).getTeam()) / 3)) / ((GET_TEAM(getTeam()).AI_getHasMetCounter(GET_PLAYER(ePlayer).getTeam()) + 1) * 10)), 0, 4));
 }
 
 
