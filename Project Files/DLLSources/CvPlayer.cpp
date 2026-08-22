@@ -8853,30 +8853,7 @@ void CvPlayer::setTurnActive(bool bNewValue, bool bDoTurn)
 			if (getID() == GC.getGameINLINE().getActivePlayer())
 			{
 				// WTP, Schmiddie: Fix for Quest log bug
-				for (CvEventMap::const_iterator it = m_mapEventsOccured.begin(); it != m_mapEventsOccured.end(); ++it)
-				{
-					const EventTypes eEvent = (*it).first;
-					const EventTriggeredData& kTriggeredData = (*it).second;
-
-					if (GC.getEventInfo(eEvent).isQuest())
-					{
-						const int iID = kTriggeredData.getID();
-						std::map<int, CvWString>::const_iterator itMessage = m_mapQuestMessages.find(iID);
-
-						if (itMessage != m_mapQuestMessages.end())
-						{
-							CvTalkingHeadMessage questMessage(
-								kTriggeredData.m_iTurn + 1,
-								iID,
-								itMessage->second.GetCString(),
-								NULL,
-								MESSAGE_TYPE_QUEST);
-
-							addMessage(questMessage);
-							gDLL->getInterfaceIFace()->dirtyTurnLog(getID());
-						}
-					}
-				}
+				refreshQuestMessages();
 			}
 
 			if (getID() == GC.getGameINLINE().getActivePlayer())
@@ -14248,6 +14225,64 @@ void CvPlayer::resetEventOccured(EventTypes eEvent, bool bAnnounce)
 	}
 }
 
+void CvPlayer::refreshQuestMessages()
+{
+	CxDesyncMonitor StartAsyncExecution;
+
+	for (CvEventMap::iterator it = m_mapEventsOccured.begin(); it != m_mapEventsOccured.end(); ++it)
+	{
+		const EventTypes eEvent = (*it).first;
+		EventTriggeredData& kTriggeredData = (*it).second;
+		CvEventInfo& kEvent = GC.getEventInfo(eEvent);
+		if (!kEvent.isQuest())
+		{
+			continue;
+		}
+
+		CvWStringBuffer szMessageBuffer;
+		szMessageBuffer.append(kEvent.getDescription());
+
+		if (!isEmpty(kEvent.getPythonHelp()))
+		{
+			CvWString szHelp;
+			CyArgsList argsList;
+			argsList.add(gDLL->getPythonIFace()->makePythonObject(&kTriggeredData));
+			argsList.add(eEvent);
+			gDLL->getPythonIFace()->callFunction(PYRandomEventModule, kEvent.getPythonHelp(), argsList.makeFunctionArgs(), &szHelp);
+			szMessageBuffer.append(NEWLINE);
+			szMessageBuffer.append(szHelp);
+		}
+
+		const CvWString szNew = szMessageBuffer.getCString();
+		m_mapQuestMessages[kTriggeredData.getID()] = szNew;
+
+		gDLL->getInterfaceIFace()->addQuestMessage(getID(), szNew, kTriggeredData.getID());
+
+		CvMessageQueue::iterator itMessage = m_listGameMessages.begin();
+		while (itMessage != m_listGameMessages.end())
+		{
+			if (itMessage->getLength() == kTriggeredData.getID() && itMessage->getMessageType() == MESSAGE_TYPE_QUEST)
+			{
+				itMessage = m_listGameMessages.erase(itMessage);
+			}
+			else
+			{
+				++itMessage;
+			}
+		}
+
+		CvTalkingHeadMessage questMessage(
+			kTriggeredData.m_iTurn + 1,
+			kTriggeredData.getID(),
+			szNew,
+			NULL,
+			MESSAGE_TYPE_QUEST);
+		addMessage(questMessage);
+	}
+
+	gDLL->getInterfaceIFace()->dirtyTurnLog(getID());
+}
+
 void CvPlayer::setEventOccured(EventTypes eEvent, const EventTriggeredData& kEventTriggered, bool bOthers)
 {
 	FAssert(eEvent >= 0 && eEvent < GC.getNumEventInfos());
@@ -19165,6 +19200,15 @@ void CvPlayer::changeYieldTradedTaxCounter(TradeLocationTypes eLocation, YieldTy
 		else if (iCount < -MAX)
 		{
 			m_em_iYieldSoldTotal[eLocation].set(eYield, -MAX);
+		}
+	}
+
+	for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
+	{
+		CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
+		if (kPlayer.isAlive() && kPlayer.isHuman())
+		{
+			kPlayer.refreshQuestMessages();
 		}
 	}
 }

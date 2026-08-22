@@ -10153,7 +10153,16 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 
 	CvEventInfo& kEvent = GC.getEventInfo(eEvent);
 	CvPlayer& kActivePlayer = GET_PLAYER(ePlayer);
-	EventTriggeredData* pTriggeredData = kActivePlayer.getEventTriggered(iEventTriggeredId);
+	EventTriggeredData* pTriggeredData = NULL;
+	const EventTriggeredData* pOccured = kActivePlayer.getEventOccured(eEvent);
+	if (pOccured != NULL && pOccured->getID() == iEventTriggeredId)
+	{
+		pTriggeredData = const_cast<EventTriggeredData*>(pOccured);
+	}
+	if (NULL == pTriggeredData)
+	{
+		pTriggeredData = kActivePlayer.getEventTriggered(iEventTriggeredId);
+	}
 
 	if (NULL == pTriggeredData)
 	{

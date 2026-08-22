@@ -4840,6 +4840,76 @@
 		<Russian>Продайте товар в указанном количестве в Европе [COLOR_FONT_GOLD]прежде, чем другая нация сможет это [COLOR_REVERT]сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_HEADER</Tag>
+		<English>[NEWLINE]Shipments so far:</English>
+		<French>[NEWLINE]Livraisons jusqu'ici :</French>
+		<German>[NEWLINE]Bisher geliefert:</German>
+		<Russian>[NEWLINE]Поставки на данный момент:</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_YOU</Tag>
+		<English>[NEWLINE]You: %d1</English>
+		<French>[NEWLINE]Vous : %d1</French>
+		<German>[NEWLINE]Ihr: %d1</German>
+		<Russian>[NEWLINE]Вы: %d1</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_YOU_LEAD</Tag>
+		<English>[NEWLINE]You: %d1 [COLOR_FONT_GOLD](lead)[COLOR_REVERT]</English>
+		<French>[NEWLINE]Vous : %d1 [COLOR_FONT_GOLD](en tête)[COLOR_REVERT]</French>
+		<German>[NEWLINE]Ihr: %d1 [COLOR_FONT_GOLD](führt)[COLOR_REVERT]</German>
+		<Russian>[NEWLINE]Вы: %d1 [COLOR_FONT_GOLD](лидер)[COLOR_REVERT]</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_LINE</Tag>
+		<English>[NEWLINE]%s1: %d2</English>
+		<French>[NEWLINE]%s1 : %d2</French>
+		<German>[NEWLINE]%s1: %d2</German>
+		<Russian>[NEWLINE]%s1: %d2</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_LEAD</Tag>
+		<English>[NEWLINE]%s1: %d2 [COLOR_FONT_GOLD](lead)[COLOR_REVERT]</English>
+		<French>[NEWLINE]%s1 : %d2 [COLOR_FONT_GOLD](en tête)[COLOR_REVERT]</French>
+		<German>[NEWLINE]%s1: %d2 [COLOR_FONT_GOLD](führt)[COLOR_REVERT]</German>
+		<Russian>[NEWLINE]%s1: %d2 [COLOR_FONT_GOLD](лидер)[COLOR_REVERT]</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_LOCATION_EUROPE</Tag>
+		<English>Europe</English>
+		<French>Europe</French>
+		<German>Europa</German>
+		<Russian>Европа</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_LOCATION_AFRICA</Tag>
+		<English>Africa</English>
+		<French>Afrique</French>
+		<German>Afrika</German>
+		<Russian>Африка</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_LOCATION_PORT_ROYAL</Tag>
+		<English>Port Royal</English>
+		<French>Port Royal</French>
+		<German>Port Royal</German>
+		<Russian>Порт-Ройал</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_LEADER_YOU</Tag>
+		<English>New leader for %F1_yield (%s2): you now lead with %d3.</English>
+		<French>Nouveau chef de file pour %F1_yield (%s2) : vous êtes maintenant en tête avec %d3.</French>
+		<German>Neue Führung bei %F1_yield (%s2): Ihr führt nun mit %d3.</German>
+		<Russian>Новый лидер по %F1_yield (%s2): теперь вы лидируете с %d3.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_TRADE_QUEST_LEADER_OTHER</Tag>
+		<English>New leader for %F1_yield (%s2): %s3 now leads with %d4.</English>
+		<French>Nouveau chef de file pour %F1_yield (%s2) : %s3 est maintenant en tête avec %d4.</French>
+		<German>Neue Führung bei %F1_yield (%s2): %s3 führt nun mit %d4.</German>
+		<Russian>Новый лидер по %F1_yield (%s2): теперь лидирует %s3 с %d4.</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
 		<English>Trade the following quantity of goods from Europe to the colonies [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>
 		<French>Acheminez d'Europe vers vos colonies cette quantité de biens [COLOR_FONT_GOLD]avant toute autre nation [COLOR_REVERT]: %D1_amount %F2_yield</French>

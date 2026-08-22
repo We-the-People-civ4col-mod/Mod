@@ -398,11 +398,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_GOLD_STOLEN_BECAUSE_CRIME</Tag>
-		<English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high crime in the city has led to gold being stolen.</English>
-		<French>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le taux de crime élevé a entrainé le vol d'argent dans vos coffres.</French>
-		<German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Kriminalität in der Stadt hat dazu geführt, dass Gold gestohlen wurde.</German>
-		<Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокий уровень преступности в городе привел к краже золота.</Russian>
-		<Hungarian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]A magas Bűnözés miatt Aranyat loptak a városban.</Hungarian>
+		<English>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high crime in the city has led to %d2[ICON_GOLD] being stolen.</English>
+		<French>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le taux de crime élevé a entrainé le vol de %d2[ICON_GOLD] dans vos coffres.</French>
+		<German>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Kriminalität in der Stadt hat dazu geführt, dass %d2[ICON_GOLD] gestohlen wurden.</German>
+		<Russian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокий уровень преступности в городе привел к краже %d2[ICON_GOLD].</Russian>
+		<Hungarian>[COLOR_NEGATIVE_TEXT]%s1_city_name : [COLOR_REVERT]A magas Bűnözés miatt %d2[ICON_GOLD]ot loptak a városban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_UNHAPPINESS_SLAVES_MODIFIER</Tag>
