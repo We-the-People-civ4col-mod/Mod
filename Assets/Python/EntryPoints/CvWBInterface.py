@@ -118,20 +118,31 @@ def getPlayerData():
 	"after reading a save file, return player data as a tuple, terminated by -1"
 	t=()
 	for i in range(gc.getMAX_CIV_PLAYERS()):
-		leaderType = CvUtil.findInfoTypeNum(WBDesc.playersDesc[i].leaderType)
-		civType = CvUtil.findInfoTypeNum(WBDesc.playersDesc[i].civType)
-		handicapType = CvUtil.findInfoTypeNum(WBDesc.playersDesc[i].handicap)
-		color = CvUtil.findInfoTypeNum(WBDesc.playersDesc[i].color)
-		artStyle = gc.getInfoTypeForString(WBDesc.playersDesc[i].artStyle)
+		pWBPlayer = WBDesc.playersDesc[i]
+		# Church / animals: the DLL creates these. Passing them in as scenario
+		# civs crashes initEuropeSettler because they have no cities.
+		if pWBPlayer.civType == "NONE" or CvWBDesc.isDllCreatedCiv(pWBPlayer.civType):
+			civType = -1
+			leaderType = -1
+			color = -1
+			artStyle = -1
+			isPlayableCiv = 0
+		else:
+			leaderType = CvUtil.findInfoTypeNum(pWBPlayer.leaderType)
+			civType = CvUtil.findInfoTypeNum(pWBPlayer.civType)
+			color = CvUtil.findInfoTypeNum(pWBPlayer.color)
+			artStyle = gc.getInfoTypeForString(pWBPlayer.artStyle)
+			isPlayableCiv = pWBPlayer.isPlayableCiv
+		handicapType = CvUtil.findInfoTypeNum(pWBPlayer.handicap)
 
 		t=t+(civType,)
-		t=t+(WBDesc.playersDesc[i].isPlayableCiv,)
+		t=t+(isPlayableCiv,)
 		t=t+(leaderType,)
 		t=t+(handicapType,)
-		t=t+(WBDesc.playersDesc[i].team,)
+		t=t+(pWBPlayer.team,)
 		t=t+(color,)
 		t=t+(artStyle,)
-		t=t+(WBDesc.playersDesc[i].isMinorNationCiv,)
+		t=t+(pWBPlayer.isMinorNationCiv,)
 
 	return t
 
