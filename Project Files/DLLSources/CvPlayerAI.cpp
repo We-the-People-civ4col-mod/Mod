@@ -348,7 +348,7 @@ void CvPlayerAI::AI_doFleetModernization()
 		}
 		else if (eOldUnitClass == (UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_NAO"))
 		{
-			eNewUnitClass = (UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_FLEUTE");
+			eNewUnitClass = (UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_FLUYT");
 		}
 		else if (eOldUnitClass == (UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_CARAVELA_REDONDA"))
 		{
