@@ -4434,6 +4434,7 @@ const int YIELD_TOOLS_BASE_VALUE = 10;
 int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 {
 	int iValue = iAmount * GET_PLAYER(getOwnerINLINE()).AI_yieldValue(eYield);
+	int iEmphasizedYield = AI_getEmphasizeYieldCount(eYield);
 
 	switch (eYield)
 	{
@@ -4641,6 +4642,17 @@ int CvCityAI::AI_estimateYieldValue(YieldTypes eYield, int iAmount) const
 			break;
 		default:
 			FAssert(false);
+	}
+
+	if (iEmphasizedYield > 0)
+	{
+		iValue *= (100 + 50 * iEmphasizedYield);
+		iValue /= 100;
+	}
+	else if (iEmphasizedYield < 0)
+	{
+		iValue *= 100;
+		iValue /= (100 - 50 * iEmphasizedYield);
 	}
 
 	return iValue;
