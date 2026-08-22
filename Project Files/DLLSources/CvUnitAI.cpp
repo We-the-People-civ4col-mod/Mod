@@ -3668,9 +3668,30 @@ void CvUnitAI::AI_defensiveBraveMove()
 		}
 	}
 
-	if (AI_group(UNITAI_DEFENSIVE))
+	// 1. After cultural pressure abandons a village, every brave used to
+	//    AI_group(UNITAI_DEFENSIVE) with no size/path cap, so the whole tribe
+	//    became one roaming stack. Find a new home first, then only form a
+	//    small local warband.
+	if (getHomeCity() == NULL)
 	{
-		// Group with other defenders
+		if (AI_findNewHomeColony())
+		{
+			return;
+		}
+		kill(true);
+		return;
+	}
+
+	AI_breakOversizedNativeDefensiveGroup();
+
+	int iMaxNativeGroup = GC.getDefineINT("NATIVE_DEFENSIVE_GROUP_MAX");
+	if (iMaxNativeGroup < 1)
+	{
+		iMaxNativeGroup = 5;
+	}
+
+	if (AI_group(UNITAI_DEFENSIVE, iMaxNativeGroup, -1, -1, false, false, false, 1))
+	{
 		return;
 	}
 
@@ -3679,15 +3700,12 @@ void CvUnitAI::AI_defensiveBraveMove()
 		return;
 	}
 
-	if (AI_findNewHomeColony())
+	if (getHomeCity()->AI_isDefended(-1))
 	{
-		return;
-	}
-
-	if (getHomeCity() == NULL)
-	{
-		kill(true);//One way to deal with the homeless problem.
-		return;
+		if (AI_findNewHomeColony())
+		{
+			return;
+		}
 	}
 
 	getGroup()->pushMission(MISSION_SKIP);
@@ -6381,15 +6399,22 @@ bool CvUnitAI::AI_findNewHomeColony()
 {
 	int iBestValue = MAX_INT;
 	CvCity* pBestCity = NULL;
+	CvCity* pCurrentHome = getHomeCity();
 
 	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
 	int iLoop;
 	for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
 	{
-		int iPathTurns;
+		if (pLoopCity == pCurrentHome && pCurrentHome->AI_isDefended(-1))
+		{
+			continue;
+		}
+
+		int iPathTurns = 0;
 		if (generatePath(pLoopCity->plot(), 0, true, &iPathTurns))
 		{
-			int iValue = iPathTurns * (25 + GC.getGameINLINE().getSorenRandNum(75, "AI Find New Home"));
+			int iValue = 1 + iPathTurns * 10;
+			iValue += pLoopCity->AI_numDefenders(true, false) * 8;
 
 			if (iValue < iBestValue)
 			{
@@ -6399,17 +6424,57 @@ bool CvUnitAI::AI_findNewHomeColony()
 		}
 	}
 
-	if (pBestCity != NULL)
+	if (pBestCity == NULL)
 	{
-		setHomeCity(pBestCity);
-		if (generatePath(getHomeCity()->plot(), 0, true))
-		{
-			getGroup()->pushMission(MISSION_MOVE_TO, getHomeCity()->getX_INLINE(), getHomeCity()->getY_INLINE());
-			return true;
-		}
+		return false;
+	}
+
+	setHomeCity(pBestCity);
+	if (atPlot(pBestCity->plot()))
+	{
+		return false;
+	}
+
+	if (generatePath(pBestCity->plot(), 0, true))
+	{
+		getGroup()->pushMission(MISSION_MOVE_TO, pBestCity->getX_INLINE(), pBestCity->getY_INLINE());
+		return true;
 	}
 
 	return false;
+}
+
+bool CvUnitAI::AI_breakOversizedNativeDefensiveGroup()
+{
+	if (!GET_PLAYER(getOwnerINLINE()).isNative())
+	{
+		return false;
+	}
+
+	CvSelectionGroup* pGroup = getGroup();
+	if (pGroup == NULL)
+	{
+		return false;
+	}
+
+	int iMaxNativeGroup = GC.getDefineINT("NATIVE_DEFENSIVE_GROUP_MAX");
+	if (iMaxNativeGroup < 1)
+	{
+		iMaxNativeGroup = 5;
+	}
+
+	if (pGroup->getNumUnits() <= iMaxNativeGroup)
+	{
+		return false;
+	}
+
+	if (pGroup->getHeadUnit() == this)
+	{
+		return false;
+	}
+
+	joinGroup(NULL);
+	return true;
 }
 
 bool CvUnitAI::AI_europeBuyNativeYields()

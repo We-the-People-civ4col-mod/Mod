@@ -482,6 +482,13 @@
 		<iDefineIntVal>32</iDefineIntVal>
 	</Define>
 	<Define>
+		<!-- 1. native braves used AI_group(UNITAI_DEFENSIVE) with no size or path cap.
+		     after a village was abandoned they all joined one roaming stack. keep
+		     warbands small. -->
+		<DefineName>NATIVE_DEFENSIVE_GROUP_MAX</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>BASE_CHANCE_EUROPE_PEACE</DefineName>
 		<iDefineIntVal>500</iDefineIntVal>
 	</Define>
