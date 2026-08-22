@@ -366,6 +366,9 @@ class CvEventManager:
 
 		# allow camera to be updated
 		CvCameraControls.g_CameraControls.onUpdate( fDeltaTime )
+		# Wheel-click to leave the colony screen. Poll every frame; the EXE
+		# never sends a middle-button mouseEvent to Python.
+		gc.getGame().doCloseCityScreenOnMiddleMouse()
 
 	def onWindowActivation(self, argsList):
 		'Called when the game window activates or deactivates'
