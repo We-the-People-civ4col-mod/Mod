@@ -2782,6 +2782,12 @@ void CvDLLWidgetData::parseContactCivHelp(const CvWidgetDataStruct &widgetDataSt
 			{
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_MISC_REFUSES_TO_TALK"));
+				const int iPeaceTalkTurns = GET_PLAYER(otherPlayer.getID()).AI_getTurnsUntilWillingToTalk(GC.getGameINLINE().getActivePlayer());
+				if (iPeaceTalkTurns > 0)
+				{
+					szBuffer.append(NEWLINE);
+					szBuffer.append(gDLL->getText("TXT_KEY_MISC_ATTITUDE_PEACE_TALK", iPeaceTalkTurns));
+				}
 			}
 
 			szBuffer.append(NEWLINE);

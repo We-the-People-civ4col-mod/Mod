@@ -26,6 +26,7 @@ public:
 	int AI_turnsPercent(int iTurns, int iPercent);
 	int AI_adjustedTurn(int iTurn);
 	int AI_effectiveTurns(int iRawTurns) const;
+	int AI_effectiveTurns(int iRawTurns, int iSpeedPercent) const;
 	int AI_speedChance(int iPercent) const;
 	int AI_gameCompletePercent();
 
