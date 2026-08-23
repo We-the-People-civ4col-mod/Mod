@@ -1529,6 +1529,16 @@
 		<Hungarian>[COLOR_POSITIVE_TEXT]Egy nem szabad telepes a csatában tanúsított bátorsága miatt szabaddá vált.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_LBD_GRANT_FREEDOM</Tag>
+		<English>This slave has earned freedom through years of hard labor. Grant freedom now?</English>
+		<German>Dieser Sklave hat sich durch jahrelange harte Arbeit seine Freiheit verdient. Soll ihm nun die Freiheit gewährt werden?</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GRANT_FREEDOM_CONFIRM</Tag>
+		<English>Do you want to grant this slave freedom?</English>
+		<German>Möchtest du diesen Sklaven in die Freiheit entlassen?</German>
+	</TEXT> 
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MAX_WORKERS</Tag>
 		<English>[ICON_BULLET]Offers %d1_Num [NUM1:job:jobs]</English>
 		<French>[ICON_BULLET]Peut accueillir %d1_Num [NUM1:employé:employés]</French>

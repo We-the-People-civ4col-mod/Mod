@@ -2813,6 +2813,15 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 		}
 		break;
 
+	// WTP, Slave Emancipation - START
+	case COMMAND_GRANT_FREEDOM:
+		if (canGrantFreedom())
+		{
+			return true;
+		}
+		break;
+	// WTP, Slave Emancipation - END
+
 	case COMMAND_UNLOAD:
 		if (canUnload())
 		{
@@ -3178,6 +3187,13 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 		case COMMAND_CLEAR_SPECIALTY:
 			clearSpecialty();
 			break;
+
+		// WTP, Slave Emancipation - START
+		case COMMAND_GRANT_FREEDOM:
+			grantFreedom();
+			bCycle = true;
+			break;
+		// WTP, Slave Emancipation - END
 
 		case COMMAND_UNLOAD:
 			if (iData2 >= 0)
@@ -10702,6 +10718,16 @@ void CvUnit::setLastLbDProfession(ProfessionTypes eProfession)
 }
 // TAC - LbD - Ray - END
 
+int CvUnit::getLbDFreeReadyTurn() const
+{
+	return m_iLbDFreeReadyTurn;
+}
+
+void CvUnit::setLbDFreeReadyTurn(int iNewValue)
+{
+	m_iLbDFreeReadyTurn = iNewValue;
+}
+
 // WTP, ray, saving 1 more Profession for Fisher Issue - START
 int CvUnit::getLbDroundsBefore() const
 {
@@ -17022,6 +17048,112 @@ void CvUnit::createTreasures(int overallAmount, int maxTreasureGold)
 	}
 }
 // WTP, merge Treasures, of Raubwuerger - END
+
+// WTP, Slave Emancipation - START
+bool CvUnit::canGrantFreedom() const
+{
+	const UnitClassTypes eUnitClass = getUnitInfo().getUnitClassType();
+
+	UnitClassTypes eFreedUnitClass = NO_UNITCLASS;
+
+	if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
+	{
+		eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_FREED_SLAVE;
+	}
+	else if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
+	{
+		eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE;
+	}
+	else
+	{
+		return false;
+	}
+
+	const CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+
+	const UnitTypes eFreedUnit = kPlayer.getUnitType(eFreedUnitClass);
+	if (eFreedUnit == NO_UNIT)
+	{
+		return false;
+	}
+
+	// WTP, prevent citizen replacement in revolting cities
+	CvCity* pCity = kPlayer.getPopulationUnitCity(getID());
+	if (pCity != NULL)
+	{
+		if (pCity->isOccupation())
+		{
+			return false;
+		}
+	}
+
+	return true;
+}
+
+void CvUnit::grantFreedom()
+{
+	if (!canGrantFreedom())
+	{
+		return;
+	}
+
+	const bool bLocked = isColonistLocked();
+	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+
+	const UnitClassTypes eUnitClass = getUnitInfo().getUnitClassType();
+
+	UnitClassTypes eFreedUnitClass = NO_UNITCLASS;
+
+	if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
+	{
+		eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_FREED_SLAVE;
+	}
+	else if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
+	{
+		eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE;
+	}
+	else
+	{
+		return;
+	}
+
+	const UnitTypes eFreedUnit = kPlayer.getUnitType(eFreedUnitClass);
+	if (eFreedUnit == NO_UNIT)
+	{
+		return;
+	}
+
+	CvUnit* pNewUnit = kPlayer.initUnit(eFreedUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE());
+	FAssert(pNewUnit != NULL);
+
+	if (pNewUnit == NULL)
+	{
+		return;
+	}
+
+	CvCity* pCity = kPlayer.getPopulationUnitCity(getID());
+
+	if (pCity != NULL)
+	{
+		pNewUnit->convert(this, false);
+		pCity->replaceCitizen(pNewUnit->getID(), getID(), false);
+		pNewUnit->setColonistLocked(bLocked);
+
+		if (kPlayer.getPopulationUnitCity(getID()) != NULL)
+		{
+			pCity->removePopulationUnit(CREATE_ASSERT_DATA, this, true, NO_PROFESSION);
+		}
+		else
+		{
+			kill(false);
+		}
+	}
+	else
+	{
+		pNewUnit->convert(this, true);
+	}
+}
+// WTP, Slave Emancipation - END
 
 // WTP, ray, Construction Supplies - START
 bool CvUnit::canUseProductionSupplies() const

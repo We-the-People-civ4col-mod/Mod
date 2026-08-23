@@ -2350,7 +2350,18 @@ bool CvDLLButtonPopup::launchConfirmCommandPopup(CvPopup* pPopup, CvPopupInfo &i
 {
 	int iAction = info.getData1();
 	CvWString szBuffer;
-	szBuffer = gDLL->getText("TXT_KEY_POPUP_ARE_YOU_SURE_ACTION", GC.getActionInfo(iAction).getTextKeyWide());
+
+	// WTP, Slave Emancipation - START
+	if (GC.getActionInfo(iAction).getCommandType() == COMMAND_GRANT_FREEDOM)
+	{
+		szBuffer = gDLL->getText("TXT_KEY_GRANT_FREEDOM_CONFIRM");
+	}
+	else
+	{
+		szBuffer = gDLL->getText("TXT_KEY_POPUP_ARE_YOU_SURE_ACTION", GC.getActionInfo(iAction).getTextKeyWide());
+	}
+	// WTP, Slave Emancipation - END
+
 	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, szBuffer);
 	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_YES").c_str(), NULL, 0);
 	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_NO").c_str());
@@ -2361,15 +2372,25 @@ bool CvDLLButtonPopup::launchConfirmCommandPopup(CvPopup* pPopup, CvPopupInfo &i
 
 bool CvDLLButtonPopup::launchConfirmTaskPopup(CvPopup* pPopup, CvPopupInfo &info)
 {
-	int iAction = info.getData1();
 	CvWString szBuffer;
-	szBuffer = gDLL->getText("TXT_KEY_POPUP_ARE_YOU_SURE_ACTION", info.getText().GetCString());
+
+	// WTP, Slave Emancipation - START
+	if ((TaskTypes)info.getData3() == TASK_GRANT_FREEDOM)
+	{
+		szBuffer = info.getText();
+	}
+	else
+	{
+		szBuffer = gDLL->getText("TXT_KEY_POPUP_ARE_YOU_SURE_ACTION", info.getText().GetCString());
+	}
+	// WTP, Slave Emancipation - END
+
 	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, szBuffer);
 	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_YES").c_str(), NULL, 0);
 	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_NO").c_str());
 	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
 
-	return (true);
+	return true;
 }
 
 

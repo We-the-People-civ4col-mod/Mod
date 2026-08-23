@@ -951,6 +951,31 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 		}
 		break;
 
+	// WTP, Slave Emancipation - START
+	case TASK_GRANT_FREEDOM:
+		{
+			CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).getUnit(iData1);
+
+			if (pUnit == NULL)
+			{
+				pUnit = getPopulationUnitById(iData1);
+			}
+
+			if (pUnit != NULL && pUnit->canGrantFreedom())
+			{
+				const UnitTypes eFreedUnit = (pUnit->getUnitInfo().getUnitClassType() == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
+					? GET_PLAYER(getOwnerINLINE()).getUnitType(GLOBAL_DEFINE_UNITCLASS_FREED_SLAVE)
+					: GET_PLAYER(getOwnerINLINE()).getUnitType(GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE);
+
+				pUnit->grantFreedom();
+
+				CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_FREE_IN_CITY", getNameKey());
+				gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GET_PLAYER(getOwnerINLINE()).getUnitButton(eFreedUnit), COLOR_WHITE, true, true);
+			}
+		}
+		break;
+	// WTP, Slave Emancipation - END
+
 	case TASK_EDUCATE:
 		educateStudent(iData1, (UnitTypes) iData2);
 		break;
@@ -13017,6 +13042,14 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 		return false;
 	}
 
+	// WTP, Slave Emancipation - START
+	// Do not check for freedom again while the unit is on cooldown.
+	if (GC.getGameINLINE().getGameTurn() < convUnit->getLbDFreeReadyTurn())
+	{
+		return false;
+	}
+	// WTP, Slave Emancipation - END
+
 	//cases criminal or servant
 	UnitClassTypes modcase = convUnit->getUnitInfo().getUnitClassType();
 
@@ -13084,6 +13117,23 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	{
 		return false;
 	}
+
+	// WTP, Slave Emancipation - START
+	if (isHuman() && (modcase == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE || modcase == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE))
+	{
+		const int iTrainPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+		const int iCooldownTurns = std::max(1, 30 * iTrainPercent / 100);
+
+		convUnit->setLbDFreeReadyTurn(GC.getGameINLINE().getGameTurn() + iCooldownTurns);
+
+		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRMTASK, getID(), convUnit->getID(), TASK_GRANT_FREEDOM);
+		pInfo->setText(gDLL->getText("TXT_KEY_LBD_GRANT_FREEDOM"));
+		gDLL->getInterfaceIFace()->lookAtCityOffset(getID());
+		gDLL->getInterfaceIFace()->addPopup(pInfo, getOwnerINLINE(), true, true);
+
+		return true;
+	}
+	// WTP, Slave Emancipation - END
 
 	// spawn the Unit
 	//ray16

@@ -288,4 +288,14 @@
 		<Russian>Запретить юниту использовать прямой путь</Russian>
 		<Hungarian>A egység nem használd egyenes útvonalat</Hungarian>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM</Tag>
+		<English>Grant Freedom</English>
+		<German>Freiheit gewähren</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_HELP</Tag>
+		<English>Grant this slave freedom.</English>
+		<German>Diesem Sklaven die Freiheit gewähren.</German>
+	</TEXT>
 </Civ4GameText>
