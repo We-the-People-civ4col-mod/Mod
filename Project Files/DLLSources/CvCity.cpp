@@ -4797,6 +4797,9 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 		CvString szTitle(gDLL->getText("TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE"));
 
 		gDLL->MessageBox(szDesc.c_str(), szTitle.c_str());
+
+		// Never allow negative non-food yield storage.
+		iValue = 0;
 	}
 
 	int iChange = iValue - getYieldStored(eYield);
