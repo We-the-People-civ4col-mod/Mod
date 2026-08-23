@@ -2850,24 +2850,33 @@ void CvUnitAI::AI_attackCityMove()
 	}
 
 	CvCity* pTargetCity = NULL;
+	const int iNearPathTurns = std::max(1, GC.getDefineINT("AI_STACK_ATTACK_NEAR_PATH_TURNS"));
 	if( isNative() )
 	{
-		pTargetCity = AI_pickTargetCity(0, 12);
+		pTargetCity = AI_pickTargetCity(0, iNearPathTurns);
 	}
 	else
 	{
-		// BBAI TODO: Find some way of reliably targetting nearby cities with less defense ...
-		pTargetCity = AI_pickTargetCity(0, MAX_INT, bHuntBarbs);
+		// 1. nearby city first (same path cap natives already used). far capital only if nothing is in range.
+		pTargetCity = AI_pickTargetCity(0, iNearPathTurns, bHuntBarbs);
+		if (pTargetCity == NULL)
+		{
+			pTargetCity = AI_pickTargetCity(0, MAX_INT, bHuntBarbs);
+		}
 	}
 
 	if( pTargetCity != NULL )
 	{
 		int iStepDistToTarget = stepDistance(pTargetCity->getX_INLINE(), pTargetCity->getY_INLINE(), getX_INLINE(), getY_INLINE());
-		int iAttackRatio = 120;
+		int iAttackRatio = GC.getDefineINT("AI_STACK_ATTACK_RATIO");
 
 		if( isNative() )
 		{
-			iAttackRatio = 80;
+			iAttackRatio = GC.getDefineINT("AI_NATIVE_STACK_ATTACK_RATIO");
+		}
+		if (iAttackRatio <= 0)
+		{
+			iAttackRatio = isNative() ? 80 : 120;
 		}
 
 		int iComparePostBombard = 0;
@@ -2930,7 +2939,6 @@ void CvUnitAI::AI_attackCityMove()
 					//stack attack
 					if (getGroup()->getNumUnits() > 1)
 					{
-						// BBAI TODO: What is right ratio?
 						if (AI_stackAttackCity(1, iAttackRatio, true))
 						{
 							return;
