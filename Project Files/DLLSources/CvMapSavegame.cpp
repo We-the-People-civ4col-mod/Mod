@@ -73,6 +73,8 @@ void CvMap::resetSavedData()
 	m_iNextRiverID      = defaultNextRiverID;
 	m_iGlobeviewPadX    = 0;
 	m_iGlobeviewPadY    = 0;
+	m_iGlobeviewPadWest = 0;
+	m_iGlobeviewPadSouth = 0;
 	m_bWrapX            = defaultWrapX;
 	m_bWrapY            = defaultWrapY;
 	m_bHasStream		= defaultHasStream;
@@ -132,11 +134,22 @@ void CvMap::read(CvSavegameReader reader)
 			const int iSavedHeight = m_iGridHeight;
 			applyGlobeviewSafeDimensions();
 			m_pMapPlots = new CvPlot[numPlotsINLINE()];
+			for (int iY = 0; iY < getGridHeightINLINE(); ++iY)
+			{
+				for (int iX = 0; iX < getGridWidthINLINE(); ++iX)
+				{
+					plotSoren(iX, iY)->init(iX, iY);
+				}
+			}
+			const int iWest = m_iGlobeviewPadWest;
+			const int iSouth = m_iGlobeviewPadSouth;
 			for (int iY = 0; iY < iSavedHeight; ++iY)
 			{
 				for (int iX = 0; iX < iSavedWidth; ++iX)
 				{
-					plotSoren(iX, iY)->read(reader);
+					CvPlot* pPlot = plotSoren(iX + iWest, iY + iSouth);
+					pPlot->read(reader);
+					pPlot->setCoordinates(iX + iWest, iY + iSouth);
 				}
 			}
 			applyGlobeviewPadPlotDefaults();

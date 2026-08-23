@@ -372,6 +372,9 @@ void CvUnit::read(CvSavegameReader reader)
 		}
 	}
 
+	GC.getMap().offsetGlobeviewCoordinates(m_coord);
+	GC.getMap().offsetGlobeviewCoordinates(m_iAttackPlotX, m_iAttackPlotY);
+
 	// The unit is loaded. Now set up the cache according to the read data.
 
 	FAssert(NO_UNIT != m_eUnitType);

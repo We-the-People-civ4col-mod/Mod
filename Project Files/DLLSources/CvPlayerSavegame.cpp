@@ -1014,6 +1014,8 @@ void CvPlayer::read(CvSavegameReader reader)
 		}
 	}
 
+	GC.getMap().offsetGlobeviewCoordinates(m_iStartingX, m_iStartingY);
+
 	// remove NO_UNIT from revolutionary units
 	// They are no longer possible to add, but savegames might still hold on to them
 	for (unsigned int i = 0; i < m_aEuropeRevolutionUnits.size();)

@@ -342,13 +342,17 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 
 // 1. EXE globe texture goes black on tall maps (Americas Gigantic 136x256).
 //    Issue #723 and Don_Drochilla: keep height/width around 1.45 at gigantic Y
-//    (1.72 on huge). Pad ocean on the east/south on new games AND on save load
-//    so the user does not have to edit the map file. Existing x,y stay valid.
-//    Extra ocean copies Europe from the old edge and joins the biggest water area.
+//    (1.72 on huge). Pad ocean on new games AND on save load so the user does
+//    not have to edit the map file.
+// 2. Split the extra columns on west AND east (rows on south AND north).
+//    East-only pad made east-coast starts sail farther to Europe.
+//    Unpadded saves shift plot/city/unit x,y by the west/south amount.
 void CvMap::applyGlobeviewSafeDimensions()
 {
 	m_iGlobeviewPadX = 0;
 	m_iGlobeviewPadY = 0;
+	m_iGlobeviewPadWest = 0;
+	m_iGlobeviewPadSouth = 0;
 
 	if (m_iGridWidth <= 0 || m_iGridHeight <= 0)
 	{
@@ -373,14 +377,80 @@ void CvMap::applyGlobeviewSafeDimensions()
 		if (m_iGridWidth < iNeededShort)
 		{
 			m_iGlobeviewPadX = iNeededShort - m_iGridWidth;
+			m_iGlobeviewPadWest = m_iGlobeviewPadX / 2;
 			m_iGridWidth = iNeededShort;
 		}
 	}
 	else if (m_iGridHeight < iNeededShort)
 	{
 		m_iGlobeviewPadY = iNeededShort - m_iGridHeight;
+		m_iGlobeviewPadSouth = m_iGlobeviewPadY / 2;
 		m_iGridHeight = iNeededShort;
 	}
+}
+
+int CvMap::getGlobeviewPadWest() const
+{
+	return m_iGlobeviewPadWest;
+}
+
+int CvMap::getGlobeviewPadSouth() const
+{
+	return m_iGlobeviewPadSouth;
+}
+
+void CvMap::offsetGlobeviewCoordinates(int& iX, int& iY) const
+{
+	if (m_iGlobeviewPadWest == 0 && m_iGlobeviewPadSouth == 0)
+	{
+		return;
+	}
+	if (iX == INVALID_PLOT_COORD || iY == INVALID_PLOT_COORD)
+	{
+		return;
+	}
+	if (iX < 0 || iY < 0)
+	{
+		return;
+	}
+	iX += m_iGlobeviewPadWest;
+	iY += m_iGlobeviewPadSouth;
+}
+
+void CvMap::offsetGlobeviewCoordinates(Coordinates& coord) const
+{
+	if (m_iGlobeviewPadWest == 0 && m_iGlobeviewPadSouth == 0)
+	{
+		return;
+	}
+	if (coord.isInvalidPlotCoord())
+	{
+		return;
+	}
+	int iX = coord.x();
+	int iY = coord.y();
+	offsetGlobeviewCoordinates(iX, iY);
+	coord.set(iX, iY);
+}
+
+bool CvMap::isGlobeviewPadPlot(int iX, int iY) const
+{
+	if (m_iGlobeviewPadX <= 0 && m_iGlobeviewPadY <= 0)
+	{
+		return false;
+	}
+
+	const int iOrigWidth = getGridWidthINLINE() - m_iGlobeviewPadX;
+	const int iOrigHeight = getGridHeightINLINE() - m_iGlobeviewPadY;
+	if (iX < m_iGlobeviewPadWest || iX >= m_iGlobeviewPadWest + iOrigWidth)
+	{
+		return true;
+	}
+	if (iY < m_iGlobeviewPadSouth || iY >= m_iGlobeviewPadSouth + iOrigHeight)
+	{
+		return true;
+	}
+	return false;
 }
 
 void CvMap::applyGlobeviewPadPlotDefaults()
@@ -390,14 +460,11 @@ void CvMap::applyGlobeviewPadPlotDefaults()
 		return;
 	}
 
-	const int iOrigWidth = getGridWidthINLINE() - m_iGlobeviewPadX;
-	const int iOrigHeight = getGridHeightINLINE() - m_iGlobeviewPadY;
-
 	for (int iX = 0; iX < getGridWidthINLINE(); iX++)
 	{
 		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
 		{
-			if (iX >= iOrigWidth || iY >= iOrigHeight)
+			if (isGlobeviewPadPlot(iX, iY))
 			{
 				CvPlot* pPlot = plotSoren(iX, iY);
 				pPlot->init(iX, iY);
@@ -416,12 +483,16 @@ void CvMap::applyGlobeviewPadEurope()
 
 	const int iOrigWidth = getGridWidthINLINE() - m_iGlobeviewPadX;
 	const int iOrigHeight = getGridHeightINLINE() - m_iGlobeviewPadY;
+	const int iWestEdge = m_iGlobeviewPadWest;
+	const int iEastEdge = m_iGlobeviewPadWest + iOrigWidth - 1;
+	const int iSouthEdge = m_iGlobeviewPadSouth;
+	const int iNorthEdge = m_iGlobeviewPadSouth + iOrigHeight - 1;
 
 	for (int iX = 0; iX < getGridWidthINLINE(); iX++)
 	{
 		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
 		{
-			if (iX < iOrigWidth && iY < iOrigHeight)
+			if (!isGlobeviewPadPlot(iX, iY))
 			{
 				continue;
 			}
@@ -433,13 +504,21 @@ void CvMap::applyGlobeviewPadEurope()
 			}
 
 			EuropeTypes eEurope = NO_EUROPE;
-			if (iX >= iOrigWidth && iOrigWidth > 0)
+			if (iX < iWestEdge && iOrigWidth > 0)
 			{
-				eEurope = plotSoren(iOrigWidth - 1, iY)->getEurope();
+				eEurope = plotSoren(iWestEdge, iY)->getEurope();
 			}
-			if (eEurope == NO_EUROPE && iY >= iOrigHeight && iOrigHeight > 0)
+			else if (iX > iEastEdge && iOrigWidth > 0)
 			{
-				eEurope = plotSoren(iX, iOrigHeight - 1)->getEurope();
+				eEurope = plotSoren(iEastEdge, iY)->getEurope();
+			}
+			if (eEurope == NO_EUROPE && iY < iSouthEdge && iOrigHeight > 0)
+			{
+				eEurope = plotSoren(iX, iSouthEdge)->getEurope();
+			}
+			if (eEurope == NO_EUROPE && iY > iNorthEdge && iOrigHeight > 0)
+			{
+				eEurope = plotSoren(iX, iNorthEdge)->getEurope();
 			}
 			if (eEurope != NO_EUROPE)
 			{
@@ -463,14 +542,12 @@ void CvMap::applyGlobeviewPadAreas()
 	}
 
 	const int iArea = pWaterArea->getID();
-	const int iOrigWidth = getGridWidthINLINE() - m_iGlobeviewPadX;
-	const int iOrigHeight = getGridHeightINLINE() - m_iGlobeviewPadY;
 
 	for (int iX = 0; iX < getGridWidthINLINE(); iX++)
 	{
 		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
 		{
-			if (iX < iOrigWidth && iY < iOrigHeight)
+			if (!isGlobeviewPadPlot(iX, iY))
 			{
 				continue;
 			}
