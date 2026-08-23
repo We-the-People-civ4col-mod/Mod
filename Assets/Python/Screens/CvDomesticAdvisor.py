@@ -361,11 +361,14 @@ class CvDomesticAdvisor:
 		return False
 
 	def getWaitingProductionNames(self, pCity):
-		# 1. WTP keeps hammers when you switch production. Schmiddie: also
-		#    flag those parked buildings/units when they still need cargo.
+		# WTP keeps hammers when production is switched.
+		# Only list parked buildings/units whose required hammer production is complete
+		# and whose production can still be continued by this city.
+		pPlayer = gc.getPlayer(pCity.getOwner())
 		aNames = []
 		iCurrentBuilding = -1
 		iCurrentUnit = -1
+
 		if pCity.isProductionBuilding():
 			iCurrentBuilding = pCity.getProductionBuilding()
 		elif pCity.isProductionUnit():
@@ -376,18 +379,44 @@ class CvDomesticAdvisor:
 				continue
 			if pCity.isHasBuilding(iBuilding):
 				continue
-			if pCity.getBuildingProduction(iBuilding) <= 0:
+
+			iProduction = pCity.getBuildingProduction(iBuilding)
+			if iProduction <= 0:
 				continue
+
+			iNeeded = pPlayer.getBuildingYieldProductionNeeded(iBuilding, YieldTypes.YIELD_HAMMERS)
+			if iProduction < iNeeded:
+				continue
+
+			if not pCity.canConstruct(iBuilding, True, False, True):
+				continue
+
+			szName = gc.getBuildingInfo(iBuilding).getDescription()
 			if self.productionNeedsCargo(pCity, iBuilding, True):
-				aNames.append(gc.getBuildingInfo(iBuilding).getDescription())
+				szName = "<color=255,0,0>" + szName + "</color>"
+
+			aNames.append(szName)
 
 		for iUnit in range(gc.getNumUnitInfos()):
 			if iUnit == iCurrentUnit:
 				continue
-			if pCity.getUnitProduction(iUnit) <= 0:
+
+			iProduction = pCity.getUnitProduction(iUnit)
+			if iProduction <= 0:
 				continue
+
+			iNeeded = pPlayer.getUnitYieldProductionNeeded(iUnit, YieldTypes.YIELD_HAMMERS)
+			if iProduction < iNeeded:
+				continue
+
+			if not pCity.canTrain(iUnit, True, False):
+				continue
+
+			szName = gc.getUnitInfo(iUnit).getDescription()
 			if self.productionNeedsCargo(pCity, iUnit, False):
-				aNames.append(gc.getUnitInfo(iUnit).getDescription())
+				szName = "<color=255,0,0>" + szName + "</color>"
+
+			aNames.append(szName)
 
 		return aNames
 
@@ -460,7 +489,7 @@ class CvDomesticAdvisor:
 			if len(aWaiting) > 0:
 				if szText != "":
 					szText = szText + " "
-				szText = szText + "<color=255,0,0>[" + u", ".join(aWaiting) + "]</color>"
+				szText = szText + "[" + u", ".join(aWaiting) + "]"
 			screen.setTableText(szState + "ListBackground", 17, i, "<font=2>" + szText + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 		elif(self.CurrentState == self.PRODUCTION_STATE):
