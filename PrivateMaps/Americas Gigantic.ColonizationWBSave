@@ -1563,6 +1563,7 @@ BeginMap
 	Randomize Features=true
 	Randomize Resources=true
 	Randomize Goodies=true
+	City Catchment Radius=2
 EndMap
 
 ### Plot Info ###
