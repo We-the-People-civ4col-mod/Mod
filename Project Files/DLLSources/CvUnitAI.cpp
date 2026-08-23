@@ -2850,14 +2850,32 @@ void CvUnitAI::AI_attackCityMove()
 	}
 
 	CvCity* pTargetCity = NULL;
-	const int iNearPathTurns = std::max(1, GC.getDefineINT("AI_STACK_ATTACK_NEAR_PATH_TURNS"));
+	// 1. XML is the Standard-map nearby path cap (turns, not tiles). scale by actual map height
+	//    so huge/gigantic still see a local city before falling back to a far capital.
+	int iNearPathTurns = GC.getDefineINT("AI_STACK_ATTACK_NEAR_PATH_TURNS");
+	if (iNearPathTurns <= 0)
+	{
+		iNearPathTurns = 12;
+	}
+	{
+		const int iStdHeight = std::max(1, GC.getWorldInfo(WORLDSIZE_STANDARD).getGridHeight());
+		const int iMapHeight = std::max(1, GC.getMap().getGridHeightINLINE());
+		iNearPathTurns = (iNearPathTurns * iMapHeight + iStdHeight / 2) / iStdHeight;
+		if (iNearPathTurns < 8)
+		{
+			iNearPathTurns = 8;
+		}
+		else if (iNearPathTurns > 24)
+		{
+			iNearPathTurns = 24;
+		}
+	}
 	if( isNative() )
 	{
 		pTargetCity = AI_pickTargetCity(0, iNearPathTurns);
 	}
 	else
 	{
-		// 1. nearby city first (same path cap natives already used). far capital only if nothing is in range.
 		pTargetCity = AI_pickTargetCity(0, iNearPathTurns, bHuntBarbs);
 		if (pTargetCity == NULL)
 		{
