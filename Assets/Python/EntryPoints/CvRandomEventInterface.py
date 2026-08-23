@@ -28204,12 +28204,7 @@ def applyThreeGalleonsRewardShip(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	(city, iter) = player.firstCity(True)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpThreeGalleonsRewardShip(argsList):
