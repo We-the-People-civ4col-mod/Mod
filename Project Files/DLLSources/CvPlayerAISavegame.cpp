@@ -290,9 +290,21 @@ void CvPlayerAI::read(CvSavegameReader reader)
 		case PlayerSaveAI_StrategyData: reader.Read(m_em_iStrategyData); break;
 		}
 	}
-	
-	// Loading done. Set up the cache (if any).
 
+	if (GC.getMap().hasGlobeviewOriginOffset())
+	{
+		AI_invalidateDistanceMap();
+		m_distanceMap.clear();
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+		{
+			m_em_iBestWorkedYieldPlots.set(eYield, GC.getMap().remapGlobeviewSavedPlotIndex(m_em_iBestWorkedYieldPlots.get(eYield)));
+			m_em_iBestUnworkedYieldPlots.set(eYield, GC.getMap().remapGlobeviewSavedPlotIndex(m_em_iBestUnworkedYieldPlots.get(eYield)));
+		}
+		for (unsigned int i = 0; i < m_aiAICitySites.size(); ++i)
+		{
+			m_aiAICitySites[i] = GC.getMap().remapGlobeviewSavedPlotIndex(m_aiAICitySites[i]);
+		}
+	}
 }
 
 void CvPlayerAI::write(CvSavegameWriter writer)

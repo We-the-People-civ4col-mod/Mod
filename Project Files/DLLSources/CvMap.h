@@ -212,8 +212,10 @@ public:
 
 	int getGlobeviewPadWest() const;
 	int getGlobeviewPadSouth() const;
+	bool hasGlobeviewOriginOffset() const;
 	void offsetGlobeviewCoordinates(int& iX, int& iY) const;
 	void offsetGlobeviewCoordinates(Coordinates& coord) const;
+	int remapGlobeviewSavedPlotIndex(int iOldPlot) const;
 
 	int getLandPlots() const;
 	void changeLandPlots(int iChange);

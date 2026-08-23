@@ -95,7 +95,9 @@ void CvSelectionGroupAI::read(CvSavegameReader reader)
 		case SelectionGroupAISave_GroupAttackY: reader.Read(m_iGroupAttackY); break;
 		}
 	}
-	
+
+	GC.getMap().offsetGlobeviewCoordinates(m_iMissionAIX, m_iMissionAIY);
+	GC.getMap().offsetGlobeviewCoordinates(m_iGroupAttackX, m_iGroupAttackY);
 }
 
 void CvSelectionGroupAI::write(CvSavegameWriter writer)

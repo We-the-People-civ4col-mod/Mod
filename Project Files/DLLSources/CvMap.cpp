@@ -399,6 +399,39 @@ int CvMap::getGlobeviewPadSouth() const
 	return m_iGlobeviewPadSouth;
 }
 
+bool CvMap::hasGlobeviewOriginOffset() const
+{
+	return (m_iGlobeviewPadWest != 0 || m_iGlobeviewPadSouth != 0);
+}
+
+int CvMap::remapGlobeviewSavedPlotIndex(int iOldPlot) const
+{
+	if (iOldPlot < 0)
+	{
+		return iOldPlot;
+	}
+	if (m_iGlobeviewPadWest == 0 && m_iGlobeviewPadSouth == 0)
+	{
+		return iOldPlot;
+	}
+
+	const int iOrigWidth = getGridWidthINLINE() - m_iGlobeviewPadX;
+	const int iOrigHeight = getGridHeightINLINE() - m_iGlobeviewPadY;
+	if (iOrigWidth <= 0)
+	{
+		return -1;
+	}
+
+	const int iX = iOldPlot % iOrigWidth;
+	const int iY = iOldPlot / iOrigWidth;
+	if (iX < 0 || iX >= iOrigWidth || iY < 0 || iY >= iOrigHeight)
+	{
+		return -1;
+	}
+
+	return plotNumINLINE(iX + m_iGlobeviewPadWest, iY + m_iGlobeviewPadSouth);
+}
+
 void CvMap::offsetGlobeviewCoordinates(int& iX, int& iY) const
 {
 	if (m_iGlobeviewPadWest == 0 && m_iGlobeviewPadSouth == 0)
