@@ -582,6 +582,26 @@
 		<iDefineIntVal>75</iDefineIntVal>
 	</Define>
 	<Define>
+		<DefineName>NATIVE_MIN_FOOD_WORKERS_PER_CITY</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>NATIVE_MILITARY_INITIAL_UNITS_PER_CITY</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>NATIVE_MILITARY_INITIAL_UNITS_PER_CITY_BORDER_CONTACT</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>NATIVE_MILITARY_UNIT_CAP</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>NATIVE_MILITARY_UNIT_CAP_BORDER_CONTACT</DefineName>
+		<iDefineIntVal>30</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>STIR_UP_BASE_CHANCE</DefineName>
 		<iDefineIntVal>30</iDefineIntVal>
 	</Define>

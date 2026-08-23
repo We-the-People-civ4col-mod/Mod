@@ -169,6 +169,8 @@ public:
 	int AI_unitValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea);
 	int AI_unitGoldValue(UnitTypes eUnit, UnitAITypes eUnitAI, CvArea* pArea) const;
 	int AI_unitValuePercent(UnitTypes eUnit, UnitAITypes* peUnitAI, CvArea* pArea);
+	bool AI_isNativeMilitaryUnitCapReached(); // WTP, Schmiddie, Native military cap
+	bool AI_hasNativeColonialBorderContact() const; // WTP, Schmiddie, Native military cap
 	int AI_totalUnitAIs(UnitAITypes eUnitAI);
 	int AI_totalAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI);
 	int AI_totalWaterAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI);

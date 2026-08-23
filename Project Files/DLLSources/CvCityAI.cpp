@@ -537,13 +537,18 @@ void CvCityAI::AI_chooseProduction()
 		return;
 	}
 
+	// WTP, Schmiddie, Native military unit cap START
 	if (isNative())
 	{
-		if (AI_chooseUnit(UNITAI_DEFENSIVE, false))
+		if (!kPlayer.AI_isNativeMilitaryUnitCapReached())
 		{
-			return;
+			if (AI_chooseUnit(UNITAI_DEFENSIVE, false))
+			{
+				return;
+			}
 		}
 	}
+	// WTP, Schmiddie, Native military unit cap END
 
 	if (AI_chooseUnit(NO_UNITAI, false))
 	{
@@ -702,6 +707,15 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 		}
 	}
 	// TAC - AI Training - koma13 - END
+
+	// WTP, Schmiddie, Native military unit cap START
+	if (GET_PLAYER(getOwnerINLINE()).AI_isNativeMilitaryUnitCapReached())
+	{
+		aiUnitAIVal[UNITAI_DEFENSIVE] = 0;
+		aiUnitAIVal[UNITAI_OFFENSIVE] = 0;
+		aiUnitAIVal[UNITAI_COUNTER] = 0;
+	}
+	// WTP, Schmiddie, Native military unit cap END
 
 	for (UnitAITypes eUnitAI = FIRST_UNITAI; eUnitAI < NUM_UNITAI_TYPES; ++eUnitAI)
 	{
@@ -3292,7 +3306,7 @@ struct BestJob
 // Note: cannot be a member since it must be called from the functor
 BestJob AI_findBestJob(const CvCityAI& kCity, ProfessionTypes eProfession, const CvUnit& kUnit, bool bIndoorOnly)
 {
-	int iBestValue = 0;
+	int iBestValue = -1;
 	CityPlotTypes eBestPlot = NO_CITY_PLOT;
 	ProfessionTypes eBestProfession = NO_PROFESSION;
 
@@ -3476,13 +3490,92 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 
 	FAssertMsg(rngStatePrior == rngStatePost, "It looks like at least one random number has been generated between the invokation of tbb::* !");
 
-	const int iBestValue = fbj.bestJob.iBestValue;
-	const CityPlotTypes eBestPlot = (CityPlotTypes)fbj.bestJob.iBestPlot;
-	const ProfessionTypes eBestProfession = fbj.bestJob.eBestProfession;
+	int iBestValue = fbj.bestJob.iBestValue;
+	CityPlotTypes eBestPlot = (CityPlotTypes)fbj.bestJob.iBestPlot;
+	ProfessionTypes eBestProfession = fbj.bestJob.eBestProfession;
 
 	// Do the regular serial code here
 
 	jobMutex.lock();
+
+	// WTP, Schmiddie, Native citizen fallback START
+	if (eBestProfession == NO_PROFESSION && isNative() && !bIndoorOnly)
+	{
+		int iNativeBestValue = MIN_INT;
+		CityPlotTypes eNativeBestPlot = NO_CITY_PLOT;
+		ProfessionTypes eNativeBestProfession = NO_PROFESSION;
+
+		FOREACH(CityPlot)
+		{
+			if (eLoopCityPlot == CITY_HOME_PLOT)
+			{
+				continue;
+			}
+
+			if (isPlotProducingYields(eLoopCityPlot))
+			{
+				continue;
+			}
+
+			CvPlot* pLoopPlot = getCityIndexPlot(eLoopCityPlot);
+
+			if (pLoopPlot == NULL)
+			{
+				continue;
+			}
+
+			if (!canWork(pLoopPlot))
+			{
+				continue;
+			}
+
+			for (ProfessionTypes eLoopProfession = FIRST_PROFESSION; eLoopProfession < NUM_PROFESSION_TYPES; ++eLoopProfession)
+			{
+				const CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
+
+				if (!kProfession.isCitizen())
+				{
+					continue;
+				}
+
+				if (!kProfession.isWorkPlot())
+				{
+					continue;
+				}
+
+				if (!GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession))
+				{
+					continue;
+				}
+
+				if (!kUnit.canHaveProfession(eLoopProfession, false))
+				{
+					continue;
+				}
+
+				const int iValue = AI_citizenProfessionValue(
+					eLoopProfession,
+					kUnit,
+					pLoopPlot,
+					NULL);
+
+				if (iValue > iNativeBestValue)
+				{
+					iNativeBestValue = iValue;
+					eNativeBestProfession = eLoopProfession;
+					eNativeBestPlot = eLoopCityPlot;
+				}
+			}
+		}
+
+		if (eNativeBestProfession != NO_PROFESSION && eNativeBestPlot != NO_CITY_PLOT)
+		{
+			iBestValue = iNativeBestValue;
+			eBestProfession = eNativeBestProfession;
+			eBestPlot = eNativeBestPlot;
+		}
+	}
+	// WTP, Schmiddie, Native citizen fallback END
 
 	if (eBestProfession == NO_PROFESSION)
 	{
@@ -3506,17 +3599,17 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 		{
 			pDisplacedUnit = AI_getWorstProfessionUnit(eBestProfession);
 			FAssert(pDisplacedUnit != NULL);
-			// TAC - AI Economy - koma13 - STARTf
+
 			const int iCurrentProfessionValue = AI_citizenProfessionValue(eBestProfession, kUnit, NULL, pDisplacedUnit);
 			const int iDisplacedUnitProfessionValue = AI_citizenProfessionValue(pDisplacedUnit->getProfession(), *pDisplacedUnit, NULL, NULL);
+
 			FAssert(iCurrentProfessionValue > iDisplacedUnitProfessionValue);
-			// TAC - AI Economy - koma13 - END
 			if (iCurrentProfessionValue <= iDisplacedUnitProfessionValue)
 			{
 				while (true)
 				{
 					volatile int iCurrentProfessionValue = AI_citizenProfessionValue(eBestProfession, kUnit, NULL, pDisplacedUnit);
- 					volatile int iDisplacedUnitProfessionValue = AI_citizenProfessionValue(pDisplacedUnit->getProfession(), *pDisplacedUnit, NULL, NULL);
+					volatile int iDisplacedUnitProfessionValue = AI_citizenProfessionValue(pDisplacedUnit->getProfession(), *pDisplacedUnit, NULL, NULL);
 				}
 			}
 		}
@@ -3530,7 +3623,7 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 		{
 			pDisplacedUnit = getUnitWorkingPlot(eBestPlot);
 			FAssert(pDisplacedUnit != NULL);
-			// TAC - AI Economy - koma13 - START
+
 			const int iCurrentProfessionValue = AI_citizenProfessionValue(eBestProfession, kUnit, getCityIndexPlot(eBestPlot), pDisplacedUnit);
 			const int iDisplacedUnitProfessionValue = AI_citizenProfessionValue(pDisplacedUnit->getProfession(), *pDisplacedUnit, getCityIndexPlot(eBestPlot), NULL);
 
@@ -3539,11 +3632,11 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 			{
 				while (true)
 				{
-					 volatile int iCurrentProfessionValue = AI_citizenProfessionValue(eBestProfession, kUnit, getCityIndexPlot(eBestPlot), pDisplacedUnit);
-					 volatile int iDisplacedUnitProfessionValue = AI_citizenProfessionValue(pDisplacedUnit->getProfession(), *pDisplacedUnit, getCityIndexPlot(eBestPlot), NULL);
+					volatile int iCurrentProfessionValue = AI_citizenProfessionValue(eBestProfession, kUnit, getCityIndexPlot(eBestPlot), pDisplacedUnit);
+					volatile int iDisplacedUnitProfessionValue = AI_citizenProfessionValue(pDisplacedUnit->getProfession(), *pDisplacedUnit, getCityIndexPlot(eBestPlot), NULL);
 				}
 			}
-			// TAC - AI Economy - koma13 - END
+
 			clearUnitWorkingPlot(eBestPlot);
 		}
 	}
@@ -3567,7 +3660,6 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 	jobMutex.unlock();
 
 	return pDisplacedUnit;
-
 }
 
 //Returns the displaced unit, if any.

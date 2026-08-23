@@ -5807,6 +5807,80 @@ int CvPlayerAI::AI_totalUnitAIs(UnitAITypes eUnitAI)
 }
 
 
+// WTP, Schmiddie, Native military unit cap START
+bool CvPlayerAI::AI_hasNativeColonialBorderContact() const
+{
+	if (!isNative())
+	{
+		return false;
+	}
+
+	for (int iPlot = 0; iPlot < GC.getMap().numPlotsINLINE(); ++iPlot)
+	{
+		CvPlot* pPlot = GC.getMap().plotByIndexINLINE(iPlot);
+
+		if (pPlot == NULL || pPlot->getOwnerINLINE() != getID())
+		{
+			continue;
+		}
+
+		for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; ++iDirection)
+		{
+			CvPlot* pAdjacentPlot = plotDirection(
+				pPlot->getX_INLINE(),
+				pPlot->getY_INLINE(),
+				(DirectionTypes)iDirection);
+
+			if (pAdjacentPlot == NULL)
+			{
+				continue;
+			}
+
+			const PlayerTypes eAdjacentOwner = pAdjacentPlot->getOwnerINLINE();
+
+			if (eAdjacentOwner != NO_PLAYER &&
+				GET_PLAYER(eAdjacentOwner).is(CIV_CATEGORY_COLONIAL))
+			{
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+bool CvPlayerAI::AI_isNativeMilitaryUnitCapReached()
+{
+	if (!isNative())
+	{
+		return false;
+	}
+
+	const int iMilitaryUnitCount =
+		AI_totalUnitAIs(UNITAI_DEFENSIVE) +
+		AI_totalUnitAIs(UNITAI_OFFENSIVE) +
+		AI_totalUnitAIs(UNITAI_COUNTER);
+
+	const int iBaseCap =
+		GC.getDefineINT("NATIVE_MILITARY_UNIT_CAP");
+
+	const int iBorderContactCap =
+		GC.getDefineINT("NATIVE_MILITARY_UNIT_CAP_BORDER_CONTACT");
+
+	if (iMilitaryUnitCount < iBaseCap)
+	{
+		return false;
+	}
+
+	if (iMilitaryUnitCount >= iBorderContactCap)
+	{
+		return true;
+	}
+
+	return !AI_hasNativeColonialBorderContact();
+}
+// WTP, Schmiddie, Native military unit cap END
+
+
 int CvPlayerAI::AI_totalAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI)
 {
 	return (pArea->getNumTrainAIUnits(getID(), eUnitAI) + pArea->getNumAIUnits(getID(), eUnitAI));
@@ -8719,6 +8793,7 @@ void CvPlayerAI::AI_doProfessions()
 						{
 							pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pBestUnit, false, eProfession);
 							pBestUnit->AI_setUnitAIType(UNITAI_DEFENSIVE);
+
 							if (gPlayerLogLevel >= 1) logBBAI(" Player (%S)'s City (%S) emits military Unit (%S)",
 								getCivilizationDescription(), pLoopCity->getNameKey(), pBestUnit->getNameAndProfession().GetCString());
 						}
@@ -10656,20 +10731,22 @@ void CvPlayerAI::AI_createNatives()
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 
-		int iExtraPop = std::max(1, ((getNumCities() - iCount) * 3) / getNumCities());
+		int iExtraPop = std::max(3, ((getNumCities() - iCount) * 3) / getNumCities());
 
 		if (iCount == 0)
 		{
 			iExtraPop++;
 		}
 
-		//Require a certain minimum food surplus.
-		while ((pLoopCity->AI_getFoodGatherable(1 + iExtraPop, GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION) / 2) < GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION * (1 + iExtraPop))
+		// Require a certain minimum food surplus.
+		while ((pLoopCity->AI_getFoodGatherable(iExtraPop, GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION) / 2)
+			< GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION * iExtraPop)
 		{
 			iExtraPop--;
-			if (iExtraPop == 0)
+
+			if (iExtraPop <= 3)
 			{
-				iExtraPop = 1;
+				iExtraPop = 3;
 				break;
 			}
 		}
