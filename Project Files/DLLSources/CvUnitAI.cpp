@@ -3668,31 +3668,45 @@ void CvUnitAI::AI_defensiveBraveMove()
 		}
 	}
 
-	// 1. After cultural pressure abandons a village, every brave used to
-	//    AI_group(UNITAI_DEFENSIVE) with no size/path cap, so the whole tribe
-	//    became one roaming stack. Find a new home first, then only form a
-	//    small local warband.
+	// After losing their home village, Braves first try to find another
+	// existing village. If none exists, one unit will rebuild the tribe
+	// while the remaining homeless Braves wait for a new home.
 	if (getHomeCity() == NULL)
 	{
 		if (AI_findNewHomeColony())
 		{
 			return;
 		}
-		kill(true);
+
+		// Do not allow homeless Braves to form a roaming doomstack
+		// while another unit is rebuilding the tribe.
+		AI_breakOversizedNativeDefensiveGroup();
+
+		if (AI_safety())
+		{
+			return;
+		}
+
+		getGroup()->pushMission(MISSION_SKIP);
 		return;
 	}
 
-	AI_breakOversizedNativeDefensiveGroup();
-
-	int iMaxNativeGroup = GC.getDefineINT("NATIVE_DEFENSIVE_GROUP_MAX");
-	if (iMaxNativeGroup < 1)
+	// Raiding parties use their own movement logic above and must not be
+	// split or limited by the ordinary defensive brave group cap.
+	if (AI_getUnitAIState() != UNITAI_STATE_RAIDING_PARTY)
 	{
-		iMaxNativeGroup = 5;
-	}
+		AI_breakOversizedNativeDefensiveGroup();
 
-	if (AI_group(UNITAI_DEFENSIVE, iMaxNativeGroup, -1, -1, false, false, false, 1))
-	{
-		return;
+		int iMaxNativeGroup = GC.getDefineINT("NATIVE_DEFENSIVE_GROUP_MAX");
+		if (iMaxNativeGroup < 1)
+		{
+			iMaxNativeGroup = 10;
+		}
+
+		if (AI_group(UNITAI_DEFENSIVE, iMaxNativeGroup, -1, -1, false, false, false, 1))
+		{
+			return;
+		}
 	}
 
 	if (AI_guardHomeColony())

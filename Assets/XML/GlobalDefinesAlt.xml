@@ -486,7 +486,7 @@
 		     after a village was abandoned they all joined one roaming stack. keep
 		     warbands small. -->
 		<DefineName>NATIVE_DEFENSIVE_GROUP_MAX</DefineName>
-		<iDefineIntVal>5</iDefineIntVal>
+		<iDefineIntVal>10</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>BASE_CHANCE_EUROPE_PEACE</DefineName>
