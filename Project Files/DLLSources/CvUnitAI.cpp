@@ -5617,7 +5617,25 @@ void CvUnitAI::AI_assaultSeaMove()
 
 			FAssert(getGroup()->hasCargo());
 
-			//BBAI TODO: Check that group has escorts, otherwise usually wait
+			// 1. do not sail an invasion with zero escorts when the water is contested.
+			iEscorts = getGroup()->countNumUnitAIType(UNITAI_ESCORT_SEA) + getGroup()->countNumUnitAIType(UNITAI_COMBAT_SEA);
+			if (iEscorts == 0)
+			{
+				if (AI_group(UNITAI_ESCORT_SEA, -1, -1, -1, true, false, false, /*iMaxPath*/ 2))
+				{
+					return;
+				}
+				if (AI_group(UNITAI_COMBAT_SEA, -1, -1, -1, true, false, false, /*iMaxPath*/ 2))
+				{
+					return;
+				}
+
+				if (GET_PLAYER(getOwnerINLINE()).AI_getWaterDanger(plot(), 4, false) > 0)
+				{
+					getGroup()->pushMission(MISSION_SKIP);
+					return;
+				}
+			}
 
 			if( bAttack )
 			{
@@ -17964,6 +17982,17 @@ bool CvUnitAI::AI_moveToStagingCity()
 		eTargetTeam = NO_TEAM;
 	}
 
+	int iHighestThreat = 0;
+	if ((area()->getAreaAIType(getTeam()) == AREAAI_ASSAULT) || (area()->getAreaAIType(getTeam()) == AREAAI_ASSAULT_MASSING))
+	{
+		for (pLoopCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
+		{
+			if (pLoopCity->area() == area())
+			{
+				iHighestThreat = std::max(iHighestThreat, pLoopCity->AI_cityThreat());
+			}
+		}
+	}
 
 	for (pLoopCity = GET_PLAYER(getOwnerINLINE()).firstCity(&iLoop); pLoopCity != NULL; pLoopCity = GET_PLAYER(getOwnerINLINE()).nextCity(&iLoop))
 	{
@@ -17971,9 +18000,8 @@ bool CvUnitAI::AI_moveToStagingCity()
 		// BBAI efficiency: check same area
 		if ((pLoopCity->area() == area()) && AI_plotValid(pLoopCity->plot()))
 		{
-			// BBAI TODO: Need some knowledge of whether this is a good city to attack from ... only get that
-			// indirectly from threat.
-			iValue = pLoopCity->AI_cityThreat();
+			const int iThreat = pLoopCity->AI_cityThreat();
+			iValue = iThreat;
 
 			// Have attack stacks in assault areas move to coastal cities for faster loading
 			if( (area()->getAreaAIType(getTeam()) == AREAAI_ASSAULT) || (area()->getAreaAIType(getTeam()) == AREAAI_ASSAULT_MASSING) )
@@ -17981,10 +18009,14 @@ bool CvUnitAI::AI_moveToStagingCity()
 				CvArea* pWaterArea = pLoopCity->waterArea();
 				if( pWaterArea != NULL && GET_TEAM(getTeam()).AI_isWaterAreaRelevant(pWaterArea) )
 				{
-					// BBAI TODO:  Need a better way to determine which cities should serve as invasion launch locations
-
-					// Inertia so units don't just chase transports around the map
-					iValue = iValue/2;
+					// 1. sieged ports look "important" because threat is the base score. they are a bad place to load.
+					//    keep transport/escort inertia so stacks do not ping-pong. quiet facing ports get a small floor.
+					iValue = iThreat/2;
+					iValue += 20;
+					if (iHighestThreat > 0 && iThreat == iHighestThreat)
+					{
+						iValue /= 4;
+					}
 					if( pLoopCity->area()->getAreaAIType(getTeam()) == AREAAI_ASSAULT )
 					{
 						// If in assault, transports may be at sea ... tend to stay where they left from
