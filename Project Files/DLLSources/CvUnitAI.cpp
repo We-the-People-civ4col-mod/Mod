@@ -2858,7 +2858,11 @@ void CvUnitAI::AI_attackCityMove()
 		iNearPathTurns = 12;
 	}
 	{
-		const int iStdHeight = 64; // WORLDSIZE_STANDARD iGridHeight
+		// 2. 64 is WORLDSIZE_STANDARD iGridHeight in CIV4WorldInfo.xml. do not call
+		//    GC.getWorldInfo(WORLDSIZE_STANDARD).getGridHeight() from this cpp:
+		//    WORLDSIZE_STANDARD is an AutoXml enum and is not declared here. VC++ 2003
+		//    then fails C2065 and the std::max line after it.
+		const int iStdHeight = 64;
 		const int iMapHeight = std::max(1, GC.getMap().getGridHeightINLINE());
 		iNearPathTurns = (iNearPathTurns * iMapHeight + iStdHeight / 2) / iStdHeight;
 		if (iNearPathTurns < 8)
