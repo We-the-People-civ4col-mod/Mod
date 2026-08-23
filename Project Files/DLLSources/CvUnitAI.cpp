@@ -2858,7 +2858,7 @@ void CvUnitAI::AI_attackCityMove()
 		iNearPathTurns = 12;
 	}
 	{
-		const int iStdHeight = std::max(1, GC.getWorldInfo(WORLDSIZE_STANDARD).getGridHeight());
+		const int iStdHeight = 64; // WORLDSIZE_STANDARD iGridHeight
 		const int iMapHeight = std::max(1, GC.getMap().getGridHeightINLINE());
 		iNearPathTurns = (iNearPathTurns * iMapHeight + iStdHeight / 2) / iStdHeight;
 		if (iNearPathTurns < 8)
