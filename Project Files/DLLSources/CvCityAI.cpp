@@ -4856,7 +4856,10 @@ void CvCityAI::AI_updateNeededYields()
 					{
 						if (AI_getYieldAdvantage(eYieldProduced) == 100)
 						{
-							m_em_iNeededYield.set(eYieldProduced, branchless::max(m_em_iNeededYield.get(eYieldProduced), getNumProfessionBuildingSlots(eLoopProfession) * getProfessionInput(eLoopProfession, NULL)));
+							// 1. this used to write the OUTPUT yield (cloth, muskets).
+							//    needed yield is the INPUT the slots consume (cotton, ore).
+							const int iInputNeed = getNumProfessionBuildingSlots(eLoopProfession) * getProfessionInput(eLoopProfession, NULL);
+							m_em_iNeededYield.set(eYieldConsumed, branchless::max(m_em_iNeededYield.get(eYieldConsumed), iInputNeed));
 						}
 					}
 				}
@@ -6467,8 +6470,8 @@ bool CvCityAI::AI_isMajorCity() const
 }
 
 
-// Choose the yield with the highest export value for the city plot
-// TODO: Extend this by considering deficit input yields for slotworkers
+// Choose the yield with the highest export value for the city plot.
+// 1. also boost yields indoor jobs are short of, when the center can grow them.
 void CvCityAI::AI_assignCityPlot()
 {
 	// Natives are not supported yet
@@ -6486,6 +6489,7 @@ void CvCityAI::AI_assignCityPlot()
 	YieldTypes eBestYield = NO_YIELD;
 
 	const CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
+	const int iDeficitWeight = GC.getDefineINT("AI_CITY_PLOT_DEFICIT_WEIGHT");
 
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
@@ -6493,7 +6497,13 @@ void CvCityAI::AI_assignCityPlot()
 
 		if (iYield > 0)
 		{
-			const int iValue = kPlayer.AI_getYieldBestExportPrice(eYield) * iYield;
+			int iValue = kPlayer.AI_getYieldBestExportPrice(eYield) * iYield;
+			const int iNeed = AI_getNeededYield(eYield);
+			const int iHave = getYieldStored(eYield) + getRawYieldProduced(eYield);
+			if (iNeed > iHave)
+			{
+				iValue += (iNeed - iHave) * iDeficitWeight * iYield;
+			}
 
 			if (iValue > iBestValue)
 			{

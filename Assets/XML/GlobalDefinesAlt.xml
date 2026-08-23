@@ -482,6 +482,13 @@
 		<iDefineIntVal>32</iDefineIntVal>
 	</Define>
 	<Define>
+		<!-- 1. city-center crop used to be export-price only. this multiplies
+		     the missing indoor-input amount so a short ore/cotton/tobacco can
+		     beat a richer cash crop when the center tile can grow it. -->
+		<DefineName>AI_CITY_PLOT_DEFICIT_WEIGHT</DefineName>
+		<iDefineIntVal>30</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>BASE_CHANCE_EUROPE_PEACE</DefineName>
 		<iDefineIntVal>500</iDefineIntVal>
 	</Define>
