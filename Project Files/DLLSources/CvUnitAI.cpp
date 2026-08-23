@@ -3007,24 +3007,23 @@ void CvUnitAI::AI_attackCityMove()
 		return;
 	}
 
-	// BBAI TODO: Stack v stack combat ... definitely want to do in own territory, but what about enemy territory?
-	/*
-	if (collateralDamage() > 0 && plot()->getOwnerINLINE() == getOwnerINLINE())
+	// 1. own-land stack vs stack only. BTS gated this on collateralDamage (catapults).
+	//    colonial stacks are dragoons/infantry, so that gate would never fire. enemy land stays on the old 60% anyAttack.
+	if (plot()->getOwnerINLINE() == getOwnerINLINE() && getGroup()->getNumUnits() >= 3)
 	{
-		if (AI_anyAttack(1, 45, 3, false))
+		if (AI_anyAttack(1, 45, 3, false, false))
 		{
 			return;
 		}
 
-		if( !bReadyToAttack )
+		if (!bReadyToAttack)
 		{
-			if (AI_anyAttack(1, 25, 5, false))
+			if (AI_anyAttack(1, 25, 5, false, false))
 			{
 				return;
 			}
 		}
 	}
-	*/
 
 	if (AI_anyAttack(1, 60, 0, false, false))
 	{
