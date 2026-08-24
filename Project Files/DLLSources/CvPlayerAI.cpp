@@ -3980,6 +3980,37 @@ int CvPlayerAI::AI_militaryHelp(PlayerTypes ePlayer, int& iNumUnits, UnitTypes& 
 	return kPlayer.getEuropeUnitBuyPrice(eUnit) * GC.getDefineINT("KING_BUY_UNIT_PRICE_MODIFIER") / 100;
 }
 
+// 1. bargain used inventory->head() gold. buildTradeTable always writes that
+//    slot as m_iData1=0. sell still worked because the first AI counter writes
+//    the native gold amount onto the native inventory node. buy never does
+//    that: the player gold lives on the offer list. reading 0 rewrote the
+//    table to 0 gold, the deal died, and a later fail roll set TimeNoTrade.
+static CLLNode<TradeData>* findBargainGoldNode(const CLinkList<TradeData>* pOffer, CLinkList<TradeData>* pInventory)
+{
+	CLLNode<TradeData>* pNode;
+	if (pOffer != NULL)
+	{
+		for (pNode = pOffer->head(); pNode != NULL; pNode = pOffer->next(pNode))
+		{
+			if (pNode->m_data.m_eItemType == TRADE_GOLD && pNode->m_data.m_iData1 > 0)
+			{
+				return pNode;
+			}
+		}
+	}
+	if (pInventory != NULL)
+	{
+		for (pNode = pInventory->head(); pNode != NULL; pNode = pInventory->next(pNode))
+		{
+			if (pNode->m_data.m_eItemType == TRADE_GOLD && pNode->m_data.m_iData1 > 0)
+			{
+				return pNode;
+			}
+		}
+	}
+	return NULL;
+}
+
 bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeData>* pTheirList, const CLinkList<TradeData>* pOurList, CLinkList<TradeData>* pTheirInventory, CLinkList<TradeData>* pOurInventory, CLinkList<TradeData>* pTheirCounter, CLinkList<TradeData>* pOurCounter, const IDInfo& kTransport)
 {
 	FAssert(CxDesyncMonitor::isNeverSync());
@@ -4010,78 +4041,70 @@ bool CvPlayerAI::AI_counterPropose(PlayerTypes ePlayer, const CLinkList<TradeDat
 
 	if(acceptsBargaining)
 	{
+		int iTotalNativeTradeModifier = this->getNativeTradeModifier() + kTradingPartner.getNativeTradeModifier();
+		if (iTotalNativeTradeModifier > GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER)
+		{
+			iTotalNativeTradeModifier = GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER;
+		}
+		if (iTotalNativeTradeModifier < 0)
+		{
+			iTotalNativeTradeModifier = 0;
+		}
+
 		if (bOurGoldDeal)
 		{
 			int priceIncreaseMax = GLOBAL_DEFINE_PRICE_INCREASE_BARGAIN_SELL;
-			pNode = pOurInventory->head();
-			if (pNode->m_data.m_eItemType == TRADE_GOLD)
+			pGoldNode = findBargainGoldNode(pOurList, pOurInventory);
+			if (pGoldNode != NULL)
 			{
-				int oldPrice = pNode->m_data.m_iData1;
+				int oldPrice = pGoldNode->m_data.m_iData1;
 				int randomPriceChange = GC.getGameINLINE().getAsyncRandom(priceIncreaseMax);
 				if (randomPriceChange < priceIncreaseMax / 3)
 				{
 					randomPriceChange = priceIncreaseMax / 3;
 				}
 				int newPrice = oldPrice * (1000 + randomPriceChange) / 1000;
-
-				// R&R, ray, change for Trait Trader - START
-				// WTP, ray, also consider European Trait
-				int iTotalNativeTradeModifier = GET_PLAYER(getID()).getNativeTradeModifier() + kTradingPartner.getNativeTradeModifier();
-				// safety check to ensure that no numbers do not get too extreme
-				if (iTotalNativeTradeModifier > GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER)
-				{
-					iTotalNativeTradeModifier = GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER;
-				}
-				// here we calculate the price
 				newPrice = newPrice * (100 + iTotalNativeTradeModifier) / 100;
-				// R&R, ray, change for Trait Trader - END
 
-				// R&R, ray, small correction to stop at max gold of player
 				int iGoldAvailable = this->AI_maxGoldTrade(ePlayer);
 				if (newPrice >= iGoldAvailable)
 				{
 					newPrice = iGoldAvailable;
 				}
+				if (newPrice < 1)
+				{
+					newPrice = 1;
+				}
 
-				//setting value to new price
+				TradeData kGold = pGoldNode->m_data;
+				kGold.m_iData1 = newPrice;
 				pOurCounter->clear();
-				CLLNode<TradeData>* newNode = pNode;
-				newNode->m_data.m_iData1 = newPrice;
-				pOurCounter->insertAtEnd(newNode->m_data);
+				pOurCounter->insertAtEnd(kGold);
 			}
 		}
-
 		else if (bTheirGoldDeal)
 		{
 			int priceDecreaseMax = GLOBAL_DEFINE_PRICE_DECREASE_BARGAIN_BUY;
-			pNode = pTheirInventory->head();
-			if (pNode->m_data.m_eItemType == TRADE_GOLD)
+			pGoldNode = findBargainGoldNode(pTheirList, pTheirInventory);
+			if (pGoldNode != NULL)
 			{
-				int oldPrice = pNode->m_data.m_iData1;
+				int oldPrice = pGoldNode->m_data.m_iData1;
 				int randomPriceChange = GC.getGameINLINE().getAsyncRandom(priceDecreaseMax);
 				if (randomPriceChange < priceDecreaseMax / 3)
 				{
 					randomPriceChange = priceDecreaseMax / 3;
 				}
 				int newPrice = oldPrice * (1000 - randomPriceChange) / 1000;
-
-				// R&R, ray, change for Trait Trader - START
-				// WTP, ray, also consider European Trait
-				int iTotalNativeTradeModifier = this->getNativeTradeModifier() + kTradingPartner.getNativeTradeModifier();
-				// safety check to ensure that no negative numbers occurs
-				if (iTotalNativeTradeModifier > GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER)
-				{
-					iTotalNativeTradeModifier = GLOBAL_DEFINE_MAX_NATIVE_BARGAIN_MODIFIER;
-				}
-				// here we calculate the price
 				newPrice = newPrice * (100 - iTotalNativeTradeModifier) / 100;
-				// R&R, ray, change for Trait Trader - END
-				
-				//setting value to new price
+				if (newPrice < 1)
+				{
+					newPrice = 1;
+				}
+
+				TradeData kGold = pGoldNode->m_data;
+				kGold.m_iData1 = newPrice;
 				pTheirCounter->clear();
-				CLLNode<TradeData>* newNode = pNode;
-				newNode->m_data.m_iData1 = newPrice;
-				pTheirCounter->insertAtEnd(newNode->m_data);
+				pTheirCounter->insertAtEnd(kGold);
 			}
 		}
 
