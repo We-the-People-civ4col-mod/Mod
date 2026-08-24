@@ -152,7 +152,9 @@ void CvMap::read(CvSavegameReader reader)
 					pPlot->setCoordinates(iX + iWest, iY + iSouth);
 				}
 			}
-			applyGlobeviewPadPlotDefaults();
+			// 1. do not setTerrainType on pad plots here. areas are not in the save yet
+			//    (Plots is written before Areas). Tish / We-The-People gigantic saves
+			//    aborted in the EXE when ocean pad ran during plot read.
 			break;
 		}
 		case Save_Areas:
@@ -181,6 +183,10 @@ void CvMap::read(CvSavegameReader reader)
 			if (eBonus != NO_BONUS || eImprovement != NO_IMPROVEMENT)
 			{
 				CvArea* pArea = getArea(kPlot.getArea());
+				if (pArea == NULL)
+				{
+					continue;
+				}
 				if (eBonus != NO_BONUS)
 				{
 					pArea->changeNumBonuses(eBonus, 1);
@@ -198,6 +204,7 @@ void CvMap::read(CvSavegameReader reader)
 		}
 	}
 
+	applyGlobeviewPadPlotDefaults();
 	applyGlobeviewPadAreas();
 	applyGlobeviewPadEurope();
 }

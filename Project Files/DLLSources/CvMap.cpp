@@ -500,7 +500,7 @@ void CvMap::applyGlobeviewPadPlotDefaults()
 			if (isGlobeviewPadPlot(iX, iY))
 			{
 				CvPlot* pPlot = plotSoren(iX, iY);
-				pPlot->init(iX, iY);
+				// already init'd on load/new map. do not init again (uninit+gDLL destroy).
 				pPlot->setTerrainType(TERRAIN_OCEAN, false, false);
 			}
 		}
