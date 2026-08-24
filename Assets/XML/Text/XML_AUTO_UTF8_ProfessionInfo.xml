@@ -8,7 +8,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Guerreiro Armado: Guerreiros Armados</Text>
+			<Text>Guerreiro Armado:Guerreiros Armados</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -169,7 +169,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Ferramenteiro:Ferramentas</Text>
+			<Text>Ferramenteiro:Ferramenteiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -225,7 +225,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Bladesmith: Bladesmiths</Text>
+			<Text>Cuteleiro:Cuteleiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -279,7 +279,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Guerreiro: Guerreiros</Text>
+			<Text>Guerreiro:Guerreiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -335,7 +335,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Cervejeiro: Cervejeiros</Text>
+			<Text>Cervejeiro:Cervejeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -436,7 +436,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Açougueiro (ovelha):Açougueiro (ovelha)</Text>
+			<Text>Açougueiro (Ovelha):Açougueiro (Ovelha)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -488,7 +488,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Cannonsmith: Cannonsmiths</Text>
+			<Text>Canhoneiro:Canhoneiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -648,7 +648,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Torrador (cacau):Torradores (cacau)</Text>
+			<Text>Torrador (Cacau):Torradores (Cacau)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -702,7 +702,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Plantador (cacau):Plantadores (cacau)</Text>
+			<Text>Plantador (Cacau):Plantadores (Cacau)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -755,7 +755,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Torradeira (café): Torradeiras (café)</Text>
+			<Text>Torrador (Café):Torradores (Café)</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -804,7 +804,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Plantador (Café): Plantadores (Café)</Text>
+			<Text>Plantador (Café):Plantadores (Café)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1006,7 +1006,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Plantador (Algodão): Plantadores (Algodão)</Text>
+			<Text>Plantador (Algodão):Plantadores (Algodão)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1059,7 +1059,7 @@
 		<English>Cowboy:Cowboys</English>
 		
 		<Portuguese>
-			<Text>Cowboy: Cowboys</Text>
+			<Text>Vaqueiro:Vaqueiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1229,7 +1229,7 @@
 		<English>Cloth Dyer (Indigo):Cloth Dyers (Indigo)</English>
 		
 		<Portuguese>
-			<Text>Tintureiro de Tecido (Índigo):Tinturadores de Tecido (Índigo)</Text>
+			<Text>Tintureiro (Índigo):Tintureiros (Índigo)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1280,7 +1280,7 @@
 		<English>Wool Dyer (Indigo):Wool Dyers (Indigo)</English>
 		
 		<Portuguese>
-			<Text>Tintureiro de Lã (Índigo):Tinturadores de Lã (Índigo)</Text>
+			<Text>Tintureiro de Lã (Índigo):Tintureiros de Lã (Índigo)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1423,7 +1423,7 @@
 		<English>Fishing Boat:Fishing Boats</English>
 		
 		<Portuguese>
-			<Text>Barco de pesca:barcos de pesca</Text>
+			<Text>Barco de Pesca:Barcos de Pesca</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1472,7 +1472,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Fabricante de móveis:Fabricantes de móveis</Text>
+			<Text>Marceneiro:Marceneiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1524,7 +1524,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Fabricante de Casacos (Pele):Fabricantes de Casacos (Pele)</Text>
+			<Text>Casacos (Pele):Casacos (Pele)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1580,7 +1580,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Caçador de peles:Caçadores de peles</Text>
+			<Text>Coureador:Coureadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1636,7 +1636,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Caçador de lontras marinhas: Caçador de lontras marinhas</Text>
+			<Text>Caçador (Lontra):Caçadores (Lontra)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1690,7 +1690,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mineiro (pedra preciosa):Mineiros (pedra preciosa)</Text>
+			<Text>Mineiro (Gemas):Mineiros (Gemas)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1854,7 +1854,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Armeiro: Armeiros</Text>
+			<Text>Armeiro:Armeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1939,7 +1939,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Cavalaria Pesada: Cavalaria Pesada</Text>
+			<Text>Cavalaria Pesada:Cavalaria Pesada</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1993,7 +1993,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Plantador (cânhamo):Plantadores (cânhamo)</Text>
+			<Text>Plantador (Cânhamo):Plantadores (Cânhamo)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2045,7 +2045,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Caçador (jogo):Caçadores (jogo)</Text>
+			<Text>Caçador (Caça):Caçadores (Caça)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2097,7 +2097,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Plantador (Índigo): Plantadores (Índigo)</Text>
+			<Text>Plantador (Índigo):Plantadores (Índigo)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2150,7 +2150,7 @@
 		<English>Line Infantry</English>
 		
 		<Portuguese>
-			<Text>Infantaria de linha</Text>
+			<Text>Infantaria de Linha</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2202,7 +2202,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Lenhador (madeira):Lenhadores (madeira)</Text>
+			<Text>Lenhador (Madeira):Lenhadores (Madeira)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2426,7 +2426,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mergulhador de Pérolas: Mergulhadores de Pérolas</Text>
+			<Text>Mergulhador de Pérolas:Mergulhadores de Pérolas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2536,7 +2536,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Pregador: Pregadores</Text>
+			<Text>Pregador:Pregadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2592,7 +2592,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Fabricante de Casacos (Pele Premium):Fabricantes de Casacos (Pele Premium)</Text>
+			<Text>Casacos (Premium):Casacos (Premium)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2648,7 +2648,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Fazendeiro: Fazendeiros</Text>
+			<Text>Fazendeiro:Fazendeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2699,7 +2699,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Plantador (pimenta vermelha):Planteiros (pimenta vermelha)</Text>
+			<Text>Plantador (Pimenta):Plantadores (Pimenta)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2748,7 +2748,7 @@
 		<English>Roper (Hemp):Ropers (Hemp)</English>
 		
 		<Portuguese>
-			<Text>Roper (cânhamo):Ropers (cânhamo)</Text>
+			<Text>Cordoador (Cânhamo):Cordoadores (Cânhamo)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2769,7 +2769,7 @@
 		<English>Roper (Flax):Ropers (Flax)</English>
 		
 		<Portuguese>
-			<Text>Roper (Linho):Ropers (Linho)</Text>
+			<Text>Cordoador (Linho):Cordoadores (Linho)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2812,7 +2812,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Cavalaria Real: Cavalaria Real</Text>
+			<Text>Cavalaria Real:Cavalaria Real</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2907,7 +2907,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Infantaria Ligeira Real: Infantaria Ligeira Real</Text>
+			<Text>Infantaria Real Leve:Infantaria Real Leve</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2955,7 +2955,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Infantaria da Linha Real:Infantaria da Linha Real</Text>
+			<Text>Infantaria Real:Infantaria Real</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2999,7 +2999,7 @@
 		<English>Sailmaker (Flax):Sailmakers (Flax)</English>
 		
 		<Portuguese>
-			<Text>Fabricante de velas (Linho):Fabricantes de velas (Linho)</Text>
+			<Text>Velas (Linho):Velas (Linho)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3020,7 +3020,7 @@
 		<English>Sailmaker (Hemp):Sailmakers (Hemp)</English>
 		
 		<Portuguese>
-			<Text>Sailmaker (cânhamo): Sailmakers (cânhamo)</Text>
+			<Text>Velas (Cânhamo):Velas (Cânhamo)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3111,7 +3111,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Comerciante de Sal: Comerciantes de Sal</Text>
+			<Text>Comerciante de Sal:Comerciantes de Sal</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3219,7 +3219,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Caçador (Selos):Caçadores (Selos)</Text>
+			<Text>Caçador (Focas):Caçadores (Focas)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3268,7 +3268,7 @@
 		<English>Shepherd:Shepherds</English>
 		
 		<Portuguese>
-			<Text>Pastor: pastores</Text>
+			<Text>Pastor:Pastores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3378,7 +3378,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Comerciante de especiarias:Comerciantes de especiarias</Text>
+			<Text>Comerciante de Especiarias:Comerciantes de Especiarias</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3484,7 +3484,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Cortador de Pedra: Cortadores de Pedra</Text>
+			<Text>Cortador de Pedra:Cortadores de Pedra</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3536,7 +3536,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Aluno:Estudantes</Text>
+			<Text>Aluno:Alunos</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3592,7 +3592,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Plantador (açúcar):Plantadores (açúcar)</Text>
+			<Text>Plantador (Açúcar):Plantadores (Açúcar)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3645,7 +3645,7 @@
 		<English>Tanner (Cowhides):Tanners (Cowhides)</English>
 		
 		<Portuguese>
-			<Text>Curtidor (couro de vaca): Curtidores (couro de vaca)</Text>
+			<Text>Curtidor (Couro de Vaca):Curtidores (Couro de Vaca)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3682,7 +3682,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Fabricante de charutos: fabricantes de charutos</Text>
+			<Text>Charuteiro:Charuteiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3738,7 +3738,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Plantador (Tabaco): Plantadores (Tabaco)</Text>
+			<Text>Plantador (Tabaco):Plantadores (Tabaco)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3844,7 +3844,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Tecelão (algodão):Tecelões (algodão)</Text>
+			<Text>Tecelão (Algodão):Tecelões (Algodão)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3950,7 +3950,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Refinador de óleo de baleia:Refinadores de óleo de baleia</Text>
+			<Text>Baleeiro:Baleeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4053,7 +4053,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Vintage: Vintage</Text>
+			<Text>Vinhateiro:Vinhateiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4108,7 +4108,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Guarda Municipal: Guardas Municipais</Text>
+			<Text>Guarda Municipal:Guardas Municipais</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4156,7 +4156,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Alabardeiro Real: Alabardeiros Reais</Text>
+			<Text>Alabardeiro Real:Alabardeiros Reais</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4190,7 +4190,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Comerciante Nativo: Comerciantes Nativos</Text>
+			<Text>Comerciante Nativo:Comerciantes Nativos</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>

@@ -130,7 +130,7 @@
 		<English>Basecamp</English>
 		
 		<Portuguese>
-			<Text>Acampamento base</Text>
+			<Text>Acampamento</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -228,7 +228,7 @@
 		<English>Blacksmith's Shop</English>
 		
 		<Portuguese>
-			<Text>Loja do ferreiro</Text>
+			<Text>Loja do Ferreiro</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -535,7 +535,7 @@
 		<English>Chickee</English>
 		
 		<Portuguese>
-			<Text>Chiclete</Text>
+			<Text>Chickee</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -613,7 +613,7 @@
 		<English>Cigar and Tea Factory</English>
 		
 		<Portuguese>
-			<Text>Fábrica de charutos e chá</Text>
+			<Text>Fábrica de Charutos e Chá</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1059,7 +1059,7 @@
 		<English>Drydock</English>
 		
 		<Portuguese>
-			<Text>Doca seca</Text>
+			<Text>Doca Seca</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1286,7 +1286,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FURNITURY</Tag>
 		<English>Cabinetmaker's Shop</English>
-		<Portuguese>Loja de marceneiro</Portuguese>
+		<Portuguese>Loja de Marceneiro</Portuguese>
 		<French>Ebenisterie</French>
 		<German>Möbelschreinerei</German>
 		<Russian>Столярная мастерская</Russian>
@@ -1310,7 +1310,7 @@
 		<English>Coat Factory</English>
 		
 		<Portuguese>
-			<Text>Fábrica de casacos</Text>
+			<Text>Fábrica de Casacos</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1628,7 +1628,7 @@
 		<English>Great Tool Factory</English>
 		
 		<Portuguese>
-			<Text>Grande fábrica de ferramentas</Text>
+			<Text>Grande Fábrica de Ferramentas</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1706,7 +1706,7 @@
 		<English>Great Wheelwrights Workshop</English>
 		
 		<Portuguese>
-			<Text>Grande Oficina de Wheelwrights</Text>
+			<Text>Grande Oficina de Carroceiro</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1774,7 +1774,7 @@
 		<English>Ironworks</English>
 		
 		<Portuguese>
-			<Text>Ferragens</Text>
+			<Text>Ferraria</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1848,7 +1848,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LARGE_DYERY</Tag>
 		<English>Large Dyery</English>
-		<Portuguese>Tinturaria grande</Portuguese>
+		<Portuguese>Tinturaria Grande</Portuguese>
 		<French>Teinturerie industrielle</French>
 		<German>Große Färberei</German>
 		<Russian>Большая красильня</Russian>
@@ -1872,7 +1872,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LEATHER_FACTORY</Tag>
 		<English>Leather Factory</English>
-		<Portuguese>Fábrica de couro</Portuguese>
+		<Portuguese>Fábrica de Couro</Portuguese>
 		<French>Tannerie industrielle</French>
 		<German>Lederfabrik</German>
 		<Russian>Фабрика по выделке кожи</Russian>
@@ -2090,7 +2090,7 @@
 		<English>Totem Pole</English>
 		
 		<Portuguese>
-			<Text>Pólo Totêmico</Text>
+			<Text>Totem</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2184,7 +2184,7 @@
 		<English>Horse Pasture</English>
 		
 		<Portuguese>
-			<Text>Pasto para cavalos</Text>
+			<Text>Pasto de Cavalos</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2227,7 +2227,7 @@
 		<English>Native Wall</English>
 		
 		<Portuguese>
-			<Text>Parede Nativa</Text>
+			<Text>Muralha Nativa</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2506,7 +2506,7 @@
 		<English>Liquor Factory</English>
 		
 		<Portuguese>
-			<Text>Fábrica de licores</Text>
+			<Text>Fábrica de Licores</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2705,7 +2705,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_SPICE_TRADERS_HOUSE</Tag>
 		<English>Spice Trader's House</English>
-		<Portuguese>Casa do comerciante de especiarias</Portuguese>
+		<Portuguese>Casa do Comerciante de Especiarias</Portuguese>
 		<French>Maison de l'épicier</French>
 		<German>Haus des Gewürzhändlers</German>
 		<Russian>Дом изготовителя специй</Russian>
@@ -2751,7 +2751,7 @@
 		<English>Stable</English>
 		
 		<Portuguese>
-			<Text>Estável</Text>
+			<Text>Estábulo</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2826,7 +2826,7 @@
 		<English>Chevaux de Frise</English>
 		
 		<Portuguese>
-			<Text>Cavalos de Frise</Text>
+			<Text>Cavalos de Frisa</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -3104,7 +3104,7 @@
 		<English>Tobacco and Yerba Shop</English>
 		
 		<Portuguese>
-			<Text>Loja de tabaco e erva</Text>
+			<Text>Loja de Tabaco e Erva</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3149,7 +3149,7 @@
 		<English>Tool Factory</English>
 		
 		<Portuguese>
-			<Text>Fábrica de ferramentas</Text>
+			<Text>Fábrica de Ferramentas</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3282,7 +3282,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_TRAIN_STATION</Tag>
 		<English>Waystation</English>
-		<Portuguese>Estação intermediária</Portuguese>
+		<Portuguese>Estação</Portuguese>
 		<French>Relais de poste</French>
 		<German>Postreiter- und Pferdewechselstation</German>
 		<Russian>Станция</Russian>
@@ -3381,7 +3381,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_VILLAGE_WELL</Tag>
 		<English>Village Well</English>
-		<Portuguese>Aldeia Bem</Portuguese>
+		<Portuguese>Poço da Vila</Portuguese>
 		<French>Puits du village</French>
 		<German>Dorfbrunnen</German>
 		<Russian>Колодец</Russian>
@@ -3403,7 +3403,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_VINTAGERS_HOUSE</Tag>
 		<English>Vintager's House</English>
-		<Portuguese>Casa do Vintage</Portuguese>
+		<Portuguese>Casa do Vinhateiro</Portuguese>
 		<French>Maison du vigneron</French>
 		<German>Haus des Winzers</German>
 		<Italian>Casa del viticoltore</Italian>
@@ -3431,7 +3431,7 @@
 		<English>Storage House</English>
 		
 		<Portuguese>
-			<Text>Casa de armazenamento</Text>
+			<Text>Depósito</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3554,7 +3554,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Moinho de água:Moinhos de água</Text>
+			<Text>Moinho de Água:Moinhos de Água</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3679,7 +3679,7 @@
 		<English>Train Oil Rendering Plant</English>
 		
 		<Portuguese>
-			<Text>Usina de óleo de baleia</Text>
+			<Text>Usina Baleeira</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3710,7 +3710,7 @@
 		<English>Train Oil Manufactory</English>
 		
 		<Portuguese>
-			<Text>Fábrica de óleo de baleia</Text>
+			<Text>Casa Baleeira</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3741,7 +3741,7 @@
 		<English>Wheelwright's Workshop</English>
 		
 		<Portuguese>
-			<Text>Oficina de Wheelwright</Text>
+			<Text>Oficina de Carroceiro</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3776,7 +3776,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Moinho de vento:Moinhos de vento</Text>
+			<Text>Moinho de Vento:Moinhos de Vento</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>

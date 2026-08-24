@@ -318,7 +318,7 @@
 		<English>Leather Coat Factory</English>
 		
 		<Portuguese>
-			<Text>Fábrica de casacos de couro</Text>
+			<Text>Fábrica de Casacos</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -372,7 +372,7 @@
 		<English>Leather Coat Factory</English>
 		
 		<Portuguese>
-			<Text>Fábrica de casacos de couro</Text>
+			<Text>Fábrica de Casacos</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -453,7 +453,7 @@
 		<English>Cooking Oil Trader's House</English>
 		
 		<Portuguese>
-			<Text>Casa do comerciante de óleo de cozinha</Text>
+			<Text>Casa do Óleo</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -471,7 +471,7 @@
 		<English>Cooking Oil Trader's Shop</English>
 		
 		<Portuguese>
-			<Text>Loja do comerciante de óleo de cozinha</Text>
+			<Text>Loja do Óleo</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -489,7 +489,7 @@
 		<English>Cooking Oil Trader Factory</English>
 		
 		<Portuguese>
-			<Text>Fábrica de comerciante de óleo de cozinha</Text>
+			<Text>Fábrica de Óleo</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -507,7 +507,7 @@
 		<English>Cooking Oil Trader's House</English>
 		
 		<Portuguese>
-			<Text>Casa do comerciante de óleo de cozinha</Text>
+			<Text>Casa do Óleo</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -525,7 +525,7 @@
 		<English>Cooking Oil Trader's Shop</English>
 		
 		<Portuguese>
-			<Text>Loja do comerciante de óleo de cozinha</Text>
+			<Text>Loja do Óleo</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -543,7 +543,7 @@
 		<English>Cooking Oil Factory</English>
 		
 		<Portuguese>
-			<Text>Fábrica de óleo de cozinha</Text>
+			<Text>Fábrica de Óleo</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -997,7 +997,7 @@
 		<English>Clothing Factory</English>
 		
 		<Portuguese>
-			<Text>Fábrica de roupas</Text>
+			<Text>Fábrica de Roupas</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1050,7 +1050,7 @@
 		<English>Clothing Factory</English>
 		
 		<Portuguese>
-			<Text>Fábrica de roupas</Text>
+			<Text>Fábrica de Roupas</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1125,7 +1125,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_FIREWORKERS_HOUSE</Tag>
 		<English>Powder Maker's House</English>
-		<Portuguese>Casa do Fabricante de Pólvora</Portuguese>
+		<Portuguese>Casa do Polvorista</Portuguese>
 		<French>Maison du fabricant de poudre</French>
 		<German>Haus des Pulvermachers</German>
 		<Italian>Casa del polveriere</Italian>
@@ -1138,7 +1138,7 @@
 		<English>Powder Makers' Shop</English>
 		
 		<Portuguese>
-			<Text>Loja de fabricantes de pó</Text>
+			<Text>Loja de Pólvora</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1156,7 +1156,7 @@
 		<English>Powder Magazine</English>
 		
 		<Portuguese>
-			<Text>Paiol de pólvora</Text>
+			<Text>Paiol de Pólvora</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1172,7 +1172,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FIREWORKERS_HOUSE</Tag>
 		<English>Powder Maker's House</English>
-		<Portuguese>Casa do Fabricante de Pólvora</Portuguese>
+		<Portuguese>Casa do Polvorista</Portuguese>
 		<French>Maison du fabricant de poudre</French>
 		<German>Haus des Pulvermachers</German>
 		<Italian>Casa del polveriere</Italian>
@@ -1185,7 +1185,7 @@
 		<English>Powder Makers' Shop</English>
 		
 		<Portuguese>
-			<Text>Loja de fabricantes de pó</Text>
+			<Text>Loja de Pólvora</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1203,7 +1203,7 @@
 		<English>Powder Magazine</English>
 		
 		<Portuguese>
-			<Text>Paiol de pólvora</Text>
+			<Text>Paiol de Pólvora</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1436,7 +1436,7 @@
 		<English>Town Courthouse</English>
 		
 		<Portuguese>
-			<Text>Tribunal da cidade</Text>
+			<Text>Tribunal da Cidade</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1454,7 +1454,7 @@
 		<English>City Courthouse</English>
 		
 		<Portuguese>
-			<Text>Tribunal da cidade</Text>
+			<Text>Tribunal da Cidade</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1508,7 +1508,7 @@
 		<English>Town Courthouse</English>
 		
 		<Portuguese>
-			<Text>Tribunal da cidade</Text>
+			<Text>Tribunal da Cidade</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1526,7 +1526,7 @@
 		<English>City Courthouse</English>
 		
 		<Portuguese>
-			<Text>Tribunal da cidade</Text>
+			<Text>Tribunal da Cidade</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>

@@ -5,7 +5,7 @@
 		<English>Keen Swimmer</English>
 		
 		<Portuguese>
-			<Text>Nadador afiado</Text>
+			<Text>Bom Nadador</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -85,7 +85,7 @@
 		<English>Explosives I</English>
 		
 		<Portuguese>
-			<Text>Explosivos eu</Text>
+			<Text>Explosivos I</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -196,7 +196,7 @@
 		<English>Broadside</English>
 		
 		<Portuguese>
-			<Text>Lateral</Text>
+			<Text>Bordada</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -215,7 +215,7 @@
 		<English>Canister Shot I</English>
 		
 		<Portuguese>
-			<Text>Canister Shot I</Text>
+			<Text>Metralha I</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -242,7 +242,7 @@
 		<English>Canister Shot II</English>
 		
 		<Portuguese>
-			<Text>Tiro de Canister II</Text>
+			<Text>Metralha II</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -269,7 +269,7 @@
 		<English>Canister Shot III</English>
 		
 		<Portuguese>
-			<Text>Tiro de Canister III</Text>
+			<Text>Metralha III</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -303,7 +303,7 @@
 		<English>Charge</English>
 		
 		<Portuguese>
-			<Text>Cobrar</Text>
+			<Text>Investida</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -332,7 +332,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_DISCOVERER</Tag>
 		<English>Great Discoverer</English>
-		<Portuguese>Grande descobridor</Portuguese>
+		<Portuguese>Grande Descobridor</Portuguese>
 		<French>Grand découvreur</French>
 		<German>Großer Entdecker</German>
 		<Italian>Great Discoverer</Italian>
@@ -374,7 +374,7 @@
 		<English>Drill Sergeant</English>
 		
 		<Portuguese>
-			<Text>Sargento de treinamento</Text>
+			<Text>Sargento de Treinamento</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -486,7 +486,7 @@
 		<English>Feint I</English>
 		
 		<Portuguese>
-			<Text>Finja eu</Text>
+			<Text>Finta I</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -660,7 +660,7 @@
 		<English>Close Combat II</English>
 		
 		<Portuguese>
-			<Text>Fechar Combate II</Text>
+			<Text>Combate Próximo II</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -842,7 +842,7 @@
 		<English>Wild Animal Hunter I</English>
 		
 		<Portuguese>
-			<Text>Caçador de animais selvagens I</Text>
+			<Text>Caçador de Animais Selvagens I</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -873,7 +873,7 @@
 		<English>Wild Animal Hunter II</English>
 		
 		<Portuguese>
-			<Text>Caçador de animais selvagens II</Text>
+			<Text>Caçador de Animais Selvagens II</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -933,7 +933,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LEADER</Tag>
 		<English>Led by Great General</English>
-		<Portuguese>Liderado por Grande General</Portuguese>
+		<Portuguese>Liderado Por Grande General</Portuguese>
 		<French>Mené par un Général illustre</French>
 		<German>Angeführt von Großem General</German>
 		<Italian>Condotto da un Grande Generale</Italian>
@@ -943,7 +943,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LEADER2</Tag>
 		<English>Led by Great Admiral</English>
-		<Portuguese>Liderado pelo Grande Almirante</Portuguese>
+		<Portuguese>Liderado Pelo Grande Almirante</Portuguese>
 		<French>Mené par un Amiral illustre</French>
 		<German>Angeführt von Großem Admiral</German>
 		<Italian>Condotto da un Grande Admirale</Italian>
@@ -1015,7 +1015,7 @@
 		<English>Minuteman I</English>
 		
 		<Portuguese>
-			<Text>Minuto I</Text>
+			<Text>Minuteman I</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1042,7 +1042,7 @@
 		<English>Minuteman II</English>
 		
 		<Portuguese>
-			<Text>Minuto II</Text>
+			<Text>Minuteman II</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1069,7 +1069,7 @@
 		<English>Minuteman III</English>
 		
 		<Portuguese>
-			<Text>Minuto III</Text>
+			<Text>Minuteman III</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1158,7 +1158,7 @@
 		<English>Mountaineer I</English>
 		
 		<Portuguese>
-			<Text>Alpinista eu</Text>
+			<Text>Alpinista I</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1348,7 +1348,7 @@
 		<English>Piracy I</English>
 		
 		<Portuguese>
-			<Text>Pirataria eu</Text>
+			<Text>Pirataria I</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1590,7 +1590,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LARGE_RIVER_SAILING</Tag>
 		<English>River Sailor</English>
-		<Portuguese>Marinheiro do rio</Portuguese>
+		<Portuguese>Marinheiro Fluvial</Portuguese>
 		<French>Navigation de rivière</French>
 		<German>Flußsegler</German>
 		<Italian>Fiume Veloce</Italian>
@@ -1600,7 +1600,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LARGE_RIVER_SCOUT</Tag>
 		<English>River Scout</English>
-		<Portuguese>Rio Batedor</Portuguese>
+		<Portuguese>Batedor Fluvial</Portuguese>
 		<French>Traversée de rivière</French>
 		<German>Flußscout</German>
 		<Italian>Attraversamento del fiume</Italian>
@@ -1713,7 +1713,7 @@
 		<English>Siege Guns</English>
 		
 		<Portuguese>
-			<Text>Armas de cerco</Text>
+			<Text>Canhões de Cerco</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1906,7 +1906,7 @@
 		<English>Storm Attack I</English>
 		
 		<Portuguese>
-			<Text>Ataque de Tempestade I</Text>
+			<Text>Assalto I</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1933,7 +1933,7 @@
 		<English>Storm Attack II</English>
 		
 		<Portuguese>
-			<Text>Ataque Tempestuoso II</Text>
+			<Text>Assalto II</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1960,7 +1960,7 @@
 		<English>Storm Attack III</English>
 		
 		<Portuguese>
-			<Text>Ataque Tempestuoso III</Text>
+			<Text>Assalto III</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1987,7 +1987,7 @@
 		<English>Surgeon I</English>
 		
 		<Portuguese>
-			<Text>Cirurgião eu</Text>
+			<Text>Cirurgião I</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2390,7 +2390,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_BRAVE_LIEUTENANT</Tag>
 		<English>Commanded by Brave Lieutenant</English>
-		<Portuguese>Comandado pelo Bravo Tenente</Portuguese>
+		<Portuguese>Comandado Pelo Bravo Tenente</Portuguese>
 		<French>Mené par un lieutenant hardi</French>
 		<German>Befehligt durch Mutigen Leutnant</German>
 		<Russian>Под началом Храброго лейтенанта</Russian>
@@ -2398,7 +2398,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_CAPABLE_CAPTAIN</Tag>
 		<English>Commanded by Capable Captain</English>
-		<Portuguese>Comandado por Capitão Capaz</Portuguese>
+		<Portuguese>Comandado Por Capitão Capaz</Portuguese>
 		<French>Commandé par un capitaine capable</French>
 		<German>Angeführt von fähigem Kapitän</German>
 		<Russian>Под началом Умелого капитана</Russian>
@@ -2406,7 +2406,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NEGATIVE_LEAKING_HULL</Tag>
 		<English>(Negative) Leaking Hull</English>
-		<Portuguese>(Negativo) Vazamento no casco</Portuguese>
+		<Portuguese>(Negativo) Vazamento No Casco</Portuguese>
 		<French>(Négative) Voie d'eau</French>
 		<German>(Negativ) Undichter Rumpf</German>
 		<Russian>(Недостаток) Пробоина в корпусе</Russian>
@@ -2414,7 +2414,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_NEGATIVE_TORN_SAILS</Tag>
 		<English>(Negative) Torn Sails</English>
-		<Portuguese>(Negativo) Velas rasgadas</Portuguese>
+		<Portuguese>(Negativo) Velas Rasgadas</Portuguese>
 		<French>(Négative) Voiles déchirée</French>
 		<German>(Negativ) Gerissene Segel</German>
 		<Russian>(Недостаток) Порванный парус</Russian>

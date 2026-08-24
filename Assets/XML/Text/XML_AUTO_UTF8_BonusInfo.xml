@@ -5,9 +5,9 @@
 		<English>Banana trees</English>
 		
 		<Portuguese>
-			<Text>Bananeiras</Text>
+			<Text>Banana</Text>
 			<Gender>Female</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Banane</Text>
@@ -144,7 +144,7 @@
 		<English>Boreal forest</English>
 		
 		<Portuguese>
-			<Text>Floresta boreal</Text>
+			<Text>Floresta Boreal</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -170,7 +170,7 @@
 		<English>Hardwood</English>
 		
 		<Portuguese>
-			<Text>Madeira nobre</Text>
+			<Text>Madeira Nobre</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -219,9 +219,9 @@
 		<English>Coca plants</English>
 		
 		<Portuguese>
-			<Text>Plantas de coca</Text>
+			<Text>Coca</Text>
 			<Gender>Female</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Coca</Text>
@@ -257,9 +257,9 @@
 		<English>Yerba plants</English>
 		
 		<Portuguese>
-			<Text>Plantas de erva</Text>
+			<Text>Erva-Mate</Text>
 			<Gender>Female</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Plant de Yerba</French>
 		<German>
@@ -280,9 +280,9 @@
 		<English>Cocoa trees</English>
 		
 		<Portuguese>
-			<Text>Cacaueiros</Text>
+			<Text>Cacau</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Cacao</French>
 		<German>
@@ -306,9 +306,9 @@
 		<English>Coconut trees</English>
 		
 		<Portuguese>
-			<Text>Coqueiros</Text>
+			<Text>Coco</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Cocotier</Text>
@@ -344,9 +344,9 @@
 		<English>Coffee bushes</English>
 		
 		<Portuguese>
-			<Text>Arbustos de café</Text>
+			<Text>Café</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Café</French>
 		<German>
@@ -412,9 +412,9 @@
 		<English>Cotton plants</English>
 		
 		<Portuguese>
-			<Text>Plantas de algodão</Text>
+			<Text>Algodão</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Plant de Coton</Text>
@@ -570,7 +570,7 @@
 		<English>Bighorn Sheep</English>
 		
 		<Portuguese>
-			<Text>Carneiro selvagem</Text>
+			<Text>Carneiro Selvagem</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -618,7 +618,7 @@
 		<English>Musk Ox</English>
 		
 		<Portuguese>
-			<Text>Boi almiscarado</Text>
+			<Text>Boi Almiscarado</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -664,7 +664,7 @@
 		<English>Boobies</English>
 		
 		<Portuguese>
-			<Text>Peitos</Text>
+			<Text>Atobás</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -940,7 +940,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_CHICKEN</Tag>
 		<English>Chicken</English>
-		<Portuguese>Frango</Portuguese>
+		<Portuguese>Galinhas</Portuguese>
 		<French>Poules</French>
 		<German>Hühner</German>
 		<Italian>Galline</Italian>
@@ -1066,7 +1066,7 @@
 		<English>Polar foxes</English>
 		
 		<Portuguese>
-			<Text>Raposas polares</Text>
+			<Text>Raposas Polares</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1089,7 +1089,7 @@
 		<English>Red foxes</English>
 		
 		<Portuguese>
-			<Text>Raposas vermelhas</Text>
+			<Text>Raposas Vermelhas</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1112,7 +1112,7 @@
 		<English>Gemstone deposits</English>
 		
 		<Portuguese>
-			<Text>Depósitos de pedras preciosas</Text>
+			<Text>Gemas</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1152,9 +1152,9 @@
 		<English>Giant Trees</English>
 		
 		<Portuguese>
-			<Text>Árvores Gigantes</Text>
+			<Text>Gigante</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Arbres géants</French>
 		<German>
@@ -1178,9 +1178,9 @@
 		<English>Gold deposits</English>
 		
 		<Portuguese>
-			<Text>Depósitos de ouro</Text>
+			<Text>Ouro</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Filon d'or</Text>
@@ -1218,9 +1218,9 @@
 		<English>Grapevines</English>
 		
 		<Portuguese>
-			<Text>Videiras</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Text>Uva</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Ceps de vigne</Text>
@@ -1258,9 +1258,9 @@
 		<English>Olive Trees</English>
 		
 		<Portuguese>
-			<Text>Oliveiras</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Text>Azeitona</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Oliviers</French>
 		<German>
@@ -1281,9 +1281,9 @@
 		<English>Rapeseed Plants</English>
 		
 		<Portuguese>
-			<Text>Plantas de Canola</Text>
+			<Text>Canola</Text>
 			<Gender>Female</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Plant de Colza</French>
 		<German>
@@ -1304,9 +1304,9 @@
 		<English>Hemp plants</English>
 		
 		<Portuguese>
-			<Text>Plantas de cânhamo</Text>
+			<Text>Cânhamo</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Plant de chanvre</Text>
@@ -1342,9 +1342,9 @@
 		<English>Flax plants</English>
 		
 		<Portuguese>
-			<Text>Plantas de linho</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
+			<Text>Linho</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Plant de lin</French>
 		<German>
@@ -1512,9 +1512,9 @@
 		<English>Indigo shrubs</English>
 		
 		<Portuguese>
-			<Text>Arbustos índigo</Text>
+			<Text>Índigo</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Indigotiers</Text>
@@ -1552,7 +1552,7 @@
 		<English>Logwood Trees</English>
 		
 		<Portuguese>
-			<Text>Árvores de toras</Text>
+			<Text>Pau-Campeche</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1575,9 +1575,9 @@
 		<English>Iron ore deposits</English>
 		
 		<Portuguese>
-			<Text>Depósitos de minério de ferro</Text>
+			<Text>Ferro</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Veine de fer</Text>
@@ -1615,7 +1615,7 @@
 		<English>Bog Iron</English>
 		
 		<Portuguese>
-			<Text>Ferro do pântano</Text>
+			<Text>Ferro do Pântano</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1676,7 +1676,7 @@
 		<English>Mineral resources</English>
 		
 		<Portuguese>
-			<Text>Recursos minerais</Text>
+			<Text>Minerais</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1932,9 +1932,9 @@
 		<English>Red pepper plants</English>
 		
 		<Portuguese>
-			<Text>Plantas de pimenta vermelha</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Text>Pimenta Vermelha</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Plants de piment rouge</Text>
@@ -1970,9 +1970,9 @@
 		<English>Maple Trees</English>
 		
 		<Portuguese>
-			<Text>Árvores de bordo</Text>
+			<Text>Bordo</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Érable sucrier</French>
 		<German>
@@ -1993,9 +1993,9 @@
 		<English>Rubber Trees</English>
 		
 		<Portuguese>
-			<Text>Seringueiras</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Text>Borracha</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Hévéas</French>
 		<German>
@@ -2016,9 +2016,9 @@
 		<English>Salt Deposits</English>
 		
 		<Portuguese>
-			<Text>Depósitos de Sal</Text>
+			<Text>Sal</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Gisement de sel</Text>
@@ -2140,7 +2140,7 @@
 		<English>Seals</English>
 		
 		<Portuguese>
-			<Text>Selos</Text>
+			<Text>Focas</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -2178,7 +2178,7 @@
 		<English>Sea otters</English>
 		
 		<Portuguese>
-			<Text>Lontras marinhas</Text>
+			<Text>Lontras Marinhas</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -2216,7 +2216,7 @@
 		<English>Sheep</English>
 		
 		<Portuguese>
-			<Text>ovelha</Text>
+			<Text>Ovelhas</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2242,9 +2242,9 @@
 		<English>Silver deposits</English>
 		
 		<Portuguese>
-			<Text>Depósitos de prata</Text>
+			<Text>Prata</Text>
 			<Gender>Female</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Veine d'argent</Text>
@@ -2471,9 +2471,9 @@
 		<English>Tobacco plants</English>
 		
 		<Portuguese>
-			<Text>Plantas de tabaco</Text>
+			<Text>Tabaco</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Plants de Tabac</Text>
@@ -2696,7 +2696,7 @@
 		<English>Sweet Potatoes</English>
 		
 		<Portuguese>
-			<Text>Batata doce</Text>
+			<Text>Batata Doce</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2742,9 +2742,9 @@
 		<English>Avocado Trees</English>
 		
 		<Portuguese>
-			<Text>Abacates</Text>
+			<Text>Abacate</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Avocatiers</French>
 		<German>
@@ -2765,7 +2765,7 @@
 		<English>Prickly Pears</English>
 		
 		<Portuguese>
-			<Text>Peras espinhosas</Text>
+			<Text>Figos-da-Índia</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -2788,9 +2788,9 @@
 		<English>Apple Trees</English>
 		
 		<Portuguese>
-			<Text>Macieiras</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Text>Maçã</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Pommier</Text>
@@ -2816,9 +2816,9 @@
 		<English>Cherry Trees</English>
 		
 		<Portuguese>
-			<Text>Cerejeiras</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Text>Cereja</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Cerisiers</French>
 		<German>
@@ -2839,9 +2839,9 @@
 		<English>Pineapple Trees</English>
 		
 		<Portuguese>
-			<Text>Árvores de abacaxi</Text>
+			<Text>Abacaxi</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Plant d'ananas</French>
 		<German>
@@ -2862,9 +2862,9 @@
 		<English>Passionfruit Trees</English>
 		
 		<Portuguese>
-			<Text>Árvores de maracujá</Text>
+			<Text>Maracujá</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Fruits de la passion</French>
 		<German>
@@ -2885,9 +2885,9 @@
 		<English>Guava Trees</English>
 		
 		<Portuguese>
-			<Text>Goiabeiras</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Text>Goiaba</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Goyavier</French>
 		<German>
@@ -2908,9 +2908,9 @@
 		<English>Papaya Trees</English>
 		
 		<Portuguese>
-			<Text>Árvores de mamão</Text>
+			<Text>Mamão</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>Papayer</French>
 		<German>
@@ -2931,9 +2931,9 @@
 		<English>Lemon Trees</English>
 		
 		<Portuguese>
-			<Text>Limoeiros</Text>
+			<Text>Limão</Text>
 			<Gender>Male</Gender>
-			<Plural>1</Plural>
+			<Plural>0</Plural>
 		</Portuguese>
 		<French>
 			<Text>Citronnier</Text>
@@ -3014,7 +3014,7 @@
 		<English>Lingonberries</English>
 		
 		<Portuguese>
-			<Text>Mirtilos</Text>
+			<Text>Airelas</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>

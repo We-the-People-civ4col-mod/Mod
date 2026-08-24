@@ -132,7 +132,7 @@
 		<English>Polar Bear</English>
 		
 		<Portuguese>
-			<Text>Urso polar</Text>
+			<Text>Urso Polar</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -196,7 +196,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Grande navio costeiro:Grandes navios costeiros</Text>
+			<Text>Urca:Urcas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -226,7 +226,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Bispo: Bispos</Text>
+			<Text>Bispo:Bispos</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -257,7 +257,7 @@
 		<English>Master Blacksmith:Master Blacksmiths</English>
 		
 		<Portuguese>
-			<Text>Mestre Ferreiro: Mestre Ferreiro</Text>
+			<Text>Mestre Ferreiro:Mestre Ferreiro</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -291,7 +291,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mestre Cervejeiro: Mestre Cervejeiro</Text>
+			<Text>Mestre Cervejeiro:Mestre Cervejeiro</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -325,7 +325,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Brigantine: Brigantine</Text>
+			<Text>Brigue:Brigues</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -359,7 +359,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Caravela Escrava: Caravelas Escravas</Text>
+			<Text>Caravela Escrava:Caravelas Escravas</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -463,7 +463,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Caravela: Caravelas</Text>
+			<Text>Caravela:Caravelas</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -531,7 +531,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Caravela Redonda: Caravelas Redondas</Text>
+			<Text>Caravela Redonda:Caravelas Redondas</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -650,7 +650,7 @@
 		<English>Conestoga:Conestogas</English>
 		
 		<Portuguese>
-			<Text>Conestoga: Conestogas</Text>
+			<Text>Conestoga:Conestogas</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -734,7 +734,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Trader fracassado: Traders fracassados</Text>
+			<Text>Comerciante Fracassado:Comerciantes Fracassados</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -840,7 +840,7 @@
 		<English>Expert Coca Collector:Expert Coca Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor especialista em coca:coletor especialista em coca</Text>
+			<Text>Coletor de Coca:Coletores de Coca</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -871,7 +871,7 @@
 		<English>Coca Leaves</English>
 		
 		<Portuguese>
-			<Text>Folhas de coca</Text>
+			<Text>Folhas de Coca</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -929,7 +929,7 @@
 		<English>Cocoa Pods</English>
 		
 		<Portuguese>
-			<Text>Vagens de cacau</Text>
+			<Text>Vagens de Cacau</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -950,7 +950,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCOA_PLANTER</Tag>
 		<English>Expert Cocoa Planter:Expert Cocoa Planters</English>
-		<Portuguese>Plantador de cacau especializado: plantadores de cacau especializados</Portuguese>
+		<Portuguese>Especialista Cacaueiro:Especialistas Cacaueiros</Portuguese>
 		<French>Expert planteur de cacao:Experts planteurs de cacao</French>
 		<German>Erfahrener Kakaopflücker:Erfahrene Kakaopflücker</German>
 		<Italian>Expert Cocoa Planter:Expert Cocoa Planters</Italian>
@@ -993,7 +993,7 @@
 		<English>Coffee Berries</English>
 		
 		<Portuguese>
-			<Text>Bagas de café</Text>
+			<Text>Bagas de Café</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1012,7 +1012,7 @@
 		<English>Expert Coffee Planter:Expert Coffee Planters</English>
 		
 		<Portuguese>
-			<Text>Plantador de café especializado: plantadores de café especializados</Text>
+			<Text>Especialista Cafeeiro:Especialistas Cafeeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1046,7 +1046,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Colono Livre: Colonos Livres</Text>
+			<Text>Colono Livre:Colonos Livres</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1136,7 +1136,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CONTINENTAL_GUARD</Tag>
 		<English>Continental Guard:Continental Guards</English>
-		<Portuguese>Guarda Continental: Guardas Continentais</Portuguese>
+		<Portuguese>Guarda Continental:Guardas Continentais</Portuguese>
 		<French>Garde continentale:Gardes continentales</French>
 		<German>Kontinentalgarde:Kontinentalgarde</German>
 		<Italian>Continental Guard:Continental Guards</Italian>
@@ -1151,7 +1151,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Bucaneiro: Bucaneiros</Text>
+			<Text>Bucaneiro:Bucaneiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1216,7 +1216,7 @@
 		<English>Converted Native:Converted Natives</English>
 		
 		<Portuguese>
-			<Text>Nativo Convertido:nativos convertidos</Text>
+			<Text>Nativo Convertido:Nativos Convertidos</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1250,7 +1250,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Corveta: Corvetas</Text>
+			<Text>Corveta:Corvetas</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1284,7 +1284,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Brig-de-guerra: Brigadeiro de guerra</Text>
+			<Text>Brigue de Guerra:Brigues de Guerra</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1336,7 +1336,7 @@
 		<English>Expert Cotton Planter:Expert Cotton Planters</English>
 		
 		<Portuguese>
-			<Text>Plantador de algodão especializado: Plantadores de algodão especializados</Text>
+			<Text>Especialista Algodoeiro:Especialistas Algodoeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1398,7 +1398,7 @@
 		<English>Petty Criminal:Petty Criminals</English>
 		
 		<Portuguese>
-			<Text>Criminoso Comum:Pequenos criminosos</Text>
+			<Text>Criminoso Comum:Pequenos Criminosos</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1425,7 +1425,7 @@
 		<English>Master Distiller:Master Distillers</English>
 		
 		<Portuguese>
-			<Text>Destilador Mestre: Destiladores Mestres</Text>
+			<Text>Mestre Destilador:Mestres Destiladores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1456,7 +1456,7 @@
 		<English>Renowned Medic</English>
 		
 		<Portuguese>
-			<Text>Médico renomado</Text>
+			<Text>Médico Renomado</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1580,7 +1580,7 @@
 		<English>Expert Farmer:Expert Farmers</English>
 		
 		<Portuguese>
-			<Text>Agricultor Especialista: Agricultores Especialistas</Text>
+			<Text>Agricultor Especialista:Agricultores Especialistas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1611,7 +1611,7 @@
 		<English>Expert Fisherman:Expert Fishermen</English>
 		
 		<Portuguese>
-			<Text>Pescador Especialista: Pescadores Especialistas</Text>
+			<Text>Pescador Especialista:Pescadores Especialistas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1642,7 +1642,7 @@
 		<English>Fishing Boat:Fishing Boats</English>
 		
 		<Portuguese>
-			<Text>Barco de pesca:barcos de pesca</Text>
+			<Text>Barco de Pesca:Barcos de Pesca</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1696,7 +1696,7 @@
 		<English>Frigate:Frigates</English>
 		
 		<Portuguese>
-			<Text>Fragata: Fragatas</Text>
+			<Text>Fragata:Fragatas</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1868,7 +1868,7 @@
 		<English>Master Fur Trader:Master Fur Traders</English>
 		
 		<Portuguese>
-			<Text>Mestre Comerciante de Peles:Mestre Comerciante de Peles</Text>
+			<Text>Mestre Peleiro:Mestres Peleiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1899,7 +1899,7 @@
 		<English>Galleon:Galleons</English>
 		
 		<Portuguese>
-			<Text>Galeão: Galeões</Text>
+			<Text>Galeão:Galeões</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1930,7 +1930,7 @@
 		<English>War Galleon:War Galleons</English>
 		
 		<Portuguese>
-			<Text>Galeão de Guerra: Galeões de Guerra</Text>
+			<Text>Galeão de Guerra:Galeões de Guerra</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1950,7 +1950,7 @@
 		<English>Governor:Governors</English>
 		
 		<Portuguese>
-			<Text>Governador: Governadores</Text>
+			<Text>Governador:Governadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2015,7 +2015,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Colhedor de uvas especializado: Colhedores de uvas especializados</Text>
+			<Text>Colhedor de Uvas:Colhedores de Uvas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2145,7 +2145,7 @@
 		<English>Grizzly</English>
 		
 		<Portuguese>
-			<Text>Pardo</Text>
+			<Text>Urso Pardo</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2176,7 +2176,7 @@
 		<English>Master Gunsmith:Master Gunsmiths</English>
 		
 		<Portuguese>
-			<Text>Mestre Armeiro: Mestre Armeiro</Text>
+			<Text>Mestre Armeiro:Mestre Armeiro</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2211,7 +2211,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Artilharia Pesada: Artilharia Pesada</Text>
+			<Text>Artilharia Pesada:Artilharia Pesada</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2242,7 +2242,7 @@
 		<English>Expert Hemp Planter:Expert Hemp Planters</English>
 		
 		<Portuguese>
-			<Text>Plantador de cânhamo especializado: plantadores de cânhamo especializados</Text>
+			<Text>Especialista Canhambeiro:Especialistas Canhambeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2271,7 +2271,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HESSIAN</Tag>
 		<English>Hessian:Hessians</English>
-		<Portuguese>Hessiano: Hessianos</Portuguese>
+		<Portuguese>Hessiano:Hessianos</Portuguese>
 		<French>Hessien:Hessiens</French>
 		<German>Hessischer Söldner:Hessische Söldner</German>
 		<Italian>Hessian:Hessians</Italian>
@@ -2283,7 +2283,7 @@
 		<English>Cowhides</English>
 		
 		<Portuguese>
-			<Text>Couros bovinos</Text>
+			<Text>Couros Bovinos</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -2379,7 +2379,7 @@
 		<English>Indentured Servant:Indentured Servants</English>
 		
 		<Portuguese>
-			<Text>Servo Contratado:Servos contratados</Text>
+			<Text>Servo Contratado:Servos Contratados</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2437,7 +2437,7 @@
 		<English>Expert Indigo Planter:Expert Indigo Planters</English>
 		
 		<Portuguese>
-			<Text>Plantador especialista em índigo: plantadores especialistas em índigo</Text>
+			<Text>Especialista Anileiro:Especialistas Anileiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2561,7 +2561,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Artilharia Leve: Artilharia Leve</Text>
+			<Text>Artilharia Leve:Artilharia Leve</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2592,7 +2592,7 @@
 		<English>Lumber</English>
 		
 		<Portuguese>
-			<Text>Madeira serrada</Text>
+			<Text>Madeira Serrada</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2653,7 +2653,7 @@
 			<Plural>1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Bens de luxo</Text>
+			<Text>Bens de Luxo</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2715,7 +2715,7 @@
 		<English>Merchantman:Merchantmen</English>
 		
 		<Portuguese>
-			<Text>Navio mercante:Navios mercantes</Text>
+			<Text>Navio Mercante:Navios Mercantes</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2917,7 +2917,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Escravo Nativo: Escravos Nativos</Text>
+			<Text>Escravo Nativo:Escravos Nativos</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2977,7 +2977,7 @@
 		<English>Orca</English>
 		
 		<Portuguese>
-			<Text>orca</Text>
+			<Text>Orca</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3011,7 +3011,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Carro de boi: Carros de boi</Text>
+			<Text>Carro de Boi:Carros de Boi</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3042,7 +3042,7 @@
 		<English>Expert Pearl Diver:Expert Pearl Divers</English>
 		
 		<Portuguese>
-			<Text>Mergulhador Especialista em Pérolas: Mergulhadores Especialistas em Pérolas</Text>
+			<Text>Mergulhador de Pérolas:Mergulhadores de Pérolas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3073,7 +3073,7 @@
 		<English>Hardy Pioneer:Hardy Pioneers</English>
 		
 		<Portuguese>
-			<Text>Pioneiro Hardy:Pioneiros Hardy</Text>
+			<Text>Pioneiro Resistente:Pioneiros Resistentes</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3228,7 +3228,7 @@
 		<English>Luxury Coats</English>
 		
 		<Portuguese>
-			<Text>Casacos de luxo</Text>
+			<Text>Casacos de Luxo</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -3389,7 +3389,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Ranger: Rangers</Text>
+			<Text>Ranger:Rangers</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3451,7 +3451,7 @@
 		<English>Red Pepper</English>
 		
 		<Portuguese>
-			<Text>Pimentão vermelho</Text>
+			<Text>Pimentão Vermelho</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3485,7 +3485,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Plantador especialista de pimenta vermelha:Plantadores especialistas de pimenta vermelha</Text>
+			<Text>Especialista Pimenteiro:Especialistas Pimenteiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3516,7 +3516,7 @@
 		<English>Master Roper:Master Ropers</English>
 		
 		<Portuguese>
-			<Text>Mestre Roper: Mestre Roper</Text>
+			<Text>Mestre Cordoador:Mestres Cordoadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3551,7 +3551,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Cavalaria Real: Cavalaria Real</Text>
+			<Text>Cavalaria Real:Cavalaria Real</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3619,7 +3619,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Soldado de Infantaria Ligeira Real: Soldados de Infantaria Ligeira Real</Text>
+			<Text>Infantaria Real Leve:Infantarias Reais Leves</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3653,7 +3653,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Soldado de Infantaria da Linha Real: Soldados de Infantaria da Linha Real</Text>
+			<Text>Infantaria Real:Infantarias Reais</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3715,7 +3715,7 @@
 		<English>Master Sailmaker:Master Sailmakers</English>
 		
 		<Portuguese>
-			<Text>Mestre Fabricante de velas:Mestres Fabricantes de velas</Text>
+			<Text>Mestre de Velas:Mestres de Velas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3808,7 +3808,7 @@
 		<English>Prepared Settler:Prepared Settlers</English>
 		
 		<Portuguese>
-			<Text>Colono Preparado: Colonos Preparados</Text>
+			<Text>Colono Preparado:Colonos Preparados</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3828,7 +3828,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Caçador de Focas Especialista: Caçadores de Focas Especialistas</Text>
+			<Text>Caçador de Focas:Caçadores de Focas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3859,7 +3859,7 @@
 		<English>Ship of the Line:Ships of the Line</English>
 		
 		<Portuguese>
-			<Text>Navio de Linha: Navios de Linha</Text>
+			<Text>Navio de 3ª Linha:Navios de 3ª Linha</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3890,7 +3890,7 @@
 		<English>Royal Ship of the Line:Royal Ships of the Line</English>
 		
 		<Portuguese>
-			<Text>Navio Real da Linha: Navios Reais da Linha</Text>
+			<Text>Navio Real de 2ª Linha:Navios Reais de 2ª Linha</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3921,7 +3921,7 @@
 		<English>Royal Ship of the Line 1st rate:Royal Ships of the Line 1st rate</English>
 		
 		<Portuguese>
-			<Text>Navio Real da Linha 1ª tarifa:Navios Reais da Linha 1ª tarifa</Text>
+			<Text>Navio Real de 1ª Linha:Navios Reais de 1ª Linha</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3942,7 +3942,7 @@
 		<English>Colonial Ship of the Line 1st rate:Colonial Ships of the Line 1st rate</English>
 		
 		<Portuguese>
-			<Text>Navio Colonial da Linha 1ª tarifa:Navios Coloniais da Linha 1ª tarifa</Text>
+			<Text>Navio Colonial de 1ª Linha:Navios Coloniais de 1ª Linha</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3966,7 +3966,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Saveiro: Saveiros</Text>
+			<Text>Saveiro:Saveiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4001,7 +4001,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Escuna: Escunas</Text>
+			<Text>Escuna:Escunas</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4024,7 +4024,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Pequeno navio costeiro:Pequenos navios costeiros</Text>
+			<Text>Barco Costeiro:Barcos Costeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4054,7 +4054,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Navio de contrabando:Navios de contrabando</Text>
+			<Text>Navio de Contrabando:Navios de Contrabando</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4122,7 +4122,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Comerciante Mestre de Especiarias: Comerciantes Mestres de Especiarias</Text>
+			<Text>Mestre de Especiarias:Mestres de Especiarias</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4153,7 +4153,7 @@
 		<English>Stagecoach:Stagecoaches</English>
 		
 		<Portuguese>
-			<Text>Diligência: diligências</Text>
+			<Text>Diligência:Diligências</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4176,7 +4176,7 @@
 		<English>Elder Statesman:Elder Statesmen</English>
 		
 		<Portuguese>
-			<Text>Estadista experiente:Estadistas experientes</Text>
+			<Text>Estadista Experiente:Estadistas Experientes</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4207,7 +4207,7 @@
 		<English>Expert Stonecutter:Expert Stonecutters</English>
 		
 		<Portuguese>
-			<Text>Cortador de Pedras Especialista:Cortadores de Pedras Especialistas</Text>
+			<Text>Canteiro:Canteiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4269,7 +4269,7 @@
 		<English>Expert Sugar Planter:Expert Sugar Planters</English>
 		
 		<Portuguese>
-			<Text>Plantador de Açúcar Especialista: Plantadores de Açúcar Especialistas</Text>
+			<Text>Especialista Açucareiro:Especialistas Açucareiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4396,7 +4396,7 @@
 		<English>Expert Tobacco Planter:Expert Tobacco Planters</English>
 		
 		<Portuguese>
-			<Text>Plantador de tabaco especializado: Plantadores de tabaco especializados</Text>
+			<Text>Especialista Tabaqueiro:Especialistas Tabaqueiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4430,7 +4430,7 @@
 			<Plural>1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Bens comerciais</Text>
+			<Text>Bens Comerciais</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4461,7 +4461,7 @@
 		<English>Carriage:Carriages</English>
 		
 		<Portuguese>
-			<Text>Transporte: Carruagens</Text>
+			<Text>Transporte:Carruagens</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4542,7 +4542,7 @@
 		<English>Trek:Treks</English>
 		
 		<Portuguese>
-			<Text>Jornada: Caminhadas</Text>
+			<Text>Jornada:Caminhadas</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4565,7 +4565,7 @@
 		<English>Veteran Infantry Soldier:Veteran Infantry Soldiers</English>
 		
 		<Portuguese>
-			<Text>Soldado de infantaria veterano:Soldados de infantaria veteranos</Text>
+			<Text>Soldado de Infantaria Veterano:Soldados de Infantaria Veteranos</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4596,7 +4596,7 @@
 		<English>Veteran Cavalryman:Veteran Cavalrymen</English>
 		
 		<Portuguese>
-			<Text>Cavalaria Veterana: Cavalaria Veterana</Text>
+			<Text>Cavalaria Veterana:Cavalaria Veterana</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4723,7 +4723,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Navio da Companhia das Índias Ocidentais:Navios da Companhia das Índias Ocidentais</Text>
+			<Text>Nau das Índias:Naus das Índias</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4757,7 +4757,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Transporte de Tropas Reais: Transportes de Tropas Reais</Text>
+			<Text>Transporte de Tropas Reais:Transportes de Tropas Reais</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4787,7 +4787,7 @@
 		<English>Whale Fat</English>
 		
 		<Portuguese>
-			<Text>Gordura de baleia</Text>
+			<Text>Gordura de Baleia</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4818,7 +4818,7 @@
 		<English>Train Oil</English>
 		
 		<Portuguese>
-			<Text>Óleo de baleia</Text>
+			<Text>Óleo de Baleia</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4852,7 +4852,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mestre refinador de óleo de baleia:Mestres refinadores de óleo de baleia</Text>
+			<Text>Mestre Baleeiro:Mestres Baleeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4948,7 +4948,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mestre Vintager:Mestre Vintager</Text>
+			<Text>Mestre Vinhateiro:Mestres Vinhateiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -5041,7 +5041,7 @@
 		<English>Wool Cloth</English>
 		
 		<Portuguese>
-			<Text>Pano de lã</Text>
+			<Text>Pano de Lã</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -5208,7 +5208,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Trader Nativo Especialista: Traders Nativos Especialistas</Text>
+			<Text>Comerciante Nativo:Comerciantes Nativos</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>

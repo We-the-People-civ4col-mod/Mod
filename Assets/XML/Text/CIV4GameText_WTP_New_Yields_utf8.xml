@@ -166,7 +166,7 @@
 		<English>Goatskins</English>
 		
 		<Portuguese>
-			<Text>Peles de cabra</Text>
+			<Text>Peles de Cabra</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -245,7 +245,7 @@
 		<English>Pigskins</English>
 		
 		<Portuguese>
-			<Text>Peles de porco</Text>
+			<Text>Peles de Porco</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -404,7 +404,7 @@
 		<English>Wild Bird Feathers</English>
 		
 		<Portuguese>
-			<Text>Penas de pássaros selvagens</Text>
+			<Text>Penas</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -482,7 +482,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_GOAT_HIDE_BOOTS</Tag>
 		<English>Lined Goatskin Boots</English>
-		<Portuguese>Botas forradas de pele de cabra</Portuguese>
+		<Portuguese>Botas de Cabra</Portuguese>
 		<French>Bottes fourrées en cuir de chèvre</French>
 		<German>Gefütterte Ziegenlederstiefel</German>
 		<Italian>Stivali in pelle di capra foderati</Italian>
@@ -537,7 +537,7 @@
 		<English>Pig Leather Aprons</English>
 		
 		<Portuguese>
-			<Text>Aventais de couro de porco</Text>
+			<Text>Aventais de Porco</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -696,7 +696,7 @@
 		<English>Fruit Brandy</English>
 		
 		<Portuguese>
-			<Text>Conhaque de frutas</Text>
+			<Text>Conhaque</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -814,7 +814,7 @@
 		<English>Upholstered Furniture</English>
 		
 		<Portuguese>
-			<Text>Móveis estofados</Text>
+			<Text>Móveis Estofados</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -893,7 +893,7 @@
 		<English>Hardwood</English>
 		
 		<Portuguese>
-			<Text>Madeira nobre</Text>
+			<Text>Madeira Nobre</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -972,7 +972,7 @@
 		<English>Maple Syrup</English>
 		
 		<Portuguese>
-			<Text>Xarope de bordo</Text>
+			<Text>Xarope de Bordo</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1051,7 +1051,7 @@
 		<English>Yerba Leaves</English>
 		
 		<Portuguese>
-			<Text>Folhas de erva</Text>
+			<Text>Folhas de Mate</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1130,7 +1130,7 @@
 		<English>Logwood</English>
 		
 		<Portuguese>
-			<Text>Madeira em toras</Text>
+			<Text>Pau-Campeche</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1209,7 +1209,7 @@
 		<English>Yerba Maté</English>
 		
 		<Portuguese>
-			<Text>Erva Mate</Text>
+			<Text>Mate</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1288,7 +1288,7 @@
 		<English>Coloured Wool Cloth</English>
 		
 		<Portuguese>
-			<Text>Pano de lã colorido</Text>
+			<Text>Pano de Lã Colorido</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1445,7 +1445,7 @@
 		<English>Charcoal</English>
 		
 		<Portuguese>
-			<Text>Carvão</Text>
+			<Text>Carvão Vegetal</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1681,7 +1681,7 @@
 		<English>Green Vanilla Pods</English>
 		
 		<Portuguese>
-			<Text>Vagens de baunilha verde</Text>
+			<Text>Vagens de Baunilha</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2194,7 +2194,7 @@
 		<English>Rapeseed Oil</English>
 		
 		<Portuguese>
-			<Text>Óleo de canola</Text>
+			<Text>Óleo de Canola</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2273,7 +2273,7 @@
 		<English>Household Goods</English>
 		
 		<Portuguese>
-			<Text>Bens Domésticos</Text>
+			<Text>Utensílios</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2351,7 +2351,7 @@
 		<English>Fieldworker Tools</English>
 		
 		<Portuguese>
-			<Text>Ferramentas para trabalho de campo</Text>
+			<Text>Ferramentas de Campo</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -2583,7 +2583,7 @@
 		<English>Chocolate</English>
 		
 		<Portuguese>
-			<Text>chocolate</Text>
+			<Text>Chocolate</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2661,7 +2661,7 @@
 		<English>Lined Leather Coats</English>
 		
 		<Portuguese>
-			<Text>Casacos de couro forrados</Text>
+			<Text>Casacos Forrados</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -3051,7 +3051,7 @@
 		<English>Everyday Clothes</English>
 		
 		<Portuguese>
-			<Text>Roupas do dia a dia</Text>
+			<Text>Roupas Comuns</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -3129,7 +3129,7 @@
 		<English>Formal Clothes</English>
 		
 		<Portuguese>
-			<Text>Roupas formais</Text>
+			<Text>Roupas Formais</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>

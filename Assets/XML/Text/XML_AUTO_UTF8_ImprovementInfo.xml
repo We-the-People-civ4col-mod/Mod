@@ -43,7 +43,7 @@
 		<English>Fruit Plantation</English>
 		
 		<Portuguese>
-			<Text>Plantação de frutas</Text>
+			<Text>Plantação de Frutas</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -119,7 +119,7 @@
 		<English>Collector's Post</English>
 		
 		<Portuguese>
-			<Text>Postagem de coletor</Text>
+			<Text>Posto de Coletor</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -195,7 +195,7 @@
 		<English>Planter's Post</English>
 		
 		<Portuguese>
-			<Text>Posto do plantador</Text>
+			<Text>Posto de Plantador</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -233,7 +233,7 @@
 		<English>Planter's Depot:Planter's Depots</English>
 		
 		<Portuguese>
-			<Text>Depósito de plantadores:Depósitos de plantadores</Text>
+			<Text>Depósito de Plantadores:Depósitos de Plantadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -347,7 +347,7 @@
 		<English>Windmill</English>
 		
 		<Portuguese>
-			<Text>Moinho de vento</Text>
+			<Text>Moinho de Vento</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -395,7 +395,7 @@
 		<English>Supply Depot</English>
 		
 		<Portuguese>
-			<Text>Depósito de suprimentos</Text>
+			<Text>Depósito de Suprimentos</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -419,7 +419,7 @@
 		<English>Large Supply Depot</English>
 		
 		<Portuguese>
-			<Text>Grande depósito de suprimentos</Text>
+			<Text>Grande Depósito de Suprimentos</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -588,7 +588,7 @@
 		<English>Ship Wreckage</English>
 		
 		<Portuguese>
-			<Text>Destroços do navio</Text>
+			<Text>Destroços do Navio</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -626,7 +626,7 @@
 		<English>Ship Wreck</English>
 		
 		<Portuguese>
-			<Text>Naufrágio de navio</Text>
+			<Text>Naufrágio de Navio</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -774,7 +774,7 @@
 		<English>Land worked</English>
 		
 		<Portuguese>
-			<Text>Terra trabalhada</Text>
+			<Text>Terra Trabalhada</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -811,7 +811,7 @@
 		<English>Lodge</English>
 		
 		<Portuguese>
-			<Text>Apresentar</Text>
+			<Text>Cabana</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -845,7 +845,7 @@
 		<English>Lumberjack Camp</English>
 		
 		<Portuguese>
-			<Text>Acampamento de lenhadores</Text>
+			<Text>Acampamento de Lenhadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -921,7 +921,7 @@
 		<English>Mine</English>
 		
 		<Portuguese>
-			<Text>Meu</Text>
+			<Text>Mina</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1111,7 +1111,7 @@
 		<English>Breeding Pen</English>
 		
 		<Portuguese>
-			<Text>Canil de Reprodução</Text>
+			<Text>Curral</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1135,7 +1135,7 @@
 		<English>Large Breeding Pen</English>
 		
 		<Portuguese>
-			<Text>Canil de Reprodução Grande</Text>
+			<Text>Curral Grande</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1375,7 +1375,7 @@
 		<English>Trapper Camp</English>
 		
 		<Portuguese>
-			<Text>Acampamento de caçadores</Text>
+			<Text>Acampamento de Caçadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1453,7 +1453,7 @@
 		<English>Mature Vineyard</English>
 		
 		<Portuguese>
-			<Text>Vinha madura</Text>
+			<Text>Vinha Madura</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1493,7 +1493,7 @@
 		<English>Waterworks</English>
 		
 		<Portuguese>
-			<Text>Sistema hidráulico</Text>
+			<Text>Sistema Hidráulico</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1570,7 +1570,7 @@
 		<English>Fishing Nets</English>
 		
 		<Portuguese>
-			<Text>Redes de pesca</Text>
+			<Text>Redes de Pesca</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1593,7 +1593,7 @@
 		<English>Hunters' Blind</English>
 		
 		<Portuguese>
-			<Text>Cegos dos Caçadores</Text>
+			<Text>Esconderijo</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1640,7 +1640,7 @@
 		<English>Large Salt Works</English>
 		
 		<Portuguese>
-			<Text>Grandes salinas</Text>
+			<Text>Grandes Salinas</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1724,7 +1724,7 @@
 		<English>Clay Pit</English>
 		
 		<Portuguese>
-			<Text>Poço de barro</Text>
+			<Text>Poço de Barro</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1762,7 +1762,7 @@
 		<English>Open Clay Mine</English>
 		
 		<Portuguese>
-			<Text>Abrir mina de argila</Text>
+			<Text>Mina de Argila</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1800,7 +1800,7 @@
 		<English>Peat Pit</English>
 		
 		<Portuguese>
-			<Text>Poço de turfa</Text>
+			<Text>Poço de Turfa</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1838,7 +1838,7 @@
 		<English>Open Peat Mine</English>
 		
 		<Portuguese>
-			<Text>Mina de turfa aberta</Text>
+			<Text>Mina de Turfa Aberta</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>

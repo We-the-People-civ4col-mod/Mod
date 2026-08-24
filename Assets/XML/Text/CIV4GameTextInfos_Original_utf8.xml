@@ -4330,7 +4330,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PLAY_NOW</Tag>
 		<English>Play Now!</English>
-		<Portuguese>Jogue agora!</Portuguese>
+		<Portuguese>Jogar Agora!</Portuguese>
 		<French>Jouer</French>
 		<German>Schnellstart auf Zufallskarte</German>
 		<Italian>Gioca ora!</Italian>
@@ -4363,7 +4363,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SCENARIO</Tag>
 		<English>Play a scenario</English>
-		<Portuguese>Jogue um cenário</Portuguese>
+		<Portuguese>Jogar Cenário</Portuguese>
 		<French>Jouer un scénario</French>
 		<German>Szenario Schnellstart</German>
 		<Italian>Gioca uno scenario</Italian>
@@ -4374,7 +4374,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_UPDATES</Tag>
 		<English>Check for updates</English>
-		<Portuguese>Verifique se há atualizações</Portuguese>
+		<Portuguese>Verificar atualizações</Portuguese>
 		<French>Chercher des mises à jour</French>
 		<German>Updates für Colonization suchen</German>
 		<Italian>Verifica aggiornamenti</Italian>
@@ -4385,7 +4385,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOAD_MOD</Tag>
 		<English>Load a Mod</English>
-		<Portuguese>Carregar um mod</Portuguese>
+		<Portuguese>Carregar Mod</Portuguese>
 		<French>Charger un mod</French>
 		<German>Andere Mod laden</German>
 		<Italian>Carica un mod</Italian>
@@ -4833,7 +4833,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_ABOUT_THIS_BUILD</Tag>
 		<English>About this build</English>
-		<Portuguese>Sobre esta construção</Portuguese>
+		<Portuguese>Sobre este build</Portuguese>
 		<French>À propos de cette version</French>
 		<German>Über diese Version</German>
 		<Italian>Informazioni su questa build</Italian>
@@ -4865,7 +4865,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_BUILD_DATE</Tag>
 		<English>Build Date :</English>
-		<Portuguese>Data de construção:</Portuguese>
+		<Portuguese>Data do build:</Portuguese>
 		<French>Date de compilation :</French>
 		<German>Versionsdatum :</German>
 		<Italian>Data della build :</Italian>
@@ -5627,7 +5627,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PBEM</Tag>
 		<English>Play by email</English>
-		<Portuguese>Jogue por e-mail</Portuguese>
+		<Portuguese>Jogar por E-mail</Portuguese>
 		<French>Jouer par e-mail</French>
 		<German>Per E-Mail spielen</German>
 		<Italian>Gioca tramite e-mail</Italian>
@@ -5787,7 +5787,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEAT_ACCOMPLISHED_OK</Tag>
 		<English>Very well, carry on then.</English>
-		<Portuguese>Muito bem, continue então.</Portuguese>
+		<Portuguese>Muito bem, prossiga</Portuguese>
 		<French>Très bien, continuez...</French>
 		<German>Na schön, weiter geht's ...</German>
 		<Italian>Molto bene, continua pure...</Italian>
@@ -12747,7 +12747,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_UNLOAD_MOD</Tag>
 		<English>Unload WTP</English>
-		<Portuguese>Descarregar ETA</Portuguese>
+		<Portuguese>Descarregar WTP</Portuguese>
 		<French>Décharger WTP</French>
 		<German>WTP deaktivieren</German>
 		<Italian>Annulla WTP</Italian>

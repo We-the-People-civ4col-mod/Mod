@@ -342,7 +342,7 @@
 		<English>Coca Leaves</English>
 		
 		<Portuguese>
-			<Text>Folhas de coca</Text>
+			<Text>Folhas de Coca</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -420,7 +420,7 @@
 		<English>Cocoa Pods</English>
 		
 		<Portuguese>
-			<Text>Vagens de cacau</Text>
+			<Text>Vagens de Cacau</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -490,7 +490,7 @@
 		<English>Coffee Berries</English>
 		
 		<Portuguese>
-			<Text>Bagas de café</Text>
+			<Text>Bagas de Café</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -761,7 +761,7 @@
 		<English>Fur</English>
 		
 		<Portuguese>
-			<Text>Pelagem</Text>
+			<Text>Peles</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1052,7 +1052,7 @@
 		<English>Cowhides</English>
 		
 		<Portuguese>
-			<Text>Couros bovinos</Text>
+			<Text>Couros</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1175,7 +1175,7 @@
 		<English>Leather Goods</English>
 		
 		<Portuguese>
-			<Text>Artigos de couro</Text>
+			<Text>Couro</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1216,7 +1216,7 @@
 		<English>Lumber</English>
 		
 		<Portuguese>
-			<Text>Madeira serrada</Text>
+			<Text>Madeira</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1256,7 +1256,7 @@
 			<Plural>1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Bens de luxo</Text>
+			<Text>Luxo</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1379,7 +1379,7 @@
 		<English>Luxury Coats</English>
 		
 		<Portuguese>
-			<Text>Casacos de luxo</Text>
+			<Text>Casacos de Luxo</Text>
 			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1502,7 +1502,7 @@
 		<English>Red Pepper</English>
 		
 		<Portuguese>
-			<Text>Pimentão vermelho</Text>
+			<Text>Pimentão Vermelho</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1711,7 +1711,7 @@
 		<English>Sheep</English>
 		
 		<Portuguese>
-			<Text>ovelha</Text>
+			<Text>Ovelhas</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1825,7 +1825,7 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Pedra: Pedras</Text>
+			<Text>Pedra:Pedras</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1999,7 +1999,7 @@
 			<Plural>1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Bens comerciais</Text>
+			<Text>Mercadorias</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2069,7 +2069,7 @@
 		<English>Whale Fat</English>
 		
 		<Portuguese>
-			<Text>Gordura de baleia</Text>
+			<Text>Banha de Baleia</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2108,7 +2108,7 @@
 		<English>Train Oil</English>
 		
 		<Portuguese>
-			<Text>Óleo de baleia</Text>
+			<Text>Óleo de Baleia</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -2231,7 +2231,7 @@
 		<English>Wool Cloth</English>
 		
 		<Portuguese>
-			<Text>Pano de lã</Text>
+			<Text>Pano de Lã</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
