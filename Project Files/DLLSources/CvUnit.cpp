@@ -2820,6 +2820,13 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 			return true;
 		}
 		break;
+	
+	case COMMAND_SELL_SLAVE:
+		if (canSellSlave())
+		{
+			return true;
+		}
+		break;
 	// WTP, Slave Emancipation - END
 
 	case COMMAND_UNLOAD:
@@ -3190,10 +3197,45 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 
 		// WTP, Slave Emancipation - START
 		case COMMAND_GRANT_FREEDOM:
-			grantFreedom();
-			bCycle = true;
+			{
+				CvCity* pCity = NULL;
+
+				if (plot() != NULL)
+				{
+					pCity = plot()->getPlotCity();
+				}
+
+				grantFreedom();
+
+				if (pCity != NULL)
+				{
+					const int iGameSpeedPercent =
+						GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+
+					const int iBaseUnrestTurns =
+						GC.getDefineINT("SLAVE_EMANCIPATION_UNREST_TURNS");
+
+					const int iUnrestTurns = std::max(
+						1,
+						iBaseUnrestTurns * iGameSpeedPercent / 100
+					);
+
+					pCity->changeSlaveEmancipationPendingUnrest(iUnrestTurns);
+				}
+
+				bCycle = true;
+			}
 			break;
 		// WTP, Slave Emancipation - END
+
+		// WTP, Slave Sale - START
+		case COMMAND_SELL_SLAVE:
+			{
+				sellSlave();
+				bCycle = true;
+			}
+			break;
+		// WTP, Slave Sale - END
 
 		case COMMAND_UNLOAD:
 			if (iData2 >= 0)
@@ -17077,14 +17119,35 @@ bool CvUnit::canGrantFreedom() const
 		return false;
 	}
 
-	// WTP, prevent citizen replacement in revolting cities
+	// Population unit: already inside a city
 	CvCity* pCity = kPlayer.getPopulationUnitCity(getID());
+
 	if (pCity != NULL)
 	{
 		if (pCity->isOccupation())
 		{
 			return false;
 		}
+
+		return true;
+	}
+
+	// Map unit: emancipation is only possible directly on an own city plot
+	if (plot() == NULL || !plot()->isCity())
+	{
+		return false;
+	}
+
+	pCity = plot()->getPlotCity();
+
+	if (pCity == NULL || pCity->getOwnerINLINE() != getOwnerINLINE())
+	{
+		return false;
+	}
+
+	if (pCity->isOccupation())
+	{
+		return false;
 	}
 
 	return true;
@@ -17123,15 +17186,21 @@ void CvUnit::grantFreedom()
 		return;
 	}
 
-	CvUnit* pNewUnit = kPlayer.initUnit(eFreedUnit, NO_PROFESSION, getX_INLINE(), getY_INLINE());
+	CvCity* pCity = kPlayer.getPopulationUnitCity(getID());
+
+	CvUnit* pNewUnit = kPlayer.initUnit(
+		eFreedUnit,
+		NO_PROFESSION,
+		getX_INLINE(),
+		getY_INLINE()
+	);
+
 	FAssert(pNewUnit != NULL);
 
 	if (pNewUnit == NULL)
 	{
 		return;
 	}
-
-	CvCity* pCity = kPlayer.getPopulationUnitCity(getID());
 
 	if (pCity != NULL)
 	{
@@ -17154,6 +17223,87 @@ void CvUnit::grantFreedom()
 	}
 }
 // WTP, Slave Emancipation - END
+
+// WTP, Slave Sale - START
+bool CvUnit::canSellSlave() const
+{
+	const UnitClassTypes eUnitClass = getUnitInfo().getUnitClassType();
+
+	if (eUnitClass != GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE &&
+		eUnitClass != GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
+	{
+		return false;
+	}
+
+	// Slave sale is only possible for map units directly on an own city plot.
+	if (plot() == NULL || !plot()->isCity())
+	{
+		return false;
+	}
+
+	CvCity* pCity = plot()->getPlotCity();
+
+	if (pCity == NULL || pCity->getOwnerINLINE() != getOwnerINLINE())
+	{
+		return false;
+	}
+
+	if (pCity->isOccupation())
+	{
+		return false;
+	}
+
+	return true;
+}
+
+int CvUnit::getSlaveSellPrice() const
+{
+	const UnitClassTypes eUnitClass = getUnitInfo().getUnitClassType();
+
+	int iBasePrice = 0;
+
+	if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
+	{
+		iBasePrice = GC.getDefineINT("BASE_AFRICAN_SLAVES_PRICE");
+	}
+	else if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
+	{
+		iBasePrice = GC.getDefineINT("BASE_NATIVE_SLAVE_PRICE");
+	}
+	else
+	{
+		return 0;
+	}
+
+	const int iSellPercent = GC.getDefineINT("SLAVE_SELL_PRICE_PERCENT");
+
+	const int iGameSpeedPercent =
+		GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+
+	return iBasePrice * iSellPercent * iGameSpeedPercent / 10000;
+}
+
+void CvUnit::sellSlave()
+{
+	if (!canSellSlave())
+	{
+		return;
+	}
+
+	const int iSellPrice = getSlaveSellPrice();
+
+	if (iSellPrice <= 0)
+	{
+		return;
+	}
+
+	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
+
+	kPlayer.changeGold(iSellPrice);
+
+	kill(false);
+}
+// WTP, Slave Sale - END
 
 // WTP, ray, Construction Supplies - START
 bool CvUnit::canUseProductionSupplies() const

@@ -621,6 +621,35 @@ void CvCity::doTurn()
 		// WTP, ray, Change for Request "Occupation has ended" - START
 	}
 
+	// WTP, Slave Emancipation - START
+	if (m_iSlaveEmancipationPendingUnrest > 0)
+	{
+		changeOccupationTimer(m_iSlaveEmancipationPendingUnrest);
+
+		// Inform the player and use the same sound as regular city unrest.
+		CvWString szBuffer = gDLL->getText(
+			"TXT_KEY_SLAVE_EMANCIPATION_UNREST",
+			getNameKey()
+		);
+
+		gDLL->UI().addPlayerMessage(
+			getOwnerINLINE(),
+			false,
+			GC.getEVENT_MESSAGE_TIME(),
+			szBuffer,
+			coord(),
+			"AS2D_CITYCAPTURED",
+			MESSAGE_TYPE_MAJOR_EVENT,
+			ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(),
+			COLOR_RED,
+			true,
+			true
+		);
+
+		m_iSlaveEmancipationPendingUnrest = 0;
+	}
+	// WTP, Slave Emancipation - END
+
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
 		m_aPopulationUnits[i]->doTurn();
@@ -3861,6 +3890,28 @@ void CvCity::changeOccupationTimer(int iChange)
 	setOccupationTimer(getOccupationTimer() + iChange);
 }
 
+// WTP, Slave Emancipation - START
+void CvCity::changeSlaveEmancipationPendingUnrest(int iChange)
+{
+	if (iChange <= 0)
+	{
+		return;
+	}
+
+	const int iGameSpeedPercent =
+		GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+
+	const int iMaxUnrestTurns = std::max(
+		1,
+		10 * iGameSpeedPercent / 100
+	);
+
+	m_iSlaveEmancipationPendingUnrest = std::min(
+		iMaxUnrestTurns,
+		m_iSlaveEmancipationPendingUnrest + iChange
+	);
+}
+// WTP, Slave Emancipation - END
 
 int CvCity::getCultureUpdateTimer() const
 {
@@ -13122,7 +13173,8 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	if (isHuman() && (modcase == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE || modcase == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE))
 	{
 		const int iTrainPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
-		const int iCooldownTurns = std::max(1, 30 * iTrainPercent / 100);
+		const int iBaseCooldownTurns = GC.getDefineINT("SLAVE_EMANCIPATION_LBD_COOLDOWN");
+		const int iCooldownTurns = std::max(1, iBaseCooldownTurns * iTrainPercent / 100);
 
 		convUnit->setLbDFreeReadyTurn(GC.getGameINLINE().getGameTurn() + iCooldownTurns);
 

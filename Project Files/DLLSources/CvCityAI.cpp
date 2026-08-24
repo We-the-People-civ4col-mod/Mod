@@ -3378,6 +3378,192 @@ BestJob AI_findBestJob(const CvCityAI& kCity, ProfessionTypes eProfession, const
 	return BestJob(iBestValue, eBestPlot, eBestProfession, kUnit.getID());
 }
 
+// WTP, Slave AI - START
+bool CvCityAI::AI_hasSuitableJob(const CvUnit& kUnit, bool bIndoorOnly) const
+{
+	const std::vector<std::vector<ProfessionTypes> >& groups =
+		GET_PLAYER(getOwnerINLINE()).m_professionGroups;
+
+	for (size_t iGroup = 0; iGroup < groups.size(); ++iGroup)
+	{
+		const std::vector<ProfessionTypes>& group = groups[iGroup];
+
+		for (size_t iProfession = 0; iProfession < group.size(); ++iProfession)
+		{
+			const ProfessionTypes eProfession = group[iProfession];
+
+			// false = outdoor only
+			// true  = indoor only
+			if (bIndoorOnly == GC.getProfessionInfo(eProfession).isWorkPlot())
+			{
+				continue;
+			}
+
+			const BestJob kBestJob =
+				AI_findBestJob(*this, eProfession, kUnit, bIndoorOnly);
+
+			if (kBestJob.iBestValue > 0)
+			{
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+// WTP, Slave AI - END
+
+// WTP, Slave AI - START
+bool CvCityAI::AI_hasSuitableIndoorJob(UnitTypes eUnit) const
+{
+	if (eUnit == NO_UNIT)
+	{
+		return false;
+	}
+
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eUnit);
+
+	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+	{
+		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+
+		// Indoor citizen professions only.
+		if (!kProfession.isCitizen() || kProfession.isWorkPlot())
+		{
+			continue;
+		}
+
+		if (!GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eProfession))
+		{
+			continue;
+		}
+
+		if (kUnitInfo.getProfessionsNotAllowed(eProfession))
+		{
+			continue;
+		}
+
+		if (!kOwner.isProfessionValid(eProfession, eUnit))
+		{
+			continue;
+		}
+
+		// Units which cannot be students must not be considered for education.
+		bool bValidProfession = true;
+
+		for (int i = 0; i < kProfession.getNumYieldsProduced(); ++i)
+		{
+			if (kProfession.getYieldsProduced(i) == YIELD_EDUCATION &&
+				kUnitInfo.getStudentWeight() <= 0)
+			{
+				bValidProfession = false;
+				break;
+			}
+		}
+
+		if (!bValidProfession)
+		{
+			continue;
+		}
+
+		// The required building must actually provide output for this unit.
+		if (AI_professionBasicOutput(eProfession, eUnit, NULL) <= 0)
+		{
+			continue;
+		}
+
+		const int iNewSuitability =
+			kOwner.AI_professionSuitability(eUnit, eProfession);
+
+		if (iNewSuitability <= 0)
+		{
+			continue;
+		}
+
+		// Check whether there is a free slot in a matching building.
+		bool bFreeSlot = false;
+
+		for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
+		{
+			if (!isHasBuilding(eBuilding))
+			{
+				continue;
+			}
+
+			if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() !=
+				kProfession.getSpecialBuilding())
+			{
+				continue;
+			}
+
+			int iSlots = GC.getBuildingInfo(eBuilding).getMaxWorkers();
+
+			for (int i = 0; i < getPopulation(); ++i)
+			{
+				const CvUnit* pLoopUnit = getPopulationUnitByIndex(i);
+
+				if (pLoopUnit == NULL ||
+					pLoopUnit->getProfession() == NO_PROFESSION)
+				{
+					continue;
+				}
+
+				if (GC.getProfessionInfo(pLoopUnit->getProfession()).getSpecialBuilding() ==
+					kProfession.getSpecialBuilding())
+				{
+					--iSlots;
+				}
+			}
+
+			if (iSlots > 0)
+			{
+				bFreeSlot = true;
+				break;
+			}
+		}
+
+		if (bFreeSlot)
+		{
+			return true;
+		}
+
+		// No free slot: freeing is still useful if the new unit would
+		// replace a worse, unlocked indoor worker.
+		for (int i = 0; i < getPopulation(); ++i)
+		{
+			const CvUnit* pLoopUnit = getPopulationUnitByIndex(i);
+
+			if (pLoopUnit == NULL ||
+				pLoopUnit->isColonistLocked() ||
+				pLoopUnit->getProfession() == NO_PROFESSION)
+			{
+				continue;
+			}
+
+			if (GC.getProfessionInfo(pLoopUnit->getProfession()).getSpecialBuilding() !=
+				kProfession.getSpecialBuilding())
+			{
+				continue;
+			}
+
+			const int iOldSuitability =
+				kOwner.AI_professionSuitability(
+					pLoopUnit->getUnitType(),
+					pLoopUnit->getProfession()
+				);
+
+			if (iNewSuitability > iOldSuitability)
+			{
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+// WTP, Slave AI - END
+
 struct FindBestJob
 {
 	FindBestJob(const std::vector<std::vector<ProfessionTypes> >& groups_,

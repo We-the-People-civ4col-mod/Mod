@@ -2351,23 +2351,60 @@ bool CvDLLButtonPopup::launchConfirmCommandPopup(CvPopup* pPopup, CvPopupInfo &i
 	int iAction = info.getData1();
 	CvWString szBuffer;
 
+	const CommandTypes eCommand = GC.getActionInfo(iAction).getCommandType();
+
 	// WTP, Slave Emancipation - START
-	if (GC.getActionInfo(iAction).getCommandType() == COMMAND_GRANT_FREEDOM)
+	if (eCommand == COMMAND_GRANT_FREEDOM)
 	{
 		szBuffer = gDLL->getText("TXT_KEY_GRANT_FREEDOM_CONFIRM");
 	}
-	else
-	{
-		szBuffer = gDLL->getText("TXT_KEY_POPUP_ARE_YOU_SURE_ACTION", GC.getActionInfo(iAction).getTextKeyWide());
-	}
 	// WTP, Slave Emancipation - END
 
-	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, szBuffer);
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_YES").c_str(), NULL, 0);
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_NO").c_str());
-	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
+	// WTP, Slave Sale - START
+	else if (eCommand == COMMAND_SELL_SLAVE)
+	{
+		CvUnit* pUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
 
-	return (true);
+		if (pUnit != NULL && pUnit->canSellSlave())
+		{
+			szBuffer = gDLL->getText(
+				"TXT_KEY_SELL_SLAVE_CONFIRM",
+				pUnit->getSlaveSellPrice()
+			);
+		}
+		else
+		{
+			return false;
+		}
+	}
+	// WTP, Slave Sale - END
+
+	else
+	{
+		szBuffer = gDLL->getText(
+			"TXT_KEY_POPUP_ARE_YOU_SURE_ACTION",
+			GC.getActionInfo(iAction).getTextKeyWide()
+		);
+	}
+
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, szBuffer);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(
+		pPopup,
+		gDLL->getText("TXT_KEY_POPUP_YES").c_str(),
+		NULL,
+		0
+	);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(
+		pPopup,
+		gDLL->getText("TXT_KEY_POPUP_NO").c_str()
+	);
+	gDLL->getInterfaceIFace()->popupLaunch(
+		pPopup,
+		false,
+		POPUPSTATE_IMMEDIATE
+	);
+
+	return true;
 }
 
 bool CvDLLButtonPopup::launchConfirmTaskPopup(CvPopup* pPopup, CvPopupInfo &info)

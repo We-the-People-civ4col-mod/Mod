@@ -261,6 +261,20 @@
 		<DefineName>LBD_CHANCE_MOD_REVOLT_SLAVE</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
+	<!-- WTP, Slave Emancipation - START -->
+	<Define>
+		<DefineName>SLAVE_EMANCIPATION_LBD_COOLDOWN</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>SLAVE_EMANCIPATION_UNREST_TURNS</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>SLAVE_SELL_PRICE_PERCENT</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<!-- WTP, Slave Emancipation - END -->
 	<Define>
 		<DefineName>UNITCLASS_FREED_SLAVE</DefineName>
 		<DefineTextVal>UNITCLASS_FREED_SLAVE</DefineTextVal>

@@ -298,4 +298,14 @@
 		<English>Grant this slave freedom.</English>
 		<German>Diesem Sklaven die Freiheit gewähren.</German>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SELL_SLAVE_CONFIRM</Tag>
+		<English>Do you want to sell this slave for %d1 gold?</English>
+		<German>Möchtet Ihr diesen Sklaven für %d1 Gold verkaufen?</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_SELL_SLAVE_HELP</Tag>
+		<English>Sell this slave.</English>
+		<German>Diesem Sklaven verkaufen.</German>
+	</TEXT>
 </Civ4GameText>

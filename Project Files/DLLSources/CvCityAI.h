@@ -98,6 +98,10 @@ public:
 
 	ProfessionTypes AI_bestPlotProfession(const CvUnit* pUnit, const CvPlot* pPlot) const;
 	int AI_bestProfessionPlot(ProfessionTypes eProfession, const CvUnit* pUnit) const;
+	// WTP, Slave AI - START
+	bool AI_hasSuitableJob(const CvUnit& kUnit, bool bIndoorOnly) const;
+	bool AI_hasSuitableIndoorJob(UnitTypes eUnit) const;
+	// WTP, Slave AI - END
 	// Non-virtual wrapper for AI_professionValue
 	int AI_citizenProfessionValue(
 		ProfessionTypes eProfession,

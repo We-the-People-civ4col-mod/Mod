@@ -225,6 +225,11 @@ public:
 	bool canGrantFreedom() const;
 	void grantFreedom();
 	// WTP, Slave Emancipation - END
+	// WTP, Slave Sale Start
+	bool canSellSlave() const;
+	int getSlaveSellPrice() const;
+	void sellSlave();
+	// WTP, Slave Sale - END
 
 	// WTP, ray, Construction Supplies - START
 	bool canUseProductionSupplies() const;

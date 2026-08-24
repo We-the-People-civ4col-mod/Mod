@@ -12170,4 +12170,9 @@
 		<Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_UnitName [NUM1:ha:ha:han:han] reducido las defensas de %s2_CityName al %d3_NewVal%%.</Spanish>
 		<Russian>Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] докладывает: Бомбардировка [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] проходит успешно! Уровень защиты снижен до %d3_NewVal%%!</Russian>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SLAVE_EMANCIPATION_UNREST</Tag>
+		<English>The emancipation of slaves has caused unrest in %s1.</English>
+		<German>Die Freilassung von Sklaven hat in %s1 Unruhe ausgelöst.</German>
+	</TEXT>
 </Civ4GameText>
