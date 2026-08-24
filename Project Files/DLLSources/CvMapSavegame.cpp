@@ -130,31 +130,15 @@ void CvMap::read(CvSavegameReader reader)
 		case Save_Plots:
 		{
 			FAssertMsg(m_pMapPlots == NULL, "Memory leak");
-			const int iSavedWidth = m_iGridWidth;
-			const int iSavedHeight = m_iGridHeight;
-			applyGlobeviewSafeDimensions();
-			m_pMapPlots = new CvPlot[numPlotsINLINE()];
-			for (int iY = 0; iY < getGridHeightINLINE(); ++iY)
+			// 1. do not applyGlobeviewSafeDimensions here. Tish (We-The-People Americas
+			//    Gigantic 136x256) aborts the EXE if we grow the plot array during load.
+			//    pad only on new games (CvMap::init). already-padded 177-wide saves load as-is.
+			const int iNumPlots = numPlotsINLINE();
+			m_pMapPlots = new CvPlot[iNumPlots];
+			for (int iI = 0; iI < iNumPlots; ++iI)
 			{
-				for (int iX = 0; iX < getGridWidthINLINE(); ++iX)
-				{
-					plotSoren(iX, iY)->init(iX, iY);
-				}
+				m_pMapPlots[iI].read(reader);
 			}
-			const int iWest = m_iGlobeviewPadWest;
-			const int iSouth = m_iGlobeviewPadSouth;
-			for (int iY = 0; iY < iSavedHeight; ++iY)
-			{
-				for (int iX = 0; iX < iSavedWidth; ++iX)
-				{
-					CvPlot* pPlot = plotSoren(iX + iWest, iY + iSouth);
-					pPlot->read(reader);
-					pPlot->setCoordinates(iX + iWest, iY + iSouth);
-				}
-			}
-			// 1. do not setTerrainType on pad plots here. areas are not in the save yet
-			//    (Plots is written before Areas). Tish / We-The-People gigantic saves
-			//    aborted in the EXE when ocean pad ran during plot read.
 			break;
 		}
 		case Save_Areas:
@@ -203,10 +187,6 @@ void CvMap::read(CvSavegameReader reader)
 			}
 		}
 	}
-
-	applyGlobeviewPadPlotDefaults();
-	applyGlobeviewPadAreas();
-	applyGlobeviewPadEurope();
 }
 
 void CvMap::write(CvSavegameWriter writer)

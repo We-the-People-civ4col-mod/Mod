@@ -342,8 +342,8 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 
 // 1. EXE globe texture goes black on tall maps (Americas Gigantic 136x256).
 //    Issue #723 and Don_Drochilla: keep height/width around 1.45 at gigantic Y
-//    (1.72 on huge). Pad ocean on new games AND on save load so the user does
-//    not have to edit the map file.
+//    (1.72 on huge). Pad ocean on NEW games / WB. Do not grow the plot array
+//    while reading a save: We-The-People 136x256 saves (Tish) abort the EXE.
 // 2. Split the extra columns on west AND east (rows on south AND north).
 //    East-only pad made east-coast starts sail farther to Europe.
 //    Unpadded saves shift plot/city/unit x,y by the west/south amount.
