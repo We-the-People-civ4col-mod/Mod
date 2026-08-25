@@ -2915,24 +2915,55 @@ void CvUnitAI::AI_attackCityMove()
 	}
 
 	CvCity* pTargetCity = NULL;
+	// 1. XML is the Standard-map nearby path cap (turns, not tiles). scale by actual map height
+	//    so huge/gigantic still see a local city before falling back to a far capital.
+	int iNearPathTurns = GC.getDefineINT("AI_STACK_ATTACK_NEAR_PATH_TURNS");
+	if (iNearPathTurns <= 0)
+	{
+		iNearPathTurns = 12;
+	}
+	{
+		// 2. 64 is WORLDSIZE_STANDARD iGridHeight in CIV4WorldInfo.xml. do not call
+		//    GC.getWorldInfo(WORLDSIZE_STANDARD).getGridHeight() from this cpp:
+		//    WORLDSIZE_STANDARD is an AutoXml enum and is not declared here. VC++ 2003
+		//    then fails C2065 and the std::max line after it.
+		const int iStdHeight = 64;
+		const int iMapHeight = std::max(1, GC.getMap().getGridHeightINLINE());
+		iNearPathTurns = (iNearPathTurns * iMapHeight + iStdHeight / 2) / iStdHeight;
+		if (iNearPathTurns < 8)
+		{
+			iNearPathTurns = 8;
+		}
+		else if (iNearPathTurns > 24)
+		{
+			iNearPathTurns = 24;
+		}
+	}
 	if( isNative() )
 	{
-		pTargetCity = AI_pickTargetCity(0, 12);
+		pTargetCity = AI_pickTargetCity(0, iNearPathTurns);
 	}
 	else
 	{
-		// BBAI TODO: Find some way of reliably targetting nearby cities with less defense ...
-		pTargetCity = AI_pickTargetCity(0, MAX_INT, bHuntBarbs);
+		pTargetCity = AI_pickTargetCity(0, iNearPathTurns, bHuntBarbs);
+		if (pTargetCity == NULL)
+		{
+			pTargetCity = AI_pickTargetCity(0, MAX_INT, bHuntBarbs);
+		}
 	}
 
 	if( pTargetCity != NULL )
 	{
 		int iStepDistToTarget = stepDistance(pTargetCity->getX_INLINE(), pTargetCity->getY_INLINE(), getX_INLINE(), getY_INLINE());
-		int iAttackRatio = 120;
+		int iAttackRatio = GC.getDefineINT("AI_STACK_ATTACK_RATIO");
 
 		if( isNative() )
 		{
-			iAttackRatio = 80;
+			iAttackRatio = GC.getDefineINT("AI_NATIVE_STACK_ATTACK_RATIO");
+		}
+		if (iAttackRatio <= 0)
+		{
+			iAttackRatio = isNative() ? 80 : 120;
 		}
 
 		int iComparePostBombard = 0;
@@ -2995,7 +3026,6 @@ void CvUnitAI::AI_attackCityMove()
 					//stack attack
 					if (getGroup()->getNumUnits() > 1)
 					{
-						// BBAI TODO: What is right ratio?
 						if (AI_stackAttackCity(1, iAttackRatio, true))
 						{
 							return;

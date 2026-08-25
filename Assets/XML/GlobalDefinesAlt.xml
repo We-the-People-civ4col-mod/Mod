@@ -496,6 +496,19 @@
 		<iDefineIntVal>32</iDefineIntVal>
 	</Define>
 	<Define>
+		<!-- 1. colonial stacks used 120%, natives 80%, hardcoded. nearby path was 12 for natives only. -->
+		<DefineName>AI_STACK_ATTACK_RATIO</DefineName>
+		<iDefineIntVal>120</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>AI_NATIVE_STACK_ATTACK_RATIO</DefineName>
+		<iDefineIntVal>80</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>AI_STACK_ATTACK_NEAR_PATH_TURNS</DefineName>
+		<iDefineIntVal>12</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>BASE_CHANCE_EUROPE_PEACE</DefineName>
 		<iDefineIntVal>500</iDefineIntVal>
 	</Define>
