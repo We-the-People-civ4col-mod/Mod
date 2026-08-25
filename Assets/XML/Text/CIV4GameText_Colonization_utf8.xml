@@ -1287,7 +1287,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_IMMIGRATION_CONVERSION</Tag>
 		<English>[ICON_BULLET]Converts emigration %F1_yield into %F2_yield</English>
-		<Portuguese>[ICON_BULLET]Converte imigração %F1_yield em %F2_yield</Portuguese>
+		<Portuguese>[ICON_BULLET]Converte emigração %F1_yield em %F2_yield</Portuguese>
 		<French>[ICON_BULLET]Convertit l'immigration %F1_yield en %F2_yield</French>
 		<German>[ICON_BULLET]Wandelt %F1_yield für Auswanderung in %F2_yield um</German>
 		<Italian>[ICON_BULLET]Converte %F1_yield d'immigrazione in %F2_yield</Italian>
@@ -3224,7 +3224,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_HURRY_IMMIGRATION</Tag>
 		<English>Hurry Emigration</English>
-		<Portuguese>Acelerar imigração</Portuguese>
+		<Portuguese>Acelerar emigração</Portuguese>
 		<French>Accélérer l'émigration</French>
 		<German>Auswanderung beschleunigen</German>
 		<Italian>Accelera l'emigrazione</Italian>
