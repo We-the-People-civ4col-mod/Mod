@@ -39,13 +39,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_CHAR_COAL</Tag>
 		<English>Emphasize Charcoal</English>
-		<Portuguese>Enfatize o carvão</Portuguese>
+		<Portuguese>Enfatize o carvão vegetal</Portuguese>
 		<German>Schwerpunkt Holzkohle</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_CHAR_COAL</Tag>
 		<English>Deemphasize Charcoal</English>
-		<Portuguese>Desenfatizar o carvão</Portuguese>
+		<Portuguese>Diminuir a ênfase no carvão vegetal</Portuguese>
 		<German>Schwerpunkt Holzkohle aufheben</German>
 	</TEXT>
 	<TEXT>
