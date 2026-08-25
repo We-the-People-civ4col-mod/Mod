@@ -651,7 +651,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_UNDEMANDING_SHORT</Tag>
 		<English>Und</English>
-		<Portuguese>E</Portuguese>
+		<Portuguese>Peq</Portuguese>
 		<French>Peu</French>
 		<German>Gen</German>
 		<Italian>Und</Italian>
@@ -684,7 +684,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CAPITALIST_SHORT</Tag>
 		<English>Cap</English>
-		<Portuguese>Boné</Portuguese>
+		<Portuguese>Cap</Portuguese>
 		<French>Cap</French>
 		<German>Kap</German>
 		<Italian>Cap</Italian>
@@ -728,7 +728,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GENERAL_SHORT</Tag>
 		<English>Gen</English>
-		<Portuguese>Geral</Portuguese>
+		<Portuguese>Gen</Portuguese>
 		<French>GeEx</French>
 		<German>ErfG</German>
 		<Italian>EsG</Italian>
@@ -750,7 +750,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_IMPERIALIST_SHORT</Tag>
 		<English>Imp</English>
-		<Portuguese>Diabrete</Portuguese>
+		<Portuguese>Imp</Portuguese>
 		<French>Imp</French>
 		<German>Imp</German>
 		<Italian>Imp</Italian>
@@ -794,7 +794,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_LIBERTARIAN_SHORT</Tag>
 		<English>Lib</English>
-		<Portuguese>Biblioteca</Portuguese>
+		<Portuguese>Lib</Portuguese>
 		<French>Lib</French>
 		<German>Reb</German>
 		<Italian>Lib</Italian>
@@ -805,7 +805,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_COOPERATIVE_SHORT</Tag>
 		<English>Coop</English>
-		<Portuguese>Cooperativa</Portuguese>
+		<Portuguese>Coop</Portuguese>
 		<French>Coop</French>
 		<German>Koop</German>
 		<Italian>Coop</Italian>
@@ -860,7 +860,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CONQUEROR_SHORT</Tag>
 		<English>Con</English>
-		<Portuguese>Contra</Portuguese>
+		<Portuguese>Con</Portuguese>
 		<French>Conq</French>
 		<German>Erob</German>
 		<Italian>Con</Italian>
@@ -882,7 +882,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CITYBUILDER_SHORT</Tag>
 		<English>Cit</English>
-		<Portuguese>Cidade</Portuguese>
+		<Portuguese>Pró</Portuguese>
 		<French>Pro</French>
 		<German>Sb</German>
 		<Italian>Pro</Italian>
@@ -893,7 +893,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PUPIL_SHORT</Tag>
 		<English>Pup</English>
-		<Portuguese>Filhote</Portuguese>
+		<Portuguese>Pup</Portuguese>
 		<French>Imp</French>
 		<German>Zög</German>
 		<Italian>Imp</Italian>
@@ -926,7 +926,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_MENTOR_SHORT</Tag>
 		<English>Men</English>
-		<Portuguese>Homens</Portuguese>
+		<Portuguese>Men</Portuguese>
 		<French>Men</French>
 		<German>Lehr</German>
 		<Italian>Men</Italian>
@@ -937,7 +937,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FORESTWARRIORS_SHORT</Tag>
 		<English>For</English>
-		<Portuguese>Para</Portuguese>
+		<Portuguese>For</Portuguese>
 		<French>Cou</French>
 		<German>Wakr</German>
 		<Italian>Ben</Italian>
@@ -948,7 +948,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_FARMERS_SHORT</Tag>
 		<English>Farm</English>
-		<Portuguese>Fazenda</Portuguese>
+		<Portuguese>Agr</Portuguese>
 		<French>Pro</French>
 		<German>Bau</German>
 		<Italian>Pro</Italian>
@@ -959,7 +959,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_NOMADS_SHORT</Tag>
 		<English>Nom</English>
-		<Portuguese>Nome</Portuguese>
+		<Portuguese>Nom</Portuguese>
 		<French>Pro</French>
 		<German>Nom</German>
 		<Italian>Pro</Italian>
@@ -970,7 +970,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_HUNTERS_SHORT</Tag>
 		<English>Hun</English>
-		<Portuguese>Huno</Portuguese>
+		<Portuguese>Caç</Portuguese>
 		<French>Chass</French>
 		<German>Hun</German>
 		<Italian>Hun</Italian>
@@ -1023,7 +1023,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DEVOUT_SHORT</Tag>
 		<English>Dev</English>
-		<Portuguese>Desenvolvedor</Portuguese>
+		<Portuguese>Dev</Portuguese>
 		<French>Devot</French>
 		<German>Frm</German>
 		<Italian>Dev</Italian>
@@ -2436,7 +2436,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EU_TO_CITY</Tag>
 		<English>to [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</English>
-		<Portuguese>to [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Portuguese>
+		<Portuguese>para [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Portuguese>
 		<French>puis mouillage à [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</French>
 		<German>nach [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</German>
 		<Italian>to [COLOR_YELLOW]%s1[COLOR_REVERT]</Italian>

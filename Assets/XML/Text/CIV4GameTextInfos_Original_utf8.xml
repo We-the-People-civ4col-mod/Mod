@@ -13211,7 +13211,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_CITY_ATTACK</Tag>
 		<English>(Settlement attack : %D1%%)</English>
-		<Portuguese>(Ataque aa colônia: %D1%%)</Portuguese>
+		<Portuguese>(Ataque à colônia: %D1%%)</Portuguese>
 		<French>(Attaque de colonie : %D1%%)</French>
 		<German>(Siedlungsangriff : %D1%%)</German>
 		<Italian>(Attacco insediamento : %D1%%)</Italian>

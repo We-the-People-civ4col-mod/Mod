@@ -106,7 +106,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_WATER_FOOD_DEMAND</Tag>
 		<English>Milord, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] is a coastal settlement. It shall reap the fruits of the sea! The construction of a [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] will increase its growth significantly!</English>
-		<Portuguese>Milorde, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] é uma colônia costeiro. Colherá os frutos do mar! A construção de um [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] aumentará significativamente o seu crescimento!</Portuguese>
+		<Portuguese>Milorde, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] é uma colônia costeira. Colherá os frutos do mar! A construção de um [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] aumentará significativamente o seu crescimento!</Portuguese>
 		<French>Seigneur, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] est une colonie côtière - elle devrait profiter des bienfaits de la mer ! La construction du bâtiment : [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] augmenterait considérablement sa croissance !</French>
 		<German>Milord, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] ist eine Küstensiedlung und damit ideal geeignet, um Meeresfrüchte zu ernten! Durch die Errichtung des Gebäudes [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] könnten wir das Wachstum der Siedlung deutlich steigern!</German>
 		<Italian>Signore, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] è un insediamento costiero: dovrebbe sfruttare i doni del mare! La costruzione di [NUM2:un:una] [COLOR_BUILDING_TEXT]%s2_BldgName[COLOR_REVERT] aumenterebbe di molto la sua crescita!</Italian>
@@ -117,7 +117,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_CITY_HELP</Tag>
 		<English>The unit will improve its closest settlement exclusively. It continues working until you cancel its automation.</English>
-		<Portuguese>A unidade melhorará exclusivamente o sua colônia mais próximo. Ele continua funcionando até você cancelar sua automação.</Portuguese>
+		<Portuguese>A unidade melhorará exclusivamente a sua colônia mais próxima. Ela continua funcionando até você cancelar a automação.</Portuguese>
 		<French>L'unité n'améliorera que la colonie la plus proche. Elle continuera de travailler jusqu'à ce que vous annuliez l'automatisation.</French>
 		<German>Die Einheit modernisiert nur die nächstgelegene Siedlung und arbeitet solange, bis sie gestoppt wird</German>
 		<Italian>L'unità migliorerà solamente l'insediamento più vicino e continuerà a lavorare finché non annullerai l'automazione.</Italian>
@@ -962,7 +962,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CHIEF_GOODY_SCOUT</Tag>
 		<English>Allow us to season your scout.</English>
-		<Portuguese>Permita-nos temperar seu batedor.</Portuguese>
+		<Portuguese>Permita-nos treinar seu batedor.</Portuguese>
 		<French>Permettez-nous d'abreuver votre Eclaireur.</French>
 		<German>Erlaubt uns, Euren Kundschafter zu unterweisen.</German>
 		<Italian>Permettici di addestrare il tuo scout.</Italian>
@@ -2562,7 +2562,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_CITY_ATTACK_TEXT</Tag>
 		<English>[ICON_BULLET]%D1_Bonus%% settlement attack</English>
-		<Portuguese>[ICON_BULLET]%D1_Bonus%% ataque aa colônia</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1_Bonus%% ataque à colônia</Portuguese>
 		<French>[ICON_BULLET]Attaque colonie %D1_Bonus%%</French>
 		<German>[ICON_BULLET]%D1_Bonus%% Siedlungsangriff</German>
 		<Italian>[ICON_BULLET]%D1_Bonus%% di attacco verso gli insediamenti</Italian>
@@ -2595,7 +2595,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CITY_ATTACK_MOD</Tag>
 		<English>[ICON_BULLET]%D1_Change%% settlement attack</English>
-		<Portuguese>[ICON_BULLET]%D1_Change%% ataque aa colônia</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1_Change%% ataque à colônia</Portuguese>
 		<French>[ICON_BULLET]Attaque colonie %D1_Change%%</French>
 		<German>[ICON_BULLET]%D1_Change%% Siedlungsangriff</German>
 		<Italian>[ICON_BULLET]%D1_Change%% di attacco verso gli insediamenti</Italian>
@@ -2617,7 +2617,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BOMBARD_RATE</Tag>
 		<English>[ICON_BULLET]Can bombard settlement defenses : (-%d1_Mod%%/Turn)%F2_Icon</English>
-		<Portuguese>[ICON_BULLET]Pode bombardear defesas de colônias: (-%d1_Mod%%/Turn)%F2_Icon</Portuguese>
+		<Portuguese>[ICON_BULLET]Pode bombardear defesas de colônias: (-%d1_Mod%%/turno)%F2_Icon</Portuguese>
 		<French>[ICON_BULLET]Peut bombarder les défenses de la colonie : (-%d1_Mod%%/Tour)%F2_Icon</French>
 		<German>[ICON_BULLET]Kann Siedlungsverteidigungen bombardieren : (-%d1_Mod%%/Runde)%F2_Icon</German>
 		<Italian>[ICON_BULLET]Può bombardare le difese degli insediamenti : (-%d1_Mod%%/turno)%F2_Icon</Italian>
@@ -2628,7 +2628,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BOMBARD_RATE_SHORT</Tag>
 		<English>[ICON_BULLET]Bombard settlement : -%d1_Mod%%/Turn%F2_Icon</English>
-		<Portuguese>[ICON_BULLET]Colônia de bombardeio: -%d1_Mod%%/Turn%F2_Icon</Portuguese>
+		<Portuguese>[ICON_BULLET]Colônia de bombardeio: -%d1_Mod%%/turno%F2_Icon</Portuguese>
 		<French>[ICON_BULLET]Bombarder colonie : -%d1_Mod%%/Tour%F2_Icon</French>
 		<German>[ICON_BULLET]Siedlung bombardieren : -%d1_Mod%%/Runde%F2_Icon</German>
 		<Italian>[ICON_BULLET]Bombarda insediamento : -%d1_Mod%%/turno%F2_Icon</Italian>
@@ -3051,7 +3051,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODS_RAIDED</Tag>
 		<English>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective raid! %d3 %s4_yield have been stolen![COLOR_REVERT]</English>
-		<Portuguese>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjetivo ataque! %d3 %s4_yield foram roubados![COLOR_REVERT]</Portuguese>
+		<Portuguese>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective ataque! %d3 %s4_yield foram roubados![COLOR_REVERT]</Portuguese>
 		<French>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]Les %s1_civ_adjective ont lancé un raid sur la ville ! Ils ont pris %d3 %s4_yield !</French>
 		<German>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]%s1_civ_adjective Überfall! %d3 %s4_yield wurden gestohlen![COLOR_REVERT]</German>
 		<Italian>[COLOR_REVERT]%s2_city : [COLOR_WARNING_TEXT]Raid %s1_civ_adjective! Hanno rubato %d3 %s4_yield!</Italian>
@@ -3490,7 +3490,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CANNOT_JOIN_STARVING</Tag>
 		<English>[COLOR_WARNING_TEXT]Not enough food is produced here yet for another colonist to join the settlement[COLOR_REVERT]</English>
-		<Portuguese>[COLOR_WARNING_TEXT]Ainda não há produção suficiente de comida aqui para que outro colono se junte aa colônia[COLOR_REVERT]</Portuguese>
+		<Portuguese>[COLOR_WARNING_TEXT]Ainda não há produção suficiente de comida aqui para que outro colono se junte à colônia[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_WARNING_TEXT]Impossible de se joindre à la colonie : nourriture insuffisante[COLOR_REVERT]</French>
 		<German>[COLOR_WARNING_TEXT]Es wird hier noch nicht genügend Nahrung produziert, damit sich ein weiterer Kolonist der Siedlung anschliessen kann[COLOR_REVERT]</German>
 		<Italian>[COLOR_WARNING_TEXT]Non c'è abbastanza cibo a disposizione per unirsi all'insediamento[COLOR_REVERT]</Italian>

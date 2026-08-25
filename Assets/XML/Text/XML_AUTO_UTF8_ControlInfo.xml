@@ -342,7 +342,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_CYCLEUNIT</Tag>
 		<English>Cycle units</English>
-		<Portuguese>Unidades de ciclo</Portuguese>
+		<Portuguese>Alternar unidades</Portuguese>
 		<French>Faire défiler les unités</French>
 		<German>Durch Einheiten schalten</German>
 		<Italian>Scorri unità</Italian>
@@ -355,7 +355,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_CYCLEUNIT_ALT</Tag>
 		<English>Cycle units ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</English>
-		<Portuguese>Unidades de ciclo ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</Portuguese>
+		<Portuguese>Alternar unidades ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</Portuguese>
 		<French>Faire défiler les unités ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</French>
 		<German>Durch Einheiten schalten ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</German>
 		<Italian>Scorri unità ([COLOR:140:255:40:255]&lt; Alt &gt;[COLOR_REVERT])</Italian>
@@ -368,7 +368,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_LASTUNIT</Tag>
 		<English>Cycle units (backwards)</English>
-		<Portuguese>Unidades de ciclo (para trás)</Portuguese>
+		<Portuguese>Alternar unidades (para trás)</Portuguese>
 		<French>Faire défiler unités (en arrière)</French>
 		<German>Durch Einheiten schalten (rückwärts)</German>
 		<Italian>Scorri unità (indietro)</Italian>
@@ -495,7 +495,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_HALL_OF_FAME</Tag>
 		<English>View Hall of Fame</English>
-		<Portuguese>Ver Hall da Fama</Portuguese>
+		<Portuguese>Ver Salão da Fama</Portuguese>
 		<French>Voir le Panthéon</French>
 		<German>Annalen</German>
 		<Italian>Categoria Dei Migliori</Italian>
@@ -611,7 +611,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_QUICK_LOAD</Tag>
 		<English>Quick Load Game</English>
-		<Portuguese>Jogo de carregamento rápido</Portuguese>
+		<Portuguese>Carregamento rápido</Portuguese>
 		<French>Chargement rapide</French>
 		<German>Schnell laden</German>
 		<Italian>Caricamento rapido</Italian>
@@ -625,7 +625,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_QUICK_SAVE</Tag>
 		<English>Quick Save Game</English>
-		<Portuguese>Jogo de salvamento rápido</Portuguese>
+		<Portuguese>Salvamento rápido</Portuguese>
 		<French>Sauvegarde rapide</French>
 		<German>Schnell speichern</German>
 		<Italian>Salvataggio rapido</Italian>
@@ -729,7 +729,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SIGN</Tag>
 		<English>Sign</English>
-		<Portuguese>Assinar</Portuguese>
+		<Portuguese>Placa</Portuguese>
 		<French>Panneau</French>
 		<German>Zeichen</German>
 		<Italian>Segnale</Italian>

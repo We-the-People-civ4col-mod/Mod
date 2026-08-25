@@ -83,7 +83,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_RAIDED</Tag>
 		<English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raid! A %s3_BldngName was destroyed by the raiding party!</English>
-		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjetivo ataque! Um %s3_BldngName foi destruído pelo grupo de ataque!</Portuguese>
+		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective ataque! Um %s3_BldngName foi destruído pelo grupo de ataque!</Portuguese>
 		<French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! [NUM1:Un:Une] %s3_BldngName [NUM1:a été détruit:a été détruite] par des ennemis infiltrés !</French>
 		<German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1:2_civ_adjective Überfall! Das Gebäude %s3_BldngName wurde von feindlichen Eindringlingen zerstört!</German>
 		<Italian>Raid %s1_civ_adjective a %s2_city! Infiltrati nemici hanno distrutto [NUM1:un:una] %s3_BldngName!</Italian>
@@ -94,7 +94,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PRODUCTION_RAIDED</Tag>
 		<English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raid! All progress in the construction of %s3_buildName has been destroyed by the raiding party!</English>
-		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjetivo ataque! Todo o progresso na construção de %s3_buildName foi destruído pelo grupo de ataque!</Portuguese>
+		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective ataque! Todo o progresso na construção de %s3_buildName foi destruído pelo grupo de ataque!</Portuguese>
 		<French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Les %s1_civ_adjective ont lancé un raid! Toutes les progressions du bâtiment : %s3_buildName ont été détruites par des ennemis infiltrés !</French>
 		<German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1:2_civ_adjective Überfall! Der gesamte Fortschritt bei der Errichtung des Gebäudes %s3_buildName wurde von feindlichen Eindringlingen zerstört!</German>
 		<Italian>Raid %s1_civ_adjective a %s2_city! Tutti i progressi in %s3_buildName sono stati distrutti da nemici infiltrati!</Italian>
@@ -105,7 +105,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PRODUCTION_RAIDED_PARTIAL</Tag>
 		<English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raid! Some progress in the construction of %s3_buildName has been destroyed by the raiding party!</English>
-		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjetivo ataque! Algum progresso na construção de %s3_buildName foi destruído pelo grupo de ataque!</Portuguese>
+		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective ataque! Algum progresso na construção de %s3_buildName foi destruído pelo grupo de ataque!</Portuguese>
 		<French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Les %s1:2_civ_adjective ont lancé un raid sur la ville : %s2_city ! Une parte des progressions du bâtiment : %s3_buildName ont été détruites par des ennemis infiltrés !</French>
 		<German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1:2_civ_adjective Überfall! Ein Teil des Fortschritts bei der Errichtung des Gebäudes %s3_buildName wurde von feindlichen Eindringlingen zerstört!</German>
 		<Italian>Raid %s1_civ_adjective a %s2_city! Parte del progresso in %s3_buildName sono stati distrutti da nemici infiltrati!</Italian>
@@ -116,7 +116,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TREASURY_RAIDED</Tag>
 		<English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raid! %d3[ICON_GOLD] from our state treasury was looted by raiding party!</English>
-		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjetivo ataque! %d3[ICON_GOLD] do nosso tesouro estadual foi saqueado por um grupo de ataque!</Portuguese>
+		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective ataque! %d3[ICON_GOLD] do nosso tesouro estadual foi saqueado por um grupo de ataque!</Portuguese>
 		<French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! %d3[ICON_GOLD] de notre trésor a été pillée par des ennemis infiltrés !</French>
 		<German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1:2_civ_adjective Überfall! Feindliche Eindringlinge haben %d3[ICON_GOLD] unseres Staatsschatzes erbeutet!</German>
 		<Italian>Raid %s1_civ_adjective a %s2_city! Infiltrati nemici hanno rubato %d3[ICON_GOLD] del nostro tesoro di stato!</Italian>
@@ -127,7 +127,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SCALP_RAIDED</Tag>
 		<English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raid!  The raiders take scalps, with [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] killed.</English>
-		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjetivo ataque!  Os invasores pegam escalpos, com [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] mortos.</Portuguese>
+		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective ataque!  Os invasores pegam escalpos, com [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] mortos.</Portuguese>
 		<French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Les %s1_civ_adjective ont lancé un raid sur la ville : %s2_city ! %s3_unit a subi des dégâts</French>
 		<German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1:2_civ_adjective Überfall! Angreifer nehmen Skalps: [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wurde getötet.</German>
 		<Italian>Raid %s1_civ_adjective a %s2_city! sono morti %s3_unit</Italian>
@@ -138,7 +138,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_HARBOR_RAIDED</Tag>
 		<English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raid! Raiders attack the harbour, damaging your [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]!</English>
-		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjetivo ataque! Os invasores atacam o porto, danificando seu [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]!</Portuguese>
+		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective ataque! Os invasores atacam o porto, danificando seu [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]!</Portuguese>
 		<French>[COLOR_WARNING_TEXT]%s2_city : [COLOR_REVERT]Les %s1_civ_adjective ont lancé un raid ! Votre %s3_unit a subi des dégâts !</French>
 		<German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1:2_civ_adjective Überfall! Räuber greifen Hafenanlagen an. Euer Schiff [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wurde beschädigt!</German>
 		<Italian>Raid %s1_civ_adjective a %s2_city! La tua unità %s3_unit  è stata danneggiata!</Italian>
@@ -160,7 +160,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_RAIDING_NATIVE_CAPTURED</Tag>
 		<English>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective raiding party captured! They will pay with forced labour for their crimes.</English>
-		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjetivo grupo de ataque capturado! Eles pagarão com trabalho forçado pelos seus crimes.</Portuguese>
+		<Portuguese>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective grupo de ataque capturado! Eles pagarão com trabalho forçado pelos seus crimes.</Portuguese>
 		<French>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT] le raid %s1_civ_adjective raid a été capturé ! Ils paieront pour leurs crimes par le travail.</French>
 		<German>[COLOR_WARNING_TEXT]%s2_city: [COLOR_REVERT]%s1_civ_adjective Stoßtrupp gefangen genommen! Sie werden mit Zwangsarbeit für ihre Verbrechen büßen.</German>
 		<Italian>%s1_civ_adjective gruppo di incursori catturato in %s2_city! Pagheranno con il lavoro per i loro crimini.</Italian>
@@ -526,7 +526,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACQUIRED_MORTAR</Tag>
 		<English>Milord, the [COLOR_UNIT_TEXT]mortar[COLOR_REVERT] we have bought from our European allies has arrived in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-		<Portuguese>Milorde, o [COLOR_UNIT_TEXT]argamassa[COLOR_REVERT] que compramos de nossos aliados europeus chegou em [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Portuguese>
+		<Portuguese>Milorde, o [COLOR_UNIT_TEXT]morteiro[COLOR_REVERT] que compramos de nossos aliados europeus chegou em [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Portuguese>
 		<French>Sire, le [COLOR_UNIT_TEXT]mortier[COLOR_REVERT] que nous avons acheté à nos alliés européens sont arrivés à [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</French>
 		<German>Milord, der [COLOR_UNIT_TEXT]Mörser[COLOR_REVERT], den wir von unseren europäischen Alliierten gekauft haben, ist nach [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] geliefert worden.</German>
 		<Russian>Милорд, [COLOR_UNIT_TEXT]мортира[COLOR_REVERT], купленная у наших европейских союзников, прибыла в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
@@ -891,7 +891,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NOT_FOUND_CITY</Tag>
 		<English>[ICON_BULLET]Cannot found a new settlement</English>
-		<Portuguese>[ICON_BULLET]Não foi possível encontrar um nova colônia</Portuguese>
+		<Portuguese>[ICON_BULLET]Não foi possível encontrar uma nova colônia</Portuguese>
 		<French>[ICON_BULLET]Ne peut pas fonder une nouvelle colonie</French>
 		<German>[ICON_BULLET]Kann keine neue Siedlung gründen</German>
 		<Italian>[ICON_BULLET]Può fondare un nuovo insediamento</Italian>

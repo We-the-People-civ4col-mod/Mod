@@ -5854,7 +5854,7 @@
 	<TEXT>
 		<Tag>AI_DIPLO_NO_PEACE_LEADER_AGUEYBANA_1</Tag>
 		<English>I dreamed last night that a child wakened me, carrying your head in its hand, [CT_NAME], as your blood dripped onto the earth. There's no reason for me to stop this war! I know the prophecy will come true.</English>
-		<Portuguese>Sonhei ontem à noite que uma criança me acordou, carregando sua cabeça na mão, [CT_NAME], enquanto seu sangue pingava na terra. Não há razão para eu parar esta guerra! Eu sei que a profecia se tornará realidade.</Portuguese>
+		<Portuguese>Sonhei ontem à noite que uma criança me acordou, carreganda sua cabeça na mão, [CT_NAME], enquanto seu sangue pingava na terra. Não há razão para eu parar esta guerra! Eu sei que a profecia se tornará realidade.</Portuguese>
 		<French>Je ne peux pas perdre, alors je n'ai aucune raison de faire la paix.</French>
 		<German>Weißer Mann, mir träumte letzte Nacht, ein Kind würde mich wecken. Es hielt Euren Kopf in der Hand, [CT_NAME], und Euer Blut tropfte auf die Erde. Es gibt für mich keinen Grund, den Krieg zu beenden. Ich bin mir sicher, dass diese Prophezeiung wahr werden wird.</German>
 		<Italian>Non posso perdere, quindi non c'è ragione di firmare una pace.</Italian>
@@ -8602,7 +8602,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_CONTINENTAL_GUARD</Tag>
 		<English>We gratefully accept your offer, Your Majesty!</English>
-		<Portuguese>Aceitamos com gratidão sua oferta, Sua Majestade!</Portuguese>
+		<Portuguese>Aceitamos com gratidãa sua oferta, Sua Majestade!</Portuguese>
 		<French>Nous acceptons votre offre avec joie, votre Majesté !</French>
 		<German>Wir nehmen euer Angebot dankend an, Eure Majestät !</German>
 		<Italian>Accettiamo con gratitudine la vostra offerta, Vostra Maestà!</Italian>
@@ -9383,7 +9383,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_STEALING_IMMIGRANT_SUCCESSFULL</Tag>
 		<English>Our King's agent in [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] has been successful. The emigrant is in [COLOR_HIGHLIGHT_TEXT]%s2_europe[COLOR_REVERT] awaiting his passage to the New World : [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]</English>
-		<Portuguese>O agente do nosso Rei em [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] teve sucesso. O emigrante está em [COLOR_HIGHLIGHT_TEXT]%s2_europe[COLOR_REVERT] aguardando sua passagem para o Novo Mundo : [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]</Portuguese>
+		<Portuguese>O agente do nosso Rei em [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] teve sucesso. O emigrante está em [COLOR_HIGHLIGHT_TEXT]%s2_europe[COLOR_REVERT] aguardanda sua passagem para o Novo Mundo : [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]</Portuguese>
 		<French>Une unité de [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] venu du royaume nommé [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] sont arrivés à [COLOR_HIGHLIGHT_TEXT]%s2_europe[COLOR_REVERT] and attendent leur transit vers le Nouveau Monde.</French>
 		<German>Der Agent unseres Königs in [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] war erfolgreich. Der Auswanderer ist in [COLOR_HIGHLIGHT_TEXT]%s2_europe[COLOR_REVERT] eingetroffen und erwartet seinen Transport in die Neue Welt : [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]</German>
 		<Italian>Il nostro agente del Re in [COLOR_HIGHLIGHT_TEXT]%s1_country[COLOR_REVERT] ha avuto successo. L'emigrante è arrivato in [COLOR_HIGHLIGHT_TEXT]%s2_europe[COLOR_REVERT] e attende il suo trasporto nel Nuovo Mondo: [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT]</Italian>

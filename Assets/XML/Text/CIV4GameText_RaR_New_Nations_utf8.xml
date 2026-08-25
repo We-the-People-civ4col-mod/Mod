@@ -1164,7 +1164,7 @@
 	<TEXT>
 		<Tag>AI_DIPLO_NO_PEACE_LEADER_NARBONA_1</Tag>
 		<English>So now that you've tasted your own blood, you beg for mercy? We will not dishonour you by rewarding your cowardice.</English>
-		<Portuguese>Então agora que provou do seu próprio sangue, você implora por misericórdia? Não iremos desonrá-lo recompensando sua covardia.</Portuguese>
+		<Portuguese>Então agora que provou do seu próprio sangue, você implora por misericórdia? Não iremos desonrá-lo recompensanda sua covardia.</Portuguese>
 		<French>Maintenant que vous connaissez le goût de votre propre sang, vous demandez la pitié ? N'ajoutez pas la lâcheté à votre déshonneur.</French>
 		<German>Jetzt, wo Ihr Euer eigenes Blut gekostet habt, bettelt Ihr um Gnade? Wir werden Euch nicht entehren, indem wir Eurer Feigheit nachgeben.</German>
 		<Russian>Итак, теперь, когда ты ощутил вкус собственной крови, ты молишь о пощаде? Мы не обесчестим вас, признав вашу трусость.</Russian>
@@ -1386,7 +1386,7 @@
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_MACHIPARA_1</Tag>
 		<English>I, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], cacique of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] people, offer my friendship to the strangers with pale complexions and hairy chins. If you are friendly, the forests of the [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] will be a haven to you. If you are traitorous, our poisonous blowdarts will pierce your throats.</English>
-		<Portuguese>Eu, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], cacique do povo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], ofereço minha amizade aos estranhos de tez pálida e queixo peludo. Se você for amigável, as florestas do [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] serão um refúgio para você. Se você for um traidor, nossos dardos venenosos perfurarão sua garganta.</Portuguese>
+		<Portuguese>Eu, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], cacique do povo [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], ofereço minha amizade aos estranhos de tez pálida e queixo peludo. Se você for amigável, as florestas do [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] serão um refúgio para você. Se você for um traidor, nossos dardos venenosos perfurarãa sua garganta.</Portuguese>
 		<French>Moi, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], cacique du peuple [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], propose son amitié aux étrangers aux mentons poilus. Si vos intentions sont pacifiques, la forêt [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] sera un havre de paix pour vous. Dans le cas contraire, nos flèches empoisonnées n'auront aucune difficulté pour traverser vos gorges.</French>
 		<German>Ich, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Cacique des [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT]-Volkes, biete den Fremden mit dem blassen Teint und dem haarbedeckten Kinn meine Freundschaft an. Wenn Ihr freundlich seid, werden die Wälder der [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] ein Zufluchtsort für Euch sein. Wenn Ihr aber verräterisch seid, werden unsere vergifteten Pfeile keine Schwierigkeiten haben, Eure Kehlen zu durchbohren.</German>
 		<Russian>Я, [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], вождь народа [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT], предлагаю свою дружбу незнакомцам с бледными лицами и волосатыми подбородками. Если вы дружелюбны, леса [COLOR_HIGHLIGHT_TEXT][OUR_CIV_ADJ][COLOR_REVERT] станут для вас убежищем. Но если ты предатель, наши ядовитые дротики проткнут тебе глотку.</Russian>
@@ -1431,7 +1431,7 @@
 	<TEXT>
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_WEAKER_MACHIPARA_1</Tag>
 		<English>My tribe is in great need. Will the [CT_EMPIRE] show their generosity and help?</English>
-		<Portuguese>Minha tribo está em grande necessidade. Os [CT_EMPIRE] mostrarão sua generosidade e ajuda?</Portuguese>
+		<Portuguese>Minha tribo está em grande necessidade. Os [CT_EMPIRE] mostrarãa sua generosidade e ajuda?</Portuguese>
 		<French>Ma tribu est dans le besoin, l'[CT_EMPIRE] peut-il nous aider ?</French>
 		<German>Mein Stamm ist in großer Not. Werden die [CT_EMPIRE] ihre Großzügigkeit zeigen und helfen?</German>
 		<Russian>Мое племя очень нуждается. Проявят ли [CT_EMPIRE] свою щедрость и помогут?</Russian>
@@ -1996,7 +1996,7 @@
 	<TEXT>
 		<Tag>AI_DIPLO_REFUSE_TO_TALK_LEADER_TARANO_1</Tag>
 		<English>Your words are as pale as your skin. Leave this forest now!</English>
-		<Portuguese>Suas palavras são tão pálidas quanto sua pele. Deixe esta floresta agora!</Portuguese>
+		<Portuguese>Suas palavras são tão pálidas quanta sua pele. Deixe esta floresta agora!</Portuguese>
 		<French>Vos mots sont aussi pâle que votre teint. Quittez cette forêt maintenant !</French>
 		<German>Eure Worte sind so blass wie Eure Haut. Verlasst sofort diesen Wald!</German>
 		<Russian>Твои слова бледны, как твоя кожа. Покиньте этот лес немедленно!</Russian>
