@@ -207,7 +207,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LANDFALL</Tag>
 		<English>"Land, ho!"</English>
-		<Portuguese>"Terra, ho!"</Portuguese>
+		<Portuguese>"Terra à vista!"</Portuguese>
 		<French>« Terre en vue ! »</French>
 		<German>"Land in Sicht!"</German>
 		<Russian>"Земля-я-я-я!"</Russian>
@@ -223,7 +223,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LANDFALL_TEXT</Tag>
 		<English>"[COLOR_SELECTED_TEXT]Land, ho![COLOR_REVERT]" comes the call from the crow's nest one morning, and your men rush on deck.[NEWLINE][NEWLINE]On the horizon you can make out a distant silhouette. At last! After long weeks at sea, you have reached a land where no devout Christian man has ever before set foot.[NEWLINE][NEWLINE]A New World waits for you to subdue it. What wonders and what horrors await you?[NEWLINE][NEWLINE]</English>
-		<Portuguese>"[COLOR_SELECTED_TEXT]Terra, ho![COLOR_REVERT]" veio o chamado do ninho do corvo certa manhã, e seus homens correram para o convés.[NEWLINE][NEWLINE]No horizonte você pode distinguir uma silhueta distante. Afinal! Depois de longas semanas no mar, você chegou a uma terra onde nenhum cristão devoto jamais pisou.[NEWLINE][NEWLINE]Um Novo Mundo espera por você para subjugá-lo. Que maravilhas e que horrores esperam por você?[NEWLINE][NEWLINE]</Portuguese>
+		<Portuguese>"[COLOR_SELECTED_TEXT]Terra à vista![COLOR_REVERT]" veio o chamado do ninho do corvo certa manhã, e seus homens correram para o convés.[NEWLINE][NEWLINE]No horizonte você pode distinguir uma silhueta distante. Finalmente! Depois de longas semanas no mar, você chegou a uma terra onde nenhum cristão devoto jamais pisou.[NEWLINE][NEWLINE]Um Novo Mundo espera por você para subjugá-lo. Que maravilhas e que horrores esperam por você?[NEWLINE][NEWLINE]</Portuguese>
 		<French>« [COLOR_SELECTED_TEXT]Terre en vue ![COLOR_REVERT] » C'est le cri poussé par le gabier du haut de la vigie un beau matin, et vos hommes se ruent sur le pont.[NEWLINE][NEWLINE] À l'horizon, vous distinguez au loin une silhouette. Enfin! Après de longues semaines en mer, vous avez atteint une terre qu'aucun fidèle chrétien n'avait encore foulée.[NEWLINE][NEWLINE]Un Nouveau Monde s'ouvre à vous pour que vous le soumettiez. Quelles merveilles, quelles horreurs vous y attendent?[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Land in Sicht![COLOR_REVERT]" erschallt eines Morgens der Ruf aus dem Krähennest, und Eure Männer stürzen an Deck.[NEWLINE][NEWLINE]Ihr erspäht am Horizont einen grauen Schattenriss. Endlich! Nach langen Wochen auf See habt Ihr ein Land entdeckt, auf das noch kein frommer Christenmensch seinen Fuß gesetzt hat.[NEWLINE][NEWLINE]Eine Neue Welt wartet darauf, dass Ihr sie Euch untertan macht. Welche Wunder und welche Schrecknisse werden Euch erwarten?[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Земля, йо-хо![COLOR_REVERT]" — раздается однажды утром крик наблюдателя из вороньего гнезда и ваши люди выбегают на палубу.[NEWLINE][NEWLINE]На горизонте видны очертания суши. Наконец-то! После долгих недель в море вы достигли земли, где еще не ступала нога набожного христианина.[NEWLINE][NEWLINE]Новый мир ждет своих исследователей и покорителей. Какие чудеса и какие ужасы ждут вас? Неизвестность пугает и манит. Вперед![NEWLINE][NEWLINE]</Russian>
