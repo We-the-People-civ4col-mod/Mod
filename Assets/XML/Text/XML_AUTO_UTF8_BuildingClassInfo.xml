@@ -1139,7 +1139,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_MEDICAL_OFFICE</Tag>
 		<English>Medical Office</English>
-		<Portuguese>Clínica</Portuguese>
+		<Portuguese>Consultório</Portuguese>
 		<French>Cabinet médical</French>
 		<German>Arztpraxis</German>
 		<Italian>Medical Office</Italian>
@@ -1746,7 +1746,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TOWN_HOSPITAL</Tag>
 		<English>Town Hospital</English>
-		<Portuguese>Posto de Saúde</Portuguese>
+		<Portuguese>Clínica</Portuguese>
 		<French>Clinique</French>
 		<German>Stadtkrankenhaus</German>
 		<Italian>Town Hospital</Italian>
