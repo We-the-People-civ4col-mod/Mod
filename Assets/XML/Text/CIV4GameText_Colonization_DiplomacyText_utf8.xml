@@ -6906,7 +6906,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACCEPT_PINKY_1</Tag>
 		<English>As You wish</English>
-		<Portuguese>Como você deseja</Portuguese>
+		<Portuguese>Como desejar</Portuguese>
 		<French>Comme vous voudrez</French>
 		<German>Wie Ihr wünscht</German>
 		<Italian>Come desideri</Italian>
@@ -7313,7 +7313,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_STEALING_IMMIGRANT_YES</Tag>
 		<English>We feel obliged to help these people to fulfill their dreams, Your Majesty.</English>
-		<Portuguese>Sentimo-nos obrigados a ajudar estas pessoas a realizarem os seus sonhos, Majestade.</Portuguese>
+		<Portuguese>Ajudaremos a realizar seus sonhos, Majestade.</Portuguese>
 		<French>Nous nous sentons obligés d'aider ces hommes à accomplir leur rêve, votre Majesté.</French>
 		<German>Wir fühlen uns verpflichtet, diesen Leuten zu helfen, ihre Träume zu erfüllen, Eure Majestät.</German>
 		<Russian>Мы чувствуем себя обязанными помочь этим людям осуществить их мечты, Ваше Величество.</Russian>
@@ -7322,7 +7322,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_STEALING_IMMIGRANT_NO</Tag>
 		<English>We would rather not risk the good relations with our neighbours, Your Majesty.</English>
-		<Portuguese>Preferimos não arriscar as boas relações com os nossos vizinhos, Vossa Majestade.</Portuguese>
+		<Portuguese>Não arriscaremos relações com vizinhos, Majestade.</Portuguese>
 		<French>Nous ne risquerons pas de détériorer nos relations avec nos voisins, votre Majesté.</French>
 		<German>Wir möchten lieber nicht die guten Beziehungen zu unseren Nachbarn gefährden, Eure Majestät.</German>
 		<Russian>Мы предпочли бы не рисковать хорошими отношениями с нашими соседями, Ваше Величество.</Russian>
@@ -7331,7 +7331,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_BUY_UNITS_1</Tag>
 		<English>Your Majesty, could You spare some military for our protection?</English>
-		<Portuguese>Sua Majestade, você poderia dispensar alguns militares para nossa proteção?</Portuguese>
+		<Portuguese>Majestade, poderia dispensar militares para nossa proteção?</Portuguese>
 		<French>Votre Majesté, pourriez-vous épargner quelques soldats pour notre protection ?</French>
 		<German>Eure Majestät, könnt Ihr uns zu unserem Schutz Streitkräfte zur Verfügung stellen?</German>
 		<Italian>Vostra Maestà, potreste risparmiare qualche militare per la nostra protezione?</Italian>
@@ -7353,7 +7353,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACCEPT_BUY_UNITS_1</Tag>
 		<English>Thank You, Your Majesty. I feel much safer now.</English>
-		<Portuguese>Obrigado, Sua Majestade. Me sinto muito mais seguro agora.</Portuguese>
+		<Portuguese>Obrigado, Majestade. Sinto-me mais seguro.</Portuguese>
 		<French>Merci. Je me sens plus en sécurité, désormais.</French>
 		<German>Danke, Eure Majestät. Ich fühle mich jetzt sehr viel sicherer.</German>
 		<Italian>Grazie. Mi sento molto più al sicuro, ora.</Italian>
@@ -7375,7 +7375,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ASK_TO_BUY_USED_SHIP</Tag>
 		<English>Could your Majesty help us to acquire a used ship for a good price?</English>
-		<Portuguese>Vossa Majestade poderia nos ajudar a adquirir um navio usado por um bom preço?</Portuguese>
+		<Portuguese>Majestade, nos ajudaria a adquirir um navio por bom preço?</Portuguese>
 		<French>Sa majesté pourrait-elle nous aider à acquérir un navire de seconde main à bon prix?</French>
 		<German>Könnte Ihre Majestät uns helfen günstig ein gebrauchtes Schiffe zu erwerben?</German>
 		<Russian>Ваше Величество, не могли бы Вы помочь нам приобрести подержанный корабль по сходной цене?</Russian>
@@ -7402,7 +7402,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACCEPT_BUY_USED_SHIP</Tag>
 		<English>Thank you, your Majesty. We appreciate your support and will gladly buy the ship.</English>
-		<Portuguese>Obrigado, Vossa Majestade. Agradecemos seu apoio e teremos prazer em comprar o navio.</Portuguese>
+		<Portuguese>Obrigado, Majestade. Compraremos o navio.</Portuguese>
 		<French>Sire, nous vous remercions. Nous apprécions votre aide et achèterons bien volontiers ce navire.</French>
 		<German>Danke Eure Majestät. Wir schätzen eure Unterstätzung und erwerben das Schiff gerne.</German>
 		<Russian>Благодарю вас, Ваше Величество. Мы ценим Вашу поддержку и с радостью выкупим этот чудесный корабль.</Russian>
@@ -7411,7 +7411,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ASK_FOREIGN_KING_BUY_IMMIGRANTS</Tag>
 		<English>Would your Majesty help us to hire skilled workers for our colony? We will pay a good price.</English>
-		<Portuguese>Vossa Majestade nos ajudaria a contratar trabalhadores qualificados para nossa colônia? Pagaremos um bom preço.</Portuguese>
+		<Portuguese>Majestade, contrataria trabalhadores qualificados?</Portuguese>
 		<French>Sa majesté pourrait-elle nous aider à recruter des travailleurs qualifiés pour notre colonies? Nous paieront un bon prix.</French>
 		<German>Könnte Ihre Majestät uns helfen willige und fähige Arbeiter für unsere Kolonie zu suchen? Wir bezahlen auch einen guten Preis.</German>
 		<Russian>Ваше Величество, не поможете ли нам нанять квалифицированных рабочих для нашей колонии? Мы заплатим хорошую цену.</Russian>
@@ -7438,7 +7438,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACCEPT_FOREIGN_IMMIGRANTS</Tag>
 		<English>Thank you, your Majesty. We appreciate your support and will gladly hire the workers.</English>
-		<Portuguese>Obrigado, Vossa Majestade. Agradecemos o seu apoio e teremos prazer em contratar os trabalhadores.</Portuguese>
+		<Portuguese>Obrigado, Majestade. Contrataremos os trabalhadores.</Portuguese>
 		<French>Sire, nous vous remercions. Nous apprécions votre aide et recruterons bien volontiers ces travailleurs.</French>
 		<German>Danke Eure Majestät. Wir schätzen eure Unterstätzung und werben die Arbeiter freudig an.</German>
 		<Russian>Спасибо, Ваше Величество. Мы ценим Вашу поддержку и с удовольствием наймем этого опытного работника.</Russian>
@@ -7480,7 +7480,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_KING_REVIVE_1</Tag>
 		<English>Your Majesty, I humbly thank you</English>
-		<Portuguese>Sua Majestade, eu humildemente lhe agradeço</Portuguese>
+		<Portuguese>Majestade, agradeço humildemente.</Portuguese>
 		<French>Votre Majesté, je vous remercie humblement</French>
 		<German>Eure Majestät, ich danke Euch demütigst</German>
 		<Italian>Vostra Maestà, vi ringrazio umilmente</Italian>
@@ -7524,7 +7524,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_TREASURE_TRANSPORT_ACCEPT_1</Tag>
 		<English>I gladly consent, Your Majesty.</English>
-		<Portuguese>Concordo de bom grado, Vossa Majestade.</Portuguese>
+		<Portuguese>Concordo, Majestade.</Portuguese>
 		<French>J'y consens volontiers, Votre Majesté.</French>
 		<German>Ich willige mit Freuden ein, Eure Majestät.</German>
 		<Italian>Acconsento volentieri, Vostra Maestà.</Italian>
@@ -7535,7 +7535,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_TREASURE_TRANSPORT_ACCEPT_2</Tag>
 		<English>Thank You for Your support, Your Majesty!</English>
-		<Portuguese>Obrigado pelo seu apoio, Sua Majestade!</Portuguese>
+		<Portuguese>Obrigado pelo apoio, Majestade!</Portuguese>
 		<French>Merci pour votre soutien, Votre Majesté !</French>
 		<German>Danke für Eure Unterstützung, Eure Majestät !</German>
 		<Italian>Grazie per il vostro sostegno, Vostra Maestà!</Italian>
@@ -7568,7 +7568,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_TREASURE_TRANSPORT_REJECT_2</Tag>
 		<English>Thank You, Your Majesty, but no thank you.</English>
-		<Portuguese>Obrigado, Sua Majestade, mas não, obrigado.</Portuguese>
+		<Portuguese>Obrigado, Majestade, mas não.</Portuguese>
 		<French>Merci, Votre Majesté, mais non merci.</French>
 		<German>Danke, Eure Majestät. Nein, danke.</German>
 		<Italian>Grazie, Vostra Maestà, ma no grazie.</Italian>
@@ -7579,7 +7579,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_TREASURE_TRANSPORT_REJECT_3</Tag>
 		<English>You are a wise man, Your Majesty! As am I.</English>
-		<Portuguese>Você é um homem sábio, Sua Majestade! Assim como eu.</Portuguese>
+		<Portuguese>O senhor é sábio, Majestade. Eu também.</Portuguese>
 		<French>Vous êtes un homme sage, Votre Majesté ! Je le suis aussi.</French>
 		<German>Ihr seid ein kluger Mann, Eure Majestät! Ich aber auch.</German>
 		<Italian>Lei è un uomo saggio, Vostra Maestà! Lo sono anch'io.</Italian>
@@ -7887,7 +7887,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_KING_GIFT_SHIP_1</Tag>
 		<English>Thank You, Your Majesty. Please be so gracious as to forgive my clumsiness.</English>
-		<Portuguese>Obrigado, Sua Majestade. Por favor, tenha a gentileza de perdoar minha falta de jeito.</Portuguese>
+		<Portuguese>Obrigado, Majestade. Perdoe minha falta de jeito.</Portuguese>
 		<French>Merci, Votre Majesté. Et s'il vous plaît, ayez l'amabilité de me pardonner pour ma maladresse.</French>
 		<German>Habt Dank, Eure Majestät. Und seid bitte so gnädig, mir mein Ungeschick zu verzeihen.</German>
 		<Italian>Grazie, Vostra Maestà. E vi prego di essere così gentili da perdonarmi per la mia goffaggine.</Italian>
@@ -8272,7 +8272,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_FOUND_CITY_BUY_2</Tag>
 		<English>We accept your price. (Found Settlement, Buy Land)</English>
-		<Portuguese>Aceitamos seu preço. (Encontrada colônia, comprar terreno)</Portuguese>
+		<Portuguese>Aceitamos o preço. (Fundar colônia, comprar terra)</Portuguese>
 		<French>Nous acceptons votre prix. (Fonder une colonie, acheter la terre)</French>
 		<German>Wir akzeptieren Euren Preis. (Siedlung gründen, Land kaufen)</German>
 		<Italian>Accettiamo il vostro prezzo. (Costruisci insediamento, acquista terra)</Italian>
@@ -8283,7 +8283,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_FOUND_CITY_TAKE_2</Tag>
 		<English>This land is rightfully ours. (Found Settlement, Anger Natives)</English>
-		<Portuguese>Esta terra é nossa por direito. (Colônia encontrado, nativos da raiva)</Portuguese>
+		<Portuguese>Esta terra é nossa. (Fundar colônia, irritar nativos)</Portuguese>
 		<French>Cette terre nous appartient de droit. (Fonder une colonie, contrarier les indigènes)</French>
 		<German>Dieses Land gehört von Rechts wegen uns. (Siedlung gründen, Eingeborene verärgern)</German>
 		<Italian>Questa terra ci appartiene di diritto. (Costruisci insediamento, fai arrabbiare i nativi)</Italian>
@@ -8305,7 +8305,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_CITY_TAKE_2</Tag>
 		<English>Anyone can tell stories like that. (Confiscate land, Anger Natives)</English>
-		<Portuguese>Qualquer um pode contar histórias assim. (Confiscar terras, nativos da raiva)</Portuguese>
+		<Portuguese>Qualquer um conta essas histórias. (Confiscar terras, irritar nativos)</Portuguese>
 		<French>Tout le monde peut raconter une histoire comme celle-là. (S'emparer des terres, contrarier les indigènes)</French>
 		<German>Solche Geschichten kann ja jeder erzählen. (Land beschlagnahmen, Eingeborene verärgern)</German>
 		<Italian>Chiunque può raccontare storie del genere. (Confiscare la terra, far arrabbiare i nativi)</Italian>
@@ -8349,7 +8349,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_NATIVE_SLAVE</Tag>
 		<English>Great! We can really use more workers. (Buy slaves)</English>
-		<Portuguese>Ótimo! Podemos realmente usar mais trabalhadores. (Compre escravos)</Portuguese>
+		<Portuguese>Ótimo, precisamos de trabalhadores. (Comprar escravos)</Portuguese>
 		<French>Excellent, nous avons besoin de plus de travailleurs ! (Achat d'esclaves)</French>
 		<German>Hervorragend, wir können weitere Arbeiter gut gebrauchen! (Sklaven kaufen)</German>
 		<Italian>Eccellente, possiamo usare più lavoratori! (Comprare schiavi)</Italian>
@@ -8371,7 +8371,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_AFRICAN_SLAVES</Tag>
 		<English>A very generous proposal which we thankfully accept, Your Majesty. More labour is always needed. (Buy slaves)</English>
-		<Portuguese>Uma proposta muito generosa que aceitamos com gratidão, Majestade. Mais trabalho é sempre necessário. (Compre escravos)</Portuguese>
+		<Portuguese>Aceitamos, Majestade. Precisamos de trabalhadores. (Comprar escravos)</Portuguese>
 		<French>Une offre très généreuse, que nous acceptons avec gratitude, Votre Majesté. Nous aurions besoin de plus de travailleurs. (Achat d'esclaves)</French>
 		<German>Ein sehr großzügiger Vorschlag, den wir dankend annehmen, Eure Majestät. Wir können weitere Arbeiter gut gebrauchen. (Sklaven kaufen)</German>
 		<Italian>Un'offerta molto generosa, che accettiamo con gratitudine, Vostra Maestà. Ci farebbe comodo qualche altro lavoratore. (Comprare schiavi)</Italian>
@@ -8382,7 +8382,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_AFRICAN_SLAVES_CANNOT</Tag>
 		<English>We regret not being able to raise the gold for them now, Your Majesty.</English>
-		<Portuguese>Lamentamos não poder levantar o ouro para eles agora, Vossa Majestade.</Portuguese>
+		<Portuguese>Não podemos pagar agora, Majestade.</Portuguese>
 		<French>Nous sommes désolé, votre Majesté, mais nous ne pouvons pas nous le permettre en ce moment.</French>
 		<German>Wir bedauern, das Gold hierfür derzeit nicht aufbringen zu können, Eure Majestät.</German>
 		<Italian>Ci dispiace non essere in grado di raccogliere l'oro per loro ora, Vostra Maestà.</Italian>
@@ -8393,7 +8393,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_PRISONS</Tag>
 		<English>This is a brilliant idea and a very generous offer, Your Majesty!</English>
-		<Portuguese>Esta é uma ideia brilhante e uma oferta muito generosa, Majestade!</Portuguese>
+		<Portuguese>Ideia brilhante, Majestade!</Portuguese>
 		<French>C'est une idée particulièrement brillante et une offre très généreuse, votre Majesté !</French>
 		<German>Dies ist eine brilliante Idee und ein sehr großzügiges Angebot, Eure Majestät !</German>
 		<Italian>Questa è un'idea brillante e un'offerta molto generosa, Vostra Maestà!</Italian>
@@ -8404,7 +8404,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_PRISONS_CANT_AFFORD</Tag>
 		<English>We regret not being able to raise the gold for them now, Your Majesty.</English>
-		<Portuguese>Lamentamos não poder levantar o ouro para eles agora, Vossa Majestade.</Portuguese>
+		<Portuguese>Não podemos pagar agora, Majestade.</Portuguese>
 		<French>Nous sommes désolé, votre Majesté, mais nous ne pouvons pas nous le permettre en ce moment.</French>
 		<German>Wir bedauern, das Gold hierfür derzeit nicht aufbringen zu können, Eure Majestät.</German>
 		<Italian>Ci dispiace non essere in grado di raccogliere l'oro per loro ora, Vostra Maestà.</Italian>
@@ -8415,7 +8415,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_NOBLE</Tag>
 		<English>We will pay for his passage and take him into our custody, Your Majesty!</English>
-		<Portuguese>Pagaremos por sua passagem e o levaremos sob nossa custódia, Majestade!</Portuguese>
+		<Portuguese>Pagaremos a passagem, Majestade!</Portuguese>
 		<French>Nous paierons pour son voyage et le prendrons en charge, votre Majesté !</French>
 		<German>Wir werden seine Passage bezahlen und ihn in unsere Obhut nehmen, Eure Majestät !</German>
 		<Italian>Pagheremo il suo passaggio e lo prenderemo sotto la nostra custodia, Vostra Maestà!</Italian>
@@ -8426,7 +8426,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_NOBLE_CANT_AFFORD</Tag>
 		<English>We regret not being able to raise the gold for him now, Your Majesty.</English>
-		<Portuguese>Lamentamos não poder levantar o ouro para ele agora, Majestade.</Portuguese>
+		<Portuguese>Não podemos pagar agora, Majestade.</Portuguese>
 		<French>Nous regrettons de ne pas pouvoir réunir l'or pour lui maintenant, Votre Majesté.</French>
 		<German>Wir bedauern, das Gold hierfür derzeit nicht aufbringen zu können, Eure Majestät.</German>
 		<Italian>Ci dispiace non essere in grado di raccogliere l'oro per lui ora, Vostra Maestà.</Italian>
@@ -8437,7 +8437,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_BISHOP</Tag>
 		<English>We thankfully accept the offer of our Mother Church, Your Eminence.</English>
-		<Portuguese>Aceitamos com gratidão a oferta da nossa Igreja Mãe, Eminência.</Portuguese>
+		<Portuguese>Aceitamos a oferta, Eminência.</Portuguese>
 		<French>Nous acceptons l'offre généreuse de notre mère l'Église, votre Sainteté.</French>
 		<German>Wir nehmen das Angebot der Heiligen Mutter Kirche dankbar an, Eure Eminenz.</German>
 		<Italian>Accettiamo con gratitudine l'offerta della nostra Madre Chiesa, Vostra Eminenza.</Italian>
@@ -8448,7 +8448,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_BISHOP_CANT_AFFORD</Tag>
 		<English>We regret not being able to raise the gold for him now, Your Eminence.</English>
-		<Portuguese>Lamentamos não poder levantar o ouro para ele agora, Eminência.</Portuguese>
+		<Portuguese>Não podemos pagar agora, Eminência.</Portuguese>
 		<French>Nous regrettons de ne pas pouvoir réunir l'or pour lui maintenant, Votre Majesté.</French>
 		<German>Wir bedauern, das Gold hierfür derzeit nicht aufbringen zu können, Eure Majestät.</German>
 		<Italian>Ci dispiace non essere in grado di raccogliere l'oro per lui ora, Vostra Maestà.</Italian>
@@ -8459,7 +8459,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_PAY_CHURCH_DEMAND</Tag>
 		<English>We are happy to donate to the cause, Your Eminence.</English>
-		<Portuguese>Estamos felizes em doar para a causa, Eminência.</Portuguese>
+		<Portuguese>Doaremos à causa, Eminência.</Portuguese>
 		<French>Nous sommes heureux de faire un don à la cause, Votre Éminence.</French>
 		<German>Wir spenden gerne für den guten Zweck, Eure Eminenz.</German>
 		<Italian>Siamo felici di donare alla causa, Vostra Eminenza.</Italian>
@@ -8470,7 +8470,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_REFUSE_CHURCH_DEMAND</Tag>
 		<English>We regret not being able to raise the gold for this currently, Your Eminence.</English>
-		<Portuguese>Lamentamos não poder levantar o ouro para isso atualmente, Eminência.</Portuguese>
+		<Portuguese>Não podemos pagar agora, Eminência.</Portuguese>
 		<French>Nous regrettons de ne pas pouvoir réunir l'or pour cela en ce moment, votre Éminence.</French>
 		<German>Wir bedauern, das Gold hierfür derzeit nicht aufbringen zu können, Eure Eminenz.</German>
 		<Italian>Ci dispiace di non poter raccogliere l'oro per questo in questo momento, Vostra Eminenza.</Italian>
@@ -8481,7 +8481,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_REQUEST_CHURCH_FAVOUR</Tag>
 		<English>We would like to request a favour from our Mother Church, Your Eminence.</English>
-		<Portuguese>Gostaríamos de solicitar um favor à nossa Igreja Matriz, Eminência.</Portuguese>
+		<Portuguese>Solicitaríamos um favor à Igreja, Eminência.</Portuguese>
 		<French>Nous aimerions demander une faveur à notre noble église, votre Sainteté.</French>
 		<German>Wir möchten die Heilige Mutter Kirche um eine Gunst bitten, Eure Eminenz.</German>
 		<Italian>Vorremmo chiedere un favore alla nostra Madre Chiesa, Vostra Eminenza.</Italian>
@@ -8602,7 +8602,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_CONTINENTAL_GUARD</Tag>
 		<English>We gratefully accept your offer, Your Majesty!</English>
-		<Portuguese>Aceitamos com gratidãa sua oferta, Sua Majestade!</Portuguese>
+		<Portuguese>Aceitamos sua oferta, Majestade!</Portuguese>
 		<French>Nous acceptons votre offre avec joie, votre Majesté !</French>
 		<German>Wir nehmen euer Angebot dankend an, Eure Majestät !</German>
 		<Italian>Accettiamo con gratitudine la vostra offerta, Vostra Maestà!</Italian>
@@ -8613,7 +8613,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_NOT_ACQUIRE_CONTINENTAL_GUARD</Tag>
 		<English>I'm afraid we can't afford that, Your Majesty!</English>
-		<Portuguese>Receio que não possamos permitir isso, Majestade!</Portuguese>
+		<Portuguese>Não podemos pagar isso, Majestade!</Portuguese>
 		<French>Nous ne pouvons pas nous le permettre en ce moment, votre Majesté !</French>
 		<German>Wir können uns dies leider nicht leisten, Eure Majestät !</German>
 		<Italian>Temo che non possiamo permettercelo, Vostra Maestà!</Italian>
@@ -8624,7 +8624,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_MORTAR</Tag>
 		<English>We gratefully accept Your offer, Your Majesty!</English>
-		<Portuguese>Aceitamos com gratidão Sua oferta, Sua Majestade!</Portuguese>
+		<Portuguese>Aceitamos sua oferta, Majestade!</Portuguese>
 		<French>Nous acceptons votre offre avec joie, votre Majesté !</French>
 		<German>Wir nehmen euer Angebot dankend an, Eure Majestät !</German>
 		<Italian>Accettiamo con gratitudine la vostra offerta, Vostra Maestà!</Italian>
@@ -8635,7 +8635,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_NOT_ACQUIRE_MORTAR</Tag>
 		<English>I'm afraid we can't afford that, Your Majesty!</English>
-		<Portuguese>Receio que não possamos permitir isso, Majestade!</Portuguese>
+		<Portuguese>Não podemos pagar isso, Majestade!</Portuguese>
 		<French>Nous ne pouvons pas nous le permettre en ce moment, votre Majesté !</French>
 		<German>Wir können uns dies leider nicht leisten, Eure Majestät !</German>
 		<Italian>Temo che non possiamo permettercelo, Vostra Maestà!</Italian>
@@ -8646,7 +8646,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_RANGERS</Tag>
 		<English>What a brilliant idea, Your Majesty! (Train Rangers)</English>
-		<Portuguese>Que ideia brilhante, Majestade! (Trem Rangers)</Portuguese>
+		<Portuguese>Que ideia brilhante, Majestade! (Treinar rangers)</Portuguese>
 		<French>Quelle idée brillante, votre Majesté ! (Entraîner des gardes-forestiers)</French>
 		<German>Dies ist eine brilliante Idee, Eure Majestät ! (Ranger ausbilden)</German>
 		<Italian>Che idea geniale, Vostra Maestà! (Rangers del treno)</Italian>
@@ -8657,7 +8657,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_NOT_ACQUIRE_RANGERS</Tag>
 		<English>Your Majesty, I assure you that the colonies are sufficiently protected. We do not need more troops.</English>
-		<Portuguese>Majestade, garanto-lhe que as colônias estão suficientemente protegidas. Não precisamos de mais tropas.</Portuguese>
+		<Portuguese>Majestade, as colônias já estão protegidas.</Portuguese>
 		<French>Votre Majesté, je vous en assure, nos colonies intérieures sont déjà bien protégées. Nous n'avons pas besoin de troupes.</French>
 		<German>Eure Majestät, Ich versichere Euch, dass die Kolonien ausreichend geschützt sind. Wir benötigen keine weiteren Truppen.</German>
 		<Italian>Vostra Maestà, vi assicuro che le colonie sono sufficientemente protette. Non abbiamo bisogno di altre truppe.</Italian>
@@ -8668,7 +8668,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_CONQUISTADORS</Tag>
 		<English>We will welcome these brave fighters in the name of Christianity, Your Majesty! (Hire Conquistadors)</English>
-		<Portuguese>Daremos as boas-vindas a estes bravos lutadores em nome do Cristianismo, Sua Majestade! (Contratar Conquistadores)</Portuguese>
+		<Portuguese>Receberemos esses lutadores, Majestade! (Contratar Conquistadores)</Portuguese>
 		<French>Nous accueillons ses combattants courageux au nom de la Chrétienté, votre Majesté ! (Engager des conquistadors)</French>
 		<German>Im Namen des Herrn heißen wir diese tapferen Kämpfer bei uns willkommen, Eure Majestät ! (Konquistadoren anwerben)</German>
 		<Italian>Daremo il benvenuto a questi coraggiosi combattenti in nome della cristianità, Vostra Maestà! (Noleggia i conquistatori)</Italian>
@@ -8679,7 +8679,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_NOT_ACQUIRE_CONQUISTADORS</Tag>
 		<English>Your Majesty, unfortunately we cannot afford these mercenaries at the moment.</English>
-		<Portuguese>Sua Majestade, infelizmente não podemos pagar esses mercenários no momento.</Portuguese>
+		<Portuguese>Majestade, não podemos pagar esses mercenários.</Portuguese>
 		<French>Votre Majesté, nous ne pouvons malheureusement pas nous offrir ces mercenaires pour le moment.</French>
 		<German>Eure Majestät, wir können uns diese Söldner bedauerlicherweise derzeit nicht leisten.</German>
 		<Italian>Vostra Maestà, purtroppo non possiamo permetterci questi mercenari al momento.</Italian>
@@ -8690,7 +8690,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_REV_NEED_LAND</Tag>
 		<English>Thank your sovereign and tell him that we need more land forces. (Get troops)</English>
-		<Portuguese>Agradeça ao seu soberano e diga-lhe que precisamos de mais forças terrestres. (Obter tropas)</Portuguese>
+		<Portuguese>Precisamos de mais tropas terrestres. (Obter tropas)</Portuguese>
 		<French>Remerciez votre souverain et dites-lui que nous avons besoin de plus de forces terrestres. (Obtenir des troupes)</French>
 		<German>Dankt Eurem Herrscher und richtet ihm aus, dass wir mehr Truppen gebrauchen können. (Truppen bekommen)</German>
 		<Italian>Ringraziate il vostro sovrano e ditegli che abbiamo bisogno di più forze di terra. (Ottenere truppe)</Italian>
@@ -8701,7 +8701,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_REV_NEED_SEA</Tag>
 		<English>Thank your sovereign and tell him we need a stronger navy. (Get warships)</English>
-		<Portuguese>Agradeça ao seu soberano e diga-lhe que precisamos de uma marinha mais forte. (Obtenha navios de guerra)</Portuguese>
+		<Portuguese>Precisamos de uma marinha mais forte. (Obter navios de guerra)</Portuguese>
 		<French>Remerciez votre souverain et dites-lui que nous avons besoin de forces navales plus fortes. (Obtenir des navires de guerre)</French>
 		<German>Dankt Eurem Herrscher und richtet ihm aus, dass wir stärkere Kriegsschiffe gebrauchen können. (Kriegsschiffe bekommen)</German>
 		<Italian>Ringraziate il vostro sovrano e ditegli che abbiamo bisogno di forze navali più forti. (Ottenere navi da guerra)</Italian>
@@ -8767,7 +8767,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_FOUND_CITY_CANCEL_2</Tag>
 		<English>Let me think about it. (Do not found settlement)</English>
-		<Portuguese>Deixe-me pensar sobre isso. (Não encontrei colônia)</Portuguese>
+		<Portuguese>Deixe-me pensar. (Não fundar colônia)</Portuguese>
 		<French>Laissez-moi y réfléchir. (Ne pas fonder de colonie)</French>
 		<German>Lasst mich das überdenken. (Keine Siedlung gründen)</German>
 		<Italian>Fammici pensare. (Non costruire l'insediamento)</Italian>
