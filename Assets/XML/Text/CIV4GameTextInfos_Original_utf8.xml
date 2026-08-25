@@ -4278,7 +4278,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TIME_BC_SAVE</Tag>
 		<English>BC-%s1_Date</English>
-		<Portuguese>BC-%s1_Date</Portuguese>
+		<Portuguese>a.C.-%s1_Date</Portuguese>
 		<French>%s1_Date av. J-C.</French>
 		<German>v. Chr.-%s1_Date</German>
 		<Italian>a. C. - %s1_Date</Italian>
@@ -4288,7 +4288,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TIME_BC</Tag>
 		<English>%d1_Date BC</English>
-		<Portuguese>%d1_Date BC</Portuguese>
+		<Portuguese>%d1_Date a.C.</Portuguese>
 		<French>%d1_Date av. J-C.</French>
 		<German>%d1_Date v. Chr.</German>
 		<Italian>%d1_Date a. C.</Italian>
@@ -4298,7 +4298,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TIME_AD_SAVE</Tag>
 		<English>AD-%s1_Date</English>
-		<Portuguese>AD-%s1_Date</Portuguese>
+		<Portuguese>d.C.-%s1_Date</Portuguese>
 		<French>%s1_Date ap. J.C</French>
 		<German>n. Chr.-%s1_Date</German>
 		<Italian>d.C. - %s1_Date</Italian>
