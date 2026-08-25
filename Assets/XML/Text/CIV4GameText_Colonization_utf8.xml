@@ -3224,7 +3224,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_HURRY_IMMIGRATION</Tag>
 		<English>Hurry Emigration</English>
-		<Portuguese>Apresse a emigração</Portuguese>
+		<Portuguese>Acelerar emigração</Portuguese>
 		<French>Accélérer l'émigration</French>
 		<German>Auswanderung beschleunigen</German>
 		<Italian>Accelera l'emigrazione</Italian>
@@ -3971,7 +3971,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TALK_NATIVES_POPUP_CHIEF</Tag>
 		<English>Ask to speak with the chief</English>
-		<Portuguese>Peça para falar com o chefe</Portuguese>
+		<Portuguese>Falar com chefe</Portuguese>
 		<French>Demander à parler avec le chef</French>
 		<German>Um ein Gespräch mit dem Häuptling bitten</German>
 		<Italian>Chiedi di parlare con il capo</Italian>
@@ -3982,7 +3982,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TALK_NATIVES_POPUP_LEARN</Tag>
 		<English>Live among the Natives</English>
-		<Portuguese>Viva entre os nativos</Portuguese>
+		<Portuguese>Viver entre nativos</Portuguese>
 		<French>Vivre parmi les indigènes</French>
 		<German>Bei den Ureinwohnern leben und von ihnen lernen</German>
 		<Italian>Vivi tra i nativi</Italian>
@@ -3993,7 +3993,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TALK_NATIVES_POPUP_MISSION</Tag>
 		<English>Establish a mission</English>
-		<Portuguese>Estabeleça uma missão</Portuguese>
+		<Portuguese>Estabelecer missão</Portuguese>
 		<French>Établir une mission</French>
 		<German>Eine Mission errichten</German>
 		<Italian>Fonda una missione</Italian>
@@ -4003,7 +4003,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TALK_NATIVES_POPUP_MISSION2</Tag>
 		<English>Establish a mission[NEWLINE]Success rate : %d1_success</English>
-		<Portuguese>Estabeleça uma missão[NEWLINE]Taxa de sucesso: %d1_success</Portuguese>
+		<Portuguese>Estabelecer missão[NEWLINE]Taxa de sucesso: %d1_success</Portuguese>
 		<French>Établir une mission[NEWLINE]Chances de réussite : %d1_success</French>
 		<German>Eine Mission errichten[NEWLINE]Erfolgschance : %d1_success</German>
 		<Italian>Fonda una missione[NEWLINE]Possibilità di successo : %d1_success</Italian>
@@ -4014,7 +4014,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE</Tag>
 		<English>Enter trade negotiations</English>
-		<Portuguese>Entre nas negociações comerciais</Portuguese>
+		<Portuguese>Negociar</Portuguese>
 		<French>Ouvrir des négociations commerciales</French>
 		<German>Handelsverhandlungen starten</German>
 		<Italian>Avvia trattative commerciali</Italian>
@@ -4047,7 +4047,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST</Tag>
 		<English>Establish a trading post</English>
-		<Portuguese>Estabeleça uma feitoria</Portuguese>
+		<Portuguese>Estabelecer feitoria</Portuguese>
 		<French>Établir un comptoir de commerce</French>
 		<German>Einen Handelsposten einrichten</German>
 		<Russian>Установить торговый пост</Russian>
@@ -4055,7 +4055,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST2</Tag>
 		<English>Establish a trading post [NEWLINE]Success rate : %d1_success</English>
-		<Portuguese>Estabeleça uma feitoria [NEWLINE]Taxa de sucesso: %d1_success</Portuguese>
+		<Portuguese>Estabelecer feitoria [NEWLINE]Taxa de sucesso: %d1_success</Portuguese>
 		<French>Établir un comptoir de commerce [NEWLINE]Chance de réussite : %d1_success</French>
 		<German>Einen Handelsposten einrichten[NEWLINE]Erfolgschance : %d1_success</German>
 		<Russian>Попытаться установить торговый пост в деревне индейцев [NEWLINE]Шанс успеха : %d1_success</Russian>

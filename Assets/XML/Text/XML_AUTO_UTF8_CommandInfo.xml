@@ -45,7 +45,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_CANCEL_ALL</Tag>
 		<English>Cancel all missions</English>
-		<Portuguese>Cancelar todas as missões</Portuguese>
+		<Portuguese>Cancelar todas missões</Portuguese>
 		<French>Annuler toutes les missions</French>
 		<German>Alle Einsätze abbrechen</German>
 		<Italian>Annulla tutte le missioni</Italian>
@@ -248,7 +248,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_LEARN_HELP</Tag>
 		<English>Live among the Natives and acquire an expert skill.</English>
-		<Portuguese>Viva entre os nativos e adquira habilidades especializadas.</Portuguese>
+		<Portuguese>Viver entre nativos e adquira habilidades especializadas.</Portuguese>
 		<French>Vivre parmi les indigènes et acquérir une nouvelle technique.</French>
 		<German>Bei den Ureinwohnern leben und eine Expertenfähigkeit erlernen.</German>
 		<Italian>Vivi tra i nativi e impara un'abilità a livello esperto.</Italian>
@@ -380,7 +380,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SAIL_TO_AFRICA</Tag>
 		<English>Sail to Africa</English>
-		<Portuguese>Para a África</Portuguese>
+		<Portuguese>Para África</Portuguese>
 		<French>Naviguer vers l'Afrique</French>
 		<German>Nach Afrika segeln</German>
 		<Italian>Fai vela per l'Africa</Italian>
@@ -400,7 +400,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SAIL_TO_EUROPE</Tag>
 		<English>Sail to Europe</English>
-		<Portuguese>Para a Europa</Portuguese>
+		<Portuguese>Para Europa</Portuguese>
 		<French>Naviguer vers l'Europe</French>
 		<German>Nach Europa segeln</German>
 		<Italian>Fai vela per l'Europa</Italian>
@@ -440,7 +440,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SPEAK_WITH_CHIEF</Tag>
 		<English>Speak with chief</English>
-		<Portuguese>Falar com o chefe</Portuguese>
+		<Portuguese>Falar com chefe</Portuguese>
 		<French>Parler avec le chef</French>
 		<German>Mit dem Häuptling sprechen</German>
 		<Italian>Parla col capo</Italian>

@@ -324,7 +324,7 @@
 	<TEXT>
 		<Tag>AI_DIPLO_NO_PEACE_LEADER_COCIJOEZA_1</Tag>
 		<English>We, the people of the clouds, can never make peace with the filthy beasts that you are.</English>
-		<Portuguese>Nós, o povo das nuvens, nunca poderemos fazer as pazes com as feras imundas que vocês são.</Portuguese>
+		<Portuguese>Nós, o povo das nuvens, nunca poderemos fazer pazes com as feras imundas que vocês são.</Portuguese>
 		<French>Nous, peuple des nuages, ne pourrons jamais faire la paix avec les bêtes immondes que vous êtes.</French>
 		<German>Wir, die Menschen der Wolken, können niemals Frieden schließen mit den dreckigen Bestien, die Ihr seid.</German>
 		<Russian>Мы, люди облаков, никогда не сможем помириться с грязными тварями, каковыми являетесь вы.</Russian>
@@ -744,7 +744,7 @@
 	<TEXT>
 		<Tag>AI_DIPLO_FIRST_CONTACT_LEADER_RISING_1</Tag>
 		<English>I present to you my greetings, [CT_NAME]. I am [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], governor of the [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Yes, I know you're excited, now that you finally have met me. I advise you to make peace with us, as there is much that we can teach you.</English>
-		<Portuguese>Apresento-lhe minhas saudações, [CT_NAME]. Eu sou [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], governador do [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Sim, eu sei que você está animado, agora que finalmente me conheceu. Aconselho você a fazer as pazes conosco, pois há muito que podemos lhe ensinar.</Portuguese>
+		<Portuguese>Apresento-lhe minhas saudações, [CT_NAME]. Eu sou [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], governador do [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Sim, eu sei que você está animado, agora que finalmente me conheceu. Aconselho você a fazer pazes conosco, pois há muito que podemos lhe ensinar.</Portuguese>
 		<French>Cher [CT_NAME], je vous salue ! Je suis [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], gouverneur des [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Oui, je me rends compte de la joie qui vous habite à l'idée d'enfin me rencontrer. Je vous invite à faire la paix avec nous, il y a tant que nous pouvons vous apprendre.</French>
 		<German>Lieber [CT_NAME], ich grüße Euch! Ich bin [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], Gouverneur von [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Ja, ich kann sehen, wie glücklich Ihr sind, mich endlich zu treffen. Ich lade Euch ein, Frieden mit uns zu schließen, denn es gibt viel, was wir Euch lehren können.</German>
 		<Russian>Я приветствую тебя, [CT_NAME]. Я [COLOR_HIGHLIGHT_TEXT][OUR_NAME][COLOR_REVERT], губернатор [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT]. Да, я знаю, что ты взволнован нашей неожиданной встречей. Советую тебе жить с нами в мире, так как мы многому можем тебя научить.</Russian>
@@ -1542,7 +1542,7 @@
 	<TEXT>
 		<Tag>AI_DIPLO_GREETINGS_ATT_FUR_LEADER_SERPENT_QUECHQUEMITL_1</Tag>
 		<English>Your thuggish actions have greatly angered the gods. But because my patience and empathy extend even to the likes of you, I am willing to listen to your pleas for forgiveness and your promises to make amends.</English>
-		<Portuguese>Suas ações violentas irritaram muito os deuses. Mas como minha paciência e empatia se estendem até mesmo a pessoas como você, estou disposto a ouvir seus pedidos de perdão e suas promessas de fazer as pazes.</Portuguese>
+		<Portuguese>Suas ações violentas irritaram muito os deuses. Mas como minha paciência e empatia se estendem até mesmo a pessoas como você, estou disposto a ouvir seus pedidos de perdão e suas promessas de fazer pazes.</Portuguese>
 		<French>Vos actions de brigands ont mis en colère les dieux. Mais les ancêtres m'ont enseignés qu'il fallait faire preuve d'empathie même pour les gens de votre espèce. J'attends que vous me suppliez pour obtenir votre pardon.</French>
 		<German>Eure räuberischen Handlungen haben die Götter erzürnt. Aber weil meine Geduld und mein Einfühlungsvermögen auch für Leute wie Dich reichen, bin ich bereit, mir Eure Bitte um Vergebung und Euer Versprechen, Wiedergutmachung zu leisten, anzuhören.</German>
 		<Russian>Твои разбойничьи действия сильно разгневали богов. Но поскольку мое терпение и сочувствие распространяются даже на таких, как ты, я готов выслушать твои мольбы о прощении и обещания исправить положение.</Russian>
@@ -2127,7 +2127,7 @@
 	<TEXT>
 		<Tag>AI_DIPLO_NO_PEACE_LEADER_PINE_LEAF_1</Tag>
 		<English>There is nothing to be gained by making peace with you again. We will drive you like bison off the cliffs of this life.</English>
-		<Portuguese>Não há nada a ganhar fazendo as pazes com você novamente. Nós o expulsaremos como um bisão dos penhascos desta vida.</Portuguese>
+		<Portuguese>Não há nada a ganhar fazendo pazes com você novamente. Nós o expulsaremos como um bisão dos penhascos desta vida.</Portuguese>
 		<French>La paix avec vous ne nous apporterait rien. Nous vous jeterons de la falaise comme un vulgaire troupeau de bisons.</French>
 		<German>Es ist nichts zu gewinnen, wenn wir wieder Frieden mit Euch schließen. Wir werden Euch wie Büffel von den Klippen dieses Lebens stoßen.</German>
 		<Russian>Нет ничего, что можно было бы выиграть, снова заключив с тобой мир. Мы сгоним вас со скал этой жизни, как бизонов на охоте.</Russian>
@@ -2487,7 +2487,7 @@
 	<TEXT>
 		<Tag>AI_DIPLO_NO_PEACE_LEADER_ERENDIRA_1</Tag>
 		<English>Does the jaguar ever make peace with the tapir? It is only natural that my warriors will kill yours.</English>
-		<Portuguese>A onça alguma vez faz as pazes com a anta? É natural que meus guerreiros matem os seus.</Portuguese>
+		<Portuguese>A onça alguma vez faz pazes com a anta? É natural que meus guerreiros matem os seus.</Portuguese>
 		<French>Le jaguar a-t-il déjà fait la paix avec le tapir ? Il est normal que mes guerriers continuent à tuer les vôtres.</French>
 		<German>Schließt der Jaguar jemals Frieden mit dem Tapir? Es ist nur natürlich, dass meine Krieger weiterhin die Euren töten.</German>
 		<Russian>Ягуар когда-нибудь заключает мир с тапиром? Это вполне естественно, что мои воины продолжают убивать ваших.</Russian>
@@ -2727,7 +2727,7 @@
 	<TEXT>
 		<Tag>AI_DIPLO_NO_PEACE_LEADER_LAUTARO_1</Tag>
 		<English>Why should we make peace when slaughtering you [CT_CIV_ADJ] cowards is so much fun?</English>
-		<Portuguese>Por que deveríamos fazer as pazes quando massacrar vocês [CT_CIV_ADJ] covardes é tão divertido?</Portuguese>
+		<Portuguese>Por que deveríamos fazer pazes quando massacrar vocês [CT_CIV_ADJ] covardes é tão divertido?</Portuguese>
 		<French>Pourquoi devrions-nous faire la paix alors que nous avons tant de plaisir à vous abattre [CT_CIV_ADJ], lâches ?</French>
 		<German>Warum sollten wir Frieden schließen, wenn es uns so viel Spaß macht, die [CT_CIV_ADJ] Feiglinge abzuschlachten?</German>
 		<Russian>Почему мы должны заключать мир, если нам так нравится убивать вас, [CT_CIV_ADJ]?</Russian>

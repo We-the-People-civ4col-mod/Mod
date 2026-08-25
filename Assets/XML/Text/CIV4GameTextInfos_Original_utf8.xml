@@ -2197,7 +2197,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_MAKE_PEACE</Tag>
 		<English>Will cause %s1_You to make peace with %s2_Them.</English>
-		<Portuguese>Fará com que %s1_You faça as pazes com %s2_Them.</Portuguese>
+		<Portuguese>Fará com que %s1_You faça pazes com %s2_Them.</Portuguese>
 		<French>Entraînera la paix entre %s1_You et %s2_Them.</French>
 		<German>Veranlasst %s1_You, mit %s2_Them Frieden zu schließen.</German>
 		<Italian>Farà in modo che %s1_You faccia pace con %s2_Them.</Italian>
@@ -2263,7 +2263,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_MAKE_PEACE_WITH</Tag>
 		<English>Make peace with</English>
-		<Portuguese>Fazer as pazes com</Portuguese>
+		<Portuguese>Fazer pazes com</Portuguese>
 		<French>Faire la paix avec : </French>
 		<German>Frieden schließen mit</German>
 		<Italian>Fai la pace con</Italian>
@@ -4182,7 +4182,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_SOMEONE_MADE_PEACE</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] has made peace with [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] fez as pazes com [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Portuguese>
+		<Portuguese>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] fez pazes com [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Portuguese>
 		<French>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] a fait la paix avec [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT] !</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] hat mit [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT] Frieden geschlossen!</German>
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_PlyrName[COLOR_REVERT] ha siglato la pace con [COLOR_HIGHLIGHT_TEXT]%s2_PlyrName[COLOR_REVERT]!</Italian>
@@ -10064,7 +10064,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_HURRY_PRODUCTION</Tag>
 		<English>Hurry production</English>
-		<Portuguese>Apresse a produção</Portuguese>
+		<Portuguese>Acelerar produção</Portuguese>
 		<French>Hâter production</French>
 		<German>Produktion beschleunigen</German>
 		<Italian>Produzione accelerata</Italian>
@@ -11021,7 +11021,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_MADE_PEACE_WITH</Tag>
 		<English>You have made peace with [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]!</English>
-		<Portuguese>Você fez as pazes com [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]!</Portuguese>
+		<Portuguese>Você fez pazes com [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]!</Portuguese>
 		<French>Vous avez fait la paix avec [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]!</French>
 		<German>Ihr habt Frieden mit Team [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT] geschlossen!</German>
 		<Italian>Hai fatto pace con [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]!</Italian>
@@ -12480,7 +12480,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_DIPLO_CANCEL_CURRENT_DEALS</Tag>
 		<English>Cancel current deals.</English>
-		<Portuguese>Cancele as ofertas atuais.</Portuguese>
+		<Portuguese>Cancelar ofertas atuais.</Portuguese>
 		<French>Annuler les accords en cours...</French>
 		<German>Aktuelle Handelsvereinbarungen annullieren ...</German>
 		<Italian>Annulla gli accordi attuali...</Italian>
