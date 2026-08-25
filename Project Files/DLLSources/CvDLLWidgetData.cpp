@@ -1970,11 +1970,7 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 				{
 					bValid = true;
 
-					iRange = GC.getMIN_CITY_RANGE();
-					if (GC.getGameINLINE().isOption(GAMEOPTION_REDUCED_CITY_DISTANCE) && iRange > 1)
-					{
-						--iRange;
-					}
+					iRange = GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).getFoundCityMinRange(pMissionPlot);
 
 					for (iDX = -(iRange); iDX <= iRange; iDX++)
 					{
