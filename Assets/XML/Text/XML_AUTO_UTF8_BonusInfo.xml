@@ -3029,7 +3029,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_TUNDRA_BERRIES_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Lingonberries[COLOR_REVERT] can be found in cold northern regions like tundras and taigas. They're a source of food in a land where food is rare. They also provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]Lingonberries are native to boreal forest and Arctic tundra throughout the Northern Hemisphere. They spread by underground stems to form dense clonal colonies. They're usually protected from severe cold by snow cover. The lingonberry is extremely hardy, tolerating temperatures as low as -40 degree C (which is -40 degree F) or lower, but grows poorly where summers are hot. Alaska natives mix the berries with rose hip pulp and sugar to make jam, cook the berries as a sauce, and store the berries for future use. The Haida people, Hesquiaht First Nation, Wuikinuxv and Tsimshian all use the berries as food.</English>
-		<Portuguese>[BOLD]Estratégia:[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]mirtilos[COLOR_REVERT] podem ser encontrados em regiões frias do norte, como tundras e taigas. Eles são uma fonte de alimento em uma terra onde a comida é rara. Eles também proporcionam um pouco de saúde à cidade se trabalhados. [NEWLINE][NEWLINE][BOLD]Antecedentes:[\BOLD][NEWLINE]Os mirtilos são nativos da floresta boreal e da tundra ártica em todo o Hemisfério Norte. Eles se espalham por caules subterrâneos para formar densas colônias clonais. Eles geralmente são protegidos do frio intenso pela cobertura de neve. O mirtilo é extremamente resistente, tolerando temperaturas tão baixas quanto -40 graus C (que é -40 graus F) ou menos, mas cresce mal onde os verões são quentes. Os nativos do Alasca misturam as frutas com polpa de rosa mosqueta e açúcar para fazer geléia, cozinham as frutas como molho e armazenam-nas para uso futuro. O povo Haida, a Primeira Nação Hesquiaht, Wuikinuxv e Tsimshian usam as frutas como alimento.</Portuguese>
+		<Portuguese>[BOLD]Estratégia:[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Airelas[COLOR_REVERT] podem ser encontradas em regiões frias do norte, como tundras e taigas. Elas são uma fonte de alimento em uma terra onde a comida é rara. Elas também proporcionam um pouco de saúde à cidade se trabalhadas. [NEWLINE][NEWLINE][BOLD]Antecedentes:[\BOLD][NEWLINE]As airelas são nativas da floresta boreal e da tundra ártica em todo o Hemisfério Norte. Elas se espalham por caules subterrâneos para formar densas colônias clonais. Elas geralmente são protegidas do frio intenso pela cobertura de neve. A airela é extremamente resistente, tolerando temperaturas tão baixas quanto -40 graus C (que é -40 graus F) ou menos, mas cresce mal onde os verões são quentes. Os nativos do Alasca misturam as frutas com polpa de rosa mosqueta e açúcar para fazer geleia, cozinham as frutas como molho e armazenam-nas para uso futuro. O povo Haida, a Primeira Nação Hesquiaht, Wuikinuxv e Tsimshian usam as frutas como alimento.</Portuguese>
 		<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Tundrabeeren[COLOR_REVERT]</German>
 	</TEXT>
 	<TEXT>
@@ -3037,8 +3037,8 @@
 		<English>Huckleberries</English>
 		
 		<Portuguese>
-			<Text>Mirtilos</Text>
-			<Gender>Female</Gender>
+			<Text>Mirtilos-vermelhos</Text>
+			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
 		<French>Airelles du Nouveau-Monde</French>
@@ -3052,7 +3052,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BONUS_HUCKLE_BERRIES_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Huckleberries[COLOR_REVERT] can be found in temperate regions like grasslands and prairie or steppe terrain. They're a source of food. Like most fruit they provide a bit of health to the city if worked. [NEWLINE][NEWLINE][BOLD]Background :[\BOLD][NEWLINE]From coastal central California through Oregon to southern Washington and British Columbia, the red huckleberry is found in the maritime-influenced plant community. In the Pacific Northwest and mountains of Montana and Idaho, huckleberries grow in varied habitats, such as mid-alpine regions up to 11,500 feet (3,500 m) above sea level, mountain slopes, forests, or lake basins. The plant grows best in damp, acidic soil having volcanic origin, attaining under optimal conditions heights of 1.5 to 2 meters (4.9 to 6.6 feet), usually ripening in mid-to-late summer or later at high elevations.</English>
-		<Portuguese>[BOLD]Estratégia:[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Huckleberries[COLOR_REVERT] podem ser encontrados em regiões temperadas, como pastagens e pradarias ou terrenos de estepe. Eles são uma fonte de alimento. Como a maioria das frutas, elas proporcionam um pouco de saúde à cidade se forem trabalhadas. [NEWLINE][NEWLINE][BOLD]Antecedentes:[\BOLD][NEWLINE]Da costa central da Califórnia, passando pelo Oregon, até o sul de Washington e a Colúmbia Britânica, o mirtilo vermelho é encontrado na comunidade vegetal de influência marítima. No noroeste do Pacífico e nas montanhas de Montana e Idaho, os mirtilos crescem em habitats variados, como regiões médias alpinas até 11.500 pés (3.500 m) acima do nível do mar, encostas de montanhas, florestas ou bacias lacustres. A planta cresce melhor em solo úmido e ácido de origem vulcânica, atingindo, em condições ideais, alturas de 1,5 a 2 metros (4,9 a 6,6 pés), geralmente amadurecendo em meados do verão ou mais tarde em altitudes elevadas.</Portuguese>
+		<Portuguese>[BOLD]Estratégia:[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Mirtilos-vermelhos[COLOR_REVERT] podem ser encontrados em regiões temperadas, como pastagens e pradarias ou terrenos de estepe. Eles são uma fonte de alimento. Como a maioria das frutas, proporcionam um pouco de saúde à cidade se forem trabalhados. [NEWLINE][NEWLINE][BOLD]Antecedentes:[\BOLD][NEWLINE]Da costa central da Califórnia, passando pelo Oregon, até o sul de Washington e a Colúmbia Britânica, o mirtilo-vermelho é encontrado na comunidade vegetal de influência marítima. No noroeste do Pacífico e nas montanhas de Montana e Idaho, os mirtilos-vermelhos crescem em habitats variados, como regiões médias alpinas até 11.500 pés (3.500 m) acima do nível do mar, encostas de montanhas, florestas ou bacias lacustres. A planta cresce melhor em solo úmido e ácido de origem vulcânica, atingindo, em condições ideais, alturas de 1,5 a 2 metros (4,9 a 6,6 pés), geralmente amadurecendo em meados do verão ou mais tarde em altitudes elevadas.</Portuguese>
 		<German>[BOLD]Strategie :[\BOLD][NEWLINE][COLOR_HIGHLIGHT_TEXT]Heidelbeeren[COLOR_REVERT]</German>
 	</TEXT>
 	<TEXT>
@@ -3061,7 +3061,7 @@
 		
 		<Portuguese>
 			<Text>Mirtilos</Text>
-			<Gender>Female</Gender>
+			<Gender>Male</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
 		<French>Myrtilles</French>
