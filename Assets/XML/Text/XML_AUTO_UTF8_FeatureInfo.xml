@@ -1251,7 +1251,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_RIVER_FORD</Tag>
 		<English>River Ford</English>
-		<Portuguese>Rio Ford</Portuguese>
+		<Portuguese>Vau Fluvial</Portuguese>
 		<French>Passage à gué</French>
 		<German>Flussfurt</German>
 		<Russian>Речной брод</Russian>
@@ -1259,7 +1259,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_RIVER_FORD_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]River fords[COLOR_REVERT] allow all land units to make it across a [LINK=TERRAIN_LARGE_RIVERS]large river[\LINK] without being swept away. They form naturally from sediment deposited by the flowing river.</English>
-		<Portuguese>[BOLD]Estratégia:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]vaus fluviais[COLOR_REVERT] permitem que todas as unidades terrestres atravessem um [LINK=TERRAIN_LARGE_RIVERS]grande rio[\LINK] sem serem arrastadas. Eles se formam naturalmente a partir de sedimentos depositados pelo rio que flui.</Portuguese>
+		<Portuguese>[BOLD]Estratégia:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Vaus fluviais[COLOR_REVERT] permitem que todas as unidades terrestres atravessem um [LINK=TERRAIN_LARGE_RIVERS]grande rio[\LINK] sem serem arrastadas. Eles se formam naturalmente a partir de sedimentos depositados pelo rio que flui.</Portuguese>
 		<French>[BOLD]Stratégie :[\BOLD][PARAGRAPH:1]Les [COLOR_HIGHLIGHT_TEXT]passages à gué[COLOR_REVERT] permettent à toutes les unités de traverser des [LINK=TERRAIN_LARGE_RIVERS]grandes  rivières[\LINK] sans être emportés par le courant. Ils se forment naturellement avec le dépôt de sédiments par le cours de la rivière. </French>
 		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Flussfurten[COLOR_REVERT] erlauben es allen Landeinheiten, einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren. Sie enstehen auf natürliche Weise durch Ablagerungen von Sedimenten.</German>
 		<Russian>[BOLD]Стратегия:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Речные броды[COLOR_REVERT] позволяют всем сухопутным юнитам переправляться через [LINK=TERRAIN_LARGE_RIVERS]большие реки[\LINK], не опасаясь быть смытыми мощными потоками воды. Они образуются естественным образом из осадка, принесённого текущей рекой.</Russian>
