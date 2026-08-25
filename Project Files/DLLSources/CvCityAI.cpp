@@ -174,14 +174,17 @@ void CvCityAI::AI_assignWorkingPlots()
 		return;
 	}
 
+	// 1. needed yields are workforce-invariant. compute them first so the city-center
+	//    crop and citizen jobs see this turn's indoor inputs (berries, ore, cotton),
+	//    not last turn. last turn is why a new roaster still grew food/sugar.
+	AI_updateNeededYields();
+
 	AI_assignCityPlot();
 
 	jobMutex.lock();
 
 	// No need to call this here, once per turn should be enough
 	//GET_PLAYER(getOwnerINLINE()).AI_manageEconomy();
-
-	AI_updateNeededYields();
 
 	//remove non-city people
 	removeNonCityPopulationUnits();
@@ -3935,7 +3938,12 @@ int CvCityAI::AI_citizenProfessionValue(
 		YieldTypes y = inYields[i];
 		int avail = getRawYieldProduced(y) + getYieldStored(y);
 		if (avail <= 0)
+		{
+			// 3. empty store used to hard-zero the roaster/smith. then nobody grew berries
+			//    either, because extra food still scored higher. keep indoor at 0 until
+			//    input exists; plot jobs for that input are boosted below.
 			return 0;
+		}
 	}
 
 	// 7) per-yield evaluation
@@ -4020,6 +4028,30 @@ int CvCityAI::AI_citizenProfessionValue(
 	int combined = 0;
 	for (int j = 0; j < yieldsOut.count && j < MAX_OUTPUT_YIELDS; ++j)
 		combined += vals[j].iNetValue;
+
+	// 3. staff the INPUT first when food is already covered. city plot always grows food
+	//    plus one cargo; extra farmers on the ring beat berry/ore/cotton plots if we don't
+	//    cut surplus food and boost needed indoor inputs.
+	if (kProfInfo.isWorkPlot() && yieldsOut.count > 0)
+	{
+		const YieldTypes eY = yieldsOut.yields[0].eYield;
+		if (eY == YIELD_FOOD)
+		{
+			if (AI_getEmphasizeYieldCount(YIELD_FOOD) <= 0)
+			{
+				const int iFoodNeed = getPopulation() * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
+				const int iFoodHave = getYieldStored(YIELD_FOOD) + getRawYieldProduced(YIELD_FOOD);
+				if (iFoodNeed > 0 && iFoodHave > iFoodNeed * 2)
+				{
+					combined /= 4;
+				}
+			}
+		}
+		else if (AI_getNeededYield(eY) > getYieldStored(eY))
+		{
+			combined *= 3;
+		}
+	}
 
 	return branchless::max(0, combined);
 }
@@ -4849,16 +4881,16 @@ void CvCityAI::AI_updateNeededYields()
 				if (!kLoopProfession.isWorkPlot())
 				{
 					// R&R, ray , MYCP partially based on code of Aymerick - START
-					YieldTypes eYieldProduced = (YieldTypes)kLoopProfession.getYieldsProduced(0);
 					YieldTypes eYieldConsumed = (YieldTypes)kLoopProfession.getYieldsConsumed(0);
 					// R&R, ray , MYCP partially based on code of Aymerick - END
 					if (eYieldConsumed != NO_YIELD)
 					{
-						if (AI_getYieldAdvantage(eYieldProduced) == 100)
+						// 2. if THIS city has the building, it needs the input. do not wait until
+						//    we are the empire's only 100-advantage coffee/cloth city.
+						const int iSlots = getNumProfessionBuildingSlots(eLoopProfession);
+						if (iSlots > 0)
 						{
-							// 1. this used to write the OUTPUT yield (cloth, muskets).
-							//    needed yield is the INPUT the slots consume (cotton, ore).
-							const int iInputNeed = getNumProfessionBuildingSlots(eLoopProfession) * getProfessionInput(eLoopProfession, NULL);
+							const int iInputNeed = iSlots * getProfessionInput(eLoopProfession, NULL);
 							m_em_iNeededYield.set(eYieldConsumed, branchless::max(m_em_iNeededYield.get(eYieldConsumed), iInputNeed));
 						}
 					}
