@@ -1645,7 +1645,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_LOUIS_JOLLIET_STRATEGY</Tag>
 		<English>Add [COLOR_TECH_TEXT]Louis Jolliet[COLOR_REVERT] as a Founding Father to increase chances of triggering unique events on the map when exploring Goody Huts on land. Additionally he will grant your troops better protection against wild animals on land.</English>
-		<Portuguese>Adicione [COLOR_TECH_TEXT]Louis Jolliet[COLOR_REVERT] como Patrono para aumentar as chances de desencadear eventos únicos no mapa ao explorar Goody Huts em terra. Além disso, ele concederá às suas tropas melhor proteção contra animais selvagens em terra.</Portuguese>
+		<Portuguese>Adicione [COLOR_TECH_TEXT]Louis Jolliet[COLOR_REVERT] como Patrono para mais eventos únicos ao explorar em terra. Também protege suas tropas contra animais selvagens em terra.</Portuguese>
 		<German>Gewinne [COLOR_TECH_TEXT]Louis Jolliet[COLOR_REVERT] als Gründervater, um die Chances auf einzigartige Ereignisse beim Untersuchen von Goody Huts an Land auszulösen. Zusätzlich verleiht er deinen Tuppen besseren Schutz gegen Wilde Tiere an Land.</German>
 	</TEXT>
 	<TEXT>
@@ -1691,7 +1691,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JAMES_COOK_STRATEGY</Tag>
 		<English>Add [COLOR_TECH_TEXT]James Cook[COLOR_REVERT] as a Founding Father to increase chances of triggering unique events on the map when exploring Goody Huts on Water. Additionally he will grant your troops better protection against wild animals at sea.</English>
-		<Portuguese>Adicione [COLOR_TECH_TEXT]James Cook[COLOR_REVERT] como Patrono para aumentar as chances de desencadear eventos únicos no mapa ao explorar Goody Huts on Water. Além disso, ele concederá às suas tropas melhor proteção contra animais selvagens no mar.</Portuguese>
+		<Portuguese>Adicione [COLOR_TECH_TEXT]James Cook[COLOR_REVERT] como Patrono para mais eventos únicos ao explorar no mar. Também protege suas tropas contra animais selvagens no mar.</Portuguese>
 		<German>Gewinne [COLOR_TECH_TEXT]James Cook[COLOR_REVERT] als Gründervater, um die Chances auf einzigartige Ereignisse beim Untersuchen von Goody Huts im Wasser auszulösen. Zusätzlich verleiht er deinen Tuppen besseren Schutz gegen wilde Tiere im Wasser.</German>
 	</TEXT>
 	<TEXT>

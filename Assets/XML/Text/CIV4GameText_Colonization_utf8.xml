@@ -2672,7 +2672,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GOODY_CHANCE_MODIFIER_LAND</Tag>
 		<English>[ICON_BULLET]%D1%% chances for unique events (Goody Huts on land)</English>
-		<Portuguese>[ICON_BULLET]%D1%% chances de eventos únicos (Goody Huts em terra)</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% eventos únicos ao explorar em terra</Portuguese>
 		<French>[ICON_BULLET]%D1%% chances d'évenements uniques (Goody Huts)</French>
 		<German>[ICON_BULLET]%D1%% Chancen für einzigartige Ereignisse (Goody Huts an Land)</German>
 		<Russian>[ICON_BULLET]%D1%% к шансу уникального события (Goody Huts на земле)</Russian>
@@ -2681,7 +2681,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GOODY_CHANCE_MODIFIER_WATER</Tag>
 		<English>[ICON_BULLET]%D1%% chances for unique events (Goody Huts on water)</English>
-		<Portuguese>[ICON_BULLET]%D1%% chances de eventos únicos (Goody Huts on water)</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% eventos únicos ao explorar no mar</Portuguese>
 		<French>[ICON_BULLET]%D1%% chances d'évenements uniques(Goody Huts maritime)</French>
 		<German>[ICON_BULLET]%D1%% Chancen für einzigartige Ereignisse (Goody Huts im Wasser)</German>
 		<Russian>[ICON_BULLET]%D1%% к шансу уникального события (Goody Huts на море)</Russian>
