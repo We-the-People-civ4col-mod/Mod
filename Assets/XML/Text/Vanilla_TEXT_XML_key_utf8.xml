@@ -502,7 +502,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CYCLE_UNITS</Tag>
 		<English>Cycle Units</English>
-		<Portuguese>Unidades de Ciclo</Portuguese>
+		<Portuguese>Alternar unidades</Portuguese>
 		<French>Faire défiler les unités</French>
 		<German>Durch Einheiten schalten</German>
 		<Italian>Scorri unità</Italian>
@@ -511,7 +511,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CYCLE_UNITS_ALT</Tag>
 		<English>Cycle Units (Alt)</English>
-		<Portuguese>Unidades de Ciclo (Alt)</Portuguese>
+		<Portuguese>Alternar unidades (Alt)</Portuguese>
 		<French>Faire défiler les unités (Alt)</French>
 		<German>Durch Einheiten schalten (Alt)</German>
 		<Italian>Scorri unità (Alt)</Italian>
@@ -565,7 +565,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_PING</Tag>
 		<English>Ping</English>
-		<Portuguese>Pingar</Portuguese>
+		<Portuguese>Marcar</Portuguese>
 		<French>Balise</French>
 		<German>Pingen</German>
 		<Italian>Segnala</Italian>
@@ -746,7 +746,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CYCLE_CAMERA_FLYING_MODES</Tag>
 		<English>Cycle Camera Flying Modes</English>
-		<Portuguese>Ciclo de modos de vôo da câmera</Portuguese>
+		<Portuguese>Alternar modos de voo da câmera</Portuguese>
 		<French>Faire défiler modes de caméra libre</French>
 		<German>Durch Kameraflugmodi schalten</German>
 		<Italian>Scorri le visuali dall'alto</Italian>
@@ -1097,7 +1097,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_START_DIPLOMACY</Tag>
 		<English>Start Diplomacy</English>
-		<Portuguese>Comece a Diplomacia</Portuguese>
+		<Portuguese>Iniciar diplomacia</Portuguese>
 		<French>Lancer diplomatie</French>
 		<German>Diplomatie starten</German>
 		<Italian>Avvia diplomazia</Italian>
@@ -1115,7 +1115,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_SIGN</Tag>
 		<English>Sign</English>
-		<Portuguese>Assinar</Portuguese>
+		<Portuguese>Placa</Portuguese>
 		<French>Panneau</French>
 		<German>Zeichen</German>
 		<Italian>Segnale</Italian>
@@ -1124,7 +1124,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_SIGN_HELP</Tag>
 		<English>Adds a sign to a specific plot that you and your teammates can see.</English>
-		<Portuguese>Adiciona um sinal a um terreno específico que você e seus colegas de equipe podem ver.</Portuguese>
+		<Portuguese>Adiciona uma placa a um terreno específico que você e seus colegas de equipe podem ver.</Portuguese>
 		<French>Ajoutez un panneau à un endroit précis pour vous et vos coéquipiers.</French>
 		<German>Markieren Sie ein Geländefeld mit einem Zeichen, das nur Sie und Ihre Teammitglieder sehen können.</German>
 		<Italian>Aggiunge in una determinata casella un segnale visibile soltanto a te e ai tuoi alleati.</Italian>
@@ -2044,7 +2044,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAME_OPTION_NO_CITY_RAZING_HELP</Tag>
 		<English>European Settlements cannot be razed by other Europeans after capture</English>
-		<Portuguese>As colônias europeus não podem ser arrasados por outros europeus após a captura</Portuguese>
+		<Portuguese>As colônias europeias não podem ser arrasadas por outros europeus após a captura</Portuguese>
 		<French>Impossible pour les Européens de raser les autres colonies européennes après leur capture.</French>
 		<German>Europäische Siedlungen können nach der Einnahme durch andere Europäer nicht vernichtet werden</German>
 		<Italian>Gli insediamenti europei non possono essere razziati da altri europei dopo la conquista</Italian>

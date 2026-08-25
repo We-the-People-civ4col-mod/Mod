@@ -197,7 +197,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_NO_CITY_RAZING_HELP</Tag>
 		<English>European settlements cannot be razed by other Europeans after capture.</English>
-		<Portuguese>As colônias europeus não podem ser arrasados por outros europeus após a captura.</Portuguese>
+		<Portuguese>As colônias europeias não podem ser arrasadas por outros europeus após a captura.</Portuguese>
 		<French>Impossible pour les Européens de raser les autres colonies européennes après leur capture.</French>
 		<German>Europäische Siedlungen können nach der Einnahme durch andere Europäer nicht mehr zerstört werden.</German>
 		<Italian>Gli insediamenti europei non possono essere razziati da altri europei dopo la conquista.</Italian>
@@ -347,7 +347,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_RANDOM_SETTLEMENT_AREAS</Tag>
 		<English>Random settlement areas of Natives</English>
-		<Portuguese>Áreas de colônia aleatório de nativos</Portuguese>
+		<Portuguese>Áreas de aldeia aleatórias dos nativos</Portuguese>
 		<French>Positionnement aléatoires des indigènes</French>
 		<German>Beliebige Siedlungsgebiete der Ureinwohner</German>
 		<Italian>Aree di insediamento casuali di nativi</Italian>

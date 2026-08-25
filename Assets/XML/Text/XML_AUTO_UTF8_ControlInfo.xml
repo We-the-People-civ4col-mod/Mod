@@ -18,7 +18,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_DIPLOMACY</Tag>
 		<English>Start Diplomacy</English>
-		<Portuguese>Comece a Diplomacia</Portuguese>
+		<Portuguese>Iniciar diplomacia</Portuguese>
 		<French>Lancer diplomatie</French>
 		<German>Diplomatische Verhandlungen beginnen</German>
 		<Italian>Avvia diplomazia</Italian>
@@ -381,7 +381,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_CYCLE_CAMERA_FLYING_MODES</Tag>
 		<English>Cycle camera flying modes</English>
-		<Portuguese>Ciclo de modos de vôo da câmera</Portuguese>
+		<Portuguese>Alternar modos de voo da câmera</Portuguese>
 		<French>Faire défiler modes de caméra libre</French>
 		<German>Durch Kameraflugmodi schalten</German>
 		<Italian>Scorri le visuali dall'alto</Italian>
@@ -593,7 +593,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_PING</Tag>
 		<English>Ping</English>
-		<Portuguese>Pingar</Portuguese>
+		<Portuguese>Marcar</Portuguese>
 		<French>Balise</French>
 		<German>Pingen</German>
 		<Italian>Segnala</Italian>
@@ -602,7 +602,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_PING_HELP</Tag>
 		<English>Ping a plot to bring it to the attention of your team mates</English>
-		<Portuguese>Fazer ping em um lote para chamar a atenção dos companheiros de equipe</Portuguese>
+		<Portuguese>Marcar um terreno para chamar a atenção dos companheiros de equipe</Portuguese>
 		<French>Désigner un terrain pour y attirer l'attention de vos coéquipiers</French>
 		<German>Pingen Sie ein Geländefeld an, um Ihre Mitstreiter darauf aufmerksam zu machen</German>
 		<Italian>Segnala un punto per richiamare l'attenzione dei tuoi compagni di squadra.</Italian>
@@ -738,7 +738,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONTROL_SIGN_HELP</Tag>
 		<English>Adds a sign to a specific plot that you and your teammates can see.</English>
-		<Portuguese>Adiciona um sinal a um terreno específico que você e seus colegas de equipe podem ver.</Portuguese>
+		<Portuguese>Adiciona uma placa a um terreno específico que você e seus colegas de equipe podem ver.</Portuguese>
 		<French>Ajoutez un panneau à un endroit précis pour vous et vos coéquipiers.</French>
 		<German>Markieren Sie ein Geländefeld mit einem Zeichen, das nur Sie und Ihre Teammitglieder sehen können.</German>
 		<Italian>Aggiunge in una determinata casella un segnale visibile soltanto a te e ai tuoi alleati.</Italian>

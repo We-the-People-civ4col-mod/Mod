@@ -2779,7 +2779,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PING</Tag>
 		<English>Ping</English>
-		<Portuguese>Pingar</Portuguese>
+		<Portuguese>Marcar</Portuguese>
 		<French>Ping</French>
 		<German>Ping</German>
 		<Italian>Segnala</Italian>
@@ -6109,7 +6109,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_STRATEGY_NEW_SIGN</Tag>
 		<English>New sign</English>
-		<Portuguese>Novo sinal</Portuguese>
+		<Portuguese>Nova placa</Portuguese>
 		<French>Nouveau panneau</French>
 		<German>Neues Textsymbol</German>
 		<Italian>Nuova nota</Italian>

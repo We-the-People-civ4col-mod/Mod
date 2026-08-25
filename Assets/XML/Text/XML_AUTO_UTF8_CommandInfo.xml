@@ -35,7 +35,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_CANCEL_HELP</Tag>
 		<English>This will cancel the last order in the unit's mission queue. You will find this to be very useful if you accidentally queue the wrong order.</English>
-		<Portuguese>Isso cancelará o último pedido na fila de missão da unidade. Você descobrirá que isso será muito útil se acidentalmente colocar o pedido errado na fila.</Portuguese>
+		<Portuguese>Isso cancelará a última ordem na fila de missão da unidade. Você descobrirá que isso será muito útil se acidentalmente colocar a ordem errada na fila.</Portuguese>
 		<French>Annuler le dernier ordre de la liste d'attente. Cette option est très utile pour corriger une erreur.</French>
 		<German>Löschen Sie den letzten Befehl in der Befehlsliste der Einheit. Haben Sie dieser versehentlich einen falschen Befehl erteilt, ist diese Funktion sehr nützlich.</German>
 		<Italian>Questo comando annulla l'ultimo ordine nella coda delle azioni dell'unità. Estremamente utile se si sbaglia a impostare la coda degli ordini.</Italian>
@@ -55,7 +55,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_CANCEL_ALL_HELP</Tag>
 		<English>This will cancel all queued orders for the currently selected unit.</English>
-		<Portuguese>Isto cancelará todos os pedidos em fila para a unidade atualmente selecionada.</Portuguese>
+		<Portuguese>Isto cancelará todas as ordens em fila para a unidade atualmente selecionada.</Portuguese>
 		<French>Annuler tous les ordres en attente de l'unité sélectionnée.</French>
 		<German>Löschen Sie alle Befehle der aktuellen Einheit.</German>
 		<Italian>Per annullare tutti gli ordini in coda dell'unità selezionata.</Italian>
@@ -105,7 +105,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_DELETE</Tag>
 		<English>Delete the unit</English>
-		<Portuguese>Deletar unidade</Portuguese>
+		<Portuguese>Excluir unidade</Portuguese>
 		<French>Supprimer l'unité</French>
 		<German>Einheit auflösen</German>
 		<Italian>Elimina l'unità</Italian>
@@ -165,7 +165,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GOTO_MENU</Tag>
 		<English>Go to mode (city selection)</English>
-		<Portuguese>Ir para (seleção de cidade)</Portuguese>
+		<Portuguese>Ir para (seleção de colônia)</Portuguese>
 		<French>Aller à (Choisir une ville)</French>
 		<German>Gehe-zu-Modus (Stadtliste)</German>
 		<Italian>Vai alla modalità (selezione della città)</Italian>
@@ -175,7 +175,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GOTO_MENU_HELP</Tag>
 		<English>Opens a menu that allows you to send the selected unit to a specific city.</English>
-		<Portuguese>Abre um menu que permite enviar a unidade selecionada para uma cidade específica.</Portuguese>
+		<Portuguese>Abre um menu que permite enviar a unidade selecionada para uma colônia específica.</Portuguese>
 		<English>Ouvre un menu qui vous permet d'envoyer l'unité sélectionnée vers une ville spécifique.</English>
 		<German>Öffnet ein Menü, mit dem man die gewählte Einheit zu einer bestimmten Stadt schicken kann.</German>
 		<English>Apre un menu che permette di inviare l'unità selezionata a una città specifica.</English>
@@ -490,7 +490,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_STOP_AUTOMATION_HELP</Tag>
 		<English>This will cancel the order for the unit to automate itself. It will then rely on you for all orders.</English>
-		<Portuguese>Isso cancelará a ordem de automatização da unidade. Ele então confiará em você para todos os pedidos.</Portuguese>
+		<Portuguese>Isso cancelará a ordem de automatização da unidade. Ela então dependerá de você para todas as ordens.</Portuguese>
 		<French>Annuler l'automatisation de l'unité. Vous pouvez ensuite lui donner de nouveaux ordres.</French>
 		<German>Widerrufen Sie den Automatisierungsbefehl der Einheit. Diese wartet anschließend auf weitere Befehle.</German>
 		<Italian>Per annullare l'ordine di automazione di un'unità e riprenderne completamente il controllo.</Italian>
@@ -540,7 +540,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_UPGRADE</Tag>
 		<English>Upgrade unit</English>
-		<Portuguese>Atualizar unidade</Portuguese>
+		<Portuguese>Aprimorar unidade</Portuguese>
 		<French>Améliorer l'unité</French>
 		<German>Einheit modernisieren</German>
 		<Italian>Migliora unità</Italian>
@@ -563,7 +563,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_WAKE_HELP</Tag>
 		<English>This will wake the unit up so that it can be issued orders. Waking a unit does not remove its fortification bonus.</English>
-		<Portuguese>Isso irá despertar a unidade para que ela possa emitir ordens. Acordar uma unidade não remove seu bônus de fortificação.</Portuguese>
+		<Portuguese>Isso irá despertar a unidade para que possa receber ordens. Acordar uma unidade não remove seu bônus de fortificação.</Portuguese>
 		<French>Réveiller l'unité pour lui donner des ordres. Cette action ne modifie pas le bonus de retranchement de l'unité.</French>
 		<German>Wecken Sie eine Einheit auf und erteilen Sie ihr Befehle. Die Einheit verliert dadurch nicht ihren Befestigungsbonus.</German>
 		<Italian>Questo comando sveglierà l'unità, in modo che possa ricevere ordini. Svegliando un'unità non si perde il bonus della sua fortificazione.</Italian>
@@ -640,7 +640,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_USE_CONSTRUCTION_SUPPLIES_HELP</Tag>
 		<English>Use the Construction Supply to transform it into Production of the City.</English>
-		<Portuguese>Usar os materiais de construção para transformá-los em produção da cidade.</Portuguese>
+		<Portuguese>Usar os materiais de construção para transformá-los em produção da colônia.</Portuguese>
 		<German>Benutze das Baumaterial, um es in Produktion der Stadt umzuwandeln.</German>
 		<Russian>Используйте строительные материалы, чтобы ускорить производство в городе</Russian>
 	</TEXT>

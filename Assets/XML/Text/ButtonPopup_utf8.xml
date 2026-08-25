@@ -26,7 +26,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUTTON_POPUP_CHOOSE_CITY_PLOT_YIELD_HELP</Tag>
 		<English>Each turn the governor considers what's best to produce. Whenever things change he can easily adjust production to get the best out of the situation.[PARAGRAPH:2]Note: Your requests are guidelines only. If in future the requested crops are unavailable, the governor will switch production to make the best out of the situation. If your request becomes available again later, the governor remembers and will resume production.</English>
-		<Portuguese>A cada turno, o governador considera o que é melhor produzir. Sempre que as coisas mudam, ele pode facilmente ajustar a produção para tirar o melhor proveito da situação.[PARAGRAPH:2]Observação: suas solicitações são apenas diretrizes. Se no futuro as culturas solicitadas não estiverem disponíveis, o governador mudará a produção para tirar o melhor partido da situação. Casa sua solicitação volte a ser disponibilizada posteriormente, o governador lembra e retomará a produção.</Portuguese>
+		<Portuguese>A cada turno, o governador considera o que é melhor produzir. Sempre que as coisas mudam, ele pode facilmente ajustar a produção para tirar o melhor proveito da situação.[PARAGRAPH:2]Observação: suas solicitações são apenas diretrizes. Se no futuro as culturas solicitadas não estiverem disponíveis, o governador mudará a produção para tirar o melhor partido da situação. Caso sua solicitação volte a ser disponibilizada posteriormente, o governador lembra e retomará a produção.</Portuguese>
 		<French>À chaque tour, le gouverneur réfléchira à ce qui serait le mieux à produire. Il peut facilement modifier la production pour tirer le meilleur parti de la situation lorsque les choses changent.[PARAGRAPH:2]Remarque : vos demandes ne sont que des indications. Si, à l'avenir, les cultures demandées ne sont plus disponibles, le gouverneur modifiera la production pour tirer le meilleur parti de la situation. Si votre demande redevient disponible plus tard, le gouverneur s'en souvient et reprendra la production.</French>
 		<German>Jede Runde wird der Gouverneur überlegen, was am besten angebaut werden soll. Sollten die Umstände es erfordern, etwas zu ändern, kann er frei über die Produktion entscheiden, um das Beste aus der Situation zu machen.[PARAGRAPH:2]Beachten Sie, daß Ihre Wünsche nur Richtlinien sind. Sollte es in Zukunft nicht möglich sein, die gewünschten Feldfrüchte anzubauen, wird der Governeur die Produktion umstellen. Wenn Ihre Wünsche wieder erfüllbar sind, wird sich der Gouverneur an sie erinnern und die gewünschten Feldfrüchte anbauen lassen.</German>
 		<Italian>Ad ogni turno il governatore considererà cosa sarebbe meglio produrre. Egli può facilmente cambiare la produzione per ottenere il meglio dalla situazione ogni volta che le cose cambiano.[PARAGRAPH:2]Nota: Le tue richieste sono solo linee guida. Se in futuro le colture richieste non saranno disponibili, il governatore cambierà la produzione per trarre il meglio dalla situazione. Se la tua richiesta tornerà disponibile più tardi, il governatore se ne ricorderà e riprenderà la produzione.</Italian>
@@ -209,7 +209,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_ROUTES_EXPORT_HELP</Tag>
 		<English>Select an export city for new transport route (minimum stocks of goods that are not to be transported away can be set locally in the settlement screen)</English>
-		<Portuguese>Selecione uma cidade de exportação para a nova rota de transporte (os estoques mínimos de mercadorias que não devem ser transportadas podem ser definidos localmente na tela da colônia)</Portuguese>
+		<Portuguese>Selecione uma colônia de exportação para a nova rota de transporte (os estoques mínimos de mercadorias que não devem ser transportadas podem ser definidos localmente na tela da colônia)</Portuguese>
 		<French>Sélectionner une colonie exportatrice pour cette nouvelle route (le niveau minimal de ressources à conserver peut être ajusté localement dans l'écran de la colonie)</French>
 		<German>Exportsiedlung für neue Transportroute auswählen (Mindestbestände von Waren, die nicht abtransportiert werden sollen, lassen sich vor Ort im Siedlungsbildschirm einstellen)</German>
 		<Italian>Select an export city</Italian>
@@ -231,7 +231,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_ROUTES_IMPORT_HELP</Tag>
 		<English>Select an import city for new transport route</English>
-		<Portuguese>Selecione uma cidade de importação para a nova rota de transporte</Portuguese>
+		<Portuguese>Selecione uma colônia de importação para a nova rota de transporte</Portuguese>
 		<French>Sélectionner une colonie importatrice pour cette nouvelle route</French>
 		<German>Importsiedlung für neue Transportroute auswählen</German>
 		<Italian>Select an import city</Italian>
@@ -260,7 +260,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_ROUTES_EXPORT_TABLE</Tag>
 		<English>Source city :</English>
-		<Portuguese>Cidade de origem:</Portuguese>
+		<Portuguese>Colônia de origem:</Portuguese>
 		<French>Provenance :</French>
 		<German>Exportsiedlung :</German>
 		<Russian>Исходный город :</Russian>
@@ -269,7 +269,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_ROUTES_IMPORT_TABLE</Tag>
 		<English>Destination city :</English>
-		<Portuguese>Cidade de destino:</Portuguese>
+		<Portuguese>Colônia de destino:</Portuguese>
 		<French>Destination :</French>
 		<German>Importsiedlung :</German>
 		<Russian>Город назначения :</Russian>

@@ -514,7 +514,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_NEW_IMMIGRANT_AVAILABLE_SHORT</Tag>
 		<English>[COLOR_REVERT]A [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] wishes to emigrate to the colonies.</English>
-		<Portuguese>[COLOR_REVERT]A [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] deseja emigrar para as colônias.</Portuguese>
+		<Portuguese>[COLOR_REVERT][COLOR_UNIT_TEXT]%s2[COLOR_REVERT] deseja emigrar para as colônias.</Portuguese>
 		<French>[COLOR_REVERT]Un [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] vous attend en Europe.</French>
 		<German>[COLOR_REVERT]Ein [COLOR_UNIT_TEXT]%s2[COLOR_REVERT] wünscht, in die Kolonien auszuwandern.</German>
 		<Italian>[COLOR_REVERT][COLOR_UNIT_TEXT]%s2[COLOR_REVERT] attende in Europa.</Italian>
@@ -2628,7 +2628,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BOMBARD_RATE_SHORT</Tag>
 		<English>[ICON_BULLET]Bombard settlement : -%d1_Mod%%/Turn%F2_Icon</English>
-		<Portuguese>[ICON_BULLET]Colônia de bombardeio: -%d1_Mod%%/turno%F2_Icon</Portuguese>
+		<Portuguese>[ICON_BULLET]Bombardear colônia: -%d1_Mod%%/turno%F2_Icon</Portuguese>
 		<French>[ICON_BULLET]Bombarder colonie : -%d1_Mod%%/Tour%F2_Icon</French>
 		<German>[ICON_BULLET]Siedlung bombardieren : -%d1_Mod%%/Runde%F2_Icon</German>
 		<Italian>[ICON_BULLET]Bombarda insediamento : -%d1_Mod%%/turno%F2_Icon</Italian>
@@ -2915,7 +2915,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EJECT_CITIZEN</Tag>
 		<English>Eject citizen from city</English>
-		<Portuguese>Expulsar cidadão da cidade</Portuguese>
+		<Portuguese>Expulsar cidadão da colônia</Portuguese>
 		<French>Expulser le citoyen de la ville</French>
 		<German>Bürger aus Stadt werfen</German>
 		<Italian>Espelli il cittadino dall'insediamento</Italian>
@@ -3743,7 +3743,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EUROPE_UNITS_POPUP</Tag>
 		<English>You have ships in Europe waiting for orders.</English>
-		<Portuguese>Você tem navios na Europa aguardando pedidos.</Portuguese>
+		<Portuguese>Você tem navios na Europa aguardando ordens.</Portuguese>
 		<French>Vous avez des navires en Europe en attente d'ordres.</French>
 		<German>Schiffe in Europa warten auf Eure Befehle.</German>
 		<Italian>Hai delle navi in Europa in attesa di ordini.</Italian>

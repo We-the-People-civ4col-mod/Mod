@@ -8,7 +8,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDBUILDER_RAR_AMERAYCA</Tag>
 		<English>Amerayca (Gigantic, 110x215): Neither geographically nor historically correct.</English>
-		<Portuguese>Amerayca (Gigantic, 110x215): Nem geograficamente nem historicamente correto.</Portuguese>
+		<Portuguese>Amerayca (Gigantesco, 110x215): Nem geograficamente nem historicamente correto.</Portuguese>
 		<French>Amerayca (Gigantesque, 110x215): Optimisé pour le jeu du mod. Ni géographiquement, ni historiquement correcte.</French>
 		<German>Amerayca (Gigantisch, 110x215): Optimiert für das Spielen des Mods. Weder geographisch noch historisch korrekt.</German>
 		<Italian>Amerayca (Gigantesca, 110x215): Non è corretto né geograficamente né storicamente.</Italian>
@@ -30,7 +30,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC_RANDOM</Tag>
 		<English>Americas - Random (Gigantic, 136x256): Map of the Americas, faithful map with random locations of Natives, resources and starting locations for Europeans</English>
-		<Portuguese>Americas - Random (Gigantic, 136x256): Mapa das Américas, mapa fiel com localizações aleatórias de nativos, recursos e locais de partida para europeus</Portuguese>
+		<Portuguese>Américas - Aleatório (Gigantesco, 136x256): Mapa das Américas, mapa fiel com localizações aleatórias de nativos, recursos e locais de partida para europeus</Portuguese>
 		<French>Amériques - Random (Gigantesque, 136x256): Carte des Amériques, représentation fidèle, avec distribution aléatoire des indigènes, des ressources et des points de départs pour les européens</French>
 		<German>Amerika - Random (Gigantisch, 136x256): Karte von Amerika, genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
 		<Italian>Americhe - Random (Gigantesca, 136x256): Mappa delle Americhe, mappa fedele con le posizioni casuali dei nativi, le risorse e le posizioni di partenza degli europei.</Italian>
@@ -129,7 +129,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDBUILDER_SOUTH_AMERICA_DESC</Tag>
 		<English>South America (Standard, 40x53): conquer the jungles of the Amazon, the peaks of the Andes, and the plains of Patagonia in this scenario</English>
-		<Portuguese>América do Sul (Standard, 40x53): conquiste as selvas da Amazônia, os picos dos Andes e as planícies da Patagônia neste cenário</Portuguese>
+		<Portuguese>América do Sul (Padrão, 40x53): conquiste as selvas da Amazônia, os picos dos Andes e as planícies da Patagônia neste cenário</Portuguese>
 		<French>Amérique du Sud (Standard, 40x53): partez à la conquête de la jungle amazonienne, des pics andins et des plaines de Patagonie dans le scénario "Amérique du Sud"</French>
 		<German>Süd-Amerika (Standard, 40x53): erkundet den Amazonasdschungel und die Gipfel der Anden und segelt um den Südzipfel der Neuen Welt!</German>
 		<Italian>Sud America (Standard, 40x53): conquistate le giungle dell'Amazzonia, le vette delle Ande e le pianure della Patagonia in questo scenario</Italian>
@@ -162,7 +162,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDBUILDER_WTP_UNCHARTED_LANDS_DESC</Tag>
 		<English>Uncharted Lands (Huge, 58x100): Uncharted Lands is a generated map and manually modified for WTP.</English>
-		<Portuguese>Uncharted Lands (Enorme, 58x100): Uncharted Lands é um mapa gerado e modificado manualmente para WTP.</Portuguese>
+		<Portuguese>Terras Inexploradas (Enorme, 58x100): Terras Inexploradas é um mapa gerado e modificado manualmente para WTP.</Portuguese>
 		<French>Terres Inexplorées (Immense, 58x100): Terres Inexplorées est une carte générée et modifiée manuellement pour WTP.</French>
 		<German>Unbekannte Länder (Riesig, 58x100): Unbekannte Länder ist eine generierte Karte und manuell für WTP modifiziert.</German>
 		<Italian>Terre Inesplorate (Enorme, 58x100): Terre Inesplorate è una mappa generata e modificata manualmente per WTP.</Italian>
@@ -173,7 +173,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLDBUILDER_WTP_UNDISCOVERED_WORLD_DESC</Tag>
 		<English>Undiscovered Worlds (Gigantic, 108x215): Undiscovered World is a generated map and manually modified for WTP.</English>
-		<Portuguese>Undiscovered Worlds (Gigantic, 108x215): Undiscovered World é um mapa gerado e modificado manualmente para WTP.</Portuguese>
+		<Portuguese>Mundos Inexplorados (Gigantesco, 108x215): Mundos Inexplorados é um mapa gerado e modificado manualmente para WTP.</Portuguese>
 		<French>Monde Indécouvert (Gigantesque, 108x215): Monde Indécouvert est une carte générée et modifiée manuellement pour WTP.</French>
 		<German>Unentdeckte Welt (Gigantisch, 108x215): Unentdeckte Welt ist eine generierte Karte und manuell für WTP modifiziert.</German>
 		<Italian>Mondi da Scoprire (Gigantesca, 108x215): Mondi da Scoprire è una mappa generata e modificata manualmente per WTP.</Italian>
