@@ -130,8 +130,8 @@ void CvMap::read(CvSavegameReader reader)
 		case Save_Plots:
 		{
 			FAssertMsg(m_pMapPlots == NULL, "Memory leak");
-			// 1. do not applyGlobeviewSafeDimensions here. Tish (We-The-People Americas
-			//    Gigantic 136x256) aborts the EXE if we grow the plot array during load.
+			// 1. do not applyGlobeviewSafeDimensions here. We-The-People Americas
+			//    Gigantic 136x256 saves abort the EXE if we grow the plot array during load.
 			//    pad only on new games (CvMap::init). already-padded 177-wide saves load as-is.
 			const int iNumPlots = numPlotsINLINE();
 			m_pMapPlots = new CvPlot[iNumPlots];

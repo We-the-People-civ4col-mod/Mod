@@ -227,6 +227,10 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 	//--------------------------------
 	// Init saved data
 	reset(pInitInfo);
+	// 1. pad here, not in reset(). reset() also runs on save load (0x0 then the
+	//    save's own width). padding inside reset() grew a 136x256 save during load
+	//    and the EXE aborted. new games / WB come through init() so they still pad.
+	applyGlobeviewSafeDimensions();
 
 	//--------------------------------
 	// Init containers
@@ -335,15 +339,13 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 		gDLL->getPythonIFace()->pythonGetWrapXY(&m_bWrapX, &m_bWrapY);
 	}
 
-	applyGlobeviewSafeDimensions();
-
 	m_areas.removeAll();
 }
 
 // 1. EXE globe texture goes black on tall maps (Americas Gigantic 136x256).
 //    Issue #723 and Don_Drochilla: keep height/width around 1.45 at gigantic Y
 //    (1.72 on huge). Pad ocean on NEW games / WB. Do not grow the plot array
-//    while reading a save: We-The-People 136x256 saves (Tish) abort the EXE.
+//    while reading a save: We-The-People 136x256 saves abort the EXE.
 // 2. Split the extra columns on west AND east (rows on south AND north).
 //    East-only pad made east-coast starts sail farther to Europe.
 //    Unpadded saves shift plot/city/unit x,y by the west/south amount.
