@@ -6991,6 +6991,13 @@ bool CvUnit::canSpeakWithChief(CvPlot* pPlot) const
 	{
 		return false;
 	}
+	// native chiefs will not speak with African or Native slaves, PoW, 
+	if (getUnitClassType() == UNITCLASS_AFRICAN_SLAVE
+		|| getUnitClassType() == UNITCLASS_NATIVE_SLAVE
+		|| getUnitClassType() == UNITCLASS_PRISONER_OF_WAR)
+	{
+		return false;
+	}
 	// < JAnimals Mod Start >
 	if (isBarbarian())
 	{
