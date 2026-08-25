@@ -328,6 +328,7 @@ public:
 	void receiveRandomGoody(CvPlot* pPlot, GoodyTypes eGoody, CvUnit* pUnit);
 	void doGoody(CvPlot* pPlot, CvUnit* pUnit);
 	bool canFound(Coordinates foundCoord, bool bTestVisible = false) const;
+	int getFoundCityMinRange(const CvPlot* pPlot) const;
 	CvCity *found(Coordinates foundCoord);
 	bool canTrain(UnitTypes eUnit, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;
 	bool canConstruct(BuildingTypes eBuilding, bool bContinue = false, bool bTestVisible = false, bool bIgnoreCost = false) const;

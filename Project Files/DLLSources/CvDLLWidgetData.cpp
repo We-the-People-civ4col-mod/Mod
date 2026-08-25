@@ -1970,7 +1970,7 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 				{
 					bValid = true;
 
-					iRange = GC.getMIN_CITY_RANGE();
+					iRange = GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).getFoundCityMinRange(pMissionPlot);
 
 					for (iDX = -(iRange); iDX <= iRange; iDX++)
 					{
@@ -1991,7 +1991,7 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 					if (!bValid)
 					{
 						szBuffer.append(NEWLINE);
-						szBuffer.append(gDLL->getText("TXT_KEY_ACTION_CANNOT_FOUND", GC.getMIN_CITY_RANGE()));
+						szBuffer.append(gDLL->getText("TXT_KEY_ACTION_CANNOT_FOUND", iRange));
 					}
 				}
 			}
