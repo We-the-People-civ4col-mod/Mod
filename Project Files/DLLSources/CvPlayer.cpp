@@ -6192,28 +6192,10 @@ bool CvPlayer::canFound(Coordinates foundCoord, bool bTestVisible) const
 	if (!bTestVisible)
 	{
 		iRange = GC.getMIN_CITY_RANGE();
-
-		/// reduced city distance - start - Nightinggale
-		if (GC.getGameINLINE().isOption(GAMEOPTION_REDUCED_CITY_DISTANCE))
+		if (GC.getGameINLINE().isOption(GAMEOPTION_REDUCED_CITY_DISTANCE) && iRange > 1)
 		{
-			bool bOwnsAll = true;
-			for (iDX = -1; iDX <= 1 && bOwnsAll; iDX++)
-			{
-				for (iDY = -1; iDY <= 1 && bOwnsAll; iDY++)
-				{
-					pLoopPlot = (pPlot->coord() + RelCoordinates(iDX, iDY)).plot();
-					if (pLoopPlot != NULL && pLoopPlot->getOwnerINLINE() != getID())
-					{
-						bOwnsAll = false;
-					}
-				}
-			}
-			if (bOwnsAll)
-			{
-				--iRange;
-			}
+			--iRange;
 		}
-		/// reduced city distance - end - Nightinggale
 
 		for (iDX = -(iRange); iDX <= iRange; iDX++)
 		{
