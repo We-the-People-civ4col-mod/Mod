@@ -2229,23 +2229,9 @@ void CvGame::selectionListMove(CvPlot* pPlot, bool bAlt, bool bShift, bool bCtrl
 		//if (pSelectedUnit->cargoSpace() == 0 && eRivalTeam != NO_TEAM)
 		if (eRivalTeam != NO_TEAM && (pSelectedUnit->cargoSpace() == 0 || pSelectedUnit->getUnitInfo().isTroopShip()))
 		{
-			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_DECLAREWARMOVE);
-			if (NULL != pInfo)
-			{
-				pInfo->setData1(eRivalTeam);
-				pInfo->setData2(pPlot->getX());
-				pInfo->setData3(pPlot->getY());
-				pInfo->setOption1(bShift);
-				if (pPlot->isOwned())
-				{
-					pInfo->setOption2(pSelectedUnit->canEnterTerritory(pPlot->getOwnerINLINE()));
-				}
-				else
-				{
-					pInfo->setOption2(true);
-				}
-				gDLL->getInterfaceIFace()->addPopup(pInfo);
-			}
+			// raphaelmonticello 1: Tish wanted this popup gone. moving onto a foreign unit
+			// (or into land that would start a war) no longer asks "does this mean war?".
+			// declare war from the diplomacy screen, then move / attack as usual.
 			return;
 		}
 	}
