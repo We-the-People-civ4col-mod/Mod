@@ -1933,7 +1933,7 @@
 			<Plural>0</Plural>
 		</English>
 		<Portuguese>
-			<Text>Henrique Estilhaço</Text>
+			<Text>Henry Shrapnel</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -3223,7 +3223,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_LEWIS_AND_CLARK_STRATEGY</Tag>
 		<English>Put your shoulder to the wheel and get things moving with [COLOR_TECH_TEXT]Lewis and Clark[COLOR_REVERT] on your side. By adopting this pair of Founding Fathers, your wagon trains will move at an increased rate and your colonists will require significantly fewer tools to adopt the Pioneer profession.</English>
-		<Portuguese>Coloque seu ombro no volante e faça as coisas andarem com [COLOR_TECH_TEXT]Lewis e Clark[COLOR_REVERT] ao seu lado. Ao adotar este par de Patronos, seus vagões se moverão em uma taxa maior e seus colonos precisarão de significativamente menos ferramentas para adotar a profissão de Pioneiro.</Portuguese>
+		<Portuguese>Coloque seu ombro no volante e faça as coisas andarem com [COLOR_TECH_TEXT]Lewis e Clark[COLOR_REVERT] ao seu lado. Ao adotar este par de Patronos, suas carroças se moverão em uma taxa maior e seus colonos precisarão de significativamente menos ferramentas para adotar a profissão de Pioneiro.</Portuguese>
 		<French>Attelez-vous à la tâche et faites bouger les choses en adoptant [COLOR_TECH_TEXT]Lewis et Clark[COLOR_REVERT] comme Pères fondateurs. La présence de ces deux grands hommes dans votre colonie accélèrera les déplacements de vos chariots et vos colons auront besoin de moins d'outils pour adopter la profession de pionnier.</French>
 		<German>Krempeln Sie die Ärmel hoch und bringen Sie Schwung in die Sache mit [COLOR_TECH_TEXT]Lewis und Clark[COLOR_REVERT] an Ihrer Seite. Wenn Sie diese beiden Gründerväter annehmen, werden sich Ihre Kutschentrosse schneller fortbewegen und Ihre Bürger werden wesentlich weniger Eisenwaren benötigen, um den Beruf des Pioniers anzunehmen.</German>
 		<Italian>Smuovi le cose, con [COLOR_TECH_TEXT]Lewis e Clark[COLOR_REVERT] dalla tua parte. Adottando questa coppia di Padri Fondatori farai in modo che le tue colonne di carovane si muovano più rapidamente e ci vorranno molti meno attrezzi per assegnare la professione di pioniere a uno dei tuoi coloni.</Italian>

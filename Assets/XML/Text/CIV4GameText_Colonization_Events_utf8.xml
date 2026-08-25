@@ -1222,7 +1222,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_2</Tag>
 		<English>Let them have the goods. Release the wagons. Our lives are more important!</English>
-		<Portuguese>Deixe-os ficar com as mercadorias. Solte os vagões. Nossas vidas são mais importantes!</Portuguese>
+		<Portuguese>Deixe-os ficar com as mercadorias. Solte as carroças. Nossas vidas são mais importantes!</Portuguese>
 		<French>Donnons leur ce qu'ils veulent, ils laisseront les chariots repartir.</French>
 		<German>Gebt ihnen die Waren, dann lassen Sie vielleicht die Wagen ziehen!</German>
 		<Russian>Отдадим им товары и, может, они нас отпустят...</Russian>
@@ -1230,7 +1230,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_HELP</Tag>
 		<English>Hostile Native marauders attack the wagon train. A few brave coachmen and guards defend it.</English>
-		<Portuguese>Saqueadores nativos hostis atacam o vagão. Alguns cocheiros e guardas corajosos a defendem.</Portuguese>
+		<Portuguese>Saqueadores nativos hostis atacam a carroça. Alguns cocheiros e guardas corajosos a defendem.</Portuguese>
 		<French>Une troupe d'Indiens hostiles attaque notre chariot. Les cochers et les gardes le défendent.</French>
 		<German>Ein feindlicher Indianer-Trupp greift den Wagenzug an. Ein paar mutige Kutscher und Wachen verteidigen ihn.</German>
 		<Russian>Отряд индейцев нападает на торговый обоз. Храбрые колонисты пытаюстя обороняться.</Russian>
@@ -4903,7 +4903,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST</Tag>
 		<English>You have built your first wagon train. Commercial traders with your colonies urge you to build at least five to supply the inland cities so your own goods can dominate domestic trade. If you are the first nation to do so they offer a reward.</English>
-		<Portuguese>Você construiu seu primeiro vagão. Os comerciantes comerciais de suas colônias recomendam que você construa pelo menos cinco para abastecer as cidades do interior, para que seus próprios produtos possam dominar o comércio interno. Se você for a primeira nação a fazer isso, eles oferecem uma recompensa.</Portuguese>
+		<Portuguese>Você construiu sua primeira carroça. Os comerciantes comerciais de suas colônias recomendam que você construa pelo menos cinco para abastecer as cidades do interior, para que seus próprios produtos possam dominar o comércio interno. Se você for a primeira nação a fazer isso, eles oferecem uma recompensa.</Portuguese>
 		<French>Vous avez construit votre premier train de chariots. Les commerçants de vos colonies vous incitent à en construire au moins cinq pour approvisionner les villes de l'intérieur afin que vos propres marchandises puissent dominer le commerce intérieur. Si vous êtes la première nation à le faire, ils vous offrent une récompense.</French>
 		<German>Ihr habt Euren ersten Wagenzug erworben, aber die Händler der Kolonien verlangen von Euch, dass Ihr mindestens fünf davon baut, um unsere Städte im Binnenland zu versorgen, und den heimischen Markt mit unseren eigenen Waren zu versorgen. Wenn Ihr die erste Nation seid, die dies erreicht, bieten sie eine Belohnung.</German>
 		<Russian>Вы построили свою первую повозку. Торговцы вместе с администрацией ваших колоний призывают построить не менее пяти таких транспортов для снабжения внутренних городов, чтобы ваши собственные товары могли доминировать на внутреннем рынке. Они предлагают  хорошее вознаграждени, если мы станем первой державой, которая сделает это.</Russian>
@@ -4919,7 +4919,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIVE_WAGON_TRAINS_QUEST</Tag>
 		<English>Worse luck! Another governor built five wagon trains before we could. Forget about any rewards.</English>
-		<Portuguese>Pior sorte! Outro governador construiu cinco vagões antes de nós. Esqueça quaisquer recompensas.</Portuguese>
+		<Portuguese>Pior sorte! Outro governador construiu cinco carroças antes de nós. Esqueça quaisquer recompensas.</Portuguese>
 		<French>Pire que ça ! Un autre gouverneur a construit cinq trains de chariots avant nous. Oubliez les récompenses.</French>
 		<German>Schlechte Kunde, Milord! Einem anderen Gouverneur ist es als erstem gelungen, fünf Wagenzüge zu erwerben. Die Belohnung der Händler ist hinfällig.</German>
 		<Russian>Дьявол! Губернатор другой нации построил пять повозок раньше нас. Мы можем забыть о какой-либо награде.</Russian>
@@ -4935,7 +4935,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST_DONE</Tag>
 		<English>Congratulations, Milord! You are the first governor with five wagon trains in the New World. The Lord's blessing is upon you. The traders are in a generous mood.</English>
-		<Portuguese>Parabéns, Milorde! Você é o primeiro governador com cinco vagões no Novo Mundo. A bênção do Senhor está sobre você. Os comerciantes estão de bom humor.</Portuguese>
+		<Portuguese>Parabéns, Milorde! Você é o primeiro governador com cinco carroças no Novo Mundo. A bênção do Senhor está sobre você. Os comerciantes estão de bom humor.</Portuguese>
 		<French>Félicitations, Milord ! Vous êtes le premier gouverneur avec cinq trains de chariots dans le Nouveau Monde. La bénédiction du Seigneur sera sur vous. Les commerçants sont d'humeur généreuse.</French>
 		<German>Glückwunsch, Milord! Ihr seid der erste Gouverneur in der Neuen Welt, der es geschafft hat, fünf Wagenzüge zu besitzen. Der Segen Gottes liegt auf Euch und die Händler sind in großzügiger Stimmung.</German>
 		<Russian>Поздравляю, Милорд! Вы первый губернатор с пятью повозками в Новом Свете. Благословение Господа с нами. Торговцы настроены щедро вознаградить нас, как и обещали.</Russian>
@@ -4943,7 +4943,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_WAGON_TRAINS_QUEST_DONE_1</Tag>
 		<English>The traders will pay us for the use of our wagon trains.</English>
-		<Portuguese>Os comerciantes nos pagarão pelo uso de nossos vagões.</Portuguese>
+		<Portuguese>Os comerciantes nos pagarão pelo uso de nossas carroças.</Portuguese>
 		<French>Les marchands doivent compenser une partie de nos dépenses par leurs revenus, qu'ils ont acquis avec nos trains de chariots.</French>
 		<German>Die Händer sollen einen Teil unseres Aufwands durch ihr Einkommen kompensieren, dass sie mit unseren Wagenzügen erworben haben.</German>
 		<Russian>В таком случае, пусть они возместят нам затраты на изготовление.</Russian>
@@ -5245,7 +5245,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RABBLE</Tag>
 		<English>There are rumours that outlaws are roaming the colonies and attacking the merchants' wagon trains. Beware!</English>
-		<Portuguese>Há rumores de que bandidos estão vagando pelas colônias e atacando os vagões dos mercadores. Cuidado!</Portuguese>
+		<Portuguese>Há rumores de que bandidos estão vagando pelas colônias e atacando as carroças dos mercadores. Cuidado!</Portuguese>
 		<French>Des rumeurs indiquent que des hors-la-loi parcourent les colonies et attaquent les trains de chariots des marchands. Prenez garde !</French>
 		<German>Es gibt Gerüchte, dass in den Kolonien Straßenräuber ihr Unwesen treiben und die Wagenkolonnen der Händler überfallen. Hütet Euch!</German>
 		<Russian>Ходят слухи, что по колониям бродят преступники и нападают на торговые обозы. Остерегайтесь!</Russian>
@@ -5261,7 +5261,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RABBLE_2</Tag>
 		<English>Your colonies are developing magnificently. Unfortunately this also attracts dangerous opportunists. Highwaymen have attacked a wagon train, demanding a toll from the coachman!</English>
-		<Portuguese>Suas colônias estão se desenvolvendo magnificamente. Infelizmente, isto também atrai oportunistas perigosos. Os salteadores de estrada atacaram um vagão, exigindo pedágio do cocheiro!</Portuguese>
+		<Portuguese>Suas colônias estão se desenvolvendo magnificamente. Infelizmente, isto também atrai oportunistas perigosos. Os salteadores de estrada atacaram uma carroça, exigindo pedágio do cocheiro!</Portuguese>
 		<French>Vos colonies sont prospères. Malheureusement, il attire aussi des contemporains pas très sympathiques. Des bandits de grand chemin ont attaqué un train de chariots et exigé des péages au cocher !</French>
 		<German>Eure Kolonien entwickeln sich prächtig. Leider zieht das auch weniger freundliche Zeitgenossen an. Wegelagerer haben einen Wagenzug überfallen und Wegzoll vom Kutscher gefordert!</German>
 		<Russian>Наши колонии развиваются и богатеют. К сожалению, это также привлекает всякий сброд. Разбойники напали на обоз, требуя от кучера пошлины за проезд!</Russian>
@@ -6277,7 +6277,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NATIVE_TRADE_WAGON_DONE</Tag>
 		<English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train sets out into the wilderness to trade.</English>
-		<Portuguese>Um vagão de [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] parte para o deserto para fazer comércio.</Portuguese>
+		<Portuguese>Uma carroça de [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] parte para o deserto para fazer comércio.</Portuguese>
 		<French>Un chariot [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] traverse les terres sauvages pour affaires.</French>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug bricht zum Handel in die Wildnis auf.</German>
 		<Russian>Караван [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправляется в торговое путешествие.</Russian>
@@ -6292,7 +6292,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_NATIVE_TRADE_WAGON</Tag>
 		<English>Unfortunately the trade is no longer happening. We've waited too long. Conditions have changed. The wagon train is now available for other uses.</English>
-		<Portuguese>Infelizmente o comércio não está mais acontecendo. Esperamos muito. As condições mudaram. O vagão agora está disponível para outros usos.</Portuguese>
+		<Portuguese>Infelizmente o comércio não está mais acontecendo. Esperamos muito. As condições mudaram. A carroça agora está disponível para outros usos.</Portuguese>
 		<French>Hélas, l'affaire a fait long feu. Vous avez trop attendu, les conditions ont changé. Vous pouvez utiliser le chariot à d'autres fins.</French>
 		<German>Leider kann der Handel nicht mehr stattfinden. Ihr habt zulange gewartet. Die Bedingungen haben sich geändert. Ihr könnt den Wagenzug nun wieder anderweitig verwenden.</German>
 		<Russian>К сожалению, торговля больше невозможна. Вы слишком долго ждали. Теперь вы можете использовать ваш транспорт по своему усмотрению.</Russian>
@@ -7315,7 +7315,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE</Tag>
 		<English>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] wagon train sets out into the wilderness to trade.</English>
-		<Portuguese>Um vagão de [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] parte para o deserto para fazer comércio.</Portuguese>
+		<Portuguese>Uma carroça de [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] parte para o deserto para fazer comércio.</Portuguese>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug bricht zum Handel in die Wildnis auf.</German>
 		<Russian>Торговый обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправляется в дикую местность для торговли с туземцами.</Russian>
 	</TEXT>
@@ -7329,7 +7329,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS</Tag>
 		<English>Unfortunately you waited too long. The Native village is no longer willing to trade with you right now. The good news is that the wagon train is now available for other uses.</English>
-		<Portuguese>Infelizmente você esperou muito. A aldeia nativa não está mais disposta a negociar com você neste momento. A boa notícia é que o vagão agora está disponível para outros usos.</Portuguese>
+		<Portuguese>Infelizmente você esperou muito. A aldeia nativa não está mais disposta a negociar com você neste momento. A boa notícia é que a carroça agora está disponível para outros usos.</Portuguese>
 		<German>Ihr habt leider zulange gewartet. Das Indianerdorf kann oder möchte gegenwärtig keinen Handel mit Euch treiben. Ihr könnt den Wagenzug nun wieder anderweitig verwenden.</German>
 		<Russian>К сожалению, вы слишком долго ждали. В данный момент индейцы не могут или не хотят торговать с вами. Вы можете перенаправить транспорт на другие торговые маршруты.</Russian>
 	</TEXT>
@@ -8192,7 +8192,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TREASURE_PROTECTION_3</Tag>
 		<English>The wagons will have to get there on their own. I can't spare men or money for that.</English>
-		<Portuguese>Os vagões terão que chegar lá sozinhos. Não posso dispensar homens ou dinheiro para isso.</Portuguese>
+		<Portuguese>As carroças terão que chegar lá sozinhos. Não posso dispensar homens ou dinheiro para isso.</Portuguese>
 		<German>Ach was, die Wagen müssen sich so durchschlagen. Dafür kann ich keinen Mann und kein Goldstück entbehren.</German>
 		<Russian>Как не прискорбно, но сейчас у нас нет ни людей, ни золота. Перевозчиками придётся полагаться только на свои силы.</Russian>
 	</TEXT>
