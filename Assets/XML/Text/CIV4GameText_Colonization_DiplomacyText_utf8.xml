@@ -8272,7 +8272,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_FOUND_CITY_BUY_2</Tag>
 		<English>We accept your price. (Found Settlement, Buy Land)</English>
-		<Portuguese>Aceitamos o preço. (Fundar Colônia, Comprar Terra)</Portuguese>
+		<Portuguese>Aceitamos o preço. (Fundar Colônia, Comprar Terreno)</Portuguese>
 		<French>Nous acceptons votre prix. (Fonder une colonie, acheter la terre)</French>
 		<German>Wir akzeptieren Euren Preis. (Siedlung gründen, Land kaufen)</German>
 		<Italian>Accettiamo il vostro prezzo. (Costruisci insediamento, acquista terra)</Italian>
@@ -8294,7 +8294,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_CITY_BUY_2</Tag>
 		<English>That sounds fair. (Buy Land)</English>
-		<Portuguese>Isso parece justo. (Comprar Terra)</Portuguese>
+		<Portuguese>Isso parece justo. (Comprar Terreno)</Portuguese>
 		<French>Très bien, cela semble honnête. (Acheter les terres)</French>
 		<German>Das klingt gerecht! (Land kaufen)</German>
 		<Italian>Mi sembra giusto. (Comprare la terra)</Italian>
