@@ -3118,7 +3118,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SWEDEN_DESC</Tag>
 		<English>Swedish Colonies</English>
-		<Portuguese>Colônias suecas</Portuguese>
+		<Portuguese>Colônias Suecas</Portuguese>
 		<French>Colonies suédoises</French>
 		<German>Schwedische Kolonien</German>
 		<Italian>Colonie svedesi</Italian>
@@ -3321,7 +3321,7 @@
 		<English>Spanish Colonies</English>
 		
 		<Portuguese>
-			<Text>Colônias espanholas</Text>
+			<Text>Colônias Espanholas</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
