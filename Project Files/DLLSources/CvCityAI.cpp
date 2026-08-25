@@ -4832,37 +4832,51 @@ void CvCityAI::AI_updateNeededYields()
 
 	m_em_iNeededYield.reset();
 
-
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
 		CvUnit* pLoopUnit = m_aPopulationUnits[i];
+
 		if (pLoopUnit != NULL)
 		{
 			if (pLoopUnit->isColonistLocked())
 			{
 				if (pLoopUnit->getProfession() != NO_PROFESSION)
 				{
-					// R&R, ray , MYCP partially based on code of Aymerick - START
-					YieldTypes eConsumedYield = (YieldTypes)GC.getProfessionInfo(pLoopUnit->getProfession()).getYieldsConsumed(0);
-					// R&R, ray , MYCP partially based on code of Aymerick - END
-					if (eConsumedYield != NO_YIELD)
+					const ProfessionTypes eProfession = pLoopUnit->getProfession();
+					const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+					const int iInput = getProfessionInput(eProfession, pLoopUnit);
+
+					for (int iYield = 0; iYield < kProfession.getNumYieldsConsumed(); ++iYield)
 					{
-						m_em_iNeededYield.add(eConsumedYield, getProfessionInput(pLoopUnit->getProfession(), pLoopUnit));
+						const YieldTypes eConsumedYield =
+							(YieldTypes)kProfession.getYieldsConsumed(iYield);
+
+						if (eConsumedYield != NO_YIELD)
+						{
+							m_em_iNeededYield.add(eConsumedYield, iInput);
+						}
 					}
 				}
 			}
 			else
 			{
-				ProfessionTypes eIdealProfession = pLoopUnit->AI_getIdealProfession();
+				const ProfessionTypes eIdealProfession = pLoopUnit->AI_getIdealProfession();
 
-				if (eIdealProfession != NO_PROFESSION && pLoopUnit->canHaveProfession(eIdealProfession, true, NULL))
+				if (eIdealProfession != NO_PROFESSION
+					&& pLoopUnit->canHaveProfession(eIdealProfession, true, NULL))
 				{
-					// R&R, ray , MYCP partially based on code of Aymerick - START
-					YieldTypes eConsumedYield = (YieldTypes)GC.getProfessionInfo(eIdealProfession).getYieldsConsumed(0);
-					// R&R, ray , MYCP partially based on code of Aymerick - END
-					if (eConsumedYield != NO_YIELD)
+					const CvProfessionInfo& kProfession = GC.getProfessionInfo(eIdealProfession);
+					const int iInput = getProfessionInput(eIdealProfession, pLoopUnit);
+
+					for (int iYield = 0; iYield < kProfession.getNumYieldsConsumed(); ++iYield)
 					{
-						m_em_iNeededYield.add(eConsumedYield, getProfessionInput(eIdealProfession, pLoopUnit));
+						const YieldTypes eConsumedYield =
+							(YieldTypes)kProfession.getYieldsConsumed(iYield);
+
+						if (eConsumedYield != NO_YIELD)
+						{
+							m_em_iNeededYield.add(eConsumedYield, iInput);
+						}
 					}
 				}
 			}
@@ -4870,28 +4884,37 @@ void CvCityAI::AI_updateNeededYields()
 	}
 
 	//Now, buildings.
-	for (int iI = 0; iI < GC.getNumProfessionInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
 	{
-		ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
+		const ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
+
 		if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession))
 		{
-			CvProfessionInfo& kLoopProfession = GC.getProfessionInfo(eLoopProfession);
-			if (kLoopProfession.isCitizen())
+			const CvProfessionInfo& kLoopProfession = GC.getProfessionInfo(eLoopProfession);
+
+			if (kLoopProfession.isCitizen() && !kLoopProfession.isWorkPlot())
 			{
-				if (!kLoopProfession.isWorkPlot())
+				const int iSlots = getNumProfessionBuildingSlots(eLoopProfession);
+
+				if (iSlots > 0)
 				{
-					// R&R, ray , MYCP partially based on code of Aymerick - START
-					YieldTypes eYieldConsumed = (YieldTypes)kLoopProfession.getYieldsConsumed(0);
-					// R&R, ray , MYCP partially based on code of Aymerick - END
-					if (eYieldConsumed != NO_YIELD)
+					const int iInputNeed =
+						iSlots * getProfessionInput(eLoopProfession, NULL);
+
+					for (int iYield = 0;
+						iYield < kLoopProfession.getNumYieldsConsumed();
+						++iYield)
 					{
-						// 2. if THIS city has the building, it needs the input. do not wait until
-						//    we are the empire's only 100-advantage coffee/cloth city.
-						const int iSlots = getNumProfessionBuildingSlots(eLoopProfession);
-						if (iSlots > 0)
+						const YieldTypes eYieldConsumed =
+							(YieldTypes)kLoopProfession.getYieldsConsumed(iYield);
+
+						if (eYieldConsumed != NO_YIELD)
 						{
-							const int iInputNeed = iSlots * getProfessionInput(eLoopProfession, NULL);
-							m_em_iNeededYield.set(eYieldConsumed, branchless::max(m_em_iNeededYield.get(eYieldConsumed), iInputNeed));
+							m_em_iNeededYield.set(
+								eYieldConsumed,
+								branchless::max(
+									m_em_iNeededYield.get(eYieldConsumed),
+									iInputNeed));
 						}
 					}
 				}
