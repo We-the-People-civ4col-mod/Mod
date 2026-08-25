@@ -67,7 +67,7 @@
 		<English>March</English>
 		
 		<Portuguese>
-			<Text>Marchar</Text>
+			<Text>Março</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -98,7 +98,7 @@
 		<English>April</English>
 		
 		<Portuguese>
-			<Text>abril</Text>
+			<Text>Abril</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -129,8 +129,8 @@
 		<English>May</English>
 		
 		<Portuguese>
-			<Text>Poderia</Text>
-			<Gender>Female</Gender>
+			<Text>Maio</Text>
+			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
 		<French>
@@ -284,7 +284,7 @@
 		<English>October</English>
 		
 		<Portuguese>
-			<Text>outubro</Text>
+			<Text>Outubro</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -315,7 +315,7 @@
 		<English>November</English>
 		
 		<Portuguese>
-			<Text>novembro</Text>
+			<Text>Novembro</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -346,7 +346,7 @@
 		<English>December</English>
 		
 		<Portuguese>
-			<Text>dezembro</Text>
+			<Text>Dezembro</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
