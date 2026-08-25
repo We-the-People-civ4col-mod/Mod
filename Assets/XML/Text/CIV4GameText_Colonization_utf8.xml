@@ -758,7 +758,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUY_AND_SELL_YIELD</Tag>
 		<English>Europe	 [TAB]Sell : %d1_Price[ICON_GOLD] / Buy : %d2_Price[ICON_GOLD]</English>
-		<Portuguese>Europa [TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Portuguese>
+		<Portuguese>Europa [TAB]Venda: %d1_Price[ICON_GOLD] / Compra: %d2_Price[ICON_GOLD]</Portuguese>
 		<French>Europe	 [TAB]Vendre : %d1_Price[ICON_GOLD] / Acheter : %d2_Price[ICON_GOLD]</French>
 		<German>Europa	 [TAB]Verkauf: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
 		<Italian>Europe	 [TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
@@ -769,7 +769,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUY_AND_SELL_YIELD_AFRICA</Tag>
 		<English>Africa	  [TAB]Sell : %d1_Price[ICON_GOLD] / Buy : %d2_Price[ICON_GOLD]</English>
-		<Portuguese>África [TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Portuguese>
+		<Portuguese>África [TAB]Venda: %d1_Price[ICON_GOLD] / Compra: %d2_Price[ICON_GOLD]</Portuguese>
 		<French>Afrique	  [TAB]Vendre : %d1_Price[ICON_GOLD] / Acheter : %d2_Price[ICON_GOLD]</French>
 		<German>Afrika	  [TAB]Verkauf: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
 		<Italian>Africa	  [TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
@@ -780,7 +780,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUY_AND_SELL_YIELD_PORT_ROYAL</Tag>
 		<English>Port Royal	 [TAB]Sell : %d1_Price[ICON_GOLD] / Buy : %d2_Price[ICON_GOLD]</English>
-		<Portuguese>Port Royal [TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Portuguese>
+		<Portuguese>Port Royal [TAB]Venda: %d1_Price[ICON_GOLD] / Compra: %d2_Price[ICON_GOLD]</Portuguese>
 		<French>Port Royal	 [TAB]Vendre : %d1_Price[ICON_GOLD] / Acheter : %d2_Price[ICON_GOLD]</French>
 		<German>Port Royal	 [TAB]Verkauf: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
 		<Italian>Port Royal	 [TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
@@ -3842,7 +3842,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_NEEDED_FOR_PROFESSION</Tag>
 		<English>[ICON_BULLET]%d1 required to equip [COLOR_UNIT_TEXT]%s2:2_profession[COLOR_REVERT]</English>
-		<Portuguese>[ICON_BULLET]%d1 necessário para equipar [COLOR_UNIT_TEXT]%s2:2_profession[COLOR_REVERT]</Portuguese>
+		<Portuguese>[ICON_BULLET]%d1 para equipar [COLOR_UNIT_TEXT]%s2:2_profession[COLOR_REVERT]</Portuguese>
 		<French>[ICON_BULLET]%d1 requis pour équiper [COLOR_UNIT_TEXT]%s2:2_profession[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]%d1 erforderlich, um [COLOR_UNIT_TEXT]%s2:2_profession[COLOR_REVERT] auszurüsten</German>
 		<Italian>[ICON_BULLET]%d1 necessari per equipaggiare l'unità [COLOR_UNIT_TEXT]%s2:2_profession[COLOR_REVERT]</Italian>

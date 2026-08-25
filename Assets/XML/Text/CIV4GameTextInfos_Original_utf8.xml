@@ -969,7 +969,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CANNOT_ENTER</Tag>
 		<English>[ICON_BULLET]Cannot enter</English>
-		<Portuguese>[ICON_BULLET]Não é possível entrar</Portuguese>
+		<Portuguese>[ICON_BULLET]Não é possível entrar:</Portuguese>
 		<French>[ICON_BULLET]Ne peut entrer dans :</French>
 		<German>[ICON_BULLET]Keine Fortbewegung auf</German>
 		<Italian>[ICON_BULLET]Non può entrare nell'</Italian>
