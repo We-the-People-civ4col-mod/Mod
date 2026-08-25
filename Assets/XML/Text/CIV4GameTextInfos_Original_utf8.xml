@@ -239,7 +239,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_BUILD</Tag>
 		<English>Build improvements (automated)</English>
-		<Portuguese>Construir melhorias (automatizado)</Portuguese>
+		<Portuguese>Construir melhorias (auto)</Portuguese>
 		<French>Construire aménagements (auto)</French>
 		<German>Modernisierungen bauen (automatisch)</German>
 		<Italian>Costruire i miglioramenti (automaticamente)</Italian>
@@ -250,7 +250,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_EXPLORE</Tag>
 		<English>Explore (automated)</English>
-		<Portuguese>Explorar (automatizado)</Portuguese>
+		<Portuguese>Explorar (auto)</Portuguese>
 		<French>Explorer (auto)</French>
 		<German>Erkunden (automatisch)</German>
 		<Italian>Esplora (automaticamente)</Italian>

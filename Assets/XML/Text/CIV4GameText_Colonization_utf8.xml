@@ -2156,7 +2156,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_TRANSPORT_FULL</Tag>
 		<English>Automate Transport</English>
-		<Portuguese>Automatize o transporte</Portuguese>
+		<Portuguese>Automatizar transporte</Portuguese>
 		<French>Automatiser le transport</French>
 		<German>Transporteinheit komplett automatisieren</German>
 		<Italian>Automatizza i trasporti</Italian>
@@ -2167,7 +2167,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_FULL</Tag>
 		<English>Fully Automate</English>
-		<Portuguese>Automatize totalmente</Portuguese>
+		<Portuguese>Automatizar tudo</Portuguese>
 		<French>Automatiser complètement</French>
 		<German>Voll automatisieren</German>
 		<Italian>Automatizza totalmente</Italian>
@@ -2178,7 +2178,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_TRANSPORT_FULL_HELP</Tag>
 		<English>Fully automate the transport</English>
-		<Portuguese>Automatize totalmente o transporte</Portuguese>
+		<Portuguese>Automatizar transporte</Portuguese>
 		<French>Automatiser complètement le transport</French>
 		<German>Einheit transportiert Waren komplett automatisch zwischen den Siedlungen</German>
 		<Italian>Automatizza totalmente il trasporto</Italian>
@@ -2189,7 +2189,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_FULL_HELP</Tag>
 		<English>Automate this unit</English>
-		<Portuguese>Automatize esta unidade</Portuguese>
+		<Portuguese>Automatizar unidade</Portuguese>
 		<French>Automatiser cette unité</French>
 		<German>Diese Einheit automatisieren</German>
 		<Italian>Automatizza questa unità</Italian>
@@ -2485,7 +2485,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_AUTOMATE_CITIZEN</Tag>
 		<English>Automate this citizen</English>
-		<Portuguese>Automatize este cidadão</Portuguese>
+		<Portuguese>Automatizar cidadão</Portuguese>
 		<French>Automatiser ce citoyen</French>
 		<German>Diesen Bürger automatisieren</German>
 		<Italian>Automatizza questo cittadino</Italian>
@@ -2529,7 +2529,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_CITY</Tag>
 		<English>Improve plots next to nearest settlement (Automated)</English>
-		<Portuguese>Melhorar lotes próximos à colônia mais próxima (Automatizado)</Portuguese>
+		<Portuguese>Melhorar colônia (auto)</Portuguese>
 		<French>Améliorer la colonie la plus proche (Automatisé)</French>
 		<German>Geländefelder rings um nächstgelegene Kolonie modernisieren (Automatisch)</German>
 		<Italian>Migliora l'insediamento più vicino (automaticamente)</Italian>
@@ -2915,7 +2915,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EJECT_CITIZEN</Tag>
 		<English>Eject citizen from city</English>
-		<Portuguese>Expulsar cidadão da colônia</Portuguese>
+		<Portuguese>Expulsar cidadão</Portuguese>
 		<French>Expulser le citoyen de la ville</French>
 		<German>Bürger aus Stadt werfen</German>
 		<Italian>Espelli il cittadino dall'insediamento</Italian>
@@ -3567,7 +3567,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_BUILD_HELP</Tag>
 		<English>Automate all [COLOR_UNIT_TEXT]pioneer[COLOR_REVERT] actions. The unit will continue working until you cancel its automation.</English>
-		<Portuguese>Automatize todas as ações [COLOR_UNIT_TEXT]pioneiras[COLOR_REVERT]. A unidade continuará funcionando até que você cancele sua automação.</Portuguese>
+		<Portuguese>Automatizar todas as ações [COLOR_UNIT_TEXT]pioneiras[COLOR_REVERT]. A unidade continuará funcionando até que você cancele sua automação.</Portuguese>
 		<French>Automatise toutes les actions des [COLOR_UNIT_TEXT]pionniers[COLOR_REVERT]. L'unité continue à travailler tant qu'elle reste automatisée.</French>
 		<German>Automatisiert alle Aktionen Ihres [COLOR_UNIT_TEXT]Pioniers[COLOR_REVERT]. Die Einheit arbeitet, bis Sie die Automatisierung beenden.</German>
 		<Italian>Automatizza tutte le azioni del [COLOR_UNIT_TEXT]pioniere[COLOR_REVERT]. L'unità continuerà a lavorare fino a quando non annullerai l'automazione.</Italian>

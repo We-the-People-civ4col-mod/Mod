@@ -65,7 +65,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_CHOOSE_TRADE_ROUTES</Tag>
 		<English>Assign transport routes (automate)</English>
-		<Portuguese>Atribuir rotas de transporte (automatizar)</Portuguese>
+		<Portuguese>Rotas de transporte</Portuguese>
 		<French>Attribuer des routes commerciales (Automatiser)</French>
 		<German>Transportrouten zuweisen</German>
 		<Italian>Assegna rotte commerciali (automaticamente)</Italian>
@@ -85,7 +85,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_CLEAR_SPECIALTY</Tag>
 		<English>Clear specialty</English>
-		<Portuguese>Limpar especialidade</Portuguese>
+		<Portuguese>Tirar especialidade</Portuguese>
 		<French>Effacer la spécialité</French>
 		<German>Expertenfähigkeit entfernen</German>
 		<Italian>Rimuovi specializzazione</Italian>
@@ -145,7 +145,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GIFT</Tag>
 		<English>Gift the unit</English>
-		<Portuguese>Presentear unidade</Portuguese>
+		<Portuguese>Presentear</Portuguese>
 		<French>Offrir l'unité</French>
 		<German>Einheit verschenken</German>
 		<Italian>Dona l'unità</Italian>
@@ -238,7 +238,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_LEARN</Tag>
 		<English>Learn skill</English>
-		<Portuguese>Aprender habilidade</Portuguese>
+		<Portuguese>Aprender ofício</Portuguese>
 		<French>Apprendre une technique</French>
 		<German>Fähigkeit lernen</German>
 		<Italian>Impara abilità</Italian>
@@ -278,7 +278,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_LOAD_CARGO</Tag>
 		<English>Load goods</English>
-		<Portuguese>Carregar mercadorias</Portuguese>
+		<Portuguese>Carregar bens</Portuguese>
 		<French>Charger des marchandises</French>
 		<German>Beladen</German>
 		<Italian>Carica beni</Italian>
@@ -380,7 +380,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SAIL_TO_AFRICA</Tag>
 		<English>Sail to Africa</English>
-		<Portuguese>Navegar para a África</Portuguese>
+		<Portuguese>Para a África</Portuguese>
 		<French>Naviguer vers l'Afrique</French>
 		<German>Nach Afrika segeln</German>
 		<Italian>Fai vela per l'Africa</Italian>
@@ -400,7 +400,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SAIL_TO_EUROPE</Tag>
 		<English>Sail to Europe</English>
-		<Portuguese>Navegar para a Europa</Portuguese>
+		<Portuguese>Para a Europa</Portuguese>
 		<French>Naviguer vers l'Europe</French>
 		<German>Nach Europa segeln</German>
 		<Italian>Fai vela per l'Europa</Italian>
@@ -420,7 +420,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SAIL_TO_PORT_ROYAL</Tag>
 		<English>Sail to Port Royal</English>
-		<Portuguese>Navegar para Port Royal</Portuguese>
+		<Portuguese>Para Port Royal</Portuguese>
 		<French>Naviguer vers Port Royal</French>
 		<German>Nach Port Royal segeln</German>
 		<Italian>Fai vela per Port Royal</Italian>
@@ -633,7 +633,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_USE_CONSTRUCTION_SUPPLIES</Tag>
 		<English>Use Construction Supplies</English>
-		<Portuguese>Usar materiais de construção</Portuguese>
+		<Portuguese>Usar suprimentos</Portuguese>
 		<German>Baumaterial verwenden</German>
 		<Russian>Использовать Строительные материалы</Russian>
 	</TEXT>
