@@ -6003,7 +6003,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ATTITUDE_TOWARDS</Tag>
 		<English>%s1_attitude towards %s2_leader</English>
-		<Portuguese>%s1_attitude em direção a %s2_leader</Portuguese>
+		<Portuguese>%s1_attitude com %s2_leader</Portuguese>
 		<French>%s1_attitude envers %s2_leader</French>
 		<German>%s1_attitude gegenüber %s2_leader</German>
 		<Italian>%s1_attitude nei confronti di %s2_leader</Italian>
