@@ -279,6 +279,13 @@ public:
 	void doTurn();
 	void doTurnUnits();
 	void doEra();
+	// WTP, Slave Emancipation - START
+	int getSlaveEmancipationCount() const;
+	void changeSlaveEmancipationCount(int iChange);
+	int getSlaveEmancipationCooldownEndTurn() const;
+	void setSlaveEmancipationCooldownEndTurn(int iTurn);
+	bool isSlaveEmancipationOnCooldown() const;
+	// WTP, Slave Emancipation - END
 
 	void verifyCivics();
 
@@ -1063,6 +1070,10 @@ protected:
 	int m_iNativeCombatModifier;
 	int m_iDominateNativeBordersCount;
 	int m_iRevolutionEuropeTradeCount;
+	// WTP, Slave Emancipation - START
+	int m_iSlaveEmancipationCount;
+	int m_iSlaveEmancipationCooldownEndTurn;
+	// WTP, Slave Emancipation - END
 	int m_iFatherPointMultiplier;
 	int m_iMissionaryRateModifier;
 	int m_iNativeTradeModifier; // R&R, ray, new Attribute in Traits

@@ -262,14 +262,27 @@
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<!-- WTP, Slave Emancipation - START -->
+	<!-- Number of turns before another slave can be freed through Learning by Doing. -->
 	<Define>
 		<DefineName>SLAVE_EMANCIPATION_LBD_COOLDOWN</DefineName>
-		<iDefineIntVal>50</iDefineIntVal>
+		<iDefineIntVal>30</iDefineIntVal>
 	</Define>
+	<!-- Base number of unrest turns caused in a city when a player manually frees a slave. -->
 	<Define>
 		<DefineName>SLAVE_EMANCIPATION_UNREST_TURNS</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
+	<!-- Number of slaves a human player may manually free before the emancipation cooldown starts. -->
+	<Define>
+		<DefineName>SLAVE_EMANCIPATION_PLAYER_LIMIT</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<!-- Number of turns a human player must wait after reaching the manual emancipation limit. -->
+	<Define>
+		<DefineName>SLAVE_EMANCIPATION_PLAYER_COOLDOWN</DefineName>
+		<iDefineIntVal>15</iDefineIntVal>
+	</Define>
+	<!-- Percentage of the slave's current purchase price received when selling the slave (50 means 50% of acquisition price, i.e. no profit). -->
 	<Define>
 		<DefineName>SLAVE_SELL_PRICE_PERCENT</DefineName>
 		<iDefineIntVal>50</iDefineIntVal>

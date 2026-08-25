@@ -2815,9 +2815,23 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 
 	// WTP, Slave Emancipation - START
 	case COMMAND_GRANT_FREEDOM:
-		if (canGrantFreedom())
 		{
-			return true;
+			const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+
+			if (canGrantFreedom())
+			{
+				// Keep the command visible while it is temporarily unavailable.
+				if (bTestVisible)
+				{
+					return true;
+				}
+
+				// The cooldown only applies to human players.
+				if (!kOwner.isHuman() || !kOwner.isSlaveEmancipationOnCooldown())
+				{
+					return true;
+				}
+			}
 		}
 		break;
 	
@@ -3205,6 +3219,8 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 					pCity = plot()->getPlotCity();
 				}
 
+				CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
+
 				grantFreedom();
 
 				if (pCity != NULL)
@@ -3221,6 +3237,33 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 					);
 
 					pCity->changeSlaveEmancipationPendingUnrest(iUnrestTurns);
+				}
+
+				// Count manual emancipation only for human players.
+				if (kOwner.isHuman())
+				{
+					kOwner.changeSlaveEmancipationCount(1);
+
+					const int iLimit =
+						GC.getDefineINT("SLAVE_EMANCIPATION_PLAYER_LIMIT");
+
+					if (iLimit > 0 &&
+						kOwner.getSlaveEmancipationCount() >= iLimit)
+					{
+						kOwner.changeSlaveEmancipationCount(
+							-kOwner.getSlaveEmancipationCount()
+						);
+
+						const int iCooldownTurns =
+							std::max(
+								0,
+								GC.getDefineINT("SLAVE_EMANCIPATION_PLAYER_COOLDOWN")
+							);
+
+						kOwner.setSlaveEmancipationCooldownEndTurn(
+							GC.getGameINLINE().getGameTurn() + iCooldownTurns
+						);
+					}
 				}
 
 				bCycle = true;

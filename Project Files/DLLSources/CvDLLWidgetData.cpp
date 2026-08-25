@@ -2572,6 +2572,29 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 				}
 			}
 
+			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType() == COMMAND_GRANT_FREEDOM)
+			{
+				const CvPlayer& kOwner = GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE());
+
+				if (kOwner.isHuman() && kOwner.isSlaveEmancipationOnCooldown())
+				{
+					const int iTurnsRemaining =
+						kOwner.getSlaveEmancipationCooldownEndTurn() -
+						GC.getGameINLINE().getGameTurn();
+
+					if (iTurnsRemaining > 0)
+					{
+						szBuffer.append(NEWLINE);
+						szBuffer.append(
+							gDLL->getText(
+								"TXT_KEY_COMMAND_GRANT_FREEDOM_COOLDOWN",
+								iTurnsRemaining
+							)
+						);
+					}
+				}
+			}
+
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType() == COMMAND_ESTABLISH_MISSION)
 			{
 				CvUnit* pMissionary = NULL;
@@ -2650,9 +2673,33 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 				szBuffer.append(gDLL->getText("TXT_KEY_ACTION_ALL_UNITS"));
 			}
 
-			if (!isEmpty(GC.getCommandInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType()).getHelp()))
+			const CommandTypes eCommand =
+				GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType();
+
+			bool bSuppressNormalHelp = false;
+
+			// WTP, Schmiddie, Slave Emancipation - START
+			if (eCommand == COMMAND_GRANT_FREEDOM)
 			{
-				szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getCommandInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType()).getHelp()).c_str());
+				const CvPlayer& kOwner = GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE());
+
+				if (kOwner.isHuman() && kOwner.isSlaveEmancipationOnCooldown())
+				{
+					bSuppressNormalHelp = true;
+				}
+			}
+			// WTP, Schmiddie, Slave Emancipation - END
+
+			if (!bSuppressNormalHelp &&
+				!isEmpty(GC.getCommandInfo(eCommand).getHelp()))
+			{
+				szBuffer.append(
+					CvWString::format(
+						L"%s%s",
+						NEWLINE,
+						GC.getCommandInfo(eCommand).getHelp()
+					).c_str()
+				);
 			}
 		}
 

@@ -1939,6 +1939,38 @@ void CvPlayer::updateHuman()
 	// cache CvPlayer::getYieldEquipmentAmount - Nightinggale
 }
 
+// WTP, Schmiddie, Slave Emancipation - START
+int CvPlayer::getSlaveEmancipationCount() const
+{
+	return m_iSlaveEmancipationCount;
+}
+
+void CvPlayer::changeSlaveEmancipationCount(int iChange)
+{
+	m_iSlaveEmancipationCount += iChange;
+
+	if (m_iSlaveEmancipationCount < 0)
+	{
+		m_iSlaveEmancipationCount = 0;
+	}
+}
+
+int CvPlayer::getSlaveEmancipationCooldownEndTurn() const
+{
+	return m_iSlaveEmancipationCooldownEndTurn;
+}
+
+void CvPlayer::setSlaveEmancipationCooldownEndTurn(int iTurn)
+{
+	m_iSlaveEmancipationCooldownEndTurn = std::max(0, iTurn);
+}
+
+bool CvPlayer::isSlaveEmancipationOnCooldown() const
+{
+	return GC.getGameINLINE().getGameTurn() < m_iSlaveEmancipationCooldownEndTurn;
+}
+// WTP, Schmiddie, Slave Emancipation - END
+
 bool CvPlayer::isNative() const
 {
 	CivilizationTypes eCivilizationType = getCivilizationType();

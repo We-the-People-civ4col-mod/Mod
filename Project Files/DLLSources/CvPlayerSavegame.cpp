@@ -101,6 +101,10 @@ const int defaultNBMOD_REF_StartValue = 0;
 const int defaultNativeCombatModifier = 0;
 const int defaultDominateNativeBordersCount = 0;
 const int defaultRevolutionEuropeTradeCount = 0;
+// WTP, Schmiddie, Slave Emancipation - START
+const int defaultSlaveEmancipationCount = 0;
+const int defaultSlaveEmancipationCooldownEndTurn = 0;
+// WTP, Schmiddie, Slave Emancipation - END
 const int defaultFatherPointMultiplier = 100;
 const int defaultMissionaryRateModifier = 0;
 const int defaultNativeTradeModifier = 0;
@@ -314,6 +318,10 @@ enum SavegameVariableTypes
 	// WTP, Schmiddie, persistent quest log texts - START
 	PlayerSave_mapQuestMessages,
 	// WTP, Schmiddie, persistent quest log texts - END
+	// WTP, Schmiddie, Slave Emancipation - START
+	PlayerSave_SlaveEmancipationCount,
+	PlayerSave_SlaveEmancipationCooldownEndTurn,
+	// WTP, Schmiddie, Slave Emancipation - END
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -520,6 +528,10 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	// WTP, Schmiddie, persistent quest log texts - START
 	case PlayerSave_mapQuestMessages: return "PlayerSave_mapQuestMessages";
 	// WTP, Schmiddie, persistent quest log texts - END
+	// WTP, Schmiddie, Slave Emancipation - START
+	case PlayerSave_SlaveEmancipationCount: return "PlayerSave_SlaveEmancipationCount";
+	case PlayerSave_SlaveEmancipationCooldownEndTurn: return "PlayerSave_SlaveEmancipationCooldownEndTurn";
+	// WTP, Schmiddie, Slave Emancipation - END
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -694,6 +706,10 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_iNativeCombatModifier = defaultNativeCombatModifier;
 	m_iDominateNativeBordersCount = defaultDominateNativeBordersCount;
 	m_iRevolutionEuropeTradeCount = defaultRevolutionEuropeTradeCount;
+	// WTP, Schmiddie, Slave Emancipation - START
+	m_iSlaveEmancipationCount = defaultSlaveEmancipationCount;
+	m_iSlaveEmancipationCooldownEndTurn = defaultSlaveEmancipationCooldownEndTurn;
+	// WTP, Schmiddie, Slave Emancipation - END
 	m_iFatherPointMultiplier = defaultFatherPointMultiplier;
 	m_iMissionaryRateModifier = defaultMissionaryRateModifier;
 	m_iNativeTradeModifier = defaultNativeTradeModifier;
@@ -946,6 +962,15 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_NativeCombatModifier: reader.Read(m_iNativeCombatModifier); break;
 		case PlayerSave_DominateNativeBordersCount: reader.Read(m_iDominateNativeBordersCount); break;
 		case PlayerSave_RevolutionEuropeTradeCount: reader.Read(m_iRevolutionEuropeTradeCount); break;
+		// WTP, Schmiddie, Slave Emancipation - START
+		case PlayerSave_SlaveEmancipationCount:
+			reader.Read(m_iSlaveEmancipationCount);
+			break;
+
+		case PlayerSave_SlaveEmancipationCooldownEndTurn:
+			reader.Read(m_iSlaveEmancipationCooldownEndTurn);
+			break;
+		// WTP, Schmiddie, Slave Emancipation - END
 		case PlayerSave_FatherPointMultiplier: reader.Read(m_iFatherPointMultiplier); break;
 		case PlayerSave_MissionaryRateModifier: reader.Read(m_iMissionaryRateModifier); break;
 		case PlayerSave_NativeTradeModifier: reader.Read(m_iNativeTradeModifier); break;
@@ -1207,6 +1232,10 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_NativeCombatModifier, m_iNativeCombatModifier, defaultNativeCombatModifier);
 	writer.Write(PlayerSave_DominateNativeBordersCount, m_iDominateNativeBordersCount, defaultDominateNativeBordersCount);
 	writer.Write(PlayerSave_RevolutionEuropeTradeCount, m_iRevolutionEuropeTradeCount, defaultRevolutionEuropeTradeCount);
+	// WTP, Schmiddie, Slave Emancipation - START
+	writer.Write(PlayerSave_SlaveEmancipationCount, m_iSlaveEmancipationCount, defaultSlaveEmancipationCount);
+	writer.Write(PlayerSave_SlaveEmancipationCooldownEndTurn, m_iSlaveEmancipationCooldownEndTurn, defaultSlaveEmancipationCooldownEndTurn);
+	// WTP, Schmiddie, Slave Emancipation - END
 	writer.Write(PlayerSave_FatherPointMultiplier, m_iFatherPointMultiplier, defaultFatherPointMultiplier);
 	writer.Write(PlayerSave_MissionaryRateModifier, m_iMissionaryRateModifier, defaultMissionaryRateModifier);
 	writer.Write(PlayerSave_NativeTradeModifier, m_iNativeTradeModifier, defaultNativeTradeModifier);
