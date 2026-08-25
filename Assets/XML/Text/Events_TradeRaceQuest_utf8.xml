@@ -726,7 +726,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PREMIUM_FUR_START</Tag>
 		<English>The race to dominate the European market for [COLOR_FONT_GOLD]premium furs[COLOR_REVERT] is under way.</English>
-		<Portuguese>A corrida para dominar o mercado europeu de [COLOR_FONT_GOLD]peles premium[COLOR_REVERT] está em andamento.</Portuguese>
+		<Portuguese>A corrida para dominar o mercado europeu de [COLOR_FONT_GOLD]peles de luxo[COLOR_REVERT] está em andamento.</Portuguese>
 		<French>La course pour dominer le marché européen de la [COLOR_FONT_GOLD]fourrure de qualité[COLOR_REVERT] a été lancée.</French>
 		<German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Hochwertige Pelze[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]премиального меха[COLOR_REVERT] в Европе.</Russian>
@@ -734,7 +734,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PREMIUM_FUR_START</Tag>
 		<English>His Majesty and citizens of the homeland are delighted with [COLOR_FONT_GOLD]premium furs[COLOR_REVERT] from the colonies. His Majesty thus orders you to become the market leader for premium furs.</English>
-		<Portuguese>Sua Majestade e os cidadãos da pátria estão encantados com as [COLOR_FONT_GOLD]peles premium[COLOR_REVERT] das colônias. Sua Majestade ordena que você se torne o líder do mercado de peles premium.</Portuguese>
+		<Portuguese>Sua Majestade e os cidadãos da pátria estão encantados com as [COLOR_FONT_GOLD]peles de luxo[COLOR_REVERT] das colônias. Sua Majestade ordena que você se torne o líder do mercado de peles de luxo.</Portuguese>
 		<French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons de [COLOR_FONT_GOLD]fourrure de qualité[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Hochwertigen Pelzen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониального [COLOR_FONT_GOLD]премиального меха[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
@@ -742,7 +742,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PREMIUM_FUR_FAILED</Tag>
 		<English>Milord, another colonial nation now dominates the European market for [COLOR_FONT_GOLD]premium furs[COLOR_REVERT].</English>
-		<Portuguese>Milorde, outra nação colonial domina agora o mercado europeu de [COLOR_FONT_GOLD]peles premium[COLOR_REVERT].</Portuguese>
+		<Portuguese>Milorde, outra nação colonial domina agora o mercado europeu de [COLOR_FONT_GOLD]peles de luxo[COLOR_REVERT].</Portuguese>
 		<French>Sire, une autre colonie est devenue maitre du marché de la [COLOR_FONT_GOLD]fourrure de qualité[COLOR_REVERT] en Europe.</French>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Hochwertige Pelze[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]премиального меха[COLOR_REVERT] в Европе.</Russian>
@@ -750,7 +750,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE</Tag>
 		<English>Milord, we're now the leading traders in [COLOR_FONT_GOLD]premium furs[COLOR_REVERT].</English>
-		<Portuguese>Milorde, agora somos os principais comerciantes de [COLOR_FONT_GOLD]peles premium[COLOR_REVERT].</Portuguese>
+		<Portuguese>Milorde, agora somos os principais comerciantes de [COLOR_FONT_GOLD]peles de luxo[COLOR_REVERT].</Portuguese>
 		<French>Sire, nous sommes devenus les maitres du marché de la  [COLOR_FONT_GOLD]fourrure de qualité[COLOR_REVERT] en Europe.</French>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hochwertigen Pelzen[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]премиального меха[COLOR_REVERT]!</Russian>
@@ -758,7 +758,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PREMIUM_FUR_DONE</Tag>
 		<English>Milord, fulfilling the orders of His Majesty, we're now the market leader for [COLOR_FONT_GOLD]premium furs[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
-		<Portuguese>Milorde, cumprindo as ordens de Sua Majestade, somos agora líderes de mercado em [COLOR_FONT_GOLD]peles premium[COLOR_REVERT]. Sua Majestade está de bom humor e quer nos recompensar.</Portuguese>
+		<Portuguese>Milorde, cumprindo as ordens de Sua Majestade, somos agora líderes de mercado em [COLOR_FONT_GOLD]peles de luxo[COLOR_REVERT]. Sua Majestade está de bom humor e quer nos recompensar.</Portuguese>
 		<French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]fourrure de qualité[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Hochwertigen Pelzen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]премиального меха[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
@@ -1722,35 +1722,35 @@
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PREMIUM_COATS_START</Tag>
 		<English>The race is on to be the market leader for [COLOR_FONT_GOLD]premium coats[COLOR_REVERT].</English>
-		<Portuguese>A corrida para ser líder de mercado em [COLOR_FONT_GOLD]casacos premium[COLOR_REVERT] começou.</Portuguese>
+		<Portuguese>A corrida para ser líder de mercado em [COLOR_FONT_GOLD]casacos de luxo[COLOR_REVERT] começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Teure Pelzkleidung[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]премиумных шуб[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PREMIUM_COATS_START</Tag>
 		<English>His Majesty and His subjects in Europe are delighted to get [COLOR_FONT_GOLD]premium coats[COLOR_REVERT] from the colonies. His Majesty thus orders you to be the best marketer of premium coats.</English>
-		<Portuguese>Sua Majestade e Seus súditos na Europa estão encantados em receber [COLOR_FONT_GOLD]casacos premium[COLOR_REVERT] das colônias. Sua Majestade ordena que você seja o melhor comerciante de casacos premium.</Portuguese>
+		<Portuguese>Sua Majestade e Seus súditos na Europa estão encantados em receber [COLOR_FONT_GOLD]casacos de luxo[COLOR_REVERT] das colônias. Sua Majestade ordena que você seja o melhor comerciante de casacos de luxo.</Portuguese>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Teurer Pelzkleidung[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]премиумных шуб[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PREMIUM_COATS_FAILED</Tag>
 		<English>Milord, another colonial nation now dominates the European market for [COLOR_FONT_GOLD]premium coats[COLOR_REVERT].</English>
-		<Portuguese>Milorde, outra nação colonial agora domina o mercado europeu de [COLOR_FONT_GOLD]casacos premium[COLOR_REVERT].</Portuguese>
+		<Portuguese>Milorde, outra nação colonial agora domina o mercado europeu de [COLOR_FONT_GOLD]casacos de luxo[COLOR_REVERT].</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Teure Pelzkleidung[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке [COLOR_FONT_GOLD]премиумных шуб[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PREMIUM_COATS_DONE</Tag>
 		<English>Milord, we're now the top trader in [COLOR_FONT_GOLD]premium coats[COLOR_REVERT].</English>
-		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]casacos premium[COLOR_REVERT].</Portuguese>
+		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]casacos de luxo[COLOR_REVERT].</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Teurer Pelzkleidung[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]премиумных шуб[COLOR_REVERT]!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PREMIUM_COATS_DONE</Tag>
 		<English>Milord, in accordance with His Majesty's command we now dominate the market in [COLOR_FONT_GOLD]premium coats[COLOR_REVERT]. His Majesty is in a generous mood and wants to reward us.</English>
-		<Portuguese>Milorde, de acordo com o comando de Sua Majestade, agora dominamos o mercado de [COLOR_FONT_GOLD]casacos premium[COLOR_REVERT]. Sua Majestade está de bom humor e quer nos recompensar.</Portuguese>
+		<Portuguese>Milorde, de acordo com o comando de Sua Majestade, agora dominamos o mercado de [COLOR_FONT_GOLD]casacos de luxo[COLOR_REVERT]. Sua Majestade está de bom humor e quer nos recompensar.</Portuguese>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Teurer Pelzkleidung[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]премиумных шуб[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
 	</TEXT>

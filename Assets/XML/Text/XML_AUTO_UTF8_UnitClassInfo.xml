@@ -257,7 +257,7 @@
 		<English>Master Blacksmith:Master Blacksmiths</English>
 		
 		<Portuguese>
-			<Text>Mestre Ferreiro:Mestre Ferreiro</Text>
+			<Text>Mestre Ferreiro:Mestres Ferreiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -291,7 +291,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mestre Cervejeiro:Mestre Cervejeiro</Text>
+			<Text>Mestre Cervejeiro:Mestres Cervejeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -382,7 +382,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Barca Escrava:Barca Escrava</Text>
+			<Text>Barca Escrava:Barcas Escravas</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -406,7 +406,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mestre Açougueiro:Mestre Açougueiro</Text>
+			<Text>Mestre Açougueiro:Mestres Açougueiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -566,8 +566,8 @@
 		</English>
 		
 		<Portuguese>
-			<Text>Nao:Naos</Text>
-			<Gender>Male</Gender>
+			<Text>Nau:Naus</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -1487,7 +1487,7 @@
 		<English>Master Dyer:Master Dyers</English>
 		
 		<Portuguese>
-			<Text>Mestre Tintureiro:Mestre Tintureiro</Text>
+			<Text>Mestre Tintureiro:Mestres Tintureiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1837,7 +1837,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mestre Marceneiro:Mestre Marceneiro</Text>
+			<Text>Mestre Marceneiro:Mestres Marceneiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2176,7 +2176,7 @@
 		<English>Master Gunsmith:Master Gunsmiths</English>
 		
 		<Portuguese>
-			<Text>Mestre Armeiro:Mestre Armeiro</Text>
+			<Text>Mestre Armeiro:Mestres Armeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2242,7 +2242,7 @@
 		<English>Expert Hemp Planter:Expert Hemp Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Canhambeiro:Especialistas Canhambeiros</Text>
+			<Text>Especialista Canhameiro:Especialistas Canhameiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3259,7 +3259,7 @@
 		<English>Premium Fur</English>
 		
 		<Portuguese>
-			<Text>Pele Premium</Text>
+			<Text>Pele de Luxo</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4207,7 +4207,7 @@
 		<English>Expert Stonecutter:Expert Stonecutters</English>
 		
 		<Portuguese>
-			<Text>Canteiro:Canteiros</Text>
+			<Text>Cortador de Pedra Especialista:Cortadores de Pedra Especialistas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4300,7 +4300,7 @@
 		<English>Master Tanner:Master Tanners</English>
 		
 		<Portuguese>
-			<Text>Mestre Curtidor:Mestre Curtidor</Text>
+			<Text>Mestre Curtidor:Mestres Curtidores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4430,7 +4430,7 @@
 			<Plural>1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Bens Comerciais</Text>
+			<Text>Mercadorias</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -4480,7 +4480,7 @@
 		<English>Expert Trapper:Expert Trappers</English>
 		
 		<Portuguese>
-			<Text>Trampeiro Especialista:Trampeiros Especialistas</Text>
+			<Text>Coureador Especialista:Coureadores Especialistas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4689,7 +4689,7 @@
 		<English>Master Weaver:Master Weavers</English>
 		
 		<Portuguese>
-			<Text>Mestre Tecelão:Mestre Tecelão</Text>
+			<Text>Mestre Tecelão:Mestres Tecelões</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>

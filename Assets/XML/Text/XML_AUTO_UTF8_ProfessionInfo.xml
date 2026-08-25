@@ -436,7 +436,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Açougueiro (Ovelha):Açougueiro (Ovelha)</Text>
+			<Text>Açougueiro (Ovelha):Açougueiros (Ovelha)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -488,7 +488,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Canhoneiro:Canhoneiros</Text>
+			<Text>Fundidor de Canhões:Fundidores de Canhões</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -521,14 +521,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_CANNONSMITH_PEDIA</Tag>
 		<English>Cannonsmiths were highly paid specialists since they had to guarantee the stability and safety of their products. The first cannons evolved in the middle of the 15th century. A predecessor of the cannon was the bombard. One of the first wars with large-scale use of cannons was the Italian War of 1494. Cannons were made of bronze in the beginning, but iron later on. Depending on their targets they could fire different ammunition but usually it was heavy cannonballs. Mobility, fire power and rate of fire were much better than with bombards. In field battles, sieges and battles on sea, the cannon was a dominant weapon for centuries.</English>
-		<Portuguese>Os ferreiros eram especialistas muito bem pagos, pois tinham que garantir a estabilidade e segurança dos seus produtos. Os primeiros canhões evoluíram em meados do século XV. Um antecessor do canhão foi o bombardeio. Uma das primeiras guerras com uso de canhões em larga escala foi a Guerra Italiana de 1494. Os canhões eram feitos de bronze no início, mas depois de ferro. Dependendo de seus alvos, eles poderiam disparar munições diferentes, mas geralmente eram balas de canhão pesadas. A mobilidade, o poder de fogo e a cadência de tiro eram muito melhores do que com as bombardas. Em batalhas de campo, cercos e batalhas no mar, o canhão foi uma arma dominante durante séculos.</Portuguese>
+		<Portuguese>Os fundidores de canhões eram especialistas muito bem pagos, pois tinham que garantir a estabilidade e segurança dos seus produtos. Os primeiros canhões evoluíram em meados do século XV. Um antecessor do canhão foi a bombarda. Uma das primeiras guerras com uso de canhões em larga escala foi a Guerra Italiana de 1494. Os canhões eram feitos de bronze no início, mas depois de ferro. Dependendo de seus alvos, eles poderiam disparar munições diferentes, mas geralmente eram balas de canhão pesadas. A mobilidade, o poder de fogo e a cadência de tiro eram muito melhores do que com as bombardas. Em batalhas de campo, cercos e batalhas no mar, o canhão foi uma arma dominante durante séculos.</Portuguese>
 		<French>[TAB]Les cannoniers étaient des spécialistes très bien payés qui garantissaient la stabilité et la sécurité de leur produit. Au XVème siècle, les premiers canons sont le fruit de l'évolution de la bombarde. L'une des premières guerres au cours de laquelle les canons ont été utilisés en masse est la guerre italienne de 1494. Les canons étaient au départ fabriqué en bronze, puis plus tard en acier.</French>
 		<German>[TAB]Stückgießer waren hochbezahlte Spezialisten, die mit ihrem Ruf für die Stabilität und Sicherheit ihrer Produkte garantierten.[NEWLINE]Die ersten Kanonen entstanden Mitte des 15. Jahrhunderts. Ein Vorgänger der Kanone war die Bombarde. Einer der ersten Einsätze von Kanonen im großen Stil erfolgte im Jahr 1494 während der Italienkriege. Die machmal aus Bronze, gegen später aber meist aus Eisen gegossenen Kanonen, verschossen je nach Einsatz verschiedenste Munition, meist waren es aber Eisenkugeln. In Bezug auf Mobilität, Feuerkraft und Schußrate waren sie Bombarden überlegen. In Feldschlachten und bei Belagerungen, aber auch in Seegefechten, waren Kanonen bald für Jahrhunderte eine der dominierenden Waffengattungen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_CANNONSMITH_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Cannonsmiths[COLOR_REVERT] produce [LINK=BUILDING_ARMORY]cannons[\LINK] in the [LINK=YIELD_CANNONS]armory[\LINK] or one of its extensions from [LINK=YIELD_ORE]ore[\LINK], which is smelted using [LINK=YIELD_COAL]coal[\LINK]. Cannons are needed to build ships and artillery units. The [LINK=UNIT_GUNSMITH]master gunsmith[\LINK] is the most effective unit when working as a cannonsmith.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_GUNS]Guns, Cannons and Blades[\LINK].</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Ferreiros de canhão[COLOR_REVERT] produzem [LINK=BUILDING_ARMORY]canhões[\LINK] no [LINK=YIELD_CANNONS]arsenal[\LINK] ou em uma de suas extensões a partir de [LINK=YIELD_ORE]minério[\LINK], que é fundido usando [LINK=YIELD_COAL]carvão[\LINK]. Os canhões são necessários para construir navios e unidades de artilharia. O [LINK=UNIT_GUNSMITH]mestre armeiro[\LINK] é a unidade mais eficaz quando se trabalha como armeiro.[PARAGRAPH:2]Para obter mais informações, consulte [LINK=CONCEPT_GUNS]Armas, canhões e lâminas[\LINK].</Portuguese>
+		<Portuguese>[COLOR_HIGHLIGHT_TEXT]fundidores de canhões[COLOR_REVERT] produzem [LINK=BUILDING_ARMORY]canhões[\LINK] no [LINK=YIELD_CANNONS]arsenal[\LINK] ou em uma de suas extensões a partir de [LINK=YIELD_ORE]minério[\LINK], que é fundido usando [LINK=YIELD_COAL]carvão[\LINK]. Os canhões são necessários para construir navios e unidades de artilharia. O [LINK=UNIT_GUNSMITH]mestre armeiro[\LINK] é a unidade mais eficaz quando trabalha como fundidor de canhões.[PARAGRAPH:2]Para obter mais informações, consulte [LINK=CONCEPT_GUNS]Armas, canhões e lâminas[\LINK].</Portuguese>
 		<French>Les [COLOR_HIGHLIGHT_TEXT]canonniers[COLOR_REVERT] produisent des canons. Les [COLOR_HIGHLIGHT_TEXT]Canons[COLOR_REVERT] sont nécessaires pour construire des bateaux et des artilleries.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Stückgießer[COLOR_REVERT] stellen in der [LINK=BUILDING_ARMORY]Waffenkammer[\LINK] oder einer ihrer Erweiterungen [LINK=YIELD_CANNONS]Kanonen[\LINK] aus [LINK=YIELD_ORE]Eisenerz[\LINK] her, welches mit Hilfe von [LINK=YIELD_COAL]Kohle[\LINK] geschmolzen wird. Kanonen werden für den Bau von Schiffen und Artillerieeinheiten benötigt. Der [LINK=UNIT_GUNSMITH]Büchsenmeister[\LINK] ist dabei die effektivste Einheit.[PARAGRAPH:2]Weitere Informationen finden sich unter [LINK=CONCEPT_GUNS]Geschütze, Kanonen und Klingenwaffen[\LINK].</German>
 	</TEXT>
@@ -2592,7 +2592,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Casacos (Premium):Casacos (Premium)</Text>
+			<Text>Casacos (Luxo):Casacos (Luxo)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2634,7 +2634,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_PREMIUM_FUR_TRADER_STRATEGY</Tag>
 		<English>Moving a colonist to work in a [LINK=BUILDING_FUR_TRADERS_HOUSE]fur trader's house[\LINK], [LINK=BUILDING_FUR_TRADING_POST]fur trading post[\LINK] or [LINK=BUILDING_FUR_FACTORY]coat factory[\LINK] lets you give the colonist the luxury coat maker profession, so he can use [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK] to make [LINK=YIELD_PREMIUM_COATS]luxury coats[\LINK]. Assigning a [LINK=UNIT_FUR_TRADER]master fur trader[\LINK] to the job will increase the number of luxury coats created each turn, but it means more premium furs will be consumed.</English>
-		<Portuguese>Mover um colono para trabalhar em uma [LINK=BUILDING_FUR_TRADERS_HOUSE]casa de comerciante de peles[\LINK], [LINK=BUILDING_FUR_TRADING_POST]feitoria de peles[\LINK] ou [LINK=BUILDING_FUR_FACTORY]fábrica de casacos[\LINK] permite que você dê ao colono a profissão de fabricante de casacos de luxo, para que ele possa usar [LINK=YIELD_PREMIUM_FUR]peles premium[\LINK] para fazer [LINK=YIELD_PREMIUM_COATS]casacos de luxo[\LINK]. Atribuir um [LINK=UNIT_FUR_TRADER]mestre comerciante de peles[\LINK] para o trabalho aumentará o número de casacos luxuosos criados a cada turno, mas significa que mais peles premium serão consumidas.</Portuguese>
+		<Portuguese>Mover um colono para trabalhar em uma [LINK=BUILDING_FUR_TRADERS_HOUSE]casa de comerciante de peles[\LINK], [LINK=BUILDING_FUR_TRADING_POST]feitoria de peles[\LINK] ou [LINK=BUILDING_FUR_FACTORY]fábrica de casacos[\LINK] permite que você dê ao colono a profissão de fabricante de casacos de luxo, para que ele possa usar [LINK=YIELD_PREMIUM_FUR]peles de luxo[\LINK] para fazer [LINK=YIELD_PREMIUM_COATS]casacos de luxo[\LINK]. Atribuir um [LINK=UNIT_FUR_TRADER]mestre comerciante de peles[\LINK] para o trabalho aumentará o número de casacos luxuosos criados a cada turno, mas significa que mais peles de luxo serão consumidas.</Portuguese>
 		<French>Si vous ordonnez à un colon de travailler dans un [COLOR_BUILDING_TEXT]atelier de fourreur[COLOR_REVERT], un [COLOR_BUILDING_TEXT]comptoir de fourrures[COLOR_REVERT] ou une [COLOR_BUILDING_TEXT]usine de manteaux[COLOR_REVERT], vous lui attribuerez la profession de fourreur. En assignant un [COLOR_UNIT_TEXT]Maître fourreur[COLOR_REVERT] à cette fonction, vous augmenterez la quantité de [COLOR_HIGHLIGHT_TEXT]manteaux[COLOR_REVERT] produits lors de chaque tour, mais également le nombre de [COLOR_HIGHLIGHT_TEXT]fourrures[COLOR_REVERT] consommées.</French>
 		<German>Wenn man einen Bürger anweist, im [COLOR_BUILDING_TEXT]Haus des Pelzhändlers[COLOR_REVERT], einem [COLOR_BUILDING_TEXT]Pelzhandelsposten[COLOR_REVERT] oder einer [COLOR_BUILDING_TEXT]Pelzwarenfabrik[COLOR_REVERT] zu arbeiten, nimmt der Bürger den Pelzhändlerberuf an. Weist man dem Beruf einen [COLOR_UNIT_TEXT]Meister-Pelzhändler[COLOR_REVERT] zu, steigert das die Produktion von [COLOR_HIGHLIGHT_TEXT]Pelzwaren[COLOR_REVERT] um 100 Prozent. Der Verbrauch an [COLOR_HIGHLIGHT_TEXT]Fellen[COLOR_REVERT] steigt entsprechend.</German>
 		<Italian>Se mandi un colono a lavorare in una [COLOR_BUILDING_TEXT]casa del pellicciaio[COLOR_REVERT], un [COLOR_BUILDING_TEXT]negozio di pellicce[COLOR_REVERT] o una [COLOR_BUILDING_TEXT]fabbrica di mantelli[COLOR_REVERT], questi assumerà la professione di fabbricante di mantelli. Se assegni il lavoro a un [COLOR_UNIT_TEXT]mastro pellicciaio[COLOR_REVERT] aumenterai il numero di [COLOR_HIGHLIGHT_TEXT]mantelli[COLOR_REVERT] creati ogni turno, ma anche il numero di [COLOR_HIGHLIGHT_TEXT]pellicce[COLOR_REVERT] consumate.</Italian>

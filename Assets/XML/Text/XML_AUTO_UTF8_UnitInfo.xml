@@ -361,7 +361,7 @@
 		<English>Master Blacksmith:Master Blacksmiths</English>
 		
 		<Portuguese>
-			<Text>Mestre Ferreiro:Mestre Ferreiro</Text>
+			<Text>Mestre Ferreiro:Mestres Ferreiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -472,7 +472,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mestre Cervejeiro:Mestre Cervejeiro</Text>
+			<Text>Mestre Cervejeiro:Mestres Cervejeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -597,7 +597,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Barca Escrava:Barca Escrava</Text>
+			<Text>Barca Escrava:Barcas Escravas</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -633,7 +633,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mestre Açougueiro:Mestre Açougueiro</Text>
+			<Text>Mestre Açougueiro:Mestres Açougueiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -695,7 +695,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CANNONS_PEDIA</Tag>
 		<English>The first cannons were developed in the middle of the 15th century.[NEWLINE]A predecessor of the cannon was the bombard.[NEWLINE]One of the first wars with large-scale use of cannons was the Italian War of 1494.[NEWLINE]Cannons were made of bronze in the beginning, but iron later on.[NEWLINE]Depending on the targets they could fire different ammunition but usually it was heavy cannonballs.[NEWLINE]Mobility, fire power and rate of fire were much better than with bombards.[NEWLINE]In field battles, sieges and battles on sea, the cannon was a dominant weapon for centuries.</English>
-		<Portuguese>Os primeiros canhões foram desenvolvidos em meados do século XV.[NEWLINE]Um antecessor do canhão foi o bombardeio.[NEWLINE]Uma das primeiras guerras com uso de canhões em grande escala foi a Guerra Italiana de 1494.[NEWLINE]Os canhões eram feitos de bronze no início, mas de ferro mais tarde.[NEWLINE]Dependendo dos alvos, eles podiam disparar munições diferentes, mas geralmente eram pesadas. balas de canhão.[NEWLINE]Mobilidade, poder de fogo e cadência de tiro eram muito melhores do que com bombas.[NEWLINE]Em batalhas de campo, cercos e batalhas no mar, o canhão foi uma arma dominante durante séculos.</Portuguese>
+		<Portuguese>Os primeiros canhões foram desenvolvidos em meados do século XV.[NEWLINE]Um antecessor do canhão foi a bombarda.[NEWLINE]Uma das primeiras guerras com uso de canhões em grande escala foi a Guerra Italiana de 1494.[NEWLINE]Os canhões eram feitos de bronze no início, mas de ferro mais tarde.[NEWLINE]Dependendo dos alvos, eles podiam disparar munições diferentes, mas geralmente eram pesadas. balas de canhão.[NEWLINE]Mobilidade, poder de fogo e cadência de tiro eram muito melhores do que com bombas.[NEWLINE]Em batalhas de campo, cercos e batalhas no mar, o canhão foi uma arma dominante durante séculos.</Portuguese>
 		<French>Les premières « bouches à feu » furent faites en fer forgé. Elles étaient composées de barres de fer soudées et assemblées en forme de douves et reliées par des cercles de même métal. En 1354, il y avait déjà des pièces en cuivre. En 1372, on coulait des pièces de bronze à Augsbourg. Vers la fin du XIVe siècle ces pièces étaient très nombreuses en Italie. On employa le fer forgé concurremment avec le bronze pendant environ deux siècles et demi. La fabrication des pièces de bronze ou de cuivre efait supposer la connaissance des fourneaux à réverbère. Le bronze outre l'étain et le cuivre contenait un peu de zinc, et même du plomb, mais on ne tarda guère à adopter une composition formée de cuivre et d'étain seulement.</French>
 		<German>Die ersten Kanonen entstanden Mitte des 15. Jahrhunderts.[NEWLINE]Ein Vorgänger der Kanone war die Bombarde.[NEWLINE]Einer der ersten Einsätze von Kanonen im großen Stil war im Jahr 1494, zur Zeit der Italienkriege.[NEWLINE]Die anfänglich aus Bronze, später aber meist aus Eisen gegossenen Kanonen, verschossen je nach Einsatz verschiedenste Munition, meist waren es aber Eisenkugeln.[NEWLINE]In Bezug auf Mobilität, Feuerkraft und Schussrate waren sie Bombarden überlegen.[NEWLINE]In Feldschlachten, Belagerungsschlachten aber auch bei Schiffsgefechten wurden Kanonen bald für Jahrhunderte eine der dominanten Waffengattungen.</German>
 	</TEXT>
@@ -936,8 +936,8 @@
 		<English>Nao:Naos</English>
 		
 		<Portuguese>
-			<Text>Nao:Naos</Text>
-			<Gender>Male</Gender>
+			<Text>Nau:Naus</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -2388,7 +2388,7 @@
 		<English>Master Dyer:Master Dyers</English>
 		
 		<Portuguese>
-			<Text>Mestre Tintureiro:Mestre Tintureiro</Text>
+			<Text>Mestre Tintureiro:Mestres Tintureiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2946,7 +2946,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mestre Marceneiro:Mestre Marceneiro</Text>
+			<Text>Mestre Marceneiro:Mestres Marceneiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3029,7 +3029,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FUR_TRADER_STRATEGY</Tag>
 		<English>If you need a lot of [LINK=YIELD_COATS]coats[\LINK] or [LINK=YIELD_PREMIUM_COATS]luxury coats[\LINK] fast, the [COLOR_UNIT_TEXT]master fur trader[COLOR_REVERT] is your man.[NEWLINE]In the [LINK=PROFESSION_FUR_TRADER]coat maker[\LINK] or [LINK=PROFESSION_PREMIUM_FUR_TRADER]luxury coat maker[\LINK] profession, he can tailor double what regular colonists could from [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK].[PARAGRAPH:1]Master fur traders can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
-		<Portuguese>Se você precisar de muitos [LINK=YIELD_COATS]casacos[\LINK] ou [LINK=YIELD_PREMIUM_COATS]casacos de luxo[\LINK] rapidamente, o [COLOR_UNIT_TEXT]mestre comerciante de peles[COLOR_REVERT] é o seu homem.[NEWLINE]Na profissão de [LINK=PROFESSION_FUR_TRADER]fabricante de casacos[\LINK] ou [LINK=PROFESSION_PREMIUM_FUR_TRADER]fabricante de casacos de luxo[\LINK], ele pode personalizar o dobro do que os colonos regulares poderiam fazer [LINK=YIELD_FUR]peles[\LINK] e [LINK=YIELD_PREMIUM_FUR]peles premium[\LINK].[PARAGRAPH:1]Mestres comerciantes de peles podem ser contratados na [LINK=CONCEPT_EUROPE]Europa[\LINK] e também podem ser [LINK=CONCEPT_TRAINING]treinados[\LINK] em uma colônia com uma [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou uma de suas atualizações.</Portuguese>
+		<Portuguese>Se você precisar de muitos [LINK=YIELD_COATS]casacos[\LINK] ou [LINK=YIELD_PREMIUM_COATS]casacos de luxo[\LINK] rapidamente, o [COLOR_UNIT_TEXT]mestre comerciante de peles[COLOR_REVERT] é o seu homem.[NEWLINE]Na profissão de [LINK=PROFESSION_FUR_TRADER]fabricante de casacos[\LINK] ou [LINK=PROFESSION_PREMIUM_FUR_TRADER]fabricante de casacos de luxo[\LINK], ele pode personalizar o dobro do que os colonos regulares poderiam fazer [LINK=YIELD_FUR]peles[\LINK] e [LINK=YIELD_PREMIUM_FUR]peles de luxo[\LINK].[PARAGRAPH:1]Mestres comerciantes de peles podem ser contratados na [LINK=CONCEPT_EUROPE]Europa[\LINK] e também podem ser [LINK=CONCEPT_TRAINING]treinados[\LINK] em uma colônia com uma [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou uma de suas atualizações.</Portuguese>
 		<French>Si vous avez rapidement besoin d'une grande quantité de [COLOR_HIGHLIGHT_TEXT]manteaux[COLOR_REVERT], le [COLOR_UNIT_TEXT]Maître fourreur[COLOR_REVERT] est votre homme. Capable de créer deux fois plus de [COLOR_HIGHLIGHT_TEXT]manteaux[COLOR_REVERT] que ne le ferait un [COLOR_UNIT_TEXT]colon libre[COLOR_REVERT], les Maîtres fourreurs peuvent être source de profits rapides si vous avez un excédent de fourrure dans votre colonie.</French>
 		<German>[COLOR_UNIT_TEXT]Meister-Pelzhändler[COLOR_REVERT] arbeiten im Beruf des Pelzhändlers bei der Herstellung von [COLOR_HIGHLIGHT_TEXT]Pelzwaren[COLOR_REVERT] doppelt so produktiv wie Freie Kolonisten.</German>
 		<Italian>Se ti servono molti [COLOR_HIGHLIGHT_TEXT]mantelli[COLOR_REVERT] in poco tempo, il [COLOR_UNIT_TEXT]mastro pellicciaio[COLOR_REVERT] è l'uomo che fa per te. È in grado di creare il doppio di [COLOR_HIGHLIGHT_TEXT]mantelli[COLOR_REVERT] di quelli prodotti da un [COLOR_UNIT_TEXT]libero colono[COLOR_REVERT] nello stesso tempo, ed è in grado di farti guadagnare rapidamente se hai pellicce in eccesso nel tuo insediamento.</Italian>
@@ -3079,7 +3079,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_FURRIER_STRATEGY</Tag>
 		<English>The [COLOR_UNIT_TEXT]French Furrier[COLOR_REVERT] is the unique national unit of France and replaces the [LINK=UNIT_FUR_TRADER]master fur trader[\LINK].[NEWLINE]If you need a lot of [LINK=YIELD_COATS]coats[\LINK] or [LINK=YIELD_PREMIUM_COATS]luxury coats[\LINK] fast, the [COLOR_UNIT_TEXT]French Furrier[COLOR_REVERT] is your man. In the [LINK=PROFESSION_FUR_TRADER]coat maker[\LINK] or [LINK=PROFESSION_PREMIUM_FUR_TRADER]luxury coat maker[\LINK] profession, he outperforms the master fur trader using [LINK=YIELD_FUR]fur[\LINK] and [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK].[PARAGRAPH:1]French Furriers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
-		<Portuguese>O [COLOR_UNIT_TEXT]French Furrier[COLOR_REVERT] é a única unidade nacional da França e substitui o [LINK=UNIT_FUR_TRADER]mestre comerciante de peles[\LINK].[NEWLINE]Se você precisa de muitos [LINK=YIELD_COATS]casacos[\LINK] ou [LINK=YIELD_PREMIUM_COATS]casacos de luxo[\LINK] rapidamente, o [COLOR_UNIT_TEXT]French Furrier[COLOR_REVERT] é o seu homem. Na profissão de [LINK=PROFESSION_FUR_TRADER]fabricante de casacos[\LINK] ou [LINK=PROFESSION_PREMIUM_FUR_TRADER]fabricante de casacos de luxo[\LINK], ele supera o mestre comerciante de peles usando [LINK=YIELD_FUR]peles[\LINK] e [LINK=YIELD_PREMIUM_FUR]peles premium[\LINK].[PARAGRAPH:1]Furriers franceses podem ser contratados em [LINK=CONCEPT_EUROPE]Europa[\LINK], e também podem ser [LINK=CONCEPT_TRAINING]treinados[\LINK] em uma colônia com uma [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou uma de suas atualizações.</Portuguese>
+		<Portuguese>O [COLOR_UNIT_TEXT]French Furrier[COLOR_REVERT] é a única unidade nacional da França e substitui o [LINK=UNIT_FUR_TRADER]mestre comerciante de peles[\LINK].[NEWLINE]Se você precisa de muitos [LINK=YIELD_COATS]casacos[\LINK] ou [LINK=YIELD_PREMIUM_COATS]casacos de luxo[\LINK] rapidamente, o [COLOR_UNIT_TEXT]French Furrier[COLOR_REVERT] é o seu homem. Na profissão de [LINK=PROFESSION_FUR_TRADER]fabricante de casacos[\LINK] ou [LINK=PROFESSION_PREMIUM_FUR_TRADER]fabricante de casacos de luxo[\LINK], ele supera o mestre comerciante de peles usando [LINK=YIELD_FUR]peles[\LINK] e [LINK=YIELD_PREMIUM_FUR]peles de luxo[\LINK].[PARAGRAPH:1]Furriers franceses podem ser contratados em [LINK=CONCEPT_EUROPE]Europa[\LINK], e também podem ser [LINK=CONCEPT_TRAINING]treinados[\LINK] em uma colônia com uma [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou uma de suas atualizações.</Portuguese>
 		<French>Le [COLOR_UNIT_TEXT]Furrier Français[COLOR_REVERT] est l'unique unité nationale de France et remplace le [LINK=UNIT_FUR_TRADER]maître fourreur[\LINK].[NEWLINE]Si vous avez besoin de beaucoup de [LINK=YIELD_COATS]manteaux[\LINK] ou [LINK=YIELD_PREMIUM_COATS]manteaux de luxe[\LINK] vite, le [COLOR_UNIT_TEXT]Furrier Français[COLOR_REVERT] est votre homme. Dans la profession [LINK=PROFESSION_FUR_TRADER]fabricant de manteaux[\LINK] ou [LINK=PROFESSION_PREMIUM_FUR_TRADER]fabricant de manteaux de luxe[\LINK], il surpasse même ce qu'un maître fourreur pourrait faire avec [LINK=YIELD_FUR]fourrure[\LINK] et [LINK=YIELD_PREMIUM_FUR]fourrure premium[\LINK].[PARAGRAPH:1]Les Furriers Français peuvent être embauchés en [LINK=CONCEPT_EUROPE]Europe[\LINK], et ils peuvent également être [LINK=CONCEPT_TRAINING]formés[\LINK] dans un colonie avec un [LINK=BUILDING_COLLEGE]collège[\LINK] ou l'une de ses mises à niveau.</French>
 		<German>Der [COLOR_UNIT_TEXT]Französischer Furrier[COLOR_REVERT] ist die einzigartige nationale Einheit Frankreichs und ersetzt den [LINK=UNIT_FUR_TRADER]Meister-Pelzhändler[\LINK].[NEWLINE]Wenn Sie viele [LINK=YIELD_COATS]Mäntel[\LINK] benötigen oder [LINK=YIELD_PREMIUM_COATS]Luxusmäntel[\LINK] schnell, der [COLOR_UNIT_TEXT]Französischer Furrier[COLOR_REVERT] ist Ihr Mann. Im Beruf des [LINK=PROFESSION_FUR_TRADER]Mantelmachers[\LINK] oder des [LINK=PROFESSION_PREMIUM_FUR_TRADER]Luxusmantelmachers[\LINK] übertrifft er sogar das, was ein Meister-Pelzhändler aus [LINK=YIELD_FUR]Fell[\LINK] und [LINK=YIELD_PREMIUM_FUR]Premiumpelz[\LINK].[PARAGRAPH:1]Französische Furriers können in [LINK=CONCEPT_EUROPE]Europa[\LINK] eingestellt und auch in einem [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden Kolonie mit einem [LINK=BUILDING_COLLEGE]College[\LINK] oder einem seiner Upgrades.</German>
 		<Italian>Il [COLOR_UNIT_TEXT]Furrier Francese[COLOR_REVERT] è l'unica unità nazionale della Francia e sostituisce il [LINK=UNIT_FUR_TRADER]Mastro pellicciaio[\LINK].[NEWLINE]Se hai bisogno di molti [LINK=YIELD_COATS]cappotti[\LINK] o [LINK=YIELD_PREMIUM_COATS]cappotti di lusso[\LINK] velocemente, il [COLOR_UNIT_TEXT]Furrier Francese[COLOR_REVERT] è il tuo uomo. Nella professione di [LINK=PROFESSION_FUR_TRADER]cappotto[\LINK] o [LINK=PROFESSION_PREMIUM_FUR_TRADER]cappotto di lusso[\LINK], supera persino quello che potrebbe fare un mastro pellicciaio di [LINK=YIELD_FUR]pellicce[\LINK] e [LINK=YIELD_PREMIUM_FUR]pelliccia premium[\LINK].[PARAGRAPH:1]I Furriers Francesi possono essere assunti in [LINK=CONCEPT_EUROPE]Europa[\LINK] e possono anche essere [LINK=CONCEPT_TRAINING]addestrati[\LINK] in un colonia con un [LINK=BUILDING_COLLEGE]collegio[\LINK] o uno dei suoi potenziamenti.</Italian>
@@ -3577,7 +3577,7 @@
 		<English>Master Gunsmith:Master Gunsmiths</English>
 		
 		<Portuguese>
-			<Text>Mestre Armeiro:Mestre Armeiro</Text>
+			<Text>Mestre Armeiro:Mestres Armeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3715,7 +3715,7 @@
 		<English>Expert Hemp Planter:Expert Hemp Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Canhambeiro:Especialistas Canhambeiros</Text>
+			<Text>Especialista Canhameiro:Especialistas Canhameiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4849,7 +4849,7 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_STRATEGY</Tag>
 		<English>Natives are the general worker unit for the New World [LINK=CONCEPT_NATIVES]Natives[\LINK].[NEWLINE]They are experts at collecting raw materials, particularly [LINK=YIELD_FUR]fur[\LINK], [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK], [LINK=YIELD_SILVER]silver[\LINK], [LINK=YIELD_GOLD]gold[\LINK] and [LINK=YIELD_GEMS]gems[\LINK], but they do not manufacture goods.[NEWLINE]While they can fight, they rarely win unaided so you needn't be too worried if you see a group of Natives approach.[NEWLINE]Not [BOLD]too[\BOLD] worried.[NEWLINE]Natives normally adventure out into the world as [LINK=PROFESSION_BRAVE]warriors[\LINK] but, once they get their hands on [LINK=YIELD_MUSKETS]guns[\LINK] or [LINK=YIELD_HORSES]horses[\LINK], they can adopt the more powerful [LINK=PROFESSION_MOUNTED_BRAVE]mounted warrior[\LINK], [LINK=PROFESSION_ARMED_BRAVE]armed warrior[\LINK] or [LINK=PROFESSION_ARMED_MOUNTED_BRAVE]armed mounted warrior[\LINK] professions.[PARAGRAPH:2]For more information, see [LINK=CONCEPT_NATIVES]Natives[\LINK].</English>
-		<Portuguese>Os nativos são a unidade geral de trabalho dos [LINK=CONCEPT_NATIVES]nativos[\LINK] do Novo Mundo.[NEWLINE]Eles são especialistas na coleta de matérias-primas, especialmente [LINK=YIELD_FUR]peles[\LINK], [LINK=YIELD_PREMIUM_FUR]peles premium[\LINK], [LINK=YIELD_SILVER]prata[\LINK], [LINK=YIELD_GOLD]ouro[\LINK] e [LINK=YIELD_GEMS]joias[\LINK], mas eles não fabricam produtos.[NEWLINE]Embora possam lutar, eles raramente vencem sem ajuda, então você não precisa ficar muito preocupado se vir um grupo de nativos se aproximando.[NEWLINE]Não [BOLD]muito[\BOLD] preocupado.[NEWLINE]Os nativos normalmente se aventuram pelo mundo como [LINK=PROFESSION_BRAVE]guerreiros[\LINK] mas, uma vez que eles coloquem as mãos em [LINK=YIELD_MUSKETS]armas[\LINK] ou [LINK=YIELD_HORSES]cavalos[\LINK], eles podem adotar o mais poderoso [LINK=PROFESSION_MOUNTED_BRAVE]guerreiro montado[\LINK], [LINK=PROFESSION_ARMED_BRAVE]guerreiro armado[\LINK] ou [LINK=PROFESSION_ARMED_MOUNTED_BRAVE]guerreiro armado montado profissões de guerreiro[\LINK].[PARAGRAPH:2]Para obter mais informações, consulte [LINK=CONCEPT_NATIVES]Nativos[\LINK].</Portuguese>
+		<Portuguese>Os nativos são a unidade geral de trabalho dos [LINK=CONCEPT_NATIVES]nativos[\LINK] do Novo Mundo.[NEWLINE]Eles são especialistas na coleta de matérias-primas, especialmente [LINK=YIELD_FUR]peles[\LINK], [LINK=YIELD_PREMIUM_FUR]peles de luxo[\LINK], [LINK=YIELD_SILVER]prata[\LINK], [LINK=YIELD_GOLD]ouro[\LINK] e [LINK=YIELD_GEMS]joias[\LINK], mas eles não fabricam produtos.[NEWLINE]Embora possam lutar, eles raramente vencem sem ajuda, então você não precisa ficar muito preocupado se vir um grupo de nativos se aproximando.[NEWLINE]Não [BOLD]muito[\BOLD] preocupado.[NEWLINE]Os nativos normalmente se aventuram pelo mundo como [LINK=PROFESSION_BRAVE]guerreiros[\LINK] mas, uma vez que eles coloquem as mãos em [LINK=YIELD_MUSKETS]armas[\LINK] ou [LINK=YIELD_HORSES]cavalos[\LINK], eles podem adotar o mais poderoso [LINK=PROFESSION_MOUNTED_BRAVE]guerreiro montado[\LINK], [LINK=PROFESSION_ARMED_BRAVE]guerreiro armado[\LINK] ou [LINK=PROFESSION_ARMED_MOUNTED_BRAVE]guerreiro armado montado profissões de guerreiro[\LINK].[PARAGRAPH:2]Para obter mais informações, consulte [LINK=CONCEPT_NATIVES]Nativos[\LINK].</Portuguese>
 		<French>Les [COLOR_UNIT_TEXT]Indigènes[COLOR_REVERT] représentent l'unité d'ouvriers standard chez les indigènes du Nouveau monde. Ils sont très doués pour créer des matériaux bruts, mais la production de biens manufacturés leur est souvent étrangère. Capables de combattre, ils ont pourtant souvent besoin d'aide, alors ne soyez pas trop inquiet si vous voyez un groupe d'indigènes approcher. Pas [BOLD]trop[\BOLD] inquiet.</French>
 		<German>[COLOR_UNIT_TEXT]Indianer[COLOR_REVERT] sind die Einheiten der Ureinwohnernationen der Neuen Welt. Sie sind Experten in der Produktion von Rohmaterialien, aber die Herstellung von Fertigwaren liegt ihnen nicht besonders. Sie verfügen über diverse Kampfboni in Sumpf, Dschungel und Wald.[PARAGRAPH:2]Die Ureinwohnernationen können auf einem Siedlungsfeld ihre Einheit Indianer in jeden ihrer Militärberufe stecken, unter der Voraussetzung, dass die für diesen Beruf notwendige einmalige Ausstattung mit Schusswaffen und/oder Pferden im Lager der Siedlung vorhanden ist. Diese Ausstattung können die Ureinwohnernationen nicht selber herstellen, sondern nur durch Handel oder durch Überfälle erwerben. Grundlage der Kampfstärke, der Fortbewegungspunkte und der Kampfboni der Truppen sind die entsprechenden Werte der Einheit Indianer. Diese Werte werden durch den Militärberuf modifiziert. Die Kampfboni, die die Einheit besitzt, kommen natürlich auch im jeweiligen Militärberuf zur Anwendung.</German>
 		<Italian>I [COLOR_UNIT_TEXT]nativi[COLOR_REVERT] sono l'unità di lavoratori generica per i nativi del Nuovo Mondo. Sono esperti nella creazione di materie prime, mentre non sono bravi nella realizzazione di beni confezionati. Sono in grado di combattere ma raramente vincono, se non vengono aiutati, quindi non devi preoccuparti troppo, se vedi avvicinarsi un gruppo di nativi. Non preoccuparti [BOLD]troppo[\BOLD].</Italian>
@@ -5457,7 +5457,7 @@ _ship_of
 		<English>Premium Fur</English>
 		
 		<Portuguese>
-			<Text>Pele Premium</Text>
+			<Text>Pele de Luxo</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -7104,7 +7104,7 @@ _ship_of
 		<English>Expert Stonecutter:Expert Stonecutters</English>
 		
 		<Portuguese>
-			<Text>Canteiro:Canteiros</Text>
+			<Text>Cortador de Pedra Especialista:Cortadores de Pedra Especialistas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -7237,7 +7237,7 @@ _ship_of
 		<English>Master Tanner:Master Tanners</English>
 		
 		<Portuguese>
-			<Text>Mestre Curtidor:Mestre Curtidor</Text>
+			<Text>Mestre Curtidor:Mestres Curtidores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -7433,7 +7433,7 @@ _ship_of
 			<Plural>1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Bens Comerciais</Text>
+			<Text>Mercadorias</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -7505,7 +7505,7 @@ _ship_of
 		<English>Expert Trapper:Expert Trappers</English>
 		
 		<Portuguese>
-			<Text>Trampeiro Especialista:Trampeiros Especialistas</Text>
+			<Text>Coureador Especialista:Coureadores Especialistas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -7534,7 +7534,7 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRAPPER_PEDIA</Tag>
 		<English>Beavers, foxes, mink and otter - the New World was literally crawling (and swimming and grazing) with furry animals unlike any that could be found in Europe, and the Europeans were wild for those precious pelts.[NEWLINE]This overwhelming demand created an immense market for the fur trapper.[NEWLINE]Fur trappers were often lone hunters, hiking into the wilderness for months before returning with pelts of immense value, earning themselves a pretty penny and providing an ever-fashionable Europe with the furs it desired.</English>
-		<Portuguese>Castores, raposas, visons e lontras - o Novo Mundo estava literalmente rastejando (e nadando e pastando) com animais peludos diferentes de todos os que poderiam ser encontrados na Europa, e os europeus eram selvagens por essas peles preciosas.[NEWLINE]Essa demanda esmagadora criou um mercado imenso para o trampeiro.[NEWLINE]Os trampeiros eram muitas vezes caçadores solitários, caminhando na selva por meses antes de retornar com peles de imenso valor, ganhando um bom dinheiro e proporcionando um bom dinheiro. a Europa sempre na moda com as peles que desejava.</Portuguese>
+		<Portuguese>Castores, raposas, visons e lontras - o Novo Mundo estava literalmente rastejando (e nadando e pastando) com animais peludos diferentes de todos os que poderiam ser encontrados na Europa, e os europeus eram selvagens por essas peles preciosas.[NEWLINE]Essa demanda esmagadora criou um mercado imenso para o coureador.[NEWLINE]Os coureadores eram muitas vezes caçadores solitários, caminhando na selva por meses antes de retornar com peles de imenso valor, ganhando um bom dinheiro e proporcionando um bom dinheiro. a Europa sempre na moda com as peles que desejava.</Portuguese>
 		<French>Castors, renards, visons et loutres : le Nouveau monde grouille littéralement d'animaux à fourrure inconnus en Europe. Et les Européens adorent les fourrures.[NEWLINE]Cette forte demande crée un marché très lucratif pour les trappeurs de fourrures.[NEWLINE]es trappeurs sont souvent des chasseurs solitaires, qui s'aventurent dans des régions sauvages pendant des mois pour en revenir les bras chargés de fourrures d'immense valeur, se constituant ainsi un joli pécule et fournissant aux européen les fourrures si convoités.</French>
 		<German>Biber, Fuchs, Nerz, und Otter - in der Neuen Welt wimmelte es nur so von Tieren mit wertvollen Fellen, wie man sie nirgendwo in Europa finden konnte.[NEWLINE]Und die Europäer waren ganz wild auf diese Felle.[NEWLINE]Trapper waren oft einsame Jäger, die für Monate in der Wildnis verschwanden und mit Fellen von ungeheurem Wert zurückkehrten, was ihnen einen anständigen Lohn sicherte - und den allzeit modebewussten Europäern die Pelze, nach denen sie sich so verzweifelt sehnten.</German>
 		<Italian>Castori, volpi, visoni, lontre: il Nuovo Mondo era letteralmente pieno di animali con pellicce diverse da tutte quelle che si potevano trovare in Europa.[NEWLINE]E gli europei andavano matti per quelle pellicce. La grande domanda creò un ottimo mercato per i cacciatori di pellicce.[NEWLINE]Spesso si trattava di cacciatori solitari, che si inoltravano in mezzo alla natura selvaggia per mesi interi, ritornando con pellicce di immenso valore, guadagnando dei bei soldi e fornendo a un'Europa sempre alla moda le pellicce che cercava così disperatamente.</Italian>
@@ -7543,7 +7543,7 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRAPPER_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Expert trappers[COLOR_REVERT] are adept in trapping animals to get the New World's most precious pelts.[NEWLINE]Assigning an expert trapper to the [LINK=PROFESSION_FUR_TRAPPER]fur trapper[\LINK] or [LINK=PROFESSION_FUR_TRAPPER_WATER]sea otter trapper[\LINK] profession will double the amount of [LINK=YIELD_PREMIUM_FUR]premium fur[\LINK] you receive from that tile.[PARAGRAPH:1]Expert trappers can be trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], and they can also [LINK=CONCEPT_TRAINING]learn[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
-		<Portuguese>[COLOR_UNIT_TEXT]Trampeiros especialistas[COLOR_REVERT] são adeptos da captura de animais para obter as peles mais preciosas do Novo Mundo.[NEWLINE]Atribuir um trampeiro especialista à profissão de [LINK=PROFESSION_FUR_TRAPPER]caçador de peles[\LINK] ou [LINK=PROFESSION_FUR_TRAPPER_WATER]caçador de lontras marinhas[\LINK] dobrará a quantidade de [LINK=YIELD_PREMIUM_FUR]peles premium[\LINK] que você recebe com isso. lote.[PARAGRAPH:1]Trampeiros especialistas podem ser treinados por [LINK=CONCEPT_NATIVES]nativos[\LINK] e também podem [LINK=CONCEPT_TRAINING]aprender[\LINK] em uma colônia com uma [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou uma de suas atualizações.</Portuguese>
+		<Portuguese>[COLOR_UNIT_TEXT]Coureadores especialistas[COLOR_REVERT] são adeptos da captura de animais para obter as peles mais preciosas do Novo Mundo.[NEWLINE]Atribuir um coureador especialista à profissão de [LINK=PROFESSION_FUR_TRAPPER]caçador de peles[\LINK] ou [LINK=PROFESSION_FUR_TRAPPER_WATER]caçador de lontras marinhas[\LINK] dobrará a quantidade de [LINK=YIELD_PREMIUM_FUR]peles de luxo[\LINK] que você recebe com isso. lote.[PARAGRAPH:1]Coureadores especialistas podem ser treinados por [LINK=CONCEPT_NATIVES]nativos[\LINK] e também podem [LINK=CONCEPT_TRAINING]aprender[\LINK] em uma colônia com uma [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou uma de suas atualizações.</Portuguese>
 		<French>Les [COLOR_UNIT_TEXT]Experts trappeurs[COLOR_REVERT] sont des spécialistes pour dénicher les fourrures les plus précieuses du Nouveau Monde. En assignant un expert trappeur à la fonction de trappeur, vous doublerez la quantité de [COLOR_HIGHLIGHT_TEXT]fourrures[COLOR_REVERT] produite par cette case.</French>
 		<German>Ein [COLOR_UNIT_TEXT]Erfahrener Trapper[COLOR_REVERT] verdoppelt die Produktion [COLOR_HIGHLIGHT_TEXT]Hochwertiger Felle[COLOR_REVERT] des Geländefeldes, auf dem er arbeitet.[PARAGRAPH:2]Erfahrene Trapper stehen nicht im [LINK=CONCEPT_EUROPE]Europahafen[\LINK] zur Verfügung. Aber es gibt andere Wege, sie zu gewinnen: Manche Ureinwohnerdörfer bilden diese Experten aus. Außerdem gibt es einen Handels-Gründervater, der eine Einheit zur Verfügung stellt. Oder man löst das Problem durch Kidnapping - und erobert eine europäische Siedlung, in der einer dieser begehrten Experten Stadtbürger ist.</German>
 		<Italian>I [COLOR_UNIT_TEXT]cacciatori esperti[COLOR_REVERT] sono molto abili nel procurarsi le preziosissime pellicce del Nuovo Mondo. Assegnando a un cacciatore esperto la professione di cacciatore di pellicce raddoppierai la quantità di [COLOR_HIGHLIGHT_TEXT]pellicce[COLOR_REVERT] che ricevi da una casella.</Italian>
@@ -7884,7 +7884,7 @@ _ship_of
 		<English>Master Weaver:Master Weavers</English>
 		
 		<Portuguese>
-			<Text>Mestre Tecelão:Mestre Tecelão</Text>
+			<Text>Mestre Tecelão:Mestres Tecelões</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
