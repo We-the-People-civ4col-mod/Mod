@@ -592,7 +592,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NO_REVEAL_GOODY</Tag>
 		<English>[ICON_BULLET]Cannot enter goody huts.</English>
-		<Portuguese>[ICON_BULLET]Não é possível entrar em cabanas boas.</Portuguese>
+		<Portuguese>[ICON_BULLET]Não pode explorar ruínas antigas.</Portuguese>
 		<French>[ICON_BULLET]Ne peut pas visiter les huttes bonus.</French>
 		<German>[ICON_BULLET]Kann keine Goody Huts betreten.</German>
 		<Russian>[ICON_BULLET]Не может заходить в goody хижины</Russian>

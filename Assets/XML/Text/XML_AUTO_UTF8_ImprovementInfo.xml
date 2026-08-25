@@ -717,7 +717,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT6_PEDIA</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Raiders' camps[COLOR_REVERT] are goodies that are protected. When you defeat the outlaws you can take their riches.</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Acampamentos de Raiders[COLOR_REVERT] são itens protegidos. Ao derrotar os bandidos, você pode ficar com suas riquezas.</Portuguese>
+		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Acampamentos de Raiders[COLOR_REVERT] são achados protegidos. Ao derrotar os bandidos, você pode ficar com suas riquezas.</Portuguese>
 		<French>Les [COLOR_HIGHLIGHT_TEXT]camps des maraudeurs[COLOR_REVERT] sont des goodies protégés par des hors-la-loi. Une fois battus, vous pouvez confisquer leurs biens.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Verbrecherversteck[COLOR_REVERT] sind Goodies, die bewacht werden. Wenn die Kriminellen besiegt wurden, gehören Ihnen ihre Schätze.</German>
 	</TEXT>
@@ -741,7 +741,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT7_PEDIA</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Animal lairs[COLOR_REVERT] are goodies protected by wild animals. Maybe there's somthing valuable in there?</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Tocas de animais[COLOR_REVERT] são guloseimas protegidas por animais selvagens. Talvez haja algo valioso aí?</Portuguese>
+		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Tocas de animais[COLOR_REVERT] são achados protegidos por animais selvagens. Talvez haja algo valioso aí?</Portuguese>
 		<French>[COLOR_HIGHLIGHT_TEXT]Les repaires d'animaux [COLOR_REVERT] sont des lieux protégés par des animaux sauvages. Peut-être qu'il y a quelque chose de précieux là-dedans?</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Tierverstecke[COLOR_REVERT] sind Goodies, die durch wilde Tiere bewacht werden. Vielleicht findet sich darin ja etwas Wertvolles?</German>
 	</TEXT>
@@ -765,7 +765,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_GOODY_HUT8_PEDIA</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Hostile Native villages[COLOR_REVERT] are goodies that are protected by hostile Natives. When you defeat the hostile Natives you can seize their riches and secrets.</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Aldeias Nativas Hostis[COLOR_REVERT] são guloseimas protegidas por Nativos hostis. Ao derrotar os nativos hostis, você pode aproveitar suas riquezas e segredos.</Portuguese>
+		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Aldeias Nativas Hostis[COLOR_REVERT] são achados protegidos por nativos hostis. Ao derrotar os nativos hostis, você pode aproveitar suas riquezas e segredos.</Portuguese>
 		<French>[COLOR_HIGHLIGHT_TEXT]Les villages d'indigènes hostiles[COLOR_REVERT] sont des biens protégés par des indigènes hostiles. Lorsque vous vainquez les indigènes hostiles, vous pouvez vous emparer de leurs richesses et de leurs secrets.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Feindliche Ureinwohnerdörfer[COLOR_REVERT] sind Goodies, die durch feindselige Ureinwohner bewacht werden. Sobald Sie die feindlichen Ureinwohner besiegt haben, gehören Ihnen ihre Schätze.</German>
 	</TEXT>

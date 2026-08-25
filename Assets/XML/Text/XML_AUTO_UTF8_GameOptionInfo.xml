@@ -237,7 +237,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_NO_GOODY_HUTS_HELP</Tag>
 		<English>Random map generator does not place any ancient ruins ("goody huts") on the map.</English>
-		<Portuguese>O gerador de mapas aleatórios não coloca nenhuma ruína antiga ("cabanas boas") no mapa.</Portuguese>
+		<Portuguese>O gerador de mapas aleatórios não coloca ruínas antigas no mapa.</Portuguese>
 		<French>Le générateur de carte aléatoire ne place pas de villages tribaux ("huttes à cadeaux") sur la carte.</French>
 		<German>Der Zufallskartengenerator platziert keine Ruinen und Grabstätten auf der Karte.</German>
 		<Italian>Il generatore di mappe casuali non collocherà alcun villaggio tribale (le capanne "utili") sulla mappa.</Italian>
@@ -421,14 +421,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE</Tag>
 		<English>Revealed goodies always display coloured circles</English>
-		<Portuguese>As guloseimas reveladas sempre exibem círculos coloridos</Portuguese>
+		<Portuguese>Achados revelados sempre exibem círculos coloridos</Portuguese>
 		<German>Entdeckte Goodies zeigen immer Farbkreis als Hinweis</German>
 		<Russian>Обнаруженные Goodies всегда подсвечиваются цветными кругами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_GOODIES_ALWAYS_DISPLAY_COLOURED_CIRCLE_HELP</Tag>
 		<English>This helps to easily identify goodies on the map once revealed</English>
-		<Portuguese>Isso ajuda a identificar facilmente itens no mapa, uma vez revelados</Portuguese>
+		<Portuguese>Isso ajuda a identificar facilmente os achados no mapa, uma vez revelados</Portuguese>
 		<German>Hilft bereits entdeckte Goodies auf der Karte einfach zu finden</German>
 		<Russian>Это помогает легко идентифицировать Goodies на карте после их обнаружения.</Russian>
 	</TEXT>
@@ -499,7 +499,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_USE_OLD_FOUNDING_FATHER_SYSTEM_HELP</Tag>
 		<English>With the new system, FFs become available again whenever the civ that recruited them is destroyed.</English>
-		<Portuguese>Com o novo sistema, os FFs ficam disponíveis novamente sempre que a civilização que os recrutou é destruída.</Portuguese>
+		<Portuguese>Com o novo sistema, os Patronos ficam disponíveis novamente sempre que a civilização que os recrutou é destruída.</Portuguese>
 		<French>Avec le nouveau système, les PF sont à nouveau disponibles si posséder Civ est détruit.</French>
 		<German>Beim neuen System werden Gründerväter wieder verfügbar, wenn die bisher besitzende Civ vernichtet wird.</German>
 		<Italian>Con il nuovo sistema, FFs saranno disponibili nuovamente se in possesso di Civ è distrutto.</Italian>
