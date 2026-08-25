@@ -206,7 +206,7 @@
 		<Tag>TXT_KEY_TERRAIN_PRAIRIE</Tag>
 		<English>Prairie</English>
 		<Portuguese>
-			<Text>Pradaria seca</Text>
+			<Text>Pradaria Seca</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -228,7 +228,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_ROCK_STEPPES</Tag>
 		<English>Rock Steppes</English>
-		<Portuguese>Estepes rochosas</Portuguese>
+		<Portuguese>Estepes Rochosas</Portuguese>
 		<French>Steppe rocheuse</French>
 		<German>Felssteppe</German>
 		<Italian>Steppa rocciosa</Italian>
@@ -306,7 +306,7 @@
 		<English>Taiga</English>
 		
 		<Portuguese>
-			<Text>taiga</Text>
+			<Text>Taiga</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>

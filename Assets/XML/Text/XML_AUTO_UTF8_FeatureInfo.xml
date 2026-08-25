@@ -29,7 +29,7 @@
 		<English>Coniferous Forest</English>
 		
 		<Portuguese>
-			<Text>Floresta de coníferas</Text>
+			<Text>Floresta de Coníferas</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -125,7 +125,7 @@
 		<English>Polar Ice</English>
 		
 		<Portuguese>
-			<Text>Gelo polar</Text>
+			<Text>Gelo Polar</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -243,7 +243,7 @@
 		<English>Tar Pit</English>
 		
 		<Portuguese>
-			<Text>Poço de alcatrão</Text>
+			<Text>Poço de Alcatrão</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -289,7 +289,7 @@
 		<English>Salt Water Pools</English>
 		
 		<Portuguese>
-			<Text>Piscinas de água salgada</Text>
+			<Text>Piscinas de Água Salgada</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -312,7 +312,7 @@
 		<English>Fertile Flood Plains</English>
 		
 		<Portuguese>
-			<Text>Planícies inundáveis férteis</Text>
+			<Text>Planícies Inundáveis Férteis</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -450,7 +450,7 @@
 		<English>Light Forest</English>
 		
 		<Portuguese>
-			<Text>Floresta clara</Text>
+			<Text>Floresta Clara</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -530,7 +530,7 @@
 		<English>Barrel Cactus Field</English>
 		
 		<Portuguese>
-			<Text>Campo de cactos de barril</Text>
+			<Text>Campo de Cactos de Barril</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -683,7 +683,7 @@
 		<English>Sandstorm</English>
 		
 		<Portuguese>
-			<Text>Tempestade de areia</Text>
+			<Text>Tempestade de Areia</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -774,7 +774,7 @@
 		<English>Rock Reef</English>
 		
 		<Portuguese>
-			<Text>Recife rochoso</Text>
+			<Text>Recife Rochoso</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -820,7 +820,7 @@
 		<English>Kelp</English>
 		
 		<Portuguese>
-			<Text>Alga marinha</Text>
+			<Text>Alga Marinha</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -843,7 +843,7 @@
 		<English>Seagrass</English>
 		
 		<Portuguese>
-			<Text>Ervas marinhas</Text>
+			<Text>Ervas Marinhas</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1050,7 +1050,7 @@
 		<English>Lush Grass</English>
 		
 		<Portuguese>
-			<Text>Grama exuberante</Text>
+			<Text>Grama Exuberante</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1073,7 +1073,7 @@
 		<English>Wild Flowers</English>
 		
 		<Portuguese>
-			<Text>Flores selvagens</Text>
+			<Text>Flores Selvagens</Text>
 			<Gender>Female</Gender>
 			<Plural>1</Plural>
 		</Portuguese>
@@ -1160,7 +1160,7 @@
 		<English>Unfavourable wind</English>
 		
 		<Portuguese>
-			<Text>Vento desfavorável</Text>
+			<Text>Vento Desfavorável</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -1198,7 +1198,7 @@
 		<English>Favourable wind</English>
 		
 		<Portuguese>
-			<Text>Vento favorável</Text>
+			<Text>Vento Favorável</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
