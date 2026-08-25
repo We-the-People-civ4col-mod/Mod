@@ -5569,7 +5569,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ALGONQUIAN</Type>
-			<Button>,Art/colonization_atlas_natives.dds,1,1</Button>
+			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,4</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/NativeScout.dds</FullLengthIcon>
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
@@ -5586,7 +5586,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ARMED_ALGONQUIAN</Type>
-			<Button>,Art/colonization_atlas_natives.dds,1,1</Button>
+			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,11</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/NativeScout.dds</FullLengthIcon>
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
@@ -5603,7 +5603,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_SCOUT_ALGONQUIAN</Type>
-			<Button>,Art/colonization_atlas_natives.dds,1,1</Button>
+			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,2,11</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/NativeScout.dds</FullLengthIcon>
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
@@ -5620,7 +5620,7 @@
 		</UnitArtInfo>
 		<UnitArtInfo>
 			<Type>ART_DEF_UNIT_ARMED_MOUNTED_ALGONQUIAN</Type>
-			<Button>,Art/colonization_atlas_natives.dds,1,1</Button>
+			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,3,11</Button>
 			<FullLengthIcon>,Art/Interface/Screens/City_Management/NativeScout.dds</FullLengthIcon>
 			<fScale>0.46</fScale>
 			<fInterfaceScale>0.95</fInterfaceScale>
