@@ -2229,9 +2229,8 @@ void CvGame::selectionListMove(CvPlot* pPlot, bool bAlt, bool bShift, bool bCtrl
 		//if (pSelectedUnit->cargoSpace() == 0 && eRivalTeam != NO_TEAM)
 		if (eRivalTeam != NO_TEAM && (pSelectedUnit->cargoSpace() == 0 || pSelectedUnit->getUnitInfo().isTroopShip()))
 		{
-			// raphaelmonticello 1: Tish wanted this popup gone. moving onto a foreign unit
-			// (or into land that would start a war) no longer asks "does this mean war?".
-			// declare war from the diplomacy screen, then move / attack as usual.
+			// moving onto a foreign unit (or into land that would start a war) no longer
+			// asks "does this mean war?". declare war from the diplomacy screen, then move / attack.
 			return;
 		}
 	}
