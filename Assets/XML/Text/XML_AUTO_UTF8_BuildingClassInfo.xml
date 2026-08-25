@@ -378,7 +378,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_CITY_HOSPITAL</Tag>
 		<English>City Hospital</English>
-		<Portuguese>Hospital da Cidade</Portuguese>
+		<Portuguese>Hospital</Portuguese>
 		<French>Hôpital</French>
 		<German>Bezirkskrankenhaus</German>
 		<Italian>City Hospital</Italian>
@@ -1139,7 +1139,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_MEDICAL_OFFICE</Tag>
 		<English>Medical Office</English>
-		<Portuguese>Consultório Médico</Portuguese>
+		<Portuguese>Clínica</Portuguese>
 		<French>Cabinet médical</French>
 		<German>Arztpraxis</German>
 		<Italian>Medical Office</Italian>
@@ -1746,7 +1746,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_TOWN_HOSPITAL</Tag>
 		<English>Town Hospital</English>
-		<Portuguese>Hospital da Vila</Portuguese>
+		<Portuguese>Posto de Saúde</Portuguese>
 		<French>Clinique</French>
 		<German>Stadtkrankenhaus</German>
 		<Italian>Town Hospital</Italian>
