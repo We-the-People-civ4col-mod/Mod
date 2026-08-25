@@ -430,7 +430,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FESTIVITIES_BECAUSE_HAPPINESS</Tag>
 		<English>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]The high Happiness has led to festivities that generated %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</English>
-		<Portuguese>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]A alta Felicidade levou a festividades que geraram %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_pontos[COLOR_REVERT].</Portuguese>
+		<Portuguese>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]A alta Felicidade levou a festividades que geraram %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</Portuguese>
 		<French>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Le niveau de bonheur élevé a été célébré, et nous en avons reçu %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</French>
 		<German>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Die hohe Zufriedenheit in der Stadt hat zu Feierlichkeiten geführt, die %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT] erzeugt haben.</German>
 		<Russian>[COLOR_POSITIVE_TEXT]%s1_city_name : [COLOR_REVERT]Высокое счастье привело к празднествам, которые принесли %d2 [COLOR_HIGHLIGHT_TEXT]%s3_father_points[COLOR_REVERT].</Russian>

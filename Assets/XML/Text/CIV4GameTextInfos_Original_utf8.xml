@@ -403,14 +403,14 @@
 	<TEXT>
 		<Tag>TXT_KEY_REQUIRED_TERRAIN_YIELDS_ICON_FIRST_BUFFER</Tag>
 		<English>%F1_yield</English>
-		<Portuguese>%F1_rendimento</Portuguese>
+		<Portuguese>%F1_yield</Portuguese>
 		<French>%F1_yield</French>
 		<German>%F1_yield</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REQUIRED_TERRAIN_YIELDS_ICON_BUFFER</Tag>
 		<English>,%F1_yield</English>
-		<Portuguese>,%F1_rendimento</Portuguese>
+		<Portuguese>,%F1_yield</Portuguese>
 		<French>, %F1_yield</French>
 		<German>,%F1_yield</German>
 	</TEXT>
@@ -2263,7 +2263,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_MAKE_PEACE_WITH</Tag>
 		<English>Make peace with</English>
-		<Portuguese>Faça as pazes com</Portuguese>
+		<Portuguese>Fazer as pazes com</Portuguese>
 		<French>Faire la paix avec : </French>
 		<German>Frieden schließen mit</German>
 		<Italian>Fai la pace con</Italian>
@@ -2274,7 +2274,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_DECLARE_WAR_ON</Tag>
 		<English>Declare war on</English>
-		<Portuguese>Declarar guerra</Portuguese>
+		<Portuguese>Declarar guerra a</Portuguese>
 		<French>Déclarer la guerre à : </French>
 		<German>Krieg erklären gegen</German>
 		<Italian>Dichiara guerra a</Italian>
@@ -2285,7 +2285,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_STOP_TRADING_WITH</Tag>
 		<English>Stop trading with</English>
-		<Portuguese>Pare de negociar com</Portuguese>
+		<Portuguese>Parar de negociar com</Portuguese>
 		<French>Fin des échanges commerciaux avec : </French>
 		<German>Einstellung des Handels mit</German>
 		<Italian>Interrompi il commercio con</Italian>
@@ -2318,7 +2318,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_PLAYER_OFFERS</Tag>
 		<English>%s1_PlName OFFERS</English>
-		<Portuguese>%s1_PlName OFERTAS</Portuguese>
+		<Portuguese>%s1_PlName OFERECE</Portuguese>
 		<French>%s1_PlName OFFRE</French>
 		<German>%s1_PlName BIETET</German>
 		<Italian>%s1_PlName OFFRE</Italian>

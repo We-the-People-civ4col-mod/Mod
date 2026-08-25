@@ -17,7 +17,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_COLLECTORS_POST</Tag>
 		<English>Build a [LINK=IMPROVEMENT_COLLECTORS_POST]collectors post[\LINK]</English>
-		<Portuguese>Crie uma [LINK=IMPROVEMENT_COLLECTORS_POST]postagem para coletores[\LINK]</Portuguese>
+		<Portuguese>Construir [LINK=IMPROVEMENT_COLLECTORS_POST]posto de coletor[\LINK]</Portuguese>
 		<French>Construire un [LINK=IMPROVEMENT_COLLECTORS_POST]poste de collection[\LINK]</French>
 		<German>[LINK=IMPROVEMENT_COLLECTORS_POST]Sammelstelle[\LINK] bauen</German>
 		<Russian>Построить [COLOR_HIGHLIGHT_TEXT]лагерь сборщиков[COLOR_REVERT]</Russian>
@@ -29,7 +29,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_COLLECTORS_POST2</Tag>
 		<English>Build a [LINK=IMPROVEMENT_COLLECTORS_POST]planter post[\LINK]</English>
-		<Portuguese>Construa um [LINK=IMPROVEMENT_COLLECTORS_POST]poste de plantio[\LINK]</Portuguese>
+		<Portuguese>Construir [LINK=IMPROVEMENT_COLLECTORS_POST]posto de plantador[\LINK]</Portuguese>
 		<French>Construire un [LINK=IMPROVEMENT_COLLECTORS_POST]poste de plantation[\LINK]</French>
 		<German>[LINK=IMPROVEMENT_COLLECTORS_POST]Pflanzerlager[\LINK] bauen</German>
 		<Russian>Построить [COLOR_HIGHLIGHT_TEXT]лагерь плантаторов[COLOR_REVERT]</Russian>
@@ -157,7 +157,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_LODGE</Tag>
 		<English>Build a [LINK=IMPROVEMENT_LODGE]lodge[\LINK]</English>
-		<Portuguese>Construa uma [LINK=IMPROVEMENT_LODGE]alojamento[\LINK]</Portuguese>
+		<Portuguese>Construir [LINK=IMPROVEMENT_LODGE]cabana[\LINK]</Portuguese>
 		<French>Construire un [LINK=IMPROVEMENT_LODGE]Abri[\LINK]</French>
 		<German>[LINK=IMPROVEMENT_LODGE]Holzfällerhütte[\LINK] bauen</German>
 		<Italian>Costruisci un [LINK=IMPROVEMENT_LODGE]capanno[\LINK]</Italian>
@@ -371,7 +371,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_TUNDRA</Tag>
 		<English>Plant tundra</English>
-		<Portuguese>Tundra vegetal</Portuguese>
+		<Portuguese>Plantar tundra</Portuguese>
 		<French>Planter une taïga</French>
 		<German>Taiga aufforsten</German>
 		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]тундру[COLOR_REVERT]</Russian>
@@ -557,7 +557,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_HUNTERS_STAGE</Tag>
 		<English>Build [LINK=IMPROVEMENT_HUNTERS_STAGE]hunters' blind[\LINK]</English>
-		<Portuguese>Construa a [LINK=IMPROVEMENT_HUNTERS_STAGE]cegueira dos caçadores[\LINK]</Portuguese>
+		<Portuguese>Construir [LINK=IMPROVEMENT_HUNTERS_STAGE]esconderijo[\LINK]</Portuguese>
 		<French>Construire des postes de chasses</French>
 		<German>[LINK=IMPROVEMENT_HUNTERS_STAGE]Jagdpier[\LINK] bauen</German>
 		<Russian>Построить [COLOR_HIGHLIGHT_TEXT]охотничье укрытие[COLOR_REVERT]</Russian>

@@ -400,7 +400,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CHOOSE_PROFESSION_ITEM_MAX</Tag>
 		<English>%s1 (%F4_icon == %d2_yield/%d3_max_yield)</English>
-		<Portuguese>%s1 (%F4_icon == %d2_yield/%d3_max_rendimento)</Portuguese>
+		<Portuguese>%s1 (%F4_icon == %d2_yield/%d3_max_yield)</Portuguese>
 <!--		 <English>%s1 (%d2_yield/%d3_max_yield %F4_icon)</English> -->
 		<French>%s1 (%F4_icon == %d2_yield/%d3_max_yield)</French>
 		<German>%s1 (%d2_yield/%d3_max_yield %F4_icon)</German>
@@ -2114,7 +2114,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_YIELD_FATHER</Tag>
 		<English>[ICON_BULLET]%D1%%%F2[TAB]from [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</English>
-		<Portuguese>[ICON_BULLET]%D1%%%F2[TAB]de [COLOR_HIGHLIGHT_TEXT]%s3_founding_pai[COLOR_REVERT]</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%%%F2[TAB]de [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</Portuguese>
 		<French>[ICON_BULLET]%D1%%%F2[TAB]en raison de l'élément : [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]%D1%%%F2[TAB]durch [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</German>
 		<Italian>[ICON_BULLET]%D1%%%F2[TAB]da [COLOR_HIGHLIGHT_TEXT]%s3_founding_father[COLOR_REVERT]</Italian>
@@ -2805,7 +2805,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_PROD_TRAIT</Tag>
 		<English>[ICON_BULLET]%D1%%%F4_Icon[TAB][TAB]for %s2_unit_or_building ([COLOR_HIGHLIGHT_TEXT]%s3_trait[COLOR_REVERT])</English>
-		<Portuguese>[ICON_BULLET]%D1%%%F4_Icon[TAB][TAB]para %s2_unit_ou_construção ([COLOR_HIGHLIGHT_TEXT]%s3_trait[COLOR_REVERT])</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%%%F4_Icon[TAB][TAB]para %s2_unit_or_building ([COLOR_HIGHLIGHT_TEXT]%s3_trait[COLOR_REVERT])</Portuguese>
 		<French>[ICON_BULLET]%D1%%%F4_Icon[TAB][TAB]pour : %s2_unit_or_building ([COLOR_HIGHLIGHT_TEXT]%s3_trait[COLOR_REVERT])</French>
 		<German>[ICON_BULLET]%D1%%%F4_Icon[TAB][TAB]für %s2_unit_or_building ([COLOR_HIGHLIGHT_TEXT]%s3_trait[COLOR_REVERT])</German>
 		<Italian>[ICON_BULLET]%D1%%%F4_Icon[TAB][TAB]per %s2_unit_or_building ([COLOR_HIGHLIGHT_TEXT]%s3_trait[COLOR_REVERT])</Italian>

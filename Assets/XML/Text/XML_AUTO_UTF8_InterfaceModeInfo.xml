@@ -76,7 +76,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GRIP</Tag>
 		<English>Grip Mode</English>
-		<Portuguese>Modo de aderência</Portuguese>
+		<Portuguese>Arrastar</Portuguese>
 		<French>Mode de contrôle</French>
 		<German>Grip-Modus</German>
 		<Italian>Modalità rotazione</Italian>
@@ -89,7 +89,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_PING</Tag>
 		<English>Ping Teammates</English>
-		<Portuguese>Faça ping em companheiros de equipe</Portuguese>
+		<Portuguese>Marcar aliados</Portuguese>
 		<French>Envoyer un signal aux équipiers.</French>
 		<German>Mitspieler anpingen</German>
 		<Italian>Lascia un segnale ai compagni di squadra</Italian>
@@ -179,7 +179,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_SIGN</Tag>
 		<English>Sign Mode</English>
-		<Portuguese>Modo de sinal</Portuguese>
+		<Portuguese>Modo placa</Portuguese>
 		<French>Mode Panneau</French>
 		<German>Zeichenmodus</German>
 		<Italian>Modalità segnale</Italian>

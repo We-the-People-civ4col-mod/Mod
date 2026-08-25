@@ -273,7 +273,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_ROUTE_TO</Tag>
 		<English>Route to</English>
-		<Portuguese>Construir estrada até</Portuguese>
+		<Portuguese>Estrada até</Portuguese>
 		<French>Route vers</French>
 		<German>Straße nach</German>
 		<Italian>Intinerario</Italian>
@@ -293,7 +293,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_ROUTE_TO_ROAD</Tag>
 		<English>Route to (country road)</English>
-		<Portuguese>Construir estrada de terra até</Portuguese>
+		<Portuguese>Estrada de terra até</Portuguese>
 		<Russian>Построить проселочную дорогу к выбранной точке</Russian>
 	</TEXT>
 	<TEXT>
@@ -305,7 +305,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_ROUTE_TO_COUNTRY_ROAD</Tag>
 		<English>Route to (country road)</English>
-		<Portuguese>Construir estrada de terra até</Portuguese>
+		<Portuguese>Estrada de terra até</Portuguese>
 		<German>Straße nach-Modus (Landstraße)</German>
 	</TEXT>
 	<TEXT>
