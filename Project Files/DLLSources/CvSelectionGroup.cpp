@@ -3225,7 +3225,7 @@ bool CvSelectionGroup::isAmphibPlot(const CvPlot* pPlot) const
 		bFriendly = pPlot->isFriendlyCity(*pUnit, true);
 	}
 
-	return ((getDomainType() == DOMAIN_SEA) && pPlot->isCoastalLand() && !bFriendly);
+	return ((getDomainType() == DOMAIN_SEA) && pPlot->isCoastalLand() && !bFriendly && !pPlot->isCanal());
 }
 
 

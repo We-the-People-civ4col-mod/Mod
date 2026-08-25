@@ -8479,6 +8479,7 @@ m_bActsAsCity(true),
 m_bFort(true), // R&R, ray, Monasteries and Forts
 m_bMonastery(true), // R&R, ray, Monasteries and Forts
 m_bCanal(true), // WTP, ray, Canal - START
+m_bDeepCanal(false),
 m_bNotAllowedNextToSameAsItself(false), // WTP, ray, Not allowed next to itself - START
 m_bHillsMakesValid(false),
 m_bRiverSideMakesValid(false),
@@ -8668,6 +8669,11 @@ bool CvImprovementInfo::isMonastery() const
 bool CvImprovementInfo::isCanal() const
 {
 	return m_bCanal;
+}
+
+bool CvImprovementInfo::isDeepCanal() const
+{
+	return m_bDeepCanal;
 }
 // WTP, ray, Canal - END
 
@@ -8886,6 +8892,7 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	stream->Read(&m_bFort); // R&R, ray, Monasteries and Forts
 	stream->Read(&m_bMonastery); // R&R, ray, Monasteries and Forts
 	stream->Read(&m_bCanal); // WTP, ray, Canal - START
+	stream->Read(&m_bDeepCanal);
 	stream->Read(&m_bNotAllowedNextToSameAsItself);// WTP, ray, Not allowed next to itself - START
 	stream->Read(&m_bHillsMakesValid);
 	stream->Read(&m_bRiverSideMakesValid);
@@ -8973,6 +8980,7 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	stream->Write(m_bFort); // R&R, ray, Monasteries and Forts
 	stream->Write(m_bMonastery); // R&R, ray, Monasteries and Forts
 	stream->Write(m_bCanal); // WTP, ray, Canal - START
+	stream->Write(m_bDeepCanal);
 	stream->Write(m_bNotAllowedNextToSameAsItself);// WTP, ray, Not allowed next to itself - START
 	stream->Write(m_bHillsMakesValid);
 	stream->Write(m_bRiverSideMakesValid);
@@ -9027,6 +9035,7 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bFort, "bFort"); // R&R, ray, Monasteries and Forts
 	pXML->GetChildXmlValByName(&m_bMonastery, "bMonastery"); // R&R, ray, Monasteries and Forts
 	pXML->GetChildXmlValByName(&m_bCanal, "bCanal"); // WTP, ray, Canal - START
+	pXML->GetChildXmlValByName(&m_bDeepCanal, "bDeepCanal");
 	pXML->GetChildXmlValByName(&m_bNotAllowedNextToSameAsItself, "bNotAllowedNextToSameAsItself"); // WTP, ray, Not allowed next to itself - START
 	pXML->GetChildXmlValByName(&m_bHillsMakesValid, "bHillsMakesValid");
 	pXML->GetChildXmlValByName(&m_bRiverSideMakesValid, "bRiverSideMakesValid");

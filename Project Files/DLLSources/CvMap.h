@@ -323,6 +323,11 @@ public:
 
 	void updateWaterPlotTerrainTypes(); // autodetect lakes
 
+	// Deep canal water area bridge connectivity
+	void rebuildWaterAreaBridges();
+	bool areWaterAreasConnected(int iAreaA, int iAreaB) const;
+	CvPlot* getBridgeLocation(int iFromArea, int iToArea) const;
+
 	int getNumPlots(TerrainTypes eTerrain) const;
 
 	// Serialization:
@@ -365,6 +370,20 @@ protected:
 
 	void calculateAreas();
 
+	// Deep canal bridge graph — tracks connectivity between water areas via deep canal chains.
+	// Not serialized: rebuilt from map state on load and when deep canals are built/destroyed.
+	// C++03 note: uses std::vector and std::map (no unordered_map in VC++ 2003).
+	// POD struct — no constructor needed, initialized member-by-member in C++03 style.
+	struct WaterAreaBridge
+	{
+		int iAreaA;
+		int iAreaB;
+		int iPlotIndex; // plot index of the bridge point (for spawn calculations)
+	};
+	std::vector<WaterAreaBridge> m_waterAreaBridges;
+	std::map<int, int> m_waterAreaEquivalence; // union-find: areaID -> parent representative
+
+	int findWaterAreaRoot(int iAreaID) const;
 };
 
 #endif

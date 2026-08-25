@@ -7455,7 +7455,12 @@ void CvGameTextMgr::setImprovementHelp(CvWStringBuffer &szBuffer, ImprovementTyp
 		}
 
 		// WTP, ray, Canal - START
-		if (info.isCanal())
+		if (info.isDeepCanal())
+		{
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_IS_DEEP_CANAL"));
+		}
+		else if (info.isCanal())
 		{
 			szBuffer.append(NEWLINE);
 			szBuffer.append(gDLL->getText("TXT_KEY_IMPROVEMENT_IS_CANAL"));

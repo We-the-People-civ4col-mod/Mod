@@ -7297,6 +7297,18 @@ int CvPlayer::getBuildCost(const CvPlot* pPlot, BuildTypes eBuild) const
 	{
 		iCost = std::max(0, GC.getBuildInfo(eBuild).getCost());
 
+		// Canal chain cost escalation: each additional tile in the chain doubles the gold cost (capped at 4x)
+		if (GC.getBuildInfo(eBuild).getImprovement() != NO_IMPROVEMENT
+			&& GC.getImprovementInfo((ImprovementTypes)GC.getBuildInfo(eBuild).getImprovement()).isCanal())
+		{
+			int iChainSize = pPlot->countAdjacentConnectedCanals();
+			int iMultiplier = std::min(iChainSize, 2);
+			for (int i = 0; i < iMultiplier; ++i)
+			{
+				iCost *= 2;
+			}
+		}
+
 		for (int iTrait = 0; iTrait < GC.getNumTraitInfos(); ++iTrait)
 		{
 			TraitTypes eTrait = (TraitTypes) iTrait;

@@ -6485,56 +6485,7 @@
 			<Civilopedia>TXT_KEY_IMPROVEMENT_MONASTERY_PEDIA</Civilopedia>
 			<ArtDefineTag>ART_DEF_IMPROVEMENT_MONASTERY</ArtDefineTag>
 			<PrereqNatureYields/>
-			<YieldIncreases>
-				<YieldIntegerPair>
-					<YieldType>YIELD_FOOD</YieldType>
-					<iValue>2</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_BARLEY</YieldType>
-					<iValue>2</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_RICE</YieldType>
-					<iValue>2</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_CASSAVA</YieldType>
-					<iValue>2</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_COTTON</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_INDIGO</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_TOBACCO</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_HEMP</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_FLAX</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_RAPE</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_SUGAR</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-				<YieldIntegerPair>
-					<YieldType>YIELD_COFFEE_BERRIES</YieldType>
-					<iValue>1</iValue>
-				</YieldIntegerPair>
-			</YieldIncreases>
+			<YieldIncreases/>
 			<RiverSideYieldChanges/>
 			<HillsYieldChanges/>
 			<bActsAsCity>0</bActsAsCity>

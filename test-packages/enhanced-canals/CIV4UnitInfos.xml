@@ -3699,10 +3699,6 @@
 					<VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_STUDENT</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
 			</ProfessionsNotAllowed>
 		</UnitInfo>
 		<UnitInfo>
@@ -4535,10 +4531,6 @@
 				</ProfessionNotAllowed>
 				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_STUDENT</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
 			</ProfessionsNotAllowed>
@@ -6766,10 +6758,6 @@
 					<VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_STUDENT</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
 			</ProfessionsNotAllowed>
 		</UnitInfo>
 		<UnitInfo>
@@ -7597,10 +7585,6 @@
 				</ProfessionNotAllowed>
 				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_STUDENT</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
 			</ProfessionsNotAllowed>
@@ -27928,8 +27912,6 @@
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iEuropeCost>-1</iEuropeCost>
 			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iPortRoyalCost>1500</iPortRoyalCost>
-			<iPortRoyalCostIncrease>100</iPortRoyalCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>-1</iMinAreaSize>
@@ -37347,7 +37329,7 @@
 			<Description>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT</Description>
 			<Civilopedia>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT_PEDIA</Civilopedia>
 			<Strategy>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT_STRATEGY</Strategy>
-			<iTeachLevel>3</iTeachLevel>
+			<iTeachLevel>100</iTeachLevel>
 			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
 			<bGraphicalOnly>0</bGraphicalOnly>
 			<bNoBadGoodies>0</bNoBadGoodies>
@@ -54000,7 +53982,6 @@
 			<ProductionTraits/>
 			<iAIWeight>0</iAIWeight>
 			<YieldCosts/>
-			<iGameYearAvailable>1492</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -54030,9 +54011,9 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
-			<iCityDefense>15</iCityDefense>
+			<iCityDefense>30</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
+			<iHillsDefense>10</iHillsDefense>
 			<iDomesticBonus>0</iDomesticBonus>
 			<TerrainAttacks/>
 			<TerrainDefenses/>
@@ -54378,7 +54359,6 @@
 			<ProductionTraits/>
 			<iAIWeight>0</iAIWeight>
 			<YieldCosts/>
-			<iGameYearAvailable>1492</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -54408,9 +54388,9 @@
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
-			<iCityDefense>20</iCityDefense>
+			<iCityDefense>30</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
+			<iHillsDefense>15</iHillsDefense>
 			<iDomesticBonus>0</iDomesticBonus>
 			<TerrainAttacks/>
 			<TerrainDefenses/>
@@ -57365,7 +57345,7 @@
 			<FeatureImpassables/>
 			<EvasionBuildings/>
 			<iCombat>3</iCombat>
-			<iXPValueAttack>5</iXPValueAttack>
+			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>5</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
@@ -58569,7 +58549,7 @@
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>2</iMoves>
+			<iMoves>1</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -69158,10 +69138,6 @@
 					<iChange>-1</iChange>
 				</YieldChange>
 				<YieldChange>
-					<YieldType>YIELD_COAL</YieldType>
-					<iChange>-1</iChange>
-				</YieldChange>
-				<YieldChange>
 					<YieldType>YIELD_STONE</YieldType>
 					<iChange>-1</iChange>
 				</YieldChange>
@@ -78548,7 +78524,7 @@
 				</UnitAI>
 			</NotUnitAIs>
 			<Builds/>
-			<PrereqBuilding>BUILDINGCLASS_DOCK</PrereqBuilding>
+			<PrereqBuilding>BUILDINGCLASS_LANDING_STAGE</PrereqBuilding>
 			<PrereqOrBuildings/>
 			<ProductionTraits/>
 			<iAIWeight>30</iAIWeight>
@@ -78566,7 +78542,6 @@
 					<iCost>30</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1492</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -78754,7 +78729,6 @@
 					<iCost>40</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1600</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -78931,23 +78905,23 @@
 			<YieldCosts>
 				<YieldCost>
 					<YieldType>YIELD_SAILCLOTH</YieldType>
-					<iCost>20</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_ROPE</YieldType>
-					<iCost>20</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HARDWOOD</YieldType>
-					<iCost>20</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_TOOLS</YieldType>
 					<iCost>30</iCost>
 				</YieldCost>
 				<YieldCost>
+					<YieldType>YIELD_ROPE</YieldType>
+					<iCost>30</iCost>
+				</YieldCost>
+				<YieldCost>
+					<YieldType>YIELD_HARDWOOD</YieldType>
+					<iCost>30</iCost>
+				</YieldCost>
+				<YieldCost>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iCost>40</iCost>
+				</YieldCost>
+				<YieldCost>
 					<YieldType>YIELD_CANNONS</YieldType>
-					<iCost>10</iCost>
+					<iCost>20</iCost>
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_BLACK_POWDER</YieldType>
@@ -78955,20 +78929,20 @@
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>60</iCost>
+					<iCost>80</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1492</iGameYearAvailable>
-			<iGameYearObsolete>1600</iGameYearObsolete>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iEuropeCost>1600</iEuropeCost>
 			<iEuropeCostIncrease>250</iEuropeCostIncrease>
+			<iAfricaCost>1800</iAfricaCost>
+			<iAfricaCostIncrease>300</iAfricaCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>12</iMoves>
+			<iMoves>5</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -78976,7 +78950,16 @@
 			<iWorkRateModifier>0</iWorkRateModifier>
 			<iMissionaryRateModifier>0</iMissionaryRateModifier>
 			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables/>
+			<TerrainImpassables>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+				<TerrainImpassable>
+					<TerrainType>TERRAIN_LAKE</TerrainType>
+					<bTerrainImpassable>1</bTerrainImpassable>
+				</TerrainImpassable>
+			</TerrainImpassables>
 			<FeatureImpassables>
 				<FeatureImpassable>
 					<FeatureType>FEATURE_STONE_REEF</FeatureType>
@@ -79126,7 +79109,7 @@
 			<PrereqBuilding>BUILDINGCLASS_DRYDOCK</PrereqBuilding>
 			<PrereqOrBuildings/>
 			<ProductionTraits/>
-			<iAIWeight>20</iAIWeight>
+			<iAIWeight>0</iAIWeight>
 			<YieldCosts>
 				<YieldCost>
 					<YieldType>YIELD_SAILCLOTH</YieldType>
@@ -79142,23 +79125,21 @@
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_TOOLS</YieldType>
-					<iCost>40</iCost>
+					<iCost>50</iCost>
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_CANNONS</YieldType>
-					<iCost>10</iCost>
+					<iCost>30</iCost>
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_BLACK_POWDER</YieldType>
-					<iCost>20</iCost>
+					<iCost>30</iCost>
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_HAMMERS</YieldType>
 					<iCost>80</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1550</iGameYearAvailable>
-			<iGameYearObsolete>1700</iGameYearObsolete>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -79167,211 +79148,7 @@
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>9</iMoves>
-			<bCapturesCargo>0</bCapturesCargo>
-			<bCapturesShips>0</bCapturesShips>
-			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LAKE</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
-			<FeatureImpassables>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_STONE_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_PEARL_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-			</FeatureImpassables>
-			<EvasionBuildings>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-			</EvasionBuildings>
-			<iCombat>20</iCombat>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>0</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<iDomesticBonus>0</iDomesticBonus>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods/>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<YieldModifiers/>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<iBombardRate>0</iBombardRate>
-			<SpecialCargo>NONE</SpecialCargo>
-			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>4</iCargo>
-			<iRequiredTransportSize>7</iRequiredTransportSize>
-			<iBerthSize>1</iBerthSize>
-			<iHarbourSpaceNeeded>3</iHarbourSpaceNeeded>
-			<iAsset>1500</iAsset>
-			<iPower>1000</iPower>
-			<iNativeLearnTime>-1</iNativeLearnTime>
-			<iStudentWeight>0</iStudentWeight>
-			<iTeacherWeight>0</iTeacherWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.25</fMaxSpeed>
-					<fPadTime>5</fPadTime>
-					<iMeleeWaveSize>1</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_FLUYT</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions/>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-		</UnitInfo>
-		<UnitInfo>
-			<Type>UNIT_NAO</Type>
-			<Class>UNITCLASS_NAO</Class>
-			<UniqueNames/>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>UNITCOMBAT_NAVAL_TRADE</Combat>
-			<Domain>DOMAIN_SEA</Domain>
-			<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
-			<DefaultProfession>NONE</DefaultProfession>
-			<eEthnicity>NONE</eEthnicity>
-			<eCitizenStatus>NONE</eCitizenStatus>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>TXT_KEY_UNIT_NAO</Description>
-			<Civilopedia>TXT_KEY_UNIT_NAO_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_NAO_STRATEGY</Strategy>
-			<iTeachLevel>100</iTeachLevel>
-			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
-			<bGraphicalOnly>0</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>0</bOnlyDefensive>
-			<bNoCapture>0</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>1</bRivalTerritory>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<bFound>0</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bMoveIntoPeak>0</bMoveIntoPeak>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>1</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>0</bHiddenNationality>
-			<bAlwaysHostile>0</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
-			<bLbDCanGetFree>0</bLbDCanGetFree>
-			<bLbDCanEscape>0</bLbDCanEscape>
-			<bLbDCanRevolt>0</bLbDCanRevolt>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_TRANSPORT_COAST</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</NotUnitAIs>
-			<Builds/>
-			<PrereqBuilding>BUILDINGCLASS_SHIPYARD</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>30</iAIWeight>
-			<YieldCosts>
-				<YieldCost>
-					<YieldType>YIELD_SAILCLOTH</YieldType>
-					<iCost>40</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_ROPE</YieldType>
-					<iCost>30</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HARDWOOD</YieldType>
-					<iCost>30</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_TOOLS</YieldType>
-					<iCost>40</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_CANNONS</YieldType>
-					<iCost>20</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_BLACK_POWDER</YieldType>
-					<iCost>30</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>90</iCost>
-				</YieldCost>
-			</YieldCosts>
-			<iGameYearAvailable>1492</iGameYearAvailable>
-			<iGameYearObsolete>1550</iGameYearObsolete>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>2000</iEuropeCost>
-			<iEuropeCostIncrease>250</iEuropeCostIncrease>
-			<iImmigrationWeight>0</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>9</iMoves>
+			<iMoves>4</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -79420,7 +79197,7 @@
 			<iCombat>22</iCombat>
 			<iXPValueAttack>4</iXPValueAttack>
 			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -79446,8 +79223,8 @@
 			<iRequiredTransportSize>7</iRequiredTransportSize>
 			<iBerthSize>1</iBerthSize>
 			<iHarbourSpaceNeeded>3</iHarbourSpaceNeeded>
-			<iAsset>1200</iAsset>
-			<iPower>1100</iPower>
+			<iAsset>1500</iAsset>
+			<iPower>1000</iPower>
 			<iNativeLearnTime>-1</iNativeLearnTime>
 			<iStudentWeight>0</iStudentWeight>
 			<iTeacherWeight>0</iTeacherWeight>
@@ -79460,7 +79237,7 @@
 					<iRangedWaveSize>1</iRangedWaveSize>
 					<UnitMeshGroup>
 						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_NAO</ArtDefineTag>
+						<ArtDefineTag>ART_DEF_UNIT_FLUYT</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
 			</ProfessionMeshGroups>
@@ -79538,23 +79315,23 @@
 			<PrereqBuilding>BUILDINGCLASS_SHIPYARD</PrereqBuilding>
 			<PrereqOrBuildings/>
 			<ProductionTraits/>
-			<iAIWeight>50</iAIWeight>
+			<iAIWeight>0</iAIWeight>
 			<YieldCosts>
 				<YieldCost>
 					<YieldType>YIELD_SAILCLOTH</YieldType>
-					<iCost>50</iCost>
+					<iCost>40</iCost>
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_ROPE</YieldType>
-					<iCost>60</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HARDWOOD</YieldType>
 					<iCost>50</iCost>
 				</YieldCost>
 				<YieldCost>
+					<YieldType>YIELD_HARDWOOD</YieldType>
+					<iCost>40</iCost>
+				</YieldCost>
+				<YieldCost>
 					<YieldType>YIELD_TOOLS</YieldType>
-					<iCost>70</iCost>
+					<iCost>60</iCost>
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_CANNONS</YieldType>
@@ -79566,20 +79343,20 @@
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>140</iCost>
+					<iCost>120</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1492</iGameYearAvailable>
-			<iGameYearObsolete>1650</iGameYearObsolete>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>2800</iEuropeCost>
-			<iEuropeCostIncrease>300</iEuropeCostIncrease>
+			<iEuropeCost>2400</iEuropeCost>
+			<iEuropeCostIncrease>450</iEuropeCostIncrease>
+			<iAfricaCost>2600</iAfricaCost>
+			<iAfricaCostIncrease>500</iAfricaCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>10</iMoves>
+			<iMoves>4</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -79626,9 +79403,9 @@
 				</EvasionBuilding>
 			</EvasionBuildings>
 			<iCombat>28</iCombat>
-			<iXPValueAttack>5</iXPValueAttack>
-			<iXPValueDefense>3</iXPValueDefense>
-			<iWithdrawalProb>20</iWithdrawalProb>
+			<iXPValueAttack>4</iXPValueAttack>
+			<iXPValueDefense>2</iXPValueDefense>
+			<iWithdrawalProb>10</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -79650,10 +79427,10 @@
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>5</iCargo>
+			<iCargo>4</iCargo>
 			<iRequiredTransportSize>7</iRequiredTransportSize>
 			<iBerthSize>1</iBerthSize>
-			<iHarbourSpaceNeeded>4</iHarbourSpaceNeeded>
+			<iHarbourSpaceNeeded>3</iHarbourSpaceNeeded>
 			<iAsset>3000</iAsset>
 			<iPower>2000</iPower>
 			<iNativeLearnTime>-1</iNativeLearnTime>
@@ -79774,20 +79551,18 @@
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>80</iCost>
+					<iCost>120</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1550</iGameYearAvailable>
-			<iGameYearObsolete>1650</iGameYearObsolete>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>2100</iEuropeCost>
-			<iEuropeCostIncrease>350</iEuropeCostIncrease>
+			<iEuropeCost>2200</iEuropeCost>
+			<iEuropeCostIncrease>450</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>11</iMoves>
+			<iMoves>5</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -79985,7 +79760,6 @@
 					<iCost>120</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1650</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -79994,7 +79768,7 @@
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>10</iMoves>
+			<iMoves>5</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -80192,7 +79966,6 @@
 					<iCost>140</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1650</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -80201,7 +79974,7 @@
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>10</iMoves>
+			<iMoves>5</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -80271,10 +80044,6 @@
 			<UnitClassAttackMods/>
 			<UnitClassDefenseMods>
 				<UnitClassDefenseMod>
-					<UnitClassType>UNITCLASS_PIRATE_SHIP</UnitClassType>
-					<iUnitClassMod>10</iUnitClassMod>
-				</UnitClassDefenseMod>
-				<UnitClassDefenseMod>
 					<UnitClassType>UNITCLASS_PRIVATEER</UnitClassType>
 					<iUnitClassMod>10</iUnitClassMod>
 				</UnitClassDefenseMod>
@@ -80316,230 +80085,6 @@
 					<UnitMeshGroup>
 						<iRequired>1</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_BRIGANTINE</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions/>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-		</UnitInfo>
-		<UnitInfo>
-			<Type>UNIT_SLAVE_CARAVEL</Type>
-			<Class>UNITCLASS_SLAVE_CARAVEL</Class>
-			<UniqueNames/>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>UNITCOMBAT_NAVAL_TRADE</Combat>
-			<Domain>DOMAIN_SEA</Domain>
-			<DefaultUnitAI>UNITAI_TRANSPORT_SEA</DefaultUnitAI>
-			<DefaultProfession>NONE</DefaultProfession>
-			<eEthnicity>NONE</eEthnicity>
-			<eCitizenStatus>NONE</eCitizenStatus>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>TXT_KEY_UNIT_SLAVE_CARAVEL</Description>
-			<Civilopedia>TXT_KEY_UNIT_SLAVE_BARQUE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_SLAVE_CARAVEL_STRATEGY</Strategy>
-			<iTeachLevel>100</iTeachLevel>
-			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
-			<bGraphicalOnly>0</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>1</bOnlyDefensive>
-			<bNoCapture>0</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>1</bRivalTerritory>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<bFound>0</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bMoveIntoPeak>0</bMoveIntoPeak>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>1</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>0</bHiddenNationality>
-			<bSlaveShip>1</bSlaveShip>
-			<bAlwaysHostile>0</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
-			<bLbDCanGetFree>0</bLbDCanGetFree>
-			<bLbDCanEscape>0</bLbDCanEscape>
-			<bLbDCanRevolt>0</bLbDCanRevolt>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_TRANSPORT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_ASSAULT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_TRANSPORT_COAST</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</NotUnitAIs>
-			<Builds/>
-			<PrereqBuilding>BUILDINGCLASS_DRYDOCK</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>0</iAIWeight>
-			<YieldCosts>
-				<YieldCost>
-					<YieldType>YIELD_SAILCLOTH</YieldType>
-					<iCost>20</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_ROPE</YieldType>
-					<iCost>20</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HARDWOOD</YieldType>
-					<iCost>20</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_TOOLS</YieldType>
-					<iCost>30</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_CANNONS</YieldType>
-					<iCost>10</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_BLACK_POWDER</YieldType>
-					<iCost>20</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>60</iCost>
-				</YieldCost>
-			</YieldCosts>
-			<iGameYearAvailable>1492</iGameYearAvailable>
-			<iGameYearObsolete>1650</iGameYearObsolete>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>-1</iEuropeCost>
-			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iAfricaCost>1800</iAfricaCost>
-			<iAfricaCostIncrease>300</iAfricaCostIncrease>
-			<iImmigrationWeight>0</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>11</iMoves>
-			<bCapturesCargo>0</bCapturesCargo>
-			<bCapturesShips>0</bCapturesShips>
-			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LAKE</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
-			<FeatureImpassables>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_STONE_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_PEARL_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-			</FeatureImpassables>
-			<EvasionBuildings>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-			</EvasionBuildings>
-			<iCombat>20</iCombat>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<iDomesticBonus>0</iDomesticBonus>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods>
-				<UnitClassDefenseMod>
-					<UnitClassType>UNITCLASS_PIRATE_SHIP</UnitClassType>
-					<iUnitClassMod>-20</iUnitClassMod>
-				</UnitClassDefenseMod>
-				<UnitClassDefenseMod>
-					<UnitClassType>UNITCLASS_PRIVATEER</UnitClassType>
-					<iUnitClassMod>-20</iUnitClassMod>
-				</UnitClassDefenseMod>
-				<UnitClassDefenseMod>
-					<UnitClassType>UNITCLASS_PIRATE_FRIGATE</UnitClassType>
-					<iUnitClassMod>-20</iUnitClassMod>
-				</UnitClassDefenseMod>
-				<UnitClassDefenseMod>
-					<UnitClassType>UNITCLASS_PIRATE_CUTTER</UnitClassType>
-					<iUnitClassMod>-20</iUnitClassMod>
-				</UnitClassDefenseMod>
-			</UnitClassDefenseMods>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<YieldModifiers/>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<iBombardRate>0</iBombardRate>
-			<SpecialCargo>NONE</SpecialCargo>
-			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>2</iCargo>
-			<iRequiredTransportSize>7</iRequiredTransportSize>
-			<iBerthSize>1</iBerthSize>
-			<iHarbourSpaceNeeded>2</iHarbourSpaceNeeded>
-			<iAsset>1000</iAsset>
-			<iPower>1000</iPower>
-			<iNativeLearnTime>-1</iNativeLearnTime>
-			<iStudentWeight>0</iStudentWeight>
-			<iTeacherWeight>0</iTeacherWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.25</fMaxSpeed>
-					<fPadTime>5</fPadTime>
-					<iMeleeWaveSize>1</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_SLAVE_CARAVEL</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
 			</ProfessionMeshGroups>
@@ -80649,18 +80194,17 @@
 					<iCost>160</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1650</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iEuropeCost>-1</iEuropeCost>
 			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iAfricaCost>2800</iAfricaCost>
+			<iAfricaCost>3000</iAfricaCost>
 			<iAfricaCostIncrease>600</iAfricaCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>13</iMoves>
+			<iMoves>5</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -80729,10 +80273,6 @@
 			<FeatureDefenses/>
 			<UnitClassAttackMods/>
 			<UnitClassDefenseMods>
-				<UnitClassDefenseMod>
-					<UnitClassType>UNITCLASS_PIRATE_SHIP</UnitClassType>
-					<iUnitClassMod>-20</iUnitClassMod>
-				</UnitClassDefenseMod>
 				<UnitClassDefenseMod>
 					<UnitClassType>UNITCLASS_PRIVATEER</UnitClassType>
 					<iUnitClassMod>-20</iUnitClassMod>
@@ -80825,8 +80365,7 @@
 			<bMechanized>1</bMechanized>
 			<bLineOfSight>0</bLineOfSight>
 			<bHiddenNationality>0</bHiddenNationality>
-			<bTreasureShip>0</bTreasureShip>
-			<iREFShipClass>1</iREFShipClass>
+			<bTreasureShip>1</bTreasureShip>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -80854,15 +80393,15 @@
 			<PrereqBuilding>BUILDINGCLASS_SHIPYARD</PrereqBuilding>
 			<PrereqOrBuildings/>
 			<ProductionTraits/>
-			<iAIWeight>80</iAIWeight>
+			<iAIWeight>0</iAIWeight>
 			<YieldCosts>
 				<YieldCost>
 					<YieldType>YIELD_SAILCLOTH</YieldType>
-					<iCost>70</iCost>
+					<iCost>60</iCost>
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_ROPE</YieldType>
-					<iCost>70</iCost>
+					<iCost>60</iCost>
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_HARDWOOD</YieldType>
@@ -80882,22 +80421,20 @@
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>150</iCost>
+					<iCost>200</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1492</iGameYearAvailable>
-			<iGameYearObsolete>1650</iGameYearObsolete>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>4000</iEuropeCost>
+			<iEuropeCost>3800</iEuropeCost>
 			<iEuropeCostIncrease>750</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>11</iMoves>
-			<bCapturesCargo>1</bCapturesCargo>
-			<bCapturesShips>1</bCapturesShips>
+			<iMoves>5</iMoves>
+			<bCapturesCargo>0</bCapturesCargo>
+			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
 			<iWorkRate>0</iWorkRate>
 			<iWorkRateModifier>0</iWorkRateModifier>
@@ -80950,8 +80487,8 @@
 				</EvasionBuilding>
 			</EvasionBuildings>
 			<iCombat>36</iCombat>
-			<iXPValueAttack>5</iXPValueAttack>
-			<iXPValueDefense>3</iXPValueDefense>
+			<iXPValueAttack>4</iXPValueAttack>
+			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>10</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
@@ -81007,8 +80544,8 @@
 			<iLeaderExperience>0</iLeaderExperience>
 		</UnitInfo>
 		<UnitInfo>
-			<Type>UNIT_WAR_GALLEON</Type>
-			<Class>UNITCLASS_WAR_GALLEON</Class>
+			<Type>UNIT_ROYAL_TROOP_GALLEON</Type>
+			<Class>UNITCLASS_ROYAL_TROOP_GALLEON</Class>
 			<UniqueNames/>
 			<Special>NONE</Special>
 			<Capture>NONE</Capture>
@@ -81020,9 +80557,9 @@
 			<eCitizenStatus>NONE</eCitizenStatus>
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
-			<Description>TXT_KEY_UNIT_WAR_GALLEON</Description>
-			<Civilopedia>TXT_KEY_UNIT_WAR_GALLEON_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_WAR_GALLEON_STRATEGY</Strategy>
+			<Description>TXT_KEY_UNIT_ROYAL_TROOP_GALLEON</Description>
+			<Civilopedia>TXT_KEY_UNIT_ROYAL_TROOP_GALLEON_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_ROYAL_TROOP_GALLEON_STRATEGY</Strategy>
 			<iTeachLevel>100</iTeachLevel>
 			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
 			<bGraphicalOnly>0</bGraphicalOnly>
@@ -81044,7 +80581,6 @@
 			<bLineOfSight>0</bLineOfSight>
 			<bHiddenNationality>0</bHiddenNationality>
 			<bTroopShip>1</bTroopShip>
-			<iREFShipClass>3</iREFShipClass>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -81057,67 +80593,25 @@
 					<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
 					<bUnitAI>1</bUnitAI>
 				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
 			</UnitAIs>
-			<NotUnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_TRANSPORT_COAST</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</NotUnitAIs>
+			<NotUnitAIs/>
 			<Builds/>
-			<PrereqBuilding>BUILDINGCLASS_SHIPYARD</PrereqBuilding>
+			<PrereqBuilding>NONE</PrereqBuilding>
 			<PrereqOrBuildings/>
 			<ProductionTraits/>
-			<iAIWeight>100</iAIWeight>
-			<YieldCosts>
-				<YieldCost>
-					<YieldType>YIELD_SAILCLOTH</YieldType>
-					<iCost>70</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_ROPE</YieldType>
-					<iCost>70</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HARDWOOD</YieldType>
-					<iCost>80</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_TOOLS</YieldType>
-					<iCost>80</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_CANNONS</YieldType>
-					<iCost>80</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_BLACK_POWDER</YieldType>
-					<iCost>80</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>250</iCost>
-				</YieldCost>
-			</YieldCosts>
-			<iGameYearAvailable>1492</iGameYearAvailable>
-			<iGameYearObsolete>1650</iGameYearObsolete>
+			<iAIWeight>0</iAIWeight>
+			<YieldCosts/>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>4500</iEuropeCost>
-			<iEuropeCostIncrease>500</iEuropeCostIncrease>
+			<iEuropeCost>-1</iEuropeCost>
+			<iEuropeCostIncrease>0</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>13</iMoves>
-			<iNavalControlCost>2</iNavalControlCost>
-			<iNavalControlRadius>1</iNavalControlRadius>
-			<bCapturesCargo>1</bCapturesCargo>
-			<bCapturesShips>1</bCapturesShips>
+			<iMoves>5</iMoves>
+			<bCapturesCargo>0</bCapturesCargo>
+			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
 			<iWorkRate>0</iWorkRate>
 			<iWorkRateModifier>0</iWorkRateModifier>
@@ -81151,28 +80645,11 @@
 					<bFeatureImpassable>1</bFeatureImpassable>
 				</FeatureImpassable>
 			</FeatureImpassables>
-			<EvasionBuildings>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-			</EvasionBuildings>
-			<iCombat>42</iCombat>
-			<iXPValueAttack>10</iXPValueAttack>
+			<EvasionBuildings/>
+			<iCombat>45</iCombat>
+			<iXPValueAttack>6</iXPValueAttack>
 			<iXPValueDefense>3</iXPValueDefense>
-			<iWithdrawalProb>20</iWithdrawalProb>
+			<iWithdrawalProb>10</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -81191,15 +80668,15 @@
 			<BonusYieldChanges/>
 			<bLandYieldChanges>1</bLandYieldChanges>
 			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<iBombardRate>0</iBombardRate>
+			<iBombardRate>5</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>4</iCargo>
+			<iCargo>6</iCargo>
 			<iRequiredTransportSize>7</iRequiredTransportSize>
 			<iBerthSize>1</iBerthSize>
 			<iHarbourSpaceNeeded>6</iHarbourSpaceNeeded>
-			<iAsset>6000</iAsset>
-			<iPower>6000</iPower>
+			<iAsset>6500</iAsset>
+			<iPower>6500</iPower>
 			<iNativeLearnTime>-1</iNativeLearnTime>
 			<iStudentWeight>0</iStudentWeight>
 			<iTeacherWeight>0</iTeacherWeight>
@@ -81212,7 +80689,7 @@
 					<iRangedWaveSize>1</iRangedWaveSize>
 					<UnitMeshGroup>
 						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_WAR_GALLEON</ArtDefineTag>
+						<ArtDefineTag>ART_DEF_UNIT_ROYAL_TROOP_GALLEON</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
 			</ProfessionMeshGroups>
@@ -81290,7 +80767,7 @@
 			<PrereqBuilding>BUILDINGCLASS_SHIPYARD</PrereqBuilding>
 			<PrereqOrBuildings/>
 			<ProductionTraits/>
-			<iAIWeight>80</iAIWeight>
+			<iAIWeight>0</iAIWeight>
 			<YieldCosts>
 				<YieldCost>
 					<YieldType>YIELD_SAILCLOTH</YieldType>
@@ -81321,16 +80798,15 @@
 					<iCost>200</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1650</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>5500</iEuropeCost>
-			<iEuropeCostIncrease>500</iEuropeCostIncrease>
+			<iEuropeCost>4400</iEuropeCost>
+			<iEuropeCostIncrease>800</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>12</iMoves>
+			<iMoves>6</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -81409,12 +80885,12 @@
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>6</iCargo>
+			<iCargo>5</iCargo>
 			<iRequiredTransportSize>7</iRequiredTransportSize>
 			<iBerthSize>1</iBerthSize>
 			<iHarbourSpaceNeeded>5</iHarbourSpaceNeeded>
-			<iAsset>5000</iAsset>
-			<iPower>5000</iPower>
+			<iAsset>6000</iAsset>
+			<iPower>6000</iPower>
 			<iNativeLearnTime>-1</iNativeLearnTime>
 			<iStudentWeight>0</iStudentWeight>
 			<iTeacherWeight>0</iTeacherWeight>
@@ -81428,396 +80904,6 @@
 					<UnitMeshGroup>
 						<iRequired>1</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_WEST_INDIAMAN</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions/>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-		</UnitInfo>
-		<UnitInfo>
-			<Type>UNIT_ROYAL_TROOP_SHIP</Type>
-			<Class>UNITCLASS_ROYAL_TROOP_SHIP</Class>
-			<UniqueNames/>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>UNITCOMBAT_NAVAL_MILITARY</Combat>
-			<Domain>DOMAIN_SEA</Domain>
-			<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
-			<DefaultProfession>NONE</DefaultProfession>
-			<eEthnicity>NONE</eEthnicity>
-			<eCitizenStatus>NONE</eCitizenStatus>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>TXT_KEY_UNIT_ROYAL_TROOP_SHIP</Description>
-			<Civilopedia>TXT_KEY_UNIT_ROYAL_TROOP_SHIP_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_ROYAL_TROOP_SHIP_STRATEGY</Strategy>
-			<iTeachLevel>100</iTeachLevel>
-			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
-			<bGraphicalOnly>0</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>0</bOnlyDefensive>
-			<bNoCapture>0</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>1</bRivalTerritory>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<bFound>0</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bMoveIntoPeak>0</bMoveIntoPeak>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>1</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>0</bHiddenNationality>
-			<bTroopShip>1</bTroopShip>
-			<iREFShipClass>1</iREFShipClass>
-			<bAlwaysHostile>0</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
-			<bLbDCanGetFree>0</bLbDCanGetFree>
-			<bLbDCanEscape>0</bLbDCanEscape>
-			<bLbDCanRevolt>0</bLbDCanRevolt>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs/>
-			<Builds/>
-			<PrereqBuilding>NONE</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>0</iAIWeight>
-			<YieldCosts/>
-			<iGameYearAvailable>1650</iGameYearAvailable>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>-1</iEuropeCost>
-			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iImmigrationWeight>0</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>11</iMoves>
-			<bCapturesCargo>0</bCapturesCargo>
-			<bCapturesShips>0</bCapturesShips>
-			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LAKE</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
-			<FeatureImpassables>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_STONE_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_PEARL_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-			</FeatureImpassables>
-			<EvasionBuildings>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-			</EvasionBuildings>
-			<iCombat>40</iCombat>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<iDomesticBonus>0</iDomesticBonus>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods/>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<YieldModifiers/>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<iBombardRate>0</iBombardRate>
-			<SpecialCargo>NONE</SpecialCargo>
-			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>6</iCargo>
-			<iRequiredTransportSize>7</iRequiredTransportSize>
-			<iBerthSize>1</iBerthSize>
-			<iHarbourSpaceNeeded>5</iHarbourSpaceNeeded>
-			<iAsset>4000</iAsset>
-			<iPower>4000</iPower>
-			<iNativeLearnTime>-1</iNativeLearnTime>
-			<iStudentWeight>0</iStudentWeight>
-			<iTeacherWeight>0</iTeacherWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.25</fMaxSpeed>
-					<fPadTime>5</fPadTime>
-					<iMeleeWaveSize>1</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_ROYAL_TROOP_SHIP</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions/>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-		</UnitInfo>
-		<UnitInfo>
-			<Type>UNIT_WAR_CARAVEL</Type>
-			<Class>UNITCLASS_WAR_CARAVEL</Class>
-			<UniqueNames/>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>UNITCOMBAT_NAVAL_MILITARY</Combat>
-			<Domain>DOMAIN_SEA</Domain>
-			<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
-			<DefaultProfession>NONE</DefaultProfession>
-			<eEthnicity>NONE</eEthnicity>
-			<eCitizenStatus>NONE</eCitizenStatus>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>TXT_KEY_UNIT_WAR_CARAVEL</Description>
-			<Civilopedia>TXT_KEY_UNIT_CARAVEL_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_CARAVEL_STRATEGY</Strategy>
-			<iTeachLevel>100</iTeachLevel>
-			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
-			<bGraphicalOnly>0</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>0</bOnlyDefensive>
-			<bNoCapture>0</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>1</bRivalTerritory>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<bFound>0</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bMoveIntoPeak>0</bMoveIntoPeak>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>1</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>0</bHiddenNationality>
-			<iREFShipClass>2</iREFShipClass>
-			<bAlwaysHostile>0</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
-			<bLbDCanGetFree>0</bLbDCanGetFree>
-			<bLbDCanEscape>0</bLbDCanEscape>
-			<bLbDCanRevolt>0</bLbDCanRevolt>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_TRANSPORT_COAST</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</NotUnitAIs>
-			<Builds/>
-			<PrereqBuilding>BUILDINGCLASS_DRYDOCK</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>0</iAIWeight>
-			<YieldCosts>
-				<YieldCost>
-					<YieldType>YIELD_SAILCLOTH</YieldType>
-					<iCost>40</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_ROPE</YieldType>
-					<iCost>30</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HARDWOOD</YieldType>
-					<iCost>30</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_TOOLS</YieldType>
-					<iCost>30</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_CANNONS</YieldType>
-					<iCost>20</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_BLACK_POWDER</YieldType>
-					<iCost>30</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>80</iCost>
-				</YieldCost>
-			</YieldCosts>
-			<iGameYearAvailable>1492</iGameYearAvailable>
-			<iGameYearObsolete>1600</iGameYearObsolete>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>2300</iEuropeCost>
-			<iEuropeCostIncrease>300</iEuropeCostIncrease>
-			<iImmigrationWeight>0</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>13</iMoves>
-			<iNavalControlCost>1</iNavalControlCost>
-			<iNavalControlRadius>1</iNavalControlRadius>
-			<bCapturesCargo>0</bCapturesCargo>
-			<bCapturesShips>0</bCapturesShips>
-			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LAKE</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
-			<FeatureImpassables>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_STONE_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_PEARL_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-			</FeatureImpassables>
-			<EvasionBuildings>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_DOCK</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_DRYDOCK</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_SHIPYARD</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-				<EvasionBuilding>
-					<BuildingClass>BUILDINGCLASS_GREAT_SHIPYARD</BuildingClass>
-					<bEvasion>1</bEvasion>
-				</EvasionBuilding>
-			</EvasionBuildings>
-			<iCombat>26</iCombat>
-			<iXPValueAttack>5</iXPValueAttack>
-			<iXPValueDefense>3</iXPValueDefense>
-			<iWithdrawalProb>20</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<iDomesticBonus>0</iDomesticBonus>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods/>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<YieldModifiers/>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<iBombardRate>0</iBombardRate>
-			<SpecialCargo>NONE</SpecialCargo>
-			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>2</iCargo>
-			<iRequiredTransportSize>7</iRequiredTransportSize>
-			<iBerthSize>1</iBerthSize>
-			<iHarbourSpaceNeeded>2</iHarbourSpaceNeeded>
-			<iAsset>2500</iAsset>
-			<iPower>1500</iPower>
-			<iNativeLearnTime>-1</iNativeLearnTime>
-			<iStudentWeight>0</iStudentWeight>
-			<iTeacherWeight>0</iTeacherWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.25</fMaxSpeed>
-					<fPadTime>5</fPadTime>
-					<iMeleeWaveSize>1</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_WAR_CARAVEL</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
 			</ProfessionMeshGroups>
@@ -81930,16 +81016,15 @@
 					<iCost>60</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1600</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>2300</iEuropeCost>
+			<iEuropeCost>2500</iEuropeCost>
 			<iEuropeCostIncrease>250</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>20</iMoves>
+			<iMoves>7</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -82106,16 +81191,15 @@
 					<iCost>65</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1650</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>2500</iEuropeCost>
+			<iEuropeCost>2600</iEuropeCost>
 			<iEuropeCostIncrease>275</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>18</iMoves>
+			<iMoves>6</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -82131,7 +81215,7 @@
 			</TerrainImpassables>
 			<FeatureImpassables/>
 			<EvasionBuildings/>
-			<iCombat>22</iCombat>
+			<iCombat>30</iCombat>
 			<iXPValueAttack>5</iXPValueAttack>
 			<iXPValueDefense>3</iXPValueDefense>
 			<iWithdrawalProb>20</iWithdrawalProb>
@@ -82185,281 +81269,6 @@
 			<bCtrlDown>0</bCtrlDown>
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<FreePromotions/>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-		</UnitInfo>
-		<UnitInfo>
-			<Type>UNIT_PIRATE_SHIP</Type>
-			<Class>UNITCLASS_PIRATE_SHIP</Class>
-			<UniqueNames>
-				<UniqueName>Guillaume Le Testu</UniqueName>
-				<UniqueName>James Alday</UniqueName>
-				<UniqueName>Jean Fleury</UniqueName>
-				<UniqueName>Martin Frobisher</UniqueName>
-				<UniqueName>Franois le Clerc</UniqueName>
-				<UniqueName>George Somers</UniqueName>
-				<UniqueName>Jean Bontemps</UniqueName>
-				<UniqueName>Jean-Martin Cotes</UniqueName>
-				<UniqueName>Thomas Cavendish</UniqueName>
-				<UniqueName>George Clifford</UniqueName>
-				<UniqueName>Christopher Newport</UniqueName>
-				<UniqueName>Piet Hein</UniqueName>
-				<UniqueName>Richard Hawkins</UniqueName>
-				<UniqueName>Michael Geare</UniqueName>
-				<UniqueName>Bartholomew Gosnold</UniqueName>
-				<UniqueName>Nathaniel Butler</UniqueName>
-				<UniqueName>Simon de Danser</UniqueName>
-				<UniqueName>Alonso de Contreras</UniqueName>
-				<UniqueName>Hendrick Lucifer</UniqueName>
-				<UniqueName>James Erisey</UniqueName>
-				<UniqueName>Henry Mainwaring</UniqueName>
-				<UniqueName>William Parker</UniqueName>
-				<UniqueName>Jan Jacobsen</UniqueName>
-				<UniqueName>Claes Gerritszoon Compaen</UniqueName>
-				<UniqueName>Cornelis Jol</UniqueName>
-				<UniqueName>Baltazar de Cordes</UniqueName>
-				<UniqueName>Jacob Collaart</UniqueName>
-				<UniqueName>Jan de Bouff</UniqueName>
-				<UniqueName>Daniel Elfrith</UniqueName>
-				<UniqueName>Peter Easton</UniqueName>
-				<UniqueName>James Lancaster</UniqueName>
-				<UniqueName>Jan van Ryen</UniqueName>
-				<UniqueName>Pieter Schouten</UniqueName>
-				<UniqueName>Pedro de la Plesa</UniqueName>
-				<UniqueName>Juan Garca</UniqueName>
-				<UniqueName>Pierre le Picard</UniqueName>
-				<UniqueName>Joost van Dyk</UniqueName>
-				<UniqueName>Pieter Ita</UniqueName>
-				<UniqueName>Moses Cohen Henriques</UniqueName>
-				<UniqueName>Samuel Axe</UniqueName>
-				<UniqueName>Isaac Rochussen</UniqueName>
-				<UniqueName>William Rous</UniqueName>
-				<UniqueName>Henry Morgan</UniqueName>
-				<UniqueName>Nicholas van Hoorn</UniqueName>
-				<UniqueName>Jean Vrolicq</UniqueName>
-				<UniqueName>William Jackson</UniqueName>
-				<UniqueName>Thomas Tew</UniqueName>
-				<UniqueName>Lionel Wafer</UniqueName>
-				<UniqueName>Michel de Grammont</UniqueName>
-				<UniqueName>Jan Lichthart</UniqueName>
-				<UniqueName>Moise Vauquelin</UniqueName>
-				<UniqueName>Jean Bart</UniqueName>
-				<UniqueName>William Dampier</UniqueName>
-				<UniqueName>Laurens de Graaf</UniqueName>
-				<UniqueName>Henry Avery</UniqueName>
-				<UniqueName>Thomas Whenstone</UniqueName>
-				<UniqueName>Edward Mansvelt</UniqueName>
-				<UniqueName>Nicolas Baeteman</UniqueName>
-				<UniqueName>Manuel Rivero Pardal</UniqueName>
-				<UniqueName>Bartolomeu Portugus</UniqueName>
-				<UniqueName>Alexander Dalzeel</UniqueName>
-				<UniqueName>Abraham Blauvelt</UniqueName>
-				<UniqueName>Pierre Maisonnat dit Baptiste</UniqueName>
-				<UniqueName>Ren Duguay-Trouin</UniqueName>
-				<UniqueName>Charles Franois d'Angennes</UniqueName>
-				<UniqueName>George Shelvocke</UniqueName>
-				<UniqueName>Jacques Cassard</UniqueName>
-				<UniqueName>Jan Willems</UniqueName>
-				<UniqueName>Edward Teach</UniqueName>
-				<UniqueName>Michiel Andrieszoon</UniqueName>
-				<UniqueName>Stede Bonnet</UniqueName>
-				<UniqueName>Edward Coates</UniqueName>
-				<UniqueName>John Rous</UniqueName>
-				<UniqueName>Hispaniola</UniqueName>
-			</UniqueNames>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>UNITCOMBAT_NAVAL_PIRACY</Combat>
-			<Domain>DOMAIN_SEA</Domain>
-			<DefaultUnitAI>UNITAI_PIRATE_SEA</DefaultUnitAI>
-			<DefaultProfession>NONE</DefaultProfession>
-			<eEthnicity>NONE</eEthnicity>
-			<eCitizenStatus>NONE</eCitizenStatus>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>TXT_KEY_UNIT_PIRATE_SHIP</Description>
-			<Civilopedia>TXT_KEY_UNIT_PIRATE_SHIP_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_PIRATE_SHIP_STRATEGY</Strategy>
-			<iTeachLevel>100</iTeachLevel>
-			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
-			<bGraphicalOnly>0</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>0</bOnlyDefensive>
-			<bNoCapture>0</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>1</bRivalTerritory>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<bFound>0</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bMoveIntoPeak>0</bMoveIntoPeak>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>1</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>1</bHiddenNationality>
-			<bAlwaysHostile>1</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
-			<bLbDCanGetFree>0</bLbDCanGetFree>
-			<bLbDCanEscape>0</bLbDCanEscape>
-			<bLbDCanRevolt>0</bLbDCanRevolt>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_PIRATE_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_TRANSPORT_COAST</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</NotUnitAIs>
-			<Builds/>
-			<PrereqBuilding>BUILDINGCLASS_DRYDOCK</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>0</iAIWeight>
-			<YieldCosts>
-				<YieldCost>
-					<YieldType>YIELD_SAILCLOTH</YieldType>
-					<iCost>60</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_ROPE</YieldType>
-					<iCost>60</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HARDWOOD</YieldType>
-					<iCost>50</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_TOOLS</YieldType>
-					<iCost>70</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_CANNONS</YieldType>
-					<iCost>60</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_BLACK_POWDER</YieldType>
-					<iCost>60</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_BLADES</YieldType>
-					<iCost>50</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>140</iCost>
-				</YieldCost>
-			</YieldCosts>
-			<iGameYearAvailable>1492</iGameYearAvailable>
-			<iGameYearObsolete>1650</iGameYearObsolete>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>-1</iEuropeCost>
-			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iPortRoyalCost>5000</iPortRoyalCost>
-			<iPortRoyalCostIncrease>500</iPortRoyalCostIncrease>
-			<iImmigrationWeight>0</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>12</iMoves>
-			<iNavalControlCost>2</iNavalControlCost>
-			<iNavalControlRadius>2</iNavalControlRadius>
-			<bCapturesCargo>1</bCapturesCargo>
-			<bCapturesShips>1</bCapturesShips>
-			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LAKE</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
-			<FeatureImpassables>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_STONE_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_PEARL_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-			</FeatureImpassables>
-			<EvasionBuildings/>
-			<iCombat>25</iCombat>
-			<iXPValueAttack>5</iXPValueAttack>
-			<iXPValueDefense>3</iXPValueDefense>
-			<iWithdrawalProb>25</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<iDomesticBonus>0</iDomesticBonus>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods/>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<YieldModifiers/>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<iBombardRate>0</iBombardRate>
-			<SpecialCargo>SPECIALUNIT_YIELD_CARGO</SpecialCargo>
-			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>3</iCargo>
-			<iRequiredTransportSize>7</iRequiredTransportSize>
-			<iBerthSize>1</iBerthSize>
-			<iHarbourSpaceNeeded>2</iHarbourSpaceNeeded>
-			<iAsset>3800</iAsset>
-			<iPower>3800</iPower>
-			<iNativeLearnTime>-1</iNativeLearnTime>
-			<iStudentWeight>0</iStudentWeight>
-			<iTeacherWeight>0</iTeacherWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.25</fMaxSpeed>
-					<fPadTime>5</fPadTime>
-					<iMeleeWaveSize>1</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_PIRATE_SHIP</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions>
-				<FreePromotion>
-					<PromotionType>PROMOTION_NAVIGATION1</PromotionType>
-					<bFreePromotion>1</bFreePromotion>
-				</FreePromotion>
-			</FreePromotions>
 			<LeaderPromotion>NONE</LeaderPromotion>
 			<iLeaderExperience>0</iLeaderExperience>
 		</UnitInfo>
@@ -82633,20 +81442,15 @@
 					<iCost>120</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1650</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iEuropeCost>4000</iEuropeCost>
 			<iEuropeCostIncrease>750</iEuropeCostIncrease>
-			<iPortRoyalCost>3500</iPortRoyalCost>
-			<iPortRoyalCostIncrease>500</iPortRoyalCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>12</iMoves>
-			<iNavalControlCost>2</iNavalControlCost>
-			<iNavalControlRadius>2</iNavalControlRadius>
+			<iMoves>5</iMoves>
 			<bCapturesCargo>1</bCapturesCargo>
 			<bCapturesShips>1</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -82675,7 +81479,7 @@
 				</FeatureImpassable>
 			</FeatureImpassables>
 			<EvasionBuildings/>
-			<iCombat>28</iCombat>
+			<iCombat>33</iCombat>
 			<iXPValueAttack>5</iXPValueAttack>
 			<iXPValueDefense>3</iXPValueDefense>
 			<iWithdrawalProb>20</iWithdrawalProb>
@@ -82705,7 +81509,7 @@
 			<iBerthSize>1</iBerthSize>
 			<iHarbourSpaceNeeded>2</iHarbourSpaceNeeded>
 			<iAsset>3500</iAsset>
-			<iPower>3500</iPower>
+			<iPower>3000</iPower>
 			<iNativeLearnTime>-1</iNativeLearnTime>
 			<iStudentWeight>0</iStudentWeight>
 			<iTeacherWeight>0</iTeacherWeight>
@@ -82821,20 +81625,17 @@
 			<ProductionTraits/>
 			<iAIWeight>0</iAIWeight>
 			<YieldCosts/>
-			<iGameYearAvailable>1650</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
 			<iEuropeCost>-1</iEuropeCost>
 			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iPortRoyalCost>5500</iPortRoyalCost>
+			<iPortRoyalCost>4200</iPortRoyalCost>
 			<iPortRoyalCostIncrease>1000</iPortRoyalCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>12</iMoves>
-			<iNavalControlCost>2</iNavalControlCost>
-			<iNavalControlRadius>2</iNavalControlRadius>
+			<iMoves>5</iMoves>
 			<bCapturesCargo>1</bCapturesCargo>
 			<bCapturesShips>1</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -82863,7 +81664,7 @@
 				</FeatureImpassable>
 			</FeatureImpassables>
 			<EvasionBuildings/>
-			<iCombat>30</iCombat>
+			<iCombat>35</iCombat>
 			<iXPValueAttack>5</iXPValueAttack>
 			<iXPValueDefense>3</iXPValueDefense>
 			<iWithdrawalProb>20</iWithdrawalProb>
@@ -82888,7 +81689,7 @@
 			<iBombardRate>0</iBombardRate>
 			<SpecialCargo>SPECIALUNIT_YIELD_CARGO</SpecialCargo>
 			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>2</iCargo>
+			<iCargo>1</iCargo>
 			<iRequiredTransportSize>7</iRequiredTransportSize>
 			<iBerthSize>1</iBerthSize>
 			<iHarbourSpaceNeeded>2</iHarbourSpaceNeeded>
@@ -82987,7 +81788,6 @@
 			<ProductionTraits/>
 			<iAIWeight>0</iAIWeight>
 			<YieldCosts/>
-			<iGameYearAvailable>1492</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -82998,9 +81798,7 @@
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>24</iMinAreaSize>
-			<iMoves>12</iMoves>
-			<iNavalControlCost>1</iNavalControlCost>
-			<iNavalControlRadius>1</iNavalControlRadius>
+			<iMoves>6</iMoves>
 			<bCapturesCargo>1</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -83011,7 +81809,7 @@
 			<TerrainImpassables/>
 			<FeatureImpassables/>
 			<EvasionBuildings/>
-			<iCombat>22</iCombat>
+			<iCombat>26</iCombat>
 			<iXPValueAttack>5</iXPValueAttack>
 			<iXPValueDefense>3</iXPValueDefense>
 			<iWithdrawalProb>25</iWithdrawalProb>
@@ -83040,8 +81838,8 @@
 			<iRequiredTransportSize>7</iRequiredTransportSize>
 			<iBerthSize>1</iBerthSize>
 			<iHarbourSpaceNeeded>1</iHarbourSpaceNeeded>
-			<iAsset>3000</iAsset>
-			<iPower>3000</iPower>
+			<iAsset>4000</iAsset>
+			<iPower>4000</iPower>
 			<iNativeLearnTime>-1</iNativeLearnTime>
 			<iStudentWeight>0</iStudentWeight>
 			<iTeacherWeight>0</iTeacherWeight>
@@ -83139,7 +81937,6 @@
 			<ProductionTraits/>
 			<iAIWeight>0</iAIWeight>
 			<YieldCosts/>
-			<iGameYearAvailable>1492</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>-1</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -83150,7 +81947,7 @@
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>12</iMoves>
+			<iMoves>6</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -83330,18 +82127,15 @@
 					<iCost>100</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1600</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>4400</iEuropeCost>
+			<iEuropeCost>5400</iEuropeCost>
 			<iEuropeCostIncrease>1200</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>12</iMoves>
-			<iNavalControlCost>1</iNavalControlCost>
-			<iNavalControlRadius>2</iNavalControlRadius>
+			<iMoves>6</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>1</bCapturesShips>
 			<iCaptureShipsChanceIncrease>50</iCaptureShipsChanceIncrease>
@@ -83384,10 +82178,6 @@
 			<FeatureAttacks/>
 			<FeatureDefenses/>
 			<UnitClassAttackMods>
-				<UnitClassAttackMod>
-					<UnitClassType>UNITCLASS_PIRATE_SHIP</UnitClassType>
-					<iUnitClassMod>20</iUnitClassMod>
-				</UnitClassAttackMod>
 				<UnitClassAttackMod>
 					<UnitClassType>UNITCLASS_PRIVATEER</UnitClassType>
 					<iUnitClassMod>20</iUnitClassMod>
@@ -83482,7 +82272,6 @@
 			<bLineOfSight>0</bLineOfSight>
 			<bHiddenNationality>0</bHiddenNationality>
 			<bTroopShip>1</bTroopShip>
-			<iREFShipClass>2</iREFShipClass>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -83540,18 +82329,15 @@
 					<iCost>110</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1650</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>5000</iEuropeCost>
+			<iEuropeCost>5800</iEuropeCost>
 			<iEuropeCostIncrease>1400</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>10</iMoves>
-			<iNavalControlCost>1</iNavalControlCost>
-			<iNavalControlRadius>1</iNavalControlRadius>
+			<iMoves>6</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>1</bCapturesShips>
 			<iCaptureShipsChanceIncrease>100</iCaptureShipsChanceIncrease>
@@ -83594,10 +82380,6 @@
 			<FeatureAttacks/>
 			<FeatureDefenses/>
 			<UnitClassAttackMods>
-				<UnitClassAttackMod>
-					<UnitClassType>UNITCLASS_PIRATE_SHIP</UnitClassType>
-					<iUnitClassMod>10</iUnitClassMod>
-				</UnitClassAttackMod>
 				<UnitClassAttackMod>
 					<UnitClassType>UNITCLASS_PRIVATEER</UnitClassType>
 					<iUnitClassMod>10</iUnitClassMod>
@@ -83688,7 +82470,6 @@
 			<bLineOfSight>0</bLineOfSight>
 			<bHiddenNationality>0</bHiddenNationality>
 			<bTroopShip>1</bTroopShip>
-			<iREFShipClass>2</iREFShipClass>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -83711,7 +82492,7 @@
 			<PrereqBuilding>BUILDINGCLASS_SHIPYARD</PrereqBuilding>
 			<PrereqOrBuildings/>
 			<ProductionTraits/>
-			<iAIWeight>100</iAIWeight>
+			<iAIWeight>0</iAIWeight>
 			<YieldCosts>
 				<YieldCost>
 					<YieldType>YIELD_SAILCLOTH</YieldType>
@@ -83746,18 +82527,15 @@
 					<iCost>120</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1650</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>5500</iEuropeCost>
-			<iEuropeCostIncrease>800</iEuropeCostIncrease>
+			<iEuropeCost>6500</iEuropeCost>
+			<iEuropeCostIncrease>1250</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>12</iMoves>
-			<iNavalControlCost>2</iNavalControlCost>
-			<iNavalControlRadius>2</iNavalControlRadius>
+			<iMoves>6</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>1</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -83819,207 +82597,7 @@
 			<iBombardRate>3</iBombardRate>
 			<SpecialCargo>NONE</SpecialCargo>
 			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>3</iCargo>
-			<iRequiredTransportSize>7</iRequiredTransportSize>
-			<iBerthSize>1</iBerthSize>
-			<iHarbourSpaceNeeded>3</iHarbourSpaceNeeded>
-			<iAsset>6000</iAsset>
-			<iPower>6000</iPower>
-			<iNativeLearnTime>-1</iNativeLearnTime>
-			<iStudentWeight>0</iStudentWeight>
-			<iTeacherWeight>0</iTeacherWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.25</fMaxSpeed>
-					<fPadTime>5</fPadTime>
-					<iMeleeWaveSize>1</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_FRIGATE</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_MACHINE</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions/>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-		</UnitInfo>
-		<UnitInfo>
-			<Type>UNIT_HEAVY_FRIGATE</Type>
-			<Class>UNITCLASS_HEAVY_FRIGATE</Class>
-			<UniqueNames/>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>UNITCOMBAT_NAVAL_MILITARY</Combat>
-			<Domain>DOMAIN_SEA</Domain>
-			<DefaultUnitAI>UNITAI_COMBAT_SEA</DefaultUnitAI>
-			<DefaultProfession>NONE</DefaultProfession>
-			<eEthnicity>NONE</eEthnicity>
-			<eCitizenStatus>NONE</eCitizenStatus>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>TXT_KEY_UNIT_HEAVY_FRIGATE</Description>
-			<Civilopedia>TXT_KEY_UNIT_HEAVY_FRIGATE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_HEAVY_FRIGATE_STRATEGY</Strategy>
-			<iTeachLevel>100</iTeachLevel>
-			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
-			<bGraphicalOnly>0</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>0</bOnlyDefensive>
-			<bNoCapture>0</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>0</bRivalTerritory>
-			<bMilitaryProduction>1</bMilitaryProduction>
-			<bFound>0</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bMoveIntoPeak>0</bMoveIntoPeak>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>1</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>0</bHiddenNationality>
-			<bTroopShip>1</bTroopShip>
-			<bAlwaysHostile>0</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
-			<bLbDCanGetFree>0</bLbDCanGetFree>
-			<bLbDCanEscape>0</bLbDCanEscape>
-			<bLbDCanRevolt>0</bLbDCanRevolt>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_COMBAT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_ESCORT_SEA</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs/>
-			<Builds/>
-			<PrereqBuilding>BUILDINGCLASS_SHIPYARD</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>120</iAIWeight>
-			<YieldCosts>
-				<YieldCost>
-					<YieldType>YIELD_SAILCLOTH</YieldType>
-					<iCost>85</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_ROPE</YieldType>
-					<iCost>95</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HARDWOOD</YieldType>
-					<iCost>100</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_TOOLS</YieldType>
-					<iCost>85</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_CANNONS</YieldType>
-					<iCost>85</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_BLACK_POWDER</YieldType>
-					<iCost>90</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_BLADES</YieldType>
-					<iCost>60</iCost>
-				</YieldCost>
-				<YieldCost>
-					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>180</iCost>
-				</YieldCost>
-			</YieldCosts>
-			<iGameYearAvailable>1700</iGameYearAvailable>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>100</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>-1</iEuropeCost>
-			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iImmigrationWeight>0</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>11</iMoves>
-			<iNavalControlCost>2</iNavalControlCost>
-			<iNavalControlRadius>2</iNavalControlRadius>
-			<bCapturesCargo>0</bCapturesCargo>
-			<bCapturesShips>1</bCapturesShips>
-			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LAKE</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
-			<FeatureImpassables>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_STONE_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_PEARL_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-			</FeatureImpassables>
-			<EvasionBuildings/>
-			<iCombat>50</iCombat>
-			<iXPValueAttack>7</iXPValueAttack>
-			<iXPValueDefense>5</iXPValueDefense>
-			<iWithdrawalProb>20</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<iDomesticBonus>0</iDomesticBonus>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods/>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<YieldModifiers/>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<iBombardRate>4</iBombardRate>
-			<SpecialCargo>NONE</SpecialCargo>
-			<DomainCargo>DOMAIN_LAND</DomainCargo>
-			<iCargo>3</iCargo>
+			<iCargo>2</iCargo>
 			<iRequiredTransportSize>7</iRequiredTransportSize>
 			<iBerthSize>1</iBerthSize>
 			<iHarbourSpaceNeeded>3</iHarbourSpaceNeeded>
@@ -84037,7 +82615,7 @@
 					<iRangedWaveSize>1</iRangedWaveSize>
 					<UnitMeshGroup>
 						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_HEAVY_FRIGATE</ArtDefineTag>
+						<ArtDefineTag>ART_DEF_UNIT_FRIGATE</ArtDefineTag>
 					</UnitMeshGroup>
 				</UnitMeshGroups>
 			</ProfessionMeshGroups>
@@ -84066,8 +82644,8 @@
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_ROYAL_FRIGATE</Description>
-			<Civilopedia>TXT_KEY_UNIT_HEAVY_FRIGATE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_HEAVY_FRIGATE_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_UNIT_FRIGATE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_FRIGATE_STRATEGY</Strategy>
 			<iTeachLevel>100</iTeachLevel>
 			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
 			<bGraphicalOnly>0</bGraphicalOnly>
@@ -84089,7 +82667,6 @@
 			<bLineOfSight>0</bLineOfSight>
 			<bHiddenNationality>0</bHiddenNationality>
 			<bTroopShip>1</bTroopShip>
-			<iREFShipClass>2</iREFShipClass>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -84110,7 +82687,6 @@
 			<ProductionTraits/>
 			<iAIWeight>0</iAIWeight>
 			<YieldCosts/>
-			<iGameYearAvailable>1670</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -84119,9 +82695,7 @@
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>12</iMoves>
-			<iNavalControlCost>2</iNavalControlCost>
-			<iNavalControlRadius>2</iNavalControlRadius>
+			<iMoves>6</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>1</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -84253,7 +82827,6 @@
 			<bLineOfSight>0</bLineOfSight>
 			<bHiddenNationality>0</bHiddenNationality>
 			<bTroopShip>1</bTroopShip>
-			<iREFShipClass>3</iREFShipClass>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -84276,7 +82849,7 @@
 			<PrereqBuilding>BUILDINGCLASS_SHIPYARD</PrereqBuilding>
 			<PrereqOrBuildings/>
 			<ProductionTraits/>
-			<iAIWeight>100</iAIWeight>
+			<iAIWeight>0</iAIWeight>
 			<YieldCosts>
 				<YieldCost>
 					<YieldType>YIELD_SAILCLOTH</YieldType>
@@ -84311,18 +82884,15 @@
 					<iCost>200</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1650</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>8000</iEuropeCost>
+			<iEuropeCost>9000</iEuropeCost>
 			<iEuropeCostIncrease>1500</iEuropeCostIncrease>
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>8</iMoves>
-			<iNavalControlCost>3</iNavalControlCost>
-			<iNavalControlRadius>2</iNavalControlRadius>
+			<iMoves>5</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>1</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -84360,8 +82930,8 @@
 			</FeatureImpassables>
 			<EvasionBuildings/>
 			<iCombat>55</iCombat>
-			<iXPValueAttack>12</iXPValueAttack>
-			<iXPValueDefense>6</iXPValueDefense>
+			<iXPValueAttack>7</iXPValueAttack>
+			<iXPValueDefense>5</iXPValueDefense>
 			<iWithdrawalProb>10</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
@@ -84454,7 +83024,6 @@
 			<bLineOfSight>0</bLineOfSight>
 			<bHiddenNationality>0</bHiddenNationality>
 			<bTroopShip>1</bTroopShip>
-			<iREFShipClass>3</iREFShipClass>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -84475,7 +83044,6 @@
 			<ProductionTraits/>
 			<iAIWeight>0</iAIWeight>
 			<YieldCosts/>
-			<iGameYearAvailable>1670</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -84484,9 +83052,7 @@
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>8</iMoves>
-			<iNavalControlCost>3</iNavalControlCost>
-			<iNavalControlRadius>2</iNavalControlRadius>
+			<iMoves>5</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>1</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -84523,9 +83089,9 @@
 				</FeatureImpassable>
 			</FeatureImpassables>
 			<EvasionBuildings/>
-			<iCombat>60</iCombat>
-			<iXPValueAttack>13</iXPValueAttack>
-			<iXPValueDefense>6</iXPValueDefense>
+			<iCombat>58</iCombat>
+			<iXPValueAttack>7</iXPValueAttack>
+			<iXPValueDefense>5</iXPValueDefense>
 			<iWithdrawalProb>10</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
@@ -84595,8 +83161,8 @@
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_COLONIAL_MAN_O_WAR</Description>
-			<Civilopedia>TXT_KEY_UNIT_SHIP_OF_THE_LINE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_SHIP_OF_THE_LINE_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_UNIT_COLONIAL_MAN_O_WAR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_COLONIAL_MAN_O_WAR_STRATEGY</Strategy>
 			<iTeachLevel>100</iTeachLevel>
 			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
 			<bGraphicalOnly>0</bGraphicalOnly>
@@ -84640,19 +83206,19 @@
 			<PrereqBuilding>BUILDINGCLASS_GREAT_SHIPYARD</PrereqBuilding>
 			<PrereqOrBuildings/>
 			<ProductionTraits/>
-			<iAIWeight>120</iAIWeight>
+			<iAIWeight>0</iAIWeight>
 			<YieldCosts>
 				<YieldCost>
 					<YieldType>YIELD_SAILCLOTH</YieldType>
-					<iCost>120</iCost>
+					<iCost>100</iCost>
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_ROPE</YieldType>
-					<iCost>120</iCost>
+					<iCost>100</iCost>
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_HARDWOOD</YieldType>
-					<iCost>120</iCost>
+					<iCost>100</iCost>
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_TOOLS</YieldType>
@@ -84668,14 +83234,13 @@
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_BLADES</YieldType>
-					<iCost>100</iCost>
+					<iCost>90</iCost>
 				</YieldCost>
 				<YieldCost>
 					<YieldType>YIELD_HAMMERS</YieldType>
-					<iCost>300</iCost>
+					<iCost>280</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1700</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -84684,9 +83249,7 @@
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>8</iMoves>
-			<iNavalControlCost>3</iNavalControlCost>
-			<iNavalControlRadius>2</iNavalControlRadius>
+			<iMoves>5</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -84724,8 +83287,8 @@
 			</FeatureImpassables>
 			<EvasionBuildings/>
 			<iCombat>60</iCombat>
-			<iXPValueAttack>14</iXPValueAttack>
-			<iXPValueDefense>8</iXPValueDefense>
+			<iXPValueAttack>8</iXPValueAttack>
+			<iXPValueDefense>6</iXPValueDefense>
 			<iWithdrawalProb>10</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
@@ -84795,8 +83358,8 @@
 			<Invisible>NONE</Invisible>
 			<SeeInvisible>NONE</SeeInvisible>
 			<Description>TXT_KEY_UNIT_ROYAL_MAN_O_WAR</Description>
-			<Civilopedia>TXT_KEY_UNIT_SHIP_OF_THE_LINE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_SHIP_OF_THE_LINE_STRATEGY</Strategy>
+			<Civilopedia>TXT_KEY_UNIT_ROYAL_MAN_O_WAR_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_UNIT_ROYAL_MAN_O_WAR_STRATEGY</Strategy>
 			<iTeachLevel>100</iTeachLevel>
 			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
 			<bGraphicalOnly>0</bGraphicalOnly>
@@ -84818,7 +83381,6 @@
 			<bLineOfSight>0</bLineOfSight>
 			<bHiddenNationality>0</bHiddenNationality>
 			<bTroopShip>1</bTroopShip>
-			<iREFShipClass>3</iREFShipClass>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -84839,7 +83401,6 @@
 			<ProductionTraits/>
 			<iAIWeight>0</iAIWeight>
 			<YieldCosts/>
-			<iGameYearAvailable>1700</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -84848,9 +83409,7 @@
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>8</iMoves>
-			<iNavalControlCost>3</iNavalControlCost>
-			<iNavalControlRadius>2</iNavalControlRadius>
+			<iMoves>5</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -84888,8 +83447,8 @@
 			</FeatureImpassables>
 			<EvasionBuildings/>
 			<iCombat>65</iCombat>
-			<iXPValueAttack>14</iXPValueAttack>
-			<iXPValueDefense>8</iXPValueDefense>
+			<iXPValueAttack>8</iXPValueAttack>
+			<iXPValueDefense>6</iXPValueDefense>
 			<iWithdrawalProb>10</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
@@ -85022,7 +83581,6 @@
 					<iCost>40</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1492</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -85031,7 +83589,7 @@
 			<iImmigrationWeight>0</iImmigrationWeight>
 			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
 			<iMinAreaSize>20</iMinAreaSize>
-			<iMoves>5</iMoves>
+			<iMoves>4</iMoves>
 			<bCapturesCargo>0</bCapturesCargo>
 			<bCapturesShips>0</bCapturesShips>
 			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
@@ -85235,7 +83793,6 @@
 					<iCost>20</iCost>
 				</YieldCost>
 			</YieldCosts>
-			<iGameYearAvailable>1492</iGameYearAvailable>
 			<iHurryCostModifier>0</iHurryCostModifier>
 			<iAdvancedStartCost>100</iAdvancedStartCost>
 			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
@@ -98502,10 +97059,10 @@
 			</TerrainImpassables>
 			<FeatureImpassables/>
 			<EvasionBuildings/>
-			<iCombat>4</iCombat>
+			<iCombat>2</iCombat>
 			<iXPValueAttack>0</iXPValueAttack>
-			<iXPValueDefense>3</iXPValueDefense>
-			<iWithdrawalProb>10</iWithdrawalProb>
+			<iXPValueDefense>0</iXPValueDefense>
+			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
 			<iHillsAttack>0</iHillsAttack>
@@ -98672,181 +97229,6 @@
 			<iCombat>2</iCombat>
 			<iXPValueAttack>2</iXPValueAttack>
 			<iXPValueDefense>1</iXPValueDefense>
-			<iWithdrawalProb>0</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<iDomesticBonus>0</iDomesticBonus>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods/>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<YieldModifiers/>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<iBombardRate>0</iBombardRate>
-			<SpecialCargo>NONE</SpecialCargo>
-			<DomainCargo>NONE</DomainCargo>
-			<iCargo>0</iCargo>
-			<iRequiredTransportSize>8</iRequiredTransportSize>
-			<iBerthSize>1</iBerthSize>
-			<iAsset>0</iAsset>
-			<iPower>100</iPower>
-			<iNativeLearnTime>-1</iNativeLearnTime>
-			<iStudentWeight>0</iStudentWeight>
-			<iTeacherWeight>0</iTeacherWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.25</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>1</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_HUMPBACK_WHALE</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions/>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-		</UnitInfo>
-		<UnitInfo>
-			<Type>UNIT_HUMPBACK_WHALE_COMBAT</Type>
-			<Class>UNITCLASS_HUMPBACK_WHALE_COMBAT</Class>
-			<UniqueNames/>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>UNITCOMBAT_NAVAL_TRADE</Combat>
-			<Domain>DOMAIN_SEA</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
-			<DefaultProfession>NONE</DefaultProfession>
-			<eEthnicity>NONE</eEthnicity>
-			<eCitizenStatus>NONE</eCitizenStatus>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>TXT_KEY_UNIT_HUMPBACK_WHALE</Description>
-			<Civilopedia>TXT_KEY_UNIT_HUMPBACK_WHALE_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_HUMPBACK_WHALE_STRATEGY</Strategy>
-			<iTeachLevel>100</iTeachLevel>
-			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
-			<iAnimalPatrolWeight>10000</iAnimalPatrolWeight>
-			<iAnimalAttackWeight>100</iAnimalAttackWeight>
-			<bGraphicalOnly>1</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>0</bOnlyDefensive>
-			<bNoCapture>0</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>0</bRivalTerritory>
-			<bMilitaryProduction>0</bMilitaryProduction>
-			<bFound>0</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bMoveIntoPeak>0</bMoveIntoPeak>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>0</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>0</bHiddenNationality>
-			<bAlwaysHostile>0</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bAnimal>1</bAnimal>
-			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
-			<bLbDCanGetFree>0</bLbDCanGetFree>
-			<bLbDCanEscape>0</bLbDCanEscape>
-			<bLbDCanRevolt>0</bLbDCanRevolt>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_DEFENSIVE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_COUNTER</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs/>
-			<Builds/>
-			<PrereqBuilding>NONE</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>0</iAIWeight>
-			<YieldCosts/>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>-1</iEuropeCost>
-			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iImmigrationWeight>0</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>3</iMoves>
-			<bCapturesCargo>0</bCapturesCargo>
-			<bCapturesShips>0</bCapturesShips>
-			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LARGE_RIVERS</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_LAKE</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_SHALLOW_COAST</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
-			<FeatureImpassables>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_STONE_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-				<FeatureImpassable>
-					<FeatureType>FEATURE_PEARL_REEF</FeatureType>
-					<bFeatureImpassable>1</bFeatureImpassable>
-				</FeatureImpassable>
-			</FeatureImpassables>
-			<TerrainNatives>
-				<TerrainNative>
-					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<bTerrainNative>1</bTerrainNative>
-				</TerrainNative>
-			</TerrainNatives>
-			<EvasionBuildings/>
-			<iCombat>5</iCombat>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
 			<iWithdrawalProb>0</iWithdrawalProb>
 			<iCityAttack>0</iCityAttack>
 			<iCityDefense>0</iCityDefense>
@@ -100135,147 +98517,6 @@
 			<iLeaderExperience>0</iLeaderExperience>
 		</UnitInfo>
 		<UnitInfo>
-			<Type>UNIT_WOLF_COMBAT</Type>
-			<Class>UNITCLASS_WOLF_COMBAT</Class>
-			<UniqueNames/>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>UNITCOMBAT_MELEE</Combat>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
-			<DefaultProfession>NONE</DefaultProfession>
-			<eEthnicity>NONE</eEthnicity>
-			<eCitizenStatus>NONE</eCitizenStatus>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>TXT_KEY_UNIT_WOLF</Description>
-			<Civilopedia>TXT_KEY_UNIT_WOLF_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_WOLF_STRATEGY</Strategy>
-			<iTeachLevel>100</iTeachLevel>
-			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
-			<bGraphicalOnly>1</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>0</bOnlyDefensive>
-			<bNoCapture>1</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>0</bRivalTerritory>
-			<bMilitaryProduction>0</bMilitaryProduction>
-			<bFound>0</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bMoveIntoPeak>1</bMoveIntoPeak>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>0</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>0</bHiddenNationality>
-			<bAlwaysHostile>1</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
-			<bLbDCanGetFree>0</bLbDCanGetFree>
-			<bLbDCanEscape>0</bLbDCanEscape>
-			<bLbDCanRevolt>0</bLbDCanRevolt>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_DEFENSIVE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_COUNTER</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs/>
-			<Builds/>
-			<PrereqBuilding>NONE</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>0</iAIWeight>
-			<YieldCosts/>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>-1</iEuropeCost>
-			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iImmigrationWeight>0</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>1</iMoves>
-			<bCapturesCargo>0</bCapturesCargo>
-			<bCapturesShips>0</bCapturesShips>
-			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables/>
-			<FeatureImpassables/>
-			<EvasionBuildings/>
-			<iCombat>3</iCombat>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>0</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<iDomesticBonus>0</iDomesticBonus>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods/>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<YieldModifiers/>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<iBombardRate>0</iBombardRate>
-			<SpecialCargo>NONE</SpecialCargo>
-			<DomainCargo>NONE</DomainCargo>
-			<iCargo>0</iCargo>
-			<iRequiredTransportSize>1</iRequiredTransportSize>
-			<iBerthSize>1</iBerthSize>
-			<iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
-			<iAsset>0</iAsset>
-			<iPower>100</iPower>
-			<iNativeLearnTime>-1</iNativeLearnTime>
-			<iStudentWeight>0</iStudentWeight>
-			<iTeacherWeight>0</iTeacherWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.25</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>1</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_WOLF</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions/>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-		</UnitInfo>
-		<UnitInfo>
 			<Type>UNIT_GRIZZLY</Type>
 			<Class>UNITCLASS_GRIZZLY</Class>
 			<UniqueNames/>
@@ -100404,147 +98645,6 @@
 					<fPadTime>1</fPadTime>
 					<iMeleeWaveSize>1</iMeleeWaveSize>
 					<iRangedWaveSize>0</iRangedWaveSize>
-					<UnitMeshGroup>
-						<iRequired>1</iRequired>
-						<ArtDefineTag>ART_DEF_UNIT_GRIZZLY</ArtDefineTag>
-					</UnitMeshGroup>
-				</UnitMeshGroups>
-			</ProfessionMeshGroups>
-			<FormationType>FORMATION_TYPE_DEFAULT</FormationType>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<FreePromotions/>
-			<LeaderPromotion>NONE</LeaderPromotion>
-			<iLeaderExperience>0</iLeaderExperience>
-		</UnitInfo>
-		<UnitInfo>
-			<Type>UNIT_GRIZZLY_COMBAT</Type>
-			<Class>UNITCLASS_GRIZZLY_COMBAT</Class>
-			<UniqueNames/>
-			<Special>NONE</Special>
-			<Capture>NONE</Capture>
-			<Combat>UNITCOMBAT_MELEE</Combat>
-			<Domain>DOMAIN_LAND</Domain>
-			<DefaultUnitAI>UNITAI_OFFENSIVE</DefaultUnitAI>
-			<DefaultProfession>NONE</DefaultProfession>
-			<eEthnicity>NONE</eEthnicity>
-			<eCitizenStatus>NONE</eCitizenStatus>
-			<Invisible>NONE</Invisible>
-			<SeeInvisible>NONE</SeeInvisible>
-			<Description>TXT_KEY_UNIT_GRIZZLY</Description>
-			<Civilopedia>TXT_KEY_UNIT_GRIZZLY_PEDIA</Civilopedia>
-			<Strategy>TXT_KEY_UNIT_GRIZZLY_STRATEGY</Strategy>
-			<iTeachLevel>100</iTeachLevel>
-			<fNBMOD_REF_StrengthWeight>1.0</fNBMOD_REF_StrengthWeight>
-			<bGraphicalOnly>1</bGraphicalOnly>
-			<bNoBadGoodies>0</bNoBadGoodies>
-			<bOnlyDefensive>0</bOnlyDefensive>
-			<bNoCapture>1</bNoCapture>
-			<bQuickCombat>0</bQuickCombat>
-			<bRivalTerritory>0</bRivalTerritory>
-			<bMilitaryProduction>0</bMilitaryProduction>
-			<bFound>0</bFound>
-			<bInvisible>0</bInvisible>
-			<bNoDefensiveBonus>0</bNoDefensiveBonus>
-			<bCanMoveImpassable>0</bCanMoveImpassable>
-			<bMoveIntoPeak>1</bMoveIntoPeak>
-			<bCanMoveAllTerrain>0</bCanMoveAllTerrain>
-			<bFlatMovementCost>0</bFlatMovementCost>
-			<bIgnoreTerrainCost>0</bIgnoreTerrainCost>
-			<bMechanized>0</bMechanized>
-			<bLineOfSight>0</bLineOfSight>
-			<bHiddenNationality>0</bHiddenNationality>
-			<bAlwaysHostile>1</bAlwaysHostile>
-			<bTreasure>0</bTreasure>
-			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
-			<bLbDCanGetFree>0</bLbDCanGetFree>
-			<bLbDCanEscape>0</bLbDCanEscape>
-			<bLbDCanRevolt>0</bLbDCanRevolt>
-			<UnitClassUpgrades/>
-			<UnitAIs>
-				<UnitAI>
-					<UnitAIType>UNITAI_DEFENSIVE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_OFFENSIVE</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-				<UnitAI>
-					<UnitAIType>UNITAI_COUNTER</UnitAIType>
-					<bUnitAI>1</bUnitAI>
-				</UnitAI>
-			</UnitAIs>
-			<NotUnitAIs/>
-			<Builds/>
-			<PrereqBuilding>NONE</PrereqBuilding>
-			<PrereqOrBuildings/>
-			<ProductionTraits/>
-			<iAIWeight>0</iAIWeight>
-			<YieldCosts/>
-			<iHurryCostModifier>0</iHurryCostModifier>
-			<iAdvancedStartCost>-1</iAdvancedStartCost>
-			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
-			<iEuropeCost>-1</iEuropeCost>
-			<iEuropeCostIncrease>0</iEuropeCostIncrease>
-			<iImmigrationWeight>0</iImmigrationWeight>
-			<iImmigrationWeightDecay>0</iImmigrationWeightDecay>
-			<iMinAreaSize>-1</iMinAreaSize>
-			<iMoves>1</iMoves>
-			<bCapturesCargo>0</bCapturesCargo>
-			<bCapturesShips>0</bCapturesShips>
-			<iCaptureShipsChanceIncrease>0</iCaptureShipsChanceIncrease>
-			<iWorkRate>0</iWorkRate>
-			<iWorkRateModifier>0</iWorkRateModifier>
-			<iMissionaryRateModifier>0</iMissionaryRateModifier>
-			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables/>
-			<FeatureImpassables/>
-			<EvasionBuildings/>
-			<iCombat>3</iCombat>
-			<iXPValueAttack>4</iXPValueAttack>
-			<iXPValueDefense>2</iXPValueDefense>
-			<iWithdrawalProb>5</iWithdrawalProb>
-			<iCityAttack>0</iCityAttack>
-			<iCityDefense>0</iCityDefense>
-			<iHillsAttack>0</iHillsAttack>
-			<iHillsDefense>0</iHillsDefense>
-			<iDomesticBonus>0</iDomesticBonus>
-			<TerrainAttacks/>
-			<TerrainDefenses/>
-			<FeatureAttacks/>
-			<FeatureDefenses/>
-			<UnitClassAttackMods/>
-			<UnitClassDefenseMods/>
-			<UnitCombatMods/>
-			<DomainMods/>
-			<YieldModifiers/>
-			<YieldChanges/>
-			<BonusYieldChanges/>
-			<bLandYieldChanges>1</bLandYieldChanges>
-			<bWaterYieldChanges>1</bWaterYieldChanges>
-			<iBombardRate>0</iBombardRate>
-			<SpecialCargo>NONE</SpecialCargo>
-			<DomainCargo>NONE</DomainCargo>
-			<iCargo>0</iCargo>
-			<iRequiredTransportSize>1</iRequiredTransportSize>
-			<iBerthSize>1</iBerthSize>
-			<iBarracksSpaceNeeded>1</iBarracksSpaceNeeded>
-			<iAsset>0</iAsset>
-			<iPower>100</iPower>
-			<iNativeLearnTime>-1</iNativeLearnTime>
-			<iStudentWeight>0</iStudentWeight>
-			<iTeacherWeight>0</iTeacherWeight>
-			<ProfessionMeshGroups>
-				<UnitMeshGroups>
-					<ProfessionType>NONE</ProfessionType>
-					<fMaxSpeed>1.25</fMaxSpeed>
-					<fPadTime>1</fPadTime>
-					<iMeleeWaveSize>1</iMeleeWaveSize>
-					<iRangedWaveSize>1</iRangedWaveSize>
 					<UnitMeshGroup>
 						<iRequired>1</iRequired>
 						<ArtDefineTag>ART_DEF_UNIT_GRIZZLY</ArtDefineTag>

@@ -10037,11 +10037,13 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 		if (pLoopUnit == NULL)
 			continue;
 
-		CvPlot const& kLoopPlot = pLoopUnit->getPlot();
-		if (!AI_plotValid(&kLoopPlot))
+		// Use plot() (pointer) instead of getPlot() (reference) to avoid
+		// NULL dereference for off-map units (e.g. traveling to Europe)
+		CvPlot* pLoopPlot = pLoopUnit->plot();
+		if (pLoopPlot == NULL || !AI_plotValid(pLoopPlot))
 			continue;
 
-		if (iMaxPath == 0 && !at(kLoopPlot))
+		if (iMaxPath == 0 && !atPlot(pLoopPlot))
 			continue;
 
 		if (!AI_allowGroup(pLoopUnit, eUnitAI))
@@ -10055,7 +10057,7 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 			continue;
 
 		// All other conditions remain as originally implemented
-		if ((!bSafeOnly || !isEnemy(kLoopPlot))
+		if ((!bSafeOnly || !isEnemy(*pLoopPlot))
 			&&
 			(!bWithCargoOnly || pLoopUnit->getGroup()->hasCargo())
 			&&
@@ -10083,14 +10085,14 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 				iMaxGroup + (bStackOfDoom ? AI_stackOfDoomExtra() : 0))
 			&&
 			(pLoopGroup->AI_getMissionAIType() != MISSIONAI_GUARD_CITY ||
-				!pLoopGroup->getPlot().isCity() ||
-				pLoopGroup->getPlot().plotCount(PUF_isMissionAIType, MISSIONAI_GUARD_CITY, -1, getOwner()) >
-				pLoopGroup->getPlot().AI_getPlotCity()->AI_minDefenders())
+				!pLoopPlot->isCity() ||
+				pLoopPlot->plotCount(PUF_isMissionAIType, MISSIONAI_GUARD_CITY, -1, getOwner()) >
+				pLoopPlot->AI_getPlotCity()->AI_minDefenders())
 			)
 		{
 			int iPathTurns = 0;
-			if (at(kLoopPlot) ||
-				generatePath(&kLoopPlot, eFlags, true, &iPathTurns, iMaxPath))
+			if (atPlot(pLoopPlot) ||
+				generatePath(pLoopPlot, eFlags, true, &iPathTurns, iMaxPath))
 			{
 				int iCost = 100 * (iPathTurns * iPathTurns + 1);
 				iCost *= 4 + pLoopGroup->getCargo();

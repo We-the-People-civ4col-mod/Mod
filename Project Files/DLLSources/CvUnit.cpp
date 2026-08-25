@@ -3598,10 +3598,26 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 	}
 
 	// WTP, ray, Canal - START
-	// in Canals, which are actually on land plots, we do not want to have any Ships bigger than Coastal Ships or GatherBoats
-	if (getUnitInfo().getDomainType() == DOMAIN_SEA && !kPlot.isWater() && !getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN) && !(getUnitInfo().isGatherBoat() && getUnitInfo().getHarbourSpaceNeeded() == 1) && kPlot.getImprovementType() != NO_IMPROVEMENT && GC.getImprovementInfo(kPlot.getImprovementType()).isCanal())
+	// Canal ship filtering: regular canals allow coastal ships + gather boats; deep canals allow lake-capable ships
+	if (getUnitInfo().getDomainType() == DOMAIN_SEA && !kPlot.isWater() && kPlot.isCanal())
 	{
-		return false;
+		if (kPlot.isDeepCanal())
+		{
+			// Deep canal: block ships that cannot traverse lakes
+			if (getUnitInfo().getTerrainImpassable(TERRAIN_LAKE))
+			{
+				return false;
+			}
+		}
+		else
+		{
+			// Regular canal: block ships that can traverse ocean (except gather boats with harbour space 1)
+			if (!getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN)
+				&& !(getUnitInfo().isGatherBoat() && getUnitInfo().getHarbourSpaceNeeded() == 1))
+			{
+				return false;
+			}
+		}
 	}
 	// WTP, ray, Canal - END
 
@@ -3857,7 +3873,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 	case DOMAIN_SEA:
 		if (!kPlot.isWater() && !m_pUnitInfo->isCanMoveAllTerrain())
 		{
-			if (!kPlot.isFriendlyCity(*this, true) || !kPlot.isCoastalLand())
+			if (!kPlot.isCanal() && (!kPlot.isFriendlyCity(*this, true) || !kPlot.isCoastalLand()))
 			{
 				return false;
 			}
@@ -3939,7 +3955,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 				// allowing all Land Units to enter Large Rivers
 				// further below we will code exceptions - Maybe also configure in XML
 				//return false;
-				if(kPlot.getTerrainType() != TERRAIN_LARGE_RIVERS)
+				if(kPlot.getTerrainType() != TERRAIN_LARGE_RIVERS && kPlot.getTerrainType() != TERRAIN_ICE_LAKE)
 				{
 					return false;
 				}

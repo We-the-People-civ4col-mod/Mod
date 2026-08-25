@@ -226,6 +226,11 @@ public:
 	bool isFort() const;
 	bool isMonastery() const;
 	bool isCanal() const;
+	bool isDeepCanal() const;
+	int countAdjacentConnectedCanals() const;
+	bool isAdjacentToCanal() const;
+	bool isAdjacentToFreshwaterCanal() const;
+	bool isCanalChainConnectedToFreshwater() const;
 	// R&R, ray, Monasteries and Forts - END
 
 	//R&R mod, vetiarvind, super forts merge, refactor checks for activating monastery and forts - start
