@@ -778,8 +778,8 @@
 		<English>Fur Trading Post</English>
 		
 		<Portuguese>
-			<Text>Entreposto de Peles</Text>
-			<Gender>Male</Gender>
+			<Text>Feitoria de Peles</Text>
+			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
 		<French>
@@ -1470,7 +1470,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_SPICE_TRADERS_POST</Tag>
 		<English>Spice Trading Post</English>
-		<Portuguese>Entreposto Comercial de Especiarias</Portuguese>
+		<Portuguese>Feitoria de Especiarias</Portuguese>
 		<French>Épicerie</French>
 		<German>Gewürzhandelsposten</German>
 		<Italian>Spice Trading Post</Italian>

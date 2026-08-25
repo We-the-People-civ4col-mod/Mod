@@ -1118,7 +1118,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_POST_ESTABLISHED</Tag>
 		<English>A [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] trading post has been established in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
-		<Portuguese>Um posto comercial [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] foi estabelecido em [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Portuguese>
+		<Portuguese>Uma feitoria [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] foi estabelecida em [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Portuguese>
 		<French>Un comptoir commercial [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] s'est établi à [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] </French>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] Handelsposten wurde in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] eingerichtet.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] открыли торговый пост в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
@@ -1127,7 +1127,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_POST_REMOVED</Tag>
 		<English>Natives in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] burnt down the [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] trading post and threw the merchant into the flames. He had incurred their hatred for bargaining too hard.</English>
-		<Portuguese>Os nativos em [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] incendiaram o posto comercial [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] e jogaram o comerciante nas chamas. Ele incorreu no ódio deles por negociar com muita força.</Portuguese>
+		<Portuguese>Os nativos em [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] incendiaram a feitoria [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] e jogaram o comerciante nas chamas. Ele incorreu no ódio deles por negociar com muita força.</Portuguese>
 		<French>Les indigènes de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ont incendié le comptoir commercial [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] avec le marchand encore dedans. Il a suscité leur haine avec ses marchandages impitoyables.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] haben die Ureinwohner den [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] Handelsposten niedergebrannt und den Händler in die Flammen geworfen. Er hatte sich ihren Hass zugezogen, da er zu stark gefeilscht hat.</German>
 		<Russian>В [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] индейцы сожгли торговый пост [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] и бросили торговца в огонь. Он слишком часто торговался с ними по мелочам, а в последний (для него) раз начал оскорблять их предков.</Russian>
@@ -4047,7 +4047,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST</Tag>
 		<English>Establish a trading post</English>
-		<Portuguese>Estabeleça um entreposto comercial</Portuguese>
+		<Portuguese>Estabeleça uma feitoria</Portuguese>
 		<French>Établir un comptoir de commerce</French>
 		<German>Einen Handelsposten einrichten</German>
 		<Russian>Установить торговый пост</Russian>
@@ -4055,7 +4055,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TALK_NATIVES_POPUP_TRADE_POST2</Tag>
 		<English>Establish a trading post [NEWLINE]Success rate : %d1_success</English>
-		<Portuguese>Estabeleça um entreposto comercial [NEWLINE]Taxa de sucesso: %d1_success</Portuguese>
+		<Portuguese>Estabeleça uma feitoria [NEWLINE]Taxa de sucesso: %d1_success</Portuguese>
 		<French>Établir un comptoir de commerce [NEWLINE]Chance de réussite : %d1_success</French>
 		<German>Einen Handelsposten einrichten[NEWLINE]Erfolgschance : %d1_success</German>
 		<Russian>Попытаться установить торговый пост в деревне индейцев [NEWLINE]Шанс успеха : %d1_success</Russian>
@@ -4073,7 +4073,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_POST_CREATED_TREASURE</Tag>
 		<English>Milord, your trading post in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] sends the earned wealth back to our colony.</English>
-		<Portuguese>Milorde, seu entreposto comercial em [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] envia a riqueza obtida de volta para nossa colônia.</Portuguese>
+		<Portuguese>Milorde, sua feitoria em [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] envia a riqueza obtida de volta para nossa colônia.</Portuguese>
 		<French>Sire, Votre comptoir établi à [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] envoie l'argent gagné vers nos colonie. </French>
 		<German>Milord, Euer Handelsposten in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] sendet die erwirtschafteten Reichtümer zurück in unsere Kolonie.</German>
 		<Russian>Милорд, наш торговый пост в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] собрал достаточно прибыли и готов переправить ее в ближайшую колонию.</Russian>

@@ -1702,7 +1702,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_EXTRA_TRADE_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% better prices from bargaining and trading posts</English>
-		<Portuguese>[ICON_BULLET]%D1%% melhores preços em pechinchas e postos comerciais</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% melhores preços em pechinchas e feitorias</Portuguese>
 		<French>[ICON_BULLET]%D1%% permet d'obtenir de meilleurs prix en négociant</French>
 		<German>[ICON_BULLET]%D1%% bessere Preise durch Feilschen und Handelsposten</German>
 		<Russian>[ICON_BULLET]%D1%% к цене при торге, ускорение работы Торговых постов</Russian>

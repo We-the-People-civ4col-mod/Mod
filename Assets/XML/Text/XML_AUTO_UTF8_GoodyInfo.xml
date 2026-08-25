@@ -56,7 +56,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_FAILED_TRADER</Tag>
 		<English>You've discovered a [COLOR_UNIT_TEXT]failed trader[COLOR_REVERT], returning after a bungled attempt to establish a trading post.</English>
-		<Portuguese>Você descobriu um [COLOR_UNIT_TEXT]comerciante fracassado[COLOR_REVERT], retornando após uma tentativa fracassada de estabelecer um entreposto comercial.</Portuguese>
+		<Portuguese>Você descobriu um [COLOR_UNIT_TEXT]comerciante fracassado[COLOR_REVERT], retornando após uma tentativa fracassada de estabelecer uma feitoria.</Portuguese>
 		<French>Vous avez découvert un [COLOR_UNIT_TEXT]marchand ruiné[COLOR_REVERT] de retour après l'échec de l'établissement de son comptoir.</French>
 		<German>Ihr habt einen [COLOR_UNIT_TEXT]gescheiterter Händler[COLOR_REVERT] auf der Rückkehr von seinem gescheiterten Handelsposten!</German>
 		<Russian>Вы встретили [COLOR_UNIT_TEXT]неудачливого торговца[COLOR_REVERT], разорившегося после провальной попытки основать торговый пост и решили помочь бедолаге.</Russian>

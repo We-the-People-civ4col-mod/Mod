@@ -613,7 +613,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_ESTABLISH_TRADE_POST</Tag>
 		<English>Establish trading post</English>
-		<Portuguese>Estabelecer entreposto comercial</Portuguese>
+		<Portuguese>Estabelecer feitoria</Portuguese>
 		<French>Établir un poste de traite</French>
 		<German>Handelsposten einrichten</German>
 		<Italian>Stabilire un posto di scambio</Italian>
@@ -623,7 +623,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_ESTABLISH_TRADE_POST_HELP</Tag>
 		<English>Establish a trading post in the settlement to gradually generate treasures.</English>
-		<Portuguese>Estabelecer um entreposto comercial na colônia para gerar tesouros gradualmente.</Portuguese>
+		<Portuguese>Estabelecer uma feitoria na colônia para gerar tesouros gradualmente.</Portuguese>
 		<French>Établir un poste de traite dans le village pour générer progressivement des trésors.</French>
 		<German>Einen Handelsposten errichten, um mit den Ureinwohnern Handel zu treiben und Schätze zu erzeugen.</German>
 		<Italian>Stabilire un Trading Post nel villaggio per generare gradualmente dei tesori.</Italian>
