@@ -4461,7 +4461,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LAUNCH</Tag>
 		<English>Launch!</English>
-		<Portuguese>Lançamento!</Portuguese>
+		<Portuguese>Começar!</Portuguese>
 		<French>Lancer</French>
 		<German>Start!</German>
 		<Italian>Avvia!</Italian>
@@ -7046,7 +7046,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_REJECT_LAUNCHING_DESC</Tag>
 		<English>The chosen game is currently launching. Unable to connect at this time.</English>
-		<Portuguese>O jogo escolhido está sendo lançado. Não é possível conectar neste momento.</Portuguese>
+		<Portuguese>O jogo escolhido está começando. Não é possível conectar neste momento.</Portuguese>
 		<French>La partie choisie est en cours de lancement. Connexion impossible pour l'instant.</French>
 		<German>Das gewählte Spiel wird zurzeit gestartet. Ein Verbindungsaufbau ist gegenwärtig nicht möglich.</German>
 		<Italian>La partita scelta è in avvio. Impossibile connettersi in questo momento.</Italian>

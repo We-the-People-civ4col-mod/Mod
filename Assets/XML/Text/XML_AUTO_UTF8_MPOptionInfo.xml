@@ -30,7 +30,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_SHUFFLE_TEAMS_HELP</Tag>
 		<English>The human members of each team will be randomly reassigned upon game launch</English>
-		<Portuguese>Os membros humanos de cada equipe serão reatribuídos aleatoriamente no lançamento do jogo</Portuguese>
+		<Portuguese>Os membros humanos de cada equipe serão reatribuídos aleatoriamente no início do jogo</Portuguese>
 		<French>À chaque lancement de partie, la répartition par équipe des joueurs humains sera tirée au sort.</French>
 		<German>Bei jedem Spielstart erfolgt eine zufällige Teamzuweisung der menschlichen Spieler.</German>
 		<Italian>I membri umani delle squadre verranno riassegnati casualmente all'avvio della partita</Italian>
