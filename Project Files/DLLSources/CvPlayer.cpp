@@ -6094,7 +6094,8 @@ int CvPlayer::getFoundCityMinRange(const CvPlot* pPlot) const
 
 	// 2-plot radius: always reduce by 1. 1-plot keeps the 3x3 ownership check
 	// so close colonies are for filling gaps, not the first wave.
-	if (GC.getGameINLINE().isOption(GAMEOPTION_TWO_PLOT_CITY_RADIUS))
+	// Use CITY_PLOTS_RADIUS: random maps can set radius without the game option.
+	if (CITY_PLOTS_RADIUS == 2)
 	{
 		return iRange - 1;
 	}
