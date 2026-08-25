@@ -327,7 +327,7 @@
 	<TEXT>
 		<Tag>AI_DIPLO_PEACE_14</Tag>
 		<English>So be it.</English>
-		<Portuguese>So be it.</Portuguese>
+		<Portuguese>Que assim seja.</Portuguese>
 		<French>Qu'il en soit ainsi.</French>
 		<German>So sei es.</German>
 		<Italian>Devo applaudire alla tua saggezza.</Italian>
@@ -4340,7 +4340,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_WAR_RESPONSE_1</Tag>
 		<English>So be it.</English>
-		<Portuguese>So be it.</Portuguese>
+		<Portuguese>Que assim seja.</Portuguese>
 		<French>Qu'il en soit ainsi.</French>
 		<German>So sei es!</German>
 		<Italian>Così sia.</Italian>
@@ -4362,7 +4362,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_PROPOSE_1</Tag>
 		<English>Would you accept this deal?</English>
-		<Portuguese>Você aceitaria esse acordo?</Portuguese>
+		<Portuguese>Aceitaria esse acordo?</Portuguese>
 		<French>Acceptez-vous ce marché ?</French>
 		<German>Schlagt Ihr ein?</German>
 		<Italian>Accetterai questa proposta?</Italian>
@@ -4384,7 +4384,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_REJECT_1</Tag>
 		<English>Sorry, we cannot accept such a deal.</English>
-		<Portuguese>Desculpe, não podemos aceitar tal acordo.</Portuguese>
+		<Portuguese>Não podemos aceitar esse acordo.</Portuguese>
 		<French>Je regrette, nous ne pouvons pas accepter.</French>
 		<German>Tut mir Leid, aber darauf können wir uns nicht einlassen.</German>
 		<Italian>Mi spiace, ma non possiamo accettare una proposta del genere.</Italian>
@@ -4395,7 +4395,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_OFFER_1</Tag>
 		<English>What do you want for this?</English>
-		<Portuguese>O que você quer para isso?</Portuguese>
+		<Portuguese>O que quer por isso?</Portuguese>
 		<French>Que désirez-vous en échange ?</French>
 		<German>Was verlangt Ihr dafür?</German>
 		<Italian>Cosa vuoi in cambio?</Italian>
@@ -4406,7 +4406,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_GIFT_1</Tag>
 		<English>Please, accept this gift.</English>
-		<Portuguese>Por favor, aceite este presente.</Portuguese>
+		<Portuguese>Aceite este presente.</Portuguese>
 		<French>Je vous en prie, acceptez ce cadeau.</French>
 		<German>Bitte, nehmt dieses Geschenk an.</German>
 		<Italian>Ti prego, accetta questo dono.</Italian>
@@ -4428,7 +4428,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_PROPOSAL_1</Tag>
 		<English>We would like to make a trade proposal...</English>
-		<Portuguese>Gostaríamos de fazer uma proposta comercial...</Portuguese>
+		<Portuguese>Fazer proposta comercial...</Portuguese>
 		<French>Nous aimerions vous faire une proposition commerciale.</French>
 		<German>Wir möchten Euch einen Handel vorschlagen...</German>
 		<Italian>Vorremmo fare un'offerta commerciale.</Italian>
@@ -4439,7 +4439,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_COMPLETE_DEAL_1</Tag>
 		<English>What would make this deal work?</English>
-		<Portuguese>O que faria esse acordo funcionar?</Portuguese>
+		<Portuguese>O que fecha esse acordo?</Portuguese>
 		<French>Que proposez-vous ?</French>
 		<German>Wie können wir handelseinig werden?</German>
 		<Italian>Cosa chiedi in cambio per concludere l'affare?</Italian>
@@ -4450,7 +4450,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_FISH_FOR_DEAL_1</Tag>
 		<English>What will you give me for this?</English>
-		<Portuguese>O que você vai me dar por isso?</Portuguese>
+		<Portuguese>O que dá por isso?</Portuguese>
 		<French>Que nous donnerez-vous en échange de ceci ?</French>
 		<German>Was werdet Ihr mir hierfür geben?</German>
 		<Italian>Cosa puoi darmi in cambio di questo?</Italian>
@@ -4461,7 +4461,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_SUGGEST_PEACE_1</Tag>
 		<English>Let's stop this pointless fighting and declare peace!</English>
-		<Portuguese>Vamos parar com essa luta inútil e declarar a paz!</Portuguese>
+		<Portuguese>Paremos essa luta e façamos paz!</Portuguese>
 		<French>Mettons fin à cette guerre inutile et faisons la paix !</French>
 		<German>Lasst uns dieses sinnlose Kämpfen beenden und Frieden schließen!</German>
 		<Italian>Interrompiamo questi combattimenti senza senso e dichiariamo la pace!</Italian>
@@ -4472,7 +4472,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_OFFER_PEACE_1</Tag>
 		<English>Let us bury the hatchet. What is the price for peace?</English>
-		<Portuguese>Vamos enterrar a machadinha. Qual é o preço da paz?</Portuguese>
+		<Portuguese>Enterremos a machadinha. Qual o preço da paz?</Portuguese>
 		<French>Enterrons la hache de guerre. Quel est le prix de la paix ?</French>
 		<German>Was verlangt Ihr, damit wieder Frieden herrscht?</German>
 		<Italian>Seppelliamo l'ascia di guerra. Qual è il prezzo della pace?</Italian>
@@ -4483,7 +4483,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_CURRENT_DEALS_1</Tag>
 		<English>What are the current deals we have together?</English>
-		<Portuguese>Quais são os acordos atuais que temos juntos?</Portuguese>
+		<Portuguese>Quais acordos temos juntos?</Portuguese>
 		<French>Quels accords avons-nous ensemble ?</French>
 		<German>Welche Vereinbarungen haben wir bisher getroffen?</German>
 		<Italian>Che accordi abbiamo in comune?</Italian>
@@ -4494,7 +4494,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ASK_1</Tag>
 		<English>Could you spare this for a good friend?</English>
-		<Portuguese>Você poderia dispensar isso para um bom amigo?</Portuguese>
+		<Portuguese>Dispensaria isso a um amigo?</Portuguese>
 		<French>Pourriez-vous donner ceci à un bon ami ?</French>
 		<German>Würdet Ihr einem guten Freund diesen kleinen Gefallen tun?</German>
 		<Italian>Avresti un po' di questi, in nome della nostra amicizia?</Italian>
@@ -4505,7 +4505,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_DEMAND_1</Tag>
 		<English>We demand that you give this to us in tribute.</English>
-		<Portuguese>Exigimos que você nos dê isso em homenagem.</Portuguese>
+		<Portuguese>Exigimos isso como tributo.</Portuguese>
 		<French>Nous vous demandons ce tribut.</French>
 		<German>Wir verlangen, dass Ihr dies als Tribut an uns entrichtet!</German>
 		<Italian>Ti chiediamo di darci questo tributo.</Italian>
@@ -4538,7 +4538,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_REJECT_OFFER_1</Tag>
 		<English>It ain't happening.</English>
-		<Portuguese>Isso não está acontecendo.</Portuguese>
+		<Portuguese>Isso não vai acontecer.</Portuguese>
 		<French>Certainement pas.</French>
 		<German>Das wird nicht passieren.</German>
 		<Italian>Non succederà.</Italian>
@@ -4571,7 +4571,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_GIVE_HELP_1</Tag>
 		<English>Sure! We're always glad to help!</English>
-		<Portuguese>Claro! Estamos sempre felizes em ajudar!</Portuguese>
+		<Portuguese>Claro, sempre ajudamos!</Portuguese>
 		<French>Bien sûr ! Nous sommes toujours ravis de rendre service !</French>
 		<German>Sicher! Wir helfen doch immer gern!</German>
 		<Italian>Certo! Siamo sempre felici di aiutare.</Italian>
@@ -4593,7 +4593,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACCEPT_DEMAND_1</Tag>
 		<English>Well, if you insist...</English>
-		<Portuguese>Bem, se você insiste...</Portuguese>
+		<Portuguese>Se insiste...</Portuguese>
 		<French>Très bien, si vous insistez...</French>
 		<German>Nun, wenn Ihr darauf besteht ...</German>
 		<Italian>Bene, se insisti...</Italian>
@@ -4659,7 +4659,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_STOP_TRADING_1</Tag>
 		<English>You're right, we can't stand them either! (Cancel Deals)</English>
-		<Portuguese>Você está certo, nós também não os suportamos! (Cancelar ofertas)</Portuguese>
+		<Portuguese>Também não os suportamos! (Cancelar Ofertas)</Portuguese>
 		<French>Vous avez raison, nous ne les supportons pas non plus ! (Annulation des accords)</French>
 		<German>Ihr habt Recht! Wir können sie auch nicht ausstehen! (Vereinbarungen auflösen)</German>
 		<Italian>Hai ragione, anche noi non li sopportiamo più! (Annulla gli accordi)</Italian>
@@ -4670,7 +4670,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_NO_STOP_TRADING_1</Tag>
 		<English>Sorry, but we just can't turn our back on them.</English>
-		<Portuguese>Desculpe, mas não podemos virar as costas para eles.</Portuguese>
+		<Portuguese>Não podemos virar as costas a eles.</Portuguese>
 		<French>Je regrette, nous ne pouvons pas leur tourner le dos ainsi.</French>
 		<German>Tut mir Leid, aber wir können ihnen nicht einfach den Rücken zukehren.</German>
 		<Italian>Mi spiace, ma non possiamo voltar loro le spalle.</Italian>
@@ -4692,7 +4692,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ATTITUDE_1</Tag>
 		<English>What do you think of...</English>
-		<Portuguese>O que você acha...</Portuguese>
+		<Portuguese>O que acha de...</Portuguese>
 		<French>Que pensez-vous de...</French>
 		<German>Was haltet Ihr von ...</German>
 		<Italian>Che ne pensi di...</Italian>
@@ -4713,7 +4713,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_TARGET_1</Tag>
 		<English>Why don't you attack...</English>
-		<Portuguese>Por que você não ataca...</Portuguese>
+		<Portuguese>Por que não ataca...</Portuguese>
 		<French>Pourquoi n'attaquez-vous pas...</French>
 		<German>Warum startet Ihr keinen Angriff gegen ...</German>
 		<Italian>Perché non attacchi...</Italian>
@@ -7060,7 +7060,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_FOUND_FIRST_CITY_1</Tag>
 		<English>As strangers, we give thanks for the hospitality shown to us.</English>
-		<Portuguese>Como estranhos, agradecemos a hospitalidade que nos foi demonstrada.</Portuguese>
+		<Portuguese>Agradecemos a hospitalidade.</Portuguese>
 		<French>En tant qu'étrangers, nous rendons grâce pour l'hospitalité qui nous est offerte.</French>
 		<German>Wir danken als Fremde für die Gastfreundschaft, die man uns erweist.</German>
 		<Italian>Come stranieri, rendiamo grazie per l'ospitalità che ci è stata mostrata.</Italian>
@@ -8008,7 +8008,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_KING_GIVE_GOLD_1</Tag>
 		<English>Your Majesty, it is an honour. (Meet demand, maximum tax rate decreases)</English>
-		<Portuguese>Sua Majestade, é uma honra. (Atender à demanda, a alíquota máxima de imposto diminui)</Portuguese>
+		<Portuguese>Sua Majestade, é uma honra. (Atender à Demanda, Alíquota Máxima de Imposto Diminui)</Portuguese>
 		<French>Votre Majesté, c'est un honneur. (Répondre à la demande, le taux d'imposition maximum diminue)</French>
 		<German>Eure Majestät, es sei mir eine Ehre. (Forderung erfüllen, maximaler Steuersatz sinkt)</German>
 		<Italian>Vostra Maestà, è un onore. (Soddisfare la domanda, l'aliquota massima diminuisce)</Italian>
@@ -8019,7 +8019,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_KING_GIVE_GOLD_2</Tag>
 		<English>Only so little? Thank You, Your Majesty. (Meet demand, maximum tax rate decreases)</English>
-		<Portuguese>Só tão pouco? Obrigado, Sua Majestade. (Atender à demanda, a alíquota máxima de imposto diminui)</Portuguese>
+		<Portuguese>Só tão pouco? Obrigado, Sua Majestade. (Atender à Demanda, Alíquota Máxima de Imposto Diminui)</Portuguese>
 		<French>Seulement si peu ? Merci, Votre Majesté. (Répondre à la demande, le taux d'imposition maximum diminue)</French>
 		<German>Nur so wenig? Danke, Eure Majestät. (Forderung erfüllen, maximaler Steuersatz sinkt)</German>
 		<Italian>Solo così poco? Grazie, Vostra Maestà. (Soddisfare la domanda, l'aliquota massima diminuisce)</Italian>
@@ -8030,7 +8030,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_KING_GIVE_GOLD_3</Tag>
 		<English>I am Your Majesty's most humble subject. (Meet demand, maximum tax rate decreases)</English>
-		<Portuguese>Sou o súbdito mais humilde de Vossa Majestade. (Atender à demanda, a alíquota máxima de imposto diminui)</Portuguese>
+		<Portuguese>Sou o súdito mais humilde, Majestade. (Atender à Demanda, Alíquota Máxima de Imposto Diminui)</Portuguese>
 		<French>Je suis le très humble sujet de Votre Majesté. (Répondre à la demande, le taux d'imposition maximum diminue)</French>
 		<German>Ich bin Eurer Majestäts demütigster Untertan. (Forderung erfüllen, maximaler Steuersatz sinkt)</German>
 		<Italian>Sono il più umile suddito di Vostra Maestà. (Soddisfare la domanda, l'aliquota massima diminuisce)</Italian>
@@ -8041,7 +8041,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_KING_GIVE_GOLD_4</Tag>
 		<English>Your wish is my command, Your Majesty. (Meet demand, maximum tax rate decreases)</English>
-		<Portuguese>Seu desejo é uma ordem, Vossa Majestade. (Atender à demanda, a alíquota máxima de imposto diminui)</Portuguese>
+		<Portuguese>Seu desejo é uma ordem, Vossa Majestade. (Atender à Demanda, Alíquota Máxima de Imposto Diminui)</Portuguese>
 		<French>Vos désirs sont des ordres, Votre Majesté. (Répondre à la demande, le taux d'imposition maximum diminue)</French>
 		<German>Euer Wunsch sei mir Befehl, Eure Majestät. (Forderung erfüllen, maximaler Steuersatz sinkt)</German>
 		<Italian>Il vostro desiderio è un ordine, Vostra Maestà. (Soddisfare la domanda, l'aliquota massima diminuisce)</Italian>
@@ -8052,7 +8052,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_KING_GIVE_GOLD_5</Tag>
 		<English>Yes, Your Majesty! Of course! Gladly. (Meet demand, maximum tax rate decreases)</English>
-		<Portuguese>Sim, Vossa Majestade! Claro! Com prazer. (Atender à demanda, a alíquota máxima de imposto diminui)</Portuguese>
+		<Portuguese>Sim, Vossa Majestade! Claro! Com prazer. (Atender à Demanda, Alíquota Máxima de Imposto Diminui)</Portuguese>
 		<French>Oui, Votre Majesté ! Bien sûr ! Avec plaisir. (Répondre à la demande, le taux d'imposition maximum diminue)</French>
 		<German>Jawohl, Eure Majestät ! Aber sicher! Gerne. (Forderung erfüllen, maximaler Steuersatz sinkt)</German>
 		<Italian>Sì, Vostra Maestà! Certamente! Con piacere. (Soddisfare la domanda, l'aliquota massima diminuisce)</Italian>
@@ -8063,7 +8063,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_KING_REFUSE_GOLD_1</Tag>
 		<English>No, Your Majesty! We already pay taxes. That is enough. (Annoy king, maximum tax rate increases)</English>
-		<Portuguese>Não, Sua Majestade! Já pagamos impostos. Isso é o suficiente. (Irrita o rei, a taxa máxima de imposto aumenta)</Portuguese>
+		<Portuguese>Não, Sua Majestade! Já pagamos impostos. Isso é o suficiente. (Irritar o Rei, Taxa Máxima de Imposto Aumenta)</Portuguese>
 		<French>Non, Votre Majesté ! Nous payons déjà des taxes. C'est bien assez. (Rendre le roi furieux, le taux d'imposition maximum)</French>
 		<German>Eure Majestät, Eure Untertanen können kein Gold scheißen. (König verärgern, maximaler Steuersatz steigt)</German>
 		<Italian>No, Vostra Maestà! Paghiamo già le tasse. Questo è sufficiente. (Fai arrabbiare il re, il tasso massimo di tasse aumenta)</Italian>
@@ -8074,7 +8074,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_KING_REFUSE_GOLD_2</Tag>
 		<English>Your Majesty, You confuse me with Saint Nicholas. (Annoy king, maximum tax rate increases)</English>
-		<Portuguese>Sua Majestade, você me confunde com São Nicolau. (Irrita o rei, a taxa máxima de imposto aumenta)</Portuguese>
+		<Portuguese>Sua Majestade, você me confunde com São Nicolau. (Irritar o Rei, Taxa Máxima de Imposto Aumenta)</Portuguese>
 		<French>Votre Majesté, vous me confondez avec Saint Nicolas. (Rendre le roi furieux, le taux d'imposition maximum)</French>
 		<German>Eure Majestät, Ihr verwechselt mich mit Sankt Nikolaus. (König verärgern, maximaler Steuersatz steigt)</German>
 		<Italian>Vostra Maestà, voi mi confondete con San Nicola. (Fai arrabbiare il re, il tasso massimo di tasse aumenta)</Italian>
@@ -8085,7 +8085,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_KING_REFUSE_GOLD_3</Tag>
 		<English>Perhaps You should economise, Your Majesty. (Annoy king, maximum tax rate increases)</English>
-		<Portuguese>Talvez você devesse economizar, Majestade. (Irrita o rei, a taxa máxima de imposto aumenta)</Portuguese>
+		<Portuguese>Talvez você devesse economizar, Majestade. (Irritar o Rei, Taxa Máxima de Imposto Aumenta)</Portuguese>
 		<French>Peut-être devriez-vous économiser, Votre Majesté ? (Rendre le roi furieux, le taux d'imposition maximum)</French>
 		<German>Vielleicht solltet Ihr sparsamer wirtschaften, Eure Majestät? (König verärgern, maximaler Steuersatz steigt)</German>
 		<Italian>Forse dovreste fare economia, Vostra Maestà? (Fai arrabbiare il re, il tasso massimo di tasse aumenta)</Italian>
@@ -8096,7 +8096,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_KING_REFUSE_GOLD_4</Tag>
 		<English>Maybe some other time. Not now. (Annoy king, maximum tax rate increases)</English>
-		<Portuguese>Talvez em outra hora. Agora não. (Irrita o rei, a taxa máxima de imposto aumenta)</Portuguese>
+		<Portuguese>Talvez em outra hora. Agora não. (Irritar o Rei, Taxa Máxima de Imposto Aumenta)</Portuguese>
 		<French>Peut-être une autre fois. Mais pas maintenant. (Rendre le roi furieux, le taux d'imposition maximum)</French>
 		<German>Vielleicht ein andermal. Jetzt nicht. (König verärgern, maximaler Steuersatz steigt)</German>
 		<Italian>Forse un'altra volta. Non ora. (Fai arrabbiare il re, il tasso massimo di tasse aumenta)</Italian>
@@ -8107,7 +8107,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_KING_REFUSE_GOLD_5</Tag>
 		<English>With respect, Your Majesty - no way! (Annoy king, maximum tax rate increases)</English>
-		<Portuguese>Com todo o respeito, Vossa Majestade - de jeito nenhum! (Irrita o rei, a taxa máxima de imposto aumenta)</Portuguese>
+		<Portuguese>Com todo o respeito, Vossa Majestade - de jeito nenhum! (Irritar o Rei, Taxa Máxima de Imposto Aumenta)</Portuguese>
 		<French>Avec respect, Votre Majesté - pas question ! (Rendre le roi furieux, le taux d'imposition maximum augmente)</French>
 		<German>Bei allem Respekt, Eure Majestät - auf keinen Fall! (König verärgern, maximaler Steuersatz steigt)</German>
 		<Italian>Con tutto il rispetto, Vostra Maestà - non se ne parla! (Fai arrabbiare il re, il tasso massimo di tasse aumenta)</Italian>
@@ -8261,7 +8261,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_FOUND_CITY_INLAND_NO_1</Tag>
 		<English>You're right. We should settle along the coast.</English>
-		<Portuguese>Você está certo. Devíamos estabelecer-nos ao longo da costa.</Portuguese>
+		<Portuguese>Tem razão. Melhor colonizar a costa.</Portuguese>
 		<French>Vous avez raison, nous devrions nous installer le long de la côte.</French>
 		<German>Ihr habt Recht. Wir sollten uns an der Küste ansiedeln.</German>
 		<Italian>Hai ragione, dovremmo insediarci lungo la costa.</Italian>
@@ -8272,7 +8272,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_FOUND_CITY_BUY_2</Tag>
 		<English>We accept your price. (Found Settlement, Buy Land)</English>
-		<Portuguese>Aceitamos o preço. (Fundar colônia, comprar terra)</Portuguese>
+		<Portuguese>Aceitamos o preço. (Fundar Colônia, Comprar Terra)</Portuguese>
 		<French>Nous acceptons votre prix. (Fonder une colonie, acheter la terre)</French>
 		<German>Wir akzeptieren Euren Preis. (Siedlung gründen, Land kaufen)</German>
 		<Italian>Accettiamo il vostro prezzo. (Costruisci insediamento, acquista terra)</Italian>
@@ -8283,7 +8283,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_FOUND_CITY_TAKE_2</Tag>
 		<English>This land is rightfully ours. (Found Settlement, Anger Natives)</English>
-		<Portuguese>Esta terra é nossa. (Fundar colônia, irritar nativos)</Portuguese>
+		<Portuguese>Esta terra é nossa. (Fundar Colônia, Irritar Nativos)</Portuguese>
 		<French>Cette terre nous appartient de droit. (Fonder une colonie, contrarier les indigènes)</French>
 		<German>Dieses Land gehört von Rechts wegen uns. (Siedlung gründen, Eingeborene verärgern)</German>
 		<Italian>Questa terra ci appartiene di diritto. (Costruisci insediamento, fai arrabbiare i nativi)</Italian>
@@ -8294,7 +8294,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_CITY_BUY_2</Tag>
 		<English>That sounds fair. (Buy Land)</English>
-		<Portuguese>Isso parece justo. (Comprar terreno)</Portuguese>
+		<Portuguese>Isso parece justo. (Comprar Terra)</Portuguese>
 		<French>Très bien, cela semble honnête. (Acheter les terres)</French>
 		<German>Das klingt gerecht! (Land kaufen)</German>
 		<Italian>Mi sembra giusto. (Comprare la terra)</Italian>
@@ -8305,7 +8305,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_CITY_TAKE_2</Tag>
 		<English>Anyone can tell stories like that. (Confiscate land, Anger Natives)</English>
-		<Portuguese>Qualquer um conta essas histórias. (Confiscar terras, irritar nativos)</Portuguese>
+		<Portuguese>Qualquer um conta essas histórias. (Confiscar Terras, Irritar Nativos)</Portuguese>
 		<French>Tout le monde peut raconter une histoire comme celle-là. (S'emparer des terres, contrarier les indigènes)</French>
 		<German>Solche Geschichten kann ja jeder erzählen. (Land beschlagnahmen, Eingeborene verärgern)</German>
 		<Italian>Chiunque può raccontare storie del genere. (Confiscare la terra, far arrabbiare i nativi)</Italian>
@@ -8316,7 +8316,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_MERC</Tag>
 		<English>Excellent, we can make good use of your warriors! (Hire mercenaries)</English>
-		<Portuguese>Excelente, podemos fazer bom uso de seus guerreiros! (Contratar mercenários)</Portuguese>
+		<Portuguese>Excelente, usaremos seus guerreiros! (Contratar Mercenários)</Portuguese>
 		<French>Excellent, nous pouvons utiliser vos combattants ! (Recruter des mercenaires)</French>
 		<German>Hervorragend, wir können Eure Kämpfer gut gebrauchen! (Söldner anwerben)</German>
 		<Italian>Eccellente, possiamo fare buon uso dei vostri guerrieri! (Assumere mercenari)</Italian>
@@ -8327,7 +8327,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_MERC_CHEAP</Tag>
 		<English>That's a lot for inexperienced warriors. We can give you half of that. (Recruit mercenaries at half price, 50% probability for relationship penalty of -1)</English>
-		<Portuguese>Isso é muito para guerreiros inexperientes. Podemos lhe dar metade disso. (Recrute mercenários pela metade do preço, 50% de probabilidade de penalidade de relacionamento de -1)</Portuguese>
+		<Portuguese>Isso é muito para guerreiros inexperientes. Podemos lhe dar metade disso. (Recrutar Mercenários pela Metade, 50% Penalidade de Relação)</Portuguese>
 		<French>C'est très cher pour de la bleusaille. Nous vous en offrons la moitié. (Recrutement de mercenaires à moitié prix, 50% de chances pour une pénalité de relation de -1)</French>
 		<German>Das ist viel Gold für solche unerfahrenen Burschen. Wir geben euch die Hälfte. (Söldner zum halben Preis anwerben, 50% Wahrscheinlichkeit für Beziehungsmalus von -1)</German>
 		<Italian>È un sacco di oro per gente così inesperta. Vi daremo la metà. (Reclutamento di mercenari a metà prezzo, 50% di possibilità di penalità di relazione di -1)</Italian>
@@ -8338,7 +8338,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_MERC_CANNOT</Tag>
 		<English>A friendly offer! But not at present. (Do not recruit mercenaries)</English>
-		<Portuguese>Uma oferta amigável! Mas não neste momento. (Não recrute mercenários)</Portuguese>
+		<Portuguese>Uma oferta amigável! Mas não neste momento. (Não Recrutar Mercenários)</Portuguese>
 		<French>Une offre généreuse ! Mais pas pour le moment. (Ne pas recruter de mercenaires)</French>
 		<German>Ein freundliches Angebot! Derzeit aber nicht. (Söldner nicht anwerben)</German>
 		<Italian>Un'offerta amichevole! Ma non al momento. (Non reclutare mercenari)</Italian>
@@ -8349,7 +8349,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_NATIVE_SLAVE</Tag>
 		<English>Great! We can really use more workers. (Buy slaves)</English>
-		<Portuguese>Ótimo, precisamos de trabalhadores. (Comprar escravos)</Portuguese>
+		<Portuguese>Ótimo, precisamos de trabalhadores. (Comprar Escravos)</Portuguese>
 		<French>Excellent, nous avons besoin de plus de travailleurs ! (Achat d'esclaves)</French>
 		<German>Hervorragend, wir können weitere Arbeiter gut gebrauchen! (Sklaven kaufen)</German>
 		<Italian>Eccellente, possiamo usare più lavoratori! (Comprare schiavi)</Italian>
@@ -8360,7 +8360,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_NATIVE_SLAVE_CANNOT</Tag>
 		<English>A good offer! But not at present. (Do not buy slaves)</English>
-		<Portuguese>Uma boa oferta! Mas não neste momento. (Não compre escravos)</Portuguese>
+		<Portuguese>Uma boa oferta! Mas não neste momento. (Não Comprar Escravos)</Portuguese>
 		<French>Une bonne offre ! Mais pas en ce moment. (Ne pas acheter d'esclaves)</French>
 		<German>Ein gutes Angebot! Derzeit aber nicht. (Sklaven nicht kaufen)</German>
 		<Italian>Una buona offerta! Ma non al momento. (Non comprare schiavi)</Italian>
@@ -8371,7 +8371,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_AFRICAN_SLAVES</Tag>
 		<English>A very generous proposal which we thankfully accept, Your Majesty. More labour is always needed. (Buy slaves)</English>
-		<Portuguese>Aceitamos, Majestade. Precisamos de trabalhadores. (Comprar escravos)</Portuguese>
+		<Portuguese>Aceitamos, Majestade. Precisamos de trabalhadores. (Comprar Escravos)</Portuguese>
 		<French>Une offre très généreuse, que nous acceptons avec gratitude, Votre Majesté. Nous aurions besoin de plus de travailleurs. (Achat d'esclaves)</French>
 		<German>Ein sehr großzügiger Vorschlag, den wir dankend annehmen, Eure Majestät. Wir können weitere Arbeiter gut gebrauchen. (Sklaven kaufen)</German>
 		<Italian>Un'offerta molto generosa, che accettiamo con gratitudine, Vostra Maestà. Ci farebbe comodo qualche altro lavoratore. (Comprare schiavi)</Italian>
@@ -8492,7 +8492,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_CHURCH_FAVOUR_KING</Tag>
 		<English>Could you please speak on behalf of our cause to [COLOR_HIGHLIGHT_TEXT]our King[COLOR_REVERT]?</English>
-		<Portuguese>Você poderia falar em nome de nossa causa ao [COLOR_HIGHLIGHT_TEXT]nosso Rei[COLOR_REVERT]?</Portuguese>
+		<Portuguese>Falará de nossa causa ao [COLOR_HIGHLIGHT_TEXT]Rei[COLOR_REVERT]?</Portuguese>
 		<French>Pourriez-vous parler au [COLOR_HIGHLIGHT_TEXT]Roi[COLOR_REVERT] en notre faveur ?</French>
 		<German>Könntet Ihr bitte bei [COLOR_HIGHLIGHT_TEXT]unserem König[COLOR_REVERT] für unsere Sache sprechen?</German>
 		<Italian>Potresti parlare per la nostra causa al [COLOR_HIGHLIGHT_TEXT]nostro Re[COLOR_REVERT]?</Italian>
@@ -8503,7 +8503,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_CHURCH_FAVOUR_EUROPEAN</Tag>
 		<English>Could you please speak for our cause to [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]?</English>
-		<Portuguese>Você poderia falar pela nossa causa para [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]?</Portuguese>
+		<Portuguese>Falará de nossa causa a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]?</Portuguese>
 		<French>Pourriez-vous vous rapprocher de son Altesse, [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT], et parlez en notre faveur ?</French>
 		<German>Könntet Ihr bitte bei [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] für unsere Sache sprechen?</German>
 		<Italian>Potresti parlare per la nostra causa al [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]?</Italian>
@@ -8514,7 +8514,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_CHURCH_FAVOUR_FOUNDING_FATHERS</Tag>
 		<English>Could you please put in a good word with prominent personalities to join our Congress?</English>
-		<Portuguese>Você poderia, por favor, falar bem com personalidades proeminentes para se juntar ao nosso Congresso?</Portuguese>
+		<Portuguese>Falará bem de nós a Patronos do Congresso?</Portuguese>
 		<French>Pourriez-vous parler en notre faveur à de nobles hommes qui pourraient rejoindre notre congrès ?</French>
 		<German>Könntet Ihr bitte bei bekannten Persönlichkeiten ein gutes Wort einlegen, damit sie unserem Kongress beitreten?</German>
 		<Italian>Potresti mettere una buona parola con personalità note per unirsi al nostro congresso?</Italian>
@@ -8558,18 +8558,18 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_SMUGGLERS</Tag>
 		<English>Thank you for this hint, um warning, Your Majesty. We will act accordingly. (Hire smugglers)</English>
-		<Portuguese>Obrigado por esta dica, hum aviso, Sua Majestade. Agiremos em conformidade. (Contratar contrabandistas)</Portuguese>
+		<Portuguese>Obrigado pelo aviso, Majestade. (Contratar Contrabandistas)</Portuguese>
 		<French>Nous vous remercions pour ce conseil... enfin cette alerte, votre Majesté. Nous agirons en conséquences (Engager des contrebandiers)</French>
 		<German>Vielen Dank für diesen Hinweis, ähm diese Warnung, Eure Majestät. Wir werden uns umgehend darum kümmern. (Schmuggler anheuern)</German>
 		<Italian>Grazie per questo suggerimento, um avvertimento, Vostra Maestà. Agiremo di conseguenza. (Assumere contrabbandieri)</Italian>
-		<Spanish>Gracias por esta pista, um advertencia, Su Majestad. Actuaremos en consecuencia. (Contratar contrabandistas)</Spanish>
+		<Spanish>Gracias por esta pista, um advertencia, Su Majestad. Actuaremos en consecuencia. (Contratar Contrabandistas)</Spanish>
 		<Russian>Спасибо за этот намек, гм предупреждение, Ваше Величество. Мы поступим соответственно. (Нанять контрабандистов)</Russian>
 		<Hungarian>Köszönöm ezt a célzást, um figyelmeztetést, Felség. Ennek megfelelően fogunk cselekedni. (Csempészek felfogadása)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_PIRATES</Tag>
 		<English>We will give them letters of marque and let them fight in Your Majesty's name!</English>
-		<Portuguese>Daremos a eles cartas de corso e os deixaremos lutar em nome de Vossa Majestade!</Portuguese>
+		<Portuguese>Daremos cartas de corso em seu nome, Majestade!</Portuguese>
 		<French>Nous allons leur donner des lettres de marque et les laisser se battre en votre nom, votre Majesté !</French>
 		<German>Wir werden ihnen Kaperbriefe geben und sie in Namen Seiner Majestät kämpfen lassen!</German>
 		<Italian>Daremo loro lettere di marca e li lasceremo combattere in nome di Vostra Maestà!</Italian>
@@ -8580,7 +8580,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_BRIBE_PIRATES</Tag>
 		<English>We will bribe them to leave our ships in peace, Your Majesty!</English>
-		<Portuguese>Vamos suborná-los para que deixem nossos navios em paz, Majestade!</Portuguese>
+		<Portuguese>Subornaremos os piratas, Majestade!</Portuguese>
 		<French>Nous allons les soudoyer pour laisser nos navires en paix, votre Majesté !</French>
 		<German>Wir werden sie bestechen, damit sie unsere Schiffe in Ruhe lassen, Eure Majestät !</German>
 		<Italian>Li corromperemo per lasciare le nostre navi in pace, Vostra Maestà!</Italian>
@@ -8646,7 +8646,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ACQUIRE_RANGERS</Tag>
 		<English>What a brilliant idea, Your Majesty! (Train Rangers)</English>
-		<Portuguese>Que ideia brilhante, Majestade! (Treinar rangers)</Portuguese>
+		<Portuguese>Que ideia brilhante, Majestade! (Treinar Rangers)</Portuguese>
 		<French>Quelle idée brillante, votre Majesté ! (Entraîner des gardes-forestiers)</French>
 		<German>Dies ist eine brilliante Idee, Eure Majestät ! (Ranger ausbilden)</German>
 		<Italian>Che idea geniale, Vostra Maestà! (Rangers del treno)</Italian>
@@ -8690,7 +8690,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_REV_NEED_LAND</Tag>
 		<English>Thank your sovereign and tell him that we need more land forces. (Get troops)</English>
-		<Portuguese>Precisamos de mais tropas terrestres. (Obter tropas)</Portuguese>
+		<Portuguese>Precisamos de mais tropas terrestres. (Obter Tropas)</Portuguese>
 		<French>Remerciez votre souverain et dites-lui que nous avons besoin de plus de forces terrestres. (Obtenir des troupes)</French>
 		<German>Dankt Eurem Herrscher und richtet ihm aus, dass wir mehr Truppen gebrauchen können. (Truppen bekommen)</German>
 		<Italian>Ringraziate il vostro sovrano e ditegli che abbiamo bisogno di più forze di terra. (Ottenere truppe)</Italian>
@@ -8701,7 +8701,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_REV_NEED_SEA</Tag>
 		<English>Thank your sovereign and tell him we need a stronger navy. (Get warships)</English>
-		<Portuguese>Precisamos de uma marinha mais forte. (Obter navios de guerra)</Portuguese>
+		<Portuguese>Precisamos de uma marinha mais forte. (Obter Navios de Guerra)</Portuguese>
 		<French>Remerciez votre souverain et dites-lui que nous avons besoin de forces navales plus fortes. (Obtenir des navires de guerre)</French>
 		<German>Dankt Eurem Herrscher und richtet ihm aus, dass wir stärkere Kriegsschiffe gebrauchen können. (Kriegsschiffe bekommen)</German>
 		<Italian>Ringraziate il vostro sovrano e ditegli che abbiamo bisogno di forze navali più forti. (Ottenere navi da guerra)</Italian>
@@ -8712,7 +8712,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_EUROPE_WAR_YES</Tag>
 		<English>As You wish, Your Majesty! (Declare war, maximum tax rate decreases)</English>
-		<Portuguese>Como desejar, Sua Majestade! (Declarar guerra, a taxa máxima de imposto diminui)</Portuguese>
+		<Portuguese>Como desejar, Sua Majestade! (Declarar Guerra, Taxa Máxima de Imposto Diminui)</Portuguese>
 		<French>Comme vous le souhaitez, Votre Majesté ! (Déclarer la guerre, le taux d'imposition maximum diminue)</French>
 		<German>Wie Ihr beliebt, Eure Majestät ! (Krieg erklären, maximaler Steuersatz sinkt)</German>
 		<Italian>Come desiderate, Vostra Maestà! (Dichiarare la guerra, l'aliquota fiscale massima diminuisce)</Italian>
@@ -8723,7 +8723,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_EUROPE_WAR_YES_BUT</Tag>
 		<English>In principle, we would be happy to, Your Majesty. If You support us. (Declare war, get troops)</English>
-		<Portuguese>Em princípio, ficaríamos felizes em fazê-lo, Majestade. Se você nos apoiar. (Declarar guerra, conseguir tropas)</Portuguese>
+		<Portuguese>Faremos se nos apoiar, Majestade. (Declarar Guerra, Obter Tropas)</Portuguese>
 		<French>En principe, nous sommes vos obligés, Votre Majesté. Si vous nous envoyez des renforts. (Déclarer la guerre, obtenir des troupes)</French>
 		<German>Grundsätzlich gerne, Eure Majestät. Wenn Ihr uns dabei unterstützt. (Krieg erklären, Truppen bekommen)</German>
 		<Italian>In linea di principio, Vostra Maestà. Se ci sosterrete. (Dichiarare guerra, ottenere truppe)</Italian>
@@ -8734,7 +8734,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_EUROPE_WAR_NO</Tag>
 		<English>My regrets, Your Majesty. It does not seem appropriate at this time. (Relationship with other nation improves, maximum tax rate increases)</English>
-		<Portuguese>Lamento muito, Vossa Majestade. Não parece apropriado neste momento. (O relacionamento com outra nação melhora, a taxa máxima de imposto aumenta)</Portuguese>
+		<Portuguese>Lamento muito, Vossa Majestade. Não parece apropriado neste momento. (Relação com Outra Nação Melhora, Taxa Máxima de Imposto Aumenta)</Portuguese>
 		<French>Je suis désolé, Votre Majesté. Cela ne semble pas approprié en ce moment. (Les relations avec les autres nations s'améliorent, le taux d'imposition maximal augmente).</French>
 		<German>Ich bedauere, Eure Majestät. Das erscheint uns derzeit nicht angebracht. (Beziehung zur anderen Nation verbessert sich, maximaler Steuersatz steigt)</German>
 		<Italian>Mi dispiace, Vostra Maestà. Non sembra appropriato in questo momento. (La relazione con l'altra nazione migliora, l'aliquota fiscale massima aumenta)</Italian>
@@ -8745,7 +8745,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_EUROPE_PEACE_YES</Tag>
 		<English>As you wish, Your Majesty! (War ends, diplomats are sent)</English>
-		<Portuguese>Como desejar, Majestade! (A guerra termina, diplomatas são enviados)</Portuguese>
+		<Portuguese>Como desejar, Majestade! (Guerra Termina, Diplomatas Enviados)</Portuguese>
 		<French>Comme vous le souhaitez, Votre Majesté ! (Fin de la guerre, vous recez des diplomates)</French>
 		<German>Wie Ihr beliebt, Eure Majestät ! (Krieg wird beendet, Diplomaten werden entsendet)</German>
 		<Italian>Come desiderate, Vostra Maestà! (Guerra è finita, diplomatici vengono inviati)</Italian>
@@ -8756,7 +8756,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_EUROPE_PEACE_NO</Tag>
 		<English>My regrets, Your Majesty. It does not seem appropriate at this time. (King disappointed)</English>
-		<Portuguese>Lamento muito, Vossa Majestade. Não parece apropriado neste momento. (Rei desapontado)</Portuguese>
+		<Portuguese>Lamento muito, Vossa Majestade. Não parece apropriado neste momento. (Rei Desapontado)</Portuguese>
 		<French>Je suis désolé, Votre Majesté. Cela ne semble pas approprié en ce moment. (Roi déçu)</French>
 		<German>Ich bedauere, Eure Majestät. Das erscheint uns derzeit nicht angebracht. (König enttäuscht)</German>
 		<Italian>Mi dispiace, Vostra Maestà. Non sembra appropriato in questo momento. (Re deluso)</Italian>
@@ -8767,7 +8767,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_FOUND_CITY_CANCEL_2</Tag>
 		<English>Let me think about it. (Do not found settlement)</English>
-		<Portuguese>Deixe-me pensar. (Não fundar colônia)</Portuguese>
+		<Portuguese>Deixe-me pensar. (Não Fundar Colônia)</Portuguese>
 		<French>Laissez-moi y réfléchir. (Ne pas fonder de colonie)</French>
 		<German>Lasst mich das überdenken. (Keine Siedlung gründen)</German>
 		<Italian>Fammici pensare. (Non costruire l'insediamento)</Italian>
@@ -9218,7 +9218,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_BARGAIN_BUY</Tag>
 		<English>That is too expensive. (Bargain for lower price)</English>
-		<Portuguese>Isso é muito caro. (Pechincha por preço mais baixo)</Portuguese>
+		<Portuguese>Isso é muito caro. (Pechinchar Preço Mais Baixo)</Portuguese>
 		<French>C'est trop cher. (Négocier un prix plus bas)</French>
 		<German>Das ist viel zu teuer. (Um niedrigeren Preis feilschen)</German>
 		<Italian>Questo è troppo costoso. (Affare per un prezzo più basso)</Italian>
@@ -9229,7 +9229,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_BARGAIN_SELL</Tag>
 		<English>That is not enough. (Bargain for higher price)</English>
-		<Portuguese>Isso não é suficiente. (Pechincha por preço mais alto)</Portuguese>
+		<Portuguese>Isso não é suficiente. (Pechinchar Preço Mais Alto)</Portuguese>
 		<French>Ce n'est pas assez. (Négocier un prix plus élevé)</French>
 		<German>Das ist viel zu wenig. (Um höheren Preis feilschen)</German>
 		<Italian>Questo non è sufficiente. (Contrattare per un prezzo più alto)</Italian>
@@ -9240,7 +9240,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_BARGAIN_ACCEPT</Tag>
 		<English>We accept this fair bargain. (Accept bargain)</English>
-		<Portuguese>Aceitamos este acordo justo. (Aceitar pechincha)</Portuguese>
+		<Portuguese>Aceitamos este acordo justo. (Aceitar Pechincha)</Portuguese>
 		<French>Nous acceptons ce commerce équitable. (Accepter l'échange)</French>
 		<German>Wir akzeptieren diesen fairen Handel. (Feilschen annehmen)</German>
 		<Italian>Accettiamo questo giusto accordo. (Accettare l'affare)</Italian>
@@ -9339,7 +9339,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_CHURCH_WAR_NO</Tag>
 		<English>Your Eminence, they may be pagans, but we believe that they are nevertheless good people. With more time they will certainly find God's salvation. (Refuse)</English>
-		<Portuguese>Eminência, eles podem ser pagãos, mas acreditamos que, mesmo assim, são boas pessoas. Com mais tempo certamente encontrarão a salvação de Deus. (Recusar)</Portuguese>
+		<Portuguese>São pagãos, mas boas pessoas. Recusamos. (Recusar)</Portuguese>
 		<French>Votre Sainteté, ce sont peut-être des sauvages mais nous les savons bons. Avec un peu plus de temps, nous saurons les guider vers la lumière. (Refuser)</French>
 		<German>Euer Eminenz, sie mögen Heiden sein, aber wir glauben, dass sie dennoch gute Menschen sind und mit etwas Zeit auch Gottes Erlösung finden werden. (Verweigern)</German>
 		<Italian>Eminenza, possono essere pagani, ma crediamo che siano comunque brave persone. Con più tempo troveranno certamente la salvezza di Dio. (Rifiuto)</Italian>
@@ -9414,7 +9414,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_COLONIAL_INTERVENTION_NATIVE_WAR_END</Tag>
 		<English>Very well, this time we will do as you wish. But a time will come when we ask a favour in exchange. (War ends, Attitude improved)</English>
-		<Portuguese>Muito bem, desta vez faremos o que você deseja. Mas chegará um momento em que pediremos um favor em troca. (A guerra termina, a atitude melhorou)</Portuguese>
+		<Portuguese>Faremos o que pede, mas cobraremos o favor. (Guerra Termina, Atitude Melhora)</Portuguese>
 		<French>Très bien, nous agirons selon vos souhaits cette fois-ci. Mais un jour viendra où nous demanderons une faveur en retour. (Fin de la guerre, l'attitude s'améliore)</French>
 		<German>Wir werden das Urteil Gottes über sie bringen, Euer Eminenz. (Krieg endet, Ansehen verbessert)</German>
 		<Russian>Очень хорошо, мы сделаем, как вы хотите на этот раз. Но придет время, когда мы попросим об одолжении взамен. (Война закончилась, отношения улучшились)</Russian>
@@ -9423,7 +9423,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_COLONIAL_INTERVENTION_NATIVE_WAR_CONTINUE</Tag>
 		<English>Impossible! These heathens must be purged by fire. (War continues, Attitude worsened, King and Church Attitude improved, Natives get War Support)</English>
-		<Portuguese>Impossível! Esses pagãos devem ser expurgados pelo fogo. (A guerra continua, a atitude piorou, a atitude do rei e da igreja melhorou, os nativos recebem apoio de guerra)</Portuguese>
+		<Portuguese>Impossível! Esses pagãos devem ser expurgados pelo fogo. (Guerra Continua, Atitude Piora, Rei e Igreja Melhoram, Nativos Recebem Apoio)</Portuguese>
 		<French>Impossible, ces païens doivent être passés par l'épée. (Poursuite de la guerre, les relations se crispent, le Roi et l'Église vous apprécient davantage, les Indigènes recoivent des renforts de guerre.) </French>
 		<German>Unmöglich, diese Heiden müssen durch Feuer gereinigt werden. (Krieg geht weit, Ansehen verschlechter, Ansehen bei König und Kirche verbessert, Ureinwohner erhalten Unterstützung)</German>
 		<Russian>Невозможно, этих язычников нужно очистить огнем. (Война продолжается, отношения ухудшились, отношение короля и церкви улучшилось, туземцы получают военную поддержку)</Russian>
@@ -9441,7 +9441,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR_REFUSE</Tag>
 		<English>We appreciate your offer to support us in these dire times, but escalating this war by involving Native allies on both sides would only cause more unnecessary bloodshed. (Refuse)</English>
-		<Portuguese>Agradecemos a sua oferta de apoio nestes tempos difíceis, mas a escalada desta guerra envolvendo aliados nativos de ambos os lados só causaria mais derramamento de sangue desnecessário. (Recusar)</Portuguese>
+		<Portuguese>Agradecemos, mas recusamos a escalada. (Recusar)</Portuguese>
 		<French>Nous apprécions votre soutien en ces temps troublés, mais impliquer davantage de monde dans cette guerre en enrôlant nos alliés Indiens signifiera encore plus de victimes inutiles. (Refuser)</French>
 		<German>Wir schätzen euer Angebot uns in dieser schweren Stunde zu unterstützen, aber eine Eskalation dieses Krieges durch die Einbeziehung der verbündeten Stämme beider Seiten, würde nur zu noch mehr unnötigem Blutverießen führen. (Ablehnen) </German>
 		<Russian>Мы ценим ваше предложение поддержать нас в эти ужасные времена, но эскалация этой войны с привлечением союзников из коренных народов с обеих сторон приведет только к еще большему ненужному кровопролитию. (Отказаться)</Russian>
@@ -9450,7 +9450,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPT</Tag>
 		<English>Let us teach those cowards and oath breakers a lessons. Your tribe shall get the weapons and horses you requested. In exchange you might send us a few warriors as scouts. (Accept)</English>
-		<Portuguese>Vamos ensinar uma lição a esses covardes e violadores de juramentos. Sua tribo receberá as armas e os cavalos que você solicitou. Em troca, você pode nos enviar alguns guerreiros como batedores. (Aceitar)</Portuguese>
+		<Portuguese>Ensinaremos a lição. Armas e cavalos pelos batedores. (Aceitar)</Portuguese>
 		<French>Donnons à ces lâches et ces traîtres conjurés une bonne leçon. Votre tribu recevra les armes et les chevaux que vous venz de deamnder. En échange, nous aurions besoins de quelques éclaireurs. (Accepter)</French>
 		<German>Lasst uns diese Feiglingen und Eidbrechern eine Lektion erteilen. Euer Stamm soll die erbetenen Waffen und Pferde erhalten. Schickt uns im Austausch einige Krieger als Führer. (Annehmen) </German>
 		<Russian>Давайте проучим этих трусов и нарушителей клятвы. Ваше племя получит оружие и лошадей, которые вы просили. Взамен вы могли бы отправить нам несколько воинов в качестве разведчиков. (Принять)</Russian>
@@ -9504,7 +9504,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ROYAL_INTERVENTION_YES_GOLD</Tag>
 		<English>We will gladly pay that price to receive Your Majesty's elite troops. Be assured this war will end soon. (pay gold)</English>
-		<Portuguese>Pagaremos esse preço com prazer para receber as tropas de elite de Vossa Majestade. Tenha certeza de que esta guerra terminará em breve. (pagar ouro)</Portuguese>
+		<Portuguese>Pagaremos pelas tropas de elite, Majestade. (Pagar Ouro)</Portuguese>
 		<French>Nous vous payons rubis sur l'ongle pour les troupes d'élite de Votre Majesté. Nous vous assurons que cette guerre se conclura bientôt. (Payer comptant avec de l'or)</French>
 		<German>Wir zahlen gerne diesen Preis um die Elite Truppen Ihrer Majestät zu bekommen! Seid versichert, dieser Krieg endet bald. (Gold bezahlen)</German>
 		<Russian>Мы с радостью заплатим эту цену, чтобы получить элитные войска Вашего Величества. Будьте уверены, эта война скоро закончится. (заплатить золотом)</Russian>
@@ -9513,7 +9513,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ROYAL_INTERVENTION_YES_TAX_INCREASE</Tag>
 		<English>Yes, we really could use those troops, your Majesty. The tax increase is better for us. (tax increase)</English>
-		<Portuguese>Sim, realmente poderíamos usar essas tropas, Majestade. O aumento de impostos é melhor para nós. (aumento de impostos)</Portuguese>
+		<Portuguese>Precisamos das tropas, Majestade. (Aumento de Impostos)</Portuguese>
 		<French>Oui, nous avons vraiment besoin de ces troupes, Votre Majesté. Nous acceptons aussi la hausse des taxes. (Payer via les taxes)</French>
 		<German>Wir können diese Truppen gut gebrauchen Eure Majestät. Aber wir würden lieber die Steuererhöhung annehmen. (Steuererhöhung)</German>
 		<Russian>Да, нам действительно могли бы пригодиться эти войска, Ваше Величество. Повышение налогов для нас было бы предпочтительнее. (увеличение ставки налога)</Russian>
@@ -9522,7 +9522,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_ROYAL_INTERVENTION_NO</Tag>
 		<English>Do not worry, Your Majesty, our colonies are strong enough to win this conflict without bothering you further.(King delighted)</English>
-		<Portuguese>Não se preocupe, Majestade, nossas colônias são fortes o suficiente para vencer este conflito sem incomodá-lo ainda mais.(Rei encantado)</Portuguese>
+		<Portuguese>Não precisamos de ajuda, Majestade. (Rei Encantado)</Portuguese>
 		<French>Ne vous faites pas de souci, Votre Majesté, nos colonies sont bien assez fortes pour venir à bout de ce conflit sans que vous ne deviez vous déranger. (le Roi en est ravi)</French>
 		<German>Seid unbesorgt Eure Majestät, unsere Kolonien sind stark genug diesen Konflikt zu lösen ohne euch weiter belästigen zu müssen. (König erfreut)</German>
 		<Russian>Не беспокойтесь, Ваше Величество, наши колонии достаточно сильны, чтобы самостоятельно победить в этом конфликте. Наш триумф уже близок. (Король в восторге)</Russian>
@@ -9540,7 +9540,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_PRIVATEERS_ADMIT</Tag>
 		<English>We assure you this was all just a misunderstanding. We will order these ships back to Port Royal. (attitude improves)</English>
-		<Portuguese>Garantimos que tudo isso foi apenas um mal-entendido. Ordenaremos que estes navios voltem para Port Royal. (atitude melhora)</Portuguese>
+		<Portuguese>Foi um mal-entendido. Recolheremos os navios. (Atitude Melhora)</Portuguese>
 		<French>C'était un malentendu, je vous assure. Nous commanderons à ces navires de voguer vers Port Royal. (Amélioration des relations)</French>
 		<German>Wir versichern euch, dass es sich hierbei lediglich um ein Misverständnis handelt und werden die Schiffe nach Port Royal zurück rufen. (Beziehungen verbessern sich)</German>
 		<Russian>Уверяем вас, что все это было просто недоразумением. Мы прикажем этим кораблям вернуться в Порт-Ройял. (отношения улучшаются)</Russian>
@@ -9549,7 +9549,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_PRIVATEERS_DENY</Tag>
 		<English>We have nothing to do with these privateers. You're misinformed. These pirates must be under the command of somebody else. (attitude worsens)</English>
-		<Portuguese>Não temos nada a ver com esses corsários. Você está mal informado. Esses piratas devem estar sob o comando de outra pessoa. (atitude piora)</Portuguese>
+		<Portuguese>Não comandamos esses corsários. (Atitude Piora)</Portuguese>
 		<French>Nous n'avons rien à voir avec ces corsaires. Vous êtes mal informés. Ces pirates sont sous les ordres de quelqu'un d'autre. (Les relations se gâtent)</French>
 		<German>Wir haben nichts mit diesen Kaperfahrern zu tun. Ihr wurdet falsch informiert. Diese Kaperfahrer stehen unter dem Befehl einer andere Macht. (Beziehungen verschlechtern sich)</German>
 		<Russian>Мы не имеем никакого отношения к этим каперам. Вы дезинформированы. Эти пираты, должно быть, под командованием кого-то другого. (отношения ухудшаются)</Russian>
@@ -9558,7 +9558,7 @@
 	<TEXT>
 		<Tag>USER_DIPLO_PRIVATEERS_WAR</Tag>
 		<English>Your nation has insulted us one time too often. Consider yourself officially at war! (declare war)</English>
-		<Portuguese>Sua nação nos insultou muitas vezes. Considere-se oficialmente em guerra! (declarar guerra)</Portuguese>
+		<Portuguese>Considere-se em guerra! (Declarar Guerra)</Portuguese>
 		<French>Votre nation nous a insulté pour la dernière fois. Considérez ceci comme une déclaration de guerre officielle!</French>
 		<German>Eure Nation hat uns einmal zu oft beleidgt. Wir erklären euch hiermit den Krieg! (Krieg erklären)</German>
 		<Russian>Ваш народ слишком часто оскорблял нас и теперь пришел час расплаты. Считайте это официальным объявлением войны!</Russian>
