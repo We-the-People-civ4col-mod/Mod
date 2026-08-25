@@ -1795,7 +1795,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_STORAGE_CAPACITY_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% storage capacity in all settlements</English>
-		<Portuguese>[ICON_BULLET]%D1%% capacidade de armazenamento em todas as colônias</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de capacidade de armazenamento em todas as colônias</Portuguese>
 		<French>[ICON_BULLET]%D1%% de capacité d'entrepôt dans toutes les colonies</French>
 		<German>[ICON_BULLET]%D1%% Lagerkapazität in allen Siedlungen</German>
 		<Italian>[ICON_BULLET]%D1%% Storage Capacity in all settlements</Italian>

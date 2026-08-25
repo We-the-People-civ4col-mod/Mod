@@ -765,11 +765,7 @@
 		<Tag>TXT_KEY_TRAIT_DISCIPLINED</Tag>
 		<English>Disciplined</English>
 		
-		<Portuguese>
-			<Text>Disciplinado:Disciplinada</Text>
-			<Gender>Male:Female</Gender>
-			<Plural>0:0</Plural>
-		</Portuguese>
+		<Portuguese>Disciplina</Portuguese>
 		<French>
 			<Text>Discipliné:Disciplinée</Text>
 			<Gender>Male:Female</Gender>
