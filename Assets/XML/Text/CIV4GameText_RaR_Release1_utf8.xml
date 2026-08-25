@@ -612,7 +612,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_REBEL_COMBAT_MOD</Tag>
 		<English>[ICON_BULLET]%D1%% effect of Revolutionary Rate on Rebel [ICON_STRENGTH]</English>
-		<Portuguese>[ICON_BULLET]%D1%% efeito da Taxa Revolucionária sobre o Rebelde [ICON_STRENGTH]</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de efeito da taxa revolucionária na força rebelde [ICON_STRENGTH]</Portuguese>
 		<French>[ICON_BULLET]%D1%% effet du sentiment de révolte sur la [ICON_STRENGTH]</French>
 		<German>[ICON_BULLET]%D1%% Auswirkung von Revolutionsbereitschaft auf [ICON_STRENGTH] der Rebellen</German>
 		<Italian>[ICON_BULLET]Effetto %D1%% di Revolutionary percentuale sul Rebel [ICON_STRENGTH]</Italian>
@@ -1702,7 +1702,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_EXTRA_TRADE_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% better prices from bargaining and trading posts</English>
-		<Portuguese>[ICON_BULLET]%D1%% preços melhores em feitorias e feitorias</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% melhores preços em pechinchas e postos comerciais</Portuguese>
 		<French>[ICON_BULLET]%D1%% permet d'obtenir de meilleurs prix en négociant</French>
 		<German>[ICON_BULLET]%D1%% bessere Preise durch Feilschen und Handelsposten</German>
 		<Russian>[ICON_BULLET]%D1%% к цене при торге, ускорение работы Торговых постов</Russian>

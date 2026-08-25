@@ -1212,7 +1212,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MOVES_INCREASE</Tag>
 		<English>[ICON_BULLET]%D1[ICON_MOVES]for [LINK=literal]%s2_unit[\LINK]</English>
-		<Portuguese>[ICON_BULLET]%D1[ICON_MOVES]para [LINK=literal]%s2_unit[\LINK]</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1[ICON_MOVES] para [LINK=literal]%s2_unit[\LINK]</Portuguese>
 		<French>[ICON_BULLET]%D1[ICON_MOVES]pour : [LINK=literal]%s2_unit[\LINK]</French>
 		<German>[ICON_BULLET]%D1[ICON_MOVES]für [LINK=literal]%s2_unit[\LINK]</German>
 		<Italian>[ICON_BULLET]%D1[ICON_MOVES]per l'unità [LINK=literal]%s2_unit[\LINK]</Italian>
@@ -1223,7 +1223,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STRENGTH_INCREASE</Tag>
 		<English>[ICON_BULLET]%D1%%[ICON_STRENGTH]for [LINK=literal]%s2_unit[\LINK]</English>
-		<Portuguese>[ICON_BULLET]%D1%%[ICON_STRENGTH]para [LINK=literal]%s2_unit[\LINK]</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%%[ICON_STRENGTH] para [LINK=literal]%s2_unit[\LINK]</Portuguese>
 		<French>[ICON_BULLET]%D1%%[ICON_STRENGTH]pour : [LINK=literal]%s2_unit[\LINK]</French>
 		<German>[ICON_BULLET]%D1%%[ICON_STRENGTH]für [LINK=literal]%s2_unit[\LINK]</German>
 		<Italian>[ICON_BULLET]%D1%%[ICON_STRENGTH]per l'unità [LINK=literal]%s2_unit[\LINK]</Italian>
@@ -1396,7 +1396,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVIC_GREAT_GENERAL_MOD</Tag>
 		<English>[ICON_BULLET]%D1_Mod%% Great general emergence</English>
-		<Portuguese>[ICON_BULLET]%D1_Mod%% Grande emergência geral</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1_Mod%% de aparecimento de Grande General</Portuguese>
 		<French>[ICON_BULLET]Emergence d'un Général illustre %D1_Mod%%</French>
 		<German>[ICON_BULLET]%D1_Mod%% Produktion Großer Generäle</German>
 		<Italian>[ICON_BULLET]%D1_Mod%% comparsa di un Grande Generale</Italian>
@@ -1407,7 +1407,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_CIVIC_LEVEL_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% XP needed for unit promotions</English>
-		<Portuguese>[ICON_BULLET]%D1%% XP necessário para promoções de unidades</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de experiência necessária para promoções</Portuguese>
 		<French>[ICON_BULLET]%D1%% EXP pour la promotion des unités</French>
 		<German>[ICON_BULLET]%D1%% EP für Beförderungen von Einheiten erforderlich</German>
 		<Italian>[ICON_BULLET]%D1%% PE richiesti per la promozione</Italian>
@@ -1530,7 +1530,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_EUROPEAN_ATTITUDE_GOOD</Tag>
 		<English>[ICON_BULLET]Ends all wars with Europeans[NEWLINE][ICON_BULLET]Strengthens relations with Europeans</English>
-		<Portuguese>[ICON_BULLET]Acabar com todas as guerras com os europeus[NEWLINE][ICON_BULLET]Fortalecer as relações com os europeus</Portuguese>
+		<Portuguese>[ICON_BULLET]Encerra todas as guerras com os europeus[NEWLINE][ICON_BULLET]Fortalece as relações com os europeus</Portuguese>
 		<French>[ICON_BULLET]Achève les guerres avec les européens[NEWLINE][ICON_BULLET]Renforce les relations avec les européens</French>
 		<German>[ICON_BULLET]Beendet alle Kriege mit Europäern[NEWLINE][ICON_BULLET]Stärkt Beziehungen zu Europäern</German>
 		<Russian>[ICON_BULLET]Заканчивает все войны с европейцами[NEWLINE][ICON_BULLET]Улучшает отношения с европейцами</Russian>
@@ -1548,7 +1548,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_KING_ATTITUDE_GOOD</Tag>
 		<English>[ICON_BULLET]Strengthens relations with kings</English>
-		<Portuguese>[ICON_BULLET]Fortalece relações com reis</Portuguese>
+		<Portuguese>[ICON_BULLET]Fortalece as relações com os reis</Portuguese>
 		<French>[ICON_BULLET]Renforce les relations avec le Roi</French>
 		<German>[ICON_BULLET]Stärkt Beziehungen zu Königen</German>
 		<Russian>[ICON_BULLET]Улучшает отношения с Королями</Russian>
@@ -1577,7 +1577,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_CITY_DEFENSE</Tag>
 		<English>[ICON_BULLET]%D1%% defense in all settlements</English>
-		<Portuguese>[ICON_BULLET]%D1%% defesa em todas as colônias</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de defesa em todas as colônias</Portuguese>
 		<French>[ICON_BULLET]Défense dans toutes les colonies %D1%% </French>
 		<German>[ICON_BULLET]%D1%% Verteidigung in allen Siedlungen</German>
 		<Italian>[ICON_BULLET]%D1%% difesa in tutti gli insediamenti</Italian>
@@ -1588,7 +1588,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_LAND_DISCOUNT</Tag>
 		<English>[ICON_BULLET]%D1%% cost of Native land purchasing</English>
-		<Portuguese>[ICON_BULLET]%D1%% custo de compra de terras nativas</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de custo na compra de terras nativas</Portuguese>
 		<French>[ICON_BULLET]Coût d'achat des terres indigènes %D1%% </French>
 		<German>[ICON_BULLET]%D1%% Kosten für Landerwerb von Ureinwohnern</German>
 		<Italian>[ICON_BULLET]%D1%% costo d'acquisto della terra dei nativi</Italian>
@@ -1599,7 +1599,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_RECRUIT_DISCOUNT</Tag>
 		<English>[ICON_BULLET]%D1%% cost of recruiting units in Europe</English>
-		<Portuguese>[ICON_BULLET]%D1%% custo de recrutamento de unidades na Europa</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de custo para recrutar unidades na Europa</Portuguese>
 		<French>[ICON_BULLET]Coût de recrutement d'unités européennes %D1%%</French>
 		<German>[ICON_BULLET]%D1%% Kosten für Rekrutierung von Einheiten in Europa</German>
 		<Italian>[ICON_BULLET]%D1%% costo di reclutamento unità in Europa</Italian>
@@ -1610,7 +1610,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_RECRUIT_DISCOUNT_AFRICA</Tag>
 		<English>[ICON_BULLET]%D1%% cost of recruiting units in Africa</English>
-		<Portuguese>[ICON_BULLET]%D1%% custo de recrutamento de unidades na África</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de custo para recrutar unidades na África</Portuguese>
 		<French>[ICON_BULLET]Coût de recrutement d'unités africains %D1%%</French>
 		<German>[ICON_BULLET]%D1%% Kosten für Rekrutierung von Einheiten in Afrika</German>
 		<Italian>[ICON_BULLET]%D1%% costo di reclutamento unità in Africa</Italian>
@@ -1621,7 +1621,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_RECRUIT_DISCOUNT_PORT_ROYAL</Tag>
 		<English>[ICON_BULLET]%D1%% cost of recruiting units in Port Royal</English>
-		<Portuguese>[ICON_BULLET]%D1%% custo de recrutamento de unidades em Port Royal</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de custo para recrutar unidades em Port Royal</Portuguese>
 		<French>[ICON_BULLET]Coût de recrutement d'unités du Port Royal %D1%%</French>
 		<German>[ICON_BULLET]%D1%% Kosten für Rekrutierung von Einheiten in Port Royal</German>
 		<Italian>[ICON_BULLET]%D1%% costo di reclutamento unità in Port Royal</Italian>
@@ -1632,7 +1632,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_EXTRA_MISSIONARY_RATE</Tag>
 		<English>[ICON_BULLET]%D1%% Native conversion rate from missions</English>
-		<Portuguese>[ICON_BULLET]%D1%% Taxa de conversão nativa de missões</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de conversão de nativos por missões</Portuguese>
 		<French>[ICON_BULLET]Taux de conversion des indigènes dû aux missions %D1%% </French>
 		<German>[ICON_BULLET]%D1%% Ureinwohner-Bekehrungsrate durch Missionen</German>
 		<Italian>[ICON_BULLET]%D1%% percentuale di conversione nativi dalle missioni</Italian>
@@ -1643,7 +1643,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_EUROPE_TRAVEL_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% travel time to Europe</English>
-		<Portuguese>[ICON_BULLET]%D1%% tempo de viagem para a Europa</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de tempo de viagem para a Europa</Portuguese>
 		<French>[ICON_BULLET]Durée du trajet jusqu'en Europe %D1%%</French>
 		<German>[ICON_BULLET]%D1%% Reisedauer nach Europa</German>
 		<Italian>[ICON_BULLET]%D1%% durata del viaggio verso l'Europa</Italian>
@@ -1676,7 +1676,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_IMMIGRATION_THRESHOLD_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% %F2_symbol needed for emigration</English>
-		<Portuguese>[ICON_BULLET]%D1%% %F2_symbol necessário para emigração</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de %F2_symbol necessário para imigração</Portuguese>
 		<French>[ICON_BULLET]%D1%% %F2_symbol requis pour l'Immigration</French>
 		<German>[ICON_BULLET]%D1%% %F2_symbol notwendig für Auswanderung</German>
 		<Italian>[ICON_BULLET]%D1%% %F2_symbol necessari per l'immigrazione</Italian>
@@ -1687,7 +1687,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_GROWTH_THRESHOLD_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% %F2_symbol needed for population growth</English>
-		<Portuguese>[ICON_BULLET]%D1%% %F2_symbol necessário para o crescimento populacional</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de %F2_symbol necessário para o crescimento populacional</Portuguese>
 		<French>[ICON_BULLET]%D1%% %F2_symbol pour accroitre la population</French>
 		<German>[ICON_BULLET]%D1%% %F2_symbol notwendig für Bevölkerungswachstum</German>
 		<Italian>[ICON_BULLET]%D1%% %F2_symbol needed for Population Growth</Italian>
@@ -1698,7 +1698,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_CULTURE_LEVEL_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% %F2_symbol needed for territorial expansion</English>
-		<Portuguese>[ICON_BULLET]%D1%% %F2_symbol necessário para expansão territorial</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de %F2_symbol necessário para expansão territorial</Portuguese>
 		<French>[ICON_BULLET]%D1%% %F2_symbol pour étendre ses frontières</French>
 		<German>[ICON_BULLET]%D1%% %F2_symbol erforderlich für territoriale Expansion</German>
 		<Italian>[ICON_BULLET]%D1%% %F2_symbol needed for Territorial Expansion</Italian>
@@ -1719,7 +1719,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_IMPROVEMENT_PRICE_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% cost of pioneer actions</English>
-		<Portuguese>[ICON_BULLET]%D1%% custo de ações pioneiras</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de custo nas ações de pioneiros</Portuguese>
 		<French>[ICON_BULLET]%D1%% sur le prix des actions des pionniers</French>
 		<German>[ICON_BULLET]%D1%% Kosten für Arbeiten der Pioniere</German>
 		<Italian>[ICON_BULLET]%D1%% Cost of Pioneer Actions</Italian>
@@ -1730,7 +1730,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_IMPROVEMENT_GROWTH_TIME_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% time for improvements to upgrade to next level</English>
-		<Portuguese>[ICON_BULLET]%D1%% tempo para melhorias e upgrade para o próximo nível</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de tempo para as benfeitorias subirem de nível</Portuguese>
 		<French>[ICON_BULLET]%D1%% de temps pour que les aménagements s'améliorent.</French>
 		<German>[ICON_BULLET]%D1%% Zeit für Wachstum von Geländeverbesserungen</German>
 		<Russian>[ICON_BULLET]%D1%% ко времени, нужного для получения улучшением следующего уровня</Russian>
@@ -1748,7 +1748,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% chance colonists learn a specialization by hard work</English>
-		<Portuguese>[ICON_BULLET]%D1%% chance de os colonos aprenderem uma especialização com muito trabalho</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de chance de colonos aprenderem uma especialização no trabalho</Portuguese>
 		<French>[ICON_BULLET]%D1%% de chance qu'un colon apprenne une spécialité sur le tas</French>
 		<German>[ICON_BULLET]%D1%% Chance für Kolonisten durch harte Arbeit zum Spezialisten zu werden</German>
 		<Russian>[ICON_BULLET]%D1%% к шансу, что колонист обучится новой специальности, благодаря упорному труду</Russian>
@@ -1757,7 +1757,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_FREE_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% chance for unfree workers to become free by hard work</English>
-		<Portuguese>[ICON_BULLET]%D1%% chance de trabalhadores não-livres se tornarem livres através do trabalho duro</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de chance de trabalhadores não livres se tornarem livres pelo trabalho</Portuguese>
 		<French>[ICON_BULLET]%D1%% de chance qu'un travailleur sous servitude s'affranchisse par le travail</French>
 		<German>[ICON_BULLET]%D1%% Chance für Unfreie durch harte Arbeit frei zu werden</German>
 		<Russian>[ICON_BULLET]%D1%% к шансу, что несвободный колонист обучится новой специальности, благодаря упорному труду</Russian>
@@ -1766,7 +1766,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_RUNAWAY_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% chance for unfree to try to run away</English>
-		<Portuguese>[ICON_BULLET]%D1%% chance de os não-livres tentarem fugir</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de chance de não livres tentarem fugir</Portuguese>
 		<French>[ICON_BULLET]%D1%% pour qu'un travailleur sous servitude tente de s'échapper</French>
 		<German>[ICON_BULLET]%D1%% Chance für Unfreie eine Flucht zu vesuchen</German>
 		<Russian>[ICON_BULLET]%D1%% к шану побега несвободных колонистов</Russian>
@@ -1775,7 +1775,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_LEARNING_BY_DOING_REVOLT_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% chance for unfree to revolt</English>
-		<Portuguese>[ICON_BULLET]%D1%% chance de os não-livres se revoltarem</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de chance de não livres se revoltarem</Portuguese>
 		<French>[ICON_BULLET]%D1%% pour qu'un travailleur sous servitude lance une révolte</French>
 		<German>[ICON_BULLET]%D1%% Chance für Unfreie eine Revolte zu starten</German>
 		<Russian>[ICON_BULLET]%D1%% к шансу мятежа несвободных колонистов</Russian>
@@ -1784,7 +1784,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_SPECIALIST_PRICE_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% cost of training colonists in schools</English>
-		<Portuguese>[ICON_BULLET]%D1%% custo de treinamento de colonos nas escolas</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de custo para treinar colonos nas escolas</Portuguese>
 		<French>[ICON_BULLET]%D1%% sur le coût de formation des colons dans les écoles</French>
 		<German>[ICON_BULLET]%D1%% Ausbildungskosten von Kolonisten in Schulen</German>
 		<Italian>[ICON_BULLET]%D1%% Cost of training Colonists in Schools</Italian>
@@ -2244,7 +2244,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE_COMBAT_MOD</Tag>
 		<English>[ICON_BULLET]%D1_Change%% vs. Natives</English>
-		<Portuguese>[ICON_BULLET]%D1_Change%% vs. nativos</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1_Change%% contra nativos</Portuguese>
 		<French>[ICON_BULLET]%D1_Change%% contre les indigènes</French>
 		<German>[ICON_BULLET]%D1_Change%% Kampfstärke gegen Ureinwohner</German>
 		<Italian>[ICON_BULLET]%D1_Change%% contro i nativi</Italian>
@@ -2320,7 +2320,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_LEARN_TIME_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% time spent living among Natives to learn a new skill</English>
-		<Portuguese>[ICON_BULLET]%D1%% tempo gasto morando entre os nativos para aprender uma nova habilidade</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de tempo vivendo entre nativos para aprender uma habilidade</Portuguese>
 		<French>[ICON_BULLET]Temps passé à vivre parmi les indigènes pour apprendre une nouvelle technique %D1%%</French>
 		<German>[ICON_BULLET]%D1%% Zeitaufwand beim Lernen von Ureinwohnern</German>
 		<Italian>[ICON_BULLET]%D1%% tempo passato tra i nativi a imparare nuove abilità</Italian>
@@ -2420,7 +2420,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_AFRICA_PROFIT_MODIFER_POSITIVE</Tag>
 		<English>[ICON_BULLET]Prices for sales in Africa are %D1%% higher.</English>
-		<Portuguese>[ICON_BULLET]Os preços de vendas na África são %D1%% mais altos.</Portuguese>
+		<Portuguese>[ICON_BULLET]Os preços de venda na África são %D1%% mais altos.</Portuguese>
 		<French>[ICON_BULLET]Les prix de vente en Afrique sont plus hauts de %D1%%.</French>
 		<German>[ICON_BULLET]Preise für Verkäufe in Afrika sind %D1%% höher.</German>
 		<Russian>[ICON_BULLET]Цена продажи товаров в Африке выше на %D1%%.</Russian>
@@ -2496,7 +2496,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_TAX_RATE_THRESHOLD_MOD</Tag>
 		<English>[ICON_BULLET]%D1%% Time between tax increases</English>
-		<Portuguese>[ICON_BULLET]%D1%% Tempo entre aumentos de impostos</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de tempo entre aumentos de impostos</Portuguese>
 		<French>[ICON_BULLET]Temps entre les hausses d'impôts %D1%%</French>
 		<German>[ICON_BULLET]%D1%% Zeit zwischen Steuererhöhungen</German>
 		<Italian>[ICON_BULLET]%D1%% periodo tra gli aumenti delle tasse</Italian>
@@ -2701,7 +2701,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_FREE_IN_CITY</Tag>
 		<English>[ICON_BULLET]Free [LINK=literal]%s1_Name[\LINK] in every settlement</English>
-		<Portuguese>[ICON_BULLET]Grátis [LINK=literal]%s1_Name[\LINK] em todas as colônias</Portuguese>
+		<Portuguese>[ICON_BULLET][LINK=literal]%s1_Name[\LINK] grátis em todas as colônias</Portuguese>
 		<French>[ICON_BULLET]Un bâtiment : [LINK=literal]%s1_Name[\LINK] gratuit dans chaque colonie</French>
 		<German>[ICON_BULLET]Freies Gebäude [LINK=literal]%s1_Name[\LINK] in jeder Siedlung</German>
 		<Italian>[ICON_BULLET][LINK=literal]%s1_Name[\LINK] [NUM1:gratuito:gratuita:gratuiti:gratuite] in ogni insediamento</Italian>
@@ -3073,7 +3073,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_REQUIRED_YIELD_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% %F2 required for buildings</English>
-		<Portuguese>[ICON_BULLET]%D1%% %F2 necessário para edifícios</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de %F2 necessário para edifícios</Portuguese>
 		<French>[ICON_BULLET]%D1%% %F2 requis pour les bâtiments</French>
 		<German>[ICON_BULLET]%D1%% %F2 für Gebäude erforderlich</German>
 		<Italian>[ICON_BULLET]%D1%% %F2 necessari per gli edifici</Italian>

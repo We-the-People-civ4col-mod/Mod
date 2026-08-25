@@ -1465,7 +1465,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_PRODUCTION_MODIFIER</Tag>
 		<English>[ICON_BULLET]%d1%% faster production of[SPACE]</English>
-		<Portuguese>[ICON_BULLET]%d1%% produção mais rápida de[SPACE]</Portuguese>
+		<Portuguese>[ICON_BULLET]%d1%% mais rápido na produção de[SPACE]</Portuguese>
 		<French>[ICON_BULLET]Production %d1%% plus rapide de :[SPACE]</French>
 		<German>[ICON_BULLET]%d1%% mehr erzeugte Hämmer beim Bau von[SPACE]</German>
 		<Italian>[ICON_BULLET]Produzione più veloce del %d1%% per[SPACE]</Italian>
@@ -12568,7 +12568,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GREAT_GENERAL_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% Great General emergence</English>
-		<Portuguese>[ICON_BULLET]%D1%% Grande General emergência</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de aparecimento de Grande General</Portuguese>
 		<French>[ICON_BULLET]Emergence d'un Général illustre %D1%%</French>
 		<German>[ICON_BULLET]%D1%% Produktion Großer Generäle</German>
 		<Italian>[ICON_BULLET]%D1%% comparsa di un Grande Generale</Italian>
@@ -12578,7 +12578,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DOMESTIC_GREAT_GENERAL_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% Great General emergence inside cultural borders</English>
-		<Portuguese>[ICON_BULLET]%D1%% Grande General emergência dentro das fronteiras culturais</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% de aparecimento de Grande General dentro das fronteiras culturais</Portuguese>
 		<French>[ICON_BULLET]Emergence d'un grand Général à l'intérieur des frontières culturelles %D1%%</French>
 		<German>[ICON_BULLET]%D1%% Produktion Großer Generäle innerhalb der kulturellen Grenzen</German>
 		<Italian>[ICON_BULLET]%D1%% comparsa di un Grande Generale all'interno dei confini culturali</Italian>
