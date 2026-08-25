@@ -1566,7 +1566,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_REVEALS_IMPROVEMENT</Tag>
 		<English>[ICON_BULLET]Reveals all tiles with [LINK=literal]%s1_improvement[\LINK]</English>
-		<Portuguese>[ICON_BULLET]Revela todos os quadrados com [LINK=literal]%s1_improvement[\LINK]</Portuguese>
+		<Portuguese>[ICON_BULLET]Revela todos os lotes com [LINK=literal]%s1_improvement[\LINK]</Portuguese>
 		<French>[ICON_BULLET]Révèle toutes les cases avec [LINK=literal]%s1_improvement[\LINK]</French>
 		<German>[ICON_BULLET]Deckt alle [LINK=literal]%s1_improvement[\LINK] auf</German>
 		<Italian>[ICON_BULLET]Mostra tutte le caselle con il miglioramento [LINK=literal]%s1_improvement[\LINK]</Italian>

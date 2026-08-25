@@ -1069,7 +1069,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_32</Tag>
 		<English>You can load or unload your transport units from the Settlement Screen. In the "Transport" section of the Settlement Screen, all the transport units currently located in the same tile as your settlement are displayed. From here, you can click and drag any goods your transports are carrying onto the Goods display to add them to the settlement's stores. You can also click and drag any of the goods from the settlement onto the transport.</English>
-		<Portuguese>Você pode carregar ou descarregar suas unidades de transporte na tela da colônia. Na seção "Transporte" da tela da colônia, todas as unidades de transporte atualmente localizadas no mesmo quadrado da sua colônia são exibidas. A partir daqui, você pode clicar e arrastar quaisquer mercadorias que seus transportes estejam transportando para a exibição de Mercadorias para adicioná-las às lojas da colônia. Você também pode clicar e arrastar qualquer mercadoria da colônia para o transporte.</Portuguese>
+		<Portuguese>Você pode carregar ou descarregar suas unidades de transporte na tela da colônia. Na seção "Transporte" da tela da colônia, todas as unidades de transporte atualmente localizadas no mesmo lote da sua colônia são exibidas. A partir daqui, você pode clicar e arrastar quaisquer mercadorias que seus transportes estejam transportando para a exibição de Mercadorias para adicioná-las às lojas da colônia. Você também pode clicar e arrastar qualquer mercadoria da colônia para o transporte.</Portuguese>
 		<French>Vous pouvez charger ou décharger vos unités de transport depuis l'écran de colonie. Dans la section "Transport", toutes les unités de transport actuellement présentes dans votre colonie sont affichées. Vous pouvez ensuite faire glisser et déposer n'importe quelle marchandise transportée par vos unités dans la fenêtre des marchandises afin de l'ajouter aux réserves de votre colonie. Vous pouvez également faire glisser et déposer n'importe quelle marchandise depuis votre colonie jusqu'à l'une de vos unités de transport.</French>
 		<German>Auf dem Siedlungsbildschirm können Sie Ihre Transporteinheiten be- oder entladen. Im Transport-Bereich werden alle Transporteinheiten angezeigt, die sich aktuell auf demselben Geländefeld wie Ihre Siedlung befinden. Hier können Sie alle Güter, die sich auf Transportmitteln befinden, per Mausklick in die Güteranzeige ziehen und sie zu den Vorräten Ihrer Siedlung hinzufügen. Sie können auch jedes Gut aus der Siedlung auf das Transportmittel ziehen.</German>
 		<Italian>Puoi caricare e scaricare le unità di trasporto dalla schermata dell'insediamento. Nella sezione "trasporti" della schermata dell'insediamento vengono visualizzate tutte le unità di trasporto attualmente nella stessa casella del tuo insediamento. Da qui puoi cliccare e trascinare i beni sui tuoi trasporti nella finestra dei beni, per aggiungerli alle riserve dell'insediamento. Puoi anche cliccare su qualsiasi bene e trascinarlo dall'insediamento su un trasporto.</Italian>
@@ -1165,7 +1165,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_41</Tag>
 		<English>When building your first settlement, it's always a good idea to keep as close to Europe as possible. Your ships will spend less time in transit between colony and mother country, lessening the chance of being attacked by enemy ships. Settle beside coast tiles rather than shallow coast. Otherwise when you get larger ships they won't be able to enter your port. It may take some searching to find a safe harbour for your settlement.</English>
-		<Portuguese>Ao construir a sua primeira colônia, é sempre uma boa ideia ficar o mais próximo possível da Europa. Seus navios passarão menos tempo em trânsito entre a colônia e a metrópole, diminuindo a chance de serem atacados por navios inimigos. Acomode-se ao lado de quadrados costeiros, em vez de na costa rasa. Caso contrário, quando você conseguir navios maiores, eles não conseguirão entrar no seu porto. Pode ser necessária alguma pesquisa para encontrar um porto seguro para a sua colônia.</Portuguese>
+		<Portuguese>Ao construir a sua primeira colônia, é sempre uma boa ideia ficar o mais próximo possível da Europa. Seus navios passarão menos tempo em trânsito entre a colônia e a metrópole, diminuindo a chance de serem atacados por navios inimigos. Acomode-se ao lado de lotes costeiros, em vez de na costa rasa. Caso contrário, quando você conseguir navios maiores, eles não conseguirão entrar no seu porto. Pode ser necessária alguma pesquisa para encontrar um porto seguro para a sua colônia.</Portuguese>
 		<French>Lorsque vous fondez votre première colonie, il est toujours judicieux de le faire le plus près possible de votre voie d'accès à l'Europe. Ainsi, vos navires passeront moins de temps en mer entre votre colonie et votre patrie, réduisant le risque qu'ils soient assaillis par un navire ennemi.</French>
 		<German>Wenn Sie Ihre erste Siedlung errichten, ist es immer sinnvoll, diese so nah wie möglich an Ihrer Route nach Europa anzulegen. Das bedeutet, daß Ihre Schiffe benötigen weniger lange für die Reise zwischen Kolonie und Mutterland brauchen. Zudem sinkt auch die Wahrscheinlichkeit, dass sie von gegnerischen Schiffen angegriffen werden.</German>
 		<Italian>Quando costruisci il tuo primo insediamento è sempre una buona idea costruirlo il più vicino possibile alla tua rotta per l'Europa. In questo modo le tue navi spenderanno meno tempo in viaggio tra la colonia e la madrepatria, riducendo le probabilità di venire attaccate dalle navi nemiche.</Italian>
@@ -1208,7 +1208,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_45</Tag>
 		<English>To load goods onto a transport, you must move the transport unit into the same tile as the goods and press the "Load Goods" icon. You can also do it from the "Transport" section of the Settlement Screen.[NEWLINE]You can unload goods one of two ways - by selecting the item you would like to unload from the unit stack and pressing "Unload" from the orders display or by activating the transport unit and clicking "Unload All." You can only unload goods in settlements (or in Europe).</English>
-		<Portuguese>Para carregar mercadorias em um transporte, você deve mover a unidade de transporte para o mesmo quadrado das mercadorias e pressionar o ícone "Carregar Mercadorias". Você também pode fazer isso na seção "Transporte" da tela da colônia.[NEWLINE]Você pode descarregar mercadorias de duas maneiras: selecionando o item que deseja descarregar da pilha de unidades e pressionando "Descarregar" na exibição de pedidos ou ativando a unidade de transporte e clicando em "Descarregar tudo". Você só pode descarregar mercadorias em colônias (ou na Europa).</Portuguese>
+		<Portuguese>Para carregar mercadorias em um transporte, você deve mover a unidade de transporte para o mesmo lote das mercadorias e pressionar o ícone "Carregar Mercadorias". Você também pode fazer isso na seção "Transporte" da tela da colônia.[NEWLINE]Você pode descarregar mercadorias de duas maneiras: selecionando o item que deseja descarregar da pilha de unidades e pressionando "Descarregar" na exibição de pedidos ou ativando a unidade de transporte e clicando em "Descarregar tudo". Você só pode descarregar mercadorias em colônias (ou na Europa).</Portuguese>
 		<French>Pour charger des marchandises dans une unité de transport, vous devez déplacer cette dernière sur la même case que les marchandises puis cliquer sur l'icône Charger des marchandises. Vous pouvez également le faire depuis l'espace Transport de l'écran de colonie.</French>
 		<German>Um Güter auf ein Transportmittel zu laden, müssen Sie die Transporteinheit auf dasselbe Geländefeld wie die Güter bewegen und auf "Beladen" klicken. Dies ist ebenfalls im Menü "Transport" im Siedlungsbildschirm möglich.</German>
 		<Italian>Per caricare dei beni su un trasporto devi prima spostare l'unità da trasporto nella stessa casella in cui si trovano i beni, per poi cliccare sull'icona "Carica beni". Puoi anche farlo dalla sezione "Trasporti" nella schermata dell'insediamento.</Italian>
@@ -1369,7 +1369,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_11</Tag>
 		<English>With a transport selected, [COLOR:140:255:40:255]&lt; RIGHT-CLICKING &gt;[COLOR_REVERT] on an adjacent land square will automatically unload the units.</English>
-		<Portuguese>Com um transporte selecionado, [COLOR:140:255:40:255]&lt; CLICAR COM O DIREITO &gt;[COLOR_REVERT] em um quadrado de terreno adjacente descarregará automaticamente as unidades.</Portuguese>
+		<Portuguese>Com um transporte selecionado, [COLOR:140:255:40:255]&lt; CLICAR COM O DIREITO &gt;[COLOR_REVERT] em um lote de terreno adjacente descarregará automaticamente as unidades.</Portuguese>
 		<French>Pour décharger des unités d'un transport, sélectionnez-le et [COLOR:140:255:40:255]&lt; CLIQUEZ DROIT &gt;[COLOR_REVERT] sur une case de terrain adjacente.</French>
 		<German>Haben Sie ein Transportschiff ausgewählt, gehen alle Einheiten nach einem [COLOR:140:255:40:255]&lt; RECHTSKLICK &gt;[COLOR_REVERT] auf ein angrenzendes Geländefeld automatisch von Bord.</German>
 		<Italian>Quando hai selezionato un mezzo di trasporto, clicca con il [COLOR:140:255:40:255]&lt; PULSANTE DESTRO &gt;[COLOR_REVERT] del mouse su una casella adiacente per sbarcare automaticamente le unità a bordo.</Italian>
@@ -1556,7 +1556,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_28</Tag>
 		<English>Press [COLOR:140:255:40:255]&lt; CTRL + T &gt;[COLOR_REVERT] to toggle the Tile Grid</English>
-		<Portuguese>Pressione [COLOR:140:255:40:255]&lt; CTRL + T &gt;[COLOR_REVERT] para alternar a grade do quadrado</Portuguese>
+		<Portuguese>Pressione [COLOR:140:255:40:255]&lt; CTRL + T &gt;[COLOR_REVERT] para alternar a grade do lote</Portuguese>
 		<French>Appuyez sur [COLOR:140:255:40:255]&lt; CTRL + T &gt;[COLOR_REVERT] pour afficher ou masquer la grille.</French>
 		<German>Blenden Sie das Geländeraster mit [COLOR:140:255:40:255]&lt; STRG + T &gt;[COLOR_REVERT] ein/aus.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + T &gt;[COLOR_REVERT] per attivare la griglia delle caselle.</Italian>
@@ -1633,7 +1633,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_36</Tag>
 		<English>Press [COLOR:140:255:40:255]&lt; COMMA &gt;[COLOR_REVERT] and [COLOR:140:255:40:255]&lt; PERIOD &gt;[COLOR_REVERT] to scroll through units on the same square.</English>
-		<Portuguese>Pressione [COLOR:140:255:40:255]&lt; COMMA &gt;[COLOR_REVERT] e [COLOR:140:255:40:255]&lt; PERIOD &gt;[COLOR_REVERT] para percorrer as unidades no mesmo quadrado.</Portuguese>
+		<Portuguese>Pressione [COLOR:140:255:40:255]&lt; VÍRGULA &gt;[COLOR_REVERT] e [COLOR:140:255:40:255]&lt; PONTO &gt;[COLOR_REVERT] para percorrer as unidades no mesmo lote.</Portuguese>
 		<French>Appuyez sur [COLOR:140:255:40:255]&lt; POINT-VIRGULE &gt;[COLOR_REVERT] et [COLOR:140:255:40:255]&lt; DEUX POINTS &gt;[COLOR_REVERT] pour parcourir les unités sur la même case.</French>
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; KOMMA &gt;[COLOR_REVERT] und [COLOR:140:255:40:255]&lt; PUNKT &gt;[COLOR_REVERT], um durch die Einheiten auf einem Geländefeld zu schalten.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; , &gt;[COLOR_REVERT] e [COLOR:140:255:40:255]&lt; . &gt;[COLOR_REVERT] per scorrere tra le unità che si trovano nella stessa casella.</Italian>
@@ -1766,7 +1766,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_48</Tag>
 		<English>Move units to a distant tile by a [COLOR:140:255:40:255]&lt; RIGHT-CLICK &gt;[COLOR_REVERT] on the destination.</English>
-		<Portuguese>Mova as unidades para um quadrado distante com um [COLOR:140:255:40:255]&lt; CLIQUE COM O DIREITO &gt;[COLOR_REVERT] no destino.</Portuguese>
+		<Portuguese>Mova as unidades para um lote distante com um [COLOR:140:255:40:255]&lt; CLIQUE COM O DIREITO &gt;[COLOR_REVERT] no destino.</Portuguese>
 		<French>Déplacez les unités vers une tuile éloignée en faisant un [COLOR:140:255:40:255]&lt; CLIC DROIT &gt;[COLOR_REVERT] sur la destination.</French>
 		<German>Per [COLOR:140:255:40:255]&lt; RECHTSKLICK &gt;[COLOR_REVERT] schicken Sie Ihre Einheiten auf das gewünschte Geländefeld.</German>
 		<Italian>Muovi le unità su una casella lontana cliccandoci sopra con il [COLOR:140:255:40:255]&lt; PULSANTE DESTRO &gt;[COLOR_REVERT].</Italian>
@@ -1788,7 +1788,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_50</Tag>
 		<English>You can group move all units on the same tile by a [COLOR:140:255:40:255]&lt; ALT + RIGHT-CLICK &gt;[COLOR_REVERT] on the destination.</English>
-		<Portuguese>Você pode agrupar e mover todas as unidades no mesmo quadrado pressionando [COLOR:140:255:40:255]&lt; ALT + CLIQUE COM O DIREITO &gt;[COLOR_REVERT] no destino.</Portuguese>
+		<Portuguese>Você pode agrupar e mover todas as unidades no mesmo lote pressionando [COLOR:140:255:40:255]&lt; ALT + CLIQUE COM O DIREITO &gt;[COLOR_REVERT] no destino.</Portuguese>
 		<French>Pour regrouper et déplacer toutes les unités sur la même case, appuyez sur touche [COLOR:140:255:40:255]&lt; ALT &gt;[COLOR_REVERT] et faites un [COLOR:140:255:40:255]&lt; CLIC DROIT &gt;[COLOR_REVERT] sur la destination.</French>
 		<German>Sie können alle Einheiten eines Feldes mit [COLOR:140:255:40:255]&lt; ALT + RECHTSKLICK &gt;[COLOR_REVERT] auf die gewünschte Position bewegen.</German>
 		<Italian>Puoi muovere un gruppo di unità sulla stessa casella con [COLOR:140:255:40:255]&lt; ALT + PULSANTE DESTRO &gt;[COLOR_REVERT] sulla destinazione.</Italian>
@@ -1843,7 +1843,7 @@ Viel Spass![NEWLINE]
 	<!--<TEXT> duplicate HINT_INTERFACE_56
 		<Tag>TXT_KEY_HINT_INTERFACE_55</Tag>
 		<English>Press [CTRL + C] to select all units of the same type on the same tile as the active unit.</English>
-		<Portuguese>Pressione [CTRL + C] para selecionar todas as unidades do mesmo tipo no mesmo quadrado da unidade ativa.</Portuguese>
+		<Portuguese>Pressione [CTRL + C] para selecionar todas as unidades do mesmo tipo no mesmo lote da unidade ativa.</Portuguese>
 		<French>Appuyez sur [CTRL + C] pour sélectionner toutes les unités du même type sur une case en tant qu'unité active.</French>
 		<German>[STRG + C] wählt alle Einheiten desselben Typs auf dem Geländefeld der aktiven Einheit.</German>
 		<Italian>Premi [CTRL + C] per selezionare tutte le unità dello stesso tipo sulla stessa casella di quella attiva.</Italian>
@@ -1853,7 +1853,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_56</Tag>
 		<English>Press [COLOR:140:255:40:255]&lt; ALT + C &gt;[COLOR_REVERT] to select all units on the same tile as the active unit.</English>
-		<Portuguese>Pressione [COLOR:140:255:40:255]&lt; ALT + C &gt;[COLOR_REVERT] para selecionar todas as unidades no mesmo quadrado da unidade ativa.</Portuguese>
+		<Portuguese>Pressione [COLOR:140:255:40:255]&lt; ALT + C &gt;[COLOR_REVERT] para selecionar todas as unidades no mesmo lote da unidade ativa.</Portuguese>
 		<French>Appuyez sur [COLOR:140:255:40:255]&lt; ALT + C &gt;[COLOR_REVERT] pour sélectionner toutes les unités sur la même case que l'unité active.</French>
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; ALT + C &gt;[COLOR_REVERT], um die aktive Einheit und alle Einheiten auf demselben Feld auszuwählen.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; ALT + C &gt;[COLOR_REVERT] per selezionare tutte le unità sulla stessa casella di quella attiva.</Italian>
@@ -1908,7 +1908,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_62</Tag>
 		<English>Hold down [COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT] and click on a tile to open a context menu.</English>
-		<Portuguese>Mantenha pressionado [COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT] e clique em um quadrado para abrir um menu de contexto.</Portuguese>
+		<Portuguese>Mantenha pressionado [COLOR:140:255:40:255]&lt; SHIFT &gt;[COLOR_REVERT] e clique em um lote para abrir um menu de contexto.</Portuguese>
 		<French>Maintenez la touche [COLOR:140:255:40:255]&lt; MAJ &gt;[COLOR_REVERT] enfoncée et cliquez sur une case pour ouvrir un menu contextuel.</French>
 		<German>Halten Sie die [COLOR:140:255:40:255]&lt; UMSCHALT-Taste &gt;[COLOR_REVERT] gedrückt und klicken Sie auf ein Geländefeld, um ein Kontextmenü zu öffnen.</German>
 		<Italian>Tieni premuto il tasto [COLOR:140:255:40:255]&lt; MAIUSC &gt;[COLOR_REVERT] e clicca su una casella per aprire un menu contestuale.</Italian>
@@ -1963,7 +1963,7 @@ Viel Spass![NEWLINE]
 	<TEXT>
 		<Tag>TXT_KEY_HINT_INTERFACE_67</Tag>
 		<English>Press [COLOR:140:255:40:255]&lt; CTRL + H &gt;[COLOR_REVERT] to select all wounded units in a tile.</English>
-		<Portuguese>Pressione [COLOR:140:255:40:255]&lt; CTRL + H &gt;[COLOR_REVERT] para selecionar todas as unidades feridas em um quadrado.</Portuguese>
+		<Portuguese>Pressione [COLOR:140:255:40:255]&lt; CTRL + H &gt;[COLOR_REVERT] para selecionar todas as unidades feridas em um lote.</Portuguese>
 		<French>Appuyez sur [COLOR:140:255:40:255]&lt; CTRL + H &gt;[COLOR_REVERT] pour sélectionner toutes les unités blessées dans une case.</French>
 		<German>Drücken Sie [COLOR:140:255:40:255]&lt; STRG + H &gt;[COLOR_REVERT], um alle verwundeten Einheiten auf einem Geländefeld zu markieren.</German>
 		<Italian>Premi [COLOR:140:255:40:255]&lt; CTRL + H &gt;[COLOR_REVERT] per selezionare tutte le unità ferite sulla casella.</Italian>

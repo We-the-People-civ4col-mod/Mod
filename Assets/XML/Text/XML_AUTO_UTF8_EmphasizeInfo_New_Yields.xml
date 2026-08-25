@@ -9,7 +9,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_HARDWOOD</Tag>
 		<English>Deemphasize Hardwood</English>
-		<Portuguese>Diminuir a ênfase na madeira dura</Portuguese>
+		<Portuguese>Diminuir a ênfase na madeira nobre</Portuguese>
 		<German>Schwerpunkt Hartholz aufheben</German>
 	</TEXT>
 	<TEXT>
@@ -159,13 +159,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_LOGWOOD</Tag>
 		<English>Emphasize Logwood</English>
-		<Portuguese>Enfatizar madeira em toras</Portuguese>
+		<Portuguese>Enfatizar pau-campeche</Portuguese>
 		<German>Schwerpunkt Blauholz</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_LOGWOOD</Tag>
 		<English>Deemphasize Logwood</English>
-		<Portuguese>Diminuir a ênfase na madeira em toras</Portuguese>
+		<Portuguese>Diminuir a ênfase no pau-campeche</Portuguese>
 		<German>Schwerpunkt Blauholz aufheben</German>
 	</TEXT>
 	<TEXT>
@@ -219,13 +219,13 @@
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_VANILLA_PODS</Tag>
 		<English>Emphasize Green Vanilla Pods</English>
-		<Portuguese>Enfatize vagens de baunilha verde</Portuguese>
+		<Portuguese>Enfatize baunilha verde</Portuguese>
 		<German>Schwerpunkt Vanilleschoten</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_VANILLA_PODS</Tag>
 		<English>Deemphasize Green Vanilla Pods</English>
-		<Portuguese>Desenfatizar vagens de baunilha verde</Portuguese>
+		<Portuguese>Desenfatizar baunilha verde</Portuguese>
 		<German>Schwerpunkt Vanilleschoten aufheben</German>
 	</TEXT>
 	<TEXT>

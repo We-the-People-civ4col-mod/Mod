@@ -1656,7 +1656,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_SENTRY_HELP</Tag>
 		<English>Order the selected unit to move to a tile. The unit stops before reaching its destination if an enemy unit of the same type enter its visibility range.</English>
-		<Portuguese>Ordene que a unidade selecionada se mova para um quadrado. A unidade para antes de chegar ao seu destino se uma unidade inimiga do mesmo tipo entrar no seu alcance de visibilidade.</Portuguese>
+		<Portuguese>Ordene que a unidade selecionada se mova para um lote. A unidade para antes de chegar ao seu destino se uma unidade inimiga do mesmo tipo entrar no seu alcance de visibilidade.</Portuguese>
 		<French>Ordonner à l'unité sélectionnée de se déplacer vers une case.</French>
 		<German>Schicken Sie die gewählte Einheit auf ein gewähltes Geländefeld. Sollte eine feindliche Einheit in Sichtweite kommen, hält die Einheit automatisch an.</German>
 		<Italian>Ordina all'unità selezionata di muoversi su una casella</Italian>

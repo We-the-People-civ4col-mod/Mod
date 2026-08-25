@@ -118,7 +118,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_HELP</Tag>
 		<English>Order the unit to build the highest level of roads to the selected tile</English>
-		<Portuguese>Ordene à unidade que construa o nível mais alto de estradas até o ladrilho selecionado</Portuguese>
+		<Portuguese>Ordene à unidade que construa o nível mais alto de estradas até o lote selecionado</Portuguese>
 		<French>Construire la route la plus évoluée jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, Straßen (des besten verfügbaren Straßentyps) bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]вымощенную камнем дорогу[COLOR_REVERT] к выбранной клетке</Russian>
@@ -134,7 +134,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD_HELP</Tag>
 		<English>Order the unit to build simple roads to the selected tile</English>
-		<Portuguese>Ordene à unidade que construa estradas simples até o ladrilho selecionado</Portuguese>
+		<Portuguese>Ordene à unidade que construa estradas simples até o lote selecionado</Portuguese>
 		<French>Construire la route la plus élémentaire jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, einfache Straßen bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]обычную дорогу[COLOR_REVERT] к выбранной клетке</Russian>
@@ -150,7 +150,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_COUNTRY_ROAD_HELP</Tag>
 		<English>Order the unit to build country roads to the selected tile</English>
-		<Portuguese>Ordene à unidade que construa estradas de terra até o quadrado selecionado</Portuguese>
+		<Portuguese>Ordene à unidade que construa estradas de terra até o lote selecionado</Portuguese>
 		<French>Construire une route de gravier jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, Landstraßen bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]гравийную дорогу[COLOR_REVERT] к выбранной клетке</Russian>

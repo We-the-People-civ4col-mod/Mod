@@ -327,7 +327,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_DEFENSE_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% tile defense</English>
-		<Portuguese>[ICON_BULLET]%D1%% defesa do quadrado</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% defesa do lote</Portuguese>
 		<French>[ICON_BULLET]Défense de la case %D1%%</French>
 		<German>[ICON_BULLET]%D1%% Geländefeld-Verteidigung</German>
 		<Italian>[ICON_BULLET]%D1%% difensiva della casella</Italian>
@@ -490,7 +490,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_DEFENSE_MODIFIER</Tag>
 		<English>[ICON_BULLET]%D1%% tile defense</English>
-		<Portuguese>[ICON_BULLET]%D1%% defesa do quadrado</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% defesa do lote</Portuguese>
 		<French>[ICON_BULLET]Défense de la case %D1%%</French>
 		<German>[ICON_BULLET]%D1%% Geländefeld-Verteidigung</German>
 		<Italian>[ICON_BULLET]%D1%% difensiva della casella</Italian>
@@ -766,7 +766,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_HEALS_SAME_TEXT</Tag>
 		<English>[ICON_BULLET]Heals units in same tile extra %d1_Amount%%[SPACE]</English>
-		<Portuguese>[ICON_BULLET]Cura unidades extras no mesmo quadrado %d1_Amount%%[SPACE]</Portuguese>
+		<Portuguese>[ICON_BULLET]Cura unidades extras no mesmo lote %d1_Amount%%[SPACE]</Portuguese>
 		<French>[ICON_BULLET]Soigne les unités dans la même case de %d1_Amount%%[SPACE] en plus</French>
 		<German>[ICON_BULLET]Heilt Einheiten auf demselben Geländefeld um zusätzliche %d1_Amount%%[SPACE]</German>
 		<Italian>[ICON_BULLET]Cura le unità nella stessa casella del %d1_Amount%%[SPACE]</Italian>
@@ -788,7 +788,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_HEALS_ADJACENT_TEXT</Tag>
 		<English>[ICON_BULLET]Heals units in adjacent tiles extra %d1_Heals%%[SPACE]</English>
-		<Portuguese>[ICON_BULLET]Cura unidades em quadrados adjacentes extra %d1_Heals%%[SPACE]</Portuguese>
+		<Portuguese>[ICON_BULLET]Cura unidades em lotes adjacentes extra %d1_Heals%%[SPACE]</Portuguese>
 		<French>[ICON_BULLET]Soigne les unités dans les cases adjacentes de %d1_Heals%% en plus[SPACE]</French>
 		<German>[ICON_BULLET]Heilt Einheiten auf benachbarten Geländefeldern um zusätzliche %d1_Heals%%[SPACE]</German>
 		<Italian>[ICON_BULLET]Cura le unità nelle caselle adiacenti del %d1_Heals%%[SPACE]</Italian>
@@ -1032,7 +1032,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_IMPROVE_PLOTS</Tag>
 		<English>[ICON_BULLET]Can improve tiles</English>
-		<Portuguese>[ICON_BULLET]Pode melhorar quadrados</Portuguese>
+		<Portuguese>[ICON_BULLET]Pode melhorar lotes</Portuguese>
 		<French>[ICON_BULLET]Peut aménager les cases</French>
 		<German>[ICON_BULLET]Kann Geländefelder modernisieren</German>
 		<Italian>[ICON_BULLET]Può migliorare le caselle</Italian>
@@ -1279,7 +1279,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_WATER_PLOTS</Tag>
 		<English>Water tiles</English>
-		<Portuguese>Ladrilhos de água</Portuguese>
+		<Portuguese>Lotes de água</Portuguese>
 		<French>Cases d'eau[SPACE]</French>
 		<German>Wasser-Geländefelder</German>
 		<Italian>Caselle d'acqua</Italian>
@@ -1290,7 +1290,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_LAND_PLOTS</Tag>
 		<English>Land tiles</English>
-		<Portuguese>Ladrilhos de terreno</Portuguese>
+		<Portuguese>Lotes de terreno</Portuguese>
 		<French>Cases de terrain[SPACE]</French>
 		<German>Land-Geländefelder</German>
 		<Italian>Caselle di terra</Italian>
@@ -3525,7 +3525,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_WATER_WORK</Tag>
 		<English>[ICON_BULLET]Can work water tiles</English>
-		<Portuguese>[ICON_BULLET]Pode trabalhar com quadrados de água</Portuguese>
+		<Portuguese>[ICON_BULLET]Pode trabalhar com lotes de água</Portuguese>
 		<French>[ICON_BULLET]Peut travailler les cases d'eau</French>
 		<German>[ICON_BULLET]Kann Wasser-Geländefelder bewirtschaften</German>
 		<Italian>[ICON_BULLET]Permette di usare le caselle d'acqua</Italian>
@@ -12306,7 +12306,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_LEAD_TROOPS</Tag>
 		<English>Gives a total of %d1_Num experience points to units in the same tile</English>
-		<Portuguese>Dá um total de %d1_Num pontos de experiência para unidades no mesmo quadrado</Portuguese>
+		<Portuguese>Dá um total de %d1_Num pontos de experiência para unidades no mesmo lote</Portuguese>
 		<French>Octroie un total de %d1_Num expérience aux unités dans la même case</French>
 		<German>Überträgt insgesamt %d1_Num Erfahrungspunkte auf Einheiten auf demselben Geländefeld</German>
 		<Italian>Dà un totale di %d1_Num di esperienza alle unità presenti nella stessa casella</Italian>
@@ -12316,7 +12316,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEADER</Tag>
 		<English>[ICON_BULLET]Can provide %d1_Num experience to units in the same tile</English>
-		<Portuguese>[ICON_BULLET]Pode fornecer %d1_Num experiência para unidades no mesmo quadrado</Portuguese>
+		<Portuguese>[ICON_BULLET]Pode fornecer %d1_Num experiência para unidades no mesmo lote</Portuguese>
 		<French>[ICON_BULLET]Peut octroyer %d1_Num expérience aux unités dans la même case</French>
 		<German>[ICON_BULLET]Kann %d1_Num Erfahrungspunkte auf Einheiten auf demselben Geländefeld übertragen</German>
 		<Italian>[ICON_BULLET]Può dare %d1_Num di esperienza alle unità presenti nella stessa casella</Italian>
@@ -12598,7 +12598,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEADER_EXPERIENCE</Tag>
 		<English>[ICON_BULLET]Can provide up to %d1 XP to each unit in the same tile</English>
-		<Portuguese>[ICON_BULLET]Pode fornecer até %d1 XP para cada unidade no mesmo quadrado</Portuguese>
+		<Portuguese>[ICON_BULLET]Pode fornecer até %d1 XP para cada unidade no mesmo lote</Portuguese>
 		<French>[ICON_BULLET]Permet à chaque unité dans la même case d'obtenir jusqu'à %d1 EXP</French>
 		<German>[ICON_BULLET]Kann bis zu %d1 EP auf jede Einheit auf demselben Geländefeld übertragen</German>
 		<Italian>[ICON_BULLET]Può dare %d1 di esperienza alle unità presenti nella stessa casella</Italian>
@@ -13367,7 +13367,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_TILE_MOD</Tag>
 		<English>[ICON_BULLET]%D1_Bonus%% from tile defense</English>
-		<Portuguese>[ICON_BULLET]%D1_Bonus%% da defesa do quadrado</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1_Bonus%% da defesa do lote</Portuguese>
 		<French>[ICON_BULLET]%D1_Bonus%% (défense terrain)</French>
 		<German>[ICON_BULLET]%D1_Bonus%% durch Geländefeld-Verteidigung</German>
 		<Italian>[ICON_BULLET]%D1_Bonus%% dalla difesa della casella</Italian>
