@@ -6084,6 +6084,42 @@ void CvPlayer::doGoody(CvPlot* pPlot, CvUnit* pUnit)
 }
 
 
+int CvPlayer::getFoundCityMinRange(const CvPlot* pPlot) const
+{
+	int iRange = GC.getMIN_CITY_RANGE();
+	if (!GC.getGameINLINE().isOption(GAMEOPTION_REDUCED_CITY_DISTANCE) || iRange <= 1)
+	{
+		return iRange;
+	}
+
+	// 2-plot radius: always reduce by 1. 1-plot keeps the 3x3 ownership check
+	// so close colonies are for filling gaps, not the first wave.
+	// Use CITY_PLOTS_RADIUS: random maps can set radius without the game option.
+	if (CITY_PLOTS_RADIUS == 2)
+	{
+		return iRange - 1;
+	}
+
+	if (pPlot == NULL)
+	{
+		return iRange;
+	}
+
+	for (int iDX = -1; iDX <= 1; ++iDX)
+	{
+		for (int iDY = -1; iDY <= 1; ++iDY)
+		{
+			CvPlot* pLoopPlot = (pPlot->coord() + RelCoordinates(iDX, iDY)).plot();
+			if (pLoopPlot != NULL && pLoopPlot->getOwnerINLINE() != getID())
+			{
+				return iRange;
+			}
+		}
+	}
+
+	return iRange - 1;
+}
+
 bool CvPlayer::canFound(Coordinates foundCoord, bool bTestVisible) const
 {
 	CvPlot* pPlot;
@@ -6191,29 +6227,7 @@ bool CvPlayer::canFound(Coordinates foundCoord, bool bTestVisible) const
 
 	if (!bTestVisible)
 	{
-		iRange = GC.getMIN_CITY_RANGE();
-
-		/// reduced city distance - start - Nightinggale
-		if (GC.getGameINLINE().isOption(GAMEOPTION_REDUCED_CITY_DISTANCE))
-		{
-			bool bOwnsAll = true;
-			for (iDX = -1; iDX <= 1 && bOwnsAll; iDX++)
-			{
-				for (iDY = -1; iDY <= 1 && bOwnsAll; iDY++)
-				{
-					pLoopPlot = (pPlot->coord() + RelCoordinates(iDX, iDY)).plot();
-					if (pLoopPlot != NULL && pLoopPlot->getOwnerINLINE() != getID())
-					{
-						bOwnsAll = false;
-					}
-				}
-			}
-			if (bOwnsAll)
-			{
-				--iRange;
-			}
-		}
-		/// reduced city distance - end - Nightinggale
+		iRange = getFoundCityMinRange(pPlot);
 
 		for (iDX = -(iRange); iDX <= iRange; iDX++)
 		{
