@@ -11581,6 +11581,9 @@ namespace
 	// Arctic coastal villages: fisherman must beat generic tundra/snow fur.
 	const int NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_SCORE = 8000;
 	const int NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_WEIGHT = 4;
+	// Other coasts / great rivers without a fish bonus: beat empty hills, lose to
+	// named crops and to a forest hunter.
+	const int NATIVE_TEACH_COAST_FISHERMAN_SCORE = 5000;
 	// Gold/silver/gems: prospector must beat a weight-3 crop bonus (10000 * 3).
 	const int NATIVE_TEACH_PRECIOUS_METAL_SCORE = 40000;
 
@@ -11620,11 +11623,16 @@ namespace
 
 	bool isGenericTeachUnitClass(UnitClassTypes eUnitClass)
 	{
-		// Hunter/trapper/miner may still use terrain. Miner gets a bonus
-		// match for ore but is not guaranteed to win.
+		// Hunter/trapper may still use terrain (forests, deer). Miner needs
+		// an ore/salt bonus; hills and peaks alone are not a mine.
 		return isUnitClassType(eUnitClass, "UNITCLASS_HUNTER") ||
-			isUnitClassType(eUnitClass, "UNITCLASS_TRAPPER") ||
-			isUnitClassType(eUnitClass, "UNITCLASS_MINER");
+			isUnitClassType(eUnitClass, "UNITCLASS_TRAPPER");
+	}
+
+	bool isMineTeachUnitClass(UnitClassTypes eUnitClass)
+	{
+		return isUnitClassType(eUnitClass, "UNITCLASS_MINER") ||
+			isUnitClassType(eUnitClass, "UNITCLASS_PROSPECTOR");
 	}
 
 	bool isSharedGenericYield(YieldTypes eYield)
@@ -11901,6 +11909,11 @@ namespace
 			return isPreciousMetalBonus(eBonus);
 		}
 
+		if (isUnitClassType(eUnitClass, "UNITCLASS_MINER"))
+		{
+			return bonusGivesYield(eBonus, YIELD_ORE) || bonusGivesYield(eBonus, YIELD_RAW_SALT);
+		}
+
 		if (isUnitClassType(eUnitClass, "UNITCLASS_FISHERMAN"))
 		{
 			return isFishBonus(eBonus);
@@ -12002,6 +12015,9 @@ namespace
 // Name match is by tokens (GRAPES is not RAPE). Adjacent tiles outrank
 // range-2 tiles. Fur is scored below named crops so pepper/tobacco still
 // beat Hunter, but forests and deer still beat generic Farmer food.
+// Miner needs iron/bog ore/minerals/salt; prospector needs gold/silver/gems.
+// Hills and peaks do not teach those by themselves. Coastal and great-river
+// villages may teach Fisherman without a fish bonus, below a named crop.
 // Horses are scored as a rare bonus so Scout beats common fur. A tribe
 // does not repeat a specialty already taught by another of its villages,
 // unless no other local option remains. No random roll.
@@ -12016,12 +12032,18 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 	int iArcticLandPlots = 0;
 	int iLandPlots = 0;
 	bool bHasSeaCoast = false;
+	bool bHasLargeRiver = false;
 	LOOP_ADJACENT_PLOTS(getX_INLINE(), getY_INLINE(), NATIVE_TEACH_SCAN_RANGE)
 	{
 		CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
 		if (pLoopPlot == NULL)
 		{
 			continue;
+		}
+
+		if (pLoopPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)
+		{
+			bHasLargeRiver = true;
 		}
 
 		if (pLoopPlot->isWater())
@@ -12042,7 +12064,9 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 	}
 
 	const bool bArcticVillage = isArcticTerrain(plot()->getTerrainType()) || (iLandPlots > 0 && iArcticLandPlots * 2 >= iLandPlots);
-	const bool bArcticCoast = bArcticVillage && (bHasSeaCoast || plot()->isCoastalLand());
+	const bool bCoastalVillage = bHasSeaCoast || plot()->isCoastalLand();
+	const bool bArcticCoast = bArcticVillage && bCoastalVillage;
+	const bool bFishermanWaterVillage = bCoastalVillage || bHasLargeRiver;
 
 	UnitClassTypes eFallbackUnitClass = NO_UNITCLASS;
 	UnitClassTypes eBestUniqueUnitClass = NO_UNITCLASS;
@@ -12058,7 +12082,9 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			continue;
 		}
 
-		if (!isGenericTeachUnitClass(eUnitClass) && !hasNearbySpecialistBonus(eUnitClass, getX_INLINE(), getY_INLINE(), kMap))
+		const bool bFishermanOnWater = isUnitClassType(eUnitClass, "UNITCLASS_FISHERMAN") && bFishermanWaterVillage;
+		if (!isGenericTeachUnitClass(eUnitClass) && !bFishermanOnWater &&
+			!hasNearbySpecialistBonus(eUnitClass, getX_INLINE(), getY_INLINE(), kMap))
 		{
 			continue;
 		}
@@ -12115,8 +12141,16 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 
 				const int iDistWeight = teachDistanceWeight(teachPlotDistance(getX_INLINE(), getY_INLINE(), iLoopX, iLoopY));
 
+				const BonusTypes eBonus = pLoopPlot->getBonusType();
+				const bool bBonusMatch = bonusMatchesProfession(eBonus, eUnitClass, kProfession, eWantedYield, kCiv);
+				if (bBonusMatch)
+				{
+					iBonusMatches += iDistWeight;
+				}
+
+				// Hills/peaks always yield ore. That is terrain, not a mine.
 				const int iNatureYield = pLoopPlot->calculateNatureYield(eWantedYield, getTeam(), false);
-				if (iNatureYield > 0)
+				if (iNatureYield > 0 && (!isMineTeachUnitClass(eUnitClass) || bBonusMatch))
 				{
 					iYieldAmount += iNatureYield * iDistWeight;
 				}
@@ -12131,35 +12165,31 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 				{
 					iLargeRiverMatches += iDistWeight;
 				}
-
-				const BonusTypes eBonus = pLoopPlot->getBonusType();
-				if (eBonus == NO_BONUS)
-				{
-					continue;
-				}
-
-				if (bonusMatchesProfession(eBonus, eUnitClass, kProfession, eWantedYield, kCiv))
-				{
-					iBonusMatches += iDistWeight;
-				}
 			}
 
 			const bool bFurSpecialist =
 				isUnitClassType(eUnitClass, "UNITCLASS_HUNTER") ||
 				isUnitClassType(eUnitClass, "UNITCLASS_TRAPPER");
 
-			if (iYieldAmount <= 0 && iFeatureMatches <= 0 && iBonusMatches <= 0 && iLargeRiverMatches <= 0)
+			if (iYieldAmount <= 0 && iFeatureMatches <= 0 && iBonusMatches <= 0 && iLargeRiverMatches <= 0 && !bFishermanOnWater)
 			{
 				continue;
 			}
 
 			int iUsedWeight = iWeight;
-			int iArcticCoastScore = 0;
+			int iWaterFishermanScore = 0;
 			int iPreciousScore = 0;
-			if (bArcticCoast && isUnitClassType(eUnitClass, "UNITCLASS_FISHERMAN"))
+			if (isUnitClassType(eUnitClass, "UNITCLASS_FISHERMAN") && bFishermanWaterVillage)
 			{
-				iUsedWeight = std::max(iWeight, 1) * NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_WEIGHT;
-				iArcticCoastScore = NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_SCORE;
+				if (bArcticCoast)
+				{
+					iUsedWeight = std::max(iWeight, 1) * NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_WEIGHT;
+					iWaterFishermanScore = NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_SCORE;
+				}
+				else if (iBonusMatches <= 0)
+				{
+					iWaterFishermanScore = NATIVE_TEACH_COAST_FISHERMAN_SCORE;
+				}
 			}
 			if (isUnitClassType(eUnitClass, "UNITCLASS_PROSPECTOR") && iBonusMatches > 0)
 			{
@@ -12168,7 +12198,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 
 			const int iBonusScore = bFurSpecialist ? NATIVE_TEACH_FUR_BONUS_SCORE : NATIVE_TEACH_BONUS_SCORE;
 			const int iFeatureScore = bFurSpecialist ? NATIVE_TEACH_FUR_FEATURE_SCORE : NATIVE_TEACH_FEATURE_SCORE;
-			const int iProfessionValue = (iYieldAmount + iFeatureMatches * iFeatureScore + iLargeRiverMatches * NATIVE_TEACH_LARGE_RIVER_SCORE + iBonusMatches * iBonusScore) * iUsedWeight + iArcticCoastScore + iPreciousScore;
+			const int iProfessionValue = (iYieldAmount + iFeatureMatches * iFeatureScore + iLargeRiverMatches * NATIVE_TEACH_LARGE_RIVER_SCORE + iBonusMatches * iBonusScore) * iUsedWeight + iWaterFishermanScore + iPreciousScore;
 			if (iProfessionValue > iBestProfessionValue)
 			{
 				iBestProfessionValue = iProfessionValue;
