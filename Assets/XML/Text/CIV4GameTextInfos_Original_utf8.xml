@@ -4352,7 +4352,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CUSTOM_GAME</Tag>
 		<English>Custom Game</English>
-		<Portuguese>Jogo personalizado</Portuguese>
+		<Portuguese>Personalizar Jogo</Portuguese>
 		<French>Partie personnalisée</French>
 		<German>Zufallskarte</German>
 		<Italian>Partita personalizzata</Italian>
@@ -11186,7 +11186,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CUSTOM_SCENARIO</Tag>
 		<English>Custom Scenario</English>
-		<Portuguese>Cenário personalizado</Portuguese>
+		<Portuguese>Personalizar Cenário</Portuguese>
 		<French>Personnaliser scénario</French>
 		<German>Szenario</German>
 		<Italian>Scenario personalizzato</Italian>
