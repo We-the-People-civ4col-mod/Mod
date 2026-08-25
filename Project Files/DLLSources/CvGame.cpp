@@ -2172,10 +2172,7 @@ bool CvGame::cyclePlotUnits(CvPlot* pPlot, bool bForward, bool bAuto, int iCount
 
 void CvGame::selectionListMove(CvPlot* pPlot, bool bAlt, bool bShift, bool bCtrl)
 {
-	CLLNode<IDInfo>* pSelectedUnitNode;
 	CvUnit* pHeadSelectedUnit;
-	CvUnit* pSelectedUnit;
-	TeamTypes eRivalTeam;
 
 	if (pPlot == NULL)
 	{
@@ -2212,29 +2209,9 @@ void CvGame::selectionListMove(CvPlot* pPlot, bool bAlt, bool bShift, bool bCtrl
 		gDLL->getInterfaceIFace()->selectGroup(pHeadSelectedUnit, false, true, false);
 	}
 
-	pSelectedUnitNode = gDLL->getInterfaceIFace()->headSelectionListNode();
-
-	while (pSelectedUnitNode != NULL)
-	{
-		pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
-		pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
-
-		if (pSelectedUnit == NULL)
-			continue;
-
-		eRivalTeam = pSelectedUnit->getDeclareWarUnitMove(pPlot);
-
-		// Erik: No annoying popup for transport units
-		// WTP, ray, unless it is a "Troop only" ship
-		//if (pSelectedUnit->cargoSpace() == 0 && eRivalTeam != NO_TEAM)
-		if (eRivalTeam != NO_TEAM && (pSelectedUnit->cargoSpace() == 0 || pSelectedUnit->getUnitInfo().isTroopShip()))
-		{
-			// moving onto a foreign unit (or into land that would start a war) no longer
-			// asks "does this mean war?". declare war from the diplomacy screen, then move / attack.
-			return;
-		}
-	}
-
+	// No "does this mean war?" popup on move. If the tile can be entered
+	// without war, MOVE_TO goes through; if not, the mission fails until
+	// war is declared from the diplomacy screen.
 	selectionListGameNetMessage(GAMEMESSAGE_PUSH_MISSION, MISSION_MOVE_TO, pPlot->getX(), pPlot->getY(), 0, false, bShift);
 }
 
