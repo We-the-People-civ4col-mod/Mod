@@ -62,7 +62,7 @@
 			<Plural>0</Plural>
 		</English>
 		<Portuguese>
-			<Text>Senhor Thomas Gates</Text>
+			<Text>Sir Thomas Gates</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -110,7 +110,7 @@
 			<Plural>0</Plural>
 		</English>
 		<Portuguese>
-			<Text>Eusébio Franz Kühn</Text>
+			<Text>Eusebius Franz Kühn</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -139,7 +139,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_EUSEBIO_FRANCISO_KINO_PEDIA</Tag>
 		<English>[H1]Eusebius Franz Kühn[\H1][NEWLINE][BOLD]Lived : [\BOLD]1645 - 1711[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Father Kino, also known as Eusebio Francisco Kino, was a Tyrolean Jesuit who opposed the slavery and compulsory hard labour in the silver mines that the Spaniards forced on the Native people.[PARAGRAPH:2:1]He was an expert astronomer, mathematician and cartographer who drew the first accurate maps of the Gulf of California and Baja California. He also believed that Mexican Natives could easily access California by sea.</English>
-		<Portuguese>[H1]Eusébio Franz Kühn[\H1][NEWLINE][BOLD]Viveu: [\BOLD]1645 - 1711[NEWLINE][NEWLINE][BOLD]Antecedentes:[\BOLD][PARAGRAPH:1:1]Padre Kino, também conhecido como Eusébio Francisco Kino, era um jesuíta tirolês que se opôs à escravidão e ao trabalho duro compulsório nas minas de prata que os espanhóis forçaram o povo nativo.[PARAGRAPH:2:1]Ele foi um astrônomo, matemático e cartógrafo especialista que desenhou os primeiros mapas precisos do Golfo da Califórnia e da Baixa Califórnia. Ele também acreditava que os nativos mexicanos poderiam facilmente acessar a Califórnia por mar.</Portuguese>
+		<Portuguese>[H1]Eusebius Franz Kühn[\H1][NEWLINE][BOLD]Viveu: [\BOLD]1645 - 1711[NEWLINE][NEWLINE][BOLD]Antecedentes:[\BOLD][PARAGRAPH:1:1]Padre Kino, também conhecido como Eusébio Francisco Kino, era um jesuíta tirolês que se opôs à escravidão e ao trabalho duro compulsório nas minas de prata que os espanhóis forçaram o povo nativo.[PARAGRAPH:2:1]Ele foi um astrônomo, matemático e cartógrafo especialista que desenhou os primeiros mapas precisos do Golfo da Califórnia e da Baixa Califórnia. Ele também acreditava que os nativos mexicanos poderiam facilmente acessar a Califórnia por mar.</Portuguese>
 		<German>[H1]Eusebius Franz Kühn[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1645 - 1711[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]Pater Kino, auch bekannt als Eusebio Francisco Kino, war ein Tiroler Jesuit, der sich gegen die Sklaverei und die Zwangsarbeit in den Silberminen wandte, die die Spanier den Ureinwohnern aufzwangen.[PARAGRAPH:2:1]Er war ein erfahrener Astronom, Mathematiker und Kartograph, der die ersten genauen Karten des Golfs von Kalifornien und der Baja California zeichnete. Er glaubte auch, dass die mexikanischen Ureinwohner Kalifornien leicht auf dem Seeweg erreichen konnten.</German>
 		<Hungarian>[H1]Eusebius Franz Kühn[\H1][NEWLINE][BOLD]Élt: [\BOLD]1645 - 1711[NEWLINE][NEWLINE][BOLD]Háttér:[\BOLD][PARAGRAPH:1:1] Kino atya, más néven Eusebio Francisco Kino, tiroli jezsuita volt, aki ellenezte a rabszolgaságot és a spanyolok által az indiánokra kényszerített kényszermunkát az ezüstbányákban.[PARAGRAPH:2:1]Kiváló csillagász, matematikus és térképész volt, aki elkészítette az első pontos térképeket a Kaliforniai-öbölről és Baja Californiáról. Úgy vélte, hogy a mexikói indiánok könnyen elérhetik Kaliforniát tengeren.</Hungarian>
 	</TEXT>
@@ -254,7 +254,7 @@
 			<Plural>0</Plural>
 		</English>
 		<Portuguese>
-			<Text>Barão De La Warr</Text>
+			<Text>Baron De La Warr</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -284,7 +284,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_THOMAS_WEST_DE_LA_WARR_PEDIA</Tag>
 		<English>[H1]Thomas West, Baron De La Warr[\H1][NEWLINE][BOLD]Lived : [\BOLD]1577 - 1618[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]Thomas West, 3rd Baron De La Warr, was an English merchant and politician for whom the U.S. state of Delaware was named. He was the largest investor in the London Company which received two charters to settle colonists in the New World.[PARAGRAPH:2:1]In 1609, Baron De La Warr was also appointed governor-for-life and captain-general of the Colony of Virginia. In 1616, he introduced John Rolfe and his wife, Pocahontas, into English society.[PARAGRAPH:2:1]After receiving complaints from the Virginia settlers about the tyranny of his governor there, he set sail for Virginia in 1618 aboard the "Neptune" to investigate those charges. He died at sea on June 7. It is believed that he was poisoned.</English>
-		<Portuguese>[H1]Thomas West, Barão De La Warr[\H1][NEWLINE][BOLD]Viveu: [\BOLD]1577 - 1618[NEWLINE][NEWLINE][BOLD]Antecedentes:[\BOLD][PARAGRAPH:1:1]Thomas West, 3º Barão De La Warr, foi um comerciante e político inglês para quem o estado americano de Delaware foi nomeado. Ele foi o maior investidor da Companhia de Londres, que recebeu duas cartas para estabelecer colonos no Novo Mundo.[PARAGRAPH:2:1]Em 1609, o Barão De La Warr também foi nomeado governador vitalício e capitão-geral da Colônia da Virgínia. Em 1616, ele apresentou John Rolfe e sua esposa, Pocahontas, à sociedade inglesa.[PARAGRAPH:2:1]Depois de receber reclamações dos colonos da Virgínia sobre a tirania de seu governador, ele partiu para a Virgínia em 1618 a bordo do "Netuno" para investigar essas acusações. Ele morreu no mar em 7 de junho. Acredita-se que tenha sido envenenado.</Portuguese>
+		<Portuguese>[H1]Thomas West, Baron De La Warr[\H1][NEWLINE][BOLD]Viveu: [\BOLD]1577 - 1618[NEWLINE][NEWLINE][BOLD]Antecedentes:[\BOLD][PARAGRAPH:1:1]Thomas West, 3º Baron De La Warr, foi um comerciante e político inglês para quem o estado americano de Delaware foi nomeado. Ele foi o maior investidor da Companhia de Londres, que recebeu duas cartas para estabelecer colonos no Novo Mundo.[PARAGRAPH:2:1]Em 1609, o Baron De La Warr também foi nomeado governador vitalício e capitão-geral da Colônia da Virgínia. Em 1616, ele apresentou John Rolfe e sua esposa, Pocahontas, à sociedade inglesa.[PARAGRAPH:2:1]Depois de receber reclamações dos colonos da Virgínia sobre a tirania de seu governador, ele partiu para a Virgínia em 1618 a bordo do "Netuno" para investigar essas acusações. Ele morreu no mar em 7 de junho. Acredita-se que tenha sido envenenado.</Portuguese>
 		<German>[H1]Thomas West, Baron De La Warr[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1577 - 1618[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]Thomas West, 3. Baron De La Warr, war ein englischer Kaufmann und Politiker, nach dem der US-Bundesstaat Delaware benannt wurde. Er war der größte Investor der Londoner Gesellschaft, die zwei Gründungsurkunden für die Ansiedlung von Kolonisten in der Neuen Welt erhielt. 1609 wurde Baron De La Warr außerdem zum Gouverneur auf Lebenszeit und zum Generalkapitän der Kolonie Virginia ernannt. Im Jahr 1616 führte er John Rolfe und seine Frau Pocahontas in die englische Gesellschaft ein.[PARAGRAPH:2:1]Nachdem sich die Siedler von Virginia über die Tyrannei seines dortigen Gouverneurs beschwert hatten, segelte er 1618 an Bord der "Neptun" nach Virginia, um diesen Vorwürfen nachzugehen. Er starb am 7. Juni auf See. Es wird angenommen, dass er vergiftet wurde.</German>
 		<Hungarian>[H1]De La Warr Báró[\H1][NEWLINE][BOLD]Élt: [\BOLD]1577 - 1618[NEWLINE][NEWLINE][BOLD]Háttér:[\BOLD][PARAGRAPH:1:1]Thomas West, De La Warr 3. bárója, angol kereskedő és politikus volt, akiről az amerikai Delaware államot elnevezték. Ő volt a legnagyobb befektető a London Company-ban, amely két alapító okiratot kapott a gyarmatosok letelepítésére az Újvilágban. [PARAGRAPH:2:1]1609-ben De La Warr bárót kinevezték Virginia kolónia örökös kormányzójává és főkapitányává. 1616-ban bemutatta John Rolfe-ot és feleségét, Pocahontast az angol társadalomnak. [PARAGRAPH:2:1] Miután panaszokat kapott a virginiai telepesektől a helyi kormányzó zsarnokságáról, 1618-ban a "Neptune" fedélzetén Virginia felé vette az irányt, hogy kivizsgálja a vádakat. Június 7-én a tengeren halt meg. Úgy gondolják, hogy megmérgezték.</Hungarian>
 	</TEXT>
@@ -399,7 +399,7 @@
 			<Plural>0</Plural>
 		</English>
 		<Portuguese>
-			<Text>Senhor John Harvey</Text>
+			<Text>Sir John Harvey</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -495,7 +495,7 @@
 			<Plural>0</Plural>
 		</English>
 		<Portuguese>
-			<Text>William Tailor</Text>
+			<Text>William Tailer</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
@@ -543,7 +543,7 @@
 			<Plural>0</Plural>
 		</English>
 		<Portuguese>
-			<Text>Samuel Nicolau</Text>
+			<Text>Samuel Nicholas</Text>
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Portuguese>
