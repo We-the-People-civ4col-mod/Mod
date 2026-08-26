@@ -23,13 +23,8 @@ def unitBuiltFeats(pCity, pUnit):
 	return
 
 def unitMoveFeats(pUnit, pPlot, pOldPlot):
-	if not pPlot.isNone():
-		# arriving on a Europe (red) tile sails immediately. Africa and Port Royal already have no confirm popup.
-		pGroup = pUnit.getGroup()
-		if (not pGroup.isNone() and pGroup.getLengthMissionQueue() == 1):
-			if (pGroup.getMissionType(0) == MissionTypes.MISSION_MOVE_TO and pGroup.at(pGroup.getMissionData1(0), pGroup.getMissionData2(0))):
-				if (not pUnit.isAutomated() and pUnit.canDoCommand(CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, -1, False)):
-					CyMessageControl().sendDoCommand(pUnit.getID(), CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, -1, False)
+	# no "sail to Europe?" popup on the red tiles. use the sail buttons, same as Africa and Port Royal.
+	return
 
 def cityScreenFeats(iPlayer, iCityId):
 	player = gc.getPlayer(iPlayer)
