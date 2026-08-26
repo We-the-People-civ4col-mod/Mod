@@ -2172,7 +2172,10 @@ bool CvGame::cyclePlotUnits(CvPlot* pPlot, bool bForward, bool bAuto, int iCount
 
 void CvGame::selectionListMove(CvPlot* pPlot, bool bAlt, bool bShift, bool bCtrl)
 {
+	CLLNode<IDInfo>* pSelectedUnitNode;
 	CvUnit* pHeadSelectedUnit;
+	CvUnit* pSelectedUnit;
+	TeamTypes eRivalTeam;
 
 	if (pPlot == NULL)
 	{
@@ -2209,9 +2212,49 @@ void CvGame::selectionListMove(CvPlot* pPlot, bool bAlt, bool bShift, bool bCtrl
 		gDLL->getInterfaceIFace()->selectGroup(pHeadSelectedUnit, false, true, false);
 	}
 
-	// No "does this mean war?" popup on move. If the tile can be entered
-	// without war, MOVE_TO goes through; if not, the mission fails until
-	// war is declared from the diplomacy screen.
+	pSelectedUnitNode = gDLL->getInterfaceIFace()->headSelectionListNode();
+
+	while (pSelectedUnitNode != NULL)
+	{
+		pSelectedUnit = ::getUnit(pSelectedUnitNode->m_data);
+		pSelectedUnitNode = gDLL->getInterfaceIFace()->nextSelectionListNode(pSelectedUnitNode);
+
+		if (pSelectedUnit == NULL)
+			continue;
+
+		eRivalTeam = pSelectedUnit->getDeclareWarUnitMove(pPlot);
+
+		// cargo ships skip. troop ships still ask for Europeans.
+		if (eRivalTeam != NO_TEAM && (pSelectedUnit->cargoSpace() == 0 || pSelectedUnit->getUnitInfo().isTroopShip()))
+		{
+			const PlayerTypes eRivalLeader = GET_TEAM(eRivalTeam).getLeaderID();
+			// natives: no ask, no auto-war. just MOVE_TO. war stays on the diplomacy screen.
+			if (eRivalLeader != NO_PLAYER && GET_PLAYER(eRivalLeader).isNative())
+			{
+				break;
+			}
+
+			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_DECLAREWARMOVE);
+			if (NULL != pInfo)
+			{
+				pInfo->setData1(eRivalTeam);
+				pInfo->setData2(pPlot->getX());
+				pInfo->setData3(pPlot->getY());
+				pInfo->setOption1(bShift);
+				if (pPlot->isOwned())
+				{
+					pInfo->setOption2(pSelectedUnit->canEnterTerritory(pPlot->getOwnerINLINE()));
+				}
+				else
+				{
+					pInfo->setOption2(true);
+				}
+				gDLL->getInterfaceIFace()->addPopup(pInfo);
+			}
+			return;
+		}
+	}
+
 	selectionListGameNetMessage(GAMEMESSAGE_PUSH_MISSION, MISSION_MOVE_TO, pPlot->getX(), pPlot->getY(), 0, false, bShift);
 }
 
