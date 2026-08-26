@@ -3422,7 +3422,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_HINT_47</Tag>
 		<English>Any colonist unit can build a new settlement. All you need to do is move a unit to the desired location and press the "Found Settlement" button.</English>
-		<Portuguese>Qualquer unidade colonizadora pode construir uma nova colônia. Tudo o que você precisa fazer é mover uma unidade para o local desejado e pressionar o botão "Colônia encontrado".</Portuguese>
+		<Portuguese>Para fundar uma colônia, você precisa de uma unidade com a profissão [COLOR_HIGHLIGHT_TEXT]Fundador[COLOR_REVERT]. Você pode atribuir esta profissão a quase qualquer unidade nas docas da Europa (o equipamento precisará ser adquirido com ouro em seu tesouro) ou em uma de suas colônias no Novo Mundo (desde que o equipamento necessário esteja armazenado).</Portuguese>
 		<French>N'importe quel colon peut fonder une nouvelle colonie. Il vous suffit de déplacer une unité à l'endroit de votre choix et de cliquer sur le bouton "Fonder colonie".</French>
 		<German>Jede Kolonisteneinheit kann eine neue Siedlung errichten. Sie müssen dazu lediglich eine Einheit an den gewünschten Ort bewegen und auf "Siedlung gründen" klicken.</German>
 		<Italian>Qualsiasi colono può costruire un nuovo insediamento. Tutto quello che devi fare è spostarlo nella posizione desiderata e premere il pulsante "Costruisci insediamento".</Italian>
