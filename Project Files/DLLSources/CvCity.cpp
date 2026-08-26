@@ -5029,7 +5029,29 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 			}
 		}
 
-		const int iMod = getBaseYieldRateModifier(eOutput);
+		// 1. milk uses the better of its own city buff and the animals being milked.
+		//    stables boost cattle/sheep/goats; without this those building % never
+		//    reached the milk and the tooltip 20.40 extra just vanished.
+		int iMod = getBaseYieldRateModifier(eOutput);
+		for (iCap = 0; iCap < (int)vCap.size(); ++iCap)
+		{
+			YieldTypes eCap = vCap[iCap];
+			const int iCapIndex = (int)eCap;
+			if (iCapIndex < 0 || iCapIndex >= NUM_YIELD_TYPES)
+			{
+				continue;
+			}
+
+			const int iNetProduced = aiProducedYields[iCapIndex] - aiConsumedYields[iCapIndex];
+			if (iNetProduced + getYieldStored(eCap) > 0)
+			{
+				const int iCapMod = getBaseYieldRateModifier(eCap);
+				if (iCapMod > iMod)
+				{
+					iMod = iCapMod;
+				}
+			}
+		}
 
 		if (iCapacityUnits <= 0)
 		{
@@ -5043,10 +5065,13 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 			if (aiProducedYields[iOutIndex] > iCapacityUnits)
 			{
 				aiProducedYields[iOutIndex] = iCapacityUnits;
-				aiYields[iOutIndex] = getYieldStored(eOutput)
-					- aiConsumedYields[iOutIndex]
-					+ aiProducedYields[iOutIndex] * iMod / 100;
 			}
+			// 2. always put the city buff back on milk after the cap. old code
+			//    only did this when production was cut, so "enough cows" dropped
+			//    the rebel/building extra and only the raw 12 landed in store.
+			aiYields[iOutIndex] = getYieldStored(eOutput)
+				- aiConsumedYields[iOutIndex]
+				+ aiProducedYields[iOutIndex] * iMod / 100;
 		}
 	}
 
@@ -5244,6 +5269,48 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 				break;
 			}
 		}
+	}
+
+	// 3. the deficit pass above recasts milk with milk's own modifier. put the
+	//    animal building buff back on if it is higher, using the already-capped
+	//    raw amount.
+	for (iOut = 0; iOut < (int)game.g_aeGatedOutputs.size(); ++iOut)
+	{
+		YieldTypes eOutput = game.g_aeGatedOutputs[iOut];
+		const int iOutIndex = (int)eOutput;
+		if (iOutIndex < 0 || iOutIndex >= NUM_YIELD_TYPES)
+		{
+			continue;
+		}
+		if (aiProducedYields[iOutIndex] <= 0)
+		{
+			continue;
+		}
+
+		int iMod = getBaseYieldRateModifier(eOutput);
+		const std::vector<YieldTypes>& vCap = game.g_aeCapacityYieldsForOutput[iOutIndex];
+		int iCap;
+		for (iCap = 0; iCap < (int)vCap.size(); ++iCap)
+		{
+			YieldTypes eCap = vCap[iCap];
+			const int iCapIndex = (int)eCap;
+			if (iCapIndex < 0 || iCapIndex >= NUM_YIELD_TYPES)
+			{
+				continue;
+			}
+			if (aiProducedYields[iCapIndex] - aiConsumedYields[iCapIndex] + getYieldStored(eCap) > 0)
+			{
+				const int iCapMod = getBaseYieldRateModifier(eCap);
+				if (iCapMod > iMod)
+				{
+					iMod = iCapMod;
+				}
+			}
+		}
+
+		aiYields[iOutIndex] = getYieldStored(eOutput)
+			- aiConsumedYields[iOutIndex]
+			+ aiProducedYields[iOutIndex] * iMod / 100;
 	}
 
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)

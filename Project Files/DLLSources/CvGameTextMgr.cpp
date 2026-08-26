@@ -9168,8 +9168,10 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		// WTP, ray, correcting Yield Help for Culture - missing Culture from Citizens - END
 		else 
 		{
-			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_TOTAL", info.getTextKeyWide(), iModifiedProduction, info.getChar()));
-			FAssert(iModifiedProduction == aiYields[eYieldType]);
+			// 1. milkmaid cattle extra is stripped in calculateNetYields so the
+			//    herd does not breed from rebel %. the total has to be the net
+			//    that actually lands in store, not the pre-strip tooltip math.
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_TOTAL", info.getTextKeyWide(), aiYields[eYieldType], info.getChar()));
 		}
 	}
 	// R&R, ray, Health - END
@@ -9779,6 +9781,21 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 				}
 				//WTP, ray, Slave Hunter and Slave Master - END
 
+				// 1. cattle/sheep/goats from a milkmaid are given back 1:1. city
+				//    buffs go on the milk. showing 20.40 on the animals was the
+				//    extra that then got stripped, so it looked like buffs vanished.
+				bool bPassthroughYield = false;
+				for (int iConsumedIdx = 0; iConsumedIdx < kProfession.getNumYieldsConsumed(); ++iConsumedIdx)
+				{
+					if ((YieldTypes)kProfession.getYieldsConsumed(iConsumedIdx) == eProfessionYield)
+					{
+						bPassthroughYield = true;
+						break;
+					}
+				}
+
+				if (!bPassthroughYield)
+				{
 				int iModifier = setCityYieldModifierString(szString, eProfessionYield, kCity);
 
 				//WTP, ray, Slave Hunter and Slave Master
@@ -9801,6 +9818,7 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 					CvWString szNumber = CvWString::format(L"%d.%02d", iTotalYieldTimes100 / 100, iTotalYieldTimes100 % 100);
 					szString.append(gDLL->getText("TXT_KEY_YIELD_TOTAL_FLOAT", GC.getYieldInfo(eProfessionYield).getTextKeyWide(), szNumber.GetCString(), iProfessionYieldChar));
 					szString.append(SEPARATOR);
+				}
 				}
 				if (eProfessionYield == YIELD_EDUCATION)
 				{
