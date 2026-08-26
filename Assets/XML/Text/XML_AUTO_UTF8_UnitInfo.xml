@@ -1255,7 +1255,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FAILED_TRADER_STRATEGY</Tag>
 		<English>When [LINK=UNIT_EXPERT_TRADER]Expert Traders[\LINK] fail to set up a trading post in a Native village they become failed traders.[NEWLINE]Their disappointment leads to a bad work ethic. [NEWLINE]Since they have not lost their knowledge about how to do business they can still be useful in other professions. [NEWLINE]They may become experts in a profession once again.</English>
-		<Portuguese>Quando [LINK=UNIT_EXPERT_TRADER]Comerciantes Especialistas[\LINK] não conseguem estabelecer uma feitoria em uma aldeia indígena, eles se tornam comerciantes fracassados.[NEWLINE]Sua decepção leva a uma má ética de trabalho. [NEWLINE]Como não perderam o conhecimento sobre como fazer negócios, ainda podem ser úteis em outras profissões. [NEWLINE]Eles podem se tornar especialistas em uma profissão mais uma vez.</Portuguese>
+		<Portuguese>Quando [LINK=UNIT_EXPERT_TRADER]Comerciantes Nativos[\LINK] não conseguem estabelecer uma feitoria em uma aldeia indígena, eles se tornam comerciantes fracassados.[NEWLINE]Sua decepção leva a uma má ética de trabalho. [NEWLINE]Como não perderam o conhecimento sobre como fazer negócios, ainda podem ser úteis em outras profissões. [NEWLINE]Eles podem se tornar especialistas em uma profissão mais uma vez.</Portuguese>
 		<French> Quand des [LINK=UNIT_EXPERT_TRADER]marchands experts[\LINK] échouent à établir un comptoir dans un village Indigène, ils ne sont pas tués, mais ruinés.[NEWLINE] Leur déception ruine leur ardeur à la tâche. [NEWLINE]Ils n'ont toutefois pas tout perdu de leur sens des affaires et peuvent se montrer utile dans d'autres professions. [NEWLINE] Ils peuvent se spécialiser à nouveau. </French>
 		<German>Wenn [LINK=UNIT_EXPERT_TRADER]Ureinwohnerhändler[\LINK] scheitern einen Handelsposten in einem Ureinwohnerdorf einzurichgen, werden sie zu Gescheiterten Ureinwohnerhändler. [NEWLINE]Sie entwickeln eine schlechte Arbeitsmoral. [NEWLINE]Da sie aber nicht ihr Wissen verloren haben, wie man Geschäfte macht, können sie immer noch in anderen Berufen nützlich sein. [NEWLINE]Sie können in einem Beruf wieder zu Experten werden.</German>
 		<Russian>Когда [LINK=UNIT_EXPERT_TRADER]опытным торговцам с индейцами[\LINK] не удается открыть торговый пост в деревне индейцев, они становятся неудачливыми торговцами.[NEWLINE]Работают они из рук вон плохо.[NEWLINE]Но, поскольку они не утратили своих знаний о ведении бизнеса, они все еще могут быть полезны в других профессиях.[NEWLINE]Также они могут снова стать экспертами в своей профессии.</Russian>
@@ -1520,7 +1520,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCOA_PLANTER</Tag>
 		<English>Expert Cocoa Planter:Expert Cocoa Planters</English>
-		<Portuguese>Especialista Cacaueiro:Especialistas Cacaueiros</Portuguese>
+		<Portuguese>Cacaueiro:Cacaueiros</Portuguese>
 		<French>Expert planteur de cacao:Experts planteurs de cacao</French>
 		<German>Erfahrener Kakaopflücker:Erfahrene Kakaopflücker</German>
 		<Italian>Esperto piantatore di cacao:Esperti piantatori di cacao</Italian>
@@ -1622,7 +1622,7 @@
 		<English>Expert Coffee Planter:Expert Coffee Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Cafeeiro:Especialistas Cafeeiros</Text>
+			<Text>Cafeeiro:Cafeeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2107,7 +2107,7 @@
 		<English>Expert Cotton Planter:Expert Cotton Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Algodoeiro:Especialistas Algodoeiros</Text>
+			<Text>Algodoeiro:Algodoeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2519,7 +2519,7 @@
 		<English>Expert Farmer:Expert Farmers</English>
 		
 		<Portuguese>
-			<Text>Agricultor Especialista:Agricultores Especialistas</Text>
+			<Text>Agricultor:Agricultores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2557,7 +2557,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FARMER_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Expert farmers[COLOR_REVERT] are invaluable when you have many mouths to feed and not a lot of land to do it.[NEWLINE]They will produce significantly more [LINK=YIELD_FOOD]food[\LINK] and [LINK=YIELD_BARLEY]barley[\LINK] from land tiles than an average colonist when assigned to the [LINK=PROFESSION_FARMER]farmer[\LINK] or [LINK=PROFESSION_BARLEY_FARMER]barley farmer[\LINK] profession.[COLOR_UNIT_TEXT]Expert farmers[COLOR_REVERT] also provide a small bonus in the production of [LINK=YIELD_RICE]rice[\LINK], [LINK=YIELD_CASSAVA]cassava[\LINK] and [LINK=YIELD_PEANUTS]peanuts[\LINK].[PARAGRAPH:1]Expert farmers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], or trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], or [LINK=CONCEPT_TRAINING]educated[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
-		<Portuguese>[COLOR_UNIT_TEXT]Agricultores experientes[COLOR_REVERT] são inestimáveis quando você tem muitas bocas para alimentar e pouca terra para fazê-lo.[NEWLINE]Eles produzirão significativamente mais [LINK=YIELD_FOOD]comida[\LINK] e [LINK=YIELD_BARLEY]cevada[\LINK] a partir de lotes de terra do que um colono médio quando atribuído ao [LINK=PROFESSION_FARMER]agricultor[\LINK] ou [LINK=PROFESSION_BARLEY_FARMER]cevada profissão de agricultor[\LINK].[COLOR_UNIT_TEXT]Agricultores especializados[COLOR_REVERT] também oferecem um pequeno bônus na produção de [LINK=YIELD_RICE]arroz[\LINK], [LINK=YIELD_CASSAVA]mandioca[\LINK] e [LINK=YIELD_PEANUTS]amendoim[\LINK].[PARAGRAPH:1]Agricultores especialistas podem ser contratados em [LINK=CONCEPT_EUROPE]Europa[\LINK], ou treinado por [LINK=CONCEPT_NATIVES]nativos[\LINK], ou [LINK=CONCEPT_TRAINING]educado[\LINK] em uma colônia com uma [LINK=BUILDING_SCHOOLHOUSE]escola[\LINK] ou uma de suas atualizações.</Portuguese>
+		<Portuguese>[COLOR_UNIT_TEXT]Agricultores experientes[COLOR_REVERT] são inestimáveis quando você tem muitas bocas para alimentar e pouca terra para fazê-lo.[NEWLINE]Eles produzirão significativamente mais [LINK=YIELD_FOOD]comida[\LINK] e [LINK=YIELD_BARLEY]cevada[\LINK] a partir de lotes de terra do que um colono médio quando atribuído ao [LINK=PROFESSION_FARMER]agricultor[\LINK] ou [LINK=PROFESSION_BARLEY_FARMER]cevada profissão de agricultor[\LINK].[COLOR_UNIT_TEXT]Agricultores especializados[COLOR_REVERT] também oferecem um pequeno bônus na produção de [LINK=YIELD_RICE]arroz[\LINK], [LINK=YIELD_CASSAVA]mandioca[\LINK] e [LINK=YIELD_PEANUTS]amendoim[\LINK].[PARAGRAPH:1]Agricultores podem ser contratados em [LINK=CONCEPT_EUROPE]Europa[\LINK], ou treinado por [LINK=CONCEPT_NATIVES]nativos[\LINK], ou [LINK=CONCEPT_TRAINING]educado[\LINK] em uma colônia com uma [LINK=BUILDING_SCHOOLHOUSE]escola[\LINK] ou uma de suas atualizações.</Portuguese>
 		<French>Les [COLOR_UNIT_TEXT]Fermiers professionnels[COLOR_REVERT] sont très précieux lorsque vous avez de nombreuses bouches à nourrir et peu de terres pour le faire. Ils produiront le double de la quantité normale de [COLOR_HIGHLIGHT_TEXT]Nourriture[COLOR_REVERT] lorsqu'ils seront assignés à la profession de Fermier.</French>
 		<German>[COLOR_UNIT_TEXT]Erfahrene Bauern[COLOR_REVERT] liefern 3 zusätzliche [LINK=YIELD_FOOD]Nahrung[\LINK] und [LINK=YIELD_BARLEY]Gerste[\LINK] als ein durchschnittlicher Kolonist, wenn sie dem Beruf des [LINK=PROFESSION_FARMER]Bauern[\LINK] oder [LINK=PROFESSION_BARLEY_FARMER]Gerstenbauer[\LINK] zugeordnet sind. [COLOR_UNIT_TEXT]Erfahrene Bauern[COLOR_REVERT] liefern ebenfalls einen kleinen Bonus bei der Produktion von [LINK=YIELD_RICE]Reis[\LINK], [LINK=YIELD_CASSAVA]Maniok[\LINK] und [LINK=YIELD_PEANUTS]Erdnüssen[\LINK].[PARAGRAPH:1]Erfahrene Bauern können in [LINK=CONCEPT_EUROPE]Europa[\LINK] angeheuert, von [LINK=CONCEPT_NATIVES]Ureinwohnern[\LINK] ausgebildet werden, oder in einer Kolonie in einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] bzw. dessen Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 		<Italian>I [COLOR_UNIT_TEXT]contadini esperti[COLOR_REVERT] sono insostituibili quando hai molte bocche da sfamare e poca terra da sfruttare. Se assegni loro la professione di contadino produrranno molto più [COLOR_HIGHLIGHT_TEXT]cibo[COLOR_REVERT] rispetto a un normale colono assegnato alla stessa professione.</Italian>
@@ -2568,7 +2568,7 @@
 		<English>Expert Fisherman:Expert Fishermen</English>
 		
 		<Portuguese>
-			<Text>Pescador Especialista:Pescadores Especialistas</Text>
+			<Text>Pescador:Pescadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2656,7 +2656,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DANSK_FISKER_STRATEGY</Tag>
 		<English>The [COLOR_UNIT_TEXT]Dansk Fisker[COLOR_REVERT] is the unique national unit of Denmark and replaces the [LINK=UNIT_FISHERMAN]Expert Fisherman[\LINK]. They are unmatched in their fishing productivity.[NEWLINE]Any [LINK=TERRAIN_OCEAN]ocean[\LINK] or [LINK=TERRAIN_COAST]coast[\LINK] tile they work as [LINK=PROFESSION_FISHERMAN]fishermen[\LINK] will yield significantly more than its normal bounty of [LINK=YIELD_FOOD]food[\LINK] and even more than an Expert Fisherman.[PARAGRAPH:1]Dansk Fiskere can either be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK] or trained by [LINK=CONCEPT_NATIVES]Natives[\LINK], and they can also be [LINK=CONCEPT_TRAINING]apprenticed[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
-		<Portuguese>O [COLOR_UNIT_TEXT]Dansk Fisker[COLOR_REVERT] é a única unidade nacional da Dinamarca e substitui o [LINK=UNIT_FISHERMAN]Expert Fisherman[\LINK]. Eles são incomparáveis em sua produtividade de pesca.[NEWLINE]Qualquer lote de [LINK=TERRAIN_OCEAN]oceano[\LINK] ou [LINK=TERRAIN_COAST]costa[\LINK] em que eles trabalham como [LINK=PROFESSION_FISHERMAN]pescadores[\LINK] renderá significativamente mais do que sua recompensa normal de [LINK=YIELD_FOOD]comida[\LINK] e ainda mais do que um Pescador Especialista.[PARAGRAPH:1]Dansk Fiskere podem ser contratados na [LINK=CONCEPT_EUROPE]Europa[\LINK] ou treinados por [LINK=CONCEPT_NATIVES]nativos[\LINK], e também podem ser [LINK=CONCEPT_TRAINING]aprendizados[\LINK] em uma colônia com uma [LINK=BUILDING_SCHOOLHOUSE]escola[\LINK] ou uma de suas atualizações.</Portuguese>
+		<Portuguese>O [COLOR_UNIT_TEXT]Dansk Fisker[COLOR_REVERT] é a única unidade nacional da Dinamarca e substitui o [LINK=UNIT_FISHERMAN]Expert Fisherman[\LINK]. Eles são incomparáveis em sua produtividade de pesca.[NEWLINE]Qualquer lote de [LINK=TERRAIN_OCEAN]oceano[\LINK] ou [LINK=TERRAIN_COAST]costa[\LINK] em que eles trabalham como [LINK=PROFESSION_FISHERMAN]pescadores[\LINK] renderá significativamente mais do que sua recompensa normal de [LINK=YIELD_FOOD]comida[\LINK] e ainda mais do que um Pescador.[PARAGRAPH:1]Dansk Fiskere podem ser contratados na [LINK=CONCEPT_EUROPE]Europa[\LINK] ou treinados por [LINK=CONCEPT_NATIVES]nativos[\LINK], e também podem ser [LINK=CONCEPT_TRAINING]aprendizados[\LINK] em uma colônia com uma [LINK=BUILDING_SCHOOLHOUSE]escola[\LINK] ou uma de suas atualizações.</Portuguese>
 		<French>Le [COLOR_UNIT_TEXT]Dansk Fisker[COLOR_REVERT] est l'unique unité nationale du Danemark et remplace le [LINK=UNIT_FISHERMAN]Expert Fisherman[\LINK]. Leur productivité de pêche est inégalée.[NEWLINE]Toute [LINK=TERRAIN_OCEAN]océan[\LINK] ou [LINK=TERRAIN_COAST]cote[\LINK] sur laquelle ils travaillent en tant que [LINK=PROFESSION_FISHERMAN]pêcheur[\LINK] rapportera de manière significative plus que sa prime normale de [LINK=YIELD_FOOD]nourriture[\LINK] et même plus qu'un pêcheur expert.[PARAGRAPH:1]Dansk Fiskere peut être embauché en [LINK=CONCEPT_EUROPE]Europe[\LINK] ou formé par [LINK=CONCEPT_NATIVES]Autochtones[\LINK], et ils peuvent également être [LINK=CONCEPT_TRAINING]apprentis[\LINK] dans une colonie avec une [LINK=BUILDING_SCHOOLHOUSE]école[\LINK] ou l'une de ses améliorations.</French>
 		<German>Der [COLOR_UNIT_TEXT]Dansk Fisker[COLOR_REVERT] ist die einzigartige nationale Einheit Dänemarks und ersetzt den [LINK=UNIT_FISHERMAN]erfahrenen Fischer[\LINK], welchem Sie überlegen sind. Sie sind unübertroffen in ihrer Fischfangproduktivität.[NEWLINE]Jedes [LINK=TERRAIN_OCEAN]Ozean[\LINK]- oder [LINK=TERRAIN_COAST]Küstenfeld[\LINK], auf dem sie als [LINK=PROFESSION_FISHERMAN]Fischer[\LINK] arbeiten, wird beträchtliche Erträge an [LINK=YIELD_FOOD]Nahrung[\LINK] erbgingen. [PARAGRAPH:1]Dänen können Dansk Fiskere entweder in [LINK=CONCEPT_EUROPE]Europa[\LINK] anheuern oder von [LINK=CONCEPT_NATIVES]Ureinwohnern[\LINK] ausbilden lassen. Sie können auch in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] oder einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 		<Italian>Il [COLOR_UNIT_TEXT]Dansk Fisker[COLOR_REVERT] è l'unica unità nazionale della Danimarca e sostituisce il [LINK=UNIT_FISHERMAN]Expert Fisherman[\LINK]. Non hanno eguali nella loro produttività di pesca.[NEWLINE]Qualsiasi riquadro [LINK=TERRAIN_OCEAN]oceano[\LINK] o [LINK=TERRAIN_COAST]costa[\LINK] in cui lavorano come [LINK=PROFESSION_FISHERMAN]pescatori[\LINK] produrrà un rendimento significativo più della sua normale abbondanza di [LINK=YIELD_FOOD]cibo[\LINK] e anche più di un pescatore esperto.[PARAGRAPH:1]Dansk Fiskere può essere assunto in [LINK=CONCEPT_EUROPE]Europa[\LINK] o addestrato da [LINK=CONCEPT_NATIVES]Nativi[\LINK], e possono anche essere [LINK=CONCEPT_TRAINING]apprendisti[\LINK] in una colonia con una [LINK=BUILDING_SCHOOLHOUSE]scuola[\LINK] o uno dei suoi aggiornamenti.</Italian>
@@ -3715,7 +3715,7 @@
 		<English>Expert Hemp Planter:Expert Hemp Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Canhameiro:Especialistas Canhameiros</Text>
+			<Text>Canhameiro:Canhameiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4021,7 +4021,7 @@
 		<English>Expert Indigo Planter:Expert Indigo Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Anileiro:Especialistas Anileiros</Text>
+			<Text>Anileiro:Anileiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4309,7 +4309,7 @@
 		<English>Expert Lumberjack:Expert Lumberjacks</English>
 		
 		<Portuguese>
-			<Text>Lenhador Especialista:Lenhadores Especialistas</Text>
+			<Text>Lenhador:Lenhadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4397,7 +4397,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SIBERIAN_LUMBERJACK_STRATEGY</Tag>
 		<English>The [COLOR_UNIT_TEXT]Siberian Lumberjack[COLOR_REVERT] is the unique national unit of Russia and replaces the [LINK=UNIT_LUMBERJACK]Expert Lumberjack[\LINK]. [NEWLINE]If he is assigned to either the [COLOR_HIGHLIGHT_TEXT]lumberjack[COLOR_REVERT] ([LINK=PROFESSION_LUMBERJACK]lumber[\LINK], [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]exotic wood[\LINK] or [LINK=PROFESSION_HARDWOOD_LUMBERJACK]hardwood[\LINK]) profession, any forest tile worked by him will yield five more [LINK=YIELD_LUMBER]lumber[\LINK], [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK] or [LINK=YIELD_HARDWOOD]hardwood[\LINK]. On the other hand, as a [LINK=PROFESSION_BLOODWOOD_CUTTER]logwood cutter[\LINK] to extract [LINK=YIELD_LOGWOOD]logwood[\LINK], the Siberian lumberjack is only a little more productive than a [COLOR_HIGHLIGHT_TEXT]free colonist[COLOR_REVERT].[PARAGRAPH:1]Siberian lumberjacks can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
-		<Portuguese>O [COLOR_UNIT_TEXT]Lenhador Siberiano[COLOR_REVERT] é a única unidade nacional da Rússia e substitui o [LINK=UNIT_LUMBERJACK]Lenhador Especialista[\LINK]. [NEWLINE]Se ele for designado para a profissão de [COLOR_HIGHLIGHT_TEXT]lenhador[COLOR_REVERT] ([LINK=PROFESSION_LUMBERJACK]madeira[\LINK], [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]madeira exótica[\LINK] ou [LINK=PROFESSION_HARDWOOD_LUMBERJACK]madeira nobre[\LINK]), qualquer lote de floresta trabalhada por ele renderá mais cinco [LINK=YIELD_LUMBER]madeira[\LINK], [LINK=YIELD_VALUABLE_WOOD]exótica madeira[\LINK] ou [LINK=YIELD_HARDWOOD]madeira nobre[\LINK]. Por outro lado, como um [LINK=PROFESSION_BLOODWOOD_CUTTER]cortador de lenha[\LINK] para extrair [LINK=YIELD_LOGWOOD]pau-campeche[\LINK], o lenhador siberiano é apenas um pouco mais produtivo do que um [COLOR_HIGHLIGHT_TEXT]colono livre[COLOR_REVERT].[PARAGRAPH:1]Os lenhadores siberianos podem ser contratados na [LINK=CONCEPT_EUROPE]Europa[\LINK] e também podem ser [LINK=CONCEPT_TRAINING]ensinou[\LINK] em uma colônia com uma [LINK=BUILDING_SCHOOLHOUSE]escola[\LINK] ou uma de suas atualizações.</Portuguese>
+		<Portuguese>O [COLOR_UNIT_TEXT]Lenhador Siberiano[COLOR_REVERT] é a única unidade nacional da Rússia e substitui o [LINK=UNIT_LUMBERJACK]Lenhador[\LINK]. [NEWLINE]Se ele for designado para a profissão de [COLOR_HIGHLIGHT_TEXT]lenhador[COLOR_REVERT] ([LINK=PROFESSION_LUMBERJACK]madeira[\LINK], [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]madeira exótica[\LINK] ou [LINK=PROFESSION_HARDWOOD_LUMBERJACK]madeira nobre[\LINK]), qualquer lote de floresta trabalhada por ele renderá mais cinco [LINK=YIELD_LUMBER]madeira[\LINK], [LINK=YIELD_VALUABLE_WOOD]exótica madeira[\LINK] ou [LINK=YIELD_HARDWOOD]madeira nobre[\LINK]. Por outro lado, como um [LINK=PROFESSION_BLOODWOOD_CUTTER]cortador de lenha[\LINK] para extrair [LINK=YIELD_LOGWOOD]pau-campeche[\LINK], o lenhador siberiano é apenas um pouco mais produtivo do que um [COLOR_HIGHLIGHT_TEXT]colono livre[COLOR_REVERT].[PARAGRAPH:1]Os lenhadores siberianos podem ser contratados na [LINK=CONCEPT_EUROPE]Europa[\LINK] e também podem ser [LINK=CONCEPT_TRAINING]ensinou[\LINK] em uma colônia com uma [LINK=BUILDING_SCHOOLHOUSE]escola[\LINK] ou uma de suas atualizações.</Portuguese>
 		<French>Le [COLOR_UNIT_TEXT]Bûcheron sibérien[COLOR_REVERT] est l'unité nationale unique de la Russie et remplace le [LINK=UNIT_LUMBERJACK]Bûcheron expert[\LINK]. [NEWLINE]S'il est affecté au [COLOR_HIGHLIGHT_TEXT]bûcheron[COLOR_REVERT] ([LINK=PROFESSION_LUMBERJACK]bois[\LINK], [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]bois exotique[\LINK] ou [LINK=PROFESSION_HARDWOOD_LUMBERJACK]bois dur[\LINK]) profession, toute tuile forestière travaillée par lui rapportera cinq autres [LINK=YIELD_LUMBER]bois[\LINK], [LINK=YIELD_VALUABLE_WOOD]bois exotique[\LINK] ou [LINK=YIELD_HARDWOOD]bois dur[\LINK]. En revanche, en tant que [LINK=PROFESSION_BLOODWOOD_CUTTER]coupe-bûche[\LINK] pour extraire le [LINK=YIELD_LOGWOOD]bûche[\LINK], il ne fonctionne que légèrement mieux que les [COLOR_HIGHLIGHT_TEXT]Free Colonists[COLOR_REVERT].[PARAGRAPH:1]Les bûcherons sibériens peuvent être embauchés en [LINK=CONCEPT_EUROPE]Europe[\LINK], et ils peuvent également être [LINK=CONCEPT_TRAINING]formés[\LINK] dans une colonie avec une [LINK=BUILDING_SCHOOLHOUSE]école[\LINK] ou une de ses mises à jour.</French>
 		<German>Der [COLOR_UNIT_TEXT]Sibirische Holzfäller[COLOR_REVERT] ist die einzigartige nationale Einheit Russlands und ersetzt den [LINK=UNIT_LUMBERJACK]erfahrener Holzfäller[\LINK]. [NEWLINE]Wenn er entweder dem [COLOR_HIGHLIGHT_TEXT]Holzfäller[COLOR_REVERT] ([LINK=PROFESSION_LUMBERJACK]Holz[\LINK], [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]Edelholz[\LINK] oder [LINK=PROFESSION_HARDWOOD_LUMBERJACK]Hartholz[\LINK] zugeordnet ist) Beruf, bringt jedes von ihm bearbeitete Waldfeld fünf weitere [LINK=YIELD_LUMBER]Holz[\LINK], [LINK=YIELD_VALUABLE_WOOD]Edelholz[\LINK] oder [LINK=YIELD_HARDWOOD]Hartholz[\LINK]. Andererseits funktioniert es als [LINK=PROFESSION_BLOODWOOD_CUTTER]Holzfällers (Blauholz)[\LINK] zum Gewinnen von [LINK=YIELD_LOGWOOD]Blauholz[\LINK] nur geringfügig besser als [COLOR_HIGHLIGHT_TEXT]Freie Kolonisten[COLOR_REVERT].[PARAGRAPH:1]Sibirische Holzfäller können in [LINK=CONCEPT_EUROPE]Europa[\LINK] angeheuert werden, und sie können auch in einer Kolonie mit einem oder einem [LINK=BUILDING_SCHOOLHOUSE]Schulhaus[\LINK] [LINK=CONCEPT_TRAINING]unterricht[\LINK] erhalten seiner Upgrades.</German>
 		<Italian>Il [COLOR_UNIT_TEXT]Boscaiolo Siberiano[COLOR_REVERT] è l'unità nazionale unica della Russia e sostituisce il [LINK=UNIT_LUMBERJACK]Boscaiolo esperto[\LINK]. [NEWLINE]Se è assegnato al [COLOR_HIGHLIGHT_TEXT]taglialegna[COLOR_REVERT] ([LINK=PROFESSION_LUMBERJACK]legname[\LINK], [LINK=PROFESSION_VALUABLE_WOOD_LUMBERJACK]legno esotico[\LINK] o [LINK=PROFESSION_HARDWOOD_LUMBERJACK]legno duro[\LINK]), qualsiasi tessera foresta da lui lavorata produrrà altri cinque [LINK=YIELD_LUMBER]legname[\LINK], [LINK=YIELD_VALUABLE_WOOD]legno esotico[\LINK] o [LINK=YIELD_HARDWOOD]legno duro[\LINK]. D'altra parte, come [LINK=PROFESSION_BLOODWOOD_CUTTER]tagliatronchi[\LINK] per estrarre [LINK=YIELD_LOGWOOD]tronchi[\LINK], funziona solo leggermente meglio di [COLOR_HIGHLIGHT_TEXT]coloni liberi[COLOR_REVERT].[PARAGRAPH:1]I boscaioli siberiani possono essere assunti in [LINK=CONCEPT_EUROPE]Europa[\LINK], e possono anche essere [LINK=CONCEPT_TRAINING]insegnati[\LINK] in una colonia con una [LINK=BUILDING_SCHOOLHOUSE]scuola[\LINK] o una dei suoi aggiornamenti.</Italian>
@@ -4661,7 +4661,7 @@ _ship_of
 		<English>Expert Miner:Expert Miners</English>
 		
 		<Portuguese>
-			<Text>Mineiro Especialista:Mineiros Especialistas</Text>
+			<Text>Mineiro:Mineiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -5644,7 +5644,7 @@ _ship_of
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Prospector Especialista:Prospectores Especialistas</Text>
+			<Text>Prospector:Prospectores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -5747,7 +5747,7 @@ _ship_of
 		<English>Expert Rancher:Expert Ranchers</English>
 		
 		<Portuguese>
-			<Text>Fazendeiro Especialista:Fazendeiros Especialistas</Text>
+			<Text>Fazendeiro:Fazendeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -5933,7 +5933,7 @@ _ship_of
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Especialista Pimenteiro:Especialistas Pimenteiros</Text>
+			<Text>Pimenteiro:Pimenteiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -7104,7 +7104,7 @@ _ship_of
 		<English>Expert Stonecutter:Expert Stonecutters</English>
 		
 		<Portuguese>
-			<Text>Canteiro Especialista:Canteiros Especialistas</Text>
+			<Text>Canteiro:Canteiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -7188,7 +7188,7 @@ _ship_of
 		<English>Expert Sugar Planter:Expert Sugar Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Açucareiro:Especialistas Açucareiros</Text>
+			<Text>Açucareiro:Açucareiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -7373,7 +7373,7 @@ _ship_of
 		<English>Expert Tobacco Planter:Expert Tobacco Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Tabaqueiro:Especialistas Tabaqueiros</Text>
+			<Text>Tabaqueiro:Tabaqueiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -7505,7 +7505,7 @@ _ship_of
 		<English>Expert Trapper:Expert Trappers</English>
 		
 		<Portuguese>
-			<Text>Coureador Especialista:Coureadores Especialistas</Text>
+			<Text>Coureador:Coureadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>

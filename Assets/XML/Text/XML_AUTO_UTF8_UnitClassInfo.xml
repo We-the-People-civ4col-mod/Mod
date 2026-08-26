@@ -950,7 +950,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCOA_PLANTER</Tag>
 		<English>Expert Cocoa Planter:Expert Cocoa Planters</English>
-		<Portuguese>Especialista Cacaueiro:Especialistas Cacaueiros</Portuguese>
+		<Portuguese>Cacaueiro:Cacaueiros</Portuguese>
 		<French>Expert planteur de cacao:Experts planteurs de cacao</French>
 		<German>Erfahrener Kakaopflücker:Erfahrene Kakaopflücker</German>
 		<Italian>Expert Cocoa Planter:Expert Cocoa Planters</Italian>
@@ -1012,7 +1012,7 @@
 		<English>Expert Coffee Planter:Expert Coffee Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Cafeeiro:Especialistas Cafeeiros</Text>
+			<Text>Cafeeiro:Cafeeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1336,7 +1336,7 @@
 		<English>Expert Cotton Planter:Expert Cotton Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Algodoeiro:Especialistas Algodoeiros</Text>
+			<Text>Algodoeiro:Algodoeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1580,7 +1580,7 @@
 		<English>Expert Farmer:Expert Farmers</English>
 		
 		<Portuguese>
-			<Text>Agricultor Especialista:Agricultores Especialistas</Text>
+			<Text>Agricultor:Agricultores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1611,7 +1611,7 @@
 		<English>Expert Fisherman:Expert Fishermen</English>
 		
 		<Portuguese>
-			<Text>Pescador Especialista:Pescadores Especialistas</Text>
+			<Text>Pescador:Pescadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2242,7 +2242,7 @@
 		<English>Expert Hemp Planter:Expert Hemp Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Canhameiro:Especialistas Canhameiros</Text>
+			<Text>Canhameiro:Canhameiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2437,7 +2437,7 @@
 		<English>Expert Indigo Planter:Expert Indigo Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Anileiro:Especialistas Anileiros</Text>
+			<Text>Anileiro:Anileiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2619,7 +2619,7 @@
 		<English>Expert Lumberjack:Expert Lumberjacks</English>
 		
 		<Portuguese>
-			<Text>Lenhador Especialista:Lenhadores Especialistas</Text>
+			<Text>Lenhador:Lenhadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2781,7 +2781,7 @@
 		<English>Expert Miner:Expert Miners</English>
 		
 		<Portuguese>
-			<Text>Mineiro Especialista:Mineiros Especialistas</Text>
+			<Text>Mineiro:Mineiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3324,7 +3324,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Prospector Especialista:Prospectores Especialistas</Text>
+			<Text>Prospector:Prospectores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3355,7 +3355,7 @@
 		<English>Expert Rancher:Expert Ranchers</English>
 		
 		<Portuguese>
-			<Text>Fazendeiro Especialista:Fazendeiros Especialistas</Text>
+			<Text>Fazendeiro:Fazendeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3485,7 +3485,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Especialista Pimenteiro:Especialistas Pimenteiros</Text>
+			<Text>Pimenteiro:Pimenteiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4207,7 +4207,7 @@
 		<English>Expert Stonecutter:Expert Stonecutters</English>
 		
 		<Portuguese>
-			<Text>Canteiro Especialista:Canteiros Especialistas</Text>
+			<Text>Canteiro:Canteiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4269,7 +4269,7 @@
 		<English>Expert Sugar Planter:Expert Sugar Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Açucareiro:Especialistas Açucareiros</Text>
+			<Text>Açucareiro:Açucareiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4396,7 +4396,7 @@
 		<English>Expert Tobacco Planter:Expert Tobacco Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Tabaqueiro:Especialistas Tabaqueiros</Text>
+			<Text>Tabaqueiro:Tabaqueiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4480,7 +4480,7 @@
 		<English>Expert Trapper:Expert Trappers</English>
 		
 		<Portuguese>
-			<Text>Coureador Especialista:Coureadores Especialistas</Text>
+			<Text>Coureador:Coureadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>

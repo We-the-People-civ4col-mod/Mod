@@ -90,7 +90,7 @@
 		<English>Expert Cassava Planter:Expert Cassava Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Mandioqueiro:Especialistas Mandioqueiros</Text>
+			<Text>Mandioqueiro:Mandioqueiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -122,7 +122,7 @@
 		<English>Expert Cassava Planter:Expert Cassava Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Mandioqueiro:Especialistas Mandioqueiros</Text>
+			<Text>Mandioqueiro:Mandioqueiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -248,7 +248,7 @@
 		<English>Expert Flax Planter:Expert Flax Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Linheiro:Especialistas Linheiros</Text>
+			<Text>Linheiro:Linheiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -280,7 +280,7 @@
 		<English>Expert Flax Planter:Expert Flax Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Linheiro:Especialistas Linheiros</Text>
+			<Text>Linheiro:Linheiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -491,7 +491,7 @@
 		<English>Expert Peanut Planter:Expert Peanut Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Amendoinzeiro:Especialistas Amendoinzeiros</Text>
+			<Text>Amendoinzeiro:Amendoinzeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -523,7 +523,7 @@
 		<English>Expert Peanut Planter:Expert Peanut Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Amendoinzeiro:Especialistas Amendoinzeiros</Text>
+			<Text>Amendoinzeiro:Amendoinzeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -655,7 +655,7 @@
 		<English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Canoleiro:Especialistas Canoleiros</Text>
+			<Text>Canoleiro:Canoleiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -687,7 +687,7 @@
 		<English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Canoleiro:Especialistas Canoleiros</Text>
+			<Text>Canoleiro:Canoleiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -734,7 +734,7 @@
 		<English>Expert Rice Farmer:Expert Rice Farmers</English>
 		
 		<Portuguese>
-			<Text>Especialista Arrozeiro:Especialistas Arrozeiros</Text>
+			<Text>Arrozeiro:Arrozeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -766,7 +766,7 @@
 		<English>Expert Rice Farmer:Expert Rice Farmers</English>
 		
 		<Portuguese>
-			<Text>Especialista Arrozeiro:Especialistas Arrozeiros</Text>
+			<Text>Arrozeiro:Arrozeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -898,7 +898,7 @@
 		<English>Expert Yerba Planter:Expert Yerba Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Erveiro:Especialistas Erveiros</Text>
+			<Text>Erveiro:Erveiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -934,7 +934,7 @@
 		<English>Expert Yerba Planter:Expert Yerba Planters</English>
 		
 		<Portuguese>
-			<Text>Especialista Erveiro:Especialistas Erveiros</Text>
+			<Text>Erveiro:Erveiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -991,7 +991,7 @@
 		<English>Expert Herder:Expert Herders</English>
 		
 		<Portuguese>
-			<Text>Pastor Especialista:Pastores Especialistas</Text>
+			<Text>Pastor:Pastores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1023,7 +1023,7 @@
 		<English>Expert Herder:Expert Herders</English>
 		
 		<Portuguese>
-			<Text>Pastor Especialista:Pastores Especialistas</Text>
+			<Text>Pastor:Pastores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
