@@ -90,7 +90,7 @@
 		<English>Expert Cassava Planter:Expert Cassava Planters</English>
 		
 		<Portuguese>
-			<Text>Mandioqueiro:Mandioqueiros</Text>
+			<Text>Plantador (Mandioca):Plantadores (Mandioca)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -122,7 +122,7 @@
 		<English>Expert Cassava Planter:Expert Cassava Planters</English>
 		
 		<Portuguese>
-			<Text>Mandioqueiro:Mandioqueiros</Text>
+			<Text>Plantador (Mandioca):Plantadores (Mandioca)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -248,7 +248,7 @@
 		<English>Expert Flax Planter:Expert Flax Planters</English>
 		
 		<Portuguese>
-			<Text>Linheiro:Linheiros</Text>
+			<Text>Plantador (Linho):Plantadores (Linho)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -280,7 +280,7 @@
 		<English>Expert Flax Planter:Expert Flax Planters</English>
 		
 		<Portuguese>
-			<Text>Linheiro:Linheiros</Text>
+			<Text>Plantador (Linho):Plantadores (Linho)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -491,7 +491,7 @@
 		<English>Expert Peanut Planter:Expert Peanut Planters</English>
 		
 		<Portuguese>
-			<Text>Amendoinzeiro:Amendoinzeiros</Text>
+			<Text>Plantador (Amendoim):Plantadores (Amendoim)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -523,7 +523,7 @@
 		<English>Expert Peanut Planter:Expert Peanut Planters</English>
 		
 		<Portuguese>
-			<Text>Amendoinzeiro:Amendoinzeiros</Text>
+			<Text>Plantador (Amendoim):Plantadores (Amendoim)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -655,7 +655,7 @@
 		<English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
 		
 		<Portuguese>
-			<Text>Canoleira:Canoleiras</Text>
+			<Text>Plantadora (Canola):Plantadoras (Canola)</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -687,7 +687,7 @@
 		<English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
 		
 		<Portuguese>
-			<Text>Canoleira:Canoleiras</Text>
+			<Text>Plantadora (Canola):Plantadoras (Canola)</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -898,7 +898,7 @@
 		<English>Expert Yerba Planter:Expert Yerba Planters</English>
 		
 		<Portuguese>
-			<Text>Erveira:Erveiras</Text>
+			<Text>Plantadora (Erva-Mate):Plantadoras (Erva-Mate)</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -934,7 +934,7 @@
 		<English>Expert Yerba Planter:Expert Yerba Planters</English>
 		
 		<Portuguese>
-			<Text>Erveira:Erveiras</Text>
+			<Text>Plantadora (Erva-Mate):Plantadoras (Erva-Mate)</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>

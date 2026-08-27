@@ -1520,7 +1520,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCOA_PLANTER</Tag>
 		<English>Expert Cocoa Planter:Expert Cocoa Planters</English>
-		<Portuguese>Cacaueiro:Cacaueiros</Portuguese>
+		<Portuguese>Plantador (Cacau):Plantadores (Cacau)</Portuguese>
 		<French>Expert planteur de cacao:Experts planteurs de cacao</French>
 		<German>Erfahrener Kakaopflücker:Erfahrene Kakaopflücker</German>
 		<Italian>Esperto piantatore di cacao:Esperti piantatori di cacao</Italian>
@@ -1622,7 +1622,7 @@
 		<English>Expert Coffee Planter:Expert Coffee Planters</English>
 		
 		<Portuguese>
-			<Text>Cafeeira:Cafeeiras</Text>
+			<Text>Plantadora (Café):Plantadoras (Café)</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2107,7 +2107,7 @@
 		<English>Expert Cotton Planter:Expert Cotton Planters</English>
 		
 		<Portuguese>
-			<Text>Algodoeiro:Algodoeiros</Text>
+			<Text>Plantador (Algodão):Plantadores (Algodão)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3715,7 +3715,7 @@
 		<English>Expert Hemp Planter:Expert Hemp Planters</English>
 		
 		<Portuguese>
-			<Text>Canhameiro:Canhameiros</Text>
+			<Text>Plantador (Cânhamo):Plantadores (Cânhamo)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -5933,7 +5933,7 @@ _ship_of
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Pimenteira:Pimenteiras</Text>
+			<Text>Plantadora (Pimenta):Plantadoras (Pimenta)</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -7188,7 +7188,7 @@ _ship_of
 		<English>Expert Sugar Planter:Expert Sugar Planters</English>
 		
 		<Portuguese>
-			<Text>Açucareira:Açucareiras</Text>
+			<Text>Plantadora (Açúcar):Plantadoras (Açúcar)</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -7373,7 +7373,7 @@ _ship_of
 		<English>Expert Tobacco Planter:Expert Tobacco Planters</English>
 		
 		<Portuguese>
-			<Text>Tabaqueiro:Tabaqueiros</Text>
+			<Text>Plantador (Tabaco):Plantadores (Tabaco)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
