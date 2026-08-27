@@ -1036,8 +1036,8 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Coletor (Baunilha):Coletores (Baunilha)</Text>
-			<Gender>Male</Gender>
+			<Text>Coletora (Baunilha):Coletoras (Baunilha)</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -1080,7 +1080,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_VANILLA_COLLECTOR_STRATEGY</Tag>
 		<English>Jungle tiles let you gather [LINK=YIELD_VANILLA_PODS]vanilla pods[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]vanilla pods collector[COLOR_REVERT] profession. The harvest of vanilla pods can be increased by assigning an [LINK=UNIT_VANILLA_COLLECTOR]expert vanilla collector[\LINK] to the job.</English>
-		<Portuguese>Os lotes de selva permitem que você colete [LINK=YIELD_VANILLA_PODS]baunilha[\LINK] se o colono que os trabalha for atribuído à profissão de [COLOR_HIGHLIGHT_TEXT]coletor de baunilha[COLOR_REVERT]. A colheita de baunilha pode ser aumentada designando um [LINK=UNIT_VANILLA_COLLECTOR]coletor especialista de baunilha[\LINK] para o trabalho.</Portuguese>
+		<Portuguese>Os lotes de selva permitem que você colete [LINK=YIELD_VANILLA_PODS]baunilha[\LINK] se o colono que os trabalha for atribuído à profissão de [COLOR_HIGHLIGHT_TEXT]Coletora (Baunilha)[COLOR_REVERT]. A colheita de baunilha pode ser aumentada designando uma [LINK=UNIT_VANILLA_COLLECTOR]Coletora (Baunilha)[\LINK] para o trabalho.</Portuguese>
 		<French>Les tuiles de jungle permettent de récolter des [LINK=YIELD_VANILLA_PODS]gousses de vanille[\LINK] si le colon qui les travaille est affecté à la profession de [COLOR_HIGHLIGHT_TEXT]collecteur de gousses de vanille[COLOR_REVERT]. La récolte de gousses de vanille peut être augmentée en affectant un [LINK=UNIT_VANILLA_COLLECTOR]collecteur de vanille expert[\LINK] à ce travail.</French>
 		<German>Dschungelplättchen ermöglichen das Sammeln von [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK], wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Vanilleschalen-Sammler[COLOR_REVERT] zugeordnet ist. Die Ernte von Vanilleschoten kann erhöht werden, indem ein [LINK=UNIT_VANILLA_COLLECTOR]erfahrener Vanille-Sammler[\LINK] mit der Arbeit beauftragt wird.</German>
 		<Italian>Le tessere della giungla permettono di raccogliere [LINK=YIELD_VANILLA_PODS]baccelli di vaniglia[\LINK] se il colono che vi lavora è assegnato alla professione [COLOR_HIGHLIGHT_TEXT]raccoglitore di baccelli di vaniglia[COLOR_REVERT]. Il raccolto di baccelli di vaniglia può essere aumentato assegnando al lavoro un [LINK=UNIT_VANILLA_COLLECTOR]raccoglitore di vaniglia esperto[\LINK].</Italian>

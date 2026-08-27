@@ -596,8 +596,8 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Coletor (Coca):Coletores (Coca)</Text>
-			<Gender>Male</Gender>
+			<Text>Coletora (Coca):Coletoras (Coca)</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -636,7 +636,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_COCA_COLLECTOR_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Coca collectors[COLOR_REVERT] can gather [LINK=YIELD_COCA_LEAVES]coca leaves[\LINK] from hilly [LINK=TERRAIN_SAVANNAH]savanna[\LINK] regions with little or no vegetation. The yield will be higher when the [LINK=BONUS_COCA]coca plants[\LINK] bonus is present, and can also be increased by constructing [LINK=IMPROVEMENT_COLLECTORS_POST2]coca posts[\LINK]. If unspecialized colonists practice this profession long enough, they will eventually become [LINK=UNIT_COCA_COLLECTOR]expert coca collectors[\LINK], who produce double the quantity of coca leaves compared to an inexperienced colonist.</English>
-		<Portuguese>[COLOR_UNIT_TEXT]Coletores de coca[COLOR_REVERT] podem coletar [LINK=YIELD_COCA_LEAVES]folhas de coca[\LINK] em regiões montanhosas de [LINK=TERRAIN_SAVANNAH]savana[\LINK] com pouca ou nenhuma vegetação. O recurso será maior quando o bônus de [LINK=BONUS_COCA]plantas de coca[\LINK] estiver presente e também pode ser aumentado com a construção de [LINK=IMPROVEMENT_COLLECTORS_POST2]postos de coca[\LINK]. Se colonos não especializados praticarem esta profissão por tempo suficiente, eles eventualmente se tornarão [LINK=UNIT_COCA_COLLECTOR]coletores especialistas de coca[\LINK], que produzem o dobro da quantidade de folhas de coca em comparação com um colono inexperiente.</Portuguese>
+		<Portuguese>[COLOR_UNIT_TEXT]Coletoras (Coca)[COLOR_REVERT] podem coletar [LINK=YIELD_COCA_LEAVES]folhas de coca[\LINK] em regiões montanhosas de [LINK=TERRAIN_SAVANNAH]savana[\LINK] com pouca ou nenhuma vegetação. O recurso será maior quando o bônus de [LINK=BONUS_COCA]plantas de coca[\LINK] estiver presente e também pode ser aumentado com a construção de [LINK=IMPROVEMENT_COLLECTORS_POST2]postos de coca[\LINK]. Se colonos não especializados praticarem esta profissão por tempo suficiente, eles eventualmente se tornarão [LINK=UNIT_COCA_COLLECTOR]Coletoras (Coca)[\LINK], que produzem o dobro da quantidade de folhas de coca em comparação com um colono inexperiente.</Portuguese>
 		<French>Les [COLOR_UNIT_TEXT]planteurs de coca[COLOR_REVERT] peuvent cultiver des [LINK=YIELD_COCA_LEAVES]feuilles de coca[\LINK] sur des cases de [LINK=TERRAIN_SAVANNAH]Savane[\LINK] vallonnée qui ont peu de végétation. La production est plus importante lorsqu'un bonus de [LINK=BONUS_COCA]coca[\LINK] est présent. Elle est également augmenté en construisant un [LINK=IMPROVEMENT_COLLECTORS_POST2]dépôt de coca[\LINK]. Si un colon non spécialisé pratique cette profession suffisament longtemps, alors il pourrait devenir un [LINK=UNIT_COCA_COLLECTOR]Expert planteur de coca[\LINK], et produire ainsi deux fois plus de feuilles de coca qu'un autre colon.</French>
 		<German>[COLOR_UNIT_TEXT]Cocasammler[COLOR_REVERT] können [LINK=YIELD_COCA_LEAVES]Coca-Blätter[\LINK] von Hügeln auf Regionen der [LINK=TERRAIN_SAVANNAH]Savanne[\LINK] sammeln. Der Ertrag ist höher, wenn es auf dem Feld auch die Bonusresource [LINK=BONUS_COCA]Cocapflanzen[\LINK] gibt, und kann noch weiter erhöht werden, wenn man darauf die Geländeverbesserung [LINK=IMPROVEMENT_COLLECTORS_POST2]Cocasammelstelle[\LINK] errichtet. Wenn ein nicht spezialisierter Kolonist lange genug diesen Beruf ausübt, kann er irgendwann zu einem [LINK=UNIT_COCA_COLLECTOR]Erfahrenen Cocasammler[\LINK] werden, der doppelt soviele Coca-Blätter ernten kann.</German>
 	</TEXT>

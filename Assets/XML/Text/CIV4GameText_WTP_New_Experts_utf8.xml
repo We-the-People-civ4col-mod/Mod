@@ -813,8 +813,8 @@
 		<English>Expert Vanilla Collector:Expert Vanilla Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor (Baunilha):Coletores (Baunilha)</Text>
-			<Gender>Male</Gender>
+			<Text>Coletora (Baunilha):Coletoras (Baunilha)</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -845,8 +845,8 @@
 		<English>Expert Vanilla Collector:Expert Vanilla Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor (Baunilha):Coletores (Baunilha)</Text>
-			<Gender>Male</Gender>
+			<Text>Coletora (Baunilha):Coletoras (Baunilha)</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -885,7 +885,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_STRATEGY</Tag>
 		<English>[LINK=YIELD_VANILLA]Vanilla[\LINK] is one of the two most popular flavours for sweet treats, the other being [LINK=YIELD_COCOA]chocolate[\LINK]. It's used in candy, baking and liqueurs, all of which would be familiar to monks in colonial missions.[NEWLINE]When assigned to the Vanilla Collector profession, the expert can gather twice as many vanilla beans in the same time as a regular colonist.</English>
-		<Portuguese>[LINK=YIELD_VANILLA]doces de baunilha[\LINK] é um dos dois sabores mais populares para doces, sendo o outro o [LINK=YIELD_COCOA]chocolate[\LINK]. É usado em doces, panificação e licores, todos os quais seriam familiares aos monges em missões coloniais.[NEWLINE]Quando designado para a profissão de Coletor de Baunilha, o especialista pode coletar o dobro de grãos de baunilha ao mesmo tempo que um colono normal.</Portuguese>
+		<Portuguese>[LINK=YIELD_VANILLA]doces de baunilha[\LINK] é um dos dois sabores mais populares para doces, sendo o outro o [LINK=YIELD_COCOA]chocolate[\LINK]. É usado em doces, panificação e licores, todos os quais seriam familiares aos monges em missões coloniais.[NEWLINE]Quando designado para a profissão de Coletora (Baunilha), o especialista pode coletar o dobro de grãos de baunilha ao mesmo tempo que um colono normal.</Portuguese>
 		<French>La vanille est l'un des deux arômes les plus populaires pour les friandises, l'autre étant le chocolat. Elle est utilisée dans les bonbons, les pâtisseries et les liqueurs, autant d'arômes familiers aux moines des missions coloniales.[NEWLINE]Lorsqu'il est affecté à la profession de collecteur de vanille, l'expert peut récolter deux fois plus de gousses de vanille dans le même temps qu'un colon ordinaire.</French>
 		<German>Vanille ist neben Schokolade eine der beiden beliebtesten Geschmacksrichtungen für süße Leckereien. Sie wird in Süßigkeiten, zum Backen und für Liköre verwendet, alles Dinge, die Mönchen in kolonialen Missionen vertraut sind.[NEWLINE]Wenn der Experte den Beruf des Vanille-Sammlers ausübt, kann er in derselben Zeit doppelt so viele Vanilleschoten sammeln wie ein normaler Kolonist.</German>
 		<Italian>La vaniglia è uno dei due aromi più popolari per i dolci, l'altro è il cioccolato. Si usa nei dolci, nella pasticceria e nei liquori, tutti aromi familiari ai monaci delle missioni coloniali.[NEWLINE]Quando viene assegnato alla professione di Raccoglitore di Vaniglia, l'esperto può raccogliere il doppio dei semi di vaniglia nello stesso tempo di un normale colono.</Italian>
