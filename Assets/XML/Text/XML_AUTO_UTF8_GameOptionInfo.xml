@@ -376,13 +376,13 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_REDUCED_CITY_DISTANCE_HELP</Tag>
-		<English>Reduce the minimum distance to other colonies by 1 if the player already owns the founding plot and all plots next to it (3x3 grid).</English>
-		<Portuguese>Reduza a distância mínima para outras colônias em 1 se o jogador já possuir o lote de fundação e todos os lotes próximos a ele (grade 3x3).</Portuguese>
-		<French>Réduire la distance minimale aux autres colonies de 1 si le joueur possède déjà la parcelle fondatrice et toutes les parcelles voisines (grille 3x3).</French>
-		<German>Verringert den Mindestabstand zu anderen Kolonien um 1, wenn der Spieler bereits die Gründungsparzelle und alle angrenzenden Parzellen besitzt (3x3-Raster).</German>
-		<Italian>Ridurre la distanza minima dalle altre colonie di 1 se il giocatore possiede già il lotto fondatore e tutti i lotti vicini (griglia 3x3).</Italian>
-		<Spanish>Reducir la distancia mínima a otras colonias en 1 si el jugador ya posee la parcela fundadora y todas las parcelas contiguas (cuadrícula 3x3).</Spanish>
-		<Russian>Уменьшает минимальное расстояние до других колоний на 1 клетку, если игрок уже владеет участком основания и всеми участками рядом с ним (сетка 3x3).</Russian>
+		<English>Reduce the minimum distance to other colonies by 1.</English>
+		<Portuguese>Reduza a distância mínima para outras colônias em 1.</Portuguese>
+		<French>Réduire la distance minimale aux autres colonies de 1.</French>
+		<German>Verringert den Mindestabstand zu anderen Kolonien um 1.</German>
+		<Italian>Ridurre la distanza minima dalle altre colonie di 1.</Italian>
+		<Spanish>Reducir la distancia mínima a otras colonias en 1.</Spanish>
+		<Russian>Уменьшает минимальное расстояние до других колоний на 1 клетку.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER</Tag>

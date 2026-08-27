@@ -335,6 +335,11 @@
 		<German>Diesem Sklaven die Freiheit gewähren.</German>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_COMMAND_SELL_SLAVE</Tag>
+		<English>Sell Slave</English>
+		<German>Sklaven verkaufen</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_SELL_SLAVE_CONFIRM</Tag>
 		<English>Do you want to sell this slave for %d1 gold?</English>
 		<German>Möchtet Ihr diesen Sklaven für %d1 Gold verkaufen?</German>
@@ -342,6 +347,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SELL_SLAVE_HELP</Tag>
 		<English>Sell this slave.</English>
-		<German>Diesem Sklaven verkaufen.</German>
+		<German>Diesen Sklaven verkaufen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_COOLDOWN</Tag>
+		<English>You've set too many slaves free. If you set any more free, people would hold it against you. Wait %d1 round(s).</English>
+		<German>Ihr habt zu viele Sklaven in die Freiheit entlassen. Noch mehr würde man Euch übel nehmen. Wartet noch %d1 Runde(n).</German>
+		<Russian/>
 	</TEXT>
 </Civ4GameText>
