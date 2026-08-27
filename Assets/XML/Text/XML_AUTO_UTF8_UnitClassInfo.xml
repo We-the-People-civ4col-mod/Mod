@@ -3197,7 +3197,7 @@
 		<English>Firebrand Preacher:Firebrand Preachers</English>
 		
 		<Portuguese>
-			<Text>Pregador Incendiário:Pregadores Incendiários</Text>
+			<Text>Pregador Fervoroso:Pregadores Fervorosos</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4480,7 +4480,7 @@
 		<English>Expert Trapper:Expert Trappers</English>
 		
 		<Portuguese>
-			<Text>Coureador:Coureadores</Text>
+			<Text>Caçador de Peles:Caçadores de Peles</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4852,7 +4852,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mestre Baleeiro:Mestres Baleeiros</Text>
+			<Text>Mestre Cozinheiro de Óleo:Mestres Cozinheiros de Óleo</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>

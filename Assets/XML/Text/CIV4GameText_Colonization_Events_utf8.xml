@@ -4635,7 +4635,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_WHALE_OIL_COOKER</Tag>
 		<English>A master train oil cooker wants to join [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</English>
-		<Portuguese>Um mestre refinador de óleo de baleia deseja ingressar em [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Portuguese>
+		<Portuguese>Um mestre cozinheiro de óleo deseja ingressar em [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Portuguese>
 		<French>Un maître cuiseur d'huile de train veut rejoindre [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] möchte sich uns ein Meister-Trankocher anschließen.</German>
 		<Russian>Мастер вытопки ворвани хочет переехать в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
