@@ -262,7 +262,7 @@
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<!-- WTP, Slave Emancipation - START -->
-	<!-- Number of turns before another slave can be freed through Learning by Doing. -->
+	<!-- Base number of turns used for the LbD emancipation cooldown and for the mandatory indentured period of a former Prisoner of War. -->
 	<Define>
 		<DefineName>SLAVE_EMANCIPATION_LBD_COOLDOWN</DefineName>
 		<iDefineIntVal>30</iDefineIntVal>

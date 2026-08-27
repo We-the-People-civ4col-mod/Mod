@@ -992,14 +992,61 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 
 			if (pUnit != NULL && pUnit->canGrantFreedom())
 			{
-				const UnitTypes eFreedUnit = (pUnit->getUnitInfo().getUnitClassType() == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
-					? GET_PLAYER(getOwnerINLINE()).getUnitType(GLOBAL_DEFINE_UNITCLASS_FREED_SLAVE)
-					: GET_PLAYER(getOwnerINLINE()).getUnitType(GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE);
+				const UnitClassTypes eUnitClass =
+					pUnit->getUnitInfo().getUnitClassType();
 
-				pUnit->grantFreedom();
+				const UnitClassTypes eIndenturedServantClass =
+					(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_INDENTURED_SERVANT");
 
-				CvWString szBuffer = gDLL->getText("TXT_KEY_LBD_FREE_IN_CITY", getNameKey());
-				gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, GET_PLAYER(getOwnerINLINE()).getUnitButton(eFreedUnit), COLOR_WHITE, true, true);
+				const UnitClassTypes eColonistClass =
+					(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_COLONIST");
+
+				UnitClassTypes eFreedUnitClass = NO_UNITCLASS;
+
+				if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
+				{
+					eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_FREED_SLAVE;
+				}
+				else if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
+				{
+					eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE;
+				}
+				else if (eUnitClass == UNITCLASS_PRISONER_OF_WAR)
+				{
+					eFreedUnitClass = eIndenturedServantClass;
+				}
+				else if (eUnitClass == eIndenturedServantClass)
+				{
+					eFreedUnitClass = eColonistClass;
+				}
+
+				const UnitTypes eFreedUnit =
+					GET_PLAYER(getOwnerINLINE()).getUnitType(eFreedUnitClass);
+
+				if (eFreedUnit != NO_UNIT)
+				{
+					pUnit->grantFreedom();
+
+					CvWString szBuffer =
+						gDLL->getText(
+							"TXT_KEY_LBD_FREE_IN_CITY",
+							getNameKey()
+						);
+
+					gDLL->UI().addPlayerMessage(
+						getOwnerINLINE(),
+						false,
+						GC.getEVENT_MESSAGE_TIME(),
+						szBuffer,
+						coord(),
+						"AS2D_DEAL_CANCELLED",
+						MESSAGE_TYPE_MINOR_EVENT,
+						GET_PLAYER(getOwnerINLINE()).getUnitButton(eFreedUnit),
+						COLOR_WHITE,
+						true,
+						true
+					);
+				}
 			}
 		}
 		break;

@@ -2356,7 +2356,67 @@ bool CvDLLButtonPopup::launchConfirmCommandPopup(CvPopup* pPopup, CvPopupInfo &i
 	// WTP, Slave Emancipation - START
 	if (eCommand == COMMAND_GRANT_FREEDOM)
 	{
-		szBuffer = gDLL->getText("TXT_KEY_GRANT_FREEDOM_CONFIRM");
+		CvUnit* pUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
+
+		if (pUnit == NULL || !pUnit->canGrantFreedom())
+		{
+			return false;
+		}
+
+		const UnitClassTypes eUnitClass =
+			pUnit->getUnitInfo().getUnitClassType();
+
+		const UnitClassTypes eIndenturedServantClass =
+			(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_INDENTURED_SERVANT");
+
+		if (eUnitClass == UNITCLASS_PRISONER_OF_WAR)
+		{
+			szBuffer =
+				gDLL->getText("TXT_KEY_GRANT_FREEDOM_POW_CONFIRM");
+		}
+		else if (eUnitClass == eIndenturedServantClass)
+		{
+			const CvPlayer& kOwner =
+				GET_PLAYER(pUnit->getOwnerINLINE());
+
+			const UnitClassTypes eColonistClass =
+				(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_COLONIST");
+
+			const UnitTypes eIndenturedServant =
+				kOwner.getUnitType(eIndenturedServantClass);
+
+			const UnitTypes eColonist =
+				kOwner.getUnitType(eColonistClass);
+
+			if (eIndenturedServant == NO_UNIT || eColonist == NO_UNIT)
+			{
+				return false;
+			}
+
+			const int iColonistPrice =
+				kOwner.getEuropeUnitBuyPrice(eColonist);
+
+			const int iIndenturedServantPrice =
+				kOwner.getEuropeUnitBuyPrice(eIndenturedServant);
+
+			const int iReleasePrice =
+				std::max(
+					0,
+					iColonistPrice - iIndenturedServantPrice
+				);
+
+			szBuffer =
+				gDLL->getText(
+					"TXT_KEY_GRANT_FREEDOM_INDENTURED_CONFIRM",
+					iReleasePrice
+				);
+		}
+		else
+		{
+			// African Slave / Native Slave
+			szBuffer =
+				gDLL->getText("TXT_KEY_GRANT_FREEDOM_CONFIRM");
+		}
 	}
 	// WTP, Slave Emancipation - END
 

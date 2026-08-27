@@ -2816,22 +2816,53 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 	// WTP, Slave Emancipation - START
 	case COMMAND_GRANT_FREEDOM:
 		{
+			const UnitClassTypes eUnitClass =
+				getUnitInfo().getUnitClassType();
+
+			const UnitClassTypes eIndenturedServantClass =
+				(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_INDENTURED_SERVANT");
+
+			const bool bGrantFreedomUnit =
+				eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE ||
+				eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE ||
+				eUnitClass == UNITCLASS_PRISONER_OF_WAR ||
+				eUnitClass == eIndenturedServantClass;
+
+			// Keep the button visible for all generally eligible unit classes on city tiles,
+			// even if the command is currently disabled.
+			if (bTestVisible)
+			{
+				if (!bGrantFreedomUnit)
+				{
+					return false;
+				}
+
+				CvPlot* pPlot = plot();
+
+				return pPlot != NULL &&
+					pPlot->getPlotCity() != NULL &&
+					pPlot->getPlotCity()->getOwnerINLINE() == getOwnerINLINE();
+			}
+
+			if (!bGrantFreedomUnit)
+			{
+				break;
+			}
+
+			if (!canGrantFreedom())
+			{
+				break;
+			}
+
 			const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 
-			if (canGrantFreedom())
+			if (kOwner.isHuman() &&
+				kOwner.isSlaveEmancipationOnCooldown())
 			{
-				// Keep the command visible while it is temporarily unavailable.
-				if (bTestVisible)
-				{
-					return true;
-				}
-
-				// The cooldown only applies to human players.
-				if (!kOwner.isHuman() || !kOwner.isSlaveEmancipationOnCooldown())
-				{
-					return true;
-				}
+				break;
 			}
+
+			return true;
 		}
 		break;
 	
@@ -3212,6 +3243,11 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 		// WTP, Slave Emancipation - START
 		case COMMAND_GRANT_FREEDOM:
 			{
+				if (!canGrantFreedom())
+				{
+					break;
+				}
+
 				CvCity* pCity = NULL;
 
 				if (plot() != NULL)
@@ -3221,22 +3257,35 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 
 				CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 
+				const UnitClassTypes eUnitClass =
+					getUnitInfo().getUnitClassType();
+
+				const bool bSlaveEmancipation =
+					eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE ||
+					eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE;
+
 				grantFreedom();
 
-				if (pCity != NULL)
+				// Unrest only for actual slave emancipation.
+				if (pCity != NULL && bSlaveEmancipation)
 				{
 					const int iGameSpeedPercent =
-						GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+						GC.getGameSpeedInfo(
+							GC.getGameINLINE().getGameSpeedType()
+						).getGrowthPercent();
 
 					const int iBaseUnrestTurns =
 						GC.getDefineINT("SLAVE_EMANCIPATION_UNREST_TURNS");
 
-					const int iUnrestTurns = std::max(
-						1,
-						iBaseUnrestTurns * iGameSpeedPercent / 100
-					);
+					const int iUnrestTurns =
+						std::max(
+							1,
+							iBaseUnrestTurns * iGameSpeedPercent / 100
+						);
 
-					pCity->changeSlaveEmancipationPendingUnrest(iUnrestTurns);
+					pCity->changeSlaveEmancipationPendingUnrest(
+						iUnrestTurns
+					);
 				}
 
 				// Count manual emancipation only for human players.
@@ -3257,11 +3306,14 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 						const int iCooldownTurns =
 							std::max(
 								0,
-								GC.getDefineINT("SLAVE_EMANCIPATION_PLAYER_COOLDOWN")
+								GC.getDefineINT(
+									"SLAVE_EMANCIPATION_PLAYER_COOLDOWN"
+								)
 							);
 
 						kOwner.setSlaveEmancipationCooldownEndTurn(
-							GC.getGameINLINE().getGameTurn() + iCooldownTurns
+							GC.getGameINLINE().getGameTurn() +
+							iCooldownTurns
 						);
 					}
 				}
@@ -17146,6 +17198,9 @@ bool CvUnit::canGrantFreedom() const
 {
 	const UnitClassTypes eUnitClass = getUnitInfo().getUnitClassType();
 
+	const UnitClassTypes eIndenturedServantClass =
+		(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_INDENTURED_SERVANT");
+
 	UnitClassTypes eFreedUnitClass = NO_UNITCLASS;
 
 	if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
@@ -17155,6 +17210,22 @@ bool CvUnit::canGrantFreedom() const
 	else if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
 	{
 		eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE;
+	}
+	else if (eUnitClass == UNITCLASS_PRISONER_OF_WAR)
+	{
+		eFreedUnitClass = eIndenturedServantClass;
+	}
+	else if (eUnitClass == eIndenturedServantClass)
+	{
+		// Former Prisoners of War must complete their remaining term of service
+		// before they can be released as Free Colonists.
+		if (getLbDFreeReadyTurn() > GC.getGameINLINE().getGameTurn())
+		{
+			return false;
+		}
+
+		eFreedUnitClass =
+			(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_COLONIST");
 	}
 	else
 	{
@@ -17167,6 +17238,36 @@ bool CvUnit::canGrantFreedom() const
 	if (eFreedUnit == NO_UNIT)
 	{
 		return false;
+	}
+
+	// Indentured Servants require payment of the difference between
+	// their current Europe price and the price of a Free Colonist.
+	if (eUnitClass == eIndenturedServantClass)
+	{
+		const UnitTypes eIndenturedServant =
+			kPlayer.getUnitType(eIndenturedServantClass);
+
+		if (eIndenturedServant == NO_UNIT)
+		{
+			return false;
+		}
+
+		const int iFreeColonistPrice =
+			kPlayer.getEuropeUnitBuyPrice(eFreedUnit);
+
+		const int iIndenturedServantPrice =
+			kPlayer.getEuropeUnitBuyPrice(eIndenturedServant);
+
+		if (iFreeColonistPrice >= 0 && iIndenturedServantPrice >= 0)
+		{
+			const int iReleasePrice =
+				std::max(0, iFreeColonistPrice - iIndenturedServantPrice);
+
+			if (kPlayer.getGold() < iReleasePrice)
+			{
+				return false;
+			}
+		}
 	}
 
 	// Population unit: already inside a city
@@ -17215,7 +17316,17 @@ void CvUnit::grantFreedom()
 
 	const UnitClassTypes eUnitClass = getUnitInfo().getUnitClassType();
 
+	const UnitClassTypes eIndenturedServantClass =
+		(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_INDENTURED_SERVANT");
+
+	const UnitClassTypes eColonistClass =
+		(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_COLONIST");
+
 	UnitClassTypes eFreedUnitClass = NO_UNITCLASS;
+	int iReleasePrice = 0;
+
+	const bool bFormerPrisonerOfWar =
+		eUnitClass == UNITCLASS_PRISONER_OF_WAR;
 
 	if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
 	{
@@ -17224,6 +17335,42 @@ void CvUnit::grantFreedom()
 	else if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
 	{
 		eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE;
+	}
+	else if (eUnitClass == UNITCLASS_PRISONER_OF_WAR)
+	{
+		eFreedUnitClass = eIndenturedServantClass;
+	}
+	else if (eUnitClass == eIndenturedServantClass)
+	{
+		eFreedUnitClass = eColonistClass;
+
+		const UnitTypes eColonist =
+			kPlayer.getUnitType(eColonistClass);
+
+		const UnitTypes eIndenturedServant =
+			kPlayer.getUnitType(eIndenturedServantClass);
+
+		if (eColonist == NO_UNIT || eIndenturedServant == NO_UNIT)
+		{
+			return;
+		}
+
+		const int iColonistPrice =
+			kPlayer.getEuropeUnitBuyPrice(eColonist);
+
+		const int iIndenturedServantPrice =
+			kPlayer.getEuropeUnitBuyPrice(eIndenturedServant);
+
+		if (iColonistPrice >= 0 && iIndenturedServantPrice >= 0)
+		{
+			iReleasePrice =
+				std::max(0, iColonistPrice - iIndenturedServantPrice);
+		}
+
+		if (kPlayer.getGold() < iReleasePrice)
+		{
+			return;
+		}
 	}
 	else
 	{
@@ -17270,6 +17417,29 @@ void CvUnit::grantFreedom()
 	else
 	{
 		pNewUnit->convert(this, true);
+	}
+
+	if (iReleasePrice > 0)
+	{
+		kPlayer.changeGold(-iReleasePrice);
+	}
+
+	// A Prisoner of War released into indentured service must serve for a while
+	// before he can be released again as a Colonist.
+	if (bFormerPrisonerOfWar)
+	{
+		const int iTrainPercent =
+			GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+
+		const int iBaseCooldownTurns =
+			GC.getDefineINT("SLAVE_EMANCIPATION_LBD_COOLDOWN");
+
+		const int iCooldownTurns =
+			std::max(1, iBaseCooldownTurns * iTrainPercent / 100);
+
+		pNewUnit->setLbDFreeReadyTurn(
+			GC.getGameINLINE().getGameTurn() + iCooldownTurns
+		);
 	}
 }
 // WTP, Slave Emancipation - END
