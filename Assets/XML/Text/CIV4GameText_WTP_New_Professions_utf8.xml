@@ -619,7 +619,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Colhedor (Fruta):Colhedores (Fruta)</Text>
+			<Text>Coletor (Frutas):Coletores (Frutas)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -918,8 +918,8 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Colhedor (Azeitonas):Colhedores (Azeitonas)</Text>
-			<Gender>Male</Gender>
+			<Text>Coletora (Olivas):Coletoras (Olivas)</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -962,7 +962,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_OLIVES_PLANTER_STRATEGY</Tag>
 		<English>Plains tiles let you grow [LINK=YIELD_OLIVES]olives[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]olive picker[COLOR_REVERT] profession. The olive harvest can be increased considerably by assigning an [LINK=UNIT_OLIVES_PLANTER]expert olive picker[\LINK] to the job.</English>
-		<Portuguese>Os lotes de planície permitem que você cultive [LINK=YIELD_OLIVES]azeitonas[\LINK] se o colono que os trabalha estiver atribuído à profissão de [COLOR_HIGHLIGHT_TEXT]colhedor de azeitonas[COLOR_REVERT]. A colheita de azeitonas pode ser aumentada consideravelmente com a designação de um [LINK=UNIT_OLIVES_PLANTER]colhedor de azeitonas experiente[\LINK] para o trabalho.</Portuguese>
+		<Portuguese>Os lotes de planície permitem que você cultive [LINK=YIELD_OLIVES]azeitonas[\LINK] se o colono que os trabalha estiver atribuído à profissão de [COLOR_HIGHLIGHT_TEXT]coletora (olivas)[COLOR_REVERT]. A colheita de azeitonas pode ser aumentada consideravelmente com a designação de um [LINK=UNIT_OLIVES_PLANTER]coletora (olivas) experiente[\LINK] para o trabalho.</Portuguese>
 		<French>Les tuiles de plaine vous permettent de cultiver des [LINK=YIELD_OLIVES]olives[\LINK] si le colon qui les travaille est affecté à la profession de [COLOR_HIGHLIGHT_TEXT]cueilleur d'olives[COLOR_REVERT]. La récolte d'olives peut être considérablement augmentée en affectant un [LINK=UNIT_OLIVES_PLANTER]cueilleur d'olives expert[\LINK] à cette tâche.</French>
 		<German>Auf Flachland-Geländefeldern können Sie [LINK=YIELD_OLIVES]Oliven[\LINK] anbauen, wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Olivensammler[COLOR_REVERT] zugeordnet ist. Die Olivenernte kann erheblich gesteigert werden, wenn ein [LINK=UNIT_OLIVES_PLANTER]erfahrener Oliven-Sammler[\LINK] mit der Arbeit beauftragt wird.</German>
 		<Italian>Le tessere di pianura permettono di coltivare [LINK=YIELD_OLIVES]olive[\LINK] se il colono che vi lavora è assegnato alla professione di [COLOR_HIGHLIGHT_TEXT]raccoglitore di olive[COLOR_REVERT]. Il raccolto di olive può essere aumentato notevolmente assegnando un [LINK=UNIT_OLIVES_PLANTER]raccoglitore di olive esperto[\LINK] al lavoro.</Italian>

@@ -1012,8 +1012,8 @@
 		<English>Expert Coffee Planter:Expert Coffee Planters</English>
 		
 		<Portuguese>
-			<Text>Cafeeiro:Cafeeiros</Text>
-			<Gender>Male</Gender>
+			<Text>Cafeeira:Cafeeiras</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -2015,7 +2015,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Colhedor de Uvas:Colhedores de Uvas</Text>
+			<Text>Coletor (Uvas):Coletores (Uvas)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2437,8 +2437,8 @@
 		<English>Expert Indigo Planter:Expert Indigo Planters</English>
 		
 		<Portuguese>
-			<Text>Anileiro:Anileiros</Text>
-			<Gender>Male</Gender>
+			<Text>Anileira:Anileiras</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -3485,8 +3485,8 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Pimenteiro:Pimenteiros</Text>
-			<Gender>Male</Gender>
+			<Text>Pimenteira:Pimenteiras</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -4269,8 +4269,8 @@
 		<English>Expert Sugar Planter:Expert Sugar Planters</English>
 		
 		<Portuguese>
-			<Text>Açucareiro:Açucareiros</Text>
-			<Gender>Male</Gender>
+			<Text>Açucareira:Açucareiras</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>

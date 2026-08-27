@@ -406,8 +406,8 @@
 		<English>Expert Olive Picker:Expert Olive Pickers</English>
 		
 		<Portuguese>
-			<Text>Colhedor Oliveiro:Colhedores Oliveiros</Text>
-			<Gender>Male</Gender>
+			<Text>Coletora (Olivas):Coletoras (Olivas)</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -438,8 +438,8 @@
 		<English>Expert Olive Picker:Expert Olive Pickers</English>
 		
 		<Portuguese>
-			<Text>Colhedor Oliveiro:Colhedores Oliveiros</Text>
-			<Gender>Male</Gender>
+			<Text>Coletora (Olivas):Coletoras (Olivas)</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -478,7 +478,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OLIVES_PLANTER_STRATEGY</Tag>
 		<English>The olive is a small tree originating in the Mediterranean basin. [LINK=YIELD_OLIVES]Olives[\LINK] are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.[NEWLINE]When assigned to the Olive Picker profession, the expert can gather double the olives in the same amount of time it would take a regular colonist.</English>
-		<Portuguese>A oliveira é uma pequena árvore originária da bacia do Mediterrâneo. As [LINK=YIELD_OLIVES]azeitonas[\LINK] são um dos principais ingredientes da culinária mediterrânea. A oliveira tem milhares de cultivares.[NEWLINE]Quando designado para a profissão de Colhedor de Azeitonas, o especialista pode colher o dobro das azeitonas no mesmo tempo que um colono normal levaria.</Portuguese>
+		<Portuguese>A oliveira é uma pequena árvore originária da bacia do Mediterrâneo. As [LINK=YIELD_OLIVES]azeitonas[\LINK] são um dos principais ingredientes da culinária mediterrânea. A oliveira tem milhares de cultivares.[NEWLINE]Quando designado para a profissão de Coletora (Olivas), o especialista pode colher o dobro das azeitonas no mesmo tempo que um colono normal levaria.</Portuguese>
 		<French>L'olive est un petit arbre originaire du bassin méditerranéen. L'olive est l'un des principaux ingrédients de la cuisine méditerranéenne. L'olivier compte des milliers de cultivars.</French>
 		<German>Die Olive ist ein kleiner Baum, der im Mittelmeerraum beheimatet ist. Oliven sind eine der wichtigsten Zutaten der mediterranen Küche. Der Olivenbaum hat Tausende von Kultivaren.</German>
 		<Italian>L'olivo è un piccolo albero originario del bacino del Mediterraneo. Le olive sono uno degli ingredienti principali della cucina mediterranea. L'olivo ha migliaia di cultivar.</Italian>
@@ -655,8 +655,8 @@
 		<English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
 		
 		<Portuguese>
-			<Text>Canoleiro:Canoleiros</Text>
-			<Gender>Male</Gender>
+			<Text>Canoleira:Canoleiras</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -687,8 +687,8 @@
 		<English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
 		
 		<Portuguese>
-			<Text>Canoleiro:Canoleiros</Text>
-			<Gender>Male</Gender>
+			<Text>Canoleira:Canoleiras</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -898,8 +898,8 @@
 		<English>Expert Yerba Planter:Expert Yerba Planters</English>
 		
 		<Portuguese>
-			<Text>Erveiro:Erveiros</Text>
-			<Gender>Male</Gender>
+			<Text>Erveira:Erveiras</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -934,8 +934,8 @@
 		<English>Expert Yerba Planter:Expert Yerba Planters</English>
 		
 		<Portuguese>
-			<Text>Erveiro:Erveiros</Text>
-			<Gender>Male</Gender>
+			<Text>Erveira:Erveiras</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -1547,7 +1547,7 @@
 		<English>Expert Fruit Picker:Expert Fruit Pickers</English>
 		
 		<Portuguese>
-			<Text>Colhedor de Frutas:Colhedores de Frutas</Text>
+			<Text>Coletor (Frutas):Coletores (Frutas)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1579,7 +1579,7 @@
 		<English>Expert Fruit Picker:Expert Fruit Pickers</English>
 		
 		<Portuguese>
-			<Text>Colhedor de Frutas:Colhedores de Frutas</Text>
+			<Text>Coletor (Frutas):Coletores (Frutas)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1616,7 +1616,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRUITS_PICKER_STRATEGY</Tag>
 		<English>When assigned to the COLOR_HIGHLIGHT_TEXT]Fruit Picker[COLOR_REVERT] profession, the expert can harvest twice as much [LINK=YIELD_FRUITS]fruit[\LINK] in the same time as a regular colonist.</English>
-		<Portuguese>Quando atribuído à profissão COLOR_HIGHLIGHT_TEXT]Colhedor de frutas[COLOR_REVERT], o especialista pode colher o dobro de [LINK=YIELD_FRUITS]frutas[\LINK] no mesmo tempo que um colono normal.</Portuguese>
+		<Portuguese>Quando atribuído à profissão COLOR_HIGHLIGHT_TEXT]Coletor (Frutas)[COLOR_REVERT], o especialista pode colher o dobro de [LINK=YIELD_FRUITS]frutas[\LINK] no mesmo tempo que um colono normal.</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Fruchtsammler[COLOR_REVERT] erzielen als [LINK=PROFESSION_FRUITS_PICKER]Obstpflücker[\LINK] besonders hohe Erträge bei [LINK=YIELD_FRUITS]Früchten[\LINK].</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Tapasztalt Gyümölcsszedő[COLOR_REVERT] különösen magas hozamot biztosít [LINK=YIELD_FRUITS] gyümölcsből[\LINK], ha [LINK=PROFESSION_FRUITS_PICKER]gyümölcsszedőként[\LINK] dolgozik.</Hungarian>
 	</TEXT>

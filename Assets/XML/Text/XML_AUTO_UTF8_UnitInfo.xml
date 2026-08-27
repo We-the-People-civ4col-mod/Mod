@@ -1622,8 +1622,8 @@
 		<English>Expert Coffee Planter:Expert Coffee Planters</English>
 		
 		<Portuguese>
-			<Text>Cafeeiro:Cafeeiros</Text>
-			<Gender>Male</Gender>
+			<Text>Cafeeira:Cafeeiras</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -3294,7 +3294,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Colhedor de Uvas:Colhedores de Uvas</Text>
+			<Text>Coletor (Uvas):Coletores (Uvas)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3332,7 +3332,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GRAPES_PICKER_STRATEGY</Tag>
 		<English>No [LINK=IMPROVEMENT_VINEYARD]vineyard[\LINK] is truly complete without an [COLOR_UNIT_TEXT]expert grape picker[COLOR_REVERT] to select the best [LINK=YIELD_GRAPES]grapes[\LINK] available.[NEWLINE]If he is assigned to the [LINK=PROFESSION_GRAPES_PICKER]grape picker[\LINK] profession, any grape-yielding tile worked by him will deliver more [LINK=YIELD_GRAPES]grapes[\LINK].[PARAGRAPH:1]Expert grape pickers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
-		<Portuguese>Nenhum [LINK=IMPROVEMENT_VINEYARD]vinhedo[\LINK] está realmente completo sem um [COLOR_UNIT_TEXT]colhedor de uvas experiente[COLOR_REVERT] para selecionar as melhores [LINK=YIELD_GRAPES]uvas[\LINK] disponíveis.[NEWLINE]Se ele for designado para a profissão de [LINK=PROFESSION_GRAPES_PICKER]colhedor de uvas[\LINK], qualquer lote de produção de uva trabalhada por ele renderá mais [LINK=YIELD_GRAPES]uvas[\LINK].[PARAGRAPH:1]Colhedores de uvas experientes podem ser contratados na [LINK=CONCEPT_EUROPE]Europa[\LINK] e também podem ser [LINK=CONCEPT_TRAINING]ensinados[\LINK] em uma colônia com uma [LINK=BUILDING_SCHOOLHOUSE]escola[\LINK] ou em uma de suas atualizações.</Portuguese>
+		<Portuguese>Nenhum [LINK=IMPROVEMENT_VINEYARD]vinhedo[\LINK] está realmente completo sem um [COLOR_UNIT_TEXT]coletor (uvas) experiente[COLOR_REVERT] para selecionar as melhores [LINK=YIELD_GRAPES]uvas[\LINK] disponíveis.[NEWLINE]Se ele for designado para a profissão de [LINK=PROFESSION_GRAPES_PICKER]coletor (uvas)[\LINK], qualquer lote de produção de uva trabalhada por ele renderá mais [LINK=YIELD_GRAPES]uvas[\LINK].[PARAGRAPH:1]Coletores (Uvas) experientes podem ser contratados na [LINK=CONCEPT_EUROPE]Europa[\LINK] e também podem ser [LINK=CONCEPT_TRAINING]ensinados[\LINK] em uma colônia com uma [LINK=BUILDING_SCHOOLHOUSE]escola[\LINK] ou em uma de suas atualizações.</Portuguese>
 		<French>Aucun [LINK=IMPROVEMENT_VINEYARD]Vignoble[\LINK] n'est vraiment complet sans un [COLOR_UNIT_TEXT]Maître vendangeur[COLOR_REVERT] à l'intérieur pour cueillir les meilleurs [LINK=YIELD_GRAPES]raisins[\LINK] disponibles. S'il est assigné à la profession de [LINK=PROFESSION_GRAPES_PICKER]Vendangeur[\LINK], toute tuile productrice de raisin qu'il travaille donnera une quantité accrue de [LINK=YIELD_GRAPES]raisins[\LINK]. Les maîtres vendangeurs peuvent être embauchés en [LINK=CONCEPT_EUROPE]Europe[\LINK], et ils peuvent également être [LINK=CONCEPT_TRAINING]Formés[\LINK] dans une colonie dotée d'une [LINK=BUILDING_SCHOOLHOUSE]ecole[\LINK] ou d'une de ses améliorations.</French>
 		<German>Kein [LINK=IMPROVEMENT_VINEYARD]Weinberg[\LINK] ist wirklich komplett ohne einen [COLOR_UNIT_TEXT]Erfahrenen Weintraubensammler[COLOR_REVERT], um die besten [LINK=YIELD_GRAPES]Trauben[\LINK] zu pflücken. Wenn er dem Beruf [LINK=PROFESSION_GRAPES_PICKER]Weintraubensammler[\LINK] zugewiesen ist, wird jedes von ihm bearbeitete Trauben produzierende Geländefeld eine erhöhte Menge an [LINK=YIELD_GRAPES]Trauben[\LINK] liefern.[PARAGRAPH:1]Erfahrene Weintraubensammler können in [LINK=CONCEPT_EUROPE]Europa[\LINK] angeworben werden, aber sie können auch in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] oder einer ihrer Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 	</TEXT>
@@ -4021,8 +4021,8 @@
 		<English>Expert Indigo Planter:Expert Indigo Planters</English>
 		
 		<Portuguese>
-			<Text>Anileiro:Anileiros</Text>
-			<Gender>Male</Gender>
+			<Text>Anileira:Anileiras</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -5933,8 +5933,8 @@ _ship_of
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Pimenteiro:Pimenteiros</Text>
-			<Gender>Male</Gender>
+			<Text>Pimenteira:Pimenteiras</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
@@ -7188,8 +7188,8 @@ _ship_of
 		<English>Expert Sugar Planter:Expert Sugar Planters</English>
 		
 		<Portuguese>
-			<Text>Açucareiro:Açucareiros</Text>
-			<Gender>Male</Gender>
+			<Text>Açucareira:Açucareiras</Text>
+			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>

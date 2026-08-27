@@ -1800,7 +1800,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Colhedor (Uvas):Colhedores (Uvas)</Text>
+			<Text>Coletor (Uvas):Coletores (Uvas)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1842,7 +1842,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_GRAPES_PICKER_STRATEGY</Tag>
 		<English>Hills on [LINK=TERRAIN_GRASS]grassland[\LINK] tiles can produce [LINK=YIELD_GRAPES]grapes[\LINK] if a colonist in the profession [COLOR_HIGHLIGHT_TEXT]grape picker[COLOR_REVERT] is working on it. This output will be greatly increased if an [LINK=UNIT_GRAPES_PICKER]expert grape picker[\LINK] is employed for this job.</English>
-		<Portuguese>Colinas em lotes de [LINK=TERRAIN_GRASS]pradarias[\LINK] podem produzir [LINK=YIELD_GRAPES]uvas[\LINK] se um colono da profissão [COLOR_HIGHLIGHT_TEXT]colhedor de uvas[COLOR_REVERT] estiver trabalhando nisso. Este resultado aumentará bastante se um [LINK=UNIT_GRAPES_PICKER]especialista em colheita de uvas[\LINK] for contratado para este trabalho.</Portuguese>
+		<Portuguese>Colinas em lotes de [LINK=TERRAIN_GRASS]pradarias[\LINK] podem produzir [LINK=YIELD_GRAPES]uvas[\LINK] se um colono da profissão [COLOR_HIGHLIGHT_TEXT]coletor (uvas)[COLOR_REVERT] estiver trabalhando nisso. Este resultado aumentará bastante se um [LINK=UNIT_GRAPES_PICKER]especialista em colheita de uvas[\LINK] for contratado para este trabalho.</Portuguese>
 		<French>Les collines sur les [LINK=TERRAIN_GRASS]prairies[\LINK] peuvent produire du [LINK=YIELD_GRAPES]raisin[\LINK] si un colon y exerce la profession de [COLOR_HIGHLIGHT_TEXT]vendangeur[COLOR_REVERT]. Votre récolte de raisin peut être considérablement augmentée si vous affectez un [LINK=UNIT_GRAPES_PICKER]vendangeur expérimenté[\LINK] à la profession.</French>
 		<German>Auf Hügeln, die auf [LINK=TERRAIN_GRASS]Graslandfeldern[\LINK] gelegen sind, können [LINK=YIELD_GRAPES]Weintrauben[\LINK] geerntet werden, wenn ein Kolonist dort als [COLOR_HIGHLIGHT_TEXT]Traubenleser[COLOR_REVERT] arbeitet. Ihre Weintraubenernte kann erheblich gesteigert werden, wenn Sie dem Beruf einen [LINK=UNIT_GRAPES_PICKER]Erfahrenen Weintraubensammler[\LINK] zuweisen.</German>
 	</TEXT>
