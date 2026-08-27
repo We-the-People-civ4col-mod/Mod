@@ -351,8 +351,38 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_COOLDOWN</Tag>
-		<English>You've set too many slaves free. If you set any more free, people would hold it against you. Wait %d1 round(s).</English>
-		<German>Ihr habt zu viele Sklaven in die Freiheit entlassen. Noch mehr würde man Euch übel nehmen. Wartet noch %d1 Runde(n).</German>
+		<English>You have released too many unfree people in a short period of time. Further releases would be poorly received. Wait %d1 round(s).</English>
+		<German>Ihr habt zu viele Unfreie in die Freiheit entlassen. Noch mehr würde man Euch übel nehmen. Wartet noch %d1 Runde(n).</German>
 		<Russian/>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_POW_HELP</Tag>
+		<English>Release this Prisoner of War into indentured service.</English>
+		<German>Diesen Kriegsgefangenen in ein Dienstverhältnis als Fronarbeiter entlassen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_INDENTURED_HELP</Tag>
+		<English>Release this Indentured Servant from service for %d1 gold.</English>
+		<German>Diesen Fronarbeiter für %d1 Gold aus seinem Dienst freikaufen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_INDENTURED_NO_GOLD</Tag>
+		<English>You need %d1 gold to release this Indentured Servant from service.</English>
+		<German>Für die Entlassung dieses Fronarbeiters werden %d1 Gold benötigt.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_FORMER_POW</Tag>
+		<English>This former Prisoner of War must serve for another %d1 round(s) before he can be released.</English>
+		<German>Dieser ehemalige Kriegsgefangene muss noch %d1 Runde(n) dienen, bevor er freier Siedler werden kann.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GRANT_FREEDOM_POW_CONFIRM</Tag>
+		<English>Do you really want to release this Prisoner of War into indentured service?</English>
+		<German>Möchtet Ihr diesen Kriegsgefangenen wirklich als Fronarbeiter in ein Dienstverhältnis entlassen?</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GRANT_FREEDOM_INDENTURED_CONFIRM</Tag>
+		<English>Do you really want to release this Indentured Servant from service for %d1 gold?</English>
+		<German>Möchtet Ihr diesen Fronarbeiter wirklich für %d1 Gold aus seinem Dienst freikaufen?</German>
 	</TEXT>
 </Civ4GameText>
