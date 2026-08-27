@@ -9,6 +9,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TOTAL_PRODUCTION</Tag>
 		<English>Total Production</English>
+		
+		<Portuguese>
+			<Text>Produção Total</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Production totale</Text>
 			<Gender>Female</Gender>

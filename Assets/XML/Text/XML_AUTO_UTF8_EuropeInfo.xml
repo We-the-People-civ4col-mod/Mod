@@ -3,6 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_EUROPE_EAST</Tag>
 		<English>East</English>
+		
+		<Portuguese>
+			<Text>Leste</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Est</Text>
 			<Gender>Male</Gender>
@@ -28,6 +34,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_EUROPE_NORTH</Tag>
 		<English>North</English>
+		
+		<Portuguese>
+			<Text>Norte</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Nord</Text>
 			<Gender>Male</Gender>
@@ -53,6 +65,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_EUROPE_SOUTH</Tag>
 		<English>South</English>
+		
+		<Portuguese>
+			<Text>Sul</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sud</Text>
 			<Gender>Male</Gender>
@@ -78,6 +96,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_EUROPE_WEST</Tag>
 		<English>West</English>
+		
+		<Portuguese>
+			<Text>Oeste</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ouest</Text>
 			<Gender>Male</Gender>

@@ -3,6 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCOMBAT_GUN</Tag>
 		<English>Gunpowder Units</English>
+		
+		<Portuguese>
+			<Text>Unidades de pólvora</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Unités équipées d'armes à feu</Text>
 			<Gender>Female</Gender>
@@ -28,6 +34,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCOMBAT_MELEE</Tag>
 		<English>Melee Units</English>
+		
+		<Portuguese>
+			<Text>Unidades corpo a corpo</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Unités de combat rapproché</Text>
 			<Gender>Female</Gender>
@@ -53,6 +65,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCOMBAT_MOUNTED</Tag>
 		<English>Mounted Units</English>
+		
+		<Portuguese>
+			<Text>Unidades montadas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Unités montées</Text>
 			<Gender>Female</Gender>
@@ -82,6 +100,12 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</English>
+		
+		<Portuguese>
+			<Text>Navios de guerra</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Navires de guerre</Text>
 			<Gender>Male</Gender>
@@ -111,6 +135,11 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</English>
+		<Portuguese>
+			<Text>Corsários</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Navires pirates</Text>
 			<Gender>Male</Gender>
@@ -140,6 +169,12 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</English>
+		
+		<Portuguese>
+			<Text>Navios Mercantes</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Navires de commerce</Text>
 			<Gender>Male</Gender>
@@ -165,6 +200,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCOMBAT_SIEGE</Tag>
 		<English>Siege Weapons</English>
+		
+		<Portuguese>
+			<Text>Armas de cerco</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Armes de siège</Text>
 			<Gender>Female</Gender>

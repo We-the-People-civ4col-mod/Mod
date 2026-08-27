@@ -8,6 +8,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_ICE</Tag>
 		<English>Polar Ice</English>
+		
+		<Portuguese>
+			<Text>Gelo Polar</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>Banquise</French>
 		<German>
 			<Text>Polareis</Text>
@@ -30,6 +36,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_AZTEC_SHORT_DESC</Tag>
 		<English>Aztec</English>
+		
+		<Portuguese>
+			<Text>Asteca</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Aztèques</Text>
 			<Gender>Male</Gender>
@@ -56,6 +68,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_INCA_SHORT_DESC</Tag>
 		<English>Inca</English>
+		
+		<Portuguese>
+			<Text>Inca</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Incas</Text>
 			<Gender>Male</Gender>
@@ -82,6 +100,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BARBARIAN_SHORT_DESC</Tag>
 		<English>Wild Animals</English>
+		
+		<Portuguese>
+			<Text>Animais selvagens</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Animaux sauvages</Text>
 			<Gender>Male</Gender>
@@ -108,6 +132,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY</Tag>
 		<English>Victory</English>
+		
+		<Portuguese>
+			<Text>Vitória</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Victoire</Text>
 			<Gender>Female</Gender>
@@ -134,6 +164,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_WAR</Tag>
 		<English>War</English>
+		
+		<Portuguese>
+			<Text>Guerra</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Guerre</Text>
 			<Gender>Female</Gender>
@@ -160,6 +196,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_CEASE_FIRE_STRING</Tag>
 		<English>Cease Fire</English>
+		
+		<Portuguese>
+			<Text>Cessar Fogo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cessez-le-feu</Text>
 			<Gender>Male</Gender>
@@ -186,6 +228,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_WORLD_MAP_STRING</Tag>
 		<English>World Map</English>
+		
+		<Portuguese>
+			<Text>Mapa do Novo Mundo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Carte du Nouveau Monde</Text>
 			<Gender>Male</Gender>
@@ -212,6 +260,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_OPEN_BORDERS_STRING</Tag>
 		<English>Open Borders</English>
+		
+		<Portuguese>
+			<Text>Fronteiras Abertas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Libre passage</Text>
 			<Gender>Female</Gender>
@@ -238,6 +292,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_DEFENSIVE_PACT_STRING</Tag>
 		<English>Defensive Pact</English>
+		
+		<Portuguese>
+			<Text>Pacto Defensivo</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Pacte de défense</Text>
 			<Gender>Male</Gender>
@@ -264,6 +324,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_PERMANENT_ALLIANCE_STRING</Tag>
 		<English>Permanent Alliance</English>
+		
+		<Portuguese>
+			<Text>Aliança Permanente</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Alliance permanente</Text>
 			<Gender>Female</Gender>
@@ -290,6 +356,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_BONUS</Tag>
 		<English>Resources</English>
+		
+		<Portuguese>
+			<Text>Recursos</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ressources</Text>
 			<Gender>Female</Gender>
@@ -316,6 +388,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_BUILDING</Tag>
 		<English>Buildings</English>
+		
+		<Portuguese>
+			<Text>Edifícios</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Bâtiments</Text>
 			<Gender>Male</Gender>
@@ -342,6 +420,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_CIV</Tag>
 		<English>Colonies / Natives</English>
+		
+		<Portuguese>
+			<Text>Colônias / Nativos</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Nations</Text>
 			<Gender>Female</Gender>
@@ -364,6 +448,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_CIVIC</Tag>
 		<English>Constitution</English>
+		
+		<Portuguese>
+			<Text>Constituição</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Constitution</Text>
 			<Gender>Female</Gender>
@@ -386,6 +476,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_CONCEPT</Tag>
 		<English>Game Concepts</English>
+		
+		<Portuguese>
+			<Text>Conceitos de jogo</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Concepts de jeu</Text>
 			<Gender>Male</Gender>
@@ -412,6 +508,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_FATHERS</Tag>
 		<English>Founding Fathers</English>
+		<Portuguese>Pais Fundadores</Portuguese>
 		<French>Pères fondateurs</French>
 		<German>Gründerväter</German>
 		<Italian>Padri Fondatori</Italian>
@@ -422,6 +519,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_FEATURE</Tag>
 		<English>Terrain Features</English>
+		
+		<Portuguese>
+			<Text>Recursos do terreno</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Caractéristiques du terrain</Text>
 			<Gender>Female</Gender>
@@ -448,6 +551,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_HINTS</Tag>
 		<English>Historical Quotes</English>
+		
+		<Portuguese>
+			<Text>Citações históricas</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Citations historiques</Text>
 			<Gender>Female</Gender>
@@ -474,6 +583,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_IMPROVEMENT</Tag>
 		<English>Improvements</English>
+		
+		<Portuguese>
+			<Text>Melhorias</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Aménagements</Text>
 			<Gender>Female</Gender>
@@ -500,6 +615,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_LEADER</Tag>
 		<English>Leaders</English>
+		
+		<Portuguese>
+			<Text>Líderes</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Dirigeants</Text>
 			<Gender>Male</Gender>
@@ -526,6 +647,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_PROFESSION</Tag>
 		<English>Professions</English>
+		<Portuguese>Profissões</Portuguese>
 		<French>Professions</French>
 		<German>Berufe</German>
 		<Italian>Professioni</Italian>
@@ -536,6 +658,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_PROMOTION</Tag>
 		<English>Promotions</English>
+		
+		<Portuguese>
+			<Text>Promoções</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Promotions</Text>
 			<Gender>Female</Gender>
@@ -562,6 +690,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_TERRAIN</Tag>
 		<English>Base Terrain</English>
+		
+		<Portuguese>
+			<Text>Terreno Base</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Terrains de base</Text>
 			<Gender>Male</Gender>
@@ -588,6 +722,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_UNIT</Tag>
 		<English>Units</English>
+		
+		<Portuguese>
+			<Text>Unidades</Text>
+			<Gender>Female</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Unités</Text>
 			<Gender>Female</Gender>
@@ -614,6 +754,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_CATEGORY_YIELDS</Tag>
 		<English>Goods and Materials</English>
+		<Portuguese>Bens e Materiais</Portuguese>
 		<French>Marchandises et matériaux</French>
 		<German>Rohstoffe und Waren</German>
 		<Italian>Beni e materiali</Italian>
@@ -624,6 +765,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_ALL</Tag>
 		<English>all</English>
+		
+		<Portuguese>
+			<Text>todos:todas</Text>
+			<Gender>Male:Female</Gender>
+			<Plural>1:1</Plural>
+		</Portuguese>
 		<French>
 			<Text>tout</Text>
 			<Gender>Male</Gender>
@@ -649,6 +796,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_YOU</Tag>
 		<English>you</English>
+		
+		<Portuguese>
+			<Text>você</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>vous</Text>
 			<Gender>Male</Gender>
@@ -674,6 +827,9 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_AMSTERDAM</Tag>
 		<English>Amsterdam</English>
+		<Portuguese>
+			Amsterdam
+		</Portuguese>
 		<French>Amsterdam</French>
 		<German>Amsterdam</German>
 		<Italian>Amsterdam</Italian>
@@ -683,6 +839,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_LA_ROCHELLE</Tag>
 		<English>La Rochelle</English>
+		<Portuguese>La Rochelle</Portuguese>
 		<French>La Rochelle</French>
 		<German>La Rochelle</German>
 		<Italian>La Rochelle</Italian>
@@ -691,6 +848,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TUMBES</Tag>
 		<English>Tumbes</English>
+		<Portuguese>Tumbes</Portuguese>
 		<French>Tumbes</French>
 		<German>Tumbes</German>
 		<Italian>Tumbes</Italian>
@@ -699,6 +857,9 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CHAN_CHAN</Tag>
 		<English>Chan Chan</English>
+		<Portuguese>
+			Chan Chan
+		</Portuguese>
 		<French>Chan Chan</French>
 		<German>Chan Chan</German>
 		<Italian>Chan Chan</Italian>
@@ -707,6 +868,9 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_SIPAN</Tag>
 		<English>Sipan</English>
+		<Portuguese>
+			Sipan
+		</Portuguese>
 		<French>Sipan</French>
 		<German>Sipan</German>
 		<Italian>Sipan</Italian>
@@ -715,6 +879,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_PACHACAMAC</Tag>
 		<English>Pachacamac</English>
+		<Portuguese>Pachacamac</Portuguese>
 		<French>Pachacamac</French>
 		<German>Pachacamac</German>
 		<Italian>Pachacamac</Italian>
@@ -723,6 +888,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_LLACTAPATA</Tag>
 		<English>Llactapata</English>
+		<Portuguese>Llactapata</Portuguese>
 		<French>Llactapata</French>
 		<German>Llactapata</German>
 		<Italian>Llactapata</Italian>
@@ -731,6 +897,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_PISAC</Tag>
 		<English>Pisac</English>
+		<Portuguese>Pisac</Portuguese>
 		<French>Pisac</French>
 		<German>Pisac</German>
 		<Italian>Pisac</Italian>
@@ -739,6 +906,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_KUELAP</Tag>
 		<English>Kuelap</English>
+		<Portuguese>Kuelap</Portuguese>
 		<French>Kuelap</French>
 		<German>Kuelap</German>
 		<Italian>Kuelap</Italian>
@@ -747,6 +915,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_PAJATEN</Tag>
 		<English>Pajaten</English>
+		<Portuguese>Pajaten</Portuguese>
 		<French>Pajaten</French>
 		<German>Pajaten</German>
 		<Italian>Pajaten</Italian>
@@ -755,6 +924,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CHUCUITO</Tag>
 		<English>Chucuito</English>
+		<Portuguese>Chucuito</Portuguese>
 		<French>Chucuito</French>
 		<German>Chucuito</German>
 		<Italian>Chucuito</Italian>
@@ -763,6 +933,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CHOTA</Tag>
 		<English>Chota</English>
+		<Portuguese>Chota</Portuguese>
 		<French>Chota</French>
 		<German>Chota</German>
 		<Italian>Chota</Italian>
@@ -771,6 +942,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_RICHMOND</Tag>
 		<English>Richmond</English>
+		
+		<Portuguese>
+			<Text>Richmond</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Richmond</Text>
 			<Gender>Male</Gender>
@@ -795,6 +972,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TENOCHTITLAN</Tag>
 		<English>Tenochtitlan</English>
+		
+		<Portuguese>
+			<Text>Tenochtitlan</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tenochtitlan</Text>
 			<Gender>Male</Gender>
@@ -820,6 +1003,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TEOTIHUACAN</Tag>
 		<English>Teotihuacan</English>
+		
+		<Portuguese>
+			<Text>Teotihuacan</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Teotihuacan</Text>
 			<Gender>Male</Gender>
@@ -844,6 +1033,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TLATELOLCO</Tag>
 		<English>Tlatelolco</English>
+		
+		<Portuguese>
+			<Text>Tlatelolco</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tlatelolco</Text>
 			<Gender>Male</Gender>
@@ -868,6 +1063,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TEXCOCO</Tag>
 		<English>Texcoco</English>
+		
+		<Portuguese>
+			<Text>Texcoco</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Texcoco</Text>
 			<Gender>Male</Gender>
@@ -892,6 +1093,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TLAXCALA</Tag>
 		<English>Tlaxcala</English>
+		
+		<Portuguese>
+			<Text>Tlaxcala</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tlaxcala</Text>
 			<Gender>Male</Gender>
@@ -916,6 +1123,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CALIXTLAHUACA</Tag>
 		<English>Calixtlahuaca</English>
+		
+		<Portuguese>
+			<Text>Calixtlahuaca</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Calixtlahuaca</Text>
 			<Gender>Male</Gender>
@@ -940,6 +1153,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_XOCHICALCO</Tag>
 		<English>Xochicalco</English>
+		
+		<Portuguese>
+			<Text>Xochicalco</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Xochicalco</Text>
 			<Gender>Male</Gender>
@@ -964,6 +1183,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TLACOPAN</Tag>
 		<English>Tlacopan</English>
+		
+		<Portuguese>
+			<Text>Tlacopan</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tlacopan</Text>
 			<Gender>Male</Gender>
@@ -988,6 +1213,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_ATZCAPOTZALCO</Tag>
 		<English>Atzcapotzalco</English>
+		
+		<Portuguese>
+			<Text>Atzcapotzalco</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Atzcapotzalco</Text>
 			<Gender>Male</Gender>
@@ -1012,6 +1243,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TZINTZUNTZEN</Tag>
 		<English>Tzintzuntzen</English>
+		
+		<Portuguese>
+			<Text>Tzintzuntzen</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tzintzuntzen</Text>
 			<Gender>Male</Gender>
@@ -1036,6 +1273,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_MALINALCO</Tag>
 		<English>Malinalco</English>
+		
+		<Portuguese>
+			<Text>Malinalco</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Malinalco</Text>
 			<Gender>Male</Gender>
@@ -1060,6 +1303,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TULA</Tag>
 		<English>Tula</English>
+		
+		<Portuguese>
+			<Text>Tula</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tula</Text>
 			<Gender>Male</Gender>
@@ -1084,6 +1333,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TAMUIN</Tag>
 		<English>Tamuin</English>
+		
+		<Portuguese>
+			<Text>Tamuin</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tamuin</Text>
 			<Gender>Male</Gender>
@@ -1108,6 +1363,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TEAYO</Tag>
 		<English>Teayo</English>
+		
+		<Portuguese>
+			<Text>Teayo</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Teayo</Text>
 			<Gender>Male</Gender>
@@ -1132,6 +1393,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CEMPOALA</Tag>
 		<English>Cempoala</English>
+		
+		<Portuguese>
+			<Text>Cempoala</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cempoala</Text>
 			<Gender>Male</Gender>
@@ -1156,6 +1423,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CHALCO</Tag>
 		<English>Chalco</English>
+		
+		<Portuguese>
+			<Text>Chalco</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Chalco</Text>
 			<Gender>Male</Gender>
@@ -1180,6 +1453,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TLALMANALCO</Tag>
 		<English>Tlalmanalco</English>
+		
+		<Portuguese>
+			<Text>Tlalmanalco</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tlalmanalco</Text>
 			<Gender>Male</Gender>
@@ -1204,6 +1483,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_IXTAPALUCA</Tag>
 		<English>Ixtapaluca</English>
+		
+		<Portuguese>
+			<Text>Ixtapaluca</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ixtapaluca</Text>
 			<Gender>Male</Gender>
@@ -1228,6 +1513,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_HUEXOTLA</Tag>
 		<English>Huexotla</English>
+		
+		<Portuguese>
+			<Text>Huexotla</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Huexotla</Text>
 			<Gender>Male</Gender>
@@ -1252,6 +1543,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TEPEXPAN</Tag>
 		<English>Tepexpan</English>
+		
+		<Portuguese>
+			<Text>Tepexpan</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tepexpan</Text>
 			<Gender>Male</Gender>
@@ -1276,6 +1573,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TEPETLAOXTOC</Tag>
 		<English>Tepetlaoxtoc</English>
+		
+		<Portuguese>
+			<Text>Tepetlaoxtoc</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tepetlaoxtoc</Text>
 			<Gender>Male</Gender>
@@ -1300,6 +1603,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CHICONAUTLA</Tag>
 		<English>Chiconautla</English>
+		
+		<Portuguese>
+			<Text>Chiconautla</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Chiconautla</Text>
 			<Gender>Male</Gender>
@@ -1324,6 +1633,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_ZITLALTEPEC</Tag>
 		<English>Zitlaltepec</English>
+		
+		<Portuguese>
+			<Text>Zitlaltepec</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Zitlaltepec</Text>
 			<Gender>Male</Gender>
@@ -1348,6 +1663,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_COYOTEPEC</Tag>
 		<English>Coyotepec</English>
+		
+		<Portuguese>
+			<Text>Coyotepec</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Coyotepec</Text>
 			<Gender>Male</Gender>
@@ -1372,6 +1693,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TEQUIXQUIAC</Tag>
 		<English>Tequixquiac</English>
+		
+		<Portuguese>
+			<Text>Tequixquiac</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tequixquiac</Text>
 			<Gender>Male</Gender>
@@ -1396,6 +1723,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_JILOTZINGO</Tag>
 		<English>Jilotzingo</English>
+		
+		<Portuguese>
+			<Text>Jilotzingo</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Jilotzingo</Text>
 			<Gender>Male</Gender>
@@ -1420,6 +1753,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TLAPANALOYA</Tag>
 		<English>Tlapanaloya</English>
+		
+		<Portuguese>
+			<Text>Tlapanaloya</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tlapanaloyan</Text>
 			<Gender>Male</Gender>
@@ -1444,6 +1783,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TULTITAN</Tag>
 		<English>Tultitan</English>
+		
+		<Portuguese>
+			<Text>Tultitan</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tultitan</Text>
 			<Gender>Male</Gender>
@@ -1468,6 +1813,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_ECATEPEC</Tag>
 		<English>Ecatepec</English>
+		
+		<Portuguese>
+			<Text>Ecatepec</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ecatepec</Text>
 			<Gender>Male</Gender>
@@ -1492,6 +1843,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_COATEPEC</Tag>
 		<English>Coatepec</English>
+		
+		<Portuguese>
+			<Text>Coatepec</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Coatepec</Text>
 			<Gender>Male</Gender>
@@ -1516,6 +1873,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CHALCHIUITES</Tag>
 		<English>Chalchiuites</English>
+		
+		<Portuguese>
+			<Text>Chalchiuites</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Chalchiuites</Text>
 			<Gender>Male</Gender>
@@ -1540,6 +1903,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CHIAUHITA</Tag>
 		<English>Chiauhita</English>
+		
+		<Portuguese>
+			<Text>Chiauhita</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Chiauhita</Text>
 			<Gender>Male</Gender>
@@ -1564,6 +1933,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CHAPULTEPEC</Tag>
 		<English>Chapultepec</English>
+		
+		<Portuguese>
+			<Text>Chapultepec</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Chapultepec</Text>
 			<Gender>Male</Gender>
@@ -1588,6 +1963,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_ITZAPALAPA</Tag>
 		<English>Itzapalapa</English>
+		
+		<Portuguese>
+			<Text>Itzapalapa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Itzapalapa</Text>
 			<Gender>Male</Gender>
@@ -1612,6 +1993,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_AYOTZINCO</Tag>
 		<English>Ayotzinco</English>
+		
+		<Portuguese>
+			<Text>Ayotzinco</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ayotzinco</Text>
 			<Gender>Male</Gender>
@@ -1636,6 +2023,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_IZTAPAM</Tag>
 		<English>Iztapam</English>
+		
+		<Portuguese>
+			<Text>Iztapam</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Iztapam</Text>
 			<Gender>Male</Gender>
@@ -1660,6 +2053,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_LONDON</Tag>
 		<English>London</English>
+		
+		<Portuguese>
+			<Text>London</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Londres</Text>
 			<Gender>Male</Gender>
@@ -1684,6 +2083,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_READING</Tag>
 		<English>Reading</English>
+		
+		<Portuguese>
+			<Text>Reading</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Reading</Text>
 			<Gender>Male</Gender>
@@ -1708,6 +2113,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_PORTSMOUTH</Tag>
 		<English>Portsmouth</English>
+		
+		<Portuguese>
+			<Text>Portsmouth</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Portsmouth</Text>
 			<Gender>Male</Gender>
@@ -1732,6 +2143,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CUZCO</Tag>
 		<English>Cuzco</English>
+		
+		<Portuguese>
+			<Text>Cuzco</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Cuzco</Text>
 			<Gender>Male</Gender>
@@ -1756,6 +2173,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TIWANAKU</Tag>
 		<English>Tiwanaku</English>
+		
+		<Portuguese>
+			<Text>Tiwanaku</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tihuanacu</Text>
 			<Gender>Male</Gender>
@@ -1780,6 +2203,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_MACHU</Tag>
 		<English>Machu Picchu</English>
+		
+		<Portuguese>
+			<Text>Machu Picchu</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Machu Picchu</Text>
 			<Gender>Male</Gender>
@@ -1804,6 +2233,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_OLLANTAYTAMBO</Tag>
 		<English>Ollantaytambo</English>
+		
+		<Portuguese>
+			<Text>Ollantaytambo</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ollantaytambo</Text>
 			<Gender>Male</Gender>
@@ -1828,6 +2263,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CORIHUAYACHINA</Tag>
 		<English>Corihuayrachina</English>
+		
+		<Portuguese>
+			<Text>Corihuayrachina</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Corihuayrachina</Text>
 			<Gender>Male</Gender>
@@ -1852,6 +2293,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_HUAMANGA</Tag>
 		<English>Huamanga</English>
+		
+		<Portuguese>
+			<Text>Huamanga</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Huamanga</Text>
 			<Gender>Male</Gender>
@@ -1876,6 +2323,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_VILCAS</Tag>
 		<English>Vilcas</English>
+		
+		<Portuguese>
+			<Text>Vilcas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Vilcas</Text>
 			<Gender>Male</Gender>
@@ -1900,6 +2353,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_VILCABAMBA</Tag>
 		<English>Vilcabamba</English>
+		
+		<Portuguese>
+			<Text>Vilcabamba</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Vilcabamba</Text>
 			<Gender>Male</Gender>
@@ -1924,6 +2383,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_VITCOS</Tag>
 		<English>Vitcos</English>
+		
+		<Portuguese>
+			<Text>Vitcos</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Vitcos</Text>
 			<Gender>Male</Gender>
@@ -1948,6 +2413,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_ANDAHUAYLAS</Tag>
 		<English>Andahuaylas</English>
+		
+		<Portuguese>
+			<Text>Andahuaylas</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Andahuaylas</Text>
 			<Gender>Male</Gender>
@@ -1972,6 +2443,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_ICA</Tag>
 		<English>Ica</English>
+		
+		<Portuguese>
+			<Text>Ica</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Ica</Text>
 			<Gender>Male</Gender>
@@ -1996,6 +2473,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_AREQUIPA</Tag>
 		<English>Arequipa</English>
+		
+		<Portuguese>
+			<Text>Arequipa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Arequipa</Text>
 			<Gender>Male</Gender>
@@ -2020,6 +2503,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_NASCA</Tag>
 		<English>Nasca</English>
+		
+		<Portuguese>
+			<Text>Nasca</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Nazca</Text>
 			<Gender>Male</Gender>
@@ -2044,6 +2533,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_ATICO</Tag>
 		<English>Atico</English>
+		
+		<Portuguese>
+			<Text>Atico</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Atico</Text>
 			<Gender>Male</Gender>
@@ -2068,6 +2563,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_JULI</Tag>
 		<English>Juli</English>
+		
+		<Portuguese>
+			<Text>Juli</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Juli</Text>
 			<Gender>Male</Gender>
@@ -2092,6 +2593,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CHUITO</Tag>
 		<English>Chuito</English>
+		
+		<Portuguese>
+			<Text>Chuito</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Quito</Text>
 			<Gender>Male</Gender>
@@ -2116,6 +2623,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CHUQUIAPO</Tag>
 		<English>Chuquiapo</English>
+		
+		<Portuguese>
+			<Text>Chuquiapo</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Chuquiapo</Text>
 			<Gender>Male</Gender>
@@ -2140,6 +2653,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_HUANUCOPAMPA</Tag>
 		<English>Huanuco Pampa</English>
+		
+		<Portuguese>
+			<Text>Huanuco Pampa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Huanuco</Text>
 			<Gender>Male</Gender>
@@ -2164,6 +2683,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TAMBOCCOCHA</Tag>
 		<English>Tamboccocha</English>
+		
+		<Portuguese>
+			<Text>Tamboccocha</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tambococha</Text>
 			<Gender>Male</Gender>
@@ -2188,6 +2713,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_HUARAS</Tag>
 		<English>Huaras</English>
+		
+		<Portuguese>
+			<Text>Huaras</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Huaras</Text>
 			<Gender>Male</Gender>
@@ -2212,6 +2743,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_RIOBAMBA</Tag>
 		<English>Riobamba</English>
+		
+		<Portuguese>
+			<Text>Riobamba</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Rio Bamba</Text>
 			<Gender>Male</Gender>
@@ -2236,6 +2773,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_CAXAMALCA</Tag>
 		<English>Caxamalca</English>
+		
+		<Portuguese>
+			<Text>Caxamalca</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Caxamalca</Text>
 			<Gender>Male</Gender>
@@ -2260,6 +2803,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_SAUSA</Tag>
 		<English>Sausa</English>
+		
+		<Portuguese>
+			<Text>Sausa</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Sausa</Text>
 			<Gender>Male</Gender>
@@ -2284,6 +2833,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_TAMBOCOLORADO</Tag>
 		<English>Tambo Colorado</English>
+		
+		<Portuguese>
+			<Text>Tambo Colorado</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Tambo Colorado</Text>
 			<Gender>Male</Gender>
@@ -2308,6 +2863,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_HUACA</Tag>
 		<English>Huaca</English>
+		
+		<Portuguese>
+			<Text>Huaca</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Huaca</Text>
 			<Gender>Male</Gender>
@@ -2332,6 +2893,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_SEVILLE</Tag>
 		<English>Seville</English>
+		
+		<Portuguese>
+			<Text>Seville</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Séville</Text>
 			<Gender>Male</Gender>
@@ -2357,6 +2924,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_NAME_SANTIAGO</Tag>
 		<English>Santiago</English>
+		
+		<Portuguese>
+			<Text>Santiago</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Santiago</Text>
 			<Gender>Male</Gender>
