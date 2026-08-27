@@ -6379,7 +6379,7 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SAILCLOTH_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Master sailmakers[COLOR_REVERT] produce double the amount of [COLOR_HIGHLIGHT_TEXT]sailcloth[COLOR_REVERT] from [COLOR_HIGHLIGHT_TEXT]hemp[COLOR_REVERT] or [COLOR_HIGHLIGHT_TEXT]flax[COLOR_REVERT].</English>
-		<Portuguese>[COLOR_UNIT_TEXT]Mestres fabricantes de velas[COLOR_REVERT] produzem o dobro da quantidade de [COLOR_HIGHLIGHT_TEXT]veleiras[COLOR_REVERT] de [COLOR_HIGHLIGHT_TEXT]cânhamo[COLOR_REVERT] ou [COLOR_HIGHLIGHT_TEXT]linho[COLOR_REVERT].</Portuguese>
+		<Portuguese>[COLOR_UNIT_TEXT]Mestres veleiros[COLOR_REVERT] produzem o dobro da quantidade de [COLOR_HIGHLIGHT_TEXT]veleiras[COLOR_REVERT] de [COLOR_HIGHLIGHT_TEXT]cânhamo[COLOR_REVERT] ou [COLOR_HIGHLIGHT_TEXT]linho[COLOR_REVERT].</Portuguese>
 		<French>Les [COLOR_UNIT_TEXT]maîtres voiliers[COLOR_REVERT] produisent deux fois plus de [COLOR_HIGHLIGHT_TEXT]voiles[COLOR_REVERT] à partir de [COLOR_HIGHLIGHT_TEXT]chanvre[COLOR_REVERT].</French>
 		<German>[COLOR_UNIT_TEXT]Meister-Segelmacher[COLOR_REVERT] verarbeiten doppelt soviel [COLOR_HIGHLIGHT_TEXT]Hanf[COLOR_REVERT] zu [COLOR_HIGHLIGHT_TEXT]Segeltuch[COLOR_REVERT], wie andere Kolonisten.</German>
 	</TEXT>
@@ -6391,7 +6391,7 @@ _ship_of
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Mestre Fabricante de Velas:Mestres Fabricantes de Velas</Text>
+			<Text>Mestre Veleiro:Mestres Veleiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -6427,7 +6427,7 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SAILCLOTH_MAKER_STRATEGY</Tag>
 		<English>If you need a lot of [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] fast, the [COLOR_UNIT_TEXT]master sailmaker[COLOR_REVERT] will be of great help.[NEWLINE]In the [LINK=PROFESSION_SAILCLOTH_MAKER]sailmaker[\LINK] profession, he makes double what an untrained colonist would from [LINK=YIELD_HEMP]hemp[\LINK] or [LINK=YIELD_FLAX]flax[\LINK].[PARAGRAPH:1]Master sailmakers can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also [LINK=CONCEPT_TRAINING]apprentice[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
-		<Portuguese>Se você precisar de muita [LINK=YIELD_SAILCLOTH]lona[\LINK] rapidamente, o [COLOR_UNIT_TEXT]mestre fabricante de velas[COLOR_REVERT] será de grande ajuda.[NEWLINE]Na profissão de [LINK=PROFESSION_SAILCLOTH_MAKER]fabricante de velas[\LINK], ele ganha o dobro do que um colono não treinado ganharia com [LINK=YIELD_HEMP]cânhamo[\LINK] ou [LINK=YIELD_FLAX]linho[\LINK].[PARAGRAPH:1]Mestres fabricantes de velas podem ser contratados na [LINK=CONCEPT_EUROPE]Europa[\LINK] e também podem [LINK=CONCEPT_TRAINING]aprender[\LINK] em uma colônia com uma [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou uma de suas atualizações.</Portuguese>
+		<Portuguese>Se você precisar de muita [LINK=YIELD_SAILCLOTH]lona[\LINK] rapidamente, o [COLOR_UNIT_TEXT]mestre veleiro[COLOR_REVERT] será de grande ajuda.[NEWLINE]Na profissão de [LINK=PROFESSION_SAILCLOTH_MAKER]fabricante de velas[\LINK], ele ganha o dobro do que um colono não treinado ganharia com [LINK=YIELD_HEMP]cânhamo[\LINK] ou [LINK=YIELD_FLAX]linho[\LINK].[PARAGRAPH:1]Mestres veleiros podem ser contratados na [LINK=CONCEPT_EUROPE]Europa[\LINK] e também podem [LINK=CONCEPT_TRAINING]aprender[\LINK] em uma colônia com uma [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou uma de suas atualizações.</Portuguese>
 		<French>Si vous avez besoin rapidement de beaucoup de [LINK=YIELD_SAILCLOTH]Toile à voile[\LINK], le [COLOR_UNIT_TEXT]Maître voilier[COLOR_REVERT] peut vous être d'une grande aide. Dans la profession de [LINK=PROFESSION_SAILCLOTH_MAKER]Voilier[\LINK], il est capable de créer deux fois plus de ces ressources que les colons ordinaires le feraient à partir de [LINK=YIELD_HEMP]chanvre[\LINK].[PARAGRAPH:1]Les maîtres voiliers peuvent être recrutés en [LINK=CONCEPT_EUROPE]Europe[\LINK], et ils peuvent également être [LINK=CONCEPT_TRAINING]formés[\LINK] dans une colonie possédant un [LINK=BUILDING_COLLEGE]College[\LINK] ou l'une de ses améliorations.</French>
 		<German>Wenn Sie schnell eine Menge [LINK=YIELD_SAILCLOTH]Segeltuch[\LINK] benötigen, kann der [COLOR_UNIT_TEXT]Meister-Segelmacher[COLOR_REVERT] eine große Hilfe sein.[NEWLINE]Im Beruf [LINK=PROFESSION_SAILCLOTH_MAKER]Segelmacher[\LINK] ist er in der Lage, die doppelte Menge dieses Produktes aus [LINK=YIELD_HEMP]Hanf[\LINK] zu erzeugen, als es normale Kolonisten tun würden.[PARAGRAPH:1]Meister-Segelmacher können in [LINK=CONCEPT_EUROPE]Europa[\LINK] rekrutiert werden, und sie können auch in einer Kolonie mit einem [LINK=BUILDING_COLLEGE]College[\LINK] oder einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 	</TEXT>
