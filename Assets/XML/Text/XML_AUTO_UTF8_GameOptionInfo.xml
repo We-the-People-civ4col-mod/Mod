@@ -489,7 +489,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_USE_OLD_FOUNDING_FATHER_SYSTEM</Tag>
 		<English>Use Old System for Founding Fathers</English>
-		<Portuguese>Usar o sistema antigo para Patronos</Portuguese>
+		<Portuguese>Usar o sistema antigo para Pais Fundadores</Portuguese>
 		<French>Utiliser l'ancien système pour les Pères fondateurs</French>
 		<German>Altes Gründervätersystem benutzen</German>
 		<Italian>Utilizzare vecchio sistema per Padre fondatore</Italian>
@@ -499,7 +499,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_USE_OLD_FOUNDING_FATHER_SYSTEM_HELP</Tag>
 		<English>With the new system, FFs become available again whenever the civ that recruited them is destroyed.</English>
-		<Portuguese>Com o novo sistema, os Patronos ficam disponíveis novamente sempre que a civilização que os recrutou é destruída.</Portuguese>
+		<Portuguese>Com o novo sistema, os Pais Fundadores ficam disponíveis novamente sempre que a civilização que os recrutou é destruída.</Portuguese>
 		<French>Avec le nouveau système, les PF sont à nouveau disponibles si posséder Civ est détruit.</French>
 		<German>Beim neuen System werden Gründerväter wieder verfügbar, wenn die bisher besitzende Civ vernichtet wird.</German>
 		<Italian>Con il nuovo sistema, FFs saranno disponibili nuovamente se in possesso di Civ è distrutto.</Italian>

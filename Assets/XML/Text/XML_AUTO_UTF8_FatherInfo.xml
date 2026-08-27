@@ -46,7 +46,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_ADAM_SMITH_STRATEGY</Tag>
 		<English>Boost your industrialization with [COLOR_TECH_TEXT]Adam Smith[COLOR_REVERT]. This Founding Father allows you to build [COLOR_BUILDING_TEXT]Rum Factories,[COLOR_REVERT] [COLOR_BUILDING_TEXT]Textile Mills[COLOR_REVERT], [COLOR_BUILDING_TEXT]Coat Factories[COLOR_REVERT], and [COLOR_BUILDING_TEXT]Cigar Factories[COLOR_REVERT] in half the normal time</English>
-		<Portuguese>Aumente sua industrialização com [COLOR_TECH_TEXT]Adam Smith[COLOR_REVERT]. Este Patrono permite que você construa [COLOR_BUILDING_TEXT]Fábricas de Rum,[COLOR_REVERT] [COLOR_BUILDING_TEXT]Fábricas Têxteis[COLOR_REVERT], [COLOR_BUILDING_TEXT]Fábricas de Casacos[COLOR_REVERT] e [COLOR_BUILDING_TEXT]Fábricas de Charutos[COLOR_REVERT] na metade do tempo normal</Portuguese>
+		<Portuguese>Aumente sua industrialização com [COLOR_TECH_TEXT]Adam Smith[COLOR_REVERT]. Este Pai Fundador permite que você construa [COLOR_BUILDING_TEXT]Fábricas de Rum,[COLOR_REVERT] [COLOR_BUILDING_TEXT]Fábricas Têxteis[COLOR_REVERT], [COLOR_BUILDING_TEXT]Fábricas de Casacos[COLOR_REVERT] e [COLOR_BUILDING_TEXT]Fábricas de Charutos[COLOR_REVERT] na metade do tempo normal</Portuguese>
 		<French>Entrez de plain pied dans l'ère industrielle grâce au Père fondateur [COLOR_TECH_TEXT]Adam Smith[COLOR_REVERT]. Smith vous permet de bâtir [COLOR_BUILDING_TEXT]distilleries de rhum[COLOR_REVERT], [COLOR_BUILDING_TEXT]usines textiles[COLOR_REVERT], [COLOR_BUILDING_TEXT]usines de manteaux[COLOR_REVERT] et [COLOR_BUILDING_TEXT]usines de cigares[COLOR_REVERT] deux fois plus rapidement.</French>
 		<German>[COLOR_TECH_TEXT]Adam Smith[COLOR_REVERT] treibt Ihre Industrialisierung voran. Mit diesem Gründervater brauchen Sie für den Bau fortgeschrittener Gebäude zur Herstellung von Eisenwaren und Schusswaffen und vor allem für die Errichtung von Zollhäusern wesentlich weniger Hämmer.</German>
 		<Italian>Accelera l'industrializzazione con [COLOR_TECH_TEXT]Adam Smith[COLOR_REVERT]. Questo Padre Fondatore ti permette di costruire [COLOR_BUILDING_TEXT]fabbriche di rum[COLOR_REVERT], [COLOR_BUILDING_TEXT]fabbriche tessili[COLOR_REVERT], [COLOR_BUILDING_TEXT]fabbriche di mantelli[COLOR_REVERT] e [COLOR_BUILDING_TEXT]fabbriche di sigari[COLOR_REVERT] nella metà del tempo.</Italian>
@@ -150,7 +150,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_ALEXANDER_VON_HUMBOLDT_STRATEGY</Tag>
 		<English>Sharpen the minds of your citizenry with [COLOR_TECH_TEXT]Alexander von Humboldt[COLOR_REVERT]. When this Founding Father joins your side, you will get higher level [COLOR_BUILDING_TEXT]Education[COLOR_REVERT] and a [COLOR_BUILDING_TEXT]Nobleman[COLOR_REVERT].</English>
-		<Portuguese>Afie a mente dos seus cidadãos com [COLOR_TECH_TEXT]Alexander von Humboldt[COLOR_REVERT]. Quando este Patrono se juntar ao seu lado, você obterá [COLOR_BUILDING_TEXT]Educação[COLOR_REVERT] de nível superior e um [COLOR_BUILDING_TEXT]Nobre[COLOR_REVERT].</Portuguese>
+		<Portuguese>Afie a mente dos seus cidadãos com [COLOR_TECH_TEXT]Alexander von Humboldt[COLOR_REVERT]. Quando este Pai Fundador se juntar ao seu lado, você obterá [COLOR_BUILDING_TEXT]Educação[COLOR_REVERT] de nível superior e um [COLOR_BUILDING_TEXT]Nobre[COLOR_REVERT].</Portuguese>
 		<French>Affûtez l'esprit de vos citoyens grâce à [COLOR_TECH_TEXT]Alexander von Humboldt[COLOR_REVERT]. Ce Père fondateur vous permet de construire [COLOR_BUILDING_TEXT]universités[COLOR_REVERT] et [COLOR_BUILDING_TEXT]lycées[COLOR_REVERT] extrêmement rapidement !</French>
 		<German>Schärfen Sie den Verstand Ihrer Einwohner mit [COLOR_TECH_TEXT]Alexander von Humboldt[COLOR_REVERT]. Mit diesem Gründervater an Ihrer Seite errichten Sie steig ihre [COLOR_BUILDING_TEXT]Ausbildungsrate[COLOR_REVERT] und sie bekommen einen [COLOR_BUILDING_TEXT]Edelmann[COLOR_REVERT].</German>
 		<Italian>Affina le menti della tua popolazione, grazie ad [COLOR_TECH_TEXT]Alexander von Humboldt[COLOR_REVERT]. Quando questo Padre Fondatore si schiererà con te, potrai costruire [COLOR_BUILDING_TEXT]università[COLOR_REVERT] e [COLOR_BUILDING_TEXT]college[COLOR_REVERT] più rapidamente che mai!</Italian>
@@ -202,7 +202,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_ALEXIS_DE_TOCQUEVILLE_STRATEGY</Tag>
 		<English>Prepare for an academic revolution when you convince [COLOR_TECH_TEXT]Comte de Tocqueville[COLOR_REVERT] to join your Continental Congress. This Founding Father will let you build educational buildings faster than ever. He will also bring a [COLOR_UNIT_TEXT]Nobleman[COLOR_REVERT] with him.</English>
-		<Portuguese>Prepare-se para uma revolução acadêmica ao convencer o [COLOR_TECH_TEXT]Comte de Tocqueville[COLOR_REVERT] a participar do seu Congresso Continental. Este Patrono permitirá que você construa edifícios educacionais mais rápido do que nunca. Ele também trará um [COLOR_UNIT_TEXT]Nobleman[COLOR_REVERT] com ele.</Portuguese>
+		<Portuguese>Prepare-se para uma revolução acadêmica ao convencer o [COLOR_TECH_TEXT]Comte de Tocqueville[COLOR_REVERT] a participar do seu Congresso Continental. Este Pai Fundador permitirá que você construa edifícios educacionais mais rápido do que nunca. Ele também trará um [COLOR_UNIT_TEXT]Nobleman[COLOR_REVERT] com ele.</Portuguese>
 		<French>Préparez-vous à une révolution académique en convaincant [COLOR_TECH_TEXT]Comte de Tocqueville[COLOR_REVERT] de rejoindre votre Congrès Continental. Ce Père Fondateur vous permettra de construire des bâtiments d'éducation plus rapidement que jamais. Il vous apportera également [COLOR_UNIT_TEXT]Noble célèbre[COLOR_REVERT] avec lui.</French>
 		<German>Bereiten Sie sich auf eine akademische Revolution vor, wenn Sie [COLOR_TECH_TEXT]Comte de Tocqueville[COLOR_REVERT] davon überzeugen, Ihrem Kontinentalkongress beizutreten. Dieser Gründervater sorgt dafür, dass Bildungseinrichtungen doppelt so schnell gebaut werden. Ausserdem bringt er einen [COLOR_UNIT_TEXT]Edelmann[COLOR_REVERT] mit.</German>
 	</TEXT>
@@ -252,7 +252,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_BARTOLOME_DE_LAS_CASAS_STRATEGY</Tag>
 		<English>Increase your conversion of Natives by adding [COLOR_TECH_TEXT]Bartolomé de Las Casas[COLOR_REVERT] to your colony as a Founding Father. When Bartolomé de Las Casas joins your colony, all your [COLOR_HIGHLIGHT_TEXT]Missions[COLOR_REVERT] will generate [COLOR_HIGHLIGHT_TEXT]Converted Natives[COLOR_REVERT] at a higher pace. With him an [COLOR_HIGHLIGHT_TEXT]Expert Missionary[COLOR_REVERT] will join your nation to found another mission.</English>
-		<Portuguese>Aumente sua conversão de nativos adicionando [COLOR_TECH_TEXT]Bartolomé de Las Casas[COLOR_REVERT] à sua colônia como Patrono. Quando Bartolomé de Las Casas se juntar à sua colônia, todas as suas [COLOR_HIGHLIGHT_TEXT]Missões[COLOR_REVERT] gerarão [COLOR_HIGHLIGHT_TEXT]Nativos Convertidos[COLOR_REVERT] em um ritmo mais rápido. Com ele, um [COLOR_HIGHLIGHT_TEXT]Missionário[COLOR_REVERT] se juntará à sua nação para fundar outra missão.</Portuguese>
+		<Portuguese>Aumente sua conversão de nativos adicionando [COLOR_TECH_TEXT]Bartolomé de Las Casas[COLOR_REVERT] à sua colônia como Pai Fundador. Quando Bartolomé de Las Casas se juntar à sua colônia, todas as suas [COLOR_HIGHLIGHT_TEXT]Missões[COLOR_REVERT] gerarão [COLOR_HIGHLIGHT_TEXT]Nativos Convertidos[COLOR_REVERT] em um ritmo mais rápido. Com ele, um [COLOR_HIGHLIGHT_TEXT]Missionário[COLOR_REVERT] se juntará à sua nação para fundar outra missão.</Portuguese>
 		<French>Augmentez votre conversion d'autochtones en ajoutant [COLOR_TECH_TEXT]Bartolomé de Las Casas[COLOR_REVERT] à votre colonie en tant que Père Fondateur. Lorsque Bartolomé de Las Casas rejoindra votre colonie, toutes vos [COLOR_HIGHLIGHT_TEXT]Missions[COLOR_REVERT] généreront des [COLOR_HIGHLIGHT_TEXT]Natifs convertis[COLOR_REVERT] à un rythme plus élevé. Avec lui, un [COLOR_HIGHLIGHT_TEXT]Expert missionnaire[COLOR_REVERT] rejoindra votre nation pour fonder une autre mission.</French>
 		<German>Die Konvertierung von Ureinwohnern nimmt durch den Beitritt von [COLOR_TECH_TEXT]Bartolomé de Las Casas[COLOR_REVERT] zu den Gründervätern der Nation stark zu. Wenn Bartolomé de Las Casas der Kolonialnation beitritt, erzeugen [COLOR_HIGHLIGHT_TEXT]Missionen[COLOR_REVERT] viel schneller [COLOR_HIGHLIGHT_TEXT]Konvertierte Ureinwohner[COLOR_REVERT]. Zusätzlich bringt er gleich einen [COLOR_HIGHLIGHT_TEXT]Erfahrenen Missionar[COLOR_REVERT] zur Gründung einer weiteren Mission mit.</German>
 	</TEXT>
@@ -300,7 +300,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_BENJAMIN_LINCOLN_STRATEGY</Tag>
 		<English>Strengthen your forces by adding [COLOR_TECH_TEXT]Benjamin Lincoln[COLOR_REVERT] to your colony as a Founding Father. When Lincoln joins your colony, all your colonial [COLOR_HIGHLIGHT_TEXT]Veterans[COLOR_REVERT] will be better trained and thus fight better.</English>
-		<Portuguese>Fortaleça suas forças adicionando [COLOR_TECH_TEXT]Benjamin Lincoln[COLOR_REVERT] à sua colônia como Patrono. Quando Lincoln se juntar à sua colônia, todos os seus [COLOR_HIGHLIGHT_TEXT]Veteranos[COLOR_REVERT] coloniais estarão melhor treinados e, portanto, lutarão melhor.</Portuguese>
+		<Portuguese>Fortaleça suas forças adicionando [COLOR_TECH_TEXT]Benjamin Lincoln[COLOR_REVERT] à sua colônia como Pai Fundador. Quando Lincoln se juntar à sua colônia, todos os seus [COLOR_HIGHLIGHT_TEXT]Veteranos[COLOR_REVERT] coloniais estarão melhor treinados e, portanto, lutarão melhor.</Portuguese>
 		<French>Renforcez vos armées en ajoutant [COLOR_TECH_TEXT]Benjamin Lincoln[COLOR_REVERT] à vos Pères Fondateurs. Avec Lincoln, totes les unités de [COLOR_HIGHLIGHT_TEXT]vétérans[COLOR_REVERT] seront mieux entraînées.</French>
 		<German>Die Fähigkeiten von General [COLOR_TECH_TEXT]Benjamin Lincoln[COLOR_REVERT] können unseren Truppen sehr zu Gute kommen. Mit Lincoln als Gründervater gewinnen alle [COLOR_HIGHLIGHT_TEXT]Offiziere[COLOR_REVERT] zusätzliche Kampfstärke, ausserdem bringt Lincoln gleich noch [COLOR_HIGHLIGHT_TEXT]1 Einheit Offiziere[COLOR_REVERT] mit.</German>
 	</TEXT>
@@ -348,7 +348,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_BENJAMIN_RUSH_STRATEGY</Tag>
 		<English>Improve health of your settlers and your troops by adding [COLOR_TECH_TEXT]Benjamin Rush[COLOR_REVERT] to your colony as a Founding Father. Your cities will grow faster and wounded troops will heal faster.</English>
-		<Portuguese>Melhore a saúde de seus colonos e tropas adicionando [COLOR_TECH_TEXT]Benjamin Rush[COLOR_REVERT] à sua colônia como Patrono. Suas cidades crescerão mais rápido e as tropas feridas serão curadas mais rapidamente.</Portuguese>
+		<Portuguese>Melhore a saúde de seus colonos e tropas adicionando [COLOR_TECH_TEXT]Benjamin Rush[COLOR_REVERT] à sua colônia como Pai Fundador. Suas cidades crescerão mais rápido e as tropas feridas serão curadas mais rapidamente.</Portuguese>
 		<French>Améliorer la santé de vos colons et de vos troupes en ajoutant [COLOR_TECH_TEXT]Benjamin Rush[COLOR_REVERT] à vos Pères Fondateurs. Avec Rush, vos villes grandiront plus vite et les troupes blessés guériront plus rapidement.</French>
 		<German>Milord, medizinische Versorgung ist nicht nur ein Gebot der Humanität, sondern auch ein Vorteil im Kriege! Als Gründervater würde [COLOR_TECH_TEXT]Benjamin Rush[COLOR_REVERT] dafür Sorge tragen, dass unsere [COLOR_HIGHLIGHT_TEXT]Infanteristen und Berittenen[COLOR_REVERT] künftig medizinische Versorgung und somit schnellere Heilung geniessen.</German>
 	</TEXT>
@@ -546,7 +546,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_CHARLES_CARROLL_STRATEGY</Tag>
 		<English>Increase [COLOR_HIGHLIGHT_TEXT]Emigration[COLOR_REVERT] by having [COLOR_TECH_TEXT]Charles Carroll[COLOR_REVERT] join your colony as a Founding Father. When Carroll is on your side, he will bring two bishops with him and lower the immigration threshold.</English>
-		<Portuguese>Aumente a [COLOR_HIGHLIGHT_TEXT]Emigração[COLOR_REVERT] fazendo com que [COLOR_TECH_TEXT]Charles Carroll[COLOR_REVERT] se junte à sua colônia como Patrono. Quando Carroll estiver do seu lado, ele trará dois bispos com ele e diminuirá o limite de imigração.</Portuguese>
+		<Portuguese>Aumente a [COLOR_HIGHLIGHT_TEXT]Emigração[COLOR_REVERT] fazendo com que [COLOR_TECH_TEXT]Charles Carroll[COLOR_REVERT] se junte à sua colônia como Pai Fundador. Quando Carroll estiver do seu lado, ele trará dois bispos com ele e diminuirá o limite de imigração.</Portuguese>
 		<French>Augmentez l'[COLOR_HIGHLIGHT_TEXT]émigration[COLOR_REVERT] dans vos colonies en ralliant [COLOR_TECH_TEXT]Charles Carroll[COLOR_REVERT] à vos Pères Fondateurs. Avec Caroll, deux évêques vous seront octroyés et le seuil d'immigration en Europe sera baissé.</French>
 		<German>Möchtet Ihr die [COLOR_HIGHLIGHT_TEXT]Auswanderung[COLOR_REVERT] in unsere Kolonien forcieren, Milord? Dann ist [COLOR_TECH_TEXT]Charles Carroll[COLOR_REVERT] der richtige Mann! Carrolls Beitritt zum Kontinentalkongress bewirkt eine dauerhafte Senkung der in Europa für Auswanderer benötigten Kreuze. Zudem erhaltet Ihr [COLOR_HIGHLIGHT_TEXT]2 Bischöfe[COLOR_REVERT], um in Euren Gotteshäusern noch wirkungsvoller zu predigen.</German>
 	</TEXT>
@@ -596,7 +596,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_CHIEF_POWHATAN_STRATEGY</Tag>
 		<English>Create an unexpected army with [COLOR_TECH_TEXT]Chief Powhatan[COLOR_REVERT] at your side. This Founding Father will grant a combat bonus to all your [COLOR_UNIT_TEXT]Converted Natives[COLOR_REVERT], making them effective warriors that cost nothing to produce!</English>
-		<Portuguese>Crie um exército inesperado com o [COLOR_TECH_TEXT]Chief Powhatan[COLOR_REVERT] ao seu lado. Este Patrono concederá um bônus de combate a todos os seus [COLOR_UNIT_TEXT]Nativos Convertidos[COLOR_REVERT], tornando-os guerreiros eficazes cuja produção não custa nada!</Portuguese>
+		<Portuguese>Crie um exército inesperado com o [COLOR_TECH_TEXT]Chief Powhatan[COLOR_REVERT] ao seu lado. Este Pai Fundador concederá um bônus de combate a todos os seus [COLOR_UNIT_TEXT]Nativos Convertidos[COLOR_REVERT], tornando-os guerreiros eficazes cuja produção não custa nada!</Portuguese>
 		<French>Levez une armée imprévisible en acceptant les services du [COLOR_TECH_TEXT]chef Powhatan[COLOR_REVERT]. Ce Père fondateur accordera un bonus à tous vos [COLOR_UNIT_TEXT]indigènes convertis[COLOR_REVERT], métamorphosant ces unités bon marché en de redoutables combattants !</French>
 		<German>Mit [COLOR_TECH_TEXT]Häuptling Powhatan[COLOR_REVERT] auf Ihrer Seite können Sie eine unerwartete Armee erstellen. Dieser Gründervater gewährt all Ihren [COLOR_UNIT_TEXT]Konvertierten Ureinwohnern[COLOR_REVERT] einen Kampfbonus, der aus ihnen tüchtige Krieger macht - ganz ohne Produktionskosten!</German>
 		<Italian>Crea un esercito inaspettato, con [COLOR_TECH_TEXT]Capo Powhatan[COLOR_REVERT] al tuo fianco. Questo Padre Fondatore darà un bonus di combattimento a tutti i tuoi [COLOR_UNIT_TEXT]nativi convertiti[COLOR_REVERT], rendendoli guerrieri efficaci la cui produzione non costa nulla!</Italian>
@@ -646,7 +646,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_COMTE_DE_VERGENNES_STRATEGY</Tag>
 		<English>Add a boost to your Liberty bells production by adopting [COLOR_TECH_TEXT]Comte de Vergennes[COLOR_REVERT] as a Founding Father. A [COLOR_HIGHLIGHT_TEXT]Nobleman[COLOR_REVERT] will join you alongside with him.</English>
-		<Portuguese>Dê um impulso à sua produção de sinos da Liberdade adotando [COLOR_TECH_TEXT]Comte de Vergennes[COLOR_REVERT] como Patrono. Um [COLOR_HIGHLIGHT_TEXT]nobre[COLOR_REVERT] se juntará a você junto com ele.</Portuguese>
+		<Portuguese>Dê um impulso à sua produção de sinos da Liberdade adotando [COLOR_TECH_TEXT]Comte de Vergennes[COLOR_REVERT] como Pai Fundador. Um [COLOR_HIGHLIGHT_TEXT]nobre[COLOR_REVERT] se juntará a você junto com ele.</Portuguese>
 		<French>Accélérer votre production de cloches de la liberté en ajoutant [COLOR_TECH_TEXT]Comte de Vergennes[COLOR_REVERT] à vos Pères Fondateurs. Un [COLOR_HIGHLIGHT_TEXT]noble célèbre[COLOR_REVERT] rejoindra alors vos colonies.</French>
 		<German>Wollt Ihr unsere Kultur und unseren Einflußbereich erhöhen, Milord? Dann sollten wir [COLOR_TECH_TEXT]Comte de Vergennes[COLOR_REVERT] als Gründervater gewinnen. Dieser vermittelt uns ebenfalls sogleich einen [COLOR_HIGHLIGHT_TEXT]Edelmann[COLOR_REVERT] zum Dienst in unseren Kolonien.</German>
 	</TEXT>
@@ -748,7 +748,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_DEIGO_VELAZQUEZ_DE_CUELLAR_STRATEGY</Tag>
 		<English>Bolster your colony's numbers by adopting [COLOR_TECH_TEXT]Diego Velázquez de Cuéllar[COLOR_REVERT]. When this Founding Father joins your side, you will immediately receive three free [COLOR_UNIT_TEXT]Indentured Servants[COLOR_REVERT] in your capital!</English>
-		<Portuguese>Aumente os números da sua colônia adotando [COLOR_TECH_TEXT]Diego Velázquez de Cuéllar[COLOR_REVERT]. Quando este Patrono se juntar ao seu lado, você receberá imediatamente três [COLOR_UNIT_TEXT]Servos Contratados[COLOR_REVERT] grátis em sua capital!</Portuguese>
+		<Portuguese>Aumente os números da sua colônia adotando [COLOR_TECH_TEXT]Diego Velázquez de Cuéllar[COLOR_REVERT]. Quando este Pai Fundador se juntar ao seu lado, você receberá imediatamente três [COLOR_UNIT_TEXT]Servos Contratados[COLOR_REVERT] grátis em sua capital!</Portuguese>
 		<French>Stimuler votre croissance démographique en adoptant [COLOR_TECH_TEXT]Diego Velázquez de Cuéllar[COLOR_REVERT]. Lorsque ce Père fondateur rejoint votre colonie, 3 [COLOR_UNIT_TEXT]engagés[COLOR_REVERT] apparaissent immédiatement dans votre capitale !</French>
 		<German>Erhöhen Sie die Einwohnerzahl Ihrer Kolonie, indem Sie [COLOR_TECH_TEXT]Diego Velázquez de Cuéllar[COLOR_REVERT] zu sich einladen! Wenn dieser Gründervater sich Ihnen anschließt, erhalten Sie in Ihrer Hauptstadt sofort kostenlos drei [COLOR_UNIT_TEXT]Schuldknechte[COLOR_REVERT]!</German>
 		<Italian>Aumenta la popolazione della tua colonia, adottando [COLOR_TECH_TEXT]Diego Velázquez de Cuéllar[COLOR_REVERT]. Quando questo Padre Fondatore si unirà alla tua causa, otterrai immediatamente tre [COLOR_UNIT_TEXT]servi per contratto[COLOR_REVERT] gratuiti, nella tua capitale!</Italian>
@@ -848,7 +848,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_DOM_PEDRO_I_STRATEGY</Tag>
 		<English>Make your forces even more fearsome than ever by convincing [COLOR_TECH_TEXT]Dom Pedro I[COLOR_REVERT] to join your side. This Founding Father provides all your mounted and gunpowder units with combat bonuses when fighting inside or outside settlements and increases the chances of [COLOR_UNIT_TEXT]Great Generals[COLOR_REVERT] appearing within your ranks!</English>
-		<Portuguese>Torne suas forças ainda mais temíveis do que nunca convencendo [COLOR_TECH_TEXT]Dom Pedro I[COLOR_REVERT] a se juntar ao seu lado. Este Patrono fornece bônus de combate a todas as suas unidades montadas e de pólvora ao lutar dentro ou fora das colônias e aumenta as chances de [COLOR_UNIT_TEXT]Grandes Generais[COLOR_REVERT] aparecerem em suas fileiras!</Portuguese>
+		<Portuguese>Torne suas forças ainda mais temíveis do que nunca convencendo [COLOR_TECH_TEXT]Dom Pedro I[COLOR_REVERT] a se juntar ao seu lado. Este Pai Fundador fornece bônus de combate a todas as suas unidades montadas e de pólvora ao lutar dentro ou fora das colônias e aumenta as chances de [COLOR_UNIT_TEXT]Grandes Generais[COLOR_REVERT] aparecerem em suas fileiras!</Portuguese>
 		<French>Rendez vos troupes plus redoutables que jamais en convainquant [COLOR_TECH_TEXT]Dom Pedro I[COLOR_REVERT] de vous rejoindre. Ce Père fondateur confère des bonus en combat à toutes vos unités montées et vos unités équipées d'armes à feu, qu'elles combattent à l'intérieur ou à l'extérieur des colonies. De plus, il augmente les chances d'apparition d'un [COLOR_UNIT_TEXT]général illustre[COLOR_REVERT] dans vos rangs !</French>
 		<German>Stärken Sie Ihre Streitkräfte, indem Sie [COLOR_TECH_TEXT]Dom Pedro I.[COLOR_REVERT] bitten, Ihre Partei zu ergreifen. Dieser Gründervater sichert all Ihren berittenen und Schießpulver-Einheiten einen Kampfbonus bei Kämpfen inner- und außerhalb Ihrer Siedlungen und erhöht die Wahrscheinlichkeit, dass sich unter Ihren Truppen ein [COLOR_UNIT_TEXT]Großer General[COLOR_REVERT] befindet, um 50%!</German>
 		<Italian>Rendi le tue forze più temibili che mai, convincendo [COLOR_TECH_TEXT]Dom Pedro I[COLOR_REVERT] a schierarsi dalla tua parte. Questo Padre Fondatore dà un bonus a tutte le unità montate e quelle con armi da fuoco, quando combattono all'interno o all'esterno di un insediamento, e aumenta le probabilità che appaia un [COLOR_UNIT_TEXT]Grande Generale[COLOR_REVERT]!</Italian>
@@ -900,7 +900,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_ELI_WHITNEY_STRATEGY</Tag>
 		<English>Bring home a bounty of the fluffy stuff by adding [COLOR_TECH_TEXT]Eli Whitney[COLOR_REVERT] to your colony as a Founding Father. With Eli Whitney on your side, [COLOR_HIGHLIGHT_TEXT]Cotton[COLOR_REVERT] production in all your colonies will be significantly increased!</English>
-		<Portuguese>Leve para casa uma abundância de coisas fofas adicionando [COLOR_TECH_TEXT]Eli Whitney[COLOR_REVERT] à sua colônia como Patrono. Com Eli Whitney ao seu lado, a produção de [COLOR_HIGHLIGHT_TEXT]Algodão[COLOR_REVERT] em todas as suas colônias aumentará significativamente!</Portuguese>
+		<Portuguese>Leve para casa uma abundância de coisas fofas adicionando [COLOR_TECH_TEXT]Eli Whitney[COLOR_REVERT] à sua colônia como Pai Fundador. Com Eli Whitney ao seu lado, a produção de [COLOR_HIGHLIGHT_TEXT]Algodão[COLOR_REVERT] em todas as suas colônias aumentará significativamente!</Portuguese>
 		<French>Passez maître dans l'art du tri du coton en accueillant le Père fondateur [COLOR_TECH_TEXT]Eli Whitney[COLOR_REVERT] au sein de votre colonie. Avec lui, la production de [COLOR_HIGHLIGHT_TEXT]coton[COLOR_REVERT] de toutes vos colonies augmentera considérablement !</French>
 		<German>Decken Sie sich mit watteweichen Fasern ein, indem Sie Ihrer Kolonie [COLOR_TECH_TEXT]Eli Whitney[COLOR_REVERT] als Gründervater hinzufügen. Wenn Eli Whitney auf Ihrer Seite ist, wird die Produktion von [COLOR_HIGHLIGHT_TEXT]Baumwolle[COLOR_REVERT] in all Ihren Kolonien deutlich gesteigert!</German>
 		<Italian>Aumenta il tuo raccolto di cotone aggiungendo [COLOR_TECH_TEXT]Eli Whitney[COLOR_REVERT] alla tua colonia come Padre Fondatore. Con Eli Whitney al tuo fianco, la produzione di [COLOR_HIGHLIGHT_TEXT]cotone[COLOR_REVERT] aumenterà di molto in tutte le tue colonie!</Italian>
@@ -952,7 +952,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_ETHAN_ALLEN_STRATEGY</Tag>
 		<English>Take to the woods and hills with [COLOR_TECH_TEXT]Ethan Allen[COLOR_REVERT] at your side. This Founding Father will give a bonus to any of your gunpowder units that find themselves fighting in Forests, Light Forests, or Hills.</English>
-		<Portuguese>Vá para florestas e colinas com [COLOR_TECH_TEXT]Ethan Allen[COLOR_REVERT] ao seu lado. Este Patrono dará um bônus a qualquer uma de suas unidades de pólvora que estiver lutando em Florestas, Florestas Claras ou Colinas.</Portuguese>
+		<Portuguese>Vá para florestas e colinas com [COLOR_TECH_TEXT]Ethan Allen[COLOR_REVERT] ao seu lado. Este Pai Fundador dará um bônus a qualquer uma de suas unidades de pólvora que estiver lutando em Florestas, Florestas Claras ou Colinas.</Portuguese>
 		<French>Dominez forêts et collines grâce à [COLOR_TECH_TEXT]Ethan Allen[COLOR_REVERT]. Ce Père fondateur accordera un bonus à toutes vos unités utilisant la poudre à canon et se trouvant dans des forêts, des forêts clairsemées, ou des collines.</French>
 		<German>Erobern Sie Wald und Hügel mit [COLOR_TECH_TEXT]Ethan Allen[COLOR_REVERT]. Dieser Gründervater gewährt jeder Ihrer Schießpulver-Einheiten, die in Wäldern, Lichten Wäldern oder im Hügelland kämpft, einen Bonus.</German>
 		<Italian>Spingiti tra i boschi e sulle colline, con [COLOR_TECH_TEXT]Ethan Allen[COLOR_REVERT] al tuo fianco. Questo Padre Fondatore darà un bonus a qualsiasi unità con armi da fuoco che si troverà a combattere nella foresta, nella foresta rada o sulle colline.</Italian>
@@ -1002,7 +1002,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_FERDINAND_MAGELLAN_STRATEGY</Tag>
 		<English>Improve your fleet by adding [COLOR_TECH_TEXT]Fernão de Magalhães[COLOR_REVERT] to your colony as a Founding Father. When Magellan joins your colony, all your colonial [COLOR_HIGHLIGHT_TEXT]Ships[COLOR_REVERT] will move faster and have increased line of sight.</English>
-		<Portuguese>Melhore sua frota adicionando [COLOR_TECH_TEXT]Fernão de Magalhães[COLOR_REVERT] à sua colônia como Patrono. Quando Magalhães se juntar à sua colônia, todos os seus [COLOR_HIGHLIGHT_TEXT]navios[COLOR_REVERT] coloniais se moverão mais rápido e terão maior linha de visão.</Portuguese>
+		<Portuguese>Melhore sua frota adicionando [COLOR_TECH_TEXT]Fernão de Magalhães[COLOR_REVERT] à sua colônia como Pai Fundador. Quando Magalhães se juntar à sua colônia, todos os seus [COLOR_HIGHLIGHT_TEXT]navios[COLOR_REVERT] coloniais se moverão mais rápido e terão maior linha de visão.</Portuguese>
 		<French>Améliorez votre flotte en ajoutant [COLOR_TECH_TEXT]Fernão de Magalhães[COLOR_REVERT] parmi vos Pères Fondateurs. Avec Magellan à vos côtés, tous vos [COLOR_HIGHLIGHT_TEXT]navires[COLOR_REVERT] coloniaux navigueront plus rapidement et bénéficieront également d'une plus grande visibilité.</French>
 		<German>Milord, Eure gesamte Flotte könnte von den Fähigkeiten des [COLOR_TECH_TEXT]Fernão de Magalhães[COLOR_REVERT] profitieren. Mit diesem Gründervater in unseren Reihen werden all unsere [COLOR_HIGHLIGHT_TEXT]Schiffe[COLOR_REVERT] automatisch über die Beförderung "Navigation" verfügen.</German>
 	</TEXT>
@@ -1052,7 +1052,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_FRANCISCO_DE_CORONADO_STRATEGY</Tag>
 		<English>Your foes will never know what hit them with [COLOR_TECH_TEXT]Francisco Vázquez de Coronado[COLOR_REVERT] by your side. If you adopt Coronado as a Founding Father, all your [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT] units will receive a bonus to movement, making them the fastest land units in the game!</English>
-		<Portuguese>Seus inimigos nunca saberão o que os atingiu com [COLOR_TECH_TEXT]Francisco Vázquez de Coronado[COLOR_REVERT] ao seu lado. Se você adotar Coronado como Patrono, todas as suas unidades [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT] receberão um bônus de movimento, tornando-as as unidades terrestres mais rápidas do jogo!</Portuguese>
+		<Portuguese>Seus inimigos nunca saberão o que os atingiu com [COLOR_TECH_TEXT]Francisco Vázquez de Coronado[COLOR_REVERT] ao seu lado. Se você adotar Coronado como Pai Fundador, todas as suas unidades [COLOR_UNIT_TEXT]Dragoon[COLOR_REVERT] receberão um bônus de movimento, tornando-as as unidades terrestres mais rápidas do jogo!</Portuguese>
 		<French>Avec [COLOR_TECH_TEXT]Francisco Vázquez de Coronado[COLOR_REVERT], vos ennemis vont être pris de vitesse. Ce Père fondateur accorde à tous vos [COLOR_UNIT_TEXT]dragons[COLOR_REVERT] un bonus de déplacement, faisant d'eux les unités terrestres les plus rapides du jeu !</French>
 		<German>Wenn [COLOR_TECH_TEXT]Francisco Vázquez de Coronado[COLOR_REVERT] auf Ihrer Seite steht, gibt es ein böses Erwachen für Ihre Feinde. Wenn Sie Coronado als Gründervater einsetzen, erhalten all Ihre [COLOR_UNIT_TEXT]Dragoner[COLOR_REVERT]-Einheiten einen Fortbewegungsbonus und werden zu den schnellsten Landeinheiten im Spiel!</German>
 		<Italian>I tuoi nemici non sapranno mai cosa li ha colpiti, se accetti [COLOR_TECH_TEXT]Francisco Vázquez de Coronado[COLOR_REVERT] al tuo fianco. Se adotti de Coronado come Padre Fondatore, tutte le tue unità di [COLOR_UNIT_TEXT]dragoni[COLOR_REVERT] otterranno un bonus di movimento che le renderà le unità più veloci del gioco!</Italian>
@@ -1102,7 +1102,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_FRANCISCO_DE_ORELLANA_STRATEGY</Tag>
 		<English>Add a boost to your work force by adopting [COLOR_TECH_TEXT]Francisco de Orellana[COLOR_REVERT] as a Founding Father. [COLOR_HIGHLIGHT_TEXT]4 Native Slaves[COLOR_REVERT] will come alongside with him.</English>
-		<Portuguese>Dê um impulso à sua força de trabalho adotando [COLOR_TECH_TEXT]Francisco de Orellana[COLOR_REVERT] como Patrono. [COLOR_HIGHLIGHT_TEXT]4 Native Slaves[COLOR_REVERT] virão junto com ele.</Portuguese>
+		<Portuguese>Dê um impulso à sua força de trabalho adotando [COLOR_TECH_TEXT]Francisco de Orellana[COLOR_REVERT] como Pai Fundador. [COLOR_HIGHLIGHT_TEXT]4 Native Slaves[COLOR_REVERT] virão junto com ele.</Portuguese>
 		<French>Stimulez votre main d'oeuvre en ajoutant [COLOR_TECH_TEXT]Francisco de Orellana[COLOR_REVERT] à vos Pères Fondateurs. [COLOR_HIGHLIGHT_TEXT]4 esclaves indigènes[COLOR_REVERT] rejoindront alors vos colonies.</French>
 		<German>Seid Ihr verwegen genug, die Arbeitskraft der Ureinwohner ohne falsche Gefühlsduselei auszunutzen? Dann lasst uns [COLOR_TECH_TEXT]Francisco de Orellana[COLOR_REVERT] in unseren Reihen willkommen heissen. Dessen Leibeigene, [COLOR_HIGHLIGHT_TEXT]4 versklavte Ureinwohner[COLOR_REVERT], stehen sodann zu Eurer Verfügung.</German>
 	</TEXT>
@@ -1152,7 +1152,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_FRANCISCO_PIZARRO_STRATEGY</Tag>
 		<English>Claim the wealth of the New World as your own with [COLOR_TECH_TEXT]Francisco Pizarro[COLOR_REVERT] by your side. With Pizarro as a Founding Father, all your Gunpowder units will receive extra gold when pillaging enemy settlements.</English>
-		<Portuguese>Reivindique a riqueza do Novo Mundo com [COLOR_TECH_TEXT]Francisco Pizarro[COLOR_REVERT] ao seu lado. Com Pizarro como Patrono, todas as suas unidades de Pólvora receberão ouro extra ao saquear colônias inimigos.</Portuguese>
+		<Portuguese>Reivindique a riqueza do Novo Mundo com [COLOR_TECH_TEXT]Francisco Pizarro[COLOR_REVERT] ao seu lado. Com Pizarro como Pai Fundador, todas as suas unidades de Pólvora receberão ouro extra ao saquear colônias inimigos.</Portuguese>
 		<French>Appropriez-vous les richesses du Nouveau monde en accueillant le Père fondateur [COLOR_TECH_TEXT]Francisco Pizarro[COLOR_REVERT] au sein de votre colonie. Grâce à Pizzaro, vos unités utilisant la poudre à canon amasseront davantage d'or lorsqu'elles pilleront les colonies ennemies.</French>
 		<German>[COLOR_TECH_TEXT]Francisco Pizarro[COLOR_REVERT] hilft Ihnen, sich die Reichtümer der Neuen Welt anzueignen. Mit Pizarro als Gründervater erhalten Ihre sämtlichen Schießpulver-Einheiten zusätzliches Gold, wenn sie feindliche Siedlungen plündern.</German>
 		<Italian>Rivendica le ricchezze del Nuovo Mondo, con [COLOR_TECH_TEXT]Francisco Pizarro[COLOR_REVERT] al tuo fianco. Con Pizarro come Padre Fondatore tutte le tue unità con armi da fuoco otterranno oro extra, quando saccheggeranno gli insediamenti nemici.</Italian>
@@ -1250,7 +1250,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_FRIEDRICH_WILHELM_VON_STEUBEN_STRATEGY</Tag>
 		<English>Strengthen your forces by adding [COLOR_TECH_TEXT]Friedrich Wilhelm von Steuben[COLOR_REVERT] to your colony as a Founding Father. When von Steuben joins your colony, all your colonial [COLOR_HIGHLIGHT_TEXT]Hessian Mercenaries[COLOR_REVERT] will be motivated to fight better.</English>
-		<Portuguese>Fortaleça suas forças adicionando [COLOR_TECH_TEXT]Friedrich Wilhelm von Steuben[COLOR_REVERT] à sua colônia como Patrono. Quando von Steuben se juntar à sua colônia, todos os seus [COLOR_HIGHLIGHT_TEXT]Mercenários Hessianos[COLOR_REVERT] coloniais ficarão motivados para lutar melhor.</Portuguese>
+		<Portuguese>Fortaleça suas forças adicionando [COLOR_TECH_TEXT]Friedrich Wilhelm von Steuben[COLOR_REVERT] à sua colônia como Pai Fundador. Quando von Steuben se juntar à sua colônia, todos os seus [COLOR_HIGHLIGHT_TEXT]Mercenários Hessianos[COLOR_REVERT] coloniais ficarão motivados para lutar melhor.</Portuguese>
 		<French>Renforcez votre puissance militaire en ajoutant [COLOR_TECH_TEXT]Friedrich Wilhelm von Steuben[COLOR_REVERT] à vos Pères Fondateurs. Avec von Steuben, toutes vos unités de [COLOR_HIGHLIGHT_TEXT]Hessiens[COLOR_REVERT] seront plus motivés et combattront ainsi plus efficacement.</French>
 		<German>Unsere Streitkräfte könnten von General [COLOR_TECH_TEXT]Friedrich Wilhelm von Steuben[COLOR_REVERT] enorm profitieren! Wenn wir diesen energischen Offizier im Kontinentalkongress aufnehmen, verbessert sich nicht nur die Kampfstärke aller [COLOR_HIGHLIGHT_TEXT]Hessischen Söldner[COLOR_REVERT], sondern es werden auch gleich [COLOR_HIGHLIGHT_TEXT]2 Einheiten[COLOR_REVERT] dieses Typs gratis rekrutiert.</German>
 	</TEXT>
@@ -1298,7 +1298,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_GABRIEL_DE_CLIEU_STRATEGY</Tag>
 		<English>Increase the production of [COLOR_HIGHLIGHT_TEXT]Coffeeberries[COLOR_REVERT] on your plantations dramatically by adding [COLOR_TECH_TEXT]Sieur de Clieu[COLOR_REVERT] to your colony as a Founding Father.</English>
-		<Portuguese>Aumente drasticamente a produção de [COLOR_HIGHLIGHT_TEXT]Coffeeberries[COLOR_REVERT] em suas plantações adicionando [COLOR_TECH_TEXT]Sieur de Clieu[COLOR_REVERT] à sua colônia como Patrono.</Portuguese>
+		<Portuguese>Aumente drasticamente a produção de [COLOR_HIGHLIGHT_TEXT]Coffeeberries[COLOR_REVERT] em suas plantações adicionando [COLOR_TECH_TEXT]Sieur de Clieu[COLOR_REVERT] à sua colônia como Pai Fundador.</Portuguese>
 		<French>Augmentez drastiquement la production de [COLOR_HIGHLIGHT_TEXT]grains de café[COLOR_REVERT] dans vos plantations en ralliant [COLOR_TECH_TEXT]Sieur de Clieu[COLOR_REVERT] à vos Pères Fondateurs.</French>
 		<German>[COLOR_TECH_TEXT]Sieur de Clieu[COLOR_REVERT] ebnet Euch den Weg zum führenden Kaffee-Produzenten der Neuen Welt! Mit Sieur de Clieu an Eurer Seite wird die Produktion von [COLOR_HIGHLIGHT_TEXT]Kaffeebeeren[COLOR_REVERT] in Euren Kolonien deutlich gesteigert, zudem erhaltet Ihr [COLOR_HIGHLIGHT_TEXT]1 Kaffepflanzer[COLOR_REVERT] sowie [COLOR_HIGHLIGHT_TEXT]1 Fermentierer[COLOR_REVERT].</German>
 	</TEXT>
@@ -1348,7 +1348,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_GABRIEL_LALLEMANT_STRATEGY</Tag>
 		<English>Bolster your religious might with [COLOR_TECH_TEXT]Gabriel Lalemant[COLOR_REVERT] at your side as a Founding Father. If he joins your colony, you will be able to construct [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] in any of your settlements in half the usual time! The cost of purchasing land from the natives will also be reduced!</English>
-		<Portuguese>Reforce seu poder religioso com [COLOR_TECH_TEXT]Gabriel Lalemant[COLOR_REVERT] ao seu lado como Patrono. Se ele se juntar à sua colônia, você poderá construir [COLOR_BUILDING_TEXT]Igrejas[COLOR_REVERT] em qualquer um dos suas colônias na metade do tempo normal! O custo de aquisição de terras dos nativos também será reduzido!</Portuguese>
+		<Portuguese>Reforce seu poder religioso com [COLOR_TECH_TEXT]Gabriel Lalemant[COLOR_REVERT] ao seu lado como Pai Fundador. Se ele se juntar à sua colônia, você poderá construir [COLOR_BUILDING_TEXT]Igrejas[COLOR_REVERT] em qualquer um dos suas colônias na metade do tempo normal! O custo de aquisição de terras dos nativos também será reduzido!</Portuguese>
 		<French>Exaltez la foi de vos colons grâce à [COLOR_TECH_TEXT]Gabriel Lalemant[COLOR_REVERT]. Ce Père fondateur vous permet de construire des [COLOR_BUILDING_TEXT]églises[COLOR_REVERT] dans vos colonies deux fois plus rapidement ! De plus, le prix des terres indigènes sera réduit !</French>
 		<German>Ihre geistliche Macht nimmt zu, wenn Ihnen [COLOR_TECH_TEXT]Gabriel Lalemant[COLOR_REVERT] als Gründervater zur Seite steht. Wenn er Ihrer Kolonie beitritt, können Sie in all Ihren Siedlungen [COLOR_BUILDING_TEXT]Kirchen[COLOR_REVERT] in der Hälfte der üblichen Zeit erstellen! Auch die Kosten beim Landerwerb von den Ureinwohnern werden reduziert.</German>
 		<Italian>Rinforza il tuo potere religioso con [COLOR_TECH_TEXT]Gabriel Lalemant[COLOR_REVERT] al tuo fianco, come Padre Fondatore. Se si unirà alla tua colonia potrai costruire [COLOR_BUILDING_TEXT]chiese[COLOR_REVERT] in ogni insediamento nella metà del tempo! Inoltre sarà ridotto anche il costo per l'acquisto della terra dai nativi!</Italian>
@@ -1398,7 +1398,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_GEORGE_FOX_STRATEGY</Tag>
 		<English>Add a boost to your production of Crosses by adopting [COLOR_TECH_TEXT]George Fox[COLOR_REVERT] as a Founding Father. [COLOR_HIGHLIGHT_TEXT]Markets[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Taverns[COLOR_REVERT] will produce Crosses as well.</English>
-		<Portuguese>Dê um impulso à sua produção de Cruzes adotando [COLOR_TECH_TEXT]George Fox[COLOR_REVERT] como Patrono. [COLOR_HIGHLIGHT_TEXT]Mercados[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]Tavernas[COLOR_REVERT] também produzirão Cruzes.</Portuguese>
+		<Portuguese>Dê um impulso à sua produção de Cruzes adotando [COLOR_TECH_TEXT]George Fox[COLOR_REVERT] como Pai Fundador. [COLOR_HIGHLIGHT_TEXT]Mercados[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]Tavernas[COLOR_REVERT] também produzirão Cruzes.</Portuguese>
 		<French>Augmentez votre production de croix en ralliant [COLOR_TECH_TEXT]George Fox[COLOR_REVERT] à vos Pères Fondateurs. Grâce à Fox, vos [COLOR_HIGHLIGHT_TEXT]marchés[COLOR_REVERT] et [COLOR_HIGHLIGHT_TEXT]tavernes[COLOR_REVERT] produiront un bonus de croix.</French>
 		<German>Die Auswanderung von Europa in Eure Kolonien könnte durch [COLOR_TECH_TEXT]George Fox[COLOR_REVERT] nachhaltig gefördert werden. Mit Fox als Gründervater werden Gratis-Kreuze in [COLOR_HIGHLIGHT_TEXT]Marktgebäuden[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Tavernen[COLOR_REVERT] erzeugt, zusätzlich erhalten wir [COLOR_HIGHLIGHT_TEXT]1 Priester[COLOR_REVERT] sowie [COLOR_HIGHLIGHT_TEXT]2 freie Kolonisten[COLOR_REVERT].</German>
 	</TEXT>
@@ -1448,7 +1448,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_GIOVANNI_DA_VERRAZANO_STRATEGY</Tag>
 		<English>Explore the seas like never before with [COLOR_TECH_TEXT]Giovanni da Verrazzano[COLOR_REVERT] at your side. This Founding Father provides you with a free [COLOR_UNIT_TEXT]Caravel[COLOR_REVERT]!</English>
-		<Portuguese>Explore os mares como nunca antes com [COLOR_TECH_TEXT]Giovanni da Verrazzano[COLOR_REVERT] ao seu lado. Este Patrono oferece uma [COLOR_UNIT_TEXT]Caravela[COLOR_REVERT] grátis!</Portuguese>
+		<Portuguese>Explore os mares como nunca antes com [COLOR_TECH_TEXT]Giovanni da Verrazzano[COLOR_REVERT] ao seu lado. Este Pai Fundador oferece uma [COLOR_UNIT_TEXT]Caravela[COLOR_REVERT] grátis!</Portuguese>
 		<French>Explorez les mers et les océans avec une vivacité nouvelle grâce à [COLOR_TECH_TEXT]Jean de Verrazane[COLOR_REVERT]. Ce Père fondateur vous octroie une [COLOR_UNIT_TEXT]caravelle[COLOR_REVERT] gratuite !</French>
 		<German>Mit [COLOR_TECH_TEXT]Giovanni da Verrazzano[COLOR_REVERT] erforschen Sie die See wie nie zuvor. Dieser Gründervater stellt Ihnen umsonst eine [COLOR_UNIT_TEXT]Karavellen[COLOR_REVERT]einheit zur Verfügung.</German>
 		<Italian>Esplora i mari come non hai mai fatto prima, grazie a [COLOR_TECH_TEXT]Giovanni da Verrazzano[COLOR_REVERT] al tuo fianco. Questo Padre Fondatore ti procurerà una [COLOR_UNIT_TEXT]caravella[COLOR_REVERT] gratuita!</Italian>
@@ -1500,7 +1500,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_GONZALO_JIMENEZ_DE_QUESADA_STRATEGY</Tag>
 		<English>Dig for the wealth below the surface of the New World by adding [COLOR_TECH_TEXT]Gonzalo Jiménez de Quesada[COLOR_REVERT] to your colony as a Founding Father. When Quesada joins your colony, two [COLOR_HIGHLIGHT_TEXT]Expert Prospectors[COLOR_REVERT] and a [COLOR_HIGHLIGHT_TEXT]Hardy Pioneer[COLOR_REVERT] will join you.</English>
-		<Portuguese>Cave em busca da riqueza abaixo da superfície do Novo Mundo adicionando [COLOR_TECH_TEXT]Gonzalo Jiménez de Quesada[COLOR_REVERT] à sua colônia como Patrono. Quando Quesada se juntar à sua colônia, dois [COLOR_HIGHLIGHT_TEXT]Expert Prospectors[COLOR_REVERT] e um [COLOR_HIGHLIGHT_TEXT]Hardy Pioneer[COLOR_REVERT] se juntarão a você.</Portuguese>
+		<Portuguese>Cave em busca da riqueza abaixo da superfície do Novo Mundo adicionando [COLOR_TECH_TEXT]Gonzalo Jiménez de Quesada[COLOR_REVERT] à sua colônia como Pai Fundador. Quando Quesada se juntar à sua colônia, dois [COLOR_HIGHLIGHT_TEXT]Expert Prospectors[COLOR_REVERT] e um [COLOR_HIGHLIGHT_TEXT]Hardy Pioneer[COLOR_REVERT] se juntarão a você.</Portuguese>
 		<French>Localiser les richesses éparpillées aux quatre coins du Nouveau monde en accueillant [COLOR_TECH_TEXT]Gonzalo Jiménez de Quesada[COLOR_REVERT] au sein de votre colonie. Grâce à ce Père fondateur, deux [COLOR_HIGHLIGHT_TEXT]Experts Prospecteurs[COLOR_REVERT] et un [COLOR_HIGHLIGHT_TEXT]Pionnier intrépide[COLOR_REVERT] vous rejoindront.</French>
 		<German>Entlockt der Erde dieser Neuen Welt ihre unterirdischen Schätze, indem Ihr [COLOR_TECH_TEXT]Gonzalo Jiménez de Quesada[COLOR_REVERT] als Gründervater in Euren Kolonien aufnehmt. Wenn Quesada dem Kontintentalkongress beitritt, bringt er [COLOR_HIGHLIGHT_TEXT]2 erfahrene Schürfer[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]1 kühnen Pionier[COLOR_REVERT] mit.</German>
 	</TEXT>
@@ -1550,7 +1550,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_GREGORIO_DE_MATTOS_E_GUERRA_STRATEGY</Tag>
 		<English>Add a ring of liberty to your sermons by adopting [COLOR_TECH_TEXT]Gregório de Matos[COLOR_REVERT] as a Founding Father. With Matos e Guerra on your side, all your [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Cathedrals[COLOR_REVERT] will produce [COLOR_HIGHLIGHT_TEXT]Liberty Bells[COLOR_REVERT]!</English>
-		<Portuguese>Adicione um toque de liberdade aos seus sermões adotando [COLOR_TECH_TEXT]Gregório de Matos[COLOR_REVERT] como Patrono. Com Matos e Guerra ao seu lado, todas as suas [COLOR_BUILDING_TEXT]Igrejas[COLOR_REVERT] e [COLOR_BUILDING_TEXT]Catedrais[COLOR_REVERT] produzirão [COLOR_HIGHLIGHT_TEXT]Sinos da Liberdade[COLOR_REVERT]!</Portuguese>
+		<Portuguese>Adicione um toque de liberdade aos seus sermões adotando [COLOR_TECH_TEXT]Gregório de Matos[COLOR_REVERT] como Pai Fundador. Com Matos e Guerra ao seu lado, todas as suas [COLOR_BUILDING_TEXT]Igrejas[COLOR_REVERT] e [COLOR_BUILDING_TEXT]Catedrais[COLOR_REVERT] produzirão [COLOR_HIGHLIGHT_TEXT]Sinos da Liberdade[COLOR_REVERT]!</Portuguese>
 		<French>Adoptez le Père fondateur [COLOR_TECH_TEXT]Gregório de Matos[COLOR_REVERT] et vos sermons porteront la liberté aux nues. Avec Matos e Guerra de votre côté, vos [COLOR_BUILDING_TEXT]églises[COLOR_REVERT] et vos [COLOR_BUILDING_TEXT]cathédrales[COLOR_REVERT] produiront des [COLOR_HIGHLIGHT_TEXT]Cloches de la liberté[COLOR_REVERT] !</French>
 		<German>Predigen Sie Freiheit, indem Sie [COLOR_TECH_TEXT]Gregório de Matos[COLOR_REVERT] als Gründervater einsetzen. Wenn Matos e Guerra auf Ihrer Seite ist, produzieren all Ihre [COLOR_BUILDING_TEXT]Kirchen[COLOR_REVERT] und [COLOR_BUILDING_TEXT]Kathedralen[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]Freiheitsglocken[COLOR_REVERT]!</German>
 		<Italian>Aggiungi una nota di libertà ai tuoi sermoni, adottando [COLOR_TECH_TEXT]Gregório de Matos[COLOR_REVERT] come Padre Fondatore. Con Matos e Guerra al tuo fianco, tutte le tue [COLOR_BUILDING_TEXT]chiese[COLOR_REVERT] e le tue [COLOR_BUILDING_TEXT]cattedrali[COLOR_REVERT] produrranno [COLOR_HIGHLIGHT_TEXT]campane della libertà[COLOR_REVERT]!</Italian>
@@ -1599,7 +1599,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_ROBERT_KING_CARTER_I_STRATEGY</Tag>
 		<English>Add [COLOR_TECH_TEXT]Robert Carter[COLOR_REVERT] as a Founding Father to have his influence and wealth will speed up all upgrades of your improvements. With him on your side, the plantations, farms, mines, quarries and all other landmarks in the colonies will flourish.</English>
-		<Portuguese>Adicione [COLOR_TECH_TEXT]Robert Carter[COLOR_REVERT] como Patrono para ter sua influência e a riqueza acelerará todas as atualizações de suas melhorias. Com ele ao seu lado, as plantações, fazendas, minas, pedreiras e todos os outros marcos das colônias florescerão.</Portuguese>
+		<Portuguese>Adicione [COLOR_TECH_TEXT]Robert Carter[COLOR_REVERT] como Pai Fundador para ter sua influência e a riqueza acelerará todas as atualizações de suas melhorias. Com ele ao seu lado, as plantações, fazendas, minas, pedreiras e todos os outros marcos das colônias florescerão.</Portuguese>
 		<German>Gewinne [COLOR_TECH_TEXT]Robert Carter[COLOR_REVERT] als Gründervater, damit sein Einfluß und Reichtum das Wachstum deiner Geländeverbesserungen beschleunigt. Mit ihm an deiner Seite werden die Planatgen, Farmen, Minen, Steinbrüche und alle andere Geländeverbesserungen in den Kolonien gedeihen.</German>
 	</TEXT>
 	<TEXT>
@@ -1645,7 +1645,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_LOUIS_JOLLIET_STRATEGY</Tag>
 		<English>Add [COLOR_TECH_TEXT]Louis Jolliet[COLOR_REVERT] as a Founding Father to increase chances of triggering unique events on the map when exploring Goody Huts on land. Additionally he will grant your troops better protection against wild animals on land.</English>
-		<Portuguese>Adicione [COLOR_TECH_TEXT]Louis Jolliet[COLOR_REVERT] como Patrono para mais eventos únicos ao explorar em terra. Também protege suas tropas contra animais selvagens em terra.</Portuguese>
+		<Portuguese>Adicione [COLOR_TECH_TEXT]Louis Jolliet[COLOR_REVERT] como Pai Fundador para mais eventos únicos ao explorar em terra. Também protege suas tropas contra animais selvagens em terra.</Portuguese>
 		<German>Gewinne [COLOR_TECH_TEXT]Louis Jolliet[COLOR_REVERT] als Gründervater, um die Chances auf einzigartige Ereignisse beim Untersuchen von Goody Huts an Land auszulösen. Zusätzlich verleiht er deinen Tuppen besseren Schutz gegen Wilde Tiere an Land.</German>
 	</TEXT>
 	<TEXT>
@@ -1691,7 +1691,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JAMES_COOK_STRATEGY</Tag>
 		<English>Add [COLOR_TECH_TEXT]James Cook[COLOR_REVERT] as a Founding Father to increase chances of triggering unique events on the map when exploring Goody Huts on Water. Additionally he will grant your troops better protection against wild animals at sea.</English>
-		<Portuguese>Adicione [COLOR_TECH_TEXT]James Cook[COLOR_REVERT] como Patrono para mais eventos únicos ao explorar no mar. Também protege suas tropas contra animais selvagens no mar.</Portuguese>
+		<Portuguese>Adicione [COLOR_TECH_TEXT]James Cook[COLOR_REVERT] como Pai Fundador para mais eventos únicos ao explorar no mar. Também protege suas tropas contra animais selvagens no mar.</Portuguese>
 		<German>Gewinne [COLOR_TECH_TEXT]James Cook[COLOR_REVERT] als Gründervater, um die Chances auf einzigartige Ereignisse beim Untersuchen von Goody Huts im Wasser auszulösen. Zusätzlich verleiht er deinen Tuppen besseren Schutz gegen wilde Tiere im Wasser.</German>
 	</TEXT>
 	<TEXT>
@@ -1738,7 +1738,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_VASCO_DA_GAMA_STRATEGY</Tag>
 		<English>Add [COLOR_TECH_TEXT]Vasco da Gama[COLOR_REVERT] as a Founding Father to increase your profits when selling goods in Port Royal. Additionally he brings a small fleet of trade ships with him.</English>
-		<Portuguese>Adicione [COLOR_TECH_TEXT]Vasco da Gama[COLOR_REVERT] como Patrono para aumentar seus lucros ao vender mercadorias em Port Royal. Além disso, ele traz consigo uma pequena frota de navios mercantes.</Portuguese>
+		<Portuguese>Adicione [COLOR_TECH_TEXT]Vasco da Gama[COLOR_REVERT] como Pai Fundador para aumentar seus lucros ao vender mercadorias em Port Royal. Além disso, ele traz consigo uma pequena frota de navios mercantes.</Portuguese>
 		<German>Gewinne [COLOR_TECH_TEXT]Vasco da Gama[COLOR_REVERT] als Gründervater, um deine Gewinne beim Verkauf von Waren in Port Royal zu erhöhen. Zusätzlich bringt er eine kleine Flotte an Handelsschiffen mit sich.</German>
 	</TEXT>
 	<TEXT>
@@ -1784,7 +1784,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_ADMIRAL_WILLIAM_PENN_STRATEGY</Tag>
 		<English>Add [COLOR_TECH_TEXT]Sir William Penn[COLOR_REVERT] as a Founding Father to increase your profits when selling goods in Port Royal. Additionally he brings a small fleet of war ships with him.</English>
-		<Portuguese>Adicione [COLOR_TECH_TEXT]Sir William Penn[COLOR_REVERT] como Patrono para aumentar seus lucros ao vender mercadorias em Port Royal. Além disso, ele traz consigo uma pequena frota de navios de guerra.</Portuguese>
+		<Portuguese>Adicione [COLOR_TECH_TEXT]Sir William Penn[COLOR_REVERT] como Pai Fundador para aumentar seus lucros ao vender mercadorias em Port Royal. Além disso, ele traz consigo uma pequena frota de navios de guerra.</Portuguese>
 		<German>Gewinne [COLOR_TECH_TEXT]Sir William Penn[COLOR_REVERT] als Gründervater, um deine Gewinne beim Verkauf von Waren in Port Royal zu erhöhen. Zusätzlich bringt er eine kleine Flotte an Kriegsschiffen mit sich.</German>
 	</TEXT>
 	<TEXT>
@@ -1830,7 +1830,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_OTTO_FRIEDRICH_VON_DER_GROEBEN_STRATEGY</Tag>
 		<English>Add [COLOR_TECH_TEXT]Otto Friedrich von der Groeben[COLOR_REVERT] as a Founding Father to recruit slaves and planation workers from Port Royal at better prices.</English>
-		<Portuguese>Adicione [COLOR_TECH_TEXT]Otto Friedrich von der Groeben[COLOR_REVERT] como Patrono para recrutar escravos e trabalhadores de plantações de Port Royal a preços melhores.</Portuguese>
+		<Portuguese>Adicione [COLOR_TECH_TEXT]Otto Friedrich von der Groeben[COLOR_REVERT] como Pai Fundador para recrutar escravos e trabalhadores de plantações de Port Royal a preços melhores.</Portuguese>
 		<German>Gewinne [COLOR_TECH_TEXT]Otto Friedrich von der Groeben[COLOR_REVERT] als Gründervater, um Sklaven und Plantagenarbeiter aus Port Royal günstiger zu rekrutieren.</German>
 	</TEXT>
 	<TEXT>
@@ -1876,7 +1876,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_WILLIAM_DAMPIER_STRATEGY</Tag>
 		<English>Add [COLOR_TECH_TEXT]William Dampier[COLOR_REVERT] as a Founding Father to recruit slaves and planation workers from Africa at better prices.</English>
-		<Portuguese>Adicione [COLOR_TECH_TEXT]William Dampier[COLOR_REVERT] como Patrono para recrutar escravos e trabalhadores de plantações da África a preços melhores.</Portuguese>
+		<Portuguese>Adicione [COLOR_TECH_TEXT]William Dampier[COLOR_REVERT] como Pai Fundador para recrutar escravos e trabalhadores de plantações da África a preços melhores.</Portuguese>
 		<German>Gewinne [COLOR_TECH_TEXT]William Dampier[COLOR_REVERT] als Gründervater, um Sklaven und Plantagenarbeiter aus Afrika günstiger zu rekrutieren.</German>
 	</TEXT>
 	<TEXT>
@@ -1922,7 +1922,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JAMES_LANCASTER_STRATEGY</Tag>
 		<English>Add [COLOR_TECH_TEXT]Sir James Lancaster[COLOR_REVERT] as a Founding Father to increase profits on domestic markets.</English>
-		<Portuguese>Adicione [COLOR_TECH_TEXT]Sir James Lancaster[COLOR_REVERT] como Patrono para aumentar os lucros nos mercados domésticos.</Portuguese>
+		<Portuguese>Adicione [COLOR_TECH_TEXT]Sir James Lancaster[COLOR_REVERT] como Pai Fundador para aumentar os lucros nos mercados domésticos.</Portuguese>
 		<German>Gewinne [COLOR_TECH_TEXT]Sir James Lancaster[COLOR_REVERT] als Gründervater, um Profite auf dem heimischen Markt zu erhöhen.</German>
 	</TEXT>
 	<TEXT>
@@ -2019,7 +2019,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_HERNADO_DE_SOTO_STRATEGY</Tag>
 		<English>You can trounce any settlement that stands in your path with [COLOR_TECH_TEXT]Hernando de Soto[COLOR_REVERT] on your side. This Founding Father provides a combat bonus to all your units whenever they attack settlements.</English>
-		<Portuguese>Você pode derrotar qualquer colônia que estiver em seu caminho com [COLOR_TECH_TEXT]Hernando de Soto[COLOR_REVERT] ao seu lado. Este Patrono fornece um bônus de combate a todas as suas unidades sempre que atacam colônias.</Portuguese>
+		<Portuguese>Você pode derrotar qualquer colônia que estiver em seu caminho com [COLOR_TECH_TEXT]Hernando de Soto[COLOR_REVERT] ao seu lado. Este Pai Fundador fornece um bônus de combate a todas as suas unidades sempre que atacam colônias.</Portuguese>
 		<French>Avec [COLOR_TECH_TEXT]Hernando de Soto[COLOR_REVERT] dans vos rangs, aucune colonie ennemie ne pourra plus vous résister. Ce Père fondateur octroie un bonus de combat à toutes vos unités lorsqu'elles prennent une colonie d'assaut.</French>
 		<German>Sie können jede Siedlung, die Ihnen im Weg ist, vernichtend schlagen, wenn Sie [COLOR_TECH_TEXT]Hernando de Soto[COLOR_REVERT] auf Ihrer Seite haben. Dieser Gründervater gewährt all Ihren Einheiten einen Kampfbonus, wenn sie Siedlungen angreifen.</German>
 		<Italian>Potrai conquistare ogni insediamento sulla tua strada, con [COLOR_TECH_TEXT]Hernando de Soto[COLOR_REVERT] al tuo fianco. Questo Padre Fondatore dà un bonus di combattimento a tutte le tue unità, quando attaccano degli insediamenti.</Italian>
@@ -2069,7 +2069,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JACQUES_CARTIER_STRATEGY</Tag>
 		<English>Sail boldly through the oceans by adding [COLOR_TECH_TEXT]Jacques Cartier[COLOR_REVERT] to your colony as a Founding Father. When Cartier joins your colony, all [COLOR_HIGHLIGHT_TEXT]Storms and Winds[COLOR_REVERT] will cost less movement and will give you an advantage when fighting against other ships.</English>
-		<Portuguese>Navegue com ousadia pelos oceanos adicionando [COLOR_TECH_TEXT]Jacques Cartier[COLOR_REVERT] à sua colônia como Patrono. Quando Cartier se juntar à sua colônia, todas as [COLOR_HIGHLIGHT_TEXT]Tempestades e Ventos[COLOR_REVERT] custarão menos movimento e darão a você uma vantagem ao lutar contra outros navios.</Portuguese>
+		<Portuguese>Navegue com ousadia pelos oceanos adicionando [COLOR_TECH_TEXT]Jacques Cartier[COLOR_REVERT] à sua colônia como Pai Fundador. Quando Cartier se juntar à sua colônia, todas as [COLOR_HIGHLIGHT_TEXT]Tempestades e Ventos[COLOR_REVERT] custarão menos movimento e darão a você uma vantagem ao lutar contra outros navios.</Portuguese>
 		<French>Naviguez avec audace à travers les océances en ajoutant [COLOR_TECH_TEXT]Jacques Cartier[COLOR_REVERT] à vos Pères Fondateurs. Lorsque Cartier rejoint vos colonies, tous les [COLOR_HIGHLIGHT_TEXT]vents[COLOR_REVERT] et les [COLOR_HIGHLIGHT_TEXT]tempêtes[COLOR_REVERT] vous reduiront de manière moindre votre vitesse et vous apporteront un avantage supplémentaire lors des combats.</French>
 		<German>Wollt Ihr kühn und unerschrocken die rauhe See befahren, so kann Euch [COLOR_TECH_TEXT]Jacques Cartier[COLOR_REVERT] dabei sehr dienlich sein: Mit diesem seetüchtigen Gründervater in Euren Reihen kosten Euch [COLOR_HIGHLIGHT_TEXT]Stürme und Winde[COLOR_REVERT] weniger Bewegungspunkte, ausserdem erhaltet Ihr [COLOR_HIGHLIGHT_TEXT]1 Brigantine[COLOR_REVERT].</German>
 	</TEXT>
@@ -2119,7 +2119,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JACQUES_MARQUETTE_STRATEGY</Tag>
 		<English>Put some spring into your scouts' step by adding [COLOR_TECH_TEXT]Jacques Marquette[COLOR_REVERT] to your colony as a Founding Father. With Marquette on your side, all your [COLOR_UNIT_TEXT]Scouts[COLOR_REVERT] will receive a bonus to movement.</English>
-		<Portuguese>Dê um toque especial ao seu passo batedores adicionando [COLOR_TECH_TEXT]Jacques Marquette[COLOR_REVERT] à sua colônia como Patrono. Com Marquette ao seu lado, todos os seus [COLOR_UNIT_TEXT]Batedores[COLOR_REVERT] receberão um bônus de movimento.</Portuguese>
+		<Portuguese>Dê um toque especial ao seu passo batedores adicionando [COLOR_TECH_TEXT]Jacques Marquette[COLOR_REVERT] à sua colônia como Pai Fundador. Com Marquette ao seu lado, todos os seus [COLOR_UNIT_TEXT]Batedores[COLOR_REVERT] receberão um bônus de movimento.</Portuguese>
 		<French>Dynamisez vos éclaireurs en accueillant le Père fondateur [COLOR_TECH_TEXT]Jacques Marquette[COLOR_REVERT] au sein de votre colonie. Avec Marquette à vos côtés, tous vos [COLOR_UNIT_TEXT]éclaireurs[COLOR_REVERT] recevront un bonus de déplacement.</French>
 		<German>Mit [COLOR_TECH_TEXT]Jacques Marquette[COLOR_REVERT] als Gründervater in Ihrer Kolonie machen Sie Ihren Spähern Beine. Wenn Marquette auf Ihrer Seite ist, erhalten all Ihre [COLOR_UNIT_TEXT]Späher[COLOR_REVERT] einen Fortbewegungsbonus.</German>
 		<Italian>Dai un po' di brio ai tuoi scout, aggiungendo [COLOR_TECH_TEXT]Jacques Marquette[COLOR_REVERT] alla tua colonia come Padre Fondatore. Con Marquette al tuo fianco, tutti i tuoi [COLOR_UNIT_TEXT]scout[COLOR_REVERT] otterranno un bonus di movimento.</Italian>
@@ -2223,7 +2223,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JAMES_MADISON_STRATEGY</Tag>
 		<English>With [COLOR_TECH_TEXT]James Madison[COLOR_REVERT] on your side, you'll be able to arm your citizens like never before! This Founding Father improves [COLOR_HIGHLIGHT_TEXT]Gun[COLOR_REVERT] production in all your settlements!</English>
-		<Portuguese>Com [COLOR_TECH_TEXT]James Madison[COLOR_REVERT] ao seu lado, você poderá armar seus cidadãos como nunca antes! Este Patrono melhora a produção de [COLOR_HIGHLIGHT_TEXT]armas[COLOR_REVERT] em todos os suas colônias!</Portuguese>
+		<Portuguese>Com [COLOR_TECH_TEXT]James Madison[COLOR_REVERT] ao seu lado, você poderá armar seus cidadãos como nunca antes! Este Pai Fundador melhora a produção de [COLOR_HIGHLIGHT_TEXT]armas[COLOR_REVERT] em todos os suas colônias!</Portuguese>
 		<French>Le Père fondateur [COLOR_TECH_TEXT]James Madison[COLOR_REVERT] vous permet d'armer vos citoyens comme jamais auparavant en augmentant la production d'[COLOR_HIGHLIGHT_TEXT]armes à feu[COLOR_REVERT] de toutes vos colonies !</French>
 		<German>Mit [COLOR_TECH_TEXT]James Madison[COLOR_REVERT] auf Ihrer Seite können Sie Ihre Bürger bewaffnen wie nie zuvor! Dieser Gründervater steigert die Produktion von [COLOR_HIGHLIGHT_TEXT]Gewehren[COLOR_REVERT] in all Ihren Siedlungen!</German>
 		<Italian>Con [COLOR_TECH_TEXT]James Madison[COLOR_REVERT] al tuo fianco, potrai armare i tuoi cittadini come non hai mai fatto prima! Questo Padre Fondatore migliora la produzione di [COLOR_HIGHLIGHT_TEXT]armi[COLOR_REVERT] in tutti i tuoi insediamenti!</Italian>
@@ -2273,7 +2273,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JAMES_WILSON_STRATEGY</Tag>
 		<English>Strengthen your [COLOR_HIGHLIGHT_TEXT]Economy[COLOR_REVERT] by having [COLOR_TECH_TEXT]James Wilson[COLOR_REVERT] join your colony as a Founding Father. When James Wilson is on your side, every city will get a free Market and all Warehouses are built faster.</English>
-		<Portuguese>Fortaleça sua [COLOR_HIGHLIGHT_TEXT]Economia[COLOR_REVERT] fazendo com que [COLOR_TECH_TEXT]James Wilson[COLOR_REVERT] se junte à sua colônia como Patrono. Quando James Wilson estiver do seu lado, todas as cidades terão um mercado livre e todos os armazéns serão construídos mais rapidamente.</Portuguese>
+		<Portuguese>Fortaleça sua [COLOR_HIGHLIGHT_TEXT]Economia[COLOR_REVERT] fazendo com que [COLOR_TECH_TEXT]James Wilson[COLOR_REVERT] se junte à sua colônia como Pai Fundador. Quando James Wilson estiver do seu lado, todas as cidades terão um mercado livre e todos os armazéns serão construídos mais rapidamente.</Portuguese>
 		<French>Renforcez votre [COLOR_HIGHLIGHT_TEXT]économie[COLOR_REVERT] en ralliant [COLOR_TECH_TEXT]James Wilson[COLOR_REVERT] à vos Pères Fondateurs. Lorsque Wilson est à vos côtés, toutes les villes sont gratuitement équipés d'un marché et tous les types d'entrepôt sont construits plus rapidement.</French>
 		<German>Steigern Sie die[COLOR_HIGHLIGHT_TEXT]Wirtschaft[COLOR_REVERT] in den Kolonien dank [COLOR_TECH_TEXT]James Wilson[COLOR_REVERT]. Wenn James Wilson dem Kontinentalkongress beitritt, erhält jede Eurer Siedlungen gratis ein [COLOR_HIGHLIGHT_TEXT]Marktsgebäude[COLOR_REVERT]. Ausserdem werden auch die Baukosten für [COLOR_HIGHLIGHT_TEXT]Lagerhäuser[COLOR_REVERT] gesenkt.</German>
 	</TEXT>
@@ -2373,7 +2373,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JEAN_DE_BREBEUF_STRATEGY</Tag>
 		<English>Improve your relations to the Natives by adding [COLOR_TECH_TEXT]Jean de Brébeuf[COLOR_REVERT] to your colony as a Founding Father. They will be more tolerant toward your expansion and more willing to teach you their knowledge.</English>
-		<Portuguese>Melhore suas relações com os nativos adicionando [COLOR_TECH_TEXT]Jean de Brébeuf[COLOR_REVERT] à sua colônia como Patrono. Eles serão mais tolerantes com sua expansão e mais dispostos a lhe ensinar seus conhecimentos.</Portuguese>
+		<Portuguese>Melhore suas relações com os nativos adicionando [COLOR_TECH_TEXT]Jean de Brébeuf[COLOR_REVERT] à sua colônia como Pai Fundador. Eles serão mais tolerantes com sua expansão e mais dispostos a lhe ensinar seus conhecimentos.</Portuguese>
 		<French>Améliorez vos relations avec les indigènes en ralliant [COLOR_TECH_TEXT]Jen de Brébeuf[COLOR_REVERT] à vos Pères Fondateurs. Avec de Brébeuf, les indigènes seront plus tolérants vis-à-vis de votre expansion et plus enclin à vous apprendre leurs connaissances.</French>
 		<German>Wäre es vielleicht weise, wenn Ihr die [COLOR_HIGHLIGHT_TEXT]Beziehungen mit den Eingeborenen[COLOR_REVERT] verbessern und [COLOR_TECH_TEXT]Jean de Brébeuf[COLOR_REVERT] als Gründervater in den Kontinentalkongress berufen würdet, Milord? Die Indianer vertrauen diesem Mann - er könnte die Wilden nachsichtig stimmen und sie zudem ermuntern, ihr Wissen mit uns zu teilen.</German>
 	</TEXT>
@@ -2421,7 +2421,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JEAN_TALON_STRATEGY</Tag>
 		<English>Increase your production of Food by adopting [COLOR_TECH_TEXT]Jean Talon[COLOR_REVERT] as a Founding Father. He will bring one [COLOR_HIGHLIGHT_TEXT]Expert Farmer[COLOR_REVERT] and two [COLOR_HIGHLIGHT_TEXT]Fishing Boats[COLOR_REVERT] when he joins you.</English>
-		<Portuguese>Aumente sua produção de alimentos adotando [COLOR_TECH_TEXT]Jean Talon[COLOR_REVERT] como Patrono. Ele trará um [COLOR_HIGHLIGHT_TEXT]Fazendeiro[COLOR_REVERT] e dois [COLOR_HIGHLIGHT_TEXT]Barcos Pesqueiros[COLOR_REVERT] quando se juntar a você.</Portuguese>
+		<Portuguese>Aumente sua produção de alimentos adotando [COLOR_TECH_TEXT]Jean Talon[COLOR_REVERT] como Pai Fundador. Ele trará um [COLOR_HIGHLIGHT_TEXT]Fazendeiro[COLOR_REVERT] e dois [COLOR_HIGHLIGHT_TEXT]Barcos Pesqueiros[COLOR_REVERT] quando se juntar a você.</Portuguese>
 		<French>Augmentez votre production de nourriture en ralliant [COLOR_TECH_TEXT]Comte d'Orsainville[COLOR_REVERT] à vos Pères Fondateurs. Talon apportera avec lui [COLOR_HIGHLIGHT_TEXT]un expert fermier[COLOR_REVERT] et [COLOR_HIGHLIGHT_TEXT]deux bateaux de pêche[COLOR_REVERT].</French>
 		<German>Möchtet Ihr die Produktion von Nahrungsmitteln erhöhen, Gouveneur? [COLOR_TECH_TEXT]Comte d'Orsainville[COLOR_REVERT] würde uns als Gründervater [COLOR_HIGHLIGHT_TEXT]1 erfahrener Bauer[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]2 Fischerboote[COLOR_REVERT] zum Dients in unseren Kolonien überlassen.</German>
 	</TEXT>
@@ -2519,7 +2519,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JOHN_AUGUST_SUTTER_STRATEGY</Tag>
 		<English>Improve your livestock breeding by adopting [COLOR_TECH_TEXT]Johann August Sutter[COLOR_REVERT] as a Founding Father. He will supply two [COLOR_HIGHLIGHT_TEXT]Master Ranchers[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]breeding rates for Cattle, Sheep and Horses[COLOR_REVERT] will go up by 20%.</English>
-		<Portuguese>Melhore sua criação de gado adotando [COLOR_TECH_TEXT]Johann August Sutter[COLOR_REVERT] como Patrono. Ele fornecerá dois [COLOR_HIGHLIGHT_TEXT]Master Ranchers[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]as taxas de criação de gado, ovelhas e cavalos[COLOR_REVERT] aumentarão em 20%.</Portuguese>
+		<Portuguese>Melhore sua criação de gado adotando [COLOR_TECH_TEXT]Johann August Sutter[COLOR_REVERT] como Pai Fundador. Ele fornecerá dois [COLOR_HIGHLIGHT_TEXT]Master Ranchers[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]as taxas de criação de gado, ovelhas e cavalos[COLOR_REVERT] aumentarão em 20%.</Portuguese>
 		<French>Rendez vos élevages plus fertiles en adoptant [COLOR_TECH_TEXT]Johann August Sutter[COLOR_REVERT] en tant que Père Fondateur. Il vous fournira [COLOR_HIGHLIGHT_TEXT]2 experts éleveurs[COLOR_REVERT] et augmentera de 20% le taux de reproduction [COLOR_HIGHLIGHT_TEXT]du bétail, des moutons et des chevaux[COLOR_REVERT].</French>
 		<German>Wenn Ihr die Viehzucht nachhaltig zu stärken wünscht, könnte Euch [COLOR_TECH_TEXT]Johann August Sutter[COLOR_REVERT] als Gründervater äusserst nützlich sein. Sutter wird unseren Kolonien nicht nur augenblicklich [COLOR_HIGHLIGHT_TEXT]2 erfahrene Züchter[COLOR_REVERT] überlassen, sondern auch die Erträge bei der [COLOR_HIGHLIGHT_TEXT]Zucht von Kühen, Schafen und Pferden[COLOR_REVERT] um 20% steigern.</German>
 	</TEXT>
@@ -2569,7 +2569,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JOHN_HARVARD_STRATEGY</Tag>
 		<English>Enlighten your entire colony by adopting [COLOR_TECH_TEXT]John Harvard [COLOR_REVERT]as a Founding Father. As soon as John Harvard joins your side, every settlement in your colony will receive a free [COLOR_BUILDING_TEXT]Schoolhouse[COLOR_REVERT]!</English>
-		<Portuguese>Ilumine toda a sua colônia adotando [COLOR_TECH_TEXT]John Harvard [COLOR_REVERT]como Patrono. Assim que John Harvard se juntar a você, cada colônia em sua colônia receberá uma [COLOR_BUILDING_TEXT]Escola[COLOR_REVERT] grátis!</Portuguese>
+		<Portuguese>Ilumine toda a sua colônia adotando [COLOR_TECH_TEXT]John Harvard [COLOR_REVERT]como Pai Fundador. Assim que John Harvard se juntar a você, cada colônia em sua colônia receberá uma [COLOR_BUILDING_TEXT]Escola[COLOR_REVERT] grátis!</Portuguese>
 		<French>Cultivez votre colonie entière en adoptant [COLOR_TECH_TEXT]John Harvard [COLOR_REVERT] comme Père fondateur. Dès qu'il vous rejoint, toutes vos colonies reçoivent une [COLOR_BUILDING_TEXT]école[COLOR_REVERT] gratuite !</French>
 		<German>Erleuchten Sie Ihre gesamte Kolonie, indem Sie [COLOR_TECH_TEXT]John Harvard[COLOR_REVERT] als Gründervater einsetzen. Sobald John Harvard zu Ihnen stößt, erhält jede Siedlung in Ihrer Kolonie unentgeltlich eine [COLOR_BUILDING_TEXT]Schule[COLOR_REVERT]!</German>
 		<Italian>Illumina la tua colonia, adottando [COLOR_TECH_TEXT]John Harvard[COLOR_REVERT] come Padre Fondatore. Non appena John Harvard sarà al tuo fianco, ogni insediamento della tua colonia otterrà gratuitamente una [COLOR_BUILDING_TEXT]scuola[COLOR_REVERT]!</Italian>
@@ -2664,7 +2664,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JOHN_JAY_PEDIA</Tag>
 		<English>[H1]John Jay[\H1][NEWLINE][BOLD]Lived : [\BOLD]1745 - 1829[NEWLINE][NEWLINE][BOLD]Background :[\BOLD][PARAGRAPH:1:1]John Jay was one of the American founding fathers and his nation's first Supreme Court Chief Justice. Jay, one of the more conservative founders, while certainly unhappy with much of what had been done in the name of the King in the colonies, helped to draft the "Olive Branch Petition", in the hope of reconciling with England. When the United States ultimately separated from England, Jay was appointed Secretary of Foreign Affairs under the new government. Jay also became a major proponent of the Constitution, writing several of the renowned Federalist Papers in favour of the new document and campaigning tirelessly for its passage in his home state of New York. His appointment as Chief Justice of the Supreme Court by George Washington put him in an important position of power. His ruling on "Chisholm v. Georgia" was actually the cause of the adoption of the first Constitutional Amendment to be added after the "Bill of Rights". In 1794, the Chief Justice also became chief negotiator of what would become known as "Jay's Treaty", which regulated trade and relations between Britain and the freshly separated colonies, granting the new country almost a decade of comfortable growth and expansion.</English>
-		<Portuguese>[H1]John Jay[\H1][NEWLINE][BOLD]Viveu: [\BOLD]1745 - 1829[NEWLINE][NEWLINE][BOLD]Antecedentes:[\BOLD][PARAGRAPH:1:1]John Jay foi um dos americanos patronos e o primeiro presidente da Suprema Corte de seu país. Jay, um dos fundadores mais conservadores, embora certamente insatisfeito com muito do que foi feito em nome do Rei nas colônias, ajudou a redigir a "Petição do Ramo de Oliveira", na esperança de se reconciliar com a Inglaterra. Quando os Estados Unidos finalmente se separaram da Inglaterra, Jay foi nomeado Secretário de Relações Exteriores do novo governo. Jay também se tornou um grande defensor da Constituição, escrevendo vários dos renomados Documentos Federalistas em favor do novo documento e fazendo campanha incansável para sua aprovação em seu estado natal, Nova York. Sua nomeação como Chefe de Justiça da Suprema Corte por George Washington colocou-o em uma importante posição de poder. Sua decisão sobre "Chisholm v. Geórgia" foi na verdade a causa da adoção da primeira Emenda Constitucional a ser acrescentada após a "Declaração de Direitos". Em 1794, o Chefe de Justiça também se tornou o negociador-chefe do que ficaria conhecido como "Tratado de Jay", que regulamentava o comércio e as relações entre a Grã-Bretanha e as colônias recém-separadas, garantindo ao novo país quase uma década de crescimento e expansão confortáveis.</Portuguese>
+		<Portuguese>[H1]John Jay[\H1][NEWLINE][BOLD]Viveu: [\BOLD]1745 - 1829[NEWLINE][NEWLINE][BOLD]Antecedentes:[\BOLD][PARAGRAPH:1:1]John Jay foi um dos pais fundadores americanos e o primeiro presidente da Suprema Corte de seu país. Jay, um dos fundadores mais conservadores, embora certamente insatisfeito com muito do que foi feito em nome do Rei nas colônias, ajudou a redigir a "Petição do Ramo de Oliveira", na esperança de se reconciliar com a Inglaterra. Quando os Estados Unidos finalmente se separaram da Inglaterra, Jay foi nomeado Secretário de Relações Exteriores do novo governo. Jay também se tornou um grande defensor da Constituição, escrevendo vários dos renomados Documentos Federalistas em favor do novo documento e fazendo campanha incansável para sua aprovação em seu estado natal, Nova York. Sua nomeação como Chefe de Justiça da Suprema Corte por George Washington colocou-o em uma importante posição de poder. Sua decisão sobre "Chisholm v. Geórgia" foi na verdade a causa da adoção da primeira Emenda Constitucional a ser acrescentada após a "Declaração de Direitos". Em 1794, o Chefe de Justiça também se tornou o negociador-chefe do que ficaria conhecido como "Tratado de Jay", que regulamentava o comércio e as relações entre a Grã-Bretanha e as colônias recém-separadas, garantindo ao novo país quase uma década de crescimento e expansão confortáveis.</Portuguese>
 		<French>[H1]John Jay[\H1][NEWLINE][BOLD]Dates : [\BOLD]1745 - 1829[NEWLINE][NEWLINE][BOLD]Biographie :[\BOLD][PARAGRAPH:1:1]John Jay fut un des pères fondateurs des Etats-Unis, ainsi que le premier président de la Cour suprême fédérale. John Jay est l'un des fondateurs les plus conservateurs. Pourtant, sûrement mécontent de ce qui a été fait au nom du roi dans les colonies, il va prêter son aide pour rédiger la "Pétition de la branche d'olivier" avec l'espoir d'une réconciliation avec l'Angleterre. Une fois la séparation consommée entre les Etats-Unis et l'Angleterre, Jay est nommé secrétaire aux Affaires étrangères dans le nouveau gouvernement. Il devient aussi un fervent partisan de la Constitution; il va écrire plusieurs des célèbres articles du Fédéraliste en faveur du nouveau document et mener une campagne acharnée pour la faire adopter dans son état de New York. Lorsqu'il est nommé président de la Cour suprême fédérale par George Washington, Jay se retrouve à une position de pouvoir. La décision qu'il va rendre dans l'affaire Chisholm contre l'Etat de Georgie entraînera l'adoption du premier amendement de la Constitution des Etats-Unis après le vote du Bill of Rights. En 1794, le président de la Cour suprême fédérale devient aussi le principal négociateur d'un traité (le Traité de Jay) qui régulera le commerce et les relations entre la Grande-Bretagne et les nouvelles colonies indépendantes et offrira au nouveau pays presque une décennie de croissance et d'expansion.</French>
 		<German>[H1]John Jay[\H1][NEWLINE][BOLD]Lebte : [\BOLD]1745 - 1829[NEWLINE][NEWLINE][BOLD]Hintergrund :[\BOLD][PARAGRAPH:1:1]John Jay war einer der Gründerväter sowie der erste vorsitzende Richter des Obersten Gerichtshofs seiner Heimatnation. Jay, einer der eher konservativen Gründerväter, war einerseits sicherlich unglücklich darüber, was im Namen des Königs in den Kolonien vor sich ging, beteiligte sich allerdings an der Verfassung der "Olive Branch Petition" (dt. "Olivenzweigpetition"), in der Hoffnung auf eine Versöhnung mit England. Mit der ultimativen Trennung der Vereinigten Staaten von Amerika von England wurde Jay unter der neuen Regierung zum Minister für Außenpolitik ernannt. Jay wurde auch zu einem glühenden Verfechter der Verfassung, verfasste zahlreiche anerkannte föderalistische Schriftstücke zugunsten des neuen Dokuments und setzte sich unermüdlich für ihre Verabschiedung in seiner Heimat New York ein. Mit der Ernennung zum vorsitzenden Richter am Obersten Gerichtshof durch George Washington erhielt er eine wichtige Machtposition. Seine Entscheidung im Fall "Chisholm gegen Georgia" war sogar die Ursache für die Annahme des ersten Verfassungszusatzes nach der "Bill of Rights". 1794 wurde der Oberste Richter sogar Hauptverhandler eines Vertrags, der später unter dem Namen "Jay's Treaty" bekannt wurde. Dieser Vertrag regelte den Handel und die Beziehung zwischen Großbritannien und den neuen unabhängigen Kolonien, was für fast zehn Jahre bequemen Wachstums und Expansion in dem neu entstandenen Land sorgte.</German>
 		<Italian>[H1]John Jay[\H1][NEWLINE][BOLD]Vita : [\BOLD]1745 - 1829[NEWLINE][NEWLINE][BOLD]Informazioni :[\BOLD][PARAGRAPH:1:1]John Jay fu uno dei Padri Fondatori americani, oltre che il primo giudice capo della corte suprema della sua nazione. Jay era uno dei fondatori più conservatori e, pur essendo sicuramente contrario a molto di quello che era stato fatto nelle colonie nel nome del re, aveva partecipato alla stesura della "Olive Branch Petition" (petizione del ramo d'ulivo), nella speranza di riconciliarsi con l'Inghilterra. Con la definitiva separazione tra Stati Uniti e Inghilterra, Jay venne nominato segretario degli affari esteri per il nuovo governo. Jay divenne anche uno dei maggiori proponenti della costituzione, scrivendo molte delle famose Carte federaliste a favore del nuovo documento e promuovendone instancabilmente l'approvazione nel proprio stato, New York. La nomina a giudice capo della corte suprema da parte di George Washington lo mise in un'importante posizione di potere. La sua decisione nel caso "Chisholm contro lo stato della Georgia" causò infatti l'adozione del primo emendamento costituzionale, aggiunto alla Carta dei Diritti. Nel 1794 il giudice capo divenne anche negoziatore capo di quello che sarebbe stato poi conosciuto come il "Trattato di Jay", che regolava commercio e relazioni tra la Gran Bretagna e le colonie da poco indipendenti, garantendo al nuovo paese quasi un decennio di crescita ed espansione.</Italian>
@@ -2673,7 +2673,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JOHN_JAY_STRATEGY</Tag>
 		<English>Improve your relations to all Europeans and kings by adopting [COLOR_TECH_TEXT]John Jay[COLOR_REVERT] as a Founding Father. He will also increase your cultural influence.</English>
-		<Portuguese>Melhore suas relações com todos os europeus e reis adotando [COLOR_TECH_TEXT]John Jay[COLOR_REVERT] como Patrono. Ele também aumentará sua influência cultural.</Portuguese>
+		<Portuguese>Melhore suas relações com todos os europeus e reis adotando [COLOR_TECH_TEXT]John Jay[COLOR_REVERT] como Pai Fundador. Ele também aumentará sua influência cultural.</Portuguese>
 		<French>Améliorez vos relations avec tous les colons et rois européens en faisant de [COLOR_TECH_TEXT]John Jay[COLOR_REVERT] l'un de vos Pères fondateurs. Il augmentera votre influence culturelle.</French>
 		<German>Verbesseren Sie spürbar die Beziehungen zu allen Europäern und Königen, indem Sie [COLOR_TECH_TEXT]John Jay[COLOR_REVERT] als Gründervater einsetzen. Des weiteren steigert er den kulturellen Einfluß.</German>
 	</TEXT>
@@ -2723,7 +2723,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JOHN_PAUL_JONES_STRATEGY</Tag>
 		<English>Turn your navy into a force to be reckoned with by adopting [COLOR_TECH_TEXT]John Paul Jones[COLOR_REVERT] as a Founding Father. When Jones joins your side, you will immediately receive a free [COLOR_UNIT_TEXT]Frigate[COLOR_REVERT], one of the most powerful ships in the game!</English>
-		<Portuguese>Transforme sua marinha em uma força a ser reconhecida adotando [COLOR_TECH_TEXT]John Paul Jones[COLOR_REVERT] como Patrono. Quando Jones se juntar ao seu lado, você receberá imediatamente uma [COLOR_UNIT_TEXT]Fragata[COLOR_REVERT] grátis, um dos navios mais poderosos do jogo!</Portuguese>
+		<Portuguese>Transforme sua marinha em uma força a ser reconhecida adotando [COLOR_TECH_TEXT]John Paul Jones[COLOR_REVERT] como Pai Fundador. Quando Jones se juntar ao seu lado, você receberá imediatamente uma [COLOR_UNIT_TEXT]Fragata[COLOR_REVERT] grátis, um dos navios mais poderosos do jogo!</Portuguese>
 		<French>Faites de votre flotte une puissance crainte de tous en adoptant le Père fondateur [COLOR_TECH_TEXT]John Paul Jones[COLOR_REVERT]. Lorsque Jones vous rejoint, vous recevez immédiatement une [COLOR_UNIT_TEXT]frégate[COLOR_REVERT], l'un des plus puissants navires du jeu !</French>
 		<German>Machen Sie aus Ihrer Marine einen formidablen Gegner, indem Sie [COLOR_TECH_TEXT]John Paul Jones[COLOR_REVERT] als Gründervater wählen. Wenn Jones zu Ihnen stößt, erhalten Sie augenblicklich kostenlos eine [COLOR_UNIT_TEXT]Fregatte[COLOR_REVERT], eines der mächtigsten Schiffe im Spiel!</German>
 		<Italian>Trasforma la tua marina in una forza da non sottovalutare, adottando [COLOR_TECH_TEXT]John Paul Jones[COLOR_REVERT] come Padre Fondatore. Quando Jones si schiererà al tuo fianco otterrai immediatamente una [COLOR_UNIT_TEXT]fregata[COLOR_REVERT] gratuita, una delle più potenti navi del gioco!</Italian>
@@ -2775,7 +2775,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JOHN_ROLFE_STRATEGY</Tag>
 		<English>Add some more [COLOR_HIGHLIGHT_TEXT]Tobacco[COLOR_REVERT] to your stores by adopting [COLOR_TECH_TEXT]John Rolfe[COLOR_REVERT] as a Founding Father. He increases the amount of [COLOR_HIGHLIGHT_TEXT]Tobacco[COLOR_REVERT] produced by your colonists.</English>
-		<Portuguese>Adicione mais [COLOR_HIGHLIGHT_TEXT]Tabaco[COLOR_REVERT] às suas lojas adotando [COLOR_TECH_TEXT]John Rolfe[COLOR_REVERT] como Patrono. Ele aumenta a quantidade de [COLOR_HIGHLIGHT_TEXT]Tabaco[COLOR_REVERT] produzido por seus colonos.</Portuguese>
+		<Portuguese>Adicione mais [COLOR_HIGHLIGHT_TEXT]Tabaco[COLOR_REVERT] às suas lojas adotando [COLOR_TECH_TEXT]John Rolfe[COLOR_REVERT] como Pai Fundador. Ele aumenta a quantidade de [COLOR_HIGHLIGHT_TEXT]Tabaco[COLOR_REVERT] produzido por seus colonos.</Portuguese>
 		<French>Amassez des montagnes de [COLOR_HIGHLIGHT_TEXT]tabac[COLOR_REVERT] en accueillant [COLOR_TECH_TEXT]John Rolfe[COLOR_REVERT] au sein de votre colonie. Ce Père fondateur augmente la quantité de [COLOR_HIGHLIGHT_TEXT]tabac[COLOR_REVERT] produite par vos colons.</French>
 		<German>Sie möchten Ihre [COLOR_HIGHLIGHT_TEXT]Tabak[COLOR_REVERT]vorräte aufstocken? Dann wählen Sie [COLOR_TECH_TEXT]John Rolfe[COLOR_REVERT] als Gründervater. Er erhöht die Menge an [COLOR_HIGHLIGHT_TEXT]Tabak[COLOR_REVERT], die Ihre Bürger produzieren.</German>
 		<Italian>Aggiungi un altro po' di [COLOR_HIGHLIGHT_TEXT]tabacco[COLOR_REVERT] alle tue scorte, adottando [COLOR_TECH_TEXT]John Rolfe[COLOR_REVERT] come Padre Fondatore. Aumenta infatti la quantità di [COLOR_HIGHLIGHT_TEXT]tabacco[COLOR_REVERT] prodotto dai tuoi coloni.</Italian>
@@ -2827,7 +2827,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JOHN_SMITH_STRATEGY</Tag>
 		<English>Expand your borders with [COLOR_TECH_TEXT]John Smith[COLOR_REVERT] on your side. By adopting John Smith as a Founding Father, you will be able to purchase Native land at a reduced price!</English>
-		<Portuguese>Expanda suas fronteiras com [COLOR_TECH_TEXT]John Smith[COLOR_REVERT] ao seu lado. Ao adotar John Smith como Patrono, você poderá comprar terras nativas por um preço reduzido!</Portuguese>
+		<Portuguese>Expanda suas fronteiras com [COLOR_TECH_TEXT]John Smith[COLOR_REVERT] ao seu lado. Ao adotar John Smith como Pai Fundador, você poderá comprar terras nativas por um preço reduzido!</Portuguese>
 		<French>Elargissez vos frontières en accueillant [COLOR_TECH_TEXT]John Smith[COLOR_REVERT] dans vos rangs. En tant que Père fondateur, il vous permet d'acheter à prix réduit les territoires indigènes !</French>
 		<German>Erweitern Sie Ihre Grenzen mit [COLOR_TECH_TEXT]John Smith[COLOR_REVERT]. Wenn Sie John Smith als Gründervater übernehmen, können Sie von den Ureinwohnern verbilligt Land erwerben!</German>
 		<Italian>Espandi i confini grazie all'aiuto di [COLOR_TECH_TEXT]John Smith[COLOR_REVERT]. Accettando John Smith come Padre Fondatore potrai acquistare terra dai nativi a prezzo ridotto!</Italian>
@@ -2879,7 +2879,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JOHN_WINTHROP_STRATEGY</Tag>
 		<English>Motivate the masses in your colony to hard work by adopting [COLOR_TECH_TEXT]John Winthrop[COLOR_REVERT] as a Founding Father. With Winthrop on your side, [COLOR_BUILDING_TEXT]Chapels[COLOR_REVERT], [COLOR_BUILDING_TEXT]Churches[COLOR_REVERT], [COLOR_BUILDING_TEXT]Abbeys[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Cathedrals[COLOR_REVERT] produce additional [COLOR_HIGHLIGHT_TEXT]Hammers[COLOR_REVERT]!</English>
-		<Portuguese>Motive as massas em sua colônia para o trabalho duro adotando [COLOR_TECH_TEXT]John Winthrop[COLOR_REVERT] como Patrono. Com Winthrop ao seu lado, [COLOR_BUILDING_TEXT]Capelas[COLOR_REVERT], [COLOR_BUILDING_TEXT]Igrejas[COLOR_REVERT], [COLOR_BUILDING_TEXT]Abadias[COLOR_REVERT] e [COLOR_BUILDING_TEXT]Catedrais[COLOR_REVERT] produzem [COLOR_HIGHLIGHT_TEXT]Martelos[COLOR_REVERT] adicionais!</Portuguese>
+		<Portuguese>Motive as massas em sua colônia para o trabalho duro adotando [COLOR_TECH_TEXT]John Winthrop[COLOR_REVERT] como Pai Fundador. Com Winthrop ao seu lado, [COLOR_BUILDING_TEXT]Capelas[COLOR_REVERT], [COLOR_BUILDING_TEXT]Igrejas[COLOR_REVERT], [COLOR_BUILDING_TEXT]Abadias[COLOR_REVERT] e [COLOR_BUILDING_TEXT]Catedrais[COLOR_REVERT] produzem [COLOR_HIGHLIGHT_TEXT]Martelos[COLOR_REVERT] adicionais!</Portuguese>
 		<French>Motivez les travailleurs de vos colonies en adoptant [COLOR_TECH_TEXT]John Winthrop[COLOR_REVERT] en tant que Père Fondateur. Avec Winthrop à vos côtés, les [COLOR_BUILDING_TEXT]chapelles[COLOR_REVERT], [COLOR_BUILDING_TEXT]églises[COLOR_REVERT], [COLOR_BUILDING_TEXT]abbayes[COLOR_REVERT] et [COLOR_BUILDING_TEXT]cathédrales[COLOR_REVERT] produiront davantage de [COLOR_HIGHLIGHT_TEXT]marteaux[COLOR_REVERT] !</French>
 		<German>Die Massen in Ihre Kolonie werden zu den Hämmern greifen, wenn Sie Gründervater [COLOR_TECH_TEXT]John Winthrop[COLOR_REVERT] vorweisen können. Wenn Winthrop bei Ihnen ist, produzieren die [COLOR_BUILDING_TEXT]Kapellen, Kirchen und Kathedralen[COLOR_REVERT] zusätzliche [COLOR_HIGHLIGHT_TEXT]Hämmer[COLOR_REVERT]!</German>
 	</TEXT>
@@ -2977,7 +2977,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JUAN_DE_BERMUDEZ_STRATEGY</Tag>
 		<English>You'll ply the seas with added ease when [COLOR_TECH_TEXT]Juan Bermúdez[COLOR_REVERT] is at your side. By adopting Bermúdez as a Founding Father, all your [COLOR_UNIT_TEXT]Merchantmen[COLOR_REVERT], [COLOR_UNIT_TEXT]Caravels[COLOR_REVERT] and [COLOR_UNIT_TEXT]Galleons[COLOR_REVERT] will receive a bonus to their movement!</English>
-		<Portuguese>Você navegará pelos mares com mais facilidade quando [COLOR_TECH_TEXT]Juan Bermúdez[COLOR_REVERT] estiver ao seu lado. Ao adotar Bermúdez como Patrono, todos os seus [COLOR_UNIT_TEXT]Navios mercantes[COLOR_REVERT], [COLOR_UNIT_TEXT]caravelas[COLOR_REVERT] e [COLOR_UNIT_TEXT]galeões[COLOR_REVERT] receberão um bônus em seus movimentos!</Portuguese>
+		<Portuguese>Você navegará pelos mares com mais facilidade quando [COLOR_TECH_TEXT]Juan Bermúdez[COLOR_REVERT] estiver ao seu lado. Ao adotar Bermúdez como Pai Fundador, todos os seus [COLOR_UNIT_TEXT]Navios mercantes[COLOR_REVERT], [COLOR_UNIT_TEXT]caravelas[COLOR_REVERT] e [COLOR_UNIT_TEXT]galeões[COLOR_REVERT] receberão um bônus em seus movimentos!</Portuguese>
 		<French>Grâce à [COLOR_TECH_TEXT]Juan Bermúdez[COLOR_REVERT], ne craignez plus les déferlantes et les lames de fond. Ce Père fondateur accordera à vos [COLOR_UNIT_TEXT]navires marchands[COLOR_REVERT], [COLOR_UNIT_TEXT]caravelles[COLOR_REVERT] et [COLOR_UNIT_TEXT]galions[COLOR_REVERT] un bonus de déplacement !</French>
 		<German>Mit dem Beistand von [COLOR_TECH_TEXT]Juan Bermúdez[COLOR_REVERT] segelt Ihre Flotte noch flotter! Wenn Sie Bermúdez als Gründervater einsetzen, erhalten all Ihre [COLOR_UNIT_TEXT]Westindienfahrer[COLOR_REVERT], [COLOR_UNIT_TEXT]Karavellen[COLOR_REVERT] und [COLOR_UNIT_TEXT]Galeonen[COLOR_REVERT] einen Fortbewegungsbonus!</German>
 		<Italian>Solcherai i mari con poco sforzo, con [COLOR_TECH_TEXT]Juan Bermúdez[COLOR_REVERT] schierato dalla tua parte. Adottando de Bermúdez come Padre Fondatore, tutti i tuoi [COLOR_UNIT_TEXT]mercantili[COLOR_REVERT], le [COLOR_UNIT_TEXT]caravelle[COLOR_REVERT] e i [COLOR_UNIT_TEXT]galeoni[COLOR_REVERT] otterranno un bonus di movimento!</Italian>
@@ -3029,7 +3029,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JUAN_DE_SEPULVEDA_STRATEGY</Tag>
 		<English>When [COLOR_TECH_TEXT]Juan Ginés de Sepúlveda[COLOR_REVERT] joins your side as a Founding Father, you will receive two free [COLOR_UNIT_TEXT]Converted Natives[COLOR_REVERT] in your capital! He will also increase production of [COLOR_HIGHLIGHT_TEXT]Cocoa pods[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Cocoa[COLOR_REVERT].</English>
-		<Portuguese>Quando [COLOR_TECH_TEXT]Juan Ginés de Sepúlveda[COLOR_REVERT] se juntar ao seu lado como Patrono, você receberá dois [COLOR_UNIT_TEXT]Nativos Convertidos[COLOR_REVERT] grátis em sua capital! Ele também aumentará a produção de [COLOR_HIGHLIGHT_TEXT]Vagens de cacau[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]Cacau[COLOR_REVERT].</Portuguese>
+		<Portuguese>Quando [COLOR_TECH_TEXT]Juan Ginés de Sepúlveda[COLOR_REVERT] se juntar ao seu lado como Pai Fundador, você receberá dois [COLOR_UNIT_TEXT]Nativos Convertidos[COLOR_REVERT] grátis em sua capital! Ele também aumentará a produção de [COLOR_HIGHLIGHT_TEXT]Vagens de cacau[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]Cacau[COLOR_REVERT].</Portuguese>
 		<French>Lorsque [COLOR_TECH_TEXT]Juan Ginés de Sepúlveda[COLOR_REVERT] vous rejoint en tant que Père Fondateur, vous recevez deux [COLOR_UNIT_TEXT]indigènes convertis[COLOR_REVERT] gratuitement dans votre capital ! Sa présence augmentera également la production de [COLOR_HIGHLIGHT_TEXT]fèves de cacao[COLOR_REVERT] et de [COLOR_HIGHLIGHT_TEXT]cacao[COLOR_REVERT].</French>
 		<German>Wenn [COLOR_TECH_TEXT]Juan Ginés de Sepúlveda[COLOR_REVERT] sich Ihnen als Gründervater anschliesst, steigt eure Produktion von [COLOR_HIGHLIGHT_TEXT]Kakaofrüchten[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Kakao[COLOR_REVERT] und Ihre Hauptstadt erhält unentgeltlich zwei [COLOR_UNIT_TEXT]Konvertierte Ureinwohner[COLOR_REVERT]!</German>
 	</TEXT>
@@ -3076,7 +3076,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_THOMAS_CHIPPENDALE_STRATEGY</Tag>
 		<English>When [COLOR_TECH_TEXT]Thomas Chippendale[COLOR_REVERT] joins your side as a Founding Father, you will receive two free [COLOR_UNIT_TEXT]Master Cabinetmakers[COLOR_REVERT] and one free [COLOR_UNIT_TEXT]Expert Lumberjack[COLOR_REVERT] in your capital! He will also increase production of [COLOR_HIGHLIGHT_TEXT]Furniture[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Exotic Wood[COLOR_REVERT].</English>
-		<Portuguese>Quando [COLOR_TECH_TEXT]Thomas Chippendale[COLOR_REVERT] se juntar ao seu lado como Patrono, você receberá dois [COLOR_UNIT_TEXT]Master Cabinetmakers[COLOR_REVERT] grátis e um [COLOR_UNIT_TEXT]Expert Lumberjack[COLOR_REVERT] grátis em sua capital! Ele também aumentará a produção de [COLOR_HIGHLIGHT_TEXT]Móveis[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]Madeira Exótica[COLOR_REVERT].</Portuguese>
+		<Portuguese>Quando [COLOR_TECH_TEXT]Thomas Chippendale[COLOR_REVERT] se juntar ao seu lado como Pai Fundador, você receberá dois [COLOR_UNIT_TEXT]Master Cabinetmakers[COLOR_REVERT] grátis e um [COLOR_UNIT_TEXT]Expert Lumberjack[COLOR_REVERT] grátis em sua capital! Ele também aumentará a produção de [COLOR_HIGHLIGHT_TEXT]Móveis[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]Madeira Exótica[COLOR_REVERT].</Portuguese>
 		<German>Wenn [COLOR_TECH_TEXT]Thomas Chippendale[COLOR_REVERT] sich Ihnen als Gründervater anschliesst, steigt eure Produktion von [COLOR_HIGHLIGHT_TEXT]Möbeln[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Edelholz[COLOR_REVERT] und Ihre Hauptstadt erhält unentgeltlich zwei [COLOR_UNIT_TEXT]Schreinermeister[COLOR_REVERT] und einen [COLOR_UNIT_TEXT]Erfahrenen Holzfäller[COLOR_REVERT].</German>
 	</TEXT>
 	<TEXT>
@@ -3173,7 +3173,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_JUNIPERO_SERRA_STRATEGY</Tag>
 		<English>Increase your production of [COLOR_HIGHLIGHT_TEXT]Barley[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Beer[COLOR_REVERT] by having [COLOR_TECH_TEXT]Junípero Serra[COLOR_REVERT] join your colony as a Founding Father. When Junípero Serra is on your side, he will also bring a [COLOR_HIGHLIGHT_TEXT]Missionary[COLOR_REVERT], an [COLOR_HIGHLIGHT_TEXT]Expert Farmer[COLOR_REVERT] and a [COLOR_HIGHLIGHT_TEXT]Master Brewer[COLOR_REVERT].</English>
-		<Portuguese>Aumente sua produção de [COLOR_HIGHLIGHT_TEXT]Cevada[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]Cerveja[COLOR_REVERT] fazendo com que [COLOR_TECH_TEXT]Junípero Serra[COLOR_REVERT] se junte à sua colônia como Patrono. Quando Junípero Serra estiver ao seu lado, ele também trará um [COLOR_HIGHLIGHT_TEXT]Missionário[COLOR_REVERT], um [COLOR_HIGHLIGHT_TEXT]Fazendeiro[COLOR_REVERT] e um [COLOR_HIGHLIGHT_TEXT]Mestre Cervejeiro[COLOR_REVERT].</Portuguese>
+		<Portuguese>Aumente sua produção de [COLOR_HIGHLIGHT_TEXT]Cevada[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]Cerveja[COLOR_REVERT] fazendo com que [COLOR_TECH_TEXT]Junípero Serra[COLOR_REVERT] se junte à sua colônia como Pai Fundador. Quando Junípero Serra estiver ao seu lado, ele também trará um [COLOR_HIGHLIGHT_TEXT]Missionário[COLOR_REVERT], um [COLOR_HIGHLIGHT_TEXT]Fazendeiro[COLOR_REVERT] e um [COLOR_HIGHLIGHT_TEXT]Mestre Cervejeiro[COLOR_REVERT].</Portuguese>
 		<French>Augmentez votre production d'[COLOR_HIGHLIGHT_TEXT]orge[COLOR_REVERT] et de [COLOR_HIGHLIGHT_TEXT]bière[COLOR_REVERT] en ralliant [COLOR_TECH_TEXT]Junípero Serra[COLOR_REVERT] à vos Pères Fondateurs. Serra apportera également avec lui un [COLOR_HIGHLIGHT_TEXT]missionaire[COLOR_REVERT], un [COLOR_HIGHLIGHT_TEXT]expert fermier[COLOR_REVERT] et un [COLOR_HIGHLIGHT_TEXT]maître brasseur[COLOR_REVERT].</French>
 		<German>Mit [COLOR_TECH_TEXT]Junípero Serra[COLOR_REVERT] an Eurer Seite könnt Ihr die Produktion von [COLOR_HIGHLIGHT_TEXT]Gerste[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Bier[COLOR_REVERT] in Euren Kolonien deutlich steigern! Zusätzlich vermittelt Euch dieser Gründervater auch die Dienste dreier Experten : 1 [COLOR_HIGHLIGHT_TEXT]Missionar[COLOR_REVERT], 1 [COLOR_HIGHLIGHT_TEXT]Erfahrenen Bauern[COLOR_REVERT] und 1 [COLOR_HIGHLIGHT_TEXT]Braumeister[COLOR_REVERT].</German>
 	</TEXT>
@@ -3223,7 +3223,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_LEWIS_AND_CLARK_STRATEGY</Tag>
 		<English>Put your shoulder to the wheel and get things moving with [COLOR_TECH_TEXT]Lewis and Clark[COLOR_REVERT] on your side. By adopting this pair of Founding Fathers, your wagon trains will move at an increased rate and your colonists will require significantly fewer tools to adopt the Pioneer profession.</English>
-		<Portuguese>Coloque seu ombro no volante e faça as coisas andarem com [COLOR_TECH_TEXT]Lewis and Clark[COLOR_REVERT] ao seu lado. Ao adotar este par de Patronos, suas carroças se moverão em uma taxa maior e seus colonos precisarão de significativamente menos ferramentas para adotar a profissão de Pioneiro.</Portuguese>
+		<Portuguese>Coloque seu ombro no volante e faça as coisas andarem com [COLOR_TECH_TEXT]Lewis and Clark[COLOR_REVERT] ao seu lado. Ao adotar este par de Pais Fundadores, suas carroças se moverão em uma taxa maior e seus colonos precisarão de significativamente menos ferramentas para adotar a profissão de Pioneiro.</Portuguese>
 		<French>Attelez-vous à la tâche et faites bouger les choses en adoptant [COLOR_TECH_TEXT]Lewis et Clark[COLOR_REVERT] comme Pères fondateurs. La présence de ces deux grands hommes dans votre colonie accélèrera les déplacements de vos chariots et vos colons auront besoin de moins d'outils pour adopter la profession de pionnier.</French>
 		<German>Krempeln Sie die Ärmel hoch und bringen Sie Schwung in die Sache mit [COLOR_TECH_TEXT]Lewis und Clark[COLOR_REVERT] an Ihrer Seite. Wenn Sie diese beiden Gründerväter annehmen, werden sich Ihre Kutschentrosse schneller fortbewegen und Ihre Bürger werden wesentlich weniger Eisenwaren benötigen, um den Beruf des Pioniers anzunehmen.</German>
 		<Italian>Smuovi le cose, con [COLOR_TECH_TEXT]Lewis e Clark[COLOR_REVERT] dalla tua parte. Adottando questa coppia di Padri Fondatori farai in modo che le tue colonne di carovane si muovano più rapidamente e ci vorranno molti meno attrezzi per assegnare la professione di pioniere a uno dei tuoi coloni.</Italian>
@@ -3275,7 +3275,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_LORD_BALTIMORE_STRATEGY</Tag>
 		<English>Increase your output of piety by adopting [COLOR_TECH_TEXT]Lord Baltimore[COLOR_REVERT] as a Founding Father. With Lord Baltimore on your side, all your government buildings will produce extra [COLOR_HIGHLIGHT_TEXT]Crosses[COLOR_REVERT].</English>
-		<Portuguese>Aumente sua produção de piedade adotando [COLOR_TECH_TEXT]Lord Baltimore[COLOR_REVERT] como Patrono. Com Lord Baltimore ao seu lado, todos os seus edifícios governamentais produzirão [COLOR_HIGHLIGHT_TEXT]Cruzes[COLOR_REVERT] extras.</Portuguese>
+		<Portuguese>Aumente sua produção de piedade adotando [COLOR_TECH_TEXT]Lord Baltimore[COLOR_REVERT] como Pai Fundador. Com Lord Baltimore ao seu lado, todos os seus edifícios governamentais produzirão [COLOR_HIGHLIGHT_TEXT]Cruzes[COLOR_REVERT] extras.</Portuguese>
 		<French>Augmentez votre niveau de piété en adoptant [COLOR_TECH_TEXT]Lord Baltimore[COLOR_REVERT] en tant que Père Fondateur. Avec Lord Baltimore à vos côtés, tous les bâtiments administratifs produiront un bonus de [COLOR_HIGHLIGHT_TEXT]crosses[COLOR_REVERT]</French>
 		<German>Erhöhen Sie Ihren Ausstoß an Pietät, indem Sie [COLOR_BUILDING_TEXT]Lord Baltimore[COLOR_REVERT] als Gründervater annehmen. Mit Lord Baltimore an Ihrer Seite produzieren all Ihre Regierungsgebäude weitere [COLOR_HIGHLIGHT_TEXT]Kreuze[COLOR_REVERT].</German>
 	</TEXT>
@@ -3423,7 +3423,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_MICHIEL_DE_RUYTER_STRATEGY</Tag>
 		<English>Increase your ship building capabilities by adding [COLOR_TECH_TEXT]Michiel de Ruyter[COLOR_REVERT] to your colony as a Founding Father. All [COLOR_HIGHLIGHT_TEXT]harbour buildings[COLOR_REVERT] will go up much faster. He will also bring a [COLOR_HIGHLIGHT_TEXT]Merchantman[COLOR_REVERT] with him.</English>
-		<Portuguese>Aumente suas capacidades de construção de navios adicionando [COLOR_TECH_TEXT]Michiel de Ruyter[COLOR_REVERT] à sua colônia como Patrono. Todos os [COLOR_HIGHLIGHT_TEXT]edifícios do porto[COLOR_REVERT] serão erguidos muito mais rápido. Ele também trará um [COLOR_HIGHLIGHT_TEXT]Navio mercante[COLOR_REVERT] com ele.</Portuguese>
+		<Portuguese>Aumente suas capacidades de construção de navios adicionando [COLOR_TECH_TEXT]Michiel de Ruyter[COLOR_REVERT] à sua colônia como Pai Fundador. Todos os [COLOR_HIGHLIGHT_TEXT]edifícios do porto[COLOR_REVERT] serão erguidos muito mais rápido. Ele também trará um [COLOR_HIGHLIGHT_TEXT]Navio mercante[COLOR_REVERT] com ele.</Portuguese>
 		<French>Augmentez les capacités de vos navires en ajoutant [COLOR_TECH_TEXT]Michiel de Ruyter[COLOR_REVERT] à vos Pères Fondateurs. Avec de Ruyter, tous les[COLOR_HIGHLIGHT_TEXT]bâtiments portuaires[COLOR_REVERT] seront construits plus rapidement. Il apportera également un [COLOR_HIGHLIGHT_TEXT]navire marchand[COLOR_REVERT] avec lui.</French>
 		<German>Der Auf- und Ausbau unserer Schiffswerften ginge mit einem Mann wie [COLOR_TECH_TEXT]Michiel de Ruyter[COLOR_REVERT] deutlich effizienter voran. Als Gründervater würde er dafür sorgen, dass [COLOR_HIGHLIGHT_TEXT]Hafengebäude[COLOR_REVERT] viel schneller gebaut werden. Ausserdem stellt de Ruyter uns [COLOR_HIGHLIGHT_TEXT]1 Westindienfahrer[COLOR_REVERT] zur sofortigen Verfügung.</German>
 	</TEXT>
@@ -3471,7 +3471,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_MIGUEL_HIDALGO_STRATEGY</Tag>
 		<English>Add a boost to your Liberty Bell production by adopting [COLOR_TECH_TEXT]Miguel Hidalgo y Costilla[COLOR_REVERT] as a Founding Father. [COLOR_HIGHLIGHT_TEXT]Religious buildings[COLOR_REVERT] will generate [COLOR_HIGHLIGHT_TEXT]Liberty Bells[COLOR_REVERT].</English>
-		<Portuguese>Dê um impulso à sua produção de Sino da Liberdade adotando [COLOR_TECH_TEXT]Miguel Hidalgo y Costilla[COLOR_REVERT] como Patrono. [COLOR_HIGHLIGHT_TEXT]Edifícios religiosos[COLOR_REVERT] gerarão [COLOR_HIGHLIGHT_TEXT]Sinos da Liberdade[COLOR_REVERT].</Portuguese>
+		<Portuguese>Dê um impulso à sua produção de Sino da Liberdade adotando [COLOR_TECH_TEXT]Miguel Hidalgo y Costilla[COLOR_REVERT] como Pai Fundador. [COLOR_HIGHLIGHT_TEXT]Edifícios religiosos[COLOR_REVERT] gerarão [COLOR_HIGHLIGHT_TEXT]Sinos da Liberdade[COLOR_REVERT].</Portuguese>
 		<French>Augmentez votre production de cloches de la liberté en adoptant [COLOR_TECH_TEXT]Miguel Hidalgo y Costilla[COLOR_REVERT] parmi vos Pères Fondateurs. Avec Hidalgo, les [COLOR_HIGHLIGHT_TEXT]bâtiments religieux[COLOR_REVERT] produisent également des [COLOR_HIGHLIGHT_TEXT]cloches de la liberté[COLOR_REVERT].</French>
 		<German>Milord, seid Ihr gottesfürchtig und willens, unsere [COLOR_HIGHLIGHT_TEXT]Freiheitsglocken[COLOR_REVERT] noch häufiger schlagen zu lassen? Dann lasst uns [COLOR_TECH_TEXT]Miguel Hidalgo y Costilla[COLOR_REVERT] willkommen heissen. Dieser Gründervater sorgt davor, dass alle unsere [COLOR_HIGHLIGHT_TEXT]Gotteshäuser[COLOR_REVERT] eine gewisse Anzahl [COLOR_HIGHLIGHT_TEXT]Freiheitsglocken[COLOR_REVERT] erzeugen.</German>
 	</TEXT>
@@ -3521,7 +3521,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_NATHANIAL_HAWTHORNE_STRATEGY</Tag>
 		<English>Get an instant boost to your [COLOR_HIGHLIGHT_TEXT]Liberty Bell[COLOR_REVERT] production by convincing [COLOR_TECH_TEXT]Nathaniel Hawthorne[COLOR_REVERT] to join your side. This Founding Father instantly creates three [COLOR_UNIT_TEXT]Elder Statesmen[COLOR_REVERT] in your capital settlement!</English>
-		<Portuguese>Aumente instantaneamente sua produção de [COLOR_HIGHLIGHT_TEXT]Sino da Liberdade[COLOR_REVERT] convencendo [COLOR_TECH_TEXT]Nathaniel Hawthorne[COLOR_REVERT] a se juntar a você. Este Patrono cria instantaneamente três [COLOR_UNIT_TEXT]Elder Statesmen[COLOR_REVERT] em sua colônia capital!</Portuguese>
+		<Portuguese>Aumente instantaneamente sua produção de [COLOR_HIGHLIGHT_TEXT]Sino da Liberdade[COLOR_REVERT] convencendo [COLOR_TECH_TEXT]Nathaniel Hawthorne[COLOR_REVERT] a se juntar a você. Este Pai Fundador cria instantaneamente três [COLOR_UNIT_TEXT]Elder Statesmen[COLOR_REVERT] em sua colônia capital!</Portuguese>
 		<French>Donnez un coup de fouet à votre production de [COLOR_HIGHLIGHT_TEXT]Cloches de la liberté[COLOR_REVERT] en convainquant [COLOR_TECH_TEXT]Nathaniel Hawthorne[COLOR_REVERT] de vous rejoindre. Ce Père fondateur crée instantanément trois [COLOR_UNIT_TEXT]hommes d'état aguerris[COLOR_REVERT] dans votre capitale !</French>
 		<German>Ihre [COLOR_HIGHLIGHT_TEXT]Freiheitsglocken[COLOR_REVERT]-Produktion erhöht sich schlagartig, wenn Sie [COLOR_TECH_TEXT]Nathaniel Hawthorne[COLOR_REVERT] dazu bringen, sich Ihnen anzuschließen. Dieser Gründervater erzeugt augenblicklich drei [COLOR_UNIT_TEXT]Weise Staatsmänner[COLOR_REVERT] in Ihrer Hauptsiedlung!</German>
 		<Italian>Aumenta istantaneamente la produzione di [COLOR_HIGHLIGHT_TEXT]campane della libertà[COLOR_REVERT], convincendo [COLOR_TECH_TEXT]Nathaniel Hawthorne[COLOR_REVERT] a schierarsi dalla tua parte. Questo Padre Fondatore crea istantaneamente tre [COLOR_UNIT_TEXT]statisti anziani[COLOR_REVERT] nella tua capitale!</Italian>
@@ -3571,7 +3571,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_NICOLAS_DE_VILLEGAGNON_STRATEGY</Tag>
 		<English>Increase the production of [COLOR_HIGHLIGHT_TEXT]Exotic Wood[COLOR_REVERT] and [COLOR_HIGHLIGHT_TEXT]Furniture[COLOR_REVERT] in your colony by adding [COLOR_TECH_TEXT]Sieur de Villegaignon[COLOR_REVERT] as a Founding Father. He will also supply two [COLOR_HIGHLIGHT_TEXT]Expert Lumberjacks[COLOR_REVERT].</English>
-		<Portuguese>Aumente a produção de [COLOR_HIGHLIGHT_TEXT]Madeira Exótica[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]Móveis[COLOR_REVERT] em sua colônia adicionando [COLOR_TECH_TEXT]Sieur de Villegaignon[COLOR_REVERT] como Patrono. Ele também fornecerá dois [COLOR_HIGHLIGHT_TEXT]Expert Lumberjacks[COLOR_REVERT].</Portuguese>
+		<Portuguese>Aumente a produção de [COLOR_HIGHLIGHT_TEXT]Madeira Exótica[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]Móveis[COLOR_REVERT] em sua colônia adicionando [COLOR_TECH_TEXT]Sieur de Villegaignon[COLOR_REVERT] como Pai Fundador. Ele também fornecerá dois [COLOR_HIGHLIGHT_TEXT]Expert Lumberjacks[COLOR_REVERT].</Portuguese>
 		<French>Augmentez votre production de [COLOR_HIGHLIGHT_TEXT]bois précieux[COLOR_REVERT] et de [COLOR_HIGHLIGHT_TEXT]meubles[COLOR_REVERT] en ajoutant [COLOR_TECH_TEXT]Sieur de Villegaignon[COLOR_REVERT] à vos Pères Fondateurs. Il apportera également avec lui [COLOR_HIGHLIGHT_TEXT]deux experts bûcherons[COLOR_REVERT].</French>
 		<German>Wenn es Euch interessant erscheint, die Verarbeitung von [COLOR_HIGHLIGHT_TEXT]Edelholz[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]Möbel[COLOR_REVERT] in Euren Kolonien merklich zu steigern, wäre [COLOR_TECH_TEXT]Sieur de Villegaignon[COLOR_REVERT] als Gründervater eine gute Wahl. Neben den Produktionsboni erhaltet Ihr ausserdem [COLOR_HIGHLIGHT_TEXT]2 Holzfäller[COLOR_REVERT].</German>
 	</TEXT>
@@ -3621,7 +3621,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_PATRICK_HENRY_STRATEGY</Tag>
 		<English>Buttress your people's revolutionary spirit by convincing [COLOR_TECH_TEXT]Patrick Henry[COLOR_REVERT] to join your side. This Founding Father significantly increases the number of [COLOR_HIGHLIGHT_TEXT]Liberty Bells[COLOR_REVERT] generated by your [COLOR_BUILDING_TEXT]Town Halls[COLOR_REVERT]!</English>
-		<Portuguese>Reforce o espírito revolucionário do seu povo convencendo [COLOR_TECH_TEXT]Patrick Henry[COLOR_REVERT] a se juntar ao seu lado. Este Patrono aumenta significativamente o número de [COLOR_HIGHLIGHT_TEXT]Sinos da Liberdade[COLOR_REVERT] gerados pelas suas [COLOR_BUILDING_TEXT]Câmaras Municipais[COLOR_REVERT]!</Portuguese>
+		<Portuguese>Reforce o espírito revolucionário do seu povo convencendo [COLOR_TECH_TEXT]Patrick Henry[COLOR_REVERT] a se juntar ao seu lado. Este Pai Fundador aumenta significativamente o número de [COLOR_HIGHLIGHT_TEXT]Sinos da Liberdade[COLOR_REVERT] gerados pelas suas [COLOR_BUILDING_TEXT]Câmaras Municipais[COLOR_REVERT]!</Portuguese>
 		<French>Renforcer le sentiment révolutionnaire de vos citoyens en convainquant [COLOR_TECH_TEXT]Patrick Henry[COLOR_REVERT] de vous rejoindre. Ce Père fondateur accroît de manière considérable le nombre de [COLOR_HIGHLIGHT_TEXT]Cloches de la liberté[COLOR_REVERT] générées par votre [COLOR_BUILDING_TEXT]hôtel de ville[COLOR_REVERT] !</French>
 		<German>Unterstützen Sie den Revolutionsgeist Ihrer Leute, indem Sie [COLOR_TECH_TEXT]Patrick Henry[COLOR_REVERT] überzeugen, sich Ihrer Sache anzuschließen. Dieser Gründervater erhöht die Anzahl der in Ihren [COLOR_BUILDING_TEXT]Rathäusern[COLOR_REVERT] erzeugten [COLOR_HIGHLIGHT_TEXT]Freiheitsglocken[COLOR_REVERT] beträchtlich!</German>
 		<Italian>Sprona lo spirito rivoluzionario della tua gente convincendo [COLOR_TECH_TEXT]Patrick Henry[COLOR_REVERT] a schierarsi al tuo fianco. Questo Padre Fondatore aumenta in modo significativo il numero di [COLOR_HIGHLIGHT_TEXT]campane della libertà[COLOR_REVERT] generate dai tuoi [COLOR_BUILDING_TEXT]municipi[COLOR_REVERT]!</Italian>
@@ -3723,7 +3723,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_PAUL_REVERE_STRATEGY</Tag>
 		<English>Improve the local defensive forces by adding [COLOR_TECH_TEXT]Paul Revere[COLOR_REVERT] to your colony as a Founding Father. When Revere joins your colony, all your colonial [COLOR_HIGHLIGHT_TEXT]Rangers[COLOR_REVERT] will move faster and you will get two more of these valuable units.</English>
-		<Portuguese>Melhore as forças defensivas locais adicionando [COLOR_TECH_TEXT]Paul Revere[COLOR_REVERT] à sua colônia como Patrono. Quando Revere se juntar à sua colônia, todos os seus [COLOR_HIGHLIGHT_TEXT]Rangers[COLOR_REVERT] coloniais se moverão mais rápido e você receberá mais duas dessas unidades valiosas.</Portuguese>
+		<Portuguese>Melhore as forças defensivas locais adicionando [COLOR_TECH_TEXT]Paul Revere[COLOR_REVERT] à sua colônia como Pai Fundador. Quando Revere se juntar à sua colônia, todos os seus [COLOR_HIGHLIGHT_TEXT]Rangers[COLOR_REVERT] coloniais se moverão mais rápido e você receberá mais duas dessas unidades valiosas.</Portuguese>
 		<French>Améliorez vos forces défensives en ajoutant [COLOR_TECH_TEXT]Paul Revere[COLOR_REVERT] à vos Pères Fondateurs. Lorsque Revere rejoint vos colonies, tous vos [COLOR_HIGHLIGHT_TEXT]gardes-forestiers[COLOR_REVERT] se déplaceront plus rapidement et deux de ces unités de valeur vous seront offertes.</French>
 		<German>Milord, mit [COLOR_TECH_TEXT]Paul Revere[COLOR_REVERT] können wir unsere einheimischen Truppen stärken. Revere sorgt nicht nur dafür, dass alle [COLOR_HIGHLIGHT_TEXT]Rangers[COLOR_REVERT] mehr Bewegungspunkte haben, sondern rekrutiert ausserdem gleich [COLOR_HIGHLIGHT_TEXT]2 dieser wertvollen Einheiten[COLOR_REVERT] für Eure Streitkräfte.</German>
 	</TEXT>
@@ -3773,7 +3773,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_PEDRO_ALVARES_CABRAL_STRATEGY</Tag>
 		<English>Looking to get back to Europe before your foes? Add [COLOR_TECH_TEXT]Pedro Álvares Cabral[COLOR_REVERT] to your colony as a Founding Father. All your ships will travel to and from Europe faster than ever. As well, Cabral reduces the price of purchasing land from the Natives.</English>
-		<Portuguese>Quer voltar para a Europa antes dos seus inimigos? Adicione [COLOR_TECH_TEXT]Pedro Álvares Cabral[COLOR_REVERT] à sua colônia como Patrono. Todos os seus navios viajarão de e para a Europa mais rápido do que nunca. Além disso, Cabral reduz o preço de compra de terras dos indígenas.</Portuguese>
+		<Portuguese>Quer voltar para a Europa antes dos seus inimigos? Adicione [COLOR_TECH_TEXT]Pedro Álvares Cabral[COLOR_REVERT] à sua colônia como Pai Fundador. Todos os seus navios viajarão de e para a Europa mais rápido do que nunca. Além disso, Cabral reduz o preço de compra de terras dos indígenas.</Portuguese>
 		<French>Envie de rallier l'Europe avant vos rivaux ? Accueillez parmi vous le Père fondateur [COLOR_TECH_TEXT]Pedro Álvares Cabral[COLOR_REVERT]. Vos navires traverseront l'atlantique plus rapidement que jamais. Cabral réduit également le prix d'achat des terres indigènes.</French>
 		<German>Wären Sie gern noch vor Ihren Feinden in Europa? Dann setzen Sie in Ihrer Kolonie [COLOR_TECH_TEXT]Pedro Álvares Cabral[COLOR_REVERT] als Gründervater ein. All Ihre Schiffe werden schneller als je zuvor nach Europa und zurück reisen. Außerdem reduziert Cabral den Preis des Landes, das Sie von den Ureinwohnern kaufen.</German>
 		<Italian>Vuoi arrivare in Europa prima degli avversari? Aggiungi [COLOR_TECH_TEXT]Pedro Álvares Cabral[COLOR_REVERT] alla tua colonia come Padre Fondatore. Tutte le tue navi viaggeranno da e per l'Europa più veloci che mai. Inoltre, Cabral riduce il prezzo per acquistare terra dai nativi.</Italian>
@@ -3823,7 +3823,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_PEDRO_DE_VALDIVIA_STRATEGY</Tag>
 		<English>Strengthen your [COLOR_HIGHLIGHT_TEXT]Conquistadores[COLOR_REVERT] by having [COLOR_TECH_TEXT]Pedro de Valdivia[COLOR_REVERT] join your colony as a Founding Father. When Pedro de Valdivia is on your side, he will bring a unit of conquistadores and also teach them how to fight more efficiently.</English>
-		<Portuguese>Fortaleça seus [COLOR_HIGHLIGHT_TEXT]Conquistadores[COLOR_REVERT] fazendo com que [COLOR_TECH_TEXT]Pedro de Valdivia[COLOR_REVERT] se junte à sua colônia como Patrono. Quando Pedro de Valdivia estiver ao seu lado, ele trará uma unidade de conquistadores e também os ensinará a lutar com mais eficiência.</Portuguese>
+		<Portuguese>Fortaleça seus [COLOR_HIGHLIGHT_TEXT]Conquistadores[COLOR_REVERT] fazendo com que [COLOR_TECH_TEXT]Pedro de Valdivia[COLOR_REVERT] se junte à sua colônia como Pai Fundador. Quando Pedro de Valdivia estiver ao seu lado, ele trará uma unidade de conquistadores e também os ensinará a lutar com mais eficiência.</Portuguese>
 		<French>Renforcez vos [COLOR_HIGHLIGHT_TEXT]Conquistadors[COLOR_REVERT] en ralliant [COLOR_TECH_TEXT]Pedro de Valdivia[COLOR_REVERT] à vos Pères Fondateurs. Lorsque Pedro de Valdivia est à vos côtés, il vous apportera une unité de conquisator et leur apprendra à combattre plus efficacement.</French>
 		<German>Wenn Ihr die Schlagkraft Eurer [COLOR_HIGHLIGHT_TEXT]Konquistadoren[COLOR_REVERT] ausbauen möchtet, kann Euch [COLOR_TECH_TEXT]Pedro de Valdivia[COLOR_REVERT] sehr dienlich sein. Mit diesem erfahrenen Konquistador an unserer Seite erhalten [COLOR_HIGHLIGHT_TEXT]alle Truppen dieses Typs[COLOR_REVERT] (auch die Berittenen) einen Kampfbonus. Zudem kommt Pedro de Valdivia nicht alleine, sondern bringt noch [COLOR_HIGHLIGHT_TEXT]1 Konquistador[COLOR_REVERT] mit.</German>
 	</TEXT>
@@ -3871,7 +3871,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_PEDRO_MENENDEZ_DE_AVILES_STRATEGY</Tag>
 		<English>Strengthen your fleet by adding [COLOR_TECH_TEXT]Pedro Menéndez de Avilés[COLOR_REVERT] to your colony as a Founding Father. All [COLOR_HIGHLIGHT_TEXT]non-military Ships[COLOR_REVERT] will add 10% to their strength.</English>
-		<Portuguese>Fortaleça sua frota adicionando [COLOR_TECH_TEXT]Pedro Menéndez de Avilés[COLOR_REVERT] à sua colônia como Patrono. Todos os [COLOR_HIGHLIGHT_TEXT]navios não militares[COLOR_REVERT] adicionarão 10% à sua força.</Portuguese>
+		<Portuguese>Fortaleça sua frota adicionando [COLOR_TECH_TEXT]Pedro Menéndez de Avilés[COLOR_REVERT] à sua colônia como Pai Fundador. Todos os [COLOR_HIGHLIGHT_TEXT]navios não militares[COLOR_REVERT] adicionarão 10% à sua força.</Portuguese>
 		<French>Renforcez votre flotte en ajoutant[COLOR_TECH_TEXT]Pedro Menéndez de Avilés[COLOR_REVERT] parmi vos Pères Fondateurs. Avec Menéndez, tous les [COLOR_HIGHLIGHT_TEXT]bateaux civils[COLOR_REVERT] gagneront 10% en puissance.</French>
 		<German>Wäre es in Eurem Sinne, wenn die [COLOR_HIGHLIGHT_TEXT]Kampfkraft der Handelsflotte[COLOR_REVERT] angehoben würde? Als Gründervater im Kontinentalkongress bewirkt [COLOR_TECH_TEXT]Pedro Menéndez de Avilés[COLOR_REVERT] einen dauerhaften Stärkebonus von 10% für [COLOR_HIGHLIGHT_TEXT]alle Handelsschiffe[COLOR_REVERT].</German>
 	</TEXT>
@@ -3921,7 +3921,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_PETER_MINUIT_STRATEGY</Tag>
 		<English>Up your population by adding [COLOR_TECH_TEXT]Peter Minuit[COLOR_REVERT] to your colony as a Founding Father. With Peter Minuit on your side, recruiting units from Europe is significantly cheaper.</English>
-		<Portuguese>Aumente sua população adicionando [COLOR_TECH_TEXT]Peter Minuit[COLOR_REVERT] à sua colônia como Patrono. Com Peter Minuit ao seu lado, recrutar unidades na Europa é significativamente mais barato.</Portuguese>
+		<Portuguese>Aumente sua população adicionando [COLOR_TECH_TEXT]Peter Minuit[COLOR_REVERT] à sua colônia como Pai Fundador. Com Peter Minuit ao seu lado, recrutar unidades na Europa é significativamente mais barato.</Portuguese>
 		<French>Augmenter la croissance démographique de vos colonies en adoptant [COLOR_TECH_TEXT]Peter Minuit[COLOR_REVERT] comme Père fondateur. Grâce à lui, le prix d'achat des unités européennes sera considérablement réduit.</French>
 		<German>Vergrößern Sie Ihre Einwohnerzahl, indem Sie Ihrer Kolonie [COLOR_TECH_TEXT]Peter Minuit[COLOR_REVERT] als Gründervater hinzufügen. Mit Peter Minuit auf Ihrer Seite wird es wesentlich billiger, Einheiten aus Europa zu rekrutieren.</German>
 		<Italian>Aumenta la popolazione aggiungendo [COLOR_TECH_TEXT]Peter Minuit[COLOR_REVERT] alla tua colonia come Padre Fondatore. Sarà molto meno costoso reclutare unità in Europa, con Peter Minuit al tuo fianco.</Italian>
@@ -3971,7 +3971,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_PIET_HEYN_STRATEGY</Tag>
 		<English>Increase your fleet by adding Admiral [COLOR_TECH_TEXT]Piet Hein[COLOR_REVERT] to your colony as a Founding Father. He will bring two [COLOR_HIGHLIGHT_TEXT]West Indiamen[COLOR_REVERT] with him.</English>
-		<Portuguese>Aumente sua frota adicionando o Almirante [COLOR_TECH_TEXT]Piet Hein[COLOR_REVERT] à sua colônia como Patrono. Ele trará dois [COLOR_HIGHLIGHT_TEXT]Navios da Companhia das Índias Ocidentais[COLOR_REVERT] com ele.</Portuguese>
+		<Portuguese>Aumente sua frota adicionando o Almirante [COLOR_TECH_TEXT]Piet Hein[COLOR_REVERT] à sua colônia como Pai Fundador. Ele trará dois [COLOR_HIGHLIGHT_TEXT]Navios da Companhia das Índias Ocidentais[COLOR_REVERT] com ele.</Portuguese>
 		<French>Augmentez votre flotte en ajoutant l'Amiral [COLOR_TECH_TEXT]Piet Hein[COLOR_REVERT] à vos Pères Fondateurs. Il apportera avec lui [COLOR_HIGHLIGHT_TEXT]2 navires des Indes Occidentales[COLOR_REVERT].</French>
 		<German>Admiral [COLOR_TECH_TEXT]Piet Hein[COLOR_REVERT] kann sehr gelegen kommen, falls Ihr eine Erweiterung der Handelsflotte in Erwägung zieht. Als Gründervater rekrutiert Piet Hein [COLOR_HIGHLIGHT_TEXT]2 Westindienfahrer[COLOR_REVERT] für den Dienst in Eurer ruhmreichen Marine.</German>
 	</TEXT>
@@ -4071,7 +4071,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_ROBERT_LA_SALLE_STRATEGY</Tag>
 		<English>You can trounce any settlement that stands in your path with [COLOR_TECH_TEXT]Sieur de La Salle[COLOR_REVERT] on your side. This Founding Father provides a combat bonus to all your units whenever they attack settlements.</English>
-		<Portuguese>Você pode derrotar qualquer colônia que estiver em seu caminho com [COLOR_TECH_TEXT]Sieur de La Salle[COLOR_REVERT] ao seu lado. Este Patrono fornece um bônus de combate a todas as suas unidades sempre que atacam colônias.</Portuguese>
+		<Portuguese>Você pode derrotar qualquer colônia que estiver em seu caminho com [COLOR_TECH_TEXT]Sieur de La Salle[COLOR_REVERT] ao seu lado. Este Pai Fundador fornece um bônus de combate a todas as suas unidades sempre que atacam colônias.</Portuguese>
 		<French>Avec [COLOR_TECH_TEXT]Sieur de La Salle[COLOR_REVERT] dans vos rangs, aucune colonie ennemie ne pourra plus vous résister. Ce Père fondateur octroie un bonus de combat à toutes vos unités lorsqu'elles prennent une colonie d'assaut.</French>
 		<German>Dieser Gründervater gewährt allen Siedlungen einen Verteidigungsbonus: Jede Siedlung erhält sofort und kostenlos Friesische Reiter.</German>
 		<Italian>Potrai conquistare ogni insediamento sulla tua strada, con [COLOR_TECH_TEXT]Sieur de La Salle[COLOR_REVERT] al tuo fianco. Questo Padre Fondatore dà un bonus di combattimento a tutte le tue unità, quando attaccano degli insediamenti.</Italian>
@@ -4121,7 +4121,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_ROBERT_MORRIS_STRATEGY</Tag>
 		<English>Strengthen your [COLOR_HIGHLIGHT_TEXT]Shipbuilding[COLOR_REVERT] by having [COLOR_TECH_TEXT]Robert Morris[COLOR_REVERT] join your colony as a Founding Father. With Robert Morris on your side, hemp, rope and sailcloth are produced much more efficiently.</English>
-		<Portuguese>Fortaleça sua [COLOR_HIGHLIGHT_TEXT]Construção Naval[COLOR_REVERT] fazendo com que [COLOR_TECH_TEXT]Robert Morris[COLOR_REVERT] se junte à sua colônia como Patrono. Com Robert Morris ao seu lado, o cânhamo, a corda e a lona são produzidos com muito mais eficiência.</Portuguese>
+		<Portuguese>Fortaleça sua [COLOR_HIGHLIGHT_TEXT]Construção Naval[COLOR_REVERT] fazendo com que [COLOR_TECH_TEXT]Robert Morris[COLOR_REVERT] se junte à sua colônia como Pai Fundador. Com Robert Morris ao seu lado, o cânhamo, a corda e a lona são produzidos com muito mais eficiência.</Portuguese>
 		<French>Renforcez votre [COLOR_HIGHLIGHT_TEXT]production navale[COLOR_REVERT] en ralliant [COLOR_TECH_TEXT]Robert Morris[COLOR_REVERT] à vos Pères Fondateurs. Avec Morris à vos côtés, le chanvre, le cordelage et les voiles seront produits avec une plus grande efficacité.</French>
 		<German>Milord, wenn wir den [COLOR_HIGHLIGHT_TEXT]Schiffbau[COLOR_REVERT] für unsere Kriegs- und Handelsmarine fördern wollen, sollten wir [COLOR_TECH_TEXT]Robert Morris[COLOR_REVERT] im Kontinentalkongress willkommen heissen. Mit Robert Morris als Gründervater wird die Produktion von [COLOR_HIGHLIGHT_TEXT]Hanf, Seilen und Segeltuch[COLOR_REVERT] in unseren Kolonien deutlich gesteigert.</German>
 	</TEXT>
@@ -4171,7 +4171,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_ROGER_WILLIAMS_STRATEGY</Tag>
 		<English>Trying to make nice with the Natives? Convincing [COLOR_TECH_TEXT]Roger Williams[COLOR_REVERT] to join your side is a superb way to do just that, as this Founding Father will increase the rate that [COLOR_UNIT_TEXT]Converted Natives[COLOR_REVERT] join your side and will also improve your relations with the Natives!</English>
-		<Portuguese>Tentando ser gentil com os nativos? Convencer [COLOR_TECH_TEXT]Roger Williams[COLOR_REVERT] a se juntar ao seu lado é uma ótima maneira de fazer exatamente isso, pois este Patrono aumentará a taxa de [COLOR_UNIT_TEXT]nativos convertidos[COLOR_REVERT] se juntarem ao seu lado e também melhorará suas relações com os nativos!</Portuguese>
+		<Portuguese>Tentando ser gentil com os nativos? Convencer [COLOR_TECH_TEXT]Roger Williams[COLOR_REVERT] a se juntar ao seu lado é uma ótima maneira de fazer exatamente isso, pois este Pai Fundador aumentará a taxa de [COLOR_UNIT_TEXT]nativos convertidos[COLOR_REVERT] se juntarem ao seu lado e também melhorará suas relações com os nativos!</Portuguese>
 		<French>Vous rêvez d'entente cordiale avec les indigènes ? Dans ce cas, vous ne trouverez pas meilleur moyen de le faire que de rallier le Père fondateur [COLOR_TECH_TEXT]Roger Williams[COLOR_REVERT] à votre cause. Williams augmentera le taux d'apparition d'[COLOR_UNIT_TEXT]indigènes convertis[COLOR_REVERT] et améliorera vos relations avec les natifs !</French>
 		<German>Möchten Sie sich mit den Ureinwohnern gut stellen? Dann bitten Sie [COLOR_TECH_TEXT]Roger Williams[COLOR_REVERT], sich Ihnen anzuschließen, da dieser Gründervater die Rate der [COLOR_UNIT_TEXT]Konvertierten Ureinwohner[COLOR_REVERT] erhöht, die sich auf Ihre Seite schlagen, und außerdem Ihr Verhältnis zu den Ureinwohnern verbessert!</German>
 		<Italian>Vuoi andare d'accordo con i nativi? Convincendo [COLOR_TECH_TEXT]Roger Williams[COLOR_REVERT] a unirsi alla tua causa è un ottimo modo per riuscirci, dato che questo Padre Fondatore aumenterà il ritmo a cui si uniscono a te i [COLOR_UNIT_TEXT]nativi convertiti[COLOR_REVERT], oltre a migliorare le tue relazioni con i nativi!</Italian>
@@ -4223,7 +4223,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_SAMUEL_ADAMS_STRATEGY</Tag>
 		<English>Put your tax rate to work by adopting [COLOR_TECH_TEXT]Samuel Adams[COLOR_REVERT] as a Founding Father. With Samuel Adams on your side, your settlements will generate bonus [COLOR_HIGHLIGHT_TEXT]Liberty Bells[COLOR_REVERT] based on your tax rate! The higher the taxes, the greater the bonus.</English>
-		<Portuguese>Coloque sua taxa de imposto em prática adotando [COLOR_TECH_TEXT]Samuel Adams[COLOR_REVERT] como Patrono. Com Samuel Adams ao seu lado, suas colônias gerarão bônus [COLOR_HIGHLIGHT_TEXT]Sinos da Liberdade[COLOR_REVERT] com base na sua alíquota de imposto! Quanto maiores os impostos, maior o bônus.</Portuguese>
+		<Portuguese>Coloque sua taxa de imposto em prática adotando [COLOR_TECH_TEXT]Samuel Adams[COLOR_REVERT] como Pai Fundador. Com Samuel Adams ao seu lado, suas colônias gerarão bônus [COLOR_HIGHLIGHT_TEXT]Sinos da Liberdade[COLOR_REVERT] com base na sua alíquota de imposto! Quanto maiores os impostos, maior o bônus.</Portuguese>
 		<French>Profitez de votre taux d'imposition grâce à [COLOR_TECH_TEXT]Samuel Adams[COLOR_REVERT]. Grâce à ce Père fondateur, vos colonies génèrent des [COLOR_HIGHLIGHT_TEXT]Cloches de la liberté[COLOR_REVERT] supplémentaires en fonction de votre taux d'imposition. Plus vous payez d'impôts, plus vous génèrerez de cloches !</French>
 		<German>Lassen Sie Ihren Steuersatz für sich arbeiten, indem Sie [COLOR_TECH_TEXT]Samuel Adams[COLOR_REVERT] als Gründervater einsetzen. Mit Samuel Adams erzeugen Ihre Siedlungen zusätzliche [COLOR_HIGHLIGHT_TEXT]Freiheitsglocken[COLOR_REVERT], und zwar basierend auf Ihrem Steuersatz! Je höher die Steuern, desto größer der Bonus.</German>
 		<Italian>Sfrutta la percentuale di tasse, adottando [COLOR_TECH_TEXT]Samuel Adams[COLOR_REVERT] come Padre Fondatore. Con Samuel Adams al tuo fianco, i tuoi insediamenti produrranno [COLOR_HIGHLIGHT_TEXT]campane della libertà[COLOR_REVERT] aggiuntive in relazione alla percentuale di tasse! Più saranno alte e maggiore sarà il bonus.</Italian>
@@ -4273,7 +4273,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_SAMUEL_BLOMMAERT_STRATEGY</Tag>
 		<English>Increase your merchant fleet by adding [COLOR_TECH_TEXT]Samuel Blommaert[COLOR_REVERT] to your colony as a Founding Father. He will bring two [COLOR_HIGHLIGHT_TEXT]Brigantines[COLOR_REVERT] with him.</English>
-		<Portuguese>Aumente sua frota mercante adicionando [COLOR_TECH_TEXT]Samuel Blommaert[COLOR_REVERT] à sua colônia como Patrono. Ele trará dois [COLOR_HIGHLIGHT_TEXT]Brigantines[COLOR_REVERT] com ele.</Portuguese>
+		<Portuguese>Aumente sua frota mercante adicionando [COLOR_TECH_TEXT]Samuel Blommaert[COLOR_REVERT] à sua colônia como Pai Fundador. Ele trará dois [COLOR_HIGHLIGHT_TEXT]Brigantines[COLOR_REVERT] com ele.</Portuguese>
 		<French>Augmentez votre flotte en ralliant [COLOR_TECH_TEXT]Samuel Blommaert[COLOR_REVERT] à votre cause. Il vous apportera [COLOR_HIGHLIGHT_TEXT]2 Brigantins[COLOR_REVERT] avec lui</French>
 		<German>Ihr könntet Eure Handelsmarine vergrössern, indem Ihr [COLOR_TECH_TEXT]Samuel Blommaert[COLOR_REVERT] im Kontinentalkongress aufnehmt. Bei seiner Ankunft wird uns dieser Gründervater sogleich [COLOR_HIGHLIGHT_TEXT]2 Brigantinen[COLOR_REVERT] zur freien Verfügung stellen.</German>
 	</TEXT>
@@ -4321,7 +4321,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_SAMUEL_NICOLAS_MONARDES_STRATEGY</Tag>
 		<English>Increase the production of [COLOR_HIGHLIGHT_TEXT]Coca[COLOR_REVERT] in your colony by adding [COLOR_TECH_TEXT]Nicolás Monardes[COLOR_REVERT] as a Founding Father. He will also supply two [COLOR_HIGHLIGHT_TEXT]Expert Coca Planters[COLOR_REVERT] and two [COLOR_HIGHLIGHT_TEXT]Native Slaves[COLOR_REVERT].</English>
-		<Portuguese>Aumente a produção de [COLOR_HIGHLIGHT_TEXT]Coca[COLOR_REVERT] em sua colônia adicionando [COLOR_TECH_TEXT]Nicolás Monardes[COLOR_REVERT] como Patrono. Ele também fornecerá dois [COLOR_HIGHLIGHT_TEXT]Expert Coca Planters[COLOR_REVERT] e dois [COLOR_HIGHLIGHT_TEXT]Native Slaves[COLOR_REVERT].</Portuguese>
+		<Portuguese>Aumente a produção de [COLOR_HIGHLIGHT_TEXT]Coca[COLOR_REVERT] em sua colônia adicionando [COLOR_TECH_TEXT]Nicolás Monardes[COLOR_REVERT] como Pai Fundador. Ele também fornecerá dois [COLOR_HIGHLIGHT_TEXT]Expert Coca Planters[COLOR_REVERT] e dois [COLOR_HIGHLIGHT_TEXT]Native Slaves[COLOR_REVERT].</Portuguese>
 		<French>Augmentez votre production de [COLOR_HIGHLIGHT_TEXT]coca[COLOR_REVERT] en ajoutant [COLOR_TECH_TEXT]Nicolás Monardes[COLOR_REVERT] à vos Pères Fondateurs. Il apportera également avec lui [COLOR_HIGHLIGHT_TEXT]deux experts planteurs de coca[COLOR_REVERT].</French>
 		<German>Wenn es Euch interessant erscheint, die Produktion von [COLOR_HIGHLIGHT_TEXT]Coca-Blättern[COLOR_REVERT] in Euren Kolonien merklich zu steigern, wäre [COLOR_TECH_TEXT]Nicolás Monardes[COLOR_REVERT] als Gründervater eine gute Wahl. Neben den Produktionsboni erhaltet Ihr ausserdem [COLOR_HIGHLIGHT_TEXT]2 Erfahrene Cocasammler[COLOR_REVERT] und [COLOR_HIGHLIGHT_TEXT]2 Ureinwohnersklaven[COLOR_REVERT].</German>
 	</TEXT>
@@ -4423,7 +4423,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_THOMAS_HOOKER_STRATEGY</Tag>
 		<English>Interested in getting some converted Natives onto your side? Adopting[COLOR_TECH_TEXT] Thomas Hooker[COLOR_REVERT] as a Founding Father will instantly create three [COLOR_UNIT_TEXT]Jesuit Missionaries[COLOR_REVERT] in your capital, letting you create more missions than ever before!</English>
-		<Portuguese>Interessado em ter alguns nativos convertidos ao seu lado? Adotar[COLOR_TECH_TEXT] Thomas Hooker[COLOR_REVERT] como Patrono criará instantaneamente três [COLOR_UNIT_TEXT]Missionários Jesuítas[COLOR_REVERT] em sua capital, permitindo que você crie mais missões do que nunca!</Portuguese>
+		<Portuguese>Interessado em ter alguns nativos convertidos ao seu lado? Adotar[COLOR_TECH_TEXT] Thomas Hooker[COLOR_REVERT] como Pai Fundador criará instantaneamente três [COLOR_UNIT_TEXT]Missionários Jesuítas[COLOR_REVERT] em sua capital, permitindo que você crie mais missões do que nunca!</Portuguese>
 		<French>Que diriez-vous du soutien de quelques indigènes convertis ? Adopter le Père fondateur [COLOR_TECH_TEXT]Thomas Hooker[COLOR_REVERT] et il créera instantanément 3 [COLOR_UNIT_TEXT]missionnaires jésuites[COLOR_REVERT] dans votre capitale, vous permettant d'établir davantage encore de missions !</French>
 		<German>Hätten Sie gern Unterstützung von Konvertierten Ureinwohnern? Wenn Sie [COLOR_TECH_TEXT]Thomas Hooker[COLOR_REVERT] als Gründervater einsetzen, entstehen in Ihrer Hauptstadt sofort drei [COLOR_UNIT_TEXT]Jesuitenmissionare[COLOR_REVERT], so dass Sie mehr Missionen als je zuvor errichten können!</German>
 		<Italian>Ti interessa avere dei nativi convertiti al tuo fianco? Adotta [COLOR_TECH_TEXT]Thomas Hooker[COLOR_REVERT] come Padre Fondatore e otterrai subito tre [COLOR_UNIT_TEXT]missionari gesuiti[COLOR_REVERT] nella tua capitale, cosÃ¬ potrai fondare più missioni di quante pensassi!</Italian>
@@ -4473,7 +4473,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_THOMAS_JEFFERSON_STRATEGY</Tag>
 		<English>Add a major boost to your Liberty Bell production by adopting [COLOR_TECH_TEXT]Thomas Jefferson[COLOR_REVERT] as a Founding Father. [COLOR_HIGHLIGHT_TEXT]Liberty Bell[COLOR_REVERT] production in all your settlements will increase dramatically!</English>
-		<Portuguese>Adicione um grande impulso à sua produção de Sino da Liberdade adotando [COLOR_TECH_TEXT]Thomas Jefferson[COLOR_REVERT] como Patrono. A produção de [COLOR_HIGHLIGHT_TEXT]Sino da Liberdade[COLOR_REVERT] em todos os suas colônias aumentará dramaticamente!</Portuguese>
+		<Portuguese>Adicione um grande impulso à sua produção de Sino da Liberdade adotando [COLOR_TECH_TEXT]Thomas Jefferson[COLOR_REVERT] como Pai Fundador. A produção de [COLOR_HIGHLIGHT_TEXT]Sino da Liberdade[COLOR_REVERT] em todos os suas colônias aumentará dramaticamente!</Portuguese>
 		<French>Augmentez votre production de cloches de la liberté en ralliant [COLOR_TECH_TEXT]Thomas Jefferson[COLOR_REVERT] à vos Pères Fondateurs.</French>
 		<German>Unsere Freiheitsglocken werden unüberhörbar, wenn [COLOR_TECH_TEXT]Thomas Jefferson[COLOR_REVERT] dem Kontinentalkongress beitritt. Dieser aufgeklärte Staatsmann bewirkt einen gewaltigen Bonus bei der Herstellung von [COLOR_HIGHLIGHT_TEXT]Freiheitsglocken[COLOR_REVERT] in unseren Kolonien!</German>
 	</TEXT>
@@ -4523,7 +4523,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_THOMAS_PAINE_STRATEGY</Tag>
 		<English>Turn your tax rate into something useful by adopting [COLOR_TECH_TEXT]Thomas Paine[COLOR_REVERT] as a Founding Father. With Paine on your side, production in all your colonies will be increased by the current tax rate Europe has imposed on you!</English>
-		<Portuguese>Transforme sua taxa de imposto em algo útil adotando [COLOR_TECH_TEXT]Thomas Paine[COLOR_REVERT] como Patrono. Com Paine ao seu lado, a produção em todas as suas colônias aumentará de acordo com a atual taxa de imposto que a Europa impôs a você!</Portuguese>
+		<Portuguese>Transforme sua taxa de imposto em algo útil adotando [COLOR_TECH_TEXT]Thomas Paine[COLOR_REVERT] como Pai Fundador. Com Paine ao seu lado, a produção em todas as suas colônias aumentará de acordo com a atual taxa de imposto que a Europa impôs a você!</Portuguese>
 		<French>Tirez profit de votre taux d'imposition en faisant de [COLOR_TECH_TEXT]Thomas Paine[COLOR_REVERT] l'un de vos Pères fondateurs. Avec Paine à votre côté, la production de toutes vos colonies augmentera du taux d'imposition que l'Europe vous impose !</French>
 		<German>Machen Sie sich Ihren Steuersatz zunutze, indem Sie [COLOR_TECH_TEXT]Thomas Paine[COLOR_REVERT] als Gründervater einsetzen. Mit Paine erhöht sich die Produktion in all Ihren Kolonien um den derzeitigen Steuersatz, den Europa Ihnen aufgedrückt hat!</German>
 		<Italian>Trasforma la percentuale di tasse in qualcosa di utile, prendendo [COLOR_TECH_TEXT]Thomas Paine[COLOR_REVERT] come Padre Fondatore. Con Paine al tuo fianco, la produzione in tutte le tue colonie aumenterà della percentuale di tasse che ti è stata imposta dall'Europa!</Italian>
@@ -4573,7 +4573,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_TOME_DE_SOUSA_STRATEGY</Tag>
 		<English>Increase your population by adding [COLOR_TECH_TEXT]Tomé de Sousa[COLOR_REVERT] to your colony as a Founding Father. He will bring [COLOR_HIGHLIGHT_TEXT]several colonists[COLOR_REVERT] with him.</English>
-		<Portuguese>Aumente sua população adicionando [COLOR_TECH_TEXT]Tomé de Sousa[COLOR_REVERT] à sua colônia como Patrono. Ele trará [COLOR_HIGHLIGHT_TEXT]vários colonos[COLOR_REVERT] com ele.</Portuguese>
+		<Portuguese>Aumente sua população adicionando [COLOR_TECH_TEXT]Tomé de Sousa[COLOR_REVERT] à sua colônia como Pai Fundador. Ele trará [COLOR_HIGHLIGHT_TEXT]vários colonos[COLOR_REVERT] com ele.</Portuguese>
 		<French>Augmentez votre population en ajoutant [COLOR_TECH_TEXT]Tomé de Sousa[COLOR_REVERT] parmi vos Pères Fondateurs. Il apportera de [COLOR_HIGHLIGHT_TEXT]nombreux colons[COLOR_REVERT] avec lui.</French>
 		<German>Käme Euch ein einmaliger Bevölkerungszuwachs in den Kolonien gelegen, Milord? Dann wäre es angebracht, [COLOR_TECH_TEXT]Tomé de Sousa[COLOR_REVERT] im Kontinentalkongress willkommen zu heissen. Bei seiner Ankunft bringt dieser Gründervater nicht weniger als [COLOR_HIGHLIGHT_TEXT]1 Missionar, 2 Schuldknechte, 2 freie Kolonisten[COLOR_REVERT] sowie [COLOR_HIGHLIGHT_TEXT]1 Einheit Offiziere[COLOR_REVERT] mit.</German>
 	</TEXT>
@@ -4623,7 +4623,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_VACO_NUNEZ_DE_BALBOA_STRATEGY</Tag>
 		<English>Hunker down and hold your ground with [COLOR_TECH_TEXT]Vasco Núñez de Balboa[COLOR_REVERT]. This Founding Father increases the defense value of all units in your cities by 25%!</English>
-		<Portuguese>Agache-se e mantenha-se firme com [COLOR_TECH_TEXT]Vasco Núñez de Balboa[COLOR_REVERT]. Este Patrono aumenta o valor de defesa de todas as unidades em suas cidades em 25%!</Portuguese>
+		<Portuguese>Agache-se e mantenha-se firme com [COLOR_TECH_TEXT]Vasco Núñez de Balboa[COLOR_REVERT]. Este Pai Fundador aumenta o valor de defesa de todas as unidades em suas cidades em 25%!</Portuguese>
 		<French>Fortifiez et maintenez vos positions grâce à [COLOR_TECH_TEXT]Vasco Núñez de Balboa[COLOR_REVERT]. Ce Père fondateur accroît la défense de toutes vos unités en poste à l'intérieur de vos villes de 25% !</French>
 		<German>Verteidigen Sie Ihre Liegenschaften mit [COLOR_TECH_TEXT]Vasco Núñez de Balboa[COLOR_REVERT]! Dieser Gründervater erhöht den Verteidigungswert aller in Ihren Städten stationierten Einheiten um 25%!</German>
 		<Italian>Arroccati e difenditi, grazie a [COLOR_TECH_TEXT]Vasco Núñez de Balboa[COLOR_REVERT]. Questo Padre Fondatore aumenta del 25% il valore difensivo di tutte le unità negli insediamenti!</Italian>
@@ -4673,7 +4673,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_WALTER_RALEIGH_STRATEGY</Tag>
 		<English>Increase your fleet by adding [COLOR_TECH_TEXT]Sir Walter Raleigh[COLOR_REVERT] to your colony as a Founding Father. He will bring two [COLOR_HIGHLIGHT_TEXT]Ships of the Line[COLOR_REVERT] with him.</English>
-		<Portuguese>Aumente sua frota adicionando [COLOR_TECH_TEXT]Sir Walter Raleigh[COLOR_REVERT] à sua colônia como Patrono. Ele trará dois [COLOR_HIGHLIGHT_TEXT]Navios de Linha[COLOR_REVERT] com ele.</Portuguese>
+		<Portuguese>Aumente sua frota adicionando [COLOR_TECH_TEXT]Sir Walter Raleigh[COLOR_REVERT] à sua colônia como Pai Fundador. Ele trará dois [COLOR_HIGHLIGHT_TEXT]Navios de Linha[COLOR_REVERT] com ele.</Portuguese>
 		<French>Augmentez votre flotte en ajoutant [COLOR_TECH_TEXT]Sir Walter Raleigh[COLOR_REVERT] à vos Pères Fondateurs. Raleigh apportera avec lui [COLOR_HIGHLIGHT_TEXT]2 galions de guerre[COLOR_REVERT].</French>
 		<German>Mit Sir [COLOR_TECH_TEXT]Sir Walter Raleigh[COLOR_REVERT] hätten wir die Gelegenheit, die [COLOR_HIGHLIGHT_TEXT]Kriegsflotte[COLOR_REVERT] auf einen Schlag signifikant zu vergrössern: Der Mann verspricht, Euch bei seiner Ankunft augenblicklich [COLOR_HIGHLIGHT_TEXT]2 Linienschiffe[COLOR_REVERT] zur Verfügung zu stellen.</German>
 	</TEXT>
@@ -4723,7 +4723,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_WASHINGTON_IRVING_STRATEGY</Tag>
 		<English>Turn your education into liberation with [COLOR_TECH_TEXT]Washington Irving[COLOR_REVERT] on your side. This Founding Father causes [COLOR_BUILDING_TEXT]Schoolhouses[COLOR_REVERT], [COLOR_BUILDING_TEXT]Colleges[COLOR_REVERT] and [COLOR_BUILDING_TEXT]Universities[COLOR_REVERT] to produce [COLOR_HIGHLIGHT_TEXT]Liberty Bells[COLOR_REVERT] in addition to their normal bonuses! As a plus, the higher level the buildings, the more bonus Bells they produce.</English>
-		<Portuguese>Transforme sua educação em libertação com [COLOR_TECH_TEXT]Washington Irving[COLOR_REVERT] ao seu lado. Este Patrono faz com que [COLOR_BUILDING_TEXT]Escolas[COLOR_REVERT], [COLOR_BUILDING_TEXT]Faculdades[COLOR_REVERT] e [COLOR_BUILDING_TEXT]Universidades[COLOR_REVERT] produzam [COLOR_HIGHLIGHT_TEXT]Sinos da Liberdade[COLOR_REVERT] além de seus bônus normais! Além disso, quanto mais alto o nível dos edifícios, mais sinos bônus eles produzem.</Portuguese>
+		<Portuguese>Transforme sua educação em libertação com [COLOR_TECH_TEXT]Washington Irving[COLOR_REVERT] ao seu lado. Este Pai Fundador faz com que [COLOR_BUILDING_TEXT]Escolas[COLOR_REVERT], [COLOR_BUILDING_TEXT]Faculdades[COLOR_REVERT] e [COLOR_BUILDING_TEXT]Universidades[COLOR_REVERT] produzam [COLOR_HIGHLIGHT_TEXT]Sinos da Liberdade[COLOR_REVERT] além de seus bônus normais! Além disso, quanto mais alto o nível dos edifícios, mais sinos bônus eles produzem.</Portuguese>
 		<French>Faites de l'éducation la voie vers la libération en accueillant au sein de votre colonie le Père fondateur [COLOR_TECH_TEXT]Washington Irving[COLOR_REVERT]. Grâce à Irving, les [COLOR_BUILDING_TEXT]écoles[COLOR_REVERT], [COLOR_BUILDING_TEXT]lycées[COLOR_REVERT] et [COLOR_BUILDING_TEXT]universités[COLOR_REVERT] génèrent des [COLOR_HIGHLIGHT_TEXT]Cloches de la liberté[COLOR_REVERT] en plus de leur bonus habituels ! De plus, plus le niveau de vos bâtiments est élevé, plus ils produiront de cloches.</French>
 		<German>Bildung ist Freiheit, wenn Ihnen [COLOR_TECH_TEXT]Washington Irving[COLOR_REVERT] zur Seite steht. Dieser Gründervater sorgt dafür, dass [COLOR_BUILDING_TEXT]Schulen[COLOR_REVERT], [COLOR_BUILDING_TEXT]Akademien[COLOR_REVERT] und [COLOR_BUILDING_TEXT]Universitäten[COLOR_REVERT] zusätzlich zu ihren regulären Boni [COLOR_HIGHLIGHT_TEXT]Freiheitsglocken[COLOR_REVERT] produzieren! Dabei produzieren höherrangige Gebäude auch mehr Bonus-Glocken.</German>
 		<Italian>Con [COLOR_TECH_TEXT]Washington Irving[COLOR_REVERT] dalla tua parte potrai trasformare l'educazione in liberazione. Questo Padre Fondatore fa sÃ¬ che [COLOR_BUILDING_TEXT]scuole[COLOR_REVERT], [COLOR_BUILDING_TEXT]college[COLOR_REVERT] e [COLOR_BUILDING_TEXT]università[COLOR_REVERT] producano anche [COLOR_HIGHLIGHT_TEXT]campane della libertà[COLOR_REVERT], oltre ai loro normali bonus! Inoltre, più è alto il livello dell'edificio e più campane bonus produrrà.</Italian>
@@ -4773,7 +4773,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_WILLEM_BARENTS_STRATEGY</Tag>
 		<English>Hunt the giants of the oceans by adding [COLOR_TECH_TEXT]Willem Barentsz[COLOR_REVERT] to your colony as a Founding Father. When Barentsz joins your colony, you will get two [COLOR_HIGHLIGHT_TEXT]whaling ships[COLOR_REVERT] and all your whaling ships will move faster.</English>
-		<Portuguese>Cace os gigantes dos oceanos adicionando [COLOR_TECH_TEXT]Willem Barentsz[COLOR_REVERT] à sua colônia como Patrono. Quando Barentsz se juntar à sua colônia, você receberá dois [COLOR_HIGHLIGHT_TEXT]navios baleeiros[COLOR_REVERT] e todos os seus navios baleeiros se moverão mais rápido.</Portuguese>
+		<Portuguese>Cace os gigantes dos oceanos adicionando [COLOR_TECH_TEXT]Willem Barentsz[COLOR_REVERT] à sua colônia como Pai Fundador. Quando Barentsz se juntar à sua colônia, você receberá dois [COLOR_HIGHLIGHT_TEXT]navios baleeiros[COLOR_REVERT] e todos os seus navios baleeiros se moverão mais rápido.</Portuguese>
 		<French>Montez les voiles pour partir à la chasse aux géants des mers en ajoutant [COLOR_TECH_TEXT]Willem Barentsz[COLOR_REVERT] à vos Pères Fondateurs. Lorsque Barentsz a rejoint vos colonies, vous obtiendrez gratuitement deux [COLOR_HIGHLIGHT_TEXT]baleiniers[COLOR_REVERT] et ce type de navire pourra se déplacer plus rapidement.</French>
 		<German>Mit [COLOR_TECH_TEXT]Willem Barentsz[COLOR_REVERT] an Eurer Seite werdet Ihr zum größten Waljäger in der Neuen Welt! Wenn Barentsz zu Euch stösst, erhaltet Ihr nicht nur [COLOR_HIGHLIGHT_TEXT]2 Walfänger-Boote[COLOR_REVERT], sondern ebenfalls [COLOR_HIGHLIGHT_TEXT]zusätzliche Bewegungspunkte[COLOR_REVERT] für alle Schiffe dieses Typs.</German>
 	</TEXT>
@@ -4823,7 +4823,7 @@
 	<TEXT>
 	<Tag>TXT_KEY_FATHER_JOHANN_MORITZ_STRATEGY</Tag>
 		<English>By adopting [COLOR_TECH_TEXT]Johann Moritz[COLOR_REVERT] as a Founding Father, you can increase the production of sugar significantly.</English>
-		<Portuguese>Ao adotar [COLOR_TECH_TEXT]Johann Moritz[COLOR_REVERT] como Patrono, você pode aumentar significativamente a produção de açúcar.</Portuguese>
+		<Portuguese>Ao adotar [COLOR_TECH_TEXT]Johann Moritz[COLOR_REVERT] como Pai Fundador, você pode aumentar significativamente a produção de açúcar.</Portuguese>
 		<French>En adoptant [COLOR_TECH_TEXT]Johann Moritz[COLOR_REVERT] comme Père Fondateur, vous pouvez augmenter la production de sucre de manière significative.</French>
 		<German>Gewinnt man die Hilfe von [COLOR_TECH_TEXT]Johann Moritz[COLOR_REVERT] als Gründervater, kann man die Zuckergewinnung deutlich steigern.</German>
 		<Italian>Adottando [COLOR_TECH_TEXT]Johann Moritz[COLOR_REVERT] come Padre Fondatore, si può aumentare la produzione di zucchero in modo significativo.</Italian>

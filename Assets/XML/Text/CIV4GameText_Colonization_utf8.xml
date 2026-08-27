@@ -1157,7 +1157,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SCORE_BREAKDOWN_FATHERS</Tag>
 		<English>%d1 from Founding Fathers (%d2_father/%d3_father_max)</English>
-		<Portuguese>%d1 de Patronos (%d2_father/%d3_father_max)</Portuguese>
+		<Portuguese>%d1 de Pais Fundadores (%d2_father/%d3_father_max)</Portuguese>
 		<French>%d1 en raison des Pères fondateurs (%d2_father/%d3_father_max)</French>
 		<German>%d1 durch Gründerväter (%d2_father/%d3_father_max)</German>
 		<Italian>%d1 dai Padri Fondatori (%d2_father/%d3_father_max)</Italian>
@@ -1429,7 +1429,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_FATHER_CATEGORY</Tag>
 		<English>Founding Father type</English>
-		<Portuguese>Tipo de Patrono</Portuguese>
+		<Portuguese>Tipo de Pai Fundador</Portuguese>
 		<French>Type Père fondateur</French>
 		<German>Gründervater-Typ</German>
 		<Italian>Tipo di Padre Fondatore</Italian>
@@ -1473,7 +1473,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_REJECTED</Tag>
 		<English>Rejected Founding Father</English>
-		<Portuguese>Patrono rejeitado</Portuguese>
+		<Portuguese>Pai Fundador rejeitado</Portuguese>
 		<French>Père fondateur refusé</French>
 		<German>Abgelehnter Gründervater</German>
 		<Russian>Отвергнутый Отец Основатель</Russian>
@@ -1828,7 +1828,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_POINT_FATHERS_ALL</Tag>
 		<English>[NEWLINE]Needed by all remaining Founding Fathers</English>
-		<Portuguese>[NEWLINE]Necessário para todos os Patronos restantes</Portuguese>
+		<Portuguese>[NEWLINE]Necessário para todos os Pais Fundadores restantes</Portuguese>
 		<French>[NEWLINE]Requis par tous les Pères fondateurs restants</French>
 		<German>[NEWLINE]Benötigt von allen übrigen Gründervätern</German>
 		<Italian>[NEWLINE]Richiesti da tutti i rimanenti Padri Fondatori</Italian>
@@ -2255,7 +2255,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FATHER_POINT_MOD</Tag>
 		<English>[ICON_BULLET]%D1%% Founding Father Point Rate</English>
-		<Portuguese>[ICON_BULLET]%D1%% Taxa de pontos de Patrono</Portuguese>
+		<Portuguese>[ICON_BULLET]%D1%% Taxa de pontos de Pais Fundadores</Portuguese>
 		<French>[ICON_BULLET]Points de Pères fondateurs %D1%% </French>
 		<German>[ICON_BULLET]%D1%% Gründervater-Punkte</German>
 		<Italian>[ICON_BULLET]%D1%% punti Padre Fondatore</Italian>
