@@ -169,7 +169,7 @@
 		<English>Expert Cochineal Collector:Expert Cochineal Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor de Cochonilha:Coletores de Cochonilha</Text>
+			<Text>Coletor (Cochonilha):Coletores (Cochonilha)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -201,7 +201,7 @@
 		<English>Expert Cochineal Collector:Expert Cochineal Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor de Cochonilha:Coletores de Cochonilha</Text>
+			<Text>Coletor (Cochonilha):Coletores (Cochonilha)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -327,7 +327,7 @@
 		<English>Expert Logwood Collector:Expert Logwood Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor Madeireiro:Coletores Madeireiros</Text>
+			<Text>Coletor (Campeche):Coletores (Campeche)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -359,7 +359,7 @@
 		<English>Expert Logwood Collector:Expert Logwood Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor Madeireiro:Coletores Madeireiros</Text>
+			<Text>Coletor (Campeche):Coletores (Campeche)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -813,7 +813,7 @@
 		<English>Expert Vanilla Collector:Expert Vanilla Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor Baunilheiro:Coletores Baunilheiros</Text>
+			<Text>Coletor (Baunilha):Coletores (Baunilha)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -845,7 +845,7 @@
 		<English>Expert Vanilla Collector:Expert Vanilla Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor Baunilheiro:Coletores Baunilheiros</Text>
+			<Text>Coletor (Baunilha):Coletores (Baunilha)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1070,7 +1070,7 @@
 		<English>Expert Maple Tree Tapper:Expert Maple Tree Tappers</English>
 		
 		<Portuguese>
-			<Text>Coletor de Bordo:Coletores de Bordo</Text>
+			<Text>Coletor (Bordo):Coletores (Bordo)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1102,7 +1102,7 @@
 		<English>Expert Maple Tree Tapper:Expert Maple Tree Tappers</English>
 		
 		<Portuguese>
-			<Text>Coletor de Bordo:Coletores de Bordo</Text>
+			<Text>Coletor (Bordo):Coletores (Bordo)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1149,7 +1149,7 @@
 		<English>Expert Rubber Collector:Expert Rubber Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor Seringueiro:Coletores Seringueiros</Text>
+			<Text>Coletor (Borracha):Coletores (Borracha)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1181,7 +1181,7 @@
 		<English>Expert Rubber Collector:Expert Rubber Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor Seringueiro:Coletores Seringueiros</Text>
+			<Text>Coletor (Borracha):Coletores (Borracha)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
