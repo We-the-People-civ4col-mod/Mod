@@ -3950,7 +3950,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Cozinheiro de Óleo:Cozinheiros de Óleo</Text>
+			<Text>Refinador:Refinadores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3990,7 +3990,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_WHALE_OIL_COOKER_STRATEGY</Tag>
 		<English>A citizen working in the profession of [COLOR_HIGHLIGHT_TEXT]train oil cooker[COLOR_REVERT] in the [LINK=BUILDING_WHALE_OIL_HOUSE]train oil manufactory[\LINK] will turn [LINK=YIELD_WHALE_BLUBBER]whale fat[\LINK] into [LINK=YIELD_WHALE_OIL]train oil[\LINK]. If this profession is done by a [LINK=UNIT_WHALE_OIL_COOKER]master train oil cooker[\LINK] much more train oil is produced, as long as flensers provide a sufficient supply of whale fat.</English>
-		<Portuguese>Um cidadão que exerce a profissão de [COLOR_HIGHLIGHT_TEXT]cozinheiro de óleo[COLOR_REVERT] na [LINK=BUILDING_WHALE_OIL_HOUSE]fábrica de óleo de baleia[\LINK] transformará [LINK=YIELD_WHALE_BLUBBER]gordura de baleia[\LINK] em [LINK=YIELD_WHALE_OIL]óleo de baleia[\LINK]. Se esta profissão for realizada por um [LINK=UNIT_WHALE_OIL_COOKER]mestre cozinheiro de óleo[\LINK], muito mais óleo de baleia será produzido, desde que os destiladores forneçam um suprimento suficiente de gordura de baleia.</Portuguese>
+		<Portuguese>Um cidadão que exerce a profissão de [COLOR_HIGHLIGHT_TEXT]refinador[COLOR_REVERT] na [LINK=BUILDING_WHALE_OIL_HOUSE]fábrica de óleo de baleia[\LINK] transformará [LINK=YIELD_WHALE_BLUBBER]gordura de baleia[\LINK] em [LINK=YIELD_WHALE_OIL]óleo de baleia[\LINK]. Se esta profissão for realizada por um [LINK=UNIT_WHALE_OIL_COOKER]mestre refinador[\LINK], muito mais óleo de baleia será produzido, desde que os destiladores forneçam um suprimento suficiente de gordura de baleia.</Portuguese>
 		<French>Un citoyen travaillant dans un [COLOR_BUILDING_TEXT]pressoir à huile[COLOR_REVERT] ou une [COLOR_BUILDING_TEXT]manufacture oléicole[COLOR_REVERT] peut exercer la profession d'[COLOR_BUILDING_TEXT]affineur d'huile[COLOR_REVERT]. Il transformera alors de la [COLOR_HIGHLIGHT_TEXT]graisse de baleine[COLOR_REVERT] en [COLOR_HIGHLIGHT_TEXT]huile de baleine[COLOR_REVERT] à chaque tour. Les [COLOR_UNIT_TEXT]maîtres affineurs d'huile[COLOR_REVERT] produisent deux fois plus d'huile que les autres colons.</French>
 		<German>Wenn man einen Bürger anweist, in einer [COLOR_BUILDING_TEXT]Trankocherei[COLOR_REVERT] zu arbeiten, nimmt er den Beruf des Trankochers an und verarbeitet [COLOR_HIGHLIGHT_TEXT]Walspeck[COLOR_REVERT] zu [COLOR_HIGHLIGHT_TEXT]Tran[COLOR_REVERT]. Wenn man dem Beruf einen [COLOR_UNIT_TEXT]Meister-Trankocher[COLOR_REVERT] zuweist, verdoppelt sich damit die Menge des produzierten Trans, vorausgesetzt, es ist genügend Walspeck da.</German>
 	</TEXT>
