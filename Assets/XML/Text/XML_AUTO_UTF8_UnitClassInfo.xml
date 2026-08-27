@@ -627,7 +627,7 @@
 		<English>Carrack:Carracks</English>
 		
 		<Portuguese>
-			<Text>Carraca:Carraca</Text>
+			<Text>Carraca:Carracas</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1673,7 +1673,7 @@
 		<English>Fluyt:Fluyts</English>
 		
 		<Portuguese>
-			<Text>Fluyt:Fluyts</Text>
+			<Text>Fluit:Fluits</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3389,7 +3389,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Ranger:Rangers</Text>
+			<Text>Guarda Florestal:Guardas Florestais</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3715,7 +3715,7 @@
 		<English>Master Sailmaker:Master Sailmakers</English>
 		
 		<Portuguese>
-			<Text>Mestre de Velas:Mestres de Velas</Text>
+			<Text>Mestre Fabricante de Velas:Mestres Fabricantes de Velas</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4461,7 +4461,7 @@
 		<English>Carriage:Carriages</English>
 		
 		<Portuguese>
-			<Text>Transporte:Carruagens</Text>
+			<Text>Carruagem:Carruagens</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -4542,7 +4542,7 @@
 		<English>Trek:Treks</English>
 		
 		<Portuguese>
-			<Text>Jornada:Caminhadas</Text>
+			<Text>Jornada:Jornadas</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>

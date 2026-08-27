@@ -1524,7 +1524,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Casacos (Pele):Casacos (Pele)</Text>
+			<Text>Fabricante de Casacos (Pele):Fabricantes de Casacos (Pele)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2592,7 +2592,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Casacos (Luxo):Casacos (Luxo)</Text>
+			<Text>Fabricante de Casacos (Luxo):Fabricantes de Casacos (Luxo)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2999,7 +2999,7 @@
 		<English>Sailmaker (Flax):Sailmakers (Flax)</English>
 		
 		<Portuguese>
-			<Text>Velas (Linho):Velas (Linho)</Text>
+			<Text>Fabricante de Velas (Linho):Fabricantes de Velas (Linho)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -3020,7 +3020,7 @@
 		<English>Sailmaker (Hemp):Sailmakers (Hemp)</English>
 		
 		<Portuguese>
-			<Text>Velas (Cânhamo):Velas (Cânhamo)</Text>
+			<Text>Fabricante de Velas (Cânhamo):Fabricantes de Velas (Cânhamo)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>

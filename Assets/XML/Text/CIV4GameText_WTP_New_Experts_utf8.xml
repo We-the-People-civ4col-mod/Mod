@@ -1228,7 +1228,7 @@
 		<English>Master Confectioner:Master Confectioners</English>
 		
 		<Portuguese>
-			<Text>Mestre Confeiteiro:Mestre Confeiteiro</Text>
+			<Text>Mestre Confeiteiro:Mestres Confeiteiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1260,7 +1260,7 @@
 		<English>Master Confectioner:Master Confectioners</English>
 		
 		<Portuguese>
-			<Text>Mestre Confeiteiro:Mestre Confeiteiro</Text>
+			<Text>Mestre Confeiteiro:Mestres Confeiteiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1866,7 +1866,7 @@
 		<English>Master Tailor:Master Tailors</English>
 		
 		<Portuguese>
-			<Text>Mestre Alfaiate:Mestre Alfaiate</Text>
+			<Text>Mestre Alfaiate:Mestres Alfaiates</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1898,7 +1898,7 @@
 		<English>Master Tailor:Master Tailors</English>
 		
 		<Portuguese>
-			<Text>Mestre Alfaiate:Mestre Alfaiate</Text>
+			<Text>Mestre Alfaiate:Mestres Alfaiates</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1951,7 +1951,7 @@
 		<English>Master Roaster:Master Roasters</English>
 		
 		<Portuguese>
-			<Text>Mestre Torrador:Mestre Torrador</Text>
+			<Text>Mestre Torrador:Mestres Torradores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1983,7 +1983,7 @@
 		<English>Master Roaster:Master Roasters</English>
 		
 		<Portuguese>
-			<Text>Mestre Torrador:Mestre Torrador</Text>
+			<Text>Mestre Torrador:Mestres Torradores</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2363,7 +2363,7 @@
 		<English>Master Baker:Master Bakers</English>
 		
 		<Portuguese>
-			<Text>Mestre Padeiro:Mestre Padeiro</Text>
+			<Text>Mestre Padeiro:Mestres Padeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2383,7 +2383,7 @@
 		<English>Master Baker:Master Bakers</English>
 		
 		<Portuguese>
-			<Text>Mestre Padeiro:Mestre Padeiro</Text>
+			<Text>Mestre Padeiro:Mestres Padeiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>

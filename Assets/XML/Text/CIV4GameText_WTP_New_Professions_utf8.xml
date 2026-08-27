@@ -320,7 +320,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Lenhador (Madeira Dura):Lenhador (Madeira Dura)</Text>
+			<Text>Lenhador (Madeira Dura):Lenhadores (Madeira Dura)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -379,7 +379,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Pastor de Cabras:Cabreiros</Text>
+			<Text>Pastor de Cabras:Pastores de Cabras</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -619,7 +619,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Colhedor (Fruta):Colhedor (Fruta)</Text>
+			<Text>Colhedor (Fruta):Colhedores (Fruta)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2239,7 +2239,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Leiteira (Gado):Leiteira (Gado)</Text>
+			<Text>Leiteira (Gado):Leiteiras (Gado)</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2302,7 +2302,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Leiteira (Ovelha):Leiteira (Ovelha)</Text>
+			<Text>Leiteira (Ovelha):Leiteiras (Ovelha)</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2727,7 +2727,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Confeiteiro (Chocolate):Confeiteiro (Chocolate)</Text>
+			<Text>Confeiteiro (Chocolate):Confeiteiros (Chocolate)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2846,7 +2846,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Casacos (Penugem):Casacos (Penugem)</Text>
+			<Text>Fabricante de Casacos (Penugem):Fabricantes de Casacos (Penugem)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -2878,7 +2878,7 @@
 		<English>Coat Maker (Lined Leather, Wild Bird Feathers):Coat Makers (Lined Leather, Wild Bird Feathers)</English>
 		
 		<Portuguese>
-			<Text>Casacos (Penas):Casacos (Penas)</Text>
+			<Text>Fabricante de Casacos (Penas):Fabricantes de Casacos (Penas)</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
