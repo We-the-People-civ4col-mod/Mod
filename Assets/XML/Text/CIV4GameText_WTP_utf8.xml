@@ -185,7 +185,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_NO_MORE_SETTLER</Tag>
 		<English>Since [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has no more settlements and no more settlers, His Majesty has decided to equip some colonists in Europe as settlers. Of course this comes with a tax increase.</English>
-		<Portuguese>Como [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] não tem mais colônias nem colonos, Sua Majestade decidiu equipar alguns colonos na Europa como colonos. Claro que isso vem com um aumento de impostos.</Portuguese>
+		<Portuguese>Como [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] não tem mais colônias nem colonizadores, Sua Majestade decidiu equipar alguns colonos na Europa como colonizadores. Claro que isso vem com um aumento de impostos.</Portuguese>
 		<French>Puisque [COLOR_SELECTED_TEXT]%s1_player[COLOR_REVERT] n'a ni colonies ni colons fondateurs, Sa Majesté a eu le plaisir d'équiper des colons en Europe pour fonder une nouvelle ville. Bien sûr, ceci vient avec une hausse des taxes.</French>
 		<German>Da [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] keine weiteren Siedlungen und auch keine Siedler mehr hat, hat Seine Majestät entschieden, in Europe einige Kolonisten als Siedler auszurüsten. Das ist natürlich mit einer Steuererhöhung verbunden.</German>
 		<Russian>Поскольку у [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] больше нет ни городов, ни поселенцев, Его Величество решил сделать некоторых колонистов в Европе поселенцами. Конечно, это приведет к повышению налоговой ставки.</Russian>

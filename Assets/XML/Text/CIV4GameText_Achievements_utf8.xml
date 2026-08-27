@@ -4358,7 +4358,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER</Tag>
 		<English>The third settler</English>
-		<Portuguese>O terceiro colono</Portuguese>
+		<Portuguese>O terceiro colonizador</Portuguese>
 		<French>Le troisième fondateur</French>
 		<German>Der dritte Siedlungsgründer</German>
 		<Russian>Третий поселенец</Russian>
@@ -4374,7 +4374,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER_TEXT</Tag>
 		<English>Milord, the materials for the new settlement are piling up on the just-completed dock and the settlers are ready to leave. What are you waiting for?[NEWLINE][NEWLINE]The longer you wait, the more likely it is that the settlers here in the colony will catch some disease or scatter to the taverns and gambling dens at the harbour. You should get them on their way as soon as possible. Otherwise the best places for a new settlement will be snatched away by the competitors![NEWLINE][NEWLINE]</English>
-		<Portuguese>Milorde, os materiais para a nova colônia estão se acumulando no cais recém-concluído e os colonos estão prontos para partir. O que você está esperando?[NEWLINE][NEWLINE]Quanto mais você esperar, maior será a probabilidade de os colonos aqui na colônia pegarem alguma doença ou se espalharem pelas tavernas e casas de jogo no porto. Você deve colocá-los a caminho o mais rápido possível. Caso contrário, os melhores locais para uma nova colônia serão arrebatados pelos concorrentes![NEWLINE][NEWLINE]</Portuguese>
+		<Portuguese>Milorde, os materiais para a nova colônia estão se acumulando no cais recém-concluído e os colonizadores estão prontos para partir. O que você está esperando?[NEWLINE][NEWLINE]Quanto mais você esperar, maior será a probabilidade de os colonizadores aqui na colônia pegarem alguma doença ou se espalharem pelas tavernas e casas de jogo no porto. Você deve colocá-los a caminho o mais rápido possível. Caso contrário, os melhores locais para uma nova colônia serão arrebatados pelos concorrentes![NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, auf dem gerade erst fertiggestellten Dock stapeln sich die Materialien für die neue Siedlung und die Siedler sind bereit aufzubrechen. Worauf wartet Ihr denn noch?[NEWLINE][NEWLINE]Je länger Ihr wartet, desto eher stecken sich die Siedler hier in der Kolonie mit irgendwelchen Krankheiten an oder zerstreuen sich in die Wirtshäuser und Spielhöllen am Hafen. Ihr solltet sie möglichst bald auf den Weg bringen, damit Euch die besten Plätze für eine neue Siedlung nicht von der Konkurrenz weggeschnappt werden![NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, материалы для нового поселения собраны у только что построенного дока и поселенцы готовы уйти. Чего вы ждете?[NEWLINE][NEWLINE]Чем дольше вы ждете, тем выше вероятность того, что поселенцы здесь, в колонии, подхватят какую-нибудь болезнь или разбегутся по тавернам и игорным заведениям в гавани. Вы должны отправить их в путь как можно скорее. Иначе лучшие места для нового поселения отберут конкуренты![NEWLINE][NEWLINE]</Russian>
 	</TEXT>
