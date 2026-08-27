@@ -1149,7 +1149,7 @@
 		<English>Expert Rubber Collector:Expert Rubber Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor (Borracha):Coletores (Borracha)</Text>
+			<Text>Seringueiro:Seringueiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1181,7 +1181,7 @@
 		<English>Expert Rubber Collector:Expert Rubber Collectors</English>
 		
 		<Portuguese>
-			<Text>Coletor (Borracha):Coletores (Borracha)</Text>
+			<Text>Seringueiro:Seringueiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1218,7 +1218,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
 		<English>[LINK=YIELD_KAUTSCHUK]Rubber[\LINK] has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.[NEWLINE]When assigned to the Rubber Collector profession, the expert can get twice as much rubber in the same time as a regular colonist.</English>
-		<Portuguese>A [LINK=YIELD_KAUTSCHUK]Borracha[\LINK] tem uma grande taxa de estiramento, alta resiliência e também é à prova d'água. É classificado como um elastômero.[NEWLINE]Quando atribuído à profissão de Coletor de Borracha, o especialista pode obter o dobro de borracha no mesmo tempo que um colono normal.</Portuguese>
+		<Portuguese>A [LINK=YIELD_KAUTSCHUK]Borracha[\LINK] tem uma grande taxa de estiramento, alta resiliência e também é à prova d'água. É classificado como um elastômero.[NEWLINE]Quando atribuído à profissão de Seringueiro, o especialista pode obter o dobro de borracha no mesmo tempo que um colono normal.</Portuguese>
 		<German>[LINK=YIELD_KAUTSCHUK]Kautschuk[\LINK] hat ein großes Dehnungsverhältnis, eine hohe Elastizität und ist außerdem wasserfest. Wenn er dem Beruf des Kautschuksammlers zugewiesen wird, kann der Experte in der gleichen Zeit doppelt so viel Kautschuk gewinnen wie ein normaler Kolonist.</German>
 		<Hungarian>A [LINK=YIELD_KAUTSCHUK]kaucsuk[\LINK] nagy nyújthatósággal, nagy rugalmassággal rendelkezik és vízálló is. Elasztomernek minősül. [NEWLINE]A Tapasztalt Kaucsuk Gyűjtő kétszer annyi kaucsukot tud gyűjteni ugyanannyi idő alatt, mint egy átlagos lakos.</Hungarian>
 	</TEXT>

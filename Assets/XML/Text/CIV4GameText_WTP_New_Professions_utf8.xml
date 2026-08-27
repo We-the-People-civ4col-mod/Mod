@@ -1213,7 +1213,7 @@
 			<Plural>0:1</Plural>
 		</English>
 		<Portuguese>
-			<Text>Coletor (Borracha):Coletores (Borracha)</Text>
+			<Text>Seringueiro:Seringueiros</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
@@ -1257,7 +1257,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
 		<English>Jungle tiles let you gather [LINK=YIELD_KAUTSCHUK]rubber[\LINK] if the colonist working them is assigned to the [COLOR_HIGHLIGHT_TEXT]rubber collector[COLOR_REVERT] profession. Rubber production can be increased by assigning an [LINK=UNIT_KAUTSCHUK_COLLECTOR]expert rubber collector[\LINK] to the job.</English>
-		<Portuguese>Os lotes de selva permitem que você colete [LINK=YIELD_KAUTSCHUK]borracha[\LINK] se o colono que os trabalha estiver atribuído à profissão de [COLOR_HIGHLIGHT_TEXT]coletor de borracha[COLOR_REVERT]. A produção de borracha pode ser aumentada designando um [LINK=UNIT_KAUTSCHUK_COLLECTOR]coletor de borracha especializado[\LINK] para o trabalho.</Portuguese>
+		<Portuguese>Os lotes de selva permitem que você colete [LINK=YIELD_KAUTSCHUK]borracha[\LINK] se o colono que os trabalha estiver atribuído à profissão de [COLOR_HIGHLIGHT_TEXT]seringueiro[COLOR_REVERT]. A produção de borracha pode ser aumentada designando um [LINK=UNIT_KAUTSCHUK_COLLECTOR]seringueiro[\LINK] para o trabalho.</Portuguese>
 		<French>Les tuiles de jungle permettent de récolter du [LINK=YIELD_KAUTSCHUK]caoutchouc[\LINK] si le colon qui les exploite est affecté à la profession de [COLOR_HIGHLIGHT_TEXT]collecteur de caoutchouc[COLOR_REVERT]. La production de caoutchouc peut être augmentée en affectant un [LINK=UNIT_KAUTSCHUK_COLLECTOR]collecteur de caoutchouc expert[\LINK] à cette tâche.</French>
 		<German>Dschungelplättchen ermöglichen das Sammeln von [LINK=YIELD_KAUTSCHUK]Gummi[\LINK], wenn der Kolonist, der sie bearbeitet, dem Beruf [COLOR_HIGHLIGHT_TEXT]Gummi-Sammler[COLOR_REVERT] zugeordnet ist. Die Gummiproduktion kann gesteigert werden, indem ein [LINK=UNIT_KAUTSCHUK_COLLECTOR]erfahrener Gummi-Sammler[\LINK] mit der Arbeit beauftragt wird.</German>
 		<Italian>Le tessere della giungla permettono di raccogliere [LINK=YIELD_KAUTSCHUK]gomma[\LINK] se il colono che le lavora è assegnato alla professione di [COLOR_HIGHLIGHT_TEXT]raccoglitore di gomma[COLOR_REVERT]. La produzione di gomma può essere aumentata assegnando al lavoro un [LINK=UNIT_KAUTSCHUK_COLLECTOR]raccoglitore di gomma esperto[\LINK].</Italian>
