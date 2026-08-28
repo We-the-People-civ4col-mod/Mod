@@ -6641,7 +6641,7 @@
 			<iMinCity>0</iMinCity>
 			<iAIWeightPercent>100</iAIWeightPercent>
 			<iAIBaseValue>5</iAIBaseValue>
-			<iNativeBaseValue>0</iNativeBaseValue>
+			<iNativeBaseValue>3</iNativeBaseValue>
 			<iPower>0</iPower>
 			<iAsset>0</iAsset>
 			<ColorType>COLOR_YIELD_FOOD</ColorType>

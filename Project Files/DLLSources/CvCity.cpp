@@ -8466,6 +8466,30 @@ void CvCity::getVisibleBuildings(std::list<BuildingTypes>& kChosenVisible, int& 
 		iTotalVisibleBuildings = int(((fHi - fLo) / 50.0f) * fCurSize + fLo);
 	}
 
+	if (isNative())
+	{
+		iTotalVisibleBuildings = std::max(1, (iTotalVisibleBuildings * 50) / 100);
+	}
+
+	else if (getPopulation() > 15)
+	{
+		int iVisibleAt15;
+
+		if (bIsExp)
+		{
+			const static float fCitySizeExpMod = GC.getDefineFLOAT("GAME_CITY_SIZE_EXP_MODIFIER");
+			iVisibleAt15 = 10 + ((int)(pow(15.0f, fCitySizeExpMod))) * 2;
+		}
+		else
+		{
+			const static float fLo = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_0");
+			const static float fHi = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_50");
+			iVisibleAt15 = int(((fHi - fLo) / 50.0f) * 15.0f + fLo);
+		}
+
+		iTotalVisibleBuildings = iVisibleAt15 + ((iTotalVisibleBuildings - iVisibleAt15) * 50) / 100;
+	}
+
 	const static float fMaxUniquePercent = GC.getDefineFLOAT("GAME_CITY_SIZE_MAX_PERCENT_UNIQUE");
 	const int iMaxNumUniques = (int)(fMaxUniquePercent * iTotalVisibleBuildings);
 
