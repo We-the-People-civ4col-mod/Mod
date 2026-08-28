@@ -3838,7 +3838,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_HORSE_MARKET</Tag>
 		<English>Milord, our most prosperous ranchers propose that we build a Grand Horse and Cattle Market to draw more business to us. They believe that this would even cause ranchers from other colonies to want to become citizens of our colonies.</English>
-		<Portuguese>Milorde, nossos fazendeiros mais prósperos propõem que construamos um Grande Mercado de Cavalos e Gado para atrair mais negócios para nós. Eles acreditam que isso faria com que fazendeiros de outras colônias quisessem se tornar cidadãos de nossas colônias.</Portuguese>
+		<Portuguese>Milorde, nossos vaqueiros mais prósperos propõem que construamos um Grande Mercado de Cavalos e Gado para atrair mais negócios para nós. Eles acreditam que isso faria com que vaqueiros de outras colônias quisessem se tornar cidadãos de nossas colônias.</Portuguese>
 		<French>Sire, nos éleveurs les plus prospères suggèrent de construire une grande halle aux bestiaux pour attirer plus de chalands. Ils pensent que ceci entrainera les éleveurs d'autres colonies à venir s'établir chez nous.</French>
 		<German>Milord, unsere reichsten Tierzüchter schlagen vor, dass wir einen Großen Viehmarkt errichten, damit wir noch mehr Geschäft anziehen. Sie glauben, dass dies sogar dazu führen wird, dass Züchter anderer Kolonien lieber zu Bürgern unserer Kolonien werden würden.</German>
 		<Russian>Милорд, наши самые преуспевающие владельцы ранчо предлагают нам построить Большую скотоводческую ферму, чтобы привлечь к нам больше клиентов. Они считают, что это может побудит владельцев ранчо из других колоний захотеть стать гражданами наших колоний.</Russian>
@@ -3854,7 +3854,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_HORSE_MARKET_DONE</Tag>
 		<English>Milord, you've built a Grand Horse and Cattle Market before any other colony could. As promised some foreign ranchers now want to become citizens of our colonies.</English>
-		<Portuguese>Milorde, você construiu um Grande Mercado de Cavalos e Gado antes que qualquer outra colônia pudesse fazê-lo. Tal como prometido, alguns fazendeiros estrangeiros querem agora tornar-se cidadãos das nossas colônias.</Portuguese>
+		<Portuguese>Milorde, você construiu um Grande Mercado de Cavalos e Gado antes que qualquer outra colônia pudesse fazê-lo. Tal como prometido, alguns vaqueiros estrangeiros querem agora tornar-se cidadãos das nossas colônias.</Portuguese>
 		<French>Sire, vous avez construit une grande halle aux bestiaux avant tous les autres. Comme promis des éleveurs étrangers veulent devenir des citoyens de nos colonies.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen einen Großen Viehmarkt errichten. Wie versprochen, haben fremde Viehzüchter nun vor, Bürger unserer Kolonien zu werden.</German>
 		<Russian>Милорд, мы построили Большую скотоводческую ферму раньше, чем любая другая колониальная держава. Как и предполагалось, некоторые иностранные владельцы ранчо теперь хотят стать гражданами наших колоний.</Russian>
@@ -3862,7 +3862,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIRST_HORSE_MARKET</Tag>
 		<English>Milord, the governor of another colony has built a Grand Horse and Cattle Market before you. You've missed the chance to gain more ranchers.</English>
-		<Portuguese>Milorde, o governador de outra colônia construiu um Grande Mercado de Cavalos e Gado diante de você. Você perdeu a chance de ganhar mais fazendeiros.</Portuguese>
+		<Portuguese>Milorde, o governador de outra colônia construiu um Grande Mercado de Cavalos e Gado diante de você. Você perdeu a chance de ganhar mais vaqueiros.</Portuguese>
 		<French>Sire, le gouverneur d'une autre colonie a construit avant vous une grande halle aux bestiaux. Vous avez laissé passer l'occasion de faire venir des éleveurs.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Großen Viehmarkt errichten. Dadurch habt Ihr die Chance vertan, weitere Rancher zu erwerben.</German>
 		<Russian>Милорд, губернатор другой колониальной нации построил Большую скотоводческую ферму раньше нас. Мы упустили шанс получить больше скотоводов.</Russian>
@@ -3878,7 +3878,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_HORSE_MARKET_DONE_1</Tag>
 		<English>These new ranchers are welcome, of course. They'll bring more business to our newly built Grand Horse and Cattle Market.</English>
-		<Portuguese>Esses novos fazendeiros são bem-vindos, é claro. Eles trarão mais negócios para nosso recém-construído Grande Mercado de Cavalos e Gado.</Portuguese>
+		<Portuguese>Esses novos vaqueiros são bem-vindos, é claro. Eles trarão mais negócios para nosso recém-construído Grande Mercado de Cavalos e Gado.</Portuguese>
 		<French>Ces nouveaux éleveurs sont les bienvenys. Ils amèneront plus de commerce dans cette nouvelle grande halle aux bestiaux.</French>
 		<German>Die neuen Züchter sind gerne gesehen. Sie werden sicherlich für noch mehr Geschäft auf unserem neuen Großen Viehmarkt sorgen.</German>
 		<Russian>Мы приветствуем новых владельцев ранчо. Они принесут еще больше прибыли нашеей недавно построенной Большой скотоводческой ферме.</Russian>
@@ -4331,7 +4331,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HORSE_DEAL</Tag>
 		<English>A newly arrived immigrant bought land several miles away from [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. He dreams of becoming a rancher and breeding horses. However he does not have money left to buy the necessary livestock.</English>
-		<Portuguese>Um imigrante recém-chegado comprou terras a vários quilômetros de distância de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Ele sonha em se tornar fazendeiro e criar cavalos. No entanto, ele não tem mais dinheiro para comprar o gado necessário.</Portuguese>
+		<Portuguese>Um imigrante recém-chegado comprou terras a vários quilômetros de distância de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Ele sonha em se tornar vaqueiro e criar cavalos. No entanto, ele não tem mais dinheiro para comprar o gado necessário.</Portuguese>
 		<French>Un immigrant nouvellement arrivé a acheté des terres aux alentours de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Il rêve de devenir un propriétaire de ranch et d'élever des chevaux. Cependant il ne lui reste plus beaucoup d'argent pour acheter les animaux nécessaires.</French>
 		<German>Ein kürzlich eingetroffener Einwanderer hat sich etwas Land einige Meilen von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] entfernt gekauft. Er träumt davon, ein Züchter zu werden und Pferde zu züchten. Er hat jedoch kaum noch Geld übrig, um sich die Pferde zu kaufen.</German>
 		<Russian>Новоприбывший эмигрант купил землю в нескольких милях от [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Он мечтал стать владельцем ранчо и разводить лошадей, однако денег на покупку необходимого скота у него не осталось.</Russian>
