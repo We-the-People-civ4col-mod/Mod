@@ -3399,6 +3399,14 @@ void CvUnitAI::AI_defensiveBraveMove()
 
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
+	const bool bBorderContact = kOwner.AI_hasNativeColonialBorderContact();
+
+	const int iMilitaryTarget = bBorderContact
+		? GC.getDefineINT("NATIVE_MILITARY_INITIAL_UNITS_PER_CITY_BORDER_CONTACT")
+		: GC.getDefineINT("NATIVE_MILITARY_INITIAL_UNITS_PER_CITY");
+
+	const int iMaxWanderers = std::max(1, iMilitaryTarget - 1);
+
 	bool bDanger = kOwner.AI_getPlotDanger(plot(), 2, false);
 
 	if (pCity != NULL)
@@ -3418,9 +3426,12 @@ void CvUnitAI::AI_defensiveBraveMove()
 
 		if (pCity->AI_isDefended(-2))
 		{
-			if (AI_joinCityBrave())
+			if (kOwner.AI_countNumHomedUnits(pCity, UNITAI_DEFENSIVE, NO_UNITAI_STATE) > iMilitaryTarget)
 			{
-				return;
+				if (AI_joinCityBrave())
+				{
+					return;
+				}
 			}
 		}
 
@@ -3441,11 +3452,14 @@ void CvUnitAI::AI_defensiveBraveMove()
 
 		if (pCity == getHomeCity())
 		{
-			if (pCity->AI_isDefended(-1))
+			if (kOwner.AI_countNumHomedUnits(pCity, UNITAI_DEFENSIVE, NO_UNITAI_STATE) >= iMilitaryTarget)
 			{
-				if (AI_joinCityBrave())
+				if (kOwner.AI_countNumHomedUnits(pCity, UNITAI_DEFENSIVE, NO_UNITAI_STATE) > iMilitaryTarget)
 				{
-					return;
+					if (AI_joinCityBrave())
+					{
+						return;
+					}
 				}
 
 				// R&R, ray, Natives raiding party - START
@@ -3504,9 +3518,10 @@ void CvUnitAI::AI_defensiveBraveMove()
 						}
 					}
 					// R&R, ray, Natives Trading - END
-					else if (GC.getGame().getSorenRandNum(10, "AI native start wandering") == 0)
+
+					if (AI_getUnitAIState() == UNITAI_STATE_DEFAULT)
 					{
-						if (kOwner.AI_countNumHomedUnits(pCity, NO_UNITAI, UNITAI_STATE_WANDER) < 2)
+						if (kOwner.AI_countNumHomedUnits(pCity, NO_UNITAI, UNITAI_STATE_WANDER) < iMaxWanderers)
 						{
 							AI_setUnitAIState(UNITAI_STATE_WANDER);
 							//fall through.

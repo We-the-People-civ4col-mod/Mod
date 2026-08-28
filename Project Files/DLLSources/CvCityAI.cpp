@@ -4101,6 +4101,12 @@ int CvCityAI::AI_citizenProfessionValue(
 				inValue += AI_estimateYieldValue(inYields[k], useInput);
 			iInputValue = 100 * inValue;
 		}
+		// WTP, Schmiddie, Native food surplus START
+		if (isNative() && eY == YIELD_FOOD && getYieldStored(YIELD_FOOD) >= 500)
+		{
+			iOutputValue /= 4;
+		}
+		// WTP, Schmiddie, Native food surplus END
 
 		// … other AI tweaks (culture, cargo, etc.) unchanged …
 
@@ -5562,7 +5568,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			}
 			// R&R, ray, AI builds Improvements wiser - START
 			//else if (eYield != YIELD_FOOD)
-			else if (eYield != YIELD_FOOD && eYield != YIELD_LUMBER && eYield != YIELD_FUR && eYield != YIELD_WILD_FEATHERS)
+			else if (eYield != YIELD_FOOD && eYield != YIELD_LUMBER && eYield != YIELD_WILD_FEATHERS)
 			// R&R, ray, AI builds Improvements wiser - END
 			{
 				if (aiCurrentYields[eYield] <= (kOwner.AI_getBestPlotYield(eYield) / 2))
