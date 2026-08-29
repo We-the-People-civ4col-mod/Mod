@@ -121,6 +121,8 @@ public:
 	int AI_goldTarget();
 	DllExport DiploCommentTypes AI_getGreeting(PlayerTypes ePlayer);
 	bool AI_isWillingToTalk(PlayerTypes ePlayer);
+	int AI_getTurnsUntilWillingToTalk(PlayerTypes ePlayer);
+	int AI_getRefuseToTalkWarDuration(PlayerTypes ePlayer) const;
 	bool AI_demandRebukedSneak(PlayerTypes ePlayer);
 	bool AI_demandRebukedWar(PlayerTypes ePlayer);
 	bool AI_hasTradedWithTeam(TeamTypes eTeam);
@@ -143,6 +145,10 @@ public:
 	int AI_getShareWarAttitude(PlayerTypes ePlayer);
 	int AI_getTradeAttitude(PlayerTypes ePlayer);
 	int AI_getRivalTradeAttitude(PlayerTypes ePlayer);
+	int AI_getTradeAttitudeValue(PlayerTypes ePlayer);
+	int AI_getTradeAttitudeDivisor(PlayerTypes ePlayer);
+	int AI_getTradeAttitudeGoldForNextLevel(PlayerTypes ePlayer);
+	int AI_getTradeAttitudeTurnsUntilDecay(PlayerTypes ePlayer);
 	int AI_getMemoryAttitude(PlayerTypes ePlayer, MemoryTypes eMemory);
 
 	int AI_dealVal(PlayerTypes ePlayer, const CLinkList<TradeData>* pList, bool bIgnoreAnnual = false, int iExtra = 1);
@@ -256,6 +262,7 @@ public:
 
 	int AI_getContactTimer(PlayerTypes eIndex1, ContactTypes eIndex2);
 	void AI_changeContactTimer(PlayerTypes eIndex1, ContactTypes eIndex2, int iChange);
+	int AI_scaledContactDelay(ContactTypes eContact) const;
 
 	int AI_getMemoryCount(PlayerTypes eIndex1, MemoryTypes eIndex2);
 	void AI_changeMemoryCount(PlayerTypes eIndex1, MemoryTypes eIndex2, int iChange);

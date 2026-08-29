@@ -243,7 +243,7 @@ void CvDeal::doTurn()
 	{
 		if (getLengthSecondTrades() > 0)
 		{
-			iValue = (GET_PLAYER(getFirstPlayer()).AI_dealVal(getSecondPlayer(), getSecondTrades()) / GC.getDefineINT("PEACE_TREATY_LENGTH"));
+			iValue = (GET_PLAYER(getFirstPlayer()).AI_dealVal(getSecondPlayer(), getSecondTrades()) / GC.getGameINLINE().AI_adjustedTurn(GC.getDefineINT("PEACE_TREATY_LENGTH")));
 
 			if (getLengthFirstTrades() > 0)
 			{
@@ -257,7 +257,7 @@ void CvDeal::doTurn()
 
 		if (getLengthFirstTrades() > 0)
 		{
-			iValue = (GET_PLAYER(getSecondPlayer()).AI_dealVal(getFirstPlayer(), getFirstTrades()) / GC.getDefineINT("PEACE_TREATY_LENGTH"));
+			iValue = (GET_PLAYER(getSecondPlayer()).AI_dealVal(getFirstPlayer(), getFirstTrades()) / GC.getGameINLINE().AI_adjustedTurn(GC.getDefineINT("PEACE_TREATY_LENGTH")));
 
 			if (getLengthSecondTrades() > 0)
 			{
@@ -879,7 +879,7 @@ bool CvDeal::isCancelable(PlayerTypes eByPlayer, CvWString* pszReason)
 
 int CvDeal::turnsToCancel(PlayerTypes eByPlayer)
 {
-	return (getInitialGameTurn() + GC.getDefineINT("PEACE_TREATY_LENGTH") - GC.getGameINLINE().getGameTurn());
+	return (getInitialGameTurn() + GC.getGameINLINE().AI_adjustedTurn(GC.getDefineINT("PEACE_TREATY_LENGTH")) - GC.getGameINLINE().getGameTurn());
 }
 
 

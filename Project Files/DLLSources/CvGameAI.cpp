@@ -96,6 +96,40 @@ int CvGameAI::AI_adjustedTurn(int iTurn)
 	
 }
 
+// Shared turn-clock helper for #1262. Counters stay raw +1 per turn.
+// AI_effectiveTurns(raw) uses GrowthPercent. Pass TrainPercent for
+// refuse-to-talk and the 10/20/30 peace clocks.
+int CvGameAI::AI_effectiveTurns(int iRawTurns) const
+{
+	return AI_effectiveTurns(iRawTurns, GC.getGameSpeedInfo(getGameSpeedType()).getGrowthPercent());
+}
+
+int CvGameAI::AI_effectiveTurns(int iRawTurns, int iSpeedPercent) const
+{
+	if (iSpeedPercent < 1)
+	{
+		iSpeedPercent = 100;
+	}
+
+	return (iRawTurns * 100) / iSpeedPercent;
+}
+
+int CvGameAI::AI_speedChance(int iPercent) const
+{
+	if (iPercent <= 0)
+	{
+		return 0;
+	}
+
+	int iGrowthPercent = GC.getGameSpeedInfo(getGameSpeedType()).getGrowthPercent();
+	if (iGrowthPercent < 1)
+	{
+		iGrowthPercent = 100;
+	}
+
+	return std::max(1, (iPercent * 100) / iGrowthPercent);
+}
+
 
 int CvGameAI::AI_turnsPercent(int iTurns, int iPercent)
 {

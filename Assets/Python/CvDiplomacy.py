@@ -718,6 +718,44 @@ class CvDiplomacy:
 		iComment = self.getCommentID( eComment )
 		self.diploScreen.addUserComment( iComment, iData1, iData2, self.getDiplomacyComment(iComment), args)
 
+	def getNativeGiftInfoText(self):
+		eOther = self.diploScreen.getWhoTradingWith()
+		pOther = gc.getPlayer(eOther)
+		if pOther is None or pOther.isNone():
+			return ""
+		if gc.getGame().isBarbarianPlayer(eOther):
+			return ""
+
+		eActive = gc.getGame().getActivePlayer()
+		iGiftValue = pOther.AI_getTradeAttitudeValue(eActive)
+		if iGiftValue <= 0:
+			return ""
+
+		translator = CyTranslator()
+		szText = translator.getText("TXT_KEY_DIPLO_NATIVE_GIFT_GIVEN", (iGiftValue,))
+
+		# setAIString takes a C char*, not unicode
+		if isinstance(szText, unicode):
+			szText = szText.encode("ascii", "replace")
+		return szText
+
+	def getPeaceTalkInfoText(self):
+		eOther = self.diploScreen.getWhoTradingWith()
+		pOther = gc.getPlayer(eOther)
+		if pOther is None or pOther.isNone():
+			return ""
+
+		eActive = gc.getGame().getActivePlayer()
+		iPeaceTalkTurns = pOther.AI_getTurnsUntilWillingToTalk(eActive)
+		if iPeaceTalkTurns <= 0:
+			return ""
+
+		translator = CyTranslator()
+		szText = translator.getText("TXT_KEY_DIPLO_PEACE_TALK", (iPeaceTalkTurns,))
+		if isinstance(szText, unicode):
+			szText = szText.encode("ascii", "replace")
+		return szText
+
 	def setAIComment (self, eComment, *args):
 		" Handles the determining the AI comments"
 		AIString = self.getDiplomacyComment(eComment)
@@ -727,6 +765,39 @@ class CvDiplomacy:
 			if (len(args)):
 				print "args", args
 			AIString = "(%d) - %s" %(self.getLastResponseID(), AIString)
+
+		if (self.isComment(eComment, "AI_DIPLOCOMMENT_GREETINGS") or
+				self.isComment(eComment, "AI_DIPLOCOMMENT_FIRST_CONTACT") or
+				self.isComment(eComment, "AI_DIPLOCOMMENT_THANKS") or
+				self.isComment(eComment, "AI_DIPLOCOMMENT_CHIEF_GOODY")):
+			szGiftInfo = self.getNativeGiftInfoText()
+			if szGiftInfo:
+				# getDiplomacyComment returns a text KEY. Resolve it first so
+				# setAIString is not asked to look up "KEY + gift line".
+				translator = CyTranslator()
+				if isinstance(AIString, unicode):
+					szKey = AIString.encode("ascii", "replace")
+				else:
+					szKey = str(AIString)
+				szResolved = translator.getText(szKey, args)
+				if isinstance(szResolved, unicode):
+					szResolved = szResolved.encode("ascii", "replace")
+				AIString = szResolved + szGiftInfo
+				args = ()
+
+		elif self.isComment(eComment, "AI_DIPLOCOMMENT_REFUSE_TO_TALK"):
+			szPeaceInfo = self.getPeaceTalkInfoText()
+			if szPeaceInfo:
+				translator = CyTranslator()
+				if isinstance(AIString, unicode):
+					szKey = AIString.encode("ascii", "replace")
+				else:
+					szKey = str(AIString)
+				szResolved = translator.getText(szKey, args)
+				if isinstance(szResolved, unicode):
+					szResolved = szResolved.encode("ascii", "replace")
+				AIString = szResolved + szPeaceInfo
+				args = ()
 
 		self.diploScreen.setAIString(AIString, args)
 		self.diploScreen.setAIComment(eComment)

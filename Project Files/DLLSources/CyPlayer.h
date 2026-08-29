@@ -325,6 +325,11 @@ public:
 	int AI_getAttitudeExtra(int /*PlayerTypes*/ eIndex);
 	void AI_setAttitudeExtra(int /*PlayerTypes*/ eIndex, int iNewValue);
 	void AI_changeAttitudeExtra(int /*PlayerTypes*/ eIndex, int iChange);
+	int AI_getTradeAttitude(int /*PlayerTypes*/ ePlayer);
+	int AI_getTradeAttitudeValue(int /*PlayerTypes*/ ePlayer);
+	int AI_getTradeAttitudeGoldForNextLevel(int /*PlayerTypes*/ ePlayer);
+	int AI_getTradeAttitudeTurnsUntilDecay(int /*PlayerTypes*/ ePlayer);
+	int AI_getTurnsUntilWillingToTalk(int /*PlayerTypes*/ ePlayer);
 	int AI_getMemoryCount(int /*PlayerTypes*/ eIndex1, int /*MemoryTypes*/ eIndex2);
 	void AI_changeMemoryCount(int /*PlayerTypes*/ eIndex1, int /*MemoryTypes*/ eIndex2, int iChange);
 	int AI_getExtraGoldTarget() const;
