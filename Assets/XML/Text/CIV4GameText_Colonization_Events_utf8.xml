@@ -2699,10 +2699,17 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1_HELP</Tag>
-		<English>If this treasure is still in the harbor after 5 turns, the pirates will steal it. If you move it away in time, a Pirate Cutter will appear off the coast instead.</English>
-		<Portuguese>Se este tesouro ainda estiver no porto após 5 turnos, os piratas irão roubá-lo. Se você afastá-lo a tempo, um Cúter Pirata aparecerá na costa.</Portuguese>
-		<German>Wenn sich dieser Schatz nach 5 Runden noch immer im Hafen befindet, werden die Piraten ihn stehlen. Bringst du ihn rechtzeitig fort, werden die Piraten vor der Küste lauern.</German>
-		<Russian>Если через 5 ходов это Сокровище будет находиться в гавани, его украдут пираты. Если же вы успеете его убрать, у берегов появится Пиратский катер.</Russian>
+		<English>If this treasure is still in the harbor after %d1 [NUM1:turn:turns], the pirates will steal it. If you move it away in time, a Pirate Cutter will appear off the coast instead.</English>
+		<Portuguese>Se este tesouro ainda estiver no porto após %d1 [NUM1:turno:turnos], os piratas irão roubá-lo. Se você afastá-lo a tempo, um Cúter Pirata aparecerá na costa.</Portuguese>
+		<German>Wenn sich dieser Schatz nach %d1 [NUM1:Runde:Runden] noch immer im Hafen befindet, werden die Piraten ihn stehlen. Bringst du ihn rechtzeitig fort, werden die Piraten vor der Küste lauern.</German>
+		<Russian>Если через %d1 [NUM1:ход:ходов] это Сокровище будет находиться в гавани, его украдут пираты. Если же вы успеете его убрать, у берегов появится Пиратский катер.</Russian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_PIRATES_4_FOLLOWUP_HELP</Tag>
+		<English>[ICON_BULLET]%d1%% chance, in %d2 [NUM2:turn:turns], to receive a [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] in one of our colonies.</English>
+		<Portuguese>[ICON_BULLET]%d1%% de chance, em %d2 [NUM2:turno:turnos], de receber um [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] em uma de nossas colônias.</Portuguese>
+		<German>[ICON_BULLET]%d1%% Wahrscheinlichkeit, in %d2 [NUM2:Runde:Runden] ein bzw. eine [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] in einer unserer Kolonien zu erhalten.</German>
+		<Russian>[ICON_BULLET]%d1%% шанс через %d2 [NUM2:ход:ходов] получить [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] в одной из наших колоний.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1a</Tag>
