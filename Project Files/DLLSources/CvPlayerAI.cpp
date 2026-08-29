@@ -1044,6 +1044,64 @@ void CvPlayerAI::AI_unitUpdate()
 			{
 				if (isNative())
 				{
+					// WTP, Schmiddie, Native expansion START
+					if (pLoopCity->getPopulation() >= 15)
+					{
+						const ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(UNITAI_SETTLER, pLoopCity);
+
+						if (eProfession != NO_PROFESSION)
+						{
+							static_cast<CvCityAI*>(pLoopCity)->AI_doSettlerProfessionCheat();
+
+							int iBestValue = 0;
+							CvUnit* pBestUnit = NULL;
+
+							for (int i = 0; i < pLoopCity->getPopulation(); ++i)
+							{
+								CvUnit* pUnit = pLoopCity->getPopulationUnitByIndex(i);
+
+								if (pUnit != NULL && pUnit->canHaveProfession(eProfession, false))
+								{
+									int iValue = AI_professionSuitability(pUnit, eProfession, pLoopCity->plot());
+
+									if (pUnit->getProfession() == pUnit->AI_getIdealProfession())
+									{
+										iValue /= 4;
+									}
+
+									if (pUnit->AI_getIdealProfession() != NO_PROFESSION)
+									{
+										if ((pUnit->getProfession() != pUnit->AI_getIdealProfession()) && (GC.getProfessionInfo(pUnit->AI_getIdealProfession()).isWorkPlot()))
+										{
+											iValue *= 150;
+											iValue /= 100;
+										}
+									}
+									else
+									{
+										iValue *= 120;
+										iValue /= 100;
+									}
+
+									if (iValue > iBestValue)
+									{
+										iBestValue = iValue;
+										pBestUnit = pUnit;
+									}
+								}
+							}
+
+							if (pBestUnit != NULL)
+							{
+								if (pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pBestUnit, false, eProfession))
+								{
+									pBestUnit->AI_setUnitAIType(UNITAI_SETTLER);
+								}
+							}
+						}
+					}
+					// WTP, Schmiddie, Native expansion END
+
 					pLoopCity->AI_doNative();
 				}
 				else if (pLoopCity->getPopulation() > 1)
@@ -1786,25 +1844,32 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 		{
 			return 0;
 		}
-		if (iCityDistance < iRange || iCityDistance > (iRange * 3))
+		if (iCityDistance > (iRange * 3))
 		{
 			return 0;
 		}
 
-		for (int iDX = -iRange; iDX <= iRange; ++iDX)
+		// Keep a minimum distance of 4 from all Native villages.
+		for (int iDX = -3; iDX <= 3; ++iDX)
 		{
-			for (int iDY = -iRange; iDY <= iRange; ++iDY)
+			for (int iDY = -3; iDY <= 3; ++iDY)
 			{
 				CvPlot* pLoopPlot = plotXY(iX, iY, iDX, iDY);
 
-				if (pLoopPlot != NULL)
+				if (pLoopPlot != NULL && pLoopPlot->isCity())
 				{
-					if (pLoopPlot->isOwned())
+					if (GET_PLAYER(pLoopPlot->getOwnerINLINE()).isNative())
 					{
 						return 0;
 					}
 				}
 			}
+		}
+
+		// Do not found on developed land.
+		if (pPlot->getImprovementType() != NO_IMPROVEMENT)
+		{
+			return 0;
 		}
 	}
 

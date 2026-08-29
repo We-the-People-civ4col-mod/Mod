@@ -25,7 +25,7 @@
 #include "CvSavegame.h"
 #include "BetterBTSAI.h"
 
-#define FOUND_RANGE				(7)
+#define FOUND_RANGE				(10)
 
 #define MOVE_PRIORITY_MAX 			2000
 #define MOVE_PRIORITY_HIGH 			1500
@@ -1519,7 +1519,7 @@ void CvUnitAI::AI_settlerMove()
 
 	if (isNative())
 	{
-		if (AI_foundRange(7))
+		if (AI_foundRange(10))
 		{
 			return;
 		}
@@ -1527,7 +1527,7 @@ void CvUnitAI::AI_settlerMove()
 		{
 			return;
 		}
-		if (GC.getGame().getGameTurn() - AI_getLastAIChangeTurn() > 10)
+		if (GC.getGame().getGameTurn() - AI_getLastAIChangeTurn() > 20)
 		{
 			AI_setUnitAIType(UNITAI_DEFENSIVE);
 			return;
@@ -15089,7 +15089,7 @@ int CvUnitAI::AI_foundValue(CvPlot* pPlot)
 	}
 
 	int iValue = 0;
-	if ((kOwner.getNumCities() == 0) /* && (GC.getGameINLINE().getGameTurn() < 20)*/)
+	if (kOwner.isNative() || (kOwner.getNumCities() == 0) /* && (GC.getGameINLINE().getGameTurn() < 20)*/)
 	{
 		iValue = kOwner.AI_foundValue(pPlot->getX_INLINE(), pPlot->getY_INLINE());
 	}
