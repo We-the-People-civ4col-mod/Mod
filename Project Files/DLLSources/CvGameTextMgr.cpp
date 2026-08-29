@@ -9168,7 +9168,8 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		// WTP, ray, correcting Yield Help for Culture - missing Culture from Citizens - END
 		else 
 		{
-			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_TOTAL", info.getTextKeyWide(), aiYields[eYieldType], info.getChar()));
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_TOTAL", info.getTextKeyWide(), iModifiedProduction, info.getChar()));
+			FAssert(iModifiedProduction == aiYields[eYieldType]);
 		}
 	}
 	// R&R, ray, Health - END

@@ -13878,7 +13878,7 @@ char const* CvGameText::getLanguageName(int iLanguageID)
 	case 17: return "Faroese";
 	case 18: return "Galician";
 	case 19: return "Icelandic";
-	case 20: return "Portuguese";
+	case 20: return "PortugueseBR";
 	case 21: return "PortuguesePT";
 	case 22: return "Norwegian";
 	case 23: return "Scottish";

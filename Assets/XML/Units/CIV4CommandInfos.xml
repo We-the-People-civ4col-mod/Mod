@@ -608,41 +608,5 @@
 			<bVisible>1</bVisible>
 			<Button>Art/interface/actions/pathfinder_on.dds</Button>
 		</CommandInfo>
-		<CommandInfo>
-			<Type>COMMAND_GRANT_FREEDOM</Type>
-			<Description>TXT_KEY_COMMAND_GRANT_FREEDOM</Description>
-			<Help>TXT_KEY_COMMAND_GRANT_FREEDOM_HELP</Help>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<HotKeyAlt/>
-			<bAltDownAlt>0</bAltDownAlt>
-			<bShiftDownAlt>0</bShiftDownAlt>
-			<bCtrlDownAlt>0</bCtrlDownAlt>
-			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-			<bConfirmCommand>1</bConfirmCommand>
-			<bVisible>1</bVisible>
-			<Button>Art/Interface/Actions/grant_freedom.dds</Button>
-		</CommandInfo>
-		<CommandInfo>
-			<Type>COMMAND_SELL_SLAVE</Type>
-			<Description>TXT_KEY_COMMAND_SELL_SLAVE</Description>
-			<Help>TXT_KEY_COMMAND_SELL_SLAVE_HELP</Help>
-			<HotKey/>
-			<bAltDown>0</bAltDown>
-			<bShiftDown>0</bShiftDown>
-			<bCtrlDown>0</bCtrlDown>
-			<iHotKeyPriority>0</iHotKeyPriority>
-			<HotKeyAlt/>
-			<bAltDownAlt>0</bAltDownAlt>
-			<bShiftDownAlt>0</bShiftDownAlt>
-			<bCtrlDownAlt>0</bCtrlDownAlt>
-			<iHotKeyPriorityAlt>0</iHotKeyPriorityAlt>
-			<bConfirmCommand>1</bConfirmCommand>
-			<bVisible>1</bVisible>
-			<Button>Art/Interface/Actions/sell_slave.dds</Button>
-		</CommandInfo>
 	</CommandInfos>
 </Civ4CommandInfos>

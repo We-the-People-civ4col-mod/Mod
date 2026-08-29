@@ -3679,10 +3679,6 @@
 					<VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_STUDENT</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
 			</ProfessionsNotAllowed>
 		</UnitInfo>
 		<UnitInfo>
@@ -4511,10 +4507,6 @@
 				</ProfessionNotAllowed>
 				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_STUDENT</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
 			</ProfessionsNotAllowed>
@@ -6734,10 +6726,6 @@
 					<VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_STUDENT</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
 			</ProfessionsNotAllowed>
 		</UnitInfo>
 		<UnitInfo>
@@ -7561,10 +7549,6 @@
 				</ProfessionNotAllowed>
 				<ProfessionNotAllowed>
 					<VoidProfessionType>PROFESSION_ROYAL_ARTILLERY</VoidProfessionType>
-					<bIsNotAllowed>1</bIsNotAllowed>
-				</ProfessionNotAllowed>
-				<ProfessionNotAllowed>
-					<VoidProfessionType>PROFESSION_STUDENT</VoidProfessionType>
 					<bIsNotAllowed>1</bIsNotAllowed>
 				</ProfessionNotAllowed>
 			</ProfessionsNotAllowed>

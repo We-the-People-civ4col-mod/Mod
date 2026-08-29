@@ -308,7 +308,6 @@ public:
 	bool isOccupation() const;
 	void setOccupationTimer(int iNewValue);
 	void changeOccupationTimer(int iChange);
-	void changeSlaveEmancipationPendingUnrest(int iChange); // WTP, Slave Emancipation
 
 	int getCultureUpdateTimer() const;
 	void setCultureUpdateTimer(int iNewValue);
@@ -832,7 +831,6 @@ protected:
 	int m_iDefenseDamage;
 	int m_iLastDefenseDamage;
 	int m_iOccupationTimer;
-	int m_iSlaveEmancipationPendingUnrest; // WTP, Slave Emancipation
 	int m_iCultureUpdateTimer;
 	int m_iCitySizeBoost;
 	int m_iHammers;

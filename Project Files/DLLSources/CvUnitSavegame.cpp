@@ -33,7 +33,6 @@ const int defaultBadCityDefenderCount = 0;
 const int defaultPostCombatPlotIndex = -1;
 const int defaultLbDrounds = 0;
 const int defaultLbDroundsBefore = 0;
-const int defaultLbDFreeReadyTurn = 0;
 const int defaultAmountForNativeTrade = 0;
 const int defaultMoneyToBuyLand = 0;
 
@@ -128,9 +127,6 @@ enum SavegameVariableTypes
 	UnitSave_AllowDangerousPath,
 	UnitSave_AllowDirectPath,
 
-	// WTP, Slave Emancipation
-	UnitSave_LbDFreeReadyTurn,
-
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -199,8 +195,6 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 	case UnitSave_FreePromotionCount: return "UnitSave_FreePromotionCount";
 	case UnitSave_AllowDangerousPath: return "UnitSave_AllowDangerousPath";
 	case UnitSave_AllowDirectPath: return "UnitSave_AllowDirectPath";
-	// WTP, Slave Emancipation
-	case UnitSave_LbDFreeReadyTurn: return "UnitSave_LbDFreeReadyTurn";
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -247,7 +241,6 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_iPostCombatPlotIndex = defaultPostCombatPlotIndex;
 	m_iLbDrounds = defaultLbDrounds;
 	m_iLbDroundsBefore = defaultLbDroundsBefore;
-	m_iLbDFreeReadyTurn = defaultLbDFreeReadyTurn;
 	m_iAmountForNativeTrade = defaultAmountForNativeTrade;
 	m_iMoneyToBuyLand = defaultMoneyToBuyLand;
 
@@ -341,7 +334,6 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_PostCombatPlotIndex: reader.Read(m_iPostCombatPlotIndex); break;
 		case UnitSave_LbDrounds: reader.Read(m_iLbDrounds); break;
 		case UnitSave_LbDroundsBefore: reader.Read(m_iLbDroundsBefore); break;
-		case UnitSave_LbDFreeReadyTurn: reader.Read(m_iLbDFreeReadyTurn); break;
 		case UnitSave_AmountForNativeTrade: reader.Read(m_iAmountForNativeTrade); break;
 		case UnitSave_MoneyToBuyLand: reader.Read(m_iMoneyToBuyLand); break;
 
@@ -444,7 +436,6 @@ void CvUnit::write(CvSavegameWriter writer)
 
 	writer.Write(UnitSave_LbDrounds, m_iLbDrounds, defaultLbDrounds);
 	writer.Write(UnitSave_LbDroundsBefore, m_iLbDroundsBefore, defaultLbDroundsBefore);
-	writer.Write(UnitSave_LbDFreeReadyTurn, m_iLbDFreeReadyTurn, defaultLbDFreeReadyTurn);
 	writer.Write(UnitSave_AmountForNativeTrade, m_iAmountForNativeTrade, defaultAmountForNativeTrade);
 	writer.Write(UnitSave_MoneyToBuyLand, m_iMoneyToBuyLand, defaultMoneyToBuyLand);
 

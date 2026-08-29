@@ -20,7 +20,6 @@ In general, this means arguments are named %d (number) and %s (string). No numbe
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_MOD_IN_DOCUMENTS_HEADER</Tag>
 		<English>Invalid Mod install location</English>
-		<Portuguese>Local de instalação do Mod inválido</Portuguese>
 		<German>Ungültiger Mod-Installationsort</German>
 		<French>Emplacement d'installation du mod non valide</French>
 		<Russian>Некорректное место расположения мода</Russian>
@@ -31,9 +30,6 @@ In general, this means arguments are named %d (number) and %s (string). No numbe
 		<English>This mod doesn't work correctly when installed in My Documents.
 Please move it to Mods in the game directory.
 See Readme for more details.</English>
-		<Portuguese>Este mod não funciona corretamente quando instalado em Meus Documentos.
-Mova-o para Mods no diretório do jogo.
-Consulte Leiame para obter mais detalhes.</Portuguese>
 		<German>Diese Mod funktioniert nicht richtig, wenn sie unter Eigene Dateien installiert ist.
 Bitte verschieben Sie sie nach Mods im Spielverzeichnis.
 Siehe Readme für weitere Details.</German>
@@ -50,7 +46,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_CONFIGURATION_ERROR_HEADER</Tag>
 		<English>Configuration error</English>
-		<Portuguese>Erro de configuração</Portuguese>
 		<German>Konfigurationsfehler</German>
 		<French>Erreur de configuration</French>
 		<Russian>Ошибка конфигурации</Russian>
@@ -59,7 +54,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_CONFIGURATION_ERROR</Tag>
 		<English>The game tried to set AllowPublicMaps to 0 in %s. Something went wrong while doing so and now it's possible that incompatible public maps can be selected ingame. Please manually open this file and set AllowPublicMaps = 0 Restart the game once this is done.</English>
-		<Portuguese>O jogo tentou definir AllowPublicMaps como 0 em %s. Algo deu errado ao fazer isso e agora é possível que mapas públicos incompatíveis possam ser selecionados no jogo. Abra manualmente este arquivo e defina AllowPublicMaps = 0 Reinicie o jogo quando isso for feito.</Portuguese>
 		<German>Das Spiel hat versucht, AllowPublicMaps in %s auf 0 zu setzen. Dabei ist etwas schief gelaufen und jetzt ist es möglich, dass inkompatible öffentliche Karten im Spiel ausgewählt werden können. Bitte öffnen Sie diese Datei manuell und setzen Sie AllowPublicMaps = 0 Starten Sie das Spiel neu, sobald dies geschehen ist.</German>
 		<French>Le jeu a essayé de placer AllowPublicMaps à 0 dans %s. Cette opération a échoué et il serait maintenant possible de sélectionner des cartes non compatibles. Veuillez ouvrir manuellement ce fichier et passer AllowPublicMaps = 0, puis redémarrer le jeu.</French>
 		<Russian>Игра пыталась установить значение AllowPublicMaps (старые карты из Vanilla) на 0 в файле %s. При этом что-то пошло не так и теперь в игре могут быть выбраны общедоступные карты, несовместимые с модом. Пожалуйста, вручную откройте этот файл и установите AllowPublicMaps = 0 Перезапустите игру, как только это будет сделано.</Russian>
@@ -68,7 +62,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_PUBLIC_MAPS_DISABLED_HEADER</Tag>
 		<English>Restart required</English>
-		<Portuguese>É necessário reiniciar</Portuguese>
 		<German>Neustart benötigt</German>
 		<French>Redémarrage nécessaire</French>
 		<Russian>Требуется перезагрука</Russian>
@@ -77,7 +70,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_PUBLIC_MAPS_DISABLED</Tag>
 		<English>The mod has changed configuration to remove known incompatible maps from the menus. Please restart the game for the new settings to take effect. Do you want to quit now?</English>
-		<Portuguese>O mod mudou a configuração para remover mapas incompatíveis conhecidos dos menus. Reinicie o jogo para que as novas configurações tenham efeito. Deseja sair agora?</Portuguese>
 		<German>Die Mod hat die Konfiguration geändert, um bekannte inkompatible Karten aus den Menüs zu entfernen. Bitte starten Sie das Spiel neu, damit die neuen Einstellungen wirksam werden. Möchten Sie das Spiel jetzt beenden?</German>
 		<French>Le mod a changé la configuration pour supprimer du menu les cartes incompatibles. Veuillez relancer le jeu pour que ces nouveaux réglages entrent en vigueur. Voulez-vous quitter maintenant ?</French>
 		<Russian>Мод изменил конфигурацию, чтобы удалить известные несовместимые карты из меню. Пожалуйста, перезапустите игру, чтобы новые настройки вступили в силу. Сделать это сейчас?</Russian>
@@ -86,7 +78,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_LARGE_ADDRESS_AWARE_HEADER</Tag>
 		<English>Low memory warning</English>
-		<Portuguese>Aviso de pouca memória</Portuguese>
 		<German>Warnung: Wenig Arbeitsspeicher</German>
 		<French>Avertissemnt: manque de mémoire</French>
 		<Russian>Предупреждение о нехватке памяти</Russian>
@@ -95,7 +86,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_LARGE_ADDRESS_AWARE</Tag>
 		<English>Colonization.exe is currently set to use max 2 GB of RAM. We The People will sometimes need more than that and if so the game will crash. Do you want to quit the game and open the readme on how to patch the game to use 4 GB?</English>
-		<Portuguese>Colonization.exe está atualmente configurado para usar no máximo 2 GB de RAM. We The People às vezes precisa de mais do que isso e, nesse caso, o jogo irá travar. Quer sair do jogo e abrir o leia-me sobre como corrigir o jogo para usar 4 GB?</Portuguese>
 		<German>Colonization.exe ist derzeit so eingestellt, dass es maximal 2 GB RAM verwendet. We The People braucht manchmal mehr als 2 GB und dann stürzt das Spiel ab. Möchten Sie das Spiel beenden und die Readme-Datei öffnen, um das Spiel auf 4 GB zu patchen?</German>
 		<French>Colonization.exe est configuré pour utiliser 2 Go de RAM maximum. Or We The People pourra nécessiter ponctuellement davantage de mémoire, ce qui fera planter le programme. Voulez-vous quitter le jeu et lire le fichier Readme pour appliquer le correctif de jeu  lui permettant d'utiliser 4 Go ?</French>
 		<Russian>В настоящее время Colonization.exe настроен на использование не более 2 ГБ ОЗУ. Моду "We The People" иногда может понадобится больше и тогда игра вылетит. Хотите выйти из игры и открыть инструкцию о том, как пропатчить игру, чтобы использовать 4 ГБ?</Russian>
@@ -104,7 +94,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_WRONG_STEAM_VERION_HEADER</Tag>
 		<English>Wrong Steam version</English>
-		<Portuguese>Versão errada do Steam</Portuguese>
 		<German>Falsche Steam-Version</German>
 		<French>Mauvaise version Steam</French>
 		<Russian>Неправильная Steam-версия игры</Russian>
@@ -113,7 +102,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_WRONG_STEAM_VERION</Tag>
 		<English>The currently selected version of Colonization has issues with mod compatibility. This can be fixed by telling steam to switch to the beta version. Do you want to quit now and open the readme on this issue?</English>
-		<Portuguese>A versão atualmente selecionada do Colonization tem problemas de compatibilidade com mods. Isso pode ser corrigido dizendo ao Steam para mudar para a versão beta. Deseja sair agora e abrir o leia-me sobre esse assunto?</Portuguese>
 		<German>Die derzeit ausgewählte Version von Colonization hat Probleme mit der Mod-Kompatibilität. Dies kann behoben werden, indem Sie Steam anweisen, zur Beta-Version zu wechseln. Möchten Sie jetzt beenden und die Readme zu diesem Problem öffnen?</German>
 		<French>La version sélectionnée de Colonization a des problèmes de compatibilité avec les mods. Ceci peut être corrigé en demandant à Steam d'utiliser la version bêta. Voulez-vous quitter le jeu et lire le fichier Readme à ce sujet ?</French>
 		<Russian>Текущая выбранная версия Колонизации имеет проблемы с совместимостью модов. Это можно исправить, изменив в настройках Steam версию игры на бета-версию. Хотите выйти из игры сейчас и открыть инструкцию по этому вопросу?</Russian>
@@ -122,7 +110,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_XML_HARDCODE_MISMATCH_HEADER</Tag>
 		<English>XML hardcoding error</English>
-		<Portuguese>Erro de codificação XML</Portuguese>
 		<German>XML-Hardcoding-Fehler</German>
 		<French>Erreur de couplage du fichier XML</French>
 		<Russian>Ошибка жесткого кодирования XML</Russian>
@@ -131,7 +118,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_XML_HARDCODE_MISMATCH</Tag>
 		<English>The DLL is compiled with the assumption that %s has a length of %d. However the xml file has an actual length of %d. This will cause issues and likely crashes and it needs to be fixed. This can be fixed by recompiling the DLL file, through the DLL file can't be updated while the game is running. Do you want to quit now?</English>
-		<Portuguese>A DLL é compilada supondo que %s tenha comprimento %d. No entanto, o arquivo XML tem um comprimento real de %d. Isso causará problemas e prováveis travamentos e precisa ser corrigido. Isso pode ser corrigido recompilando o arquivo DLL, pois o arquivo DLL não pode ser atualizado enquanto o jogo está em execução. Deseja sair agora?</Portuguese>
 		<German>Die DLL wird unter der Annahme kompiliert, dass %s eine Länge von %d hat. Die Xml-Datei hat jedoch eine tatsächliche Länge von %d. Dies führt zu Problemen und wahrscheinlich zu Abstürzen und muss behoben werden. Dies kann durch eine Neukompilierung der DLL-Datei behoben werden, da die DLL-Datei nicht aktualisiert werden kann, während das Spiel läuft. Möchten Sie das Spiel jetzt beenden?</German>
 		<French>La DLL du jeu est compilée en supposant que %s a une longueur de %d. Cependant le fichier XML a une longueur de %d. Ceci causera des problèmes et probablement des plantages et peut être corrigé en recompilant la DLL. Mais celle-ci ne peut être mise à jour pendant que le jeu est lancé. Voulez vous quitter maintenant ?</French>
 		<Russian>DLL компилируется с предположением, что файл %s имеет длину %d. Однако фактическая длина файла составляет %d. Это может вызвать проблемы и вероятные сбои и требует исправления. Это можно сделать, перекомпилировав файл DLL. Но поскольку он не может быть обновлен во время работы игры, запуск нужно прервать. Хотите сделать это?</Russian>
@@ -140,7 +126,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_SAVEGAME_READ_ERROR_HEADER</Tag>
 		<English>Savegame read error</English>
-		<Portuguese>Erro de leitura do save</Portuguese>
 		<German>Fehler beim Lesen des Spielstands</German>
 		<French>Erreur de lecture de la sauvegarde</French>
 		<Russian>Ошибка чтения сохранения игры</Russian>
@@ -149,7 +134,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_SAVEGAME_TOO_OLD</Tag>
 		<English>The savegame is too old to be read. It was made using an outdated savegame format and can sadly not be converted to match current requirements. The game will now shut down to prevent the savegame code from crashing.</English>
-		<Portuguese>O save é muito antigo para ser lido. Ele foi feito usando um formato de save desatualizado e, infelizmente, não pode ser convertido para atender aos requisitos atuais. O jogo será encerrado para evitar que o código do save trave.</Portuguese>
 		<German>Das Savegame ist zu alt, um gelesen zu werden. Es wurde mit einem veralteten Savegame-Format erstellt und kann leider nicht an die aktuellen Anforderungen angepasst werden. Das Spiel wird nun beendet, um einen Absturz des Spiels zu verhindern.</German>
 		<French>Cette sauvegarde est trop ancienne pour être lue. Elle a été écrite dans un format de sauvegarde obsolète et ne peut hélas être convertie dans le format à jour. Le jeu va s'arrêter pour éviter un plantage.</French>
 		<Russian>Сохранение слишком старое. Оно было создано с использованием устаревшего формата сохранения и, к сожалению, не может быть преобразовано в соответствии с текущими требованиями. Игра будет закрыта, чтобы предотвратить сбой кода сохранения.</Russian>
@@ -158,7 +142,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_SAVEGAME_TOO_NEW</Tag>
 		<English>The savegame is made with a version of We The People, which is newer than the version you are currently using. Without knowing what data was added, there is no way the savegame can be read. The game will now shut down to prevent the savegame code from crashing.</English>
-		<Portuguese>O save é feito com uma versão do We The People, que é mais recente que a versão que você está usando atualmente. Sem saber quais dados foram adicionados, não há como ler o save. O jogo será encerrado para evitar que o código do save trave.</Portuguese>
 		<German>The savegame is made with a version of We The People, which is newer than the version you are currently using. Without knowing what data was added, there is no way the savegame can be read. Das Spiel wird nun beendet, um einen Absturz des Spiels zu verhindern.</German>
 		<French>Cette sauvegarde a été écrite par une version de We The People plus récente que celle que vous utilisez maintenant. Sans savoir quelles données ont été rajoutées, il n'y a aucun moyen de lire cette sauvegarde. Le jeu va s'arrêter pour éviter un plantage.</French>
 		<Russian>Сохранение сделано с версией We The People, которая новее, чем версия, которую вы используете сейчас. Не зная, какие данные были добавлены, невозможно прочитать сохранение. Игра будет закрыта, чтобы предотвратить сбой кода сохранения.</Russian>
@@ -167,7 +150,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_ALERT_FAILED_TO_READ_TEXT_XML_FILE_HEADER</Tag>
 		<English>XML file read error</English>
-		<Portuguese>Erro de leitura do arquivo XML</Portuguese>
 		<German>Fehler beim Lesen der XML-Dateien</German>
 		<Russian>Ошибка чтения XML файла</Russian>
 		<Hungarian>XML fájl olvasási hiba</Hungarian>
@@ -177,9 +159,6 @@ További részletekért lásd az OlvessEl-t.</Hungarian>
 		<English>%s
 Reason: %s
 Text from this file will be missing in the game.</English>
-		<Portuguese>%s
-Razão: %s
-O texto deste arquivo estará faltando no jogo.</Portuguese>
 		<German>%s
 Grund: %s
 Der Text aus dieser Datei fehlt im Spiel.</German>

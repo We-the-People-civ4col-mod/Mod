@@ -3,7 +3,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SEALEVEL_HIGH</Tag>
 		<English>High</English>
-		<Portuguese>Alto</Portuguese>
 		<French>Haut</French>
 		<German>Hoch</German>
 		<Italian>Alto</Italian>
@@ -13,7 +12,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SEALEVEL_LOW</Tag>
 		<English>Low</English>
-		<Portuguese>Baixo</Portuguese>
 		<French>Bas</French>
 		<German>Niedrig</German>
 		<Italian>Basso</Italian>
@@ -23,7 +21,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SEALEVEL_MEDIUM</Tag>
 		<English>Medium</English>
-		<Portuguese>Médio</Portuguese>
 		<French>Normal</French>
 		<German>Mittel</German>
 		<Italian>Medio</Italian>

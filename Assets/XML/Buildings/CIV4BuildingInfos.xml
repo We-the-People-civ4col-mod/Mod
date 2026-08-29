@@ -8123,10 +8123,6 @@
 					<YieldType>YIELD_HORSES</YieldType>
 					<iModifier>50</iModifier>
 				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_MILK</YieldType>
-					<iModifier>50</iModifier>
-				</YieldModifier>
 			</YieldModifiers>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
@@ -8226,10 +8222,6 @@
 				</YieldModifier>
 				<YieldModifier>
 					<YieldType>YIELD_GEESE</YieldType>
-					<iModifier>20</iModifier>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_MILK</YieldType>
 					<iModifier>20</iModifier>
 				</YieldModifier>
 			</YieldModifiers>
@@ -8354,10 +8346,6 @@
 				</YieldModifier>
 				<YieldModifier>
 					<YieldType>YIELD_GEESE</YieldType>
-					<iModifier>25</iModifier>
-				</YieldModifier>
-				<YieldModifier>
-					<YieldType>YIELD_MILK</YieldType>
 					<iModifier>25</iModifier>
 				</YieldModifier>
 			</YieldModifiers>

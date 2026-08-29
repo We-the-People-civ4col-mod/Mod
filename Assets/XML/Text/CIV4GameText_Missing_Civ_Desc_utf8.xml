@@ -8,12 +8,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ARAWAK_DESC</Tag>
 		<English>Arawak</English>
-		
-		<Portuguese>
-			<Text>Arawak</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Arawaks</Text>
 			<Gender>Male</Gender>
@@ -36,12 +30,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TUPI_DESC</Tag>
 		<English>Tupi</English>
-		
-		<Portuguese>
-			<Text>Tupi</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Tupis</Text>
 			<Gender>Male</Gender>
@@ -64,12 +52,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CHEROKEE_DESC</Tag>
 		<English>Cherokee</English>
-		
-		<Portuguese>
-			<Text>Cherokee</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Cherokees</Text>
 			<Gender>Male</Gender>
@@ -92,12 +74,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_IROQUOIS_DESC</Tag>
 		<English>Iroquois</English>
-		
-		<Portuguese>
-			<Text>Iroqueses</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Iroquois</Text>
 			<Gender>Male</Gender>
@@ -120,12 +96,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SIOUX_DESC</Tag>
 		<English>Sioux</English>
-		
-		<Portuguese>
-			<Text>Sioux</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Sioux</Text>
 			<Gender>Male</Gender>
@@ -148,12 +118,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NEZ_PERCE_DESC</Tag>
 		<English>Nez Perce</English>
-		
-		<Portuguese>
-			<Text>Nez Percé</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Nez Perce</Text>
 			<Gender>Male</Gender>
@@ -176,12 +140,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_APACHE_DESC</Tag>
 		<English>Apache</English>
-		
-		<Portuguese>
-			<Text>Apache</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Apaches</Text>
 			<Gender>Male</Gender>
@@ -204,12 +162,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_INUIT_DESC</Tag>
 		<English>Inuit</English>
-		
-		<Portuguese>
-			<Text>Inuítes</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Inuits</Text>
 			<Gender>Male</Gender>
@@ -232,12 +184,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_HURON_DESC</Tag>
 		<English>Huron</English>
-		
-		<Portuguese>
-			<Text>Huron</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Hurons</Text>
 			<Gender>Male</Gender>
@@ -260,12 +206,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ZAPOTEC_DESC</Tag>
 		<English>Zapotec</English>
-		
-		<Portuguese>
-			<Text>Zapoteca</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Zapotèques</Text>
 			<Gender>Male</Gender>
@@ -288,12 +228,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_GUARANI_DESC</Tag>
 		<English>Guarani</English>
-		
-		<Portuguese>
-			<Text>Guarani</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Guaranis</Text>
 			<Gender>Male</Gender>
@@ -316,12 +250,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CARIBS_DESC</Tag>
 		<English>Carib</English>
-		
-		<Portuguese>
-			<Text>Carib</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Caraïbes</Text>
 			<Gender>Male</Gender>
@@ -344,12 +272,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_NAVAJO_DESC</Tag>
 		<English>Navajo</English>
-		
-		<Portuguese>
-			<Text>Navajo</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Navajos</Text>
 			<Gender>Male</Gender>
@@ -372,12 +294,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_ALGONQUIAN_DESC</Tag>
 		<English>Algonquian</English>
-		
-		<Portuguese>
-			<Text>Algonquino</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Algonquins</Text>
 			<Gender>Male</Gender>
@@ -400,12 +316,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MACHIPARO_DESC</Tag>
 		<English>Machiparo</English>
-		
-		<Portuguese>
-			<Text>Machiparo</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Machiparos</Text>
 			<Gender>Male</Gender>
@@ -428,12 +338,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MIXTEC_DESC</Tag>
 		<English>Mixtec</English>
-		
-		<Portuguese>
-			<Text>Mixteca</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Mixtèques</Text>
 			<Gender>Male</Gender>
@@ -456,12 +360,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MUISCA_DESC</Tag>
 		<English>Muisca</English>
-		
-		<Portuguese>
-			<Text>Muisca</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Muiscas</Text>
 			<Gender>Male</Gender>
@@ -484,12 +382,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_COMANCHE_DESC</Tag>
 		<English>Comanche</English>
-		
-		<Portuguese>
-			<Text>Comanche</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Comanches</Text>
 			<Gender>Male</Gender>
@@ -512,12 +404,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SHOSHONE_DESC</Tag>
 		<English>Shoshone</English>
-		
-		<Portuguese>
-			<Text>Shoshone</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Shoshones</Text>
 			<Gender>Male</Gender>
@@ -540,12 +426,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TOROMONA_DESC</Tag>
 		<English>Toromona</English>
-		
-		<Portuguese>
-			<Text>Toromona</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Toromonas</Text>
 			<Gender>Male</Gender>
@@ -568,12 +448,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_CROW_DESC</Tag>
 		<English>Crow</English>
-		
-		<Portuguese>
-			<Text>Crow</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Crows</Text>
 			<Gender>Male</Gender>
@@ -596,12 +470,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_BLACKFOOT_DESC</Tag>
 		<English>Blackfoot</English>
-		
-		<Portuguese>
-			<Text>Blackfoot</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Niitsítapi</Text>
 			<Gender>Male</Gender>
@@ -624,12 +492,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_GUAYMI_DESC</Tag>
 		<English>Ngabe</English>
-		
-		<Portuguese>
-			<Text>Ngabe</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Guaymí</Text>
 			<Gender>Male</Gender>
@@ -652,12 +514,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_TARASCANS_DESC</Tag>
 		<English>Tarascans</English>
-		
-		<Portuguese>
-			<Text>Tarascos</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Tarasques</Text>
 			<Gender>Male</Gender>
@@ -680,12 +536,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_OMAGUA_DESC</Tag>
 		<English>Omagua</English>
-		
-		<Portuguese>
-			<Text>Omágua</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Omaguas</Text>
 			<Gender>Male</Gender>
@@ -708,12 +558,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIV_MAPUCHE_DESC</Tag>
 		<English>Mapuche</English>
-		
-		<Portuguese>
-			<Text>Mapuche</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Mapuches</Text>
 			<Gender>Male</Gender>

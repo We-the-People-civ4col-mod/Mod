@@ -9,12 +9,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_BREEDER</Tag>
 		<English>Expert Poultry Breeder:Expert Poultry Breeders</English>
-		
-		<Portuguese>
-			<Text>Avicultor:Avicultores</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Éleveur de volailles expert:Éleveurs de volailles experts</Text>
 			<Gender>Male</Gender>
@@ -41,12 +35,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BREEDER</Tag>
 		<English>Expert Poultry Breeder:Expert Poultry Breeders</English>
-		
-		<Portuguese>
-			<Text>Avicultor:Avicultores</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Éleveur expert:Éleveurs experts</Text>
 			<Gender>Male</Gender>
@@ -73,14 +61,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BREEDER_PEDIA</Tag>
 		<English>Chickens are an excellent food source. They travel well so they often provide the first domestic protein in a new colony. Poultry farmers raise chickens, ducks, turkeys and geese for meat and eggs. Children can look after a pen with few chickens. When the flock gets bigger wolves and bobcats discover an opportunity, so poultry breeding turns into an adult job.</English>
-		<Portuguese>As galinhas são uma excelente fonte de alimento. Eles viajam bem, por isso muitas vezes fornecem a primeira proteína doméstica em uma nova colônia. Os avicultores criam galinhas, patos, perus e gansos para obter carne e ovos. As crianças podem cuidar de um curral com poucas galinhas. Quando o rebanho fica maior, lobos e linces descobrem uma oportunidade, então a criação de aves se transforma em um trabalho adulto.</Portuguese>
 		<German>Hühner sind eine hervorragende Nahrungsquelle. Da sie sich gut transportieren lassen, sind sie oft das erste heimische Eiweiß in einer neuen Kolonie. Geflügelzüchter züchten Hühner, Enten, Truthähne und Gänse für Fleisch und Eier. Kinder können sich um einen Stall mit wenigen Hühnern kümmern. Wenn die Herde größer wird, werden Wölfe und Rotluchse eine Gefahr, und die Geflügelzucht wird zu einer Aufgabe für Erwachsene.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Tapasztalt Baromfitenyésztők[COLOR_REVERT] két különböző területen dolgoznak: [LINK=YIELD_CHICKEN]csirkék[\LINK] vagy [LINK=YIELD_GEESE]libák[\LINK] tenyésztést végzik. A tenyésztők különösen jók a [LINK=YIELD_CHICKEN]csirkék[\LINK] és a [LINK=YIELD_GEESE]libák[\LINK] állományának növelésében. [NEWLINE]A tenyésztéshez a megfelelő fajokból néhány állatot szükséges tartani. További információkért lásd az [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]állattenyésztés[\LINK] fejezetet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BREEDER_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Expert poultry breeders[COLOR_REVERT] have two different professions: raising ([LINK=PROFESSION_CHICKEN_BREEDER]chickens[\LINK] or [LINK=PROFESSION_GEESE_BREEDER]geese[\LINK]). The breeders are particularly good at increasing flocks of [LINK=YIELD_CHICKEN]chickens[\LINK] and [LINK=YIELD_GEESE]geese[\LINK]. [NEWLINE]The right birds have to be on hand for breeding to occur. For more information, see the [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]livestock[\LINK] concept.</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Criadores de aves especializados[COLOR_REVERT] têm duas profissões diferentes: criação de ([LINK=PROFESSION_CHICKEN_BREEDER]galinhas[\LINK] ou [LINK=PROFESSION_GEESE_BREEDER]gansos[\LINK]). Os criadores são particularmente bons em aumentar bandos de [LINK=YIELD_CHICKEN]galinhas[\LINK] e [LINK=YIELD_GEESE]gansos[\LINK]. [NEWLINE]As aves certas devem estar disponíveis para que a reprodução ocorra. Para obter mais informações, consulte o conceito de [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]gado[\LINK].</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Geflügelzüchter[COLOR_REVERT] sind bei der Geflügelzucht ([LINK=PROFESSION_CHICKEN_BREEDER]Hühner[\LINK] / [LINK=PROFESSION_GEESE_BREEDER]Gänse[\LINK]) von [LINK=YIELD_CHICKEN]Hühnern[\LINK] und [LINK=YIELD_GEESE]Gänsen[\LINK] besonders effektiv.[NEWLINE]Einige Tiere der entsprechenden Art muss zu Zuchtzwecken gehalten werden. Mehr Informationen dazu unter dem Konzept [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]Tierzucht[\LINK].</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Tapasztalt Baromfitenyésztők[COLOR_REVERT] két különböző területen dolgoznak: [LINK=YIELD_CHICKEN]csirkék[\LINK] vagy [LINK=YIELD_GEESE]libák[\LINK] tenyésztést végzik. A tenyésztők különösen jók a [LINK=YIELD_CHICKEN]csirkék[\LINK] és a [LINK=YIELD_GEESE]libák[\LINK] állományának növelésében. [NEWLINE]A tenyésztéshez a megfelelő fajokból néhány állatot szükséges tartani. További információkért lásd az [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]állattenyésztés[\LINK] fejezetet.</Hungarian>
 	</TEXT>
@@ -88,12 +74,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CASSAVA_PLANTER</Tag>
 		<English>Expert Cassava Planter:Expert Cassava Planters</English>
-		
-		<Portuguese>
-			<Text>Plantador (Mandioca):Plantadores (Mandioca)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert planteur de manioc:Experts planteurs de manioc</Text>
 			<Gender>Male</Gender>
@@ -120,12 +100,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CASSAVA_PLANTER</Tag>
 		<English>Expert Cassava Planter:Expert Cassava Planters</English>
-		
-		<Portuguese>
-			<Text>Plantador (Mandioca):Plantadores (Mandioca)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert planteur de manioc:Experts planteurs de manioc</Text>
 			<Gender>Male</Gender>
@@ -152,14 +126,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_PEDIA</Tag>
 		<English>Cassava roots are a staple food in tropical and subtropical climates. Cassava can be either sweet or bitter, with the bitter more pest-resistant. Proper preparation is important to avoid the risk of acute cyanide intoxication.[NEWLINE]Cassava is drought-resistant. It grows on marginal soils. It's usually boiled, but the starch can be extracted for tapioca. In Brazil it's grated and dried into a coarse flour.</English>
-		<Portuguese>As raízes da mandioca são um alimento básico em climas tropicais e subtropicais. A mandioca pode ser doce ou amarga, sendo a amarga mais resistente a pragas. A preparação adequada é importante para evitar o risco de intoxicação aguda por cianeto.[NEWLINE]A mandioca é resistente à seca. Ela cresce em solos marginais. Geralmente é fervido, mas o amido pode ser extraído para a tapioca. No Brasil é ralado e seco até formar uma farinha grossa.</Portuguese>
 		<German>Maniokwurzeln sind ein Grundnahrungsmittel in tropischen und subtropischen Klimazonen. Maniok kann entweder süß oder bitter sein, wobei die bittere Variante schädlingsresistenter ist. Die richtige Zubereitung ist wichtig, um das Risiko einer akuten Zyanidvergiftung zu vermeiden.[NEWLINE]Maniok ist dürreresistent. Sie wächst auf marginalen Böden. Normalerweise wird sie gekocht, aber die Stärke kann für Tapioka extrahiert werden. In Brasilien wird sie gerieben und zu grobem Mehl getrocknet.</German>
 		<Hungarian>A maniókagyökér a trópusi és szubtrópusi éghajlaton alapvető élelmiszer. A manióka lehet édes vagy keserű, a keserűbb fajta jobban ellenáll a kártevőknek. A megfelelő előkészítés fontos, hogy elkerülhető legyen az akut cianidmérgezés kockázata. [NEWLINE]A manióka szárazságtűrő. Marginális talajon is megterem. Általában főzik, de a keményítő kivonható manióka előállításához. Brazíliában reszelik és szárítják, hogy durva liszt legyen belőle.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CASSAVA_PLANTER_STRATEGY</Tag>
 		<English>An [COLOR_HIGHLIGHT_TEXT]expert cassava planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_CASSAVA_PLANTER]planting[\LINK] [LINK=YIELD_CASSAVA]cassava[\LINK] than any other expert.[PARAGRAPH:1]Expert cassava planters can be bought in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT], [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]natives[\LINK] or in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its extensions.</English>
-		<Portuguese>Um [COLOR_HIGHLIGHT_TEXT]plantador de mandioca especializado[COLOR_REVERT] é mais eficaz no [LINK=PROFESSION_CASSAVA_PLANTER]plantio[\LINK] de [LINK=YIELD_CASSAVA]mandioca[\LINK] do que qualquer outro especialista.[PARAGRAPH:1]Os plantadores de mandioca especializados podem ser comprados em [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT], [LINK=CONCEPT_TRAINING]treinados[\LINK] por [LINK=CONCEPT_NATIVES]nativos[\LINK] ou em colônia com uma [LINK=BUILDING_SCHOOLHOUSE]escola[\LINK] ou uma de suas extensões.</Portuguese>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Maniokpflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_CASSAVA_PLANTER]pflanzen[\LINK] von [LINK=YIELD_CASSAVA]Maniok[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Maniokpflanzer können in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] erworben werden, in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] bzw. einer seiner Erweiterungen können sie [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]tapasztalt maniókaültető[COLOR_REVERT] hatékonyabban [LINK=PROFESSION_CASSAVA_PLANTER]termeszt[\LINK] [LINK=YIELD_CASSAVA]maniókát[\LINK], mint bárki más.[PARAGRAPH:1]Tapasztalt maniókaültetők felfogadhatók [COLOR_HIGHLIGHT_TEXT]Port Royalban[COLOR_REVERT], vagy [LINK=CONCEPT_TRAINING]kiképezhetők[\LINK] [LINK=CONCEPT_NATIVES]Indián[\LINK] falvakban, vagy egy kolóniában tanítható, ahol [LINK=BUILDING_SCHOOLHOUSE]iskola[\LINK] vagy annak egyik továbbfejlesztése van.</Hungarian>
 	</TEXT>
@@ -167,12 +139,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCHINEAL_COLLECTOR</Tag>
 		<English>Expert Cochineal Collector:Expert Cochineal Collectors</English>
-		
-		<Portuguese>
-			<Text>Coletor (Cochonilha):Coletores (Cochonilha)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Collecteur de cochenilles expert:Collecteurs de cochenilles expert</Text>
 			<Gender>Male</Gender>
@@ -199,12 +165,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR</Tag>
 		<English>Expert Cochineal Collector:Expert Cochineal Collectors</English>
-		
-		<Portuguese>
-			<Text>Coletor (Cochonilha):Coletores (Cochonilha)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Collecteur de cochenilles expert:Collecteurs de cochenilles expert</Text>
 			<Gender>Male</Gender>
@@ -231,14 +191,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_PEDIA</Tag>
 		<English>The cochineal insects found on prickly pear cactus pads produce carminic acid, a predator-deterring chemical. When mixed with aluminum or calcium salts dried cochineal becomes carmine dye. Collectors gather the bugs by brushing them off the cactus pads.[NEWLINE]Bright red carmine dye, used in the Americas for colouring fabrics, became an important export good in the 16th century. Cochineal insects are found in the areas now known as Peru, Mexico, Chile and Argentina.[NEWLINE]When assigned to the Cochineal Collector profession, the expert can gather double the quantity of cochineal in the same amount of time it would take a regular colonist.</English>
-		<Portuguese>Os insetos cochonilhas encontrados nas almofadas dos cactos espinhosos produzem ácido carmínico, um produto químico que dissuade predadores. Quando misturada com sais de alumínio ou cálcio, a cochonilha seca transforma-se em corante carmim. Os coletores coletam os insetos escovando-os das almofadas dos cactos.[NEWLINE]A tinta carmim vermelha brilhante, usada nas Américas para colorir tecidos, tornou-se um importante produto de exportação no século XVI. Os insetos cochonilhas são encontrados em áreas hoje conhecidas como Peru, México, Chile e Argentina.[NEWLINE]Quando designado para a profissão de Coletor de Cochonilha, o especialista pode coletar o dobro da quantidade de cochonilha no mesmo tempo que um colono normal levaria.</Portuguese>
 		<German>Die Cochenille-Schildläuse, die auf den Blättern des Feigenkaktus zu finden sind, produzieren Karminsäure, eine Chemikalie, die Raubtiere abschreckt. In Verbindung mit Aluminium- oder Kalziumsalzen wird aus den getrockneten Cochenille-Schildläusen ein karminroter Farbstoff. Sammler sammeln die Schildläuse ein, indem sie sie von den Kaktusblättern abbürsten.[NEWLINE]Der leuchtend rote Karminfarbstoff, der in Amerika zum Färben von Stoffen verwendet wurde, wurde ab Mitte des 16. Jahrhunderts zu einem wichtigen Exportgut. Cochenille-Insekten kommen in den Gebieten vor, die heute als Peru, Mexiko, Chile und Argentinien bekannt sind.[NEWLINE]Wenn ein Experte den Beruf des Cochenille-Sammlers ausübt, kann er die doppelte Menge an Cochenille-Schildläusen in der gleichen Zeit sammeln, die ein normaler Kolonist benötigen würde.</German>
 		<Hungarian>A fügekaktusz levelein élő bíbortetűk karminsavat termelnek, amely egy ragadozókat elriasztó vegyi anyag. Alumínium- vagy kalciumsókkal keverve a szárított bíbortetű karminfestékké válik. A gyűjtők a kaktuszlevelekről lekefélve gyűjtik össze a rovarokat. [NEWLINE]Az Amerikában szövetek színezésére használt élénkpiros karminfesték a 16. században fontos exportcikké vált. A bíbortetűk a mai Peru, Mexikó, Chile és Argentína területén élnek. [NEWLINE]A Tapasztalt Bíbortetű Gyűjtő ugyanannyi idő alatt kétszer annyi bíbortetűt tud gyűjteni, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCHINEAL_COLLECTOR_STRATEGY</Tag>
 		<English>An [COLOR_HIGHLIGHT_TEXT]expert cochineal collector[COLOR_REVERT] is more effective at [LINK=PROFESSION_COCHINEAL_COLLECTOR]collecting[\LINK] [LINK=YIELD_COCHINEAL]cochineal[\LINK] than any other expert.[PARAGRAPH:1]Expert cochineal collectors can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]Natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions. They can also be purchased in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</English>
-		<Portuguese>Um [COLOR_HIGHLIGHT_TEXT]coletor especialista de cochonilha[COLOR_REVERT] é mais eficaz na [LINK=PROFESSION_COCHINEAL_COLLECTOR]coletar[\LINK] [LINK=YIELD_COCHINEAL]cochonilha[\LINK] do que qualquer outro especialista.[PARAGRAPH:1]Coletores especialistas de cochonilha podem ser [LINK=CONCEPT_TRAINING]treinados[\LINK] por [LINK=CONCEPT_NATIVES]nativos[\LINK] ou em uma colônia com um [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou uma de suas extensões. Eles também podem ser adquiridos em [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</Portuguese>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Cochenille-Sammler[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_COCHINEAL_COLLECTOR]Sammeln[\LINK] von [LINK=YIELD_COCHINEAL]Cochenille-Schildläusen[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Cochenille-Sammler können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden. Man kann sie auch in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] erwerben.</German>
 		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]tapasztalt bíbortetű gyűjtő[COLOR_REVERT] hatékonyabban [LINK=PROFESSION_COCHINEAL_COLLECTOR]gyűjti[\LINK] a [LINK=YIELD_COCHINEAL] bíbortetűt[\LINK], mint bárki más.[PARAGRAPH:1] A tapasztalt bíbortetű gyűjtőket [LINK=CONCEPT_TRAINING]ki lehet képezni[\LINK] az [LINK=CONCEPT_NATIVES]Indián[\LINK] falvakban vagy egy kolóniában, ahol [LINK=BUILDING_COLLEGE]főiskola[\LINK] vagy annak egyik továbbfejlesztése van. Emellett felfogadhatók [COLOR_HIGHLIGHT_TEXT]Port Royalban [COLOR_REVERT] is.</Hungarian>
 	</TEXT>
@@ -246,12 +204,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_LINEN_PLANTER</Tag>
 		<English>Expert Flax Planter:Expert Flax Planters</English>
-		
-		<Portuguese>
-			<Text>Plantador (Linho):Plantadores (Linho)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert planteur de lin:Experts planteurs de lin</Text>
 			<Gender>Male</Gender>
@@ -278,12 +230,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LINEN_PLANTER</Tag>
 		<English>Expert Flax Planter:Expert Flax Planters</English>
-		
-		<Portuguese>
-			<Text>Plantador (Linho):Plantadores (Linho)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert planteur de lin:Experts planteurs de lin</Text>
 			<Gender>Male</Gender>
@@ -310,14 +256,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LINEN_PLANTER_PEDIA</Tag>
 		<English>Linen fabrics woven from wild flax date back over 30,000 years. Devout colonists all know that linen is frequently mentioned in the Bible.[NEWLINE]Linen is comfortable to wear in hot weather. The fabric is strong and absorbent, though it does wrinkle.</English>
-		<Portuguese>Os tecidos de linho tecidos de linho selvagem datam de mais de 30.000 anos. Todos os colonos devotos sabem que o linho é frequentemente mencionado na Bíblia.[NEWLINE]O linho é confortável de usar em climas quentes. O tecido é forte e absorvente, embora enrugue.</Portuguese>
 		<German>Leinenstoffe, die aus wildem Flachs gewebt werden, gibt es schon seit über 30.000 Jahren. Fromme Kolonisten wissen, dass Leinen häufig in der Bibel erwähnt wird.[NEWLINE]Leinen ist bei heißem Wetter angenehm zu tragen. Der Stoff ist stark und saugfähig, knittert aber.</German>
 		<Hungarian>A vad lenből szőtt vászon szövetek története több mint 30 000 évre nyúlik vissza. A jámbor telepesek mind tudják, hogy a vászon gyakran szerepel a Bibliában. [NEWLINE]A vászon meleg időben kényelmes viselet. A szövet erős és nedvszívó, bár gyűrődik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LINEN_PLANTER_STRATEGY</Tag>
 		<English>An [COLOR_HIGHLIGHT_TEXT]expert flax planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_FLAX_PLANTER]planting[\LINK] [LINK=YIELD_FLAX]flax[\LINK] than any other expert.[PARAGRAPH:1]Expert flax planters can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]Natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
-		<Portuguese>Um [COLOR_HIGHLIGHT_TEXT]plantador de linho especializado[COLOR_REVERT] é mais eficaz no [LINK=PROFESSION_FLAX_PLANTER]plantio[\LINK] de [LINK=YIELD_FLAX]linho[\LINK] do que qualquer outro especialista.[PARAGRAPH:1]Os plantadores de linho especializados podem ser [LINK=CONCEPT_TRAINING]treinados[\LINK] por [LINK=CONCEPT_NATIVES]nativos[\LINK] ou em uma colônia com um [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou uma de suas extensões.</Portuguese>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Flachspflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_FLAX_PLANTER]pflanzen[\LINK] von [LINK=YIELD_FLAX]Flachs[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Flachspflanzer können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT] tapasztalt len termesztő[COLOR_REVERT] hatékonyabban [LINK=PROFESSION_FLAX_PLANTER]termeszt[\LINK] [LINK=YIELD_FLAX]lent[\LINK], mint bárki más. [PARAGRAPH:1]A tapasztalt len termesztőt [LINK=CONCEPT_TRAINING]ki lehet képezni[\LINK] az [LINK=CONCEPT_NATIVES]Indián[\LINK] falvakban vagy egy kolónián, ahol van [LINK=BUILDING_COLLEGE]főiskola[\LINK] vagy annak egyik továbbfejlesztése.</Hungarian>
 	</TEXT>
@@ -325,12 +269,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_LOGWOOD_COLLECTOR</Tag>
 		<English>Expert Logwood Collector:Expert Logwood Collectors</English>
-		
-		<Portuguese>
-			<Text>Coletor (Campeche):Coletores (Campeche)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert en coupe de bois de sang:Experts en coupe de bois de sang</Text>
 			<Gender>Male</Gender>
@@ -357,12 +295,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR</Tag>
 		<English>Expert Logwood Collector:Expert Logwood Collectors</English>
-		
-		<Portuguese>
-			<Text>Coletor (Campeche):Coletores (Campeche)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert en coupe de bois de sang:Experts en coupe de bois de sang</Text>
 			<Gender>Male</Gender>
@@ -389,14 +321,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_PEDIA</Tag>
 		<English>The logwood tree was of great economic importance in the colonial era when it was exported to Europe for dyeing fabrics. Defying Spanish territorial claims, foreign sailors cut and collected trees for shipment back to Europe. Spain responded by commissioning privateers to attack them. Under attack from Spanish privateers, logwood cutters formed their own pirate crews to raid the Spanish. Blackbeard turned captured logwood sloops into pirate ships.</English>
-		<Portuguese>O pau-campeche teve grande importância econômica na época colonial, quando foi exportada para a Europa para tingimento de tecidos. Desafiando as reivindicações territoriais espanholas, marinheiros estrangeiros cortaram e recolheram árvores para envio de volta à Europa. A Espanha respondeu encomendando corsários para atacá-los. Sob ataque de corsários espanhóis, os cortadores de madeira formaram suas próprias equipes piratas para atacar os espanhóis. Barba Negra transformou chalupas de madeira capturadas em navios piratas.</Portuguese>
 		<German>In der Kolonialzeit war Blauholz von großer wirtschaftlicher Bedeutung, da es zum Färben von Stoffen nach Europa exportiert wurde. Unter Missachtung spanischer Gebietsansprüche fällten und sammelten ausländische Seeleute Bäume, um sie nach Europa zu verschiffen. Spanien beauftragte daraufhin Freibeuter, um sie anzugreifen. Unter den Angriffen der spanischen Freibeuter gründeten die Holzfäller ihre eigenen Piratencrews, um die Spanier zu überfallen. Blackbeard verwandelte gekaperte Holzschiffe in Piratenschiffe.</German>
 		<Hungarian>A kékfa nagy gazdasági jelentőséggel bírt a gyarmati korszakban, amikor Európába exportálták szövetek festésére. A spanyol területi igényeket figyelmen kívül hagyva a külföldi tengerészek kivágták és összegyűjtötték a fákat, hogy Európába szállítsák őket. Spanyolország erre úgy reagált, hogy kalózokat bízott meg a támadással. A spanyol kalózok támadásai miatt a kékfa favágók saját kalózcsapatokat alakítottak, hogy rajtaütéseket hajtsanak végre a spanyolokon. Feketeszakáll a fogságba ejtett kékfa szállító szlúpokat kalózhajókká alakította.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LOGWOOD_COLLECTOR_STRATEGY</Tag>
 		<English>If an [COLOR_HIGHLIGHT_TEXT]experienced logwood collector[COLOR_REVERT] is employed in the [LINK=PROFESSION_BLOODWOOD_CUTTER]logwood cutter[\LINK] profession, the yield of [LINK=YIELD_LOGWOOD]logwood[\LINK] extraction is greater than that of other experts. For other types of wood ([LINK=YIELD_LUMBER]lumber[\LINK], [LINK=YIELD_HARDWOOD]hardwood[\LINK] and [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK]), the experienced logwood collector scores slightly higher than [COLOR_HIGHLIGHT_TEXT]free colonists[COLOR_REVERT].[PARAGRAPH:1]Expert logwood collectors can be hired in [LINK=CONCEPT_AFRICA]Africa[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_SCHOOLHOUSE]schoolhouse[\LINK] or one of its upgrades.</English>
-		<Portuguese>Se um [COLOR_HIGHLIGHT_TEXT]coletor de pau-campeche experiente[COLOR_REVERT] for empregado na profissão de [LINK=PROFESSION_BLOODWOOD_CUTTER]cortador de pau-campeche[\LINK], o recurso da extração de [LINK=YIELD_LOGWOOD]pau-campeche[\LINK] será maior do que o de outros especialistas. Para outros tipos de madeira ([LINK=YIELD_LUMBER]madeira[\LINK], [LINK=YIELD_HARDWOOD]madeira nobre[\LINK] e [LINK=YIELD_VALUABLE_WOOD]madeira exótica[\LINK]), os coletores de pau-campeche experientes pontuam um pouco mais que os [COLOR_HIGHLIGHT_TEXT]colonos livres[COLOR_REVERT].[PARAGRAPH:1]Coletores de pau-campeche experientes podem ser contratados em [LINK=CONCEPT_AFRICA]África[\LINK], e eles também podem ser [LINK=CONCEPT_TRAINING]ensinados[\LINK] em uma colônia com uma [LINK=BUILDING_SCHOOLHOUSE]escola[\LINK] ou uma de suas atualizações.</Portuguese>
 		<German>Wird ein [COLOR_HIGHLIGHT_TEXT]Erfahrener Blauholz-Sammler[COLOR_REVERT] im Beruf des [LINK=PROFESSION_BLOODWOOD_CUTTER]Holzfällers (Blauholz)[\LINK] eingesetzt, ist die Ausbeute bei der Gewinnung von [LINK=YIELD_LOGWOOD]Blauholz[\LINK] größer als bei anderen Experten. Bei anderen Holzsorten ([LINK=YIELD_LUMBER]Holz[\LINK], [LINK=YIELD_HARDWOOD]Hartholz[\LINK] und [LINK=YIELD_VALUABLE_WOOD]Edelholz[\LINK]) erzielt der erfahrene Blauholz-Sammler etwas mehr als [COLOR_HIGHLIGHT_TEXT]Freie Kolonisten[COLOR_REVERT].[PARAGRAPH:1]Erfahrene Holzfäller können in [LINK=CONCEPT_AFRICA]Afrika[\LINK] angeheuert werden oder in einer Kolonie mit einer [LINK=BUILDING_SCHOOLHOUSE]Schule[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 		<Hungarian>Ha egy [COLOR_HIGHLIGHT_TEXT]tapasztalt kékfa gyűjtő[COLOR_REVERT] dolgozik [LINK=PROFESSION_BLOODWOOD_CUTTER]kékfa favágó[\LINK] szakmában, akkor a [LINK=YIELD_LOGWOOD]kékfa[\LINK] termelés nagyobb, mint bármelyik másik lakosnál. Más fafajok vágásánal ([LINK=YIELD_LUMBER]épületfa[\LINK], [LINK=YIELD_HARDWOOD]keményfa[\LINK] és [LINK=YIELD_VALUABLE_WOOD]bútorfa[\LINK]) a tapasztalt kékfa gyűjtő hozama kissé magasabb, mint a [COLOR_HIGHLIGHT_TEXT]szabad gyarmatosítóké [COLOR_REVERT].[PARAGRAPH:1] A tapasztalt kékfa gyűjtőket [LINK=CONCEPT_AFRICA]Afrikában[\LINK] lehet felfogadni és [LINK=CONCEPT_TRAINING]kiképezhetők[\LINK] egy kolónián, ahol van [LINK=BUILDING_SCHOOLHOUSE]iskola[\LINK] vagy annak egyik továbbfejlesztése.</Hungarian>
 	</TEXT>
@@ -404,12 +334,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_OLIVES_PLANTER</Tag>
 		<English>Expert Olive Picker:Expert Olive Pickers</English>
-		
-		<Portuguese>
-			<Text>Coletora (Olivas):Coletoras (Olivas)</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Ramasseur d'olives expert:Ramasseurs d'olives expert</Text>
 			<Gender>Male</Gender>
@@ -436,12 +360,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OLIVES_PLANTER</Tag>
 		<English>Expert Olive Picker:Expert Olive Pickers</English>
-		
-		<Portuguese>
-			<Text>Coletora (Olivas):Coletoras (Olivas)</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Ramasseur d'olives expert:Ramasseurs d'olives expert</Text>
 			<Gender>Male</Gender>
@@ -468,7 +386,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OLIVES_PLANTER_PEDIA</Tag>
 		<English>Olive trees produce either table olives or olives for oil. Spanish colonists brought the olive to the New World in 1560, where its cultivation prospered in present-day Peru, Chile, and Argentina. In the 18th century Spanish missionaries planted olive trees in California.[NEWLINE]Before European contact cooking oil was essential for Pacific Northwest Native nations. Candlefish oil was so central to Native commerce that the trade routes were called grease trails.</English>
-		<Portuguese>As oliveiras produzem azeitonas de mesa ou azeitonas para azeite. Os colonos espanhóis trouxeram a azeitona para o Novo Mundo em 1560, onde o seu cultivo prosperou no atual Peru, Chile e Argentina. No século XVIII, missionários espanhóis plantaram oliveiras na Califórnia.[NEWLINE]Antes do contato europeu, o óleo de cozinha era essencial para as nações nativas do noroeste do Pacífico. O óleo de vela era tão importante para o comércio nativo que as rotas comerciais eram chamadas de trilhas de graxa.</Portuguese>
 		<French>Les oliviers produisent soit des olives de table, soit des olives à huile. Les colons espagnols ont introduit l'olive dans le Nouveau Monde en 1560, où sa culture a prospéré dans les pays actuels que sont le Pérou, le Chili et l'Argentine. Au XVIIIe siècle, les missionnaires espagnols ont planté des oliviers en Californie.[NEWLINE]Avant le contact avec les Européens, l'huile de cuisson était essentielle pour les nations autochtones du nord-ouest du Pacifique. L'huile d'oolichan provenant de la chandelle constituait une si grande partie du commerce amérindien que les routes commerciales étaient appelées "pistes de graisse".</French>
 		<German>Olivenbäume liefern entweder Tafeloliven oder Oliven zur Ölgewinnung. Spanische Kolonisten brachten die Olive im Jahr 1560 in die Neue Welt, wo ihr Anbau im heutigen Peru, Chile und Argentinien florierte. Im 18. Jahrhundert pflanzten spanische Missionare Olivenbäume in Kalifornien.[NEWLINE]Vor dem Kontakt mit den Europäern war Speiseöl für die Ureinwohner des pazifischen Nordwestens lebenswichtig. Der Handel Oolichan-Öl aus Kerzenfisch hatte eine so große Bedeutung für die Ureinwohner, dass die Handelsrouten als "Fettstraßen" bezeichnet wurden.</German>
 		<Italian>Gli olivi producono olive da tavola o olive da olio. I coloni spagnoli portarono l'olivo nel Nuovo Mondo nel 1560, dove la sua coltivazione prosperò negli attuali Perù, Cile e Argentina. Nel XVIII secolo i missionari spagnoli piantarono olivi in California.[NEWLINE]Prima del contatto europeo, l'olio da cucina era essenziale per i nativi del Pacifico nordoccidentale. L'olio di oolichan ricavato dal pesce candela costituiva una parte così importante del commercio dei nativi che le rotte commerciali venivano chiamate "vie del grasso".</Italian>
@@ -478,7 +395,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OLIVES_PLANTER_STRATEGY</Tag>
 		<English>The olive is a small tree originating in the Mediterranean basin. [LINK=YIELD_OLIVES]Olives[\LINK] are one of the core ingredients in Mediterranean cuisine. The olive tree has thousands of cultivars.[NEWLINE]When assigned to the Olive Picker profession, the expert can gather double the olives in the same amount of time it would take a regular colonist.</English>
-		<Portuguese>A oliveira é uma pequena árvore originária da bacia do Mediterrâneo. As [LINK=YIELD_OLIVES]azeitonas[\LINK] são um dos principais ingredientes da culinária mediterrânea. A oliveira tem milhares de cultivares.[NEWLINE]Quando designado para a profissão de Coletora (Olivas), o especialista pode colher o dobro das azeitonas no mesmo tempo que um colono normal levaria.</Portuguese>
 		<French>L'olive est un petit arbre originaire du bassin méditerranéen. L'olive est l'un des principaux ingrédients de la cuisine méditerranéenne. L'olivier compte des milliers de cultivars.</French>
 		<German>Die Olive ist ein kleiner Baum, der im Mittelmeerraum beheimatet ist. Oliven sind eine der wichtigsten Zutaten der mediterranen Küche. Der Olivenbaum hat Tausende von Kultivaren.</German>
 		<Italian>L'olivo è un piccolo albero originario del bacino del Mediterraneo. Le olive sono uno degli ingredienti principali della cucina mediterranea. L'olivo ha migliaia di cultivar.</Italian>
@@ -489,12 +405,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PEANUT_PLANTER</Tag>
 		<English>Expert Peanut Planter:Expert Peanut Planters</English>
-		
-		<Portuguese>
-			<Text>Plantador (Amendoim):Plantadores (Amendoim)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert planteur de cacahuètes:Experts planteurs de cacahuètes</Text>
 			<Gender>Male</Gender>
@@ -521,12 +431,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEANUT_PLANTER</Tag>
 		<English>Expert Peanut Planter:Expert Peanut Planters</English>
-		
-		<Portuguese>
-			<Text>Plantador (Amendoim):Plantadores (Amendoim)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert planteur de cacahuètes:Experts planteurs de cacahuètes</Text>
 			<Gender>Male</Gender>
@@ -553,7 +457,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEANUT_PLANTER_PEDIA</Tag>
 		<English>Peanuts are legumes farmed for their edible seeds. They're widely grown in the tropics and subtropics by both small and large commercial producers. The peanut is a grain legume and also, due to its high oil content, an oil crop.[NEWLINE]Boiled peanuts are a popular snack in the areas where they're grown. They can be used to treat malnutrition and are especially important for feeding slave populations. Peanuts are usually roasted before being shipped.</English>
-		<Portuguese>O amendoim é uma leguminosa cultivada por suas sementes comestíveis. Eles são amplamente cultivados nos trópicos e subtrópicos, tanto por pequenos como por grandes produtores comerciais. O amendoim é um grão leguminoso e também, devido ao seu alto teor de óleo, uma cultura oleaginosa.[NEWLINE]O amendoim cozido é um lanche popular nas áreas onde é cultivado. Podem ser usados para tratar a desnutrição e são especialmente importantes para alimentar populações escravas. Os amendoins geralmente são torrados antes de serem enviados.</Portuguese>
 		<French>Les cacahuètes sont des légumineuses cultivées pour leurs graines comestibles. Elles sont largement cultivées dans les régions tropicales et subtropicales par les petits et grands producteurs commerciaux. L'arachide est à la fois une légumineuse à graines et, en raison de sa forte teneur en huile, un oléagineux.</French>
 		<German>Erdnüsse sind Hülsenfrüchte, die wegen ihrer essbaren Samen angebaut werden. Sie werden in den Tropen und Subtropen sowohl von kleinen als auch großen kommerziellen Erzeugern angebaut. Die Erdnuss ist sowohl eine Körnerleguminose als auch, aufgrund ihres hohen Ölgehalts, eine Ölpflanze.</German>
 		<Italian>Le arachidi sono legumi coltivati per i loro semi commestibili. Sono ampiamente coltivate nei tropici e nelle regioni subtropicali da piccoli e grandi produttori commerciali. L'arachide è sia una leguminosa da granella sia, grazie al suo elevato contenuto di olio, una coltura oleosa.</Italian>
@@ -563,7 +466,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEANUT_PLANTER_STRATEGY</Tag>
 		<English>An [COLOR_HIGHLIGHT_TEXT]expert peanut planter[COLOR_REVERT] is more effective at [LINK=PROFESSION_PEANUT_PLANTER]planting[\LINK] [LINK=YIELD_PEANUTS]peanuts[\LINK] than any other expert.[PARAGRAPH:1]Expert peanut planters can be [LINK=CONCEPT_TRAINING]trained[\LINK] by [LINK=CONCEPT_NATIVES]Natives[\LINK] or in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its extensions.</English>
-		<Portuguese>Um [COLOR_HIGHLIGHT_TEXT]plantador de amendoim especialista[COLOR_REVERT] é mais eficaz no [LINK=PROFESSION_PEANUT_PLANTER]plantio[\LINK] [LINK=YIELD_PEANUTS]amendoim[\LINK] do que qualquer outro especialista.[PARAGRAPH:1]Os plantadores de amendoim especialistas podem ser [LINK=CONCEPT_TRAINING]treinados[\LINK] por [LINK=CONCEPT_NATIVES]nativos[\LINK] ou em uma colônia com um [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou uma de suas extensões.</Portuguese>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Erdnusspflanzer[COLOR_REVERT] ist effektiver im [LINK=PROFESSION_PEANUT_PLANTER]pflanzen[\LINK] von [LINK=YIELD_PEANUTS]Erdnüssen[\LINK] als alle anderen Experten.[PARAGRAPH:1]Erfahrene Erdnusspflanzer können in Dörfern der [LINK=CONCEPT_NATIVES]Ureinwohner[\LINK] oder in einer Kolonie mit einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]tapasztalt mogyoró termesztő[COLOR_REVERT] hatékonyabban [LINK=PROFESSION_PEANUT_PLANTER] termeszt[\LINK] [LINK=YIELD_PEANUTS]mogyorót[\LINK], mint bárki más. [PARAGRAPH:1]A tapasztalt mogyoró termesztőket [LINK=CONCEPT_TRAINING]kiképezhetik[\LINK] az [LINK=CONCEPT_NATIVES]Indián[\LINK] falvakban vagy egy kolónián, ahol [LINK=BUILDING_COLLEGE]főiskola[\LINK] vagy annak egyik továbbfejlesztése van.</Hungarian>
 	</TEXT>
@@ -571,12 +473,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PEAT_CUTTER</Tag>
 		<English>Expert Peat and Clay Cutter:Expert Peat and Clay Cutters</English>
-		
-		<Portuguese>
-			<Text>Cortador de Turfa:Cortadores de Turfa</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert en coupe de tourbe et d'argile:Experts en coupe de tourbe et d'argile</Text>
 			<Gender>Male</Gender>
@@ -603,12 +499,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEAT_CUTTER</Tag>
 		<English>Expert Peat and Clay Cutter:Expert Peat and Clay Cutters</English>
-		
-		<Portuguese>
-			<Text>Cortador de Turfa:Cortadores de Turfa</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert en coupe de tourbe et d'argile:Experts en coupe de tourbe et d'argile</Text>
 			<Gender>Male</Gender>
@@ -635,7 +525,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEAT_CUTTER_PEDIA</Tag>
 		<English>A swamp dries and very slowly turns into a peat bog, which offers cheap fuel where wood and coal aren't available. Peat cutters don't need much equipment to do their work, just a cutter and a hod to carry chunks of peat on their back.</English>
-		<Portuguese>Um pântano seca e lentamente se transforma em uma turfeira, que oferece combustível barato onde a madeira e o carvão não estão disponíveis. Os cortadores de turfa não precisam de muito equipamento para fazer seu trabalho, apenas um cortador e um cortador para carregar pedaços de turfa nas costas.</Portuguese>
 		<French>Un marécage sèche et se transforme très lentement en tourbière, qui offre un combustible bon marché là où le bois et le charbon ne sont pas disponibles. Les coupeurs de tourbe n'ont pas besoin de beaucoup d'équipement pour faire leur travail, juste un coupeur et une houe pour transporter les morceaux de tourbe sur leur dos.</French>
 		<German>Ein Sumpf trocknet aus und verwandelt sich sehr langsam in ein Torfmoor, das billigen Brennstoff bietet, wenn Holz und Kohle nicht verfügbar sind. Torfstecher brauchen nicht viel Ausrüstung für ihre Arbeit, nur einen Stecher und eine Hacke, mit der sie die Torfstücke auf dem Rücken tragen können.</German>
 		<Italian>Una palude si asciuga e molto lentamente si trasforma in una torbiera, che offre combustibile a basso costo laddove legno e carbone non sono disponibili. I tagliatori di torba non hanno bisogno di molte attrezzature per svolgere il loro lavoro, solo di una taglierina e di un'ascia per trasportare i pezzi di torba sulla schiena.</Italian>
@@ -645,7 +534,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEAT_CUTTER_STRATEGY</Tag>
 		<English>Peat is a peasant fuel, warming the poor and slaves at low or no cost. Peat is the world's most efficient carbon sink, storing 42% of all soil carbon, more than all other vegetation types, including the world's forests. It's not renewable.[NEWLINE]When assigned to the [LINK=PROFESSION_CLAY_MINER]clay cutter[\LINK] or [LINK=PROFESSION_PEAT_CUTTER]peat cutter[\LINK] profession, the expert can cut twice as much [LINK=YIELD_CLAY]clay[\LINK] and [LINK=YIELD_PEAT]peat[\LINK] in the same amount of time as a regular colonist.</English>
-		<Portuguese>A turfa é um combustível camponês, aquecendo os pobres e os escravos a baixo ou nenhum custo. A turfa é o sumidouro de carbono mais eficiente do mundo, armazenando 42% de todo o carbono do solo, mais do que todos os outros tipos de vegetação, incluindo as florestas do mundo. Não é renovável.[NEWLINE]Quando atribuído à profissão de [LINK=PROFESSION_CLAY_MINER]cortador de argila[\LINK] ou [LINK=PROFESSION_PEAT_CUTTER]cortador de turfa[\LINK], o especialista pode cortar o dobro de [LINK=YIELD_CLAY]argila[\LINK] e [LINK=YIELD_PEAT]turfa[\LINK] no mesmo período de tempo que um colono normal.</Portuguese>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Torf- und Lehmstecher[COLOR_REVERT] kann, wenn er den Berufen [LINK=PROFESSION_CLAY_MINER]Lehmkuhlenarbeiter[\LINK] oder [LINK=PROFESSION_PEAT_CUTTER]Torfstecher[\LINK] zugewiesen ist, doppelt so viel [LINK=YIELD_CLAY]Lehm[\LINK] und [LINK=YIELD_PEAT]Torf[\LINK] produzieren, als ein normaler Kolonist.</German>
 		<Hungarian>A tőzeg paraszti tüzelőanyag, ami alacsony vagy nulla költséggel melegíti a szegényeket és a rabszolgákat. A tőzeg a világ leghatékonyabb szén-dioxid-elnyelője, az összes talajszén 42%-át tárolja, többet, mint bármely más növényzet, beleértve a világ erdőit is. Nem megújuló erőforrás. [NEWLINE]Ha [LINK=PROFESSION_CLAY_MINER]agyagbányász[\LINK] vagy [LINK=PROFESSION_PEAT_CUTTER]tőzegbányász[\LINK] szakmát választasz a Tapasztalt Agyag és Tőzegbányásznak, akkor az kétszer annyi [LINK=YIELD_CLAY]agyagot[\LINK] és [LINK=YIELD_PEAT]tőzeget[\LINK] állít elő ugyanannyi idő alatt, mint egy másik lakos.</Hungarian>
 	</TEXT>
@@ -653,12 +541,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_RAPE_PLANTER</Tag>
 		<English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
-		
-		<Portuguese>
-			<Text>Plantadora (Canola):Plantadoras (Canola)</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert planteur de colza:Experts planteurs de colza</Text>
 			<Gender>Male</Gender>
@@ -685,12 +567,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAPE_PLANTER</Tag>
 		<English>Expert Rapeseed Planter:Expert Rapeseed Planters</English>
-		
-		<Portuguese>
-			<Text>Plantadora (Canola):Plantadoras (Canola)</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert planteur de colza:Experts planteurs de colza</Text>
 			<Gender>Male</Gender>
@@ -717,14 +593,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAPE_PLANTER_PEDIA</Tag>
 		<English>Rapeseed with its bright yellow flowers is cultivated mainly for its oil-rich seed, which has appreciable amounts of erucic acid. Rapeseed meal, left after the oil is extracted, is a high-protein animal feed.</English>
-		<Portuguese>A canola, com suas flores amarelas brilhantes, é cultivada principalmente por suas sementes ricas em óleo, que possuem quantidades apreciáveis de ácido erúcico. A farinha de canola, deixada após a extração do óleo, é uma ração animal rica em proteínas.</Portuguese>
 		<German>Raps mit seinen leuchtend gelben Blüten wird hauptsächlich wegen seiner ölreichen Samen angebaut, die einen nennenswerten Anteil an Erucasäure enthalten. Rapsschrot, das nach der Ölgewinnung übrig bleibt, ist ein proteinreiches Tierfutter.</German>
 		<Hungarian>A ragyogó sárga virágú repcét elsősorban olajban gazdag magjáért termesztik, amely jelentős mennyiségű erukasavat tartalmaz. Az olaj kinyerése után visszamaradó repcemag-liszt magas fehérjetartalmú állati takarmány.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAPE_PLANTER_STRATEGY</Tag>
 		<English>Rapeseed is a valuable oil crop. Once the oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry. It's a member of the cabbage family.[NEWLINE]When assigned to the Rapeseed Planter profession, the expert can harvest double the [LINK=YIELD_RAPE]rapeseed[\LINK] in the same time as a regular colonist.</English>
-		<Portuguese>A canola é uma cultura oleaginosa valiosa. Uma vez extraído o óleo, o que sobra é utilizado como forragem para animais domésticos, principalmente bovinos, mas também suínos e aves. É um membro da família do repolho.[NEWLINE]Quando designado para a profissão de Plantador de Canola, o especialista pode colher o dobro da [LINK=YIELD_RAPE]canola[\LINK] no mesmo tempo que um colono normal.</Portuguese>
 		<German>Raps ist eine wertvolle Ölpflanze. Nach der Ölgewinnung wird der Rest als Futter für Haustiere verwendet, hauptsächlich für Rinder, aber auch für Schweine und Geflügel. Raps gehört zur Familie der Kohlgewächse. [NEWLINE] Wenn der Beruf des Rapsbauern zugewiesen wird, kann der Experte in der gleichen Zeit wie ein normaler Kolonist die doppelte Menge an Raps ernten.</German>
 		<Hungarian>A repce értékes olajos növény. Az olaj kinyerése után a maradékot háziállatok, főként marhák, de disznók és baromfi takarmányozására használják. A káposztafélék családjába tartozik.[NEWLINE]A Tapasztalt Repce Termesztő ugyanannyi idő alatt kétszer annyi [LINK=YIELD_RAPE]repcét[\LINK] tud betakarítani, mint a többi lakos.</Hungarian>
 	</TEXT>
@@ -732,12 +606,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_RICE_FARMER</Tag>
 		<English>Expert Rice Farmer:Expert Rice Farmers</English>
-		
-		<Portuguese>
-			<Text>Arrozeiro:Arrozeiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Riziculteur expert:Riziculteurs experts</Text>
 			<Gender>Male</Gender>
@@ -764,12 +632,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RICE_FARMER</Tag>
 		<English>Expert Rice Farmer:Expert Rice Farmers</English>
-		
-		<Portuguese>
-			<Text>Arrozeiro:Arrozeiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Riziculteur expert:Riziculteurs experts</Text>
 			<Gender>Male</Gender>
@@ -796,14 +658,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RICE_FARMER_PEDIA</Tag>
 		<English>In tropical areas rice can survive as a perennial. It grows in water. Rice seeds are milled with a huller to remove the chaff, producing brown rice. Removing the bran creates white rice.</English>
-		<Portuguese>Em áreas tropicais, o arroz pode sobreviver como planta perene. Ela cresce na água. As sementes de arroz são moídas com descascador para retirar o joio, produzindo arroz integral. A remoção do farelo cria arroz branco.</Portuguese>
 		<German>In tropischen Gebieten kann Reis als Staude überleben. Er wächst im Wasser. Reissamen werden mit einer Schälmaschine gemahlen, um die Spreu zu entfernen, wodurch brauner Reis entsteht. Durch das Entfernen der Kleie entsteht weißer Reis.</German>
 		<Hungarian>A trópusi területeken a rizs évelő növényként is megélhet. Vízben nő. A rizsmagokat hántolóval őrlik, hogy eltávolítsák a pelyvát, így barna rizst kapnak. A korpa eltávolításával fehér rizs keletkezik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RICE_FARMER_STRATEGY</Tag>
 		<English>[LINK=YIELD_RICE]Rice[\LINK] is nutritious and light to carry. Scouts may have a loaf of bread for their first day on the trail but it's the bag of dried rice that feeds them for the rest of the trip.[NEWLINE]When assigned to the Rice Farmer profession, the expert can grow double the rice in the same time as a regular colonist.</English>
-		<Portuguese>[LINK=YIELD_RICE]Arroz[\LINK] é nutritivo e leve para transportar. Batedores pode ter um pão para o primeiro dia na trilha, mas é o saco de arroz seco que os alimenta pelo resto da viagem.[NEWLINE]Quando designado para a profissão de Agricultor de Arroz, o especialista pode cultivar o dobro do arroz no mesmo tempo que um colono normal.</Portuguese>
 		<German>[LINK=YIELD_RICE]Reis[\LINK] ist nahrhaft und leicht zu transportieren. Pfadfinder haben vielleicht einen Laib Brot für ihren ersten Tag auf dem Pfad, aber es ist der Beutel mit getrocknetem Reis, der sie für den Rest der Reise ernährt.[NEWLINE]Wenn er dem Beruf des Reisbauern zugewiesen wird, kann der Experte doppelt so viel Reis in der gleichen Zeit anbauen wie ein normaler Kolonist.</German>
 		<Hungarian>A [LINK=YIELD_RICE]rizs[\LINK] tápláló és könnyen hordozható. A felderítőknek lehet, hogy az első napon van kenyerük, de a többi napon a szárított rizs táplálja őket. [NEWLINE]Egy Tapasztalt Rizs Termesztő ugyanannyi idő alatt kétszer annyi rizst tud termeszteni, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
@@ -811,12 +671,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_VANILLA_COLLECTOR</Tag>
 		<English>Expert Vanilla Collector:Expert Vanilla Collectors</English>
-		
-		<Portuguese>
-			<Text>Coletora (Baunilha):Coletoras (Baunilha)</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Collecteur de vanille expert:Collecteurs de vanille expert</Text>
 			<Gender>Male</Gender>
@@ -843,12 +697,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR</Tag>
 		<English>Expert Vanilla Collector:Expert Vanilla Collectors</English>
-		
-		<Portuguese>
-			<Text>Coletora (Baunilha):Coletoras (Baunilha)</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Collecteur de vanille expert:Collecteurs de vanille expert</Text>
 			<Gender>Male</Gender>
@@ -875,7 +723,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_PEDIA</Tag>
 		<English>Vanilla is a spice derived from orchids. There are three major species, all derived from the original Mexican plant. It can be pollinated by hand to produce the vanilla bean.</English>
-		<Portuguese>A baunilha é uma especiaria derivada de orquídeas. Existem três espécies principais, todas derivadas da planta mexicana original. Pode ser polinizada manualmente para produzir a fava de baunilha.</Portuguese>
 		<French>La vanille est une épice dérivée des orchidées. Il existe trois espèces principales, toutes dérivées de la plante mexicaine originale. Elle peut être pollinisée à la main pour produire la gousse de vanille.</French>
 		<German>Vanille ist ein aus Orchideen gewonnenes Gewürz. Es gibt drei Hauptarten, die alle von der ursprünglichen mexikanischen Pflanze abstammen. Sie kann von Hand bestäubt werden, um die Vanilleschote zu gewinnen.</German>
 		<Italian>La vaniglia è una spezia derivata dalle orchidee. Esistono tre specie principali, tutte derivate dalla pianta originale messicana. Può essere impollinata a mano per produrre il baccello di vaniglia.</Italian>
@@ -885,7 +732,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_VANILLA_COLLECTOR_STRATEGY</Tag>
 		<English>[LINK=YIELD_VANILLA]Vanilla[\LINK] is one of the two most popular flavours for sweet treats, the other being [LINK=YIELD_COCOA]chocolate[\LINK]. It's used in candy, baking and liqueurs, all of which would be familiar to monks in colonial missions.[NEWLINE]When assigned to the Vanilla Collector profession, the expert can gather twice as many vanilla beans in the same time as a regular colonist.</English>
-		<Portuguese>[LINK=YIELD_VANILLA]doces de baunilha[\LINK] é um dos dois sabores mais populares para doces, sendo o outro o [LINK=YIELD_COCOA]chocolate[\LINK]. É usado em doces, panificação e licores, todos os quais seriam familiares aos monges em missões coloniais.[NEWLINE]Quando designado para a profissão de Coletora (Baunilha), o especialista pode coletar o dobro de grãos de baunilha ao mesmo tempo que um colono normal.</Portuguese>
 		<French>La vanille est l'un des deux arômes les plus populaires pour les friandises, l'autre étant le chocolat. Elle est utilisée dans les bonbons, les pâtisseries et les liqueurs, autant d'arômes familiers aux moines des missions coloniales.[NEWLINE]Lorsqu'il est affecté à la profession de collecteur de vanille, l'expert peut récolter deux fois plus de gousses de vanille dans le même temps qu'un colon ordinaire.</French>
 		<German>Vanille ist neben Schokolade eine der beiden beliebtesten Geschmacksrichtungen für süße Leckereien. Sie wird in Süßigkeiten, zum Backen und für Liköre verwendet, alles Dinge, die Mönchen in kolonialen Missionen vertraut sind.[NEWLINE]Wenn der Experte den Beruf des Vanille-Sammlers ausübt, kann er in derselben Zeit doppelt so viele Vanilleschoten sammeln wie ein normaler Kolonist.</German>
 		<Italian>La vaniglia è uno dei due aromi più popolari per i dolci, l'altro è il cioccolato. Si usa nei dolci, nella pasticceria e nei liquori, tutti aromi familiari ai monaci delle missioni coloniali.[NEWLINE]Quando viene assegnato alla professione di Raccoglitore di Vaniglia, l'esperto può raccogliere il doppio dei semi di vaniglia nello stesso tempo di un normale colono.</Italian>
@@ -896,12 +742,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_YERBA_PLANTER</Tag>
 		<English>Expert Yerba Planter:Expert Yerba Planters</English>
-		
-		<Portuguese>
-			<Text>Plantadora (Erva-Mate):Plantadoras (Erva-Mate)</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert planteur de yerba:Experts planteurs de yerba</Text>
 			<Gender>Male</Gender>
@@ -932,12 +772,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_YERBA_PLANTER</Tag>
 		<English>Expert Yerba Planter:Expert Yerba Planters</English>
-		
-		<Portuguese>
-			<Text>Plantadora (Erva-Mate):Plantadoras (Erva-Mate)</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Expert planteur de yerba:Experts planteurs de yerba</Text>
 			<Gender>Male</Gender>
@@ -968,7 +802,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_YERBA_PLANTER_PEDIA</Tag>
 		<English>The Guaraní and Tupí cultivated yerba maté prior to European colonization. After the Jesuits started using it, yerba maté became widespread in what's now Paraguay and throughout other Spanish colonies.</English>
-		<Portuguese>Os Guarani e Tupí cultivavam erva-mate antes da colonização europeia. Depois que os jesuítas começaram a usá-la, a erva-mate se difundiu no que hoje é o Paraguai e em outras colônias espanholas.</Portuguese>
 		<French>Les Guarani et les Tupi cultivaient la yerba mate avant la colonisation européenne. Après que les Jésuites aient commencé à l'utiliser, le yerba mate s'est répandu dans ce qui est aujourd'hui le Paraguay et dans d'autres colonies espagnoles.</French>
 		<German>Die Guarani und Tupi bauten Yerba Mate bereits vor der europäischen Kolonisierung an. Nachdem die Jesuiten damit begonnen hatten, wurde Mate-Tee im heutigen Paraguay und in anderen spanischen Kolonien weit verbreitet.</German>
 		<Italian>I Guarani e i Tupi coltivavano la yerba mate prima della colonizzazione europea. Dopo che i gesuiti iniziarono a usarla, la yerba mate si diffuse nell'attuale Paraguay e in altre colonie spagnole.</Italian>
@@ -978,7 +811,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_YERBA_PLANTER_STRATEGY</Tag>
 		<English>Yerba leaves are steeped in hot water to make a caffeinated beverage: yerba maté. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the [LINK=PROFESSION_YERBA_COLLECTOR]yerba collector[\LINK] profession, the expert yerba planter can gather twice as many yerba leaves in the same time as a regular colonist.</English>
-		<Portuguese>As folhas da erva são mergulhadas em água quente para fazer uma bebida com cafeína: a erva-mate. Feito a frio, é usado para fazer tereré.[NEWLINE]Quando atribuído à profissão de [LINK=PROFESSION_YERBA_COLLECTOR]coletor de erva[\LINK], o plantador experiente de erva pode colher o dobro de folhas de erva ao mesmo tempo que um colono normal.</Portuguese>
 		<French>Les feuilles de yerba sont infusées dans de l'eau chaude pour obtenir une boisson caféinée : le yerba mate. Brassée froide, elle est utilisée pour faire du terere.[NEWLINE]Lorsqu'il est affecté à la profession de [LINK=PROFESSION_YERBA_COLLECTOR]collecteur de yerba[\LINK], le planteur de yerba expert peut récolter deux fois plus de feuilles de yerba dans le même temps qu'un colon ordinaire.</French>
 		<German>Mate-Blätter werden in heißem Wasser eingeweicht, um ein koffeinhaltiges Getränk herzustellen: Mate-Tee. Kalt gebraut, wird er zur Herstellung von Terere verwendet.[NEWLINE]Als [LINK=PROFESSION_YERBA_COLLECTOR]Yerba-Sammler[\LINK] kann ein erfahrener Yerba-Pflanzer doppelt so viele Mate-Blätter in derselben Zeit sammeln wie ein normaler Kolonist.</German>
 		<Italian>Le foglie di yerba vengono messe in infusione in acqua calda per ottenere una bevanda a base di caffeina: la yerba mate. Preparato a freddo, viene usato per fare il terere.[NEWLINE]Se assegnato alla professione di [LINK=PROFESSION_YERBA_COLLECTOR]raccoglitore di yerba[\LINK], il piantatore di yerba esperto può raccogliere il doppio delle foglie di yerba nello stesso tempo di un normale colono.</Italian>
@@ -989,12 +821,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HERDER</Tag>
 		<English>Expert Herder:Expert Herders</English>
-		
-		<Portuguese>
-			<Text>Pastor:Pastores</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Berger expérimenté:Bergers expérimentés</Text>
 			<Gender>Male</Gender>
@@ -1021,12 +847,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HERDER</Tag>
 		<English>Expert Herder:Expert Herders</English>
-		
-		<Portuguese>
-			<Text>Pastor:Pastores</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Berger expérimenté:Bergers expérimentés</Text>
 			<Gender>Male</Gender>
@@ -1053,14 +873,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HERDER_PEDIA</Tag>
 		<English>Cattle graze the tops of grass stalks. so they can use the same field for years. Sheep eat the whole grass plant down to the root, leaving pastures barren. The result can be a range war. Herding flocks is ancient. Biblical shepherds carried slings which they used to kill lions and Philistines, so herders in the New World were already well-prepared for wolves and bears.</English>
-		<Portuguese>O gado pasta nas pontas dos talos de grama. para que possam usar o mesmo campo por anos. As ovelhas comem toda a grama até a raiz, deixando as pastagens estéreis. O resultado pode ser uma guerra de alcance. Pastorear rebanhos é antigo. Os pastores bíblicos carregavam fundas que usavam para matar leões e filisteus, de modo que os pastores do Novo Mundo já estavam bem preparados para lobos e ursos.</Portuguese>
 		<German>Rinder weiden nur die Spitzen der Grashalme ab, so dass sie jahrelang dieselbe Wiese nutzen können. Schafe fressen die gesamte Graspflanze bis zur Wurzel ab und machen die Weiden unfruchtbar, was unter Umständen zu einem Kampf bzgl. der Weidenutzung führte. Bereits die biblischen Hirten trugen Schleudern, mit denen sie Löwen und Philister töteten, so dass die Hirten in der Neuen Welt gut auf Wölfe und Bären vorbereitet waren.</German>
 		<Hungarian>A marhák a fűszálak tetejét legelik, így ugyanazt a legelőt évekig használhatják. A juhok az egész fűszálat a gyökérig megeszik, így a legelők kopárrá válnak. Ez legelőháborúkhoz vezethet. A nyájterelés ősi foglalkozás. A bibliai pásztorok parittyaikkal oroszlánokat és filiszteusokat öltek, így az Újvilág pásztorai már jól fel voltak készülve a farkasok és medvék ellen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HERDER_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Expert herders[COLOR_REVERT] can take on different professions to handle [LINK=PROFESSION_SHEPHERD]sheep[\LINK], [LINK=PROFESSION_GOATHERD]goats[\LINK] or [LINK=PROFESSION_PIG_BREEDER]pigs[\LINK]. To increase the flocks of [LINK=YIELD_SHEEP]sheep[\LINK], [LINK=YIELD_PIG]pigpen[\LINK] populations, or herds of [LINK=YIELD_GOATS]goats[\LINK], animals have to be in the settlement so they can mate. For more information, see the [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]livestock[\LINK] concept.</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]pastores experientes[COLOR_REVERT] podem assumir diferentes profissões para cuidar de [LINK=PROFESSION_SHEPHERD]ovelhas[\LINK], [LINK=PROFESSION_GOATHERD]cabras[\LINK] ou [LINK=PROFESSION_PIG_BREEDER]porcos[\LINK]. Para aumentar os rebanhos de [LINK=YIELD_SHEEP]ovelhas[\LINK], populações de [LINK=YIELD_PIG]pigmentares[\LINK] ou rebanhos de [LINK=YIELD_GOATS]cabras[\LINK], os animais precisam estar na colônia para que possam acasalar. Para obter mais informações, consulte o conceito de [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]gado[\LINK].</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Hirten[COLOR_REVERT] sind beim Züchten ([LINK=PROFESSION_SHEPHERD]Schafe[\LINK] / [LINK=PROFESSION_GOATHERD]Ziegen[\LINK] / [LINK=PROFESSION_PIG_BREEDER]Schweine[\LINK]) von [LINK=YIELD_SHEEP]Schafen[\LINK], [LINK=YIELD_GOATS]Ziegen[\LINK] und [LINK=YIELD_PIG]Schweinen[\LINK] besonders effektiv. [NEWLINE]Einige Tiere der entsprechenden Art muss zu Zuchtzwecken gehalten werden. Mehr Informationen dazu unter dem Konzept [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]Tierzucht[\LINK].</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]tapasztalt pásztor[COLOR_REVERT] különböző feladatokat végezhet [LINK=YIELD_SHEEP]juhokkal[\LINK], [LINK=YIELD_PIG]disznókkal[\LINK] és [LINK=YIELD_GOATS]kecskékkel[\LINK]. A tenyésztéshez a [LINK=YIELD_SHEEP]juhokból[\LINK], [LINK=YIELD_PIG]disznókból[\LINK] vagy [LINK=YIELD_GOATS]kecskékből[\LINK] néhány állatnak lennie kell a településen. További információkért lásd a [LINK=CONCEPT_CATTLE_OR_SHEEP_BREEDING]állattenyésztés[\LINK] fejezetet.</Hungarian>
 	</TEXT>
@@ -1068,12 +886,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MAPLE_SIRUP_COLLECTOR</Tag>
 		<English>Expert Maple Tree Tapper:Expert Maple Tree Tappers</English>
-		
-		<Portuguese>
-			<Text>Coletor (Bordo):Coletores (Bordo)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Collecteur de sirop d'érable expert:Collecteurs de sirop d'érable expert</Text>
 			<Gender>Male</Gender>
@@ -1100,12 +912,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR</Tag>
 		<English>Expert Maple Tree Tapper:Expert Maple Tree Tappers</English>
-		
-		<Portuguese>
-			<Text>Coletor (Bordo):Coletores (Bordo)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Collecteur de sirop d'érable expert:Collecteurs de sirop d'érable expert</Text>
 			<Gender>Male</Gender>
@@ -1132,14 +938,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_PEDIA</Tag>
 		<English>Maple syrup comes from maple forests which grow in north temperate regions. It's a popular treat, contributing to happiness. In spring when sap starts to flow in the maple forests, tappers hammer spouts through the bark and collect a thin fluid that's then distilled over a slow fire into a rich thick syrup. The sap can also be poured on snow to make maple sugar.</English>
-		<Portuguese>O xarope de bordo vem de florestas de bordo que crescem nas regiões temperadas do norte. É um deleite popular, contribuindo para a felicidade. Na primavera, quando a seiva começa a fluir nas florestas de bordo, os seringueiros martelam os bicos na casca e coletam um fluido fino que é então destilado em fogo lento até formar um xarope rico e espesso. A seiva também pode ser derramada na neve para fazer açúcar de bordo.</Portuguese>
 		<German>Ahornsirup stammt aus Ahornwäldern, die in den nördlichen gemäßigten Zonen wachsen. Er ist ein beliebtes Süßungsmittel und trägt zum Glücklichsein bei. Im Frühjahr, wenn in den Ahornwäldern der Saft zu fließen beginnt, schlagen die Pflücker mit dem Hammer Tüllen durch die Rinde und sammeln eine dünne Flüssigkeit, die dann langsam über einem Feuer zu einem reichhaltigen, dicken Sirup destilliert wird. Der Saft kann auch auf Schnee gegossen werden, um Ahornzucker herzustellen.</German>
 		<Hungarian>A juharszirup az északi mérsékelt éghajlati övezetekben növő juharerdőkből származik. Népszerű csemege, ami hozzájárul a boldogsághoz. Tavasszal, amikor a juharerdőkben megindul a nedvkeringés, a csapolók lyukakat ütnek a kéregbe és összegyűjtik a híg folyadékot, amelyet aztán lassú tűzön sűrű, dús sziruppá párolnak. A nedvet hóra is önthetik, hogy juharcukrot készítsenek belőle.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MAPLE_SIRUP_COLLECTOR_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Expert maple tree tappers[COLOR_REVERT] gather twice as much [LINK=YIELD_MAPLE_SIRUP]maple syrup[\LINK] per hour as regular colonists assigned to be [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]maple syrup collectors[\LINK]. The syrup comes from trees on [LINK=TERRAIN_TAIGA]taiga[\LINK] hills or in [LINK=BONUS_MAPLE_TREES]maple forests[\LINK][PARAGRAPH:1]Expert maple tree tappers can be taught by [LINK=CONCEPT_NATIVES]Natives[\LINK], or [LINK=CONCEPT_TRAINING]trained[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or its extensions. They can also be hired in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Coletores (Bordo)[COLOR_REVERT] coletam o dobro de [LINK=YIELD_MAPLE_SIRUP]xarope de bordo[\LINK] por hora que os colonos regulares designados para serem [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]Coletores (Bordo)[\LINK]. O xarope vem de árvores em colinas de [LINK=TERRAIN_TAIGA]taiga[\LINK] ou em [LINK=BONUS_MAPLE_TREES]florestas de bordo[\LINK][PARAGRAPH:1]Os coletores (bordo) podem ser ensinados por [LINK=CONCEPT_NATIVES]nativos[\LINK] ou [LINK=CONCEPT_TRAINING]treinados[\LINK] em uma colônia com uma [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou seu extensões. Eles também podem ser contratados em [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT].</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Ahornsirup-Sammler[COLOR_REVERT] können in den Hügeln der [LINK=TERRAIN_TAIGA]Taiga[\LINK] oder in [LINK=BONUS_MAPLE_TREES]Ahorn-Wäldern[\LINK] als [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]Ahornsirup-Sammler[\LINK] doppelt so viel [LINK=YIELD_MAPLE_SIRUP]Ahornsirup[\LINK] sammeln, wie freie Kolonisten.[PARAGRAPH:1]Erfahrene Ahornsirup-Sammler können von [LINK=CONCEPT_NATIVES]Ureinwohnern[\LINK] ausgebildet werden, oder in einer Kolonie in einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] bzw. dessen Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden. Sie können auch in [COLOR_HIGHLIGHT_TEXT]Port Royal[COLOR_REVERT] erworben werden.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Tapasztalt Juhszirupgyűjtők[COLOR_REVERT] kétszer annyi [LINK=YIELD_MAPLE_SIRUP]juharszirupot[\LINK] gyűjtenek [LINK=PROFESSION_MAPLE_SIRUP_COLLECTOR]juharszirup gyűjtőként[\LINK], mint a többi lakos. A szirup a [LINK=TERRAIN_TAIGA]tajga[\LINK] dombságon vagy a [LINK=BONUS_MAPLE_TREES]juharfák[\LINK] bónusszal rendelkező erdőkből.[PARAGRAPH:1]A tapasztalt juharszirupgyűjtőt az [LINK=CONCEPT_NATIVES]Indiánok[\LINK] képezhetik ki vagy [LINK=CONCEPT_TRAINING]megtaníthatók[\LINK] egy [LINK=BUILDING_COLLEGE]főiskolával[\LINK] vagy annak továbbfejlesztésével rendelkező kolóniában. Fel lehet őket fogadni [COLOR_HIGHLIGHT_TEXT]Port Royalban[COLOR_REVERT] is.</Hungarian>
 	</TEXT>
@@ -1147,12 +951,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_KAUTSCHUK_COLLECTOR</Tag>
 		<English>Expert Rubber Collector:Expert Rubber Collectors</English>
-		
-		<Portuguese>
-			<Text>Seringueiro:Seringueiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Collecteur de caoutchouc expert:Collecteurs de caoutchouc expert</Text>
 			<Gender>Male</Gender>
@@ -1179,12 +977,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR</Tag>
 		<English>Expert Rubber Collector:Expert Rubber Collectors</English>
-		
-		<Portuguese>
-			<Text>Seringueiro:Seringueiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Collecteur de caoutchouc expert:Collecteurs de caoutchouc expert</Text>
 			<Gender>Male</Gender>
@@ -1211,14 +1003,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_PEDIA</Tag>
 		<English>Rubber is harvested by making incisions in the bark of rubber trees. The latex is heated to create rubber that can be dried into waterproof sheets, along with other industrial products.</English>
-		<Portuguese>A borracha é colhida fazendo incisões na casca da seringueira. O látex é aquecido para criar borracha que pode ser seca em folhas impermeáveis, juntamente com outros produtos industriais.</Portuguese>
 		<German>Kautschuk wird durch Einschnitte in die Rinde von Kautschukbäumen geerntet. Der Latex wird erhitzt, um Kautschuk zu gewinnen, der zusammen mit anderen Industrieprodukten zu wasserdichten Platten getrocknet werden kann.</German>
 		<Hungarian>A kaucsukot úgy állítják elő, hogy bemetszéseket ejtenek a kaucsukfák kérgébe. A latexet felmelegítik, hogy vízálló lapokká szárítható kaucsukot és egyéb ipari termékeket állítsanak elő.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KAUTSCHUK_COLLECTOR_STRATEGY</Tag>
 		<English>[LINK=YIELD_KAUTSCHUK]Rubber[\LINK] has a large stretch ratio, high resilience and is also water-proof. It's classified as an elastomer.[NEWLINE]When assigned to the Rubber Collector profession, the expert can get twice as much rubber in the same time as a regular colonist.</English>
-		<Portuguese>A [LINK=YIELD_KAUTSCHUK]Borracha[\LINK] tem uma grande taxa de estiramento, alta resiliência e também é à prova d'água. É classificado como um elastômero.[NEWLINE]Quando atribuído à profissão de Seringueiro, o especialista pode obter o dobro de borracha no mesmo tempo que um colono normal.</Portuguese>
 		<German>[LINK=YIELD_KAUTSCHUK]Kautschuk[\LINK] hat ein großes Dehnungsverhältnis, eine hohe Elastizität und ist außerdem wasserfest. Wenn er dem Beruf des Kautschuksammlers zugewiesen wird, kann der Experte in der gleichen Zeit doppelt so viel Kautschuk gewinnen wie ein normaler Kolonist.</German>
 		<Hungarian>A [LINK=YIELD_KAUTSCHUK]kaucsuk[\LINK] nagy nyújthatósággal, nagy rugalmassággal rendelkezik és vízálló is. Elasztomernek minősül. [NEWLINE]A Tapasztalt Kaucsuk Gyűjtő kétszer annyi kaucsukot tud gyűjteni ugyanannyi idő alatt, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
@@ -1226,12 +1016,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CONFECTIONER</Tag>
 		<English>Master Confectioner:Master Confectioners</English>
-		
-		<Portuguese>
-			<Text>Mestre Confeiteiro:Mestres Confeiteiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître chocolatier:Maîtres chocolatiers</Text>
 			<Gender>Male</Gender>
@@ -1258,12 +1042,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONFECTIONER</Tag>
 		<English>Master Confectioner:Master Confectioners</English>
-		
-		<Portuguese>
-			<Text>Mestre Confeiteiro:Mestres Confeiteiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître chocolatier:Maîtres chocolatiers</Text>
 			<Gender>Male</Gender>
@@ -1290,7 +1068,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONFECTIONER_PEDIA</Tag>
 		<English>A confectioner turns plantation sugar into a high-value product by flavouring it - perhaps with chocolate or vanilla. It's important to grind the sugar fine so that the candy has a smooth consistency.</English>
-		<Portuguese>Um confeiteiro transforma o açúcar das plantações em um produto de alto valor, aromatizando-o - talvez com chocolate ou baunilha. É importante moer o açúcar bem fino para que o doce fique com uma consistência lisa.</Portuguese>
 		<French>Le confiseur transforme le sucre de plantation en un produit de grande valeur en l'aromatisant, par exemple avec du chocolat ou de la vanille. Il est important de moudre finement le sucre pour que le bonbon ait une consistance lisse.</French>
 		<German>Ein Zuckerbäcker macht aus Plantagenzucker ein hochwertiges Produkt, indem er ihn aromatisiert - etwa mit Schokolade oder Vanille. Es ist wichtig, den Zucker fein zu mahlen, damit die Süßigkeit eine glatte Konsistenz erhält.</German>
 		<Italian>Il pasticcere trasforma lo zucchero di piantagione in un prodotto di alto valore aromatizzandolo, magari con cioccolato o vaniglia. È importante macinare lo zucchero finemente in modo che le caramelle abbiano una consistenza omogenea.</Italian>
@@ -1300,7 +1077,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONFECTIONER_STRATEGY</Tag>
 		<English>The confectioner creates variety, candy for every taste, alongside traditional sweets that remind people of home. Flavouring is done with [LINK=YIELD_VANILLA]vanilla[\LINK] or [LINK=YIELD_COCOA]cocoa[\LINK]. The business can become a social destination, with tables and beverages to accompany the treats.[NEWLINE]When assigned to the Confectioner profession, the master can make twice as much candy in the time a regular colonist would take to do the job.</English>
-		<Portuguese>A confeiteira cria variedade, doces para todos os gostos, ao lado de doces tradicionais que lembram o lar. A aromatização é feita com [LINK=YIELD_VANILLA]doces de baunilha[\LINK] ou [LINK=YIELD_COCOA]cacau[\LINK]. O negócio pode se tornar um destino social, com mesas e bebidas para acompanhar as guloseimas.[NEWLINE]Quando designado para a profissão Confeiteiro, o mestre pode fazer o dobro de doces no tempo que um colono normal levaria para fazer o trabalho.</Portuguese>
 		<German>Der Konditor schafft Abwechslung, Süßigkeiten für jeden Geschmack, aber auch traditionelle Süßigkeiten, die die Menschen an ihre Heimat erinnern. Die Aromatisierung erfolgt mit [LINK=YIELD_VANILLA]Vanille[\LINK] oder [LINK=YIELD_COCOA]Kakao[\LINK]. Das Geschäft kann zu einem sozialen Treffpunkt werden, mit Tischen und Getränken, die die Leckereien begleiten.[NEWLINE]Wenn der Meister dem Beruf des Zuckerbäckers zugeordnet ist, kann er doppelt so viel Süßigkeiten in der Zeit herstellen, die ein normaler Kolonist für die Arbeit benötigen würde.</German>
 		<Hungarian>A cukrász sokféle, minden ízlésnek megfelelő édességet készít, valamint hagyományos édességeket, amelyek az otthonra emlékeztetik az embereket. Az ízesítés [LINK=YIELD_VANILLA]vaníliával[\LINK] vagy [LINK=YIELD_COCOA]kakaóval[\LINK] történik. Az üzlet társasági helyszínné válhat, asztalokkal és italokkal, amelyek a finomságokat kísérik.[NEWLINE]A Cukrászmester ugyanannyi idő alatt kétszer  annyi édességet tud készíteni, mint amennyit egy átlagos lakos.</Hungarian>
 	</TEXT>
@@ -1308,12 +1084,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HOUSEHOLD_TRADER</Tag>
 		<English>Master Household Goods Trader:Master Household Goods Traders</English>
-		
-		<Portuguese>
-			<Text>Mestre de Utensílios:Mestres de Utensílios</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître marchand d'articles ménagers:Maîtres marchands d'articles ménagers</Text>
 			<Gender>Male</Gender>
@@ -1340,12 +1110,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER</Tag>
 		<English>Master Household Goods Trader:Master Household Goods Traders</English>
-		
-		<Portuguese>
-			<Text>Mestre de Utensílios:Mestres de Utensílios</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître marchand d'articles ménagers:Maîtres marchands d'articles ménagers</Text>
 			<Gender>Male</Gender>
@@ -1372,14 +1136,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_PEDIA</Tag>
 		<English>Housewares encompass everything that makes life comfortable, extending from basic necessities to rare luxuries. At first everything comes from Europe but clever artisans soon learn to make, and sometimes improve, familiar items.</English>
-		<Portuguese>As utilidades domésticas abrangem tudo o que torna a vida confortável, desde necessidades básicas até luxos raros. No início, tudo vem da Europa, mas artesãos inteligentes logo aprendem a fazer, e às vezes a melhorar, itens familiares.</Portuguese>
 		<German>Haushaltswaren umfassen alles, was das Leben angenehm macht, vom Grundbedarf bis hin zu seltenen Luxusgütern. Zunächst kommt alles aus Europa, aber geschickte Kunsthandwerker lernen bald, vertraute Dinge herzustellen und manchmal zu verbessern.</German>
 		<Hungarian>A háztartási áruk mindent magukban foglalnak, ami kényelmessé teszi az életet, az alapvető szükségleti cikkektől a ritka luxuscikkekig. Eleinte minden Európából érkezik, de az ügyes kézművesek hamar megtanulják előállítani és néha továbbfejleszteni a megszokott tárgyakat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOUSEHOLD_TRADER_STRATEGY</Tag>
 		<English>The houseware trader is expected to have all the necessities in stock at a fair price. Raw materials to make furniture include [LINK=YIELD_VALUABLE_WOOD]exotic wood[\LINK] and [LINK=YIELD_GOAT_HIDES]goatskins[\LINK]. [NEWLINE]When assigned to the Household Trader profession, the master can handle twice the goods in the same time as a regular colonist.</English>
-		<Portuguese>Espera-se que o comerciante de utensílios domésticos tenha todas as necessidades em estoque a um preço justo. As matérias-primas para fazer móveis incluem [LINK=YIELD_VALUABLE_WOOD]madeira exótica[\LINK] e [LINK=YIELD_GOAT_HIDES]pele de cabra[\LINK]. [NEWLINE]Quando atribuído à profissão de comerciante doméstico, o mestre pode lidar com o dobro das mercadorias no mesmo tempo que um colono normal.</Portuguese>
 		<German>Von einem Haushaltswarenhändler wird erwartet, dass er alles Notwendige zu einem fairen Preis auf Lager hat. Zu den Rohstoffen für die Herstellung von Möbeln gehören [LINK=YIELD_VALUABLE_WOOD]exotisches Holz[\LINK] und [LINK=YIELD_GOAT_HIDES]Ziegenfelle[\LINK]. [NEWLINE]Wenn der Meister den Beruf des Haushaltwarenhändlers ausübt, kann er in der gleichen Zeit doppelt so viele Waren umschlagen wie ein normaler Kolonist.</German>
 		<Hungarian>A háztartási árugyártónak minden szükséges termékkel kell rendelkeznie, méltányos áron. A bútorok gyártásához szükséges alapanyagok közé tartoznak a [LINK=YIELD_VALUABLE_WOOD]bútorfa[\LINK] és a [LINK=YIELD_GOAT_HIDES]kecskebőr[\LINK].[NEWLINE]A Háztartási Árugyártó Mester ugyanannyi idő alatt kétszer annyi árut tud készíteni, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
@@ -1387,12 +1149,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_YERBA_TRADER</Tag>
 		<English>Master Yerba-Maté Trader:Master Yerba-Maté Traders</English>
-		
-		<Portuguese>
-			<Text>Mestre Erva-Mate:Mestres Erva-Mate</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître marchand en maté:Maîtres marchands en maté</Text>
 			<Gender>Male</Gender>
@@ -1419,12 +1175,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_YERBA_TRADER</Tag>
 		<English>Master Yerba Maté Trader:Master Yerba Maté Traders</English>
-		
-		<Portuguese>
-			<Text>Mestre Erva-Mate:Mestres Erva-Mate</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître marchand en maté:Maîtres marchands en maté</Text>
 			<Gender>Male</Gender>
@@ -1451,14 +1201,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_YERBA_TRADER_PEDIA</Tag>
 		<English>Getting started in the yerba maté trade meant dealing with two especially dangerous Indigenous nations: the Guaraní and Tupí. To add to the challenge, yerba was found in only two regions, Amambay and Alto Paraná.</English>
-		<Portuguese>Começar no comércio de erva-mate significou lidar com duas nações indígenas especialmente perigosas: os Guarani e os Tupí. Para aumentar o desafio, a erva foi encontrada em apenas duas regiões, Amambay e Alto Paraná.</Portuguese>
 		<German>Der Einstieg in den Yerba-Maté-Handel bedeutete, sich mit zwei besonders gefährlichen indigenen Völkern auseinanderzusetzen: den Guaraní und den Tupí. Erschwerend kam hinzu, dass Yerba nur in zwei Regionen, Amambay und Alto Paraná, zu finden war.</German>
 		<Hungarian>A teakereskedelembe való belépés két különösen veszélyes Indián néppel való kapcsolatfelvételt jelentett: a guaranikkal és a tupikkal. A kihívást tovább nehezítette, hogy a yerba tea csak két régióban, Amambayban és Alto Paranában volt megtalálható.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_YERBA_TRADER_STRATEGY</Tag>
 		<English>[LINK=YIELD_YERBA_LEAVES]Yerba leaves[\LINK] are steeped in hot water to make a caffeinated beverage: yerba maté. Brewed cold, it is used to make tereré.[NEWLINE]When assigned to the yerba maté trader profession, the master can market twice the quantity of yerba leaves in the same time as a regular colonist.</English>
-		<Portuguese>[LINK=YIELD_YERBA_LEAVES]Folhas de erva[\LINK] são mergulhadas em água quente para fazer uma bebida com cafeína: erva-mate. Feito a frio, é usado para fazer tereré.[NEWLINE]Quando designado para a profissão de comerciante de erva-mate, o mestre pode comercializar o dobro da quantidade de folhas de erva-mate no mesmo tempo que um colono normal.</Portuguese>
 		<German>[LINK=YIELD_YERBA_LEAVES]Yerba-Blätter[\LINK] werden in heißem Wasser eingeweicht, um ein koffeinhaltiges Getränk herzustellen: Yerba-maté. Wenn der Meister den Beruf des Yerba-Maté-Händlers ausübt, kann er die doppelte Menge an Yerba-Blättern in derselben Zeit vermarkten wie ein normaler Kolonist.</German>
 		<Hungarian>A [LINK=YIELD_YERBA_LEAVES]tealeveleket[\LINK] forró vízben áztatják, hogy koffeintartalmú italt készítsenek belőle: a yerba-maté teát. Hidegen főzve tereré készítésére használják.[NEWLINE]A Teakészítő Mester ugyanannyi idő alatt kétszer annyi teát tud elkészíteni, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
@@ -1466,12 +1214,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_OIL_TRADER</Tag>
 		<English>Master Cooking Oil Trader:Master Cooking Oil Traders</English>
-		
-		<Portuguese>
-			<Text>Mestre de Óleo:Mestres de Óleo</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître huilier:Maîtres huiliers</Text>
 			<Gender>Male</Gender>
@@ -1498,12 +1240,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OIL_TRADER</Tag>
 		<English>Master Cooking Oil Trader:Master Cooking Oil Traders</English>
-		
-		<Portuguese>
-			<Text>Mestre de Óleo:Mestres de Óleo</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître huilier:Maîtres huiliers</Text>
 			<Gender>Male</Gender>
@@ -1530,14 +1266,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OIL_TRADER_PEDIA</Tag>
 		<English>Pressing oil is an ancient craft in Europe, particularly in Mediterranean cultures. Olives are crushed for their oil. Once rapeseed oil is extracted, what's left is used as fodder for domestic animals, mainly cattle, but also pigs and poultry.</English>
-		<Portuguese>A prensagem do óleo é uma arte antiga na Europa, especialmente nas culturas mediterrânicas. As azeitonas são esmagadas para obter o seu azeite. Uma vez extraído o óleo de canola, o que sobra é utilizado como forragem para animais domésticos, principalmente bovinos, mas também suínos e aves.</Portuguese>
 		<German>Das Pressen von Öl ist ein altes Handwerk in Europa, insbesondere in den mediterranen Kulturen. Zur Gewinnung des Öls werden die Oliven gepresst. Nach der Gewinnung des Rapsöls wird der Rest als Futtermittel für Haustiere, vor allem Rinder, aber auch Schweine und Geflügel, verwendet.</German>
 		<Hungarian>Az olajpréselés ősi mesterség Európában, különösen a mediterrán kultúrákban. Az olajbogyókat étolaj kinyerése céljából préselik. A repceolaj kinyerése után a maradékot háziállatok, főként marhák, de disznók és baromfik takarmányozására is felhasználják.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_OIL_TRADER_STRATEGY</Tag>
 		<English>Cooking oil is used in most households almost every day. Because the market is so widespread it's a good cover for smuggling. Nostalgic settlers often prefer the taste of oil from their home country. [LINK=YIELD_OLIVES]Olives[\LINK] and [LINK=YIELD_RAPE]rapeseed[\LINK] are pressed to create two popular cooking oils.[NEWLINE]When assigned to the Cooking Oil Trader profession, the master presser can sell twice as much cooking oil in the same time as a regular colonist.</English>
-		<Portuguese>O óleo de cozinha é usado na maioria das famílias quase todos os dias. Como o mercado é tão difundido, é uma boa cobertura para o contrabando. Os colonos nostálgicos muitas vezes preferem o sabor do azeite do seu país de origem. [LINK=YIELD_OLIVES]Azeitonas[\LINK] e [LINK=YIELD_RAPE]canola[\LINK] são prensadas para criar dois óleos de cozinha populares.[NEWLINE]Quando atribuído à profissão de Comerciante de Óleo de Cozinha, o prensador mestre pode vender o dobro de óleo de cozinha no mesmo tempo que um colono normal.</Portuguese>
 		<German>Speiseöl wird in den meisten Haushalten fast jeden Tag verwendet. Da der Markt so weit verbreitet ist, bietet er eine gute Tarnung für den Schmuggel. Nostalgische Siedler bevorzugen oft den Geschmack von Öl aus ihrem Heimatland. Aus [LINK=YIELD_OLIVES]Oliven[\LINK] und [LINK=YIELD_RAPE]Raps[\LINK] werden zwei beliebte Speiseöle gepresst.[NEWLINE]Mit dem Beruf des Speiseölhändlers kann der Pressmeister in der gleichen Zeit doppelt so viel Speiseöl verkaufen wie ein normaler Kolonist.</German>
 		<Hungarian>Az étolajat a legtöbb háztartásban szinte minden nap használják. Mivel a piac annyira elterjedt, jó álca a csempészethez. A nosztalgikus bevándorlók gyakran kedvelik szülőhazájukból származó olaj ízét. Az [LINK=YIELD_OLIVES]olajbogyó[\LINK] és a [LINK=YIELD_RAPE]repce[\LINK] préselésével két népszerű étolaj készül.[NEWLINE]Az Étolajkészítő Mester ugyanannyi idő alatt kétszer annyi étolajat tud előállítani, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
@@ -1545,12 +1279,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FRUITS_PICKER</Tag>
 		<English>Expert Fruit Picker:Expert Fruit Pickers</English>
-		
-		<Portuguese>
-			<Text>Coletor (Frutas):Coletores (Frutas)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Cueilleur de fruits expert:Cueilleurs de fruits expert</Text>
 			<Gender>Male</Gender>
@@ -1577,12 +1305,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRUITS_PICKER</Tag>
 		<English>Expert Fruit Picker:Expert Fruit Pickers</English>
-		
-		<Portuguese>
-			<Text>Coletor (Frutas):Coletores (Frutas)</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Cueilleur de fruits expert:Cueilleurs de fruits expert</Text>
 			<Gender>Male</Gender>
@@ -1609,14 +1331,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRUITS_PICKER_PEDIA</Tag>
 		<English>Fruit picking is one of the most laborious jobs available, what with climbing and stooping, but good food rots without pickers. It's usually a first job for immigrants and young people, and they move on to something less strenuous at the first opportunity.[PARAGRAPH:1]Fresh fruit is essential for good health. Fruits mature in different seasons, giving people a feeling for nature. Knowing the right moment to capture a crop's ripeness means getting the best price.</English>
-		<Portuguese>A colheita de frutas é um dos trabalhos mais trabalhosos disponíveis, com escalada e inclinação, mas boa comida apodrece sem colhedores. Geralmente é o primeiro emprego para imigrantes e jovens, e eles passam para algo menos árduo na primeira oportunidade.[PARAGRAPH:1]Frutas frescas são essenciais para uma boa saúde. As frutas amadurecem em diferentes épocas do ano, proporcionando às pessoas um sentimento pela natureza. Saber o momento certo para capturar a maturação de uma colheita significa obter o melhor preço.</Portuguese>
 		<German>Obstpflücken ist einer der mühsamsten Berufe überhaupt, denn man muss klettern und sich bücken, aber ohne Pflücker verderben gute Lebensmittel. Für Einwanderer und junge Leute ist es in der Regel der erste Job, und sie wechseln bei der ersten Gelegenheit zu etwas weniger Anstrengendem.[NEWLINE]Wenn der Beruf des Obstpflückers ausgeübt wird, kann der Experte in der gleichen Zeit doppelt so viel Obst ernten wie ein normaler Kolonist.[PARAGRAPH:1]Frisches Obst ist für eine gute Gesundheit unerlässlich. Früchte reifen zu verschiedenen Jahreszeiten und vermitteln den Menschen ein Gefühl für die Natur. Das Wissen um den richtigen Zeitpunkt, um die Reife einer Frucht zu erfassen, bedeutet, den besten Preis zu erzielen.</German>
 		<Hungarian>A gyümölcsszedés az egyik legfárasztóbb munka, hiszen mászni és hajolgatni kell, de a gyümölcsszedők nélkül a jó minőségű élelem megromlik. Általában ez az első munkahelye a bevándorlóknak és a fiataloknak, akik az első adandó alkalommal kevésbé megterhelő munkára váltanak. [NEWLINE]A Tapasztalt Gyümölcsszedő kétszer annyi gyümölcsöt tud betakarítani ugyanannyi idő alatt, mint egy átlagos lakos. [PARAGRAPH:1]A friss gyümölcs elengedhetetlen az egészséghez. A gyümölcsök különböző évszakokban érnek be, így az emberek megismerhetik a természetet. Ha tudjuk, mikor érik be a termés, akkor a legjobb árat kaphatjuk érte.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRUITS_PICKER_STRATEGY</Tag>
 		<English>When assigned to the COLOR_HIGHLIGHT_TEXT]Fruit Picker[COLOR_REVERT] profession, the expert can harvest twice as much [LINK=YIELD_FRUITS]fruit[\LINK] in the same time as a regular colonist.</English>
-		<Portuguese>Quando atribuído à profissão COLOR_HIGHLIGHT_TEXT]Coletor (Frutas)[COLOR_REVERT], o especialista pode colher o dobro de [LINK=YIELD_FRUITS]frutas[\LINK] no mesmo tempo que um colono normal.</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Erfahrene Fruchtsammler[COLOR_REVERT] erzielen als [LINK=PROFESSION_FRUITS_PICKER]Obstpflücker[\LINK] besonders hohe Erträge bei [LINK=YIELD_FRUITS]Früchten[\LINK].</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Tapasztalt Gyümölcsszedő[COLOR_REVERT] különösen magas hozamot biztosít [LINK=YIELD_FRUITS] gyümölcsből[\LINK], ha [LINK=PROFESSION_FRUITS_PICKER]gyümölcsszedőként[\LINK] dolgozik.</Hungarian>
 	</TEXT>
@@ -1624,12 +1344,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_POULTRY_BUTCHER</Tag>
 		<English>Master Poultry Butcher:Master Poultry Butchers</English>
-		
-		<Portuguese>
-			<Text>Mestre Avícola:Mestres Avícolas</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître boucher de volailles:Maîtres bouchers de volailles</Text>
 			<Gender>Male</Gender>
@@ -1656,12 +1370,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POULTRY_BUTCHER</Tag>
 		<English>Master Poultry Butcher:Master Poultry Butchers</English>
-		
-		<Portuguese>
-			<Text>Mestre Avícola:Mestres Avícolas</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître boucher de volailles:Maîtres bouchers de volailles</Text>
 			<Gender>Male</Gender>
@@ -1688,14 +1396,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_PEDIA</Tag>
 		<English>Poultry is usually the cheapest domestic meat in any settlement. A good butcher works fast and keeps the price down. Workers who don't get paid much still can eat well and the result is a busy happy community.[NEWLINE]Butchers use sharp knives and they have to work fast so it's a dangerous job. Poultry is tricky because not only do the carcasses have to be cleaned and the meat portioned, but the feathers and down, particularly from geese and ducks, must be plucked to insulate quilts and coats.</English>
-		<Portuguese>As aves são geralmente a carne doméstica mais barata em qualquer povoado. Um bom açougueiro trabalha rápido e mantém o preço baixo. Os trabalhadores que não recebem muito ainda podem comer bem e o resultado é uma comunidade movimentada e feliz.[NEWLINE]Os açougueiros usam facas afiadas e têm que trabalhar rápido, por isso é um trabalho perigoso. As aves são complicadas porque não só as carcaças têm de ser limpas e a carne repartida, mas também as penas e a penugem, especialmente de gansos e patos, devem ser arrancadas para isolar colchas e casacos.</Portuguese>
 		<German>Geflügel ist in der Regel das billigste einheimische Fleisch in jeder Siedlung. Ein guter Fleischer arbeitet schnell und hält den Preis niedrig. Arbeiter, die nicht viel verdienen, können sich trotzdem gut ernähren.[NEWLINE]Metzger arbeiten mit scharfen Messern und müssen schnell arbeiten, daher ist es ein gefährlicher Beruf. Geflügel ist eine schwierige Angelegenheit, da nicht nur die Kadaver gesäubert und das Fleisch portioniert werden müssen, sondern auch die Federn und Daunen, vor allem von Gänsen und Enten, zur Isolierung gerupft werden müssen.</German>
 		<Hungarian>A baromfi általában a legolcsóbb háztartási hústermék minden településen. A jó hentes gyorsan dolgozik és alacsonyan tartja az árakat. Az alacsony fizetésű munkások is jól tudnak étkezni, ami egy dolgos, boldog közösséget eredményez. A hentesek éles késekkel dolgoznak és gyorsan kell haladniuk, ezért ez egy veszélyes munka. A baromfi feldolgozása bonyolult, mert nemcsak a tetemeket kell megtisztítani és a húst felosztani, hanem a tollakat és a pehelyt is le kell szedni, különösen a libák és kacsák esetében, hogy azok hőszigetelőként szolgálhassanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POULTRY_BUTCHER_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Master poultry butchers[COLOR_REVERT] achieve particularly high yields of [LINK=YIELD_FOOD]food[\LINK] and [LINK=YIELD_DOWNS]down[\LINK] when [LINK=PROFESSION_BUTCHER_CHICKEN]slaughtering[\LINK] [LINK=YIELD_CHICKEN]chickens[\LINK] in the [LINK=BUILDING_BUTCHERS_HOUSE]butcher's house[\LINK].</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Mestres açougueiros[COLOR_REVERT] alcançam recursos particularmente altos de [LINK=YIELD_FOOD]comida[\LINK] e [LINK=YIELD_DOWNS]penugem[\LINK] quando [LINK=PROFESSION_BUTCHER_CHICKEN]abatem[\LINK] [LINK=YIELD_CHICKEN]frangos[\LINK] no [LINK=BUILDING_BUTCHERS_HOUSE]açougue[\LINK].</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Meister-Geflügelschlachter[COLOR_REVERT] erzielen beim [LINK=PROFESSION_BUTCHER_CHICKEN]Schlachten[\LINK] von [LINK=YIELD_CHICKEN]Hühnern[\LINK] im [LINK=BUILDING_BUTCHERS_HOUSE]Haus des Schlachters[\LINK] besonders hohe Erträge von [LINK=YIELD_FOOD]Nahrung[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK].</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Baromfihentes Mester[COLOR_REVERT] különösen magas hozamot ér el [LINK=YIELD_FOOD] élelem[\LINK] és [LINK=YIELD_DOWNS]pehelytoll[\LINK] előállításában, ha [LINK=YIELD_CHICKEN]csirkéket[\LINK] [LINK=PROFESSION_BUTCHER_CHICKEN] vág le[\LINK]  a [LINK=BUILDING_BUTCHERS_HOUSE]hentesboltban[\LINK].</Hungarian>
 	</TEXT>
@@ -1703,12 +1409,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COAL_MINER</Tag>
 		<English>Expert Coal Miner:Expert Coal Miners</English>
-		
-		<Portuguese>
-			<Text>Mineiro de Carvão:Mineiros de Carvão</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Mineur de charbon expert:Mineurs de charbon expert</Text>
 			<Gender>Male</Gender>
@@ -1735,12 +1435,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COAL_MINER</Tag>
 		<English>Expert Coal Miner:Expert Coal Miner</English>
-		
-		<Portuguese>
-			<Text>Mineiro de Carvão:Mineiros de Carvão</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Mineur de charbon expert:Mineurs de charbon expert</Text>
 			<Gender>Male</Gender>
@@ -1767,7 +1461,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COAL_MINER_PEDIA</Tag>
 		<English>Coal is formed when dead plant matter decays into peat and is converted into coal by the heat and pressure of deep burial over millions of years. During colonial times coal is used for heating, not for industry.</English>
-		<Portuguese>O carvão é formado quando a matéria vegetal morta se decompõe em turfa e é convertida em carvão pelo calor e pela pressão do enterramento profundo ao longo de milhões de anos. Durante a época colonial, o carvão é utilizado para aquecimento e não para a indústria.</Portuguese>
 		<French>Le charbon se forme lorsque la matière végétale morte se décompose en tourbe et est transformée en charbon par la chaleur et la pression d'un enfouissement profond pendant des millions d'années. À l'époque coloniale, le charbon est utilisé pour le chauffage, pas pour l'industrie.</French>
 		<German>Kohle entsteht, wenn abgestorbenes Pflanzenmaterial zu Torf zerfällt und durch die Hitze und den Druck der oberen Erdschichten über Millionen von Jahren in Kohle umgewandelt wird. In der Kolonialzeit wurde Kohle zum Heizen verwendet, nicht für die Industrie.</German>
 		<Italian>Il carbone si forma quando la materia vegetale morta si decompone in torba e viene convertita in carbone dal calore e dalla pressione della sepoltura profonda per milioni di anni. Durante l'epoca coloniale il carbone viene utilizzato per il riscaldamento, non per l'industria.</Italian>
@@ -1777,7 +1470,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COAL_MINER_STRATEGY</Tag>
 		<English>Coal mining causes premature death and illness, but it's a soft rock that doesn't need as many explosives as hard rock mining. It's a job where labourers use picks and shovels, and they don't get paid much.[NEWLINE]When assigned to the [LINK=PROFESSION_COAL_MINER]coal miner[\LINK] profession, the expert can get twice the tonnage of [LINK=YIELD_COAL]coal[\LINK] in the same time as a regular colonist.</English>
-		<Portuguese>A mineração de carvão causa mortes prematuras e doenças, mas é uma rocha macia que não precisa de tantos explosivos quanto a mineração de rocha dura. É um trabalho em que os trabalhadores usam picaretas e pás e não recebem muito.[NEWLINE]Quando atribuído à profissão de [LINK=PROFESSION_COAL_MINER]mineiro de carvão[\LINK], o especialista pode obter o dobro da tonelagem de [LINK=YIELD_COAL]carvão[\LINK] no mesmo tempo que um colono normal.</Portuguese>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]erfahrener Kohlekumpel[COLOR_REVERT], der als [LINK=PROFESSION_COAL_MINER]Bergmann[\LINK] dem Abbau von [LINK=YIELD_COAL]Kohle[\LINK] zugewiesen ist, produziert doppelt so viel Kohle wie ein freier Kolonist.</German>
 		<Hungarian>A szénbányászat korai halált és betegségeket okoz, de ez egy puha kőzet, amelyhez nem kell annyi robbanószer, mint a kemény kőzetek bányászatához. Ez egy olyan munka, ahol a munkások csákányt és lapátot használnak, és ezért nem kapnak sok fizetést.[NEWLINE]A Tapasztalt [LINK=PROFESSION_COAL_MINER]Szénbányász[\LINK] kétszer annyi [LINK=YIELD_COAL]szenet[\LINK] tud kitermelni ugyanannyi idő alatt, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
@@ -1785,12 +1477,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_LEATHER_TAYLOR</Tag>
 		<English>Master Leatherworker:Master Leatherworkers</English>
-		
-		<Portuguese>
-			<Text>Mestre Coureiro:Mestres Coureiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître maroquinier:Maîtres maroquiniers</Text>
 			<Gender>Male</Gender>
@@ -1817,12 +1503,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEATHER_TAYLOR</Tag>
 		<English>Master Leatherworker:Master Leatherworkers</English>
-		
-		<Portuguese>
-			<Text>Mestre Coureiro:Mestres Coureiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître maroquinier:Maîtres maroquiniers</Text>
 			<Gender>Male</Gender>
@@ -1849,14 +1529,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_PEDIA</Tag>
 		<English>The clothing business has efficiencies and economies of scale. A solitary leatherworker might spend days fitting a coat to a single customer but a factory can have enough sizes in stock for everyone to buy off the rack.[NEWLINE] Sewing padding and a lining into leather doesn't just make the garment more comfortable. By adding insulation it also improves health for those working outside, and can even save their lives.</English>
-		<Portuguese>O negócio do vestuário apresenta eficiências e economias de escala. Um coureiro solitário pode passar dias ajustando um casaco para um único cliente, mas uma fábrica pode ter tamanhos suficientes em estoque para que todos comprem na prateleira.[NEWLINE] Costurar estofamento e forro em couro não apenas torna a roupa mais confortável. Ao adicionar isolamento, também melhora a saúde daqueles que trabalham ao ar livre e pode até salvar-lhes vidas.</Portuguese>
 		<German>In der Bekleidungsbranche gibt es deutliche Effizienzgewinne durch Skalierungseffekte. Ein einzelner Lederarbeiter kann Tage damit verbringen, einen Mantel an einen einzigen Kunden anzupassen, aber eine Fabrik kann genügend Größen auf Lager haben, damit jeder sie von der Stange kaufen kann.[NEWLINE]Das Einnähen von Polstern und Futter in Leder macht das Kleidungsstück nicht nur bequemer. Durch die zusätzliche Isolierung wird auch die Gesundheit derjenigen verbessert, die im Freien arbeiten, und kann ihnen sogar das Leben retten.</German>
 		<Hungarian>A ruházati ipar nagy hatékonysággal és méretgazdaságossággal működik. Egy magányos bőrműves napokig dolgozhat egy kabát elkészítésén egyetlen vevő számára, míg egy gyárban mindenki számára elegendő méret áll rendelkezésre, hogy kész ruhát vásárolhasson. A bőrbe varrt bélés és töltet nem csak kényelmesebbé teszi a ruhadarabot. A szigetelésnek köszönhetően javítja a kültéren dolgozók egészségét, sőt, akár életüket is megmentheti.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEATHER_TAYLOR_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Master leatherworkers[COLOR_REVERT] are trained for the professions of [LINK=PROFESSION_LEATHER_PADDER_COATS]coat maker[\LINK] or [LINK=PROFESSION_LEATHER_PADDER_BOOTS]bootmaker[\LINK] in the [LINK=BUILDING_LEATHER_PADDER_HOUSE]leatherworker's house[\LINK]. They make lined [LINK=YIELD_PADDED_LEATHER_COATS]leather coats[\LINK] from [LINK=YIELD_HIDES]cowhides[\LINK] and [LINK=YIELD_DOWNS]down[\LINK], or insulated [LINK=YIELD_GOAT_HIDE_BOOTS] boots[\LINK] out of [LINK=YIELD_GOAT_HIDES]goatskin[\LINK] and [LINK=YIELD_WOOL]wool[\LINK]. They work much faster than than free colonists.</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Mestres coureiros[COLOR_REVERT] são treinados para as profissões de [LINK=PROFESSION_LEATHER_PADDER_COATS]fabricante de casacos[\LINK] ou [LINK=PROFESSION_LEATHER_PADDER_BOOTS]sapateiro[\LINK] na [LINK=BUILDING_LEATHER_PADDER_HOUSE]casa do coureiro[\LINK]. Eles fazem [LINK=YIELD_PADDED_LEATHER_COATS]casacos de couro[\LINK] forrados de [LINK=YIELD_HIDES]couro[\LINK] e [LINK=YIELD_DOWNS]penugem[\LINK], ou [LINK=YIELD_GOAT_HIDE_BOOTS] botas isoladas[\LINK] de [LINK=YIELD_GOAT_HIDES]pele de cabra[\LINK] e [LINK=YIELD_WOOL]lã[\LINK]. Eles trabalham muito mais rápido do que os colonos livres.</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Meister-Lederschneider[COLOR_REVERT] produzieren als [LINK=PROFESSION_LEATHER_PADDER_COATS]Polsterer[\LINK] oder [LINK=PROFESSION_LEATHER_PADDER_BOOTS]Stiefelmacher[\LINK] im [LINK=BUILDING_LEATHER_PADDER_HOUSE]Haus des Lederschneiders[\LINK] mehr gefütterte [LINK=YIELD_PADDED_LEATHER_COATS]Ledermäntel[\LINK] aus [LINK=YIELD_HIDES]Rindshäuten[\LINK] und [LINK=YIELD_DOWNS]Daunen[\LINK] bzw. mehr gefütterte [LINK=YIELD_GOAT_HIDE_BOOTS]Ziegenledersstiefel[\LINK] aus [LINK=YIELD_GOAT_HIDES]Ziegenfell[\LINK] und [LINK=YIELD_WOOL]Schafswolle[\LINK] als freie Kolonisten.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Mester Bőrműves[COLOR_REVERT [LINK=PROFESSION_LEATHER_PADDER_COATS]kabátkészítőként[\LINK] vagy [LINK=PROFESSION_LEATHER_PADDER_BOOTS]csizmadiaként[\LINK] a [LINK=BUILDING_LEATHER_PADDER_HOUSE]bőrműves boltban[\LINK] [LINK=YIELD_PADDED_LEATHER_COATS]bélelt bőrkabátot[\LINK] készít [LINK=YIELD_HIDES]marhabőrből[\LINK] és [LINK=YIELD_DOWNS]pehelytollból[\LINK], illetve [LINK=YIELD_GOAT_HIDE_BOOTS]bélelt kecskebőr csizmát[\LINK] készít [LINK=YIELD_GOAT_HIDES]kecskebőrből[\LINK] és [LINK=YIELD_WOOL]gyapjúból[\LINK]. Sokkal gyorsabban dolgozik, mint az szabad gyarmatosítók.</Hungarian>
 	</TEXT>
@@ -1864,12 +1542,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CLOTH_TAYLOR</Tag>
 		<English>Master Tailor:Master Tailors</English>
-		
-		<Portuguese>
-			<Text>Mestre Alfaiate:Mestres Alfaiates</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître tailleur:Maîtres tailleurs</Text>
 			<Gender>Male</Gender>
@@ -1896,12 +1568,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CLOTH_TAYLOR</Tag>
 		<English>Master Tailor:Master Tailors</English>
-		
-		<Portuguese>
-			<Text>Mestre Alfaiate:Mestres Alfaiates</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître tailleur:Maîtres tailleurs</Text>
 			<Gender>Male</Gender>
@@ -1928,7 +1594,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CLOTH_TAYLOR_PEDIA</Tag>
 		<English>The tailor's shop includes sub-trades. The cutter seldom sews the garment. Another chooses the perfect fabric. In a growing town with a fashionable tailor, everyone from the merchant to the blacksmith buys there to look their best.</English>
-		<Portuguese>A alfaiataria inclui sub-comércios. O cortador raramente costura a roupa. Outro escolhe o tecido perfeito. Em uma cidade em crescimento com um alfaiate elegante, todos, desde o comerciante até o ferreiro, compram lá para ficarem no seu melhor.</Portuguese>
 		<French>L'atelier du tailleur comprend des sous-métiers. Le coupeur coud rarement le vêtement. Un autre choisit le tissu parfait. Dans une ville en plein essor où l'on trouve un tailleur à la mode, tout le monde, du marchand au forgeron, y achète pour être à son avantage.</French>
 		<German>Die Schneiderei umfasst Teilgewerke. Der Schneider näht nur selten das Kleidungsstück. Ein anderer wählt den perfekten Stoff aus. In einer wachsenden Stadt mit einem modischen Schneider kauft jeder, vom Kaufmann bis zum Schmied, dort ein, um gut auszusehen.</German>
 		<Italian>La sartoria comprende dei sub-lavori. Il tagliatore raramente cuce il capo. Un altro sceglie il tessuto perfetto. In una città in crescita con un sarto alla moda, tutti, dal mercante al fabbro, acquistano lì per apparire al meglio.</Italian>
@@ -1938,7 +1603,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CLOTH_TAYLOR_STRATEGY</Tag>
 		<English>The tailor creates the well-dressed man, stylish and ready to succeed at diplomacy, business and romance. The tailor can make [LINK=YIELD_FESTIVE_CLOTHES]formal outfits[\LINK] from [LINK=YIELD_COLOURED_CLOTH]coloured cloth[\LINK] or [LINK=YIELD_EVERYDAY_CLOTHES]everyday clothes[\LINK] from [LINK=YIELD_COLOURED_WOOL_CLOTH]coloured wool cloth[\LINK].[NEWLINE]When assigned to the Tailor profession, the master tailor can complete twice the clothes in the same time as a regular colonist.</English>
-		<Portuguese>O alfaiate cria o homem bem vestido, estiloso e pronto para ter sucesso na diplomacia, nos negócios e no romance. O alfaiate pode fazer [LINK=YIELD_FESTIVE_CLOTHES]roupas formais[\LINK] com [LINK=YIELD_COLOURED_CLOTH]tecidos coloridos[\LINK] ou [LINK=YIELD_EVERYDAY_CLOTHES]roupas do dia a dia[\LINK] com [LINK=YIELD_COLOURED_WOOL_CLOTH]tecidos de lã coloridos[\LINK].[NEWLINE]Quando atribuído à profissão Alfaiate, o mestre alfaiate pode completar o dobro das roupas no mesmo tempo que um colono normal.</Portuguese>
 		<French>Le tailleur crée l'homme bien habillé, élégant et prêt à réussir dans la diplomatie, les affaires et la romance.[NEWLINE]Lorsqu'il est affecté à la profession de tailleur, le maître tailleur peut réaliser deux fois plus de vêtements dans le même temps qu'un colon ordinaire.</French>
 		<German>Der Schneider erschafft den gut gekleideten Mann, stilvoll und bereit, in der Diplomatie, im Geschäftsleben und in der Romantik erfolgreich zu sein.[NEWLINE]Wenn er dem Beruf des Schneiders zugewiesen wird, kann der Schneidermeister doppelt so viele Kleidungsstücke in derselben Zeit anfertigen wie ein normaler Kolonist.</German>
 		<Italian>Il sarto crea l'uomo ben vestito, elegante e pronto ad avere successo nella diplomazia, negli affari e nel romanticismo.[NEWLINE]Quando è assegnato alla professione di sarto, il mastro sarto può completare il doppio dei vestiti nello stesso tempo di un normale colono.</Italian>
@@ -1949,12 +1613,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ROASTER</Tag>
 		<English>Master Roaster:Master Roasters</English>
-		
-		<Portuguese>
-			<Text>Mestre Torrador:Mestres Torradores</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître torréfacteur:Maîtres torréfacteurs</Text>
 			<Gender>Male</Gender>
@@ -1981,12 +1639,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROASTER</Tag>
 		<English>Master Roaster:Master Roasters</English>
-		
-		<Portuguese>
-			<Text>Mestre Torrador:Mestres Torradores</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître torréfacteur:Maîtres torréfacteurs</Text>
 			<Gender>Male</Gender>
@@ -2013,7 +1665,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROASTER_PEDIA</Tag>
 		<English>After the coffee berries are picked, the green coffee is processed by the wet method, where berries are fermented to produce a mild coffee.[NEWLINE]Beans are sorted for ripeness and the flesh of the beans is removed.[NEWLINE]Beans are then fermented to remove the oily mucilage.[NEWLINE]When fermentation is finished, the beans are washed with lots of fresh water to remove the fermentation residue, causing massive amounts of coffee wastewater.[NEWLINE]Finally the seeds are dried.</English>
-		<Portuguese>Depois que os grãos de café são colhidos, o café verde é processado pelo método úmido, onde os frutos são fermentados para produzir um café suave.[NEWLINE]Os grãos são classificados quanto à maturação e a polpa dos grãos é removida.[NEWLINE]Os grãos são então fermentados para remover a mucilagem oleosa.[NEWLINE]Quando a fermentação termina, os grãos são lavados com bastante água doce para remover os resíduos da fermentação, causando grandes quantidades de águas residuais do café.[NEWLINE]Finalmente as sementes estão secas.</Portuguese>
 		<French>Après la cueillette des baies de café, le café vert est traité par la méthode humide, où les baies sont fermentées pour produire un café doux. Les grains sont triés en fonction de leur maturité et la chair des grains est retirée. Les grains sont ensuite fermentés pour éliminer la couche visqueuse de mucilage encore présente sur le grain. Lorsque la fermentation est terminée, les grains sont lavés et séchés. Ils sont ensuite triés en fonction de leur maturité et de leur couleur. Le plus souvent, la chair de la baie est enlevée, généralement par machine, et les graines - généralement appelées haricots - sont fermentées pour enlever la couche visqueuse de mucilage encore présente sur le haricot. Lorsque la fermentation est terminée, les grains sont lavés avec de grandes quantités d'eau douce pour éliminer le résidu de fermentation, ce qui génère des quantités massives d'eaux usées de café. Enfin, les graines sont séchées.</French>
 		<German>Nach dem Pflücken der Kaffeebeeren werden diese fermentiert, um die schleimige Schicht, die sich noch auf der Kaffeebohne befindet, zu entfernen. Ist die Fermentation beendet, werden die Bohnen gewaschen und getrocknet. Danach werden sie nach Reifegrad und Farbe sortiert und meist maschinell das Fruchtfleisch der Beere entfernt. Die Kerne - meist Bohnen genannt - werden dann fermentiert, um die noch vorhandene schleimige Schicht der Bohne zu entfernen. Nach Beendigung der Fermentation werden die Bohnen mit großen Mengen Frischwasser gewaschen, um die Fermentationsrückstände zu entfernen, wodurch große Mengen an Kaffeeabwasser entstehen. Schließlich werden die Samen getrocknet.</German>
 		<Hungarian>A kávébogyók leszedése után a zöld kávét nedves eljárással feldolgozzák, amelynek során a bogyókat erjesztik, hogy enyhe kávé keletkezzen. [NEWLINE]A babokat érettségük szerint válogatják, majd eltávolítják a babok húsát.[NEWLINE]Ezután a babokat erjesztik, hogy eltávolítsák az olajos nyálkát róluk.[NEWLINE]Az erjesztés befejezése után a babokat nagy mennyiségű friss vízzel átmossák, hogy eltávolítsák az erjesztés maradványait, ami hatalmas mennyiségű kávéipari szennyvizet eredményez.[NEWLINE]Végül a magokat megszárítják.</Hungarian>
@@ -2021,7 +1672,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROASTER_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Master roasters[COLOR_REVERT] are proficient in roasting [LINK=YIELD_PEANUTS]peanuts[\LINK], [LINK=YIELD_COCOA_FRUITS]cocoa pods[\LINK] and [LINK=YIELD_COFFEE_BERRIES]coffee berries[\LINK] to make [LINK=YIELD_ROASTED_PEANUTS]roasted peanuts[\LINK], [LINK=YIELD_COCOA]cocoa[\LINK] and [LINK=YIELD_COFFEE]coffee[\LINK] out of them.[NEWLINE]When assigned to the [LINK=PROFESSION_PEANUT_ROASTER]peanut roaster[\LINK], [LINK=PROFESSION_COCOA_ROASTER]cocoa roaster[\LINK] or [LINK=PROFESSION_COFFEE_ROASTER]coffee roaster[\LINK] profession, they are capable of turning out double the amount of either resource in the same amount of time it would take a regular colonist.[PARAGRAPH:1]Master roasters can be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they can also be [LINK=CONCEPT_TRAINING]taught[\LINK] in a colony with a [LINK=BUILDING_COLLEGE]college[\LINK] or one of its upgrades.</English>
-		<Portuguese>[COLOR_UNIT_TEXT]Torradores mestres[COLOR_REVERT] são proficientes em torrar [LINK=YIELD_PEANUTS]amendoins[\LINK], [LINK=YIELD_COCOA_FRUITS]vagens de cacau[\LINK] e [LINK=YIELD_COFFEE_BERRIES]frutos de café[\LINK] para fazer [LINK=YIELD_ROASTED_PEANUTS]amendoins torrados[\LINK], [LINK=YIELD_COCOA]cacau[\LINK] e [LINK=YIELD_COFFEE]café[\LINK] deles.[NEWLINE]Quando designados para a profissão [LINK=PROFESSION_PEANUT_ROASTER]torrador de amendoim[\LINK], [LINK=PROFESSION_COCOA_ROASTER]torrador de cacau[\LINK] ou [LINK=PROFESSION_COFFEE_ROASTER]torrador de café[\LINK], eles são capazes de produzir o dobro da quantidade de qualquer um dos recursos no mesmo tempo que levaria para uma produção normal. colono.[PARAGRAPH:1]Mestres torrefadores podem ser contratados na [LINK=CONCEPT_EUROPE]Europa[\LINK] e também podem ser [LINK=CONCEPT_TRAINING]ensinados[\LINK] em uma colônia com uma [LINK=BUILDING_COLLEGE]faculdade[\LINK] ou uma de suas atualizações.</Portuguese>
 		<French>Les [COLOR_UNIT_TEXT]Maîtres torrefacteurs[COLOR_REVERT] produisent deux fois plus de [COLOR_HIGHLIGHT_TEXT]café torréfié ou cacao[COLOR_REVERT] depuis les [COLOR_HIGHLIGHT_TEXT]grains de cafés ou fèves de cacao[COLOR_REVERT].</French>
 		<German>[COLOR_UNIT_TEXT]Röstmeister[COLOR_REVERT] verarbeiten doppelt soviele [LINK=YIELD_PEANUTS]Erdnüsse[\LINK], [LINK=YIELD_COFFEE_BERRIES]Kaffeebeeren[\LINK] oder [LINK=YIELD_COCOA_FRUITS]Kakaofrüchte[\LINK] zu gerösteten [LINK=YIELD_ROASTED_PEANUTS]Erdnüssen[\LINK], [LINK=YIELD_COFFEE]Kaffee[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK], wie andere Kolonisten.[PARAGRAPH:1]Röstmeister können in [LINK=CONCEPT_EUROPE]Europa[\LINK] rekrutiert werden, und sie können auch in einer Kolonie in einer [LINK=BUILDING_COLLEGE]Akademie[\LINK] oder einer seiner Erweiterungen [LINK=CONCEPT_TRAINING]ausgebildet[\LINK] werden.</German>
 		<Hungarian>A [COLOR_UNIT_TEXT]Pörkölőmesterek[COLOR_REVERT] jártasak a [LINK=YIELD_PEANUTS]mogyoró[\LINK], a [LINK=YIELD_COCOA_FRUITS]kakaóbab[\LINK] és a [LINK=YIELD_COFFEE_BERRIES]kávébogyó[\LINK] pörkölésében, hogy [LINK=YIELD_ROASTED_PEANUTS]pörkölt mogyorót[\LINK], [LINK=YIELD_COCOA]kakaót[\LINK] és [LINK=YIELD_COFFEE]kávét[\LINK] készítsenek belőlük. [NEWLINE][LINK=PROFESSION_PEANUT_ROASTER]Mogyorópörkölőként[\LINK], [LINK=PROFESSION_COCOA_ROASTER]kakaópörkölőként[\LINK] és [LINK=PROFESSION_COFFEE_ROASTER]kávépörkölőként[\LINK] kétszer annyi terméket tudnak előállítani, mint egy átlagos lakos.[PARAGRAPH:1] A pörkölőmestereket [LINK=CONCEPT_EUROPE]Európában[\LINK] lehet felfogadni, de [LINK=CONCEPT_TRAINING]megtaníthatók[\LINK] egy [LINK=BUILDING_COLLEGE]főiskolával[\LINK] vagy annak egyik továbbfejlesztésével rendelkező kolóniában is.</Hungarian>
@@ -2030,12 +1680,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_POTTER</Tag>
 		<English>Master Potter:Master Potters</English>
-		
-		<Portuguese>
-			<Text>Mestre Oleiro:Mestres Oleiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître potier:Maîtres potiers</Text>
 			<Gender>Male</Gender>
@@ -2062,12 +1706,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POTTER</Tag>
 		<English>Master Potter:Master Potters</English>
-		
-		<Portuguese>
-			<Text>Mestre Oleiro:Mestres Oleiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître potier:Maîtres potiers</Text>
 			<Gender>Male</Gender>
@@ -2094,7 +1732,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POTTER_PEDIA</Tag>
 		<English>Pottery is an ancient way to store grain. In the rainy insect-ridden New World pots hold enough grain to keep settlers alive through the winter until in the spring they can finally plant their new crops. A few creative types shape imaginative vessels with decorative patterns, some merely for display. Pottery becomes a cottage art form.</English>
-		<Portuguese>A cerâmica é uma forma antiga de armazenar grãos. No Novo Mundo chuvoso e infestado de insetos, os vasos contêm grãos suficientes para manter os colonos vivos durante o inverno, até que na primavera eles possam finalmente plantar suas novas colheitas. Alguns tipos criativos moldam recipientes imaginativos com padrões decorativos, alguns apenas para exibição. A cerâmica se torna uma forma de arte caseira.</Portuguese>
 		<French>La poterie est un moyen ancien de stocker le grain. Dans le Nouveau Monde pluvieux et infesté d'insectes, les pots contiennent suffisamment de céréales pour permettre aux colons de survivre pendant l'hiver jusqu'à ce qu'ils puissent enfin planter leurs nouvelles cultures au printemps. Quelques types créatifs façonnent des récipients imaginatifs avec des motifs décoratifs, certains simplement pour l'exposition. La poterie devient une forme d'art artisanal.</French>
 		<German>Töpferwaren sind eine uralte Methode zur Lagerung von Getreide. In der regnerischen, von Insekten heimgesuchten Neuen Welt enthielten die Töpfe genug Getreide, um die Siedler über den Winter am Leben zu erhalten, bis sie im Frühjahr endlich ihre neue Ernte einpflanzen konnten. Einige kreative Typen formen phantasievolle Gefäße mit dekorativen Mustern, andere nur zum Ausstellen. Töpfern wird zu einer Kunstform im Landhausstil.</German>
 		<Italian>La ceramica è un modo antico di conservare il grano. Nel Nuovo Mondo, caratterizzato da piogge e insetti, i vasi contengono abbastanza grano per mantenere i coloni in vita durante l'inverno, fino a quando non possono piantare le nuove colture in primavera. Alcuni tipi creativi modellano vasi fantasiosi con motivi decorativi, altri solo per esposizione. La ceramica diventa una forma d'arte domestica.</Italian>
@@ -2104,7 +1741,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_POTTER_STRATEGY</Tag>
 		<English>Pottery lets villages store their surplus grain to get them through the hungry winter. Loading sturdy pots into wagons is a handy way to ship grain and supply food to new settlements. The raw materials the potter needs are [LINK=YIELD_CLAY]clay[\LINK], and [LINK=YIELD_PEAT]peat[\LINK] to fire the pots.[NEWLINE]When assigned to the Potter profession, the master can make twice as many pots in the same time as a regular colonist.</English>
-		<Portuguese>A cerâmica permite que as aldeias armazenem o excedente de grãos para sobreviver ao inverno faminto. Carregar potes resistentes em carroças é uma maneira prática de transportar grãos e fornecer alimentos para novas colônias. As matérias-primas que o oleiro precisa são [LINK=YIELD_CLAY]argila[\LINK] e [LINK=YIELD_PEAT]turfa[\LINK] para queimar os potes.[NEWLINE]Quando designado para a profissão de Potter, o mestre pode fazer o dobro de potes no mesmo tempo que um colono normal.</Portuguese>
 		<German>Töpferwaren ermöglichen es den Dörfern, ihr überschüssiges Getreide zu lagern, um den hungrigen Winter zu überstehen. Das Beladen von Wagen mit robusten Töpfen ist eine praktische Methode, um Getreide zu transportieren und neue Siedlungen mit Lebensmitteln zu versorgen. Die Rohstoffe, die der Töpfer benötigt, sind [LINK=YIELD_CLAY]Ton[\LINK] und [LINK=YIELD_PEAT]Torf[\LINK], um die Töpfe zu brennen.[NEWLINE]Wenn er dem Beruf des Töpfers zugewiesen ist, kann der Meister doppelt so viele Töpfe in der gleichen Zeit herstellen wie ein normaler Siedler.</German>
 		<Hungarian>A fazekasság lehetővé teszi a falvaknak a felesleges gabona tárolását, hogy átvészeljék az éhínséges telet. A szilárd edényeket szekerekre rakni praktikus módja a gabona szállításának és az új települések élelemmel való ellátásának. A fazekasnak szüksége van [LINK=YIELD_CLAY]agyagra[\LINK] és [LINK=YIELD_PEAT]tőzegre[\LINK] a kerámiák égetéséhez. [NEWLINE]A Fazekasmester kétszer annyi kerámiaedényt tud készíteni ugyanannyi idő alatt, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
@@ -2112,12 +1748,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MILK_MAID</Tag>
 		<English>Skilled Milkmaid:Skilled Milkmaids</English>
-		
-		<Portuguese>
-			<Text>Leiteira Habilidosa:Leiteiras Habilidosas</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Laitière qualifiée:Laitières qualifiées</Text>
 			<Gender>Female</Gender>
@@ -2144,12 +1774,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MILK_MAID</Tag>
 		<English>Skilled Milkmaid:Skilled Milkmaids</English>
-		
-		<Portuguese>
-			<Text>Leiteira Habilidosa:Leiteiras Habilidosas</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Laitière qualifiée:Laitières qualifiées</Text>
 			<Gender>Female</Gender>
@@ -2176,7 +1800,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MILK_MAID_PEDIA</Tag>
 		<English>Milkmaids get milk from cows, goats, sheep and any other cooperative mammal. Their work feeds the town children, improves the taste of tea or coffee, and provides the raw material for cheesemakers.</English>
-		<Portuguese>As leiteiras obtêm leite de vacas, cabras, ovelhas e qualquer outro mamífero cooperativo. Seu trabalho alimenta as crianças da cidade, melhora o sabor do chá ou do café e fornece matéria-prima para os queijeiros.</Portuguese>
 		<French>Les laitières récupèrent le lait des vaches, des chèvres, des moutons et de tout autre mammifère coopératif. Leur travail nourrit les enfants de la ville, améliore le goût du thé ou du café, et fournit la matière première des fromagers.</French>
 		<German>Milchmädchen holen die Milch von Kühen, Ziegen, Schafen und anderen genossenschaftlichen Säugetieren. Ihre Arbeit ernährt die Kinder der Stadt, verbessert den Geschmack von Tee oder Kaffee und liefert den Rohstoff für Käsereien.</German>
 		<Italian>Le lattaie ricavano il latte da mucche, capre, pecore e qualsiasi altro mammifero in cooperazione. Il loro lavoro nutre i bambini della città, migliora il sapore del tè o del caffè e fornisce la materia prima ai casari.</Italian>
@@ -2186,7 +1809,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MILK_MAID_STRATEGY</Tag>
 		<English>Milkmaids work hard to deliver much-needed protein to settlers young and old. Anyone who thinks the work is easy hasn't been close enough to the business end of a cow. Milkmaids are also immune to smallpox, a rare advantage in colonial times.[NEWLINE]When assigned to the Milkmaid profession, the skilled milkmaid can get twice the [LINK=YIELD_MILK]milk[\LINK] in the same time as a regular colonist.</English>
-		<Portuguese>As leiteiras trabalham arduamente para fornecer a proteína tão necessária aos colonos, jovens e idosos. Qualquer pessoa que pense que o trabalho é fácil não esteve suficientemente perto do negócio de uma vaca. As leiteiras também são imunes à varíola, uma vantagem rara nos tempos coloniais.[NEWLINE]Quando designada para a profissão de leiteira, a leiteira habilidosa pode obter o dobro do [LINK=YIELD_MILK]leite[\LINK] no mesmo tempo que um colono normal.</Portuguese>
 		<French>Les laitières travaillent dur pour fournir les protéines dont les colons, jeunes et vieux, ont tant besoin. Quiconque pense que ce travail est facile n'a jamais été assez près de l'extrémité d'une vache. Les laitières sont également immunisées contre la variole, un avantage rare à l'époque coloniale.[NEWLINE]Lorsqu'elle est affectée à la profession de laitière, la laitière qualifiée peut obtenir deux fois plus de lait dans le même temps qu'un colon ordinaire.</French>
 		<German>Milchmädchen arbeiten hart, um die Siedler, ob jung oder alt, mit dem dringend benötigten Eiweiß zu versorgen. Wer glaubt, dass die Arbeit leicht ist, war noch nicht nah genug am Hinterteil einer Kuh. Milchmädchen sind auch immun gegen Pocken, ein seltener Vorteil in der Kolonialzeit.[NEWLINE]Wenn ein fleißiges Milchmädchen den Beruf des Milchmädchens ausübt, kann sie in der gleichen Zeit doppelt so viel Milch wie ein normaler Kolonist produzieren.</German>
 		<Italian>Le lattaie lavorano duramente per fornire le proteine tanto necessarie ai coloni giovani e anziani. Chiunque pensi che il lavoro sia facile non è stato abbastanza vicino alla parte commerciale di una mucca. Le lattaie sono anche immuni al vaiolo, un vantaggio raro in epoca coloniale.[NEWLINE]Se assegnata alla professione di lattaio, la lattaia esperta può ottenere il doppio del latte nello stesso tempo di un normale colono.</Italian>
@@ -2197,12 +1819,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CHEESE_MAKER</Tag>
 		<English>Master Cheese Maker:Master Cheese Makers</English>
-		
-		<Portuguese>
-			<Text>Mestre Queijeiro:Mestres Queijeiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître Fromager:Maîtres Fromagers</Text>
 			<Gender>Male</Gender>
@@ -2229,12 +1845,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHEESE_MAKER</Tag>
 		<English>Master Cheese Maker:Master Cheese Makers</English>
-		
-		<Portuguese>
-			<Text>Mestre Queijeiro:Mestres Queijeiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître Fromager:Maîtres Fromagers</Text>
 			<Gender>Male</Gender>
@@ -2261,14 +1871,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHEESE_MAKER_PEDIA</Tag>
 		<English>Cheese is produced by coagulation of the milk protein casein. Milk is usually acidified and the enzymes of either rennet or bacterial enzymes are added so the casein coagulates. Curds are then separated from the liquid whey and pressed into finished cheese.</English>
-		<Portuguese>O queijo é produzido pela coagulação da proteína caseína do leite. O leite é geralmente acidificado e as enzimas do coalho ou das bactérias são adicionadas para que a caseína coagule. A coalhada é então separada do soro líquido e prensada no queijo acabado.</Portuguese>
 		<German>Käse wird durch Gerinnung des Milcheiweißes Kasein hergestellt. Die Milch wird in der Regel gesäuert und die Enzyme des Labs oder bakterielle Enzyme werden hinzugefügt, damit das Kasein gerinnt. Der Käsebruch wird dann von der flüssigen Molke getrennt und zu fertigem Käse gepresst.</German>
 		<Hungarian>A sajtot a tejfehérje, a kazein alvasztásával állítják elő. A tejet általában megsavanyítják, majd rennin vagy baktériumok enzimjeit adják hozzá, hogy a kazein megalvadjon. Ezután a túrót elválasztják a folyékony savótól, majd préselik, hogy elkészüljön a sajt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHEESE_MAKER_STRATEGY</Tag>
 		<English>Cheese is valued for its transportability, long shelf life, and high content of fat, protein, calcium, and phosphorus. It's made from [LINK=YIELD_MILK]milk[\LINK]. The long storage life of some cheeses, especially when encased in a protective rind, allows selling when markets are favourable.[NEWLINE]When assigned to the [LINK=PROFESSION_CHEESE_MAKER]cheese maker[\LINK] profession, the master can get twice the weight of [LINK=YIELD_CHEESE]cheese[\LINK] in the same time as a regular colonist.</English>
-		<Portuguese>O queijo é valorizado pela sua transportabilidade, longa vida útil e alto teor de gordura, proteína, cálcio e fósforo. É feito de [LINK=YIELD_MILK]leite[\LINK]. A longa vida útil de alguns queijos, especialmente quando envoltos em uma casca protetora, permite a venda quando os mercados estão favoráveis.[NEWLINE]Quando atribuído à profissão de [LINK=PROFESSION_CHEESE_MAKER]queijeiro[\LINK], o mestre pode obter o dobro do peso do [LINK=YIELD_CHEESE]queijo[\LINK] no mesmo tempo que um colono normal.</Portuguese>
 		<German>Käse wird wegen seiner Transportfähigkeit, seiner langen Haltbarkeit und seines hohen Gehalts an Fett, Eiweiß, Kalzium und Phosphor geschätzt. Er wird aus [LINK=YIELD_MILK]Milch[\LINK] hergestellt. Die lange Haltbarkeit einiger Käsesorten, vor allem wenn sie von einer schützenden Rinde umhüllt sind, ermöglicht den Verkauf zu günstigen Marktzeiten.[NEWLINE]Wenn der Meister den Beruf [LINK=PROFESSION_CHEESE_MAKER]Käsemacher[\LINK] ausübt, kann er in der gleichen Zeit die doppelte Menge an [LINK=YIELD_CHEESE]Käse[\LINK] herstellen wie ein normaler Kolonist.</German>
 		<Hungarian>A sajtot szállíthatósága, hosszú eltarthatósága, valamint magas zsírtartalma, fehérjetartalma, kalcium- és foszfortartalma miatt becsülik. [LINK=YIELD_MILK]Tejből[\LINK] készül. Egyes sajtok hosszú tárolási ideje, különösen ha védőhéjjal vannak bevonva, lehetővé teszi azok értékesítését, amikor a piac kedvező. [NEWLINE]A [LINK=PROFESSION_CHEESE_MAKER]sajtkészítő mester[\LINK] ugyanannyi idő alatt kétszer annyi [LINK=YIELD_CHEESE]sajtot[\LINK] tud előállítani, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
@@ -2276,12 +1884,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CHARCOAL_BURNER</Tag>
 		<English>Master Charcoal Burner:Master Charcoal Burners</English>
-		
-		<Portuguese>
-			<Text>Mestre Carvoeiro:Mestres Carvoeiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître charbonnier:Maîtres charbonniers</Text>
 			<Gender>Male</Gender>
@@ -2308,12 +1910,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHARCOAL_BURNER</Tag>
 		<English>Master Charcoal Burner:Master Charcoal Burners</English>
-		
-		<Portuguese>
-			<Text>Mestre Carvoeiro:Mestres Carvoeiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître charbonnier:Maîtres charbonniers</Text>
 			<Gender>Male</Gender>
@@ -2340,7 +1936,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHARCOAL_BURNER_PEDIA</Tag>
 		<English>Charcoal comes from wood cooked in a kiln over six to eight days, sometimes longer. Charcoal burns at 1,100 degrees Celsius. The melting point of iron is 1,200 degrees. By using the bellows on a charcoal fire the blacksmith softens iron enough to work it.</English>
-		<Portuguese>O carvão vem da madeira cozida em forno durante seis a oito dias, às vezes mais. O carvão queima a 1.100 graus Celsius. O ponto de fusão do ferro é 1.200 graus. Ao usar o fole no fogo de carvão, o ferreiro amolece o ferro o suficiente para trabalhar.</Portuguese>
 		<French>Le charbon de bois provient du bois cuit dans un four pendant six à huit jours, parfois plus. Le charbon de bois brûle à 1 100 degrés Celsius. Le point de fusion du fer est de 1 200 degrés. En utilisant un soufflet sur un feu de charbon de bois, un forgeron peut se mettre au travail.</French>
 		<German>Holzkohle wird aus Holz hergestellt, das sechs bis acht Tage lang, manchmal auch länger, in einem Ofen gebrannt wurde. Holzkohle brennt bei 1.100 Grad Celsius. Der Schmelzpunkt von Eisen liegt bei 1.200 Grad. Mit einem Blasebalg auf einem Holzkohlefeuer kann ein Schmied seine Arbeit aufnehmen.</German>
 		<Italian>Il carbone di legna proviene da legna cotta in una fornace per sei-otto giorni, a volte anche di più. Il carbone di legna brucia a 1.100 gradi Celsius. Il punto di fusione del ferro è di 1.200 gradi. Utilizzando un soffietto su un fuoco di carbone, il fabbro può mettersi al lavoro.</Italian>
@@ -2350,7 +1945,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHARCOAL_BURNER_STRATEGY</Tag>
 		<English>The charcoal burner watches the smoke exiting the kiln. If the smoke is thick and grey, the wood is still raw; thin, blue smoke indicates good carbonization.[NEWLINE]When assigned to the [LINK=PROFESSION_CHARCOAL_BURNER]charcoal burner[\LINK] profession, the expert can get twice as much [LINK=YIELD_CHAR_COAL]charcoal[\LINK] in the same time as a regular colonist.</English>
-		<Portuguese>O carvoeiro observa a saída da fumaça do forno. Se a fumaça for espessa e cinzenta, a madeira ainda está crua; fumaça fina e azul indica boa carbonização.[NEWLINE]Quando atribuído à profissão de [LINK=PROFESSION_CHARCOAL_BURNER]carvoeiro[\LINK], o especialista pode obter o dobro de [LINK=YIELD_CHAR_COAL]carvão vegetal[\LINK] no mesmo tempo que um colono normal.</Portuguese>
 		<French>Le charbonnier observe la fumée qui sort du four. Si la fumée est épaisse et grise, le bois est encore brut ; une fumée fine et bleue indique une bonne carbonisation.[NEWLINE]Lorsqu'il est affecté à la profession de [LINK=PROFESSION_CHARCOAL_BURNER]charbonnier[\LINK], l'expert peut obtenir deux fois plus de [LINK=YIELD_CHAR_COAL]charbon de bois[\LINK] dans le même temps qu'un colon ordinaire.</French>
 		<German>Der Köhler beobachtet den Rauch, der den Ofen verlässt. Wenn der Rauch dick und grau ist, ist das Holz noch roh; dünner, blauer Rauch deutet auf eine gute Verkohlung hin.[NEWLINE]Wenn ein Experte den Beruf [LINK=PROFESSION_CHARCOAL_BURNER]Köhler[\LINK] ausübt, kann er in derselben Zeit doppelt so viel [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK] herstellen wie ein normaler Kolonist.</German>
 		<Italian>Il carbonaio osserva il fumo che esce dal forno. Se il fumo è denso e grigio, il legno è ancora grezzo; un fumo sottile e blu indica una buona carbonizzazione.[NEWLINE]Se assegnato alla professione di [LINK=PROFESSION_CHARCOAL_BURNER]carbonaro[\LINK], l'esperto può ottenere il doppio del [LINK=YIELD_CHAR_COAL]carbone[\LINK] nello stesso tempo di un normale colono.</Italian>
@@ -2361,12 +1955,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_BAKER</Tag>
 		<English>Master Baker:Master Bakers</English>
-		
-		<Portuguese>
-			<Text>Mestre Padeiro:Mestres Padeiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>Maître boulanger:Maîtres boulangers</French>
 		<German>
 			<Text>Bäckermeister:Bäckermeister</Text>
@@ -2381,12 +1969,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BAKER</Tag>
 		<English>Master Baker:Master Bakers</English>
-		
-		<Portuguese>
-			<Text>Mestre Padeiro:Mestres Padeiros</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>Maître boulanger:Maîtres boulangers</French>
 		<German>
 			<Text>Bäckermeister:Bäckermeister</Text>
@@ -2401,7 +1983,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BAKER_PEDIA</Tag>
 		<English>The baker starts work well before dawn so that households can have their daily bread. As the bakery grows, offering cookies and pastries, it becomes a social center. Some bakers even set up tables where tea is served to accompany the treats. An efficient baker can keep prices down thanks to economies of scale. She might also offer an unparalleled variety of pastries, pies and cakes for special occasions.</English>
-		<Portuguese>O padeiro começa a trabalhar bem antes do amanhecer para que as famílias possam ter o pão de cada dia. À medida que a padaria cresce, oferecendo biscoitos e pastéis, torna-se um centro social. Alguns padeiros até montam mesas onde é servido chá para acompanhar as guloseimas. Um padeiro eficiente pode manter os preços baixos graças às economias de escala. Ela também pode oferecer uma variedade incomparável de doces, tortas e bolos para ocasiões especiais.</Portuguese>
 		<French>Le boulanger commence à travailler bien avant l'aube pour que les ménages puissent avoir leur pain quotidien. Au fur et à mesure que la boulangerie se développe, offrant des biscuits et des pâtisseries, elle devient un centre social. Certains boulangers installent même des tables où du thé est servi pour accompagner les friandises.</French>
 		<German>Der Bäcker beginnt seine Arbeit lange vor der Morgendämmerung, damit die Haushalte ihr tägliches Brot bekommen können. Wenn die Bäckerei wächst und Kekse und Gebäck anbietet, wird sie zu einem sozialen Zentrum. Einige Bäcker stellen sogar Tische auf, an denen Tee zu den Leckereien serviert wird.</German>
 		<Italian>Il panettiere inizia a lavorare ben prima dell'alba, in modo che le famiglie possano avere il pane quotidiano. Man mano che il panificio cresce, offrendo biscotti e pasticcini, diventa un centro sociale. Alcuni panettieri allestiscono persino dei tavoli dove viene servito il tè per accompagnare le prelibatezze.</Italian>
@@ -2411,7 +1992,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BAKER_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]baker[COLOR_REVERT] may be employed in the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] or one of its extensions supplying provisions made from ([LINK=PROFESSION_BAKER_BARLEY]barley[\LINK], [LINK=PROFESSION_BAKER_RICE]rice[\LINK] or [LINK=PROFESSION_BAKER_CASSAVA]cassava[\LINK]). The master baker will produce twice as many [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] in the same time as a typical colonist.</English>
-		<Portuguese>O [COLOR_HIGHLIGHT_TEXT]padeiro[COLOR_REVERT] pode ser empregado na [LINK=BUILDING_BAKER_HOUSE]casa do padeiro[\LINK] ou em uma de suas extensões fornecendo provisões feitas de ([LINK=PROFESSION_BAKER_BARLEY]cevada[\LINK], [LINK=PROFESSION_BAKER_RICE]arroz[\LINK] ou [LINK=PROFESSION_BAKER_CASSAVA]mandioca[\LINK]). O padeiro mestre produzirá o dobro de [LINK=YIELD_BAKERY_GOODS]provisões[\LINK] ao mesmo tempo que um colono típico.</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]Bäckermeister[COLOR_REVERT] kann im [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK] bzw. einer seiner Erweiterungen als [COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] ([LINK=PROFESSION_BAKER_BARLEY]Gerste[\LINK], [LINK=PROFESSION_BAKER_RICE]Reis[\LINK], [LINK=PROFESSION_BAKER_CASSAVA]Maniok[\LINK]) in der gleichen Zeit doppelt so viel [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] herstellen, wie ein normaler Kolonist.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]pék[COLOR_REVERT] a [LINK=BUILDING_BAKER_HOUSE]pékségben[\LINK] vagy annak egyik továbbfejlesztésében dolgozhat, ahol ([LINK=PROFESSION_BAKER_BARLEY]árpából[\LINK], [LINK=PROFESSION_BAKER_RICE]rizsből[\LINK] vagy [LINK=PROFESSION_BAKER_CASSAVA]maniókából[\LINK]) ellátmányt süt. A pékmester kétszer annyi [LINK=YIELD_BAKERY_GOODS] ellátmányt[\LINK] állít elő ugyanannyi idő alatt, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
@@ -2419,12 +1999,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FIREWORKER</Tag>
 		<English>Master Powder Maker:Master Powder Makers</English>
-		
-		<Portuguese>
-			<Text>Mestre Polvorista:Mestres Polvoristas</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître poudrier:Maîtres poudriers</Text>
 			<Gender>Male</Gender>
@@ -2451,12 +2025,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIREWORKER</Tag>
 		<English>Master Powder Maker:Master Powder Makers</English>
-		
-		<Portuguese>
-			<Text>Mestre Polvorista:Mestres Polvoristas</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Maître poudrier:Maîtres poudriers</Text>
 			<Gender>Male</Gender>
@@ -2483,7 +2051,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIREWORKER_PEDIA</Tag>
 		<English>Well away from other buildings the powder maker mixes gunpowder from sulphur, charcoal and saltpeter: ammunition for the soldiers' guns. During colonial times it's the only available explosive (dynamite will be invented in 1867) so it's also used for artillery, mining and road building.</English>
-		<Portuguese>Bem longe de outros edifícios, o fabricante de pólvora mistura pólvora de enxofre, carvão e salitre: munição para as armas dos soldados. Durante a época colonial é o único explosivo disponível (a dinamite será inventada em 1867), por isso também é usado para artilharia, mineração e construção de estradas.</Portuguese>
 		<French>A l'écart des autres bâtiments, le poudrier mélange la poudre à canon à partir de soufre, de charbon de bois et de salpêtre : des munitions pour les fusils des soldats. À l'époque coloniale, c'est le seul explosif disponible (la dynamite sera inventée en 1867). Elle est donc également utilisée pour l'artillerie, l'exploitation minière et la construction de routes.</French>
 		<German>Weit entfernt von anderen Gebäuden mischt der Pulvermacher Schießpulver aus Schwefel, Holzkohle und Salpeter für die Gewehre der Soldaten. Während der Kolonialzeit ist es der einzige verfügbare Sprengstoff (Dynamit wird erst 1867 erfunden) und wird auch für die Artillerie, den Bergbau und den Straßenbau verwendet.</German>
 		<Italian>Ben lontano da altri edifici, il fabbricante di polvere da sparo mescola la polvere da sparo con zolfo, carbone e salnitro: munizioni per i cannoni dei soldati. In epoca coloniale è l'unico esplosivo disponibile (la dinamite sarà inventata nel 1867), quindi viene utilizzato anche per l'artiglieria, le miniere e la costruzione di strade.</Italian>
@@ -2493,7 +2060,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FIREWORKER_STRATEGY</Tag>
 		<English>The powder maker uses [LINK=YIELD_CHAR_COAL]charcoal[\LINK] to produce enough black powder for the soldiers' guns. Even more is needed for miners and the pioneers building roads. Black powder may be dangerous, but it's not as dangerous as having a weak army without enough ammunition.[NEWLINE]When assigned to the Powder Maker profession, the master can mix twice as much gunpowder in the same time as a regular colonist.</English>
-		<Portuguese>O fabricante de pólvora usa [LINK=YIELD_CHAR_COAL]carvão vegetal[\LINK] para produzir pólvora negra suficiente para as armas dos soldados. É necessário ainda mais para os mineiros e os pioneiros na construção de estradas. A pólvora negra pode ser perigosa, mas não é tão perigosa quanto ter um exército fraco e sem munição suficiente.[NEWLINE]Quando designado para a profissão Fabricante de Pólvora, o mestre pode misturar o dobro de pólvora no mesmo tempo que um colono normal.</Portuguese>
 		<German>Der Pulvermacher verwendet [LINK=YIELD_CHAR_COAL]Holzkohle[\LINK], um genügend Schwarzpulver für die Gewehre der Soldaten herzustellen. Noch mehr wird für die Bergleute und die Pioniere beim Straßenbau benötigt. Schwarzpulver mag gefährlich sein, aber es ist nicht so gefährlich wie eine schwache Armee ohne genügend Munition.[NEWLINE]Wenn der Meister den Beruf des Pulvermachers ausübt, kann er in der gleichen Zeit doppelt so viel Schießpulver mischen wie ein normaler Kolonist.</German>
 		<Hungarian>A puskaporkeverő [LINK=YIELD_CHAR_COAL]faszenet[\LINK] használ puskapor előállítására, ami a katonák fegyvereihez szükséges. Még több puskaporra van szükség a bányászok és az utakat építő utászok számára. A puskapor veszélyes lehet, de nem annyira, mint egy gyenge hadsereg, amelynek nincs elegendő lőszere.[NEWLINE]A puskaporkeverő mester kétszer annyi puskaport keverhet össze, mint egy átlagos lakos.</Hungarian>
 	</TEXT>
@@ -2501,12 +2067,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MESTIZZO</Tag>
 		<English>Mestizo:Mestizos</English>
-		
-		<Portuguese>
-			<Text>Mestiço:Mestiços</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Métis:Métis</Text>
 			<Gender>Male</Gender>
@@ -2533,12 +2093,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MESTIZZO</Tag>
 		<English>Mestizo:Mestizos</English>
-		
-		<Portuguese>
-			<Text>Mestiço:Mestiços</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Métis:Métis</Text>
 			<Gender>Male</Gender>
@@ -2565,14 +2119,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MESTIZZO_PEDIA</Tag>
 		<English>The mestizo is the child of a European and an Indigenous parent. Mestizo children are often rejected by both communities.[NEWLINE]Further north, Metis means the same thing. Louis Riel, a Metis, is one of Canada's Fathers of Confederation, though he was hanged for treason before his contribution was recognized.</English>
-		<Portuguese>O mestiço é filho de pai europeu e indígena. As crianças mestiças são frequentemente rejeitadas por ambas as comunidades.[NEWLINE]Mais ao norte, Metis significa a mesma coisa. Louis Riel, um Metis, é um dos Pais da Confederação do Canadá, embora tenha sido enforcado por traição antes que sua contribuição fosse reconhecida.</Portuguese>
 		<German>Der Mestize ist das Kind eines europäischen und eines indigenen Elternteils. Mestizo-Kinder werden oft von beiden Gemeinschaften abgelehnt.[NEWLINE]Weiter nördlich bedeutet Metis das Gleiche. Louis Riel, ein Metis, ist einer der Väter der kanadischen Konföderation, obwohl er wegen Hochverrats gehängt wurde, bevor sein Beitrag anerkannt wurde.</German>
 		<Hungarian>A mesztic egy Európai és egy Indián szülő gyermeke. A mesztic gyermekeket gyakran mindkét közösség elutasítja. [NEWLINE]Északabbra a metis ugyanazt jelenti. Louis Riel, egy metis, Kanada konföderációjának egyik atyja, bár árulásért felakasztották, mielőtt hozzájárulását elismerték volna.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MESTIZZO_STRATEGY</Tag>
 		<English>Sometimes mestizos advance in spite of the prejudice. Quanah Parker, a mestizo born to a European mother, was known as the most terrifying Comanche leader because of his devastating raids on white settlements.</English>
-		<Portuguese>Às vezes os mestiços avançam apesar do preconceito. Quanah Parker, um mestiço nascido de mãe europeia, era conhecido como o mais terrível líder Comanche por causa de seus ataques devastadores aas colônias brancos.</Portuguese>
 		<German>Manchmal können Mestizen trotz ihrer Benachteiligung etwas großes leisten. Quanah Parker, ein Mestize mit einer europäischen Mutter, war wegen seiner verheerenden Überfälle auf weiße Siedlungen als der furchterregendste Comanchen-Anführer bekannt.</German>
 		<Hungarian>Néha a meszticek az előítéletek ellenére is előrelépnek. Quanah Parker, egy európai anyától született mesztic, a fehér települések elleni rajtaütések legfélelmetesebb komancs vezetőjeként volt ismert.</Hungarian>
 	</TEXT>
@@ -2580,12 +2132,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MULATTO</Tag>
 		<English>Mulatto:Mulattos</English>
-		
-		<Portuguese>
-			<Text>Mulato:Mulatos</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Mulâtre:Mulâtres</Text>
 			<Gender>Male</Gender>
@@ -2612,12 +2158,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MULATTO</Tag>
 		<English>Mulatto:Mulattos</English>
-		
-		<Portuguese>
-			<Text>Mulato:Mulatos</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Mulâtre:Mulâtres</Text>
 			<Gender>Male</Gender>
@@ -2644,7 +2184,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MULATTO_PEDIA</Tag>
 		<English>The mulatto is the child of a European and an African parent, often a slave woman. The child grows up as part of the slave population. To maintain cultural separation Europeans create artificial distinctions, such as being repelled by the idea of touching Black people.</English>
-		<Portuguese>O mulato é filho de um pai europeu e de um pai africano, muitas vezes uma escrava. A criança cresce como parte da população escrava. Para manter a separação cultural, os europeus criam distinções artificiais, como sentir repulsa pela ideia de tocar nos negros.</Portuguese>
 		<German>Der Mulatte ist das Kind eines europäischen und eines afrikanischen Elternteils, häufig einer Sklavin. Das Kind wächst als Teil der Sklavenbevölkerung auf. Um die kulturelle Trennung aufrechtzuerhalten, schaffen die Europäer künstliche Unterscheidungen, wie zum Beispiel die Abneigung gegen den Gedanken, Schwarze zu berühren.</German>
 		<French>Un mulâtre est l'enfant d'un parent Européen et d'un parent africain, le plus souvent une femme esclave. L'enfant grandit parmi les esclaves. Pour maintenir une séparation culturelle, les Européeens créent des coutumes artificielles, comme en faisant mine d'être dégouté à l'idée de toucher un Noir.</French>
 		<Hungarian>A mulatt egy Európai és egy Afrikai szülő, gyakran egy rabszolga nő gyermeke. A gyermek a rabszolgák közösségében nő fel. A kulturális elkülönültség fenntartása érdekében az európaiak mesterséges különbségeket hoznak létre, például azt, hogy visszataszítónak tartják a fekete emberek megérintését.</Hungarian>
@@ -2652,7 +2191,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MULATTO_STRATEGY</Tag>
 		<English>Mulattos add to the slave population but they also create cultural confusion. European women are not happy to see their husbands fathering Black babies.[NEWLINE]Because slave life expectancy on sugar plantations is three years, or twenty-one for mulattos born into slavery, plantation owners develop a racial justification for the deaths of their children.</English>
-		<Portuguese>Os mulatos aumentam a população escrava, mas também criam confusão cultural. As mulheres europeias não ficam felizes por ver os seus maridos terem filhos negros.[NEWLINE]Como a esperança de vida dos escravos nas plantações de açúcar é de três anos, ou de vinte e um para os mulatos nascidos na escravatura, os proprietários das plantações desenvolvem uma justificação racial para a morte dos seus filhos.</Portuguese>
 		<German>Mulatten erhöhen die Sklavenpopulation, aber sie sorgen auch für kulturelle Verwirrung. Da die Lebenserwartung der Sklaven auf den Zuckerplantagen drei Jahre und die der in die Sklaverei hineingeborenen Mulatten einundzwanzig Jahre beträgt, entwickeln die Plantagenbesitzer eine rassistische Rechtfertigung für den Tod ihrer Kinder.</German>
 		<French>Les mulâtres comptent parmi les esclaves mais ils contribuent au mélange des cultures. Les femmes européennes ne sont pas ravies de voir leur maris procréer des enfants blancs.[NEWLINE] Comme l'espérance de vie des esclaves ne dépasse pas les trois ans dans les plantations de sucre, ou vingt et un ans pour les mulâtres nés en servitude, les propriétaires de plantation ont mis en oeuvre une justification raciale pour la mort de leurs enfants.</French>
 		<Hungarian>A mulattok növelik a rabszolgák számát, de kulturális zavart is okoznak. Az európai nők nem örülnek annak, hogy férjeik fekete gyermekeket nemzenek. Mivel a cukornádültetvényeken a rabszolgák átlagos élettartama három év, a rabszolgaságba született mulattoké pedig huszonegy év, az ültetvénytulajdonosok faji indokokat találtak ki gyermekeik halálának igazolására.</Hungarian>
@@ -2661,12 +2199,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CONSTRUCTION_SUPPLIES</Tag>
 		<English>Construction Supplies:Construction Supplies</English>
-		
-		<Portuguese>
-			<Text>Suprimentos de Construção:Suprimentos de Construção</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Matériel de construction:Matériel de construction</Text>
 			<Gender>Male</Gender>
@@ -2693,12 +2225,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES</Tag>
 		<English>Construction Supplies:Construction Supplies</English>
-		
-		<Portuguese>
-			<Text>Suprimentos de Construção:Suprimentos de Construção</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Matériau de construction:Matériaux de construction</Text>
 			<Gender>Male</Gender>
@@ -2725,7 +2251,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_PEDIA</Tag>
 		<English>Construction supplies is a vast category, ranging from wood and bricks to nails and forged hardware. The carpenter needs construction supplies to work.</English>
-		<Portuguese>Os materiais de construção são uma categoria vasta, que vai desde madeira e tijolos até pregos e ferragens forjadas. O carpinteiro precisa de materiais de construção para trabalhar.</Portuguese>
 		<French>Les matériaux de constructions sont une vaste catégorie, comprenant le bois, les briques, les clous et les pièces métalliques. Le charpentier a besoin de ces matériaux pour travailler.</French>
 		<German>Baubedarf ist eine große Kategorie, die von Holz und Ziegeln bis zu Nägeln und Schmiedeeisen reicht. Der Zimmermann braucht Baumaterial für seine Arbeit.</German>
 		<Hungarian>Az építőanyagok széles kategóriát alkotnak, a fától és tégláktól kezdve a szögeken át a kovácsolt vasalatokig. Az ácsoknak építőanyagokra van szükségük a munkájukhoz.</Hungarian>
@@ -2733,7 +2258,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONSTRUCTION_SUPPLIES_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Construction supplies[COLOR_REVERT] can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK] or produced in a settlement for 50 [LINK=YIELD_HAMMERS]hammers[\LINK] and support a building project with 40 hammers once. Construction supplies are immobile, but they can be [LINK=CONCEPT_TRANSPORT]transported[\LINK]. In this way new settlements have their building construction supported.</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Suprimentos de construção[COLOR_REVERT] podem ser comprados na [LINK=CONCEPT_EUROPE]Europa[\LINK] ou produzidos em uma colônia por 50 [LINK=YIELD_HAMMERS]martelos[\LINK] e apoiar um projeto de construção com 40 martelos uma vez. Os materiais de construção são imóveis, mas podem ser [LINK=CONCEPT_TRANSPORT]transportados[\LINK]. Desta forma, novas colônias têm a sua construção construída apoiada.</Portuguese>
 		<French>[COLOR_HIGHLIGHT_TEXT]Les matériaux de construction[COLOR_REVERT] peuvent être achetés en [LINK=CONCEPT_EUROPE]Europe[\LINK] ou produits dans une colonie pour 50 [LINK=YIELD_HAMMERS]marteaux[\LINK] et donne une contribution ponctuelle de 40 production aux projets de la colonie. Les matériaux de contructions sont immoblies mais peuvent être [LINK=CONCEPT_TRANSPORT]transportés[\LINK], pour aider à établir les premiers bâtiments indispensables des nouvelles colonies.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Baumaterial[COLOR_REVERT] kann in [LINK=CONCEPT_EUROPE]Europa[\LINK] gekauft oder in einer Siedlung für 50 [LINK=YIELD_HAMMERS]Hämmer[\LINK] produziert werden und einmalig ein Bauprojekt mit 40 Hämmern unterstützen. Das Baumaterial verhält sich wie eine unbewegliche Einheit, welche jedoch [LINK=CONCEPT_TRANSPORT]transportiert[\LINK] werden kann, sodass hierdurch neue Siedlungen beim Gebäudebau unterstützt werden können.</German>
 		<Hungarian>Az [COLOR_HIGHLIGHT_TEXT]Építőanyagok[COLOR_REVERT] [LINK=CONCEPT_EUROPE]Európában[\LINK] vásárolhatók meg, vagy egy településen 50 [LINK=YIELD_HAMMERS] kalapácsért[\LINK] előállíthatók, és 40 kalapáccsal egy alkalommal támogathatnak egy építési projektet. Az építőanyagok olyanok, mint egy mozdíthatatlan egység, amely azonban [LINK=CONCEPT_TRANSPORT]szállítható[\LINK], így új településeket lehet ezzel támogatni az építkezés során.</Hungarian>
@@ -2742,12 +2266,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_BRAVE_LIEUTENANT</Tag>
 		<English>Brave Lieutenant:Brave Lieutenants</English>
-		
-		<Portuguese>
-			<Text>Tenente Destemido:Tenentes Destemidos</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Lieutenant courageux:Lieutenants courageux</Text>
 			<Gender>Male</Gender>
@@ -2774,12 +2292,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT</Tag>
 		<English>Brave Lieutenant:Brave Lieutenants</English>
-		
-		<Portuguese>
-			<Text>Tenente Destemido:Tenentes Destemidos</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Lieutenant courageux:Lieutenants courageux</Text>
 			<Gender>Male</Gender>
@@ -2806,7 +2318,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_PEDIA</Tag>
 		<English>Like the great general, the brave lieutenant contributes experience points to one or more military units, just not as much experience.[NEWLINE]When younger sons aren't smart enough for the priesthood, and their father's rich enough to buy them an army commission, they start as junior officers, charging into battle at the head of their troops. Bravery gives them a fighting chance.</English>
-		<Portuguese>Como o grande general, o corajoso tenente contribui com pontos de experiência para uma ou mais unidades militares, mas não tanta experiência.[NEWLINE]Quando os filhos mais novos não são inteligentes o suficiente para o sacerdócio e seu pai é rico o suficiente para comprar-lhes uma comissão militar, eles começam como oficiais subalternos, entrando na batalha à frente de suas tropas. A bravura lhes dá uma chance de lutar.</Portuguese>
 		<German>Wie der große General steuert auch der tapfere Leutnant Erfahrungspunkte zu einer oder mehreren Militäreinheiten bei, nur eben nicht so viel Erfahrung.[NEWLINE]Wenn jüngere Söhne nicht klug genug für das Priesteramt sind und ihr Vater reich genug ist, um ihnen ein Offizierspatent zu kaufen, beginnen sie als Nachwuchsoffiziere und stürmen an der Spitze ihrer Truppen in die Schlacht. Tapferkeit gibt ihnen eine Chance im Kampf.</German>
 		<French>Tout comme un [LINK=UNIT_GREAT_GENERAL]général illustre[\LINK], le lieutenant courageux fournit des points d'expériences aux unités présentes sur sa case, en quantité moindre que le général. Quand les fils cadets ne sont pas assez scolaires pour la prêtrise, et que leur père est assez richje pour leur acheter une commission dans l'armée, chargeant dans la bataille à la tête de leur troupe. La bravoure leur donne la chance de l'emporter.</French>
 		<Hungarian>A nagy tábornokhoz hasonlóan a bátor hadnagy is tapasztalati pontokat ad egy vagy több katonai egységnek, csak nem annyit. [NEWLINE]Amikor a fiatalabb fiúk nem elég okosak a papsághoz és apjuk elég gazdag ahhoz, hogy katonai tisztséget vásároljon nekik, akkor alacsonyabb rangú tisztként vágnak bele a csatába, csapataik élén. A bátorság lehetőséget ad nekik a harcra.</Hungarian>
@@ -2814,7 +2325,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BRAVE_LIEUTENANT_STRATEGY</Tag>
 		<English>Brave lieutenants are rare, appearing perhaps once out of every ten battles.</English>
-		<Portuguese>Tenentes corajosos são raros, aparecendo talvez uma vez em cada dez batalhas.</Portuguese>
 		<German>Tapfere Leutnants sind selten, sie tauchen vielleicht einmal pro zehn Schlachten auf.</German>
 		<French>Les lieutenants courageux sont peu communs, apparaissant environ une fois toutes les dix batailles</French>
 		<Hungarian>A bátor hadnagyok ritkák, talán tíz csatából egyszer bukkannak fel.</Hungarian>
@@ -2823,12 +2333,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CAPABLE_CAPTAIN</Tag>
 		<English>Able Captain:Able Captains</English>
-		
-		<Portuguese>
-			<Text>Capitão Hábil:Capitães Hábeis</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Capitaine compétent:Capitaines compétents</Text>
 			<Gender>Male</Gender>
@@ -2855,12 +2359,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN</Tag>
 		<English>Able Captain:Able Captains</English>
-		
-		<Portuguese>
-			<Text>Capitão Hábil:Capitães Hábeis</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Capitaine compétent:Capitaines compétents</Text>
 			<Gender>Male</Gender>
@@ -2887,7 +2385,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_PEDIA</Tag>
 		<English>Like the great admiral, the capable captain adds experience points to one or more military units, just not as much experience.[NEWLINE]To attain command a capable captain needs the ability to win a fight. In the American Revolutionary War naval battles were fought on inland lakes and rivers, as well as on the open ocean. Seaports were also a common target.</English>
-		<Portuguese>Assim como o grande almirante, o capitão capaz adiciona pontos de experiência a uma ou mais unidades militares, mas não tanta experiência.[NEWLINE]Para alcançar o comando, um capitão capaz precisa da habilidade de vencer uma luta. Na Guerra Revolucionária Americana, as batalhas navais foram travadas em lagos e rios interiores, bem como em mar aberto. Os portos marítimos também eram um alvo comum.</Portuguese>
 		<German>Im Amerikanischen Revolutionskrieg wurden Seeschlachten sowohl auf Binnenseen und Flüssen als auch auf dem offenen Meer ausgetragen. Auch Seehäfen waren ein häufiges Ziel.</German>
 		<French>Tout comme un [LINK=UNIT_GREAT_ADMIRAL]amiral illustre[\LINK], un capitaine compétent donne des points d'expérience aux unités navales présentes sur sa case, en quantité moindre que l'amiral.[NEWLINE]Pour se démarquer, un capitaine compétent doit gagner un combat. Pendant la guerre d'indépendance des États Unis, les batailles navales ont eu lieu sur les lacs et les rivières, ainsi qu'en haute mere. Les ports maritimes étaient eux aussi des cibles fréquentes.</French>
 		<Hungarian>A nagy admirálishoz hasonlóan a remek kapitány is tapasztalati pontokat ad egy vagy több katonai egységnek, csak nem annyit. [NEWLINE]Ahhoz, hogy parancsnoki pozícióba kerülhessen, egy remek kapitánynak képesnek kell lennie a harc megnyerésére. Az amerikai függetlenségi háborúban a tengeri csatákat a nyílt tengeren, valamint a belvízi tavakon és folyókon vívták. A tengeri kikötők is gyakori célpontok voltak.</Hungarian>
@@ -2895,7 +2392,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAPABLE_CAPTAIN_STRATEGY</Tag>
 		<English>Capable captains are front line leaders. They are rare, occurring perhaps once out of every ten battles.</English>
-		<Portuguese>Capitães capazes são líderes da linha de frente. Elas são raras, ocorrendo talvez uma vez em cada dez batalhas.</Portuguese>
 		<German>Wie der große Admiral fügt der fähige Kapitän einer oder mehreren Militäreinheiten Erfahrungspunkte hinzu, jedoch deutlich weniger.[NEWLINE]Um einen fähigen Kapitän zu erhalten, ist es notwendig einen Kampf zu gewinnen. Fähige Kapitäne sind Anführer an vorderster Front. Sie sind selten und kommen vielleicht einmal in jeder zehnten Schlacht vor.</German>
 		<French>Les capitaines compétents mènent en première ligne. Ils sont peu communs, se démarquant du rang environ une fois toutes les dix batailles.</French>
 		<Hungarian>A remek kapitányok az első vonalban harcoló vezetők. Ritkák, talán tíz csatából egyben bukkanak elő.</Hungarian>
@@ -2908,11 +2404,6 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		<Portuguese>
-			<Text>Atriz Famosa:Atrizes Famosas</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Actrice célèbre:Actrices célèbres</Text>
 			<Gender>Female</Gender>
@@ -2943,11 +2434,6 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		<Portuguese>
-			<Text>Atriz Famosa:Atrizes Famosas</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Actrice célèbre:Actrices célèbres</Text>
 			<Gender>Female</Gender>
@@ -2974,7 +2460,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ENTERTAINER_PEDIA</Tag>
 		<English>Celebrities come at first from Europe but ultimately talent surfaces everywhere. Nonetheless plays and readings continue to rely on Old Country texts, both classical and sentimental, throughout the colonial period. Humans are social animals. Fame brings people together to be entertained, to see and be seen. A celebrity performance attracts the entire countryside. To have a resident famous actress improves any community's reputation. Leaving a trail of broken hearts behind her, her legend grows.</English>
-		<Portuguese>As celebridades vêm inicialmente da Europa, mas, em última análise, o talento surge em todo o lado. No entanto, as peças e as leituras continuam a basear-se em textos do Velho País, tanto clássicos como sentimentais, ao longo do período colonial. Os humanos são animais sociais. A fama une as pessoas para se divertirem, para verem e serem vistas. Uma apresentação de celebridade atrai todo o interior. Ter uma atriz residente famosa melhora a reputação de qualquer comunidade. Deixando um rastro de corações partidos atrás dela, sua lenda cresce.</Portuguese>
 		<French>L'homme est un animal social, la célébrité rassemble les gens pour se divertir, pour voir et être vu. Le spectacle d'une célébrité attire toute la campagne. La présence d'une actrice célèbre améliore la réputation de toute communauté. Laissant derrière elle une traînée de cœurs brisés, sa légende grandit.</French>
 		<German>Der Mensch ist ein Gesellschaftstier. Ruhm ist ein gutes Zugpferd Menschen zusammenzubringen, ihnen Unterhaltung zu bieten, damit sie sehen und gesehen werden können. Der Auftritt einer Berühmtheit zieht die ganze Stadt und das Umland in ihren Bann. Die Anwesenheit einer berühmten Schauspielerin verbessert den Ruf einer Stadt. Je mehr gebrochene Herzen sie hinter sich lässt, desto mehr wächst ihre Legende.</German>
 		<Italian>Gli esseri umani sono animali sociali, la fama riunisce le persone per essere intrattenute, per vedere ed essere viste. Un'esibizione di una celebrità attira l'intera campagna. Avere un'attrice famosa residente migliora la reputazione di qualsiasi comunità. Lasciando dietro di sé una scia di cuori infranti, la sua leggenda cresce.</Italian>
@@ -2984,7 +2469,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ENTERTAINER_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Famous actresses[COLOR_REVERT] are in the profession of [LINK=PROFESSION_ENTERTAINER]entertainer[\LINK], excellent at creating [LINK=YIELD_CULTURE]culture[\LINK] in a city.</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Atrizes famosas[COLOR_REVERT] exercem a profissão de [LINK=PROFESSION_ENTERTAINER]animadora[\LINK], excelentes em criar [LINK=YIELD_CULTURE]cultura[\LINK] em uma cidade.</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Berühmte Schauspielerinen[COLOR_REVERT] sind als [LINK=PROFESSION_ENTERTAINER]Unterhalter[\LINK] ausgezeichnet darin für [LINK=YIELD_CULTURE]Kultur[\LINK] in einer Stadt zu sorgen.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Híres Színésznők[COLOR_REVERT] [LINK=PROFESSION_ENTERTAINER] előadóművészként[\LINK]  kiválóan tudják biztosítani a [LINK=YIELD_CULTURE]kultúrát[\LINK] egy városban.</Hungarian>
 	</TEXT>
@@ -2996,11 +2480,6 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		<Portuguese>
-			<Text>Prostituta Sedutora:Prostitutas Sedutoras</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Belle-de-nuit séduisante:Belles-de-nuit séduisantes</Text>
 			<Gender>Female</Gender>
@@ -3031,11 +2510,6 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		<Portuguese>
-			<Text>Prostituta Sedutora:Prostitutas Sedutoras</Text>
-			<Gender>Female</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Belle-de-nuit séduisante:Belles-de-nuit séduisantes</Text>
 			<Gender>Female</Gender>
@@ -3062,7 +2536,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HARLOT_PEDIA</Tag>
 		<English>Church-going ladies may look down on an honest whore but harlots often have influence with the high and mighty, including those in the church. Prostitution is as diverse as society itself. The seductive harlot might have a lucrative career but it's short. Some who like the life go into management after their peak personal earning years.</English>
-		<Portuguese>As senhoras que frequentam a igreja podem desprezar uma prostituta honesta, mas as prostitutas muitas vezes têm influência sobre os altos e poderosos, incluindo os da igreja. A prostituição é tão diversa quanto a própria sociedade. A prostituta sedutora pode ter uma carreira lucrativa, mas é curta. Alguns que gostam da vida passam para a gestão após os anos de pico de ganhos pessoais.</Portuguese>
 		<French>Les dames pratiquantes peuvent mépriser une prostituée honnête, mais les prostituées ont souvent de l'influence sur les puissants, y compris ceux de l'église. La prostitution est aussi diverse que la société elle-même. Une belle-de-nuit séduisante peut avoir une carrière lucrative, mais elle est de courte durée. Certaines d'entre elles, qui aiment cette vie, se lancent dans comme tenancières après avoir atteint le sommet de leurs revenus personnels.</French>
 		<German>Frömmlerische Damen mögen auf eine ehrliche Hure herabblicken, aber Huren haben oft Einfluß bei den Mächtigen, auch in der Kirche. Die Prostitution ist so vielfältig wie die Gesellschaft selbst. Eine verführerische Hure mag eine lukrative Karriere haben, aber sie ist nur kurz. Manche, denen das Leben gefällt, eröffnen nach den Jahren, in denen sie am meisten Geld verdient haben, ein eigenes Etablissement auf.</German>
 		<Italian>Le signore che frequentano la chiesa possono guardare dall'alto in basso una prostituta onesta, ma le prostitute hanno spesso influenza sui potenti, compresi quelli della chiesa. La prostituzione è varia come la società stessa. La prostituta seducente può avere una carriera redditizia, ma breve. Alcune che amano questa vita si dedicano all'amministrazione dopo gli anni di massimo guadagno personale.</Italian>
@@ -3072,7 +2545,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HARLOT_STRATEGY</Tag>
 		<English>A [COLOR_HIGHLIGHT_TEXT]seductive harlot[COLOR_REVERT] doubles the production of [LINK=YIELD_HAPPINESS]happiness[\LINK], when she works as a [LINK=PROFESSION_PROSTITUTE]prostitute[\LINK] in the [LINK=BUILDING_TAVERN]tavern[\LINK] or one of its upgrades. Lonely men often find happiness with a whore who also knows how to be a good listener. For the harlot herself, being in a world with five men for every woman means the chance to find her own husband instead of having her marriage arranged by her parents.</English>
-		<Portuguese>Uma [COLOR_HIGHLIGHT_TEXT]prostituta sedutora[COLOR_REVERT] dobra a produção de [LINK=YIELD_HAPPINESS]felicidade[\LINK], quando trabalha como [LINK=PROFESSION_PROSTITUTE]prostituta[\LINK] na [LINK=BUILDING_TAVERN]taverna[\LINK] ou em uma de suas atualizações. Homens solitários muitas vezes encontram a felicidade com uma prostituta que também sabe ser uma boa ouvinte. Para a própria prostituta, estar num mundo com cinco homens para cada mulher significa a oportunidade de encontrar o seu próprio marido em vez de ter o casamento arranjado pelos pais.</Portuguese>
 		<French>Les hommes solitaires trouvent souvent le bonheur auprès d'une prostituée qui sait aussi être à l'écoute. Pour la prostituée elle-même, le fait d'être dans un monde où il y a cinq hommes pour chaque femme signifie la possibilité de trouver son propre mari au lieu de voir son mariage arrangé par ses parents.</French>
 		<German>Eine [COLOR_HIGHLIGHT_TEXT]Verführerische Dirne[COLOR_REVERT] verdoppelt die Produktion von [LINK=YIELD_HAPPINESS]Zufriedenheit[\LINK], wenn sie als [LINK=PROFESSION_PROSTITUTE]Prostituierte[\LINK] in der [LINK=BUILDING_TAVERN]Taverne[\LINK] oder einer ihrer Erweiterungen arbeitet.[NEWLINE]Einsame Männer finden oft ihr Glück bei einer Hure, die auch ein guter Zuhörer ist. Für die Hure selbst bedeutet die Tatsache, dass in dieser Welt auf eine Frau fünf Männer kommen, die Chance, ihren eigenen Ehemann zu finden, anstatt von ihren Eltern verheiratet zu werden.</German>
 		<Italian>Gli uomini soli spesso trovano la felicità con una prostituta che sa anche essere una buona ascoltatrice. Per la prostituta stessa, trovarsi in un mondo con cinque uomini per ogni donna significa avere la possibilità di trovarsi un marito da sola, invece di avere un matrimonio combinato dai genitori.</Italian>
@@ -3083,12 +2555,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_JUDGE</Tag>
 		<English>Honourable Judge:Honourable Judges</English>
-		
-		<Portuguese>
-			<Text>Juiz Honrado:Juízes Honrados</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>Juge équitable:Juges équitables</French>
 		<German>
 			<Text>Ehrenwerter Richter:Ehrenwerte Richter</Text>
@@ -3103,12 +2569,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JUDGE</Tag>
 		<English>Honourable Judge:Honourable Judges</English>
-		
-		<Portuguese>
-			<Text>Juiz Honrado:Juízes Honrados</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>Honorable juge:Honorables juges</French>
 		<German>
 			<Text>Ehrenwerter Richter:Ehrenwerte Richter</Text>
@@ -3123,7 +2583,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JUDGE_PEDIA</Tag>
 		<English>A judge presides over court proceedings, hears all the witnesses and any other evidence presented by the barristers or solicitors of the case, assesses the credibility and arguments of the parties, and then issues a ruling in the case based on his interpretation of the law and his own personal judgment. A judge is expected to conduct the trial impartially in an open court.</English>
-		<Portuguese>Um juiz preside o processo judicial, ouve todas as testemunhas e quaisquer outras provas apresentadas pelos advogados ou solicitadores do caso, avalia a credibilidade e os argumentos das partes e, em seguida, emite uma decisão no caso com base na sua interpretação da lei e no seu próprio julgamento pessoal. Espera-se que um juiz conduza o julgamento de forma imparcial em tribunal aberto.</Portuguese>
 		<French>Un juge préside les procédures judiciaires, entend tous les témoins et toute autre preuve présentée par les avocats ou les avoués de l'affaire, évalue la crédibilité et les arguments des parties, puis rend une décision sur l'affaire en se basant sur son interprétation de la loi et son jugement personnel. On attend d'un juge qu'il mène le procès de manière impartiale dans un tribunal ouvert.</French>
 		<German>Ein Richter leitet die Verhandlung, hört alle Zeugen und alle anderen von den Anwälten vorgelegten Beweise an, beurteilt die Glaubwürdigkeit und die Argumente der Parteien und fällt dann auf der Grundlage seiner Rechtsauffassung und seines persönlichen Urteils eine Entscheidung in der Sache. Von einem Richter wird erwartet, dass er die Verhandlung unparteiisch und in öffentlicher Sitzung führt.</German>
 		<Italian>Un giudice presiede il procedimento giudiziario, ascolta tutti i testimoni e qualsiasi altra prova presentata dagli avvocati o dai legali della causa, valuta la credibilità e le argomentazioni delle parti, quindi emette una sentenza sulla base della sua interpretazione della legge e del suo giudizio personale. Il giudice è tenuto a condurre il processo in modo imparziale in un'aula aperta.</Italian>
@@ -3133,7 +2592,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JUDGE_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Honourable judges[COLOR_REVERT] are experts at dispensing justice and therefore, as [LINK=PROFESSION_JUDGE]judges[\LINK], generate twice as much [LINK=YIELD_LAW]justice[\LINK] as free colonists.</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Juízes honrados[COLOR_REVERT] são especialistas em fazer justiça e, portanto, como [LINK=PROFESSION_JUDGE]juízes[\LINK], geram duas vezes mais [LINK=YIELD_LAW]justiça[\LINK] do que os colonos livres.</Portuguese>
 		<French>Les [COLOR_HIGHLIGHT_TEXT]juges équitables[COLOR_REVERT] sont experts à dispenser la justice et de ce fait contribuent deux fois plus au maintien de l'[LINK=YIELD_LAW]ordre[\LINK] en tant que [LINK=PROFESSION_JUDGE]juges[\LINK] qu'un colon libre au même poste.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Ehrenwerte Richter[COLOR_REVERT] sind Experten im Sprechen von Recht und erzeugen daher als [LINK=PROFESSION_JUDGE]Richter[\LINK] doppelt so viel [LINK=YIELD_LAW]Justiz[\LINK] wie freie Kolonisten.</German>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]méltóságos bírók[COLOR_REVERT] az igazságszolgáltatás szakértői, ezért [LINK=PROFESSION_JUDGE]bíróként[\LINK] kétszer annyi [LINK=YIELD_LAW]törvényt[\LINK] állítanak elő, mint a szabad lakosok.</Hungarian>
@@ -3142,12 +2600,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PRISONER_OF_WAR</Tag>
 		<English>Prisoner of War:Prisoners of War</English>
-		
-		<Portuguese>
-			<Text>Prisioneiro de Guerra:Prisioneiros de Guerra</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>Prisonnier de Guerre:Prisonniers de guerre</French>
 		<German>
 			<Text>Kriegsgefangener:Kriegsgefangene</Text>
@@ -3160,12 +2612,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRISONER_OF_WAR</Tag>
 		<English>Prisoner of War:Prisoners of War</English>
-		
-		<Portuguese>
-			<Text>Prisioneiro de Guerra:Prisioneiros de Guerra</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>Prisonnier de Guerre:Prisonniers de guerre</French>
 		<German>
 			<Text>Kriegsgefangener:Kriegsgefangene</Text>
@@ -3178,7 +2624,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_PEDIA</Tag>
 		<English>Prisoners of war, especially officers, are often ransomed. The rank and file are more likely to be released during a prisoner exchange.[NEWLINE]Taking prisoners is a relatively recent idea. During the Trojan War defeated fighters were killed. More recently knights counted on the value of their armour and horse to show that ransoming would be worthwhile. By colonial times capturing a prisoner meant the price his conquerors could expect to receive was the value of his life.</English>
-		<Portuguese>Os prisioneiros de guerra, especialmente os oficiais, são frequentemente resgatados. É mais provável que os soldados rasos sejam libertados durante uma troca de prisioneiros.[NEWLINE]Fazer prisioneiros é uma ideia relativamente recente. Durante a Guerra de Tróia, combatentes derrotados foram mortos. Mais recentemente, os cavaleiros contavam com o valor de suas armaduras e cavalos para mostrar que o resgate valeria a pena. Na época colonial, capturar um prisioneiro significava que o preço que os seus conquistadores podiam esperar receber era o valor da sua vida.</Portuguese>
 		<German>Für Kriegsgefangene, insbesondere für Offiziere, wird oft Lösegeld verlangt. Bei einem Gefangenenaustausch werden eher die einfachen Soldaten freigelassen.[NEWLINE]Die Idee, Gefangene zu nehmen, ist relativ neu. Während des Trojanischen Krieges wurden besiegte Kämpfer getötet. In jüngerer Zeit rechneten Ritter mit dem Wert ihrer Rüstung und ihres Pferdes, um zu zeigen, dass sich ein Lösegeld lohnen würde. In der Kolonialzeit bedeutete die Gefangennahme eines Gefangenen, dass der Preis, den seine Eroberer erwarten konnten, der Wert seines Lebens war.</German>
 		<Russian>когда-нибудь здесь появится описание</Russian>
 		<Hungarian>A hadifoglyokat, különösen a tiszteket, gyakran váltságdíjért engedik szabadon. A közkatonákat inkább fogolycserék során engedik szabadon.[NEWLINE]A foglyok ejtése viszonylag új keletű ötlet. A trójai háborúban a legyőzött harcosokat megölték. Újabban a lovagok a páncéljuk és lovuk értékére támaszkodtak, hogy megmutassák, érdemes váltságdíjat fizetni értük. A gyarmati időkben a fogoly ejtése azt jelentette, hogy a legyőzők az ő életének értékét kaphatták váltságdíjként.</Hungarian>
@@ -3186,7 +2631,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRISONER_OF_WAR_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Prisoners of War[COLOR_REVERT][NEWLINE]Defeated soldiers usually die in battle, but a few are captured to become prisoners of war. They may be ransomed or transferred in a prisoner exchange if the enemy commander is willing to make a deal.</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Prisioneiros de Guerra[COLOR_REVERT][NEWLINE]Soldados derrotados geralmente morrem em batalha, mas alguns são capturados para se tornarem prisioneiros de guerra. Eles podem ser resgatados ou transferidos numa troca de prisioneiros se o comandante inimigo estiver disposto a fazer um acordo.</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Kriegsgefangene[COLOR_REVERT][NEWLINE]Besiegte Soldaten sterben in der Regel in der Schlacht, aber einige wenige werden gefangen genommen und geraten in Kriegsgefangenschaft. Sie können freigekauft oder im Rahmen eines Gefangenenaustauschs übergeben werden, wenn der feindliche Befehlshaber zu einem Deal bereit ist.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
 		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Hadifogoly[COLOR_REVERT][NEWLINE]A legyőzött katonák általában meghalnak a csatában, de néhányukat fogságba ejtik. Választhatnak, hogy váltságdíjat fizetnek értük, vagy fogolycserében átadják őket, ha az ellenséges parancsnok hajlandó megállapodni.</Hungarian>
@@ -3195,12 +2639,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_REVOLTING_PRISONER_OF_WAR</Tag>
 		<English>Rebelling Prisoner of War:Rebelling Prisoners of War</English>
-		
-		<Portuguese>
-			<Text>Prisioneiro Rebelde:Prisioneiros Rebeldes</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>Prisonnier de guerre mutiné:Prisonniers de guerre mutinés</French>
 		<German>
 			<Text>Revoltierender Kriegsgefangener:Revoltierende Kriegsgefangene</Text>
@@ -3213,12 +2651,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR</Tag>
 		<English>Rebelling Prisoner of War:Rebelling Prisoners of War</English>
-		
-		<Portuguese>
-			<Text>Prisioneiro Rebelde:Prisioneiros Rebeldes</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>Prisonnier de guerre mutiné:Prisonniers de guerre mutinés</French>
 		<German>
 			<Text>Revoltierender Kriegsgefangener:Revoltierende Kriegsgefangene</Text>
@@ -3231,7 +2663,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_PEDIA</Tag>
 		<English>Once captured, prisoners of war have a duty as soldiers to escape. The best opportunity is during a riot. While the guards are distracted a few prisoners try to sneak away into the forest.[NEWLINE]If the guards manage to suppress the riot without too much trouble the remaining prisoners may survive, but punishment usually follows.</English>
-		<Portuguese>Uma vez capturados, os prisioneiros de guerra têm o dever de escapar como soldados. A melhor oportunidade é durante um motim. Enquanto os guardas estão distraídos, alguns prisioneiros tentam fugir para a floresta.[NEWLINE]Se os guardas conseguirem suprimir o motim sem muitos problemas, os prisioneiros restantes podem sobreviver, mas a punição geralmente segue.</Portuguese>
 		<German>Nach der Gefangennahme haben Kriegsgefangene als Soldaten die Pflicht, zu fliehen. Die beste Gelegenheit dazu bietet sich während eines Aufstandes. Während die Wachen abgelenkt sind, versuchen einige Gefangene, sich in den Wald zu schleichen.[NEWLINE]Wenn es den Wachen gelingt, den Aufstand ohne größere Schwierigkeiten niederzuschlagen, können die übrigen Gefangenen überleben, aber in der Regel folgt eine Bestrafung.</German>
 		<Russian>когда-нибудь здесь появится описание</Russian>
 		<Hungarian>A hadifoglyok elfogásuk után katonaként kötelesek megszökni. A legjobb alkalom erre egy lázadás során adódik. Amíg az őrök figyelmét eltereli a lázadás, néhány fogoly megpróbál elmenekülni az erdőbe.[NEWLINE]Ha az őröknek sikerül a lázadást túl nagy nehézségek nélkül elfojtani, a megmaradt foglyok túlélhetik, de általában büntetés következik.</Hungarian>
@@ -3239,7 +2670,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_REVOLTING_PRISONER_OF_WAR_STRATEGY</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]Rebelling Prisoners of War[COLOR_REVERT][NEWLINE]If the conditions of their captivity are bad, or if they see an opportunity to escape, prisoners of war will riot. Once they get away they hide in the woods and fight with greater strength than petty criminals, but not as much power as when they were soldiers.</English>
-		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Prisioneiros de guerra rebeldes[COLOR_REVERT][NEWLINE]Se as condições de seu cativeiro forem ruins ou se eles virem uma oportunidade de escapar, os prisioneiros de guerra se revoltarão. Depois de fugirem, eles se escondem na floresta e lutam com mais força do que os pequenos criminosos, mas não com tanto poder como quando eram soldados.</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Revoltierende Kriegsgefangene[COLOR_REVERT][NEWLINE]Wenn die Bedingungen ihrer Gefangenschaft schlecht sind oder wenn sie eine Gelegenheit zur Flucht sehen, werden Kriegsgefangene randalieren. Sobald sie entkommen sind, verstecken sie sich in den Wäldern und kämpfen mit mehr Kraft als Kleinkriminelle, aber nicht mit so viel Kraft wie als Soldaten.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Военнопленные[COLOR_REVERT][NEWLINE]когда-нибудь здесь появится описание</Russian>
 		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Lázadó Hadifogoly[COLOR_REVERT][NEWLINE]Ha fogságuk körülményei rosszak, vagy ha lehetőséget látnak a szökésre, a hadifoglyok lázadnak. Miután megszöktek, az erdőben rejtőznek el, és nagyobb erővel harcolnak, mint a kisstílű bűnözők, de nem annyira, mint amikor katonák voltak.</Hungarian>
@@ -3248,12 +2678,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT</Tag>
 		<English>Eccentric Architect:Eccentric Architects</English>
-		
-		<Portuguese>
-			<Text>Arquiteto Excêntrico:Arquitetos Excêntricos</Text>
-			<Gender>Male</Gender>
-			<Plural>0:1</Plural>
-		</Portuguese>
 		<French>Architecte excentrique:Architectes excentriques</French>
 		<German>
 			<Text>Exzentrischer Architekt:Exzentrische Architekten</Text>
@@ -3266,7 +2690,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT_PEDIA</Tag>
 		<English>The architect is a master builder who accelerates the construction work of a colony. He's the top producer as a carpenter, but is unsuitable for other professions.</English>
-		<Portuguese>O arquiteto é um mestre de obras que acelera as obras de uma colônia. Ele é o maior produtor como carpinteiro, mas não é adequado para outras profissões.</Portuguese>
 		<French>L'architecte est un maître en construction qui excellera dans l'édification des bâtiments de la colonie - dès lors qu'il est affecté à la construction dans un atelier de charpentier, une scierie, ou mieux. Il est inapte à toute autre profession.</French>
 		<German>Der Architekt ist ein Meister der Baukunst, der den Aufbau einer Kolonie wahre Wunder vollbringen wird - solange er in dem Beruf des Zimmermanns arbeitet und ordentlich Hämmer produziert. Für andere Berufe ist er ungeeignet. </German>
 		<Russian>[NEWLINE]Архитектор — мастер-строитель, который отлично подойдет для строительных работ в колонии. Под его началом плотники будут работать лучше, чем после благословения Папы (да простит Господь мне эти слова). Другую профессию назначить ему нельзя.</Russian>
@@ -3275,7 +2698,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ECCENTRIC_ARCHITECT_STRATEGY</Tag>
 		<English>The [COLOR_UNIT_TEXT]eccentric architect[COLOR_REVERT] is a true expert in the art of building - experienced and gifted, he is a visionary; but also a bon vivant and dreamer. As soon as you have built 5 lumber mills or its upgrade, have 5,000[ICON_GOLD] in your treasury, and your colonies have at least 15 citizens the King might send a eccentric architect to the colonies to support construction work there.[PARAGRAPH:1]The [COLOR_UNIT_TEXT]eccentric architect[COLOR_REVERT] is the best [LINK=YIELD_HAMMERS]hammer[\LINK] producer available.[NEWLINE]Assigning the eccentric architect to the [LINK=PROFESSION_CARPENTER]carpenter[\LINK] profession will quadruple the number of [COLOR_HIGHLIGHT_TEXT]hammers[COLOR_REVERT] an average colonist would produce.[NEWLINE]The eccentric architect cannot be hired in [LINK=CONCEPT_EUROPE]Europe[\LINK], and they cannot be [LINK=CONCEPT_TRAINING]educated[\LINK] in a [LINK=BUILDING_UNIVERSITY]university[\LINK] or any of its upgrades. [NEWLINE]In all other professions he suffers severe production penalties. [NEWLINE]Furthermore he is weak so using him as a soldier is not a good idea. [NEWLINE]However, he has a cheerful nature, a love of life and quickly makes friends thanks to his generous lifestyle. He therefore lifts happiness in the colony. Of course this is exactly what gets him into trouble. That could be the reason why the King wanted to get rid of him in the first place, conveniently deporting him to the New World. Keep an eye on him.</English>
-		<Portuguese>O [COLOR_UNIT_TEXT]arquiteto excêntrico[COLOR_REVERT] é um verdadeiro especialista na arte de construir - experiente e talentoso, é um visionário; mas também um bon vivant e sonhador. Assim que você tiver construído 5 serrarias ou sua atualização, tenha 5.000[ICON_GOLD] em seu tesouro e suas colônias tenham pelo menos 15 cidadãos, o Rei pode enviar um arquiteto excêntrico às colônias para apoiar o trabalho de construção lá.[PARAGRAPH:1]O [COLOR_UNIT_TEXT]arquiteto excêntrico[COLOR_REVERT] é o melhor produtor de [LINK=YIELD_HAMMERS]martelos[\LINK] disponível.[NEWLINE]Atribuição o arquiteto excêntrico para a profissão de [LINK=PROFESSION_CARPENTER]carpinteiro[\LINK] quadruplicará o número de [COLOR_HIGHLIGHT_TEXT]martelos[COLOR_REVERT] que um colono médio produziria.[NEWLINE]O arquiteto excêntrico não pode ser contratado na [LINK=CONCEPT_EUROPE]Europa[\LINK] e não pode ser [LINK=CONCEPT_TRAINING]educado[\LINK] em uma [LINK=BUILDING_UNIVERSITY]universidade[\LINK] ou qualquer uma de suas atualizações. [NEWLINE]Em todas as outras profissões ele sofre severas penalidades de produção. [NEWLINE]Além disso, ele é fraco, então usá-lo como soldado não é uma boa ideia. [NEWLINE]No entanto, ele tem uma natureza alegre, um amor pela vida e rapidamente faz amigos graças ao seu estilo de vida generoso. Ele, portanto, eleva a felicidade na colônia. Claro que é exatamente isso que o coloca em apuros. Essa poderia ser a razão pela qual o rei queria se livrar dele, deportando-o convenientemente para o Novo Mundo. Fique de olho nele.</Portuguese>
 		<French>L'architecte excentrique est un véritable expert dans l'art de la construction - doué et avec du métier, c'est l'un des visionnaires de sa guilde, mais aussi un bon vivant et un rêveur. Dès que vous avez construits cinq scieries ou mieux, vous disposez de 5.000[ICON_GOLD], et que vos colonies ont plus de 15 habitants le roi songera à vous envoyer un architecte excentrique dans ses colonies pour accélérer leur construction.[PARAGRAPH:1]The [COLOR_UNIT_TEXT]L'architecte excentrique[COLOR_REVERT] est le meilleur fabricant de [LINK=YIELD_HAMMERS]marteaux[\LINK] disponible. [NEWLINE]Affecter l'architecte excentrique à la profession de [LINK=PROFESSION_CARPENTER]charpentier[\LINK] quadruple la nombre de [COLOR_HIGHLIGHT_TEXT] marteaux[COLOR_REVERT] produit chaque tour comparé à un colon moyen.[NEWLINE]L'architecte excenrique ne peut être embauché en  [LINK=CONCEPT_EUROPE]Europe[\LINK], et ne peut être formé dans votre système éducatif, même dans l'université la plus prestigieuse.[NEWLINE]Dans toutes les autres professions, il souffrira de malus de production très sévères.[NEWLINE]Il est de plus phyisiquement faible, et le faire servir dans l'armée est une mauvaise idée.[NEWLINE]Toutefois, sa nature bonhomme et joviale lui permet de se faire des amis en se montrant généreux dans la vie. Il rendra la colonie plus heureuse par sa présence. Toutefois ceci s'est retourné contre lui; ce pourrait même être la raison pour laquelle le roi l'a envoyé loin, dans le Nouveau Monde. Vous devriez le garder à l'oeil.</French>
 		<German>Der [COLOR_UNIT_TEXT]Exzentrische Architekt[COLOR_REVERT] ist ein wahrer Experte der Baukunst - erfahren, gestählt und begabt ist er ein Visionär seiner Zunft; aber auch ein Lebemann und Träumer. Sobald Ihr 5 Sägewerke oder höhere Gebäudestufen errichtet habt, sich wenigstens 15 Bewohner in den Kolonien befinden und sich 5000[ICON_GOLD] in Eurer Schatzkammer befinden, wird der König darüber nachdenken, diesen Mann in seine Kolonien zu schicken, um den Aufbau der Kolonien zu unterstützen.[PARAGRAPH:1]Der [COLOR_HIGHLIGHT_TEXT]Exzentrische Architekt[COLOR_REVERT] vervierfacht die Anzahl der produzierten [LINK=YIELD_HAMMERS]Hämmer[\LINK] gegenüber einem normalen Bürger, der im Beruf [LINK=PROFESSION_CARPENTER]Zimmermann[\LINK] arbeitet.[PARAGRAPH:2]Für alle anderen Arbeiten ist er jedoch nicht zu gebrauchen und erhält hohe Produktionsmali. Außerdem ist er schwach, so dass er nicht zum Soldaten taugt. [NEWLINE]Er ist jedoch auch eine Frohnatur und Lebenmann, der sich in der Kolonie durch seinen freigebigen Lebensstil schnell Freunde machen wird. Er hebt daher die Stimmung in der Kolonie. Allerdings bringt ihm genau das auch Schwierigkeiten ein. Es könnte ein Grund sein, warum der König gerade diesen Mann loswerden und in die neue Welt abschieben wollte. Ihr solltet ihn im Auge behalten.</German>
 		<Russian>[NEWLINE][COLOR_UNIT_TEXT]Эксцентричный архитектор[COLOR_REVERT] — настоящий эксперт в строительном искусстве: опытный и одаренный, он суровый руководитель своей гильдии; но в то же время весельчак и мечтатель. Как только вы построите несколько [LINK=BUILDING_LUMBER_MILL]плотницких цехов[\LINK] или зданий более высокого класса, в казне будет достаточно [ICON_GOLD], а в колониях соберётся большое количество жителей, Король подумает о том, чтобы отправить лучшего из своих архитекторов в Новый Свет для поддержки строительных работ.[NEWLINE][COLOR_UNIT_TEXT]Эксцентричный архитектор[COLOR_REVERT] – лучший из доступных [LINK=YIELD_HAMMERS]строителей[\LINK].[NEWLINE][NEWLINE]Назначение Эксцентричному архитектору профессии [LINK=PROFESSION_CARPENTER]плотник[\LINK] в четыре раза увеличит количество [COLOR_HIGHLIGHT_TEXT]молотков[COLOR_REVERT], которые производит средний колонист.[NEWLINE][NEWLINE]Эксцентричного архитектора нельзя нанять в [LINK=CONCEPT_EUROPE]Европе[\LINK], его нельзя [LINK=CONCEPT_TRAINING]обучить[\LINK] даже в [LINK=BUILDING_UNIVERSITY]университете[\LINK], не говоря уже о более низших учебных заведениях.[NEWLINE]Во всех остальных профессиях он подвергается серьезным производственным штрафам.[NEWLINE][NEWLINE]Кроме того, он довольно слаб для несения военной службы, поэтому использовать его в качестве солдата — не лучшая идея.[NEWLINE][NEWLINE]Однако это жизнерадостный человек с веселой натурой, который благодаря своему щедрому образу жизни быстро найдет друзей в колониях. Одним словом, он точно поднимет уровень счастья там, где вы прикажете ему поселиться. Однако именно эта черта и доставляет ему большинство неприятностей. Возможно, это могло стать причиной того, что Король захотел избавиться от этого человека и депортировать его в Новый Мир. Нам следует приглядывать за ним.</Russian>

@@ -54,13 +54,17 @@ class CvDiplomacy:
 
 			# We say hi and begin our peace
 			self.addUserComment("USER_DIPLOCOMMENT_PEACE", -1, -1)
-			self.addDeclareWarCommentIfValid()
+
+			# if you are on different teams and NOT at war, give the user the option to declare war
+			#if (gc.getTeam(gc.getGame().getActiveTeam()).canDeclareWar(gc.getPlayer(self.diploScreen.getWhoTradingWith()).getTeam())):
+			#	self.addUserComment("USER_DIPLOCOMMENT_WAR", -1, -1)
+
 			self.diploScreen.endTrade()
 
 		# The AI refuses to talk
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_REFUSE_TO_TALK") ):
 
-			self.addDeclareWarCommentIfValid()
+			# Give the option to exit
 			self.addUserComment("USER_DIPLOCOMMENT_EXIT", -1, -1)
 			self.diploScreen.endTrade();
 
@@ -624,7 +628,11 @@ class CvDiplomacy:
 			self.diploScreen.startTrade( eComment, False )
 
 		elif (self.isComment(eComment, "AI_DIPLOCOMMENT_SOMETHING_ELSE")):
-			self.addDeclareWarCommentIfValid()
+			if (gc.getTeam(gc.getGame().getActiveTeam()).canDeclareWar(gc.getPlayer(self.diploScreen.getWhoTradingWith()).getTeam())):
+				if gc.getTeam(gc.getPlayer(self.diploScreen.getWhoTradingWith()).getTeam()).isParentOf(gc.getGame().getActiveTeam()):
+					self.addUserComment("USER_DIPLOCOMMENT_REVOLUTION", -1, -1)
+				else:
+					self.addUserComment("USER_DIPLOCOMMENT_WAR", -1, -1)
 
 			self.addUserComment("USER_DIPLOCOMMENT_ATTITUDE", -1, -1)
 			if (gc.getTeam(gc.getGame().getActiveTeam()).AI_shareWar(gc.getPlayer(self.diploScreen.getWhoTradingWith()).getTeam())):
@@ -684,7 +692,8 @@ class CvDiplomacy:
 				self.addUserComment("USER_DIPLOCOMMENT_CURRENT_DEALS", -1, -1)
 
 			if (gc.getTeam(gc.getPlayer(self.diploScreen.getWhoTradingWith()).getTeam())).isParentOf(gc.getGame().getActiveTeam()):
-				self.addDeclareWarCommentIfValid()
+				if (gc.getTeam(gc.getGame().getActiveTeam()).canDeclareWar(gc.getPlayer(self.diploScreen.getWhoTradingWith()).getTeam())):
+					self.addUserComment("USER_DIPLOCOMMENT_REVOLUTION", -1, -1)
 
 				if (not gc.getTeam(gc.getGame().getActiveTeam()).isAtWar(gc.getPlayer(self.diploScreen.getWhoTradingWith()).getTeam())):
 					self.addUserComment("USER_DIPLOCOMMENT_BUY_UNITS", -1, -1)
@@ -702,16 +711,6 @@ class CvDiplomacy:
 			# Exit potential
 			self.addUserComment("USER_DIPLOCOMMENT_EXIT", -1, -1)
 			self.diploScreen.endTrade();
-
-	def addDeclareWarCommentIfValid(self):
-		eActiveTeam = gc.getGame().getActiveTeam()
-		eOtherTeam = gc.getPlayer(self.diploScreen.getWhoTradingWith()).getTeam()
-		if not gc.getTeam(eActiveTeam).canDeclareWar(eOtherTeam):
-			return
-		if gc.getTeam(eOtherTeam).isParentOf(eActiveTeam):
-			self.addUserComment("USER_DIPLOCOMMENT_REVOLUTION", -1, -1)
-		else:
-			self.addUserComment("USER_DIPLOCOMMENT_WAR", -1, -1)
 
 	def addUserComment(self, eComment, iData1, iData2, *args):
 		" Helper for adding User Comments "

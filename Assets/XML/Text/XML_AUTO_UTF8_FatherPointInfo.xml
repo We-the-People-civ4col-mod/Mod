@@ -3,12 +3,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_POINT_EXPLORATION</Tag>
 		<English>Exploration Points</English>
-		
-		<Portuguese>
-			<Text>Pontos de Exploração</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>points d'exploration</French>
 		<German>Erkundungspunkte</German>
 		<Italian>
@@ -26,12 +20,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_POINT_MILITARY</Tag>
 		<English>Military Points</English>
-		
-		<Portuguese>
-			<Text>Pontos Militares</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>points militaires</French>
 		<German>Militärpunkte</German>
 		<Italian>
@@ -49,12 +37,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_POINT_POLITICAL</Tag>
 		<English>Political Points</English>
-		
-		<Portuguese>
-			<Text>Pontos Políticos</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>points politiques</French>
 		<German>Politikpunkte</German>
 		<Italian>
@@ -72,12 +54,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_POINT_RELIGION</Tag>
 		<English>Religion Points</English>
-		
-		<Portuguese>
-			<Text>Pontos de Religião</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>points de religion</French>
 		<German>Religionspunkte</German>
 		<Italian>
@@ -95,12 +71,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_POINT_TRADE</Tag>
 		<English>Trade Points</English>
-		
-		<Portuguese>
-			<Text>Pontos Comerciais</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>points de commerce</French>
 		<German>Handelspunkte</German>
 		<Italian>

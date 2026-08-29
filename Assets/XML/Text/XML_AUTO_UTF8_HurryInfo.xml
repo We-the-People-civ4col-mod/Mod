@@ -3,7 +3,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_HURRY_GOLD</Tag>
 		<English>Can spend gold to finish production in a settlement</English>
-		<Portuguese>Pode gastar ouro para terminar a produção em uma colônia</Portuguese>
 		<French>Peut dépenser de l'or pour finir la production dans une colonie.</French>
 		<German>Kann die Produktion in einer Siedlung durch die Zahlung von Gold vollenden</German>
 		<Italian>Permette di spendere oro per terminare la produzione in un insediamento</Italian>
@@ -13,7 +12,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_HURRY_IMMIGRANT</Tag>
 		<English>Can spend gold to make an immigrant appear instantly at the European docks</English>
-		<Portuguese>Pode gastar ouro para fazer um imigrante aparecer instantaneamente nas docas europeias</Portuguese>
 		<French>Peut dépenser de l'or pour qu'un immigrant apparaisse instantanément sur les quais européens.</French>
 		<German>Kann Gold ausgeben, damit sofort ein Immigrant an den Docks in Europa erscheint</German>
 		<Italian>Puoi usare dell'oro per far comparire istantaneamente un immigrante sui moli europei</Italian>

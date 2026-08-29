@@ -3,7 +3,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_ANONYMOUS</Tag>
 		<English>Anonymous</English>
-		<Portuguese>Anônimo</Portuguese>
 		<French>Anonymes</French>
 		<German>Anonym</German>
 		<Italian>Anonimo</Italian>
@@ -12,7 +11,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_ANONYMOUS_HELP</Tag>
 		<English>The true identity of all leaders is hidden</English>
-		<Portuguese>A verdadeira identidade de todos os líderes está oculta</Portuguese>
 		<French>La véritable identité des différents chefs reste cachée.</French>
 		<German>Die wahre Identität aller Herrscher bleibt verborgen.</German>
 		<Italian>La vera identità dei leader è nascosta</Italian>
@@ -21,7 +19,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_SHUFFLE_TEAMS</Tag>
 		<English>Shuffle Teams</English>
-		<Portuguese>Embaralhar equipes</Portuguese>
 		<French>Mélanger les équipes</French>
 		<German>Zufällige Teams</German>
 		<Italian>Mescola le squadre</Italian>
@@ -30,7 +27,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_SHUFFLE_TEAMS_HELP</Tag>
 		<English>The human members of each team will be randomly reassigned upon game launch</English>
-		<Portuguese>Os membros humanos de cada equipe serão reatribuídos aleatoriamente no início do jogo</Portuguese>
 		<French>À chaque lancement de partie, la répartition par équipe des joueurs humains sera tirée au sort.</French>
 		<German>Bei jedem Spielstart erfolgt eine zufällige Teamzuweisung der menschlichen Spieler.</German>
 		<Italian>I membri umani delle squadre verranno riassegnati casualmente all'avvio della partita</Italian>
@@ -39,7 +35,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_SIMULTANEOUS_TURNS</Tag>
 		<English>Simultaneous Turns</English>
-		<Portuguese>Voltas Simultâneas</Portuguese>
 		<French>Tours simultanés</French>
 		<German>Simultanrunden</German>
 		<Italian>Turni simultanei</Italian>
@@ -48,7 +43,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_SIMULTANEOUS_TURNS_HELP</Tag>
 		<English>All players conduct their turns at the same time</English>
-		<Portuguese>Todos os jogadores realizam seus turnos ao mesmo tempo</Portuguese>
 		<French>Tous les joueurs jouent leurs tours en même temps.</French>
 		<German>Alle Spieler führen ihre Runden gleichzeitig aus</German>
 		<Italian>Tutti i giocatori effettuano il proprio turno contemporaneamente</Italian>
@@ -57,7 +51,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_TAKEOVER_AI</Tag>
 		<English>Take over AI</English>
-		<Portuguese>Assuma o controle da IA</Portuguese>
 		<French>Prendre le contrôle d'une IA</French>
 		<German>KI übernehmen</German>
 		<Italian>Prendi il controllo della IA</Italian>
@@ -66,7 +59,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_TAKEOVER_AI_HELP</Tag>
 		<English>Players can "hot-join" into an AI player's slot at any time</English>
-		<Portuguese>Os jogadores podem fazer "hot-join" no slot de um jogador de IA a qualquer momento</Portuguese>
 		<French>Les joueurs peuvent rejoindre une partie à la volée à la place d'un joueur géré par l'IA.</French>
 		<German>Spieler können sich jederzeit im Schnellverfahren einem KI-Spieler anschließen</German>
 		<Italian>I giocatori possono "prendere il posto" di quelli gestiti dall'IA in qualsiasi momento</Italian>
@@ -75,7 +67,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_TURN_TIMER</Tag>
 		<English>Turn Timer</English>
-		<Portuguese>Turn Timer</Portuguese>
 		<French>Chrono tour</French>
 		<German>Rundenzähler</German>
 		<Italian>Timer del turno</Italian>
@@ -84,7 +75,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_MP_OPTION_TURN_TIMER_HELP</Tag>
 		<English>Turns are limited by a timer which scales based on the size of the largest colony</English>
-		<Portuguese>Os turnos são limitados por um cronômetro que é dimensionado com base no tamanho da maior colônia</Portuguese>
 		<French>Le temps de chaque tour est limité en fonction de la taille de la plus grande colonie.</French>
 		<German>Die Rundenzeit wird durch einen Timer bestimmt, der sich an der Ausdehnung der größten Kolonie orientiert</German>
 		<Italian>I turni sono limitati da un conto alla rovescia basato sulla dimensione della colonia più grossa</Italian>

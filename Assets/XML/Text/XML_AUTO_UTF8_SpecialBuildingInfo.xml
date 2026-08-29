@@ -3,7 +3,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_BEER</Tag>
 		<English>Beer production</English>
-		<Portuguese>Cervejarias</Portuguese>
 		<French>Production de bière</French>
 		<German>Brauereien</German>
 		<Italian>Beerproduction</Italian>
@@ -12,12 +11,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_BELLS</Tag>
 		<English>Liberty Bell Buildings</English>
-		
-		<Portuguese>
-			<Text>Edifícios dos Sinos da Liberdade</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Bâtiments dédiés aux Cloches de la liberté</Text>
 			<Gender>Male</Gender>
@@ -38,12 +31,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CIGARS</Tag>
 		<English>Cigar Buildings</English>
-		
-		<Portuguese>
-			<Text>Tabacaria</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Bâtiments dédiés aux Cigares</Text>
 			<Gender>Male</Gender>
@@ -64,12 +51,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CLOTH</Tag>
 		<English>Cloth Buildings</English>
-		
-		<Portuguese>
-			<Text>Tecelagem</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Bâtiments dédiés aux Tissus</Text>
 			<Gender>Male</Gender>
@@ -90,12 +71,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_COATS</Tag>
 		<English>Coat Buildings</English>
-		
-		<Portuguese>
-			<Text>Fábrica de casacos</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Bâtiments dédiés aux Manteaux</Text>
 			<Gender>Male</Gender>
@@ -116,7 +91,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_COLOURED_CLOTH</Tag>
 		<English>Dyery</English>
-		<Portuguese>Tinturaria</Portuguese>
 		<French>Teinturerie</French>
 		<German>Färbereien</German>
 		<Italian>Dyery</Italian>
@@ -125,7 +99,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CORN</Tag>
 		<English>Corn Chamber</English>
-		<Portuguese>Celeiro de milho</Portuguese>
 		<French>Grenier à maïs</French>
 		<German>Getreidekammer</German>
 		<Italian>Corn</Italian>
@@ -134,12 +107,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CROSSES</Tag>
 		<English>Religious Buildings</English>
-		
-		<Portuguese>
-			<Text>Edifícios religiosos</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Bâtiments religieux</Text>
 			<Gender>Male</Gender>
@@ -160,12 +127,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_DEFENSE</Tag>
 		<English>Fortress</English>
-		
-		<Portuguese>
-			<Text>Fortaleza</Text>
-			<Gender>Female</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Forteresse</Text>
 			<Gender>Female</Gender>
@@ -180,12 +141,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_DOCK</Tag>
 		<English>Docks</English>
-		
-		<Portuguese>
-			<Text>Docas</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Quais</Text>
 			<Gender>Male</Gender>
@@ -206,12 +161,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_EDUCATION</Tag>
 		<English>Education Buildings</English>
-		
-		<Portuguese>
-			<Text>Edifícios de educação</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Bâtiments éducatifs</Text>
 			<Gender>Male</Gender>
@@ -232,7 +181,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_FURNITURE</Tag>
 		<English>Furniture Production</English>
-		<Portuguese>Marcenaria</Portuguese>
 		<French>Fabrication des Meubles</French>
 		<German>Möbelherstellung</German>
 		<Italian>Furnitureproduction</Italian>
@@ -241,12 +189,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_HAMMERS</Tag>
 		<English>Carpentry Buildings</English>
-		
-		<Portuguese>
-			<Text>Carpintarias</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Bâtiments de charpenterie</Text>
 			<Gender>Male</Gender>
@@ -267,7 +209,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_HEALTH</Tag>
 		<English>Medical Care</English>
-		<Portuguese>Cuidados Médicos</Portuguese>
 		<French>Soins médicaux</French>
 		<German>Medizinische Versorgung</German>
 		<Italian>Medical Care</Italian>
@@ -276,12 +217,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_HORSES</Tag>
 		<English>Horse Buildings</English>
-		
-		<Portuguese>
-			<Text>Estábulos</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Bâtiments d'élevage de chevaux</Text>
 			<Gender>Male</Gender>
@@ -302,7 +237,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_LEATHER</Tag>
 		<English>Leather Production</English>
-		<Portuguese>Curtume</Portuguese>
 		<French>Fabrique du Cuir</French>
 		<German>Lederproduktion</German>
 		<Italian>Leatherproduction</Italian>
@@ -311,12 +245,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_MEAT</Tag>
 		<English>Slaughterhouse</English>
-		
-		<Portuguese>
-			<Text>Matadouro</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Abattoirs</Text>
 			<Gender>Male</Gender>
@@ -329,7 +257,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_MILL</Tag>
 		<English>Mill</English>
-		<Portuguese>Moinho</Portuguese>
 		<French>Moulin</French>
 		<German>Mühle</German>
 		<Italian>Mill</Italian>
@@ -338,12 +265,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_MUSKETS</Tag>
 		<English>Armoury Buildings</English>
-		
-		<Portuguese>
-			<Text>Armarias</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Bâtiments d'armurerie</Text>
 			<Gender>Male</Gender>
@@ -364,7 +285,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_PRINT</Tag>
 		<English>Printing Buildings</English>
-		<Portuguese>Imprensas</Portuguese>
 		<French>Bâtiments d'imprimerie</French>
 		<German>Druckereien</German>
 		<Italian>Edifici per la stampa</Italian>
@@ -373,12 +293,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_RUM</Tag>
 		<English>Rum Buildings</English>
-		
-		<Portuguese>
-			<Text>Destilarias</Text>
-			<Gender>Male</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Bâtiments des alcools distillés</Text>
 			<Gender>Male</Gender>
@@ -399,7 +313,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_SPICES</Tag>
 		<English>Spice Trading</English>
-		<Portuguese>Comércio de especiarias</Portuguese>
 		<French>Commerce des Épices et du Sel</French>
 		<German>Gewürzhandel</German>
 		<Italian>Spicetrading</Italian>
@@ -408,7 +321,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_TAVERN</Tag>
 		<English>Tavern</English>
-		<Portuguese>Taberna</Portuguese>
 		<French>Taverne</French>
 		<German>Taverne</German>
 		<Italian>Tavern</Italian>
@@ -417,12 +329,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_TOOLS</Tag>
 		<English>Tools Buildings</English>
-		
-		<Portuguese>
-			<Text>Oficinas de ferramentas</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Bâtiments dédiés aux Outils</Text>
 			<Gender>Male</Gender>
@@ -443,7 +349,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_TRADE</Tag>
 		<English>Trade</English>
-		<Portuguese>Comércio</Portuguese>
 		<French>Commerce</French>
 		<German>Handel</German>
 		<Italian>Trade</Italian>
@@ -452,7 +357,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_TRAIN_STATION</Tag>
 		<English>Waystation</English>
-		<Portuguese>Posto de troca</Portuguese>
 		<French>Relais de poste</French>
 		<German>Postreiter- und Pferdewechselstation</German>
 		<Italian>Waystation</Italian>
@@ -461,12 +365,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_WALLS</Tag>
 		<English>Fortifications</English>
-		
-		<Portuguese>
-			<Text>Fortificações</Text>
-			<Gender>Female</Gender>
-			<Plural>1</Plural>
-		</Portuguese>
 		<French>
 			<Text>Fortifications</Text>
 			<Gender>Female</Gender>
@@ -487,12 +385,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_WAREHOUSE</Tag>
 		<English>Warehouses</English>
-		
-		<Portuguese>
-			<Text>Armazéns</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Entrepôt:Entrepôts</Text>
 			<Gender>Male</Gender>
@@ -513,7 +405,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_WELL</Tag>
 		<English>Water Well</English>
-		<Portuguese>Poço</Portuguese>
 		<French>Puits à eau</French>
 		<German>Brunnen</German>
 		<Italian>Water Well</Italian>
@@ -522,7 +413,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_WHALE_OIL</Tag>
 		<English>Train Oil Production</English>
-		<Portuguese>Produção de óleo de baleia</Portuguese>
 		<French>Production d'Huile de baleine</French>
 		<German>Walfettverarbeitung</German>
 		<Italian>Whaleoilproduction</Italian>
@@ -531,7 +421,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_WINE</Tag>
 		<English>Wine Production</English>
-		<Portuguese>Adegas</Portuguese>
 		<French>Production de Vin</French>
 		<German>Kellereien</German>
 		<Italian>Wineproduction</Italian>

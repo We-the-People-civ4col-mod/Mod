@@ -2224,16 +2224,11 @@ void CvGame::selectionListMove(CvPlot* pPlot, bool bAlt, bool bShift, bool bCtrl
 
 		eRivalTeam = pSelectedUnit->getDeclareWarUnitMove(pPlot);
 
-		// cargo ships skip. troop ships still ask for Europeans.
+		// Erik: No annoying popup for transport units
+		// WTP, ray, unless it is a "Troop only" ship
+		//if (pSelectedUnit->cargoSpace() == 0 && eRivalTeam != NO_TEAM)
 		if (eRivalTeam != NO_TEAM && (pSelectedUnit->cargoSpace() == 0 || pSelectedUnit->getUnitInfo().isTroopShip()))
 		{
-			const PlayerTypes eRivalLeader = GET_TEAM(eRivalTeam).getLeaderID();
-			// natives: no ask, no auto-war. just MOVE_TO. war stays on the diplomacy screen.
-			if (eRivalLeader != NO_PLAYER && GET_PLAYER(eRivalLeader).isNative())
-			{
-				break;
-			}
-
 			CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_DECLAREWARMOVE);
 			if (NULL != pInfo)
 			{

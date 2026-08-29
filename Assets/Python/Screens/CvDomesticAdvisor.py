@@ -347,79 +347,6 @@ class CvDomesticAdvisor:
 			screen.show(self.StatePages[self.CurrentState][self.CurrentPage] + "ListBackground")
 		self.updateAppropriateCitySelection()
 
-	def productionNeedsCargo(self, pCity, iType, bBuilding):
-		pPlayer = gc.getPlayer(pCity.getOwner())
-		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
-			if not gc.getYieldInfo(iYield).isCargo():
-				continue
-			if bBuilding:
-				iNeeded = pPlayer.getBuildingYieldProductionNeeded(iType, iYield)
-			else:
-				iNeeded = pPlayer.getUnitYieldProductionNeeded(iType, iYield)
-			if iNeeded > pCity.getYieldStored(iYield) + pCity.getYieldRushed(iYield):
-				return True
-		return False
-
-	def getWaitingProductionNames(self, pCity):
-		# WTP keeps hammers when production is switched.
-		# Only list parked buildings/units whose required hammer production is complete
-		# and whose production can still be continued by this city.
-		pPlayer = gc.getPlayer(pCity.getOwner())
-		aNames = []
-		iCurrentBuilding = -1
-		iCurrentUnit = -1
-
-		if pCity.isProductionBuilding():
-			iCurrentBuilding = pCity.getProductionBuilding()
-		elif pCity.isProductionUnit():
-			iCurrentUnit = pCity.getProductionUnit()
-
-		for iBuilding in range(gc.getNumBuildingInfos()):
-			if iBuilding == iCurrentBuilding:
-				continue
-			if pCity.isHasBuilding(iBuilding):
-				continue
-
-			iProduction = pCity.getBuildingProduction(iBuilding)
-			if iProduction <= 0:
-				continue
-
-			iNeeded = pPlayer.getBuildingYieldProductionNeeded(iBuilding, YieldTypes.YIELD_HAMMERS)
-			if iProduction < iNeeded:
-				continue
-
-			if not pCity.canConstruct(iBuilding, True, False, True):
-				continue
-
-			szName = gc.getBuildingInfo(iBuilding).getDescription()
-			if self.productionNeedsCargo(pCity, iBuilding, True):
-				szName = "<color=255,0,0>" + szName + "</color>"
-
-			aNames.append(szName)
-
-		for iUnit in range(gc.getNumUnitInfos()):
-			if iUnit == iCurrentUnit:
-				continue
-
-			iProduction = pCity.getUnitProduction(iUnit)
-			if iProduction <= 0:
-				continue
-
-			iNeeded = pPlayer.getUnitYieldProductionNeeded(iUnit, YieldTypes.YIELD_HAMMERS)
-			if iProduction < iNeeded:
-				continue
-
-			if not pCity.canTrain(iUnit, True, False):
-				continue
-
-			szName = gc.getUnitInfo(iUnit).getDescription()
-			if self.productionNeedsCargo(pCity, iUnit, False):
-				szName = "<color=255,0,0>" + szName + "</color>"
-
-			aNames.append(szName)
-
-		return aNames
-
 	def updateCityTable(self, pLoopCity, i):
 		screen = CyGInterfaceScreen( "DomesticAdvisor", CvScreenEnums.DOMESTIC_ADVISOR )
 
@@ -472,25 +399,7 @@ class CvDomesticAdvisor:
 			elif (pLoopCity.getCityHealth() < 0):
 				screen.setTableInt(szState + "ListBackground", 16, i, "<font=2>" + "<color=255,0,0>" +unicode(pLoopCity.getCityHealth()) + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 			# Producing
-			# Ellestar: red if the current build/unit is missing cargo.
-			# 2. parked production with stored hammers is listed in red too.
-			szName = pLoopCity.getProductionName()
-			szText = u""
-			if szName != "":
-				szText = szName + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")"
-			bCurrentNeedsCargo = False
-			if pLoopCity.isProductionBuilding():
-				bCurrentNeedsCargo = self.productionNeedsCargo(pLoopCity, pLoopCity.getProductionBuilding(), True)
-			elif pLoopCity.isProductionUnit():
-				bCurrentNeedsCargo = self.productionNeedsCargo(pLoopCity, pLoopCity.getProductionUnit(), False)
-			if bCurrentNeedsCargo and szText != "":
-				szText = "<color=255,0,0>" + szText + "</color>"
-			aWaiting = self.getWaitingProductionNames(pLoopCity)
-			if len(aWaiting) > 0:
-				if szText != "":
-					szText = szText + " "
-				szText = szText + "[" + u", ".join(aWaiting) + "]"
-			screen.setTableText(szState + "ListBackground", 17, i, "<font=2>" + szText + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
+			screen.setTableText(szState + "ListBackground", 17, i, "<font=2>" + pLoopCity.getProductionName() + " (" + str(pLoopCity.getGeneralProductionTurnsLeft()) + ")" + "</font>", "", WidgetTypes.WIDGET_GENERAL, -1, -1, CvUtil.FONT_LEFT_JUSTIFY )
 
 		elif(self.CurrentState == self.PRODUCTION_STATE):
 			start = self.YieldStart()

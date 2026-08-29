@@ -3,7 +3,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_DOMINATION</Tag>
 		<English>Domination</English>
-		<Portuguese>Dominação</Portuguese>
 		<French>Suprématie</French>
 		<German>Vorherrschaft</German>
 		<Italian>Supremazia</Italian>
@@ -13,7 +12,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_DOMINATION_PEDIA</Tag>
 		<English>In colonial times European powers struggled for supremacy in the New World. This mod, "We The People", explores that colonization history. You will negotiate with or struggle against Native nations and other European colonies, working to establish the most successful nation the New World has ever seen.</English>
-		<Portuguese>Nos tempos coloniais, as potências europeias lutaram pela supremacia no Novo Mundo. Este mod, "We The People", explora a história da colonização. Você negociará ou lutará contra as nações nativas e outras colônias europeias, trabalhando para estabelecer a nação mais bem-sucedida que o Novo Mundo já viu.</Portuguese>
 		<French>Dans les temps coloniaux, les puissances européennes luttaient pour la suprématie dans le Nouveau Monde. Le mod "We The People" évoque cette histoire coloniale : combattez vos rivaux européens et indigènes, ou négociez avec eux, pour implanter la plus grande nation que le Nouveau Monde ait jamais connue.</French>
 		<German>Über 300 Jahre kämpften die Europäischen Mächte um die Vorherrschaft in der Neuen Welt. Dieser Mod, "We The People", erlaubt Ihnen das Erleben der Kolonialisierungsgeschichte. Sie werden mit den Ureinwohnern und anderen europäischen Kolonien verhandeln oder gegen sie kämpfen müssen, während Sie daran arbeiten, die erfolgreichste Nation zu gründen, die die Neue Welt je gesehen hat.</German>
 		<Italian>In epoca coloniale le potenze europee lottavano per la supremazia nel Nuovo Mondo. Questo mod, "We The People", esplora la storia della colonizzazione. Potrete negoziare o lottare contro le nazioni native e altre colonie europee, lavorando per stabilire la nazione di maggior successo che il Nuovo Mondo abbia mai visto.</Italian>
@@ -23,7 +21,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_PRODUCTION</Tag>
 		<English>Industrialisation</English>
-		<Portuguese>Industrialização</Portuguese>
 		<French>Industrialisation</French>
 		<German>Industrialisierung</German>
 		<Italian>Industrializzazione</Italian>
@@ -33,7 +30,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_PRODUCTION_PEDIA</Tag>
 		<English>Start the Industrial Revolution (production rate of 10 000 yields per turn)</English>
-		<Portuguese>Iniciar a Revolução Industrial (taxa de produção de 10.000 recursos por turno)</Portuguese>
 		<French>Commencez la Révolution Industrielle (taux de production de 10 000 par tour).</French>
 		<German>Leitet die Industrielle Revolution ein (Produktion : 10.000 pro Runde)</German>
 		<Italian>Iniziare la rivoluzione industriale (tasso di produzione per turno)</Italian>
@@ -43,7 +39,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_REVOLUTION</Tag>
 		<English>Independence</English>
-		<Portuguese>Independência</Portuguese>
 		<French>Indépendance</French>
 		<German>Unabhängigkeit</German>
 		<Italian>Indipendenza</Italian>
@@ -53,7 +48,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_REVOLUTION_PEDIA</Tag>
 		<English>For over 300 years, the European powers fought for supremacy in the New World. You have the opportunity to intervene decisively. Prove yourself in battles against the Natives and the other colonial powers, stand up to your King and his expeditionary corps in the War of Independence and lead your nation to independence.</English>
-		<Portuguese>Durante mais de 300 anos, as potências europeias lutaram pela supremacia no Novo Mundo. Você tem a oportunidade de intervir decisivamente. Prove seu valor em batalhas contra os nativos e outras potências coloniais, enfrente seu rei e seu corpo expedicionário na Guerra da Independência e leve sua nação à independência.</Portuguese>
 		<French>Pendant plus de 300 ans, les puissances européennes se sont battues pour la suprématie dans le Nouveau Monde. Vous avez la possibilité d'intervenir de manière décisive : faites vos preuves dans les batailles contre les indigènes et les autres puissances coloniales, tenez tête à votre roi et à son corps expéditionnaire pour mener votre nation à l'indépendance.</French>
 		<German>Über 300 Jahre kämpften die Europäischen Mächte um die Vorherrschaft in der Neuen Welt. Ihr habt die Möglichkeit, dabei entscheidend einzugreifen. Bewährt Euch in Kämpfen gegen die Ureinwohner und die anderen Kolonialmächte, setzt Euch im Unabhängigkeitskrieg gegen Euren König und sein Expeditionskorps durch und führt Eure Nation in die Unabhängigkeit.</German>
 		<Italian>Per oltre 300 anni, le potenze europee hanno combattuto per la supremazia nel Nuovo Mondo. Avete l'opportunità di intervenire con decisione. Mettiti alla prova nelle battaglie contro i nativi e le altre potenze coloniali, tieni testa al tuo re e al suo corpo di spedizione nella guerra d'indipendenza e guida la tua nazione all'indipendenza.</Italian>
@@ -63,7 +57,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_SCORE</Tag>
 		<English>Score</English>
-		<Portuguese>Pontuação</Portuguese>
 		<French>Score</French>
 		<German>Punktestand</German>
 		<Italian>A punti</Italian>
@@ -77,7 +70,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_TIME</Tag>
 		<English>Score Victory after Turn Limit</English>
-		<Portuguese>Obtenha a vitória após o limite do turno</Portuguese>
 		<French>Victoire au score une fois la limite de tours atteinte.</French>
 		<German>Punktesieg nach Rundenlimit</German>
 		<Italian>Punteggio della vittoria dopo il limite del turno</Italian>

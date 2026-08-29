@@ -77,9 +77,7 @@ class CvMilitaryAdvisor:
 		self.LEADER_BUTTON_SIZE = 64
 		self.LEADER_MARGIN = 12
 
-		# 1. F5 used to open on Sort by Profession. Sort by Unit is what you
-		#    actually want most of the time (SKILL_GROUP_ID = unit type).
-		self.GROUPING_SELECTION = self.SKILL_GROUP_ID
+		self.GROUPING_SELECTION = self.PROFESSION_GROUP_ID
 
 		self.GROUP_TOGGLE = 100
 		self.UNIT_TOGGLE = 200
@@ -143,7 +141,7 @@ class CvMilitaryAdvisor:
 		screen.addPullDownString(self.groupSelectionName, localText.getText("TXT_KEY_UNIT_ADVISOR_PROFESSION_SORT", ()), self.PROFESSION_GROUP_ID, self.PROFESSION_GROUP_ID, False)
 		screen.addPullDownString(self.groupSelectionName, localText.getText("TXT_KEY_UNIT_ADVISOR_OWNER_SORT", ()), self.OWNER_GROUP_ID, self.OWNER_GROUP_ID, False)
 		screen.addPullDownString(self.groupSelectionName, localText.getText("TXT_KEY_UNIT_ADVISOR_STACK_SORT", ()), self.STACK_GROUP_ID, self.STACK_GROUP_ID, False)
-		screen.addPullDownString(self.groupSelectionName, localText.getText("TXT_KEY_UNIT_ADVISOR_SKILL_SORT", ()), self.SKILL_GROUP_ID, self.SKILL_GROUP_ID, True)
+		screen.addPullDownString(self.groupSelectionName, localText.getText("TXT_KEY_UNIT_ADVISOR_SKILL_SORT", ()), self.SKILL_GROUP_ID, self.SKILL_GROUP_ID, False)
 		screen.addPullDownString(self.groupSelectionName, localText.getText("TXT_KEY_UNIT_ADVISOR_TERRITORY_SORT", ()), self.LOCATION_GROUP_ID, self.LOCATION_GROUP_ID, False)
 
 		self.szHeader = self.getNextWidgetName()

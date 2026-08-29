@@ -3,12 +3,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALUNIT_YIELD_CARGO</Tag>
 		<English>Goods</English>
-		
-		<Portuguese>
-			<Text>Bens</Text>
-			<Gender>Male</Gender>
-			<Plural>0</Plural>
-		</Portuguese>
 		<French>
 			<Text>Biens</Text>
 			<Gender>Male</Gender>

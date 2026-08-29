@@ -3,7 +3,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_ATTITUDE</Tag>
 		<English>"We just don't like you enough."</English>
-		<Portuguese>"Nós simplesmente não gostamos de você o suficiente."</Portuguese>
 		<French>"Nous ne vous apprécions pas suffisamment."</French>
 		<German>"Ganz so nahe stehen wir Euch dann doch nicht."</German>
 		<Italian>"Non ci piaci abbastanza."</Italian>
@@ -13,7 +12,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_ATTITUDE_THEM</Tag>
 		<English>"We couldn't betray our close friends!"</English>
-		<Portuguese>"Não poderíamos trair nossos amigos mais próximos!"</Portuguese>
 		<French>"Nous ne trahirons pas d'aussi proches amis !"</French>
 		<German>"Es würde uns nie in den Sinn kommen, enge Freunde zu hintergehen!"</German>
 		<Italian>"Non potremmo mai tradire i nostri più cari amici!"</Italian>
@@ -23,7 +21,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_CONTACT_THEM</Tag>
 		<English>"We'd love to, but you'll have to contact them."</English>
-		<Portuguese>"Adoraríamos, mas você terá que contatá-los."</Portuguese>
 		<French>"Ce serait avec plaisir, mais ce sera à vous de les contacter."</French>
 		<German>"Das würden wir gern tun, aber Ihr müsst Kontakt zu ihnen aufnehmen ..."</German>
 		<Italian>"Ci piacerebbe, ma non li abbiamo mai incontrati..."</Italian>
@@ -33,7 +30,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_JOKING</Tag>
 		<English>"Surely, you must be joking."</English>
-		<Portuguese>"Certamente, você deve estar brincando."</Portuguese>
 		<French>"C'est une plaisanterie, j'espère !"</French>
 		<German>"Ihr beliebt wohl zu scherzen ..."</German>
 		<Italian>"Seriamente, stai scherzando..."</Italian>
@@ -43,7 +39,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_MYSTERY</Tag>
 		<English>"We have our reasons."</English>
-		<Portuguese>"Temos nossas razões."</Portuguese>
 		<French>"Nous avons nos raisons."</French>
 		<German>"Wir haben unsere Gründe."</German>
 		<Italian>"Abbiamo i nostri motivi."</Italian>
@@ -52,7 +47,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_NEVER</Tag>
 		<English>"You'll have to take it from our cold, dead hands."</English>
-		<Portuguese>"Você terá que tirá-lo de nossas mãos frias e mortas."</Portuguese>
 		<French>"Il faudra d'abord nous passer sur le corps !"</French>
 		<German>"Nur über unsere Leichen!"</German>
 		<Italian>"Dovrai passare sul nostro cadavere."</Italian>
@@ -62,7 +56,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_NOT_ALLIED</Tag>
 		<English>"We haven't had a defensive pact or shared a war for long enough."</English>
-		<Portuguese>"Não temos um pacto defensivo ou partilhamos uma guerra há tempo suficiente."</Portuguese>
 		<French>"Nous n'avons pas signé de pacte de défense ou combattu ensemble depuis assez longtemps.'"</French>
 		<German>"Wir haben lange genug kein Verteidigungsbündnis geschlossen oder sind gemeinsam in den Krieg gezogen."</German>
 		<Italian>"Non abbiamo avuto un'alleanza difensiva o combattuto una guerra insieme da troppo tempo."</Italian>
@@ -72,7 +65,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_NOT_INTERESTED</Tag>
 		<English>"We are not interested."</English>
-		<Portuguese>"Não estamos interessados."</Portuguese>
 		<French>"Cela ne nous intéresse pas."</French>
 		<German>"Wir sind nicht interessiert."</German>
 		<Italian>"Non siamo interessati".</Italian>
@@ -82,7 +74,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_NO_GAIN</Tag>
 		<English>"We would have nothing to gain."</English>
-		<Portuguese>"Não teríamos nada a ganhar."</Portuguese>
 		<French>"Nous n'aurions rien à y gagner."</French>
 		<German>"Davon hätten wir nichts."</German>
 		<Italian>"Non avremmo niente da guadagnarci."</Italian>
@@ -92,7 +83,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_PEACE_NOT_POSSIBLE_US</Tag>
 		<English>Making peace with our enemies is out of the question</English>
-		<Portuguese>Fazer pazes com nossos inimigos está fora de questão</Portuguese>
 		<French>"Il est hors de question de faire la paix avec nos ennemis."</French>
 		<German>Eine Versöhnung mit unseren Feinden ist völlig ausgeschlossen</German>
 		<Italian>Fare pace coi nostri nemici è fuori questione</Italian>
@@ -102,7 +92,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_PEACE_NOT_POSSIBLE_YOU</Tag>
 		<English>Making peace with your enemies is not possible for you</English>
-		<Portuguese>Fazer pazes com seus inimigos não é possível para você</Portuguese>
 		<French>"Il vous est impossible de faire la paix avec vos ennemis."</French>
 		<German>Ihr könnt mit Euren Feinden nicht Frieden schließen</German>
 		<Italian>Non ti è possibile fare pace coi tuoi nemici</Italian>
@@ -112,7 +101,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_POWER_THEM</Tag>
 		<English>"We're afraid of their military might."</English>
-		<Portuguese>"Temos medo do seu poderio militar."</Portuguese>
 		<French>"Leur puissance militaire nous inquiète."</French>
 		<German>"Wir haben mächtigen Respekt vor ihrer militärischen Stärke."</German>
 		<Italian>"Temiamo la loro potenza militare."</Italian>
@@ -122,7 +110,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_POWER_US</Tag>
 		<English>"We're doing fine on our own."</English>
-		<Portuguese>"Estamos indo bem sozinhos."</Portuguese>
 		<French>"Nous nous en sortons très bien seuls."</French>
 		<German>"Wir kommen ganz gut allein klar."</German>
 		<Italian>"Ce la facciamo da soli."</Italian>
@@ -132,7 +119,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_POWER_YOU</Tag>
 		<English>"You've grown too powerful for us."</English>
-		<Portuguese>"Você se tornou poderoso demais para nós."</Portuguese>
 		<French>"Vous êtes devenu trop puissant pour nous."</French>
 		<German>"Ihr seid zu mächtig für uns geworden."</German>
 		<Italian>"Siete diventati troppo potenti per noi."</Italian>
@@ -142,7 +128,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_POWER_YOUR_ENEMIES</Tag>
 		<English>We are afraid of your enemies!</English>
-		<Portuguese>Temos medo de seus inimigos!</Portuguese>
 		<French>"Nous craignons vos ennemis !"</French>
 		<German>Wir fürchten Eure Feinde!</German>
 		<Italian>I tuoi nemici ci fanno paura!</Italian>
@@ -152,7 +137,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_RECENT_CANCEL</Tag>
 		<English>"Not right now. Maybe we'll change our mind in a few years."</English>
-		<Portuguese>"Agora não. Talvez mudemos de ideia em alguns anos."</Portuguese>
 		<French>"Pas pour l'instant... mais nous pourrions changer d'avis dans quelques années.'"</French>
 		<German>"Das ist ein schlechter Zeitpunkt ... Vielleicht ändern wir unsere Meinung ja in ein paar Jahren."</German>
 		<Italian>"Non ora... Forse cambieremo idea tra qualche anno."</Italian>
@@ -162,7 +146,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_TOO_FAR</Tag>
 		<English>Your land is too far away</English>
-		<Portuguese>Sua terra está muito longe</Portuguese>
 		<French>"Votre territoire est trop éloigné."</French>
 		<German>Euer Reich ist zu weit entfernt.</German>
 		<Italian>Il tuo territorio è troppo lontano</Italian>
@@ -172,7 +155,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_TOO_MANY_WARS</Tag>
 		<English>"We have enough on our hands right now."</English>
-		<Portuguese>"Temos o suficiente em nossas mãos agora."</Portuguese>
 		<French>"Nous avons déjà suffisamment à faire actuellement."</French>
 		<German>"Zurzeit haben wir genug andere Sorgen."</German>
 		<Italian>"Stiamo già affrontando troppi conflitti."</Italian>
@@ -182,7 +164,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_TOO_MUCH</Tag>
 		<English>"Surely, you ask for too much!"</English>
-		<Portuguese>"Certamente, você está pedindo demais!"</Portuguese>
 		<French>"Vous nous demandez beaucoup trop !"</French>
 		<German>"Da verlangt Ihr zu viel!"</German>
 		<Italian>"Sul serio, hai preteso troppo!"</Italian>
@@ -192,7 +173,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_UNKNOWN</Tag>
 		<English>"Sorry, we're not willing to trade this."</English>
-		<Portuguese>"Desculpe, não estamos dispostos a negociar isso."</Portuguese>
 		<French>"Je regrette... Nous ne souhaitons pas échanger ceci."</French>
 		<German>"Wir haben leider kein Interesse, damit zu handeln."</German>
 		<Italian>"Ci spiace, ma non vogliamo commerciare."</Italian>
@@ -202,7 +182,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_VICTORY</Tag>
 		<English>"We'd rather win the game, thank you very much."</English>
-		<Portuguese>"Preferimos ganhar o jogo, muito obrigado."</Portuguese>
 		<French>"Nous préférons gagner la partie, merci beaucoup."</French>
 		<German>"Wir haben eigentlich vor zu gewinnen! Besten Dank ..."</German>
 		<Italian>"Ci piacerebbe vincere la partita, grazie lo stesso..."</Italian>
@@ -212,7 +191,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_WAR_NOT_POSSIBLE_US</Tag>
 		<English>Joining the war on your side is not possible for us</English>
-		<Portuguese>Juntar-se à guerra ao seu lado não é possível para nós</Portuguese>
 		<French>"Nous sommes dans l'incapacité de nous battre à vos côtés."</French>
 		<German>Wir können in diesem Krieg nicht auf Eurer Seite kämpfen.</German>
 		<Italian>Non possiamo scendere in guerra al tuo fianco</Italian>
@@ -222,7 +200,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_WAR_NOT_POSSIBLE_YOU</Tag>
 		<English>Joining the war on our side is not possible for you</English>
-		<Portuguese>Juntar-se à guerra do nosso lado não é possível para você</Portuguese>
 		<French>"Vous ne pouvez pas vous battre à nos côtés."</French>
 		<German>Ihr könnt in diesem Krieg nicht auf unserer Seite kämpfen.</German>
 		<Italian>Non puoi scendere in guerra al nostro fianco</Italian>
@@ -232,7 +209,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DENIAL_WORST_ENEMY</Tag>
 		<English>"We will never trade with you, our worst enemy!!!"</English>
-		<Portuguese>“Nunca negociaremos com você, nosso pior inimigo!!!”</Portuguese>
 		<French>"Jamais nous ne ferons commerce avec notre pire ennemi !!!"</French>
 		<German>"Ihr seid unsere Erzfeinde. Wir werden niemals Handel mit Euch treiben!"</German>
 		<Italian>"Non tratteremo mai con voi, siete i nostri peggiori nemici!"</Italian>

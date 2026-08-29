@@ -8,14 +8,13 @@
 		<Italian>Italian</Italian>
 		<Spanish>Spanish</Spanish>
 		<Russian>Russian</Russian>
-		<Portuguese>Portuguese</Portuguese>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACCENT_SOUP</Tag><!--  Keep this resource in English only , see CvUtils.py sortkey method -->
-		<English>ÁÀÄáâäÉÊÈËéèêëÍÎÌíîìÑñÖÔöôÜÛÙúüûùÃãÕõÇç</English>
+		<English>ÁÀÄáâäÉÊÈËéèêëÍÎÌíîìÑñÖÔöôÜÛÙúüûù</English>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACCENT_SOUP_BASE_LOWERCASE_LETTER</Tag><!-- Keep this resource in English only, see CvUtils.py sortkey method  -->
-		<English>aaaaaaeeeeeeeeiiiiiinnoooouuuuuuuAaOoCc</English>
+		<English>aaaaaaeeeeeeeeiiiiiinnoooouuuuuuu</English>
 	</TEXT>
 </Civ4GameText>

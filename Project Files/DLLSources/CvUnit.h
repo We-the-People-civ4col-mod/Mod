@@ -221,16 +221,6 @@ public:
 	void createTreasures(int overallAmount, int maxTreasureGold);
 	// WTP, merge Treasures, of Raubwuerger - END
 
-	// WTP, Slave Emancipation - START
-	bool canGrantFreedom() const;
-	void grantFreedom();
-	// WTP, Slave Emancipation - END
-	// WTP, Slave Sale Start
-	bool canSellSlave() const;
-	int getSlaveSellPrice() const;
-	void sellSlave();
-	// WTP, Slave Sale - END
-
 	// WTP, ray, Construction Supplies - START
 	bool canUseProductionSupplies() const;
 	void useProductionSupplies();
@@ -584,8 +574,6 @@ public:
 	void setLbDrounds(int newRounds);
 	ProfessionTypes getLastLbDProfession() const;
 	void setLastLbDProfession(ProfessionTypes eProfession);
-	int getLbDFreeReadyTurn() const;
-	void setLbDFreeReadyTurn(int iNewValue);
 	// TAC - LbD - Ray - END
 
 
@@ -985,7 +973,6 @@ protected:
 	// TAC - LbD - Ray - START
 	int m_iLbDrounds;
 	ProfessionTypes m_eLastProfession;
-	int m_iLbDFreeReadyTurn;
 	// TAC - LbD - Ray - END
 
 	// WTP, ray, saving 1 more Profession for Fisher Issue - START

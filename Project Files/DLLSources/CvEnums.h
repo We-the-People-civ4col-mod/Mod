@@ -717,8 +717,6 @@ enum TaskTypes
 	TASK_YIELD_TRADEROUTE, // transport feeder - Nightinggale
 	TASK_AUTO_TRADEROUTE, // auto traderoute - Nightinggale
 	TASK_CHOOSE_CITY_PLOT_YIELD,
-	// WTP, Slave Emancipation
-	TASK_GRANT_FREEDOM,
 
 	NUM_TASK_TYPES
 };
