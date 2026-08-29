@@ -174,14 +174,17 @@ void CvCityAI::AI_assignWorkingPlots()
 		return;
 	}
 
+	// 1. needed yields are workforce-invariant. compute them first so the city-center
+	//    crop and citizen jobs see this turn's indoor inputs (berries, ore, cotton),
+	//    not last turn. last turn is why a new roaster still grew food/sugar.
+	AI_updateNeededYields();
+
 	AI_assignCityPlot();
 
 	jobMutex.lock();
 
 	// No need to call this here, once per turn should be enough
 	//GET_PLAYER(getOwnerINLINE()).AI_manageEconomy();
-
-	AI_updateNeededYields();
 
 	//remove non-city people
 	removeNonCityPopulationUnits();
@@ -3392,6 +3395,192 @@ BestJob AI_findBestJob(const CvCityAI& kCity, ProfessionTypes eProfession, const
 	return BestJob(iBestValue, eBestPlot, eBestProfession, kUnit.getID());
 }
 
+// WTP, Slave AI - START
+bool CvCityAI::AI_hasSuitableJob(const CvUnit& kUnit, bool bIndoorOnly) const
+{
+	const std::vector<std::vector<ProfessionTypes> >& groups =
+		GET_PLAYER(getOwnerINLINE()).m_professionGroups;
+
+	for (size_t iGroup = 0; iGroup < groups.size(); ++iGroup)
+	{
+		const std::vector<ProfessionTypes>& group = groups[iGroup];
+
+		for (size_t iProfession = 0; iProfession < group.size(); ++iProfession)
+		{
+			const ProfessionTypes eProfession = group[iProfession];
+
+			// false = outdoor only
+			// true  = indoor only
+			if (bIndoorOnly == GC.getProfessionInfo(eProfession).isWorkPlot())
+			{
+				continue;
+			}
+
+			const BestJob kBestJob =
+				AI_findBestJob(*this, eProfession, kUnit, bIndoorOnly);
+
+			if (kBestJob.iBestValue > 0)
+			{
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+// WTP, Slave AI - END
+
+// WTP, Slave AI - START
+bool CvCityAI::AI_hasSuitableIndoorJob(UnitTypes eUnit) const
+{
+	if (eUnit == NO_UNIT)
+	{
+		return false;
+	}
+
+	const CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+	const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eUnit);
+
+	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+	{
+		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+
+		// Indoor citizen professions only.
+		if (!kProfession.isCitizen() || kProfession.isWorkPlot())
+		{
+			continue;
+		}
+
+		if (!GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eProfession))
+		{
+			continue;
+		}
+
+		if (kUnitInfo.getProfessionsNotAllowed(eProfession))
+		{
+			continue;
+		}
+
+		if (!kOwner.isProfessionValid(eProfession, eUnit))
+		{
+			continue;
+		}
+
+		// Units which cannot be students must not be considered for education.
+		bool bValidProfession = true;
+
+		for (int i = 0; i < kProfession.getNumYieldsProduced(); ++i)
+		{
+			if (kProfession.getYieldsProduced(i) == YIELD_EDUCATION &&
+				kUnitInfo.getStudentWeight() <= 0)
+			{
+				bValidProfession = false;
+				break;
+			}
+		}
+
+		if (!bValidProfession)
+		{
+			continue;
+		}
+
+		// The required building must actually provide output for this unit.
+		if (AI_professionBasicOutput(eProfession, eUnit, NULL) <= 0)
+		{
+			continue;
+		}
+
+		const int iNewSuitability =
+			kOwner.AI_professionSuitability(eUnit, eProfession);
+
+		if (iNewSuitability <= 0)
+		{
+			continue;
+		}
+
+		// Check whether there is a free slot in a matching building.
+		bool bFreeSlot = false;
+
+		for (BuildingTypes eBuilding = FIRST_BUILDING; eBuilding < NUM_BUILDING_TYPES; ++eBuilding)
+		{
+			if (!isHasBuilding(eBuilding))
+			{
+				continue;
+			}
+
+			if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() !=
+				kProfession.getSpecialBuilding())
+			{
+				continue;
+			}
+
+			int iSlots = GC.getBuildingInfo(eBuilding).getMaxWorkers();
+
+			for (int i = 0; i < getPopulation(); ++i)
+			{
+				const CvUnit* pLoopUnit = getPopulationUnitByIndex(i);
+
+				if (pLoopUnit == NULL ||
+					pLoopUnit->getProfession() == NO_PROFESSION)
+				{
+					continue;
+				}
+
+				if (GC.getProfessionInfo(pLoopUnit->getProfession()).getSpecialBuilding() ==
+					kProfession.getSpecialBuilding())
+				{
+					--iSlots;
+				}
+			}
+
+			if (iSlots > 0)
+			{
+				bFreeSlot = true;
+				break;
+			}
+		}
+
+		if (bFreeSlot)
+		{
+			return true;
+		}
+
+		// No free slot: freeing is still useful if the new unit would
+		// replace a worse, unlocked indoor worker.
+		for (int i = 0; i < getPopulation(); ++i)
+		{
+			const CvUnit* pLoopUnit = getPopulationUnitByIndex(i);
+
+			if (pLoopUnit == NULL ||
+				pLoopUnit->isColonistLocked() ||
+				pLoopUnit->getProfession() == NO_PROFESSION)
+			{
+				continue;
+			}
+
+			if (GC.getProfessionInfo(pLoopUnit->getProfession()).getSpecialBuilding() !=
+				kProfession.getSpecialBuilding())
+			{
+				continue;
+			}
+
+			const int iOldSuitability =
+				kOwner.AI_professionSuitability(
+					pLoopUnit->getUnitType(),
+					pLoopUnit->getProfession()
+				);
+
+			if (iNewSuitability > iOldSuitability)
+			{
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+// WTP, Slave AI - END
+
 struct FindBestJob
 {
 	FindBestJob(const std::vector<std::vector<ProfessionTypes> >& groups_,
@@ -4027,7 +4216,12 @@ int CvCityAI::AI_citizenProfessionValue(
 		YieldTypes y = inYields[i];
 		int avail = getRawYieldProduced(y) + getYieldStored(y);
 		if (avail <= 0)
+		{
+			// 3. empty store used to hard-zero the roaster/smith. then nobody grew berries
+			//    either, because extra food still scored higher. keep indoor at 0 until
+			//    input exists; plot jobs for that input are boosted below.
 			return 0;
+		}
 	}
 
 	// 7) per-yield evaluation
@@ -4118,6 +4312,30 @@ int CvCityAI::AI_citizenProfessionValue(
 	int combined = 0;
 	for (int j = 0; j < yieldsOut.count && j < MAX_OUTPUT_YIELDS; ++j)
 		combined += vals[j].iNetValue;
+
+	// 3. staff the INPUT first when food is already covered. city plot always grows food
+	//    plus one cargo; extra farmers on the ring beat berry/ore/cotton plots if we don't
+	//    cut surplus food and boost needed indoor inputs.
+	if (kProfInfo.isWorkPlot() && yieldsOut.count > 0)
+	{
+		const YieldTypes eY = yieldsOut.yields[0].eYield;
+		if (eY == YIELD_FOOD)
+		{
+			if (AI_getEmphasizeYieldCount(YIELD_FOOD) <= 0)
+			{
+				const int iFoodNeed = getPopulation() * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
+				const int iFoodHave = getYieldStored(YIELD_FOOD) + getRawYieldProduced(YIELD_FOOD);
+				if (iFoodNeed > 0 && iFoodHave > iFoodNeed * 2)
+				{
+					combined /= 4;
+				}
+			}
+		}
+		else if (AI_getNeededYield(eY) > getYieldStored(eY))
+		{
+			combined *= 3;
+		}
+	}
 
 	return branchless::max(0, combined);
 }
@@ -4898,37 +5116,51 @@ void CvCityAI::AI_updateNeededYields()
 
 	m_em_iNeededYield.reset();
 
-
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
 		CvUnit* pLoopUnit = m_aPopulationUnits[i];
+
 		if (pLoopUnit != NULL)
 		{
 			if (pLoopUnit->isColonistLocked())
 			{
 				if (pLoopUnit->getProfession() != NO_PROFESSION)
 				{
-					// R&R, ray , MYCP partially based on code of Aymerick - START
-					YieldTypes eConsumedYield = (YieldTypes)GC.getProfessionInfo(pLoopUnit->getProfession()).getYieldsConsumed(0);
-					// R&R, ray , MYCP partially based on code of Aymerick - END
-					if (eConsumedYield != NO_YIELD)
+					const ProfessionTypes eProfession = pLoopUnit->getProfession();
+					const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+					const int iInput = getProfessionInput(eProfession, pLoopUnit);
+
+					for (int iYield = 0; iYield < kProfession.getNumYieldsConsumed(); ++iYield)
 					{
-						m_em_iNeededYield.add(eConsumedYield, getProfessionInput(pLoopUnit->getProfession(), pLoopUnit));
+						const YieldTypes eConsumedYield =
+							(YieldTypes)kProfession.getYieldsConsumed(iYield);
+
+						if (eConsumedYield != NO_YIELD)
+						{
+							m_em_iNeededYield.add(eConsumedYield, iInput);
+						}
 					}
 				}
 			}
 			else
 			{
-				ProfessionTypes eIdealProfession = pLoopUnit->AI_getIdealProfession();
+				const ProfessionTypes eIdealProfession = pLoopUnit->AI_getIdealProfession();
 
-				if (eIdealProfession != NO_PROFESSION && pLoopUnit->canHaveProfession(eIdealProfession, true, NULL))
+				if (eIdealProfession != NO_PROFESSION
+					&& pLoopUnit->canHaveProfession(eIdealProfession, true, NULL))
 				{
-					// R&R, ray , MYCP partially based on code of Aymerick - START
-					YieldTypes eConsumedYield = (YieldTypes)GC.getProfessionInfo(eIdealProfession).getYieldsConsumed(0);
-					// R&R, ray , MYCP partially based on code of Aymerick - END
-					if (eConsumedYield != NO_YIELD)
+					const CvProfessionInfo& kProfession = GC.getProfessionInfo(eIdealProfession);
+					const int iInput = getProfessionInput(eIdealProfession, pLoopUnit);
+
+					for (int iYield = 0; iYield < kProfession.getNumYieldsConsumed(); ++iYield)
 					{
-						m_em_iNeededYield.add(eConsumedYield, getProfessionInput(eIdealProfession, pLoopUnit));
+						const YieldTypes eConsumedYield =
+							(YieldTypes)kProfession.getYieldsConsumed(iYield);
+
+						if (eConsumedYield != NO_YIELD)
+						{
+							m_em_iNeededYield.add(eConsumedYield, iInput);
+						}
 					}
 				}
 			}
@@ -4936,25 +5168,37 @@ void CvCityAI::AI_updateNeededYields()
 	}
 
 	//Now, buildings.
-	for (int iI = 0; iI < GC.getNumProfessionInfos(); iI++)
+	for (int iI = 0; iI < GC.getNumProfessionInfos(); ++iI)
 	{
-		ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
+		const ProfessionTypes eLoopProfession = (ProfessionTypes)iI;
+
 		if (GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession))
 		{
-			CvProfessionInfo& kLoopProfession = GC.getProfessionInfo(eLoopProfession);
-			if (kLoopProfession.isCitizen())
+			const CvProfessionInfo& kLoopProfession = GC.getProfessionInfo(eLoopProfession);
+
+			if (kLoopProfession.isCitizen() && !kLoopProfession.isWorkPlot())
 			{
-				if (!kLoopProfession.isWorkPlot())
+				const int iSlots = getNumProfessionBuildingSlots(eLoopProfession);
+
+				if (iSlots > 0)
 				{
-					// R&R, ray , MYCP partially based on code of Aymerick - START
-					YieldTypes eYieldProduced = (YieldTypes)kLoopProfession.getYieldsProduced(0);
-					YieldTypes eYieldConsumed = (YieldTypes)kLoopProfession.getYieldsConsumed(0);
-					// R&R, ray , MYCP partially based on code of Aymerick - END
-					if (eYieldConsumed != NO_YIELD)
+					const int iInputNeed =
+						iSlots * getProfessionInput(eLoopProfession, NULL);
+
+					for (int iYield = 0;
+						iYield < kLoopProfession.getNumYieldsConsumed();
+						++iYield)
 					{
-						if (AI_getYieldAdvantage(eYieldProduced) == 100)
+						const YieldTypes eYieldConsumed =
+							(YieldTypes)kLoopProfession.getYieldsConsumed(iYield);
+
+						if (eYieldConsumed != NO_YIELD)
 						{
-							m_em_iNeededYield.set(eYieldProduced, branchless::max(m_em_iNeededYield.get(eYieldProduced), getNumProfessionBuildingSlots(eLoopProfession) * getProfessionInput(eLoopProfession, NULL)));
+							m_em_iNeededYield.set(
+								eYieldConsumed,
+								branchless::max(
+									m_em_iNeededYield.get(eYieldConsumed),
+									iInputNeed));
 						}
 					}
 				}
@@ -6565,8 +6809,8 @@ bool CvCityAI::AI_isMajorCity() const
 }
 
 
-// Choose the yield with the highest export value for the city plot
-// TODO: Extend this by considering deficit input yields for slotworkers
+// Choose the yield with the highest export value for the city plot.
+// 1. also boost yields indoor jobs are short of, when the center can grow them.
 void CvCityAI::AI_assignCityPlot()
 {
 	// Natives are not supported yet
@@ -6584,6 +6828,7 @@ void CvCityAI::AI_assignCityPlot()
 	YieldTypes eBestYield = NO_YIELD;
 
 	const CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
+	const int iDeficitWeight = GC.getDefineINT("AI_CITY_PLOT_DEFICIT_WEIGHT");
 
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
@@ -6591,7 +6836,13 @@ void CvCityAI::AI_assignCityPlot()
 
 		if (iYield > 0)
 		{
-			const int iValue = kPlayer.AI_getYieldBestExportPrice(eYield) * iYield;
+			int iValue = kPlayer.AI_getYieldBestExportPrice(eYield) * iYield;
+			const int iNeed = AI_getNeededYield(eYield);
+			const int iHave = getYieldStored(eYield) + getRawYieldProduced(eYield);
+			if (iNeed > iHave)
+			{
+				iValue += (iNeed - iHave) * iDeficitWeight * iYield;
+			}
 
 			if (iValue > iBestValue)
 			{

@@ -3,6 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_ADVISOR_HELP</Tag>
 		<English>Sid's Tips</English>
+		<Portuguese>Dicas do Sid</Portuguese>
 		<French>Aide du conseiller</French>
 		<German>Beraterhilfe</German>
 		<Italian>Aiuto del consigliere</Italian>
@@ -12,6 +13,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_ADVISOR_HELP_HELP</Tag>
 		<English>Sid provides extra help for the player's research and build choices</English>
+		<Portuguese>Sid fornece ajuda extra para as escolhas de pesquisa e construção do jogador</Portuguese>
 		<French>Le conseiller apparaît pour aider le joueur quand il a achevé une recherche ou construit un bâtiment.</French>
 		<German>Der Berater wird eingeblendet, um dem Spieler zusätzliche Hilfestellung bei der Auswahl eines Forschungs- oder Bauprojekts zu geben</German>
 		<Italian>Quando dovrai scegliere una costruzione o una ricerca, il consigliere apparirà per offrirti aiuto extra</Italian>
@@ -21,6 +23,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_ADVISOR_POPUPS</Tag>
 		<English>Advisor Pop-Ups</English>
+		<Portuguese>Pop-ups do consultor</Portuguese>
 		<French>Info-bulle du conseiller</French>
 		<German>Berater-Popups</German>
 		<Italian>Avvisi dei consiglieri</Italian>
@@ -30,6 +33,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_ADVISOR_POPUPS_HELP</Tag>
 		<English>The advisor occasionally interrupts play to suggest a new build choice in a settlement</English>
+		<Portuguese>O conselheiro ocasionalmente interrompe o jogo para sugerir uma nova escolha de construção em uma colônia</Portuguese>
 		<French>Le conseiller interrompt parfois la partie pour suggérer une nouvelle construction dans la colonie.</French>
 		<German>Der Berater unterbricht gelegentlich das Spiel, um ein neues Bauprojekt in einer Siedlung vorzuschlagen</German>
 		<Italian>Il consigliere interromperà saltuariamente il gioco per suggerirti una costruzione da realizzare in un insediamento</Italian>
@@ -39,6 +43,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_AUTO_PROMOTION</Tag>
 		<English>Units Auto-Promote</English>
+		<Portuguese>Promoção automática de unidades</Portuguese>
 		<French>Auto-promotion des unités</French>
 		<German>Auto-Einheitenbeförderung</German>
 		<Italian>Promozione automatica unità</Italian>
@@ -48,6 +53,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_AUTO_PROMOTION_HELP</Tag>
 		<English>The player's units are automatically promoted (if possible) at the beginning of each turn</English>
+		<Portuguese>As unidades do jogador são promovidas automaticamente (se possível) no início de cada turno</Portuguese>
 		<French>Les unités du joueur sont automatiquement promues (si possible) au début de chaque tour.</French>
 		<German>Die eigenen Einheiten werden zu Beginn jeder Runde automatisch befördert (sofern möglich)</German>
 		<Italian>All'inizio di ogni turno le unità del giocatore vengono automaticamente promosse (dove possibile)</Italian>
@@ -57,6 +63,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_LEAVE_FORESTS</Tag>
 		<English>Automated Pioneers Leave Forests</English>
+		<Portuguese>Pioneiros automatizados deixam florestas</Portuguese>
 		<French>Les pionniers automatisés délaissent les forêts.</French>
 		<German>Automatisierte Pioniere verlassen Wälder</German>
 		<Italian>Pionieri autom. risparmiano le foreste</Italian>
@@ -66,6 +73,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_LEAVE_FORESTS_HELP</Tag>
 		<English>Automated Pioneers will not chop down forests</English>
+		<Portuguese>Pioneiros Automatizados não derrubarão florestas</Portuguese>
 		<French>Les pionniers automatisés n'abattent pas d'arbres.</French>
 		<German>Automatisierte Pioniere holzen keine Wälder ab</German>
 		<Italian>I pionieri automatizzati risparmiano le foreste</Italian>
@@ -75,6 +83,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_MINIMIZE_POP_UPS</Tag>
 		<English>Minimize Pop-Ups</English>
+		<Portuguese>Minimize pop-ups</Portuguese>
 		<French>Réduire info-bulles</French>
 		<German>Popups minimieren</German>
 		<Italian>Minimizza i menu a comparsa</Italian>
@@ -84,6 +93,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_MINIMIZE_POP_UPS_HELP</Tag>
 		<English>Popups are minimized until the player has moved all units</English>
+		<Portuguese>Os pop-ups são minimizados até que o jogador mova todas as unidades</Portuguese>
 		<French>Les fenêtres sont minimisées tant que le joueur n'a pas déplacé toutes ses unités.</French>
 		<German>Popups werden verkleinert dargestellt, bis der Spieler alle Einheiten fortbewegt hat</German>
 		<Italian>I menu a comparsa vengono ridotti al minimo finché il giocatore non ha mosso tutte le sue unità</Italian>
@@ -93,6 +103,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_MODDER_1</Tag>
 		<English>ModPlayerOption1</English>
+		<Portuguese>ModPlayerOption1</Portuguese>
 		<French>Mod Option du joueur 1</French>
 		<German>Mod-Spieleroption1</German>
 		<Italian>ModPlayerOption1</Italian>
@@ -105,6 +116,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_MODDER_2</Tag>
 		<English>ModPlayerOption2</English>
+		<Portuguese>ModPlayerOption2</Portuguese>
 		<French>Mod Option du joueur 2</French>
 		<German>Mod-Spieleroption2</German>
 		<Italian>ModPlayerOption2</Italian>
@@ -113,6 +125,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_MODDER_2_HELP</Tag>
 		<English>Player Option for Modding use 2.</English>
+		<Portuguese>Opção do jogador para uso de modding 2.</Portuguese>
 		<French>Option joueur pour le mod 2.</French>
 		<German>Mod-Spieleroption 2.</German>
 		<Italian>Opzioni giocatore modding 2.</Italian>
@@ -121,6 +134,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_MODDER_3</Tag>
 		<English>ModPlayerOption3</English>
+		<Portuguese>ModPlayerOption3</Portuguese>
 		<French>Mod Option du joueur 3</French>
 		<German>Mod-Spieleroption3</German>
 		<Italian>ModPlayerOption3</Italian>
@@ -129,6 +143,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_MODDER_3_HELP</Tag>
 		<English>Player Option for Modding use 3.</English>
+		<Portuguese>Opção do jogador para uso de modding 3.</Portuguese>
 		<French>Option joueur pour le mod 3.</French>
 		<German>Mod-Spieleroption 3.</German>
 		<Italian>Opzioni giocatore modding 3.</Italian>
@@ -137,6 +152,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_NO_UNIT_CYCLING</Tag>
 		<English>No Unit Cycling</English>
+		<Portuguese>Sem ciclagem de unidade</Portuguese>
 		<French>Impossible de faire défiler les unités</French>
 		<German>Kein Einheitendurchlauf</German>
 		<Italian>Nessuno scorrimento delle unità</Italian>
@@ -146,6 +162,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_NO_UNIT_CYCLING_HELP</Tag>
 		<English>No automatic cycling between units</English>
+		<Portuguese>Sem ciclo automático entre unidades</Portuguese>
 		<French>Pas de cycle automatique entre les unités.</French>
 		<German>Kein automatischer Einheitendurchlauf</German>
 		<Italian>Disattiva lo scorrimento automatico tra le unità</Italian>
@@ -155,6 +172,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_NO_UNIT_RECOMMENDATIONS</Tag>
 		<English>No Unit Action Recommendations</English>
+		<Portuguese>Nenhuma recomendação de ação unitária</Portuguese>
 		<French>Sans recommandation d'unité</French>
 		<German>Keine Einheitenempfehlungen</German>
 		<Italian>Nessuna raccomandazione delle unità</Italian>
@@ -164,6 +182,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_NO_UNIT_RECOMMENDATIONS_HELP</Tag>
 		<English>No unit action or movement recommendations</English>
+		<Portuguese>Nenhuma ação de unidade ou recomendações de movimento</Portuguese>
 		<French>Pas d'action ou de manoeuvre recommandée pour les unités.</French>
 		<German>Keine Empfehlungen für Einheitenfortbewegung oder -aktionen</German>
 		<Italian>Disattiva i consigli sulle azioni e sui movimenti delle unità</Italian>
@@ -173,6 +192,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_NUMPAD_HELP</Tag>
 		<English>Numpad Help</English>
+		<Portuguese>Ajuda do teclado numérico</Portuguese>
 		<French>Aide pavé numérique</French>
 		<German>Ziffernblock-Hilfe</German>
 		<Italian>Aiuto del tastierino numerico</Italian>
@@ -182,6 +202,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_NUMPAD_HELP_HELP</Tag>
 		<English>Show NUM-PAD help for unit movement</English>
+		<Portuguese>Mostrar ajuda do NUM-PAD para movimentação de unidades</Portuguese>
 		<French>Voir l'aide du pavé numérique pour le déplacement des unités.</French>
 		<German>Ziffernblock-Hilfe für Fortbewegung der Einheiten einblenden</German>
 		<Italian>Mostra l'aiuto TAST-NUM per il movimento delle unità</Italian>
@@ -191,6 +212,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_QUICK_ATTACK</Tag>
 		<English>Quick Combat (Offense)</English>
+		<Portuguese>Combate Rápido (Ataque)</Portuguese>
 		<French>Combat rapide (Attaque)</French>
 		<German>Kampf nicht animieren (Offensive)</German>
 		<Italian>Combattimento rapido (Offensivo)</Italian>
@@ -200,6 +222,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_QUICK_ATTACK_HELP</Tag>
 		<English>The player's combats are accelerated (when on offense)</English>
+		<Portuguese>Os combates do jogador são acelerados (quando no ataque)</Portuguese>
 		<French>Les combats du joueur sont accélérés (en position offensive).</French>
 		<German>Alle eigenen Gefechte werden beschleunigt (nur in der Offensive)</German>
 		<Italian>I combattimenti del giocatore vengono velocizzati (in attacco)</Italian>
@@ -209,6 +232,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_QUICK_DEFENSE</Tag>
 		<English>Quick Combat (Defense)</English>
+		<Portuguese>Combate Rápido (Defesa)</Portuguese>
 		<French>Combat rapide (Défense)</French>
 		<German>Kampf nicht animieren (Defensive)</German>
 		<Italian>Combattimento rapido (Difensivo)</Italian>
@@ -218,6 +242,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_QUICK_DEFENSE_HELP</Tag>
 		<English>The player's combats are accelerated (when on defense)</English>
+		<Portuguese>Os combates do jogador são acelerados (quando na defesa)</Portuguese>
 		<French>Les combats du joueur sont accélérés (en position défensive).</French>
 		<German>Alle eigenen Gefechte werden beschleunigt (nur in der Defensive)</German>
 		<Italian>I combattimenti del giocatore vengono velocizzati (in difesa)</Italian>
@@ -227,6 +252,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_QUICK_MOVES</Tag>
 		<English>Quick Moves</English>
+		<Portuguese>Movimentos rápidos</Portuguese>
 		<French>Mouvements rapides</French>
 		<German>Schnelle Bewegungen</German>
 		<Italian>Movimenti rapidi</Italian>
@@ -236,6 +262,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_QUICK_MOVES_HELP</Tag>
 		<English>All of the player's moves are accelerated</English>
+		<Portuguese>Todos os movimentos do jogador são acelerados</Portuguese>
 		<French>Tous les mouvements du joueur sont accélérés.</French>
 		<German>Alle eigenen Spielzüge werden beschleunigt</German>
 		<Italian>Tutti i movimenti del giocatore vengono velocizzati</Italian>
@@ -245,6 +272,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_RIGHT_CLICK_MENU</Tag>
 		<English>Right-Click Menu</English>
+		<Portuguese>Menu do botão direito</Portuguese>
 		<French>Menu clic droit</French>
 		<German>Kontextmenü</German>
 		<Italian>Richiama il menu con il tasto destro del mouse</Italian>
@@ -254,6 +282,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_RIGHT_CLICK_MENU_HELP</Tag>
 		<English>Context menu via RIGHT-CLICK (normally available with [SHIFT + LEFT-CLICK])</English>
+		<Portuguese>Menu de contexto via CLIQUE DIREITO (normalmente disponível com [SHIFT + CLIQUE ESQUERDO])</Portuguese>
 		<French>Menu contextuel avec un CLIC DROIT (normalement accessible par [MAJ + CLIC GAUCHE]).</French>
 		<German>Kontextmenü per RECHTSKLICK öffnen (normalerweise mit [UMSCHALTEN + LINKSKLICK] verfügbar)</German>
 		<Italian>Menu contestuale tramite PULSANTE DESTRO (normalmente utilizzabile con [MAIUSC + PULSANTE SINISTRO])</Italian>
@@ -263,6 +292,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_SAFE_AUTOMATION</Tag>
 		<English>Automated Pioneers Leave Old Improvements</English>
+		<Portuguese>Pioneiros automatizados deixam melhorias antigas</Portuguese>
 		<French>Les pionniers automatisés délaissent les anciennes améliorations.</French>
 		<German>Automat. Pioniere lassen alte Modernis. unverändert</German>
 		<Italian>Pionieri autom. lasciano miglioram. preced.</Italian>
@@ -272,6 +302,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_SAFE_AUTOMATION_HELP</Tag>
 		<English>Automated Pioneers will not change previously built improvements</English>
+		<Portuguese>Pioneiros Automatizados não mudarão melhorias construídas anteriormente</Portuguese>
 		<French>Les pionniers automatisés ne modifient pas les améliorations précédentes.</French>
 		<German>Automatisierte Pioniere verändern keine zuvor errichteten Modernisierungen</German>
 		<Italian>I pionieri automatizzati ignora vecchi miglioramenti</Italian>
@@ -281,6 +312,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_SHOW_ENEMY_MOVES</Tag>
 		<English>Show Enemy Moves</English>
+		<Portuguese>Mostrar movimentos do inimigo</Portuguese>
 		<French>Afficher mouvements ennemis</French>
 		<German>Bewegungen feindlicher Einheiten zeigen</German>
 		<Italian>Mostra i movimenti delle unità nemiche</Italian>
@@ -290,6 +322,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_SHOW_ENEMY_MOVES_HELP</Tag>
 		<English>Show the moves of enemy units between turns</English>
+		<Portuguese>Mostre os movimentos das unidades inimigas entre os turnos</Portuguese>
 		<French>Voir les déplacements des unités ennemies entre deux tours.</French>
 		<German>Fortbewegung feindlicher Einheiten zwischen den Runden anzeigen</German>
 		<Italian>Mostra i movimenti delle unità nemiche tra un turno e l'altro</Italian>
@@ -299,6 +332,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_SHOW_FRIENDLY_MOVES</Tag>
 		<English>Show Friendly Moves</English>
+		<Portuguese>Mostrar movimentos amigáveis</Portuguese>
 		<French>Afficher mouvements alliés</French>
 		<German>Bewegungen nicht-feindlicher Einheiten zeigen</German>
 		<Italian>Mostra i movimenti delle unità amiche</Italian>
@@ -308,6 +342,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_SHOW_FRIENDLY_MOVES_HELP</Tag>
 		<English>Show the moves of friendly units between turns</English>
+		<Portuguese>Mostre os movimentos das unidades aliadas entre os turnos</Portuguese>
 		<French>Voir les déplacements des unités alliées entre deux tours.</French>
 		<German>Fortbewegung freundlicher Einheiten zwischen den Runden anzeigen</German>
 		<Italian>Mostra i movimenti delle unità amichevoli tra un turno e l'altro</Italian>
@@ -317,6 +352,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_STACK_ATTACK</Tag>
 		<English>Stack Attack</English>
+		<Portuguese>Ataque de pilha</Portuguese>
 		<French>Attaque d'unités empilées</French>
 		<German>Stapelangriff</German>
 		<Italian>Attacco di massa</Italian>
@@ -326,6 +362,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_STACK_ATTACK_HELP</Tag>
 		<English>All selected units will attack in rapid succession (note: this is purely an interface convenience - the underlying battle mechanics are unchanged)</English>
+		<Portuguese>Todas as unidades selecionadas atacarão em rápida sucessão (nota: isso é puramente uma conveniência da interface - a mecânica de batalha subjacente permanece inalterada)</Portuguese>
 		<French>Toutes les unités sélectionnées attaqueront en succession rapide (remarque : c'est uniquement pour le confort de l'interface, les mécanismes des combats restent inchangés).</French>
 		<German>Alle gewählten Einheiten greifen in schneller Folge nacheinander an (Hinweis: Diese Einstellung bezieht sich ausschließlich auf die Darstellung auf der Karte - die zugrunde liegenden Kampfeinstellungen bleiben unverändert)</German>
 		<Italian>Tutte le unità selezionate attaccheranno in rapida successione (nota: è solo una comodità in termini di interfaccia, la meccanica di gioco resta invariata)</Italian>
@@ -335,6 +372,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_TUTORIAL</Tag>
 		<English>Tutorial</English>
+		<Portuguese>Tutorial</Portuguese>
 		<French>Didacticiel</French>
 		<German>Tutorial</German>
 		<Italian>Tutorial</Italian>
@@ -344,6 +382,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_TUTORIAL_HELP</Tag>
 		<English>Enable the tips and quests that help teach you the basics of Colonization</English>
+		<Portuguese>Habilite as dicas e missões que ajudam a ensinar o básico da Colonização</Portuguese>
 		<French>Active les conseils et les quêtes d'apprentissage des bases de Colonization.</French>
 		<German>Tipps und Quests aktivieren, um mehr über die Grundlagen von Colonization zu erfahren</German>
 		<Italian>Attiva i consigli e le imprese che servono a insegnarti le basi di Colonization</Italian>
@@ -353,6 +392,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_WAIT_END_TURN</Tag>
 		<English>Wait at End of Turn</English>
+		<Portuguese>Espere no final do turno</Portuguese>
 		<French>Attendre en fin de tour</French>
 		<German>Am Ende einer Runde warten</German>
 		<Italian>In attesa della fine del turno</Italian>
@@ -362,6 +402,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLAYEROPTION_WAIT_END_TURN_HELP</Tag>
 		<English>The game will not progress until the player specifies that the turn should end</English>
+		<Portuguese>O jogo não irá progredir até que o jogador especifique que o turno deve terminar</Portuguese>
 		<French>Le jeu n'avance pas tant que le joueur n'indique pas qu'il a terminé son tour.</French>
 		<German>Das Spiel wird erst nach Beendigung der Runde durch den Spieler fortgesetzt</German>
 		<Italian>Il gioco non proseguirà finché il giocatore non specifica che intende passare il turno</Italian>

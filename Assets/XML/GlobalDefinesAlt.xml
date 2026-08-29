@@ -261,6 +261,33 @@
 		<DefineName>LBD_CHANCE_MOD_REVOLT_SLAVE</DefineName>
 		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
+	<!-- WTP, Slave Emancipation - START -->
+	<!-- Base number of turns used for the LbD emancipation cooldown and for the mandatory indentured period of a former Prisoner of War. -->
+	<Define>
+		<DefineName>SLAVE_EMANCIPATION_LBD_COOLDOWN</DefineName>
+		<iDefineIntVal>30</iDefineIntVal>
+	</Define>
+	<!-- Base number of unrest turns caused in a city when a player manually frees a slave. -->
+	<Define>
+		<DefineName>SLAVE_EMANCIPATION_UNREST_TURNS</DefineName>
+		<iDefineIntVal>2</iDefineIntVal>
+	</Define>
+	<!-- Number of slaves a human player may manually free before the emancipation cooldown starts. -->
+	<Define>
+		<DefineName>SLAVE_EMANCIPATION_PLAYER_LIMIT</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<!-- Number of turns a human player must wait after reaching the manual emancipation limit. -->
+	<Define>
+		<DefineName>SLAVE_EMANCIPATION_PLAYER_COOLDOWN</DefineName>
+		<iDefineIntVal>15</iDefineIntVal>
+	</Define>
+	<!-- Percentage of the slave's current purchase price received when selling the slave (50 means 50% of acquisition price, i.e. no profit). -->
+	<Define>
+		<DefineName>SLAVE_SELL_PRICE_PERCENT</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<!-- WTP, Slave Emancipation - END -->
 	<Define>
 		<DefineName>UNITCLASS_FREED_SLAVE</DefineName>
 		<DefineTextVal>UNITCLASS_FREED_SLAVE</DefineTextVal>
@@ -487,6 +514,13 @@
 		     warbands small. -->
 		<DefineName>NATIVE_DEFENSIVE_GROUP_MAX</DefineName>
 		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<!-- 1. city-center crop used to be export-price only. this multiplies
+		     the missing indoor-input amount so a short ore/cotton/tobacco can
+		     beat a richer cash crop when the center tile can grow it. -->
+		<DefineName>AI_CITY_PLOT_DEFICIT_WEIGHT</DefineName>
+		<iDefineIntVal>30</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>BASE_CHANCE_EUROPE_PEACE</DefineName>

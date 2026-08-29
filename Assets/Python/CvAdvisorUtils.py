@@ -23,24 +23,8 @@ def unitBuiltFeats(pCity, pUnit):
 	return
 
 def unitMoveFeats(pUnit, pPlot, pOldPlot):
-	if not pPlot.isNone():
-		player = gc.getPlayer(pUnit.getOwner())
-		if (player.shouldDisplayFeatPopup(FeatTypes.FEAT_GOTO_EUROPE)):
-			pGroup = pUnit.getGroup()
-			if (not pGroup.isNone() and pGroup.getLengthMissionQueue() == 1):
-				if (pGroup.getMissionType(0) == MissionTypes.MISSION_MOVE_TO and pGroup.at(pGroup.getMissionData1(0), pGroup.getMissionData2(0))):
-					if (not pUnit.isAutomated() and pUnit.canDoCommand(CommandTypes.COMMAND_SAIL_TO_EUROPE, UnitTravelStates.UNIT_TRAVEL_STATE_TO_EUROPE, -1, False)):
-						popupInfo = CyPopupInfo()
-						popupInfo.setButtonPopupType(ButtonPopupTypes.BUTTONPOPUP_FEAT)
-						popupInfo.setData1(FeatTypes.FEAT_GOTO_EUROPE)
-						popupInfo.setData2(pUnit.getID())
-						popupInfo.setText(localText.getText("TXT_KEY_GOTO_EUROPE_POPUP", ()))
-						popupInfo.setOnClickedPythonCallback("featAccomplishedOnClickedCallback")
-						popupInfo.setOnFocusPythonCallback("featAccomplishedOnFocusCallback")
-						popupInfo.addPythonButton(localText.getText("TXT_KEY_GOTO_EUROPE_POPUP_YES", ()), "")
-						popupInfo.addPythonButton(localText.getText("TXT_KEY_GOTO_EUROPE_POPUP_NO", ()), "")
-						popupInfo.addPythonButton(localText.getText("TXT_KEY_GOTO_EUROPE_POPUP_NEVER_AGAIN", ()), "")
-						popupInfo.addPopup(pUnit.getOwner())
+	# no "sail to Europe?" popup on the red tiles. use the sail buttons, same as Africa and Port Royal.
+	return
 
 def cityScreenFeats(iPlayer, iCityId):
 	player = gc.getPlayer(iPlayer)

@@ -3,6 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_JANUARY</Tag>
 		<English>January</English>
+		
+		<Portuguese>
+			<Text>Janeiro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Janvier</Text>
 			<Gender>Male</Gender>
@@ -28,6 +34,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_FEBRUARY</Tag>
 		<English>February</English>
+		
+		<Portuguese>
+			<Text>Fevereiro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Février</Text>
 			<Gender>Male</Gender>
@@ -53,6 +65,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_MARCH</Tag>
 		<English>March</English>
+		
+		<Portuguese>
+			<Text>Março</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mars</Text>
 			<Gender>Male</Gender>
@@ -78,6 +96,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_APRIL</Tag>
 		<English>April</English>
+		
+		<Portuguese>
+			<Text>Abril</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Avril</Text>
 			<Gender>Male</Gender>
@@ -103,6 +127,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_MAY</Tag>
 		<English>May</English>
+		
+		<Portuguese>
+			<Text>Maio</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Mai</Text>
 			<Gender>Male</Gender>
@@ -128,6 +158,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_JUNE</Tag>
 		<English>June</English>
+		
+		<Portuguese>
+			<Text>Junho</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Juin</Text>
 			<Gender>Male</Gender>
@@ -153,6 +189,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_JULY</Tag>
 		<English>July</English>
+		
+		<Portuguese>
+			<Text>Julho</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Juillet</Text>
 			<Gender>Male</Gender>
@@ -178,6 +220,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_AUGUST</Tag>
 		<English>August</English>
+		
+		<Portuguese>
+			<Text>Agosto</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Août</Text>
 			<Gender>Male</Gender>
@@ -203,6 +251,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_SEPTEMBER</Tag>
 		<English>September</English>
+		
+		<Portuguese>
+			<Text>Setembro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Septembre</Text>
 			<Gender>Male</Gender>
@@ -228,6 +282,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_OCTOBER</Tag>
 		<English>October</English>
+		
+		<Portuguese>
+			<Text>Outubro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Octobre</Text>
 			<Gender>Male</Gender>
@@ -253,6 +313,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_NOVEMBER</Tag>
 		<English>November</English>
+		
+		<Portuguese>
+			<Text>Novembro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Novembre</Text>
 			<Gender>Male</Gender>
@@ -278,6 +344,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_MONTH_DECEMBER</Tag>
 		<English>December</English>
+		
+		<Portuguese>
+			<Text>Dezembro</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Décembre</Text>
 			<Gender>Male</Gender>

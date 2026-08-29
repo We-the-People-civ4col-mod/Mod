@@ -3,6 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_ELECTION</Tag>
 		<English>Stance on Elections</English>
+		
+		<Portuguese>
+			<Text>Posição sobre as eleições</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Position au sujet des élections</Text>
 			<Gender>Female</Gender>
@@ -24,6 +30,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_NATIVES</Tag>
 		<English>Stance on Natives</English>
+		
+		<Portuguese>
+			<Text>Posição sobre os nativos</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Position au sujet des indigènes</Text>
 			<Gender>Female</Gender>
@@ -45,6 +57,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_RELIGION</Tag>
 		<English>Stance on Religion</English>
+		
+		<Portuguese>
+			<Text>Posição sobre a religião</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Position au sujet de la religion</Text>
 			<Gender>Female</Gender>
@@ -66,6 +84,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_SECURITY</Tag>
 		<English>Stance on Land Security</English>
+		
+		<Portuguese>
+			<Text>Posição sobre segurança fundiária</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Position au sujet de la sécurité du territoire</Text>
 			<Gender>Female</Gender>
@@ -87,6 +111,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_SLAVERY</Tag>
 		<English>Stance on Slavery</English>
+		
+		<Portuguese>
+			<Text>Posição sobre a escravidão</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Position au sujet de l'esclavage</Text>
 			<Gender>Female</Gender>

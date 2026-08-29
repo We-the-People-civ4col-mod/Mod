@@ -2350,26 +2350,144 @@ bool CvDLLButtonPopup::launchConfirmCommandPopup(CvPopup* pPopup, CvPopupInfo &i
 {
 	int iAction = info.getData1();
 	CvWString szBuffer;
-	szBuffer = gDLL->getText("TXT_KEY_POPUP_ARE_YOU_SURE_ACTION", GC.getActionInfo(iAction).getTextKeyWide());
-	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, szBuffer);
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_YES").c_str(), NULL, 0);
-	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_NO").c_str());
-	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
 
-	return (true);
+	const CommandTypes eCommand = GC.getActionInfo(iAction).getCommandType();
+
+	// WTP, Slave Emancipation - START
+	if (eCommand == COMMAND_GRANT_FREEDOM)
+	{
+		CvUnit* pUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
+
+		if (pUnit == NULL || !pUnit->canGrantFreedom())
+		{
+			return false;
+		}
+
+		const UnitClassTypes eUnitClass =
+			pUnit->getUnitInfo().getUnitClassType();
+
+		const UnitClassTypes eIndenturedServantClass =
+			(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_INDENTURED_SERVANT");
+
+		if (eUnitClass == UNITCLASS_PRISONER_OF_WAR)
+		{
+			szBuffer =
+				gDLL->getText("TXT_KEY_GRANT_FREEDOM_POW_CONFIRM");
+		}
+		else if (eUnitClass == eIndenturedServantClass)
+		{
+			const CvPlayer& kOwner =
+				GET_PLAYER(pUnit->getOwnerINLINE());
+
+			const UnitClassTypes eColonistClass =
+				(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_COLONIST");
+
+			const UnitTypes eIndenturedServant =
+				kOwner.getUnitType(eIndenturedServantClass);
+
+			const UnitTypes eColonist =
+				kOwner.getUnitType(eColonistClass);
+
+			if (eIndenturedServant == NO_UNIT || eColonist == NO_UNIT)
+			{
+				return false;
+			}
+
+			const int iColonistPrice =
+				kOwner.getEuropeUnitBuyPrice(eColonist);
+
+			const int iIndenturedServantPrice =
+				kOwner.getEuropeUnitBuyPrice(eIndenturedServant);
+
+			const int iReleasePrice =
+				std::max(
+					0,
+					iColonistPrice - iIndenturedServantPrice
+				);
+
+			szBuffer =
+				gDLL->getText(
+					"TXT_KEY_GRANT_FREEDOM_INDENTURED_CONFIRM",
+					iReleasePrice
+				);
+		}
+		else
+		{
+			// African Slave / Native Slave
+			szBuffer =
+				gDLL->getText("TXT_KEY_GRANT_FREEDOM_CONFIRM");
+		}
+	}
+	// WTP, Slave Emancipation - END
+
+	// WTP, Slave Sale - START
+	else if (eCommand == COMMAND_SELL_SLAVE)
+	{
+		CvUnit* pUnit = gDLL->getInterfaceIFace()->getHeadSelectedUnit();
+
+		if (pUnit != NULL && pUnit->canSellSlave())
+		{
+			szBuffer = gDLL->getText(
+				"TXT_KEY_SELL_SLAVE_CONFIRM",
+				pUnit->getSlaveSellPrice()
+			);
+		}
+		else
+		{
+			return false;
+		}
+	}
+	// WTP, Slave Sale - END
+
+	else
+	{
+		szBuffer = gDLL->getText(
+			"TXT_KEY_POPUP_ARE_YOU_SURE_ACTION",
+			GC.getActionInfo(iAction).getTextKeyWide()
+		);
+	}
+
+	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, szBuffer);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(
+		pPopup,
+		gDLL->getText("TXT_KEY_POPUP_YES").c_str(),
+		NULL,
+		0
+	);
+	gDLL->getInterfaceIFace()->popupAddGenericButton(
+		pPopup,
+		gDLL->getText("TXT_KEY_POPUP_NO").c_str()
+	);
+	gDLL->getInterfaceIFace()->popupLaunch(
+		pPopup,
+		false,
+		POPUPSTATE_IMMEDIATE
+	);
+
+	return true;
 }
 
 bool CvDLLButtonPopup::launchConfirmTaskPopup(CvPopup* pPopup, CvPopupInfo &info)
 {
-	int iAction = info.getData1();
 	CvWString szBuffer;
-	szBuffer = gDLL->getText("TXT_KEY_POPUP_ARE_YOU_SURE_ACTION", info.getText().GetCString());
+
+	// WTP, Slave Emancipation - START
+	if ((TaskTypes)info.getData3() == TASK_GRANT_FREEDOM)
+	{
+		szBuffer = info.getText();
+	}
+	else
+	{
+		szBuffer = gDLL->getText("TXT_KEY_POPUP_ARE_YOU_SURE_ACTION", info.getText().GetCString());
+	}
+	// WTP, Slave Emancipation - END
+
 	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, szBuffer);
 	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_YES").c_str(), NULL, 0);
 	gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_POPUP_NO").c_str());
 	gDLL->getInterfaceIFace()->popupLaunch(pPopup, false, POPUPSTATE_IMMEDIATE);
 
-	return (true);
+	return true;
 }
 
 

@@ -287,7 +287,7 @@ bool CvUnitAI::AI_update()
 							return true;
 						}
 					}
-                    if (canMove()) // don't try to attack if the unit already used all movement points - Nightinggale
+					if (canMove()) // don't try to attack if the unit already used all movement points - Nightinggale
 						AI_attackCityMove();
 				}
 				//WTP, Protected Hostile Goodies - END
@@ -1428,6 +1428,74 @@ void CvUnitAI::AI_FleeingMove()
 
 void CvUnitAI::AI_colonistMove()
 {
+	// WTP, Slave AI - START
+	const UnitClassTypes eUnitClass = getUnitInfo().getUnitClassType();
+
+	if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE ||
+		eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
+	{
+		CvCity* pCity = plot() != NULL ? plot()->getPlotCity() : NULL;
+
+		if (pCity != NULL && pCity->getOwnerINLINE() == getOwnerINLINE())
+		{
+			// First priority: keep the slave if there is a useful outdoor job.
+			if (pCity->AI().AI_hasSuitableJob(*this, false))
+			{
+				if (canJoinCity(plot()))
+				{
+					joinCity();
+					return;
+				}
+
+				if (AI_betterJob())
+				{
+					return;
+				}
+			}
+
+			// No useful outdoor job.
+			// Keep up to three former slaves as reserve workers on this city plot.
+			int iFreedSlaveReserve = 0;
+
+			CLLNode<IDInfo>* pUnitNode = pCity->plot()->headUnitNode();
+
+			while (pUnitNode != NULL)
+			{
+				CvUnit* pLoopUnit = pCity->plot()->getUnitNodeLoop(pUnitNode);
+
+				if (pLoopUnit != NULL &&
+					pLoopUnit->getOwnerINLINE() == getOwnerINLINE())
+				{
+					const UnitClassTypes eLoopUnitClass =
+						pLoopUnit->getUnitInfo().getUnitClassType();
+
+					if (eLoopUnitClass == GLOBAL_DEFINE_UNITCLASS_FREED_SLAVE ||
+						eLoopUnitClass == GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE)
+					{
+						++iFreedSlaveReserve;
+					}
+				}
+			}
+
+			// Fewer than three former slaves are waiting here:
+			// emancipate this slave and add it to the reserve.
+			if (iFreedSlaveReserve < 3 && canGrantFreedom())
+			{
+				grantFreedom();
+				return;
+			}
+
+			// Three former slaves are already waiting and there is no useful
+			// outdoor job left: sell the excess slave.
+			if (canSellSlave())
+			{
+				sellSlave();
+				return;
+			}
+		}
+	}
+	// WTP, Slave AI - END
+
 	if (isCargo())
 	{
 		if (AI_joinOptimalCity())
@@ -1444,22 +1512,22 @@ void CvUnitAI::AI_colonistMove()
 
 	const bool bDanger = GET_PLAYER(getOwnerINLINE()).AI_getPlotDanger(plot(), 2) > 0;
 
-	// Retreat when in danger and outside friendly territory
 	if (bDanger && plot()->getOwnerINLINE() != getOwnerINLINE())
 	{
 		if (AI_retreatToCity(false, MAX_INT, true))
 			return;
 	}
 
-	if ((m_pUnitInfo->getLearnTime() >= 0) && (getProfession() == GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()))
+	if ((m_pUnitInfo->getLearnTime() >= 0) &&
+		(getProfession() == GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()))
 	{
 		if (GC.getGameINLINE().AI_gameCompletePercent() < 25)
 		{
-		if (AI_learn())
-		{
-			return;
+			if (AI_learn())
+			{
+				return;
+			}
 		}
-	}
 	}
 
 	if (AI_joinOptimalCity())
@@ -1472,7 +1540,6 @@ void CvUnitAI::AI_colonistMove()
 		return;
 	}
 
-	// Consider jobs that we would be a decent fit for
 	if (AI_changeUnitAIType(99))
 	{
 		return;
@@ -1481,14 +1548,12 @@ void CvUnitAI::AI_colonistMove()
 	CvCity* pCity = plot()->getPlotCity();
 	if (pCity != NULL)
 	{
-		// We might want to swap places with a citizen
 		if (AI_betterJob())
 		{
 			return;
 		}
 	}
 
-	// Consider any job to avoid being unemployed :(
 	if (AI_changeUnitAIType(49))
 	{
 		return;
@@ -15495,6 +15560,13 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 					//TODO: Missing JumpTo ?
 					unload();
 				}
+
+				// Try to replace a worse citizen before giving up.
+				if (AI_betterJob())
+				{
+					return true;
+				}
+
 				getGroup()->pushMission(MISSION_SKIP);
 				return true;
 			}
@@ -15511,7 +15583,16 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 		else
 		{
 			FAssert(!atPlot(pBestPlot));
-			getGroup()->pushMission(MISSION_MOVE_TO, pBestPlot->getX_INLINE(), pBestPlot->getY_INLINE(), MOVE_NO_ENEMY_TERRITORY, false, false, MISSIONAI_FOUND, pBestJoinPlot);
+			getGroup()->pushMission(
+				MISSION_MOVE_TO,
+				pBestPlot->getX_INLINE(),
+				pBestPlot->getY_INLINE(),
+				MOVE_NO_ENEMY_TERRITORY,
+				false,
+				false,
+				MISSIONAI_FOUND,
+				pBestJoinPlot
+			);
 			return true;
 		}
 	}

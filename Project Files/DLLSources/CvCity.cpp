@@ -621,6 +621,35 @@ void CvCity::doTurn()
 		// WTP, ray, Change for Request "Occupation has ended" - START
 	}
 
+	// WTP, Slave Emancipation - START
+	if (m_iSlaveEmancipationPendingUnrest > 0)
+	{
+		changeOccupationTimer(m_iSlaveEmancipationPendingUnrest);
+
+		// Inform the player and use the same sound as regular city unrest.
+		CvWString szBuffer = gDLL->getText(
+			"TXT_KEY_SLAVE_EMANCIPATION_UNREST",
+			getNameKey()
+		);
+
+		gDLL->UI().addPlayerMessage(
+			getOwnerINLINE(),
+			false,
+			GC.getEVENT_MESSAGE_TIME(),
+			szBuffer,
+			coord(),
+			"AS2D_CITYCAPTURED",
+			MESSAGE_TYPE_MAJOR_EVENT,
+			ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(),
+			COLOR_RED,
+			true,
+			true
+		);
+
+		m_iSlaveEmancipationPendingUnrest = 0;
+	}
+	// WTP, Slave Emancipation - END
+
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
 		m_aPopulationUnits[i]->doTurn();
@@ -950,6 +979,78 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 			}
 		}
 		break;
+
+	// WTP, Slave Emancipation - START
+	case TASK_GRANT_FREEDOM:
+		{
+			CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).getUnit(iData1);
+
+			if (pUnit == NULL)
+			{
+				pUnit = getPopulationUnitById(iData1);
+			}
+
+			if (pUnit != NULL && pUnit->canGrantFreedom())
+			{
+				const UnitClassTypes eUnitClass =
+					pUnit->getUnitInfo().getUnitClassType();
+
+				const UnitClassTypes eIndenturedServantClass =
+					(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_INDENTURED_SERVANT");
+
+				const UnitClassTypes eColonistClass =
+					(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_COLONIST");
+
+				UnitClassTypes eFreedUnitClass = NO_UNITCLASS;
+
+				if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
+				{
+					eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_FREED_SLAVE;
+				}
+				else if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
+				{
+					eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE;
+				}
+				else if (eUnitClass == UNITCLASS_PRISONER_OF_WAR)
+				{
+					eFreedUnitClass = eIndenturedServantClass;
+				}
+				else if (eUnitClass == eIndenturedServantClass)
+				{
+					eFreedUnitClass = eColonistClass;
+				}
+
+				const UnitTypes eFreedUnit =
+					GET_PLAYER(getOwnerINLINE()).getUnitType(eFreedUnitClass);
+
+				if (eFreedUnit != NO_UNIT)
+				{
+					pUnit->grantFreedom();
+
+					CvWString szBuffer =
+						gDLL->getText(
+							"TXT_KEY_LBD_FREE_IN_CITY",
+							getNameKey()
+						);
+
+					gDLL->UI().addPlayerMessage(
+						getOwnerINLINE(),
+						false,
+						GC.getEVENT_MESSAGE_TIME(),
+						szBuffer,
+						coord(),
+						"AS2D_DEAL_CANCELLED",
+						MESSAGE_TYPE_MINOR_EVENT,
+						GET_PLAYER(getOwnerINLINE()).getUnitButton(eFreedUnit),
+						COLOR_WHITE,
+						true,
+						true
+					);
+				}
+			}
+		}
+		break;
+	// WTP, Slave Emancipation - END
 
 	case TASK_EDUCATE:
 		educateStudent(iData1, (UnitTypes) iData2);
@@ -3836,6 +3937,28 @@ void CvCity::changeOccupationTimer(int iChange)
 	setOccupationTimer(getOccupationTimer() + iChange);
 }
 
+// WTP, Slave Emancipation - START
+void CvCity::changeSlaveEmancipationPendingUnrest(int iChange)
+{
+	if (iChange <= 0)
+	{
+		return;
+	}
+
+	const int iGameSpeedPercent =
+		GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+
+	const int iMaxUnrestTurns = std::max(
+		1,
+		10 * iGameSpeedPercent / 100
+	);
+
+	m_iSlaveEmancipationPendingUnrest = std::min(
+		iMaxUnrestTurns,
+		m_iSlaveEmancipationPendingUnrest + iChange
+	);
+}
+// WTP, Slave Emancipation - END
 
 int CvCity::getCultureUpdateTimer() const
 {
@@ -4797,6 +4920,9 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 		CvString szTitle(gDLL->getText("TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE"));
 
 		gDLL->MessageBox(szDesc.c_str(), szTitle.c_str());
+
+		// Never allow negative non-food yield storage.
+		iValue = 0;
 	}
 
 	int iChange = iValue - getYieldStored(eYield);
@@ -4950,7 +5076,29 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 			}
 		}
 
-		const int iMod = getBaseYieldRateModifier(eOutput);
+		// 1. milk uses the better of its own city buff and the animals being milked.
+		//    stables boost cattle/sheep/goats; without this those building % never
+		//    reached the milk and the tooltip 20.40 extra just vanished.
+		int iMod = getBaseYieldRateModifier(eOutput);
+		for (iCap = 0; iCap < (int)vCap.size(); ++iCap)
+		{
+			YieldTypes eCap = vCap[iCap];
+			const int iCapIndex = (int)eCap;
+			if (iCapIndex < 0 || iCapIndex >= NUM_YIELD_TYPES)
+			{
+				continue;
+			}
+
+			const int iNetProduced = aiProducedYields[iCapIndex] - aiConsumedYields[iCapIndex];
+			if (iNetProduced + getYieldStored(eCap) > 0)
+			{
+				const int iCapMod = getBaseYieldRateModifier(eCap);
+				if (iCapMod > iMod)
+				{
+					iMod = iCapMod;
+				}
+			}
+		}
 
 		if (iCapacityUnits <= 0)
 		{
@@ -4964,10 +5112,13 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 			if (aiProducedYields[iOutIndex] > iCapacityUnits)
 			{
 				aiProducedYields[iOutIndex] = iCapacityUnits;
-				aiYields[iOutIndex] = getYieldStored(eOutput)
-					- aiConsumedYields[iOutIndex]
-					+ aiProducedYields[iOutIndex] * iMod / 100;
 			}
+			// 2. always put the city buff back on milk after the cap. old code
+			//    only did this when production was cut, so "enough cows" dropped
+			//    the rebel/building extra and only the raw 12 landed in store.
+			aiYields[iOutIndex] = getYieldStored(eOutput)
+				- aiConsumedYields[iOutIndex]
+				+ aiProducedYields[iOutIndex] * iMod / 100;
 		}
 	}
 
@@ -5167,6 +5318,48 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 		}
 	}
 
+	// 3. the deficit pass above recasts milk with milk's own modifier. put the
+	//    animal building buff back on if it is higher, using the already-capped
+	//    raw amount.
+	for (iOut = 0; iOut < (int)game.g_aeGatedOutputs.size(); ++iOut)
+	{
+		YieldTypes eOutput = game.g_aeGatedOutputs[iOut];
+		const int iOutIndex = (int)eOutput;
+		if (iOutIndex < 0 || iOutIndex >= NUM_YIELD_TYPES)
+		{
+			continue;
+		}
+		if (aiProducedYields[iOutIndex] <= 0)
+		{
+			continue;
+		}
+
+		int iMod = getBaseYieldRateModifier(eOutput);
+		const std::vector<YieldTypes>& vCap = game.g_aeCapacityYieldsForOutput[iOutIndex];
+		int iCap;
+		for (iCap = 0; iCap < (int)vCap.size(); ++iCap)
+		{
+			YieldTypes eCap = vCap[iCap];
+			const int iCapIndex = (int)eCap;
+			if (iCapIndex < 0 || iCapIndex >= NUM_YIELD_TYPES)
+			{
+				continue;
+			}
+			if (aiProducedYields[iCapIndex] - aiConsumedYields[iCapIndex] + getYieldStored(eCap) > 0)
+			{
+				const int iCapMod = getBaseYieldRateModifier(eCap);
+				if (iCapMod > iMod)
+				{
+					iMod = iCapMod;
+				}
+			}
+		}
+
+		aiYields[iOutIndex] = getYieldStored(eOutput)
+			- aiConsumedYields[iOutIndex]
+			+ aiProducedYields[iOutIndex] * iMod / 100;
+	}
+
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
 		if (eYield != YIELD_FOOD && aiYields[eYield] < 0)
@@ -5178,123 +5371,9 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 		aiYields[eYield] -= getYieldStored(eYield);
 	}
 
-	// This section ensures that pass-through yields like cattle does not get the output multiplier
-	// applied, otherwise the milkmaid would produce additional cattle in addition to the milk
-	// Details:
-	// aiYields[Y] is this turn's net delta: produced_raw*mod/100 - consumed_raw.
-	// For passthrough yields, remove the extra net created by applying mod to the
-	// passthrough slice (so passthrough can't grow stock from multipliers).
-	// (I.e. neutralize the multiplier for the passthrough portion only.)
-	int iPt;
-	for (iPt = 0; iPt < (int)game.g_aePassthroughYields.size(); ++iPt)
-	{
-		YieldTypes eY = game.g_aePassthroughYields[iPt];
-		const int iYIndex = (int)eY;
-		if (iYIndex < 0 || iYIndex >= NUM_YIELD_TYPES)
-		{
-			continue;
-		}
-
-		// Only adjust if the herd is actually growing.
-		if (aiYields[iYIndex] <= 0)
-		{
-			continue;
-		}
-
-		const std::vector<ProfessionTypes>& aProfs = game.g_aPassthroughProfsForYield[iYIndex];
-		if (aProfs.empty())
-		{
-			continue;
-		}
-
-		// Raw passthrough production of Y in this city from actual passthrough professions.
-		int iPassRaw = 0;
-
-		int iUnitIndex;
-		for (iUnitIndex = 0; iUnitIndex < (int)m_aPopulationUnits.size(); ++iUnitIndex)
-		{
-			CvUnit* pUnit = m_aPopulationUnits[iUnitIndex];
-			if (pUnit == NULL)
-			{
-				continue;
-			}
-
-			ProfessionTypes eProf = pUnit->getProfession();
-			if (eProf == NO_PROFESSION)
-			{
-				continue;
-			}
-
-			// Is this profession a passthrough profession for yield eY?
-			bool bIsPassProf = false;
-			int iProfIdx;
-			for (iProfIdx = 0; iProfIdx < (int)aProfs.size(); ++iProfIdx)
-			{
-				if (aProfs[iProfIdx] == eProf)
-				{
-					bIsPassProf = true;
-					break;
-				}
-			}
-			if (!bIsPassProf)
-			{
-				continue;
-			}
-
-			// This unit uses a passthrough profession for eY.
-			// getProfessionOutput returns the raw per-slot output, which
-			// for milkmaids is the amount they both consume and produce
-			// for the passthrough yield (cattle/sheep/goats).
-			const CvProfessionInfo& kProf = GC.getProfessionInfo(eProf);
-
-			// Only count this unit if it actually produces eY in this profession.
-			int iNumProduced = kProf.getNumYieldsProduced();
-			bool bProducesY = false;
-			int iP;
-			for (iP = 0; iP < iNumProduced; ++iP)
-			{
-				if ((YieldTypes)kProf.getYieldsProduced(iP) == eY)
-				{
-					bProducesY = true;
-					break;
-				}
-			}
-			if (!bProducesY)
-			{
-				continue;
-			}
-
-			iPassRaw += getProfessionOutput(eProf, pUnit);
-		}
-
-		if (iPassRaw <= 0)
-		{
-			continue; // no passthrough production of this yield in this city
-		}
-
-		const int iModY = getBaseYieldRateModifier(eY);
-		if (iModY <= 100)
-		{
-			continue; // cannot create positive extra on passthrough
-		}
-
-		// Extra from applying modifier on the passthrough slice.
-		const int iPassWithMod = (iPassRaw * iModY) / 100;
-		const int iExtra = iPassWithMod - iPassRaw;
-		if (iExtra <= 0)
-		{
-			continue;
-		}
-
-		// aiYields[iYIndex] is the net delta. We only reduce the positive part,
-		// and by at most the extra from passthrough.
-		const int iReduce = (aiYields[iYIndex] < iExtra) ? aiYields[iYIndex] : iExtra;
-		if (iReduce > 0)
-		{
-			aiYields[iYIndex] -= iReduce;
-		}
-	}
-
+	// 4. milkmaids return the animals they milk. city buffs apply to that
+	//    produced cattle the same as a cowboy's. stripping the extra left the
+	//    warehouse at +13 while the tooltip said +45.
 	// Immigration
 	YieldTypes eImmigrationYield = GET_PLAYER(getOwnerINLINE()).getImmigrationConversion();
 	if (eImmigrationYield != YIELD_CROSSES)
@@ -13282,6 +13361,14 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 		return false;
 	}
 
+	// WTP, Slave Emancipation - START
+	// Do not check for freedom again while the unit is on cooldown.
+	if (GC.getGameINLINE().getGameTurn() < convUnit->getLbDFreeReadyTurn())
+	{
+		return false;
+	}
+	// WTP, Slave Emancipation - END
+
 	//cases criminal or servant
 	UnitClassTypes modcase = convUnit->getUnitInfo().getUnitClassType();
 
@@ -13349,6 +13436,24 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	{
 		return false;
 	}
+
+	// WTP, Slave Emancipation - START
+	if (isHuman() && (modcase == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE || modcase == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE))
+	{
+		const int iTrainPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+		const int iBaseCooldownTurns = GC.getDefineINT("SLAVE_EMANCIPATION_LBD_COOLDOWN");
+		const int iCooldownTurns = std::max(1, iBaseCooldownTurns * iTrainPercent / 100);
+
+		convUnit->setLbDFreeReadyTurn(GC.getGameINLINE().getGameTurn() + iCooldownTurns);
+
+		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRMTASK, getID(), convUnit->getID(), TASK_GRANT_FREEDOM);
+		pInfo->setText(gDLL->getText("TXT_KEY_LBD_GRANT_FREEDOM"));
+		gDLL->getInterfaceIFace()->lookAtCityOffset(getID());
+		gDLL->getInterfaceIFace()->addPopup(pInfo, getOwnerINLINE(), true, true);
+
+		return true;
+	}
+	// WTP, Slave Emancipation - END
 
 	// spawn the Unit
 	//ray16

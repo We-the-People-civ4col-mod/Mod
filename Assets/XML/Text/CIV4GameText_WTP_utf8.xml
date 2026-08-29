@@ -12,6 +12,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_OCCUPATION_ENDED</Tag>
 		<English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]The unrest has ended now. All business is back to normal.</English>
+		<Portuguese>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]A agitação terminou agora. Todos os negócios voltaram ao normal.</Portuguese>
 		<French>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Les émeutes ont cessé. Tout revient à la normale.</French>
 		<German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Die Unruhen sind vorrüber. Das Leben in der Stadt nimmt wieder seinen normalen Lauf.</German>
 		<Russian>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Беспорядки прекратились. Жители вернулись к своим обычным делам.</Russian>
@@ -20,6 +21,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_CONSTRUCTION_SUPPLIES_USED</Tag>
 		<English>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Construction supplies were used in the city.</English>
+		<Portuguese>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Materiais de construção foram usados na cidade.</Portuguese>
 		<French>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Des matériaux de constructions ont été ajoutés à la cité.</French>
 		<German>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Baumaterialien wurden der Stadt hinzugefügt.</German>
 		<Russian>[COLOR_POSITIVE_TEXT]%s1_city : [COLOR_REVERT]Строительные материалы были добавлены в город.</Russian>
@@ -28,6 +30,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_SHIP_ESCAPED_CITY</Tag>
 		<English>Milord, our ship, the [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT], has escaped and now sails the high seas, following the capture of [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] by the enemy.</English>
+		<Portuguese>Milorde, nosso navio, o [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT], escapou e agora navega em alto mar, após a captura de [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] pelo inimigo.</Portuguese>
 		<French>Sire, notre vaisseau nommé [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT], s'est échappé en haute mer, suite à la chute de  [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] aux mains de l'ennemi.</French>
 		<German>Milord, unser Schiff, die [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT], konnte vor der Einnahme von [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] durch den Feind noch aus dem Hafen entkommen.</German>
 		<Russian>Милорд, нашему кораблю [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] удалось выйти из гавани и выйти в открытое море, прежде чем [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] был захвачен врагом.</Russian>
@@ -36,6 +39,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ENEMY_SHIP_ESCAPED_CITY</Tag>
 		<English>Milord, the enemy ship [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] was able to escape when your troops captured [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</English>
+		<Portuguese>Milorde, o navio inimigo [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] conseguiu escapar quando suas tropas capturaram [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Portuguese>
 		<French>Sire, le vaisseau ennemi [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] a pu prendre la fuite quand vos troupes ont pris [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</French>
 		<German>Milord, das feindliche Schiff [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] konnte vor der Einnahme von [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] den Hafen verlassen und so der Beschlagnahme durch Eure Truppen entgehen.</German>
 		<Russian>Милорд, вражескому кораблю [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] удалось бежать из гавани [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] до того, как наши доблестные войска захватили этот город.</Russian>
@@ -44,6 +48,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITY_TIME_NO_TRADE</Tag>
 		<English>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:turn:turns])[COLOR_REVERT]</English>
+		<Portuguese>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:turno:turnos])[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:tour:tours])[COLOR_REVERT]</French>
 		<German>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:Runde:Runden])[COLOR_REVERT]</German>
 		<Italian>[COLOR_NEGATIVE_TEXT][ICON_STRENGTH] (%d1_turns [NUM1:turno:turni])[COLOR_REVERT]</Italian>
@@ -54,6 +59,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EUROPE_WAR_KING_SENT_TROOPS_OTHER_PLAYER</Tag>
 		<English>Milord, following the declaration of war against us by another king, reinforcement troops sent by His Majesty have arrived.</English>
+		<Portuguese>Milorde, após a declaração de guerra contra nós por outro rei, chegaram tropas de reforço enviadas por Sua Majestade.</Portuguese>
 		<French>Sire, les renforts envoyés par Sa Majesté sont arrivés suite à la déclaration de guerre reçue d'un autre roi. </French>
 		<German>Milord, die von Seiner Majestät entsandten Verstärkungstruppen sind eingetroffen, da man uns auf Befehl eines anderen Königs den Krieg erklärt hat.</German>
 		<Russian>Милорд, войска подкрепления, посланные Его Величеством после объявления нам войны другим королем, прибыли.</Russian>
@@ -62,6 +68,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_LBD_BECOME_FREE_TURNS_WORKED</Tag>
 		<English>Working for %d1_turns [NUM1:turn:turns] to gain freedom</English>
+		<Portuguese>Trabalhando para %d1_turns [NUM1:turno:turnos] para ganhar liberdade</Portuguese>
 		<French>Travaille depuis %d1_turns [NUM1:tour:tours] pour sa liberté</French>
 		<German>Arbeitet seit %d1_turns [NUM1:Runde:Runden] für seine Freiheit</German>
 		<Russian>Работает в течении %d1_turns [NUM1:ход:ходов], чтобы получить свободу</Russian>
@@ -70,6 +77,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED</Tag>
 		<English>Working for %d1_turns [NUM1:turn:turns] to become an [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]</English>
+		<Portuguese>Trabalhando para %d1_turns [NUM1:turno:turnos] para se tornar uma [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]</Portuguese>
 		<French>Travaille depuis  %d1_turns [NUM1:tour:tours] pour se spécialiser en [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]</French>
 		<German>Arbeitet seit %d1_turns [NUM1:Runde:Runden] darauf hin, [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden</German>
 		<Russian>Работает в течении %d1_turns [NUM1:ход:ходов], чтобы стать [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]</Russian>
@@ -78,6 +86,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
 		<English>Worked to become an [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] [NUM1:turn:turns]</English>
+		<Portuguese>Trabalhei para me tornar uma [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] [NUM1:turno:turnos]</Portuguese>
 		<French>A travaillé pour se spécialiser en [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] [NUM1:tour:tours]</French>
 		<German>Arbeitet um [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] [NUM1:Runde:Runden]</German>
 		<Russian>Работал, чтобы стать [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] [NUM1:ход:ходов]</Russian>
@@ -86,6 +95,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
 		<English>Worked to become [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Turns</English>
+		<Portuguese>Trabalhou para se tornar [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Turnos</Portuguese>
 		<French>A travaillé pour se spécialiser en [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] tours</French>
 		<German>Arbeitet um [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Runden</German>
 		<Russian>Работал, чтобы стать [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] ходов</Russian>
@@ -94,6 +104,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_MONASTERY_BONUS</Tag>
 		<English>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Monastery Bonus</English>
+		<Portuguese>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bônus do Mosteiro</Portuguese>
 		<French>[ICON_BULLET]+%d1_NewVal%%%F2_Icon bonus de monastère</French>
 		<German>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bonus durch Klöster</German>
 		<Russian>[ICON_BULLET]+%d1_NewVal%%%F2_Icon от Монастыря</Russian>
@@ -102,6 +113,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_WIND_MILL_BONUS</Tag>
 		<English>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Windmills Bonus</English>
+		<Portuguese>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bônus de moinhos de vento</Portuguese>
 		<French>[ICON_BULLET]+%d1_NewVal%%%F2_Icon bonus de moulin</French>
 		<German>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bonus durch Windmühlen</German>
 		<Russian>[ICON_BULLET]+%d1_NewVal%%%F2_Icon от Ветряка</Russian>
@@ -110,6 +122,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_SAW_MILL_BONUS</Tag>
 		<English>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Sawmills Bonus</English>
+		<Portuguese>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bônus para serrarias</Portuguese>
 		<French>[ICON_BULLET]+%d1_NewVal%%%F2_Icon bonus de scierie</French>
 		<German>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bonus durch Sägemühlen</German>
 		<Russian>[ICON_BULLET]+%d1_NewVal%%%F2_Icon от Лесопилки</Russian>
@@ -118,6 +131,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_IRON_MILL_BONUS</Tag>
 		<English>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Ironmills Bonus</English>
+		<Portuguese>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bônus da Ironmills</Portuguese>
 		<French>[ICON_BULLET]+%d1_NewVal%%%F2_Icon bonus de bas-fourneaux</French>
 		<German>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bonus durch Eisenmühlen</German>
 		<Russian>[ICON_BULLET]+%d1_NewVal%%%F2_Icon от Железной мельницы</Russian>
@@ -126,6 +140,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
 		<English>Production modifier of %d1_NewVal%% :</English>
+		<Portuguese>Modificador de produção de %d1_NewVal%% :</Portuguese>
 		<French>Modificateur de production de %d1_NewVal%%</French>
 		<German>Produktionsmodifikator von %d1_NewVal%% :</German>
 		<Russian>Модификатор производства %d1_NewVal%% :</Russian>
@@ -134,6 +149,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SLAVE_PRODUCTION_PERCENT_MODIFIER_CITIZENHELP</Tag>
 		<English>[ICON_BULLET]slave production modifier of [COLOR_HIGHLIGHT_TEXT]%d1_NewVal%%[COLOR_REVERT] </English>
+		<Portuguese>[ICON_BULLET]modificador de produção escrava de [COLOR_HIGHLIGHT_TEXT]%d1_NewVal%%[COLOR_REVERT]</Portuguese>
 		<French>[ICON_BULLET]modificateur de production des esclaves de [COLOR_HIGHLIGHT_TEXT]%d1_NewVal%%[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Sklavenproduktionsmodifikator von [COLOR_HIGHLIGHT_TEXT]%d1_NewVal%%[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]модификатор производства рабов [COLOR_HIGHLIGHT_TEXT]%d1_NewVal%%[COLOR_REVERT]</Russian>
@@ -142,6 +158,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SLAVE_PRODUCTION_WITHOUT_MODIFIER_CITIZENHELP</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]: %d2%F3 (without slave production modifier)</English>
+		<Portuguese>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]: %d2%F3 (sem modificador de produção escrava)</Portuguese>
 		<French>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]: %d2%F3 (sans le modificateur de production des esclaves)</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]: %d2%F3 (ohne Sklavenproduktionsmodifikator)</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] : %d2%F3 (без модификатора производства рабов)</Russian>
@@ -150,6 +167,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_PRODUCTION_PLUS_MODIFIER_CITIZENHELP</Tag>
 		<English>Production modifier of %d1_NewVal :</English>
+		<Portuguese>Modificador de produção de %d1_NewVal :</Portuguese>
 		<French>Modificateur de production de %d1_NewVal :</French>
 		<German>Produktionsmodifikator von %d1_NewVal :</German>
 		<Russian>Модификатор производства %d1_NewVal :</Russian>
@@ -158,6 +176,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_NATIVES_NOT_WILLING_ALREADY_COLONIST_LEARNING</Tag>
 		<English>Milord, a foreign colonist is already living and learning in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. The Natives do not want to take a second one.[NEWLINE]We should come back when that other European has completed his training in the settlement.</English>
+		<Portuguese>Milorde, um colono estrangeiro já está vivendo e aprendendo em [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Os nativos não querem fazer um segundo.[NEWLINE]Deveríamos voltar quando aquele outro europeu tiver concluído seu treinamento na colônia.</Portuguese>
 		<French>Sire, un colon étranger est déjà sur place pour se former à [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Les indigènes ne veulent pas former un autre en même temps.[NEWLINE] Nous devrions revenir quand l'autre Européen en aura fini avec son entraînement.</French>
 		<German>Milord, es lebt und lernt bereits ein anderer Europäer in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Die Ureinwohner möchten vorerst keinen weiteren aufnehmen.[NEWLINE]Wir sollten zurückkehren, wenn der andere Europäer seine Zeit in der Siedlung beendet hat.</German>
 		<Russian>Милорд, другой колонист уже живет и учится в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Индейцы не хотят брать второго.[NEWLINE]Мы можем вернуться, когда тот колонист завершит свое обучение в этом поселении.</Russian>
@@ -166,6 +185,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_NO_MORE_SETTLER</Tag>
 		<English>Since [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] has no more settlements and no more settlers, His Majesty has decided to equip some colonists in Europe as settlers. Of course this comes with a tax increase.</English>
+		<Portuguese>Como [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] não tem mais colônias nem colonizadores, Sua Majestade decidiu equipar alguns colonos na Europa como colonizadores. Claro que isso vem com um aumento de impostos.</Portuguese>
 		<French>Puisque [COLOR_SELECTED_TEXT]%s1_player[COLOR_REVERT] n'a ni colonies ni colons fondateurs, Sa Majesté a eu le plaisir d'équiper des colons en Europe pour fonder une nouvelle ville. Bien sûr, ceci vient avec une hausse des taxes.</French>
 		<German>Da [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] keine weiteren Siedlungen und auch keine Siedler mehr hat, hat Seine Majestät entschieden, in Europe einige Kolonisten als Siedler auszurüsten. Das ist natürlich mit einer Steuererhöhung verbunden.</German>
 		<Russian>Поскольку у [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] больше нет ни городов, ни поселенцев, Его Величество решил сделать некоторых колонистов в Европе поселенцами. Конечно, это приведет к повышению налоговой ставки.</Russian>
@@ -174,6 +194,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_FAIL</Tag>
 		<English>Milord, your missionary failed to establish a mission in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. The Natives almost killed him for insulting their gods. They beat him badly, leaving him broken and disillusioned.</English>
+		<Portuguese>Milorde, seu missionário não conseguiu estabelecer uma missão em [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Os nativos quase o mataram por insultar seus deuses. Eles o espancaram muito, deixando-o arrasado e desiludido.</Portuguese>
 		<French>Sire, notre missionnaire a échoué dans sa mission à [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Même si les indigènes auraient pu le tuer pour avoir insulté leurs dieux, ils se sont contentés de le rosser si violemment qu'il en est ressorti brisé et désabusé.</French>
 		<German>Milord, Euer Missionar ist dabei gescheitert, die Ureinwohner in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zu missionieren. Trotz der Beleidigung ihrer Götter haben die Ureinwohner Euren Missionar nicht getötet, sondern sie haben ihn nur schwer verprügelt, so daß er nun komplett gebrochen und desillusioniert ist.</German>
 		<Russian>Милорд, нашему миссионеру не удалось установить миссию в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Хотя индейцы и могли убить его за оскорбление их богов, вместо этого они, сильно избив его, выбросили за пределы деревни полностью сломленным и разочарованным.</Russian>
@@ -182,6 +203,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FAILED_TRADER_SPAWNED_FROM_FAIL</Tag>
 		<English>Milord, your trader failed to establish a trading post in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. He gave too much alcohol to the Natives. Some of them got drunk, and violent. He's lucky they didn't kill him.[NEWLINE][NEWLINE]They did beat him up and then stole all his goods. It's no surprise he's now broken and traumatised.</English>
+		<Portuguese>Milorde, seu comerciante não conseguiu estabelecer uma feitoria em [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Ele deu muito álcool aos nativos. Alguns deles ficaram bêbados e violentos. Ele teve sorte de não o terem matado.[NEWLINE][NEWLINE]Eles o espancaram e roubaram todos os seus bens. Não é nenhuma surpresa que ele esteja quebrado e traumatizado.</Portuguese>
 		<French>Sire, notre marchand a échoué à établir un poste commercial à [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Il a donné de l'alcool aux indigènes, et l'ivresse les a rendus violent. Heureusement, ils ne l'ont pas tué; mais ils l'ont battu et dépouillé de tous ses biens. Cette mésaventure l'a ruiné financièrement et moralement.</French>
 		<German>Milord, Euer Ureinwohnerhändler ist dabei gescheitert, einen Handelsposten in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] zu errichten. Er gab den Männdern des Stammes Alkohol. Als sie betrunken waren wurden sie gewalttätig. Glücklicherweise haben sie ihn nicht getötet. Jedoch schlugen sie ihn und stahlen alle seine Güter. Er ist nun mittellos und traumatisiert.</German>
 		<Russian>Милорд, нашему торговцу не удалось открыть торговый пост в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Он давал алкоголь мужчинам племени и когда они напивались, становились ужасно буйными. К счастью, они не убили его, но избили, отобрали все имущество и выгнали из деревни. Мы должны помочь ему восстановиться телесно и духовно.</Russian>
@@ -190,6 +212,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FAILED_MISSIONARY_SPAWNED_FROM_MISSION_REPLACED</Tag>
 		<English>Milord, the Natives in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] have beaten and chased away your missionary. A missionary from another nation managed to replace him, after accusing him of heresy and other Satanic deeds.</English>
+		<Portuguese>Milorde, os nativos de [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] espancaram e afugentaram seu missionário. Um missionário de outra nação conseguiu substituí-lo, após acusá-lo de heresia e outros atos satânicos.</Portuguese>
 		<French>Sire, les indigènes à [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] ont rossé et expulsé notre missionnaire. Un missionnaire issu d'une autre nation l'a remplacé, après l'avoir accusé d'hérésie et d'autres diableries.</French>
 		<German>Milord, die Ureinwohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] haben Euren Missionar mit Prügeln aus dem Dorf verjagt, nachdem ein Missionar einer anderen Nation seinen Platz eingenommen hat und ihn der Teufelsanbetung beschuldigte.</German>
 		<Russian>Милорд, индейцы в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] избили и прогнали нашего миссионера. Его место занял другой европейский миссионер, обвинив нашего в ереси и других бесовских делах.</Russian>
@@ -198,6 +221,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_FAILED_TRADER_SPAWNED_FROM_TRADE_POST_REPLACED</Tag>
 		<English>Milord, the Natives in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] have beaten and chased away your trader. A trader from another nation managed to replace him, by giving the Natives presents and accusing our own trader of dishonesty and greed.</English>
+		<Portuguese>Milorde, os nativos de [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] espancaram e afugentaram seu comerciante. Um comerciante de outra nação conseguiu substituí-lo, dando presentes aos nativos e acusando o nosso próprio comerciante de desonestidade e ganância.</Portuguese>
 		<French>Sire, les indigènes à [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] ont battu et renvoyé votre marchand. Un marchand d'une autre nation est parvenu à le remplacer, en couvrant les indigènes de cadeaux et en accusant le nôtre de gloutonnerie.</French>
 		<German>Milord, die Ureinwohner von [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] haben Euren Ureinwohnderhändler mit Prügeln aus dem Dorf verjagt. Ein anderer Ureinwohnderhändler hat ihn verdrängt indem er dem Stamm Geschenke machte und unseren Mann der Gier beschuldigte.</German>
 		<Russian>Милорд, торговец из другой страны оклеветал нашего торговца в деревне [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Он подкупил вождей подарками и обвинил нашего торговца в обмане. Туземцы жестоко избили и прогнали нашего торговца. </Russian>
@@ -206,6 +230,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_MISSIONARY_EJECTED_FROM_GIFTED_CITY</Tag>
 		<English>Milord, the Natives have given up their settlement [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Our missionary there is available for duty again.</English>
+		<Portuguese>Milorde, os nativos desistiram de sua colônia [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Nosso missionário lá está novamente disponível para o serviço.</Portuguese>
 		<French>Sire, les indigènes ont abandonné leur colonie [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Notre missionnaire qui y était établi attend vos ordres.</French>
 		<German>Milord, die Ureinwohner haben ihre Siedlung [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] aufgegeben. Unser Missionar dort ist nun bereit für einen neuen Auftrag.</German>
 		<Russian>Милорд, туземцы покинули свое поселение [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Наш миссионер снова готов к исполнению своих обязанностей.</Russian>
@@ -214,6 +239,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_TRADER_EJECTED_FROM_GIFTED_CITY</Tag>
 		<English>Milord, the Natives have given up their settlement [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Our trader there is available for duty again.</English>
+		<Portuguese>Milorde, os nativos desistiram de sua colônia [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Nosso comerciante está disponível para trabalhar novamente.</Portuguese>
 		<French>Sire, les indigènes ont abandonné leur colonie [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Notre marchand qui y était établi attend vos ordres.</French>
 		<German>Milord, die Ureinwohner haben ihre Siedlung [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] aufgegeben. Unser Händler dort ist nun bereit für einen neuen Auftrag.</German>
 		<Russian>Милорд, туземцы покинули свое поселение [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT]. Наш торговец снова готов к работе.</Russian>
@@ -222,16 +248,19 @@
 	<TEXT>
 		<Tag>TXT_KEY_CITIZEN_HELP_PROFESSION_NAME_DISPLAY</Tag>
 		<English>[COLOR_UNIT_TEXT]%s1_Profession_Name[COLOR_REVERT]</English>
+		<Portuguese>[COLOR_UNIT_TEXT]%s1_Profession_Name[COLOR_REVERT]</Portuguese>
 		<German>[COLOR_UNIT_TEXT]%s1_Profession_Name[COLOR_REVERT]</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITIZEN_HELP_UNIT_NAME_DISPLAY</Tag>
 		<English>[COLOR_UNIT_TEXT]%s1_Unit_Name[COLOR_REVERT]</English>
+		<Portuguese>[COLOR_UNIT_TEXT]%s1_Unit_Name[COLOR_REVERT]</Portuguese>
 		<German>[COLOR_UNIT_TEXT]%s1_Unit_Name[COLOR_REVERT]</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_IS_IGNORED_IN_STORAGE_CAPACITY</Tag>
 		<English>[ICON_BULLET]Not counted for [COLOR_UNIT_TEXT]Total Storage used in City[COLOR_REVERT]</English>
+		<Portuguese>[ICON_BULLET]Não contado para [COLOR_UNIT_TEXT]Armazenamento total usado na cidade[COLOR_REVERT]</Portuguese>
 		<French>[ICON_BULLET]Ne compte pas dans [COLOR_UNIT_TEXT]l'espace total d'inventaire occupé dans la colonie[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Zählt nicht zum [COLOR_UNIT_TEXT]verbrauchten Lagerraum der Stadt[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]Не учитывается для [COLOR_UNIT_TEXT]общего объема хранилища, используемого в городе[COLOR_REVERT]</Russian>
@@ -240,6 +269,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_RESOURCETABLE_SHOW_OR_HIDE_YIELDS</Tag>
 		<English>Toggle displayed yields</English>
+		<Portuguese>Alternar recursos exibidos</Portuguese>
 		<French>Basculer l'affichage des ressources</French>
 		<German>Waren ein-/ausblenden</German>
 		<Russian>Переключить отображаемые товары</Russian>
@@ -252,6 +282,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_SCOUT_FINISHED_EXPLORING</Tag>
 		<English>Your scout has finished exploring and is awaiting new orders!</English>
+		<Portuguese>Seu batedor terminou de explorar e aguarda novos pedidos!</Portuguese>
 		<French>Votre éclaireur a fini d'explorer et attend vos ordres!</French>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Милорд, наш разведчик закончил исследовать местность и ждёт дальнейших приказов![COLOR_REVERT]</Russian>
 		<Hungarian>A felderítőd befejezte a felfedezést és várja az új parancsokat!</Hungarian>
@@ -259,6 +290,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_ALLOW_DANGEROUS_PATH</Tag>
 		<English>Allow unit to pathfind through plots that inflict damage</English>
+		<Portuguese>Permitir que a unidade encontre caminhos através de lotes que infligem danos</Portuguese>
 		<German>Einen schnellen Weg wählen, der durch Gelände führen kann, welches auch Schaden an der Einheit verursachen kann.</German>
 		<Russian>Разрешить юниту пересекать клетки, наносящие урон</Russian>
 		<Hungarian>Az egység keresztülhaladhat a sérülést okozó területeken</Hungarian>
@@ -266,6 +298,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_DISALLOW_DANGEROUS_PATH</Tag>
 		<English>Prevent unit from pathfinding through plots that inflict damage</English>
+		<Portuguese>Impedir que a unidade encontre caminhos através de lotes que infligem danos</Portuguese>
 		<German>Einen Weg wählen, der vielleicht langsamer ist, aber durch Gelände führt, welches keinen Schaden verursacht.</German>
 		<Russian>Запретить юниту пересекать клетки, наносящие урон</Russian>
 		<Hungarian>Megakadályozza, hogy az egység olyan területeken haladjon, amelyek sérülést okoznak.</Hungarian>
@@ -273,19 +306,83 @@
 	<TEXT>
 		<Tag>TXT_KEY_PLOT_DEFENSIVE_BONUS_OWNED_PLOT</Tag>
 		<English>Potential defense bonus (only if owned): %D1_Mod%%</English>
+		<Portuguese>Bônus de defesa potencial (somente se possuído): %D1_Mod%%</Portuguese>
 		<Russian>Бонус защиты (для игрока): %D1_Mod%%</Russian>
 		<Hungarian>Lehetséges védelmi bónusz (csak, ha birtokolt): %D1_Mod%%</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALLOW_DIRECT_PATH</Tag>
 		<English>Allow unit to use a direct path</English>
+		<Portuguese>Permitir que a unidade use um caminho direto</Portuguese>
 		<Russian>Разрешить юниту использовать прямой путь</Russian>
 		<Hungarian>Az egység egyenes útvonalat használhat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DISALLOW_DIRECT_PATH</Tag>
 		<English>Disallow unit from using a direct path</English>
+		<Portuguese>Proibir a unidade de usar um caminho direto</Portuguese>
 		<Russian>Запретить юниту использовать прямой путь</Russian>
 		<Hungarian>A egység nem használd egyenes útvonalat</Hungarian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM</Tag>
+		<English>Grant Freedom</English>
+		<German>Freiheit gewähren</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_HELP</Tag>
+		<English>Grant this slave freedom.</English>
+		<German>Diesem Sklaven die Freiheit gewähren.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_SELL_SLAVE</Tag>
+		<English>Sell Slave</English>
+		<German>Sklaven verkaufen</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_SELL_SLAVE_CONFIRM</Tag>
+		<English>Do you want to sell this slave for %d1 gold?</English>
+		<German>Möchtet Ihr diesen Sklaven für %d1 Gold verkaufen?</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_SELL_SLAVE_HELP</Tag>
+		<English>Sell this slave.</English>
+		<German>Diesen Sklaven verkaufen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_COOLDOWN</Tag>
+		<English>You have released too many unfree people in a short period of time. Further releases would be poorly received. Wait %d1 round(s).</English>
+		<German>Ihr habt zu viele Unfreie in die Freiheit entlassen. Noch mehr würde man Euch übel nehmen. Wartet noch %d1 Runde(n).</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_POW_HELP</Tag>
+		<English>Release this Prisoner of War into indentured service.</English>
+		<German>Diesen Kriegsgefangenen in ein Dienstverhältnis als Fronarbeiter entlassen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_INDENTURED_HELP</Tag>
+		<English>Release this Indentured Servant from service for %d1 gold.</English>
+		<German>Diesen Fronarbeiter für %d1 Gold aus seinem Dienst freikaufen.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_INDENTURED_NO_GOLD</Tag>
+		<English>You need %d1 gold to release this Indentured Servant from service.</English>
+		<German>Für die Entlassung dieses Fronarbeiters werden %d1 Gold benötigt.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_FORMER_POW</Tag>
+		<English>This former Prisoner of War must serve for another %d1 round(s) before he can be released.</English>
+		<German>Dieser ehemalige Kriegsgefangene muss noch %d1 Runde(n) dienen, bevor er freier Siedler werden kann.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GRANT_FREEDOM_POW_CONFIRM</Tag>
+		<English>Do you really want to release this Prisoner of War into indentured service?</English>
+		<German>Möchtet Ihr diesen Kriegsgefangenen wirklich als Fronarbeiter in ein Dienstverhältnis entlassen?</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GRANT_FREEDOM_INDENTURED_CONFIRM</Tag>
+		<English>Do you really want to release this Indentured Servant from service for %d1 gold?</English>
+		<German>Möchtet Ihr diesen Fronarbeiter wirklich für %d1 Gold aus seinem Dienst freikaufen?</German>
 	</TEXT>
 </Civ4GameText>

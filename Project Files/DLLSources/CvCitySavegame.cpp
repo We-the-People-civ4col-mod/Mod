@@ -20,6 +20,7 @@
 	const int defaultDefenseDamage = 0 ;
 	const int defaultLastDefenseDamage = 0 ;
 	const int defaultOccupationTimer = 0 ;
+	const int defaultSlaveEmancipationPendingUnrest = 0; // WTP, Slave Emancipation
 	const int defaultCultureUpdateTimer = 0 ;
 	const int defaultCitySizeBoost = 0 ;
 	const int defaultHammers = 0 ;
@@ -181,6 +182,7 @@ enum SavegameVariableTypes
 
 	CitySave_Oppressometer,
 	CitySave_OppressometerGrowthModifier,
+	CitySave_SlaveEmancipationPendingUnrest, // WTP, Slave Emancipation
 
 	NUM_CITYSAVE_ENUM_VALUES,
 };
@@ -306,6 +308,7 @@ const char* getSavedEnumNameCity(SavegameVariableTypes eType)
 
 		case CitySave_Oppressometer: return "CitySave_Oppressometer";
 		case CitySave_OppressometerGrowthModifier: return "CitySave_OppressometerGrowthModifier";
+		case CitySave_SlaveEmancipationPendingUnrest: return "CitySave_SlaveEmancipationPendingUnrest";
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -344,6 +347,7 @@ void CvCity::resetSavedData(int iID, PlayerTypes eOwner, Coordinates resetCoord,
 	m_iDefenseDamage = defaultDefenseDamage;
 	m_iLastDefenseDamage = defaultLastDefenseDamage;
 	m_iOccupationTimer = defaultOccupationTimer;
+	m_iSlaveEmancipationPendingUnrest = defaultSlaveEmancipationPendingUnrest; // WTP, Slave Emancipation
 	m_iCultureUpdateTimer = defaultCultureUpdateTimer;
 	m_iCitySizeBoost = defaultCitySizeBoost;
 	m_iHammers = defaultHammers;
@@ -492,6 +496,7 @@ void CvCity::read(CvSavegameReader reader)
 		case CitySave_DefenseDamage                              : reader.Read(m_iDefenseDamage)                            ; break;
 		case CitySave_LastDefenseDamage                          : reader.Read(m_iLastDefenseDamage)                        ; break;
 		case CitySave_OccupationTimer                            : reader.Read(m_iOccupationTimer)                          ; break;
+		case CitySave_SlaveEmancipationPendingUnrest             : reader.Read(m_iSlaveEmancipationPendingUnrest)           ; break; // WTP, Slave Emancipation
 		case CitySave_CultureUpdateTimer                         : reader.Read(m_iCultureUpdateTimer)                       ; break;
 		case CitySave_CitySizeBoost                              : reader.Read(m_iCitySizeBoost)                            ; break;
 		case CitySave_Hammers                                    : reader.Read(m_iHammers)                                  ; break;
@@ -649,6 +654,7 @@ void CvCity::write(CvSavegameWriter writer)
 	writer.Write(CitySave_DefenseDamage, m_iDefenseDamage, defaultDefenseDamage);
 	writer.Write(CitySave_LastDefenseDamage, m_iLastDefenseDamage, defaultLastDefenseDamage);
 	writer.Write(CitySave_OccupationTimer, m_iOccupationTimer, defaultOccupationTimer);
+	writer.Write(CitySave_SlaveEmancipationPendingUnrest, m_iSlaveEmancipationPendingUnrest, defaultSlaveEmancipationPendingUnrest); // WTP, Slave Emancipation
 	writer.Write(CitySave_CultureUpdateTimer, m_iCultureUpdateTimer, defaultCultureUpdateTimer);
 	writer.Write(CitySave_CitySizeBoost, m_iCitySizeBoost, defaultCitySizeBoost);
 	writer.Write(CitySave_Hammers, m_iHammers, defaultHammers);

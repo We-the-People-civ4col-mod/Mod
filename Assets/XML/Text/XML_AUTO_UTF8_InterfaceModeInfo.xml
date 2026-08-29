@@ -3,6 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GLOBELAYER_INPUT</Tag>
 		<English>Globe Input Mode</English>
+		<Portuguese>Modo de entrada do globo</Portuguese>
 		<French>Commandes Globe</French>
 		<German>Eingabemodus Weltkarte</German>
 		<Italian>Modalità 'Comandi globali'</Italian>
@@ -15,6 +16,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO</Tag>
 		<English>Go To Mode</English>
+		<Portuguese>Ir para</Portuguese>
 		<French>Aller à</French>
 		<German>Gehe-zu-Modus</German>
 		<Italian>Modalità 'Vai'</Italian>
@@ -24,6 +26,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_ALL</Tag>
 		<English>Go To Mode (All Units)</English>
+		<Portuguese>Ir para (todas as unidades)</Portuguese>
 		<French>Aller à (toutes les unités)</French>
 		<German>Gehe-zu-Modus (Alle Einheiten)</German>
 		<Italian>Modalità 'Vai' (tutte le unità)</Italian>
@@ -33,6 +36,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_ALL_HELP</Tag>
 		<English>Order all units on the currently selected unit's tile to move</English>
+		<Portuguese>Ordenar que todas as unidades no lote da unidade atualmente selecionada se movam</Portuguese>
 		<French>Déplacer toutes les unités de cette case.</French>
 		<German>Allen Einheiten auf diesem Feld einen Marschbefehl erteilen</German>
 		<Italian>Ordina a tutte le unità attualmente sulla casella selezionata di muoversi</Italian>
@@ -42,6 +46,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_HELP</Tag>
 		<English>Order the selected unit to move to a tile</English>
+		<Portuguese>Ordenar que a unidade selecionada se mova para um lote</Portuguese>
 		<French>Déplacer cette unité vers une case</French>.
 		<German>Einheit auf ein bestimmtes Geländefeld schicken</German>
 		<Italian>Ordina all'unità selezionata di muoversi su una casella</Italian>
@@ -51,6 +56,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_TYPE</Tag>
 		<English>Go To Mode (Same Unit Type)</English>
+		<Portuguese>Ir para (mesmo tipo de unidade)</Portuguese>
 		<French>Aller à (même type d'unité)</French>
 		<German>Gehe-zu-Modus (Gleiche Einheiten)</German>
 		<Italian>Modalità 'Vai' (unità dello stesso tipo)</Italian>
@@ -60,6 +66,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GO_TO_TYPE_HELP</Tag>
 		<English>Orders all units of the currently selected unit's type to move</English>
+		<Portuguese>Ordena que todas as unidades do tipo de unidade atualmente selecionado se movam</Portuguese>
 		<French>Déplacer toutes les unités du type sélectionné.</French>
 		<German>Allen Einheiten dieses gewählten Typs einen Marschbefehl erteilen</German>
 		<Italian>Ordina a tutte le unità dello stesso tipo di quella selezionata di muoversi</Italian>
@@ -69,6 +76,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_GRIP</Tag>
 		<English>Grip Mode</English>
+		<Portuguese>Arrastar</Portuguese>
 		<French>Mode de contrôle</French>
 		<German>Grip-Modus</German>
 		<Italian>Modalità rotazione</Italian>
@@ -81,6 +89,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_PING</Tag>
 		<English>Ping Teammates</English>
+		<Portuguese>Marcar aliados</Portuguese>
 		<French>Envoyer un signal aux équipiers.</French>
 		<German>Mitspieler anpingen</German>
 		<Italian>Lascia un segnale ai compagni di squadra</Italian>
@@ -101,6 +110,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO</Tag>
 		<English>Route To Mode (best available)</English>
+		<Portuguese>Modo Rota para (melhor disponível)</Portuguese>
 		<French>Mode Route vers... (meilleure version disponible)</French>
 		<German>Straße nach-Modus (Bester verfügbarer Straßentyp)</German>
 		<Russian>Строить дорогу до точки ([COLOR_HIGHLIGHT_TEXT]вымощенная камнем дорога[COLOR_REVERT])</Russian>
@@ -108,6 +118,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_HELP</Tag>
 		<English>Order the unit to build the highest level of roads to the selected tile</English>
+		<Portuguese>Ordene à unidade que construa o nível mais alto de estradas até o lote selecionado</Portuguese>
 		<French>Construire la route la plus évoluée jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, Straßen (des besten verfügbaren Straßentyps) bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]вымощенную камнем дорогу[COLOR_REVERT] к выбранной клетке</Russian>
@@ -115,6 +126,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD</Tag>
 		<English>Route To Mode (simple road)</English>
+		<Portuguese>Modo Rota para (estrada simples)</Portuguese>
 		<French>Mode Route vers... (basique)</French>
 		<German>Straße nach-Modus (einfache Straße)</German>
 		<Russian>Строить дорогу до точки ([COLOR_HIGHLIGHT_TEXT]обычная дорога[COLOR_REVERT])</Russian>
@@ -122,6 +134,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_ROAD_HELP</Tag>
 		<English>Order the unit to build simple roads to the selected tile</English>
+		<Portuguese>Ordene à unidade que construa estradas simples até o lote selecionado</Portuguese>
 		<French>Construire la route la plus élémentaire jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, einfache Straßen bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]обычную дорогу[COLOR_REVERT] к выбранной клетке</Russian>
@@ -129,6 +142,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_COUNTRY_ROAD</Tag>
 		<English>Route To Mode (country road)</English>
+		<Portuguese>Modo Rota para (estrada de terra)</Portuguese>
 		<French>Mode Route vers... (route de gravier)</French>
 		<German>Straße nach-Modus (Landstraße)</German>
 		<Russian>Строить дорогу до точки ([COLOR_HIGHLIGHT_TEXT]гравийная дорога[COLOR_REVERT])</Russian>
@@ -136,6 +150,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_ROUTE_TO_COUNTRY_ROAD_HELP</Tag>
 		<English>Order the unit to build country roads to the selected tile</English>
+		<Portuguese>Ordene à unidade que construa estradas de terra até o lote selecionado</Portuguese>
 		<French>Construire une route de gravier jusqu'à la case choisie.</French>
 		<German>Befehlen Sie der Einheit, Landstraßen bis zum gewählten Geländefeld zu bauen.</German>
 		<Russian>Приказывает юниту строить [COLOR_HIGHLIGHT_TEXT]гравийную дорогу[COLOR_REVERT] к выбранной клетке</Russian>
@@ -151,6 +166,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_SELECTION</Tag>
 		<English>Selection Mode</English>
+		<Portuguese>Modo de seleção</Portuguese>
 		<French>Mode Sélection</French>
 		<German>Auswahlmodus</German>
 		<Italian>Modalità di selezione</Italian>
@@ -163,6 +179,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_INTERFACEMODE_SIGN</Tag>
 		<English>Sign Mode</English>
+		<Portuguese>Modo placa</Portuguese>
 		<French>Mode Panneau</French>
 		<German>Zeichenmodus</German>
 		<Italian>Modalità segnale</Italian>
