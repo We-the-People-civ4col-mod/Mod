@@ -2687,15 +2687,9 @@ void CvTeam::offerNextFoundingFather()
 	}
 }
 
-//This function was altered by Dyllin. Jan 2024
-//Written to address a prior issue where only one FF was offered per turn,
-//but that means if you rejected that FF, you didn't get another chance that turn.
-//As a result, you could lose FFs further down the list to other colonies easily.
-//The one FF per turn thing was itself meant to address snapping up newly freed FFs
-//when a colony died, but Dyllin believes this code addresses all those problems
-//reasonably well, as well as the "France gets first dibs" problem too.
-//Further modified later in Jan 2024 to avoid OOS problems.
-// 1. humans now get one popup at a time. after yes/no we ask again only if they can still pay.
+// 1. humans get one FF popup at a time.
+// 2. after yes/no, offer the next only if they can still pay. refusing does not skip the rest of the list this turn.
+// 3. AI takes every FF it can afford, in order, during its turn.
 void CvTeam::testFoundingFather()
 {
 	if (isHuman())
