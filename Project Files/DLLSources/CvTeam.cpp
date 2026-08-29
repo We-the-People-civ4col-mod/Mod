@@ -1820,9 +1820,12 @@ void CvTeam::convinceFather(FatherTypes eFather, bool bAccept)
 		setFatherIgnore(eFather, true);
 	}
 
-	// This is a recursive call, because we are called from testFoundingFather! Why?
-	// If we disable it, there will only be one FF offered to each team per turn, which is preferable for balancing IMHO:
-	//testFoundingFather();
+	// 1. don't queue the next FF popup until this one is resolved.
+	// 2. after a yes the points are already gone, so canConvinceFather filters out ones we can no longer pay for.
+	if (isHuman())
+	{
+		offerNextFoundingFather();
+	}
 }
 
 bool CvTeam::isHuman() const
@@ -2593,6 +2596,97 @@ void CvTeam::offerFoundingFather(FatherTypes eFather)
 
 // Protected Functions...
 
+bool CvTeam::isBestTeamForFather(FatherTypes eFather) const
+{
+	if (!canConvinceFather(eFather))
+	{
+		return false;
+	}
+
+	FatherPointTypes ePrimaryPointType = FIRST_FATHER_POINT;
+	bool bIsThisFatherPurelyPolitical = true;
+
+	if (getFatherPointCost(eFather, ePrimaryPointType) > 0)
+	{
+		bIsThisFatherPurelyPolitical = false;
+	}
+
+	for (FatherPointTypes ePointType = FIRST_FATHER_POINT; ePointType < NUM_FATHER_POINT_TYPES - 1; ++ePointType)
+	{
+		if (getFatherPointCost(eFather, ePointType) > getFatherPointCost(eFather, ePrimaryPointType))
+		{
+			ePrimaryPointType = ePointType;
+			bIsThisFatherPurelyPolitical = false;
+		}
+	}
+
+	if (bIsThisFatherPurelyPolitical)
+	{
+		ePrimaryPointType = FATHER_POINT_POLITICAL;
+	}
+
+	FAssert((ePrimaryPointType >= 0) && (ePrimaryPointType < GC.getNumFatherPointInfos()));
+
+	for (int iTeam = 0; iTeam < MAX_TEAMS; iTeam++)
+	{
+		const CvTeam& kOtherTeam = GET_TEAM((TeamTypes)iTeam);
+
+		if (kOtherTeam.getID() == getID() || !kOtherTeam.isAlive() || !kOtherTeam.canConvinceFather(eFather))
+		{
+			continue;
+		}
+
+		if (kOtherTeam.getFatherPoints(ePrimaryPointType) > getFatherPoints(ePrimaryPointType))
+		{
+			return false;
+		}
+
+		if (kOtherTeam.getFatherPoints(ePrimaryPointType) == getFatherPoints(ePrimaryPointType))
+		{
+			if (kOtherTeam.getFatherPoints(FATHER_POINT_POLITICAL) > getFatherPoints(FATHER_POINT_POLITICAL))
+			{
+				return false;
+			}
+
+			if (kOtherTeam.getFatherPoints(FATHER_POINT_POLITICAL) == getFatherPoints(FATHER_POINT_POLITICAL))
+			{
+				int iThisTeamFatherPointSum = 0;
+				int iOtherTeamFatherPointsum = 0;
+
+				for (FatherPointTypes eRunoffPointType = FIRST_FATHER_POINT; eRunoffPointType < NUM_FATHER_POINT_TYPES; eRunoffPointType++)
+				{
+					iThisTeamFatherPointSum += getFatherPoints(eRunoffPointType);
+					iOtherTeamFatherPointsum += kOtherTeam.getFatherPoints(eRunoffPointType);
+				}
+
+				if (iOtherTeamFatherPointsum >= iThisTeamFatherPointSum)
+				{
+					return false;
+				}
+			}
+		}
+	}
+
+	return true;
+}
+
+void CvTeam::offerNextFoundingFather()
+{
+	if (!isHuman())
+	{
+		return;
+	}
+
+	for (FatherTypes eFather = FIRST_FATHER; eFather < NUM_FATHER_TYPES; ++eFather)
+	{
+		if (isBestTeamForFather(eFather))
+		{
+			offerFoundingFather(eFather);
+			return;
+		}
+	}
+}
+
 //This function was altered by Dyllin. Jan 2024
 //Written to address a prior issue where only one FF was offered per turn,
 //but that means if you rejected that FF, you didn't get another chance that turn.
@@ -2601,138 +2695,20 @@ void CvTeam::offerFoundingFather(FatherTypes eFather)
 //when a colony died, but Dyllin believes this code addresses all those problems
 //reasonably well, as well as the "France gets first dibs" problem too.
 //Further modified later in Jan 2024 to avoid OOS problems.
+// 1. humans now get one popup at a time. after yes/no we ask again only if they can still pay.
 void CvTeam::testFoundingFather()
 {
-	std::vector<FatherTypes> vFathersToCourt;
-	FatherTypes eFather = FIRST_FATHER;	//Reused in second loop.
-
-	//First loop, iterate through all FFs to see who will get the opportunity to hire them THIS turn.
-	for (; eFather < NUM_FATHER_TYPES; ++eFather)
+	if (isHuman())
 	{
-		if (canConvinceFather(eFather))
-		{
-			FatherPointTypes ePrimaryPointType = (FatherPointTypes)0; //0 in FatherPointTypes is Exploration.
-			bool bMakeOffer = true;
-			bool bIsThisFatherPurelyPolitical = true;
-			
-			//This is required to ensure Exploration Founding Fathers aren't confused as Political ones.
-			if (getFatherPointCost(eFather, ePrimaryPointType) > 0)
-			{
-				bIsThisFatherPurelyPolitical = false;
-			}
-
-			//Search through any points required that aren't Political Points. If any are non-zero, the highest of these will be the primary type.
-			for (FatherPointTypes ePointType = FIRST_FATHER_POINT; ePointType < NUM_FATHER_POINT_TYPES - 1; ++ePointType)
-			{
-				if (getFatherPointCost(eFather, ePointType) > getFatherPointCost(eFather, ePrimaryPointType))
-				{
-					ePrimaryPointType = ePointType;
-					bIsThisFatherPurelyPolitical = false;
-				}
-			}
-
-			if (bIsThisFatherPurelyPolitical)
-			{
-				ePrimaryPointType = FATHER_POINT_POLITICAL;
-			}
-
-			FAssert((ePrimaryPointType >= 0) && (ePrimaryPointType < GC.getNumFatherPointInfos()));
-
-			for (int iTeam = 0; iTeam < MAX_TEAMS; iTeam++)
-			{
-				CvTeam& kOtherTeam = GET_TEAM((TeamTypes)iTeam);
-
-				if (kOtherTeam.getID() != getID() && kOtherTeam.canConvinceFather(eFather) && kOtherTeam.isAlive())
-				{
-					if (kOtherTeam.getFatherPoints(ePrimaryPointType) > getFatherPoints(ePrimaryPointType))
-					{
-						bMakeOffer = false;
-					}
-					else
-					{
-						if (kOtherTeam.getFatherPoints(ePrimaryPointType) == getFatherPoints(ePrimaryPointType))
-						{
-							if (kOtherTeam.getFatherPoints(FATHER_POINT_POLITICAL) > getFatherPoints(FATHER_POINT_POLITICAL))
-							{
-								bMakeOffer = false;
-							}
-							else
-							{
-								if (kOtherTeam.getFatherPoints(FATHER_POINT_POLITICAL) == getFatherPoints(FATHER_POINT_POLITICAL)) 
-								{
-									//Runoff competition, most points overall wins. This will happen more often for Political FF than any other.
-									//Makes sense that a deadlocked Political FF would choose the biggest baller on the block.
-									int iThisTeamFatherPointSum = 0;
-									int iOtherTeamFatherPointsum = 0;
-									
-									for (FatherPointTypes eRunoffPointType = FIRST_FATHER_POINT; eRunoffPointType < NUM_FATHER_POINT_TYPES; eRunoffPointType++)
-									{
-										iThisTeamFatherPointSum += getFatherPoints(eRunoffPointType);
-										iOtherTeamFatherPointsum += kOtherTeam.getFatherPoints(eRunoffPointType);
-									}
-
-									if (iOtherTeamFatherPointsum > iThisTeamFatherPointSum)
-									{
-										bMakeOffer = false;
-									}
-									else
-									{
-										if (iOtherTeamFatherPointsum == iThisTeamFatherPointSum)
-										{
-											//Jesus christ, still equal?! Alright, try again next turn. One of you will win eventually.
-											bMakeOffer = false;
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-
-			}
-
-			if (bMakeOffer)
-			{
-				if (isHuman()) //Check for any humans on THIS team
-				{
-					for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
-					{
-						CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
-						if (kPlayer.isAlive() && kPlayer.getTeam() == getID() && kPlayer.isHuman())
-						{
-							vFathersToCourt.push_back(eFather);
-						}
-					}
-				}
-				else //This is an AI only team, convince the father immediately during AI movements while humans are frozen.
-				{
-					convinceFather(eFather, true);
-				}
-			}
-		}
+		offerNextFoundingFather();
+		return;
 	}
 
-	//Second loop, iterate through the stored FFs. Avoids OOS issues that Dyllin and Nightinggale discussed.
-	//The first human found on the winning team gets the choice to accept/deny a FF. Dyllin does not trust the
-	//game not to commit suicide otherwise in some weird situations.
-	if (vFathersToCourt.size() != 0)
+	for (FatherTypes eFather = FIRST_FATHER; eFather < NUM_FATHER_TYPES; ++eFather)
 	{
-		for (int i = 0; i < (int)vFathersToCourt.size(); i++)
+		if (isBestTeamForFather(eFather))
 		{
-			eFather = vFathersToCourt.at(i);
-
-			if (canConvinceFather(eFather))
-			{
-				for (int iPlayer = 0; iPlayer < MAX_PLAYERS; ++iPlayer)
-				{
-					CvPlayer& kPlayer = GET_PLAYER((PlayerTypes)iPlayer);
-					if (kPlayer.isAlive() && kPlayer.getTeam() == getID() && kPlayer.isHuman())
-					{
-						CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_FOUNDING_FATHER, eFather); //This line seems to wait for input from the player before moving on.
-						gDLL->getInterfaceIFace()->addPopup(pInfo, (PlayerTypes)iPlayer);
-					}
-				}
-			}
+			convinceFather(eFather, true);
 		}
 	}
 }
