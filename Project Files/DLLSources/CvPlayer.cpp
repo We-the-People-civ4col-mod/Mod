@@ -5498,7 +5498,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 			return false;
 		}
 
-		UnitTypes eUnit = GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)kGoody.getTeachUnitClassType());
+		UnitTypes eUnit = (UnitTypes)GC.getUnitClassInfo((UnitClassTypes)kGoody.getTeachUnitClassType()).getDefaultUnitIndex();
 
 		if (eUnit == NO_UNIT)
 		{

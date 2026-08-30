@@ -10150,7 +10150,7 @@ const char* CvPlot::getResourceLayerIcon(ResourceLayerOptions eOption, CvWString
 				UnitClassTypes eUnitClass = (UnitClassTypes) pCity->getTeachUnitClass();
 				if (eUnitClass != NO_UNITCLASS)
 				{
-					UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(GC.getGameINLINE().getActiveCivilizationType()).getCivilizationUnits(eUnitClass);
+					UnitTypes eUnit = (UnitTypes)GC.getUnitClassInfo(eUnitClass).getDefaultUnitIndex();
 					if (eUnit != NO_UNIT)
 					{
 						szIcon = GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getUnitButton(eUnit);

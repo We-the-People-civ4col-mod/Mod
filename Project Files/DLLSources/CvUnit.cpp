@@ -6198,7 +6198,7 @@ UnitTypes CvUnit::getLearnUnitType(const CvPlot* pPlot) const
 		return NO_UNIT;
 	}
 
-	UnitTypes eTeachUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eTeachUnitClass);
+	UnitTypes eTeachUnit = (UnitTypes) GC.getUnitClassInfo(eTeachUnitClass).getDefaultUnitIndex();
 	if (eTeachUnit == getUnitType())
 	{
 		return NO_UNIT;
@@ -7137,7 +7137,7 @@ void CvUnit::speakWithChief()
 		UnitClassTypes eTeachUnitClass = pCity->getTeachUnitClass();
 		if (eTeachUnitClass != NO_UNITCLASS)
 		{
-			UnitTypes eTeachUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eTeachUnitClass);
+			UnitTypes eTeachUnit = (UnitTypes)GC.getUnitClassInfo(eTeachUnitClass).getDefaultUnitIndex();
 			if (eTeachUnit != NO_UNIT)
 			{
 				szExpertText = gDLL->getText("AI_DIPLO_CHIEF_LEARN_UNIT_DESCRIPTION", GC.getUnitInfo(eTeachUnit).getTextKeyWide());

@@ -1879,7 +1879,7 @@ void CvUnitAI::AI_missionaryMove()
 	//Cheesey exploit?
 	if (canLearn())
 	{
-		UnitTypes eTeachUnit = (UnitTypes)GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(plot()->getPlotCity()->getTeachUnitClass());
+		UnitTypes eTeachUnit = (UnitTypes)GC.getUnitClassInfo(plot()->getPlotCity()->getTeachUnitClass()).getDefaultUnitIndex();
 		if (getUnitInfo().getMissionaryRateModifier() < GC.getUnitInfo(eTeachUnit).getMissionaryRateModifier())
 		{
 			learn();
