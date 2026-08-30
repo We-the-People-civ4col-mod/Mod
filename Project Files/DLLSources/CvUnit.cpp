@@ -636,6 +636,14 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 	}
 
+	// Yield cargo captured as standalone goods units vanishes next turn.
+	// If this transport is itself being captured, remember the yields and
+	// load them onto the new wagon after it is created.
+	std::vector<UnitTypes> aeYieldCargoUnits;
+	std::vector<ProfessionTypes> aeYieldCargoProfessions;
+	std::vector<int> aiYieldCargoStored;
+	const PlayerTypes eYieldCargoPlayer = getCapturingPlayer();
+
 	for(uint i=0;i<oldUnits.size();i++)
 	{
 		CvUnit* pLoopUnit = ::getUnit(oldUnits[i]);
@@ -647,16 +655,31 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 				//save old units because kill will clear the static list
 				std::vector<IDInfo> tempUnits = oldUnits;
 
-				if (pPlot->isValidDomainForLocation(*pLoopUnit))
+				if (pLoopUnit->isYield() && eYieldCargoPlayer != NO_PLAYER)
 				{
-					pLoopUnit->setCapturingPlayer(getCapturingPlayer());
-				}
-
-				if (pLoopUnit->getCapturingPlayer() == NO_PLAYER)
-				{
-					if (pAttacker != NULL && pAttacker->getUnitInfo().isCapturesCargo())
+					if (bDelay)
 					{
-						pLoopUnit->setCapturingPlayer(pAttacker->getOwnerINLINE());
+						// Combat uses delayed death. Keep the goods on the wagon
+						// until the real kill creates the captured unit.
+						continue;
+					}
+					aeYieldCargoUnits.push_back(pLoopUnit->getUnitType());
+					aeYieldCargoProfessions.push_back(pLoopUnit->getProfession());
+					aiYieldCargoStored.push_back(pLoopUnit->getYieldStored());
+				}
+				else
+				{
+					if (pPlot->isValidDomainForLocation(*pLoopUnit))
+					{
+						pLoopUnit->setCapturingPlayer(getCapturingPlayer());
+					}
+
+					if (pLoopUnit->getCapturingPlayer() == NO_PLAYER)
+					{
+						if (pAttacker != NULL && pAttacker->getUnitInfo().isCapturesCargo())
+						{
+							pLoopUnit->setCapturingPlayer(pAttacker->getOwnerINLINE());
+						}
 					}
 				}
 
@@ -749,6 +772,15 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 
 				if (bAlive)
 				{
+					for (uint iYieldCargo = 0; iYieldCargo < aeYieldCargoUnits.size(); ++iYieldCargo)
+					{
+						CvUnit* pYieldCargo = GET_PLAYER(eCapturingPlayer).initUnit(aeYieldCargoUnits[iYieldCargo], aeYieldCargoProfessions[iYieldCargo], pkCapturedUnit->getX_INLINE(), pkCapturedUnit->getY_INLINE(), NO_UNITAI, NO_DIRECTION, aiYieldCargoStored[iYieldCargo]);
+						if (pYieldCargo != NULL)
+						{
+							pYieldCargo->setTransportUnit(pkCapturedUnit);
+						}
+					}
+
 					pkCapturedUnit->addDamageRandom(10, 75, 5);
 					CvWString szBuffer;
 					szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_UNIT", GC.getUnitInfo(eCaptureUnitType).getTextKeyWide());
@@ -1932,13 +1964,15 @@ void CvUnit::updateCombat(bool bQuick)
 						if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot) &&
 							(pLoopUnit->isCapturableLandUnit() || pLoopUnit->isYield()))
 						{
-							if (pLoopUnit->getTransportUnit() == NULL)
+							// Leave yield cargo on the land wagon. Capturing it here
+							// dumps standalone goods on the plot, which vanish next turn.
+							if (!(pLoopUnit->isYield() && pLoopUnit->getTransportUnit() != NULL && pLoopUnit->getTransportUnit()->getDomainType() != DOMAIN_SEA))
 							{
-								pLoopUnit->setCapturingPlayer(getOwnerINLINE());
-							}
-							else
-							{
-								if (pLoopUnit->getTransportUnit()->getDomainType() != DOMAIN_SEA)
+								if (pLoopUnit->getTransportUnit() == NULL)
+								{
+									pLoopUnit->setCapturingPlayer(getOwnerINLINE());
+								}
+								else if (pLoopUnit->getTransportUnit()->getDomainType() != DOMAIN_SEA)
 								{
 									pLoopUnit->setCapturingPlayer(getOwnerINLINE());
 								}
@@ -1961,13 +1995,13 @@ void CvUnit::updateCombat(bool bQuick)
 						if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), pPlot), pPlot) &&
 							(pLoopUnit->isCapturableLandUnit() || pLoopUnit->isYield()))
 						{
-							if (pLoopUnit->getTransportUnit() == NULL)
+							if (!(pLoopUnit->isYield() && pLoopUnit->getTransportUnit() != NULL && pLoopUnit->getTransportUnit()->getDomainType() != DOMAIN_SEA))
 							{
-								pLoopUnit->kill(false);
-							}
-							else
-							{
-								if (pLoopUnit->getTransportUnit()->getDomainType() != DOMAIN_SEA)
+								if (pLoopUnit->getTransportUnit() == NULL)
+								{
+									pLoopUnit->kill(false);
+								}
+								else if (pLoopUnit->getTransportUnit()->getDomainType() != DOMAIN_SEA)
 								{
 									pLoopUnit->kill(false);
 								}
