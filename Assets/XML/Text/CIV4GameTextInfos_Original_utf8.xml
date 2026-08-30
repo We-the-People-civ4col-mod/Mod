@@ -8947,6 +8947,7 @@
 		<German>Patch-Name : %s1_Name</German>
 		<Italian>Nome patch : %s1_Name</Italian>
 		<Spanish>Nombre del parche : %s1_Name</Spanish>
+		<Hungarian>Patch neve: %s1_Name</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOWNLOAD_STATUS_TAG</Tag>
@@ -8956,6 +8957,7 @@
 		<German>Download : %d1_Recv / %d2_Total Bytes</German>
 		<Italian>Download : %d1_Recv / %d2_Total byte</Italian>
 		<Spanish>Descarga : %d1_Recv / %d2_Total bytes</Spanish>
+		<Hungarian>Letöltés: %d1_Recv / %d2_Total byte</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_JOIN_GAME_PASSWORD_TITLEBAR</Tag>
@@ -8965,6 +8967,7 @@
 		<German>Spielkennwort</German>
 		<Italian>Password partita</Italian>
 		<Spanish>Contraseña de la partida</Spanish>
+		<Hungarian>Játék jelszó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_JOIN_GAME_PASSWORD_TITLE</Tag>
@@ -8974,6 +8977,7 @@
 		<German>KENNWORTEINGABE ERFORDERLICH</German>
 		<Italian>PASSWORD NECESSARIA</Italian>
 		<Spanish>SE REQUIERE CONTRASEÑA</Spanish>
+		<Hungarian>JELSZÓ SZÜKSÉGES</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_JOIN_GAME_PASSWORD_DESC</Tag>
@@ -8983,6 +8987,7 @@
 		<German>Geben Sie bitte das Kennwort für dieses Spiel ein.</German>
 		<Italian>Inserire una password per partecipare a questa partita.</Italian>
 		<Spanish>Introduce la contraseña necesaria para la partida.</Spanish>
+		<Hungarian>Kérlek, add meg a játékhoz szükséges jelszót!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HOST_GAME_PASSWORD_TITLEBAR</Tag>
@@ -8992,6 +8997,7 @@
 		<German>Spielkennwort</German>
 		<Italian>Password partita</Italian>
 		<Spanish>Contraseña de la partida</Spanish>
+		<Hungarian>Játék jelszó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HOST_GAME_PASSWORD_TITLE</Tag>
@@ -9001,6 +9007,7 @@
 		<German>SCHÜTZEN SIE IHR SPIEL</German>
 		<Italian>PROTEGGI LA TUA PARTITA</Italian>
 		<Spanish>PROTEGE LA PARTIDA</Spanish>
+		<Hungarian>VÉDD A JÁTÉKODAT</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HOST_GAME_PASSWORD_DESC</Tag>
@@ -9010,6 +9017,7 @@
 		<German>Geben Sie ein Kennwort ein, um Ihr Spiel vor unbefugtem Zugriff zu schützen.[NEWLINE]Oder lassen Sie die Kennworteingabe leer, wenn Sie kein Kennwort nutzen wollen.</German>
 		<Italian>Inserisci una password se vuoi proteggere la tua partita.[NEWLINE]Lascia lo spazio bianco per evitare protezioni.</Italian>
 		<Spanish>Introduce una contraseña si deseas proteger la partida.[NEWLINE]Déjala en blanco para descartar la protección.</Spanish>
+		<Hungarian>Addj meg egy jelszót, ha védeni szeretnéd játékodat.[NEWLINE]A védelem mellőzéséhez hagyd üresen a mezőt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_ADVANCED</Tag>
@@ -9020,6 +9028,7 @@
 		<Italian>IMPOSTAZIONI AVANZATE</Italian>
 		<Spanish>AVANZADO</Spanish>
 		<Russian>Дополнительно</Russian>
+		<Hungarian>TOVÁBBI LEHETŐSÉGEK</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_VISIT_WEBSITE</Tag>
@@ -9029,6 +9038,7 @@
 		<German>BESUCHEN SIE DIE WEBSITE</German>
 		<Italian>VISITA IL SITO WEB</Italian>
 		<Spanish>VISITAR EL SITIO WEB</Spanish>
+		<Hungarian>WEBOLDAL MEGLÁTOGATÁSA</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CREDITS</Tag>
@@ -9039,6 +9049,7 @@
 		<Italian>RICONOSCIMENTI</Italian>
 		<Spanish>CRÉDITOS</Spanish>
 		<Russian>АВТОРЫ</Russian>
+		<Hungarian>KÉSZÍTŐK</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_DIRECTIP_PASSWORD</Tag>
@@ -9048,6 +9059,7 @@
 		<German>Kennwort (sofern erforderlich)</German>
 		<Italian>Password (se necessaria)</Italian>
 		<Spanish>Contraseña (si la hay)</Spanish>
+		<Hungarian>Jelszó (ha szükséges)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FOREIGN_ADVISOR_CONTACT</Tag>
@@ -9058,6 +9070,7 @@
 		<Italian>Contatta</Italian>
 		<Spanish>Contactar</Spanish>
 		<Russian>Контакты</Russian>
+		<Hungarian>Kapcsolatfelvétel</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MINIMIZED_CHOOSE_PRODUCTION_UNIT</Tag>
@@ -9068,6 +9081,7 @@
 		<Italian>Hai addestrato l'unità ([COLOR_UNIT_TEXT]%s1_Unit[COLOR_REVERT]) a %s2_City...</Italian>
 		<Spanish>Habéis entrenado a [NUM1:un:una:unos:unas] [COLOR_UNIT_TEXT]%s1_Unit[COLOR_REVERT] en %s2_City...</Spanish>
 		<Russian>[COLOR_SELECTED_TEXT]%s2_City[COLOR_REVERT] : был создан юнит [COLOR_UNIT_TEXT]%s1_Unit[COLOR_REVERT] ...</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_City[COLOR_REVERT] : Kiképeztél egy [COLOR_UNIT_TEXT]%s1_Unit[COLOR_REVERT] egységet ...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MINIMIZED_CHOOSE_PRODUCTION_BUILDING</Tag>
@@ -9078,6 +9092,7 @@
 		<Italian>Hai costruito l'edificio ([COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT]) a %s2_City...</Italian>
 		<Spanish>Habéis construido [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT] en %s2_City...</Spanish>
 		<Russian>[COLOR_SELECTED_TEXT]%s2_City[COLOR_REVERT] : было построено здание [COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT] ...</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_City[COLOR_REVERT] : Megépítettél egy [COLOR_BUILDING_TEXT]%s1_Building[COLOR_REVERT] épületet ...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MINIMIZED_CHOOSE_PRODUCTION</Tag>
@@ -9088,6 +9103,7 @@
 		<Italian>Scegli la produzione a %s1_City...</Italian>
 		<Spanish>Elegid la producción de %s1_City...</Spanish>
 		<Russian>Выберите, что производить в %s1_City</Russian>
+		<Hungarian>Válaszd ki, mit termeljen %s1_City</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_ADMIN_ALLOW_CHEATS</Tag>
@@ -9097,6 +9113,7 @@
 		<German>Debug-Tool zulassen</German>
 		<Italian>Consenti gli strumenti di debug</Italian>
 		<Spanish>Permitir herramientas de depuración</Spanish>
+		<Hungarian>Debug eszközök engedélyezése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPULATION</Tag>
@@ -9107,6 +9124,7 @@
 		<Italian>POP</Italian>
 		<Spanish>POB</Spanish>
 		<Russian>НАС</Russian>
+		<Hungarian>NÉP</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REFUSE_GIFT</Tag>
@@ -9117,6 +9135,7 @@
 		<Italian>[COLOR_WARNING_TEXT]%s1_Leader non accetterà il dono[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]%s1_Leader no aceptará el regalo.[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]%s1_Leader не принимает подарок.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]%s1_Leader nem fogadja el az ajándékot.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_MAIN_MENU_CIV_PASSWORD_TITLEBAR</Tag>
@@ -9126,6 +9145,7 @@
 		<German>Kennwortschutz</German>
 		<Italian>Protezione password</Italian>
 		<Spanish>Protección con contraseña</Spanish>
+		<Hungarian>Jelszavas Védelem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_MAIN_MENU_CIV_PASSWORD_TITLE</Tag>
@@ -9135,6 +9155,7 @@
 		<German>ZIVILISATIONSKENNWORT EINGEBEN</German>
 		<Italian>INSERISCI LA PASSWORD DELLA CIVILTà</Italian>
 		<Spanish>CONTRASEÑA DE LA CIVILIZACIÓN</Spanish>
+		<Hungarian>ADD MEG A CIVILIZÁCIÓ JELSZAVÁT</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_MAIN_MENU_CIV_PASSWORD_DESC</Tag>
@@ -9144,6 +9165,7 @@
 		<German>Geben Sie das für diese Zivilisation erforderliche Kennwort ein.</German>
 		<Italian>Inserisci la password necessaria per questa civiltà.</Italian>
 		<Spanish>Introduce la contraseña necesaria para esta civilización.</Spanish>
+		<Hungarian>Ehhez a játékhoz jelszó szükséges. Kérlek, add meg!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_MAIN_MENU_CIV_PASSWORD_RETRY_DESC</Tag>
@@ -9153,6 +9175,7 @@
 		<German>Geben Sie das für diese Zivilisation erforderliche Kennwort ein.</German>
 		<Italian>Inserisci la password necessaria per questa civiltà.</Italian>
 		<Spanish>Introduce la contraseña necesaria para esta civilización.</Spanish>
+		<Hungarian>Az általad megadott jelszó érvénytelen. Kérlek, próbáld újra!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_MAIN_MENU_CIV_PROTECT_TITLE</Tag>
@@ -9162,6 +9185,7 @@
 		<German>SCHÜTZEN SIE IHRE ZIVILISATION</German>
 		<Italian>PROTEGGI LA TUA CIVILTà</Italian>
 		<Spanish>PROTEGE TU CIVILIZACIÓN</Spanish>
+		<Hungarian>VÉDD MEG CIVILIZÁCIÓDAT</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADEABLE_ITEMS</Tag>
@@ -9172,6 +9196,7 @@
 		<Italian>Oggetti commerciabili</Italian>
 		<Spanish>Elementos intercambiables</Spanish>
 		<Russian>Предметы торговли</Russian>
+		<Hungarian>Csereáruk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEACE_ERROR</Tag>
@@ -9181,6 +9206,7 @@
 		<German>Beim Aushandeln eines Friedensvertrags bietet der anfragende Spieler dem anderen Spieler eine Gegenleistung an. Es findet kein beidseitiger Handel statt und es können ausschließlich Schenkungen angeboten werden.</German>
 		<Italian>Quando tratti la pace, solo un giocatore può offrirla a un altro. Come pagamento per il termine di una guerra, sono accettati solamente dei doni e non sono permesse azioni commerciali.</Italian>
 		<Spanish>Al realizar un intercambio para alcanzar un tratado de paz, solo uno de los jugadores puede ofrecerle cosas al otro. Solo se pueden ofrecer regalos como pago para poner fin a la guerra, no se pueden realizar intercambios.</Spanish>
+		<Hungarian>Békeszerződés reményében csak egy játékos ajánlhat fel árukat egy másiknak. Hogy a háború véget érjen, kizárólag ajándékokat lehet felkínálni, kereskedni nem lehet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_NETWORK</Tag>
@@ -9191,6 +9217,7 @@
 		<Italian>Rete</Italian>
 		<Spanish>Red</Spanish>
 		<Russian>Сеть</Russian>
+		<Hungarian>Hálózat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_BANDWIDTH_DESC</Tag>
@@ -9201,6 +9228,7 @@
 		<Italian>Seleziona la velocità della tua connessione</Italian>
 		<Spanish>Selecciona tu velocidad de conexión</Spanish>
 		<Russian>Выберите скорость подключения</Russian>
+		<Hungarian>Válaszd ki a kapcsolatod sebességét</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_BROADBAND_LBL</Tag>
@@ -9211,6 +9239,7 @@
 		<Italian>Banda larga (Cavo/DSL)</Italian>
 		<Spanish>Banda ancha (Cable/ADSL)</Spanish>
 		<Russian>Широкополосный доступ</Russian>
+		<Hungarian>Szélessáv (Kábel/DSL)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_MODEM_LBL</Tag>
@@ -9230,6 +9259,7 @@
 		<German>Session %d1_number beginnt</German>
 		<Italian>Inizio della sessione %d1_number</Italian>
 		<Spanish>La sesión %d1_number está empezando</Spanish>
+		<Hungarian>Indul a %d1_number. menet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_TIME_SPENT</Tag>
@@ -9239,6 +9269,7 @@
 		<German>Verbrauchte Zeit : %d1 Stunden, %d2 Minuten</German>
 		<Italian>Tempo trascorso : %d1 ore, %d2 minuti</Italian>
 		<Spanish>Tiempo transcurrido : %d1 [NUM1:hora:horas], %d2 [NUM2:minuto:minutos]</Spanish>
+		<Hungarian>Játékidő: %d1 óra, %d2 perc</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SMTP_USERNAME</Tag>
@@ -9248,6 +9279,7 @@
 		<German>Benutzername für SMTP-Kennwortauthentifizierung (sofern erforderlich)</German>
 		<Italian>Username per l'SMTP (se necessario)</Italian>
 		<Spanish>Nombre de usuario para autenticación segura de SMTP (si es necesario)</Spanish>
+		<Hungarian>Jelszó az SMTP biztonságos jelszóérvényesítéséhez (ha szükséges)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SMTP_PASSWORD</Tag>
@@ -9257,6 +9289,7 @@
 		<German>Kennwort für SMTP-Kennwortauthentifizierung (sofern erforderlich)</German>
 		<Italian>Username per l'SMTP (se necessaria)</Italian>
 		<Spanish>Contraseña para autenticación segura de SMTP (si es necesaria)</Spanish>
+		<Hungarian>Jelszó az SMTP biztonságos jelszóérvényesítéséhez (ha szükséges)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_RESPONSE_TAKEN_TITLE</Tag>
@@ -9266,6 +9299,7 @@
 		<German>Wählen Sie Ihre Zivilisation</German>
 		<Italian>Scegli la tua civiltà</Italian>
 		<Spanish>Elige una civilización</Spanish>
+		<Hungarian>Válaszd ki a civilizációdat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_RESPONSE_TAKEN_DESC</Tag>
@@ -9275,6 +9309,7 @@
 		<German>Diese Zivilisation ist bereits vergeben.</German>
 		<Italian>Questa civiltà è già stata assegnata.</Italian>
 		<Spanish>Alguien ha escogido ya esta civilización.</Spanish>
+		<Hungarian>Ez a civilizáció már foglalt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CHOOSE_TRANSPORT</Tag>
@@ -9285,6 +9320,7 @@
 		<Italian>Scegli il trasporto...</Italian>
 		<Spanish>Elegir un transporte...</Spanish>
 		<Russian>Выберите транспорт</Russian>
+		<Hungarian>Válassz Szállítóeszközt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIV_SELECT_RANDOM_LEADER</Tag>
@@ -9295,6 +9331,7 @@
 		<Italian>Il leader verrà scelto casualmente.</Italian>
 		<Spanish>El líder se elegirá al azar.</Spanish>
 		<Russian>Лидер будет выбран случайным образом</Russian>
+		<Hungarian>A vezető véletlenszerűen lesz kiválasztva.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_SCREEN_GRAPHICS_LEVEL</Tag>
@@ -9305,6 +9342,7 @@
 		<Italian>Dettaglio grafico</Italian>
 		<Spanish>Nivel gráfico</Spanish>
 		<Russian>Уровень графики</Russian>
+		<Hungarian>Grafikai Szint</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RENAME_UNIT</Tag>
@@ -9315,6 +9353,7 @@
 		<Italian>Rinomina unità :</Italian>
 		<Spanish>Cambiar nombre de unidad :</Spanish>
 		<Russian>Переименовать юнит :</Russian>
+		<Hungarian>Egység Átnevezése :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RECOMMENDED_SPECS_MESSAGE</Tag>
@@ -9324,6 +9363,7 @@
 		<German>Ihr Computer entspricht nicht den empfohlenen Systemspezifikationen. Die Grafikeinstellungen wurden entsprechend angepasst, es könnten jedoch Performance-Probleme auftreten.</German>
 		<Italian>Il tuo computer è al di sotto dei requisiti consigliati. Le impostazioni grafiche sono state alterate di conseguenza ma, tuttavia, potrai avere dei problemi di prestazioni.</Italian>
 		<Spanish>El ordenador no cumple los requisitos recomendados. Se ha modificado la configuración gráfica en consecuencia, pero aun así es posible que se experimenten problemas de rendimiento.</Spanish>
+		<Hungarian>A számítógéped nem teljesíti a javasolt rendszerkövetelményeket. A grafikus beállítások ennek megfelelően lettek módosítva, ám futás közben tapasztalhatsz hibákat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NO_MAPS_FOUND_TITLE</Tag>
@@ -9333,6 +9373,7 @@
 		<German>Fehler im Kartenskript</German>
 		<Italian>Errore nello script della mappa</Italian>
 		<Spanish>Error de secuencia de comandos del mapa</Spanish>
+		<Hungarian>Térképszkript Hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NO_MAPS_FOUND_DESC</Tag>
@@ -9342,6 +9383,7 @@
 		<German>Keine Kartenskripte gefunden!</German>
 		<Italian>Impossibile trovare script della mappa!</Italian>
 		<Spanish>No se han encontrado secuencias de comandos de mapa.</Spanish>
+		<Hungarian>Nem található térképszkript!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MP_RENEGOTIATE</Tag>
@@ -9351,6 +9393,7 @@
 		<German>Systemmeldung: Die Neuverhandlungen für Handelsabkommen haben begonnen.</German>
 		<Italian>Messaggio di sistema: la rinegoziazione commerciale è iniziata.</Italian>
 		<Spanish>Mensaje del sistema: iniciada la renegociación del intercambio.</Spanish>
+		<Hungarian>Rendszerüzenet: megismételt kereskedelmi tárgyalások kezdődtek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MP_THEY_ACCEPT</Tag>
@@ -9360,6 +9403,7 @@
 		<German>Sie akzeptieren</German>
 		<Italian>Accettano</Italian>
 		<Spanish>Aceptan</Spanish>
+		<Hungarian>Elfogadják</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MP_THEY_NO_ACCEPT</Tag>
@@ -9369,6 +9413,7 @@
 		<German>Sie lehnen ab</German>
 		<Italian>Non accettano</Italian>
 		<Spanish>No aceptan</Spanish>
+		<Hungarian>Nem fogadják el</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MP_RETRACT_OFFER</Tag>
@@ -9378,6 +9423,7 @@
 		<German>Angebot zurückziehen</German>
 		<Italian>Ritira offerta</Italian>
 		<Spanish>Retirar la oferta</Spanish>
+		<Hungarian>Ajánlat visszavonása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MP_OFFER_TRADE</Tag>
@@ -9387,6 +9433,7 @@
 		<German>Handel anbieten</German>
 		<Italian>Offri commercio</Italian>
 		<Spanish>Ofrecer intercambio</Spanish>
+		<Hungarian>Üzlet ajánlása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MP_DIPLO_EXIT</Tag>
@@ -9396,6 +9443,7 @@
 		<German>Diplomatische Verhandlungen beenden</German>
 		<Italian>Esci dalla diplomazia</Italian>
 		<Spanish>Salir de la diplomacia</Spanish>
+		<Hungarian>Kilépés a diplomáciából</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_FORCED_DISCONNECT_TITLE</Tag>
@@ -9405,6 +9453,7 @@
 		<German>Account-Verletzung</German>
 		<Italian>Violazione dell'account</Italian>
 		<Spanish>Violación de cuenta</Spanish>
+		<Hungarian>Felhasználói fiók támadás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_FORCED_DISCONNECT_DESC</Tag>
@@ -9414,6 +9463,7 @@
 		<German>Es ist bereits jemand auf diesem Account eingeloggt.</German>
 		<Italian>Qualcun altro ha effettuato il login usando questo account.</Italian>
 		<Spanish>Otra persona ha iniciado sesión con esta cuenta.</Spanish>
+		<Hungarian>Valaki más is belépett ezzel a hozzáféréssel!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_FORCED_DISCONNECT_INGAME</Tag>
@@ -9423,6 +9473,7 @@
 		<German>Es ist bereits jemand auf diesem Account eingeloggt. Zurück zum Hauptmenü ...</German>
 		<Italian>Qualcun altro ha effettuato il login usando questo account. Ritorno al menu principale...</Italian>
 		<Spanish>Otra persona ha iniciado sesión con esta cuenta. Saliendo al menú principal...</Spanish>
+		<Hungarian>Valaki más is belépett ezzel a hozzáféréssel! Kilépés a főmenübe...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADVISOR_CULTURE</Tag>
@@ -9433,6 +9484,7 @@
 		<Italian>Cultura</Italian>
 		<Spanish>Cultura</Spanish>
 		<Russian>Культура</Russian>
+		<Hungarian>Kultúra</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INIT_ELAPSED_TIME</Tag>
@@ -9443,6 +9495,7 @@
 		<Italian>Fatto !</Italian>
 		<Spanish>Finalizado !</Spanish>
 		<Russian>Завершение!</Russian>
+		<Hungarian>Befejezés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INIT_INITIALIZING</Tag>
@@ -9453,6 +9506,7 @@
 		<Italian>Inizializzazione</Italian>
 		<Spanish>Iniciando</Spanish>
 		<Russian>Инициализация (это может занять несколько минут на больших картах) ...</Russian>
+		<Hungarian>Inicializálás (nagy térképeknél ez több percig is eltarthat)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INIT_GRAPHICS</Tag>
@@ -9463,6 +9517,7 @@
 		<Italian>Iniz. grafica</Italian>
 		<Spanish>Inic. gráficos</Spanish>
 		<Russian>Инициализация графики ...</Russian>
+		<Hungarian>Grafika inicializálása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INIT_SETUP_PLAYERS</Tag>
@@ -9473,6 +9528,7 @@
 		<Italian>Impostazione giocatori</Italian>
 		<Spanish>Config. jugadores</Spanish>
 		<Russian>Настройка игроков ...</Russian>
+		<Hungarian>Játékosok Beállítása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INIT_SETUP_MAP</Tag>
@@ -9483,6 +9539,7 @@
 		<Italian>Impostazione mappa</Italian>
 		<Spanish>Config. mapa</Spanish>
 		<Russian>Настройка карты ...</Russian>
+		<Hungarian>Térkép Beállítása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INIT_SETUP_INTERFACE</Tag>
@@ -9493,6 +9550,7 @@
 		<Italian>Impostazione interfaccia</Italian>
 		<Spanish>Config. interfaz</Spanish>
 		<Russian>Настройка интерфейса ...</Russian>
+		<Hungarian>Felhasználói felület beállítása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CURRENT</Tag>
@@ -9503,6 +9561,7 @@
 		<Italian>Attuale</Italian>
 		<Spanish>Actual</Spanish>
 		<Russian>В наличии</Russian>
+		<Hungarian>Jelenlegi</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTION_SOUND_SYSTEM_CONFIG</Tag>
@@ -9513,6 +9572,7 @@
 		<Italian>Usa configurazione di sistema</Italian>
 		<Spanish>Usar config. sistema</Spanish>
 		<Russian>Использовать настройки ситемы</Russian>
+		<Hungarian>Rendszerbeállítás használata</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTION_SOUND_HEADPHONES</Tag>
@@ -9523,6 +9583,7 @@
 		<Italian>Cuffie</Italian>
 		<Spanish>Auriculares</Spanish>
 		<Russian>Наушники</Russian>
+		<Hungarian>Fejhallgató</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OVERWRITE_FILE</Tag>
@@ -9533,6 +9594,7 @@
 		<Italian>File di salvataggio di Civilization IV %s1 già esistente.[NEWLINE]Premi OK per continuare e sovrascrivere il file.</Italian>
 		<Spanish>Ya existe el archivo %s1.[NEWLINE]Pulsa 'Aceptar' para continuar y sobrescribirlo.</Spanish>
 		<Russian>Файл %s1 уже существует.[NEWLINE]Нажмите [COLOR_HIGHLIGHT_TEXT]OK[COLOR_REVERT] для продолжения и перезаписи файла.</Russian>
+		<Hungarian>%s1 nevű fájl már létezik.[NEWLINE]Kattints a Rendben gombra a folytatáshoz, és a fájl felülírásához.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILOPEDIA_HISTORY</Tag>
@@ -9543,6 +9605,7 @@
 		<Italian>Informazioni</Italian>
 		<Spanish>Historia</Spanish>
 		<Russian>Описание</Russian>
+		<Hungarian>Történelmi Háttér</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_SCREEN_OTHER</Tag>
@@ -9553,6 +9616,7 @@
 		<Italian>Altro</Italian>
 		<Spanish>Otros</Spanish>
 		<Russian>Другие</Russian>
+		<Hungarian>Egyéb</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SAVING_GAME</Tag>
@@ -9563,6 +9627,7 @@
 		<Italian>Salvataggio in corso...</Italian>
 		<Spanish>Guardando la partida...</Spanish>
 		<Russian>Сохранение игры...</Russian>
+		<Hungarian>Játék Mentése...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUICK_SAVING</Tag>
@@ -9573,6 +9638,7 @@
 		<Italian>Salvataggio rapido in corso...</Italian>
 		<Spanish>Guardado rápido...</Spanish>
 		<Russian>Быстрое сохранение...</Russian>
+		<Hungarian>Gyorsmentés...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_AUTOSAVING</Tag>
@@ -9583,6 +9649,7 @@
 		<Italian>Salvataggio automatico...</Italian>
 		<Spanish>Guardado automático...</Spanish>
 		<Russian>Автосохранение...</Russian>
+		<Hungarian>Automatikus Mentés...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MOVE_FOCUS_BACK_TO</Tag>
@@ -9593,6 +9660,7 @@
 		<Italian>Torna su %s1_unitname</Italian>
 		<Spanish>Volver a centrarse en %s1_unitname</Spanish>
 		<Russian>Вернуться к %s1_unitname</Russian>
+		<Hungarian>Fókusz ismét %s1_unitname egységre</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_ARE_YOU_SURE</Tag>
@@ -9603,6 +9671,7 @@
 		<Italian>Sei sicuro?</Italian>
 		<Spanish>¿Seguro?</Spanish>
 		<Russian>Вы уверены?</Russian>
+		<Hungarian>Biztos vagy benne?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CANCEL_PATCH_DOWNLOAD</Tag>
@@ -9612,6 +9681,7 @@
 		<German>Patch-Download abbrechen</German>
 		<Italian>Annulla il download della patch</Italian>
 		<Spanish>Cancelar la descarga del parche</Spanish>
+		<Hungarian>Patch letöltésének leállítása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HOST_GAME</Tag>
@@ -9621,6 +9691,7 @@
 		<German>Spiel erstellen</German>
 		<Italian>Ospita partita</Italian>
 		<Spanish>Alojar partida</Spanish>
+		<Hungarian>Játék hosztolása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOAD_FILE</Tag>
@@ -9631,6 +9702,7 @@
 		<Italian>Carica file</Italian>
 		<Spanish>Cargar archivo</Spanish>
 		<Russian>Загрузить файл</Russian>
+		<Hungarian>Fájl Betöltése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SAVE_FILE</Tag>
@@ -9641,6 +9713,7 @@
 		<Italian>Salva file</Italian>
 		<Spanish>Guardar archivo</Spanish>
 		<Russian>Сохранить файл</Russian>
+		<Hungarian>Fájl Mentése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_ESCAPE</Tag>
@@ -9650,6 +9723,7 @@
 		<German>Esc</German>
 		<Italian>Esc</Italian>
 		<Spanish>Esc</Spanish>
+		<Hungarian>Esc</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_BACKSPACE</Tag>
@@ -9659,6 +9733,7 @@
 		<German>Rücktaste</German>
 		<Italian>Indietro</Italian>
 		<Spanish>Retroceso</Spanish>
+        <Spanish>Retroceso</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_ENTER</Tag>
@@ -9677,6 +9752,7 @@
 		<German>Strg links</German>
 		<Italian>Ctrl sinistro</Italian>
 		<Spanish>Ctrl izq.</Spanish>
+		<Hungarian>Bal Ctrl</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_LEFT_SHIFT_KEY</Tag>
@@ -9686,6 +9762,7 @@
 		<German>Umschalten links</German>
 		<Italian>Maiusc sinistro</Italian>
 		<Spanish>Mayús izq.</Spanish>
+		<Hungarian>Bal Shift</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_RIGHT_SHIFT_KEY</Tag>
@@ -9695,6 +9772,7 @@
 		<German>Umschalten rechts</German>
 		<Italian>Maiusc destro</Italian>
 		<Spanish>Mayús der.</Spanish>
+		<Hungarian>Jobb Shift</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_NUM_PAD_STAR</Tag>
@@ -9704,6 +9782,7 @@
 		<German>Ziffernblock *</German>
 		<Italian>TastNum *</Italian>
 		<Spanish>* (num.)</Spanish>
+		<Hungarian>Szám. bill. *</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_LEFT_ALT_KEY</Tag>
@@ -9713,6 +9792,7 @@
 		<German>Alt</German>
 		<Italian>Alt sinistro</Italian>
 		<Spanish>Alt izq.</Spanish>
+		<Hungarian>Bal Alt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_SPACE_KEY</Tag>
@@ -9722,6 +9802,7 @@
 		<German>Leertaste</German>
 		<Italian>Barra spaziatrice</Italian>
 		<Spanish>Espacio</Spanish>
+		<Hungarian>Szóköz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_CAPS_LOCK</Tag>
@@ -9758,6 +9839,7 @@
 		<German>Ziffernblock %d1_Num</German>
 		<Italian>TastNum %d1_Num</Italian>
 		<Spanish>%d1_Num (num.)</Spanish>
+		<Hungarian>Szám. bill. %d1_Num</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_NUMPAD_MINUS</Tag>
@@ -9767,6 +9849,7 @@
 		<German>Zifferblock Minus</German>
 		<Italian>TastNum -</Italian>
 		<Spanish>- (num.)</Spanish>
+		<Hungarian>Szám. bill. -</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_NUMPAD_PLUS</Tag>
@@ -9776,6 +9859,7 @@
 		<German>Ziffernblock Plus</German>
 		<Italian>TastNum +</Italian>
 		<Spanish>+ (num.)</Spanish>
+		<Hungarian>Szám. bill. +</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_NUMPAD_PERIOD</Tag>
@@ -9785,6 +9869,7 @@
 		<German>Ziffernblock ,</German>
 		<Italian>TastNum .</Italian>
 		<Spanish>. (num.)</Spanish>
+		<Hungarian>Szám. bill. .</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_NUMPAD_EQUALS</Tag>
@@ -9794,6 +9879,7 @@
 		<German>Ziffernblock =</German>
 		<Italian>TastNum =</Italian>
 		<Spanish>= (num.)</Spanish>
+		<Hungarian>Szám. bill. =</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_NUMPAD_ENTER_KEY</Tag>
@@ -9803,6 +9889,7 @@
 		<German>Ziffernblock Enter</German>
 		<Italian>TastNum Invio</Italian>
 		<Spanish>Intro (num.)</Spanish>
+		<Hungarian>Szám. bill. Enter</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_RIGHT_CONTROL_KEY</Tag>
@@ -9812,6 +9899,7 @@
 		<German>Strg rechts</German>
 		<Italian>Ctrl destro</Italian>
 		<Spanish>Ctrl der.</Spanish>
+		<Hungarian>Jobb Ctrl</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_VOLUME_DOWN</Tag>
@@ -9821,6 +9909,7 @@
 		<German>Leiser</German>
 		<Italian>Abbassa volume</Italian>
 		<Spanish>Volumen -</Spanish>
+		<Hungarian>Halkítás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_VOLUME_UP</Tag>
@@ -9830,6 +9919,7 @@
 		<German>Lauter</German>
 		<Italian>Alza volume</Italian>
 		<Spanish>Volumen +</Spanish>
+		<Hungarian>Hangosítás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_NUMPAD_COMMA</Tag>
@@ -9839,6 +9929,7 @@
 		<German>Ziffernblock .</German>
 		<Italian>TastNum .</Italian>
 		<Spanish>, (num.)</Spanish>
+		<Hungarian>Szám. bill. ,</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_NUMPAD_SLASH</Tag>
@@ -9848,6 +9939,7 @@
 		<German>Ziffernblock /</German>
 		<Italian>TastNum /</Italian>
 		<Spanish>/ (num.)</Spanish>
+		<Hungarian>Szám. bill. /</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_SYSRQ</Tag>
@@ -9857,6 +9949,7 @@
 		<German>S-Abf</German>
 		<Italian>Stamp/R Sist</Italian>
 		<Spanish>Impr Pant</Spanish>
+		<Hungarian>SYSRQ</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_RIGHT_ALT_KEY</Tag>
@@ -9866,6 +9959,7 @@
 		<German>Alt Gr</German>
 		<Italian>Alt Gr</Italian>
 		<Spanish>Alt der.</Spanish>
+		<Hungarian>Jobb Alt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_PAUSE_KEY</Tag>
@@ -9875,6 +9969,7 @@
 		<German>Pause</German>
 		<Italian>Pausa</Italian>
 		<Spanish>Pausa</Spanish>
+		<Hungarian>Pause</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_HOME_KEY</Tag>
@@ -9884,6 +9979,7 @@
 		<German>Pos1</German>
 		<Italian>Home</Italian>
 		<Spanish>Inicio</Spanish>
+		<Hungarian>Home</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_UP_ARROW</Tag>
