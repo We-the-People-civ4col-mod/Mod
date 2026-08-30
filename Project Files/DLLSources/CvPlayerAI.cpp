@@ -11298,6 +11298,15 @@ int CvPlayerAI::AI_desiredCityCount()
 		iCount++;
 	}
 
+	int iLoop;
+	for (CvCity* pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
+	{
+		if (pLoopCity->getPopulation() >= 20)
+		{
+			iCount++;
+		}
+	}
+
 	return std::max(1, iCount);
 }
 

@@ -4883,11 +4883,11 @@
 			<YieldChanges>
 				<YieldChange>
 					<YieldType>YIELD_FOOD</YieldType>
-					<iChange>2</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_BARLEY</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_LUMBER</YieldType>
@@ -6234,7 +6234,7 @@
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_BARLEY</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_LUMBER</YieldType>
@@ -6274,15 +6274,15 @@
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_SILVER</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_GOLD</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_GEMS</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_SHEEP</YieldType>
@@ -6322,35 +6322,35 @@
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_WILD_FEATHERS</YieldType>
-					<iChange>0</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_PREMIUM_FUR</YieldType>
-					<iChange>0</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_COCA_LEAVES</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_YERBA_LEAVES</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_LOGWOOD</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_COCOA_FRUITS</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_KAUTSCHUK</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_MAPLE_SIRUP</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_COFFEE_BERRIES</YieldType>
@@ -6374,11 +6374,11 @@
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_GRAPES</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_FRUITS</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_OLIVES</YieldType>
@@ -6386,19 +6386,19 @@
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_HEMP</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_FLAX</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_RAPE</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_TOBACCO</YieldType>
-					<iChange>2</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_COTTON</YieldType>
@@ -7103,15 +7103,15 @@
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_SILVER</YieldType>
-					<iChange>0</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_GOLD</YieldType>
-					<iChange>0</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_GEMS</YieldType>
-					<iChange>0</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_SHEEP</YieldType>
@@ -7151,103 +7151,103 @@
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_WILD_FEATHERS</YieldType>
-					<iChange>0</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_PREMIUM_FUR</YieldType>
-					<iChange>0</iChange>
+					<iChange>1</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_COCA_LEAVES</YieldType>
-					<iChange>1</iChange>
+					<iChange>2</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_YERBA_LEAVES</YieldType>
-					<iChange>1</iChange>
+					<iChange>2</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_LOGWOOD</YieldType>
-					<iChange>1</iChange>
+					<iChange>2</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_COCOA_FRUITS</YieldType>
-					<iChange>1</iChange>
+					<iChange>2</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_KAUTSCHUK</YieldType>
-					<iChange>1</iChange>
+					<iChange>2</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_MAPLE_SIRUP</YieldType>
-					<iChange>1</iChange>
+					<iChange>2</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_COFFEE_BERRIES</YieldType>
-					<iChange>2</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_PEANUTS</YieldType>
-					<iChange>2</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_SUGAR</YieldType>
-					<iChange>2</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_RICE</YieldType>
-					<iChange>2</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_CASSAVA</YieldType>
-					<iChange>2</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_GRAPES</YieldType>
-					<iChange>1</iChange>
+					<iChange>2</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_FRUITS</YieldType>
-					<iChange>1</iChange>
+					<iChange>2</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_OLIVES</YieldType>
-					<iChange>1</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_HEMP</YieldType>
-					<iChange>1</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_FLAX</YieldType>
-					<iChange>1</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_RAPE</YieldType>
-					<iChange>1</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_TOBACCO</YieldType>
-					<iChange>1</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_COTTON</YieldType>
-					<iChange>2</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_INDIGO</YieldType>
-					<iChange>2</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_COCHINEAL</YieldType>
-					<iChange>2</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_RED_PEPPER</YieldType>
-					<iChange>2</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_VANILLA_PODS</YieldType>
-					<iChange>2</iChange>
+					<iChange>3</iChange>
 				</YieldChange>
 				<YieldChange>
 					<YieldType>YIELD_COCOA</YieldType>

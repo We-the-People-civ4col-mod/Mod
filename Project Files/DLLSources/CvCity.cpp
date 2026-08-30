@@ -11258,6 +11258,10 @@ int CvCity::getUnhappinessFromSlavery() const
 		}
 	}
 
+	// A limited number of slaves can be absorbed by the city population
+	// without causing additional unhappiness.
+	iUnHapSlav = std::max(0, iUnHapSlav - getPopulation() / 4);
+
 	// adjustment for Traits that reduce Unhappiness from Slaves
 	// we only need to check this if we have slaves at all
 	if (iUnHapSlav > 0)
