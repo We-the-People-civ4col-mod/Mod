@@ -19789,12 +19789,22 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 
 					if (pNativeUnit != NULL)
 					{
-						if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, true, NO_PROFESSION))
-						{
-							CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->coord());
+						CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, NO_PROFESSION, pCity->coord());
 
-							if (pUnit != NULL)
+						if (pUnit != NULL)
+						{
+							if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, false, NO_PROFESSION))
 							{
+								pUnit->convert(pNativeUnit, true);
+
+								const ProfessionTypes eDefaultProfession =
+									(ProfessionTypes)GC.getUnitInfo(eUnit).getDefaultProfession();
+
+								if (eDefaultProfession != NO_PROFESSION)
+								{
+									pUnit->setProfession(eDefaultProfession);
+								}
+
 								bUnitCreated = true;
 								gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
 
@@ -19925,12 +19935,22 @@ void CvPlayer::applyTradePostMestizoPoints(CvCity* pCity)
 
 				if (pNativeUnit != NULL)
 				{
-					if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, true, NO_PROFESSION))
-					{
-						CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->coord());
+					CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, NO_PROFESSION, pCity->coord());
 
-						if (pUnit != NULL)
+					if (pUnit != NULL)
+					{
+						if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, false, NO_PROFESSION))
 						{
+							pUnit->convert(pNativeUnit, true);
+
+							const ProfessionTypes eDefaultProfession =
+								(ProfessionTypes)GC.getUnitInfo(eUnit).getDefaultProfession();
+
+							if (eDefaultProfession != NO_PROFESSION)
+							{
+								pUnit->setProfession(eDefaultProfession);
+							}
+							
 							gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
 
 							CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_MESTIZO_CREATED", pCity->getNameKey());

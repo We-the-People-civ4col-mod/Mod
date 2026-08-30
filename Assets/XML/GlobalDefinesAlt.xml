@@ -812,11 +812,11 @@
 	</Define>
 	<Define>
 		<DefineName>MISSIONARY_THRESHOLD</DefineName>
-		<iDefineIntVal>100</iDefineIntVal>
+		<iDefineIntVal>2000</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>TRADE_POST_MESTIZO_THRESHOLD</DefineName>
-		<iDefineIntVal>100</iDefineIntVal>
+		<iDefineIntVal>4000</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>NATIVE_TEACH_THRESHOLD_INCREASE</DefineName>
