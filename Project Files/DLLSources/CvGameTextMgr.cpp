@@ -6585,6 +6585,15 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 				szBuffer.append(NEWLINE);
 				szBuffer.append(GC.getSymbolID(BULLET_CHAR));
 				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_PROFESSION_OUTPUT", kBuilding.getProfessionOutput(), GC.getYieldInfo(eYieldProduced).getChar()));
+				// 1. butcher/dyer/dock produce more than one yield. produced(0) is only the first icon.
+				for (int iProduced = 1; iProduced < kProfession.getNumYieldsProduced(); ++iProduced)
+				{
+					YieldTypes eExtraYield = (YieldTypes) kProfession.getYieldsProduced(iProduced);
+					if (eExtraYield != NO_YIELD)
+					{
+						szBuffer.append(CvWString::format(L"%c", GC.getYieldInfo(eExtraYield).getChar()));
+					}
+				}
 				appendProfessionConsumedYields(szBuffer, kProfession);
 			}
 		}

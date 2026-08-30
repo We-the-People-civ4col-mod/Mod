@@ -143,6 +143,10 @@ class CvPediaBuilding:
 					if gc.getProfessionInfo(iProfession).getNumYieldsProduced() <= 0:
 						continue
 					szText = localText.getText("TXT_KEY_BUILDING_PROFESSION_OUTPUT", (buildingInfo.getProfessionOutput(), gc.getYieldInfo(gc.getProfessionInfo(iProfession).getYieldsProduced(0)).getChar()))
+					for iProduced in range(1, gc.getProfessionInfo(iProfession).getNumYieldsProduced()):
+						iExtraYield = gc.getProfessionInfo(iProfession).getYieldsProduced(iProduced)
+						if iExtraYield != -1:
+							szText += u"%c" % gc.getYieldInfo(iExtraYield).getChar()
 					szConsumed = u""
 					for iConsumed in range(gc.getProfessionInfo(iProfession).getNumYieldsConsumed()):
 						iYieldConsumed = gc.getProfessionInfo(iProfession).getYieldsConsumed(iConsumed)
