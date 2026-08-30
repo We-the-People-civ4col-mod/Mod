@@ -59,7 +59,7 @@
 			<iMinCity>0</iMinCity>
 			<iAIWeightPercent>100</iAIWeightPercent>
 			<iAIBaseValue>5</iAIBaseValue>
-			<iNativeBaseValue>4</iNativeBaseValue>
+			<iNativeBaseValue>3</iNativeBaseValue>
 			<iPower>0</iPower>
 			<iAsset>1</iAsset>
 			<ColorType>COLOR_YIELD_FOOD</ColorType>
@@ -3159,7 +3159,7 @@
 			<iMinCity>0</iMinCity>
 			<iAIWeightPercent>100</iAIWeightPercent>
 			<iAIBaseValue>1</iAIBaseValue>
-			<iNativeBaseValue>1</iNativeBaseValue>
+			<iNativeBaseValue>0</iNativeBaseValue>
 			<iPower>0</iPower>
 			<iAsset>1</iAsset>
 			<ColorType>COLOR_YIELD_FOOD</ColorType>
@@ -3223,7 +3223,7 @@
 			<iMinCity>0</iMinCity>
 			<iAIWeightPercent>100</iAIWeightPercent>
 			<iAIBaseValue>1</iAIBaseValue>
-			<iNativeBaseValue>1</iNativeBaseValue>
+			<iNativeBaseValue>2</iNativeBaseValue>
 			<iPower>0</iPower>
 			<iAsset>1</iAsset>
 			<ColorType>COLOR_YIELD_FOOD</ColorType>
@@ -6641,7 +6641,7 @@
 			<iMinCity>0</iMinCity>
 			<iAIWeightPercent>100</iAIWeightPercent>
 			<iAIBaseValue>5</iAIBaseValue>
-			<iNativeBaseValue>0</iNativeBaseValue>
+			<iNativeBaseValue>3</iNativeBaseValue>
 			<iPower>0</iPower>
 			<iAsset>0</iAsset>
 			<ColorType>COLOR_YIELD_FOOD</ColorType>

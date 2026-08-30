@@ -6674,7 +6674,9 @@ void CvPlot::updateWorkingCity()
 					{
 						// XXX use getGameTurnAcquired() instead???
 						if ((pBestCity == NULL) ||
-							(!pLoopCity->isHuman() && (pLoopCity->getGameTurnAcquired() < pBestCity->getGameTurnAcquired())) ||
+							(!pLoopCity->isHuman() &&
+							 !GET_PLAYER(pLoopCity->getOwnerINLINE()).isNative() &&
+							 (pLoopCity->getGameTurnAcquired() < pBestCity->getGameTurnAcquired())) ||
 							  (GC.getCityPlotPriority()[iI] < GC.getCityPlotPriority()[iBestPlot]) ||
 							  ((GC.getCityPlotPriority()[iI] == GC.getCityPlotPriority()[iBestPlot]) &&
 							   ((pLoopCity->getGameTurnFounded() < pBestCity->getGameTurnFounded()) ||

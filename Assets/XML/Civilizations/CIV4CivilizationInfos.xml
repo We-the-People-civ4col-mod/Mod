@@ -3970,7 +3970,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -5105,7 +5105,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -6243,7 +6243,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -7382,7 +7382,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -8516,7 +8516,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -9654,7 +9654,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -10792,7 +10792,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -11930,7 +11930,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -13068,7 +13068,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -14198,7 +14198,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -15328,7 +15328,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -16458,7 +16458,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -17592,7 +17592,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -18730,7 +18730,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -19865,7 +19865,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -21000,7 +21000,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -22138,7 +22138,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -23276,7 +23276,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -24410,7 +24410,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -25549,7 +25549,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -26688,7 +26688,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -27822,7 +27822,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -28960,7 +28960,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -30098,7 +30098,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -31232,7 +31232,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -32370,7 +32370,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -33504,7 +33504,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -34642,7 +34642,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -35777,7 +35777,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -36907,7 +36907,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>
@@ -38041,7 +38041,7 @@
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_TAVERN</BuildingClassType>
-					<BuildingType>NONE</BuildingType>
+					<BuildingType>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</BuildingType>
 				</Building>
 				<Building>
 					<BuildingClassType>BUILDINGCLASS_SALOON</BuildingClassType>

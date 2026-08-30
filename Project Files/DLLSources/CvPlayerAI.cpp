@@ -1044,6 +1044,64 @@ void CvPlayerAI::AI_unitUpdate()
 			{
 				if (isNative())
 				{
+					// WTP, Schmiddie, Native expansion START
+					if (pLoopCity->getPopulation() >= 15)
+					{
+						const ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(UNITAI_SETTLER, pLoopCity);
+
+						if (eProfession != NO_PROFESSION)
+						{
+							static_cast<CvCityAI*>(pLoopCity)->AI_doSettlerProfessionCheat();
+
+							int iBestValue = 0;
+							CvUnit* pBestUnit = NULL;
+
+							for (int i = 0; i < pLoopCity->getPopulation(); ++i)
+							{
+								CvUnit* pUnit = pLoopCity->getPopulationUnitByIndex(i);
+
+								if (pUnit != NULL && pUnit->canHaveProfession(eProfession, false))
+								{
+									int iValue = AI_professionSuitability(pUnit, eProfession, pLoopCity->plot());
+
+									if (pUnit->getProfession() == pUnit->AI_getIdealProfession())
+									{
+										iValue /= 4;
+									}
+
+									if (pUnit->AI_getIdealProfession() != NO_PROFESSION)
+									{
+										if ((pUnit->getProfession() != pUnit->AI_getIdealProfession()) && (GC.getProfessionInfo(pUnit->AI_getIdealProfession()).isWorkPlot()))
+										{
+											iValue *= 150;
+											iValue /= 100;
+										}
+									}
+									else
+									{
+										iValue *= 120;
+										iValue /= 100;
+									}
+
+									if (iValue > iBestValue)
+									{
+										iBestValue = iValue;
+										pBestUnit = pUnit;
+									}
+								}
+							}
+
+							if (pBestUnit != NULL)
+							{
+								if (pLoopCity->removePopulationUnit(CREATE_ASSERT_DATA, pBestUnit, false, eProfession))
+								{
+									pBestUnit->AI_setUnitAIType(UNITAI_SETTLER);
+								}
+							}
+						}
+					}
+					// WTP, Schmiddie, Native expansion END
+
 					pLoopCity->AI_doNative();
 				}
 				else if (pLoopCity->getPopulation() > 1)
@@ -1786,25 +1844,32 @@ int CvPlayerAI::AI_foundValue(int iX, int iY, int iMinRivalRange, bool bStarting
 		{
 			return 0;
 		}
-		if (iCityDistance < iRange || iCityDistance > (iRange * 3))
+		if (iCityDistance > (iRange * 3))
 		{
 			return 0;
 		}
 
-		for (int iDX = -iRange; iDX <= iRange; ++iDX)
+		// Keep a minimum distance of 4 from all Native villages.
+		for (int iDX = -3; iDX <= 3; ++iDX)
 		{
-			for (int iDY = -iRange; iDY <= iRange; ++iDY)
+			for (int iDY = -3; iDY <= 3; ++iDY)
 			{
 				CvPlot* pLoopPlot = plotXY(iX, iY, iDX, iDY);
 
-				if (pLoopPlot != NULL)
+				if (pLoopPlot != NULL && pLoopPlot->isCity())
 				{
-					if (pLoopPlot->isOwned())
+					if (GET_PLAYER(pLoopPlot->getOwnerINLINE()).isNative())
 					{
 						return 0;
 					}
 				}
 			}
+		}
+
+		// Do not found on developed land.
+		if (pPlot->getImprovementType() != NO_IMPROVEMENT)
+		{
+			return 0;
 		}
 	}
 
@@ -5806,6 +5871,78 @@ int CvPlayerAI::AI_totalUnitAIs(UnitAITypes eUnitAI)
 	return (AI_getNumTrainAIUnits(eUnitAI) + AI_getNumAIUnits(eUnitAI));
 }
 
+// WTP, Schmiddie, Native military unit cap START
+bool CvPlayerAI::AI_hasNativeColonialBorderContact() const
+{
+	if (!isNative())
+	{
+		return false;
+	}
+
+	for (int iPlot = 0; iPlot < GC.getMap().numPlotsINLINE(); ++iPlot)
+	{
+		CvPlot* pPlot = GC.getMap().plotByIndexINLINE(iPlot);
+
+		if (pPlot == NULL || pPlot->getOwnerINLINE() != getID())
+		{
+			continue;
+		}
+
+		for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; ++iDirection)
+		{
+			CvPlot* pAdjacentPlot = plotDirection(
+				pPlot->getX_INLINE(),
+				pPlot->getY_INLINE(),
+				(DirectionTypes)iDirection);
+
+			if (pAdjacentPlot == NULL)
+			{
+				continue;
+			}
+
+			const PlayerTypes eAdjacentOwner = pAdjacentPlot->getOwnerINLINE();
+
+			if (eAdjacentOwner != NO_PLAYER &&
+				GET_PLAYER(eAdjacentOwner).is(CIV_CATEGORY_COLONIAL))
+			{
+				return true;
+			}
+		}
+	}
+
+	return false;
+}
+bool CvPlayerAI::AI_isNativeMilitaryUnitCapReached()
+{
+	if (!isNative())
+	{
+		return false;
+	}
+
+	const int iMilitaryUnitCount =
+		AI_totalUnitAIs(UNITAI_DEFENSIVE) +
+		AI_totalUnitAIs(UNITAI_OFFENSIVE) +
+		AI_totalUnitAIs(UNITAI_COUNTER);
+
+	const int iBaseCap =
+		GC.getDefineINT("NATIVE_MILITARY_UNIT_CAP");
+
+	const int iBorderContactCap =
+		GC.getDefineINT("NATIVE_MILITARY_UNIT_CAP_BORDER_CONTACT");
+
+	if (iMilitaryUnitCount < iBaseCap)
+	{
+		return false;
+	}
+
+	if (iMilitaryUnitCount >= iBorderContactCap)
+	{
+		return true;
+	}
+
+	return !AI_hasNativeColonialBorderContact();
+}
+// WTP, Schmiddie, Native military unit cap END
 
 int CvPlayerAI::AI_totalAreaUnitAIs(CvArea* pArea, UnitAITypes eUnitAI)
 {
@@ -10656,20 +10793,22 @@ void CvPlayerAI::AI_createNatives()
 	for (pLoopCity = firstCity(&iLoop); pLoopCity != NULL; pLoopCity = nextCity(&iLoop))
 	{
 
-		int iExtraPop = std::max(1, ((getNumCities() - iCount) * 3) / getNumCities());
+		int iExtraPop = std::max(3, ((getNumCities() - iCount) * 3) / getNumCities());
 
 		if (iCount == 0)
 		{
 			iExtraPop++;
 		}
 
-		//Require a certain minimum food surplus.
-		while ((pLoopCity->AI_getFoodGatherable(1 + iExtraPop, GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION) / 2) < GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION * (1 + iExtraPop))
+		// Require a certain minimum food surplus.
+		while ((pLoopCity->AI_getFoodGatherable(iExtraPop, GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION) / 2)
+			< GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION * iExtraPop)
 		{
 			iExtraPop--;
-			if (iExtraPop == 0)
+
+			if (iExtraPop <= 3)
 			{
-				iExtraPop = 1;
+				iExtraPop = 3;
 				break;
 			}
 		}

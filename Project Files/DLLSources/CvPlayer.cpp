@@ -19775,7 +19775,7 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 		int iModifier = 100 + getMissionaryRateModifier() + GET_PLAYER(ePlayer).getMissionaryRateModifier();
 		changeMissionaryPoints(ePlayer, pCity->getMissionaryRate() * iModifier / 100);
 		int iThreshold = missionaryThreshold(ePlayer);
-		if (getMissionaryPoints(ePlayer) >= iThreshold)
+		if (getMissionaryPoints(ePlayer) >= iThreshold && pCity->getPopulation() > 1)
 		{
 			//spawn converted native
 			bool bUnitCreated = false;
@@ -19785,17 +19785,28 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 				UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eUnitClass);
 				if (eUnit != NO_UNIT)
 				{
-					CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->coord());
-					if(pUnit != NULL)
+					CvUnit* pNativeUnit = pCity->getPopulationUnitByIndex(0);
+
+					if (pNativeUnit != NULL)
 					{
-						bUnitCreated = true;
-						gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
+						CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, NO_PROFESSION, pCity->coord());
 
-						CvWString szBuffer = gDLL->getText("TXT_KEY_NATIVES_CONVERTED", pCity->getNameKey());
-						gDLL->UI().addPlayerMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szBuffer, pCity, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_INFO, GC.getUnitInfo(eUnit).getButton(), COLOR_UNIT_TEXT, true, true);
+						if (pUnit != NULL)
+						{
+							if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, false, NO_PROFESSION))
+							{
+								pUnit->convert(pNativeUnit, true);
 
-						changeMissionaryPoints(ePlayer, -iThreshold);
-						setMissionaryThresholdMultiplier(ePlayer, (getMissionaryThresholdMultiplier(ePlayer) * (100 + GC.getDefineINT("MISSIONARY_THRESHOLD_INCREASE"))) / 100);
+								bUnitCreated = true;
+								gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
+
+								CvWString szBuffer = gDLL->getText("TXT_KEY_NATIVES_CONVERTED", pCity->getNameKey());
+								gDLL->UI().addPlayerMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szBuffer, pCity, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_INFO, GC.getUnitInfo(eUnit).getButton(), COLOR_UNIT_TEXT, true, true);
+
+								changeMissionaryPoints(ePlayer, -iThreshold);
+								setMissionaryThresholdMultiplier(ePlayer, (getMissionaryThresholdMultiplier(ePlayer) * (100 + GC.getDefineINT("MISSIONARY_THRESHOLD_INCREASE"))) / 100);
+							}
+						}
 					}
 				}
 			}
@@ -19845,6 +19856,99 @@ int CvPlayer::missionaryThreshold(PlayerTypes ePlayer) const
 
 	return std::max(1, iThreshold);
 }
+
+// WTP, Schmiddie, Trade Post Mestizo - START
+int CvPlayer::getTradePostMestizoPoints(PlayerTypes ePlayer) const
+{
+	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
+	return m_em_iTradePostMestizoPoints.get(ePlayer);
+}
+
+void CvPlayer::changeTradePostMestizoPoints(PlayerTypes ePlayer, int iChange)
+{
+	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
+	if (iChange != 0)
+	{
+		m_em_iTradePostMestizoPoints.add(ePlayer, iChange);
+		FAssert(m_em_iTradePostMestizoPoints.get(ePlayer) >= 0);
+	}
+}
+
+int CvPlayer::getTradePostMestizoThresholdMultiplier(PlayerTypes ePlayer) const
+{
+	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
+	return m_em_iTradePostMestizoThresholdMultiplier.get(ePlayer);
+}
+
+void CvPlayer::setTradePostMestizoThresholdMultiplier(PlayerTypes ePlayer, int iValue)
+{
+	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
+	m_em_iTradePostMestizoThresholdMultiplier.set(ePlayer, iValue);
+	FAssert(getTradePostMestizoThresholdMultiplier(ePlayer) > 0);
+}
+
+int CvPlayer::tradePostMestizoThreshold(PlayerTypes ePlayer) const
+{
+	int iThreshold = ((GC.getDefineINT("TRADE_POST_MESTIZO_THRESHOLD") * std::max(0, getTradePostMestizoThresholdMultiplier(ePlayer))) / 100);
+
+	iThreshold *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+	iThreshold /= 100;
+
+	iThreshold *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getGrowthPercent();
+	iThreshold /= 100;
+
+	return std::max(1, iThreshold);
+}
+// WTP, Schmiddie, Trade Post Mestizo - END
+
+// WTP, Schmiddie, Trade Post Mestizo - START
+void CvPlayer::applyTradePostMestizoPoints(CvCity* pCity)
+{
+	FAssert(pCity->getOwnerINLINE() == getID());
+
+	PlayerTypes ePlayer = pCity->getTradePostPlayer();
+
+	if (ePlayer != NO_PLAYER)
+	{
+		int iModifier = 100 + getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
+
+		changeTradePostMestizoPoints(ePlayer, pCity->getNativeTradeRate() * iModifier / 100);
+
+		int iThreshold = tradePostMestizoThreshold(ePlayer);
+
+		if (getTradePostMestizoPoints(ePlayer) >= iThreshold && pCity->getPopulation() > 1)
+		{
+			UnitClassTypes eUnitClass = (UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_MESTIZZO");
+			UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eUnitClass);
+
+			if (eUnit != NO_UNIT)
+			{
+				CvUnit* pNativeUnit = pCity->getPopulationUnitByIndex(0);
+
+				if (pNativeUnit != NULL)
+				{
+					CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, NO_PROFESSION, pCity->coord());
+
+					if (pUnit != NULL)
+					{
+						if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, false, NO_PROFESSION))
+						{
+							pUnit->convert(pNativeUnit, true);
+							
+							gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
+
+							CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_MESTIZO_CREATED", pCity->getNameKey());
+							gDLL->UI().addPlayerMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szBuffer, pCity, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_INFO, GC.getUnitInfo(eUnit).getButton(), COLOR_UNIT_TEXT, true, true);
+
+							changeTradePostMestizoPoints(ePlayer, -iThreshold);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// WTP, Schmiddie, Trade Post Mestizo - END
 
 void CvPlayer::burnMissions(PlayerTypes ePlayer)
 {

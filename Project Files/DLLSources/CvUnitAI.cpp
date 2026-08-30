@@ -25,7 +25,7 @@
 #include "CvSavegame.h"
 #include "BetterBTSAI.h"
 
-#define FOUND_RANGE				(7)
+#define FOUND_RANGE				(10)
 
 #define MOVE_PRIORITY_MAX 			2000
 #define MOVE_PRIORITY_HIGH 			1500
@@ -1584,7 +1584,7 @@ void CvUnitAI::AI_settlerMove()
 
 	if (isNative())
 	{
-		if (AI_foundRange(7))
+		if (AI_foundRange(10))
 		{
 			return;
 		}
@@ -1592,7 +1592,7 @@ void CvUnitAI::AI_settlerMove()
 		{
 			return;
 		}
-		if (GC.getGame().getGameTurn() - AI_getLastAIChangeTurn() > 10)
+		if (GC.getGame().getGameTurn() - AI_getLastAIChangeTurn() > 20)
 		{
 			AI_setUnitAIType(UNITAI_DEFENSIVE);
 			return;
@@ -3464,6 +3464,14 @@ void CvUnitAI::AI_defensiveBraveMove()
 
 	CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
 
+	const bool bBorderContact = kOwner.AI_hasNativeColonialBorderContact();
+
+	const int iMilitaryTarget = bBorderContact
+		? GC.getDefineINT("NATIVE_MILITARY_INITIAL_UNITS_PER_CITY_BORDER_CONTACT")
+		: GC.getDefineINT("NATIVE_MILITARY_INITIAL_UNITS_PER_CITY");
+
+	const int iMaxWanderers = std::max(1, iMilitaryTarget - 1);
+
 	bool bDanger = kOwner.AI_getPlotDanger(plot(), 2, false);
 
 	if (pCity != NULL)
@@ -3483,9 +3491,12 @@ void CvUnitAI::AI_defensiveBraveMove()
 
 		if (pCity->AI_isDefended(-2))
 		{
-			if (AI_joinCityBrave())
+			if (kOwner.AI_countNumHomedUnits(pCity, UNITAI_DEFENSIVE, NO_UNITAI_STATE) > iMilitaryTarget)
 			{
-				return;
+				if (AI_joinCityBrave())
+				{
+					return;
+				}
 			}
 		}
 
@@ -3506,11 +3517,14 @@ void CvUnitAI::AI_defensiveBraveMove()
 
 		if (pCity == getHomeCity())
 		{
-			if (pCity->AI_isDefended(-1))
+			if (kOwner.AI_countNumHomedUnits(pCity, UNITAI_DEFENSIVE, NO_UNITAI_STATE) >= iMilitaryTarget)
 			{
-				if (AI_joinCityBrave())
+				if (kOwner.AI_countNumHomedUnits(pCity, UNITAI_DEFENSIVE, NO_UNITAI_STATE) > iMilitaryTarget)
 				{
-					return;
+					if (AI_joinCityBrave())
+					{
+						return;
+					}
 				}
 
 				// R&R, ray, Natives raiding party - START
@@ -3569,9 +3583,10 @@ void CvUnitAI::AI_defensiveBraveMove()
 						}
 					}
 					// R&R, ray, Natives Trading - END
-					else if (GC.getGame().getSorenRandNum(10, "AI native start wandering") == 0)
+
+					if (AI_getUnitAIState() == UNITAI_STATE_DEFAULT)
 					{
-						if (kOwner.AI_countNumHomedUnits(pCity, NO_UNITAI, UNITAI_STATE_WANDER) < 2)
+						if (kOwner.AI_countNumHomedUnits(pCity, NO_UNITAI, UNITAI_STATE_WANDER) < iMaxWanderers)
 						{
 							AI_setUnitAIState(UNITAI_STATE_WANDER);
 							//fall through.
@@ -3733,10 +3748,46 @@ void CvUnitAI::AI_defensiveBraveMove()
 		}
 	}
 
-	if (AI_group(UNITAI_DEFENSIVE))
+
+	// After losing their home village, Braves first try to find another
+	// existing village. If none exists, one unit will rebuild the tribe
+	// while the remaining homeless Braves wait for a new home.
+	if (getHomeCity() == NULL)
 	{
-		// Group with other defenders
+		if (AI_findNewHomeColony())
+		{
+			return;
+		}
+
+		// Do not allow homeless Braves to form a roaming doomstack
+		// while another unit is rebuilding the tribe.
+		AI_breakOversizedNativeDefensiveGroup();
+
+		if (AI_safety())
+		{
+			return;
+		}
+
+		getGroup()->pushMission(MISSION_SKIP);
 		return;
+	}
+
+	// Raiding parties use their own movement logic above and must not be
+	// split or limited by the ordinary defensive brave group cap.
+	if (AI_getUnitAIState() != UNITAI_STATE_RAIDING_PARTY)
+	{
+		AI_breakOversizedNativeDefensiveGroup();
+
+		int iMaxNativeGroup = GC.getDefineINT("NATIVE_DEFENSIVE_GROUP_MAX");
+		if (iMaxNativeGroup < 1)
+		{
+			iMaxNativeGroup = 10;
+		}
+
+		if (AI_group(UNITAI_DEFENSIVE, iMaxNativeGroup, -1, -1, false, false, false, 1))
+		{
+			return;
+		}
 	}
 
 	if (AI_guardHomeColony())
@@ -3744,15 +3795,12 @@ void CvUnitAI::AI_defensiveBraveMove()
 		return;
 	}
 
-	if (AI_findNewHomeColony())
+	if (getHomeCity()->AI_isDefended(-1))
 	{
-		return;
-	}
-
-	if (getHomeCity() == NULL)
-	{
-		kill(true);//One way to deal with the homeless problem.
-		return;
+		if (AI_findNewHomeColony())
+		{
+			return;
+		}
 	}
 
 	getGroup()->pushMission(MISSION_SKIP);
@@ -6446,15 +6494,22 @@ bool CvUnitAI::AI_findNewHomeColony()
 {
 	int iBestValue = MAX_INT;
 	CvCity* pBestCity = NULL;
+	CvCity* pCurrentHome = getHomeCity();
 
 	CvPlayer& kPlayer = GET_PLAYER(getOwnerINLINE());
 	int iLoop;
 	for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
 	{
-		int iPathTurns;
+		if (pLoopCity == pCurrentHome && pCurrentHome->AI_isDefended(-1))
+		{
+			continue;
+		}
+
+		int iPathTurns = 0;
 		if (generatePath(pLoopCity->plot(), 0, true, &iPathTurns))
 		{
-			int iValue = iPathTurns * (25 + GC.getGameINLINE().getSorenRandNum(75, "AI Find New Home"));
+			int iValue = 1 + iPathTurns * 10;
+			iValue += pLoopCity->AI_numDefenders(true, false) * 8;
 
 			if (iValue < iBestValue)
 			{
@@ -6464,17 +6519,57 @@ bool CvUnitAI::AI_findNewHomeColony()
 		}
 	}
 
-	if (pBestCity != NULL)
+	if (pBestCity == NULL)
 	{
-		setHomeCity(pBestCity);
-		if (generatePath(getHomeCity()->plot(), 0, true))
-		{
-			getGroup()->pushMission(MISSION_MOVE_TO, getHomeCity()->getX_INLINE(), getHomeCity()->getY_INLINE());
-			return true;
-		}
+		return false;
+	}
+
+	setHomeCity(pBestCity);
+	if (atPlot(pBestCity->plot()))
+	{
+		return false;
+	}
+
+	if (generatePath(pBestCity->plot(), 0, true))
+	{
+		getGroup()->pushMission(MISSION_MOVE_TO, pBestCity->getX_INLINE(), pBestCity->getY_INLINE());
+		return true;
 	}
 
 	return false;
+}
+
+bool CvUnitAI::AI_breakOversizedNativeDefensiveGroup()
+{
+	if (!GET_PLAYER(getOwnerINLINE()).isNative())
+	{
+		return false;
+	}
+
+	CvSelectionGroup* pGroup = getGroup();
+	if (pGroup == NULL)
+	{
+		return false;
+	}
+
+	int iMaxNativeGroup = GC.getDefineINT("NATIVE_DEFENSIVE_GROUP_MAX");
+	if (iMaxNativeGroup < 1)
+	{
+		iMaxNativeGroup = 5;
+	}
+
+	if (pGroup->getNumUnits() <= iMaxNativeGroup)
+	{
+		return false;
+	}
+
+	if (pGroup->getHeadUnit() == this)
+	{
+		return false;
+	}
+
+	joinGroup(NULL);
+	return true;
 }
 
 bool CvUnitAI::AI_europeBuyNativeYields()
@@ -15060,7 +15155,7 @@ int CvUnitAI::AI_foundValue(CvPlot* pPlot)
 	}
 
 	int iValue = 0;
-	if ((kOwner.getNumCities() == 0) /* && (GC.getGameINLINE().getGameTurn() < 20)*/)
+	if (kOwner.isNative() || (kOwner.getNumCities() == 0) /* && (GC.getGameINLINE().getGameTurn() < 20)*/)
 	{
 		iValue = kOwner.AI_foundValue(pPlot->getX_INLINE(), pPlot->getY_INLINE());
 	}

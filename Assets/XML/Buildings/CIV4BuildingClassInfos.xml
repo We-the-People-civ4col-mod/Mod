@@ -804,5 +804,17 @@
 			<DefaultBuilding>BUILDING_JAIL</DefaultBuilding>
 			<VictoryThresholds/>
 		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_NATIVE_MISSION_STATION</Type>
+			<Description>TXT_KEY_BUILDINGCLASS_NATIVE_MISSION_STATION</Description>
+			<DefaultBuilding>BUILDING_NATIVE_MISSION_STATION</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
+		<BuildingClassInfo>
+			<Type>BUILDINGCLASS_NATIVE_TRADE_POST</Type>
+			<Description>TXT_KEY_BUILDINGCLASS_NATIVE_TRADE_POST</Description>
+			<DefaultBuilding>BUILDING_NATIVE_TRADE_POST</DefaultBuilding>
+			<VictoryThresholds/>
+		</BuildingClassInfo>
 	</BuildingClassInfos>
 </Civ4BuildingClassInfos>

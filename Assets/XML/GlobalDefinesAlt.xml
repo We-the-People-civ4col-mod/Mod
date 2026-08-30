@@ -616,6 +616,33 @@
 		<iDefineIntVal>75</iDefineIntVal>
 	</Define>
 	<Define>
+		<!-- 1. native braves used AI_group(UNITAI_DEFENSIVE) with no size or path cap.
+		     after a village was abandoned they all joined one roaming stack. keep
+		     warbands small. -->
+		<DefineName>NATIVE_DEFENSIVE_GROUP_MAX</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>NATIVE_MIN_FOOD_WORKERS_PER_CITY</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>NATIVE_MILITARY_INITIAL_UNITS_PER_CITY</DefineName>
+		<iDefineIntVal>3</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>NATIVE_MILITARY_INITIAL_UNITS_PER_CITY_BORDER_CONTACT</DefineName>
+		<iDefineIntVal>5</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>NATIVE_MILITARY_UNIT_CAP</DefineName>
+		<iDefineIntVal>25</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>NATIVE_MILITARY_UNIT_CAP_BORDER_CONTACT</DefineName>
+		<iDefineIntVal>50</iDefineIntVal>
+	</Define>
+	<Define>
 		<DefineName>STIR_UP_BASE_CHANCE</DefineName>
 		<iDefineIntVal>30</iDefineIntVal>
 	</Define>
@@ -786,6 +813,10 @@
 	<Define>
 		<DefineName>MISSIONARY_THRESHOLD</DefineName>
 		<iDefineIntVal>2000</iDefineIntVal>
+	</Define>
+	<Define>
+		<DefineName>TRADE_POST_MESTIZO_THRESHOLD</DefineName>
+		<iDefineIntVal>4000</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>NATIVE_TEACH_THRESHOLD_INCREASE</DefineName>

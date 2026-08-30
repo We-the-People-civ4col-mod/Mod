@@ -609,6 +609,11 @@ void CvCity::doTurn()
 		changeCultureUpdateTimer(-1);
 	}
 
+	if (getForeignBuildingBurnTimer() > 0)
+	{
+		changeForeignBuildingBurnTimer(-1);
+	}
+
 	if (getOccupationTimer() > 0)
 	{
 		changeOccupationTimer(-1);
@@ -3935,6 +3940,22 @@ void CvCity::setOccupationTimer(int iNewValue)
 void CvCity::changeOccupationTimer(int iChange)
 {
 	setOccupationTimer(getOccupationTimer() + iChange);
+}
+
+int CvCity::getForeignBuildingBurnTimer() const
+{
+	return m_iForeignBuildingBurnTimer;
+}
+
+void CvCity::setForeignBuildingBurnTimer(int iNewValue)
+{
+	m_iForeignBuildingBurnTimer = iNewValue;
+	FAssert(getForeignBuildingBurnTimer() >= 0);
+}
+
+void CvCity::changeForeignBuildingBurnTimer(int iChange)
+{
+	setForeignBuildingBurnTimer(getForeignBuildingBurnTimer() + iChange);
 }
 
 // WTP, Slave Emancipation - START
@@ -7397,10 +7418,11 @@ void CvCity::doGrowth()
 	{
 		CyCity* const pyCity = new CyCity(static_cast<CvCity*>(this));
 		CyArgsList argsList;
-		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
-		long lResult=0;
+		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));
+		long lResult = 0;
 		gDLL->getPythonIFace()->callFunction(PYGameModule, "doGrowth", argsList.makeFunctionArgs(), &lResult);
-		delete pyCity;	// python fxn must not hold on to this pointer
+		delete pyCity;
+
 		if (lResult == 1)
 		{
 			return;
@@ -7424,13 +7446,12 @@ void CvCity::doGrowth()
 		{
 			// WTP, ray, Ethnically correct Population Growth - START
 			UnitTypes eUnit = NO_UNIT;
+
 			if (GLOBAL_DEFINE_ENABLE_ETHICALLY_CORRECT_GROWTH && !isNative())
 			{
-				// we have to cast from UnitClassTypes to int
 				UnitClassTypes iIDBestGrowthUnit = bestGrowthUnitClass();
 				eUnit = GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iIDBestGrowthUnit);
 			}
-			// old logic in else
 			else
 			{
 				eUnit = GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GLOBAL_DEFINE_DEFAULT_POPULATION_UNIT);
@@ -7439,85 +7460,328 @@ void CvCity::doGrowth()
 
 			if (NO_UNIT != eUnit)
 			{
+				bool bNativeHasAvailableJob = false;
+				bool bNativeNeedsInitialMilitary = false;
+				bool bNativeMilitaryCapReached = false;
+				bool bNativeNeedsFoodWorkers = false;
+
+				// WTP, Schmiddie, Native military unit cap START
+				if (isNative())
+				{
+					CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+					bNativeMilitaryCapReached =
+						kOwner.AI_isNativeMilitaryUnitCapReached();
+
+					// Check if the settlement still has a usable citizen job.
+					for (ProfessionTypes eProfession = FIRST_PROFESSION;
+						eProfession < NUM_PROFESSION_TYPES;
+						++eProfession)
+					{
+						const CvProfessionInfo& kProfession =
+							GC.getProfessionInfo(eProfession);
+
+						if (!kProfession.isCitizen())
+						{
+							continue;
+						}
+
+						if (GC.getUnitInfo(eUnit).getProfessionsNotAllowed(eProfession))
+						{
+							continue;
+						}
+
+						if (!kOwner.isProfessionValid(eProfession, eUnit))
+						{
+							continue;
+						}
+
+						if (!isAvailableProfessionSlot(eProfession, NULL))
+						{
+							continue;
+						}
+
+						if (kProfession.getSpecialBuilding() != NO_SPECIALBUILDING &&
+							getProfessionOutput(eProfession, NULL) <= 0)
+						{
+							continue;
+						}
+
+						bNativeHasAvailableJob = true;
+						break;
+					}
+					
+					// Count citizens currently working food-producing plots.
+					int iNativeFoodWorkers = 0;
+
+					for (int i = 0; i < getPopulation(); ++i)
+					{
+						CvUnit* pUnit = getPopulationUnitByIndex(i);
+
+						if (pUnit == NULL)
+						{
+							continue;
+						}
+
+						const ProfessionTypes eProfession = pUnit->getProfession();
+
+						if (eProfession == NO_PROFESSION)
+						{
+							continue;
+						}
+
+						const CvProfessionInfo& kProfession =
+							GC.getProfessionInfo(eProfession);
+
+						if (!kProfession.isWorkPlot())
+						{
+							continue;
+						}
+
+						if (!isUnitWorkingAnyPlot(pUnit))
+						{
+							continue;
+						}
+
+						for (int iYield = 0;
+							iYield < kProfession.getNumYieldsProduced();
+							++iYield)
+						{
+							if ((YieldTypes)kProfession.getYieldsProduced(iYield) == YIELD_FOOD)
+							{
+								++iNativeFoodWorkers;
+								break;
+							}
+						}
+					}
+
+					const int iMinFoodWorkers =
+						GC.getDefineINT("NATIVE_MIN_FOOD_WORKERS_PER_CITY");
+
+					bNativeNeedsFoodWorkers =
+						(iNativeFoodWorkers < iMinFoodWorkers);
+
+					// Count military map units belonging to this settlement.
+					int iHomeCityMilitaryUnits = 0;
+
+					int iLoop;
+					for (CvUnit* pLoopUnit = kOwner.firstUnit(&iLoop);
+						pLoopUnit != NULL;
+						pLoopUnit = kOwner.nextUnit(&iLoop))
+					{
+						const UnitAITypes eUnitAI =
+							pLoopUnit->AI_getUnitAIType();
+
+						if (pLoopUnit->getHomeCity() == this &&
+							(eUnitAI == UNITAI_DEFENSIVE ||
+							 eUnitAI == UNITAI_OFFENSIVE ||
+							 eUnitAI == UNITAI_COUNTER))
+						{
+							++iHomeCityMilitaryUnits;
+						}
+					}
+
+					const bool bBorderContact =
+						kOwner.AI_hasNativeColonialBorderContact();
+
+					const int iInitialMilitaryUnits =
+						GC.getDefineINT(
+							bBorderContact ?
+							"NATIVE_MILITARY_INITIAL_UNITS_PER_CITY_BORDER_CONTACT" :
+							"NATIVE_MILITARY_INITIAL_UNITS_PER_CITY");
+
+					bNativeNeedsInitialMilitary =
+						(iHomeCityMilitaryUnits < iInitialMilitaryUnits);
+
+					// If there is no job, the tribal cap is reached and no
+					// local initial force is allowed either, keep the food stored.
+					if (!bNativeHasAvailableJob &&
+						bNativeMilitaryCapReached)
+					{
+						return;
+					}
+				}
+				// WTP, Schmiddie, Native military unit cap END
+
 				OOS_LOG_3("City growth unit", CvString(getName()).c_str(), getTypeStr(eUnit));
-				GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());
+
+				CvUnit* pGrowthUnit =
+					GET_PLAYER(getOwnerINLINE()).initUnit(
+						eUnit,
+						GC.getCivilizationInfo(
+							GET_PLAYER(getOwnerINLINE()).getCivilizationType())
+							.getDefaultProfession(),
+						getX_INLINE(),
+						getY_INLINE());
+
+				// WTP, Schmiddie, Native military unit cap START
+				if (isNative() && pGrowthUnit != NULL)
+				{
+					// Global tribal cap always has priority over creating
+					// additional map Braves.
+					if (bNativeMilitaryCapReached)
+					{
+						if (bNativeHasAvailableJob)
+						{
+							addPopulationUnit(pGrowthUnit, NO_PROFESSION);
+						}
+						else
+						{
+							pGrowthUnit->kill(false);
+							return;
+						}
+					}
+					// First establish a minimum food-producing workforce.
+					else if (bNativeNeedsFoodWorkers && bNativeHasAvailableJob)
+					{
+						addPopulationUnit(pGrowthUnit, NO_PROFESSION);
+					}
+					// Then build the small local military reserve.
+					else if (bNativeNeedsInitialMilitary)
+					{
+						pGrowthUnit->setHomeCity(this);
+					}
+					// After the local reserve is complete, fill the village.
+					else if (bNativeHasAvailableJob)
+					{
+						addPopulationUnit(pGrowthUnit, NO_PROFESSION);
+					}
+					// Once the village is full, continue adding map Braves
+					// until the tribal cap is reached.
+					else
+					{
+						pGrowthUnit->setHomeCity(this);
+					}
+				}
+				// WTP, Schmiddie, Native military unit cap END
+
 				// WTP, ray, making this error save to prevent negative Storage bug - START
 				int iFoodUsedForGrowth = growthThreshold() - getFoodKept();
+
 				if (iFoodUsedForGrowth > getFood())
 				{
 					iFoodUsedForGrowth = getFood();
 				}
+
 				changeFood(-(std::max(0, iFoodUsedForGrowth)));
 				// WTP, ray, making this error save to prevent negative Storage bug - END
 			}
 
-			gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_GROWTH", getNameKey()), coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), COLOR_GREEN, true, true);
+			gDLL->UI().addPlayerMessage(
+				getOwnerINLINE(),
+				false,
+				GC.getEVENT_MESSAGE_TIME(),
+				gDLL->getText("TXT_KEY_CITY_GROWTH", getNameKey()),
+				coord(),
+				"AS2D_POSITIVE_DINK",
+				MESSAGE_TYPE_INFO,
+				GC.getYieldInfo(YIELD_FOOD).getButton(),
+				COLOR_GREEN,
+				true,
+				true);
 
-
-			// ONEVENT - City growth
 			gDLL->getEventReporterIFace()->cityGrowth(this, getOwnerINLINE());
 		}
 	}
 	else if (getFood() < 0)
 	{
-		// Food is reset to 0
 		setFood(0);
 
-		// Population is larger 1, we can eject citizens
 		if (getPopulation() > 1)
 		{
 			if (!AI_removeWorstPopulationUnit(false))
 			{
 				AI_removeWorstPopulationUnit(true);
 			}
-			gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING", getNameKey()), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), COLOR_RED, true, true);
-		}
-		// WTP, ray, necessary changes related to branch PLAINS, which also allows settling in hostile Terrains without Food
 
-		// Population is just 1, we do not want to abandon city
+			gDLL->UI().addPlayerMessage(
+				getOwnerINLINE(),
+				false,
+				GC.getEVENT_MESSAGE_TIME(),
+				gDLL->getText("TXT_KEY_CITY_STARVING", getNameKey()),
+				coord(),
+				"AS2D_DEAL_CANCELLED",
+				MESSAGE_TYPE_INFO,
+				GC.getYieldInfo(YIELD_FOOD).getButton(),
+				COLOR_RED,
+				true,
+				true);
+		}
 		else
 		{
-			int iFoodReceivedForStarvationDonation = GC.getDefineINT("CITY_STARVATION_DONATION_FOOD_RECEIVED");
-			// Native Case: just to avoid triggering this unnecessarily for Natives
+			int iFoodReceivedForStarvationDonation =
+				GC.getDefineINT("CITY_STARVATION_DONATION_FOOD_RECEIVED");
+
 			if (isNative())
 			{
 				changeFood(iFoodReceivedForStarvationDonation);
 			}
-
-			// other players
 			else
 			{
 				CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
-				int iGold = kPlayer.getGold();
-				int iGoldToPayedForStarvationDonation = GC.getDefineINT("CITY_STARVATION_DONATION_GOLD_PAYED") * GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getStoragePercent() / 100;
-				int iOccupationTimerinCaseNoDonation = GC.getDefineINT("CITY_STARVATION_NO_DONATION_OCCUPATION_TIMER");
 
-				// Case HUMAN: let us substract Gold for Human Player and trigger message about donation
+				int iGold = kPlayer.getGold();
+
+				int iGoldToPayedForStarvationDonation =
+					GC.getDefineINT("CITY_STARVATION_DONATION_GOLD_PAYED") *
+					GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getStoragePercent() / 100;
+
+				int iOccupationTimerinCaseNoDonation =
+					GC.getDefineINT("CITY_STARVATION_NO_DONATION_OCCUPATION_TIMER");
+
 				if (isHuman())
 				{
-					// We could donate food
 					if (iGold > iGoldToPayedForStarvationDonation)
 					{
-						OOS_LOG_3("doGrowth donation", CvString(getName()).c_str(), iGoldToPayedForStarvationDonation);
+						OOS_LOG_3(
+							"doGrowth donation",
+							CvString(getName()).c_str(),
+							iGoldToPayedForStarvationDonation);
+
 						kPlayer.changeGold(-iGoldToPayedForStarvationDonation);
 						changeFood(iFoodReceivedForStarvationDonation);
-						gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID", getNameKey(), iGoldToPayedForStarvationDonation, iFoodReceivedForStarvationDonation), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), COLOR_RED, true, true);
-					}
 
-					// We did not have the gold, thus unrest
-					// but only if the City is not already in unrest, to prevent endless loops
+						gDLL->UI().addPlayerMessage(
+							getOwnerINLINE(),
+							false,
+							GC.getEVENT_MESSAGE_TIME(),
+							gDLL->getText(
+								"TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID",
+								getNameKey(),
+								iGoldToPayedForStarvationDonation,
+								iFoodReceivedForStarvationDonation),
+							coord(),
+							"AS2D_DEAL_CANCELLED",
+							MESSAGE_TYPE_INFO,
+							GC.getYieldInfo(YIELD_FOOD).getButton(),
+							COLOR_RED,
+							true,
+							true);
+					}
 					else if (getOccupationTimer() == 0)
 					{
 						changeOccupationTimer(iOccupationTimerinCaseNoDonation);
-						gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_AND_REVOLTING", getNameKey()), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), COLOR_RED, true, true);
+
+						gDLL->UI().addPlayerMessage(
+							getOwnerINLINE(),
+							false,
+							GC.getEVENT_MESSAGE_TIME(),
+							gDLL->getText(
+								"TXT_KEY_CITY_STARVING_AND_REVOLTING",
+								getNameKey()),
+							coord(),
+							"AS2D_DEAL_CANCELLED",
+							MESSAGE_TYPE_INFO,
+							GC.getYieldInfo(YIELD_FOOD).getButton(),
+							COLOR_RED,
+							true,
+							true);
 					}
 				}
-
-				// Case AI: We keep this simple for now
-				// no unrest, receives gold but has to pay for it
 				else
 				{
-					int iGoldForAI = iGoldToPayedForStarvationDonation/2;
+					int iGoldForAI = iGoldToPayedForStarvationDonation / 2;
+
 					if (iGold > iGoldForAI)
 					{
 						kPlayer.changeGold(-iGoldForAI);
@@ -7526,6 +7790,7 @@ void CvCity::doGrowth()
 					{
 						kPlayer.changeGold(-iGold);
 					}
+
 					changeFood(iFoodReceivedForStarvationDonation);
 				}
 			}
@@ -8176,6 +8441,8 @@ void CvCity::doNativeTradePost()
 	PlayerTypes ePlayer = getTradePostPlayer();
 	if (ePlayer != NO_PLAYER)
 	{
+		GET_PLAYER(getOwnerINLINE()).applyTradePostMestizoPoints(this);
+		
 		int iNativeTradeModifierNation = 100 + GET_PLAYER(getOwnerINLINE()).getNativeTradeModifier();
 		int iNativeTradeModifierTradePostOwner = 100 + GET_PLAYER(ePlayer).getNativeTradeModifier();
 		int iNativeTradeRateCity = 100 + getNativeTradeRate();
@@ -8301,6 +8568,30 @@ void CvCity::getVisibleBuildings(std::list<BuildingTypes>& kChosenVisible, int& 
 		iTotalVisibleBuildings = int(((fHi - fLo) / 50.0f) * fCurSize + fLo);
 	}
 
+	if (isNative())
+	{
+		iTotalVisibleBuildings = std::max(1, (iTotalVisibleBuildings * 50) / 100);
+	}
+
+	else if (getPopulation() > 15)
+	{
+		int iVisibleAt15;
+
+		if (bIsExp)
+		{
+			const static float fCitySizeExpMod = GC.getDefineFLOAT("GAME_CITY_SIZE_EXP_MODIFIER");
+			iVisibleAt15 = 10 + ((int)(pow(15.0f, fCitySizeExpMod))) * 2;
+		}
+		else
+		{
+			const static float fLo = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_0");
+			const static float fHi = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_50");
+			iVisibleAt15 = int(((fHi - fLo) / 50.0f) * 15.0f + fLo);
+		}
+
+		iTotalVisibleBuildings = iVisibleAt15 + ((iTotalVisibleBuildings - iVisibleAt15) * 50) / 100;
+	}
+
 	const static float fMaxUniquePercent = GC.getDefineFLOAT("GAME_CITY_SIZE_MAX_PERCENT_UNIQUE");
 	const int iMaxNumUniques = (int)(fMaxUniquePercent * iTotalVisibleBuildings);
 
@@ -8322,6 +8613,28 @@ void CvCity::getVisibleBuildings(std::list<BuildingTypes>& kChosenVisible, int& 
 	{
 		kChosenVisible.push_back(kVisible[i]);
 	}
+	// WTP, Schmiddie, Native Mission Station - START
+	if (isNative() && getMissionaryPlayer() != NO_PLAYER)
+	{
+		const BuildingTypes eMissionStation = (BuildingTypes)GC.getInfoTypeForString("BUILDING_NATIVE_MISSION_STATION");
+
+		if (eMissionStation != NO_BUILDING)
+		{
+			kChosenVisible.push_back(eMissionStation);
+		}
+	}
+	// WTP, Schmiddie, Native Mission Station - END
+	// WTP, Schmiddie, Native Trade Post - START
+	if (isNative() && getTradePostPlayer() != NO_PLAYER)
+	{
+		const BuildingTypes eTradePost = (BuildingTypes)GC.getInfoTypeForString("BUILDING_NATIVE_TRADE_POST");
+
+		if (eTradePost != NO_BUILDING)
+		{
+			kChosenVisible.push_back(eTradePost);
+		}
+	}
+	// WTP, Schmiddie, Native Trade Post - END
 }
 
 static int natGetDeterministicRandom(int iMin, int iMax, int iSeedX, int iSeedY)
@@ -8332,7 +8645,7 @@ static int natGetDeterministicRandom(int iMin, int iMax, int iSeedX, int iSeedY)
 
 void CvCity::getVisibleEffects(ZoomLevelTypes eCurZoom, std::vector<char const*>& kEffectNames) const
 {
-	if (isOccupation() && isVisible(getTeam(), false))
+	if ((isOccupation() || getForeignBuildingBurnTimer() > 0) && isVisible(getTeam(), false))
 	{
 		if (eCurZoom  == ZOOM_DETAIL)
 		{
@@ -9866,9 +10179,11 @@ void CvCity::setMissionaryPlayer(PlayerTypes ePlayer, bool bBurnMessage)
 
 		if (bBurnMessage && eOldPlayer != NO_PLAYER)
 		{
+			setForeignBuildingBurnTimer(1);
+
 			CvWString szBuffer = gDLL->getText("TXT_KEY_MISSION_REMOVED", getNameKey(), GET_PLAYER(eOldPlayer).getCivilizationAdjectiveKey());
 
-			gDLL->UI().addAllPlayersMessage(false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, COLOR_HIGHLIGHT_TEXT, false, false);
+			gDLL->UI().addAllPlayersMessage(false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CITYCAPTURED", MESSAGE_TYPE_MINOR_EVENT, NULL, COLOR_HIGHLIGHT_TEXT, false, false);
 		}
 
 		if (getMissionaryPlayer() != NO_PLAYER)
@@ -9879,6 +10194,7 @@ void CvCity::setMissionaryPlayer(PlayerTypes ePlayer, bool bBurnMessage)
 		}
 
 		setBillboardDirty(true);
+		setLayoutDirty(true);
 	}
 }
 
@@ -9903,9 +10219,11 @@ void CvCity::setTradePostPlayer(PlayerTypes ePlayer, bool bBurnMessage)
 
 		if (bBurnMessage && eOldPlayer != NO_PLAYER)
 		{
+			setForeignBuildingBurnTimer(1);
+
 			CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_REMOVED", getNameKey(), GET_PLAYER(eOldPlayer).getCivilizationAdjectiveKey());
 
-			gDLL->UI().addAllPlayersMessage(false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, COLOR_HIGHLIGHT_TEXT, false, false);
+			gDLL->UI().addAllPlayersMessage(false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CITYCAPTURED", MESSAGE_TYPE_MINOR_EVENT, NULL, COLOR_HIGHLIGHT_TEXT, false, false);
 		}
 
 		if (getTradePostPlayer() != NO_PLAYER)
@@ -9916,6 +10234,7 @@ void CvCity::setTradePostPlayer(PlayerTypes ePlayer, bool bBurnMessage)
 		}
 
 		setBillboardDirty(true);
+		setLayoutDirty(true);
 	}
 }
 

@@ -2086,9 +2086,27 @@
 		<German>Die [COLOR_BUILDING_TEXT]Kathedrale des Erzbischofs[COLOR_REVERT] ist die ultimative Quelle für [LINK=YIELD_CROSSES]Kreuze[\LINK]. Als ein [COLOR_CYAN]Nationales Wunder[COLOR_REVERT] kann sie nur ein einziges Mal in allen euren Kolonien errichtet werden. Sobald ihr genug [COLOR_BUILDING_TEXT]Kathedralen[COLOR_REVERT] in eurem Kolonialreich errichtet habt, kann als Upgrade einer dieser errichtet werden, wenn die Stadt auch einen [COLOR_BUILDING_TEXT]Regierungspalast[COLOR_REVERT] hat. Ein Kolonist der dort als [LINK=PROFESSION_PREACHER]Prediger[\LINK] arbeitet, erzeugt sehr viele [COLOR_HIGHLIGHT_TEXT]Kreuze[COLOR_REVERT] pro Runde. Wird ein [LINK=UNIT_PREACHER]Mitreißender Prediger[\LINK], ein [LINK=UNIT_PRIEST]Frommer Priester[\LINK] oder gar ein [LINK=UNIT_BISHOP]Bischof[\LINK] zugewiesen, ist der Ausstoss an Kreuzen noch deutlich höher.</German>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIVE_AMERICA_GATHERING_PLACE</Tag>
+		<English>Gathering place</English>
+		<German>
+			<Text>Versammlungsplatz:Versammlungsplätze</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIVE_AMERICA_GATHERING_PLACE_PEDIA</Tag>
+		<English>At the heart of many Native communities were places where people gathered to discuss matters of common concern, settle disputes, receive visitors, share news, and preserve their traditions through stories and ceremony. Around the council fire, elders and respected members of the community could make their voices heard, while important decisions were considered together. Such [COLOR_BUILDING_TEXT]gathering places[COLOR_REVERT] strengthened the bonds between families and helped preserve the unity and traditions of the community.</English>
+		<German>Im Mittelpunkt vieler indigener Gemeinschaften standen Orte, an denen die Menschen zusammenkamen, um gemeinsame Angelegenheiten zu beraten, Streitigkeiten beizulegen, Besucher zu empfangen, Neuigkeiten auszutauschen und ihre Überlieferungen durch Erzählungen und Zeremonien zu bewahren. Am Ratsfeuer konnten Älteste und angesehene Mitglieder der Gemeinschaft ihre Stimme erheben, während wichtige Entscheidungen gemeinsam beraten wurden. Solche [COLOR_BUILDING_TEXT]Versammlungsplätze[COLOR_REVERT] stärkten die Bindungen zwischen den Familien und halfen, den Zusammenhalt und die Traditionen der Gemeinschaft zu bewahren.</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_BUILDING_NATIVE_AMERICA_GATHERING_PLACE_STRATEGY</Tag>
+		<English>The [COLOR_BUILDING_TEXT]gathering places[COLOR_REVERT], the Native American version of the [COLOR_BUILDING_TEXT]entertainment buildings[COLOR_REVERT], helps to preserve the tribe’s own culture and thus increases the culture production.</English>
+		<German>Die [COLOR_BUILDING_TEXT]Versammlungsplätze[COLOR_REVERT], die indianische Variante der [COLOR_BUILDING_TEXT]Vergnügungsgebäude[COLOR_REVERT], sorgt für die Wahrung der eigenen Kultur des stammes und erhöht damit die Kulturwertung.</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUILDING_NATIVE_AMERICA_TOTEM</Tag>
 		<English>Totem Pole</English>
-		
 		<Portuguese>
 			<Text>Totem</Text>
 			<Gender>Male</Gender>

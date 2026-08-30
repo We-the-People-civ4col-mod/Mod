@@ -1093,6 +1093,11 @@
 		<Hungarian>Uram, [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] településen a missziód megtérített egy Indiánt az igaz Keresztény hitre. Dicsőség az Úrnak!</Hungarian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_TRADE_POST_MESTIZO_CREATED</Tag>
+		<English>Milord, your trading post in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has fostered more than trade. The trader has fathered a child with a Native woman, who now wishes to live among the Europeans!</English>
+		<German>Milord, Eurer Handelsposten in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] befruchtet nicht nur den Handel. Der Händler hat einer Eingeborenen ein Kind gemacht, das nun bei den Weißen leben will!</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_MISSION_ESTABLISHED</Tag>
 		<English>A [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] mission has been established in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</English>
 		<Portuguese>Uma missão [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] foi estabelecida em [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Portuguese>
