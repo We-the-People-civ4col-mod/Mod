@@ -13805,7 +13805,7 @@ void CvPlayer::doWarnings()
 							// R&R, ray, changes to Wild Animals - START
 							// Erik: Make sure that the unit is actually an animal (and not a pirate) when giving the warning about
 							// animals being spotted
-							if (pUnit->isBarbarian() && pUnit->getUnitInfo().isAnimal())
+							if (pUnit->getUnitInfo().isAnimal())
 							{
 								CvWString szBuffer = gDLL->getText("TXT_KEY_ANIMALS_SPOTTED", pNearestCity->getNameKey());
 								gDLL->UI().addPlayerMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopPlot, NULL, MESSAGE_TYPE_INFO, pUnit->getButton(), COLOR_RED, true, true);
@@ -19789,22 +19789,12 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 
 					if (pNativeUnit != NULL)
 					{
-						CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, NO_PROFESSION, pCity->coord());
-
-						if (pUnit != NULL)
+						if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, true, NO_PROFESSION))
 						{
-							if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, false, NO_PROFESSION))
+							CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->coord());
+
+							if (pUnit != NULL)
 							{
-								pUnit->convert(pNativeUnit, true);
-
-								const ProfessionTypes eDefaultProfession =
-									(ProfessionTypes)GC.getUnitInfo(eUnit).getDefaultProfession();
-
-								if (eDefaultProfession != NO_PROFESSION)
-								{
-									pUnit->setProfession(eDefaultProfession);
-								}
-
 								bUnitCreated = true;
 								gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
 
@@ -19935,22 +19925,16 @@ void CvPlayer::applyTradePostMestizoPoints(CvCity* pCity)
 
 				if (pNativeUnit != NULL)
 				{
-					CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, NO_PROFESSION, pCity->coord());
-
-					if (pUnit != NULL)
+					if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, true, NO_PROFESSION))
 					{
-						if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, false, NO_PROFESSION))
+						CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(
+							eUnit,
+							GC.getUnitInfo(eUnit).getDefaultProfession(),
+							pCity->coord()
+						);
+
+						if (pUnit != NULL)
 						{
-							pUnit->convert(pNativeUnit, true);
-
-							const ProfessionTypes eDefaultProfession =
-								(ProfessionTypes)GC.getUnitInfo(eUnit).getDefaultProfession();
-
-							if (eDefaultProfession != NO_PROFESSION)
-							{
-								pUnit->setProfession(eDefaultProfession);
-							}
-							
 							gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
 
 							CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_MESTIZO_CREATED", pCity->getNameKey());
