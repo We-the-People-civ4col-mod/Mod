@@ -6664,6 +6664,7 @@
 		<German>Netzwerkfehler</German>
 		<Italian>Errore di rete</Italian>
 		<Spanish>Error de red</Spanish>
+		<Hungarian>Hálózati hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_SOCKET_ERROR_DESC</Tag>
@@ -6673,6 +6674,7 @@
 		<German>Es ist ein Fehler im Netzwerk-Socket aufgetreten. Die Verbindung zum Spiele-Server wurde getrennt.</German>
 		<Italian>Il socket di rete ha rilevato un errore. Disconnesso dal server per la ricerca delle partite.</Italian>
 		<Spanish>El socket de red ha encontrado un error. Desconectado del servidor de búsqueda de partidas.</Spanish>
+		<Hungarian>Hiba a kommunikációs csatornában. A kapcsolat a játékkereső szerverrel megszakadt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_NAT_ERROR_TITLE</Tag>
@@ -6682,6 +6684,7 @@
 		<German>Server nicht erreichbar</German>
 		<Italian>Server irraggiungibile</Italian>
 		<Spanish>No se puede acceder al servidor</Spanish>
+		<Hungarian>A szerver nem elérhető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_NAT_ERROR_DESC</Tag>
@@ -6691,6 +6694,7 @@
 		<German>Aufgrund der eingestellten Firewall-Regeln konnten keine Internetspiele gefunden werden.</German>
 		<Italian>Impossibile cercare partite Internet a causa di problemi con il firewall.</Italian>
 		<Spanish>No se han podido encontrar partidas en Internet debido a problemas con el firewall/servidor de seguridad.</Spanish>
+		<Hungarian>Az internetes játékok keresése a tűzfal miatt nem lehetséges.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_SERVER_ERROR_TITLE</Tag>
@@ -6700,6 +6704,7 @@
 		<German>Server nicht erreichbar</German>
 		<Italian>Server irraggiungibile</Italian>
 		<Spanish>No se puede acceder al servidor</Spanish>
+		<Hungarian>A szerver nem elérhető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_SERVER_ERROR_DESC</Tag>
@@ -6709,6 +6714,7 @@
 		<German>Der Spiele-Server antwortet nicht.</German>
 		<Italian>Il server per la ricerca di partite non risponde.</Italian>
 		<Spanish>El servidor de búsqueda de partidas no responde.</Spanish>
+		<Hungarian>A játékkereső szerver nem válaszol.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_UNSPECIFIED_ERROR_TITLE</Tag>
@@ -6718,6 +6724,7 @@
 		<German>Server nicht erreichbar</German>
 		<Italian>Server irraggiungibile</Italian>
 		<Spanish>No se puede acceder al servidor</Spanish>
+		<Hungarian>A szerver nem elérhető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_UNSPECIFIED_ERROR_DESC</Tag>
@@ -6727,6 +6734,7 @@
 		<German>Der Spiele-Server ist wegen eines unbekannten Fehlers nicht erreichbar.</German>
 		<Italian>Impossibile connettersi al server per la ricerca delle partite a causa di un problema non specificato.</Italian>
 		<Spanish>No se ha podido acceder al servidor de búsqueda de partidas debido a un problema sin especificar.</Spanish>
+		<Hungarian>Ismeretlen hiba miatt a játékkereső szerver nem érhető el.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_CONNECT_FAILURE_TITLE</Tag>
@@ -6736,6 +6744,7 @@
 		<German>Server nicht erreichbar</German>
 		<Italian>Server irraggiungibile</Italian>
 		<Spanish>No se puede acceder al servidor</Spanish>
+		<Hungarian>A szerver nem elérhető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_CONNECT_FAILURE_DESC</Tag>
@@ -6745,6 +6754,7 @@
 		<German>Der Verbindungsaufbau zum Spiele-Server ist fehlgeschlagen.</German>
 		<Italian>La connessione al server per la ricerca di partite è fallita.</Italian>
 		<Spanish>Ha fallado la conexión con el servidor de búsqueda de partidas.</Spanish>
+		<Hungarian>A kapcsolódás a játékkereső szerverhez sikertelen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MASTER_CONNECT_INVALID_LOGIN_TITLE</Tag>
@@ -6763,6 +6773,7 @@
 		<German>Der angegebene Benutzername ist ungültig.</German>
 		<Italian>Lo username da te inserito non è valido.</Italian>
 		<Spanish>El nombre de usuario que has introducido no es válido.</Spanish>
+		<Hungarian>Érvénytelen felhasználói név</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TITLE_CONNECT_FAILURE_TITLE</Tag>
@@ -6772,6 +6783,7 @@
 		<German>Server nicht erreichbar</German>
 		<Italian>Server irraggiungibile</Italian>
 		<Spanish>No se puede acceder al servidor</Spanish>
+		<Hungarian>A szerver nem elérhető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TITLE_CONNECT_FAILURE_DESC</Tag>
@@ -6781,6 +6793,7 @@
 		<German>Der Civilization IV-Matchmaking-Raum ist zurzeit nicht verfügbar.</German>
 		<Italian>La stanza per l'organizzazione d'incontri non è disponibile in questo momento.</Italian>
 		<Spanish>La sala de búsqueda de jugadores no está disponible en este momento.</Spanish>
+		<Hungarian>A Civilization IV játszmalétrehozó szobája jelenleg nem elérhető.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HOST_CONNECT_FAILURE_TITLE</Tag>
@@ -6790,6 +6803,7 @@
 		<German>Host nicht erreichbar</German>
 		<Italian>Host irraggiungibile</Italian>
 		<Spanish>No se puede acceder al anfitrión</Spanish>
+		<Hungarian>A kiszolgáló nem elérhető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HOST_CONNECT_FAILURE_DESC</Tag>
@@ -6799,6 +6813,7 @@
 		<German>Der Spiele-Host ist nicht erreichbar.</German>
 		<Italian>Impossibile connettersi all'host della partita.</Italian>
 		<Spanish>No se ha podido acceder al anfitrión de la partida.</Spanish>
+		<Hungarian>A játék kiszolgálóját nem lehet elérni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADDRESS_REQUIRED_TITLE</Tag>
@@ -6808,6 +6823,7 @@
 		<German>Fehlende Adresse</German>
 		<Italian>Indirizzo mancante</Italian>
 		<Spanish>Falta dirección</Spanish>
+		<Hungarian>Hiányzó cím</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADDRESS_REQUIRED_DESC</Tag>
@@ -6817,6 +6833,7 @@
 		<German>Es ist eine gültige Internetadresse erforderlich.</German>
 		<Italian>È necessario un indirizzo Internet valido.</Italian>
 		<Spanish>Se necesita una dirección válida de Internet.</Spanish>
+		<Hungarian>Érvényes internetes cím szükséges.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HOST_NAT_ERROR_TITLE</Tag>
@@ -6826,6 +6843,7 @@
 		<German>Host nicht erreichbar</German>
 		<Italian>Host irraggiungibile</Italian>
 		<Spanish>No se puede acceder al anfitrión</Spanish>
+		<Hungarian>A kiszolgáló nem elérhető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HOST_NAT_ERROR_DESC</Tag>
@@ -6835,6 +6853,7 @@
 		<German>Es konnte kein Verbindungsaufbau mit der Firewall des Hosts ausgehandelt werden.</German>
 		<Italian>Impossibile negoziare con il firewall dell'host.</Italian>
 		<Spanish>No se ha podido negociar con el firewall/servidor de seguridad del anfitrión.</Spanish>
+		<Hungarian>A kiszolgáló tűzfala blokkolja az elérést.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NAT_CONTACT_FAILURE_TITLE</Tag>
@@ -6844,6 +6863,7 @@
 		<German>NAT-Server nicht verfügbar</German>
 		<Italian>Server NAT non disponibile</Italian>
 		<Spanish>Servidor NAT no disponible</Spanish>
+		<Hungarian>A NAT szerver nem elérhető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NAT_CONTACT_FAILURE_DESC</Tag>
@@ -6853,6 +6873,7 @@
 		<German>Es konnte keine Verbindung zum NAT Negotiation Server hergestellt werden.</German>
 		<Italian>Impossibile connettersi al server di negoziazione NAT.</Italian>
 		<Spanish>No se ha podido conectar con el servidor de negociación NAT.</Spanish>
+		<Hungarian>Nem lehet a NAT szűrő szerverhez kapcsolódni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_OUT_OF_MEMORY_TITLE</Tag>
@@ -6862,6 +6883,7 @@
 		<German>Verbindungsversuch gescheitert</German>
 		<Italian>Tentativo di connessione fallito</Italian>
 		<Spanish>Ha fallado el intento de conexión</Spanish>
+		<Hungarian>A kapcsolódási kísérlet sikertelen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_OUT_OF_MEMORY_DESC</Tag>
@@ -6871,6 +6893,7 @@
 		<German>Zu wenig verfügbarer Speicher. Der Verbindungsversuch ist gescheitert.</German>
 		<Italian>Il nostro tentativo di connessione è fallito a causa della mancanza di memoria disponibile.</Italian>
 		<Spanish>El intento de conexión ha fallado debido a la falta de disponibilidad de memoria.</Spanish>
+		<Hungarian>Elfogyott a rendszermemória, a kapcsolódási kísérletünk sikertelen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_REJECTED_TITLE</Tag>
@@ -6880,6 +6903,7 @@
 		<German>Verbindungsanfrage abgewiesen</German>
 		<Italian>Tentativo di connessione rifiutato</Italian>
 		<Spanish>Intento de conexión rechazado</Spanish>
+		<Hungarian>A kapcsolódási kísérlet elutasítva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_REJECTED_DESC</Tag>
@@ -6889,6 +6913,7 @@
 		<German>Der Host dieses Spiels hat die Verbindungsanfrage abgewiesen.</German>
 		<Italian>L'host di questa partita ha rifiutato il tuo tentativo di connessione.</Italian>
 		<Spanish>El anfitrión de la partida ha rechazado el intento de conexión.</Spanish>
+		<Hungarian>E játék kiszolgálója elutasította a kapcsolódási kísérletünket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_NETWORK_ERROR_TITLE</Tag>
@@ -6898,6 +6923,7 @@
 		<German>Verbindungsversuch fehlgeschlagen</German>
 		<Italian>Tentativo di connessione fallito</Italian>
 		<Spanish>Ha fallado el intento de conexión</Spanish>
+		<Hungarian>A kapcsolódási kísérlet sikertelen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_NETWORK_ERROR_DESC</Tag>
@@ -6907,6 +6933,7 @@
 		<German>Der Verbindungsversuch ist wegen eines unbekannten Netzwerkfehlers gescheitert.</German>
 		<Italian>Il nostro tentativo di connessione è fallito a causa di un errore di rete non specificato.</Italian>
 		<Spanish>El intento de conexión ha fallado debido a un error de red no especificado.</Spanish>
+		<Hungarian>Kapcsolódási kísérletünk ismeretlen hálózati hiba miatt sikertelen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_INVALID_ADDRESS_TITLE</Tag>
@@ -6916,6 +6943,7 @@
 		<German>Verbindungsanfrage abgewiesen</German>
 		<Italian>Tentativo di connessione rifiutato</Italian>
 		<Spanish>Intento de conexión rechazado</Spanish>
+		<Hungarian>A kapcsolódási kísérlet elutasítva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_INVALID_ADDRESS_DESC</Tag>
@@ -6925,6 +6953,7 @@
 		<German>Die angefragte Adresse ist ungültig.</German>
 		<Italian>L'indirizzo inserito non è risultato valido.</Italian>
 		<Spanish>La dirección probada no era válida.</Spanish>
+		<Hungarian>A megkísérelt cím érvénytelen volt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_ALREADY_CONNECTED_TITLE</Tag>
@@ -6934,6 +6963,7 @@
 		<German>Bereits verbunden</German>
 		<Italian>Già connesso</Italian>
 		<Spanish>Ya conectado</Spanish>
+		<Hungarian>Már kapcsolódva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_ALREADY_CONNECTED_DESC</Tag>
@@ -6943,6 +6973,7 @@
 		<German>Es besteht bereits eine Verbindung zu diesem Host.</German>
 		<Italian>Siamo già connessi a questo host.</Italian>
 		<Spanish>Ya existe una conexión con el anfitrión.</Spanish>
+		<Hungarian>Már kapcsolódtunk ehhez a kiszolgálóhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_TIMEOUT_TITLE</Tag>
@@ -6952,6 +6983,7 @@
 		<German>Wartezeit für Verbindungsaufbau abgelaufen</German>
 		<Italian>Time out della connessione</Italian>
 		<Spanish>Agotado el tiempo de espera de la conexión</Spanish>
+		<Hungarian>Kapcsolati idő túllépés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_TIMEOUT_DESC</Tag>
@@ -6961,6 +6993,7 @@
 		<German>Die Wartezeit für den Verbindungsaufbau zum Host ist abgelaufen.</German>
 		<Italian>Time out durante il tentativo di connessione all'host.</Italian>
 		<Spanish>Se ha agotado el tiempo de espera del intento de conexión con el anfitrión.</Spanish>
+		<Hungarian>Időtúllépés a kiszolgálóhoz való kapcsolódási kísérlet közben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_NAT_ERROR_TITLE</Tag>
@@ -6970,6 +7003,7 @@
 		<German>Verbindungsversuch gescheitert</German>
 		<Italian>Tentativo di connessione fallito</Italian>
 		<Spanish>Ha fallado el intento de conexión</Spanish>
+		<Hungarian>A kapcsolódási kísérlet sikertelen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_NAT_ERROR_DESC</Tag>
@@ -6979,6 +7013,7 @@
 		<German>Es konnte kein Verbindungsaufbau mit der Firewall des Hosts ausgehandelt werden.</German>
 		<Italian>Impossibile negoziare con il firewall dell'host.</Italian>
 		<Spanish>No se ha podido negociar con el firewall/servidor de seguridad del anfitrión.</Spanish>
+		<Hungarian>Nem lehet a kiszolgáló tűzfalán átjutni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_UNSPECIFIED_ERROR_TITLE</Tag>
@@ -6988,6 +7023,7 @@
 		<German>Verbindungsversuch gescheitert</German>
 		<Italian>Tentativo di connessione fallito</Italian>
 		<Spanish>Ha fallado el intento de conexión</Spanish>
+		<Hungarian>A kapcsolódási kísérlet sikertelen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_UNSPECIFIED_ERROR_DESC</Tag>
@@ -6997,6 +7033,7 @@
 		<German>Der Verbindungsversuch ist wegen eines unbekannten Fehlers gescheitert.</German>
 		<Italian>Il tentativo di connessione è fallito a causa di un errore non specificato.</Italian>
 		<Spanish>El intento de conexión ha fallado debido a un error no especificado.</Spanish>
+		<Hungarian>Sikertelen kapcsolódási kísérlet ismeretlen hiba miatt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DISCONNECT_UNSPECIFIED_TITLE</Tag>
@@ -7024,6 +7061,7 @@
 		<German>Verbindung getrennt</German>
 		<Italian>Disconnesso</Italian>
 		<Spanish>Desconectado</Spanish>
+		<Hungarian>Szétkapcsolódva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DISCONNECT_NETWORK_DESC</Tag>
@@ -7033,6 +7071,7 @@
 		<German>Der Server hat die Verbindung getrennt.</German>
 		<Italian>Il server ha interrotto la nostra connessione.</Italian>
 		<Spanish>El servidor ha interrumpido la conexión.</Spanish>
+		<Hungarian>A szerver megszakította a kapcsolatunkat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REJECT_LAUNCHING_TITLE</Tag>
@@ -7042,6 +7081,7 @@
 		<German>Verbindungsanfrage abgewiesen.</German>
 		<Italian>Connessione rifiutata.</Italian>
 		<Spanish>Conexión rechazada</Spanish>
+		<Hungarian>Kapcsolódás elutasítva.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REJECT_LAUNCHING_DESC</Tag>
@@ -7051,6 +7091,7 @@
 		<German>Das gewählte Spiel wird zurzeit gestartet. Ein Verbindungsaufbau ist gegenwärtig nicht möglich.</German>
 		<Italian>La partita scelta è in avvio. Impossibile connettersi in questo momento.</Italian>
 		<Spanish>La partida elegida se está iniciando. No es posible conectarse en este momento.</Spanish>
+		<Hungarian>A kiválasztott játék indítása folyamatban, jelenleg a kapcsolódás nem lehetséges.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REJECT_FULL_TITLE</Tag>
@@ -7060,6 +7101,7 @@
 		<German>Verbindungsanfrage abgewiesen.</German>
 		<Italian>Connessione rifiutata.</Italian>
 		<Spanish>Conexión rechazada</Spanish>
+		<Hungarian>Kapcsolódás elutasítva.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REJECT_FULL_DESC</Tag>
@@ -7069,6 +7111,7 @@
 		<German>Das gewählte Spiel ist belegt.</German>
 		<Italian>La partita scelta è al completo.</Italian>
 		<Spanish>La partida elegida está completa.</Spanish>
+		<Hungarian>A kiválasztott játékban nincs szabad hely.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REJECT_INVALID_DATA_TITLE</Tag>
@@ -7078,6 +7121,7 @@
 		<German>Verbindungsanfrage abgewiesen.</German>
 		<Italian>Connessione rifiutata.</Italian>
 		<Spanish>Conexión rechazada</Spanish>
+		<Hungarian>Kapcsolódás elutasítva.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REJECT_INVALID_DATA_DESC</Tag>
@@ -7087,6 +7131,7 @@
 		<German>Die Verbindungsabfrage wurde wegen ungültiger Identifikationsdaten abgewiesen.</German>
 		<Italian>La nostra connessione è stata rifiutata perché abbiamo fornito dati di identificazione non validi.</Italian>
 		<Spanish>La conexión ha sido rechazada porque se han facilitado unos datos de identificación no válidos.</Spanish>
+		<Hungarian>A kapcsolatunk visszautasítva, mivel érvénytelen azonosítási adatokat szolgáltattunk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMAIL_REQUIRED_TITLE</Tag>
@@ -7096,6 +7141,7 @@
 		<German>E-Mail-Adresse erforderlich</German>
 		<Italian>E-mail necessaria</Italian>
 		<Spanish>Se requiere e-mail</Spanish>
+		<Hungarian>E-mail szükséges</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMAIL_REQUIRED_DESC</Tag>
@@ -7105,6 +7151,7 @@
 		<German>Sie müssen eine gültige E-Mail-Adresse angeben.</German>
 		<Italian>Devi inserire un indirizzo e-mail valido.</Italian>
 		<Spanish>Hay que introducir una dirección válida de correo electrónico.</Spanish>
+		<Hungarian>Érvényes e-mail címet kell megadnod.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOGIN_REQUIRED_TITLE</Tag>
@@ -7114,6 +7161,7 @@
 		<German>Benutzername erforderlich</German>
 		<Italian>Username necessario</Italian>
 		<Spanish>Se requiere nombre de usuario</Spanish>
+		<Hungarian>Felhasználói név szükséges</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOGIN_REQUIRED_DESC</Tag>
@@ -7123,6 +7171,7 @@
 		<German>Sie müssen einen Benutzernamen angeben.</German>
 		<Italian>Devi inserire uno username.</Italian>
 		<Spanish>Hay que introducir un nombre de usuario.</Spanish>
+		<Hungarian>Meg kell adnod egy felhasználói nevet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PASSWORD_REQUIRED_TITLE</Tag>
@@ -7132,6 +7181,7 @@
 		<German>Kennwort erforderlich</German>
 		<Italian>Password necessaria</Italian>
 		<Spanish>Se requiere contraseña</Spanish>
+		<Hungarian>Jelszó szükséges</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PASSWORD_REQUIRED_DESC</Tag>
@@ -7141,6 +7191,7 @@
 		<German>Sie müssen ein Kennwort angeben.</German>
 		<Italian>Devi inserire una password.</Italian>
 		<Spanish>Hay que introducir una contraseña.</Spanish>
+		<Hungarian>Meg kell adnod egy jelszót.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BAD_LOGIN_TITLE</Tag>
@@ -7150,6 +7201,7 @@
 		<German>Benutzername nicht gefunden</German>
 		<Italian>Username non trovato</Italian>
 		<Spanish>No se ha encontrado nombre de usuario</Spanish>
+		<Hungarian>A felhasználói név nem található</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BAD_LOGIN_DESC</Tag>
@@ -7159,6 +7211,7 @@
 		<German>Der angegebene Benutzername ist ungültig.</German>
 		<Italian>Lo username inserito non è valido.</Italian>
 		<Spanish>El nombre de usuario introducido no es válido.</Spanish>
+		<Hungarian>Az általad megadott felhasználói név nem érvényes.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOGIN_ERROR_TITLE</Tag>
@@ -7168,6 +7221,7 @@
 		<German>Login gescheitert</German>
 		<Italian>Login fallito</Italian>
 		<Spanish>Fallo al iniciar sesión</Spanish>
+		<Hungarian>Sikertelen belépés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOGIN_ERROR_DESC</Tag>
@@ -7177,6 +7231,7 @@
 		<German>Der Login-Versuch ist fehlgeschlagen.</German>
 		<Italian>Il tentativo di login è fallito.</Italian>
 		<Spanish>El intento de inicio de sesión ha fallado.</Spanish>
+		<Hungarian>A belépési kísérlet sikertelen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOGIN_IN_USE_TITLE</Tag>
@@ -7186,6 +7241,7 @@
 		<German>Account in Benutzung</German>
 		<Italian>Account in uso</Italian>
 		<Spanish>Cuenta en uso</Spanish>
+		<Hungarian>A felhasználói fiók használatban</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOGIN_IN_USE_DESC</Tag>
@@ -7195,6 +7251,7 @@
 		<German>Dieser Account wird zurzeit benutzt.</German>
 		<Italian>Questo account è attualmente in uso.</Italian>
 		<Spanish>Esa cuenta ya se encuentra en uso.</Spanish>
+		<Hungarian>Ez a felhasználói fiók jelenleg használatban van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BAD_PASSWORD_TITLE</Tag>
@@ -7204,6 +7261,7 @@
 		<German>Falsches Kennwort</German>
 		<Italian>Password sbagliata</Italian>
 		<Spanish>Contraseña incorrecta</Spanish>
+		<Hungarian>Ez a felhasználói fiók jelenleg használatban van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BAD_PASSWORD_DESC</Tag>
@@ -7213,6 +7271,7 @@
 		<German>Das angegebene Kennwort ist falsch.</German>
 		<Italian>La password inserita è sbagliata.</Italian>
 		<Spanish>La contraseña introducida es incorrecta.</Spanish>
+		<Hungarian>Az általad megadott jelszó nem megfelelő.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INIT_SAVE_TRANSFER_ERROR_TITLE</Tag>
@@ -7222,6 +7281,7 @@
 		<German>Dateiübertragungsfehler</German>
 		<Italian>Errore di trasferimento file</Italian>
 		<Spanish>Error de transferencia de archivo</Spanish>
+		<Hungarian>Fájlátviteli hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INIT_SAVE_TRANSFER_ERROR_DESC</Tag>
@@ -7231,6 +7291,7 @@
 		<German>Die Spieldaten-Datei konnte nicht übertragen werden.</German>
 		<Italian>Impossibile inizializzare il trasferimento dei file dati di gioco.</Italian>
 		<Spanish>No se ha podido iniciar la transferencia del archivo de datos de la partida.</Spanish>
+		<Hungarian>A játék adatfájljának átvitelére az inicializálás sikertelen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INIT_MAP_TRANSFER_ERROR_TITLE</Tag>
@@ -7240,6 +7301,7 @@
 		<German>Dateiübertragungsfehler</German>
 		<Italian>Errore di trasferimento file</Italian>
 		<Spanish>Error de transferencia de archivo</Spanish>
+		<Hungarian>Fájlátviteli hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INIT_MAP_TRANSFER_ERROR_DESC</Tag>
@@ -7249,6 +7311,7 @@
 		<German>Die Karten-Datei konnte nicht übertragen werden.</German>
 		<Italian>Impossibile inizializzare il trasferimento della mappa.</Italian>
 		<Spanish>No se ha podido iniciar la transferencia del mapa.</Spanish>
+		<Hungarian>A térkép  átvitelére az inicializálás sikertelen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FILE_TRANSFER_ERROR_TITLE</Tag>
@@ -7258,6 +7321,7 @@
 		<German>Dateiübertragungsfehler</German>
 		<Italian>Errore di trasferimento file</Italian>
 		<Spanish>Error de transferencia de archivo</Spanish>
+		<Hungarian>Fájlátviteli hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FILE_TRANSFER_ERROR_DESC</Tag>
@@ -7267,6 +7331,7 @@
 		<German>Bei der Übertragung der Datei ist ein Fehler aufgetreten.</German>
 		<Italian>Errore critico durante il trasferimento dei file.</Italian>
 		<Spanish>Se ha producido un error crítico al transferir el archivo.</Spanish>
+		<Hungarian>Kritikus hiba a fájl átvitele közben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALREADY_BUDDY_TITLE</Tag>
@@ -7276,6 +7341,7 @@
 		<German>Freund existiert bereits</German>
 		<Italian>È già un amico</Italian>
 		<Spanish>Ya es amigo</Spanish>
+		<Hungarian>Már barát</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALREADY_BUDDY_DESC</Tag>
@@ -7285,6 +7351,7 @@
 		<German>Sie haben versucht, einen Freund hinzuzufügen, der bereits existiert.</German>
 		<Italian>Hai provato ad aggiungere un amico esistente.</Italian>
 		<Spanish>Se ha intentado agregar a un amigo ya existente.</Spanish>
+		<Hungarian>Egy olyan barátot akartál felvenni, aki már szerepel a listán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SENT_BUDDY_REQUEST_TITLE</Tag>
@@ -7294,6 +7361,7 @@
 		<German>Freundesanfrage gesendet</German>
 		<Italian>Richiesta amico inviata</Italian>
 		<Spanish>Enviada solicitud de amigo</Spanish>
+		<Hungarian>Barátkérés elküldve</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SENT_BUDDY_REQUEST_DESC</Tag>
@@ -7303,6 +7371,7 @@
 		<German>Die Freundesanfrage wurde gesendet.</German>
 		<Italian>La richiesta amico è stata inviata.</Italian>
 		<Spanish>Se ha enviado la solicitud de amigo.</Spanish>
+		<Hungarian>A barátkérés elküldve.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDY_REQUEST_FAILED_TITLE</Tag>
@@ -7312,6 +7381,7 @@
 		<German>Freundesanfrage fehlgeschlagen</German>
 		<Italian>Richiesta amico fallita</Italian>
 		<Spanish>Fallo en la solicitud de amigo</Spanish>
+		<Hungarian>Barátkérés sikertelen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDY_REQUEST_FAILED_DESC</Tag>
@@ -7321,6 +7391,7 @@
 		<German>Die Freundesanfrage konnte nicht gesendet werden.</German>
 		<Italian>La richiesta amico non è stata inviata.</Italian>
 		<Spanish>No se ha podido enviar la solicitud de amigo.</Spanish>
+		<Hungarian>A barátkérést nem sikerült elküldeni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDYLIST_SERVER_ERROR_TITLE</Tag>
@@ -7330,6 +7401,7 @@
 		<German>Serverfehler</German>
 		<Italian>Errore del server</Italian>
 		<Spanish>Error del servidor</Spanish>
+		<Hungarian>Szerverhiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDYLIST_SERVER_ERROR_DESC</Tag>
@@ -7339,6 +7411,7 @@
 		<German>Auf dem Freundeslisten-Server ist ein Fehler aufgetreten.</German>
 		<Italian>Errore sul server della lista amici.</Italian>
 		<Spanish>Se ha producido un error en la lista de amigos del servidor.</Spanish>
+		<Hungarian>Hiba a barátlista szerveren.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDYLIST_EMPTY_NAME_TITLE</Tag>
@@ -7348,6 +7421,7 @@
 		<German>Freund-Name erforderlich</German>
 		<Italian>Nome amico necessario</Italian>
 		<Spanish>Se requiere nombre de amigo</Spanish>
+		<Hungarian>Barátnév szükséges</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDYLIST_EMPTY_NAME_DESC</Tag>
@@ -7357,6 +7431,7 @@
 		<German>Sie müssen einen Freund-Namen angeben.</German>
 		<Italian>Devi inserire il nome di un amico.</Italian>
 		<Spanish>Hay que facilitar un nombre de amigo.</Spanish>
+		<Hungarian>Meg kell adnod a barát nevét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDYLIST_NO_PROFILE_TITLE</Tag>
@@ -7366,6 +7441,7 @@
 		<German>Kein Freund gefunden</German>
 		<Italian>Nessun amico trovato</Italian>
 		<Spanish>Amigo no encontrado</Spanish>
+		<Hungarian>Barát nem található</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDYLIST_NO_PROFILE_DESC</Tag>
@@ -7375,6 +7451,7 @@
 		<German>Es wurden keine Freundesprofile gefunden.</German>
 		<Italian>Nessun profilo amico trovato.</Italian>
 		<Spanish>No se ha encontrado ningún perfil de amigo que coincida.</Spanish>
+		<Hungarian>Ilyen nevű barát nem található.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDYLIST_MULTIPLE_PROFILES_TITLE</Tag>
@@ -7384,6 +7461,7 @@
 		<German>Mehrfache Übereinstimmungen gefunden</German>
 		<Italian>Trovati risultati multipli</Italian>
 		<Spanish>Halladas varias coincidencias</Spanish>
+		<Hungarian>Több találat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDYLIST_MULTIPLE_PROFILES_DESC</Tag>
@@ -7393,6 +7471,7 @@
 		<German>Es wurden mehrere übereinstimmende Profile gefunden. Geben Sie bitte weitere Suchkriterien an.</German>
 		<Italian>Trovati risultati multipli. Modifica il tuo criterio di ricerca.</Italian>
 		<Spanish>Se han encontrado varios perfiles que coinciden. Hay que reducir los criterios de búsqueda.</Spanish>
+		<Hungarian>Több egyező profilt találtam. Kérlek, finomítsd a keresési feltételt!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCH_DOWNLOADING_TITLE</Tag>
@@ -7402,6 +7481,7 @@
 		<German>Patch wird heruntergeladen</German>
 		<Italian>Download della patch in corso</Italian>
 		<Spanish>Descargando parche</Spanish>
+		<Hungarian>Patch letöltése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCH_DOWNLOADING_DESC</Tag>
@@ -7411,6 +7491,7 @@
 		<German>Während des Patch-Downloads sind keine weiteren Aktivitäten möglich.</German>
 		<Italian>Impossibile durante il download della patch.</Italian>
 		<Spanish>No se pueden llevar a cabo otras acciones mientras se descarga el parche.</Spanish>
+		<Hungarian>A patch letöltése közben más feladat nem végrehajtható.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_ROOM_MEMBERS_TAB</Tag>
@@ -7420,6 +7501,7 @@
 		<German>Lobby-Mitglieder</German>
 		<Italian>Membri della sala d'attesa</Italian>
 		<Spanish>Miembros en la sala</Spanish>
+		<Hungarian>Várószoba tagok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_BUDDY_LIST_TAB</Tag>
@@ -7429,6 +7511,7 @@
 		<German>Freundesliste</German>
 		<Italian>Lista amici</Italian>
 		<Spanish>Lista de amigos</Spanish>
+		<Hungarian>Barátlista</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOBBY_NAME</Tag>
@@ -7438,6 +7521,7 @@
 		<German>Lobby-Chat</German>
 		<Italian>Chat sala d'attesa</Italian>
 		<Spanish>Chat de la sala</Spanish>
+		<Hungarian>Várószoba csevegés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CUSTOM_GAME_TITLE</Tag>
@@ -7448,6 +7532,7 @@
 		<Italian>PARTITA PERSONALIZZATA</Italian>
 		<Spanish>PERSONALIZAR PARTIDA</Spanish>
 		<Russian>ИГРА С НАСТРОЙКАМИ ПОЛЬЗОВАТЕЛЯ</Russian>
+		<Hungarian>SAJÁT JÁTÉK</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_STAGING_ROOM_TITLE</Tag>
@@ -7457,6 +7542,7 @@
 		<German>LAN-SETUP</German>
 		<Italian>STANZA D'ALLESTIMENTO</Italian>
 		<Spanish>SALA DE COMUNICAC.</Spanish>
+		<Hungarian>ELŐKÉSZÍTŐ SZOBA</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LAN_LOBBY_TITLE</Tag>
@@ -7466,6 +7552,7 @@
 		<German>LAN-LOBBY</German>
 		<Italian>SALA D'ATTESA LAN</Italian>
 		<Spanish>SALA DE RED LOCAL</Spanish>
+		<Hungarian>LAN VÁRÓSZOBA</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INTERNET_LOBBY_TITLE</Tag>
@@ -7475,6 +7562,7 @@
 		<German>INTERNET-LOBBY</German>
 		<Italian>SALA D'ATTESA INTERNET</Italian>
 		<Spanish>SALA DE INTERNET</Spanish>
+		<Hungarian>INTERNETES VÁRÓSZOBA</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_ERROR_PASSWORD_MISMATCH_TITLE</Tag>
@@ -7484,6 +7572,7 @@
 		<German>Kennwortfehler</German>
 		<Italian>Errore di password</Italian>
 		<Spanish>Error de contraseña</Spanish>
+		<Hungarian>Jelszóhiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PBEM_NOT_SENDING</Tag>
@@ -7493,6 +7582,7 @@
 		<German>Der Spielstand wurde in Ihrem PBEM-Verzeichnis abgelegt. Senden Sie ihn bitte an %s1_leader.[NEWLINE] Wenn Sie Ihre E-Mail-Adresse und den SMTP-Server einstellen, können Spielstand-Dateien aus dem Spiel heraus versendet werden.</German>
 		<Italian>Il salvataggio è stato effettuato nella cartella PBEM. Spediscilo a %s1_leader.[NEWLINE] Se imposti il tuo indirizzo e-mail e il server SMTP, i salvataggi possono essere spediti dal gioco.</Italian>
 		<Spanish>La partida guardada se ha colocado en tu carpeta PBEM. Envíasela a %s1_leader.[NEWLINE] Si fijas una dirección de e-mail y un servidor SMTP, las partidas guardadas podrán enviarse desde el juego.</Spanish>
+		<Hungarian>A mentés a PBEM mappádba került. Kérlek, küldd el %s1_leader számára![NEWLINE] Ha beállítod az e-mail címedet és az SMPT szervert, a mentést a játékból is elküldheted.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_CONFIRM_RESOLUTION</Tag>
@@ -7503,6 +7593,7 @@
 		<Italian>Vuoi mantenere questa risoluzione?</Italian>
 		<Spanish>¿Quieres conservar esta resolución?</Spanish>
 		<Russian>Вы хотите сохранить это разрешение экрана?</Russian>
+		<Hungarian>Megtartod ezt a felbontást?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_DETAILS_DEFAULT</Tag>
@@ -7512,6 +7603,7 @@
 		<German>[Standard]</German>
 		<Italian>[predefiniti]</Italian>
 		<Spanish>[predeterm.]</Spanish>
+		<Hungarian>[alapértelmezett]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_MPINIT_FAILED_TITLE</Tag>
@@ -7521,6 +7613,7 @@
 		<German>Fehler</German>
 		<Italian>Errore</Italian>
 		<Spanish>Error</Spanish>
+		<Hungarian>Hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_MPINIT_FAILED_DESC</Tag>
@@ -7530,6 +7623,7 @@
 		<German>Messaging Engine kann nicht gestartet werden.</German>
 		<Italian>Impossibile avviare l'engine di messaggistica.</Italian>
 		<Spanish>No se ha podido iniciar el motor de mensajería.</Spanish>
+		<Hungarian>Nem lehet elindítani az üzenetküldő motort.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_MOD_RESTART</Tag>
@@ -7539,6 +7633,7 @@
 		<German>Dieses Szenario erfordert das "%s1_ModName"-Mod.[NEWLINE]Das Spiel muss zum Laden dieses Mods neu gestartet werden.</German>
 		<Italian>Questo scenario necessita del mod "%s1_ModName".[NEWLINE]Per caricare questo mod il gioco deve essere riavviato.</Italian>
 		<Spanish>Este escenario requiere el mod "%s1_ModName".[NEWLINE]El juego debe reiniciarse para cargar este mod.</Spanish>
+		<Hungarian>Ehhez a szcenáróhoz a következő mod szükséges: "%s1_ModName".[NEWLINE]Ennek betöltéséhez újra kell indítani a játékot.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PATCH_OK_TITLE</Tag>
@@ -7548,6 +7643,7 @@
 		<German>Version okay!</German>
 		<Italian>Versione OK!</Italian>
 		<Spanish>Versión correcta</Spanish>
+		<Hungarian>A verzió stimmel!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PATCH_OK_DESC</Tag>
@@ -7557,6 +7653,7 @@
 		<German>Es sind zurzeit keine Updates verfügbar.</German>
 		<Italian>In questo momento non ci sono aggiornamenti disponibili.</Italian>
 		<Spanish>En este momento no hay disponible ninguna actualización.</Spanish>
+		<Hungarian>Jelenleg nincsenek elérhető frissítések.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PATCH_IN_PROGRESS_TITLE</Tag>
@@ -7566,6 +7663,7 @@
 		<German>Patch läuft!</German>
 		<Italian>Patch in corso!</Italian>
 		<Spanish>Parche aplicándose</Spanish>
+		<Hungarian>Frissítés folyamatban!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PATCH_IN_PROGRESS_DESC</Tag>
@@ -7575,6 +7673,7 @@
 		<German>Sie können erst nach Abschluss des Patching-Vorgangs fortfahren.</German>
 		<Italian>Non puoi continuare finché il processo di patch non è terminato.</Italian>
 		<Spanish>No puedes continuar hasta que se haya aplicado el parche.</Spanish>
+		<Hungarian>A patch felrakásának végéig más feladat nem végrehajtható.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PATCH_CHECK_ERROR_TITLE</Tag>
@@ -7584,6 +7683,7 @@
 		<German>Update-Fehler</German>
 		<Italian>Errore di aggiornamento</Italian>
 		<Spanish>Error de actualización</Spanish>
+		<Hungarian>Frissítési hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PATCH_CHECK_ERROR_DESC</Tag>
@@ -7593,6 +7693,7 @@
 		<German>Bei der Update-Überprüfung ist ein Fehler aufgetreten.</German>
 		<Italian>Durante la verifica degli aggiornamenti si è rilevato un errore.</Italian>
 		<Spanish>Se ha producido un error al comprobar las actualizaciones.</Spanish>
+		<Hungarian>Hiba a frissítések keresése közben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_ALREADY_PATCHING_TITLE</Tag>
@@ -7602,6 +7703,7 @@
 		<German>Patch läuft bereits</German>
 		<Italian>Patch già in esecuzione</Italian>
 		<Spanish>Ya se está aplicando el parche</Spanish>
+		<Hungarian>Már frissítünk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_ALREADY_PATCHING_DESC</Tag>
@@ -7611,6 +7713,7 @@
 		<German>Es läuft bereits ein Patch-Update.</German>
 		<Italian>Aggiornamento già in esecuzione.</Italian>
 		<Spanish>El parche de actualización ya se está aplicando.</Spanish>
+		<Hungarian>Egy hibajavító frissítés már folyamatban van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_WAITING_FOR_CIVS</Tag>
@@ -7621,6 +7724,7 @@
 		<Italian>In attesa delle scelte delle civiltà...</Italian>
 		<Spanish>Esperando elección de civilizaciones...</Spanish>
 		<Russian>Ожидание загрузки...</Russian>
+		<Hungarian>A civilizációk kiválasztására várunk...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NONE</Tag>
@@ -7630,6 +7734,7 @@
 		<German>Leer</German>
 		<Italian>Nessuna</Italian>
 		<Spanish>No</Spanish>
+		<Hungarian>Nincs</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MOD_FOLDER_TAG</Tag>
@@ -7639,6 +7744,7 @@
 		<German>Mod-Verzeichnis : %s1_Modname</German>
 		<Italian>Cartella mod : %s1_Modname</Italian>
 		<Spanish>Carpeta del mod : %s1_Modname</Spanish>
+		<Hungarian>Mod mappa: %s1_Modname</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WAIT_PLAYERSTATE_SYNC</Tag>
@@ -7648,6 +7754,7 @@
 		<German>Spielstatus wird synchronisiert</German>
 		<Italian>Sincronizzazione dello stato della partita</Italian>
 		<Spanish>Sincronizando estado de la partida</Spanish>
+		<Hungarian>Játékállapot szinkronizálása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WAIT_PLAYERSTATE_MAP</Tag>
@@ -7657,6 +7764,7 @@
 		<German>Kartenskript wird bestätigt</German>
 		<Italian>Conferma dello script della mappa</Italian>
 		<Spanish>Confirmando secuencia de comandos del mapa</Spanish>
+		<Hungarian>Térképszkript megerősítése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WAIT_PLAYERSTATE_AUTH</Tag>
@@ -7666,6 +7774,7 @@
 		<German>Warten auf Spielerauthentifizierung</German>
 		<Italian>In attesa dell'autenticazione del giocatore</Italian>
 		<Spanish>Esperando autenticación de jugadores</Spanish>
+		<Hungarian>Játékos engedélyezésre várunk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOAD_FAILED</Tag>
@@ -7675,6 +7784,7 @@
 		<German>Ladevorgang gescheitert.</German>
 		<Italian>Caricamento fallito.</Italian>
 		<Spanish>Fallo al cargar</Spanish>
+		<Hungarian>Betöltés sikertelen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PITBOSS_WAIT</Tag>
@@ -7684,6 +7794,7 @@
 		<German> - Warten auf den PitBoss</German>
 		<Italian> - In attesa del Pitboss</Italian>
 		<Spanish> - Esperando Pitboss</Spanish>
+		<Hungarian>- A PitBossra várunk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PLAYER_WAIT</Tag>
@@ -7693,6 +7804,7 @@
 		<German> - Warten auf </German>
 		<Italian> - In attesa di </Italian>
 		<Spanish> - Esperando a </Spanish>
+		<Hungarian> - Erre várunk : </Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOAD_INIT_FAILED_TITLE</Tag>
