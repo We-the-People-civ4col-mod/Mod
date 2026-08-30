@@ -7814,6 +7814,7 @@
 		<German>Ladevorgang fehlgeschlagen</German>
 		<Italian>Caricamento fallito</Italian>
 		<Spanish>Fallo al cargar</Spanish>
+		<Hungarian>Betöltési hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOAD_INIT_FAILED_DESC</Tag>
@@ -7823,6 +7824,7 @@
 		<German>Ursprüngliche Spieldaten konnten nicht geladen werden.</German>
 		<Italian>Impossibile caricare i dati iniziali di gioco.</Italian>
 		<Spanish>No se han podido cargar los datos iniciales del juego.</Spanish>
+		<Hungarian>Az inicializációs játékadatok betöltése sikertelen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NET_HOST_FAILED</Tag>
@@ -7832,6 +7834,7 @@
 		<German>Spiel-Hosting fehlgeschlagen. Prüfen Sie die Netzwerkverbindungen.</German>
 		<Italian>Host della partita fallito. Controlla le connessione di rete.</Italian>
 		<Spanish>No se ha podido alojar la partida. Comprueba la conexión de red.</Spanish>
+		<Hungarian>Játékhosztolás sikertelen. Ellenőrizd a hálózati kapcsolatokat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_OPEN_REPLAY_FAILED</Tag>
@@ -7841,6 +7844,7 @@
 		<German>Öffnen der Wiederholungs-Datei gescheitert.</German>
 		<Italian>Errore nell'apertura del file di replay.</Italian>
 		<Spanish>No se ha podido abrir el archivo de repetición.</Spanish>
+		<Hungarian>A visszajátszásfájl megnyitása sikertelen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SERVER_STAGING_ERROR_TITLE</Tag>
@@ -7850,6 +7854,7 @@
 		<German>Staging Room-Fehler</German>
 		<Italian>Errore nella stanza d'allestimento</Italian>
 		<Spanish>Error de la sala de comunicaciones</Spanish>
+		<Hungarian>Előkészítő szoba hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SERVER_STAGING_ERROR_DESC</Tag>
@@ -7859,6 +7864,7 @@
 		<German>Es ist ein Fehler im Staging Room auf dem Server aufgetreten.</German>
 		<Italian>Si è verificato un errore sul server della stanza d'allestimento.</Italian>
 		<Spanish>Se ha producido un error relacionado con la sala de comunicaciones del servidor.</Spanish>
+		<Hungarian>Hiba a szerver előkészítő szobájában.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SHORT_NICK_ERROR_TITLE</Tag>
@@ -7868,6 +7874,7 @@
 		<German>Fehler beim Benutzernamen</German>
 		<Italian>Errore di username</Italian>
 		<Spanish>Error de nombre de usuario</Spanish>
+		<Hungarian>Felhasználói név hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SHORT_NICK_ERROR_DESC</Tag>
@@ -7877,6 +7884,7 @@
 		<German>Benutzernamen müssen mindestens 3 Zeichen lang sein.</German>
 		<Italian>Gli username devono essere lunghi almeno tre caratteri.</Italian>
 		<Spanish>Los nombres de usuario deben tener una longitud de al menos 3 caracteres.</Spanish>
+		<Hungarian>A felhasználói névnek legalább három karakterből kell állnia.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PLAYERNAME_MISSING_TITLE</Tag>
@@ -7886,6 +7894,7 @@
 		<German>Spielername erforderlich</German>
 		<Italian>Nome del giocatore necessario</Italian>
 		<Spanish>Se requiere nombre del jugador</Spanish>
+		<Hungarian>Játékosnév szükséges</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PLAYERNAME_MISSING_DESC</Tag>
@@ -7895,6 +7904,7 @@
 		<German>Sie müssen einen Spielernamen angeben.</German>
 		<Italian>Devi inserire il nome del giocatore.</Italian>
 		<Spanish>Hay que facilitar el nombre del jugador.</Spanish>
+		<Hungarian>Meg kell adnod egy játékosnevet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_GAMENAME_MISSING_TITLE</Tag>
@@ -7904,6 +7914,7 @@
 		<German>Spielname erforderlich</German>
 		<Italian>Nome della partita necessario</Italian>
 		<Spanish>Se requiere nombre de la partida</Spanish>
+		<Hungarian>Játéknév szükséges</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_GAMENAME_MISSING_DESC</Tag>
@@ -7913,6 +7924,7 @@
 		<German>Sie müssen einen Spielnamen angeben.</German>
 		<Italian>Devi inserire il nome di una partita.</Italian>
 		<Spanish>Hay que facilitar el nombre de la partida.</Spanish>
+		<Hungarian>Meg kell adnod a játék nevét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_ADDRESS_MISSING_TITLE</Tag>
@@ -7922,6 +7934,7 @@
 		<German>Netzwerkadresse erforderlich</German>
 		<Italian>Indirizzo di rete necessario</Italian>
 		<Spanish>Se requiere dirección de red</Spanish>
+		<Hungarian>Hálózati cím szükséges</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_ADDRESS_MISSING_DESC</Tag>
@@ -7931,6 +7944,7 @@
 		<German>Sie müssen eine gültige Netzwerkadresse angeben.</German>
 		<Italian>Devi inserire un indirizzo di rete valido.</Italian>
 		<Spanish>Hay que facilitar una dirección de red válida.</Spanish>
+		<Hungarian>Meg kell adnod egy érvényes hálózati címet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_JOIN_FAILED</Tag>
@@ -7940,6 +7954,7 @@
 		<German>Spielanschluss fehlgeschlagen bei</German>
 		<Italian>Impossibile partecipare alla partita :</Italian>
 		<Spanish>Imposible unirse a la partida: </Spanish>
+		<Hungarian>Nem sikerült kapcsolódni hozzá: </Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NO_AVAILABLE_CIV_TITLE</Tag>
@@ -7949,6 +7964,7 @@
 		<German>Keine Zivs!</German>
 		<Italian>Nessuna civiltà!</Italian>
 		<Spanish>No hay civilizaciones</Spanish>
+		<Hungarian>Civilizálatlanság!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NO_AVAILABLE_CIV_DESC</Tag>
@@ -7958,6 +7974,7 @@
 		<German>Es sind keine Zivs zur Auswahl verfügbar.</German>
 		<Italian>Non ci sono civiltà disponibili da scegliere.</Italian>
 		<Spanish>No hay civilizaciones disponibles entre las que escoger.</Spanish>
+		<Hungarian>A kiválasztáshoz nem állnak rendelkezésre civilizációk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_GAME_STATS_OPTION</Tag>
@@ -7967,6 +7984,7 @@
 		<German>Spielstatus ausgeben</German>
 		<Italian>Riporta le statistiche di gioco</Italian>
 		<Spanish>Comunicar estadísticas de la partida</Spanish>
+		<Hungarian>Játékstatisztikák jelentése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_INVALID_HOST_TITLE</Tag>
@@ -7976,6 +7994,7 @@
 		<German>Ungültiger Host</German>
 		<Italian>Host non valido</Italian>
 		<Spanish>Anfitrión no válido</Spanish>
+		<Hungarian>Érvénytelen kiszolgáló</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_INVALID_HOST_DESC</Tag>
@@ -7985,6 +8004,7 @@
 		<German>Der gewählte Host ist nicht mehr gültig.</German>
 		<Italian>L'host selezionato non è più valido.</Italian>
 		<Spanish>El anfitrión seleccionado ya no es válido.</Spanish>
+		<Hungarian>A kiválasztott kiszolgáló már nem érvényes.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_HOST_DISCONNECT_TITLE</Tag>
@@ -7994,6 +8014,7 @@
 		<German>Verbindungsfehler</German>
 		<Italian>Errore durante la connessione</Italian>
 		<Spanish>Fallo en la conexión</Spanish>
+		<Hungarian>Kapcsolódási hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_HOST_DISCONNECT_DESC</Tag>
@@ -8003,6 +8024,7 @@
 		<German>Die Verbindung zum Host ist abgebrochen.</German>
 		<Italian>Abbiamo perso la connessione all'host.</Italian>
 		<Spanish>Se ha perdido la conexión con el anfitrión.</Spanish>
+		<Hungarian>Elvesztettük a kapcsolatot a kiszolgálóhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_VERSION_MISMATCH_WARNING_TITLE</Tag>
@@ -8012,6 +8034,7 @@
 		<German>Versionskonflikt</German>
 		<Italian>Versione incompatibile</Italian>
 		<Spanish>Versión incompatible</Spanish>
+		<Hungarian>Nem egyező verziószám</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_VERSION_MISMATCH_WARNING_DESC</Tag>
@@ -8021,6 +8044,7 @@
 		<German>Achtung: Ihre Spieldaten entsprechen nicht der vom Host verwendeten Version.</German>
 		<Italian>Attenzione: la versione dei file del nostro gioco è differente da quella dell'host.</Italian>
 		<Spanish>Aviso: la versión de los archivos de la partida no coincide con la del anfitrión.</Spanish>
+		<Hungarian>Figyelem: a játékfájljaink verziószáma nem egyezik a kiszolgálón lévőkkel!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_VERSION_MISMATCH_ERROR_TITLE</Tag>
@@ -8030,6 +8054,7 @@
 		<German>Versionskonflikt</German>
 		<Italian>Versione incompatibile</Italian>
 		<Spanish>Versión incompatible</Spanish>
+		<Hungarian>Nem egyező verziószám</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_VERSION_MISMATCH_ERROR_DESC</Tag>
@@ -8039,6 +8064,7 @@
 		<German>Ihre Kern-Spieldateien entsprechen nicht der auf dem Host verwendeten Version.[NEWLINE]Spielanschluss nicht möglich!</German>
 		<Italian>La versione dei nostri file critici è differente da quella dell'host.[NEWLINE]Impossibile partecipare alla partita!</Italian>
 		<Spanish>Aviso: la versión de los archivos críticos de la partida no coincide con la del anfitrión.[NEWLINE]No es posible unirse a la partida</Spanish>
+		<Hungarian>Kritikus játékfájljaink verziószáma nem egyezik a kiszolgálón lévőkkel.[NEWLINE]Nem lehet csatlakozni a játékhoz!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_JOIN_FAILED_TITLE</Tag>
@@ -8048,6 +8074,7 @@
 		<German>Spielanschluss gescheitert</German>
 		<Italian>Partecipazione fallita</Italian>
 		<Spanish>Fallo al intentar unirse</Spanish>
+		<Hungarian>Csatlakozási hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_JOIN_FAILED_DESC</Tag>
@@ -8057,6 +8084,7 @@
 		<German>Spielanschluss nicht möglich</German>
 		<Italian>Impossibile partecipare alla partita :</Italian>
 		<Spanish>No es posible unirse a la partida</Spanish>
+		<Hungarian>Nem lehet a játékhoz csatlakozni</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_MAP_SCRIPT_NOT_FOUND_TITLE</Tag>
@@ -8066,6 +8094,7 @@
 		<German>Kartenskript nicht gefunden</German>
 		<Italian>Script di mappa non trovato</Italian>
 		<Spanish>No se ha encontrado la secuencia de comandos del mapa</Spanish>
+		<Hungarian>Térképszkript nem található</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_MAP_SCRIPT_NOT_FOUND_DESC</Tag>
@@ -8075,6 +8104,7 @@
 		<German>Die gewählte Kartenskript-Datei konnte nicht gefunden werden.</German>
 		<Italian>Impossibile trovare il file di script della mappa prescelto.</Italian>
 		<Spanish>No se ha podido encontrar el archivo escogido de secuencia de comandos del mapa.</Spanish>
+		<Hungarian>A kiválasztott térképszkript nem található.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NOT_READY_TITLE</Tag>
@@ -8084,6 +8114,7 @@
 		<German>Nicht bereit</German>
 		<Italian>Non pronto</Italian>
 		<Spanish>No está listo</Spanish>
+		<Hungarian>Nem áll készen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NOT_READY_DESC</Tag>
@@ -8093,6 +8124,7 @@
 		<German>Das Spiel kann erst gestartet werden, wenn alle Spieler bereit sind.</German>
 		<Italian>Impossibile avviare la partita finché tutti i giocatori non pronti.</Italian>
 		<Spanish>No se puede iniciar la partida hasta que estén listos todos los jugadores.</Spanish>
+		<Hungarian>A játék nem indítható addig, míg nem áll készen minden játékos.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_FILETRANSFER_INPROGRESS_TITLE</Tag>
@@ -8102,6 +8134,7 @@
 		<German>Dateien werden übertragen ...</German>
 		<Italian>Trasferimento file...</Italian>
 		<Spanish>Transfiriendo archivos...</Spanish>
+		<Hungarian>Fájlátvitel...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_FILETRANSFER_INPROGRESS_DESC</Tag>
@@ -8111,6 +8144,7 @@
 		<German>Bitte warten. Spieldaten werden übertragen.</German>
 		<Italian>Attendere, trasferimento dei dati di gioco in corso.</Italian>
 		<Spanish>Un momento. Hay en curso transferencias de datos de la partida.</Spanish>
+		<Hungarian>Kis türelmet. A játék adatfájljainak átvitele folyamatban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_CIV_PASSWORD</Tag>
@@ -8120,6 +8154,7 @@
 		<German>Civ-Kennwort :</German>
 		<Italian>Password della civiltà :</Italian>
 		<Spanish>Contraseña de civilización :</Spanish>
+		<Hungarian>Civ jelszó:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_CIV_EMAIL</Tag>
@@ -8129,6 +8164,7 @@
 		<German>E-Mail-Adresse :</German>
 		<Italian>Indirizzo e-mail :</Italian>
 		<Spanish>Dirección de e-mail :</Spanish>
+		<Hungarian>E-mail cím:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_CIV_SMTP</Tag>
@@ -8138,6 +8174,7 @@
 		<German>SMTP-Server :</German>
 		<Italian>Server SMTP :</Italian>
 		<Spanish>Servidor SMTP :</Spanish>
+		<Hungarian>SMPT szerver:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_PLAYER_DETAILS_TITLE</Tag>
@@ -8147,6 +8184,7 @@
 		<German>SPIELERDETAILS</German>
 		<Italian>DETTAGLI GIOCATORE</Italian>
 		<Spanish>DETALLES DEL JUGADOR</Spanish>
+		<Hungarian>JÁTÉKOSADATOK</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SAVE_EXTENSION_DESC</Tag>
@@ -8156,6 +8194,7 @@
 		<German>Spielstand-Dateien</German>
 		<Italian>Salvataggi</Italian>
 		<Spanish>Partidas guardadas</Spanish>
+		<Hungarian>Mentések</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCH_COMPLETE_TITLE</Tag>
@@ -8165,6 +8204,7 @@
 		<German>Patch-Download abgeschlossen</German>
 		<Italian>Download patch completo</Italian>
 		<Spanish>Descarga del parche completa</Spanish>
+		<Hungarian>Patch letöltése befejezve</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCH_COMPLETE_DESC</Tag>
@@ -8174,6 +8214,7 @@
 		<German>Der Patch wurde erfolgreich heruntergeladen.[NEWLINE]Klicken Sie auf OK, um das Spiel zu beenden und den Patch zu installieren.</German>
 		<Italian>La patch è stata scaricata con successo.[NEWLINE]Premi OK per chiudere il gioco e installare la patch.</Italian>
 		<Spanish>El parche se ha descargado con éxito.[NEWLINE]Pulsa "Aceptar" para elegir la partida e instalar el parche.</Spanish>
+		<Hungarian>A patch letöltése sikeresen befejeződött[NEWLINE]Kattints a Rendben gombra a játék bezárásához, és a hibajavítás telepítéséhez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCH_FAILED_TITLE</Tag>
@@ -8183,6 +8224,7 @@
 		<German>Patch-Download gescheitert</German>
 		<Italian>Download patch fallito</Italian>
 		<Spanish>Ha fallado la descarga del parche</Spanish>
+		<Hungarian>Patch letöltése sikertelen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_INSTALL</Tag>
@@ -8192,6 +8234,7 @@
 		<German>Installieren</German>
 		<Italian>Installa</Italian>
 		<Spanish>Instalar</Spanish>
+		<Hungarian>Telepítés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_STAGING_ROOM_READY</Tag>
@@ -8201,6 +8244,7 @@
 		<German>Bereit</German>
 		<Italian>Pronto</Italian>
 		<Spanish>Listo</Spanish>
+		<Hungarian>Kész</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDY_NAME_TAG</Tag>
@@ -8210,6 +8254,7 @@
 		<German>Freund-Name : </German>
 		<Italian>Nome amico : </Italian>
 		<Spanish>Nombre de amigo : </Spanish>
+		<Hungarian>Barát neve : </Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADD_BUDDY_NAME_TITLE</Tag>
@@ -8219,6 +8264,7 @@
 		<German>Einen Freund hinzufügen</German>
 		<Italian>Aggiungi un amico</Italian>
 		<Spanish>Agregar a un amigo</Spanish>
+		<Hungarian>Barát felvétele</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REMOVE_BUDDY_NAME_TITLE</Tag>
@@ -8228,6 +8274,7 @@
 		<German>Einen Freund entfernen</German>
 		<Italian>Elimina un amico</Italian>
 		<Spanish>Quitar a un amigo</Spanish>
+		<Hungarian>Barát eltávolítása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDY_ROOT_NAME</Tag>
@@ -8237,6 +8284,7 @@
 		<German>Freunde</German>
 		<Italian>Amici</Italian>
 		<Spanish>Amigos</Spanish>
+		<Hungarian>Barátok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDY_INFO_TAG</Tag>
@@ -8246,6 +8294,7 @@
 		<German>Freund-Info</German>
 		<Italian>Informazioni amico</Italian>
 		<Spanish>Información del amigo</Spanish>
+		<Hungarian>Barát infó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REMOVE_BUDDY_TAG</Tag>
@@ -8255,6 +8304,7 @@
 		<German>Freund entfernen</German>
 		<Italian>Elimina amico</Italian>
 		<Spanish>Quitar amigo</Spanish>
+		<Hungarian>Barát eltávolítása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADD_BUDDY_TAG</Tag>
@@ -8264,6 +8314,7 @@
 		<German>Freund hinzufügen</German>
 		<Italian>Aggiungi amico</Italian>
 		<Spanish>Agregar amigo</Spanish>
+		<Hungarian>Barát felvétele</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADDED_BUDDY_TITLE</Tag>
@@ -8273,6 +8324,7 @@
 		<German>Freundesanfrage</German>
 		<Italian>Richiesta amico</Italian>
 		<Spanish>Solicitud de amigo</Spanish>
+		<Hungarian>Barátkérés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADDED_BUDDY_PROMPT</Tag>
@@ -8282,6 +8334,7 @@
 		<German>Wollen Sie zur Freundesliste von [COLOR_SELECTED_TEXT]%s1_BuddyName[COLOR_REVERT] hinzugefügt werden?</German>
 		<Italian>Vuoi che [COLOR_SELECTED_TEXT]%s1_BuddyName[COLOR_REVERT] ti aggiunga alla sua lista amici?</Italian>
 		<Spanish>¿Quieres que se te agregue a la lista de amigos de [COLOR_SELECTED_TEXT]%s1_BuddyName[COLOR_REVERT]?</Spanish>
+		<Hungarian>Szeretnél felkerülni %s1_BuddyName barátlistájára?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MULTIPLAYER_TAB_NAME</Tag>
@@ -8291,6 +8344,7 @@
 		<German>Multiplayer</German>
 		<Italian>Multigiocatore</Italian>
 		<Spanish>Multijugador</Spanish>
+		<Hungarian>Többszemélyes játék</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TURN_LIMIT_TAG</Tag>
@@ -8300,6 +8354,7 @@
 		<German>Limit Spielrunden :</German>
 		<Italian>Limite turni della partita :</Italian>
 		<Spanish>Límite de turnos de la partida :</Spanish>
+		<Hungarian>Játékkör limit :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRANSFER_GAME_DATA_TITLE</Tag>
@@ -8309,6 +8364,7 @@
 		<German>Spieldaten werden übertragen an</German>
 		<Italian>Trasferimento dati a</Italian>
 		<Spanish>Transfiriendo datos de la partida a </Spanish>
+		<Hungarian>Játékadatok átvitele a következőhöz : </Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_RECIP_BUDDY_PROMPT</Tag>
@@ -8318,6 +8374,7 @@
 		<German>[COLOR_SELECTED_TEXT]%s1_Name[COLOR_REVERT] muss ein Freund sein, um Nachrichten von Ihnen empfangen zu können.[NEWLINE][NEWLINE]Wollen Sie [COLOR_SELECTED_TEXT]%s2_Name[COLOR_REVERT] zu Ihrer Freundesliste hinzufügen?</German>
 		<Italian>[COLOR_SELECTED_TEXT]%s1_Name[COLOR_REVERT] deve essere un amico per ricevere il tuo messaggio.[NEWLINE][NEWLINE]Vuoi aggiungere [COLOR_SELECTED_TEXT]%s2_Name[COLOR_REVERT] alla tua lista amici?</Italian>
 		<Spanish>[COLOR_SELECTED_TEXT]%s1_Name[COLOR_REVERT] debe ser un amigo para poder recibir tus mensajes.[NEWLINE][NEWLINE]¿Quieres agregar a [COLOR_SELECTED_TEXT]%s2_Name[COLOR_REVERT] a tu lista de amigos?</Spanish>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s1_Name[COLOR_REVERT] csak akkor fogadhat üzeneteket tőled, ha a barátod.[NEWLINE][NEWLINE]Szeretnéd, hogy [COLOR_SELECTED_TEXT]%s2_Name[COLOR_REVERT] felkerüljön a barátlistádra?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_RANDOM_TOOLTIP</Tag>
@@ -8327,6 +8384,7 @@
 		<German>Es wird eine zufällige Wahl getroffen. Diese Option eignet sich nur für echte Draufgänger!</German>
 		<Italian>Verrà eseguita una scelta casuale. Scegliendo questa opzione, dimostri di essere un duro.</Italian>
 		<Spanish>La elección se realizará al azar. Con esta decisión se demuestra tu dureza.</Spanish>
+		<Hungarian>A kiválasztás véletlenszerű lesz. Ha ezt jelölöd be, akkor tényleg kemény vagy!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SP_LOAD_ERROR_TITLE</Tag>
@@ -8336,6 +8394,7 @@
 		<German>Nur Einzelspieler-Modus!</German>
 		<Italian>Solo modalità giocatore singolo!</Italian>
 		<Spanish>¡Solo hay un jugador!</Spanish>
+		<Hungarian>Csak egyszemélyes játék!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SP_LOAD_ERROR_DESC</Tag>
@@ -8345,6 +8404,7 @@
 		<German>Im Einzelspieler-Modus können keine Multiplayer-Spiele geladen werden!</German>
 		<Italian>Non ti è permesso caricare partite multigiocatore in modalità giocatore singolo!</Italian>
 		<Spanish>No se permite cargar partidas multijugador en modo un jugador.</Spanish>
+		<Hungarian>Egyszemélyes játékban nem tölthetsz be többszemélyes játékállást!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_ADMIN_PASSWORD</Tag>
@@ -8355,6 +8415,7 @@
 		<Italian>Password amministratore :</Italian>
 		<Spanish>Contraseña del administrador :</Spanish>
 		<Russian>Пароль Администратора :</Russian>
+		<Hungarian>Adminisztrátor jelszó :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_RETIRE</Tag>
@@ -8365,6 +8426,7 @@
 		<Italian>Ritirati</Italian>
 		<Spanish>Retirarse</Spanish>
 		<Russian>Уйти в отставку</Russian>
+		<Hungarian>Visszavonulás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_SCREEN_LANGUAGE</Tag>
@@ -8375,6 +8437,7 @@
 		<Italian>Lingua</Italian>
 		<Spanish>Idioma</Spanish>
 		<Russian>Язык</Russian>
+		<Hungarian>Nyelv</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONN_UPDATE_LEFT</Tag>
@@ -8384,6 +8447,7 @@
 		<German>%s1_Name hat das Spiel verlassen.</German>
 		<Italian>%s1_Name ha abbandonato la partita.</Italian>
 		<Spanish>%s1_Name ha abandonado la partida.</Spanish>
+		<Hungarian>%s1_Name kiszállt a játékból.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONN_UPDATE_JOINED</Tag>
@@ -8393,6 +8457,7 @@
 		<German>%s1_Name hat sich dem Spiel angeschlossen.</German>
 		<Italian>%s1_Name si è unito alla partita.</Italian>
 		<Spanish>%s1_Name se ha unido a la partida.</Spanish>
+		<Hungarian>%s1_Name csatlakozott a játékhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONN_UPDATE_RETIRED</Tag>
@@ -8402,6 +8467,7 @@
 		<German>%s1_Name hat das Spiel verlassen.</German>
 		<Italian>%s1_Name si è ritirato dalla partita.</Italian>
 		<Spanish>%s1_Name se ha retirado de la partida.</Spanish>
+		<Hungarian>%s1_Name visszavonult a játékból.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONN_UPDATE_KICKED</Tag>
@@ -8411,6 +8477,7 @@
 		<German>%s1_Name wurde aus dem Spiel geworfen.</German>
 		<Italian>%s1_Name è stato cacciato dalla partita.</Italian>
 		<Spanish>%s1_Name ha sido expulsado de la partida.</Spanish>
+		<Hungarian>%s1_Name ki lett rúgva a játékból.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONN_UPDATE_SAVING_QUITTING</Tag>
@@ -8420,6 +8487,7 @@
 		<German>Speichern und beenden ...</German>
 		<Italian>Salvataggio e uscita...</Italian>
 		<Spanish>Guardando y abandonando...</Spanish>
+		<Hungarian>Mentés és kilépés...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONN_UPDATE_SAVING_REMOVING</Tag>
@@ -8429,6 +8497,7 @@
 		<German>Spiel wird gespeichert und %s1_Names entfernt</German>
 		<Italian>Salvataggio della partita e rimozione di %s1_Names</Italian>
 		<Spanish>Guardando partida y eliminando a %s1_Names.</Spanish>
+		<Hungarian>A játék elmentése, és %s1_Name eltávolítása.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONN_UPDATE_UNEXPECTED</Tag>
@@ -8438,6 +8507,7 @@
 		<German>Unerwartetes Abstimmungsergebnis</German>
 		<Italian>Risultato della votazione inaspettato</Italian>
 		<Spanish>Resultado inesperado de la votación</Spanish>
+		<Hungarian>Nem várt szavazási eredmény.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_CONTINUE_DESC</Tag>
@@ -8447,6 +8517,7 @@
 		<German>Aktuelles Spiel speichern und weiterspielen</German>
 		<Italian>Salva la partita in corso e continua a giocare</Italian>
 		<Spanish>Guardar la partida y seguir jugando</Spanish>
+		<Hungarian>A jelenlegi állás elmentése, és a játék folytatása.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_CONTINUE_SHORT</Tag>
@@ -8456,6 +8527,7 @@
 		<German>FORTFAHREN</German>
 		<Italian>CONTINUA</Italian>
 		<Spanish>CONTINUAR</Spanish>
+		<Hungarian>FOLYTATÁS</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_QUIT_DESC</Tag>
@@ -8465,6 +8537,7 @@
 		<German>Aktuelles Spiel speichern und später weiterspielen</German>
 		<Italian>Salva la partita in corso e riprendi più tardi</Italian>
 		<Spanish>Guardar la partida y seguir más tarde</Spanish>
+		<Hungarian>A jelenlegi állás elmentése, és a játék folytatása később</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_QUIT_SHORT</Tag>
@@ -8474,6 +8547,7 @@
 		<German>ENDE</German>
 		<Italian>ELIMINA</Italian>
 		<Spanish>SALIR</Spanish>
+		<Hungarian>KILÉPÉS</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_WAIT_DESC</Tag>
@@ -8483,6 +8557,7 @@
 		<German>Weiter warten</German>
 		<Italian>Continua ad aspettare</Italian>
 		<Spanish>Seguir esperando</Spanish>
+		<Hungarian>Várakozás folytatása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_WAIT_SHORT</Tag>
@@ -8492,6 +8567,7 @@
 		<German>WARTEN</German>
 		<Italian>ATTESA</Italian>
 		<Spanish>ESPERAR</Spanish>
+		<Hungarian>VÁRAKOZÁS</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_UNDECIDED_SHORT</Tag>
@@ -8501,6 +8577,7 @@
 		<German>(Unentschlossen)</German>
 		<Italian>(Indeciso)</Italian>
 		<Spanish>(Indeciso)</Spanish>
+		<Hungarian>(Nem eldöntött)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_UNKNOWN_SHORT</Tag>
@@ -8510,6 +8587,7 @@
 		<German>Unbekannt!</German>
 		<Italian>Sconosciuto!</Italian>
 		<Spanish>Desconocido</Spanish>
+		<Hungarian>Ismeretlen!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_OUTSTANDING_TITLE</Tag>
@@ -8519,6 +8597,7 @@
 		<German>Es stehen noch immer Stimmabgaben aus.</German>
 		<Italian>In attesa dei voti mancanti.</Italian>
 		<Spanish>Esperando todavía votos importantes.</Spanish>
+		<Hungarian>Még várunk a külső szavazatokra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_TIED_TITLE</Tag>
@@ -8528,6 +8607,7 @@
 		<German>Das Abstimmungsergebnis war unentschieden.</German>
 		<Italian>La votazione è patta.</Italian>
 		<Spanish>La votación ha acabado en empate.</Spanish>
+		<Hungarian>A szavazás döntetlen eredményt hozott.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_UNANIMOUS_TITLE</Tag>
@@ -8537,6 +8617,7 @@
 		<German>Das Abstimmungsergebnis muss einstimmig sein.</German>
 		<Italian>La votazione deve essere unanime.</Italian>
 		<Spanish>La votación ha de ser unánime.</Spanish>
+		<Hungarian>A szavazásnak névtelennek kell lennie.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_WAIT_TITLE</Tag>
@@ -8546,6 +8627,7 @@
 		<German>Die Spieler haben beschlossen zu warten.</German>
 		<Italian>I giocatori hanno scelto di continuare ad aspettare.</Italian>
 		<Spanish>Los jugadores han decidido seguir esperando.</Spanish>
+		<Hungarian>A játékosok úgy döntöttek, hogy várakoznak tovább.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_NAME_AND</Tag>
@@ -8555,6 +8637,7 @@
 		<German>und %s1_Name</German>
 		<Italian>e %s1_Name</Italian>
 		<Spanish>y %s1_Name</Spanish>
+		<Hungarian>, és %s1_Name</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_NAME_COMMA_AND</Tag>
@@ -8564,6 +8647,7 @@
 		<German> und %s1_Name</German>
 		<Italian>, e %s1_Name</Italian>
 		<Spanish>, %s1_Name</Spanish>
+		<Hungarian>, és %s1_Name</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VOTE_SCREEN_SAVE_NAME</Tag>
@@ -8573,6 +8657,7 @@
 		<German>Speichername</German>
 		<Italian>Nome del salvataggio</Italian>
 		<Spanish>Guardar nombre de la partida</Spanish>
+		<Hungarian>Játékmentés neve</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VOTE_SCREEN_SAVE_NOW</Tag>
@@ -8582,6 +8667,7 @@
 		<German>Jetzt speichern</German>
 		<Italian>Salva ora</Italian>
 		<Spanish>Guardar ya</Spanish>
+		<Hungarian>Mentés most</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VOTE_SCREEN_EXIT_NOW</Tag>
@@ -8591,6 +8677,7 @@
 		<German>Jetzt beenden</German>
 		<Italian>Esci ora</Italian>
 		<Spanish>Salir ya</Spanish>
+		<Hungarian>Kilépés most</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PLAYER_VOTE_DESC</Tag>
@@ -8600,6 +8687,7 @@
 		<German>Abstimmung von %s1_Name :</German>
 		<Italian>Il voto di %s1_Name :</Italian>
 		<Spanish>Voto de %s1_Name :</Spanish>
+		<Hungarian>%s1_Name szavazata:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPY_LOGIN_TITLEBAR</Tag>
@@ -8609,6 +8697,7 @@
 		<German>Login</German>
 		<Italian>Login</Italian>
 		<Spanish>Iniciar sesión</Spanish>
+		<Hungarian>Belépés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPY_LOGIN_DESC</Tag>
@@ -8618,6 +8707,7 @@
 		<German>Geben Sie Ihren vorhandenen GameSpy-Benutzernamen und Ihr Kennwort ein, um sich einzuloggen.</German>
 		<Italian>Inserisci il tuo GameSpy ID esistente e la password per effettuare il login.</Italian>
 		<Spanish>Introduce tu ID de GameSpy y tu contraseña para iniciar sesión.</Spanish>
+		<Hungarian>Add meg az adataidat (GameSpy ID és jelszó) a belépéshez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPY_LOGIN_BUTTON</Tag>
@@ -8627,6 +8717,7 @@
 		<German>LOGIN</German>
 		<Italian>LOGIN</Italian>
 		<Spanish>INICIAR SESIÓN</Spanish>
+		<Hungarian>BELÉPÉS</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPY_CREATE_ACCOUNT_TITLE</Tag>
@@ -8636,6 +8727,7 @@
 		<German>NEUEN ACCOUNT ANLEGEN</German>
 		<Italian>CREA NUOVO ACCOUNT</Italian>
 		<Spanish>CREAR NUEVA CUENTA</Spanish>
+		<Hungarian>ÚJ FELHASZNÁLÓI FIÓK LÉTREHOZÁSA</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPY_CREATE_ACCOUNT_HELP</Tag>
@@ -8645,6 +8737,7 @@
 		<German>Geben Sie zum Anlegen eines neuen GameSpy-Accounts Ihre E-Mail-Adresse, den gewünschten Benutzernamen und ein Kennwort ein.</German>
 		<Italian>Inserisci il tuo indirizzo e-mail, lo username desiderato e la password per creare un nuovo account di GameSpy.</Italian>
 		<Spanish>Introduce tu dirección de e-mail, el nombre de usuario que desees y la contraseña para crear una nueva cuenta de GameSpy.</Spanish>
+		<Hungarian>Add meg az e-mail címedet, a kívánt felhasználói nevet és a jelszót egy új GameSpy fiók létrehozásához.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MEMBERS_SEND_MESSAGE</Tag>
@@ -8654,6 +8747,7 @@
 		<German>Nachricht senden</German>
 		<Italian>Invia messaggio</Italian>
 		<Spanish>Enviar mensaje</Spanish>
+		<Hungarian>Üzenet küldése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MEMBERS_ADD_BUDDY</Tag>
@@ -8663,6 +8757,7 @@
 		<German>Zu Freundesliste hinzufügen</German>
 		<Italian>Aggiungi agli amici</Italian>
 		<Spanish>Agregar a amigos</Spanish>
+		<Hungarian>Hozzáadás a barátokhoz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADD_BUDDY_IMAGE_TEXT</Tag>
@@ -8672,6 +8767,7 @@
 		<German>NEUEN FREUND HINZUFÜGEN</German>
 		<Italian>AGGIUNGI NUOVO AMICO</Italian>
 		<Spanish>AGREGAR NUEVO AMIGO</Spanish>
+		<Hungarian>ÚJ BARÁT FELVÉTELE</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADD_BUDDY_HELP_TEXT</Tag>
@@ -8681,6 +8777,7 @@
 		<German>Nach dem Hinzufügen einer Person zu Ihrer Freundesliste können Sie sofort Nachrichten an sie versenden.</German>
 		<Italian>Quando aggiungi una persona alla lista amici, puoi inviare messaggi personali diretti.</Italian>
 		<Spanish>Cuando agregas a alguien a la lista de amigos, puedes enviarle mensajes directos.</Spanish>
+		<Hungarian>Ha felvettél valakit a barátlistádra, közvetlen üzenetet küldhetsz neki.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REMOVE_BUDDY_TITLE</Tag>
@@ -8690,6 +8787,7 @@
 		<German>VORHANDENEN FREUND ENTFERNEN</German>
 		<Italian>ELIMINA AMICO ESISTENTE</Italian>
 		<Spanish>ELIMINAR AMIGO EXISTENTE</Spanish>
+		<Hungarian>BARÁT ELTÁVOLÍTÁSA</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REMOVE_BUDDY_VERIFY</Tag>
@@ -8699,6 +8797,7 @@
 		<German>Soll dieser Freund wirklich aus der Liste entfernt werden?</German>
 		<Italian>Sei sicuro di voler eliminare questo amico?</Italian>
 		<Spanish>¿Seguro que quieres quitar a este amigo?</Spanish>
+		<Hungarian>Biztos, hogy eltávolítod ezt a barátot?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADDED_BUDDY_IMAGE_TEXT</Tag>
@@ -8708,6 +8807,7 @@
 		<German>FREUNDESANFRAGE</German>
 		<Italian>RICHIESTA AMICO</Italian>
 		<Spanish>SOLICITUD DE AMIGO</Spanish>
+		<Hungarian>BARÁTKÉRÉS</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADD_MEMBER_AS_BUDDYHELP</Tag>
@@ -8717,6 +8817,7 @@
 		<German>Wenn Sie direkt mit anderen Mitgliedern chatten wollen, müssen Sie diese in Ihre Freundesliste aufnehmen. Wollen Sie [COLOR_SELECTED_TEXT]%s1_Name[COLOR_REVERT] zu Ihrer Freundesliste hinzufügen?</German>
 		<Italian>Per chattare direttamente con un membro, prima devi aggiungerlo alla tua lista amici. Vuoi aggiungere [COLOR_SELECTED_TEXT]%s1_Name[COLOR_REVERT] come amico?</Italian>
 		<Spanish>Para charlar directamente con un miembro, primero debes agregarlo a tu lista de amigos. ¿Quieres agregar a [COLOR_SELECTED_TEXT]%s1_Name[COLOR_REVERT] como amigo?</Spanish>
+		<Hungarian>Hogy közvetlenül cseveghess egy taggal, először fel kell venned őt a barátlistádra. Szeretnéd, hogy %s1_Name felkerüljön a listára?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MEMBERS_REMOVE_BUDDY</Tag>
@@ -8726,6 +8827,7 @@
 		<German>Aus Freundesliste entfernen</German>
 		<Italian>Elimina dagli amici</Italian>
 		<Spanish>Quitar de amigos</Spanish>
+		<Hungarian>Eltávolítás a barátok közül</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADD_BUDDY_REQ_TITLE</Tag>
@@ -8735,6 +8837,7 @@
 		<German>FREUNDESANFRAGE</German>
 		<Italian>RICHIESTA AMICO</Italian>
 		<Spanish>SOLICITUD DE AMIGO</Spanish>
+		<Hungarian>BARÁTKÉRÉS</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCH_UPDATE_TITLE</Tag>
@@ -8744,6 +8847,7 @@
 		<German>Patch-Installation läuft ...</German>
 		<Italian>Patch in corso...</Italian>
 		<Spanish>Aplicando parche...</Spanish>
+		<Hungarian>Frissítés...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCH_AVAILABLE_TITLEBAR</Tag>
@@ -8753,6 +8857,7 @@
 		<German>NEUER PATCH VERFÜGBAR</German>
 		<Italian>NUOVA PATCH DISPONIBILE</Italian>
 		<Spanish>NUEVO PARCHE DISPONIBLE</Spanish>
+		<Hungarian>ÚJ PATCH ÉRHETŐ EL</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCH_AVAILABLE_INFO</Tag>
@@ -8762,6 +8867,7 @@
 		<German>Es ist ein Update verfügbar. Wollen Sie es herunterladen?</German>
 		<Italian>È disponibile una patch... vuoi scaricarla?</Italian>
 		<Spanish>Hay disponible una actualización. ¿Quieres obtenerla?</Spanish>
+		<Hungarian>Frissítés érhető el. Szeretnéd megszerezni?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCH_REQUIRED_TITLEBAR</Tag>
@@ -8771,6 +8877,7 @@
 		<German>PATCH ERFORDERLICH</German>
 		<Italian>PATCH NECESSARIA</Italian>
 		<Spanish>SE REQUIERE PARCHE</Spanish>
+		<Hungarian>PATCH SZÜKSÉGES</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCH_REQUIRED_INFO</Tag>
@@ -8780,6 +8887,7 @@
 		<German>Sie müssen Ihr Spiel aktualisieren, bevor Sie fortfahren können.</German>
 		<Italian>Prima di procedere devi aggiornare il gioco.</Italian>
 		<Spanish>Debes actualizar la partida antes de continuar.</Spanish>
+		<Hungarian>A legutolsó verzióra kell frissítened a játékot a továbblépés előtt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHING_COMPLETE_TITLE</Tag>
@@ -8789,6 +8897,7 @@
 		<German>DOWNLOAD ABGESCHLOSSEN</German>
 		<Italian>DOWNLOAD COMPLETATO</Italian>
 		<Spanish>DESCARGA COMPLETA</Spanish>
+		<Hungarian>A LETÖLTÉS BEFEJEZŐDÖTT</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHING_COMPLETE_DESC</Tag>
@@ -8798,6 +8907,7 @@
 		<German>Der Patch wurde erfolgreich heruntergeladen. Klicken Sie auf OK, um das Spiel zu beenden und den Patch zu installieren.</German>
 		<Italian>La patch è stata scaricata con successo. Premi OK per chiudere il gioco e installare la patch.</Italian>
 		<Spanish>El parche se ha descargado con éxito. Pulsa "Aceptar" para elegir la partida e instalar el parche.</Spanish>
+		<Hungarian>A patch sikeresen letöltésre került. Kattints a Rendben gombra a játék bezárására, és a hibajavítás telepítésére.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHING_FAILED_TITLE</Tag>
@@ -8807,6 +8917,7 @@
 		<German>DOWNLOAD FEHLGESCHLAGEN</German>
 		<Italian>DOWNLOAD FALLITO</Italian>
 		<Spanish>FALLO AL DESCARGAR</Spanish>
+		<Hungarian>A LETÖLTÉS SIKERTELEN</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHING_FAILED_DESC</Tag>
@@ -8816,6 +8927,7 @@
 		<German>Der Patch konnte nicht heruntergeladen werden.</German>
 		<Italian>Impossibile scaricare la patch.</Italian>
 		<Spanish>El parche no se ha podido descargar con éxito.</Spanish>
+		<Hungarian>A patch letöltése nem sikerült.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOWNLOADING_DESC</Tag>
@@ -8825,6 +8937,7 @@
 		<German>WIRD HERUNTERGELADEN ...</German>
 		<Italian>DOWNLOAD IN CORSO...</Italian>
 		<Spanish>DESCARGANDO...</Spanish>
+		<Hungarian>Letöltés...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCH_NAME_TAG</Tag>
