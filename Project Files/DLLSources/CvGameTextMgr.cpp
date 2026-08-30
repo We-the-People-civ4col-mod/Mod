@@ -6471,6 +6471,36 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 		}
 	}
 }
+
+// 1. yield icons have to be appended as chars. putting them in getText %s often drops them.
+// 2. city building hover already prints "X output per citizen"; the recipe belongs on that same line.
+static void appendProfessionConsumedYields(CvWStringBuffer& szBuffer, const CvProfessionInfo& kProfession)
+{
+	bool bFirst = true;
+	for (int iConsumed = 0; iConsumed < kProfession.getNumYieldsConsumed(); ++iConsumed)
+	{
+		YieldTypes eYieldConsumed = (YieldTypes) kProfession.getYieldsConsumed(iConsumed);
+		if (eYieldConsumed == NO_YIELD)
+		{
+			continue;
+		}
+
+		if (bFirst)
+		{
+			szBuffer.append(L" (");
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_CONSUMED"));
+			bFirst = false;
+		}
+
+		szBuffer.append(CvWString::format(L"%c", GC.getYieldInfo(eYieldConsumed).getChar()));
+	}
+
+	if (!bFirst)
+	{
+		szBuffer.append(L")");
+	}
+}
+
 void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBuilding, bool bCivilopediaText, bool bStrategyText, CvCity* pCity)
 {
 	CxDesyncMonitor StartAsyncExecution;
@@ -6526,57 +6556,36 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		setYieldChangeHelp(szBuffer, L", ", L"", L"", aiYields, false, false);
 		setYieldChangeHelp(szBuffer, L", ", L"", L"", kBuilding.getYieldModifierArray(), true, bCivilopediaText);
 
-		// R&R, ray , fix conflict MYCP and MYPB
-		// std::vector<YieldTypes> eBuildingYieldsConversion;
 		if (kBuilding.getProfessionOutput() != 0)
 		{
 			for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
 			{
-				// R&R, ray , fix conflict MYCP and MYPB
-				std::vector<YieldTypes> eBuildingYieldsConversion;
-
-				if (ePlayer == NO_PLAYER || GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).isValidProfession(eProfession))
+				if (ePlayer != NO_PLAYER && !GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).isValidProfession(eProfession))
 				{
-					const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-					if (kProfession.getSpecialBuilding() == kBuilding.getSpecialBuildingType())
-					{
-						if (kProfession.getYieldsProduced(0) != NO_YIELD)
-						{
-							for (int j = 0; j < kProfession.getNumYieldsConsumed(); j++)
-							{
-								YieldTypes eYieldConsumed = (YieldTypes) kProfession.getYieldsConsumed(j);
-								if (eYieldConsumed != NO_YIELD)
-								{
-									eBuildingYieldsConversion.push_back(eYieldConsumed);
-								}
-							}
-							if (!eBuildingYieldsConversion.empty())
-							{
-								CvWString szYieldsList;
-								for (std::vector<YieldTypes>::iterator it = eBuildingYieldsConversion.begin(); it != eBuildingYieldsConversion.end(); ++it)
-								{
-									if (!szYieldsList.empty())
-									{
-										if (*it == eBuildingYieldsConversion.back())
-										{
-											szYieldsList += CvWString::format(gDLL->getText("TXT_KEY_AND"));
-										}
-										else
-										{
-											szYieldsList += L", ";
-										}
-									}
-									szYieldsList += CvWString::format(L"%c", GC.getYieldInfo(*it).getChar());
-								}
-								szBuffer.append(NEWLINE);
-								szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_YIELDS_CONVERSION", szYieldsList.GetCString(), GC.getYieldInfo((YieldTypes) kProfession.getYieldsProduced(0)).getChar()));
-							}
-							szBuffer.append(NEWLINE);
-							szBuffer.append(GC.getSymbolID(BULLET_CHAR));
-							szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_PROFESSION_OUTPUT", kBuilding.getProfessionOutput(), GC.getYieldInfo((YieldTypes) kProfession.getYieldsProduced(0)).getChar()));
-						}
-					}
+					continue;
 				}
+
+				const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+				if (kProfession.getSpecialBuilding() != kBuilding.getSpecialBuildingType())
+				{
+					continue;
+				}
+
+				if (kProfession.getNumYieldsProduced() <= 0)
+				{
+					continue;
+				}
+
+				YieldTypes eYieldProduced = (YieldTypes) kProfession.getYieldsProduced(0);
+				if (eYieldProduced == NO_YIELD)
+				{
+					continue;
+				}
+
+				szBuffer.append(NEWLINE);
+				szBuffer.append(GC.getSymbolID(BULLET_CHAR));
+				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_PROFESSION_OUTPUT", kBuilding.getProfessionOutput(), GC.getYieldInfo(eYieldProduced).getChar()));
+				appendProfessionConsumedYields(szBuffer, kProfession);
 			}
 		}
 		// R&R, ray , MYCP partially based on code of Aymerick - END
@@ -8730,6 +8739,7 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 			{
 				szBuffer.append(NEWLINE);
 				szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_BASE_CITIZEN_YIELD", aaiProfessionYields[i][j], info.getChar(), GC.getProfessionInfo((ProfessionTypes)i).getTextKeyWide()));
+				appendProfessionConsumedYields(szBuffer, GC.getProfessionInfo((ProfessionTypes)i));
 			}
 		}
 	}
