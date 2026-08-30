@@ -370,11 +370,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_TUNDRA</Tag>
-		<English>Plant tundra</English>
-		<Portuguese>Plantar tundra</Portuguese>
-		<French>Planter une taïga</French>
-		<German>Taiga aufforsten</German>
-		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]тундру[COLOR_REVERT]</Russian>
+		<English>Plant northern forest</English>
+		<Portuguese>Plantar floresta boreal</Portuguese>
+		<French>Planter une forêt boréale</French>
+		<German>Nordwald aufforsten</German>
+		<Russian>Высадить [COLOR_HIGHLIGHT_TEXT]северный лес[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_REFORESTATION_TUNDRA_HELP</Tag>
