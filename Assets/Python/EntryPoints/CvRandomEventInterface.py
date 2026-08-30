@@ -5478,6 +5478,20 @@ def _getPiratesScaledTurns(iBaseTurns):
 	iPercent = gc.getGameSpeedInfo(gameSpeedType).getGrowthPercent()
 	return max(1, int((iBaseTurns * iPercent) / 100))
 
+def _getPiratesFollowupChanceAndDelay(event, szFollowupType):
+	# 1. EventTimes in XML is the standard-speed wait.
+	# 2. applyEvent scales that by growth percent, so the option help has to do the same.
+	eFollowup = gc.getInfoTypeForString(szFollowupType)
+	if eFollowup == -1:
+		return 0, 0
+
+	iChance = event.getAdditionalEventChance(eFollowup)
+	iTime = event.getAdditionalEventTime(eFollowup)
+	if iTime <= 0:
+		return iChance, 0
+
+	return iChance, _getPiratesScaledTurns(iTime)
+
 def _startPiratesSoftCooldown(player, iBaseTurns):
 	if player.isNone():
 		return
@@ -5730,7 +5744,13 @@ def canTriggerPirates(argsList):
 	return True
 
 def getHelpPirates1(argsList):
-	return localText.getText("TXT_KEY_EVENT_PIRATES_1_HELP", ())
+	eEvent = argsList[1]
+	event = gc.getEventInfo(eEvent)
+	iDelay = _getPiratesFollowupChanceAndDelay(event, "EVENT_PIRATES_1a")[1]
+	if iDelay <= 0:
+		# XML EventTimes for EVENT_PIRATES_1a is 5 on standard speed.
+		iDelay = _getPiratesScaledTurns(5)
+	return localText.getText("TXT_KEY_EVENT_PIRATES_1_HELP", (iDelay,))
 
 def CanDoPirates3(argsList):
 	kTriggeredData = argsList[0]
@@ -5841,6 +5861,22 @@ def getHelpPirates4(argsList):
 	szHelp = u""
 	if iAmount != 0:
 		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (iAmount, gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+
+	# 1. muskets already use storage percent.
+	# 2. the ship wait uses growth percent, same formula applyEvent uses.
+	# 3. 4a also has 1 revolt turn (3 on marathon), which looks like the wait if we don't print this.
+	iChance, iDelay = _getPiratesFollowupChanceAndDelay(event, "EVENT_PIRATES_4a")
+	if iChance > 0 and iDelay > 0:
+		szShip = u""
+		iRewardUnitClass = getPrivateerRewardUnitClass3(player)
+		if iRewardUnitClass != -1:
+			iRewardUnit = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iRewardUnitClass)
+			if iRewardUnit != -1:
+				szShip = gc.getUnitInfo(iRewardUnit).getDescription()
+		if szShip != u"":
+			if szHelp != u"":
+				szHelp += u"\n"
+			szHelp += localText.getText("TXT_KEY_EVENT_PIRATES_4_FOLLOWUP_HELP", (iChance, iDelay, szShip))
 
 	return szHelp
 
