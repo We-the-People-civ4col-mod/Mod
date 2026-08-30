@@ -9292,7 +9292,12 @@ YieldTypes CvPlayerAI::getBestYieldForTrade(const CvCity& city, const char* pszL
 	{
 		if (isYieldValidForNativeTrade(eYield, city))
 		{
-			totalYieldsStored += city.getYieldStored(eYield);
+			int iYieldWeight = city.getYieldStored(eYield);
+			if (eYield == YIELD_FOOD)
+			{
+				iYieldWeight /= 4;
+			}
+			totalYieldsStored += iYieldWeight;
 		}
 	}
 
@@ -9302,7 +9307,12 @@ YieldTypes CvPlayerAI::getBestYieldForTrade(const CvCity& city, const char* pszL
 	{
 		if (isYieldValidForNativeTrade(eYield, city))
 		{
-			rand -= city.getYieldStored(eYield);
+			int iYieldWeight = city.getYieldStored(eYield);
+			if (eYield == YIELD_FOOD)
+			{
+				iYieldWeight /= 4;
+			}
+			rand -= iYieldWeight;
 			if (rand <= 0)
 			{
 				return eYield;
@@ -9317,7 +9327,6 @@ bool CvPlayerAI::isYieldValidForNativeTrade(YieldTypes yield, const CvCity& city
 {
 	return yield >= FIRST_YIELD
 		&& yield < NUM_CARGO_YIELD_TYPES
-		&& (YIELD_FOOD != yield)
 		&& (YIELD_HORSES != yield)
 		&& city.canProduceYield(yield)
 		&& GC.getYieldInfo(yield).getNativeSellPrice() > 0;
