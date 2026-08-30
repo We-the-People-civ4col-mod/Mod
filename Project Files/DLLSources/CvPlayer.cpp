@@ -19789,14 +19789,12 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 
 					if (pNativeUnit != NULL)
 					{
-						CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, NO_PROFESSION, pCity->coord());
-
-						if (pUnit != NULL)
+						if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, true, NO_PROFESSION))
 						{
-							if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, false, NO_PROFESSION))
-							{
-								pUnit->convert(pNativeUnit, true);
+							CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->coord());
 
+							if (pUnit != NULL)
+							{
 								bUnitCreated = true;
 								gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
 
@@ -19927,14 +19925,12 @@ void CvPlayer::applyTradePostMestizoPoints(CvCity* pCity)
 
 				if (pNativeUnit != NULL)
 				{
-					CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, NO_PROFESSION, pCity->coord());
-
-					if (pUnit != NULL)
+					if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, true, NO_PROFESSION))
 					{
-						if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, false, NO_PROFESSION))
+						CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->coord());
+
+						if (pUnit != NULL)
 						{
-							pUnit->convert(pNativeUnit, true);
-							
 							gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
 
 							CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_MESTIZO_CREATED", pCity->getNameKey());
