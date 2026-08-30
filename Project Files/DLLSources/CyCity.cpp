@@ -1255,17 +1255,18 @@ int CyCity::getTeachUnitClass()
 // native advisor update - start - Nightinggale
 int CyCity::getTeachUnit() const
 {
-	PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
-	if (m_pCity == NULL || ePlayer == NO_PLAYER)
+	if (m_pCity == NULL)
 	{
 		return NO_UNIT;
 	}
+
 	UnitClassTypes eClassType = m_pCity->getTeachUnitClass();
 	if (eClassType == NO_UNITCLASS)
 	{
 		return NO_UNIT;
 	}
-	return GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eClassType);
+
+	return GC.getUnitClassInfo(eClassType).getDefaultUnitIndex();
 }
 // native advisor update - end - Nightinggale
 

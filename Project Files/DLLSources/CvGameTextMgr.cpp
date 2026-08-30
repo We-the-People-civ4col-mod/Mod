@@ -9598,7 +9598,7 @@ void CvGameTextMgr::buildCityBillboardProductionString( CvWStringBuffer& szBuffe
 		UnitClassTypes eUnitClass = pCity->getTeachUnitClass();
 		if (eUnitClass != NO_UNITCLASS)
 		{
-			UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eUnitClass);
+			UnitTypes eUnit = (UnitTypes)GC.getUnitClassInfo(eUnitClass).getDefaultUnitIndex();
 			if (eUnit != NO_UNIT)
 			{
 				szBuffer.append(GC.getUnitInfo(eUnit).getDescription());

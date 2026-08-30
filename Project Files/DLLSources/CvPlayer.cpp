@@ -5498,7 +5498,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 			return false;
 		}
 
-		UnitTypes eUnit = GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)kGoody.getTeachUnitClassType());
+		UnitTypes eUnit = (UnitTypes)GC.getUnitClassInfo((UnitClassTypes)kGoody.getTeachUnitClassType()).getDefaultUnitIndex();
 
 		if (eUnit == NO_UNIT)
 		{
@@ -13805,7 +13805,7 @@ void CvPlayer::doWarnings()
 							// R&R, ray, changes to Wild Animals - START
 							// Erik: Make sure that the unit is actually an animal (and not a pirate) when giving the warning about
 							// animals being spotted
-							if (pUnit->isBarbarian() && pUnit->getUnitInfo().isAnimal())
+							if (pUnit->getUnitInfo().isAnimal())
 							{
 								CvWString szBuffer = gDLL->getText("TXT_KEY_ANIMALS_SPOTTED", pNearestCity->getNameKey());
 								gDLL->UI().addPlayerMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopPlot, NULL, MESSAGE_TYPE_INFO, pUnit->getButton(), COLOR_RED, true, true);
@@ -17175,9 +17175,20 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 
 		gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
 
-		if (bMessage)
-		{
-			CvWString szMessage;
+	if (bMessage &&
+		(eYield == YIELD_MUSKETS ||
+		 eYield == YIELD_CANNONS ||
+		 eYield == YIELD_TOOLS ||
+		 eYield == YIELD_BLADES ||
+		 eYield == YIELD_HORSES ||
+		 eYield == YIELD_GOLD ||
+		 eYield == YIELD_SILVER ||
+		 eYield == YIELD_GEMS ||
+		 eYield == YIELD_BLACK_POWDER ||
+		 eYield == YIELD_TRADE_GOODS ||
+		 eYield == YIELD_LUXURY_GOODS))
+	{
+		CvWString szMessage;
 			if (iPrice > iOldPrice)
 			{
 				szMessage = gDLL->getText("TXT_KEY_PRICE_RISE", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
@@ -17979,17 +17990,27 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 
 		gDLL->getInterfaceIFace()->setDirty(AfricaScreen_DIRTY_BIT, true);
 
-		// no message because it would get too much
-		/*if (bMessage)
+		if (bMessage &&
+			(eYield == YIELD_MUSKETS ||
+			 eYield == YIELD_CANNONS ||
+			 eYield == YIELD_TOOLS ||
+			 eYield == YIELD_BLADES ||
+			 eYield == YIELD_HORSES ||
+			 eYield == YIELD_GOLD ||
+			 eYield == YIELD_SILVER ||
+			 eYield == YIELD_GEMS ||
+			 eYield == YIELD_BLACK_POWDER ||
+			 eYield == YIELD_TRADE_GOODS ||
+			 eYield == YIELD_LUXURY_GOODS))
 		{
 			CvWString szMessage;
 			if (iPrice > iOldPrice)
 			{
-				szMessage = gDLL->getText("TXT_KEY_PRICE_RISE", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
+				szMessage = gDLL->getText("TXT_KEY_PRICE_RISE_AFRICA", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldAfricaBuyPriceNoModifier(eYield));
 			}
 			else
 			{
-				szMessage = gDLL->getText("TXT_KEY_PRICE_FALL", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
+				szMessage = gDLL->getText("TXT_KEY_PRICE_FALL_AFRICA", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldAfricaBuyPriceNoModifier(eYield));
 			}
 
 			// R&R, ray price messages only displayed to Colony, not all players, as long as no according features
@@ -18003,7 +18024,7 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 					gDLL->UI().addPlayerMessage(kLoopPlayer.getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_ADVISOR_SUGGEST", MESSAGE_TYPE_INFO, NULL);
 				}
 			}
-		}*/
+		}
 	}
 }
 
@@ -18548,17 +18569,27 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 
 		gDLL->getInterfaceIFace()->setDirty(PortRoyalScreen_DIRTY_BIT, true);
 
-		// no message because it would get too much
-		/*if (bMessage)
+		if (bMessage &&
+			(eYield == YIELD_MUSKETS ||
+			 eYield == YIELD_CANNONS ||
+			 eYield == YIELD_TOOLS ||
+			 eYield == YIELD_BLADES ||
+			 eYield == YIELD_HORSES ||
+			 eYield == YIELD_GOLD ||
+			 eYield == YIELD_SILVER ||
+			 eYield == YIELD_GEMS ||
+			 eYield == YIELD_BLACK_POWDER ||
+			 eYield == YIELD_TRADE_GOODS ||
+			 eYield == YIELD_LUXURY_GOODS))
 		{
 			CvWString szMessage;
 			if (iPrice > iOldPrice)
 			{
-				szMessage = gDLL->getText("TXT_KEY_PRICE_RISE", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
+				szMessage = gDLL->getText("TXT_KEY_PRICE_RISE_PORT_ROYAL", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldPortRoyalBuyPriceNoModifier(eYield));
 			}
 			else
 			{
-				szMessage = gDLL->getText("TXT_KEY_PRICE_FALL", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
+				szMessage = gDLL->getText("TXT_KEY_PRICE_FALL_PORT_ROYAL", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldPortRoyalBuyPriceNoModifier(eYield));
 			}
 
 			// R&R, ray price messages only displayed to Colony, not all players, as long as no according features
@@ -18572,7 +18603,7 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 					gDLL->UI().addPlayerMessage(kLoopPlayer.getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_ADVISOR_SUGGEST", MESSAGE_TYPE_INFO, NULL);
 				}
 			}
-		}*/
+		}
 	}
 }
 
@@ -19789,22 +19820,12 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 
 					if (pNativeUnit != NULL)
 					{
-						CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, NO_PROFESSION, pCity->coord());
-
-						if (pUnit != NULL)
+						if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, true, NO_PROFESSION))
 						{
-							if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, false, NO_PROFESSION))
+							CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->coord());
+
+							if (pUnit != NULL)
 							{
-								pUnit->convert(pNativeUnit, true);
-
-								const ProfessionTypes eDefaultProfession =
-									(ProfessionTypes)GC.getUnitInfo(eUnit).getDefaultProfession();
-
-								if (eDefaultProfession != NO_PROFESSION)
-								{
-									pUnit->setProfession(eDefaultProfession);
-								}
-
 								bUnitCreated = true;
 								gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
 
@@ -19935,22 +19956,16 @@ void CvPlayer::applyTradePostMestizoPoints(CvCity* pCity)
 
 				if (pNativeUnit != NULL)
 				{
-					CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, NO_PROFESSION, pCity->coord());
-
-					if (pUnit != NULL)
+					if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, true, NO_PROFESSION))
 					{
-						if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, false, NO_PROFESSION))
+						CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(
+							eUnit,
+							GC.getUnitInfo(eUnit).getDefaultProfession(),
+							pCity->coord()
+						);
+
+						if (pUnit != NULL)
 						{
-							pUnit->convert(pNativeUnit, true);
-
-							const ProfessionTypes eDefaultProfession =
-								(ProfessionTypes)GC.getUnitInfo(eUnit).getDefaultProfession();
-
-							if (eDefaultProfession != NO_PROFESSION)
-							{
-								pUnit->setProfession(eDefaultProfession);
-							}
-							
 							gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
 
 							CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_MESTIZO_CREATED", pCity->getNameKey());

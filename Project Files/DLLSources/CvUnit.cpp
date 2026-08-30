@@ -4727,11 +4727,22 @@ void CvUnit::gift(bool bTestTransport)
 	pGiftUnit->convert(this, true);
 
 	int iUnitValue = 0;
-	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+
+	if (pGiftUnit->getUnitInfo().isTreasure())
 	{
-		iUnitValue += pGiftUnit->getUnitInfo().getYieldCost(eYield);
+		iUnitValue = pGiftUnit->getYieldStored() / 2;
 	}
-	GET_PLAYER(pGiftUnit->getOwnerINLINE()).AI_changePeacetimeGrantValue(eOwner, iUnitValue / 5);
+	else
+	{
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+		{
+			iUnitValue += pGiftUnit->getUnitInfo().getYieldCost(eYield);
+		}
+
+		iUnitValue /= 5;
+	}
+
+	GET_PLAYER(pGiftUnit->getOwnerINLINE()).AI_changePeacetimeGrantValue(eOwner, iUnitValue);
 
 	szBuffer = gDLL->getText("TXT_KEY_MISC_GIFTED_UNIT_TO_YOU", GET_PLAYER(eOwner).getNameKey(), pGiftUnit->getNameKey());
 	gDLL->UI().addPlayerMessage(pGiftUnit->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITGIFTED", MESSAGE_TYPE_INFO, pGiftUnit->getButton(), COLOR_WHITE, pGiftUnit->getX_INLINE(), pGiftUnit->getY_INLINE(), true, true);
@@ -6198,7 +6209,7 @@ UnitTypes CvUnit::getLearnUnitType(const CvPlot* pPlot) const
 		return NO_UNIT;
 	}
 
-	UnitTypes eTeachUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eTeachUnitClass);
+	UnitTypes eTeachUnit = (UnitTypes) GC.getUnitClassInfo(eTeachUnitClass).getDefaultUnitIndex();
 	if (eTeachUnit == getUnitType())
 	{
 		return NO_UNIT;
@@ -7137,7 +7148,7 @@ void CvUnit::speakWithChief()
 		UnitClassTypes eTeachUnitClass = pCity->getTeachUnitClass();
 		if (eTeachUnitClass != NO_UNITCLASS)
 		{
-			UnitTypes eTeachUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eTeachUnitClass);
+			UnitTypes eTeachUnit = (UnitTypes)GC.getUnitClassInfo(eTeachUnitClass).getDefaultUnitIndex();
 			if (eTeachUnit != NO_UNIT)
 			{
 				szExpertText = gDLL->getText("AI_DIPLO_CHIEF_LEARN_UNIT_DESCRIPTION", GC.getUnitInfo(eTeachUnit).getTextKeyWide());

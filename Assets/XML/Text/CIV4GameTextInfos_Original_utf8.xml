@@ -12245,7 +12245,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DELAY_TURNS</Tag>
 		<English>, in %d1 [NUM1:turn:turns]</English>
-		<Portuguese>, in %d1 [NUM1:turno:turnos]</Portuguese>
+		<Portuguese>, em %d1 [NUM1:turno:turnos]</Portuguese>
 		<French>, dans %d1 [NUM1:tour:tours]</French>
 		<German> in %d1 [NUM1:Runde:Runden]</German>
 		<Italian>, in %d1 [NUM1:turno:turni]</Italian>

@@ -130,7 +130,20 @@ bool CvSelectionGroup::sentryAlert() const
 					{
 						if (pPlot->isVisibleEnemyUnit(pHeadUnit))
 						{
-							return true;
+							CLLNode<IDInfo>* pPlotUnitNode = pPlot->headUnitNode();
+
+							while (pPlotUnitNode != NULL)
+							{
+								CvUnit* pLoopUnit = ::getUnit(pPlotUnitNode->m_data);
+								pPlotUnitNode = pPlot->nextUnitNode(pPlotUnitNode);
+
+								if (pLoopUnit != NULL &&
+									!pLoopUnit->getUnitInfo().isAnimal() &&
+									pLoopUnit->isEnemy(pHeadUnit->getTeam(), pPlot))
+								{
+									return true;
+								}
+							}
 						}
 					}
 				}

@@ -756,6 +756,42 @@
 		<Hungarian>[COLOR_WARNING_TEXT]Árcsökkenés![COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] ára %s2_civ piacán %d3[ICON_GOLD] lett.</Hungarian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PRICE_RISE_AFRICA</Tag>
+		<English>The price of [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Africa has risen to %d3[ICON_GOLD]</English>
+		<Portuguese>O preço de [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] na África aumentou para %d3[ICON_GOLD]</Portuguese>
+		<French>Le prix de [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] en Afrique a augmenté pour atteindre %d3[ICON_GOLD]</French>
+		<German>Der Preis für [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Afrika ist auf %d3[ICON_GOLD] gestiegen</German>
+		<Italian>Il prezzo di [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Africa è salito a %d3[ICON_GOLD]</Italian>
+		<Spanish>El precio [NUM1:del:de la:de los:de las] [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] en África ha subido a %d3[ICON_GOLD].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PRICE_FALL_AFRICA</Tag>
+		<English>The price of [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Africa has fallen to %d3[ICON_GOLD]</English>
+		<Portuguese>O preço de [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] na África caiu para %d3[ICON_GOLD]</Portuguese>
+		<French>Le prix de [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] en Afrique a chuté pour atteindre %d3[ICON_GOLD]</French>
+		<German>Der Preis für [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Afrika ist auf %d3[ICON_GOLD] gefallen</German>
+		<Italian>Il prezzo di [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Africa è sceso a %d3[ICON_GOLD]</Italian>
+		<Spanish>El precio [NUM1:del:de la:de los:de las] [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] en África ha bajado a %d3[ICON_GOLD].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PRICE_RISE_PORT_ROYAL</Tag>
+		<English>The price of [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Port Royal has risen to %d3[ICON_GOLD]</English>
+		<Portuguese>O preço de [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] em Port Royal aumentou para %d3[ICON_GOLD]</Portuguese>
+		<French>Le prix de [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] à Port Royal a augmenté pour atteindre %d3[ICON_GOLD]</French>
+		<German>Der Preis für [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Port Royal ist auf %d3[ICON_GOLD] gestiegen</German>
+		<Italian>Il prezzo di [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] a Port Royal è salito a %d3[ICON_GOLD]</Italian>
+		<Spanish>El precio [NUM1:del:de la:de los:de las] [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] en Port Royal ha subido a %d3[ICON_GOLD].</Spanish>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PRICE_FALL_PORT_ROYAL</Tag>
+		<English>The price of [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Port Royal has fallen to %d3[ICON_GOLD]</English>
+		<Portuguese>O preço de [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] em Port Royal caiu para %d3[ICON_GOLD]</Portuguese>
+		<French>Le prix de [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] à Port Royal a chuté pour atteindre %d3[ICON_GOLD]</French>
+		<German>Der Preis für [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Port Royal ist auf %d3[ICON_GOLD] gefallen</German>
+		<Italian>Il prezzo di [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] a Port Royal è sceso a %d3[ICON_GOLD]</Italian>
+		<Spanish>El precio [NUM1:del:de la:de los:de las] [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] en Port Royal ha bajado a %d3[ICON_GOLD].</Spanish>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_BUY_AND_SELL_YIELD</Tag>
 		<English>Europe	 [TAB]Sell : %d1_Price[ICON_GOLD] / Buy : %d2_Price[ICON_GOLD]</English>
 		<Portuguese>Europa [TAB]Venda: %d1_Price[ICON_GOLD] / Compra: %d2_Price[ICON_GOLD]</Portuguese>
