@@ -4474,16 +4474,11 @@ void CvSelectionGroup::speakWithChief()
 	{
 		CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
 
-		if (pLoopUnit != NULL)
+		if (pLoopUnit != NULL && pLoopUnit->canSpeakWithChief(plot()))
 		{
-			if (pLoopUnit->canSpeakWithChief(plot())) //first best
+			pBestUnit = pLoopUnit;
+			if (pLoopUnit->isNoBadGoodies()) // scout beats a colonist in the same selection
 			{
-				pBestUnit = pLoopUnit;
-			}
-
-			if (pLoopUnit->isNoBadGoodies()) //found absolute best
-			{
-				pBestUnit = pLoopUnit;
 				break;
 			}
 		}

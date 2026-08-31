@@ -3904,7 +3904,7 @@ bool CvDLLButtonPopup::launchTalkNativesPopup(CvPopup* pPopup, CvPopupInfo& info
 	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_TALK_NATIVES_POPUP", pCity->getNameKey()));
 
 	int iNumActions = 0;
-	if (pUnit->canSpeakWithChief(pUnit->plot()))
+	if (pUnit->canDoCommand(COMMAND_SPEAK_WITH_CHIEF, -1, -1, false, false))
 	{
 		++iNumActions;
 		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_TALK_NATIVES_POPUP_CHIEF"), NULL, COMMAND_SPEAK_WITH_CHIEF);
