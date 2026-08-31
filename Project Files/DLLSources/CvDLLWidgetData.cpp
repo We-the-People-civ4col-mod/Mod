@@ -3758,7 +3758,8 @@ void CvDLLWidgetData::parseCityYieldHelp(const CvWidgetDataStruct &widgetDataStr
 
 static bool isYieldIndexValid(YieldTypes eYield)
 {
-	return eYield != NO_YIELD && (int)eYield >= 0 && (int)eYield < GC.getNumYieldInfos();
+	// Yields are a compile-time enum. There is no GC.getNumYieldInfos().
+	return eYield >= FIRST_YIELD && eYield < NUM_YIELD_TYPES;
 }
 
 static void addUniqueYield(std::vector<YieldTypes>& aeYields, YieldTypes eYield)
