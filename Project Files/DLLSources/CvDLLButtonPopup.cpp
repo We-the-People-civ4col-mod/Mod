@@ -2242,32 +2242,34 @@ static int countOpenProfessionSlots(const CvPlayer& kPlayer, ProfessionTypes ePr
 		if (kProfession.isWorkPlot())
 		{
 			const YieldTypes eYield = (YieldTypes) kProfession.getYieldsProduced(0);
+
 			FOREACH(CityPlot)
 			{
 				if (eLoopCityPlot == CITY_HOME_PLOT)
 				{
 					continue;
 				}
+
 				CvPlot* pLoopPlot = pLoopCity->getCityIndexPlot(eLoopCityPlot);
 				if (pLoopPlot == NULL || !pLoopCity->canWork(pLoopPlot))
 				{
 					continue;
 				}
+
+				if (pLoopPlot->isWater() != kProfession.isWater())
+				{
+					continue;
+				}
+
 				if (eYield != NO_YIELD && pLoopPlot->calculateYield(eYield, false) <= 0)
 				{
 					continue;
 				}
-				if (!pLoopCity->isPlotProducingYields(eLoopCityPlot))
+
+				CvUnit* pWorker = pLoopCity->getUnitWorkingPlot(eLoopCityPlot);
+				if (pWorker == NULL || !isExpertForProfession(pWorker, eProfession))
 				{
 					++iOpen;
-				}
-				else
-				{
-					CvUnit* pWorker = pLoopCity->getUnitWorkingPlot(eLoopCityPlot);
-					if (pWorker != NULL && pWorker->getProfession() == eProfession && !isExpertForProfession(pWorker, eProfession))
-					{
-						++iOpen;
-					}
 				}
 			}
 		}
@@ -2284,17 +2286,20 @@ static int countOpenProfessionSlots(const CvPlayer& kPlayer, ProfessionTypes ePr
 					{
 						continue;
 					}
+
 					const CvProfessionInfo& kCitizenProfession = GC.getProfessionInfo(pCitizen->getProfession());
 					if (kCitizenProfession.getSpecialBuilding() != iSpecialBuilding)
 					{
 						continue;
 					}
+
 					if (isExpertForProfession(pCitizen, pCitizen->getProfession()))
 					{
 						--iSlots;
 					}
 				}
 			}
+
 			if (iSlots > 0)
 			{
 				iOpen += iSlots;
@@ -4020,7 +4025,7 @@ bool CvDLLButtonPopup::launchTalkNativesPopup(CvPopup* pPopup, CvPopupInfo& info
 	gDLL->getInterfaceIFace()->popupSetBodyString(pPopup, gDLL->getText("TXT_KEY_TALK_NATIVES_POPUP", pCity->getNameKey()));
 
 	int iNumActions = 0;
-	if (pUnit->canSpeakWithChief(pUnit->plot()))
+	if (pUnit->canDoCommand(COMMAND_SPEAK_WITH_CHIEF, -1, -1, false, false))
 	{
 		++iNumActions;
 		gDLL->getInterfaceIFace()->popupAddGenericButton(pPopup, gDLL->getText("TXT_KEY_TALK_NATIVES_POPUP_CHIEF"), NULL, COMMAND_SPEAK_WITH_CHIEF);
