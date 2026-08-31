@@ -1502,6 +1502,7 @@ class CvPediaMain( CvPediaScreen.CvPediaScreen ):
 					list.append("TXT_KEY_CREDITS_FURSTBISCHOF")
 					list.append("jooe")
 					list.append("FlaviusBelisarius")
+					list.append("Monticello")
 
 					szTextData += localText.getText("TXT_KEY_CREDITS_WTP", ())
 					szTextData += localText.getText("[NEWLINE]", ())
