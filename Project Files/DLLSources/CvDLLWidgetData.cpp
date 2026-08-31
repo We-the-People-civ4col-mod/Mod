@@ -3756,9 +3756,30 @@ void CvDLLWidgetData::parseCityYieldHelp(const CvWidgetDataStruct &widgetDataStr
 	}
 }
 
+static bool isYieldIndexValid(YieldTypes eYield)
+{
+	return eYield != NO_YIELD && (int)eYield >= 0 && (int)eYield < GC.getNumYieldInfos();
+}
+
+static void addUniqueYield(std::vector<YieldTypes>& aeYields, YieldTypes eYield)
+{
+	if (!isYieldIndexValid(eYield))
+	{
+		return;
+	}
+	for (uint i = 0; i < aeYields.size(); ++i)
+	{
+		if (aeYields[i] == eYield)
+		{
+			return;
+		}
+	}
+	aeYields.push_back(eYield);
+}
+
 static void appendCompactYieldMarketHelp(CvWStringBuffer &szBuffer, CvCity* pCity, PlayerTypes eActivePlayer, YieldTypes eYield, bool bSeparatorFirst)
 {
-	if (eYield == NO_YIELD)
+	if (!isYieldIndexValid(eYield) || eActivePlayer == NO_PLAYER)
 	{
 		return;
 	}
@@ -3785,6 +3806,27 @@ static void appendCompactYieldMarketHelp(CvWStringBuffer &szBuffer, CvCity* pCit
 	}
 }
 
+static void appendFullYieldHelp(CvWStringBuffer &szBuffer, CvCity* pCity, PlayerTypes eActivePlayer, YieldTypes eYield, bool bSeparatorFirst)
+{
+	if (!isYieldIndexValid(eYield))
+	{
+		return;
+	}
+	if (bSeparatorFirst)
+	{
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+	}
+	if (pCity != NULL)
+	{
+		GAMETEXT.setYieldHelp(szBuffer, *pCity, eYield);
+	}
+	else if (eActivePlayer != NO_PLAYER)
+	{
+		GAMETEXT.setYieldPriceHelp(szBuffer, eActivePlayer, eYield);
+	}
+}
+
 //Androrc Multiple Professions per Building
 void CvDLLWidgetData::parseTwoCityYieldsHelp(const CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
 {
@@ -3793,83 +3835,75 @@ void CvDLLWidgetData::parseTwoCityYieldsHelp(const CvWidgetDataStruct &widgetDat
 	CvCity* pCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
 	PlayerTypes eActivePlayer = GC.getGameINLINE().getActivePlayer();
 
-	// This hover is the building production icon. It only stores two yield
-	// ids (first and last profession). List every *primary* output of the
-	// shared indoor workplace (hides, wool, downs, ...) as a short market
-	// overview. Skip extra outputs such as food: those belong on the city
-	// food icon, and dumping a full yield-help per good overflows the tooltip.
-	bool abYield[NUM_YIELD_TYPES];
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
-	{
-		abYield[iYield] = false;
-	}
-	if (eYield != NO_YIELD)
-	{
-		abYield[eYield] = true;
-	}
-	if (eSecondYield != NO_YIELD)
-	{
-		abYield[eSecondYield] = true;
-	}
+	// Production-icon hover only stores two yield ids. List each profession's
+	// primary output for that workplace as a short price/demand block.
+	// Skip extra outputs (food): those belong on the city food icon.
+	std::vector<YieldTypes> aeYields;
+	addUniqueYield(aeYields, eYield);
+	addUniqueYield(aeYields, eSecondYield);
 
-	std::vector<char> aSpecialBuilding(GC.getNumSpecialBuildingInfos(), 0);
-	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+	if (eActivePlayer != NO_PLAYER)
 	{
-		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-		if (!kProfession.isCitizen() || kProfession.isWorkPlot())
+		std::vector<char> aSpecialBuilding(GC.getNumSpecialBuildingInfos(), 0);
+		for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
 		{
-			continue;
-		}
-		if (!GET_PLAYER(eActivePlayer).isProfessionValid(eProfession, NO_UNIT))
-		{
-			continue;
-		}
-
-		const YieldTypes ePrimary = (kProfession.getNumYieldsProduced() > 0) ? (YieldTypes) kProfession.getYieldsProduced(0) : NO_YIELD;
-		if (ePrimary != NO_YIELD && (ePrimary == eYield || ePrimary == eSecondYield))
-		{
-			const int iSpecialBuilding = kProfession.getSpecialBuilding();
-			if (iSpecialBuilding != NO_SPECIALBUILDING)
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+			if (!kProfession.isCitizen() || kProfession.isWorkPlot())
 			{
-				aSpecialBuilding[iSpecialBuilding] = 1;
+				continue;
 			}
-		}
-	}
-
-	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
-	{
-		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-		const int iSpecialBuilding = kProfession.getSpecialBuilding();
-		if (iSpecialBuilding == NO_SPECIALBUILDING || aSpecialBuilding[iSpecialBuilding] == 0)
-		{
-			continue;
-		}
-		if (!kProfession.isCitizen() || kProfession.isWorkPlot())
-		{
-			continue;
-		}
-		if (!GET_PLAYER(eActivePlayer).isProfessionValid(eProfession, NO_UNIT))
-		{
-			continue;
-		}
-		if (kProfession.getNumYieldsProduced() > 0)
-		{
+			if (!GET_PLAYER(eActivePlayer).isProfessionValid(eProfession, NO_UNIT))
+			{
+				continue;
+			}
+			if (kProfession.getNumYieldsProduced() <= 0)
+			{
+				continue;
+			}
 			const YieldTypes ePrimary = (YieldTypes) kProfession.getYieldsProduced(0);
-			if (ePrimary != NO_YIELD)
+			if (ePrimary == eYield || ePrimary == eSecondYield)
 			{
-				abYield[ePrimary] = true;
+				const int iSpecialBuilding = kProfession.getSpecialBuilding();
+				if (iSpecialBuilding >= 0 && iSpecialBuilding < (int)aSpecialBuilding.size())
+				{
+					aSpecialBuilding[iSpecialBuilding] = 1;
+				}
+			}
+		}
+
+		for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+		{
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+			const int iSpecialBuilding = kProfession.getSpecialBuilding();
+			if (iSpecialBuilding < 0 || iSpecialBuilding >= (int)aSpecialBuilding.size() || aSpecialBuilding[iSpecialBuilding] == 0)
+			{
+				continue;
+			}
+			if (!kProfession.isCitizen() || kProfession.isWorkPlot())
+			{
+				continue;
+			}
+			if (!GET_PLAYER(eActivePlayer).isProfessionValid(eProfession, NO_UNIT))
+			{
+				continue;
+			}
+			if (kProfession.getNumYieldsProduced() > 0)
+			{
+				addUniqueYield(aeYields, (YieldTypes) kProfession.getYieldsProduced(0));
 			}
 		}
 	}
 
-	bool bFirst = true;
-	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	if (aeYields.empty())
 	{
-		if (abYield[iYield])
-		{
-			appendCompactYieldMarketHelp(szBuffer, pCity, eActivePlayer, (YieldTypes) iYield, !bFirst);
-			bFirst = false;
-		}
+		appendFullYieldHelp(szBuffer, pCity, eActivePlayer, eYield, false);
+		appendFullYieldHelp(szBuffer, pCity, eActivePlayer, eSecondYield, true);
+		return;
+	}
+
+	for (uint i = 0; i < aeYields.size(); ++i)
+	{
+		appendCompactYieldMarketHelp(szBuffer, pCity, eActivePlayer, aeYields[i], i > 0);
 	}
 }
 //Androrc End
