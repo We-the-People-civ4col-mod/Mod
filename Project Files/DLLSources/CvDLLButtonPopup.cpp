@@ -2208,8 +2208,20 @@ static ProfessionTypes getProfessionForEducatedUnit(UnitTypes eUnit)
 	return NO_PROFESSION;
 }
 
-// Empty jobs across all towns. Building jobs: unused special-building slots.
-// Plot jobs: unused city plots that produce that yield.
+static bool isExpertForProfession(const CvUnit* pUnit, ProfessionTypes eProfession)
+{
+	if (pUnit == NULL || eProfession == NO_PROFESSION)
+	{
+		return false;
+	}
+	return GC.getProfessionInfo(eProfession).LbD_getExpert() == pUnit->getUnitClassType();
+}
+
+// Jobs a new specialist could usefully take across all towns.
+// Empty slots count. So do slots/plots already worked by a non-expert
+// (a free colonist in the carpenter shop is still a carpenter opening).
+// Shared workplaces (several butcher professions, one meat building):
+// only another specialist already working that building fills a slot.
 static int countOpenProfessionSlots(const CvPlayer& kPlayer, ProfessionTypes eProfession)
 {
 	if (eProfession == NO_PROFESSION)
@@ -2232,14 +2244,27 @@ static int countOpenProfessionSlots(const CvPlayer& kPlayer, ProfessionTypes ePr
 			const YieldTypes eYield = (YieldTypes) kProfession.getYieldsProduced(0);
 			FOREACH(CityPlot)
 			{
-				if (eLoopCityPlot == CITY_HOME_PLOT || pLoopCity->isPlotProducingYields(eLoopCityPlot))
+				if (eLoopCityPlot == CITY_HOME_PLOT)
 				{
 					continue;
 				}
 				CvPlot* pLoopPlot = pLoopCity->getCityIndexPlot(eLoopCityPlot);
-				if (pLoopPlot != NULL && pLoopCity->canWork(pLoopPlot))
+				if (pLoopPlot == NULL || !pLoopCity->canWork(pLoopPlot))
 				{
-					if (eYield == NO_YIELD || pLoopPlot->calculateYield(eYield, false) > 0)
+					continue;
+				}
+				if (eYield != NO_YIELD && pLoopPlot->calculateYield(eYield, false) <= 0)
+				{
+					continue;
+				}
+				if (!pLoopCity->isPlotProducingYields(eLoopCityPlot))
+				{
+					++iOpen;
+				}
+				else
+				{
+					CvUnit* pWorker = pLoopCity->getUnitWorkingPlot(eLoopCityPlot);
+					if (pWorker != NULL && pWorker->getProfession() == eProfession && !isExpertForProfession(pWorker, eProfession))
 					{
 						++iOpen;
 					}
@@ -2255,12 +2280,18 @@ static int countOpenProfessionSlots(const CvPlayer& kPlayer, ProfessionTypes ePr
 				for (int i = 0; i < pLoopCity->getPopulation(); ++i)
 				{
 					CvUnit* pCitizen = pLoopCity->getPopulationUnitByIndex(i);
-					if (pCitizen != NULL && pCitizen->getProfession() != NO_PROFESSION)
+					if (pCitizen == NULL || pCitizen->getProfession() == NO_PROFESSION)
 					{
-						if (GC.getProfessionInfo(pCitizen->getProfession()).getSpecialBuilding() == iSpecialBuilding)
-						{
-							--iSlots;
-						}
+						continue;
+					}
+					const CvProfessionInfo& kCitizenProfession = GC.getProfessionInfo(pCitizen->getProfession());
+					if (kCitizenProfession.getSpecialBuilding() != iSpecialBuilding)
+					{
+						continue;
+					}
+					if (isExpertForProfession(pCitizen, pCitizen->getProfession()))
+					{
+						--iSlots;
 					}
 				}
 			}
