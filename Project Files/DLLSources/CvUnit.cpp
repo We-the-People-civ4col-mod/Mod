@@ -2931,22 +2931,6 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 		{
 			return true;
 		}
-		// Mixed selection: the exe enables the button from the head unit.
-		// Treasure/wagon as head would disable Talk to Chief even when a
-		// failed trader in the same group can speak.
-		if (getGroup() != NULL)
-		{
-			CLLNode<IDInfo>* pUnitNode = getGroup()->headUnitNode();
-			while (pUnitNode != NULL)
-			{
-				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
-				pUnitNode = getGroup()->nextUnitNode(pUnitNode);
-				if (pLoopUnit != NULL && pLoopUnit != this && pLoopUnit->canSpeakWithChief(plot()))
-				{
-					return true;
-				}
-			}
-		}
 		break;
 
 	case COMMAND_HOTKEY:
@@ -3399,7 +3383,7 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 		// R&R, ray , Stirring Up Natives - END
 
 		case COMMAND_SPEAK_WITH_CHIEF:
-			if (getGroup() != NULL)
+			if (isGroupHead())
 			{
 				getGroup()->speakWithChief();
 			}
