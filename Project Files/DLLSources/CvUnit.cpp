@@ -636,12 +636,10 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 		pUnitNode = pPlot->nextUnitNode(pUnitNode);
 	}
 
-	// Yield cargo captured as standalone goods units vanishes next turn.
-	// If this transport is itself being captured, remember the yields and
-	// load them onto the new wagon after it is created.
-	std::vector<UnitTypes> aeYieldCargoUnits;
-	std::vector<ProfessionTypes> aeYieldCargoProfessions;
-	std::vector<int> aiYieldCargoStored;
+	// Yield cargo captured as standalone goods vanishes next turn.
+	// Combat leaves it on the wagon. When this transport is captured,
+	// let kill() spawn the goods for the capturing player, then load
+	// those units onto the new wagon.
 	const PlayerTypes eYieldCargoPlayer = getCapturingPlayer();
 
 	for(uint i=0;i<oldUnits.size();i++)
@@ -655,32 +653,28 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 				//save old units because kill will clear the static list
 				std::vector<IDInfo> tempUnits = oldUnits;
 
+				if (pLoopUnit->isYield() && eYieldCargoPlayer != NO_PLAYER && bDelay)
+				{
+					// Keep the goods on the wagon until the real kill.
+					continue;
+				}
+
+				if (pPlot->isValidDomainForLocation(*pLoopUnit))
+				{
+					pLoopUnit->setCapturingPlayer(getCapturingPlayer());
+				}
+
+				if (pLoopUnit->getCapturingPlayer() == NO_PLAYER)
+				{
+					if (pAttacker != NULL && pAttacker->getUnitInfo().isCapturesCargo())
+					{
+						pLoopUnit->setCapturingPlayer(pAttacker->getOwnerINLINE());
+					}
+				}
+
 				if (pLoopUnit->isYield() && eYieldCargoPlayer != NO_PLAYER)
 				{
-					if (bDelay)
-					{
-						// Combat uses delayed death. Keep the goods on the wagon
-						// until the real kill creates the captured unit.
-						continue;
-					}
-					aeYieldCargoUnits.push_back(pLoopUnit->getUnitType());
-					aeYieldCargoProfessions.push_back(pLoopUnit->getProfession());
-					aiYieldCargoStored.push_back(pLoopUnit->getYieldStored());
-				}
-				else
-				{
-					if (pPlot->isValidDomainForLocation(*pLoopUnit))
-					{
-						pLoopUnit->setCapturingPlayer(getCapturingPlayer());
-					}
-
-					if (pLoopUnit->getCapturingPlayer() == NO_PLAYER)
-					{
-						if (pAttacker != NULL && pAttacker->getUnitInfo().isCapturesCargo())
-						{
-							pLoopUnit->setCapturingPlayer(pAttacker->getOwnerINLINE());
-						}
-					}
+					pLoopUnit->setCapturingPlayer(eYieldCargoPlayer);
 				}
 
 				// WTP, Schmiddie, fix negative cargo storage crash
@@ -772,12 +766,23 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 
 				if (bAlive)
 				{
-					for (uint iYieldCargo = 0; iYieldCargo < aeYieldCargoUnits.size(); ++iYieldCargo)
+					CvPlot* pLoadPlot = pkCapturedUnit->plot();
+					if (pLoadPlot != NULL)
 					{
-						CvUnit* pYieldCargo = GET_PLAYER(eCapturingPlayer).initUnit(aeYieldCargoUnits[iYieldCargo], aeYieldCargoProfessions[iYieldCargo], pkCapturedUnit->getX_INLINE(), pkCapturedUnit->getY_INLINE(), NO_UNITAI, NO_DIRECTION, aiYieldCargoStored[iYieldCargo]);
-						if (pYieldCargo != NULL)
+						std::vector<IDInfo> aLooseYields;
+						CLLNode<IDInfo>* pYieldNode = pLoadPlot->headUnitNode();
+						while (pYieldNode != NULL)
 						{
-							pYieldCargo->setTransportUnit(pkCapturedUnit);
+							aLooseYields.push_back(pYieldNode->m_data);
+							pYieldNode = pLoadPlot->nextUnitNode(pYieldNode);
+						}
+						for (uint iYieldCargo = 0; iYieldCargo < aLooseYields.size(); ++iYieldCargo)
+						{
+							CvUnit* pYieldCargo = ::getUnit(aLooseYields[iYieldCargo]);
+							if (pYieldCargo != NULL && pYieldCargo->isYield() && pYieldCargo->getOwnerINLINE() == eCapturingPlayer && pYieldCargo->getTransportUnit() == NULL)
+							{
+								pYieldCargo->setTransportUnit(pkCapturedUnit);
+							}
 						}
 					}
 
