@@ -3756,53 +3756,154 @@ void CvDLLWidgetData::parseCityYieldHelp(const CvWidgetDataStruct &widgetDataStr
 	}
 }
 
+static bool isYieldIndexValid(YieldTypes eYield)
+{
+	return eYield != NO_YIELD && (int)eYield >= 0 && (int)eYield < GC.getNumYieldInfos();
+}
+
+static void addUniqueYield(std::vector<YieldTypes>& aeYields, YieldTypes eYield)
+{
+	if (!isYieldIndexValid(eYield))
+	{
+		return;
+	}
+	for (uint i = 0; i < aeYields.size(); ++i)
+	{
+		if (aeYields[i] == eYield)
+		{
+			return;
+		}
+	}
+	aeYields.push_back(eYield);
+}
+
+static void appendCompactYieldMarketHelp(CvWStringBuffer &szBuffer, CvCity* pCity, PlayerTypes eActivePlayer, YieldTypes eYield, bool bSeparatorFirst)
+{
+	if (!isYieldIndexValid(eYield) || eActivePlayer == NO_PLAYER)
+	{
+		return;
+	}
+
+	if (bSeparatorFirst)
+	{
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+	}
+
+	GAMETEXT.setYieldPriceHelp(szBuffer, eActivePlayer, eYield);
+
+	if (pCity != NULL)
+	{
+		int iYieldDomesticDemand = pCity->getYieldDemand(eYield);
+		if (iYieldDomesticDemand > 0)
+		{
+			int iYieldDomesticPrice = pCity->getYieldBuyPrice(eYield);
+			iYieldDomesticPrice = iYieldDomesticPrice * (100 + pCity->getCityHappiness() - pCity->getCityUnHappiness()) / 100;
+			iYieldDomesticPrice = iYieldDomesticPrice * (100 + GET_PLAYER(eActivePlayer).getTotalPlayerDomesticMarketProfitModifierInPercent()) / 100;
+			szBuffer.append(NEWLINE);
+			szBuffer.append(gDLL->getText("TXT_KEY_DOMESTIC_INFO_YIELD", iYieldDomesticDemand, iYieldDomesticPrice));
+		}
+	}
+}
+
+static void appendFullYieldHelp(CvWStringBuffer &szBuffer, CvCity* pCity, PlayerTypes eActivePlayer, YieldTypes eYield, bool bSeparatorFirst)
+{
+	if (!isYieldIndexValid(eYield))
+	{
+		return;
+	}
+	if (bSeparatorFirst)
+	{
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+	}
+	if (pCity != NULL)
+	{
+		GAMETEXT.setYieldHelp(szBuffer, *pCity, eYield);
+	}
+	else if (eActivePlayer != NO_PLAYER)
+	{
+		GAMETEXT.setYieldPriceHelp(szBuffer, eActivePlayer, eYield);
+	}
+}
+
 //Androrc Multiple Professions per Building
 void CvDLLWidgetData::parseTwoCityYieldsHelp(const CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
 {
 	YieldTypes eYield = (YieldTypes) widgetDataStruct.m_iData1;
 	YieldTypes eSecondYield = (YieldTypes) widgetDataStruct.m_iData2;
-	CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
 	CvCity* pCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
 	PlayerTypes eActivePlayer = GC.getGameINLINE().getActivePlayer();
-	if (NULL != pCity)
-	{
-		GAMETEXT.setYieldHelp(szBuffer, *pCity, eYield);
-	}
 
-	for (int i = 0; i < GC.getNumProfessionInfos(); ++i)
+	// Production-icon hover only stores two yield ids. List each profession's
+	// primary output for that workplace as a short price/demand block.
+	// Skip extra outputs (food): those belong on the city food icon.
+	std::vector<YieldTypes> aeYields;
+	addUniqueYield(aeYields, eYield);
+	addUniqueYield(aeYields, eSecondYield);
+
+	if (eActivePlayer != NO_PLAYER)
 	{
-		ProfessionTypes eProfession = (ProfessionTypes) i;
-		if (GET_PLAYER(eActivePlayer).isProfessionValid(eProfession, NO_UNIT))
+		std::vector<char> aSpecialBuilding(GC.getNumSpecialBuildingInfos(), 0);
+		for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
 		{
-			int iNumRequired = GET_PLAYER(eActivePlayer).getYieldEquipmentAmount(eProfession, eYield);
-			if (iNumRequired > 0)
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+			if (!kProfession.isCitizen() || kProfession.isWorkPlot())
 			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_YIELD_NEEDED_FOR_PROFESSION", iNumRequired, GC.getProfessionInfo(eProfession).getTextKeyWide()));
+				continue;
+			}
+			if (!GET_PLAYER(eActivePlayer).isProfessionValid(eProfession, NO_UNIT))
+			{
+				continue;
+			}
+			if (kProfession.getNumYieldsProduced() <= 0)
+			{
+				continue;
+			}
+			const YieldTypes ePrimary = (YieldTypes) kProfession.getYieldsProduced(0);
+			if (ePrimary == eYield || ePrimary == eSecondYield)
+			{
+				const int iSpecialBuilding = kProfession.getSpecialBuilding();
+				if (iSpecialBuilding >= 0 && iSpecialBuilding < (int)aSpecialBuilding.size())
+				{
+					aSpecialBuilding[iSpecialBuilding] = 1;
+				}
+			}
+		}
+
+		for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+		{
+			const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+			const int iSpecialBuilding = kProfession.getSpecialBuilding();
+			if (iSpecialBuilding < 0 || iSpecialBuilding >= (int)aSpecialBuilding.size() || aSpecialBuilding[iSpecialBuilding] == 0)
+			{
+				continue;
+			}
+			if (!kProfession.isCitizen() || kProfession.isWorkPlot())
+			{
+				continue;
+			}
+			if (!GET_PLAYER(eActivePlayer).isProfessionValid(eProfession, NO_UNIT))
+			{
+				continue;
+			}
+			if (kProfession.getNumYieldsProduced() > 0)
+			{
+				addUniqueYield(aeYields, (YieldTypes) kProfession.getYieldsProduced(0));
 			}
 		}
 	}
 
-	szBuffer.append(SEPARATOR);
-	szBuffer.append(NEWLINE);
-
-	if (NULL != pCity)
+	if (aeYields.empty())
 	{
-		GAMETEXT.setYieldHelp(szBuffer, *pCity, eSecondYield);
+		appendFullYieldHelp(szBuffer, pCity, eActivePlayer, eYield, false);
+		appendFullYieldHelp(szBuffer, pCity, eActivePlayer, eSecondYield, true);
+		return;
 	}
 
-	for (int i = 0; i < GC.getNumProfessionInfos(); ++i)
+	for (uint i = 0; i < aeYields.size(); ++i)
 	{
-		ProfessionTypes eProfession = (ProfessionTypes) i;
-		if (GET_PLAYER(eActivePlayer).isProfessionValid(eProfession, NO_UNIT))
-		{
-			int iNumRequired = GET_PLAYER(eActivePlayer).getYieldEquipmentAmount(eProfession, eSecondYield);
-			if (iNumRequired > 0)
-			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_YIELD_NEEDED_FOR_PROFESSION", iNumRequired, GC.getProfessionInfo(eProfession).getTextKeyWide()));
-			}
-		}
+		appendCompactYieldMarketHelp(szBuffer, pCity, eActivePlayer, aeYields[i], i > 0);
 	}
 }
 //Androrc End
