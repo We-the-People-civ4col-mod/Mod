@@ -140,7 +140,20 @@ class CvPediaBuilding:
 		if (buildingInfo.getProfessionOutput() > 0):
 			for iProfession in range(gc.getNumProfessionInfos()):
 				if(gc.getProfessionInfo(iProfession).getSpecialBuilding() == buildingInfo.getSpecialBuildingType()):
+					if gc.getProfessionInfo(iProfession).getNumYieldsProduced() <= 0:
+						continue
 					szText = localText.getText("TXT_KEY_BUILDING_PROFESSION_OUTPUT", (buildingInfo.getProfessionOutput(), gc.getYieldInfo(gc.getProfessionInfo(iProfession).getYieldsProduced(0)).getChar()))
+					for iProduced in range(1, gc.getProfessionInfo(iProfession).getNumYieldsProduced()):
+						iExtraYield = gc.getProfessionInfo(iProfession).getYieldsProduced(iProduced)
+						if iExtraYield != -1:
+							szText += u"%c" % gc.getYieldInfo(iExtraYield).getChar()
+					szConsumed = u""
+					for iConsumed in range(gc.getProfessionInfo(iProfession).getNumYieldsConsumed()):
+						iYieldConsumed = gc.getProfessionInfo(iProfession).getYieldsConsumed(iConsumed)
+						if iYieldConsumed != -1:
+							szConsumed += u"%c" % gc.getYieldInfo(iYieldConsumed).getChar()
+					if szConsumed:
+						szText += u" (" + localText.getText("TXT_KEY_YIELD_CONSUMED", ()) + szConsumed + u")"
 					## R&R, Robert Surcouf,  Pedia - Start
 					#screen.appendListBoxStringNoUpdate(panelName, u"<font=4>" + szText.upper() + u"</font>", WidgetTypes.WIDGET_GENERAL, 0, 0, CvUtil.FONT_LEFT_JUSTIFY)
 					screen.appendListBoxStringNoUpdate(panelName, u"<font=3>" + szText + u"</font>", WidgetTypes.WIDGET_PEDIA_JUMP_TO_PROFESSION, iProfession, 1, CvUtil.FONT_LEFT_JUSTIFY)

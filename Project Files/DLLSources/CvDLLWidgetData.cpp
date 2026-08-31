@@ -3557,19 +3557,33 @@ void CvDLLWidgetData::parseBuildingHelp(const CvWidgetDataStruct &widgetDataStru
 void CvDLLWidgetData::parseSpecialBuildingHelp(const CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
 {
 	CvCity* pCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
-	if (pCity != NULL)
+	if (pCity == NULL)
 	{
-		for (BuildingClassTypes eBuildingClass = FIRST_BUILDINGCLASS; eBuildingClass < NUM_BUILDINGCLASS_TYPES; ++eBuildingClass)
+		return;
+	}
+
+	// 1. empty worker slots pass specialbuilding -1 and the building id in data2.
+	// 2. the building graphic itself still passes the specialbuilding in data1.
+	if (widgetDataStruct.m_iData1 == -1)
+	{
+		BuildingTypes eBuilding = (BuildingTypes) widgetDataStruct.m_iData2;
+		if (eBuilding != NO_BUILDING && pCity->isHasBuilding(eBuilding))
 		{
-			BuildingTypes eBuilding = GC.getCivilizationInfo(pCity->getCivilizationType()).getCivilizationBuildings(eBuildingClass);
-			if (eBuilding != NO_BUILDING)
+			GAMETEXT.setBuildingHelp(szBuffer, eBuilding, false, false, pCity);
+		}
+		return;
+	}
+
+	for (BuildingClassTypes eBuildingClass = FIRST_BUILDINGCLASS; eBuildingClass < NUM_BUILDINGCLASS_TYPES; ++eBuildingClass)
+	{
+		BuildingTypes eBuilding = GC.getCivilizationInfo(pCity->getCivilizationType()).getCivilizationBuildings(eBuildingClass);
+		if (eBuilding != NO_BUILDING)
+		{
+			if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == widgetDataStruct.m_iData1)
 			{
-				if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == widgetDataStruct.m_iData1)
+				if (pCity->isHasBuilding(eBuilding))
 				{
-					if (pCity->isHasBuilding(eBuilding))
-					{
-						GAMETEXT.setBuildingHelp(szBuffer, eBuilding, false, false, pCity);
-					}
+					GAMETEXT.setBuildingHelp(szBuffer, eBuilding, false, false, pCity);
 				}
 			}
 		}
