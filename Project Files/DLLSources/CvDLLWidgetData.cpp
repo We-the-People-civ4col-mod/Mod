@@ -750,7 +750,6 @@ bool CvDLLWidgetData::executeAction(const CvWidgetDataStruct &widgetDataStruct)
 		break;
 
 	case WIDGET_TRADE_ITEM:
-		doTradeItem(widgetDataStruct);
 		break;
 
 	case WIDGET_UNIT_MODEL:
@@ -1970,7 +1969,7 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 				{
 					bValid = true;
 
-					iRange = GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE()).getFoundCityMinRange(pMissionPlot);
+					iRange = GC.getMIN_CITY_RANGE();
 
 					for (iDX = -(iRange); iDX <= iRange; iDX++)
 					{
@@ -1991,7 +1990,7 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 					if (!bValid)
 					{
 						szBuffer.append(NEWLINE);
-						szBuffer.append(gDLL->getText("TXT_KEY_ACTION_CANNOT_FOUND", iRange));
+						szBuffer.append(gDLL->getText("TXT_KEY_ACTION_CANNOT_FOUND", GC.getMIN_CITY_RANGE()));
 					}
 				}
 			}
@@ -2572,121 +2571,6 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 				}
 			}
 
-			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType() == COMMAND_GRANT_FREEDOM)
-			{
-				const CvPlayer& kOwner =
-					GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE());
-
-				const UnitClassTypes eUnitClass =
-					pHeadSelectedUnit->getUnitInfo().getUnitClassType();
-
-				const UnitClassTypes eIndenturedServantClass =
-					(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_INDENTURED_SERVANT");
-
-				// Global emancipation cooldown has priority over all normal help texts.
-				if (kOwner.isHuman() &&
-					kOwner.isSlaveEmancipationOnCooldown())
-				{
-					const int iTurnsRemaining =
-						kOwner.getSlaveEmancipationCooldownEndTurn() -
-						GC.getGameINLINE().getGameTurn();
-
-					if (iTurnsRemaining > 0)
-					{
-						szBuffer.append(NEWLINE);
-						szBuffer.append(
-							gDLL->getText(
-								"TXT_KEY_COMMAND_GRANT_FREEDOM_COOLDOWN",
-								iTurnsRemaining
-							)
-						);
-					}
-				}
-
-				// Prisoner of War -> Indentured Servant
-				else if (eUnitClass == UNITCLASS_PRISONER_OF_WAR)
-				{
-					szBuffer.append(NEWLINE);
-					szBuffer.append(
-						gDLL->getText(
-							"TXT_KEY_COMMAND_GRANT_FREEDOM_POW_HELP"
-						)
-					);
-				}
-
-				// Indentured Servant -> Free Colonist
-				else if (eUnitClass == eIndenturedServantClass)
-				{
-					const int iTurnsRemaining =
-						pHeadSelectedUnit->getLbDFreeReadyTurn() -
-						GC.getGameINLINE().getGameTurn();
-
-					// Former Prisoner of War still has to serve.
-					if (iTurnsRemaining > 0)
-					{
-						szBuffer.append(NEWLINE);
-						szBuffer.append(
-							gDLL->getText(
-								"TXT_KEY_COMMAND_GRANT_FREEDOM_FORMER_POW",
-								iTurnsRemaining
-							)
-						);
-					}
-					else
-					{
-						const UnitClassTypes eColonistClass =
-							(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_COLONIST");
-
-						const UnitTypes eIndenturedServant =
-							kOwner.getUnitType(eIndenturedServantClass);
-
-						const UnitTypes eColonist =
-							kOwner.getUnitType(eColonistClass);
-
-						if (eIndenturedServant != NO_UNIT &&
-							eColonist != NO_UNIT)
-						{
-							const int iColonistPrice =
-								kOwner.getEuropeUnitBuyPrice(eColonist);
-
-							const int iIndenturedServantPrice =
-								kOwner.getEuropeUnitBuyPrice(eIndenturedServant);
-
-							if (iColonistPrice >= 0 &&
-								iIndenturedServantPrice >= 0)
-							{
-								const int iReleasePrice =
-									std::max(
-										0,
-										iColonistPrice - iIndenturedServantPrice
-									);
-
-								szBuffer.append(NEWLINE);
-
-								if (kOwner.getGold() >= iReleasePrice)
-								{
-									szBuffer.append(
-										gDLL->getText(
-											"TXT_KEY_COMMAND_GRANT_FREEDOM_INDENTURED_HELP",
-											iReleasePrice
-										)
-									);
-								}
-								else
-								{
-									szBuffer.append(
-										gDLL->getText(
-											"TXT_KEY_COMMAND_GRANT_FREEDOM_INDENTURED_NO_GOLD",
-											iReleasePrice
-										)
-									);
-								}
-							}
-						}
-					}
-				}
-			}
-
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType() == COMMAND_ESTABLISH_MISSION)
 			{
 				CvUnit* pMissionary = NULL;
@@ -2765,33 +2649,9 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 				szBuffer.append(gDLL->getText("TXT_KEY_ACTION_ALL_UNITS"));
 			}
 
-			const CommandTypes eCommand =
-				GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType();
-
-			bool bSuppressNormalHelp = false;
-
-			// WTP, Schmiddie, Slave Emancipation - START
-			if (eCommand == COMMAND_GRANT_FREEDOM)
+			if (!isEmpty(GC.getCommandInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType()).getHelp()))
 			{
-				const CvPlayer& kOwner = GET_PLAYER(pHeadSelectedUnit->getOwnerINLINE());
-
-				if (kOwner.isHuman() && kOwner.isSlaveEmancipationOnCooldown())
-				{
-					bSuppressNormalHelp = true;
-				}
-			}
-			// WTP, Schmiddie, Slave Emancipation - END
-
-			if (!bSuppressNormalHelp &&
-				!isEmpty(GC.getCommandInfo(eCommand).getHelp()))
-			{
-				szBuffer.append(
-					CvWString::format(
-						L"%s%s",
-						NEWLINE,
-						GC.getCommandInfo(eCommand).getHelp()
-					).c_str()
-				);
+				szBuffer.append(CvWString::format(L"%s%s", NEWLINE, GC.getCommandInfo(GC.getActionInfo(widgetDataStruct.m_iData1).getCommandType()).getHelp()).c_str());
 			}
 		}
 
@@ -3097,69 +2957,6 @@ void CvDLLWidgetData::parseEmphasizeHelp(const CvWidgetDataStruct &widgetDataStr
 				szBuffer.append(gDLL->getText("TXT_KEY_EMPHASIZE_OFF"));
 			}
 		}
-	}
-}
-
-void CvDLLWidgetData::doTradeItem(const CvWidgetDataStruct &widgetDataStruct)
-{
-	if (widgetDataStruct.m_iData1 != TRADE_YIELD)
-	{
-		return;
-	}
-
-	if (!gDLL->isDiplomacy() && !gDLL->isMPDiplomacyScreenUp())
-	{
-		return;
-	}
-
-	const PlayerTypes eActivePlayer = GC.getGameINLINE().getActivePlayer();
-	if (eActivePlayer == NO_PLAYER || !GET_PLAYER(eActivePlayer).isHuman())
-	{
-		return;
-	}
-
-	PlayerTypes eWhoFrom = NO_PLAYER;
-	IDInfo kTransport;
-	if (gDLL->isDiplomacy())
-	{
-		eWhoFrom = widgetDataStruct.m_bOption ? (PlayerTypes)gDLL->getDiplomacyPlayer() : eActivePlayer;
-		kTransport = gDLL->getDiplomacyTransport();
-	}
-	else
-	{
-		eWhoFrom = widgetDataStruct.m_bOption ? (PlayerTypes)gDLL->getMPDiplomacyPlayer() : eActivePlayer;
-		kTransport = gDLL->getMPDiplomacyTransport();
-	}
-
-	if (eWhoFrom == NO_PLAYER)
-	{
-		return;
-	}
-
-	const YieldTypes eYield = (YieldTypes)widgetDataStruct.m_iData2;
-	if (eYield == NO_YIELD || !GC.getYieldInfo(eYield).isCargo())
-	{
-		return;
-	}
-
-	CvUnit* pTransport = ::getUnit(kTransport);
-	if (pTransport == NULL)
-	{
-		return;
-	}
-
-	if (GET_PLAYER(eWhoFrom).getTradeYieldAmount(eYield, pTransport) <= 0)
-	{
-		return;
-	}
-
-	// Shift-click asks how much. A normal click dumps the whole stack.
-	// Use GC.shiftKey() (GetKeyState). gDLL->shiftKey() is often false during diplomacy.
-	if (GC.shiftKey())
-	{
-		CvPlayer& kFrom = GET_PLAYER(eWhoFrom);
-		kFrom.setDiploYieldAmount(eYield, DIPLO_YIELD_AMOUNT_ASK);
-		kFrom.tryLaunchDiploYieldAmountPopup(eYield, kTransport);
 	}
 }
 
@@ -3557,33 +3354,19 @@ void CvDLLWidgetData::parseBuildingHelp(const CvWidgetDataStruct &widgetDataStru
 void CvDLLWidgetData::parseSpecialBuildingHelp(const CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
 {
 	CvCity* pCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
-	if (pCity == NULL)
+	if (pCity != NULL)
 	{
-		return;
-	}
-
-	// 1. empty worker slots pass specialbuilding -1 and the building id in data2.
-	// 2. the building graphic itself still passes the specialbuilding in data1.
-	if (widgetDataStruct.m_iData1 == -1)
-	{
-		BuildingTypes eBuilding = (BuildingTypes) widgetDataStruct.m_iData2;
-		if (eBuilding != NO_BUILDING && pCity->isHasBuilding(eBuilding))
+		for (BuildingClassTypes eBuildingClass = FIRST_BUILDINGCLASS; eBuildingClass < NUM_BUILDINGCLASS_TYPES; ++eBuildingClass)
 		{
-			GAMETEXT.setBuildingHelp(szBuffer, eBuilding, false, false, pCity);
-		}
-		return;
-	}
-
-	for (BuildingClassTypes eBuildingClass = FIRST_BUILDINGCLASS; eBuildingClass < NUM_BUILDINGCLASS_TYPES; ++eBuildingClass)
-	{
-		BuildingTypes eBuilding = GC.getCivilizationInfo(pCity->getCivilizationType()).getCivilizationBuildings(eBuildingClass);
-		if (eBuilding != NO_BUILDING)
-		{
-			if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == widgetDataStruct.m_iData1)
+			BuildingTypes eBuilding = GC.getCivilizationInfo(pCity->getCivilizationType()).getCivilizationBuildings(eBuildingClass);
+			if (eBuilding != NO_BUILDING)
 			{
-				if (pCity->isHasBuilding(eBuilding))
+				if (GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == widgetDataStruct.m_iData1)
 				{
-					GAMETEXT.setBuildingHelp(szBuffer, eBuilding, false, false, pCity);
+					if (pCity->isHasBuilding(eBuilding))
+					{
+						GAMETEXT.setBuildingHelp(szBuffer, eBuilding, false, false, pCity);
+					}
 				}
 			}
 		}

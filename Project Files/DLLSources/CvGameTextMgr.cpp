@@ -6471,36 +6471,6 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szBuffer, UnitTypes eUnit, bool
 		}
 	}
 }
-
-// 1. yield icons have to be appended as chars. putting them in getText %s often drops them.
-// 2. city building hover already prints "X output per citizen"; the recipe belongs on that same line.
-static void appendProfessionConsumedYields(CvWStringBuffer& szBuffer, const CvProfessionInfo& kProfession)
-{
-	bool bFirst = true;
-	for (int iConsumed = 0; iConsumed < kProfession.getNumYieldsConsumed(); ++iConsumed)
-	{
-		YieldTypes eYieldConsumed = (YieldTypes) kProfession.getYieldsConsumed(iConsumed);
-		if (eYieldConsumed == NO_YIELD)
-		{
-			continue;
-		}
-
-		if (bFirst)
-		{
-			szBuffer.append(L" (");
-			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_CONSUMED"));
-			bFirst = false;
-		}
-
-		szBuffer.append(CvWString::format(L"%c", GC.getYieldInfo(eYieldConsumed).getChar()));
-	}
-
-	if (!bFirst)
-	{
-		szBuffer.append(L")");
-	}
-}
-
 void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBuilding, bool bCivilopediaText, bool bStrategyText, CvCity* pCity)
 {
 	CxDesyncMonitor StartAsyncExecution;
@@ -6556,45 +6526,57 @@ void CvGameTextMgr::setBuildingHelp(CvWStringBuffer &szBuffer, BuildingTypes eBu
 		setYieldChangeHelp(szBuffer, L", ", L"", L"", aiYields, false, false);
 		setYieldChangeHelp(szBuffer, L", ", L"", L"", kBuilding.getYieldModifierArray(), true, bCivilopediaText);
 
+		// R&R, ray , fix conflict MYCP and MYPB
+		// std::vector<YieldTypes> eBuildingYieldsConversion;
 		if (kBuilding.getProfessionOutput() != 0)
 		{
 			for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
 			{
-				if (ePlayer != NO_PLAYER && !GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).isValidProfession(eProfession))
-				{
-					continue;
-				}
+				// R&R, ray , fix conflict MYCP and MYPB
+				std::vector<YieldTypes> eBuildingYieldsConversion;
 
-				const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-				if (kProfession.getSpecialBuilding() != kBuilding.getSpecialBuildingType())
+				if (ePlayer == NO_PLAYER || GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).isValidProfession(eProfession))
 				{
-					continue;
-				}
-
-				if (kProfession.getNumYieldsProduced() <= 0)
-				{
-					continue;
-				}
-
-				YieldTypes eYieldProduced = (YieldTypes) kProfession.getYieldsProduced(0);
-				if (eYieldProduced == NO_YIELD)
-				{
-					continue;
-				}
-
-				szBuffer.append(NEWLINE);
-				szBuffer.append(GC.getSymbolID(BULLET_CHAR));
-				szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_PROFESSION_OUTPUT", kBuilding.getProfessionOutput(), GC.getYieldInfo(eYieldProduced).getChar()));
-				// 1. butcher/dyer/dock produce more than one yield. produced(0) is only the first icon.
-				for (int iProduced = 1; iProduced < kProfession.getNumYieldsProduced(); ++iProduced)
-				{
-					YieldTypes eExtraYield = (YieldTypes) kProfession.getYieldsProduced(iProduced);
-					if (eExtraYield != NO_YIELD)
+					const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+					if (kProfession.getSpecialBuilding() == kBuilding.getSpecialBuildingType())
 					{
-						szBuffer.append(CvWString::format(L"%c", GC.getYieldInfo(eExtraYield).getChar()));
+						if (kProfession.getYieldsProduced(0) != NO_YIELD)
+						{
+							for (int j = 0; j < kProfession.getNumYieldsConsumed(); j++)
+							{
+								YieldTypes eYieldConsumed = (YieldTypes) kProfession.getYieldsConsumed(j);
+								if (eYieldConsumed != NO_YIELD)
+								{
+									eBuildingYieldsConversion.push_back(eYieldConsumed);
+								}
+							}
+							if (!eBuildingYieldsConversion.empty())
+							{
+								CvWString szYieldsList;
+								for (std::vector<YieldTypes>::iterator it = eBuildingYieldsConversion.begin(); it != eBuildingYieldsConversion.end(); ++it)
+								{
+									if (!szYieldsList.empty())
+									{
+										if (*it == eBuildingYieldsConversion.back())
+										{
+											szYieldsList += CvWString::format(gDLL->getText("TXT_KEY_AND"));
+										}
+										else
+										{
+											szYieldsList += L", ";
+										}
+									}
+									szYieldsList += CvWString::format(L"%c", GC.getYieldInfo(*it).getChar());
+								}
+								szBuffer.append(NEWLINE);
+								szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_YIELDS_CONVERSION", szYieldsList.GetCString(), GC.getYieldInfo((YieldTypes) kProfession.getYieldsProduced(0)).getChar()));
+							}
+							szBuffer.append(NEWLINE);
+							szBuffer.append(GC.getSymbolID(BULLET_CHAR));
+							szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_PROFESSION_OUTPUT", kBuilding.getProfessionOutput(), GC.getYieldInfo((YieldTypes) kProfession.getYieldsProduced(0)).getChar()));
+						}
 					}
 				}
-				appendProfessionConsumedYields(szBuffer, kProfession);
 			}
 		}
 		// R&R, ray , MYCP partially based on code of Aymerick - END
@@ -8746,91 +8728,10 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		{
 			if (aaiProfessionYields[i][j] > 0)
 			{
-				const CvProfessionInfo& kShownProfession = GC.getProfessionInfo((ProfessionTypes)i);
 				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_BASE_CITIZEN_YIELD", aaiProfessionYields[i][j], info.getChar(), kShownProfession.getTextKeyWide()));
-				for (int iProduced = 0; iProduced < kShownProfession.getNumYieldsProduced(); ++iProduced)
-				{
-					YieldTypes eExtraYield = (YieldTypes) kShownProfession.getYieldsProduced(iProduced);
-					if (eExtraYield != NO_YIELD && eExtraYield != eYieldType)
-					{
-						szBuffer.append(CvWString::format(L"%c", GC.getYieldInfo(eExtraYield).getChar()));
-					}
-				}
-				appendProfessionConsumedYields(szBuffer, kShownProfession);
+				szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_BASE_CITIZEN_YIELD", aaiProfessionYields[i][j], info.getChar(), GC.getProfessionInfo((ProfessionTypes)i).getTextKeyWide()));
 			}
 		}
-	}
-
-	// Meat/weaver/etc: several professions share one building. The city
-	// yield icon hover used to list only the currently working ones, so
-	// butcher looked like downs+wool when the building recipe lists all six.
-	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
-	{
-		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
-		if (!kProfession.isCitizen() || kProfession.isWorkPlot())
-		{
-			continue;
-		}
-		if (!GC.getCivilizationInfo(owner.getCivilizationType()).isValidProfession(eProfession))
-		{
-			continue;
-		}
-
-		bool bProducesThisYield = false;
-		for (int iProduced = 0; iProduced < kProfession.getNumYieldsProduced(); ++iProduced)
-		{
-			if ((YieldTypes) kProfession.getYieldsProduced(iProduced) == eYieldType)
-			{
-				bProducesThisYield = true;
-				break;
-			}
-		}
-		if (!bProducesThisYield)
-		{
-			continue;
-		}
-		if (city.getNumProfessionBuildingSlots(eProfession) <= 0)
-		{
-			continue;
-		}
-
-		bool bAlreadyShown = false;
-		if (eProfession >= 0 && eProfession < (int)aaiProfessionYields.size())
-		{
-			for (uint j = 0; j < aaiProfessionYields[eProfession].size(); ++j)
-			{
-				if (aaiProfessionYields[eProfession][j] > 0)
-				{
-					bAlreadyShown = true;
-					break;
-				}
-			}
-		}
-		if (bAlreadyShown)
-		{
-			continue;
-		}
-
-		const int iRecipeOutput = city.getProfessionOutput(eProfession, NULL);
-		if (iRecipeOutput <= 0)
-		{
-			continue;
-		}
-
-		szBuffer.append(NEWLINE);
-		szBuffer.append(GC.getSymbolID(BULLET_CHAR));
-		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_PROFESSION_OUTPUT", iRecipeOutput, GC.getYieldInfo(eYieldType).getChar()));
-		for (int iProduced = 0; iProduced < kProfession.getNumYieldsProduced(); ++iProduced)
-		{
-			YieldTypes eExtraYield = (YieldTypes) kProfession.getYieldsProduced(iProduced);
-			if (eExtraYield != NO_YIELD && eExtraYield != eYieldType)
-			{
-				szBuffer.append(CvWString::format(L"%c", GC.getYieldInfo(eExtraYield).getChar()));
-			}
-		}
-		szBuffer.append(CvWString::format(L" %s", kProfession.getDescription()));
-		appendProfessionConsumedYields(szBuffer, kProfession);
 	}
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 
@@ -9267,7 +9168,8 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		// WTP, ray, correcting Yield Help for Culture - missing Culture from Citizens - END
 		else 
 		{
-			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_TOTAL", info.getTextKeyWide(), aiYields[eYieldType], info.getChar()));
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_TOTAL", info.getTextKeyWide(), iModifiedProduction, info.getChar()));
+			FAssert(iModifiedProduction == aiYields[eYieldType]);
 		}
 	}
 	// R&R, ray, Health - END
@@ -9697,7 +9599,7 @@ void CvGameTextMgr::buildCityBillboardProductionString( CvWStringBuffer& szBuffe
 		UnitClassTypes eUnitClass = pCity->getTeachUnitClass();
 		if (eUnitClass != NO_UNITCLASS)
 		{
-			UnitTypes eUnit = (UnitTypes)GC.getUnitClassInfo(eUnitClass).getDefaultUnitIndex();
+			UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eUnitClass);
 			if (eUnit != NO_UNIT)
 			{
 				szBuffer.append(GC.getUnitInfo(eUnit).getDescription());
@@ -10251,16 +10153,7 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 
 	CvEventInfo& kEvent = GC.getEventInfo(eEvent);
 	CvPlayer& kActivePlayer = GET_PLAYER(ePlayer);
-	EventTriggeredData* pTriggeredData = NULL;
-	const EventTriggeredData* pOccured = kActivePlayer.getEventOccured(eEvent);
-	if (pOccured != NULL && pOccured->getID() == iEventTriggeredId)
-	{
-		pTriggeredData = const_cast<EventTriggeredData*>(pOccured);
-	}
-	if (NULL == pTriggeredData)
-	{
-		pTriggeredData = kActivePlayer.getEventTriggered(iEventTriggeredId);
-	}
+	EventTriggeredData* pTriggeredData = kActivePlayer.getEventTriggered(iEventTriggeredId);
 
 	if (NULL == pTriggeredData)
 	{
