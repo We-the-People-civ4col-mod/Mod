@@ -796,7 +796,7 @@
 		<English>Europe	 [TAB]Sell : %d1_Price[ICON_GOLD] / Buy : %d2_Price[ICON_GOLD]</English>
 		<Portuguese>Europa [TAB]Venda: %d1_Price[ICON_GOLD] / Compra: %d2_Price[ICON_GOLD]</Portuguese>
 		<French>Europe	 [TAB]Vendre : %d1_Price[ICON_GOLD] / Acheter : %d2_Price[ICON_GOLD]</French>
-		<German>Europa	 [TAB]Verkauf: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
+		<German>Europa	 [TAB]Verk.: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
 		<Italian>Europe	 [TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
 		<Spanish>Europe	 [TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Spanish>
 		<Russian>Европа	   Прод. : %d1_Price[ICON_GOLD] / Куп. : %d2_Price[ICON_GOLD]</Russian>
@@ -807,7 +807,7 @@
 		<English>Africa	  [TAB]Sell : %d1_Price[ICON_GOLD] / Buy : %d2_Price[ICON_GOLD]</English>
 		<Portuguese>África [TAB]Venda: %d1_Price[ICON_GOLD] / Compra: %d2_Price[ICON_GOLD]</Portuguese>
 		<French>Afrique	  [TAB]Vendre : %d1_Price[ICON_GOLD] / Acheter : %d2_Price[ICON_GOLD]</French>
-		<German>Afrika	  [TAB]Verkauf: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
+		<German>Afrika	  [TAB]Verk.: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
 		<Italian>Africa	  [TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
 		<Spanish>África	  [TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Spanish>
 		<Russian>Африка	  Прод. : %d1_Price[ICON_GOLD] / Куп. : %d2_Price[ICON_GOLD]</Russian>
@@ -818,7 +818,7 @@
 		<English>Port Royal	 [TAB]Sell : %d1_Price[ICON_GOLD] / Buy : %d2_Price[ICON_GOLD]</English>
 		<Portuguese>Port Royal Venda: %d1_Price[ICON_GOLD] / Compra: %d2_Price[ICON_GOLD]</Portuguese>
 		<French>Port Royal	 [TAB]Vendre : %d1_Price[ICON_GOLD] / Acheter : %d2_Price[ICON_GOLD]</French>
-		<German>Port Royal	 [TAB]Verkauf: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
+		<German>Port Royal	 [TAB]Verk.: %d1_Price[ICON_GOLD] / Kauf: %d2_Price[ICON_GOLD]</German>
 		<Italian>Port Royal	 [TAB]Vendere: %d1_Price[ICON_GOLD] / Comperare: %d2_Price[ICON_GOLD]</Italian>
 		<Spanish>Port Royal	 [TAB]Vender: %d1_Price[ICON_GOLD] / Comprar: %d2_Price[ICON_GOLD]</Spanish>
 		<Russian>Порт Ройал  Прод. : %d1_Price[ICON_GOLD] / Куп. : %d2_Price[ICON_GOLD]</Russian>

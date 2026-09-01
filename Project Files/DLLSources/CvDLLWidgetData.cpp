@@ -3539,17 +3539,125 @@ void CvDLLWidgetData::parseCityYieldHelp(const CvWidgetDataStruct &widgetDataStr
 	}
 }
 
-//Androrc Multiple Professions per Building
-void CvDLLWidgetData::parseTwoCityYieldsHelp(const CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
+static bool isYieldIndexValid(YieldTypes eYield)
 {
-	YieldTypes eYield = (YieldTypes) widgetDataStruct.m_iData1;
-	YieldTypes eSecondYield = (YieldTypes) widgetDataStruct.m_iData2;
-	CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
-	CvCity* pCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
-	PlayerTypes eActivePlayer = GC.getGameINLINE().getActivePlayer();
-	if (NULL != pCity)
+	// Yields are a compile-time enum. There is no GC.getNumYieldInfos().
+	return eYield >= FIRST_YIELD && eYield < NUM_YIELD_TYPES;
+}
+
+static void addUniqueYield(std::vector<YieldTypes>& aeYields, YieldTypes eYield)
+{
+	if (!isYieldIndexValid(eYield))
+	{
+		return;
+	}
+	for (uint i = 0; i < aeYields.size(); ++i)
+	{
+		if (aeYields[i] == eYield)
+		{
+			return;
+		}
+	}
+	aeYields.push_back(eYield);
+}
+
+static void appendCompactYieldMarketHelp(CvWStringBuffer &szBuffer, CvCity* pCity, PlayerTypes eActivePlayer, YieldTypes eYield, bool bSeparatorFirst)
+{
+	if (!isYieldIndexValid(eYield) || eActivePlayer == NO_PLAYER)
+	{
+		return;
+	}
+
+	// One line per good. The full Europe/Africa/Port Royal block wraps on this
+	// narrow production-icon hover, especially in German.
+	if (bSeparatorFirst)
+	{
+		szBuffer.append(NEWLINE);
+	}
+
+	const CvYieldInfo& info = GC.getYieldInfo(eYield);
+	CvPlayer& kPlayer = GET_PLAYER(eActivePlayer);
+	szBuffer.append(CvWString::format(SETCOLR L"%c %s" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), info.getChar(), info.getDescription()));
+
+	bool bAnyMarket = false;
+	if (info.isCargo() && kPlayer.getParent() != NO_PLAYER)
+	{
+		CvPlayer& kParent = GET_PLAYER(kPlayer.getParent());
+		if (kPlayer.isYieldEuropeTradable(eYield))
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_PRICE_COMPACT_EU", kParent.getYieldBuyPrice(eYield), kParent.getYieldSellPrice(eYield)));
+			bAnyMarket = true;
+		}
+		if (kPlayer.isYieldAfricaTradable(eYield))
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_PRICE_COMPACT_AF", kParent.getYieldAfricaBuyPrice(eYield), kParent.getYieldAfricaSellPrice(eYield)));
+			bAnyMarket = true;
+		}
+		if (kPlayer.isYieldPortRoyalTradable(eYield))
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_PRICE_COMPACT_PR", kParent.getYieldPortRoyalBuyPrice(eYield), kParent.getYieldPortRoyalSellPrice(eYield)));
+			bAnyMarket = true;
+		}
+		if (bAnyMarket)
+		{
+			szBuffer.append(CvWString::format(L"%c", GC.getSymbolID(GOLD_CHAR)));
+		}
+	}
+
+	if (pCity != NULL)
+	{
+		int iYieldDomesticDemand = pCity->getYieldDemand(eYield);
+		if (iYieldDomesticDemand > 0)
+		{
+			int iYieldDomesticPrice = pCity->getYieldBuyPrice(eYield);
+			iYieldDomesticPrice = iYieldDomesticPrice * (100 + pCity->getCityHappiness() - pCity->getCityUnHappiness()) / 100;
+			iYieldDomesticPrice = iYieldDomesticPrice * (100 + GET_PLAYER(eActivePlayer).getTotalPlayerDomesticMarketProfitModifierInPercent()) / 100;
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_PRICE_COMPACT_DOMESTIC", iYieldDomesticDemand, iYieldDomesticPrice));
+		}
+	}
+}
+
+static void appendFullYieldHelp(CvWStringBuffer &szBuffer, CvCity* pCity, PlayerTypes eActivePlayer, YieldTypes eYield, bool bSeparatorFirst)
+{
+	if (!isYieldIndexValid(eYield))
+	{
+		return;
+	}
+	if (bSeparatorFirst)
+	{
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+	}
+	if (pCity != NULL)
 	{
 		GAMETEXT.setYieldHelp(szBuffer, *pCity, eYield);
+	}
+	else if (eActivePlayer != NO_PLAYER)
+	{
+		GAMETEXT.setYieldPriceHelp(szBuffer, eActivePlayer, eYield);
+	}
+}
+
+static void appendYieldPriceAndDemandHelp(CvWStringBuffer &szBuffer, CvCity* pCity, PlayerTypes eActivePlayer, YieldTypes eYield, bool bSeparatorFirst)
+{
+	if (eYield == NO_YIELD)
+	{
+		return;
+	}
+
+	if (bSeparatorFirst)
+	{
+		szBuffer.append(SEPARATOR);
+		szBuffer.append(NEWLINE);
+	}
+
+	if (pCity != NULL)
+	{
+		GAMETEXT.setYieldHelp(szBuffer, *pCity, eYield);
+	}
+	else
+	{
+		GAMETEXT.setYieldPriceHelp(szBuffer, eActivePlayer, eYield);
 	}
 
 	for (int i = 0; i < GC.getNumProfessionInfos(); ++i)
@@ -3565,26 +3673,100 @@ void CvDLLWidgetData::parseTwoCityYieldsHelp(const CvWidgetDataStruct &widgetDat
 			}
 		}
 	}
+}
 
-	szBuffer.append(SEPARATOR);
-	szBuffer.append(NEWLINE);
+//Androrc Multiple Professions per Building
+void CvDLLWidgetData::parseTwoCityYieldsHelp(const CvWidgetDataStruct &widgetDataStruct, CvWStringBuffer &szBuffer)
+{
+	YieldTypes eYield = (YieldTypes) widgetDataStruct.m_iData1;
+	YieldTypes eSecondYield = (YieldTypes) widgetDataStruct.m_iData2;
+	CvCity* pCity = gDLL->getInterfaceIFace()->getHeadSelectedCity();
+	PlayerTypes eActivePlayer = GC.getGameINLINE().getActivePlayer();
 
-	if (NULL != pCity)
+	// The city production icon only stores two yield ids (first and last
+	// profession). A meat building has six butcher professions. Collect every
+	// yield those shared indoor professions produce so the hover has prices
+	// and demand for hides, wool, downs, food, etc.
+	bool abYield[NUM_YIELD_TYPES];
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
 	{
-		GAMETEXT.setYieldHelp(szBuffer, *pCity, eSecondYield);
+		abYield[iYield] = false;
+	}
+	if (eYield != NO_YIELD && eYield != YIELD_FOOD)
+	{
+		abYield[eYield] = true;
+	}
+	if (eSecondYield != NO_YIELD && eSecondYield != YIELD_FOOD)
+	{
+		abYield[eSecondYield] = true;
 	}
 
-	for (int i = 0; i < GC.getNumProfessionInfos(); ++i)
+	std::vector<char> aSpecialBuilding(GC.getNumSpecialBuildingInfos(), 0);
+	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
 	{
-		ProfessionTypes eProfession = (ProfessionTypes) i;
-		if (GET_PLAYER(eActivePlayer).isProfessionValid(eProfession, NO_UNIT))
+		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+		if (!kProfession.isCitizen() || kProfession.isWorkPlot())
 		{
-			int iNumRequired = GET_PLAYER(eActivePlayer).getYieldEquipmentAmount(eProfession, eSecondYield);
-			if (iNumRequired > 0)
+			continue;
+		}
+		if (!GET_PLAYER(eActivePlayer).isProfessionValid(eProfession, NO_UNIT))
+		{
+			continue;
+		}
+
+		bool bMatch = false;
+		for (int iProduced = 0; iProduced < kProfession.getNumYieldsProduced(); ++iProduced)
+		{
+			const YieldTypes eProduced = (YieldTypes) kProfession.getYieldsProduced(iProduced);
+			if (eProduced != NO_YIELD && (eProduced == eYield || eProduced == eSecondYield))
 			{
-				szBuffer.append(NEWLINE);
-				szBuffer.append(gDLL->getText("TXT_KEY_YIELD_NEEDED_FOR_PROFESSION", iNumRequired, GC.getProfessionInfo(eProfession).getTextKeyWide()));
+				bMatch = true;
+				break;
 			}
+		}
+		if (bMatch)
+		{
+			const int iSpecialBuilding = kProfession.getSpecialBuilding();
+			if (iSpecialBuilding != NO_SPECIALBUILDING)
+			{
+				aSpecialBuilding[iSpecialBuilding] = 1;
+			}
+		}
+	}
+
+	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+	{
+		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+		const int iSpecialBuilding = kProfession.getSpecialBuilding();
+		if (iSpecialBuilding == NO_SPECIALBUILDING || aSpecialBuilding[iSpecialBuilding] == 0)
+		{
+			continue;
+		}
+		if (!kProfession.isCitizen() || kProfession.isWorkPlot())
+		{
+			continue;
+		}
+		if (!GET_PLAYER(eActivePlayer).isProfessionValid(eProfession, NO_UNIT))
+		{
+			continue;
+		}
+		for (int iProduced = 0; iProduced < kProfession.getNumYieldsProduced(); ++iProduced)
+		{
+			const YieldTypes eProduced = (YieldTypes) kProfession.getYieldsProduced(iProduced);
+			if (eProduced != NO_YIELD && eProduced != YIELD_FOOD)
+			{
+				abYield[eProduced] = true;
+			}
+		}
+	}
+
+	bool bFirst = true;
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		if (abYield[iYield])
+		{
+			appendYieldPriceAndDemandHelp(szBuffer, pCity, eActivePlayer, (YieldTypes) iYield, !bFirst);
+			bFirst = false;
 		}
 	}
 }
