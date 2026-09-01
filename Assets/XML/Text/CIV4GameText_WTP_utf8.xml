@@ -385,4 +385,24 @@
 		<English>Do you really want to release this Indentured Servant from service for %d1 gold?</English>
 		<German>Möchtet Ihr diesen Fronarbeiter wirklich für %d1 Gold aus seinem Dienst freikaufen?</German>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_PRICE_COMPACT_EU</Tag>
+		<English>  EU %d1/%d2</English>
+		<German>  EU %d1/%d2</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_PRICE_COMPACT_AF</Tag>
+		<English>  AF %d1/%d2</English>
+		<German>  AF %d1/%d2</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_PRICE_COMPACT_PR</Tag>
+		<English>  PR %d1/%d2</English>
+		<German>  PR %d1/%d2</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_YIELD_PRICE_COMPACT_DOMESTIC</Tag>
+		<English>  %d1@%d2[ICON_GOLD]</English>
+		<German>  %d1@%d2[ICON_GOLD]</German>
+	</TEXT>
 </Civ4GameText>
