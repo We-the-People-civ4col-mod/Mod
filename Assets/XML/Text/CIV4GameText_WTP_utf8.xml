@@ -388,21 +388,45 @@
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_PRICE_COMPACT_EU</Tag>
 		<English>  EU %d1/%d2</English>
+		<Portuguese>  EU %d1/%d2</Portuguese>
+		<French>  EU %d1/%d2</French>
 		<German>  EU %d1/%d2</German>
+		<Italian>  EU %d1/%d2</Italian>
+		<Spanish>  EU %d1/%d2</Spanish>
+		<Russian>  ЕУ %d1/%d2</Russian>
+		<Hungarian>  EU %d1/%d2</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_PRICE_COMPACT_AF</Tag>
 		<English>  AF %d1/%d2</English>
+		<Portuguese>  AF %d1/%d2</Portuguese>
+		<French>  AF %d1/%d2</French>
 		<German>  AF %d1/%d2</German>
+		<Italian>  AF %d1/%d2</Italian>
+		<Spanish>  AF %d1/%d2</Spanish>
+		<Russian>  АФ %d1/%d2</Russian>
+		<Hungarian>  AF %d1/%d2</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_PRICE_COMPACT_PR</Tag>
 		<English>  PR %d1/%d2</English>
+		<Portuguese>  PR %d1/%d2</Portuguese>
+		<French>  PR %d1/%d2</French>
 		<German>  PR %d1/%d2</German>
+		<Italian>  PR %d1/%d2</Italian>
+		<Spanish>  PR %d1/%d2</Spanish>
+		<Russian>  ПР %d1/%d2</Russian>
+		<Hungarian>  PR %d1/%d2</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_PRICE_COMPACT_DOMESTIC</Tag>
 		<English>  %d1@%d2[ICON_GOLD]</English>
+		<Portuguese>  %d1@%d2[ICON_GOLD]</Portuguese>
+		<French>  %d1@%d2[ICON_GOLD]</French>
 		<German>  %d1@%d2[ICON_GOLD]</German>
+		<Italian>  %d1@%d2[ICON_GOLD]</Italian>
+		<Spanish>  %d1@%d2[ICON_GOLD]</Spanish>
+		<Russian>  %d1@%d2[ICON_GOLD]</Russian>
+		<Hungarian>  %d1@%d2[ICON_GOLD]</Hungarian>
 	</TEXT>
 </Civ4GameText>
