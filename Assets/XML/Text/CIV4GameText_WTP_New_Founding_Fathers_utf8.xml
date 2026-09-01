@@ -86,7 +86,7 @@
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Spanish>
-		<Russian>Томас Гейтс</Russian>
+		<Russian>Сэр Томас Гейтс</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_SIR_THOMAS_GATES_PEDIA</Tag>
@@ -182,7 +182,7 @@
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Spanish>
-		<Russian>Хемфри Гилберт</Russian>
+		<Russian>Сэр Хемфри Гилберт</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_HUMPHREY_GILBERT_PEDIA</Tag>
@@ -423,7 +423,7 @@
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</Spanish>
-		<Russian>Джон Харви</Russian>
+		<Russian>Сэр Джон Харви</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_SIR_JOHN_HARVEY_PEDIA</Tag>
