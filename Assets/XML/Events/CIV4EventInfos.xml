@@ -86163,7 +86163,7 @@
 			<AdditionalEvents/>
 			<EventTimes/>
 			<ClearEvents/>
-			<PythonCallback>applyKingPleased</PythonCallback>
+			<PythonCallback>applyEccentricArchitect1</PythonCallback>
 			<PythonExpireCheck/>
 			<PythonCanDo/>
 			<PythonHelp>getHelpKingPleased</PythonHelp>
@@ -86224,7 +86224,7 @@
 			<AdditionalEvents/>
 			<EventTimes/>
 			<ClearEvents/>
-			<PythonCallback>applyFestivity1</PythonCallback>
+			<PythonCallback>applyEccentricArchitect2</PythonCallback>
 			<PythonExpireCheck/>
 			<PythonCanDo/>
 			<PythonHelp>getHelpFestivity1</PythonHelp>

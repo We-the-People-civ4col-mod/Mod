@@ -23324,7 +23324,12 @@ def canTriggerEccentricArchitect(argsList):
 	if CyGame().getGameTurn() < _getEccentricArchitectCooldown(player):
 		return False
 
-	# Start cooldown immediately after successful trigger
+	return True
+
+def _startEccentricArchitectCooldown(player):
+	if player.isNone():
+		return
+
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 
 	iCooldown = max(
@@ -23337,7 +23342,27 @@ def canTriggerEccentricArchitect(argsList):
 		CyGame().getGameTurn() + iCooldown
 	)
 
-	return True
+
+def applyEccentricArchitect1(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if player.isNone():
+		return
+
+	applyKingPleased(argsList)
+	_startEccentricArchitectCooldown(player)
+
+
+def applyEccentricArchitect2(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if player.isNone():
+		return
+
+	applyFestivity1(argsList)
+	_startEccentricArchitectCooldown(player)
 
 ######## Eccentric Architect BAILIFF ###########
  
