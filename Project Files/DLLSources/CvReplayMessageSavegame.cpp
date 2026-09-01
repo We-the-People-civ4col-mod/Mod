@@ -89,7 +89,10 @@ void CvReplayMessage::read(CvSavegameReader reader)
 		case ReplayMessageSave_Player: reader.Read(m_ePlayer); break;
 		case ReplayMessageSave_Text: reader.Read(m_szText); break;
 		case ReplayMessageSave_Color: reader.Read(m_eColor); break;
-		
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 
 		}
 		

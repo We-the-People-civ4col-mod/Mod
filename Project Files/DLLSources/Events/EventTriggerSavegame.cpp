@@ -133,6 +133,10 @@ void EventTriggeredData::read(CvSavegameReader& reader)
 		case EventTrigger_szText: reader.Read(m_szText); break;
 		case EventTrigger_szGlobalText: reader.Read(m_szGlobalText); break;
 		case EventTrigger_RandomNumberVector: reader.Read(m_RandomNumbers); break;
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 
 	}

@@ -288,6 +288,10 @@ void CvPlayerAI::read(CvSavegameReader reader)
 		case PlayerSaveAI_Emotions: reader.Read(m_em_iEmotions); break;
 		case PlayerSaveAI_StrategyStartedTurn: reader.Read(m_em_iStrategyStartedTurn); break;
 		case PlayerSaveAI_StrategyData: reader.Read(m_em_iStrategyData); break;
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 	
