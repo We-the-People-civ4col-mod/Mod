@@ -8544,6 +8544,35 @@ void CvGameTextMgr::setYieldPriceHelp(CvWStringBuffer &szBuffer, PlayerTypes ePl
 	szBuffer.append(ENDCOLR);
 }
 
+static void appendProfessionConsumedYields(CvWStringBuffer &szBuffer, const CvProfessionInfo& kProfession)
+{
+	bool bFirst = true;
+
+	for (int iConsumed = 0; iConsumed < kProfession.getNumYieldsConsumed(); ++iConsumed)
+	{
+		YieldTypes eYieldConsumed = (YieldTypes) kProfession.getYieldsConsumed(iConsumed);
+
+		if (eYieldConsumed == NO_YIELD)
+		{
+			continue;
+		}
+
+		if (bFirst)
+		{
+			szBuffer.append(L" (");
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_CONSUMED"));
+			bFirst = false;
+		}
+
+		szBuffer.append(CvWString::format(L"%c", GC.getYieldInfo(eYieldConsumed).getChar()));
+	}
+
+	if (!bFirst)
+	{
+		szBuffer.append(L")");
+	}
+}
+
 void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldTypes eYieldType)
 {
 	CxDesyncMonitor StartAsyncExecution;
