@@ -3785,13 +3785,41 @@ static void appendCompactYieldMarketHelp(CvWStringBuffer &szBuffer, CvCity* pCit
 		return;
 	}
 
+	// One line per good. The full Europe/Africa/Port Royal block wraps on this
+	// narrow production-icon hover, especially in German.
 	if (bSeparatorFirst)
 	{
-		szBuffer.append(SEPARATOR);
 		szBuffer.append(NEWLINE);
 	}
 
-	GAMETEXT.setYieldPriceHelp(szBuffer, eActivePlayer, eYield);
+	const CvYieldInfo& info = GC.getYieldInfo(eYield);
+	CvPlayer& kPlayer = GET_PLAYER(eActivePlayer);
+	szBuffer.append(CvWString::format(SETCOLR L"%c %s" ENDCOLR, TEXT_COLOR("COLOR_HIGHLIGHT_TEXT"), info.getChar(), info.getDescription()));
+
+	bool bAnyMarket = false;
+	if (info.isCargo() && kPlayer.getParent() != NO_PLAYER)
+	{
+		CvPlayer& kParent = GET_PLAYER(kPlayer.getParent());
+		if (kPlayer.isYieldEuropeTradable(eYield))
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_PRICE_COMPACT_EU", kParent.getYieldBuyPrice(eYield), kParent.getYieldSellPrice(eYield)));
+			bAnyMarket = true;
+		}
+		if (kPlayer.isYieldAfricaTradable(eYield))
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_PRICE_COMPACT_AF", kParent.getYieldAfricaBuyPrice(eYield), kParent.getYieldAfricaSellPrice(eYield)));
+			bAnyMarket = true;
+		}
+		if (kPlayer.isYieldPortRoyalTradable(eYield))
+		{
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_PRICE_COMPACT_PR", kParent.getYieldPortRoyalBuyPrice(eYield), kParent.getYieldPortRoyalSellPrice(eYield)));
+			bAnyMarket = true;
+		}
+		if (bAnyMarket)
+		{
+			szBuffer.append(CvWString::format(L"%c", GC.getSymbolID(GOLD_CHAR)));
+		}
+	}
 
 	if (pCity != NULL)
 	{
@@ -3801,8 +3829,7 @@ static void appendCompactYieldMarketHelp(CvWStringBuffer &szBuffer, CvCity* pCit
 			int iYieldDomesticPrice = pCity->getYieldBuyPrice(eYield);
 			iYieldDomesticPrice = iYieldDomesticPrice * (100 + pCity->getCityHappiness() - pCity->getCityUnHappiness()) / 100;
 			iYieldDomesticPrice = iYieldDomesticPrice * (100 + GET_PLAYER(eActivePlayer).getTotalPlayerDomesticMarketProfitModifierInPercent()) / 100;
-			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_DOMESTIC_INFO_YIELD", iYieldDomesticDemand, iYieldDomesticPrice));
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_PRICE_COMPACT_DOMESTIC", iYieldDomesticDemand, iYieldDomesticPrice));
 		}
 	}
 }
