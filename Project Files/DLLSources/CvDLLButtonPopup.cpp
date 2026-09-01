@@ -2194,6 +2194,122 @@ bool CvDLLButtonPopup::launchChooseYieldBuildPopup(CvPopup* pPopup, CvPopupInfo 
 	return (true);
 }
 
+static ProfessionTypes getProfessionForEducatedUnit(UnitTypes eUnit)
+{
+	const UnitClassTypes eUnitClass = GC.getUnitInfo(eUnit).getUnitClassType();
+	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+	{
+		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+		if (kProfession.isCitizen() && kProfession.LbD_getExpert() == eUnitClass)
+		{
+			return eProfession;
+		}
+	}
+	return NO_PROFESSION;
+}
+
+static bool isExpertForProfession(const CvUnit* pUnit, ProfessionTypes eProfession)
+{
+	if (pUnit == NULL || eProfession == NO_PROFESSION)
+	{
+		return false;
+	}
+	return GC.getProfessionInfo(eProfession).LbD_getExpert() == pUnit->getUnitClassType();
+}
+
+// Jobs a new specialist could usefully take across all towns.
+// Empty slots count. So do slots/plots already worked by a non-expert
+// (a free colonist in the carpenter shop is still a carpenter opening).
+// Shared workplaces (several butcher professions, one meat building):
+// only another specialist already working that building fills a slot.
+static int countOpenProfessionSlots(const CvPlayer& kPlayer, ProfessionTypes eProfession)
+{
+	if (eProfession == NO_PROFESSION)
+	{
+		return -1;
+	}
+
+	const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+	if (!kProfession.isCitizen())
+	{
+		return -1;
+	}
+
+	int iOpen = 0;
+	int iLoop;
+	for (CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
+	{
+		if (kProfession.isWorkPlot())
+		{
+			const YieldTypes eYield = (YieldTypes) kProfession.getYieldsProduced(0);
+
+			FOREACH(CityPlot)
+			{
+				if (eLoopCityPlot == CITY_HOME_PLOT)
+				{
+					continue;
+				}
+
+				CvPlot* pLoopPlot = pLoopCity->getCityIndexPlot(eLoopCityPlot);
+				if (pLoopPlot == NULL || !pLoopCity->canWork(pLoopPlot))
+				{
+					continue;
+				}
+
+				if (pLoopPlot->isWater() != kProfession.isWater())
+				{
+					continue;
+				}
+
+				if (eYield != NO_YIELD && pLoopPlot->calculateYield(eYield, false) <= 0)
+				{
+					continue;
+				}
+
+				CvUnit* pWorker = pLoopCity->getUnitWorkingPlot(eLoopCityPlot);
+				if (pWorker == NULL || !isExpertForProfession(pWorker, eProfession))
+				{
+					++iOpen;
+				}
+			}
+		}
+		else
+		{
+			int iSlots = pLoopCity->getNumProfessionBuildingSlots(eProfession);
+			const int iSpecialBuilding = kProfession.getSpecialBuilding();
+			if (iSpecialBuilding != NO_SPECIALBUILDING)
+			{
+				for (int i = 0; i < pLoopCity->getPopulation(); ++i)
+				{
+					CvUnit* pCitizen = pLoopCity->getPopulationUnitByIndex(i);
+					if (pCitizen == NULL || pCitizen->getProfession() == NO_PROFESSION)
+					{
+						continue;
+					}
+
+					const CvProfessionInfo& kCitizenProfession = GC.getProfessionInfo(pCitizen->getProfession());
+					if (kCitizenProfession.getSpecialBuilding() != iSpecialBuilding)
+					{
+						continue;
+					}
+
+					if (isExpertForProfession(pCitizen, pCitizen->getProfession()))
+					{
+						--iSlots;
+					}
+				}
+			}
+
+			if (iSlots > 0)
+			{
+				iOpen += iSlots;
+			}
+		}
+	}
+
+	return iOpen;
+}
+
 bool CvDLLButtonPopup::launchEducationPopup(CvPopup* pPopup, CvPopupInfo &info)
 {
 	CvPlayer& kPlayer = GET_PLAYER(GC.getGameINLINE().getActivePlayer());
@@ -2222,6 +2338,11 @@ bool CvDLLButtonPopup::launchEducationPopup(CvPopup* pPopup, CvPopupInfo &info)
 		if (iPrice >= 0 && iPrice <= kPlayer.getGold())
 		{
 			szText.Format(L"%s", kUnit.getDescription());
+			const int iOpenSlots = countOpenProfessionSlots(kPlayer, getProfessionForEducatedUnit(eUnitType));
+			if (iOpenSlots >= 0)
+			{
+				szText += CvWString::format(L" (%d)", iOpenSlots);
+			}
 			if (iPrice > 0)
 			{
 				szText += CvWString::format(L" (%d%c)", iPrice, GC.getSymbolID(GOLD_CHAR));
