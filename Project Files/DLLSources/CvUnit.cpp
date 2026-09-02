@@ -630,6 +630,10 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 	oldUnits.erase(oldUnits.begin(), oldUnits.end());
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 
+	std::vector<UnitTypes> aeCapturedYieldCargoTypes;
+	std::vector<ProfessionTypes> aeCapturedYieldCargoProfessions;
+	std::vector<int> aiCapturedYieldCargoStored;
+
 	while (pUnitNode != NULL)
 	{
 		oldUnits.push_back(pUnitNode->m_data);
@@ -647,6 +651,32 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 				//save old units because kill will clear the static list
 				std::vector<IDInfo> tempUnits = oldUnits;
 
+				// Preserve yield cargo data of a captured land transport so it can
+				// be recreated on the replacement transport.
+				if (getDomainType() == DOMAIN_LAND &&
+					cargoSpace() > 0 &&
+					pLoopUnit->isYield())
+				{
+					if (bDelay)
+					{
+						continue;
+					}
+
+					if (getCapturingPlayer() != NO_PLAYER)
+					{
+						aeCapturedYieldCargoTypes.push_back(pLoopUnit->getUnitType());
+						aeCapturedYieldCargoProfessions.push_back(pLoopUnit->getProfession());
+						aiCapturedYieldCargoStored.push_back(pLoopUnit->getYieldStored());
+
+						pLoopUnit->setCapturingPlayer(NO_PLAYER);
+						pLoopUnit->setTransportUnit(NULL, false);
+						pLoopUnit->kill(false, pAttacker);
+
+						oldUnits = tempUnits;
+						continue;
+					}
+				}
+				
 				if (pPlot->isValidDomainForLocation(*pLoopUnit))
 				{
 					pLoopUnit->setCapturingPlayer(getCapturingPlayer());
@@ -749,6 +779,23 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 
 				if (bAlive)
 				{
+					for (uint iYieldCargo = 0; iYieldCargo < aeCapturedYieldCargoTypes.size(); ++iYieldCargo)
+					{
+						CvUnit* pCapturedYieldCargo = GET_PLAYER(eCapturingPlayer).initUnit(
+							aeCapturedYieldCargoTypes[iYieldCargo],
+							aeCapturedYieldCargoProfessions[iYieldCargo],
+							pPlot->getX_INLINE(),
+							pPlot->getY_INLINE(),
+							NO_UNITAI,
+							NO_DIRECTION,
+							aiCapturedYieldCargoStored[iYieldCargo]);
+
+						if (pCapturedYieldCargo != NULL)
+						{
+							pCapturedYieldCargo->setTransportUnit(pkCapturedUnit);
+						}
+					}
+
 					pkCapturedUnit->addDamageRandom(10, 75, 5);
 					CvWString szBuffer;
 					szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_UNIT", GC.getUnitInfo(eCaptureUnitType).getTextKeyWide());
@@ -1969,7 +2016,15 @@ void CvUnit::updateCombat(bool bQuick)
 							{
 								if (pLoopUnit->getTransportUnit()->getDomainType() != DOMAIN_SEA)
 								{
-									pLoopUnit->kill(false);
+									CvUnit* pTransportUnit = pLoopUnit->getTransportUnit();
+
+									if (!(pLoopUnit->isYield() &&
+										pTransportUnit->getDomainType() == DOMAIN_LAND &&
+										pTransportUnit->cargoSpace() > 0 &&
+										pTransportUnit->getCapturingPlayer() == getOwnerINLINE()))
+									{
+										pLoopUnit->kill(false);
+									}
 								}
 							}
 						}
