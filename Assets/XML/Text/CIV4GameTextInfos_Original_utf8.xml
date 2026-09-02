@@ -9989,6 +9989,7 @@
 		<German>Pfeil nach oben</German>
 		<Italian>Freccia su</Italian>
 		<Spanish>Flecha arriba</Spanish>
+		<Hungarian>Kurzornyíl fel</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_PAGE_UP</Tag>
@@ -10007,6 +10008,7 @@
 		<German>Pfeil nach links</German>
 		<Italian>Freccia sinistra</Italian>
 		<Spanish>Flecha izq.</Spanish>
+		<Hungarian>Kurzornyíl bal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_RIGHT_ARROW</Tag>
@@ -10016,6 +10018,7 @@
 		<German>Pfeil nach rechts</German>
 		<Italian>Freccia destra</Italian>
 		<Spanish>Flecha der.</Spanish>
+		<Hungarian>Kurzornyíl jobb</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_END_KEY</Tag>
@@ -10025,6 +10028,7 @@
 		<German>Ende</German>
 		<Italian>Fine</Italian>
 		<Spanish>Fin</Spanish>
+		<Hungarian>End</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_DOWN_ARROW</Tag>
@@ -10034,6 +10038,7 @@
 		<German>Pfeil nach unten</German>
 		<Italian>Freccia giù</Italian>
 		<Spanish>Flecha abajo</Spanish>
+		<Hungarian>Kurzornyíl le</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_PAGE_DOWN</Tag>
@@ -10070,6 +10075,7 @@
 		<German>Alle Warenzeichen sind Eigentum der jeweiligen Inhaber.</German>
 		<Italian>Tutti i marchi registrati sono proprietà dei rispettivi detentori.</Italian>
 		<Spanish>Todas las marcas comerciales pertenecen a sus respectivos titulares.</Spanish>
+		<Hungarian>Minden védjegy a megfelelő tulajdonos tulajdona.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_UPDATE_TITLE</Tag>
@@ -10079,6 +10085,7 @@
 		<German>Kartentransfer</German>
 		<Italian>Trasferimento mappa</Italian>
 		<Spanish>Transferencia de mapa</Spanish>
+		<Hungarian>Térképátvitel</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_UPDATE_SEND</Tag>
@@ -10088,6 +10095,7 @@
 		<German>KARTE WIRD GESENDET ...</German>
 		<Italian>INVIO MAPPA IN CORSO...</Italian>
 		<Spanish>ENVIANDO MAPA...</Spanish>
+		<Hungarian>Térkép küldése...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_UPDATE_RECV</Tag>
@@ -10097,6 +10105,7 @@
 		<German>KARTE WIRD ERHALTEN ...</German>
 		<Italian>RICEZIONE MAPPA IN CORSO...</Italian>
 		<Spanish>RECIBIENDO MAPA...</Spanish>
+		<Hungarian>Térkép fogadása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_NAME_TAG</Tag>
@@ -10106,6 +10115,7 @@
 		<German>Kartenname : %s1_Name</German>
 		<Italian>Nome mappa : %s1_Name</Italian>
 		<Spanish>Nombre del mapa : %s1_Name</Spanish>
+		<Hungarian>Térkép neve: %s1_Name</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOWNLOAD_MAP_WAIT</Tag>
@@ -10115,6 +10125,7 @@
 		<German>Warten, dass Peers Kartentranfer abschließen</German>
 		<Italian>In attesa che i peer completino il trasferimento della mappa</Italian>
 		<Spanish>Esperando a que los interlocutores completen la transferencia del mapa</Spanish>
+		<Hungarian>A peerre várunk a térképátvitel befejezéséhez</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SEND_MAP_WAIT</Tag>
@@ -10124,6 +10135,7 @@
 		<German>Karte wird an Clients gesendet. Bitte warten ...</German>
 		<Italian>Invio della mappa ai client in corso. Attendere...</Italian>
 		<Spanish>Enviando el mapa a los clientes. Un momento...</Spanish>
+		<Hungarian>Térkép küldése a klienseknek. Kis türelmet...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INVALID_CAPTURE_TITLE</Tag>
@@ -10133,6 +10145,7 @@
 		<German>Unzulässiges Gerät</German>
 		<Italian>Dispositivo non valido</Italian>
 		<Spanish>Dispositivo no válido</Spanish>
+		<Hungarian>Érvénytelen eszköz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INVALID_CAPTURE_DESC</Tag>
@@ -10142,6 +10155,7 @@
 		<German>Sie haben ein unbrauchbares Sprachaufzeichnungsgerät ausgewählt. Sprachaufzeichnung deaktiviert.</German>
 		<Italian>Hai selezionato un dispositivo di cattura vocale inutilizzabile. Cattura vocale disabilitata.</Italian>
 		<Spanish>Ha seleccionado un dispositivo de captura de voz inutilizado. Captura de voz desactivada.</Spanish>
+		<Hungarian>Egy nem használható hanglejátszó eszközt választottál. Hanglejátszás letiltva.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INVALID_PLAYBACK_TITLE</Tag>
@@ -10170,6 +10184,7 @@
 		<Italian>Mono</Italian>
 		<Spanish>Mono</Spanish>
 		<Russian>Моно</Russian>
+		<Hungarian>Monó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTION_SOUND_STEREO</Tag>
@@ -10180,6 +10195,7 @@
 		<Italian>Stereo</Italian>
 		<Spanish>Estereo</Spanish>
 		<Russian>Стерео</Russian>
+		<Hungarian>Sztereó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_STRATEGY_DELETE_LINES</Tag>
@@ -10189,6 +10205,7 @@
 		<German>Alle Linien löschen</German>
 		<Italian>Elimina tutte le linee</Italian>
 		<Spanish>Borrar todas las líneas</Spanish>
+		<Hungarian>Minden vonal törlése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_DISCONNECT</Tag>
@@ -10198,6 +10215,7 @@
 		<German>Wir haben die Verbindung zum PitBoss verloren. Zurück zum Hauptmenü ...</German>
 		<Italian>Abbiamo perso la connessione a PitBoss!  Ritorno al menu principale...</Italian>
 		<Spanish>Se ha perdido la conexión con el Pitboss. Saliendo al menú principal...</Spanish>
+		<Hungarian>Megszakadt a kapcsolat a PitBoss-szal! Kilépés a főmenübe...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PLAYER_OOS</Tag>
@@ -10208,6 +10226,7 @@
 		<Italian>Valori OOS: Sync=%d1_Num; Opzioni=%d2_Num</Italian>
 		<Spanish>Valores OOS: Sincronización=%d1_Num; Opciones=%d2_Num</Spanish>
 		<Russian>Значения рассинхронизации: Sync=%d1_Num; Options=%d2_Num</Russian>
+		<Hungarian>OOS értékek: Sync=%d1_Num; Beállítások=%d2_Num</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OOS_TITLE</Tag>
@@ -10218,6 +10237,7 @@
 		<Italian>Il gioco non è in sincronia.[NEWLINE]Controlla i valori OOS (Out Of Synch) vicini ai punteggi.[NEWLINE]Il giocatore con i valori diversi dovrà riconnettersi per risincronizzarsi.</Italian>
 		<Spanish>El juego se ha desincronizado.[NEWLINE]Consulta los valores OOS de falta de sincronización (junto a la puntuación).[NEWLINE]El jugador que tenga unos valores diferentes tendrá que volver a conectar para poder sincronizarse.</Spanish>
 		<Russian>Игра рассинхронизировалась.[NEWLINE]Проверьте значения рассинхронизации (рядом со счетом).[NEWLINE]Игрок с другими значениями должен повторно подключиться, чтобы выполнить повторную синхронизацию.</Russian>
+		<Hungarian>A játék elvesztette a szinkront (OOS). [NEWLINE]Kérlek, ellenőrizd az OOS értékeket (a pontszám mellett)!Az eltérő értékű játékosnak újra kell kapcsolódnia az újraszinkronizáláshoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INVALID_LOGIN_TITLE</Tag>
@@ -10227,6 +10247,7 @@
 		<German>Ungültiger Login-Name</German>
 		<Italian>Nome di login non valido</Italian>
 		<Spanish>Nombre de inicio de sesión no válido</Spanish>
+		<Hungarian>Érvénytelen felhasználói név</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INVALID_LOGIN_DESC</Tag>
@@ -10236,6 +10257,7 @@
 		<German>Nicknames dürfen nicht mit einer Zahl oder den Zeichen '$', '#', '%%', '&amp;' und '@' beginnen</German>
 		<Italian>Il nickname non può iniziare con un numero, '$', '#', '%%', '&amp;', o '@'</Italian>
 		<Spanish>Los apodos no pueden empezar por un número, "$", "#", "%%", "&amp;" o "@".</Spanish>
+		<Hungarian>A felhasználói nevek nem kezdődhetnek számmal, ill. '$', '#', '%%', '&amp;', vagy '@' karakterrel</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MEMBERS_IGNORE_MEMBER</Tag>
@@ -10245,6 +10267,7 @@
 		<German>Benutzer ignorieren</German>
 		<Italian>Ignora utente</Italian>
 		<Spanish>Ignorar al usuario</Spanish>
+		<Hungarian>Felhasználó mellőzése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MEMBERS_UNIGNORE_MEMBER</Tag>
@@ -10254,6 +10277,7 @@
 		<German>Benutzer nicht mehr ignorieren</German>
 		<Italian>Annulla ignora utente</Italian>
 		<Spanish>Dejar de ignorar al usuario</Spanish>
+		<Hungarian>Felhasználó mellőzésének felfüggesztése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_KICKED</Tag>
@@ -10263,6 +10287,7 @@
 		<German>Wir werden aus dem Spiel geworfen! Zurück zum Hauptmenü ...</German>
 		<Italian>Siamo stati cacciati dal gioco! Ritorno al menu principale...</Italian>
 		<Spanish>Te están expulsando de la partida. Saliendo al menú principal...</Spanish>
+		<Hungarian>Kirúgtak minket a játékból! Kilépés a főmenübe...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOGIN_TIMEOUT_TITLE</Tag>
@@ -10272,6 +10297,7 @@
 		<German>Login-Fehler</German>
 		<Italian>Errore di login</Italian>
 		<Spanish>Error de inicio de sesión</Spanish>
+		<Hungarian>Belépési hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOGIN_TIMEOUT_DESC</Tag>
@@ -10281,6 +10307,7 @@
 		<German>Bei unserem Login-Versuch ist die Zeit abgelaufen. Der Authentifizierungsserver ist vielleicht nicht erreichbar.</German>
 		<Italian>Tentativo di login scaduto. Il server di autenticazione potrebbe essere disattivato.</Italian>
 		<Spanish>Agotado el tiempo de inicio de sesión. Puede que el servidor de autenticación no esté disponible.</Spanish>
+		<Hungarian>Időtúllépés a kapcsolódási kísérletünk során. Az érvényesítő szerver lehetg, hogy nem üzemel.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BAD_NEW_PASSWORD_TITLE</Tag>
@@ -10290,6 +10317,7 @@
 		<German>Falsches Passwort</German>
 		<Italian>Password non valida</Italian>
 		<Spanish>Contraseña errónea</Spanish>
+		<Hungarian>Hibás jelszó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BAD_NEW_PASSWORD_DESC</Tag>
@@ -10299,6 +10327,7 @@
 		<German>Das Passwort für die angegebene E-Mail-Adresse ist nicht korrekt.</German>
 		<Italian>La password per l'indirizzo e-mail fornito non è valida.</Italian>
 		<Spanish>La contraseña para la dirección de e-mail proporcionada no es correcta.</Spanish>
+		<Hungarian>A megadott e-mail címhez tartoz jelszó hibás.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NICKNAME_INUSE_TITLE</Tag>
@@ -10308,6 +10337,7 @@
 		<German>Falscher Login</German>
 		<Italian>Login non valido</Italian>
 		<Spanish>Inicio de sesión erróneo</Spanish>
+		<Hungarian>Hibás felhasználói név</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NICKNAME_INUSE_DESC</Tag>
@@ -10317,6 +10347,7 @@
 		<German>Dieser Login-Name wird bereits von einem anderen Account verwendet.</German>
 		<Italian>Questo nome di login è già stato registrato da un altro account.</Italian>
 		<Spanish>Este nombre de inicio de sesión ya se está utilizando con otra cuenta.</Spanish>
+		<Hungarian>Ez a felhasználói név már foglalt egy másik fiók számára.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDY_LIST_STATUS_NA</Tag>
@@ -10326,6 +10357,7 @@
 		<German>Nicht verfügbar</German>
 		<Italian>Non disponibile</Italian>
 		<Spanish>No disponible</Spanish>
+		<Hungarian>Nem elérhető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDY_LIST_STATUS_STAGING</Tag>
@@ -10335,6 +10367,7 @@
 		<German>Staging</German>
 		<Italian>In allestimento</Italian>
 		<Spanish>En comunicaciones</Spanish>
+		<Hungarian>Várakozik</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDY_LIST_STATUS_PLAYING</Tag>
@@ -10344,6 +10377,7 @@
 		<German>Spielt</German>
 		<Italian>In gioco</Italian>
 		<Spanish>Jugando</Spanish>
+		<Hungarian>Játszik</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDY_LIST_STATUS_OFFLINE</Tag>
@@ -10362,6 +10396,7 @@
 		<German>[COLOR_WARNING_TEXT]Kann ab einem Breitengrad von %d1 bauen[COLOR_REVERT]</German>
 		<Italian>[COLOR_WARNING_TEXT]Può costruire alla latitudine minima di %d1 gradi[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]Se puede construir a una latitud mínima de %d1 grados.[COLOR_REVERT]</Spanish>
+		<Hungarian>[COLOR_WARNING_TEXT]Minimálisan %d1 szélességi fok kell a megépítéséhez[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAX_LATITUDE</Tag>
@@ -10371,6 +10406,7 @@
 		<German>[COLOR_WARNING_TEXT]Kann bis zu einem Breitengrad von %d1 bauen[COLOR_REVERT]</German>
 		<Italian>[COLOR_WARNING_TEXT]Può costruire alla latitudine massima di %d1 gradi[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]Se puede construir a una latitud máxima de %d1 grados.[COLOR_REVERT]</Spanish>
+		<Hungarian>[COLOR_WARNING_TEXT]Maximum %d1 szélességi fokig lehet megépíteni[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CHANGE_PRODUCTION</Tag>
@@ -10381,6 +10417,7 @@
 		<Italian>Cambia produzione</Italian>
 		<Spanish>Cambiar producción</Spanish>
 		<Russian>Изменить производство</Russian>
+		<Hungarian>Termelés Megváltoztatása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HURRY_PRODUCTION</Tag>
@@ -10391,6 +10428,7 @@
 		<Italian>Produzione accelerata</Italian>
 		<Spanish>Acelerar la producción</Spanish>
 		<Russian>Ускорить производство</Russian>
+		<Hungarian>Termelés Felgyorsítása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HURRY_PRODUCTION_GOLD</Tag>
@@ -10419,6 +10457,7 @@
 		<Italian>Gruppo unità (%d1) :</Italian>
 		<Spanish>Apilamiento (%d1) :</Spanish>
 		<Russian>Группа юнитов (%d1) :</Russian>
+		<Hungarian>Egységcsoportosítás (%d1):</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAN_MOVE_IMPASSABLE</Tag>
@@ -10428,6 +10467,7 @@
 		<German>[ICON_BULLET]Kann sich durch unpassierbares Gelände bewegen</German>
 		<Italian>[ICON_BULLET]Può attraversare il terreno invalicabile</Italian>
 		<Spanish>[ICON_BULLET]Puede moverse por terreno infranqueable</Spanish>
+		<Hungarian>[ICON_BULLET]Áthatolhatatlan terepen is mozoghat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOADSAVE_ALL_FILES</Tag>
@@ -10437,6 +10477,7 @@
 		<German>Alle Dateien (*.*)</German>
 		<Italian>Tutti i file (*.*)</Italian>
 		<Spanish>Todos los archivos (*.*)</Spanish>
+		<Hungarian>Minden fájl (*.*)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOADSAVE_FILE_NOT_EXIST</Tag>
@@ -10446,6 +10487,7 @@
 		<German>Die angegebene Datei existiert nicht.[NEWLINE]Bitte wählen Sie einen gültigen Dateinamen.</German>
 		<Italian>Il file specificato non esiste.[NEWLINE]Seleziona un nome di file valido.</Italian>
 		<Spanish>El archivo indicado no existe.[NEWLINE]Selecciona un nombre de archivo válido.</Spanish>
+		<Hungarian>A megadott fájl nem található.[NEWLINE]Kérlek, válassz egy érvényes fájlnevet!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOADSAVE_FILE_CANT_OPEN</Tag>
@@ -10455,6 +10497,7 @@
 		<German>Fehler beim Öffnen der Datei %s1</German>
 		<Italian>Errore nell'apertura del file %s1</Italian>
 		<Spanish>Error al abrir el archivo %s1</Spanish>
+		<Hungarian>Hiba %s1 megnyitásakor</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOADSAVE_FILE_CANT_CREATE</Tag>
@@ -10464,6 +10507,7 @@
 		<German>Fehler beim Erstellen der Datei %s1</German>
 		<Italian>Errore nella creazione del file %s1</Italian>
 		<Spanish>Error al crear el archivo %s1</Spanish>
+		<Hungarian>Hiba %s1 fájl létrehozásakor</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOADSAVE_FILE_PROTECTED</Tag>
@@ -10473,6 +10517,7 @@
 		<German>Der von Ihnen gewählte Spielstand ist schreibgeschützt, um sicherzustellen, dass die Daten in Ihrem Mod-Verzeichnis nicht verändert wurden.</German>
 		<Italian>Il file di salvataggio selezionato è protetto, in modo da assicurarsi che la cartella dei mod non venga modificata.</Italian>
 		<Spanish>El archivo guardado que has seleccionado está protegido para asegurar que no se modifiquen los parámetros de la carpeta mod.</Spanish>
+		<Hungarian>Az általad kiválasztott fájl védett, nehogy a mod mappádban lévő anyagok megváltozzanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WRONG_VERSION</Tag>
@@ -10482,6 +10527,7 @@
 		<German>Version %d1 kann nicht geladen werden, es wurde Version %d2 oder eine frührere Version erwartet.</German>
 		<Italian>Impossibile caricare la versione %d1, prevista la versione %d2 o inferiore</Italian>
 		<Spanish>No se puede cargar la versión %d1. Es necesaria la %d2 o inferior.</Spanish>
+		<Hungarian>%d1 verziót nem lehet betölteni, a megengedett verzió: %d2 vagy alacsonyabb</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNCOMPRESS_FAILED</Tag>
@@ -10491,6 +10537,7 @@
 		<German>Die Spieldaten konnten nicht dekomprimiert werden</German>
 		<Italian>Impossibile decomprimere i dati di gioco</Italian>
 		<Spanish>No se han podido descomprimir los datos del juego</Spanish>
+		<Hungarian>Hiba a játékadatok kitömörítésekor</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMPRESS_FAILED</Tag>
@@ -10500,6 +10547,7 @@
 		<German>Die Spieldaten konnten nicht komprimiert werden</German>
 		<Italian>Impossibile comprimere i dati di gioco</Italian>
 		<Spanish>No se han podido comprimir los datos del juego</Spanish>
+		<Hungarian>Hiba a játékadatok tömörítésekor</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOAD_ERROR</Tag>
@@ -10509,6 +10557,7 @@
 		<German>Ladefehler</German>
 		<Italian>Errore di caricamento</Italian>
 		<Spanish>Error de carga</Spanish>
+		<Hungarian>Betöltési hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SAVE_ERROR</Tag>
@@ -10518,6 +10567,7 @@
 		<German>Speicherfehler</German>
 		<Italian>Errore di salvataggio</Italian>
 		<Spanish>Error de guardado</Spanish>
+		<Hungarian>Mentési hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_BUDDY_LIST_STAGING_LOC</Tag>
@@ -10527,6 +10577,7 @@
 		<German>Im Staging Room : "%s1_GameName"</German>
 		<Italian>Nella stanza d'allestimento : "%s1_GameName"</Italian>
 		<Spanish>En la sala de comunicaciones : "%s1_GameName"</Spanish>
+		<Hungarian>Az előkészítő szobában: %s1_GameName"</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_BUDDY_LIST_PLAYING_LOC</Tag>
@@ -10536,6 +10587,7 @@
 		<German>Spielt : "%s1_GameName"</German>
 		<Italian>Nella partita : "%s1_GameName"</Italian>
 		<Spanish>Jugando a la partida : "%s1_GameName"</Spanish>
+		<Hungarian>Játszik: "%s1_GameName"</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_SEND</Tag>
@@ -10545,6 +10597,7 @@
 		<German>Senden</German>
 		<Italian>Invia</Italian>
 		<Spanish>Enviar</Spanish>
+		<Hungarian>Küldés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_CLIMATE</Tag>
@@ -10555,6 +10608,7 @@
 		<Italian>Clima :</Italian>
 		<Spanish>Clima :</Spanish>
 		<Russian>Климат :</Russian>
+		<Hungarian>Éghajlat :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SEALEVEL</Tag>
@@ -10565,6 +10619,7 @@
 		<Italian>Livello del mare :</Italian>
 		<Spanish>Nivel del mar :</Spanish>
 		<Russian>Уровень моря :</Russian>
+		<Hungarian>Tengerarány :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_NUM_TURNS</Tag>
@@ -10575,6 +10630,7 @@
 		<Italian>%d1_Num [NUM1:turno:turni]</Italian>
 		<Spanish>%d1_Num [NUM1:turno:turnos]</Spanish>
 		<Russian>%d1_Num [NUM1:хода:ходов]</Russian>
+		<Hungarian>%d1_Num kör</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_CITY_DEFENSE</Tag>
@@ -10584,6 +10640,7 @@
 		<German>%F1-Verteidigung : %D2%%</German>
 		<Italian>%F1 Difesa : %D2%%</Italian>
 		<Spanish>%F1 Defensa : %D2%%</Spanish>
+		<Hungarian>%F1 Védelem: %D2%%</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_PLAYERS_SIGN_DEFENSIVE_PACT</Tag>
@@ -10594,6 +10651,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] firma un'alleanza difensiva con [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] ha firmado un acuerdo de protección con [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] подписывает оборонительный договор с [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] és [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] Védelmi Szerződést kötöttek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_EMAIL_SUBJECT</Tag>
@@ -10603,6 +10661,7 @@
 		<German>Sie sind an der Reihe! (%s1_Name - %s2_Year)</German>
 		<Italian>È il tuo turno! (%s1_Name - %s2_Year)</Italian>
 		<Spanish>¡Es vuestro turno! (%s1_Name - %s2_Year)</Spanish>
+		<Hungarian>A te köröd jön! (%s1_Name - %s2_Year)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_EMAIL_BODY</Tag>
@@ -10612,6 +10671,7 @@
 		<German>Sie können jetzt im Civ4-Pitboss-Spiel "%s1_Name" Ihre Runde spielen!</German>
 		<Italian>È giunto il tuo turno nella modalità Pitboss di Civ4, "%s1_Name"!</Italian>
 		<Spanish>Ya podéis llevar a cabo vuestro turno en la partida "%s1_Name" del Pitboss de Civilization 4.</Spanish>
+		<Hungarian>Rajtad a sor a Civ4 Pitboss játékban, "%s1_Name"!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_EMAIL_TIMER</Tag>
@@ -10621,6 +10681,7 @@
 		<German>Ihre Runde läuft in %d1_timer Stunden ab.</German>
 		<Italian>Il tuo turno scadrà in %d1_timer ore.</Italian>
 		<Spanish>Vuestro turno expirará en %d1_timer [NUM1:hora:horas].</Spanish>
+		<Hungarian>A köröd %d1_timer óra múlva jár le.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_MOTD_TITLE</Tag>
@@ -10630,6 +10691,7 @@
 		<German>Nachricht des Tages</German>
 		<Italian>Messaggio del giorno</Italian>
 		<Spanish>Mensaje del día</Spanish>
+		<Hungarian>A nap üzenete</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_MOTD_TOGGLE</Tag>
@@ -10639,6 +10701,7 @@
 		<German>Nachricht des Tages anzeigen</German>
 		<Italian>Mostra il messaggio del giorno</Italian>
 		<Spanish>Mostrar mensaje del día</Spanish>
+		<Hungarian>A nap üzenetének megjelenítése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_MOTD_HELP</Tag>
@@ -10648,6 +10711,7 @@
 		<German>Aktuelle Nachricht des Tages</German>
 		<Italian>Attuale messaggio del giorno</Italian>
 		<Spanish>Mensaje del día de hoy.</Spanish>
+		<Hungarian>A mai nap üzenete</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_MOTD_CHANGE</Tag>
@@ -10657,6 +10721,7 @@
 		<German>NdT ändern</German>
 		<Italian>Cambia messaggio del giorno</Italian>
 		<Spanish>Cambiar mensaje</Spanish>
+		<Hungarian>NÜ megváltoztatása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_MOTD_CHANGE_HELP</Tag>
@@ -10666,6 +10731,7 @@
 		<German>Nachricht des Tages ändern</German>
 		<Italian>Modifica messaggio del giorno</Italian>
 		<Spanish>Modifica el mensaje del día.</Spanish>
+		<Hungarian>A nap üzenetének megváltoztatása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_CHAT_TITLE</Tag>
@@ -10675,6 +10741,7 @@
 		<German>Chat-Dialog</German>
 		<Italian>Finestra di chat</Italian>
 		<Spanish>Diálogo del chat</Spanish>
+		<Hungarian>Csevegés párbeszédablak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_CHAT_LOG_HELP</Tag>
@@ -10684,6 +10751,7 @@
 		<German>Übersicht der gesendeten und erhaltenen Chat-Nachrichten</German>
 		<Italian>Registro dei messaggi di chat inviati e ricevuti</Italian>
 		<Spanish>Registro de mensajes de chat enviados y recibidos.</Spanish>
+		<Hungarian>A küldött és fogadott üzenetek naplózása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_CHAT_EDIT_HELP</Tag>
@@ -10693,6 +10761,7 @@
 		<German>Chat-Nachrichten hier eingeben</German>
 		<Italian>Inserisci qui i tuoi messaggi di chat</Italian>
 		<Spanish>Introduce aquí los mensajes de chat.</Spanish>
+		<Hungarian>Írd be ide az üzenetedet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_MOTD_POPUP_DESC</Tag>
@@ -10702,6 +10771,7 @@
 		<German>Die Nachricht des Tages anzeigen</German>
 		<Italian>Fornisci un messaggio del giorno</Italian>
 		<Spanish>Escribe un mensaje del día.</Spanish>
+		<Hungarian>Megjeleníti a nap üzenetét</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_MOTD_POPUP_TITLE</Tag>
@@ -10711,6 +10781,7 @@
 		<German>Nachricht des Tages</German>
 		<Italian>Messaggio del giorno</Italian>
 		<Spanish>Mensaje del día</Spanish>
+		<Hungarian>A nap üzenete</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SMTP_HEADER</Tag>
@@ -10720,6 +10791,7 @@
 		<German>SMTP-Info für Erinnerungsmails angeben</German>
 		<Italian>Fornisci delle informazioni SMTP per inviare delle comunicazioni e-mail</Italian>
 		<Spanish>Proporcionar información del SMTP para enviar los e-mails de recordatorio</Spanish>
+		<Hungarian>Megadja az SMTP-információkat emlékeztető e-mailek küldéséhez</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SMTP_HOST</Tag>
@@ -10729,6 +10801,7 @@
 		<German>SMTP-Host :</German>
 		<Italian>Host SMTP :</Italian>
 		<Spanish>Anfitrión SMTP :</Spanish>
+		<Hungarian>SMTP kiszolgáló: </Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SMTP_HOST_HELP</Tag>
@@ -10738,6 +10811,7 @@
 		<German>Name der SMTP-Serveradresse oder Domäne</German>
 		<Italian>Indirizzo del server SMTP o nome del dominio</Italian>
 		<Spanish>Nombre de dominio o dirección del servidor SMTP</Spanish>
+		<Hungarian>SMTP szerver címe vagy doménneve</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SMTP_LOGIN</Tag>
@@ -10747,6 +10821,7 @@
 		<German>SMTP-Login</German>
 		<Italian>Login SMTP :</Italian>
 		<Spanish>Inicio de sesión SMTP :</Spanish>
+		<Hungarian>SMTP felh. név:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SMTP_LOGIN_HELP</Tag>
@@ -10756,6 +10831,7 @@
 		<German>SMTP-Server-Login</German>
 		<Italian>Login del server SMTP</Italian>
 		<Spanish>Inicio de sesión del servidor SMTP</Spanish>
+		<Hungarian>SMTP szerver bejelentkezési neve</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SMTP_PASSWORD</Tag>
@@ -10765,6 +10841,7 @@
 		<German>SMPT-Passwort</German>
 		<Italian>Password SMTP :</Italian>
 		<Spanish>Contraseña SMTP :</Spanish>
+		<Hungarian>SMTP jelszó :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SMTP_PASSWORD_HELP</Tag>
@@ -10774,6 +10851,7 @@
 		<German>SMTP-Server-Passwort</German>
 		<Italian>Password del server SMTP</Italian>
 		<Spanish>Contraseña del servidor SMTP</Spanish>
+		<Hungarian>SMTP szerver jelszava</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_DIRECTIP</Tag>
@@ -10783,6 +10861,7 @@
 		<German>Direkte IP</German>
 		<Italian>IP diretto</Italian>
 		<Spanish>IP directa</Spanish>
+		<Hungarian>Közvetlen IP</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_LAN</Tag>
@@ -10810,6 +10889,7 @@
 		<German>Sie müssen das neueste Update installieren, um fortzufahren</German>
 		<Italian>Devi installare l'ultimo aggiornamento per continuare</Italian>
 		<Spanish>Debes instalar la actualización más reciente para continuar</Spanish>
+		<Hungarian>A folytatáshoz telepítened kell a legutolsó frissítést</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PATCH_REQUIRED_TITLE</Tag>
@@ -10819,6 +10899,7 @@
 		<German>Patch benötigt</German>
 		<Italian>Aggiornamento necessario</Italian>
 		<Spanish>Se requiere parche</Spanish>
+		<Hungarian>Patch szükséges</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PATCH_DOWNLOAD_ERROR_DESC</Tag>
@@ -10828,6 +10909,7 @@
 		<German>Fehler beim Patch-Download</German>
 		<Italian>Errore nello scaricamento dell'aggiornamento</Italian>
 		<Spanish>Error al descargar el parche</Spanish>
+		<Hungarian>Hiba a patch letöltése közben</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PATCH_DOWNLOAD_ERROR_TITLE</Tag>
@@ -10837,6 +10919,7 @@
 		<German>Download-Fehler</German>
 		<Italian>Errore di scaricamento</Italian>
 		<Spanish>Error de descarga</Spanish>
+		<Hungarian>Letöltési hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PATCH_COMPLETE_DESC</Tag>
@@ -10846,6 +10929,7 @@
 		<German>Wählen Sie 'OK', um das Programm zu schließen und den Patch zu installieren</German>
 		<Italian>Premi OK per chiudere e installare l'aggiornamento</Italian>
 		<Spanish>Pulsa "Aceptar" para salir e instalar el parche</Spanish>
+		<Hungarian>Kattints a Rendben gombra a leállításhoz és a patch telepítéséhez</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PATCH_COMPLETE_TITLE</Tag>
@@ -10855,6 +10939,7 @@
 		<German>Download abgeschlossen!</German>
 		<Italian>Scaricamento completato!</Italian>
 		<Spanish>¡Descarga completa!</Spanish>
+		<Hungarian>Letöltés befejezve!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PATCH_CHECK_ERROR_DESC</Tag>
@@ -10864,6 +10949,7 @@
 		<German>Fehler bei der Suche nach Updates</German>
 		<Italian>Errore nella ricerca degli aggiornamenti</Italian>
 		<Spanish>Error al buscar actualizaciones</Spanish>
+		<Hungarian>Hiba a frissítések keresése közben</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PATCH_CHECK_ERROR_TITLE</Tag>
@@ -10873,6 +10959,7 @@
 		<German>Aktualisierungsfehler</German>
 		<Italian>Errore di aggiornamento</Italian>
 		<Spanish>Error de actualización</Spanish>
+		<Hungarian>Frissítési hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_NEWGAME</Tag>
@@ -10883,6 +10970,7 @@
 		<Italian>Nuova partita</Italian>
 		<Spanish>Nueva partida</Spanish>
 		<Russian>Новая игра</Russian>
+		<Hungarian>Új játék</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_LOADGAME</Tag>
@@ -10893,6 +10981,7 @@
 		<Italian>Carica partita</Italian>
 		<Spanish>Cargar partida</Spanish>
 		<Russian>Загрузить игру</Russian>
+		<Hungarian>Játék betöltése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PATCH_AVAILABLE_TITLE</Tag>
@@ -10902,6 +10991,7 @@
 		<German>Patch verfügbar</German>
 		<Italian>Aggiornamento disponibile</Italian>
 		<Spanish>Parche disponible</Spanish>
+		<Hungarian>Patch elérhető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_NAME_GAME_DESC</Tag>
@@ -10911,6 +11001,7 @@
 		<German>Bitte geben Sie einen Namen für Ihr Spiel ein</German>
 		<Italian>Inserisci un nome per la partita</Italian>
 		<Spanish>Introduce un nombre para la partida</Spanish>
+		<Hungarian>Kérlek, nevezd el a játékodat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_NAME_GAME_TITLE</Tag>
@@ -10920,6 +11011,7 @@
 		<German>Benennen Sie Ihr Spiel</German>
 		<Italian>Nome della partita</Italian>
 		<Spanish>Nombre de la partida</Spanish>
+		<Hungarian>Nevezd el játékodat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PWD_GAME_DESC</Tag>
@@ -10929,6 +11021,7 @@
 		<German>Bitte geben Sie ein Passwort für Ihr Spiel ein</German>
 		<Italian>Inserisci una password per la partita</Italian>
 		<Spanish>Introduce una contraseña para la partida</Spanish>
+		<Hungarian>Kérlek, adj meg egy jelszót a játékodhoz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PWD_GAME_TITLE</Tag>
@@ -10938,6 +11031,7 @@
 		<German>Schützen Sie Ihr Spiel</German>
 		<Italian>Proteggi la tua partita</Italian>
 		<Spanish>Protege la partida</Spanish>
+		<Hungarian>Védd meg játékodat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_TURNTIMER_A</Tag>
@@ -10947,6 +11041,7 @@
 		<German>Maximal </German>
 		<Italian>Consenti</Italian>
 		<Spanish>Permitir </Spanish>
+		<Hungarian>Engedélyezés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_TURNTIMER_B</Tag>
@@ -10956,6 +11051,7 @@
 		<German>[SPACE]Stunden bis zum Abschluss einer Runde</German>
 		<Italian>[SPACE]ore per completare un turno</Italian>
 		<Spanish>[SPACE]hora/s para completar un turno</Spanish>
+		<Hungarian>[SPACE]óra a kör befejezéséig</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_HUMAN</Tag>
@@ -10965,6 +11061,7 @@
 		<German>Mensch</German>
 		<Italian>Umano</Italian>
 		<Spanish>Humano</Spanish>
+		<Hungarian>Ember</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_COMPUTER</Tag>
@@ -10974,6 +11071,7 @@
 		<German>Computer</German>
 		<Italian>Computer</Italian>
 		<Spanish>Ordenador</Spanish>
+		<Hungarian>Számítógép</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_CLOSED</Tag>
@@ -10983,6 +11081,7 @@
 		<German>Geschlossen</German>
 		<Italian>Chiuso</Italian>
 		<Spanish>Cerrado</Spanish>
+		<Hungarian>Zárt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_TURNTIMER_ERROR_DESC</Tag>
@@ -10992,6 +11091,7 @@
 		<German>Der Runden-Timer-Wert muss ein Integer-Wert sein</German>
 		<Italian>Il valore del timer dei turni deve essere un numero intero</Italian>
 		<Spanish>El valor del contador del turno debe ser entero</Spanish>
+		<Hungarian>A köridőmérő csak egész szám lehet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_TURNTIMER_ERROR_TITLE</Tag>
@@ -11001,6 +11101,7 @@
 		<German>Ungültiger Runden-Timer</German>
 		<Italian>Timer dei turni non valido</Italian>
 		<Spanish>Contador del turno no válido</Spanish>
+		<Hungarian>Érvénytelen Köridőmérő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_PATCH_PROGRESS_TITLE</Tag>
