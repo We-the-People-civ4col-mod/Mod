@@ -16176,7 +16176,12 @@ bool CvPlayer::checkExpireEvent(EventTypes eEvent, const EventTriggeredData& kTr
 		}
 	}
 
-	if (kTriggeredData.m_iUnitId != -1)
+	// Only fail the quest because the stored unit is gone when the trigger
+	// asked to track that unit. Start triggers like six warships / slave
+	// barques pick a unit to test "you have N of these", but bTrackUnit is
+	// 0: giving the king that frigate, or assigning that slave to a city,
+	// must not fail the unrelated quest.
+	if (kTriggeredData.m_iUnitId != -1 && kTrigger.unitTriggers().Tracked)
 	{
 		if (NULL == kPlayer.getUnit(kTriggeredData.m_iUnitId))
 		{
