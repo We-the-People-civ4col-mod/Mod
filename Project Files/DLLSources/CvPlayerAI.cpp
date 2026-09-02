@@ -12913,10 +12913,34 @@ int CvPlayerAI::AI_eventValue(EventTypes eEvent, const EventTriggeredData& kTrig
 		}
 	}
 
+	// Score every yield that was collected. The old city-effect path only
+	// added food/bells/crosses, and the global path never added aiYields at
+	// all, so events like EVENT_BOOK_MORMON_2 looked worthless to the AI.
+	int iYieldTurnValue = 0;
+	for (int iYield = 0; iYield < NUM_YIELD_TYPES; ++iYield)
+	{
+		if (aiYields[iYield] != 0)
+		{
+			int iWeight = 2;
+			if (iYield == YIELD_FOOD)
+			{
+				iWeight = 5;
+			}
+			else if (iYield == YIELD_BELLS)
+			{
+				iWeight = 3;
+			}
+			else if (iYield == YIELD_CROSSES)
+			{
+				iWeight = 1;
+			}
+			iYieldTurnValue += aiYields[iYield] * iWeight;
+		}
+	}
+
 	if (kEvent.isCityEffect())
 	{
 		int iCityPopulation = -1;
-		int iCityTurnValue = 0;
 		if (NULL != pCity)
 		{
 			iCityPopulation = pCity->getPopulation();
@@ -12928,12 +12952,7 @@ int CvPlayerAI::AI_eventValue(EventTypes eEvent, const EventTriggeredData& kTrig
 			iCityPopulation = 5;
 		}
 
-		iCityTurnValue += aiYields[YIELD_FOOD] * 5;
-
-		iCityTurnValue += aiYields[YIELD_BELLS] * 3;
-		iCityTurnValue += aiYields[YIELD_CROSSES] * 1;
-
-		iValue += (iCityTurnValue * 20 * iGameSpeedPercent) / 100;
+		iValue += (iYieldTurnValue * 20 * iGameSpeedPercent) / 100;
 
 		iValue += kEvent.getFood();
 		iValue += kEvent.getFoodPercent() / 4;
@@ -12944,9 +12963,7 @@ int CvPlayerAI::AI_eventValue(EventTypes eEvent, const EventTriggeredData& kTrig
 	}
 	else if (!kEvent.isOtherPlayerCityEffect())
 	{
-		int iPerTurnValue = 0;
-
-		iValue += (iPerTurnValue * 20 * iGameSpeedPercent) / 100;
+		iValue += (iNumCities * iYieldTurnValue * 20 * iGameSpeedPercent) / 100;
 
 		iValue += (kEvent.getFood() * iNumCities);
 		iValue += (kEvent.getFoodPercent() * iNumCities) / 4;
