@@ -113,6 +113,7 @@ public:
 	int cultureDistance(int iDX, int iDY);
 	bool isHasBuilding(int /*BuildingTypes*/ iIndex);
 	int getProfessionOutput(int /*ProfessionTypes*/ iIndex, CyUnit* pUnit);
+	int getProfessionActualOutput(int /*ProfessionTypes*/ iIndex, CyUnit* pUnit);
 	int getID();
 	int getX();
 	int getY();

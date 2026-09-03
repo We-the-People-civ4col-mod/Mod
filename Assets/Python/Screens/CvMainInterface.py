@@ -2208,9 +2208,11 @@ class CvMainInterface:
 										# R&R, we do not show the first icon any more, if we have MultipleProfessionsPerBuilding
 										# screen.addDDSGFC(szName, gc.getYieldInfo(iYield).getIcon(), BUILDING_GRID[iSpecialBuildingType][0] + (STACK_BAR_HEIGHT / 2), BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - (BUILDING_GRID[iSpecialBuildingType][2] / 6) + STACK_BAR_HEIGHT, STACK_BAR_HEIGHT * 3 / 2, STACK_BAR_HEIGHT * 3 / 2, WidgetTypes.WIDGET_HELP_TWO_YIELDS, iYield, iSecondYield)
 										szSecondName = "SecondYieldOutPutIcon" + str(iSecondYield) #the second icon must not use "szName", or it replaces the former icon
-										screen.addDDSGFC(szSecondName, gc.getYieldInfo(iSecondYield).getCombiIcon(), BUILDING_GRID[iSpecialBuildingType][0] + (STACK_BAR_HEIGHT / 2), BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - (BUILDING_GRID[iSpecialBuildingType][2] / 6) + STACK_BAR_HEIGHT, STACK_BAR_HEIGHT * 3 / 2, STACK_BAR_HEIGHT * 3 / 2, WidgetTypes.WIDGET_HELP_TWO_YIELDS, iYield, iSecondYield)
+										if (iSecondYield == YieldTypes.YIELD_FOOD):
+											screen.addDDSGFC(szSecondName, gc.getYieldInfo(iYield).getIcon(), BUILDING_GRID[iSpecialBuildingType][0] + (STACK_BAR_HEIGHT / 2), BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - (BUILDING_GRID[iSpecialBuildingType][2] / 6) + STACK_BAR_HEIGHT, STACK_BAR_HEIGHT * 3 / 2, STACK_BAR_HEIGHT * 3 / 2, WidgetTypes.WIDGET_HELP_TWO_YIELDS, iYield, iSecondYield)
+										else:
+											screen.addDDSGFC(szSecondName, gc.getYieldInfo(iSecondYield).getCombiIcon(), BUILDING_GRID[iSpecialBuildingType][0] + (STACK_BAR_HEIGHT / 2), BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - (BUILDING_GRID[iSpecialBuildingType][2] / 6) + STACK_BAR_HEIGHT, STACK_BAR_HEIGHT * 3 / 2, STACK_BAR_HEIGHT * 3 / 2, WidgetTypes.WIDGET_HELP_TWO_YIELDS, iYield, iSecondYield)
 										CitizenHideList.append(szSecondName)
-									CitizenHideList.append(szName)
 
 								else:
 									screen.hide("ProductionBox" + str(iSpecialBuildingType))
@@ -2240,8 +2242,17 @@ class CvMainInterface:
 										if (not gc.getProfessionInfo(iArrayProfession).isWorkPlot() and gc.getProfessionInfo(iArrayProfession).isCitizen()):
 											if gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).isValidProfession(iArrayProfession):
 												iAmountYield = gc.getProfessionInfo(iArrayProfession).getYieldsProduced(0) #MultipleYieldsProduced Start
-												ProducedYield = pHeadSelectedCity.getBaseRawYieldProduced(iAmountYield)
-												UnproducedYield = ProducedYield - pHeadSelectedCity.calculateActualYieldProduced(iAmountYield)
+												if (iAmountYield == YieldTypes.YIELD_FOOD):
+													ProducedYield = 0
+													ActualYield = 0
+													for pCitizen in CitizenSpecialBuildingIndexArray[iSpecialBuildingType]:
+														if (pCitizen.getProfession() == iArrayProfession):
+															ProducedYield += pHeadSelectedCity.getProfessionOutput(iArrayProfession, pCitizen)
+															ActualYield += pHeadSelectedCity.getProfessionActualOutput(iArrayProfession, pCitizen)
+													UnproducedYield = ProducedYield - ActualYield
+												else:
+													ProducedYield = pHeadSelectedCity.getBaseRawYieldProduced(iAmountYield)
+													UnproducedYield = ProducedYield - pHeadSelectedCity.calculateActualYieldProduced(iAmountYield)
 												if (bTwoYields == False):
 													if (ProducedYield > 0):
 														bTwoYields = True
@@ -2255,7 +2266,7 @@ class CvMainInterface:
 															SzText += u"<color=0,255,0> +" + str(ProducedYield) + "</color>"
 														if (UnproducedYield > 0):
 															SzText += u"<color=255,0,0> -" + str(UnproducedYield) + "</color>"
-
+                               
 								szName = "WorkerOutputText" + str(iYield)
 								if (iSecondYield == -1 or iSecondYield == iYield):
 									screen.setLabelAt(szName, "ProductionBox" + str(iSpecialBuildingType), self.setFontSize(SzText , 0), CvUtil.FONT_RIGHT_JUSTIFY, (BUILDING_GRID[iSpecialBuildingType][3] + STACK_BAR_HEIGHT) *2 / 3, STACK_BAR_HEIGHT *2 /5, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_HELP_YIELD, iYield, -1)

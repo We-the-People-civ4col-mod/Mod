@@ -3279,6 +3279,45 @@
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]prostituáltak[COLOR_REVERT] a [LINK=BUILDING_TAVERN]kocsmában[\LINK] vagy annak egyik továbbfejlesztésében dolgozhatnak, hogy [LINK=YIELD_HAPPINESS]boldogságot[\LINK] és [LINK=YIELD_CULTURE]kultúrát[\LINK] állítsanak elő. A [LINK=UNIT_HARLOT]csábító szajhák[\LINK] kiválóan értik ezt a szakmát. Egy kis kultúrával együtt drámai módon növelik a boldogság termelésedet.</Hungarian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROFESSION_BAKER_BARLEY_FOOD</Tag>
+		<English>
+			<Text>Baker (Food, Barley): Bakers (Food, Barley)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<German>
+			<Text>Bäcker (Nahrung, Gerste):Bäcker (Nahrung, Gerste)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROFESSION_BAKER_RICE_FOOD</Tag>
+		<English>
+			<Text>Baker (Food, Rice): Bakers (Food, Rice)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<German>
+			<Text>Bäcker (Nahrung, Reis):Bäcker (Nahrung, Reis)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_PROFESSION_BAKER_CASSAVA_FOOD</Tag>
+		<English>
+			<Text>Baker (Food, Cassava): Bakers (Food, Cassava)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</English>
+		<German>
+			<Text>Bäcker (Nahrung, Maniok):Bäcker (Nahrung, Maniok)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_BAKER_BARLEY</Tag>
 		<English>
 			<Text>Baker (Barley): Bakers (Barley)</Text>
@@ -3403,10 +3442,10 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_BAKER_STRATEGY</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Bakers[COLOR_REVERT] can work in the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_BAKERY_GOODS]provisions[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] excel at this craft, and can greatly boost your supply of provisions.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Bakers[COLOR_REVERT] can work in the [LINK=BUILDING_BAKER_HOUSE]baker's house[\LINK] or one of its upgrades to produce [LINK=YIELD_BAKERY_GOODS]provisions[\LINK] or [LINK=YIELD_FOOD]bakery goods (food)[\LINK]. [LINK=UNIT_BAKER]Master bakers[\LINK] excel at this craft, and can greatly boost your supply of provisions and bakery goods (food).</English>
 		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Padeiros[COLOR_REVERT] podem trabalhar na [LINK=BUILDING_BAKER_HOUSE]casa do padeiro[\LINK] ou em uma de suas atualizações para produzir [LINK=YIELD_BAKERY_GOODS]provisões[\LINK]. [LINK=UNIT_BAKER]Mestres padeiros[\LINK] são excelentes nesse ofício e podem aumentar muito seu suprimento de provisões.</Portuguese>
 		<French>Les [COLOR_HIGHLIGHT_TEXT]boulangers[COLOR_REVERT] peuvent travailler dans la [LINK=BUILDING_BAKER_HOUSE]maison du boulanger[\LINK] ou dans l'une de ses améliorations pour produire des [LINK=YIELD_BAKERY_GOODS]provisions[\LINK]. Les [LINK=UNIT_BAKER]maîtres boulangers[\LINK] excellent dans ce domaine et peuvent considérablement augmenter votre production de pâtisserie fraîche.</French>
-		<German>[COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] können im [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK] oder einer seiner Erweiterungen arbeiten, um [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] herzustellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] beherrschen dieses Handwerk besonders gut und können die Produktion von Proviant erheblich steigern.</German>
+		<German>[COLOR_HIGHLIGHT_TEXT]Bäcker[COLOR_REVERT] können im [LINK=BUILDING_BAKER_HOUSE]Haus des Bäckers[\LINK] oder einer seiner Erweiterungen arbeiten, um [LINK=YIELD_BAKERY_GOODS]Proviant[\LINK] oder [LINK=YIELD_FOOD]Backwaren (Nahrung)[\LINK] herzustellen. [LINK=UNIT_BAKER]Bäckermeister[\LINK] beherrschen dieses Handwerk besonders gut und können die Produktion von Proviant und Backwaren (Nahrung) erheblich steigern.</German>
 		<Italian>I [COLOR_HIGHLIGHT_TEXT]panettieri[COLOR_REVERT] possono lavorare nella [LINK=BUILDING_BAKER_HOUSE]casa del fornaio[\LINK] o in uno dei suoi potenziamenti per produrre [LINK=YIELD_BAKERY_GOODS]prodotti da forno[\LINK]. I [LINK=UNIT_BAKER]mastri panettieri[\LINK] eccellono in questo mestiere e possono incrementare notevolmente la produzione di prodotti da forno freschi.</Italian>
 		<Spanish>Los [COLOR_HIGHLIGHT_TEXT]panaderos[COLOR_REVERT] pueden trabajar en la [LINK=BUILDING_BAKER_HOUSE]panadería[\LINK] o en una de sus mejoras para producir [LINK=YIELD_BAKERY_GOODS]productos de panadería[\LINK]. Los [LINK=UNIT_BAKER]maestros panaderos[\LINK] destacan en este oficio y pueden aumentar enormemente tu producción de pan recién horneado.</Spanish>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]pékek[COLOR_REVERT] a [LINK=BUILDING_BAKER_HOUSE]pékségben[\LINK] vagy annak egyik továbbfejlesztésében dolgozhatnak, hogy [LINK=YIELD_BAKERY_GOODS]ellátmányt[\LINK] állítsanak elő. A [LINK=UNIT_BAKER]pékmesterek[\LINK] kiválóan értik ezt a szakmát és jelentősen növelhetik az ellátmány termelésedet.</Hungarian>

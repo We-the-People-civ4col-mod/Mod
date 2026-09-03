@@ -3701,6 +3701,10 @@ void CvDLLWidgetData::parseTwoCityYieldsHelp(const CvWidgetDataStruct &widgetDat
 		abYield[eSecondYield] = true;
 	}
 
+	const bool bHasNonFoodYield =
+		(eYield != NO_YIELD && eYield != YIELD_FOOD) ||
+		(eSecondYield != NO_YIELD && eSecondYield != YIELD_FOOD);
+
 	std::vector<char> aSpecialBuilding(GC.getNumSpecialBuildingInfos(), 0);
 	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
 	{
@@ -3718,7 +3722,22 @@ void CvDLLWidgetData::parseTwoCityYieldsHelp(const CvWidgetDataStruct &widgetDat
 		for (int iProduced = 0; iProduced < kProfession.getNumYieldsProduced(); ++iProduced)
 		{
 			const YieldTypes eProduced = (YieldTypes) kProfession.getYieldsProduced(iProduced);
-			if (eProduced != NO_YIELD && (eProduced == eYield || eProduced == eSecondYield))
+
+			if (eProduced == NO_YIELD)
+			{
+				continue;
+			}
+
+			if (bHasNonFoodYield)
+			{
+				if (eProduced != YIELD_FOOD &&
+					(eProduced == eYield || eProduced == eSecondYield))
+				{
+					bMatch = true;
+					break;
+				}
+			}
+			else if (eProduced == eYield || eProduced == eSecondYield)
 			{
 				bMatch = true;
 				break;
@@ -3733,6 +3752,8 @@ void CvDLLWidgetData::parseTwoCityYieldsHelp(const CvWidgetDataStruct &widgetDat
 			}
 		}
 	}
+
+	bool bHasFoodOutput = false;
 
 	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
 	{
@@ -3753,7 +3774,11 @@ void CvDLLWidgetData::parseTwoCityYieldsHelp(const CvWidgetDataStruct &widgetDat
 		for (int iProduced = 0; iProduced < kProfession.getNumYieldsProduced(); ++iProduced)
 		{
 			const YieldTypes eProduced = (YieldTypes) kProfession.getYieldsProduced(iProduced);
-			if (eProduced != NO_YIELD && eProduced != YIELD_FOOD)
+			if (eProduced == YIELD_FOOD)
+			{
+				bHasFoodOutput = true;
+			}
+			else if (eProduced != NO_YIELD)
 			{
 				abYield[eProduced] = true;
 			}
@@ -3768,6 +3793,17 @@ void CvDLLWidgetData::parseTwoCityYieldsHelp(const CvWidgetDataStruct &widgetDat
 			appendYieldPriceAndDemandHelp(szBuffer, pCity, eActivePlayer, (YieldTypes) iYield, !bFirst);
 			bFirst = false;
 		}
+	}
+
+	if (bHasFoodOutput)
+	{
+		if (!bFirst)
+		{
+			szBuffer.append(SEPARATOR);
+			szBuffer.append(NEWLINE);
+		}
+
+		appendCompactYieldMarketHelp(szBuffer, pCity, eActivePlayer, YIELD_FOOD, false);
 	}
 }
 //Androrc End

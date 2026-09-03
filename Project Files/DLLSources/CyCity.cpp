@@ -413,6 +413,11 @@ int CyCity::getProfessionOutput(int /*ProfessionTypse*/ iIndex, CyUnit* pUnit)
 	return m_pCity ? m_pCity->getProfessionOutput((ProfessionTypes) iIndex, pUnit->getUnit()) : -1;
 }
 
+int CyCity::getProfessionActualOutput(int /*ProfessionTypes*/ iIndex, CyUnit* pUnit)
+{
+	return m_pCity ? m_pCity->getProfessionActualOutput((ProfessionTypes) iIndex, *pUnit->getUnit()) : -1;
+}
+
 int CyCity::getID()
 {
 	return m_pCity ? m_pCity->getID() : -1;
