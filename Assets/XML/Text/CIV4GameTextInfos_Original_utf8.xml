@@ -11111,6 +11111,7 @@
 		<German>Patchvorgang</German>
 		<Italian>Progresso dell'aggiornamento</Italian>
 		<Spanish>Progreso del parche</Spanish>
+		<Hungarian>Patch folyamatban</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_MEMORY_DESC</Tag>
@@ -11120,6 +11121,7 @@
 		<German>Beim Patch-Download ist ein Speicherfehler aufgetreten.</German>
 		<Italian>Si è verificato un errore di memoria durante lo scaricamento dell'aggiornamento.</Italian>
 		<Spanish>Se ha producido un error de memoria al descargar el parche.</Spanish>
+		<Hungarian>Memóriahiba a patch letöltése közben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_OVERFLOW_DESC</Tag>
@@ -11129,6 +11131,7 @@
 		<German>Unser Computer kam nicht mit der Datenübertragungsrate zurecht! Bitte die Netzwerkgeschwindigkeit in den Spieloptionen überprüfen.</German>
 		<Italian>Il nostro computer non potrebbe gestire la velocità di invio dei dati!  Verifica la velocità di rete nelle opzioni del gioco.</Italian>
 		<Spanish>El ordenador no ha soportado la tasa a la que se enviaban los datos. Comprueba en las opciones de partida si la velocidad de red es correcta.</Spanish>
+		<Hungarian>A számítógépünk nem képes kezelni azt a sebességet, amivel az adat el lett küldve! Ellenőrizd, hogy a hálózati sebesség megfelelően van-e konfigurálva a játékbeállításoknál!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_PARSE_DESC</Tag>
@@ -11138,6 +11141,7 @@
 		<German>Die für diesen Patch angegebene URL ist ungültig.</German>
 		<Italian>L'indirizzo URL specificato per l'aggiornamento non è valido.</Italian>
 		<Spanish>La URL indicada para el parche no es válida.</Spanish>
+		<Hungarian>A patch URL-je nem érvényes.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_HOSTNAME_DESC</Tag>
@@ -11147,6 +11151,7 @@
 		<German>Der für diesen Patch angegebene Hostname ist ungültig.</German>
 		<Italian>Il nome dell'host specificato per l'aggiornamento non è valido.</Italian>
 		<Spanish>El nombre de anfitrión indicado para el parche no es válido.</Spanish>
+		<Hungarian>A patch szerverének neve nem érvényes.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_SOCKET_DESC</Tag>
@@ -11156,6 +11161,7 @@
 		<German>Beim Patch-Download ist ein Netzwerkressourcenfehler aufgetreten.</German>
 		<Italian>Si è verificato un errore di risorse di rete durante lo scaricamento dell'aggiornamento.</Italian>
 		<Spanish>Ha habido un error de recursos de red durante la descarga del parche.</Spanish>
+		<Hungarian>Hálózati erőforrás hiba a patch letöltése közben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_CONNECT_DESC</Tag>
@@ -11165,6 +11171,7 @@
 		<German>Wir konnten keine Verbindung zum Server herstellen, der den Patch anbietet.</German>
 		<Italian>Non siamo riusciti a connetterci al server host dell'aggiornamento.</Italian>
 		<Spanish>No se ha podido conectar con el servidor que aloja el parche.</Spanish>
+		<Hungarian>Nem tudtunk kapcsolódni a patch szerveréhez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_RESPONSE_DESC</Tag>
@@ -11174,6 +11181,7 @@
 		<German>Der Server, der den Patch anbietet, hat uns eine merkwürdige Antwort geschickt.</German>
 		<Italian>Il server host dell'aggiornamento ci ha inviato una risposta inattesa.</Italian>
 		<Spanish>El servidor que aloja el parche ha enviado una respuesta extraña.</Spanish>
+		<Hungarian>A patch szervere nem várt választ küldött nekünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_REJECTED_DESC</Tag>
@@ -11183,6 +11191,7 @@
 		<German>Unsere Patchanfrage wurde vom Server abgelehnt.</German>
 		<Italian>La nostra richiesta dell'aggiornamento è stata respinta dal server.</Italian>
 		<Spanish>La solicitud del parche ha sido rechazada por el servidor.</Spanish>
+		<Hungarian>A patch-et igénylő kérésünket a szerver elutasította.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_UNAUTHORIZED_DESC</Tag>
@@ -11192,6 +11201,7 @@
 		<German>Wir haben keinen autorisierten Zugang zu diesem Patch.</German>
 		<Italian>Non siamo autorizzati ad accedere all'aggiornamento.</Italian>
 		<Spanish>No se tiene autorización para acceder al parche.</Spanish>
+		<Hungarian>Nem kaptunk engedélyt a patch elérésére.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_FORBIDDEN_DESC</Tag>
@@ -11201,6 +11211,7 @@
 		<German>Auf diesem Server ist das Abrufen des Patches nicht zugelassen.</German>
 		<Italian>Lo scaricamento dell'aggiornamento è stato vietato da questo server.</Italian>
 		<Spanish>La recuperación del parche se ha prohibido en este servidor.</Spanish>
+		<Hungarian>A patch letöltése nem engedélyezett ezen a szerveren.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_FILENOTFOUND_DESC</Tag>
@@ -11210,6 +11221,7 @@
 		<German>Die angegebene Patch-Datei konnte nicht auf dem Server gefunden werden.</German>
 		<Italian>Il file specificato per questo aggiornamento non è stato trovato sul server.</Italian>
 		<Spanish>El archivo indicado para el parche no se ha encontrado en el servidor.</Spanish>
+		<Hungarian>A patch-hez megadott fájl nem található ezen a szerveren.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_SERVER_DESC</Tag>
@@ -11219,6 +11231,7 @@
 		<German>Der Server, der den Patch anbietet, hat einen internen Fehler.</German>
 		<Italian>Si è verificato un errore interno sul server host dell'aggiornamento.</Italian>
 		<Spanish>Se ha producido un error interno en el servidor que aloja el parche.</Spanish>
+		<Hungarian>Belső hiba a patch szerverén.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_FILEWRITE_DESC</Tag>
@@ -11228,6 +11241,7 @@
 		<German>Beim Versuch, Daten auf unsere Festplatte zu schreiben, ist ein Fehler aufgetreten.</German>
 		<Italian>Si è verificato un errore durante la scrittura dei dati su disco.</Italian>
 		<Spanish>Se ha producido un error al intentar escribir datos en el disco.</Spanish>
+		<Hungarian>Hiba az adatok lemezre írása közben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_FILEREAD_DESC</Tag>
@@ -11237,6 +11251,7 @@
 		<German>Beim Versuch, Daten von unserer Festplatte zu lesen, ist ein Fehler aufgetreten.</German>
 		<Italian>Si è verificato un errore durante la lettura dei dati dal disco.</Italian>
 		<Spanish>Se ha producido un error al intentar leer datos del disco.</Spanish>
+		<Hungarian>Hiba az adatok lemezről beolvasása közben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_INCOMPLETE_DESC</Tag>
@@ -11246,6 +11261,7 @@
 		<German>Der Patch-Download wurde unterbrochen.</German>
 		<Italian>Lo scaricamento dell'aggiornamento è stato interrotto.</Italian>
 		<Spanish>Se ha interrumpido la descarga del parche.</Spanish>
+		<Hungarian>A patch letöltése megszakadt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_TOOBIG_DESC</Tag>
@@ -11255,6 +11271,7 @@
 		<German>Die Patch-Datei ist zu groß für den Download.</German>
 		<Italian>Il file dell'aggiornamento è troppo grosso per essere scaricato.</Italian>
 		<Spanish>El archivo del parche es demasiado voluminoso para descargarlo.</Spanish>
+		<Hungarian>A patch mérete túl nagy a letöltéshez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_ENCRYPTION_DESC</Tag>
@@ -11264,15 +11281,17 @@
 		<German>Beim Versuch, die Patchdaten zu entschlüsseln, ist ein Fehler aufgetreten.</German>
 		<Italian>Si ì verificato un errore durante la criptazione dei dati dell'aggiornamento.</Italian>
 		<Spanish>Se ha producido un error al intentar encriptar los datos del parche.</Spanish>
+		<Hungarian>Hiba a patch adatainak titkosítása közben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_CANCELLED_DESC</Tag>
-		<English>The patch download has been canceled.</English>
+		<English>The patch download has been cancelled.</English>
 		<Portuguese>O download do patch foi cancelado.</Portuguese>
 		<French>Le téléchargement du patch a été annulé.</French>
 		<German>Der Patch-Download wurde abgebrochen.</German>
 		<Italian>Lo scaricamento dell'aggiornamento è stato annullato.</Italian>
 		<Spanish>Se ha cancelado la descarga del parche.</Spanish>
+		<Hungarian>A patch letöltése megszakítva.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHCOMPLETE_UNKNOWN_DESC</Tag>
@@ -11282,6 +11301,7 @@
 		<German>Beim Patch-Download ist ein unbekannter Fehler aufgetreten.</German>
 		<Italian>Si è verificato un errore sconosciuto durante lo scaricamento dell'aggiornamento.</Italian>
 		<Spanish>Se ha producido un error desconocido al descargar el parche.</Spanish>
+		<Hungarian>Ismeretlen hiba a patch letöltése közben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PATCHING_WEBSITE_INFO</Tag>
@@ -11291,6 +11311,7 @@
 		<German>Die neuesten Patch-Infos erhalten Sie unter www.2kgames.de/civ.</German>
 		<Italian>Visita il sito Internet www.CivIV.com per le ultime informazioni sugli aggiornamenti.</Italian>
 		<Spanish>Visita www.CivIV.com para obtener la última información acerca de los parches.</Spanish>
+		<Hungarian>Kérlek, látogasd meg a www.CivIV.com oldalt a legfrissebb patch-információkért!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SAVE_FILE_CORRUPT</Tag>
@@ -11300,6 +11321,7 @@
 		<German>Sie versuchen, einen fehlerhaften Spielstand zu laden. Das Spiel wird nun verlassen.</German>
 		<Italian>Stai cercando di caricare un file di salvataggio corrotto. Il gioco verrà chiuso automaticamente.</Italian>
 		<Spanish>Estás intentando cargar un archivo guardado corrupto. Se va a proceder a salir del juego.</Spanish>
+		<Hungarian>Sérült mentési fájlt próbáltál betölteni. A játék most kilép.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEFAULT_GAMENAME</Tag>
@@ -11309,6 +11331,7 @@
 		<German>Mein Spiel</German>
 		<Italian>Mia partita</Italian>
 		<Spanish>Mi partida</Spanish>
+		<Hungarian>Az én játékom</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_USER_GAMENAME</Tag>
@@ -11318,6 +11341,7 @@
 		<German>%s1s Spiel</German>
 		<Italian>partita de %s1</Italian>
 		<Spanish>partida de %s1</Spanish>
+		<Hungarian>%s1 játéka</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NEW</Tag>
@@ -11327,6 +11351,7 @@
 		<German>Neu</German>
 		<Italian>Nuovo</Italian>
 		<Spanish>Nueva</Spanish>
+		<Hungarian>Új</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_COLUMN_PITBOSS</Tag>
@@ -11345,6 +11370,7 @@
 		<German>Staging Room</German>
 		<Italian>Stanza d'allestimento</Italian>
 		<Spanish>Sala de comunicaciones</Spanish>
+		<Hungarian>Előkészítő szoba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUDDY_LIST_STATUS_LOBBY</Tag>
@@ -11354,6 +11380,7 @@
 		<German>Lobby</German>
 		<Italian>Sala d'attesa</Italian>
 		<Spanish>Sala</Spanish>
+		<Hungarian>Várószoba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MEMORY_SAVER_ERROR</Tag>
@@ -11363,6 +11390,7 @@
 		<German>Die Verwendung der MemorySaver-Option in Ihrer Konfiguration setzt exklusiven Zugriff auf die Grafikkarte voraus. Programm wird verlassen.</German>
 		<Italian>L'opzione di salvataggio della memoria video non permette il passaggio a un'altra applicazione che fa utilizzo della scheda video. Uscita dal programma in corso.</Italian>
 		<Spanish>Al usar la opción AhorroMemoria en tu configuración no se puede abrir otra aplicación en segundo plano. Saliendo.</Spanish>
+		<Hungarian>Ha a konfigurációdban használod a MemorySaver opciót, megakadályozhatod az eszköz elvesztését. Kilépés a programból.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATAL_ERROR</Tag>
@@ -11372,6 +11400,7 @@
 		<German>Fataler Fehler</German>
 		<Italian>Errore critico</Italian>
 		<Spanish>Error crítico</Spanish>
+		<Hungarian>Végzetes Hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OUT_OF_VRAM</Tag>
@@ -11381,6 +11410,7 @@
 		<German>Grafikspeicher konnte nicht zugewiesen werden. Bitte reduzieren Sie Ihre Grafikeinstellungen.</German>
 		<Italian>Impossibile assegnare la memoria video. Prova a ridurre le impostazioni grafiche.</Italian>
 		<Spanish>No se pudo asignar la memoria de video. Intente reducir los ajustes de los gráficos.</Spanish>
+		<Hungarian>Hiba a videomemória-foglalás közben. Kérlek, próbáld meg csökkenteni a grafikai beállításaidat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ERROR</Tag>
@@ -11390,6 +11420,7 @@
 		<German>Fehler</German>
 		<Italian>Errore</Italian>
 		<Spanish>Error</Spanish>
+		<Hungarian>Hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOBBY_PROFILE_TAG</Tag>
@@ -11399,6 +11430,7 @@
 		<German>Name :</German>
 		<Italian>Nome :</Italian>
 		<Spanish>Nombre :</Spanish>
+		<Hungarian>Név:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_SAVE</Tag>
@@ -11409,6 +11441,7 @@
 		<Italian>Salva</Italian>
 		<Spanish>Guardar</Spanish>
 		<Russian>Сохранить</Russian><!--World Builder-->
+		<Hungarian>Mentés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DECLARE_WAR_YES</Tag>
@@ -11419,6 +11452,7 @@
 		<Italian>Sì, DICHIARA GUERRA!</Italian>
 		<Spanish>Sí, ¡DECLAREMOS LA GUERRA!</Spanish>
 		<Russian>Да, нас ждут славные битвы!</Russian>
+		<Hungarian>Igen, ez a háború tisztességes!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DECLARE_WAR_NO</Tag>
@@ -11429,6 +11463,7 @@
 		<Italian>No, meglio ripensarci...</Italian>
 		<Spanish>No, reconsiderémoslo...</Spanish>
 		<Russian>Нет, нам важнее мир.</Russian>
+		<Hungarian>Nem, tiszteletben tartom a békét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_GRAPH</Tag>
@@ -11439,6 +11474,7 @@
 		<Italian>GRAFICO</Italian>
 		<Spanish>GRÁFICA</Spanish>
 		<Russian>ГРАФИКИ</Russian>
+		<Hungarian>GRAFIKON</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_MADE_PEACE_WITH</Tag>
@@ -11449,6 +11485,7 @@
 		<Italian>Hai fatto pace con [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]!</Italian>
 		<Spanish>Habéis firmado la paz con [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]</Spanish>
 		<Russian>Вы заключили мир с [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]!</Russian>
+		<Hungarian>Békekötésre került sor [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT] és közted!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FLAT_MOVEMENT</Tag>
@@ -11459,6 +11496,7 @@
 		<Italian>[ICON_BULLET]Costi di movimento in pianura</Italian>
 		<Spanish>[ICON_BULLET]Costes de movimiento en llano</Spanish>
 		<Russian>[ICON_BULLET]Стоимость передвижения по равнине</Russian>
+		<Hungarian>[ICON_BULLET]Mozgásköltség sík terepen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_SCRIPT_FRACTAL_DESCR</Tag>
@@ -11468,6 +11506,7 @@
 		<German>Ein unvorhersehbarer Kartentyp.</German>
 		<Italian>Un tipo di mappa imprevedibile.</Italian>
 		<Spanish>Un tipo de mapa inesperado.</Spanish>
+		<Hungarian>Kiszámíthatatlan térképtípus.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEER_FAILURE_TITLE</Tag>
@@ -11477,6 +11516,7 @@
 		<German>Verbindungsfehler!</German>
 		<Italian>Errore durante la connessione!</Italian>
 		<Spanish>Fallo en la conexión</Spanish>
+		<Hungarian>Kapcsolódási Hiba!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEER_FAILURE_DESC</Tag>
@@ -11486,6 +11526,7 @@
 		<German>Ein einsteigender Spieler konnte keine Verbindung zu Ihnen herstellen und kann dem Spiel nicht beitreten.[NEWLINE]Bitte stellen Sie sicher, dass Ihre Firewall eingehende Verbindungen für Civilization IV erlaubt.</German>
 		<Italian>Un altro giocatore non è riuscito a connettersi al tuo sistema e non può partecipare alla partita.[NEWLINE]Controlla che le impostazioni del tuo firewall permettano il passaggio delle connessioni in arrivo a Civilization IV.</Italian>
 		<Spanish>El jugador entrante no ha conseguido conectarse y no puede unirse a la partida.[NEWLINE]Comprueba si tu firewall/servidor de seguridad permite las conexiones entrantes de Civilization IV.</Spanish>
+		<Hungarian>Egy érkező játékos nem tudott kapcsolódni hozzád, és nem tud beszállni a játékba.[NEWLINE]Kérlek, ellenőrizd, hogy a tűzfalad átengedi a Civilization IV felé érkező külső kapcsolatokat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_JOIN_FAILURE_TITLE</Tag>
@@ -11495,6 +11536,7 @@
 		<German>Peer-Verbindungsfehler!</German>
 		<Italian>Errore di connessione al peer!</Italian>
 		<Spanish>Fallo al conectar con interlocutor</Spanish>
+		<Hungarian>Peer kapcsolódási hiba!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_JOIN_FAILURE_DESC</Tag>
@@ -11504,6 +11546,7 @@
 		<German>Wir konnten keine Verbindung zum Spieler "%s1_Name" aufbauen.[NEWLINE]Der Spieler hat seine Firewall-Umgebung eventuell nicht korrekt konfiguriert.</German>
 		<Italian>Impossibile connettersi al giocatore "%s1_Name".[NEWLINE]Il giocatore potrebbe non aver impostato correttamente il firewall.</Italian>
 		<Spanish>Ha sido imposible conectar con el jugador "%s1_Name".[NEWLINE]Puede que ese jugador no tenga configurado correctamente su entorno de firewall/servidor de seguridad.</Spanish>
+		<Hungarian>Nem tudunk "%s1_Name" játékoshoz kapcsolódni.[NEWLINE]Lehet, hogy a tűzfala nincs megfelelően konfigurálva.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEER_CONNECT_FAILURE_TITLE</Tag>
@@ -11513,6 +11556,7 @@
 		<German>Peer-Verbindungsfehler!</German>
 		<Italian>Errore di connessione al peer!</Italian>
 		<Spanish>Fallo al conectar con interlocutor</Spanish>
+		<Hungarian>Peer kapcsolódási hiba!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEER_CONNECT_FAILURE_DESC</Tag>
@@ -11522,6 +11566,7 @@
 		<German>Wir konnten keine Verbindung zu einem anderen einsteigenden Spieler aufbauen.[NEWLINE]Der Spieler hat seine Firewall-Umgebung eventuell nicht korrekt konfiguriert.</German>
 		<Italian>Impossibile connettersi al giocatore.[NEWLINE]Il giocatore potrebbe non aver impostato correttamente il firewall.</Italian>
 		<Spanish>Ha sido imposible conectar con otro jugador que intentaba unirse.[NEWLINE]Puede que ese jugador no tenga configurado correctamente su entorno de firewall/servidor de seguridad.</Spanish>
+		<Hungarian>Nem tudunk "másik csatlakozó játékoshoz kapcsolódni.[NEWLINE]Lehet, hogy a tűzfala nincs megfelelően konfigurálva.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SIGN_ENTER_CAPTION</Tag>
@@ -11532,6 +11577,7 @@
 		<Italian>Inserisci didascalia</Italian>
 		<Spanish>Escribir un encabezamiento</Spanish>
 		<Russian>Введите нужный текст</Russian>
+		<Hungarian>Add meg a címet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SUBMIT_VOTE</Tag>
@@ -11541,6 +11587,7 @@
 		<German>Stimme abgeben</German>
 		<Italian>Invia votazione</Italian>
 		<Spanish>Enviar voto</Spanish>
+		<Hungarian>Voks elküldése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAME_LIST_UNKNOWN_PING</Tag>
@@ -11550,6 +11597,7 @@
 		<German>[Unbekannt]</German>
 		<Italian>[Sconosciuto]</Italian>
 		<Spanish>[Desconocido]</Spanish>
+		<Hungarian>[Ismeretlen]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONNECT_UPDATE_NAMED_PEER_ATTEMPT</Tag>
@@ -11559,6 +11607,7 @@
 		<German>Verbindungsaufbau mit etabliertem Peer "%s1_Name"</German>
 		<Italian>Connessione via peer con "%s1_Name"</Italian>
 		<Spanish>Contactando con el interlocutor establecido "%s1_Name"</Spanish>
+		<Hungarian>Kapcsolatfelvétel "%s1_Name" peerrel</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SCENARIO</Tag>
@@ -11568,6 +11617,7 @@
 		<German>Neues Szenario</German>
 		<Italian>Nuovo scenario</Italian>
 		<Spanish>Nuevo escenario</Spanish>
+		<Hungarian>Új szcenárió</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_CHOOSE_SCENARIO</Tag>
@@ -11577,6 +11627,7 @@
 		<German>Wählen Sie ein Szenario :</German>
 		<Italian>Scegli uno scenario :</Italian>
 		<Spanish>Elige un escenario :</Spanish>
+		<Hungarian>Válassz egy szcenáriót :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_CHOOSE_MOD</Tag>
@@ -11586,6 +11637,7 @@
 		<German>Wählen Sie einen Mod :</German>
 		<Italian>Scegli un mod :</Italian>
 		<Spanish>Elige un mod :</Spanish>
+		<Hungarian>Válassz egy modot :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SCENARIO_ERROR</Tag>
@@ -11595,6 +11647,7 @@
 		<German>Initialisierungsfehler</German>
 		<Italian>Errore di inizializzazione</Italian>
 		<Spanish>Error al iniciar</Spanish>
+		<Hungarian>Inicializációs Hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_SCENARIO_ERROR_TITLE</Tag>
@@ -11604,6 +11657,7 @@
 		<German>Beim Lesen der Szenario-Daten ist ein Fehler aufgetreten.</German>
 		<Italian>Si è verificato un errore durante la lettura dei dati dello scenario.</Italian>
 		<Spanish>Se ha producido un error al intentar leer los datos del escenario.</Spanish>
+		<Hungarian>Hiba történt a szcenárió adatainak kiolvasása közben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CUSTOM_SCENARIO</Tag>
@@ -11614,6 +11668,7 @@
 		<Italian>Scenario personalizzato</Italian>
 		<Spanish>Escenario personalizado</Spanish>
 		<Russian>Сценарий с настройками пользователя</Russian>
+		<Hungarian>Egyedi szcenárió</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_MAX_TURN</Tag>
@@ -11624,6 +11679,7 @@
 		<Italian>Limite turni della partita : </Italian>
 		<Spanish>Límite de turnos de la partida : </Spanish>
 		<Russian>Лимит игровых ходов :</Russian>
+		<Hungarian>Játékkör Limit :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_MAXTURN_ERROR_DESC</Tag>
@@ -11633,6 +11689,7 @@
 		<German>Der Wert muss ein Integer sein.</German>
 		<Italian>Il valore deve essere un numero intero.</Italian>
 		<Spanish>El valor tiene que ser un número entero.</Spanish>
+		<Hungarian>Az érték csak egész szám lehet!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_MAXTURN_ERROR_TITLE</Tag>
@@ -11642,6 +11699,7 @@
 		<German>Eingabefehler</German>
 		<Italian>Errore nei dati inseriti</Italian>
 		<Spanish>Error de entrada</Spanish>
+		<Hungarian>Beviteli Hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_CITYELIMINATION_ERROR_DESC</Tag>
@@ -11651,6 +11709,7 @@
 		<German>Der Wert muss ein Integer sein.</German>
 		<Italian>Il valore deve essere un numero intero.</Italian>
 		<Spanish>El valor tiene que ser un número entero.</Spanish>
+		<Hungarian>Az érték csak egész szám lehet!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_CITYELIMINATION_ERROR_TITLE</Tag>
@@ -11660,6 +11719,7 @@
 		<German>Eingabefehler</German>
 		<Italian>Errore nei dati inseriti</Italian>
 		<Spanish>Error de entrada</Spanish>
+		<Hungarian>Beviteli Hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_GAME_SETUP</Tag>
@@ -11669,6 +11729,7 @@
 		<German>Spiel-Setup</German>
 		<Italian>Impostazioni della partita</Italian>
 		<Spanish>Configuración de la partida</Spanish>
+		<Hungarian>Játékbeállítás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_GAME_SETTINGS</Tag>
@@ -11678,6 +11739,7 @@
 		<German>Einstellungen</German>
 		<Italian>Impostazioni</Italian>
 		<Spanish>Configuración</Spanish>
+		<Hungarian>Beállítások</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_GAME_MPOPTIONS</Tag>
@@ -11687,6 +11749,7 @@
 		<German>Multiplayer-Optionen</German>
 		<Italian>Opzioni multigiocatore</Italian>
 		<Spanish>Opciones multijugador</Spanish>
+		<Hungarian>Többszemélyes játék beállítások</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_GAME_VICTORIES</Tag>
@@ -11696,6 +11759,7 @@
 		<German>Siege</German>
 		<Italian>Vittorie</Italian>
 		<Spanish>Victorias</Spanish>
+		<Hungarian>Győzelmek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VERSION_WARNING_TITLE</Tag>
@@ -11705,6 +11769,7 @@
 		<German>Versionswarnung!</German>
 		<Italian>Avviso sulla versione dei file!</Italian>
 		<Spanish>Aviso de versión diferente</Spanish>
+		<Hungarian>Verzió Figyelmeztetés!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VERSION_WARNING_DESC</Tag>
@@ -11714,6 +11779,7 @@
 		<German>Spieler %d1_ID hat eine andere Version einiger Spieldateien.[NEWLINE]Stellen Sie sicher, dass er vertrauenswürdig ist.</German>
 		<Italian>Il giocatore %d1_ID possiede una versione differente di alcuni file.[NEWLINE]Assicurati che il giocatore sia affidabile.</Italian>
 		<Spanish>El jugador %d1_ID tiene versiones diferentes de algunos archivos de la partida.[NEWLINE]Comprueba si se trata de un jugador de confianza.</Spanish>
+		<Hungarian>%d1_ID játékának néhány fájlja más verziójú.[NEWLINE]Ellenőrizd, hogy megbízható játékos-e!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_NO_SCENARIOS_DESC</Tag>
@@ -11723,6 +11789,7 @@
 		<German>Für diesen Mod sind keine Weltenbauer-Spielstände zum Laden als Szenario verfügbar.</German>
 		<Italian>Nessun salvataggio dell'editor disponibile di questo mod da caricare come scenario.</Italian>
 		<Spanish>No hay disponibles archivos guardados del Creador de mundos para que este mod pueda cargarse como un escenario.</Spanish>
+		<Hungarian>E modhoz nem elérhető semmilyen mentés a játékszerkesztőből, így nem lehet szcenárióként betölteni!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_NO_SCENARIOS_TITLE</Tag>
@@ -11732,6 +11799,7 @@
 		<German>Keine Szenarios gefunden</German>
 		<Italian>Nessun scenario trovato</Italian>
 		<Spanish>No se han encontrado escenarios</Spanish>
+		<Hungarian>Szcenárió nem található</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_NO_MAPS_TITLE</Tag>
@@ -11741,6 +11809,7 @@
 		<German>Keine Karten gefunden</German>
 		<Italian>Nessuna mappa trovata</Italian>
 		<Spanish>No se han encontrado mapas</Spanish>
+		<Hungarian>Térkép nem található</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_NO_MAPS_DESC</Tag>
@@ -11750,6 +11819,7 @@
 		<German>Für diesen Mod sind keine Kartenskript-Dateien verfügbar.</German>
 		<Italian>Nessun file script della mappa disponibile per questo mod.</Italian>
 		<Spanish>No hay disponibles archivos de secuencia de comandos del mapa para este mod.</Spanish>
+		<Hungarian>E modhoz nem érhetők el térképszkriptek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CIV_ADMINPWD_TITLE</Tag>
@@ -11759,6 +11829,7 @@
 		<German>ADMIN-KENNWORT</German>
 		<Italian>PASSWORD AMMINISTRATORE</Italian>
 		<Spanish>CONTRASEÑA DEL ADMINISTRADOR</Spanish>
+		<Hungarian>ADMINISZTRÁTOR JELSZÓ</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_CIV_ADMINPWD_DESC</Tag>
@@ -11768,6 +11839,7 @@
 		<German>Geben Sie bitte das Admin-Kennwort für dieses Spiel ein.</German>
 		<Italian>Inserire la password amministratore per partecipare a questa partita.</Italian>
 		<Spanish>Introduce la contraseña del administrador necesaria para la partida.</Spanish>
+		<Hungarian>Kérlek, add meg a játékhoz szükséges adminisztrátori jelszót!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDINGS</Tag>
@@ -11778,6 +11850,7 @@
 		<Italian>Edifici</Italian>
 		<Spanish>Edificios</Spanish>
 		<Russian>Строения</Russian>
+		<Hungarian>Épületek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITS</Tag>
@@ -11788,6 +11861,7 @@
 		<Italian>Unità</Italian>
 		<Spanish>Unidades</Spanish>
 		<Russian>Юниты</Russian>
+		<Hungarian>Egységek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LEADERS</Tag>
@@ -11798,6 +11872,7 @@
 		<Italian>Leader</Italian>
 		<Spanish>Líderes</Spanish>
 		<Russian>Лидеры</Russian>
+		<Hungarian>Vezetők</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DIPLOMACY</Tag>
@@ -11808,6 +11883,7 @@
 		<Italian>Diplomazia</Italian>
 		<Spanish>Diplomacia</Spanish>
 		<Russian>Дипломатия</Russian>
+		<Hungarian>Diplomácia</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LANGUAGE_0</Tag>
@@ -11818,6 +11894,7 @@
 		<Spanish>Inglés</Spanish>
 		<Russian>Английский</Russian>
 		<Portuguese>Inglês</Portuguese>
+		<Hungarian>Angol</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LANGUAGE_1</Tag>
@@ -11828,6 +11905,7 @@
 		<Spanish>Francés</Spanish>
 		<Russian>Французский</Russian>
 		<Portuguese>Francês</Portuguese>
+		<Hungarian>Francia</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LANGUAGE_2</Tag>
@@ -11838,6 +11916,7 @@
 		<Spanish>Alemán</Spanish>
 		<Russian>Немецкий</Russian>
 		<Portuguese>Alemão</Portuguese>
+		<Hungarian>Német</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LANGUAGE_3</Tag>
@@ -11848,6 +11927,7 @@
 		<Spanish>Italiano</Spanish>
 		<Russian>Итальянский</Russian>
 		<Portuguese>Italiano</Portuguese>
+		<Hungarian>Olasz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LANGUAGE_4</Tag>
@@ -11858,6 +11938,7 @@
 		<Spanish>Español</Spanish>
 		<Russian>Испанский</Russian>
 		<Portuguese>Espanhol</Portuguese>
+		<Hungarian>Spanyol</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LANGUAGE_5</Tag>
@@ -11901,6 +11982,7 @@
 		<Italian>[ICON_BULLET]Ricevi %d1[ICON_GOLD] da [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Recibir %d1[ICON_GOLD] de [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Получите %d1[ICON_GOLD] от [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]%d1[ICON_GOLD] [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT] részéről</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GOLD_TO_PLAYER</Tag>
@@ -11911,6 +11993,7 @@
 		<Italian>[ICON_BULLET]Dai %d1[ICON_GOLD] a [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Dar %d1[ICON_GOLD] a [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Передайте %d1[ICON_GOLD] [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]%d1[ICON_GOLD] [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT] részére</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GOLD_GAINED</Tag>
@@ -11921,6 +12004,7 @@
 		<Italian>[ICON_BULLET]Ricevi %d1[ICON_GOLD]</Italian>
 		<Spanish>[ICON_BULLET]Recibir %d1[ICON_GOLD]</Spanish>
 		<Russian>[ICON_BULLET]Получите %d1[ICON_GOLD]</Russian>
+		<Hungarian>[ICON_BULLET]%d1[ICON_GOLD]-t kapsz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GOLD_LOST</Tag>
@@ -11931,6 +12015,7 @@
 		<Italian>[ICON_BULLET]Sottrai %d1[ICON_GOLD] dal tuo tesoro</Italian>
 		<Spanish>[ICON_BULLET]Quitar %d1[ICON_GOLD] del tesoro</Spanish>
 		<Russian>[ICON_BULLET]Вычтите %d1[ICON_GOLD] из вашей казны</Russian>
+		<Hungarian>[ICON_BULLET]%d1[ICON_GOLD] kivonva a kincstáradból</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GOLD_RANGE_FROM_PLAYER</Tag>
@@ -11941,6 +12026,7 @@
 		<Italian>[ICON_BULLET]Ricevi tra %d1[ICON_GOLD] e %d2[ICON_GOLD] da [COLOR_HIGHLIGHT_TEXT]%s3_playerName[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Recibir entre %d1[ICON_GOLD] y %d2[ICON_GOLD] de [COLOR_HIGHLIGHT_TEXT]%s3_playerName[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Получите от %d1[ICON_GOLD] до %d2[ICON_GOLD] от [COLOR_HIGHLIGHT_TEXT]%s3_playerName[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]%d1 és %d2 közötti [ICON_GOLD] [COLOR_HIGHLIGHT_TEXT]%s3_playerName[COLOR_REVERT] részéről</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GOLD_RANGE_TO_PLAYER</Tag>
@@ -11951,6 +12037,7 @@
 		<Italian>[ICON_BULLET]Dai tra %d1[ICON_GOLD] e %d2[ICON_GOLD] a [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Dar entre %d1[ICON_GOLD] y %d2[ICON_GOLD] a [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Отдайте от %d1[ICON_GOLD] до %d2[ICON_GOLD] [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]%d1 és %d2 közötti [ICON_GOLD] [COLOR_HIGHLIGHT_TEXT]%s2_playerName[COLOR_REVERT] részére</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GOLD_RANGE_GAINED</Tag>
@@ -11961,6 +12048,7 @@
 		<Italian>[ICON_BULLET]Ricevi tra %d1[ICON_GOLD] e %d2[ICON_GOLD]</Italian>
 		<Spanish>[ICON_BULLET]Recibir entre %d1[ICON_GOLD] y %d2[ICON_GOLD]</Spanish>
 		<Russian>[ICON_BULLET]Получите от %d1[ICON_GOLD] до %d2[ICON_GOLD]</Russian>
+		<Hungarian>[ICON_BULLET]%d1 és %d2 közötti [ICON_GOLD]-t kapsz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GOLD_RANGE_LOST</Tag>
@@ -11971,6 +12059,7 @@
 		<Italian>[ICON_BULLET]Sottrai tra %d1[ICON_GOLD] e %d2[ICON_GOLD] dal tuo tesoro</Italian>
 		<Spanish>[ICON_BULLET]Quitar entre %d1[ICON_GOLD] y %d2[ICON_GOLD] del tesoro</Spanish>
 		<Russian>[ICON_BULLET]Вычтите от %d1[ICON_GOLD] до %d2[ICON_GOLD] из вашей казны</Russian>
+		<Hungarian>[ICON_BULLET]%d1 és %d2 közötti [ICON_GOLD] kivonva a kincstáradból</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_POPULATION_CHANGE_CITY</Tag>
@@ -11981,6 +12070,7 @@
 		<Italian>[ICON_BULLET]%D1 di popolazione a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]%D1 de población en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]%D1 населения в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]%D1 népesség [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] településen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CULTURE_CITY</Tag>
@@ -11991,6 +12081,7 @@
 		<Italian>[ICON_BULLET]%D1 [ICON_CULTURE] a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]%D1 [ICON_CULTURE] en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]%D1 [ICON_CULTURE] в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]%D1 [ICON_CULTURE] [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] településen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLT_TURNS</Tag>
@@ -12001,6 +12092,7 @@
 		<Italian>[ICON_BULLET]%d1 [NUM1:turno:turni] di disordini a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]%d1 [NUM1:turno:turnos] de desórdenes en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]%d1 [NUM1:ход:хода] беспорядков в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]%d1 kör lázongás [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] településen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PILLAGE_CITY</Tag>
@@ -12011,6 +12103,7 @@
 		<Italian>[ICON_BULLET][NUM1:Distrutto:Distrutti] %d1 [NUM1:miglioramento:miglioramenti] del terreno nella zona di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]%d1 [NUM1:mejora de terreno destruida:mejoras de terreno destruidas] en la zona de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]%d1 [NUM1:улучшение:улучшения] уничтожено рядом с [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]%d1 terepi fejlesztés megsemmisült [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] körül</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PILLAGE_RANGE_CITY</Tag>
@@ -12021,6 +12114,7 @@
 		<Italian>[ICON_BULLET]Distrutti tra %d1 e %d2 miglioramenti del terreno nella zona di [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Entre %d1 y %d2 mejoras de terreno destruidas en la zona de [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]От %d1 до %d2 улучшений уничтожено рядом с [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]%d1 és %d2 közötti terepi fejlesztés megsemmisült [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] körül</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PILLAGE</Tag>
@@ -12031,6 +12125,7 @@
 		<Italian>[ICON_BULLET][NUM1:Distrutto:Distrutti] %d1 [NUM1:miglioramento:miglioramenti] del terreno</Italian>
 		<Spanish>[ICON_BULLET]%d1 [NUM1:mejora de terreno destruida:mejoras de terreno destruidas]</Spanish>
 		<Russian>[ICON_BULLET]%d1 [NUM1:улучшение:улучшений] уничтожено</Russian>
+		<Hungarian>[ICON_BULLET]%d1 terepi fejlesztés megsemmisült</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PILLAGE_RANGE</Tag>
@@ -12041,6 +12136,7 @@
 		<Italian>[ICON_BULLET]Distrutti tra %d1 e %d2 miglioramenti del terreno</Italian>
 		<Spanish>[ICON_BULLET]Entre %d1 y %d2 mejoras de terreno destruidas</Spanish>
 		<Russian>[ICON_BULLET]От %d1 до %d2 улучшений уничтожено</Russian>
+		<Hungarian>[ICON_BULLET]%d1 és %d2 közötti terepi fejlesztés megsemmisült</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CITY_IMPROVEMENT_DESTROYED</Tag>
@@ -12051,6 +12147,7 @@
 		<Italian>[NUM1:Il tuo:La tua] %s1_improvement è [NUM1:stato distrutto:stata distrutta]</Italian>
 		<Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_improvement [NUM1:ha quedado destruido:ha quedado destruida:han quedado destruidos:han quedado destruidas]</Spanish>
 		<Russian>Ваше %s1_improvement было уничтожено</Russian>
+		<Hungarian>%s1_improvement fejlesztésed megsemmisült</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NUM_CITY_IMPROVEMENTS_DESTROYED</Tag>
@@ -12061,6 +12158,7 @@
 		<Italian>%d1 [NUM1:miglioramento:miglioramenti] della civiltà %s2:2_civ_adjective [NUM1:è stato distrutto:sono stati distrutti]</Italian>
 		<Spanish>%d1 [NUM1:mejora:mejoras] de la civilización %s2:2_civ_adjective [NUM1:ha sido destruida:han sido destruidas]</Spanish>
 		<Russian>%d1 %s2_civ_adjective [NUM1:улучшение было:улучшения были] [NUM1:уничтожено:уничтожены]</Russian>
+		<Hungarian>%d1 %s2_civ_adjective fejlesztés megsemmisült</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BONUS_UNIT</Tag>
@@ -12071,6 +12169,7 @@
 		<Italian>[ICON_BULLET]Ricevere %d1 [COLOR_UNIT_TEXT]%s2_units[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Recibir %d1 [COLOR_UNIT_TEXT]%s2:2_units[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Получите %d1 [COLOR_UNIT_TEXT]%s2_units[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]%d1 [COLOR_UNIT_TEXT]%s2_units[COLOR_REVERT]-t kapsz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOOD_CITY</Tag>
@@ -12081,6 +12180,7 @@
 		<Italian>[ICON_BULLET]%D1[ICON_FOOD][NUM1:conservato:conservati] a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]%D1[ICON_FOOD] almacenados en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]%D1[ICON_FOOD] хранится в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]%D1[ICON_FOOD] elraktározva [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] településen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOOD_PERCENT_CITY</Tag>
@@ -12091,6 +12191,7 @@
 		<Italian>[ICON_BULLET]Riserve di cibo a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d1%%[ICON_FOOD]</Italian>
 		<Spanish>[ICON_BULLET]Alimentos almacenados en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d1%%[ICON_FOOD]</Spanish>
 		<Russian>[ICON_BULLET]Еды хранится в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] : %d1%%[ICON_FOOD]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] településen elraktározott élelem: %d1%%[ICON_FOOD]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FEATURE_GROWTH</Tag>
@@ -12101,6 +12202,7 @@
 		<Italian>[ICON_BULLET]Cresce [NUM1:un:una] [COLOR_HIGHLIGHT_TEXT]%s1_feature[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET][NUM1:Aparece un:Aparece una:Aparecen unos:Aparecen unas] [COLOR_HIGHLIGHT_TEXT]%s1:1_feature[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_feature[COLOR_REVERT] улучшилось</Russian>
+		<Hungarian>[ICON_BULLET]Egy [COLOR_HIGHLIGHT_TEXT]%s1_feature[COLOR_REVERT] jött létre</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FEATURE_REMOVE</Tag>
@@ -12111,6 +12213,7 @@
 		<Italian>[ICON_BULLET][NUM1:Il:La] %s1_feature [NUM1:è stato eliminato:è stata eliminata] </Italian>
 		<Spanish>[ICON_BULLET][NUM1:Ha desaparecido el:Ha desaparecido la:Han desaparecido los:Han desaparecido las] %s1:1_feature</Spanish>
 		<Russian>[ICON_BULLET]%s1_feature очищено</Russian>
+		<Hungarian>[ICON_BULLET]%s1_feature eltávolítva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_IMPROVEMENT_GROWTH</Tag>
@@ -12121,6 +12224,7 @@
 		<Italian>[ICON_BULLET][NUM1:È stato costruito un:È stata costruita una] [COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Se [NUM1:ha construido un:ha construido una:han construido unos:han construido unas] [COLOR_HIGHLIGHT_TEXT]%s1:1_improvement[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] построен(а)</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] megépítve</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_IMPROVEMENT_REMOVE</Tag>
@@ -12131,6 +12235,7 @@
 		<Italian>[ICON_BULLET]%s1_improvement [NUM1:distrutto:distrutta] </Italian>
 		<Spanish>[ICON_BULLET][NUM1:El:La:Los:Las] %s1:1_improvement [NUM1:ha quedado destruido:ha quedado destruida:han quedado destruidos:han quedado destruidas]</Spanish>
 		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_improvement[COLOR_REVERT] уничтожен(а)</Russian>
+		<Hungarian>[ICON_BULLET]%s1_improvement lerombolva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ROUTE_GROWTH</Tag>
@@ -12141,6 +12246,7 @@
 		<Italian>[ICON_BULLET][NUM1:Costruito un nuovo:Costruita una nuova] [COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Se [NUM1:ha construido un nuevo:ha construido una nueva:han construido unos nuevos:han construido unas nuevas] [COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Новая (дорога) [COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT] построена</Russian>
+		<Hungarian>[ICON_BULLET]Egy új [COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT] megépítve</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ROUTE_REMOVE</Tag>
@@ -12151,6 +12257,7 @@
 		<Italian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT] [NUM1:distrutto:distrutta] </Italian>
 		<Spanish>[ICON_BULLET]Se [NUM1:ha destruido el:ha destruido la:han destruido los:han destruido las] [COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT] уничтожена</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1_route[COLOR_REVERT] megsemmisítve</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_UNIT_EXPERIENCE</Tag>
