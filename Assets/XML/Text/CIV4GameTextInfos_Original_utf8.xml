@@ -12268,6 +12268,7 @@
 		<Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] riceve %d1 PE</Italian>
 		<Spanish>[ICON_BULLET][NUM2:El:La:Los:Las] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] [NUM2:recibe:recibe:reciben:reciben] %d1 PX</Spanish>
 		<Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] получил %d1 XP</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] egységed %d1 TP-t szerzett</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_UNIT_DISBAND</Tag>
@@ -12278,6 +12279,7 @@
 		<Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] è perduta</Italian>
 		<Spanish>[ICON_BULLET]Se [NUM1:ha perdido el:ha perdido la:han perdido los:han perdido las] [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] потерян</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] egységed megsemmisült</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_UNIT_PROMOTION</Tag>
@@ -12288,6 +12290,7 @@
 		<Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] riceve la promozione [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET][NUM1:El:La:Los:Las] [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] [NUM1:asciende:asciende:ascienden:ascienden] a [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] повышен до [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] egységed [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT] előléptetésben részesült</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_UNIT_COMBAT_PROMOTION</Tag>
@@ -12298,6 +12301,7 @@
 		<Italian>[ICON_BULLET]Tutte le unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] ricevono la promozione [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET][NUM1:Todos los:Todas las:Todos los:Todos las] %s1:2_units ascienden a [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Все [COLOR_UNIT_TEXT]%s1_units[COLOR_REVERT] повышены до [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Minden [COLOR_UNIT_TEXT]%s1_units[COLOR_REVERT] egységed [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT] előléptetésben részesült</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ATTITUDE_GOOD</Tag>
@@ -12308,6 +12312,7 @@
 		<Italian>[ICON_BULLET]Migliorare di [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] le relazioni con [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Ganar un [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] de mejora de las relaciones con [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Получите [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] к улучшению отношений с [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Kapcsolatod [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] felé javul: [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] </Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ATTITUDE_BAD</Tag>
@@ -12318,6 +12323,7 @@
 		<Italian>[ICON_BULLET]Peggiorare di [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] le relazioni con [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Sufrir un [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] de empeoramiento de las relaciones con [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Получите [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] к ухудшению отношений с [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Kapcsolatod [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] felé romlik: [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BONUS_BUILDING</Tag>
@@ -12328,6 +12334,7 @@
 		<Italian>[ICON_BULLET]Ricevere [NUM1:un:una] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Recibir [NUM1:un:una:unos:unas] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Построено здание: [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Jutalmad egy [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REMOVE_BUILDING</Tag>
@@ -12338,6 +12345,7 @@
 		<Italian>[ICON_BULLET]Perdere [NUM1:un:una] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Perder [NUM1:el:la:los:las] [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Потеряно [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Elveszted: [COLOR_BUILDING_TEXT]%s1_building[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BONUS_REVEALED</Tag>
@@ -12348,6 +12356,7 @@
 		<Italian>[ICON_BULLET]Rivelare tutti i [COLOR_HIGHLIGHT_TEXT]%s1_bonus[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Mostrar [NUM1:todo el:toda la:todos los:todas las] [COLOR_HIGHLIGHT_TEXT]%s1_bonus[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Раскрыты все [COLOR_HIGHLIGHT_TEXT]%s1_bonus[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Minden [COLOR_HIGHLIGHT_TEXT]%s1_bonus[COLOR_REVERT] láthatóvá válik</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_IMMOBILE_UNIT</Tag>
@@ -12358,6 +12367,7 @@
 		<Italian>[ICON_BULLET]L'unità [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] sarà occupata per %d1 [NUM1:turno:turni], e non farà altro eccetto difendersi.</Italian>
 		<Spanish>[ICON_BULLET][NUM2:El:La:Los:Las] [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] [NUM2:no estará disponible:no estará disponible:no estarán disponibles:no estarán disponibles] durante %d1 [NUM1:turno:turnos], para ningún cometido que no sea su propia defensa</Spanish>
 		<Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] будет занят %d1 [NUM1:ход:хода] и не сможет выполнять никаких распоряжений, кроме самообороны.</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] egységed %d1 körön át elfoglalt lesz, az önvédelmen kívül más feladat elvégzésére nem lesz képes.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_RIVER_PLOTS</Tag>
@@ -12368,6 +12378,7 @@
 		<Italian>Caselle di fiume</Italian>
 		<Spanish>Casillas de río</Spanish>
 		<Russian>Речные клетки</Russian>
+		<Hungarian>Folyó területek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOUBLE_SPEED_TRAIT</Tag>
@@ -12378,6 +12389,7 @@
 		<Italian>[ICON_BULLET]Doppia velocità produttiva con un leader %s1_trait</Italian>
 		<Spanish>[ICON_BULLET]Doble velocidad de producción con líder %s1:1_trait</Spanish>
 		<Russian>[ICON_BULLET]Двойная скорость производства для %s1_trait leaders</Russian>
+		<Hungarian>[ICON_BULLET]Dupla termelési sebesség %s1_trait vezetők részére</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PRODUCTION_MODIFIER_TRAIT</Tag>
@@ -12388,6 +12400,7 @@
 		<Italian>[ICON_BULLET]%D1_change%% di velocità produttiva con un leader %s2_trait</Italian>
 		<Spanish>[ICON_BULLET]%D1_change%% de velocidad de producción con líder %s2:1_trait</Spanish>
 		<Russian>[ICON_BULLET]%D1_change%% к скорости производства для %s2_trait leaders</Russian>
+		<Hungarian>[ICON_BULLET]%D1_change%% termelési sebesség %s2_trait vezetők részére</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GLOBELAYER_UNITS_ENEMY_TERRITORY_MILITARY</Tag>
@@ -12398,6 +12411,7 @@
 		<Italian>Nemici nel territorio</Italian>
 		<Spanish>Enemigos en territorio</Spanish>
 		<Russian>Вражеские войска на нашей территории</Russian>
+		<Hungarian>Ellenséges katonai egységek saját területen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HIDDEN_NATIONALITY</Tag>
@@ -12408,6 +12422,7 @@
 		<Italian>[ICON_BULLET]Nazionalità nascosta</Italian>
 		<Spanish>[ICON_BULLET]Nacionalidad oculta</Spanish>
 		<Russian>[ICON_BULLET]Национальность скрыта</Russian>
+		<Hungarian>[ICON_BULLET]Rejtett Nemzetiség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CAN_SAIL_TO_PORT_ROYAL</Tag>
@@ -12416,6 +12431,7 @@
 		<French>[ICON_BULLET]Peut voguer vers Port Royal</French>
 		<German>[ICON_BULLET]Kann nach Port Royal segeln</German>
 		<Russian>[ICON_BULLET]Может плыть в Порт Ройал</Russian>
+		<Hungarian>[ICON_BULLET]Elhajózhat Port Royalba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NAVAL_CONTROL</Tag>
@@ -12430,6 +12446,7 @@
 		<French>[ICON_BULLET]Ne peut transporter que des biens ou des [COLOR_HIGHLIGHT_TEXT]esclaves[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Sklaven[COLOR_REVERT] laden</German>
 		<Russian>[ICON_BULLET]Перевозит только [COLOR_HIGHLIGHT_TEXT]товары[COLOR_REVERT] и [COLOR_HIGHLIGHT_TEXT]рабов[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Csak árut és [COLOR_HIGHLIGHT_TEXT]Rabszolgákat[COLOR_REVERT] szállíthat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_IS_TREASURE_SHIP</Tag>
@@ -12438,6 +12455,7 @@
 		<French>[ICON_BULLET]Ne peut transporter que des biens ou des [COLOR_HIGHLIGHT_TEXT]trésors[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Schätze[COLOR_REVERT] laden</German>
 		<Russian>[ICON_BULLET]Перевозит только [COLOR_HIGHLIGHT_TEXT]товары[COLOR_REVERT] и [COLOR_HIGHLIGHT_TEXT]сокровища[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Csak árut és [COLOR_HIGHLIGHT_TEXT]Kincset[COLOR_REVERT] szállíthat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_IS_TROOP_SHIP</Tag>
@@ -12446,6 +12464,7 @@
 		<French>[ICON_BULLET]Ne peut transporter que des biens ou des [COLOR_HIGHLIGHT_TEXT]troupes[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Kann nur Güter oder [COLOR_HIGHLIGHT_TEXT]Truppen[COLOR_REVERT] laden</German>
 		<Russian>[ICON_BULLET]Перевозит только [COLOR_HIGHLIGHT_TEXT]товары[COLOR_REVERT] и [COLOR_HIGHLIGHT_TEXT]войска[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Csak árut és [COLOR_HIGHLIGHT_TEXT]Katonákat[COLOR_REVERT] szállíthat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ALWAYS_HOSTILE</Tag>
@@ -12456,6 +12475,7 @@
 		<Italian>[ICON_BULLET]Può attaccare senza dichiarare guerra</Italian>
 		<Spanish>[ICON_BULLET]Puede atacar sin declarar la guerra</Spanish>
 		<Russian>[ICON_BULLET]Может атаковать без объявления войны</Russian>
+		<Hungarian>[ICON_BULLET]Háború kirobbantása nélkül támadhat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SPECIAL_BUILDING_VALID</Tag>
@@ -12466,6 +12486,7 @@
 		<Italian>Ora puoi costruire [NUM1:un:una] %s1_building</Italian>
 		<Spanish>Ya podéis construir [NUM1:el:la:los:las] %s1_building</Spanish>
 		<Russian>Теперь вы можете построить %s1_building</Russian>
+		<Hungarian>Immár lehetőséged van %s1_building építésére is</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILD_COST</Tag>
@@ -12476,6 +12497,7 @@
 		<Italian>Costo : %d1_cost[ICON_GOLD]</Italian>
 		<Spanish>Coste : %d1_cost[ICON_GOLD]</Spanish>
 		<Russian>Стоимость : %d1_cost[ICON_GOLD]</Russian>
+		<Hungarian>Költség : %d1_cost[ICON_GOLD]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REPLACED_BY_UNIT</Tag>
@@ -12486,6 +12508,7 @@
 		<Italian>[ICON_BULLET]Sostituita dall'unità [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET]Sustituida por una unidad de [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Заменяется [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Lecseréli: [COLOR_UNIT_TEXT]%s1_default_unit[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_UNIT_IMMOBILE</Tag>
@@ -12496,6 +12519,7 @@
 		<Italian>La tua unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] non può muoversi per %d2 [NUM2:turno:turni]</Italian>
 		<Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] [NUM1:no puede:no puede:no pueden:no pueden] moverse durante %d2 [NUM2:turno:turnos]</Spanish>
 		<Russian>Ваш [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] не может двигаться %d2 [NUM2:ход:хода]</Russian>
+		<Hungarian>[COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] egységed %d2 körig nem tud lépni</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HELP_IMMOBILE</Tag>
@@ -12506,6 +12530,7 @@
 		<Italian>Impossibile muovere (%d1)</Italian>
 		<Spanish>No se puede mover (%d1)</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]Не может двигаться (%d1 [NUM1:ход:хода])[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]Nem tud lépni (%d1 körig)[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_YIELD_CHANGE_PLOT</Tag>
@@ -12516,6 +12541,7 @@
 		<Italian>[ICON_BULLET]%s1 nella casella</Italian>
 		<Spanish>[ICON_BULLET]%s1 en la casilla</Spanish>
 		<Russian>[ICON_BULLET]%s1 на клетке</Russian>
+		<Hungarian>[ICON_BULLET]%s1 a területen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_YIELD_CHANGE_BUILDING</Tag>
@@ -12525,6 +12551,7 @@
 		<German>[ICON_BULLET]%s1_building : %s2</German>
 		<Italian>[ICON_BULLET]%s1_building : %s2</Italian>
 		<Spanish>[ICON_BULLET]%s1_building : %s2</Spanish>
+		<Hungarian>[ICON_BULLET]%s1_building : %s2</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ADDITIONAL_CHANCE</Tag>
@@ -12535,6 +12562,7 @@
 		<Italian>[ICON_BULLET]Inoltre %s2_txt_key_event_delay_below, %d1%% di probabilità che :</Italian>
 		<Spanish>[ICON_BULLET]Además%s2_txt_key_event_delay_below, %d1%% de probabilidad de :</Spanish>
 		<Russian>[ICON_BULLET]Кроме того %s2_txt_key_event_delay_below, %d1%% шанс для :</Russian>
+		<Hungarian>[ICON_BULLET]Továbbá%s2_txt_key_event_delay_below, %d1%% esély:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DELAY</Tag>
@@ -12545,6 +12573,7 @@
 		<Italian>[ICON_BULLET]Inoltre %s1_txt_key_event_delay_below :</Italian>
 		<Spanish>[ICON_BULLET]Además%s1_txt_key_event_delay_below :</Spanish>
 		<Russian>[ICON_BULLET]Кроме того %s1_txt_key_event_delay_below :</Russian>
+		<Hungarian>[ICON_BULLET]Továbbá%s1_txt_key_event_delay_below :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DELAY_TURNS</Tag>
@@ -12555,6 +12584,7 @@
 		<Italian>, in %d1 [NUM1:turno:turni]</Italian>
 		<Spanish>, en %d1 [NUM1:turno:turnos]</Spanish>
 		<Russian>, через %d1 [NUM1:ход:ходов]</Russian>
+		<Hungarian>, %d1 körig</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DECLARE_WAR</Tag>
@@ -12565,6 +12595,7 @@
 		<Italian>[ICON_BULLET]Interpreta le azioni [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] come una dichiarazione di guerra nei tuoi confronti</Italian>
 		<Spanish>[ICON_BULLET]Considerar los actos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] como una declaración de guerra contra vos</Spanish>
 		<Russian>[ICON_BULLET]Считайте действия [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] объявлением вам войны</Russian>
+		<Hungarian>[ICON_BULLET]Egy ellened szóló hadüzenetnek veszed ezt a váratlan [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] lépést</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_MORE_GROWTH</Tag>
@@ -12575,6 +12606,7 @@
 		<Italian>[ICON_BULLET]Dà al terreno una maggiore probabilità di espandersi</Italian>
 		<Spanish>[ICON_BULLET]Da más posibilidades de propagarse a un terreno</Spanish>
 		<Russian>[ICON_BULLET]Дает местности более высокий шанс распространения</Russian>
+		<Hungarian>[ICON_BULLET]A terep nagyobb eséllyel terjed</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADVANCED_START_BEGIN_GAME</Tag>
@@ -12584,6 +12616,7 @@
 		<German>Start!</German>
 		<Italian>Iniziamo!</Italian>
 		<Spanish>¡Empezar!</Spanish>
+		<Hungarian>Hadd szóljon!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_TURN_TIMER_NEW</Tag>
@@ -12593,6 +12626,7 @@
 		<German>Neue Rundenzählung angeben (Stunden)</German>
 		<Italian>Inserisci il nuovo timer dei turni (ore)</Italian>
 		<Spanish>Introduce nuevo contador del turno (horas)</Spanish>
+		<Hungarian>Add meg az új köridőt (óra)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_CARGO_TEXT</Tag>
@@ -12603,6 +12637,7 @@
 		<Italian>[ICON_BULLET]%D1_Change spazio di carico</Italian>
 		<Spanish>[ICON_BULLET]Bodega : %D1_Change</Spanish>
 		<Russian>[ICON_BULLET]%D1_Change места для груза</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Change Raktérkapacitás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_UNIT_CLASS_PROMOTION</Tag>
@@ -12613,6 +12648,7 @@
 		<Italian>[ICON_BULLET]Ogni unità [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] viene promossa con [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Italian>
 		<Spanish>[ICON_BULLET][NUM1:Todos los:Todas las:Todos los:Todas las] [COLOR_UNIT_TEXT]%s1:2_unit[COLOR_REVERT] [NUM1:son ascendidos:son ascendidas:son ascendidos:son ascendidas] a [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Spanish>
 		<Russian>[ICON_BULLET]Каждый [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] улучшен до [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Minden [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s2_promotion[COLOR_REVERT] előléptetésben részesült</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_UNITS_UNDER_ATTACK_UNKNOWN</Tag>
@@ -12623,6 +12659,7 @@
 		<Italian>Le tue forze sono sotto attacco!</Italian>
 		<Spanish>Atacan a vuestras fuerzas.</Spanish>
 		<Russian>Ваши войска атакованы!</Russian>
+		<Hungarian>Csapatod támadás alatt áll!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ADVANCED_START_POINTS</Tag>
@@ -12632,6 +12669,7 @@
 		<German>Basispunkte für Fortgeschrittenen Start :</German>
 		<Italian>Punti iniziali Avvio avanzato :</Italian>
 		<Spanish>Puntos base del Inicio avanzado :</Spanish>
+		<Hungarian>Haladó Indítás Alappontszáma :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_AS_UNREMOVABLE</Tag>
@@ -12641,6 +12679,7 @@
 		<German>[COLOR_WARNING_TEXT]Nicht entfernbar[COLOR_REVERT]</German>
 		<Italian>[COLOR_WARNING_TEXT]Non rimuovibile[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_WARNING_TEXT]No eliminable[COLOR_REVERT]</Spanish>
+		<Hungarian>[COLOR_WARNING_TEXT]Nem eltávolítható[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_LOG</Tag>
@@ -12651,6 +12690,7 @@
 		<Italian>Registro degli eventi</Italian>
 		<Spanish>Historial de sucesos</Spanish>
 		<Russian>Журнал событий</Russian>
+		<Hungarian>Esemény Napló</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CHAT_LOG</Tag>
@@ -12661,6 +12701,7 @@
 		<Italian>Registro chat</Italian>
 		<Spanish>Historial del chat</Spanish>
 		<Russian>История чата</Russian>
+		<Hungarian>Beszélgetés Napló</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_LOG</Tag>
@@ -12671,6 +12712,7 @@
 		<Italian>Registro combattimenti</Italian>
 		<Spanish>Historial del combate</Spanish>
 		<Russian>Боевой журнал</Russian>
+		<Hungarian>Harci Napló</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_QUEST_MESSAGE_LOG</Tag>
@@ -12681,6 +12723,7 @@
 		<Italian>Imprese</Italian>
 		<Spanish>Misiones</Spanish>
 		<Russian>Задачи (Квесты)</Russian>
+		<Hungarian>Küldetések</Hungarian>
 	</TEXT>
 <!-- ZorG. tutorial message log. START -->
 	<TEXT>
@@ -12692,6 +12735,7 @@
 		<Italian>Tutorial</Italian>
 		<Spanish>Tutorial</Spanish>
 		<Russian>Обучение</Russian>
+		<Hungarian>Oktató</Hungarian>
 	</TEXT>
 <!-- ZorG. tutorial message log. END -->
 	<TEXT>
@@ -12702,6 +12746,7 @@
 		<German>%d1 [NUM1:Runde:Runden] Universellen Friedens verbleiben</German>
 		<Italian>%d1 [NUM1:turno:turni] di pace universale rimanenti</Italian>
 		<Spanish>%d1 [NUM1:turno restante:turnos restantes] de paz universal</Spanish>
+		<Hungarian>Az Általános Békéből még %d1 kör van hátra</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LIBERATE_CITY</Tag>
@@ -12712,6 +12757,7 @@
 		<Italian>[COLOR_GREEN]Libera[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_GREEN]Liberar[COLOR_REVERT]</Spanish>
 		<Russian>[COLOR_GREEN]освободить[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_GREEN]Felszabadítás[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITY_LIBERATE</Tag>
@@ -12722,6 +12768,7 @@
 		<Italian>Libera [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (regalo a [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</Italian>
 		<Spanish>Liberar [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (regalo para [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</Spanish>
 		<Russian>Освободить город [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] (передать [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT])</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] felszabadítása (ajándék [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] részére)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CITY_LIBERATED</Tag>
@@ -12732,6 +12779,7 @@
 		<Italian>In un momento di generosità, [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] ha liberato [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT], che è passata sotto il controllo [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT].</Italian>
 		<Spanish>En un gracioso acto de generosidad, [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] ha liberado [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT], que ha pasado a control [COLOR_HIGHLIGHT_TEXT]%s3:1_civ_adjective[COLOR_REVERT].</Spanish>
 		<Russian>Проявив неслыханную щедрость, [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] освободил окупированный город[COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT], передав его под контроль [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT].</Russian>
+		<Hungarian>Nagylelkűsége kegyes bizonyítékaként [COLOR_HIGHLIGHT_TEXT]%s2_player[COLOR_REVERT] felszabadította [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] városát, mely így [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT] fennhatóság alá került.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_LIBERATION_DEMAND</Tag>
@@ -12742,6 +12790,7 @@
 		<Italian>Signore, i cittadini di [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] a buon diritto chiedono di unirsi a [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Concedendoglielo, [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] ci guarderebbe con favore.</Italian>
 		<Spanish>Excelencia, los ciudadanos de [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] piden legítimamente unirse al [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Permitírselo nos predispondría favorablemente a ojos de [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT].</Spanish>
 		<Russian>Милорд, жители города [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] хотят стать поддаными [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT]. Если мы позволим им это сделать, [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] будет очень доволен нами.</Russian>
+		<Hungarian>Uram, [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] lakosai jogosan követelik, hogy rendeld őket [COLOR_HIGHLIGHT_TEXT]%s2_civ[COLOR_REVERT] fennhatósága alá. Ha elfogadod, [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] elégedett lesz velünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILOPEDIA_STRATEGY</Tag>
@@ -12752,6 +12801,7 @@
 		<Italian>[BOLD]Strategia :[\BOLD][PARAGRAPH:1]</Italian>
 		<Spanish>[BOLD]Estrategia :[\BOLD][PARAGRAPH:1]</Spanish>
 		<Russian>[BOLD]Стратегия :[\BOLD][PARAGRAPH:1]</Russian>
+		<Hungarian>[BOLD]Stratégia :[\BOLD][PARAGRAPH:1]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILOPEDIA_BACKGROUND</Tag>
@@ -12762,6 +12812,7 @@
 		<Italian>[BOLD]Informazioni :[\BOLD][PARAGRAPH:1]</Italian>
 		<Spanish>[BOLD]Historia :[\BOLD][PARAGRAPH:1]</Spanish>
 		<Russian>[BOLD]Историческая справка :[\BOLD][PARAGRAPH:1]</Russian>
+		<Hungarian>[BOLD]Háttér :[\BOLD][PARAGRAPH:1]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_NO_SOUND</Tag>
@@ -12772,6 +12823,7 @@
 		<Italian>Nessun suono</Italian>
 		<Spanish>Sin sonido</Spanish>
 		<Russian>Без звука</Russian>
+		<Hungarian>Elnémítás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_EFFECTSVOLUME</Tag>
@@ -12782,6 +12834,7 @@
 		<Italian>Volume effetti sonori</Italian>
 		<Spanish>Volumen de los efectos de sonido</Spanish>
 		<Russian>Эффекты</Russian>
+		<Hungarian>Hanghatások</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_HALL_OF_FAME</Tag>
@@ -12792,6 +12845,7 @@
 		<Italian>Categoria Dei Migliori</Italian>
 		<Spanish>Ver Salón de la Fama</Spanish>
 		<Russian>Войти в Зал славы</Russian>
+		<Hungarian>Dicsőségcsarnok Megtekintése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_HALL_OF_FAME_SCREEN_TITLE</Tag>
@@ -12802,6 +12856,7 @@
 		<Italian>Categoria dei migliori</Italian>
 		<Spanish>Salón de la Fama</Spanish>
 		<Russian>Зал славы</Russian>
+		<Hungarian>Dicsőségcsarnok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_REGENERATE_MAP</Tag>
@@ -12811,6 +12866,7 @@
 		<German>Karte neu laden</German>
 		<Italian>Rigenera mappa</Italian>
 		<Spanish>Regenerar mapa</Spanish>
+		<Hungarian>Térkép Újragenerálása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPENING_MENU</Tag>
@@ -12821,6 +12877,7 @@
 		<Italian>Menu d'apertura</Italian>
 		<Spanish>Menú inicial</Spanish>
 		<Russian>Открытие меню</Russian>
+		<Hungarian>Nyitómenü</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_AUTOMATE_EXPLORE_HELP</Tag>
@@ -12831,6 +12888,7 @@
 		<Italian>Questo ordine comanda all'unità di esplorare le regioni ancora inesplorate della mappa. L'unità continuerà a muoversi finché ci saranno luoghi da esplorare.</Italian>
 		<Spanish>Con esta orden le decís a la unidad que explore las zonas del mapa que estén sin cartografiar. Seguirá moviéndose hasta que se quede sin lugares que explorar.</Spanish>
 		<Russian>Отряд будет исследовать неизведанные регионы на карте. Юнит будет продолжать двигаться, пока не будет исследована вся доступная территория или пока не встретит враждебные отряды.</Russian>
+		<Hungarian>Ez a parancs arra utasítja az egységet, hogy fedezze fel a térkép még felderítetlen részeit. Addig folytatja ezt a tevékenységet, míg nem marad feltérképezetlen terület.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_LEAD_TROOPS</Tag>
@@ -12841,6 +12899,7 @@
 		<Italian>Dà un totale di %d1_Num di esperienza alle unità presenti nella stessa casella</Italian>
 		<Spanish>Da un total de %d1_Num de experiencia a las unidades en la misma casilla</Spanish>
 		<Russian>Дает %d1_Num очков опыта юнитам на этой клетке</Russian>
+		<Hungarian>Az ugyanazon a területen álló egységeknek összesen %d1_Num Tapasztalati Pontot ad</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEADER</Tag>
@@ -12851,6 +12910,7 @@
 		<Italian>[ICON_BULLET]Può dare %d1_Num di esperienza alle unità presenti nella stessa casella</Italian>
 		<Spanish>[ICON_BULLET]Puede dar un total de %d1_Num de experiencia a las unidades en la misma casilla</Spanish>
 		<Russian>[ICON_BULLET]Может дать %d1_Num опыта юнитам на одной клетке</Russian>
+		<Hungarian>[ICON_BULLET]Az ugyanazon a területen álló egységeknek %d1_Num Tapasztalati Pontot adhat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CHOOSE_UNIT_TO_LEAD</Tag>
@@ -12861,6 +12921,7 @@
 		<Italian>Scegli l'unità da guidare</Italian>
 		<Spanish>Elegir unidad a liderar</Spanish>
 		<Russian>Выберите юнит для назначения командира</Russian>
+		<Hungarian>Válassz egységet, akit vezessen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_WHEN_LEADING</Tag>
@@ -12871,6 +12932,7 @@
 		<Italian>Quando legato a un'unità :</Italian>
 		<Spanish>Cuando se agrega a una unidad :</Spanish>
 		<Russian>Когда прикреплен к юниту :</Russian>
+		<Hungarian>Ha egy egységhez van rendelve :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HILLS_STRENGTH</Tag>
@@ -12881,6 +12943,7 @@
 		<Italian>[ICON_BULLET]%D1_Change%% alla forza in collina</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% a la fuerza en colinas</Spanish>
 		<Russian>[ICON_BULLET]%D1_Change%% к силе в холмах</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Change%% Erő a Dombokon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HILLS_ATTACK</Tag>
@@ -12891,6 +12954,7 @@
 		<Italian>[ICON_BULLET]%D1_Change%% all'attacco in collina</Italian>
 		<Spanish>[ICON_BULLET]%D1_Change%% a atacar colinas</Spanish>
 		<Russian>[ICON_BULLET]%D1_Change%% к атаке в холмах</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Change%% Támadás a Dombokon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIQUE_BUILDINGS</Tag>
@@ -12901,6 +12965,7 @@
 		<Italian>Edifici unici</Italian>
 		<Spanish>Edificios exclusivos</Spanish>
 		<Russian>Уникальные строения</Russian>
+		<Hungarian>Különleges épületek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_PILLAGE_CHANGE_TEXT</Tag>
@@ -12911,6 +12976,7 @@
 		<Italian>[ICON_BULLET]Produce %D1_percent%% [ICON_GOLD] dal saccheggio</Italian>
 		<Spanish>[ICON_BULLET]Rinde un %D1_percent%% de [ICON_GOLD] en los saqueos</Spanish>
 		<Russian>[ICON_BULLET]%D1_percent%% [ICON_GOLD] при разграблении</Russian>
+		<Hungarian>[ICON_BULLET]%D1_percent%% [ICON_GOLD] fosztogatásból</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_ANIMAL_GOLD_CHANGE_TEXT</Tag>
@@ -12919,6 +12985,7 @@
 		<French>[ICON_BULLET]Donne %D1_percent%% [ICON_GOLD] lors de la chasse aux bêtes sauvages</French>
 		<German>[ICON_BULLET]%D1_percent%% [ICON_GOLD] durch das Töten wilder Tiere</German>
 		<Russian>[ICON_BULLET]%D1_percent%% [ICON_GOLD] от убийства диких животных</Russian>
+		<Hungarian>[ICON_BULLET]%D1_percent%% [ICON_GOLD] vadállatok megöléséből</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SLAVE_REVOLT_REDUCTION_BONUS_TEXT</Tag>
@@ -12927,6 +12994,7 @@
 		<French>[ICON_BULLET]Baisse de %D1_percent%% les chances de fuite et de révolte des esclaves et des travailleurs contraints</French>
 		<German>[ICON_BULLET]%D1_percent%% reduzierte Fluchtversuche und Revolten von Sklaven und Zwangsarbeitern</German>
 		<Russian>[ICON_BULLET]%D1_percent%% к уменьшению шанса побега или мятежа несвободных колонистов</Russian>
+		<Hungarian>[ICON_BULLET]%D1_percent%%-kal kisebb esély a rabszolgák és más kényszermunkások szökéséhez és lázadásához</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_SLAVE_WORKER_PRODUCTION_BONUS_TEXT</Tag>
@@ -12935,6 +13003,7 @@
 		<French>[ICON_BULLET]Augmente de %D1_percent%% la productivité des esclaves et des travailleurs contraints</French>
 		<German>[ICON_BULLET]%D1_percent%% höhere Produktivität von Sklaven und Zwangsarbeitern</German>
 		<Russian>[ICON_BULLET]%D1_percent%% к продуктивности труда несвободных колонистов</Russian>
+		<Hungarian>[ICON_BULLET]%D1_percent%%-kal nagyobb termelékenység a rabszolgáknak és más kényszermunkásoknak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_ADDITIONAL_LAW_TO_CITY_TEXT</Tag>
@@ -12943,6 +13012,7 @@
 		<French>[ICON_BULLET]+%d1_Num%F2_Icon à la ville (si la population n'est pas trop basse)</French>
 		<German>[ICON_BULLET]+%d1_Num%F2_Icon in der Stadt (falls Bevölkerung nicht zu niedrig)</German>
 		<Russian>[ICON_BULLET]+%d1_Num%F2_Icon в городе (если размер колонии больше 9)</Russian>
+		<Hungarian>[ICON_BULLET]+%d1_Num%F2_Icon a Városnak (ha a népesség nem túl alacsony)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NEGATIVE_PROMOTION</Tag>
@@ -12951,6 +13021,7 @@
 		<French>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Effet négatif ![COLOR_REVERT]</French>
 		<German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Negative Eigenschaft ![COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Негативный эффект ![COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Negatív Hatás ![COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NEEDS_HEALING_IN_CITY</Tag>
@@ -12959,6 +13030,7 @@
 		<French>[ICON_BULLET]Doit être soigné dans une [COLOR_CYAN]ville[COLOR_REVERT], un  [COLOR_CYAN]village indigène[COLOR_REVERT], ou un [COLOR_CYAN]Fort[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Muss in einer [COLOR_CYAN]Stadt[COLOR_REVERT] oder einem [COLOR_CYAN]Ureinwohnerdorf[COLOR_REVERT] auskuriert werden.</German>
 		<Russian>[ICON_BULLET]Можно вылечить, отдохнув два хода в [COLOR_CYAN]городе[COLOR_REVERT], [COLOR_CYAN]деревне индейцев[COLOR_REVERT] или [COLOR_CYAN]форте[COLOR_REVERT].</Russian>
+		<Hungarian>[ICON_BULLET]Egy [COLOR_CYAN]Városban[COLOR_REVERT] vagy [COLOR_CYAN]Indián Faluban[COLOR_REVERT] vagy [COLOR_CYAN]Erődben[COLOR_REVERT] kell pihennie, hogy meggyógyuljon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_CAN_NOT_BE_EARNED_BY_XP</Tag>
@@ -12967,6 +13039,7 @@
 		<French>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Ne peut pas être acquis via l'EXP.[COLOR_REVERT]</French>
 		<German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Kann nicht durch EP erworben werden.[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Не может быть восстановлено/заработано с помощью ЕXP[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Nem szerezhető meg TP-vel ![COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_UPGRADE_DISCOUNT_FREE_TEXT</Tag>
@@ -12976,6 +13049,7 @@
 		<German>[ICON_BULLET]Freie Modernisierungen</German>
 		<Italian>[ICON_BULLET]Miglioramenti gratuiti</Italian>
 		<Spanish>[ICON_BULLET]Modernizaciones asequibles</Spanish>
+		<Hungarian>[ICON_BULLET]Ingyenes fejlesztés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_UPGRADE_DISCOUNT_TEXT</Tag>
@@ -12985,6 +13059,7 @@
 		<German>[ICON_BULLET]%d1_percent%% weniger [ICON_GOLD] für Modernisierungen</German>
 		<Italian>[ICON_BULLET]%d1_percent%% [ICON_GOLD] in meno ai miglioramenti</Italian>
 		<Spanish>[ICON_BULLET]%d1_percent%% menos de [ICON_GOLD] para modernizar</Spanish>
+		<Hungarian>[ICON_BULLET]%d1_percent%%-kal kevesebb [ICON_GOLD] szükséges a fejlesztéshez</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FASTER_EXPERIENCE_TEXT</Tag>
@@ -12995,6 +13070,7 @@
 		<Italian>[ICON_BULLET]Acquisisce %D1_percent%% di esperienza da combattimento</Italian>
 		<Spanish>[ICON_BULLET]Gana un %D1_percent%% de experiencia por combate</Spanish>
 		<Russian>[ICON_BULLET]Дает %D1_percent%% к боевому опыту</Russian>
+		<Hungarian>[ICON_BULLET]%D1_percent%% Tapasztalat a harcban</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIQUE_BUILDING</Tag>
@@ -13005,6 +13081,7 @@
 		<Italian>Edificio unico [LINK=literal]%s1_civDesc[\LINK]</Italian>
 		<Spanish>Edificio exclusivo del [LINK=literal]%s1_civDesc[\LINK]</Spanish>
 		<Russian>Уникальное здание для [LINK=literal]%s1_civDesc[\LINK]</Russian>
+		<Hungarian>[LINK=literal]%s1_civDesc[\LINK] különleges épület</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MP_DIPLO_CANCEL_CURRENT_DEALS</Tag>
@@ -13015,6 +13092,7 @@
 		<Italian>Annulla gli accordi attuali...</Italian>
 		<Spanish>Cancelar los tratos actuales...</Spanish>
 		<Russian>Отменить текущие сделки.</Russian>
+		<Hungarian>A jelenlegi egyezségek felmondása.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_GP_BORN</Tag>
@@ -13025,6 +13103,7 @@
 		<Italian>%s1_GPName è nato a [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT]!</Italian>
 		<Spanish>%s1_GPName ha nacido en [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT].</Spanish>
 		<Russian>Во всех колониях [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] известен, как великий воин и полководец. Гарнизон города [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] рад прибытию этого прославленного военачальника.</Russian>
+		<Hungarian>A rettenthetetlen [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] a bátorság mintaképe lett [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] településen. Az ország minden táján elterjedt a hírneve, mint igazán nagy harcos és hadvezér.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_GP_BORN_SOMEWHERE</Tag>
@@ -13035,6 +13114,7 @@
 		<Italian>%s1_GPName è [NUM1:nato:nata] in una terra lontana!</Italian>
 		<Spanish>%s1_GPName ha nacido en una tierra muy lejana.</Spanish>
 		<Russian>В городах распространяются слухи, что где-то в далеких колониях [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] прославился как великий полководец. Нам надо быть начеку, милорд!</Russian>
+		<Hungarian>Egy távoli vidéken [COLOR_UNIT_TEXT]%s1_GPName[COLOR_REVERT] nagy hadvezérként szerez magának hírnevet. Uram, vigyázz magadra!!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_GP_BORN_FIELD</Tag>
@@ -13045,6 +13125,7 @@
 		<Italian>%s1_GreatPersonName si è distinto sul campo</Italian>
 		<Spanish>Ha aparecido %s1_GreatPersonName en el campo de batalla</Spanish>
 		<Russian>В недавней битве один командующий так выстроил свои войска, что противник ничего не мог с ними поделать и ему пришлось отступить. Теперь [COLOR_SELECTED_TEXT]%s1_GreatPersonName[COLOR_REVERT] повсюду известен как великий полководец.</Russian>
+		<Hungarian>A legutóbbi csatában [COLOR_SELECTED_TEXT]%s1_GreatPersonName[COLOR_REVERT] úgy esett neki ellenségeinek, mint farkas a bárányoknak. Most már mindenütt nagy hadvezérként ismerik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_BL_BORN</Tag>
@@ -13053,6 +13134,7 @@
 		<French>Les guerriers en garnison à [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] admirent leur lieutenant pour sa bravoure.</French>
 		<German>Der unerschrockene Leutnant gilt den in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Tapferkeit und Manneszucht.</German>
 		<Russian>Воины в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] уважают своего лейтенанта за его храбрость.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] katonái felnéznek Hadnagyukra a bátorsága miatt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_BL_BORN_SOMEWHERE</Tag>
@@ -13061,6 +13143,7 @@
 		<French>Dans une région lointaine, un jeune soldat se distingue comme un lieutenant courageux. </French>
 		<German>In einer fernen Gegend macht ein junger Soldat als ein mutiger Leutnant von sich reden.</German>
 		<Russian>В далеком крае молодой солдат стал известным храбрым лейтенантом.</Russian>
+		<Hungarian>Egy távoli vidéken egy fiatal katona bátor Hadnagyként szerez magának hírnevet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_BL_BORN_FIELD</Tag>
@@ -13069,14 +13152,16 @@
 		<French>Lors des derniers combats un jeune soldat s'est distingué par sa bravoure face à l'ennemi. Il est maintenant reconnu comme un lieutenant courageux. </French>
 		<German>In der jüngsten Schlacht fiel ein junger Soldat über seine Feinde her wie der Wolf über die Lämmer. Er gilt nun allerorten als mutiger Leutnant.</German>
 		<Russian>В недавнем сражении молодой воин бросался на своих врагов, как волк на ягнят. Теперь повсюду он известен как поистине храбрый лейтенант.</Russian>
+		<Hungarian>A legutóbbi csatában egy fiatal katona úgy esett neki ellenségeinek, mint farkas a bárányoknak. Most már mindenütt úgy ismerik, mint egy igazán bátor Hadnagyot.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CC_BORN</Tag>
-		<English>The seamen stationed in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] respect their captain for his leadership and tactics.</English>
+		<English>The sailors stationed in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] respect their captain for his leadership and tactics.</English>
 		<Portuguese>Os marinheiros estacionados em [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] respeitam seu capitão por sua liderança e táticas.</Portuguese>
 		<French>Les marins rattachés à  [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] respectent leur capitaine pour son sens tactique et son commandement.</French>
 		<German>Der fähiger Seemann gilt den in [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] stationierten Kämpfern als ein Vorbild an Fähigkeit und Schläue.</German>
 		<Russian>Воины в [COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] уважают своего капитана за его умелое руководство и знания тактики.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s1_CityName[COLOR_REVERT] tengerészei tisztelik a Kapitányukat a vezetési és taktikái képességeiért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CC_BORN_SOMEWHERE</Tag>
@@ -13085,14 +13170,16 @@
 		<French>Dans une région lointaine, un jeune marin se fait un nom comme capitaine capable. </French>
 		<German>In einer fernen Gegend macht ein junger Seeman als ein fähiger Kapitän von sich reden.</German>
 		<Russian>Люди говорят, где-то далеко молодой моряк смог стать умелым капитаном.</Russian>
+		<Hungarian>Egy távoli vidéken egy fiatal tengerész tehetséges Kapitányként szerez magának hírnevet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_CC_BORN_FIELD</Tag>
-		<English>In the recent sea battle a young captain led his crew into the enemy like a shark against a bunch of tuna. He is now known everywhere as a truly capable commander.</English>
+		<English>In the recent sea battle a young captain cut through the enemy like a shark into a school of tuna. He is now known everywhere as a truly capable commander.</English>
 		<Portuguese>Na recente batalha naval, um jovem capitão liderou sua tripulação contra o inimigo como um tubarão contra um bando de atum. Ele agora é conhecido em todos os lugares como um comandante verdadeiramente capaz.</Portuguese>
 		<French>Lors de la dernière bataille navale un jeune capitaine a mené son équipage contre l'ennemi comme un requin dans un banc de thons. Il est reconnu de tous comme un commandant vraiment capable. </French>
 		<German>In der jüngsten Seeschlacht fiel ein junger Seemann und seine Mannschaft über seine Feinde her wie der Hai über Thunfische. Er gilt nun allerorten als wahrhaft fähiger Kapitän.</German>
 		<Russian>В недавнем морском сражении молодой командер, искусно управляя своим кораблём, нанёс противнику серьёзный ушерб. Теперь повсюду его знают как действительно способного капитана.</Russian>
+		<Hungarian>A legutóbbi tengeri csatában egy fiatal kapitány úgy vezette legénységét az ellenség ellen, mint a vad cápa. Most már mindenütt úgy ismerik, mint igazán rátermett Parancsnokot.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_GREAT_GENERAL_MODIFIER</Tag>
@@ -13103,6 +13190,7 @@
 		<Italian>[ICON_BULLET]%D1%% comparsa di un Grande Generale</Italian>
 		<Spanish>[ICON_BULLET]%D1%% de aparición de Gran general</Spanish>
 		<Russian>[ICON_BULLET]%D1%% к скорости появления Великого Генерала</Russian>
+		<Hungarian>[ICON_BULLET]%D1%% esély egy Nagy Hadvezér megszületésére</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRAIT_DOMESTIC_GREAT_GENERAL_MODIFIER</Tag>
@@ -13113,6 +13201,7 @@
 		<Italian>[ICON_BULLET]%D1%% comparsa di un Grande Generale all'interno dei confini culturali</Italian>
 		<Spanish>[ICON_BULLET]%D1%% de aparición de un Gran general dentro de las fronteras culturales</Spanish>
 		<Russian>[ICON_BULLET]%D1%% к скорости появления Великого Генерала (внутри культурных границ)</Russian>
+		<Hungarian>[ICON_BULLET]%D1%% esély egy Nagy Hadvezér megszületésére a Kulturális határokon belül</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_GREAT_GENERAL_MODIFIER</Tag>
@@ -13123,6 +13212,7 @@
 		<Italian>[ICON_BULLET]%D1_Mod%% comparsa di un Grande Generale all'interno dei confini culturali</Italian>
 		<Spanish>[ICON_BULLET]%D1_Mod%% a la aparición de un Gran general dentro de las fronteras culturales</Spanish>
 		<Russian>[ICON_BULLET]%D1_Mod%% к скорости появления Великого Генерала (внутри культурных границ)</Russian>
+		<Hungarian>[ICON_BULLET]%D1%% esély egy Nagy Hadvezér megszületésére a Kulturális határokon belül</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEADER_EXPERIENCE</Tag>
@@ -13133,6 +13223,7 @@
 		<Italian>[ICON_BULLET]Può dare %d1 di esperienza alle unità presenti nella stessa casella</Italian>
 		<Spanish>[ICON_BULLET]Puede dar hasta %d1 PX a cada unidad que esté en la misma casilla.</Spanish>
 		<Russian>[ICON_BULLET]Может дать до %d1 XP каждому юниту на одной клетке</Russian>
+		<Hungarian>[ICON_BULLET]Maximum %d1 TP-t adhat a vele azonos területen álló minden egységnek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_GREAT_GENERAL</Tag>
@@ -13143,6 +13234,7 @@
 		<Italian>Grande Generale : %d1_Curr/%d2_Need esperienza</Italian>
 		<Spanish>Gran general : %d1_Curr/%d2_Need de experiencia</Spanish>
 		<Russian>Великий Генерал : %d1_Curr/%d2_Need опыта</Russian>
+		<Hungarian>Nagy Hadvezér: %d1_Curr/%d2_Need Tapasztalat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_GREAT_ADMIRAL</Tag>
@@ -13153,6 +13245,7 @@
 		<Italian>Grande Admirale : %d1_Curr/%d2_Need esperienza</Italian>
 		<Spanish>Gran admiral : %d1_Curr/%d2_Need de experiencia</Spanish>
 		<Russian>Великий Адмирал : %d1_Curr/%d2_Need опыта</Russian>
+		<Hungarian>Nagy Admirális: %d1_Curr/%d2_Need Tapasztalat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_GENERAL_KILLED</Tag>
@@ -13163,6 +13256,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] è morto in battaglia!</Italian>
 		<Spanish>¡[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] ha muerto en combate!</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] погиб в неравном бою!</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_warlord[COLOR_REVERT] elesett csatában!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DROP_VOTE_HEADER_CORRECTED</Tag>
@@ -13172,6 +13266,7 @@
 		<German>Warten auf erneute Spielverbindung von %s1_Names. Wählen Sie, wie Sie fortfahren wollen, wenn Sie nicht länger warten wollen.</German>
 		<Italian>Stiamo aspettando che %s1_Names si riconnettano alla partita. Se vuoi smettere di aspettare, vota su come procedere.</Italian>
 		<Spanish>Esperando que se reanude la conexión a la partida de %s1_Names. Si no quieres seguir esperando, vota acerca de cómo proceder.</Spanish>
+		<Hungarian>Arra várunk, hogy %s1_Names újracsatlakozzon a játékhoz. Ha nem akarsz várni, kérlek szavazz arra, mi történjen!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SHIFT</Tag>
@@ -13209,6 +13304,7 @@
 		<Italian>Probabilità di ritirata : %s1%%</Italian>
 		<Spanish>Probabilidades de retirada : %s1%%</Spanish>
 		<Russian>Шанс на отступление : %s1%%</Russian>
+		<Hungarian>Visszavonulási esély: %s1%%</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOADSAVE_CREATE</Tag>
@@ -13218,6 +13314,7 @@
 		<German>Erstellen</German>
 		<Italian>Crea</Italian>
 		<Spanish>Crear</Spanish>
+		<Hungarian>Létrehozás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOADSAVE_NEW_FOLDER</Tag>
@@ -13227,6 +13324,7 @@
 		<German>Neuer Ordner</German>
 		<Italian>Nuova cartella</Italian>
 		<Spanish>Nueva carpeta</Spanish>
+		<Hungarian>Új mappa</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LOADSAVE_SELECT_FOLDER</Tag>
@@ -13236,6 +13334,7 @@
 		<German>Ordner auswählen</German>
 		<Italian>Seleziona una cartella</Italian>
 		<Spanish>Escoge una carpeta</Spanish>
+		<Hungarian>Kérlek, válassz ki egy mappát</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_WORLD_WRAP</Tag>
@@ -13245,6 +13344,7 @@
 		<German>Weltkugeldrehung</German>
 		<Italian>Estensione del pianeta</Italian>
 		<Spanish>Cobertura del mundo</Spanish>
+		<Hungarian>Földgömb megjelenítése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_WRAP_FLAT</Tag>
@@ -13254,6 +13354,7 @@
 		<German>Flach</German>
 		<Italian>Piatto</Italian>
 		<Spanish>Plana</Spanish>
+		<Hungarian>Lapos</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_WRAP_CYLINDER</Tag>
