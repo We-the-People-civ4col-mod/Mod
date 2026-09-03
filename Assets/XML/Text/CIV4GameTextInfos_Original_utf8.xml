@@ -13364,6 +13364,7 @@
 		<German>Zylindrisch</German>
 		<Italian>Cilindrico</Italian>
 		<Spanish>Cilíndrica</Spanish>
+		<Hungarian>Hengeres</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAP_WRAP_TOROID</Tag>
@@ -13373,6 +13374,7 @@
 		<German>Ringförmig</German>
 		<Italian>Toroidale</Italian>
 		<Spanish>Toroidal</Spanish>
+		<Hungarian>Tóruszos</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_UNLOAD_MOD</Tag>
@@ -13383,6 +13385,7 @@
 		<Italian>Annulla WTP</Italian>
 		<Spanish>Descargar WTP</Spanish>
 		<Russian>Выгрузить WtP</Russian>
+		<Hungarian>WTP Mod letiltása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DIPLOMACY_BUSY</Tag>
@@ -13392,6 +13395,7 @@
 		<German>%s1_player ist beschäftigt. Versuchen Sie es später noch mal.</German>
 		<Italian>%s1_player è occupato. Riprova più tardi.</Italian>
 		<Spanish>%s1_player no está disponible. Intentadlo más tarde.</Spanish>
+		<Hungarian>%s1_player elfoglalt. Próbáld meg később.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WINDOW_POPUP_MOVE</Tag>
@@ -13401,6 +13405,7 @@
 		<German>Verschieben</German>
 		<Italian>Muovi</Italian>
 		<Spanish>Mover</Spanish>
+		<Hungarian>Mozgás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WINDOW_POPUP_RESIZE</Tag>
@@ -13411,6 +13416,7 @@
 		<Italian>Dimensioni</Italian>
 		<Spanish>Tamaño</Spanish>
 		<Russian>Размер</Russian>
+		<Hungarian>Átméretezés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WINDOW_MINIMIZE</Tag>
@@ -13420,6 +13426,7 @@
 		<German>Minimieren</German>
 		<Italian>Riduci</Italian>
 		<Spanish>Minimizar</Spanish>
+		<Hungarian>Minimalizálás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WINDOW_MAXIMIZE</Tag>
@@ -13429,6 +13436,7 @@
 		<German>Maximieren</German>
 		<Italian>Ingrandisci</Italian>
 		<Spanish>Maximizar</Spanish>
+		<Hungarian>Teljes méret</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WINDOW_COLLAPSE</Tag>
@@ -13438,6 +13446,7 @@
 		<German>Ausblenden</German>
 		<Italian>Collassa</Italian>
 		<Spanish>Derruir</Spanish>
+		<Hungarian>Összecsukás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WINDOW_EXPAND</Tag>
@@ -13447,6 +13456,7 @@
 		<German>Einblenden</German>
 		<Italian>Espandi</Italian>
 		<Spanish>Expandir</Spanish>
+		<Hungarian>Kibontás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WINDOW_RESTORE_UP</Tag>
@@ -13456,6 +13466,7 @@
 		<German>Vergrößern</German>
 		<Italian>Ripristino in alto</Italian>
 		<Spanish>Restaurar (alza)</Spanish>
+		<Hungarian>Helyreállítás felfelé</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WINDOW_RESTORE_DOWN</Tag>
@@ -13465,6 +13476,7 @@
 		<German>Verkleinern</German>
 		<Italian>Ripristino in basso</Italian>
 		<Spanish>Restaurar (baja)</Spanish>
+		<Hungarian>Helyreállítás lefelé</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WINDOW_RESTORE</Tag>
@@ -13474,6 +13486,7 @@
 		<German>Wiederherstellen</German>
 		<Italian>Ripristina</Italian>
 		<Spanish>Restaurar</Spanish>
+		<Hungarian>Helyreállítás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WINDOW_CLOSE</Tag>
@@ -13484,6 +13497,7 @@
 		<Italian>Chiudi</Italian>
 		<Spanish>Close</Spanish>
 		<Russian>Закрыть</Russian>
+		<Hungarian>Bezárás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_NOT_UNIQUE_TITLE</Tag>
@@ -13493,6 +13507,7 @@
 		<German>Doppelte Herrschernamen</German>
 		<Italian>Nomi leader doppi</Italian>
 		<Spanish>Duplicar nombres de líderes</Spanish>
+		<Hungarian>Vezetőnevek Duplikálása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_LOGGING_WARNING_DESC</Tag>
@@ -13502,6 +13517,7 @@
 		<German>Spieler %d1_ID: LoggingEnabled=1.[NEWLINE]Stellen Sie sicher, dass er vertrauenswürdig ist.</German>
 		<Italian>Giocatore %d1_ID: LoggingEnabled=1.[NEWLINE]Assicurati che il giocatore sia affidabile.</Italian>
 		<Spanish>Jugador %d1_ID: LoggingEnabled=1.[NEWLINE]Comprueba si se trata de un jugador de confianza.</Spanish>
+		<Hungarian>%d1_ID engedélyezte a naplózást.[NEWLINE]Győződj meg róla, hogy megbízható játékos!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MENU_CIV_TYPE</Tag>
@@ -13511,6 +13527,7 @@
 		<German>Zivilisation :</German>
 		<Italian>Tipo di civiltà :</Italian>
 		<Spanish>Tipo de civ. :</Spanish>
+		<Hungarian>Civilizáció típusa:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MOD_REQUIRED</Tag>
@@ -13520,6 +13537,7 @@
 		<German>Für den von Ihnen gewählten Spielstand muss das folgende Mod geladen werden : [NEWLINE][BOLD]%s1[\BOLD][NEWLINE][NEWLINE]Die Anwendung wird neu gestartet, okay?</German>
 		<Italian>Il salvataggio selezionato richiede il caricamento del seguente mod : [NEWLINE][BOLD]%s1[\BOLD][NEWLINE][NEWLINE]Il gioco deve essere riavviato, continuare?</Italian>
 		<Spanish>La partida guardada que has seleccionado requiere que se cargue el siguiente mod : [NEWLINE][BOLD]%s1[\BOLD][NEWLINE][NEWLINE]La aplicación debe reiniciarse. ¿Aceptar?</Spanish>
+		<Hungarian>A kiválasztott mentéshez az alábbi mod betöltése szükséges:[NEWLINE][BOLD]%s1[\BOLD][NEWLINE].Az alkalmazást újra kell indítani. Mehet?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_MUSICVOLUME</Tag>
@@ -13530,6 +13548,7 @@
 		<Italian>Volume musica</Italian>
 		<Spanish>Música</Spanish>
 		<Russian>Музыка</Russian>
+		<Hungarian>Zene</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_SPEECHVOLUME</Tag>
@@ -13540,6 +13559,7 @@
 		<Italian>Volume del parlato</Italian>
 		<Spanish>Diálogos</Spanish>
 		<Russian>Речь</Russian>
+		<Hungarian>Beszéd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_AMBIENCEVOLUME</Tag>
@@ -13550,6 +13570,7 @@
 		<Italian>Volume ambientale</Italian>
 		<Spanish>Sonido ambiental</Spanish>
 		<Russian>Окружение</Russian>
+		<Hungarian>Környezeti hangok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_OPTIONS_INTERFACEVOLUME</Tag>
@@ -13560,6 +13581,7 @@
 		<Italian>Volume interfaccia</Italian>
 		<Spanish>Interfaz</Spanish>
 		<Russian>Интерфейс</Russian>
+		<Hungarian>Kezelőfelület</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ALL_WORLD_SIZES</Tag>
@@ -13570,6 +13592,7 @@
 		<Italian>Dimensioni del mondo</Italian>
 		<Spanish>Tamaño del mundo</Spanish>
 		<Russian>Все размеры мира</Russian>
+		<Hungarian>Minden térképméret</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_ARE_YOU_SURE_ACTION</Tag>
@@ -13580,6 +13603,7 @@
 		<Italian>Sei sicuro di voler eseguire l'azione %s1_ActionName?</Italian>
 		<Spanish>¿Seguro que queréis %s1_ActionName?</Spanish>
 		<Russian>Вы уверены, что хотите %s1_ActionName?</Russian>
+		<Hungarian>%s1_ActionName; biztos vagy benne?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_DECLARED_WAR_ON</Tag>
@@ -13590,6 +13614,7 @@
 		<Italian>Hai dichiarato guerra alla squadra [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]!</Italian>
 		<Spanish>Le habéis declarado la guerra a [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT].</Spanish>
 		<Russian>Вы объявили войну [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT]!</Russian>
+		<Hungarian>Háborút indítottál [COLOR_HIGHLIGHT_TEXT]%s1_TeamName[COLOR_REVERT] ellen!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SETTINGS_MAP_SIZE</Tag>
@@ -13600,6 +13625,7 @@
 		<Italian>Dimensione mondo %s1</Italian>
 		<Spanish>Tamaño del mundo : %s1</Spanish>
 		<Russian>%s1 размер мира</Russian>
+		<Hungarian>%s1 térképméret</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_INFO_ENTIRE_HISTORY</Tag>
@@ -13610,6 +13636,7 @@
 		<Italian>Intera storia</Italian>
 		<Spanish>Toda la historia</Spanish>
 		<Russian>За все время</Russian>
+		<Hungarian>Teljes Történelem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_SETTINGS</Tag>
