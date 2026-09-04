@@ -2213,6 +2213,7 @@ class CvMainInterface:
 										else:
 											screen.addDDSGFC(szSecondName, gc.getYieldInfo(iSecondYield).getCombiIcon(), BUILDING_GRID[iSpecialBuildingType][0] + (STACK_BAR_HEIGHT / 2), BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - (BUILDING_GRID[iSpecialBuildingType][2] / 6) + STACK_BAR_HEIGHT, STACK_BAR_HEIGHT * 3 / 2, STACK_BAR_HEIGHT * 3 / 2, WidgetTypes.WIDGET_HELP_TWO_YIELDS, iYield, iSecondYield)
 										CitizenHideList.append(szSecondName)
+									CitizenHideList.append(szName)
 
 								else:
 									screen.hide("ProductionBox" + str(iSpecialBuildingType))
