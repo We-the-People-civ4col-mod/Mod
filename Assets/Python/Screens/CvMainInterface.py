@@ -1127,7 +1127,9 @@ class CvMainInterface:
 						break
 
 			screen.setImageButton("CityBuildingGraphic" + str(iSpecial), "", BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + CITY_TITLE_BAR_HEIGHT, BUILDING_GRID[iSpecial][3], BUILDING_GRID[iSpecial][3], WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_BUILDING, iSpecial, iTargetBuilding)
-			screen.addDDSGFC("ProductionBox" + str(iSpecial), ArtFileMgr.getInterfaceArtInfo("INTERFACE_PRODUCTION_BOX").getPath(), BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + BUILDING_GRID[iSpecial][2], (BUILDING_GRID[iSpecial][3] + STACK_BAR_HEIGHT)*3/4, STACK_BAR_HEIGHT*3/4, WidgetTypes.WIDGET_GENERAL, -1, -1)
+			# Occupied workshops draw this box and the yield icon on top of the building.
+			# Keep the building-help widget so hover still names the building, like Custom House.
+			screen.addDDSGFC("ProductionBox" + str(iSpecial), ArtFileMgr.getInterfaceArtInfo("INTERFACE_PRODUCTION_BOX").getPath(), BUILDING_GRID[iSpecial][0] + STACK_BAR_HEIGHT, BUILDING_GRID[iSpecial][1] + BUILDING_GRID[iSpecial][2], (BUILDING_GRID[iSpecial][3] + STACK_BAR_HEIGHT)*3/4, STACK_BAR_HEIGHT*3/4, WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_BUILDING, iSpecial, iTargetBuilding)
 			screen.hide("ProductionBox" + str(iSpecial))
 
 	# BUTTONS
@@ -2202,16 +2204,18 @@ class CvMainInterface:
 								if (CityBuilding != -1):
 									screen.show("ProductionBox" + str(iSpecialBuildingType))
 									szName = "YieldOutPutIcon" + str(iYield)
+									iYieldIconX = BUILDING_GRID[iSpecialBuildingType][0] + (STACK_BAR_HEIGHT / 2)
+									iYieldIconY = BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - (BUILDING_GRID[iSpecialBuildingType][2] / 6) + STACK_BAR_HEIGHT
+									iYieldIconSize = STACK_BAR_HEIGHT * 3 / 2
 									if (iSecondYield < 0 or iSecondYield >= YieldTypes.NUM_YIELD_TYPES or iSecondYield == iYield):
-										screen.addDDSGFC(szName, gc.getYieldInfo(iYield).getIcon(), BUILDING_GRID[iSpecialBuildingType][0] + (STACK_BAR_HEIGHT / 2), BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - (BUILDING_GRID[iSpecialBuildingType][2] / 6) + STACK_BAR_HEIGHT, STACK_BAR_HEIGHT * 3 / 2, STACK_BAR_HEIGHT * 3 / 2, WidgetTypes.WIDGET_HELP_YIELD, iYield, -1)
+										screen.addDDSGFC(szName, gc.getYieldInfo(iYield).getIcon(), iYieldIconX, iYieldIconY, iYieldIconSize, iYieldIconSize, WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_BUILDING, iSpecialBuildingType, CityBuilding)
 									else:
 										# R&R, we do not show the first icon any more, if we have MultipleProfessionsPerBuilding
-										# screen.addDDSGFC(szName, gc.getYieldInfo(iYield).getIcon(), BUILDING_GRID[iSpecialBuildingType][0] + (STACK_BAR_HEIGHT / 2), BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - (BUILDING_GRID[iSpecialBuildingType][2] / 6) + STACK_BAR_HEIGHT, STACK_BAR_HEIGHT * 3 / 2, STACK_BAR_HEIGHT * 3 / 2, WidgetTypes.WIDGET_HELP_TWO_YIELDS, iYield, iSecondYield)
 										szSecondName = "SecondYieldOutPutIcon" + str(iSecondYield) #the second icon must not use "szName", or it replaces the former icon
 										if (iSecondYield == YieldTypes.YIELD_FOOD):
-											screen.addDDSGFC(szSecondName, gc.getYieldInfo(iYield).getIcon(), BUILDING_GRID[iSpecialBuildingType][0] + (STACK_BAR_HEIGHT / 2), BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - (BUILDING_GRID[iSpecialBuildingType][2] / 6) + STACK_BAR_HEIGHT, STACK_BAR_HEIGHT * 3 / 2, STACK_BAR_HEIGHT * 3 / 2, WidgetTypes.WIDGET_HELP_TWO_YIELDS, iYield, iSecondYield)
+											screen.addDDSGFC(szSecondName, gc.getYieldInfo(iYield).getIcon(), iYieldIconX, iYieldIconY, iYieldIconSize, iYieldIconSize, WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_BUILDING, iSpecialBuildingType, CityBuilding)
 										else:
-											screen.addDDSGFC(szSecondName, gc.getYieldInfo(iSecondYield).getCombiIcon(), BUILDING_GRID[iSpecialBuildingType][0] + (STACK_BAR_HEIGHT / 2), BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - (BUILDING_GRID[iSpecialBuildingType][2] / 6) + STACK_BAR_HEIGHT, STACK_BAR_HEIGHT * 3 / 2, STACK_BAR_HEIGHT * 3 / 2, WidgetTypes.WIDGET_HELP_TWO_YIELDS, iYield, iSecondYield)
+											screen.addDDSGFC(szSecondName, gc.getYieldInfo(iSecondYield).getCombiIcon(), iYieldIconX, iYieldIconY, iYieldIconSize, iYieldIconSize, WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_BUILDING, iSpecialBuildingType, CityBuilding)
 										CitizenHideList.append(szSecondName)
 									CitizenHideList.append(szName)
 
@@ -2233,7 +2237,7 @@ class CvMainInterface:
 
 								for iSlot in range (gc.getBuildingInfo(CityBuilding).getMaxWorkers() - ProfessionCount):
 									szName = "CitizenSlot" + str(iProfession) + "-" + str(iSlot)
-									screen.addDDSGFC(szName, ArtFileMgr.getInterfaceArtInfo("INTERFACE_CITIZEN_SLOT").getPath(), BUILDING_GRID[iSpecialBuildingType][0] + (CitizenSpacing * (iSlot + ProfessionCount)) + (CitizenSpacing/ 2), BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - ButtonSize, ButtonSize / 2, ButtonSize, WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_BUILDING, -1, CityBuilding)
+									screen.addDDSGFC(szName, ArtFileMgr.getInterfaceArtInfo("INTERFACE_CITIZEN_SLOT").getPath(), BUILDING_GRID[iSpecialBuildingType][0] + (CitizenSpacing * (iSlot + ProfessionCount)) + (CitizenSpacing/ 2), BUILDING_GRID[iSpecialBuildingType][1] + BUILDING_GRID[iSpecialBuildingType][2] - ButtonSize, ButtonSize / 2, ButtonSize, WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_BUILDING, iSpecialBuildingType, CityBuilding)
 									CitizenHideList.append(szName)
 
 								SzText = ""
@@ -2269,10 +2273,7 @@ class CvMainInterface:
 															SzText += u"<color=255,0,0> -" + str(UnproducedYield) + "</color>"
                                
 								szName = "WorkerOutputText" + str(iYield)
-								if (iSecondYield == -1 or iSecondYield == iYield):
-									screen.setLabelAt(szName, "ProductionBox" + str(iSpecialBuildingType), self.setFontSize(SzText , 0), CvUtil.FONT_RIGHT_JUSTIFY, (BUILDING_GRID[iSpecialBuildingType][3] + STACK_BAR_HEIGHT) *2 / 3, STACK_BAR_HEIGHT *2 /5, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_HELP_YIELD, iYield, -1)
-								else:
-									screen.setLabelAt(szName, "ProductionBox" + str(iSpecialBuildingType), self.setFontSize(SzText , 0), CvUtil.FONT_RIGHT_JUSTIFY, (BUILDING_GRID[iSpecialBuildingType][3] + STACK_BAR_HEIGHT) *2 / 3, STACK_BAR_HEIGHT *2 /5, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_HELP_TWO_YIELDS, iYield, iSecondYield)
+								screen.setLabelAt(szName, "ProductionBox" + str(iSpecialBuildingType), self.setFontSize(SzText , 0), CvUtil.FONT_RIGHT_JUSTIFY, (BUILDING_GRID[iSpecialBuildingType][3] + STACK_BAR_HEIGHT) *2 / 3, STACK_BAR_HEIGHT *2 /5, -1.3, FontTypes.GAME_FONT, WidgetTypes.WIDGET_ASSIGN_CITIZEN_TO_BUILDING, iSpecialBuildingType, CityBuilding)
 
 								CitizenHideList.append(szName)
 								CitizenHideList.append("ProductionBox" + str(iSpecialBuildingType)) # R&R, Robert Surcouf Fix Production box

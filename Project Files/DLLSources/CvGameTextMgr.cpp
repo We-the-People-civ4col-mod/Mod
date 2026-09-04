@@ -9792,6 +9792,33 @@ void CvGameTextMgr::setCitizenHelp(CvWStringBuffer &szString, const CvCity& kCit
 {
 	CxDesyncMonitor StartAsyncExecution;
 
+	// Indoor workers sit on top of the building graphic. Name the workshop
+	// first so occupied buildings still identify themselves, like Custom House.
+	if (kUnit.getProfession() != NO_PROFESSION)
+	{
+		const CvProfessionInfo& kIndoorProfession = GC.getProfessionInfo(kUnit.getProfession());
+		if (!kIndoorProfession.isWorkPlot())
+		{
+			const int iSpecialBuilding = kIndoorProfession.getSpecialBuilding();
+			if (iSpecialBuilding >= 0)
+			{
+				const CvCivilizationInfo& kCiv = GC.getCivilizationInfo(kCity.getCivilizationType());
+				for (BuildingClassTypes eBuildingClass = FIRST_BUILDINGCLASS; eBuildingClass < NUM_BUILDINGCLASS_TYPES; ++eBuildingClass)
+				{
+					const BuildingTypes eBuilding = kCiv.getCivilizationBuildings(eBuildingClass);
+					if (eBuilding != NO_BUILDING &&
+						GC.getBuildingInfo(eBuilding).getSpecialBuildingType() == iSpecialBuilding &&
+						kCity.isHasBuilding(eBuilding))
+					{
+						szString.append(CvWString::format(SETCOLR L"<link=literal>%s</link>" ENDCOLR, TEXT_COLOR("COLOR_BUILDING_TEXT"), GC.getBuildingInfo(eBuilding).getDescription()));
+						szString.append(NEWLINE);
+						break;
+					}
+				}
+			}
+		}
+	}
+
 	// WTP, ray, showing Profession Name in Citizen Help instead of Unit Name - START
 	if(kUnit.getProfession() != NO_PROFESSION) 
 	{
