@@ -3255,17 +3255,32 @@ int CvCity::getProfessionOutput(ProfessionTypes eProfession, const CvUnit* pUnit
 		return 0;
 	}
 
+	YieldTypes eYieldForUnitBonus = eYieldProduced;
+
+	if (pUnit != NULL && eYieldProduced == YIELD_FOOD)
+	{
+		const UnitClassTypes eExpertUnitClass = (UnitClassTypes) kProfessionInfo.LbD_getExpert();
+		const CvUnitInfo& kUnit = GC.getUnitInfo(pUnit->getUnitType());
+
+		if (eExpertUnitClass != NO_UNITCLASS &&
+			kUnit.getUnitClassType() == eExpertUnitClass &&
+			kUnit.getYieldModifier(YIELD_BAKERY_GOODS) > 0)
+		{
+			eYieldForUnitBonus = YIELD_BAKERY_GOODS;
+		}
+	}
+
 	int iModifier = 100;
 	if (pUnit != NULL)
 	{
-		iModifier += GC.getUnitInfo(pUnit->getUnitType()).getYieldModifier(eYieldProduced);
+		iModifier += GC.getUnitInfo(pUnit->getUnitType()).getYieldModifier(eYieldForUnitBonus);
 	}
 
 	int iExtra = 0;
 	if (pUnit != NULL)
 	{
 		const CvUnitInfo& kUnit = GC.getUnitInfo(pUnit->getUnitType());
-		iExtra += kUnit.getYieldChange(eYieldProduced);
+		iExtra += kUnit.getYieldChange(eYieldForUnitBonus);
 	}
 
 	int iProfessionOutput = 0;
