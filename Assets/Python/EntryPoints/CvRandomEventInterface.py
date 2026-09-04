@@ -28479,12 +28479,7 @@ def applyFiveDocksRewardShip2(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def applyFiveDocksRewardShip3(argsList):
@@ -28499,12 +28494,7 @@ def applyFiveDocksRewardShip3(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpFiveDocksRewardShip2(argsList):
