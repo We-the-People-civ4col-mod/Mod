@@ -2615,6 +2615,16 @@ bool CvUnit::isBetterDefenderThan(const CvUnit* pDefender, const CvUnit* pAttack
 	int iOurDefense;
 	int iTheirDefense;
 
+	// WTP, Schmiddie, Large Rivers - Land and sea units use separate combat layers
+	if (pAttacker != NULL &&
+		plot() != NULL &&
+		plot()->getTerrainType() == TERRAIN_LARGE_RIVERS &&
+		getDomainType() != pAttacker->getDomainType())
+	{
+		return false;
+	}
+	// WTP, Schmiddie, Large Rivers - END
+
 	if (pDefender == NULL)
 	{
 		return true;
@@ -4140,6 +4150,41 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 	}
 
 	const bool bBoarding = !bAttack && !bIgnoreLoad && canLoad(&kPlot, false);
+
+	bool bVisibleEnemyUnit = kPlot.isVisibleEnemyUnit(this);
+	bool bVisibleOtherUnit = kPlot.isVisibleOtherUnit(getOwnerINLINE());
+
+	// WTP, Schmiddie, Large Rivers - Land and sea units use separate combat layers
+	if (kPlot.getTerrainType() == TERRAIN_LARGE_RIVERS &&
+		(eDomainType == DOMAIN_LAND || eDomainType == DOMAIN_SEA))
+	{
+		bVisibleEnemyUnit = false;
+		bVisibleOtherUnit = false;
+
+		for (int i = 0; i < kPlot.getNumUnits(); ++i)
+		{
+			CvUnit* pLoopUnit = kPlot.getUnitByIndex(i);
+
+			if (pLoopUnit == NULL ||
+				pLoopUnit->getTransportUnit() != NULL ||
+				pLoopUnit->getDomainType() != eDomainType ||
+				pLoopUnit->isInvisible(getTeam(), false))
+			{
+				continue;
+			}
+
+			if (pLoopUnit->getOwnerINLINE() != getOwnerINLINE())
+			{
+				bVisibleOtherUnit = true;
+			}
+
+			if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), &kPlot), &kPlot))
+			{
+				bVisibleEnemyUnit = true;
+			}
+		}
+	}
+	// WTP, Schmiddie, Large Rivers - END
 	
 	if (canAttack())
 	{
@@ -4147,10 +4192,10 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 		{
 			if (!isHuman() || (kPlot.isVisible(getTeam(), false)))
 			{
-				if (!bBoarding && kPlot.isVisibleEnemyUnit(this) != bAttack)
+				if (!bBoarding && bVisibleEnemyUnit != bAttack)
 				{
 					//FAssertMsg(isHuman() || (!bDeclareWar || (pPlot->isVisibleOtherUnit(getOwnerINLINE()) != bAttack)), "hopefully not an issue, but tracking how often this is the case when we dont want to really declare war");
-					if (!bDeclareWar || (kPlot.isVisibleOtherUnit(getOwnerINLINE()) != bAttack && !(bAttack && kPlot.getPlotCity() && !isNoCityCapture())))
+					if (!bDeclareWar || (bVisibleOtherUnit != bAttack && !(bAttack && kPlot.getPlotCity() && !isNoCityCapture())))
 					{
 						return false;
 					}
@@ -4174,7 +4219,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 					return false;
 				}
 
-				if (kPlot.isVisibleEnemyUnit(this))
+				if (bVisibleEnemyUnit)
 				{
 					return false;
 				}
