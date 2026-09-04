@@ -13647,6 +13647,7 @@
 		<Italian>Impostazioni</Italian>
 		<Spanish>Configuración</Spanish>
 		<Russian>Настройки</Russian>
+		<Hungarian>Beállítások</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_FOUNDED_IN</Tag>
@@ -13657,6 +13658,7 @@
 		<Italian>Fondata nel %s1_DateStr</Italian>
 		<Spanish>se fundó en el año %s1_DateStr</Spanish>
 		<Russian>Основан в %s1_DateStr</Russian>
+		<Hungarian>Alapítva: %s1_DateStr</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PITBOSS_TEAM</Tag>
@@ -13667,6 +13669,7 @@
 		<Italian>Squad.</Italian>
 		<Spanish>Equipo</Spanish>
 		<Russian>Команда</Russian>
+		<Hungarian>Csapat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_TEAM</Tag>
@@ -13698,6 +13701,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Команда</Russian>
+		<Hungarian>Csapat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_PILLAGE_YIELDS</Tag>
@@ -13708,6 +13712,7 @@
 		<Italian>[ICON_BULLET]Saccheggia in media %d1_Num[ICON_GOLD] prodotti</Italian>
 		<Spanish>[ICON_BULLET]El saqueo reporta %d1_Num[ICON_GOLD] de media</Spanish>
 		<Russian>[ICON_BULLET]Разграбление принесет примерно %d1_Num[ICON_GOLD]</Russian>
+		<Hungarian>[ICON_BULLET]A fosztogatás hozama átlagosan %d1_Num[ICON_GOLD]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_IMPROVEMENT_HEAL_MODIFIER</Tag>
@@ -13716,6 +13721,7 @@
 		<French>[ICON_BULLET]Les unités sur la case[COLOR_HIGHLIGHT_TEXT]guérissent plus vite de %d1_Num%%[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Einheiten auf Feld [COLOR_HIGHLIGHT_TEXT]heilen %d1_Num%% schneller[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]Отряды на участке [COLOR_HIGHLIGHT_TEXT]лечатся на %d1_Num%% быстрее[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Egységek a területen [COLOR_HIGHLIGHT_TEXT]%d1_Num%%-kal gyorsabban gyógyulnak[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_VICTORY_SCREEN_BUILDING</Tag>
@@ -13725,6 +13731,7 @@
 		<German>%s1 %s2 errichten</German>
 		<Italian>Costruisci %s1 %s2</Italian>
 		<Spanish>Construir %s1 %s2</Spanish>
+		<Hungarian>Megépítve: %s1 %s2</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TRADE_PEACE_TREATY</Tag>
@@ -13734,6 +13741,7 @@
 		<German>Es wird für die Dauer von %d1_Num [NUM1:Runde:Runden] ein nicht-kündbarer Friedensvertrag geschlossen.</German>
 		<Italian>Stabilisce un trattato di pace infrangibile per %d1_Num [NUM1:turno:turni]</Italian>
 		<Spanish>Establece un tratado de paz inquebrantable durante %d1_Num [NUM1:turno:turnos].</Spanish>
+		<Hungarian>Létrehoz egy felbonthatatlan békeszerződést %d1_Num körre</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_ODDS</Tag>
@@ -13744,6 +13752,7 @@
 		<Italian>Probabilità di combattimento :</Italian>
 		<Spanish>Probabilidades del combate :</Spanish>
 		<Russian>Шансы на победу :</Russian>
+		<Hungarian>Harci esélyek :</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_HIT</Tag>
@@ -13754,6 +13763,7 @@
 		<Italian>L'unità %s2_UnitName dell'[COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] viene colpita subendo [COLOR_WARNING_TEXT]%d3[COLOR_REVERT] punti di danno (%d4/%d5 PV)</Italian>
 		<Spanish>[NUM2:Un:Una:Unos:Unas] %s2_UnitName del [COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] (con %d3/%d4 PG) [NUM2:ha alcanzado:ha alcanzado:han alcanzado:han alcanzado] a [NUM6:un:una:unos:unas] %s6_UnitName del [COLOR_HIGHLIGHT_TEXT]%s5_CivName[COLOR_REVERT] (con %d7/%d8 PG) y [NUM6:le han infligido:le han infligido:les han infligido:les han infligido] %d9 de daño.</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_CivName's[COLOR_REVERT] %s2_UnitName получил [COLOR_WARNING_TEXT]%d3[COLOR_REVERT] урона (%d4/%d5 HP)</Russian>
+		<Hungarian>Sebesülés! %s2_UnitName ([COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT]) [COLOR_WARNING_TEXT]%d3[COLOR_REVERT] sérülést szenved (%d4/%d5 ÉP)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_DEFEATED</Tag>
@@ -13764,6 +13774,7 @@
 		<Italian>L'unità %s2_UnitName dell'[COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] ha sconfitto l'unità %s4_UnitName dell'[COLOR_HIGHLIGHT_TEXT]%s3_CivName[COLOR_REVERT]!</Italian>
 		<Spanish>[NUM2:Un:Una:Unos:Unas] %s2_UnitName del [COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] [NUM2:ha:ha:han:han] derrotado a [NUM3:un:una:unos:unas] %s3_UnitName del [COLOR_HIGHLIGHT_TEXT]%s4_CivName[COLOR_REVERT].</Spanish>
 		<Russian>---------------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]%s1_CivName's[COLOR_REVERT] %s2_UnitName победил [COLOR_HIGHLIGHT_TEXT]%s3_CivName[COLOR_REVERT]'s %s4_UnitName!</Russian>
+		<Hungarian>---------------------------[NEWLINE][COLOR_HIGHLIGHT_TEXT]%s1_CivName[COLOR_REVERT] %s2_UnitName egysége legyőzte [COLOR_HIGHLIGHT_TEXT]%s3_CivName[COLOR_REVERT] %s4_UnitName egységét!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_VS</Tag>
@@ -13782,6 +13793,7 @@
 		<German>(Extrakampf : %D1%%)</German>
 		<Italian>(Combattimento extra : %D1%%)</Italian>
 		<Spanish>(Combate adicional : %D1%%)</Spanish>
+		<Hungarian>(Extra harc : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_PLOT_DEFENSE</Tag>
@@ -13792,6 +13804,7 @@
 		<Italian>(Difesa territorio : %D1%%)</Italian>
 		<Spanish>(Defensa de la casilla : %D1%%)</Spanish>
 		<Russian>(В обороне : %D1%%)</Russian>
+		<Hungarian>(Területvédelem : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_FORTIFY</Tag>
@@ -13801,6 +13814,7 @@
 		<German>(Verschanzen : %D1%%)</German>
 		<Italian>(Fortifica : %D1%%)</Italian>
 		<Spanish>(Fortificar : %D1%%)</Spanish>
+		<Hungarian>(Beásás : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_CLASS_DEFENSE</Tag>
@@ -13810,6 +13824,7 @@
 		<German>(Verteidigung Einheitentyp : %D1%%)</German>
 		<Italian>(Difesa classe : %D1%%)</Italian>
 		<Spanish>(Clase de defensa : %D1%%)</Spanish>
+		<Hungarian>(Osztály védelem : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_CLASS_ATTACK</Tag>
@@ -13819,6 +13834,7 @@
 		<German>(Angriff Einheitentyp : %D1%%)</German>
 		<Italian>(Attacco classe : %D1%%)</Italian>
 		<Spanish>(Clase de ataque : %D1%%)</Spanish>
+		<Hungarian>(Osztály támadás : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_CLASS_COMBAT</Tag>
@@ -13828,6 +13844,7 @@
 		<German>(Kampf : %D1%%)</German>
 		<Italian>(Combattimento : %D1%%)</Italian>
 		<Spanish>(Combate : %D1%%)</Spanish>
+		<Hungarian>(Harc : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_CLASS_DOMAIN</Tag>
@@ -13837,6 +13854,7 @@
 		<German>(Gesamt : %D1%%)</German>
 		<Italian>(Dominio : %D1%%)</Italian>
 		<Spanish>(Posesión : %D1%%)</Spanish>
+		<Hungarian>(Terület : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_ODDS</Tag>
@@ -13846,6 +13864,7 @@
 		<German>Kampfchancen : %s1%%</German>
 		<Italian>Probabilità di combattimento : %s1%%</Italian>
 		<Spanish>Probabilidades del combate : %s1%%</Spanish>
+		<Hungarian>Visszavonulási esély : %s1%%</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_HP</Tag>
@@ -13855,6 +13874,7 @@
 		<German>%d1/%d2 TP</German>
 		<Italian>%d1/%d2 PV</Italian>
 		<Spanish>%d1/%d2 PG</Spanish>
+		<Hungarian>%d1/%d2 ÉP</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_ODDS_VS</Tag>
@@ -13864,6 +13884,7 @@
 		<German>[COLOR_POSITIVE_TEXT]%s1[COLOR_REVERT] gegen [COLOR_NEGATIVE_TEXT]%s2[COLOR_REVERT]</German>
 		<Italian>[COLOR_POSITIVE_TEXT]%s1[COLOR_REVERT] contro [COLOR_NEGATIVE_TEXT]%s2[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_POSITIVE_TEXT]%s1[COLOR_REVERT] / [COLOR_NEGATIVE_TEXT]%s2[COLOR_REVERT]</Spanish>
+		<Hungarian>[COLOR_POSITIVE_TEXT]%s1[COLOR_REVERT] : [COLOR_NEGATIVE_TEXT]%s2[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_CITY_ATTACK</Tag>
@@ -13874,6 +13895,7 @@
 		<Italian>(Attacco insediamento : %D1%%)</Italian>
 		<Spanish>(Ataque del asentamiento : %D1%%)</Spanish>
 		<Russian>(Атака поселения : %D1%%)</Russian>
+		<Hungarian>(Település támadás : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_CITY_DEFENSE</Tag>
@@ -13884,6 +13906,7 @@
 		<Italian>(Difesa insediamento : %D1%%)</Italian>
 		<Spanish>(Defensa del asentamiento : %D1%%)</Spanish>
 		<Russian>(Защита поселения : %D1%%)</Russian>
+		<Hungarian>(Település védelem : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_HILLS_ATTACK</Tag>
@@ -13894,6 +13917,7 @@
 		<Italian>(Attacco in collina : %D1%%)</Italian>
 		<Spanish>(Ataque a colinas : %D1%%)</Spanish>
 		<Russian>(Атака в холмах : %D1%%)</Russian>
+		<Hungarian>(Dombság támadás : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_HILLS</Tag>
@@ -13904,6 +13928,7 @@
 		<Italian>(Difesa in collina : %D1%%)</Italian>
 		<Spanish>(Defender colinas : %D1%%)</Spanish>
 		<Russian>(Защита в холмах : %D1%%)</Russian>
+		<Hungarian>(Dombság védelem : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_FEATURE_ATTACK</Tag>
@@ -13913,6 +13938,7 @@
 		<German>(Geländeart-Angriff : %D1%%)</German>
 		<Italian>(Attacco da caratteristiche : %D1%%)</Italian>
 		<Spanish>(Ataque a accidente : %D1%%)</Spanish>
+		<Hungarian>(Terepjellemző támadás : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_FEATURE</Tag>
@@ -13922,6 +13948,7 @@
 		<German>(Geländeart-Verteidigung : %D1%%)</German>
 		<Italian>(Difesa da caratteristiche : %D1%%)</Italian>
 		<Spanish>(Defender accidente : %D1%%)</Spanish>
+		<Hungarian>(Terepjellemző védelem : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_TERRAIN_ATTACK</Tag>
@@ -13932,6 +13959,7 @@
 		<Italian>(Attacco da terreno: %D1%%)</Italian>
 		<Spanish>(Ataque a terreno: %D1%%)</Spanish>
 		<Russian>(Атака на местности : %D1%%)</Russian>
+		<Hungarian>(Terep Támadás: %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_TERRAIN</Tag>
@@ -13942,6 +13970,7 @@
 		<Italian>(Difesa da terreno : %d1%%)</Italian>
 		<Spanish>(Defender terreno : %d1%%)</Spanish>
 		<Russian>(Защита на местности : %D1%%)</Russian>
+		<Hungarian>(Terep védelem : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_CLASS_RIVER_ATTACK</Tag>
@@ -13952,6 +13981,7 @@
 		<Italian>(Attacco fiume : %D1%%)</Italian>
 		<Spanish>(Ataque por río : %D1%%)</Spanish>
 		<Russian>(Речная атака : %D1%%)</Russian>
+		<Hungarian>(Folyón át támadás : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_CLASS_AMPHIB_ATTACK</Tag>
@@ -13962,6 +13992,7 @@
 		<Italian>(Attacco anfibio : %D1%%)</Italian>
 		<Spanish>(Ataque anfibio : %D1%%)</Spanish>
 		<Russian>(Атака десанта : %D1%%)</Russian>
+		<Hungarian>(Partraszálló támadás : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_NATIVE_COMBAT</Tag>
@@ -13971,6 +14002,7 @@
 		<German>(Ureinwohner-Kampf : %D1%%)</German>
 		<Italian>(Combattimento nativi : %D1%%)</Italian>
 		<Spanish>(Combate de los Nativos : %D1%%)</Spanish>
+		<Hungarian>(Indián támadás : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_MESSAGE_CLASS_REBEL_SENTIMENT</Tag>
@@ -13981,6 +14013,7 @@
 		<Italian>(Sentimento di ribellione : %D1%%)</Italian>
 		<Spanish>(sentimiento de rebelión : %D1%%)</Spanish>
 		<Russian>(Протестные настроения : %D1%%)</Russian>
+		<Hungarian>(Lázadó hangulat : %D1%%)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_REBEL_MOD</Tag>
@@ -13991,6 +14024,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% dal sentimento di ribellione</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% por sentimiento de rebelión</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% от протестных настроений</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% a lázadó hangulatból</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_CITY_MOD</Tag>
@@ -14001,6 +14035,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% dall'insediamento (abilità dell'unità)</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% por asentamiento (capacidad de unidad)</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% к атаке поселений (способность)</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% a településből (egység képesség)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_EXTRA_STRENGTH</Tag>
@@ -14011,6 +14046,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% di forza</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% a la fuerza</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% к силе</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% erő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_MOD_VS_TYPE</Tag>
@@ -14020,6 +14056,7 @@
 		<German>[ICON_BULLET]%D1_Bonus%% gegen %s2_Type</German>
 		<Italian>[ICON_BULLET]%D1_Bonus%% contro %s2_Type</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% contra %s2:2_Type</Spanish>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% %s2_Type ellen</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_TILE_MOD</Tag>
@@ -14030,6 +14067,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% dalla difesa della casella</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% por defensa de la casilla</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% от бонуса защиты клетки</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% a terület védelméből</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_FORTIFY_MOD</Tag>
@@ -14040,6 +14078,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% per la fortificazione dell'unità</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% por fortificación de unidades</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% от укрепленного отряда</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% a beásásból</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_HILLS_MOD</Tag>
@@ -14050,6 +14089,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% dalle colline (abilità dell'unità)</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% por colinas (capacidad de unidad)</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% от холмов (способность)</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% a Dombságból (egység képesség)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_DOMESTIC_BONUS</Tag>
@@ -14060,6 +14100,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% inside Cultural Borders (abilità dell'unità)</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% inside Cultural Borders (capacidad de unidad)</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% внутри культурных границ (способность)</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% Saját Területen (egység képesség)</Hungarian>
 <!--		<Russian>[ICON_BULLET]%D1_Bonus%% на своей земле (способность)</Russian>-->
 	</TEXT>
 	<TEXT>
@@ -14071,6 +14112,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% per %s2_TerrOrFeat (abilità dell'unità)</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% por %s2_TerrOrFeat (capacidad de unidad)</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% от %s2_TerrOrFeat (способность)</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% %s2_TerrOrFeat terepből (egység képesség)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_RIVER_MOD</Tag>
@@ -14081,6 +14123,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% per il guado del fiume</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% por cruzar un río</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% от пересечения реки</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% a folyón átkelésből</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_AMPHIB_MOD</Tag>
@@ -14091,6 +14134,7 @@
 		<Italian>[ICON_BULLET]%D1_Bonus%% per l'atterraggio anfibio</Italian>
 		<Spanish>[ICON_BULLET]%D1_Bonus%% por desembarco anfibio</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% от высадки на берег</Russian>
+		<Hungarian>[ICON_BULLET]%D1_Bonus%% a partraszállásból</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_UNIT_DIED_ATTACKING</Tag>
@@ -14101,6 +14145,7 @@
 		<Italian>La tua unità di %s1_UnitName è [NUM1:morto:morta] attaccando %s2_EnUName!</Italian>
 		<Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_UnitName [NUM1:ha:ha:han:han] muerto intentando atacar a [NUM2:un:una:unos:unas] %s2_EnUName.</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]Поражение, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был побежден вражеским [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT]. Упокой Господь их души...</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]Vereség, Uram! [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységed vereséget szenvedett csatában egy ellenséges [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] egységtől. Az Úr legyen irgalmas a lelkükhöz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_KILLED_ENEMY_UNIT</Tag>
@@ -14111,6 +14156,7 @@
 		<Italian>Difendendo, la tua unità %s1_UnitName ha ucciso l'unità nemica %s2_EnUName (%s3_owner_adjective)!</Italian>
 		<Spanish>Mientras se [NUM1:defendía:defendía:defendían:defendían], [NUM1:vuestro:vuestra:vuestros:vuestras] %s1_UnitName [NUM1:ha:ha:han:han] acabado con [NUM2:un:una:unos:unas] %s2_EnUName (%s3_owner_adjective).</Spanish>
 		<Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] успешно отбился от [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT]. Славная была битва!</Russian>
+		<Hungarian>[COLOR_POSITIVE_TEXT]Győzelem, Uram! [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységed sikeresen megküzdött az ellenséges [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT] [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] egységgel. Bátran harcolt!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_UNIT_DESTROYED_ENEMY</Tag>
@@ -14121,6 +14167,7 @@
 		<Italian>La tua unità %s1_UnitName ha distrutto l'unità nemica %s2_EnUName!</Italian>
 		<Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_UnitName [NUM1:ha:ha:han:han] destruido [NUM2:un:una:unos:unas] %s2_EnUName.</Spanish>
 		<Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] победил вражеского [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT]!</Russian>
+		<Hungarian>[COLOR_POSITIVE_TEXT]Győzelem, Uram! [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységed legyőzte az ellenséges [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] egységet!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_UNIT_WAS_DESTROYED</Tag>
@@ -14131,6 +14178,7 @@
 		<Italian>Difendendo, la tua unità %s1_UnitName è stata distrutta dall'unità nemica %s2_EnUName (%s3_owner_adjective)!</Italian>
 		<Spanish>Mientras se [NUM1:defendía:defendía:defendían:defendían], [NUM1:vuestro:vuestra:vuestros:vuestras] %s1_UnitName [NUM1:ha sido destruido:ha sido destruida:han sido destruidos:han sido destruidas] por [NUM2:un:una:unos:unas] %s2_EnUName (%s3_owner_adjective).</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]Поражение, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был атакован и уничтожен [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT].</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]Vereség, Uram! [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységedet megtámadta és legyőzte egy [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT] [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_UNIT_WAS_DESTROYED_UNKNOWN</Tag>
@@ -14141,6 +14189,7 @@
 		<Italian>Difendendo, la tua unità %s1_UnitName è stata distrutta dall'unità nemica %s2_EnUName!</Italian>
 		<Spanish>Mientras se [NUM1:defendía:defendía:defendían:defendían], [NUM1:vuestro:vuestra:vuestros:vuestras] %s1_UnitName [NUM1:ha sido destruido:ha sido destruida:han sido destruidos:han sido destruidas] por [NUM2:un:una:unos:unas] %s2_EnUName.</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]Плохие новости, Милорд! [COLOR_REVERT]Наш оборонявшийся [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был уничтожен вражеским [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT]!</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]Rossz hírek, Uram! [COLOR_REVERT]Védekezés közben [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységedet egy ellenséges [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] megsemmisítette!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_UNIT_WITHDRAW</Tag>
@@ -14151,6 +14200,7 @@
 		<Italian>La tua unità %s1_UnitName si è ritirata dal combattimento contro l'unità nemica %s2_EnUName!</Italian>
 		<Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_UnitName se [NUM1:ha:ha:han:han] retirado del combate contra [NUM2:un:una:unos:unas] %s2_EnUName.</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]Плохие новости, Милорд! [COLOR_REVERT]Чтобы не быть уничтоженым, наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] вышел из боя с вражеским [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT].</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]Rossz hírek, Uram! [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységed a biztonság kedvéért visszavonult az ellenséges [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] ellen folytatott harcból.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_ENEMY_UNIT_WITHDRAW</Tag>
@@ -14161,6 +14211,7 @@
 		<Italian>L'unità nemica %s1_EnUName si è ritirata dal combattimento contro l'unità nemica %s2_UnitName!</Italian>
 		<Spanish>[NUM1:Un:Una:Unos:Unas] %s1_EnUName se [NUM1:ha:ha:han:han] retirado del combate contra [NUM2:vuestro:vuestra:vuestros:vuestras] %s2_UnitName.</Spanish>
 		<Russian>[COLOR_POSITIVE_TEXT]Хорошие новости, Милорд! [COLOR_REVERT]Вражеский [COLOR_WARNING_TEXT]%s1_EnUName[COLOR_REVERT] вышел из боя с нашим [COLOR_UNIT_TEXT]%s2_UnitName[COLOR_REVERT]. Они бежали, как трусливые зайцы!</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]Jó hírek, Uram! [COLOR_REVERT]Egy ellenséges [COLOR_WARNING_TEXT]%s1_EnUName[COLOR_REVERT] visszavonult a bátor [COLOR_UNIT_TEXT]%s2_UnitName[COLOR_REVERT] elleni harcból. Úgy futott, mint a nyúl!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_CAPTURED_UNIT</Tag>
@@ -14171,6 +14222,7 @@
 		<Italian>Hai catturato l'unità %s1_UnitName.</Italian>
 		<Spanish>Habéis capturado [NUM1:un:una:unos:unas] %s1_UnitName.</Spanish>
 		<Russian>Вы захватили [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]</Russian>
+		<Hungarian>Elfogtál egy [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HAS_ACQUIRED_NEGATIVE_PROMOTION</Tag>
@@ -14179,6 +14231,7 @@
 		<French>L'unité [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] a subi un contrecoup: [COLOR_WARNING_TEXT]%s2_NegativPromotionName[COLOR_REVERT].</French>
 		<German>Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] hat negative Eigenschaft erworben: [COLOR_WARNING_TEXT]%s2_NegativPromotionName[COLOR_REVERT].</German>
 		<Russian>На [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] наложен негативный эффект: [COLOR_WARNING_TEXT]%s2_NegativPromotionName[COLOR_REVERT].</Russian>
+		<Hungarian>[COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységed egy negatív hatást szerzett: [COLOR_WARNING_TEXT]%s2_NegativPromotionName[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WAS_CLEASED_OF_NEGATIVE_PROMOTIONS</Tag>
@@ -14187,6 +14240,7 @@
 		<French>L'unité [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] s'est [COLOR_POSITIVE_TEXT]débarrassé de ses contrecoups[COLOR_REVERT].</French>
 		<German>Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] hat [COLOR_POSITIVE_TEXT]alle negative Eigenschaft geheilt[COLOR_REVERT].</German>
 		<Russian>Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] [COLOR_POSITIVE_TEXT]вылечил все негативные эффекты[COLOR_REVERT].</Russian>
+		<Hungarian>[COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységed [COLOR_POSITIVE_TEXT]meggyógyult az összes negatív hatásból[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_DEFENSES_IN_CITY_REDUCED_TO</Tag>
@@ -14197,6 +14251,7 @@
 		<Italian>Le tue difese a %s1_CityName sono state ridotte a %d2_NewVal%% ([COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT])!</Italian>
 		<Spanish>Vuestras defensas en %s1_CityName han quedado reducidas al %d2_NewVal%% ([COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT]).</Spanish>
 		<Russian>[COLOR_WARNING_TEXT]%s1_CityName[COLOR_REVERT] : Артиллерийский обстрел [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] уменьшил нашу защиту до %d2_NewVal%%!</Russian>
+		<Hungarian>%s1_CityName : [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] tüzérsége %d2_NewVal%%-ra csökkentette a védelmedet!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISC_YOU_REDUCE_CITY_DEFENSES</Tag>
@@ -14207,6 +14262,7 @@
 		<Italian>La tua unitù %s1_UnitName ha ridotto le difese di %s2_CityName a %d3_NewVal%%!</Italian>
 		<Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_UnitName [NUM1:ha:ha:han:han] reducido las defensas de %s2_CityName al %d3_NewVal%%.</Spanish>
 		<Russian>Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] докладывает: Бомбардировка [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] проходит успешно! Уровень защиты снижен до %d3_NewVal%%!</Russian>
+		<Hungarian>[COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] jelenti: [COLOR_SELECTED_TEXT]%s2_CityName[COLOR_REVERT] bombázása sikeres volt! A védelmi bónusz %d3_NewVal%%-ra csökkent!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SLAVE_EMANCIPATION_UNREST</Tag>
