@@ -71,7 +71,7 @@ def _cityCanSpawnRewardShip(player, city, iUnitClass):
 		return False
 
 	unitInfo = gc.getUnitInfo(iUnit)
-	iOcean = gc.getInfoTypeForString("TERRAIN_OCEAN")
+	iOcean = TerrainTypes.TERRAIN_OCEAN
 
 	for iDirection in range(DirectionTypes.NUM_DIRECTION_TYPES):
 		pPlot = plotDirection(
