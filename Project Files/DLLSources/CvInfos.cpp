@@ -2886,6 +2886,8 @@ m_bNoDefensiveBonus(false),
 m_bMechanized(false),
 m_bLineOfSight(false),
 m_bHiddenNationality(false),
+m_bCanSailToEurope(true), // WTP, Schmiddie, Unit Travel Restrictions
+m_bCanSailToAfrica(true), // WTP, Schmiddie, Unit Travel Restrictions
 m_bSlaveShip(false), // WTP, ray Slave Ship
 m_bTreasureShip(false), // WTP, ray Treasure Ship
 m_bTroopShip(false), // WTP, ray Troop Ship
@@ -3338,6 +3340,17 @@ bool CvUnitInfo::isHiddenNationality() const
 {
 	return m_bHiddenNationality;
 }
+// WTP, Schmiddie, Unit Travel Restrictions - START
+bool CvUnitInfo::canSailToEurope() const
+{
+	return m_bCanSailToEurope;
+}
+
+bool CvUnitInfo::canSailToAfrica() const
+{
+	return m_bCanSailToAfrica;
+}
+// WTP, Schmiddie, Unit Travel Restrictions - END
 // WTP, ray Slave Ship - START
 bool CvUnitInfo::isSlaveShip() const
 {
@@ -4221,6 +4234,8 @@ bool CvUnitInfo::read(CvXMLLoadUtility* pXML)
 	pXML->GetChildXmlValByName(&m_bMechanized,"bMechanized",false);
 	pXML->GetChildXmlValByName(&m_bLineOfSight,"bLineOfSight",false);
 	pXML->GetChildXmlValByName(&m_bHiddenNationality,"bHiddenNationality",false);
+	pXML->GetChildXmlValByName(&m_bCanSailToEurope,"bCanSailToEurope",true); // WTP, Schmiddie, Unit Travel Restrictions
+	pXML->GetChildXmlValByName(&m_bCanSailToAfrica,"bCanSailToAfrica",true); // WTP, Schmiddie, Unit Travel Restrictions
 	pXML->GetChildXmlValByName(&m_bSlaveShip,"bSlaveShip",false); // WTP, ray Slave Ship
 	pXML->GetChildXmlValByName(&m_bTreasureShip,"bTreasureShip",false); // WTP, ray Treasure Ship
 	pXML->GetChildXmlValByName(&m_bTroopShip,"bTroopShip",false); // WTP, ray Troop Ship

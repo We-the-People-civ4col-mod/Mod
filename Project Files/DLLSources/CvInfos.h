@@ -806,6 +806,8 @@ public:
 	DllExport bool isMechUnit() const;
 	bool isLineOfSight() const;
 	bool isHiddenNationality() const;
+	bool canSailToEurope() const; // WTP, Schmiddie, Unit Travel Restrictions
+	bool canSailToAfrica() const; // WTP, Schmiddie, Unit Travel Restrictions
 	bool isSlaveShip() const; // WTP, ray Slave Ship
 	bool isTreasureShip() const;// WTP, ray Treasure Ship
 	bool isTroopShip() const;// WTP, ray Troop Ship
@@ -1026,6 +1028,8 @@ protected:
 	bool m_bMechanized;
 	bool m_bLineOfSight;
 	bool m_bHiddenNationality;
+	bool m_bCanSailToEurope; // WTP, Schmiddie, Unit Travel Restrictions
+	bool m_bCanSailToAfrica; // WTP, Schmiddie, Unit Travel Restrictions
 	bool m_bSlaveShip; // WTP, ray Slave Ship
 	bool m_bTreasureShip; // WTP, ray Treasure Ship
 	bool m_bTroopShip; // WTP, ray troop Ship

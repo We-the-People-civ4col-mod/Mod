@@ -78076,6 +78076,8 @@
 			<bMechanized>1</bMechanized>
 			<bLineOfSight>0</bLineOfSight>
 			<bHiddenNationality>0</bHiddenNationality>
+			<bCanSailToEurope>0</bCanSailToEurope>
+			<bCanSailToAfrica>0</bCanSailToAfrica>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -78135,12 +78137,7 @@
 			<iWorkRateModifier>0</iWorkRateModifier>
 			<iMissionaryRateModifier>0</iMissionaryRateModifier>
 			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
+			<TerrainImpassables/>
 			<FeatureImpassables>
 				<FeatureImpassable>
 					<FeatureType>FEATURE_STORM</FeatureType>
@@ -78264,6 +78261,8 @@
 			<bMechanized>1</bMechanized>
 			<bLineOfSight>0</bLineOfSight>
 			<bHiddenNationality>0</bHiddenNationality>
+			<bCanSailToEurope>0</bCanSailToEurope>
+			<bCanSailToAfrica>0</bCanSailToAfrica>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>
@@ -78323,12 +78322,7 @@
 			<iWorkRateModifier>0</iWorkRateModifier>
 			<iMissionaryRateModifier>0</iMissionaryRateModifier>
 			<iNativeTradeRateModifier>0</iNativeTradeRateModifier>
-			<TerrainImpassables>
-				<TerrainImpassable>
-					<TerrainType>TERRAIN_OCEAN</TerrainType>
-					<bTerrainImpassable>1</bTerrainImpassable>
-				</TerrainImpassable>
-			</TerrainImpassables>
+			<TerrainImpassables/>
 			<FeatureImpassables>
 				<FeatureImpassable>
 					<FeatureType>FEATURE_STORM</FeatureType>
@@ -84741,6 +84735,8 @@
 			<bMechanized>1</bMechanized>
 			<bLineOfSight>0</bLineOfSight>
 			<bHiddenNationality>0</bHiddenNationality>
+			<bCanSailToEurope>0</bCanSailToEurope>
+			<bCanSailToAfrica>0</bCanSailToAfrica>
 			<bAlwaysHostile>0</bAlwaysHostile>
 			<bTreasure>0</bTreasure>
 			<bLbDCanBecomeExpert>0</bLbDCanBecomeExpert>

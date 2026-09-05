@@ -3025,14 +3025,6 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 	case COMMAND_GOTO_MENU:
 		if (getTransportUnit() == NULL || plot()->isValidDomainForAction(getUnitType()))
 		{
-			// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -START
-			// Erik: Disable the goto menu for coastal transports for now until we figure
-			// out how to filter the unreachable cities
-			// if (canCrossCoastOnly())
-			// {
-			//	 return false;
-			// }
-			// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -END
 			return true;
 			/*
 			if (canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_EUROPE) || canAutoCrossOcean(plot()))
@@ -4492,28 +4484,8 @@ bool CvUnit::isValidPlot(const CvPlot* pPlot) const
 	return true;
 }
 
-int CvUnit::canCrossCoastOnly() const
-{
-	CLLNode<IDInfo>* pUnitNode = getGroup()->headUnitNode();
-
-	// Determine if the unit may enter non-coast water plots
-	while (pUnitNode != NULL)
-	{
-		CvUnit *pLoopUnit = ::getUnit(pUnitNode->m_data);
-
-		if (pLoopUnit != NULL && pLoopUnit->getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN))
-		{
-			return true;
-		}
-		pUnitNode = getGroup()->nextUnitNode(pUnitNode);
-	}
-
-	return false;
-}
-
 bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 {
-	const bool canCrossOcean = !canCrossCoastOnly();
 	CLLNode<IDInfo>* pUnitNode = NULL;
 
 	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
@@ -4561,7 +4533,14 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 			return false;
 		}
 
-		if (!canCrossOcean || !canAutoCrossOcean(plot()))
+		// WTP, Schmiddie, Unit Travel Restrictions - START
+		if (!getUnitInfo().canSailToEurope())
+		{
+			return false;
+		}
+		// WTP, Schmiddie, Unit Travel Restrictions - END
+
+		if (!canAutoCrossOcean(plot()))
 		{
 			return false;
 		}
@@ -4574,7 +4553,14 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 			return false;
 		}
 
-		if (!canCrossOcean || !canAutoCrossOcean(plot()))
+		// WTP, Schmiddie, Unit Travel Restrictions - START
+		if (!getUnitInfo().canSailToAfrica())
+		{
+			return false;
+		}
+		// WTP, Schmiddie, Unit Travel Restrictions - END
+
+		if (!canAutoCrossOcean(plot()))
 		{
 			return false;
 		}
@@ -5507,6 +5493,13 @@ bool CvUnit::canCrossOcean(const CvPlot* pPlot, UnitTravelStates eNewState) cons
 		return false;
 	}
 
+	// WTP, Schmiddie, Unit Travel Restrictions - START
+	if (eNewState == UNIT_TRAVEL_STATE_TO_EUROPE && !getUnitInfo().canSailToEurope())
+	{
+		return false;
+	}
+	// WTP, Schmiddie, Unit Travel Restrictions - END
+
 	switch (getUnitTravelState())
 	{
 	case NO_UNIT_TRAVEL_STATE:
@@ -5593,6 +5586,13 @@ bool CvUnit::canSailToAfrica(const CvPlot* pPlot, UnitTravelStates eNewState) co
 	{
 		return false;
 	}
+
+	// WTP, Schmiddie, Unit Travel Restrictions - START
+	if (getUnitTravelState() != UNIT_TRAVEL_STATE_IN_AFRICA && !getUnitInfo().canSailToAfrica())
+	{
+		return false;
+	}
+	// WTP, Schmiddie, Unit Travel Restrictions - END
 
 	switch (getUnitTravelState())
 	{
@@ -10933,8 +10933,6 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 	// Europe destination special case (no map city)
 	if (kDst.iID == CvTradeRoute::EUROPE_CITY_ID)
 	{
-		if (canCrossCoastOnly())
-			return false;
 		if (getDomainType() != DOMAIN_SEA)
 			return false;
 		if (!kPlayer.isYieldEuropeTradable(pRoute->getYield()))
