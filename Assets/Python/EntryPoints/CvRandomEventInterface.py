@@ -71,6 +71,7 @@ def _cityCanSpawnRewardShip(player, city, iUnitClass):
 		return False
 
 	unitInfo = gc.getUnitInfo(iUnit)
+	iOcean = gc.getInfoTypeForString("TERRAIN_OCEAN")
 
 	for iDirection in range(DirectionTypes.NUM_DIRECTION_TYPES):
 		pPlot = plotDirection(
@@ -85,10 +86,21 @@ def _cityCanSpawnRewardShip(player, city, iUnitClass):
 		if not pPlot.isWater():
 			continue
 
+		if pPlot.getTerrainType() != iOcean:
+			continue
+
 		if not unitInfo.getTerrainImpassable(pPlot.getTerrainType()):
 			return True
 
 	return False
+
+def _cityCanSpawnCoastalRewardShip(player, city):
+	if player is None or player.isNone():
+		return False
+	if city is None or city.isNone():
+		return False
+
+	return _plotHasAdjacentSeaWater(city.plot())
 
 def getFirstRewardShipAccessCity(player, iUnitClass):
 	if player is None or player.isNone():
@@ -98,6 +110,20 @@ def getFirstRewardShipAccessCity(player, iUnitClass):
 
 	while city:
 		if _cityCanSpawnRewardShip(player, city, iUnitClass):
+			return city
+
+		(city, iter) = player.nextCity(iter, True)
+
+	return None
+
+def getFirstCoastalRewardShipAccessCity(player):
+	if player is None or player.isNone():
+		return None
+
+	(city, iter) = player.firstCity(True)
+
+	while city:
+		if _cityCanSpawnCoastalRewardShip(player, city):
 			return city
 
 		(city, iter) = player.nextCity(iter, True)
@@ -7457,12 +7483,7 @@ def applyPrivateerRewardShip3(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	unit = city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	unit = _spawnRewardedShip(player, iRewardUnitClass)
 
 	if unit is not None and not unit.isNone():
 		unit.setName("Queen Anne's Revenge")
@@ -7516,12 +7537,7 @@ def applyPrivateerRewardShip4(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpPrivateerRewardShip4(argsList):
@@ -28291,21 +28307,6 @@ def getHelpThreeGalleonsRewardShip(argsList):
 
 ######## Event six war ships ###########
 
-def getFirstOceanAccessCity(player):
-	if player is None or player.isNone():
-		return None
-
-	(city, iter) = player.firstCity(True)
-
-	while city:
-		if city is not None and not city.isNone():
-			if _plotHasAdjacentSeaWater(city.plot()):
-				return city
-
-		(city, iter) = player.nextCity(iter, True)
-
-	return None
-
 def canTriggerSixWarshipsQuest(argsList):
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
@@ -28317,9 +28318,6 @@ def canTriggerSixWarshipsQuest(argsList):
 		return False
 
 	if getSixWarshipsRewardUnitClass(player) == -1:
-		return False
-
-	if getFirstOceanAccessCity(player) is None:
 		return False
 
 	return True
@@ -28669,9 +28667,6 @@ def canDoCommandeeredReturn(argsList):
 	if _getCommandeeredShipClass(player) == -1:
 		return False
 
-	if getFirstOceanAccessCity(player) is None:
-		return False
-
 	return True
 
 def applyCommandeeredReturn(argsList):
@@ -28686,12 +28681,8 @@ def applyCommandeeredReturn(argsList):
 	if iUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
+	if _spawnRewardedShip(player, iUnitClass) is None:
 		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iUnitClass)
 
 	_clearCommandeeredShipClass(player)
 
@@ -28749,7 +28740,7 @@ def applyThreeSmallCoastalShipsQuestRewardShip(argsList):
 
 	iRewardUnitClass = UnitClassTypes.UNITCLASS_BIG_COASTAL_SHIP
 
-	city = getFirstRewardShipAccessCity(player, iRewardUnitClass)
+	city = getFirstCoastalRewardShipAccessCity(player)
 
 	if city is None or city.isNone():
 		return
@@ -28862,13 +28853,8 @@ def applyFiveCathedralsRewardShips3(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
 	for i in range(2):
-		city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+		_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpFiveCathedralsRewardShips3(argsList):
