@@ -118,6 +118,11 @@ protected:
 
 	void uninit();
 	void setup();
+	void applyGlobeviewSafeDimensions();
+	void applyGlobeviewPadPlotDefaults();
+	void applyGlobeviewPadEurope();
+	void applyGlobeviewPadAreas();
+	bool isGlobeviewPadPlot(int iX, int iY) const;
 
 public:
 	DllExport void erasePlots();
@@ -204,6 +209,13 @@ public:
 	{
 		return m_iGridHeight;
 	}
+
+	int getGlobeviewPadWest() const;
+	int getGlobeviewPadSouth() const;
+	bool hasGlobeviewOriginOffset() const;
+	void offsetGlobeviewCoordinates(int& iX, int& iY) const;
+	void offsetGlobeviewCoordinates(Coordinates& coord) const;
+	int remapGlobeviewSavedPlotIndex(int iOldPlot) const;
 
 	int getLandPlots() const;
 	void changeLandPlots(int iChange);
@@ -351,6 +363,10 @@ protected:
 	int m_iTopLatitude;
 	int m_iBottomLatitude;
 	int m_iNextRiverID;
+	int m_iGlobeviewPadX;
+	int m_iGlobeviewPadY;
+	int m_iGlobeviewPadWest;
+	int m_iGlobeviewPadSouth;
 
 	bool m_bWrapX;	
 	bool m_bWrapY;

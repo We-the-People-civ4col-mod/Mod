@@ -40,6 +40,8 @@ void CyMapPythonInterface1(python::class_<CyMap>& x)
 		.def("plotY", &CyMap::plotY, "int (iIndex) - given the index of a plot, returns its Y coordinate")
 		.def("getGridWidth", &CyMap::getGridWidth, "int () - the width of the map, in plots")
 		.def("getGridHeight", &CyMap::getGridHeight, "int () - the height of the map, in plots")
+		.def("getGlobeviewPadWest", &CyMap::getGlobeviewPadWest, "int () - west ocean columns inserted for globe view")
+		.def("getGlobeviewPadSouth", &CyMap::getGlobeviewPadSouth, "int () - south ocean rows inserted for globe view")
 
 		.def("getLandPlots", &CyMap::getLandPlots, "int () - total land plots")
 		.def("getOwnedPlots", &CyMap::getOwnedPlots, "int () - total owned plots")

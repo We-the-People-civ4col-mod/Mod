@@ -233,6 +233,7 @@ void PlotExtraYield::read(CvSavegameReader& reader)
 {
 	reader.Read(m_iX);
 	reader.Read(m_iY);
+	GC.getMap().offsetGlobeviewCoordinates(m_iX, m_iY);
 
 	// use savegame code in EnumMap to allow for xml changes in yield xml
 	EnumMap<YieldTypes, int> tempArray;
