@@ -11774,7 +11774,7 @@ int CvPlayerAI::AI_unitAIValueMultipler(UnitAITypes eUnitAI)
 			break;
 
 		case UNITAI_WORKER:
-			if (!AI_isStrategy(STRATEGY_REVOLUTION_DECLARING))
+			if (!AI_isStrategy(STRATEGY_REVOLUTION_DECLARING) && iCurrentCount < 15)
 			{
 				int iNeeded = AI_neededWorkers(NULL);
 
