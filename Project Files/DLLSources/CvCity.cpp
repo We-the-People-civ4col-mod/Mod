@@ -7849,9 +7849,9 @@ void CvCity::doYields()
 
 			FAssert(validEnumRange(eYield));
 			int iAmount = aYields.get(eYield);
-			if (iAmount > 0 && (getYieldStored(eYield) + aiYields[eYield]) > 0) // R&R, ray, improvment from vetiarvind
+			if (iAmount > 0 && (getYieldStored(eYield) + aiYields[eYield]) > getMaintainLevel(eYield)) // R&R, ray, improvment from vetiarvind
 			{
-				const int iAmountForSale = getYieldStored(eYield) + aiYields[eYield];
+				const int iAmountForSale = getYieldStored(eYield) + aiYields[eYield] - getMaintainLevel(eYield);
 				if (iAmount > iAmountForSale)
 				{
 					iAmount = iAmountForSale;

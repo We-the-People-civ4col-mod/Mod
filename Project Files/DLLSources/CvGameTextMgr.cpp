@@ -1471,6 +1471,22 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_ONLY_DEFENSIVE"));
 	}
 
+	// R&R, Androrc, Domestic Market
+	// R&R, ray, adjustment Domestic Markets, displaying as list
+	CvWString szYieldsDemandedList;
+	const InfoArray<YieldTypes, int> &infoYieldDemands = kProfession.getYieldDemands();
+	for (int iI = 0; iI < infoYieldDemands.getLength(); ++iI)
+	{
+		szYieldsDemandedList += GC.getYieldInfo(infoYieldDemands.getYield(iI)).getCharLink();
+	}
+	if (!isEmpty(szYieldsDemandedList))
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(GC.getSymbolID(BULLET_CHAR));
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_YIELD_DEMAND", szYieldsDemandedList.GetCString()));
+	}
+	//Androrc End
+
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
 		int iYieldAmount = GC.getGameINLINE().getActivePlayer() != NO_PLAYER ? GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getYieldEquipmentAmount(eProfession, eYield) : kProfession.getYieldEquipmentAmount(eYield);

@@ -406,6 +406,7 @@ public:
 	int getNumYieldsProduced() const;
 	int getYieldsConsumed(int i) const;
 	int getNumYieldsConsumed() const;
+	int getYieldDemand(int iYield) const;
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 
 	const InfoArray<YieldTypes, int>& getYieldDemands() const;

@@ -159,6 +159,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -272,6 +278,16 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_FURNITURE</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -388,6 +404,16 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_FURNITURE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -513,6 +539,28 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_FURNITURE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_PADDED_FURNITURE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_LUXURY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -634,6 +682,32 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_WHALE_OIL</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_FURNITURE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_PADDED_FURNITURE</YieldType>
+					<iYieldDemand>15</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_LUXURY_GOODS</YieldType>
+					<iYieldDemand>15</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -1985,6 +2059,20 @@
 			</YieldChanges>
 			<YieldModifiers/>
 			<iEntertainmentGoldModifier>100</iEntertainmentGoldModifier>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BEER</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_HOOCH</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -2084,6 +2172,20 @@
 			</YieldChanges>
 			<YieldModifiers/>
 			<iEntertainmentGoldModifier>150</iEntertainmentGoldModifier>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BEER</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_HOOCH</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -2187,6 +2289,24 @@
 			</YieldChanges>
 			<YieldModifiers/>
 			<iEntertainmentGoldModifier>200</iEntertainmentGoldModifier>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BEER</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_HOOCH</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -2291,6 +2411,24 @@
 			</YieldChanges>
 			<YieldModifiers/>
 			<iEntertainmentGoldModifier>250</iEntertainmentGoldModifier>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BEER</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_HOOCH</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -9707,6 +9845,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -9806,6 +9950,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -9922,6 +10072,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -10043,6 +10199,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>15</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -10169,6 +10331,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>20</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11297,6 +11465,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11401,6 +11575,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11514,6 +11694,12 @@
 					<iModifier>50</iModifier>
 				</YieldModifier>
 			</YieldModifiers>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>15</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11610,6 +11796,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11714,6 +11906,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11827,6 +12025,12 @@
 					<iModifier>50</iModifier>
 				</YieldModifier>
 			</YieldModifiers>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>15</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11945,6 +12149,12 @@
 					<iModifier>100</iModifier>
 				</YieldModifier>
 			</YieldModifiers>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>15</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>

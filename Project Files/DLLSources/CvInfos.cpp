@@ -1766,6 +1766,11 @@ const InfoArray<YieldTypes, int>& CvProfessionInfo::getYieldDemands() const
 	return m_info_YieldDemands;
 }
 
+int CvProfessionInfo::getYieldDemand(int iYield) const
+{
+	return m_info_YieldDemands.get(static_cast<YieldTypes>(iYield));
+}
+
 bool CvProfessionInfo::isWorkSlot() const
 {
 	return (m_bCitizen && !m_bWorkPlot);
