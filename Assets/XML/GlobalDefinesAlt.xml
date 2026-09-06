@@ -1286,7 +1286,7 @@
 	</Define>
 	<Define>
 		<DefineName>PER_EUROPEAN_AT_WAR_UNHAPPINESS</DefineName>
-		<iDefineIntVal>3</iDefineIntVal>
+		<iDefineIntVal>2</iDefineIntVal>
 	</Define>
 	<Define>
 		<DefineName>POP_DIVISOR_DEFENSE_UNHAPPINESS</DefineName>
