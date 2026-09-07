@@ -4727,13 +4727,6 @@
 		<Russian/>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_EVENT_PRIVATEER_REWARD_SHIP_HELP</Tag>
-		<English>We will receive a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] in one of our colonies.</English>
-		<Portuguese>Receberemos um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] em uma de nossas colônias.</Portuguese>
-		<German>Wir erhalten eine [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] in einer unserer Kolonien.</German>
-		<Russian/>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CONVERTED_TOWNHALL</Tag>
 		<English>A Native from a tribe nearby wishes to join our colony.</English>
 		<Portuguese>Um nativo de uma tribo próxima deseja se juntar à nossa colônia.</Portuguese>
