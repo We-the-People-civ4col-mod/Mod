@@ -8887,6 +8887,81 @@ void CvPlayerAI::AI_doEurope()
 
 	if (!isHuman() && !isNative() && !isEurope())
 	{
+		// WTP, Schmiddie, AI Minimum Fleet - START
+		UnitAITypes eRequiredShipAI = NO_UNITAI;
+
+		if (AI_totalUnitAIs(UNITAI_COMBAT_SEA) < 1)
+		{
+			eRequiredShipAI = UNITAI_COMBAT_SEA;
+		}
+		else if (AI_totalUnitAIs(UNITAI_TRANSPORT_SEA) < 1)
+		{
+			eRequiredShipAI = UNITAI_TRANSPORT_SEA;
+		}
+
+		if (eRequiredShipAI != NO_UNITAI)
+		{
+			UnitTypes eBestShip = NO_UNIT;
+			int iBestShipValue = 0;
+
+			for (UnitClassTypes eUnitClass = FIRST_UNITCLASS; eUnitClass < NUM_UNITCLASS_TYPES; ++eUnitClass)
+			{
+				UnitTypes eLoopUnit = GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eUnitClass);
+
+				if (eLoopUnit == NO_UNIT)
+				{
+					continue;
+				}
+
+				const CvUnitInfo& kUnitInfo = GC.getUnitInfo(eLoopUnit);
+
+				if (kUnitInfo.getDefaultUnitAIType() != eRequiredShipAI)
+				{
+					continue;
+				}
+
+				if (!isUnitWithinGameYearWindow(eLoopUnit))
+				{
+					continue;
+				}
+
+				int iPrice = getEuropeUnitBuyPrice(eLoopUnit);
+
+				if (iPrice <= 0)
+				{
+					continue;
+				}
+
+				int iValue = AI_unitGoldValue(eLoopUnit, eRequiredShipAI, NULL);
+
+				if (iValue > iBestShipValue)
+				{
+					iBestShipValue = iValue;
+					eBestShip = eLoopUnit;
+				}
+			}
+
+			if (eBestShip != NO_UNIT)
+			{
+				int iShipPrice = getEuropeUnitBuyPrice(eBestShip);
+
+				if (getGold() > iShipPrice)
+				{
+					CvUnit* pUnit = buyEuropeUnit(eBestShip, 100);
+
+					FAssert(pUnit != NULL);
+
+					if (pUnit != NULL)
+					{
+						pUnit->AI_setUnitAIType(eRequiredShipAI);
+					}
+				}
+
+				return;
+			}
+		}
+		// WTP, Schmiddie, AI Minimum Fleet - END
+
 		//Always refresh at start of new turn (maybe do this smarter but it's okay for now)
 		AI_updateNextBuyUnit();
 		// Don't by profession units for now until we find a better way to decide who we can productively employ
@@ -8934,205 +9009,6 @@ void CvPlayerAI::AI_doEurope()
 			AI_updateNextBuyUnit();
 		}
 	}
-
-	// TAC - AI Military Buildup - koma13 - START
-	//if ((eBuyProfession != NO_PROFESSION) && (iBuyProfessionValue > iBuyUnitValue))
-	if ((eBuyProfession != NO_PROFESSION) && (iBuyProfessionValue > iBuyUnitValue) && !AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
-	// TAC - AI Military Buildup - koma13 - END
-	{
-		ProfessionTypes eDefaultProfession = GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
-
-		int iBestValue = 0;
-		CvUnit* pBestUnit = NULL;
-
-		int iBuyPrice = -1;
-		if (eBuyProfessionUnit != NO_UNIT)
-		{
-			iBuyPrice = getEuropeUnitBuyPrice(eBuyProfessionUnit);
-		}
-
-		CvProfessionInfo& kProfession = GC.getProfessionInfo(eBuyProfession);
-
-		if (!kProfession.isCitizen() && (eBuyProfessionAI != UNITAI_COLONIST))
-		{
-			//Consider upgrading an existing unit.
-			for (int i = 0; i < getNumEuropeUnits(); ++i)
-			{
-				CvUnit* pLoopUnit = getEuropeUnit(i);
-
-				// TAC - AI purchases military units - koma13 - START
-				//if (!pLoopUnit->AI_hasAIChanged(4))
-				if (!pLoopUnit->AI_hasAIChanged(4) && (pLoopUnit->getUnitInfo().getTeacherWeight() <= 0) && !AI_unitAIIsCombat(eBuyProfessionAI))
-				// TAC - AI purchases military units - koma13 - END
-				{
-					if (pLoopUnit->getProfession() == eBuyProfession)
-					{
-						int iValue = 200;
-						if (iValue > iBestValue)
-						{
-							iBestValue = iValue;
-							pBestUnit = pLoopUnit;
-						}
-					}
-					else
-					{
-						if (pLoopUnit->getProfession() == eDefaultProfession)
-						{
-							if (pLoopUnit->canHaveProfession(eBuyProfession, false))
-							{
-								int iValue = AI_professionSuitability(pLoopUnit, eBuyProfession, NULL);
-
-								bool bValid = true;
-
-								if (eBuyProfessionAI == UNITAI_SCOUT)
-								{
-									if (iValue < 100)
-									{
-										bValid = false;
-									}
-								}
-								if (bValid)
-								{
-									iValue *= 100 + ((iBuyProfessionValue - 100) / 5);
-									iValue /= 100;
-
-									int iMinThreshold = 1;
-
-									if (iValue >= iMinThreshold)
-									{
-										iValue *= 2;
-
-										//XXX Perform Gold Cost of Upgrade Modification.
-										if (iValue > iBestValue)
-										{
-											iBestValue = iValue;
-											pBestUnit = pLoopUnit;
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-
-		if (pBestUnit != NULL)
-		{
-			changeProfessionEurope(pBestUnit->getID(), eBuyProfession);
-			FAssert(pBestUnit->getProfession() == eBuyProfession);
-			pBestUnit->AI_setUnitAIType(eBuyProfessionAI);
-		}
-		else if (eBuyProfessionUnit != NO_UNIT)
-		{
-			FAssert(iBuyPrice >= 0);
-			if (getGold() > iBuyPrice)
-			{
-				CvUnit* pUnit = buyEuropeUnit(eBuyProfessionUnit, 100);
-				pUnit->AI_setUnitAIType(eBuyProfessionAI);
-			}
-		}
-	}
-
-	//arm any europe units that need it
-	// TAC - AI purchases military units - koma13 - START
-	/*
-	for (int i = 0; i < getNumEuropeUnits(); i++)
-	{
-		CvUnit *pUnit = getEuropeUnit(i);
-
-		int iUndefended = 0;
-		int iNeeded = AI_totalDefendersNeeded(&iUndefended);
-		if (iNeeded > 0 || AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
-		{
-			ProfessionTypes eBestProfession = NO_PROFESSION;
-			if (GC.getGameINLINE().getSorenRandNum(100, "") < 50)
-			{
-				eBestProfession = GET_PLAYER(pUnit->getOwnerINLINE()).AI_idealProfessionForUnitAIType(UNITAI_DEFENSIVE);
-			}
-			else
-			{
-				eBestProfession = GET_PLAYER(pUnit->getOwnerINLINE()).AI_idealProfessionForUnitAIType(UNITAI_COUNTER);
-			}
-
-			if (eBestProfession != NO_PROFESSION && pUnit->canHaveProfession(eBestProfession, false))
-			{
-				changeProfessionEurope(pUnit->getID(), eBestProfession);
-			}
-		}
-	}
-	*/
-	if (isEurope() || isNative())
-	{
-		return;
-	}
-
-	AI_updateNextBuyUnit();
-
-	for (int i = 0; i < getNumEuropeUnits(); i++)
-	{
-		CvUnit *pUnit = getEuropeUnit(i);
-		CvUnitInfo& kUnit = pUnit->getUnitInfo();
-
-		if (kUnit.getTeacherWeight() <= 0 || AI_isStrategy(STRATEGY_REVOLUTION_PREPARING))
-		{
-			bool bProfessionChange = false;
-			eBuyUnit = AI_nextBuyUnit(&eBuyUnitAI, &iBuyUnitValue);
-			if (eBuyUnit != NO_UNIT)
-			{
-				ProfessionTypes eProfession = GET_PLAYER(pUnit->getOwnerINLINE()).AI_idealProfessionForUnitAIType(eBuyUnitAI);
-				if (eProfession != NO_PROFESSION && pUnit->canHaveProfession(eProfession, false))
-				{
-					int iInitialPrice = getEuropeUnitBuyPrice(eBuyUnit, false);
-					int iMaxPrice = (iInitialPrice * GC.getDefineINT("AI_EUROPE_PRICE_LIMIT_PERCENT")) / 100;
-					int iCurrentPrice = getEuropeUnitBuyPrice(eBuyUnit);
-
-					if ((pUnit->getEuropeProfessionChangeCost(eProfession) <= iCurrentPrice) || (iCurrentPrice >= iMaxPrice))
-					{
-						bProfessionChange = true;
-						changeProfessionEurope(pUnit->getID(), eProfession);
-
-						// TAC - AI Military Buildup - koma13 - START
-						if (AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
-						{
-							AI_clearStrategy(STRATEGY_MILITARY_BUILDUP);
-						}
-						// TAC - AI Military Buildup - koma13 - END
-						AI_updateNextBuyUnit();
-					}
-				}
-			}
-
-			// Only consider changing the profession if this is a regular, unequipped colonist.
-			// TODO: Consider checkinf for lack of equipment instead!
-			if (!bProfessionChange && (pUnit->getProfession() == GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession()) && !AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
-			{
-				if (AI_neededWorkers(NULL) > 0)
-				{
-					ProfessionTypes eProfession = GET_PLAYER(pUnit->getOwnerINLINE()).AI_idealProfessionForUnitAIType(UNITAI_WORKER);
-					if (eProfession != NO_PROFESSION && pUnit->canHaveProfession(eProfession, false))
-					{
-						changeProfessionEurope(pUnit->getID(), eProfession);
-					}
-				}
-				else
-				{
-					if (GC.getGameINLINE().getSorenRandNum(100, "AI buy counter unit") < 25)
-					{
-						if (AI_totalUnitAIs(UNITAI_COUNTER) < getNumCities())
-						{
-							ProfessionTypes eProfession = GET_PLAYER(pUnit->getOwnerINLINE()).AI_idealProfessionForUnitAIType(UNITAI_COUNTER);
-							if (eProfession != NO_PROFESSION && pUnit->canHaveProfession(eProfession, false))
-							{
-								changeProfessionEurope(pUnit->getID(), eProfession);
-							}
-						}
-					}
-				}
-			}
-		}
-	}
-	// TAC - AI purchases military units - koma13 - END
 }
 
 void CvPlayerAI::AI_nativeYieldGift(CvUnit* pUnit)
