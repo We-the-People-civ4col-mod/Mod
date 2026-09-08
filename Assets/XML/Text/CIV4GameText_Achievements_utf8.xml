@@ -1268,12 +1268,14 @@
 		<English>Your first war galleon</English>
 		<Portuguese>Seu primeiro galeão de guerra</Portuguese>
 		<German>Eure erste Kriegsgaleone</German>
+		<Russian>Ваш первый боевой галеон</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_WAR_GALLEON_HEAD</Tag>
 		<English>A war galleon is now patrolling these waters</English>
 		<Portuguese>Um galeão de guerra está agora patrulhando estas águas</Portuguese>
 		<German>Eine Kriegsgaleone kreuzt nun in diesen Gewässern</German>
+		<Russian>Боевой галеон патрулирует эти воды</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_WAR_GALLEON_TEXT</Tag>
@@ -1286,18 +1288,21 @@
 		<English>Two Naos</English>
 		<Portuguese>Dois Naos</Portuguese>
 		<German>Zwei Naos</German>
+		<Russian>Два Нао</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_NAO_HEAD</Tag>
 		<English>A small merchant fleet</English>
 		<Portuguese>Uma pequena frota mercante</Portuguese>
 		<German>Eine kleine Handelsflotte</German>
+		<Russian>Небольшой торговый флот</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_NAO_TEXT</Tag>
 		<English>Where at first a single ship was enough to bind our fragile settlement to the Old World, two mighty Naos now ride the tide beneath our flag. Their holds are filled with timber, tobacco, cloth, tools and all the fruits of colonial labor, while sailors and dockworkers crowd the quays in the golden light of evening.[NEWLINE][NEWLINE]This is more than the arrival of another vessel; it is the first sign of a true merchant fleet. Across the vast Atlantic, our colony now sends not merely pleas for aid, but goods, wealth and ambition.[NEWLINE][NEWLINE]The merchants rejoice, the warehouses fill, and every mast in the harbor speaks of growing prosperity. If fortune favors us, these ships shall carry the promise of our colony to every port of the realm.</English>
 		<Portuguese>Onde inicialmente um único navio era suficiente para ligar o nosso frágil povoado ao Velho Mundo, dois poderosos Naos agora navegam na maré sob a nossa bandeira. Seus porões estão cheios de madeira, tabaco, tecidos, ferramentas e todos os frutos do trabalho colonial, enquanto marinheiros e estivadores lotam os cais à luz dourada da noite.[NEWLINE][NEWLINE]Isso é mais do que a chegada de outro navio; é o primeiro sinal de uma verdadeira frota mercante. Do outro lado do vasto Atlântico, a nossa colônia envia agora não apenas pedidos de ajuda, mas também bens, riqueza e ambição.[NEWLINE][NEWLINE]Os mercadores alegram-se, os armazéns enchem-se e cada mastro no porto fala de prosperidade crescente. Se a sorte nos favorecer, estes navios levarão a promessa da nossa colônia a todos os portos do reino.</Portuguese>
 		<German>Wo zunächst ein einzelnes Schiff genügte, um unsere zerbrechliche Siedlung mit der Alten Welt zu verbinden, liegen nun zwei mächtige Naos unter unserer Flagge im Hafen. Ihre Laderäume füllen sich mit Holz, Tabak, Tuch, Werkzeugen und all den Früchten kolonialer Arbeit, während Matrosen und Hafenarbeiter im goldenen Licht des Abends die Kais bevölkern.[NEWLINE][NEWLINE]Dies ist mehr als nur die Ankunft eines weiteren Schiffes; es ist das erste Zeichen einer echten Handelsflotte. Über den weiten Atlantik sendet unsere Kolonie nun nicht mehr nur Bitten um Beistand, sondern Waren, Reichtum und Ehrgeiz.[NEWLINE][NEWLINE]Die Kaufleute jubeln, die Lagerhäuser füllen sich, und jeder Mast im Hafen kündet von wachsendem Wohlstand. Wenn das Glück uns hold ist, werden diese Schiffe die Verheißung unserer Kolonie in jeden Hafen des Reiches tragen.</German>
+		<Russian>Там, где поначалу одного корабля было достаточно, чтобы связать наше хрупкое поселение со Старым Светом, теперь два могучих «Нао» бороздят просторы под нашим флагом. Их трюмы заполнены древесиной, табаком, тканью, инструментами и всеми плодами колониального труда, а моряки и докеры толпятся на причалах в золотом вечернем свете.[NEWLINE][NEWLINE]Это больше, чем просто прибытие еще одного судна; это первый признак настоящего торгового флота. Через бескрайний Атлантический океан наша колония теперь посылает не только просьбы о помощи, но и товары, богатство и амбиции. [NEWLINE][NEWLINE]Торговцы ликуют, склады заполняются и каждая мачта в гавани говорит о растущем процветании. Если удача будет к нам благосклонна, эти корабли доставят плоды трудов нашей колонии в каждый порт королевства.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_GALLEON</Tag>
@@ -1497,7 +1502,7 @@
 		<Portuguese>Sua primeira caravela de guerra</Portuguese>
 		<French>Votre première caravelle de guerre</French>
 		<German>Eure erste Kriegskaravelle</German>
-		<Russian/>
+		<Russian>Ваша первая боевая каравелла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_WAR_CARAVEL_HEAD</Tag>
@@ -1505,13 +1510,14 @@
 		<Portuguese>Sua primeira caravela de guerra</Portuguese>
 		<French>Votre première caravelle de guerre</French>
 		<German>Eure erste Kriegskaravelle</German>
-		<Russian/>
+		<Russian>Ваша первая боевая каравелла</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_WAR_CARAVEL_TEXT</Tag>
 		<English>From the window of your office you gaze down upon the harbor as the sun rises above the horizon. Among the merchantmen and fishing vessels lies a newly arrived ship at anchor, her slender hull and towering rigging immediately drawing the eye. "[COLOR_SELECTED_TEXT]A War Caravel, Governor.[COLOR_REVERT]" your secretary reports dutifully. "[COLOR_SELECTED_TEXT]She has only just arrived from Europe. The Crown's shipyards are producing these vessels in increasing numbers.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A caravel? We have seen plenty of those already. Why all this excitement?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, Governor, this is no ordinary caravel. The War Caravel is faster and considerably more heavily armed than her civilian cousins. She is excellently suited for exploring unknown coastlines, hunting smugglers and pirates, and safeguarding our trade routes.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hm... perhaps you are right. The colonies continue to grow, and we shall need protection at sea.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Indeed, Governor.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]The eyes and ears of a fleet, then? Very well. Let us hope she is equally swift in spotting the next bill arriving from Europe.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>Da janela do seu escritório, você olha o porto enquanto o sol nasce no horizonte. Entre os navios mercantes e os barcos de pesca, um navio recém-chegado está ancorado; o casco esbelto e o velame altaneiro chamam a atenção de imediato. "[COLOR_SELECTED_TEXT]Uma Caravela de Guerra, governador.[COLOR_REVERT]" informa o secretário, cumpridor. "[COLOR_SELECTED_TEXT]Acabou de chegar da Europa. Os estaleiros da Coroa estão produzindo esses navios em número crescente.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Uma caravela? Já vimos muitas. Por que tanto alvoroço?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bem, governador, esta não é uma caravela comum. A Caravela de Guerra é mais rápida e bem mais armada do que as primas civis. Serve muito bem para explorar costas desconhecidas, caçar contrabandistas e piratas, e proteger nossas rotas comerciais.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hm... talvez você tenha razão. As colônias continuam a crescer, e precisaremos de proteção no mar.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]De fato, governador.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Os olhos e os ouvidos de uma frota, então? Muito bem. Esperemos que ela seja igualmente rápida para avistar a próxima conta que chegar da Europa.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>Ihr blickt aus dem Fenster Eures Dienstzimmers auf den Hafen hinunter, über dem gerade die Sonne aufgeht. Zwischen den Handelsschiffen und Fischerbooten liegt ein neues Schiff vor Anker, dessen schlanker Rumpf und hohe Takelage sofort ins Auge fallen. "[COLOR_SELECTED_TEXT]Eine Kriegskaravelle, Herr Gouverneur.[COLOR_REVERT]" meldet Euch Euer Sekretär pflichtbewusst. "[COLOR_SELECTED_TEXT]Gerade erst aus Europa eingetroffen. Die Werften der Krone bauen diese Schiffe inzwischen in größerer Zahl.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eine Karavelle? Davon haben wir doch bereits einige gesehen. Weshalb macht Ihr darum solch ein Aufheben?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nun, Herr Gouverneur, dies ist keine gewöhnliche Karavelle. Die Kriegskaravelle ist schneller und zugleich deutlich stärker bewaffnet als ihre zivilen Verwandten. Sie eignet sich hervorragend zur Aufklärung unbekannter Küsten, zur Jagd auf Schmuggler und Piraten sowie zur Sicherung unserer Handelsrouten.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hm... vielleicht habt Ihr Recht, die Kolonien wachsen und wir brauchen Schutz zur See.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Jawohl, Herr Gouverneur.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Die Augen und Ohren einer Flotte also? Nun gut. Dann wollen wir hoffen, dass sie auch rechtzeitig sieht, wenn die nächste Rechnung aus Europa eintrifft.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
+		<Russian>Из окна своего кабинета вы осматриваете гавань, наблюдая, как солнце поднимается над горизонтом. Среди торговых и рыболовецких судов на якоре стоит недавно прибывший корабль, его стройный корпус и высокий такелаж сразу же привлекают внимание. «[COLOR_SELECTED_TEXT]Боевая каравелла, губернатор.[COLOR_REVERT]» — сообщает ваш секретарь. "[COLOR_SELECTED_TEXT]Она только что прибыла из Европы. Коронные верфи производят эти суда во все больших количествах.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Каравелла? Мы уже видели их предостаточно. Из-за чего весь этот ажиотаж?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Кхм, губернатор, это не обычная каравелла. Боевая каравелла быстрее и значительно лучше вооружена, чем ее простая торговая версия. Она отлично подходит для исследования неизвестных берегов, охоты на контрабандистов и пиратов, а также для охраны наших торговых путей.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Хм... возможно, вы правы. Колонии продолжают расти и нам понадобится защита в море.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Вы правы, губернатор.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Значит, глаза и уши флота? Очень хорошо. Будем надеяться, что она раньше всех заметит следующий конвой, прибывающий из Европы.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CORVETTE</Tag>
@@ -1736,7 +1742,7 @@
 		<Portuguese>Piratas, a escória dos mares, estão agora sob seu comando</Portuguese>
 		<French>Des Pirates, la racaille des océans, sont sous vos ordres</French>
 		<German>Piraten, den Abschaum der Meere, habt Ihr nun unter Eurem Befehl</German>
-		<Russian>Ваш первый пиратский фрегат</Russian>
+		<Russian>Пираты, отбросы морских просторов, теперь под вашим командованием. (Ваш первый пиратский фрегат)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_SHIP_HEAD</Tag>
@@ -1750,19 +1756,21 @@
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_SHIP_TEXT</Tag>
 		<English>Once our colony was founded, many spoke of freedom, prosperity and a better life in the New World. It was a dream of paradise beyond the ocean, a place where honest men might begin anew. Yet the years have taught us that this world is not ruled by hope alone. Far from the laws of Europe and beyond the reach of the Crown, power belongs to those bold enough to seize it.[NEWLINE][NEWLINE]What began as a refuge for adventurers and outcasts has become a haven for pirates, smugglers and desperate men. They know no law but profit, no loyalty but fear, and no command but their own ambition.[NEWLINE][NEWLINE]Perhaps this is the true face of the New World: not innocence, but struggle; not paradise, but a game of power and gold. If others bend the rules to survive, then so shall we. Our colony will no longer merely endure this grim reality — it will learn to master it.</English>
 		<Portuguese>Assim que a nossa colônia foi fundada, muitos falaram de liberdade, prosperidade e uma vida melhor no Novo Mundo. Era um sonho de paraíso além do oceano, um lugar onde homens honestos pudessem começar de novo. No entanto, os anos ensinaram-nos que este mundo não é governado apenas pela esperança. Longe das leis da Europa e fora do alcance da Coroa, o poder pertence àqueles que são corajosos o suficiente para tomá-lo.[NEWLINE][NEWLINE]O que começou como um refúgio para aventureiros e párias tornou-se um refúgio para piratas, contrabandistas e homens desesperados. Eles não conhecem lei além do lucro, nenhuma lealdade além do medo, e nenhum comando além de sua própria ambição.[NEWLINE][NEWLINE]Talvez esta seja a verdadeira face do Novo Mundo: não a inocência, mas a luta; não o paraíso, mas um jogo de poder e ouro. Se outros violarem as regras para sobreviver, nós também o faremos. A nossa colônia não irá mais apenas suportar esta dura realidade – aprenderá a dominá-la.</Portuguese>
-		<German>Als unsere Kolonie gegründet wurde, sprachen viele von Freiheit, Wohlstand und einem besseren Leben in der Neuen Welt. Es war der Traum von einem Paradies jenseits des Ozeans, einem Ort, an dem ehrliche Männer neu beginnen konnten. Doch die Jahre haben uns gelehrt, dass diese Welt nicht allein von Hoffnung regiert wird.[NEWLINE][NEWLINE]Fern der Gesetze Europas und jenseits der Reichweite der Krone gehört die Macht denen, die kühn genug sind, sie an sich zu reißen. Was als Zuflucht für Abenteurer und Ausgestoßene begann, ist zu einem Hort für Piraten, Schmuggler und verzweifelte Männer geworden. Sie kennen kein Gesetz außer dem Gewinn, keine Treue außer der Furcht und keinen Befehl außer dem eigenen Ehrgeiz.[NEWLINE][NEWLINE]Vielleicht ist dies das wahre Gesicht der Neuen Welt: nicht Unschuld, sondern Kampf; nicht Paradies, sondern ein Spiel um Macht und Gold. Wenn andere die Regeln beugen, um zu überleben, dann werden auch wir es tun. Unsere Kolonie wird diese abgründige Realität nicht länger nur ertragen — sie wird lernen, sie zu beherrschen.</German>	
+		<German>Als unsere Kolonie gegründet wurde, sprachen viele von Freiheit, Wohlstand und einem besseren Leben in der Neuen Welt. Es war der Traum von einem Paradies jenseits des Ozeans, einem Ort, an dem ehrliche Männer neu beginnen konnten. Doch die Jahre haben uns gelehrt, dass diese Welt nicht allein von Hoffnung regiert wird.[NEWLINE][NEWLINE]Fern der Gesetze Europas und jenseits der Reichweite der Krone gehört die Macht denen, die kühn genug sind, sie an sich zu reißen. Was als Zuflucht für Abenteurer und Ausgestoßene begann, ist zu einem Hort für Piraten, Schmuggler und verzweifelte Männer geworden. Sie kennen kein Gesetz außer dem Gewinn, keine Treue außer der Furcht und keinen Befehl außer dem eigenen Ehrgeiz.[NEWLINE][NEWLINE]Vielleicht ist dies das wahre Gesicht der Neuen Welt: nicht Unschuld, sondern Kampf; nicht Paradies, sondern ein Spiel um Macht und Gold. Wenn andere die Regeln beugen, um zu überleben, dann werden auch wir es tun. Unsere Kolonie wird diese abgründige Realität nicht länger nur ertragen — sie wird lernen, sie zu beherrschen.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_FRIGATE</Tag>
-		<English>YOu are now in command of a pirate frigate</English>
+		<English>You are now in command of a pirate frigate</English>
 		<Portuguese>Você agora está no comando de uma fragata pirata</Portuguese>
 		<German>Ihr kommandiert nun eine Piratenfregatte</German>
+		<Russian>Теперь вы командуете Пиратским фрегатом</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_FRIGATE_HEAD</Tag>
 		<English>Committed to the cause</English>
 		<Portuguese>Comprometido com a causa</Portuguese>
 		<German>Der Beute verpflichtet</German>
+		<Russian>Преданность делу/Добыча обязательна</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_FRIGATE_TEXT</Tag>
@@ -3090,7 +3098,7 @@
 		<Portuguese>Sua primeira cervejaria</Portuguese>
 		<French>Votre première brasserie</French>
 		<German>Eure erste Brauerei</German>
-		<Russian>Ваша первая пивоварня</Russian> 
+		<Russian>Ваша первая пивоварня</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BREWERY_HEAD</Tag>
@@ -3571,7 +3579,7 @@
 		<French>«[COLOR_SELECTED_TEXT][COLOR_SELECTED_TEXT]Va dans la nature et proclame la parole de Dieu. Convertis ces sauvages athées pour qu'ils nous suivent au paradis et qu'ils nous donnent leur or au bénéfice de notre Église. Sauve leurs âmes de la souffrance éternelle et ramène-moi leur or.[COLOR_REVERT][COLOR_REVERT] »[NEWLINE][NEWLINE]« [COLOR_SELECTED_TEXT]Oui mon père, je ne vous décevrai pas .[COLOR_REVERT]»[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Je le sais bien, mon fils. Et si c'est le cas, tu ferais mieux de rester avec eux. Va donc, maintenant...[COLOR_REVERT]»[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Иди же в пустыню и проповедуй Слово Божье. Обрати этих безбожных дикарей в Истинную Веру, чтобы они последовали за нами на Небо и отдали нам свое золото на благо Церкви. Спаси их души от вечного проклятия и принеси мне их золото.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, отец. Я не разочарую вас.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я знаю это, сын мой. И если ты это сделаешь, тебе лучше остаться там, с ними. А теперь иди...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
-	</TEXT>	
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT</Tag>
 		<English>The first missionary</English>
@@ -3894,7 +3902,7 @@
 		<Portuguese>Você contratou um caçador de escravos para trazer escravos fugitivos. Alguns caçadores de escravos escolhem um tartan distinto para que os escravos do proprietário possam ser identificados pelas suas roupas. Os escravos recebem o tartan brilhante. O caçador de escravos usa um tecido discreto para se camuflar na floresta.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Ihr habt einen Sklavenjäger angeheuert, der Euch entlaufene Sklaven zurückbringt. Da ihr nun offensichtlich ganz und gar in dieses Geschäft eingestiegen seid und Eure Plantagen mit Sklaven betreibt, gibt es dazu eigentlich nichts mehr zu sagen. Möge der Herr Euch Eure Taten vergeben.[NEWLINE][NEWLINE]</German>
 		<Russian>Вы наняли охотника за рабами, чтобы вернуть сбежавших наглецов. Теперь, когда вы полностью посвятили себя этому делу и поручили работу на плантациях рабам, больше нечего сказать об этом. Господь милосердный да простит вас за дела неправедные.[NEWLINE][NEWLINE]</Russian>
-	</TEXT>	
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_MASTER</Tag>
 		<English>First slave master</English>
