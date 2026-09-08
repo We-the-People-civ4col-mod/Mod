@@ -173,56 +173,56 @@
 		<English>During the attack on %s1_city, one of the blackmailers was seized and clapped in irons.</English>
 		<Portuguese>Durante o ataque a %s1_city, um dos chantagistas foi preso e acorrentado.</Portuguese>
 		<German>Bei dem Angriff auf %s1_city wurde einer der Übeltäter überwältigt und in Ketten gelegt.</German>
-		<Russian/>
+		<Russian>Во время нападения на город %s1_city одного из преступников схватили и заковали в кандалы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REBEL_RAID_CAPTURED_AFRICAN_SLAVE</Tag>
 		<English>During the attack on %s1_city, one of the rebelling slaves was captured alive.</English>
 		<Portuguese>Durante o ataque a %s1_city, um dos escravos rebeldes foi capturado vivo.</Portuguese>
 		<German>Bei dem Angriff auf %s1_city wurde einer der aufständischen Sklaven lebend gefangen genommen.</German>
-		<Russian/>
+		<Russian>Во время нападения на город %s1_city один из восставших рабов был захвачен живым.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REBEL_RAID_CAPTURED_NATIVE_SLAVE</Tag>
 		<English>During the attack on %s1_city, one of the rebelling Native slaves was captured alive.</English>
 		<Portuguese>Durante o ataque a %s1_city, um dos escravos nativos rebeldes foi capturado vivo.</Portuguese>
 		<German>Bei dem Angriff auf %s1_city wurde einer der aufständischen eingeborenen Sklaven lebend gefangen genommen.</German>
-		<Russian/>
+		<Russian>Во время нападения на  город %s1_city один из восставших рабов-индейцев был захвачен живым.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REBEL_RAID_CAPTURED_PRISONER_OF_WAR</Tag>
 		<English>During the attack on %s1_city, one of the rebelling prisoners was taken back into custody.</English>
 		<Portuguese>Durante o ataque a %s1_city, um dos prisioneiros rebeldes foi levado novamente sob custódia.</Portuguese>
 		<German>Bei dem Angriff auf %s1_city wurde einer der aufständischen Gefangenen wieder in Gewahrsam genommen.</German>
-		<Russian/>
+		<Russian>Во время нападения на город %s1_city один из восставших заключенных был вновь взят под стражу.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REBEL_RAID_GOLD</Tag>
 		<English>After the attack on %s1_city, the raiders made off with gold from the treasury.</English>
 		<Portuguese>Após o ataque a %s1_city, os invasores fugiram com ouro do tesouro.</Portuguese>
 		<German>Nach dem Angriff auf %s1_city entkamen die Plünderer mit Gold aus der Stadtkasse.</German>
-		<Russian/>
+		<Russian>После нападения на город %s1_city, грабители скрылись с золотом из казны.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REBEL_RAID_GOODS</Tag>
 		<English>After the attack on %s1_city, the raiders looted goods and provisions.</English>
 		<Portuguese>Após o ataque a %s1_city, os invasores saquearam bens e provisões.</Portuguese>
 		<German>Nach dem Angriff auf %s1_city plünderten die Aufständischen Waren und Vorräte.</German>
-		<Russian/>
+		<Russian>Во время нападения на город %s1_city, грабители утащили товары и припасы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REBEL_RAID_WEAPONS</Tag>
 		<English>After the attack on %s1_city, the raiders seized weapons from the stores.</English>
 		<Portuguese>Após o ataque a %s1_city, os invasores apreenderam armas nas lojas.</Portuguese>
 		<German>Nach dem Angriff auf %s1_city brachten die Aufständischen Waffen an sich.</German>
-		<Russian/>
+		<Russian>Во время нападения на город %s1_city, грабители захватили оружие со складов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_REBEL_RAID_NOTHING</Tag>
 		<English>The attack on %s1_city was put down before lasting harm was done.</English>
 		<Portuguese>O ataque a %s1_city foi reprimido antes que danos permanentes fossem causados.</Portuguese>
 		<German>Der Angriff auf %s1_city wurden niedergeschlagen, bevor bleibender Schaden entstand.</German>
-		<Russian/>
+		<Russian>Атака на город %s1_city была отбита до того, как был нанесен непоправимый ущерб.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FORTBOMB_SUNK_GOOD</Tag>
@@ -265,7 +265,8 @@
 		<German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Die Zitadelle von [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] hat ihre Kanonen auf unser Schiff abgefeuert und es beschädigt!</German>
 		<Italian>La cittadella di [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha sparato i suoi cannoni presso la nostra nave e danneggiato it!</Italian>
 		<Spanish>La ciudadela de [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] ha disparado sus cañones en nuestro barco y dañado!</Spanish>
-		<Russian>[COLOR_WARNING_TEXT]Плохие новости, Милорд! [COLOR_REVERT]Цитадель [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] огнем из своих пушек смогла повредить наш корабль!</Russian>					<Hungarian>[COLOR_WARNING_TEXT]Rossz hírek, Uram! [COLOR_REVERT][COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] fellegvár ágyúi a csapatainkra lőttek és megsebesítették őket!</Hungarian>
+		<Russian>[COLOR_WARNING_TEXT]Плохие новости, Милорд! [COLOR_REVERT]Цитадель [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] огнем из своих пушек смогла повредить наш корабль!</Russian>
+		<Hungarian>[COLOR_WARNING_TEXT]Rossz hírek, Uram! [COLOR_REVERT][COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] fellegvár ágyúi a csapatainkra lőttek és megsebesítették őket!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FORTBOMB_MISS_BAD</Tag>
@@ -1325,7 +1326,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_WAREHOUSE</Tag>
 		<English>Storage House</English>
-		
 		<Portuguese>
 			<Text>Casa de armazenamento</Text>
 			<Gender>Female</Gender>
