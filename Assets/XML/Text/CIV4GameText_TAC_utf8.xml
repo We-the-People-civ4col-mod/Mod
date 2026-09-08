@@ -1803,11 +1803,13 @@
 		<Tag>TXT_KEY_LBD_GRANT_FREEDOM</Tag>
 		<English>This slave has earned freedom through years of hard labor. Grant freedom now?</English>
 		<German>Dieser Sklave hat sich durch jahrelange harte Arbeit seine Freiheit verdient. Soll ihm nun die Freiheit gewährt werden?</German>
+		<Russian>Этот раб заслужил свободу годами тяжелого труда. Хотите освободить его?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GRANT_FREEDOM_CONFIRM</Tag>
 		<English>Do you want to grant this slave freedom?</English>
 		<German>Möchtest du diesen Sklaven in die Freiheit entlassen?</German>
+		<Russian>Желаете даровать этому рабу свободу?</Russian>
 	</TEXT> 
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_MAX_WORKERS</Tag>
@@ -2203,6 +2205,7 @@
 		<German>Eine düstere Gestalt tritt heran ...</German>
 		<Italian>Menu imbroglio</Italian>
 		<Spanish>Menú de trucos</Spanish>
+		<Russian>AoD чит меню</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CHEATMENU_TEXT</Tag>
@@ -2210,6 +2213,7 @@
 		<Portuguese>Escolha uma opção abaixo. Lembre-se, eu sei que você trapaceou!</Portuguese>
 		<French>Veuillez choisir l'une des options suivantes. Attention, je sais que vous avez triché!</French>
 		<German>Gouverneur, wollt Ihr mir Eure Seele verkaufen?</German>
+		<Russian>Пожалуйста, выберите один из вариантов ниже. Помните, я знаю, что вы жульничаете!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CHEATMENU_CANCEL</Tag>
@@ -2217,6 +2221,7 @@
 		<Portuguese>Eu não sou um trapaceiro! (CANCELAR)</Portuguese>
 		<French>Je ne suis pas un tricheur ! (ANNULER)</French>
 		<German>Ich bleibe standhaft. Weiche, Satan! (ABBRUCH)</German>
+		<Russian>Я не обманщик! (ОТМЕНА)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_AIAUTOPLAY</Tag>
@@ -2224,6 +2229,7 @@
 		<Portuguese>Número de turnos para AI Autoplay:</Portuguese>
 		<French>Nombre de tours en jeu automatisé :</French>
 		<German>Zahl der automatischen Runden:</German>
+		<Russian>Количество ходов для автоигры под управлением ИИ:</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_AIAUTOPLAY10</Tag>
@@ -2231,6 +2237,7 @@
 		<Portuguese>Reprodução automática de IA 10 turnos</Portuguese>
 		<French>Jeu automatisé pendant 10 Tours</French>
 		<German>10 Runden</German>
+		<Russian>Автоматическая игра с ИИ, 10 ходов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_AIAUTOPLAY50</Tag>
@@ -2238,6 +2245,7 @@
 		<Portuguese>Reprodução automática de IA 50 turnos</Portuguese>
 		<French>Jeu automatisé pendant 50 Turns</French>
 		<German>50 Runden</German>
+		<Russian>Автоматическая игра с ИИ, 50 ходов</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MONEYTREE</Tag>
@@ -2245,6 +2253,7 @@
 		<Portuguese>Quantidade de [ICON_GOLD] a adicionar:</Portuguese>
 		<French>Montant de [ICON_GOLD] à ajouter :</French>
 		<German>Seele(n) verkaufen für [ICON_GOLD]:</German>
+		<Russian>Количество добавляемого [ICON_GOLD]:</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MONEYTREE1000</Tag>
@@ -2252,6 +2261,7 @@
 		<Portuguese>Adicione 1000[ICON_GOLD]</Portuguese>
 		<French>Ajouter 1000[ICON_GOLD]</French>
 		<German>Eigene Seele: +1000[ICON_GOLD]</German>
+		<Russian>Добавить 1000[ICON_GOLD]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MONEYTREE5000</Tag>
@@ -2259,6 +2269,7 @@
 		<Portuguese>Adicione 5.000[ICON_GOLD]</Portuguese>
 		<French>Ajouter 5000[ICON_GOLD]</French>
 		<German>Seelen der Kinder und Enkel: +5000[ICON_GOLD]</German>
+		<Russian>Добавить 5000[ICON_GOLD]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TIMETEXT_TURN</Tag>
