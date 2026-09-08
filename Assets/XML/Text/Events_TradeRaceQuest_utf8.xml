@@ -5752,6 +5752,6 @@
 		<English>We will receive a [COLOR_FONT_GOLD]%s1[COLOR_REVERT] in one of our colonies.</English>
 		<Portuguese>Receberemos um [COLOR_FONT_GOLD]%s1[COLOR_REVERT] em uma de nossas colônias.</Portuguese>
 		<German>Wir erhalten eine [COLOR_FONT_GOLD]%s1[COLOR_REVERT] in einer unserer Kolonien.</German>
-		<Russian/>
+		<Russian>Мы получим [COLOR_FONT_GOLD]%s1[COLOR_REVERT] в одной из наших колоний.</Russian>
 	</TEXT>
 </Civ4GameText>
