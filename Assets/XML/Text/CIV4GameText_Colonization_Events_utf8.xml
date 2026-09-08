@@ -5868,7 +5868,7 @@
 		<German>Milord, die Ehefrau eines Offiziers hat offenbar einmal zu viel mit einem anderen angebandelt. Der Ehemann - ein Offizier unserer Garnison - meint, dass kann nur auf eine Weise aus der Welt geschafft werden. Er hat den anderen Ehrenmann zum Duell gefordert.</German>
 		<Russian>В одной из наших колоний молодой офицер уличил свою жену в неверности и считает, что решить эту проблему можно только одним способом - дуэль чести!</Russian>
 	</TEXT>
-   <TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_1</Tag>
 		<English>A duel? How wonderful! We haven't had one for a long time! I will offer myself as second.</English>
 		<Portuguese>Um duelo? Que maravilha! Faz muito tempo que não temos! Vou me oferecer como segundo.</Portuguese>
@@ -5953,7 +5953,7 @@
 		<English>[ICON_BULLET]The officer is being assigned to a small outpost. Send him to a small fort. If you haven't built a fort yet, transfer him there as soon as you have.</English>
 		<Portuguese>[ICON_BULLET]O oficial está sendo designado para um pequeno posto avançado. Envie-o para um pequeno forte. Se você ainda não construiu um forte, transfira-o para lá assim que o fizer.</Portuguese>
 		<German>[ICON_BULLET]Der Offizier wird auf einen kleinen Außenposten versetzt. Schickt ihn in ein kleines Fort. Wenn ihr noch kein Fort errichtet habt, versetzt ihn umgehend sobald ihr es errichtet habt.</German>
-		<Russian>[ICON_BULLET]Офицера был отправлен нести службу на делёком аванпосту. Отправьте его в небольшой форт. Если вы ещё не построили форт, переведите офицера туда сразу же после окончания строительства.</English></Russian>
+		<Russian>[ICON_BULLET]Офицера был отправлен нести службу на делёком аванпосту. Отправьте его в небольшой форт. Если вы ещё не построили форт, переведите офицера туда сразу же после окончания строительства.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_ARRIVAL</Tag>
@@ -7989,7 +7989,6 @@
 		<German>Heiliger Boden wurde an den nahegelegenen Stamm zurückgegeben. Dort wurde eine Begräbnisstätte wiedererrichtet, und die [COLOR_HIGHLIGHT_TEXT]Beziehungen verbessern sich[COLOR_REVERT].</German>
 		<Russian>Священная земля была возвращена соседнему племени. Разрушенные места захоронений были восстановлены и [COLOR_HIGHLIGHT_TEXT]отношения на некоторое время улучшаются.[COLOR_REVERT]</Russian>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_LN_2</Tag>
 		<English>Compensation has been offered to the nearby tribe for settling upon sacred land. The site is cleared, yet relations remain strained.</English>
@@ -7997,7 +7996,6 @@
 		<German>Dem nahegelegenen Stamm wurde für die Besiedlung heiligen Landes eine Entschädigung angeboten. Der Ort wurde geräumt, doch die Beziehungen bleiben belastet.</German>
 		<Russian>Соседнему племени была предложена компенсация за заселение священной земли. Территория очищена от колониальных построек и насаждений, но отношения остаются напряженными.</Russian>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_LN_3</Tag>
 		<English>The demands of the nearby tribe have been refused. [COLOR_HIGHLIGHT_TEXT]Tensions rise[COLOR_REVERT], and open conflict follows.</English>
