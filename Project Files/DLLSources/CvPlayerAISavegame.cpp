@@ -86,6 +86,14 @@ enum SavegameVariableTypes
 	PlayerSaveAI_StrategyStartedTurn,
 	PlayerSaveAI_StrategyData,
 
+	// WTP, Schmiddie, Native Economic Diplomacy - START
+	PlayerSaveAI_NativeTradeTrust,
+	PlayerSaveAI_NativeTradeLastTurn,
+	PlayerSaveAI_NativeTradeCountThisTurn,
+	PlayerSaveAI_NativeGiftAttitude,
+	PlayerSaveAI_NativeEconomicContactLastTurn,
+	// WTP, Schmiddie, Native Economic Diplomacy - END
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -146,6 +154,13 @@ const char* getSavedEnumNamePlayerAi(SavegameVariableTypes eType)
 		case PlayerSaveAI_Emotions: return "PlayerSaveAI_Emotions";
 		case PlayerSaveAI_StrategyStartedTurn: return "PlayerSaveAI_StrategyStartedTurn";
 		case PlayerSaveAI_StrategyData: return "PlayerSaveAI_StrategyData";
+		// WTP, Schmiddie, Native Economic Diplomacy - START
+		case PlayerSaveAI_NativeTradeTrust: return "PlayerSaveAI_NativeTradeTrust";
+		case PlayerSaveAI_NativeTradeLastTurn: return "PlayerSaveAI_NativeTradeLastTurn";
+		case PlayerSaveAI_NativeTradeCountThisTurn: return "PlayerSaveAI_NativeTradeCountThisTurn";
+		case PlayerSaveAI_NativeGiftAttitude: return "PlayerSaveAI_NativeGiftAttitude";
+		case PlayerSaveAI_NativeEconomicContactLastTurn: return "PlayerSaveAI_NativeEconomicContactLastTurn";
+		// WTP, Schmiddie, Native Economic Diplomacy - END
 
 	}
 	FAssertMsg(0, "Missing case");
@@ -187,6 +202,13 @@ void CvPlayerAI::AI_resetSavedData()
 	m_em_iUnitAIStrategyWeights.reset();
 	m_em_iPeacetimeTradeValue.reset();
 	m_em_iPeacetimeGrantValue.reset();
+	// WTP, Schmiddie, Native Economic Diplomacy - START
+	m_em_iNativeTradeTrust.reset();
+	m_em_iNativeTradeLastTurn.reset();
+	m_em_iNativeTradeCountThisTurn.reset();
+	m_em_iNativeGiftAttitude.reset();
+	m_em_iNativeEconomicContactLastTurn.reset();
+	// WTP, Schmiddie, Native Economic Diplomacy - END
 	m_em_iGoldTradedTo.reset();
 	m_em_iAttitudeExtra.reset();
 	m_em_bFirstContact.reset();
@@ -264,6 +286,13 @@ void CvPlayerAI::read(CvSavegameReader reader)
 		case PlayerSaveAI_UnitAIStrategyWeights: reader.Read(m_em_iUnitAIStrategyWeights); break;
 		case PlayerSaveAI_PeacetimeTradeValue: reader.Read(m_em_iPeacetimeTradeValue); break;
 		case PlayerSaveAI_PeacetimeGrantValue: reader.Read(m_em_iPeacetimeGrantValue); break;
+		// WTP, Schmiddie, Native Economic Diplomacy - START
+		case PlayerSaveAI_NativeTradeTrust: reader.Read(m_em_iNativeTradeTrust); break;
+		case PlayerSaveAI_NativeTradeLastTurn: reader.Read(m_em_iNativeTradeLastTurn); break;
+		case PlayerSaveAI_NativeTradeCountThisTurn: reader.Read(m_em_iNativeTradeCountThisTurn); break;
+		case PlayerSaveAI_NativeGiftAttitude: reader.Read(m_em_iNativeGiftAttitude); break;
+		case PlayerSaveAI_NativeEconomicContactLastTurn: reader.Read(m_em_iNativeEconomicContactLastTurn); break;
+		// WTP, Schmiddie, Native Economic Diplomacy - END
 		case PlayerSaveAI_GoldTradedTo: reader.Read(m_em_iGoldTradedTo); break;
 		case PlayerSaveAI_AttitudeExtra: reader.Read(m_em_iAttitudeExtra); break;
 		case PlayerSaveAI_FirstContact: reader.Read(m_em_bFirstContact); break;
@@ -335,6 +364,13 @@ void CvPlayerAI::write(CvSavegameWriter writer)
 	writer.Write(PlayerSaveAI_UnitAIStrategyWeights, m_em_iUnitAIStrategyWeights);
 	writer.Write(PlayerSaveAI_PeacetimeTradeValue, m_em_iPeacetimeTradeValue);
 	writer.Write(PlayerSaveAI_PeacetimeGrantValue, m_em_iPeacetimeGrantValue);
+	// WTP, Schmiddie, Native Economic Diplomacy - START
+	writer.Write(PlayerSaveAI_NativeTradeTrust, m_em_iNativeTradeTrust);
+	writer.Write(PlayerSaveAI_NativeTradeLastTurn, m_em_iNativeTradeLastTurn);
+	writer.Write(PlayerSaveAI_NativeTradeCountThisTurn, m_em_iNativeTradeCountThisTurn);
+	writer.Write(PlayerSaveAI_NativeGiftAttitude, m_em_iNativeGiftAttitude);
+	writer.Write(PlayerSaveAI_NativeEconomicContactLastTurn, m_em_iNativeEconomicContactLastTurn);
+	// WTP, Schmiddie, Native Economic Diplomacy - END
 	writer.Write(PlayerSaveAI_GoldTradedTo, m_em_iGoldTradedTo);
 	writer.Write(PlayerSaveAI_AttitudeExtra, m_em_iAttitudeExtra);
 	writer.Write(PlayerSaveAI_FirstContact, m_em_bFirstContact);

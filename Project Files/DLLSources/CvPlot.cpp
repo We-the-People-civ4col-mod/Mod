@@ -7697,7 +7697,21 @@ int CvPlot::getBuyCultureAmount(PlayerTypes ePlayer) const
 
 int CvPlot::getBuyPrice(PlayerTypes ePlayer) const
 {
-	int iBuyPrice = getBuyCultureAmount(ePlayer) * GC.getDefineINT("BUY_PLOT_BASE_CULTURE_COST");
+	int iBuyCultureAmount = getBuyCultureAmount(ePlayer);
+
+	// WTP, Schmiddie, Native Land Price Scaling - START
+	if (getOwnerINLINE() != NO_PLAYER && GET_PLAYER(getOwnerINLINE()).isNative())
+	{
+		const int iFullCulturePriceThreshold = 200;
+
+		if (iBuyCultureAmount > iFullCulturePriceThreshold)
+		{
+			iBuyCultureAmount = iFullCulturePriceThreshold + (iBuyCultureAmount - iFullCulturePriceThreshold) / 5;
+		}
+	}
+	// WTP, Schmiddie, Native Land Price Scaling - END
+
+	int iBuyPrice = iBuyCultureAmount * GC.getDefineINT("BUY_PLOT_BASE_CULTURE_COST");
 
 	int iModifier = 100;
 	if (getOwnerINLINE() != NO_PLAYER)

@@ -245,7 +245,11 @@ public:
 
 	int AI_getPeacetimeGrantValue(PlayerTypes eIndex);
 	void AI_changePeacetimeGrantValue(PlayerTypes eIndex, int iChange);
-
+	// WTP, Schmiddie, Native Economic Diplomacy - START
+	int AI_getNativeTradeTrust(PlayerTypes eIndex) const;
+	void AI_recordNativeTrade(PlayerTypes eIndex);
+	void AI_recordNativeGift(PlayerTypes eIndex, int iGiftValue);
+	// WTP, Schmiddie, Native Economic Diplomacy - END
 	int AI_getGoldTradedTo(PlayerTypes eIndex) const;
 	void AI_changeGoldTradedTo(PlayerTypes eIndex, int iChange);
 
@@ -548,6 +552,13 @@ protected:
 	EnumMap<UnitAITypes, int> m_em_iUnitAIStrategyWeights;
 	EnumMap<PlayerTypes, int> m_em_iPeacetimeTradeValue;
 	EnumMap<PlayerTypes, int> m_em_iPeacetimeGrantValue;
+	// WTP, Schmiddie, Native Economic Diplomacy - START
+	EnumMap<PlayerTypes, int> m_em_iNativeTradeTrust;
+	EnumMap<PlayerTypes, int, -1> m_em_iNativeTradeLastTurn;
+	EnumMap<PlayerTypes, int> m_em_iNativeTradeCountThisTurn;
+	EnumMap<PlayerTypes, int> m_em_iNativeGiftAttitude;
+	EnumMap<PlayerTypes, int, -1> m_em_iNativeEconomicContactLastTurn;
+	// WTP, Schmiddie, Native Economic Diplomacy - END
 	EnumMap<PlayerTypes, int> m_em_iGoldTradedTo;
 	EnumMap<PlayerTypes, int> m_em_iAttitudeExtra;
 	EnumMap<UnitClassTypes, int> m_em_iUnitClassWeights;

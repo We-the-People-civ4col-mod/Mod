@@ -3798,9 +3798,121 @@ int CvPlayerAI::AI_getShareWarAttitude(PlayerTypes ePlayer)
 	return iAttitude;
 }
 
+// WTP, Schmiddie, Native Economic Diplomacy - START
+int CvPlayerAI::AI_getNativeTradeTrust(PlayerTypes eIndex) const
+{
+	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
+
+	return range(m_em_iNativeTradeTrust.get(eIndex), 0, 40);
+}
+
+void CvPlayerAI::AI_recordNativeTrade(PlayerTypes eIndex)
+{
+	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
+
+	if (!isNative() || GET_PLAYER(eIndex).isNative())
+	{
+		return;
+	}
+
+	const int iCurrentTurn = GC.getGameINLINE().getGameTurn();
+
+	if (m_em_iNativeTradeLastTurn.get(eIndex) != iCurrentTurn)
+	{
+		m_em_iNativeTradeLastTurn.set(eIndex, iCurrentTurn);
+		m_em_iNativeTradeCountThisTurn.set(eIndex, 0);
+	}
+
+	if (m_em_iNativeTradeCountThisTurn.get(eIndex) >= 2)
+	{
+		return;
+	}
+
+	m_em_iNativeTradeTrust.set(
+		eIndex,
+		std::min(40, m_em_iNativeTradeTrust.get(eIndex) + 1)
+	);
+
+	m_em_iNativeTradeCountThisTurn.set(
+		eIndex,
+		m_em_iNativeTradeCountThisTurn.get(eIndex) + 1
+	);
+
+	m_em_iNativeEconomicContactLastTurn.set(eIndex, iCurrentTurn);
+}
+// WTP, Schmiddie, Native Trade Trust - END
+
+void CvPlayerAI::AI_recordNativeGift(PlayerTypes eIndex, int iGiftValue)
+{
+	FAssertMsg(eIndex >= 0, "eIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < MAX_PLAYERS, "eIndex is expected to be within maximum bounds (invalid Index)");
+
+	if (!isNative() || GET_PLAYER(eIndex).isNative() || iGiftValue <= 0)
+	{
+		return;
+	}
+
+	const int iDivisor =
+		(GET_TEAM(getTeam()).AI_getHasMetCounter(GET_PLAYER(eIndex).getTeam()) + 1) * 3;
+
+	const int iGiftAttitude =
+		range(iGiftValue / std::max(1, iDivisor), 0, 3);
+
+	if (iGiftAttitude > 0)
+	{
+		m_em_iNativeGiftAttitude.set(
+			eIndex,
+			std::min(6, m_em_iNativeGiftAttitude.get(eIndex) + iGiftAttitude)
+		);
+	}
+
+	m_em_iNativeEconomicContactLastTurn.set(
+		eIndex,
+		GC.getGameINLINE().getGameTurn()
+	);
+}
+// WTP, Schmiddie, Native Economic Diplomacy - END
+
 int CvPlayerAI::AI_getTradeAttitude(PlayerTypes ePlayer)
 {
 	// XXX human only?
+
+	// WTP, Schmiddie, Native Economic Diplomacy - START
+	if (isNative())
+	{
+		const int iGrantAttitude =
+			range(m_em_iNativeGiftAttitude.get(ePlayer), 0, 6);
+
+		const int iTradeAttitude =
+			AI_getNativeTradeTrust(ePlayer) / 10;
+
+		int iEconomicAttitude =
+			range(iGrantAttitude + iTradeAttitude, 0, 10);
+
+		const int iLastEconomicContactTurn =
+			m_em_iNativeEconomicContactLastTurn.get(ePlayer);
+
+		if (iLastEconomicContactTurn >= 0)
+		{
+			const int iTurnsSinceEconomicContact =
+				GC.getGameINLINE().getGameTurn() - iLastEconomicContactTurn;
+
+			if (iTurnsSinceEconomicContact >= 60)
+			{
+				const int iDecay =
+					(iTurnsSinceEconomicContact - 50) / 10;
+
+				iEconomicAttitude =
+					std::max(0, iEconomicAttitude - iDecay);
+			}
+		}
+
+		return iEconomicAttitude;
+	}
+	// WTP, Schmiddie, Native Economic Diplomacy - END
+
 	return range(((AI_getPeacetimeGrantValue(ePlayer) + std::max(0, (AI_getPeacetimeTradeValue(ePlayer) - GET_PLAYER(ePlayer).AI_getPeacetimeTradeValue(getID())))) / ((GET_TEAM(getTeam()).AI_getHasMetCounter(GET_PLAYER(ePlayer).getTeam()) + 1) * 5)), 0, 4);
 }
 

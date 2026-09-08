@@ -109,6 +109,12 @@ void CvDeal::addTrades(CLinkList<TradeData>* pFirstList, CLinkList<TradeData>* p
 	bool bSave;
 	int iValue;
 
+	// WTP, Schmiddie, Native Trade Trust - START
+	bool bNativeYieldTrade = false;
+	PlayerTypes eNativePlayer = NO_PLAYER;
+	PlayerTypes eTradePartner = NO_PLAYER;
+	// WTP, Schmiddie, Native Trade Trust - END
+
 	if (pFirstList != NULL)
 	{
 		for (pNode = pFirstList->head(); pNode; pNode = pFirstList->next(pNode))
@@ -134,6 +140,47 @@ void CvDeal::addTrades(CLinkList<TradeData>* pFirstList, CLinkList<TradeData>* p
 		}
 	}
 
+	// WTP, Schmiddie, Native Trade Trust - START
+	if (pFirstList != NULL && pSecondList != NULL &&
+		pFirstList->getLength() > 0 && pSecondList->getLength() > 0)
+	{
+		if (GET_PLAYER(getFirstPlayer()).isNative() && !GET_PLAYER(getSecondPlayer()).isNative())
+		{
+			eNativePlayer = getFirstPlayer();
+			eTradePartner = getSecondPlayer();
+		}
+		else if (GET_PLAYER(getSecondPlayer()).isNative() && !GET_PLAYER(getFirstPlayer()).isNative())
+		{
+			eNativePlayer = getSecondPlayer();
+			eTradePartner = getFirstPlayer();
+		}
+
+		if (eNativePlayer != NO_PLAYER)
+		{
+			for (pNode = pFirstList->head(); pNode; pNode = pFirstList->next(pNode))
+			{
+				if (pNode->m_data.m_eItemType == TRADE_YIELD)
+				{
+					bNativeYieldTrade = true;
+					break;
+				}
+			}
+
+			if (!bNativeYieldTrade)
+			{
+				for (pNode = pSecondList->head(); pNode; pNode = pSecondList->next(pNode))
+				{
+					if (pNode->m_data.m_eItemType == TRADE_YIELD)
+					{
+						bNativeYieldTrade = true;
+						break;
+					}
+				}
+			}
+		}
+	}
+	// WTP, Schmiddie, Native Trade Trust - END
+
 	if (atWar(GET_PLAYER(getFirstPlayer()).getTeam(), GET_PLAYER(getSecondPlayer()).getTeam()))
 	{
 		GET_TEAM(GET_PLAYER(getFirstPlayer()).getTeam()).makePeace(GET_PLAYER(getSecondPlayer()).getTeam(), true);
@@ -153,6 +200,10 @@ void CvDeal::addTrades(CLinkList<TradeData>* pFirstList, CLinkList<TradeData>* p
 				else
 				{
 					GET_PLAYER(getFirstPlayer()).AI_changePeacetimeGrantValue(getSecondPlayer(), iValue);
+
+					// WTP, Schmiddie, Native Economic Diplomacy - START
+					GET_PLAYER(getFirstPlayer()).AI_recordNativeGift(getSecondPlayer(), iValue);
+					// WTP, Schmiddie, Native Economic Diplomacy - END
 				}
 			}
 			if ((pFirstList != NULL) && (pFirstList->getLength() > 0))
@@ -166,6 +217,10 @@ void CvDeal::addTrades(CLinkList<TradeData>* pFirstList, CLinkList<TradeData>* p
 				else
 				{
 					GET_PLAYER(getSecondPlayer()).AI_changePeacetimeGrantValue(getFirstPlayer(), iValue);
+
+					// WTP, Schmiddie, Native Economic Diplomacy - START
+					GET_PLAYER(getSecondPlayer()).AI_recordNativeGift(getFirstPlayer(), iValue);
+					// WTP, Schmiddie, Native Economic Diplomacy - END
 				}
 			}
 		}
@@ -196,6 +251,13 @@ void CvDeal::addTrades(CLinkList<TradeData>* pFirstList, CLinkList<TradeData>* p
 			}
 		}
 	}
+
+	// WTP, Schmiddie, Native Trade Trust - START
+	if (bNativeYieldTrade && eNativePlayer != NO_PLAYER && eTradePartner != NO_PLAYER)
+	{
+		GET_PLAYER(eNativePlayer).AI_recordNativeTrade(eTradePartner);
+	}
+	// WTP, Schmiddie, Native Trade Trust - END
 
 	bAlliance = false;
 
