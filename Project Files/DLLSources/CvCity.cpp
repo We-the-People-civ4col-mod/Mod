@@ -11569,23 +11569,19 @@ void CvCity::setRebelSentiment(int iValue)
 namespace
 {
 	const int NATIVE_TEACH_SCAN_RANGE = 2;
-	const int NATIVE_TEACH_BONUS_SCORE = 10000;
-	// Fur must beat generic Farmer food tiles, but stay below named crops (10000).
-	const int NATIVE_TEACH_FUR_BONUS_SCORE = 6000;
-	const int NATIVE_TEACH_FUR_FEATURE_SCORE = 400;
-	const int NATIVE_TEACH_RARE_BONUS_SCORE = 20000;
-	const int NATIVE_TEACH_FEATURE_SCORE = 1000;
-	const int NATIVE_TEACH_LARGE_RIVER_SCORE = 1000;
 	const int NATIVE_TEACH_NEAR_DISTANCE_WEIGHT = 3;
 	const int NATIVE_TEACH_FAR_DISTANCE_WEIGHT = 1;
-	// Arctic coastal villages: fisherman must beat generic tundra/snow fur.
-	const int NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_SCORE = 8000;
-	const int NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_WEIGHT = 4;
-	// Other coasts / great rivers without a fish bonus: beat empty hills, lose to
-	// named crops and to a forest hunter.
-	const int NATIVE_TEACH_COAST_FISHERMAN_SCORE = 5000;
-	// Gold/silver/gems: prospector must beat a weight-3 crop bonus (10000 * 3).
-	const int NATIVE_TEACH_PRECIOUS_METAL_SCORE = 40000;
+	// Suitability tiers as halves (Schmiddie): 0, x0.5, x1, x1.5, x2.
+	const int NATIVE_TEACH_SUIT_UNSUITABLE = 0;
+	const int NATIVE_TEACH_SUIT_WEAK = 1;
+	const int NATIVE_TEACH_SUIT_SUITABLE = 2;
+	const int NATIVE_TEACH_SUIT_GOOD = 3;
+	const int NATIVE_TEACH_SUIT_VERY_GOOD = 4;
+	// Matching bonus boosts weight; it does not gate eligibility.
+	const int NATIVE_TEACH_BONUS_BOOST_NONE = 100;
+	const int NATIVE_TEACH_BONUS_BOOST_FAR = 125;
+	const int NATIVE_TEACH_BONUS_BOOST_NEAR = 150;
+	const int NATIVE_TEACH_MAX_CANDIDATES = 64;
 
 	bool isArcticTerrain(TerrainTypes eTerrain)
 	{
@@ -11623,16 +11619,101 @@ namespace
 
 	bool isGenericTeachUnitClass(UnitClassTypes eUnitClass)
 	{
-		// Hunter/trapper may still use terrain (forests, deer). Miner needs
-		// an ore/salt bonus; hills and peaks alone are not a mine.
+		// Hunter/trapper may match generic fur/deer bonuses. Named crops
+		// still prefer a name/yield match via bonusBelongsToSpecialist.
 		return isUnitClassType(eUnitClass, "UNITCLASS_HUNTER") ||
 			isUnitClassType(eUnitClass, "UNITCLASS_TRAPPER");
 	}
 
-	bool isMineTeachUnitClass(UnitClassTypes eUnitClass)
+	int nativeTeachBaseWeight(UnitClassTypes eUnitClass)
 	{
-		return isUnitClassType(eUnitClass, "UNITCLASS_MINER") ||
-			isUnitClassType(eUnitClass, "UNITCLASS_PROSPECTOR");
+		if (isUnitClassType(eUnitClass, "UNITCLASS_FARMER")) return 100;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_FISHERMAN")) return 90;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_HUNTER")) return 90;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_FRUITS_PICKER")) return 80;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_TRAPPER")) return 65;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_RICE_FARMER")) return 60;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_CASSAVA_PLANTER")) return 60;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_TOBACCO_PLANTER")) return 55;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_COTTON_PLANTER")) return 55;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_SUGAR_PLANTER")) return 55;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_COFFEE_PLANTER")) return 50;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_COCOA_PLANTER")) return 50;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_HEMP_PLANTER")) return 50;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_LINEN_PLANTER")) return 50;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_INDIGO_PLANTER")) return 45;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_PEANUT_PLANTER")) return 45;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_YERBA_PLANTER")) return 40;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_GRAPES_PICKER")) return 40;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_OLIVES_PLANTER")) return 40;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_RAPE_PLANTER")) return 35;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_COCA_COLLECTOR")) return 35;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_LOGWOOD_COLLECTOR")) return 30;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_COCHINEAL_COLLECTOR")) return 30;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_RED_PEPPER_PLANTER")) return 30;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_VANILLA_COLLECTOR")) return 30;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_KAUTSCHUK_COLLECTOR")) return 30;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_MAPLE_SIRUP_COLLECTOR")) return 25;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_SCOUT")) return 25;
+		if (isSealHunterUnitClass(eUnitClass)) return 20;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_PEARLS_HUNTER")) return 20;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_MINER")) return 20;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_PROSPECTOR")) return 10;
+		return 40;
+	}
+
+	int teachSuitabilityTier(int iLocalScore)
+	{
+		if (iLocalScore <= 0)
+		{
+			return NATIVE_TEACH_SUIT_UNSUITABLE;
+		}
+		if (iLocalScore < 9)
+		{
+			return NATIVE_TEACH_SUIT_WEAK;
+		}
+		if (iLocalScore < 21)
+		{
+			return NATIVE_TEACH_SUIT_SUITABLE;
+		}
+		if (iLocalScore < 42)
+		{
+			return NATIVE_TEACH_SUIT_GOOD;
+		}
+		return NATIVE_TEACH_SUIT_VERY_GOOD;
+	}
+
+	int teachFinalWeight(int iBaseWeight, int iSuitTier, int iBonusPercent)
+	{
+		if (iBaseWeight <= 0 || iSuitTier <= 0 || iBonusPercent <= 0)
+		{
+			return 0;
+		}
+		return (iBaseWeight * iSuitTier * iBonusPercent) / 200;
+	}
+
+	int pickWeightedIndex(const int* aiWeights, int iCount)
+	{
+		int iTotal = 0;
+		for (int i = 0; i < iCount; ++i)
+		{
+			iTotal += aiWeights[i];
+		}
+		if (iTotal <= 0)
+		{
+			return -1;
+		}
+
+		int iRoll = GC.getGameINLINE().getSorenRandNum(iTotal, "Native teach profession");
+		for (int i = 0; i < iCount; ++i)
+		{
+			iRoll -= aiWeights[i];
+			if (iRoll < 0)
+			{
+				return i;
+			}
+		}
+		return iCount - 1;
 	}
 
 	bool isSharedGenericYield(YieldTypes eYield)
@@ -11952,20 +12033,6 @@ namespace
 		return false;
 	}
 
-	bool hasNearbySpecialistBonus(UnitClassTypes eUnitClass, int iX, int iY, CvMap& kMap)
-	{
-		LOOP_ADJACENT_PLOTS(iX, iY, NATIVE_TEACH_SCAN_RANGE)
-		{
-			CvPlot* pLoopPlot = kMap.plotINLINE(iLoopX, iLoopY);
-			if (pLoopPlot != NULL && bonusBelongsToSpecialist(pLoopPlot->getBonusType(), eUnitClass))
-			{
-				return true;
-			}
-		}
-
-		return false;
-	}
-
 	bool anyTeachUnitClaimsBonusByName(BonusTypes eBonus, const CvCivilizationInfo& kCiv)
 	{
 		if (eBonus == NO_BONUS)
@@ -12010,17 +12077,14 @@ namespace
 	}
 }
 
-// Native village specialty: pick a local yield within 2 plots (Chebyshev).
-// Named crop/animal experts need a visible bonus that belongs to them.
-// Name match is by tokens (GRAPES is not RAPE). Adjacent tiles outrank
-// range-2 tiles. Fur is scored below named crops so pepper/tobacco still
-// beat Hunter, but forests and deer still beat generic Farmer food.
-// Miner needs iron/bog ore/minerals/salt; prospector needs gold/silver/gems.
-// Hills and peaks do not teach those by themselves. Coastal and great-river
-// villages may teach Fisherman without a fish bonus, below a named crop.
-// Horses are scored as a rare bonus so Scout beats common fur. A tribe
-// does not repeat a specialty already taught by another of its villages,
-// unless no other local option remains. No random roll.
+// Native village specialty: weighted pool from local land/yield (2-plot
+// Chebyshev). A matching bonus boosts weight by +25% (range 2) or +50%
+// (adjacent); it does not decide eligibility. Base weights control rarity.
+// Adjacent tiles outrank range-2 tiles. Coastal and great-river villages
+// may teach Fisherman from water alone. A tribe does not repeat a specialty
+// already taught by another of its villages unless no other local option
+// remains. On Huge+ maps, any still-missing regular profession is filled
+// first if this village is at least "suitable" for it.
 UnitClassTypes CvCity::bestTeachUnitClass()
 {
 	PROFILE_FUNC();
@@ -12068,34 +12132,36 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 	const bool bArcticCoast = bArcticVillage && bCoastalVillage;
 	const bool bFishermanWaterVillage = bCoastalVillage || bHasLargeRiver;
 
+	const char* szWorld = GC.getWorldInfo(GC.getMap().getWorldSize()).getType();
+	const bool bHugePlus = szWorld != NULL && (
+		0 == strcmp(szWorld, "WORLDSIZE_HUGE") ||
+		0 == strcmp(szWorld, "WORLDSIZE_MASSIVE") ||
+		0 == strcmp(szWorld, "WORLDSIZE_GIGANTIC"));
+
+	UnitClassTypes aeClass[NATIVE_TEACH_MAX_CANDIDATES];
+	int aiBase[NATIVE_TEACH_MAX_CANDIDATES];
+	int aiSuit[NATIVE_TEACH_MAX_CANDIDATES];
+	int aiWeight[NATIVE_TEACH_MAX_CANDIDATES];
+	int iCandidateCount = 0;
 	UnitClassTypes eFallbackUnitClass = NO_UNITCLASS;
-	UnitClassTypes eBestUniqueUnitClass = NO_UNITCLASS;
-	int iBestUniqueValue = 0;
-	UnitClassTypes eBestAnyUnitClass = NO_UNITCLASS;
-	int iBestAnyValue = 0;
 
 	for (UnitClassTypes eUnitClass = FIRST_UNITCLASS; eUnitClass < NUM_UNITCLASS_TYPES; ++eUnitClass)
 	{
-		const int iWeight = kCiv.getTeachUnitClassWeight(eUnitClass);
-		if (iWeight <= 0)
+		if (kCiv.getTeachUnitClassWeight(eUnitClass) <= 0)
 		{
 			continue;
 		}
 
+		const int iBaseWeight = nativeTeachBaseWeight(eUnitClass);
 		const bool bFishermanOnWater = isUnitClassType(eUnitClass, "UNITCLASS_FISHERMAN") && bFishermanWaterVillage;
-		if (!isGenericTeachUnitClass(eUnitClass) && !bFishermanOnWater &&
-			!hasNearbySpecialistBonus(eUnitClass, getX_INLINE(), getY_INLINE(), kMap))
-		{
-			continue;
-		}
-
 		const UnitTypes eLoopUnit = (UnitTypes)GC.getUnitClassInfo(eUnitClass).getDefaultUnitIndex();
 		if (eLoopUnit == NO_UNIT)
 		{
 			continue;
 		}
 
-		int iBestProfessionValue = 0;
+		int iBestLocalScore = 0;
+		int iBestBonusDistWeight = 0;
 		bool bHasTeachProfession = false;
 
 		for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
@@ -12120,7 +12186,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 
 			int iYieldAmount = 0;
 			int iFeatureMatches = 0;
-			int iBonusMatches = 0;
+			int iBonusDistWeight = 0;
 			int iLargeRiverMatches = 0;
 
 			LOOP_ADJACENT_PLOTS(getX_INLINE(), getY_INLINE(), NATIVE_TEACH_SCAN_RANGE)
@@ -12139,18 +12205,20 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 					continue;
 				}
 
-				const int iDistWeight = teachDistanceWeight(teachPlotDistance(getX_INLINE(), getY_INLINE(), iLoopX, iLoopY));
+				const int iDistance = teachPlotDistance(getX_INLINE(), getY_INLINE(), iLoopX, iLoopY);
+				const int iDistWeight = teachDistanceWeight(iDistance);
 
 				const BonusTypes eBonus = pLoopPlot->getBonusType();
-				const bool bBonusMatch = bonusMatchesProfession(eBonus, eUnitClass, kProfession, eWantedYield, kCiv);
-				if (bBonusMatch)
+				if (bonusMatchesProfession(eBonus, eUnitClass, kProfession, eWantedYield, kCiv))
 				{
-					iBonusMatches += iDistWeight;
+					if (iDistWeight > iBonusDistWeight)
+					{
+						iBonusDistWeight = iDistWeight;
+					}
 				}
 
-				// Hills/peaks always yield ore. That is terrain, not a mine.
 				const int iNatureYield = pLoopPlot->calculateNatureYield(eWantedYield, getTeam(), false);
-				if (iNatureYield > 0 && (!isMineTeachUnitClass(eUnitClass) || bBonusMatch))
+				if (iNatureYield > 0)
 				{
 					iYieldAmount += iNatureYield * iDistWeight;
 				}
@@ -12167,50 +12235,27 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 				}
 			}
 
-			const bool bFurSpecialist =
-				isUnitClassType(eUnitClass, "UNITCLASS_HUNTER") ||
-				isUnitClassType(eUnitClass, "UNITCLASS_TRAPPER");
-
-			if (iYieldAmount <= 0 && iFeatureMatches <= 0 && iBonusMatches <= 0 && iLargeRiverMatches <= 0 && !bFishermanOnWater)
+			int iLocalScore = iYieldAmount + iFeatureMatches * 2 + iLargeRiverMatches * 2;
+			if (bFishermanOnWater)
 			{
-				continue;
+				iLocalScore += bArcticCoast ? 21 : 9;
 			}
 
-			int iUsedWeight = iWeight;
-			int iWaterFishermanScore = 0;
-			int iPreciousScore = 0;
-			if (isUnitClassType(eUnitClass, "UNITCLASS_FISHERMAN") && bFishermanWaterVillage)
+			if (iLocalScore > iBestLocalScore)
 			{
-				if (bArcticCoast)
-				{
-					iUsedWeight = std::max(iWeight, 1) * NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_WEIGHT;
-					iWaterFishermanScore = NATIVE_TEACH_ARCTIC_COAST_FISHERMAN_SCORE;
-				}
-				else if (iBonusMatches <= 0)
-				{
-					iWaterFishermanScore = NATIVE_TEACH_COAST_FISHERMAN_SCORE;
-				}
+				iBestLocalScore = iLocalScore;
 			}
-			if (isUnitClassType(eUnitClass, "UNITCLASS_PROSPECTOR") && iBonusMatches > 0)
+			if (iBonusDistWeight > iBestBonusDistWeight)
 			{
-				iPreciousScore = NATIVE_TEACH_PRECIOUS_METAL_SCORE;
-			}
-
-			const int iBonusScore = bFurSpecialist ? NATIVE_TEACH_FUR_BONUS_SCORE : NATIVE_TEACH_BONUS_SCORE;
-			const int iFeatureScore = bFurSpecialist ? NATIVE_TEACH_FUR_FEATURE_SCORE : NATIVE_TEACH_FEATURE_SCORE;
-			const int iProfessionValue = (iYieldAmount + iFeatureMatches * iFeatureScore + iLargeRiverMatches * NATIVE_TEACH_LARGE_RIVER_SCORE + iBonusMatches * iBonusScore) * iUsedWeight + iWaterFishermanScore + iPreciousScore;
-			if (iProfessionValue > iBestProfessionValue)
-			{
-				iBestProfessionValue = iProfessionValue;
+				iBestBonusDistWeight = iBonusDistWeight;
 			}
 		}
 
 		if (!bHasTeachProfession)
 		{
-			if (isUnitClassType(eUnitClass, "UNITCLASS_SCOUT") &&
-				hasNearbySpecialistBonus(eUnitClass, getX_INLINE(), getY_INLINE(), kMap))
+			if (isUnitClassType(eUnitClass, "UNITCLASS_SCOUT"))
 			{
-				int iBestHorseDistance = NATIVE_TEACH_SCAN_RANGE;
+				int iBestHorseDistance = NATIVE_TEACH_SCAN_RANGE + 1;
 				LOOP_ADJACENT_PLOTS(getX_INLINE(), getY_INLINE(), NATIVE_TEACH_SCAN_RANGE)
 				{
 					CvPlot* pHorsePlot = kMap.plotINLINE(iLoopX, iLoopY);
@@ -12223,9 +12268,14 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 						}
 					}
 				}
-				iBestProfessionValue = NATIVE_TEACH_RARE_BONUS_SCORE * teachDistanceWeight(iBestHorseDistance) * std::max(iWeight, 1);
+				if (iBestHorseDistance <= NATIVE_TEACH_SCAN_RANGE)
+				{
+					iBestLocalScore = (iBestHorseDistance <= 1) ? 42 : 12;
+					iBestBonusDistWeight = teachDistanceWeight(iBestHorseDistance);
+				}
 			}
-			else
+
+			if (iBestLocalScore <= 0)
 			{
 				if (eFallbackUnitClass == NO_UNITCLASS)
 				{
@@ -12235,48 +12285,128 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			}
 		}
 
-		if (iBestProfessionValue <= 0)
+		const int iSuitTier = teachSuitabilityTier(iBestLocalScore);
+		int iBonusPercent = NATIVE_TEACH_BONUS_BOOST_NONE;
+		if (iBestBonusDistWeight >= NATIVE_TEACH_NEAR_DISTANCE_WEIGHT)
+		{
+			iBonusPercent = NATIVE_TEACH_BONUS_BOOST_NEAR;
+		}
+		else if (iBestBonusDistWeight > 0)
+		{
+			iBonusPercent = NATIVE_TEACH_BONUS_BOOST_FAR;
+		}
+
+		const int iFinalWeight = teachFinalWeight(iBaseWeight, iSuitTier, iBonusPercent);
+		if (iFinalWeight <= 0)
 		{
 			continue;
 		}
 
-		if (iBestProfessionValue > iBestAnyValue)
+		if (iCandidateCount < NATIVE_TEACH_MAX_CANDIDATES)
 		{
-			iBestAnyValue = iBestProfessionValue;
-			eBestAnyUnitClass = eUnitClass;
+			aeClass[iCandidateCount] = eUnitClass;
+			aiBase[iCandidateCount] = iBaseWeight;
+			aiSuit[iCandidateCount] = iSuitTier;
+			aiWeight[iCandidateCount] = iFinalWeight;
+			++iCandidateCount;
+		}
+	}
+
+	if (iCandidateCount <= 0)
+	{
+		return eFallbackUnitClass;
+	}
+
+	if (bHugePlus)
+	{
+		int iBestMissing = -1;
+		for (int i = 0; i < iCandidateCount; ++i)
+		{
+			if (aiSuit[i] < NATIVE_TEACH_SUIT_SUITABLE)
+			{
+				continue;
+			}
+
+			bool bTaughtAnywhere = false;
+			for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
+			{
+				const CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+				if (!kPlayer.isAlive() || !kPlayer.isNative())
+				{
+					continue;
+				}
+
+				int iLoop = 0;
+				for (const CvCity* pLoopCity = kPlayer.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kPlayer.nextCity(&iLoop))
+				{
+					if (pLoopCity != this && pLoopCity->getTeachUnitClass() == aeClass[i])
+					{
+						bTaughtAnywhere = true;
+						break;
+					}
+				}
+				if (bTaughtAnywhere)
+				{
+					break;
+				}
+			}
+
+			if (bTaughtAnywhere)
+			{
+				continue;
+			}
+
+			if (iBestMissing < 0 ||
+				aiBase[i] < aiBase[iBestMissing] ||
+				(aiBase[i] == aiBase[iBestMissing] && aiWeight[i] > aiWeight[iBestMissing]))
+			{
+				iBestMissing = i;
+			}
 		}
 
+		if (iBestMissing >= 0)
+		{
+			return aeClass[iBestMissing];
+		}
+	}
+
+	int aiUniqueWeight[NATIVE_TEACH_MAX_CANDIDATES];
+	int aiUniqueIndex[NATIVE_TEACH_MAX_CANDIDATES];
+	int iUniqueCount = 0;
+	for (int i = 0; i < iCandidateCount; ++i)
+	{
 		bool bAlreadyTaught = false;
 		int iLoop = 0;
 		for (const CvCity* pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
 		{
-			if (pLoopCity != this && pLoopCity->getTeachUnitClass() == eUnitClass)
+			if (pLoopCity != this && pLoopCity->getTeachUnitClass() == aeClass[i])
 			{
 				bAlreadyTaught = true;
 				break;
 			}
 		}
 
-		if (bAlreadyTaught)
+		if (!bAlreadyTaught)
 		{
-			continue;
-		}
-
-		if (iBestProfessionValue > iBestUniqueValue)
-		{
-			iBestUniqueValue = iBestProfessionValue;
-			eBestUniqueUnitClass = eUnitClass;
+			aiUniqueWeight[iUniqueCount] = aiWeight[i];
+			aiUniqueIndex[iUniqueCount] = i;
+			++iUniqueCount;
 		}
 	}
 
-	if (eBestUniqueUnitClass != NO_UNITCLASS)
+	if (iUniqueCount > 0)
 	{
-		return eBestUniqueUnitClass;
+		const int iPick = pickWeightedIndex(aiUniqueWeight, iUniqueCount);
+		if (iPick >= 0)
+		{
+			return aeClass[aiUniqueIndex[iPick]];
+		}
 	}
 
-	if (eBestAnyUnitClass != NO_UNITCLASS)
+	const int iPick = pickWeightedIndex(aiWeight, iCandidateCount);
+	if (iPick >= 0)
 	{
-		return eBestAnyUnitClass;
+		return aeClass[iPick];
 	}
 
 	return eFallbackUnitClass;
