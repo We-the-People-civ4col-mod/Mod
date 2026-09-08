@@ -68,7 +68,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ANACONDA</Tag>
 		<English>Anaconda</English>
-		
 		<Portuguese>
 			<Text>Anaconda</Text>
 			<Gender>Female</Gender>
@@ -106,7 +105,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BARLEY</Tag>
 		<English>Barley</English>
-		
 		<Portuguese>
 			<Text>Cevada</Text>
 			<Gender>Female</Gender>
@@ -151,7 +149,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BEAR_BLACK</Tag>
 		<English>Black Bear</English>
-		
 		<Portuguese>
 			<Text>Urso Negro</Text>
 			<Gender>Male</Gender>
@@ -183,7 +180,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BEAR_POLAR</Tag>
 		<English>Polar Bear</English>
-		
 		<Portuguese>
 			<Text>Urso Polar</Text>
 			<Gender>Male</Gender>
@@ -215,7 +211,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BEER</Tag>
 		<English>Beer</English>
-		
 		<Portuguese>
 			<Text>Cerveja</Text>
 			<Gender>Female</Gender>
@@ -359,7 +354,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_BLACKSMITH</Tag>
 		<English>Master Blacksmith:Master Blacksmiths</English>
-		
 		<Portuguese>
 			<Text>Mestre Ferreiro:Mestres Ferreiros</Text>
 			<Gender>Male</Gender>
@@ -408,7 +402,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JARNSMED</Tag>
 		<English>Järnsmed:Järnsmeder</English>
-		
 		<Portuguese>
 			<Text>Ferreiro Sueco:Ferreiros Suecos</Text>
 			<Gender>Male</Gender>
@@ -676,7 +669,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CANNONS</Tag>
 		<English>Cannons</English>
-		
 		<Portuguese>
 			<Text>Canhões</Text>
 			<Gender>Male</Gender>
@@ -709,7 +701,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARAVEL</Tag>
 		<English>Caravel:Caravels</English>
-		
 		<Portuguese>
 			<Text>Caravela:Caravelas</Text>
 			<Gender>Female</Gender>
@@ -758,7 +749,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WAR_CARAVEL</Tag>
 		<English>War Caravel:War Caravels</English>
-		
 		<Portuguese>
 			<Text>Caravela de Guerra:Caravelas de Guerra</Text>
 			<Gender>Female</Gender>
@@ -834,7 +824,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARPENTER</Tag>
 		<English>Master Carpenter:Master Carpenters</English>
-		
 		<Portuguese>
 			<Text>Mestre Carpinteiro:Mestres Carpinteiros</Text>
 			<Gender>Male</Gender>
@@ -883,7 +872,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TIMMERMAN</Tag>
 		<English>Timmerman:Timmermannen</English>
-		
 		<Portuguese>
 			<Text>Carpinteiro Holandês:Carpinteiros Holandeses</Text>
 			<Gender>Male</Gender>
@@ -934,7 +922,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NAO</Tag>
 		<English>Nao:Naos</English>
-		
 		<Portuguese>
 			<Text>Nau:Naus</Text>
 			<Gender>Female</Gender>
@@ -971,7 +958,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARRACK</Tag>
 		<English>Carrack:Carracks</English>
-		
 		<Portuguese>
 			<Text>Carraca:Carracas</Text>
 			<Gender>Female</Gender>
@@ -1001,12 +987,11 @@
 		<Tag>TXT_KEY_UNIT_CARRACK_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Carracks[COLOR_REVERT] are sturdy and versatile ocean-going vessels of the early colonial era. Combining a large cargo hold with respectable armament, they can be used both for transporting goods and settlers and for military purposes. They serve as an important step between the smaller [COLOR_UNIT_TEXT]Nao[COLOR_REVERT] and the later [COLOR_UNIT_TEXT]Galleon[COLOR_REVERT].[PARAGRAPH:2]Compared to the [LINK=UNIT_NAO]Nao[\LINK], a Carrack offers greater cargo capacity, durability and combat strength. Compared to the [LINK=UNIT_CARAVELA_REDONDA]Caravela Redonda[\LINK], it is larger, more robust and better suited for transporting major expeditions, though at a significantly higher cost. When compared to the [LINK=UNIT_FLUYT]Fluyt[\LINK], it carries similar amounts of cargo but benefits from much stronger armament and greater survivability. While it cannot compete with dedicated warships such as [COLOR_UNIT_TEXT]Frigates[COLOR_REVERT] or [COLOR_UNIT_TEXT]Ships of the Line[COLOR_REVERT], it remains one of the most reliable multi-purpose vessels available to colonial powers for many decades.[PARAGRAPH:2]Carracks are available throughout the early and middle colonial period. As more advanced vessel types such as the [LINK=UNIT_GALLEON]Galleon[\LINK], the [LINK=UNIT_MERCHANTMAN]Merchantman[\LINK] and the [LINK=UNIT_WEST_INDIAMAN]West Indiaman[\LINK] become common, they gradually lose their importance and can no longer be newly acquired after the year 1650.[PARAGRAPH:2]Carracks can be purchased in [LINK=CONCEPT_EUROPE]Europe[\LINK] or constructed in colonies with a [LINK=BUILDING_SHIPYARD]Shipyard[\LINK] or one of its upgrades. Like most large ships, they require [LINK=YIELD_TOOLS]tools[\LINK], [LINK=YIELD_ROPE]ropes[\LINK], [LINK=YIELD_SAILCLOTH]sailcloth[\LINK] and [LINK=YIELD_CANNONS]cannons[\LINK] for construction.[PARAGRAPH:2]For a comparison of all available ship types, see [LINK=CONCEPT_SHIPS]Ships[\LINK].</English>
 		<Portuguese>[COLOR_UNIT_TEXT]Carracas[COLOR_REVERT] são embarcações oceânicas robustas e versáteis do início da era colonial. Combinando um grande porão de carga com armamento respeitável, eles podem ser usados tanto para transporte de mercadorias e colonos quanto para fins militares. Eles servem como um passo importante entre o [COLOR_UNIT_TEXT]Nao[COLOR_REVERT] menor e o posterior [COLOR_UNIT_TEXT]Galeão[COLOR_REVERT].[PARAGRAPH:2]Comparado ao [LINK=UNIT_NAO]Nao[\LINK], uma Carraca oferece maior capacidade de carga, durabilidade e força de combate. Comparada com a [LINK=UNIT_CARAVELA_REDONDA]Caravela Redonda[\LINK], é maior, mais robusta e mais adequada para o transporte de grandes expedições, embora com um custo significativamente superior. Quando comparado ao [LINK=UNIT_FLUYT]Fluyt[\LINK], ele transporta quantidades semelhantes de carga, mas se beneficia de um armamento muito mais forte e maior capacidade de sobrevivência. Embora não possa competir com navios de guerra dedicados, como [COLOR_UNIT_TEXT]fragatas[COLOR_REVERT] ou [COLOR_UNIT_TEXT]navios de linha[COLOR_REVERT], continua sendo um dos navios multifuncionais mais confiáveis disponíveis para as potências coloniais por muitas décadas.[PARAGRAPH:2]As carracas estão disponíveis durante o início e o período colonial intermediário. À medida que tipos de navios mais avançados, como o [LINK=UNIT_GALLEON]Galeão[\LINK], o [LINK=UNIT_MERCHANTMAN]Navio mercante[\LINK] e o [LINK=UNIT_WEST_INDIAMAN]Navio da Companhia das Índias Ocidentais[\LINK] se tornam comuns, eles gradualmente perdem sua importância e não podem mais ser adquiridos novamente após o ano de 1650.[PARAGRAPH:2]As carracas podem ser compradas em [LINK=CONCEPT_EUROPE]Europa[\LINK] ou construído em colônias com um [LINK=BUILDING_SHIPYARD]Estaleiro[\LINK] ou uma de suas atualizações. Como a maioria dos navios grandes, eles exigem [LINK=YIELD_TOOLS]ferramentas[\LINK], [LINK=YIELD_ROPE]cordas[\LINK], [LINK=YIELD_SAILCLOTH]lona[\LINK] e [LINK=YIELD_CANNONS]canhões[\LINK] para construção.[PARAGRAPH:2]Para uma comparação de todos os tipos de navios disponíveis, consulte [LINK=CONCEPT_SHIPS]Navios[\LINK].</Portuguese>
-		<German>[COLOR_UNIT_TEXT]Karacken[COLOR_REVERT] sind robuste und vielseitige Hochseeschiffe der frühen Kolonialzeit. Sie verbinden einen großen Frachtraum mit ausreichender Bewaffnung und können sowohl für den Transport von Waren und Siedlern als auch für militärische Aufgaben eingesetzt werden. Damit bilden sie den Übergang zwischen den kleineren [COLOR_UNIT_TEXT]Naos[COLOR_REVERT] und den späteren [COLOR_UNIT_TEXT]Galeonen[COLOR_REVERT].[PARAGRAPH:2]Im Vergleich zur [LINK=UNIT_NAO]Nao[\LINK] bietet die Karacke mehr Frachtraum, höhere Widerstandsfähigkeit und bessere Kampfeigenschaften. Gegenüber der [LINK=UNIT_CARAVELA_REDONDA]Caravela Redonda[\LINK] ist sie größer, robuster und besser für den Transport größerer Expeditionen geeignet, jedoch auch teurer. Im Vergleich zur [LINK=UNIT_FLUYT]Fluyt[\LINK] transportiert sie ähnlich große Frachtmengen, verfügt jedoch über eine deutlich stärkere Bewaffnung und kann sich gegen viele Bedrohungen zur Wehr setzen. Gegen spezialisierte Kriegsschiffe wie [COLOR_UNIT_TEXT]Fregatten[COLOR_REVERT] oder [COLOR_UNIT_TEXT]Linienschiffe[COLOR_REVERT] kann sie sich dennoch nur eingeschränkt behaupten.[PARAGRAPH:2]Karacken stehen während der frühen und mittleren Kolonialzeit zur Verfügung. Mit dem Aufkommen modernerer Schiffstypen wie der [LINK=UNIT_GALLEON]Galeone[\LINK], des [LINK=UNIT_MERCHANTMAN]Handelsschiffs[\LINK] und des [LINK=UNIT_WEST_INDIAMAN]Westindienfahrers[\LINK] verlieren sie jedoch zunehmend an Bedeutung und werden ab dem Jahr 1650 nicht mehr neu gebaut oder in Europa angeboten.[PARAGRAPH:2]Karacken können in Europa erworben oder in Kolonien mit einer [LINK=BUILDING_SHIPYARD]Schiffswerft[\LINK] beziehungsweise deren Ausbaustufen gebaut werden. Für ihren Bau werden [LINK=YIELD_TOOLS]Werkzeuge[\LINK], [LINK=YIELD_ROPE]Tauwerk[\LINK], [LINK=YIELD_SAILCLOTH]Segeltuch[\LINK] und [LINK=YIELD_CANNONS]Kanonen[\LINK] benötigt.[PARAGRAPH:2]Einen Vergleich aller verfügbaren Schiffstypen bietet der Eintrag [LINK=CONCEPT_SHIPS]Schiffe[\LINK].</German>	
+		<German>[COLOR_UNIT_TEXT]Karacken[COLOR_REVERT] sind robuste und vielseitige Hochseeschiffe der frühen Kolonialzeit. Sie verbinden einen großen Frachtraum mit ausreichender Bewaffnung und können sowohl für den Transport von Waren und Siedlern als auch für militärische Aufgaben eingesetzt werden. Damit bilden sie den Übergang zwischen den kleineren [COLOR_UNIT_TEXT]Naos[COLOR_REVERT] und den späteren [COLOR_UNIT_TEXT]Galeonen[COLOR_REVERT].[PARAGRAPH:2]Im Vergleich zur [LINK=UNIT_NAO]Nao[\LINK] bietet die Karacke mehr Frachtraum, höhere Widerstandsfähigkeit und bessere Kampfeigenschaften. Gegenüber der [LINK=UNIT_CARAVELA_REDONDA]Caravela Redonda[\LINK] ist sie größer, robuster und besser für den Transport größerer Expeditionen geeignet, jedoch auch teurer. Im Vergleich zur [LINK=UNIT_FLUYT]Fluyt[\LINK] transportiert sie ähnlich große Frachtmengen, verfügt jedoch über eine deutlich stärkere Bewaffnung und kann sich gegen viele Bedrohungen zur Wehr setzen. Gegen spezialisierte Kriegsschiffe wie [COLOR_UNIT_TEXT]Fregatten[COLOR_REVERT] oder [COLOR_UNIT_TEXT]Linienschiffe[COLOR_REVERT] kann sie sich dennoch nur eingeschränkt behaupten.[PARAGRAPH:2]Karacken stehen während der frühen und mittleren Kolonialzeit zur Verfügung. Mit dem Aufkommen modernerer Schiffstypen wie der [LINK=UNIT_GALLEON]Galeone[\LINK], des [LINK=UNIT_MERCHANTMAN]Handelsschiffs[\LINK] und des [LINK=UNIT_WEST_INDIAMAN]Westindienfahrers[\LINK] verlieren sie jedoch zunehmend an Bedeutung und werden ab dem Jahr 1650 nicht mehr neu gebaut oder in Europa angeboten.[PARAGRAPH:2]Karacken können in Europa erworben oder in Kolonien mit einer [LINK=BUILDING_SHIPYARD]Schiffswerft[\LINK] beziehungsweise deren Ausbaustufen gebaut werden. Für ihren Bau werden [LINK=YIELD_TOOLS]Werkzeuge[\LINK], [LINK=YIELD_ROPE]Tauwerk[\LINK], [LINK=YIELD_SAILCLOTH]Segeltuch[\LINK] und [LINK=YIELD_CANNONS]Kanonen[\LINK] benötigt.[PARAGRAPH:2]Einen Vergleich aller verfügbaren Schiffstypen bietet der Eintrag [LINK=CONCEPT_SHIPS]Schiffe[\LINK].</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARRIER</Tag>
 		<English>Conestoga:Conestogas</English>
-		
 		<Portuguese>
 			<Text>Conestoga:Conestogas</Text>
 			<Gender>Female</Gender>
@@ -1058,7 +1043,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY</Tag>
 		<English>Jesuit Missionary:Jesuit Missionaries</English>
-		
 		<Portuguese>
 			<Text>Missionário Jesuíta:Missionários Jesuítas</Text>
 			<Gender>Male</Gender>
@@ -1107,7 +1091,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CHRISTIAN_MISSIONARY_PROT</Tag>
 		<English>Evangelist:Evangelists</English>
-		
 		<Portuguese>
 			<Text>Evangelista:Evangelistas</Text>
 			<Gender>Female</Gender>
@@ -1152,7 +1135,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RUSSIAN_MISSIONARY</Tag>
 		<English>Orthodox Missionary:Orthodox Missionaries</English>
-		
 		<Portuguese>
 			<Text>Missionário Ortodoxo:Missionários Ortodoxos</Text>
 			<Gender>Male</Gender>
@@ -1201,7 +1183,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FAILED_MISSIONARY</Tag>
 		<English>Disillusioned Missionary:Disilussioned Missionaries</English>
-		
 		<Portuguese>
 			<Text>Missionário Desiludido:Missionários Desiludidos</Text>
 			<Gender>Male</Gender>
@@ -1234,7 +1215,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FAILED_TRADER</Tag>
 		<English>Failed Trader:Failed Traders</English>
-		
 		<Portuguese>
 			<Text>Comerciante Fracassado:Comerciantes Fracassados</Text>
 			<Gender>Male</Gender>
@@ -1263,7 +1243,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CIGARS</Tag>
 		<English>Cigars</English>
-		
 		<Portuguese>
 			<Text>Charutos</Text>
 			<Gender>Male</Gender>
@@ -1298,7 +1277,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CLOTH</Tag>
 		<English>Cloth</English>
-		
 		<Portuguese>
 			<Text>Pano</Text>
 			<Gender>Male</Gender>
@@ -1333,7 +1311,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COATS</Tag>
 		<English>Coats</English>
-		
 		<Portuguese>
 			<Text>Casacos</Text>
 			<Gender>Male</Gender>
@@ -1368,7 +1345,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCA_COLLECTOR</Tag>
 		<English>Expert Coca Collector:Expert Coca Collectors</English>
-		
 		<Portuguese>
 			<Text>Coletora (Coca):Coletoras (Coca)</Text>
 			<Gender>Female</Gender>
@@ -1413,7 +1389,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCA_LEAVES</Tag>
 		<English>Coca Leaves</English>
-		
 		<Portuguese>
 			<Text>Folhas de Coca</Text>
 			<Gender>Female</Gender>
@@ -1458,7 +1433,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCOA</Tag>
 		<English>Cocoa</English>
-		
 		<Portuguese>
 			<Text>Cacau</Text>
 			<Gender>Male</Gender>
@@ -1493,7 +1467,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COCOA_FRUITS</Tag>
 		<English>Cocoa pods</English>
-		
 		<Portuguese>
 			<Text>Vagens de Cacau</Text>
 			<Gender>Female</Gender>
@@ -1544,7 +1517,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COFFEE</Tag>
 		<English>Coffee</English>
-		
 		<Portuguese>
 			<Text>Café</Text>
 			<Gender>Male</Gender>
@@ -1588,7 +1560,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COFFEE_BERRIES</Tag>
 		<English>Coffee Berries</English>
-		
 		<Portuguese>
 			<Text>Bagas de Café</Text>
 			<Gender>Female</Gender>
@@ -1620,7 +1591,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COFFEE_PLANTER</Tag>
 		<English>Expert Coffee Planter:Expert Coffee Planters</English>
-		
 		<Portuguese>
 			<Text>Plantadora (Café):Plantadoras (Café)</Text>
 			<Gender>Female</Gender>
@@ -1667,7 +1637,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLONIST</Tag>
 		<English>Free Colonist:Free Colonists</English>
-		
 		<Portuguese>
 			<Text>Colono Livre:Colonos Livres</Text>
 			<Gender>Male</Gender>
@@ -1712,7 +1681,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLOURED_CLOTH</Tag>
 		<English>Coloured Cloth</English>
-		
 		<Portuguese>
 			<Text>Pano Colorido</Text>
 			<Gender>Male</Gender>
@@ -1937,7 +1905,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CONVERTED_NATIVE</Tag>
 		<English>Converted Native:Converted Natives</English>
-		
 		<Portuguese>
 			<Text>Nativo Convertido:Nativos Convertidos</Text>
 			<Gender>Male</Gender>
@@ -2066,7 +2033,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COTTON</Tag>
 		<English>Cotton</English>
-		
 		<Portuguese>
 			<Text>Algodão</Text>
 			<Gender>Male</Gender>
@@ -2105,7 +2071,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COTTON_PLANTER</Tag>
 		<English>Expert Cotton Planter:Expert Cotton Planters</English>
-		
 		<Portuguese>
 			<Text>Plantador (Algodão):Plantadores (Algodão)</Text>
 			<Gender>Male</Gender>
@@ -2154,7 +2119,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COUGAR</Tag>
 		<English>Cougar</English>
-		
 		<Portuguese>
 			<Text>Puma</Text>
 			<Gender>Female</Gender>
@@ -2196,7 +2160,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CRIMINAL</Tag>
 		<English>Petty Criminal:Petty Criminals</English>
-		
 		<Portuguese>
 			<Text>Criminoso Comum:Pequenos Criminosos</Text>
 			<Gender>Male</Gender>
@@ -2241,7 +2204,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DISTILLER</Tag>
 		<English>Master Distiller:Master Distillers</English>
-		
 		<Portuguese>
 			<Text>Mestre Destilador:Mestres Destiladores</Text>
 			<Gender>Male</Gender>
@@ -2290,7 +2252,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLONIAL_DISTILLER</Tag>
 		<English>Colonial Distiller:Colonial Distillers</English>
-		
 		<Portuguese>
 			<Text>Destilador Colonial:Destiladores Coloniais</Text>
 			<Gender>Male</Gender>
@@ -2341,7 +2302,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DOCTOR</Tag>
 		<English>Renowned Medic</English>
-		
 		<Portuguese>
 			<Text>Médico Renomado</Text>
 			<Gender>Male</Gender>
@@ -2386,7 +2346,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DYER</Tag>
 		<English>Master Dyer:Master Dyers</English>
-		
 		<Portuguese>
 			<Text>Mestre Tintureiro:Mestres Tintureiros</Text>
 			<Gender>Male</Gender>
@@ -2431,7 +2390,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EMIGRANT</Tag>
 		<English>Political Refugee:Political Refugees</English>
-		
 		<Portuguese>
 			<Text>Refugiado Político:Refugiados Políticos</Text>
 			<Gender>Male</Gender>
@@ -2476,7 +2434,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EUROPEAN_LINE_INFANTRY</Tag>
 		<English>European Line Infantry:European Line Infantry</English>
-		
 		<Portuguese>
 			<Text>Infantaria de Linha Europeia:Infantaria de Linha Europeia</Text>
 			<Gender>Female</Gender>
@@ -2517,7 +2474,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FARMER</Tag>
 		<English>Expert Farmer:Expert Farmers</English>
-		
 		<Portuguese>
 			<Text>Agricultor:Agricultores</Text>
 			<Gender>Male</Gender>
@@ -2566,7 +2522,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FISHERMAN</Tag>
 		<English>Expert Fisherman:Expert Fishermen</English>
-		
 		<Portuguese>
 			<Text>Pescador:Pescadores</Text>
 			<Gender>Male</Gender>
@@ -2615,7 +2570,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_DANSK_FISKER</Tag>
 		<English>Dansk Fisker:Dansk Fiskere</English>
-		
 		<Portuguese>
 			<Text>Pescador Dinamarquês:Pescadores Dinamarqueses</Text>
 			<Gender>Male</Gender>
@@ -2666,7 +2620,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FISHING_BOAT</Tag>
 		<English>Fishing Boat:Fishing Boats</English>
-		
 		<Portuguese>
 			<Text>Barco de Pesca:Barcos de Pesca</Text>
 			<Gender>Male</Gender>
@@ -2711,7 +2664,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FLUYT</Tag>
 		<English>Fluyt:Fluyts</English>
-		
 		<Portuguese>
 			<Text>Fluit:Fluits</Text>
 			<Gender>Male</Gender>
@@ -2754,7 +2706,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRIGATE</Tag>
 		<English>Frigate:Frigates</English>
-		
 		<Portuguese>
 			<Text>Fragata:Fragatas</Text>
 			<Gender>Female</Gender>
@@ -2785,7 +2736,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_FRIGATE</Tag>
 		<English>Royal Frigate: Royal Frigates</English>
-		
 		<Portuguese>
 			<Text>Fragata Real:Fragatas Reais</Text>
 			<Gender>Female</Gender>
@@ -2834,7 +2784,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HEAVY_FRIGATE</Tag>
 		<English>Heavy Frigate: Heavy Frigates</English>
-		
 		<Portuguese>
 			<Text>Fragata Pesada:Fragatas Pesadas</Text>
 			<Gender>Female</Gender>
@@ -2876,7 +2825,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FUR</Tag>
 		<English>Fur</English>
-		
 		<Portuguese>
 			<Text>Pelagem</Text>
 			<Gender>Female</Gender>
@@ -2911,7 +2859,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FURNITURE</Tag>
 		<English>Furniture</English>
-		
 		<Portuguese>
 			<Text>Móveis</Text>
 			<Gender>Male</Gender>
@@ -2989,7 +2936,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FUR_TRADER</Tag>
 		<English>Master Fur Trader:Master Fur Traders</English>
-		
 		<Portuguese>
 			<Text>Mestre Peleiro:Mestres Peleiros</Text>
 			<Gender>Male</Gender>
@@ -3038,7 +2984,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_FRENCH_FURRIER</Tag>
 		<English>French Furrier:French Furriers</English>
-		
 		<Portuguese>
 			<Text>Peleiro Francês:Peleiros Franceses</Text>
 			<Gender>Male</Gender>
@@ -3089,7 +3034,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GALLEON</Tag>
 		<English>Galleon:Galleons</English>
-		
 		<Portuguese>
 			<Text>Galeão:Galeões</Text>
 			<Gender>Male</Gender>
@@ -3135,7 +3079,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WAR_GALLEON</Tag>
 		<English>War Galleon:War Galleons</English>
-		
 		<Portuguese>
 			<Text>Galeão de Guerra:Galeões de Guerra</Text>
 			<Gender>Male</Gender>
@@ -3203,7 +3146,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GOVERNOR</Tag>
 		<English>Governor:Governors</English>
-		
 		<Portuguese>
 			<Text>Governador:Governadores</Text>
 			<Gender>Male</Gender>
@@ -3245,7 +3187,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GRAPES</Tag>
 		<English>Grapes</English>
-		
 		<Portuguese>
 			<Text>Uvas</Text>
 			<Gender>Female</Gender>
@@ -3339,7 +3280,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GREATWHITE</Tag>
 		<English>Great White Shark</English>
-		
 		<Portuguese>
 			<Text>Grande Tubarão Branco</Text>
 			<Gender>Male</Gender>
@@ -3533,7 +3473,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GRIZZLY</Tag>
 		<English>Grizzly</English>
-		
 		<Portuguese>
 			<Text>Urso Pardo</Text>
 			<Gender>Male</Gender>
@@ -3575,7 +3514,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_GUNSMITH</Tag>
 		<English>Master Gunsmith:Master Gunsmiths</English>
-		
 		<Portuguese>
 			<Text>Mestre Armeiro:Mestres Armeiros</Text>
 			<Gender>Male</Gender>
@@ -3628,7 +3566,6 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Artilharia Pesada:Artilharia Pesada</Text>
 			<Gender>Female</Gender>
@@ -3713,7 +3650,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HEMP_PLANTER</Tag>
 		<English>Expert Hemp Planter:Expert Hemp Planters</English>
-		
 		<Portuguese>
 			<Text>Plantador (Cânhamo):Plantadores (Cânhamo)</Text>
 			<Gender>Male</Gender>
@@ -3782,7 +3718,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HIDES</Tag>
 		<English>Cowhides</English>
-		
 		<Portuguese>
 			<Text>Couros Bovinos</Text>
 			<Gender>Male</Gender>
@@ -3835,7 +3770,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HUMPBACK_WHALE</Tag>
 		<English>Humpback Whale</English>
-		
 		<Portuguese>
 			<Text>Baleia Jubarte</Text>
 			<Gender>Female</Gender>
@@ -3930,7 +3864,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INDENTURED_SERVANT</Tag>
 		<English>Indentured Servant:Indentured Servants</English>
-		
 		<Portuguese>
 			<Text>Servo Contratado:Servos Contratados</Text>
 			<Gender>Male</Gender>
@@ -3952,7 +3885,7 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-		<Russian>Наемный работник:Наемные работники</Russian>
+		<Russian>Кабальный слуга:Кабальные слуги</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INDENTURED_SERVANT_PEDIA</Tag>
@@ -3975,7 +3908,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INDIGO</Tag>
 		<English>Indigo</English>
-		
 		<Portuguese>
 			<Text>Índigo</Text>
 			<Gender>Male</Gender>
@@ -4019,7 +3951,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_INDIGO_PLANTER</Tag>
 		<English>Expert Indigo Planter:Expert Indigo Planters</English>
-		
 		<Portuguese>
 			<Text>Plantadora (Índigo):Plantadoras (Índigo)</Text>
 			<Gender>Female</Gender>
@@ -4068,7 +3999,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_JAGUAR</Tag>
 		<English>Jaguar</English>
-		
 		<Portuguese>
 			<Text>Jaguar</Text>
 			<Gender>Male</Gender>
@@ -4110,7 +4040,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_KRAKEN</Tag>
 		<English>Kraken</English>
-		
 		<Portuguese>
 			<Text>Kraken</Text>
 			<Gender>Male</Gender>
@@ -4152,7 +4081,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LEATHER</Tag>
 		<English>Leather Goods</English>
-		
 		<Portuguese>
 			<Text>Artigos de Couro</Text>
 			<Gender>Male</Gender>
@@ -4203,7 +4131,6 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Artilharia Leve:Artilharia Leve</Text>
 			<Gender>Female</Gender>
@@ -4272,7 +4199,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LUMBER</Tag>
 		<English>Lumber</English>
-		
 		<Portuguese>
 			<Text>Madeira Serrada</Text>
 			<Gender>Female</Gender>
@@ -4307,7 +4233,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LUMBERJACK</Tag>
 		<English>Expert Lumberjack:Expert Lumberjacks</English>
-		
 		<Portuguese>
 			<Text>Lenhador:Lenhadores</Text>
 			<Gender>Male</Gender>
@@ -4356,7 +4281,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SIBERIAN_LUMBERJACK</Tag>
 		<English>Siberian Lumberjack:Siberian Lumberjacks</English>
-		
 		<Portuguese>
 			<Text>Lenhador Siberiano:Lenhadores Siberianos</Text>
 			<Gender>Male</Gender>
@@ -4455,7 +4379,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_LYNX</Tag>
 		<English>Lynx</English>
-		
 		<Portuguese>
 			<Text>Lince</Text>
 			<Gender>Male</Gender>
@@ -4497,7 +4420,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_MAN_O_WAR</Tag>
 		<English>Royal Ship of the Line 1st rate:Royal Ships of the Line 1st rate</English>
-		
 		<Portuguese>
 			<Text>Navio Real de 1ª Linha:Navios Reais de 1ª Linha</Text>
 			<Gender>Male</Gender>
@@ -4528,7 +4450,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLONIAL_MAN_O_WAR</Tag>
 		<English>Colonial Ship of the Line 1st rate:Colonial Ships of the Line 1st rate</English>
-		
 		<Portuguese>
 			<Text>Navio Colonial de 1ª Linha:Navios Coloniais de 1ª Linha</Text>
 			<Gender>Male</Gender>
@@ -4557,11 +4478,9 @@
 		<Russian>Военный корабль:Военные корабли</Russian>
 	</TEXT>
 _ship_of
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MERCHANTMAN</Tag>
 		<English>Merchantman:Merchantmen</English>
-		
 		<Portuguese>
 			<Text>Navio Mercante:Navios Mercantes</Text>
 			<Gender>Male</Gender>
@@ -4614,7 +4533,6 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Milícia de Colonos:Milícias de Colonos</Text>
 			<Gender>Female</Gender>
@@ -4659,7 +4577,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_MINER</Tag>
 		<English>Expert Miner:Expert Miners</English>
-		
 		<Portuguese>
 			<Text>Mineiro:Mineiros</Text>
 			<Gender>Male</Gender>
@@ -4809,7 +4726,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NATIVE</Tag>
 		<English>Native:Natives</English>
-		
 		<Portuguese>
 			<Text>Nativo:Nativos</Text>
 			<Gender>Male</Gender>
@@ -4977,7 +4893,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ORCA</Tag>
 		<English>Orca</English>
-		
 		<Portuguese>
 			<Text>Orca</Text>
 			<Gender>Female</Gender>
@@ -5075,7 +4990,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PEARLS_HUNTER</Tag>
 		<English>Expert Pearl Diver:Expert Pearl Divers</English>
-		
 		<Portuguese>
 			<Text>Mergulhador de Pérolas:Mergulhadores de Pérolas</Text>
 			<Gender>Male</Gender>
@@ -5180,7 +5094,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PIONEER</Tag>
 		<English>Hardy Pioneer:Hardy Pioneers</English>
-		
 		<Portuguese>
 			<Text>Pioneiro:Pioneiros</Text>
 			<Gender>Male</Gender>
@@ -5233,7 +5146,6 @@ _ship_of
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Navio Pirata:Navios Piratas</Text>
 			<Gender>Male</Gender>
@@ -5331,7 +5243,6 @@ _ship_of
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Cúter Pirata:Cúteres Piratas</Text>
 			<Gender>Male</Gender>
@@ -5362,7 +5273,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PREACHER</Tag>
 		<English>Firebrand Preacher:Firebrand Preachers</English>
-		
 		<Portuguese>
 			<Text>Pregador Fervoroso:Pregadores Fervorosos</Text>
 			<Gender>Male</Gender>
@@ -5411,7 +5321,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PREMIUM_COATS</Tag>
 		<English>Premium Coats</English>
-		
 		<Portuguese>
 			<Text>Casacos Premium</Text>
 			<Gender>Male</Gender>
@@ -5455,7 +5364,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PREMIUM_FUR</Tag>
 		<English>Premium Fur</English>
-		
 		<Portuguese>
 			<Text>Pele de Luxo</Text>
 			<Gender>Female</Gender>
@@ -5499,7 +5407,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRIEST</Tag>
 		<English>Devout Priest:Devout Priests</English>
-		
 		<Portuguese>
 			<Text>Padre Devoto:Sacerdotes Devotos</Text>
 			<Gender>Male</Gender>
@@ -5548,7 +5455,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RUSSIAN_PRIEST</Tag>
 		<English>Orthodox Priest:Orthodox Priests</English>
-		
 		<Portuguese>
 			<Text>Padre Ortodoxo:Sacerdotes Ortodoxos</Text>
 			<Gender>Male</Gender>
@@ -5596,7 +5502,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PRIVATEER</Tag>
 		<English>Privateer:Privateers</English>
-		
 		<Portuguese>
 			<Text>Corsário:Corsários</Text>
 			<Gender>Male</Gender>
@@ -5745,7 +5650,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RANCHER</Tag>
 		<English>Expert Rancher:Expert Ranchers</English>
-		
 		<Portuguese>
 			<Text>Vaqueiro:Vaqueiros</Text>
 			<Gender>Male</Gender>
@@ -5842,7 +5746,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RAW_SALT</Tag>
 		<English>Rock Salt</English>
-		
 		<Portuguese>
 			<Text>Sal-gema</Text>
 			<Gender>Female</Gender>
@@ -5886,7 +5789,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RED_PEPPER</Tag>
 		<English>Red Pepper</English>
-		
 		<Portuguese>
 			<Text>Pimentão Vermelho</Text>
 			<Gender>Male</Gender>
@@ -6038,7 +5940,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_ARTILLERY</Tag>
 		<English>Royal Artillery:Royal Artilleries</English>
-		
 		<Portuguese>
 			<Text>Artilharia Real:Artilharias Reais</Text>
 			<Gender>Female</Gender>
@@ -6110,7 +6011,6 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Cavalaria Real:Cavalaria Real</Text>
 			<Gender>Female</Gender>
@@ -6333,7 +6233,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_RUM</Tag>
 		<English>Rum</English>
-		
 		<Portuguese>
 			<Text>Rum</Text>
 			<Gender>Male</Gender>
@@ -6434,7 +6333,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SALT</Tag>
 		<English>Salt</English>
-		
 		<Portuguese>
 			<Text>Sal</Text>
 			<Gender>Male</Gender>
@@ -6481,7 +6379,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SCOUT</Tag>
 		<English>Seasoned Scout:Seasoned Scouts</English>
-		
 		<Portuguese>
 			<Text>Batedor Veterano:Batedores Veteranos</Text>
 			<Gender>Male</Gender>
@@ -6530,7 +6427,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_EXPLORADOR</Tag>
 		<English>Explorador:Exploradores</English>
-		
 		<Portuguese>
 			<Text>Explorador:Exploradores</Text>
 			<Gender>Male</Gender>
@@ -6640,7 +6536,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SHIP_OF_THE_LINE</Tag>
 		<English>Ship of the Line 3rd rate:Ships of the Line 3rd rate</English>
-		
 		<Portuguese>
 			<Text>Navio de 3ª Linha:Navios de 3ª Linha</Text>
 			<Gender>Male</Gender>
@@ -6671,7 +6566,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_SHIP_OF_THE_LINE</Tag>
 		<English>Royal Ship of the Line 2nd rate:Royal Ships of the Line 2nd rate</English>
-		
 		<Portuguese>
 			<Text>Navio Real de 2ª Linha:Navios Reais de 2ª Linha</Text>
 			<Gender>Male</Gender>
@@ -6732,7 +6626,6 @@ _ship_of
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Saveiro:Saveiros</Text>
 			<Gender>Male</Gender>
@@ -6780,7 +6673,6 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Escuna:Escunas</Text>
 			<Gender>Female</Gender>
@@ -6810,7 +6702,6 @@ _ship_of
 		<Portuguese>[COLOR_UNIT_TEXT]Escunas[COLOR_REVERT] são embarcações costeiras rápidas e versáteis do final da era colonial. Embora não possam se igualar a navios mercantes maiores em capacidade de carga, sua excelente velocidade e capacidade de manobra os tornam ideais para o transporte de mercadorias valiosas, passageiros e unidades militares entre colônias.[PARAGRAPH:2]Em comparação com a [LINK=UNIT_SLOOP]Sloop[\LINK], as Escunas sacrificam uma pequena quantidade de velocidade em troca de espaço de carga adicional e maior versatilidade. Eles são particularmente úteis para manter conexões entre colônias distantes, abastecer colônias fronteiriças e conduzir comércio com aldeias nativas remotas.[PARAGRAPH:2]Seu calado raso e cordame eficiente permitem que operem de forma eficaz ao longo da costa e em águas onde navios maiores são menos práticos. Embora possuam alguma capacidade defensiva, as Escunas devem evitar combates com navios de guerra dedicados e embarcações piratas sempre que possível.[PARAGRAPH:2][COLOR_HIGHLIGHT_TEXT]Escunas[COLOR_REVERT] podem ser compradas na [LINK=CONCEPT_EUROPE]Europa[\LINK] ou construídas em colônias com uma [LINK=BUILDING_DRYDOCK]Doca Seca[\LINK] ou uma de suas atualizações.[PARAGRAPH:2]Para uma comparação de todos os tipos de navios disponíveis, consulte [LINK=CONCEPT_SHIPS]Navios[\LINK].</Portuguese>
 		<German>[COLOR_UNIT_TEXT]Schoner[COLOR_REVERT] sind schnelle und vielseitige Küstenschiffe der späten Kolonialzeit. Zwar verfügen sie nicht über den Frachtraum großer Handelsschiffe, dafür überzeugen sie durch hohe Geschwindigkeit und Beweglichkeit. Sie eignen sich hervorragend für den Transport wertvoller Waren, von Passagieren und militärischen Einheiten zwischen den Kolonien.[PARAGRAPH:2]Im Vergleich zur [LINK=UNIT_SLOOP]Schaluppe[\LINK] verzichten Schoner auf einen kleinen Teil ihrer Geschwindigkeit, gewinnen dafür jedoch zusätzlichen Frachtraum und deutlich mehr Flexibilität. Sie sind besonders nützlich, um weit entfernte Siedlungen miteinander zu verbinden, Grenzkolonien zu versorgen oder Handel mit abgelegenen Ureinwohnerdörfern zu treiben.[PARAGRAPH:2]Dank ihres geringen Tiefgangs und ihrer effizienten Takelage können Schoner entlang von Küsten und in Gewässern operieren, die für größere Schiffe weniger geeignet sind. Obwohl sie sich notfalls verteidigen können, sollten sie den Kampf mit Kriegsschiffen oder Piraten nach Möglichkeit vermeiden.[PARAGRAPH:2]Schoner können in Europa erworben oder in Kolonien mit einem [LINK=BUILDING_DRYDOCK]Trockendock[\LINK] beziehungsweise dessen Ausbaustufen gebaut werden.[PARAGRAPH:2]Einen Vergleich aller verfügbaren Schiffstypen bietet der Eintrag [LINK=CONCEPT_SHIPS]Schiffe[\LINK].</German>
 	</TEXT>
-
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SMALL_COASTAL_SHIP</Tag>
 		<English>
@@ -7002,7 +6893,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STAGECOACH</Tag>
 		<English>Stagecoach:Stagecoaches</English>
-		
 		<Portuguese>
 			<Text>Diligência:Diligências</Text>
 			<Gender>Female</Gender>
@@ -7039,7 +6929,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STATESMAN</Tag>
 		<English>Elder Statesman:Elder Statesmen</English>
-		
 		<Portuguese>
 			<Text>Estadista Experiente:Estadistas Experientes</Text>
 			<Gender>Male</Gender>
@@ -7102,7 +6991,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_STONECUTTER</Tag>
 		<English>Expert Stonecutter:Expert Stonecutters</English>
-		
 		<Portuguese>
 			<Text>Canteiro:Canteiros</Text>
 			<Gender>Male</Gender>
@@ -7147,7 +7035,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SUGAR</Tag>
 		<English>Sugar</English>
-		
 		<Portuguese>
 			<Text>Açúcar</Text>
 			<Gender>Male</Gender>
@@ -7186,7 +7073,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SUGAR_PLANTER</Tag>
 		<English>Expert Sugar Planter:Expert Sugar Planters</English>
-		
 		<Portuguese>
 			<Text>Plantadora (Açúcar):Plantadoras (Açúcar)</Text>
 			<Gender>Female</Gender>
@@ -7235,7 +7121,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TANNER</Tag>
 		<English>Master Tanner:Master Tanners</English>
-		
 		<Portuguese>
 			<Text>Mestre Curtidor:Mestres Curtidores</Text>
 			<Gender>Male</Gender>
@@ -7322,7 +7207,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TOBACCONIST</Tag>
 		<English>Master Tobacconist:Master Tobacconists</English>
-		
 		<Portuguese>
 			<Text>Mestre Tabaqueiro:Mestres Tabaqueiros</Text>
 			<Gender>Male</Gender>
@@ -7371,7 +7255,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TOBACCO_PLANTER</Tag>
 		<English>Expert Tobacco Planter:Expert Tobacco Planters</English>
-		
 		<Portuguese>
 			<Text>Plantador (Tabaco):Plantadores (Tabaco)</Text>
 			<Gender>Male</Gender>
@@ -7470,7 +7353,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRAIN</Tag>
 		<English>Carriage:Carriages</English>
-		
 		<Portuguese>
 			<Text>Carruagem:Carruagens</Text>
 			<Gender>Male</Gender>
@@ -7503,7 +7385,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TRAPPER</Tag>
 		<English>Expert Trapper:Expert Trappers</English>
-		
 		<Portuguese>
 			<Text>Caçador de Peles:Caçadores de Peles</Text>
 			<Gender>Male</Gender>
@@ -7552,7 +7433,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TREASURE</Tag>
 		<English>Treasure</English>
-		
 		<Portuguese>
 			<Text>Tesouro</Text>
 			<Gender>Male</Gender>
@@ -7601,7 +7481,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TREK</Tag>
 		<English>Trek:Treks</English>
-		
 		<Portuguese>
 			<Text>Jornada:Jornadas</Text>
 			<Gender>Female</Gender>
@@ -7655,7 +7534,6 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Cavalaria Veterana:Cavalaria Veterana</Text>
 			<Gender>Female</Gender>
@@ -7795,7 +7673,6 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Guarda Veterano:Guardas Veteranos</Text>
 			<Gender>Female</Gender>
@@ -7833,7 +7710,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WAGON_TRAIN</Tag>
 		<English>Wagon Train:Wagon Trains</English>
-		
 		<Portuguese>
 			<Text>Carroça:Carroças</Text>
 			<Gender>Female</Gender>
@@ -7882,7 +7758,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WEAVER</Tag>
 		<English>Master Weaver:Master Weavers</English>
-		
 		<Portuguese>
 			<Text>Mestre Tecelão:Mestres Tecelões</Text>
 			<Gender>Male</Gender>
@@ -8018,13 +7893,12 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_TROOP_SHIP_STRATEGY</Tag>
 		<English>[COLOR_UNIT_TEXT]Royal Troop Ships[COLOR_REVERT] are specialized military transports used exclusively by the Crown. They are designed to carry large numbers of soldiers, artillery and military supplies across the oceans and form the logistical backbone of the Royal Expeditionary Force.[PARAGRAPH:2]Royal Troop Ships sacrifice commercial versatility in favor of military transport capacity. They can carry troops and supplies in great numbers, but are not intended for civilian trade. Their large cargo holds make them ideal for transporting invasion forces to distant colonies.[PARAGRAPH:2]Royal Troop Ships are protected by powerful escort vessels such as [LINK=UNIT_ROYAL_FRIGATE]Royal Frigates[\LINK] and [LINK=UNIT_MAN_O_WAR]Men O' War[\LINK]. While reasonably durable, they should avoid direct combat whenever possible and rely on the Royal Navy for protection.[PARAGRAPH:2]Royal Troop Ships become available after 1650 and are used exclusively by the Crown.</English>
-		<Portuguese>[COLOR_UNIT_TEXT]Navios de Tropas Reais[COLOR_REVERT] são transportes militares especializados usados exclusivamente pela Coroa. Eles são projetados para transportar um grande número de soldados, artilharia e suprimentos militares através dos oceanos e formam a espinha dorsal logística da Força Expedicionária Real.[PARAGRAPH:2]Os navios de tropas reais sacrificam a versatilidade comercial em favor da capacidade de transporte militar. Podem transportar tropas e suprimentos em grande número, mas não se destinam ao comércio civil. Seus grandes porões de carga os tornam ideais para transportar forças de invasão para colônias distantes.[PARAGRAPH:2]Os navios de tropas reais são protegidos por poderosas embarcações de escolta, como as [LINK=UNIT_ROYAL_FRIGATE]Fragatas Reais[\LINK] e [LINK=UNIT_MAN_O_WAR]Men O' War[\LINK]. Embora razoavelmente duráveis, eles devem evitar o combate direto sempre que possível e contar com a proteção da Marinha Real.[PARAGRAPH:2]Os navios de tropas reais ficam disponíveis após 1650 e são usados exclusivamente pela Coroa.</Portuguese>	
+		<Portuguese>[COLOR_UNIT_TEXT]Navios de Tropas Reais[COLOR_REVERT] são transportes militares especializados usados exclusivamente pela Coroa. Eles são projetados para transportar um grande número de soldados, artilharia e suprimentos militares através dos oceanos e formam a espinha dorsal logística da Força Expedicionária Real.[PARAGRAPH:2]Os navios de tropas reais sacrificam a versatilidade comercial em favor da capacidade de transporte militar. Podem transportar tropas e suprimentos em grande número, mas não se destinam ao comércio civil. Seus grandes porões de carga os tornam ideais para transportar forças de invasão para colônias distantes.[PARAGRAPH:2]Os navios de tropas reais são protegidos por poderosas embarcações de escolta, como as [LINK=UNIT_ROYAL_FRIGATE]Fragatas Reais[\LINK] e [LINK=UNIT_MAN_O_WAR]Men O' War[\LINK]. Embora razoavelmente duráveis, eles devem evitar o combate direto sempre que possível e contar com a proteção da Marinha Real.[PARAGRAPH:2]Os navios de tropas reais ficam disponíveis após 1650 e são usados exclusivamente pela Coroa.</Portuguese>
 		<German>[COLOR_UNIT_TEXT]Königliche Truppentransportschiffe[COLOR_REVERT] sind spezialisierte Militärtransporter, die ausschließlich vom Monarchen eingesetzt werden. Sie dienen dem Transport großer Mengen von Soldaten, Artillerie und Versorgungsgütern über die Weltmeere und bilden das logistische Rückgrat der Königlichen Expeditionsstreitkräfte.[PARAGRAPH:2]Königliche Transporter verzichten auf wirtschaftliche Vielseitigkeit zugunsten einer höheren militärischen Transportkapazität. Sie können große Mengen an Truppen und Nachschub transportieren, sind jedoch nicht für den zivilen Handel vorgesehen. Dadurch eignen sie sich hervorragend für die Verlegung großer Invasionsarmeen in die Kolonien.[PARAGRAPH:2]Königliche Truppentransportschiffe werden gewöhnlich von starken Kriegsschiffen wie [LINK=UNIT_ROYAL_FRIGATE]Königlichen Fregatten[\LINK] oder [LINK=UNIT_MAN_O_WAR]Man O' Wars[\LINK] eskortiert. Obwohl sie über eine robuste Bauweise verfügen, sollten sie direkte Gefechte vermeiden und sich auf den Schutz der Königlichen Marine verlassen.[PARAGRAPH:2]Königliche Truppentransportschiffe stehen ab dem Jahr 1650 zur Verfügung und werden ausschließlich vom Monarchen eingesetzt.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WHALE_BLUBBER</Tag>
 		<English>Whale Fat</English>
-		
 		<Portuguese>
 			<Text>Gordura de Baleia</Text>
 			<Gender>Female</Gender>
@@ -8063,7 +7937,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WHALE_OIL</Tag>
 		<English>Train Oil</English>
-		
 		<Portuguese>
 			<Text>Óleo de Baleia</Text>
 			<Gender>Male</Gender>
@@ -8150,7 +8023,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WHALING_BOAT</Tag>
 		<English>Whaling Ship:Whaling Ships</English>
-		
 		<Portuguese>
 			<Text>Navio Baleeiro:Navios Baleeiros</Text>
 			<Gender>Male</Gender>
@@ -8197,7 +8069,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WINE</Tag>
 		<English>Wine</English>
-		
 		<Portuguese>
 			<Text>Vinho</Text>
 			<Gender>Male</Gender>
@@ -8292,7 +8163,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WOLF</Tag>
 		<English>Wolf</English>
-		
 		<Portuguese>
 			<Text>Lobo</Text>
 			<Gender>Male</Gender>
@@ -8334,7 +8204,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WOOL</Tag>
 		<English>Wool</English>
-		
 		<Portuguese>
 			<Text>Lã</Text>
 			<Gender>Female</Gender>
@@ -8379,7 +8248,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WOOL_CLOTH</Tag>
 		<English>Wool Cloth</English>
-		
 		<Portuguese>
 			<Text>Pano de Lã</Text>
 			<Gender>Male</Gender>
@@ -8696,7 +8564,6 @@ _ship_of
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HOSTILE_NATIVE</Tag>
 		<English>Hostile Native:Hostile Natives</English>
-		
 		<Portuguese>
 			<Text>Nativo Hostil:Nativos Hostis</Text>
 			<Gender>Male</Gender>
@@ -8731,4 +8598,3 @@ _ship_of
 		<German>[COLOR_UNIT_TEXT]Feindselige Ureinwohner[COLOR_REVERT] können nicht erworben werden.[NEWLINE]Sie sind dem Spieler gegenüber feindlich gesonnen und meist nur in [COLOR_HIGHLIGHT_TEXT]feindseligen Ureinwohnerdörfern[COLOR_REVERT] zu finden.[NEWLINE]Sie werden ihr Dorf bis zum Tod verteidigen und greifen den Spieler an, wenn dieses zerstört wird.</German>
 	</TEXT>
 </Civ4GameText>
-

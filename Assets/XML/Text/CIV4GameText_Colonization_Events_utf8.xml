@@ -1528,7 +1528,7 @@
 		<Portuguese>Um boato está se espalhando: Em [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] um servo contratado roubou dinheiro de seu empregador.</Portuguese>
 		<French>Selon une rumeur à [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT], un domestique sous contrat vole de l'argent à son patron.</French>
 		<German>Ein Gerücht macht die Runde: In [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] hat ein Schuldknecht Geld von seinem Arbeitgeber gestohlen.</German>
-		<Russian>Ходят слухи, что в городе [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] наемный слуга украл деньги у своего работодателя.</Russian>
+		<Russian>Ходят слухи, что в городе [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] кабальный слуга украл деньги у своего работодателя.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1</Tag>
@@ -1536,7 +1536,7 @@
 		<Portuguese>Milorde, um servo contratado está implorando por nossa ajuda. Ele roubou dinheiro de seu empregador e perdeu tudo no jogo. Ele diz que estava tentando ganhar dinheiro suficiente para comprar sua liberdade.[NEWLINE]Agora ele se sente culpado e pede um empréstimo para poder devolver o dinheiro antes que seu empregador perceba o roubo. Ele promete nos pagar de volta. Caso contrário, é provável que ele fuja para evitar a prisão.</Portuguese>
 		<French>Sire, un domestique sous contrat prie pour notre recours. Il a volé de l'argent a son employeur et l'a perdu au jeu. Il dit qu'il essyait de gagner suffisamment pour racheter sa liberté.[NEWLINE]Il se sent coupable et demande un prêt pour rembourser son patron avant que celui-ci ne se rende compte du vol. Il promet de nous rembourser. Sinon, il est probable qu'il prenne la fuit pour éviter la prison.</French>
 		<German>Milord, ein Schuldknecht ersucht unsere Hilfe. Er hat Geld von seinem Arbeitgeber gestohlen und es beim Spielen verloren. Er hat versuchte genug Geld zu gewinnen, um sich freizukaufen. Er fühlt sich nun schuldig und bittet uns ihm das Geld zu leihen, damit er es ersetzen kann, bevor sein Arbeitgeber den Diebstahl bemerkt. Er verspricht es uns wieder zurück zu zahlen. Falls nicht ist anzunehmen, dass er zu fliehen versucht.</German>
-		<Russian>Милорд, наемный слуга умоляет нас о помощи. Он украл деньги у своего работодателя и проиграл все в азартные игры. Он говорит, что пытался выиграть достаточно денег, чтобы купить свою свободу.[NEWLINE]Теперь он чувствует себя виноватым и умоляет о ссуде, чтобы вернуть деньги до того, как работодатель заметит кражу. Он обещает вернуть нам деньги. В противном случае, скорее всего, он сбежит, чтобы избежать тюрьмы.</Russian>
+		<Russian>Милорд, кабальный слуга умоляет нас о помощи. Он украл деньги у своего работодателя и проиграл все в азартные игры. Он говорит, что пытался выиграть достаточно денег, чтобы купить свою свободу.[NEWLINE]Теперь он чувствует себя виноватым и умоляет о ссуде, чтобы вернуть деньги до того, как работодатель заметит кражу. Он обещает вернуть нам деньги. В противном случае, скорее всего, он сбежит, чтобы не попасть в тюрьму.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_1</Tag>
@@ -1544,7 +1544,7 @@
 		<Portuguese>O servo contratado deve assumir a responsabilidade por seus atos! Não cabe a nós resolver os problemas dos pequenos ladrões.</Portuguese>
 		<French>Ce domestique doit prendre ses responsabilités pour ses méfaits ! Ce ne'est pas à nous de nous occuper des voleurs à la petite semaine.</French>
 		<German>Der Schuldknecht muss zu seinen Taten stehen! Wir sind nicht für die Probleme von gewöhnlichen Dieben verantwortlich.</German>
-		<Russian>Наемный слуга должен взять на себя ответственность за свои дела! Мы не будем решать проблемы мелких воришек.</Russian>
+		<Russian>Кабальный слуга должен взять на себя ответственность за свои дела! Мы не будем решать проблемы мелких воришек.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_2</Tag>
@@ -1560,14 +1560,14 @@
 		<Portuguese>[ICON_BULLET]O servo contratado vai fugir.</Portuguese>
 		<French>[ICON_BULLET]Le domestique va prendre la fuite.</French>
 		<German>[ICON_BULLET]Der Schuldknecht versucht zu fliehen.</German>
-		<Russian>[ICON_BULLET]Наемный слуга убежит.</Russian>
+		<Russian>[ICON_BULLET]Кабальный слуга убежит.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER_2_HELP</Tag>
 		<English>[ICON_BULLET]The indentured servant is ransomed and becomes a free colonist.</English>
 		<Portuguese>[ICON_BULLET]O servo contratado é resgatado e se torna um colono livre.</Portuguese>
 		<German>[ICON_BULLET]Der Schuldknecht wird freigekauft und zu einem freien Kolonisten.</German>
-		<Russian>[ICON_BULLET]Наёмного работника выкупают и он становится свободным колонистом.</Russian>
+		<Russian>[ICON_BULLET]Кабального слугу выкупают и он становится свободным колонистом.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PREACHER_AND_HARLOT</Tag>
@@ -8664,4 +8664,3 @@
 		<Russian>Адмиралтейство приняло решение о введении в строй нового поколения военных и транспортных кораблей. Устаревшие суда будут постепенно выводиться из эксплуатации и заменяться новыми современными кораблями.</Russian>
 	</TEXT>
 </Civ4GameText>
-

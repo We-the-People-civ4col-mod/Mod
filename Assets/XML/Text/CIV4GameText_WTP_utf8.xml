@@ -250,12 +250,14 @@
 		<English>[COLOR_UNIT_TEXT]%s1_Profession_Name[COLOR_REVERT]</English>
 		<Portuguese>[COLOR_UNIT_TEXT]%s1_Profession_Name[COLOR_REVERT]</Portuguese>
 		<German>[COLOR_UNIT_TEXT]%s1_Profession_Name[COLOR_REVERT]</German>
+		<Russian>[COLOR_UNIT_TEXT]%s1_Profession_Name[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CITIZEN_HELP_UNIT_NAME_DISPLAY</Tag>
 		<English>[COLOR_UNIT_TEXT]%s1_Unit_Name[COLOR_REVERT]</English>
 		<Portuguese>[COLOR_UNIT_TEXT]%s1_Unit_Name[COLOR_REVERT]</Portuguese>
 		<German>[COLOR_UNIT_TEXT]%s1_Unit_Name[COLOR_REVERT]</German>
+		<Russian>[COLOR_UNIT_TEXT]%s1_Unit_Name[COLOR_REVERT]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_IS_IGNORED_IN_STORAGE_CAPACITY</Tag>
@@ -328,62 +330,73 @@
 		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM</Tag>
 		<English>Grant Freedom</English>
 		<German>Freiheit gewähren</German>
+		<Russian>Предоставление свободы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_HELP</Tag>
 		<English>Grant this slave freedom.</English>
 		<German>Diesem Sklaven die Freiheit gewähren.</German>
+		<Russian>Предоставьте этому рабу свободу.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SELL_SLAVE</Tag>
 		<English>Sell Slave</English>
 		<German>Sklaven verkaufen</German>
+		<Russian>Продать раба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_SELL_SLAVE_CONFIRM</Tag>
 		<English>Do you want to sell this slave for %d1 gold?</English>
 		<German>Möchtet Ihr diesen Sklaven für %d1 Gold verkaufen?</German>
+		<Russian>Вы готовы продать этого раба за %d1 золота?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_SELL_SLAVE_HELP</Tag>
 		<English>Sell this slave.</English>
 		<German>Diesen Sklaven verkaufen.</German>
+		<Russian>Продать этого раба</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_COOLDOWN</Tag>
 		<English>You have released too many unfree people in a short period of time. Further releases would be poorly received. Wait %d1 round(s).</English>
 		<German>Ihr habt zu viele Unfreie in die Freiheit entlassen. Noch mehr würde man Euch übel nehmen. Wartet noch %d1 Runde(n).</German>
-		<Russian/>
+		<Russian>Вы освободили слишком много невольников. Дальнейшее освобождение может вызвать недовольство граждан. Подождите еще %d1 ход(ов).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_POW_HELP</Tag>
 		<English>Release this Prisoner of War into indentured service.</English>
 		<German>Diesen Kriegsgefangenen in ein Dienstverhältnis als Fronarbeiter entlassen.</German>
+		<Russian>Освободите этого военнопленного и отправьте его на кабальные работы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_INDENTURED_HELP</Tag>
 		<English>Release this Indentured Servant from service for %d1 gold.</English>
 		<German>Diesen Fronarbeiter für %d1 Gold aus seinem Dienst freikaufen.</German>
+		<Russian>Освободите этого кабального слугу за %d1 золота.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_INDENTURED_NO_GOLD</Tag>
 		<English>You need %d1 gold to release this Indentured Servant from service.</English>
 		<German>Für die Entlassung dieses Fronarbeiters werden %d1 Gold benötigt.</German>
+		<Russian>Для освобождения этого кабального слуги требуется %d1 золота.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMMAND_GRANT_FREEDOM_FORMER_POW</Tag>
 		<English>This former Prisoner of War must serve for another %d1 round(s) before he can be released.</English>
 		<German>Dieser ehemalige Kriegsgefangene muss noch %d1 Runde(n) dienen, bevor er freier Siedler werden kann.</German>
+		<Russian>Этот бывший военнопленный отработать ещё %d1 хода(ов), прежде чем его можно будет освободить.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GRANT_FREEDOM_POW_CONFIRM</Tag>
 		<English>Do you really want to release this Prisoner of War into indentured service?</English>
 		<German>Möchtet Ihr diesen Kriegsgefangenen wirklich als Fronarbeiter in ein Dienstverhältnis entlassen?</German>
+		<Russian>Вы действительно хотите отдать этого военнопленного на кабальную службу?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GRANT_FREEDOM_INDENTURED_CONFIRM</Tag>
 		<English>Do you really want to release this Indentured Servant from service for %d1 gold?</English>
 		<German>Möchtet Ihr diesen Fronarbeiter wirklich für %d1 Gold aus seinem Dienst freikaufen?</German>
+		<Russian>Вы действительно хотите освободить этого кабального слугу за %d1 золота?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_PRICE_COMPACT_EU</Tag>

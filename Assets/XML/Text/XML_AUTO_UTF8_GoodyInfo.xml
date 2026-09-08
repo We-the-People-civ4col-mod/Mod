@@ -3,7 +3,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_BURIAL_GROUNDS</Tag>
 		<English>Burial Grounds</English>
-		
 		<Portuguese>
 			<Text>Cemitérios</Text>
 			<Gender>Male</Gender>
@@ -164,7 +163,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_HEALING</Tag>
 		<English>Ancient Medicine</English>
-		
 		<Portuguese>
 			<Text>Medicina Antiga</Text>
 			<Gender>Female</Gender>
@@ -206,7 +204,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_LOW_GOLD</Tag> <!--The tag is not currently playing in the game. I'll try to figure this out later.-->
 		<English>GOLD!!!</English>
-		
 		<Portuguese>
 			<Text>OURO!!!</Text>
 			<Gender>Male</Gender>
@@ -264,7 +261,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_HOSTILE_WEAK</Tag>
 		<English>Hostile Natives</English>
-		
 		<Portuguese>
 			<Text>Nativos hostis</Text>
 			<Gender>Male</Gender>
@@ -301,7 +297,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_MAP</Tag>
 		<English>Map</English>
-		
 		<Portuguese>
 			<Text>Mapa</Text>
 			<Gender>Male</Gender>
@@ -342,7 +337,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_MAP_SEA</Tag>
 		<English>Map</English>
-		
 		<Portuguese>
 			<Text>Mapa</Text>
 			<Gender>Male</Gender>
@@ -467,7 +461,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_SCOUT</Tag>
 		<English>Seasoned Scout:Seasoned Scouts</English>
-		
 		<Portuguese>
 			<Text>Batedor Veterano:Batedores Veteranos</Text>
 			<Gender>Male</Gender>
@@ -516,7 +509,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_TREASURE</Tag>
 		<English>Treasure</English>
-		
 		<Portuguese>
 			<Text>Tesouro</Text>
 			<Gender>Male</Gender>
@@ -655,7 +647,7 @@
 		<English>Milord, we've found an [COLOR_WARNING_TEXT]indentured servant[COLOR_REVERT] who fled a harsh master. He was so scared that he attacked us to avoid being brought home.</English>
 		<Portuguese>Milorde, encontramos um [COLOR_WARNING_TEXT]servo contratado[COLOR_REVERT] que fugiu de um mestre severo. Ele estava tão assustado que nos atacou para evitar ser levado para casa.</Portuguese>
 		<German>Milord, wir haben einen [COLOR_WARNING_TEXT]Schuldknecht[COLOR_REVERT] gefunden, der von den Züchtigungen seines Herrn geflohen ist. Er war so verängstigt, wieder dorthin zurückgebracht zu werden, daß er uns angriff.</German>
-		<Russian>Милорд, мы нашли [COLOR_WARNING_TEXT]наемного работника[COLOR_REVERT], который бежал от сурового хозяина. Он был так напуган, что чуть не напал на нас, не желая возвращаться домой.</Russian>
+		<Russian>Милорд, мы нашли [COLOR_WARNING_TEXT]кабального слугу[COLOR_REVERT], который сбежал от сурового хозяина. Он был так напуган, что чуть не напал на нас, не желая возвращаться домой.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GOODY_ARMED_NATIVE_SLAVES_COLONY</Tag>

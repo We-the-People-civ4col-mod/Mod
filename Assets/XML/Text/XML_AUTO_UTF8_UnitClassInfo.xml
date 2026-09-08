@@ -37,7 +37,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ALLIGATOR</Tag>
 		<English>Alligator</English>
-		
 		<Portuguese>
 			<Text>Jacaré</Text>
 			<Gender>Male</Gender>
@@ -68,7 +67,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_BARLEY</Tag>
 		<English>Barley</English>
-		
 		<Portuguese>
 			<Text>Cevada</Text>
 			<Gender>Female</Gender>
@@ -99,7 +97,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_BEAR_BLACK</Tag>
 		<English>Black Bear</English>
-		
 		<Portuguese>
 			<Text>Urso Negro</Text>
 			<Gender>Male</Gender>
@@ -130,7 +127,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_BEAR_POLAR</Tag>
 		<English>Polar Bear</English>
-		
 		<Portuguese>
 			<Text>Urso Polar</Text>
 			<Gender>Male</Gender>
@@ -161,7 +157,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_BEER</Tag>
 		<English>Beer</English>
-		
 		<Portuguese>
 			<Text>Cerveja</Text>
 			<Gender>Female</Gender>
@@ -255,7 +250,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_BLACKSMITH</Tag>
 		<English>Master Blacksmith:Master Blacksmiths</English>
-		
 		<Portuguese>
 			<Text>Mestre Ferreiro:Mestres Ferreiros</Text>
 			<Gender>Male</Gender>
@@ -435,7 +429,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CANNONS</Tag>
 		<English>Cannons</English>
-		
 		<Portuguese>
 			<Text>Canhões</Text>
 			<Gender>Male</Gender>
@@ -564,7 +557,6 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Nau:Naus</Text>
 			<Gender>Female</Gender>
@@ -594,7 +586,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CARPENTER</Tag>
 		<English>Master Carpenter:Master Carpenters</English>
-		
 		<Portuguese>
 			<Text>Mestre Carpinteiro:Mestres Carpinteiros</Text>
 			<Gender>Male</Gender>
@@ -625,7 +616,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CARRACK</Tag>
 		<English>Carrack:Carracks</English>
-		
 		<Portuguese>
 			<Text>Carraca:Carracas</Text>
 			<Gender>Female</Gender>
@@ -648,7 +638,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CARRIER</Tag>
 		<English>Conestoga:Conestogas</English>
-		
 		<Portuguese>
 			<Text>Conestoga:Conestogas</Text>
 			<Gender>Female</Gender>
@@ -753,7 +742,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CIGARS</Tag>
 		<English>Cigars</English>
-		
 		<Portuguese>
 			<Text>Charutos</Text>
 			<Gender>Male</Gender>
@@ -780,7 +768,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CLOTH</Tag>
 		<English>Cloth</English>
-		
 		<Portuguese>
 			<Text>Pano</Text>
 			<Gender>Male</Gender>
@@ -811,7 +798,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COATS</Tag>
 		<English>Coats</English>
-		
 		<Portuguese>
 			<Text>Casacos</Text>
 			<Gender>Male</Gender>
@@ -838,7 +824,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCA_COLLECTOR</Tag>
 		<English>Expert Coca Collector:Expert Coca Collectors</English>
-		
 		<Portuguese>
 			<Text>Coletora (Coca):Coletoras (Coca)</Text>
 			<Gender>Female</Gender>
@@ -869,7 +854,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCA_LEAVES</Tag>
 		<English>Coca Leaves</English>
-		
 		<Portuguese>
 			<Text>Folhas de Coca</Text>
 			<Gender>Female</Gender>
@@ -900,7 +884,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCOA</Tag>
 		<English>Cocoa</English>
-		
 		<Portuguese>
 			<Text>Cacau</Text>
 			<Gender>Male</Gender>
@@ -927,7 +910,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COCOA_FRUITS</Tag>
 		<English>Cocoa Pods</English>
-		
 		<Portuguese>
 			<Text>Vagens de Cacau</Text>
 			<Gender>Female</Gender>
@@ -960,7 +942,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COFFEE</Tag>
 		<English>Coffee</English>
-		
 		<Portuguese>
 			<Text>Café</Text>
 			<Gender>Male</Gender>
@@ -991,7 +972,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COFFEE_BERRIES</Tag>
 		<English>Coffee Berries</English>
-		
 		<Portuguese>
 			<Text>Bagas de Café</Text>
 			<Gender>Female</Gender>
@@ -1010,7 +990,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COFFEE_PLANTER</Tag>
 		<English>Expert Coffee Planter:Expert Coffee Planters</English>
-		
 		<Portuguese>
 			<Text>Plantadora (Café):Plantadoras (Café)</Text>
 			<Gender>Female</Gender>
@@ -1071,7 +1050,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COLOURED_CLOTH</Tag>
 		<English>Coloured Cloth</English>
-		
 		<Portuguese>
 			<Text>Pano Colorido</Text>
 			<Gender>Male</Gender>
@@ -1214,7 +1192,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CONVERTED_NATIVE</Tag>
 		<English>Converted Native:Converted Natives</English>
-		
 		<Portuguese>
 			<Text>Nativo Convertido:Nativos Convertidos</Text>
 			<Gender>Male</Gender>
@@ -1303,7 +1280,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COTTON</Tag>
 		<English>Cotton</English>
-		
 		<Portuguese>
 			<Text>Algodão</Text>
 			<Gender>Male</Gender>
@@ -1334,7 +1310,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COTTON_PLANTER</Tag>
 		<English>Expert Cotton Planter:Expert Cotton Planters</English>
-		
 		<Portuguese>
 			<Text>Plantador (Algodão):Plantadores (Algodão)</Text>
 			<Gender>Male</Gender>
@@ -1365,7 +1340,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COUGAR</Tag>
 		<English>Cougar</English>
-		
 		<Portuguese>
 			<Text>Puma</Text>
 			<Gender>Female</Gender>
@@ -1396,7 +1370,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CRIMINAL</Tag>
 		<English>Petty Criminal:Petty Criminals</English>
-		
 		<Portuguese>
 			<Text>Criminoso Comum:Pequenos Criminosos</Text>
 			<Gender>Male</Gender>
@@ -1423,7 +1396,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_DISTILLER</Tag>
 		<English>Master Distiller:Master Distillers</English>
-		
 		<Portuguese>
 			<Text>Mestre Destilador:Mestres Destiladores</Text>
 			<Gender>Male</Gender>
@@ -1454,7 +1426,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_DOCTOR</Tag>
 		<English>Renowned Medic</English>
-		
 		<Portuguese>
 			<Text>Médico Renomado</Text>
 			<Gender>Male</Gender>
@@ -1485,7 +1456,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_DYER</Tag>
 		<English>Master Dyer:Master Dyers</English>
-		
 		<Portuguese>
 			<Text>Mestre Tintureiro:Mestres Tintureiros</Text>
 			<Gender>Male</Gender>
@@ -1516,7 +1486,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_EMIGRANT</Tag>
 		<English>Political Refugee:Political Refugees</English>
-		
 		<Portuguese>
 			<Text>Refugiado Político:Refugiados Políticos</Text>
 			<Gender>Male</Gender>
@@ -1547,7 +1516,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_EUROPEAN_LINE_INFANTRY</Tag>
 		<English>European Line Infantry:European Line Infantry</English>
-		
 		<Portuguese>
 			<Text>Infantaria de Linha Europeia:Infantaria de Linha Europeia</Text>
 			<Gender>Female</Gender>
@@ -1578,7 +1546,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FARMER</Tag>
 		<English>Expert Farmer:Expert Farmers</English>
-		
 		<Portuguese>
 			<Text>Agricultor:Agricultores</Text>
 			<Gender>Male</Gender>
@@ -1609,7 +1576,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FISHERMAN</Tag>
 		<English>Expert Fisherman:Expert Fishermen</English>
-		
 		<Portuguese>
 			<Text>Pescador:Pescadores</Text>
 			<Gender>Male</Gender>
@@ -1640,7 +1606,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FISHING_BOAT</Tag>
 		<English>Fishing Boat:Fishing Boats</English>
-		
 		<Portuguese>
 			<Text>Barco de Pesca:Barcos de Pesca</Text>
 			<Gender>Male</Gender>
@@ -1671,7 +1636,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FLUYT</Tag>
 		<English>Fluyt:Fluyts</English>
-		
 		<Portuguese>
 			<Text>Fluit:Fluits</Text>
 			<Gender>Male</Gender>
@@ -1694,7 +1658,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FRIGATE</Tag>
 		<English>Frigate:Frigates</English>
-		
 		<Portuguese>
 			<Text>Fragata:Fragatas</Text>
 			<Gender>Female</Gender>
@@ -1725,7 +1688,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HEAVY_FRIGATE</Tag>
 		<English>Heavy Frigate:Heavy Frigates</English>
-		
 		<Portuguese>
 			<Text>Fragata Pesada:Fragatas Pesadas</Text>
 			<Gender>Female</Gender>
@@ -1755,7 +1717,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ROYAL_FRIGATE</Tag>
 		<English>Royal Frigate:Royal Frigates</English>
-		
 		<Portuguese>
 			<Text>Fragata Real:Fragatas Reais</Text>
 			<Gender>Female</Gender>
@@ -1786,7 +1747,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FUR</Tag>
 		<English>Fur</English>
-		
 		<Portuguese>
 			<Text>Pelagem</Text>
 			<Gender>Female</Gender>
@@ -1813,7 +1773,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FURNITURE</Tag>
 		<English>Furniture</English>
-		
 		<Portuguese>
 			<Text>Móveis</Text>
 			<Gender>Male</Gender>
@@ -1866,7 +1825,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_FUR_TRADER</Tag>
 		<English>Master Fur Trader:Master Fur Traders</English>
-		
 		<Portuguese>
 			<Text>Mestre Peleiro:Mestres Peleiros</Text>
 			<Gender>Male</Gender>
@@ -1897,7 +1855,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_GALLEON</Tag>
 		<English>Galleon:Galleons</English>
-		
 		<Portuguese>
 			<Text>Galeão:Galeões</Text>
 			<Gender>Male</Gender>
@@ -1928,7 +1885,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WAR_GALLEON</Tag>
 		<English>War Galleon:War Galleons</English>
-		
 		<Portuguese>
 			<Text>Galeão de Guerra:Galeões de Guerra</Text>
 			<Gender>Male</Gender>
@@ -1948,7 +1904,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_GOVERNOR</Tag>
 		<English>Governor:Governors</English>
-		
 		<Portuguese>
 			<Text>Governador:Governadores</Text>
 			<Gender>Male</Gender>
@@ -1979,7 +1934,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_GRAPES</Tag>
 		<English>Grapes</English>
-		
 		<Portuguese>
 			<Text>Uvas</Text>
 			<Gender>Female</Gender>
@@ -2044,7 +1998,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_GREATWHITE</Tag>
 		<English>Great White Shark</English>
-		
 		<Portuguese>
 			<Text>Grande Tubarão Branco</Text>
 			<Gender>Male</Gender>
@@ -2143,7 +2096,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_GRIZZLY</Tag>
 		<English>Grizzly</English>
-		
 		<Portuguese>
 			<Text>Urso Pardo</Text>
 			<Gender>Male</Gender>
@@ -2174,7 +2126,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_GUNSMITH</Tag>
 		<English>Master Gunsmith:Master Gunsmiths</English>
-		
 		<Portuguese>
 			<Text>Mestre Armeiro:Mestres Armeiros</Text>
 			<Gender>Male</Gender>
@@ -2209,7 +2160,6 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Artilharia Pesada:Artilharia Pesada</Text>
 			<Gender>Female</Gender>
@@ -2240,7 +2190,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HEMP_PLANTER</Tag>
 		<English>Expert Hemp Planter:Expert Hemp Planters</English>
-		
 		<Portuguese>
 			<Text>Plantador (Cânhamo):Plantadores (Cânhamo)</Text>
 			<Gender>Male</Gender>
@@ -2281,7 +2230,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HIDES</Tag>
 		<English>Cowhides</English>
-		
 		<Portuguese>
 			<Text>Couros Bovinos</Text>
 			<Gender>Male</Gender>
@@ -2312,7 +2260,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HUMPBACK_WHALE</Tag>
 		<English>Humpback Whale</English>
-		
 		<Portuguese>
 			<Text>Baleia Jubarte</Text>
 			<Gender>Female</Gender>
@@ -2377,7 +2324,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_INDENTURED_SERVANT</Tag>
 		<English>Indentured Servant:Indentured Servants</English>
-		
 		<Portuguese>
 			<Text>Servo Contratado:Servos Contratados</Text>
 			<Gender>Male</Gender>
@@ -2399,12 +2345,11 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-		<Russian>Наемный работник:Наемные работники</Russian>
+		<Russian>Кабальный слуга:Кабальные слуги</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_INDIGO</Tag>
 		<English>Indigo</English>
-		
 		<Portuguese>
 			<Text>Índigo</Text>
 			<Gender>Male</Gender>
@@ -2435,7 +2380,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_INDIGO_PLANTER</Tag>
 		<English>Expert Indigo Planter:Expert Indigo Planters</English>
-		
 		<Portuguese>
 			<Text>Plantadora (Índigo):Plantadoras (Índigo)</Text>
 			<Gender>Female</Gender>
@@ -2462,7 +2406,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_JAGUAR</Tag>
 		<English>Jaguar</English>
-		
 		<Portuguese>
 			<Text>Jaguar</Text>
 			<Gender>Male</Gender>
@@ -2493,7 +2436,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_KRAKEN</Tag>
 		<English>Kraken</English>
-		
 		<Portuguese>
 			<Text>Kraken</Text>
 			<Gender>Male</Gender>
@@ -2524,7 +2466,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_LEATHER</Tag>
 		<English>Leather</English>
-		
 		<Portuguese>
 			<Text>Couro</Text>
 			<Gender>Male</Gender>
@@ -2559,7 +2500,6 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Artilharia Leve:Artilharia Leve</Text>
 			<Gender>Female</Gender>
@@ -2590,7 +2530,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_LUMBER</Tag>
 		<English>Lumber</English>
-		
 		<Portuguese>
 			<Text>Madeira Serrada</Text>
 			<Gender>Female</Gender>
@@ -2617,7 +2556,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_LUMBERJACK</Tag>
 		<English>Expert Lumberjack:Expert Lumberjacks</English>
-		
 		<Portuguese>
 			<Text>Lenhador:Lenhadores</Text>
 			<Gender>Male</Gender>
@@ -2682,7 +2620,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_LYNX</Tag>
 		<English>Lynx</English>
-		
 		<Portuguese>
 			<Text>Lince</Text>
 			<Gender>Male</Gender>
@@ -2713,7 +2650,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MERCHANTMAN</Tag>
 		<English>Merchantman:Merchantmen</English>
-		
 		<Portuguese>
 			<Text>Navio Mercante:Navios Mercantes</Text>
 			<Gender>Male</Gender>
@@ -2748,7 +2684,6 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Milícia de Colonos:Milícias de Colonos</Text>
 			<Gender>Female</Gender>
@@ -2779,7 +2714,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_MINER</Tag>
 		<English>Expert Miner:Expert Miners</English>
-		
 		<Portuguese>
 			<Text>Mineiro:Mineiros</Text>
 			<Gender>Male</Gender>
@@ -2975,7 +2909,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ORCA</Tag>
 		<English>Orca</English>
-		
 		<Portuguese>
 			<Text>Orca</Text>
 			<Gender>Female</Gender>
@@ -3040,7 +2973,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PEARLS_HUNTER</Tag>
 		<English>Expert Pearl Diver:Expert Pearl Divers</English>
-		
 		<Portuguese>
 			<Text>Mergulhador de Pérolas:Mergulhadores de Pérolas</Text>
 			<Gender>Male</Gender>
@@ -3071,7 +3003,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PIONEER</Tag>
 		<English>Hardy Pioneer:Hardy Pioneers</English>
-		
 		<Portuguese>
 			<Text>Pioneiro:Pioneiros</Text>
 			<Gender>Male</Gender>
@@ -3106,7 +3037,6 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Navio Pirata:Navios Piratas</Text>
 			<Gender>Male</Gender>
@@ -3174,7 +3104,6 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Cúter Pirata:Cúteres Piratas</Text>
 			<Gender>Male</Gender>
@@ -3195,7 +3124,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PREACHER</Tag>
 		<English>Firebrand Preacher:Firebrand Preachers</English>
-		
 		<Portuguese>
 			<Text>Pregador Fervoroso:Pregadores Fervorosos</Text>
 			<Gender>Male</Gender>
@@ -3226,7 +3154,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PREMIUM_COATS</Tag>
 		<English>Luxury Coats</English>
-		
 		<Portuguese>
 			<Text>Casacos de Luxo</Text>
 			<Gender>Male</Gender>
@@ -3257,7 +3184,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PREMIUM_FUR</Tag>
 		<English>Premium Fur</English>
-		
 		<Portuguese>
 			<Text>Pele de Luxo</Text>
 			<Gender>Female</Gender>
@@ -3288,7 +3214,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PRIVATEER</Tag>
 		<English>Privateer:Privateers</English>
-		
 		<Portuguese>
 			<Text>Corsário:Corsários</Text>
 			<Gender>Male</Gender>
@@ -3353,7 +3278,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_RANCHER</Tag>
 		<English>Expert Rancher:Expert Ranchers</English>
-		
 		<Portuguese>
 			<Text>Vaqueiro:Vaqueiros</Text>
 			<Gender>Male</Gender>
@@ -3418,7 +3342,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_RAW_SALT</Tag>
 		<English>Rock Salt</English>
-		
 		<Portuguese>
 			<Text>Sal-gema</Text>
 			<Gender>Female</Gender>
@@ -3449,7 +3372,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_RED_PEPPER</Tag>
 		<English>Red Pepper</English>
-		
 		<Portuguese>
 			<Text>Pimentão Vermelho</Text>
 			<Gender>Male</Gender>
@@ -3514,7 +3436,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ROPES_MAKER</Tag>
 		<English>Master Roper:Master Ropers</English>
-		
 		<Portuguese>
 			<Text>Mestre Cordoador:Mestres Cordoadores</Text>
 			<Gender>Male</Gender>
@@ -3549,7 +3470,6 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Cavalaria Real:Cavalaria Real</Text>
 			<Gender>Female</Gender>
@@ -3682,7 +3602,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_RUM</Tag>
 		<English>Rum</English>
-		
 		<Portuguese>
 			<Text>Rum</Text>
 			<Gender>Male</Gender>
@@ -3713,7 +3632,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_SAILCLOTH_MAKER</Tag>
 		<English>Master Sailmaker:Master Sailmakers</English>
-		
 		<Portuguese>
 			<Text>Mestre Veleiro:Mestres Veleiros</Text>
 			<Gender>Male</Gender>
@@ -3744,7 +3662,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_SALT</Tag>
 		<English>Salt</English>
-		
 		<Portuguese>
 			<Text>Sal</Text>
 			<Gender>Male</Gender>
@@ -3775,7 +3692,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_SCOUT</Tag>
 		<English>Seasoned Scout:Seasoned Scouts</English>
-		
 		<Portuguese>
 			<Text>Batedor Veterano:Batedores Veteranos</Text>
 			<Gender>Male</Gender>
@@ -3806,7 +3722,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_EXPERT_SETTLER</Tag>
 		<English>Prepared Settler:Prepared Settlers</English>
-		
 		<Portuguese>
 			<Text>Colonizador Preparado:Colonizadores Preparados</Text>
 			<Gender>Male</Gender>
@@ -3857,7 +3772,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_SHIP_OF_THE_LINE</Tag>
 		<English>Ship of the Line:Ships of the Line</English>
-		
 		<Portuguese>
 			<Text>Navio de 3ª Linha:Navios de 3ª Linha</Text>
 			<Gender>Male</Gender>
@@ -3888,7 +3802,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ROYAL_SHIP_OF_THE_LINE</Tag>
 		<English>Royal Ship of the Line:Royal Ships of the Line</English>
-		
 		<Portuguese>
 			<Text>Navio Real de 2ª Linha:Navios Reais de 2ª Linha</Text>
 			<Gender>Male</Gender>
@@ -3919,7 +3832,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ROYAL_MAN_O_WAR</Tag>
 		<English>Royal Ship of the Line 1st rate:Royal Ships of the Line 1st rate</English>
-		
 		<Portuguese>
 			<Text>Navio Real de 1ª Linha:Navios Reais de 1ª Linha</Text>
 			<Gender>Male</Gender>
@@ -3940,7 +3852,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COLONIAL_MAN_O_WAR</Tag>
 		<English>Colonial Ship of the Line 1st rate:Colonial Ships of the Line 1st rate</English>
-		
 		<Portuguese>
 			<Text>Navio Colonial de 1ª Linha:Navios Coloniais de 1ª Linha</Text>
 			<Gender>Male</Gender>
@@ -3999,7 +3910,6 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</English>
-		
 		<Portuguese>
 			<Text>Escuna:Escunas</Text>
 			<Gender>Female</Gender>
@@ -4151,7 +4061,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_STAGECOACH</Tag>
 		<English>Stagecoach:Stagecoaches</English>
-		
 		<Portuguese>
 			<Text>Diligência:Diligências</Text>
 			<Gender>Female</Gender>
@@ -4174,7 +4083,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_STATESMAN</Tag>
 		<English>Elder Statesman:Elder Statesmen</English>
-		
 		<Portuguese>
 			<Text>Estadista Experiente:Estadistas Experientes</Text>
 			<Gender>Male</Gender>
@@ -4205,7 +4113,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_STONECUTTER</Tag>
 		<English>Expert Stonecutter:Expert Stonecutters</English>
-		
 		<Portuguese>
 			<Text>Canteiro:Canteiros</Text>
 			<Gender>Male</Gender>
@@ -4236,7 +4143,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_SUGAR</Tag>
 		<English>Sugar</English>
-		
 		<Portuguese>
 			<Text>Açúcar</Text>
 			<Gender>Male</Gender>
@@ -4267,7 +4173,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_SUGAR_PLANTER</Tag>
 		<English>Expert Sugar Planter:Expert Sugar Planters</English>
-		
 		<Portuguese>
 			<Text>Plantadora (Açúcar):Plantadoras (Açúcar)</Text>
 			<Gender>Female</Gender>
@@ -4298,7 +4203,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_TANNER</Tag>
 		<English>Master Tanner:Master Tanners</English>
-		
 		<Portuguese>
 			<Text>Mestre Curtidor:Mestres Curtidores</Text>
 			<Gender>Male</Gender>
@@ -4363,7 +4267,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_TOBACCONIST</Tag>
 		<English>Master Tobacconist:Master Tobacconists</English>
-		
 		<Portuguese>
 			<Text>Mestre Tabaqueiro:Mestres Tabaqueiros</Text>
 			<Gender>Male</Gender>
@@ -4394,7 +4297,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_TOBACCO_PLANTER</Tag>
 		<English>Expert Tobacco Planter:Expert Tobacco Planters</English>
-		
 		<Portuguese>
 			<Text>Plantador (Tabaco):Plantadores (Tabaco)</Text>
 			<Gender>Male</Gender>
@@ -4459,7 +4361,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_TRAIN</Tag>
 		<English>Carriage:Carriages</English>
-		
 		<Portuguese>
 			<Text>Carruagem:Carruagens</Text>
 			<Gender>Male</Gender>
@@ -4478,7 +4379,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_TRAPPER</Tag>
 		<English>Expert Trapper:Expert Trappers</English>
-		
 		<Portuguese>
 			<Text>Caçador de Peles:Caçadores de Peles</Text>
 			<Gender>Male</Gender>
@@ -4509,7 +4409,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_TREASURE</Tag>
 		<English>Treasure</English>
-		
 		<Portuguese>
 			<Text>Tesouro</Text>
 			<Gender>Male</Gender>
@@ -4540,7 +4439,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_TREK</Tag>
 		<English>Trek:Treks</English>
-		
 		<Portuguese>
 			<Text>Jornada:Jornadas</Text>
 			<Gender>Female</Gender>
@@ -4563,7 +4461,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_VETERAN</Tag>
 		<English>Veteran Infantry Soldier:Veteran Infantry Soldiers</English>
-		
 		<Portuguese>
 			<Text>Soldado de Infantaria Veterano:Soldados de Infantaria Veteranos</Text>
 			<Gender>Male</Gender>
@@ -4594,7 +4491,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_VETERAN_CAVALRY</Tag>
 		<English>Veteran Cavalryman:Veteran Cavalrymen</English>
-		
 		<Portuguese>
 			<Text>Cavalaria Veterana:Cavalaria Veterana</Text>
 			<Gender>Female</Gender>
@@ -4625,7 +4521,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_VETERAN_DRAGOON</Tag>
 		<English>Veteran Dragoon:Veteran Dragoons</English>
-		
 		<Portuguese>
 			<Text>Dragão Veterano:Dragões Veteranos</Text>
 			<Gender>Male</Gender>
@@ -4656,7 +4551,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WAGON_TRAIN</Tag>
 		<English>Wagon Train:Wagon Trains</English>
-		
 		<Portuguese>
 			<Text>Carroça:Carroças</Text>
 			<Gender>Female</Gender>
@@ -4687,7 +4581,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WEAVER</Tag>
 		<English>Master Weaver:Master Weavers</English>
-		
 		<Portuguese>
 			<Text>Mestre Tecelão:Mestres Tecelões</Text>
 			<Gender>Male</Gender>
@@ -4785,7 +4678,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WHALE_BLUBBER</Tag>
 		<English>Whale Fat</English>
-		
 		<Portuguese>
 			<Text>Gordura de Baleia</Text>
 			<Gender>Female</Gender>
@@ -4816,7 +4708,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WHALE_OIL</Tag>
 		<English>Train Oil</English>
-		
 		<Portuguese>
 			<Text>Óleo de Baleia</Text>
 			<Gender>Male</Gender>
@@ -4881,7 +4772,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WHALING_BOAT</Tag>
 		<English>Whaling Ship:Whaling Ships</English>
-		
 		<Portuguese>
 			<Text>Navio Baleeiro:Navios Baleeiros</Text>
 			<Gender>Male</Gender>
@@ -4912,7 +4802,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WINE</Tag>
 		<English>Wine</English>
-		
 		<Portuguese>
 			<Text>Vinho</Text>
 			<Gender>Male</Gender>
@@ -4977,7 +4866,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WOLF</Tag>
 		<English>Wolf</English>
-		
 		<Portuguese>
 			<Text>Lobo</Text>
 			<Gender>Male</Gender>
@@ -5008,7 +4896,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WOOL</Tag>
 		<English>Wool</English>
-		
 		<Portuguese>
 			<Text>Lã</Text>
 			<Gender>Female</Gender>
@@ -5039,7 +4926,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WOOL_CLOTH</Tag>
 		<English>Wool Cloth</English>
-		
 		<Portuguese>
 			<Text>Pano de Lã</Text>
 			<Gender>Male</Gender>
@@ -5172,7 +5058,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_REVOLTING_CRIMINAL</Tag>
 		<English>Rebelling Criminal:Rebelling Criminals</English>
-		
 		<Portuguese>
 			<Text>Criminoso Rebelde:Criminosos Rebeldes</Text>
 			<Gender>Male</Gender>
@@ -5237,7 +5122,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_HOSTILE_NATIVE</Tag>
 		<English>Hostile Native:Hostile Natives</English>
-		
 		<Portuguese>
 			<Text>Nativo Hostil:Nativos Hostis</Text>
 			<Gender>Male</Gender>
@@ -5265,10 +5149,9 @@
 		</Spanish>
 		<Russian>Враждебные индейцы</Russian>
 	</TEXT>
-   <TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ECCENTRIC_ARCHITECT</Tag>
 		<English>Eccentric Architect:Eccentric Architects</English>
-		
 		<Portuguese>
 			<Text>Arquiteto Excêntrico:Arquitetos Excêntricos</Text>
 			<Gender>Male</Gender>

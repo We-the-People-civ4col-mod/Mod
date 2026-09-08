@@ -2912,7 +2912,7 @@
 		<Portuguese>Seis servos contratados</Portuguese>
 		<French>Six domestiques sous contrats</French>
 		<German>Sechs Schuldknechte</German>
-		<Russian>Шесть наёмных работников</Russian>
+		<Russian>Шесть кабальных слуг</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_INDENTURED_SERVANTS_HEAD</Tag>
@@ -2927,7 +2927,7 @@
 		<English>Their life is no bed of roses. They do the heaviest work, hauling and toiling. But this bitter life will end after seven years.[NEWLINE][NEWLINE]Back home they freely signed a contract with their future employer. Now, in return for passage to the New World, they give up their right to a self-determined existence for seven years.[NEWLINE][NEWLINE]Without complaint they do everything their master deems necessary. And then? He grants them a small sum of money or gives them a farm which, though small, will be their own.[NEWLINE][NEWLINE]In this way indentured servants become free citizens.[NEWLINE][NEWLINE]</English>
 		<Portuguese>A vida deles não é um mar de rosas. Eles fazem o trabalho mais pesado, transportando e trabalhando. Mas esta vida amarga terminará depois de sete anos.[NEWLINE][NEWLINE]Em casa, eles assinaram livremente um contrato com seu futuro empregador. Agora, em troca da passagem para o Novo Mundo, eles renunciam ao seu direito a uma existência autodeterminada por sete anos.[NEWLINE][NEWLINE]Sem reclamar, eles fazem tudo o que seu mestre considera necessário. E então? Ele lhes concede uma pequena quantia em dinheiro ou lhes dá uma fazenda que, embora pequena, será deles.[NEWLINE][NEWLINE]Desta forma, os servos contratados tornam-se cidadãos livres.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Ein Zuckerschlecken ist ihr Leben nicht. Schwerste Arbeit verrichten sie, schleppen und schuften. Doch währt dies bittere Leben nur sieben Jahre.[NEWLINE][NEWLINE]Einst in der Heimat haben sie aus freien Stücken mit ihrem künftigen Dienstherrn einen Vertrag geschlossen. Er spendiert ihnen die Überfahrt in die Neue Welt, und sie verpfänden ihm im Gegenzug ihr Recht auf ein selbstbestimmtes Dasein.[NEWLINE][NEWLINE]Sieben Jahre lang tun sie als Schuldknechte klaglos alles, was ihr Herr für nötig erachtet. Und dann? Dann gewährt er ihnen eine kleine Summe Geldes oder schenkt ihnen einen Hof, der zwar unscheinbar, aber ihr Eigen ist.[NEWLINE][NEWLINE]Und aus Schuldknechten werden freie Bürger.[NEWLINE][NEWLINE]</German>
-		<Russian>Их жизнь не усыпана розами. Они выполняют самую тяжелую работу, надрывая жилы. Но эта горькая жизнь закончится через семь лет.[NEWLINE][NEWLINE]На родине они добровольно подписали контракт со своим будущим работодателем. Теперь, в обмен на проезд до Нового Света, они отказываются от своего права на самостоятельное существование на семь лет.[NEWLINE][NEWLINE]Безропотно делают все, что сочтет нужным их хозяин. А что же потом? Он дает им небольшую сумму денег или дает им ферму, которая, хоть и небольшая, будет их собственной.[NEWLINE][NEWLINE]Так наемные слуги становятся свободными гражданами.[NEWLINE][NEWLINE]</Russian>
+		<Russian>Их жизнь не усыпана розами. Они выполняют самую тяжелую работу, надрывая жилы. Но эта горькая жизнь закончится через семь лет.[NEWLINE][NEWLINE]На родине они добровольно подписали контракт со своим будущим работодателем. Теперь, в обмен на проезд до Нового Света, они отказываются от своего права на самостоятельное существование на семь лет.[NEWLINE][NEWLINE]Безропотно делают все, что сочтет нужным их хозяин. А что же потом? Он дает им небольшую сумму денег или дает им ферму, которая, хоть и небольшая, будет их собственной.[NEWLINE][NEWLINE]Так кабальные слуги становятся свободными гражданами.[NEWLINE][NEWLINE]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_COCOA_PLANTER</Tag>
@@ -5237,4 +5237,3 @@
 		<Russian>Милорд, наши тюрьмы заполняются военнопленными. Несомненно, мы могли бы использовать их на плантациях. Однако военнопленные — плохие работники. Кроме того, их ннужно постоянно охранять.[NEWLINE][NEWLINE]Вам следует рассмотреть возможность отправки их обратно врагу в обмен на золото. И, конечно, под честное слово, что они никогда больше не будут воевать на этом континенте и против нас.[NEWLINE][NEWLINE]</Russian>
 	</TEXT>
 </Civ4GameText>
-
