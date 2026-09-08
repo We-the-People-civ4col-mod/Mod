@@ -144,6 +144,7 @@
 		<German>Siedlungseliminierungs-Limit: </German>
 		<Italian>Limite eliminazione insediamento: </Italian>
 		<Spanish>Límite de eliminación de asentamientos: </Spanish>
+		<Russian>Лимит уничтожения колоний: </Russian>
 		<Hungarian>Település Megszüntetési Limit: </Hungarian>
 	</TEXT>
 	<TEXT>
@@ -165,6 +166,7 @@
 		<German>Limit Siedlungseliminierung:</German>
 		<Italian>Limite eliminazione insediamento:</Italian>
 		<Spanish>Límite de eliminación de asentamientos:</Spanish>
+		<Russian>Лимит уничтожения колоний:</Russian>
 		<Hungarian>Település Megszüntetési Limit: </Hungarian>
 	</TEXT>
 	<TEXT>
@@ -197,7 +199,7 @@
 		<German>[SPACE](Die Siedlung muss produzieren, um zur Modernisierung %s1_ImpName zu werden)</German>
 		<Italian>[SPACE](L'insediamento deve lavorare per diventare %s1_ImpName)</Italian>
 		<Spanish>[SPACE](El asentamiento debe trabajar para convertirse en [NUM1:un:una:unos:unas] %s1_ImpName)</Spanish>
-		<Russian>[SPACE](Поселение (???) должно работать, чтобы стать %s1_ImpName)</Russian>	
+		<Russian>[SPACE](Поселение (???) должно работать, чтобы стать %s1_ImpName)</Russian>
 		<Hungarian>[SPACE](A településnek dolgoznia kell, hogy %s1_ImpName lehessen belőle)</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -642,9 +644,8 @@
 		<Russian>[ICON_BULLET]%D1_Modifier к производству %s2_list_of_icons</Russian>
 		<Hungarian>[ICON_BULLET]%D1_Modifier %s2_list_of_icons termelés</Hungarian>
 	</TEXT>
-<!-- ZorG. colopedia. unit equipment. START -->
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_REQUIRES_YIELD_QUANTITY_STRING</Tag>
+		<Tag>TXT_KEY_UNIT_REQUIRES_YIELD_QUANTITY_STRING</Tag> <!-- ZorG. colopedia. unit equipment. -->
 		<English>[ICON_BULLET]Requires %d1_Quantity %F2_Icon %s3_yield_name</English>
 		<Portuguese>[ICON_BULLET]Requer %d1_Quantity %F2_Icon %s3_yield_name</Portuguese>
 		<French>[ICON_BULLET]Requiert %d1_Quantity %F2_Icon %s3_yield_name</French>
@@ -654,7 +655,6 @@
 		<Russian>[ICON_BULLET]Требуется : %d1_Quantity %F2_Icon %s3_yield_name</Russian>
 		<Hungarian>[ICON_BULLET]%d1_Quantity %F2_Icon %s3_yield_name</Hungarian>
 	</TEXT>
-<!-- ZorG. colopedia. unit equipment. END -->
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_CANNOT_FOUND</Tag>
 		<English>[COLOR_WARNING_TEXT]Cannot found within %d1_Num [NUM1:plot:plots] of Settlement[COLOR_REVERT]</English>
@@ -674,6 +674,7 @@
 		<German>Vorräte</German>
 		<Italian>Riserve</Italian>
 		<Spanish>Reservas</Spanish>
+		<Russian>Запасы</Russian>
 		<Hungarian>Raktározott</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -684,6 +685,7 @@
 		<German>Netto</German>
 		<Italian>Netto</Italian>
 		<Spanish>Neto</Spanish>
+		<Russian>Сеть</Russian>
 		<Hungarian>Nettó</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -763,6 +765,7 @@
 		<German>Der Preis für [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Afrika ist auf %d3[ICON_GOLD] gestiegen</German>
 		<Italian>Il prezzo di [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Africa è salito a %d3[ICON_GOLD]</Italian>
 		<Spanish>El precio [NUM1:del:de la:de los:de las] [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] en África ha subido a %d3[ICON_GOLD].</Spanish>
+		<Russian>Цена на [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] в Африке выросла до %d3[ICON_GOLD]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PRICE_FALL_AFRICA</Tag>
@@ -772,6 +775,7 @@
 		<German>Der Preis für [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Afrika ist auf %d3[ICON_GOLD] gefallen</German>
 		<Italian>Il prezzo di [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Africa è sceso a %d3[ICON_GOLD]</Italian>
 		<Spanish>El precio [NUM1:del:de la:de los:de las] [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] en África ha bajado a %d3[ICON_GOLD].</Spanish>
+		<Russian>Цена на [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] в Африке упала до %d3[ICON_GOLD]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PRICE_RISE_PORT_ROYAL</Tag>
@@ -781,6 +785,7 @@
 		<German>Der Preis für [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Port Royal ist auf %d3[ICON_GOLD] gestiegen</German>
 		<Italian>Il prezzo di [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] a Port Royal è salito a %d3[ICON_GOLD]</Italian>
 		<Spanish>El precio [NUM1:del:de la:de los:de las] [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] en Port Royal ha subido a %d3[ICON_GOLD].</Spanish>
+		<Russian>Цена на [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] в Порт-Ройале выросла до %d3[ICON_GOLD]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PRICE_FALL_PORT_ROYAL</Tag>
@@ -790,6 +795,7 @@
 		<German>Der Preis für [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] in Port Royal ist auf %d3[ICON_GOLD] gefallen</German>
 		<Italian>Il prezzo di [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] a Port Royal è sceso a %d3[ICON_GOLD]</Italian>
 		<Spanish>El precio [NUM1:del:de la:de los:de las] [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] en Port Royal ha bajado a %d3[ICON_GOLD].</Spanish>
+		<Russian>Цена на [COLOR_HIGHLIGHT_TEXT]%s1_yield[COLOR_REVERT] в Порт-Ройале упала до %d3[ICON_GOLD]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUY_AND_SELL_YIELD</Tag>
@@ -1132,6 +1138,7 @@
 		<Tag>TXT_KEY_TRADE_POST_MESTIZO_CREATED</Tag>
 		<English>Milord, your trading post in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] has fostered more than trade. The trader has fathered a child with a Native woman, who now wishes to live among the Europeans!</English>
 		<German>Milord, Eurer Handelsposten in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] befruchtet nicht nur den Handel. Der Händler hat einer Eingeborenen ein Kind gemacht, das nun bei den Weißen leben will!</German>
+		<Russian>Милорд, наш торговый пост в деревне [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] способствовал не только торговле. У торговца родился ребенок от туземной женщины, которая теперь хочет жить среди европейцев!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MISSION_ESTABLISHED</Tag>
@@ -1142,7 +1149,7 @@
 		<Italian>È stata fondata una missione [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Italian>
 		<Spanish>Se ha fundado una misión [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT] en [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] основали миссию в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
-        <Russian>[COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] основали миссию в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] основали миссию в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
 		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] misszió megalapítva [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] településen.</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -1410,6 +1417,7 @@
 		<German>[ICON_BULLET]%D1_Mod%% Produktion von Militäreinheiten</German>
 		<Italian>[ICON_BULLET]%D1_Mod%% di produzione nelle unità militari</Italian>
 		<Spanish>[ICON_BULLET]%D1_Mod%% a la producción de unidades militares</Spanish>
+		<Russian>[ICON_BULLET]%D1_Mod%% производство военных подразделений</Russian>
 		<Hungarian>[ICON_BULLET]%D1_Mod%% katonai egység előállítás</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -1536,6 +1544,7 @@
 		<English>[ICON_BULLET]Alternative available unit: [LINK=literal]%s1:1[\LINK]</English>
 		<Portuguese>[ICON_BULLET]Unidade alternativa disponível: [LINK=literal]%s1:1[\LINK]</Portuguese>
 		<German>[ICON_BULLET]Alternativ verfügbare Einheit: [LINK=literal]%s1:1[\LINK]</German>
+		<Russian>[ICON_BULLET]Альтернативный доступный юнит: [LINK=literal]%s1:1[\LINK]</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FATHER_NATIVE_ATTITUDE_GOOD</Tag>
@@ -2301,6 +2310,7 @@
 		<German>[ICON_BULLET]%D1%% Gründervater-Punkte</German>
 		<Italian>[ICON_BULLET]%D1%% punti Padre Fondatore</Italian>
 		<Spanish>[ICON_BULLET]%D1%% al ritmo de puntos de Padres fundadores</Spanish>
+		<Russian>[ICON_BULLET]%D1%% Очков Отцов-основателей</Russian>
 		<Hungarian>[ICON_BULLET]%D1%% Alapító Atya Pontérték</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -2434,6 +2444,7 @@
 		<German>Kein Transportgut</German>
 		<Italian>Nessun tipo di carico</Italian>
 		<Spanish>Sin tipo de cargamento</Spanish>
+		<Russian>Отсутствует тип груза</Russian>
 		<Hungarian>Nincs Szállítmánytípus</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -2961,6 +2972,7 @@
 		<German>Bürger aus Stadt werfen</German>
 		<Italian>Espelli il cittadino dall'insediamento</Italian>
 		<Spanish>Expulsar a un ciudadano de la ciudad</Spanish>
+		<Russian>Изгнать гражданина из города</Russian>
 		<Hungarian>Lakos eltávolítása a Városból</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -3054,9 +3066,8 @@
 		<Russian>[ICON_BULLET]Дает %d1 [COLOR_CYAN]продукции[COLOR_REVERT] городу при использовании</Russian>
 		<Hungarian>[ICON_BULLET]%d1 [COLOR_CYAN]Termelést[COLOR_REVERT] ad egy városnak felhasználásakor.</Hungarian>
 	</TEXT>
-<!-- ZorG. colopedia. equipment and materials for the construction of units and buildings. START -->
 	<TEXT>
-		<Tag>TXT_KEY_BUILD_CANNOT_AFFORD</Tag>
+		<Tag>TXT_KEY_BUILD_CANNOT_AFFORD</Tag> <!-- ZorG. colopedia. equipment and materials for the construction of units and buildings. -->
 		<English>[COLOR_WARNING_TEXT]Requires %d1%F2_yield[COLOR_REVERT]</English>
 		<Portuguese>[COLOR_WARNING_TEXT]Requer %d1%F2_yield[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_WARNING_TEXT]Requiert %d1%F2_yield[COLOR_REVERT]</French>
@@ -3066,7 +3077,6 @@
 		<Russian>[COLOR_WARNING_TEXT]Требуется %d1%F2_yield[COLOR_REVERT]</Russian>
 		<Hungarian>[COLOR_WARNING_TEXT]%d1%F2_yield szükséges[COLOR_REVERT]</Hungarian>
 	</TEXT>
-<!-- ZorG. colopedia. equipment and materials for the construction of units and buildings. END -->
 	<TEXT>
 		<Tag>TXT_KEY_MINIMIZED_CHOOSE_EDUCATION</Tag>
 		<English>%s2_City : A [COLOR_HIGHLIGHT_TEXT]%s1_profession[COLOR_REVERT] has graduated from the %s3_building.</English>
@@ -3152,6 +3162,7 @@
 		<German>[TAB]%d1%% Bestechung[TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</German>
 		<Italian>[TAB]%d1%% Corruzione[TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</Italian>
 		<Spanish>[TAB]%d1%% Soborno[TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</Spanish>
+		<Russian>[TAB]%d1%% Взятка[TAB][TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</Russian>
 		<Hungarian>[TAB]%d1%% Megvesztegetés[TAB][TAB][TAB][COLOR_WARNING_TEXT]%d2[COLOR_REVERT][ICON_GOLD]</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -3172,6 +3183,7 @@
 		<German>[PARAGRAPH:1]%d1%F2 zu je %d3[ICON_GOLD] für insgesamt %d4[ICON_GOLD] gekauft</German>
 		<Italian>[PARAGRAPH:1]Acquisto di %d1%F2 @ %d3[ICON_GOLD] per %d4[ICON_GOLD]</Italian>
 		<Spanish>[PARAGRAPH:1]Compra de %d1 %F2 a %d3[ICON_GOLD] por un total de %d4[ICON_GOLD]</Spanish>
+		<Russian>[PARAGRAPH:1]%d1%F2 приобретено по @ %d3[ICON_GOLD] за шт, всего %d4[ICON_GOLD]</Russian>
 		<Hungarian>[PARAGRAPH:1]%d1%F2 várárolva %d3[ICON_GOLD] áron %d4[ICON_GOLD]-ért</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -3483,6 +3495,7 @@
 		<German>Ihr Computer erfüllt nicht die Mindestanforderungen. Colonization wird mit diesem Hardware-Setup nicht laufen.</German>
 		<Italian>Il tuo computer non raggiunge i requisiti minimi. Colonization non può funzionare su questa configurazione hardware.</Italian>
 		<Spanish>El ordenador no cumple los requisitos mínimos. Colonization no funcionará con esta configuración de hardware.</Spanish>
+		<Russian>Ваш ПК не соответствует минимальным требованиям. Колонизация не будет работать на данной конфигурации оборудования.</Russian>
 		<Hungarian>A számítógéped a minimális követelmények alatt van. A Colonization nem fog futni ezen a konfiguráción.</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -3493,6 +3506,7 @@
 		<German>Colonization-Pitboss-Version: %s1_Version</German>
 		<Italian>Colonization Pitboss versione: %s1_Version</Italian>
 		<Spanish>Versión Pitboss de Colonization: %s1_Version</Spanish>
+		<Russian>Версия Colonization Pitboss: %s1_Version</Russian>
 		<Hungarian>Colonization Pitboss verzió: %s1_Version</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -4203,6 +4217,7 @@
 		<German>Transaktionen</German>
 		<Italian>Transazioni</Italian>
 		<Spanish>Transacciones</Spanish>
+		<Russian>Транзакции</Russian>
 		<Hungarian>Tranzakciók</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -4353,6 +4368,7 @@
 		<German>Bitte vor Aktivierung des Alarms eine gültige Zeit einstellen</German>
 		<Italian>Imposta un orario valido, prima di attivare l'allarme</Italian>
 		<Spanish>Pon una hora válida antes de activar o desactivar la alarma</Spanish>
+		<Russian>Пожалуйста, установите действительное время перед включением будильника.</Russian>
 		<Hungarian>Kérlek, állíts be egy érvényes időt az ébresztő használata előtt!</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -4363,6 +4379,7 @@
 		<German>Dateinamen dürfen die folgenden Zeichen nicht enthalten:[NEWLINE]: * ? " &lt; &gt; |</German>
 		<Italian>Il nome di un file non può contenere i seguenti caratteri:[NEWLINE]: * ? " &lt; &gt; |</Italian>
 		<Spanish>Un archivo no puede contener ninguno de los caracteres siguientes:[NEWLINE]: * ? " &lt; &gt; |</Spanish>
+		<Russian>Имя файла не может содержать ни одного из следующих символов: [NEWLINE]: * ? " &lt; &gt; |</Russian>
 		<Hungarian>A fájlnév nem tartalmazhatja az alábbi karaktereket:[NEWLINE]: * ? " &lt; &gt; |</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -4534,267 +4551,272 @@
 		<English>Achievements</English>
 		<Portuguese>Conquistas</Portuguese>
 		<German>Errungenschaften</German>
-		<Russian/>
+		<Russian>Достижения</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_BODY_TITLE</Tag>
 		<English>Achievement Text</English>
 		<Portuguese>Texto de conquista</Portuguese>
 		<German>Text für diese Errungenschaft</German>
-		<Russian/>
+		<Russian>Текст достижения</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_OR</Tag>
 		<English>or</English>
 		<Portuguese>ou</Portuguese>
 		<German>oder</German>
-		<Russian/>
+		<Russian>или</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL</Tag>
 		<English>All</English>
 		<Portuguese>Todos</Portuguese>
 		<German>Alle</German>
-		<Russian/>
+		<Russian>Все</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_UNITS</Tag>
 		<English>Units</English>
 		<Portuguese>Unidades</Portuguese>
 		<German>Einheiten</German>
-		<Russian/>
+		<Russian>Юниты</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_BUILDINGS</Tag>
 		<English>Buildings</English>
 		<Portuguese>Edifícios</Portuguese>
 		<German>Gebäude</German>
-		<Russian/>
+		<Russian>Строения</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_PROFESSIONS</Tag>
 		<English>Professions</English>
 		<Portuguese>Profissões</Portuguese>
 		<German>Berufe</German>
-		<Russian/>
+		<Russian>Профессии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL_UNITS</Tag>
 		<English>All Units</English>
 		<Portuguese>Todas as unidades</Portuguese>
 		<German>Alle Einheiten</German>
+		<Russian>Все юниты</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL_BUILDINGS</Tag>
 		<English>All Buildings</English>
 		<Portuguese>Todos os edifícios</Portuguese>
 		<German>Alle Gebäude</German>
+		<Russian>Все строения</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL_PROFESSIONS</Tag>
 		<English>All Professions</English>
 		<Portuguese>Todas as profissões</Portuguese>
 		<German>Alle Berufe</German>
+		<Russian>Все профессии</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL_GOODS</Tag>
 		<English>All Goods</English>
 		<Portuguese>Todos os produtos</Portuguese>
 		<German>Alle Waren</German>
+		<Russian>Все товары</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_ALL_MISC</Tag>
 		<English>All Miscellaneous</English>
 		<Portuguese>Todos Diversos</Portuguese>
 		<German>Alles Sonstige</German>
+		<Russian>Всё остальное</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_GOODS</Tag>
 		<English>Goods</English>
 		<Portuguese>Bens</Portuguese>
 		<German>Waren</German>
-		<Russian/>
+		<Russian>Товары</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_MISC</Tag>
 		<English>Miscellaneous</English>
 		<Portuguese>Diversos</Portuguese>
 		<German>Sonstige</German>
-		<Russian/>
+		<Russian>Прочее</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_TRADED_GOODS</Tag>
 		<English>Traded goods</English>
 		<Portuguese>Bens comercializados</Portuguese>
 		<German>Gehandelte Waren</German>
-		<Russian/>
+		<Russian>Торговые товары</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_MISC_LAND_DISCOVERED</Tag>
 		<English>Discover land</English>
 		<Portuguese>Descubra a terra</Portuguese>
 		<German>Land entdecken</German>
-		<Russian/>
+		<Russian>Исследование земли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_MISC_DISCOVER_EAST</Tag>
 		<English>Reach eastern border</English>
 		<Portuguese>Alcance a fronteira leste</Portuguese>
 		<German>Östlichen Kartenrand erreichen</German>
-		<Russian/>
+		<Russian>Достичь восточной границы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_MISC_DISCOVER_WEST</Tag>
 		<English>Reach western border</English>
 		<Portuguese>Alcance a fronteira oeste</Portuguese>
 		<German>Westlichen Kartenrand erreichen</German>
-		<Russian/>
+		<Russian>Достичь западной границы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_MISC_NUM_COLONIES</Tag>
 		<English>Found colonies</English>
 		<Portuguese>Colônias encontradas</Portuguese>
 		<German>Siedlungen gründen</German>
-		<Russian/>
+		<Russian>Основание колоний</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_MISC_EURO_CONTACTS</Tag>
 		<English>Meet European nations</English>
 		<Portuguese>Conheça as nações europeias</Portuguese>
 		<German>Europäische Nationen treffen</German>
-		<Russian/>
+		<Russian>Встреча с европейскими странами</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_MISC_NATIVE_CONTACTS</Tag>
 		<English>Meet native tribes</English>
 		<Portuguese>Conheça tribos nativas</Portuguese>
 		<German>Eingeborenenstämme treffen</German>
-		<Russian/>
+		<Russian>Встреча с индейцами</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_MISC_COMBATS_WON</Tag>
 		<English>Win combats</English>
 		<Portuguese>Ganhe combates</Portuguese>
 		<German>Kämpfe gewinnen</German>
-		<Russian/>
+		<Russian>Победа в сражениях</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_MISC_SEA_COMBATS_WON</Tag>
 		<English>Win sea combats</English>
 		<Portuguese>Vença combates navais</Portuguese>
 		<German>Seekämpfe gewinnen</German>
-		<Russian/>
+		<Russian>Победа в морских сражениях</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_CATEGORY</Tag>
 		<English>Category</English>
 		<Portuguese>Categoria</Portuguese>
 		<German>Kategorie</German>
-		<Russian/>
+		<Russian>Категории</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_FILTER_VALUE</Tag>
 		<English>Entry</English>
 		<Portuguese>Entrada</Portuguese>
 		<German>Eintrag</German>
-		<Russian/>
+		<Russian>Вход?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQUIREMENTS</Tag>
 		<English>Requirements</English>
 		<Portuguese>Requisitos</Portuguese>
 		<German>Voraussetzungen</German>
-		<Russian/>
+		<Russian>Требования</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_COLONIES</Tag>
 		<English>Found %d1 colonies</English>
 		<Portuguese>Encontradas %d1 colônias</Portuguese>
 		<German>Gründet %d1 Siedlungen</German>
-		<Russian/>
+		<Russian>Основание %d1 колоний</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_EURO_CONTACTS</Tag>
 		<English>Meet %d1 European nations</English>
 		<Portuguese>Conheça %d1 nações europeias</Portuguese>
 		<German>Trefft %d1 europäische Nationen</German>
-		<Russian/>
+		<Russian>Встреча %d1 европейских наций</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_NATIVE_CONTACTS</Tag>
 		<English>Meet %d1 native tribes</English>
 		<Portuguese>Conheça %d1 tribos nativas</Portuguese>
 		<German>Trefft %d1 Eingeborenenstämme</German>
-		<Russian/>
+		<Russian>Встреча %d1 туземных племён</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_GOODS</Tag>
 		<English>Trade %d1 goods</English>
 		<Portuguese>Negocie %d1 mercadorias</Portuguese>
 		<German>Handelt %d1 Waren</German>
-		<Russian/>
+		<Russian>Торговля %d1 товарами</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_COMBATS</Tag>
 		<English>Win %d1 combats</English>
 		<Portuguese>Vença %d1 combates</Portuguese>
 		<German>Gewinnt %d1 Kämpfe</German>
-		<Russian/>
+		<Russian>Выиграть %d1 сражений</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_SEA_COMBATS</Tag>
 		<English>Win %d1 sea combats</English>
 		<Portuguese>Vença %d1 combates navais</Portuguese>
 		<German>Gewinnt %d1 Seekämpfe</German>
-		<Russian/>
+		<Russian>Выиграть %d1 морских сражений</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_DISCOVER_LAND</Tag>
 		<English>Discover land</English>
 		<Portuguese>Descubra a terra</Portuguese>
 		<German>Entdeckt Land</German>
-		<Russian/>
+		<Russian>Исследование Земли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_DISCOVER_EAST</Tag>
 		<English>Reach the eastern border</English>
 		<Portuguese>Alcance a fronteira oriental</Portuguese>
 		<German>Erreicht den östlichen Kartenrand</German>
-		<Russian/>
+		<Russian>Достигните восточной границы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_DISCOVER_WEST</Tag>
 		<English>Reach the western border</English>
 		<Portuguese>Alcance a fronteira oeste</Portuguese>
 		<German>Erreicht den westlichen Kartenrand</German>
-		<Russian/>
+		<Russian>Достигните западной границы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_UNITS</Tag>
 		<English>Recruit %d1 %s2</English>
 		<Portuguese>Recrutar %d1 %s2</Portuguese>
 		<German>Rekrutiert %d1 %s2</German>
-		<Russian/>
+		<Russian>Нанять %d1 %s2</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_BUILDINGS</Tag>
 		<English>Build %d1 %s2</English>
 		<Portuguese>Construir %d1 %s2</Portuguese>
 		<German>Errichtet %d1 %s2</German>
-		<Russian/>
+		<Russian>Построить %d1 %s2</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_PROFESSIONS</Tag>
 		<English>Have %d1 %s2</English>
 		<Portuguese>Tenha %d1 %s2</Portuguese>
 		<German>Verfügt über %d1 %s2</German>
-		<Russian/>
+		<Russian>Иметь %d1 %s2</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_ACHIEVE_REQ_YIELD</Tag>
 		<English>Produce %d1 %s2</English>
 		<Portuguese>Produzir %d1 %s2</Portuguese>
 		<German>Produziert %d1 %s2</German>
-		<Russian/>
+		<Russian>Произвести %d1 %s2</Russian>
 	</TEXT>
 </Civ4GameText>
