@@ -259,6 +259,8 @@ protected:
 
 	std::vector<BonusTypes> m_aeRevealedBonuses;
 	void testFoundingFather();
+	bool isBestTeamForFather(FatherTypes eFather) const;
+	void offerNextFoundingFather();
 	void cancelDefensivePacts(TeamTypes eEndingTeam);
 	void declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanTypes eWarPlan, bool bPlaySound);
 

@@ -159,6 +159,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -272,6 +278,16 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_FURNITURE</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -388,6 +404,16 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_FURNITURE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -513,6 +539,28 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_FURNITURE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_PADDED_FURNITURE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_LUXURY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -634,6 +682,32 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_WHALE_OIL</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_FURNITURE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_PADDED_FURNITURE</YieldType>
+					<iYieldDemand>15</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_LUXURY_GOODS</YieldType>
+					<iYieldDemand>15</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -800,7 +874,7 @@
 			<iBombardDefense>0</iBombardDefense>
 			<iAsset>50</iAsset>
 			<iPower>0</iPower>
-			<iYieldStorage>600</iYieldStorage>
+			<iYieldStorage>1000</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
@@ -1985,6 +2059,20 @@
 			</YieldChanges>
 			<YieldModifiers/>
 			<iEntertainmentGoldModifier>100</iEntertainmentGoldModifier>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BEER</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_HOOCH</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -2084,6 +2172,20 @@
 			</YieldChanges>
 			<YieldModifiers/>
 			<iEntertainmentGoldModifier>150</iEntertainmentGoldModifier>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BEER</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_HOOCH</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -2187,6 +2289,24 @@
 			</YieldChanges>
 			<YieldModifiers/>
 			<iEntertainmentGoldModifier>200</iEntertainmentGoldModifier>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BEER</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_HOOCH</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -2291,6 +2411,24 @@
 			</YieldChanges>
 			<YieldModifiers/>
 			<iEntertainmentGoldModifier>250</iEntertainmentGoldModifier>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BEER</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_HOOCH</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -2318,6 +2456,83 @@
 			<iHotKeyPriority>0</iHotKeyPriority>
 			<iTeachLevel>0</iTeachLevel>
 			<iAICitySize>15</iAICitySize>
+		</BuildingInfo>
+		<BuildingInfo>
+			<Type>BUILDING_NATIVE_AMERICA_GATHERING_PLACE</Type>
+			<BuildingClass>BUILDINGCLASS_TAVERN</BuildingClass>
+			<SpecialBuildingType>SPECIALBUILDING_TAVERN</SpecialBuildingType>
+			<iSpecialBuildingPriority>0</iSpecialBuildingPriority>
+			<Description>TXT_KEY_BUILDING_NATIVE_AMERICA_GATHERING_PLACE</Description>
+			<Civilopedia>TXT_KEY_BUILDING_NATIVE_AMERICA_GATHERING_PLACE_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_NATIVE_AMERICA_GATHERING_PLACE_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_NATIVE_AMERICA_GATHERING_PLACE</ArtDefineTag>
+			<MovieDefineTag>NONE</MovieDefineTag>
+			<VictoryPrereq>NONE</VictoryPrereq>
+			<FreeStartEra>NONE</FreeStartEra>
+			<MaxStartEra>NONE</MaxStartEra>
+			<ProductionTraits/>
+			<FreePromotion>NONE</FreePromotion>
+			<bGraphicalOnly>0</bGraphicalOnly>
+			<bWorksWater>0</bWorksWater>
+			<bWater>0</bWater>
+			<bRiver>0</bRiver>
+			<bCapital>0</bCapital>
+			<bNationalWonder>0</bNationalWonder>
+			<bNeverCapture>0</bNeverCapture>
+			<bCenterInCity>0</bCenterInCity>
+			<iAIWeight>500</iAIWeight>
+			<YieldCosts>
+				<YieldCost>
+					<YieldType>YIELD_HAMMERS</YieldType>
+					<iCost>15</iCost>
+				</YieldCost>
+			</YieldCosts>
+			<iHurryCostModifier>0</iHurryCostModifier>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+			<iProfessionOutput>5</iProfessionOutput>
+			<iMaxWorkers>5</iMaxWorkers>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>100</iConquestProb>
+			<iCitiesPrereq>0</iCitiesPrereq>
+			<iTeamsPrereq>0</iTeamsPrereq>
+			<iLevelPrereq>0</iLevelPrereq>
+			<iMinLatitude>0</iMinLatitude>
+			<iMaxLatitude>90</iMaxLatitude>
+			<iExperience>0</iExperience>
+			<iFoodKept>0</iFoodKept>
+			<iHealRateChange>0</iHealRateChange>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iDefense>0</iDefense>
+			<iBombardDefense>0</iBombardDefense>
+			<iAsset>50</iAsset>
+			<iPower>0</iPower>
+			<iYieldStorage>100</iYieldStorage>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<LandPlotYieldChanges/>
+			<SeaPlotYieldChanges/>
+			<RiverPlotYieldChanges/>
+			<YieldChanges>
+				<YieldChange>
+					<YieldType>YIELD_CULTURE</YieldType>
+					<iYieldChange>5</iYieldChange>
+				</YieldChange>
+			</YieldChanges>
+			<YieldModifiers/>
+			<ConstructSound/>
+			<UnitCombatFreeExperiences/>
+			<DomainFreeExperiences/>
+			<DomainProductionModifiers/>
+			<PrereqBuildingClasses/>
+			<BuildingClassNeededs/>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<iTeachLevel>0</iTeachLevel>
+			<iAICitySize>1</iAICitySize>
 		</BuildingInfo>
 		<BuildingInfo>
 			<Type>BUILDING_NATIVE_AMERICA_TOTEM</Type>
@@ -8046,6 +8261,10 @@
 					<YieldType>YIELD_HORSES</YieldType>
 					<iModifier>50</iModifier>
 				</YieldModifier>
+				<YieldModifier>
+					<YieldType>YIELD_MILK</YieldType>
+					<iModifier>50</iModifier>
+				</YieldModifier>
 			</YieldModifiers>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
@@ -8145,6 +8364,10 @@
 				</YieldModifier>
 				<YieldModifier>
 					<YieldType>YIELD_GEESE</YieldType>
+					<iModifier>20</iModifier>
+				</YieldModifier>
+				<YieldModifier>
+					<YieldType>YIELD_MILK</YieldType>
 					<iModifier>20</iModifier>
 				</YieldModifier>
 			</YieldModifiers>
@@ -8269,6 +8492,10 @@
 				</YieldModifier>
 				<YieldModifier>
 					<YieldType>YIELD_GEESE</YieldType>
+					<iModifier>25</iModifier>
+				</YieldModifier>
+				<YieldModifier>
+					<YieldType>YIELD_MILK</YieldType>
 					<iModifier>25</iModifier>
 				</YieldModifier>
 			</YieldModifiers>
@@ -9618,6 +9845,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -9717,6 +9950,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -9833,6 +10072,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -9954,6 +10199,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>15</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -10080,6 +10331,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_WINE</YieldType>
+					<iYieldDemand>20</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11208,6 +11465,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11312,6 +11575,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11425,6 +11694,12 @@
 					<iModifier>50</iModifier>
 				</YieldModifier>
 			</YieldModifiers>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_RUM</YieldType>
+					<iYieldDemand>15</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11521,6 +11796,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11625,6 +11906,12 @@
 				</YieldChange>
 			</YieldChanges>
 			<YieldModifiers/>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11738,6 +12025,12 @@
 					<iModifier>50</iModifier>
 				</YieldModifier>
 			</YieldModifiers>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>15</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -11856,6 +12149,12 @@
 					<iModifier>100</iModifier>
 				</YieldModifier>
 			</YieldModifiers>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_HOUSEHOLD_GOODS</YieldType>
+					<iYieldDemand>15</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<ConstructSound/>
 			<UnitCombatFreeExperiences/>
 			<DomainFreeExperiences/>
@@ -20834,6 +21133,140 @@
 			<iYieldStorage>0</iYieldStorage>
 			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
 			<fVisibilityPriority>1000.0</fVisibilityPriority>
+			<LandPlotYieldChanges/>
+			<SeaPlotYieldChanges/>
+			<RiverPlotYieldChanges/>
+			<YieldChanges/>
+			<YieldModifiers/>
+			<ConstructSound/>
+			<UnitCombatFreeExperiences/>
+			<DomainFreeExperiences/>
+			<DomainProductionModifiers/>
+			<PrereqBuildingClasses/>
+			<BuildingClassNeededs/>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<iTeachLevel>0</iTeachLevel>
+			<iAICitySize>1</iAICitySize>
+		</BuildingInfo>
+		<BuildingInfo>
+			<Type>BUILDING_NATIVE_MISSION_STATION</Type>
+			<BuildingClass>BUILDINGCLASS_NATIVE_MISSION_STATION</BuildingClass>
+			<SpecialBuildingType>NONE</SpecialBuildingType>
+			<iSpecialBuildingPriority>0</iSpecialBuildingPriority>
+			<Description>TXT_KEY_BUILDING_NATIVE_MISSION_STATION</Description>
+			<Civilopedia>TXT_KEY_BUILDING_NATIVE_MISSION_STATION_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_NATIVE_MISSION_STATION_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_NATIVE_MISSION_STATION</ArtDefineTag>
+			<MovieDefineTag>NONE</MovieDefineTag>
+			<VictoryPrereq>NONE</VictoryPrereq>
+			<FreeStartEra>NONE</FreeStartEra>
+			<MaxStartEra>NONE</MaxStartEra>
+			<ProductionTraits/>
+			<FreePromotion>NONE</FreePromotion>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<bWorksWater>0</bWorksWater>
+			<bWater>0</bWater>
+			<bRiver>0</bRiver>
+			<bCapital>0</bCapital>
+			<bNationalWonder>0</bNationalWonder>
+			<bNeverCapture>0</bNeverCapture>
+			<bCenterInCity>0</bCenterInCity>
+			<iAIWeight>0</iAIWeight>
+			<YieldCosts/>
+			<iHurryCostModifier>0</iHurryCostModifier>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+			<iProfessionOutput>0</iProfessionOutput>
+			<iMaxWorkers>0</iMaxWorkers>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>0</iConquestProb>
+			<iCitiesPrereq>0</iCitiesPrereq>
+			<iTeamsPrereq>0</iTeamsPrereq>
+			<iLevelPrereq>0</iLevelPrereq>
+			<iMinLatitude>0</iMinLatitude>
+			<iMaxLatitude>90</iMaxLatitude>
+			<iExperience>0</iExperience>
+			<iFoodKept>0</iFoodKept>
+			<iHealRateChange>0</iHealRateChange>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iDefense>0</iDefense>
+			<iBombardDefense>0</iBombardDefense>
+			<iAsset>0</iAsset>
+			<iPower>0</iPower>
+			<iYieldStorage>0</iYieldStorage>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
+			<LandPlotYieldChanges/>
+			<SeaPlotYieldChanges/>
+			<RiverPlotYieldChanges/>
+			<YieldChanges/>
+			<YieldModifiers/>
+			<ConstructSound/>
+			<UnitCombatFreeExperiences/>
+			<DomainFreeExperiences/>
+			<DomainProductionModifiers/>
+			<PrereqBuildingClasses/>
+			<BuildingClassNeededs/>
+			<HotKey/>
+			<bAltDown>0</bAltDown>
+			<bShiftDown>0</bShiftDown>
+			<bCtrlDown>0</bCtrlDown>
+			<iHotKeyPriority>0</iHotKeyPriority>
+			<iTeachLevel>0</iTeachLevel>
+			<iAICitySize>1</iAICitySize>
+		</BuildingInfo>
+		<BuildingInfo>
+			<Type>BUILDING_NATIVE_TRADE_POST</Type>
+			<BuildingClass>BUILDINGCLASS_NATIVE_TRADE_POST</BuildingClass>
+			<SpecialBuildingType>NONE</SpecialBuildingType>
+			<iSpecialBuildingPriority>0</iSpecialBuildingPriority>
+			<Description>TXT_KEY_BUILDING_NATIVE_TRADE_POST</Description>
+			<Civilopedia>TXT_KEY_BUILDING_NATIVE_TRADE_POST_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_BUILDING_NATIVE_TRADE_POST_STRATEGY</Strategy>
+			<ArtDefineTag>ART_DEF_BUILDING_NATIVE_TRADE_POST</ArtDefineTag>
+			<MovieDefineTag>NONE</MovieDefineTag>
+			<VictoryPrereq>NONE</VictoryPrereq>
+			<FreeStartEra>NONE</FreeStartEra>
+			<MaxStartEra>NONE</MaxStartEra>
+			<ProductionTraits/>
+			<FreePromotion>NONE</FreePromotion>
+			<bGraphicalOnly>1</bGraphicalOnly>
+			<bWorksWater>0</bWorksWater>
+			<bWater>0</bWater>
+			<bRiver>0</bRiver>
+			<bCapital>0</bCapital>
+			<bNationalWonder>0</bNationalWonder>
+			<bNeverCapture>0</bNeverCapture>
+			<bCenterInCity>0</bCenterInCity>
+			<iAIWeight>0</iAIWeight>
+			<YieldCosts/>
+			<iHurryCostModifier>0</iHurryCostModifier>
+			<iAdvancedStartCost>-1</iAdvancedStartCost>
+			<iAdvancedStartCostIncrease>0</iAdvancedStartCostIncrease>
+			<iProfessionOutput>0</iProfessionOutput>
+			<iMaxWorkers>0</iMaxWorkers>
+			<iMinAreaSize>-1</iMinAreaSize>
+			<iConquestProb>0</iConquestProb>
+			<iCitiesPrereq>0</iCitiesPrereq>
+			<iTeamsPrereq>0</iTeamsPrereq>
+			<iLevelPrereq>0</iLevelPrereq>
+			<iMinLatitude>0</iMinLatitude>
+			<iMaxLatitude>90</iMaxLatitude>
+			<iExperience>0</iExperience>
+			<iFoodKept>0</iFoodKept>
+			<iHealRateChange>0</iHealRateChange>
+			<iMilitaryProductionModifier>0</iMilitaryProductionModifier>
+			<iDefense>0</iDefense>
+			<iBombardDefense>0</iBombardDefense>
+			<iAsset>0</iAsset>
+			<iPower>0</iPower>
+			<iYieldStorage>0</iYieldStorage>
+			<iStorageLossSellPercentage>0</iStorageLossSellPercentage>
+			<fVisibilityPriority>1.0</fVisibilityPriority>
 			<LandPlotYieldChanges/>
 			<SeaPlotYieldChanges/>
 			<RiverPlotYieldChanges/>

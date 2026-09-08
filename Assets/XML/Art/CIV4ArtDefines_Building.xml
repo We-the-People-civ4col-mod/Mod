@@ -931,6 +931,18 @@
 			<Button>,Art/colonization_atlas_buildings.dds,2,9</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_NATIVE_AMERICA_GATHERING_PLACE</Type>
+			<LSystem>LSYSTEM_1x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR3.dds,1,1</CityTexture>
+			<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+			<fScale>1.5</fScale>
+			<fInterfaceScale>0.7</fInterfaceScale>
+			<NIF>Art/Structures/improvements/campfire/campfire_small.nif</NIF>
+			<KFM/>
+			<Button>,Art/colonization_atlas_professions_bonus.dds,4,16</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_NATIVE_AMERICA_TOTEM</Type>
 			<LSystem>LSYSTEM_1x2</LSystem>
 			<bAnimated>0</bAnimated>
@@ -953,6 +965,30 @@
 			<NIF>Art/Structures/Buildings/Aztec Altar/Aztec_altar.nif</NIF>
 			<KFM/>
 			<Button>,Art/colonization_atlas_buildings.dds,8,7</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_NATIVE_MISSION_STATION</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR3.dds,1,1</CityTexture>
+			<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+			<fScale>0.7</fScale>
+			<fInterfaceScale>1.00</fInterfaceScale>
+			<NIF>Art/Structures/Improvements/monastery/monastery_kl.nif</NIF>
+			<KFM/>
+			<Button>,Art/colonization_atlas_buildings.dds,5,14</Button>
+		</BuildingArtInfo>
+		<BuildingArtInfo>
+			<Type>ART_DEF_BUILDING_NATIVE_TRADE_POST</Type>
+			<LSystem>LSYSTEM_2x2</LSystem>
+			<bAnimated>0</bAnimated>
+			<CityTexture>,Art/Interface/Screens/City_Management/city_buildings_RaR3.dds,1,1</CityTexture>
+			<CitySelectedTexture>,IS,FILLER,TEXT</CitySelectedTexture>
+			<fScale>0.8</fScale>
+			<fInterfaceScale>1.00</fInterfaceScale>
+			<NIF>Art/Structures/Buildings/trade_post/trade_post.nif</NIF>
+			<KFM/>
+			<Button>,Art/Interface/Buttons/Unit_Resource_Colonization_Atlas.dds,1,8</Button>
 		</BuildingArtInfo>
 		<BuildingArtInfo>
 			<Type>ART_DEF_BUILDING_MARKET</Type>

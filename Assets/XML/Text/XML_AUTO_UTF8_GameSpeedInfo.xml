@@ -3,6 +3,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_QUICK</Tag>
 		<English>Quick</English>
+		<Portuguese>Rápido</Portuguese>
 		<French>Rapide</French>
 		<German>Schnell</German>
 		<Italian>Veloce</Italian>
@@ -12,6 +13,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_QUICK_HELP</Tag>
 		<English>(16 months/turn) - Slightly faster game speed : The game data is balanced to shorten the game duration.</English>
+		<Portuguese>(16 meses/turno) - Velocidade de jogo um pouco mais rápida: Os dados do jogo são balanceados para encurtar a duração do jogo.</Portuguese>
 		<French>(16 mois/tour) - Vitesse de jeu légèrement plus rapide. Les paramètres de jeu sont rééquilibrés afin de réduire la durée de la partie.</French>
 		<German>(16 Monate/Zug) - Leicht schnelleres Spieltempo : Die Spieldaten werden ausbalanciert, um die Spieldauer zu verkürzen.</German>
 		<Italian>(16 mesi/turno) - Velocità di gioco leggermente superiore: I dati di gioco sono stati bilanciati per ridurre la durata del gioco.</Italian>
@@ -20,6 +22,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_NORMAL</Tag>
 		<English>Normal</English>
+		<Portuguese>Normais</Portuguese>
 		<French>Normale</French>
 		<German>Normal</German>
 		<Italian>Normale</Italian>
@@ -29,6 +32,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_NORMAL_HELP</Tag>
 		<English>(12 months/turn) - Normal game speed</English>
+		<Portuguese>(12 meses/turno) - Velocidade normal do jogo</Portuguese>
 		<French>(12 mois/tour) - Vitesse de jeu normale</French>
 		<German>(12 Monate/Zug) - Normales Spieltempo</German>
 		<Italian>(12 mesi/turno) - Velocità di gioco normale</Italian>
@@ -37,6 +41,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_EPIC</Tag>
 		<English>Epic</English>
+		<Portuguese>Épico</Portuguese>
 		<French>Épique</French>
 		<German>Episch</German>
 		<Italian>Epica</Italian>
@@ -46,6 +51,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_EPIC_HELP</Tag>
 		<English>(6 months/turn) - Slow Game Speed : The game data is balanced to significantly extend the game duration.</English>
+		<Portuguese>(6 meses/turno) - Velocidade lenta do jogo: Os dados do jogo são balanceados para estender significativamente a duração do jogo.</Portuguese>
 		<French>(6 mois/tour) - Vitesse de jeu lente. Les paramètres de jeu sont rééquilibrés afin de prolonger sensiblement la durée de la partie.</French>
 		<German>(6 Monate/Zug)- Langsames Spieltempo : Die Spieldaten werden ausbalanciert, um die Spieldauer deutlich zu verlängern.</German>
 		<Italian>(6 mesi/turno) - Velocità di gioco lenta : I dati di gioco sono bilanciati per prolungare in modo significativo la durata del gioco.</Italian>
@@ -54,6 +60,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_MARATHON</Tag>
 		<English>Marathon</English>
+		<Portuguese>Maratona</Portuguese>
 		<French>Marathon</French>
 		<German>Marathon</German>
 		<Italian>Maratona</Italian>
@@ -63,6 +70,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_MARATHON_HELP</Tag>
 		<English>(4 months/turn) - Extremely slow game speed : The game data is balanced to significantly extend the game duration.</English>
+		<Portuguese>(4 meses/turno) - Velocidade de jogo extremamente lenta: Os dados do jogo são balanceados para prolongar significativamente a duração do jogo.</Portuguese>
 		<French>(4 mois/tour) - Vitesse de jeu très lente. Les paramètres de jeu sont rééquilibrés afin de prolonger très nettement la durée de la partie.</French>
 		<German>(4 Monate/Zug) - Extrem langsames Spieltempo : Die Spieldaten werden ausbalanciert, um die Spieldauer deutlich zu verlängern.</German>
 		<Italian>(4 mesi/turno) - Velocità di gioco incredibilmente lunga : I dati di gioco sono bilanciati per prolungare in modo significativo la durata del gioco. </Italian>
@@ -71,6 +79,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_BUILDUP_MODE</Tag>
 		<English>Buildup mode</English>
+		<Portuguese>Modo de acumulação</Portuguese>
 		<French>Mode bâtisseur</French>
 		<German>Aufbauspiel</German>
 		<Russian>Строитель (1 месяц/ход)</Russian>
@@ -78,6 +87,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_GAMESPEED_TAC_BUILDUP_MODE_HELP</Tag>
 		<English>(1 month/turn) - Extremely slow game speed for buildup player: The game data is balanced to significantly extend the game duration. However, not everything is simply scaled up. The speed is intended to give builders much more time to build the perfect colony. However, construction, training and growth go faster.</English>
+		<Portuguese>(1 mês/turno) - Velocidade de jogo extremamente lenta para jogadores em formação: Os dados do jogo são balanceados para estender significativamente a duração do jogo. No entanto, nem tudo é simplesmente ampliado. A velocidade visa dar aos construtores muito mais tempo para construir a colônia perfeita. Porém, a construção, a formação e o crescimento são mais rápidos.</Portuguese>
 		<French>(1 mois/tour) - Vitesse de jeu extrêmement lente. Certains paramètres de jeu sont rééquilibrés afin de prolonger énormément la durée de la partie - cependant tout n'est pas rééchelonné. Ce mode de jeu vise à laisser un temps important pour bâtir la colonie parfaite, alors que la construction, la formation et la croissance vont plus vite.</French>
 		<German>(1 Monate/Zug) - Extrem langsames Spieltempo für Aufbauspieler: Die Spieldaten werden ausbalanciert, um die Spieldauer deutlich zu verlängern. Allerdings werden nicht alle Modifier einfach hochskaliert. Die Geschwindigkeit ist dazu vorgesehen, Aufbauspielern viel mehr Zeit für die perfekte Kolonie zu geben. Aufbau, Ausbildung und Wachstum gehen aber schneller.</German>
 	</TEXT>

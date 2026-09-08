@@ -122,7 +122,7 @@
 		padding-top: 60px; /* Adjust this value as needed */
 		margin-top: -60px;
 		height: 100%;
-	} 
+	}
 
 </style>
 
@@ -178,7 +178,7 @@
 					<li><a href="#gameCoreNotLoadedEnglish">CvGameCoreDLL.dll not loaded?</a></li>
 				</ul>
 			</li>
-			
+
 			<li><a href="#whatEnglish">What is the Mod About?</a></li>
 		</ul>
 		<h3 id="aboutEnglish">Foreword</h3>
@@ -279,15 +279,15 @@
 					<li>CD: Install the <a href="https://forums.civfanatics.com/resources/civilization-iv-colonization-patch-v1-01f.11915/">official 1.01f patch</a>.</li>
 			</ul></p>
 			</section>
-		
+
 			<section id="protonEnglish">
 				<p>If you want to play on linux, you should read <a href="https://forums.civfanatics.com/threads/has-anyone-gotten-we-the-people-working-on-steam-deck.681177/#post-16419389">this forum post about proton settings</a>.</p>
 			</section>
-		
+
 			<section id="installManuallyEnglish">
 				<h4>Installing the mod</h4>
 				<p>This guide assumes the mod's name to be WeThePeople. See further down on mod naming as there is support for having multiple versions installed.</p>
-		
+
 				<p><ul>
 					<li>Navigate to the Colonization installation directory (the one with colonization.exe)</li>
 					<li><p>Open the folder "Mods". Create it if it's not already there</p>
@@ -299,12 +299,12 @@
 					<ul>
 						<li>double click <strong>Mods/WeThePeople/setup.bat</strong></li>
 						<li>copy content of <strong>Mods/WeThePeople/Copy to Colonization.exe</strong> to the colonization game dir (the one with Mods and Colonization.exe)</li>
-					</ul>		
+					</ul>
 					</li>
 				</ul>
 				<p>You can name the mod whatever you want and have multiple mods for whatever reason you want (different versions etc). You should however be aware that it's easier to use a consistent name as it affects <a href="#savegameIssuesEnglish">savegame loading</a> and <a href="#multiplayerEnglish">multiplayer</a>.</p>
 			</section>
-		
+
 			<section id="loadingModEnglish">
 				<h4>Loading the mod</h4>
 				<ul>
@@ -316,7 +316,7 @@
 				</ul>
 				<p>Once Colonization has started with the mod loaded, it will remember that mod and start it by default from now on. This is a feature of our mod and doesn't apply to other mods.</p>
 			</section>
-				
+
 			<section id="unloadingEnglish">
 				<h4>Unloading the mod</h4>
 				<p>If you for some reason want to remove loading the mod by default, then you need to manually clear the setting, which tells which mod Colonization should load by default.</p>
@@ -333,7 +333,7 @@
 					<li>If you don't like editing the ini file, then you can delete it to reset all settings back to default</li>
 				</ul>
 			</section>
-            
+
             <section id="graphicsEnglish">
 				<h4>Setting up graphics for a modern computer</h4>
 				<p>The civilization 4 game engine came out in 2005. This means that while it does work on modern monitor resolutions, it isn't perfect and may require a bit of custom setup for optimal graphics.</p>
@@ -342,22 +342,22 @@
                 <p>The game is designed for 4:3 displays. A few of the screens looks off on wider displays, particularly really wide like 22:9. This is being worked on, but it requires complete rewrites of each screen. The game is fully playable in ultra wide, it just doesn't meet our standard for good looking graphics everywhere.</p>
                 <p>The globe has a bug where not all map plots can be clicked if the ingame resolution is set to 3840x2160. The bug is in code unreachable by mods and as such we can't fix it. The only solution is to not use such a high resolution ingame.</p>
 			</section>
-        
-        
+
+
 			<section id="shortcutEnglish">
 				<h4>Creating a desktop shortcut</h4>
 				<p>The easiest way is to make a normal shortcut and let the mod set itself as the default. However if you for any reason want or need to do it manually, here is how it is done.</p>
 				<p>Once that's done, at least for Windows, you can edit the properties of the shortcut and find the target such as "C:\Program Files (x86)\GOG Galaxy\Games\Civilization IV Complete\Civ4Colonization\Colonization.exe", then add a space after the final ", followed by mod="WeThePeoplesuchandsuch" (with the exact name being the same name as the folder the mod resides in, such as WeThePeople-4.2 or whatever.</p>
 				<p>Once that's done, clicking your new icon will take you to the mod, passing through the Vanilla window along the way without launching it. Opening Vanilla first and launching to the mod can cause problems.</p>
 			</section>
-			
+
 			<section id="specialNoteEnglish">
 				<h4>Special Note:</h4>
 				<p>Check the <a href="https://forums.civfanatics.com/forums/civ4col-we-the-people.591/">forum</a> every now and then to see if there are new versions. We also maintain a consistent and healthy discussion on the <a href="https://forums.civfanatics.com/threads/we-the-people-discord-chat.665974/">Discord</a>. In addition to these two locations, the in-game Colopedia is maintained as well as we have time for (and when it's not forgotten to be updated) in order to inform players of the changes the mod makes. Pay special attention to the <b>Concepts</b> section of the Colopedia!</a></p>
 			</section>
 		</section>
 		<hr>
-			
+
 		<section id="multiplayerEnglish">
 			<h3>Multiplayer Setup</h3>
 			<p>If you want to play Multiplayer, every player must have the mod folder's name be <i>identical</i>, or else the Civ4 engine will refuse to allow you all to play together.</p>
@@ -366,25 +366,25 @@
 		<hr>
 		<section id="installProblemEnglish">
 			<h4>Common issues when getting the mod to work</h4>
-			
+
 			<section id="wrongSteamEnglish">
 				<h3>Steam needs to use the original "unsupported" Steam release version</h3>
 				<p><strong>Only applies to the Steam version of Colonization</strong></p>
 				<p>The newest version of Colonization on steam broke something related to mod support. To get around this, the original "unsupported" release version is needed. To switch to it, right click on Colonization inside steam, select properties, then betas and switch to "original_release_unsupported". Ignore that it says unsupported. It becomes the same version as the one supported on GOG, but it does lose the steam specific multiplayer.</p>
 				<p><a href="https://forums.civfanatics.com/threads/important-for-all-steam-users-follow-these-instructions-to-play-wtp-without-bugs.674675/">Forum guide on how to do this, including screenshots</a></p>
 			</section>
-			
+
 			<section id="moreSiblingsThanMemoryEnglish">
 				<h3>More siblings than memory allocated error</h3>
 				<p>This is a consequence of not running "setup.bat" in the We The People folder. We The People requires some files to be copied into the main Colonization directory, otherwise it won't run.</p>
 			</section>
-			
+
 			<section id="savegameIssuesEnglish">
 				<h3>Savegame Issues</h3>
 				<p>Savegames only run as long as the mod folder matches the savegame's saved mod folder name. This can be changed though by following the instructions for the <a href="https://we-the-people-civ4col-mod.github.io/DeveloperNotes/SavegameModRenamingTool/index.html">Savegame Mod Renaming Tool</a>.</p>
 				<p>We try to avoid breaking saves between releases, but sometimes its unavoidable in order to make the mod more efficient in terms of memory usage or fix mechanics.</p>
 			</section>
-			
+
 			<section id="ramProblemEnglish">
 				<h3>The game tells me I have low memory?</h3>
 				<p><strong>This should only apply to the CD version and maybe the DVD version</strong>. Steam and GOG have prepatched their versions of Colonization.</p>
@@ -392,12 +392,12 @@
 				<p>Luckily it's fairly easy to fix. Just download <a href="https://ntcore.com/?page_id=371">this 4 GB patching tool</a> and use it to patch Colonization.exe. It's unknown if patching Colonization_PitBoss.exe is needed, but it doesn't hurt to do so.</p>
 				<p>For those who wants to to know what technically happens when patching (no, you don't need to understand this) is the <a href="https://learn.microsoft.com/en-us/windows/win32/debug/pe-format">PE flag</a> is toggled. It can literally be done using a hex editor if you know what you are doing. However the patching tool is way easier.</p>
 			</section>
-			
+
 			<section id="pythonFailedEnglish">
 				<h3>Python Failed Initializing?</h3>
 				<p>This error occurs when Python exceptions are not enabled in an 'ini' file. This means the actual error is hidden. Since CvGameCoreDLL.dll forces python errors to be displayed, we can assume that file isn't loaded. See below on how to deal with that issue.</p>
 			</section>
-			
+
 			<section id="gameCoreNotLoadedEnglish">
 				<h3>CvGameCoreDLL.dll not loaded?</h3>
 				<p>Either this file is missing when it should be located at WeThePeople\Assets\CvGameCoreDLL.dll, or you're a more advanced user who needs to compile the develop version most likely. Every release given out to the general playerbase should contain a CvGameCoreDLL.dll, so it was either deleted, or we forgot to include it and will fix that problem immediately after release, or you need to <a href="https://github.com/We-the-People-civ4col-mod/Mod/wiki/How-to-play-the-development-version">compile your develop version.</a></p>
@@ -771,10 +771,10 @@
 </div>
 
 <script>
-	const teamNames = ["raystuttgart", "Devolution", "Nightinggale", "Schmiddie", "Mr.ZorG", "Kendon", "Raubwürger", "Liet", "Barthoze", "sneed", "jooe", "FlaviusBelisarius", "Fürstbischof", "Tucker8", "victorxucp", "Aemon", "Dyllin Black (Razonatair/Dwarfmurdered)"];
+	const teamNames = ["raystuttgart", "Devolution", "Nightinggale", "Schmiddie", "Mr.ZorG", "Kendon", "Raubwürger", "Liet", "Barthoze", "sneed", "jooe", "FlaviusBelisarius", "Fürstbischof", "Tucker8", "victorxucp", "Aemon", "Dyllin Black (Razonatair/Dwarfmurdered)", "Monticello"];
 	const formerTeamNames = ["Robert Surcouf", "colonialfan", "KJ Jansson", "Androrc the Orc", "orlanth"];
 	const specialCredits = ["Mighty Toad", "Lethiel", "Zeta Nexus", "Vaeringjar", "Ramstormp", "Writing Bull", "Willi_Tell", "Isabelxxx", "Dale", "Kailric", "Aymerick", "Jeckel", "TC01", "NeseryozniyVET", "Trachmyr", "Dazio", "M07", "bernie14", "ekmek", "SaibotLieh", "Sanotra", "Aeterna", "Roamty", "Kathy", "agnat86", "Marla_Singer", "Commander_Bello", "Vetiarvind", "Barthoze", "melcher kürzer", "Fankman"];
-	
+
 	let lists = document.querySelectorAll(".teamList, .formerTeam, .specialCredits");
 	for (let i = 0; i < Math.max(teamNames.length, formerTeamNames.length, specialCredits.length); i++)
 	{

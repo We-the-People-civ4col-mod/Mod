@@ -3,481 +3,577 @@
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_HARDWOOD</Tag>
 		<English>Emphasize Hardwood</English>
+		<Portuguese>Enfatize a madeira nobre</Portuguese>
 		<German>Schwerpunkt Hartholz</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_HARDWOOD</Tag>
 		<English>Deemphasize Hardwood</English>
+		<Portuguese>Diminuir a ênfase na madeira nobre</Portuguese>
 		<German>Schwerpunkt Hartholz aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_FLAX</Tag>
 		<English>Emphasize Flax</English>
+		<Portuguese>Enfatize o linho</Portuguese>
 		<German>Schwerpunkt Flachs</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_FLAX</Tag>
 		<English>Deemphasize Flax</English>
+		<Portuguese>Diminuir a ênfase do linho</Portuguese>
 		<German>Schwerpunkt Flachs aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_COAL</Tag>
 		<English>Emphasize Coal</English>
+		<Portuguese>Enfatize o carvão</Portuguese>
 		<German>Schwerpunkt Kohle</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_COAL</Tag>
 		<English>Deemphasize Coal</English>
+		<Portuguese>Diminuir a ênfase no carvão</Portuguese>
 		<German>Schwerpunkt Kohle aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_CHAR_COAL</Tag>
 		<English>Emphasize Charcoal</English>
+		<Portuguese>Enfatize o carvão vegetal</Portuguese>
 		<German>Schwerpunkt Holzkohle</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_CHAR_COAL</Tag>
 		<English>Deemphasize Charcoal</English>
+		<Portuguese>Diminuir a ênfase no carvão vegetal</Portuguese>
 		<German>Schwerpunkt Holzkohle aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_BLACK_POWDER</Tag>
 		<English>Emphasize Gunpowder</English>
+		<Portuguese>Enfatize a pólvora</Portuguese>
 		<German>Schwerpunkt Schwarzpulver</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_BLACK_POWDER</Tag>
 		<English>Deemphasize Gunpowder</English>
+		<Portuguese>Diminuir a ênfase na pólvora</Portuguese>
 		<German>Schwerpunkt Schwarzpulver aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_BAKERY_GOODS</Tag>
 		<English>Emphasize Bakery Goods</English>
+		<Portuguese>Enfatize produtos de panificação</Portuguese>
 		<German>Schwerpunkt Proviant</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_BAKERY_GOODS</Tag>
 		<English>Deemphasize Bakery Goods</English>
+		<Portuguese>Diminuir a ênfase em produtos de panificação</Portuguese>
 		<German>Schwerpunkt Proviant aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_PEAT</Tag>
 		<English>Emphasize Peat</English>
+		<Portuguese>Enfatize a turfa</Portuguese>
 		<German>Schwerpunkt Torf</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_PEAT</Tag>
 		<English>Deemphasize Peat</English>
+		<Portuguese>Diminuir a ênfase da turfa</Portuguese>
 		<German>Schwerpunkt Torf aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_GOATS</Tag>
 		<English>Emphasize Goats</English>
+		<Portuguese>Enfatize cabras</Portuguese>
 		<German>Schwerpunkt Ziegen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_GOATS</Tag>
 		<English>Deemphasize Goats</English>
+		<Portuguese>Diminuir a ênfase nas cabras</Portuguese>
 		<German>Schwerpunkt Ziegen aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_PIGS</Tag>
 		<English>Emphasize Pigs</English>
+		<Portuguese>Enfatize os porcos</Portuguese>
 		<German>Schwerpunkt Schweine</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_PIGS</Tag>
 		<English>Deemphasize Pigs</English>
+		<Portuguese>Diminuir a ênfase nos porcos</Portuguese>
 		<German>Schwerpunkt Schweine aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_CHICKEN</Tag>
 		<English>Emphasize Chicken</English>
+		<Portuguese>Enfatize o frango</Portuguese>
 		<German>Schwerpunkt Hühner</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_CHICKEN</Tag>
 		<English>Deemphasize Chicken</English>
+		<Portuguese>Diminuir a ênfase no frango</Portuguese>
 		<German>Schwerpunkt Hühner aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_GEESE</Tag>
 		<English>Emphasize Geese</English>
+		<Portuguese>Enfatize Gansos</Portuguese>
 		<German>Schwerpunkt Gänse</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_GEESE</Tag>
 		<English>Deemphasize Geese</English>
+		<Portuguese>Diminuir a ênfase nos gansos</Portuguese>
 		<German>Schwerpunkt Gänse aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_PEANUTS</Tag>
 		<English>Emphasize Peanuts</English>
+		<Portuguese>Enfatize o amendoim</Portuguese>
 		<German>Schwerpunkt Erdnüsse</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_PEANUTS</Tag>
 		<English>Deemphasize Peanuts</English>
+		<Portuguese>Diminuir a ênfase no amendoim</Portuguese>
 		<German>Schwerpunkt Erdnüsse aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_YERBA_LEAVES</Tag>
 		<English>Emphasize Yerba Leaves</English>
+		<Portuguese>Enfatize as folhas de erva</Portuguese>
 		<German>Schwerpunkt Mate-Blätter</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_YERBA_LEAVES</Tag>
 		<English>Deemphasize Yerba Leaves</English>
+		<Portuguese>Diminuir a ênfase nas folhas de erva</Portuguese>
 		<German>Schwerpunkt Mate-Blätter aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_LOGWOOD</Tag>
 		<English>Emphasize Logwood</English>
+		<Portuguese>Enfatizar pau-campeche</Portuguese>
 		<German>Schwerpunkt Blauholz</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_LOGWOOD</Tag>
 		<English>Deemphasize Logwood</English>
+		<Portuguese>Diminuir a ênfase no pau-campeche</Portuguese>
 		<German>Schwerpunkt Blauholz aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_COCHINEAL</Tag>
 		<English>Emphasize Cochineal</English>
+		<Portuguese>Enfatize a Cochonilha</Portuguese>
 		<German>Schwerpunkt Cochineal</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_COCHINEAL</Tag>
 		<English>Deemphasize Cochineal</English>
+		<Portuguese>Diminuir a ênfase na cochonilha</Portuguese>
 		<German>Schwerpunkt Cochineal aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_GOAT_HIDES</Tag>
 		<English>Emphasize Goatskins</English>
+		<Portuguese>Enfatize peles de cabra</Portuguese>
 		<German>Schwerpunkt Ziegenfelle</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_GOAT_HIDES</Tag>
 		<English>Deemphasize Cochineal</English>
+		<Portuguese>Diminuir a ênfase na cochonilha</Portuguese>
 		<German>Schwerpunkt Ziegenfelle aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_PIG_SKIN</Tag>
 		<English>Emphasize Pigskins</English>
+		<Portuguese>Enfatize peles de porco</Portuguese>
 		<German>Schwerpunkt Schweinehäute</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_PIG_SKIN</Tag>
 		<English>Deemphasize Pigskins</English>
+		<Portuguese>Diminuir a ênfase nas peles de porco</Portuguese>
 		<German>Schwerpunkt Schweinehäute aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_DOWNS</Tag>
 		<English>Emphasize Down</English>
+		<Portuguese>Enfatizar penugem</Portuguese>
 		<German>Schwerpunkt Daunen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_DOWNS</Tag>
 		<English>Deemphasize Down</English>
+		<Portuguese>Diminuir a ênfase</Portuguese>
 		<German>Schwerpunkt Daunen aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_VANILLA_PODS</Tag>
 		<English>Emphasize Green Vanilla Pods</English>
+		<Portuguese>Enfatize baunilha verde</Portuguese>
 		<German>Schwerpunkt Vanilleschoten</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_VANILLA_PODS</Tag>
 		<English>Deemphasize Green Vanilla Pods</English>
+		<Portuguese>Desenfatizar baunilha verde</Portuguese>
 		<German>Schwerpunkt Vanilleschoten aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_FRUITS</Tag>
 		<English>Emphasize Fruit</English>
+		<Portuguese>Enfatize a fruta</Portuguese>
 		<German>Schwerpunkt Früchte</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_FRUITS</Tag>
 		<English>Deemphasize Fruit</English>
+		<Portuguese>Diminuir a ênfase nas frutas</Portuguese>
 		<German>Schwerpunkt Früchte aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_OLIVES</Tag>
 		<English>Emphasize Olives</English>
+		<Portuguese>Enfatize as azeitonas</Portuguese>
 		<German>Schwerpunkt Oliven</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_OLIVES</Tag>
 		<English>Deemphasize Olives</English>
+		<Portuguese>Diminuir a ênfase nas azeitonas</Portuguese>
 		<German>Schwerpunkt Oliven aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_RAPE</Tag>
 		<English>Emphasize Rapeseed</English>
+		<Portuguese>Enfatize a canola</Portuguese>
 		<German>Schwerpunkt Raps</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_RAPE</Tag>
 		<English>Deemphasize Rapeseed</English>
+		<Portuguese>Diminuir a ênfase na canola</Portuguese>
 		<German>Schwerpunkt Raps aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_WILD_FEATHERS</Tag>
 		<English>Emphasize Wild Bird Feathers</English>
+		<Portuguese>Enfatize as penas dos pássaros selvagens</Portuguese>
 		<German>Schwerpunkt Wildvogelfedern</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_WILD_FEATHERS</Tag>
 		<English>Deemphasize Wild Bird Feathers</English>
+		<Portuguese>Diminuir a ênfase nas penas de pássaros selvagens</Portuguese>
 		<German>Schwerpunkt Wildvogelfedern aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_RICE</Tag>
 		<English>Emphasize Rice</English>
+		<Portuguese>Enfatize o arroz</Portuguese>
 		<German>Schwerpunkt Reis</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_RICE</Tag>
 		<English>Deemphasize Rice</English>
+		<Portuguese>Desenfatizar o arroz</Portuguese>
 		<German>Schwerpunkt Reis aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_CASSAVA</Tag>
 		<English>Emphasize Cassava</English>
+		<Portuguese>Enfatize a mandioca</Portuguese>
 		<German>Schwerpunkt Cassava</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_CASSAVA</Tag>
 		<English>Deemphasize Cassava</English>
+		<Portuguese>Diminuir a ênfase da mandioca</Portuguese>
 		<German>Schwerpunkt Cassava aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_MAPLE_SIRUP</Tag>
 		<English>Emphasize Maple Syrup</English>
+		<Portuguese>Enfatize o xarope de bordo</Portuguese>
 		<German>Schwerpunkt Ahornsirup</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_MAPLE_SIRUP</Tag>
 		<English>Deemphasize Maple Syrup</English>
+		<Portuguese>Diminuir a ênfase do xarope de bordo</Portuguese>
 		<German>Schwerpunkt Ahornsirup aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_KAUTSCHUK</Tag>
 		<English>Emphasize Rubber</English>
+		<Portuguese>Enfatize a borracha</Portuguese>
 		<German>Schwerpunkt Kautschuk</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_KAUTSCHUK</Tag>
 		<English>Deemphasize Rubber</English>
+		<Portuguese>Diminuir a ênfase na borracha</Portuguese>
 		<German>Schwerpunkt Kautschuk aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_FESTIVE_CLOTHES</Tag>
 		<English>Emphasize Festive Clothes</English>
+		<Portuguese>Enfatize roupas festivas</Portuguese>
 		<German>Schwerpunkt Festliche Kleidung</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_FESTIVE_CLOTHES</Tag>
 		<English>Deemphasize Festive Clothes</English>
+		<Portuguese>Diminua a ênfase nas roupas festivas</Portuguese>
 		<German>Schwerpunkt Festliche Kleidung aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_EVERYDAY_CLOTHES</Tag>
 		<English>Emphasize Everyday Clothes</English>
+		<Portuguese>Enfatize as roupas do dia a dia</Portuguese>
 		<German>Schwerpunkt Alltagskleidung</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_EVERYDAY_CLOTHES</Tag>
 		<English>Deemphasize Everyday Clothes</English>
+		<Portuguese>Diminua a ênfase nas roupas do dia a dia</Portuguese>
 		<German>Schwerpunkt Alltagskleidung aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_POTTERY</Tag>
 		<English>Emphasize Pottery</English>
+		<Portuguese>Enfatize a cerâmica</Portuguese>
 		<German>Schwerpunkt Töpferwaren</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_POTTERY</Tag>
 		<English>Deemphasize Pottery</English>
+		<Portuguese>Diminuir a ênfase na cerâmica</Portuguese>
 		<German>Schwerpunkt Töpferwaren aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_MILK</Tag>
 		<English>Emphasize Milk</English>
+		<Portuguese>Enfatize o leite</Portuguese>
 		<German>Schwerpunkt Milch</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_MILK</Tag>
 		<English>Deemphasize Milk</English>
+		<Portuguese>Desenfatizar o leite</Portuguese>
 		<German>Schwerpunkt Milch aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_CHEESE</Tag>
 		<English>Emphasize Cheese</English>
+		<Portuguese>Enfatize o queijo</Portuguese>
 		<German>Schwerpunkt Käse</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_CHEESE</Tag>
 		<English>Deemphasize Cheese</English>
+		<Portuguese>Diminuir a ênfase no queijo</Portuguese>
 		<German>Schwerpunkt Käse aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_ROASTED_PEANUTS</Tag>
 		<English>Emphasize Roasted Peanuts</English>
+		<Portuguese>Enfatize o amendoim torrado</Portuguese>
 		<German>Schwerpunkt Geröstete Erdnüsse</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_ROASTED_PEANUTS</Tag>
 		<English>Deemphasize Roasted Peanuts</English>
+		<Portuguese>Diminuir a ênfase nos amendoins torrados</Portuguese>
 		<German>Schwerpunkt Geröstete Erdnüsse aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_YERBA_TEA</Tag>
 		<English>Emphasize Yerba-Maté</English>
+		<Portuguese>Enfatize a erva-mate</Portuguese>
 		<German>Schwerpunkt Mate-Tee</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_YERBA_TEA</Tag>
 		<English>Deemphasize Yerba-Maté</English>
+		<Portuguese>Diminuir a ênfase da erva-mate</Portuguese>
 		<German>Schwerpunkt Mate-Tee aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_COLOURED_WOOL_CLOTH</Tag>
 		<English>Emphasize Coloured Wool Cloth</English>
+		<Portuguese>Enfatize o pano de lã colorido</Portuguese>
 		<German>Schwerpunkt Gefärbter Wollstoff</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_COLOURED_WOOL_CLOTH</Tag>
 		<English>Deemphasize Coloured Wool Cloth</English>
+		<Portuguese>Desenfatizar pano de lã colorido</Portuguese>
 		<German>Schwerpunkt Gefärbter Wollstoff aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_GOAT_HIDE_BOOTS</Tag>
 		<English>Emphasize Goat Hide Boots</English>
+		<Portuguese>Enfatize as botas de pele de cabra</Portuguese>
 		<German>Schwerpunkt Ziegenlederstiefel</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_GOAT_HIDE_BOOTS</Tag>
 		<English>Deemphasize Goat Hide Boots</English>
+		<Portuguese>Desenfatizar botas de couro de cabra</Portuguese>
 		<German>Schwerpunkt Ziegenlederstiefel aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_PIG_LEATHER</Tag>
 		<English>Emphasize Pig Leather Aprons</English>
+		<Portuguese>Enfatize aventais de couro de porco</Portuguese>
 		<German>Schwerpunkt Schweinslederschürzen</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_PIG_LEATHER</Tag>
 		<English>Deemphasize Pig Leather Aprons</English>
+		<Portuguese>Desenfatizar aventais de couro de porco</Portuguese>
 		<German>Schwerpunkt Schweinslederschürzen aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_PADDED_LEATHER_COATS</Tag>
 		<English>Emphasize Lined Leather Coats</English>
+		<Portuguese>Enfatize casacos de couro forrados</Portuguese>
 		<German>Schwerpunkt Gefütterte Ledermäntel</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_PADDED_LEATHER_COATS</Tag>
 		<English>Deemphasize Lined Leather Coats</English>
+		<Portuguese>Desenfatizar casacos de couro forrados</Portuguese>
 		<German>Schwerpunkt Gefütterte Ledermäntel aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_VANILLA</Tag>
 		<English>Emphasize Dried Vanilla</English>
+		<Portuguese>Enfatize a baunilha seca</Portuguese>
 		<German>Schwerpunkt Getrocknete Vanille</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_VANILLA</Tag>
 		<English>Deemphasize Dried Vanilla</English>
+		<Portuguese>Desenfatize a baunilha seca</Portuguese>
 		<German>Schwerpunkt Getrocknete Vanille aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_CHOCOLATE</Tag>
 		<English>Emphasize Chocolate</English>
+		<Portuguese>Enfatize o chocolate</Portuguese>
 		<German>Schwerpunkt Schokolade</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_CHOCOLATE</Tag>
 		<English>Deemphasize Chocolate</English>
+		<Portuguese>Diminuir a ênfase no chocolate</Portuguese>
 		<German>Schwerpunkt Schokolade aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_HOOCH</Tag>
 		<English>Emphasize Fruit Brandy</English>
+		<Portuguese>Enfatize o conhaque de frutas</Portuguese>
 		<German>Schwerpunkt Schnaps</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_HOOCH</Tag>
 		<English>Deemphasize Fruit Brandy</English>
+		<Portuguese>Diminuir a ênfase no conhaque de frutas</Portuguese>
 		<German>Schwerpunkt Schnaps aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_OLIVE_OIL</Tag>
 		<English>Emphasize Olive Oil</English>
+		<Portuguese>Enfatize o Azeite</Portuguese>
 		<German>Schwerpunkt Olivenöl</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_OLIVE_OIL</Tag>
 		<English>Deemphasize Olive Oil</English>
+		<Portuguese>Diminuir a ênfase no azeite</Portuguese>
 		<German>Schwerpunkt Olivenöl aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_RAPE_OIL</Tag>
 		<English>Emphasize Rapeseed Oil</English>
+		<Portuguese>Enfatize o óleo de canola</Portuguese>
 		<German>Schwerpunkt Rapsöl</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_RAPE_OIL</Tag>
 		<English>Deemphasize Rapeseed Oil</English>
+		<Portuguese>Diminuir a ênfase no óleo de canola</Portuguese>
 		<German>Schwerpunkt Rapsöl aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_PADDED_FURNITURE</Tag>
 		<English>Emphasize Upholstered Furniture</English>
+		<Portuguese>Enfatize móveis estofados</Portuguese>
 		<German>Schwerpunkt Polstermöbel</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_PADDED_FURNITURE</Tag>
 		<English>Deemphasize Upholstered Furniture</English>
+		<Portuguese>Diminuir a ênfase em móveis estofados</Portuguese>
 		<German>Schwerpunkt Polstermöbel aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_FIELD_WORKER_TOOLS</Tag>
 		<English>Emphasize Fieldworker Tools</English>
+		<Portuguese>Enfatize as ferramentas do pesquisador de campo</Portuguese>
 		<German>Schwerpunkt Feldarbeiterwerkzeuge</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_FIELD_WORKER_TOOLS</Tag>
 		<English>Deemphasize Fieldworker Tools</English>
+		<Portuguese>Diminuir a ênfase nas ferramentas de trabalho de campo</Portuguese>
 		<German>Schwerpunkt Feldarbeiterwerkzeuge aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_HOUSEHOLD_GOODS</Tag>
 		<English>Emphasize Household Goods</English>
+		<Portuguese>Enfatize os bens domésticos</Portuguese>
 		<German>Schwerpunkt Haushaltswaren</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_HOUSEHOLD_GOODS</Tag>
 		<English>Deemphasize Household Goods</English>
+		<Portuguese>Diminuir a ênfase nos bens domésticos</Portuguese>
 		<German>Schwerpunkt Haushaltswaren aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_CULTURE</Tag>
 		<English>Emphasize Culture</English>
+		<Portuguese>Enfatizar a Cultura</Portuguese>
 		<German>Schwerpunkt Kultur</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_CULTURE</Tag>
 		<English>Deemphasize Culture</English>
+		<Portuguese>Diminuir a importância da cultura</Portuguese>
 		<German>Schwerpunkt Kultur aufheben</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_HEALTH</Tag>
 		<English>Emphasize Health</English>
+		<Portuguese>Enfatize a saúde</Portuguese>
 		<German>Schwerpunkt Gesundheit</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EMPHASIZE_NO_HEALTH</Tag>
 		<English>Deemphasize Health</English>
+		<Portuguese>Diminuir a importância da saúde</Portuguese>
 		<German>Schwerpunkt Gesundheit aufheben</German>
 	</TEXT>
 </Civ4GameText>

@@ -31,6 +31,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -70,6 +76,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -110,6 +122,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -150,6 +168,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -190,6 +214,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -229,6 +259,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>250</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -268,6 +304,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -307,6 +349,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -346,6 +394,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -385,6 +439,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>250</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -424,6 +484,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>250</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -463,6 +529,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>250</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -502,6 +574,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -541,6 +619,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -580,6 +664,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -619,6 +709,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -658,6 +754,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -697,6 +799,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -736,6 +844,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -775,6 +889,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -814,6 +934,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -854,6 +980,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -894,6 +1026,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -934,6 +1072,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -974,10 +1118,17 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
 				<YieldType>YIELD_PREMIUM_FUR</YieldType>
+				<YieldType>YIELD_FOOD</YieldType>
 			</YieldsProduced>
 			<YieldsConsumed>
 				<YieldType>NONE</YieldType>
@@ -1013,10 +1164,17 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
 				<YieldType>YIELD_PREMIUM_FUR</YieldType>
+				<YieldType>YIELD_FOOD</YieldType>
 			</YieldsProduced>
 			<YieldsConsumed>
 				<YieldType>NONE</YieldType>
@@ -1052,6 +1210,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1091,6 +1255,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1130,6 +1300,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1169,6 +1345,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1208,6 +1390,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>250</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1247,6 +1435,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>250</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1286,6 +1480,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>250</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1325,6 +1525,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>250</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1364,6 +1570,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1403,6 +1615,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1442,6 +1660,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1481,6 +1705,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1520,6 +1750,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1559,6 +1795,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1598,6 +1840,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1637,6 +1885,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1676,6 +1930,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1715,6 +1975,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>250</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -1754,6 +2020,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2145,6 +2417,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2185,6 +2463,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2225,6 +2509,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2265,6 +2555,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2305,6 +2601,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2345,6 +2647,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2385,6 +2693,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2424,6 +2738,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2555,6 +2875,123 @@
 			<iLbDLearnLevel>2</iLbDLearnLevel>
 		</ProfessionInfo>
 		<ProfessionInfo>
+			<Type>PROFESSION_BAKER_BARLEY_FOOD</Type>
+			<Description>TXT_KEY_PROFESSION_BAKER_BARLEY_FOOD</Description>
+			<Civilopedia>TXT_KEY_PROFESSION_BAKER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROFESSION_BAKER_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROFESSION_BAKER_HELP</Help>
+			<Combat>NONE</Combat>
+			<DefaultUnitAI>NONE</DefaultUnitAI>
+			<SpecialBuilding>SPECIALBUILDING_BAKER</SpecialBuilding>
+			<bWorkPlot>0</bWorkPlot>
+			<bCitizen>1</bCitizen>
+			<bWater>0</bWater>
+			<bScout>0</bScout>
+			<bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+			<bCityDefender>0</bCityDefender>
+			<bCanFound>0</bCanFound>
+			<bUnarmed>0</bUnarmed>
+			<bNoDefensiveBonus>0</bNoDefensiveBonus>
+			<iCombatChange>0</iCombatChange>
+			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
+			<iWorkRate>0</iWorkRate>
+			<iMissionaryRate>0</iMissionaryRate>
+			<iNativeTradeRate>0</iNativeTradeRate>
+			<iPower>0</iPower>
+			<iAsset>300</iAsset>
+			<YieldEquipedNums/>
+			<FreePromotions/>
+			<YieldsProduced>
+				<YieldType>YIELD_FOOD</YieldType>
+			</YieldsProduced>
+			<YieldsConsumed>
+				<YieldType>YIELD_BARLEY</YieldType>
+			</YieldsConsumed>
+			<Button>Art/interface/buttons/New_Profession_Buttons/Profession_Baker_Barley_Button.dds</Button>
+			<bUseLbD>1</bUseLbD>
+			<ExpertUnit>UNITCLASS_BAKER</ExpertUnit>
+			<iLbDLearnLevel>2</iLbDLearnLevel>
+		</ProfessionInfo>
+		<ProfessionInfo>
+			<Type>PROFESSION_BAKER_RICE_FOOD</Type>
+			<Description>TXT_KEY_PROFESSION_BAKER_RICE_FOOD</Description>
+			<Civilopedia>TXT_KEY_PROFESSION_BAKER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROFESSION_BAKER_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROFESSION_BAKER_HELP</Help>
+			<Combat>NONE</Combat>
+			<DefaultUnitAI>NONE</DefaultUnitAI>
+			<SpecialBuilding>SPECIALBUILDING_BAKER</SpecialBuilding>
+			<bWorkPlot>0</bWorkPlot>
+			<bCitizen>1</bCitizen>
+			<bWater>0</bWater>
+			<bScout>0</bScout>
+			<bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+			<bCityDefender>0</bCityDefender>
+			<bCanFound>0</bCanFound>
+			<bUnarmed>0</bUnarmed>
+			<bNoDefensiveBonus>0</bNoDefensiveBonus>
+			<iCombatChange>0</iCombatChange>
+			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
+			<iWorkRate>0</iWorkRate>
+			<iMissionaryRate>0</iMissionaryRate>
+			<iNativeTradeRate>0</iNativeTradeRate>
+			<iPower>0</iPower>
+			<iAsset>300</iAsset>
+			<YieldEquipedNums/>
+			<FreePromotions/>
+			<YieldsProduced>
+				<YieldType>YIELD_FOOD</YieldType>
+			</YieldsProduced>
+			<YieldsConsumed>
+				<YieldType>YIELD_RICE</YieldType>
+			</YieldsConsumed>
+			<Button>Art/interface/buttons/New_Profession_Buttons/Profession_Baker_Rice_Button.dds</Button>
+			<bUseLbD>1</bUseLbD>
+			<ExpertUnit>UNITCLASS_BAKER</ExpertUnit>
+			<iLbDLearnLevel>2</iLbDLearnLevel>
+		</ProfessionInfo>
+		<ProfessionInfo>
+			<Type>PROFESSION_BAKER_CASSAVA_FOOD</Type>
+			<Description>TXT_KEY_PROFESSION_BAKER_CASSAVA_FOOD</Description>
+			<Civilopedia>TXT_KEY_PROFESSION_BAKER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROFESSION_BAKER_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROFESSION_BAKER_HELP</Help>
+			<Combat>NONE</Combat>
+			<DefaultUnitAI>NONE</DefaultUnitAI>
+			<SpecialBuilding>SPECIALBUILDING_BAKER</SpecialBuilding>
+			<bWorkPlot>0</bWorkPlot>
+			<bCitizen>1</bCitizen>
+			<bWater>0</bWater>
+			<bScout>0</bScout>
+			<bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+			<bCityDefender>0</bCityDefender>
+			<bCanFound>0</bCanFound>
+			<bUnarmed>0</bUnarmed>
+			<bNoDefensiveBonus>0</bNoDefensiveBonus>
+			<iCombatChange>0</iCombatChange>
+			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
+			<iWorkRate>0</iWorkRate>
+			<iMissionaryRate>0</iMissionaryRate>
+			<iNativeTradeRate>0</iNativeTradeRate>
+			<iPower>0</iPower>
+			<iAsset>300</iAsset>
+			<YieldEquipedNums/>
+			<FreePromotions/>
+			<YieldsProduced>
+				<YieldType>YIELD_FOOD</YieldType>
+			</YieldsProduced>
+			<YieldsConsumed>
+				<YieldType>YIELD_CASSAVA</YieldType>
+			</YieldsConsumed>
+			<Button>Art/interface/buttons/New_Profession_Buttons/Profession_Baker_Cassava_Button.dds</Button>
+			<bUseLbD>1</bUseLbD>
+			<ExpertUnit>UNITCLASS_BAKER</ExpertUnit>
+			<iLbDLearnLevel>2</iLbDLearnLevel>
+		</ProfessionInfo>
+		<ProfessionInfo>
 			<Type>PROFESSION_LEATHER_PADDER_COATS_DOWNS</Type>
 			<Description>TXT_KEY_PROFESSION_LEATHER_PADDER_COATS_DOWNS</Description>
 			<Civilopedia>TXT_KEY_PROFESSION_LEATHER_PADDER_COATS_PEDIA</Civilopedia>
@@ -2580,6 +3017,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2620,6 +3063,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2660,6 +3109,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2700,6 +3155,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2818,6 +3279,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -2857,6 +3324,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3248,6 +3721,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>350</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3287,6 +3766,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>350</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3326,6 +3811,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>350</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3365,6 +3856,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>350</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3372,6 +3869,51 @@
 			</YieldsProduced>
 			<YieldsConsumed>
 				<YieldType>YIELD_HEMP</YieldType>
+			</YieldsConsumed>
+			<Button>,Art/colonization_atlas_professions_bonus.dds,3,6</Button>
+			<bUseLbD>1</bUseLbD>
+			<ExpertUnit>UNITCLASS_SAILCLOTH_MAKER</ExpertUnit>
+			<iLbDLearnLevel>2</iLbDLearnLevel>
+		</ProfessionInfo>
+		<ProfessionInfo>
+			<Type>PROFESSION_SAILCLOTH_MAKER_COTTON</Type>
+			<Description>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_COTTON</Description>
+			<Civilopedia>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_PEDIA</Civilopedia>
+			<Strategy>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_STRATEGY</Strategy>
+			<Help>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_HELP</Help>
+			<Combat>NONE</Combat>
+			<DefaultUnitAI>NONE</DefaultUnitAI>
+			<SpecialBuilding>SPECIALBUILDING_DOCK</SpecialBuilding>
+			<bWorkPlot>0</bWorkPlot>
+			<bCitizen>1</bCitizen>
+			<bWater>0</bWater>
+			<bScout>0</bScout>
+			<bCanCrossLargeRivers>0</bCanCrossLargeRivers>
+			<bCityDefender>0</bCityDefender>
+			<bCanFound>0</bCanFound>
+			<bUnarmed>0</bUnarmed>
+			<bNoDefensiveBonus>0</bNoDefensiveBonus>
+			<iCombatChange>0</iCombatChange>
+			<iMovesChange>0</iMovesChange>
+			<bMoveIntoPeak>0</bMoveIntoPeak>
+			<iWorkRate>0</iWorkRate>
+			<iMissionaryRate>0</iMissionaryRate>
+			<iNativeTradeRate>0</iNativeTradeRate>
+			<iPower>0</iPower>
+			<iAsset>250</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
+			<YieldEquipedNums/>
+			<FreePromotions/>
+			<YieldsProduced>
+				<YieldType>YIELD_SAILCLOTH</YieldType>
+			</YieldsProduced>
+			<YieldsConsumed>
+				<YieldType>YIELD_COTTON</YieldType>
 			</YieldsConsumed>
 			<Button>,Art/colonization_atlas_professions_bonus.dds,3,6</Button>
 			<bUseLbD>1</bUseLbD>
@@ -3404,6 +3946,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3443,6 +3991,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3482,6 +4036,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3522,6 +4082,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3642,6 +4208,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>350</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3681,6 +4253,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>350</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3720,6 +4298,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>500</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3760,6 +4344,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>350</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3800,6 +4390,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>500</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -3839,6 +4435,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>350</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -4151,6 +4753,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -4191,6 +4799,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -4231,6 +4845,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -4271,6 +4891,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -4311,6 +4937,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -4351,6 +4983,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -4550,6 +5188,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>400</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_TOOLS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums/>
 			<FreePromotions/>
 			<YieldsProduced>
@@ -4901,6 +5545,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>200</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_FOOD</YieldType>
@@ -5045,6 +5695,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>0</iPower>
 			<iAsset>350</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_FIELD_WORKER_TOOLS</YieldType>
+					<iYieldDemand>5</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_TOOLS</YieldType>
@@ -5101,7 +5757,7 @@
 				</YieldEquipedNum>
 				<YieldEquipedNum>
 					<YieldType>YIELD_BAKERY_GOODS</YieldType>
-					<iYieldAmount>20</iYieldAmount>
+					<iYieldAmount>30</iYieldAmount>
 				</YieldEquipedNum>
 			</YieldEquipedNums>
 			<FreePromotions/>
@@ -5342,6 +5998,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>100</iPower>
 			<iAsset>0</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_BLADES</YieldType>
@@ -5396,6 +6058,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>100</iPower>
 			<iAsset>0</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_BLADES</YieldType>
@@ -5450,6 +6118,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>150</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_MUSKETS</YieldType>
@@ -5499,6 +6173,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>300</iPower>
 			<iAsset>400</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_MUSKETS</YieldType>
@@ -5561,6 +6241,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>150</iPower>
 			<iAsset>400</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_MUSKETS</YieldType>
@@ -5610,6 +6296,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>300</iPower>
 			<iAsset>400</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_MUSKETS</YieldType>
@@ -5672,6 +6364,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>200</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_HORSES</YieldType>
@@ -5730,6 +6428,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>200</iPower>
 			<iAsset>400</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_HORSES</YieldType>
@@ -5788,6 +6492,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>350</iPower>
 			<iAsset>400</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_HORSES</YieldType>
@@ -5842,6 +6552,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>350</iPower>
 			<iAsset>400</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_HORSES</YieldType>
@@ -5897,6 +6613,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>200</iPower>
 			<iAsset>300</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_CANNONS</YieldType>
@@ -5952,6 +6674,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>250</iPower>
 			<iAsset>350</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_CANNONS</YieldType>
@@ -6007,6 +6735,12 @@
 			<iNativeTradeRate>0</iNativeTradeRate>
 			<iPower>300</iPower>
 			<iAsset>400</iAsset>
+			<YieldDemands>
+				<YieldDemand>
+					<YieldType>YIELD_BAKERY_GOODS</YieldType>
+					<iYieldDemand>10</iYieldDemand>
+				</YieldDemand>
+			</YieldDemands>
 			<YieldEquipedNums>
 				<YieldEquipedNum>
 					<YieldType>YIELD_CANNONS</YieldType>

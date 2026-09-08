@@ -5498,7 +5498,7 @@ bool CvPlayer::canReceiveGoody(CvPlot* pPlot, GoodyTypes eGoody, const CvUnit* p
 			return false;
 		}
 
-		UnitTypes eUnit = GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits((UnitClassTypes)kGoody.getTeachUnitClassType());
+		UnitTypes eUnit = (UnitTypes)GC.getUnitClassInfo((UnitClassTypes)kGoody.getTeachUnitClassType()).getDefaultUnitIndex();
 
 		if (eUnit == NO_UNIT)
 		{
@@ -13805,7 +13805,7 @@ void CvPlayer::doWarnings()
 							// R&R, ray, changes to Wild Animals - START
 							// Erik: Make sure that the unit is actually an animal (and not a pirate) when giving the warning about
 							// animals being spotted
-							if (pUnit->isBarbarian() && pUnit->getUnitInfo().isAnimal())
+							if (pUnit->getUnitInfo().isAnimal())
 							{
 								CvWString szBuffer = gDLL->getText("TXT_KEY_ANIMALS_SPOTTED", pNearestCity->getNameKey());
 								gDLL->UI().addPlayerMessage(getID(), true, GC.getEVENT_MESSAGE_TIME(), szBuffer, pLoopPlot, NULL, MESSAGE_TYPE_INFO, pUnit->getButton(), COLOR_RED, true, true);
@@ -16176,7 +16176,12 @@ bool CvPlayer::checkExpireEvent(EventTypes eEvent, const EventTriggeredData& kTr
 		}
 	}
 
-	if (kTriggeredData.m_iUnitId != -1)
+	// Only fail the quest because the stored unit is gone when the trigger
+	// asked to track that unit. Start triggers like six warships / slave
+	// barques pick a unit to test "you have N of these", but bTrackUnit is
+	// 0: giving the king that frigate, or assigning that slave to a city,
+	// must not fail the unrelated quest.
+	if (kTriggeredData.m_iUnitId != -1 && kTrigger.unitTriggers().Tracked)
 	{
 		if (NULL == kPlayer.getUnit(kTriggeredData.m_iUnitId))
 		{
@@ -17175,9 +17180,20 @@ void CvPlayer::setYieldBuyPrice(YieldTypes eYield, int iPrice, bool bMessage)
 
 		gDLL->getInterfaceIFace()->setDirty(EuropeScreen_DIRTY_BIT, true);
 
-		if (bMessage)
-		{
-			CvWString szMessage;
+	if (bMessage &&
+		(eYield == YIELD_MUSKETS ||
+		 eYield == YIELD_CANNONS ||
+		 eYield == YIELD_TOOLS ||
+		 eYield == YIELD_BLADES ||
+		 eYield == YIELD_HORSES ||
+		 eYield == YIELD_GOLD ||
+		 eYield == YIELD_SILVER ||
+		 eYield == YIELD_GEMS ||
+		 eYield == YIELD_BLACK_POWDER ||
+		 eYield == YIELD_TRADE_GOODS ||
+		 eYield == YIELD_LUXURY_GOODS))
+	{
+		CvWString szMessage;
 			if (iPrice > iOldPrice)
 			{
 				szMessage = gDLL->getText("TXT_KEY_PRICE_RISE", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
@@ -17979,17 +17995,27 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 
 		gDLL->getInterfaceIFace()->setDirty(AfricaScreen_DIRTY_BIT, true);
 
-		// no message because it would get too much
-		/*if (bMessage)
+		if (bMessage &&
+			(eYield == YIELD_MUSKETS ||
+			 eYield == YIELD_CANNONS ||
+			 eYield == YIELD_TOOLS ||
+			 eYield == YIELD_BLADES ||
+			 eYield == YIELD_HORSES ||
+			 eYield == YIELD_GOLD ||
+			 eYield == YIELD_SILVER ||
+			 eYield == YIELD_GEMS ||
+			 eYield == YIELD_BLACK_POWDER ||
+			 eYield == YIELD_TRADE_GOODS ||
+			 eYield == YIELD_LUXURY_GOODS))
 		{
 			CvWString szMessage;
 			if (iPrice > iOldPrice)
 			{
-				szMessage = gDLL->getText("TXT_KEY_PRICE_RISE", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
+				szMessage = gDLL->getText("TXT_KEY_PRICE_RISE_AFRICA", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldAfricaBuyPriceNoModifier(eYield));
 			}
 			else
 			{
-				szMessage = gDLL->getText("TXT_KEY_PRICE_FALL", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
+				szMessage = gDLL->getText("TXT_KEY_PRICE_FALL_AFRICA", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldAfricaBuyPriceNoModifier(eYield));
 			}
 
 			// R&R, ray price messages only displayed to Colony, not all players, as long as no according features
@@ -18003,7 +18029,7 @@ void CvPlayer::setYieldAfricaBuyPrice(YieldTypes eYield, int iPrice, bool bMessa
 					gDLL->UI().addPlayerMessage(kLoopPlayer.getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_ADVISOR_SUGGEST", MESSAGE_TYPE_INFO, NULL);
 				}
 			}
-		}*/
+		}
 	}
 }
 
@@ -18548,17 +18574,27 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 
 		gDLL->getInterfaceIFace()->setDirty(PortRoyalScreen_DIRTY_BIT, true);
 
-		// no message because it would get too much
-		/*if (bMessage)
+		if (bMessage &&
+			(eYield == YIELD_MUSKETS ||
+			 eYield == YIELD_CANNONS ||
+			 eYield == YIELD_TOOLS ||
+			 eYield == YIELD_BLADES ||
+			 eYield == YIELD_HORSES ||
+			 eYield == YIELD_GOLD ||
+			 eYield == YIELD_SILVER ||
+			 eYield == YIELD_GEMS ||
+			 eYield == YIELD_BLACK_POWDER ||
+			 eYield == YIELD_TRADE_GOODS ||
+			 eYield == YIELD_LUXURY_GOODS))
 		{
 			CvWString szMessage;
 			if (iPrice > iOldPrice)
 			{
-				szMessage = gDLL->getText("TXT_KEY_PRICE_RISE", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
+				szMessage = gDLL->getText("TXT_KEY_PRICE_RISE_PORT_ROYAL", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldPortRoyalBuyPriceNoModifier(eYield));
 			}
 			else
 			{
-				szMessage = gDLL->getText("TXT_KEY_PRICE_FALL", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldBuyPrice(eYield));
+				szMessage = gDLL->getText("TXT_KEY_PRICE_FALL_PORT_ROYAL", GC.getYieldInfo(eYield).getTextKeyWide(), GC.getCivilizationInfo(getCivilizationType()).getShortDescriptionKey(), getYieldPortRoyalBuyPriceNoModifier(eYield));
 			}
 
 			// R&R, ray price messages only displayed to Colony, not all players, as long as no according features
@@ -18572,7 +18608,7 @@ void CvPlayer::setYieldPortRoyalBuyPrice(YieldTypes eYield, int iPrice, bool bMe
 					gDLL->UI().addPlayerMessage(kLoopPlayer.getID(), true, GC.getEVENT_MESSAGE_TIME(), szMessage, "AS2D_ADVISOR_SUGGEST", MESSAGE_TYPE_INFO, NULL);
 				}
 			}
-		}*/
+		}
 	}
 }
 
@@ -19775,7 +19811,7 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 		int iModifier = 100 + getMissionaryRateModifier() + GET_PLAYER(ePlayer).getMissionaryRateModifier();
 		changeMissionaryPoints(ePlayer, pCity->getMissionaryRate() * iModifier / 100);
 		int iThreshold = missionaryThreshold(ePlayer);
-		if (getMissionaryPoints(ePlayer) >= iThreshold)
+		if (getMissionaryPoints(ePlayer) >= iThreshold && pCity->getPopulation() > 1)
 		{
 			//spawn converted native
 			bool bUnitCreated = false;
@@ -19785,17 +19821,26 @@ void CvPlayer::applyMissionaryPoints(CvCity* pCity)
 				UnitTypes eUnit = (UnitTypes) GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eUnitClass);
 				if (eUnit != NO_UNIT)
 				{
-					CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->coord());
-					if(pUnit != NULL)
+					CvUnit* pNativeUnit = pCity->getPopulationUnitByIndex(0);
+
+					if (pNativeUnit != NULL)
 					{
-						bUnitCreated = true;
-						gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
+						if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, true, NO_PROFESSION))
+						{
+							CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(eUnit, GC.getUnitInfo(eUnit).getDefaultProfession(), pCity->coord());
 
-						CvWString szBuffer = gDLL->getText("TXT_KEY_NATIVES_CONVERTED", pCity->getNameKey());
-						gDLL->UI().addPlayerMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szBuffer, pCity, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_INFO, GC.getUnitInfo(eUnit).getButton(), COLOR_UNIT_TEXT, true, true);
+							if (pUnit != NULL)
+							{
+								bUnitCreated = true;
+								gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
 
-						changeMissionaryPoints(ePlayer, -iThreshold);
-						setMissionaryThresholdMultiplier(ePlayer, (getMissionaryThresholdMultiplier(ePlayer) * (100 + GC.getDefineINT("MISSIONARY_THRESHOLD_INCREASE"))) / 100);
+								CvWString szBuffer = gDLL->getText("TXT_KEY_NATIVES_CONVERTED", pCity->getNameKey());
+								gDLL->UI().addPlayerMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szBuffer, pCity, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_INFO, GC.getUnitInfo(eUnit).getButton(), COLOR_UNIT_TEXT, true, true);
+
+								changeMissionaryPoints(ePlayer, -iThreshold);
+								setMissionaryThresholdMultiplier(ePlayer, (getMissionaryThresholdMultiplier(ePlayer) * (100 + GC.getDefineINT("MISSIONARY_THRESHOLD_INCREASE"))) / 100);
+							}
+						}
 					}
 				}
 			}
@@ -19845,6 +19890,101 @@ int CvPlayer::missionaryThreshold(PlayerTypes ePlayer) const
 
 	return std::max(1, iThreshold);
 }
+
+// WTP, Schmiddie, Trade Post Mestizo - START
+int CvPlayer::getTradePostMestizoPoints(PlayerTypes ePlayer) const
+{
+	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
+	return m_em_iTradePostMestizoPoints.get(ePlayer);
+}
+
+void CvPlayer::changeTradePostMestizoPoints(PlayerTypes ePlayer, int iChange)
+{
+	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
+	if (iChange != 0)
+	{
+		m_em_iTradePostMestizoPoints.add(ePlayer, iChange);
+		FAssert(m_em_iTradePostMestizoPoints.get(ePlayer) >= 0);
+	}
+}
+
+int CvPlayer::getTradePostMestizoThresholdMultiplier(PlayerTypes ePlayer) const
+{
+	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
+	return m_em_iTradePostMestizoThresholdMultiplier.get(ePlayer);
+}
+
+void CvPlayer::setTradePostMestizoThresholdMultiplier(PlayerTypes ePlayer, int iValue)
+{
+	FAssert(ePlayer >= 0 && ePlayer < MAX_PLAYERS);
+	m_em_iTradePostMestizoThresholdMultiplier.set(ePlayer, iValue);
+	FAssert(getTradePostMestizoThresholdMultiplier(ePlayer) > 0);
+}
+
+int CvPlayer::tradePostMestizoThreshold(PlayerTypes ePlayer) const
+{
+	int iThreshold = ((GC.getDefineINT("TRADE_POST_MESTIZO_THRESHOLD") * std::max(0, getTradePostMestizoThresholdMultiplier(ePlayer))) / 100);
+
+	iThreshold *= GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+	iThreshold /= 100;
+
+	iThreshold *= GC.getEraInfo(GC.getGameINLINE().getStartEra()).getGrowthPercent();
+	iThreshold /= 100;
+
+	return std::max(1, iThreshold);
+}
+// WTP, Schmiddie, Trade Post Mestizo - END
+
+// WTP, Schmiddie, Trade Post Mestizo - START
+void CvPlayer::applyTradePostMestizoPoints(CvCity* pCity)
+{
+	FAssert(pCity->getOwnerINLINE() == getID());
+
+	PlayerTypes ePlayer = pCity->getTradePostPlayer();
+
+	if (ePlayer != NO_PLAYER)
+	{
+		int iModifier = 100 + getNativeTradeModifier() + GET_PLAYER(ePlayer).getNativeTradeModifier();
+
+		changeTradePostMestizoPoints(ePlayer, pCity->getNativeTradeRate() * iModifier / 100);
+
+		int iThreshold = tradePostMestizoThreshold(ePlayer);
+
+		if (getTradePostMestizoPoints(ePlayer) >= iThreshold && pCity->getPopulation() > 1)
+		{
+			UnitClassTypes eUnitClass = (UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_MESTIZZO");
+			UnitTypes eUnit = (UnitTypes)GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eUnitClass);
+
+			if (eUnit != NO_UNIT)
+			{
+				CvUnit* pNativeUnit = pCity->getPopulationUnitByIndex(0);
+
+				if (pNativeUnit != NULL)
+				{
+					if (pCity->removePopulationUnit(CREATE_ASSERT_DATA, pNativeUnit, true, NO_PROFESSION))
+					{
+						CvUnit* pUnit = GET_PLAYER(ePlayer).initUnit(
+							eUnit,
+							GC.getUnitInfo(eUnit).getDefaultProfession(),
+							pCity->coord()
+						);
+
+						if (pUnit != NULL)
+						{
+							gDLL->getEventReporterIFace()->missionaryConvertedUnit(pUnit);
+
+							CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_MESTIZO_CREATED", pCity->getNameKey());
+							gDLL->UI().addPlayerMessage(ePlayer, true, GC.getEVENT_MESSAGE_TIME(), szBuffer, pCity, "AS2D_UNIT_GREATPEOPLE", MESSAGE_TYPE_INFO, GC.getUnitInfo(eUnit).getButton(), COLOR_UNIT_TEXT, true, true);
+
+							changeTradePostMestizoPoints(ePlayer, -iThreshold);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+// WTP, Schmiddie, Trade Post Mestizo - END
 
 void CvPlayer::burnMissions(PlayerTypes ePlayer)
 {

@@ -322,6 +322,10 @@ enum SavegameVariableTypes
 	PlayerSave_SlaveEmancipationCount,
 	PlayerSave_SlaveEmancipationCooldownEndTurn,
 	// WTP, Schmiddie, Slave Emancipation - END
+	// WTP, Schmiddie, Trade Post Mestizo - START
+	PlayerSave_TradePostMestizoPoints,
+	PlayerSave_TradePostMestizoThresholdMultiplier,
+	// WTP, Schmiddie, Trade Post Mestizo - END
 
 	NUM_SAVE_ENUM_VALUES,
 };
@@ -532,6 +536,10 @@ const char* getSavedEnumNamePlayer(SavegameVariableTypes eType)
 	case PlayerSave_SlaveEmancipationCount: return "PlayerSave_SlaveEmancipationCount";
 	case PlayerSave_SlaveEmancipationCooldownEndTurn: return "PlayerSave_SlaveEmancipationCooldownEndTurn";
 	// WTP, Schmiddie, Slave Emancipation - END
+	// WTP, Schmiddie, Trade Post Mestizo - START
+	case PlayerSave_TradePostMestizoPoints: return "PlayerSave_TradePostMestizoPoints";
+	case PlayerSave_TradePostMestizoThresholdMultiplier: return "PlayerSave_TradePostMestizoThresholdMultiplier";
+	// WTP, Schmiddie, Trade Post Mestizo - END
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -677,6 +685,10 @@ void CvPlayer::resetSavedData(PlayerTypes eID, bool bConstructorCall)
 	m_em_iSpecialBuildingNotRequiredCount.reset();
 	m_em_iMissionaryPoints.reset();
 	m_em_iMissionaryThresholdMultiplier.reset();
+	// WTP, Schmiddie, Trade Post Mestizo - START
+	m_em_iTradePostMestizoPoints.reset();
+	m_em_iTradePostMestizoThresholdMultiplier.reset();
+	// WTP, Schmiddie, Trade Post Mestizo - END
 	m_em_iProfessionEquipmentModifier.reset();
 	m_em_iTraitCount.reset();
 
@@ -933,6 +945,10 @@ void CvPlayer::read(CvSavegameReader reader)
 		case PlayerSave_SpecialBuildingNotRequiredCount: reader.Read(m_em_iSpecialBuildingNotRequiredCount); break;
 		case PlayerSave_MissionaryPoints: reader.Read(m_em_iMissionaryPoints); break;
 		case PlayerSave_MissionaryThresholdMultiplier: reader.Read(m_em_iMissionaryThresholdMultiplier); break;
+		// WTP, Schmiddie, Trade Post Mestizo - START
+		case PlayerSave_TradePostMestizoPoints: reader.Read(m_em_iTradePostMestizoPoints); break;
+		case PlayerSave_TradePostMestizoThresholdMultiplier: reader.Read(m_em_iTradePostMestizoThresholdMultiplier); break;
+		// WTP, Schmiddie, Trade Post Mestizo - END
 		case PlayerSave_ProfessionEquipmentModifier: reader.Read(m_em_iProfessionEquipmentModifier); break;
 		case PlayerSave_TraitCount: reader.Read(m_em_iTraitCount); break;
 
@@ -1211,6 +1227,10 @@ void CvPlayer::write(CvSavegameWriter writer)
 	writer.Write(PlayerSave_SpecialBuildingNotRequiredCount, m_em_iSpecialBuildingNotRequiredCount);
 	writer.Write(PlayerSave_MissionaryPoints, m_em_iMissionaryPoints);
 	writer.Write(PlayerSave_MissionaryThresholdMultiplier, m_em_iMissionaryThresholdMultiplier);
+	// WTP, Schmiddie, Trade Post Mestizo - START
+	writer.Write(PlayerSave_TradePostMestizoPoints, m_em_iTradePostMestizoPoints);
+	writer.Write(PlayerSave_TradePostMestizoThresholdMultiplier, m_em_iTradePostMestizoThresholdMultiplier);
+	// WTP, Schmiddie, Trade Post Mestizo - END
 	writer.Write(PlayerSave_ProfessionEquipmentModifier, m_em_iProfessionEquipmentModifier);
 	writer.Write(PlayerSave_TraitCount, m_em_iTraitCount);
 

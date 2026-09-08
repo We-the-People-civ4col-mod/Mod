@@ -540,13 +540,18 @@ void CvCityAI::AI_chooseProduction()
 		return;
 	}
 
+	// WTP, Schmiddie, Native military unit cap START
 	if (isNative())
 	{
-		if (AI_chooseUnit(UNITAI_DEFENSIVE, false))
+		if (!kPlayer.AI_isNativeMilitaryUnitCapReached())
 		{
-			return;
+			if (AI_chooseUnit(UNITAI_DEFENSIVE, false))
+			{
+				return;
+			}
 		}
 	}
+	// WTP, Schmiddie, Native military unit cap END
 
 	if (AI_chooseUnit(NO_UNITAI, false))
 	{
@@ -705,6 +710,15 @@ UnitTypes CvCityAI::AI_bestUnit(bool bAsync, UnitAITypes* peBestUnitAI, bool bPi
 		}
 	}
 	// TAC - AI Training - koma13 - END
+
+	// WTP, Schmiddie, Native military unit cap START
+	if (GET_PLAYER(getOwnerINLINE()).AI_isNativeMilitaryUnitCapReached())
+	{
+		aiUnitAIVal[UNITAI_DEFENSIVE] = 0;
+		aiUnitAIVal[UNITAI_OFFENSIVE] = 0;
+		aiUnitAIVal[UNITAI_COUNTER] = 0;
+	}
+	// WTP, Schmiddie, Native military unit cap END
 
 	for (UnitAITypes eUnitAI = FIRST_UNITAI; eUnitAI < NUM_UNITAI_TYPES; ++eUnitAI)
 	{
@@ -3295,7 +3309,7 @@ struct BestJob
 // Note: cannot be a member since it must be called from the functor
 BestJob AI_findBestJob(const CvCityAI& kCity, ProfessionTypes eProfession, const CvUnit& kUnit, bool bIndoorOnly)
 {
-	int iBestValue = 0;
+	int iBestValue = -1;
 	CityPlotTypes eBestPlot = NO_CITY_PLOT;
 	ProfessionTypes eBestProfession = NO_PROFESSION;
 
@@ -3665,13 +3679,92 @@ CvUnit* CvCityAI::AI_parallelAssignToBestJob(CvUnit& kUnit, bool bIndoorOnly)
 
 	FAssertMsg(rngStatePrior == rngStatePost, "It looks like at least one random number has been generated between the invokation of tbb::* !");
 
-	const int iBestValue = fbj.bestJob.iBestValue;
-	const CityPlotTypes eBestPlot = (CityPlotTypes)fbj.bestJob.iBestPlot;
-	const ProfessionTypes eBestProfession = fbj.bestJob.eBestProfession;
+	int iBestValue = fbj.bestJob.iBestValue;
+	CityPlotTypes eBestPlot = (CityPlotTypes)fbj.bestJob.iBestPlot;
+	ProfessionTypes eBestProfession = fbj.bestJob.eBestProfession;
 
 	// Do the regular serial code here
 
 	jobMutex.lock();
+
+	// WTP, Schmiddie, Native citizen fallback START
+	if (eBestProfession == NO_PROFESSION && isNative() && !bIndoorOnly)
+	{
+		int iNativeBestValue = MIN_INT;
+		CityPlotTypes eNativeBestPlot = NO_CITY_PLOT;
+		ProfessionTypes eNativeBestProfession = NO_PROFESSION;
+
+		FOREACH(CityPlot)
+		{
+			if (eLoopCityPlot == CITY_HOME_PLOT)
+			{
+				continue;
+			}
+
+			if (isPlotProducingYields(eLoopCityPlot))
+			{
+				continue;
+			}
+
+			CvPlot* pLoopPlot = getCityIndexPlot(eLoopCityPlot);
+
+			if (pLoopPlot == NULL)
+			{
+				continue;
+			}
+
+			if (!canWork(pLoopPlot))
+			{
+				continue;
+			}
+
+			for (ProfessionTypes eLoopProfession = FIRST_PROFESSION; eLoopProfession < NUM_PROFESSION_TYPES; ++eLoopProfession)
+			{
+				const CvProfessionInfo& kProfession = GC.getProfessionInfo(eLoopProfession);
+
+				if (!kProfession.isCitizen())
+				{
+					continue;
+				}
+
+				if (!kProfession.isWorkPlot())
+				{
+					continue;
+				}
+
+				if (!GC.getCivilizationInfo(getCivilizationType()).isValidProfession(eLoopProfession))
+				{
+					continue;
+				}
+
+				if (!kUnit.canHaveProfession(eLoopProfession, false))
+				{
+					continue;
+				}
+
+				const int iValue = AI_citizenProfessionValue(
+					eLoopProfession,
+					kUnit,
+					pLoopPlot,
+					NULL);
+
+				if (iValue > iNativeBestValue)
+				{
+					iNativeBestValue = iValue;
+					eNativeBestProfession = eLoopProfession;
+					eNativeBestPlot = eLoopCityPlot;
+				}
+			}
+		}
+
+		if (eNativeBestProfession != NO_PROFESSION && eNativeBestPlot != NO_CITY_PLOT)
+		{
+			iBestValue = iNativeBestValue;
+			eBestProfession = eNativeBestProfession;
+			eBestPlot = eNativeBestPlot;
+		}
+	}
+	// WTP, Schmiddie, Native citizen fallback END
 
 	if (eBestProfession == NO_PROFESSION)
 	{
@@ -4204,6 +4297,13 @@ int CvCityAI::AI_citizenProfessionValue(
 			iInputValue = 100 * inValue;
 		}
 
+		// WTP, Schmiddie, Native food surplus START
+		if (isNative() && eY == YIELD_FOOD && getYieldStored(YIELD_FOOD) >= 500)
+		{
+			iOutputValue /= 4;
+		}
+		// WTP, Schmiddie, Native food surplus END
+
 		// … other AI tweaks (culture, cargo, etc.) unchanged …
 
 		// g) final net for this yield
@@ -4215,21 +4315,30 @@ int CvCityAI::AI_citizenProfessionValue(
 	for (int j = 0; j < yieldsOut.count && j < MAX_OUTPUT_YIELDS; ++j)
 		combined += vals[j].iNetValue;
 
-	// 3. staff the INPUT first when food is already covered. city plot always grows food
-	//    plus one cargo; extra farmers on the ring beat berry/ore/cotton plots if we don't
-	//    cut surplus food and boost needed indoor inputs.
-	if (kProfInfo.isWorkPlot() && yieldsOut.count > 0)
+	// 3. staff the INPUT first when food is safely covered.
+	if (!isNative() && kProfInfo.isWorkPlot() && yieldsOut.count > 0)
 	{
 		const YieldTypes eY = yieldsOut.yields[0].eYield;
+
 		if (eY == YIELD_FOOD)
 		{
 			if (AI_getEmphasizeYieldCount(YIELD_FOOD) <= 0)
 			{
 				const int iFoodNeed = getPopulation() * GLOBAL_DEFINE_FOOD_CONSUMPTION_PER_POPULATION;
-				const int iFoodHave = getYieldStored(YIELD_FOOD) + getRawYieldProduced(YIELD_FOOD);
-				if (iFoodNeed > 0 && iFoodHave > iFoodNeed * 2)
+				const int iFoodProduced = getRawYieldProduced(YIELD_FOOD);
+				const int iFoodStored = getYieldStored(YIELD_FOOD);
+
+				if (iFoodNeed > 0)
 				{
-					combined /= 4;
+					if (iFoodProduced < iFoodNeed)
+					{
+						combined *= 3;
+					}
+					else if (iFoodProduced > (iFoodNeed * 3) / 2 &&
+						iFoodStored > iFoodNeed * 4)
+					{
+						combined /= 4;
+					}
 				}
 			}
 		}
@@ -4238,6 +4347,21 @@ int CvCityAI::AI_citizenProfessionValue(
 			combined *= 3;
 		}
 	}
+
+	// Prefer specialists in their ideal profession.
+	if (!isNative() && kUnit.AI_getIdealProfession() != NO_PROFESSION)
+	{
+		if (eProfession == kUnit.AI_getIdealProfession())
+		{
+			combined *= 2;
+		}
+		else
+		{
+			combined /= 2;
+		}
+	}
+
+	return branchless::max(0, combined);
 
 	return branchless::max(0, combined);
 }
@@ -5714,7 +5838,7 @@ void CvCityAI::AI_bestPlotBuild(const CvPlot* pPlot, int* piBestValue, BuildType
 			}
 			// R&R, ray, AI builds Improvements wiser - START
 			//else if (eYield != YIELD_FOOD)
-			else if (eYield != YIELD_FOOD && eYield != YIELD_LUMBER && eYield != YIELD_FUR && eYield != YIELD_WILD_FEATHERS)
+			else if (eYield != YIELD_FOOD && eYield != YIELD_LUMBER && eYield != YIELD_WILD_FEATHERS)
 			// R&R, ray, AI builds Improvements wiser - END
 			{
 				if (aiCurrentYields[eYield] <= (kOwner.AI_getBestPlotYield(eYield) / 2))

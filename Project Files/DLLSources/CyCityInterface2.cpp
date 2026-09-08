@@ -37,6 +37,7 @@ void CyCityPythonInterface2(python::class_<CyCity>& x)
 		.def("cultureDistance", &CyCity::cultureDistance, "int (iDX, iDY) - culture distance")
 		.def("isHasBuilding", &CyCity::isHasBuilding, "bool (int iBuildingID)")
 		.def("getProfessionOutput", &CyCity::getProfessionOutput, "int (int /*ProfessionTypes*/ iProfession, CyUnit* pUnit)")
+		.def("getProfessionActualOutput", &CyCity::getProfessionActualOutput, "int (int /*ProfessionTypes*/ iProfession, CyUnit* pUnit)")
 
 		.def("getID", &CyCity::getID, "int () - index ID # for the city - use with pPlayer.getCity(ID) to obtain city instance")
 		.def("getX", &CyCity::getX, "int () - X coordinate for the cities plot")

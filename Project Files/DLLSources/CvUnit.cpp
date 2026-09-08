@@ -630,6 +630,10 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 	oldUnits.erase(oldUnits.begin(), oldUnits.end());
 	CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
 
+	std::vector<UnitTypes> aeCapturedYieldCargoTypes;
+	std::vector<ProfessionTypes> aeCapturedYieldCargoProfessions;
+	std::vector<int> aiCapturedYieldCargoStored;
+
 	while (pUnitNode != NULL)
 	{
 		oldUnits.push_back(pUnitNode->m_data);
@@ -647,6 +651,32 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 				//save old units because kill will clear the static list
 				std::vector<IDInfo> tempUnits = oldUnits;
 
+				// Preserve yield cargo data of a captured land transport so it can
+				// be recreated on the replacement transport.
+				if (getDomainType() == DOMAIN_LAND &&
+					cargoSpace() > 0 &&
+					pLoopUnit->isYield())
+				{
+					if (bDelay)
+					{
+						continue;
+					}
+
+					if (getCapturingPlayer() != NO_PLAYER)
+					{
+						aeCapturedYieldCargoTypes.push_back(pLoopUnit->getUnitType());
+						aeCapturedYieldCargoProfessions.push_back(pLoopUnit->getProfession());
+						aiCapturedYieldCargoStored.push_back(pLoopUnit->getYieldStored());
+
+						pLoopUnit->setCapturingPlayer(NO_PLAYER);
+						pLoopUnit->setTransportUnit(NULL, false);
+						pLoopUnit->kill(false, pAttacker);
+
+						oldUnits = tempUnits;
+						continue;
+					}
+				}
+				
 				if (pPlot->isValidDomainForLocation(*pLoopUnit))
 				{
 					pLoopUnit->setCapturingPlayer(getCapturingPlayer());
@@ -749,6 +779,23 @@ void CvUnit::kill(bool bDelay, CvUnit* pAttacker)
 
 				if (bAlive)
 				{
+					for (uint iYieldCargo = 0; iYieldCargo < aeCapturedYieldCargoTypes.size(); ++iYieldCargo)
+					{
+						CvUnit* pCapturedYieldCargo = GET_PLAYER(eCapturingPlayer).initUnit(
+							aeCapturedYieldCargoTypes[iYieldCargo],
+							aeCapturedYieldCargoProfessions[iYieldCargo],
+							pPlot->getX_INLINE(),
+							pPlot->getY_INLINE(),
+							NO_UNITAI,
+							NO_DIRECTION,
+							aiCapturedYieldCargoStored[iYieldCargo]);
+
+						if (pCapturedYieldCargo != NULL)
+						{
+							pCapturedYieldCargo->setTransportUnit(pkCapturedUnit);
+						}
+					}
+
 					pkCapturedUnit->addDamageRandom(10, 75, 5);
 					CvWString szBuffer;
 					szBuffer = gDLL->getText("TXT_KEY_MISC_YOU_CAPTURED_UNIT", GC.getUnitInfo(eCaptureUnitType).getTextKeyWide());
@@ -1969,7 +2016,15 @@ void CvUnit::updateCombat(bool bQuick)
 							{
 								if (pLoopUnit->getTransportUnit()->getDomainType() != DOMAIN_SEA)
 								{
-									pLoopUnit->kill(false);
+									CvUnit* pTransportUnit = pLoopUnit->getTransportUnit();
+
+									if (!(pLoopUnit->isYield() &&
+										pTransportUnit->getDomainType() == DOMAIN_LAND &&
+										pTransportUnit->cargoSpace() > 0 &&
+										pTransportUnit->getCapturingPlayer() == getOwnerINLINE()))
+									{
+										pLoopUnit->kill(false);
+									}
 								}
 							}
 						}
@@ -2560,6 +2615,16 @@ bool CvUnit::isBetterDefenderThan(const CvUnit* pDefender, const CvUnit* pAttack
 	int iOurDefense;
 	int iTheirDefense;
 
+	// WTP, Schmiddie, Large Rivers - Land and sea units use separate combat layers
+	if (pAttacker != NULL &&
+		plot() != NULL &&
+		plot()->getTerrainType() == TERRAIN_LARGE_RIVERS &&
+		getDomainType() != pAttacker->getDomainType())
+	{
+		return false;
+	}
+	// WTP, Schmiddie, Large Rivers - END
+
 	if (pDefender == NULL)
 	{
 		return true;
@@ -2816,22 +2881,53 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 	// WTP, Slave Emancipation - START
 	case COMMAND_GRANT_FREEDOM:
 		{
+			const UnitClassTypes eUnitClass =
+				getUnitInfo().getUnitClassType();
+
+			const UnitClassTypes eIndenturedServantClass =
+				(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_INDENTURED_SERVANT");
+
+			const bool bGrantFreedomUnit =
+				eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE ||
+				eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE ||
+				eUnitClass == UNITCLASS_PRISONER_OF_WAR ||
+				eUnitClass == eIndenturedServantClass;
+
+			// Keep the button visible for all generally eligible unit classes on city tiles,
+			// even if the command is currently disabled.
+			if (bTestVisible)
+			{
+				if (!bGrantFreedomUnit)
+				{
+					return false;
+				}
+
+				CvPlot* pPlot = plot();
+
+				return pPlot != NULL &&
+					pPlot->getPlotCity() != NULL &&
+					pPlot->getPlotCity()->getOwnerINLINE() == getOwnerINLINE();
+			}
+
+			if (!bGrantFreedomUnit)
+			{
+				break;
+			}
+
+			if (!canGrantFreedom())
+			{
+				break;
+			}
+
 			const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 
-			if (canGrantFreedom())
+			if (kOwner.isHuman() &&
+				kOwner.isSlaveEmancipationOnCooldown())
 			{
-				// Keep the command visible while it is temporarily unavailable.
-				if (bTestVisible)
-				{
-					return true;
-				}
-
-				// The cooldown only applies to human players.
-				if (!kOwner.isHuman() || !kOwner.isSlaveEmancipationOnCooldown())
-				{
-					return true;
-				}
+				break;
 			}
+
+			return true;
 		}
 		break;
 	
@@ -2900,6 +2996,22 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 		{
 			return true;
 		}
+		// Mixed selection: the exe enables the button from the head unit.
+		// Treasure/wagon as head would disable Talk to Chief even when a
+		// failed trader in the same group can speak.
+		if (getGroup() != NULL)
+		{
+			CLLNode<IDInfo>* pUnitNode = getGroup()->headUnitNode();
+			while (pUnitNode != NULL)
+			{
+				CvUnit* pLoopUnit = ::getUnit(pUnitNode->m_data);
+				pUnitNode = getGroup()->nextUnitNode(pUnitNode);
+				if (pLoopUnit != NULL && pLoopUnit != this && pLoopUnit->canSpeakWithChief(plot()))
+				{
+					return true;
+				}
+			}
+		}
 		break;
 
 	case COMMAND_HOTKEY:
@@ -2913,14 +3025,6 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 	case COMMAND_GOTO_MENU:
 		if (getTransportUnit() == NULL || plot()->isValidDomainForAction(getUnitType()))
 		{
-			// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -START
-			// Erik: Disable the goto menu for coastal transports for now until we figure
-			// out how to filter the unreachable cities
-			// if (canCrossCoastOnly())
-			// {
-			//	 return false;
-			// }
-			// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -END
 			return true;
 			/*
 			if (canCrossOcean(plot(), UNIT_TRAVEL_STATE_TO_EUROPE) || canAutoCrossOcean(plot()))
@@ -3212,6 +3316,11 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 		// WTP, Slave Emancipation - START
 		case COMMAND_GRANT_FREEDOM:
 			{
+				if (!canGrantFreedom())
+				{
+					break;
+				}
+
 				CvCity* pCity = NULL;
 
 				if (plot() != NULL)
@@ -3221,22 +3330,35 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 
 				CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
 
+				const UnitClassTypes eUnitClass =
+					getUnitInfo().getUnitClassType();
+
+				const bool bSlaveEmancipation =
+					eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE ||
+					eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE;
+
 				grantFreedom();
 
-				if (pCity != NULL)
+				// Unrest only for actual slave emancipation.
+				if (pCity != NULL && bSlaveEmancipation)
 				{
 					const int iGameSpeedPercent =
-						GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+						GC.getGameSpeedInfo(
+							GC.getGameINLINE().getGameSpeedType()
+						).getGrowthPercent();
 
 					const int iBaseUnrestTurns =
 						GC.getDefineINT("SLAVE_EMANCIPATION_UNREST_TURNS");
 
-					const int iUnrestTurns = std::max(
-						1,
-						iBaseUnrestTurns * iGameSpeedPercent / 100
-					);
+					const int iUnrestTurns =
+						std::max(
+							1,
+							iBaseUnrestTurns * iGameSpeedPercent / 100
+						);
 
-					pCity->changeSlaveEmancipationPendingUnrest(iUnrestTurns);
+					pCity->changeSlaveEmancipationPendingUnrest(
+						iUnrestTurns
+					);
 				}
 
 				// Count manual emancipation only for human players.
@@ -3257,11 +3379,14 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 						const int iCooldownTurns =
 							std::max(
 								0,
-								GC.getDefineINT("SLAVE_EMANCIPATION_PLAYER_COOLDOWN")
+								GC.getDefineINT(
+									"SLAVE_EMANCIPATION_PLAYER_COOLDOWN"
+								)
 							);
 
 						kOwner.setSlaveEmancipationCooldownEndTurn(
-							GC.getGameINLINE().getGameTurn() + iCooldownTurns
+							GC.getGameINLINE().getGameTurn() +
+							iCooldownTurns
 						);
 					}
 				}
@@ -3331,7 +3456,7 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 		// R&R, ray , Stirring Up Natives - END
 
 		case COMMAND_SPEAK_WITH_CHIEF:
-			if (isGroupHead())
+			if (getGroup() != NULL)
 			{
 				getGroup()->speakWithChief();
 			}
@@ -4017,6 +4142,41 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 	}
 
 	const bool bBoarding = !bAttack && !bIgnoreLoad && canLoad(&kPlot, false);
+
+	bool bVisibleEnemyUnit = kPlot.isVisibleEnemyUnit(this);
+	bool bVisibleOtherUnit = kPlot.isVisibleOtherUnit(getOwnerINLINE());
+
+	// WTP, Schmiddie, Large Rivers - Land and sea units use separate combat layers
+	if (kPlot.getTerrainType() == TERRAIN_LARGE_RIVERS &&
+		(eDomainType == DOMAIN_LAND || eDomainType == DOMAIN_SEA))
+	{
+		bVisibleEnemyUnit = false;
+		bVisibleOtherUnit = false;
+
+		for (int i = 0; i < kPlot.getNumUnits(); ++i)
+		{
+			CvUnit* pLoopUnit = kPlot.getUnitByIndex(i);
+
+			if (pLoopUnit == NULL ||
+				pLoopUnit->getTransportUnit() != NULL ||
+				pLoopUnit->getDomainType() != eDomainType ||
+				pLoopUnit->isInvisible(getTeam(), false))
+			{
+				continue;
+			}
+
+			if (pLoopUnit->getOwnerINLINE() != getOwnerINLINE())
+			{
+				bVisibleOtherUnit = true;
+			}
+
+			if (isEnemy(pLoopUnit->getCombatTeam(getTeam(), &kPlot), &kPlot))
+			{
+				bVisibleEnemyUnit = true;
+			}
+		}
+	}
+	// WTP, Schmiddie, Large Rivers - END
 	
 	if (canAttack())
 	{
@@ -4024,10 +4184,10 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 		{
 			if (!isHuman() || (kPlot.isVisible(getTeam(), false)))
 			{
-				if (!bBoarding && kPlot.isVisibleEnemyUnit(this) != bAttack)
+				if (!bBoarding && bVisibleEnemyUnit != bAttack)
 				{
 					//FAssertMsg(isHuman() || (!bDeclareWar || (pPlot->isVisibleOtherUnit(getOwnerINLINE()) != bAttack)), "hopefully not an issue, but tracking how often this is the case when we dont want to really declare war");
-					if (!bDeclareWar || (kPlot.isVisibleOtherUnit(getOwnerINLINE()) != bAttack && !(bAttack && kPlot.getPlotCity() && !isNoCityCapture())))
+					if (!bDeclareWar || (bVisibleOtherUnit != bAttack && !(bAttack && kPlot.getPlotCity() && !isNoCityCapture())))
 					{
 						return false;
 					}
@@ -4051,7 +4211,7 @@ bool CvUnit::canMoveInto(CvPlot const& kPlot, bool bAttack, bool bDeclareWar, bo
 					return false;
 				}
 
-				if (kPlot.isVisibleEnemyUnit(this))
+				if (bVisibleEnemyUnit)
 				{
 					return false;
 				}
@@ -4324,28 +4484,8 @@ bool CvUnit::isValidPlot(const CvPlot* pPlot) const
 	return true;
 }
 
-int CvUnit::canCrossCoastOnly() const
-{
-	CLLNode<IDInfo>* pUnitNode = getGroup()->headUnitNode();
-
-	// Determine if the unit may enter non-coast water plots
-	while (pUnitNode != NULL)
-	{
-		CvUnit *pLoopUnit = ::getUnit(pUnitNode->m_data);
-
-		if (pLoopUnit != NULL && pLoopUnit->getUnitInfo().getTerrainImpassable(TERRAIN_OCEAN))
-		{
-			return true;
-		}
-		pUnitNode = getGroup()->nextUnitNode(pUnitNode);
-	}
-
-	return false;
-}
-
 bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 {
-	const bool canCrossOcean = !canCrossCoastOnly();
 	CLLNode<IDInfo>* pUnitNode = NULL;
 
 	const CvPlayer& kOwner = GET_PLAYER(getOwnerINLINE());
@@ -4393,7 +4533,14 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 			return false;
 		}
 
-		if (!canCrossOcean || !canAutoCrossOcean(plot()))
+		// WTP, Schmiddie, Unit Travel Restrictions - START
+		if (!getUnitInfo().canSailToEurope())
+		{
+			return false;
+		}
+		// WTP, Schmiddie, Unit Travel Restrictions - END
+
+		if (!canAutoCrossOcean(plot()))
 		{
 			return false;
 		}
@@ -4406,7 +4553,14 @@ bool CvUnit::canAutomate(AutomateTypes eAutomate) const
 			return false;
 		}
 
-		if (!canCrossOcean || !canAutoCrossOcean(plot()))
+		// WTP, Schmiddie, Unit Travel Restrictions - START
+		if (!getUnitInfo().canSailToAfrica())
+		{
+			return false;
+		}
+		// WTP, Schmiddie, Unit Travel Restrictions - END
+
+		if (!canAutoCrossOcean(plot()))
 		{
 			return false;
 		}
@@ -4675,11 +4829,22 @@ void CvUnit::gift(bool bTestTransport)
 	pGiftUnit->convert(this, true);
 
 	int iUnitValue = 0;
-	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+
+	if (pGiftUnit->getUnitInfo().isTreasure())
 	{
-		iUnitValue += pGiftUnit->getUnitInfo().getYieldCost(eYield);
+		iUnitValue = pGiftUnit->getYieldStored() / 2;
 	}
-	GET_PLAYER(pGiftUnit->getOwnerINLINE()).AI_changePeacetimeGrantValue(eOwner, iUnitValue / 5);
+	else
+	{
+		for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
+		{
+			iUnitValue += pGiftUnit->getUnitInfo().getYieldCost(eYield);
+		}
+
+		iUnitValue /= 5;
+	}
+
+	GET_PLAYER(pGiftUnit->getOwnerINLINE()).AI_changePeacetimeGrantValue(eOwner, iUnitValue);
 
 	szBuffer = gDLL->getText("TXT_KEY_MISC_GIFTED_UNIT_TO_YOU", GET_PLAYER(eOwner).getNameKey(), pGiftUnit->getNameKey());
 	gDLL->UI().addPlayerMessage(pGiftUnit->getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, "AS2D_UNITGIFTED", MESSAGE_TYPE_INFO, pGiftUnit->getButton(), COLOR_WHITE, pGiftUnit->getX_INLINE(), pGiftUnit->getY_INLINE(), true, true);
@@ -5328,6 +5493,13 @@ bool CvUnit::canCrossOcean(const CvPlot* pPlot, UnitTravelStates eNewState) cons
 		return false;
 	}
 
+	// WTP, Schmiddie, Unit Travel Restrictions - START
+	if (eNewState == UNIT_TRAVEL_STATE_TO_EUROPE && !getUnitInfo().canSailToEurope())
+	{
+		return false;
+	}
+	// WTP, Schmiddie, Unit Travel Restrictions - END
+
 	switch (getUnitTravelState())
 	{
 	case NO_UNIT_TRAVEL_STATE:
@@ -5414,6 +5586,13 @@ bool CvUnit::canSailToAfrica(const CvPlot* pPlot, UnitTravelStates eNewState) co
 	{
 		return false;
 	}
+
+	// WTP, Schmiddie, Unit Travel Restrictions - START
+	if (getUnitTravelState() != UNIT_TRAVEL_STATE_IN_AFRICA && !getUnitInfo().canSailToAfrica())
+	{
+		return false;
+	}
+	// WTP, Schmiddie, Unit Travel Restrictions - END
 
 	switch (getUnitTravelState())
 	{
@@ -6146,7 +6325,7 @@ UnitTypes CvUnit::getLearnUnitType(const CvPlot* pPlot) const
 		return NO_UNIT;
 	}
 
-	UnitTypes eTeachUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eTeachUnitClass);
+	UnitTypes eTeachUnit = (UnitTypes) GC.getUnitClassInfo(eTeachUnitClass).getDefaultUnitIndex();
 	if (eTeachUnit == getUnitType())
 	{
 		return NO_UNIT;
@@ -7085,7 +7264,7 @@ void CvUnit::speakWithChief()
 		UnitClassTypes eTeachUnitClass = pCity->getTeachUnitClass();
 		if (eTeachUnitClass != NO_UNITCLASS)
 		{
-			UnitTypes eTeachUnit = (UnitTypes) GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(eTeachUnitClass);
+			UnitTypes eTeachUnit = (UnitTypes)GC.getUnitClassInfo(eTeachUnitClass).getDefaultUnitIndex();
 			if (eTeachUnit != NO_UNIT)
 			{
 				szExpertText = gDLL->getText("AI_DIPLO_CHIEF_LEARN_UNIT_DESCRIPTION", GC.getUnitInfo(eTeachUnit).getTextKeyWide());
@@ -10754,8 +10933,6 @@ bool CvUnit::canAssignTradeRoute(int iRouteID, bool bReusePath) const
 	// Europe destination special case (no map city)
 	if (kDst.iID == CvTradeRoute::EUROPE_CITY_ID)
 	{
-		if (canCrossCoastOnly())
-			return false;
 		if (getDomainType() != DOMAIN_SEA)
 			return false;
 		if (!kPlayer.isYieldEuropeTradable(pRoute->getYield()))
@@ -17146,6 +17323,9 @@ bool CvUnit::canGrantFreedom() const
 {
 	const UnitClassTypes eUnitClass = getUnitInfo().getUnitClassType();
 
+	const UnitClassTypes eIndenturedServantClass =
+		(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_INDENTURED_SERVANT");
+
 	UnitClassTypes eFreedUnitClass = NO_UNITCLASS;
 
 	if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
@@ -17155,6 +17335,22 @@ bool CvUnit::canGrantFreedom() const
 	else if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
 	{
 		eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE;
+	}
+	else if (eUnitClass == UNITCLASS_PRISONER_OF_WAR)
+	{
+		eFreedUnitClass = eIndenturedServantClass;
+	}
+	else if (eUnitClass == eIndenturedServantClass)
+	{
+		// Former Prisoners of War must complete their remaining term of service
+		// before they can be released as Free Colonists.
+		if (getLbDFreeReadyTurn() > GC.getGameINLINE().getGameTurn())
+		{
+			return false;
+		}
+
+		eFreedUnitClass =
+			(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_COLONIST");
 	}
 	else
 	{
@@ -17167,6 +17363,36 @@ bool CvUnit::canGrantFreedom() const
 	if (eFreedUnit == NO_UNIT)
 	{
 		return false;
+	}
+
+	// Indentured Servants require payment of the difference between
+	// their current Europe price and the price of a Free Colonist.
+	if (eUnitClass == eIndenturedServantClass)
+	{
+		const UnitTypes eIndenturedServant =
+			kPlayer.getUnitType(eIndenturedServantClass);
+
+		if (eIndenturedServant == NO_UNIT)
+		{
+			return false;
+		}
+
+		const int iFreeColonistPrice =
+			kPlayer.getEuropeUnitBuyPrice(eFreedUnit);
+
+		const int iIndenturedServantPrice =
+			kPlayer.getEuropeUnitBuyPrice(eIndenturedServant);
+
+		if (iFreeColonistPrice >= 0 && iIndenturedServantPrice >= 0)
+		{
+			const int iReleasePrice =
+				std::max(0, iFreeColonistPrice - iIndenturedServantPrice);
+
+			if (kPlayer.getGold() < iReleasePrice)
+			{
+				return false;
+			}
+		}
 	}
 
 	// Population unit: already inside a city
@@ -17215,7 +17441,17 @@ void CvUnit::grantFreedom()
 
 	const UnitClassTypes eUnitClass = getUnitInfo().getUnitClassType();
 
+	const UnitClassTypes eIndenturedServantClass =
+		(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_INDENTURED_SERVANT");
+
+	const UnitClassTypes eColonistClass =
+		(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_COLONIST");
+
 	UnitClassTypes eFreedUnitClass = NO_UNITCLASS;
+	int iReleasePrice = 0;
+
+	const bool bFormerPrisonerOfWar =
+		eUnitClass == UNITCLASS_PRISONER_OF_WAR;
 
 	if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
 	{
@@ -17224,6 +17460,42 @@ void CvUnit::grantFreedom()
 	else if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
 	{
 		eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE;
+	}
+	else if (eUnitClass == UNITCLASS_PRISONER_OF_WAR)
+	{
+		eFreedUnitClass = eIndenturedServantClass;
+	}
+	else if (eUnitClass == eIndenturedServantClass)
+	{
+		eFreedUnitClass = eColonistClass;
+
+		const UnitTypes eColonist =
+			kPlayer.getUnitType(eColonistClass);
+
+		const UnitTypes eIndenturedServant =
+			kPlayer.getUnitType(eIndenturedServantClass);
+
+		if (eColonist == NO_UNIT || eIndenturedServant == NO_UNIT)
+		{
+			return;
+		}
+
+		const int iColonistPrice =
+			kPlayer.getEuropeUnitBuyPrice(eColonist);
+
+		const int iIndenturedServantPrice =
+			kPlayer.getEuropeUnitBuyPrice(eIndenturedServant);
+
+		if (iColonistPrice >= 0 && iIndenturedServantPrice >= 0)
+		{
+			iReleasePrice =
+				std::max(0, iColonistPrice - iIndenturedServantPrice);
+		}
+
+		if (kPlayer.getGold() < iReleasePrice)
+		{
+			return;
+		}
 	}
 	else
 	{
@@ -17270,6 +17542,29 @@ void CvUnit::grantFreedom()
 	else
 	{
 		pNewUnit->convert(this, true);
+	}
+
+	if (iReleasePrice > 0)
+	{
+		kPlayer.changeGold(-iReleasePrice);
+	}
+
+	// A Prisoner of War released into indentured service must serve for a while
+	// before he can be released again as a Colonist.
+	if (bFormerPrisonerOfWar)
+	{
+		const int iTrainPercent =
+			GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+
+		const int iBaseCooldownTurns =
+			GC.getDefineINT("SLAVE_EMANCIPATION_LBD_COOLDOWN");
+
+		const int iCooldownTurns =
+			std::max(1, iBaseCooldownTurns * iTrainPercent / 100);
+
+		pNewUnit->setLbDFreeReadyTurn(
+			GC.getGameINLINE().getGameTurn() + iCooldownTurns
+		);
 	}
 }
 // WTP, Slave Emancipation - END

@@ -1471,6 +1471,22 @@ void CvGameTextMgr::setProfessionHelp(CvWStringBuffer &szBuffer, ProfessionTypes
 		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_ONLY_DEFENSIVE"));
 	}
 
+	// R&R, Androrc, Domestic Market
+	// R&R, ray, adjustment Domestic Markets, displaying as list
+	CvWString szYieldsDemandedList;
+	const InfoArray<YieldTypes, int> &infoYieldDemands = kProfession.getYieldDemands();
+	for (int iI = 0; iI < infoYieldDemands.getLength(); ++iI)
+	{
+		szYieldsDemandedList += GC.getYieldInfo(infoYieldDemands.getYield(iI)).getCharLink();
+	}
+	if (!isEmpty(szYieldsDemandedList))
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(GC.getSymbolID(BULLET_CHAR));
+		szBuffer.append(gDLL->getText("TXT_KEY_UNIT_YIELD_DEMAND", szYieldsDemandedList.GetCString()));
+	}
+	//Androrc End
+
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
 		int iYieldAmount = GC.getGameINLINE().getActivePlayer() != NO_PLAYER ? GET_PLAYER(GC.getGameINLINE().getActivePlayer()).getYieldEquipmentAmount(eProfession, eYield) : kProfession.getYieldEquipmentAmount(eYield);
@@ -8544,6 +8560,35 @@ void CvGameTextMgr::setYieldPriceHelp(CvWStringBuffer &szBuffer, PlayerTypes ePl
 	szBuffer.append(ENDCOLR);
 }
 
+static void appendProfessionConsumedYields(CvWStringBuffer &szBuffer, const CvProfessionInfo& kProfession)
+{
+	bool bFirst = true;
+
+	for (int iConsumed = 0; iConsumed < kProfession.getNumYieldsConsumed(); ++iConsumed)
+	{
+		YieldTypes eYieldConsumed = (YieldTypes) kProfession.getYieldsConsumed(iConsumed);
+
+		if (eYieldConsumed == NO_YIELD)
+		{
+			continue;
+		}
+
+		if (bFirst)
+		{
+			szBuffer.append(L" (");
+			szBuffer.append(gDLL->getText("TXT_KEY_YIELD_CONSUMED"));
+			bFirst = false;
+		}
+
+		szBuffer.append(CvWString::format(L"%c", GC.getYieldInfo(eYieldConsumed).getChar()));
+	}
+
+	if (!bFirst)
+	{
+		szBuffer.append(L")");
+	}
+}
+
 void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldTypes eYieldType)
 {
 	CxDesyncMonitor StartAsyncExecution;
@@ -8732,6 +8777,76 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 				szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_BASE_CITIZEN_YIELD", aaiProfessionYields[i][j], info.getChar(), GC.getProfessionInfo((ProfessionTypes)i).getTextKeyWide()));
 			}
 		}
+	}
+	// Meat/weaver/etc: several professions share one building. The city
+	// yield icon hover used to list only the currently working ones, so
+	// butcher looked like downs+wool when the building recipe lists all six.
+	for (ProfessionTypes eProfession = FIRST_PROFESSION; eProfession < NUM_PROFESSION_TYPES; ++eProfession)
+	{
+		const CvProfessionInfo& kProfession = GC.getProfessionInfo(eProfession);
+		if (!kProfession.isCitizen() || kProfession.isWorkPlot())
+		{
+			continue;
+		}
+		if (!GC.getCivilizationInfo(owner.getCivilizationType()).isValidProfession(eProfession))
+		{
+			continue;
+		}
+
+		bool bProducesThisYield = false;
+		for (int iProduced = 0; iProduced < kProfession.getNumYieldsProduced(); ++iProduced)
+		{
+			if ((YieldTypes) kProfession.getYieldsProduced(iProduced) == eYieldType)
+			{
+				bProducesThisYield = true;
+				break;
+			}
+		}
+		if (!bProducesThisYield)
+		{
+			continue;
+		}
+		if (city.getNumProfessionBuildingSlots(eProfession) <= 0)
+		{
+			continue;
+		}
+
+		bool bAlreadyShown = false;
+		if (eProfession >= 0 && eProfession < (int)aaiProfessionYields.size())
+		{
+			for (uint j = 0; j < aaiProfessionYields[eProfession].size(); ++j)
+			{
+				if (aaiProfessionYields[eProfession][j] > 0)
+				{
+					bAlreadyShown = true;
+					break;
+				}
+			}
+		}
+		if (bAlreadyShown)
+		{
+			continue;
+		}
+
+		const int iRecipeOutput = city.getProfessionOutput(eProfession, NULL);
+		if (iRecipeOutput <= 0)
+		{
+			continue;
+		}
+
+		szBuffer.append(NEWLINE);
+		szBuffer.append(GC.getSymbolID(BULLET_CHAR));
+		szBuffer.append(gDLL->getText("TXT_KEY_BUILDING_PROFESSION_OUTPUT", iRecipeOutput, GC.getYieldInfo(eYieldType).getChar()));
+		for (int iProduced = 0; iProduced < kProfession.getNumYieldsProduced(); ++iProduced)
+		{
+			YieldTypes eExtraYield = (YieldTypes) kProfession.getYieldsProduced(iProduced);
+			if (eExtraYield != NO_YIELD && eExtraYield != eYieldType)
+			{
+				szBuffer.append(CvWString::format(L"%c", GC.getYieldInfo(eExtraYield).getChar()));
+			}
+		}
+		szBuffer.append(CvWString::format(L" %s", kProfession.getDescription()));
+		appendProfessionConsumedYields(szBuffer, kProfession);
 	}
 	// R&R, ray , MYCP partially based on code of Aymerick - END
 
@@ -10153,16 +10268,7 @@ void CvGameTextMgr::setEventHelp(CvWStringBuffer& szBuffer, EventTypes eEvent, i
 
 	CvEventInfo& kEvent = GC.getEventInfo(eEvent);
 	CvPlayer& kActivePlayer = GET_PLAYER(ePlayer);
-	EventTriggeredData* pTriggeredData = NULL;
-	const EventTriggeredData* pOccured = kActivePlayer.getEventOccured(eEvent);
-	if (pOccured != NULL && pOccured->getID() == iEventTriggeredId)
-	{
-		pTriggeredData = const_cast<EventTriggeredData*>(pOccured);
-	}
-	if (NULL == pTriggeredData)
-	{
-		pTriggeredData = kActivePlayer.getEventTriggered(iEventTriggeredId);
-	}
+	EventTriggeredData* pTriggeredData = kActivePlayer.getEventTriggered(iEventTriggeredId);
 
 	if (NULL == pTriggeredData)
 	{

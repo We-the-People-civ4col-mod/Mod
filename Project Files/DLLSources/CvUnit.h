@@ -846,10 +846,6 @@ public:
 	bool canSailToPortRoyal(const CvPlot* pPlot, UnitTravelStates eNewState = NO_UNIT_TRAVEL_STATE) const;
 	void sailToPortRoyal(UnitTravelStates eNewState = NO_UNIT_TRAVEL_STATE);
 
-	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO -START
-	int canCrossCoastOnly() const;
-	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO - END
-
 	bool isProfessionalMilitary() const;
 
 	// WTP, ray, helper methods for Python Event System - Spawning Units and Barbarians on Plots - START
@@ -1057,9 +1053,6 @@ protected:
 	YieldTypes m_eCachedYield;
 	// unit yield cache - end - Nightinggale
 	int getCargoValue(TradeLocationTypes eLocation) const;
-	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO - START
-	//int canCrossCoastOnly() const;
-	// WTP, ray, prevent Coastal Ships to Display EUROPE, AFRICA and Port Royal in GO-TO - END
 
 	EnumMap<PromotionTypes, bool> m_embisPromotionApplied;
 

@@ -71,6 +71,7 @@ def _cityCanSpawnRewardShip(player, city, iUnitClass):
 		return False
 
 	unitInfo = gc.getUnitInfo(iUnit)
+	iOcean = TerrainTypes.TERRAIN_OCEAN
 
 	for iDirection in range(DirectionTypes.NUM_DIRECTION_TYPES):
 		pPlot = plotDirection(
@@ -85,10 +86,21 @@ def _cityCanSpawnRewardShip(player, city, iUnitClass):
 		if not pPlot.isWater():
 			continue
 
+		if pPlot.getTerrainType() != iOcean:
+			continue
+
 		if not unitInfo.getTerrainImpassable(pPlot.getTerrainType()):
 			return True
 
 	return False
+
+def _cityCanSpawnCoastalRewardShip(player, city):
+	if player is None or player.isNone():
+		return False
+	if city is None or city.isNone():
+		return False
+
+	return _plotHasAdjacentSeaWater(city.plot())
 
 def getFirstRewardShipAccessCity(player, iUnitClass):
 	if player is None or player.isNone():
@@ -98,6 +110,20 @@ def getFirstRewardShipAccessCity(player, iUnitClass):
 
 	while city:
 		if _cityCanSpawnRewardShip(player, city, iUnitClass):
+			return city
+
+		(city, iter) = player.nextCity(iter, True)
+
+	return None
+
+def getFirstCoastalRewardShipAccessCity(player):
+	if player is None or player.isNone():
+		return None
+
+	(city, iter) = player.firstCity(True)
+
+	while city:
+		if _cityCanSpawnCoastalRewardShip(player, city):
 			return city
 
 		(city, iter) = player.nextCity(iter, True)
@@ -5478,6 +5504,20 @@ def _getPiratesScaledTurns(iBaseTurns):
 	iPercent = gc.getGameSpeedInfo(gameSpeedType).getGrowthPercent()
 	return max(1, int((iBaseTurns * iPercent) / 100))
 
+def _getPiratesFollowupChanceAndDelay(event, szFollowupType):
+	# 1. EventTimes in XML is the standard-speed wait.
+	# 2. applyEvent scales that by growth percent, so the option help has to do the same.
+	eFollowup = gc.getInfoTypeForString(szFollowupType)
+	if eFollowup == -1:
+		return 0, 0
+
+	iChance = event.getAdditionalEventChance(eFollowup)
+	iTime = event.getAdditionalEventTime(eFollowup)
+	if iTime <= 0:
+		return iChance, 0
+
+	return iChance, _getPiratesScaledTurns(iTime)
+
 def _startPiratesSoftCooldown(player, iBaseTurns):
 	if player.isNone():
 		return
@@ -5730,7 +5770,13 @@ def canTriggerPirates(argsList):
 	return True
 
 def getHelpPirates1(argsList):
-	return localText.getText("TXT_KEY_EVENT_PIRATES_1_HELP", ())
+	eEvent = argsList[1]
+	event = gc.getEventInfo(eEvent)
+	iDelay = _getPiratesFollowupChanceAndDelay(event, "EVENT_PIRATES_1a")[1]
+	if iDelay <= 0:
+		# XML EventTimes for EVENT_PIRATES_1a is 5 on standard speed.
+		iDelay = _getPiratesScaledTurns(5)
+	return localText.getText("TXT_KEY_EVENT_PIRATES_1_HELP", (iDelay,))
 
 def CanDoPirates3(argsList):
 	kTriggeredData = argsList[0]
@@ -5841,6 +5887,22 @@ def getHelpPirates4(argsList):
 	szHelp = u""
 	if iAmount != 0:
 		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (iAmount, gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+
+	# 1. muskets already use storage percent.
+	# 2. the ship wait uses growth percent, same formula applyEvent uses.
+	# 3. 4a also has 1 revolt turn (3 on marathon), which looks like the wait if we don't print this.
+	iChance, iDelay = _getPiratesFollowupChanceAndDelay(event, "EVENT_PIRATES_4a")
+	if iChance > 0 and iDelay > 0:
+		szShip = u""
+		iRewardUnitClass = getPrivateerRewardUnitClass3(player)
+		if iRewardUnitClass != -1:
+			iRewardUnit = gc.getCivilizationInfo(player.getCivilizationType()).getCivilizationUnits(iRewardUnitClass)
+			if iRewardUnit != -1:
+				szShip = gc.getUnitInfo(iRewardUnit).getDescription()
+		if szShip != u"":
+			if szHelp != u"":
+				szHelp += u"\n"
+			szHelp += localText.getText("TXT_KEY_EVENT_PIRATES_4_FOLLOWUP_HELP", (iChance, iDelay, szShip))
 
 	return szHelp
 
@@ -7421,12 +7483,7 @@ def applyPrivateerRewardShip3(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	unit = city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	unit = _spawnRewardedShip(player, iRewardUnitClass)
 
 	if unit is not None and not unit.isNone():
 		unit.setName("Queen Anne's Revenge")
@@ -7480,12 +7537,7 @@ def applyPrivateerRewardShip4(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpPrivateerRewardShip4(argsList):
@@ -23288,7 +23340,12 @@ def canTriggerEccentricArchitect(argsList):
 	if CyGame().getGameTurn() < _getEccentricArchitectCooldown(player):
 		return False
 
-	# Start cooldown immediately after successful trigger
+	return True
+
+def _startEccentricArchitectCooldown(player):
+	if player.isNone():
+		return
+
 	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
 
 	iCooldown = max(
@@ -23301,7 +23358,27 @@ def canTriggerEccentricArchitect(argsList):
 		CyGame().getGameTurn() + iCooldown
 	)
 
-	return True
+
+def applyEccentricArchitect1(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if player.isNone():
+		return
+
+	applyKingPleased(argsList)
+	_startEccentricArchitectCooldown(player)
+
+
+def applyEccentricArchitect2(argsList):
+	kTriggeredData = argsList[0]
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+
+	if player.isNone():
+		return
+
+	applyFestivity1(argsList)
+	_startEccentricArchitectCooldown(player)
 
 ######## Eccentric Architect BAILIFF ###########
  
@@ -28230,21 +28307,6 @@ def getHelpThreeGalleonsRewardShip(argsList):
 
 ######## Event six war ships ###########
 
-def getFirstOceanAccessCity(player):
-	if player is None or player.isNone():
-		return None
-
-	(city, iter) = player.firstCity(True)
-
-	while city:
-		if city is not None and not city.isNone():
-			if _plotHasAdjacentSeaWater(city.plot()):
-				return city
-
-		(city, iter) = player.nextCity(iter, True)
-
-	return None
-
 def canTriggerSixWarshipsQuest(argsList):
 	kTriggeredData = argsList[0]
 	player = gc.getPlayer(kTriggeredData.ePlayer)
@@ -28256,9 +28318,6 @@ def canTriggerSixWarshipsQuest(argsList):
 		return False
 
 	if getSixWarshipsRewardUnitClass(player) == -1:
-		return False
-
-	if getFirstOceanAccessCity(player) is None:
 		return False
 
 	return True
@@ -28418,12 +28477,7 @@ def applyFiveDocksRewardShip2(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def applyFiveDocksRewardShip3(argsList):
@@ -28438,12 +28492,7 @@ def applyFiveDocksRewardShip3(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+	_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpFiveDocksRewardShip2(argsList):
@@ -28618,9 +28667,6 @@ def canDoCommandeeredReturn(argsList):
 	if _getCommandeeredShipClass(player) == -1:
 		return False
 
-	if getFirstOceanAccessCity(player) is None:
-		return False
-
 	return True
 
 def applyCommandeeredReturn(argsList):
@@ -28635,12 +28681,8 @@ def applyCommandeeredReturn(argsList):
 	if iUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
+	if _spawnRewardedShip(player, iUnitClass) is None:
 		return
-
-	city.spawnOwnPlayerUnitOnPlotOfCity(iUnitClass)
 
 	_clearCommandeeredShipClass(player)
 
@@ -28698,7 +28740,7 @@ def applyThreeSmallCoastalShipsQuestRewardShip(argsList):
 
 	iRewardUnitClass = UnitClassTypes.UNITCLASS_BIG_COASTAL_SHIP
 
-	city = getFirstRewardShipAccessCity(player, iRewardUnitClass)
+	city = getFirstCoastalRewardShipAccessCity(player)
 
 	if city is None or city.isNone():
 		return
@@ -28811,13 +28853,8 @@ def applyFiveCathedralsRewardShips3(argsList):
 	if iRewardUnitClass == -1:
 		return
 
-	city = getFirstOceanAccessCity(player)
-
-	if city is None or city.isNone():
-		return
-
 	for i in range(2):
-		city.spawnOwnPlayerUnitOnPlotOfCity(iRewardUnitClass)
+		_spawnRewardedShip(player, iRewardUnitClass)
 
 
 def getHelpFiveCathedralsRewardShips3(argsList):

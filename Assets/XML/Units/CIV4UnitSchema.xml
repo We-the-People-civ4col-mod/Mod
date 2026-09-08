@@ -131,6 +131,8 @@
 	<ElementType name="bMechanized" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bLineOfSight" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bHiddenNationality" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCanSailToEurope" content="textOnly" dt:type="boolean"/>
+	<ElementType name="bCanSailToAfrica" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bSlaveShip" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bTreasureShip" content="textOnly" dt:type="boolean"/>
 	<ElementType name="bTroopShip" content="textOnly" dt:type="boolean"/>
@@ -480,6 +482,8 @@
 		<element type="bMechanized"/>
 		<element type="bLineOfSight"/>
 		<element type="bHiddenNationality"/>
+		<element type="bCanSailToEurope" minOccurs="0"/>
+		<element type="bCanSailToAfrica" minOccurs="0"/>
 		<element type="bSlaveShip" minOccurs="0"/>
 		<element type="bTreasureShip" minOccurs="0"/>
 		<element type="bTroopShip" minOccurs="0"/>

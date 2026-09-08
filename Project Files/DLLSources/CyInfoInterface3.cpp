@@ -530,6 +530,7 @@ void CyInfoPythonInterface3()
 		.def("getNumYieldsProduced", &CvProfessionInfo::getNumYieldsProduced, "int ()")
 		.def("getYieldsConsumed", &CvProfessionInfo::getYieldsConsumed, "int (int)")
 		.def("getNumYieldsConsumed", &CvProfessionInfo::getNumYieldsConsumed, "int ()")
+		.def("getYieldDemand", &CvProfessionInfo::getYieldDemand, "int (int)")
 		// R&R, ray , MYCP partially based on code of Aymerick - END
 		;
 	python::class_<CyFatherInfo, boost::noncopyable, python::bases<CvInfoBase> >("CvFatherInfo")

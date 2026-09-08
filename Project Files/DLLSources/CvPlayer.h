@@ -856,6 +856,14 @@ public:
 	int getMissionaryThresholdMultiplier(PlayerTypes ePlayer) const;
 	void setMissionaryThresholdMultiplier(PlayerTypes ePlayer, int iValue);
 	int missionaryThreshold(PlayerTypes ePlayer) const;
+	// WTP, Schmiddie, Trade Post Mestizo - START
+	void applyTradePostMestizoPoints(CvCity* pCity);
+	int getTradePostMestizoPoints(PlayerTypes ePlayer) const;
+	void changeTradePostMestizoPoints(PlayerTypes ePlayer, int iChange);
+	int getTradePostMestizoThresholdMultiplier(PlayerTypes ePlayer) const;
+	void setTradePostMestizoThresholdMultiplier(PlayerTypes ePlayer, int iValue);
+	int tradePostMestizoThreshold(PlayerTypes ePlayer) const;
+	// WTP, Schmiddie, Trade Post Mestizo - END
 	void burnMissions(PlayerTypes ePlayer);
 	bool canHaveMission(PlayerTypes ePlayer) const;
 	void validateMissions();
@@ -1187,6 +1195,10 @@ protected:
 	EnumMap<SpecialBuildingTypes, int> m_em_iSpecialBuildingNotRequiredCount;
 	EnumMap<PlayerTypes, int> m_em_iMissionaryPoints;
 	EnumMap<PlayerTypes, int, 100> m_em_iMissionaryThresholdMultiplier;
+	// WTP, Schmiddie, Trade Post Mestizo - START
+	EnumMap<PlayerTypes, int> m_em_iTradePostMestizoPoints;
+	EnumMap<PlayerTypes, int, 100> m_em_iTradePostMestizoThresholdMultiplier;
+	// WTP, Schmiddie, Trade Post Mestizo - END
 	EnumMap<ProfessionTypes, int> m_em_iProfessionEquipmentModifier;
 	EnumMap<TraitTypes, int> m_em_iTraitCount;
 	// cache CvPlayer::getYieldEquipmentAmount - start - Nightinggale

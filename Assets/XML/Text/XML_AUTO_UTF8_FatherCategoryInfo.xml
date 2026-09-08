@@ -3,6 +3,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHERCATEGORY_EXPLORATION</Tag>
 		<English>Exploration</English>
+		
+		<Portuguese>
+			<Text>Exploração</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Exploration</Text>
 			<Gender>Female</Gender>
@@ -24,6 +30,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHERCATEGORY_MILITARY</Tag>
 		<English>Military</English>
+		
+		<Portuguese>
+			<Text>Militares</Text>
+			<Gender>Male</Gender>
+			<Plural>1</Plural>
+		</Portuguese>
 		<French>
 			<Text>Guerre</Text>
 			<Gender>Female</Gender>
@@ -45,6 +57,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHERCATEGORY_POLITICS</Tag>
 		<English>Politics</English>
+		
+		<Portuguese>
+			<Text>Política</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Politique</Text>
 			<Gender>Female</Gender>
@@ -66,6 +84,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHERCATEGORY_RELIGION</Tag>
 		<English>Religion</English>
+		
+		<Portuguese>
+			<Text>Religião</Text>
+			<Gender>Female</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Religion</Text>
 			<Gender>Female</Gender>
@@ -87,6 +111,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_FATHERCATEGORY_TRADE</Tag>
 		<English>Trade</English>
+		
+		<Portuguese>
+			<Text>Comércio</Text>
+			<Gender>Male</Gender>
+			<Plural>0</Plural>
+		</Portuguese>
 		<French>
 			<Text>Commerce</Text>
 			<Gender>Male</Gender>

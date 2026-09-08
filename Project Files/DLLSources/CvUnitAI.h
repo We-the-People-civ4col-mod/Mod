@@ -177,6 +177,7 @@ protected:
 	bool AI_travelToEuropeColony(int iMinAttitude, int iMaxAttitude, int iRange = -1);
 	bool AI_guardHomeColony();
 	bool AI_findNewHomeColony();
+	bool AI_breakOversizedNativeDefensiveGroup();
 
 	bool AI_europeBuyNativeYields();
 	bool AI_europeBuyYields();

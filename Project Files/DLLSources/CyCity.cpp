@@ -413,6 +413,11 @@ int CyCity::getProfessionOutput(int /*ProfessionTypse*/ iIndex, CyUnit* pUnit)
 	return m_pCity ? m_pCity->getProfessionOutput((ProfessionTypes) iIndex, pUnit->getUnit()) : -1;
 }
 
+int CyCity::getProfessionActualOutput(int /*ProfessionTypes*/ iIndex, CyUnit* pUnit)
+{
+	return m_pCity ? m_pCity->getProfessionActualOutput((ProfessionTypes) iIndex, *pUnit->getUnit()) : -1;
+}
+
 int CyCity::getID()
 {
 	return m_pCity ? m_pCity->getID() : -1;
@@ -1255,17 +1260,18 @@ int CyCity::getTeachUnitClass()
 // native advisor update - start - Nightinggale
 int CyCity::getTeachUnit() const
 {
-	PlayerTypes ePlayer = GC.getGameINLINE().getActivePlayer();
-	if (m_pCity == NULL || ePlayer == NO_PLAYER)
+	if (m_pCity == NULL)
 	{
 		return NO_UNIT;
 	}
+
 	UnitClassTypes eClassType = m_pCity->getTeachUnitClass();
 	if (eClassType == NO_UNITCLASS)
 	{
 		return NO_UNIT;
 	}
-	return GC.getCivilizationInfo(GET_PLAYER(ePlayer).getCivilizationType()).getCivilizationUnits(eClassType);
+
+	return GC.getUnitClassInfo(eClassType).getDefaultUnitIndex();
 }
 // native advisor update - end - Nightinggale
 
