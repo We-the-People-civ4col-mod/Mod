@@ -26,11 +26,4 @@
 		<English>Colony is storing negative amount of cargo.[NEWLINE]Please make a bug report and provide a savegame from just before this happened.[NEWLINE]Be aware that the autosave from this turn might be from after this happened if it happened just as the turn started.</English>
 		<!--<Russian>В колонии хранится отрицательное количество груза.[NEWLINE]Сообщите об ошибке и предоставьте сохраненную игру, сделанную незадолго до того, как это произошло.[NEWLINE]Имейте в виду, что автосохранение этого хода может произойти после того, как это случилось, если ошибка возникла в момент начала хода.</Russian>-->
 	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE</Tag>
-		<English>%s1
-Tag: %s2
-Read: %d3
-Excepted non-negative number</English>
-	</TEXT>
 </Civ4GameText>

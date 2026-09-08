@@ -2429,7 +2429,6 @@
 		<Portuguese>Faça login para hospedar um Pitboss na Internet</Portuguese>
 		<French>Connectez-vous pour ouvrir un Pitboss Internet</French>
 		<German>Loggt Euch bitte ein, um einen Internet Pitboss zu hosten</German>
-		<Hungarian>Kérlek, jelentkezz be, ha internetes Pitbosst akarsz hosztolni</Hungarian>
 		<Italian>Effettua il login per avviare un Pitboss via Internet</Italian>
 		<Spanish>Inicia sesión para alojar Pitboss en Internet</Spanish>
 		<Hungarian>Kérlek, jelentkezz be, ha internetes Pitbosst akarsz hosztolni</Hungarian>
@@ -4456,7 +4455,7 @@
 		<Italian>Opzioni</Italian>
 		<Spanish>Opciones</Spanish>
 		<Russian>Настройки</Russian>
-		<Hungarian>Beállítások</Hungarian>>
+		<Hungarian>Beállítások</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MAIN_MENU_LAUNCH</Tag>
@@ -9733,7 +9732,6 @@
 		<German>Rücktaste</German>
 		<Italian>Indietro</Italian>
 		<Spanish>Retroceso</Spanish>
-        <Spanish>Retroceso</Spanish>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_KEYBOARD_ENTER</Tag>
@@ -14101,7 +14099,6 @@
 		<Spanish>[ICON_BULLET]%D1_Bonus%% inside Cultural Borders (capacidad de unidad)</Spanish>
 		<Russian>[ICON_BULLET]%D1_Bonus%% внутри культурных границ (способность)</Russian>
 		<Hungarian>[ICON_BULLET]%D1_Bonus%% Saját Területen (egység képesség)</Hungarian>
-<!--		<Russian>[ICON_BULLET]%D1_Bonus%% на своей земле (способность)</Russian>-->
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COMBAT_PLOT_UNIT_MOD</Tag>

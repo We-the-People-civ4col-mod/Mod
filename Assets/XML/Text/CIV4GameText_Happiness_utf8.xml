@@ -200,7 +200,7 @@
 		<Tag>TXT_KEY_HIGHER_IMMIGRATION_THRESHOLD_DUE_TO_UNITS_ON_DOCK</Tag>
 		<English>[NEWLINE][COLOR_NEGATIVE_TEXT]Immigration threshold increased by %d1%% [NEWLINE]due to many immigrants waiting on dock[COLOR_REVERT]</English>
 		<Portuguese>[NEWLINE][COLOR_NEGATIVE_TEXT]O limite de imigração aumentou em %d1%% [NEWLINE]devido a muitos imigrantes esperando no cais[COLOR_REVERT]</Portuguese>
-		<France>[NEWLINE][COLOR_NEGATIVE_TEXT]Le seuil d'émigration est relevé de %d1%% [NEWLINE]à cause des nombreux émigrants en attente sur le quai[COLOR_REVERT]</France>
+		<French>[NEWLINE][COLOR_NEGATIVE_TEXT]Le seuil d'émigration est relevé de %d1%% [NEWLINE]à cause des nombreux émigrants en attente sur le quai[COLOR_REVERT]</French>
 		<German>[NEWLINE][COLOR_NEGATIVE_TEXT]Grenzwert für Auswanderung um %d1%% erhöht [NEWLINE]da viele Auswanderer warten bereits am Dock[COLOR_REVERT]</German>
 		<Russian>[NEWLINE][COLOR_NEGATIVE_TEXT]Порог иммиграции увеличился на %d1%%[NEWLINE]из-за большого количества желающих отправиться в Новый Свет[COLOR_REVERT]</Russian>
 		<Hungarian>[NEWLINE][COLOR_NEGATIVE_TEXT]Bevándorlási küszöbérték %d1%%-kal megnőtt[NEWLINE]mert túl sok bevándorló várakozik a kikötőben[COLOR_REVERT]</Hungarian>
@@ -308,7 +308,7 @@
 		<Tag>TXT_KEY_TOTAL_LAW_ZERO_EFFECTS</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]City Law[COLOR_REVERT][NEWLINE]The citizens are [COLOR_SELECTED_TEXT]neither law abiding nor criminal[COLOR_REVERT][NEWLINE][NEWLINE]Effects :[NEWLINE][ICON_BULLET]No current effects</English>
 		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Lei Municipal[COLOR_REVERT][NEWLINE]Os cidadãos [COLOR_SELECTED_TEXT]não são cumpridores da lei nem criminosos[COLOR_REVERT][NEWLINE][NEWLINE]Efeitos:[NEWLINE][ICON_BULLET]Sem efeitos atuais</Portuguese>
-		<English>[COLOR_HIGHLIGHT_TEXT]Ordre dans la ville[COLOR_REVERT][NEWLINE]Les citoyens ne sont [COLOR_SELECTED_TEXT]ni respectueux des lois ni délinquants[COLOR_REVERT][NEWLINE][NEWLINE]Effets :[NEWLINE][ICON_BULLET]Aucun effet notable</English>
+		<French>[COLOR_HIGHLIGHT_TEXT]Ordre dans la ville[COLOR_REVERT][NEWLINE]Les citoyens ne sont [COLOR_SELECTED_TEXT]ni respectueux des lois ni délinquants[COLOR_REVERT][NEWLINE][NEWLINE]Effets :[NEWLINE][ICON_BULLET]Aucun effet notable</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Zufriedenheit[COLOR_REVERT][NEWLINE]Die Stadtbewohner sind [COLOR_SELECTED_TEXT]weder gesetzestreu noch kriminell[COLOR_REVERT][NEWLINE][NEWLINE]Effekte :[NEWLINE][ICON_BULLET]aktuell keine Effekte</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Спокойный город[COLOR_REVERT][NEWLINE]Горожане не являются [COLOR_SELECTED_TEXT]ни законопослушными, ни преступниками[COLOR_REVERT][NEWLINE][NEWLINE]Эффекты :[NEWLINE][ICON_BULLET]все спокойно, ничего не происходит</Russian>
 		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Városi Törvény[COLOR_REVERT][NEWLINE]A Lakosok [COLOR_POSITIVE_TEXT]nem Törvénytisztelők, de nem is Bűnöznek[COLOR_REVERT][NEWLINE][NEWLINE]Hatások :[NEWLINE][ICON_BULLET]Nincsenek Hatások</Hungarian>

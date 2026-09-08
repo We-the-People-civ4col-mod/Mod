@@ -1845,10 +1845,6 @@
 		<Spanish>Village Well</Spanish>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDINGCLASS_BONUS</Tag>
-		<English>Bonus Dummy for Building Infos</English>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILDINGCLASS_VINTAGERS_HOUSE</Tag>
 		<English>Vintager's House</English>
 		<Portuguese>Casa do Vinhateiro</Portuguese>

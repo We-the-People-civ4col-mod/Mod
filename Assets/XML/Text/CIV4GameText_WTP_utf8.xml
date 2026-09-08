@@ -93,15 +93,6 @@
 		<Hungarian>Dolgozott, hogy [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] legyen:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] [NUM1:kör:kör]</Hungarian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_MISC_HELP_LBD_BECOME_EXPPERT_TURNS_WORKED_MAP</Tag>
-		<English>Worked to become [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Turns</English>
-		<Portuguese>Trabalhou para se tornar [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Turnos</Portuguese>
-		<French>A travaillé pour se spécialiser en [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT]:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] tours</French>
-		<German>Arbeitet um [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] zu werden :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Runden</German>
-		<Russian>Работал, чтобы стать [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] :[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] ходов</Russian>
-		<Hungarian>Dolgozott, hogy [COLOR_HIGHLIGHT_TEXT]%s2_Expert_Unit[COLOR_REVERT] legyen:[NEWLINE][COLOR_HIGHLIGHT_TEXT]%d1_turns[COLOR_REVERT] Kör</Hungarian>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_MISC_HELP_MONASTERY_BONUS</Tag>
 		<English>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Monastery Bonus</English>
 		<Portuguese>[ICON_BULLET]+%d1_NewVal%%%F2_Icon Bônus do Mosteiro</Portuguese>

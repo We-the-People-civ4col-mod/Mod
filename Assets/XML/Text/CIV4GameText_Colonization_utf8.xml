@@ -403,7 +403,6 @@
 		<Tag>TXT_KEY_CHOOSE_PROFESSION_ITEM_MAX</Tag>
 		<English>%s1 (%F4_icon == %d2_yield/%d3_max_yield)</English>
 		<Portuguese>%s1 (%F4_icon == %d2_yield/%d3_max_yield)</Portuguese>
-<!--		 <English>%s1 (%d2_yield/%d3_max_yield %F4_icon)</English> -->
 		<French>%s1 (%F4_icon == %d2_yield/%d3_max_yield)</French>
 		<German>%s1 (%d2_yield/%d3_max_yield %F4_icon)</German>
 		<Italian>%s1 (%d2_yield/%d3_max_yield %F4_icon)</Italian>
@@ -413,7 +412,6 @@
 		<Tag>TXT_KEY_CHOOSE_PROFESSION_ITEM</Tag>
 		<English>%s1 %F3_icon =!= %d2_yield</English>
 		<Portuguese>%s1 %F3_icon =!= %d2_yield</Portuguese>
-<!--		 <English>%s1 %d2_yield %F3_icon</English> -->
 		<French>%s1 %F3_icon =!= %d2_yield</French>
 		<German>%s1 %d2_yield %F3_icon</German>
 		<Italian>%s1 %d2_yield %F3_icon</Italian>
@@ -1148,7 +1146,6 @@
 		<German>Eine [COLOR_HIGHLIGHT_TEXT]%s2:3_civ_adjective[COLOR_REVERT] Mission wurde in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] errichtet.</German>
 		<Italian>È stata fondata una missione [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] a [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]</Italian>
 		<Spanish>Se ha fundado una misión [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT] en [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Spanish>
-		<Russian>[COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] основали миссию в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] основали миссию в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT].</Russian>
 		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] misszió megalapítva [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] településen.</Hungarian>
 	</TEXT>
@@ -3964,13 +3961,6 @@
 		<Portuguese>Bens exportados</Portuguese>
 		<Russian>Товарооборот</Russian>
 		<Hungarian>Exportált Áruk</Hungarian>
-	</TEXT>
-	<TEXT>
-		<Tag>TXT_KEY_DOMESTIC_ADVISOR_STATE_CITIZEN</Tag>
-		<English>Citizens</English>
-		<Portuguese>Cidadãos</Portuguese>
-		<Russian>Граждане</Russian>
-		<Hungarian>Lakosok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DOMESTIC_ADVISOR_TRADE_STATE_HELP</Tag>

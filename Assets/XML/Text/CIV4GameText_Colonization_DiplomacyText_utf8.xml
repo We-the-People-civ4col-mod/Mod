@@ -651,7 +651,7 @@
 		<German>Nun?</German>
 		<Italian>Quindi?</Italian>
 		<Spanish>¿Y bien?</Spanish>
-		<Russian>Ну?</Russian>>
+		<Russian>Ну?</Russian>
 		<Hungarian>Pont most?</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -3906,7 +3906,7 @@
 		<Italian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT:1][COLOR_REVERT] ha bisogno di questa risorsa, [CT_NAME]. Ce la darai di tua spontanea volontà oppure dovremo combattere?</Italian>
 		<Spanish>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] necesita esto, [CT_NAME]. ¿Nos lo daréis o tendremos que luchar por ello?</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] нуждается в этом, [CT_NAME]. Ты отдашь его нам добровольно или нам прийти с оружием?</Russian>
-		<Hungarian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] igényt tart erre, [CT_NAME]. Megadjod nekünk vagy meg kell harcolnunk érte?</Hungarian>>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT][OUR_CIV_SHORT][COLOR_REVERT] igényt tart erre, [CT_NAME]. Megadjod nekünk vagy meg kell harcolnunk érte?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_STRONGER_1</Tag>
@@ -6659,7 +6659,7 @@
 		<Italian>L'[COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] ti richiede una piccola donazione, [CT_NAME]. Altrimenti, se preferisci, combatteremo finché una delle due nazioni non sarà distrutta.</Italian>
 		<Spanish>El [COLOR_HIGHLIGHT_TEXT][OUR_EMPIRE][COLOR_REVERT] os pide una pequeña donación, [CT_NAME]. O, si lo preferís, podemos combatir hasta que una de las dos naciones quede destruida.</Spanish>
 		<Russian>Я уже принес в жертву своим богам сердца многих врагов, [CT_NAME]. Однако я предполагаю, что вы хотите быть нашим другом.</Russian>
-		<Hungarian>Már sok ellenségem szívét feláldoztam isteneimnek, [CT_NAME]. Feltételezem azonban, hogy a barátunk kívánsz lenni.</Hungarian>>
+		<Hungarian>Már sok ellenségem szívét feláldoztam isteneimnek, [CT_NAME]. Feltételezem azonban, hogy a barátunk kívánsz lenni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>AI_DIPLO_DEMAND_TRIBUTE_POWER_EQUAL_OCONOSTOTA_1</Tag>
@@ -7191,7 +7191,7 @@
 		<Tag>AI_DIPLO_KING_WELCOME_FUR</Tag>
 		<English>Ah, the proud governor finally visits the court again. What is it this time? Do not waste the time of your most generous Majesty.</English>
 		<Portuguese>Ah, o orgulhoso governador finalmente visita a corte novamente. O que é desta vez? Não perca o tempo de Vossa Generíssima Majestade.</Portuguese>
-		<France>Ah, notre si orgueilleux gouverneur daigne à nouveau visiter Notre court. De quoi s'agit-il cette fois? ne gâchez pas Notre temps.</France>
+		<French>Ah, notre si orgueilleux gouverneur daigne à nouveau visiter Notre court. De quoi s'agit-il cette fois? ne gâchez pas Notre temps.</French>
 		<German>Soso, der Stolze Gouverneur besucht den Hof erneut. Was benötigt ihr dieses Mal? Kommt zum Punkt und verschwendet nicht die Zeit eures großzügigen Herrschers.</German>
 		<Russian>Ах, гордый губернатор наконец-то снова посетил двор. Что на этот раз? Поторопись и не теряй времени твоего Великодушнейшего Величества.</Russian>
 		<Hungarian>Á, a büszke kormányzó végre ismét ellátogat az udvarba. Mi van ezúttal? Ne pazarold nagylelkű Felséged idejét!</Hungarian>

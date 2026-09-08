@@ -113,10 +113,6 @@
 		<English>????</English>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILD_WINDMILL_HELP</Tag>
-		<English>????</English>
-	</TEXT>
-	<TEXT>
 		<Tag>TXT_KEY_BUILD_SUPPLY_DEPOT</Tag>
 		<English>Build a [LINK=IMPROVEMENT_SUPPLY_DEPOT]supply depot[\LINK]</English>
 		<Portuguese>Construir [LINK=IMPROVEMENT_SUPPLY_DEPOT]depósito[\LINK]</Portuguese>
