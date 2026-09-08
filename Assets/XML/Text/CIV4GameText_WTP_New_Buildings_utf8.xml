@@ -14,6 +14,7 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</German>
+		<Russian>Статуя</Russian>
 		<Hungarian>Szobor</Hungarian>
 	</TEXT>
 	<!-- GRAVEYARD -->
@@ -57,14 +58,16 @@
 		<Tag>TXT_KEY_BUILDING_GRAVEYARD_PEDIA</Tag>
 		<English>In a strange land where religious immigrants look back fondly to medieval times, the graveyard often is a place of fear and superstition. On the other hand it's a place to visit lost loved ones for quiet contemplation. Emotional conflicts arise.[NEWLINE]The two certainties in life are death and taxes. The graveyard handles one. The King takes care of the other.</English>
 		<German>In einem fremden Land, in dem religiöse Einwanderer mit Vorliebe auf das Mittelalter zurückblicken, ist der Friedhof oft ein Ort der Angst und des Aberglaubens. Andererseits ist er ein Ort, an dem man verlorene Angehörige besucht, um in Ruhe darüber nachzudenken. Emotionale Konflikte entstehen.[NEWLINE]Die zwei Gewissheiten im Leben sind der Tod und die Steuern. Um das eine kümmert sich der Friedhof. Der König kümmert sich um das andere.</German>
+		<Russian>В чужой стране, где религиозные иммигранты с теплотой вспоминают средневековье, кладбище часто является местом страха и суеверий. С другой стороны, это место, где можно навестить усопших близких и спокойно поразмышлять. Возникают эмоциональные конфликты.[NEWLINE]Две неизбежные вещи в жизни — смерть и налоги. Кладбище занимается одной. Король заботится о другой.</Russian>
 		<Hungarian>Egy idegen országban, ahol a vallásos bevándorlók nosztalgiával tekintenek vissza a középkorra, a temető gyakran a félelem és a babona helyszíne. Másrészt viszont ez az a hely, ahol az elhunyt szeretteinket meglátogathatjuk, és csendben elmélkedhetünk. Érzelmi konfliktusok keletkeznek. Az életben két dolog biztos: a halál és az adók. A temető az egyiket kezeli, a király pedig a másikat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_GRAVEYARD_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]graveyard[COLOR_REVERT] contributes to [LINK=YIELD_HEALTH]health[\LINK] and crosses.</English>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]Friedhof[COLOR_REVERT] erhöht die [LINK=YIELD_HEALTH]Gesundheit[\LINK].</German>
-	</TEXT>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Кладбище[COLOR_REVERT] способствует увеличению [LINK=YIELD_HEALTH]здоровью[\LINK] и крестов.</Russian>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]temető[COLOR_REVERT] hozzájárul az [LINK=YIELD_HEALTH]egészséghez[\LINK] és a keresztek előállításához.</Hungarian>
+	</TEXT>
 	<!-- CONFECTIONER -->
 	<TEXT>
 		<Tag>TXT_KEY_SPECIALBUILDING_CONFECTIONER</Tag>
@@ -75,6 +78,7 @@
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</German>
+		<Russian>Сладкая лавка</Russian>
 		<Hungarian>Cukrász</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -159,30 +163,35 @@
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_HOUSE_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]confectioner's house[COLOR_REVERT] is where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioners[\LINK] are particularly effective here.</English>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]Haus des Konditors[COLOR_REVERT] ist die niedrigste Ausbaustufe der Konditoreikette, in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
+		<Russian>В [COLOR_HIGHLIGHT_TEXT]доме кондитера[COLOR_REVERT] поселенец с профессией [LINK=PROFESSION_CONFECTIONER_VANILLA]кондитер ванили[\LINK] или [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]кондитер шоколада[\LINK] превращает [LINK=YIELD_VANILLA_PODS]ванильные стручки[\LINK] в [LINK=YIELD_VANILLA]ваниль[\LINK] и [LINK=YIELD_COCOA]какао[\LINK] с [LINK=YIELD_SUGAR]сахаром[\LINK] в [LINK=YIELD_CHOCOLATE]шоколад[\LINK]. [LINK=UNIT_CONFECTIONER]Мастера-кондитеры[\LINK] особенно эффективны здесь.</Russian>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Cukrász Bolt[COLOR_REVERT] az a hely, ahol a [LINK=PROFESSION_CONFECTIONER_VANILLA]vanília cukrász [\LINK] vagy a [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]csokoládé cukrász[\LINK] a [LINK=YIELD_VANILLA_PODS]vaníliát[\LINK] [LINK=YIELD_VANILLA]vanília édességekké[\LINK] és [LINK=YIELD_COCOA]kakaót [\LINK] és [LINK=YIELD_SUGAR]cukorral[\LINK] [LINK=YIELD_CHOCOLATE]csokoládét[\LINK] készít. A [LINK=UNIT_CONFECTIONER]cukrászmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_PEDIA</Tag>
 		<English>The confectioner's shop adds extra variety, candy for every taste, along with traditional sweets that remind people of home. The bigger market helps to keep prices down.[NEWLINE]Extra production creates trading opportunities. Some confectioners even set up tables where tea is served to accompany the treats. A very few offer coffee, at first considered scandalous, because the drink is so stimulating.</English>
 		<German>Die Konditorei sorgt für zusätzliche Abwechslung, Süßigkeiten für jeden Geschmack und traditionelle Süßigkeiten, die die Menschen an ihre Heimat erinnern. Der größere Markt trägt dazu bei, die Preise niedrig zu halten.[NEWLINE]Die zusätzliche Produktion schafft Handelsmöglichkeiten. Einige Zuckerbäcker stellen sogar Tische auf, an denen Tee zu den Leckereien gereicht wird. Einige wenige bieten Kaffee an, was zunächst als skandalös galt, weil das Getränk so anregend ist.</German>
+		<Russian>Кондитерская добавляет разнообразие, предлагая конфеты на любой вкус, а также традиционные сладости, напоминающие о доме. Больший рынок помогает удерживать цены на низком уровне.[NEWLINE]Дополнительное производство создает торговые возможности. Некоторые кондитеры даже устанавливают столики, где подают чай к сладостям. Очень немногие предлагают кофе, что поначалу считается скандальным, поскольку этот напиток очень бодрящий.</Russian>
 		<Hungarian>A Cukrász  Üzlet további változatosságot, minden ízlésnek megfelelő édességeket kínál, valamint hagyományos édességeket, amelyek az otthonra emlékeztetik az embereket. A nagyobb piac segít az árak alacsonyan tartásában. A többlettermelés kereskedelmi lehetőségeket teremt. Néhány cukrász még asztalokat is felállít, ahol tea kíséretében szolgálják fel az édességeket. Nagyon kevesen kínálnak kávét, amit eleinte botrányosnak tartottak, mert az ital annyira élénkítő hatású.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_SHOP_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]confectioners' shop[COLOR_REVERT] is the upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioners[\LINK] are particularly effective here.</English>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Konditorladen[COLOR_REVERT] ist die Erweiterung des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Кондитерская[COLOR_REVERT] — это усовершенствованная версия [LINK=BUILDING_CONFECTIONER_HOUSE]кондитерского дома[\LINK], где поселенец с профессией [LINK=PROFESSION_CONFECTIONER_VANILLA]кондитер ванили[\LINK] или [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]кондитер шоколада[\LINK] превращает [LINK=YIELD_VANILLA_PODS]ванильные стручки[\LINK] в [LINK=YIELD_VANILLA]ваниль[\LINK] и [LINK=YIELD_COCOA]какао[\LINK] с [LINK=YIELD_SUGAR]сахаром[\LINK] в [LINK=YIELD_CHOCOLATE]шоколад[\LINK]. [LINK=UNIT_CONFECTIONER]Мастера-кондитеры[\LINK] здесь особенно эффективны.</Russian>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Cukrász Üzlet[COLOR_REVERT] a [LINK=BUILDING_CONFECTIONER_HOUSE]Cukrász Bolt[\LINK] továbbfejlesztése, ahol egy [LINK=PROFESSION_CONFECTIONER_VANILLA]vanília cukrász [\LINK] vagy [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]csokoládé cukrász[\LINK] [LINK=YIELD_VANILLA_PODS]vaníliát[\LINK] [LINK=YIELD_VANILLA]vanília édességekké[\LINK] és [LINK=YIELD_COCOA]kakaót [\LINK] és [LINK=YIELD_SUGAR]cukorral[\LINK] [LINK=YIELD_CHOCOLATE]csokoládét[\LINK] készít. A [LINK=UNIT_CONFECTIONER]Cukrászmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_PEDIA</Tag>
 		<English>The candy factory can serve an entire region. For one group it offers cheap sweets thanks to economies of scale. For the well-to-do it delivers an unparalleled variety of exotic confections to impress guests on special occasions.[NEWLINE]A big confectionery makes an important contribution to the region it serves, increasing both trading income and the community's happiness.</English>
 		<German>Die Süßwarenfabrik kann dank Skalierungseffekten eine ganze Region mit billigen Süßigkeiten versorgen. Für die Wohlhabenden liefert sie eine unvergleichliche Vielfalt an exotischen Süßigkeiten, um Gäste bei besonderen Anlässen zu beeindrucken.[NEWLINE]Eine große Konditorei leistet einen wichtigen Beitrag für die Region, in der sie tätig ist, und steigert sowohl das Handelseinkommen als auch die Zufriedenheit der Bevölkerung.</German>
+		<Russian>Кондитерская фабрика может обслуживать весь регион. Для одной группы населения она предлагает дешевые сладости благодаря эффекту масштаба. Для состоятельных людей она предоставляет беспрецедентное разнообразие экзотических кондитерских изделий, чтобы произвести впечатление на гостей по особым случаям.[NEWLINE]Крупная кондитерская фабрика вносит важный вклад в развитие региона, который она обслуживает, увеличивая как торговые доходы, так и уровень счастья населения.</Russian>
 		<Hungarian>A Cukrászda egy egész régiót képes ellátni. Az egyik csoport számára méretgazdaságosságának köszönhetően olcsó édességeket kínál. A jómódúak számára pedig páratlanul változatos egzotikus édességeket szállít, amelyekkel különleges alkalmakkor lenyűgözhetik vendégeiket. [NEWLINE] Egy nagy cukrászda fontos hozzájárulást jelent a régióhoz, amelyet ellát, növelve mind a kereskedelmi bevételeket, mind a közösség boldogságát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_CONFECTIONER_FACTORY_STRATEGY</Tag>
 		<English>The [COLOR_HIGHLIGHT_TEXT]confectioners' factory[COLOR_REVERT] is the top upgrade of the [LINK=BUILDING_CONFECTIONER_HOUSE]confectioner's house[\LINK] where a settler with the [LINK=PROFESSION_CONFECTIONER_VANILLA]vanilla confectioner[\LINK] or the [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]chocolate confectioner[\LINK] profession turns [LINK=YIELD_VANILLA_PODS]vanilla beans[\LINK] into [LINK=YIELD_VANILLA]vanilla treats[\LINK] and [LINK=YIELD_COCOA]cocoa[\LINK] with [LINK=YIELD_SUGAR]sugar[\LINK] into [LINK=YIELD_CHOCOLATE]chocolate[\LINK]. [LINK=UNIT_CONFECTIONER]Master confectioners[\LINK] are particularly effective here.</English>
 		<German>Die [COLOR_HIGHLIGHT_TEXT]Konditorei[COLOR_REVERT] ist die höchste Stufe des [LINK=BUILDING_CONFECTIONER_HOUSE]Haus des Konditors[\LINK], in dem ein [COLOR_UNIT_TEXT]Freier Kolonist[COLOR_REVERT] als [LINK=PROFESSION_CONFECTIONER_VANILLA]Konditor (Vanille)[\LINK] oder als [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]Konditor (Schokolade)[\LINK] die [LINK=YIELD_VANILLA_PODS]Vanilleschoten[\LINK] zu [LINK=YIELD_VANILLA]Vanilleköstlichkeiten[\LINK] bzw. [LINK=YIELD_COCOA]Kakao[\LINK] mit [LINK=YIELD_SUGAR]Zucker[\LINK] zu [LINK=YIELD_CHOCOLATE]Schokolade[\LINK] verarbeitet. [LINK=UNIT_CONFECTIONER]Konditormeister[\LINK] sind hier besonders effektiv.</German>
+		<Russian>[COLOR_HIGHLIGHT_TEXT]Кондитерская фабрика[COLOR_REVERT]  — максимальное улучшение [LINK=BUILDING_CONFECTIONER_HOUSE]дома кондитера[\LINK], где поселенец с профессией кондитера по производству [LINK=PROFESSION_CONFECTIONER_VANILLA]ванили[\LINK] или по производству [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]шоколада[\LINK] превращает [LINK=YIELD_VANILLA_PODS]ванильные стручки[\LINK] в [LINK=YIELD_VANILLA]ваниль[\LINK], а [LINK=YIELD_COCOA]какао[\LINK] с [LINK=YIELD_SUGAR]сахаром[\LINK] в [LINK=YIELD_CHOCOLATE]шоколад[\LINK]. [LINK=UNIT_CONFECTIONER]Мастера-кондитеры[\LINK] здесь особенно эффективны.</Russian>
 		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Cukrászda[COLOR_REVERT] a [LINK=BUILDING_CONFECTIONER_HOUSE]Cukrász Bolt[\LINK] legmagasabb szintű továbbfejlesztése, ahol egy [LINK=PROFESSION_CONFECTIONER_VANILLA]vanília cukrász [\LINK] vagy [LINK=PROFESSION_CONFECTIONER_CHOCOLATE]csokoládé cukrász[\LINK] telepes [LINK=YIELD_VANILLA_PODS]vaníliát[\LINK] [LINK=YIELD_VANILLA]vanília édességekké[\LINK] és [LINK=YIELD_COCOA]kakaót [\LINK] és [LINK=YIELD_SUGAR]cukorral[\LINK] [LINK=YIELD_CHOCOLATE]csokoládét[\LINK] készít. A [LINK=UNIT_CONFECTIONER]Cukrászmesterek[\LINK] különösen hatékonyak ebben.</Hungarian>
 	</TEXT>
 	<!-- LEATHER_PADDER -->
@@ -195,6 +204,7 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</German>
+		<Russian>Кожевенный цех</Russian>
 		<Hungarian>Bőrműves</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -318,6 +328,7 @@
 			<Gender>Male</Gender>
 			<Plural>0</Plural>
 		</German>
+		<Russian>Масляный цех</Russian>
 		<Hungarian>Étolajkészítő</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -440,6 +451,7 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</German>
+		<Russian>Обжарочный цех</Russian>
 		<Hungarian>Pörkölő</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -562,6 +574,7 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</German>
+		<Russian>Гончарных цех</Russian>
 		<Hungarian>Fazekas Bolt</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -684,6 +697,7 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</German>
+		<Russian>Швейный цех</Russian>
 		<Hungarian>Szabó</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -800,6 +814,7 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</German>
+		<Russian>Пороховой склад</Russian>
 		<Hungarian>Puskaporgyártó Műhely</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -917,6 +932,7 @@
 		<German>Bäcker</German>
 		<Italian>Fornaio</Italian>
 		<Spanish>Panadero</Spanish>
+		<Russian>Пекарный цех</Russian>
 		<Hungarian>Pék</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -1030,6 +1046,7 @@
 			<Gender>Neuter</Gender>
 			<Plural>0</Plural>
 		</German>
+		<Russian>Дом правосудия</Russian>
 		<Hungarian>Bíróság</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -1186,6 +1203,7 @@
 			<Gender>Neuter</Gender>
 			<Plural>0</Plural>
 		</German>
+		<Russian>Арестантская</Russian>
 		<Hungarian>Börtön</Hungarian>
 	</TEXT>
 	<TEXT>
