@@ -367,6 +367,7 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</German>
+		<Russian>Невольничья каравелла:Невольничьи каравеллы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_SLAVE_BARQUE</Tag>
@@ -514,7 +515,7 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-		<Russian>Каравелла:Каравеллы</Russian>
+		<Russian>Боевая каравелла:Боевые каравеллы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CARAVELA_REDONDA</Tag>
@@ -582,6 +583,7 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
+		<Russian>Нао</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_CARPENTER</Tag>
@@ -1713,6 +1715,7 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
+		<Russian>Тяжёлый фрегат:Тяжёлые фрегаты</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ROYAL_FRIGATE</Tag>
@@ -1900,6 +1903,7 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</German>
+		<Russian>Боевой галеон:Боевые галеоны</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_GOVERNOR</Tag>
@@ -3062,6 +3066,7 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
+		<Russian>Пиратский корабль:Пиратские корабли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_PIRATE_FRIGATE</Tag>
@@ -4674,6 +4679,7 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
+		<Russian>Королевский транспорт:Королевские транспорты</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WHALE_BLUBBER</Tag>

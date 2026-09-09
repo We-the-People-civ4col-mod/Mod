@@ -3290,6 +3290,7 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</German>
+		<Russian>Пекарь (Еда, Ячьмень):Пекари (Еда, Ячьмень)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_BAKER_RICE_FOOD</Tag>
@@ -3303,6 +3304,7 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</German>
+		<Russian>Пекарь (Еда, Рис):Пекари (Еда, Рис)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_BAKER_CASSAVA_FOOD</Tag>
@@ -3316,6 +3318,7 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</German>
+		<Russian>Пекарь (Еда, Маниока):Пекари (Еда, Маниока)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_BAKER_BARLEY</Tag>

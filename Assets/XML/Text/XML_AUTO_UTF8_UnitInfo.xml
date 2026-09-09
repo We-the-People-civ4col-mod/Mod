@@ -556,7 +556,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SLAVE_CARAVEL</Tag>
 		<English>
-			<Text>Slave caravel: Slave caravels</Text>
+			<Text>Slave caravel:Slave caravels</Text>
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</English>
@@ -566,7 +566,7 @@
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
-			<Text>Caravelle négrière : caravelles négrières</Text>
+			<Text>Caravelle négrière :caravelles négrières</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
@@ -575,6 +575,7 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</German>
+		<Russian>Невольничья каравелла:Невольничьи каравеллы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SLAVE_CARAVEL_STRATEGY</Tag>
@@ -774,6 +775,7 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
+		<Russian>Боевая каравелла:Боевые каравеллы</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_CARAVELA_REDONDA</Tag>
@@ -939,6 +941,7 @@
 		</German>
 		<Italian>Nao:Naos</Italian>
 		<Spanish>Nao:Naos</Spanish>
+		<Russian>Нао:Нао</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_NAO_PEDIA</Tag>
@@ -2806,6 +2809,7 @@
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
+		<Russian>Тяжёлый фрегат:Тяжёлые фрегаты</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_HEAVY_FRIGATE_PEDIA</Tag>
@@ -3101,6 +3105,7 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
+		<Russian>Боевой галеон:Боевые галеоны</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_WAR_GALLEON_PEDIA</Tag>
@@ -5168,6 +5173,7 @@ _ship_of
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
+		<Russian>Пиратский корабль:Пиратские корабли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_PIRATE_SHIP_PEDIA</Tag>
@@ -7880,6 +7886,7 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
+		<Russian>Королевский транспорт:Королевские транспорты</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_TROOP_SHIP_PEDIA</Tag>
