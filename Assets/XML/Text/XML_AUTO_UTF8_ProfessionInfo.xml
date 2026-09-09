@@ -2628,6 +2628,17 @@
 		<Russian>Парусный мастер (конопля):Парусные мастера (конопля)</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_COTTON</Tag>
+		<English>Sailmaker (Cotton):Sailmakers (Cotton)</English>
+		<French>Voilier (coton):Voiliers (coton)</French>
+		<German>
+			<Text>Segelmacher (Baumwolle):Segelmacher (Baumwolle)</Text>
+			<Gender>Male</Gender>
+			<Plural>0:1</Plural>
+		</German>
+		<Russian>Парусный мастер (хлопок):Парусные мастера (хлопок)</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_PROFESSION_SAILCLOTH_MAKER_HELP</Tag>
 		<English>????</English>
 	</TEXT>
