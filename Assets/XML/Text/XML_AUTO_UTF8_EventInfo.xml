@@ -13,7 +13,7 @@
 		<English>We could really do with any worker. But he should change jobs so that the bailiffs can't track him down so easily.</English>
 		<Portuguese>Nós realmente poderíamos fazer com qualquer trabalhador. Mas ele deveria mudar de emprego para que os oficiais de justiça não pudessem localizá-lo tão facilmente.</Portuguese>
 		<German>Wir können jeden Handwerker gut gebrauchen. Aber er sollte den Beruf wechseln, damit ihn die Büttel nicht so schnell aufspüren können.</German>
-		<Russian/>
+		<Russian>Нам бы пригодился любой специалист. Но ему следует сменить профессию, чтобы судебные приставы не смогли его быстро выследить.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ADMIRAL_1_1</Tag>
@@ -84,7 +84,7 @@
 		<English>We will receive a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] in one of our colonies.</English>
 		<Portuguese>Receberemos um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] em uma de nossas colônias.</Portuguese>
 		<German>Wir erhalten eine [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] in einer unserer Kolonien.</German>
-		<Russian/>
+		<Russian>Мы получим [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в одной из наших колоний.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHBISHOPRIC</Tag>
@@ -184,7 +184,7 @@
 		<Portuguese>[ICON_BULLET]Um[COLOR_HIGHLIGHT_TEXT] Pregador [COLOR_REVERT]nesta cidade será nomeado [COLOR_HIGHLIGHT_TEXT]Bispo[COLOR_REVERT].</Portuguese>
 		<French>[ICON_BULLET]One[COLOR_HIGHLIGHT_TEXT] Preacher [COLOR_REVERT]in this city will be appointed [COLOR_HIGHLIGHT_TEXT]Bishop[COLOR_REVERT].</French>
 		<German>[ICON_BULLET]Ein[COLOR_HIGHLIGHT_TEXT] Prediger [COLOR_REVERT]in dieser Stadt wird zum [COLOR_HIGHLIGHT_TEXT]Bischof [COLOR_REVERT]ernannt.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Один из [COLOR_HIGHLIGHT_TEXT]Проповедников[COLOR_REVERT] в этом городе будет назначен [COLOR_HIGHLIGHT_TEXT]Епископом[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BISHOP_APPOINTMENT_2</Tag>
@@ -192,7 +192,7 @@
 		<Portuguese>Isso é muito dinheiro para nossas colônias pagarem. Embora ter um bispo um dia se torne necessário, somos muito poucos neste momento para pagar por isso.</Portuguese>
 		<French>Cela représente beaucoup d'argent à payer pour nos colonies. Bien qu'un évêque nous sera forcément un jour nécessaire, nous sommes encore peu nombreux et ne pouvons pas nous le permettre pour le moment.</French>
 		<German>Das ist sehr viel Geld, dass wir zahlen müssten. Obwohl ein Bischof sicherlich irgendwann angemessen sein wird, sind wir momentan noch wenige und können uns das nicht leisten.</German>
-		<Russian>Это большие деньги для наших колоний. Хотя однажды епископ станет необходим, сейчас нас слишком мало, чтобы мы могли позволить себе его.</Russian>
+		<Russian>Это большие деньги для наших колоний. И хотя когда-нибудь епископ нам понадобится, сейчас нас слишком мало, чтобы мы могли позволить себе его присутствие.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BISONS_1</Tag>
@@ -247,7 +247,7 @@
 		<English>[ICON_BULLET]A [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] will be built.</English>
 		<Portuguese>[ICON_BULLET]Um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] será construído.</Portuguese>
 		<German>[ICON_BULLET]Eine [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] wird errichtet.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Будет построена [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BRAVE_NATIVE_SLAVE_1</Tag>
@@ -478,7 +478,7 @@
 		<English>[ICON_BULLET]Some Indians will join you.</English>
 		<Portuguese>[ICON_BULLET]Alguns índios irão se juntar a você.</Portuguese>
 		<German>[ICON_BULLET]Einige Indianer schließen sich Euch an.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Несколько индейских воинов присоединяются к вам.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_COCA_PROBLEM_1</Tag>
@@ -541,7 +541,7 @@
 		<English>Your commandeered [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] will be returned to one of your colonies.</English>
 		<Portuguese>Seu [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] requisitado será devolvido a uma de suas colônias.</Portuguese>
 		<German>Eure von der Krone abkommandierte [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] wird in eine Eurer Kolonien zurückerwarter.</German>
-		<Russian/>
+		<Russian>Реквизированный Королевским флотом [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] будет возвращен в одну из ваших колоний.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CONFLICT_HIRE_ELITE</Tag>
@@ -840,14 +840,14 @@
 		<English>Hire them – but not as sailors, rather as shipyard workers. They are to help clean the hull of the ship and remove the fouling.</English>
 		<Portuguese>Contrate-os – mas não como marinheiros, mas sim como trabalhadores de estaleiros. Eles servem para ajudar a limpar o casco do navio e remover as incrustações.</Portuguese>
 		<German>Heuert sie an - aber nicht als Seeleute, sondern als Werftarbeiter. Sie sollen helfen bei dem Schiff den Rumpf zu säubern und den Bewuchs entfernen.</German>
-		<Russian/>
+		<Russian>Наймите их — но не как матросов, а как рабочих верфи. Пусть помогают очищать корпус судна от обрастаний.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EXPERIENCED_SAILORS_2_HELP</Tag>
 		<English>[ICON_BULLET]The ship gains the [COLOR_HIGHLIGHT_TEXT]promotion %s1[COLOR_REVERT].</English>
 		<Portuguese>[ICON_BULLET]O navio ganha a [COLOR_HIGHLIGHT_TEXT]promoção %s1[COLOR_REVERT].</Portuguese>
 		<German>[ICON_BULLET]Das Schiff erhält die [COLOR_HIGHLIGHT_TEXT]Beförderung %s1[COLOR_REVERT].</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Корабль получает повышение [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAMINE_1</Tag>
@@ -1122,7 +1122,7 @@
 		<English>We will receive [COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] in one of our colonies.</English>
 		<Portuguese>Receberemos [COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] em uma de nossas colônias.</Portuguese>
 		<German>Wir erhalten [COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] in einer unserer Kolonien.</German>
-		<Russian/>
+		<Russian>Мы получим [COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] в одной из наших колоний.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_CATHEDRALS_DONE_4</Tag>
@@ -1933,21 +1933,21 @@
 		<English>Hurry up, men! We will be the first to discover the route to Europe on this way.</English>
 		<Portuguese>Apresse-se, homens! Seremos os primeiros a descobrir o caminho para a Europa desta forma.</Portuguese>
 		<German>Auf geht's, Männer! Wir werden die Ersten sein, die den Weg nach Europa auf diesem Wege entdecken!</German>
-		<Russian/>
+		<Russian>Поторапливайтесь, парни! Мы первыми откроем путь в Европу по этому маршруту.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ATLANTIC_DONE_1</Tag>
 		<English>Gold and glory! We take both!</English>
 		<Portuguese>Ouro e glória! Levamos os dois!</Portuguese>
 		<German>Gold und Ruhm! Wir nehmen beides!</German>
-		<Russian/>
+		<Russian>Золото и слава! Мы забираем и то, и другое!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ATLANTIC_DONE_2</Tag>
 		<English>We prefer honour and glory. Spread the word that we have discovered the eastern route to Europe!</English>
 		<Portuguese>Preferimos honra e glória. Espalhe a notícia de que descobrimos a rota oriental para a Europa!</Portuguese>
 		<German>Ruhm und Ehre sind uns Lohn genug!</German>
-		<Russian/>
+		<Russian>Честь и слава! Разнесите весть о том, что мы открыли восточный путь в Европу!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PEASANT_WARPREP_1</Tag>
@@ -2033,7 +2033,7 @@
 		<English>We will receive a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] in one of our colonies.</English>
 		<Portuguese>Receberemos um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] em uma de nossas colônias.</Portuguese>
 		<German>Wir erhalten ein bzw. eine [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] in einer unserer Kolonien.</German>
-		<Russian/>
+		<Russian>Мы получим [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в одной из наших колоний.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_POLITICAL_REFUGEE_1</Tag>
@@ -2456,7 +2456,7 @@
 		<English>[ICON_BULLET]%s2 suffers [COLOR_NEGATIVE_TEXT]-%d1[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]Health[COLOR_REVERT].</English>
 		<Portuguese>[ICON_BULLET]%s2 sofre [COLOR_NEGATIVE_TEXT]-%d1[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]Saúde[COLOR_REVERT].</Portuguese>
 		<German>[ICON_BULLET]In %s2 sinkt die [COLOR_HIGHLIGHT_TEXT]Gesundheit[COLOR_REVERT] um [COLOR_NEGATIVE_TEXT]-%d1[COLOR_REVERT].</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]%s2 теряет [COLOR_NEGATIVE_TEXT]-%d1[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]здоровья[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SMUGGLERS_CAUGHT_1</Tag>
@@ -2499,7 +2499,7 @@
 		<English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] loses %d2%% of its stored Food (%d1).</English>
 		<Portuguese>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] perde %d2%% de sua Comida armazenada (%d1).</Portuguese>
 		<German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] verliert %d2%% seiner eingelagerten Nahrung (%d1).</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Город [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] теряет %d2%% накопленной пищи (%d1).</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TAILWIND_1</Tag>
@@ -3043,7 +3043,7 @@
 		<English>[ICON_BULLET]%d1 %s2 appear near the settlement.</English>
 		<Portuguese>[ICON_BULLET]%d1 %s2 aparecem perto da colônia.</Portuguese>
 		<German>[ICON_BULLET]%d1 %s2 erscheinen nahe der Siedlung.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]%d1 %s2 появляются рядом с поселением.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WINTER_1</Tag>
@@ -3356,501 +3356,503 @@
 		<English>How extraordinary! And just what we need right now. We can use anything that brings people to the New World – even if it’s just a rumour about a hot spring somewhere in the middle of nowhere!</English>
 		<Portuguese>Que extraordinário! E exatamente o que precisamos agora. Podemos usar qualquer coisa que traga as pessoas ao Novo Mundo – mesmo que seja apenas um boato sobre uma fonte termal em algum lugar no meio do nada!</Portuguese>
 		<German>Sehr außergewöhnlich! Und wahrlich zur rechten Zeit. Wir können alles brauchen, was die Menschen in die Neue Welt treibt - und selbst wenn es nur ein Gerücht über eine heiße Quelle irgendwo im Nirgendwo ist!</German>
-		<Russian/>
+		<Russian>Поразительно! Это именно то, что нам сейчас нужно. Нам пригодится всё, что привлекает людей в Новый Свет, пусть даже это всего лишь слух о горячем источнике где-нибудь в глуши!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT_1</Tag>
 		<English>Unbelievable! If there is even a grain of truth in these rumours, we need to find out more. Bring these [COLOR_HIGHLIGHT_TEXT]conquistadors[COLOR_REVERT] to our [COLOR_HIGHLIGHT_TEXT]capital[COLOR_REVERT] immediately and safely.</English>
 		<Portuguese>Inacreditável! Se houver um mínimo de verdade nesses rumores, precisamos descobrir mais. Traga esses [COLOR_HIGHLIGHT_TEXT]conquistadores[COLOR_REVERT] para nossa [COLOR_HIGHLIGHT_TEXT]capital[COLOR_REVERT] imediatamente e com segurança.</Portuguese>
 		<German>Unfassbar! Sollte auch nur ein Körnchen Wahrheit in diesen Gerüchten liegen, müssen wir mehr erfahren. Bringt diese [COLOR_HIGHLIGHT_TEXT]Konquistadoren[COLOR_REVERT] unverzüglich und sicher [COLOR_HIGHLIGHT_TEXT]in unsere Hauptstadt[COLOR_REVERT].</German>
-		<Russian/>
+		<Russian>Невероятно! Если в этих слухах есть хоть доля правды, нам нужно узнать как можно больше. Немедленно доставьте этих [COLOR_HIGHLIGHT_TEXT]конкистадоров[COLOR_REVERT] в нашу [COLOR_HIGHLIGHT_TEXT]столицу[COLOR_REVERT] и чтобы ни один волос не упал с их головы!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT_2</Tag>
 		<English>This isn’t the first time, and it won’t be the last, that we’ve been fed stories like this. We don’t have time for this nonsense. The men are welcome to join us – let’s carry on searching for real treasures.</English>
 		<Portuguese>Esta não é a primeira vez, e não será a última, que ouvimos histórias como esta. Não temos tempo para essas bobagens. Os homens são bem-vindos para se juntarem a nós – vamos continuar em busca de verdadeiros tesouros.</Portuguese>
 		<German>Das ist nicht das erste Mal und es wird auch nicht das letzte Mal sein, dass uns solche Geschichten aufgetischt werden. Für diesen Unsinn haben wir keine Zeit. Die Männer können sich uns anschließen - suchen wir weiter nach echten Schätzen.</German>
-		<Russian/>
+		<Russian>Нас уже не раз потчевали подобными историями и, надо полагать, этот был не последний. У нас нет времени на подобный вздор. Люди могут присоединиться к нам, а мы продолжим поиски настоящих сокровищ.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEVEN_CITIES_OF_CIBOLA_INITIAL_QUEST_FAILED</Tag>
 		<English>The conquistadors, who claimed to have heard rumours of the Seven Cities of Cibola, were swallowed up by the wilderness – and with them went the rumours of the Seven Cities of Cibola. May God have mercy on their poor souls!</English>
 		<Portuguese>Os conquistadores, que alegaram ter ouvido rumores sobre as Sete Cidades de Cibola, foram engolidos pela selva – e com eles foram os rumores das Sete Cidades de Cibola. Que Deus tenha misericórdia de suas pobres almas!</Portuguese>
 		<German>Die Konquistadoren, die angeblich Gerüchte über die sieben Städte von Cibola gehört haben wollen, wurden von der Wildnis verschluckt - und mit ihnen die Gerüchte über die Sieben Städte von Cibola. Sei Gott ihren armen Seelen gnädig!</German>
-		<Russian/>
+		<Russian>Конкистадоры, рассказывавшие про семь городов Сиболы, были пропали в глуши, а вместе с ними исчезли и слухи об этих городах. Да упокоит Господь их несчастные души!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEVEN_CITIES_OF_CIBOLA_REJECT</Tag>
 		<English>What do they take me for? I’m a royal official, not an adventurer. I’m not going to make a fool of myself by chasing after a ghost town – not with a large expedition, nor with a small one! It’s all just a figment of the imagination. Forget this nonsense once and for all!</English>
 		<Portuguese>Por que eles me levam? Sou um oficial real, não um aventureiro. Não vou fazer papel de bobo perseguindo uma cidade fantasma – nem com uma expedição grande, nem com uma pequena! É tudo apenas uma invenção da imaginação. Esqueça essa bobagem de uma vez por todas!</Portuguese>
 		<German>Wofür halten die mich - Ich bin königlicher Beamter und kein Abenteurer. Ich mache mich doch nicht lächerlich und jage einer Geisterstadt nach - weder mit einer großen, noch mit einer kleinen Expedition! Das sind doch nur Hirngespinste. Vergesst diese Mär ein für alle Mal!</German>
-		<Russian/>
+		<Russian>За кого они меня принимают?! Я королевский чиновник, а не искатель приключений и не собираюсь выставлять себя на посмешище, гоняясь за призрачными городами — ни с большой экспедицией, ни с малой! Всё это — лишь плод воображения. Забудьте об этой чепухе раз и навсегда!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEVEN_CITIES_OF_CIBOLA_REJECT_HELP</Tag>
 		<English>The rumors surrounding Cibola shall be dismissed and no further expeditions financed.</English>
 		<Portuguese>Os rumores em torno de Cibola serão rejeitados e nenhuma outra expedição será financiada.</Portuguese>
 		<German>Die Gerüchte um Cibola sollen verworfen und keine weiteren Expeditionen finanziert werden.</German>
-		<Russian/>
+		<Russian>Слухи о Сиболе следует игнорировать, а финансирование дальнейших экспедиций - прекратить.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEVEN_CITIES_OF_CIBOLA_PREPARATION</Tag>
 		<English>Wonderful! We’ve been waiting for this news for a very long time. We’re going to organise a major expedition and secure the gold for the crown. Get everything ready at once! I can already smell the gold...</English>
 		<Portuguese>Maravilhoso! Há muito tempo que esperávamos por esta notícia. Vamos organizar uma grande expedição e garantir o ouro para a coroa. Prepare tudo de uma vez! Já posso sentir o cheiro do ouro...</Portuguese>
 		<German>Wunderbar! Sehr lange haben wir auf diese Nachricht gewartet. Wir werden eine große Expedition zusammenstellen und das Gold für die Krone sichern. Lasst sofort alles vorbereiten! Ich kann das Gold schon riechen...</German>
-		<Russian/>
+		<Russian>Прекрасно! Мы очень долго ждали этих новостей. Мы организуем масштабную экспедицию и добудем золото для Короны. Немедленно начать приготовления! Я уже чую запах золота...</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEVEN_CITIES_OF_CIBOLA_START_EXP_HELP</Tag>
 		<English>A great expedition shall be assembled to search for the legendary Seven Cities of Cibola. The preparations cost [COLOR_HIGHLIGHT_TEXT]2000 gold, 50 provisions, 50 blades and 50 guns as well as two mounted conquistadors in this city[COLOR_REVERT].</English>
 		<Portuguese>Uma grande expedição será montada em busca das lendárias Sete Cidades de Cibola. Os preparativos custaram [COLOR_HIGHLIGHT_TEXT]2.000 ouro, 50 provisões, 50 lâminas e 50 armas, bem como dois conquistadores montados nesta cidade[COLOR_REVERT].</Portuguese>
 		<German>Eine große Expedition soll zusammengestellt werden, um nach den sagenhaften Sieben Städten von Cibola zu suchen. Die Vorbereitungen kosten [COLOR_HIGHLIGHT_TEXT]2000 Gold, 50 Proviant, 50 Klingenwaffen und 50 Schusswaffen und drei Einheiten berittene Konquistadoren in der Stadt[COLOR_REVERT].</German>
-		<Russian/>
+		<Russian>На поиски легендарных Семи городов Сиболы будет снаряжена величайшая экспедиция. Подготовка обойдется в [COLOR_HIGHLIGHT_TEXT]2000 золотых, 50 единиц провианта, 50 клинков и 50 ружей, а также потребует участия двух конных конкистадоров из этого города[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_PREPARATION_DONE_HELP</Tag>
 		<English>The expedition is now ready to depart. Supplies and weapons will be taken from the capital. In the next round, you can set off on your expedition!</English>
 		<Portuguese>A expedição está agora pronta para partir. Suprimentos e armas serão retirados da capital. Na próxima rodada, você poderá partir em sua expedição!</Portuguese>
 		<German>Die Expedition ist nun bereit zum Aufbruch. Vorräte und Waffen werden aus der Hauptstadt entnommen. In der nächsten Runde könnt ihr Eure Expedition beginnen!</German>
-		<Russian/>
+		<Russian>Экспедиция готова к отправлению. Снаряжение и оружие будут взяты из столицы. В следующем ходу вы сможете отправиться в путь!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_START_SEVEN_CITIES_OF_CIBOLA_PREPARATION_DONE</Tag>
 		<English>Brilliant, roll out the banners and let's get rich! Wie will start soon.</English>
 		<Portuguese>Brilhante, estenda os banners e vamos ficar ricos! Wie começará em breve.</Portuguese>
 		<German>Ausgezeichnet, rollt die Banner aus und lasst uns reich werden! Bald geht es los. </German>
-		<Russian/>
+		<Russian>Отлично, разворачиваем знамена и вперед, на встречу богатствам! Выдвигаемся.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_START_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_1</Tag>
 		<English>Excellent, then spur the horses on. We set out as beggars, and we shall return as rich men. A great day for our nation!</English>
 		<Portuguese>Excelente, então estimule os cavalos. Partimos como mendigos e voltaremos como homens ricos. Um grande dia para nossa nação!</Portuguese>
 		<German>Ausgezeichnet, dann gebt den Pferden die Sporen. Als Bettler ziehen wir aus und als reiche Männer werden wir heimkehren. Ein großer Tag für unsere Nation!</German>
-		<Russian/>
+		<Russian>Отлично, пришпорьте лошадей. Мы отправились в путь нищими, а вернемся богачами. Великий день для нашего народа!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_START_HELP</Tag>
 		<English>Lead your [COLOR_HIGHLIGHT_TEXT] expedition (all three conquistadors) straight to the other end of the map [COLOR_REVERT]until you come across new clues about the Seven Cities of Cibola.</English>
 		<Portuguese>Lidere sua expedição [COLOR_HIGHLIGHT_TEXT] (todos os três conquistadores) direto para o outro extremo do mapa [COLOR_REVERT]até encontrar novas pistas sobre as Sete Cidades de Cibola.</Portuguese>
 		<German>Zieht mit Eurer [COLOR_HIGHLIGHT_TEXT]Expedition (alle drei Konquistadoren) immer geradewegs an das andere Ende der Karte[COLOR_REVERT], bis ihr auf neue Hinweise auf die Sieben Städte von Cibola stoßt.</German>
-		<Russian/>
+		<Russian>Ведите свою [COLOR_HIGHLIGHT_TEXT]экспедицию[COLOR_REVERT] (всех трех конкистадоров) прямо к противоположному краю карты, пока не обнаружите новые подсказки о Семи городах Сиболы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_START_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_2</Tag>
 		<English>We’re moving further inland. Give them both something to eat and drink, and send them to the capital with an interim report. And pay out more pay so the men stay calm.</English>
 		<Portuguese>Estamos nos movendo mais para o interior. Dê a ambos algo para comer e beber e mande-os para a capital com um relatório provisório. E pagar mais para que os homens fiquem calmos.</Portuguese>
 		<German>Wir ziehen weiter ins Landesinnere. Gebt den beiden etwas zu essen und zu trinken und schickt Sie mit einem Zwischenbericht in die Hauptstadt. Und zahlt mehr Sold aus, damit die Männer ruhig bleiben.</German>
-		<Russian/>
+		<Russian>Мы продвигаемся вглубь страны. Накормите обоих, а затем отправьте в столицу с предварительным донесением. И увеличьте им жалование, чтобы они держали язык за зубами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_POINT_1_DONE_HELP</Tag>
 		<English>[ICON_BULLET]You come across an old missionary and a confused trader.[NEWLINE][ICON_BULLET]Ride deeper into the interior: gather at least %d1 Mounted Conquistadors on the same plot, at least %d2 tiles away from your capital and at least %d tiles away from the ocean.</English>
 		<Portuguese>[ICON_BULLET]Você se depara com um velho missionário e um comerciante confuso.[NEWLINE][ICON_BULLET]Cavalgue mais fundo no interior: reúna pelo menos %d1 Conquistadores Montados no mesmo terreno, a pelo menos %d2 lotes de distância de sua capital e pelo menos %d lotes de distância do oceano.</Portuguese>
 		<German>[ICON_BULLET]Ihr stoßt auf einen alten Missionar und einen verwirrten Händler.[NEWLINE][ICON_BULLET]Dringe tiefer ins Landesinnere vor: Versammle mindestens %d1 berittene Konquistadoren auf demselben Feld, mindestens %d2 Felder von deiner Hauptstadt entfernt.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Вы встречаете старого миссионера и растерянного торговца.[NEWLINE][ICON_BULLET]Отправляйтесь вглубь материка: соберите не менее %d1 отрядов конных конкистадоров на одной клетке, расположенной на расстоянии не менее %d2 клеток от вашей столицы и не менее %d клеток от океана.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_POINT_1_HELP</Tag>
 		<English>[ICON_BULLET]Ride further inland: Gather at least %d1 mounted conquistadors on the same tile, at least %d2 tiles away from your capital.</English>
 		<Portuguese>[ICON_BULLET]Cavalgue mais para o interior: reúna pelo menos %d1 conquistadores montados no mesmo lote, a pelo menos %d2 lotes de distância de sua capital.</Portuguese>
 		<German>[ICON_BULLET]Dringe tiefer ins Landesinnere vor: Versammle mindestens %d1 berittene Konquistadoren auf demselben Feld und mindestens %d2 Felder von deiner Hauptstadt entfernt.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Отправьтесь вглубь материка: соберите не менее %d1 конных конкистадоров на одной клетке, расположенной на расстоянии не менее %d2 клеток от вашей столицы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_START_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_3</Tag>
 		<English>We’ll press on and fight our way through if we have to. We’ve come this far; we’re not giving up now!</English>
 		<Portuguese>Seguiremos em frente e abriremos caminho se for necessário. Chegamos até aqui; não vamos desistir agora!</Portuguese>
 		<German>Wir werden weiterziehen und uns notfalls da durchkämpfen. Wir sind soweit gekommen, wir geben jetzt nicht so einfach auf!</German>
-		<Russian/>
+		<Russian>Мы будем продолжать двигаться дальше и если придется, пробиваться с боем. Мы прошли такой долгий путь — не время сдаваться!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_POINT_2_DONE_HELP</Tag>
 		<English>[ICON_BULLET]You come across an old missionary and a confused trader.[NEWLINE][ICON_BULLET]Ride deeper into the interior: gather at least %d1 Mounted Conquistadors on the same plot, at least %d2 tiles away from your capital and at least %d tiles away from the ocean.</English>
 		<Portuguese>[ICON_BULLET]Você se depara com um velho missionário e um comerciante confuso.[NEWLINE][ICON_BULLET]Cavalgue mais fundo no interior: reúna pelo menos %d1 Conquistadores Montados no mesmo terreno, a pelo menos %d2 lotes de distância de sua capital e pelo menos %d lotes de distância do oceano.</Portuguese>
 		<German>[ICON_BULLET]Ihr werdet von Ureinwohnern angegriffen, die euch beobachten[NEWLINE][ICON_BULLET]Kämpft und dringt tiefer ins Landesinnere vor: Versammle mindestens %d1 berittene Konquistadoren auf demselben Feld, mindestens %d2 Felder von deiner Hauptstadt entfernt.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Вы встречаете старого миссионера и растерянного торговца.[NEWLINE][ICON_BULLET]Отправляйтесь вглубь материка: соберите не менее %d1 отрядов конных конкистадоров на одной клетке, расположенной на расстоянии не менее %d2 клеток от вашей столицы и не менее %d клеток от океана.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_START_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_HOME</Tag>
 		<English>Search everywhere, spare no effort! This must be the golden paradise. And if the Indians refuse to hand everything over, show them that we fight alongside God and emerge victorious! After that, we’ll get out of here as quickly as possible and make our way home.</English>
 		<Portuguese>Pesquise em todos os lugares, não poupe esforços! Este deve ser o paraíso dourado. E se os índios se recusarem a entregar tudo, mostre a eles que lutamos ao lado de Deus e saímos vitoriosos! Depois disso, sairemos daqui o mais rápido possível e voltaremos para casa.</Portuguese>
 		<German>Durchsucht alles, scheut keine Mühen! Dies muss das goldene Paradies sein. Und wenn die Indianer sich weigern alles herauszurücken, zeigt Ihnen, dass wir mit Gott kämpfen und siegen! Danach verschwinden wir schnellstmöglich von hier und machen uns auf den Heimweg.</German>
-		<Russian/>
+		<Russian>Ищите повсюду, не жалейте сил! Должно быть, это и есть тот самый Золотой Рай. А если индейцы откажутся расстаться с богатствами, Господь всемогущий  поможет нам одалеть этих дикарей! А потом надо поскорее выбираться из этих мест и возвращаться домой.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_POINT_3_DONE_HELP</Tag>
 		<English>[ICON_BULLET]The Indians are attacking you. As you search for the treasure, you have a realistic chance of finding a truly great treasure – make sure you bring it safely back to one of your towns!</English>
 		<Portuguese>[ICON_BULLET]Os índios estão atacando você. Ao procurar o tesouro, você tem uma chance realista de encontrar um tesouro verdadeiramente grande – certifique-se de trazê-lo em segurança para uma de suas cidades!</Portuguese>
 		<German>[ICON_BULLET]Die Indianer greifen Euch an. Auf der Suche nach dem Schatz habt Ihr eine realistische Chance auf einen wahrlich großen Schatz - bringt ihn danach sicher in eine Eurer Städte!</German>
-		<Russian/>
-	</TEXT>	
+		<Russian>[ICON_BULLET]На вас нападают индейцы. В поисках сокровищ у вас есть реальный шанс найти по-настоящему ценный клад — постарайтесь благополучно доставить его в один из своих городов!</Russian>
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_START_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_ARRIVAL_1</Tag>
 		<English>Yes, who would have thought it? The treasure will fill the king’s treasury. He should be grateful to us for that. Perhaps we’ll even be granted a title of nobility... who knows!</English>
 		<Portuguese>Sim, quem teria pensado nisso? O tesouro encherá o tesouro do rei. Ele deveria ser grato a nós por isso. Talvez até nos seja concedido um título de nobreza... quem sabe!</Portuguese>
 		<German>Ja, wer hätte das gedacht. Der Schatz wird die Schatzkammer des Königs füllen. Dafür sollte er uns dankbar sein. Vielleicht erhalten wir sogar einen Adelstitel...wer weiß!</German>
-		<Russian/>
+		<Russian>Да, кто бы мог подумать? Эти сокровища наполнят королевскую казну. Королю стоит быть нам за это благодарным. Возможно, нас даже удостоят дворянского титула! Кто знает...</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_START_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_ARRIVAL_2</Tag>
 		<English>Well, who would have thought it? The treasure will fill the king’s treasury. He should be grateful to us for that and send a galleon so that the treasure can be brought to Europe.</English>
 		<Portuguese>Bem, quem teria pensado nisso? O tesouro encherá o tesouro do rei. Ele deveria estar-nos grato por isso e enviar um galeão para que o tesouro pudesse ser trazido para a Europa.</Portuguese>
 		<German>Ja, wer hätte das gedacht. Der Schatz wird die Schatzkammer des Königs füllen. Dafür sollte er uns dankbar sein und eine Galeone schicken, damit der Schatz nach Europa gebracht werden kann.</German>
-		<Russian/>
+		<Russian>Кто бы мог подумать! Сокровища наполнят Королевскую казну. Королю следует быть нам за это благодарным и прислать галеон, чтобы доставить их в Европу.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_ARRIVAL_REWARD_SHIP_HELP</Tag>
 		<English>We will receive a [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] to transport the expedition's spoils.</English>
 		<Portuguese>Receberemos um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] para transportar os despojos da expedição.</Portuguese>
 		<German>Wir erhalten eine bzw. einen [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT], um die Beute der Expedition zu transportieren.</German>
-		<Russian/>
+		<Russian>Мы получим [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] для перевозки добычи экспедиции.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_START_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_ARRIVAL_3</Tag>
 		<English>Well, who would have thought it? The treasure will fill the king’s treasury. He should be grateful to us for that. But first, we’re going to have a right good party here. Let all the townspeople drink to our health in the taverns – and we’ll have a good swig ourselves.</English>
 		<Portuguese>Bem, quem teria pensado nisso? O tesouro encherá o tesouro do rei. Ele deveria ser grato a nós por isso. Mas primeiro, vamos fazer uma festa muito boa aqui. Deixe que todos os habitantes da cidade bebam à nossa saúde nas tabernas – e nós mesmos tomaremos um bom gole.</Portuguese>
 		<German>Ja, wer hätte das gedacht. Der Schatz wird die Schatzkammer des Königs füllen. Dafür sollte er uns dankbar sein. Aber zunächst werden wir hier mächtig feiern. Sollen alle Bürger auf unser Wohl in den Tavernen trinken - und wir genehmigen uns auch einen ordentlichen Schluck.</German>
-		<Russian/>
+		<Russian>Кто бы мог подумать! Эти сокровища наполнят Королевскую казну. Королю стоит быть нам за это благодарным. Но сперва мы здесь как следует попируем. Пусть горожане выпьют за наше здоровье во всех тавернах! Да и нам самим не стоит отказываться от праздника.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_ARRIVAL_1_HELP</Tag>
 		<English>[ICON_BULLET]Relations with the King improve by +%d1.</English>
 		<Portuguese>[ICON_BULLET]As relações com o Rei melhoram em +%d1.</Portuguese>
 		<German>[ICON_BULLET]Die Beziehungen zum König verbessern sich um +%d1.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Отношения с Королем улучшаются на +%d1.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_ARRIVAL_2_HELP</Tag>
 		<English>[ICON_BULLET]Relations with the King improve by +%d1.</English>
 		<Portuguese>[ICON_BULLET]As relações com o Rei melhoram em +%d1.</Portuguese>
 		<German>[ICON_BULLET]Die Beziehungen zum König verbessern sich um +%d1.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Отношения с Королем улучшаются на +%d1.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CIBOLA_EXPEDITION_ARRIVAL_3_HELP</Tag>
 		<English>[ICON_BULLET]Relations with the King improve by +%d1.</English>
 		<Portuguese>[ICON_BULLET]As relações com o Rei melhoram em +%d1.</Portuguese>
 		<German>[ICON_BULLET]Die Beziehungen zum König verbessern sich um +%d1.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Отношения с Королем улучшаются на +%d1.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ZEALOUS_MISSIONARY_1</Tag>
 		<English>This work must be encouraged. Provide the mission with all necessary support.</English>
 		<Portuguese>Este trabalho deve ser incentivado. Fornecer à missão todo o apoio necessário.</Portuguese>
 		<German>Diese Arbeit verdient unsere volle Unterstützung. Stellt der Mission alle erforderlichen Mittel zur Verfügung.</German>
-		<Russian/>
+		<Russian>Такую работу необходимо поощрять. Обеспечьте миссию всем необходимым.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ZEALOUS_MISSIONARY_2</Tag>
 		<English>The missionary has our blessing, but he must continue with the resources already available.</English>
 		<Portuguese>O missionário tem a nossa bênção, mas deve continuar com os recursos já disponíveis.</Portuguese>
 		<German>Der Missionar genießt unseren Segen, doch muss er seine Arbeit mit den vorhandenen Mitteln fortführen.</German>
-		<Russian/>
+		<Russian>Миссионер имеет наше благословение, но он должен продолжать работу, используя уже имеющиеся ресурсы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ZEALOUS_MISSIONARY_3</Tag>
 		<English>The mission has served its purpose well. It is time that its efforts also benefit the colony directly. The missionary should remind the natives that our God expects earthly sacrifices.</English>
 		<Portuguese>A missão cumpriu bem o seu propósito. Já é tempo de os seus esforços também beneficiarem directamente a colônia. O missionário deve lembrar aos nativos que o nosso Deus espera sacrifícios terrenos.</Portuguese>
 		<German>Die Mission hat ihren Zweck vortrefflich erfüllt. Nun soll ihre Arbeit auch dem Wohl der Kolonie unmittelbar dienen. Der Missionar soll die Ureinwohner daran erinnern, dass unser Gott weltliche Opfer erwartet.</German>
-		<Russian/>
+		<Russian>Миссия с честью выполнила свою задачу. Пришло время, чтобы плоды её трудов принесли прямую пользу колонии. Миссионеру следует напомнить туземцам, что наш Бог ожидает земных подношений.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BURNING_MISSION_1</Tag>
 		<English>We will rebuild the mission. No harm is to come to the Native Americans who set fire to the mission. But the missionaries must make it clear to the Native Americans that our God does not condone such senseless destruction, and that they must now spend several days praying earnestly to our God to purify their corrupt souls.</English>
 		<Portuguese>Reconstruiremos a missão. Nenhum mal acontecerá aos nativos americanos que incendiaram a missão. Mas os missionários devem deixar claro aos nativos americanos que o nosso Deus não tolera tal destruição sem sentido, e que eles devem agora passar vários dias orando fervorosamente ao nosso Deus para purificar as suas almas corruptas.</Portuguese>
 		<German>Wir werden die Mission wieder aufbauen. Den Indianern, die die Mission angezündet haben, soll kein Leid zugefügt werden. Aber die Missionare müssen den Indianern klarmachen, dass unser Gott solch sinnlose Zerstörung nicht gutheißt und sie dafür nun mehrere Tage fleißig zu unserem Gott beten müssen, um ihre verdorbene Seele zu reinigen.</German>
-		<Russian/>
+		<Russian>Мы восстановим миссию. Индейцы, устроившие поджог, не должны пострадать. Однако миссионеры обязаны разъяснить им, что наш Бог не приемлет столь бессмысленного разрушения и что теперь им надлежит несколько дней усердно молиться Ему, дабы очистить свои порочные души.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BURNING_MISSION_2</Tag>
 		<English>The mission has become a source of conflict. Withdraw the missionary and abandon the settlement. I don’t want a war with our Indian neighbours.</English>
 		<Portuguese>A missão tornou-se uma fonte de conflito. Retire o missionário e abandone a colônia. Não quero uma guerra com os nossos vizinhos índios.</Portuguese>
 		<German>Die Mission ist zu einem Quell ständigen Unfriedens geworden. Zieht die Missionare ab und gebt die Niederlassung auf. Ich will keinen Krieg mit unseren indianischen Nachbarn.</German>
-		<Russian/>
+		<Russian>Эта миссия стала источником конфликта. Отозвите миссионера и оставьте поселение. Я не хочу войны с нашими соседями-индейцами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BURNING_MISSION_3</Tag>
 		<English>This insult cannot go unanswered. Demand compensation and hold the tribe responsible. Demand abundant offerings as reparation, so that they may see that our God is also capable of punishing His earthly children when they disobey Him.</English>
 		<Portuguese>Este insulto não pode ficar sem resposta. Exija compensação e responsabilize a tribo. Exijam ofertas abundantes como reparação, para que vejam que o nosso Deus também é capaz de punir os Seus filhos terrenos quando O desobedecem.</Portuguese>
 		<German>Diese Beleidigung des Herrn darf nicht unbeantwortet bleiben. Fordert Wiedergutmachung und macht den Stamm für die Tat verantwortlich. Verlangt als Wiedergutmachung reichlich Opfergaben, damit sie sehen, dass unser Gott auch strafen kann, wenn seine irdischen Kinder nicht gehorchen.</German>
-		<Russian/>
+		<Russian>Это оскорбление не должно остаться без ответа. Потребуйте возмещения и призовите племя к ответу. Требуйте щедрых даров в качестве искупления, чтобы они увидели: наш Бог тоже способен карать Своих земных детей, когда те не повинуются Ему.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRESSED_NATIVE_VILLAGE_1</Tag>
 		<English>We must protect the village at all costs and negotiate a treaty with the natives. We will compensate them and ensure that their settlement is not destroyed as well. We need peaceful relations with the natives – not least for trade.</English>
 		<Portuguese>Devemos proteger a aldeia a todo custo e negociar um tratado com os nativos. Iremos compensá-los e garantir que a sua colônia também não seja destruído. Precisamos de relações pacíficas com os nativos – sobretudo no que diz respeito ao comércio.</Portuguese>
 		<German>Wir müssen das Dorf unbedingt schützen und mit den Indianern einen Vertrag aushandeln. Wir werden sie entschädigen und dafür sorgen, dass ihre Siedlung nicht auch noch zerstört wird. Wir brauchen den friedlichen Kontakt zu den Indianern - auch für den Handel.</German>
-		<Russian/>
+		<Russian>Мы должны любой ценой защитить деревню и заключить договор с туземцами. Мы выплатим им компенсацию и позаботимся о том, чтобы их поселение тоже не было разрушено. Нам нужны мирные отношения с туземцами — не в последнюю очередь ради торговли.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRESSED_NATIVE_VILLAGE_2</Tag>
 		<English>Pah, I couldn't care less about some savages. It's about time they cleared off. It's a good thing the settlers are pushing for this. We need the land for the colony's development.</English>
 		<Portuguese>Pah, eu não poderia me importar menos com alguns selvagens. Já era hora de eles partirem. É bom que os colonos estejam pressionando por isso. Precisamos da terra para o desenvolvimento da colônia.</Portuguese>
 		<German>Pah, was interessieren mich irgendwelche Wilden. Es wird langsam Zeit, dass sie hier verschwinden. Gut, dass die Siedler das vorantreiben. Wir brauchen das Land für die Entwicklung der Kolonie.</German>
-		<Russian/>
+		<Russian>Пф, мне совершенно нет дела до каких-то дикарей. Им давно уже пора убраться отсюда. Хорошо, что поселенцы настаивают на этом. Нам нужна земля для развития колонии.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GIFT_OF_NATIVE_KNOWLEDGE_1</Tag>
 		<English>That’s excellent news. The Indians may still be living in the Stone Age, but they seem to know how to grow food in this soil. We should learn from them.</English>
 		<Portuguese>Isso é uma excelente notícia. Os índios podem ainda viver na Idade da Pedra, mas parecem saber como cultivar alimentos neste solo. Deveríamos aprender com eles.</Portuguese>
 		<German>Sehr erfreulich. Die Wilden mögen noch in der Steinzeit leben, aber wie man in diesem Boden Nahrung anbaut scheinen sie zu wissen. Wir sollten uns das Wissen aneignen.</German>
-		<Russian/>
+		<Russian>Это отличные новости. Пусть индейцы и живут всё ещё в каменном веке, но, похоже, они знают, как выращивать пищу на этой земле. Нам стоит у них поучиться.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GIFT_OF_NATIVE_KNOWLEDGE_2</Tag>
 		<English>That’s excellent news. We will put her expertise to good use and achieve even better harvests on our plantations in future. In any case, we should invite them over for a meal.</English>
 		<Portuguese>Isso é uma excelente notícia. Faremos bom uso de sua experiência e conseguiremos colheitas ainda melhores em nossas plantações no futuro. De qualquer forma, deveríamos convidá-los para uma refeição.</Portuguese>
 		<German>Sehr erfreulich. Wir werden uns ihr Wissen zu nutze machen und zukünftig auf unseren Plantagen noch bessere Ernten erzielen. Wir sollten sie jedenfalls zu einem gemeinsamen Mahl einladen.</German>
-		<Russian/>
+		<Russian>Это отличные новости. Пусть индейцы и отстают от нас в развитии, но, похоже, они знают, как выращивать пищу на этой земле. Нам стоит у них поучиться.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GIFT_OF_NATIVE_KNOWLEDGE_3</Tag>
 		<English>Send them away; we can manage on our own. Our scholars and farmers have little need for tribal superstition.</English>
 		<Portuguese>Mande-os embora; podemos administrar por conta própria. Nossos estudiosos e agricultores têm pouca necessidade de superstições tribais.</Portuguese>
 		<German>Schickt sie weg, wir schaffen das auch allein. Unsere Gelehrten und Bauern haben wenig Bedarf an den Überlieferungen eines Stammes.</German>
-		<Russian/>
+		<Russian>Отправьте их прочь — мы справимся сами. Нашим ученым и земледельцам нет дела до племенных суеверий.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GIFT_NATIVE_KNOWLEDGE_FARM_HELP</Tag>
 		<English>[ICON_BULLET]+%d1 [ICON_FOOD] on Farms and Large Farms worked by this settlement.</English>
 		<Portuguese>[ICON_BULLET]+%d1 [ICON_FOOD] em Fazendas e Fazendas Grandes trabalhadas por esta colônia.</Portuguese>
 		<German>[ICON_BULLET]+%d1 [ICON_FOOD] auf Farmen und großen Farmen, die von dieser Siedlung bewirtschaftet werden.</German>
+		<Russian>[ICON_BULLET]+%d1 [ICON_FOOD] на фермах и больших фермах, обрабатываемых этим поселением.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_GIFT_NATIVE_KNOWLEDGE_PLANTATION_HELP</Tag>
 		<English>[ICON_BULLET][COLOR_POSITIVE_TEXT]+%d1 yield[COLOR_REVERT] on Plantations worked by this settlement.</English>
 		<Portuguese>[ICON_BULLET][COLOR_POSITIVE_TEXT]+%d1 recurso[COLOR_REVERT] nas plantações trabalhadas por esta colônia.</Portuguese>
 		<German>[ICON_BULLET][COLOR_POSITIVE_TEXT]+%d1 Ertrag [COLOR_REVERT]auf Plantagen, die von dieser Siedlung bewirtschaftet werden.</German>
+		<Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]+%d1 к выработке[COLOR_REVERT] на плантациях, обрабатываемых этим поселением.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MIXED_SETTLEMENT_1</Tag>
 		<English>I am sure that living together will also have a positive impact on the rest of our settlements and make it easier to get along with the indigenous people as a whole. Let them be, whatever the Church may say.</English>
 		<Portuguese>Estou certo de que a convivência também terá um impacto positivo no resto dos nossas colônias e facilitará o convívio com os povos indígenas como um todo. Deixe-os em paz, não importa o que a Igreja diga.</Portuguese>
 		<German>Ich bin sicher, das Zusammenleben wird sich auch positiv auf den Rest unserer Siedlungen auswirken und das Auskommen mit den Ureinwohnern insgesamt erleichtern. Heißt die Familien willkommen, egal was die Kirche dazu sagt.</German>
-		<Russian/>
+		<Russian>Я уверен, что совместное проживание также благотворно скажется на остальных наших поселениях и облегчит налаживание отношений с коренным населением в целом. Пусть живут, что бы там ни говорила Церковь.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MIXED_SETTLEMENT_2</Tag>
 		<English>I am sure that living together will also have a positive impact on the rest of our settlements and make it easier to get along with the indigenous people as a whole. Let them be, whatever the Church may say.</English>
 		<Portuguese>Estou certo de que a convivência também terá um impacto positivo no resto dos nossas colônias e facilitará o convívio com os povos indígenas como um todo. Deixe-os em paz, não importa o que a Igreja diga.</Portuguese>
 		<German>Um Himmels Willen, diesem unzüchtigen Treiben muss Einheit geboten werden. Wir leben hier doch nicht in Sodom und Gomorrha. Was passiert ist, können wir nicht ändern, aber in Zukunft werden wir solche Verfehlungen nicht tolerieren.</German>
-		<Russian/>
+		<Russian>Я уверен, что совместное проживание также благотворно скажется на остальных наших поселениях и облегчит налаживание отношений с коренным населением в целом. Пусть живут, что бы там ни говорила Церковь.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_NATIVE_REFUGEES</Tag>
 		<English>Scouts report that the survivors of the destroyed village have been welcomed in %s1_city. Refugees, hunters and warriors now strengthen the settlement.</English>
 		<Portuguese>Batedores relata que os sobreviventes da aldeia destruída foram recebidos em %s1_city. Refugiados, caçadores e guerreiros fortalecem agora a colônia.</Portuguese>
 		<German>Kundschafter berichten, dass die Überlebenden des zerstörten Dorfes in %s1_city aufgenommen wurden. Die Siedlung wächst nun durch Flüchtlinge, Jäger und Krieger ihres Volkes.</German>
-		<Russian/>
+		<Russian>Разведчики сообщают, что выжившие из уничтоженной деревни нашли приют в городе %s1_city. Поселение растчёт за счёт беженцев, охотников и воинов.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_MESSAGE_ANCESTORS_CALL</Tag>
 		<English>The spirits of the ancestors have united a struggling tribe. Warriors, hunters and families gather in %s1_city, the last remaining settlement of their people.</English>
 		<Portuguese>Os espíritos dos ancestrais uniram uma tribo em dificuldades. Guerreiros, caçadores e famílias se reúnem em %s1_city, o última colônia remanescente de seu povo.</Portuguese>
 		<German>Die Geister der Ahnen haben einen bedrängten Stamm geeint. Krieger, Jäger und Familien versammeln sich in %s1_city, der letzten verbliebenen Siedlung ihres Volkes.</German>
-		<Russian/>
+		<Russian>Духи предков сплотили племя, переживающее тяжелые времена. Воины, охотники и целые семьи собираются в %s1_city — последнем уцелевшем поселении их народа.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_WEAPONS_RAID_1</Tag>
 		<English>Those damned savages. Step up the guards and secure the warehouses. This won’t go unpunished!</English>
 		<Portuguese>Aqueles malditos selvagens. Intensifique os guardas e proteja os armazéns. Isso não ficará impune!</Portuguese>
 		<German>Die verfluchten Wilden. Verstärkt die Wachen und sichert die Lagerhäuser. Das wird nicht ungestraft bleiben!</German>
-		<Russian/>
+		<Russian>Проклятые дикари. Усильте охрану и обеспечьте безопасность складов. Это не останется безнаказанным!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_WEAPONS_RAID_HELP_1</Tag>
 		<English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] will be removed from %s3_city and added to the stock in %s4_city.</English>
 		<Portuguese>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] será removido de %s3_city e adicionado ao estoque em %s4_city.</Portuguese>
 		<German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] werden aus %s3_city entfernt und dem Lager von %s4_city hinzugefügt.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] будет удалено из города %s3_city и добавлено на склад в %s4_city.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_HORSES_RAID_1</Tag>
 		<English>Those damned savages. Step up the guards and secure the horse stables. This won’t go unpunished!</English>
 		<Portuguese>Aqueles malditos selvagens. Intensifique os guardas e proteja os estábulos dos cavalos. Isso não ficará impune!</Portuguese>
 		<German>Die verfluchten Wilden. Verstärkt die Wachen und sichert die Pferdeställe. Das wird nicht ungestraft bleiben!</German>
-		<Russian/>
+		<Russian>Эти проклятые дикари. Усильте охрану конюшни. Это не останется безнаказанным!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_HORSES_RAID_HELP_1</Tag>
 		<English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] will be removed from %s3_city and added to the stock in %s4_city.</English>
 		<Portuguese>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] será removido de %s3_city e adicionado ao estoque em %s4_city.</Portuguese>
 		<German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] werden aus %s3_city entfernt und dem Lager von %s4_city hinzugefügt.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] будет удалено из города %s3_city и добавлено на склад в %s4_city.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_FOOD_RAID_1</Tag>
 		<English>Good heavens, those savages are good for nothing but plundering and murder. Godless creatures – secure the storehouses and reinforce the guards. We won’t forget this.</English>
 		<Portuguese>Meu Deus, esses selvagens só servem para saques e assassinatos. Criaturas sem Deus – protejam os armazéns e reforcem os guardas. Não vamos esquecer isso.</Portuguese>
 		<German>Himmeldonnerwetter, die Wilden können auch nichts außer Rauben und Morden. Gottlose Geschöpfe - sichert die Lagerhäuser und verstärkt die Wachen. Das werden wir nicht vergessen.</German>
-		<Russian/>
+		<Russian>Господь милосердный, эти дикари могут только грабить и убивать. Безбожные твари — возьмите под охрану склады и усильте караул. Мы этого не забудем.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_FOOD_RAID_HELP_1</Tag>
 		<English>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] are removed from %s3_city and added to the stores of %s4_city.</English>
 		<Portuguese>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] são removidos de %s3_city e adicionados às lojas de %s4_city.</Portuguese>
 		<German>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] werden aus %s3_city entfernt und den Vorräten von %s4_city hinzugefügt.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%d1 %s2[COLOR_REVERT] убраны из %s3_city и добавлены на склады %s4_city.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_CONVERTED_RETURN_1</Tag>
 		<English>Let him return to his people. That should help to strengthen our relations a little.</English>
 		<Portuguese>Deixe-o retornar ao seu povo. Isso deverá ajudar a fortalecer um pouco as nossas relações.</Portuguese>
 		<German>Lasst ihn zu seinem Volk zurückkehren. Das dürfte unsere Beziehungen ein wenig stärken.</German>
-		<Russian/>
+		<Russian>Пусть он вернется к своему народу. Это должно помочь немного укрепить наши отношения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_CONVERTED_RETURN_2</Tag>
 		<English>He has chosen this path and must stay. God will surely guide him onto the right path.</English>
 		<Portuguese>Ele escolheu este caminho e deve ficar. Deus certamente o guiará no caminho certo.</Portuguese>
 		<German>Er hat unseren Weg gewählt und muss bleiben. Gott wird ihn schon noch auf den rechten Weg führen.</German>
-		<Russian/>
+		<Russian>Он выбрал этот путь и должен остаться. Господь непременно направит его на верный путь.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_EVENTS_CUSTOMS_1</Tag>
 		<English>If they cannot pay the King’s duties, their cargo shall be seized and placed in the warehouses of %s1_city.</English>
 		<Portuguese>Caso não consigam pagar os deveres do Rei, a sua carga será apreendida e colocada nos armazéns de %s1_city.</Portuguese>
 		<German>Wenn sie die Abgaben an die Krone nicht entrichten können, wird ihre Ladung beschlagnahmt und in die Lagerhäuser von %s1_city verbracht.</German>
-		<Russian/>
+		<Russian>Если они не смогут уплатить королевские пошлины, их груз будет конфискован и помещен на склады города %s1_city.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_CUSTOMS_DISPUTE_1_HELP</Tag>
 		<English>[ICON_BULLET]The cargo is confiscated. %s1_city receives some goods.</English>
 		<Portuguese>[ICON_BULLET]A carga foi confiscada. %s1_city recebe algumas mercadorias.</Portuguese>
 		<German>[ICON_BULLET]Die Ladung wird beschlagnahmt. %s1_city erhält diverse beschlagnahmte Waren. </German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Груз конфискован. Город %s1_city получает часть товаров.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_EVENTS_CUSTOMS_2</Tag>
 		<English>Let them pass. No chest of goods is worth provoking another governor.</English>
 		<Portuguese>Deixe-os passar. Nenhum baú de mercadorias vale a pena provocar outro governador.</Portuguese>
 		<German>Lasst sie passieren. Keine Warenkiste ist es wert, einen anderen Gouverneur zu erzürnen.</German>
-		<Russian/>
+		<Russian>Пусть проходят. Никакой сундук с товаром не стоит того, чтобы навлекать на себя гнев еще одного губернатора.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_CUSTOMS_DISPUTE_2_HELP</Tag>
 		<English>[ICON_BULLET]The merchants are allowed to continue their journey.</English>
 		<Portuguese>[ICON_BULLET]Os comerciantes podem continuar sua jornada.</Portuguese>
 		<German>[ICON_BULLET]Die Händler dürfen ihre Reise fortsetzen.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Купцам разрешено продолжить путь.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_EVENTS_CUSTOMS_3</Tag>
 		<English>Charge a reasonable duty and let them go on their way as soon as they can pay it.</English>
 		<Portuguese>Cobrar uma taxa razoável e deixá-los seguir seu caminho assim que puderem pagá-la.</Portuguese>
 		<German>Erhebt eine maßvolle Abgabe und lasst sie weiterziehen, sobald sie sie aufbringen können.</German>
-		<Russian/>
+		<Russian>Взимайте разумную пошлину и отпускайте их с миром, как только они смогут её уплатить.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_CUSTOMS_DISPUTE_3_HELP</Tag>
 		<English>[ICON_BULLET]The merchants pay a customs duty.</English>
 		<Portuguese>[ICON_BULLET]Os comerciantes pagam taxas alfandegárias.</Portuguese>
 		<German>[ICON_BULLET]Die Händler entrichten eine Zollabgabe.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Купцы выплачивают таможенную пошлину.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_EVENTS_BORDER_DISPUTE_1</Tag>
 		<English>We have no choice. We are evacuating the border area immediately and withdrawing our troops and missionaries.</English>
 		<Portuguese>Não temos escolha. Estamos a evacuar imediatamente a zona fronteiriça e a retirar as nossas tropas e missionários.</Portuguese>
 		<German>Wir haben keine Wahl. Wir räumen das Grenzgebiet umgehend und ziehen unsere Truppen und Missionare zurück.</German>
-		<Russian/>
+		<Russian>У нас нет выбора. Мы немедленно эвакуируем приграничную зону и отводим свои войска и миссионеров.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_BORDER_DISPUTE_1_HELP</Tag>
 		<English>[ICON_BULLET]Substantial concessions are granted. Frontier forts and monasteries in the disputed border region are dismantled and relations with %s1_civ improve significantly.</English>
 		<Portuguese>[ICON_BULLET]Concessões substanciais são concedidas. Os fortes e mosteiros fronteiriços na região fronteiriça disputada são desmantelados e as relações com %s1_civ melhoram significativamente.</Portuguese>
 		<German>[ICON_BULLET]Es werden weitreichende Zugeständnisse gemacht. Forts und Klöster im umstrittenen Grenzgebiet werden aufgegeben und die Beziehungen zu %s1_civ verbessern sich deutlich.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Предоставляются значительные уступки. Пограничные форты и монастыри в спорном приграничном регионе демонтируются, а отношения с %s1_civ существенно улучшаются.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_EVENTS_BORDER_DISPUTE_2</Tag>
 		<English>We shall not yield a single acre of our territory.</English>
 		<Portuguese>Não cederemos um único acre do nosso território.</Portuguese>
 		<German>Wir werden keinen einzigen Morgen unseres Landes preisgeben.</German>
-		<Russian/>
+		<Russian>Мы не уступим ни одного акра нашей территории.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_BORDER_DISPUTE_2_HELP</Tag>
 		<English>[ICON_BULLET]Refuse all concessions. Relations with %s1_civ deteriorate severely and there is a risk that war will be declared on us.</English>
 		<Portuguese>[ICON_BULLET]Recusar todas as concessões. As relações com %s1_civ deterioram-se gravemente e existe o risco de que a guerra seja declarada contra nós.</Portuguese>
 		<German>[ICON_BULLET]Lehnt jegliche Zugeständnisse ab. Die Beziehungen zu %s1_civ verschlechtern sich erheblich und es besteht die Gefahr einer Kriegserklärung gegen uns.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET] Отказаться от всех уступок. Отношения с %s1_civ резко ухудшатся, и возникнет риск объявления нам войны.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_EVENTS_BORDER_DISPUTE_3</Tag>
 		<English>Provocation! We are the dominant power here. This means war!</English>
 		<Portuguese>Provocação! Nós somos o poder dominante aqui. Isso significa guerra!</Portuguese>
 		<German>Provokation! Wir sind hier die vorherrschende Macht. Das bedeutet Krieg!</German>
-		<Russian/>
+		<Russian>Это провокация! Мы здесь — господствующая сила. Это означает войну!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_EVENTS_BORDER_DISPUTE_4</Tag>
 		<English>Oh dear, this really couldn’t have come at a worse time. We’re too weak militarily to face them head-on. We should negotiate and offer the envoy a bribe.</English>
 		<Portuguese>Nossa, isso realmente não poderia ter acontecido em pior hora. Somos demasiado fracos militarmente para enfrentá-los de frente. Devíamos negociar e oferecer um suborno ao enviado.</Portuguese>
 		<German>Oh je, das kommt wirklich zur Unzeit. Wir sind militärisch zu schwach für eine Konfrontation. Wir sollten verhandeln und dem Gesandten ein Bestechungsgeld anbieten.</German>
-		<Russian/>
+		<Russian>Вот беда, хуже момента и придумать нельзя. Мы слишком слабы в военном отношении, чтобы противостоять им в открытую. Нам следует пойти на переговоры и предложить посланнику взятку.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_EVENTS_MILITARY_AID_1</Tag>
 		<English>I agree; we’ll supply you with the weapons at cost price. We Europeans must stand together against the savages. Besides, it strengthens our position.</English>
 		<Portuguese>Eu concordo; nós lhe forneceremos as armas a preço de custo. Nós, Europeus, devemos unir-nos contra os selvagens. Além disso, fortalece a nossa posição.</Portuguese>
 		<German>Ich bin einverstanden, wir liefern Ihnen die Waffen zum Herstellungspreis. Gegen Wilde müssen wir Europäer zusammenhalten. Außerdem stärkt das unsere Position.</German>
-		<Russian/>
+		<Russian>Согласен; мы поставим вам оружие по себестоимости. Мы, европейцы, должны держаться вместе перед лицом дикарей. К тому же это укрепит наши позиции.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_EVENTS_MILITARY_AID_2</Tag>
 		<English>I agree; we’ll supply you with the horses at breeding costs. We Europeans must stand together against the savages. Besides, it strengthens our position.</English>
 		<Portuguese>Eu concordo; nós lhe forneceremos os cavalos com custos de criação. Nós, Europeus, devemos unir-nos contra os selvagens. Além disso, fortalece a nossa posição.</Portuguese>
 		<German>Ich bin einverstanden, wir liefern Ihnen die Pferde zu den Zuchtkosten. Gegen Wilde müssen wir Europäer zusammenhalten. Außerdem stärkt das unsere Position.</German>
-		<Russian/>
+		<Russian>Согласен; мы предоставим вам лошадей по себестоимости их разведения. Мы, европейцы, должны держаться вместе перед лицом дикарей. К тому же это укрепит наши позиции.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_EVENTS_MILITARY_AID_3</Tag>
 		<English>Out of the question! Let them sort it out with the savages. That should significantly strengthen our position in the region. It’s good if the Indians take care of it for us.</English>
 		<Portuguese>Fora de questão! Deixe-os resolver o problema com os selvagens. Isso deverá reforçar significativamente a nossa posição na região. É bom que os índios cuidem disso para nós.</Portuguese>
 		<German>Kommt gar nicht in Frage! Sollen sie sich ruhig mit den Wilden schlagen. Das sollte unsere Position in der Region deutlich stärken. Gut, wenn die Indianer das für uns erledigen.</German>
-		<Russian/>
+		<Russian>Об этом не может быть и речи! Пусть сами разбираются с дикарями. Это должно существенно укрепить наши позиции в регионе. Будет хорошо, если индейцы сделают это за нас.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_EVENTS_MILITARY_AID_4</Tag>
 		<English>Ha! This is our chance. Send the European envoy away and send a messenger to the natives. We’ll supply them with weapons and horses to help them out. That will strengthen our position in the region and help us build good relations with the natives.</English>
 		<Portuguese>Ha! Esta é a nossa chance. Mande embora o enviado europeu e mande um mensageiro aos nativos. Forneceremos armas e cavalos para ajudá-los. Isso fortalecerá a nossa posição na região e nos ajudará a construir boas relações com os nativos.</Portuguese>
 		<German>Ha! Das ist die Gelegenheit für uns. Schickt den europäischen Gesandten weg und schickt einen Boten zu den Indianern. Wir liefern ihnen Waffen und Pferde als Unterstützung. Das stärkt unsere Position in der Region und bringt uns gute Beziehungen mit den Ureinwohnern.</German>
-		<Russian/>
+		<Russian>Ха! Это наш шанс. Отправь европейского посла восвояси, а к туземцам пошли гонца. Мы снабдим их оружием и лошадьми, чтобы помочь им. Это укрепит наши позиции в регионе и поможет наладить с туземцами хорошие отношения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_MILITARY_AID_1_HELP</Tag>
 		<English>[ICON_BULLET]You send %d1 muskets to support the colonial forces. Relations improve.</English>
 		<Portuguese>[ICON_BULLET]Você envia %d1 mosquetes para apoiar as forças coloniais. As relações melhoram.</Portuguese>
 		<German>[ICON_BULLET]Ihr liefert %d1 Musketen zur Unterstützung der Kolonialtruppen. Die Beziehungen verbessern sich.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Вы отправляете %d1 мушкетов на поддержку колониальных войск. Отношения улучшаются.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_MILITARY_AID_2_HELP</Tag>
 		<English>[ICON_BULLET]You provide %d1 horses for scouts, couriers and cavalry. Relations improve.</English>
 		<Portuguese>[ICON_BULLET]Você fornece %d1 cavalos para batedores, mensageiros e cavalaria. As relações melhoram.</Portuguese>
 		<German>[ICON_BULLET]Ihr stellt %d1 Pferde für Kundschafter, Kuriere und Kavallerie zur Verfügung. Die Beziehungen verbessern sich.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Вы предоставляете %d1 лошадей для разведчиков, курьеров и кавалерии. Отношения улучшаются.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_MILITARY_AID_3_HELP</Tag>
 		<English>[ICON_BULLET]You refuse the request for aid. Relations worsen.</English>
 		<Portuguese>[ICON_BULLET]Você recusa o pedido de ajuda. As relações pioram.</Portuguese>
 		<German>[ICON_BULLET]Ihr lehnt das Hilfegesuch ab. Die Beziehungen verschlechtern sich.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Вы отказываете в просьбе о помощи. Отношения ухудшаются.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_MILITARY_AID_4_HELP</Tag>
 		<English>[ICON_BULLET]You secretly deliver %d1 muskets and %d2 horses to the tribe. Relations with the natives improve by %d3, while your European neighbour's trust suffers greatly.</English>
 		<Portuguese>[ICON_BULLET]Você entrega secretamente %d1 mosquetes e %d2 cavalos para a tribo. As relações com os nativos melhoram em %d3, enquanto a confiança do seu vizinho europeu sofre muito.</Portuguese>
 		<German>[ICON_BULLET]Ihr liefert dem Stamm heimlich %d1 Musketen und %d2 Pferde. Die Beziehungen zu den Eingeborenen verbessern sich um %d3, während das Vertrauen Eures europäischen Nachbarn erheblich leidet.</German>
-		<Russian/>
+		<Russian>[ICON_BULLET]Вы тайно доставляете племени %d1 мушкетов и %d2 лошадей. Отношения с туземцами улучшаются на %d3, а доверие вашего европейского соседа сильно страдает.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REF_NAVY_MODERNIZATION_NOTICE</Tag>
 		<English>Got it. That was to be expected.</English>
 		<Portuguese>Entendi. Isso era de se esperar.</Portuguese>
 		<German>Verstanden. Das war zu erwarten.</German>
-		<Russian/>
+		<Russian>Что же, этого следовало ожидать.</Russian>
 	</TEXT>
 </Civ4GameText>

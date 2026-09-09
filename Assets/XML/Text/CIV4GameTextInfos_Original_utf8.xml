@@ -75,9 +75,8 @@
 		<Italian>[COLOR_REVERT]</Italian>
 		<Spanish>[COLOR_REVERT]</Spanish>
 	</TEXT>
-<!-- ZorG. I can find where it is used. START -->
 	<TEXT>
-		<Tag>TXT_KEY_REQUIRES</Tag>
+		<Tag>TXT_KEY_REQUIRES</Tag> <!-- ZorG. I can find where it is used. -->
 		<English>[COLOR_WARNING_TEXT]Requires[SPACE]</English>
 		<Portuguese>[COLOR_WARNING_TEXT]Requer[SPACE]</Portuguese>
 		<French>[COLOR_WARNING_TEXT]Nécessite[SPACE]:[SPACE]</French>
@@ -86,7 +85,6 @@
 		<Spanish>[COLOR_WARNING_TEXT]Requiere[SPACE]</Spanish>
 		<Hungarian>[COLOR_WARNING_TEXT]Feltétel:[SPACE]</Hungarian>
 	</TEXT>
-<!-- ZorG. I can find where it is used. END -->
 	<TEXT>
 		<Tag>SYSTEM_GAME_PAUSED</Tag>
 		<English>Game Paused by %s1</English>
@@ -226,14 +224,14 @@
 		<Hungarian>Mozgás:</Hungarian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_ACTION_LOAD</Tag>
+		<Tag>TXT_KEY_ACTION_LOAD</Tag> <!--World Builder-->
 		<English>Load</English>
 		<Portuguese>Carregar</Portuguese>
 		<French>Charger</French>
 		<German>Laden</German>
 		<Italian>Imbarca</Italian>
 		<Spanish>Embarcar</Spanish>
-		<Russian>Загрузить</Russian> <!--World Builder-->
+		<Russian>Загрузить</Russian>
 		<Hungarian>Betöltés</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -1137,9 +1135,8 @@
 		<Russian>[ICON_BULLET]Начинает с[SPACE]</Russian>
 		<Hungarian>[ICON_BULLET]Ezzel kezd:[SPACE]</Hungarian>
 	</TEXT>
-<!-- ZorG. colopedia. which building is required to build a unit. START -->
 	<TEXT>
-		<Tag>TXT_KEY_UNIT_REQUIRES_STRING</Tag>
+		<Tag>TXT_KEY_UNIT_REQUIRES_STRING</Tag> <!-- ZorG. colopedia. which building is required to build a unit. -->
 		<English>[ICON_BULLET][COLOR_WARNING_TEXT]Requires %s1_Text[COLOR_REVERT]</English>
 		<Portuguese>[ICON_BULLET][COLOR_WARNING_TEXT]Requer %s1_Text[COLOR_REVERT]</Portuguese>
 		<French>[ICON_BULLET][COLOR_WARNING_TEXT]Requiert : %s1_Text[COLOR_REVERT]</French>
@@ -1149,7 +1146,6 @@
 		<Russian>[ICON_BULLET][COLOR_WARNING_TEXT]Требует наличия : %s1_Text[COLOR_REVERT]</Russian>
 		<Hungarian>[ICON_BULLET][COLOR_WARNING_TEXT]Szükséges: %s1_Text[COLOR_REVERT]</Hungarian>
 	</TEXT>
-<!-- ZorG. colopedia. which building is required to build a unit. END -->
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_TURNS</Tag>
 		<English>[COLOR_HIGHLIGHT_TEXT]%d1_Num [NUM1:turn:turns][COLOR_REVERT]</English>
@@ -1352,9 +1348,8 @@
 		<Spanish>[ICON_BULLET]Disponible gratis a partir [NUM1:del:de la:de los:de las] %s1_EraName e inicios posteriores</Spanish>
 		<Hungarian>[ICON_BULLET]%s1_EraName, illetve az azt követő korszakok elején ingyen elérhető</Hungarian>
 	</TEXT>
-<!-- ZorG. I can find where it is used. START -->
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_REQUIRES_NUM_SPECIAL_BUILDINGS</Tag>
+		<Tag>TXT_KEY_BUILDING_REQUIRES_NUM_SPECIAL_BUILDINGS</Tag> <!-- ZorG. I can find where it is used. -->
 		<English>[COLOR_WARNING_TEXT]Requires %s1_Name (%d2_NumCurr/%d3_NumTotal total)[COLOR_REVERT]</English>
 		<Portuguese>[COLOR_WARNING_TEXT]Requer %s1_Name (%d2_NumCurr/%d3_NumTotal total)[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_WARNING_TEXT]Requiert : %s1_Name (%d2_NumCurr/%d3_NumTotal au total)[COLOR_REVERT]</French>
@@ -1363,10 +1358,8 @@
 		<Spanish>[COLOR_WARNING_TEXT]Requiere %s1_Name (%d2_NumCurr de un total de %d3_NumTotal)[COLOR_REVERT]</Spanish>
 		<Hungarian>[COLOR_WARNING_TEXT]Szükséges: %s1_Name (%d2_NumCurr/%d3_NumTotal összesen)[COLOR_REVERT]</Hungarian>
 	</TEXT>
-<!-- ZorG. I can find where it is used. END -->
-<!-- ZorG. colopedia. which building is required to construct a building. START -->
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_REQUIRES_NUM_SPECIAL_BUILDINGS_NO_CITY</Tag>
+		<Tag>TXT_KEY_BUILDING_REQUIRES_NUM_SPECIAL_BUILDINGS_NO_CITY</Tag> <!-- ZorG. colopedia. which building is required to construct a building. -->
 		<English>[COLOR_WARNING_TEXT]Requires %s1_Name (%d2_NumTotal for each)[COLOR_REVERT]</English>
 		<Portuguese>[COLOR_WARNING_TEXT]Requer %s1_Name (%d2_NumTotal para cada)[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_WARNING_TEXT]Requiert : %s1_Name (%d2_NumTotal au chaque)[COLOR_REVERT]</French>
@@ -1377,7 +1370,7 @@
 		<Hungarian>[COLOR_WARNING_TEXT]Szükséges: %s1_Name (%d2_NumTotal mindegyikhez)[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_REQUIRES_STRING</Tag>
+		<Tag>TXT_KEY_BUILDING_REQUIRES_STRING</Tag> <!-- ZorG. colopedia. which building is required to construct a building. -->
 		<English>[COLOR_WARNING_TEXT]Requires [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</English>
 		<Portuguese>[COLOR_WARNING_TEXT]Requer [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Portuguese>
 		<French>[COLOR_WARNING_TEXT]Requiert : [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</French>
@@ -1387,10 +1380,8 @@
 		<Russian>[COLOR_WARNING_TEXT]Требует наличия : [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Russian>
 		<Hungarian>[COLOR_WARNING_TEXT]Szükséges: [LINK=literal]%s1_Name[\LINK][COLOR_REVERT]</Hungarian>
 	</TEXT>
-<!-- ZorG. colopedia. which building is required to construct a building. END -->
-<!-- ZorG. I can find where it is used. START -->
 	<TEXT>
-		<Tag>TXT_KEY_BUILDING_REQUIRES_UNIT_LEVEL</Tag>
+		<Tag>TXT_KEY_BUILDING_REQUIRES_UNIT_LEVEL</Tag> <!-- ZorG. I can find where it is used. -->
 		<English>[COLOR_WARNING_TEXT]Requires a unit of level %d1_Num experience[COLOR_REVERT]</English>
 		<Portuguese>[COLOR_WARNING_TEXT]Requer uma unidade de nível %d1_Num de experiência[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_WARNING_TEXT]Requiert une unité de niveau d'EXP %d1_Num[COLOR_REVERT]</French>
@@ -1399,7 +1390,6 @@
 		<Spanish>[COLOR_WARNING_TEXT]Requiere una unidad de nivel %d1_Num de experiencia[COLOR_REVERT]</Spanish>
 		<Hungarian>[COLOR_WARNING_TEXT]Egy %d1_Num tapasztalati szintű egység szükséges[COLOR_REVERT]</Hungarian>
 	</TEXT>
-<!-- ZorG. I can find where it is used. END -->
 	<TEXT>
 		<Tag>TXT_KEY_BUILDING_REQUIRES_VICTORY</Tag>
 		<English>[ICON_BULLET]%s1_Name "Victory" must be enabled</English>
@@ -1632,9 +1622,8 @@
 		<Russian>Ведет к</Russian>
 		<Hungarian>Következő Szint</Hungarian>
 	</TEXT>
-<!-- ZorG. colony screen. lack of materials for the construction of the building. START -->
 	<TEXT>
-		<Tag>TXT_KEY_PEDIA_REQUIRES</Tag>
+		<Tag>TXT_KEY_PEDIA_REQUIRES</Tag> <!-- ZorG. colony screen. lack of materials for the construction of the building. -->
 		<English>Requirements</English>
 		<Portuguese>Requisitos</Portuguese>
 		<French>Requiert</French>
@@ -1644,7 +1633,6 @@
 		<Russian>Требуется</Russian>
 		<Hungarian>Szükséges</Hungarian>
 	</TEXT>
-<!-- ZorG. colony screen. lack of materials for the construction of the building. END -->
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_SPECIAL_ABILITIES</Tag>
 		<English>Characteristics</English>
@@ -13672,7 +13660,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_SYSTEM_TEAM</Tag>
 		<English>Team</English>
-		
 		<Portuguese>
 			<Text>Equipe</Text>
 			<Gender>Female</Gender>
@@ -14265,5 +14252,6 @@
 		<Tag>TXT_KEY_SLAVE_EMANCIPATION_UNREST</Tag>
 		<English>The emancipation of slaves has caused unrest in %s1.</English>
 		<German>Die Freilassung von Sklaven hat in %s1 Unruhe ausgelöst.</German>
+		<Russian>Освобождение рабов вызвало волнения в городе %s1.</Russian>
 	</TEXT>
 </Civ4GameText>

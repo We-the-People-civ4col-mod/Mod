@@ -41,7 +41,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_BORDERS</Tag>
 		<English>Borders and Culture</English>
-		
 		<Portuguese>
 			<Text>Fronteiras e Cultura</Text>
 			<Gender>Female</Gender>
@@ -78,7 +77,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_BUILDINGS</Tag>
 		<English>Buildings</English>
-		
 		<Portuguese>
 			<Text>Edifícios</Text>
 			<Gender>Male</Gender>
@@ -151,7 +149,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_CHURCH</Tag>
 		<English>The Church</English>
-		
 		<Portuguese>
 			<Text>A Igreja</Text>
 			<Gender>Female</Gender>
@@ -189,7 +186,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_COMBAT</Tag>
 		<English>Combat</English>
-		
 		<Portuguese>
 			<Text>Combate</Text>
 			<Gender>Male</Gender>
@@ -226,7 +222,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_DIPLOMACY</Tag>
 		<English>Diplomacy</English>
-		
 		<Portuguese>
 			<Text>Diplomacia</Text>
 			<Gender>Female</Gender>
@@ -281,7 +276,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_ECONOMY</Tag>
 		<English>Economy</English>
-		
 		<Portuguese>
 			<Text>Economia</Text>
 			<Gender>Female</Gender>
@@ -318,7 +312,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_EUROPE</Tag>
 		<English>Europe</English>
-		
 		<Portuguese>
 			<Text>Europa</Text>
 			<Gender>Female</Gender>
@@ -373,7 +366,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_FATHERS</Tag>
 		<English>Founding Fathers</English>
-		
 		<Portuguese>
 			<Text>Pai Fundador:Pais Fundadores</Text>
 			<Gender>Male</Gender>
@@ -410,7 +402,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_FOOD</Tag>
 		<English>Food</English>
-		
 		<Portuguese>
 			<Text>Comida</Text>
 			<Gender>Female</Gender>
@@ -463,7 +454,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_GREAT_GENERALS</Tag>
 		<English>Great Generals and Admirals</English>
-		
 		<Portuguese>
 			<Text>Grandes generais e almirantes</Text>
 			<Gender>Male</Gender>
@@ -536,7 +526,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_IMMIGRATION</Tag>
 		<English>Emigration</English>
-		
 		<Portuguese>
 			<Text>Emigração</Text>
 			<Gender>Female</Gender>
@@ -572,7 +561,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_IMPROVEMENTS</Tag>
 		<English>Pioneers and Improvements</English>
-		
 		<Portuguese>
 			<Text>Pioneiros e melhorias</Text>
 			<Gender>Female</Gender>
@@ -624,7 +612,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_LEADERS</Tag>
 		<English>Leaders</English>
-		
 		<Portuguese>
 			<Text>Líderes</Text>
 			<Gender>Male</Gender>
@@ -677,7 +664,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_MISSIONARIES</Tag>
 		<English>Missionaries</English>
-		
 		<Portuguese>
 			<Text>Missionários</Text>
 			<Gender>Male</Gender>
@@ -746,7 +732,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_MOVEMENT</Tag>
 		<English>Movement</English>
-		
 		<Portuguese>
 			<Text>Movimento</Text>
 			<Gender>Male</Gender>
@@ -783,7 +768,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_NATIVES</Tag>
 		<English>Natives</English>
-		
 		<Portuguese>
 			<Text>Nativos</Text>
 			<Gender>Male</Gender>
@@ -886,7 +870,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_THE_NEW_WORLD</Tag>
 		<English>The New World</English>
-		
 		<Portuguese>
 			<Text>O Novo Mundo</Text>
 			<Gender>Male</Gender>
@@ -958,7 +941,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_PRODUCTION</Tag>
 		<English>Production</English>
-		
 		<Portuguese>
 			<Text>Produção</Text>
 			<Gender>Female</Gender>
@@ -994,7 +976,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_PROFESSIONS</Tag>
 		<English>Professions</English>
-		
 		<Portuguese>
 			<Text>Profissões</Text>
 			<Gender>Female</Gender>
@@ -1030,7 +1011,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_PROMOTIONS</Tag>
 		<English>Promotions</English>
-		
 		<Portuguese>
 			<Text>Promoções</Text>
 			<Gender>Female</Gender>
@@ -1135,7 +1115,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_SETTLEMENTS</Tag>
 		<English>Settlements</English>
-		
 		<Portuguese>
 			<Text>Colônias</Text>
 			<Gender>Female</Gender>
@@ -1203,7 +1182,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_SPECIALISTS</Tag>
 		<English>Specialists</English>
-		
 		<Portuguese>
 			<Text>Especialistas</Text>
 			<Gender>Male</Gender>
@@ -1274,7 +1252,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TRADE</Tag>
 		<English>Trade</English>
-		
 		<Portuguese>
 			<Text>Comércio</Text>
 			<Gender>Male</Gender>
@@ -1310,7 +1287,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TRADE_ROUTE</Tag>
 		<English>Route Planning</English>
-		
 		<Portuguese>
 			<Text>Planejamento de rota</Text>
 			<Gender>Male</Gender>
@@ -1361,7 +1337,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TRAINING</Tag>
 		<English>Education</English>
-		
 		<Portuguese>
 			<Text>Educação</Text>
 			<Gender>Female</Gender>
@@ -1397,7 +1372,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_TRANSPORT</Tag>
 		<English>Transport</English>
-		
 		<Portuguese>
 			<Text>Transporte</Text>
 			<Gender>Male</Gender>
@@ -1433,7 +1407,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_UNITS</Tag>
 		<English>Units</English>
-		
 		<Portuguese>
 			<Text>Unidades</Text>
 			<Gender>Female</Gender>
@@ -1469,7 +1442,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_VICTORY</Tag>
 		<English>Victory</English>
-		
 		<Portuguese>
 			<Text>Vitória</Text>
 			<Gender>Female</Gender>
@@ -1505,7 +1477,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_VISIBILITY</Tag>
 		<English>Visibility and Exploration</English>
-		
 		<Portuguese>
 			<Text>Visibilidade e Exploração</Text>
 			<Gender>Female</Gender>
@@ -1541,7 +1512,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_WAR</Tag>
 		<English>War</English>
-		
 		<Portuguese>
 			<Text>Guerra</Text>
 			<Gender>Female</Gender>
@@ -1692,7 +1662,7 @@
 		<German>Verfügbarkeit von Einheiten, Berufen und Gebäuden (NEU)</German>
 		<Italian>Disponibilità di unità, classi e edifici (NOVITÀ)</Italian>
 		<Spanish>Disponibilidad de unidades, profesiones y edificios (NUEVO)</Spanish>
-		<Russian/>
+		<Russian>Доступность юнитов, профессий и зданий (НОВОЕ)</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CONCEPT_GAME_YEAR_AVAILABILITY_PEDIA</Tag>
