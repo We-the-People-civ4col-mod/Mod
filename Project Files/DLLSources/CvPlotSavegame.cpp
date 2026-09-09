@@ -111,6 +111,8 @@ enum SavegameVariableTypes
 
 	Save_Units,
 
+	Save_NotCulture,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -187,6 +189,8 @@ const char* getSavedEnumNamePlot(SavegameVariableTypes eType)
 	case Save_BuildProgress: return "Save_BuildProgress";
 
 	case Save_Units: return "Save_Units";
+
+	case Save_NotCulture: return "Save_NotCulture";
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -354,6 +358,7 @@ void CvPlot::read(CvSavegameReader reader)
 
 		// PlayerArrays
 		case Save_Culture                  : reader.Read(m_em_iCulture)                       ; break;
+		case Save_NotCulture               : reader.Read(m_em_bNotCulture)                    ; break;
 		case Save_CultureRangeForts        : reader.Read(m_em_iCultureRangeForts)             ; break;
 		case Save_DangerMap                : reader.Read(m_em_iDangerMap)                     ; break;
 		case Save_FoundValue               : reader.Read(m_em_iFoundValue)                    ; break;
@@ -495,6 +500,7 @@ void CvPlot::write(CvSavegameWriter writer)
 
 	writer.Write(Save_DangerMap, m_em_iDangerMap);
 	writer.Write(Save_Culture, m_em_iCulture);
+	writer.Write(Save_NotCulture, m_em_bNotCulture);
 	writer.Write(Save_CultureRangeForts, m_em_iCultureRangeForts);
 	writer.Write(Save_FoundValue, m_em_iFoundValue);
 	writer.Write(Save_PlayerCityRadiusCount, m_em_iPlayerCityRadiusCount);

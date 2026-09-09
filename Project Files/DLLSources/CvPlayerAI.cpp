@@ -3626,7 +3626,10 @@ int CvPlayerAI::AI_getStolenPlotsAttitude(PlayerTypes ePlayer)
 			CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(i);
 			if(pLoopPlot->getOwnerINLINE() == ePlayer && pLoopPlot->getCulture(getID()) > pLoopPlot->getCulture(ePlayer))
 			{
-				++iStolenPlots;
+				if (!pLoopPlot->isNotCulture(ePlayer))
+				{
+					++iStolenPlots;
+				}
 			}
 		}
 
@@ -7495,6 +7498,10 @@ void CvPlayerAI::AI_doDiplo()
 			CvPlayer& kPlayer = GET_PLAYER(ePlayer);
 			if (kPlayer.isAlive() && ePlayer != getID())
 			{
+				if (iPass == 0 && !isNative() && kPlayer.isNative())
+				{
+					AI_doNativeLandReturn(ePlayer);
+				}
 
 				//WTP, ray, fixing precalcuated Diplo Event Issue - START
 				// the King triggers it only for its own "Colonies"
@@ -7673,7 +7680,7 @@ void CvPlayerAI::AI_doDiplo()
 									if (AI_doDiploDeclareWar(ePlayer))
 									{
 										if (kPlayer.isHuman())
-									{
+										{
 											abContacted[kPlayer.getTeam()] = true;
 										}
 									}
@@ -7803,6 +7810,72 @@ bool CvPlayerAI::AI_doDiploCancelDeals(PlayerTypes ePlayer)
 	return bKilled;
 }
 
+
+void CvPlayerAI::AI_doNativeLandReturn(PlayerTypes eNativePlayer)
+{
+	CvPlayerAI& kNativePlayer = GET_PLAYER(eNativePlayer);
+
+	if (!kNativePlayer.isNative())
+	{
+		return;
+	}
+
+	if (GET_TEAM(getTeam()).isAtWar(kNativePlayer.getTeam()))
+	{
+		return;
+	}
+
+	if (kNativePlayer.AI_getAttitude(getID()) != ATTITUDE_FURIOUS)
+	{
+		return;
+	}
+
+	int iPlotsReturned = 0;
+
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); ++iI)
+	{
+		CvPlot* pLoopPlot = GC.getMap().plotByIndexINLINE(iI);
+
+		if (pLoopPlot->getOwnerINLINE() != getID())
+		{
+			continue;
+		}
+
+		if (pLoopPlot->isNotCulture(getID()))
+		{
+			continue;
+		}
+
+		if (pLoopPlot->getCulture(eNativePlayer) <= pLoopPlot->getCulture(getID()))
+		{
+			continue;
+		}
+
+		if (pLoopPlot->getBonusType() != NO_BONUS)
+		{
+			continue;
+		}
+
+		if (pLoopPlot->getImprovementType() != NO_IMPROVEMENT)
+		{
+			continue;
+		}
+
+		if (!pLoopPlot->canSetNotCulture(getID()))
+		{
+			continue;
+		}
+
+		pLoopPlot->setNotCulture(getID(), true);
+
+		++iPlotsReturned;
+
+		if (iPlotsReturned >= 3)
+		{
+			break;
+		}
+	}
+}
 
 
 bool CvPlayerAI::AI_doDiploOfferCity(PlayerTypes ePlayer)

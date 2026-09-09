@@ -331,5 +331,10 @@
 			<Description>TXT_KEY_CONCEPT_GAME_YEAR_AVAILABILITY</Description>
 			<Civilopedia>TXT_KEY_CONCEPT_GAME_YEAR_AVAILABILITY_PEDIA</Civilopedia>
 		</ConceptInfo>
+		<ConceptInfo>
+			<Type>CONCEPT_TERRITORIAL_INFLUENCE</Type>
+			<Description>TXT_KEY_CONCEPT_TERRITORIAL_INFLUENCE</Description>
+			<Civilopedia>TXT_KEY_CONCEPT_TERRITORIAL_INFLUENCE_PEDIA</Civilopedia>
+		</ConceptInfo>
 	</ConceptInfos>
 </Civ4BasicInfos>

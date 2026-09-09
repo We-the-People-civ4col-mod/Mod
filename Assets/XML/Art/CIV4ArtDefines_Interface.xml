@@ -894,5 +894,9 @@
 			<Type>INTERFACE_SHOW_CTIYCRIME</Type>
 			<Path>Art/Interface/Buttons/CityCrime.dds</Path>
 		</InterfaceArtInfo>
+		<InterfaceArtInfo>
+			<Type>INTERFACE_GENERAL_TERRITORIAL_INFLUENCE</Type>
+			<Path>Art/Interface/actions/territorial_Influence.dds</Path>
+		</InterfaceArtInfo>
 	</InterfaceArtInfos>
 </Civ4ArtDefines>

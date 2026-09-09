@@ -156,6 +156,9 @@ public:
 	int calculateYield(YieldTypes eIndex, bool bDisplay);
 	bool hasYield();
 	int getCulture(int /*PlayerTypes*/ eIndex);
+	bool isNotCulture(int /*PlayerTypes*/ eIndex);
+	bool canSetNotCulture(int /*PlayerTypes*/ eIndex);
+	void setNotCulture(int /*PlayerTypes*/ eIndex, bool bNewValue);
 	int countTotalCulture();
 	int /*TeamTypes*/ findHighestCultureTeam();
 	int calculateCulturePercent(int /*PlayerTypes*/ eIndex);

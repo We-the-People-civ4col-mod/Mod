@@ -588,6 +588,7 @@ protected:
 	void AI_doCounter();
 	void AI_doMilitary();
 	void AI_doDiplo();
+	void AI_doNativeLandReturn(PlayerTypes eNativePlayer);
 	bool AI_doDiploCancelDeals(PlayerTypes ePlayer);
 	bool AI_doDiploOfferCity(PlayerTypes ePlayer);
 	bool AI_doDiploOfferAlliance(PlayerTypes ePlayer);

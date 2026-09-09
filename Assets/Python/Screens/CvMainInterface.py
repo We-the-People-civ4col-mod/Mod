@@ -282,6 +282,8 @@ g_pSelectedUnit = 0
 class CvMainInterface:
 	"Main Interface Screen"
 
+	BUTTON_TERRITORIAL_INFLUENCE = 750
+
 	def numPlotListButtons( self ):
 		return NUM_PLOT_LIST_BUTTONS
 
@@ -550,6 +552,12 @@ class CvMainInterface:
 		if (CyGame().isPitbossHost()):
 			return
 
+		self.bTerritorialInfluenceMode = False
+		self.m_pCurrentTerritorialInfluencePlot = None
+		self.bTerritorialInfluenceLeftMouseDown = False
+		self.bTerritorialInfluenceRightMouseDown = False
+		self.bTerritorialInfluenceOldNoUnitCycling = False
+
 		self.TableYields = []
 		for iYield in range(YieldTypes.NUM_YIELD_TYPES):
 			if gc.getYieldInfo(iYield).isCargo():
@@ -753,7 +761,13 @@ class CvMainInterface:
 		screen.setImageShape("DiplomacyButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
 		screen.setHitMargins("DiplomacyButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
 		self.appendtoHideState(screen, "DiplomacyButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
-		iBtnX += self.ADVISOR_BUTTON_SPACING * 2
+		iBtnX += self.ADVISOR_BUTTON_SPACING
+
+		screen.setImageButton("TerritorialInfluenceButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_GENERAL_TERRITORIAL_INFLUENCE").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_GENERAL, self.BUTTON_TERRITORIAL_INFLUENCE, -1 )
+		screen.setImageShape("TerritorialInfluenceButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
+		screen.setHitMargins("TerritorialInfluenceButton", self.ADVISOR_BUTTON_SIZE / 6, self.ADVISOR_BUTTON_SIZE / 6)
+		self.appendtoHideState(screen, "TerritorialInfluenceButton", HIDE_TYPE_MAP, HIDE_LEVEL_HIDE)
+		iBtnX += self.ADVISOR_BUTTON_SPACING
 
 		screen.setImageButton("DomesticAdvisorButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_DOMESTIC_ADVISOR").getPath(), iBtnX, (TOP_CENTER_HUD_HEIGHT - self.ADVISOR_BUTTON_SIZE) / 2, self.ADVISOR_BUTTON_SIZE, self.ADVISOR_BUTTON_SIZE, WidgetTypes.WIDGET_ACTION, gc.getControlInfo(ControlTypes.CONTROL_DOMESTIC_SCREEN).getActionInfoIndex(), -1 )
 		screen.setImageShape("DomesticAdvisorButton", ImageShapes.IMAGE_SHAPE_ELLIPSE, -1)
@@ -3650,10 +3664,118 @@ class CvMainInterface:
 			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL and inputClass.getData1() == ACHIEVE_ADVISOR_SCREEN_MI):
 				CvScreensInterface.showAchieveAdvisorScreen()
 
+			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL and inputClass.getData1() == self.BUTTON_TERRITORIAL_INFLUENCE):
+				self.bTerritorialInfluenceMode = not self.bTerritorialInfluenceMode
+
+				if self.bTerritorialInfluenceMode:
+					self.bTerritorialInfluenceOldNoUnitCycling = CyUserProfile().getPlayerOption(PlayerOptionTypes.PLAYEROPTION_NO_UNIT_CYCLING)
+
+					if not self.bTerritorialInfluenceOldNoUnitCycling:
+						CyMessageControl().sendPlayerOption(PlayerOptionTypes.PLAYEROPTION_NO_UNIT_CYCLING, True)
+
+					screen.overlayButtonGFC("TerritorialInfluenceButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_HIGHLIGHTED_BUTTON").getPath())
+					self.refreshTerritorialInfluence()
+				else:
+					if not self.bTerritorialInfluenceOldNoUnitCycling:
+						CyMessageControl().sendPlayerOption(PlayerOptionTypes.PLAYEROPTION_NO_UNIT_CYCLING, False)
+
+					screen.overlayButtonGFC("TerritorialInfluenceButton", None)
+					CyEngine().clearAreaBorderPlots(AreaBorderLayers.AREA_BORDER_LAYER_WORLD_BUILDER)
+					CyEngine().clearAreaBorderPlots(AreaBorderLayers.AREA_BORDER_LAYER_REVEALED_PLOTS)
+
 		return 0
+
+	def updateTerritorialInfluenceEditor(self):
+
+		if not self.bTerritorialInfluenceMode:
+			return
+
+		if CyInterface().isCityScreenUp() or CyEngine().isGlobeviewUp():
+			return
+
+		pPlot = CyInterface().getMouseOverPlot()
+
+		if pPlot is None or pPlot.isNone():
+			return
+
+		self.m_pCurrentTerritorialInfluencePlot = pPlot
+
+		CyEngine().clearAreaBorderPlots(AreaBorderLayers.AREA_BORDER_LAYER_WORLD_BUILDER)
+		CyEngine().fillAreaBorderPlotAlt(pPlot.getX(), pPlot.getY(), AreaBorderLayers.AREA_BORDER_LAYER_WORLD_BUILDER, "COLOR_BLUE", 1.0)
+
+		bLeftMouseDown = CyInterface().isLeftMouseDown()
+		bRightMouseDown = CyInterface().isRightMouseDown()
+
+		if bLeftMouseDown and not self.bTerritorialInfluenceLeftMouseDown:
+			iPlayer = CyGame().getActivePlayer()
+
+			if iPlayer >= 0 and pPlot.canSetNotCulture(iPlayer):
+				CyMessageControl().sendModNetMessage(
+					750,
+					iPlayer,
+					pPlot.getX(),
+					pPlot.getY(),
+					1
+				)
+
+				CyEngine().fillAreaBorderPlotAlt(
+					pPlot.getX(),
+					pPlot.getY(),
+					AreaBorderLayers.AREA_BORDER_LAYER_REVEALED_PLOTS,
+					"COLOR_BLACK",
+					1.0
+				)
+
+		elif bRightMouseDown and not self.bTerritorialInfluenceRightMouseDown:
+			iPlayer = CyGame().getActivePlayer()
+
+			if iPlayer >= 0:
+				CyMessageControl().sendModNetMessage(
+					750,
+					iPlayer,
+					pPlot.getX(),
+					pPlot.getY(),
+					0
+				)
+
+				self.refreshTerritorialInfluence(
+					pPlot.getX(),
+					pPlot.getY()
+				)
+
+		self.bTerritorialInfluenceLeftMouseDown = bLeftMouseDown
+		self.bTerritorialInfluenceRightMouseDown = bRightMouseDown
+
+	def refreshTerritorialInfluence(self, iSkipX = -1, iSkipY = -1):
+
+		CyEngine().clearAreaBorderPlots(AreaBorderLayers.AREA_BORDER_LAYER_REVEALED_PLOTS)
+
+		iPlayer = CyGame().getActivePlayer()
+
+		if iPlayer < 0:
+			return
+
+		for iX in range(CyMap().getGridWidth()):
+			for iY in range(CyMap().getGridHeight()):
+
+				if iX == iSkipX and iY == iSkipY:
+					continue
+
+				pPlot = CyMap().plot(iX, iY)
+
+				if not pPlot.isNone():
+					if pPlot.isNotCulture(iPlayer):
+						CyEngine().fillAreaBorderPlotAlt(
+							iX,
+							iY,
+							AreaBorderLayers.AREA_BORDER_LAYER_REVEALED_PLOTS,
+							"COLOR_BLACK",
+							1.0
+						)
 
 	# Updates the Screen
 	def update( self, fDelta ):
+		self.updateTerritorialInfluenceEditor()
 		return
 
 	# Adds Mouse Over Help to General Widgets

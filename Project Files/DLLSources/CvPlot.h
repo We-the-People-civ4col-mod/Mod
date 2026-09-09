@@ -436,6 +436,9 @@ public:
 	int calculateMaxYield(YieldTypes eYield) const;
 	int getYieldWithBuild(BuildTypes eBuild, YieldTypes eYield, bool bWithUpgrade) const;
 	DllExport int getCulture(PlayerTypes eIndex) const;
+	bool isNotCulture(PlayerTypes eIndex) const;
+	bool canSetNotCulture(PlayerTypes eIndex) const;
+	void setNotCulture(PlayerTypes eIndex, bool bNewValue);
 	DllExport int countTotalCulture() const;
 	int countFriendlyCulture(TeamTypes eTeam) const;
 	TeamTypes findHighestCultureTeam() const;
@@ -617,6 +620,7 @@ protected:
 	EnumMap<YieldTypes , short> m_em_iYield;
 	EnumMap<PlayerTypes, short> m_em_iDangerMap;	// TAC - AI Improved Naval AI - koma13
 	EnumMap<PlayerTypes,   int> m_em_iCulture;
+	EnumMap<PlayerTypes,  bool> m_em_bNotCulture;
 	EnumMap<PlayerTypes, short> m_em_iCultureRangeForts; // Super Forts *culture*
 	EnumMap<PlayerTypes,   int> m_em_iFoundValue;
 	EnumMap<PlayerTypes,  char> m_em_iPlayerCityRadiusCount;

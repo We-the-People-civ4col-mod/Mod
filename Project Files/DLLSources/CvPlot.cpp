@@ -7549,6 +7549,11 @@ void CvPlot::updateYield(bool bUpdateCity)
 
 int CvPlot::getCulture(PlayerTypes eIndex) const
 {
+	if (isNotCulture(eIndex))
+	{
+		return 0;
+	}
+
 	return m_em_iCulture.get(eIndex);
 }
 
@@ -7571,6 +7576,60 @@ int CvPlot::countTotalCulture() const
 	return iTotalCulture;
 }
 
+
+bool CvPlot::isNotCulture(PlayerTypes eIndex) const
+{
+	FAssertMsg(eIndex >= 0, "iIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < MAX_PLAYERS, "iIndex is expected to be within maximum bounds (invalid Index)");
+
+	return m_em_bNotCulture.get(eIndex);
+}
+
+bool CvPlot::canSetNotCulture(PlayerTypes eIndex) const
+{
+	CvCity* pCity;
+	CvPlot* pAdjacentPlot;
+
+	FAssertMsg(eIndex >= 0, "iIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < MAX_PLAYERS, "iIndex is expected to be within maximum bounds (invalid Index)");
+
+	pCity = getPlotCity();
+
+	if (pCity != NULL)
+	{
+		return pCity->isNative();
+	}
+
+	for (int iI = 0; iI < NUM_DIRECTION_TYPES; ++iI)
+	{
+		pAdjacentPlot = plotDirection(getX_INLINE(), getY_INLINE(), ((DirectionTypes)iI));
+
+		if (pAdjacentPlot != NULL)
+		{
+			pCity = pAdjacentPlot->getPlotCity();
+
+			if (pCity != NULL && !pCity->isNative())
+			{
+				return false;
+			}
+		}
+	}
+
+	return true;
+}
+
+void CvPlot::setNotCulture(PlayerTypes eIndex, bool bNewValue)
+{
+	PROFILE_FUNC();
+
+	FAssertMsg(eIndex >= 0, "iIndex is expected to be non-negative (invalid Index)");
+	FAssertMsg(eIndex < MAX_PLAYERS, "iIndex is expected to be within maximum bounds (invalid Index)");
+
+	if (!bNewValue || canSetNotCulture(eIndex))
+	{
+		m_em_bNotCulture.set(eIndex, bNewValue);
+	}
+}
 
 TeamTypes CvPlot::findHighestCultureTeam() const
 {

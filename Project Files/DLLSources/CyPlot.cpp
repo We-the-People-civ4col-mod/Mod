@@ -654,6 +654,23 @@ int CyPlot::getCulture(int /*PlayerTypes*/ eIndex)
 {
 	return m_pPlot ? m_pPlot->getCulture((PlayerTypes)eIndex) : -1;
 }
+bool CyPlot::isNotCulture(int /*PlayerTypes*/ eIndex)
+{
+	return m_pPlot ? m_pPlot->isNotCulture((PlayerTypes)eIndex) : false;
+}
+
+bool CyPlot::canSetNotCulture(int /*PlayerTypes*/ eIndex)
+{
+	return m_pPlot ? m_pPlot->canSetNotCulture((PlayerTypes)eIndex) : false;
+}
+
+void CyPlot::setNotCulture(int /*PlayerTypes*/ eIndex, bool bNewValue)
+{
+	if (m_pPlot)
+	{
+		pointer(CREATE_ASSERT_DATA)->setNotCulture((PlayerTypes)eIndex, bNewValue);
+	}
+}
 int CyPlot::countTotalCulture()
 {
 	return m_pPlot ? m_pPlot->countTotalCulture() : -1;

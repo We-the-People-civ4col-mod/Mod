@@ -352,6 +352,21 @@ class CvEventManager:
 
 		iData1, iData2, iData3, iData4, iData5 = argsList
 
+		# Territorial Influence
+		if (iData1 == 750):
+			iPlayer = iData2
+			iX = iData3
+			iY = iData4
+			bNotCulture = (iData5 == 1)
+
+			if (iPlayer >= 0 and iPlayer < gc.getMAX_PLAYERS()):
+				pPlot = CyMap().plot(iX, iY)
+
+				if (not pPlot.isNone()):
+					pPlot.setNotCulture(iPlayer, bNotCulture)
+
+			return
+
 		print("Modder's net message!")
 
 		CvUtil.pyPrint( 'onModNetMessage' )
