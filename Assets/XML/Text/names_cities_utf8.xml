@@ -3454,6 +3454,7 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_1</Tag>
 		<English>Unalashka</English>
 		<Russian>Уналашка</Russian>
+		<Hungarian>Unalaska</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_2</Tag>
@@ -3464,11 +3465,13 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_3</Tag>
 		<English>Yakutat</English>
 		<Russian>Якутат</Russian>
+		<Hungarian>Jakutat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_4</Tag>
 		<English>Nikolaevsky Fort</English>
 		<Russian>Николаевский редут</Russian>
+		<Hungarian>Nyikolajevszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_5</Tag>
@@ -3479,46 +3482,55 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_6</Tag>
 		<English>Elizavetinsk</English>
 		<Russian>Елизаветинск</Russian>
+		<Hungarian>Elizavetinszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_7</Tag>
 		<English>Ozersky</English>
 		<Russian>Озёрский</Russian>
+		<Hungarian>Ozerszki</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_8</Tag>
 		<English>Alexandrovsk</English>
 		<Russian>Александровск</Russian>
+		<Hungarian>Alekszandrovszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_9</Tag>
 		<English>Mikhailovsky</English>
 		<Russian>Михайловский</Russian>
+		<Hungarian>Mihailovszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_10</Tag>
 		<English>Petropavlovsk</English>
 		<Russian>Петропавловск</Russian>
+		<Hungarian>Petropavloszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_11</Tag>
 		<English>Nikolaevsk</English>
 		<Russian>Николаевск</Russian>
+		<Hungarian>Nyikolajevszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_12</Tag>
 		<English>Belogorsk</English>
 		<Russian>Белогорск</Russian>
+		<Hungarian>Belogorszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_13</Tag>
 		<English>Georgievsky Fort</English>
 		<Russian>Георгиевская крепость</Russian>
+		<Hungarian>Georgevszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_14</Tag>
 		<English>Okhotsk</English>
 		<Russian>Охотск</Russian>
+		<Hungarian>Ohotszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_15</Tag>
@@ -3529,11 +3541,13 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_16</Tag>
 		<English>Egorovsk</English>
 		<Russian>Егоровск</Russian>
+		<Hungarian>Egorovszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_17</Tag>
 		<English>Mednorechinsk</English>
 		<Russian>Медноречинск</Russian>
+		<Hungarian>Mednorecsinszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_18</Tag>
@@ -3544,16 +3558,19 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_19</Tag>
 		<English>Kolmakovsky Fort</English>
 		<Russian>Колмаковский редут</Russian>
+		<Hungarian>Kolmakovszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_20</Tag>
 		<English>Yakutat</English>
 		<Russian>Якутат</Russian>
+		<Hungarian>Jakutszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_21</Tag>
 		<English>Dezhnev</English>
 		<Russian>Дежнев</Russian>
+		<Hungarian>Dezsnyev</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_22</Tag>
@@ -3564,21 +3581,25 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_23</Tag>
 		<English>Alexandrovsky Fort</English>
 		<Russian>Александровский редут</Russian>
+		<Hungarian>Alekszandrovszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_24</Tag>
 		<English>Fort of Good Accord</English>
 		<Russian>Форт Доброго согласия</Russian>
+		<Hungarian>Egyetértés Erőd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_25</Tag>
 		<English>Gizhiginsky Fort</English>
 		<Russian>Гижигинская крепость</Russian>
+		<Hungarian>Gizsiginszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_26</Tag>
 		<English>Irkutsk</English>
 		<Russian>Иркутск</Russian>
+		<Hungarian>Irkutszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_27</Tag>
@@ -3594,136 +3615,163 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_29</Tag>
 		<English>Akhtinskoe</English>
 		<Russian>Ахтинское</Russian>
+		<Hungarian>Ahtinszkoj</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_30</Tag>
 		<English>Belkovskoe</English>
 		<Russian>Бельковское</Russian>
+		<Hungarian>Belkovszkoj</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_31</Tag>
-		<English>Voskresenskaya Harbor</English>
+		<English>Voskresenskaya Harbour</English>
 		<Russian>Воскресенская гавань</Russian>
+		<Hungarian>Voszkreszenszkaja</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_32</Tag>
-		<English>Harbor of the Three Saints</English>
+		<English>Harbour of the Three Saints</English>
 		<Russian>Гавань трёх святителей</Russian>
+		<Hungarian>Szentháromság Erőd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_33</Tag>
 		<English>Dionysevsky Fort</English>
 		<Russian>Дионисьевский редут</Russian>
+		<Hungarian>Dionjszevszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_34</Tag>
 		<English>Ilyaminskaya</English>
 		<Russian>Иляминская</Russian>
+		<Hungarian>Iljaminszkaja</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_35</Tag>
 		<English>Fort Arkhangela Mikhaila</English>
 		<Russian>Крепость Архангела Михаила</Russian>
+		<Hungarian>Mihály Arkangyal Erőd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_36</Tag>
 		<English>Kalsinsky</English>
 		<Russian>Кальсинский</Russian>
+		<Hungarian>Kalszinkszij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_37</Tag>
 		<English>Karluski</English>
 		<Russian>Карлуский</Russian>
+		<Hungarian>Karluszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_38</Tag>
 		<English>Kasilov</English>
 		<Russian>Касилов</Russian>
+		<Hungarian>Kaszilov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_39</Tag>
 		<English>Kachemak</English>
 		<Russian>Качемак</Russian>
+		<Hungarian>Kacsemak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_40</Tag>
 		<English>Novo Alexandrovsk</English>
 		<Russian>Ново-Александровск</Russian>
+		<Hungarian>Új-Alekszandrovszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_41</Tag>
 		<English>Katmai</English>
 		<Russian>Катмайский</Russian>
+		<Hungarian>Katmajszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_42</Tag>
 		<English>Knyk</English>
 		<Russian>Кнык</Russian>
+		<Hungarian>Knyik</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_43</Tag>
 		<English>Komarovsky Fort</English>
 		<Russian>Комаровский форт</Russian>
+		<Hungarian>Komarovszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_44</Tag>
 		<English>Fort Konstantinovsky</English>
 		<Russian>Константиновская крепость</Russian>
+		<Hungarian>Konsztantinovszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_45</Tag>
 		<English>Kyngowey</English>
 		<Russian>Кынговей</Russian>
+		<Hungarian>Knyigovej</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_46</Tag>
 		<English>Novorossiysk</English>
 		<Russian>Новороссийск</Russian>
+		<Hungarian>Novorosszijszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_47</Tag>
 		<English>Fort Pavlovsky</English>
 		<Russian>Павловская крепость</Russian>
+		<Hungarian>Pavloszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_48</Tag>
-		<English>Northern post</English>
+		<English>Northern Post</English>
 		<Russian>Северный пост</Russian>
+		<Hungarian>Északi Erőd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_49</Tag>
-		<English>Pavlovskaya harbor</English>
+		<English>Pavlovskaya Harbour</English>
 		<Russian>Павловская гавань</Russian>
+		<Hungarian>Pavlov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_50</Tag>
 		<English>Khlebnikov</English>
 		<Russian>Хлебников</Russian>
+		<Hungarian>Hlebinkov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_51</Tag>
 		<English>Chiniaksky</English>
 		<Russian>Чиниакский</Russian>
+		<Hungarian>Csiniakszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_52</Tag>
 		<English>Fort Semionovsky</English>
 		<Russian>Семионовская крепость</Russian>
+		<Hungarian>Szeminovszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_53</Tag>
 		<English>Ozerskoye</English>
 		<Russian>Озёрское</Russian>
+		<Hungarian>Ozerszkoj</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_54</Tag>
 		<English>Sukhtumskaya</English>
 		<Russian>Сухтумская</Russian>
+		<Hungarian>Szuktumszkaja</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_55</Tag>
 		<English>Fort Ozersky</English>
 		<Russian>Озёрский редут</Russian>
+		<Hungarian>Ozerszkaja</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_56</Tag>
@@ -3734,11 +3782,13 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_57</Tag>
 		<English>Kostrominov</English>
 		<Russian>Костроминов</Russian>
+		<Hungarian>Kosztrominov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_58</Tag>
 		<English>Ukamoksky</English>
 		<Russian>Укамокский</Russian>
+		<Hungarian>Ukamokszkij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_CITY_59</Tag>
@@ -3767,14 +3817,16 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_PORTUGAL_EUROPE_CITY_0</Tag>
-		<English>Lisboa</English>
+		<English>Lisbon</English>
 		<Portuguese>Lisboa</Portuguese>
 		<Russian>Лиссабон</Russian>
+		<Hungarian>Lisszabon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_DENMARK_EUROPE_CITY_0</Tag>
-		<English>Kopenhagen</English>
+		<English>Copenhagen</English>
 		<Russian>Копенгаген</Russian>
+		<Hungarian>Koppenhága</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SWEDEN_EUROPE_CITY_0</Tag>
@@ -3785,6 +3837,7 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_CITY_0</Tag>
 		<English>St. Petersburg</English>
 		<Russian>Санкт-Петербург</Russian>
+		<Hungarian>Szentpétervár</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_CITY_0</Tag>
