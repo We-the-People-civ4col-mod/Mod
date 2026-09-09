@@ -494,16 +494,19 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_1</Tag>
 		<English>Semyon Dezhnev</English>
 		<Russian>Семён Дежнёв</Russian>
+		<Hungarian>Szemjon Dezsnyev</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_2</Tag>
 		<English>Alexei Chirikov</English>
 		<Russian>Алексей Чириков</Russian>
+		<Hungarian>Alekszej Csirikov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_3</Tag>
 		<English>Grigory Shelikhov</English>
 		<Russian>Григорий Шелехов</Russian>
+		<Hungarian>Grigorij Selikov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_4</Tag>
@@ -514,6 +517,7 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_5</Tag>
 		<English>Ivan Kruzenshtern</English>
 		<Russian>Иван Крузенштерн</Russian>
+		<Hungarian>Iván Kruzenstern</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_6</Tag>
@@ -529,11 +533,13 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_8</Tag>
 		<English>Mikhail Tebenkov</English>
 		<Russian>Михаил Тебенков</Russian>
+		<Hungarian>Mihail Tebeknov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_9</Tag>
 		<English>Gavriil Pribylov</English>
 		<Russian>Гавриил Прибылов</Russian>
+		<Hungarian>Garvil Pribljov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_10</Tag>
@@ -544,6 +550,7 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_11</Tag>
 		<English>Mikhail Stadukhin</English>
 		<Russian>Михаил Стадухин</Russian>
+		<Hungarian>Mihail Sztadukin</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_12</Tag>
@@ -559,11 +566,13 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_14</Tag>
 		<English>Vasily Golovnin</English>
 		<Russian>Василий Головин</Russian>
+		<Hungarian>Vaszilij Golovnin</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_15</Tag>
 		<English>Ivan Fyodorov</English>
 		<Russian>Иван Фёдоров</Russian>
+		<Hungarian>Iván Fjodorov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_16</Tag>
@@ -584,31 +593,37 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_19</Tag>
 		<English>Pyotr Krenitsyn</English>
 		<Russian>Пётр Креницын</Russian>
+		<Hungarian>Pjotr Krenitszin</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_20</Tag>
 		<English>Mikhail Levashev</English>
 		<Russian>Михаил Левашёв</Russian>
+		<Hungarian>Pjotr Krenitszin</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_21</Tag>
 		<English>Yuri Lisyansky</English>
 		<Russian>Юрий Лисянский</Russian>
+		<Hungarian>Jurij Lisziankszij</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_22</Tag>
 		<English>Fyodor Litke</English>
 		<Russian>Фёдор Литке</Russian>
+		<Hungarian>Fjodor Litke</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_23</Tag>
 		<English>Gavriil Sarychev</English>
 		<Russian>Гавриил Сарычев</Russian>
+		<Hungarian>Gavril Szaricsev</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_ADMIRAL_24</Tag>
 		<English>Gleb Shishmaryov</English>
 		<Russian>Глеб Шишмарёв</Russian>
+		<Hungarian>Gleb Sismarijov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_ADMIRAL_0</Tag>
@@ -1109,16 +1124,19 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_0</Tag>
 		<English>Nikolay Mordvinov</English>
 		<Russian>Николай Мордвинов</Russian>
+		<Hungarian>Nyikoláj Mordvinov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_1</Tag>
 		<English>Pavel Chichagov</English>
 		<Russian>Павел Чичагов</Russian>
+		<Hungarian>Pável Csicsagov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_2</Tag>
 		<English>Aleksandr Menshikov</English>
 		<Russian>Александр Меньшиков</Russian>
+		<Hungarian>Alekszander Mensikov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_3</Tag>
@@ -1129,6 +1147,7 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_4</Tag>
 		<English>Fyodor Apraksin</English>
 		<Russian>Фёдор Апраксин</Russian>
+		<Hungarian>Fjodor Aprakszin</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_5</Tag>
@@ -1139,6 +1158,7 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_6</Tag>
 		<English>Ivan Botsis</English>
 		<Russian>Иван Боцис</Russian>
+		<Hungarian>Iván Botszisz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_7</Tag>
@@ -1149,30 +1169,36 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_8</Tag>
 		<English>Alexei Senyavin</English>
 		<Russian>Алексей Сенявин</Russian>
+		<Hungarian>Alekszej Szenyavin</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_9</Tag>
 		<English>Naum Senyavin</English>
 		<Russian>Наум Сенявин</Russian>
+		<Hungarian>Naum Szenyavin</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_10</Tag>
 		<English>Mikhail Golitsyn</English>
 		<Russian>Михаил Голицын</Russian>
+		<Hungarian>Mihail Golitszin</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_11</Tag>
 		<English>Grigory Spiridov</English>
 		<Russian>Григорий Спиридов</Russian>
+		<Hungarian>Grigorij Szpiridov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_12</Tag>
 		<English>Feodor Ushakov</English>
 		<Russian>Фёдор Ушаков</Russian>
+		<Hungarian>Feodor Usakov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_ADMIRAL_13</Tag>
 		<English>Dmitry Senyavin</English>
 		<Russian>Дмитрий Сенявин</Russian>
+		<Hungarian>Dimitrij Szenyavin</Hungarian>
 	</TEXT>
 </Civ4GameText>
