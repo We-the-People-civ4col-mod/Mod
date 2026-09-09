@@ -12424,6 +12424,7 @@
 		<English>[ICON_BULLET]Naval Control: Radius %d1_Num plots; Movement Cost deduction from other ships -%d2_Num</English>
 		<Portuguese>[ICON_BULLET]Controle Naval: Raio de %d1_Num lotes; Dedução do custo de movimento de outros navios -%d2_Num</Portuguese>
 		<German>[ICON_BULLET]Seekontrolle: Radius %d1_Num Felder; Bewegungskosten-Abzug bei anderen Schiffen -%d2_Num</German>
+		<Russian>[ICON_BULLET]Зона контроля: радиус — %d1_Num; увеличивает стоимость перемещения для других кораблей на %d2_Num</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_IS_SLAVE_SHIP</Tag>
