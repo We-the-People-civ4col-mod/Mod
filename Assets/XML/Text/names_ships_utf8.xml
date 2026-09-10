@@ -3239,6 +3239,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_1</Tag>
 		<English>Liliya</English>
+		<Hungarian>Lilija</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_2</Tag>
@@ -3255,10 +3256,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_5</Tag>
 		<English>Yiozh</English>
+		<Hungarian>Jiozs</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_6</Tag>
 		<English>Soyedineniye</English>
+		<Hungarian>Szojedinenije</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_7</Tag>
@@ -3275,6 +3278,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_10</Tag>
 		<English>Yedinorog</English>
+		<Hungarian>Jedinorog</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_11</Tag>
@@ -3311,10 +3315,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_19</Tag>
 		<English>Sokol</English>
+		<Hungarian>Szokol</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_20</Tag>
 		<English>Sobaka</English>
+		<Hungarian>Szobaka</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_21</Tag>
@@ -3323,6 +3329,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_22</Tag>
 		<English>Cherepaha</English>
+		<Hungarian>Cserepaha</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_23</Tag>
@@ -3335,6 +3342,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_25</Tag>
 		<English>Voronezh</English>
+		<Hungarian>Voronyezs</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_26</Tag>
@@ -3347,14 +3355,17 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_28</Tag>
 		<English>Lastka</English>
+		<Hungarian>Lasztka</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_29</Tag>
 		<English>Shpaga</English>
+		<Hungarian>Spaga</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_30</Tag>
 		<English>Sulitsa</English>
+		<Hungarian>Szulitsza</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_31</Tag>
@@ -3363,6 +3374,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_32</Tag>
 		<English>Kronshlot</English>
+		<Hungarian>Kronslot</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_33</Tag>
@@ -3411,6 +3423,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_44</Tag>
 		<English>Moskva</English>
+		<Hungarian>Moszkva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_45</Tag>
@@ -3423,10 +3436,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_47</Tag>
 		<English>Selafail</English>
+		<Hungarian>Szelafail</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_48</Tag>
 		<English>Yagudiil</English>
+		<Hungarian>Jagudil</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_49</Tag>
@@ -3479,6 +3494,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_61</Tag>
 		<English>Kronshtadt</English>
+		<Hungarian>Kronstadt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_62</Tag>
@@ -3495,6 +3511,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_65</Tag>
 		<English>Aziya</English>
+		<Hungarian>Azija</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_66</Tag>
@@ -3507,10 +3524,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_68</Tag>
 		<English>Schastiye</English>
+		<Hungarian>Szkasztije</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_69</Tag>
 		<English>Blagopoluchiye</English>
+		<Hungarian>Blagopolucsije</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_70</Tag>
@@ -3527,6 +3546,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_73</Tag>
 		<English>Moskva</English>
+		<Hungarian>Moszkva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_74</Tag>
@@ -3535,6 +3555,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_75</Tag>
 		<English>Nataliya</English>
+		<Hungarian>Natalija</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_76</Tag>
@@ -3551,10 +3572,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_79</Tag>
 		<English>Moskva</English>
+		<Hungarian>Moszkva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_80</Tag>
 		<English>Saratov</English>
+		<Hungarian>Szaratov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_81</Tag>
@@ -3563,10 +3586,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_82</Tag>
 		<English>Vsevolod</English>
+		<Hungarian>Szevolod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_83</Tag>
 		<English>Rostislav</English>
+		<Hungarian>Rosztiszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_84</Tag>
@@ -3579,18 +3604,22 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_86</Tag>
 		<English>Viacheslav</English>
+		<Hungarian>Viacseszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_87</Tag>
 		<English>Mironosits</English>
+		<Hungarian>Mironoszitsz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_88</Tag>
 		<English>Preslava</English>
+		<Hungarian>Preszlava</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_89</Tag>
 		<English>Ingermanlandiya</English>
+		<Hungarian>Ingermanlandija</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_90</Tag>
@@ -3599,10 +3628,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_91</Tag>
 		<English>Sviatoslav</English>
+		<Hungarian>Szviatoszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_92</Tag>
 		<English>Aziya</English>
+		<Hungarian>Azija</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_93</Tag>
@@ -3611,34 +3642,42 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_94</Tag>
 		<English>Blagopoluchiye</English>
+		<Hungarian>Blagopolucsije</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_95</Tag>
 		<English>Khrabryi</English>
+		<Hungarian>Krabriji</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_96</Tag>
 		<English>Pobedonosets</English>
+		<Hungarian>Pobedonoszetsz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_97</Tag>
 		<English>Sviatoslav</English>
+		<Hungarian>Szviatoszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_98</Tag>
 		<English>Vysheslav</English>
+		<Hungarian>Viseszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_99</Tag>
 		<English>Rodislav</English>
+		<Hungarian>Rodiszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_100</Tag>
 		<English>Boleslav</English>
+		<Hungarian>Boleszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_101</Tag>
 		<English>Mecheslav</English>
+		<Hungarian>Mecseszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_102</Tag>
@@ -3675,18 +3714,22 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_110</Tag>
 		<English>Aziya</English>
+		<Hungarian>Azija</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_111</Tag>
 		<English>Pobedoslav</English>
+		<Hungarian>Pobedoszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_112</Tag>
 		<English>Rostislav</English>
+		<Hungarian>Rosztiszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_113</Tag>
 		<English>Saratov</English>
+		<Hungarian>Szaratov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_114</Tag>
@@ -3695,22 +3738,27 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_115</Tag>
 		<English>Yaroslav</English>
+		<Hungarian>Jaroszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_116</Tag>
 		<English>Vladislav</English>
+		<Hungarian>Vladiszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_117</Tag>
 		<English>Vseslav</English>
+		<Hungarian>Veszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_118</Tag>
 		<English>Mstislav</English>
+		<Hungarian>Misztiszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_119</Tag>
 		<English>Boris</English>
+		<Hungarian>Borisz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_120</Tag>
@@ -3719,10 +3767,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_121</Tag>
 		<English>Aleksei</English>
+		<Hungarian>Alekszej</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_122</Tag>
 		<English>Piotr</English>
+		<Hungarian>Pjotr</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_123</Tag>
@@ -3731,14 +3781,17 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_124</Tag>
 		<English>Moskva</English>
+		<Hungarian>Moszkva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_125</Tag>
 		<English>Yaroslav</English>
+		<Hungarian>Jaroszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_126</Tag>
 		<English>Elisaveta</English>
+		<Hungarian>Eliszaveta</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_127</Tag>
@@ -3755,6 +3808,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_130</Tag>
 		<English>Selafail</English>
+		<Hungarian>Szelafail</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_131</Tag>
@@ -3767,6 +3821,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_133</Tag>
 		<English>Sviatoslav</English>
+		<Hungarian>Szviatoszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_134</Tag>
@@ -3803,18 +3858,22 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_142</Tag>
 		<English>Moschnyi</English>
+		<Hungarian>Moszknyi</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_143</Tag>
 		<English>Skoryi</English>
+		<Hungarian>Szkorji</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_144</Tag>
 		<English>Khrabryi</English>
+		<Hungarian>Krabriji</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_145</Tag>
 		<English>Smelyi</English>
+		<Hungarian>Szmelji</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_146</Tag>
@@ -3827,18 +3886,22 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_148</Tag>
 		<English>Saratov</English>
+		<Hungarian>Szaratov</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_149</Tag>
 		<English>Chesma</English>
+		<Hungarian>Cseszma</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_150</Tag>
 		<English>Mironisits</English>
+		<Hungarian>Mironiszitsz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_151</Tag>
 		<English>Yupiter</English>
+		<Hungarian>Jupiter</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_152</Tag>
@@ -3847,6 +3910,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_153</Tag>
 		<English>Piotr</English>
+		<Hungarian>Pjotr</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_154</Tag>
@@ -3859,14 +3923,17 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_156</Tag>
 		<English>Rostislav</English>
+		<Hungarian>Rosztiszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_157</Tag>
 		<English>Leipzig</English>
+		<Hungarian>Lipcse</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_158</Tag>
 		<English>Tviordyi</English>
+		<Hungarian>Tviordji</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_159</Tag>
@@ -3891,6 +3958,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_164</Tag>
 		<English>Lesnoye</English>
+		<Hungarian>Lesznoje</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_165</Tag>
@@ -3907,14 +3975,17 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_168</Tag>
 		<English>Krasnoi</English>
+		<Hungarian>Krasznoj</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_169</Tag>
 		<English>Berezino</English>
+		<Hungarian>Berezsino</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_170</Tag>
 		<English>Smolensk</English>
+		<Hungarian>Szmolenszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_171</Tag>
@@ -3927,6 +3998,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_173</Tag>
 		<English>Leipzig</English>
+		<Hungarian>Lipcse</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_174</Tag>
@@ -3959,6 +4031,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_181</Tag>
 		<English>Vladimir</English>
+		<Hungarian>Vlagyimir</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_182</Tag>
@@ -3967,6 +4040,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_183</Tag>
 		<English>Andrei</English>
+		<Hungarian>Andrej</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_184</Tag>
@@ -3979,14 +4053,17 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_186</Tag>
 		<English>Vyborg</English>
+		<Hungarian>Viborg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_187</Tag>
 		<English>Rossiya</English>
+		<Hungarian>Rosszija</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_188</Tag>
 		<English>Krasnoi</English>
+		<Hungarian>Krasznoj</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_189</Tag>
@@ -4007,6 +4084,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_193</Tag>
 		<English>Vilagosh</English>
+		<Hungarian>Világos</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_194</Tag>
@@ -4027,10 +4105,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_198</Tag>
 		<English>Moreya</English>
+		<Hungarian>Moreja</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_199</Tag>
 		<English>Novopavlovsk</English>
+		<Hungarian>Novopavlovszk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_200</Tag>
@@ -4039,18 +4119,22 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_201</Tag>
 		<English>Zhurzha</English>
+		<Hungarian>Zsurzsa</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_202</Tag>
 		<English>Ekaterina</English>
+		<Hungarian>Jekaterina</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_203</Tag>
 		<English>Aleksandr</English>
+		<Hungarian>Jekaterina</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_204</Tag>
 		<English>Vladimir</English>
+		<Hungarian>Vlagyimir</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_205</Tag>
@@ -4059,6 +4143,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_206</Tag>
 		<English>Yagudiil</English>
+		<Hungarian>Jagudil</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_207</Tag>
@@ -4071,6 +4156,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_209</Tag>
 		<English>Pravyi</English>
+		<Hungarian>Pravji</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_210</Tag>
@@ -4079,14 +4165,17 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_211</Tag>
 		<English>Mariya</English>
+		<Hungarian>Marija</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_212</Tag>
 		<English>Aziya</English>
+		<Hungarian>Azija</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_213</Tag>
 		<English>Lesnoi</English>
+		<Hungarian>Lesznoj</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_214</Tag>
@@ -4095,14 +4184,17 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_215</Tag>
 		<English>Krasnoi</English>
+		<Hungarian>Krasznoj</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_216</Tag>
 		<English>Nikolai</English>
+		<Hungarian>Nyikolaj</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_217</Tag>
 		<English>Skoryi</English>
+		<Hungarian>Szkorji</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_218</Tag>
@@ -4111,6 +4203,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_219</Tag>
 		<English>Parizh</English>
+		<Hungarian>Párizs</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_220</Tag>
@@ -4135,10 +4228,12 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_225</Tag>
 		<English>Varshava</English>
+		<Hungarian>Varsó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_226</Tag>
 		<English>Silistriya</English>
+		<Hungarian>Szilisztrija</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_227</Tag>
@@ -4147,6 +4242,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_228</Tag>
 		<English>Selafail</English>
+		<Hungarian>Szelafail</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_229</Tag>
@@ -4159,26 +4255,32 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_231</Tag>
 		<English>Yagudiil</English>
+		<Hungarian>Jagudil</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_232</Tag>
 		<English>Sviatoslav</English>
+		<Hungarian>Szviatoszlav</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_233</Tag>
 		<English>Parizh</English>
+		<Hungarian>Párizs</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_234</Tag>
 		<English>Rostislav</English>
+		<Hungarian>Párizs</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_235</Tag>
 		<English>Khrabryi</English>
+		<Hungarian>Krabriji</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_236</Tag>
 		<English>Tsesarevitch</English>
+		<Hungarian>Szeszarevics</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_237</Tag>
@@ -4231,6 +4333,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_249</Tag>
 		<English>Viktoriya</English>
+		<Hungarian>Viktorija</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_250</Tag>
@@ -4259,6 +4362,7 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_256</Tag>
 		<English>Britaniya</English>
+		<Hungarian>Britanija</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_257</Tag>
@@ -4275,5 +4379,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_SHIP_260</Tag>
 		<English>Syurireis</English>
+		<Hungarian>Szjurirejsz</Hungarian>
 	</TEXT>
 </Civ4GameText>
