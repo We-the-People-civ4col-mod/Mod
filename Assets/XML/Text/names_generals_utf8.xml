@@ -534,106 +534,127 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_0</Tag>
 		<English>Count Fedor Golovin</English>
 		<Russian>Граф Фёдор Головин</Russian>
+		<Hungarian>Fedor Golovin Gróf</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_1</Tag>
 		<English>Count Boris Sheremetev</English>
 		<Russian>Граф Борис Шереметьев</Russian>
+		<Hungarian>Boris Seremetev Gróf</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_2</Tag>
 		<English>Prince Alexander Menshikov</English>
 		<Russian>Князь Александр Меншиков</Russian>
+		<Hungarian>Alelkszander Mensikov Herceg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_3</Tag>
 		<English>Prince Anikita Repnin</English>
 		<Russian>Князь Аникита Репнин</Russian>
+		<Hungarian>Anikita Repnin Herceg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_4</Tag>
 		<English>Prince Mikhail Galitzine</English>
 		<Russian>Князь Князь Михаил Галицын</Russian>
+		<Hungarian>Mihail Galitzine Herceg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_5</Tag>
 		<English>Count Stepan Apraksin</English>
 		<Russian>Граф Степан Апраксин</Russian>
+		<Hungarian>Stefán Aprakszin Herceg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_6</Tag>
 		<English>Prince Grigory Romodanovsky</English>
 		<Russian>Князь Григорий Ромодановский</Russian>
+		<Hungarian>Grigorij Romodanovszki Herceg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_7</Tag>
 		<English>Prince Grigory Volkonsky</English>
 		<Russian>Князь Григорий Волконский</Russian>
+		<Hungarian>Grigorij Volkonszki Herceg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_8</Tag>
 		<English>Prince Vasily Dolgorukov</English>
 		<Russian>Князь Василий Долгоруков</Russian>
+		<Hungarian>Vaszilij Dolgorukov Herceg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_9</Tag>
 		<English>General Grigory Kosagov</English>
 		<Russian>Григорий Косагов</Russian>
+		<Hungarian>Grigorij Koszagov Tábornok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_10</Tag>
 		<English>General Alexey Golovin</English>
 		<Russian>Алексей Головин</Russian>
+		<Hungarian>Alekszej Golovin Tábornok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_11</Tag>
 		<English>General Matvey Krovkov</English>
 		<Russian>Матвей Кровков</Russian>
+		<Hungarian>Matvej Krovkov Tábornok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_12</Tag>
 		<English>General Franz Lefort</English>
 		<Russian>Франц Лефорт</Russian>
+		<Hungarian>Franz Lefort Tábornok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_13</Tag>
 		<English>General Bogdan Korsak</English>
 		<Russian>Богдан Корсак</Russian>
+		<Hungarian>Bogdán Korsak Tábornok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_14</Tag>
 		<English>General Alexey Shein</English>
 		<Russian>Алексей Шеин</Russian>
+		<Hungarian>Alekszej Sein Tábornok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_15</Tag>
 		<English>General Ivan Koltsov-Mosalsky</English>
 		<Russian>Иван Кольцов-Мосальский</Russian>
+		<Hungarian>Iván Koltszov-Moszalszki Tábornok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_16</Tag>
 		<English>General Yakov Polonsky</English>
 		<Russian>Яков Полонский</Russian>
+		<Hungarian>Jakov Polonszki Tábornok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_17</Tag>
 		<English>General Nikolai von Werden</English>
 		<Russian>Николай фон Верден</Russian>
+		<Hungarian>Nyikoláj von Werden Tábornok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_18</Tag>
 		<English>General Ivan Buturlin</English>
 		<Russian>Иван Бутурлин</Russian>
+		<Hungarian>Iván Buturlin Tábornok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_19</Tag>
 		<English>General Andrey Gulits</English>
 		<Russian>Андрей Гулиц</Russian>
+		<Hungarian>Andrej Gulitsz Tábornok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_GENERAL_20</Tag>
 		<English>General Ivan Gorbov</English>
 		<Russian>Иван Горбов</Russian>
+		<Hungarian>Iván Gorbov Tábornok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ENGLAND_EUROPE_GENERAL_0</Tag>
@@ -1054,46 +1075,55 @@
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_0</Tag>
 		<English>Count Alexander Buturlin</English>
 		<Russian>Граф Александр Бутурлин</Russian>
+		<Hungarian>Alekszander Buturlin Gróf</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_1</Tag>
 		<English>Count Alexei Razumovsky</English>
 		<Russian>Граф Алексей Разумовский</Russian>
+		<Hungarian>Alekszej Razumovszkij Gróf</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_2</Tag>
 		<English>Count Pyotr Saltykov</English>
 		<Russian>Граф Пётр Салтыков</Russian>
+		<Hungarian>Pjotr Szaltikov Gróf</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_3</Tag>
 		<English>Prince Nikita Trubetskoy</English>
 		<Russian>Князь Никита Трубецкой</Russian>
+		<Hungarian>Nyikita Trubetszkoj Herceg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_4</Tag>
 		<English>Count Kirill Razumovsky</English>
 		<Russian>Граф Кирилл Разумовский</Russian>
+		<Hungarian>Kirill Razumovszkij Gróf</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_RUSSIA_EUROPE_GENERAL_5</Tag>
 		<English>Prince Grigori Potemkin</English>
 		<Russian>Князь Григорий Потёмкин</Russian>
+		<Hungarian>Grigorij Potyemkin Herceg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_GENERAL_0</Tag>
 		<English>Deadly Piranha</English>
 		<Russian>Смертоносная пиранья</Russian>
+		<Hungarian>Halálos Piranha</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_GENERAL_1</Tag>
 		<English>Great Jaguar</English>
 		<Russian>Великий ягуар</Russian>
+		<Hungarian>Nagy Jaguár</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_TUPI_GENERAL_2</Tag>
 		<English>Great Tapir</English>
 		<Russian>Великий Тапир</Russian>
+		<Hungarian>Nagy Tapír</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_ARAWAK_GENERAL_0</Tag>
@@ -1254,21 +1284,25 @@
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_6</Tag>
 		<English>Big Eagle</English>
 		<Russian>Большой Орел</Russian>
+		<Hungarian>Nagy Sas</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_7</Tag>
 		<English>Rain-in-the-Face</English>
 		<Russian>Лицо дождя</Russian>
+		<Hungarian>Sűrű Eső</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SIOUX_GENERAL_8</Tag>
 		<English>Big Foot</English>
 		<Russian>Большая нога</Russian>
+		<Hungarian>Nagyláb</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_0</Tag>
 		<English>Chief Bowl</English>
 		<Russian>Вождь Боул</Russian>
+		<Hungarian>Nagyfőnök</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_1</Tag>
@@ -1284,6 +1318,7 @@
 		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_3</Tag>
 		<English>Black Fox</English>
 		<Russian>Черная лисица</Russian>
+		<Hungarian>Fekete Róka</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_CHEROKEE_GENERAL_4</Tag>
@@ -1319,6 +1354,7 @@
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_4</Tag>
 		<English>Black Snake</English>
 		<Russian>Черная змея</Russian>
+		<Hungarian>Fekete Kígyó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_5</Tag>
@@ -1329,6 +1365,7 @@
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_6</Tag>
 		<English>Red Head</English>
 		<Russian>Рыжая голова</Russian>
+		<Hungarian>Vörös Fej</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_IROQUOIS_GENERAL_7</Tag>
@@ -1839,36 +1876,43 @@
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_0</Tag>
 		<English>Eight Deer</English>
 		<Russian>Восьмой Олень</Russian>
+		<Hungarian>Nyolc Szarvas</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_1</Tag>
 		<English>Twelve Earthquake</English>
 		<Russian>Двенадцатое землетрясение</Russian>
+		<Hungarian>Tizenkét Földrengés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_2</Tag>
 		<English>Five Crocodile</English>
 		<Russian>Пятый крокодил</Russian>
+		<Hungarian>Öt Krokodil</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_3</Tag>
 		<English>Eight Crocodile</English>
 		<Russian>Восьмой крокодил</Russian>
+		<Hungarian>Nyolc Krokodil</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_4</Tag>
 		<English>Nine Flower</English>
 		<Russian>Девятый Цветок</Russian>
+		<Hungarian>Kilenc Virág</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_5</Tag>
 		<English>Eleven Wind</English>
 		<Russian>Одиннадцатый ветер</Russian>
+		<Hungarian>Tizenegy Szél</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MIXTEC_GENERAL_6</Tag>
 		<English>Four Jaguar</English>
 		<Russian>Четвёртый ягуар</Russian>
+		<Hungarian>Négy Jaguár</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_MUISCA_GENERAL_0</Tag>
@@ -1924,26 +1968,31 @@
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_0</Tag>
 		<English>Buffalo Hump</English>
 		<Russian>Горб буйвола</Russian>
+		<Hungarian>Bölényhát</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_1</Tag>
 		<English>Old Owl</English>
 		<Russian>Старая Сова</Russian>
+		<Hungarian>Öreg Bagoly</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_2</Tag>
 		<English>Ten Bears</English>
 		<Russian>Десять медведей</Russian>
+		<Hungarian>Tíz Medve</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_3</Tag>
 		<English>Green Horn</English>
 		<Russian>Зеленый Рог</Russian>
+		<Hungarian>Zöld Szarv</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_4</Tag>
 		<English>Santa Anna</English>
 		<Russian>Санта-Анна</Russian>
+		<Hungarian>Szent Anna</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_COMANCHE_GENERAL_5</Tag>
@@ -1979,11 +2028,13 @@
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_4</Tag>
 		<English>Bear Hunter</English>
 		<Russian>Охотник на медведя</Russian>
+		<Hungarian>Medvevadász</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_5</Tag>
 		<English>Little Soldier</English>
 		<Russian>Маленький солдат</Russian>
+		<Hungarian>Kis Katona</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_SHOSHONE_GENERAL_6</Tag>
@@ -2069,11 +2120,13 @@
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_0</Tag>
 		<English>Crowfoot</English>
 		<Russian>Воронья лапа</Russian>
+		<Hungarian>Varjúláb</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_1</Tag>
 		<English>Calf Shirt</English>
 		<Russian>Рубашка из теленка</Russian>
+		<Hungarian>Borjú Ing</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_2</Tag>
@@ -2089,11 +2142,13 @@
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_4</Tag>
 		<English>Old Sun</English>
 		<Russian>Старое Солнце</Russian>
+		<Hungarian>Öreg Nap</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_5</Tag>
 		<English>Kill Eagle</English>
 		<Russian>Убить Орла</Russian>
+		<Hungarian>Gyilkos Sas</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_BLACKFOOT_GENERAL_6</Tag>
@@ -2274,21 +2329,25 @@
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_1</Tag>
 		<English>White Bird</English>
 		<Russian>Белая птица</Russian>
+		<Hungarian>Fehér Madár</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_2</Tag>
 		<English>Old Joseph</English>
 		<Russian>Старый Джозеф</Russian>
+		<Hungarian>Öreg József</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_3</Tag>
 		<English>Yellow Bull</English>
 		<Russian>Жёлтый Бык</Russian>
+		<Hungarian>Sárga Bika</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_4</Tag>
 		<English>Looking Glass</English>
 		<Russian>Зеркало</Russian>
+		<Hungarian>Nagyító Üveg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVILIZATION_NEZ_PERCE_GENERAL_5</Tag>

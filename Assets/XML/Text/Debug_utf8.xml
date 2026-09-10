@@ -5,25 +5,30 @@
 		<Tag>TXT_KEY_DEBUG_DESYNC_LOG_BUTTON</Tag>
 		<English>Generate OOS debug log</English>
 		<Russian>Создать журнал отладки Рассинхронизации</Russian>
+		<Hungarian>OOS hibakeresési napló létrehozása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEBUG_DESYNC_LOG_COMPLETE</Tag>
 		<English>Done generating files. Please submit the following:[NEWLINE][ICON_BULLET]Desync save for player %d1.ColonizationSave[NEWLINE][ICON_BULLET]Everything in In documents\my games\colonization\logs[NEWLINE][NEWLINE]Please submit one set for each player/computer involved.[NEWLINE][ICON_BULLET]If possible, also add a savegame/autosave where the OOS can be reproduced.</English>
 		<Russian>Создание файлов завершено.[NEWLINE]Пожалуйста, пришите нам сохранение рассинхронизации для игрока %d1.ColonizationSave[NEWLINE]Файл расположен в папке documents\my games\colonization\logs[NEWLINE][ICON_BULLET]Соберите эти файлы у всех игроков, поместите их в один zip-файл и отправьте в виде отчета об ошибке Рассинхронизации. Если возможно, добавьте автосохранение из предыдущего хода.</Russian>
+		<Hungarian>Elkészült a fájlok generálása: Küldd el a következőt:[NEWLINE][ICON_BULLET]Desync mentés a játékosnak %d1.ColonizationSave[NEWLINE][ICON_BULLET]Minden itt van: documents\my games\colonization\logs[NEWLINE][NEWLINE]Kérlek küldj be egy szettet minden résztvevő játékos/számítógép számára.[NEWLINE][ICON_BULLET]Ha lehetséges, adj hozzá egy mentést/automatikusan mentett állást is, ahol az OOS reprodukálható.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_DEBUG_OOS_MENU</Tag>
 		<English>OOS testing menu[NEWLINE][NEWLINE]Here data can be send to all computers on the network to detect if all computers will react the same way.</English>
 		<Russian>Меню тестирования Рассинхронизации[NEWLINE][NEWLINE]Здесь можно отправить данные на все компьютеры в сети, чтобы определить, будут ли все компьютеры реагировать одинаково.</Russian>
+		<Hungarian>OOS tesztelés menü[NEWLINE][NEWLINE]Itt adatokat lehet küldeni a hálózat összes számítógépének, hogy megállapítható legyen, hogy minden számítógép ugyanúgy reagál-e.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE</Tag>
 		<English>Negative cargo stored error</English>
 		<!--<Russian>Ошибка хранения отрицательного груза</Russian>-->
+		<Hungarian>Negatív rakomány tárolási hiba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_DESC</Tag>
 		<English>Colony is storing negative amount of cargo.[NEWLINE]Please make a bug report and provide a savegame from just before this happened.[NEWLINE]Be aware that the autosave from this turn might be from after this happened if it happened just as the turn started.</English>
 		<!--<Russian>В колонии хранится отрицательное количество груза.[NEWLINE]Сообщите об ошибке и предоставьте сохраненную игру, сделанную незадолго до того, как это произошло.[NEWLINE]Имейте в виду, что автосохранение этого хода может произойти после того, как это случилось, если ошибка возникла в момент начала хода.</Russian>-->
+		<Hungarian>A kolónia negatív mennyiségű rakományt tárol.[NEWLINE]Kérlek, írj hibajelentést, és küldj egy mentést közvetlenül azelőttről, hogy ez megtörtént.[NEWLINE]Vedd figyelembe, hogy az automatikus mentés ebből a fordulóból lehet, hogy azután történt, hogy ez megtörtént, ha ez pont a forduló kezdetekor történt.</Hungarian>
 	</TEXT>
 </Civ4GameText>
