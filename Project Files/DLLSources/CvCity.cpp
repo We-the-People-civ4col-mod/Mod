@@ -11649,6 +11649,7 @@ namespace
 		if (isUnitClassType(eUnitClass, "UNITCLASS_RAPE_PLANTER")) return 35;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_COCA_COLLECTOR")) return 35;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_LOGWOOD_COLLECTOR")) return 30;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_PEAT_CUTTER")) return 30;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_COCHINEAL_COLLECTOR")) return 30;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_RED_PEPPER_PLANTER")) return 30;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_VANILLA_COLLECTOR")) return 30;
