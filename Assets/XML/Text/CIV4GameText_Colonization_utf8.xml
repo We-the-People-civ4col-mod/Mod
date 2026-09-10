@@ -2814,6 +2814,16 @@
 		<Hungarian>Kormányzó</Hungarian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_INTERFACE_TERRITORIAL_INFLUENCE</Tag>
+		<English>[COLOR_YELLOW]Limit Territorial Influence[COLOR_REVERT] ([COLOR_GREEN]%s1[COLOR_REVERT])</English>
+		<Portuguese>[COLOR_YELLOW]Limitar a Influência Territorial[COLOR_REVERT] ([COLOR_GREEN]%s1[COLOR_REVERT])</Portuguese>
+		<French>[COLOR_YELLOW]Limiter l'influence territoriale[COLOR_REVERT] ([COLOR_GREEN]%s1[COLOR_REVERT])</French>
+		<German>[COLOR_YELLOW]Territorialen Einfluss begrenzen[COLOR_REVERT] ([COLOR_GREEN]%s1[COLOR_REVERT])</German>
+		<Italian>[COLOR_YELLOW]Limitare l'influenza territoriale[COLOR_REVERT] ([COLOR_GREEN]%s1[COLOR_REVERT])</Italian>
+		<Spanish>[COLOR_YELLOW]Limitar la influencia territorial[COLOR_REVERT] ([COLOR_GREEN]%s1[COLOR_REVERT])</Spanish>
+		<Russian>[COLOR_YELLOW]Ограничить территориальное влияние[COLOR_REVERT] ([COLOR_GREEN]%s1[COLOR_REVERT])</Russian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_TERRAIN_NO_CITIES</Tag>
 		<English>[ICON_BULLET]Cannot build settlements here[SPACE]</English>
 		<Portuguese>[ICON_BULLET]Não é possível construir colônias aqui[SPACE]</Portuguese>

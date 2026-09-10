@@ -3631,6 +3631,28 @@ class CvMainInterface:
 			for szButton in kShow:
 				screen.show(szButton)
 
+	def toggleTerritorialInfluence(self):
+
+		screen = CyGInterfaceScreen("MainInterface", CvScreenEnums.MAIN_INTERFACE )
+
+		self.bTerritorialInfluenceMode = not self.bTerritorialInfluenceMode
+
+		if self.bTerritorialInfluenceMode:
+			self.bTerritorialInfluenceOldNoUnitCycling = CyUserProfile().getPlayerOption(PlayerOptionTypes.PLAYEROPTION_NO_UNIT_CYCLING)
+
+			if not self.bTerritorialInfluenceOldNoUnitCycling:
+				CyMessageControl().sendPlayerOption(PlayerOptionTypes.PLAYEROPTION_NO_UNIT_CYCLING, True)
+
+			screen.overlayButtonGFC("TerritorialInfluenceButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_HIGHLIGHTED_BUTTON").getPath())
+			self.refreshTerritorialInfluence()
+		else:
+			if not self.bTerritorialInfluenceOldNoUnitCycling:
+				CyMessageControl().sendPlayerOption(PlayerOptionTypes.PLAYEROPTION_NO_UNIT_CYCLING, False)
+
+			screen.overlayButtonGFC("TerritorialInfluenceButton", None)
+			CyEngine().clearAreaBorderPlots(AreaBorderLayers.AREA_BORDER_LAYER_WORLD_BUILDER)
+			CyEngine().clearAreaBorderPlots(AreaBorderLayers.AREA_BORDER_LAYER_REVEALED_PLOTS)
+
 	# Will handle the input for this screen...
 	def handleInput ( self, inputClass ):
 
@@ -3673,23 +3695,7 @@ class CvMainInterface:
 				CvScreensInterface.showAchieveAdvisorScreen()
 
 			elif (inputClass.getButtonType() == WidgetTypes.WIDGET_GENERAL and inputClass.getData1() == self.BUTTON_TERRITORIAL_INFLUENCE):
-				self.bTerritorialInfluenceMode = not self.bTerritorialInfluenceMode
-
-				if self.bTerritorialInfluenceMode:
-					self.bTerritorialInfluenceOldNoUnitCycling = CyUserProfile().getPlayerOption(PlayerOptionTypes.PLAYEROPTION_NO_UNIT_CYCLING)
-
-					if not self.bTerritorialInfluenceOldNoUnitCycling:
-						CyMessageControl().sendPlayerOption(PlayerOptionTypes.PLAYEROPTION_NO_UNIT_CYCLING, True)
-
-					screen.overlayButtonGFC("TerritorialInfluenceButton", ArtFileMgr.getInterfaceArtInfo("INTERFACE_HIGHLIGHTED_BUTTON").getPath())
-					self.refreshTerritorialInfluence()
-				else:
-					if not self.bTerritorialInfluenceOldNoUnitCycling:
-						CyMessageControl().sendPlayerOption(PlayerOptionTypes.PLAYEROPTION_NO_UNIT_CYCLING, False)
-
-					screen.overlayButtonGFC("TerritorialInfluenceButton", None)
-					CyEngine().clearAreaBorderPlots(AreaBorderLayers.AREA_BORDER_LAYER_WORLD_BUILDER)
-					CyEngine().clearAreaBorderPlots(AreaBorderLayers.AREA_BORDER_LAYER_REVEALED_PLOTS)
+				self.toggleTerritorialInfluence()
 
 		return 0
 
@@ -3799,6 +3805,8 @@ class CvMainInterface:
 				return localText.getText("TXT_KEY_INTERFACE_GOVERNOR_TOGGLE", ());
 			elif iData1 == ACHIEVE_ADVISOR_SCREEN_MI:
 				return localText.getText("TXT_KEY_INTERFACE_ACHIEVE_ADVISOR", ("F10", ""));
+			elif iData1 == self.BUTTON_TERRITORIAL_INFLUENCE:
+				return localText.getText("TXT_KEY_INTERFACE_TERRITORIAL_INFLUENCE", ("Ctrl+I", ""));
 			elif iData1 == VET_NEW_CAPACITY:
 				return localText.getText("TXT_KEY_NEW_STORAGE_CITY_SCREEN", ());
 			elif iData1 == NEW_HARBOUR_SYSTEM:

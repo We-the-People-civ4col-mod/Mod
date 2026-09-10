@@ -225,6 +225,10 @@ class CvEventManager:
 		if ( eventType == self.EventKeyDown ):
 			theKey=int(key)
 
+			if (theKey == int(InputTypes.KB_I) and self.bCtrl and not self.bShift and not self.bAlt):
+				CvScreensInterface.mainInterface.toggleTerritorialInfluence()
+				return 1
+
 			#Custom Camera Controls
 
 			if (theKey == int(InputTypes.KB_LEFT)):
