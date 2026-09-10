@@ -115,7 +115,8 @@ UNIT_HEALTH_BAR_WIDTH = -1
 UNIT_HEALHT_BAR_PERCENT_WIDTH = 17
 
 CITY_VIEW_BOX_HEIGHT_AND_WIDTH = -1
-CITY_VIEW_BOX_PERCENT_HEIGHT = 38
+# 41: leave room for bonus icons on the outer plots (38 clipped top/right).
+CITY_VIEW_BOX_PERCENT_HEIGHT = 41
 CITY_VIEW_BOX_MODIFIED_PERCENT_HEIGHT_AND_WIDTH = -1
 
 CITY_MULTI_TAB_AREA_HEIGHT = -1
@@ -2465,8 +2466,15 @@ class CvMainInterface:
 		bShift = CyInterface().shiftKey()
 
 	# INITILIZE CITY VIEW CAMERA
-		x = ((xResolution * 1.0) - ((CITY_VIEW_BOX_HEIGHT_AND_WIDTH / 2) + BUILD_AREA_WIDTH + (MAP_EDGE_MARGIN_WIDTH))) / xResolution
-		y = 1.00 - ((CITY_TITLE_BAR_PERCENT_HEIGHT + (CITY_VIEW_BOX_PERCENT_HEIGHT - (MAP_EDGE_MARGIN_PERCENT_WIDTH * 2)) / 2) / 100.0)
+		# Pixel center of the map frame (not the unadjusted percent, which sat
+		# too high on widescreen). Inset the 1.3x title-bar art; bias left so
+		# east bonus icons clear the build panel. Do not also shift down, or
+		# the south-plot yield stacks sit under the map-frame border.
+		mapFrameSize = CITY_VIEW_BOX_HEIGHT_AND_WIDTH - (MAP_EDGE_MARGIN_WIDTH * 2)
+		titleOverlap = int(CITY_TITLE_BAR_HEIGHT * 0.3)
+		resourcePad = MAP_EDGE_MARGIN_WIDTH * 2
+		x = (CITIZEN_BAR_WIDTH + (mapFrameSize / 2.0) - (resourcePad / 2.0)) / float(xResolution)
+		y = 1.00 - ((CITY_TITLE_BAR_HEIGHT + (mapFrameSize / 2.0) + (titleOverlap / 2.0)) / float(yResolution))
 		CyCamera().SetCityViewPortCenter(x, y)
 
 		screen.hide("ClockText")
