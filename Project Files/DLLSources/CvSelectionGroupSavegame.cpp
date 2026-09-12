@@ -105,7 +105,21 @@ void CvSelectionGroup::read(CvSavegameReader reader)
 			break;
 		}
 	}
-	
+
+	if (GC.getMap().getGlobeviewPadWest() != 0 || GC.getMap().getGlobeviewPadSouth() != 0)
+	{
+		for (CLLNode<MissionData>* pMissionNode = headMissionQueueNode(); pMissionNode != NULL; pMissionNode = nextMissionQueueNode(pMissionNode))
+		{
+			MissionData& kMission = pMissionNode->m_data;
+			if (kMission.eMissionType == MISSION_MOVE_TO ||
+				kMission.eMissionType == MISSION_ROUTE_TO ||
+				kMission.eMissionType == MISSION_ROUTE_TO_ROAD ||
+				kMission.eMissionType == MISSION_ROUTE_TO_COUNTRY_ROAD)
+			{
+				GC.getMap().offsetGlobeviewCoordinates(kMission.iData1, kMission.iData2);
+			}
+		}
+	}
 }
 
 void CvSelectionGroup::write(CvSavegameWriter writer)

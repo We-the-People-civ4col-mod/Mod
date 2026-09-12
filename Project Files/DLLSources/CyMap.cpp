@@ -121,6 +121,16 @@ int CyMap::getGridHeight()
 	return m_pMap->getGridHeightINLINE();
 }
 
+int CyMap::getGlobeviewPadWest()
+{
+	return m_pMap ? m_pMap->getGlobeviewPadWest() : 0;
+}
+
+int CyMap::getGlobeviewPadSouth()
+{
+	return m_pMap ? m_pMap->getGlobeviewPadSouth() : 0;
+}
+
 int CyMap::getLandPlots()
 {
 	return m_pMap ? m_pMap->getLandPlots() : -1;

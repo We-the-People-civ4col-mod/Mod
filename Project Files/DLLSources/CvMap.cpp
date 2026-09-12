@@ -227,6 +227,10 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 	//--------------------------------
 	// Init saved data
 	reset(pInitInfo);
+	// 1. pad here, not in reset(). reset() also runs on save load (0x0 then the
+	//    save's own width). padding inside reset() grew a 136x256 save during load
+	//    and the EXE aborted. new games / WB come through init() so they still pad.
+	applyGlobeviewSafeDimensions();
 
 	//--------------------------------
 	// Init containers
@@ -249,6 +253,7 @@ void CvMap::init(CvMapInitData* pInitInfo/*=NULL*/)
 			kPlot.init(iX, iY);
 		}
 	}
+	applyGlobeviewPadPlotDefaults();
 	calculateAreas();
 	gDLL->logMemState("CvMap after init plots");
 }
@@ -335,6 +340,260 @@ void CvMap::reset(CvMapInitData* pInitInfo)
 	}
 
 	m_areas.removeAll();
+}
+
+// 1. EXE globe texture goes black on tall maps (Americas Gigantic 136x256).
+//    Issue #723 and Don_Drochilla: keep height/width around 1.45 at gigantic Y
+//    (1.72 on huge). Pad ocean on NEW games / WB. Do not grow the plot array
+//    while reading a save: We-The-People 136x256 saves abort the EXE.
+// 2. Split the extra columns on west AND east (rows on south AND north).
+//    East-only pad made east-coast starts sail farther to Europe.
+//    Unpadded saves shift plot/city/unit x,y by the west/south amount.
+void CvMap::applyGlobeviewSafeDimensions()
+{
+	m_iGlobeviewPadX = 0;
+	m_iGlobeviewPadY = 0;
+	m_iGlobeviewPadWest = 0;
+	m_iGlobeviewPadSouth = 0;
+
+	if (m_iGridWidth <= 0 || m_iGridHeight <= 0)
+	{
+		return;
+	}
+
+	const int iLong = std::max(m_iGridWidth, m_iGridHeight);
+	int iSafeRatio100 = 145;
+	if (iLong <= 100)
+	{
+		iSafeRatio100 = 172;
+	}
+	else if (iLong < 184)
+	{
+		iSafeRatio100 = 172 + (iLong - 100) * (145 - 172) / (184 - 100);
+	}
+
+	const int iNeededShort = (iLong * 100 + iSafeRatio100 - 1) / iSafeRatio100;
+
+	if (m_iGridHeight >= m_iGridWidth)
+	{
+		if (m_iGridWidth < iNeededShort)
+		{
+			m_iGlobeviewPadX = iNeededShort - m_iGridWidth;
+			m_iGlobeviewPadWest = m_iGlobeviewPadX / 2;
+			m_iGridWidth = iNeededShort;
+		}
+	}
+	else if (m_iGridHeight < iNeededShort)
+	{
+		m_iGlobeviewPadY = iNeededShort - m_iGridHeight;
+		m_iGlobeviewPadSouth = m_iGlobeviewPadY / 2;
+		m_iGridHeight = iNeededShort;
+	}
+}
+
+int CvMap::getGlobeviewPadWest() const
+{
+	return m_iGlobeviewPadWest;
+}
+
+int CvMap::getGlobeviewPadSouth() const
+{
+	return m_iGlobeviewPadSouth;
+}
+
+bool CvMap::hasGlobeviewOriginOffset() const
+{
+	return (m_iGlobeviewPadWest != 0 || m_iGlobeviewPadSouth != 0);
+}
+
+int CvMap::remapGlobeviewSavedPlotIndex(int iOldPlot) const
+{
+	if (iOldPlot < 0)
+	{
+		return iOldPlot;
+	}
+	if (m_iGlobeviewPadWest == 0 && m_iGlobeviewPadSouth == 0)
+	{
+		return iOldPlot;
+	}
+
+	const int iOrigWidth = getGridWidthINLINE() - m_iGlobeviewPadX;
+	const int iOrigHeight = getGridHeightINLINE() - m_iGlobeviewPadY;
+	if (iOrigWidth <= 0)
+	{
+		return -1;
+	}
+
+	const int iX = iOldPlot % iOrigWidth;
+	const int iY = iOldPlot / iOrigWidth;
+	if (iX < 0 || iX >= iOrigWidth || iY < 0 || iY >= iOrigHeight)
+	{
+		return -1;
+	}
+
+	return plotNumINLINE(iX + m_iGlobeviewPadWest, iY + m_iGlobeviewPadSouth);
+}
+
+void CvMap::offsetGlobeviewCoordinates(int& iX, int& iY) const
+{
+	if (m_iGlobeviewPadWest == 0 && m_iGlobeviewPadSouth == 0)
+	{
+		return;
+	}
+	if (iX == INVALID_PLOT_COORD || iY == INVALID_PLOT_COORD)
+	{
+		return;
+	}
+	if (iX < 0 || iY < 0)
+	{
+		return;
+	}
+	iX += m_iGlobeviewPadWest;
+	iY += m_iGlobeviewPadSouth;
+}
+
+void CvMap::offsetGlobeviewCoordinates(Coordinates& coord) const
+{
+	if (m_iGlobeviewPadWest == 0 && m_iGlobeviewPadSouth == 0)
+	{
+		return;
+	}
+	if (coord.isInvalidPlotCoord())
+	{
+		return;
+	}
+	int iX = coord.x();
+	int iY = coord.y();
+	offsetGlobeviewCoordinates(iX, iY);
+	coord.set(iX, iY);
+}
+
+bool CvMap::isGlobeviewPadPlot(int iX, int iY) const
+{
+	if (m_iGlobeviewPadX <= 0 && m_iGlobeviewPadY <= 0)
+	{
+		return false;
+	}
+
+	const int iOrigWidth = getGridWidthINLINE() - m_iGlobeviewPadX;
+	const int iOrigHeight = getGridHeightINLINE() - m_iGlobeviewPadY;
+	if (iX < m_iGlobeviewPadWest || iX >= m_iGlobeviewPadWest + iOrigWidth)
+	{
+		return true;
+	}
+	if (iY < m_iGlobeviewPadSouth || iY >= m_iGlobeviewPadSouth + iOrigHeight)
+	{
+		return true;
+	}
+	return false;
+}
+
+void CvMap::applyGlobeviewPadPlotDefaults()
+{
+	if (m_pMapPlots == NULL || (m_iGlobeviewPadX <= 0 && m_iGlobeviewPadY <= 0))
+	{
+		return;
+	}
+
+	for (int iX = 0; iX < getGridWidthINLINE(); iX++)
+	{
+		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
+		{
+			if (isGlobeviewPadPlot(iX, iY))
+			{
+				CvPlot* pPlot = plotSoren(iX, iY);
+				// already init'd on load/new map. do not init again (uninit+gDLL destroy).
+				pPlot->setTerrainType(TERRAIN_OCEAN, false, false);
+			}
+		}
+	}
+}
+
+void CvMap::applyGlobeviewPadEurope()
+{
+	if (m_pMapPlots == NULL || (m_iGlobeviewPadX <= 0 && m_iGlobeviewPadY <= 0))
+	{
+		return;
+	}
+
+	const int iOrigWidth = getGridWidthINLINE() - m_iGlobeviewPadX;
+	const int iOrigHeight = getGridHeightINLINE() - m_iGlobeviewPadY;
+	const int iWestEdge = m_iGlobeviewPadWest;
+	const int iEastEdge = m_iGlobeviewPadWest + iOrigWidth - 1;
+	const int iSouthEdge = m_iGlobeviewPadSouth;
+	const int iNorthEdge = m_iGlobeviewPadSouth + iOrigHeight - 1;
+
+	for (int iX = 0; iX < getGridWidthINLINE(); iX++)
+	{
+		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
+		{
+			if (!isGlobeviewPadPlot(iX, iY))
+			{
+				continue;
+			}
+
+			CvPlot* pPlot = plotSoren(iX, iY);
+			if (pPlot == NULL || !pPlot->isWater() || pPlot->getEurope() != NO_EUROPE)
+			{
+				continue;
+			}
+
+			EuropeTypes eEurope = NO_EUROPE;
+			if (iX < iWestEdge && iOrigWidth > 0)
+			{
+				eEurope = plotSoren(iWestEdge, iY)->getEurope();
+			}
+			else if (iX > iEastEdge && iOrigWidth > 0)
+			{
+				eEurope = plotSoren(iEastEdge, iY)->getEurope();
+			}
+			if (eEurope == NO_EUROPE && iY < iSouthEdge && iOrigHeight > 0)
+			{
+				eEurope = plotSoren(iX, iSouthEdge)->getEurope();
+			}
+			if (eEurope == NO_EUROPE && iY > iNorthEdge && iOrigHeight > 0)
+			{
+				eEurope = plotSoren(iX, iNorthEdge)->getEurope();
+			}
+			if (eEurope != NO_EUROPE)
+			{
+				pPlot->setEurope(eEurope);
+			}
+		}
+	}
+}
+
+void CvMap::applyGlobeviewPadAreas()
+{
+	if (m_pMapPlots == NULL || (m_iGlobeviewPadX <= 0 && m_iGlobeviewPadY <= 0))
+	{
+		return;
+	}
+
+	CvArea* pWaterArea = findBiggestArea(true);
+	if (pWaterArea == NULL)
+	{
+		return;
+	}
+
+	const int iArea = pWaterArea->getID();
+
+	for (int iX = 0; iX < getGridWidthINLINE(); iX++)
+	{
+		for (int iY = 0; iY < getGridHeightINLINE(); iY++)
+		{
+			if (!isGlobeviewPadPlot(iX, iY))
+			{
+				continue;
+			}
+
+			CvPlot* pPlot = plotSoren(iX, iY);
+			if (pPlot != NULL && pPlot->isWater())
+			{
+				pPlot->setArea(iArea);
+			}
+		}
+	}
 }
 
 
@@ -1375,6 +1634,8 @@ void CvMap::updateWaterPlotTerrainTypes()
 			}
 		}
 	}
+
+	applyGlobeviewPadEurope();
 }
 // autodetect lakes - end
 

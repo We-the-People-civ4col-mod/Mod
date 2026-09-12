@@ -45,6 +45,8 @@ public:
 	int plotY(int iIndex);
 	int getGridWidth();
 	int getGridHeight();
+	int getGlobeviewPadWest();
+	int getGlobeviewPadSouth();
 
 	int getLandPlots();
 	int getOwnedPlots();

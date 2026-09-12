@@ -19,6 +19,8 @@
 	</Fader>
 	<Fader>
 		<Name>DF_GLOBE_TERRAIN</Name>
+		<!-- Globe texture is used at far zoom. Tall maps are padded with ocean
+		     in the DLL (issue #723 / Don_Drochilla 1.45 ratio) so this does not go black. -->
 		<Key>6000, 0.00</Key>
 		<Key>6400, 1.00</Key>
 	</Fader>
@@ -284,7 +286,7 @@
 		<Key>7619,26</Key>
 		<Key>9908,30</Key>
 		<Key>19799,30</Key>
-		<Key>100000,90</Key>
+		<Key>100000,30</Key>
 	</Fader>
 	<Fader>
 		<Name>GLOBE_SPOTLIGHT_XTRANS</Name>
