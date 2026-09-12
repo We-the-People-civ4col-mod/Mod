@@ -124,6 +124,10 @@ void CvTeamAI::read(CvSavegameReader reader)
 
 		case TeamAISave_WarPlan: reader.Read(m_em_eWarPlan); break;
 		case TeamAISave_WorstEnemy: reader.Read(m_eWorstEnemy); break;
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 	

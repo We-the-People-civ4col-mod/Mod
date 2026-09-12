@@ -159,6 +159,10 @@ void CvArea::read(CvSavegameReader reader)
 			case Save_END:
 				bContinue = false;
 				break;
+			default:
+				FAssertMsg(false, "Unhandled savegame enum");
+				bContinue = false;
+				break;
 
 		}
 	}

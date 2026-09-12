@@ -377,6 +377,10 @@ void CvUnit::read(CvSavegameReader reader)
 
 		case UnitSave_AllowDangerousPath: reader.Read(m_bAllowDangerousPath); break;
 		case UnitSave_AllowDirectPath: reader.Read(m_bAllowDirectPath); break;
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 

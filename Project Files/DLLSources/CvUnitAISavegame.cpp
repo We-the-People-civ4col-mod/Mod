@@ -93,6 +93,10 @@ void CvUnitAI::read(CvSavegameReader reader)
 		case UnitSaveAI_OldProfession: reader.Read(m_eOldProfession); break;
 		case UnitSaveAI_IdealProfessionCache: reader.Read(m_eIdealProfessionCache); break;
 		case UnitSaveAI_AutomatedAbortTurn: reader.Read(m_iAutomatedAbortTurn); break;
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 	
