@@ -1,0 +1,45 @@
+on:
+  push:
+    branches:
+    - develop
+jobs:
+  my_job:
+    runs-on: windows-2025
+    name: wtp
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+        with:
+          path: build
+      - name: getcompiler
+        uses: actions/checkout@v4
+        with:
+          path: Compiler
+          repository: We-the-People-civ4col-mod/Compiler
+      - name: cache
+        uses: actions/cache@v3
+        with:
+          key: wtpcache
+          path: |
+            perl
+      - name: build
+        run: |
+          $ProgressPreference = 'SilentlyContinue'
+          if (Test-Path perl) {Write-Host "perl is cached"} else { Invoke-WebRequest "https://github.com/StrawberryPerl/Perl-Dist-Strawberry/releases/download/SP_54001_64bit_UCRT/strawberry-perl-5.40.0.1-64bit-portable.zip" -OutFile perl.zip ; Expand-Archive perl.zip perl }
+          $Env:PATH += ";$(Resolve-Path -Path perl\c\bin);$(Resolve-Path -Path perl\perl\bin);$(Resolve-Path -Path perl\perl\site\bin)"
+          cd "build\Project Files"
+          $env:NO_FASTDEP = "1"
+          $env:CI = "1"
+          $env:NONINTERACTIVE = "1"
+          & "./Get Compiler.bat"
+          perl compile.pl
+          cd ..
+          git archive --format=zip --prefix=Assets/ --add-file=Assets/CvGameCoreDLL.dll --prefix= -9 head --output ../WeThePeople.zip
+      - name: release
+        uses: "marvinpinto/action-automatic-releases@v1.2.1"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          files: "WeThePeople.zip"
+          automatic_release_tag: "development"
+          prerelease: true
+          title: "development build"

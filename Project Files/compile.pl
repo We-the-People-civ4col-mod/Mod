@@ -47,8 +47,15 @@ sub menu
 	
 	print "\n";
 	print "Pick an option and press enter\n";
-	
-	my $input = <STDIN>;
+	my $input;
+	if($ENV{NONINTERACTIVE})
+	{
+		$input = "6"
+	}
+	else
+	{
+		$input = <STDIN>;
+	}
 	chomp $input;
 	
 	if ($input eq "1")
@@ -98,7 +105,16 @@ sub createBatMenu
 {
 	print "Select type of DLL file, which should be used when starting with the bat file.\n";
 	printListOfDLLs();
-	my $input = <STDIN>;
+	my $input;
+	if($ENV{NONINTERACTIVE})
+	{
+		$input = "6";
+	}
+	else
+	{
+		$input = <STDIN>;
+	};
+	
 	chomp $input;
 	
 	if ($input eq "1")
@@ -181,14 +197,16 @@ sub createBat
 	
 	close(FH);
 	
-	print "Creation of $filename complete.\n\n";
-	print "Feel free to move it to a more conventient location (like desktop).\n";
-	print "Note that it's custom made for the file paths on this specific computer.\n";
-	print "Do not except it to work on other computers. They will have to make their own bat files.\n";
-	print "\nPress enter to continue.\n";
-	
-	<STDIN>
-	
+	if(!$ENV{NONINTERACTIVE})
+	{
+		print "Creation of $filename complete.\n\n";
+		print "Feel free to move it to a more conventient location (like desktop).\n";
+		print "Note that it's custom made for the file paths on this specific computer.\n";
+		print "Do not except it to work on other computers. They will have to make their own bat files.\n";
+		print "\nPress enter to continue.\n";
+		
+		<STDIN>
+	}
 }
 
 sub help
