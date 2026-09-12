@@ -377,7 +377,6 @@ void CvGame::read(CvSavegameReader reader)
 		}
 	}
 
-		FAssertMsg(getWorldBuilderOpeningCounter() == 0, CvString::format("World Builder was opened %d times", getWorldBuilderOpeningCounter()).c_str());
 }
 
 void CvGame::write(CvSavegameWriter writer)
