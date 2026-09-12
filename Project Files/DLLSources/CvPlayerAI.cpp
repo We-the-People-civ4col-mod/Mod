@@ -9183,13 +9183,19 @@ void CvPlayerAI::AI_doEurope()
 			CvUnit* pUnit = buyEuropeUnit(eBuyUnit, 100);
 
 			FAssert(pUnit != NULL);
-			pUnit->AI_setUnitAIType(eBuyUnitAI);
-			// TAC - AI Military Buildup - koma13 - START
-			if (AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+			FAssert(eBuyUnitAI != NO_UNITAI);
+
+			if (pUnit != NULL)
 			{
-				AI_clearStrategy(STRATEGY_MILITARY_BUILDUP);
+				pUnit->AI_setUnitAIType(eBuyUnitAI);
+
+				// TAC - AI Military Buildup - koma13 - START
+				if (AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+				{
+					AI_clearStrategy(STRATEGY_MILITARY_BUILDUP);
+				}
+				// TAC - AI Military Buildup - koma13 - END
 			}
-			// TAC - AI Military Buildup - koma13 - END
 
 			AI_updateNextBuyUnit();
 		}
