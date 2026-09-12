@@ -3265,7 +3265,8 @@ void CvUnitAI::AI_attackCityMove()
 		if ((bombardRate() > 0) && noDefensiveBonus())
 		{
 			// BBAI Notes: Add this stack lead by bombard unit to stack probably not lead by a bombard unit
-			// BBAI TODO: Some sense of minimum stack size?  Can have big stack moving 10 turns to merge with tiny stacks
+			// 1. merge path is still 10 max. AI_omniGroup also caps it by relative stack size so a fat stack
+			//    does not walk 10 turns to pick up one unit.
 			if (AI_group(UNITAI_OFFENSIVE, -1, GLOBAL_DEFINE_AI_STACK_OF_DOOM_LIMIT, -1, bIgnoreFaster, true, true, /*iMaxPath*/ 10, /*bAllowRegrouping*/ true))
 			{
 				return;
@@ -10187,6 +10188,19 @@ bool CvUnitAI::AI_omniGroup(UnitAITypes eUnitAI, int iMaxGroup, int iMaxOwnUnitA
 			if (at(kLoopPlot) ||
 				generatePath(&kLoopPlot, eFlags, true, &iPathTurns, iMaxPath))
 			{
+				// 1. big offensive stacks should not walk 10 turns for one stray unit.
+				//    iMaxPath is still the ceiling. allowed path shrinks as we get bigger than them.
+				if (eUnitAI == UNITAI_OFFENSIVE && getDomainType() == DOMAIN_LAND)
+				{
+					const int iUs = getGroup()->getNumUnits();
+					const int iThem = pLoopGroup->getNumUnits();
+					const int iRelPath = 1 + (8 * iThem) / std::max(1, iUs);
+					if (iPathTurns > iRelPath)
+					{
+						continue;
+					}
+				}
+
 				int iCost = 100 * (iPathTurns * iPathTurns + 1);
 				iCost *= 4 + pLoopGroup->getCargo();
 				iCost /= 2 + pLoopGroup->getNumUnits();
