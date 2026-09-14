@@ -224,6 +224,9 @@ void CvMapGenerator::addGameElements()
 	addBonuses();
 	gDLL->logMemState("CvMapGen after add bonuses");
 
+	addImpassableMountains();
+	gDLL->logMemState("CvMapGen after add impassable mountains");
+
 	addGoodies();
 	gDLL->logMemState("CvMapGen after add goodies");
 }
@@ -753,6 +756,135 @@ void CvMapGenerator::addBonuses()
 					}
 				}
 			}
+		}
+	}
+}
+
+void CvMapGenerator::addImpassableMountains()
+{
+	PROFILE_FUNC();
+
+	const FeatureTypes eMountain1 = (FeatureTypes)GC.getInfoTypeForString("FEATURE_IMPASSABLE_MOUNTAIN1");
+	const FeatureTypes eMountain2 = (FeatureTypes)GC.getInfoTypeForString("FEATURE_IMPASSABLE_MOUNTAIN2");
+	const FeatureTypes eMountain3 = (FeatureTypes)GC.getInfoTypeForString("FEATURE_IMPASSABLE_MOUNTAIN3");
+
+	if (eMountain1 == NO_FEATURE || eMountain2 == NO_FEATURE || eMountain3 == NO_FEATURE)
+	{
+		return;
+	}
+
+	gDLL->NiTextOut("Adding Impassable Mountains...");
+
+	for (int iI = 0; iI < GC.getMap().numPlotsINLINE(); iI++)
+	{
+		CvPlot* pPlot = GC.getMap().plotByIndexINLINE(iI);
+		FAssertMsg(pPlot != NULL, "addImpassableMountains(): pPlot is null");
+
+		if (pPlot == NULL)
+		{
+			continue;
+		}
+
+		// Only place the large mountain models on peak plots.
+		if (!pPlot->isPeak())
+		{
+			continue;
+		}
+
+		// Never cover a bonus resource with a large mountain model.
+		if (pPlot->getBonusType() != NO_BONUS)
+		{
+			continue;
+		}
+
+		// Do not overwrite another feature.
+		if (pPlot->getFeatureType() != NO_FEATURE)
+		{
+			continue;
+		}
+
+		int iAdjacentPeaks = 0;
+		bool bAdjacentImpassableMountain = false;
+
+		for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
+		{
+			CvPlot* pAdjacentPlot = plotDirection(
+				pPlot->getX_INLINE(),
+				pPlot->getY_INLINE(),
+				(DirectionTypes)iDirection);
+
+			if (pAdjacentPlot == NULL)
+			{
+				continue;
+			}
+
+			if (pAdjacentPlot->isPeak())
+			{
+				iAdjacentPeaks++;
+			}
+
+			const FeatureTypes eAdjacentFeature = pAdjacentPlot->getFeatureType();
+
+			if (eAdjacentFeature == eMountain1 ||
+				eAdjacentFeature == eMountain2 ||
+				eAdjacentFeature == eMountain3)
+			{
+				bAdjacentImpassableMountain = true;
+			}
+		}
+
+		// Prevent two of the large mountain NIFs from standing directly
+		// next to each other.
+		if (bAdjacentImpassableMountain)
+		{
+			continue;
+		}
+
+		int iAppearanceChance = 0;
+
+		if (iAdjacentPeaks <= 2)
+		{
+			// Rare isolated landmark mountain.
+			iAppearanceChance = 10;
+		}
+		else if (iAdjacentPeaks <= 4)
+		{
+			iAppearanceChance = 25;
+		}
+		else if (iAdjacentPeaks <= 6)
+		{
+			iAppearanceChance = 45;
+		}
+		else
+		{
+			iAppearanceChance = 55;
+		}
+
+		if (GC.getGameINLINE().getMapRandNum(100, "Impassable Mountain Placement") >= iAppearanceChance)
+		{
+			continue;
+		}
+
+		FeatureTypes eMountainFeature;
+
+		switch (GC.getGameINLINE().getMapRandNum(3, "Impassable Mountain Variety"))
+		{
+		case 0:
+			eMountainFeature = eMountain1;
+			break;
+
+		case 1:
+			eMountainFeature = eMountain2;
+			break;
+
+		default:
+			eMountainFeature = eMountain3;
+			break;
+		}
+
+		if (pPlot->canHaveFeature(eMountainFeature))
+		{
+			pPlot->setFeatureType(eMountainFeature);
 		}
 	}
 }

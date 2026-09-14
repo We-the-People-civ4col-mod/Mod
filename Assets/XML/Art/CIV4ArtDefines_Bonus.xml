@@ -76,7 +76,7 @@
 			<Type>ART_DEF_BONUS_GOLD</Type>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Terrain/Resources/Gold/MarkerGold.nif</NIF>
+			<NIF>Art/Terrain/Resources/Gold/Gold.nif</NIF>
 			<KFM/>
 			<Button>,Art/colonization_atlas_professions_bonus.dds,1,11</Button>
 			<FontButtonIndex>23</FontButtonIndex>

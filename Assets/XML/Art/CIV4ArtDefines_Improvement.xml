@@ -245,7 +245,7 @@
 			<bExtraAnimations>0</bExtraAnimations>
 			<fScale>1.0</fScale>
 			<fInterfaceScale>1.0</fInterfaceScale>
-			<NIF>Art/Structures/Improvements/Mine2/Mine.nif</NIF>
+			<NIF>Art/Structures/Improvements/Mine/Mine2.nif</NIF>
 			<KFM>Art/Structures/Improvements/Mine/Mine.kfm</KFM>
 			<Button>,Art/colonization_atlas_buildings.dds,3,14</Button>
 		</ImprovementArtInfo>

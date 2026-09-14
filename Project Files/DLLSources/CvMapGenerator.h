@@ -35,6 +35,7 @@ public:
 	DllExport void addBonuses();
 	void addUniqueBonusType(BonusTypes eBonusType);
 	void addNonUniqueBonusType(BonusTypes eBonusType);
+	void addImpassableMountains();
 	DllExport void addGoodies();
 	void addEurope();
 

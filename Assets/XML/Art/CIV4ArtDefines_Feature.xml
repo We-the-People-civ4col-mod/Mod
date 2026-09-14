@@ -1346,24 +1346,6 @@
 			</FeatureVariety>
 		</FeatureArtInfo>
 		<FeatureArtInfo>
-			<Type>ART_DEF_FEATURE_IMPASSABLE_MOUNTAIN</Type>
-			<bAnimated>0</bAnimated>
-			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
-			<fScale>1.0</fScale>
-			<fInterfaceScale>1.0</fInterfaceScale>
-			<Button>Art/Interface/Buttons/Impassable_Mountain.dds</Button>
-			<FeatureVariety>
-				<FeatureArtPieces>
-					<FeatureArtPiece>
-						<ModelFile>Art/terrain/features/Impassable_Mountain/peak_single.nif</ModelFile>
-						<Connections/>
-					</FeatureArtPiece>
-				</FeatureArtPieces>
-				<iModelCopies>1</iModelCopies>
-				<VarietyButton>Art/Interface/Buttons/Impassable_Mountain.dds</VarietyButton>
-			</FeatureVariety>
-		</FeatureArtInfo>
-		<FeatureArtInfo>
 			<Type>ART_DEF_FEATURE_ARROW_S</Type>
 			<bAnimated>1</bAnimated>
 			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
@@ -1574,6 +1556,60 @@
 				</FeatureArtPieces>
 				<iModelCopies>6</iModelCopies>
 				<VarietyButton>Art/Interface/Buttons/Polar_Rock_Button.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_IMPASSABLE_MOUNTAIN1</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Interface/Buttons/Impassable_Mountain.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/Impassable_Mountain/peak_singlea.nif</ModelFile>
+						<Connections/>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+				<VarietyButton>Art/Interface/Buttons/Impassable_Mountain.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_IMPASSABLE_MOUNTAIN2</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Interface/Buttons/Impassable_Mountain.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/Impassable_Mountain/peak_singleb.nif</ModelFile>
+						<Connections/>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+				<VarietyButton>Art/Interface/Buttons/Impassable_Mountain.dds</VarietyButton>
+			</FeatureVariety>
+		</FeatureArtInfo>
+		<FeatureArtInfo>
+			<Type>ART_DEF_FEATURE_IMPASSABLE_MOUNTAIN3</Type>
+			<bAnimated>0</bAnimated>
+			<TileArtType>TILE_ART_TYPE_NONE</TileArtType>
+			<fScale>1.0</fScale>
+			<fInterfaceScale>1.0</fInterfaceScale>
+			<Button>Art/Interface/Buttons/Impassable_Mountain.dds</Button>
+			<FeatureVariety>
+				<FeatureArtPieces>
+					<FeatureArtPiece>
+						<ModelFile>Art/Terrain/Features/Impassable_Mountain/peak_singlec.nif</ModelFile>
+						<Connections/>
+					</FeatureArtPiece>
+				</FeatureArtPieces>
+				<iModelCopies>1</iModelCopies>
+				<VarietyButton>Art/Interface/Buttons/Impassable_Mountain.dds</VarietyButton>
 			</FeatureVariety>
 		</FeatureArtInfo>
 	</FeatureArtInfos>

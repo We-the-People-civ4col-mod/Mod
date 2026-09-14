@@ -1272,4 +1272,34 @@
 		<German>[ICON_BULLET]Erlaubt es allen Landeinheiten, einen [LINK=TERRAIN_LARGE_RIVERS]Großen Fluss[\LINK] zu überqueren.</German>
 		<Russian>[ICON_BULLET]Позволяет всем сухопутным юнитам пересекать [LINK=TERRAIN_LARGE_RIVERS]большие реки[\LINK]</Russian>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_PEAK2</Tag>
+		<English>Mountain Peak</English>
+		<German>Berggipfel</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_PEAK2_PEDIA</Tag>
+		<English>Mountain Peak</English>
+		<German>Berggipfel</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_PEAK1</Tag>
+		<English>Mountain Peak</English>
+		<German>Berggipfel</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_PEAK1_PEDIA</Tag>
+		<English>Mountain Peak</English>
+		<German>Berggipfel</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_PEAK3</Tag>
+		<English>Mountain Peak</English>
+		<German>Berggipfel</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_FEATURE_PEAK3_PEDIA</Tag>
+		<English>Mountain Peak</English>
+		<German>Berggipfel</German>
+	</TEXT>
 </Civ4GameText>

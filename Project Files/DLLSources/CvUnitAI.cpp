@@ -3772,13 +3772,13 @@ void CvUnitAI::AI_defensiveBraveMove()
 		return;
 	}
 
-	// Raiding parties use their own movement logic above and must not be
-	// split or limited by the ordinary defensive brave group cap.
+	// Raiding parties use their own movement logic above. During war, however,
+	// they are still limited by the wartime native group cap.
 	if (AI_getUnitAIState() != UNITAI_STATE_RAIDING_PARTY)
 	{
 		AI_breakOversizedNativeDefensiveGroup();
 
-		int iMaxNativeGroup = GC.getDefineINT("NATIVE_DEFENSIVE_GROUP_MAX");
+		int iMaxNativeGroup = bAtWar ? 20 : GC.getDefineINT("NATIVE_DEFENSIVE_GROUP_MAX");
 		if (iMaxNativeGroup < 1)
 		{
 			iMaxNativeGroup = 10;
@@ -3788,6 +3788,10 @@ void CvUnitAI::AI_defensiveBraveMove()
 		{
 			return;
 		}
+	}
+	else if (bAtWar)
+	{
+		AI_breakOversizedNativeDefensiveGroup();
 	}
 
 	if (AI_guardHomeColony())
@@ -6552,7 +6556,7 @@ bool CvUnitAI::AI_breakOversizedNativeDefensiveGroup()
 		return false;
 	}
 
-	int iMaxNativeGroup = GC.getDefineINT("NATIVE_DEFENSIVE_GROUP_MAX");
+	int iMaxNativeGroup = GET_TEAM(getTeam()).getAnyWarPlanCount() ? 20 : GC.getDefineINT("NATIVE_DEFENSIVE_GROUP_MAX");
 	if (iMaxNativeGroup < 1)
 	{
 		iMaxNativeGroup = 5;

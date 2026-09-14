@@ -831,6 +831,41 @@
 		</ArtRef>
 	</LNode>
 	<!-- ******************************************************************************************** -->
+	<!-- BLeaf 4x4                                                								 MINE -->
+	<!-- ******************************************************************************************** -->
+	<LNode Name="Leaf_Mine_4x4">
+		<Width>4</Width>
+		<Height>4</Height>
+		<Attribute Class="Scalar">bNotBFS:1</Attribute>
+		<Attribute Class="RegionTest">0NW</Attribute>
+		<ArtRef Name="goal:IMPROVEMENT_MINE">
+			<Attribute Class="Improvement">IMPROVEMENT_MINE</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Mine/Mine.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/Mine/Mine.kfm</Attribute>
+			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">fCenterCut:40</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+	</LNode>
+	<LNode Name="Leaf_Large_Mine_4x4">
+		<Width>4</Width>
+		<Height>4</Height>
+		<Attribute Class="Scalar">bNotBFS:1</Attribute>
+		<Attribute Class="RegionTest">0NW</Attribute>
+		<ArtRef Name="goal:IMPROVEMENT_DEEP_MINE">
+			<Attribute Class="Improvement">IMPROVEMENT_DEEP_MINE</Attribute>
+			<Attribute Class="Scalar">bIsPartOfImprovement:1</Attribute>
+			<Attribute Class="Scalar">bApplyRotation:1</Attribute>
+			<Attribute Class="Scalar">NIF:Art/Structures/Improvements/Mine/Mine2.nif</Attribute>
+			<Attribute Class="Scalar">KFM:Art/Structures/Improvements/Mine/Mine.kfm</Attribute>
+			<Attribute Class="Scalar">bCutTrees:0</Attribute>
+			<Attribute Class="Scalar">fCenterCut:40</Attribute>
+			<Scale>0.8</Scale>
+		</ArtRef>
+	</LNode>
+	<!-- ******************************************************************************************** -->
 	<!-- BLeaf 2x1                                                  Tests against roads,rivers,cities -->
 	<!-- ******************************************************************************************** -->
 	<LNode Name="BLeaf_2x1">
@@ -7652,8 +7687,32 @@
 	<!-- *************************************************************************** -->
 	<!-- *************************************************************************** -->
 	<LProduction From="PLOT_ROOT" Name="PLOT_ROOT_Base">
-		<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_ALL,!IMPROVEMENT_WATER_WORKED</Attribute>
+		<Attribute Class="Improvement">NO_IMPROVEMENT,IMPROVEMENT_ALL,!IMPROVEMENT_WATER_WORKED,!IMPROVEMENT_MINE,!IMPROVEMENT_DEEP_MINE</Attribute>
 		<To Name="Node_12x12"/>
+	</LProduction>
+	<LProduction From="PLOT_ROOT" Name="MineProd">
+		<Attribute Class="Improvement">IMPROVEMENT_MINE</Attribute>
+		<Attribute Class="Bonus">BONUS_ALL</Attribute>
+		<To Name="Node_12x12"/>
+		<To Name="Leaf_Mine_4x4"/>
+	</LProduction>
+	<LProduction From="PLOT_ROOT" Name="MineProd_NoBonus">
+		<Attribute Class="Improvement">IMPROVEMENT_MINE</Attribute>
+		<Attribute Class="Bonus">NO_BONUS</Attribute>
+		<Attribute Class="Scalar">bNotBFS:1</Attribute>
+		<To Name="Leaf_Mine_4x4"/>
+	</LProduction>
+	<LProduction From="PLOT_ROOT" Name="DeepMineProd">
+		<Attribute Class="Improvement">IMPROVEMENT_DEEP_MINE</Attribute>
+		<Attribute Class="Bonus">BONUS_ALL</Attribute>
+		<To Name="Node_12x12"/>
+		<To Name="Leaf_Large_Mine_4x4"/>
+	</LProduction>
+	<LProduction From="PLOT_ROOT" Name="DeepMineProd_NoBonus">
+		<Attribute Class="Improvement">IMPROVEMENT_DEEP_MINE</Attribute>
+		<Attribute Class="Bonus">NO_BONUS</Attribute>
+		<Attribute Class="Scalar">bNotBFS:1</Attribute>
+		<To Name="Leaf_Large_Mine_4x4"/>
 	</LProduction>
 	<!-- *************************************************************************** -->
 	<LProduction From="PLOT_ROOT" Name="WaterWorkedProd">
