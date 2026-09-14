@@ -6824,14 +6824,14 @@
 		<English>We will accept the warriors into our ranks. We can make good use of them. Give them some of our distinctive clothing as a symbol of friendship.</English>
 		<Portuguese>Aceitaremos os guerreiros em nossas fileiras. Podemos fazer bom uso deles. Dê-lhes algumas de nossas roupas distintas como símbolo de amizade.</Portuguese>
 		<German>Wir werden die Krieger in unsere Reihen aufnehmen. Wir können sie gut gebrauchen. Gebt Ihnen einige unserer Kleider als Zeichen der Freundschaft.</German>
-		<Russian>Мы примем их воинов в наши ряды. Думаю, они могут нам пригодится. Подарите индейцам что-нибудь из нашей одежды в знак дружбы.</Russian>
+		<Russian>Мы примем их в наши ряды. Думаю, они могут нам пригодится. Подарите индейцам что-нибудь из нашей одежды в знак дружбы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_1_News</Tag>
 		<English>Some warriors have joined your expedition.</English>
 		<Portuguese>Alguns guerreiros se juntaram à sua expedição.</Portuguese>
 		<German>Einige Krieger haben sich Eurer expedition angeschlossen.</German>
-		<Russian>К вашей экспедиции присоединились несколько индейских воинов.</Russian>
+		<Russian>Несколько индейцев присоединились к вашей экспедиции, организовав еще один отряд разведчиков.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_HELP_1</Tag>
