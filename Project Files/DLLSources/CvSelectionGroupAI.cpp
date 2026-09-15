@@ -211,6 +211,11 @@ bool CvSelectionGroupAI::AI_update()
 		// if we want to force the group to attack, force another attack
 		if (m_bGroupAttack)
 		{
+			if (isBusy())
+			{
+				break;
+			}
+
 			m_bGroupAttack = false;
 
 			groupAttack(CREATE_ASSERT_DATA, m_iGroupAttackX, m_iGroupAttackY, MOVE_DIRECT_ATTACK, bFailedAlreadyFighting);
