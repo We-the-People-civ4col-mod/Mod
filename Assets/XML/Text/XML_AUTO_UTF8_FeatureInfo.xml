@@ -3,7 +3,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_FOREST</Tag>
 		<English>Deciduous Forest</English>
-		
 		<Portuguese>
 			<Text>Floresta Decídua</Text>
 			<Gender>Female</Gender>
@@ -27,7 +26,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_FOREST_EVERGREEN</Tag>
 		<English>Coniferous Forest</English>
-		
 		<Portuguese>
 			<Text>Floresta de Coníferas</Text>
 			<Gender>Female</Gender>
@@ -53,7 +51,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_DENSE_FOREST</Tag>
 		<English>Dense Forest</English>
-		
 		<Portuguese>
 			<Text>Floresta Densa</Text>
 			<Gender>Female</Gender>
@@ -76,7 +73,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_FOREST_TUNDRA</Tag>
 		<English>Northern Forest</English>
-		
 		<Portuguese>
 			<Text>Floresta Boreal</Text>
 			<Gender>Female</Gender>
@@ -93,7 +89,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ANCIENT_FOREST</Tag>
 		<English>Ancient Northern Forest</English>
-		
 		<Portuguese>
 			<Text>Antiga Floresta Boreal</Text>
 			<Gender>Female</Gender>
@@ -123,7 +118,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ICE</Tag>
 		<English>Polar Ice</English>
-		
 		<Portuguese>
 			<Text>Gelo Polar</Text>
 			<Gender>Male</Gender>
@@ -157,7 +151,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_JUNGLE</Tag>
 		<English>Jungle</English>
-		
 		<Portuguese>
 			<Text>Selva</Text>
 			<Gender>Female</Gender>
@@ -195,7 +188,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_MANGROVE</Tag>
 		<English>Mangroves</English>
-		
 		<Portuguese>
 			<Text>Manguezais</Text>
 			<Gender>Female</Gender>
@@ -218,7 +210,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_TROPICAL_GROVES</Tag>
 		<English>Tropical Grove</English>
-		
 		<Portuguese>
 			<Text>Bosque Tropical</Text>
 			<Gender>Male</Gender>
@@ -241,7 +232,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_TAR_PIT</Tag>
 		<English>Tar Pit</English>
-		
 		<Portuguese>
 			<Text>Poço de Alcatrão</Text>
 			<Gender>Male</Gender>
@@ -264,7 +254,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_SALT_PAN</Tag>
 		<English>Salt Desert</English>
-		
 		<Portuguese>
 			<Text>Deserto de Sal</Text>
 			<Gender>Male</Gender>
@@ -287,7 +276,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_SALT_DRAINAGE</Tag>
 		<English>Salt Water Pools</English>
-		
 		<Portuguese>
 			<Text>Piscinas de Água Salgada</Text>
 			<Gender>Female</Gender>
@@ -310,7 +298,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_FLOOD_PLAINS</Tag>
 		<English>Fertile Flood Plains</English>
-		
 		<Portuguese>
 			<Text>Planícies Inundáveis Férteis</Text>
 			<Gender>Female</Gender>
@@ -333,7 +320,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_CRATER</Tag>
 		<English>Meteor Crater</English>
-		
 		<Portuguese>
 			<Text>Cratera do Meteoro</Text>
 			<Gender>Female</Gender>
@@ -356,7 +342,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN</Tag>
 		<English>Impassable Mountain</English>
-		
 		<Portuguese>
 			<Text>Montanha Intransponível</Text>
 			<Gender>Female</Gender>
@@ -379,7 +364,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT</Tag>
 		<English>Rock Formation (Desert)</English>
-		
 		<Portuguese>
 			<Text>Formação Rochosa (Deserto)</Text>
 			<Gender>Female</Gender>
@@ -402,7 +386,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_TEMPERATE</Tag>
 		<English>Rock Formation (Temperate)</English>
-		
 		<Portuguese>
 			<Text>Formação Rochosa (Temperada)</Text>
 			<Gender>Female</Gender>
@@ -425,7 +408,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_POLAR</Tag>
 		<English>Rock Formation (Polar)</English>
-		
 		<Portuguese>
 			<Text>Formação Rochosa (Polar)</Text>
 			<Gender>Female</Gender>
@@ -448,7 +430,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_LIGHT_FOREST</Tag>
 		<English>Light Forest</English>
-		
 		<Portuguese>
 			<Text>Floresta Clara</Text>
 			<Gender>Female</Gender>
@@ -482,7 +463,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_SWAMP</Tag>
 		<English>Swamp</English>
-		
 		<Portuguese>
 			<Text>Pântano</Text>
 			<Gender>Male</Gender>
@@ -505,7 +485,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_BOG</Tag>
 		<English>Bog</English>
-		
 		<Portuguese>
 			<Text>Turfeira</Text>
 			<Gender>Female</Gender>
@@ -528,7 +507,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_BARREL_CACTUS</Tag>
 		<English>Barrel Cactus Field</English>
-		
 		<Portuguese>
 			<Text>Campo de Cactos de Barril</Text>
 			<Gender>Male</Gender>
@@ -551,7 +529,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_CACTUS_TREES</Tag>
 		<English>Cactus Trees</English>
-		
 		<Portuguese>
 			<Text>Cactos</Text>
 			<Gender>Male</Gender>
@@ -574,7 +551,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_LICHEN</Tag>
 		<English>Lichen</English>
-		
 		<Portuguese>
 			<Text>Líquen</Text>
 			<Gender>Male</Gender>
@@ -597,7 +573,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_MOSS</Tag>
 		<English>Moss</English>
-		
 		<Portuguese>
 			<Text>Musgo</Text>
 			<Gender>Male</Gender>
@@ -620,7 +595,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_THICKET</Tag>
 		<English>Thicket</English>
-		
 		<Portuguese>
 			<Text>Arvoredo</Text>
 			<Gender>Male</Gender>
@@ -643,7 +617,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_STORM</Tag>
 		<English>Storm</English>
-		
 		<Portuguese>
 			<Text>Tempestade</Text>
 			<Gender>Female</Gender>
@@ -681,7 +654,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_SANDSTORM</Tag>
 		<English>Sandstorm</English>
-		
 		<Portuguese>
 			<Text>Tempestade de Areia</Text>
 			<Gender>Male</Gender>
@@ -704,7 +676,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_BLIZZARD</Tag>
 		<English>Blizzard</English>
-		
 		<Portuguese>
 			<Text>Nevasca</Text>
 			<Gender>Female</Gender>
@@ -726,7 +697,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_FOG</Tag>
 		<English>Fog</English>
-		
 		<Portuguese>
 			<Text>Nevoeiro</Text>
 			<Gender>Male</Gender>
@@ -749,7 +719,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_REEF</Tag>
 		<English>Coral Reef</English>
-		
 		<Portuguese>
 			<Text>Recife de Coral</Text>
 			<Gender>Male</Gender>
@@ -772,7 +741,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_STONE_REEF</Tag>
 		<English>Rock Reef</English>
-		
 		<Portuguese>
 			<Text>Recife Rochoso</Text>
 			<Gender>Male</Gender>
@@ -795,7 +763,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_PEARL_REEF</Tag>
 		<English>Pearl Reef</English>
-		
 		<Portuguese>
 			<Text>Recife de Pérolas</Text>
 			<Gender>Male</Gender>
@@ -818,7 +785,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_KELP</Tag>
 		<English>Kelp</English>
-		
 		<Portuguese>
 			<Text>Alga Marinha</Text>
 			<Gender>Female</Gender>
@@ -841,7 +807,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_SEAGRASS</Tag>
 		<English>Seagrass</English>
-		
 		<Portuguese>
 			<Text>Ervas Marinhas</Text>
 			<Gender>Female</Gender>
@@ -864,7 +829,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_N</Tag>
 		<English>Northerly Current</English>
-		
 		<Portuguese>
 			<Text>Corrente Norte</Text>
 			<Gender>Male</Gender>
@@ -887,7 +851,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_S</Tag>
 		<English>Southerly Current</English>
-		
 		<Portuguese>
 			<Text>Corrente Sul</Text>
 			<Gender>Male</Gender>
@@ -910,7 +873,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_E</Tag>
 		<English>Easterly Current</English>
-		
 		<Portuguese>
 			<Text>Corrente Leste</Text>
 			<Gender>Male</Gender>
@@ -933,7 +895,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_W</Tag>
 		<English>Westerly Current</English>
-		
 		<Portuguese>
 			<Text>Corrente Oeste</Text>
 			<Gender>Male</Gender>
@@ -956,7 +917,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_NE</Tag>
 		<English>Nor'East Current</English>
-		
 		<Portuguese>
 			<Text>Corrente Nordeste</Text>
 			<Gender>Male</Gender>
@@ -979,7 +939,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_NW</Tag>
 		<English>Nor'West Current</English>
-		
 		<Portuguese>
 			<Text>Corrente Noroeste</Text>
 			<Gender>Male</Gender>
@@ -1002,7 +961,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_SE</Tag>
 		<English>Sou'East Current</English>
-		
 		<Portuguese>
 			<Text>Corrente Sudeste</Text>
 			<Gender>Male</Gender>
@@ -1025,7 +983,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ARROW_SW</Tag>
 		<English>Sou'West Current</English>
-		
 		<Portuguese>
 			<Text>Corrente Sudoeste</Text>
 			<Gender>Male</Gender>
@@ -1048,7 +1005,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_LUSHGRASS</Tag>
 		<English>Lush Grass</English>
-		
 		<Portuguese>
 			<Text>Grama Exuberante</Text>
 			<Gender>Female</Gender>
@@ -1071,7 +1027,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_WILD_FLOWERS</Tag>
 		<English>Wild Flowers</English>
-		
 		<Portuguese>
 			<Text>Flores Selvagens</Text>
 			<Gender>Female</Gender>
@@ -1095,7 +1050,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_MEADOW</Tag>
 		<English>Hill Meadow</English>
-		
 		<Portuguese>
 			<Text>Prado da Colina</Text>
 			<Gender>Male</Gender>
@@ -1118,7 +1072,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_SHRUB</Tag>
 		<English>Shrubs</English>
-		
 		<Portuguese>
 			<Text>Arbustos</Text>
 			<Gender>Male</Gender>
@@ -1158,7 +1111,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_VENT_DEF</Tag>
 		<English>Unfavourable wind</English>
-		
 		<Portuguese>
 			<Text>Vento Desfavorável</Text>
 			<Gender>Male</Gender>
@@ -1196,7 +1148,6 @@
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_VENT_FAV</Tag>
 		<English>Favourable wind</English>
-		
 		<Portuguese>
 			<Text>Vento Favorável</Text>
 			<Gender>Male</Gender>
@@ -1276,30 +1227,36 @@
 		<Tag>TXT_KEY_FEATURE_PEAK2</Tag>
 		<English>Mountain Peak</English>
 		<German>Berggipfel</German>
+		<Russian>Горная вершина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_PEAK2_PEDIA</Tag>
 		<English>Mountain Peak</English>
 		<German>Berggipfel</German>
+		<Russian>Горная вершина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_PEAK1</Tag>
 		<English>Mountain Peak</English>
 		<German>Berggipfel</German>
+		<Russian>Горная вершина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_PEAK1_PEDIA</Tag>
 		<English>Mountain Peak</English>
 		<German>Berggipfel</German>
+		<Russian>Горная вершина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_PEAK3</Tag>
 		<English>Mountain Peak</English>
 		<German>Berggipfel</German>
+		<Russian>Горная вершина</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_PEAK3_PEDIA</Tag>
 		<English>Mountain Peak</English>
 		<German>Berggipfel</German>
+		<Russian>Горная вершина</Russian>
 	</TEXT>
 </Civ4GameText>
