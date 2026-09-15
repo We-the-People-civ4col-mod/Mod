@@ -103,9 +103,13 @@ void CvSelectionGroup::read(CvSavegameReader reader)
 				m_aTradeRoutes.insert(iRouteID);
 			}
 			break;
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
-	
+
 }
 
 void CvSelectionGroup::write(CvSavegameWriter writer)

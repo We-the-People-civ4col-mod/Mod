@@ -183,6 +183,10 @@ void CvTeam::read(CvSavegameReader reader)
 		case TeamSave_EuropeUnitsPurchased: reader.Read(m_em_iEuropeUnitsPurchased); break;
 
 		case TeamSave_RevealedBonuses: reader.Read(m_aeRevealedBonuses); break;
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 	

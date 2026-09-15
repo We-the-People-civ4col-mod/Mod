@@ -193,7 +193,10 @@ void CvCityAI::read(CvSavegameReader reader)
 			case CitySaveAi_BestBuildValue                      : reader.Read(m_em_iBestBuildValue)                              ; break;
 			case CitySaveAi_BestBuild                           : reader.Read(m_em_eBestBuild)                                   ; break; 
 
-			default: FAssert(false);
+			default:
+				FAssert(false);
+				bContinue = false;
+				break;
 		}
 	}
 	

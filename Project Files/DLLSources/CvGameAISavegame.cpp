@@ -59,6 +59,10 @@ void CvGameAI::read(CvSavegameReader reader)
 		{
 		case GameSaveAI_END: bContinue = false; break;
 		case GameSaveAI_Pad: reader.Read(m_iPad); break;
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 	
