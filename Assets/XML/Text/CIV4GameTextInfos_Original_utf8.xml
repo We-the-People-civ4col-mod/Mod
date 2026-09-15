@@ -1590,6 +1590,7 @@
 		<German>Verfügbar ab : %d1_Num</German>
 		<Italian>Disponibile a partire dal : %d1_Num</Italian>
 		<Spanish>Disponible a partir del : %d1_Num</Spanish>
+		<Russian>[COLOR_SELECTED_TEXT]Доступен с :[COLOR_REVERT] %d1_Num</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_TIMELINE_OBSOLETE_FROM</Tag>
@@ -1599,6 +1600,7 @@
 		<German>Nicht mehr verfügbar ab : %d1_Num</German>
 		<Italian>Non più disponibile presso : %d1_Num</Italian>
 		<Spanish>Ya no está disponible en : %d1_Num</Spanish>
+		<Russian>[COLOR_SELECTED_TEXT]Недоступен с :[COLOR_REVERT] %d1_Num</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PEDIA_MOVEMENT</Tag>

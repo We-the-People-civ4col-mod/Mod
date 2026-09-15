@@ -3776,63 +3776,63 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_SHIP_OF_THE_LINE</Tag>
-		<English>Ship of the Line:Ships of the Line</English>
+		<English>Ship of the Line 3rd rate:Ships of the Line 3rd rate</English>
 		<Portuguese>
 			<Text>Navio de 3ª Linha:Navios de 3ª Linha</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
-			<Text>Navire de ligne:Navires de ligne</Text>
+			<Text>Navire de ligne de 3e rang: Navires de ligne de 3e rang</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
 		<German>
-			<Text>Linienschiff:Linienschiffe</Text>
+			<Text>Linienschiff 3. Klasse:Linienschiffe 3. Klasse</Text>
 			<Gender>Neuter</Gender>
 			<Plural>0:1</Plural>
 		</German>
 		<Italian>
-			<Text>Vascello:Vascelli</Text>
+			<Text>Nave di linea di terzo rango:Navi di linea di terzo rango</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Navío de línea:Navíos de línea</Text>
+			<Text>Buque de línea de tercera clase:Buques de línea de tercera clase</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-		<Russian>Линейный корабль:Линейные корабли</Russian>
+		<Russian>Линейный корабль 3-го ранга:Линейные корабли 3-го ранга</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ROYAL_SHIP_OF_THE_LINE</Tag>
-		<English>Royal Ship of the Line:Royal Ships of the Line</English>
+		<English>Royal Ship of the Line 2nd rate:Royal Ships of the Line 2nd rate</English>
 		<Portuguese>
 			<Text>Navio Real de 2ª Linha:Navios Reais de 2ª Linha</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Portuguese>
 		<French>
-			<Text>Navire de ligne royal:Navires de ligne royaux</Text>
+			<Text>Navire de ligne royal de 2e classe:Navires de ligne royaux de 2e classe</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</French>
 		<German>
-			<Text>Königliches Linienschiff:Königliche Linienschiffe</Text>
+			<Text>Königliches Linienschiff 2. Klasse:Königliche Linienschiffe 2. Klasse</Text>
 			<Gender>Neuter</Gender>
 			<Plural>0:1</Plural>
 		</German>
 		<Italian>
-			<Text>Vascello royale:Vascelli royale</Text>
+			<Text>Nave da guerra di linea di seconda classe:Navi da guerra di linea di seconda classe</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Italian>
 		<Spanish>
-			<Text>Navío de línea royale:Navíos de línea royale</Text>
+			<Text>Buque de línea real de segunda clase:Buques de línea reales de segunda clase</Text>
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-		<Russian>Королевский линейный корабль:Королевские линейные корабли</Russian>
+		<Russian>Королевский линейный корабль 2-го ранга:Королевские линейные корабли 2-го ранга</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_ROYAL_MAN_O_WAR</Tag>
@@ -3852,7 +3852,7 @@
 			<Gender>Neuter</Gender>
 			<Plural>0:1</Plural>
 		</German>
-		<Russian>Королевский Военный корабль:Королевские Военные корабли</Russian>
+		<Russian>Королевский линейный корабль 1-го ранга:Королевские линейные корабли 1-го ранга</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_COLONIAL_MAN_O_WAR</Tag>
@@ -3872,7 +3872,7 @@
 			<Gender>Neuter</Gender>
 			<Plural>0:1</Plural>
 		</German>
-		<Russian>Военный корабль:Военные корабли</Russian>
+		<Russian>Колониальный линейный корабль 1-го ранга:Колониальные линейные корабли 1-го ранга</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_SLOOP</Tag>
@@ -4679,7 +4679,7 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-		<Russian>Королевский транспорт:Королевские транспорты</Russian>
+		<Russian>Королевский десантный корабль:Королевские десантные корабли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNITCLASS_WHALE_BLUBBER</Tag>

@@ -4447,7 +4447,7 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-		<Russian>Королевский военный корабль:Королевские военные корабли</Russian>
+		<Russian>Королевский линейный корабль 1-го ранга:Королевские линейные корабли 1-го ранга</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_COLONIAL_MAN_O_WAR</Tag>
@@ -4477,7 +4477,7 @@
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-		<Russian>Военный корабль:Военные корабли</Russian>
+		<Russian>Колониальный линейный корабль 1-го ранга:Колониальные линейные корабли 1-го ранга</Russian>
 	</TEXT>
 _ship_of
 	<TEXT>
@@ -6564,7 +6564,7 @@ _ship_of
 			<Gender>Female</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-		<Russian>Линейный корабль:Линейные корабли</Russian>
+		<Russian>Линейный корабль 3-го ранга:Линейные корабли 3-го ранга</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_SHIP_OF_THE_LINE</Tag>
@@ -6594,7 +6594,7 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-		<Russian>Королевский линейный корабль:Королевские линейные корабли</Russian>
+		<Russian>Королевский линейный корабль 2-го ранга:Королевские линейные корабли 2-го ранга</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_SHIP_OF_THE_LINE_PEDIA</Tag>
@@ -7886,7 +7886,7 @@ _ship_of
 			<Gender>Male</Gender>
 			<Plural>0:1</Plural>
 		</Spanish>
-		<Russian>Королевский транспорт:Королевские транспорты</Russian>
+		<Russian>Королевский десантный корабль:Королевские десантные корабли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_UNIT_ROYAL_TROOP_SHIP_PEDIA</Tag>
