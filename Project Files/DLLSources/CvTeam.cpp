@@ -674,7 +674,6 @@ void CvTeam::declareWarNoRevolution(TeamTypes eTeam, bool bNewDiplo, WarPlanType
 			AI_setWarPlan(eTeam, eWarPlan);
 		}
 
-		FAssert(!(AI_isSneakAttackPreparing(eTeam)));
 		if ((AI_getWarPlan(eTeam) == NO_WARPLAN) || AI_isSneakAttackPreparing(eTeam))
 		{
 			if (isHuman())

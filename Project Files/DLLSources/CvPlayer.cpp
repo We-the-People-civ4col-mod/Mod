@@ -12040,8 +12040,8 @@ bool CvPlayer::NBMOD_MaintainMinimumREFNavy(bool bDisplay)
 	const int REF_SHIPCLASS_FRIGATE = 2;
 	const int REF_SHIPCLASS_LINE = 3;
 
-	const int MIN_REF_TRANSPORTS = 3;
-	const int MIN_REF_WARSHIPS = 5;
+	const int MIN_REF_TRANSPORTS = 4;
+	const int MIN_REF_WARSHIPS = 8;
 
 	int iLandUnits = kParent.countNumDomainUnits(DOMAIN_LAND);
 	int iTransportShips = 0;
@@ -12115,7 +12115,7 @@ bool CvPlayer::NBMOD_MaintainMinimumREFNavy(bool bDisplay)
 		return NBMOD_AddBestREFShip(REF_SHIPCLASS_TRANSPORT, bDisplay);
 	}
 
-	// Then maintain at least five warships.
+	// Then maintain at least the minimum warships.
 	if (iWarShips < MIN_REF_WARSHIPS)
 	{
 		// Prefer the best available ship of the line.
@@ -16750,12 +16750,7 @@ int CvPlayer::getGrowthThreshold(int iPopulation) const
 		}
 	}								//Schmiddie, Growth Threshold Modifier ENDE
 
-	if (isNative())
-	{
-		iThreshold *= GC.getDefineINT("NATIVE_GROWTH_THRESHOLD_MULTIPLIER");
-		iThreshold /= 100;
-	}
-	else if (!isHuman())
+	if (!isNative() && !isHuman())
 	{
 		iThreshold *= GC.getHandicapInfo(GC.getGameINLINE().getHandicapType()).getAIGrowthPercent();
 		iThreshold /= 100;
@@ -16764,8 +16759,8 @@ int CvPlayer::getGrowthThreshold(int iPopulation) const
 		iThreshold /= 100;
 	}
 
-	return std::max(1, iThreshold);
-}
+		return std::max(1, iThreshold);
+	}
 
 void CvPlayer::verifyUnitStacksValid()
 {
