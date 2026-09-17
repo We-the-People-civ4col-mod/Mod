@@ -340,6 +340,10 @@ void CvGame::read(CvSavegameReader reader)
 		case GameSave_CultureVictoryCultureLevel: reader.Read(m_eCultureVictoryCultureLevel); break;
 		case GameSave_WorldBuilderUseCount: reader.Read(m_uiWorldBuilderUseCount); break;
 		case GameSave_AsyncRand: reader.Read(m_em_AsyncRand); break;
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 		
 	}
