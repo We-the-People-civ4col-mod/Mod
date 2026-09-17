@@ -354,7 +354,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=0,y=16
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -580,7 +579,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=0,y=56
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -1948,7 +1946,6 @@ BeginPlot
 	x=4,y=8
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -2438,7 +2435,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=5,y=15
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -4779,7 +4775,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=37
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_TAIGA
 	PlotType=0
 EndPlot

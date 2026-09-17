@@ -9147,8 +9147,15 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		szBuffer.append(SEPARATOR);
 		szBuffer.append(NEWLINE);
 
-		city.updateCityHappiness();
-		int iTotalCityHappiness = city.getCityHappiness();
+		int iTotalCityHappiness = city.yields().getBaseRawYieldProduced(YIELD_HAPPINESS)
+			+ iCrossesHappiness
+			+ iBellsHappiness
+			+ iHealthHappiness
+			+ iCultureHappiness
+			+ iLawHappiness
+			+ iEducationHappiness
+			+ iDomesticDemandHappiness
+			+ iTreatiesHappiness;
 		szBuffer.append(gDLL->getText("TXT_KEY_TOTAL_CITY_HAPPINESS", info.getTextKeyWide(), iTotalCityHappiness, info.getChar()));
 	}
 	else if (eYieldType == YIELD_UNHAPPINESS)
@@ -9203,8 +9210,13 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		szBuffer.append(SEPARATOR);
 		szBuffer.append(NEWLINE);
 
-		city.updateCityUnHappiness();
-		int iTotalCityUnHappiness = city.getCityUnHappiness();
+		int iTotalCityUnHappiness = city.yields().getBaseRawYieldProduced(YIELD_UNHAPPINESS)
+			+ iPopulationUnHappiness
+			+ iCrimeUnHappiness
+			+ iSlaveryUnHappiness
+			+ iWarsUnHappiness
+			+ iMissingDefenseUnHappiness
+			+ iTaxRateUnHappiness;
 		szBuffer.append(gDLL->getText("TXT_KEY_TOTAL_CITY_UNHAPPINESS", info.getTextKeyWide(), iTotalCityUnHappiness, info.getChar()));
 	}
 	// WTP, ray, Happiness - END
@@ -9230,8 +9242,9 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		szBuffer.append(SEPARATOR);
 		szBuffer.append(NEWLINE);
 
-		city.updateCityLaw();
-		int iTotalCityLaw = city.getCityLaw();
+		int iTotalCityLaw = city.calculateNetYield(YIELD_LAW)
+			+ iLawFromDefenders
+			+ iLawFromCrosses;
 		szBuffer.append(gDLL->getText("TXT_KEY_TOTAL_CITY_LAW", info.getTextKeyWide(), iTotalCityLaw, info.getChar()));
 	}
 	else if (eYieldType == YIELD_CRIME)
@@ -9267,8 +9280,11 @@ void CvGameTextMgr::setYieldHelp(CvWStringBuffer &szBuffer, CvCity& city, YieldT
 		szBuffer.append(SEPARATOR);
 		szBuffer.append(NEWLINE);
 
-		city.updateCityCrime();
-		int iTotalCityCrime = city.getCityCrime();
+		int iTotalCityCrime = city.yields().getBaseRawYieldProduced(YIELD_CRIME)
+			+ iCrimeFromPouluation
+			+ iCrimeFromUnhappiness
+			+ iCrimeFromWars;
+		iTotalCityCrime = iTotalCityCrime * (100 + iCrimBonusFactorFromOverflow) / 100;
 		szBuffer.append(gDLL->getText("TXT_KEY_TOTAL_CITY_CRIME", info.getTextKeyWide(), iTotalCityCrime, info.getChar()));
 	}
 	// WTP, ray, Crime and Law - END

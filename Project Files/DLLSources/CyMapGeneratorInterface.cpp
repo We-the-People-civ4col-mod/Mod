@@ -28,6 +28,7 @@ void CyMapGeneratorPythonInterface()
 		.def("addFeaturesOnLand", &CyMapGenerator::addFeaturesOnLand, "void ()") //WTP, ray, Randomize Features Map Option
 		.def("addFeaturesOnWater", &CyMapGenerator::addFeaturesOnWater, "void ()")
 		.def("addBonuses", &CyMapGenerator::addBonuses, "void ()")
+		.def("addImpassableMountains", &CyMapGenerator::addImpassableMountains, "void ()")
 		.def("addUniqueBonusType", &CyMapGenerator::addUniqueBonusType, "void (int /*BonusTypes*/ eBonusType)")
 		.def("addNonUniqueBonusType", &CyMapGenerator::addNonUniqueBonusType, "void (int /*BonusTypes*/ eBonusType)")
 		.def("addGoodies", &CyMapGenerator::addGoodies, "void ()")

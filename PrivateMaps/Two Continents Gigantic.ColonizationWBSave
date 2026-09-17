@@ -17574,7 +17574,6 @@ BeginPlot
 	x=13,y=101
 	isNOfRiver
 	RiverWEDirection=3
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=0
 EndPlot
@@ -26148,7 +26147,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=178
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -33158,7 +33156,6 @@ BeginPlot
 	x=25,y=9
 	isNOfRiver
 	RiverWEDirection=3
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -47449,7 +47446,6 @@ BeginPlot
 	x=35,y=131
 	isNOfRiver
 	RiverWEDirection=3
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_WETLAND
 	PlotType=0
 EndPlot
@@ -47523,7 +47519,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=35,y=143
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_WETLAND
 	PlotType=0
 EndPlot
@@ -58911,7 +58906,6 @@ BeginPlot
 	x=44,y=19
 	isNOfRiver
 	RiverWEDirection=3
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -67214,7 +67208,6 @@ BeginPlot
 	x=50,y=41
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_WETLAND
 	PlotType=0
 EndPlot
@@ -71865,7 +71858,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=148
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -76556,7 +76548,6 @@ BeginPlot
 	x=57,y=32
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -80887,7 +80878,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=60,y=78
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -82857,7 +82847,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=61,y=175
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -101625,7 +101614,6 @@ BeginPlot
 	x=75,y=168
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -110326,7 +110314,6 @@ BeginPlot
 	x=82,y=47
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -110881,7 +110868,6 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=1
 	isWOfRiver
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_WETLAND
 	PlotType=0
 EndPlot

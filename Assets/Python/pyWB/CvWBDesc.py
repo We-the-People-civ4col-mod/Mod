@@ -1466,6 +1466,9 @@ class CvWBDesc:
 				pPlot = CyMap().plotByIndex(iPlotLoop)
 				pPlot.setBonusType(BonusTypes.NO_BONUS)
 			CyMapGenerator().addBonuses()
+
+		if isWbFlagTrue(self.mapDesc.bRandomizeFeatures):
+			CyMapGenerator().addImpassableMountains()
 			
 		if isWbFlagTrue(self.mapDesc.bRandomizeGoodies):
 			CyMapGenerator().eraseGoodies()

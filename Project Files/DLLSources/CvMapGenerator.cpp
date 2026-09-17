@@ -805,9 +805,12 @@ void CvMapGenerator::addImpassableMountains()
 
 		int iAdjacentPeaks = 0;
 		bool bAdjacentImpassableMountain = false;
+		bool abAdjacentPeaks[NUM_DIRECTION_TYPES];
 
 		for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
 		{
+			abAdjacentPeaks[iDirection] = false;
+
 			CvPlot* pAdjacentPlot = plotDirection(
 				pPlot->getX_INLINE(),
 				pPlot->getY_INLINE(),
@@ -821,6 +824,7 @@ void CvMapGenerator::addImpassableMountains()
 			if (pAdjacentPlot->isPeak())
 			{
 				iAdjacentPeaks++;
+				abAdjacentPeaks[iDirection] = true;
 			}
 
 			const FeatureTypes eAdjacentFeature = pAdjacentPlot->getFeatureType();
@@ -833,23 +837,54 @@ void CvMapGenerator::addImpassableMountains()
 			}
 		}
 
-		// Prevent two of the large mountain NIFs from standing directly
-		// next to each other.
+		// Normally prevent two of the large mountain NIFs from standing
+		// directly next to each other. Rarely allow adjacent high peaks
+		// to create more irregular mountain ranges.
 		if (bAdjacentImpassableMountain)
 		{
-			continue;
+			if (GC.getGameINLINE().getMapRandNum(100, "Adjacent Impassable Mountain") >= 5)
+			{
+				continue;
+			}
+		}
+
+		bool bMountainChain = false;
+
+		// Two peak neighbours on opposite sides indicate that this plot
+		// is part of a continuous mountain chain.
+		if (iAdjacentPeaks == 2)
+		{
+			for (int iDirection = 0; iDirection < NUM_DIRECTION_TYPES; iDirection++)
+			{
+				if (abAdjacentPeaks[iDirection] &&
+					abAdjacentPeaks[(iDirection + (NUM_DIRECTION_TYPES / 2)) % NUM_DIRECTION_TYPES])
+				{
+					bMountainChain = true;
+					break;
+				}
+			}
 		}
 
 		int iAppearanceChance = 0;
 
-		if (iAdjacentPeaks <= 2)
+		if (iAdjacentPeaks == 0)
 		{
 			// Rare isolated landmark mountain.
+			iAppearanceChance = 5;
+		}
+		else if (iAdjacentPeaks == 1)
+		{
 			iAppearanceChance = 10;
+		}
+		else if (iAdjacentPeaks == 2)
+		{
+			// Peaks forming a continuous chain are more likely to receive
+			// a large summit than irregular two-peak formations.
+			iAppearanceChance = bMountainChain ? 25 : 15;
 		}
 		else if (iAdjacentPeaks <= 4)
 		{
-			iAppearanceChance = 25;
+			iAppearanceChance = 30;
 		}
 		else if (iAdjacentPeaks <= 6)
 		{

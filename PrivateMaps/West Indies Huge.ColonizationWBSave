@@ -6749,7 +6749,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot

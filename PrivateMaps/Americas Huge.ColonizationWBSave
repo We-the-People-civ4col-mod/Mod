@@ -12479,7 +12479,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=108
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -12562,7 +12561,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=122
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot

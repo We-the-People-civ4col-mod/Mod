@@ -92,6 +92,12 @@ void CyMapGenerator::addBonuses()
 		pointer(CREATE_ASSERT_DATA)->addBonuses();
 }
 
+void CyMapGenerator::addImpassableMountains()
+{
+	if (m_pMapGenerator)
+		pointer(CREATE_ASSERT_DATA)->addImpassableMountains();
+}
+
 void CyMapGenerator::addUniqueBonusType(int /*BonusTypes*/ eBonusType)
 {
 	if (m_pMapGenerator)

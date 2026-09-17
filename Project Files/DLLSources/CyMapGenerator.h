@@ -39,6 +39,7 @@ public:
 	void addFeaturesOnLand(); //WTP, ray, Randomize Features Map Option
 	void addFeaturesOnWater();
 	void addBonuses();
+	void addImpassableMountains();
 	void addUniqueBonusType(int /*BonusTypes*/ eBonusType);
 	void addNonUniqueBonusType(int /*BonusTypes*/ eBonusType);
 	void addGoodies();

@@ -36644,7 +36644,6 @@ BeginPlot
 	x=25,y=179
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_TAIGA
 	PlotType=0
 	TeamReveal=5,
@@ -48976,7 +48975,6 @@ BeginPlot
 	x=34,y=62
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 	TeamReveal=10,
@@ -96934,7 +96932,6 @@ BeginPlot
 	x=66,y=147
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 	TeamReveal=30,
@@ -119844,7 +119841,6 @@ BeginPlot
 	x=82,y=47
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 	TeamReveal=29,
@@ -140770,7 +140766,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=96,y=66
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 	TeamReveal=16,

@@ -42595,7 +42595,6 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=198
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN, FeatureVariety=0
 	TerrainType=TERRAIN_TAIGA
 	PlotType=0
 	TeamReveal=16,
