@@ -1,5 +1,876 @@
 We the People Changelog
 
+Version 4.3
+
+CHANGELOG 4.3 - ENGLISH VERSION (PLEASE FIND A GERMAN VERSION BELOW!)
+
+Since WTP 4.2.1, We The People has been further developed in numerous areas. In addition to new gameplay mechanics, major improvements have been made to naval gameplay, the handling of Natives and unfree units, the Domestic Market, AI, the event system, graphics, and the user interface.
+
+NAVAL OVERHAUL & HISTORICAL SHIP AVAILABILITY
+
+Naval gameplay has been expanded and rebalanced in several areas. One particular focus has been on making fleets evolve more noticeably over the course of a game.
+
+Historical Ship Availability
+
+Ship types now have their own historical periods during which they are available. Older ship types can become obsolete as the game progresses, while more modern ships only become available later.
+
+As a result, fleet composition changes more noticeably over the course of the game, with early ship types gradually being replaced by more modern vessels.
+
+The new availability system has also been integrated into other game systems. For example, if a ship intended as a Founding Father reward cannot reasonably be granted due to its historical availability, a suitable alternative ship can be awarded instead.
+
+Naval Control
+
+Warships and pirates can now control the surrounding sea areas. Ships moving through a sea area controlled by an enemy have to deal with additional movement costs.
+
+The range and strength of this control can differ between ship types. This gives warships an additional strategic role beyond direct naval combat: they can protect sea routes, hinder enemy movement, and control important maritime areas.
+
+Improved AI Fleet Management
+
+The AI has been significantly improved in building and managing its fleets. It now more reliably tries to maintain a sensible basic fleet of trade, transport, and warships.
+
+As the game progresses, it takes historical ship availability into account and can replace obsolete ships with more modern types. In larger fleets, ships that are severely outdated and no longer needed can also be retired.
+
+Reworked REF Fleet
+
+The Royal Expeditionary Force has also been adapted to the new ship system.
+
+The REF now makes sure that it maintains a minimum number of suitable ships for its troops. As more modern ship types become available during the game, its fleet can be updated accordingly.
+
+This means that the royal fleet also evolves over the course of a longer game instead of permanently consisting of ship types that have long since become historically obsolete.
+
+NEW SYSTEM FOR SLAVES AND OTHER UNFREE UNITS
+
+The handling of slaves and other unfree units has been significantly expanded.
+
+Unfree units can now be freed or sold to a limited extent. This gives the player additional options for dealing with this part of the population instead of having to keep them permanently in their existing status.
+
+Freeing Unfree Units
+
+Freeing a unit can change its social status. Depending on the unit, different progression steps are possible, for example:
+
+* African Slave -> Freed Slave
+* Native Slave -> Converted Native
+* Prisoner of War -> Indentured Servant
+* Indentured Servant -> Colonist
+
+Freeing units is not without consequences, however. It can cause unrest in a colony, so the player has to consider when and to what extent unfree population should be freed.
+
+The frequency and effects of this mechanic can be adjusted through the corresponding Global Defines.
+
+Selling Unfree Units
+
+Unfree units can also be sold. However, the default values have deliberately been set so that the slave trade does not automatically become a particularly profitable business model.
+
+Players who prefer a different balance for their own games can adjust the corresponding parameters through the Global Defines.xml.
+
+Improved AI Handling of Slaves
+
+The AI supports the new mechanics and has also been improved in its general handling of unfree units. It makes better use of slaves and can deal with the new options for changing their status.
+
+NATIVE IMPROVEMENTS
+
+Interaction with Native Nations has been expanded in several areas. Peaceful relations and trade, territorial conflicts, and the behavior of the Native AI have all been reworked.
+
+Territorial Conflicts & Voluntary Land Return
+
+Players now have a new tool for directly controlling their territorial influence.
+
+A dedicated map mode allows claimed territory to be deliberately released. This is particularly relevant in conflicts with Natives: disputed land can be voluntarily returned in order to reduce territorial tensions and improve relations.
+
+The new mode has its own map display. Plots can be selected directly or removed from the selection again. Important already-developed areas and other plots that need protection are taken into account accordingly.
+
+The Territorial Influence mode can also be opened directly with Ctrl+I.
+
+Under certain circumstances, the AI can also return a limited amount of land to Natives when territorial conflicts have a major impact on relations.
+
+Economic Trust Through Trade
+
+Regular trade and gifts to Native Nations can now build long-term economic trust and improve relations.
+
+This effect does not last indefinitely. If there is no corresponding economic contact for a longer period of time, the accumulated trust can gradually decline again.
+
+This gives continuous peaceful trade greater diplomatic importance.
+
+Trade Quantities with Natives
+
+When selling goods to Natives, the player can now decide how much should actually be sold.
+
+It is therefore no longer necessary to sell the entire quantity of goods being carried. This provides much better control over trade and the cargo remaining on the unit.
+
+Mestizos Through Trade Posts
+
+Trade Posts now have an additional long-term significance.
+
+Over time, a successful Trade Post in a Native Village can result in one of its inhabitants joining the European colony as a Mestizo.
+
+Long-term peaceful economic relations with Native Villages can therefore provide an additional direct benefit beyond trade and diplomacy.
+
+Larger Native Villages and Reworked Native AI
+
+Native Villages can now develop into significantly larger settlements with more inhabitants.
+
+To prevent this from simultaneously creating enormous Native armies permanently roaming the map, military behavior has also been adjusted. During peacetime, the number of units operating outside their settlements is more restricted.
+
+During war, however, Native Nations can mobilize significantly larger forces.
+
+Wars against Natives can therefore become considerably more dangerous, especially during the early and middle stages of the game. Good diplomatic relations become correspondingly more important as long as the player's colonies have not yet built up a sufficiently strong army.
+
+Further improvements include the management and defense of their settlements as well as the Native AI's handling of its units.
+
+DOMESTIC MARKET OVERHAUL
+
+The Domestic Market has been extensively reworked and rebalanced.
+
+Previously, a large part of demand resulted from many sections of the population consuming numerous different goods at the same time. The new distribution makes the domestic economy considerably more differentiated.
+
+More Individual Goods Demands
+
+Units now have reworked and more differentiated goods demands.
+
+In addition, professions can now have their own additional Demands. Consumption therefore no longer depends solely on which unit is present in a colony, but partly also on what profession that unit is working in.
+
+Certain buildings can also generate their own goods demands.
+
+For example, a particular facility can create additional demand for goods appropriate to its function.
+
+The Domestic Market therefore takes greater account of:
+
+which population groups live in a colony,
+which professions they work in,
+which facilities are present,
+and which goods actually make sense for these groups and activities.
+
+Overall demand has been rebalanced so that not almost every good is consumed indiscriminately in large quantities.
+
+As a result, different goods now have clearer roles within the colonial domestic economy.
+
+OVERSEAS MARKETS & DYNAMIC PRECIOUS METAL PRICES
+
+The price development of Silver, Gold, and Gems has been enabled/reworked across all three overseas markets.
+
+Prices can therefore change in Europe, Africa, and Port Royal.
+
+This can create temporary price differences between the markets that players can theoretically exploit for trading opportunities.
+
+However, this is not guaranteed to be a profitable business model. Selling large quantities of a valuable good on one market can cause its price to fall correspondingly quickly.
+
+Players therefore have to decide for themselves whether transport costs, available ships, current prices, and expected price developments make such a trade worthwhile.
+
+EVENTS & EXPLORATION
+
+The event system has been extensively reviewed, repaired, and expanded since WTP 4.2.1.
+
+This work was not limited to adding new events. The extensive existing collection of events was also systematically reviewed.
+
+Reworking Existing Events
+
+Numerous existing events have been fixed, improved, or rebalanced.
+
+Among other things, trigger conditions, possible choices, rewards, costs, and other effects have been reviewed.
+
+Events that were present in the game but could practically never trigger because of errors or conditions that no longer worked have been made playable again.
+
+Various problems within more complex event chains have also been fixed.
+
+New Events and Event Chains
+
+Numerous new events and event chains have also been added.
+
+These particularly expand the exploration of the New World and ensure that expeditions and journeys of discovery are accompanied by more small stories, decisions, and unexpected events.
+
+The expanded exploration content includes the Seven Cities of Cibola as well as other special discoveries and expedition events.
+
+New events involving Native Nations, Missions, colonies, trade, characters, and other areas of the game have also been added.
+
+New Challenges During Exploration
+
+Exploring the New World has become somewhat more unpredictable and challenging through new events.
+
+For example, Scouts traveling through the desert can be temporarily delayed by a lack of water. Exploring jungle areas can result in illness and fever, while in certain situations expeditions can face increased attacks by Natives.
+
+These events are not intended to permanently slow down exploration. Their frequency and effects have deliberately been limited and appropriate cooldowns have been added. They therefore introduce additional risks and challenges without turning exploration of the map into a constant punishment.
+
+This makes the decision to send a Scout far away from the player's colonies through difficult and unknown terrain somewhat more meaningful.
+
+New Events in Native Villages
+
+Native Villages now also offer additional events and possibilities.
+
+It can now be worthwhile to leave a Scout or Native Mercenary in a Native Village for several turns instead of simply visiting the village briefly and immediately moving on.
+
+Certain new events can be triggered by such a stay and lead to additional encounters and stories.
+
+This gives Native Villages another possible role in the exploration of the New World alongside trade, education, and Missions.
+
+Improved Event Reliability
+
+Several problematic special cases involving event rewards have been fixed.
+
+In particular, ships created by an event are now placed more reliably at an appropriate location. If there is no suitable colony with access to the ocean, corresponding reward ships can instead be made available in Europe.
+
+Numerous individual older events – including Whaling, Burning Mission, Gift of Native Knowledge, and others – have also been fixed or improved.
+
+EXTENSIVE AI IMPROVEMENTS
+
+In addition to the improvements specifically described for Native Nations and naval gameplay, the general AI has also been further developed in many areas.
+
+Improved Colony Management
+
+The AI now manages its colonies more purposefully.
+
+The assignment of inhabitants to workplaces and professions has been reworked. Both the abilities of the respective unit and the needs of the colony are now taken into account more strongly.
+
+Greater Importance of Food Supply
+
+The AI pays more attention to establishing an adequate food supply and assigning suitable inhabitants to food production.
+
+This is intended to prevent colonies from unnecessarily limiting their further development by maintaining an insufficient food supply.
+
+Production Chains and Raw Materials
+
+When developing its economy, the AI now pays more attention to which raw materials and intermediate goods are required for further production steps.
+
+Important basic production and available bonus resources are given greater consideration in its planning.
+
+Lumber, Stone, Clay, Ore, Coal, Tools, and other resources relevant to further development are also considered more purposefully.
+
+Buildings and Infrastructure
+
+The prioritization of various buildings has been improved.
+
+New coastal colonies in particular pay more attention to important harbor and coastal infrastructure. Buildings required for production chains or military supply are also constructed more purposefully.
+
+Military Production
+
+The AI has been improved in the production of important military goods and in establishing the infrastructure required for them.
+
+This includes in particular the production of Weapons, Cannons, and Gunpowder as well as the buildings required for them.
+
+Expansion and New Colonies
+
+The planning of new settlements has also been reworked.
+
+The AI evaluates potential colony locations in a more differentiated way, taking factors such as usable surrounding land and coastal access into account.
+
+Suitable settler units are given greater consideration during expansion, and new colonies are prepared more purposefully.
+
+GRAPHICS & MAPS
+
+In addition to the gameplay changes, the presentation of the game world has also been reworked in numerous areas.
+
+New High Mountains
+
+Three new graphical variants for high mountain formations have been added.
+
+This creates more varied and distinctive mountain ranges and makes large mountain systems appear less uniform.
+
+The new formations have been integrated into both the Map Generator and all Scenario Maps.
+
+The existing mountain graphics have also received further general improvements.
+
+Improved Plains
+
+A long-standing graphical issue affecting Plains has been fixed. The Plains graphics have also been reworked so that the terrain blends more naturally with the surrounding landscape.
+
+Visible Mines
+
+Mines are once again fully displayed on the world map.
+
+This makes the development of corresponding terrain plots clearly visible again.
+
+New 3D Buildings in Native Villages
+
+Missions and Trade Posts are now directly visible on the world map.
+
+If such a European facility is present in a Native Village, it is represented by its own 3D building within the settlement.
+
+This makes it possible to see directly on the normal map which Native Villages contain these facilities.
+
+Reworked Founding Father Graphics
+
+Numerous Founding Father graphics and portraits have received extensive quality improvements.
+
+The new artwork is of higher graphical quality and provides a much more consistent appearance for the historical personalities.
+
+New Event Graphics
+
+Various events and discoveries have also received new or reworked graphics.
+
+The expanded discovery events in particular now feature additional illustrations representing different landscapes and locations throughout the New World.
+
+COLOPEDIA, INTERFACE & QUALITY OF LIFE
+
+The Colopedia and various parts of the user interface have also been further developed.
+
+Achievement Overview in the Colopedia
+
+The existing Achievement system now has its own complete overview page in the Colopedia.
+
+There, the various Achievements and their respective requirements can be reviewed. The overview makes it easier both to find Achievements that have already been completed and to identify challenges that are still open.
+
+Expanded Colopedia
+
+Various Colopedia pages have been improved in both presentation and information content.
+
+Among other things, new goods demands and other additional information are now displayed where relevant for units, professions, or other game elements.
+
+The text presentation and structure of various entries have also been reworked.
+
+Portuguese Translation
+
+WTP now also includes a Portuguese translation, allowing the mod to be played in another language.
+
+Improved Quest Log
+
+The Quest Log now works much more reliably and remains permanently available.
+
+All active quests are listed there, allowing the log to serve as a reliable reminder of unfinished tasks.
+
+This is particularly useful for Trade Quests, whose progress can now be tracked.
+
+The text of individual Quest Log entries is not yet fully informative in every case, but the actual recording and tracking of quests now works reliably.
+
+Improved Domestic Advisor
+
+The production display in the Domestic Advisor has been expanded.
+
+Production that currently cannot continue because required goods are missing is now identified and displayed more clearly.
+
+Productions that have already been started and have invested work can also be taken into account in the overview when the city is currently producing something else.
+
+Further Interface and Quality-of-Life Improvements
+
+Numerous smaller improvements make the game easier to use and information easier to access.
+
+These include, among other things:
+
+-Ctrl+I as a direct shortcut for the new Territorial Influence mode.
+-Improved and more reliable shortcuts for accessing the different overseas markets.
+-The city screen can now be exited more conveniently with the middle mouse button.
+-Various Advisor views have been improved.
+-Information about Leaders, Civilizations, and Traits is displayed more clearly in various overviews.
+-Production and Yield tooltips have been corrected and now display actual production more reliably.
+-Various smaller display and usability issues in the user interface have been fixed.
+
+GAMEPLAY IMPROVEMENTS & BUGFIXES
+
+In addition to the larger features, numerous existing gameplay mechanics have been fixed and improved.
+
+Combat
+
+Several errors and special cases involving combat calculations and combat behavior have been fixed.
+
+This includes the calculation and display of combat odds as well as special cases where land and naval combat were not correctly separated.
+
+In particular, behavior on Large Rivers has been corrected in several situations.
+
+Events
+
+In addition to the major general reworking of the event system, numerous individual issues with specific events have been fixed.
+
+These include incorrect trigger conditions, unavailable options, problematic unit spawns, incorrect target locations, and other special cases.
+
+Units and Transport
+
+Various issues involving the loading, unloading, creation, and placement of units have been fixed.
+
+Special cases involving Hidden-Nationality units, Native units, and other special unit types have also been improved.
+
+Tooltips and Production Displays
+
+Several production displays and tooltips have been corrected.
+
+In particular, the display of the actual production generated by buildings and the inhabitants working in them has been improved, so that the displayed production values now correspond more closely to the amount of goods actually produced.
+
+Stability and General Bugfixes
+
+In addition, numerous smaller issues involving gameplay mechanics, the user interface, map interaction, events, and savegames have been fixed.
+
+Many of these changes are small individually, but together they provide a more consistent and reliable gameplay experience.
+
+
+ONE MORE NOTE
+
+As you can see, the new version includes many new and interesting features, improvements, and reworks. Nevertheless, there is still plenty of work to be done.
+
+Even though, for example, the Colopedia has been updated and expanded in many places, there are still entries that no longer fully reflect the current state of the mod. In a project of this size, not every older text can be updated alongside every gameplay change – especially when nobody happens to volunteer to do that work.
+
+We therefore encourage you to explore WTP a little more for yourselves. Try different things, explore the various game mechanics and – if you want to know exactly how something works – feel free to take a look at the mod files as well. You are welcome on our Discord Server!
+
+And not everything that seems unusual at first glance is necessarily a bug. Sometimes it is an intended mechanic, sometimes it is a feature that is not yet sufficiently documented – and sometimes, of course, it really is a bug.
+
+If you are unsure, feel free to simply ask politely first. There may be a straightforward explanation. And if it really is a bug, a clear and reproducible report naturally helps us find and fix it.
+
+A FINAL WORD
+
+WTP is and remains a purely private modding project developed by a small but dedicated team in our free time.
+
+We do this because we enjoy it, and we neither expect thanks nor want anything in return. What we do expect, however, is a certain degree of understanding that a volunteer modding team cannot be treated in the same way as a professional publisher or commercial development studio.
+
+Feedback, ideas, constructive criticism, and bug reports are explicitly welcome. A project like this thrives on them, and much of WTP would not exist without feedback from its players.
+
+Disrespectful demands or the expectation that certain things must be implemented or fixed immediately are a different matter. We will respond to such posts accordingly – or simply not at all.
+
+We are happy about everyone who plays WTP, tries it out, provides feedback, or contributes something themselves.
+
+And if you do not like the mod, that is perfectly fine as well. Then simply don't play it.
+
+Your WTP Team
+
+
+
+CHANGELOG 4.3 - GERMAN VERSION
+
+Seit WTP 4.2.1 wurde We The People in zahlreichen Bereichen weiterentwickelt. Neben neuen Gameplay-Mechaniken wurden insbesondere das maritime Spiel, 
+der Umgang mit Natives und unfreien Einheiten, der Domestic Market, die KI, das Eventsystem sowie Grafik und Benutzeroberfläche umfangreich überarbeitet.
+
+NAVAL OVERHAUL & HISTORISCHE SCHIFFSVERFÜGBARKEIT
+
+Das maritime Spiel wurde in mehreren Bereichen erweitert und neu ausbalanciert. Ein Schwerpunkt liegt dabei auf einer stärkeren Entwicklung der Flotten im Verlauf einer Partie.
+
+Historische Verfügbarkeit von Schiffen
+
+Schiffstypen besitzen nun eigene historische Zeiträume, in denen sie verfügbar sind. Ältere Schiffstypen können im Laufe der Partie veralten, während modernere Schiffe erst später verfügbar werden.
+
+Dadurch verändert sich die Zusammensetzung der Flotten im Verlauf des Spiels stärker und frühe Schiffstypen werden schrittweise durch modernere Schiffe ersetzt.
+
+Die neue Verfügbarkeit wurde auch in andere Spielsysteme integriert. Kann beispielsweise ein als Founding-Father-Belohnung vorgesehenes Schiff 
+aufgrund seiner historischen Verfügbarkeit nicht sinnvoll vergeben werden, kann stattdessen ein geeignetes alternatives Schiff gewährt werden.
+
+Naval Control
+
+Kriegsschiffe und Piraten können nun die Seegebiete in ihrer Umgebung kontrollieren. Schiffe, die sich durch ein vom Gegner kontrolliertes Seegebiet
+bewegen, müssen mit zusätzlichen Bewegungskosten rechnen.
+
+Reichweite und Stärke dieser Kontrolle können sich zwischen verschiedenen Schiffstypen unterscheiden. Damit gewinnen Kriegsschiffe neben dem direkten
+Seekampf eine zusätzliche strategische Bedeutung: Sie können Seewege schützen, gegnerische Bewegungen behindern und wichtige maritime Gebiete
+kontrollieren.
+
+Verbessertes Flottenmanagement der KI
+
+Die KI wurde beim Aufbau und bei der Verwaltung ihrer Flotten deutlich verbessert. Sie versucht zuverlässiger, eine sinnvolle Grundausstattung aus
+Handels-, Transport- und Kriegsschiffen aufzubauen.
+
+Im weiteren Spielverlauf berücksichtigt sie die historische Schiffsverfügbarkeit und kann veraltete Schiffe durch modernere Typen ersetzen. Nicht mehr
+benötigte, stark veraltete Schiffe können bei größeren Flotten außerdem ausgemustert werden.
+
+Überarbeitete REF-Flotte
+
+Auch die Royal Expeditionary Force wurde an das neue Schiffssystem angepasst.
+
+Die REF achtet nun darauf, eine Mindestanzahl geeigneter Schiffe für ihre Truppen vorzuhalten. Werden im Verlauf des Spiels modernere Schiffstypen verfügbar, kann ihre Flotte entsprechend aktualisiert werden.
+
+Damit entwickelt sich auch die königliche Flotte im Verlauf einer längeren Partie weiter und besteht nicht dauerhaft aus Schiffstypen, die historisch längst überholt sind.
+
+NEUES SYSTEM FÜR SKLAVEN UND ANDERE UNFREIE EINHEITEN
+
+Der Umgang mit Sklaven und anderen unfreien Einheiten wurde erheblich erweitert.
+
+Unfreie Einheiten können nun in begrenztem Umfang freigelassen oder verkauft werden. Damit erhält der Spieler zusätzliche Möglichkeiten, mit dieser
+Bevölkerungsgruppe umzugehen, anstatt sie dauerhaft in ihrem bisherigen Status behalten zu müssen.
+
+Freilassung unfreier Einheiten
+
+Eine Freilassung kann den gesellschaftlichen Status einer Einheit verändern. Je nach Einheit sind unterschiedliche Entwicklungsschritte möglich,
+beispielsweise:
+
+-   African Slave -> Freed Slave
+-   Native Slave -> Converted Native
+-   Prisoner of War -> Indentured Servant
+-   Indentured Servant -> Colonist
+
+Die Freilassung ist jedoch nicht ohne Folgen. Sie kann Unruhe in einer Kolonie verursachen, sodass der Spieler abwägen muss, wann und in welchem
+Umfang er unfreie Bevölkerung freilässt.
+
+Die Häufigkeit und Auswirkungen dieser Mechanik können über die entsprechenden Global Defines angepasst werden.
+
+Verkauf unfreier Einheiten
+
+Auch der Verkauf unfreier Einheiten ist möglich. Die Standardwerte wurden jedoch bewusst so gewählt, dass der Sklavenhandel nicht automatisch zu einem besonders lukrativen Geschäftsmodell wird.
+
+Wer für seine eigene Partie eine andere Balance bevorzugt, kann die entsprechenden Parameter über die Global Defines verändern.
+
+Verbesserter Umgang der KI mit Sklaven
+
+Die KI unterstützt die neuen Mechaniken und wurde zugleich beim allgemeinen Umgang mit unfreien Einheiten verbessert. Sie setzt Sklaven sinnvoller ein
+und kann mit den neuen Möglichkeiten zur Veränderung ihres Status umgehen.
+
+NATIVE IMPROVEMENTS
+
+Das Zusammenspiel mit den Native Nations wurde in mehreren Bereichen erweitert. Dabei wurden sowohl friedliche Beziehungen und Handel als auch
+territoriale Konflikte und das Verhalten der Native-KI überarbeitet.
+
+Territorial Conflicts & freiwillige Landrückgabe
+
+Spieler erhalten ein neues Werkzeug zur direkten Kontrolle ihres territorialen Einflusses.
+
+Über einen eigenen Kartenmodus können beanspruchte Gebiete gezielt wieder freigegeben werden. Dies ist insbesondere bei Konflikten mit Natives von
+Bedeutung: Umstrittenes Land kann freiwillig zurückgegeben werden, um territoriale Spannungen zu reduzieren und die Beziehungen zu verbessern.
+
+Der neue Modus besitzt eine eigene Kartendarstellung. Grundstücke können direkt ausgewählt bzw. wieder aus der Auswahl entfernt werden. Wichtige
+bereits entwickelte Gebiete und andere schützenswerte Plots werden dabei entsprechend berücksichtigt.
+
+Der Territorial-Influence-Modus kann auch direkt über Ctrl+I aufgerufen werden.
+
+Auch die KI kann unter bestimmten Umständen begrenzt Land an Natives zurückgeben, wenn sich territoriale Konflikte erheblich auf die Beziehungen auswirken.
+
+Wirtschaftliches Vertrauen durch Handel
+
+Regelmäßiger Handel und Geschenke an Native Nations können nun langfristig wirtschaftliches Vertrauen aufbauen und die Beziehungen verbessern.
+
+Dieser Effekt ist nicht unbegrenzt dauerhaft. Findet über längere Zeit kein entsprechender wirtschaftlicher Kontakt mehr statt, kann das aufgebaute Vertrauen wieder zurückgehen.
+
+Damit erhält kontinuierlicher friedlicher Handel eine stärkere diplomatische Bedeutung.
+
+Warenmengen beim Native-Handel
+
+Beim Verkauf von Waren an Natives kann der Spieler nun selbst bestimmen, welche Menge verkauft werden soll.
+
+Es muss daher nicht mehr zwangsläufig die gesamte mitgeführte Warenmenge verkauft werden. Dies ermöglicht eine wesentlich bessere Kontrolle über Handel und verbleibende Ladung.
+
+Mestizos durch Handelsposten
+
+Handelsposten erhalten eine zusätzliche langfristige Bedeutung.
+
+Ein erfolgreicher Handelsposten in einem Native-Dorf kann mit der Zeit dazu führen, dass ein Bewohner als Mestizo zur europäischen Kolonie übertritt.
+
+Damit können langfristige friedliche Wirtschaftsbeziehungen mit Native-Dörfern neben Handel und Diplomatie einen weiteren direkten Vorteil bringen.
+
+Größere Native-Dörfer und überarbeitete Native-KI
+
+Native-Dörfer können sich nun zu deutlich größeren Siedlungen mit mehr Einwohnern entwickeln.
+
+Damit dies nicht gleichzeitig zu riesigen permanent auf der Karte umherziehenden Native-Armeen führt, wurde auch das militärische Verhalten angepasst.
+In Friedenszeiten ist die Zahl der außerhalb ihrer Siedlungen operierenden Einheiten stärker begrenzt.
+
+Im Kriegsfall können Native Nations dagegen wesentlich größere Kräfte mobilisieren.
+
+Kriege gegen Natives können dadurch insbesondere in früheren und mittleren Spielphasen deutlich gefährlicher werden. Gute diplomatische Beziehungen
+erhalten entsprechend größere Bedeutung, solange die eigenen Kolonien noch keine ausreichend starke Armee aufgebaut haben.
+
+Weitere Verbesserungen betreffen unter anderem die Verwaltung und Verteidigung ihrer Siedlungen sowie den Umgang der Native-KI mit ihren Einheiten.
+
+DOMESTIC MARKET OVERHAUL
+
+Der Domestic Market wurde umfassend überarbeitet und neu ausbalanciert.
+
+Bisher entstand ein großer Teil der Nachfrage dadurch, dass viele Bevölkerungsteile gleichzeitig zahlreiche unterschiedliche Waren konsumierten. Die neue Verteilung gestaltet den Binnenmarkt wesentlich differenzierter.
+
+Individuellere Warenbedürfnisse
+
+Einheiten besitzen überarbeitete und stärker differenzierte Warenbedürfnisse.
+
+Zusätzlich können nun auch Berufe eigene zusätzliche Demands besitzen. Dadurch hängt der Konsum nicht mehr ausschließlich davon ab, welche Einheit
+sich in einer Kolonie befindet, sondern teilweise auch davon, welche Tätigkeit diese Einheit ausübt.
+
+Auch bestimmte Gebäude können eigene Warenbedürfnisse erzeugen.
+
+Damit kann beispielsweise eine bestimmte Einrichtung zusätzliche Nachfrage nach Waren erzeugen, die zu ihrer Funktion passen.
+
+Der Domestic Market berücksichtigt dadurch stärker:
+
+-   welche Bevölkerungsgruppen in einer Kolonie leben,
+-   welchen Berufen sie nachgehen,
+-   welche Einrichtungen vorhanden sind,
+-   und welche Waren für diese Gruppen und Tätigkeiten tatsächlich
+    sinnvoll sind.
+
+Die Nachfrage wurde insgesamt neu ausbalanciert, sodass nicht mehr nahezu jede Ware pauschal in großen Mengen konsumiert wird.
+
+Dadurch erhalten unterschiedliche Waren klarere Rollen innerhalb der kolonialen Binnenwirtschaft.
+
+ÜBERSEEMÄRKTE & DYNAMISCHE EDELMETALLPREISE
+
+Die Preisentwicklung von Silber, Gold und Edelsteinen wurde auf den drei Überseemärkten aktiviert/überarbeitet.
+
+Die Preise können sich damit in Europa, Afrika und Port Royal verändern.
+
+Dadurch können zeitweise Preisunterschiede zwischen den Märkten entstehen, die der Spieler theoretisch für Handelsgeschäfte nutzen kann.
+
+Dies ist jedoch kein garantiert profitables Geschäftsmodell. Werden große Mengen eines wertvollen Gutes auf einem Markt verkauft, kann dessen Preis
+entsprechend schnell fallen.
+
+Der Spieler muss daher selbst entscheiden, ob Transportkosten, verfügbare Schiffe, aktuelle Preise und erwartete Preisentwicklung ein solches Geschäft
+attraktiv machen.
+
+EVENTS & EXPLORATION
+
+Das Eventsystem wurde seit WTP 4.2.1 umfassend überprüft, repariert und erweitert.
+
+Dabei ging es nicht nur darum, neue Ereignisse hinzuzufügen. Auch der umfangreiche bereits vorhandene Eventbestand wurde systematisch durchgesehen.
+
+Überarbeitung bestehender Events
+
+Zahlreiche vorhandene Ereignisse wurden korrigiert, verbessert oder neu ausbalanciert.
+
+Dabei wurden unter anderem Triggerbedingungen, mögliche Entscheidungen, Belohnungen, Kosten und andere Auswirkungen überprüft.
+
+Ereignisse, die zwar im Spiel vorhanden waren, aber aufgrund von Fehlern oder nicht mehr funktionierenden Bedingungen praktisch nicht ausgelöst werden konnten, wurden wieder spielbar gemacht.
+
+Auch verschiedene Probleme innerhalb komplexerer Eventketten wurden behoben.
+
+Neue Events und Eventketten
+
+Zusätzlich wurden zahlreiche neue Ereignisse und Ereignisketten hinzugefügt.
+
+Diese erweitern insbesondere die Erkundung der Neuen Welt und sorgen dafür, dass Expeditionen und Entdeckungsreisen stärker von kleinen Geschichten,
+Entscheidungen und überraschenden Ereignissen begleitet werden.
+
+Zu den erweiterten Entdeckungsinhalten gehören unter anderem die Seven Cities of Cibola und weitere besondere Entdeckungen und Expeditionsereignisse.
+
+Daneben wurden neue Ereignisse rund um Native Nations, Missionen, Kolonien, Handel, Persönlichkeiten und andere Bereiche des Spiels ergänzt.
+
+Neue Herausforderungen bei der Erkundung
+
+Die Erforschung der Neuen Welt ist durch neue Events etwas unberechenbarer und herausfordernder geworden.
+
+Scouts können beispielsweise bei Expeditionen durch die Wüste aufgrund von Wassermangel vorübergehend aufgehalten werden. Die Erforschung von
+Dschungelgebieten kann Krankheiten und Fieber mit sich bringen, und in bestimmten Situationen können Expeditionen mit verstärkten Angriffen durch Ureinwohner konfrontiert werden.
+
+Diese Ereignisse sollen die Erkundung nicht dauerhaft ausbremsen. Häufigkeit und Auswirkungen wurden bewusst begrenzt und mit entsprechenden Cooldowns
+versehen. Sie stellen daher zusätzliche Risiken und Herausforderungen dar, ohne die Erforschung der Karte zu einer permanenten Bestrafung werden zu lassen.
+
+Damit ist die Entscheidung, einen Scout weit entfernt von den eigenen Kolonien durch schwieriges und unbekanntes Gelände zu schicken, etwas
+bedeutungsvoller geworden.
+
+Neue Ereignisse in Native-Dörfern
+
+Auch Native-Dörfer besitzen zusätzliche Ereignisse und Möglichkeiten.
+
+Es kann sich nun lohnen, einen Scout oder einen Native Mercenary für einige Runden in einem Native-Dorf verweilen zu lassen, anstatt ein Dorf lediglich kurz zu besuchen und unmittelbar weiterzuziehen.
+
+Bestimmte neue Events können an einen solchen Aufenthalt anknüpfen und zusätzliche Begegnungen und Geschichten auslösen.
+
+Native-Dörfer erhalten dadurch neben Handel, Ausbildung und Missionen eine weitere mögliche Bedeutung für die Erkundung der Neuen Welt.
+
+Verbesserte Event-Sicherheit
+
+Mehrere problematische Sonderfälle bei Eventbelohnungen wurden behoben.
+
+Insbesondere Schiffe, die durch ein Event erzeugt werden, werden zuverlässiger an einem geeigneten Ort platziert. Ist keine geeignete Kolonie mit
+Zugang zum Ozean vorhanden, können entsprechende Belohnungsschiffe stattdessen in Europa bereitgestellt werden.
+
+Auch zahlreiche einzelne ältere Events – darunter unter anderem Whaling, Burning Mission, Gift of Native Knowledge und weitere Ereignisse – wurden korrigiert oder verbessert.
+
+UMFANGREICHE AI IMPROVEMENTS
+
+Neben den speziell beschriebenen Verbesserungen für Native Nations und das maritime Spiel wurde auch die allgemeine KI in vielen Bereichen weiterentwickelt.
+
+Verbesserte Kolonieverwaltung
+
+Die KI verwaltet ihre Kolonien zielgerichteter.
+
+Die Zuweisung von Einwohnern zu Arbeitsplätzen und Berufen wurde überarbeitet. Dabei werden sowohl die Fähigkeiten der jeweiligen Einheit als auch die Bedürfnisse der Kolonie stärker berücksichtigt.
+
+Größere Bedeutung der Nahrungsversorgung
+
+Die KI achtet stärker darauf, eine ausreichende Nahrungsversorgung aufzubauen und geeignete Einwohner für die Nahrungsproduktion einzusetzen.
+
+Dadurch soll verhindert werden, dass Kolonien ihre weitere Entwicklung unnötig durch eine zu knapp kalkulierte Lebensmittelversorgung behindern.
+
+Produktionsketten und Rohstoffe
+
+Bei der Entwicklung ihrer Wirtschaft berücksichtigt die KI stärker, welche Rohstoffe und Zwischenprodukte für weitere Produktionsschritte benötigt werden.
+
+Wichtige Grundproduktionen und vorhandene Bonusressourcen werden stärker in die Planung einbezogen.
+
+Auch Holz, Stein, Lehm, Erz, Kohle, Werkzeuge und andere für den weiteren Aufbau relevante Ressourcen werden gezielter berücksichtigt.
+
+Gebäude und Infrastruktur
+
+Die Priorisierung verschiedener Gebäude wurde verbessert.
+
+Insbesondere neue Küstenkolonien achten stärker auf wichtige Hafen- und Küsteninfrastruktur. Auch Gebäude, die für Produktionsketten oder die
+militärische Versorgung benötigt werden, werden zielgerichteter errichtet.
+
+Militärische Produktion
+
+Die KI wurde bei der Herstellung wichtiger militärischer Waren und beim Aufbau der dafür benötigten Infrastruktur verbessert.
+
+Dazu gehören insbesondere die Produktion von Waffen, Kanonen und Schießpulver sowie die dafür benötigten Gebäude.
+
+Expansion und neue Kolonien
+
+Auch die Planung neuer Siedlungen wurde überarbeitet.
+
+Die KI bewertet mögliche Koloniestandorte differenzierter und berücksichtigt dabei unter anderem nutzbares Umland und Küstenzugang.
+
+Geeignete Siedlereinheiten werden bei der Expansion stärker berücksichtigt und neue Kolonien zielgerichteter vorbereitet.
+
+GRAFIK & MAPS
+
+Neben den Gameplay-Änderungen wurde auch die Darstellung der Spielwelt in zahlreichen Bereichen überarbeitet.
+
+Neue Hochgebirge
+
+Für hohe Gebirgsformationen wurden drei neue grafische Varianten eingebaut.
+
+Dadurch entstehen abwechslungsreichere und markantere Gebirgszüge und große Gebirgssysteme wirken weniger gleichförmig.
+
+Die neuen Formationen wurden sowohl in den Map Generator als auch in alle Scenario Maps integriert.
+
+Zusätzlich wurden die bestehenden Gebirgsgrafiken allgemein weiter verbessert.
+
+Verbesserte Plains
+
+Ein bereits länger bestehendes Darstellungsproblem der Plains wurde behoben. Die Plains-Grafik wurde dabei ebenfalls überarbeitet, sodass sich das Terrain besser und natürlicher in die übrige Landschaft einfügt.
+
+Sichtbare Minen
+
+Minen werden wieder vollständig auf der Weltkarte dargestellt.
+
+Damit ist die Entwicklung entsprechender Geländeplots auch optisch wieder deutlich erkennbar.
+
+Neue 3D-Gebäude in Native-Dörfern
+
+Missionen und Handelsposten sind nun direkt auf der Weltkarte sichtbar.
+
+Befindet sich eine solche europäische Einrichtung in einem Native-Dorf, wird sie durch ein eigenes 3D-Gebäude innerhalb der Siedlung dargestellt.
+
+Dadurch lässt sich bereits auf der normalen Karte erkennen, in welchen Native-Dörfern entsprechende Einrichtungen vorhanden sind.
+
+Überarbeitete Founding-Father-Grafiken
+
+Zahlreiche Grafiken und Porträts der Founding Fathers wurden umfangreich qualitativ überarbeitet.
+
+Die neuen Darstellungen besitzen eine höhere grafische Qualität und sorgen für ein wesentlich konsistenteres Erscheinungsbild der historischen Persönlichkeiten.
+
+Neue Eventgrafiken
+
+Auch verschiedene Ereignisse und Entdeckungen erhielten neue oder überarbeitete Grafiken.
+
+Insbesondere die erweiterten Entdeckungsereignisse verfügen über zusätzliche Illustrationen, die unterschiedliche Landschaften und Fundorte der Neuen Welt darstellen.
+
+COLOPEDIA, INTERFACE & QUALITY OF LIFE
+
+Auch die Colopedia und verschiedene Teile der Benutzeroberfläche wurden weiterentwickelt.
+
+Achievement-Übersicht in der Colopedia
+
+Das bereits vorhandene Achievement-System besitzt nun eine vollständige eigene Übersichtsseite in der Colopedia.
+
+Dort können die verschiedenen Achievements sowie ihre jeweiligen Voraussetzungen nachgelesen werden. Die Übersicht erleichtert damit sowohl das
+Auffinden bereits erreichter Erfolge als auch die Suche nach noch offenen Herausforderungen.
+
+Erweiterte Colopedia
+
+Verschiedene Colopedia-Seiten wurden in Darstellung und Informationsgehalt verbessert.
+
+Unter anderem werden neue Warenbedürfnisse und andere zusätzliche Informationen dort angezeigt, wo sie für Einheiten, Berufe oder andere Spielelemente relevant sind.
+
+Auch die Textdarstellung und Struktur verschiedener Einträge wurde überarbeitet.
+
+Portugiesische Übersetzung
+
+WTP verfügt nun auch über eine portugiesische Übersetzung, wodurch die Mod in einer weiteren Sprache gespielt werden kann.
+
+Verbessertes Quest-Log
+
+Das Quest-Log arbeitet nun wesentlich zuverlässiger und bleibt dauerhaft erhalten.
+
+Alle aktiven Quests werden dort aufgeführt, sodass das Log als verlässliche Erinnerung an noch offene Aufgaben genutzt werden kann.
+
+Besonders hilfreich ist dies bei Handelsquests, deren Fortschritt nun nachvollzogen werden kann.
+
+Die Texte einzelner Quest-Einträge sind noch nicht in jedem Fall vollständig aussagekräftig, die eigentliche Erfassung und Nachverfolgung der Quests funktioniert jedoch zuverlässig.
+
+Verbesserter Domestic Advisor
+
+Die Produktionsdarstellung im Domestic Advisor wurde erweitert.
+
+Produktionen, die aufgrund fehlender benötigter Waren momentan nicht fortgesetzt werden können, werden besser erkannt und dargestellt.
+
+Auch bereits begonnene Produktionen mit investierter Arbeit können in der Übersicht berücksichtigt werden, wenn die Stadt momentan etwas anderes produziert.
+
+Weitere Interface- und Quality-of-Life-Verbesserungen
+
+Zahlreiche kleinere Verbesserungen erleichtern die Bedienung und Informationsbeschaffung.
+
+Dazu gehören unter anderem:
+
+-   Ctrl+I als direkter Shortcut für den neuen Territorial-Influence-Modus.
+-   Verbesserte und zuverlässigere Shortcuts für den Zugriff auf die verschiedenen Überseemärkte.
+-   Der Stadtbildschirm kann komfortabler per Mittelklick verlassen werden.
+-   Verschiedene Advisor-Ansichten wurden verbessert.
+-   Informationen zu Leadern, Civilizations und Traits werden in verschiedenen Übersichten besser dargestellt.
+-   Produktions- und Yield-Tooltips wurden korrigiert und zeigen die tatsächliche Produktion zuverlässiger an.
+-   Verschiedene kleinere Darstellungs- und Bedienungsprobleme der Benutzeroberfläche wurden behoben.
+
+GAMEPLAY IMPROVEMENTS & BUGFIXES
+
+Neben den größeren Features wurden zahlreiche bestehende Spielmechaniken korrigiert und verbessert.
+
+Kampf
+
+Mehrere Fehler und Sonderfälle bei der Kampfberechnung und beim Kampfverhalten wurden behoben.
+
+Dies betrifft unter anderem die Berechnung und Darstellung von Kampfchancen sowie Sonderfälle, bei denen Land- und Seekampf nicht korrekt voneinander getrennt wurden.
+
+Insbesondere das Verhalten auf Large Rivers wurde in einigen Situationen korrigiert.
+
+Events
+
+Neben der großen allgemeinen Überarbeitung des Eventsystems wurden zahlreiche individuelle Fehler bei einzelnen Events behoben.
+
+Dazu gehören unter anderem fehlerhafte Triggerbedingungen, nicht verfügbare Optionen, problematische Einheitenspawns, falsche Zielorte und andere Sonderfälle.
+
+Einheiten und Transport
+
+Verschiedene Probleme beim Laden, Entladen, Erzeugen und Platzieren von Einheiten wurden korrigiert.
+
+Auch Sonderfälle mit Hidden-Nationality-Einheiten, Native-Einheiten und anderen besonderen Einheitentypen wurden verbessert.
+
+Tooltips und Produktionsanzeigen
+
+Mehrere Produktionsanzeigen und Tooltips wurden korrigiert.
+
+Insbesondere die Darstellung der tatsächlichen Produktion von Gebäuden und dort arbeitenden Einwohnern wurde verbessert, sodass angezeigte Produktionswerte besser mit der tatsächlich erzeugten Warenmenge übereinstimmen.
+
+Stabilität und allgemeine Fehlerkorrekturen
+
+Darüber hinaus wurden zahlreiche kleinere Fehler in Spielmechaniken, Benutzeroberfläche, Karteninteraktion, Events und Savegames korrigiert.
+
+Viele dieser Änderungen sind einzeln klein, sorgen zusammengenommen jedoch für ein konsistenteres und zuverlässigeres Spielerlebnis.
+
+NOCH EIN HINWEIS
+
+Wie ihr seht, beinhaltet die neue Version viele neue und interessante Features, Verbesserungen und Überarbeitungen. Trotzdem gibt es noch viel zu tun.
+
+Auch wenn beispielsweise die Colopedia an vielen Stellen aktualisiert und erweitert wurde, finden sich dort immer noch Einträge, die nicht mehr
+vollständig dem aktuellen Stand der Mod entsprechen. Bei einem so umfangreichen Projekt lässt sich nicht jeder ältere Text gleichzeitig mit jeder
+Gameplay-Änderung aktualisieren – insbesondere dann nicht, wenn sich gerade niemand findet, der diese Arbeit übernehmen möchte.
+
+Daher möchten wir euch auch dazu ermutigen, WTP ein wenig selbst zu erkunden. Probiert verschiedene Dinge aus, schaut euch die unterschiedlichen
+Spielmechaniken an und – wenn ihr etwas genauer wissen möchtet – werft ruhig auch einmal einen Blick in die Dateien der Mod.
+
+Und nicht alles, was auf den ersten Blick ungewöhnlich erscheint, ist zwangsläufig ein Bug. Manchmal ist es eine beabsichtigte Mechanik, manchmal ein
+noch nicht ausreichend dokumentiertes Feature – und manchmal ist es natürlich tatsächlich ein Fehler.
+
+Wenn ihr euch unsicher seid, fragt daher gerne erst einmal höflich nach. Vielleicht gibt es eine einfache Erklärung. Und wenn es tatsächlich ein Bug
+ist, hilft uns ein nachvollziehbarer Hinweis natürlich dabei, ihn zu finden und zu beheben.
+
+EIN WORT ZUM SCHLUSS
+
+WTP ist und bleibt ein rein privates Modding-Projekt, das von einem kleinen, aber engagierten Team in seiner Freizeit entwickelt wird.
+
+Wir machen das, weil es uns Spaß macht, und erwarten dafür weder Dank noch wollen wir irgendeine Gegenleistung. Was wir allerdings erwarten, ist ein gewisses
+Verständnis dafür, dass an ein freiwilliges Modding-Team nicht dieselben Forderungen gestellt werden können wie an einen professionellen Publisher oder ein kommerzielles Entwicklerstudio.
+
+Feedback, Ideen, sachliche Kritik und Bugmeldungen sind ausdrücklich willkommen. Davon lebt ein solches Projekt und vieles in WTP wäre ohne die Rückmeldungen seiner Spieler nicht entstanden.
+
+Respektlose Forderungen oder der Anspruch, bestimmte Dinge müssten von uns umgesetzt oder sofort behoben werden, sind dagegen etwas anderes. Auf solche Beiträge reagieren wir entsprechend – oder eben auch gar nicht.
+
+Wir freuen uns über jeden, der WTP spielt, ausprobiert, Feedback gibt oder selbst etwas dazu beiträgt.
+
+Und wenn euch die Mod nicht gefällt, ist das natürlich auch völlig in Ordnung.
+
+Dann spielt sie einfach nicht.
+
+
+Euer WTP-Team
+
+=======================================
+
 Version 4.2.1
 
 Fixes:
