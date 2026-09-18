@@ -1825,7 +1825,7 @@ void CvUnitAI::AI_workerMove()
 		}
 	}
 
-	AI_setUnitAIType(UNITAI_COLONIST);
+	getGroup()->pushMission(MISSION_SKIP);
 	return;
 }
 
@@ -15507,7 +15507,7 @@ bool CvUnitAI::AI_joinCity(int iMaxPath)
 				// TAC - AI Economy- koma13 - END
 				if (iSizeGap > 0)
 				{
-					int iModifier = iSizeGap * (eOptimalProfession == NO_PROFESSION) ? 20 : 5;
+					int iModifier = iSizeGap * ((eOptimalProfession == NO_PROFESSION) ? 20 : 5);
 					iModifier += (pCity->getPopulation() + iIncoming == 1) ? 100 : 25;
 					iValue *= 100 + iModifier;
 					iValue /= 100;
@@ -18835,7 +18835,6 @@ bool CvUnitAI::AI_nativeRaidTreasureUnit()
 				if (!pAdjacentPlot->isCity())
 				{
 					int iTreasureCount = 0;
-					int iDefenderCount = 0;
 
 					CvUnit* pTreasureUnit = NULL;
 					CLLNode<IDInfo>* pUnitNode = pAdjacentPlot->headUnitNode();
@@ -18850,10 +18849,6 @@ bool CvUnitAI::AI_nativeRaidTreasureUnit()
 							{
 								iTreasureCount++;
 								pTreasureUnit = pLoopUnit;
-							}
-							else
-							{
-								iDefenderCount++;
 							}
 						}
 					}
@@ -18882,19 +18877,16 @@ bool CvUnitAI::AI_nativeRaidTreasureUnit()
 						}
 						// R&R, ray, improvement to raiding treasures - END
 
-						if (iDefenderCount == 0)
+						int iValue = pTreasureUnit->getYieldStored();
+						if (iValue > 0)
 						{
-							int iValue = pTreasureUnit->getYieldStored();
-							if (iValue > 0)
+							if (iValue > iBestValue)
 							{
-								if (iValue > iBestValue)
+								if (generatePath(pAdjacentPlot, 0, true))
 								{
-									if (generatePath(pAdjacentPlot, 0, true))
-									{
-										iBestValue = iValue;
-										pBestPlot = getPathEndTurnPlot();
-										FAssert(!atPlot(pBestPlot));
-									}
+									iBestValue = iValue;
+									pBestPlot = getPathEndTurnPlot();
+									FAssert(!atPlot(pBestPlot));
 								}
 							}
 						}

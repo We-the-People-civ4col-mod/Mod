@@ -2051,7 +2051,7 @@ def canTriggerDiscoveryAttacked(argsList):
 
 	iChance = _getDiscoveryAttackedChance(player, plot)
 
-	if kTriggeredData.getRandomNumberForIndex(0) >= iChance * 10:
+	if CyGame().getSorenRandNum(100, "Discovery Attacked trigger") >= iChance:
 		return False
 
 	return True
