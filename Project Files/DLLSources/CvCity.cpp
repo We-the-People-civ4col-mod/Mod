@@ -609,6 +609,11 @@ void CvCity::doTurn()
 		changeCultureUpdateTimer(-1);
 	}
 
+	if (getForeignBuildingBurnTimer() > 0)
+	{
+		changeForeignBuildingBurnTimer(-1);
+	}
+
 	if (getOccupationTimer() > 0)
 	{
 		changeOccupationTimer(-1);
@@ -620,6 +625,35 @@ void CvCity::doTurn()
 		}
 		// WTP, ray, Change for Request "Occupation has ended" - START
 	}
+
+	// WTP, Slave Emancipation - START
+	if (m_iSlaveEmancipationPendingUnrest > 0)
+	{
+		changeOccupationTimer(m_iSlaveEmancipationPendingUnrest);
+
+		// Inform the player and use the same sound as regular city unrest.
+		CvWString szBuffer = gDLL->getText(
+			"TXT_KEY_SLAVE_EMANCIPATION_UNREST",
+			getNameKey()
+		);
+
+		gDLL->UI().addPlayerMessage(
+			getOwnerINLINE(),
+			false,
+			GC.getEVENT_MESSAGE_TIME(),
+			szBuffer,
+			coord(),
+			"AS2D_CITYCAPTURED",
+			MESSAGE_TYPE_MAJOR_EVENT,
+			ARTFILEMGR.getInterfaceArtInfo("WORLDBUILDER_CITY_EDIT")->getPath(),
+			COLOR_RED,
+			true,
+			true
+		);
+
+		m_iSlaveEmancipationPendingUnrest = 0;
+	}
+	// WTP, Slave Emancipation - END
 
 	for (uint i = 0; i < m_aPopulationUnits.size(); ++i)
 	{
@@ -950,6 +984,78 @@ void CvCity::doTask(TaskTypes eTask, int iData1, int iData2, bool bOption, bool 
 			}
 		}
 		break;
+
+	// WTP, Slave Emancipation - START
+	case TASK_GRANT_FREEDOM:
+		{
+			CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).getUnit(iData1);
+
+			if (pUnit == NULL)
+			{
+				pUnit = getPopulationUnitById(iData1);
+			}
+
+			if (pUnit != NULL && pUnit->canGrantFreedom())
+			{
+				const UnitClassTypes eUnitClass =
+					pUnit->getUnitInfo().getUnitClassType();
+
+				const UnitClassTypes eIndenturedServantClass =
+					(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_INDENTURED_SERVANT");
+
+				const UnitClassTypes eColonistClass =
+					(UnitClassTypes)GC.getInfoTypeForString("UNITCLASS_COLONIST");
+
+				UnitClassTypes eFreedUnitClass = NO_UNITCLASS;
+
+				if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE)
+				{
+					eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_FREED_SLAVE;
+				}
+				else if (eUnitClass == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE)
+				{
+					eFreedUnitClass = GLOBAL_DEFINE_UNITCLASS_CONVERTED_NATIVE;
+				}
+				else if (eUnitClass == UNITCLASS_PRISONER_OF_WAR)
+				{
+					eFreedUnitClass = eIndenturedServantClass;
+				}
+				else if (eUnitClass == eIndenturedServantClass)
+				{
+					eFreedUnitClass = eColonistClass;
+				}
+
+				const UnitTypes eFreedUnit =
+					GET_PLAYER(getOwnerINLINE()).getUnitType(eFreedUnitClass);
+
+				if (eFreedUnit != NO_UNIT)
+				{
+					pUnit->grantFreedom();
+
+					CvWString szBuffer =
+						gDLL->getText(
+							"TXT_KEY_LBD_FREE_IN_CITY",
+							getNameKey()
+						);
+
+					gDLL->UI().addPlayerMessage(
+						getOwnerINLINE(),
+						false,
+						GC.getEVENT_MESSAGE_TIME(),
+						szBuffer,
+						coord(),
+						"AS2D_DEAL_CANCELLED",
+						MESSAGE_TYPE_MINOR_EVENT,
+						GET_PLAYER(getOwnerINLINE()).getUnitButton(eFreedUnit),
+						COLOR_WHITE,
+						true,
+						true
+					);
+				}
+			}
+		}
+		break;
+	// WTP, Slave Emancipation - END
 
 	case TASK_EDUCATE:
 		educateStudent(iData1, (UnitTypes) iData2);
@@ -3149,17 +3255,32 @@ int CvCity::getProfessionOutput(ProfessionTypes eProfession, const CvUnit* pUnit
 		return 0;
 	}
 
+	YieldTypes eYieldForUnitBonus = eYieldProduced;
+
+	if (pUnit != NULL && eYieldProduced == YIELD_FOOD)
+	{
+		const UnitClassTypes eExpertUnitClass = (UnitClassTypes) kProfessionInfo.LbD_getExpert();
+		const CvUnitInfo& kUnit = GC.getUnitInfo(pUnit->getUnitType());
+
+		if (eExpertUnitClass != NO_UNITCLASS &&
+			kUnit.getUnitClassType() == eExpertUnitClass &&
+			kUnit.getYieldModifier(YIELD_BAKERY_GOODS) > 0)
+		{
+			eYieldForUnitBonus = YIELD_BAKERY_GOODS;
+		}
+	}
+
 	int iModifier = 100;
 	if (pUnit != NULL)
 	{
-		iModifier += GC.getUnitInfo(pUnit->getUnitType()).getYieldModifier(eYieldProduced);
+		iModifier += GC.getUnitInfo(pUnit->getUnitType()).getYieldModifier(eYieldForUnitBonus);
 	}
 
 	int iExtra = 0;
 	if (pUnit != NULL)
 	{
 		const CvUnitInfo& kUnit = GC.getUnitInfo(pUnit->getUnitType());
-		iExtra += kUnit.getYieldChange(eYieldProduced);
+		iExtra += kUnit.getYieldChange(eYieldForUnitBonus);
 	}
 
 	int iProfessionOutput = 0;
@@ -3836,6 +3957,44 @@ void CvCity::changeOccupationTimer(int iChange)
 	setOccupationTimer(getOccupationTimer() + iChange);
 }
 
+int CvCity::getForeignBuildingBurnTimer() const
+{
+	return m_iForeignBuildingBurnTimer;
+}
+
+void CvCity::setForeignBuildingBurnTimer(int iNewValue)
+{
+	m_iForeignBuildingBurnTimer = iNewValue;
+	FAssert(getForeignBuildingBurnTimer() >= 0);
+}
+
+void CvCity::changeForeignBuildingBurnTimer(int iChange)
+{
+	setForeignBuildingBurnTimer(getForeignBuildingBurnTimer() + iChange);
+}
+
+// WTP, Slave Emancipation - START
+void CvCity::changeSlaveEmancipationPendingUnrest(int iChange)
+{
+	if (iChange <= 0)
+	{
+		return;
+	}
+
+	const int iGameSpeedPercent =
+		GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getGrowthPercent();
+
+	const int iMaxUnrestTurns = std::max(
+		1,
+		10 * iGameSpeedPercent / 100
+	);
+
+	m_iSlaveEmancipationPendingUnrest = std::min(
+		iMaxUnrestTurns,
+		m_iSlaveEmancipationPendingUnrest + iChange
+	);
+}
+// WTP, Slave Emancipation - END
 
 int CvCity::getCultureUpdateTimer() const
 {
@@ -4797,6 +4956,9 @@ void CvCity::setYieldStored(YieldTypes eYield, int iValue)
 		CvString szTitle(gDLL->getText("TXT_KEY_ERROR_NEGATIVE_YIELD_STORAGE_TITLE"));
 
 		gDLL->MessageBox(szDesc.c_str(), szTitle.c_str());
+
+		// Never allow negative non-food yield storage.
+		iValue = 0;
 	}
 
 	int iChange = iValue - getYieldStored(eYield);
@@ -4950,7 +5112,29 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 			}
 		}
 
-		const int iMod = getBaseYieldRateModifier(eOutput);
+		// 1. milk uses the better of its own city buff and the animals being milked.
+		//    stables boost cattle/sheep/goats; without this those building % never
+		//    reached the milk and the tooltip 20.40 extra just vanished.
+		int iMod = getBaseYieldRateModifier(eOutput);
+		for (iCap = 0; iCap < (int)vCap.size(); ++iCap)
+		{
+			YieldTypes eCap = vCap[iCap];
+			const int iCapIndex = (int)eCap;
+			if (iCapIndex < 0 || iCapIndex >= NUM_YIELD_TYPES)
+			{
+				continue;
+			}
+
+			const int iNetProduced = aiProducedYields[iCapIndex] - aiConsumedYields[iCapIndex];
+			if (iNetProduced + getYieldStored(eCap) > 0)
+			{
+				const int iCapMod = getBaseYieldRateModifier(eCap);
+				if (iCapMod > iMod)
+				{
+					iMod = iCapMod;
+				}
+			}
+		}
 
 		if (iCapacityUnits <= 0)
 		{
@@ -4964,10 +5148,13 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 			if (aiProducedYields[iOutIndex] > iCapacityUnits)
 			{
 				aiProducedYields[iOutIndex] = iCapacityUnits;
-				aiYields[iOutIndex] = getYieldStored(eOutput)
-					- aiConsumedYields[iOutIndex]
-					+ aiProducedYields[iOutIndex] * iMod / 100;
 			}
+			// 2. always put the city buff back on milk after the cap. old code
+			//    only did this when production was cut, so "enough cows" dropped
+			//    the rebel/building extra and only the raw 12 landed in store.
+			aiYields[iOutIndex] = getYieldStored(eOutput)
+				- aiConsumedYields[iOutIndex]
+				+ aiProducedYields[iOutIndex] * iMod / 100;
 		}
 	}
 
@@ -5167,6 +5354,48 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 		}
 	}
 
+	// 3. the deficit pass above recasts milk with milk's own modifier. put the
+	//    animal building buff back on if it is higher, using the already-capped
+	//    raw amount.
+	for (iOut = 0; iOut < (int)game.g_aeGatedOutputs.size(); ++iOut)
+	{
+		YieldTypes eOutput = game.g_aeGatedOutputs[iOut];
+		const int iOutIndex = (int)eOutput;
+		if (iOutIndex < 0 || iOutIndex >= NUM_YIELD_TYPES)
+		{
+			continue;
+		}
+		if (aiProducedYields[iOutIndex] <= 0)
+		{
+			continue;
+		}
+
+		int iMod = getBaseYieldRateModifier(eOutput);
+		const std::vector<YieldTypes>& vCap = game.g_aeCapacityYieldsForOutput[iOutIndex];
+		int iCap;
+		for (iCap = 0; iCap < (int)vCap.size(); ++iCap)
+		{
+			YieldTypes eCap = vCap[iCap];
+			const int iCapIndex = (int)eCap;
+			if (iCapIndex < 0 || iCapIndex >= NUM_YIELD_TYPES)
+			{
+				continue;
+			}
+			if (aiProducedYields[iCapIndex] - aiConsumedYields[iCapIndex] + getYieldStored(eCap) > 0)
+			{
+				const int iCapMod = getBaseYieldRateModifier(eCap);
+				if (iCapMod > iMod)
+				{
+					iMod = iCapMod;
+				}
+			}
+		}
+
+		aiYields[iOutIndex] = getYieldStored(eOutput)
+			- aiConsumedYields[iOutIndex]
+			+ aiProducedYields[iOutIndex] * iMod / 100;
+	}
+
 	for (YieldTypes eYield = FIRST_YIELD; eYield < NUM_YIELD_TYPES; ++eYield)
 	{
 		if (eYield != YIELD_FOOD && aiYields[eYield] < 0)
@@ -5178,123 +5407,9 @@ void CvCity::calculateNetYields(int aiYields[NUM_YIELD_TYPES], int* aiProducedYi
 		aiYields[eYield] -= getYieldStored(eYield);
 	}
 
-	// This section ensures that pass-through yields like cattle does not get the output multiplier
-	// applied, otherwise the milkmaid would produce additional cattle in addition to the milk
-	// Details:
-	// aiYields[Y] is this turn's net delta: produced_raw*mod/100 - consumed_raw.
-	// For passthrough yields, remove the extra net created by applying mod to the
-	// passthrough slice (so passthrough can't grow stock from multipliers).
-	// (I.e. neutralize the multiplier for the passthrough portion only.)
-	int iPt;
-	for (iPt = 0; iPt < (int)game.g_aePassthroughYields.size(); ++iPt)
-	{
-		YieldTypes eY = game.g_aePassthroughYields[iPt];
-		const int iYIndex = (int)eY;
-		if (iYIndex < 0 || iYIndex >= NUM_YIELD_TYPES)
-		{
-			continue;
-		}
-
-		// Only adjust if the herd is actually growing.
-		if (aiYields[iYIndex] <= 0)
-		{
-			continue;
-		}
-
-		const std::vector<ProfessionTypes>& aProfs = game.g_aPassthroughProfsForYield[iYIndex];
-		if (aProfs.empty())
-		{
-			continue;
-		}
-
-		// Raw passthrough production of Y in this city from actual passthrough professions.
-		int iPassRaw = 0;
-
-		int iUnitIndex;
-		for (iUnitIndex = 0; iUnitIndex < (int)m_aPopulationUnits.size(); ++iUnitIndex)
-		{
-			CvUnit* pUnit = m_aPopulationUnits[iUnitIndex];
-			if (pUnit == NULL)
-			{
-				continue;
-			}
-
-			ProfessionTypes eProf = pUnit->getProfession();
-			if (eProf == NO_PROFESSION)
-			{
-				continue;
-			}
-
-			// Is this profession a passthrough profession for yield eY?
-			bool bIsPassProf = false;
-			int iProfIdx;
-			for (iProfIdx = 0; iProfIdx < (int)aProfs.size(); ++iProfIdx)
-			{
-				if (aProfs[iProfIdx] == eProf)
-				{
-					bIsPassProf = true;
-					break;
-				}
-			}
-			if (!bIsPassProf)
-			{
-				continue;
-			}
-
-			// This unit uses a passthrough profession for eY.
-			// getProfessionOutput returns the raw per-slot output, which
-			// for milkmaids is the amount they both consume and produce
-			// for the passthrough yield (cattle/sheep/goats).
-			const CvProfessionInfo& kProf = GC.getProfessionInfo(eProf);
-
-			// Only count this unit if it actually produces eY in this profession.
-			int iNumProduced = kProf.getNumYieldsProduced();
-			bool bProducesY = false;
-			int iP;
-			for (iP = 0; iP < iNumProduced; ++iP)
-			{
-				if ((YieldTypes)kProf.getYieldsProduced(iP) == eY)
-				{
-					bProducesY = true;
-					break;
-				}
-			}
-			if (!bProducesY)
-			{
-				continue;
-			}
-
-			iPassRaw += getProfessionOutput(eProf, pUnit);
-		}
-
-		if (iPassRaw <= 0)
-		{
-			continue; // no passthrough production of this yield in this city
-		}
-
-		const int iModY = getBaseYieldRateModifier(eY);
-		if (iModY <= 100)
-		{
-			continue; // cannot create positive extra on passthrough
-		}
-
-		// Extra from applying modifier on the passthrough slice.
-		const int iPassWithMod = (iPassRaw * iModY) / 100;
-		const int iExtra = iPassWithMod - iPassRaw;
-		if (iExtra <= 0)
-		{
-			continue;
-		}
-
-		// aiYields[iYIndex] is the net delta. We only reduce the positive part,
-		// and by at most the extra from passthrough.
-		const int iReduce = (aiYields[iYIndex] < iExtra) ? aiYields[iYIndex] : iExtra;
-		if (iReduce > 0)
-		{
-			aiYields[iYIndex] -= iReduce;
-		}
-	}
-
+	// 4. milkmaids return the animals they milk. city buffs apply to that
+	//    produced cattle the same as a cowboy's. stripping the extra left the
+	//    warehouse at +13 while the tooltip said +45.
 	// Immigration
 	YieldTypes eImmigrationYield = GET_PLAYER(getOwnerINLINE()).getImmigrationConversion();
 	if (eImmigrationYield != YIELD_CROSSES)
@@ -5978,7 +6093,8 @@ void CvCity::setUnitWorkingPlot(int iPlotIndex, int iUnitId)
 						continue;
 					if (!GC.getProfessionInfo(eLoopProfession).isWorkPlot())
 						continue;
-
+					if (!pUnit->canHaveProfession(eLoopProfession, false))
+						continue;
 					// get all yields for this candidate profession
 					const ProfessionYieldList pylLoop =
 						pPlot->calculatePotentialProfessionYieldAmount(
@@ -7317,10 +7433,11 @@ void CvCity::doGrowth()
 	{
 		CyCity* const pyCity = new CyCity(static_cast<CvCity*>(this));
 		CyArgsList argsList;
-		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));	// pass in city class
-		long lResult=0;
+		argsList.add(gDLL->getPythonIFace()->makePythonObject(pyCity));
+		long lResult = 0;
 		gDLL->getPythonIFace()->callFunction(PYGameModule, "doGrowth", argsList.makeFunctionArgs(), &lResult);
-		delete pyCity;	// python fxn must not hold on to this pointer
+		delete pyCity;
+
 		if (lResult == 1)
 		{
 			return;
@@ -7344,13 +7461,12 @@ void CvCity::doGrowth()
 		{
 			// WTP, ray, Ethnically correct Population Growth - START
 			UnitTypes eUnit = NO_UNIT;
+
 			if (GLOBAL_DEFINE_ENABLE_ETHICALLY_CORRECT_GROWTH && !isNative())
 			{
-				// we have to cast from UnitClassTypes to int
 				UnitClassTypes iIDBestGrowthUnit = bestGrowthUnitClass();
 				eUnit = GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(iIDBestGrowthUnit);
 			}
-			// old logic in else
 			else
 			{
 				eUnit = GC.getCivilizationInfo(getCivilizationType()).getCivilizationUnits(GLOBAL_DEFINE_DEFAULT_POPULATION_UNIT);
@@ -7359,85 +7475,328 @@ void CvCity::doGrowth()
 
 			if (NO_UNIT != eUnit)
 			{
+				bool bNativeHasAvailableJob = false;
+				bool bNativeNeedsInitialMilitary = false;
+				bool bNativeMilitaryCapReached = false;
+				bool bNativeNeedsFoodWorkers = false;
+
+				// WTP, Schmiddie, Native military unit cap START
+				if (isNative())
+				{
+					CvPlayerAI& kOwner = GET_PLAYER(getOwnerINLINE());
+
+					bNativeMilitaryCapReached =
+						kOwner.AI_isNativeMilitaryUnitCapReached();
+
+					// Check if the settlement still has a usable citizen job.
+					for (ProfessionTypes eProfession = FIRST_PROFESSION;
+						eProfession < NUM_PROFESSION_TYPES;
+						++eProfession)
+					{
+						const CvProfessionInfo& kProfession =
+							GC.getProfessionInfo(eProfession);
+
+						if (!kProfession.isCitizen())
+						{
+							continue;
+						}
+
+						if (GC.getUnitInfo(eUnit).getProfessionsNotAllowed(eProfession))
+						{
+							continue;
+						}
+
+						if (!kOwner.isProfessionValid(eProfession, eUnit))
+						{
+							continue;
+						}
+
+						if (!isAvailableProfessionSlot(eProfession, NULL))
+						{
+							continue;
+						}
+
+						if (kProfession.getSpecialBuilding() != NO_SPECIALBUILDING &&
+							getProfessionOutput(eProfession, NULL) <= 0)
+						{
+							continue;
+						}
+
+						bNativeHasAvailableJob = true;
+						break;
+					}
+					
+					// Count citizens currently working food-producing plots.
+					int iNativeFoodWorkers = 0;
+
+					for (int i = 0; i < getPopulation(); ++i)
+					{
+						CvUnit* pUnit = getPopulationUnitByIndex(i);
+
+						if (pUnit == NULL)
+						{
+							continue;
+						}
+
+						const ProfessionTypes eProfession = pUnit->getProfession();
+
+						if (eProfession == NO_PROFESSION)
+						{
+							continue;
+						}
+
+						const CvProfessionInfo& kProfession =
+							GC.getProfessionInfo(eProfession);
+
+						if (!kProfession.isWorkPlot())
+						{
+							continue;
+						}
+
+						if (!isUnitWorkingAnyPlot(pUnit))
+						{
+							continue;
+						}
+
+						for (int iYield = 0;
+							iYield < kProfession.getNumYieldsProduced();
+							++iYield)
+						{
+							if ((YieldTypes)kProfession.getYieldsProduced(iYield) == YIELD_FOOD)
+							{
+								++iNativeFoodWorkers;
+								break;
+							}
+						}
+					}
+
+					const int iMinFoodWorkers =
+						GC.getDefineINT("NATIVE_MIN_FOOD_WORKERS_PER_CITY");
+
+					bNativeNeedsFoodWorkers =
+						(iNativeFoodWorkers < iMinFoodWorkers);
+
+					// Count military map units belonging to this settlement.
+					int iHomeCityMilitaryUnits = 0;
+
+					int iLoop;
+					for (CvUnit* pLoopUnit = kOwner.firstUnit(&iLoop);
+						pLoopUnit != NULL;
+						pLoopUnit = kOwner.nextUnit(&iLoop))
+					{
+						const UnitAITypes eUnitAI =
+							pLoopUnit->AI_getUnitAIType();
+
+						if (pLoopUnit->getHomeCity() == this &&
+							(eUnitAI == UNITAI_DEFENSIVE ||
+							 eUnitAI == UNITAI_OFFENSIVE ||
+							 eUnitAI == UNITAI_COUNTER))
+						{
+							++iHomeCityMilitaryUnits;
+						}
+					}
+
+					const bool bBorderContact =
+						kOwner.AI_hasNativeColonialBorderContact();
+
+					const int iInitialMilitaryUnits =
+						GC.getDefineINT(
+							bBorderContact ?
+							"NATIVE_MILITARY_INITIAL_UNITS_PER_CITY_BORDER_CONTACT" :
+							"NATIVE_MILITARY_INITIAL_UNITS_PER_CITY");
+
+					bNativeNeedsInitialMilitary =
+						(iHomeCityMilitaryUnits < iInitialMilitaryUnits);
+
+					// If there is no job, the tribal cap is reached and no
+					// local initial force is allowed either, keep the food stored.
+					if (!bNativeHasAvailableJob &&
+						bNativeMilitaryCapReached)
+					{
+						return;
+					}
+				}
+				// WTP, Schmiddie, Native military unit cap END
+
 				OOS_LOG_3("City growth unit", CvString(getName()).c_str(), getTypeStr(eUnit));
-				GET_PLAYER(getOwnerINLINE()).initUnit(eUnit, GC.getCivilizationInfo(GET_PLAYER(getOwnerINLINE()).getCivilizationType()).getDefaultProfession(), getX_INLINE(), getY_INLINE());
+
+				CvUnit* pGrowthUnit =
+					GET_PLAYER(getOwnerINLINE()).initUnit(
+						eUnit,
+						GC.getCivilizationInfo(
+							GET_PLAYER(getOwnerINLINE()).getCivilizationType())
+							.getDefaultProfession(),
+						getX_INLINE(),
+						getY_INLINE());
+
+				// WTP, Schmiddie, Native military unit cap START
+				if (isNative() && pGrowthUnit != NULL)
+				{
+					// Global tribal cap always has priority over creating
+					// additional map Braves.
+					if (bNativeMilitaryCapReached)
+					{
+						if (bNativeHasAvailableJob)
+						{
+							addPopulationUnit(pGrowthUnit, NO_PROFESSION);
+						}
+						else
+						{
+							pGrowthUnit->kill(false);
+							return;
+						}
+					}
+					// First establish a minimum food-producing workforce.
+					else if (bNativeNeedsFoodWorkers && bNativeHasAvailableJob)
+					{
+						addPopulationUnit(pGrowthUnit, NO_PROFESSION);
+					}
+					// Then build the small local military reserve.
+					else if (bNativeNeedsInitialMilitary)
+					{
+						pGrowthUnit->setHomeCity(this);
+					}
+					// After the local reserve is complete, fill the village.
+					else if (bNativeHasAvailableJob)
+					{
+						addPopulationUnit(pGrowthUnit, NO_PROFESSION);
+					}
+					// Once the village is full, continue adding map Braves
+					// until the tribal cap is reached.
+					else
+					{
+						pGrowthUnit->setHomeCity(this);
+					}
+				}
+				// WTP, Schmiddie, Native military unit cap END
+
 				// WTP, ray, making this error save to prevent negative Storage bug - START
 				int iFoodUsedForGrowth = growthThreshold() - getFoodKept();
+
 				if (iFoodUsedForGrowth > getFood())
 				{
 					iFoodUsedForGrowth = getFood();
 				}
+
 				changeFood(-(std::max(0, iFoodUsedForGrowth)));
 				// WTP, ray, making this error save to prevent negative Storage bug - END
 			}
 
-			gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_GROWTH", getNameKey()), coord(), "AS2D_POSITIVE_DINK", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), COLOR_GREEN, true, true);
+			gDLL->UI().addPlayerMessage(
+				getOwnerINLINE(),
+				false,
+				GC.getEVENT_MESSAGE_TIME(),
+				gDLL->getText("TXT_KEY_CITY_GROWTH", getNameKey()),
+				coord(),
+				"AS2D_POSITIVE_DINK",
+				MESSAGE_TYPE_INFO,
+				GC.getYieldInfo(YIELD_FOOD).getButton(),
+				COLOR_GREEN,
+				true,
+				true);
 
-
-			// ONEVENT - City growth
 			gDLL->getEventReporterIFace()->cityGrowth(this, getOwnerINLINE());
 		}
 	}
 	else if (getFood() < 0)
 	{
-		// Food is reset to 0
 		setFood(0);
 
-		// Population is larger 1, we can eject citizens
 		if (getPopulation() > 1)
 		{
 			if (!AI_removeWorstPopulationUnit(false))
 			{
 				AI_removeWorstPopulationUnit(true);
 			}
-			gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING", getNameKey()), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), COLOR_RED, true, true);
-		}
-		// WTP, ray, necessary changes related to branch PLAINS, which also allows settling in hostile Terrains without Food
 
-		// Population is just 1, we do not want to abandon city
+			gDLL->UI().addPlayerMessage(
+				getOwnerINLINE(),
+				false,
+				GC.getEVENT_MESSAGE_TIME(),
+				gDLL->getText("TXT_KEY_CITY_STARVING", getNameKey()),
+				coord(),
+				"AS2D_DEAL_CANCELLED",
+				MESSAGE_TYPE_INFO,
+				GC.getYieldInfo(YIELD_FOOD).getButton(),
+				COLOR_RED,
+				true,
+				true);
+		}
 		else
 		{
-			int iFoodReceivedForStarvationDonation = GC.getDefineINT("CITY_STARVATION_DONATION_FOOD_RECEIVED");
-			// Native Case: just to avoid triggering this unnecessarily for Natives
+			int iFoodReceivedForStarvationDonation =
+				GC.getDefineINT("CITY_STARVATION_DONATION_FOOD_RECEIVED");
+
 			if (isNative())
 			{
 				changeFood(iFoodReceivedForStarvationDonation);
 			}
-
-			// other players
 			else
 			{
 				CvPlayerAI& kPlayer = GET_PLAYER(getOwnerINLINE());
-				int iGold = kPlayer.getGold();
-				int iGoldToPayedForStarvationDonation = GC.getDefineINT("CITY_STARVATION_DONATION_GOLD_PAYED") * GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getStoragePercent() / 100;
-				int iOccupationTimerinCaseNoDonation = GC.getDefineINT("CITY_STARVATION_NO_DONATION_OCCUPATION_TIMER");
 
-				// Case HUMAN: let us substract Gold for Human Player and trigger message about donation
+				int iGold = kPlayer.getGold();
+
+				int iGoldToPayedForStarvationDonation =
+					GC.getDefineINT("CITY_STARVATION_DONATION_GOLD_PAYED") *
+					GC.getGameSpeedInfo(GC.getGame().getGameSpeedType()).getStoragePercent() / 100;
+
+				int iOccupationTimerinCaseNoDonation =
+					GC.getDefineINT("CITY_STARVATION_NO_DONATION_OCCUPATION_TIMER");
+
 				if (isHuman())
 				{
-					// We could donate food
 					if (iGold > iGoldToPayedForStarvationDonation)
 					{
-						OOS_LOG_3("doGrowth donation", CvString(getName()).c_str(), iGoldToPayedForStarvationDonation);
+						OOS_LOG_3(
+							"doGrowth donation",
+							CvString(getName()).c_str(),
+							iGoldToPayedForStarvationDonation);
+
 						kPlayer.changeGold(-iGoldToPayedForStarvationDonation);
 						changeFood(iFoodReceivedForStarvationDonation);
-						gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID", getNameKey(), iGoldToPayedForStarvationDonation, iFoodReceivedForStarvationDonation), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), COLOR_RED, true, true);
-					}
 
-					// We did not have the gold, thus unrest
-					// but only if the City is not already in unrest, to prevent endless loops
+						gDLL->UI().addPlayerMessage(
+							getOwnerINLINE(),
+							false,
+							GC.getEVENT_MESSAGE_TIME(),
+							gDLL->getText(
+								"TXT_KEY_CITY_STARVING_BUT_COLONIES_PAID",
+								getNameKey(),
+								iGoldToPayedForStarvationDonation,
+								iFoodReceivedForStarvationDonation),
+							coord(),
+							"AS2D_DEAL_CANCELLED",
+							MESSAGE_TYPE_INFO,
+							GC.getYieldInfo(YIELD_FOOD).getButton(),
+							COLOR_RED,
+							true,
+							true);
+					}
 					else if (getOccupationTimer() == 0)
 					{
 						changeOccupationTimer(iOccupationTimerinCaseNoDonation);
-						gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), gDLL->getText("TXT_KEY_CITY_STARVING_AND_REVOLTING", getNameKey()), coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_INFO, GC.getYieldInfo(YIELD_FOOD).getButton(), COLOR_RED, true, true);
+
+						gDLL->UI().addPlayerMessage(
+							getOwnerINLINE(),
+							false,
+							GC.getEVENT_MESSAGE_TIME(),
+							gDLL->getText(
+								"TXT_KEY_CITY_STARVING_AND_REVOLTING",
+								getNameKey()),
+							coord(),
+							"AS2D_DEAL_CANCELLED",
+							MESSAGE_TYPE_INFO,
+							GC.getYieldInfo(YIELD_FOOD).getButton(),
+							COLOR_RED,
+							true,
+							true);
 					}
 				}
-
-				// Case AI: We keep this simple for now
-				// no unrest, receives gold but has to pay for it
 				else
 				{
-					int iGoldForAI = iGoldToPayedForStarvationDonation/2;
+					int iGoldForAI = iGoldToPayedForStarvationDonation / 2;
+
 					if (iGold > iGoldForAI)
 					{
 						kPlayer.changeGold(-iGoldForAI);
@@ -7446,6 +7805,7 @@ void CvCity::doGrowth()
 					{
 						kPlayer.changeGold(-iGold);
 					}
+
 					changeFood(iFoodReceivedForStarvationDonation);
 				}
 			}
@@ -7489,9 +7849,9 @@ void CvCity::doYields()
 
 			FAssert(validEnumRange(eYield));
 			int iAmount = aYields.get(eYield);
-			if (iAmount > 0 && (getYieldStored(eYield) + aiYields[eYield]) > 0) // R&R, ray, improvment from vetiarvind
+			if (iAmount > 0 && (getYieldStored(eYield) + aiYields[eYield]) > getMaintainLevel(eYield)) // R&R, ray, improvment from vetiarvind
 			{
-				const int iAmountForSale = getYieldStored(eYield) + aiYields[eYield];
+				const int iAmountForSale = getYieldStored(eYield) + aiYields[eYield] - getMaintainLevel(eYield);
 				if (iAmount > iAmountForSale)
 				{
 					iAmount = iAmountForSale;
@@ -7513,11 +7873,11 @@ void CvCity::doYields()
 				iTotalProfitFromDomesticMarket = iTotalProfitFromDomesticMarket + iProfit;
 			}
 		}
-		if (iTotalProfitFromDomesticMarket != 0 && GC.getDOMESTIC_SALES_MESSAGES() == 1)
-		{
-			CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_DOMESTIC_SOLD", getNameKey(), iTotalProfitFromDomesticMarket);
-			gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, COLOR_WHITE, true, true);
-		}
+		//if (iTotalProfitFromDomesticMarket != 0 && GC.getDOMESTIC_SALES_MESSAGES() == 1)
+		//{
+		//	CvWString szBuffer = gDLL->getText("TXT_KEY_GOODS_DOMESTIC_SOLD", getNameKey(), iTotalProfitFromDomesticMarket);
+		//	gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, COLOR_WHITE, true, true);
+		//}
 	}
 	// R&R, ray, adjustment Domestic Markets, END
 
@@ -8096,6 +8456,8 @@ void CvCity::doNativeTradePost()
 	PlayerTypes ePlayer = getTradePostPlayer();
 	if (ePlayer != NO_PLAYER)
 	{
+		GET_PLAYER(getOwnerINLINE()).applyTradePostMestizoPoints(this);
+		
 		int iNativeTradeModifierNation = 100 + GET_PLAYER(getOwnerINLINE()).getNativeTradeModifier();
 		int iNativeTradeModifierTradePostOwner = 100 + GET_PLAYER(ePlayer).getNativeTradeModifier();
 		int iNativeTradeRateCity = 100 + getNativeTradeRate();
@@ -8221,6 +8583,30 @@ void CvCity::getVisibleBuildings(std::list<BuildingTypes>& kChosenVisible, int& 
 		iTotalVisibleBuildings = int(((fHi - fLo) / 50.0f) * fCurSize + fLo);
 	}
 
+	if (isNative())
+	{
+		iTotalVisibleBuildings = std::max(1, (iTotalVisibleBuildings * 50) / 100);
+	}
+
+	else if (getPopulation() > 15)
+	{
+		int iVisibleAt15;
+
+		if (bIsExp)
+		{
+			const static float fCitySizeExpMod = GC.getDefineFLOAT("GAME_CITY_SIZE_EXP_MODIFIER");
+			iVisibleAt15 = 10 + ((int)(pow(15.0f, fCitySizeExpMod))) * 2;
+		}
+		else
+		{
+			const static float fLo = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_0");
+			const static float fHi = GC.getDefineFLOAT("GAME_CITY_SIZE_LINMAP_AT_50");
+			iVisibleAt15 = int(((fHi - fLo) / 50.0f) * 15.0f + fLo);
+		}
+
+		iTotalVisibleBuildings = iVisibleAt15 + ((iTotalVisibleBuildings - iVisibleAt15) * 50) / 100;
+	}
+
 	const static float fMaxUniquePercent = GC.getDefineFLOAT("GAME_CITY_SIZE_MAX_PERCENT_UNIQUE");
 	const int iMaxNumUniques = (int)(fMaxUniquePercent * iTotalVisibleBuildings);
 
@@ -8242,6 +8628,28 @@ void CvCity::getVisibleBuildings(std::list<BuildingTypes>& kChosenVisible, int& 
 	{
 		kChosenVisible.push_back(kVisible[i]);
 	}
+	// WTP, Schmiddie, Native Mission Station - START
+	if (isNative() && getMissionaryPlayer() != NO_PLAYER)
+	{
+		const BuildingTypes eMissionStation = (BuildingTypes)GC.getInfoTypeForString("BUILDING_NATIVE_MISSION_STATION");
+
+		if (eMissionStation != NO_BUILDING)
+		{
+			kChosenVisible.push_back(eMissionStation);
+		}
+	}
+	// WTP, Schmiddie, Native Mission Station - END
+	// WTP, Schmiddie, Native Trade Post - START
+	if (isNative() && getTradePostPlayer() != NO_PLAYER)
+	{
+		const BuildingTypes eTradePost = (BuildingTypes)GC.getInfoTypeForString("BUILDING_NATIVE_TRADE_POST");
+
+		if (eTradePost != NO_BUILDING)
+		{
+			kChosenVisible.push_back(eTradePost);
+		}
+	}
+	// WTP, Schmiddie, Native Trade Post - END
 }
 
 static int natGetDeterministicRandom(int iMin, int iMax, int iSeedX, int iSeedY)
@@ -8252,7 +8660,7 @@ static int natGetDeterministicRandom(int iMin, int iMax, int iSeedX, int iSeedY)
 
 void CvCity::getVisibleEffects(ZoomLevelTypes eCurZoom, std::vector<char const*>& kEffectNames) const
 {
-	if (isOccupation() && isVisible(getTeam(), false))
+	if ((isOccupation() || getForeignBuildingBurnTimer() > 0) && isVisible(getTeam(), false))
 	{
 		if (eCurZoom  == ZOOM_DETAIL)
 		{
@@ -9148,6 +9556,11 @@ void CvCity::addPopulationUnit(CvUnit* pUnit, ProfessionTypes eProfession)
 	CvUnit* pTransferUnit = GET_PLAYER(pUnit->getOwnerINLINE()).getAndRemoveUnit(pUnit->getID());
 	FAssert(pTransferUnit == pUnit);
 
+	if (pTransferUnit == NULL)
+	{
+		return;
+	}
+
 	int iOldPopulation = getPopulation();
 	m_aPopulationUnits.push_back(pTransferUnit);
 	area()->changePower(getOwnerINLINE(), pTransferUnit->getPower());
@@ -9204,7 +9617,13 @@ bool CvCity::removePopulationUnit(AssertCallerData assertData, CvUnit* pUnit, bo
 	{
 		//transfer back to player
 		GET_PLAYER(getOwnerINLINE()).addExistingUnit(pUnit);
-		pUnit->addToMap(coord());
+
+		if (pUnit->getX_INLINE() == INVALID_PLOT_COORD &&
+			pUnit->getY_INLINE() == INVALID_PLOT_COORD)
+		{
+			pUnit->addToMap(coord());
+		}
+
 		pUnit->setProfession(eProfession);
 
 		if (pUnit->getOwnerINLINE() == GC.getGameINLINE().getActivePlayer())
@@ -9775,9 +10194,11 @@ void CvCity::setMissionaryPlayer(PlayerTypes ePlayer, bool bBurnMessage)
 
 		if (bBurnMessage && eOldPlayer != NO_PLAYER)
 		{
+			setForeignBuildingBurnTimer(1);
+
 			CvWString szBuffer = gDLL->getText("TXT_KEY_MISSION_REMOVED", getNameKey(), GET_PLAYER(eOldPlayer).getCivilizationAdjectiveKey());
 
-			gDLL->UI().addAllPlayersMessage(false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, COLOR_HIGHLIGHT_TEXT, false, false);
+			gDLL->UI().addAllPlayersMessage(false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CITYCAPTURED", MESSAGE_TYPE_MINOR_EVENT, NULL, COLOR_HIGHLIGHT_TEXT, false, false);
 		}
 
 		if (getMissionaryPlayer() != NO_PLAYER)
@@ -9788,6 +10209,7 @@ void CvCity::setMissionaryPlayer(PlayerTypes ePlayer, bool bBurnMessage)
 		}
 
 		setBillboardDirty(true);
+		setLayoutDirty(true);
 	}
 }
 
@@ -9812,9 +10234,11 @@ void CvCity::setTradePostPlayer(PlayerTypes ePlayer, bool bBurnMessage)
 
 		if (bBurnMessage && eOldPlayer != NO_PLAYER)
 		{
+			setForeignBuildingBurnTimer(1);
+
 			CvWString szBuffer = gDLL->getText("TXT_KEY_TRADE_POST_REMOVED", getNameKey(), GET_PLAYER(eOldPlayer).getCivilizationAdjectiveKey());
 
-			gDLL->UI().addAllPlayersMessage(false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_DEAL_CANCELLED", MESSAGE_TYPE_MINOR_EVENT, NULL, COLOR_HIGHLIGHT_TEXT, false, false);
+			gDLL->UI().addAllPlayersMessage(false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CITYCAPTURED", MESSAGE_TYPE_MINOR_EVENT, NULL, COLOR_HIGHLIGHT_TEXT, false, false);
 		}
 
 		if (getTradePostPlayer() != NO_PLAYER)
@@ -9825,6 +10249,7 @@ void CvCity::setTradePostPlayer(PlayerTypes ePlayer, bool bBurnMessage)
 		}
 
 		setBillboardDirty(true);
+		setLayoutDirty(true);
 	}
 }
 
@@ -10400,7 +10825,7 @@ void CvCity::doCityCrime()
 		kPlayer.changeGold(-iCityCrime);
 
 		// add message
-		CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_GOLD_STOLEN_BECAUSE_CRIME", getNameKey());
+		CvWString szBuffer = gDLL->getText("TXT_KEY_CITY_GOLD_STOLEN_BECAUSE_CRIME", getNameKey(), iCityCrime);
 		gDLL->UI().addPlayerMessage(eOwner, false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), "AS2D_CITYCRIME", MESSAGE_TYPE_MAJOR_EVENT, ARTFILEMGR.getInterfaceArtInfo("INTERFACE_SHOW_CTIYCRIME")->getPath(), COLOR_RED, true, true);
 
 	}
@@ -10847,6 +11272,10 @@ int CvCity::getUnhappinessFromSlavery() const
 			iUnHapSlav++;
 		}
 	}
+
+	// A limited number of slaves can be absorbed by the city population
+	// without causing additional unhappiness.
+	iUnHapSlav = std::max(0, iUnHapSlav - getPopulation() / 3);
 
 	// adjustment for Traits that reduce Unhappiness from Slaves
 	// we only need to check this if we have slaves at all
@@ -11627,38 +12056,38 @@ namespace
 
 	int nativeTeachBaseWeight(UnitClassTypes eUnitClass)
 	{
-		if (isUnitClassType(eUnitClass, "UNITCLASS_FARMER")) return 100;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_FISHERMAN")) return 90;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_HUNTER")) return 90;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_FRUITS_PICKER")) return 80;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_TRAPPER")) return 65;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_RICE_FARMER")) return 60;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_CASSAVA_PLANTER")) return 60;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_TOBACCO_PLANTER")) return 55;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_COTTON_PLANTER")) return 55;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_SUGAR_PLANTER")) return 55;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_FARMER")) return 70;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_FISHERMAN")) return 65;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_TOBACCO_PLANTER")) return 65;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_SUGAR_PLANTER")) return 65;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_HEMP_PLANTER")) return 65;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_FRUITS_PICKER")) return 60;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_INDIGO_PLANTER")) return 60;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_COTTON_PLANTER")) return 60;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_TRAPPER")) return 55;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_RICE_FARMER")) return 55;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_CASSAVA_PLANTER")) return 50;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_HUNTER")) return 50;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_COFFEE_PLANTER")) return 50;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_COCOA_PLANTER")) return 50;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_HEMP_PLANTER")) return 50;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_LINEN_PLANTER")) return 50;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_INDIGO_PLANTER")) return 45;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_YERBA_PLANTER")) return 50;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_SCOUT")) return 50;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_RAPE_PLANTER")) return 45;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_PEANUT_PLANTER")) return 45;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_YERBA_PLANTER")) return 40;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_GRAPES_PICKER")) return 40;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_OLIVES_PLANTER")) return 40;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_RAPE_PLANTER")) return 35;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_COCA_COLLECTOR")) return 35;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_LOGWOOD_COLLECTOR")) return 30;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_PEAT_CUTTER")) return 30;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_COCHINEAL_COLLECTOR")) return 30;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_RED_PEPPER_PLANTER")) return 30;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_VANILLA_COLLECTOR")) return 30;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_KAUTSCHUK_COLLECTOR")) return 30;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_MAPLE_SIRUP_COLLECTOR")) return 25;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_SCOUT")) return 25;
 		if (isSealHunterUnitClass(eUnitClass)) return 20;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_PEARLS_HUNTER")) return 20;
-		if (isUnitClassType(eUnitClass, "UNITCLASS_MINER")) return 20;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_MINER")) return 10;
+		if (isUnitClassType(eUnitClass, "UNITCLASS_PEAT_CUTTER")) return 10;
 		if (isUnitClassType(eUnitClass, "UNITCLASS_PROSPECTOR")) return 10;
 		return 40;
 	}
@@ -12143,6 +12572,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 	int aiBase[NATIVE_TEACH_MAX_CANDIDATES];
 	int aiSuit[NATIVE_TEACH_MAX_CANDIDATES];
 	int aiWeight[NATIVE_TEACH_MAX_CANDIDATES];
+	int aiBonusDistWeight[NATIVE_TEACH_MAX_CANDIDATES];
 	int iCandidateCount = 0;
 	UnitClassTypes eFallbackUnitClass = NO_UNITCLASS;
 
@@ -12197,10 +12627,12 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 				{
 					continue;
 				}
+
 				if (!pLoopPlot->isValidYieldChanges(eLoopUnit))
 				{
 					continue;
 				}
+
 				if (eWantedYield == YIELD_FOOD && pLoopPlot->isHills())
 				{
 					continue;
@@ -12210,7 +12642,9 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 				const int iDistWeight = teachDistanceWeight(iDistance);
 
 				const BonusTypes eBonus = pLoopPlot->getBonusType();
-				if (bonusMatchesProfession(eBonus, eUnitClass, kProfession, eWantedYield, kCiv))
+				const bool bBonusMatch = bonusMatchesProfession(eBonus, eUnitClass, kProfession, eWantedYield, kCiv);
+
+				if (bBonusMatch)
 				{
 					if (iDistWeight > iBonusDistWeight)
 					{
@@ -12225,12 +12659,26 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 				}
 
 				const FeatureTypes eFeature = pLoopPlot->getFeatureType();
-				if (eFeature != NO_FEATURE && GC.getFeatureInfo(eFeature).getYieldChange(eWantedYield) > 0)
+				const int iFeatureYieldChange =
+					eFeature != NO_FEATURE
+					? GC.getFeatureInfo(eFeature).getYieldChange(eWantedYield)
+					: 0;
+
+				const bool bFeatureMatch =
+					eFeature != NO_FEATURE &&
+					iFeatureYieldChange > 0;
+
+				if (bFeatureMatch)
 				{
 					iFeatureMatches += iDistWeight;
 				}
 
-				if (kProfession.isWater() && eWantedYield == YIELD_FOOD && pLoopPlot->getTerrainType() == TERRAIN_LARGE_RIVERS)
+				const bool bLargeRiverMatch =
+					kProfession.isWater() &&
+					eWantedYield == YIELD_FOOD &&
+					pLoopPlot->getTerrainType() == TERRAIN_LARGE_RIVERS;
+
+				if (bLargeRiverMatch)
 				{
 					iLargeRiverMatches += iDistWeight;
 				}
@@ -12239,7 +12687,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			int iLocalScore = iYieldAmount + iFeatureMatches * 2 + iLargeRiverMatches * 2;
 			if (bFishermanOnWater)
 			{
-				iLocalScore += bArcticCoast ? 21 : 9;
+				iLocalScore += bArcticCoast ? 21 : 5;
 			}
 
 			if (iLocalScore > iBestLocalScore)
@@ -12256,38 +12704,44 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 		{
 			if (isUnitClassType(eUnitClass, "UNITCLASS_SCOUT"))
 			{
-				int iBestHorseDistance = NATIVE_TEACH_SCAN_RANGE + 1;
-				LOOP_ADJACENT_PLOTS(getX_INLINE(), getY_INLINE(), NATIVE_TEACH_SCAN_RANGE)
-				{
-					CvPlot* pHorsePlot = kMap.plotINLINE(iLoopX, iLoopY);
-					if (pHorsePlot != NULL && isHorseBonus(pHorsePlot->getBonusType()))
-					{
-						const int iDistance = teachPlotDistance(getX_INLINE(), getY_INLINE(), iLoopX, iLoopY);
-						if (iDistance < iBestHorseDistance)
-						{
-							iBestHorseDistance = iDistance;
-						}
-					}
-				}
-				if (iBestHorseDistance <= NATIVE_TEACH_SCAN_RANGE)
-				{
-					iBestLocalScore = (iBestHorseDistance <= 1) ? 42 : 12;
-					iBestBonusDistWeight = teachDistanceWeight(iBestHorseDistance);
-				}
+				iBestLocalScore = 8;
 			}
-
+			
 			if (iBestLocalScore <= 0)
 			{
 				if (eFallbackUnitClass == NO_UNITCLASS)
 				{
 					eFallbackUnitClass = eUnitClass;
 				}
+
 				continue;
 			}
 		}
 
+		if (isUnitClassType(eUnitClass, "UNITCLASS_FISHERMAN"))
+		{
+			iBestLocalScore = (iBestLocalScore * 70) / 100;
+		}
+		else if (isUnitClassType(eUnitClass, "UNITCLASS_FARMER"))
+		{
+			iBestLocalScore = (iBestLocalScore * 70) / 100;
+		}
+		else if (isUnitClassType(eUnitClass, "UNITCLASS_HUNTER"))
+		{
+			iBestLocalScore = (iBestLocalScore * 50) / 100;
+		}
+		else if (isUnitClassType(eUnitClass, "UNITCLASS_MINER"))
+		{
+			iBestLocalScore = (iBestLocalScore * 60) / 100;
+		}
+		else if (isUnitClassType(eUnitClass, "UNITCLASS_PEAT_CUTTER"))
+		{
+			iBestLocalScore = (iBestLocalScore * 65) / 100;
+		}
+
 		const int iSuitTier = teachSuitabilityTier(iBestLocalScore);
 		int iBonusPercent = NATIVE_TEACH_BONUS_BOOST_NONE;
+
 		if (iBestBonusDistWeight >= NATIVE_TEACH_NEAR_DISTANCE_WEIGHT)
 		{
 			iBonusPercent = NATIVE_TEACH_BONUS_BOOST_NEAR;
@@ -12298,6 +12752,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 		}
 
 		const int iFinalWeight = teachFinalWeight(iBaseWeight, iSuitTier, iBonusPercent);
+
 		if (iFinalWeight <= 0)
 		{
 			continue;
@@ -12309,6 +12764,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			aiBase[iCandidateCount] = iBaseWeight;
 			aiSuit[iCandidateCount] = iSuitTier;
 			aiWeight[iCandidateCount] = iFinalWeight;
+			aiBonusDistWeight[iCandidateCount] = iBestBonusDistWeight;
 			++iCandidateCount;
 		}
 	}
@@ -12321,17 +12777,26 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 	if (bHugePlus)
 	{
 		int iBestMissing = -1;
+
 		for (int i = 0; i < iCandidateCount; ++i)
 		{
-			if (aiSuit[i] < NATIVE_TEACH_SUIT_SUITABLE)
+			// On Huge+ maps a missing profession may be forced with good
+			// suitability, or with suitable surroundings and a matching bonus.
+			const bool bSuitableForMissing =
+				aiSuit[i] >= NATIVE_TEACH_SUIT_GOOD ||
+				(aiSuit[i] >= NATIVE_TEACH_SUIT_SUITABLE && aiBonusDistWeight[i] > 0);
+
+			if (!bSuitableForMissing)
 			{
 				continue;
 			}
 
 			bool bTaughtAnywhere = false;
+
 			for (PlayerTypes ePlayer = FIRST_PLAYER; ePlayer < NUM_PLAYER_TYPES; ++ePlayer)
 			{
 				const CvPlayer& kPlayer = GET_PLAYER(ePlayer);
+
 				if (!kPlayer.isAlive() || !kPlayer.isNative())
 				{
 					continue;
@@ -12346,6 +12811,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 						break;
 					}
 				}
+
 				if (bTaughtAnywhere)
 				{
 					break;
@@ -12358,8 +12824,8 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			}
 
 			if (iBestMissing < 0 ||
-				aiBase[i] < aiBase[iBestMissing] ||
-				(aiBase[i] == aiBase[iBestMissing] && aiWeight[i] > aiWeight[iBestMissing]))
+				aiSuit[i] > aiSuit[iBestMissing] ||
+				(aiSuit[i] == aiSuit[iBestMissing] && aiWeight[i] > aiWeight[iBestMissing]))
 			{
 				iBestMissing = i;
 			}
@@ -12368,6 +12834,27 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 		if (iBestMissing >= 0)
 		{
 			return aeClass[iBestMissing];
+		}
+	}
+
+	int iBestUniqueSuit = NATIVE_TEACH_SUIT_UNSUITABLE;
+
+	for (int i = 0; i < iCandidateCount; ++i)
+	{
+		bool bAlreadyTaught = false;
+		int iLoop = 0;
+		for (const CvCity* pLoopCity = kOwner.firstCity(&iLoop); pLoopCity != NULL; pLoopCity = kOwner.nextCity(&iLoop))
+		{
+			if (pLoopCity != this && pLoopCity->getTeachUnitClass() == aeClass[i])
+			{
+				bAlreadyTaught = true;
+				break;
+			}
+		}
+
+		if (!bAlreadyTaught && aiSuit[i] > iBestUniqueSuit)
+		{
+			iBestUniqueSuit = aiSuit[i];
 		}
 	}
 
@@ -12387,7 +12874,7 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 			}
 		}
 
-		if (!bAlreadyTaught)
+		if (!bAlreadyTaught && aiSuit[i] >= iBestUniqueSuit - 1)
 		{
 			aiUniqueWeight[iUniqueCount] = aiWeight[i];
 			aiUniqueIndex[iUniqueCount] = i;
@@ -12400,11 +12887,13 @@ UnitClassTypes CvCity::bestTeachUnitClass()
 		const int iPick = pickWeightedIndex(aiUniqueWeight, iUniqueCount);
 		if (iPick >= 0)
 		{
-			return aeClass[aiUniqueIndex[iPick]];
+			const int iSelectedIndex = aiUniqueIndex[iPick];
+			return aeClass[iSelectedIndex];
 		}
-	}
+	}	
 
 	const int iPick = pickWeightedIndex(aiWeight, iCandidateCount);
+
 	if (iPick >= 0)
 	{
 		return aeClass[iPick];
@@ -13700,6 +14189,14 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 		return false;
 	}
 
+	// WTP, Slave Emancipation - START
+	// Do not check for freedom again while the unit is on cooldown.
+	if (GC.getGameINLINE().getGameTurn() < convUnit->getLbDFreeReadyTurn())
+	{
+		return false;
+	}
+	// WTP, Slave Emancipation - END
+
 	//cases criminal or servant
 	UnitClassTypes modcase = convUnit->getUnitInfo().getUnitClassType();
 
@@ -13767,6 +14264,24 @@ bool CvCity::LbD_try_get_free(CvUnit* convUnit, int base, int increase, int pre_
 	{
 		return false;
 	}
+
+	// WTP, Slave Emancipation - START
+	if (isHuman() && (modcase == GLOBAL_DEFINE_UNITCLASS_AFRICAN_SLAVE || modcase == GLOBAL_DEFINE_UNITCLASS_NATIVE_SLAVE))
+	{
+		const int iTrainPercent = GC.getGameSpeedInfo(GC.getGameINLINE().getGameSpeedType()).getTrainPercent();
+		const int iBaseCooldownTurns = GC.getDefineINT("SLAVE_EMANCIPATION_LBD_COOLDOWN");
+		const int iCooldownTurns = std::max(1, iBaseCooldownTurns * iTrainPercent / 100);
+
+		convUnit->setLbDFreeReadyTurn(GC.getGameINLINE().getGameTurn() + iCooldownTurns);
+
+		CvPopupInfo* pInfo = new CvPopupInfo(BUTTONPOPUP_CONFIRMTASK, getID(), convUnit->getID(), TASK_GRANT_FREEDOM);
+		pInfo->setText(gDLL->getText("TXT_KEY_LBD_GRANT_FREEDOM"));
+		gDLL->getInterfaceIFace()->lookAtCityOffset(getID());
+		gDLL->getInterfaceIFace()->addPopup(pInfo, getOwnerINLINE(), true, true);
+
+		return true;
+	}
+	// WTP, Slave Emancipation - END
 
 	// spawn the Unit
 	//ray16
@@ -14713,8 +15228,9 @@ void CvCity::doEntertainmentBuildings()
 	{
 		OOS_LOG_3("Entertainment building", CvString(getName()).c_str(), iGoldthroughCulture);
 		GET_PLAYER(getOwnerINLINE()).changeGold(iGoldthroughCulture);
-		CvWString szBuffer = gDLL->getText("TXT_KEY_GOLD_BY_ENTERTAINMENT", GC.getBuildingInfo(highestLevelEntertainmentBuilding).getDescription(), getNameKey(), iGoldthroughCulture);
-		gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, COLOR_WHITE, true, true);
+
+		//CvWString szBuffer = gDLL->getText("TXT_KEY_GOLD_BY_ENTERTAINMENT", GC.getBuildingInfo(highestLevelEntertainmentBuilding).getDescription(), getNameKey(), iGoldthroughCulture);
+		//gDLL->UI().addPlayerMessage(getOwnerINLINE(), false, GC.getEVENT_MESSAGE_TIME(), szBuffer, coord(), NULL, MESSAGE_TYPE_MINOR_EVENT, NULL, COLOR_WHITE, true, true);
 	}
 }
 // R&R, ray, Entertainment Buildings - END
