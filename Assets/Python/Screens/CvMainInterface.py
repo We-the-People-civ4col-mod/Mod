@@ -2259,27 +2259,33 @@ class CvMainInterface:
 											if gc.getCivilizationInfo(pHeadSelectedCity.getCivilizationType()).isValidProfession(iArrayProfession):
 												iAmountYield = gc.getProfessionInfo(iArrayProfession).getYieldsProduced(0) #MultipleYieldsProduced Start
 												ProducedYield = 0
-												ActualYield = 0
 												for pCitizen in CitizenSpecialBuildingIndexArray[iSpecialBuildingType]:
 													if (pCitizen.getProfession() == iArrayProfession):
 														ProducedYield += pHeadSelectedCity.getProfessionOutput(iArrayProfession, pCitizen)
-														ActualYield += pHeadSelectedCity.getProfessionActualOutput(iArrayProfession, pCitizen)
 
 												ProducedYield = ProducedYield * pHeadSelectedCity.getBaseYieldRateModifier(iAmountYield, 0) / 100
-												ActualYield = ActualYield * pHeadSelectedCity.getBaseYieldRateModifier(iAmountYield, 0) / 100
+
+												CityProducedYield = pHeadSelectedCity.getBaseRawYieldProduced(iAmountYield)
+												CityActualYield = pHeadSelectedCity.calculateActualYieldProduced(iAmountYield)
+
+												if (CityProducedYield > 0):
+													ActualYield = ProducedYield * CityActualYield / CityProducedYield
+												else:
+													ActualYield = ProducedYield
+
 												UnproducedYield = ProducedYield - ActualYield
 
 												if (bTwoYields == False):
-													if (ProducedYield > 0):
+													if (ActualYield > 0):
 														bTwoYields = True
-														SzText += u"<color=0,255,0> +" + str(ProducedYield) + "</color>"
+														SzText += u"<color=0,255,0> +" + str(ActualYield) + "</color>"
 													if (UnproducedYield > 0):
 														SzText += u"<color=255,0,0> -" + str(UnproducedYield) + "</color>"
 												else:
 													if (iAmountYield != iYield):
-														if (ProducedYield > 0):
+														if (ActualYield > 0):
 															SzText += u"<color=255,255,255> /" + "</color>"
-															SzText += u"<color=0,255,0> +" + str(ProducedYield) + "</color>"
+															SzText += u"<color=0,255,0> +" + str(ActualYield) + "</color>"
 														if (UnproducedYield > 0):
 															SzText += u"<color=255,0,0> -" + str(UnproducedYield) + "</color>"
         
