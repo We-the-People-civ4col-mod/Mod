@@ -149,6 +149,17 @@
 		<Hungarian>Az Újvilág (Gigantikus, 110x215): Az Újvilág földrajzilag helyes térképe.</Hungarian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_WORLDBUILDER_THE_NEW_WORLD_HISTORIC</Tag>
+		<English>The New World (Gigantic, 110x215): Geographically correct map of the New World with historical locations of Natives and resources.</English>
+		<Portuguese>O Novo Mundo (Gigantesco, 110x215): Mapa geograficamente correto do Novo Mundo with historical locations of Natives and resources.</Portuguese>
+		<French>Le Nouveau Monde (Gigantesque, 110x215): Carte géographiquement correcte des Amériques with historical locations of Natives and resources.</French>
+		<German>Die Neue Welt (Gigantisch, 110x215): Geographisch korrekte Karte der Neuen Welt mit historischen Siedlungsgebieten der Eingeborenen.</German>
+		<Italian>Il Nuovo Mondo (Gigantesca, 110x215): Mappa geograficamente corretta del Nuovo Mondo with historical locations of Natives and resources.</Italian>
+		<Spanish>El Nuevo Mundo (Gigante, 110x215): Mapa geográficamente correcto del Nuevo Mundo with historical locations of Natives and resources.</Spanish>
+		<Russian>Новый мир (110x215): географически корректная карта Нового Света</Russian>
+		<Hungarian>Az Újvilág (Gigantikus, 110x215): Az Újvilág földrajzilag helyes térképe.</Hungarian>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_WORLDBUILDER_TWO_CONTINENTS</Tag>
 		<English>Two Continents (Gigantic, 110x215): Two gigantic continents located in the Northern and Southern hemispheres, separated by a wide strait.</English>
 		<Portuguese>Dois Continentes (Gigantesco, 110x215): Dois continentes gigantescos localizados nos hemisférios Norte e Sul, separados por um amplo estreito.</Portuguese>
