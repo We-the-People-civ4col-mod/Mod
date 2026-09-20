@@ -282,6 +282,10 @@ public:
 	int canGiveExperience(const CvPlot* pPlot) const;
 	bool giveExperience();
 	int getStackExperienceToGive(int iNumUnits) const;
+	// WTP, Attached Land Leader
+	bool canDetachLeader() const;
+	bool detachLeader();
+	bool isLeaderInitialBonusGranted() const;
 	int upgradePrice(UnitTypes eUnit) const;
 	bool upgradeAvailable(UnitTypes eFromUnit, UnitClassTypes eToUnitClass, int iCount = 0) const;
 	bool canUpgrade(UnitTypes eUnit, bool bTestVisible = false) const;
@@ -650,7 +654,10 @@ public:
 
 	DllExport UnitTypes getLeaderUnitType() const;
 	void setLeaderUnitType(UnitTypes leaderUnitType);
-
+	// WTP, Attached Land Leader
+	const CvWString& getAttachedLeaderName() const;
+	// WTP, Attached Land Leader - END
+	
 	DllExport CvUnit* getCombatUnit() const;
 	void setCombatUnit(CvUnit* pUnit, bool bAttacking = false);
 	DllExport CvPlot* getPostCombatPlot() const;
@@ -975,6 +982,17 @@ protected:
 	PlayerTypes m_eCapturingPlayer;
 	UnitTypes m_eUnitType;
 	UnitTypes m_eLeaderUnitType;
+	
+	// WTP, Attached Land Leader
+	bool m_bLeaderInitialBonusGranted;
+	int m_iLeaderReadyTurn;
+	CvWString m_szAttachedLeaderName;
+	int m_iAttachedLeaderExperience;
+	int m_iAttachedLeaderLevel;
+	bool m_bAttachedLeaderInitialBonusGranted;
+	EnumMap<PromotionTypes, bool> m_embAttachedLeaderPromotions;
+	// WTP, Attached Land Leader - END
+	
 	CvUnitInfo *m_pUnitInfo;
 	ProfessionTypes m_eProfession;
 

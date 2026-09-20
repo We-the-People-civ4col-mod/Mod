@@ -57,7 +57,12 @@ const UnitTravelStates defaultUnitTravelState = NO_UNIT_TRAVEL_STATE;
 const PlayerTypes defaultOwner = NO_PLAYER;
 const PlayerTypes defaultCapturingPlayer = NO_PLAYER;
 const UnitTypes defaultLeaderUnitType =  NO_UNIT;
-
+const bool defaultLeaderInitialBonusGranted = false;
+const int defaultLeaderReadyTurn = 0;
+const CvWString defaultAttachedLeaderName;
+const int defaultAttachedLeaderExperience = 0;
+const int defaultAttachedLeaderLevel = 1;
+const bool defaultAttachedLeaderInitialBonusGranted = false;
 
 
 // add to the end for backward savegame compatibility
@@ -131,6 +136,19 @@ enum SavegameVariableTypes
 	// WTP, Slave Emancipation
 	UnitSave_LbDFreeReadyTurn,
 
+	// WTP, Attached Land Leader
+	UnitSave_AttachedLeaderName,
+	UnitSave_AttachedLeaderExperience,
+	UnitSave_AttachedLeaderLevel,
+	UnitSave_AttachedLeaderPromotions,
+
+	// WTP, Attached Land Leader - Initial Bonus
+	UnitSave_LeaderInitialBonusGranted,
+	UnitSave_AttachedLeaderInitialBonusGranted,
+
+	// WTP, Attached Land Leader - Ready Turn
+	UnitSave_LeaderReadyTurn,
+
 	NUM_SAVE_ENUM_VALUES,
 };
 
@@ -201,6 +219,14 @@ const char* getSavedEnumNameUnit(SavegameVariableTypes eType)
 	case UnitSave_AllowDirectPath: return "UnitSave_AllowDirectPath";
 	// WTP, Slave Emancipation
 	case UnitSave_LbDFreeReadyTurn: return "UnitSave_LbDFreeReadyTurn";
+	// WTP, Attached Land Leader
+	case UnitSave_AttachedLeaderName: return "UnitSave_AttachedLeaderName";
+	case UnitSave_AttachedLeaderExperience: return "UnitSave_AttachedLeaderExperience";
+	case UnitSave_AttachedLeaderLevel: return "UnitSave_AttachedLeaderLevel";
+	case UnitSave_AttachedLeaderPromotions: return "UnitSave_AttachedLeaderPromotions";
+	case UnitSave_LeaderInitialBonusGranted: return "UnitSave_LeaderInitialBonusGranted";
+	case UnitSave_AttachedLeaderInitialBonusGranted: return "UnitSave_AttachedLeaderInitialBonusGranted";
+	case UnitSave_LeaderReadyTurn: return "UnitSave_LeaderReadyTurn";
 	}
 	FAssertMsg(0, "Missing case");
 	return "";
@@ -272,6 +298,14 @@ void CvUnit::resetSavedData(int iID, UnitTypes eUnit, PlayerTypes eOwner, bool b
 	m_eOwner = eOwner;
 	m_eCapturingPlayer = defaultCapturingPlayer;
 	m_eLeaderUnitType = defaultLeaderUnitType;
+	// WTP, Attached Land Leader
+	m_bLeaderInitialBonusGranted = defaultLeaderInitialBonusGranted;
+	m_iLeaderReadyTurn = defaultLeaderReadyTurn;
+	m_szAttachedLeaderName.clear();
+	m_iAttachedLeaderExperience = defaultAttachedLeaderExperience;
+	m_iAttachedLeaderLevel = defaultAttachedLeaderLevel;
+	m_bAttachedLeaderInitialBonusGranted = defaultAttachedLeaderInitialBonusGranted;
+	m_embAttachedLeaderPromotions.reset();
 
 	m_combatUnit.reset();
 	m_transportUnit.reset();
@@ -364,6 +398,13 @@ void CvUnit::read(CvSavegameReader reader)
 		case UnitSave_Owner: reader.Read(m_eOwner); break;
 		case UnitSave_CapturingPlayer: reader.Read(m_eCapturingPlayer); break;
 		case UnitSave_LeaderUnitType: reader.Read(m_eLeaderUnitType); break;
+		case UnitSave_AttachedLeaderName: reader.Read(m_szAttachedLeaderName); break;
+		case UnitSave_AttachedLeaderExperience: reader.Read(m_iAttachedLeaderExperience); break;
+		case UnitSave_AttachedLeaderLevel: reader.Read(m_iAttachedLeaderLevel); break;
+		case UnitSave_AttachedLeaderPromotions: reader.Read(m_embAttachedLeaderPromotions); break;
+		case UnitSave_LeaderInitialBonusGranted: reader.Read(m_bLeaderInitialBonusGranted); break;
+		case UnitSave_AttachedLeaderInitialBonusGranted: reader.Read(m_bAttachedLeaderInitialBonusGranted); break;
+		case UnitSave_LeaderReadyTurn: reader.Read(m_iLeaderReadyTurn); break;
 
 		case UnitSave_combatUnit: reader.Read(m_combatUnit); break;
 		case UnitSave_transportUnit: reader.Read(m_transportUnit); break;
@@ -466,6 +507,14 @@ void CvUnit::write(CvSavegameWriter writer)
 	writer.Write(UnitSave_Owner, m_eOwner, defaultOwner);
 	writer.Write(UnitSave_CapturingPlayer, m_eCapturingPlayer, defaultCapturingPlayer);
 	writer.Write(UnitSave_LeaderUnitType, m_eLeaderUnitType, defaultLeaderUnitType);
+	// WTP, Attached Land Leader
+	writer.Write(UnitSave_AttachedLeaderName, m_szAttachedLeaderName);
+	writer.Write(UnitSave_AttachedLeaderExperience, m_iAttachedLeaderExperience, defaultAttachedLeaderExperience);
+	writer.Write(UnitSave_AttachedLeaderLevel, m_iAttachedLeaderLevel, defaultAttachedLeaderLevel);
+	writer.Write(UnitSave_AttachedLeaderPromotions, m_embAttachedLeaderPromotions);
+	writer.Write(UnitSave_LeaderInitialBonusGranted, m_bLeaderInitialBonusGranted, defaultLeaderInitialBonusGranted);
+	writer.Write(UnitSave_AttachedLeaderInitialBonusGranted, m_bAttachedLeaderInitialBonusGranted, defaultAttachedLeaderInitialBonusGranted);
+	writer.Write(UnitSave_LeaderReadyTurn, m_iLeaderReadyTurn, defaultLeaderReadyTurn);
 
 	writer.Write(UnitSave_combatUnit, m_combatUnit);
 	writer.Write(UnitSave_transportUnit, m_transportUnit);

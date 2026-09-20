@@ -2017,21 +2017,55 @@ void CvDLLWidgetData::parseActionHelp(const CvWidgetDataStruct &widgetDataStruct
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_LEAD)
 			{
-				if (pHeadSelectedUnit->getUnitInfo().getLeaderExperience() > 0)
-				{
-					int iNumUnits = pHeadSelectedUnit->canGiveExperience(pHeadSelectedUnit->plot());
-					if (iNumUnits > 0)
-					{
-						szBuffer.append(NEWLINE);
-						szBuffer.append(gDLL->getText("TXT_KEY_ACTION_LEAD_TROOPS", pHeadSelectedUnit->getStackExperienceToGive(iNumUnits)));
-					}
-				}
-				if (pHeadSelectedUnit->getUnitInfo().getLeaderPromotion() != NO_PROMOTION)
+				// WTP, Attached Land Leader - START
+				const UnitClassTypes eLeaderUnitClassType = pHeadSelectedUnit->getUnitClassType();
+				const bool bAttachedLeader =
+					(eLeaderUnitClassType == UNITCLASS_GREAT_GENERAL ||
+					eLeaderUnitClassType == UNITCLASS_BRAVE_LIEUTENANT ||
+					eLeaderUnitClassType == UNITCLASS_GREAT_ADMIRAL ||
+					eLeaderUnitClassType == UNITCLASS_CAPABLE_CAPTAIN);
+
+				if (bAttachedLeader)
 				{
 					szBuffer.append(NEWLINE);
-					szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_WHEN_LEADING"));
-					GAMETEXT.parsePromotionHelp(szBuffer, pHeadSelectedUnit->getUnitInfo().getLeaderPromotion(), L"\n   ");
+					szBuffer.append(gDLL->getText("TXT_KEY_ACTION_ATTACH_LEADER"));
+
+					if (!pHeadSelectedUnit->isLeaderInitialBonusGranted() && pHeadSelectedUnit->getUnitInfo().getLeaderExperience() > 0)
+					{
+						int iNumUnits = pHeadSelectedUnit->canGiveExperience(pHeadSelectedUnit->plot());
+						if (iNumUnits > 0)
+						{
+							szBuffer.append(NEWLINE);
+							szBuffer.append(gDLL->getText("TXT_KEY_ACTION_LEAD_TROOPS", pHeadSelectedUnit->getStackExperienceToGive(iNumUnits)));
+						}
+					}
+
+					if (pHeadSelectedUnit->getUnitInfo().getLeaderPromotion() != NO_PROMOTION)
+					{
+						szBuffer.append(NEWLINE);
+						szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_WHEN_LEADING"));
+						GAMETEXT.parsePromotionHelp(szBuffer, pHeadSelectedUnit->getUnitInfo().getLeaderPromotion(), L"\n   ");
+					}
 				}
+				else
+				{
+					if (pHeadSelectedUnit->getUnitInfo().getLeaderExperience() > 0)
+					{
+						int iNumUnits = pHeadSelectedUnit->canGiveExperience(pHeadSelectedUnit->plot());
+						if (iNumUnits > 0)
+						{
+							szBuffer.append(NEWLINE);
+							szBuffer.append(gDLL->getText("TXT_KEY_ACTION_LEAD_TROOPS", pHeadSelectedUnit->getStackExperienceToGive(iNumUnits)));
+						}
+					}
+					if (pHeadSelectedUnit->getUnitInfo().getLeaderPromotion() != NO_PROMOTION)
+					{
+						szBuffer.append(NEWLINE);
+						szBuffer.append(gDLL->getText("TXT_KEY_PROMOTION_WHEN_LEADING"));
+						GAMETEXT.parsePromotionHelp(szBuffer, pHeadSelectedUnit->getUnitInfo().getLeaderPromotion(), L"\n   ");
+					}
+				}
+				// WTP, Attached Land Leader - END
 			}
 			else if (GC.getActionInfo(widgetDataStruct.m_iData1).getMissionType() == MISSION_BUILD)
 			{

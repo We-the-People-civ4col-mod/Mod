@@ -510,6 +510,30 @@ void CvGameTextMgr::setUnitHelp(CvWStringBuffer &szString, const CvUnit* pUnit, 
 		}
 	}
 
+	// WTP, Attached Land Leader - START
+	if (pUnit->getLeaderUnitType() != NO_UNIT)
+	{
+		const UnitClassTypes eLeaderUnitClassType = (UnitClassTypes)GC.getUnitInfo(pUnit->getLeaderUnitType()).getUnitClassType();
+
+		if (eLeaderUnitClassType == UNITCLASS_GREAT_GENERAL || eLeaderUnitClassType == UNITCLASS_BRAVE_LIEUTENANT)
+		{
+			szString.append(NEWLINE);
+			szString.append(gDLL->getText("TXT_KEY_UNIT_HELP_COMMANDED_BY"));
+
+			if (!pUnit->getAttachedLeaderName().empty())
+			{
+				szString.append(pUnit->getAttachedLeaderName());
+			}
+			else
+			{
+				szString.append(GC.getUnitInfo(pUnit->getLeaderUnitType()).getDescription());
+			}
+
+			szString.append(NEWLINE);
+		}
+	}
+	// WTP, Attached Land Leader - END
+
 	//WTP, ray fixed Nationality Text displayed for Barbarians / Wild Animals
 	if (pUnit->getOwnerINLINE() != GC.getGameINLINE().getActivePlayer() && !pUnit->getUnitInfo().isHiddenNationality() && pUnit->getOwnerINLINE() != GC.getGameINLINE().getBarbarianPlayer())
 	{

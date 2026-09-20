@@ -6,6 +6,11 @@ CHANGELOG 4.3 - ENGLISH VERSION (PLEASE FIND A GERMAN VERSION BELOW!)
 
 Since WTP 4.2.1, We The People has been further developed in numerous areas. In addition to new gameplay mechanics, major improvements have been made to naval gameplay, the handling of Natives and unfree units, the Domestic Market, AI, the event system, graphics, and the user interface.
 
+
+REWORKED OFFICER SYSTEM. 
+
+Great Generals, Brave Lieutenants, Great Admirals and Capable Captains are no longer permanently consumed when assigned to a unit. Officers can now be detached and later reassigned to another eligible unit while retaining their name, experience, level and promotions. The existing one-time experience bonus can still only be granted once per officer, while command bonuses apply only for as long as the officer is actively commanding the unit. To prevent exploits, a detached officer cannot take command of another unit until the following turn. Naval officers can only be detached in friendly cities, while land officers cannot be detached while their unit is being transported.
+
 NAVAL OVERHAUL & HISTORICAL SHIP AVAILABILITY
 
 Naval gameplay has been expanded and rebalanced in several areas. One particular focus has been on making fleets evolve more noticeably over the course of a game.
@@ -425,6 +430,10 @@ CHANGELOG 4.3 - GERMAN VERSION
 
 Seit WTP 4.2.1 wurde We The People in zahlreichen Bereichen weiterentwickelt. Neben neuen Gameplay-Mechaniken wurden insbesondere das maritime Spiel, 
 der Umgang mit Natives und unfreien Einheiten, der Domestic Market, die KI, das Eventsystem sowie Grafik und Benutzeroberfläche umfangreich überarbeitet.
+
+ÜBERARBEITETES OFFIZIERSSYSTEM
+
+Generäle, Leutnants, Admiräle und Kapitäne werden beim Zuweisen zu einer Einheit nicht mehr dauerhaft verbraucht. Offiziere können wieder abkommandiert und später einer anderen geeigneten Einheit zugeteilt werden. Name, Erfahrung, Stufe und Beförderungen des Offiziers bleiben dabei erhalten. Der bisherige einmalige Erfahrungsbonus wird weiterhin nur einmal pro Offizier vergeben, während Führungsboni nur gelten, solange der Offizier die jeweilige Einheit tatsächlich kommandiert. Um Exploits zu verhindern, kann ein abkommandierter Offizier erst in der folgenden Runde ein neues Kommando übernehmen. Marineoffiziere können nur in eigenen Städten abkommandiert werden; Landoffiziere nicht, solange ihre Einheit transportiert wird.
 
 NAVAL OVERHAUL & HISTORISCHE SCHIFFSVERFÜGBARKEIT
 

@@ -658,7 +658,7 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 						// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
 						if (pLoopUnit != NULL && ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack()) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20)))
 						{
-							if (pLoopUnit->canPromote((PromotionTypes) info.getData1(), info.getData2()))
+							if (pLeaderUnit->canLead(pPlot, pLoopUnit->getID()))
 							{
 								iCount--;
 								if (iCount == 0)
@@ -2787,7 +2787,7 @@ bool CvDLLButtonPopup::launchLeadUnitPopup(CvPopup* pPopup, CvPopupInfo &info)
 		// WTP, fixing Generals and Admirals to lead civilists or small tiny fishing boats - START
 		if (pLoopUnit != NULL && ((pLoopUnit->getDomainType() == DOMAIN_LAND && pLoopUnit->canAttack()) || (pLoopUnit->getDomainType() == DOMAIN_SEA && pLoopUnit->baseCombatStr() >= 20)))
 		{
-			if (pLoopUnit->canPromote((PromotionTypes) info.getData1(), info.getData2()))
+			if (pLeaderUnit->canLead(pPlot, pLoopUnit->getID()))
 			{
 				if (!pFirstUnit)
 				{

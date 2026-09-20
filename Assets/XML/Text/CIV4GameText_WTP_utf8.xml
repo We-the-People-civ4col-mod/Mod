@@ -390,6 +390,18 @@
 		<Russian>Вы действительно хотите освободить этого кабального слугу за %d1 золота?</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_COMMAND_DETACH_LEADER</Tag>
+		<English>Detach Commander</English>
+		<German>Befehlshaber abkommandieren</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_COMMAND_DETACH_LEADER_HELP</Tag>
+		<English>Detach the General or Lieutenant from this unit.</English>
+		<German>Beruft den General oder Leutnant von dieser Einheit ab.</German>
+		<Russian/>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_YIELD_PRICE_COMPACT_EU</Tag>
 		<English>  EU %d1/%d2</English>
 		<Portuguese>  EU %d1/%d2</Portuguese>

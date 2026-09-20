@@ -397,6 +397,25 @@ void CvUnit::convert(CvUnit* pUnit, bool bKill)
 
 	setName(pUnit->getNameNoDesc());
 	setLeaderUnitType(pUnit->getLeaderUnitType());
+
+	// WTP, Attached Land Leader - START
+	m_szAttachedLeaderName = pUnit->m_szAttachedLeaderName;
+	m_iAttachedLeaderExperience = pUnit->m_iAttachedLeaderExperience;
+	m_iAttachedLeaderLevel = pUnit->m_iAttachedLeaderLevel;
+	m_bAttachedLeaderInitialBonusGranted = pUnit->m_bAttachedLeaderInitialBonusGranted;
+	m_embAttachedLeaderPromotions.reset();
+
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
+	{
+		const PromotionTypes ePromotion = static_cast<PromotionTypes>(iI);
+
+		if (pUnit->m_embAttachedLeaderPromotions.get(ePromotion))
+		{
+			m_embAttachedLeaderPromotions.set(ePromotion, true);
+		}
+	}
+	// WTP, Attached Land Leader - END
+
 	if (bKill)
 	{
 		ProfessionTypes eProfession = pUnit->getProfession();
@@ -2939,6 +2958,15 @@ bool CvUnit::canDoCommand(CommandTypes eCommand, int iData1, int iData2, bool bT
 		break;
 	// WTP, Slave Emancipation - END
 
+	// WTP, Attached Land Leader - START
+	case COMMAND_DETACH_LEADER:
+		if (canDetachLeader())
+		{
+			return true;
+		}
+		break;
+	// WTP, Attached Land Leader - END
+
 	case COMMAND_UNLOAD:
 		if (canUnload())
 		{
@@ -3404,6 +3432,12 @@ void CvUnit::doCommand(CommandTypes eCommand, int iData1, int iData2)
 			}
 			break;
 		// WTP, Slave Sale - END
+
+		// WTP, Attached Land Leader - START
+		case COMMAND_DETACH_LEADER:
+			detachLeader();
+			break;
+		// WTP, Attached Land Leader - END
 
 		case COMMAND_UNLOAD:
 			if (iData2 >= 0)
@@ -8672,12 +8706,71 @@ bool CvUnit::lead(int iUnitId)
 	else
 	{
 		CvUnit* pUnit = GET_PLAYER(getOwnerINLINE()).getUnit(iUnitId);
-		if (!pUnit || !pUnit->canPromote(eLeaderPromotion, getID()))
+		if (!pUnit)
 		{
 			return false;
 		}
 
-		pUnit->promote(eLeaderPromotion, getID());
+		// WTP, Attached Leader
+		const UnitClassTypes eLeaderUnitClassType = getUnitClassType();
+		const bool bLandLeader = (eLeaderUnitClassType == UNITCLASS_GREAT_GENERAL || eLeaderUnitClassType == UNITCLASS_BRAVE_LIEUTENANT);
+		const bool bNavalLeader = (eLeaderUnitClassType == UNITCLASS_GREAT_ADMIRAL || eLeaderUnitClassType == UNITCLASS_CAPABLE_CAPTAIN);
+		const bool bAttachedLeader = (bLandLeader || bNavalLeader);
+
+		if (bAttachedLeader)
+		{
+			if (bLandLeader && (pUnit->getDomainType() != DOMAIN_LAND || !pUnit->canAttack() || pUnit->getLeaderUnitType() != NO_UNIT))
+			{
+				return false;
+			}
+
+			if (bNavalLeader && (pUnit->getDomainType() != DOMAIN_SEA || pUnit->baseCombatStr() < 20 || pUnit->getLeaderUnitType() != NO_UNIT))
+			{
+				return false;
+			}
+
+			// Grant the traditional leader experience bonus only once per officer.
+			if (!m_bLeaderInitialBonusGranted)
+			{
+				giveExperience();
+				m_bLeaderInitialBonusGranted = true;
+			}
+
+			pUnit->m_eLeaderUnitType = getUnitType();
+			pUnit->m_szAttachedLeaderName = getNameNoDesc();
+			pUnit->m_iAttachedLeaderExperience = getExperience();
+			pUnit->m_iAttachedLeaderLevel = getLevel();
+			pUnit->m_bAttachedLeaderInitialBonusGranted = m_bLeaderInitialBonusGranted;
+			pUnit->m_embAttachedLeaderPromotions.reset();
+
+			for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
+			{
+				const PromotionTypes ePromotion = static_cast<PromotionTypes>(iI);
+				if (isHasRealPromotion(ePromotion))
+				{
+					pUnit->m_embAttachedLeaderPromotions.set(ePromotion, true);
+				}
+			}
+
+			// Keep the traditional leader promotion on the commanded unit
+			// while the officer is attached.
+			if (eLeaderPromotion != NO_PROMOTION)
+			{
+				pUnit->setHasRealPromotion(eLeaderPromotion, true);
+			}
+
+			pUnit->reloadEntity();
+			pUnit->setInfoBarDirty(true);
+		}
+		else
+		{
+			if (!pUnit->canPromote(eLeaderPromotion, getID()))
+			{
+				return false;
+			}
+
+			pUnit->promote(eLeaderPromotion, getID());
+		}
 
 		if (plot()->isActiveVisible(false))
 		{
@@ -8712,6 +8805,17 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 	if (NO_PROMOTION == kLeaderPromotion) //this unit is not a leader
 		return 0;
 
+	// WTP, Attached Leader
+	const UnitClassTypes eLeaderUnitClassType = getUnitClassType();
+	const bool bLandLeader = (eLeaderUnitClassType == UNITCLASS_GREAT_GENERAL || eLeaderUnitClassType == UNITCLASS_BRAVE_LIEUTENANT);
+	const bool bNavalLeader = (eLeaderUnitClassType == UNITCLASS_GREAT_ADMIRAL || eLeaderUnitClassType == UNITCLASS_CAPABLE_CAPTAIN);
+	const bool bAttachedLeader = (bLandLeader || bNavalLeader);
+
+	if (bAttachedLeader && GC.getGameINLINE().getGameTurn() < m_iLeaderReadyTurn)
+	{
+		return 0;
+	}
+
 	if (-1 == iUnitId)
 	{
 		CLLNode<IDInfo>* pUnitNode = pPlot->headUnitNode();
@@ -8723,7 +8827,21 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 			if (pUnit != NULL && pUnit != this && pUnit->getOwnerINLINE() == getOwnerINLINE() &&
 				((pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)))
 			{
-				if (pUnit->canPromote(kLeaderPromotion, getID()))
+				if (bLandLeader)
+				{
+					if (pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack() && pUnit->getLeaderUnitType() == NO_UNIT)
+					{
+						++iNumUnits;
+					}
+				}
+				else if (bNavalLeader)
+				{
+					if (pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20 && pUnit->getLeaderUnitType() == NO_UNIT)
+					{
+						++iNumUnits;
+					}
+				}
+				else if (pUnit->canPromote(kLeaderPromotion, getID()))
 				{
 					++iNumUnits;
 				}
@@ -8740,7 +8858,21 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 		if (pUnit != NULL && pUnit != this &&
 			((pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack()) || (pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20)))
 		{
-			if (pUnit->canPromote(kLeaderPromotion, getID()))
+			if (bLandLeader)
+			{
+				if (pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->getDomainType() == DOMAIN_LAND && pUnit->canAttack() && pUnit->getLeaderUnitType() == NO_UNIT)
+				{
+					iNumUnits = 1;
+				}
+			}
+			else if (bNavalLeader)
+			{
+				if (pUnit->getOwnerINLINE() == getOwnerINLINE() && pUnit->getDomainType() == DOMAIN_SEA && pUnit->baseCombatStr() >= 20 && pUnit->getLeaderUnitType() == NO_UNIT)
+				{
+					iNumUnits = 1;
+				}
+			}
+			else if (pUnit->canPromote(kLeaderPromotion, getID()))
 			{
 				iNumUnits = 1;
 			}
@@ -8751,6 +8883,110 @@ int CvUnit::canLead(const CvPlot* pPlot, int iUnitId) const
 	return iNumUnits;
 }
 
+bool CvUnit::canDetachLeader() const
+{
+	if (isDelayedDeath())
+	{
+		return false;
+	}
+
+	if (getLeaderUnitType() == NO_UNIT)
+	{
+		return false;
+	}
+
+	if (plot() == NULL)
+	{
+		return false;
+	}
+
+	const UnitClassTypes eLeaderUnitClassType = (UnitClassTypes)GC.getUnitInfo(getLeaderUnitType()).getUnitClassType();
+
+	if (eLeaderUnitClassType != UNITCLASS_GREAT_GENERAL &&
+		eLeaderUnitClassType != UNITCLASS_BRAVE_LIEUTENANT &&
+		eLeaderUnitClassType != UNITCLASS_GREAT_ADMIRAL &&
+		eLeaderUnitClassType != UNITCLASS_CAPABLE_CAPTAIN)
+	{
+		return false;
+	}
+
+	if (eLeaderUnitClassType == UNITCLASS_GREAT_GENERAL ||
+		eLeaderUnitClassType == UNITCLASS_BRAVE_LIEUTENANT)
+	{
+		if (getTransportUnit() != NULL)
+		{
+			return false;
+		}
+	}
+	else
+	{
+		CvCity* pCity = plot()->getPlotCity();
+
+		if (pCity == NULL || pCity->getOwnerINLINE() != getOwnerINLINE())
+		{
+			return false;
+		}
+	}
+
+	return true;
+}
+
+bool CvUnit::detachLeader()
+{
+	if (!canDetachLeader())
+	{
+		return false;
+	}
+
+	const UnitTypes eLeaderUnitType = getLeaderUnitType();
+	const PromotionTypes eLeaderPromotion = GC.getUnitInfo(eLeaderUnitType).getLeaderPromotion();
+
+	CvUnit* pLeaderUnit = GET_PLAYER(getOwnerINLINE()).initUnit(
+		eLeaderUnitType,
+		NO_PROFESSION,
+		getX_INLINE(),
+		getY_INLINE(),
+		NO_UNITAI);
+
+	if (pLeaderUnit == NULL)
+	{
+		return false;
+	}
+
+	pLeaderUnit->setName(m_szAttachedLeaderName);
+	pLeaderUnit->setExperience(m_iAttachedLeaderExperience);
+	pLeaderUnit->setLevel(m_iAttachedLeaderLevel);
+	pLeaderUnit->m_bLeaderInitialBonusGranted = m_bAttachedLeaderInitialBonusGranted;
+	pLeaderUnit->m_iLeaderReadyTurn = GC.getGameINLINE().getGameTurn() + 1;
+
+	for (int iI = 0; iI < GC.getNumPromotionInfos(); ++iI)
+	{
+		const PromotionTypes ePromotion = static_cast<PromotionTypes>(iI);
+
+		if (m_embAttachedLeaderPromotions.get(ePromotion))
+		{
+			pLeaderUnit->setHasRealPromotion(ePromotion, true);
+		}
+	}
+
+	// Remove only the temporary leader promotion from the commanded unit.
+	if (eLeaderPromotion != NO_PROMOTION)
+	{
+		setHasRealPromotion(eLeaderPromotion, false);
+	}
+
+	m_eLeaderUnitType = NO_UNIT;
+	m_szAttachedLeaderName.clear();
+	m_iAttachedLeaderExperience = 0;
+	m_iAttachedLeaderLevel = 1;
+	m_bAttachedLeaderInitialBonusGranted = false;
+	m_embAttachedLeaderPromotions.reset();
+
+	reloadEntity();
+	setInfoBarDirty(true);
+
+	return true;
+}
 
 int CvUnit::canGiveExperience(const CvPlot* pPlot) const
 {
@@ -13542,6 +13778,18 @@ void CvUnit::setLeaderUnitType(UnitTypes leaderUnitType)
 		reloadEntity();
 	}
 }
+
+// WTP, Attached Land Leader
+const CvWString& CvUnit::getAttachedLeaderName() const
+{
+	return m_szAttachedLeaderName;
+}
+
+bool CvUnit::isLeaderInitialBonusGranted() const
+{
+	return m_bLeaderInitialBonusGranted;
+}
+// WTP, Attached Land Leader - END
 
 CvUnit* CvUnit::getCombatUnit() const
 {
