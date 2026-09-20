@@ -26206,35 +26206,11 @@ def _cityHasGiftNativeKnowledgeFarm(city):
 	))
 
 
-def _cityHasGiftNativeKnowledgeCropPotential(city):
-	if city is None or city.isNone():
-		return False
-
-	for i in range(gc.getNUM_CITY_PLOTS()):
-		plot = plotCity(city.getX(), city.getY(), i)
-
-		if plot is None or plot.isNone():
-			continue
-
-		if plot.getOwner() != city.getOwner():
-			continue
-
-		if plot.isWater():
-			continue
-
-		if plot.isPeak():
-			continue
-
-		if plot.isCity():
-			continue
-
-		return True
-
-	return False
-
-
 def _cityHasGiftNativeKnowledgePlantation(city):
-	return _cityHasGiftNativeKnowledgeCropPotential(city)
+	return _cityHasGiftNativeKnowledgeImprovement(city, (
+		gc.getInfoTypeForString("IMPROVEMENT_PLANTATION"),
+		gc.getInfoTypeForString("IMPROVEMENT_LARGE_PLANTATION"),
+	))
 
 
 def _cityHasAvailableGiftNativeKnowledgeOption(city):
