@@ -12418,7 +12418,7 @@
 		<Portuguese>[ICON_BULLET]Pode navegar para Port Royal</Portuguese>
 		<French>[ICON_BULLET]Peut voguer vers Port Royal</French>
 		<German>[ICON_BULLET]Kann nach Port Royal segeln</German>
-		<Russian>[ICON_BULLET]Может плыть в Порт Ройал</Russian>
+		<Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]Может плыть в Порт Ройал[COLOR_REVERT]</Russian>
 		<Hungarian>[ICON_BULLET]Elhajózhat Port Royalba</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -12887,7 +12887,7 @@
 		<German>Überträgt insgesamt %d1_Num Erfahrungspunkte auf Einheiten auf demselben Geländefeld. Achtung, die Erfahrungspunkte werden nur einmal vergeben, auch wenn der Offizier mehrfach einer Einheit zugeordnet werden kann.</German>
 		<Italian>Dà un totale di %d1_Num di esperienza alle unità presenti nella stessa casella. Notice: Experience points are granted only once, even if the officer can be assigned to a unit multiple times.</Italian>
 		<Spanish>Da un total de %d1_Num de experiencia a las unidades en la misma casilla. Notice: Experience points are granted only once, even if the officer can be assigned to a unit multiple times.</Spanish>
-		<Russian>Дает %d1_Num очков опыта юнитам на этой клетке</Russian>
+		<Russian>Дает %d1_Num очков опыта юнитам на этой клетке. Очки опыта начисляются только один раз; полученные при этом повышения остаются у офицера, а не у отряда.</Russian>
 		<Hungarian>Az ugyanazon a területen álló egységeknek összesen %d1_Num Tapasztalati Pontot ad. Notice: Experience points are granted only once, even if the officer can be assigned to a unit multiple times.</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -14261,12 +14261,12 @@
 		<Tag>TXT_KEY_UNIT_HELP_COMMANDED_BY</Tag>
 		<English>Unit is commanded by </English>
 		<German>Einheit wird kommandiert von </German>
-		<Russian/>
+		<Russian>Командование подразделением осуществляет </Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_ATTACH_LEADER</Tag>
 		<English>Assigns this commander to an eligible unit. The commander can later be detached from the unit.</English>
 		<German>Der Befehlshaber wird einer geeigneten Einheit zugeteilt und kann später wieder von ihr abkommandiert werden.</German>
-		<Russian/>
+		<Russian>Назначает этого командира в выбранный отряд. Впоследствии командира можно будет убрать из отряда.</Russian>
 	</TEXT>
 </Civ4GameText>
