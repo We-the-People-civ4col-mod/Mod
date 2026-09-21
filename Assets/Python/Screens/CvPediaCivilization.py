@@ -134,6 +134,16 @@ class CvPediaCivilization:
 					szButton = gc.getPlayer(self.top.iActivePlayer).getUnitButton(iUniqueUnit)
 				screen.attachImageButton( panelName, "", szButton, GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_UNIT, iUniqueUnit, -1, False )
 
+				iGameYearAvailable = gc.getUnitInfo(iUniqueUnit).getGameYearAvailable()
+				iGameYearObsolete = gc.getUnitInfo(iUniqueUnit).getGameYearObsolete()
+
+				if (iGameYearAvailable > 0 and iGameYearObsolete > 0):
+					screen.attachLabel(panelName, "", u" %d-%d  " % (iGameYearAvailable, iGameYearObsolete - 1))
+				elif (iGameYearAvailable > 0):
+					screen.attachLabel(panelName, "", u" %d+  " % iGameYearAvailable)
+				elif (iGameYearObsolete > 0):
+					screen.attachLabel(panelName, "", u" <%d  " % iGameYearObsolete)
+
 	def placeLeader(self):
 
 		screen = self.top.getScreen()
@@ -156,13 +166,40 @@ class CvPediaCivilization:
 		screen.addPanel( panelName, localText.getText("TXT_KEY_DAWN_OF_MAN_SCREEN_STARTING_UNITS", ()), "", False, True, self.X_STARTUNIT, self.Y_STARTUNIT, self.W_STARTUNIT, self.H_STARTUNIT, PanelStyles.PANEL_STYLE_BLUE50, WidgetTypes.WIDGET_GENERAL, -1, -1 )
 		screen.attachLabel(panelName, "", "  ")
 
+		alwaysAvailableUnits = []
+		start1492Units = []
+		laterUnits = []
+
 		for iUnit in range(gc.getCivilizationInfo(self.iCivilization).getNumCivilizationFreeUnits()):
-			iFreeUnitClass = gc.getCivilizationInfo(self.iCivilization).getCivilizationFreeUnitsClass(iUnit);
-			iFreeUnit = gc.getUnitClassInfo(iFreeUnitClass).getDefaultUnitIndex()
+			iFreeUnitClass = gc.getCivilizationInfo(self.iCivilization).getCivilizationFreeUnitsClass(iUnit)
+			iFreeUnit = gc.getCivilizationInfo(self.iCivilization).getCivilizationUnits(iFreeUnitClass)
+
+			if (iFreeUnit > -1):
+				iGameYearAvailable = gc.getUnitInfo(iFreeUnit).getGameYearAvailable()
+
+				if (iGameYearAvailable <= 0):
+					alwaysAvailableUnits.append(iFreeUnit)
+				elif (iGameYearAvailable == 1492):
+					start1492Units.append(iFreeUnit)
+				else:
+					laterUnits.append(iFreeUnit)
+
+		for iFreeUnit in alwaysAvailableUnits + start1492Units + laterUnits:
+			iGameYearAvailable = gc.getUnitInfo(iFreeUnit).getGameYearAvailable()
+			iGameYearObsolete = gc.getUnitInfo(iFreeUnit).getGameYearObsolete()
+
 			szButton = gc.getUnitInfo(iFreeUnit).getButton()
 			screen.attachImageButton( panelName, "", szButton, GenericButtonSizes.BUTTON_SIZE_CUSTOM, WidgetTypes.WIDGET_PEDIA_JUMP_TO_UNIT, iFreeUnit, -1, False )
 
-# TAC End				
+			if (iGameYearAvailable > 0 and iGameYearObsolete > 0):
+				screen.attachLabel(panelName, "", u" %d-%d  " % (iGameYearAvailable, iGameYearObsolete - 1))
+			elif (iGameYearAvailable > 0):
+				screen.attachLabel(panelName, "", u" %d+  " % iGameYearAvailable)
+			elif (iGameYearObsolete > 0):
+				screen.attachLabel(panelName, "", u" bis %d  " % (iGameYearObsolete - 1))
+			else:
+				screen.attachLabel(panelName, "", "  ")
+# TAC End	
 				
 	def placeText(self):
 
