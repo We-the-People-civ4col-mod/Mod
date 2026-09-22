@@ -11374,6 +11374,10 @@ int CvPlayerAI::AI_desiredCityCount()
 	bool bDense = AI_isStrategy(STRATEGY_DENSE_CITY_SPACING);
 	int iCount = 0;
 
+	// WTP, Schmiddie, improved colonial AI expansion - START
+	bool bColonial = is(CIV_CATEGORY_COLONIAL);
+	// WTP, Schmiddie, improved colonial AI expansion - END
+
 	int iStep = 4;
 
 	int iTotal = getTotalPopulation();
@@ -11386,7 +11390,17 @@ int CvPlayerAI::AI_desiredCityCount()
 	while (iTotal > 0)
 	{
 		iTotal -= iStep;
-		iStep += 3 + std::max(0, iCount - 4);
+
+		// WTP, Schmiddie, improved colonial AI expansion - START
+		if (bColonial)
+		{
+			iStep += 2 + std::max(0, iCount - 6);
+		}
+		else
+		{
+			iStep += 3 + std::max(0, iCount - 4);
+		}
+		// WTP, Schmiddie, improved colonial AI expansion - END
 
 		iCount++;
 	}
