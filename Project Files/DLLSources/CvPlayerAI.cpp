@@ -9200,6 +9200,32 @@ void CvPlayerAI::AI_doEurope()
 			AI_updateNextBuyUnit();
 		}
 	}
+	// Restore AI pioneer equipment from WTP 4.2.1
+	if (!isHuman() && !isNative() && !isEurope() && !AI_isStrategy(STRATEGY_MILITARY_BUILDUP))
+	{
+		ProfessionTypes eDefaultProfession = GC.getCivilizationInfo(getCivilizationType()).getDefaultProfession();
+
+		for (int i = 0; i < getNumEuropeUnits(); ++i)
+		{
+			if (AI_neededWorkers(NULL) <= 0)
+			{
+				break;
+			}
+
+			CvUnit* pUnit = getEuropeUnit(i);
+
+			if (pUnit->getUnitInfo().getTeacherWeight() <= 0 && pUnit->getProfession() == eDefaultProfession)
+			{
+				ProfessionTypes eProfession = AI_idealProfessionForUnitAIType(UNITAI_WORKER);
+
+				if (eProfession != NO_PROFESSION && pUnit->canHaveProfession(eProfession, false))
+				{
+					changeProfessionEurope(pUnit->getID(), eProfession);
+					pUnit->AI_setUnitAIType(UNITAI_WORKER);
+				}
+			}
+		}
+	}
 }
 
 void CvPlayerAI::AI_nativeYieldGift(CvUnit* pUnit)
