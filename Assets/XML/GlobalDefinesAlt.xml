@@ -521,7 +521,7 @@
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_DIPLOMAT_1</DefineName>
-		<DefineTextVal>UNITCLASS_NOBLE</DefineTextVal>
+		<DefineTextVal>UNITCLASS_BISHOP</DefineTextVal>
 	</Define>
 	<Define>
 		<DefineName>UNITCLASS_DIPLOMAT_2</DefineName>
