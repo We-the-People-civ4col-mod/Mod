@@ -24842,21 +24842,29 @@ def canTriggerCibolaInitialDone(argsList):
 		return False
 
 	mainColony = _getCibolaMainColony(player)
+
 	if mainColony is None or mainColony.isNone():
 		return False
 
 	iUnitID = _getCibolaConquistadorID(player)
+
 	if iUnitID == -1:
 		return False
 
 	unit = player.getUnit(iUnitID)
+
 	if unit is None or unit.isNone():
 		return False
 
-	if unit.getX() != mainColony.getX():
+	plot = unit.plot()
+
+	if plot is None or plot.isNone():
 		return False
 
-	if unit.getY() != mainColony.getY():
+	if plot.getX() != mainColony.getX():
+		return False
+
+	if plot.getY() != mainColony.getY():
 		return False
 
 	return True
