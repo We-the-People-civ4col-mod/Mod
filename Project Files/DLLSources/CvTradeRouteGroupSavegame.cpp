@@ -67,7 +67,10 @@ void CvTradeRouteGroup::read(CvSavegameReader reader)
 		case TradeRouteGroupSave_Id: reader.Read(m_iId); break;
 		case TradeRouteGroupSave_Name: reader.Read(m_sName); break;
 		case TradeRouteGroupSave_Routes: reader.Read(m_Routes); break;
-
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 	

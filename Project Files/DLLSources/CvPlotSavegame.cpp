@@ -377,6 +377,7 @@ void CvPlot::read(CvSavegameReader reader)
 
 		default:
 			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
 			break;
 		}
 	}

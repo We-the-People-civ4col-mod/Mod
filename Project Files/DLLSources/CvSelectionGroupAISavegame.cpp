@@ -93,6 +93,10 @@ void CvSelectionGroupAI::read(CvSavegameReader reader)
 		case SelectionGroupAISave_GroupAttack: reader.Read(m_bGroupAttack); break;
 		case SelectionGroupAISave_GroupAttackX: reader.Read(m_iGroupAttackX); break;
 		case SelectionGroupAISave_GroupAttackY: reader.Read(m_iGroupAttackY); break;
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 	
