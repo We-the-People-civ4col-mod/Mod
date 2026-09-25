@@ -5089,6 +5089,12 @@ void CvUnitAI::AI_transportSeaMove()
 
 		if (bEmpty)
 		{
+			if (AI_respondToPickup(MAX_INT, UNITAI_SETTLER))
+			{
+				AI_setUnitAIState(UNITAI_STATE_PICKUP);
+				return;
+			}
+
 			if (AI_respondToPickup(5))
 			{
 				AI_setUnitAIState(UNITAI_STATE_PICKUP);

@@ -40045,7 +40045,7 @@
 			<iCityFoodWeight>0</iCityFoodWeight>
 			<PythonCanDo>canTriggerDiscoveryStart</PythonCanDo>
 			<PythonCanDoCity/>
-			<PythonCanDoUnit/>
+			<PythonCanDoUnit>canTriggerDiscoveryStartUnit</PythonCanDoUnit>
 			<PythonCallback/>
 		</EventTriggerInfo>
 		<EventTriggerInfo>
